@@ -328,6 +328,17 @@ describe('prerenderRegion', () => {
     expect(['th', 'id', 'vi'].map((language) => prerenderRegion(language))).toEqual(['TH', 'ID', 'VN']);
   });
 
+  it("writes round 10's languages for their own countries, and Spain's and Portugal's as before", () => {
+    expect(['pt-BR', 'es-419', 'es', 'pt-PT'].map((language) => prerenderRegion(language))).toEqual([
+      'BR',
+      'MX',
+      'ES',
+      'PT'
+    ]);
+    // Swahili and Afrikaans are listed by Kenya and South Africa; Somali by no region yet.
+    expect(['sw', 'af', 'so'].map((language) => prerenderRegion(language))).toEqual(['KE', 'ZA', '']);
+  });
+
   it('names none for English, a pseudo-locale, or a language no region lists', () => {
     // Arabic is Egypt's now (below); its pseudo-locale is English.
     expect(['en', 'en-XA', 'ar-XB', 'xx'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '']);

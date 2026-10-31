@@ -8,7 +8,8 @@
 //
 // Measured 2026-10-30 (scratch/round9/i4/intl-check.mjs): Google Chrome 156 and Playwright's
 // Chromium have no Intl data for Nepali, Sinhala and Odia (they write en-US), and Punjabi's
-// dates have no month names ("2026 M10 14"). Only those languages are written here, and only
+// dates have no month names ("2026 M10 14"); round 10 added Hausa, Yoruba, Zulu, Igbo, Somali and
+// Quechua, which they write as en-US (below). Only those languages are written here, and only
 // what the app formats: the date styles of shared/format.ts and its callers, percent and
 // currency patterns, digit grouping and separators, the digits of their numbering systems and
 // list patterns. server/test/locale_fallback_tests.ts checks the file against Node's Intl.
@@ -21,14 +22,42 @@ export const OUT = path.join(ROOT, 'lib', 'regions', 'locale-fallback-data.json'
 const require = createRequire(import.meta.url);
 const { CURRENCIES } = require('../lib/regions/index.js');
 
-/** The languages whose data a browser may lack, each with the locale its data is taken from. */
-export const FALLBACK_LOCALES = { ne: 'ne-NP', or: 'or-IN', pa: 'pa-IN', si: 'si-LK' };
+/**
+ * The languages whose data a browser may lack, each with the locale its data is taken from. Round 10's
+ * languages for Africa and Latin America, measured the same way (scratch/round10/c-africa-latam/intl-check.mjs,
+ * 2026-10-30): Chrome 156 and Playwright's Chromium write Hausa, Yoruba, Zulu, Igbo, Somali and Quechua as
+ * en-US, and have Brazilian Portuguese, Latin American Spanish, Swahili, Amharic and Afrikaans as Node does.
+ * Somali's data is Somalia's, though Glazecalc has no region there yet; Quechua's is Peru's.
+ */
+export const FALLBACK_LOCALES = {
+  ne: 'ne-NP',
+  or: 'or-IN',
+  pa: 'pa-IN',
+  si: 'si-LK',
+  ha: 'ha-NG',
+  yo: 'yo-NG',
+  zu: 'zu-ZA',
+  ig: 'ig-NG',
+  so: 'so-SO',
+  qu: 'qu-PE'
+};
 
 /** The numbering systems those languages' numbers may be written in (lib/regions/index.js, DIGITS). */
 export const DIGIT_SYSTEMS = ['deva', 'guru', 'orya', 'sinh'];
 
 /** Each language's own digits, besides 0–9 (the Digits setting's native; lib/regions/index.js, DIGITS). */
-export const NATIVE_SYSTEMS = { ne: ['deva'], or: ['orya'], pa: ['guru'], si: ['sinh'] };
+export const NATIVE_SYSTEMS = {
+  ne: ['deva'],
+  or: ['orya'],
+  pa: ['guru'],
+  si: ['sinh'],
+  ha: [],
+  yo: [],
+  zu: [],
+  ig: [],
+  so: [],
+  qu: []
+};
 
 /** The date and time options the app formats with (shared/format.ts, format-pipes.ts, settings-section.ts and their callers). */
 export const DATE_OPTIONS = [
@@ -72,7 +101,9 @@ function datePattern(locale, options, names) {
   const valuesOf = (type, dates) => dates.map((parts) => parts.find((part) => part.type === type)?.value ?? '');
   return sample.map((part, index) => {
     const { type, value } = part;
-    if (type === 'literal') return value;
+    // V8's format() writes a narrow no-break space before a day period as a plain space, but its
+    // formatToParts() keeps it (Somali's "9:05 GH", Quechua's "9:05 a.m."): the data writes as format() does.
+    if (type === 'literal') return value.replaceAll(' ', ' ');
     let spec;
     if (type === 'month') {
       const months = valuesOf(

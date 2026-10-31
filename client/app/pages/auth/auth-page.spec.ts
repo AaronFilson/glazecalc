@@ -276,6 +276,12 @@ describe('AuthPage', () => {
     expect(text(fixture, 'form .data-notice')).toContain('accounts are kept on servers in the United States');
     expect(text(fixture, 'form .data-notice')).toContain('the project accepts no responsibility for it');
     expect(fixture.nativeElement.querySelector('.data-notice a').getAttribute('href')).toBe('/privacy#your-choice');
+    // Brazil and South Africa (round 10) get the same notice as Türkiye.
+    for (const region of ['BR', 'ZA']) {
+      preferences.remember('region', region);
+      await fixture.whenStable();
+      expect(text(fixture, 'form .data-notice'), region).toContain('accounts are kept on servers in the United States');
+    }
     preferences.remember('region', 'US');
     await fixture.whenStable();
     expect(fixture.nativeElement.querySelector('.data-notice')).toBeNull();

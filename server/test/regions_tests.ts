@@ -190,7 +190,21 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN', 'PK', 'BD', 'EG', 'MA', 'DZ', 'LK', 'NP'];
+  const NO_SHOP_FOUND = [
+    'MY',
+    'CN',
+    'ID',
+    'VN',
+    'PK',
+    'BD',
+    'EG',
+    'MA',
+    'DZ',
+    'LK',
+    'NP',
+    ...['MX', 'BR', 'AR', 'CL'],
+    ...['ZA', 'KE', 'GH']
+  ];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -698,11 +712,30 @@ describe('Sri Lanka and Nepal, as added', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     expect(hash).to.equal('d031d86c7163df32fff04626cfc9c7ea047ebfc746bdc78ca82f94a087ac0aa8');
   });
+});
+
+// Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30.
+const LATAM_AFRICA_L0 = ['MX', 'BR', 'AR', 'CL', 'ZA', 'KE', 'GH'];
+
+describe('Latin America and Africa, as added', () => {
+  it('keep their data exactly', () => {
+    const data: unknown[] = LATAM_AFRICA_L0.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('9d83dda874ecb1f0ecc6fea73e9867cc1f54d24ce4a98440b02e669729673383');
+  });
 
   it('are, with the earlier snapshots, every region', () => {
     const earlier = regions.REGION_CODES.slice(0, regions.REGION_CODES.indexOf('VN') + 1);
     expect(earlier).to.have.length(43);
-    expect([...earlier, ...SOUTH_ASIA_MENA, ...SOUTH_ASIA_C3]).to.eql([...regions.REGION_CODES]);
+    expect([...earlier, ...SOUTH_ASIA_MENA, ...SOUTH_ASIA_C3, ...LATAM_AFRICA_L0]).to.eql([...regions.REGION_CODES]);
   });
 });
 
@@ -1790,6 +1823,105 @@ describe('waves I2 to I4', () => {
     expect(number('te-IN', 'native')).to.equal('౧,౨౩౪,౫౬౭.౫');
     // Sinhala's own digits are historical: 0–9 under every choice, grouped in threes as CLDR has it.
     for (const digits of ['auto', 'western', 'native']) expect(number('si-LK', digits), digits).to.equal('1,234,567.5');
+  });
+});
+
+// Latin America and Africa (round 10, wave L0: scratch/round10/c-africa-latam/plan.md), regions first, no
+// language offered yet.
+describe('Latin America and Africa', () => {
+  const NEW_LANGUAGES = ['pt-BR', 'es-419', 'sw', 'am', 'af', 'ha', 'yo', 'zu', 'ig', 'so', 'qu'];
+
+  it('fire by Orton cones in °C in Mexico, Brazil and South Africa, by temperature elsewhere, with the US library', () => {
+    for (const [code, name, languages, cones, currency, group] of [
+      ['MX', 'Mexico', ['es'], 'orton', 'MXN', 'americas'],
+      ['BR', 'Brazil', ['pt'], 'orton', 'BRL', 'americas'],
+      ['AR', 'Argentina', ['es'], 'temperature', 'ARS', 'americas'],
+      ['CL', 'Chile', ['es'], 'temperature', 'CLP', 'americas'],
+      ['ZA', 'South Africa', ['en', 'af', 'zu'], 'orton', 'ZAR', 'africa'],
+      ['KE', 'Kenya', ['en', 'sw'], 'temperature', 'KES', 'africa'],
+      ['GH', 'Ghana', ['en'], 'temperature', 'GHS', 'africa']
+    ] as Array<[string, string, string[], string, string, string]>) {
+      expect(regions.regionFor(code), code).to.eql({
+        code,
+        name,
+        languages,
+        eu: false,
+        temperature: 'C',
+        cones,
+        density: 'sg',
+        library: 'US',
+        currency
+      });
+      expect(groups.regionGroup(code), code).to.equal(group);
+    }
+    // Puerto Rico takes the United States' data; the regions with no confirmed emergency number wait.
+    for (const code of ['PR', 'CO', 'PE', 'NG', 'ET']) expect(regions.regionFor(code), code).to.equal(undefined);
+  });
+
+  it("writes Chile's peso without decimals, and leaves Spanish and Portuguese pages written for Spain and Portugal", () => {
+    const peso = new Intl.NumberFormat(regions.formatLocaleFor('es', 'CL', 'auto'), {
+      style: 'currency',
+      currency: 'CLP'
+    });
+    expect(peso.resolvedOptions().maximumFractionDigits).to.equal(0);
+    expect(peso.format(1234.5)).to.equal('$1.235');
+    const first = (language: string) => regions.REGIONS.find((r) => r.languages[0] === language)?.code;
+    expect([first('es'), first('pt'), first('en')]).to.eql(['ES', 'PT', 'US']);
+  });
+
+  it('writes Brazilian Portuguese and Latin American Spanish in their own formats where no region is chosen', () => {
+    expect(regions.formatLocaleFor('pt-BR', '', 'auto')).to.equal('pt-BR-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('es-419', '', 'auto')).to.equal('es-419-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('pt-BR', 'MX', 'auto')).to.equal('pt-MX-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('es-419', 'AR', 'auto')).to.equal('es-AR-u-ca-gregory-nu-latn');
+    // As before: Portugal's, Spain's, and a pseudo-locale's base.
+    expect(regions.formatLocaleFor('pt-PT', '', 'auto')).to.equal('pt-PT-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('es', '', 'auto')).to.equal('es-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en-XA', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
+  });
+
+  it('knows eleven languages, not offered, grouped, six of Africa and Quechua with the plain notice', () => {
+    for (const code of NEW_LANGUAGES) {
+      const language = languages.languageFor(code)!;
+      expect(language, code).to.include({ code, dir: 'ltr', live: false });
+      expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      expect(groups.languageGroup(code), code).to.equal(
+        ['pt-BR', 'es-419', 'qu'].includes(code) ? 'latin-america' : 'africa'
+      );
+      expect(language.name, code).to.equal(language.name.normalize('NFC'));
+    }
+    const plain = NEW_LANGUAGES.filter((code) => languages.languageFor(code)!.plainNotice);
+    expect(plain).to.eql(['am', 'ha', 'yo', 'zu', 'ig', 'so', 'qu']);
+    // Brazil's plural rules, not Portugal's: 0 is singular.
+    expect(new Intl.PluralRules(languages.textLanguage('pt-BR')).select(0)).to.equal('one');
+    expect(new Intl.PluralRules(languages.textLanguage('pt-PT')).select(0)).to.equal('other');
+    // Spain's Spanish and Portugal's Portuguese stay in Europe's group.
+    expect([groups.languageGroup('es'), groups.languageGroup('pt-PT')]).to.eql(['europe', 'europe']);
+  });
+
+  it('gives each emergency number read on an official page, and only the poison lines confirmed', () => {
+    const numbers = (code: string) => {
+      const shown = safety.shownFor(code)!;
+      return [shown.emergency.map((l) => l.number), shown.poison.map((l) => l.number)];
+    };
+    expect(numbers('MX')).to.eql([['911'], []]);
+    expect(numbers('BR')).to.eql([['192'], ['0800 722 6001']]);
+    expect(numbers('AR')).to.eql([['911'], ['0800 333 0160']]);
+    expect(numbers('CL')).to.eql([['131'], []]);
+    expect(numbers('ZA')).to.eql([['10177'], ['0861 555 777']]);
+    expect(numbers('KE')).to.eql([['922'], []]);
+    expect(numbers('GH')).to.eql([['112'], []]);
+    // The poison line's own hours, not the "24 hours" of secondary sources.
+    expect(safety.shownFor('ZA')!.poison[0]!.hours).to.not.match(/24/);
+    // Not confirmed on an official page, so never in the data.
+    const text = JSON.stringify(LATAM_AFRICA_L0.map((code) => safety.SAFETY[code]));
+    for (const unconfirmed of ['800 009 2800', '0800 444 8694', '2635 3800', '0800 720021', '244 733'])
+      expect(text).not.to.contain(unconfirmed);
+    for (const code of LATAM_AFRICA_L0) {
+      expect(safety.ministryFor(code), code).to.include({ status: 'verified' });
+      expect(food.foodRulesFor(code), code).to.equal(null);
+      expect(workplace.workplaceFor(code), code).to.include({ silica: null, respirators: null });
+    }
   });
 });
 

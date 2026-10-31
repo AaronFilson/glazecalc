@@ -7,7 +7,7 @@ import { languageName } from './language';
 
 /**
  * The messages that name the groups, by the ids in lib/regions/groups.js. The regions' continents share
- * Europe's with the languages'.
+ * Europe's and Africa's with the languages'.
  */
 export const GROUP_NAMES: Readonly<Record<string, string>> = {
   africa: marker('picker.groups.africa'),
@@ -15,6 +15,7 @@ export const GROUP_NAMES: Readonly<Record<string, string>> = {
   asia: marker('picker.groups.asia'),
   'east-asia': marker('picker.groups.eastAsia'),
   europe: marker('picker.groups.europe'),
+  'latin-america': marker('picker.groups.latinAmerica'),
   'middle-east-north-africa': marker('picker.groups.middleEastNorthAfrica'),
   oceania: marker('picker.groups.oceania'),
   'south-asia': marker('picker.groups.southAsia'),

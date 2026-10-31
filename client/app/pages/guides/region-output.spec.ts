@@ -166,3 +166,21 @@ describe('region blocks for Sri Lanka and Nepal, as added', () => {
     });
   }
 });
+
+// Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30, on the same fixed day.
+describe('region blocks for Latin America and Africa, as added', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: NOW, useValue: () => new Date('2026-10-16T12:00:00Z') }]
+    });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said for Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana: ${name}`, async () => {
+      const all: Record<string, string> = {};
+      for (const region of ['MX', 'BR', 'AR', 'CL', 'ZA', 'KE', 'GH']) all[region] = await html(component, region);
+      expect(all).toMatchSnapshot();
+    }, 15_000);
+  }
+});

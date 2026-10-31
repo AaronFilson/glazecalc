@@ -240,6 +240,54 @@ exports[`region blocks before Vietnam > says exactly what it said before for Chi
 }
 `;
 
+exports[`region blocks for Latin America and Africa, as added > says exactly what it said for Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana: food 1`] = `
+{
+  "AR": "<p>We have not yet confirmed the rules in Argentina.</p>",
+  "BR": "<p>We have not yet confirmed the rules in Brazil.</p>",
+  "CL": "<p>We have not yet confirmed the rules in Chile.</p>",
+  "GH": "<p>We have not yet confirmed the rules in Ghana.</p>",
+  "KE": "<p>We have not yet confirmed the rules in Kenya.</p>",
+  "MX": "<p>We have not yet confirmed the rules in Mexico.</p>",
+  "ZA": "<p>We have not yet confirmed the rules in South Africa.</p>",
+}
+`;
+
+exports[`region blocks for Latin America and Africa, as added > says exactly what it said for Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana: poison 1`] = `
+{
+  "AR": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in Argentina"><table class="guide-table"><caption> Who to call in Argentina (numbers checked October 30, 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:911">911</a></td><td>The national emergency centre, for an ambulance or the police. For a fire, call 100.</td></tr><tr><th scope="row"> Poison advice: Centro Nacional de Intoxicaciones, Hospital Nacional Alejandro Posadas </th><td class="num"><a dir="ltr" class="phone" href="tel:08003330160">0800 333 0160</a></td><td> 24 hours, every day, free. The national free line. </td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://www.argentina.gob.ar/tema/emergencias">argentina.gob.ar</a>, <a href="https://www.argentina.gob.ar/node/145981">argentina.gob.ar</a>.</p></gc-source-links></div>",
+  "BR": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in Brazil"><table class="guide-table"><caption> Who to call in Brazil (numbers checked October 30, 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:192">192</a></td><td>SAMU ambulance: free, 24 hours, every day, from a landline or a mobile.</td></tr><tr><th scope="row"> Poison advice: Disque-Intoxicação (Anvisa) </th><td class="num"><a dir="ltr" class="phone" href="tel:08007226001">0800 722 6001</a></td><td> 24 hours, every day, free. For the public and for health workers. The call goes to the nearest of the national network of poison centres. </td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/samu-192">gov.br</a>, <a href="https://www.gov.br/anvisa/pt-br/assuntos/agrotoxicos/disque-intoxicacao">gov.br</a>.</p></gc-source-links></div>",
+  "CL": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in Chile"><table class="guide-table"><caption> Who to call in Chile (numbers checked October 30, 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:131">131</a></td><td>SAMU ambulance: free, across the country, from a landline or a mobile.</td></tr><tr><th scope="row">Poison advice</th><td class="num">-</td><td> We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent. <gc-rich>The health ministry's page: <a href="https://www.minsal.cl/">Ministerio de Salud</a>.</gc-rich></td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://www.minsal.cl/samu-chiloe-crece-y-se-consolida-en-la-provincia/">minsal.cl</a>.</p></gc-source-links></div>",
+  "GH": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in Ghana"><table class="guide-table"><caption> Who to call in Ghana (numbers checked 30 October 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:112">112</a></td><td>National Ambulance Service: free, 24 hours, every day.</td></tr><tr><th scope="row">Poison advice</th><td class="num">-</td><td> We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent. <gc-rich>The health ministry's page: <a href="https://www.moh.gov.gh/">Ministry of Health</a>.</gc-rich></td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://nas.gov.gh/">nas.gov.gh</a>.</p></gc-source-links></div>",
+  "KE": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in Kenya"><table class="guide-table"><caption> Who to call in Kenya (numbers checked 30 October 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:922">922</a></td><td>The national ambulance number: free on every network, even without airtime.</td></tr><tr><th scope="row">Poison advice</th><td class="num">-</td><td> We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent. <gc-rich>The health ministry's page: <a href="https://www.health.go.ke/">Ministry of Health</a>.</gc-rich></td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://gaa.go.ke/national-ambulance-dispatch-centre-revolutionise-emergency-response">gaa.go.ke</a>.</p></gc-source-links></div>",
+  "MX": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in Mexico"><table class="guide-table"><caption> Who to call in Mexico (numbers checked October 30, 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:911">911</a></td><td>One national number for emergencies.</td></tr><tr><th scope="row">Poison advice</th><td class="num">-</td><td> We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent. <gc-rich>The health ministry's page: <a href="https://www.gob.mx/salud">Secretaría de Salud</a>.</gc-rich></td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://www.gob.mx/911">gob.mx</a>.</p></gc-source-links></div>",
+  "ZA": "<div class="poison-lines"><div tabindex="0" role="region" class="guide-table-scroll" aria-label="Who to call in South Africa"><table class="guide-table"><caption> Who to call in South Africa (numbers checked 30 October 2026) </caption><thead><tr><th scope="col">For</th><th scope="col">Call</th><th scope="col">Hours and notes</th></tr></thead><tbody><tr><th scope="row">An emergency: unconscious, not breathing, a seizure</th><td class="num"><a dir="ltr" class="phone" href="tel:10177">10177</a></td><td>Ambulance. For the police, call 10111. From a mobile, 112 also works.</td></tr><tr><th scope="row"> Poison advice: Poisons Information Helpline </th><td class="num"><a dir="ltr" class="phone" href="tel:0861555777">0861 555 777</a></td><td> 8:30 to 1:30 the next morning, every day. For the public as well as doctors. Outside those hours, call 10177 in an emergency. </td></tr><tr><th scope="row">Animals</th><td class="num">-</td><td>Call your vet.</td></tr></tbody></table></div><gc-source-links><p class="region-sources"> Checked on: <a href="https://www.westerncape.gov.za/health-wellness/know-who-you-can-call-emergency">westerncape.gov.za</a>.</p></gc-source-links></div>",
+}
+`;
+
+exports[`region blocks for Latin America and Africa, as added > says exactly what it said for Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana: shops 1`] = `
+{
+  "AR": "<p>We found no shop selling raw glaze materials in Argentina.</p>",
+  "BR": "<p>We found no shop selling raw glaze materials in Brazil.</p>",
+  "CL": "<p>We found no shop selling raw glaze materials in Chile.</p>",
+  "GH": "<p>We found no shop selling raw glaze materials in Ghana.</p>",
+  "KE": "<p>We found no shop selling raw glaze materials in Kenya.</p>",
+  "MX": "<p>We found no shop selling raw glaze materials in Mexico.</p>",
+  "ZA": "<p>We found no shop selling raw glaze materials in South Africa.</p>",
+}
+`;
+
+exports[`region blocks for Latin America and Africa, as added > says exactly what it said for Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana: silica 1`] = `
+{
+  "AR": "<p>We have not yet confirmed the limit in Argentina.</p>",
+  "BR": "<p>We have not yet confirmed the limit in Brazil.</p>",
+  "CL": "<p>We have not yet confirmed the limit in Chile.</p>",
+  "GH": "<p>We have not yet confirmed the limit in Ghana.</p>",
+  "KE": "<p>We have not yet confirmed the limit in Kenya.</p>",
+  "MX": "<p>We have not yet confirmed the limit in Mexico.</p>",
+  "ZA": "<p>We have not yet confirmed the limit in South Africa.</p>",
+}
+`;
+
 exports[`region blocks for Sri Lanka and Nepal, as added > says exactly what it said for Sri Lanka and Nepal: food 1`] = `
 {
   "LK": "<p>We have not yet confirmed the rules in Sri Lanka.</p>",
