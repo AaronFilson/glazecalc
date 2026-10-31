@@ -2,8 +2,8 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { REFERENCE_LANGUAGES } from '../../../../lib/regions/languages';
 import { PAGE_LANGUAGE } from '../../i18n/language';
+import { REFERENCE_LANGUAGE_LIST } from '../materials/reference-text';
 import { PageHeader } from '../../shared/page-header';
 
 /** The guides, in the order a new potter would read them; title and text are message keys. */
@@ -127,5 +127,5 @@ export class GuidesPage {
   protected readonly guides = GUIDES;
   protected readonly reference = Object.values(REFERENCE_PAGES);
   /** The reference pages are offered in the languages they are translated into (English is the first). */
-  protected readonly english = REFERENCE_LANGUAGES.includes(inject(PAGE_LANGUAGE));
+  protected readonly english = inject(REFERENCE_LANGUAGE_LIST).includes(inject(PAGE_LANGUAGE));
 }

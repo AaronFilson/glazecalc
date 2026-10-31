@@ -15,6 +15,7 @@ import {
   withFontPreloads
 } from '../../scripts/prerender.mjs';
 import pages from '../../lib/pages.js';
+import languages from '../../lib/regions/languages.js';
 import { adviceFiles, adviceKeys } from '../../scripts/advice-i18n.mjs';
 import { coneFiles, coneKeys, materialFiles, materialKeys } from '../../scripts/material-i18n.mjs';
 import { readPrerendered } from '../lib/prerendered.ts';
@@ -90,7 +91,7 @@ describe('prerender checks', () => {
   });
 
   it('renders the reference pages in the languages they are translated into, as the others would show the same English', () => {
-    expect(pages.prerenderLanguages('/cones', ['en', 'de'])).to.eql(['en']);
+    expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en'])).to.eql(['en']);
     expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en', 'de'])).to.eql(['en', 'de']);
     // A material's page is drawn in the browser in every language but English.
     expect(pages.prerenderLanguages('/materials/silica', ['en', 'de'], ['en', 'de'])).to.eql(['en']);
@@ -101,7 +102,13 @@ describe('prerender checks', () => {
     const notice = page('<p class="guide-note">Not translated.</p><td>1305</td> Orton SK');
     expect(pageProblems(notice, '/cones', 'en')).to.eql(['it carries the notice that it is not translated']);
     // In a language it is not translated into, the notice is right; other pages have notes of their own.
-    expect(pageProblems(notice, '/cones', 'de')).to.eql([]);
+    // (Taken from lib/regions/languages.js; once every language has them, there is none to try.)
+    const untranslated = languages.LANGUAGE_CODES.find((code) => !languages.REFERENCE_LANGUAGES.includes(code));
+    if (untranslated) expect(pageProblems(notice, '/cones', untranslated)).to.eql([]);
+    const translated = languages.REFERENCE_LANGUAGES.find((code) => code !== 'en');
+    if (translated) {
+      expect(pageProblems(notice, '/cones', translated)).to.eql(['it carries the notice that it is not translated']);
+    }
     expect(pageProblems(notice, '/guides', 'en')).to.eql([]);
   });
 
