@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Otrovno. Gotovo netopljivo.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Upozorenje (STL Potterycrafts P3303): H302 štetno ako se proguta; ne gutajte i izbjegavajte udisanje prašine.",
+  "theoretical-formula-9090t3": "Teorijska formula",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalcijev fosfat. Stvarni koštani pepeo može sadržavati malo CaCO₃, pa time i mali gubitak žarenjem (LOI).",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Upozorenje (STL Potterycrafts): H302 štetno ako se proguta; H315 nadražuje kožu; H319 uzrokuje jako nadraživanje oka; H335 suha prašina može nadražiti dišni sustav.",
   "water-soluble-fdjx5g": "Topljivo u vodi.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "probne pločice, pločice, oznake",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Kad stavite stožac u Kiln-Sitter, prekrijte ga krep trakom. Traka će spriječiti da stožac ispadne dok slažete predmete u peć, a pri pečenju čisto izgori.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, stožac, stošci, slaganje peći"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, stožac, stošci, slaganje peći",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Norma daje referentne temperature. Pri brzini uobičajenoj za lončara, od oko 100 °C/h, kyotski općinski institut izmjerio je da se njegovi vlastiti kyotski stošci savijaju na temperaturama za 47 – 79 °C nižima od JIS-ove vrijednosti za isti broj; za stošce SK prema JIS-u takva mjerenja nismo našli. Postavite kontrolni stožac i usporedite.",
+  "orton-s-older-chart-for-large-jgynh": "Ortonova starija tablica za velike stošce zagrijavane brzinom od 150 °C na sat tijekom posljednjih 100 °C, kako je pretiskuju proizvođači peći; Ortonove sadašnje vrijednosti za velike stošce pri toj brzini razlikuju se od nje do 19 °C. Orton ne objavljuje vrijednost iznad stošca 14, a ova tablica ne daje vrijednost iznad stošca 15. Stošci mjere toplinski učinak, a ne temperaturu: postavite kontrolni stožac.",
+  "rates-are-over-the-last-100-gs02ii": "Brzine se odnose na posljednjih 100 °C pečenja. Veliki stošci 13 i 14 imaju drukčiji sastav i drukčije temperaturne ekvivalente; Orton ne objavljuje vrijednost iznad stošca 14."
 }

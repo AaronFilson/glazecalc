@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toxic. Aproape insolubil.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Atenție (FDS Potterycrafts P3303): H302 nociv în caz de înghițire; nu înghițiți și evitați inspirarea prafului.",
+  "theoretical-formula-9090t3": "Formula teoretică",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosfat tricalcic. Cenușa de oase reală poate conține puțin CaCO₃ și deci o mică pierdere la calcinare.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Atenție (FDS Potterycrafts): H302 nociv în caz de înghițire; H315 provoacă iritarea pielii; H319 provoacă o iritare gravă a ochilor; H335 praful uscat poate provoca iritarea căilor respiratorii.",
   "water-soluble-fdjx5g": "Solubil în apă.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "plăcuțe de test, plăcuțe, etichete",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "După ce puneți conul în Kiln-Sitter (întrerupătorul mecanic care oprește cuptorul când se îndoaie un con mic), acoperiți-l cu bandă de mascare. Banda împiedică dărâmarea conului cât timp încărcați piesele și se consumă complet, fără urme, la ardere.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, con, conuri, încărcare"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, con, conuri, încărcare",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standardul dă temperaturi de referință. La viteza obișnuită a unui ceramist, de circa 100 °C/h, institutul municipal din Kyoto a măsurat că propriile conuri Kyoto se îndoaie la temperaturi cu 47–79 °C mai mici decât valoarea JIS pentru același număr; pentru conurile SK după JIS nu am găsit asemenea măsurători. Așezați un con martor și comparați.",
+  "orton-s-older-chart-for-large-jgynh": "Tabelul mai vechi Orton pentru conurile mari încălzite cu 150 °C pe oră pe ultimii 100 °C, așa cum îl retipăresc producătorii de cuptoare; valorile actuale Orton pentru conurile mari la această viteză diferă de el cu până la 19 °C. Orton nu publică nicio valoare peste conul 14, iar acest tabel niciuna peste conul 15. Conurile măsoară lucrul termic, nu temperatura: așezați un con martor.",
+  "rates-are-over-the-last-100-gs02ii": "Vitezele sunt pe ultimii 100 °C ai arderii. Conurile mari 13 și 14 au compoziții diferite și echivalente de temperatură diferite; Orton nu publică nicio valoare peste conul 14."
 }

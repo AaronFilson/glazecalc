@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toksik. Neredeyse çözünmez.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Dikkat (Potterycrafts GBF, P3303): H302 yutulması halinde zararlıdır; yutmayın ve tozunu solumaktan kaçının.",
+  "theoretical-formula-9090t3": "Teorik formül",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalsiyum fosfat. Gerçek kemik külü az miktarda CaCO₃ içerebilir ve bu yüzden küçük bir kızdırma kaybı gösterebilir.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Dikkat (Potterycrafts GBF): H302 yutulması halinde zararlıdır; H315 cilt tahrişine yol açar; H319 ciddi göz tahrişine yol açar; H335 kuru toz solunum yolu tahrişine yol açabilir.",
   "water-soluble-fdjx5g": "Suda çözünür.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "sır test karoları, karolar, etiketler",
   "kiln-sitter-8kghs6": "Kiln sitter",
   "after-putting-a-cone-in-the-swloel": "Kiln sitter’a (piramitli otomatik kapatma düzeneği) bir piramit yerleştirdikten sonra üstünü maskeleme bandıyla kapatın. Bant, fırını doldururken piramidin çarpılıp düşmesini önler ve pişirimde temizce yanıp gider.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, piramit, piramitler, fırın doldurma"
+  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, piramit, piramitler, fırın doldurma",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standart referans sıcaklıkları verir. Seramikçilerin yaygın olarak kullandığı yaklaşık 100 °C/h hızında, Kyoto’nun belediye enstitüsü kendi Kyoto piramitlerinin aynı numara için JIS rakamından 47–79 °C daha düşük sıcaklıkta eğildiğini ölçtü; JIS’e uygun SK piramitleri için böyle ölçümler bulamadık. Bir gözlem piramidi yerleştirin ve karşılaştırın.",
+  "orton-s-older-chart-for-large-jgynh": "Orton’un, pişirimin son 100 °C sıcaklık aralığında saatte 150 °C ile ısıtılan büyük piramitler için eski tablosu; fırın üreticileri bu tabloyu yeniden basar. Orton’un o hız için büyük piramitlere ait güncel rakamları bundan en fazla 19 °C farklıdır. Orton 14 numaralı piramidin üzerinde hiçbir rakam yayımlamaz, bu tablo da 15 numaralı piramidin üzerinde hiçbirini vermez. Piramitler sıcaklığı değil, ısı işini ölçer: bir gözlem piramidi yerleştirin.",
+  "rates-are-over-the-last-100-gs02ii": "Hızlar, pişirimin son 100 °C sıcaklık aralığı içindir. 13 ve 14 numaralı büyük piramitlerin bileşimleri ve sıcaklık karşılıkları farklıdır; Orton 14 numaralı piramidin üzerinde hiçbir rakam yayımlamaz."
 }
