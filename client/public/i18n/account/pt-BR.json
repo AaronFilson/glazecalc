@@ -338,7 +338,7 @@
       "sg": {
         "label": "Densidade",
         "saved": "Salvo: densidade do esmalte como densidade relativa.",
-        "example": "SG 1.45"
+        "example": "1,45"
       },
       "baume": {
         "label": "Graus Baumé, de um densímetro",

@@ -214,8 +214,9 @@ describe('translations', () => {
     });
 
     it('finds pt-BR and es-419 once they are offered, and the older fallbacks until then', () => {
-      const latam = ['es-MX', 'es-AR', 'es-CL', 'es-CO', 'es-PE', 'es-419'];
-      const other = ['es', 'es-ES', 'es-US', 'es-GQ'];
+      // es-US reads es-419 where it is offered (the owner's decision of 2026-11-01); Spain's es stays offered.
+      const latam = ['es-MX', 'es-AR', 'es-CL', 'es-CO', 'es-PE', 'es-419', 'es-US'];
+      const other = ['es', 'es-ES', 'es-GQ'];
       const brazil = ['pt-BR'];
       const portugal = ['pt', 'pt-PT', 'pt-AO', 'pt-MZ'];
       const all = [...latam, ...other, ...brazil, ...portugal];
@@ -227,7 +228,7 @@ describe('translations', () => {
           ...brazil.map(() => ptBR),
           ...portugal.map(() => pt)
         ]);
-      // Today: neither is live, so Latin American Spanish reads es and Brazil pt-PT.
+      // Neither offered: Latin American Spanish reads es and Brazil pt-PT.
       live(['en', 'es', 'pt-PT'], 'es', 'es', 'pt-PT', 'pt-PT');
       // Live, in either order.
       live(['en', 'es', 'pt-PT', 'es-419', 'pt-BR'], 'es', 'es-419', 'pt-PT', 'pt-BR');

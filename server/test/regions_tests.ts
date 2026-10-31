@@ -717,7 +717,8 @@ describe('Sri Lanka and Nepal, as added', () => {
 });
 
 // Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30; refrozen on 2026-10-31,
-// when Mexico, Argentina and Chile took Latin American Spanish (wave L1).
+// when Mexico, Argentina and Chile took Latin American Spanish (wave L1); refrozen on 2026-11-01, when Brazil took
+// Brazilian Portuguese (wave L1, the owner approved its standard sign-up notice).
 const LATAM_AFRICA_L0 = ['MX', 'BR', 'AR', 'CL', 'ZA', 'KE', 'GH'];
 
 describe('Latin America and Africa, as added', () => {
@@ -732,7 +733,7 @@ describe('Latin America and Africa, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('28fbfa5e55dfa7b9063fb1395a2b02a1b717c29b3c981257e97980255641c08d');
+    expect(hash).to.equal('dfcab15109a1ed334d89fb61ac6922bf592483881fa2967695eb2e6645b2c087');
   });
 
   it('are, with the earlier snapshots, every region', () => {
@@ -1836,9 +1837,9 @@ describe('Latin America and Africa', () => {
 
   it('fire by Orton cones in °C in Mexico, Brazil and South Africa, by temperature elsewhere, with the US library', () => {
     for (const [code, name, languages, cones, currency, group] of [
-      // Wave L1: Mexico, Argentina and Chile read Latin American Spanish; Brazil waits for pt-BR.
+      // Wave L1: Mexico, Argentina and Chile read Latin American Spanish; Brazil, Brazilian Portuguese.
       ['MX', 'Mexico', ['es-419'], 'orton', 'MXN', 'americas'],
-      ['BR', 'Brazil', ['pt'], 'orton', 'BRL', 'americas'],
+      ['BR', 'Brazil', ['pt-BR'], 'orton', 'BRL', 'americas'],
       ['AR', 'Argentina', ['es-419'], 'temperature', 'ARS', 'americas'],
       ['CL', 'Chile', ['es-419'], 'temperature', 'CLP', 'americas'],
       ['ZA', 'South Africa', ['en', 'af', 'zu'], 'orton', 'ZAR', 'africa'],
@@ -1884,10 +1885,10 @@ describe('Latin America and Africa', () => {
     expect(regions.formatLocaleFor('en-XA', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
   });
 
-  it('knows eleven languages, grouped, Latin American Spanish offered since wave L1, six of Africa and Quechua with the plain notice', () => {
+  it('knows eleven languages, grouped, Latin American Spanish and Brazilian Portuguese offered since wave L1, six of Africa and Quechua with the plain notice', () => {
     for (const code of NEW_LANGUAGES) {
       const language = languages.languageFor(code)!;
-      const live = code === 'es-419';
+      const live = code === 'es-419' || code === 'pt-BR';
       expect(language, code).to.include({ code, dir: 'ltr', live });
       if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
       else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);

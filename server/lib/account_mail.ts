@@ -484,6 +484,16 @@ export const RESET: Record<string, Email> = {
       'El enlace funciona una sola vez. Si no pediste esto, ignora este correo; tu contraseña seguirá igual.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  'pt-BR': {
+    subject: 'Redefinir sua senha do Glazecalc',
+    text:
+      'Alguém (esperamos que você) pediu para redefinir a senha da conta {account} do Glazecalc.\n\n' +
+      'Para escolher uma nova senha, abra este link em até {minutes} minutos:\n\n' +
+      '{link}\n\n' +
+      'O link funciona uma única vez. Se você não pediu isso, ignore este e-mail; sua senha continua a mesma.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -861,6 +871,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       'La contraseña de la cuenta de Glazecalc {account} se acaba de cambiar, y se cerró la sesión en todos los dispositivos donde estaba iniciada.\n\n' +
       'Si fuiste tú, no tienes que hacer nada más. Si no, restablece tu contraseña de inmediato en {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  'pt-BR': {
+    subject: 'Sua senha do Glazecalc foi alterada',
+    text:
+      'A senha da conta {account} do Glazecalc acabou de ser alterada, e todos os dispositivos que estavam conectados foram desconectados.\n\n' +
+      'Se foi você, não há mais nada a fazer. Se não foi, redefina sua senha agora mesmo em {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }

@@ -9,11 +9,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Latin American Spanish** (docs/translations/es-419.md): the app, the emails and all five guides, live at
   `/es-419/…`, written for Mexico first, with the Southern Cone's forms in the style sheet's notes. Mexico, Argentina
   and Chile now read it (Spain keeps Spain's Spanish), and a browser asking for Spanish of the Americas (es-MX, es-AR …)
-  gets it. Safety data sheets are named as Mexico's NOM-018-STPS-2015 names them (HDS). It was translated from a
-  sourced glossary in nine parts, reviewed in six groups, made consistent and back-translated blind in two halves. The
-  reviews turned 16 places where "should" had become "must" back into advice, and rewrote a garbled sign-up notice.
-  Brazilian Portuguese is translated by the same process but not yet offered: the owner reads its sign-up notice
-  first. The README counts 47 languages.
+  gets it, as does a United States browser's Spanish (es-US); a bare es, es-ES and es-GQ keep Spain's, which stays
+  offered and choosable. Safety data sheets are named as Mexico's NOM-018-STPS-2015 names them (HDS). It was translated
+  from a sourced glossary in nine parts, reviewed in six groups, made consistent and back-translated blind in two
+  halves. The reviews turned 16 places where "should" had become "must" back into advice, and rewrote a garbled
+  sign-up notice.
+- **Brazilian Portuguese** (docs/translations/pt-BR.md): the app, the emails and all five guides, live at `/pt-BR/…`,
+  by the same process, after the owner read its sign-up notice and approved the standard one. Brazil now reads it, and
+  a browser asking for pt-BR gets it; Portugal, Angola and Mozambique keep Portugal's Portuguese. The language picker
+  lists both under "Latin America". The README counts 48 languages.
 - **Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana as regions**, in English and the languages
   already offered: who to call, each read on an official page (Brazil's and Argentina's national poison lines, South
   Africa's Poisons Information Helpline with its own hours), the health ministries, each currency, and Orton cones

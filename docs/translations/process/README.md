@@ -278,15 +278,18 @@ Still open: native reviewers for both (the Native check lists), Sinhala's word f
 biscuit; the pages add "(cookie)" at first use), Sinhala's one word for both "inhalable" and "respirable", and the
 iPhone font check (docs/i18n-plan.md, "Fonts").
 
-## Latin America, wave L1: Latin American Spanish (live) and Brazilian Portuguese (translated)
+## Latin America, wave L1: Latin American Spanish and Brazilian Portuguese (both live)
 
 Round 10, on the same rules (style sheets with sourced glossaries, 9 translation parts and 6 reviews in groups per
 language, a consistency pass, and a blind back-translation in two halves, guides and warnings; the plan and log are in
 scratch/round10/c-l1/ in the main checkout). `es-419` (Español (Latinoamérica)) went live with `go-live.mjs es-419` on
 2026-10-31: one Spanish for Latin America, written for Mexico first, the Southern Cone's forms in its Notes, built on
 es.md with every change listed (docs/translations/es-419.md). Mexico, Argentina and Chile read it; Spain keeps `es`;
-Puerto Rico takes the United States' data. `pt-BR` is translated (docs/translations/pt-BR.md) but not live: the owner
-reads its sign-up notice first, then `go-live.mjs pt-BR` and Brazil's region list. What the wave taught:
+Puerto Rico takes the United States' data. The owner decided on 2026-11-01 that a United States browser's Spanish
+(es-US) gets es-419, while Spain's `es` stays offered and choosable, and that es-419 keeps CLDR's decimal point.
+`pt-BR` (docs/translations/pt-BR.md) went live with `go-live.mjs pt-BR` after the owner read its sign-up notice and
+approved the standard one (accounts kept on US servers; creating one is the reader's own choice) on 2026-11-01;
+Brazil reads it, and Angola and Mozambique keep `pt-PT`. What the wave taught:
 
 - **"Should" became "must" 16 times.** Translators turned advice into orders in 16 places, which the reviews put back;
   name the slip in the translate and review prompts.
@@ -297,5 +300,4 @@ reads its sign-up notice first, then `go-live.mjs pt-BR` and Brazil's region lis
 - **Name the local law's terms.** es-419 calls safety data sheets HDS (hojas de datos de seguridad), as Mexico's
   NOM-018-STPS-2015 does, not Spain's FDS.
 
-Still open: native reviewers for both (the Native check rows), the owner's review of pt-BR's notice, and es-419's
-decimal point in text against Argentina's and Chile's comma (scratch/round10/c-l1/plan.md, owner question 1).
+Still open: native reviewers for both (the Native check rows).
