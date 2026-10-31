@@ -65,7 +65,7 @@ export const asSent = (record) => {
   return JSON.parse(JSON.stringify(sent));
 };
 
-/** The collections of the standard library the recipe page needs on its own (client/app/core/standard-library.ts). */
+/** The collections of the standard library the recipe page needs on its own (getStandard in client/app/core/api-resource.service.ts). */
 export const LIBRARY = ['materials', 'additives'];
 
 /** Angular's generator reads the build's files through this. */
