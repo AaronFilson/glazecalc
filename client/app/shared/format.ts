@@ -1,6 +1,7 @@
 import { signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
 import * as numbers from '../../../lib/recipe/numbers';
+import { dateTimeFormat, formatList, numberFormat as intlNumberFormat } from '../../../lib/regions/locale-fallback';
 import { temperatureText } from '../../../lib/recipe/temperature';
 import type { DecimalMark } from '../core/preferences.service';
 import { ltr } from './bidi';
@@ -10,7 +11,9 @@ import { ltr } from './bidi';
 // the decimal mark follow Settings; core/locale.service.ts keeps them current.
 // What is saved stays plain ("12.5"), so a recipe reads the same everywhere:
 // these functions only turn numbers into text for the reader and the reader's
-// typing back into numbers.
+// typing back into numbers. In a language the browser has no Intl data for
+// (Nepali, Sinhala, Odia, Punjabi's dates), they write from data taken from
+// Node's (lib/regions/locale-fallback.js), as the prerendered page does.
 
 /** The locale numbers and dates are written in (BCP 47). */
 export const formatLocale = signal('en');
@@ -24,7 +27,7 @@ function numberFormat(minimum: number, maximum: number): Intl.NumberFormat {
   const key = locale + '|' + minimum + '|' + maximum;
   let format = numberFormats.get(key);
   if (!format) {
-    format = new Intl.NumberFormat(locale, {
+    format = intlNumberFormat(locale, {
       minimumFractionDigits: minimum,
       maximumFractionDigits: maximum,
       // 1234 stays together and 12 345 is grouped, in every locale: a 4-digit
@@ -47,7 +50,7 @@ export const upTo = (value: number, places: number): string => numberFormat(0, p
 /** An amount of money in a currency (ISO 4217), as the locale writes it: $2.50, 2,50 €, ¥250. */
 export const money = (value: number, currency: string): string => {
   try {
-    return new Intl.NumberFormat(formatLocale(), { style: 'currency', currency }).format(value);
+    return intlNumberFormat(formatLocale(), { style: 'currency', currency }).format(value);
   } catch {
     return upTo(value, 2) + ' ' + currency;
   }
@@ -55,7 +58,7 @@ export const money = (value: number, currency: string): string => {
 
 /** A whole percent: 7%, 7 % or 7 %, as the locale writes it. */
 export const percent = (value: number, places = 0): string =>
-  new Intl.NumberFormat(formatLocale(), {
+  intlNumberFormat(formatLocale(), {
     style: 'percent',
     minimumFractionDigits: places,
     maximumFractionDigits: places
@@ -100,7 +103,7 @@ export const listLocale = signal('en');
 
 /** A list in prose, as the page's language joins one: "potash, soda and alumina"; "DS2 or RS2"; with 'unit', "A, B, C". */
 export function listOf(items: readonly string[], type: 'conjunction' | 'disjunction' | 'unit' = 'conjunction'): string {
-  return new Intl.ListFormat(listLocale(), { style: type === 'unit' ? 'short' : 'long', type }).format(items);
+  return formatList(listLocale(), items, { style: type === 'unit' ? 'short' : 'long', type });
 }
 
 /** A saved plain number ("12.50") written for the reader, keeping its decimals ("12,50"); other text as it is. */
@@ -128,12 +131,12 @@ export function formatDate(
 ): string {
   if (value === null || value === undefined || value === '') return '';
   const date = asDate(value);
-  return date ? new Intl.DateTimeFormat(formatLocale(), options).format(date) : '';
+  return date ? dateTimeFormat(formatLocale(), options).format(date) : '';
 }
 
 /** A time of day as the reader writes it: 3:05 PM, 15:05. */
 export const formatTime = (date: Date): string =>
-  new Intl.DateTimeFormat(formatLocale(), { hour: 'numeric', minute: '2-digit' }).format(date);
+  dateTimeFormat(formatLocale(), { hour: 'numeric', minute: '2-digit' }).format(date);
 
 /**
  * A temperature in the reader's scale, from °C: "1240 °C" or "2264 °F", with a no-break space; left to

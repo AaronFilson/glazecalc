@@ -3,6 +3,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { CURRENCIES, FORMAT_LOCALES, REGIONS, formatLocaleFor } from '../../../../lib/regions';
 import { baseLanguage, languageFor, textLanguage } from '../../../../lib/regions/languages';
+import { dateTimeFormat, numberFormat } from '../../../../lib/regions/locale-fallback';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
 import { Preferences, PreferencesService } from '../../core/preferences.service';
@@ -83,12 +84,12 @@ const setting = (
 // A sample for each number and date format: 12345.6 and 8 October 2026.
 const SAMPLE_DATE = new Date(2026, 9, 8);
 const sampleNumber = (locale: string): string =>
-  new Intl.NumberFormat(locale, {
+  numberFormat(locale, {
     maximumFractionDigits: 1,
     useGrouping: 'min2'
   } as unknown as Intl.NumberFormatOptions).format(12345.6);
 const sampleOf = (locale: string): string =>
-  sampleNumber(locale) + ' · ' + new Intl.DateTimeFormat(locale, { dateStyle: 'short' }).format(SAMPLE_DATE);
+  sampleNumber(locale) + ' · ' + dateTimeFormat(locale, { dateStyle: 'short' }).format(SAMPLE_DATE);
 
 /**
  * The settings, with the names of regions and of languages in the page's
@@ -573,7 +574,7 @@ export class SettingsSection implements OnInit {
         this.preferences.digits()
       );
       try {
-        return new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(SAMPLE_DATE);
+        return dateTimeFormat(locale, { dateStyle: 'long' }).format(SAMPLE_DATE);
       } catch {
         return '';
       }
