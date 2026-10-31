@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toxique. Presque insoluble.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Attention (FDS Potterycrafts P3303) : H302 nocif en cas d’ingestion ; ne l’avalez pas et évitez de respirer la poussière.",
+  "theoretical-formula-9090t3": "Formule théorique",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Phosphate tricalcique. La cendre d’os véritable peut contenir un peu de CaCO₃, d’où une faible PAF.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Attention (FDS Potterycrafts) : H302 nocif en cas d’ingestion ; H315 provoque une irritation cutanée ; H319 provoque une sévère irritation des yeux ; H335 la poussière sèche peut irriter les voies respiratoires.",
   "water-soluble-fdjx5g": "Soluble dans l’eau.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "tessons d’essai, tessons, étiquettes",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Après avoir placé un cône dans le Kiln-Sitter (coupe-circuit à cône), recouvrez-le de ruban de masquage. Le ruban empêche le cône d’être délogé pendant l’enfournement, et brûle proprement à la cuisson.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, cône, cônes, enfournement"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, cône, cônes, enfournement",
+  "the-standard-gives-reference-temperatures-at-12xot89": "La norme donne des températures de référence. À la vitesse d’un céramiste, d’environ 100 °C/h, l’institut municipal de Kyoto a mesuré que ses propres cônes de Kyoto se courbaient à une température inférieure de 47–79 °C à la valeur JIS pour le même numéro ; nous n’avons trouvé aucune mesure de ce genre pour les cônes SK selon la norme JIS. Placez un cône témoin et comparez.",
+  "orton-s-older-chart-for-large-jgynh": "Ancien tableau d’Orton pour les grands cônes chauffés à 150 °C par heure sur les derniers 100 °C, tel que les fabricants de fours le reproduisent ; les valeurs actuelles d’Orton pour les grands cônes à cette vitesse s’en écartent jusqu’à 19 °C. Orton ne publie aucune valeur au-dessus du cône 14, et ce tableau aucune au-dessus du cône 15. Les cônes mesurent le travail thermique, pas la température : placez un cône témoin.",
+  "rates-are-over-the-last-100-gs02ii": "Les vitesses s’entendent sur les derniers 100 °C de la cuisson. Les grands cônes 13 et 14 ont des compositions différentes et des équivalents de température différents ; Orton ne publie aucune valeur au-dessus du cône 14."
 }

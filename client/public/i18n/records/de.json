@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Giftig. Nahezu unlöslich.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Achtung (Potterycrafts-SDB P3303): H302 gesundheitsschädlich bei Verschlucken; verschlucken Sie nichts davon und vermeiden Sie das Einatmen des Staubs.",
+  "theoretical-formula-9090t3": "Theoretische Formel",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Tricalciumphosphat. Echte Knochenasche kann etwas CaCO₃ enthalten und daher einen geringen Glühverlust haben.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Achtung (Potterycrafts-SDB): H302 gesundheitsschädlich bei Verschlucken; H315 verursacht Hautreizungen; H319 verursacht schwere Augenreizung; H335 trockener Staub kann die Atemwege reizen.",
   "water-soluble-fdjx5g": "Wasserlöslich.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "Probeplättchen, Plättchen, Beschriftung",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Wenn Sie einen Kegel in den Kiln-Sitter gelegt haben, decken Sie ihn mit Malerkrepp ab. Das Klebeband schützt den Kegel davor, beim Einräumen der Ware heruntergestoßen zu werden, und verbrennt im Brand rückstandslos.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, Kegel, Einräumen"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, Kegel, Einräumen",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Die Norm gibt Bezugstemperaturen an. Bei einer in der Töpferei üblichen Heizrate von etwa 100 °C/h hat Kyotos städtisches Institut gemessen, dass sich seine eigenen Kyoto-Kegel 47–79 °C kühler biegen als der JIS-Wert für dieselbe Nummer; für SK-Kegel nach JIS haben wir solche Messungen nicht gefunden. Stellen Sie einen Messkegel auf und vergleichen Sie.",
+  "orton-s-older-chart-for-large-jgynh": "Ortons ältere Tabelle für Normalkegel bei einer Heizrate von 150 °C pro Stunde über die letzten 100 °C, wie Ofenhersteller sie nachdrucken; Ortons aktuelle Werte für Normalkegel bei dieser Heizrate weichen davon um bis zu 19 °C ab. Orton veröffentlicht keinen Wert oberhalb von Kegel 14, und diese Tabelle keinen oberhalb von Kegel 15. Kegel messen Wärmearbeit, nicht Temperatur: Stellen Sie einen Messkegel auf.",
+  "rates-are-over-the-last-100-gs02ii": "Die Heizraten gelten für die letzten 100 °C des Brandes. Die Normalkegel 13 und 14 haben andere Zusammensetzungen und andere Temperaturäquivalente; Orton veröffentlicht keinen Wert oberhalb von Kegel 14."
 }
