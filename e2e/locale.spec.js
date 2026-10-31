@@ -160,6 +160,33 @@ test("a Bengali page shows its text's figures in Bengali digits, as its numbers,
   await expect(page.locator('label[for="temperature-C"]')).toContainText('1240 °C');
 });
 
+test("a firing log's date shows its month's own name in Odia, Punjabi, Nepali and Sinhala, which the browser may lack (lib/regions/locale-fallback.js)", async ({
+  page
+}) => {
+  await page.goto('/firing');
+  await page.locator('#firing-title').fill('Bisque');
+  await page.locator('#firing-date').fill('2026-10-03');
+  await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
+  await page.getByLabel('Cone row 1').fill('04');
+  await page.getByRole('button', { name: 'Save' }).click();
+  await expect(page.locator('.stored-firing', { hasText: 'Bisque' })).toContainText('Saturday, October 3, 2026');
+
+  // [language, October, Saturday], as Node's Intl (CLDR 48) names them.
+  for (const [code, october, saturday] of [
+    ['or', 'ଅକ୍ଟୋବର', 'ଶନିବାର'],
+    ['pa', 'ਅਕਤੂਬਰ', 'ਸ਼ਨੀਵਾਰ'],
+    ['ne', 'अक्टोबर', 'शनिबार'],
+    ['si', 'වප්', 'සෙනසුරාදා']
+  ]) {
+    await page.goto('/' + code + '/firing');
+    const stored = page.locator('.stored-firing', { hasText: 'Bisque' });
+    await expect(stored, code).toContainText(october);
+    await expect(stored, code).toContainText(saturday);
+    await expect(stored, code).not.toContainText('October');
+    await expect(stored, code).not.toContainText(/M10/);
+  }
+});
+
 test('Marathi and Nepali numbers show in Devanagari digits by default, Tamil, Kannada, Telugu, Gujarati, Malayalam, Punjabi, Odia and Sinhala in 0–9, as CLDR has them', async ({
   page
 }) => {
