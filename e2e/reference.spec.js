@@ -1,6 +1,7 @@
 // The public reference pages: the cone chart, the list of standard materials and a page for each material
-// (docs/seo-plan.md, item 17). In English only (lib/pages.js, ENGLISH_ONLY_PAGES), prerendered like the other
-// public pages: what a search engine reads is in the HTML as sent, before any script runs.
+// (docs/seo-plan.md, item 17). In English until a language is in REFERENCE_LANGUAGES (lib/regions/languages.js;
+// none is yet), prerendered like the other public pages: what a search engine reads is in the HTML as sent,
+// before any script runs.
 const fs = require('node:fs');
 const path = require('node:path');
 const { test, expect } = require('@playwright/test');
@@ -192,7 +193,7 @@ test.describe('the cone chart', () => {
   });
 });
 
-test.describe('in English only', () => {
+test.describe('in English only, in a language they are not translated into', () => {
   test("another language's address shows the English with its notice, and is not indexed", async ({
     page,
     request

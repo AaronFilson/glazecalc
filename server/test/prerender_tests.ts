@@ -16,6 +16,7 @@ import {
 } from '../../scripts/prerender.mjs';
 import pages from '../../lib/pages.js';
 import { adviceFiles, adviceKeys } from '../../scripts/advice-i18n.mjs';
+import { coneFiles, coneKeys, materialFiles, materialKeys } from '../../scripts/material-i18n.mjs';
 import { readPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
 
@@ -88,9 +89,20 @@ describe('prerender checks', () => {
     expect(pageProblems(page('<h2>Orton cones</h2> SK'), '/cones')).to.eql(['it lacks the Orton or SK chart']);
   });
 
-  it('renders the reference pages in English only, as the languages offered would show the same English', () => {
+  it('renders the reference pages in the languages they are translated into, as the others would show the same English', () => {
     expect(pages.prerenderLanguages('/cones', ['en', 'de'])).to.eql(['en']);
+    expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en', 'de'])).to.eql(['en', 'de']);
+    // A material's page is drawn in the browser in every language but English.
+    expect(pages.prerenderLanguages('/materials/silica', ['en', 'de'], ['en', 'de'])).to.eql(['en']);
     expect(pages.prerenderLanguages('/guides/firing', ['en', 'de'])).to.eql(['en', 'de']);
+  });
+
+  it('fails a reference page that says it is not translated, in a language it is translated into', () => {
+    const notice = page('<p class="guide-note">Not translated.</p><td>1305</td> Orton SK');
+    expect(pageProblems(notice, '/cones', 'en')).to.eql(['it carries the notice that it is not translated']);
+    // In a language it is not translated into, the notice is right; other pages have notes of their own.
+    expect(pageProblems(notice, '/cones', 'de')).to.eql([]);
+    expect(pageProblems(notice, '/guides', 'en')).to.eql([]);
   });
 
   it('accepts a page with its text, the policy <meta> and the placeholder', () => {
@@ -228,5 +240,40 @@ describe("the advice page's translations (scripts/advice-i18n.mjs)", () => {
         expect(value, `${name} ${key}`).to.equal(all[key]);
       }
     }
+  });
+});
+
+describe("the standard materials' and the cone charts' translations (scripts/material-i18n.mjs)", () => {
+  const records = path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'records');
+
+  it("are the materials' notes and hazards, and the charts' notes, from each language's records, and no others", () => {
+    const material = materialKeys();
+    const cones = coneKeys();
+    // Three notes, one for each chart, and none of them a material's.
+    expect(cones.size).to.equal(3);
+    for (const key of cones) expect(material.has(key), key).to.equal(false);
+    expect(material.size).to.be.above(250);
+    for (const [files, keys] of [
+      [materialFiles(), material],
+      [coneFiles(), cones]
+    ] as const) {
+      expect(Object.keys(files).sort()).to.eql(fs.readdirSync(records).sort());
+      for (const [name, text] of Object.entries(files)) {
+        const all = JSON.parse(fs.readFileSync(path.join(records, name), 'utf8')) as Record<string, string>;
+        for (const [key, value] of Object.entries(JSON.parse(text) as Record<string, string>)) {
+          expect(keys.has(key), `${name} ${key}`).to.equal(true);
+          expect(value, `${name} ${key}`).to.equal(all[key]);
+        }
+      }
+    }
+  });
+
+  it('hold every key in English, and the cone notes (which carry the witness cone advice) in English too', () => {
+    const english = JSON.parse(materialFiles()['en.json']!) as Record<string, string>;
+    expect(Object.keys(english).sort()).to.eql([...materialKeys()].sort());
+    const notes = Object.values(JSON.parse(coneFiles()['en.json']!) as Record<string, string>);
+    expect(notes).to.have.length(3);
+    for (const note of notes) expect(note).to.match(/witness cone|Orton publishes no figure above cone 14/);
+    expect(Object.values(english)).to.include('Theoretical formula');
   });
 });

@@ -27,7 +27,7 @@ export function problemsWith(html: string, start: string, code?: string, minText
 /** A page larger than this, gzipped, fails the build. */
 export const MAX_GZIPPED: number;
 /** What is wrong with one page in particular (its size; the advice page's standard advice). */
-export function pageProblems(html: string, page: string): string[];
+export function pageProblems(html: string, page: string, code?: string): string[];
 export function prerender(options?: {
   build?: boolean;
   codes?: readonly string[];
