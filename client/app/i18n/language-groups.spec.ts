@@ -28,7 +28,7 @@ describe('the languages in groups', () => {
     expect(sections[1]!.codes).toEqual(['ja', 'ko', 'zh-Hans', 'zh-Hant']);
     expect(sections[2]!.codes.slice(0, 4)).toEqual(['bg', 'hr', 'cs', 'da']);
     expect(sections[3]!.codes).toEqual(['ar', 'tr']);
-    expect(sections[4]!.codes).toEqual(['bn', 'gu', 'hi', 'kn', 'ml', 'mr', 'or', 'pa', 'ta', 'te', 'ur']);
+    expect(sections[4]!.codes).toEqual(['bn', 'gu', 'hi', 'kn', 'ml', 'mr', 'ne', 'or', 'pa', 'si', 'ta', 'te', 'ur']);
     expect(sections[5]!.codes).toEqual(['id', 'th', 'vi']);
   });
 
@@ -81,6 +81,8 @@ describe('the languages in groups', () => {
     expect(found('malayalam')).toEqual(['ml']);
     expect(found('punjabi')).toEqual(['pa']);
     expect(found('odia')).toEqual(['or']);
+    expect(found('nepali')).toEqual(['ne']);
+    expect(found('සිංහල')).toEqual(['si']);
   });
 });
 
