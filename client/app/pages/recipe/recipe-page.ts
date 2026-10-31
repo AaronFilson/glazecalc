@@ -1,6 +1,7 @@
 import { Location, NgTemplateOutlet } from '@angular/common';
 import {
   Component,
+  DestroyRef,
   Injector,
   OnInit,
   WritableSignal,
@@ -29,6 +30,7 @@ import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { ShelfService } from '../../core/shelf.service';
+import { UpdateService } from '../../core/update.service';
 import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
 import { fixed, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
@@ -783,6 +785,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   } | null>(null);
 
   constructor() {
+    // A new version waits for the changes not saved (core/update.service.ts), which a reload would lose.
+    const updates = inject(UpdateService);
+    effect(() => updates.holdWhile(this.unsaved()));
+    inject(DestroyRef).onDestroy(() => updates.holdWhile(false));
     // Asked to print what is not there (an empty page after a reload, a recipe removed elsewhere): show the editor.
     effect(() => {
       if (this.printParam() && !this.printRecipe() && !this.printWaiting()) untracked(() => this.leavePrint());

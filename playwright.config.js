@@ -47,6 +47,8 @@ module.exports = defineConfig({
   use: {
     baseURL: 'http://localhost:' + port,
     headless: true,
+    // The service worker (ngsw) caches between steps: only e2e/offline.spec.js allows it.
+    serviceWorkers: 'block',
     trace: 'retain-on-failure'
   },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
