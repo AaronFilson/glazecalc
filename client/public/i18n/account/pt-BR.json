@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Entrar",
+    "keepHeading": "Mantenha seu trabalho",
+    "signUpHeading": "Crie sua conta",
+    "signInLead": "Boas-vindas de volta ao seu caderno de esmaltes.",
+    "keepLead": "Mantenha tudo o que você fez como {name}: adicione seu e-mail e uma senha. Continua gratuito.",
+    "signUpLead": "Gratuito. Suas receitas, matérias-primas e anotações ficam privadas na sua conta.",
+    "trialNote": "Já tem uma conta? Entrar traz para ela o que você fez como {name}. Primeira vez aqui? <signup>Crie uma conta</signup> para manter o que fez em vez disso.",
+    "email": "E-mail",
+    "password": "Senha",
+    "passwordHint": "Pelo menos 8 caracteres.",
+    "confirmation": "Confirmar senha",
+    "keepSignedIn": "Manter conectado neste dispositivo",
+    "passwordMissing": "Digite sua senha.",
+    "createAccount": "Criar conta",
+    "signIn": "Entrar",
+    "haveAccount": "Já tem uma conta? <signin>Entrar</signin>",
+    "privacy": "Seu e-mail e o que você salva são usados somente para cuidar da sua conta, e são armazenados na Amazon Web Services, nos EUA. <privacy>Como o Glazecalc trata seus dados</privacy>",
+    "terms": "Ao criar uma conta, você concorda com os <terms>Termos de uso</terms>.",
+    "dataNotice": "O Glazecalc é um projeto gratuito e de código aberto, e as contas ficam em servidores nos Estados Unidos. Você pode ler os guias e testar a calculadora sem uma conta, ou rodar sua própria cópia. Criar ou não uma conta aqui é decisão sua, e o projeto não assume nenhuma responsabilidade por ela. <where>Onde sua conta é mantida, e sua escolha</where>",
+    "forgot": "Esqueceu sua senha? Redefina-a",
+    "newHere": "Primeira vez aqui? <signup>Crie uma conta gratuita</signup>",
+    "signUpFailed": "Erro: não foi possível criar a conta.",
+    "signInFailed": "Erro: não foi possível entrar.",
+    "or": "ou",
+    "passkeySignIn": "Entrar com uma passkey",
+    "passkeyHint": "Uma passkey usa sua impressão digital, seu rosto ou o bloqueio de tela em vez de uma senha. Adicione uma na página da sua conta."
+  },
+  "secondStep": {
+    "heading": "Verificação em duas etapas",
+    "signingInAs": "Sua senha está certa. Falta uma etapa para entrar como {email}.",
+    "leadCode": "Abra seu app autenticador e digite o código que ele mostra para o Glazecalc.",
+    "leadPasskey": "Use sua passkey para terminar de entrar.",
+    "leadRecovery": "Digite um dos códigos de recuperação que você salvou ao ativar a verificação em duas etapas. Cada código vale uma vez.",
+    "code": "Código do seu app autenticador",
+    "codeHint": "{digits} dígitos. Um código novo aparece a cada 30 segundos.",
+    "codeFormat": "Digite o código de {digits} dígitos do seu app autenticador.",
+    "recoveryCode": "Código de recuperação",
+    "recoveryHint": "Tem o formato abcde-12345.",
+    "recoveryMissing": "Digite um dos seus códigos de recuperação.",
+    "finish": "Terminar de entrar",
+    "usePasskey": "Usar uma passkey",
+    "noPasskeysHere": "Este navegador não pode usar passkeys. Use outra forma abaixo, ou entre em um dispositivo que possa.",
+    "useRecovery": "Usar um código de recuperação em vez disso",
+    "useApp": "Usar seu app autenticador em vez disso",
+    "startOver": "Começar de novo",
+    "reloadNote": "Esta etapa espera {minutes} minutos. Se você sair desta página ou recarregá-la, precisará digitar sua senha de novo.",
+    "expired": "O login demorou demais. Digite sua senha de novo."
+  },
+  "passkey": {
+    "cancelled": "A passkey não foi usada: o pedido foi cancelado ou expirou, ou este dispositivo não tem uma passkey para o Glazecalc. Tente novamente ou use outra forma.",
+    "registered": "Esta passkey já está na sua conta.",
+    "browserFailed": "Este navegador não conseguiu usar a passkey. Tente novamente ou use outra forma."
+  },
+  "forgot": {
+    "heading": "Redefinir sua senha",
+    "checkInbox": "Veja sua caixa de entrada e a pasta de spam. Se nada chegar, confira o endereço e peça de novo.",
+    "intro": "Digite o e-mail da sua conta e enviaremos um link para você escolher uma nova senha.",
+    "email": "E-mail:",
+    "send": "Enviar link de redefinição",
+    "back": "Voltar para entrar",
+    "failed": "Erro: não foi possível enviar o e-mail de redefinição. Tente novamente."
+  },
+  "reset": {
+    "heading": "Escolher uma nova senha",
+    "signIn": "Entrar",
+    "incomplete": "Esta página precisa do link de um e-mail de redefinição de senha, e este está incompleto.",
+    "askAgain": "Pedir um novo link",
+    "password": "Nova senha:",
+    "confirmation": "Confirmar nova senha:",
+    "save": "Salvar nova senha",
+    "hint": "Pelo menos 8 caracteres. Todos os dispositivos conectados à conta serão desconectados.",
+    "failed": "Erro: não foi possível alterar a senha. Tente novamente.",
+    "secondStep": "Se sua conta usa a verificação em duas etapas, você ainda precisará do seu app autenticador, de uma passkey ou de um código de recuperação para entrar."
+  },
+  "account": {
+    "trialTitle": "Seu teste",
+    "trialLead": "Você está testando o Glazecalc como {name}.",
+    "keepHeading": "Mantenha seu trabalho",
+    "keepText": "Este teste e tudo o que há nele serão removidos em {date}. Crie uma conta gratuita para mantê-los: suas receitas, matérias-primas e anotações ficam exatamente como estão, e {name} continua sendo seu nome de exibição.",
+    "createAccount": "Criar uma conta",
+    "title": "Sua conta",
+    "signedInAs": "Sessão iniciada como {email}.",
+    "contents": "Nesta página",
+    "changeHeading": "Alterar sua senha",
+    "current": "Senha atual",
+    "currentMissing": "Digite sua senha atual.",
+    "password": "Nova senha",
+    "passwordHint": "Pelo menos 8 caracteres. Os outros dispositivos conectados a esta conta serão desconectados.",
+    "confirmation": "Confirmar nova senha",
+    "change": "Alterar senha",
+    "changeFailed": "Erro: não foi possível alterar a senha. Tente novamente.",
+    "deleteHeading": "Excluir sua conta",
+    "deleteText": "Isso remove sua conta e tudo o que você salvou: receitas, matérias-primas, aditivos, anotações, registros de queima e dicas. Essa ação não pode ser desfeita.",
+    "deletePassword": "Sua senha, para confirmar",
+    "deletePasswordMissing": "Digite sua senha para confirmar.",
+    "delete": "Excluir minha conta",
+    "deleteFailed": "Erro: não foi possível excluir a conta. Tente novamente.",
+    "unverifiedHeading": "Confirme seu e-mail",
+    "unverifiedText": "Enviamos um link para {email} quando você criou esta conta. Abra-o para confirmar que o endereço é seu. Até lá, só enviamos e-mail para ele quando você pede, como em uma redefinição de senha.",
+    "resend": "Enviar o link de novo",
+    "resendFailed": "Erro: não foi possível enviar o link. Tente novamente.",
+    "emailHeading": "Alterar seu e-mail",
+    "emailText": "Enviamos um link para o novo endereço, e seu e-mail muda quando você o abre. Também avisamos o seu endereço atual. Todos os dispositivos conectados a esta conta serão desconectados.",
+    "newEmail": "Novo e-mail",
+    "emailPassword": "Sua senha, para confirmar",
+    "emailSend": "Enviar o link",
+    "emailFailed": "Erro: não foi possível enviar o link. Tente novamente.",
+    "signOutHeading": "Sair de todos os dispositivos",
+    "signOutText": "Desconecta você em todos os dispositivos, inclusive neste, e interrompe seus tokens de acesso e seus links de compartilhamento. Use se perdeu um dispositivo ou acha que outra pessoa tem seu login.",
+    "signOutButton": "Sair de todos os dispositivos",
+    "signOutFailed": "Erro: não foi possível sair. Tente novamente.",
+    "confirmStep": "A verificação em duas etapas está ativada, então confirme que é você: sua senha e uma segunda etapa."
+  },
+  "mfa": {
+    "heading": "Verificação em duas etapas",
+    "intro": "Peça uma segunda etapa ao entrar, além da senha: um código de um app autenticador, ou uma passkey. Assim, quem descobrir sua senha ainda não consegue entrar.",
+    "loadFailed": "Não foi possível carregar sua verificação em duas etapas. Recarregue a página.",
+    "on": "A verificação em duas etapas está ativada.",
+    "onText": "Você entra com sua senha e uma segunda etapa, ou só com uma passkey.",
+    "off": "A verificação em duas etapas está desativada.",
+    "badgeOn": "Ativada",
+    "badgeOff": "Desativada",
+    "offText": "Para ativá-la, configure um app autenticador ou adicione uma passkey.",
+    "confirmEmailFirst": "Confirme seu e-mail primeiro, acima. Usamos esse e-mail para avisar sobre mudanças na forma como você entra e para ajudar se você perder sua segunda etapa.",
+    "appHeading": "App autenticador",
+    "appText": "Um app no celular ou no gerenciador de senhas mostra um código novo a cada 30 segundos, para digitar ao entrar.",
+    "addApp": "Configurar um app autenticador",
+    "removeApp": "Remover o app autenticador",
+    "added": "Adicionado em {date}.",
+    "lastUsed": "Usado pela última vez em {date}.",
+    "notUsed": "Ainda não usado.",
+    "passkeysHeading": "Passkeys",
+    "passkeysText": "Uma passkey faz você entrar com sua impressão digital, seu rosto ou o bloqueio de tela, neste dispositivo ou no celular. Ela pode ser sua segunda etapa, ou fazer você entrar sozinha, sem a senha.",
+    "noPasskeysHere": "Este navegador não pode criar nem usar passkeys. Tente outro navegador ou dispositivo.",
+    "addPasskey": "Adicionar uma passkey",
+    "removePasskey": "Remover a passkey",
+    "rename": "Renomear",
+    "remove": "Remover",
+    "renameLabel": "Novo nome para “{name}”",
+    "saveName": "Salvar o nome",
+    "name": "Nome da passkey",
+    "nameHint": "Para você distinguir suas passkeys, como “Notebook” ou “Celular”.",
+    "nameCheck": "Dê à passkey um nome de 1 a {most} caracteres.",
+    "passkeyLimit": "Você tem {most} passkeys, o máximo que uma conta pode ter. Remova uma para adicionar outra.",
+    "codesTitle": "Códigos de recuperação",
+    "codesLeft": "{count, plural, one {Restam # de {total} códigos de recuperação.} many {Restam # de {total} códigos de recuperação.} other {Restam # de {total} códigos de recuperação.}} Se você não puder usar seu app ou uma passkey, um código faz você entrar no lugar. Cada código vale uma vez.",
+    "codesLow": "Crie códigos novos em breve. Se eles acabarem e você perder seu app e suas passkeys, não conseguirá entrar.",
+    "newCodes": "Criar novos códigos de recuperação",
+    "offHeading": "Desativar",
+    "offWhat": "A verificação em duas etapas continua ativada enquanto você tiver um app autenticador ou uma passkey. Remover o último deles a desativa, e então:",
+    "offPassword": "Entrar precisa só da sua senha, então quem a descobrir pode entrar.",
+    "offCodes": "Seus códigos de recuperação deixam de funcionar.",
+    "offSignOut": "Todos os outros dispositivos conectados à sua conta são desconectados. Este continua conectado.",
+    "offEmail": "Enviamos um e-mail avisando que ela foi desativada.",
+    "offRemoveApp": "Desativar a verificação em duas etapas (remove o app)",
+    "offRemoveAppFirst": "Remova o app, para começar a desativá-la",
+    "offPasskeys": "{count, plural, =1 {Para desativá-la, remova sua passkey em Passkeys, acima.} one {Para desativá-la, remova suas # passkeys em Passkeys, acima.} many {Para desativá-la, remova suas # passkeys em Passkeys, acima.} other {Para desativá-la, remova suas # passkeys em Passkeys, acima.}}",
+    "offPasskeysToo": "{count, plural, =1 {Você também tem uma passkey: remova-a em Passkeys, acima, assim como o app.} one {Você também tem # passkeys: remova-as em Passkeys, acima, assim como o app.} many {Você também tem # passkeys: remova-as em Passkeys, acima, assim como o app.} other {Você também tem # passkeys: remova-as em Passkeys, acima, assim como o app.}}",
+    "addAppText": "Para configurar um app autenticador, primeiro confirme que é você.",
+    "removeAppText": "Para remover o app autenticador, confirme que é você.",
+    "addPasskeyText": "Dê um nome à passkey e confirme que é você. Depois seu navegador pede para você criar a passkey.",
+    "removePasskeyText": "Para remover a passkey “{name}”, confirme que é você.",
+    "newCodesText": "Os códigos novos substituem os antigos, que deixam de funcionar. Confirme que é você.",
+    "lastFactor": "Esta é sua última segunda etapa, então a verificação em duas etapas é desativada e seus códigos de recuperação deixam de funcionar.",
+    "continue": "Continuar",
+    "cancel": "Cancelar",
+    "password": "Sua senha",
+    "factorLegend": "E sua segunda etapa",
+    "passkeyNext": "Seu navegador pede sua passkey quando você continuar.",
+    "passkeyReadyText": "Obrigado. Agora crie a passkey “{name}”: quando você apertar o botão, seu navegador pede sua impressão digital, seu rosto ou o bloqueio de tela, ou o seu celular. Se não funcionar, você pode tentar de novo por {minutes} minutos sem confirmar outra vez.",
+    "passkeyCreate": "Agora adicione a passkey",
+    "useApp": "Usar seu app autenticador em vez disso",
+    "usePasskey": "Usar uma passkey em vez disso",
+    "useRecovery": "Usar um código de recuperação em vez disso",
+    "failed": "Erro: não foi possível fazer a alteração. Tente novamente.",
+    "setupHeading": "Configure seu app autenticador",
+    "setupOpen": "Abra seu app autenticador e escolha adicionar uma conta.",
+    "setupScan": "Escaneie este QR code com o app, ou digite a chave.",
+    "setupTap": "Toque no botão para adicionar o Glazecalc a um app autenticador ou gerenciador de senhas neste celular.",
+    "showQr": "Mostrar o QR code, para configurar em outro dispositivo",
+    "setupScanOther": "Escaneie-o com o app autenticador do outro dispositivo.",
+    "qrAlt": "QR code para adicionar o Glazecalc a um app autenticador",
+    "key": "Chave",
+    "copyKey": "Copiar a chave",
+    "openInApp": "Adicionar a um app autenticador neste dispositivo",
+    "clipboardNote": "O texto copiado pode ficar no histórico da área de transferência e chegar aos seus outros dispositivos. Cole-o direto no seu gerenciador de senhas e depois limpe o histórico da área de transferência.",
+    "setupCode": "Digite o código de {digits} dígitos que o app agora mostra para o Glazecalc",
+    "setupFinish": "Terminar a configuração",
+    "codesHeading": "Seus códigos de recuperação",
+    "codesText": "Mantenha-os em um lugar seguro, como seu gerenciador de senhas, ou imprima-os e mantenha-os com seus papéis. Se você não puder usar seu app ou uma passkey, um código faz você entrar no lugar. Cada código vale uma vez. Eles são mostrados só agora.",
+    "print": "Imprimir os códigos",
+    "printNote": "Cada código vale uma vez. Mantenha esta página em um lugar seguro.",
+    "download": "Baixar como arquivo de texto",
+    "copy": "Copiar os códigos",
+    "copied": "Copiado.",
+    "copyFailed": "Não foi possível copiar. Selecione o texto e copie-o.",
+    "saved": "Eu os salvei",
+    "fileTitle": "Códigos de recuperação do Glazecalc para {email}",
+    "fileNote": "Cada código vale uma vez. Mantenha este arquivo em um lugar seguro."
+  },
+  "export": {
+    "heading": "Baixar meus dados",
+    "text": "Salve uma cópia de tudo o que sua conta contém em um só arquivo: seus dados, configurações, matérias-primas que você tem, receitas, matérias-primas, aditivos, anotações, registros de queima, dicas e lixeira. Ele não inclui sua senha. Mantenha o arquivo em um lugar privado, porque ele contém tudo o que você salvou.",
+    "json": "Baixar tudo (JSON)",
+    "csvText": "Ou salve uma planilha só das suas receitas ou só das suas próprias matérias-primas, para abrir no Excel, no Numbers ou no Planilhas.",
+    "recipes": "Receitas (CSV)",
+    "materials": "Matérias-primas (CSV)"
+  },
+  "trash": {
+    "heading": "Lixeira",
+    "text": "O que você remove do seu caderno espera na Lixeira por 30 dias. Coloque de volta a partir dela, ou exclua de vez.",
+    "open": "Abrir a Lixeira"
+  },
+  "shared": {
+    "heading": "Receitas compartilhadas",
+    "text": "As receitas que você compartilha por link, que qualquer pessoa com o link pode ler sem conta. Um link é mostrado só uma vez, quando é criado, então não pode ser mostrado aqui. Para compartilhar uma receita de novo, crie um novo link em Mais, na receita.",
+    "since": "Compartilhada desde {date}",
+    "notesShown": "Anotações visíveis",
+    "notesHidden": "Anotações ocultas",
+    "untitled": "Receita sem título",
+    "stop": "Parar de compartilhar",
+    "stopName": "Parar de compartilhar {name}",
+    "stopped": "A receita {name} não é mais compartilhada. O link dela não funciona mais.",
+    "stopFailed": "Isso não funcionou. Tente novamente.",
+    "fetchFailed": "Não foi possível carregar suas receitas compartilhadas. Tente novamente.",
+    "none": "Você não está compartilhando nenhuma receita."
+  },
+  "settings": {
+    "heading": "Configurações",
+    "intro": "Salvas com sua conta, então valem em todos os dispositivos.",
+    "saveFailed": "Não foi possível salvar a configuração. Tente novamente.",
+    "language": {
+      "legend": "Idioma",
+      "help": "O idioma do app, dos guias e dos seus e-mails. Mudá-lo abre esta página nesse idioma.",
+      "saved": "Salvo: {language}."
+    },
+    "region": {
+      "legend": "Onde você trabalha",
+      "none": {
+        "label": "Não escolhida",
+        "saved": "Salvo: nenhuma região escolhida; os padrões seguem seu navegador."
+      },
+      "saved": "Salvo: {region}.",
+      "help": "As matérias-primas vendidas lá e os padrões para números, datas, temperaturas e cones abaixo. Até você escolher, eles seguem o idioma do seu navegador."
+    },
+    "format": {
+      "legend": "Números e datas",
+      "auto": {
+        "label": "Como no meu idioma e região",
+        "saved": "Salvo: números e datas como seu idioma e sua região os escrevem."
+      },
+      "saved": "Salvo: números e datas como em {language}.",
+      "help": "Como números e datas são escritos: 12,345.6 ou 12.345,6, e a ordem de dia e mês."
+    },
+    "calendar": {
+      "legend": "Calendário",
+      "help": "O calendário em que as datas são mostradas. As datas que você digita continuam no calendário gregoriano.",
+      "gregory": {
+        "label": "Gregoriano",
+        "saved": "Salvo: as datas são mostradas no calendário gregoriano."
+      },
+      "buddhist": {
+        "label": "Era budista tailandesa",
+        "saved": "Salvo: as datas são mostradas na era budista tailandesa."
+      },
+      "japanese": {
+        "label": "Era japonesa",
+        "saved": "Salvo: as datas são mostradas em eras japonesas."
+      }
+    },
+    "digits": {
+      "legend": "Dígitos",
+      "help": "Os dígitos em que os números são mostrados. Alguns idiomas têm os seus, como o árabe, o bengali e o híndi, e onde você está decide quais são os usuais. Você pode digitar números com qualquer um dos dois.",
+      "auto": {
+        "label": "Como é usual onde você está",
+        "saved": "Salvo: dígitos como é usual onde você está."
+      },
+      "western": {
+        "label": "Dígitos ocidentais, 0–9",
+        "saved": "Salvo: os números são mostrados com os dígitos 0–9."
+      },
+      "native": {
+        "label": "Os dígitos próprios do idioma, onde ele os tem",
+        "saved": "Salvo: os números são mostrados nos dígitos próprios do idioma, onde ele os tem."
+      }
+    },
+    "decimalMark": {
+      "legend": "Digitação de quantidades",
+      "either": {
+        "label": "Vírgula ou ponto para decimais",
+        "example": "12,5 ou 12.5",
+        "saved": "Salvo: as quantidades podem ser digitadas com vírgula ou ponto."
+      },
+      "comma": {
+        "label": "Vírgula para decimais",
+        "saved": "Salvo: as quantidades são digitadas com vírgula para decimais."
+      },
+      "point": {
+        "label": "Ponto para decimais",
+        "saved": "Salvo: as quantidades são digitadas com ponto para decimais."
+      },
+      "help": "Com qualquer um dos dois, uma quantidade como 1.250 é lida do jeito que seus números são escritos acima."
+    },
+    "temperature": {
+      "legend": "Temperaturas",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Salvo: temperaturas em °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Salvo: temperaturas em °F."
+      },
+      "help": "Até você escolher, isso segue sua região: °F nos Estados Unidos, °C nos outros lugares."
+    },
+    "cones": {
+      "legend": "Queima",
+      "orton": {
+        "label": "Cones Orton",
+        "example": "cone 04, cone 6",
+        "saved": "Salvo: queima por cones Orton."
+      },
+      "sk": {
+        "label": "Cones SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Salvo: queima por cones SK."
+      },
+      "temperature": {
+        "label": "Temperatura, como o programa de um controlador de forno",
+        "saved": "Salvo: queima por temperatura."
+      },
+      "help": "Até você escolher, isso segue sua região: cones Orton nos EUA, no Reino Unido, na Irlanda, na Austrália e na Nova Zelândia, cones SK no Japão, temperatura no resto da Europa."
+    },
+    "density": {
+      "legend": "Densidade do esmalte",
+      "sg": {
+        "label": "Densidade",
+        "saved": "Salvo: densidade do esmalte como densidade.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Graus Baumé, de um densímetro",
+        "saved": "Salvo: densidade do esmalte em graus Baumé."
+      },
+      "pint": {
+        "label": "Peso por pinta, as onças em uma pinta imperial",
+        "saved": "Salvo: densidade do esmalte como peso por pinta."
+      },
+      "help": "Como os guias dão a espessura de um esmalte. Até você escolher, isso segue sua região: graus Baumé na Itália e no Japão, densidade nos outros lugares."
+    },
+    "currency": {
+      "legend": "Moeda dos preços",
+      "help": "Os preços que você informa para as matérias-primas, e o custo de um lote, ficam nesta moeda. Mudá-la não converte os preços que você já informou. Até você escolher, ela segue sua região.",
+      "saved": "Salvo: preços em {currency}.",
+      "notConverted": "Seus preços armazenados não foram convertidos: continuam sendo os números que você informou."
+    },
+    "theme": {
+      "legend": "Claro ou escuro",
+      "system": {
+        "label": "Como este dispositivo está configurado",
+        "saved": "Salvo: claro ou escuro como cada dispositivo está configurado."
+      },
+      "light": {
+        "label": "Claro",
+        "saved": "Salvo: sempre claro."
+      },
+      "dark": {
+        "label": "Escuro",
+        "saved": "Salvo: sempre escuro."
+      },
+      "help": "As receitas impressas são sempre preto no branco."
+    },
+    "palette": {
+      "legend": "Cores",
+      "saved": "Salvo: botões e links em {palette}.",
+      "help": "Para botões, links e abas, com nomes de esmaltes. Cada uma é fácil de ler no claro e no escuro."
+    },
+    "weightUnit": {
+      "legend": "Pesos dos lotes",
+      "grams": {
+        "label": "Gramas",
+        "saved": "Salvo: os pesos dos lotes são em gramas."
+      },
+      "pounds": {
+        "label": "Libras e onças",
+        "saved": "Salvo: os pesos dos lotes são em libras e onças."
+      },
+      "help": "Para lotes impressos."
+    },
+    "gramPrecision": {
+      "legend": "Gramas nos lotes impressos",
+      "single": {
+        "label": "Até um décimo de grama",
+        "saved": "Salvo: os gramas aparecem até o décimo."
+      },
+      "full": {
+        "label": "Precisão total",
+        "saved": "Salvo: os gramas aparecem por inteiro, com até 5 casas decimais."
+      },
+      "help": "Até o décimo, quantidades abaixo de 10 g ainda mostram os centésimos (2,35 g), para corantes em lotes pequenos de teste."
+    },
+    "lead": {
+      "legend": "Chumbo",
+      "off": {
+        "label": "Desativado: nunca adicionar chumbo a uma receita nem sugeri-lo",
+        "saved": "Salvo: o chumbo nunca é adicionado a uma receita nem sugerido."
+      },
+      "on": {
+        "label": "Ativado: matérias-primas com chumbo podem ser adicionadas e sugeridas",
+        "saved": "Salvo: matérias-primas com chumbo podem ser adicionadas e sugeridas."
+      },
+      "help": "O chumbo é venenoso se respirado ou engolido e se acumula no corpo, e um esmalte com chumbo pode liberá-lo em alimentos e bebidas; nenhum cálculo consegue dizer se uma peça queimada o faz. Desativado, as receitas que já têm chumbo ainda abrem como estavam.",
+      "warning": "Use chumbo apenas como frita, nunca como chumbo vermelho, branco ou amarelo crus nem como litargírio. Misture-o com água, nunca o aplique com pistola, use máscara de proteção respiratória e faça a limpeza úmida. Mantenha peças esmaltadas com chumbo longe de alimentos e bebidas, a menos que um ensaio de liberação de metais em laboratório, feito com a peça queimada, tenha sido aprovado.",
+      "turnOn": "Ativar o chumbo",
+      "keepOff": "Manter desativado"
+    },
+    "englishTerms": {
+      "legend": "Termos em inglês",
+      "off": {
+        "label": "Desativado",
+        "saved": "Salvo: sem termos em inglês."
+      },
+      "on": {
+        "label": "Mostrar o inglês depois dos termos principais",
+        "saved": "Salvo: o inglês é mostrado depois dos termos principais."
+      },
+      "help": "Para ler fontes em inglês, como a Digitalfire, ao lado desta: os termos principais ganham o inglês entre parênteses."
+    },
+    "notice": {
+      "legend": "Aviso de tradução",
+      "shown": {
+        "label": "Mostrado",
+        "saved": "Salvo: o aviso é mostrado."
+      },
+      "hidden": {
+        "label": "Oculto",
+        "saved": "Salvo: o aviso fica oculto. Uma linha dele continua nos guias de segurança.",
+        "savedPlain": "Salvo: o aviso fica oculto. Uma linha dele continua no alto de cada página."
+      },
+      "help": "A nota no alto de cada página dizendo que ela foi traduzida por IA, com uma forma de sugerir uma correção."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Confirme seu e-mail",
+    "intro": "Aperte o botão para confirmar este endereço.",
+    "confirm": "Confirmar",
+    "incomplete": "Esta página precisa do link de um e-mail de confirmação, e este está incompleto.",
+    "account": "Sua conta",
+    "signIn": "Entrar",
+    "failed": "Erro: não foi possível confirmar o endereço. Tente novamente."
+  },
+  "providers": {
+    "continueGoogle": "Continuar com o Google",
+    "continueGithub": "Continuar com o GitHub",
+    "continueMicrosoft": "Entrar com a Microsoft",
+    "failed": "O login não funcionou. Tente novamente.",
+    "heading": "Google, GitHub e Microsoft",
+    "intro": "Vincule uma conta do Google, do GitHub ou da Microsoft para entrar com ela. O Glazecalc mantém apenas o id da conta, nunca o nome, a foto nem qualquer outra coisa, e a verificação em duas etapas continua pedindo a segunda etapa.",
+    "passwordless": "Esta conta não tem senha. Para mudar seu e-mail, a verificação em duas etapas ou as formas de entrar, ou para excluir sua conta, você confirma que é você entrando de novo com o Google, o GitHub ou a Microsoft, o que você tiver vinculado. Você também pode definir uma senha.",
+    "setPassword": "Enviar por e-mail um link para definir uma senha",
+    "setPasswordUnlinks": "Definir uma senha com o link enviado por e-mail também desvincula o Google, o GitHub e a Microsoft. Você pode vinculá-los de novo depois.",
+    "setPasswordFailed": "Não foi possível enviar o link. Tente novamente.",
+    "confirmFirst": "Confirme seu e-mail primeiro, com o link que enviamos, para vincular o Google, o GitHub ou a Microsoft.",
+    "linkedOn": "Vínculo feito em {date}",
+    "notLinked": "Sem vínculo",
+    "link": "Vincular {provider}",
+    "unlink": "Desvincular {provider}",
+    "linkFailed": "Não foi possível vincular. Tente novamente.",
+    "reauthIntro": "Esta conta não tem senha, então confirme que é você entrando de novo. Depois faça a alteração em até 5 minutos.",
+    "reauthButton": "Entrar de novo com {provider}",
+    "reauthHeld": "Você entrou de novo com {provider}. Pode fazer uma alteração sem senha nos próximos 5 minutos.",
+    "reauthFirst": "Entre de novo primeiro, com um dos botões acima.",
+    "reauthFailed": "Não foi possível começar a entrar de novo. Tente novamente."
+  },
+  "apps": {
+    "title": "Apps conectados",
+    "lead": "Os assistentes, scripts e apps que podem alcançar seus registros. Veja o que cada um fez, coloque de volta o que ele moveu para a Lixeira e interrompa-o quando quiser.",
+    "listHeading": "Seus apps conectados e tokens de acesso",
+    "listLabel": "Apps conectados e tokens de acesso",
+    "makeToken": "Criar um token de acesso",
+    "none": "Nada está conectado à sua conta.",
+    "loadFailed": "Não foi possível carregar seus apps conectados. Recarregue a página para tentar de novo.",
+    "kindToken": "Token de acesso",
+    "kindOauth": "App conectado",
+    "clientHost": "Endereço do app: {host}",
+    "redirectHost": "Envia você de volta para: {host}",
+    "last90": "Nos últimos 90 dias:",
+    "nothingDone": "Não alterou nada nos últimos 90 dias.",
+    "count": {
+      "create": "{count, plural, one {# registro criado} many {# registros criados} other {# registros criados}}",
+      "change": "{count, plural, one {# registro alterado} many {# registros alterados} other {# registros alterados}}",
+      "trash": "{count, plural, one {# registro movido para a Lixeira} many {# registros movidos para a Lixeira} other {# registros movidos para a Lixeira}}",
+      "restore": "{count, plural, one {# registro colocado de volta} many {# registros colocados de volta} other {# registros colocados de volta}}",
+      "undo": "{count, plural, one {# alteração desfeita} many {# alterações desfeitas} other {# alterações desfeitas}}"
+    },
+    "action": {
+      "create": "Criou",
+      "change": "Alterou",
+      "trash": "Moveu para a Lixeira:",
+      "restore": "Colocou de volta:",
+      "undo": "Desfez uma alteração em"
+    },
+    "show": "Mostrar detalhes",
+    "hide": "Ocultar detalhes",
+    "showNamed": "Mostrar detalhes de {name}",
+    "hideNamed": "Ocultar detalhes de {name}",
+    "loading": "Carregando…",
+    "detailFailed": "Não foi possível carregar os detalhes. Tente novamente.",
+    "movedHeading": "Movido para a Lixeira",
+    "movedNone": "Nada do que ele moveu ainda está na Lixeira.",
+    "putAllBack": "Colocar tudo de volta",
+    "activityHeading": "O que ele fez",
+    "activityNone": "Nada nos últimos 90 dias.",
+    "older": "Mostrar mais antigos",
+    "revokeQuestion": "Revogar {name}? Ele para de funcionar na hora.",
+    "revokeYes": "Sim, revogar",
+    "revokeAll": "Revogar todos",
+    "revokeAllQuestion": "{count, plural, one {Revogar a # conexão que ainda funciona? Ela para de funcionar na hora.} many {Revogar todas as # conexões que ainda funcionam? Elas param de funcionar na hora.} other {Revogar todas as # conexões que ainda funcionam? Elas param de funcionar na hora.}}",
+    "revokeFailed": "Erro: não foi possível revogar. Tente novamente.",
+    "restoreFailed": "Erro: não foi possível colocar os registros de volta. Tente novamente.",
+    "selfDescribed": "autodescrito",
+    "selfDescribedNote": "Ele se registrou sozinho, então o nome dele é apenas o que ele diz de si mesmo.",
+    "confirm": {
+      "heading": "Confirmar antes de alterações",
+      "intro": "Escolha se uma alteração feita por um assistente, app ou token de acesso espera até você aprová-la aqui, depois de entrar. Nada do que ele pedir é alterado até você aprovar.",
+      "off": "Nunca perguntar",
+      "offHint": "As alterações são feitas na hora. Cada uma mantém o registro como estava, para você poder desfazê-la, e o que cada app fez aparece abaixo.",
+      "removals": "Perguntar antes de remoções",
+      "removalsHintSite": "Mover um registro para a Lixeira, tirar uma matéria-prima das que você tem ou tirar um registro de queima de uma receita espera sua aprovação neste site.",
+      "all": "Perguntar antes de toda alteração",
+      "allHint": "Todo registro novo, alteração, desfazer e remoção espera sua aprovação neste site.",
+      "how": "Uma alteração que espera tem sua própria página, para a qual o assistente ou script dá um link a você. Ela espera 30 minutos; depois nada é alterado. Um token de acesso criado com “As alterações deste token não precisam de confirmação” nunca é questionado.",
+      "exempt": "Suas alterações não precisam de confirmação.",
+      "saveFailed": "Erro: não foi possível salvar sua escolha. Tente novamente."
+    }
+  },
+  "connect": {
+    "title": "Conectar um app à sua conta",
+    "loading": "Carregando…",
+    "loadFailed": "Não foi possível carregar este pedido para conectar um app. Recarregue a página ou comece de novo no app.",
+    "answerFailed": "Erro: não foi possível enviar sua resposta. Tente novamente.",
+    "toAccount": "Ir para sua conta",
+    "asking": "Este app está pedindo para se conectar à sua conta do Glazecalc:",
+    "noName": "Um app sem nome",
+    "selfDescribed": "autodescrito",
+    "selfDescribedNote": "Ele se registrou sozinho, então este nome é apenas o que ele diz de si mesmo. O Glazecalc não o verificou.",
+    "account": "Sessão iniciada como {email}",
+    "appAddress": "O endereço do app",
+    "checked": "(verificado pelo Glazecalc)",
+    "answerTo": "Para onde vai sua resposta",
+    "ownComputer": "Seu próprio computador",
+    "appOnDevice": "Um app no seu dispositivo que abre links {scheme}",
+    "loopbackWarning": "Este app recebe a resposta no seu próprio computador. Só permita se você começou isso por conta própria, neste computador, agora há pouco.",
+    "loopbackWriteWarning": "Ele também pede para alterar seus registros: qualquer programa neste computador que pegue a resposta poderia então alterá-los.",
+    "appSchemeWarning": "A resposta vai para qualquer app do seu dispositivo que abra links {scheme}. O resto desse endereço não é verificado, então pode parecer qualquer site. Só permita se você começou isso a partir de um app em que confia, agora há pouco.",
+    "elsewhereWarning": "O endereço deste app é {app}, mas sua resposta vai para {answer}. Só permita se você esperava isso.",
+    "canHeading": "O que ele pode fazer",
+    "canRead": "Ler suas receitas, caderno, matérias-primas, estoque e configurações.",
+    "readOnly": "Ele não pode alterar nada.",
+    "alsoWrite": "Permitir também que ele altere meus registros",
+    "writeWarning": "Ele poderia então criar e alterar seus registros e movê-los para a Lixeira. Cada alteração mantém uma versão do registro como estava, para você poder desfazê-la. Você pode revogá-lo a qualquer momento em Apps conectados.",
+    "privacy": "O que o Glazecalc mantém sobre apps conectados está no <privacy>aviso de privacidade</privacy>. Você pode ver e revogar seus apps em <apps>Apps conectados</apps>.",
+    "allow": "Permitir",
+    "deny": "Não permitir",
+    "sending": "Enviando sua resposta ao app…"
+  },
+  "tokens": {
+    "heading": "Tokens de acesso",
+    "intro": "Um token de acesso permite que seu próprio assistente de IA ou script leia as receitas, matérias-primas, anotações e registros de queima da sua conta e, se você escolher, os altere. Cada token para de funcionar no dia que você escolher, ou assim que você o revogar.",
+    "howTo": "Como conectar um assistente de IA",
+    "seeThem": "Seus tokens e apps conectados, o que cada um fez e Revogar estão na página Apps conectados.",
+    "seeThemLink": "Abrir Apps conectados",
+    "hint": "terminando em {hint}",
+    "readOnly": "Somente leitura",
+    "readWrite": "Ler e alterar",
+    "created": "criado em {date}",
+    "lastUsed": "usado pela última vez em {date}",
+    "neverUsed": "nunca usado",
+    "expires": "expira em {date}",
+    "expiredOn": "expirou em {date}",
+    "revokedOn": "revogado em {date}",
+    "revoke": "Revogar",
+    "revokeNamed": "Revogar {name}",
+    "revokeAll": "Revogar todos os tokens de acesso",
+    "revokeFailed": "Erro: não foi possível revogar o token. Tente novamente.",
+    "loadFailed": "Não foi possível carregar seus tokens de acesso. Recarregue a página para tentar de novo.",
+    "createHeading": "Criar um token",
+    "name": "Nome",
+    "nameHint": "Algo para distingui-lo, como o assistente ou o computador para o qual ele é.",
+    "nameCheck": "Dê ao token um nome de 1 a {most} caracteres.",
+    "expiry": "Para de funcionar depois de",
+    "days": "{count, plural, one {# dia} many {# dias} other {# dias}}",
+    "expiryHint": "Enviamos um e-mail 7 dias antes de um token parar de funcionar.",
+    "expiryWriteHint": "{count, plural, one {Um token que pode alterar seus registros para de funcionar depois de no máximo # dia.} many {Um token que pode alterar seus registros para de funcionar depois de no máximo # dias.} other {Um token que pode alterar seus registros para de funcionar depois de no máximo # dias.}}",
+    "confirmEmailFirst": "Antes de criar um token, confirme seu e-mail: abra o link que enviamos para {email}. Avisamos você nesse endereço quando um token é criado e antes de um parar de funcionar.",
+    "resend": "Enviar o link de confirmação de novo",
+    "scopeNote": "O token pode ler seus registros, mas não alterá-los.",
+    "scope": "O que ele pode fazer",
+    "scopeWriteNote": "O token também pode salvar registros novos, alterá-los e movê-los para a Lixeira. Cada alteração mantém o registro como estava, para você poder desfazê-la, e o que o token fez aparece em Apps conectados e em Baixar meus dados. Escolha isto somente para um assistente ou script em que você confie para alterar seus registros.",
+    "confirmStep": "Para criar o token, confirme que é você.",
+    "create": "Criar o token",
+    "failed": "Erro: não foi possível criar o token. Tente novamente.",
+    "limit": "Você tem {most} tokens de acesso funcionando, o máximo que uma conta pode ter. Revogue um para criar outro.",
+    "newHeading": "Copie seu novo token agora",
+    "newText": "Esta é a única vez que ele é mostrado. Quem o tiver pode ler seus registros até ele parar de funcionar, então mantenha-o como uma senha e dê-o somente ao seu próprio assistente ou script.",
+    "newTextWrite": "Esta é a única vez que ele é mostrado. Quem o tiver pode ler e alterar seus registros até ele parar de funcionar, então mantenha-o como uma senha e dê-o somente ao seu próprio assistente ou script.",
+    "newLabel": "Seu novo token de acesso",
+    "copy": "Copiar o token",
+    "copied": "Copiado.",
+    "copyFailed": "Não foi possível copiar. Selecione o token e copie-o por conta própria.",
+    "done": "Eu o copiei",
+    "keptHeading": "Seus tokens de acesso ainda funcionam",
+    "keptText": "{count, plural, =1 {Trocar sua senha não interrompeu seu token de acesso. Se você a trocou porque outra pessoa pode saber dela, revogue o token também.} one {Trocar sua senha não interrompeu seu # token de acesso. Se você a trocou porque outra pessoa pode saber dela, revogue-o também.} many {Trocar sua senha não interrompeu seus # tokens de acesso. Se você a trocou porque outra pessoa pode saber dela, revogue-os também.} other {Trocar sua senha não interrompeu seus # tokens de acesso. Se você a trocou porque outra pessoa pode saber dela, revogue-os também.}}",
+    "keep": "Mantê-los",
+    "signOutNote": "{count, plural, =1 {Isso também interrompe seu token de acesso, para sempre.} one {Isso também interrompe seu # token de acesso, para sempre.} many {Isso também interrompe seus # tokens de acesso, para sempre.} other {Isso também interrompe seus # tokens de acesso, para sempre.}}",
+    "noConfirm": "As alterações deste token não precisam de confirmação",
+    "noConfirmHint": "Para um script que você executa. Se você escolher confirmar alterações em Apps conectados, este token continua nunca sendo questionado. Você só pode escolher isso agora, quando o token é criado."
+  },
+  "confirm": {
+    "title": "Aprovar uma alteração",
+    "lead": "Um app conectado à sua conta pede para fazer esta alteração. Nada é alterado até você aprovar.",
+    "from": "Pedido por {name}",
+    "fromToken": "um token de acesso",
+    "fromConnectedApp": "um app conectado",
+    "selfDescribed": "autodescrito",
+    "selfDescribedNote": "Ele se registrou sozinho, então o nome dele é apenas o que ele diz de si mesmo. O Glazecalc não o verificou.",
+    "asked": "Pedido em {date}. Espera até {time}; depois nada é alterado.",
+    "removal": "Isto remove algo: um registro vai para a Lixeira, de onde você pode colocá-lo de volta por 30 dias, ou uma matéria-prima sai das que você tem.",
+    "check": "Aprove somente se foi você que pediu esta alteração. Se não foi, recuse e revogue o app em Apps conectados.",
+    "approve": "Aprovar a alteração",
+    "decline": "Recusar",
+    "titleBefore": "Antes de este app alterá-lo, ele se chamava “{title}”.",
+    "untitled": "(sem título)",
+    "changedAgo": "{minutes, plural, =0 {Este app o alterou há menos de um minuto.} one {Este app o alterou há # minuto.} many {Este app o alterou há # minutos.} other {Este app o alterou há # minutos.}}",
+    "now": "Agora:",
+    "after": "Depois da alteração:",
+    "showAll": "Mostrar tudo",
+    "showLess": "Mostrar menos",
+    "othersHeading": "{count, plural, one {Mais # alteração espera de {name}} many {Mais # alterações esperam de {name}} other {Mais # alterações esperam de {name}}}",
+    "approveAllShown": "{count, plural, one {Aprovar todas as # alterações de {name}} many {Aprovar todas as # alterações de {name}} other {Aprovar todas as # alterações de {name}}}",
+    "declineAll": "{count, plural, one {Recusar todas as # alterações de {name}} many {Recusar todas as # alterações de {name}} other {Recusar todas as # alterações de {name}}}",
+    "decided": "Esta alteração já foi decidida.",
+    "notFound": "Não há nenhuma alteração esperando neste endereço. Ela pode já ter sido aprovada ou recusada, ou esperado mais de 30 minutos, ou é de outra conta.",
+    "signIn": "Entre no Glazecalc com a conta para a qual é a alteração e abra este link de novo.",
+    "signInLink": "Entrar",
+    "loadFailed": "Não foi possível carregar a alteração. Recarregue a página para tentar de novo.",
+    "failed": "Erro: não foi possível enviar sua resposta. Tente novamente.",
+    "apps": "Ver seus apps conectados"
+  }
+}
