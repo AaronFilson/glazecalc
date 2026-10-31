@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Giftig. Nästan olöslig.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Varning (Potterycrafts säkerhetsdatablad P3303): H302 skadligt vid förtäring; svälj inte och undvik att andas in dammet.",
+  "theoretical-formula-9090t3": "Teoretisk formel",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalciumfosfat. Verklig benaska kan innehålla lite CaCO₃ och därmed ha en liten glödförlust.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Varning (Potterycrafts säkerhetsdatablad): H302 skadligt vid förtäring; H315 irriterar huden; H319 orsakar allvarlig ögonirritation; H335 torrt damm kan orsaka irritation i luftvägarna.",
   "water-soluble-fdjx5g": "Vattenlöslig.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "provbitar, prover, etiketter",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "När en kägla har satts i Kiln-Sitter-brytaren, täck den med maskeringstejp. Tejpen hindrar att käglan slås av medan ugnen sätts, och den bränns bort utan rester under bränningen.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kägla, käglor, sätta ugnen"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kägla, käglor, sätta ugnen",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standarden anger referenstemperaturer. Vid en keramikers hastighet på cirka 100 °C/h mätte Kyotos kommunala institut att dess egna Kyotokäglor böjde sig 47–79 °C kallare än JIS-siffran för samma nummer; några sådana mätningar för SK-käglor enligt JIS hittade vi inte. Ställ in en kontrollkägla och jämför.",
+  "orton-s-older-chart-for-large-jgynh": "Ortons äldre tabell för stora käglor uppvärmda med 150 °C i timmen över de sista 100 °C, så som ugnstillverkare återger den; Ortons aktuella siffror för stora käglor vid den hastigheten avviker från den med upp till 19 °C. Orton publicerar ingen siffra över kägla 14, och den här tabellen ingen över kägla 15. Käglor mäter värmearbete, inte temperatur: ställ in en kontrollkägla.",
+  "rates-are-over-the-last-100-gs02ii": "Hastigheterna gäller de sista 100 °C av bränningen. Stora käglor 13 och 14 har andra sammansättningar och andra temperaturekvivalenter; Orton publicerar ingen siffra över kägla 14."
 }

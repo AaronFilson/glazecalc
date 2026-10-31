@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Myrkyllinen. Lähes liukenematon.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Varoitus (Potterycraftsin käyttöturvallisuustiedote P3303): H302 haitallista nieltynä; älä niele ja vältä pölyn hengittämistä.",
+  "theoretical-formula-9090t3": "Teoreettinen kaava",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalsiumfosfaatti. Oikea luutuhka voi sisältää hieman kalsiumkarbonaattia (CaCO₃), ja siksi sillä voi olla pieni polttohäviö.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Varoitus (Potterycraftsin käyttöturvallisuustiedote): H302 haitallista nieltynä; H315 ärsyttää ihoa; H319 ärsyttää voimakkaasti silmiä; H335 kuiva pöly saattaa aiheuttaa hengitysteiden ärsytystä.",
   "water-soluble-fdjx5g": "Vesiliukoinen.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "lasitekoepalat, koepalat, merkinnät",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Kun keila on asetettu Kiln-Sitter-katkaisimeen, peitä se maalarinteipillä. Teippi suojaa keilaa putoamasta, kun uunia ladotaan, ja palaa poltossa pois jälkiä jättämättä.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, keila, keilat, uunin ladonta"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, keila, keilat, uunin ladonta",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standardi antaa vertailulämpötilat. Keraamikon käyttämällä lämmitysnopeudella, noin 100 °C/h, Kioton kaupungin tutkimuslaitos mittasi omien Kioton keilojensa taipuvan 47–79 °C alhaisemmassa lämpötilassa kuin JIS-arvo samalle numerolle; JIS-standardin SK-keiloista emme löytäneet vastaavia mittauksia. Aseta tarkkailukeila ja vertaa.",
+  "orton-s-older-chart-for-large-jgynh": "Ortonin vanhempi taulukko isoille keiloille, joita lämmitetään 150 °C tunnissa polton viimeisten 100 °C:n aikana, sellaisena kuin uunivalmistajat sen uusintapainavat; Ortonin nykyiset luvut isoille keiloille tällä nopeudella poikkeavat siitä enintään 19 °C. Orton ei julkaise lukua keilalle 14 korkeammille keiloille, eikä tämä taulukko keilalle 15 korkeammille. Keilat mittaavat lämpötyötä, eivät lämpötilaa: aseta tarkkailukeila.",
+  "rates-are-over-the-last-100-gs02ii": "Nopeudet koskevat polton viimeisiä 100 °C:ta. Isojen keilojen 13 ja 14 koostumukset ja lämpötilavastaavuudet ovat erilaiset; Orton ei julkaise lukua keilalle 14 korkeammille keiloille."
 }
