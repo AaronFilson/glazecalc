@@ -90,13 +90,14 @@ describe('the page of a standard material', () => {
   beforeEach(() => localStorage.clear());
 
   /** A page of the material, as its route opens it; a test may open more than one. */
-  const render = async (name: string, language = 'en') => {
+  const render = async (name: string, language = 'en', translated: readonly string[] = ['en']) => {
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
         ...testProviders(),
         provideRouter([]),
         { provide: PAGE_LANGUAGE, useValue: language },
+        { provide: REFERENCE_LANGUAGE_LIST, useValue: translated },
         { provide: ActivatedRoute, useValue: { data: of({ material: named(name) }) } }
       ]
     });

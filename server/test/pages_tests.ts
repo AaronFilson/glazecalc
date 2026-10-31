@@ -463,7 +463,8 @@ describe('pages in each language', () => {
     const one = sitemap(SITE, ['en']);
     expect(one).to.include('<url><loc>https://glazecalcapp.com/guides/firing</loc></url>');
     expect(one).not.to.include('xhtml:link');
-    const two = sitemap(SITE, ['en', 'de']);
+    // No language has the reference pages translated here, whichever are on in lib/regions/languages.js.
+    const two = sitemap(SITE, ['en', 'de'], ['en']);
     expect(two).to.include(
       '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
     );
@@ -554,19 +555,22 @@ describe('pages in each language', () => {
 
     it('prerenders them in English only while no language has them translated', () => {
       const live = ['en', 'de', 'ja'];
-      expect(languages.REFERENCE_LANGUAGES).to.eql(['en']);
+      const reference = ['en'];
       for (const address of ['/cones', '/materials', '/materials/silica']) {
-        expect(prerenderedKey(address, live), address).to.equal('en' + address + '.html');
-        expect(prerenderedKey('/de' + address, live), address).to.equal(null);
+        expect(prerenderedKey(address, live, reference), address).to.equal('en' + address + '.html');
+        expect(prerenderedKey('/de' + address, live, reference), address).to.equal(null);
       }
       // The guides in other languages are still rendered, the one in English only too.
-      expect(prerenderedKey('/de/guides/firing', live)).to.equal('de/guides/firing.html');
-      expect(prerenderLanguages('/materials/silica', live)).to.eql(['en']);
-      expect(prerenderLanguages('/guides/firing', live)).to.eql(live);
+      expect(prerenderedKey('/de/guides/firing', live, reference)).to.equal('de/guides/firing.html');
+      expect(prerenderLanguages('/materials/silica', live, reference)).to.eql(['en']);
+      expect(prerenderLanguages('/guides/firing', live, reference)).to.eql(live);
+      // By default, the languages switched on in lib/regions/languages.js.
+      const on = languages.LIVE_LANGUAGES.filter((code) => languages.REFERENCE_LANGUAGES.includes(code));
+      expect(prerenderLanguages('/cones', languages.LIVE_LANGUAGES)).to.eql(on);
     });
 
-    it('puts each in the sitemap once, at its English address', () => {
-      const map = sitemap(SITE, ['en', 'de']);
+    it('puts each in the sitemap once, at its English address, while no language has them translated', () => {
+      const map = sitemap(SITE, ['en', 'de'], ['en']);
       for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
         expect(map, address).to.include(`<url><loc>https://glazecalcapp.com${address}</loc></url>`);
         expect(map, address).not.to.include(`/de${address}</loc>`);

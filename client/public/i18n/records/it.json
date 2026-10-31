@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Tossico. Quasi insolubile.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Attenzione (SDS Potterycrafts P3303): H302 nocivo se ingerito; non ingerire ed evitare di respirare la polvere.",
+  "theoretical-formula-9090t3": "Formula teorica",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosfato tricalcico. La cenere d’ossa vera può contenere un po’ di CaCO₃ e quindi avere una piccola perdita al fuoco.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Attenzione (SDS Potterycrafts): H302 nocivo se ingerito; H315 provoca irritazione cutanea; H319 provoca grave irritazione oculare; H335 la polvere secca può irritare le vie respiratorie.",
   "water-soluble-fdjx5g": "Solubile in acqua.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "provini di smalto, provini, etichette",
   "kiln-sitter-8kghs6": "Kiln sitter",
   "after-putting-a-cone-in-the-swloel": "Dopo aver messo un cono nel kiln sitter (l’interruttore meccanico a cono), coprirlo con nastro di carta. Il nastro evita che il cono venga urtato e cada mentre si caricano i pezzi, e in cottura brucia senza lasciare residui.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, cono, coni, carico del forno"
+  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, cono, coni, carico del forno",
+  "the-standard-gives-reference-temperatures-at-12xot89": "La norma indica temperature di riferimento. A una velocità di salita di circa 100 °C/h, tipica di chi fa ceramica, l’istituto municipale di Kyoto ha misurato che i propri coni Kyoto si piegavano a una temperatura più bassa di 47–79 °C rispetto al valore JIS per lo stesso numero; per i coni SK secondo la JIS non abbiamo trovato misure di questo tipo. Mettere un cono testimone e confrontare.",
+  "orton-s-older-chart-for-large-jgynh": "La tabella Orton più vecchia per i coni grandi riscaldati a 150 °C all’ora negli ultimi 100 °C, come la ristampano i produttori di forni; i valori attuali di Orton per i coni grandi a questa velocità se ne discostano fino a 19 °C. Orton non pubblica alcun valore oltre il cono 14, e questa tabella nessuno oltre il cono 15. I coni misurano il lavoro termico, non la temperatura: mettere un cono testimone.",
+  "rates-are-over-the-last-100-gs02ii": "Le velocità valgono per gli ultimi 100 °C della cottura. I coni grandi 13 e 14 hanno composizioni ed equivalenti di temperatura diversi; Orton non pubblica alcun valore oltre il cono 14."
 }
