@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "有毒。幾乎不溶。",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "警告（Potterycrafts SDS P3303）：H302 吞食有害；請勿吞食，並避免吸入粉塵。",
+  "theoretical-formula-9090t3": "理論化學式",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "磷酸三鈣。真正的骨灰可能含有少量 CaCO₃，因此燒失量（LOI）很小。",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "警告（Potterycrafts SDS）：H302 吞食有害；H315 造成皮膚刺激；H319 造成嚴重眼睛刺激；H335 乾燥粉塵可能造成呼吸道刺激。",
   "water-soluble-fdjx5g": "可溶於水。",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "釉試片、試片、標籤",
   "kiln-sitter-8kghs6": "自動斷電器（Kiln-Sitter）",
   "after-putting-a-cone-in-the-swloel": "把測溫錐放進自動斷電器（Kiln-Sitter）後，用紙膠帶將其蓋住。膠帶可以在裝窯時保護測溫錐不被碰掉，並且在燒成時乾淨地燒掉。",
-  "kiln-sitter-cone-cones-loading-3s7meh": "自動斷電器、Kiln-Sitter、測溫錐、裝窯"
+  "kiln-sitter-cone-cones-loading-3s7meh": "自動斷電器、Kiln-Sitter、測溫錐、裝窯",
+  "the-standard-gives-reference-temperatures-at-12xot89": "該標準給出的是基準溫度。在陶藝家常用的約 100 °C/h 升溫速率下，京都市的研究機構測得其自製的京都測溫錐彎倒時，比相同號數的 JIS 數值低 47–79 °C；我們沒有找到 SK 測溫錐對照 JIS 的此類測量數據。請放置見證錐並加以比較。",
+  "orton-s-older-chart-for-large-jgynh": "這是 Orton 較早的大型測溫錐圖表，燒成最後 100 °C 的升溫速率為每小時 150 °C，窯爐製造商仍在轉載；在該升溫速率下，Orton 現行的大型測溫錐數值與它最多相差 19 °C。Orton 沒有公布超過 14 號的測溫錐的數值，這張圖表也沒有超過 15 號的數值。測溫錐量的是熱功，而非溫度：請放置見證錐。",
+  "rates-are-over-the-last-100-gs02ii": "升溫速率指燒成最後 100 °C 的升溫速率。13 號與 14 號大型測溫錐的成分不同，溫度當量也不同；Orton 沒有公布超過 14 號的測溫錐的數值。"
 }
