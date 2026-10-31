@@ -1304,6 +1304,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Numbers and dates in a language the browser lacks**: Google Chrome 156 and Playwright's Chromium have no Intl
+  data for Nepali, Sinhala or Odia and only part of Punjabi's, so live Odia and Punjabi pages showed English dates
+  ("October 3, 2026", or "2026 M10 3" in Punjabi) and Punjabi numbers grouped 1,234,567.5, and Nepali's Devanagari
+  digits did not show. The build now writes what the app formats in those languages from Node's Intl
+  (`scripts/locale-fallback.mjs`, 14 kB of data), and the app writes from it wherever the browser lacks the
+  language or writes it otherwise than Node (`lib/regions/locale-fallback.js`), so each page shows its own month
+  names, digits and grouping, and matches the prerendered page; the Digits setting works as before. A server test
+  fails if the data and Node's Intl part.
 - **Bengali no longer writes dissolving as melting**: two material notes and the glazing basics guide's paragraph on
   leaching said a glaze or frit "melts" where the English says it dissolves. Found by the Kannada review; Hindi, Urdu
   and Marathi were checked and did not have it.

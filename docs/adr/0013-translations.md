@@ -133,3 +133,27 @@ without changes to the stylesheets.
   `t('recipe.print.title')`, as code does, so a key reads the same wherever it is used and a
   search for it finds every use ([translating.md](../translating.md#keys)). This replaces the
   `prefix: 'recipe'` under Consequences.
+
+## Later decision: locale data the browser lacks (2026-10-30)
+
+Numbers, dates and lists are written through `Intl`, and the browser's `Intl` need not have the
+page's language: Google Chrome 156 and Playwright's Chromium have none for Nepali, Sinhala or Odia
+(they write en-US) and only part of Punjabi's (dates "2026 M10 14", numbers grouped 1,234,567.5),
+while Node, which prerenders the pages, has all of them. The page then changed on hydration and
+showed English dates.
+
+- **The build writes those languages' data from Node's `Intl`** (`scripts/locale-fallback.mjs`
+  into `lib/regions/locale-fallback-data.json`): only what the app formats (its date styles'
+  patterns and names, number grouping, separators, percent and currency patterns per numbering
+  system, the digits, list patterns), only for the languages a browser may lack.
+- **`lib/regions/locale-fallback.js` writes from it where the browser lacks the language**: `Intl`
+  resolves it to another, writes a month as "M10" or a figure, or writes a few samples otherwise
+  than Node did. Any other language, and any option the data does not cover (a unit, a calendar
+  other than the Gregorian), is left to `Intl`. `shared/format.ts`, the message formatter and
+  Settings' examples go through it, so the Digits setting works as before.
+- **A server test fails when the data and Node's `Intl` part**, so a Node or ICU upgrade shows up
+  as a regenerated file, not as pages that differ from the prerendered ones.
+
+Polyfilling `Intl` with FormatJS's locale data was not taken: it ships whole locales and replaces
+the browser's formatters, for a few date styles and number patterns (14 kB here), and its CLDR
+need not be Node's.

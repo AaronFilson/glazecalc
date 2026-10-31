@@ -540,9 +540,15 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   Odia's 1.85 / 1.5: Gurmukhi's tippi and addak and Odia's tall conjuncts unclipped, no missing glyphs, no page wider
   than 320 px. Wave I4's run (the same pages in `/ne/` and `/si/`, 320 px and desktop, Windows) kept Nepali's 1.75 /
   1.45 and Sinhala's 1.85 / 1.5: no page wider than 320 px, the slurry panel's tall Sinhala signs and Devanagari matras
-  unclipped. The browser test image's Chromium has no locale data for Nepali, Sinhala or Odia (Intl falls back to
-  en-US), so their numbers show 0–9 and their dates in English there; Nepali's Devanagari default is a question for
-  the owner. **Still open for
+  unclipped. Google Chrome 156 and Playwright's Chromium have no Intl data for Nepali, Sinhala or Odia (Intl falls back
+  to en-US) and only part of Punjabi's (dates "2026 M10 14", numbers grouped 1,234,567.5), so those pages showed 0–9
+  and English dates. **Fixed** (2026-10-30, the owner's choice): `scripts/locale-fallback.mjs` writes, at each build,
+  what the app formats in those four languages from Node's Intl into `lib/regions/locale-fallback-data.json` (date
+  patterns and month, weekday and day-period names for the app's date styles; grouping, separators, percent and
+  currency patterns per numbering system; their digits; list patterns; 14 kB), and `lib/regions/locale-fallback.js`
+  writes from it wherever the browser lacks the language: Intl resolves it to another language, writes a month as
+  "M10", or writes a few samples otherwise than Node did. Every page then matches the prerendered one, the Digits
+  setting included; `server/test/locale_fallback_tests.ts` fails if Node's Intl and the data part. **Still open for
   the owner**: a real iPhone (Apple lists Kannada Sangam MN and Gurmukhi MN as downloads on iOS, and Tamil, Malayalam,
   Odia and Sinhala could not be confirmed, so the page may be drawn in a font the stack does not name; a web font cut
   to the script is the fallback), and Marathi's own letter forms (ल, श, झ) checked in `/mr/` on Windows, Android and
