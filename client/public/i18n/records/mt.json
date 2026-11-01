@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Tossiku. Kważi insolubbli.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Allert (SDS ta’ Potterycrafts P3303): H302 jagħmel il-ħsara jekk jinbela’; tiblagħhux u evita li tiġbed it-trab man-nifs.",
+  "theoretical-formula-9090t3": "Formula teoretika",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosfat trikalċiku. Ir-rmied tal-għadam veru jista’ jkun fih ftit CaCO₃, u għalhekk LOI żgħir.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Allert (SDS ta’ Potterycrafts): H302 jagħmel il-ħsara jekk jinbela’; H315 jagħmel irritazzjoni tal-ġilda; H319 jagħmel irritazzjoni serja tal-għajnejn; H335 it-trab niexef jista’ jikkawża irritazzjoni respiratorja.",
   "water-soluble-fdjx5g": "Solubbli fl-ilma.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "madum tal-prova tal-glejż, madum, tikketti",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Wara li tqiegħed kon fis-sitter, għattih b’masking tape. It-tejp jipproteġi l-kon milli jaqa’ jekk tolqtu waqt il-mili tal-forn, u jinħaraq kollu fil-ħami mingħajr ma jħalli xejn.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kon, koni, mili tal-forn"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kon, koni, mili tal-forn",
+  "the-standard-gives-reference-temperatures-at-12xot89": "L-istandard jagħti temperaturi ta’ referenza. Bir-rata li s-soltu jużaw il-fuħħara, ta’ madwar 100 °C/h, l-istitut muniċipali ta’ Kyoto kejjel li l-koni ta’ Kyoto tiegħu stess jitgħawġu f’temperatura aktar baxxa b’47–79 °C mill-figura ta’ JIS għall-istess numru; ma sibna l-ebda kejl bħal dan għall-koni SK skont JIS. Poġġi kon xhud u qabbel.",
+  "orton-s-older-chart-for-large-jgynh": "Tabella eqdem ta’ Orton għall-koni l-kbar imsaħħna b’150 °C fis-siegħa matul l-aħħar 100 °C, kif jerġgħu jistampawha l-produtturi tal-fran; il-figuri attwali ta’ Orton għall-koni l-kbar b’dik ir-rata jvarjaw minnha b’sa 19 °C. Orton ma jippubblikax figura għal koni b’numru ogħla minn 14, u din it-tabella ma tagħtix figura għal koni b’numru ogħla minn 15. Il-koni jkejlu x-xogħol tas-sħana, mhux it-temperatura: poġġi kon xhud.",
+  "rates-are-over-the-last-100-gs02ii": "Ir-rati huma matul l-aħħar 100 °C tal-ħami. Il-koni l-kbar 13 u 14 għandhom kompożizzjonijiet differenti u ekwivalenti ta’ temperatura differenti; Orton ma jippubblikax figura għal koni b’numru ogħla minn 14."
 }

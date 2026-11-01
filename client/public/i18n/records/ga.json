@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Tocsaineach. Beagnach dothuaslagtha.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Rabhadh (bileog sonraí sábháilteachta Potterycrafts P3303): H302 díobhálach má shlogtar; ná slog é agus seachain an deannach a análú.",
+  "theoretical-formula-9090t3": "Foirmle theoiriciúil",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosfáit tríchailciam. D’fhéadfadh beagán CaCO₃ a bheith i bhfíorchnámhluaithreach, agus mar sin cailliúint bheag ar adhaint (LOI).",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Rabhadh (bileog sonraí sábháilteachta Potterycrafts): H302 díobhálach má shlogtar; H315 is cúis le greannú craicinn; H319 is cúis le greannú tromchúiseach don tsúil; H335 d’fhéadfadh an deannach tirim a bheith ina chúis le greannú riospráide.",
   "water-soluble-fdjx5g": "Intuaslagtha in uisce.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "tíleanna glónra, tíleanna, lipéid",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Tar éis duit cón a chur sa Kiln-Sitter, clúdaigh é le téip chumhdaigh. Cosnóidh an téip an cón ionas nach leagfar é agus tú ag lódáil na bpotaí, agus dónn sí go glan sa bhácáil.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, cón, cóin, lódáil"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, cón, cóin, lódáil",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Tugann an caighdeán teochtaí tagartha. Ag an ráta is gnách le potadóirí, thart ar 100 °C/h, thomhais institiúid chathrach Kyoto go raibh a cóin Kyoto féin ag lúbadh 47–79 °C níos fuaire ná figiúr JIS don uimhir chéanna; ní bhfuaireamar tomhais den sórt sin do chóin SK de réir JIS. Cuir cón fianaise san áith agus déan comparáid.",
+  "orton-s-older-chart-for-large-jgynh": "Tábla níos sine de chuid Orton do chóin mhóra téite ag 150 °C san uair thar an 100 °C deireanach, mar a athchlóann déantóirí áith é; tá figiúirí reatha Orton do chóin mhóra ag an ráta sin difriúil uaidh suas le 19 °C. Ní fhoilsíonn Orton aon fhigiúr do chóin le huimhir os cionn 14, agus níl aon fhigiúr sa tábla seo do chóin le huimhir os cionn 15. Tomhaiseann cóin obair teasa, ní teocht: cuir cón fianaise san áith.",
+  "rates-are-over-the-last-100-gs02ii": "Is thar an 100 °C deireanach den bhácáil atá na rátaí. Tá comhdhéanamh difriúil agus teochtaí coibhéiseacha difriúla ag cóin mhóra 13 agus 14; ní fhoilsíonn Orton aon fhigiúr do chóin le huimhir os cionn 14."
 }

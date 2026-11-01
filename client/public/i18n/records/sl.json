@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Strupeno. Skoraj netopno.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Pozor (varnostni list Potterycrafts P3303): H302 zdravju škodljivo pri zaužitju; ne zaužijte in se izogibajte vdihavanju prahu.",
+  "theoretical-formula-9090t3": "Teoretična formula",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalcijev fosfat. Pravi kostni pepel lahko vsebuje malo CaCO₃ in ima zato majhno izgubo pri žarenju (LOI).",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Pozor (varnostni list Potterycrafts): H302 zdravju škodljivo pri zaužitju; H315 povzroča draženje kože; H319 povzroča hudo draženje oči; H335 suh prah lahko povzroči draženje dihalnih poti.",
   "water-soluble-fdjx5g": "Topno v vodi.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "testne ploščice, ploščice, oznake",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Ko stožec vstavite v Kiln-Sitter (mehansko stikalo, ki peč izklopi, ko se upogne mali stožec), ga prekrijte s papirnim lepilnim trakom. Trak bo stožec zaščitil, da ga med polnjenjem peči ne izbijete, pri žganju pa čisto zgori.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, stožec, stožci, polnjenje peči"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, stožec, stožci, polnjenje peči",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standard navaja referenčne temperature. Pri hitrosti segrevanja, ki je pri lončarjih običajna, okoli 100 °C/h, je kjotski mestni inštitut izmeril, da se njegovi lastni kjotski stožci upognejo pri temperaturi, ki je za 47–79 °C nižja od vrednosti JIS za isto številko; takih meritev za stožce SK po JIS nismo našli. Postavite kontrolni stožec in primerjajte.",
+  "orton-s-older-chart-for-large-jgynh": "Starejša preglednica podjetja Orton za velike stožce, segrevane s hitrostjo 150 °C na uro v zadnjih 100 °C, kakor jo ponatiskujejo proizvajalci peči; Ortonove sedanje vrednosti za velike stožce pri tej hitrosti se od nje razlikujejo za do 19 °C. Orton ne objavlja vrednosti za stožce z večjo številko od 14, ta preglednica pa ne za stožce z večjo številko od 15. Stožci merijo toplotno delo, ne temperature: postavite kontrolni stožec.",
+  "rates-are-over-the-last-100-gs02ii": "Hitrosti veljajo za zadnjih 100 °C žganja. Veliki stožci 13 in 14 imajo drugačno sestavo in drugačne temperaturne ustreznice; Orton ne objavlja vrednosti za stožce z večjo številko od 14."
 }
