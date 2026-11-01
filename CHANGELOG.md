@@ -6,6 +6,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana as regions**, in English and the languages
+  already offered: who to call, each read on an official page (Brazil's and Argentina's national poison lines, South
+  Africa's Poisons Information Helpline with its own hours), the health ministries, each currency, and Orton cones
+  in °C for Mexico, Brazil and South Africa. No silica limit, food rule or shop is shown for them yet. Brazilian
+  Portuguese, Latin American Spanish, Quechua, Swahili, Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali are
+  known but not offered, ahead of their waves; the language picker has a "Latin America" group for the first three.
+  Colombia, Peru, Nigeria and Ethiopia wait for an emergency number confirmed on an official page.
 - **The cone chart, the list of standard materials and each material's page can be translated**, language by
   language (round 10, stream B, first part; nothing visible changes yet: no language is switched on). A language in
   `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and

@@ -41,7 +41,14 @@
             "MAD": "MAD #",
             "DZD": "DZD #",
             "LKR": "LKR #",
-            "NPR": "नेरू #"
+            "NPR": "नेरू #",
+            "MXN": "MX$ #",
+            "BRL": "R$ #",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
           }
         },
         "deva": {
@@ -81,7 +88,14 @@
             "MAD": "MAD #",
             "DZD": "DZD #",
             "LKR": "LKR #",
-            "NPR": "नेरू #"
+            "NPR": "नेरू #",
+            "MXN": "MX$ #",
+            "BRL": "R$ #",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
           }
         }
       },
@@ -168,7 +182,14 @@
             "MAD": "MAD #",
             "DZD": "DZD #",
             "LKR": "LKR #",
-            "NPR": "NPR #"
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
           }
         }
       },
@@ -258,7 +279,14 @@
             "MAD": "MAD #",
             "DZD": "DZD #",
             "LKR": "LKR #",
-            "NPR": "NPR #"
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
           }
         }
       },
@@ -336,7 +364,14 @@
             "MAD": "MAD #",
             "DZD": "DZD #",
             "LKR": "රු. #",
-            "NPR": "NPR #"
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
           }
         }
       },
@@ -368,6 +403,581 @@
         "style=long,type=conjunction": { "two": ["", " සහ ", ""], "many": ["", ", ", ", ", ", සහ ", ""] },
         "style=long,type=disjunction": { "two": ["", " හෝ ", ""], "many": ["", ", ", ", ", ", හෝ ", ""] },
         "style=short,type=unit": { "two": ["", " සහ ", ""], "many": ["", ", ", ", ", ", සහ ", ""] }
+      }
+    },
+    "ha": {
+      "locale": "ha-NG",
+      "numbers": {
+        "latn": {
+          "indian": { "decimal": false, "percent": false, "currency": false },
+          "decimal": ".",
+          "group": ",",
+          "percent": "#%",
+          "currency": {
+            "USD": "$ #",
+            "GBP": "£ #",
+            "AUD": "A$ #",
+            "NZD": "NZ$ #",
+            "EUR": "€ #",
+            "CZK": "CZK #",
+            "DKK": "DKK #",
+            "HUF": "HUF #",
+            "PLN": "PLN #",
+            "RON": "RON #",
+            "SEK": "SEK #",
+            "JPY": "¥ #",
+            "TRY": "TRY #",
+            "KRW": "₩ #",
+            "TWD": "NT$ #",
+            "SGD": "SGD #",
+            "MYR": "MYR #",
+            "CNY": "CN¥ #",
+            "HKD": "HK$ #",
+            "IDR": "IDR #",
+            "THB": "THB #",
+            "PHP": "₱ #",
+            "VND": "₫ #",
+            "INR": "₹ #",
+            "PKR": "PKR #",
+            "BDT": "BDT #",
+            "EGP": "EGP #",
+            "AED": "AED #",
+            "MAD": "MAD #",
+            "DZD": "DZD #",
+            "LKR": "LKR #",
+            "NPR": "NPR #",
+            "MXN": "MX$ #",
+            "BRL": "R$ #",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
+          }
+        }
+      },
+      "dates": {
+        "dateStyle=full": [["weekday", "n0"], " ", ["day", "d1"], " ", ["month", "n1"], ", ", ["year", "y4"]],
+        "dateStyle=long": [["day", "d1"], " ", ["month", "n1"], ", ", ["year", "y4"]],
+        "dateStyle=medium": [["day", "d1"], " ", ["month", "n2"], ", ", ["year", "y4"]],
+        "dateStyle=short": [["day", "d1"], "/", ["month", "m1"], "/", ["year", "y2"]],
+        "day=numeric,month=long,weekday=long": [["weekday", "n0"], ", ", ["month", "n1"], " ", ["day", "d1"]],
+        "dateStyle=medium,timeStyle=short": [
+          ["day", "d1"],
+          " ",
+          ["month", "n2"],
+          ", ",
+          ["year", "y4"],
+          ", ",
+          ["hour", "H2"],
+          ":",
+          ["minute", "i2"]
+        ],
+        "timeStyle=short": [["hour", "H2"], ":", ["minute", "i2"]],
+        "hour=numeric,minute=2-digit": [["hour", "H1"], ":", ["minute", "i2"]]
+      },
+      "names": [
+        ["Lahadi", "Litinin", "Talata", "Laraba", "Alhamis", "Jummaʼa", "Asabar"],
+        [
+          "Janairu",
+          "Faburairu",
+          "Maris",
+          "Afirilu",
+          "Mayu",
+          "Yuni",
+          "Yuli",
+          "Agusta",
+          "Satumba",
+          "Oktoba",
+          "Nuwamba",
+          "Disamba"
+        ],
+        ["Jan", "Fab", "Mar", "Afi", "May", "Yun", "Yul", "Agu", "Sat", "Okt", "Nuw", "Dis"]
+      ],
+      "lists": {
+        "style=long,type=conjunction": { "two": ["", " da ", ""], "many": ["", ", ", ", ", ", da ", ""] },
+        "style=long,type=disjunction": { "two": ["", " ko ", ""], "many": ["", ", ", ", ", " ko ", ""] },
+        "style=short,type=unit": { "two": ["", ", ", ""], "many": ["", ", ", ", ", ", ", ""] }
+      }
+    },
+    "yo": {
+      "locale": "yo-NG",
+      "numbers": {
+        "latn": {
+          "indian": { "decimal": false, "percent": false, "currency": false },
+          "decimal": ".",
+          "group": ",",
+          "percent": "#%",
+          "currency": {
+            "USD": "$#",
+            "GBP": "£#",
+            "AUD": "A$#",
+            "NZD": "NZ$#",
+            "EUR": "€#",
+            "CZK": "CZK #",
+            "DKK": "DKK #",
+            "HUF": "HUF #",
+            "PLN": "PLN #",
+            "RON": "RON #",
+            "SEK": "SEK #",
+            "JPY": "JP¥#",
+            "TRY": "TRY #",
+            "KRW": "₩#",
+            "TWD": "NT$#",
+            "SGD": "SGD #",
+            "MYR": "MYR #",
+            "CNY": "CN¥#",
+            "HKD": "HK$#",
+            "IDR": "IDR #",
+            "THB": "THB #",
+            "PHP": "₱#",
+            "VND": "₫#",
+            "INR": "₹#",
+            "PKR": "PKR #",
+            "BDT": "BDT #",
+            "EGP": "EGP #",
+            "AED": "AED #",
+            "MAD": "MAD #",
+            "DZD": "DZD #",
+            "LKR": "LKR #",
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
+          }
+        }
+      },
+      "dates": {
+        "dateStyle=full": [["weekday", "n0"], ", ", ["day", "d1"], " ", ["month", "n1"], " ", ["year", "y4"]],
+        "dateStyle=long": [["day", "d1"], " ", ["month", "n1"], " ", ["year", "y4"]],
+        "dateStyle=medium": [["day", "d1"], " ", ["month", "m2"], " ", ["year", "y4"]],
+        "dateStyle=short": [["day", "d1"], "/", ["month", "m1"], "/", ["year", "y4"]],
+        "day=numeric,month=long,weekday=long": [["day", "d1"], ", ", ["month", "n1"], " ", ["weekday", "n0"]],
+        "dateStyle=medium,timeStyle=short": [
+          ["day", "d1"],
+          " ",
+          ["month", "m2"],
+          " ",
+          ["year", "y4"],
+          ", ",
+          ["hour", "H1"],
+          ":",
+          ["minute", "i1"]
+        ],
+        "timeStyle=short": [["hour", "H1"], ":", ["minute", "i1"]],
+        "hour=numeric,minute=2-digit": [["hour", "H2"], ":", ["minute", "i2"]]
+      },
+      "names": [
+        ["Ọjọ́ Àìkú", "Ọjọ́ Ajé", "Ọjọ́ Ìsẹ́gun", "Ọjọ́rú", "Ọjọ́bọ", "Ọjọ́ Ẹtì", "Ọjọ́ Àbámẹ́ta"],
+        [
+          "Oṣù Ṣẹ́rẹ́",
+          "Oṣù Èrèlè",
+          "Oṣù Ẹrẹ̀nà",
+          "Oṣù Ìgbé",
+          "Oṣù Ẹ̀bibi",
+          "Oṣù Òkúdu",
+          "Oṣù Agẹmọ",
+          "Oṣù Ògún",
+          "Oṣù Owewe",
+          "Oṣù Ọ̀wàrà",
+          "Oṣù Bélú",
+          "Oṣù Ọ̀pẹ̀"
+        ]
+      ],
+      "lists": {
+        "style=long,type=conjunction": { "two": ["", " àti", ""], "many": ["", ", ", ", ", ", ", ""] },
+        "style=long,type=disjunction": { "two": ["", " tàbí ", ""], "many": ["", ", ", ", ", ", tabi ", ""] },
+        "style=short,type=unit": { "two": ["", " àti", ""], "many": ["", ", ", ", ", ", ", ""] }
+      }
+    },
+    "zu": {
+      "locale": "zu-ZA",
+      "numbers": {
+        "latn": {
+          "indian": { "decimal": false, "percent": false, "currency": false },
+          "decimal": ".",
+          "group": ",",
+          "percent": "#%",
+          "currency": {
+            "USD": "$#",
+            "GBP": "£#",
+            "AUD": "A$#",
+            "NZD": "NZ$#",
+            "EUR": "€#",
+            "CZK": "CZK #",
+            "DKK": "DKK #",
+            "HUF": "HUF #",
+            "PLN": "PLN #",
+            "RON": "RON #",
+            "SEK": "SEK #",
+            "JPY": "JP¥#",
+            "TRY": "TRY #",
+            "KRW": "₩#",
+            "TWD": "NT$#",
+            "SGD": "SGD #",
+            "MYR": "MYR #",
+            "CNY": "CN¥#",
+            "HKD": "HK$#",
+            "IDR": "IDR #",
+            "THB": "฿#",
+            "PHP": "PHP #",
+            "VND": "₫#",
+            "INR": "₹#",
+            "PKR": "PKR #",
+            "BDT": "BDT #",
+            "EGP": "EGP #",
+            "AED": "AED #",
+            "MAD": "MAD #",
+            "DZD": "DZD #",
+            "LKR": "LKR #",
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "R #",
+            "KES": "KES #",
+            "GHS": "GHS #"
+          }
+        }
+      },
+      "dates": {
+        "dateStyle=full": [["weekday", "n0"], ", ", ["month", "n1"], " ", ["day", "d1"], ", ", ["year", "y4"]],
+        "dateStyle=long": [["month", "n1"], " ", ["day", "d1"], ", ", ["year", "y4"]],
+        "dateStyle=medium": [["month", "n2"], " ", ["day", "d1"], ", ", ["year", "y4"]],
+        "dateStyle=short": [["month", "m1"], "/", ["day", "d1"], "/", ["year", "y2"]],
+        "day=numeric,month=long,weekday=long": [["weekday", "n0"], ", ", ["month", "n1"], " ", ["day", "d1"]],
+        "dateStyle=medium,timeStyle=short": [
+          ["month", "n2"],
+          " ",
+          ["day", "d1"],
+          ", ",
+          ["year", "y4"],
+          " ",
+          ["hour", "H2"],
+          ":",
+          ["minute", "i2"]
+        ],
+        "timeStyle=short": [["hour", "H2"], ":", ["minute", "i2"]],
+        "hour=numeric,minute=2-digit": [["hour", "H1"], ":", ["minute", "i2"]]
+      },
+      "names": [
+        ["ISonto", "UMsombuluko", "ULwesibili", "ULwesithathu", "ULwesine", "ULwesihlanu", "UMgqibelo"],
+        [
+          "Januwari",
+          "Februwari",
+          "Mashi",
+          "Ephreli",
+          "Meyi",
+          "Juni",
+          "Julayi",
+          "Agasti",
+          "Septhemba",
+          "Okthoba",
+          "Novemba",
+          "Disemba"
+        ],
+        ["Jan", "Feb", "Mas", "Eph", "Mey", "Jun", "Jul", "Aga", "Sep", "Okt", "Nov", "Dis"]
+      ],
+      "lists": {
+        "style=long,type=conjunction": { "two": ["", " ne-", ""], "many": ["", ", ", ", ", ", ne-", ""] },
+        "style=long,type=disjunction": { "two": ["", " or ", ""], "many": ["", ", ", ", ", ", or ", ""] },
+        "style=short,type=unit": { "two": ["", ", ", ""], "many": ["", ", ", ", ", ", ", ""] }
+      }
+    },
+    "ig": {
+      "locale": "ig-NG",
+      "numbers": {
+        "latn": {
+          "indian": { "decimal": false, "percent": false, "currency": false },
+          "decimal": ".",
+          "group": ",",
+          "percent": "#%",
+          "currency": {
+            "USD": "$#",
+            "GBP": "£#",
+            "AUD": "A$#",
+            "NZD": "NZ$#",
+            "EUR": "€#",
+            "CZK": "CZK #",
+            "DKK": "DKK #",
+            "HUF": "HUF #",
+            "PLN": "PLN #",
+            "RON": "RON #",
+            "SEK": "SEK #",
+            "JPY": "¥#",
+            "TRY": "TRY #",
+            "KRW": "₩#",
+            "TWD": "NT$#",
+            "SGD": "SGD #",
+            "MYR": "MYR #",
+            "CNY": "CN¥#",
+            "HKD": "HK$#",
+            "IDR": "IDR #",
+            "THB": "THB #",
+            "PHP": "₱#",
+            "VND": "₫#",
+            "INR": "₹#",
+            "PKR": "PKR #",
+            "BDT": "BDT #",
+            "EGP": "EGP #",
+            "AED": "AED #",
+            "MAD": "MAD #",
+            "DZD": "DZD #",
+            "LKR": "LKR #",
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
+          }
+        }
+      },
+      "dates": {
+        "dateStyle=full": [["weekday", "n0"], ", ", ["day", "d1"], " ", ["month", "n1"], " ", ["year", "y4"]],
+        "dateStyle=long": [["day", "d1"], " ", ["month", "n1"], " ", ["year", "y4"]],
+        "dateStyle=medium": [["day", "d1"], " ", ["month", "n2"], " ", ["year", "y4"]],
+        "dateStyle=short": [["day", "d1"], "/", ["month", "m1"], "/", ["year", "y2"]],
+        "day=numeric,month=long,weekday=long": [["weekday", "n0"], ", ", ["day", "d1"], " ", ["month", "n1"]],
+        "dateStyle=medium,timeStyle=short": [
+          ["day", "d1"],
+          " ",
+          ["month", "n2"],
+          " ",
+          ["year", "y4"],
+          ", ",
+          ["hour", "H2"],
+          ":",
+          ["minute", "i2"]
+        ],
+        "timeStyle=short": [["hour", "H2"], ":", ["minute", "i2"]],
+        "hour=numeric,minute=2-digit": [["hour", "H1"], ":", ["minute", "i2"]]
+      },
+      "names": [
+        ["Sọndee", "Mọnde", "Tiuzdee", "Wenezdee", "Tọọzdee", "Fraịdee", "Satọdee"],
+        [
+          "Jenụwarị",
+          "Febrụwarị",
+          "Maachị",
+          "Epreel",
+          "Mee",
+          "Jun",
+          "Julaị",
+          "Ọgọọst",
+          "Septemba",
+          "Ọktoba",
+          "Novemba",
+          "Disemba"
+        ],
+        ["Jen", "Feb", "Maa", "Epr", "Mee", "Juu", "Jul", "Ọgọ", "Sep", "Ọkt", "Nov", "Dis"]
+      ],
+      "lists": {
+        "style=long,type=conjunction": { "two": ["", " na ", ""], "many": ["", ", ", ", ", ", na ", ""] },
+        "style=long,type=disjunction": { "two": ["", " ma ọ bụ ", ""], "many": ["", ", ", ", ", ", ma ọ bụ ", ""] },
+        "style=short,type=unit": { "two": ["", ", ", ""], "many": ["", ", ", ", ", ", ", ""] }
+      }
+    },
+    "so": {
+      "locale": "so-SO",
+      "numbers": {
+        "latn": {
+          "indian": { "decimal": false, "percent": false, "currency": false },
+          "decimal": ".",
+          "group": ",",
+          "percent": "#%",
+          "currency": {
+            "USD": "US$#",
+            "GBP": "£#",
+            "AUD": "A$#",
+            "NZD": "NZ$#",
+            "EUR": "€#",
+            "CZK": "CZK #",
+            "DKK": "DKK #",
+            "HUF": "HUF #",
+            "PLN": "PLN #",
+            "RON": "RON #",
+            "SEK": "SEK #",
+            "JPY": "JP¥#",
+            "TRY": "TRY #",
+            "KRW": "₩#",
+            "TWD": "NT$#",
+            "SGD": "SGD #",
+            "MYR": "MYR #",
+            "CNY": "CN¥#",
+            "HKD": "HK$#",
+            "IDR": "IDR #",
+            "THB": "THB #",
+            "PHP": "₱#",
+            "VND": "₫#",
+            "INR": "₹#",
+            "PKR": "PKR #",
+            "BDT": "BDT #",
+            "EGP": "EGP #",
+            "AED": "AED #",
+            "MAD": "MAD #",
+            "DZD": "DZD #",
+            "LKR": "LKR #",
+            "NPR": "NPR #",
+            "MXN": "MX$#",
+            "BRL": "R$#",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
+          }
+        }
+      },
+      "dates": {
+        "dateStyle=full": [["weekday", "n0"], ", ", ["month", "n1"], " ", ["day", "d1"], ", ", ["year", "y4"]],
+        "dateStyle=long": [["month", "n1"], " ", ["day", "d1"], ", ", ["year", "y4"]],
+        "dateStyle=medium": [["day", "d2"], "-", ["month", "n2"], "-", ["year", "y4"]],
+        "dateStyle=short": [["day", "d2"], "/", ["month", "m2"], "/", ["year", "y2"]],
+        "day=numeric,month=long,weekday=long": [["weekday", "n0"], ", ", ["month", "n1"], " ", ["day", "d1"]],
+        "dateStyle=medium,timeStyle=short": [
+          ["day", "d2"],
+          "-",
+          ["month", "n2"],
+          "-",
+          ["year", "y4"],
+          " ee ",
+          ["hour", "h1"],
+          ":",
+          ["minute", "i2"],
+          " ",
+          ["dayPeriod", "n3"]
+        ],
+        "timeStyle=short": [["hour", "h1"], ":", ["minute", "i2"], " ", ["dayPeriod", "n3"]],
+        "hour=numeric,minute=2-digit": [["hour", "h1"], ":", ["minute", "i2"], " ", ["dayPeriod", "n3"]]
+      },
+      "names": [
+        ["Axad", "Isniin", "Talaado", "Arbaco", "Khamiis", "Jimco", "Sabti"],
+        [
+          "Janaayo",
+          "Febraayo",
+          "Maarso",
+          "Abriil",
+          "Maayo",
+          "Juun",
+          "Luulyo",
+          "Agosto",
+          "Sebtembar",
+          "Oktoobar",
+          "Noofeembar",
+          "Diseembar"
+        ],
+        ["Jan", "Feb", "Mar", "Abr", "May", "Jun", "Lul", "Ogs", "Seb", "Okt", "Nof", "Dis"],
+        ["GH", "GD"]
+      ],
+      "lists": {
+        "style=long,type=conjunction": { "two": ["", " iyo ", ""], "many": ["", ", ", ", ", " iyo ", ""] },
+        "style=long,type=disjunction": { "two": ["", " ama ", ""], "many": ["", ", ", ", ", " ama ", ""] },
+        "style=short,type=unit": { "two": ["", ", ", ""], "many": ["", ", ", ", ", ", ", ""] }
+      }
+    },
+    "qu": {
+      "locale": "qu-PE",
+      "numbers": {
+        "latn": {
+          "indian": { "decimal": false, "percent": false, "currency": false },
+          "decimal": ".",
+          "group": ",",
+          "percent": "# %",
+          "currency": {
+            "USD": "$US #",
+            "GBP": "£ #",
+            "AUD": "A$ #",
+            "NZD": "NZ$ #",
+            "EUR": "€ #",
+            "CZK": "CZK #",
+            "DKK": "DKK #",
+            "HUF": "HUF #",
+            "PLN": "PLN #",
+            "RON": "RON #",
+            "SEK": "SEK #",
+            "JPY": "JP¥ #",
+            "TRY": "TRY #",
+            "KRW": "₩ #",
+            "TWD": "NT$ #",
+            "SGD": "SGD #",
+            "MYR": "MYR #",
+            "CNY": "CN¥ #",
+            "HKD": "HK$ #",
+            "IDR": "IDR #",
+            "THB": "THB #",
+            "PHP": "PHP #",
+            "VND": "₫ #",
+            "INR": "₹ #",
+            "PKR": "PKR #",
+            "BDT": "BDT #",
+            "EGP": "EGP #",
+            "AED": "AED #",
+            "MAD": "MAD #",
+            "DZD": "DZD #",
+            "LKR": "LKR #",
+            "NPR": "NPR #",
+            "MXN": "MX$ #",
+            "BRL": "R$ #",
+            "ARS": "ARS #",
+            "CLP": "CLP #",
+            "ZAR": "ZAR #",
+            "KES": "KES #",
+            "GHS": "GHS #"
+          }
+        }
+      },
+      "dates": {
+        "dateStyle=full": [["weekday", "n0"], ", ", ["day", "d1"], " ", ["month", "n1"], ", ", ["year", "y4"]],
+        "dateStyle=long": [["day", "d1"], " ", ["month", "n1"], " ", ["year", "y4"]],
+        "dateStyle=medium": [["day", "d1"], " ", ["month", "n2"], " ", ["year", "y4"]],
+        "dateStyle=short": [["day", "d1"], "/", ["month", "m1"], "/", ["year", "y2"]],
+        "day=numeric,month=long,weekday=long": [["weekday", "n0"], ", ", ["day", "d1"], " ", ["month", "n1"]],
+        "dateStyle=medium,timeStyle=short": [
+          ["day", "d1"],
+          " ",
+          ["month", "n2"],
+          " ",
+          ["year", "y4"],
+          ", ",
+          ["hour", "h1"],
+          ":",
+          ["minute", "i2"],
+          " ",
+          ["dayPeriod", "n3"]
+        ],
+        "timeStyle=short": [["hour", "h1"], ":", ["minute", "i2"], " ", ["dayPeriod", "n3"]],
+        "hour=numeric,minute=2-digit": [["hour", "h1"], ":", ["minute", "i2"], " ", ["dayPeriod", "n3"]]
+      },
+      "names": [
+        ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+        [
+          "Enero",
+          "Febrero",
+          "Marzo",
+          "Abril",
+          "Mayo",
+          "Junio",
+          "Julio",
+          "Agosto",
+          "Setiembre",
+          "Octubre",
+          "Noviembre",
+          "Diciembre"
+        ],
+        ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Set", "Oct", "Nov", "Dic"],
+        ["a.m.", "p.m."]
+      ],
+      "lists": {
+        "style=long,type=conjunction": { "two": ["", ", ", ""], "many": ["", ", ", ", ", ", ", ""] },
+        "style=long,type=disjunction": { "two": ["", " utaq ", ""], "many": ["", ", ", ", ", ", utaq ", ""] },
+        "style=short,type=unit": { "two": ["", ", ", ""], "many": ["", ", ", ", ", ", ", ""] }
       }
     }
   }

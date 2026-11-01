@@ -134,7 +134,11 @@ $gc-script-fonts: (
   'gu': "'Nirmala UI', 'Kohinoor Gujarati', 'Gujarati Sangam MN', 'Noto Sans Gujarati', Shruti",
   'pa': "'Nirmala UI', 'Mukta Mahee', 'Gurmukhi Sangam MN', 'Noto Sans Gurmukhi', Raavi",
   'or': "'Nirmala UI', 'Oriya Sangam MN', 'Noto Sans Oriya', Kalinga",
-  'si': "'Nirmala UI', 'Sinhala Sangam MN', 'Noto Sans Sinhala', 'Iskoola Pota'"
+  'si': "'Nirmala UI', 'Sinhala Sangam MN', 'Noto Sans Sinhala', 'Iskoola Pota'",
+  // Amharic (round 10, not offered yet): Ethiopic, which current systems have (Windows' Ebrima, Apple's Kefa,
+  // Android's and Linux's Noto Sans Ethiopic), so, as for India's scripts, nothing is served; a web font cut to
+  // Ethiopic is the fallback if wave L2's screenshot run finds a device without one.
+  'am': "Ebrima, Kefa, 'Noto Sans Ethiopic', 'Abyssinica SIL'"
 );
 $gc-script-langs: ();
 @each $lang, $fonts in $gc-script-fonts {

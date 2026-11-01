@@ -39,7 +39,11 @@ const COUNTRY_OF = new Map([
   ['pa', 'IN'],
   ['or', 'IN'],
   ['ne', 'NP'],
-  ['si', 'LK']
+  ['si', 'LK'],
+  // Round 10, by the whole code, since bare pt and es stay Portugal's and Spain's: Brazilian Portuguese for
+  // Brazil, and Latin American Spanish for Mexico, the largest country that reads it.
+  ['pt-BR', 'BR'],
+  ['es-419', 'MX']
 ]);
 
 /**
@@ -59,7 +63,7 @@ export function prerenderRegion(
 ): string {
   const base = baseLanguage(language);
   if (base === 'en') return '';
-  const country = COUNTRY_OF.get(base);
+  const country = COUNTRY_OF.get(language) ?? COUNTRY_OF.get(base);
   if (country) return regions.some((region) => region.code === country) ? country : '';
   for (const tag of new Set([language, base])) {
     const mainly = regions.filter((region) => region.languages[0] === tag);
