@@ -140,7 +140,7 @@
     "assistants": "Pakai Glazecalc dari Claude, Copilot, Cursor, atau Gemini lewat MCP: kimia glasir, pemeriksaan batas, pengganti, panduan, dan resep Anda sendiri.",
     "signup": "Buat akun Glazecalc gratis untuk menyimpan resep glasir, bahan, catatan, dan catatan pembakaran Anda. Tanpa iklan, dan data Anda tidak pernah dijual.",
     "cones": "Kerucut pirometrik Orton dan SK dari 022 ke atas, dengan suhunya dalam °C dan °F, laju pemanasan yang dimaksud tiap tabel, dan asal angkanya.",
-    "materials": "Bahan dalam pustaka standar Glazecalc, dari feldspar dan tanah liat hingga frit dan sumber boron, masing-masing dengan analisis oksida, formula Seger, dan bahayanya.",
+    "materials": "Bahan di pustaka standar Glazecalc, dari feldspar dan tanah liat hingga frit dan sumber boron, masing-masing dengan analisis oksida, formula Seger, dan bahaya.",
     "materialInfo": "{name}: analisis oksida, formula Seger, susut pijar, dan bahaya dalam pustaka standar Glazecalc.",
     "materialInfoLong": "{name} dalam pustaka standar bahan glasir Glazecalc: analisis oksida, kontribusi terhadap formula Seger, susut pijar, dan bahayanya.",
     "imageAlt": "Beranda Glazecalc: kimia glasir gratis untuk pembuat keramik, di samping foto set kerucut yang sudah dibakar."
