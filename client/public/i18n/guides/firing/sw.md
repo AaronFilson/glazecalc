@@ -55,7 +55,7 @@ Label: Aina za koni
 | Aina           | Hutumika kwa                     | Jinsi inavyosimama                                                                                            |
 | -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | Inajisimamia   | Koni ya kuthibitisha kwenye rafu | Msingi uliojengewa ndani huweka urefu, inchi 1¾ (44 mm), na mwegemeo wa 8°; hakuna kishikilio kinachohitajika |
-| Kubwa          | Koni ya kuthibitisha kwenye rafu | Huwekwa kwenye bamba au kibonge cha udongo huku inchi 2 (51 mm) tu zikionekana, ikiegemea 8° kutoka wima      |
+| Kubwa          | Koni ya kuthibitisha kwenye rafu | Huwekwa kwenye bamba au kibonge cha udongo huku inchi 2 (51 mm) kamili zikionekana, ikiegemea 8° kutoka wima  |
 | Ndogo (junior) | Kiln sitter                      | Hulala juu ya vishikilio vya sitter; inchi 15/16 (24 mm) zikionekana ikisimamishwa kwenye rafu                |
 | Baa            | Kiln sitter                      | Unga ule ule wa koni ndogo, kwa umbo la baa lililo sawa                                                       |
 
@@ -156,7 +156,7 @@ Label: Pakiti ya koni tatu
 
 L&L, mtengenezaji wa matanuru wa Marekani, anapendekeza koni zinazojisimamia kwa pakiti “kwa sababu ni rahisi zaidi kutumia na hutoa matokeo thabiti zaidi”: urefu na mwegemeo wake vimejengewa ndani.
 
-Koni kubwa zinahitaji **bamba**{{en: plaque}} (kishikilio kilichotengenezwa tayari) au **kibonge**{{en: pat}} cha udongo laini wenye vinyweleo kilichotobolewa kwa matundu ya penseli. Weka kila moja ikiwa na inchi 2 (51 mm) tu zinazoonekana, ikiegemea 8° kutoka wima kuelekea **upande wake wa kupinda**. Ili kupata upande huo, simamisha koni kwenye msingi wake juu ya uso tambarare, ishike kwa ncha na iachie: itaanguka kuelekea upande wa kupinda.
+Koni kubwa zinahitaji **bamba**{{en: plaque}} (kishikilio kilichotengenezwa tayari) au **kibonge**{{en: pat}} cha udongo laini wenye vinyweleo kilichotobolewa kwa matundu ya penseli. Weka kila moja ikiwa na inchi 2 (51 mm) kamili zinazoonekana, ikiegemea 8° kutoka wima kuelekea **upande wake wa kupinda**. Ili kupata upande huo, simamisha koni kwenye msingi wake juu ya uso tambarare, ishike kwa ncha na iachie: itaanguka kuelekea upande wa kupinda.
 
 ### Mahali pa kuweka pakiti
 
@@ -205,11 +205,11 @@ Sitter nyingi, zikiwemo modeli za LT za Dawson, zina **kipima muda cha ukomo**{{
 Table: Muda wa kuweka kipima muda cha ukomo
 Label: Mipangilio ya kipima muda cha ukomo
 
-| Chanzo    | Mpangilio                                                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Nusu saa zaidi ya muda unaotarajiwa wa uchomaji hadi uyafahamu matanuru, baadaye robo saa zaidi; usiiweke kamwe zaidi ya saa 20 |
-| L&L       | Juu sana mara ya kwanza, ukibainisha uchomaji unachukua muda gani; baada ya hapo, takriban saa 1 zaidi                          |
-| Bracker's | Dakika 30 hadi saa 1 zaidi ya muda wa uchomaji                                                                                  |
+| Chanzo    | Mpangilio                                                                                                                     |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Nusu saa zaidi ya muda unaotarajiwa wa uchomaji hadi ulifahamu tanuru, baadaye robo saa zaidi; usiiweke kamwe zaidi ya saa 20 |
+| L&L       | Juu sana mara ya kwanza, ukibainisha uchomaji unachukua muda gani; baada ya hapo, takriban saa 1 zaidi                        |
+| Bracker's | Dakika 30 hadi saa 1 zaidi ya muda wa uchomaji                                                                                |
 
 > [!NOTE]
 > Mahali petu pa kuanzia: ukarimu mara ya kwanza (ndani ya saa 20 za kitasa), kisha nusu saa hadi saa 1 zaidi ya muda uliorekodi. Kipima muda pia kinakuambia uchomaji ulichukua muda gani: kikiwekwa kwenye 7 na kuishia kwenye 1 maana yake ni saa 6.
@@ -264,7 +264,7 @@ Label: Kusoma pakiti ya koni
 | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
 | Koni 5 imeanguka; ncha ya koni 6 iko sawa na msingi wake au chini kidogo; koni 7 wima au inaegemea kidogo tu | Kwenye lengo: koni 6 imefikiwa                                                   |
 | Koni 5 imepinda; koni 6 imepinda nusu tu, kwenye alama ya 2 au 3, au iko wima                                | Haikuchomwa vya kutosha: uchomaji ulisimama mapema mno                           |
-| Hata koni 5 haikusogea karibu kabisa                                                                         | Haikuchomwa vya kutosha kabisa, kwa koni moja au zaidi                           |
+| Hata koni 5 ilisogea kidogo sana tu                                                                          | Haikuchomwa vya kutosha kwa kiasi kikubwa, kwa koni moja au zaidi                |
 | Koni 5 na 6 zimelala; koni 7 imepinda                                                                        | Imechomwa kupita kiasi: “umevuka uhusiano bora wa muda na joto”                  |
 | Zote tatu zimelala au zimeyeyuka juu ya bamba                                                                | Imechomwa kupita kiasi vibaya; kagua sitter na kipima muda kabla ya kuchoma tena |
 | Koni zenye rangi ya kijani kibichi, au bisque ya kijivu                                                      | Hewa ya kutoka haitoshi, au kuchoma haraka mno                                   |
@@ -278,7 +278,7 @@ Label: Kurekebisha uchomaji ujao
 | Koni zilisema                                      | Kiln sitter                                                                                                                                  | Kidhibiti                                                                                                                                    |
 | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Haikuchomwa vya kutosha                            | Koni moja yenye joto zaidi kwenye sitter, au sehemu nene chini ya fimbo                                                                      | Tumia cone offset kuchoma kwa joto kidogo zaidi, au ongeza kushikilia kifupi (takriban dakika 20 zina thamani ya {{18 °F; 10 °C}} za kilele) |
-| Imechomwa kupita kiasi                             | Koni moja iliyo baridi zaidi, au sehemu nyembamba chini ya fimbo; koni ya sitter ikidondoka mbali zaidi ya 90°, punguza mipangilio ya swichi | Tumia cone offset kuchoma kwa joto kidogo kidogo, au fupisha au ondoa kushikilia                                                             |
+| Imechomwa kupita kiasi                             | Koni moja iliyo baridi zaidi, au sehemu nyembamba chini ya fimbo; koni ya sitter ikidondoka mbali zaidi ya 90°, punguza mipangilio ya swichi | Tumia cone offset kuchoma kwa joto la chini kidogo, au fupisha au ondoa kushikilia                                                           |
 | Juu na chini zinatofautiana kwa zaidi ya koni moja | Badilisha mpangilio wa swichi (tazama Matanuru ya mkono kwa kina)                                                                            | Pakia eneo lenye baridi zaidi kwa wepesi zaidi; fuata kijitabu chako                                                                         |
 
 **Cone offset**{{en: cone offset}} ni mpangilio wa kidhibiti unaosogeza joto lake kwa koni juu au chini ili kulingana na kile koni zako za kuthibitisha zinaonyesha. Hifadhi kila pakiti iliyochomwa na andika jinsi kila moja ilivyopinda (tazama Baada ya uchomaji, hapa chini).

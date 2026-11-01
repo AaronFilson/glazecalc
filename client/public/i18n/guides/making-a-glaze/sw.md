@@ -5,7 +5,7 @@ lead: Jinsi ya kununua, kuhifadhi, kupima na kuchanganya glaze, kupata unene una
 
 ## Kabla ya kuanza {#before-you-start}
 
-Kutengeneza **glaze**{{en: glaze}} (rangi ya kioo) ni kupima **malighafi** za unga (madini yaliyosagwa, udongo na **frit**{{en: frit}}, ambazo ni kioo kilichotengenezwa kiwandani na kusagwa kuwa unga) kulingana na kichocheo, kisha kuzichanganya na maji kuwa **slurry**{{en: slurry}}, yaani kimiminika kizito cha unga ulioshikiliwa ndani ya maji. Baada ya hapo unaichuja, unarekebisha unene wake, na unaijaribu kwenye udongo wako mwenyewe kabla ya kuiamini kwenye chungu. Kila nambari katika mwongozo huu ni mahali pa kuanzia: maji, unene na chujio vinavyofaa glaze yako ni vile ambavyo majaribio yako yanaonyesha, kwa hiyo andika unachofanya na unachopata.
+Kutengeneza **glaze**{{en: glaze}} (rangi ya kioo) ni kupima **malighafi** za unga (madini yaliyosagwa, udongo na **frit**, ambazo ni kioo kilichotengenezwa kiwandani na kusagwa kuwa unga) kulingana na kichocheo, kisha kuzichanganya na maji kuwa **slurry**, yaani kimiminika kizito cha unga ulioshikiliwa ndani ya maji. Baada ya hapo unaichuja, unarekebisha unene wake, na unaijaribu kwenye udongo wako mwenyewe kabla ya kuiamini kwenye chungu. Kila nambari katika mwongozo huu ni mahali pa kuanzia: maji, unene na chujio vinavyofaa glaze yako ni vile ambavyo majaribio yako yanaonyesha, kwa hiyo andika unachofanya na unachopata.
 
 ### Unachohitaji
 
@@ -32,11 +32,11 @@ Wafinyanzi hununua kutoka kwa wauzaji wa vifaa vya kauri, wanaouza udongo, malig
 
 ### Kiasi cha kununua
 
-Gunia la kawaida ni **50 lb (22.7 kg)** Marekani na **25 kg (55 lb)** kwingineko, kwa hiyo hizo mbili zinakaribiana sana. Wauzaji wengi pia huuza pakiti za 1, 2.5 au 5 kg (takriban 2.2, 5.5 au 11 lb) kwa majaribio. Glazy, hifadhidata huria ya vichocheo, inashauri kununua malighafi unazotumia mara kwa mara (feldspar, silika, kaolini, whiting, na frit kwa moto wa kati) kwa magunia kamili, ambayo mara nyingi ni nafuu kwa 20 hadi 30%. Nunua **vitia rangi**{{en: colorants}}, yaani oksidi za metali na stain zinazotia glaze rangi, kwa kiasi kidogo: nyingi hutumika kwa chini ya 5%. Orodha za ununuzi za mfano za Glazy zilifikia takriban $515 kwa moto wa kati na $397 kwa moto mkali, kwa bei za Marekani.
+Gunia la kawaida ni **50 lb (22.7 kg)** Marekani na **25 kg (55 lb)** kwingineko, kwa hiyo hizo mbili zinakaribiana sana. Wauzaji wengi pia huuza pakiti za 1, 2.5 au 5 kg (takriban 2.2, 5.5 au 11 lb) kwa majaribio. Glazy, hifadhidata huria ya vichocheo, inashauri kununua malighafi unazotumia mara kwa mara (feldspar, silika, kaolini, whiting, na frit kwa moto wa kati) kwa magunia kamili, ambayo mara nyingi ni nafuu kwa 20 hadi 30%. Nunua **vitia rangi**, yaani oksidi za metali na stain zinazotia glaze rangi, kwa kiasi kidogo: nyingi hutumika kwa chini ya 5%. Orodha za ununuzi za mfano za Glazy zilifikia takriban $515 kwa moto wa kati na $397 kwa moto mkali, kwa bei za Marekani.
 
 ### Seti ya kuanzia
 
-Orodha kuu ya Glazy kwa joto lolote ni silika, kaolini, feldspar, whiting, oksidi ya zinki, na dolomaiti au talc. Glaze nyingi za moto wa kati (koni 5 hadi 6) pia zinahitaji boroni, kwa kawaida kutoka kwa frit, ambayo Glazy inaiita "thabiti na inayoyeyuka kidogo kuliko borate ghafi". Seti iliyo hapa chini ni pendekezo letu, lililotokana na orodha ya Glazy na orodha moja ya jukwaani. [Mwongozo wa Glaze kuanzia misingi](/guides/glazing-basics) unaeleza kila malighafi hufanya nini.
+Orodha kuu ya Glazy kwa joto lolote ni silika, kaolini, feldspar, whiting, oksidi ya zinki, na dolomaiti au talc. Glaze nyingi za moto wa kati (koni 5 hadi 6) pia zinahitaji boroni, kwa kawaida kutoka kwa frit, ambayo Glazy inaiita “thabiti na inayoyeyuka kidogo kuliko borate ghafi”. Seti iliyo hapa chini ni pendekezo letu, lililotokana na orodha ya Glazy na orodha moja ya jukwaani. [Mwongozo wa Misingi ya glaze](/guides/glazing-basics) unaeleza kila malighafi hufanya nini.
 
 Table: Seti ya kuanzia ya malighafi (pendekezo letu)
 Label: Seti ya kuanzia
@@ -56,17 +56,17 @@ Label: Seti ya kuanzia
 
 Omba hati mbili kwa kila malighafi. **Karatasi ya data ya kiufundi** (TDS) inatoa **uchambuzi wake wa kemikali**: sehemu ya kila oksidi ndani ya unga, kwa uzito. Glazecalc hufanya kazi kwa kutumia hizi, na unaweza kuongeza malighafi kutoka kwa uchambuzi wa muuzaji kwenye [ukurasa wa Malighafi](/material). **Karatasi ya data ya usalama** (SDS) inaeleza jinsi ya kushughulikia unga ghafi. Hifadhi kila SDS, na uisome kabla ya kuchanganya.
 
-Uchambuzi ni wastani, si ahadi. Valentine Clays huchapisha "THAMANI ZA WASTANI. HIZI HAZIWAKILISHI MAELEZO YA KIUFUNDI" kwenye karatasi yake ya data ya flint, na uchambuzi wa Glazy wa feldspar ya Custer wa miaka tofauti unatofautiana kutoka takriban 68.5% hadi 72.4% ya silika. Tunapendekeza uandike **nambari ya lot** ya kila gunia (msimbo wake wa kundi) kwenye kumbukumbu zako, ili ujue kama mabadiliko kwenye glaze unayoiamini yalitokana na malighafi.
+Uchambuzi ni wastani, si ahadi. Valentine Clays huchapisha “THAMANI ZA WASTANI. HIZI HAZIWAKILISHI MAELEZO YA KIUFUNDI” kwenye karatasi yake ya data ya flint, na uchambuzi wa Glazy wa feldspar ya Custer wa miaka tofauti unatofautiana kutoka takriban 68.5% hadi 72.4% ya silika. Tunapendekeza uandike **nambari ya lot** ya kila gunia (msimbo wake wa kundi) kwenye kumbukumbu zako, ili ujue kama mabadiliko kwenye glaze unayoiamini yalitokana na malighafi.
 
-HSE inaonya kwamba silika fuwele "inaweza kuandikwa kimakosa kama 'silika isiyo na fuwele' (amorphous silica)". Na SDS inahusu unga, si chungu: haisemi lolote kuhusu kama glaze iliyochomwa ni salama kwa chakula. Ni jaribio la maabara la kuvuja kwa madini kwenye chungu kilichochomwa pekee ndilo linaloweza kuonyesha hilo.
+HSE inaonya kwamba silika fuwele “inaweza kuandikwa kimakosa kama 'silika isiyo na fuwele' (amorphous silica)”. Na SDS inahusu unga, si chungu: haisemi lolote kuhusu kama glaze iliyochomwa ni salama kwa chakula. Ni jaribio la maabara la kuvuja kwa madini kwenye chungu kilichochomwa pekee ndilo linaloweza kuonyesha hilo.
 
 ### Majina hubadilika, kwa hiyo nunua kwa kemia
 
 Majina ya chapa huja na kuondoka migodi inapofungwa. Feldspar ya Custer, iliyochimbwa South Dakota kwa zaidi ya miaka 75, iliisha mwishoni mwa 2023. Clay Art Center ilipohamia G-200 AU na Mahavir, takriban nusu ya glaze zake zilihitaji kurekebishwa. G-200 na G-200 HP zimeisha pia, na Laguna sasa huagiza Mahavir, ambayo kemia yake iko karibu na G-200.
 
-**Gerstley Borate**, madini asilia ya boroni yaliyomo kwenye vichocheo vingi vya zamani, imekuwa adimu tangu mgodi wake ulipofungwa mwaka 2000, ingawa New Mexico Clay iliripoti Novemba 2025 kwamba Laguna ilikuwa ikisambaza "Gerstley Borate Original". Vyanzo havikubaliani kuhusu **Gillespie Borate** kama mbadala. Mtengenezaji wake anaiuza kama pauni kwa pauni. Berkeley Potters Studio inasema "si mbadala wa moja kwa moja", na Digitalfire iligundua kwamba ilibadilisha rangi ya glaze. Njia salama ni kulinganisha hizo mbili kwa oksidi zake, kisha kujaribu.
+**Gerstley Borate**, madini asilia ya boroni yaliyomo kwenye vichocheo vingi vya zamani, imekuwa adimu tangu mgodi wake ulipofungwa mwaka 2000, ingawa New Mexico Clay iliripoti Novemba 2025 kwamba Laguna ilikuwa ikisambaza “Gerstley Borate Original”. Vyanzo havikubaliani kuhusu **Gillespie Borate** kama mbadala. Mtengenezaji wake anaiuza kama pauni kwa pauni. Berkeley Potters Studio inasema “si mbadala wa moja kwa moja”, na Digitalfire iligundua kwamba ilibadilisha rangi ya glaze. Njia salama ni kulinganisha hizo mbili kwa oksidi zake, kisha kujaribu.
 
-Majina ya kikanda pia hutofautiana. Amerika Kaskazini, **flint**, quartz na silika humaanisha silika ileile iliyosagwa, na Digitalfire inasema huenda usipate unga halisi wa flint kutoka kwa wauzaji. Uingereza, flint ni bidhaa yake yenyewe: ya Valentine ni silika iliyochomwa (calcined, yaani iliyopashwa moto). Zote mbili ni silika safi karibu kabisa, kwa hiyo tunatarajia ziwe karibu, lakini angalia uchambuzi. Kwa kaolini, Glazy inasema kubadilisha moja kwa moja, kama EPK kwa china clay, "mara nyingi hufanya kazi vizuri kabisa, hasa kiasi kinapokuwa \<10%".
+Majina ya kikanda pia hutofautiana. Amerika Kaskazini, **flint**, quartz na silika humaanisha silika ileile iliyosagwa, na Digitalfire inasema huenda usipate unga halisi wa flint kutoka kwa wauzaji. Uingereza, flint ni bidhaa yake yenyewe: ya Valentine ni silika iliyochomwa (calcined, yaani iliyopashwa moto). Zote mbili ni silika safi karibu kabisa, kwa hiyo tunatarajia ziwe karibu, lakini angalia uchambuzi. Kwa kaolini, Glazy inasema kubadilisha moja kwa moja, kama EPK kwa china clay, “mara nyingi hufanya kazi vizuri kabisa, hasa kiasi kinapokuwa \<10%”.
 
 Vichocheo vingi hutaja malighafi zinazouzwa nchi moja na si nyingine. Jedwali lililo hapa chini linachukua kila malighafi ya maktaba ya Glazecalc isiyouzwa mahali unaponunua, na kupata iliyo karibu zaidi ya aina yake inayouzwa, kwa uchambuzi wake. Nambari ni umbali kati ya hizo mbili: gramu ambazo oksidi zao zilizochomwa zinatofautiana, kwa kila 100 g za malighafi, zikijumlishwa kwa kila oksidi. Ndani ya takriban 15 g, moja inaweza kwa kawaida kuchukua nafasi ya nyingine kwenye jaribio la kwanza. Majina yana misimbo ya watengenezaji na maduka yenyewe, kwa hiyo unaweza kuyaomba kwa jina.
 
@@ -79,11 +79,11 @@ Vichocheo vingi hutaja malighafi zinazouzwa nchi moja na si nyingine. Jedwali li
 
 ### Malighafi kavu
 
-Weka unga ukiwa mkavu, kwenye vyombo vyenye mifuniko vinavyobaki vimefungwa usipochota; Glazy inashauri vile visivyopitisha hewa. Chagua vyombo vifupi badala ya mapipa marefu: HSE inabainisha kwamba pipa refu hukufanya uinamie ndani, na vumbi lina umbali zaidi wa kuanguka. Viweke kwenye rafu, ili uweze kudeki chini yake. Soda ash na Cornish stone hunyonya unyevu kutoka hewani. Mfinyanzi mmoja wa jukwaani huzikausha kwenye bapa la kuokea kwa takriban {{50 °C; 122 °F}}, na anaonya kwamba ndoo nyembamba za rangi zinaweza kupasuka kwenye gereji inayoganda barafu. Tunapendekeza kuweka malighafi zinazoyeyuka majini (soda ash, borax, lithium carbonate, na borate ghafi kama Gerstley Borate) kwenye vyombo visivyopitisha hewa na ndani ya nyumba.
+Weka unga ukiwa mkavu, kwenye vyombo vyenye mifuniko vinavyobaki vimefungwa usipochota; Glazy inashauri vile visivyopitisha hewa. Chagua vyombo vifupi badala ya mapipa marefu: HSE inabainisha kwamba pipa refu hukufanya uinamie ndani, na vumbi lina umbali zaidi wa kuanguka. Viweke kwenye rafu, ili uweze kudeki chini yake. Soda ash na Cornish stone hunyonya unyevu kutoka hewani. Mfinyanzi mmoja wa jukwaani huzikausha kwenye bapa la kuokea kwa takriban {{50 °C; 122 °F}}, na anaonya kwamba ndoo nyembamba za rangi zinaweza kupasuka kwenye gereji inayoganda barafu. Tunapendekeza kuweka malighafi zinazoyeyuka majini (soda ash, borax, lithiamu kaboneti, na borate ghafi kama Gerstley Borate) kwenye vyombo visivyopitisha hewa na ndani ya nyumba.
 
 ### Glaze zilizochanganywa
 
-Glaze iliyo ndani ya ndoo huendelea kubadilika. Malighafi zinazoyeyuka kidogo (nepheline syenite, lithium carbonate, Gerstley Borate, colemanite, strontium carbonate, na frit kwa ujumla) hubadilisha jinsi inavyotiririka kadiri muda unavyopita na zinaweza kukuza fuwele ndogo, zaidi kwenye chumba chenye joto. Gerstley Borate hufanya slurry igande kama jeli, "hata kwa asilimia ndogo". Maji ya kahawia juu ya glaze iliyotuama ni chuma kilichoyeyuka: yamwage na uweke maji safi. Tarajia pia:
+Glaze iliyo ndani ya ndoo huendelea kubadilika. Malighafi zinazoyeyuka kidogo (nepheline syenite, lithiamu kaboneti, Gerstley Borate, colemanite, strontiamu kaboneti, na frit kwa ujumla) hubadilisha jinsi inavyotiririka kadiri muda unavyopita na zinaweza kukuza fuwele ndogo, zaidi kwenye chumba chenye joto. Gerstley Borate hufanya slurry igande kama jeli, “hata kwa asilimia ndogo”. Maji ya kahawia juu ya glaze iliyotuama ni chuma kilichoyeyuka: yamwage na uweke maji safi. Tarajia pia:
 
 - **Hard-panning**: glaze iliyochanganywa nzito kiasi cha kutohitaji viongezi mara nyingi hutuama na kuwa tabaka gumu. Kuipunguzia unene na kuifanya igande kama jeli husaidia (tazama Uzito linganishi).
 - **Harufu**, kutokana na vijidudu vinavyokula gundi kama CMC. Glaze yenye harufu bado inaweza kutumika ikipakika vizuri.
@@ -99,7 +99,7 @@ Weka lebo kwenye kila ndoo kwa kalamu isiyoyeyuka kwa maji. Zakin, akiandikia Ce
 
 ### Asilimia na makundi
 
-Kichocheo hutoa kila malighafi kama asilimia ya uzito mkavu. Malighafi kuu kwa kawaida hujumlisha 100, na vitia rangi mara nyingi huongezwa juu yake. Ili kutengeneza **kundi**{{en: batch}}, kiasi unachochanganya kwa wakati mmoja, zidisha kila nambari kwa ukubwa wa kundi ukigawanywa na 100. Kwa 5000 g, UT Austin huzidisha kwa 50, kwa hiyo malighafi ya 4% inakuwa 200 g.
+Kichocheo hutoa kila malighafi kama asilimia ya uzito mkavu. Malighafi kuu kwa kawaida hujumlisha 100, na vitia rangi mara nyingi huongezwa juu yake. Ili kutengeneza **kundi**, kiasi unachochanganya kwa wakati mmoja, zidisha kila nambari kwa ukubwa wa kundi ukigawanywa na 100. Kwa 5000 g, UT Austin huzidisha kwa 50, kwa hiyo malighafi ya 4% inakuwa 200 g.
 
 > [!NOTE]
 > Kwenye [ukurasa wa kichocheo](/recipe), **Pima kwa kundi** hufanya kuzidisha: weka 500 g, kwa mfano, na kila kiasi kinakuwa gramu za kupima, au pauni na aunsi ukizichagua chini ya Mipangilio. **Chapisha** inaweza kutoa orodha ya kundi tu, yenye jumla inayoendelea kwa kupima ndani ya ndoo moja na kisanduku cha kutiki kando ya kila malighafi.
@@ -108,7 +108,7 @@ Kichocheo hutoa kila malighafi kama asilimia ya uzito mkavu. Malighafi kuu kwa k
 
 **Ubora wa usomaji** wa mizani, hatua ndogo zaidi inayoonyesha, huzuia ni kiasi kidogo kiasi gani unaweza kukipima vizuri. Katika jaribio la 100 g, kitia rangi cha 0.5% ni 0.5 g. Mizani inayosoma hadi 0.1 g inaweza kukosea kwa 0.05 g, takriban 10% yake; kwa 0.15 g, kosa ni takriban theluthi moja. Hiyo ni hesabu yetu, lakini inaonyesha kwa nini vitia rangi vinahitaji mizani sahihi zaidi.
 
-Ushauri unatofautiana kuhusu mizani sahihi kiasi gani unahitaji. Derek Au aligundua kwamba mizani ya dijitali ya bei nafuu ya 200 g haikuwa sahihi mfululizo. Anapendekeza mizani ya 200 g inayosoma hadi 0.01 g ukinunua moja tu, na anaichukulia mizani nzuri ya mihimili mitatu kuwa "ya kuaminika zaidi kwa mbali kuliko mizani ya dijitali ya bei nafuu". Chaguo salama, kwa maoni yetu, ni 0.01 g kwa majaribio (50 hadi 200 g) na vitia rangi, na mizani ya kwenye benchi inayosoma hadi 0.1 g au 1 g kwa makundi ya 1 kg (takriban 2 lb) na zaidi. Zikague zote mbili mara kwa mara kwa kutumia uzani wa kupimia usahihi.
+Ushauri unatofautiana kuhusu mizani sahihi kiasi gani unahitaji. Derek Au aligundua kwamba mizani ya dijitali ya bei nafuu ya 200 g haikuwa sahihi mfululizo. Anapendekeza mizani ya 200 g inayosoma hadi 0.01 g ukinunua moja tu, na anaichukulia mizani nzuri ya mihimili mitatu kuwa “ya kuaminika zaidi kwa mbali kuliko mizani ya dijitali ya bei nafuu”. Chaguo salama, kwa maoni yetu, ni 0.01 g kwa majaribio (50 hadi 200 g) na vitia rangi, na mizani ya kwenye benchi inayosoma hadi 0.1 g au 1 g kwa makundi ya 1 kg (takriban 2 lb) na zaidi. Zikague zote mbili mara kwa mara kwa kutumia uzani wa kupimia usahihi.
 
 ### Pima kwa mpangilio, na tiki kila moja
 
@@ -129,8 +129,8 @@ Maji ni rahisi kuongeza na magumu kutoa, kwa hiyo anza kidogo. Makadirio yetu: a
 
 ### Zana na maji
 
-- **Kichanganyio cha propela.** Digitalfire inaita kizuri "muhimu sana". Drili yenye waya na kiwiko cha kuchanganya hufanya kazi hiyo ndani ya ndoo. UT Austin huiendesha kwa angalau dakika 4 hadi 5 baada ya glaze kuonekana imechanganyika, na huweka kisu mbali na ndoo, ambayo inaweza kukwangua plastiki.
-- **Blenda.** "Hufanya kazi vizuri sana kwa makundi madogo" (Digitalfire). Iweke kwa ajili ya glaze tu: kamwe isirudi jikoni.
+- **Kichanganyio cha propela.** Digitalfire inaita kizuri “muhimu sana”. Drili yenye waya na kiwiko cha kuchanganya hufanya kazi hiyo ndani ya ndoo. UT Austin huiendesha kwa angalau dakika 4 hadi 5 baada ya glaze kuonekana imechanganyika, na huweka kisu mbali na ndoo, ambayo inaweza kukwangua plastiki.
+- **Blenda.** “Hufanya kazi vizuri sana kwa makundi madogo” (Digitalfire). Iweke kwa ajili ya glaze tu: kamwe isirudi jikoni.
 - **Kimiaji au kijiti.** Chaguo la Zakin pale ambapo hakuna kichanganyio.
 
 Maji pia hutofautiana, na Digitalfire inabainisha kwamba hubadilisha jinsi slurry inavyofanya kazi. Derek Au hutumia maji ya reverse-osmosis kwa sababu maji ya bomba lake ni magumu. Chochote unachotumia, kiandike.
@@ -150,7 +150,7 @@ Maji pia hutofautiana, na Digitalfire inabainisha kwamba hubadilisha jinsi slurr
 
 ### Kuchuja
 
-**Chujio**{{en: sieve}} ni skrini ya wavu ndani ya fremu. Kusukuma glaze kupitia kwake kwa brashi huvunja madonge yanayobaki baada ya kuchanganya na hunasa chembe ambazo zingechomeka kama madoa. Kadiri nambari ya **mesh** inavyokuwa kubwa, ndivyo skrini inavyokuwa laini: mesh 80 ina matundu ya takriban 0.18 mm, na mesh 100 takriban 0.15 mm.
+**Chujio** ni skrini ya wavu ndani ya fremu. Kusukuma glaze kupitia kwake kwa brashi huvunja madonge yanayobaki baada ya kuchanganya na hunasa chembe ambazo zingechomeka kama madoa. Kadiri nambari ya **mesh** inavyokuwa kubwa, ndivyo skrini inavyokuwa laini: mesh 80 ina matundu ya takriban 0.18 mm, na mesh 100 takriban 0.15 mm.
 
 Vyanzo vinapendekeza mesh tofauti. Zakin huchuja mara mbili kupitia mesh 50 au 80. Derek Au hutumia mesh 120 kwa glaze nyingi, hasa zenye kobalti au chuma: mara tatu kupitia mesh 80 bado ziliacha madoa ya chuma kwenye celadon moja, na mara moja kupitia mesh 120 iliyatibu. Huweka mesh 60 hadi 80 kwa glaze za majivu na nyingine zenye malighafi korofi. Potterycrafts, Uingereza, inapendekeza mesh 60 hadi 80. Chaguo salama la kuanzia:
 
@@ -165,7 +165,7 @@ Label: Mesh ya chujio
 
 ## Uzito linganishi {#specific-gravity}
 
-**Uzito linganishi**{{en: specific gravity}} (SG) unakuambia kuna unga kiasi gani ndani ya slurry yako. Ni uzito wa ujazo fulani wa glaze ukigawanywa na uzito wa ujazo uleule wa maji. Maji ni 1.00, na glaze yenye {{SG 1.45}} ina uzito wa 145 g kwa kila 100 mL. Kuchanganya hadi SG iliyopimwa ndiyo njia ya kupata unene uleule, na tabaka lilelile la glaze, kila mara. Haina vipimo, kwa hiyo ni sawa kwa gramu au aunsi.
+**Uzito linganishi** (SG) unakuambia kuna unga kiasi gani ndani ya slurry yako. Ni uzito wa ujazo fulani wa glaze ukigawanywa na uzito wa ujazo uleule wa maji. Maji ni 1.00, na glaze yenye {{SG 1.45}} ina uzito wa 145 g kwa kila 100 mL. Kuchanganya hadi SG iliyopimwa ndiyo njia ya kupata unene uleule, na tabaka lilelile la glaze, kila mara. Haina vipimo, kwa hiyo ni sawa kwa gramu au aunsi.
 
 ### Ipime kwa kupima 100 mL
 
@@ -178,16 +178,16 @@ Digitalfire pia huweka alama kwenye kikombe kwenye kiwango cha 500 g za maji, hu
 
 ### Cha kulenga
 
-Vyanzo havikubaliani, hasa kuhusu kupaka kwa brashi na kunyunyizia, ambapo muuzaji wa Uingereza Potclays anatoa nambari za juu zaidi (zake mwenyewe ni "kwa mwongozo tu"). Chukulia kila nambari kama mahali pa kuanzia. Ushauri mkuu wa Digitalfire ni kupata SG na kuganda kama jeli vinavyofaa kila glaze, kisha kuvirudia na kuviandika.
+Vyanzo havikubaliani, hasa kuhusu kupaka kwa brashi na kunyunyizia, ambapo muuzaji wa Uingereza Potclays anatoa nambari za juu zaidi (zake mwenyewe ni “kwa mwongozo tu”). Chukulia kila nambari kama mahali pa kuanzia. Ushauri mkuu wa Digitalfire ni kupata SG na kuganda kama jeli vinavyofaa kila glaze, kisha kuvirudia na kuviandika.
 
 Table: Malengo ya uzito linganishi, ambapo vyanzo havikubaliani
 Label: Malengo ya uzito linganishi
 
-| Matumizi          | Digitalfire na Glazy                                                                                                                                                                       | Potclays (Uingereza)                           | Mahali salama pa kuanzia                                                  |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| Kuchovya          | {{SG 1.40}} (kwa kuchovya sekunde 5) hadi {{SG 1.50}} (kwa kuchovya sekunde 1); glaze zilizochanganywa nyumbani zilizoganda kama jeli hufanya vizuri zaidi kwa {{SG 1.43–1.45}}            | Safi {{SG 1.46–1.48}}; yenye rangi {{SG 1.61}} | {{SG 1.45}}; ipunguzie hadi {{SG 1.43}} na uiganishe kama jeli ikidondoka |
-| Kupaka kwa brashi | {{SG 1.25}} (safi nyembamba) hadi {{SG 1.55}} (maelezo meusi)                                                                                                                              | {{SG 1.71–1.81}}                               | Fuata bidhaa; tumia gundi ya CMC au kimiminika cha kupakia kwa brashi     |
-| Kunyunyizia       | Hakuna nambari; Hopper, akiandikia Ceramic Arts Network, anasema nyembamba zaidi kwa kiasi kikubwa, pamoja na **deflocculant** (kiongezi kinachofanya slurry iwe nyepesi zaidi kutiririka) | {{SG 1.71}}                                    | Hakuna nambari ya kuaminika; nyunyizia tu ndani ya chumba cha kunyunyizia |
+| Matumizi          | Digitalfire na Glazy                                                                                                                                                                                | Potclays (Uingereza)                           | Mahali salama pa kuanzia                                                  |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
+| Kuchovya          | {{SG 1.40}} (kwa kuchovya sekunde 5) hadi {{SG 1.50}} (kwa kuchovya sekunde 1); glaze zilizochanganywa nyumbani zilizoganda kama jeli hufanya vizuri zaidi kwa {{SG 1.43–1.45}}                     | Safi {{SG 1.46–1.48}}; yenye rangi {{SG 1.61}} | {{SG 1.45}}; ipunguzie hadi {{SG 1.43}} na uiganishe kama jeli ikidondoka |
+| Kupaka kwa brashi | {{SG 1.25}} (safi nyembamba) hadi {{SG 1.55}} (maelezo meusi)                                                                                                                                       | {{SG 1.71–1.81}}                               | Fuata bidhaa; tumia gundi ya CMC au kimiminika cha kupakia kwa brashi     |
+| Kunyunyizia       | Hakuna nambari; Hopper, akiandikia Ceramic Arts Network, anasema nyembamba zaidi kwa kiasi kikubwa, pamoja na kimiminisha (deflocculant: kiongezi kinachofanya slurry iwe nyepesi zaidi kutiririka) | {{SG 1.71}}                                    | Hakuna nambari ya kuaminika; nyunyizia tu ndani ya chumba cha kunyunyizia |
 
 Ili kukagua glaze ya kuchovya kwa macho, AMACO huchovya kwa sekunde 5 na hutafuta tabaka lenye unene wa takriban sarafu ya dime ya Marekani. Digitalfire huchoma vigae vilivyochovywa kwa sekunde 5 ili kukagua.
 
@@ -223,7 +223,7 @@ Derek Au hupanda kwa hatua tatu: jaribio la 50 au 100 g, jaribio la 1 hadi 2 kg 
 
 Glaze inaweza kuonekana tofauti kabisa kwenye udongo mwingine au tanuru nyingine: Clay Art Center ilijaribu kila glaze yake iliyorekebishwa kwenye mchanganyiko wa udongo minne, kwenye koni 6 na koni 10. Mwongozo wa Potclays wa mwanzoni wa kujaribu glaze unapendekeza:
 
-- **vigae vya majaribio**{{en: test tiles}} 6 hadi 10 (vipande vidogo vya kujaribia glaze) vya udongo utakaoutumia kweli, ukibainisha kama vimechomwa bisque au vimekauka kabisa
+- **vigae vya majaribio** 6 hadi 10 (vipande vidogo vya kujaribia glaze) vya udongo utakaoutumia kweli, ukibainisha kama vimechomwa bisque au vimekauka kabisa
 - badiliko moja kwa wakati
 - kuchovya mara moja na kuchovya mara mbili, ili kuona glaze nyembamba na nene
 - kila kigae kwenye mzigo uleule wa tanuru
@@ -260,7 +260,7 @@ Njia hii inahitaji hesabu makini, ncha zilizochanganywa vizuri zenye SG sawa, na
 
 ## Kuweka kumbukumbu {#records}
 
-Willers anaeleza lengo vizuri: "taarifa za kutosha ili kuweza kurudia, au kuepuka, matokeo uliyogundua". Andika unachopanga kujaribu kabla ya kuanza, na matokeo unapopakua tanuru. Potclays inaongeza upakaji, unene, mchanganyiko wa udongo na uchomaji kamili, ikiwa ni pamoja na ramp, hold na kupoa. **Ramp** ni kasi ya kupasha joto au kupoza, kama {{60 °C; 108 °F}} kwa saa, na **hold** huweka tanuru kwenye joto moja kwa muda uliowekwa. Andika nambari za lot, maji uliyotumia na mbadala wowote: kubadilisha feldspar kwa Clay Art Center kulimaanisha kurekebisha takriban nusu ya glaze zake.
+Willers anaeleza lengo vizuri: “taarifa za kutosha ili kuweza kurudia, au kuepuka, matokeo uliyogundua”. Andika unachopanga kujaribu kabla ya kuanza, na matokeo unapopakua tanuru. Potclays inaongeza upakaji, unene, mchanganyiko wa udongo na uchomaji kamili, ikiwa ni pamoja na ramp, hold na kupoa. **Ramp** ni kasi ya kupasha joto au kupoza, kama {{60 °C; 108 °F}} kwa saa, na **hold** huweka tanuru kwenye joto moja kwa muda uliowekwa. Andika nambari za lot, maji uliyotumia na mbadala wowote: kubadilisha feldspar kwa Clay Art Center kulimaanisha kurekebisha takriban nusu ya glaze zake.
 
 Table: Cha kurekodi kwa kila kundi la glaze (kiolezo chetu)
 Label: Kiolezo cha kumbukumbu

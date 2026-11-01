@@ -1,42 +1,42 @@
 ---
-title: Glaze kuanzia misingi
+title: Misingi ya glaze
 lead: Glaze imetengenezwa na nini, jinsi tanuru inavyoigeuza kuwa kioo, na kila neno utakalokutana nalo kwenye kichocheo, kwenye mfuko au kwenye chati ya koni, kwa maelezo.
 ---
 
 ## Glaze ni nini {#what-a-glaze-is}
 
-**Glaze**{{en: glaze}} (rangi ya kioo) ni tabaka nyembamba ya kioo iliyoungana na chungu. Glazy, hifadhidata huria ya vichocheo vya glaze, inaiita "fomula ya kioo iliyorekebishwa ili iyeyuke na kuungana na udongo kwenye joto fulani". Hupakwa kama tabaka ya unga, kisha huyeyuka tanuruni na kuwa tabaka ya kioo inayoziba udongo, hivyo chungu kina uwezekano mdogo wa kuvuja, kuchafuka au kuchakaa. Kileleni mwa uchomaji, myeyuko pia huathiriana na udongo, mara nyingi ukitengeneza tabaka kati yao inayoshikilia glaze. Kwenye earthenware glaze hukaa juu kama tabaka tofauti; kwenye stoneware huyeyukia ndani ya udongo.
+**Glaze**{{en: glaze}} (rangi ya kioo) ni tabaka nyembamba ya kioo iliyoungana na chungu. Glazy, hifadhidata huria ya vichocheo vya glaze, inaiita “fomula ya kioo iliyorekebishwa ili iyeyuke na kuungana na udongo kwenye joto fulani”. Hupakwa kama tabaka ya unga, kisha huyeyuka tanuruni na kuwa tabaka ya kioo inayoziba udongo, hivyo chungu kina uwezekano mdogo wa kuvuja, kuchafuka au kuchakaa. Kileleni mwa uchomaji, myeyuko pia huathiriana na udongo, mara nyingi ukitengeneza tabaka kati yao inayoshikilia glaze. Kwenye earthenware glaze hukaa juu kama tabaka tofauti; kwenye stoneware huyeyukia ndani ya udongo.
 
 Kichocheo huorodhesha malighafi, kama feldspar, whiting na kaolini. Tanuruni, sehemu ya kila moja hutoka kama gesi (maji au kaboni dioksidi) na iliyobaki hugeuka **oksidi**: michanganyiko ya elementi na oksijeni, kama silika (SiO₂) au oksidi ya kalsiamu (CaO). Kioo kilichochomwa kimetengenezwa na oksidi, kwa hiyo wafinyanzi huelezea glaze kwa oksidi hizo. Kila oksidi ina moja ya kazi tatu.
 
 - **Silika** (SiO₂) ni **kijenzi cha kioo**: hujenga kioo. Silika safi huyeyuka juu ya {{3100 °F; 1700 °C}}, joto kubwa mno kuliko tanuru ya ufinyanzi, na glaze yenye silika nyingi kwa kawaida hudumu zaidi.
 - **Flux** (viyeyushi) hushusha kiwango cha kuyeyuka hadi kile ambacho tanuru inaweza kufikia. **Alkali**, zinazoandikwa **R₂O**, ni oksidi za sodiamu, potasiamu na lithiamu (Na₂O, K₂O, Li₂O); hufanya kazi kuanzia koni 06 hadi moto wa kati na moto mkali. **Alkali-ardhi**, zinazoandikwa **RO**, ni oksidi za kalsiamu, magnesiamu, bariamu na strontiamu (CaO, MgO, BaO, SrO), pamoja na oksidi ya zinki (ZnO) iliyowekwa kando yake; hufanya kazi vizuri zaidi kuanzia koni 5 hadi koni 10. Herufi R inawakilisha metali yoyote ya familia hiyo.
-- **Alumina** (Al₂O₃) ni **kiimarisha**. Hufanya myeyuko uwe mzito ili ubaki kwenye kuta zilizosimama, na huongeza ugumu na uimara. Onyo la Glazy: ikiwa alumina ni ndogo mno "glaze yako inaweza kutiririka; ikiwa nyingi mno inaweza kufanya myeyuko uwe mzito hadi kuwa matte". Alumina hutoka hasa kwenye udongo na feldspar.
+- **Alumina** (Al₂O₃) ni **kiimarisha**. Hufanya myeyuko uwe mzito ili ubaki kwenye kuta zilizosimama, na huongeza ugumu na uimara. Onyo la Glazy: ikiwa alumina ni ndogo mno “glaze yako inaweza kutiririka; ikiwa nyingi mno inaweza kufanya myeyuko uwe mzito hadi kuwa matte”. Alumina hutoka hasa kwenye udongo na feldspar.
 
 **Boroni** (B₂O₃) haiko wazi upande mmoja. Wanakemia huiweka kati ya vijenzi vya kioo, lakini kwenye joto la studio hufanya kazi kama flux, na wafinyanzi huichukulia hivyo. Ni muhimu sana kwenye koni 5–6 na haihitajiki kwenye moto mkali. (Koni, jina wanalotumia wafinyanzi kwa uchomaji, zinaelezwa hapa chini.)
 
 > [!NOTE]
 > Njia moja ya kukumbuka: silika ndiyo kioo, flux huiruhusu iyeyuke kwenye joto ambalo tanuru yako inaweza kufikia, na alumina huifanya iwe nzito ili ibaki mahali ulipoiweka.
 
-## Udongo, vifuniko na uchomaji mbili {#clay-and-firings}
+## Udongo, vifuniko na uchomaji mara mbili {#clay-and-firings}
 
 ### Mchanganyiko wa udongo
 
-**Mchanganyiko wa udongo**{{en: clay body}} ni udongo ambao chungu kimetengenezwa nao. Kuna aina tatu kuu.
+**Mchanganyiko wa udongo** ni udongo ambao chungu kimetengenezwa nao. Kuna aina tatu kuu.
 
-- **Earthenware**{{en: earthenware}}: udongo wa moto mdogo, takriban koni 06–02, unaobaki na vinyweleo. Mara nyingi ni mwekundu au wa rangi ya ngozi, na huhitaji glaze ili ushike maji.
-- **Stoneware**{{en: stoneware}}: udongo wa moto wa kati hadi mkali, takriban koni 5–10, unaokuwa kama kioo au karibu hivyo.
+- **Earthenware**: udongo wa moto mdogo, takriban koni 06–02, unaobaki na vinyweleo. Mara nyingi ni mwekundu au wa rangi ya ngozi, na huhitaji glaze ili ushike maji.
+- **Stoneware**: udongo wa moto wa kati hadi mkali, takriban koni 5–10, unaokuwa kama kioo au karibu hivyo.
 - **Porcelaini**: udongo mweupe wa moto mkali wenye kaolini nyingi, mara nyingi unaopitisha mwanga.
 
 **Vitreous** (kama kioo) inamaanisha ngumu kama kioo na isiyo na vinyweleo; **vitrification** ni udongo kuwa hivyo unapochomwa. Wafinyanzi wa Uingereza mara nyingi huweka mpaka kwa joto badala yake: stoneware huchomwa juu ya {{2192 °F; 1200 °C}}, earthenware chini yake. Moto wa kati, koni 5–6, uko pande zote mbili za mpaka huo.
 
 ### Vifuniko na ukaushaji
 
-**Slip**{{en: slip}} ni udongo ulioelea kwenye maji, kwa ajili ya kumimina kwenye kalibu, kuunganisha au kupamba. **Engobe** ni kifuniko kinachofanana na slip, mara nyingi chenye rangi, chenye vitu vingi zaidi visivyo udongo. **Underglaze** ni slip yenye rangi au pambo la oksidi, kwa kawaida hufunikwa na glaze safi.
+**Slip** ni udongo ulioelea kwenye maji, kwa ajili ya kumimina kwenye kalibu, kuunganisha au kupamba. **Engobe** ni kifuniko kinachofanana na slip, mara nyingi chenye rangi, chenye vitu vingi zaidi visivyo udongo. **Underglaze** ni slip yenye rangi au pambo la oksidi, kwa kawaida hufunikwa na glaze safi.
 
 Vyombo visivyochomwa ni **vyombo vibichi (greenware)** (vyanzo havikubaliani kama neno hili linahusu vyombo vyote visivyochomwa au vile vikavu tu). Vinapokauka huwa **leather-hard** (ngumu kama ngozi), ngumu lakini bado na unyevu kidogo, hatua ya kupunguza kwa kisu na kuweka vishikio; kisha **bone dry** (kavu kabisa), bila maji huru yaliyobaki, dhaifu sana na tayari kuchomwa.
 
-### Uchomaji mbili
+### Uchomaji mara mbili
 
 Uchomaji wa kwanza, wa joto la chini, ni **bisque** (Uingereza: **biscuit**), kwa kawaida koni 08–04 (mara nyingi 06–04), takriban {{1728–1945 °F; 942–1063 °C}}. Huacha vyombo vikiwa imara lakini vyenye vinyweleo. Digitalfire, tovuti ya marejeo ya glaze, inapendekeza kwa ujumla vinyweleo zaidi ya 15%, ili bisque ivute maji kutoka kwenye glaze inapopakwa. Bisque laini (koni 08–06) ina vinyweleo zaidi; bisque ngumu (mara nyingi koni 04) ni imara zaidi lakini hupokea glaze kwa shida zaidi.
 
@@ -51,13 +51,13 @@ Label: Jinsi bisque inavyobadilisha upakaji wa glaze
 
 Potclays, msambazaji wa Uingereza, anaeleza uchomaji wa biscuit hadi takriban {{1000 °C; 1832 °F}}, takriban koni 06. Tukisoma vyanzo hivi pamoja, tunapendekeza koni 06–04 kwa bisque ya kwanza: {{1828–1945 °F; 998–1063 °C}} kwa kasi ya kati ya Orton.
 
-**Uchomaji wa glaze**{{en: glaze firing}} (wafinyanzi wa Uingereza wanaweza kusema uchomaji wa **glost**) huyeyusha glaze na, kwa stoneware, huukomaza udongo pia. **Once-firing** (uchomaji mmoja) ni kupaka glaze vyombo visivyochomwa na kuvichoma mara moja tu. Digitalfire inaripoti kisa cha uzalishaji ambapo vyombo vilivyopakwa glaze ghafi vilijikunja kwenye kingo hadi uchomaji wa bisque ulipokitibu, kwa hiyo anza na uchomaji mbili. [Kuchoma katika tanuru rahisi](/guides/firing) inatoa ratiba za zote mbili.
+**Uchomaji wa glaze** (wafinyanzi wa Uingereza wanaweza kusema uchomaji wa **glost**) huyeyusha glaze na, kwa stoneware, huukomaza udongo pia. **Once-firing** (uchomaji mmoja) ni kupaka glaze vyombo visivyochomwa na kuvichoma mara moja tu. Digitalfire inaripoti kisa cha uzalishaji ambapo vyombo vilivyopakwa glaze ghafi vilijikunja kwenye kingo hadi uchomaji wa bisque ulipokitibu, kwa hiyo anza kwa kuchoma mara mbili. [Kuchoma katika tanuru rahisi](/guides/firing) inatoa ratiba za zote mbili.
 
 ## Koni na kazi ya joto {#cones}
 
-Wafinyanzi hutaja uchomaji kwa **koni**{{en: cone}}: piramidi nyembamba ya kauri inayopinda ikishapata kiasi fulani cha joto. Orton, anayezitengeneza, anasema hivi: "Koni hazipimi joto peke yake. Zinapima kazi ya joto, athari ya pamoja ya muda na joto."
+Wafinyanzi hutaja uchomaji kwa **koni**: piramidi nyembamba ya kauri inayopinda ikishapata kiasi fulani cha joto. Orton, anayezitengeneza, anasema hivi: “Koni hazipimi joto peke yake. Zinapima kazi ya joto, athari ya pamoja ya muda na joto.”
 
-**Kazi ya joto (heatwork)** ndiyo sababu: glaze, udongo na koni zote huitikia muda ambao zina joto pamoja na ukubwa wa joto. Uchomaji wa polepole hupinda koni kwenye joto la chini, wa haraka kwenye joto la juu. Chati ya Orton ina koni 6 ikipinda kwenye {{2165 °F; 1185 °C}} uchomaji unapopanda {{27 °F; 15 °C}} kwa saa mwishoni, kwenye {{2232 °F; 1222 °C}} kwa {{108 °F; 60 °C}} kwa saa, na kwenye {{2269 °F; 1243 °C}} kwa {{270 °F; 150 °C}} kwa saa, kasi ikichukuliwa katika {{180 °F; 100 °C}} za mwisho. Koni imekamilika ncha yake inapopinda digrii 90°, ambayo Orton huiita nafasi ya saa 5.
+**Kazi ya joto (heatwork)** ndiyo sababu: glaze, udongo na koni zote huitikia muda ambao zina joto pamoja na ukubwa wa joto. Uchomaji wa polepole hupinda koni kwenye joto la chini, wa haraka kwenye joto la juu. Chati ya Orton ina koni 6 ikipinda kwenye {{2165 °F; 1185 °C}} uchomaji unapopanda {{27 °F; 15 °C}} kwa saa mwishoni, kwenye {{2232 °F; 1222 °C}} kwa {{108 °F; 60 °C}} kwa saa, na kwenye {{2269 °F; 1243 °C}} kwa {{270 °F; 150 °C}} kwa saa, kasi ikichukuliwa katika {{180 °F; 100 °C}} za mwisho. Koni imekamilika ncha yake inapopinda 90°, ambayo Orton huiita nafasi ya saa 5.
 
 Nambari za koni huanzia 022 hadi 42. Sifuri mwanzoni huashiria mfululizo wa baridi zaidi, ambapo nambari kubwa ni baridi zaidi: koni 06 ni baridi zaidi kuliko koni 04, na koni 01 ni baridi zaidi kuliko koni 1.
 
@@ -88,10 +88,10 @@ Label: Kutoka kichocheo hadi fomula ya umoja
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Kichocheo cha kundi | Malighafi kwa uzito, zimepimwa hadi 100                                                                                                          | Feldspar 40%, miongoni mwa nyingine                                                                                                |
 | 2. Uchambuzi wa oksidi | Kama lebo ya lishe: oksidi za kila malighafi hujumlishwa kama asilimia ya uzito, na gesi huachwa                                                 | Feldspar ina silika 64.8%, kwa hiyo 40% yake inaleta SiO₂ 25.9%. Glaze iliyochomwa ni SiO₂ 67.4%, Al₂O₃ 12.6%, K₂O 7.5%, CaO 12.5% |
-| 3. Moli                | Uzito hubadilishwa kuwa **moli**, hesabu ya molekuli, kwa sababu "Gramu zinaweza kupotosha kwa sababu baadhi ya oksidi ni nzito kuliko nyingine" | 60.1 g ya SiO₂ ni moli moja, kwa hiyo 67.4 g ni takriban moli 1.12                                                                 |
+| 3. Moli                | Uzito hubadilishwa kuwa **moli**, hesabu ya molekuli, kwa sababu “Gramu zinaweza kupotosha kwa sababu baadhi ya oksidi ni nzito kuliko nyingine” | 60.1 g ya SiO₂ ni moli moja, kwa hiyo 67.4 g ni takriban moli 1.12                                                                 |
 | 4. Umoja               | Kila kitu hugawanywa kwa jumla ya flux, ili flux zijumlishe 1                                                                                    | Flux zinajumlisha 0.303; kugawanya kunatoa K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                               |
 
-[Ukurasa wa kichocheo](/recipe) wa Glazecalc hufanya hatua zote nne unapoandika, na huonyesha matokeo katika safu tatu: flux (R₂O na RO) zinazojumlisha 1; viimarisha (R₂O₃: alumina, na boroni mara nyingi huwekwa hapa); na vijenzi vya kioo (RO₂: silika). "Umoja ni zana ya kupima tu," Glazy inasema: vichocheo viwili vilivyotengenezwa kwa malighafi tofauti lakini vyenye fomula ya umoja ileile "hufanya kazi karibu kufanana vikishachomwa". Kwa hiyo 1 ni kipimo cha pamoja, si kiasi unachopima. Digitalfire inaongeza kuwa njia hii "haifanyi kazi vizuri kwenye joto la chini", ambapo boroni si flux ya kawaida, na kwamba fomula za umoja ni "za kulinganisha na zinaeleweka vizuri zaidi katika muktadha". **Linganisha** huweka fomula za vichocheo viwili kando kwa kando, oksidi kwa oksidi.
+[Ukurasa wa kichocheo](/recipe) wa Glazecalc hufanya hatua zote nne unapoandika, na huonyesha matokeo katika safu tatu: flux (R₂O na RO) zinazojumlisha 1; viimarisha (R₂O₃: alumina, na boroni mara nyingi huwekwa hapa); na vijenzi vya kioo (RO₂: silika). “Umoja ni zana ya kupima tu,” Glazy inasema: vichocheo viwili vilivyotengenezwa kwa malighafi tofauti lakini vyenye fomula ya umoja ileile “hufanya kazi karibu kufanana vikishachomwa”. Kwa hiyo 1 ni kipimo cha pamoja, si kiasi unachopima. Digitalfire inaongeza kuwa njia hii “haifanyi kazi vizuri kwenye joto la chini”, ambapo boroni si flux ya kawaida, na kwamba fomula za umoja ni “za kulinganisha na zinaeleweka vizuri zaidi katika muktadha”. **Linganisha** huweka fomula za vichocheo viwili kando kwa kando, oksidi kwa oksidi.
 
 ### Uwiano wa silika na alumina
 
@@ -123,7 +123,7 @@ Label: Upotevu wa uzito kwa moto
 | Kaolini                               | Takriban 12%, hasa maji yaliyofungwa kwenye fuwele zake                            |
 | Feldspar                              | Chini ya 1%                                                                        |
 
-Gesi inayotoka baada ya glaze kuanza kuyeyuka lazima ipenye kwa viputo, ikisababisha, kwa maneno ya Digitalfire, "viputo, malengelenge, pinholes, crawling". Talc huendelea kutoa gesi hadi takriban {{1650 °F; 899 °C}}. Frit, malighafi **zilizochomwa awali (calcined)** (zilizopashwa joto kabla ili kutoa gesi zake) na mabadiliko ya uchomaji zote husaidia.
+Gesi inayotoka baada ya glaze kuanza kuyeyuka lazima ipenye kwa viputo, ikisababisha, kwa maneno ya Digitalfire, “viputo, malengelenge, pinholes, crawling”. Talc huendelea kutoa gesi hadi takriban {{1650 °F; 899 °C}}. Frit, malighafi **zilizochomwa awali (calcined)** (zilizopashwa joto kabla ili kutoa gesi zake) na mabadiliko ya uchomaji zote husaidia.
 
 Vitabu vya zamani hufanya hesabu hii kwa mkono, kwa **uzito wa molekuli** (uzito wa moli moja ya malighafi au oksidi) na **uzito sawia** (uzito wa malighafi inayotoa moli moja ya oksidi). Kwa hesabu yetu, takriban 100 g za whiting hutoa moli moja, 56 g, ya oksidi ya kalsiamu. Kikokotoo hushughulikia zote mbili.
 
@@ -131,7 +131,7 @@ Vitabu vya zamani hufanya hesabu hii kwa mkono, kwa **uzito wa molekuli** (uzito
 
 ### Frit
 
-**Frit**{{en: frit}} ni kioo kilichotengenezwa kiwandani: madini yaliyoyeyushwa, kupozwa haraka ndani ya maji na kusagwa. Kutengeneza frit hufanya malighafi zinazoyeyuka majini kama borax zisiyeyuke, hufungia oksidi zenye sumu kama za madini ya risasi (Pb) na bariamu ndani ya kioo thabiti, hutoa malighafi inayofanana zaidi kuliko madini ghafi, na hutoa gesi, kwa hiyo glaze za frit "zina kasoro chache zaidi" (Digitalfire). Frit pia huyeyuka mapema: frit ya soda hufanya kazi kwenye koni 06, wakati feldspar "inaanza tu kulainika kwenye koni 6". Zinagharimu zaidi, zinahitaji udongo ili zibaki zimeelea (mfano wa Digitalfire ni frit 85% na udongo 15%), na "kinadharia haziyeyuki majini, lakini kwa vitendo, huyeyuka".
+**Frit** ni kioo kilichotengenezwa kiwandani: madini yaliyoyeyushwa, kupozwa haraka ndani ya maji na kusagwa. Kutengeneza frit hufanya malighafi zinazoyeyuka majini kama borax zisiyeyuke, hufungia oksidi zenye sumu kama za madini ya risasi (Pb) na bariamu ndani ya kioo thabiti, hutoa malighafi inayofanana zaidi kuliko madini ghafi, na hutoa gesi, kwa hiyo glaze za frit “zina kasoro chache zaidi” (Digitalfire). Frit pia huyeyuka mapema: frit ya soda hufanya kazi kwenye koni 06, wakati feldspar “inaanza tu kulainika kwenye koni 6”. Zinagharimu zaidi, zinahitaji udongo ili zibaki zimeelea (mfano wa Digitalfire ni frit 85% na udongo 15%), na “kinadharia haziyeyuki majini, lakini kwa vitendo, huyeyuka”.
 
 Frit za Amerika Kaskazini hutambulika kwa mtengenezaji na nambari: Ferro Frit 3134 (Ferro sasa ni Vibrantz) iko katika takriban 22% ya vichocheo vya umma vya Glazy. Vichocheo vya Uingereza mara nyingi hutaja frit za jumla, kama frit ya kawaida ya borax.
 
@@ -145,12 +145,12 @@ Label: Malighafi za kawaida za glaze
 | Silika (flint, quartz)                               | SiO₂                   | Tumia mesh 325, usagaji laini sana, kwenye glaze                                                                                                                                 |
 | Kaolini (Uingereza: china clay; Australia: Eckalite) | Al₂O₃, SiO₂            | Chanzo kikuu cha alumina; pia huweka glaze ikielea                                                                                                                               |
 | Ball clay                                            | Al₂O₃, SiO₂            | Hulainika zaidi kuliko kaolini, ina chuma na vitu vya kikaboni zaidi                                                                                                             |
-| Potash feldspar, soda feldspar, nepheline syenite    | K₂O, Na₂O, Al₂O₃, SiO₂ | Flux zenye alumina na silika zake. Nepheline syenite ni flux kali ya moto mdogo na wa kati. "Feldspar" ya kawaida kwenye kichocheo cha zamani inaweza kumaanisha yoyote kati yao |
+| Potash feldspar, soda feldspar, nepheline syenite    | K₂O, Na₂O, Al₂O₃, SiO₂ | Flux zenye alumina na silika zake. Nepheline syenite ni flux kali ya moto mdogo na wa kati. “Feldspar” ya kawaida kwenye kichocheo cha zamani inaweza kumaanisha yoyote kati yao |
 | Whiting (kalsiamu kaboneti)                          | CaO                    | Flux kuu ya kalsiamu; hutoa kaboni dioksidi                                                                                                                                      |
 | Wollastonite                                         | CaO, SiO₂              | Kalsiamu bila kaboni dioksidi                                                                                                                                                    |
 | Dolomite, talc                                       | MgO, na CaO au SiO₂    | Nyuso laini za matte; upanuzi mdogo                                                                                                                                              |
 | Oksidi ya zinki                                      | ZnO                    | Ung'avu na fuwele; nyingi mno zinaweza kusababisha crawling                                                                                                                      |
-| Frit za boroni, Gerstley Borate, colemanite          | B₂O₃                   | Muhimu kuanzia koni 06 hadi koni 6; frit ni "thabiti zaidi na huyeyuka kidogo zaidi kuliko borate ghafi"                                                                         |
+| Frit za boroni, Gerstley Borate, colemanite          | B₂O₃                   | Muhimu kuanzia koni 06 hadi koni 6; frit ni “thabiti zaidi na huyeyuka kidogo zaidi kuliko borate ghafi”                                                                         |
 | Lithiamu kaboneti                                    | Li₂O                   | Flux yenye upanuzi mdogo; ghali, kwa hiyo hutumika kwa kiasi kidogo                                                                                                              |
 | Strontiamu kaboneti                                  | SrO                    | Mbadala wenye sumu kidogo kuliko bariamu                                                                                                                                         |
 | Bariamu kaboneti                                     | BaO                    | Ina sumu ikiwa ghafi; glaze zenye bariamu nyingi zinaweza kuvuja madini                                                                                                          |
@@ -162,7 +162,7 @@ Label: Malighafi za kawaida za glaze
 ### Majina ya kikanda
 
 - **Kaolini** ni **china clay** nchini Uingereza; wasambazaji wa Australia huiuza kama Eckalite.
-- **Flint** ni jina la zamani la Uingereza la silika. Wasambazaji wa Uingereza bado huuza **calcined flint** kama bidhaa yake yenyewe, kwa hiyo "flint" kwenye kichocheo cha Uingereza huenda ikamaanisha calcined flint, na kwenye kichocheo cha Marekani huenda ikamaanisha quartz iliyosagwa. Zote huuzwa kama vyanzo vya silika; angalia uchambuzi.
+- **Flint** ni jina la zamani la Uingereza la silika. Wasambazaji wa Uingereza bado huuza **calcined flint** kama bidhaa yake yenyewe, kwa hiyo “flint” kwenye kichocheo cha Uingereza huenda ikamaanisha calcined flint, na kwenye kichocheo cha Marekani huenda ikamaanisha quartz iliyosagwa. Zote huuzwa kama vyanzo vya silika; angalia uchambuzi.
 - **China stone** na **Cornish stone** (jiwe la Cornwall) ni malighafi ileile, inayohusiana na feldspar.
 - **Whiting** ni kalsiamu kaboneti; wasambazaji wa Ujerumani huiita Kreide (chaki).
 
@@ -210,11 +210,11 @@ Udongo na glaze vyote hukua vinapopata joto na kusinyaa vinapopoa, kila kimoja k
 
 ### Crazing na shivering
 
-**Crazing**{{en: crazing}} ni mtandao wa nyufa ndogo. Upanuzi wa glaze ni mkubwa kuliko wa udongo, kwa hiyo inapopoa husinyaa zaidi, hunyooshwa na hupasuka, kwa kawaida kwa sababu ya sodiamu na potasiamu nyingi mno (Na₂O, K₂O). Inaweza pia kutokea baadaye, wakati wa matumizi, baada ya kupozwa ghafla mara nyingi kama kugusana na vimiminika baridi. Inapotakiwa, kama kwenye raku, huitwa **crackle**. Digitalfire inasema "95% ya wakati suluhisho ni kurekebisha upanuzi wa joto wa glaze"; kupoza polepole kunachelewesha crazing tu. Jaribio lake: pasha chombo hadi takriban {{300 °F; 149 °C}}, kitumbukize kwenye maji yenye barafu, kisha sugua kalamu ya felt juu yake ili nyufa zionekane.
+**Crazing** ni mtandao wa nyufa ndogo. Upanuzi wa glaze ni mkubwa kuliko wa udongo, kwa hiyo inapopoa husinyaa zaidi, hunyooshwa na hupasuka, kwa kawaida kwa sababu ya sodiamu na potasiamu nyingi mno (Na₂O, K₂O). Inaweza pia kutokea baadaye, wakati wa matumizi, baada ya kupozwa ghafla mara kwa mara, kama kugusana na vimiminika baridi. Inapotakiwa, kama kwenye raku, huitwa **crackle**. Digitalfire inasema “95% ya wakati suluhisho ni kurekebisha upanuzi wa joto wa glaze”; kupoza polepole kunachelewesha crazing tu. Jaribio lake: pasha chombo hadi takriban {{300 °F; 149 °C}}, kitumbukize kwenye maji yenye barafu, kisha sugua kalamu ya felt juu yake ili nyufa zionekane.
 
-Vyanzo hutofautiana kuhusu suluhisho la kwanza. Glazy inapendekeza kuongeza silika au alumina; Digitalfire inajibu kuwa silika ya ziada "hupunguza tu KNaO" (sodiamu na potasiamu); Linda Bloomfield anaongeza boroni au kupunguza feldspar, malighafi moja kwa wakati. Ushauri wetu: katika [kikokotoo cha glaze](/recipe), badilisha sehemu ya sodiamu na potasiamu kwa flux zenye upanuzi mdogo (boroni, lithiamu, magnesiamu, kalsiamu), thibitisha mabadiliko kwa **Linganisha**, na uthibitishe kwa jaribio la maji yenye barafu.
+Vyanzo hutofautiana kuhusu suluhisho la kwanza. Glazy inapendekeza kuongeza silika au alumina; Digitalfire inajibu kuwa silika ya ziada “hupunguza tu KNaO” (sodiamu na potasiamu); Linda Bloomfield anaongeza boroni au kupunguza feldspar, malighafi moja kwa wakati. Ushauri wetu: katika [kikokotoo cha glaze](/recipe), badilisha sehemu ya sodiamu na potasiamu kwa flux zenye upanuzi mdogo (boroni, lithiamu, magnesiamu, kalsiamu), thibitisha mabadiliko kwa **Linganisha**, na uthibitishe kwa jaribio la maji yenye barafu.
 
-**Shivering**{{en: shivering}} ni kinyume chake: upanuzi wa glaze ni mdogo sana kuliko wa udongo, kwa hiyo inabanwa kupita kiasi na kuchubuka kwenye kingo na pembe. Digitalfire inaonya kuwa vipande vinaweza kuwa vikali kama wembe na vinaweza kumezwa, na Glazy inaita shivering "hatari zaidi kuliko crazing kwenye vyombo vya matumizi". Suluhisho ni glaze yenye upanuzi mkubwa zaidi au udongo wenye upanuzi mdogo zaidi.
+**Shivering** ni kinyume chake: upanuzi wa glaze ni mdogo sana kuliko wa udongo, kwa hiyo inabanwa kupita kiasi na kuchubuka kwenye kingo na pembe. Digitalfire inaonya kuwa vipande vinaweza kuwa vikali kama wembe na vinaweza kumezwa, na Glazy inaita shivering “hatari zaidi kuliko crazing kwenye vyombo vya matumizi”. Suluhisho ni glaze yenye upanuzi mkubwa zaidi au udongo wenye upanuzi mdogo zaidi.
 
 > [!WARNING]
 > Usitumie vyombo vyenye crazing au shivering kwa chakula au kinywaji. Vyanzo havikubaliani kama vyungu vyenye crazing vinaweza kusafishwa vya kutosha (kimoja kinasema mashine ya kuosha vyombo inatosha; kingine kinaita vyombo vya matumizi vyenye crazing vyenye kasoro), kwa hiyo tunachukua upande wa tahadhari.
@@ -233,7 +233,7 @@ Label: Kasoro za kawaida za glaze
 | Kasoro     | Inaonekanaje                                         | Sababu za kawaida                                                                                                  | Suluhisho la kwanza                                                                                      |
 | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | Crawling   | Glaze hujivuta na kuwa shanga, ikiacha udongo wazi   | Bisque yenye vumbi au mafuta; tabaka nene yenye udongo mwingi iliyopasuka wakati wa kukauka; zinki, zircon au bati | Safisha bisque; paka nyembamba; choma kwanza (calcine) sehemu ya udongo; ongeza kiunganishi kama CMC gum |
-| Pinholing  | Matundu madogo au mashimo                            | Gesi kutoka kwenye udongo au glaze isiyoziba juu; glaze isiyochomwa vya kutosha au ngumu                           | Shikilia kwenye joto la juu kwa takriban nusu saa; paka nyembamba; zinki au rutile kidogo                |
+| Pinholing  | Matundu madogo au mashimo                            | Gesi kutoka kwenye udongo au glaze isiyoziba juu; glaze isiyochomwa vya kutosha au ngumu                           | Shikilia kwenye joto la juu kwa takriban nusu saa; paka nyembamba; punguza zinki au rutile               |
 | Blistering | Mashimo yenye kingo kali                             | Kwa kawaida kuchoma kupita kiasi; tabaka nene sana; flux zinazopeperuka juu ya takriban {{2192 °F; 1200 °C}}       | Choma kwa joto la chini; paka nyembamba. Kingo kali hufanya vyombo vya matumizi kutokuwa salama          |
 | Running    | Glaze hutiririka hadi kwenye rafu                    | Alumina ndogo mno; nene mno, kama pale mimiminiko inapoingiliana; chuma nyingi                                     | Paka nyembamba; ongeza alumina; weka glaze mbali juu ya mguu wa chungu                                   |
 | Dunting    | Nyufa kwenye chungu kutokana na kupoa au kupata joto | Kupoa haraka kupitia quartz inversion, {{1063 °F; 573 °C}}; kuta zisizosawa; mwafaka mbaya                         | Choma polepole kupitia {{1063 °F; 573 °C}}, kupanda na kushuka; kuta zilizosawa                          |
@@ -244,54 +244,54 @@ Label: Kasoro za kawaida za glaze
 
 ### Bila madini ya risasi si sawa na salama kwa chakula
 
-Kanuni za Marekani, Umoja wa Ulaya, Uingereza na Australia hupunguza madini ya risasi (Pb) na kadimiamu (Cd) ambayo kipande kilichochomwa hutoa, si kile ambacho glaze inacho. "Bila madini ya risasi (Pb)" huondoa hatari moja; si daraja la usalama wa chakula. Oksidi nyingine pia huvuja: Glazy inaonya kuwa glaze zenye bariamu nyingi "zinaweza kuvuja na kwa ujumla si salama kwa chakula", Digitalfire inasema shaba "inaweza kufanya glaze ivuje; ijaribu", na Glazy haishauri tena glaze za madini ya risasi (Pb) kwa vyombo vya matumizi.
+Kanuni za Marekani, Umoja wa Ulaya, Uingereza na Australia hupunguza madini ya risasi (Pb) na kadimiamu (Cd) ambayo kipande kilichochomwa hutoa, si kile ambacho glaze inacho. “Bila madini ya risasi (Pb)” huondoa hatari moja; si daraja la usalama wa chakula. Oksidi nyingine pia huvuja: Glazy inaonya kuwa glaze zenye bariamu nyingi “zinaweza kuvuja na kwa ujumla si salama kwa chakula”, Digitalfire inasema shaba “inaweza kufanya glaze ivuje; ijaribu”, na Glazy haishauri tena glaze za madini ya risasi (Pb) kwa vyombo vya matumizi.
 
 **Glaze ya ndani (liner glaze)** ni glaze thabiti, kwa kawaida safi au nyeupe, kwa nyuso zinazogusa chakula. Kwa maoni yetu, ile isiyo na kitia rangi, bariamu, madini ya risasi (Pb) wala lithiamu, inayoyeyuka kikamilifu, isiyopata crazing na inayodumu vizuri, ndiyo chaguo lenye hatari ndogo zaidi. Hatari ndogo si uthibitisho.
 
-**Fomula za kikomo (limit formulas)** (Digitalfire hupendelea **fomula lengwa (target formulas)**) hutoa viwango vya kawaida vya fomula ya umoja kwa glaze thabiti kwenye koni fulani: malengo ya Digitalfire ya koni 6 huweka alumina kwa 0.285–0.64 na silika kwa 2.4–4.7. Hukuongoza kuelekea kemia nzuri lakini hazithibitishi chochote; Digitalfire huepuka neno "kikomo" kwa sababu linapendekeza kuwa glaze zilizo ndani ya viwango "kwa namna fulani ni salama". Zana za Glazecalc za kubadilisha kichocheo husema kichocheo kipya kinapovuka kikomo kinachopendekezwa, kama boroni nyingi kwenye koni 6, na glaze itafanya nini kwa uwezekano mkubwa.
+**Fomula za kikomo (limit formulas)** (Digitalfire hupendelea **fomula lengwa (target formulas)**) hutoa viwango vya kawaida vya fomula ya umoja kwa glaze thabiti kwenye koni fulani: malengo ya Digitalfire ya koni 6 huweka alumina kwa 0.285–0.64 na silika kwa 2.4–4.7. Hukuongoza kuelekea kemia nzuri lakini hazithibitishi chochote; Digitalfire huepuka neno “kikomo” kwa sababu linapendekeza kuwa glaze zilizo ndani ya viwango “kwa namna fulani ni salama”. Zana za Glazecalc za kubadilisha kichocheo husema kichocheo kipya kinapovuka kikomo kinachopendekezwa, kama boroni nyingi kwenye koni 6, na glaze itafanya nini kwa uwezekano mkubwa.
 
 Mipaka ya kisheria hutofautiana kwa nchi. Jedwali linaonyesha ile ya mahali ulipo, kwa vipimo vya sheria yenyewe; chagua nchi au eneo jingine ili kulinganisha.
 
 ::food-limits
 
-Marekani, vyombo vya mapambo vya kauri vinavyoonekana kutumika kwa chakula huchukuliwa kama vyombo vya chakula isipokuwa vina lebo ya kubandika na ilani ya kudumu iliyobuniwa au kuchomwa kwenye msingi wake, kama "Si kwa Matumizi ya Chakula. Inaweza Kutia Chakula Sumu", au vina tundu linalopitia uso wa chakula. Umoja wa Ulaya unaweka mipaka ya madini ya risasi (Pb) na kadimiamu (Cd) katika Agizo la 84/500/EEC, na Uingereza inahifadhi viwango hivyo hivyo katika sheria yake yenyewe. Kuanzia 29 Mei 2026 Uholanzi, Ubelgiji na Luxembourg zinaruhusu madini ya risasi (Pb) chini mara 130 hadi 150 hivi, na kadimiamu (Cd) chini mara 15 hivi. Australia inaweka mipaka kwa vyombo vilivyoagizwa kutoka nje; hatukupata kikomo rasmi kwa vyombo vilivyotengenezwa Australia au New Zealand.
+Marekani, vyombo vya mapambo vya kauri vinavyoonekana kutumika kwa chakula huchukuliwa kama vyombo vya chakula isipokuwa vina lebo ya kubandika na ilani ya kudumu iliyobuniwa au kuchomwa kwenye msingi wake, kama “Si kwa Matumizi ya Chakula. Inaweza Kutia Chakula Sumu”, au vina tundu linalopitia uso wa chakula. Umoja wa Ulaya unaweka mipaka ya madini ya risasi (Pb) na kadimiamu (Cd) katika Agizo la 84/500/EEC, na Uingereza inahifadhi viwango hivyo hivyo katika sheria yake yenyewe. Kuanzia 29 Mei 2026 Uholanzi, Ubelgiji na Luxembourg zinaruhusu madini ya risasi (Pb) chini mara 130 hadi 150 hivi, na kadimiamu (Cd) chini mara 15 hivi. Australia inaweka mipaka kwa vyombo vilivyoagizwa kutoka nje; hatukupata kikomo rasmi kwa vyombo vilivyotengenezwa Australia au New Zealand.
 
 ### Kupima
 
 FDA inasema vifaa vya kupima kwa kusugua nyumbani vinaweza kuonyesha madini ya risasi (Pb) yanayoweza kuvuja, lakini Ceramics New Zealand inaonya kuwa kalamu za kupima hazikubuniwa kwa kauri na hutoa matokeo chanya ya uongo. Chukulia matokeo chanya kuwa sababu ya kuacha kutumia kipande, na matokeo hasi kuwa hayathibitishi chochote. Jaribio la maabara la kuvuja kwa madini kwenye kipande kilichochomwa (ASTM C738 nchini Marekani; EN 1388 au ISO 6486 Ulaya) ndilo jibu la kweli.
 
 > [!WARNING]
-> "Salama kwa chakula" inamaanisha glaze hii, kwenye udongo huu, iliyochomwa hadi koni hii katika tanuru hii na kupakwa kwa njia hii, hutoa chini ya mipaka ya kisheria. Glazecalc inaweza kukusaidia kutengeneza glaze thabiti, na **Badilisha madini ya risasi (Pb)** inaweza kujenga upya kichocheo cha zamani chenye madini ya risasi (Pb) bila madini hayo, lakini hakuna kikokotoo kinachoweza kuthibitisha chungu. Jaribio la kipande kilichochomwa pekee ndilo linaloweza.
+> “Salama kwa chakula” inamaanisha glaze hii, kwenye udongo huu, iliyochomwa hadi koni hii katika tanuru hii na kupakwa kwa njia hii, hutoa chini ya mipaka ya kisheria. Glazecalc inaweza kukusaidia kutengeneza glaze thabiti, na **Badilisha madini ya risasi (Pb)** inaweza kujenga upya kichocheo cha zamani chenye madini ya risasi (Pb) bila madini hayo, lakini hakuna kikokotoo kinachoweza kuthibitisha chungu. Jaribio la kipande kilichochomwa pekee ndilo linaloweza.
 
 ## Uzito linganishi na upakaji {#application}
 
 ### Uzito linganishi
 
-Unga wa glaze uliochanganywa na maji ni **tope (slurry)**. **Uzito linganishi (specific gravity)** wake (**SG**) ni uzito wake ukilinganishwa na ujazo uleule wa maji, ambayo yana SG ya 1.0: kadiri ulivyo juu, ndivyo unga mwingi zaidi ulivyo ndani ya ndoo. Vitabu vya zamani vya Uingereza husema **uzito wa painti (pint weight)**. Glazy inaita 1.4–1.5 "mahali pazuri pa kuanzia kwa glaze nyingi". Ili kupima, pima hasa 100 mL za tope (Glazy inapendekeza sindano) na ugawanye kwa 100: 145 g inamaanisha SG 1.45. Haidrometa hazitegemeki kwenye glaze zilizoganda, na maji huvukiza, kwa hiyo pima tena kabla ya kupaka glaze.
+Unga wa glaze uliochanganywa na maji ni **tope (slurry)**. **Uzito linganishi (specific gravity)** wake (**SG**) ni uzito wake ukilinganishwa na ujazo uleule wa maji, ambayo yana SG ya 1.0: kadiri ulivyo juu, ndivyo unga mwingi zaidi ulivyo ndani ya ndoo. Vitabu vya zamani vya Uingereza husema **uzito wa painti (pint weight)**. Glazy inaita 1.4–1.5 “mahali pazuri pa kuanzia kwa glaze nyingi”. Ili kupima, pima hasa 100 mL za tope (Glazy inapendekeza sindano) na ugawanye kwa 100: 145 g inamaanisha SG 1.45. Haidrometa hazitegemeki kwenye glaze zilizoganda, na maji huvukiza, kwa hiyo pima tena kabla ya kupaka glaze.
 
 Malengo hutofautiana kwa chanzo. Digitalfire inaweka glaze za kuchovya kwa 1.40–1.50 na glaze za kibiashara za kupaka kwa brashi kwa 1.25–1.55, wakati Potclays inatoa 1.71–1.81 kwa brashi na 1.71 kwa kunyunyizia. Ushauri wetu: chovya kwa takriban 1.45 glaze ikiwa imeganda kidogo, fuata lebo kwa glaze ya brashi, na andika kinachofanya kazi.
 
-**Kiganisha (flocculant)** (chumvi ya Epsom, siki au kalsiamu kloridi) huganda tope kidogo, na kulifanya liwe **thixotropic**: hutiririka likikorogwa na hutulia likiwa kimya, kwa "upakaji wa glaze wa sawasawa usiodondoka". **Kimiminisha (deflocculant)** (sodiamu silikati au Darvan) hulipunguza uzito. [Jinsi ya kutengeneza glaze](/guides/making-a-glaze) inaeleza kuchanganya na kurekebisha.
+**Kiganisha (flocculant)** (chumvi ya Epsom, siki au kalsiamu kloridi) huganda tope kidogo, na kulifanya liwe **thixotropic**: hutiririka likikorogwa na hutulia likiwa kimya, kwa “upakaji wa glaze wa sawasawa usiodondoka”. **Kimiminisha (deflocculant)** (sodiamu silikati au Darvan) hulipunguza uzito. [Jinsi ya kutengeneza glaze](/guides/making-a-glaze) inaeleza kuchanganya na kurekebisha.
 
 ### Kupaka glaze
 
 Safisha kwanza vumbi na mafuta kwenye bisque kwa sifongo yenye unyevu kidogo sana badala ya kuiosha, kwani kuosha huiloweka. Usipulize vumbi kwa hewa iliyobanwa wala kulipiga mswaki likiwa kavu: hilo hupeleka vumbi la silika hewani ([Kuchanganya kwa usalama na hewa safi](/guides/safe-mixing#cleaning)).
 
-- **Kuchovya** "kwa ujumla hutoa tabaka ya unene sawa" (Robin Hopper). Muda wa kuchovya huamua unene: Digitalfire inabainisha kuwa glaze za kibiashara za kuchovya hutengenezwa kwa takriban 1.4 kwa kuchovya sekunde 5 na 1.5 kwa kuchovya sekunde 1.
-- **Kumimina** glaze kunapaswa kuwa "nyembamba kidogo kuliko inapotumika kuchovya"; mimiminiko inapoingiliana, tabaka huwa maradufu na inaweza kutiririka.
+- **Kuchovya** “kwa ujumla hutoa tabaka ya unene sawa” (Robin Hopper). Muda wa kuchovya huamua unene: Digitalfire inabainisha kuwa glaze za kibiashara za kuchovya hutengenezwa kwa takriban 1.4 kwa kuchovya sekunde 5 na 1.5 kwa kuchovya sekunde 1.
+- **Kumimina** glaze kunapaswa kuwa “nyembamba kidogo kuliko inapotumika kuchovya”; mimiminiko inapoingiliana, tabaka huwa maradufu na inaweza kutiririka.
 - **Kupaka kwa brashi**: glaze za brashi zina gundi kama **CMC gum**, inayosaidia glaze itiririke na ishikamane, kisha huungua. Nyingi huhitaji tabaka kadhaa, mara nyingi mbili au tatu; fuata lebo.
-- **Kunyunyizia** hutumia glaze nyembamba zaidi, inayopakwa katika "tabaka kadhaa nyembamba, ikiongeza unene taratibu".
+- **Kunyunyizia** hutumia glaze nyembamba zaidi, inayopakwa katika “tabaka kadhaa nyembamba, ikiongeza unene taratibu”.
 
 > [!WARNING]
 > Nyunyizia tu ndani ya kibanda cha kunyunyizia chenye hewa safi, ukivaa barakoa ya kupumua (respirator) inayokaa vizuri. Tazama [Kuchanganya kwa usalama na hewa safi](/guides/safe-mixing).
 
-Tabaka nene mno inaweza kupata crawling, blistering au kutiririka. Kanuni za wasambazaji hutofautiana kutoka unene wa kadi ya benki hadi wa dime ya Marekani, kwa makadirio yetu takriban 1 mm ya glaze kavu; vigae vya majaribio kwa unene kadhaa ndiyo njia ya kuaminika ya kuangalia. **Wax resist** (nta ya kuzuia glaze) kwenye mguu hufukuza glaze, kwa hiyo chungu hakiwezi kuganda kwenye rafu, na **kiln wash**, kifuniko kinachostahimili joto mara nyingi cha kaolini na silika, hulinda rafu dhidi ya matone.
+Tabaka nene mno inaweza kupata crawling, blistering au kutiririka. Kanuni za wasambazaji hutofautiana kutoka unene wa kadi ya benki hadi wa dime ya Marekani, kwa makadirio yetu takriban 1 mm ya glaze kavu; vigae vya majaribio kwa unene kadhaa ndiyo njia ya kuaminika ya kuangalia. **Wax resist** (nta ya kuzuia glaze) kwenye mguu hufukuza glaze, kwa hiyo chungu hakiwezi kushikamana na rafu, na **kiln wash**, kifuniko kinachostahimili joto mara nyingi cha kaolini na silika, hulinda rafu dhidi ya matone.
 
 ## Oksidesheni na upunguzaji {#atmosphere}
 
-Gesi zilizo ndani ya tanuru, **angahewa** yake, hubadilisha jinsi glaze zinavyotokea. **Oksidesheni** inamaanisha oksijeni nyingi. "Tanuru za umeme ni sawa na uchomaji wa oksidesheni," Digitalfire inasema, na glaze za oksidesheni kwa kawaida ni angavu zaidi kuliko za upunguzaji, hasa kwenye joto la chini. Kwenye oksidesheni, shaba hutoa kijani na samawati-kijani, na chuma hutoa kahawia, rangi ya ngozi na nyekundu. Tanuru ya umeme yenye uingizaji hewa hafifu iliyojaa vyombo vinavyotoa gesi inaweza kuwa na angahewa isiyoegemea upande wowote kuliko ilivyokusudiwa; mfereji wa hewa uliounganishwa moja kwa moja na tanuru husaidia.
+Gesi zilizo ndani ya tanuru, **angahewa** yake, hubadilisha jinsi glaze zinavyotokea. **Oksidesheni** inamaanisha oksijeni nyingi. “Tanuru za umeme ni sawa na uchomaji wa oksidesheni,” Digitalfire inasema, na glaze za oksidesheni kwa kawaida ni angavu zaidi kuliko za upunguzaji, hasa kwenye joto la chini. Kwenye oksidesheni, shaba hutoa kijani na samawati-kijani, na chuma hutoa kahawia, rangi ya ngozi na nyekundu. Tanuru ya umeme yenye uingizaji hewa hafifu iliyojaa vyombo vinavyotoa gesi inaweza kuwa na angahewa isiyoegemea upande wowote kuliko ilivyokusudiwa; mfereji wa hewa uliounganishwa moja kwa moja na tanuru husaidia.
 
-**Upunguzaji (reduction)** hupunguza oksijeni kwa makusudi, kwa kawaida kwenye tanuru ya gesi, kuni au maalum. Shaba hugeuka nyekundu, na chuma huwa flux yenye nguvu zaidi na hutoa **celadon** (bluu-kijani hadi kijivu-kijani, kutoka takriban ½–2% ya chuma) na **tenmoku** (temmoku: kahawia-nyeusi, takriban 5–6% ya chuma). Glazy inasema celadon na nyekundu za shaba "hutegemea upunguzaji". Udongo pia hubadilika: katika ulinganisho mmoja wa Digitalfire, udongo wa stoneware ulichomwa ukawa wa kijivu kwenye upunguzaji na wa manjano kidogo kwenye oksidesheni. Silikoni kabaidi kwenye glaze inaweza kutengeneza maeneo madogo ya upunguzaji hata kwenye tanuru ya umeme. Kwa upunguzaji kuanzia koni 010 hadi koni 3, Orton inapendekeza koni zake zisizo na chuma.
+**Upunguzaji (reduction)** hupunguza oksijeni kwa makusudi, kwa kawaida kwenye tanuru ya gesi, kuni au maalum. Shaba hugeuka nyekundu, na chuma huwa flux yenye nguvu zaidi na hutoa **celadon** (bluu-kijani hadi kijivu-kijani, kutoka takriban ½–2% ya chuma) na **tenmoku** (temmoku: kahawia-nyeusi, takriban 5–6% ya chuma). Glazy inasema celadon na nyekundu za shaba “hutegemea upunguzaji”. Udongo pia hubadilika: katika ulinganisho mmoja wa Digitalfire, udongo wa stoneware ulichomwa ukawa wa kijivu kwenye upunguzaji na wa manjano kidogo kwenye oksidesheni. Silikoni kabaidi kwenye glaze inaweza kutengeneza maeneo madogo ya upunguzaji hata kwenye tanuru ya umeme. Kwa upunguzaji kuanzia koni 010 hadi koni 3, Orton inapendekeza koni zake zisizo na chuma.
 
 > [!NOTE]
 > Tarajia kichocheo kilichoandikwa kwa tanuru ya gesi ya upunguzaji kutoka tofauti kwenye tanuru ya umeme: celadon au nyekundu ya shaba inayotegemea upunguzaji haitaonekana sawa kwenye oksidesheni. Angalia angahewa gani kichocheo kilitengenezwa kwa ajili yake, na andika yako mwenyewe, pamoja na koni, kwenye maelezo ya kichocheo ndani ya Glazecalc.

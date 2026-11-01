@@ -5,23 +5,23 @@ lead: Jinsi ya kuzuia vumbi la glaze lisiingie kwenye mapafu yako na moshi wa ta
 
 ## Hatari kuu: vumbi {#the-main-hazard}
 
-Hatari kuu ya muda mrefu katika kazi ya glaze ni vumbi, hasa **silika fuwele inayovutwa kwenye mapafu**: chembe za quartz au cristobalite (maumbo ya fuwele ya silika) ndogo kiasi cha kufika ndani kabisa ya mapafu. Silika fuwele inaweza kufikia takriban 10 hadi 60% ya uzito mkavu wa glaze, na udongo wa mfinyanzi wa aina nyingi (isipokuwa kaolini) na feldspar nyingi pia zina quartz laini. Health and Safety Executive (HSE) ya Uingereza inasema vumbi hili "ni laini sana na halionekani katika mwanga wa kawaida", kwa hiyo chumba kinachoonekana safi si uthibitisho kwamba hewa yake ni safi.
+Hatari kuu ya muda mrefu katika kazi ya glaze ni vumbi, hasa **silika fuwele inayovutwa kwenye mapafu**: chembe za quartz au cristobalite (maumbo ya fuwele ya silika) ndogo kiasi cha kufika ndani kabisa ya mapafu. Silika fuwele inaweza kufikia takriban 10 hadi 60% ya uzito mkavu wa glaze, na udongo wa mfinyanzi wa aina nyingi (isipokuwa kaolini) na feldspar nyingi pia zina quartz laini. Health and Safety Executive (HSE) ya Uingereza inasema vumbi hili “ni laini sana na halionekani katika mwanga wa kawaida”, kwa hiyo chumba kinachoonekana safi si uthibitisho kwamba hewa yake ni safi.
 
-Likivutwa kwa muda mrefu, linaweza kusababisha **silikosisi**, ugonjwa wa mapafu ambao HSE inaueleza kuwa "mbaya na usioweza kurekebishwa" na unaoweza "kusababisha ulemavu wa kudumu na kifo cha mapema". Linaweza pia kusababisha **COPD** (ugonjwa sugu wa kuziba kwa njia za hewa: mkamba wa muda mrefu na emfisema), ambao uvutaji wa sigara huufanya kuwa mbaya zaidi. IARC, shirika la saratani la Shirika la Afya Duniani, linaweka silika fuwele inayovutwa katika Kundi 1, "husababisha saratani kwa binadamu".
+Likivutwa kwa muda mrefu, linaweza kusababisha **silikosisi**, ugonjwa wa mapafu ambao HSE inaueleza kuwa “mbaya na usioweza kurekebishwa” na unaoweza “kusababisha ulemavu wa kudumu na kifo cha mapema”. Linaweza pia kusababisha **COPD** (ugonjwa sugu wa kuziba kwa njia za hewa: mkamba wa muda mrefu na emfisema), ambao uvutaji wa sigara huufanya kuwa mbaya zaidi. IARC, shirika la saratani la Shirika la Afya Duniani, linaweka silika fuwele inayovutwa katika Kundi 1, “husababisha saratani kwa binadamu”.
 
 Silika haigeuki kuwa moshi ndani ya tanuru, na glaze iliyo majimaji si hatari ya kuvutwa isipokuwa ikinyunyiziwa: ukungu wa kunyunyizia hubeba silika na hukauka kuwa vumbi (tazama Kunyunyizia, hapa chini). Nyakati za kuwa mwangalifu ni wakati malighafi ni kavu: kufungua mifuko, kupima, kukoroga unga ndani ya maji, na kusafisha matone, glaze iliyonyunyiziwa nje ya chombo na tope mara vinapokuwa vimekauka na kurudi kuwa vumbi.
 
 ### Viwango vya juu vya kuvuta
 
-Sheria za mahali pa kazi huweka **kiwango cha juu cha kuvuta**: kiasi kikubwa zaidi cha silika ambacho mfanyakazi anaruhusiwa kuvuta, kwa wastani wa siku ya saa 8, kwa miligramu (mg) au mikrogramu (µg, elfu moja ya miligramu) kwa mita moja ya ujazo ya hewa.
+Sheria za mahali pa kazi huweka **kiwango cha juu cha kuvuta**: kiasi kikubwa zaidi cha silika ambacho mfanyakazi anaruhusiwa kuvuta, kwa wastani wa siku ya saa 8, kwa miligramu (mg) au mikrogramu (µg, sehemu ya elfu moja ya miligramu) kwa mita moja ya ujazo ya hewa.
 
 Table: Viwango vya mahali pa kazi kwa silika fuwele inayovutwa kwenye mapafu (wastani wa saa 8)
 Label: Viwango vya juu vya silika
 
 | Eneo           |               Kiwango | Maelezo                                                                                               |
 | -------------- | --------------------: | ----------------------------------------------------------------------------------------------------- |
-| Marekani       | 0.05 mg/m³ (50 µg/m³) | Kiwango cha OSHA. Waajiri lazima waanze kuchukua hatua kwenye 25 µg/m³, "kiwango cha kuchukua hatua". |
-| Uingereza      |             0.1 mg/m³ | Kuvuta lazima pia kuwekwe "chini kadiri inavyowezekana kwa busara".                                   |
+| Marekani       | 0.05 mg/m³ (50 µg/m³) | Kiwango cha OSHA. Waajiri lazima waanze kuchukua hatua kwenye 25 µg/m³, “kiwango cha kuchukua hatua”. |
+| Uingereza      |             0.1 mg/m³ | Kuvuta lazima pia kuwekwe “chini kadiri inavyowezekana kwa busara”.                                   |
 | Umoja wa Ulaya |             0.1 mg/m³ | Kiwango cha lazima (Maagizo 2017/2398). Baadhi ya nchi wanachama huweka viwango vya chini zaidi.      |
 | Australia      |            0.05 mg/m³ | Tangu Julai 2020. Mnamo Juni 2026, mawaziri wengi hawakuunga mkono kukishusha hadi 0.025.             |
 | New Zealand    |           0.025 mg/m³ | Tangu 2023. Viwango vya WorkSafe ni mwongozo, si viwango vya kisheria.                                |
@@ -43,19 +43,19 @@ Kinga kubwa zaidi hutokana na tabia, si vifaa. Ushauri wa HSE kwa viwanda vya uf
 
 ### Epuka unga pale unapoweza
 
-- **Nunua glaze iliyokwisha changanywa na maji** inapofaa kazi yako. Pendekezo la kwanza la HSE ni "Nunua glaze iliyo tayari kutumika, inapowezekana", au katika umbo la chembechembe au tope.
-- **Chagua vichocheo salama zaidi.** HSE inapendekeza "glaze zenye silika fuwele kidogo zaidi". Digitalfire inapendekeza **frit** (kioo kilichotengenezwa kiwandani na kusagwa kuwa unga, ambacho huyeyuka kwa kiasi kidogo sana kuliko malighafi ghafi) badala ya bariamu kaboneti ghafi, na **stain** (rangi ya kauri iliyotengenezwa kiwandani) badala ya kiasi kikubwa cha manganese, kobalti au nikeli kwa rangi nyeusi.
+- **Nunua glaze iliyokwisha changanywa na maji** inapofaa kazi yako. Pendekezo la kwanza la HSE ni “Nunua glaze iliyo tayari kutumika, inapowezekana”, au katika umbo la chembechembe au tope.
+- **Chagua vichocheo salama zaidi.** HSE inapendekeza “glaze zenye silika fuwele kidogo zaidi”. Digitalfire inapendekeza **frit** (kioo kilichotengenezwa kiwandani na kusagwa kuwa unga, ambacho huyeyuka kwa kiasi kidogo sana kuliko malighafi ghafi) badala ya bariamu kaboneti ghafi, na **stain** (rangi ya kauri iliyotengenezwa kiwandani) badala ya kiasi kikubwa cha manganese, kobalti au nikeli kwa rangi nyeusi.
 
 ### Unapotumia unga
 
-- **Chota kwa upole.** HSE inasema "Mimina/chota kwa upole kutoka kwenye mifuko" na epuka vyombo vikubwa, virefu, ili vumbi lisianguke umbali mrefu.
+- **Chota kwa upole.** HSE inasema “Mimina/chota kwa upole kutoka kwenye mifuko” na epuka vyombo vikubwa, virefu, ili vumbi lisianguke umbali mrefu.
 - **Funika vifuniko** kila wakati chombo hakitumiki, hata kati ya mizani na ndoo.
 - **Fanya kazi mbali na upepo.** Pima mbali na milango, madirisha na njia za kupita, na usiruhusu watu wengine kuingia chumbani.
 - **Ongeza unga kwenye maji.** Tunapendekeza utie maji ndooni kwanza kisha uongeze unga kwa upole, badala ya kumwaga maji juu ya rundo kavu. Huu ni utaratibu wa kawaida, si sheria kutoka kwenye vyanzo.
 - **Koroga kwa kifaa cha kukorogea,** si kwa mikono yako, na vaa glavu.
-- **Iweke majimaji.** Safisha mamwagiko yaliyo majimaji "ili yasikauke", na weka mabaki yaliyo majimaji katika vyombo visivyopitisha hewa.
+- **Iweke majimaji.** Safisha mamwagiko yaliyo majimaji “ili yasikauke”, na weka mabaki yaliyo majimaji katika vyombo visivyopitisha hewa.
 - **Jihadhari na mifuko.** Magunia hubeba vumbi kwa nje. Kunja yaliyo matupu kwa upole na uyatie ndani ya mfuko kabla ya kuyatupa.
-- **Hifadhi unga** ukiwa umefunikwa, juu ya sakafu na mbali na mahali watu wanapopita.
+- **Hifadhi unga** ukiwa umefunikwa, usiguse sakafu, na mbali na mahali watu wanapopita.
 
 ### Mpangilio wa busara wa kuchagua
 
@@ -84,9 +84,9 @@ Daraja la juu huchuja sehemu kubwa zaidi ya chembe laini. Vyanzo havikubaliani j
 
 ### Kukaa na kuziba vizuri
 
-Barakoa inayovuja huingiza vumbi kuzunguka kingo zake, vyovyote liwavyo daraja lake. HSE inaonya kwamba ndevu fupi na ndevu "hufanya iwe haiwezekani kupata kuziba kuzuri".
+Barakoa inayovuja huingiza vumbi kuzunguka kingo zake, vyovyote liwavyo daraja lake. HSE inaonya kwamba ndevu zinazoanza kuota na ndevu ndefu “hufanya iwe haiwezekani kupata kuziba kuzuri”.
 
-- **Nyoa muda mfupi kabla ya kufanya kazi.** Miongozo inatofautiana juu ya muda gani "kunyolewa kabisa" kunapaswa kuwa karibu. Mtengenezaji mmoja wa Uingereza, akinukuu HSE, anasema umenyoa ndani ya saa 8 kabla ya kuanza kazi. Kiwango cha Australia na New Zealand cha kupima ukaaji wa barakoa kinataka kunyoa kabla ya kipimo, "ikiwezekana ndani ya saa 12". Kunyoa muda mfupi kabla ya kufanya kazi kunatimiza yote mawili.
+- **Nyoa muda mfupi kabla ya kufanya kazi.** Miongozo inatofautiana juu ya muda gani “kunyolewa kabisa” kunapaswa kuwa karibu. Mtengenezaji mmoja wa Uingereza, akinukuu HSE, anasema umenyoa ndani ya saa 8 kabla ya kuanza kazi. Kiwango cha Australia na New Zealand cha kupima ukaaji wa barakoa kinataka kunyoa kabla ya kipimo, “ikiwezekana ndani ya saa 12”. Kunyoa muda mfupi kabla ya kufanya kazi kunatimiza yote mawili.
 - **Ukibaki na ndevu,** **barakoa ya kupumua yenye feni** isiyobana (PAPR: kofia au helmeti yenye feni inayoleta hewa iliyochujwa) haihitaji kuziba usoni.
 - **Pata saizi sahihi.** Kukaa vibaya ni sababu kubwa ya kuvuja. Mahali pa kazi hutumia **kipimo cha ukaaji**, ukaguzi kwamba barakoa fulani inaziba kwenye uso fulani. Nyumbani, tunapendekeza ufuate maelekezo ya mtengenezaji ya kukagua kuziba kila unapoivaa.
 
@@ -95,19 +95,19 @@ Barakoa inayovuja huingiza vumbi kuzunguka kingo zake, vyovyote liwavyo daraja l
 
 ### Wakati wa kuivaa
 
-HSE inasema barakoa ya kupumua "kwa kawaida haihitajiki" pale kupima na kuchanganya kunapofanyika ndani ya kizimba chenye kivuta hewa, lakini "huenda ikahitajika kwa matengenezo na usafishaji". Studio nyingi za nyumbani hazina kizimba, kwa hiyo tunapendekeza uvae moja (angalau N95, FFP2 au P2; P100, FFP3 au P3 ni bora zaidi) kila unapo:
+HSE inasema barakoa ya kupumua “kwa kawaida haihitajiki” pale kupima na kuchanganya kunapofanyika ndani ya kizimba chenye kivuta hewa, lakini “huenda ikahitajika kwa matengenezo na usafishaji”. Studio nyingi za nyumbani hazina kizimba, kwa hiyo tunapendekeza uvae moja (angalau N95, FFP2 au P2; P100, FFP3 au P3 ni bora zaidi) kila unapofanya mojawapo ya haya:
 
-- fungua mifuko au kumimina unga;
-- pima unga na kuukoroga ndani ya maji;
-- kwangua, sugua kwa msasa au saga glaze iliyokauka au bisque;
-- fanya usafishaji wowote mkavu, au kumwaga kisafishaji cha kufyonza vumbi;
-- nyunyizia glaze (ndani ya kibanda: tazama hapa chini).
+- kufungua mifuko au kumimina unga;
+- kupima unga na kuukoroga ndani ya maji;
+- kukwangua, kusugua kwa msasa au kusaga glaze iliyokauka au bisque;
+- kufanya usafishaji wowote mkavu, au kumwaga kisafishaji cha kufyonza vumbi;
+- kunyunyizia glaze (ndani ya kibanda: tazama hapa chini).
 
 ### Kisichokuwa barakoa ya kupumua
 
-- Barakoa za upasuaji, barakoa za kitambaa na barakoa za "vumbi la kero" zisizo na alama ya NIOSH, EN 149 au AS/NZS 1716. Sisi tusingezitegemea kwa vumbi la glaze.
-- Barakoa ya kupumua ya vumbi "haitakulinda dhidi ya gesi, mvuke" (OSHA), kwa hiyo haisaidii chochote dhidi ya moshi wa tanuru.
-- Itunze yako: OSHA inaeleza kwamba barakoa ya kupumua iliyo chafu au inayotumiwa vibaya "inaweza kuwa hatari". Ihifadhi ikiwa safi, mbali na nguo za kazi zenye vumbi.
+- Barakoa za upasuaji, barakoa za kitambaa na barakoa za “vumbi la kero” zisizo na alama ya NIOSH, EN 149 au AS/NZS 1716. Sisi tusingezitegemea kwa vumbi la glaze.
+- Barakoa ya kupumua ya vumbi “haitakulinda dhidi ya gesi, mvuke” (OSHA), kwa hiyo haisaidii chochote dhidi ya moshi wa tanuru.
+- Itunze yako: OSHA inaeleza kwamba barakoa ya kupumua iliyo chafu au inayotumiwa vibaya “inaweza kuwa hatari”. Ihifadhi ikiwa safi, mbali na nguo za kazi zenye vumbi.
 
 ## Usafishaji, nguo na mikono {#cleaning}
 
@@ -117,12 +117,12 @@ Vumbi linalotua kwenye sakafu, meza za kazi na nguo hurudi hewani kila linapogus
 
 - **Piga deki na futa kwa maji.** Chuo Kikuu cha Utah kinapendekeza kupiga deki sakafu na sehemu za kazi kwa maji kila siku, na HSE inataka mahali pa kazi paoshwe mwisho wa kila siku. Nyumbani, tunapendekeza ufute na upige deki baada ya kila kipindi cha kuchanganya.
 - **Kamwe usifagie kwa ukavu, usipige brashi kwa ukavu wala usitumie hewa iliyobanwa.** OSHA inakataza haya pale yanapoongeza kiasi cha kuvuta, na HSE inasema kamwe usipangue au kupuliza vumbi kutoka kwenye ngozi au nguo.
-- **Tumia kisafishaji cha kufyonza vumbi kilichotengenezwa kwa ajili ya vumbi laini hatari tu:** **HEPA** nchini Marekani (kichujio kinachonasa angalau 99.97% ya chembe zenye upana wa 0.3 µm), au angalau **dust Class M** nchini Uingereza na EU. Kwingineko, tafuta kiwango kinacholingana. Visafishaji vya kawaida vya karakana na vya nyumbani havijapimwa hivi, na sisi tusingevitumia, kwa kuwa vumbi laini linaweza kupita na kutoka kupitia tundu la kutolea hewa. Vaa barakoa yako ya kupumua unapokimwaga.
+- **Tumia tu kisafishaji cha kufyonza vumbi kilichotengenezwa kwa ajili ya vumbi laini hatari:** **HEPA** nchini Marekani (kichujio kinachonasa angalau 99.97% ya chembe zenye upana wa 0.3 µm), au angalau **dust Class M** nchini Uingereza na EU. Kwingineko, tafuta kiwango kinacholingana. Visafishaji vya kawaida vya karakana na vya nyumbani havijapimwa hivi, na sisi tusingevitumia, kwa kuwa vumbi laini linaweza kupita na kutoka kupitia tundu la kutolea hewa. Vaa barakoa yako ya kupumua unapokimwaga.
 
 ### Nguo, chakula na mikono
 
 - **Vaa nguo za studio pekee** za kitambaa kilichofumwa kwa karibu kisichonasa vumbi, na zifue mara kwa mara (Utah inapendekeza kila wiki), kando na nguo nyingine. HSE inaeleza kwamba nguo zenye vumbi huendelea kukuweka hatarini baada ya kazi kwisha, kwa hiyo tunapendekeza ubadilishe nguo kabla ya kuingia sehemu nyingine za nyumba.
-- **Usile, usinywe wala usivute sigara studioni.** Kama Digitalfire inavyosema, "mtu hapaswi kuchanganya bariamu kaboneti na sukari ya mezani anapotayarisha kahawa". Weka lebo kwenye kila chombo.
+- **Usile, usinywe wala usivute sigara studioni.** Kama Digitalfire inavyosema, “mtu hapaswi kuchanganya bariamu kaboneti na sukari ya mezani anapotayarisha kahawa”. Weka lebo kwenye kila chombo.
 - **Nawa mikono** kabla ya kula, kunywa, kuvuta sigara au kutumia choo, na safisha chini ya kucha zako. Tumia maji ya uvuguvugu na sabuni laini badala ya kisafishaji kinachokwaruza.
 
 Kwa kuweka vumbi na malighafi mbali na watoto na wanyama vipenzi, tazama [Usiitie familia yako sumu](/guides/home-safety).
@@ -142,9 +142,9 @@ Hakuna chanzo kinachotoa takwimu za mtiririko wa hewa kwa kofia ya mpenda ufinya
 
 ### Kunyunyizia
 
-HSE inaonya kwamba kunyunyizia "kunaweza kutoa ukungu wenye RCS" (silika fuwele inayovutwa kwenye mapafu), na kwamba "ukungu wa glaze hukauka haraka na kugeuka vumbi". Kila chanzo tulichopata kinasema unyunyizie ndani ya kibanda chenye kivuta hewa tu.
+HSE inaonya kwamba kunyunyizia “kunaweza kutoa ukungu wenye RCS” (silika fuwele inayovutwa kwenye mapafu), na kwamba “ukungu wa glaze hukauka haraka na kugeuka vumbi”. Kila chanzo tulichopata kinasema unyunyizie ndani ya kibanda chenye kivuta hewa tu.
 
-- HSE inataka kizimba chenye kivuta hewa na, "inapowezekana, kibanda chenye ukuta wa maji", kinachonasa glaze inayonyunyiziwa nje ndani ya maji.
+- HSE inataka kizimba chenye kivuta hewa na, “inapowezekana, kibanda chenye ukuta wa maji”, kinachonasa glaze inayonyunyiziwa nje ndani ya maji.
 - Tumia meza inayozunguka ndani ya kibanda, vaa glavu za nitrile na barakoa ya kupumua, na safisha kibanda na kichujio chake kabla glaze iliyonyunyiziwa nje haijakauka.
 - Kupangusa bisque kwa brashi kabla ya kupaka glaze pia hutoa vumbi; tunapendekeza sifongo yenye unyevu badala yake.
 
@@ -155,16 +155,16 @@ HSE inaonya kwamba kunyunyizia "kunaweza kutoa ukungu wenye RCS" (silika fuwele 
 
 ### Kinachotoka wakati wa kuchoma
 
-Kila uchomaji hutoa moshi, hata kwa udongo wa mfinyanzi mtupu. Maji na kaboni dioksidi hutoka, pamoja na "kaboni monoksidi kidogo" kutokana na kuungua kwa vitu vya asili hai, na Dave Finkelnburg, akiandika katika Ceramics Monthly, anaita uwezekano wa kaboni monoksidi "hatari ya karibu zaidi". **Kaboni monoksidi** (CO) ni gesi inayonyima mwili oksijeni, ikisababisha uchovu, maumivu ya kichwa na kizunguzungu. Salfa katika ball clay na udongo wa stoneware huipa kuchoma bisque harufu yake ya mayai yaliyooza, na moshi wa salfa huunguza macho, pua na mapafu.
+Kila uchomaji hutoa moshi, hata kwa udongo wa mfinyanzi mtupu. Maji na kaboni dioksidi hutoka, pamoja na “kaboni monoksidi kidogo” kutokana na kuungua kwa vitu vya asili hai, na Dave Finkelnburg, akiandika katika Ceramics Monthly, anaita uwezekano wa kaboni monoksidi “hatari ya karibu zaidi”. **Kaboni monoksidi** (CO) ni gesi inayonyima mwili oksijeni, ikisababisha uchovu, maumivu ya kichwa na kizunguzungu. Salfa katika ball clay na udongo wa stoneware huipa kuchoma bisque harufu yake ya mayai yaliyooza, na moshi wa salfa huunguza macho, pua na mapafu.
 
-Malighafi za glaze huongeza zaidi. Baadhi ya oksidi za metali hutoa moshi, "hasa shaba, zinki, manganese", unaoweza kusababisha **homa ya moshi wa metali**, ugonjwa wenye kutetemeka kwa baridi na homa. Madini ya risasi (lead, Pb) ni "hatari hasa", kinasema Chuo Kikuu cha Utah, kwa sababu "hugeuka mvuke kwenye joto la chini kiasi": yakichomwa hadi joto la stoneware, "madini ya risasi yatageuka mvuke". Fluorspar, cryolite na lepidolite hutoa misombo ya florini. Hakuna aliyechapisha vipimo kutoka kwa matanuru ya wapenda ufinyanzi, kwa hiyo tunapendekeza utoe moshi katika kila uchomaji.
+Malighafi za glaze huongeza zaidi. Baadhi ya oksidi za metali hutoa moshi, “hasa shaba, zinki, manganese”, unaoweza kusababisha **homa ya moshi wa metali**, ugonjwa wenye kutetemeka kwa baridi na homa. Madini ya risasi (lead, Pb) ni “hatari hasa”, kinasema Chuo Kikuu cha Utah, kwa sababu “hugeuka mvuke kwenye joto la chini kiasi”: yakichomwa hadi joto la stoneware, “madini ya risasi yatageuka mvuke”. Fluorspar, cryolite na lepidolite hutoa misombo ya florini. Hakuna aliyechapisha vipimo kutoka kwa matanuru ya wapenda ufinyanzi, kwa hiyo tunapendekeza utoe moshi katika kila uchomaji.
 
 ### Vivuta moshi vya chini (downdraft)
 
 **Kivuta moshi cha chini** (downdraft vent) ni kifaa kidogo cha feni kinachofungwa kwenye tanuru. Huvuta hewa kidogo kutoka ndani ya chumba cha kuchomea, huichanganya na hewa ya chumba na kuipeleka nje kwa bomba, kikinasa moshi kabla haujafika chumbani. Mtengenezaji wa matanuru Skutt anasema watengenezaji wote wa matanuru wanapendekeza kimoja.
 
 - **Kinahitaji hewa ya kufidia.** EnviroVent 2 ya Skutt hutoa futi za ujazo 140 (takriban 4 m³) za hewa nje kila dakika, na kiasi hicho hicho lazima kirudi ndani.
-- **Huondoa "moshi hatari tu, si joto"** (Skutt), na kinapaswa kufanya kazi bila kutegemea mfumo wa jengo wa kupasha joto na kupoza.
+- **Huondoa “moshi hatari tu, si joto”** (Skutt), na kinapaswa kufanya kazi bila kutegemea mfumo wa jengo wa kupasha joto na kupoza.
 - **Peleka bomba lake nje,** mbali na madirisha, milango na matundu ya kuingiza hewa. Finkelnburg anapendekeza feni ya aina ya squirrel-cage (centrifugal), si feni ya pangaboi.
 - Baadhi ya kanuni za eneo zinataka kivuta moshi cha tanuru, kwa hiyo angalia za kwako.
 
@@ -173,9 +173,9 @@ Malighafi za glaze huongeza zaidi. Baadhi ya oksidi za metali hutoa moshi, "hasa
 ### Mahali pa kuweka tanuru
 
 - Tunapendekeza gereji, banda au chumba kilichotengwa kwa ajili ya tanuru badala ya sehemu ya kuishi, na ambacho unaweza kukifunga dhidi ya watoto na wanyama vipenzi, kama Skutt anavyoshauri.
-- **Nafasi.** Vyanzo vinatofautiana: Skutt anaweka angalau 18 in (46 cm) kutoka ukuta wowote au kitu **kinachoweza kuungua** (chochote kinachoweza kuwaka moto), wakati CIRMA, kampuni ya bima ya Connecticut, inapendekeza 3 ft (0.9 m) kutoka kitu chochote kinachoweza kuungua. Fuata mwongozo wa tanuru lako; ikiwa huna, acha 18 in kutoka kuta na 3 ft kutoka kitu chochote kinachoweza kuungua.
+- **Nafasi.** Vyanzo vinatofautiana: Skutt anaweka angalau inchi 18 (46 cm) kutoka ukuta wowote au kitu **kinachoweza kuungua** (chochote kinachoweza kuwaka moto), wakati CIRMA, kampuni ya bima ya Connecticut, inapendekeza futi 3 (0.9 m) kutoka kitu chochote kinachoweza kuungua. Fuata mwongozo wa tanuru lako; ikiwa huna, acha inchi 18 kutoka kuta na futi 3 kutoka kitu chochote kinachoweza kuungua.
 - **Sakafu.** Tumia sakafu isiyoweza kuungua kama saruji au vigae vya kauri, kamwe si mbao, zulia au vinyl. Weka mbao, karatasi na viyeyusho mbali na tanuru.
-- **Umeme.** CIRMA inapendekeza saketi maalum, bila waya wa kuongeza urefu wala vilinda mawimbi ya umeme, kuchomoa plagi kati ya uchomaji, na kizima moto ndani ya 25 ft (7.6 m).
+- **Umeme.** CIRMA inapendekeza saketi maalum, bila waya wa kuongeza urefu wala vilinda mawimbi ya umeme, kuchomoa plagi kati ya uchomaji, na kizima moto ndani ya futi 25 (7.6 m).
 - **Joto la chumba.** Skutt anasema uweke chumba chini ya {{38 °C; 100 °F}}, la sivyo kidhibiti kinaweza kuzima tanuru. Kwa kuwa kivuta moshi hakiondoi joto, chumba kidogo kinaweza kuhitaji feni pia. Usiache vichwa vya kunyunyizia maji ya kuzima moto na vitambuzi vya joto viwe moja kwa moja juu ya tanuru.
 - **Kengele ya kaboni monoksidi.** Hatukupata sheria inayotaka kengele kwa tanuru la umeme, lakini vitu vya asili hai vinavyoungua hutoa CO, kwa hiyo kengele katika chumba cha tanuru na vyumba vilivyo jirani ni hatua ya busara na ya bei nafuu (tazama [Usiitie familia yako sumu](/guides/home-safety)).
 
@@ -183,26 +183,26 @@ Raku hutoa moshi mwingi na CO nyingi; Utah inashauri ifanyike nje, mbali na matu
 
 ## Malighafi zinazohitaji uangalifu zaidi {#materials}
 
-Malighafi nyingi za glaze, zikiwemo silika, udongo wa mfinyanzi, feldspar na frit, kimsingi ni hatari ya vumbi, ambayo tabia zilizo hapo juu huidhibiti. Orodha fupi zaidi ni zenye sumu zenyewe, kwa kuvutwa, kumezwa au kugusa ngozi. Digitalfire inaongeza kwamba stain kwa ujumla ni salama zaidi sana kuliko oksidi ghafi, na kwamba "glaze zisizo na uwiano zinazotoa metali zenye sumu zinaweza kutengenezwa kutoka kwa malighafi yoyote": usalama kwa chakula unategemea kichocheo kizima, si kiambato kimoja.
+Malighafi nyingi za glaze, zikiwemo silika, udongo wa mfinyanzi, feldspar na frit, kimsingi ni hatari ya vumbi, ambayo tabia zilizo hapo juu huidhibiti. Orodha fupi zaidi ni zenye sumu zenyewe, kwa kuvutwa, kumezwa au kugusa ngozi. Digitalfire inaongeza kwamba stain kwa ujumla ni salama zaidi sana kuliko oksidi ghafi, na kwamba “glaze zisizo na uwiano zinazotoa metali zenye sumu zinaweza kutengenezwa kutoka kwa malighafi yoyote”: usalama kwa chakula unategemea kichocheo kizima, si kiambato kimoja.
 
-**Kundi la IARC** ni uainishaji wa saratani: Kundi 1 maana yake "husababisha saratani kwa binadamu", Kundi 2A "huenda husababisha saratani kwa binadamu", Kundi 2B "huenda ikawezekana kusababisha saratani kwa binadamu", na Kundi 3 "haiwezi kuainishwa kuhusu kusababisha saratani kwa binadamu", yaani ushahidi hautoshi kuamua upande wowote.
+**Kundi la IARC** ni uainishaji wa saratani: Kundi 1 maana yake “husababisha saratani kwa binadamu”, Kundi 2A “yaelekea husababisha saratani kwa binadamu”, Kundi 2B “huenda husababisha saratani kwa binadamu”, na Kundi 3 “haiwezi kuainishwa kuhusu kusababisha saratani kwa binadamu”, yaani ushahidi hautoshi kuamua upande wowote.
 
 Table: Malighafi za glaze zinazohitaji uangalifu wa ziada
 Label: Malighafi zinazohitaji uangalifu zaidi
 
 | Malighafi                                                             | Hatari                                                                                                                                                                                                                                                                           | Tahadhari                                                                                                                           |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Misombo ya madini ya risasi (lead, Pb) na frit zenye madini ya risasi | "Yenye sumu kali yakivutwa au kumezwa"; yakichomwa hadi joto la stoneware, madini ya risasi hugeuka mvuke.                                                                                                                                                                       | Epuka; Digitalfire inasema wataalamu tu. Chukulia kwamba glaze yoyote isiyo na lebo "lead-free" au "leadless" ina madini ya risasi. |
+| Misombo ya madini ya risasi (lead, Pb) na frit zenye madini ya risasi | “Yenye sumu kali yakivutwa au kumezwa”; yakichomwa hadi joto la stoneware, madini ya risasi hugeuka mvuke.                                                                                                                                                                       | Epuka; Digitalfire inasema wataalamu tu. Chukulia kwamba glaze yoyote isiyo na lebo “lead-free” au “leadless” ina madini ya risasi. |
 | Bariamu kaboneti                                                      | Haiyeyuki katika maji lakini huyeyuka katika asidi ya tumbo; huathiri moyo na misuli (mapigo ya moyo yasiyo ya kawaida, potasiamu kidogo).                                                                                                                                       | Frit ya bariamu au strontiamu pale kichocheo kinaporuhusu; barakoa ya kupumua; chombo chenye lebo.                                  |
 | Manganese dioksidi                                                    | Vumbi au moshi unaweza kusababisha **manganism**, ugonjwa wa mfumo wa neva unaofanana na ugonjwa wa Parkinson, kwa kawaida baada ya mwaka 1 hadi 3 wa kuvuta. Moshi unaweza kusababisha homa ya moshi wa metali.                                                                 | Stain nyeusi kwa asilimia ndogo badala yake; toa moshi wa tanuru.                                                                   |
-| Potasiamu dikromati na oksidi ya kromu                                | Kromiamu(VI), kama ilivyo katika dikromati, ni IARC Kundi 1. Orodha hiyo haihusu kromiamu(III), kama ilivyo katika oksidi ya kromu.                                                                                                                                              | Epuka dikromati. Tunachukulia oksidi ya kromu kuwa hatari kidogo sana, lakini punguza vumbi lake.                                   |
+| Potasiamu dikromati na oksidi ya kromu                                | Kromiamu(VI), kama ilivyo katika dikromati, ni IARC Kundi 1. Orodha hiyo haihusu kromiamu(III), kama ilivyo katika oksidi ya kromu.                                                                                                                                              | Epuka dikromati. Tunachukulia oksidi ya kromu kuwa na hatari ndogo sana kuliko dikromati, lakini punguza vumbi lake.                |
 | Kobalti                                                               | Chumvi za kobalti(II) zinazoyeyuka IARC 2A; kobalti(II) oksidi 2B; Co₃O₄ nyeusi Kundi 3. Kobalti kaboneti imeainishwa katika EU kuwa inaweza kusababisha saratani ikivutwa, inaweza kuharibu uwezo wa kuzaa na inashukiwa kusababisha kasoro za kijenetiki (H350i, H360F, H341). | Punguza vumbi; stain kwa rangi nyeusi.                                                                                              |
 | Misombo ya nikeli                                                     | Miongoni mwa vitu vinavyojulikana au vinavyoelekea kusababisha saratani kwa binadamu kwenye orodha ya Chuo Kikuu cha Utah.                                                                                                                                                       | Stain badala ya asilimia kubwa.                                                                                                     |
-| Kadimiamu na seleniamu, ghafi au ndani ya stain                       | Misombo ya kadimiamu ni miongoni mwa vitu vinavyojulikana au vinavyoelekea kusababisha saratani kwa binadamu kwenye orodha ya Utah.                                                                                                                                              | "Na wataalamu tu" (Digitalfire); soma SDS ya stain yoyote.                                                                          |
-| Antimoni na vanadiamu                                                 | Antimoni ya valensi tatu (kama ilivyo katika antimoni trioksidi) IARC 2A; vanadiamu "yenye sumu kali ikivutwa".                                                                                                                                                                  | Vanadiamu kwa wataalamu tu; punguza vumbi la antimoni.                                                                              |
-| Shaba na zinki                                                        | Moshi wa tanuru unaweza kusababisha homa ya moshi wa metali; zinki oksidi ghafi "kwa ujumla haichukuliwi kuwa hatari".                                                                                                                                                           | Toa moshi wa tanuru.                                                                                                                |
-| Lithiamu kaboneti                                                     | "Yenye sumu kali ikivutwa". Kamati ya wataalamu ya EU ilihitimisha kwamba inaweza kudhuru uwezo wa kuzaa, mtoto aliye tumboni na watoto wanaonyonyeshwa; kupitishwa rasmi hakukuwa kumethibitishwa tulipoangalia.                                                                | Glavu na barakoa ya kupumua; iweke mbali na watoto. Tunapendekeza uangalifu wa ziada wakati wa ujauzito na wa kunyonyesha.          |
-| Boraksi na asidi ya boriki                                            | Zimeainishwa katika EU kuwa "zinaweza kuharibu uwezo wa kuzaa; zinaweza kumdhuru mtoto aliye tumboni".                                                                                                                                                                           | Glavu; boroni kutoka kwa frit pale unapoweza.                                                                                       |
+| Kadimiamu na seleniamu, ghafi au ndani ya stain                       | Misombo ya kadimiamu ni miongoni mwa vitu vinavyojulikana au vinavyoelekea kusababisha saratani kwa binadamu kwenye orodha ya Utah.                                                                                                                                              | “Na wataalamu tu” (Digitalfire); soma SDS ya stain yoyote.                                                                          |
+| Antimoni na vanadiamu                                                 | Antimoni ya valensi tatu (kama ilivyo katika antimoni trioksidi) IARC 2A; vanadiamu “yenye sumu kali ikivutwa”.                                                                                                                                                                  | Vanadiamu kwa wataalamu tu; punguza vumbi la antimoni.                                                                              |
+| Shaba na zinki                                                        | Moshi wa tanuru unaweza kusababisha homa ya moshi wa metali; zinki oksidi ghafi “kwa ujumla haichukuliwi kuwa hatari”.                                                                                                                                                           | Toa moshi wa tanuru.                                                                                                                |
+| Lithiamu kaboneti                                                     | “Yenye sumu kali ikivutwa”. Kamati ya wataalamu ya EU ilihitimisha kwamba inaweza kudhuru uwezo wa kuzaa, mtoto aliye tumboni na watoto wanaonyonyeshwa; kupitishwa rasmi hakukuwa kumethibitishwa tulipoangalia.                                                                | Glavu na barakoa ya kupumua; iweke mbali na watoto. Tunapendekeza uangalifu wa ziada wakati wa ujauzito na wa kunyonyesha.          |
+| Boraksi na asidi ya boriki                                            | Zimeainishwa katika EU kuwa “zinaweza kuharibu uwezo wa kuzaa; zinaweza kumdhuru mtoto aliye tumboni”.                                                                                                                                                                           | Glavu; boroni kutoka kwa frit pale unapoweza.                                                                                       |
 | Soda ash, potash, feldspar za alkali                                  | Huwasha ngozi.                                                                                                                                                                                                                                                                   | Glavu.                                                                                                                              |
 | Fluorspar, cryolite, lepidolite                                       | Hutoa gesi za florini wakati wa kuchoma; fluorspar pia huwasha ngozi.                                                                                                                                                                                                            | Toa moshi wa tanuru nje; glavu.                                                                                                     |
 | Talki                                                                 | IARC 2A tangu Julai 2024; talki iliyochafuliwa na asbestosi huhesabiwa kuwa asbestosi, Kundi 1.                                                                                                                                                                                  | Talki ya vipande bapa (si ya nyuzinyuzi), isiyo na asbestosi; angalia SDS yake.                                                     |
@@ -216,27 +216,27 @@ Boraksi, asidi ya boriki, soda ash na potash huyeyuka katika maji, kwa hiyo tuna
 
 ### Ngozi
 
-- **Vaa glavu** kwa glaze iliyo majimaji au kavu; Utah inasema "lazima zivaliwe". HSE inataja nitrile kwa kunyunyizia. Hakuna chanzo kilicholinganisha malighafi za glavu, kwa hiyo tunapendekeza nitrile kwa kazi zote za glaze.
-- **Krimu za kinga si glavu.** HSE: "'Krimu za kinga' si 'glavu za majimaji'".
+- **Vaa glavu** kwa glaze iliyo majimaji au kavu; Utah inasema “lazima zivaliwe”. HSE inataja nitrile kwa kunyunyizia. Hakuna chanzo kilicholinganisha malighafi za glavu, kwa hiyo tunapendekeza nitrile kwa kazi zote za glaze.
+- **Krimu za kinga si glavu.** HSE: “'Krimu za kinga' si 'glavu za majimaji'”.
 - Vumbi la silika na kazi ya majimaji vyote husababisha **ugonjwa wa ngozi wa mguso** (ngozi nyekundu, yenye maumivu, iliyopasuka), na ngozi iliyopasuka huingiza malighafi. Nawa kwa maji ya uvuguvugu na sabuni laini, na tumia krimu ya baada ya kazi.
 - **Funika vidonda.** Misombo ya bariamu, kwa mfano, haidhaniwi kupita kwenye ngozi isiyo na jeraha, lakini inaweza kupita kwenye ngozi iliyochubuka.
 
 ### Macho
 
 - Vaa miwani ya usalama unaposaga vyombo vilivyopakwa glaze. Tunapendekeza pia uivae unapomimina unga.
-- **Kuangalia ndani ya tanuru la moto.** Matanuru hutoa mionzi ya **infrared** (joto usiloweza kuliona) ambayo "inaweza kusababisha mtoto wa jicho". Viwango vya giza vinavyopendekezwa kwa miwani yenye kiwango cha IR vinatofautiana: 1.7 hadi 3.0 (Chuo Kikuu cha Utah) na 2.0 hadi 5.0 (Chuo Kikuu cha Calgary). Kiwango cha giza 3 kiko ndani ya vyote viwili; chagua giza zaidi madoa yakitokea katika uoni wako.
+- **Kuangalia ndani ya tanuru la moto.** Matanuru hutoa mionzi ya **infrared** (joto usiloweza kuliona) ambayo “inaweza kusababisha mtoto wa jicho”. Viwango vya giza vinavyopendekezwa kwa miwani yenye kiwango cha IR vinatofautiana: 1.7 hadi 3.0 (Chuo Kikuu cha Utah) na 2.0 hadi 5.0 (Chuo Kikuu cha Calgary). Kiwango cha giza 3 kiko ndani ya vyote viwili; chagua giza zaidi madoa yakitokea katika uoni wako.
 
 ## Kusoma karatasi ya data ya usalama {#safety-data-sheets}
 
 **Karatasi ya data ya usalama** (SDS; za zamani zinasema MSDS) ni hati ya msambazaji kuhusu viambato, hatari na ushughulikiaji wa bidhaa. Kila malighafi na kila glaze ya kibiashara inapaswa kuwa nayo; tafuta kwenye ukurasa wa bidhaa au muulize msambazaji. Ina sehemu 16, na mbili ni muhimu zaidi:
 
-- **Sehemu ya 2, Utambuzi wa hatari:** uainishaji, **neno la ishara** kama "Hatari", **picha za tahadhari** (alama ndogo za onyo) na kauli za hatari.
+- **Sehemu ya 2, Utambuzi wa hatari:** uainishaji, **neno la ishara** kama “Hatari”, **picha za tahadhari** (alama ndogo za onyo) na kauli za hatari.
 - **Sehemu ya 8, Udhibiti wa kuvuta na kinga binafsi:** viwango vya juu vya kuvuta, **udhibiti wa kihandisi** unaohitajika (upitishaji hewa na kivuta hewa) na vifaa vya kinga vya kuvaa.
 
-Picha za tahadhari na kauli za hatari zinatoka kwa **GHS** (Globally Harmonized System), mfumo wa kimataifa wa kuweka lebo kwenye kemikali. Boraksi, kwa mfano, ina picha ya tahadhari ya hatari kwa afya GHS08, neno la ishara "Hatari" na kauli ya hatari H360FD, "inaweza kuharibu uwezo wa kuzaa; inaweza kumdhuru mtoto aliye tumboni". Kwa kadiri tunavyojua, SDS nchini Uingereza, EU, Australia na New Zealand zinatumia sehemu 16 zilezile.
+Picha za tahadhari na kauli za hatari zinatoka kwa **GHS** (Globally Harmonized System), mfumo wa kimataifa wa kuweka lebo kwenye kemikali. Boraksi, kwa mfano, ina picha ya tahadhari ya hatari kwa afya GHS08, neno la ishara “Hatari” na kauli ya hatari H360FD, “inaweza kuharibu uwezo wa kuzaa; inaweza kumdhuru mtoto aliye tumboni”. Kwa kadiri tunavyojua, SDS nchini Uingereza, EU, Australia na New Zealand zinatumia sehemu 16 zilezile.
 
-- **Angalia umbo la silika.** HSE inaonya kwamba silika fuwele "inaweza kuwekewa lebo kimakosa kuwa 'silika isiyo fuwele'".
-- **"Haijaainishwa" si "haina madhara".** Glaze iliyokamilika isiyo na picha za tahadhari bado hutoa vumbi la silika ikiwa kavu.
+- **Angalia umbo la silika.** HSE inaonya kwamba silika fuwele “inaweza kuwekewa lebo kimakosa kuwa 'silika isiyo fuwele'”.
+- **“Haijaainishwa” si “haina madhara”.** Glaze iliyokamilika isiyo na picha za tahadhari bado hutoa vumbi la silika ikiwa kavu.
 
 > [!NOTE]
 > Mwongozo huu unakusanya ushauri uliochapishwa, lakini si mbadala wa karatasi ya data ya usalama ya malighafi, mwongozo wa tanuru lako au sheria za eneo lako. Pale zinapotofautiana na unachosoma hapa, zifuate.
