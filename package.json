@@ -65,7 +65,7 @@
     "intl-messageformat": "12.1.4",
     "jsonwebtoken": "9.0.3",
     "mongoose": "9.11.3",
-    "nodemailer": "10.2.0",
+    "nodemailer": "10.3.1",
     "oidc-provider": "9.12.2",
     "qrcode-generator": "2.0.4",
     "zod": "4.6.7"
