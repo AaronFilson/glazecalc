@@ -248,6 +248,22 @@ docs/translations/pa.md and or.md, each with its Native check rows. What the wav
 Still open: native reviewers for both (the Native check lists, among them Punjabi's Undo ਅਣਕੀਤਾ ਕਰੋ and Decline
 ਨਾਮਨਜ਼ੂਰ / ਇਨਕਾਰ ਕਰੋ, and the IARC 2A/2B wordings), and the iPhone font check (docs/i18n-plan.md, "Fonts").
 
+## Reference pages: the cone chart and the materials (engineering done; translations to come)
+
+Round 10, stream B. The engineering is in (docs/adr/0013-translations.md, "the reference pages are translated");
+no language is switched on. For each language the waves add:
+
+- **`reference/<code>.json`**: the 68 interface strings (`reference/en.json`) of the cone chart, the list of materials
+  and a material's page. The glossary is the language's own; the terms (cone, unity, loss on ignition, equivalent
+  weight) are already in it from the guides. Short enough for one chunk per language.
+- **`records/<code>.json`**: four new keys in `records/en.json`, the three cone chart notes (they carry the advice to
+  set a witness cone, so they get the blind back-translation, in Opus, with the other safety text) and the label
+  "Theoretical formula". A material's notes and hazards are already there (369 of 369 keys in all 45 languages).
+  Commit translations before running `npm run i18n:sources`, as always.
+- **`go-live.mjs`** does not yet add the language to `REFERENCE_LANGUAGES`; add `reference: true` to its line in
+  lib/regions/languages.js by hand. `npm run check:i18n` then wants `reference/` and `records/` complete for it
+  (`checkReferenceLanguages`), and the build prerenders `/<code>/cones` and `/<code>/materials`.
+
 ## Indian regional languages, wave I4: Nepali and Sinhala (live)
 
 Round 9, after wave I3, on the same rules; both live since 2026-10-30 (sourced glossaries, 18 translation parts, 12

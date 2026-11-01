@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toxický. Téměř nerozpustný.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Varování (bezpečnostní list Potterycrafts P3303): H302 zdraví škodlivý při požití; nepolykejte a zamezte vdechování prachu.",
+  "theoretical-formula-9090t3": "Teoretický vzorec",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosforečnan vápenatý. Skutečný kostní popel může obsahovat trochu CaCO₃, a tedy mít i malou ztrátu žíháním.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Varování (bezpečnostní list Potterycrafts): H302 zdraví škodlivý při požití; H315 dráždí kůži; H319 způsobuje vážné podráždění očí; H335 suchý prach může způsobit podráždění dýchacích cest.",
   "water-soluble-fdjx5g": "Rozpustný ve vodě.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "zkušební střípky, střípky, štítky",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Když vložíte žároměrku do vypínače Kiln-Sitter (mechanického vypínače s malou žároměrkou), přelepte ji malířskou páskou. Páska ochrání žároměrku před shozením při zakládání výrobků a při výpalu čistě vyhoří.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, žároměrka, žároměrky, zakládání pece"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, žároměrka, žároměrky, zakládání pece",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Norma uvádí referenční teploty. Při rychlosti ohřevu, kterou keramici používají, asi 100 °C/h, naměřil kjótský městský ústav u svých vlastních kjótských žároměrek ohyb při teplotě o 47–79 °C nižší, než udává hodnota JIS pro stejné číslo; pro žároměrky SK podle JIS jsme takové měření nenašli. Vložte kontrolní žároměrku a porovnejte.",
+  "orton-s-older-chart-for-large-jgynh": "Starší tabulka společnosti Orton pro velké žároměrky zahřívané rychlostí 150 °C za hodinu v posledních 100 °C, jak ji přetiskují výrobci pecí; aktuální hodnoty společnosti Orton pro velké žároměrky při této rychlosti se od ní liší až o 19 °C. Orton nezveřejňuje žádnou hodnotu nad žároměrkou 14 a tato tabulka žádnou nad žároměrkou 15. Žároměrky měří tepelnou expozici, ne teplotu: vložte kontrolní žároměrku.",
+  "rates-are-over-the-last-100-gs02ii": "Rychlosti platí pro posledních 100 °C výpalu. Velké žároměrky 13 a 14 mají jiné složení a jiné teplotní ekvivalenty; Orton nezveřejňuje žádnou hodnotu nad žároměrkou 14."
 }

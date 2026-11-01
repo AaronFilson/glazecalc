@@ -7,6 +7,7 @@ import {
   ID_PAGES,
   MATERIAL_PAGES,
   PUBLIC_PAGES,
+  REFERENCE_PAGES,
   isAppOnlyPage,
   isEnglishOnlyPage,
   isPage,
@@ -462,14 +463,15 @@ describe('pages in each language', () => {
     const one = sitemap(SITE, ['en']);
     expect(one).to.include('<url><loc>https://glazecalcapp.com/guides/firing</loc></url>');
     expect(one).not.to.include('xhtml:link');
-    const two = sitemap(SITE, ['en', 'de']);
+    // No language has the reference pages translated here, whichever are on in lib/regions/languages.js.
+    const two = sitemap(SITE, ['en', 'de'], ['en']);
     expect(two).to.include(
       '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
     );
-    // Each public page once in each of the two languages, and a page in English only once.
-    expect(two.match(/<url>/g)).to.have.length(
-      (PUBLIC_PAGES.length - ENGLISH_ONLY_PAGES.length) * 2 + ENGLISH_ONLY_PAGES.length
-    );
+    // Each public page once in each of the two languages, and a page in English only once, as a
+    // reference page is while German is not among the languages it is translated into.
+    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length;
+    expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - once) * 2 + once);
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
@@ -524,13 +526,15 @@ describe('pages in each language', () => {
       expect(materialSlug('Tile #6 Kaolin')).to.equal('tile-6-kaolin');
     });
 
-    it('lists them, the index and the cone chart among the public pages, in English only', () => {
+    it('lists them, the index and the cone chart among the public pages; a material is for search engines in English only', () => {
       for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
         expect(PUBLIC_PAGES, address).to.include(address);
-        expect(ENGLISH_ONLY_PAGES, address).to.include(address);
         expect(isPage(address), address).to.equal(true);
         expect(isAppOnlyPage(address), address).to.equal(false);
       }
+      for (const address of MATERIAL_PAGES) expect(ENGLISH_ONLY_PAGES, address).to.include(address);
+      expect(REFERENCE_PAGES).to.eql(['/cones', '/materials']);
+      for (const address of REFERENCE_PAGES) expect(ENGLISH_ONLY_PAGES, address).not.to.include(address);
       // The signed-in page of your own materials is another address, and stays out of the index.
       expect(PUBLIC_PAGES).not.to.include('/material');
       expect(isAppOnlyPage('/material')).to.equal(true);
@@ -549,24 +553,82 @@ describe('pages in each language', () => {
       expect(german).not.to.include('hreflang');
     });
 
-    it('prerenders them in English only', () => {
+    it('prerenders them in English only while no language has them translated', () => {
       const live = ['en', 'de', 'ja'];
+      const reference = ['en'];
       for (const address of ['/cones', '/materials', '/materials/silica']) {
-        expect(prerenderedKey(address, live), address).to.equal('en' + address + '.html');
-        expect(prerenderedKey('/de' + address, live), address).to.equal(null);
+        expect(prerenderedKey(address, live, reference), address).to.equal('en' + address + '.html');
+        expect(prerenderedKey('/de' + address, live, reference), address).to.equal(null);
       }
       // The guides in other languages are still rendered, the one in English only too.
-      expect(prerenderedKey('/de/guides/firing', live)).to.equal('de/guides/firing.html');
-      expect(prerenderLanguages('/materials/silica', live)).to.eql(['en']);
-      expect(prerenderLanguages('/guides/firing', live)).to.eql(live);
+      expect(prerenderedKey('/de/guides/firing', live, reference)).to.equal('de/guides/firing.html');
+      expect(prerenderLanguages('/materials/silica', live, reference)).to.eql(['en']);
+      expect(prerenderLanguages('/guides/firing', live, reference)).to.eql(live);
+      // By default, the languages switched on in lib/regions/languages.js.
+      const on = languages.LIVE_LANGUAGES.filter((code) => languages.REFERENCE_LANGUAGES.includes(code));
+      expect(prerenderLanguages('/cones', languages.LIVE_LANGUAGES)).to.eql(on);
     });
 
-    it('puts each in the sitemap once, at its English address', () => {
-      const map = sitemap(SITE, ['en', 'de']);
+    it('puts each in the sitemap once, at its English address, while no language has them translated', () => {
+      const map = sitemap(SITE, ['en', 'de'], ['en']);
       for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
         expect(map, address).to.include(`<url><loc>https://glazecalcapp.com${address}</loc></url>`);
         expect(map, address).not.to.include(`/de${address}</loc>`);
       }
+    });
+
+    describe('in a language they are translated into', () => {
+      const live = ['en', 'de', 'ja'];
+      const reference = ['en', 'de'];
+
+      it('renders the cone chart and the list in it, and a material in English only', () => {
+        for (const address of ['/cones', '/materials']) {
+          expect(prerenderedKey('/de' + address, live, reference), address).to.equal('de' + address + '.html');
+          expect(prerenderedKey('/ja' + address, live, reference), address).to.equal(null);
+          expect(prerenderLanguages(address, live, reference), address).to.eql(['en', 'de']);
+        }
+        expect(prerenderedKey('/de/materials/silica', live, reference)).to.equal(null);
+        expect(prerenderLanguages('/materials/silica', live, reference)).to.eql(['en']);
+      });
+
+      it('gives it its own address for search engines, with hreflang among the translated languages alone', () => {
+        const german = pageHtml(HTML, '/de/materials', SITE, {}, live, true, '', reference);
+        expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/de/materials" />');
+        expect(german).not.to.include('noindex');
+        expect(german).to.include(
+          '<link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/materials" />'
+        );
+        expect(german).to.include('<link rel="alternate" hreflang="en" href="https://glazecalcapp.com/materials" />');
+        expect(german).to.include('hreflang="x-default" href="https://glazecalcapp.com/materials"');
+        expect(german).not.to.include('hreflang="ja"');
+        expect(german).to.include('<meta property="og:locale:alternate" content="en_US" />');
+        expect(german).not.to.include('ja_JP');
+        // English lists German as its alternate; Japanese, not translated, still points to the English alone.
+        expect(pageHtml(HTML, '/cones', SITE, {}, live, true, '', reference)).to.include('hreflang="de"');
+        const japanese = pageHtml(HTML, '/ja/cones', SITE, {}, live, true, '', reference);
+        expect(japanese).to.include('<link rel="canonical" href="https://glazecalcapp.com/cones" />');
+        expect(japanese).to.include('<meta name="robots" content="noindex" />');
+        expect(japanese).not.to.include('hreflang');
+        expect(isEnglishOnlyPage('/de/cones', reference)).to.equal(false);
+        expect(isEnglishOnlyPage('/ja/cones', reference)).to.equal(true);
+      });
+
+      it('keeps a material for search engines in English only', () => {
+        const german = pageHtml(HTML, '/de/materials/silica', SITE, {}, live, false, '', reference);
+        expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
+        expect(german).to.include('<meta name="robots" content="noindex" />');
+        expect(german).not.to.include('hreflang');
+      });
+
+      it('lists it in the sitemap in the translated languages, each with the others beside it', () => {
+        const map = sitemap(SITE, live, reference);
+        expect(map).to.include(
+          '<url><loc>https://glazecalcapp.com/de/cones</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/cones"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/cones"/></url>'
+        );
+        expect(map).not.to.include('/ja/cones');
+        expect(map).not.to.include('/de/materials/');
+        expect(map).to.include('<url><loc>https://glazecalcapp.com/ja/guides</loc>');
+      });
     });
   });
 

@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "build": "node scripts/advice-i18n.mjs && node scripts/locale-fallback.mjs && ng build && node scripts/prerender.mjs && node scripts/build-skills.mjs",
-    "watch": "node scripts/advice-i18n.mjs && node scripts/locale-fallback.mjs && ng build --watch --configuration development",
+    "build": "node scripts/advice-i18n.mjs && node scripts/material-i18n.mjs && node scripts/locale-fallback.mjs && ng build && node scripts/service-worker.mjs && node scripts/prerender.mjs && node scripts/build-skills.mjs",
+    "watch": "node scripts/advice-i18n.mjs && node scripts/material-i18n.mjs && node scripts/locale-fallback.mjs && ng build --watch --configuration development",
     "dev": "node scripts/run.mjs dev",
     "db": "node --env-file-if-exists=.env scripts/db.mjs",
     "prestart": "npm run build",
@@ -81,6 +81,7 @@
     "@angular/platform-browser": "22.2.3",
     "@angular/platform-server": "22.2.3",
     "@angular/router": "22.2.3",
+    "@angular/service-worker": "22.2.3",
     "@angular/ssr": "22.2.3",
     "@axe-core/playwright": "4.13.0",
     "@eslint/js": "10.0.1",

@@ -157,3 +157,24 @@ showed English dates.
 Polyfilling `Intl` with FormatJS's locale data was not taken: it ships whole locales and replaces
 the browser's formatters, for a few date styles and number patterns (14 kB here), and its CLDR
 need not be Node's.
+
+## Later decision: the reference pages are translated, language by language (2026-10-31)
+
+The cone chart (`/cones`), the list of standard materials (`/materials`) and a page for each
+material (`/materials/<name>`) were in English only, with a notice in the other languages. They are
+now translated into the languages in `REFERENCE_LANGUAGES` (`lib/regions/languages.js`, the
+`reference: true` flag), added one batch at a time as their `reference/<code>.json` is reviewed;
+until a language is added, its pages are as before.
+
+- **The list and the chart are prerendered, indexed and offered in hreflang in those languages**
+  (`lib/pages.js`, `server/lib/pages.ts`). A material's page is not: the 170 pages in each language
+  would be about 7,700 more files, and the page draws from data in the browser. It is translated
+  for the reader and stays English for search engines (canonical to the English, noindex).
+- **The words are the ones already translated.** A material's notes and hazards are in
+  `records/<code>.json` for every language, including the blind back-translation of the warnings;
+  the page reads them through `standardText`, from a slim file of the materials' words alone
+  (`scripts/material-i18n.mjs`; the prerendered cone chart carries three notes, not the whole
+  file). The only new text is the interface (`reference/<code>.json`), the cone charts' notes and
+  one source label.
+- **A text with no translation shows in English for that text alone**, marked `lang="en"`, so a
+  changed hazard never blocks the page; the page's notice is for a language not yet added.

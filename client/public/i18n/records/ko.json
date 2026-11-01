@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "유독합니다. 거의 녹지 않습니다.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "경고(Potterycrafts 물질안전보건자료(MSDS) P3303): H302 삼키면 유해함; 섭취하지 말고 분진 흡입을 피하세요.",
+  "theoretical-formula-9090t3": "이론 화학식",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "인산삼칼슘입니다. 실제 골회는 CaCO₃를 약간 포함할 수 있어 강열감량이 조금 있습니다.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "경고(Potterycrafts 물질안전보건자료(MSDS)): H302 삼키면 유해함; H315 피부에 자극을 일으킴; H319 눈에 심한 자극을 일으킴; H335 마른 분진은 호흡기 자극을 일으킬 수 있음.",
   "water-soluble-fdjx5g": "물에 녹습니다.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "유약 시편, 시편, 라벨",
   "kiln-sitter-8kghs6": "킬른 시터",
   "after-putting-a-cone-in-the-swloel": "킬른 시터에 콘을 끼운 뒤 마스킹 테이프로 덮으세요. 테이프는 기물을 재임하는 동안 콘이 떨어지지 않게 지켜 주고, 소성 중에 깨끗이 타서 없어집니다.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "킬른 시터, 콘, 콘 끼우기, 재임"
+  "kiln-sitter-cone-cones-loading-3s7meh": "킬른 시터, 콘, 콘 끼우기, 재임",
+  "the-standard-gives-reference-temperatures-at-12xot89": "이 규격은 기준 온도를 제시합니다. 도예가가 쓰는 약 100 °C/h의 승온 속도에서, 교토시의 시립 연구소가 자체 교토 콘을 측정했더니 같은 번호의 JIS 수치보다 47~79 °C 더 낮은 온도에서 휘어졌습니다. JIS를 따르는 SK 콘에 대해서는 이런 측정값을 찾지 못했습니다. 확인용 콘을 놓고 비교하세요.",
+  "orton-s-older-chart-for-large-jgynh": "가마 제조사들이 다시 싣고 있는 Orton의 예전 대형 콘 표로, 마지막 100 °C 구간의 승온 속도가 시간당 150 °C일 때의 값입니다. 같은 속도에서 Orton의 현행 대형 콘 수치는 이 표와 최대 19 °C까지 차이가 납니다. Orton은 콘 14를 넘는 콘의 수치를 발표하지 않으며, 이 표에도 콘 15를 넘는 콘의 수치는 없습니다. 콘이 재는 것은 온도가 아니라 소성 정도입니다. 확인용 콘을 놓으세요.",
+  "rates-are-over-the-last-100-gs02ii": "승온 속도는 소성 마지막 100 °C 구간 기준입니다. 대형 콘 13과 14는 조성이 다르고 온도 값도 다릅니다. Orton은 콘 14를 넘는 콘의 수치를 발표하지 않습니다."
 }

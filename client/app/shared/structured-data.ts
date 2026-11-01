@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, DestroyRef, Renderer2, effect, inject, input } from '@angular/core';
+import { languagePrefix } from '../../../lib/regions/languages';
 import { pathIn } from '../i18n/language';
 
 /** Where the site lives. The prerender has no server to ask, and search wants whole addresses. */
@@ -62,10 +63,12 @@ export function article(
 }
 
 /**
- * A reference page in English (a standard material's, the materials list, the cone chart): a WebPage
+ * A reference page (a standard material's, the materials list, the cone chart): a WebPage
  * of the site (https://schema.org/WebPage) and its trail of pages (https://schema.org/BreadcrumbList),
- * which search results show in place of the address. `path` is the page's English address, such as
- * /materials/silica: these pages have one address for search engines (lib/pages.js, ENGLISH_ONLY_PAGES).
+ * which search results show in place of the address. `path` is the page's address without its language,
+ * such as /materials/silica. In English, or for a page not translated, that is its one address for search
+ * engines (lib/pages.js, ENGLISH_ONLY_PAGES); the list and the chart in a language they are translated
+ * into (REFERENCE_LANGUAGES) are named at their own, in that `language`.
  * `crumbs` is the trail from the home page to this page, each { name, path }.
  */
 export function referencePage(
@@ -73,9 +76,11 @@ export function referencePage(
   description: string,
   path: string,
   crumbs: ReadonlyArray<{ name: string; path: string }>,
-  type: 'WebPage' | 'CollectionPage' = 'WebPage'
+  type: 'WebPage' | 'CollectionPage' = 'WebPage',
+  language = 'en'
 ): object {
-  const address = SITE + path;
+  const prefix = languagePrefix(language);
+  const address = SITE + prefix + path;
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -84,9 +89,9 @@ export function referencePage(
         '@id': address,
         name,
         description,
-        inLanguage: 'en',
+        inLanguage: language,
         url: address,
-        isPartOf: { '@type': 'WebSite', name: 'Glazecalc', url: SITE + '/' },
+        isPartOf: { '@type': 'WebSite', name: 'Glazecalc', url: SITE + prefix + '/' },
         breadcrumb: { '@id': address + '#breadcrumb' }
       },
       {
@@ -96,7 +101,7 @@ export function referencePage(
           '@type': 'ListItem',
           position: index + 1,
           name: crumb.name,
-          item: SITE + crumb.path
+          item: SITE + prefix + crumb.path
         }))
       }
     ]

@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Beracun. Hampir tidak larut.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Peringatan (Potterycrafts SDS P3303): H302 berbahaya jika tertelan; jangan ditelan dan hindari menghirup debunya.",
+  "theoretical-formula-9090t3": "Rumus teoretis",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalsium fosfat. Abu tulang asli dapat mengandung sedikit CaCO₃ sehingga LOI-nya kecil.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Peringatan (Potterycrafts SDS): H302 berbahaya jika tertelan; H315 menyebabkan iritasi kulit; H319 menyebabkan iritasi mata yang serius; H335 debu kering dapat menyebabkan iritasi saluran pernapasan.",
   "water-soluble-fdjx5g": "Larut dalam air.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "ubin glasir, ubin, label",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Setelah memasang kerucut di Kiln-Sitter, tutupi dengan selotip kertas (masking tape). Selotip melindungi kerucut agar tidak tersenggol saat memuat benda, dan terbakar habis dengan bersih saat pembakaran.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kerucut, kerucut-kerucut, memuat"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kerucut, kerucut-kerucut, memuat",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standar ini memberikan suhu acuan. Pada laju pembakaran pembuat keramik sekitar 100 °C/h, institut milik kota Kyoto mengukur kerucut Kyoto buatannya sendiri melengkung pada suhu 47–79 °C lebih rendah daripada angka JIS untuk nomor yang sama; kami tidak menemukan pengukuran seperti itu untuk kerucut SK menurut JIS. Pasang kerucut saksi dan bandingkan.",
+  "orton-s-older-chart-for-large-jgynh": "Tabel Orton yang lebih lama untuk kerucut besar yang dipanaskan pada 150 °C per jam selama 100 °C terakhir, sebagaimana dicetak ulang pembuat tungku; angka terkini Orton untuk kerucut besar pada laju itu berbeda hingga 19 °C dari tabel ini. Orton tidak menerbitkan angka di atas kerucut 14, dan tabel ini tidak memiliki angka di atas kerucut 15. Kerucut mengukur kerja panas, bukan suhu: pasang kerucut saksi.",
+  "rates-are-over-the-last-100-gs02ii": "Laju dihitung selama 100 °C terakhir pembakaran. Kerucut besar 13 dan 14 memiliki komposisi berbeda dan padanan suhu berbeda; Orton tidak menerbitkan angka di atas kerucut 14."
 }

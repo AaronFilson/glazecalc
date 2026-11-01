@@ -25,6 +25,32 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Portuguese, Latin American Spanish, Quechua, Swahili, Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali are
   known but not offered, ahead of their waves; the language picker has a "Latin America" group for the first three.
   Colombia, Peru, Nigeria and Ethiopia wait for an emergency number confirmed on an official page.
+- **The cone chart, the list of standard materials and each material's page can be translated**, language by
+  language (round 10, stream B, first part; nothing visible changes yet: no language is switched on). A language in
+  `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and
+  `/<code>/materials` prerendered, in the sitemap and with hreflang among those languages alone; the others keep the
+  English with the notice, noindex and no hreflang. A material's page is drawn in the browser in every language but
+  English and stays English for search engines. Its notes and hazards come from the translations the signed-in
+  library already shows (`records/`), through a slim file made at each build (`scripts/material-i18n.mjs`, as the
+  advice page has), and a note with no translation shows in English, marked `lang="en"`, instead of the page's
+  notice. The cone charts' three notes, which carry the advice to set a witness cone, and the "Theoretical formula"
+  label are new keys in `records/en.json` for the translation waves. `npm run check:i18n` wants `reference/` and
+  `records/` complete in each language the pages are shown in.
+- **Offline mode, stages 0 to 2** (docs/adr/0028-service-worker.md; the owner's choices, 2026-10-31). The app, the
+  guides, the safety pages, the cone chart and the materials open with no network, on a phone that has opened the
+  site before: Angular's service worker keeps the app and an offline page (`app-shell.html`, with one style nonce for
+  each build), and the app keeps the messages and guides of the reader's language and English in Cache Storage
+  (fetched in the background, once a day; any other language's is dropped; a language chosen with no network that is
+  not saved says so and the page stays). Online nothing changes: every address is answered by the server, with its
+  nonce and headers. The calculator works for a session already on the device (an account or a trial); the recipe
+  page reads the standard materials and additives from a copy the build writes (`standard/materials.json`), so
+  the worker never keeps a reply from `/api`; the sign-in, account, shared-recipe and connect pages are left to the
+  network. A new version shows a banner (Reload, Not now), waits while a recipe has unsaved changes, and is the
+  page's version at the next open if ignored. A menu button, "Install app", appears where Chrome or Edge offers
+  it, and never a popup. `safety-worker.js` is the kill switch (`KILL_SWITCH` in `scripts/service-worker.mjs`,
+  steps in `deploy/README.md`). Urdu text shows at once in the device's font while Nastaliq is on its way (a test
+  holds the file back 3 s). The five new messages (`offline.*`) are in English only until the next wave. Records on
+  the phone (stage 3) and offline editing (stage 4) are not part of this.
 - **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the emails and all five guides, live at `/ne/…`
   (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
   number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so

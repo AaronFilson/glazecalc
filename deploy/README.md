@@ -108,6 +108,32 @@ Day to day:
   network from serving a fake `http://` subdomain, but it binds every future subdomain to HTTPS
   for a year, so it is left as an option for the owner.
 
+## The service worker
+
+The build adds Angular's service worker to the client (`scripts/service-worker.mjs`,
+`docs/adr/0028-service-worker.md`): `ngsw-worker.js`, its manifest `ngsw.json`, the offline page
+`app-shell.html` and the kill switch `safety-worker.js`. The server sends the first four with
+`Cache-Control: no-cache`, so a release reaches phones at their next page load. Nothing to do per
+release.
+
+**If a worker misbehaves** (a page that will not update, a blank offline page), it keeps serving
+its own copy of the app until it is replaced, so a normal fix does not reach those phones. To
+remove it:
+
+1. Set `KILL_SWITCH` to `true` in `scripts/service-worker.mjs` and release it the usual way (a
+   branch, a pull request, Deploy). `ngsw-worker.js` is then the safety worker: it clears every
+   cache and unregisters itself on each phone that fetches it. Phones fetch a changed worker file
+   at the next page load, and in any case every 24 hours.
+2. Wait at least a day. Check from a phone that was affected: `/ngsw-worker.js` is the short
+   safety worker, and the page no longer says it is served by a worker (DevTools, Application).
+3. Fix the cause, set `KILL_SWITCH` back to `false`, and release again: the app registers its
+   worker once more. To keep the worker off for good, take `provideServiceWorker` out of
+   `client/app/app.config.ts` and leave `KILL_SWITCH` true until no phone still has the old one.
+
+To look at what a phone holds: DevTools, Application, Cache storage (`ngsw:/:…` for the app,
+`gc-i18n` for the reader's language), and `/ngsw/state` on the site, which the worker answers
+itself.
+
 ## An index the app cannot build
 
 The app builds each collection's indexes when it starts and logs `Could not build the indexes`

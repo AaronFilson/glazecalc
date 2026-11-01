@@ -7,6 +7,7 @@ import {
   checkBengali,
   checkDigits,
   checkGuides,
+  checkReferenceLanguages,
   checkTranslations,
   checkUrdu,
   compareKeys,
@@ -637,6 +638,32 @@ describe('message checks', () => {
         'app de nav.gone: no such message in English',
         'recipe fr save: placeholders none, but the English has name'
       ]);
+    });
+
+    it('wants the reference pages complete in a language they are shown in, and lets another be partial', () => {
+      const reference = mkdtempSync(path.join(tmpdir(), 'i18n-reference-'));
+      try {
+        for (const scope of ['reference', 'records']) mkdirSync(path.join(reference, scope));
+        const write = (file: string, messages: object) =>
+          writeFileSync(path.join(reference, file), JSON.stringify(messages));
+        write('reference/en.json', { cones: { heading: 'Cones' }, notTranslated: 'Not translated' });
+        write('reference/de.json', { cones: { heading: 'Kegel' } });
+        write('reference/fr.json', { notTranslated: 'Non traduit' });
+        write('records/en.json', { 'a-1': 'A', 'b-2': 'B' });
+        write('records/de.json', { 'a-1': 'A auf Deutsch' });
+        // German is shown, so it must be complete; French is being translated, so it may be partial.
+        expect(checkReferenceLanguages(reference, ['en', 'de'])).to.eql([
+          'reference de: the reference pages are shown in de, but 1 message(s) are missing, such as notTranslated',
+          'records de: the reference pages are shown in de, but 1 message(s) are missing, such as b-2'
+        ]);
+        expect(checkReferenceLanguages(reference, ['en'])).to.eql([]);
+        // A shown language with no file at all is missing everything.
+        expect(checkReferenceLanguages(reference, ['en', 'es'])).to.have.length(2);
+      } finally {
+        rmSync(reference, { recursive: true, force: true });
+      }
+      // None of the languages shown today has anything missing.
+      expect(checkReferenceLanguages()).to.eql([]);
     });
 
     it('finds a translation that writes digits other than 0–9, in a message or a guide', () => {

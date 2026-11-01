@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { expect, site } from './support/app.ts';
@@ -75,6 +76,49 @@ describe('client routes', function () {
     expect(nonce).to.be.a('string');
     expect(first.text).to.include(`<gc-root ngCspNonce="${nonce}">`);
     expect(String(second.headers['content-security-policy'])).not.to.include(nonce!);
+  });
+
+  it("lets a page start the site's own service worker and read its manifest, and no one else's", async () => {
+    const policy = String((await site().get('/recipe')).headers['content-security-policy']);
+    expect(policy).to.include("worker-src 'self'");
+    expect(policy).to.include("manifest-src 'self'");
+  });
+
+  // Needs a build with the service worker (scripts/service-worker.mjs).
+  describe('the service worker', function () {
+    before(function () {
+      if (!fs.existsSync(path.join(path.dirname(INDEX), 'ngsw.json'))) this.skip();
+    });
+
+    it('is asked for each time: the worker, its manifest and the kill switch', async () => {
+      for (const file of ['ngsw-worker.js', 'ngsw.json', 'safety-worker.js', 'worker-basic.min.js']) {
+        const res = await site().get('/' + file);
+        expect(res, file).to.have.status(200);
+        expect(res.headers['cache-control'], file).to.equal('no-cache');
+      }
+    });
+
+    it("keeps the app's files and the offline page in its manifest, and no worker file", async () => {
+      const manifest = (await site().get('/ngsw.json')).body as { index: string; hashTable: Record<string, string> };
+      expect(manifest.index).to.equal('/app-shell.html');
+      expect(manifest.hashTable).to.have.property('/app-shell.html');
+      for (const file of Object.keys(manifest.hashTable)) expect(file).not.to.match(/ngsw|safety-worker|worker-basic/);
+    });
+
+    it('sends the offline page as the manifest has it, with the nonce its policy names, and not for a search', async () => {
+      const res = await site().get('/app-shell.html');
+      expect(res).to.have.status(200);
+      expect(res.headers['cache-control']).to.equal('no-cache');
+      expect(res.headers['x-robots-tag']).to.equal('noindex');
+      const nonce = /ngCspNonce="([^"]+)"/.exec(res.text)?.[1];
+      expect(nonce).to.be.a('string');
+      expect(String(res.headers['content-security-policy'])).to.include(`style-src 'self' 'nonce-${nonce}'`);
+      // The same on every load, or the worker's copy would not match its hash.
+      expect((await site().get('/app-shell.html?ngsw-cache-bust=0.5')).text).to.equal(res.text);
+      const manifest = (await site().get('/ngsw.json')).body as { hashTable: Record<string, string> };
+      const hash = crypto.createHash('sha1').update(fs.readFileSync(path.join(path.dirname(INDEX), 'app-shell.html')));
+      expect(manifest.hashTable['/app-shell.html']).to.equal(hash.digest('hex'));
+    });
   });
 
   // Needs the build's prerender too (npm run build).

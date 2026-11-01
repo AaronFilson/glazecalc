@@ -320,6 +320,10 @@ browser on Windows and Linux before its commit, with at most six agents at a tim
 
 - Each English segment has a fingerprint. When the English changes, only the changed segments are translated again.
 - A segment whose translation is out of date shows in English until it is redone. CI reports how many there are.
+- The offline work (round 10, docs/adr/0028-service-worker.md) added five messages in English only, the `offline` group
+  of `client/public/i18n/en.json`: a language not saved on the phone, a new version ready with its two buttons, and
+  "Install app". They show in English in every language until the next wave translates them. The app keeps a
+  reader's own language and English for offline use, so a message that is English in the file is English offline too.
 
 ### Corrections from people
 

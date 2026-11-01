@@ -230,7 +230,10 @@ body:lang(ur),
 // Urdu's Nastaliq, served with the app: Noto Nastaliq Urdu 3.007 (OFL: client/fonts/noto-nastaliq-urdu-OFL.txt,
 // THIRD-PARTY-NOTICES.md), weights 400 to 700, cut to Urdu's letters (U+0600-06FF and a few signs): 193 kB of
 // the 239 kB file. Named only in Urdu's font list ($gc-script-fonts), so only an Urdu page fetches it, and
-// not preloaded (scripts/prerender.mjs, TEXT_FONTS). Made with fontTools 4.25 from
+// not preloaded (scripts/prerender.mjs, TEXT_FONTS). font-display: swap draws the text at once in the next
+// family of the list (Urdu Typesetting, Segoe UI, Noto Naskh Arabic, Geeza Pro), in lines of the same height
+// (1.9), and swaps to Nastaliq when the file arrives: on a slow connection the page is readable first
+// (e2e/i18n.spec.js). Made with fontTools 4.25 from
 // @fontsource-variable/noto-nastaliq-urdu 5.3.0; make it again when that changes:
 //   pyftsubset noto-nastaliq-urdu-arabic-wght-normal.woff2
 //     --unicodes="U+0600-06FF,U+200C-200E,U+2010-2011,U+FD3E-FD3F,U+FDF2,U+FDFA-FDFD" --flavor=woff2
@@ -600,6 +603,13 @@ img {
   p {
     margin: 0;
   }
+}
+
+// A new version is ready (app.ts, core/update.service.ts): the trial bar's shape, in the page's own colors.
+.update-bar {
+  background: var(--gc-surface-2);
+  color: var(--gc-text);
+  border-top: 1px solid var(--gc-border);
 }
 
 .trial-actions {
