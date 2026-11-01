@@ -21,6 +21,7 @@
     "recipe": "Recetas - Glazecalc",
     "import": "Pegar recetas - Glazecalc",
     "blends": "Mezclas para probetas - Glazecalc",
+    "solve": "Buscar una receta para un objetivo - Glazecalc",
     "material": "Materiales - Glazecalc",
     "additive": "Aditivos - Glazecalc",
     "firingLogs": "Registros de cocción - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Página no encontrada - Glazecalc",
     "shared": "Receta compartida - Glazecalc",
     "assistants": "Usar Glazecalc desde su asistente de IA - Glazecalc",
-    "confirm": "Aprobar un cambio - Glazecalc"
+    "confirm": "Aprobar un cambio - Glazecalc",
+    "cones": "Tabla de conos: temperaturas de los conos Orton y SK - Glazecalc",
+    "materials": "Materiales estándar para esmaltes: análisis y peligros - Glazecalc",
+    "materialInfo": "{name}: análisis de óxidos y peligros - Glazecalc"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -82,6 +86,13 @@
     "languages": "Idiomas",
     "language": "Idioma:"
   },
+  "offline": {
+    "languageNotSaved": "Este idioma no está guardado en este teléfono. Conéctese a internet para usarlo.",
+    "updateReady": "Hay una nueva versión de Glazecalc lista.",
+    "reload": "Recargar",
+    "dismiss": "Ahora no",
+    "install": "Instalar la aplicación"
+  },
   "picker": {
     "results": "{count, plural, one {# coincidencia} many {# coincidencias} other {# coincidencias}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asia",
       "eastAsia": "Asia oriental",
       "europe": "Europa",
+      "latinAmerica": "Latinoamérica",
       "middleEastNorthAfrica": "Oriente Medio y norte de África",
       "oceania": "Oceanía",
       "southAsia": "Asia meridional",
@@ -127,6 +139,10 @@
     "terms": "Las condiciones para usar Glazecalc: gratuito para sus propios esmaltes y su trabajo, justo con el servidor compartido, y ofrecido tal cual.",
     "assistants": "Use Glazecalc desde Claude, Copilot, Cursor o Gemini mediante MCP: química de esmaltes, comprobación de límites, sustitutos, guías y sus propias recetas.",
     "signup": "Cree una cuenta gratuita en Glazecalc y guarde recetas de esmaltes cerámicos, materiales, notas y registros de cocción. Sin anuncios; sus datos nunca se venden.",
+    "cones": "Conos pirométricos Orton y SK desde el 022, con sus temperaturas en °C y °F, la velocidad de calentamiento para la que sirve cada tabla y el origen de las cifras.",
+    "materials": "Los materiales de la biblioteca estándar de Glazecalc, desde feldespatos y arcillas hasta fritas y fuentes de boro, cada uno con su análisis de óxidos, su fórmula Seger y sus peligros.",
+    "materialInfo": "{name}: análisis de óxidos, fórmula Seger, pérdida al fuego y peligros en la biblioteca estándar de Glazecalc.",
+    "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aportación a la fórmula Seger, su pérdida al fuego y sus peligros.",
     "imageAlt": "La página de inicio de Glazecalc: química de esmaltes gratuita para ceramistas, junto a una foto de tríos de conos tras la cocción."
   },
   "notices": {

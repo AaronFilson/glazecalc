@@ -40,6 +40,17 @@
     }
   },
   "more": "Thêm cẩm nang",
+  "related": {
+    "heading": "Các trang tham khảo",
+    "cones": {
+      "title": "Bảng côn",
+      "text": "Côn Orton và SK cùng nhiệt độ theo °C và °F, và nguồn gốc của từng số liệu."
+    },
+    "materials": {
+      "title": "Nguyên liệu có sẵn",
+      "text": "Mỗi nguyên liệu trong thư viện kèm phân tích oxit, đóng góp vào công thức Seger và mối nguy."
+    }
+  },
   "contents": "Trong trang này",
   "poison": {
     "numbersFor": "Số điện thoại cho",
@@ -133,6 +144,13 @@
     "respirators": "Khẩu trang lọc bụi ở đây được bán theo hạng: {everyday} cho bụi men, hoặc {higher} để bảo vệ tốt hơn (<link>các hạng chính thức</link>).",
     "unknown": "Chúng tôi chưa xác nhận được giới hạn quốc gia tại {region}. Giới hạn ràng buộc của EU là {value} mg/m³ áp dụng ở mọi quốc gia thành viên.",
     "noData": "Chúng tôi chưa xác nhận giới hạn tại {region}.",
+    "statesLabel": "Giới hạn do các bang đặt ra ở {region}",
+    "statesCaption": "Giới hạn mà một số bang đã đặt ra cho bụi có chứa thạch anh, trong đó Q là hàm lượng thạch anh trong bụi, tính theo %. Chúng tôi chỉ đọc các giới hạn này trong những bản sao do bên khác công bố, nên chưa được xác nhận (đã kiểm tra {date}).",
+    "state": "Bang",
+    "respirableDust": "Bụi hô hấp",
+    "totalDust": "Bụi toàn phần",
+    "cutOff": "Bị cắt mất trong bản sao chúng tôi đã đọc",
+    "stateSetBy": "{area}: do <link>{law}</link> đặt ra.",
     "agency": "Cơ quan quốc gia về an toàn lao động: <link>{name}</link>.",
     "agencySilica": "<link>Trang về silica</link> của cơ quan này.",
     "choosePrompt": "Chọn quốc gia hoặc khu vực của bạn để xem giới hạn tại đó."

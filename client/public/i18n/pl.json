@@ -21,6 +21,7 @@
     "recipe": "Receptury - Glazecalc",
     "import": "Wklejanie receptur - Glazecalc",
     "blends": "Mieszanki do płytek testowych - Glazecalc",
+    "solve": "Dobór do celu - Glazecalc",
     "material": "Surowce - Glazecalc",
     "additive": "Dodatki - Glazecalc",
     "firingLogs": "Dzienniki wypałów - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Nie znaleziono strony - Glazecalc",
     "shared": "Udostępniona receptura - Glazecalc",
     "assistants": "Korzystanie z Glazecalc w asystencie AI - Glazecalc",
-    "confirm": "Zatwierdzenie zmiany - Glazecalc"
+    "confirm": "Zatwierdzenie zmiany - Glazecalc",
+    "cones": "Tabela stożków: temperatury stożków Ortona i SK - Glazecalc",
+    "materials": "Standardowe surowce do szkliw: skład i zagrożenia - Glazecalc",
+    "materialInfo": "{name}: skład tlenkowy i zagrożenia - Glazecalc"
   },
   "nav": {
     "skip": "Przejdź do treści",
@@ -82,6 +86,13 @@
     "languages": "Języki",
     "language": "Język:"
   },
+  "offline": {
+    "languageNotSaved": "Ten język nie jest zapisany w tym telefonie. Aby go używać, należy połączyć się z internetem.",
+    "updateReady": "Dostępna jest nowa wersja Glazecalc.",
+    "reload": "Załaduj ponownie",
+    "dismiss": "Nie teraz",
+    "install": "Zainstaluj aplikację"
+  },
   "picker": {
     "results": "{count, plural, one {# wynik} few {# wyniki} many {# wyników} other {# wyniku}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Azja",
       "eastAsia": "Azja Wschodnia",
       "europe": "Europa",
+      "latinAmerica": "Ameryka Łacińska",
       "middleEastNorthAfrica": "Bliski Wschód i Afryka Północna",
       "oceania": "Oceania",
       "southAsia": "Azja Południowa",
@@ -127,6 +139,10 @@
     "terms": "Warunki korzystania z Glazecalc: bezpłatnie do własnych szkliw i pracy, uczciwie wobec wspólnego serwera, udostępniane w stanie, w jakim się znajduje.",
     "assistants": "Glazecalc w Claude, Copilot, Cursor lub Gemini przez MCP: chemia szkliw, kontrola limitów, zamienniki, poradniki i własne zapisane receptury.",
     "signup": "Bezpłatne konto Glazecalc, by zachować receptury szkliw ceramicznych, surowce, notatki i dzienniki wypałów. Bez reklam, a dane nigdy nie są sprzedawane.",
+    "cones": "Stożki pirometryczne Ortona i SK od 022 w górę, z temperaturami w °C i °F, szybkością grzania, dla której sporządzono każdą tabelę, i źródłem wartości.",
+    "materials": "Surowce ze standardowej biblioteki Glazecalc, od skaleni i glin po fryty i źródła boru, każdy ze składem tlenkowym, wzorem Segera i zagrożeniami.",
+    "materialInfo": "{name}: skład tlenkowy, wzór Segera, strata prażenia i zagrożenia w standardowej bibliotece Glazecalc.",
+    "materialInfoLong": "{name} w standardowej bibliotece surowców do szkliw Glazecalc: skład tlenkowy, udział we wzorze Segera, strata prażenia i zagrożenia.",
     "imageAlt": "Strona główna Glazecalc: darmowa chemia szkliw dla ceramików, obok zdjęcia wypalonych zestawów stożków."
   },
   "notices": {

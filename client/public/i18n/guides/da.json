@@ -40,6 +40,17 @@
     }
   },
   "more": "Flere vejledninger",
+  "related": {
+    "heading": "Referencesider",
+    "cones": {
+      "title": "Kegleskema",
+      "text": "Orton- og SK-kegler med temperaturer i °C og °F, og hvor hvert tal stammer fra."
+    },
+    "materials": {
+      "title": "Standardråvarer",
+      "text": "Hver råvare i biblioteket med oxidanalyse, bidrag til Seger-formlen og farer."
+    }
+  },
   "contents": "På denne side",
   "poison": {
     "numbersFor": "Numre for",
@@ -133,6 +144,13 @@
     "respirators": "Støvmasker sælges her efter klasse: {everyday} til glasurstøv eller {higher} for mere beskyttelse (<link>de officielle klasser</link>).",
     "unknown": "Vi kunne ikke bekræfte den nationale grænseværdi i {region}. EU’s bindende grænseværdi på {value} mg/m³ gælder i alle medlemsstater.",
     "noData": "Vi har endnu ikke bekræftet grænseværdien i {region}.",
+    "statesLabel": "Grænseværdier fastsat af delstaterne i {region}",
+    "statesCaption": "Grænseværdier, som nogle delstater har fastsat for støv, der indeholder kvarts, hvor Q er kvartsen i støvet, i %. Vi har kun læst dem i kopier, som andre har offentliggjort, så de er ikke bekræftede (kontrolleret {date}).",
+    "state": "Delstat",
+    "respirableDust": "Respirabelt støv",
+    "totalDust": "Totalstøv",
+    "cutOff": "Afskåret i den kopi, vi læste",
+    "stateSetBy": "{area}: fastsat ved <link>{law}</link>.",
     "agency": "Den nationale myndighed for arbejdsmiljø: <link>{name}</link>.",
     "agencySilica": "Myndighedens <link>side om silica</link>.",
     "choosePrompt": "Vælg land eller region for at se grænseværdien der."

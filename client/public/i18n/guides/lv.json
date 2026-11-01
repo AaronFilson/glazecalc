@@ -40,6 +40,17 @@
     }
   },
   "more": "Citi ceļveži",
+  "related": {
+    "heading": "Uzziņu lapas",
+    "cones": {
+      "title": "Konusu tabula",
+      "text": "Ortona un SK konusi ar to temperatūrām °C un °F un norādi, no kurienes nāk katrs skaitlis."
+    },
+    "materials": {
+      "title": "Standarta izejvielas",
+      "text": "Katra bibliotēkas izejviela ar oksīdu analīzi, devumu Zēgera formulā un apdraudējumiem."
+    }
+  },
   "contents": "Šajā lapā",
   "poison": {
     "numbersFor": "Tālruņa numuri:",
@@ -133,6 +144,13 @@
     "respirators": "Putekļu maskas šeit pārdod pēc klasēm: {everyday} glazūras putekļiem vai {higher} labākai aizsardzībai (<link>oficiālās klases</link>).",
     "unknown": "{region}: nevarējām pārliecināties, kāda robežvērtība ir noteikta. ES saistošā robežvērtība {value} mg/m³ ir spēkā visās dalībvalstīs.",
     "noData": "{region}: robežvērtību vēl neesam noskaidrojuši.",
+    "statesLabel": "Štatu noteiktās robežvērtības: {region}",
+    "statesCaption": "Robežvērtības, ko daži štati noteikuši putekļiem, kas satur kvarcu, kur Q ir kvarca saturs putekļos, %. Tās lasītas tikai citu publicētās kopijās, tāpēc nav apstiprinātas (pārbaudīts: {date}).",
+    "state": "Štats",
+    "respirableDust": "Ieelpojamie putekļi",
+    "totalDust": "Kopējie putekļi",
+    "cutOff": "Nogriezts kopijā, kas tika lasīta",
+    "stateSetBy": "{area}: noteikts ar <link>{law}</link>.",
     "agency": "Valsts iestāde, kas atbild par darba drošību: <link>{name}</link>.",
     "agencySilica": "Tās <link>lapa par silīcija dioksīdu</link>.",
     "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu tur noteikto robežvērtību."

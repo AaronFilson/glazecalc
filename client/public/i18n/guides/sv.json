@@ -40,6 +40,17 @@
     }
   },
   "more": "Fler guider",
+  "related": {
+    "heading": "Referenssidor",
+    "cones": {
+      "title": "Kägeltabell",
+      "text": "Orton- och SK-käglor med temperaturer i °C och °F, och var varje siffra kommer ifrån."
+    },
+    "materials": {
+      "title": "Standardråvaror",
+      "text": "Varje råvara i biblioteket med oxidanalys, bidrag till Segerformeln och faror."
+    }
+  },
   "contents": "På den här sidan",
   "poison": {
     "numbersFor": "Nummer för",
@@ -133,6 +144,13 @@
     "respirators": "Andningsskydd mot damm säljs här efter klass: {everyday} för glasyrdamm, eller {higher} för mer skydd (<link>de officiella klasserna</link>).",
     "unknown": "Vi kunde inte bekräfta det nationella gränsvärdet i {region}. EU:s bindande gränsvärde på {value} mg/m³ gäller i alla medlemsstater.",
     "noData": "Vi har ännu inte bekräftat gränsvärdet i {region}.",
+    "statesLabel": "Gränsvärden som delstaterna i {region} har fastställt",
+    "statesCaption": "Gränsvärden som vissa delstater har fastställt för damm som innehåller kvarts, där Q är kvartsen i dammet, i %. Vi har bara läst dem i kopior som andra har publicerat, så de är inte bekräftade (kontrollerade {date}).",
+    "state": "Delstat",
+    "respirableDust": "Respirabelt damm",
+    "totalDust": "Totaldamm",
+    "cutOff": "Avskuret i kopian vi läste",
+    "stateSetBy": "{area}: fastställt genom <link>{law}</link>.",
     "agency": "Den nationella myndigheten för arbetsmiljö: <link>{name}</link>.",
     "agencySilica": "Myndighetens <link>sida om kvartsdamm</link>.",
     "choosePrompt": "Välj land eller region för att se gränsvärdet där."

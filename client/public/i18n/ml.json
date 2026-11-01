@@ -86,6 +86,13 @@
     "languages": "ഭാഷകൾ",
     "language": "ഭാഷ:"
   },
+  "offline": {
+    "languageNotSaved": "ഈ ഭാഷ ഈ ഫോണിൽ സേവ് ചെയ്തിട്ടില്ല. ഇത് ഉപയോഗിക്കാൻ ഇന്റർനെറ്റുമായി ബന്ധിപ്പിക്കുക.",
+    "updateReady": "Glazecalc-ന്റെ പുതിയ പതിപ്പ് തയ്യാറാണ്.",
+    "reload": "വീണ്ടും ലോഡ് ചെയ്യുക",
+    "dismiss": "ഇപ്പോൾ വേണ്ട",
+    "install": "ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യുക"
+  },
   "picker": {
     "results": "{count, plural, one {# പൊരുത്തം} other {# പൊരുത്തങ്ങൾ}}",
     "languages": {
@@ -104,6 +111,7 @@
       "asia": "ഏഷ്യ",
       "eastAsia": "കിഴക്കൻ ഏഷ്യ",
       "europe": "യൂറോപ്പ്",
+      "latinAmerica": "ലാറ്റിൻ അമേരിക്ക",
       "middleEastNorthAfrica": "പശ്ചിമേഷ്യയും വടക്കേ ആഫ്രിക്കയും",
       "oceania": "ഓഷ്യാനിയ",
       "southAsia": "ദക്ഷിണേഷ്യ",

@@ -86,6 +86,13 @@
     "languages": "ભાષાઓ",
     "language": "ભાષા:"
   },
+  "offline": {
+    "languageNotSaved": "આ ભાષા આ ફોનમાં સાચવેલી નથી. તેનો ઉપયોગ કરવા ઇન્ટરનેટ સાથે જોડાઓ.",
+    "updateReady": "Glazecalc નું નવું વર્ઝન તૈયાર છે.",
+    "reload": "ફરી લોડ કરો",
+    "dismiss": "હમણાં નહીં",
+    "install": "ઍપ ઇન્સ્ટૉલ કરો"
+  },
   "picker": {
     "results": "{count, plural, one {# મેળ} other {# મેળ}}",
     "languages": {
@@ -104,6 +111,7 @@
       "asia": "એશિયા",
       "eastAsia": "પૂર્વ એશિયા",
       "europe": "યુરોપ",
+      "latinAmerica": "લૅટિન અમેરિકા",
       "middleEastNorthAfrica": "મધ્ય પૂર્વ અને ઉત્તર આફ્રિકા",
       "oceania": "ઓશેનિયા",
       "southAsia": "દક્ષિણ એશિયા",

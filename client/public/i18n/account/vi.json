@@ -436,7 +436,8 @@
       },
       "hidden": {
         "label": "Ẩn",
-        "saved": "Đã lưu: ghi chú được ẩn. Một dòng của nó vẫn còn trong các cẩm nang an toàn."
+        "saved": "Đã lưu: ghi chú được ẩn. Một dòng của nó vẫn còn trong các cẩm nang an toàn.",
+        "savedPlain": "Đã lưu: thông báo được ẩn. Một dòng của nó vẫn nằm ở đầu mỗi trang."
       },
       "help": "Ghi chú ở đầu mỗi trang cho biết trang được AI dịch, kèm cách gợi ý chỉnh sửa."
     }

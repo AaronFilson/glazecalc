@@ -40,6 +40,17 @@
     }
   },
   "more": "Rohkem juhendeid",
+  "related": {
+    "heading": "Teatmelehed",
+    "cones": {
+      "title": "Koonuste tabel",
+      "text": "Ortoni ja SK koonused koos nende temperatuuridega °C ja °F ning sellega, kust iga arv pärineb."
+    },
+    "materials": {
+      "title": "Standardsed toorained",
+      "text": "Iga teegi toorain koos oksiidanalüüsi, Segeri valemi panuse ja ohtudega."
+    }
+  },
   "contents": "Sellel lehel",
   "poison": {
     "numbersFor": "Numbrid:",
@@ -133,6 +144,13 @@
     "respirators": "Tolmumaske müüakse siin klasside kaupa: glasuuritolmu jaoks {everyday} või suurema kaitse jaoks {higher} (<link>ametlikud klassid</link>).",
     "unknown": "{region}: riiklikku piirnormi ei õnnestunud kinnitada. EL-i siduv piirnorm {value} mg/m³ kehtib igas liikmesriigis.",
     "noData": "{region}: piirnormi ei ole veel kinnitatud.",
+    "statesLabel": "Osariikide kehtestatud piirnormid: {region}",
+    "statesCaption": "Piirnormid, mille mõned osariigid on kehtestanud kvartsi sisaldavale tolmule, kus Q on kvartsi sisaldus tolmus, %. Neid on loetud ainult teiste avaldatud koopiatest, seetõttu need ei ole kinnitatud (kontrollitud: {date}).",
+    "state": "Osariik",
+    "respirableDust": "Respireeritav tolm",
+    "totalDust": "Kogutolm",
+    "cutOff": "Loetud koopias ära lõigatud",
+    "stateSetBy": "{area}: kehtestanud <link>{law}</link>.",
     "agency": "Riiklik tööohutusasutus: <link>{name}</link>.",
     "agencySilica": "Asutuse <link>leht ränidioksiidi kohta</link>.",
     "choosePrompt": "Valige oma riik või piirkond, et näha seal kehtivat piirnormi."

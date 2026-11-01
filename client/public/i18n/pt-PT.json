@@ -21,6 +21,7 @@
     "recipe": "Receitas - Glazecalc",
     "import": "Colar receitas - Glazecalc",
     "blends": "Misturas para peças de teste - Glazecalc",
+    "solve": "Resolver para um objetivo - Glazecalc",
     "material": "Matérias-primas - Glazecalc",
     "additive": "Aditivos - Glazecalc",
     "firingLogs": "Registos de cozedura - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Página não encontrada - Glazecalc",
     "shared": "Receita partilhada - Glazecalc",
     "assistants": "Usar o Glazecalc a partir do seu assistente de IA - Glazecalc",
-    "confirm": "Aprovar uma alteração - Glazecalc"
+    "confirm": "Aprovar uma alteração - Glazecalc",
+    "cones": "Tabela de cones: temperaturas dos cones Orton e SK - Glazecalc",
+    "materials": "Matérias-primas padrão para vidrados: análise e perigos - Glazecalc",
+    "materialInfo": "{name}: análise de óxidos e perigos - Glazecalc"
   },
   "nav": {
     "skip": "Saltar para o conteúdo",
@@ -82,6 +86,13 @@
     "languages": "Idiomas",
     "language": "Idioma:"
   },
+  "offline": {
+    "languageNotSaved": "Este idioma não está guardado neste telemóvel. Ligue-se à internet para o usar.",
+    "updateReady": "Está pronta uma nova versão do Glazecalc.",
+    "reload": "Recarregar",
+    "dismiss": "Agora não",
+    "install": "Instalar a aplicação"
+  },
   "picker": {
     "results": "{count, plural, one {# resultado} many {# de resultados} other {# resultados}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Ásia",
       "eastAsia": "Ásia Oriental",
       "europe": "Europa",
+      "latinAmerica": "América Latina",
       "middleEastNorthAfrica": "Médio Oriente e Norte de África",
       "oceania": "Oceânia",
       "southAsia": "Sul da Ásia",
@@ -127,6 +139,10 @@
     "terms": "Os termos para usar o Glazecalc: gratuito para os seus próprios vidrados e o seu trabalho, justo com o servidor partilhado, e fornecido tal como está.",
     "assistants": "Use o Glazecalc no Claude, Copilot, Cursor ou Gemini via MCP: química de vidrados, verificação de limites, substitutos, guias e as suas receitas.",
     "signup": "Crie uma conta gratuita no Glazecalc e guarde receitas de vidrados, matérias-primas, notas e registos de cozedura. Sem anúncios; os dados nunca são vendidos.",
+    "cones": "Cones pirométricos Orton e SK a partir do 022, com as temperaturas em °C e °F, a velocidade de aquecimento de cada tabela e a origem dos valores.",
+    "materials": "As matérias-primas da biblioteca padrão do Glazecalc, de feldspatos e argilas a fritas e fontes de boro, com análise de óxidos, fórmula de Seger e perigos.",
+    "materialInfo": "{name}: análise de óxidos, fórmula de Seger, perda ao fogo e perigos na biblioteca padrão do Glazecalc.",
+    "materialInfoLong": "{name} na biblioteca padrão de matérias-primas para vidrados do Glazecalc: análise de óxidos, contribuição para a fórmula de Seger, perda ao fogo e perigos.",
     "imageAlt": "A página inicial do Glazecalc: química de vidrados gratuita para ceramistas, ao lado de uma fotografia de conjuntos de cones depois da cozedura."
   },
   "notices": {

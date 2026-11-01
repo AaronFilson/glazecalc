@@ -40,6 +40,17 @@
     }
   },
   "more": "Lisää oppaita",
+  "related": {
+    "heading": "Viitesivut",
+    "cones": {
+      "title": "Keilataulukko",
+      "text": "Orton- ja SK-keilat lämpötiloineen °C- ja °F-asteina sekä se, mistä kukin luku on peräisin."
+    },
+    "materials": {
+      "title": "Vakioraaka-aineet",
+      "text": "Jokainen kirjaston raaka-aine oksidianalyyseineen, osuuksineen Segerin kaavassa ja vaaroineen."
+    }
+  },
   "contents": "Tällä sivulla",
   "poison": {
     "numbersFor": "Numerot:",
@@ -133,6 +144,13 @@
     "respirators": "Pölysuojaimia myydään täällä luokittain: lasitepölyyn {everyday} tai paremman suojan saamiseksi {higher} (<link>viralliset luokat</link>).",
     "unknown": "{region}: kansallista raja-arvoa ei voitu vahvistaa. EU:n sitova raja-arvo {value} mg/m³ on voimassa kaikissa jäsenvaltioissa.",
     "noData": "{region}: raja-arvoa ei ole vielä vahvistettu.",
+    "statesLabel": "Osavaltioiden asettamat raja-arvot ({region})",
+    "statesCaption": "Raja-arvot, jotka jotkin osavaltiot ovat asettaneet kvartsia sisältävälle pölylle; Q on pölyn kvartsipitoisuus prosentteina. Luimme ne vain muiden julkaisemista kopioista, joten niitä ei ole vahvistettu (tarkistettu {date}).",
+    "state": "Osavaltio",
+    "respirableDust": "Alveolijakeinen pöly",
+    "totalDust": "Kokonaispöly",
+    "cutOff": "Katkennut lukemassamme kopiossa",
+    "stateSetBy": "{area}: asettanut <link>{law}</link>.",
     "agency": "Kansallinen työturvallisuudesta vastaava taho: <link>{name}</link>.",
     "agencySilica": "Sen <link>sivu piidioksidista</link>.",
     "choosePrompt": "Valitse maa tai alue, niin sivulla näkyy sen raja-arvo."
