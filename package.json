@@ -71,8 +71,8 @@
     "zod": "4.6.7"
   },
   "devDependencies": {
-    "@angular/build": "22.2.3",
-    "@angular/cli": "22.2.3",
+    "@angular/build": "22.2.5",
+    "@angular/cli": "22.2.5",
     "@angular/common": "22.2.3",
     "@angular/compiler": "22.2.3",
     "@angular/compiler-cli": "22.2.3",
@@ -82,7 +82,7 @@
     "@angular/platform-server": "22.2.3",
     "@angular/router": "22.2.3",
     "@angular/service-worker": "22.2.3",
-    "@angular/ssr": "22.2.3",
+    "@angular/ssr": "22.2.5",
     "@axe-core/playwright": "4.13.0",
     "@eslint/js": "10.0.1",
     "@fontsource-variable/lora": "5.3.0",
