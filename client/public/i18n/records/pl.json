@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toksyczny. Prawie nierozpuszczalny.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Uwaga (karta charakterystyki Potterycrafts P3303): H302 działa szkodliwie po połknięciu; nie połykać i unikać wdychania pyłu.",
+  "theoretical-formula-9090t3": "Wzór teoretyczny",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosforan trójwapniowy. Prawdziwy popiół kostny może zawierać trochę CaCO₃, a więc mieć niewielką stratę prażenia (LOI).",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Uwaga (karta charakterystyki Potterycrafts): H302 działa szkodliwie po połknięciu; H315 działa drażniąco na skórę; H319 działa drażniąco na oczy; H335 suchy pył może powodować podrażnienie dróg oddechowych.",
   "water-soluble-fdjx5g": "Rozpuszczalny w wodzie.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "płytki testowe, płytki, etykiety",
   "kiln-sitter-8kghs6": "Kiln-Sitter (wyłącznik stożkowy)",
   "after-putting-a-cone-in-the-swloel": "Po włożeniu stożka do wyłącznika Kiln-Sitter należy zakleić go taśmą malarską. Taśma ochroni stożek przed strąceniem podczas załadunku naczyń, a w trakcie wypału spala się bez śladu.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, stożek, stożki, załadunek"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, stożek, stożki, załadunek",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Norma podaje temperatury odniesienia. Przy szybkości grzania typowej dla ceramików, około 100 °C/h, miejski instytut w Kioto zmierzył, że jego własne stożki Kioto uginały się w temperaturze o 47–79 °C niższej niż wartość JIS dla tego samego numeru; takich pomiarów dla stożków SK według JIS nie znaleźliśmy. Należy ustawić stożek kontrolny i porównać.",
+  "orton-s-older-chart-for-large-jgynh": "Starsza tabela Ortona dla dużych stożków nagrzewanych z szybkością 150 °C na godzinę na ostatnich 100 °C, w przedruku producentów pieców; aktualne wartości Ortona dla dużych stożków przy tej szybkości różnią się od niej nawet o 19 °C. Orton nie publikuje wartości powyżej stożka 14, a ta tabela nie podaje ich powyżej stożka 15. Stożki mierzą pracę cieplną, a nie temperaturę: należy ustawić stożek kontrolny.",
+  "rates-are-over-the-last-100-gs02ii": "Szybkości dotyczą ostatnich 100 °C wypału. Duże stożki 13 i 14 mają inny skład i inne odpowiedniki temperaturowe; Orton nie publikuje wartości powyżej stożka 14."
 }

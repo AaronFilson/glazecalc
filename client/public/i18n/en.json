@@ -86,6 +86,13 @@
     "languages": "Languages",
     "language": "Language:"
   },
+  "offline": {
+    "languageNotSaved": "This language is not saved on this phone. Connect to the internet to use it.",
+    "updateReady": "A new version of Glazecalc is ready.",
+    "reload": "Reload",
+    "dismiss": "Not now",
+    "install": "Install app"
+  },
   "picker": {
     "results": "{count, plural, one {# match} other {# matches}}",
     "languages": {

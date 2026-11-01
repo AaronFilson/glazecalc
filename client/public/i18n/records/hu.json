@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Mérgező. Szinte oldhatatlan.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Figyelem (Potterycrafts biztonsági adatlap, P3303): H302 lenyelve ártalmas; ne nyelje le, és kerülje a por belélegzését.",
+  "theoretical-formula-9090t3": "Elméleti képlet",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalcium-foszfát. A valódi csonthamu kevés kalcium-karbonátot (CaCO₃) tartalmazhat, így kis izzítási vesztesége (LOI) is lehet.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Figyelem (Potterycrafts biztonsági adatlap): H302 lenyelve ártalmas; H315 bőrirritáló hatású; H319 súlyos szemirritációt okoz; H335 a száraz por légúti irritációt okozhat.",
   "water-soluble-fdjx5g": "Vízben oldódó.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "próbalapok, mázpróbák, feliratok",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Miután behelyezte a gúlát a Kiln-Sitterbe (a gúla meghajlásakor lekapcsoló szerkezetbe), takarja le festőszalaggal. A szalag megóvja a gúlát attól, hogy az edények berakása közben leverjék, és égetéskor nyomtalanul elég.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, gúla, gúlák, berakás"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, gúla, gúlák, berakás",
+  "the-standard-gives-reference-temperatures-at-12xot89": "A szabvány referenciahőmérsékleteket ad. A fazekasok szokásos, körülbelül 100 °C/h sebességénél a kiotói városi intézet azt mérte, hogy saját kiotói gúlái 47–79 °C-kal alacsonyabb hőfokon hajoltak meg, mint ugyanazon számhoz tartozó JIS-érték; JIS szerinti SK-gúlákra nem találtunk ilyen méréseket. Tegyen be ellenőrző gúlát, és hasonlítsa össze.",
+  "orton-s-older-chart-for-large-jgynh": "Az Orton régebbi táblázata a nagy gúlákra, amelyeket az égetés utolsó 100 °C-os szakaszán óránként 150 °C-kal melegítenek, ahogyan a kemencegyártók újranyomják; az Orton jelenlegi értékei a nagy gúlákra ezen a sebességen legfeljebb 19 °C-kal térnek el tőle. Az Orton a 14-es gúla felett nem közöl értéket, ez a táblázat pedig a 15-ös felett nem. A gúlák a felvett hőmennyiséget mérik, nem a hőmérsékletet: tegyen be ellenőrző gúlát.",
+  "rates-are-over-the-last-100-gs02ii": "A sebességek az égetés utolsó 100 °C-os szakaszára vonatkoznak. A 13-as és 14-es nagy gúlák összetétele és hőfok-egyenértéke eltérő; az Orton a 14-es gúla felett nem közöl értéket."
 }

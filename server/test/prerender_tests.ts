@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {
+  asciiDigits,
   fontFaces,
   fontPreloads,
   inlineScripts,
@@ -15,7 +16,9 @@ import {
   withFontPreloads
 } from '../../scripts/prerender.mjs';
 import pages from '../../lib/pages.js';
+import languages from '../../lib/regions/languages.js';
 import { adviceFiles, adviceKeys } from '../../scripts/advice-i18n.mjs';
+import { coneFiles, coneKeys, materialFiles, materialKeys } from '../../scripts/material-i18n.mjs';
 import { readPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
 
@@ -33,6 +36,16 @@ const page = (body: string, extra = '') =>
   );
 
 describe('prerender checks', () => {
+  it("reads a cone chart written in a language's own digits (Bengali, Marathi, Arabic) as the figures", () => {
+    expect(asciiDigits('১৩০৫ ১,৩০৫')).to.equal('1305 1,305');
+    expect(asciiDigits('१३०५')).to.equal('1305');
+    expect(asciiDigits('١٬٣٠٥ and 1305')).to.equal('1٬305 and 1305');
+    const chart = (figure: string) => page(`<main><h1>Orton</h1><p>SK</p><td>${figure}</td>${WORDS}</main>`);
+    for (const figure of ['1305', '1,305', '১৩০৫', '१,३०५', '١٬٣٠٥'])
+      expect(pageProblems(chart(figure), '/cones'), figure).not.to.include('it lacks the Orton or SK chart');
+    expect(pageProblems(chart('—'), '/cones')).to.include('it lacks the Orton or SK chart');
+  });
+
   it('gives the render a root the server can rewrite, and addresses by language', () => {
     expect(START).to.include('<gc-root ngCspNonce="__GC_NONCE__">');
     expect(() => startDocument('<html></html>')).to.throw('<gc-root>');
@@ -88,9 +101,26 @@ describe('prerender checks', () => {
     expect(pageProblems(page('<h2>Orton cones</h2> SK'), '/cones')).to.eql(['it lacks the Orton or SK chart']);
   });
 
-  it('renders the reference pages in English only, as the languages offered would show the same English', () => {
-    expect(pages.prerenderLanguages('/cones', ['en', 'de'])).to.eql(['en']);
+  it('renders the reference pages in the languages they are translated into, as the others would show the same English', () => {
+    expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en'])).to.eql(['en']);
+    expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en', 'de'])).to.eql(['en', 'de']);
+    // A material's page is drawn in the browser in every language but English.
+    expect(pages.prerenderLanguages('/materials/silica', ['en', 'de'], ['en', 'de'])).to.eql(['en']);
     expect(pages.prerenderLanguages('/guides/firing', ['en', 'de'])).to.eql(['en', 'de']);
+  });
+
+  it('fails a reference page that says it is not translated, in a language it is translated into', () => {
+    const notice = page('<p class="guide-note">Not translated.</p><td>1305</td> Orton SK');
+    expect(pageProblems(notice, '/cones', 'en')).to.eql(['it carries the notice that it is not translated']);
+    // In a language it is not translated into, the notice is right; other pages have notes of their own.
+    // (Taken from lib/regions/languages.js; once every language has them, there is none to try.)
+    const untranslated = languages.LANGUAGE_CODES.find((code) => !languages.REFERENCE_LANGUAGES.includes(code));
+    if (untranslated) expect(pageProblems(notice, '/cones', untranslated)).to.eql([]);
+    const translated = languages.REFERENCE_LANGUAGES.find((code) => code !== 'en');
+    if (translated) {
+      expect(pageProblems(notice, '/cones', translated)).to.eql(['it carries the notice that it is not translated']);
+    }
+    expect(pageProblems(notice, '/guides', 'en')).to.eql([]);
   });
 
   it('accepts a page with its text, the policy <meta> and the placeholder', () => {
@@ -228,5 +258,40 @@ describe("the advice page's translations (scripts/advice-i18n.mjs)", () => {
         expect(value, `${name} ${key}`).to.equal(all[key]);
       }
     }
+  });
+});
+
+describe("the standard materials' and the cone charts' translations (scripts/material-i18n.mjs)", () => {
+  const records = path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'records');
+
+  it("are the materials' notes and hazards, and the charts' notes, from each language's records, and no others", () => {
+    const material = materialKeys();
+    const cones = coneKeys();
+    // Three notes, one for each chart, and none of them a material's.
+    expect(cones.size).to.equal(3);
+    for (const key of cones) expect(material.has(key), key).to.equal(false);
+    expect(material.size).to.be.above(250);
+    for (const [files, keys] of [
+      [materialFiles(), material],
+      [coneFiles(), cones]
+    ] as const) {
+      expect(Object.keys(files).sort()).to.eql(fs.readdirSync(records).sort());
+      for (const [name, text] of Object.entries(files)) {
+        const all = JSON.parse(fs.readFileSync(path.join(records, name), 'utf8')) as Record<string, string>;
+        for (const [key, value] of Object.entries(JSON.parse(text) as Record<string, string>)) {
+          expect(keys.has(key), `${name} ${key}`).to.equal(true);
+          expect(value, `${name} ${key}`).to.equal(all[key]);
+        }
+      }
+    }
+  });
+
+  it('hold every key in English, and the cone notes (which carry the witness cone advice) in English too', () => {
+    const english = JSON.parse(materialFiles()['en.json']!) as Record<string, string>;
+    expect(Object.keys(english).sort()).to.eql([...materialKeys()].sort());
+    const notes = Object.values(JSON.parse(coneFiles()['en.json']!) as Record<string, string>);
+    expect(notes).to.have.length(3);
+    for (const note of notes) expect(note).to.match(/witness cone|Orton publishes no figure above cone 14/);
+    expect(Object.values(english)).to.include('Theoretical formula');
   });
 });

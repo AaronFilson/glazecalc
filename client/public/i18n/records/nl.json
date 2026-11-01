@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Giftig. Vrijwel onoplosbaar.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Waarschuwing (VIB van Potterycrafts, P3303): H302 schadelijk bij inslikken; slik het niet in en vermijd het inademen van het stof.",
+  "theoretical-formula-9090t3": "Theoretische formule",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Tricalciumfosfaat. Echte beenderas kan een beetje CaCO₃ bevatten en dus een klein gloeiverlies hebben.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Waarschuwing (VIB van Potterycrafts): H302 schadelijk bij inslikken; H315 veroorzaakt huidirritatie; H319 veroorzaakt ernstige oogirritatie; H335 droog stof kan irritatie van de luchtwegen veroorzaken.",
   "water-soluble-fdjx5g": "Oplosbaar in water.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "proefplaatjes, plaatjes, etiketten",
   "kiln-sitter-8kghs6": "Kiln sitter",
   "after-putting-a-cone-in-the-swloel": "Hebt u een kegel in de kiln sitter gelegd, dek hem dan af met afplaktape. De tape voorkomt dat de kegel wordt weggestoten terwijl u de oven vult, en verbrandt bij het stoken zonder resten.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, kegel, kegels, oven vullen"
+  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, kegel, kegels, oven vullen",
+  "the-standard-gives-reference-temperatures-at-12xot89": "De norm geeft referentietemperaturen. Bij een stooksnelheid van ongeveer 100 °C/h, gebruikelijk voor pottenbakkers, mat het gemeentelijke instituut van Kyoto dat zijn eigen Kyoto-kegels 47–79 °C koeler doorbogen dan het JIS-cijfer voor hetzelfde nummer; zulke metingen voor SK-kegels volgens JIS vonden we niet. Zet een controlekegel en vergelijk.",
+  "orton-s-older-chart-for-large-jgynh": "De oudere tabel van Orton voor grote kegels, verhit met 150 °C per uur over de laatste 100 °C, zoals ovenmakers die herdrukken; de huidige cijfers van Orton voor grote kegels bij die snelheid wijken er tot 19 °C van af. Orton publiceert geen cijfer boven kegel 14, en deze tabel geen boven kegel 15. Kegels meten heatwork, geen temperatuur: zet een controlekegel.",
+  "rates-are-over-the-last-100-gs02ii": "Snelheden gelden over de laatste 100 °C van de stook. Grote kegels 13 en 14 hebben een andere samenstelling en andere temperatuurequivalenten; Orton publiceert geen cijfer boven kegel 14."
 }

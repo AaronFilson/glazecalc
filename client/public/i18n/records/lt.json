@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toksiška. Beveik netirpi.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Atsargiai (Potterycrafts saugos duomenų lapas P3303): H302 kenksminga prarijus; neprarykite ir stenkitės neįkvėpti dulkių.",
+  "theoretical-formula-9090t3": "Teorinė formulė",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalcio fosfatas. Tikruose kaulų pelenuose gali būti šiek tiek CaCO₃, todėl ir nedideli degimo nuostoliai (LOI).",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Atsargiai (Potterycrafts saugos duomenų lapas): H302 kenksminga prarijus; H315 dirgina odą; H319 sukelia smarkų akių dirginimą; H335 sausos dulkės gali dirginti kvėpavimo takus.",
   "water-soluble-fdjx5g": "Tirpi vandenyje.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "glazūrų bandiniai, bandiniai, etiketės",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Įdėję piroskopą į išjungiklį Kiln-Sitter, uždenkite jį dažymo juosta. Juosta apsaugos piroskopą, kad jo nenumuštumėte krovdami dirbinius, o degant ji švariai sudegs.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, piroskopas, piroskopai, pakrovimas"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, piroskopas, piroskopai, pakrovimas",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standartas nurodo atskaitos temperatūras. Esant įprastam keramikų kaitinimo greičiui, maždaug 100 °C/h, Kioto miesto institutas išmatavo, kad jo paties Kioto piroskopai linksta 47–79 °C žemesnėje temperatūroje nei to paties numerio JIS skaičius; tokių matavimų SK piroskopams pagal JIS neradome. Pastatykite kontrolinį piroskopą ir palyginkite.",
+  "orton-s-older-chart-for-large-jgynh": "Senesnė Ortono didelių piroskopų lentelė, kaitinant 150 °C per valandą paskutinius 100 °C, kaip ją perspausdina krosnių gamintojai; dabartiniai Ortono skaičiai dideliems piroskopams tokiu greičiu nuo jos skiriasi iki 19 °C. Orton neskelbia jokio skaičiaus piroskopams, kurių numeris didesnis nei 14, o ši lentelė nepateikia skaičiaus piroskopams, kurių numeris didesnis nei 15. Piroskopai matuoja šilumos poveikį, o ne temperatūrą: pastatykite kontrolinį piroskopą.",
+  "rates-are-over-the-last-100-gs02ii": "Greičiai nurodyti per paskutinius 100 °C degimo. Dideli piroskopai 13 ir 14 turi kitokią sudėtį ir kitokius temperatūros atitikmenis; Orton neskelbia jokio skaičiaus piroskopams, kurių numeris didesnis nei 14."
 }

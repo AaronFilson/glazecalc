@@ -120,6 +120,40 @@ describe('ApiResource', () => {
       .flush({});
     await removed;
   });
+
+  describe('getStandard with no network', () => {
+    const offline = { status: 0, statusText: 'Unknown Error' };
+    const settle = () => new Promise((resolve) => setTimeout(resolve));
+
+    it("reads the build's copy of the materials and additives", async () => {
+      for (const name of ['materials', 'additives']) {
+        const standard = TestBed.inject(ApiResourceFactory).for<{ _id?: string; name: string }>(name).getStandard();
+        httpMock()
+          .expectOne(API + '/' + name + '/getStandard')
+          .flush(null, offline);
+        await settle();
+        httpMock()
+          .expectOne({ method: 'GET', url: '/standard/' + name + '.json' })
+          .flush([{ _id: '1', name: 'Whiting' }]);
+        expect(await standard, name).toEqual([{ _id: '1', name: 'Whiting' }]);
+      }
+    });
+
+    it('does not use it for another collection, or for a reply that came', async () => {
+      const factory = TestBed.inject(ApiResourceFactory);
+      const notes = factory.for<{ _id?: string; content: string }>('notes').getStandard();
+      httpMock()
+        .expectOne(API + '/notes/getStandard')
+        .flush(null, offline);
+      await expect(notes).rejects.toBeInstanceOf(HttpErrorResponse);
+      const materials = factory.for<{ _id?: string; name: string }>('materials').getStandard();
+      httpMock()
+        .expectOne(API + '/materials/getStandard')
+        .flush({}, { status: 500, statusText: 'Server Error' });
+      await expect(materials).rejects.toBeInstanceOf(HttpErrorResponse);
+      httpMock().expectNone('/standard/materials.json');
+    });
+  });
 });
 
 describe('errorMessage', () => {

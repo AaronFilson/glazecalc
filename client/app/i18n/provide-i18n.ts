@@ -94,7 +94,7 @@ export function provideI18n(language?: string): Array<Provider | EnvironmentProv
  * records, who to call): an English page shows the data as it is, so these
  * load only for other languages.
  */
-const TRANSLATIONS_OF_DATA = ['records', 'safety', 'regions', 'advice'];
+const TRANSLATIONS_OF_DATA = ['records', 'safety', 'regions', 'advice', 'materials', 'cones'];
 
 const scopeName = (scope: TranslocoScope): string => (typeof scope === 'string' ? scope : (scope?.scope ?? ''));
 

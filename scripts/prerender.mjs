@@ -59,9 +59,29 @@ const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf
 /** The guides among the public pages (not the list of them). */
 const GUIDE_PAGES = pages.PUBLIC_PAGES.filter((page) => page.startsWith('/guides/'));
 
+/**
+ * The text with every decimal digit of any script written as 0–9 (১৩০৫ and ١٣٠٥ read as 1305). Unicode keeps each
+ * script's ten digits in a run from zero, so a digit's value is how many digits come before it in its run.
+ */
+export function asciiDigits(text) {
+  return text.replace(/\p{Nd}/gu, (digit) => {
+    let point = digit.codePointAt(0);
+    let value = 0;
+    while (value < 9 && /\p{Nd}/u.test(String.fromCodePoint(point - 1))) {
+      point--;
+      value++;
+    }
+    return String(value);
+  });
+}
+
 /** What is wrong with one page in particular: the advice page has each piece of the standard advice. */
-export function pageProblems(html, page) {
+export function pageProblems(html, page, code = 'en') {
   const found = [];
+  // A reference page in a language it is translated into has no notice that it is in English.
+  if (pages.REFERENCE_PAGES.includes(page) && languages.REFERENCE_LANGUAGES.includes(code)) {
+    if (/<p\b[^>]*class="guide-note"/.test(html)) found.push('it carries the notice that it is not translated');
+  }
   if (gzipSync(html).length > MAX_GZIPPED) found.push(`it is over ${MAX_GZIPPED / 1024} kB gzipped`);
   if (page === '/advice') {
     const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
@@ -73,8 +93,12 @@ export function pageProblems(html, page) {
     const missing = pages.MATERIAL_PAGES.filter((material) => !new RegExp(`href="[^"]*${material}"`).test(html));
     if (missing.length) found.push(`it does not link ${missing.length} material page(s), such as ${missing[0]}`);
   }
-  // The cone chart has both charts' figures, not an empty table.
-  if (page === '/cones' && !(/Orton/.test(html) && /\bSK\b/.test(html) && /1305|1,305/.test(html))) {
+  // The cone chart has both charts' figures, not an empty table. A language may write them in its own digits
+  // (Bengali, Marathi, Arabic in some regions): those are read as 0–9 first, with any grouping mark.
+  if (
+    page === '/cones' &&
+    !(/Orton/.test(html) && /\bSK\b/.test(html) && /1[,.\u066c\u202f\u00a0 ]?305/.test(asciiDigits(html)))
+  ) {
     found.push('it lacks the Orton or SK chart');
   }
   // A guide ends with links to the others (the "More guides" block), so a search engine can follow them.
@@ -221,7 +245,7 @@ async function renderAll({ jobs, start, faces }) {
       const html = withFontPreloads(rendered, faces);
       const problems = [
         ...problemsWith(html, start, code),
-        ...pageProblems(html, page),
+        ...pageProblems(html, page, code),
         ...logged.map((line) => 'logged: ' + line)
       ];
       if (problems.length) {
@@ -270,7 +294,8 @@ export async function prerender({ build = true, codes = languages.LIVE_LANGUAGES
   if (!faces.length) throw new Error("The stylesheet's text fonts were not found.");
   await rm(PRERENDERED, { recursive: true, force: true });
 
-  // The reference pages (the cone chart, the materials) are in English only: rendered in English alone.
+  // The cone chart and the list of materials are rendered in the languages they are translated into
+  // (REFERENCE_LANGUAGES), a material's page in English alone (lib/pages.js).
   const jobs = codes.flatMap((code) =>
     only
       .filter((page) => pages.prerenderLanguages(page, [code]).length)

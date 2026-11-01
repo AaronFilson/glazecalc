@@ -1,0 +1,63 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/app-shell.html",
+  "navigationRequestStrategy": "freshness",
+  "navigationUrls": [
+    "/**",
+    "!/**/*.*",
+    "!/**/*__*",
+    "!/**/*__*/**",
+    "!/api/**",
+    "!/oauth/**",
+    "!/.well-known/**",
+    "!/mcp/**",
+    "!/signin",
+    "!/signup",
+    "!/forgot",
+    "!/reset",
+    "!/confirm-email",
+    "!/account",
+    "!/account/**",
+    "!/shared",
+    "!/connect/**",
+    "!/confirm/**",
+    "!/*/signin",
+    "!/*/signup",
+    "!/*/forgot",
+    "!/*/reset",
+    "!/*/confirm-email",
+    "!/*/account",
+    "!/*/account/**",
+    "!/*/shared",
+    "!/*/connect/**",
+    "!/*/confirm/**"
+  ],
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/app-shell.html",
+          "/manifest.webmanifest",
+          "/favicon.ico",
+          "/favicon.svg",
+          "/icon-192.png",
+          "/*.css",
+          "/*.js",
+          "/standard/*.json",
+          "/media/lora-latin-wght-normal-*.woff2"
+        ]
+      }
+    },
+    {
+      "name": "more",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/media/**", "/images/**"]
+      }
+    }
+  ]
+}

@@ -23,7 +23,10 @@
 //    language's way (1,5 for 1.5 in German). A changed temperature, limit or
 //    phone number cannot ship. Each section of a guide keeps the English's
 //    structure too: its headings, tables, lists and callouts. A guide in
-//    English only (ENGLISH_ONLY_PAGES in lib/pages.js) has no other copy.
+//    English only (ENGLISH_ONLY_PAGES in lib/pages.js) has no other copy. The
+//    cone chart and the materials (REFERENCE_LANGUAGES) are complete in each
+//    language they are shown in (checkReferenceLanguages), and may be partly
+//    translated in the others.
 // 7. Each translation is in step with the English it was made from
 //    (scripts/i18n-fingerprints.mjs); and what is still in English is
 //    counted, language by language.
@@ -49,9 +52,11 @@ import { pathToFileURL } from 'node:url';
 import { TYPE, parse } from '@formatjs/icu-messageformat-parser';
 import { Lexer } from 'marked';
 import numbers from '../lib/recipe/numbers.js';
+import languageData from '../lib/regions/languages.js';
 import { ENGLISH_ONLY_GUIDES, guideSegments, updateTranslations } from './i18n-fingerprints.mjs';
 import { sources } from './i18n-sources.mjs';
 
+const { REFERENCE_LANGUAGES } = languageData;
 const ROOT = path.resolve(import.meta.dirname, '..');
 const APP = path.join(ROOT, 'client', 'app');
 const I18N = path.join(ROOT, 'client', 'public', 'i18n');
@@ -883,6 +888,31 @@ export function checkBengali(dir = I18N) {
   return problems;
 }
 
+/**
+ * Problems with the reference pages' translations (the cone chart, the materials and each material's page):
+ * a language they are shown in (REFERENCE_LANGUAGES in lib/regions/languages.js) has every message of
+ * reference/ and every standard record's words in records/, the materials' and the cone charts' among them.
+ * A language not in the list may have them in part while it is translated, as a guide may.
+ */
+export function checkReferenceLanguages(dir = I18N, shown = REFERENCE_LANGUAGES) {
+  const problems = [];
+  const files = messageFiles(dir);
+  for (const scope of ['reference', 'records']) {
+    const english = files[scope]?.en ? Object.keys(flatten(readJson(files[scope].en))) : [];
+    for (const language of shown.filter((code) => code !== 'en')) {
+      const file = files[scope]?.[language];
+      const have = new Set(file ? Object.keys(flatten(readJson(file))) : []);
+      const missing = english.filter((key) => !have.has(key));
+      if (missing.length) {
+        problems.push(
+          `${scope} ${language}: the reference pages are shown in ${language}, but ${missing.length} message(s) are missing, such as ${missing[0]}`
+        );
+      }
+    }
+  }
+  return problems;
+}
+
 /** Problems with the translations' fingerprints, and what each language still shows in English. */
 export function checkFingerprints(options) {
   const { changes, inEnglish } = updateTranslations({ ...options, write: false });
@@ -1123,6 +1153,7 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
         ...compareKeys(await keysInUse()),
         ...checkTranslations(),
         ...(await checkSources()),
+        ...checkReferenceLanguages(),
         ...checkGuides(),
         ...checkHanja(),
         ...checkDigits(),

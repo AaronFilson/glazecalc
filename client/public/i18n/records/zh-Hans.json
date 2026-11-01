@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "有毒。几乎不溶。",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "警告 (Potterycrafts SDS P3303)：H302 吞咽有害；不要食入，并避免吸入粉尘。",
+  "theoretical-formula-9090t3": "理论化学式",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "磷酸三钙。真正的骨灰可能含有少量 CaCO₃，因此有少量烧失量。",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "警告 (Potterycrafts SDS)：H302 吞咽有害；H315 造成皮肤刺激；H319 造成严重眼刺激；H335 干燥的粉尘可能引起呼吸道刺激。",
   "water-soluble-fdjx5g": "可溶于水。",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "釉试片、试片、标签",
   "kiln-sitter-8kghs6": "窑炉看管器",
   "after-putting-a-cone-in-the-swloel": "把测温锥放进窑炉看管器后，用美纹纸胶带盖住它。胶带能在装窑时保护测温锥不被碰掉，并且在烧成中烧得干净。",
-  "kiln-sitter-cone-cones-loading-3s7meh": "窑炉看管器、测温锥、装窑"
+  "kiln-sitter-cone-cones-loading-3s7meh": "窑炉看管器、测温锥、装窑",
+  "the-standard-gives-reference-temperatures-at-12xot89": "该标准给出的是基准温度。在陶艺人常用的约 100 °C/h 的升温速率下，京都市的研究机构测得其自制的京都测温锥弯倒时，比相同号码的 JIS 数值低 47～79 °C；我们没有找到 SK 测温锥对照 JIS 的此类测量数据。请放置证据锥并加以比较。",
+  "orton-s-older-chart-for-large-jgynh": "这是 Orton 较早的大号测温锥图表，烧成最后 100 °C 的升温速率为每小时 150 °C，窑炉制造商仍在转载；在该升温速率下，Orton 现行的大号测温锥数值与它最多相差 19 °C。Orton 没有公布超过 14 号的测温锥的数值，这张图表也没有超过 15 号的数值。测温锥测量的是热功，而不是温度：请放置证据锥。",
+  "rates-are-over-the-last-100-gs02ii": "升温速率指烧成最后 100 °C 的升温速率。13 号和 14 号大号测温锥的成分不同，温度当量也不同；Orton 没有公布超过 14 号的测温锥的数值。"
 }

@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toxická. Takmer nerozpustná.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Pozor (KBÚ Potterycrafts P3303): H302 škodlivý po požití; neprehĺtajte a zabráňte vdychovaniu prachu.",
+  "theoretical-formula-9090t3": "Teoretický vzorec",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosforečnan vápenatý. Skutočný kostný popol môže obsahovať trochu CaCO₃, a teda mať malú stratu žíhaním.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Pozor (KBÚ Potterycrafts): H302 škodlivý po požití; H315 dráždi kožu; H319 spôsobuje vážne podráždenie očí; H335 suchý prach môže spôsobiť podráždenie dýchacích ciest.",
   "water-soluble-fdjx5g": "Rozpustná vo vode.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "skúšobné doštičky, doštičky, štítky",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Keď vložíte kužeľ do vypínača Kiln-Sitter, prelepte ho maskovacou páskou. Páska chráni kužeľ, aby nevypadol, keď nakladáte výrobky, a pri výpale čisto vyhorí.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kužeľ, kužele, nakladanie"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kužeľ, kužele, nakladanie",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Norma udáva referenčné teploty. Pri rýchlosti ohrevu, aká je pri hrnčiarskom výpale bežná, okolo 100 °C/h, kjótsky mestský ústav zmeral, že jeho vlastné kjótske kužele sa ohýbajú pri teplote o 47 – 79 °C nižšej, než je hodnota JIS pre rovnaké číslo; takéto merania pre kužele SK podľa JIS sme nenašli. Postavte kontrolný kužeľ a porovnajte.",
+  "orton-s-older-chart-for-large-jgynh": "Staršia tabuľka firmy Orton pre veľké kužele ohrievané rýchlosťou 150 °C za hodinu počas posledných 100 °C, ako ju znovu uverejňujú výrobcovia pecí; súčasné hodnoty firmy Orton pre veľké kužele pri tejto rýchlosti sa od nej líšia až o 19 °C. Orton neuvádza hodnotu pre kužele s číslom vyšším ako 14 a táto tabuľka neuvádza hodnotu pre kužele s číslom vyšším ako 15. Kužele merajú tepelnú prácu, nie teplotu: postavte kontrolný kužeľ.",
+  "rates-are-over-the-last-100-gs02ii": "Rýchlosti sa vzťahujú na posledných 100 °C výpalu. Veľké kužele 13 a 14 majú iné zloženie a iné teplotné ekvivalenty; Orton neuvádza hodnotu pre kužele s číslom vyšším ako 14."
 }

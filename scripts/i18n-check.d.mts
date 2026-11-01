@@ -42,6 +42,8 @@ export function checkFingerprints(options?: { dir?: string; fingerprints?: strin
 };
 /** Problems with the translated guides, each against its English. */
 export function checkGuides(dir?: string, englishOnly?: readonly string[]): string[];
+/** Problems with the reference pages' translations: complete in each language they are shown in. */
+export function checkReferenceLanguages(dir?: string, shown?: readonly string[]): string[];
 /** Problems with the English written from code. */
 export function checkSources(dir?: string): Promise<string[]>;
 /** Problems with Korean's script: hanja in its messages or guides that its glossary does not give. */

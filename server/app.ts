@@ -60,7 +60,8 @@ app.set('trust proxy', 1);
 // files and block the inline script the meta policy allows by its hash.
 // data: images are the check marks and arrows Bootstrap's stylesheet inlines
 // as SVG. Angular adds each component's styles as <style> elements, which a
-// page's own nonce allows.
+// page's own nonce allows. The service worker and the web manifest are this
+// site's own files.
 export const contentSecurityPolicy = (nonce?: string): string =>
   [
     "connect-src 'self'",
@@ -68,6 +69,8 @@ export const contentSecurityPolicy = (nonce?: string): string =>
     "font-src 'self'",
     nonce ? `style-src 'self' 'nonce-${nonce}'` : "style-src 'self'",
     "frame-src 'self'",
+    "worker-src 'self'",
+    "manifest-src 'self'",
     "form-action 'self'",
     "frame-ancestors 'none'"
   ].join('; ');
@@ -156,6 +159,8 @@ app.get('/.well-known/microsoft-identity-association.json', microsoftAssociation
 // them for a year; index.html must be checked each time to pick up new builds.
 // Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css,
 // and the fonts it copies to media/ (lora-latin-wght-normal-6YFDQXH3.woff2).
+// The service worker and its manifest (scripts/service-worker.mjs), and the kill switch beside them.
+const SERVICE_WORKER_FILES = new Set(['ngsw-worker.js', 'ngsw.json', 'safety-worker.js', 'worker-basic.min.js']);
 const HASHED = /^((main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)|[\w.-]+-[A-Z0-9]{8}\.woff2)$/;
 // The translations (client/public/i18n: JSON, and the guides' Markdown) keep
 // their names from build to build, so a browser may use its copy for five
@@ -210,14 +215,37 @@ app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
 
 app.get('/robots.txt', site.robotsTxt);
 
+// The page the service worker shows for any address while the phone is offline (scripts/service-worker.mjs,
+// docs/adr/0028-service-worker.md): index.html with one style nonce for the whole build, written into the page
+// and named in its policy here, which the worker keeps with the page. The bytes are the file's, as the worker
+// checks them against its manifest. Online, every address is still answered below, with a nonce of its own.
+app.get('/app-shell.html', async (req, res, next) => {
+  let shell: Buffer;
+  try {
+    shell = await readFile(path.join(CLIENT, 'app-shell.html'));
+  } catch {
+    return next();
+  }
+  const nonce = /ngCspNonce="([^"]+)"/.exec(shell.toString('utf8'))?.[1];
+  if (!nonce) return next();
+  return res
+    .set('Cache-Control', 'no-cache')
+    .set('Content-Security-Policy', contentSecurityPolicy(nonce))
+    .set('X-Robots-Tag', 'noindex')
+    .type('html')
+    .send(shell);
+});
+
 app.use(
   express.static(CLIENT, {
     // index.html is written for each page below, so / is too.
     index: false,
     setHeaders: (res, file) => {
       if (HASHED.test(path.basename(file))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
-      else if (file.endsWith('index.html')) res.setHeader('Cache-Control', 'no-cache');
-      else if (path.relative(CLIENT, file).startsWith(I18N)) res.setHeader('Cache-Control', TRANSLATIONS_CACHE);
+      // The worker's own files too: a release must not wait for a copy of them to run out.
+      else if (file.endsWith('index.html') || SERVICE_WORKER_FILES.has(path.basename(file))) {
+        res.setHeader('Cache-Control', 'no-cache');
+      } else if (path.relative(CLIENT, file).startsWith(I18N)) res.setHeader('Cache-Control', TRANSLATIONS_CACHE);
     }
   })
 );

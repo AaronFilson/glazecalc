@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { firstValueFrom, isObservable } from 'rxjs';
 import { PAGE_LANGUAGE } from '../../i18n/language';
+import { REFERENCE_LANGUAGE_LIST } from '../materials/reference-text';
 import { httpMock, testProviders } from '../../testing/test-providers';
 import { blocks, coneSystemsIn, forConeSystem, readGuide } from './guide-document';
 import { GuidePage } from './guide-page';
@@ -77,10 +78,14 @@ describe('guides', () => {
       'Standard materials'
     ]);
 
-    // Those pages are in English only: another language's list does not offer them.
+    // A language the pages are not translated into does not offer them in its list.
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
-      providers: [...testProviders(), { provide: PAGE_LANGUAGE, useValue: 'de' }]
+      providers: [
+        ...testProviders(),
+        { provide: PAGE_LANGUAGE, useValue: 'de' },
+        { provide: REFERENCE_LANGUAGE_LIST, useValue: ['en'] }
+      ]
     });
     const german = TestBed.createComponent(GuidesPage);
     await german.whenStable();

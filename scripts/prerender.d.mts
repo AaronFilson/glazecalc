@@ -26,8 +26,10 @@ export function withFontPreloads(html: string, faces: FontFace[]): string;
 export function problemsWith(html: string, start: string, code?: string, minText?: number): string[];
 /** A page larger than this, gzipped, fails the build. */
 export const MAX_GZIPPED: number;
+/** The text with every decimal digit of any script written as 0–9 (১৩০৫ and ١٣٠٥ read as 1305). */
+export function asciiDigits(text: string): string;
 /** What is wrong with one page in particular (its size; the advice page's standard advice). */
-export function pageProblems(html: string, page: string): string[];
+export function pageProblems(html: string, page: string, code?: string): string[];
 export function prerender(options?: {
   build?: boolean;
   codes?: readonly string[];

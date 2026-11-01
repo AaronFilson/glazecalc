@@ -6,6 +6,7 @@ import { RichText } from '../../i18n/rich-text';
 import { CATEGORY_LABELS, byNameIn, statusText } from '../../shared/library-info';
 import { PageHeader } from '../../shared/page-header';
 import { StructuredData, referencePage } from '../../shared/structured-data';
+import { REFERENCE_LANGUAGE_LIST } from './reference-text';
 import { STANDARD_MATERIALS, materialPath } from './standard-materials';
 
 /** The standard materials, each linking to its own page (material-info-page.ts), by kind. */
@@ -18,7 +19,7 @@ import { STANDARD_MATERIALS, materialPath } from './standard-materials';
       [title]="t('reference.materials.heading')"
       [lead]="t('reference.materials.lead', { count: count })"
     />
-    @if (language !== 'en') {
+    @if (!translated) {
       <p class="guide-note">{{ t('reference.notTranslated') }}</p>
     }
     <p>{{ t('reference.materials.intro') }}</p>
@@ -64,11 +65,14 @@ import { STANDARD_MATERIALS, materialPath } from './standard-materials';
 })
 export class MaterialsPage {
   protected readonly language = inject(PAGE_LANGUAGE);
+  /** Whether the page is in a language the reference pages are translated into (English is). */
+  protected readonly translated = inject(REFERENCE_LANGUAGE_LIST).includes(this.language);
   protected readonly count = STANDARD_MATERIALS.length;
 
   /** The materials by kind, in the order of CATEGORY_LABELS, each kind's by name. */
   protected readonly groups = computed(() => {
-    const byName = byNameIn('en');
+    // The names are trade names; a translated page sorts them as its language's readers expect.
+    const byName = byNameIn(this.translated ? this.language : 'en');
     return Object.entries(CATEGORY_LABELS)
       .map(([category, label]) => ({
         category,
@@ -90,7 +94,8 @@ export class MaterialsPage {
         { name: 'Glazecalc', path: '/' },
         { name: translate('reference.materials.crumb'), path: '/materials' }
       ],
-      'CollectionPage'
+      'CollectionPage',
+      this.translated ? this.language : 'en'
     )
   );
 }

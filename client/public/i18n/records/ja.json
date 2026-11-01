@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "有毒です。ほぼ不溶性です。",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "警告（Potterycrafts の SDS P3303）: H302 飲み込むと有害。口に入れないでください。また、粉じんを吸い込まないようにしてください。",
+  "theoretical-formula-9090t3": "理論式",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "リン酸三カルシウムです。本物の骨灰は CaCO₃ を少し含むことがあり、そのため強熱減量がわずかにあります。",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "警告（Potterycrafts の SDS）: H302 飲み込むと有害、H315 皮膚刺激、H319 強い眼刺激、H335 乾いた粉じんは呼吸器への刺激のおそれ。",
   "water-soluble-fdjx5g": "水溶性です。",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "テストピース、タイル、ラベル",
   "kiln-sitter-8kghs6": "キルンシッター",
   "after-putting-a-cone-in-the-swloel": "キルンシッターにコーンを入れたら、マスキングテープで覆ってください。テープは、器を窯詰めするときにコーンが当たって落ちるのを防ぎ、焼成中にきれいに燃えてなくなります。",
-  "kiln-sitter-cone-cones-loading-3s7meh": "キルンシッター、コーン、窯詰め"
+  "kiln-sitter-cone-cones-loading-3s7meh": "キルンシッター、コーン、窯詰め",
+  "the-standard-gives-reference-temperatures-at-12xot89": "規格が示すのは基準温度です。陶芸でよくある約 100 °C/h の昇温速度で、京都市の研究所は自らの京都ゼーゲルが、同じ番号の JIS の値より 47〜79 °C 低い温度で曲がることを測定しています。JIS の SK コーンについて同様の測定は見つかりませんでした。確認用コーンを置いて比べてください。",
+  "orton-s-older-chart-for-large-jgynh": "オルトンの旧版の表で、焼成の最後の 100 °C の間を毎時 150 °C で加熱した大型コーンの値です。窯メーカーが転載しているものです。この昇温速度でのオルトンの現行の大型コーンの値とは、最大 19 °C 異なります。オルトンはコーン 14 を超える値を公表しておらず、この表もコーン 15 を超える値はありません。コーンが測るのは温度ではなく焼度です。確認用コーンを置いてください。",
+  "rates-are-over-the-last-100-gs02ii": "昇温速度は焼成の最後の 100 °C の間のものです。大型コーン 13 と 14 は組成が異なり、温度の値も異なります。オルトンはコーン 14 を超える値を公表していません。"
 }

@@ -230,6 +230,34 @@ test("an Urdu page fetches the app's Nastaliq font and sets its text in it, in l
   await expect(page.locator('body')).toHaveCSS('line-height', '32.3px');
 });
 
+test('an Urdu page shows its text in the device font while the Nastaliq font is on its way, then switches', async ({
+  page
+}) => {
+  // A slow connection: the font file arrives after 3 s.
+  await page.route(/noto-nastaliq-urdu-wght-normal/, async (route) => {
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await route.continue();
+  });
+  const fontsOfH1 = async () => {
+    const cdp = await page.context().newCDPSession(page);
+    await cdp.send('DOM.enable');
+    await cdp.send('CSS.enable');
+    const { root } = await cdp.send('DOM.getDocument');
+    const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector: 'h1' });
+    const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
+    return fonts;
+  };
+  await page.goto('/ur/about', { waitUntil: 'commit' });
+  // The text is there, in lines of the same height, before the font has arrived.
+  await expect(page.locator('h1')).toHaveText(/[؀-ۿ]/, { timeout: 2500 });
+  await expect(page.locator('body')).toHaveCSS('line-height', '32.3px');
+  expect(await fontsOfH1()).not.toContainEqual(expect.objectContaining({ familyName: 'Noto Nastaliq Urdu' }));
+  // Then the Nastaliq replaces it.
+  await expect
+    .poll(async () => (await fontsOfH1()).some((font) => font.familyName === 'Noto Nastaliq Urdu'), { timeout: 10000 })
+    .toBe(true);
+});
+
 test('the pseudo-locale accents every message, which shows any left unmarked', async ({ page }) => {
   await page.goto('/en-XA/about');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en-XA');

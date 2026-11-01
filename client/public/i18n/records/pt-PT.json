@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Tóxico. Quase insolúvel.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Atenção (FDS P3303 da Potterycrafts): H302 nocivo por ingestão; não ingira e evite respirar as poeiras.",
+  "theoretical-formula-9090t3": "Fórmula teórica",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Fosfato tricálcico. A cinza de ossos verdadeira pode conter um pouco de CaCO₃ e, por isso, ter uma pequena perda ao fogo.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Atenção (FDS da Potterycrafts): H302 nocivo por ingestão; H315 provoca irritação cutânea; H319 provoca irritação ocular grave; H335 o pó seco pode provocar irritação das vias respiratórias.",
   "water-soluble-fdjx5g": "Solúvel em água.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "peças de teste de vidrado, peças de teste, etiquetas",
   "kiln-sitter-8kghs6": "Kiln sitter",
   "after-putting-a-cone-in-the-swloel": "Depois de pôr um cone no kiln sitter, cubra-o com fita-cola de papel. A fita protege o cone de ser derrubado enquanto enforna as peças, e queima-se sem deixar resíduos na cozedura.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, cone, cones, enforna"
+  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, cone, cones, enforna",
+  "the-standard-gives-reference-temperatures-at-12xot89": "A norma indica temperaturas de referência. A uma velocidade habitual de ceramista, de cerca de 100 °C/h, o instituto municipal de Quioto mediu que os seus próprios cones de Quioto dobravam entre 47 e 79 °C abaixo do valor JIS para o mesmo número; não encontrámos medições destas para os cones SK segundo a JIS. Coloque um cone testemunho e compare.",
+  "orton-s-older-chart-for-large-jgynh": "A tabela mais antiga da Orton para cones grandes aquecidos a 150 °C por hora nos últimos 100 °C, tal como os fabricantes de fornos a reimprimem; os valores atuais da Orton para cones grandes a essa velocidade diferem dela até 19 °C. A Orton não publica nenhum valor acima do cone 14, e esta tabela nenhum acima do cone 15. Os cones medem o trabalho térmico, não a temperatura: coloque um cone testemunho.",
+  "rates-are-over-the-last-100-gs02ii": "As velocidades referem-se aos últimos 100 °C da cozedura. Os cones grandes 13 e 14 têm composições diferentes e equivalências de temperatura diferentes; a Orton não publica nenhum valor acima do cone 14."
 }

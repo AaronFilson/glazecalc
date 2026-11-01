@@ -94,13 +94,16 @@ export const routes: Routes = [
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
-  // The cone chart, and a page for each standard material: in English only, like the guide above
-  // (lib/pages.js, ENGLISH_ONLY_PAGES). /materials/<name> is apart from the signed-in /material page.
+  // The cone chart, the list of materials and a page for each standard material: translated into the
+  // languages in REFERENCE_LANGUAGES (lib/regions/languages.js), in English with a notice in the others.
+  // The chart's notes are in cones/ and a material's notes and hazards in materials/, each the words of
+  // records/ that the page needs (scripts/material-i18n.mjs). /materials/<name> is apart from the
+  // signed-in /material page.
   {
     path: 'cones',
     title: marker('titles.cones'),
     data: { description: marker('meta.cones') },
-    providers: [provideTranslocoScope('reference')],
+    providers: [provideTranslocoScope('reference', 'cones')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/materials/cones-page').then((m) => m.ConesPage)
   },
@@ -118,7 +121,7 @@ export const routes: Routes = [
     path: 'materials/:slug',
     title: marker('titles.materialInfo'),
     canMatch: [knownMaterial],
-    providers: [provideTranslocoScope('reference')],
+    providers: [provideTranslocoScope('reference', 'materials')],
     resolve: {
       messages: scopeTranslations,
       material: materialOf,

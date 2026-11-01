@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Độc. Gần như không tan.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Cảnh báo (Potterycrafts SDS P3303): H302 có hại nếu nuốt phải; không nuốt và tránh hít bụi.",
+  "theoretical-formula-9090t3": "Công thức hóa học lý thuyết",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Canxi photphat. Tro xương thật có thể chứa một ít CaCO₃ và do đó có LOI nhỏ.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Cảnh báo (Potterycrafts SDS): H302 có hại nếu nuốt phải; H315 gây kích ứng da; H319 gây kích ứng mắt nghiêm trọng; H335 bụi khô có thể gây kích ứng đường hô hấp.",
   "water-soluble-fdjx5g": "Tan trong nước.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "mẫu thử men, mẫu thử, nhãn",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Sau khi đặt một côn vào Kiln-Sitter, hãy dùng băng dính giấy che nó lại. Băng dính sẽ bảo vệ côn khỏi bị va rơi khi xếp sản phẩm, và cháy sạch khi nung.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, côn, xếp lò"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, côn, xếp lò",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Tiêu chuẩn đưa ra các nhiệt độ tham chiếu. Ở tốc độ nung của thợ gốm, khoảng 100 °C/h, viện của thành phố Kyoto đã đo các côn Kyoto của chính họ và thấy chúng cong ở nhiệt độ thấp hơn con số JIS của cùng số côn từ 47–79 °C; chúng tôi không tìm thấy phép đo nào như vậy cho côn SK theo JIS. Hãy đặt một côn chứng và so sánh.",
+  "orton-s-older-chart-for-large-jgynh": "Bảng cũ hơn của Orton cho côn lớn được gia nhiệt ở 150 °C mỗi giờ trong 100 °C cuối, như các nhà sản xuất lò in lại; số liệu hiện hành của Orton cho côn lớn ở tốc độ đó chênh lệch với bảng này tới 19 °C. Orton không công bố số liệu nào cho côn cao hơn côn 14, và bảng này không có số liệu nào cho côn cao hơn côn 15. Côn đo công nhiệt, không đo nhiệt độ: hãy đặt một côn chứng.",
+  "rates-are-over-the-last-100-gs02ii": "Tốc độ được tính trong 100 °C cuối của quá trình nung. Côn lớn 13 và 14 có thành phần khác nhau và nhiệt độ tương đương khác nhau; Orton không công bố số liệu nào cho côn cao hơn côn 14."
 }
