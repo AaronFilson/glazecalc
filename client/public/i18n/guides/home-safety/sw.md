@@ -212,7 +212,7 @@ Vipimo vya nyumbani vinabishaniwa. FDA inasema vifaa vya nyumbani vya kupangusa 
 ### Kanuni za familia tunazopendekeza
 
 - Vikombe, bakuli na sahani za watoto: glaze za ndani zinazodumu zilizopimwa maabara tu, au vyombo vya mezani vya dukani.
-- Usihifadhi chakula au kinywaji chenye asidi (machungwa na malimau, nyanya, siki, juisi ya matunda, divai) katika vyungu vilivyopakwa glaze yoyote ambayo hujaipima.
+- Usihifadhi chakula au kinywaji chenye asidi (machungwa na malimau, nyanya, siki, juisi ya matunda, divai) katika vyungu vilivyopakwa glaze yoyote ambayo hujaipimisha.
 - Usitumie vipande vyenye crazing kwa chakula.
 - Vigae vya majaribio na majaribio hubaki katika karakana, kamwe si jikoni, katika sanduku la vitu vya kuchezea au katika bakuli la mnyama.
 - Kuwa mwangalifu na vyombo vingine vya udongo pia. FDA inashauri tahadhari kwa vipande vya mkono au vinavyoonekana duni, vya kale, vilivyoharibika au vilivyochakaa, vilivyonunuliwa sokoni kwa mitumba na mapambo ya rangi angavu ya chungwa, nyekundu au njano.
