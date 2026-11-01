@@ -59,6 +59,22 @@ const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf
 /** The guides among the public pages (not the list of them). */
 const GUIDE_PAGES = pages.PUBLIC_PAGES.filter((page) => page.startsWith('/guides/'));
 
+/**
+ * The text with every decimal digit of any script written as 0–9 (১৩০৫ and ١٣٠٥ read as 1305). Unicode keeps each
+ * script's ten digits in a run from zero, so a digit's value is how many digits come before it in its run.
+ */
+export function asciiDigits(text) {
+  return text.replace(/\p{Nd}/gu, (digit) => {
+    let point = digit.codePointAt(0);
+    let value = 0;
+    while (value < 9 && /\p{Nd}/u.test(String.fromCodePoint(point - 1))) {
+      point--;
+      value++;
+    }
+    return String(value);
+  });
+}
+
 /** What is wrong with one page in particular: the advice page has each piece of the standard advice. */
 export function pageProblems(html, page, code = 'en') {
   const found = [];
@@ -77,8 +93,12 @@ export function pageProblems(html, page, code = 'en') {
     const missing = pages.MATERIAL_PAGES.filter((material) => !new RegExp(`href="[^"]*${material}"`).test(html));
     if (missing.length) found.push(`it does not link ${missing.length} material page(s), such as ${missing[0]}`);
   }
-  // The cone chart has both charts' figures, not an empty table.
-  if (page === '/cones' && !(/Orton/.test(html) && /\bSK\b/.test(html) && /1305|1,305/.test(html))) {
+  // The cone chart has both charts' figures, not an empty table. A language may write them in its own digits
+  // (Bengali, Marathi, Arabic in some regions): those are read as 0–9 first, with any grouping mark.
+  if (
+    page === '/cones' &&
+    !(/Orton/.test(html) && /\bSK\b/.test(html) && /1[,.\u066c\u202f\u00a0 ]?305/.test(asciiDigits(html)))
+  ) {
     found.push('it lacks the Orton or SK chart');
   }
   // A guide ends with links to the others (the "More guides" block), so a search engine can follow them.

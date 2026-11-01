@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {
+  asciiDigits,
   fontFaces,
   fontPreloads,
   inlineScripts,
@@ -35,6 +36,16 @@ const page = (body: string, extra = '') =>
   );
 
 describe('prerender checks', () => {
+  it("reads a cone chart written in a language's own digits (Bengali, Marathi, Arabic) as the figures", () => {
+    expect(asciiDigits('১৩০৫ ১,৩০৫')).to.equal('1305 1,305');
+    expect(asciiDigits('१३०५')).to.equal('1305');
+    expect(asciiDigits('١٬٣٠٥ and 1305')).to.equal('1٬305 and 1305');
+    const chart = (figure: string) => page(`<main><h1>Orton</h1><p>SK</p><td>${figure}</td>${WORDS}</main>`);
+    for (const figure of ['1305', '1,305', '১৩০৫', '१,३०५', '١٬٣٠٥'])
+      expect(pageProblems(chart(figure), '/cones'), figure).not.to.include('it lacks the Orton or SK chart');
+    expect(pageProblems(chart('—'), '/cones')).to.include('it lacks the Orton or SK chart');
+  });
+
   it('gives the render a root the server can rewrite, and addresses by language', () => {
     expect(START).to.include('<gc-root ngCspNonce="__GC_NONCE__">');
     expect(() => startDocument('<html></html>')).to.throw('<gc-root>');
