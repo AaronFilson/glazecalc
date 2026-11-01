@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Digite uma fórmula com números simples, como {typed}: as quantidades aparecem como subscritos, {shown}. Para unir as partes de uma fórmula, como em {joined}, copie este ponto:",
+    "relatedTo": "Relacionado a",
+    "notes": "Notas",
+    "loi": "Perda ao fogo (PF), %",
+    "molecularWeight": "Peso molecular da fórmula crua (usado só se a PF estiver em branco)",
+    "formulaHeading": "A fórmula, queimada",
+    "oxideSelection": "Óxido",
+    "noOxide": "nenhum",
+    "addOxide": "Adicionar o óxido à lista",
+    "formulaIn": "Esta fórmula está em",
+    "percent": "Porcentagem",
+    "molecular": "Molecular (unitária)",
+    "amount": "quantidade",
+    "removeOxide": "Remover",
+    "removeOxideName": "Remover {oxide} da fórmula",
+    "save": "Salvar",
+    "elements": "Elementos",
+    "removeNote": "As receitas salvas guardam sua própria cópia, então não mudam.",
+    "saveFailed": "Erro: a solicitação ao servidor falhou."
+  },
+  "material": {
+    "title": "Matérias-primas",
+    "lead": "Suas próprias matérias-primas, informadas como fórmula química ou análise de óxidos.",
+    "newHeading": "Adicionar uma matéria-prima",
+    "name": "Nome",
+    "rawFormula": "Fórmula crua",
+    "weightsNote": "O peso equivalente e o peso após a queima são calculados a partir da fórmula e da PF quando você salva.",
+    "mineHeading": "Minhas matérias-primas",
+    "none": "Nenhuma ainda. As matérias-primas que você adicionar abaixo podem entrar nas suas receitas, junto com as padrão.",
+    "rawFormulaColumn": "Fórmula crua",
+    "standardHeading": "Matérias-primas padrão",
+    "fetchFailed": "Ocorreu um erro ao obter as informações das matérias-primas.",
+    "standardFetchFailed": "Ocorreu um erro ao obter as informações das matérias-primas padrão.",
+    "saved": "Pronto. Matéria-prima adicionada ao banco de dados."
+  },
+  "additive": {
+    "title": "Aditivos e corantes",
+    "lead": "Corantes e opacificantes medidos sobre a receita-base, como o óxido de cobalto ou de estanho. Uma receita pode deixá-los fora da fórmula de Seger ou contá-los nela.",
+    "newHeading": "Adicionar um aditivo ou corante",
+    "name": "Nome",
+    "formulaAsSold": "Fórmula, como vendido",
+    "noChemistry": "Não tem análise de óxidos, como um pigmento cerâmico comercial: deixar fora da fórmula de Seger",
+    "firedNote": "Informe o que ele dá ao esmalte depois de queimado: o óxido de cobalto preto, {asSold}, vira {fired}, com {loi}% de PF. Assim, uma receita pode contá-lo na fórmula de Seger.",
+    "mineHeading": "Meus aditivos e corantes",
+    "none": "Nenhum ainda. Os aditivos que você adicionar abaixo podem entrar nas suas receitas, junto com os padrão.",
+    "standardHeading": "Aditivos padrão",
+    "fetchFailed": "Ocorreu um erro ao obter as informações dos aditivos.",
+    "standardFetchFailed": "Ocorreu um erro ao obter as informações dos aditivos padrão.",
+    "saved": "Pronto. Aditivo adicionado ao banco de dados."
+  }
+}

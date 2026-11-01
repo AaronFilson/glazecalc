@@ -1154,6 +1154,104 @@ const LANGUAGES = {
       law: 'උපරිම and නොඉක්මවන? for "at most"; ට වඩා අඩු? for "less than"; අවම වශයෙන්? for "at least"',
       sounds: 'උපරිම, නොඉක්මවන, අවම වශයෙන්'
     })
+  },
+  // Round 10's wave L1 (scratch/round10/c-l1/plan.md): Brazilian Portuguese
+  // and one Latin American Spanish, each with the standard notice. Both have
+  // a European sibling already (pt-PT, es) whose files are references for
+  // terms only: the register and the everyday words differ on nearly every
+  // line. Brazil, Mexico, Argentina and Chile buy Orton cones.
+  'pt-BR': {
+    language: 'Brazilian Portuguese',
+    country: 'Brazil',
+    region: 'BR',
+    shops:
+      "lib/regions/suppliers.js lists Brazil's shops where round 10 found them; read also Brazilian makers' and dealers' catalogues (matérias-primas, fritas, esmaltes, corantes) and the product sheets of the mineral producers, which give a material's name as the bag prints it (feldspato potássico, caulim, quartzo moído, carbonato de cálcio).",
+    termbank:
+      "VOLP (the Academia Brasileira de Letras' Vocabulário Ortográfico) for spelling, ABNT's standards for terms (NBR 14725 for GHS words), and the ceramics teaching texts of Senai and the universities (UNESP, UFRGS)",
+    kilns:
+      "Brazilian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in Brazil, and the shops' kiln-furniture pages; they give the words for kiln parts, controllers and firing steps (queima de biscoito, queima de esmalte, redução).",
+    law: "Brazilian law as gov.br and the Diário Oficial write it: Anvisa's resolutions on ceramics in contact with food (the current RDC, number read on gov.br), NR-15 Anexo 12 (sílica livre cristalizada, limite de tolerância), NR-6 (EPI; PFF2 and PFF3, Brazil's names for FFP2 and FFP3), ABNT NBR 14725 (GHS: Perigo, Atenção, FDS/FISPQ); the bodies: Anvisa, Fundacentro, SAMU 192, Disque-Intoxicação 0800 722 6001. Where the English names EU law (Directive 84/500/EEC, CLP), use the Portuguese title on EUR-Lex, keeping the number;",
+    terms:
+      'the term banks and teaching texts of Brazilian Portuguese ({TERMBANK}); IATE gives European Portuguese, so check each term against Brazilian usage. For software conventions (register, buttons, punctuation), the Microsoft Portuguese (Brazil) style guide and Google and Apple pt-BR interfaces.',
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/pt-BR.md exists already (start from it; add, do not rewrite). Its "Differences from pt-PT" table comes first.',
+        'Translate from the English. The pt-PT files and docs/translations/pt-PT.md are references for terms only: never copy their register (pt-PT avoids você) or their vocabulary (ficheiro, ecrã, utilizador, guardar, palavra-passe).',
+        'Register: você with third-person verbs, often left out where the verb is clear; buttons as Brazilian software writes them (Salvar, Excluir, Cancelar).',
+        'Numbers as CLDR pt-BR and the app print them: decimal comma (1,5), thousands with a point from four digits (1.240 °C, 12.500 g; unseparated 1240 °C also passes the check), dates as 14 de outubro de 2026, the 24-hour clock as 20:00 (never 20h).',
+        'Plural forms: CLDR pt (Brazil) has `one`, `many` and `other`, and **`one` covers 0 and 1** (and 1,5): the `one` form must read right for 0 and keeps `#`. Where the English `one` has no `#`, give an `=1` form for exactly one and a `one` form with `#` (the check asks for it). `many` (compact millions) reads as `other`.',
+        'Law terms with the English they translate: "at most", "no more than" no máximo / não mais que; "less than", "under" menos de / abaixo de; "at least" no mínimo. Keep them apart: a slip moves a legal limit.',
+        'Cones: Orton wherever the English says Orton (cone Orton 6); never a Seger number for an Orton number, nor any equivalence.',
+        'No added emphasis: sempre, nunca, obrigatoriamente only where the English has always, never, must.',
+        "Never translate a country's name into Brazil's (or name Brazil) where the English writes generically."
+      ],
+      translate: [
+        'Translate from the English. The pt-PT files are references for terms only: never copy their register or vocabulary.',
+        'Register: você with third-person verbs; buttons as the style sheet gives them (Salvar, Excluir).',
+        'Numbers: 1,5; 1.240 °C or 1240 °C (never 1.24); 12.500 g; 14 de outubro de 2026; 20:00 on the 24-hour clock. Digits where the English has digits, words where it has words.',
+        'Plural forms: `one` covers 0 and 1, so it keeps `#`; where the English `one` has no `#`, add `=1` for exactly one and keep `one` with `#`. Write `one`, `many` and `other`.',
+        'Law terms: "at most" no máximo / não mais que, never menos de ("less than"). Cones as Orton. No added sempre or nunca.',
+        "Never name Brazil where the English writes generically, and never translate another country's name into Brazil's."
+      ],
+      review: [
+        'Brazilian Portuguese: no pt-PT register or words (ficheiro, ecrã, utilizador, guardar, palavra-passe; no tu forms); você with third-person verbs.',
+        'Brazilian Portuguese: "at most" and "no more than" are no máximo / não mais que, never menos de or abaixo de. Check every one in the food-contact, silica and safety text.',
+        'Brazilian Portuguese: every plural `one` keeps `#` (it shows for 0), with `=1` where the English `one` has none; 1,5 with a comma, thousands with a point (never 1.24 for 1240); 20:00, never 20h.',
+        'Brazilian Portuguese: Orton cones as Orton, no Seger number for an Orton number; no sempre, nunca or obrigatoriamente the English lacks.'
+      ],
+      backtranslate: [
+        'no máximo and não mais que mean "at most" (the limit itself passes); menos de and abaixo de mean "less than" (it does not). Translate each back exactly as it reads.',
+        'Words of emphasis and obligation (sempre, nunca, obrigatoriamente, deve) are translated back as strongly as they read.',
+        'Names of Brazilian services and bodies (SAMU 192, Disque-Intoxicação, Anvisa, Fundacentro) stay in Portuguese: compare what they refer to.'
+      ]
+    }
+  },
+  'es-419': {
+    language: 'Latin American Spanish',
+    country: 'Latin America (Mexico, Argentina, Chile and the rest)',
+    region: 'MX',
+    shops:
+      "lib/regions/suppliers.js lists the shops of Mexico, Argentina and Chile where round 10 found them; read also Mexican and Argentine makers' and dealers' catalogues (materias primas, fritas, esmaltes) and mineral producers' sheets, which give a material's name as the bag prints it (feldespato potásico, caolín, sílice, carbonato de calcio).",
+    termbank:
+      "the RAE and ASALE's Diccionario de americanismos and Diccionario panhispánico de dudas for regional forms, and the ceramics teaching texts of UNAM's FAD and INBAL's Escuela de Artesanías",
+    kilns:
+      "Mexican and Argentine kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters there; they give the words for kiln parts, controllers and firing steps (quema de sancocho/bizcocho, quema de esmalte, reducción).",
+    law: "Latin American law as the official gazettes write it: Mexico's NOM-231-SSA1-2016 (lead and cadmium in glazed ceramics), NOM-010-STPS-2014 (chemical agents at work) and NOM-116-STPS (respirators) on gob.mx and the DOF; Argentina's Código Alimentario Argentino (cap. IV) and the SRT; Chile's DS 594; the emergency numbers 911 and Chile's SAMU 131 and Argentina's Hospital Posadas as lib/regions gives them. These are for the glossary's words, never added figures: the translation names only what the English names. Where the English names EU law (Directive 84/500/EEC, CLP), use the Spanish title on EUR-Lex, keeping the number;",
+    terms:
+      "the term banks and teaching texts of Latin American Spanish ({TERMBANK}); IATE gives Spain's Spanish, so check each term against Mexican usage first, the Southern Cone's in Notes. For software conventions (register, buttons, punctuation), the Microsoft Spanish (Mexico) style guide (Microsoft has no es-419 guide).",
+    notes: {
+      glossary: [
+        "Style sheet: docs/translations/es-419.md exists already (start from it; add, do not rewrite). Mexico's form first where countries differ, the Southern Cone's in Notes.",
+        'Translate from the English. The es files and docs/translations/es.md are references for terms only: never copy their register (usted, vosotros) or Spain-only words (ordenador, móvil, fichero).',
+        'Register: tú in the interface and guides, ustedes for the plural; never vosotros, never vos or voseo forms.',
+        'Numbers as CLDR es-419 prints them: decimal **point** (1.5), four-digit figures as the English writes them (1222 °C, 1000 g), larger groups with a comma as the app prints them (12,500 g), dates as 14 de octubre de 2026, the 24-hour clock as 20:00. Argentina and Chile write 1,5: owner question, text follows CLDR.',
+        "Plural forms: `one`, `many` (compact millions) and `other`, as es; `one` is exactly 1, so it may read without `#`. Follow the es files' handling of `many`.",
+        'Law terms with the English they translate: "at most", "no more than" como máximo / no más de; "less than", "under" menos de / por debajo de; "at least" como mínimo. Keep them apart: a slip moves a legal limit.',
+        'Cones: Orton wherever the English says Orton (cono Orton 6); never a Seger number for an Orton number, nor any equivalence.',
+        "Lead: Mexico's lead-glazed ware (barro vidriado, greta) is a real local hazard; give its words in the glossary so lead warnings read plainly, never softened.",
+        'No added emphasis: siempre, nunca, obligatoriamente only where the English has always, never, must.',
+        "Never translate a country's name into a Latin American one (or name Mexico) where the English writes generically."
+      ],
+      translate: [
+        'Translate from the English. The es files are references for terms only: never copy their register (usted, vosotros) or Spain-only words.',
+        'Register: tú, ustedes for the plural; never vosotros or vos.',
+        'Numbers: 1.5 with a point; 1222 °C as the English writes it; 12,500 g; 14 de octubre de 2026; 20:00 on the 24-hour clock. Digits where the English has digits, words where it has words.',
+        'Plural forms: `one`, `many` and `other`, as es.',
+        'Law terms: "at most" como máximo / no más de, never menos de ("less than"). Cones as Orton. Lead warnings never softened. No added siempre or nunca.',
+        'Never name Mexico or another Latin American country where the English writes generically.'
+      ],
+      review: [
+        'Latin American Spanish: no usted, vosotros or vos forms; no Spain-only words (ordenador, móvil, fichero, vale).',
+        'Latin American Spanish: "at most" and "no more than" are como máximo / no más de, never menos de or por debajo de. Check every one in the food-contact, silica and safety text.',
+        'Latin American Spanish: 1.5 with a point; figures as the English writes them; 20:00 on the 24-hour clock; Orton cones as Orton; lead warnings (barro vidriado, greta) as strong as the English.',
+        'Latin American Spanish: no siempre, nunca or obligatoriamente the English lacks.'
+      ],
+      backtranslate: [
+        'como máximo and no más de mean "at most" (the limit itself passes); menos de and por debajo de mean "less than" (it does not). Translate each back exactly as it reads.',
+        'Words of emphasis and obligation (siempre, nunca, obligatoriamente, debe) are translated back as strongly as they read.',
+        'Names of Latin American services and bodies (911, SAMU 131, Hospital Posadas, Cofepris) stay in Spanish: compare what they refer to.'
+      ]
+    }
   }
 };
 

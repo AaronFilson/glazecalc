@@ -19,6 +19,7 @@ describe('the languages in groups', () => {
       '',
       'picker.groups.eastAsia',
       'picker.groups.europe',
+      'picker.groups.latinAmerica',
       'picker.groups.middleEastNorthAfrica',
       'picker.groups.southAsia',
       'picker.groups.southeastAsia'
@@ -27,9 +28,13 @@ describe('the languages in groups', () => {
     // Korean, Japanese and the Chinese: by their English names, not by script or code.
     expect(sections[1]!.codes).toEqual(['ja', 'ko', 'zh-Hans', 'zh-Hant']);
     expect(sections[2]!.codes.slice(0, 4)).toEqual(['bg', 'hr', 'cs', 'da']);
-    expect(sections[3]!.codes).toEqual(['ar', 'tr']);
-    expect(sections[4]!.codes).toEqual(['bn', 'gu', 'hi', 'kn', 'ml', 'mr', 'ne', 'or', 'pa', 'si', 'ta', 'te', 'ur']);
-    expect(sections[5]!.codes).toEqual(['id', 'th', 'vi']);
+    // Brazilian Portuguese and Latin American Spanish (wave L1); Portugal's and Spain's stay in Europe's group.
+    expect(sections[3]!.codes).toEqual(['pt-BR', 'es-419']);
+    expect(sections[2]!.codes).toContain('es');
+    expect(sections[2]!.codes).toContain('pt-PT');
+    expect(sections[4]!.codes).toEqual(['ar', 'tr']);
+    expect(sections[5]!.codes).toEqual(['bn', 'gu', 'hi', 'kn', 'ml', 'mr', 'ne', 'or', 'pa', 'si', 'ta', 'te', 'ur']);
+    expect(sections[6]!.codes).toEqual(['id', 'th', 'vi']);
   });
 
   it('lists every language offered once, and a group only where there is a language in it', () => {
@@ -63,14 +68,16 @@ describe('the languages in groups', () => {
     expect(found('german')).toEqual(['de']);
     expect(found('deu')).toEqual(['de']);
     expect(found('Deutsch')).toEqual(['de']);
-    expect(found('espanol')).toEqual(['es']);
-    expect(found('spanish')).toEqual(['es']);
+    expect(found('espanol')).toEqual(['es', 'es-419']);
+    expect(found('spanish')).toEqual(['es', 'es-419']);
+    expect(found('latinoam')).toEqual(['es-419']);
     expect(found('turkce')).toEqual(['tr']);
     expect(found('bahasa')).toEqual(['id']);
     expect(found('indonesian')).toEqual(['id']);
     expect(found('日本')).toEqual(['ja']);
     expect(found('chinese')).toEqual(['zh-Hans', 'zh-Hant']);
     expect(found('portugal')).toEqual(['pt-PT']);
+    expect(found('brasil')).toEqual(['pt-BR']);
     expect(found('gaeilge')).toEqual(['ga']);
     expect(found('irish')).toEqual(['ga']);
     expect(found('marathi')).toEqual(['mr']);

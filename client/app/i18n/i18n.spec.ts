@@ -213,6 +213,30 @@ describe('translations', () => {
       expect(languageOfTag('en-US', ['en-XA'])).toBeNull();
     });
 
+    it('finds pt-BR and es-419 once they are offered, and the older fallbacks until then', () => {
+      // es-US reads es-419 where it is offered (the owner's decision of 2026-11-01); Spain's es stays offered.
+      const latam = ['es-MX', 'es-AR', 'es-CL', 'es-CO', 'es-PE', 'es-419', 'es-US'];
+      const other = ['es', 'es-ES', 'es-GQ'];
+      const brazil = ['pt-BR'];
+      const portugal = ['pt', 'pt-PT', 'pt-AO', 'pt-MZ'];
+      const all = [...latam, ...other, ...brazil, ...portugal];
+      const ask = (offered: string[]) => all.map((tag) => languageOfTag(tag, offered));
+      const live = (offered: string[], es: string, es419: string, pt: string, ptBR: string) =>
+        expect(ask(offered)).toEqual([
+          ...latam.map(() => es419),
+          ...other.map(() => es),
+          ...brazil.map(() => ptBR),
+          ...portugal.map(() => pt)
+        ]);
+      // Neither offered: Latin American Spanish reads es and Brazil pt-PT.
+      live(['en', 'es', 'pt-PT'], 'es', 'es', 'pt-PT', 'pt-PT');
+      // Live, in either order.
+      live(['en', 'es', 'pt-PT', 'es-419', 'pt-BR'], 'es', 'es-419', 'pt-PT', 'pt-BR');
+      live(['en', 'pt-BR', 'es-419', 'pt-PT', 'es'], 'es', 'es-419', 'pt-PT', 'pt-BR');
+      // Only one of each pair offered: it is the one chosen.
+      live(['en', 'es-419', 'pt-BR'], 'es-419', 'es-419', 'pt-BR', 'pt-BR');
+    });
+
     it('opens the same page in another language', () => {
       expect(pathIn('fr', '/de/recipe', '?id=1')).toBe('/fr/recipe?id=1');
       expect(pathIn('en', '/de/guides/firing')).toBe('/guides/firing');

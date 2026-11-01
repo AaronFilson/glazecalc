@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Iniciar sesión",
+    "keepHeading": "Conserva tu trabajo",
+    "signUpHeading": "Crea tu cuenta",
+    "signInLead": "Te damos la bienvenida de nuevo a tu cuaderno de esmaltes.",
+    "keepLead": "Conserva todo lo que hiciste como {name}: agrega tu correo y una contraseña. Sigue siendo gratis.",
+    "signUpLead": "Gratis. Tus recetas, materiales y notas se mantienen privados en tu cuenta.",
+    "trialNote": "¿Ya tienes una cuenta? Al iniciar sesión, lo que hiciste como {name} pasa a esa cuenta. ¿Es tu primera vez aquí? <signup>Crea una cuenta</signup> para conservarlo en su lugar.",
+    "email": "Correo",
+    "password": "Contraseña",
+    "passwordHint": "Al menos 8 caracteres.",
+    "confirmation": "Confirmar contraseña",
+    "keepSignedIn": "Mantener la sesión iniciada en este dispositivo",
+    "passwordMissing": "Escribe tu contraseña.",
+    "createAccount": "Crear cuenta",
+    "signIn": "Iniciar sesión",
+    "haveAccount": "¿Ya tienes una cuenta? <signin>Inicia sesión</signin>",
+    "privacy": "Tu correo y lo que guardas se usan solo para manejar tu cuenta, y se almacenan con Amazon Web Services en EE. UU. <privacy>Cómo trata Glazecalc tus datos</privacy>",
+    "terms": "Al crear una cuenta, aceptas los <terms>Términos de uso</terms>.",
+    "dataNotice": "Glazecalc es un proyecto gratuito y de código abierto, y las cuentas se guardan en servidores de Estados Unidos. Puedes leer las guías y probar la calculadora sin una cuenta, o ejecutar tu propia copia. La decisión de crear una cuenta aquí es tuya, y el proyecto no acepta ninguna responsabilidad por ella. <where>Dónde se guarda tu cuenta, y tu elección</where>",
+    "forgot": "¿Olvidaste tu contraseña? Restablécela",
+    "newHere": "¿Es tu primera vez aquí? <signup>Crea una cuenta gratuita</signup>",
+    "signUpFailed": "Error: no se pudo crear la cuenta.",
+    "signInFailed": "Error: no se pudo iniciar sesión.",
+    "or": "o",
+    "passkeySignIn": "Iniciar sesión con una llave de acceso",
+    "passkeyHint": "Una llave de acceso usa tu huella digital, tu rostro o el bloqueo de pantalla en lugar de una contraseña. Agrega una en la página de tu cuenta."
+  },
+  "secondStep": {
+    "heading": "Verificación en dos pasos",
+    "signingInAs": "Tu contraseña es correcta. Falta un paso para iniciar sesión como {email}.",
+    "leadCode": "Abre tu app de autenticación y escribe el código que muestra para Glazecalc.",
+    "leadPasskey": "Usa tu llave de acceso para terminar de iniciar sesión.",
+    "leadRecovery": "Escribe uno de los códigos de recuperación que guardaste cuando activaste la verificación en dos pasos. Cada código funciona una sola vez.",
+    "code": "Código de tu app de autenticación",
+    "codeHint": "{digits} dígitos. Cada 30 segundos aparece un código nuevo.",
+    "codeFormat": "Escribe el código de {digits} dígitos de tu app de autenticación.",
+    "recoveryCode": "Código de recuperación",
+    "recoveryHint": "Se ve así: abcde-12345.",
+    "recoveryMissing": "Escribe uno de tus códigos de recuperación.",
+    "finish": "Terminar de iniciar sesión",
+    "usePasskey": "Usar una llave de acceso",
+    "noPasskeysHere": "Este navegador no puede usar llaves de acceso. Usa otra forma de las de abajo, o inicia sesión en un dispositivo que pueda.",
+    "useRecovery": "Usar un código de recuperación en su lugar",
+    "useApp": "Usar tu app de autenticación en su lugar",
+    "startOver": "Empezar de nuevo",
+    "reloadNote": "Este paso espera {minutes} minutos. Si sales de esta página o la recargas, tendrás que escribir tu contraseña otra vez.",
+    "expired": "Iniciar sesión tardó demasiado. Escribe tu contraseña otra vez."
+  },
+  "passkey": {
+    "cancelled": "No se usó la llave de acceso: la solicitud se canceló o se agotó el tiempo, o este dispositivo no tiene una llave de acceso para Glazecalc. Inténtalo de nuevo, o usa otra forma.",
+    "registered": "Esta llave de acceso ya está en tu cuenta.",
+    "browserFailed": "Este navegador no pudo usar la llave de acceso. Inténtalo de nuevo, o usa otra forma."
+  },
+  "forgot": {
+    "heading": "Restablece tu contraseña",
+    "checkInbox": "Revisa tu bandeja de entrada y la carpeta de spam. Si no llega nada, revisa la dirección y vuelve a pedirlo.",
+    "intro": "Escribe el correo de tu cuenta, y te enviaremos un enlace para elegir una contraseña nueva.",
+    "email": "Correo:",
+    "send": "Enviar enlace de restablecimiento",
+    "back": "Volver a iniciar sesión",
+    "failed": "Error: no se pudo enviar el correo de restablecimiento. Inténtalo de nuevo."
+  },
+  "reset": {
+    "heading": "Elige una contraseña nueva",
+    "signIn": "Iniciar sesión",
+    "incomplete": "Esta página necesita el enlace de un correo de restablecimiento de contraseña, y este está incompleto.",
+    "askAgain": "Pedir un enlace nuevo",
+    "password": "Contraseña nueva:",
+    "confirmation": "Confirmar contraseña nueva:",
+    "save": "Guardar contraseña nueva",
+    "hint": "Al menos 8 caracteres. Se cerrará la sesión en todos los dispositivos que tengan la cuenta abierta.",
+    "failed": "Error: no se pudo cambiar la contraseña. Inténtalo de nuevo.",
+    "secondStep": "Si tu cuenta usa la verificación en dos pasos, seguirás necesitando tu app de autenticación, una llave de acceso o un código de recuperación para iniciar sesión."
+  },
+  "account": {
+    "trialTitle": "Tu prueba",
+    "trialLead": "Estás probando Glazecalc como {name}.",
+    "keepHeading": "Conserva tu trabajo",
+    "keepText": "Esta prueba y todo lo que contiene se eliminan el {date}. Crea una cuenta gratuita para conservarlos: tus recetas, materiales y notas quedan tal como están, y {name} sigue siendo tu nombre para mostrar.",
+    "createAccount": "Crear una cuenta",
+    "title": "Tu cuenta",
+    "signedInAs": "Iniciaste sesión como {email}.",
+    "contents": "En esta página",
+    "changeHeading": "Cambia tu contraseña",
+    "current": "Contraseña actual",
+    "currentMissing": "Escribe tu contraseña actual.",
+    "password": "Contraseña nueva",
+    "passwordHint": "Al menos 8 caracteres. Se cerrará la sesión en los otros dispositivos que tengan esta cuenta abierta.",
+    "confirmation": "Confirmar contraseña nueva",
+    "change": "Cambiar contraseña",
+    "changeFailed": "Error: no se pudo cambiar la contraseña. Inténtalo de nuevo.",
+    "deleteHeading": "Elimina tu cuenta",
+    "deleteText": "Esto quita tu cuenta y todo lo que guardaste: recetas, materiales, aditivos, notas, registros de cocción y consejos. No se puede deshacer.",
+    "deletePassword": "Tu contraseña, para confirmar",
+    "deletePasswordMissing": "Escribe tu contraseña para confirmar.",
+    "delete": "Eliminar mi cuenta",
+    "deleteFailed": "Error: no se pudo eliminar la cuenta. Inténtalo de nuevo.",
+    "unverifiedHeading": "Confirma tu correo",
+    "unverifiedText": "Enviamos un enlace a {email} cuando creaste esta cuenta. Ábrelo para confirmar que la dirección es tuya. Hasta entonces, le enviamos correo solo cuando lo pides, por ejemplo para restablecer la contraseña.",
+    "resend": "Enviar el enlace otra vez",
+    "resendFailed": "Error: no se pudo enviar el enlace. Inténtalo de nuevo.",
+    "emailHeading": "Cambia tu correo",
+    "emailText": "Enviamos un enlace a la dirección nueva, y tu correo cambia cuando lo abres. También avisamos a tu dirección actual. Se cerrará la sesión en todos los dispositivos que tengan esta cuenta abierta.",
+    "newEmail": "Correo nuevo",
+    "emailPassword": "Tu contraseña, para confirmar",
+    "emailSend": "Enviar el enlace",
+    "emailFailed": "Error: no se pudo enviar el enlace. Inténtalo de nuevo.",
+    "signOutHeading": "Cerrar sesión en todos los dispositivos",
+    "signOutText": "Cierra tu sesión en todos los dispositivos, este incluido, y detiene tus tokens de acceso y tus enlaces para compartir. Úsalo si perdiste un dispositivo o crees que otra persona tiene tu acceso.",
+    "signOutButton": "Cerrar sesión en todos los dispositivos",
+    "signOutFailed": "Error: no se pudo cerrar la sesión. Inténtalo de nuevo.",
+    "confirmStep": "La verificación en dos pasos está activada, así que confirma que eres tú: tu contraseña y un segundo paso."
+  },
+  "mfa": {
+    "heading": "Verificación en dos pasos",
+    "intro": "Pide un segundo paso al iniciar sesión, además de tu contraseña: un código de una app de autenticación, o una llave de acceso. Así, alguien que se entere de tu contraseña aun así no puede entrar.",
+    "loadFailed": "No se pudo cargar tu verificación en dos pasos. Recarga la página.",
+    "on": "La verificación en dos pasos está activada.",
+    "onText": "Inicias sesión con tu contraseña y un segundo paso, o solo con una llave de acceso.",
+    "off": "La verificación en dos pasos está desactivada.",
+    "badgeOn": "Activada",
+    "badgeOff": "Desactivada",
+    "offText": "Para activarla, configura una app de autenticación o agrega una llave de acceso.",
+    "confirmEmailFirst": "Confirma primero tu correo, arriba. Lo usamos para avisarte de cambios en tu forma de iniciar sesión, y para ayudarte si pierdes tu segundo paso.",
+    "appHeading": "App de autenticación",
+    "appText": "Una app de tu teléfono o de tu administrador de contraseñas muestra un código nuevo cada 30 segundos, para escribirlo al iniciar sesión.",
+    "addApp": "Configurar una app de autenticación",
+    "removeApp": "Quitar la app de autenticación",
+    "added": "Agregada el {date}.",
+    "lastUsed": "Último uso: {date}.",
+    "notUsed": "Todavía no se ha usado.",
+    "passkeysHeading": "Llaves de acceso",
+    "passkeysText": "Una llave de acceso te permite iniciar sesión con tu huella digital, tu rostro o el bloqueo de pantalla, en este dispositivo o en tu teléfono. Puede ser tu segundo paso, o permitirte iniciar sesión por sí sola, sin tu contraseña.",
+    "noPasskeysHere": "Este navegador no puede crear ni usar llaves de acceso. Prueba con otro navegador o dispositivo.",
+    "addPasskey": "Agregar una llave de acceso",
+    "removePasskey": "Quitar la llave de acceso",
+    "rename": "Cambiar nombre",
+    "remove": "Quitar",
+    "renameLabel": "Nombre nuevo para “{name}”",
+    "saveName": "Guardar el nombre",
+    "name": "Nombre de la llave de acceso",
+    "nameHint": "Para distinguir tus llaves de acceso, como “Laptop” o “Teléfono”.",
+    "nameCheck": "Ponle a la llave de acceso un nombre de 1 a {most} caracteres.",
+    "passkeyLimit": "Tienes {most} llaves de acceso, el máximo que puede tener una cuenta. Quita una para agregar otra.",
+    "codesTitle": "Códigos de recuperación",
+    "codesLeft": "{count, plural, one {Queda # de {total} códigos de recuperación.} many {Quedan # de {total} códigos de recuperación.} other {Quedan # de {total} códigos de recuperación.}} Si no puedes usar tu app o una llave de acceso, un código te permite iniciar sesión. Cada código funciona una sola vez.",
+    "codesLow": "Crea códigos nuevos pronto. Si se acaban y pierdes tu app y tus llaves de acceso, no podrás iniciar sesión.",
+    "newCodes": "Crear códigos de recuperación nuevos",
+    "offHeading": "Desactivarla",
+    "offWhat": "La verificación en dos pasos sigue activada mientras tengas una app de autenticación o una llave de acceso. Al quitar la última, se desactiva, y entonces:",
+    "offPassword": "Para iniciar sesión basta tu contraseña, así que cualquiera que se entere de ella puede entrar.",
+    "offCodes": "Tus códigos de recuperación dejan de funcionar.",
+    "offSignOut": "Se cierra la sesión en todos los demás dispositivos que tengan tu cuenta abierta. Este sigue con la sesión iniciada.",
+    "offEmail": "Te escribimos para avisarte que se desactivó.",
+    "offRemoveApp": "Desactivar la verificación en dos pasos (quita la app)",
+    "offRemoveAppFirst": "Quita la app, para empezar a desactivarla",
+    "offPasskeys": "{count, plural, one {Para desactivarla, quita tu llave de acceso en Llaves de acceso, arriba.} many {Para desactivarla, quita tus # llaves de acceso en Llaves de acceso, arriba.} other {Para desactivarla, quita tus # llaves de acceso en Llaves de acceso, arriba.}}",
+    "offPasskeysToo": "{count, plural, one {También tienes una llave de acceso: quítala en Llaves de acceso, arriba, además de la app.} many {También tienes # llaves de acceso: quítalas en Llaves de acceso, arriba, además de la app.} other {También tienes # llaves de acceso: quítalas en Llaves de acceso, arriba, además de la app.}}",
+    "addAppText": "Para configurar una app de autenticación, primero confirma que eres tú.",
+    "removeAppText": "Para quitar la app de autenticación, confirma que eres tú.",
+    "addPasskeyText": "Ponle nombre a la llave de acceso y confirma que eres tú. Luego tu navegador te pedirá que crees la llave de acceso.",
+    "removePasskeyText": "Para quitar la llave de acceso “{name}”, confirma que eres tú.",
+    "newCodesText": "Los códigos nuevos reemplazan a los anteriores, que dejan de funcionar. Confirma que eres tú.",
+    "lastFactor": "Este es tu último segundo paso, así que la verificación en dos pasos se desactiva y tus códigos de recuperación dejan de funcionar.",
+    "continue": "Continuar",
+    "cancel": "Cancelar",
+    "password": "Tu contraseña",
+    "factorLegend": "Y tu segundo paso",
+    "passkeyNext": "Tu navegador te pedirá tu llave de acceso cuando continúes.",
+    "passkeyReadyText": "Gracias. Ahora crea la llave de acceso “{name}”: cuando presiones el botón, tu navegador te pedirá tu huella digital, tu rostro o el bloqueo de pantalla, o tu teléfono. Si no funciona, puedes intentarlo de nuevo durante {minutes} minutos sin confirmar otra vez.",
+    "passkeyCreate": "Ahora agrega la llave de acceso",
+    "useApp": "Usar tu app de autenticación en su lugar",
+    "usePasskey": "Usar una llave de acceso en su lugar",
+    "useRecovery": "Usar un código de recuperación en su lugar",
+    "failed": "Error: no se pudo hacer el cambio. Inténtalo de nuevo.",
+    "setupHeading": "Configura tu app de autenticación",
+    "setupOpen": "Abre tu app de autenticación y elige agregar una cuenta.",
+    "setupScan": "Escanea este código QR con la app, o escribe la clave.",
+    "setupTap": "Toca el botón para agregar Glazecalc a una app de autenticación o a un administrador de contraseñas en este teléfono.",
+    "showQr": "Mostrar el código QR, para configurarlo en otro dispositivo",
+    "setupScanOther": "Escanéalo con la app de autenticación del otro dispositivo.",
+    "qrAlt": "Código QR para agregar Glazecalc a una app de autenticación",
+    "key": "Clave",
+    "copyKey": "Copiar la clave",
+    "openInApp": "Agregar a una app de autenticación en este dispositivo",
+    "clipboardNote": "El texto copiado puede quedarse en el historial de tu portapapeles y llegar a tus otros dispositivos. Pégalo directamente en tu administrador de contraseñas y luego borra el historial del portapapeles.",
+    "setupCode": "Escribe el código de {digits} dígitos que la app muestra ahora para Glazecalc",
+    "setupFinish": "Terminar la configuración",
+    "codesHeading": "Tus códigos de recuperación",
+    "codesText": "Guárdalos en un lugar seguro, como tu administrador de contraseñas, o imprímelos y guárdalos con tus papeles. Si no puedes usar tu app o una llave de acceso, un código te permite iniciar sesión. Cada código funciona una sola vez. Solo se muestran ahora.",
+    "print": "Imprimir los códigos",
+    "printNote": "Cada código funciona una sola vez. Guarda esta página en un lugar seguro.",
+    "download": "Descargar como archivo de texto",
+    "copy": "Copiar los códigos",
+    "copied": "Copiado.",
+    "copyFailed": "No se pudo copiar. Selecciona el texto y cópialo.",
+    "saved": "Ya los guardé",
+    "fileTitle": "Códigos de recuperación de Glazecalc para {email}",
+    "fileNote": "Cada código funciona una sola vez. Guarda este archivo en un lugar seguro."
+  },
+  "export": {
+    "heading": "Descargar mis datos",
+    "text": "Guarda una copia de todo lo que tiene tu cuenta en un solo archivo: tus datos, configuración, materiales a mano, recetas, materiales, aditivos, notas, registros de cocción, consejos y papelera. No incluye tu contraseña. Guarda el archivo en un lugar privado, porque contiene todo lo que guardaste.",
+    "json": "Descargar todo (JSON)",
+    "csvText": "O guarda una hoja de cálculo solo con tus recetas o solo con tus propios materiales, para abrirla en Excel, Numbers o Sheets.",
+    "recipes": "Recetas (CSV)",
+    "materials": "Materiales (CSV)"
+  },
+  "trash": {
+    "heading": "Papelera",
+    "text": "Lo que quitas de tu cuaderno espera en la Papelera durante 30 días. Devuélvelo desde allí, o elimínalo definitivamente.",
+    "open": "Abrir la Papelera"
+  },
+  "shared": {
+    "heading": "Recetas compartidas",
+    "text": "Las recetas que compartes por enlace, que cualquiera que tenga el enlace puede leer sin una cuenta. Un enlace se muestra solo una vez, cuando se crea, así que no se puede mostrar aquí. Para compartir una receta otra vez, crea un enlace nuevo en Más, en la receta.",
+    "since": "Compartida desde el {date}",
+    "notesShown": "Notas visibles",
+    "notesHidden": "Notas no visibles",
+    "untitled": "Receta sin título",
+    "stop": "Dejar de compartir",
+    "stopName": "Dejar de compartir {name}",
+    "stopped": "{name} ya no se comparte. Su enlace ya no funciona.",
+    "stopFailed": "No funcionó. Inténtalo de nuevo.",
+    "fetchFailed": "No se pudieron cargar tus recetas compartidas. Inténtalo de nuevo.",
+    "none": "No estás compartiendo ninguna receta."
+  },
+  "settings": {
+    "heading": "Configuración",
+    "intro": "Se guarda con tu cuenta, así que se mantiene en todos los dispositivos.",
+    "saveFailed": "No se pudo guardar la configuración. Inténtalo de nuevo.",
+    "language": {
+      "legend": "Idioma",
+      "help": "El idioma de la app, las guías y tus correos. Al cambiarlo, esta página se abre en ese idioma.",
+      "saved": "Guardado: {language}."
+    },
+    "region": {
+      "legend": "Dónde trabajas",
+      "none": {
+        "label": "Sin elegir",
+        "saved": "Guardado: sin región elegida; los valores predeterminados siguen a tu navegador."
+      },
+      "saved": "Guardado: {region}.",
+      "help": "Los materiales que se venden allí, y los valores predeterminados de números, fechas, temperaturas y conos de más abajo. Hasta que elijas, siguen el idioma de tu navegador."
+    },
+    "format": {
+      "legend": "Números y fechas",
+      "auto": {
+        "label": "Según mi idioma y región",
+        "saved": "Guardado: números y fechas como los escriben tu idioma y tu región."
+      },
+      "saved": "Guardado: números y fechas como en {language}.",
+      "help": "Cómo se escriben los números y las fechas: 12,345.6 o 12.345,6, y el orden del día y el mes."
+    },
+    "calendar": {
+      "legend": "Calendario",
+      "help": "El calendario en que se muestran las fechas. Las fechas que escribes siguen en el calendario gregoriano.",
+      "gregory": {
+        "label": "Gregoriano",
+        "saved": "Guardado: las fechas se muestran en el calendario gregoriano."
+      },
+      "buddhist": {
+        "label": "Era budista tailandesa",
+        "saved": "Guardado: las fechas se muestran en la era budista tailandesa."
+      },
+      "japanese": {
+        "label": "Era japonesa",
+        "saved": "Guardado: las fechas se muestran en eras japonesas."
+      }
+    },
+    "digits": {
+      "legend": "Dígitos",
+      "help": "Los dígitos con que se muestran los números. Algunos idiomas tienen los suyos, como el árabe, el bengalí y el hindi, y dónde estás decide cuáles son los habituales. Puedes escribir números con cualquiera de los dos.",
+      "auto": {
+        "label": "Como es habitual donde estás",
+        "saved": "Guardado: dígitos como es habitual donde estás."
+      },
+      "western": {
+        "label": "Dígitos occidentales, 0–9",
+        "saved": "Guardado: los números se muestran con los dígitos 0–9."
+      },
+      "native": {
+        "label": "Los dígitos propios del idioma, donde los tiene",
+        "saved": "Guardado: los números se muestran con los dígitos propios del idioma, donde los tiene."
+      }
+    },
+    "decimalMark": {
+      "legend": "Escritura de cantidades",
+      "either": {
+        "label": "Coma o punto para los decimales",
+        "example": "12,5 o 12.5",
+        "saved": "Guardado: las cantidades se pueden escribir con coma o con punto."
+      },
+      "comma": {
+        "label": "Coma para los decimales",
+        "saved": "Guardado: las cantidades se escriben con coma para los decimales."
+      },
+      "point": {
+        "label": "Punto para los decimales",
+        "saved": "Guardado: las cantidades se escriben con punto para los decimales."
+      },
+      "help": "Con cualquiera de los dos, una cantidad como 1,250 se lee como se escriben tus números, arriba."
+    },
+    "temperature": {
+      "legend": "Temperaturas",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Guardado: temperaturas en °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Guardado: temperaturas en °F."
+      },
+      "help": "Hasta que elijas, esto sigue tu región: °F en Estados Unidos, °C en el resto."
+    },
+    "cones": {
+      "legend": "Cocción",
+      "orton": {
+        "label": "Conos Orton",
+        "example": "cono 04, cono 6",
+        "saved": "Guardado: cocción con conos Orton."
+      },
+      "sk": {
+        "label": "Conos SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Guardado: cocción con conos SK."
+      },
+      "temperature": {
+        "label": "Temperatura, como el programa de un controlador de horno",
+        "saved": "Guardado: cocción por temperatura."
+      },
+      "help": "Hasta que elijas, esto sigue tu región: conos Orton en EE. UU., el Reino Unido, Irlanda, Australia y Nueva Zelanda, conos SK en Japón, temperatura en el resto de Europa."
+    },
+    "density": {
+      "legend": "Densidad del esmalte",
+      "sg": {
+        "label": "Gravedad específica",
+        "saved": "Guardado: densidad del esmalte como gravedad específica.",
+        "example": "1.45"
+      },
+      "baume": {
+        "label": "Grados Baumé, de un hidrómetro",
+        "saved": "Guardado: densidad del esmalte en grados Baumé."
+      },
+      "pint": {
+        "label": "Peso por pinta, las onzas en una pinta imperial",
+        "saved": "Guardado: densidad del esmalte como peso por pinta."
+      },
+      "help": "Cómo dan las guías el espesor de un esmalte. Hasta que elijas, esto sigue tu región: grados Baumé en Italia y Japón, gravedad específica en el resto."
+    },
+    "currency": {
+      "legend": "Moneda de los precios",
+      "help": "Los precios que das para los materiales, y lo que cuesta una tanda, están en esta moneda. Cambiarla no convierte los precios que ya diste. Hasta que elijas, esto sigue tu región.",
+      "saved": "Guardado: precios en {currency}.",
+      "notConverted": "Tus precios guardados no se convirtieron: siguen siendo los números que diste."
+    },
+    "theme": {
+      "legend": "Claro u oscuro",
+      "system": {
+        "label": "Según la configuración de este dispositivo",
+        "saved": "Guardado: claro u oscuro según la configuración de cada dispositivo."
+      },
+      "light": {
+        "label": "Claro",
+        "saved": "Guardado: siempre claro."
+      },
+      "dark": {
+        "label": "Oscuro",
+        "saved": "Guardado: siempre oscuro."
+      },
+      "help": "Las recetas impresas siempre son negras sobre blanco."
+    },
+    "palette": {
+      "legend": "Colores",
+      "saved": "Guardado: botones y enlaces en {palette}.",
+      "help": "Para botones, enlaces y pestañas, con nombres de esmaltes. Cada uno se lee bien en claro y en oscuro."
+    },
+    "weightUnit": {
+      "legend": "Pesos de las tandas",
+      "grams": {
+        "label": "Gramos",
+        "saved": "Guardado: los pesos de las tandas están en gramos."
+      },
+      "pounds": {
+        "label": "Libras y onzas",
+        "saved": "Guardado: los pesos de las tandas están en libras y onzas."
+      },
+      "help": "Para las tandas impresas."
+    },
+    "gramPrecision": {
+      "legend": "Gramos en las tandas impresas",
+      "single": {
+        "label": "Con una décima de gramo",
+        "saved": "Guardado: los gramos se muestran con una décima."
+      },
+      "full": {
+        "label": "Precisión completa",
+        "saved": "Guardado: los gramos se muestran completos, con 5 decimales."
+      },
+      "help": "Con una décima, las cantidades menores de 10 g siguen mostrando centésimas (2.35 g), para los colorantes en tandas de prueba pequeñas."
+    },
+    "lead": {
+      "legend": "Plomo",
+      "off": {
+        "label": "Desactivado: nunca agregar plomo a una receta ni sugerirlo",
+        "saved": "Guardado: el plomo nunca se agrega a una receta ni se sugiere."
+      },
+      "on": {
+        "label": "Activado: se pueden agregar y sugerir materiales con plomo",
+        "saved": "Guardado: se pueden agregar y sugerir materiales con plomo."
+      },
+      "help": "El plomo es tóxico si se respira o se traga y se acumula en el cuerpo, y un esmalte de plomo puede liberarlo en alimentos y bebidas; ningún cálculo puede decir si una pieza cocida lo hace. Desactivado, las recetas que ya tienen plomo se abren como estaban.",
+      "warning": "Usa plomo solo como frita, nunca como plomo crudo rojo, blanco o amarillo ni como litargirio. Mézclalo en húmedo, nunca lo rocíes, usa un respirador y limpia en húmedo. Mantén las piezas con esmalte de plomo lejos de alimentos y bebidas, a menos que la pieza cocida haya pasado una prueba de laboratorio de liberación de metales.",
+      "turnOn": "Activar el plomo",
+      "keepOff": "Mantenerlo desactivado"
+    },
+    "englishTerms": {
+      "legend": "Términos en inglés",
+      "off": {
+        "label": "Desactivado",
+        "saved": "Guardado: sin términos en inglés."
+      },
+      "on": {
+        "label": "Mostrar el inglés después de los términos clave",
+        "saved": "Guardado: el inglés se muestra después de los términos clave."
+      },
+      "help": "Para leer fuentes en inglés, como Digitalfire, junto a esta: los términos clave llevan su inglés entre paréntesis."
+    },
+    "notice": {
+      "legend": "Aviso de traducción",
+      "shown": {
+        "label": "Visible",
+        "saved": "Guardado: el aviso está visible."
+      },
+      "hidden": {
+        "label": "Oculto",
+        "saved": "Guardado: el aviso está oculto. Una línea del aviso se queda en las guías de seguridad.",
+        "savedPlain": "Guardado: el aviso está oculto. Una línea del aviso se queda en la parte de arriba de cada página."
+      },
+      "help": "La nota en la parte de arriba de cada página que dice que se tradujo con IA, con una forma de sugerir una corrección."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Confirma tu correo",
+    "intro": "Presiona el botón para confirmar esta dirección.",
+    "confirm": "Confirmar",
+    "incomplete": "Esta página necesita el enlace de un correo de confirmación, y este está incompleto.",
+    "account": "Tu cuenta",
+    "signIn": "Iniciar sesión",
+    "failed": "Error: no se pudo confirmar la dirección. Inténtalo de nuevo."
+  },
+  "providers": {
+    "continueGoogle": "Continuar con Google",
+    "continueGithub": "Continuar con GitHub",
+    "continueMicrosoft": "Iniciar sesión con Microsoft",
+    "failed": "No funcionó el inicio de sesión. Inténtalo de nuevo.",
+    "heading": "Google, GitHub y Microsoft",
+    "intro": "Vincula una cuenta de Google, GitHub o Microsoft para iniciar sesión con ella. Glazecalc guarda solo el id de la cuenta, nunca su nombre, foto ni nada más, y la verificación en dos pasos sigue pidiendo su segundo paso.",
+    "passwordless": "Esta cuenta no tiene contraseña. Para cambiar tu correo, la verificación en dos pasos o tus formas de iniciar sesión, o para eliminar tu cuenta, confirmas que eres tú iniciando sesión otra vez con Google, GitHub o Microsoft, la que hayas vinculado. También puedes establecer una contraseña.",
+    "setPassword": "Enviarme un enlace por correo para establecer una contraseña",
+    "setPasswordUnlinks": "Establecer una contraseña con el enlace enviado por correo también desvincula Google, GitHub y Microsoft. Puedes vincularlos otra vez después.",
+    "setPasswordFailed": "No se pudo enviar el enlace. Inténtalo de nuevo.",
+    "confirmFirst": "Confirma primero tu correo, con el enlace que te enviamos, para vincular Google, GitHub o Microsoft.",
+    "linkedOn": "Vinculado el {date}",
+    "notLinked": "No vinculado",
+    "link": "Vincular {provider}",
+    "unlink": "Desvincular {provider}",
+    "linkFailed": "No se pudo vincular. Inténtalo de nuevo.",
+    "reauthIntro": "Esta cuenta no tiene contraseña, así que confirma que eres tú iniciando sesión otra vez. Luego haz el cambio en los siguientes 5 minutos.",
+    "reauthButton": "Iniciar sesión otra vez con {provider}",
+    "reauthHeld": "Iniciaste sesión otra vez con {provider}. Puedes hacer un cambio sin contraseña en los próximos 5 minutos.",
+    "reauthFirst": "Primero inicia sesión otra vez, con uno de los botones de arriba.",
+    "reauthFailed": "No se pudo empezar a iniciar sesión otra vez. Inténtalo de nuevo."
+  },
+  "apps": {
+    "title": "Apps conectadas",
+    "lead": "Los asistentes, scripts y apps que pueden llegar a tus registros. Mira qué hizo cada uno, devuelve lo que movió a la Papelera y detenlo cuando quieras.",
+    "listHeading": "Tus apps conectadas y tokens de acceso",
+    "listLabel": "Apps conectadas y tokens de acceso",
+    "makeToken": "Crear un token de acceso",
+    "none": "No hay nada conectado a tu cuenta.",
+    "loadFailed": "No se pudieron cargar tus apps conectadas. Recarga la página para intentarlo de nuevo.",
+    "kindToken": "Token de acceso",
+    "kindOauth": "App conectada",
+    "clientHost": "Dirección de la app: {host}",
+    "redirectHost": "Te devuelve a: {host}",
+    "last90": "En los últimos 90 días:",
+    "nothingDone": "No ha cambiado nada en los últimos 90 días.",
+    "count": {
+      "create": "{count, plural, one {# registro creado} many {# registros creados} other {# registros creados}}",
+      "change": "{count, plural, one {# registro cambiado} many {# registros cambiados} other {# registros cambiados}}",
+      "trash": "{count, plural, one {# registro movido a la Papelera} many {# registros movidos a la Papelera} other {# registros movidos a la Papelera}}",
+      "restore": "{count, plural, one {# registro devuelto} many {# registros devueltos} other {# registros devueltos}}",
+      "undo": "{count, plural, one {# cambio deshecho} many {# cambios deshechos} other {# cambios deshechos}}"
+    },
+    "action": {
+      "create": "Creó",
+      "change": "Cambió",
+      "trash": "Movió a la Papelera:",
+      "restore": "Devolvió:",
+      "undo": "Deshizo un cambio en"
+    },
+    "show": "Mostrar detalles",
+    "hide": "Ocultar detalles",
+    "showNamed": "Mostrar detalles de {name}",
+    "hideNamed": "Ocultar detalles de {name}",
+    "loading": "Cargando...",
+    "detailFailed": "No se pudieron cargar los detalles. Inténtalo de nuevo.",
+    "movedHeading": "Movido a la Papelera",
+    "movedNone": "Nada de lo que movió sigue en la Papelera.",
+    "putAllBack": "Devolver todo",
+    "activityHeading": "Qué hizo",
+    "activityNone": "Nada en los últimos 90 días.",
+    "older": "Mostrar anteriores",
+    "revokeQuestion": "¿Revocar {name}? Deja de funcionar de inmediato.",
+    "revokeYes": "Sí, revocar",
+    "revokeAll": "Revocar todo",
+    "revokeAllQuestion": "{count, plural, one {¿Revocar la # conexión que sigue funcionando?} many {¿Revocar las # conexiones que siguen funcionando?} other {¿Revocar las # conexiones que siguen funcionando?}} Dejan de funcionar de inmediato.",
+    "revokeFailed": "Error: no se pudo revocar. Inténtalo de nuevo.",
+    "restoreFailed": "Error: no se pudieron devolver los registros. Inténtalo de nuevo.",
+    "selfDescribed": "autodescrita",
+    "selfDescribedNote": "Se registró sola, así que su nombre es solo lo que dice de sí misma.",
+    "confirm": {
+      "heading": "Confirmar antes de los cambios",
+      "intro": "Elige si un cambio de un asistente, app o token de acceso espera hasta que lo apruebes aquí, con la sesión iniciada. No se cambia nada de lo que pide hasta que lo hagas.",
+      "off": "Nunca preguntar",
+      "offHint": "Los cambios se hacen de inmediato. Cada uno conserva el registro como estaba, así que puedes deshacerlo, y abajo se muestra lo que hizo cada app.",
+      "removals": "Preguntar antes de quitar",
+      "removalsHintSite": "Mover un registro a la Papelera, quitar un material de los materiales que tienes a mano o quitar un registro de cocción de una receta espera tu aprobación en este sitio web.",
+      "all": "Preguntar antes de cada cambio",
+      "allHint": "Cada registro nuevo, cambio, deshacer y eliminación espera tu aprobación en este sitio web.",
+      "how": "Un cambio que espera tiene su propia página, a la que el asistente o script te da un enlace. Espera 30 minutos, y después no se cambia nada. A un token de acceso creado con “Los cambios de este token no necesitan confirmación” nunca se le pregunta.",
+      "exempt": "Sus cambios no necesitan confirmación.",
+      "saveFailed": "Error: no se pudo guardar tu elección. Inténtalo de nuevo."
+    }
+  },
+  "connect": {
+    "title": "Conecta una app a tu cuenta",
+    "loading": "Cargando...",
+    "loadFailed": "No se pudo cargar esta solicitud para conectar una app. Recarga la página, o empieza de nuevo en la app.",
+    "answerFailed": "Error: no se pudo enviar tu respuesta. Inténtalo de nuevo.",
+    "toAccount": "Ir a tu cuenta",
+    "asking": "Esta app pide conectarse a tu cuenta de Glazecalc:",
+    "noName": "Una app sin nombre",
+    "selfDescribed": "autodescrita",
+    "selfDescribedNote": "Se registró sola, así que este nombre es solo lo que dice de sí misma. Glazecalc no lo ha comprobado.",
+    "account": "Iniciaste sesión como {email}",
+    "appAddress": "La dirección de la app",
+    "checked": "(comprobada por Glazecalc)",
+    "answerTo": "A dónde va tu respuesta",
+    "ownComputer": "Tu propia computadora",
+    "appOnDevice": "Una app de tu dispositivo que abre enlaces {scheme}",
+    "loopbackWarning": "Esta app recibe la respuesta en tu propia computadora. Permítela solo si empezaste esto tú mismo, en esta computadora, hace un momento.",
+    "loopbackWriteWarning": "También pide cambiar tus registros: cualquier programa de esta computadora que recoja la respuesta podría entonces cambiarlos.",
+    "appSchemeWarning": "La respuesta va a cualquier app de tu dispositivo que abra enlaces {scheme}. El resto de esa dirección no se comprueba, así que puede parecer cualquier sitio web. Permítela solo si empezaste esto desde una app de confianza, hace un momento.",
+    "elsewhereWarning": "La dirección de esta app es {app}, pero tu respuesta va a {answer}. Permítela solo si lo esperabas.",
+    "canHeading": "Qué puede hacer",
+    "canRead": "Leer tus recetas, cuaderno, materiales, materiales a mano y configuración.",
+    "readOnly": "No puede cambiar nada.",
+    "alsoWrite": "Permitir también que cambie mis registros",
+    "writeWarning": "Entonces podría crear y cambiar tus registros, y moverlos a la Papelera. Cada cambio conserva una versión del registro como estaba, así que puedes deshacerlo. Puedes revocarla en cualquier momento en Apps conectadas.",
+    "privacy": "Lo que Glazecalc guarda sobre las apps conectadas está en el <privacy>aviso de privacidad</privacy>. Puedes ver y revocar tus apps en <apps>Apps conectadas</apps>.",
+    "allow": "Permitir",
+    "deny": "No permitir",
+    "sending": "Enviando tu respuesta a la app..."
+  },
+  "tokens": {
+    "heading": "Tokens de acceso",
+    "intro": "Un token de acceso permite a tu propio asistente de IA o script leer las recetas, materiales, notas y registros de cocción de tu cuenta, y, si lo eliges, cambiarlos. Cada token deja de funcionar el día que elijas, o en cuanto lo revoques.",
+    "howTo": "Cómo conectar un asistente de IA",
+    "seeThem": "Tus tokens y apps conectadas, lo que hizo cada uno y Revocar están en la página Apps conectadas.",
+    "seeThemLink": "Abrir Apps conectadas",
+    "hint": "termina en {hint}",
+    "readOnly": "Solo lectura",
+    "readWrite": "Leer y cambiar",
+    "created": "creado el {date}",
+    "lastUsed": "último uso: {date}",
+    "neverUsed": "nunca usado",
+    "expires": "vence el {date}",
+    "expiredOn": "venció el {date}",
+    "revokedOn": "revocado el {date}",
+    "revoke": "Revocar",
+    "revokeNamed": "Revocar {name}",
+    "revokeAll": "Revocar todos los tokens de acceso",
+    "revokeFailed": "Error: no se pudo revocar el token. Inténtalo de nuevo.",
+    "loadFailed": "No se pudieron cargar tus tokens de acceso. Recarga la página para intentarlo de nuevo.",
+    "createHeading": "Crea un token",
+    "name": "Nombre",
+    "nameHint": "Algo para distinguirlo, como el asistente o la computadora para la que es.",
+    "nameCheck": "Ponle al token un nombre de 1 a {most} caracteres.",
+    "expiry": "Deja de funcionar después de",
+    "days": "{count, plural, one {# día} many {# días} other {# días}}",
+    "expiryHint": "Te escribimos 7 días antes de que un token deje de funcionar.",
+    "expiryWriteHint": "{count, plural, one {Un token que puede cambiar tus registros deja de funcionar después de # día como máximo.} many {Un token que puede cambiar tus registros deja de funcionar después de # días como máximo.} other {Un token que puede cambiar tus registros deja de funcionar después de # días como máximo.}}",
+    "confirmEmailFirst": "Antes de poder crear un token, confirma tu correo: abre el enlace que enviamos a {email}. Te avisamos en esa dirección cuando se crea un token y antes de que uno deje de funcionar.",
+    "resend": "Enviar el enlace de confirmación otra vez",
+    "scopeNote": "El token puede leer tus registros pero no cambiarlos.",
+    "scope": "Qué puede hacer",
+    "scopeWriteNote": "El token también puede guardar registros nuevos, cambiarlos y moverlos a la Papelera. Cada cambio conserva el registro como estaba, así que puedes deshacerlo, y lo que hizo el token está en Apps conectadas y en Descargar mis datos. Elige esto solo para un asistente o script en el que confíes para cambiar tus registros.",
+    "confirmStep": "Para crear el token, confirma que eres tú.",
+    "create": "Crear el token",
+    "failed": "Error: no se pudo crear el token. Inténtalo de nuevo.",
+    "limit": "Tienes {most} tokens de acceso funcionando, el máximo que puede tener una cuenta. Revoca uno para crear otro.",
+    "newHeading": "Copia ahora tu token nuevo",
+    "newText": "Esta es la única vez que se muestra. Cualquiera que lo tenga puede leer tus registros hasta que deje de funcionar, así que guárdalo como una contraseña, y dáselo solo a tu propio asistente o script.",
+    "newTextWrite": "Esta es la única vez que se muestra. Cualquiera que lo tenga puede leer y cambiar tus registros hasta que deje de funcionar, así que guárdalo como una contraseña, y dáselo solo a tu propio asistente o script.",
+    "newLabel": "Tu token de acceso nuevo",
+    "copy": "Copiar el token",
+    "copied": "Copiado.",
+    "copyFailed": "No se pudo copiar. Selecciona el token y cópialo tú mismo.",
+    "done": "Ya lo copié",
+    "keptHeading": "Tus tokens de acceso siguen funcionando",
+    "keptText": "{count, plural, one {Cambiar tu contraseña no detuvo tu token de acceso. Si la cambiaste porque otra persona podría saberla, revoca también el token.} many {Cambiar tu contraseña no detuvo tus # tokens de acceso. Si la cambiaste porque otra persona podría saberla, revócalos también.} other {Cambiar tu contraseña no detuvo tus # tokens de acceso. Si la cambiaste porque otra persona podría saberla, revócalos también.}}",
+    "keep": "Conservarlos",
+    "signOutNote": "{count, plural, one {También detiene tu token de acceso, para siempre.} many {También detiene tus # tokens de acceso, para siempre.} other {También detiene tus # tokens de acceso, para siempre.}}",
+    "noConfirm": "Los cambios de este token no necesitan confirmación",
+    "noConfirmHint": "Para un script que ejecutas tú mismo. Si eliges confirmar los cambios en Apps conectadas, a este token tampoco se le pregunta. Solo puedes elegir esto ahora, cuando se crea el token."
+  },
+  "confirm": {
+    "title": "Aprueba un cambio",
+    "lead": "Una app conectada a tu cuenta pide hacer este cambio. No se cambia nada hasta que lo apruebes.",
+    "from": "Lo pide {name}",
+    "fromToken": "un token de acceso",
+    "fromConnectedApp": "una app conectada",
+    "selfDescribed": "autodescrita",
+    "selfDescribedNote": "Se registró sola, así que su nombre es solo lo que dice de sí misma. Glazecalc no lo ha comprobado.",
+    "asked": "Pedido {date}. Espera hasta {time}, y después no se cambia nada.",
+    "removal": "Esto quita algo: un registro va a la Papelera, donde puedes devolverlo durante 30 días, o un material sale de los materiales que tienes a mano.",
+    "check": "Apruébalo solo si pediste este cambio. Si no lo pediste, recházalo y revoca la app en Apps conectadas.",
+    "approve": "Aprobar el cambio",
+    "decline": "Rechazar",
+    "titleBefore": "Antes de que esta app lo cambiara, se llamaba “{title}”.",
+    "untitled": "(sin título)",
+    "changedAgo": "{minutes, plural, =0 {Esta app lo cambió hace menos de un minuto.} one {Esta app lo cambió hace # minuto.} many {Esta app lo cambió hace # minutos.} other {Esta app lo cambió hace # minutos.}}",
+    "now": "Ahora:",
+    "after": "Después del cambio:",
+    "showAll": "Mostrar todo",
+    "showLess": "Mostrar menos",
+    "othersHeading": "{count, plural, one {Hay # cambio más esperando de {name}} many {Hay # cambios más esperando de {name}} other {Hay # cambios más esperando de {name}}}",
+    "approveAllShown": "{count, plural, one {Aprobar los # cambios de {name}} many {Aprobar los # cambios de {name}} other {Aprobar los # cambios de {name}}}",
+    "declineAll": "{count, plural, one {Rechazar los # cambios de {name}} many {Rechazar los # cambios de {name}} other {Rechazar los # cambios de {name}}}",
+    "decided": "Este cambio ya se decidió.",
+    "notFound": "No hay ningún cambio esperando en esta dirección. Puede que ya se haya aprobado o rechazado, o que haya esperado más de 30 minutos, o que sea de otra cuenta.",
+    "signIn": "Inicia sesión en Glazecalc con la cuenta a la que corresponde el cambio, y luego abre este enlace otra vez.",
+    "signInLink": "Iniciar sesión",
+    "loadFailed": "No se pudo cargar el cambio. Recarga la página para intentarlo de nuevo.",
+    "failed": "Error: no se pudo enviar tu respuesta. Inténtalo de nuevo.",
+    "apps": "Ver tus apps conectadas"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Escribe una fórmula con números normales, como {typed}: los números se muestran como subíndices, {shown}. Para unir las partes de una fórmula, como en {joined}, copia este punto:",
+    "relatedTo": "Relacionado con",
+    "notes": "Notas",
+    "loi": "Pérdida al fuego (PF), %",
+    "molecularWeight": "Peso molecular de la fórmula en crudo (se usa solo si la PF está en blanco)",
+    "formulaHeading": "La fórmula, cocida",
+    "oxideSelection": "Óxido",
+    "noOxide": "ninguno",
+    "addOxide": "Agregar el óxido a la lista",
+    "formulaIn": "Esta fórmula está en",
+    "percent": "Porcentaje",
+    "molecular": "Molecular (unitaria)",
+    "amount": "cantidad",
+    "removeOxide": "Quitar",
+    "removeOxideName": "Quitar {oxide} de la fórmula",
+    "save": "Guardar",
+    "elements": "Elementos",
+    "removeNote": "Las recetas guardadas conservan su propia copia, así que no cambiarán.",
+    "saveFailed": "Error: falló la solicitud al servidor."
+  },
+  "material": {
+    "title": "Materiales",
+    "lead": "Tus propias materias primas, escritas como fórmula química o como análisis de óxidos.",
+    "newHeading": "Agregar un material",
+    "name": "Nombre",
+    "rawFormula": "Fórmula en crudo",
+    "weightsNote": "El peso equivalente y el peso cocido se calculan a partir de la fórmula y la PF al guardar.",
+    "mineHeading": "Mis materiales",
+    "none": "Todavía ninguno. Los materiales que agregues abajo pueden usarse en tus recetas, junto a los estándar.",
+    "rawFormulaColumn": "Fórmula en crudo",
+    "standardHeading": "Materiales estándar",
+    "fetchFailed": "Hubo un error al obtener la información de los materiales.",
+    "standardFetchFailed": "Hubo un error al obtener la información de los materiales estándar.",
+    "saved": "Listo. Se agregó el material a la base de datos."
+  },
+  "additive": {
+    "title": "Aditivos y colorantes",
+    "lead": "Colorantes y opacificantes que se miden sobre la receta base, como el óxido de cobalto o el de estaño. Una receta puede dejarlos fuera de la fórmula unitaria o contarlos en ella.",
+    "newHeading": "Agregar un aditivo o colorante",
+    "name": "Nombre",
+    "formulaAsSold": "Fórmula, tal como se vende",
+    "noChemistry": "No tiene análisis de óxidos, como un pigmento comercial: déjalo fuera de la fórmula unitaria",
+    "firedNote": "Escribe lo que aporta al esmalte una vez cocido: el óxido de cobalto negro, {asSold}, es {fired} con una PF de {loi} %. Así, una receta podrá contarlo en la fórmula unitaria.",
+    "mineHeading": "Mis aditivos y colorantes",
+    "none": "Todavía ninguno. Los aditivos que agregues abajo pueden usarse en tus recetas, junto a los estándar.",
+    "standardHeading": "Aditivos estándar",
+    "fetchFailed": "Hubo un error al obtener la información de los aditivos.",
+    "standardFetchFailed": "Hubo un error al obtener la información de los aditivos estándar.",
+    "saved": "Listo. Se agregó el aditivo a la base de datos."
+  }
+}

@@ -83,9 +83,10 @@ for (const [where, viewport] of Object.entries({
         await expect(list.getByRole('option'), typed).toHaveCount(1);
         await expect(list.getByRole('option'), typed).toContainText(found);
       }
-      // The result is said aloud as well: how many, and when none.
+      // The result is said aloud as well: how many, and when none. "portu" finds both Portuguese: Portugal's and Brazil's.
       await field.fill('portu');
-      await expect(page.getByRole('status').filter({ hasText: '1 match' })).toHaveCount(1);
+      await expect(list.getByRole('option')).toHaveCount(2);
+      await expect(page.getByRole('status').filter({ hasText: '2 matches' })).toHaveCount(1);
       await field.fill('klingon');
       await expect(list).toHaveCount(0);
       await expect(field).toHaveAttribute('aria-expanded', 'false');

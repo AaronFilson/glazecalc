@@ -86,6 +86,11 @@ describe('message checks', () => {
     // before three, German reads it as thousands, so 1.250 is not the English's 1.250.
     expect(numbersIn('Keramikos 10.05, 1.5 g', 'de')).to.eql(['1.5 g', '10.05']);
     expect(numbersIn('1.250', 'de')).to.eql(['1250']);
+    // Wave L1: Brazilian Portuguese groups with a point (1.240) and Latin American Spanish writes 1.5.
+    const l1 = numbersIn('Fire to 1222 °C, then 1240 °C, with 1.5% and 12,500 g.', 'en');
+    expect(numbersIn('Queime a 1.222 °C, depois 1.240 °C, com 1,5% e 12.500 g.', 'pt-BR')).to.eql(l1);
+    expect(numbersIn('Queime a 1222 °C, depois 1240 °C, com 1,5% e 12.500 g.', 'pt-BR')).to.eql(l1);
+    expect(numbersIn('Quema a 1222 °C, luego 1240 °C, con 1.5 % y 12,500 g.', 'es-419')).to.eql(l1);
   });
 
   describe('in the languages of East and Southeast Asia, and Turkish', () => {
@@ -343,6 +348,11 @@ describe('message checks', () => {
           'fr',
           '{count, plural, one {Cette clé} many {Ces # de clés} other {Ces # clés}}',
           '{count, plural, =1 {Cette clé} one {# clé} many {Ces # de clés} other {Ces # clés}}'
+        ],
+        [
+          'pt-BR',
+          '{count, plural, one {Esta chave} many {Estas # de chaves} other {Estas # chaves}}',
+          '{count, plural, =1 {Esta chave} one {# chave} many {Estas # de chaves} other {Estas # chaves}}'
         ]
       ];
       for (const [language, was, fixed] of messages) {

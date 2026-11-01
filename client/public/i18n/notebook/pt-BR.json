@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Seu caderno do ateliê",
+    "signedInAs": "Você entrou como {email}.",
+    "trying": "Testando o Glazecalc como {name}. Comece por uma receita.",
+    "welcomeBack": "Continue de onde parou.",
+    "welcome": {
+      "heading": "Boas-vindas ao Glazecalc",
+      "text": "Seu caderno está pronto. Um bom primeiro passo: digite um esmalte que você já mistura, com as matérias-primas e as quantidades, e veja a fórmula de Seger dele.",
+      "firstRecipe": "Começar sua primeira receita",
+      "confirmHeading": "Confirme seu e-mail",
+      "confirm": "Confirme seu e-mail: enviamos um link para {email}. A verificação em duas etapas precisa disso. A <account>página da sua conta</account> pode enviá-lo de novo.",
+      "confirmText": "Enviamos um link para {email}. Abra-o para confirmar que o endereço é seu: a verificação em duas etapas precisa disso. A <account>página da sua conta</account> pode enviá-lo de novo."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Receitas",
+        "text": "Monte um esmalte a partir de matérias-primas e quantidades, veja a fórmula de Seger dele e salve."
+      },
+      "import": {
+        "title": "Colar receitas",
+        "text": "Cole receitas de um site, de uma planilha ou de anotações, confira o que foi lido e salve."
+      },
+      "blends": {
+        "title": "Misturas para provas",
+        "text": "Misture duas, três ou quatro das suas receitas em provas numeradas, com o que pesar para cada uma."
+      },
+      "material": {
+        "title": "Matérias-primas",
+        "text": "Adicione matérias-primas suas, a partir de uma fórmula química ou da análise de um fornecedor."
+      },
+      "additive": {
+        "title": "Aditivos e corantes",
+        "text": "Guarde os corantes e opacificantes que você adiciona sobre um esmalte-base."
+      },
+      "firing": {
+        "title": "Registros de queima",
+        "text": "Anote horários, temperaturas e cones de cada queima."
+      },
+      "notes": {
+        "title": "Anotações",
+        "text": "Guarde resultados de testes e qualquer outra coisa que valha lembrar."
+      },
+      "advice": {
+        "title": "Dicas sobre esmaltes",
+        "text": "Dicas de mistura, esmaltação e queima, e suas próprias dicas."
+      },
+      "guides": {
+        "title": "Guias",
+        "text": "Do que é um esmalte até a queima, e como manter todos em segurança pelo caminho."
+      },
+      "trash": {
+        "title": "Lixeira",
+        "text": "Restaure o que você removeu nos últimos 30 dias."
+      },
+      "account": {
+        "title": "Conta e configurações",
+        "text": "Configurações, sua senha, a verificação em duas etapas e a opção de baixar tudo o que você guarda aqui."
+      }
+    },
+    "newHere": "Nunca usou a fórmula de Seger? A <advice>página de dicas</advice> explica o básico, e a <about>página Sobre</about> diz como o Glazecalc funciona."
+  },
+  "firing": {
+    "title": "Registros de queima",
+    "lead": "Registre cada queima: horários, temperaturas, cones e notas sobre o forno.",
+    "newHeading": "Uma nova queima",
+    "titleLabel": "Título",
+    "kiln": "Forno",
+    "date": "Data",
+    "notes": "Notas",
+    "fieldSelect": "Campos a registrar",
+    "addField": "Adicionar o campo",
+    "included": "Campos neste registro",
+    "moveLeft": "Mover o campo para a esquerda",
+    "moveRight": "Mover o campo para a direita",
+    "removeField": "Remover o campo",
+    "addRow": "Adicionar uma linha à tabela da queima",
+    "addRowWhy": "Adicione um campo primeiro.",
+    "recordHeading": "Registrar a queima",
+    "rowActions": "Ações da linha",
+    "cell": "{field}, linha {row}",
+    "removeRow": "Remover linha",
+    "save": "Salvar",
+    "storedHeading": "Minhas queimas salvas",
+    "noneSaved": "Nenhuma ainda. As queimas salvas aparecem aqui.",
+    "storedIn": "Queima feita em {kiln}, em {date}.",
+    "storedOn": "Queima feita em {date}.",
+    "storedNotes": "Notas: {notes}",
+    "titleMissing": "Dê um título à queima.",
+    "fieldsMissing": "Adicione pelo menos um campo a registrar, como {example}.",
+    "chooseField": "Escolha um campo para adicionar e depois clique em Adicionar o campo.",
+    "fetchFailed": "Ocorreu um erro ao obter as informações dos registros de queima.",
+    "saved": "Pronto. Registro da queima adicionado ao servidor.",
+    "saveFailed": "Erro: a solicitação ao servidor falhou.",
+    "recipesHeading": "Receitas desta queima",
+    "noRecipes": "Nenhuma receita vinculada ainda.",
+    "recipesFailed": "Não foi possível obter suas receitas, então nenhuma pode ser vinculada agora.",
+    "pickRecipe": "Uma receita desta queima",
+    "linkRecipe": "Vincular a receita",
+    "unlink": "Desvincular",
+    "unlinkRecipe": "Desvincular {title}",
+    "linkFailed": "Não foi possível salvar o vínculo."
+  },
+  "notes": {
+    "title": "Anotações",
+    "lead": "Qualquer outra coisa que valha lembrar sobre seus esmaltes.",
+    "newHeading": "Uma nova anotação",
+    "titleLabel": "Título",
+    "content": "Anotação",
+    "save": "Salvar",
+    "mineHeading": "Minhas anotações salvas",
+    "noneSaved": "Nenhuma ainda. As anotações salvas aparecem aqui.",
+    "titleMissing": "Dê um título à anotação.",
+    "contentMissing": "Escreva a anotação.",
+    "untitled": "Anotação sem título",
+    "fetchFailed": "Ocorreu um erro ao obter as anotações.",
+    "saved": "Pronto. Anotação adicionada ao servidor.",
+    "saveFailed": "Erro: a solicitação ao servidor falhou."
+  },
+  "trash": {
+    "title": "Lixeira",
+    "lead": "O que você remove (receitas, matérias-primas, aditivos, anotações, registros de queima e dicas) fica aqui por 30 dias. Restaure ou exclua de vez.",
+    "listHeading": "Na Lixeira",
+    "none": "A Lixeira está vazia.",
+    "untitled": "Sem título",
+    "kinds": {
+      "recipes": "Receita",
+      "materials": "Matéria-prima",
+      "additives": "Aditivo",
+      "notes": "Anotação",
+      "firing": "Registro de queima",
+      "advice": "Dica",
+      "other": "Registro"
+    },
+    "removedOn": "Remoção em {date}",
+    "goesOn": "Exclusão definitiva em {date}",
+    "byApp": "Remoção feita por um app conectado",
+    "putBack": "Restaurar",
+    "putBackName": "Restaurar {name}",
+    "restored": "Pronto: “{name}” voltou para onde estava.",
+    "restoredAlready": "“{name}” já voltou para onde estava.",
+    "restoreFailed": "Não foi possível restaurar “{name}”. Tente novamente.",
+    "deleted": "Exclusão definitiva de “{name}” concluída.",
+    "empty": "Esvaziar a Lixeira",
+    "emptyQuestion": "Excluir de vez {count, plural, one {o # registro} many {todos os # registros} other {todos os # registros}} da Lixeira? Essa ação não pode ser desfeita.",
+    "emptyYes": "Sim, esvaziar",
+    "emptying": "Esvaziando…",
+    "emptied": "A Lixeira está vazia.",
+    "emptyFailed": "Não foi possível esvaziar a Lixeira. Tente novamente.",
+    "fetchFailed": "Não foi possível carregar a Lixeira. Tente novamente."
+  }
+}

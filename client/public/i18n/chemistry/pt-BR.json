@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Composto desconhecido {compound} na fórmula",
+  "unknown-oxide": "Óxido desconhecido {oxide} na matéria-prima {material}",
+  "invalid-oxide-amount": "Quantidade inválida de {oxide} na matéria-prima {material}",
+  "loi-range": "A PF de {material} deve ser de no mínimo 0 e menor que 100",
+  "no-oxides": "A matéria-prima {material} não tem óxidos",
+  "no-name": "A matéria-prima deve ter um nome",
+  "no-analysis": "A matéria-prima {material} precisa de uma fórmula ou de uma análise",
+  "recipe-shape": "A receita deve ser uma lista de '{ material, amount }' ou um mapa de quantidades",
+  "invalid-amount": "Quantidade inválida para a matéria-prima {material}",
+  "missing-material": "Falta a matéria-prima em uma linha da receita",
+  "unknown-material": "Matéria-prima desconhecida {material}",
+  "no-flux": "A receita não contém óxidos fundentes, então a UMF fica indefinida",
+  "no-target": "O alvo não tem óxidos a buscar",
+  "no-materials": "Não há matérias-primas a calcular",
+  "no-temperature": "A temperatura de queima é necessária para definir o boro",
+  "no-flux-to-rebuild": "O esmalte não tem fundente a reconstruir",
+  "unknown-element": "Elemento desconhecido {element} em {formula}",
+  "bad-formula": "Não foi possível interpretar a fórmula {formula}",
+  "analysis-total": "A análise de {material} soma {total}% incluindo a PF; o esperado é cerca de 100%.",
+  "stored-equivalent": "O peso equivalente guardado de {material} não corresponde à sua fórmula e PF; foram usadas a fórmula e a PF.",
+  "trace-flux": "A receita contém só traços de óxidos fundentes, então a UMF não tem significado."
+}
