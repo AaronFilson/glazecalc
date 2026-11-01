@@ -591,6 +591,12 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   Brazilian Portuguese (`pt-BR`) is offered too, since the owner approved its standard sign-up notice (accounts on US
   servers, the reader's own choice) on 2026-11-01; Brazil reads it, and Angola and Mozambique keep pt-PT. Native reviewers for both
   are wanted (the Native check rows in docs/translations/es-419.md, pt-BR.md).
+- **Africa, wave L2** (round 10, scratch/round10/c-l2/): Swahili (`sw`, written for Kenya and Tanzania) and Amharic
+  (`am`, Ethiopic script with its own punctuation, digits 0–9, Gregorian dates, the 24-hour clock) are offered, each
+  with the reference pages and the plain notice (as Irish and Maltese have; for Swahili the owner's decision of
+  2026-11-01). Kenya, which listed Swahili beside English, now offers it; the picker's "Africa" group lists both.
+  Tanzania, Uganda and Ethiopia are not regions yet (Ethiopia waits for an emergency number confirmed on an official
+  page). Native reviewers for both are wanted (the Native check rows in docs/translations/sw.md, am.md).
 
 ## What stays the same
 

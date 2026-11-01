@@ -125,6 +125,15 @@ describe('the translation notice', () => {
       expect(element.querySelector('aside button')).toBeNull();
     }
   });
+
+  for (const code of ['mt', 'sw', 'am']) {
+    it(`says it plainly in ${code} too (wave L2: Swahili and Amharic)`, async () => {
+      const { element } = await create(code);
+      expect(element.querySelector('aside p')?.textContent).toContain(
+        'which handles this language less well than most languages. The English page may read better.'
+      );
+    });
+  }
 });
 
 describe('the footer’s languages', () => {

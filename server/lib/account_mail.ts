@@ -494,6 +494,26 @@ export const RESET: Record<string, Email> = {
       'O link funciona uma única vez. Se você não pediu isso, ignore este e-mail; sua senha continua a mesma.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  sw: {
+    subject: 'Weka upya nenosiri lako la Glazecalc',
+    text:
+      'Mtu (tunatumaini ni wewe) ameomba kuweka upya nenosiri la akaunti ya Glazecalc {account}.\n\n' +
+      'Ili kuchagua nenosiri jipya, fungua kiungo hiki ndani ya dakika {minutes}:\n\n' +
+      '{link}\n\n' +
+      'Kiungo kinafanya kazi mara moja tu. Ikiwa hukuomba hili, puuza barua pepe hii; nenosiri lako litabaki kama lilivyo.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  am: {
+    subject: 'የGlazecalc የይለፍ ቃልዎን ዳግም ያስጀምሩ',
+    text:
+      'አንድ ሰው (እርስዎ እንደሆኑ ተስፋ እናደርጋለን) ለዚህ የGlazecalc መለያ የይለፍ ቃሉን ዳግም ለማስጀመር ጠይቋል፥ {account}።\n\n' +
+      'አዲስ የይለፍ ቃል ለመምረጥ፣ ይህን ሊንክ {minutes} ደቂቃዎች ሳያልፉ ይክፈቱ፥\n\n' +
+      '{link}\n\n' +
+      'ሊንኩ የሚሠራው አንድ ጊዜ ነው። ይህን ካልጠየቁ፣ ይህን ኢሜይል ችላ ይበሉ፤ የይለፍ ቃልዎ እንዳለ ይቆያል።\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -879,6 +899,22 @@ export const CHANGED: Record<string, Email> = {
     text:
       'A senha da conta {account} do Glazecalc acabou de ser alterada, e todos os dispositivos que estavam conectados foram desconectados.\n\n' +
       'Se foi você, não há mais nada a fazer. Se não foi, redefina sua senha agora mesmo em {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  sw: {
+    subject: 'Nenosiri lako la Glazecalc limebadilishwa',
+    text:
+      'Nenosiri la akaunti ya Glazecalc {account} limebadilishwa sasa hivi, na kila kifaa kilichokuwa kimeingia kimetolewa.\n\n' +
+      'Ikiwa ulifanya hili wewe, hakuna kingine cha kufanya. Ikiwa sivyo, weka upya nenosiri lako mara moja kwenye {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  am: {
+    subject: 'የGlazecalc የይለፍ ቃልዎ ተቀይሯል',
+    text:
+      'የዚህ የGlazecalc መለያ የይለፍ ቃል አሁን ተቀይሯል፥ {account}፤ የገቡባቸው ሁሉም መሣሪያዎችም ወጥተዋል።\n\n' +
+      'ይህን ያደረጉት እርስዎ ከሆኑ፣ ሌላ የሚያደርጉት ነገር የለም። እርስዎ ካልሆኑ፣ የይለፍ ቃልዎን ወዲያውኑ እዚህ ዳግም ያስጀምሩ፥ {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }

@@ -1885,10 +1885,10 @@ describe('Latin America and Africa', () => {
     expect(regions.formatLocaleFor('en-XA', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
   });
 
-  it('knows eleven languages, grouped, Latin American Spanish and Brazilian Portuguese offered since wave L1, six of Africa and Quechua with the plain notice', () => {
+  it('knows eleven languages, grouped, Latin American Spanish and Brazilian Portuguese offered since wave L1, Swahili and Amharic since wave L2, seven of Africa and Quechua with the plain notice', () => {
     for (const code of NEW_LANGUAGES) {
       const language = languages.languageFor(code)!;
-      const live = code === 'es-419' || code === 'pt-BR';
+      const live = ['es-419', 'pt-BR', 'sw', 'am'].includes(code);
       expect(language, code).to.include({ code, dir: 'ltr', live });
       if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
       else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
@@ -1898,7 +1898,8 @@ describe('Latin America and Africa', () => {
       expect(language.name, code).to.equal(language.name.normalize('NFC'));
     }
     const plain = NEW_LANGUAGES.filter((code) => languages.languageFor(code)!.plainNotice);
-    expect(plain).to.eql(['am', 'ha', 'yo', 'zu', 'ig', 'so', 'qu']);
+    // Swahili's plain notice: the owner's decision of 2026-11-01.
+    expect(plain).to.eql(['sw', 'am', 'ha', 'yo', 'zu', 'ig', 'so', 'qu']);
     // Brazil's plural rules, not Portugal's: 0 is singular.
     expect(new Intl.PluralRules(languages.textLanguage('pt-BR')).select(0)).to.equal('one');
     expect(new Intl.PluralRules(languages.textLanguage('pt-PT')).select(0)).to.equal('other');
@@ -1906,9 +1907,15 @@ describe('Latin America and Africa', () => {
     expect([groups.languageGroup('es'), groups.languageGroup('pt-PT')]).to.eql(['europe', 'europe']);
   });
 
-  it('wave L2: Swahili and Amharic known, not offered, Amharic on its own plural rules with the pseudo-Amharic', () => {
-    expect(languages.languageFor('sw')).to.include({ name: 'Kiswahili', live: false });
-    expect(languages.languageFor('am')).to.include({ name: 'አማርኛ', live: false, plainNotice: true });
+  it('wave L2: Swahili and Amharic offered with the plain notice and reference pages, Amharic on its own plural rules with the pseudo-Amharic', () => {
+    expect(languages.languageFor('sw')).to.include({
+      name: 'Kiswahili',
+      live: true,
+      plainNotice: true,
+      reference: true
+    });
+    expect(languages.languageFor('am')).to.include({ name: 'አማርኛ', live: true, plainNotice: true, reference: true });
+    expect(languages.REFERENCE_LANGUAGES).to.include.members(['sw', 'am']);
     expect(languages.languageFor('am-XI')).to.include({ base: 'am', pseudo: true, live: false });
     expect(languages.textLanguage('am-XI')).to.equal('am');
     expect(groups.languageGroup('am-XI')).to.equal('other');
