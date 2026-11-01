@@ -40,6 +40,17 @@
     }
   },
   "more": "Tuilleadh treoirleabhar",
+  "related": {
+    "heading": "Leathanaigh thagartha",
+    "cones": {
+      "title": "Tábla cón",
+      "text": "Cóin Orton agus SK agus a dteochtaí i °C agus i °F, agus cá as a dtagann gach figiúr."
+    },
+    "materials": {
+      "title": "Ábhair chaighdeánacha",
+      "text": "Gach ábhar sa leabharlann lena anailís ocsaíde, a rannchuidiú le foirmle Seger agus a ghuaiseacha."
+    }
+  },
   "contents": "Ar an leathanach seo",
   "poison": {
     "numbersFor": "Uimhreacha:",
@@ -133,6 +144,13 @@
     "respirators": "Díoltar maisc deannaigh anseo de réir aicme: {everyday} do dheannach glónra, nó {higher} le haghaidh níos mó cosanta (<link>na haicmí oifigiúla</link>).",
     "unknown": "{region}: níorbh fhéidir linn an teorainn náisiúnta a dheimhniú. Tá feidhm ag teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³, i ngach ballstát.",
     "noData": "{region}: níor dheimhníomar an teorainn fós.",
+    "statesLabel": "Teorainneacha a leag stáit síos: {region}",
+    "statesCaption": "Teorainneacha a leag roinnt stát síos do dheannach ina bhfuil grianchloch, áit arb é Q an ghrianchloch sa deannach, i %. Níor léamar iad ach i gcóipeanna a d’fhoilsigh daoine eile, mar sin níl siad deimhnithe (seiceáilte {date}).",
+    "state": "Stát",
+    "respirableDust": "Deannach inanálaithe",
+    "totalDust": "Deannach iomlán",
+    "cutOff": "Gearrtha as sa chóip a léamar",
+    "stateSetBy": "{area}: leagtha síos sa dlí seo: <link>{law}</link>.",
     "agency": "An comhlacht náisiúnta atá freagrach as sábháilteacht ag an obair: <link>{name}</link>.",
     "agencySilica": "A <link>leathanach faoi shilice</link>.",
     "choosePrompt": "Roghnaigh do thír nó do réigiún chun an teorainn ansin a fheiceáil."

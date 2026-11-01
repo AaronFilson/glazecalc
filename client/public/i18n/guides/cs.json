@@ -40,6 +40,17 @@
     }
   },
   "more": "Další návody",
+  "related": {
+    "heading": "Referenční stránky",
+    "cones": {
+      "title": "Tabulka žároměrek",
+      "text": "Ortonovy žároměrky a žároměrky SK s teplotami v °C a °F a s uvedením, odkud každá hodnota pochází."
+    },
+    "materials": {
+      "title": "Standardní suroviny",
+      "text": "Každá surovina z knihovny s oxidovým rozborem, příspěvkem do Segerova vzorce a nebezpečími."
+    }
+  },
   "contents": "Na této stránce",
   "poison": {
     "numbersFor": "Telefonní čísla:",
@@ -133,6 +144,13 @@
     "respirators": "Protiprachové respirátory se zde prodávají podle tříd: {everyday} na prach z glazur, nebo {higher} pro vyšší ochranu (<link>oficiální třídy</link>).",
     "unknown": "{region}: národní limit se nám nepodařilo ověřit. Závazný limit EU ve výši {value} mg/m³ platí v každém členském státě.",
     "noData": "{region}: limit jsme zatím neověřili.",
+    "statesLabel": "Limity stanovené státy (oblast: {region})",
+    "statesCaption": "Limity, které některé státy stanovily pro prach obsahující křemen; Q je podíl křemene v prachu v %. Četli jsme je jen v kopiích zveřejněných jinými, takže nejsou potvrzeny (zkontrolováno {date}).",
+    "state": "Stát",
+    "respirableDust": "Respirabilní prach",
+    "totalDust": "Celkový prach",
+    "cutOff": "Useknuto v kopii, kterou jsme četli",
+    "stateSetBy": "{area}: stanoveno předpisem <link>{law}</link>.",
     "agency": "Národní úřad pro bezpečnost práce: <link>{name}</link>.",
     "agencySilica": "Jeho <link>stránka o oxidu křemičitém</link>.",
     "choosePrompt": "Vyberte svou zemi nebo region a zobrazí se tamní limit."

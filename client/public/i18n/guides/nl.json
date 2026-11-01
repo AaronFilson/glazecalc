@@ -40,6 +40,17 @@
     }
   },
   "more": "Meer gidsen",
+  "related": {
+    "heading": "Naslagpagina’s",
+    "cones": {
+      "title": "Kegeltabel: Ortonkegels en SK-kegels",
+      "text": "Orton- en SK-kegels met hun temperaturen in °C en °F, en waar elk cijfer vandaan komt."
+    },
+    "materials": {
+      "title": "Standaardgrondstoffen",
+      "text": "Elke grondstof in de bibliotheek met oxideanalyse, bijdrage aan de Segerformule en gevaren."
+    }
+  },
   "contents": "Op deze pagina",
   "poison": {
     "numbersFor": "Nummers voor",
@@ -133,6 +144,13 @@
     "respirators": "Stofmaskers worden hier per klasse verkocht: {everyday} voor glazuurstof, of {higher} voor meer bescherming (<link>de officiële klassen</link>).",
     "unknown": "{region}: we konden de nationale grenswaarde niet bevestigen. De bindende EU-grenswaarde van {value} mg/m³ geldt in elke lidstaat.",
     "noData": "{region}: we hebben de grenswaarde daar nog niet bevestigd.",
+    "statesLabel": "Grenswaarden die staten in {region} hebben vastgesteld",
+    "statesCaption": "Grenswaarden die sommige staten hebben vastgesteld voor stof met kwarts, waarbij Q het kwarts in het stof is, in %. We hebben ze alleen gelezen in kopieën die anderen hebben gepubliceerd, dus ze zijn niet bevestigd (gecontroleerd op {date}).",
+    "state": "Staat",
+    "respirableDust": "Respirabel stof",
+    "totalDust": "Totaal stof",
+    "cutOff": "Afgekapt in de kopie die we lazen",
+    "stateSetBy": "{area}: vastgesteld door <link>{law}</link>.",
     "agency": "De nationale instantie voor veiligheid op het werk: <link>{name}</link>.",
     "agencySilica": "De <link>pagina over silica</link> van die instantie.",
     "choosePrompt": "Kies uw land of regio om de grenswaarde daar te zien."

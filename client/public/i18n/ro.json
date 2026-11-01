@@ -21,6 +21,7 @@
     "recipe": "Rețete – Glazecalc",
     "import": "Lipiți rețete - Glazecalc",
     "blends": "Amestecuri pentru plăcuțe de test - Glazecalc",
+    "solve": "Rezolvare după o țintă - Glazecalc",
     "material": "Materii prime – Glazecalc",
     "additive": "Aditivi – Glazecalc",
     "firingLogs": "Jurnale de ardere – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Pagina nu a fost găsită – Glazecalc",
     "shared": "Rețetă partajată - Glazecalc",
     "assistants": "Folosiți Glazecalc din asistentul dumneavoastră AI - Glazecalc",
-    "confirm": "Aprobați o modificare – Glazecalc"
+    "confirm": "Aprobați o modificare – Glazecalc",
+    "cones": "Tabelul conurilor: temperaturile conurilor Orton și SK - Glazecalc",
+    "materials": "Materii prime standard pentru glazuri: analiză și pericole - Glazecalc",
+    "materialInfo": "{name}: analiza oxizilor și pericole - Glazecalc"
   },
   "nav": {
     "skip": "Treceți la conținut",
@@ -82,6 +86,13 @@
     "languages": "Limbi",
     "language": "Limba:"
   },
+  "offline": {
+    "languageNotSaved": "Această limbă nu este salvată pe acest telefon. Conectați-vă la internet ca să o folosiți.",
+    "updateReady": "O versiune nouă a aplicației Glazecalc este gata.",
+    "reload": "Reîncărcați",
+    "dismiss": "Nu acum",
+    "install": "Instalați aplicația"
+  },
   "picker": {
     "results": "{count, plural, one {# rezultat} few {# rezultate} other {# de rezultate}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asia",
       "eastAsia": "Asia de Est",
       "europe": "Europa",
+      "latinAmerica": "America Latină",
       "middleEastNorthAfrica": "Orientul Mijlociu și Africa de Nord",
       "oceania": "Oceania",
       "southAsia": "Asia de Sud",
@@ -127,6 +139,10 @@
     "terms": "Condițiile de utilizare a Glazecalc: gratuit pentru propriile glazuri și lucrări, corect față de serverul comun și oferit „ca atare”.",
     "assistants": "Glazecalc din Claude, Copilot, Cursor sau Gemini prin MCP: chimia glazurilor, verificări de limite, înlocuitori, ghiduri și rețetele dumneavoastră.",
     "signup": "Creați gratuit un cont Glazecalc pentru rețete de glazură ceramică, materii prime, notițe și jurnale de ardere. Fără reclame; datele nu se vând niciodată.",
+    "cones": "Conurile piroscopice Orton și SK de la 022 în sus, cu temperaturile lor în °C și °F, viteza de încălzire pentru care este făcut fiecare tabel și sursa cifrelor.",
+    "materials": "Materiile prime din biblioteca standard Glazecalc, de la feldspați și argile până la frite și surse de bor, fiecare cu analiza oxizilor, formula Seger și pericolele ei.",
+    "materialInfo": "{name}: analiza oxizilor, formula Seger, pierderea la calcinare și pericole în biblioteca standard Glazecalc.",
+    "materialInfoLong": "{name} în biblioteca standard Glazecalc de materii prime pentru glazuri: analiza oxizilor, contribuția la formula Seger, pierderea la calcinare și pericole.",
     "imageAlt": "Pagina de pornire Glazecalc: chimia glazurilor, gratuită pentru ceramiști, lângă o fotografie cu seturi de conuri arse."
   },
   "notices": {

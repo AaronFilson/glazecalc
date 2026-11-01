@@ -86,6 +86,13 @@
     "languages": "භාෂා",
     "language": "භාෂාව:"
   },
+  "offline": {
+    "languageNotSaved": "මෙම භාෂාව මෙම දුරකථනයේ සුරකින ලද්දක් නොවේ. එය භාවිත කිරීමට අන්තර්ජාලයට සම්බන්ධ වන්න.",
+    "updateReady": "Glazecalc හි නව අනුවාදයක් සූදානම්.",
+    "reload": "නැවත පූරණය කරන්න",
+    "dismiss": "දැන් නොවේ",
+    "install": "යෙදුම ස්ථාපනය කරන්න"
+  },
   "picker": {
     "results": "{count, plural, one {ගැළපීම් #ක්} other {ගැළපීම් #ක්}}",
     "languages": {
@@ -104,6 +111,7 @@
       "asia": "ආසියාව",
       "eastAsia": "නැගෙනහිර ආසියාව",
       "europe": "යුරෝපය",
+      "latinAmerica": "ලතින් ඇමරිකාව",
       "middleEastNorthAfrica": "මැද පෙරදිග සහ උතුරු අප්‍රිකාව",
       "oceania": "ඕෂනියාව",
       "southAsia": "දකුණු ආසියාව",

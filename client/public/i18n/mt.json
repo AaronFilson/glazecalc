@@ -21,6 +21,7 @@
     "recipe": "Riċetti - Glazecalc",
     "import": "Pejstjar ta’ riċetti - Glazecalc",
     "blends": "Taħlitiet għal madum tal-prova - Glazecalc",
+    "solve": "Issolvi għal mira - Glazecalc",
     "material": "Materjali - Glazecalc",
     "additive": "Addittivi - Glazecalc",
     "firingLogs": "Reġistri tal-ħami - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Il-paġna ma nstabitx - Glazecalc",
     "shared": "Riċetta maqsuma - Glazecalc",
     "assistants": "Użu ta’ Glazecalc mill-assistent tal-IA tiegħek - Glazecalc",
-    "confirm": "Approva bidla - Glazecalc"
+    "confirm": "Approva bidla - Glazecalc",
+    "cones": "Tabella tal-koni: temperaturi tal-koni Orton u SK - Glazecalc",
+    "materials": "Materjali standard tal-glejż: analiżi u perikli - Glazecalc",
+    "materialInfo": "{name}: analiżi tal-ossidi u perikli - Glazecalc"
   },
   "nav": {
     "skip": "Aqbeż għall-kontenut",
@@ -82,6 +86,13 @@
     "languages": "Lingwi",
     "language": "Lingwa:"
   },
+  "offline": {
+    "languageNotSaved": "Din il-lingwa mhix issejvjata fuq dan it-telefon. Qabbad mal-internet biex tużaha.",
+    "updateReady": "Verżjoni ġdida ta’ Glazecalc hija lesta.",
+    "reload": "Erġa’ ikkarga",
+    "dismiss": "Mhux issa",
+    "install": "Installa l-app"
+  },
   "picker": {
     "results": "{count, plural, one {# riżultat} two {# riżultati} few {# riżultati} many {#-il riżultat} other {# riżultat}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "L-Asja",
       "eastAsia": "L-Asja tal-Lvant",
       "europe": "L-Ewropa",
+      "latinAmerica": "L-Amerika Latina",
       "middleEastNorthAfrica": "Il-Lvant Nofsani u l-Afrika ta’ Fuq",
       "oceania": "L-Oċeanja",
       "southAsia": "L-Asja tan-Nofsinhar",
@@ -127,6 +139,10 @@
     "terms": "It-termini biex tuża Glazecalc: b’xejn għall-glejżijiet u x-xogħol tiegħek stess, ġust mas-server maqsum, u pprovdut kif inhu.",
     "assistants": "Uża Glazecalc minn Claude, Copilot, Cursor jew Gemini permezz tal-MCP: kimika tal-glejż, kontrolli tal-limiti, sostituti, gwidi u r-riċetti tiegħek stess.",
     "signup": "Oħloq kont Glazecalc b’xejn biex iżżomm ir-riċetti tal-glejż, il-materjali, in-noti u r-reġistri tal-ħami tiegħek. Bla reklam; id-data tiegħek qatt ma tinbiegħ.",
+    "cones": "Koni pirometriċi Orton u SK mill-kon 022, bit-temperaturi tagħhom f’°C u f’°F, ir-rata ta’ tisħin ta’ kull tabella u minn fejn ġejjin il-figuri.",
+    "materials": "Il-materjali tal-librerija standard ta’ Glazecalc, mill-feldspati u t-tafal sal-frits u s-sorsi tal-boron, bl-analiżi tal-ossidi, il-formula ta’ Seger u l-perikli.",
+    "materialInfo": "{name}: analiżi tal-ossidi, formula ta’ Seger, telf mit-tqabbid bin-nar u perikli fil-librerija standard ta’ Glazecalc.",
+    "materialInfoLong": "{name} fil-librerija standard ta’ Glazecalc tal-materjali tal-glejż: l-analiżi tal-ossidi, il-kontribut fil-formula ta’ Seger, it-telf mit-tqabbid bin-nar u l-perikli.",
     "imageAlt": "Il-paġna prinċipali ta’ Glazecalc: kimika tal-glejż b’xejn għall-fuħħarin, maġenb ritratt ta’ settijiet ta’ koni moħmija."
   },
   "notices": {

@@ -40,6 +40,17 @@
     }
   },
   "more": "Więcej poradników",
+  "related": {
+    "heading": "Strony informacyjne",
+    "cones": {
+      "title": "Tabela stożków",
+      "text": "Stożki Ortona i SK z temperaturami w °C i °F oraz źródłem każdej wartości."
+    },
+    "materials": {
+      "title": "Surowce standardowe",
+      "text": "Każdy surowiec z biblioteki wraz ze składem tlenkowym, udziałem we wzorze Segera i zagrożeniami."
+    }
+  },
   "contents": "Na tej stronie",
   "poison": {
     "numbersFor": "Numery telefonów:",
@@ -133,6 +144,13 @@
     "respirators": "Półmaski przeciwpyłowe są tu sprzedawane według klas: {everyday} do pyłu szkliw lub {higher} dla lepszej ochrony (<link>oficjalne klasy</link>).",
     "unknown": "{region}: nie udało nam się potwierdzić limitu krajowego. Wiążący limit UE wynoszący {value} mg/m³ obowiązuje w każdym państwie członkowskim.",
     "noData": "{region}: nie potwierdziliśmy jeszcze obowiązującego limitu.",
+    "statesLabel": "Limity ustalone przez stany – {region}",
+    "statesCaption": "Limity, które niektóre stany ustaliły dla pyłu zawierającego kwarc, gdzie Q to zawartość kwarcu w pyle, w %. Czytaliśmy je wyłącznie w kopiach opublikowanych przez inne podmioty, więc nie zostały potwierdzone (sprawdzono {date}).",
+    "state": "Stan",
+    "respirableDust": "Pył respirabilny",
+    "totalDust": "Pył całkowity",
+    "cutOff": "Ucięte w przeczytanej kopii",
+    "stateSetBy": "{area}: ustalone w <link>{law}</link>.",
     "agency": "Krajowa instytucja ds. bezpieczeństwa i higieny pracy: <link>{name}</link>.",
     "agencySilica": "Jej <link>strona o krzemionce</link>.",
     "choosePrompt": "Wystarczy wybrać kraj lub region, aby zobaczyć obowiązujący w nim limit."

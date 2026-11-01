@@ -21,6 +21,7 @@
     "recipe": "Reseptit – Glazecalc",
     "import": "Reseptien liittäminen – Glazecalc",
     "blends": "Seokset koepaloille – Glazecalc",
+    "solve": "Ratkaise tavoitteen mukaan – Glazecalc",
     "material": "Raaka-aineet – Glazecalc",
     "additive": "Lisäaineet – Glazecalc",
     "firingLogs": "Polttopäiväkirjat – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Sivua ei löydy – Glazecalc",
     "shared": "Jaettu resepti – Glazecalc",
     "assistants": "Glazecalcin käyttäminen tekoälyavustajasta – Glazecalc",
-    "confirm": "Muutoksen hyväksyminen – Glazecalc"
+    "confirm": "Muutoksen hyväksyminen – Glazecalc",
+    "cones": "Keilataulukko: Orton- ja SK-keilojen lämpötilat – Glazecalc",
+    "materials": "Lasiteiden vakioraaka-aineet: analyysi ja vaarat – Glazecalc",
+    "materialInfo": "{name}: oksidianalyysi ja vaarat – Glazecalc"
   },
   "nav": {
     "skip": "Siirry sisältöön",
@@ -82,6 +86,13 @@
     "languages": "Kielet",
     "language": "Kieli:"
   },
+  "offline": {
+    "languageNotSaved": "Tätä kieltä ei ole tallennettu tähän puhelimeen. Muodosta internetyhteys, niin voit käyttää sitä.",
+    "updateReady": "Glazecalcista on valmiina uusi versio.",
+    "reload": "Lataa uudelleen",
+    "dismiss": "Ei nyt",
+    "install": "Asenna sovellus"
+  },
   "picker": {
     "results": "{count, plural, one {# osuma} other {# osumaa}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Aasia",
       "eastAsia": "Itä-Aasia",
       "europe": "Eurooppa",
+      "latinAmerica": "Latinalainen Amerikka",
       "middleEastNorthAfrica": "Lähi-itä ja Pohjois-Afrikka",
       "oceania": "Oseania",
       "southAsia": "Etelä-Aasia",
@@ -127,6 +139,10 @@
     "terms": "Glazecalcin käyttöehdot: ilmainen omiin lasitteisiin ja töihin, reilu yhteiselle palvelimelle ja tarjolla sellaisenaan.",
     "assistants": "Glazecalc MCP:n kautta avustajissa Claude, Copilot, Cursor ja Gemini: lasitekemia, raja-arvotarkistukset, korvaavat raaka-aineet, oppaat ja omat reseptisi.",
     "signup": "Luo ilmainen Glazecalc-tili ja säilytä lasitereseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Ei mainoksia, eikä tietoja koskaan myydä.",
+    "cones": "Orton- ja SK-pyrometriset keilat 022:sta ylöspäin: lämpötilat °C- ja °F-asteina, lämmitysnopeus, jota kukin taulukko koskee, ja lukujen lähteet.",
+    "materials": "Glazecalcin vakiokirjaston raaka-aineet maasälvistä ja saveista fritteihin ja boorin lähteisiin, kustakin oksidianalyysi, Segerin kaava ja vaarat.",
+    "materialInfo": "{name}: oksidianalyysi, Segerin kaava, polttohäviö ja vaarat Glazecalcin vakiokirjastossa.",
+    "materialInfoLong": "{name} Glazecalcin lasiteraaka-aineiden vakiokirjastossa: oksidianalyysi, osuus Segerin kaavassa, polttohäviö ja vaarat.",
     "imageAlt": "Glazecalcin etusivu: ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista."
   },
   "notices": {

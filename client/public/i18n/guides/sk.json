@@ -40,6 +40,17 @@
     }
   },
   "more": "Ďalšie návody",
+  "related": {
+    "heading": "Referenčné stránky",
+    "cones": {
+      "title": "Tabuľka kužeľov",
+      "text": "Ortonove kužele a kužele SK s teplotami v °C a °F a s uvedením, odkiaľ každý údaj pochádza."
+    },
+    "materials": {
+      "title": "Štandardné suroviny",
+      "text": "Každá surovina v knižnici s oxidovým rozborom, príspevkom k Segerovmu vzorcu a rizikami."
+    }
+  },
   "contents": "Na tejto stránke",
   "poison": {
     "numbersFor": "Telefónne čísla:",
@@ -133,6 +144,13 @@
     "respirators": "Respirátory proti prachu sa tu predávajú podľa tried: {everyday} na prach z glazúr alebo {higher} pre vyššiu ochranu (<link>oficiálne triedy</link>).",
     "unknown": "{region}: národnú limitnú hodnotu sa nám nepodarilo overiť. Záväzná limitná hodnota EÚ {value} mg/m³ platí v každom členskom štáte.",
     "noData": "{region}: limitnú hodnotu sme zatiaľ neoverili.",
+    "statesLabel": "Limity stanovené štátmi (oblasť: {region})",
+    "statesCaption": "Limity, ktoré niektoré štáty stanovili pre prach obsahujúci kremeň; Q je podiel kremeňa v prachu v %. Čítali sme ich len v kópiách zverejnených inými, takže nie sú potvrdené (skontrolované {date}).",
+    "state": "Štát",
+    "respirableDust": "Respirabilný prach",
+    "totalDust": "Celkový prach",
+    "cutOff": "Orezané v kópii, ktorú sme čítali",
+    "stateSetBy": "{area}: stanovené predpisom <link>{law}</link>.",
     "agency": "Národný orgán pre bezpečnosť a ochranu zdravia pri práci: <link>{name}</link>.",
     "agencySilica": "Jeho <link>stránka o oxide kremičitom</link>.",
     "choosePrompt": "Vyberte krajinu alebo región, aby ste videli tamojšiu limitnú hodnotu."

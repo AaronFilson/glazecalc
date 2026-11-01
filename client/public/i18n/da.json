@@ -21,6 +21,7 @@
     "recipe": "Opskrifter - Glazecalc",
     "import": "Indsæt opskrifter - Glazecalc",
     "blends": "Blandinger til prøvebrikker - Glazecalc",
+    "solve": "Beregn mod et mål - Glazecalc",
     "material": "Råvarer - Glazecalc",
     "additive": "Tilsætninger - Glazecalc",
     "firingLogs": "Brændingsjournaler - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Siden blev ikke fundet - Glazecalc",
     "shared": "Delt opskrift - Glazecalc",
     "assistants": "Brug Glazecalc fra en AI-assistent - Glazecalc",
-    "confirm": "Godkend en ændring - Glazecalc"
+    "confirm": "Godkend en ændring - Glazecalc",
+    "cones": "Kegleskema: temperaturer for Orton- og SK-kegler - Glazecalc",
+    "materials": "Standardråvarer til glasur: analyse og farer - Glazecalc",
+    "materialInfo": "{name}: oxidanalyse og farer - Glazecalc"
   },
   "nav": {
     "skip": "Spring til indholdet",
@@ -82,6 +86,13 @@
     "languages": "Sprog",
     "language": "Sprog:"
   },
+  "offline": {
+    "languageNotSaved": "Dette sprog er ikke gemt på denne telefon. Opret forbindelse til internettet for at bruge det.",
+    "updateReady": "Der er en ny version af Glazecalc klar.",
+    "reload": "Indlæs igen",
+    "dismiss": "Ikke nu",
+    "install": "Installer appen"
+  },
   "picker": {
     "results": "{count, plural, one {# resultat} other {# resultater}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asien",
       "eastAsia": "Østasien",
       "europe": "Europa",
+      "latinAmerica": "Latinamerika",
       "middleEastNorthAfrica": "Mellemøsten og Nordafrika",
       "oceania": "Oceanien",
       "southAsia": "Sydasien",
@@ -127,6 +139,10 @@
     "terms": "Vilkårene for brug af Glazecalc: gratis til dine egne glasurer og dit eget arbejde, rimeligt over for den delte server, og leveret, som det er og forefindes.",
     "assistants": "Brug Glazecalc fra Claude, Copilot, Cursor eller Gemini via MCP: glasurkemi, grænsekontroller, erstatninger, vejledningerne og dine egne opskrifter.",
     "signup": "Opret en gratis konto i Glazecalc, og gem dine glasuropskrifter, råvarer, noter og brændingsjournaler. Ingen reklamer, og dine data sælges aldrig.",
+    "cones": "Pyrometriske Orton- og SK-kegler fra 022 og opefter, med temperaturer i °C og °F, den opvarmningshastighed hvert skema gælder for, og hvor tallene stammer fra.",
+    "materials": "Råvarerne i Glazecalcs standardbibliotek, fra feldspater og ler til fritter og borkilder, hver med sin oxidanalyse, Seger-formel og farer.",
+    "materialInfo": "{name}: oxidanalyse, Seger-formel, glødetab og farer i Glazecalcs standardbibliotek.",
+    "materialInfoLong": "{name} i Glazecalcs standardbibliotek over glasurråvarer: oxidanalyse, bidrag til Seger-formlen, glødetab og farer.",
     "imageAlt": "Glazecalcs forside: gratis glasurkemi for keramikere, ved siden af et foto af brændte keglesæt."
   },
   "notices": {

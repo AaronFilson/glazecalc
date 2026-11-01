@@ -40,6 +40,17 @@
     }
   },
   "more": "Altre guide",
+  "related": {
+    "heading": "Pagine di consultazione",
+    "cones": {
+      "title": "Tabella dei coni: coni Orton e SK",
+      "text": "Coni Orton e SK con le temperature in °C e °F e l’origine di ogni valore."
+    },
+    "materials": {
+      "title": "Materiali standard",
+      "text": "Ogni materiale dell’elenco con l’analisi degli ossidi, il contributo alla formula di Seger e i pericoli."
+    }
+  },
   "contents": "In questa pagina",
   "poison": {
     "numbersFor": "Numeri per",
@@ -133,6 +144,13 @@
     "respirators": "Qui le maschere filtranti antipolvere si vendono per classe: {everyday} per la polvere di smalto, o {higher} per una protezione maggiore (<link>le classi ufficiali</link>).",
     "unknown": "{region}: non abbiamo potuto confermare il limite nazionale. Il limite vincolante dell’UE di {value} mg/m³ vale in ogni Stato membro.",
     "noData": "{region}: non abbiamo ancora confermato il limite.",
+    "statesLabel": "Limiti fissati dagli stati in {region}",
+    "statesCaption": "Limiti che alcuni stati hanno fissato per la polvere contenente quarzo, dove Q è il quarzo nella polvere, in %. Li abbiamo letti solo in copie pubblicate da altri, quindi non sono confermati (verificati in data {date}).",
+    "state": "Stato",
+    "respirableDust": "Polvere respirabile",
+    "totalDust": "Polvere totale",
+    "cutOff": "Tagliato nella copia che abbiamo letto",
+    "stateSetBy": "{area}: fissato da <link>{law}</link>.",
     "agency": "L’ente nazionale per la sicurezza sul lavoro: <link>{name}</link>.",
     "agencySilica": "La sua <link>pagina sulla silice</link>.",
     "choosePrompt": "Scegliere il paese o l’area per vederne il limite."

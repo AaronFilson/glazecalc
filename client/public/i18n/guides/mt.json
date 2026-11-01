@@ -40,6 +40,17 @@
     }
   },
   "more": "Aktar gwidi",
+  "related": {
+    "heading": "Paġni ta’ referenza",
+    "cones": {
+      "title": "Tabella tal-koni",
+      "text": "Koni Orton u SK bit-temperaturi tagħhom f’°C u f’°F, u minn fejn ġejja kull figura."
+    },
+    "materials": {
+      "title": "Materjali standard",
+      "text": "Kull materjal tal-librerija bl-analiżi tal-ossidi, il-kontribut fil-formula ta’ Seger u l-perikli tiegħu."
+    }
+  },
   "contents": "F’din il-paġna",
   "poison": {
     "numbersFor": "Numri:",
@@ -133,6 +144,13 @@
     "respirators": "Hawn il-maskri kontra t-trab jinbiegħu skont il-klassi: {everyday} għat-trab tal-glejż, jew {higher} għal aktar protezzjoni (<link>il-klassijiet uffiċjali</link>).",
     "unknown": "Ma stajniex nikkonfermaw il-limitu nazzjonali ({region}). Il-limitu vinkolanti tal-UE ta’ {value} mg/m³ japplika f’kull Stat Membru.",
     "noData": "Għadna ma kkonfermajniex il-limitu ({region}).",
+    "statesLabel": "Limiti stabbiliti mill-istati: {region}",
+    "statesCaption": "Limiti li xi stati stabbilew għat-trab li fih il-kwarz, fejn Q hija l-kwarz fit-trab, f’%. Qrajnihom biss f’kopji ppubblikati minn oħrajn, għalhekk mhumiex ikkonfermati (iċċekkjat: {date}).",
+    "state": "Stat",
+    "respirableDust": "Trab respirabbli",
+    "totalDust": "Trab totali",
+    "cutOff": "Maqtugħ fil-kopja li qrajna",
+    "stateSetBy": "{area}: stabbilit minn <link>{law}</link>.",
     "agency": "L-awtorità nazzjonali għas-saħħa u s-sigurtà fuq il-post tax-xogħol: <link>{name}</link>.",
     "agencySilica": "<link>Il-paġna tagħha dwar is-silika</link>.",
     "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara l-limitu tiegħu."

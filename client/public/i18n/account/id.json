@@ -436,7 +436,8 @@
       },
       "hidden": {
         "label": "Disembunyikan",
-        "saved": "Tersimpan: catatan disembunyikan. Satu baris darinya tetap ada di panduan keselamatan."
+        "saved": "Tersimpan: catatan disembunyikan. Satu baris darinya tetap ada di panduan keselamatan.",
+        "savedPlain": "Tersimpan: pemberitahuan disembunyikan. Satu baris pemberitahuan tetap ada di bagian atas setiap halaman."
       },
       "help": "Catatan di bagian atas setiap halaman yang menyatakan halaman itu diterjemahkan oleh AI, dengan cara untuk menyarankan koreksi."
     }

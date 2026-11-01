@@ -40,6 +40,17 @@
     }
   },
   "more": "更多指南",
+  "related": {
+    "heading": "参考页面",
+    "cones": {
+      "title": "测温锥温度表",
+      "text": "Orton 与 SK 测温锥的温度（°C 和 °F），以及各数据的来源。"
+    },
+    "materials": {
+      "title": "标准原料",
+      "text": "库中的每种原料，附氧化物分析、对釉式的贡献量和危害。"
+    }
+  },
   "contents": "本页内容",
   "poison": {
     "numbersFor": "查看电话号码的国家/地区：",
@@ -133,6 +144,13 @@
     "respirators": "这里的防颗粒物呼吸器按等级销售：防釉料粉尘用 {everyday}，需要更高防护时用 {higher}（<link>官方等级</link>）。",
     "unknown": "我们无法确认{region}的国家限值。欧盟具有法律约束力的限值 {value} mg/m³ 适用于每个成员国。",
     "noData": "我们还没有确认{region}的限值。",
+    "statesLabel": "{region}各州设定的限值",
+    "statesCaption": "一些州为含石英的粉尘设定的限值，其中 Q 为粉尘中石英的含量，单位为 %。我们只在他人发布的副本中读到，因此尚未得到确认（核实于{date}）。",
+    "state": "州",
+    "respirableDust": "呼吸性粉尘",
+    "totalDust": "总粉尘",
+    "cutOff": "在我们读到的副本中被截断",
+    "stateSetBy": "{area}：由<link>{law}</link>规定。",
     "agency": "国家职业安全主管机构：<link>{name}</link>。",
     "agencySilica": "其<link>关于二氧化硅的页面</link>。",
     "choosePrompt": "选择您所在的国家或地区，查看其限值。"

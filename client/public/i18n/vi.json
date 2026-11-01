@@ -21,6 +21,7 @@
     "recipe": "Công thức men - Glazecalc",
     "import": "Dán công thức men - Glazecalc",
     "blends": "Pha trộn cho mẫu thử men - Glazecalc",
+    "solve": "Giải theo mục tiêu - Glazecalc",
     "material": "Nguyên liệu - Glazecalc",
     "additive": "Phụ gia - Glazecalc",
     "firingLogs": "Nhật ký nung - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Không tìm thấy - Glazecalc",
     "shared": "Công thức men được chia sẻ - Glazecalc",
     "assistants": "Dùng Glazecalc từ trợ lý AI của bạn - Glazecalc",
-    "confirm": "Chấp thuận một thay đổi - Glazecalc"
+    "confirm": "Chấp thuận một thay đổi - Glazecalc",
+    "cones": "Bảng côn: nhiệt độ côn Orton và SK - Glazecalc",
+    "materials": "Nguyên liệu men có sẵn: phân tích và mối nguy - Glazecalc",
+    "materialInfo": "{name}: phân tích oxit và mối nguy - Glazecalc"
   },
   "nav": {
     "skip": "Chuyển đến nội dung",
@@ -82,6 +86,13 @@
     "languages": "Ngôn ngữ",
     "language": "Ngôn ngữ:"
   },
+  "offline": {
+    "languageNotSaved": "Ngôn ngữ này chưa được lưu trên điện thoại này. Hãy kết nối internet để dùng.",
+    "updateReady": "Đã có phiên bản mới của Glazecalc.",
+    "reload": "Tải lại",
+    "dismiss": "Để sau",
+    "install": "Cài đặt ứng dụng"
+  },
   "picker": {
     "results": "{count, plural, other {# kết quả}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Châu Á",
       "eastAsia": "Đông Á",
       "europe": "Châu Âu",
+      "latinAmerica": "Châu Mỹ Latin",
       "middleEastNorthAfrica": "Trung Đông và Bắc Phi",
       "oceania": "Châu Đại Dương",
       "southAsia": "Nam Á",
@@ -127,6 +139,10 @@
     "terms": "Điều khoản sử dụng Glazecalc: miễn phí cho men và công việc của chính bạn, công bằng với máy chủ dùng chung, và được cung cấp nguyên trạng.",
     "assistants": "Dùng Glazecalc từ Claude, Copilot, Cursor hoặc Gemini qua MCP: hóa học men, kiểm tra giới hạn, vật liệu thay thế, cẩm nang và công thức men của riêng bạn.",
     "signup": "Tạo tài khoản Glazecalc miễn phí để lưu công thức men, nguyên liệu, ghi chú và nhật ký nung. Không quảng cáo, và dữ liệu của bạn không bao giờ bị bán.",
+    "cones": "Côn nhiệt Orton và SK từ 022 trở lên, kèm nhiệt độ theo °C và °F, tốc độ gia nhiệt của từng bảng và nguồn gốc các số liệu.",
+    "materials": "Các nguyên liệu trong thư viện có sẵn của Glazecalc, từ trường thạch, đất sét đến frit và nguồn bo, kèm phân tích oxit, công thức Seger và mối nguy.",
+    "materialInfo": "{name}: phân tích oxit, công thức Seger, lượng mất khi nung và mối nguy trong thư viện có sẵn của Glazecalc.",
+    "materialInfoLong": "{name} trong thư viện nguyên liệu men có sẵn của Glazecalc: phân tích oxit, đóng góp vào công thức Seger, lượng mất khi nung và mối nguy.",
     "imageAlt": "Trang chủ Glazecalc: hóa học men miễn phí cho thợ gốm, bên cạnh ảnh các bộ côn đã nung."
   },
   "notices": {
@@ -315,6 +331,8 @@
     "label": "Về bản dịch này",
     "text": "Trang này được AI dịch từ tiếng Anh. Glazecalc là mã nguồn mở: nếu có chỗ đọc chưa đúng, vui lòng gợi ý chỉnh sửa trên GitHub.",
     "brief": "Được AI dịch từ tiếng Anh.",
+    "plain": "Trang này được AI dịch từ tiếng Anh, và AI xử lý ngôn ngữ này kém hơn hầu hết các ngôn ngữ khác. Trang tiếng Anh có thể dễ đọc hơn. Glazecalc là mã nguồn mở: nếu có chỗ đọc không đúng, xin hãy đề xuất sửa trên GitHub.",
+    "plainBrief": "Do AI dịch; bản tiếng Anh có thể dễ đọc hơn.",
     "suggest": "Gợi ý chỉnh sửa",
     "english": "Đọc bản tiếng Anh",
     "close": "Đóng"

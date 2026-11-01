@@ -40,6 +40,17 @@
     }
   },
   "more": "Još vodiča",
+  "related": {
+    "heading": "Referentne stranice",
+    "cones": {
+      "title": "Tablica stožaca",
+      "text": "Ortonovi stošci i stošci SK s temperaturama u °C i °F te izvorom svake vrijednosti."
+    },
+    "materials": {
+      "title": "Standardne sirovine",
+      "text": "Svaka sirovina u biblioteci s oksidnom analizom, doprinosom Segerovoj formuli i opasnostima."
+    }
+  },
   "contents": "Na ovoj stranici",
   "poison": {
     "numbersFor": "Brojevi za",
@@ -133,6 +144,13 @@
     "respirators": "Zaštitne maske protiv prašine ovdje se prodaju po klasama: {everyday} za prašinu glazure ili {higher} za veću zaštitu (<link>službene klase</link>).",
     "unknown": "{region}: nismo mogli potvrditi nacionalnu graničnu vrijednost. Obvezujuća granična vrijednost EU-a od {value} mg/m³ primjenjuje se u svakoj državi članici.",
     "noData": "{region}: graničnu vrijednost još nismo potvrdili.",
+    "statesLabel": "Granične vrijednosti saveznih država ({region})",
+    "statesCaption": "Granične vrijednosti koje su neke savezne države odredile za prašinu koja sadrži kvarc, gdje je Q kvarc u prašini, u %. Pročitali smo ih samo u kopijama koje su objavili drugi, pa nisu potvrđene (provjereno {date}).",
+    "state": "Savezna država",
+    "respirableDust": "Respirabilna prašina",
+    "totalDust": "Ukupna prašina",
+    "cutOff": "Odrezano u kopiji koju smo pročitali",
+    "stateSetBy": "{area}: određeno propisom <link>{law}</link>.",
     "agency": "Nacionalno tijelo za zaštitu na radu: <link>{name}</link>.",
     "agencySilica": "Njegova <link>stranica o silicijevu dioksidu</link>.",
     "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli njezinu graničnu vrijednost."

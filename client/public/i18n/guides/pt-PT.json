@@ -40,6 +40,17 @@
     }
   },
   "more": "Mais guias",
+  "related": {
+    "heading": "Páginas de consulta",
+    "cones": {
+      "title": "Tabela de cones: cones Orton e SK",
+      "text": "Cones Orton e SK com as temperaturas em °C e °F e a origem de cada valor."
+    },
+    "materials": {
+      "title": "Matérias-primas padrão",
+      "text": "Cada matéria-prima da biblioteca com a análise de óxidos, a contribuição para a fórmula de Seger e os perigos."
+    }
+  },
   "contents": "Nesta página",
   "poison": {
     "numbersFor": "Números para",
@@ -133,6 +144,13 @@
     "respirators": "Aqui, as máscaras contra poeiras vendem-se por classe: {everyday} para a poeira de vidrados, ou {higher} para mais proteção (<link>as classes oficiais</link>).",
     "unknown": "{region}: não conseguimos confirmar o valor-limite nacional. O valor-limite vinculativo da UE, de {value} mg/m³, aplica-se em todos os Estados-Membros.",
     "noData": "{region}: ainda não confirmámos o valor-limite.",
+    "statesLabel": "Valores-limite fixados por estados em {region}",
+    "statesCaption": "Valores-limite que alguns estados fixaram para poeira com quartzo, em que Q é o quartzo na poeira, em %. Lemo-los apenas em cópias publicadas por terceiros, por isso não estão confirmados (verificado em {date}).",
+    "state": "Estado",
+    "respirableDust": "Poeira respirável",
+    "totalDust": "Poeira total",
+    "cutOff": "Cortado na cópia que lemos",
+    "stateSetBy": "{area}: fixado por <link>{law}</link>.",
     "agency": "O organismo nacional de segurança no trabalho: <link>{name}</link>.",
     "agencySilica": "A sua <link>página sobre a sílica</link>.",
     "choosePrompt": "Escolha o seu país ou região para ver o respetivo valor-limite."

@@ -21,6 +21,7 @@
     "recipe": "Recettes - Glazecalc",
     "import": "Coller des recettes - Glazecalc",
     "blends": "Mélanges pour tessons d’essai - Glazecalc",
+    "solve": "Viser une cible - Glazecalc",
     "material": "Matières - Glazecalc",
     "additive": "Additifs - Glazecalc",
     "firingLogs": "Relevés de cuisson - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Page introuvable - Glazecalc",
     "shared": "Recette partagée - Glazecalc",
     "assistants": "Utiliser Glazecalc avec votre assistant IA - Glazecalc",
-    "confirm": "Approuver une modification - Glazecalc"
+    "confirm": "Approuver une modification - Glazecalc",
+    "cones": "Tableau des cônes : températures des cônes Orton et SK - Glazecalc",
+    "materials": "Matières standard pour émaux : analyse et dangers - Glazecalc",
+    "materialInfo": "{name} : analyse en oxydes et dangers - Glazecalc"
   },
   "nav": {
     "skip": "Aller au contenu",
@@ -82,6 +86,13 @@
     "languages": "Langues",
     "language": "Langue :"
   },
+  "offline": {
+    "languageNotSaved": "Cette langue n’est pas enregistrée sur ce téléphone. Connectez-vous à Internet pour l’utiliser.",
+    "updateReady": "Une nouvelle version de Glazecalc est prête.",
+    "reload": "Recharger",
+    "dismiss": "Pas maintenant",
+    "install": "Installer l’application"
+  },
   "picker": {
     "results": "{count, plural, one {# résultat} many {# de résultats} other {# résultats}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asie",
       "eastAsia": "Asie de l’Est",
       "europe": "Europe",
+      "latinAmerica": "Amérique latine",
       "middleEastNorthAfrica": "Moyen-Orient et Afrique du Nord",
       "oceania": "Océanie",
       "southAsia": "Asie du Sud",
@@ -127,6 +139,10 @@
     "terms": "Les conditions d’utilisation de Glazecalc : gratuit pour vos propres émaux et votre travail, équitable envers le serveur partagé, et fourni « en l’état ».",
     "assistants": "Utilisez Glazecalc depuis Claude, Copilot, Cursor ou Gemini via MCP : chimie des émaux, vérification des limites, substituts, guides et vos recettes.",
     "signup": "Créez un compte Glazecalc gratuit pour garder vos recettes d’émaux, matières, notes et relevés de cuisson. Sans publicité ; vos données ne sont jamais vendues.",
+    "cones": "Cônes pyrométriques Orton et SK à partir de 022, avec leurs températures en °C et en °F, la vitesse de montée en température de chaque tableau et l’origine des valeurs.",
+    "materials": "Les matières de la bibliothèque standard de Glazecalc, des feldspaths et argiles aux frittes et aux sources de bore, chacune avec son analyse en oxydes, sa formule de Seger et ses dangers.",
+    "materialInfo": "{name} : analyse en oxydes, formule de Seger, perte au feu et dangers dans la bibliothèque standard de Glazecalc.",
+    "materialInfoLong": "{name} dans la bibliothèque standard de matières pour émaux de Glazecalc : analyse en oxydes, apport à la formule de Seger, perte au feu et dangers.",
     "imageAlt": "La page d’accueil de Glazecalc : la chimie des émaux, gratuite, pour les céramistes, à côté d’une photo de jeux de cônes après cuisson."
   },
   "notices": {

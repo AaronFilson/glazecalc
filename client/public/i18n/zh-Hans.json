@@ -21,6 +21,7 @@
     "recipe": "配方 - Glazecalc",
     "import": "粘贴配方 - Glazecalc",
     "blends": "试片混配 - Glazecalc",
+    "solve": "按目标求配方 - Glazecalc",
     "material": "原料 - Glazecalc",
     "additive": "添加剂 - Glazecalc",
     "firingLogs": "烧窑记录 - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "页面不存在 - Glazecalc",
     "shared": "分享的配方 - Glazecalc",
     "assistants": "在 AI 助手中使用 Glazecalc - Glazecalc",
-    "confirm": "批准更改 - Glazecalc"
+    "confirm": "批准更改 - Glazecalc",
+    "cones": "测温锥温度表：Orton 与 SK 测温锥的温度 - Glazecalc",
+    "materials": "标准釉料原料：成分分析与危害 - Glazecalc",
+    "materialInfo": "{name}：氧化物分析与危害 - Glazecalc"
   },
   "nav": {
     "skip": "跳到正文",
@@ -82,6 +86,13 @@
     "languages": "语言",
     "language": "语言："
   },
+  "offline": {
+    "languageNotSaved": "这种语言没有保存在这部手机上。请连接互联网后使用。",
+    "updateReady": "Glazecalc 有新版本可用。",
+    "reload": "重新加载",
+    "dismiss": "暂不",
+    "install": "安装应用"
+  },
   "picker": {
     "results": "{count, plural, other {# 个结果}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "亚洲",
       "eastAsia": "东亚",
       "europe": "欧洲",
+      "latinAmerica": "拉丁美洲",
       "middleEastNorthAfrica": "中东和北非",
       "oceania": "大洋洲",
       "southAsia": "南亚",
@@ -127,6 +139,10 @@
     "terms": "使用 Glazecalc 的条款：您自己的釉和工作可免费使用，对共用的服务器保持公平，并按原样提供。",
     "assistants": "通过 MCP 在 Claude、Copilot、Cursor 或 Gemini 中使用 Glazecalc：釉料化学、限值检查、替代原料、指南，以及您自己的配方。",
     "signup": "创建免费的 Glazecalc 账户，保存您的釉料配方、原料、笔记和烧窑记录。没有广告，您的数据绝不出售。",
+    "cones": "从 022 起的 Orton 与 SK 测温锥，附 °C 和 °F 温度、各表对应的升温速率以及数据来源。",
+    "materials": "Glazecalc 标准库中的原料，从长石、黏土到熔块和硼原料，每种都附氧化物分析、釉式和危害。",
+    "materialInfo": "{name}：Glazecalc 标准库中的氧化物分析、釉式、烧失量和危害。",
+    "materialInfoLong": "{name}在 Glazecalc 釉料原料标准库中的资料：氧化物分析、对釉式的贡献量、烧失量和危害。",
     "imageAlt": "Glazecalc 首页：面向陶艺人的免费釉料化学工具，旁边是一张烧过的测温锥组的照片。"
   },
   "notices": {

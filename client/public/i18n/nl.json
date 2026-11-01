@@ -21,6 +21,7 @@
     "recipe": "Recepten - Glazecalc",
     "import": "Recepten plakken - Glazecalc",
     "blends": "Mengingen voor proefplaatjes - Glazecalc",
+    "solve": "Oplossen voor een doel - Glazecalc",
     "material": "Grondstoffen - Glazecalc",
     "additive": "Toevoegingen - Glazecalc",
     "firingLogs": "Stookverslagen - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Niet gevonden - Glazecalc",
     "shared": "Gedeeld recept - Glazecalc",
     "assistants": "Glazecalc gebruiken vanuit uw AI-assistent - Glazecalc",
-    "confirm": "Een wijziging goedkeuren - Glazecalc"
+    "confirm": "Een wijziging goedkeuren - Glazecalc",
+    "cones": "Kegeltabel: temperaturen van Orton- en SK-kegels - Glazecalc",
+    "materials": "Standaardgrondstoffen voor glazuur: analyse en gevaren - Glazecalc",
+    "materialInfo": "{name}: oxideanalyse en gevaren - Glazecalc"
   },
   "nav": {
     "skip": "Naar de inhoud",
@@ -82,6 +86,13 @@
     "languages": "Talen",
     "language": "Taal:"
   },
+  "offline": {
+    "languageNotSaved": "Deze taal is niet op deze telefoon opgeslagen. Maak verbinding met internet om haar te gebruiken.",
+    "updateReady": "Er is een nieuwe versie van Glazecalc klaar.",
+    "reload": "Opnieuw laden",
+    "dismiss": "Niet nu",
+    "install": "App installeren"
+  },
   "picker": {
     "results": "{count, plural, one {# resultaat} other {# resultaten}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Azië",
       "eastAsia": "Oost-Azië",
       "europe": "Europa",
+      "latinAmerica": "Latijns-Amerika",
       "middleEastNorthAfrica": "Midden-Oosten en Noord-Afrika",
       "oceania": "Oceanië",
       "southAsia": "Zuid-Azië",
@@ -127,6 +139,10 @@
     "terms": "De voorwaarden voor het gebruik van Glazecalc: gratis voor uw eigen glazuren en werk, eerlijk tegenover de gedeelde server, en geleverd zoals het is.",
     "assistants": "Gebruik Glazecalc vanuit Claude, Copilot, Cursor of Gemini via MCP: glazuurchemie, controles op limieten, vervangers, de gidsen en uw eigen recepten.",
     "signup": "Bewaar uw glazuurrecepten, grondstoffen, notities en stookverslagen in een gratis Glazecalc-account. Geen advertenties, en uw gegevens worden nooit verkocht.",
+    "cones": "Pyrometrische Orton- en SK-kegels vanaf 022, met hun temperaturen in °C en °F, de stooksnelheid waarvoor elke tabel geldt en waar de cijfers vandaan komen.",
+    "materials": "De grondstoffen in de standaardbibliotheek van Glazecalc, van veldspaten en klei tot fritten en boorbronnen, elk met oxideanalyse, Segerformule en gevaren.",
+    "materialInfo": "{name}: oxideanalyse, Segerformule, gloeiverlies en gevaren in de standaardbibliotheek van Glazecalc.",
+    "materialInfoLong": "{name} in de standaardbibliotheek van glazuurgrondstoffen van Glazecalc: oxideanalyse, bijdrage aan de Segerformule, gloeiverlies en gevaren.",
     "imageAlt": "De startpagina van Glazecalc: gratis glazuurchemie voor pottenbakkers, naast een foto van gestookte kegeldrietallen."
   },
   "notices": {

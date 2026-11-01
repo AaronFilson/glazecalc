@@ -40,6 +40,17 @@
     }
   },
   "more": "Daugiau vadovų",
+  "related": {
+    "heading": "Žinyno puslapiai",
+    "cones": {
+      "title": "Piroskopų lentelė",
+      "text": "Ortono ir SK piroskopai, jų temperatūros °C ir °F ir kur imamas kiekvienas skaičius."
+    },
+    "materials": {
+      "title": "Standartinės žaliavos",
+      "text": "Kiekviena bibliotekos žaliava su oksidų analize, indėliu į Segerio formulę ir pavojais."
+    }
+  },
   "contents": "Šiame puslapyje",
   "poison": {
     "numbersFor": "Numeriai:",
@@ -133,6 +144,13 @@
     "respirators": "Respiratoriai nuo dulkių čia parduodami pagal klases: {everyday} – nuo glazūros dulkių, arba {higher} – geresnei apsaugai (<link>oficialios klasės</link>).",
     "unknown": "Nepavyko patvirtinti nacionalinės ribinės vertės ({region}). Privaloma ES ribinė vertė – {value} mg/m³ – taikoma visose valstybėse narėse.",
     "noData": "Ribinės vertės dar nepatvirtinome ({region}).",
+    "statesLabel": "Valstijų nustatytos ribos: {region}",
+    "statesCaption": "Ribos, kurias kai kurios valstijos nustatė dulkėms, kuriose yra kvarco, kai Q – kvarco kiekis dulkėse, %. Jas skaitėme tik kitų paskelbtose kopijose, todėl jos nepatvirtintos (patikrinta {date}).",
+    "state": "Valstija",
+    "respirableDust": "Įkvepiamosios dulkės",
+    "totalDust": "Visos dulkės",
+    "cutOff": "Perskaitytoje kopijoje nukirsta",
+    "stateSetBy": "{area}: nustatė <link>{law}</link>.",
     "agency": "Nacionalinė darbuotojų saugos ir sveikatos institucija: <link>{name}</link>.",
     "agencySilica": "Jos <link>puslapis apie silicio dioksidą</link>.",
     "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte ten galiojančią ribinę vertę."

@@ -21,6 +21,7 @@
     "recipe": "Recept - Glazecalc",
     "import": "Klistra in recept - Glazecalc",
     "blends": "Blandningar för provbitar - Glazecalc",
+    "solve": "Beräkna mot ett mål - Glazecalc",
     "material": "Råvaror - Glazecalc",
     "additive": "Tillsatser - Glazecalc",
     "firingLogs": "Brännloggar - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Sidan hittades inte - Glazecalc",
     "shared": "Delat recept - Glazecalc",
     "assistants": "Använd Glazecalc från en AI-assistent - Glazecalc",
-    "confirm": "Godkänn en ändring - Glazecalc"
+    "confirm": "Godkänn en ändring - Glazecalc",
+    "cones": "Kägeltabell: temperaturer för Orton- och SK-käglor - Glazecalc",
+    "materials": "Standardråvaror för glasyr: analys och faror - Glazecalc",
+    "materialInfo": "{name}: oxidanalys och faror - Glazecalc"
   },
   "nav": {
     "skip": "Hoppa till innehållet",
@@ -82,6 +86,13 @@
     "languages": "Språk",
     "language": "Språk:"
   },
+  "offline": {
+    "languageNotSaved": "Det här språket är inte sparat på den här telefonen. Anslut till internet för att använda det.",
+    "updateReady": "En ny version av Glazecalc är klar.",
+    "reload": "Läs in igen",
+    "dismiss": "Inte nu",
+    "install": "Installera appen"
+  },
   "picker": {
     "results": "{count, plural, one {# träff} other {# träffar}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asien",
       "eastAsia": "Östasien",
       "europe": "Europa",
+      "latinAmerica": "Latinamerika",
       "middleEastNorthAfrica": "Mellanöstern och Nordafrika",
       "oceania": "Oceanien",
       "southAsia": "Sydasien",
@@ -127,6 +139,10 @@
     "terms": "Villkoren för att använda Glazecalc: gratis för dina egna glasyrer och ditt eget arbete, rättvist mot den delade servern och tillhandahållet i befintligt skick.",
     "assistants": "Använd Glazecalc från Claude, Copilot, Cursor eller Gemini via MCP: glasyrkemi, gränskontroller, ersättare, guiderna och dina egna recept.",
     "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig.",
+    "cones": "Pyrometriska Orton- och SK-käglor från 022 och uppåt, med temperaturer i °C och °F, den uppvärmningshastighet varje tabell gäller för och var siffrorna kommer ifrån.",
+    "materials": "Råvarorna i Glazecalcs standardbibliotek, från fältspater och leror till fritter och borkällor, var och en med oxidanalys, Segerformel och faror.",
+    "materialInfo": "{name}: oxidanalys, Segerformel, glödförlust och faror i Glazecalcs standardbibliotek.",
+    "materialInfoLong": "{name} i Glazecalcs standardbibliotek över glasyrråvaror: oxidanalys, bidrag till Segerformeln, glödförlust och faror.",
     "imageAlt": "Glazecalcs startsida: gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."
   },
   "notices": {
@@ -315,6 +331,8 @@
     "label": "Om översättningen",
     "text": "Sidan har översatts från engelska med AI. Glazecalc har öppen källkod: om något låter fel, föreslå gärna en rättelse på GitHub.",
     "brief": "Översatt från engelska med AI.",
+    "plain": "Den här sidan har översatts från engelska av AI, som hanterar det här språket sämre än de flesta språk. Den engelska sidan kan vara lättare att läsa. Glazecalc är öppen källkod: om något låter fel, föreslå gärna en rättelse på GitHub.",
+    "plainBrief": "Översatt av AI; den engelska kan vara lättare att läsa.",
     "suggest": "Föreslå en rättelse",
     "english": "Läs originalet på engelska",
     "close": "Stäng"

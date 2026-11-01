@@ -21,6 +21,7 @@
     "recipe": "Recepty – Glazecalc",
     "import": "Vloženie receptov - Glazecalc",
     "blends": "Zmesi na skúšobné doštičky - Glazecalc",
+    "solve": "Vypočítať podľa cieľa – Glazecalc",
     "material": "Suroviny – Glazecalc",
     "additive": "Prísady – Glazecalc",
     "firingLogs": "Záznamy výpalov – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Stránka sa nenašla – Glazecalc",
     "shared": "Zdieľaný recept - Glazecalc",
     "assistants": "Glazecalc vo vašom AI asistentovi - Glazecalc",
-    "confirm": "Schválenie zmeny – Glazecalc"
+    "confirm": "Schválenie zmeny – Glazecalc",
+    "cones": "Tabuľka kužeľov: teploty Ortonových kužeľov a kužeľov SK – Glazecalc",
+    "materials": "Štandardné suroviny na glazúry: rozbor a riziká – Glazecalc",
+    "materialInfo": "{name}: oxidový rozbor a riziká – Glazecalc"
   },
   "nav": {
     "skip": "Preskočiť na obsah",
@@ -82,6 +86,13 @@
     "languages": "Jazyky",
     "language": "Jazyk:"
   },
+  "offline": {
+    "languageNotSaved": "Tento jazyk nie je v tomto telefóne uložený. Ak ho chcete použiť, pripojte sa na internet.",
+    "updateReady": "Je pripravená nová verzia Glazecalc.",
+    "reload": "Načítať znova",
+    "dismiss": "Teraz nie",
+    "install": "Nainštalovať aplikáciu"
+  },
   "picker": {
     "results": "{count, plural, one {# zhoda} few {# zhody} many {# zhody} other {# zhôd}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Ázia",
       "eastAsia": "Východná Ázia",
       "europe": "Európa",
+      "latinAmerica": "Latinská Amerika",
       "middleEastNorthAfrica": "Blízky východ a severná Afrika",
       "oceania": "Oceánia",
       "southAsia": "Južná Ázia",
@@ -127,6 +139,10 @@
     "terms": "Podmienky používania Glazecalc: zadarmo pre vaše vlastné glazúry a prácu, ohľaduplné k zdieľanému serveru a poskytované tak, ako je.",
     "assistants": "Používajte Glazecalc z Claude, Copilotu, Cursoru alebo Gemini cez MCP: chémia glazúr, kontroly limitov, náhrady, návody aj vaše vlastné recepty.",
     "signup": "Vytvorte si bezplatný účet Glazecalc a uchovávajte si recepty na glazúry, suroviny, poznámky a záznamy výpalov. Bez reklám a vaše údaje sa nikdy nepredávajú.",
+    "cones": "Pyrometrické kužele Orton a SK od 022 vyššie: teploty v °C a °F, rýchlosť ohrevu, pre ktorú platia, a zdroje údajov.",
+    "materials": "Suroviny zo štandardnej knižnice Glazecalc, od živcov a ílov po frity a zdroje bóru, každá s oxidovým rozborom, Segerovým vzorcom a rizikami.",
+    "materialInfo": "{name}: oxidový rozbor, Segerov vzorec, strata žíhaním a riziká v štandardnej knižnici Glazecalc.",
+    "materialInfoLong": "{name} v štandardnej knižnici surovín na glazúry Glazecalc: oxidový rozbor, príspevok k Segerovmu vzorcu, strata žíhaním a riziká.",
     "imageAlt": "Úvodná stránka Glazecalc: bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov."
   },
   "notices": {

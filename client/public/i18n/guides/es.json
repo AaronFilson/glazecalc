@@ -40,6 +40,17 @@
     }
   },
   "more": "Más guías",
+  "related": {
+    "heading": "Páginas de consulta",
+    "cones": {
+      "title": "Tabla de conos: conos Orton y SK",
+      "text": "Conos Orton y SK con sus temperaturas en °C y °F, y el origen de cada cifra."
+    },
+    "materials": {
+      "title": "Materiales estándar",
+      "text": "Cada material de la biblioteca con su análisis de óxidos, su aportación a la fórmula Seger y sus peligros."
+    }
+  },
   "contents": "En esta página",
   "poison": {
     "numbersFor": "Teléfonos de",
@@ -133,6 +144,13 @@
     "respirators": "Aquí las mascarillas contra el polvo se venden por clases: {everyday} para el polvo de esmalte, o {higher} para más protección (<link>las clases oficiales</link>).",
     "unknown": "No hemos podido confirmar el límite nacional en {region}. El límite vinculante de la UE, de {value} mg/m³, se aplica en todos los Estados miembros.",
     "noData": "Aún no hemos confirmado el límite en {region}.",
+    "statesLabel": "Límites fijados por los estados de {region}",
+    "statesCaption": "Límites que algunos estados han fijado para el polvo que contiene cuarzo, donde Q es el cuarzo del polvo, en %. Solo los hemos leído en copias publicadas por terceros, así que no están confirmados (comprobados el {date}).",
+    "state": "Estado",
+    "respirableDust": "Polvo respirable",
+    "totalDust": "Polvo total",
+    "cutOff": "Cortado en la copia que leímos",
+    "stateSetBy": "{area}: fijado por <link>{law}</link>.",
     "agency": "El organismo nacional de seguridad en el trabajo: <link>{name}</link>.",
     "agencySilica": "Su <link>página sobre la sílice</link>.",
     "choosePrompt": "Elija su país o región para ver el límite que se aplica allí."

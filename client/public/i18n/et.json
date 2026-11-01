@@ -21,6 +21,7 @@
     "recipe": "Retseptid – Glazecalc",
     "import": "Retseptide kleepimine – Glazecalc",
     "blends": "Katsesegud proovitükkidele – Glazecalc",
+    "solve": "Lahendamine sihi järgi – Glazecalc",
     "material": "Toorained – Glazecalc",
     "additive": "Lisaained – Glazecalc",
     "firingLogs": "Põletuspäevikud – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Lehte ei leitud – Glazecalc",
     "shared": "Jagatud retsept – Glazecalc",
     "assistants": "Glazecalci kasutamine tehisintellekti assistendiga – Glazecalc",
-    "confirm": "Muudatuse heakskiitmine – Glazecalc"
+    "confirm": "Muudatuse heakskiitmine – Glazecalc",
+    "cones": "Koonuste tabel: Ortoni ja SK koonuste temperatuurid – Glazecalc",
+    "materials": "Standardsed glasuuritoorained: analüüs ja ohud – Glazecalc",
+    "materialInfo": "{name}: oksiidanalüüs ja ohud – Glazecalc"
   },
   "nav": {
     "skip": "Liigu sisu juurde",
@@ -82,6 +86,13 @@
     "languages": "Keeled",
     "language": "Keel:"
   },
+  "offline": {
+    "languageNotSaved": "See keel ei ole selles telefonis salvestatud. Selle kasutamiseks looge internetiühendus.",
+    "updateReady": "Glazecalci uus versioon on valmis.",
+    "reload": "Laadi uuesti",
+    "dismiss": "Mitte praegu",
+    "install": "Paigalda rakendus"
+  },
   "picker": {
     "results": "{count, plural, one {# vaste} other {# vastet}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Aasia",
       "eastAsia": "Ida-Aasia",
       "europe": "Euroopa",
+      "latinAmerica": "Ladina-Ameerika",
       "middleEastNorthAfrica": "Lähis-Ida ja Põhja-Aafrika",
       "oceania": "Okeaania",
       "southAsia": "Lõuna-Aasia",
@@ -127,6 +139,10 @@
     "terms": "Glazecalci kasutamise tingimused: tasuta teie enda glasuuride ja töö jaoks, aus jagatud serveri suhtes ja pakutav sellisena, nagu see on.",
     "assistants": "Glazecalc MCP kaudu assistendis Claude, Copilot, Cursor või Gemini: glasuurikeemia, piirväärtuste kontroll, asendajad, juhendid ja teie enda retseptid.",
     "signup": "Looge tasuta Glazecalci konto, et säilitada oma glasuuri retseptid, toorained, märkmed ja põletuspäevikud. Reklaamideta ja teie andmeid ei müüda kunagi.",
+    "cones": "Ortoni ja SK püromeetrilised koonused alates 022 koos temperatuuridega °C ja °F, kuumutuskiirusega, mille kohta iga tabel käib, ja arvude allikaga.",
+    "materials": "Glazecalci standardteegi toorained põldpaodest ja savidest fritideni ja boori allikateni, igaühel oksiidanalüüs, Segeri valem ja ohud.",
+    "materialInfo": "{name}: oksiidanalüüs, Segeri valem, hõõgumiskadu ja ohud Glazecalci standardteegis.",
+    "materialInfoLong": "{name} Glazecalci glasuuritoorainete standardteegis: oksiidanalüüs, panus Segeri valemisse, hõõgumiskadu ja ohud.",
     "imageAlt": "Glazecalci avaleht: tasuta glasuurikeemia keraamikutele, kõrval foto põletatud koonustest."
   },
   "notices": {

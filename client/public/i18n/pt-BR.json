@@ -86,6 +86,13 @@
     "languages": "Idiomas",
     "language": "Idioma:"
   },
+  "offline": {
+    "languageNotSaved": "Este idioma não está salvo neste celular. Conecte-se à internet para usá-lo.",
+    "updateReady": "Uma nova versão do Glazecalc está pronta.",
+    "reload": "Recarregar",
+    "dismiss": "Agora não",
+    "install": "Instalar o app"
+  },
   "picker": {
     "results": "{count, plural, one {# resultado} many {# resultados} other {# resultados}}",
     "languages": {

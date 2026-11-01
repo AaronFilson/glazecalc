@@ -40,6 +40,17 @@
     }
   },
   "more": "Weitere Anleitungen",
+  "related": {
+    "heading": "Nachschlageseiten",
+    "cones": {
+      "title": "Kegeltabelle: Ortonkegel und SK-Kegel",
+      "text": "Orton- und SK-Kegel mit ihren Temperaturen in °C und °F und der Herkunft jedes Werts."
+    },
+    "materials": {
+      "title": "Standardrohstoffe",
+      "text": "Jeder Rohstoff der Bibliothek mit Oxidanalyse, Beitrag zur Segerformel und Gefahren."
+    }
+  },
   "contents": "Auf dieser Seite",
   "poison": {
     "numbersFor": "Nummern für",
@@ -133,6 +144,13 @@
     "respirators": "Staubschutzmasken werden hier nach Klassen verkauft: {everyday} für Glasurstaub oder {higher} für mehr Schutz (<link>die amtlichen Klassen</link>).",
     "unknown": "{region}: Den nationalen Grenzwert konnten wir nicht bestätigen. Der verbindliche Grenzwert der EU von {value} mg/m³ gilt in jedem Mitgliedstaat.",
     "noData": "{region}: Den dortigen Grenzwert haben wir noch nicht bestätigt.",
+    "statesLabel": "Grenzwerte der Bundesstaaten in {region}",
+    "statesCaption": "Grenzwerte, die einige Bundesstaaten für quarzhaltigen Staub festgelegt haben; Q ist der Quarzanteil im Staub in %. Wir kennen sie nur aus Kopien, die andere veröffentlicht haben, daher sind sie nicht bestätigt (geprüft am {date}).",
+    "state": "Bundesstaat",
+    "respirableDust": "Alveolengängiger Staub",
+    "totalDust": "Gesamtstaub",
+    "cutOff": "In der gelesenen Kopie abgeschnitten",
+    "stateSetBy": "{area}: festgelegt durch <link>{law}</link>.",
     "agency": "Die nationale Stelle für Arbeitsschutz: <link>{name}</link>.",
     "agencySilica": "Deren <link>Seite zu Quarzstaub</link>.",
     "choosePrompt": "Wählen Sie Ihr Land oder Ihre Region, um den dortigen Grenzwert zu sehen."
