@@ -7,7 +7,7 @@ const { API, signUpAndSignIn } = require('./helpers');
 // letters on a mirrored page, so the browser's own bidirectional rules run as they will for Arabic, with
 // Arabic-Indic digits. Values with Latin units read left to right, names are kept apart from the text around
 // them (client/app/shared/bidi.ts), and Bootstrap's sides are mirrored (client/bootstrap.scss). The
-// Devanagari, Tamil, Kannada and Malayalam pseudo-locales (hi-XE, ta-XF, kn-XG, ml-XH) are laid out at the
+// Devanagari, Tamil, Kannada, Malayalam and Ethiopic pseudo-locales (hi-XE, ta-XF, kn-XG, ml-XH, am-XI) are laid out at the
 // narrowest phone too, and so are the real Tamil, Marathi, Kannada, Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepali and Sinhala pages.
 
 const standard = {};
@@ -104,6 +104,7 @@ test.describe('at the narrowest phone', () => {
     'ta-XF',
     'kn-XG',
     'ml-XH',
+    'am-XI',
     'ta',
     'mr',
     'kn',

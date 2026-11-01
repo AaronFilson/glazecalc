@@ -1252,6 +1252,97 @@ const LANGUAGES = {
         'Names of Latin American services and bodies (911, SAMU 131, Hospital Posadas, Cofepris) stay in Spanish: compare what they refer to.'
       ]
     }
+  },
+  // Round 10's wave L2 (scratch/round10/c-l2): Swahili, for Kenya, Tanzania and Uganda (standard notice for now:
+  // an owner question), and Amharic, for Ethiopia, in Ethiopic script with the plain notice. Both fire by
+  // temperature; glaze chemistry is taught in English in both, so most technical terms are English loans.
+  sw: {
+    language: 'Swahili',
+    country: 'Kenya, Tanzania and Uganda',
+    region: 'KE',
+    shops:
+      'lib/regions/suppliers.js has no shop for Kenya yet; shops in Nairobi, Dar es Salaam and Kampala sell in English. Read what the bag prints (feldspar, kaolin, silica: English names) and Swahili craft sources for the everyday words (ufinyanzi, mfinyanzi, udongo wa mfinyanzi, tanuru, kuchoma).',
+    termbank:
+      "TUKI/TATAKI's Kamusi ya Kiswahili Sanifu and English–Swahili Dictionary (University of Dar es Salaam), BAKITA's (Tanzania) and BAKIKE's (Kenya) approved terms, and Kenyan and Tanzanian secondary-school chemistry textbooks in Swahili for element and oxide names",
+    kilns:
+      "Kenyan and Tanzanian potters' and technical colleges' pages, which mostly write kiln words in English: give the Swahili everyday word (tanuru, kuchoma, kupoa) and keep the English loan where Swahili has none.",
+    law: "Kenya's and Tanzania's laws are published in English (OSHA 2007 Kenya; Tanzania's OSHA): give the Swahili words for their ideas (usalama kazini, vumbi, sumu), never added figures; the emergency numbers only as lib/regions prints them (Kenya 922). Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the term banks of Swahili ({TERMBANK}); IATE has no Swahili. For software conventions (register, buttons, punctuation), the Microsoft Swahili style guide and terminology, and Google's Swahili interface.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/sw.md exists already (start from it; add, do not rewrite). Mark every row with no source read **Native check**.',
+        'Glaze chemistry has no Swahili terms: keep the English loan (glaze, frit, feldspar, UMF, LOI, SG, cone names) with a short Swahili gloss at first use, and give each loan its noun class (9/10 for most) and agreement.',
+        'Register: wewe through the verb (singular u-), never ninyi for one reader; buttons as Microsoft Swahili writes them (Hifadhi, Futa, Ghairi).',
+        'Numbers as CLDR sw: decimal point (1.5), thousands with a comma (12,500 g), dates 14 Oktoba 2026, the 24-hour clock (20:00), never Swahili time (saa mbili usiku), which the check reads as 2.',
+        'Plural forms: `one` (1 only) and `other`, as English; Swahili marks the plural on the class prefix, so write both in full.',
+        'Law terms: "at most", "no more than" isiyozidi / si zaidi ya; "less than" chini ya; "at least" angalau. Keep them apart.',
+        'Lead: madini ya risasi (lead, Pb) at first use; risasi alone also means a bullet. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/sw.md; the English loans and their noun classes as it gives them.',
+        'Register: wewe through the verb; buttons as the style sheet gives them.',
+        'Numbers: 1.5; 12,500 g; 1222 °C as the English writes it; 14 Oktoba 2026; 20:00 on the 24-hour clock, never Swahili time.',
+        'Plural forms: `one` and `other`, each written in full with its class prefix.',
+        'Law terms: "at most" isiyozidi / si zaidi ya, never chini ya ("less than"). Cones as Orton. Lead (madini ya risasi, Pb), barium and silica warnings as strong as the English; no added lazima, kamwe, daima.'
+      ],
+      review: [
+        'Swahili: "at most" and "no more than" are isiyozidi / si zaidi ya, never chini ya. Check every one in the food-contact, silica and safety text.',
+        'Swahili: digits 0–9, decimal point, the 24-hour clock (never Swahili time: saa mbili for 20:00 is a wrong figure); plural forms with the right class agreement.',
+        'Swahili: lead named madini ya risasi (lead, Pb), never risasi alone; warnings not softened; no lazima, kamwe or daima the English lacks.'
+      ],
+      backtranslate: [
+        'isiyozidi and si zaidi ya mean "at most" (the limit itself passes); chini ya means "less than" (it does not). Translate each back exactly as it reads.',
+        'Words of emphasis and obligation (lazima, kamwe, daima, inapaswa) are translated back as strongly as they read.',
+        'A time written in Swahili time (saa mbili) is a difference from the English figure: report it.'
+      ]
+    }
+  },
+  am: {
+    language: 'Amharic',
+    country: 'Ethiopia',
+    region: 'ET',
+    shops:
+      'lib/regions has no Ethiopia region yet (its emergency number is not confirmed). Ethiopian studio supplies are sold in English; read what the bag prints, and Ethiopian craft sources (traditional pottery, ሸክላ ሥራ) for the everyday words (ሸክላ, ሸክላ ሠሪ, እቶን, ማቃጠል).',
+    termbank:
+      "the Amharic dictionaries (Kesate Birhan Tesema's የአማርኛ መዝገበ ቃላት; Addis Ababa University's Ethiopian Languages Research Center), and Ethiopian school chemistry texts in Amharic for element and oxide names",
+    kilns:
+      "Ethiopian technical colleges' and Addis Ababa University's Alle School of Fine Arts and Design pages, which write kiln words in English: give the Amharic everyday word (እቶን, never ምድጃ, which is a cooking stove) and keep the English loan where Amharic has none.",
+    law: "Ethiopia's laws (Federal Negarit Gazette, published in Amharic and English): the Amharic words for occupational safety, dust and poison as the Gazette writes them, never added figures; no Ethiopian emergency number is confirmed, so name none. Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      'the term banks of Amharic ({TERMBANK}); IATE has no Amharic. For software conventions (register, buttons, punctuation), the Microsoft Amharic style guide and terminology.',
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/am.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Amharic has the plain notice: write that the English stays one click away.',
+        'Ethiopic script (U+1200–137F), NFC; words separated by spaces, never the old divider ፡. Punctuation: ። ends every sentence (never a Latin "."), ፣ between items and clauses, ፤ for a semicolon, ? and ! Latin, «…» for quotations.',
+        'Glaze chemistry has no Amharic terms: keep the English loan in Ethiopic letters with the English in brackets at first use (ግላዝ (glaze), ፍሪት (frit)), and UMF, LOI, SG, Orton and formulas in Latin.',
+        'Register: the polite, gender-neutral እርስዎ forms everywhere (ይምረጡ, ያስቀምጡ), never አንተ/አንቺ.',
+        'Numbers: digits 0–9, never Ethiopic numerals (፩ ፪ ፫); decimal point, thousands with a comma; Gregorian dates as the app prints them (14 ኦክቶበር 2026), never the Ethiopian calendar; the 24-hour clock (20:00), never Ethiopian time (ከምሽቱ 2 ሰዓት), which the check reads as 2.',
+        'Plural forms: CLDR am `one` covers 0 and 1: `one` keeps `#`; where the English `one` has no `#`, add `=1` and keep `one` with `#`.',
+        'Law terms: "at most", "no more than" ቢበዛ / ከ… ያልበለጠ; "less than" ከ… ያነሰ; "at least" ቢያንስ. Keep them apart.',
+        'Lead is እርሳስ, which also means a pencil: write እርሳስ (lead, Pb) at first use on each page and keep (Pb) in every warning. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/am.md. Ethiopic script; ። ends every sentence, ፣ for commas, ፤ for semicolons; never ፡ between words.',
+        'Register: the polite እርስዎ forms; buttons as the style sheet gives them.',
+        'Numbers: digits 0–9 only, never Ethiopic numerals; 1.5; 12,500 g; Gregorian dates; 20:00 on the 24-hour clock, never Ethiopian time or the Ethiopian calendar.',
+        'Plural forms: `one` keeps `#` (it shows for 0); `=1` where the English `one` has no `#`.',
+        'Never put a prefix or suffix (የ-, በ-, -ን) on a placeholder; put a noun before it.',
+        'Law terms: "at most" ቢበዛ / ከ… ያልበለጠ, never ከ… ያነሰ ("less than"). Cones as Orton. Lead as እርሳስ (lead, Pb); warnings as strong as the English; no added ሁልጊዜ, በፍጹም, ግዴታ.'
+      ],
+      review: [
+        'Amharic: "at most" and "no more than" are ቢበዛ / ከ… ያልበለጠ, never ከ… ያነሰ. Check every one in the food-contact, silica and safety text.',
+        'Amharic: ። at the end of every sentence, never a Latin "."; ፣ and ፤; no ፡ word divider; NFC.',
+        'Amharic: digits 0–9 only, never ፩ ፪ ፫; no Ethiopian calendar years or Ethiopian time; plural `one` keeps `#`, with `=1` where needed.',
+        'Amharic: lead written እርሳስ (lead, Pb), never እርሳስ alone in a warning; a kiln is እቶን, never ምድጃ; glaze ግላዝ, never ቀለም; polite እርስዎ forms throughout.'
+      ],
+      backtranslate: [
+        'ቢበዛ and ከ… ያልበለጠ mean "at most" (the limit itself passes); ከ… ያነሰ means "less than" (it does not). Translate each back exactly as it reads.',
+        'እርሳስ may read as "pencil": if a sentence about lead reads so, report it.',
+        'Words of emphasis and obligation (ሁልጊዜ, በፍጹም, ግዴታ, አለበት) are translated back as strongly as they read.',
+        'A time in Ethiopian time or a date in the Ethiopian calendar is a difference from the English figure: report it.'
+      ]
+    }
   }
 };
 

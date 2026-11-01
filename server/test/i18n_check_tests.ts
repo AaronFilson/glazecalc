@@ -91,6 +91,10 @@ describe('message checks', () => {
     expect(numbersIn('Queime a 1.222 °C, depois 1.240 °C, com 1,5% e 12.500 g.', 'pt-BR')).to.eql(l1);
     expect(numbersIn('Queime a 1222 °C, depois 1240 °C, com 1,5% e 12.500 g.', 'pt-BR')).to.eql(l1);
     expect(numbersIn('Quema a 1222 °C, luego 1240 °C, con 1.5 % y 12,500 g.', 'es-419')).to.eql(l1);
+    // Wave L2: Swahili and Amharic write 0–9 with a decimal point and a comma for thousands, as English does;
+    // Amharic's own full stop (።) and comma (፣) end a sentence or a clause after a figure.
+    expect(numbersIn('Choma hadi 1240 °C, kisha 1222 °C, kwa 1.5% na 12,500 g.', 'sw')).to.eql(l1);
+    expect(numbersIn('እስከ 1240 °C፣ ከዚያ 1222 °C፣ በ1.5% እና 12,500 g።', 'am')).to.eql(l1);
   });
 
   describe('in the languages of East and Southeast Asia, and Turkish', () => {
@@ -353,6 +357,12 @@ describe('message checks', () => {
           'pt-BR',
           '{count, plural, one {Esta chave} many {Estas # de chaves} other {Estas # chaves}}',
           '{count, plural, =1 {Esta chave} one {# chave} many {Estas # de chaves} other {Estas # chaves}}'
+        ],
+        // Wave L2: Amharic's `one` is 0 and 1 too (CLDR am: i = 0 or n = 1).
+        [
+          'am',
+          '{count, plural, one {ይህ የይለፍ ቁልፍ} other {እነዚህ # የይለፍ ቁልፎች}}',
+          '{count, plural, =1 {ይህ የይለፍ ቁልፍ} one {# የይለፍ ቁልፍ} other {እነዚህ # የይለፍ ቁልፎች}}'
         ]
       ];
       for (const [language, was, fixed] of messages) {
@@ -361,6 +371,10 @@ describe('message checks', () => {
         ]);
         expect(compareMessage(language, 'k', passkey, fixed), language).to.eql([]);
       }
+    });
+
+    it("asks nothing of Swahili, whose `one` is 1 alone, as English's", () => {
+      expect(compareMessage('sw', 'k', passkey, '{count, plural, one {Ufunguo huu} other {Funguo hizi #}}')).to.eql([]);
     });
 
     it('asks nothing of a language whose "one" is only 1, or of an English with its own =0 or a # in its "one"', () => {

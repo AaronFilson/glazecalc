@@ -1906,6 +1906,23 @@ describe('Latin America and Africa', () => {
     expect([groups.languageGroup('es'), groups.languageGroup('pt-PT')]).to.eql(['europe', 'europe']);
   });
 
+  it('wave L2: Swahili and Amharic known, not offered, Amharic on its own plural rules with the pseudo-Amharic', () => {
+    expect(languages.languageFor('sw')).to.include({ name: 'Kiswahili', live: false });
+    expect(languages.languageFor('am')).to.include({ name: 'አማርኛ', live: false, plainNotice: true });
+    expect(languages.languageFor('am-XI')).to.include({ base: 'am', pseudo: true, live: false });
+    expect(languages.textLanguage('am-XI')).to.equal('am');
+    expect(groups.languageGroup('am-XI')).to.equal('other');
+    // CLDR am: `one` is 0 and 1 (as Kannada's and Hindi's); sw: 1 only, as English.
+    const am = new Intl.PluralRules('am');
+    expect([0, 1, 2].map((n) => am.select(n))).to.eql(['one', 'one', 'other']);
+    const sw = new Intl.PluralRules('sw');
+    expect([0, 1, 2].map((n) => sw.select(n))).to.eql(['other', 'one', 'other']);
+    // Both write 0–9 and a decimal point, as English does.
+    for (const locale of ['sw-KE', 'sw-TZ', 'am-ET']) {
+      expect(new Intl.NumberFormat(locale).format(1234.5), locale).to.equal('1,234.5');
+    }
+  });
+
   it('gives each emergency number read on an official page, and only the poison lines confirmed', () => {
     const numbers = (code: string) => {
       const shown = safety.shownFor(code)!;

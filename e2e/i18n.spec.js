@@ -212,6 +212,32 @@ test("Tamil, Marathi, Kannada, Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepal
   expect(files.filter((file) => /noto-(sans|nastaliq)/i.test(file))).toEqual([]);
 });
 
+test("the Ethiopic pseudo-locale is drawn in the device's Ethiopic font, or the app's Noto Sans Ethiopic where it has none, in lines 1.65 high", async ({
+  page
+}) => {
+  const files = fontFiles(page);
+  await page.goto('/am-XI/guides/firing');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'am-XI');
+  await expect(page.locator('h1')).toHaveText(/[ሀ-᎟]/);
+  await page.evaluate(() => globalThis.document.fonts.ready);
+  // The Linux image has no Ethiopic font (scripts/test-e2e-linux.Dockerfile), so it takes the app's, which
+  // is how an older phone without one sees it; Windows draws it in Ebrima and fetches nothing.
+  if (process.platform === 'linux') {
+    await expect.poll(() => files.filter((file) => /noto-sans-ethiopic-wght-normal/.test(file)).length).toBe(1);
+    expect(await fontsOf(page, 'h1')).toContainEqual(expect.stringMatching(/^Noto Sans Ethiopic/));
+  } else {
+    expect(await fontsOf(page, 'h1')).toContainEqual(expect.stringMatching(/^Ebrima/));
+    expect(files.filter((file) => /noto-sans-ethiopic/.test(file))).toEqual([]);
+  }
+  await expect(page.locator('html')).toHaveCSS('font-synthesis', 'none');
+  await expect(page.locator('body')).toHaveCSS('line-height', '28.05px');
+  const ratio = await page.locator('h1').evaluate((h1) => {
+    const style = globalThis.getComputedStyle(h1);
+    return parseFloat(style.lineHeight) / parseFloat(style.fontSize);
+  });
+  expect(ratio).toBeCloseTo(1.4, 2);
+});
+
 test("an Urdu page fetches the app's Nastaliq font and sets its text in it, in lines 1.9 high", async ({ page }) => {
   const files = fontFiles(page);
   await page.goto('/ur/about');

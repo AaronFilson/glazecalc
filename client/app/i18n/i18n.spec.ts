@@ -399,6 +399,34 @@ describe('translations', () => {
       expect(shown(1).slice(1)).not.toBe(shown(2).slice(1));
     });
 
+    it("writes every message in Ethiopic syllables, with Ethiopic's punctuation, on Amharic's plural rules", () => {
+      // Each consonant with its vowel as one syllable (ሳ is s and a), a bare one in the sixth order (ት).
+      expect(pseudoMessage('Save recipe.', 'am-XI')).toBe('ሳቬ ሬቺፔ።');
+      expect(pseudoMessage('Batch', 'am-XI')).toBe('ባትችህ');
+      expect(pseudoMessage('Fire it, then look; SK 8, 1240 °C, {amount} g of K2O.', 'am-XI')).toMatch(
+        /^[ሀ-᎟]+ [ሀ-᎟]+፣ [ሀ-᎟]+ [ሀ-᎟]+፤ SK 8, 1240 °C, \{amount\} g [ሀ-᎟]+ K2O\.$/
+      );
+      expect(pseudoText('See https://example.com/a-b now.', 'am-XI')).toContain(' https://example.com/a-b ');
+      expect(pseudoMessage('Glaze the whole batch with a brush', 'am-XI')).toMatch(/^[ሀ-᎟ ]+$/);
+      // Amharic's `one` covers 0 as well as 1 (CLDR), as Kannada's does.
+      const transpiler = new IcuTranspiler();
+      transpiler.onLangChanged('am-XI');
+      const message = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'am-XI');
+      const shown = (count: number) =>
+        transpiler.transpile({ value: message, params: { count }, translation: {}, key: 'x' }) as string;
+      expect(shown(0)).toBe(shown(1).replace(/^1/, '0'));
+      expect(shown(2).slice(1)).not.toBe(shown(1).slice(1));
+    });
+
+    it('finds Swahili for sw-KE, sw-TZ and sw-UG and Amharic for am-ET, only once they are offered', () => {
+      const tags = ['sw', 'sw-KE', 'sw-TZ', 'sw-UG', 'sw-CD', 'am', 'am-ET'];
+      const ask = (offered: string[]) => tags.map((tag) => languageOfTag(tag, offered));
+      expect(ask(['en', 'fr'])).toEqual(tags.map(() => null));
+      expect(ask(['en', 'sw', 'am'])).toEqual(['sw', 'sw', 'sw', 'sw', 'sw', 'am', 'am']);
+      expect(ask(['en', 'sw'])).toEqual(['sw', 'sw', 'sw', 'sw', 'sw', null, null]);
+      expect(languageOfTag('am-ET', ['en', 'am-XI'])).toBeNull();
+    });
+
     it("gives the pseudo-Kannada Kannada's plural rules, where one is for 0 as well as 1, and the pseudo-Tamil Tamil's", () => {
       const message = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'kn-XG');
       const kannada = new IcuTranspiler();

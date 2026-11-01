@@ -111,7 +111,8 @@
 // scripts, Android's and Linux's Noto, Apple's Geeza Pro, Kohinoor and Sangam MN), so nothing is fetched.
 // Urdu is the exception: it is written in Nastaliq, which few devices have, so Noto Nastaliq Urdu comes with
 // the app (below), named only here, so no other language's page fetches it. :lang(ar) is also the
-// pseudo-locales ar-XB and ar-XD, :lang(hi) hi-XE, :lang(ta) ta-XF, :lang(kn) kn-XG and :lang(ml) ml-XH.
+// pseudo-locales ar-XB and ar-XD, :lang(hi) hi-XE, :lang(ta) ta-XF, :lang(kn) kn-XG, :lang(ml) ml-XH and
+// :lang(am) am-XI.
 // Marathi and Nepali share Devanagari with Hindi: a font draws their own letter forms (ल, श, झ) when the page
 // says lang="mr" or "ne". The iPhone's fonts for Kannada, Gurmukhi, Odia and Sinhala are to be checked on a real device before
 // each goes live (scratch/round8/in-langs/plan.md, section 4); a web font cut to the script is the fallback.
@@ -135,10 +136,11 @@ $gc-script-fonts: (
   'pa': "'Nirmala UI', 'Mukta Mahee', 'Gurmukhi Sangam MN', 'Noto Sans Gurmukhi', Raavi",
   'or': "'Nirmala UI', 'Oriya Sangam MN', 'Noto Sans Oriya', Kalinga",
   'si': "'Nirmala UI', 'Sinhala Sangam MN', 'Noto Sans Sinhala', 'Iskoola Pota'",
-  // Amharic (round 10, not offered yet): Ethiopic, which current systems have (Windows' Ebrima, Apple's Kefa,
-  // Android's and Linux's Noto Sans Ethiopic), so, as for India's scripts, nothing is served; a web font cut to
-  // Ethiopic is the fallback if wave L2's screenshot run finds a device without one.
-  'am': "Ebrima, Kefa, 'Noto Sans Ethiopic', 'Abyssinica SIL'"
+  // Amharic (round 10, wave L2, not offered yet): Ethiopic, which most current systems have (Windows' Ebrima,
+  // Apple's Kefa, Android's and Linux's Noto Sans Ethiopic); older Android and iPhones may lack it, so Noto Sans
+  // Ethiopic cut to Ethiopic comes with the app (below), named last and only here: a device with its own font
+  // never fetches it, and no other language's page does.
+  'am': "Ebrima, Kefa, 'Noto Sans Ethiopic', 'Abyssinica SIL', 'Noto Sans Ethiopic Served'"
 );
 $gc-script-langs: ();
 @each $lang, $fonts in $gc-script-fonts {
@@ -196,7 +198,10 @@ $gc-tall-scripts: (
   'te': 1.85 1.5,
   'kn': 1.85 1.5,
   'or': 1.85 1.5,
-  'si': 1.85 1.5
+  'si': 1.85 1.5,
+  // Ethiopic's syllables carry their vowel as a stroke or ring on the letter, above the line and at its foot,
+  // without stacking: a little taller than Latin. Starting values, for the am-XI screenshot run to set.
+  'am': 1.65 1.4
 );
 // Tamil, Malayalam, Telugu, Kannada, Odia and Sinhala write long words, with no spaces inside them (agglutinated
 // endings, wide letters): a word wider than a phone breaks at a letter, and may shrink a column of a grid or a flex
@@ -245,6 +250,23 @@ body:lang(ur),
   font-weight: 400 700;
   src: url('./fonts/noto-nastaliq-urdu-wght-normal.woff2') format('woff2-variations');
   unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FD3E-FD3F, U+FDF2, U+FDFA-FDFD;
+}
+
+// Amharic's Ethiopic, served with the app for devices without an Ethiopic font: Noto Sans Ethiopic (OFL:
+// client/fonts/noto-sans-ethiopic-OFL.txt, THIRD-PARTY-NOTICES.md), weights 100 to 900, its Ethiopic subset only
+// (198 kB), copied unchanged from @fontsource-variable/noto-sans-ethiopic 5.3.0
+// (files/noto-sans-ethiopic-ethiopic-wght-normal.woff2), whose own unicode-range this is; copy it again when that
+// changes. Last in Amharic's font list ($gc-script-fonts) and named nowhere else, so only an Amharic page on a
+// device with none of Ebrima, Kefa or Noto Sans Ethiopic fetches it; not preloaded. The digits stay 0–9, set in
+// Lora.
+@font-face {
+  font-family: 'Noto Sans Ethiopic Served';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('./fonts/noto-sans-ethiopic-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+030E, U+1200-1399, U+2D80-2DDE, U+AB01-AB2E, U+1E7E0-1E7E6, U+1E7E8-1E7EB, U+1E7ED-1E7EE, U+1E7F0-1E7FE;
 }
 
 @mixin dark-tokens {
