@@ -33,6 +33,25 @@ const NOTO: Record<string, string> = {
   Sinh: 'SansSinhala'
 };
 
+describe('the letters of Hausa, Igbo and Yoruba that Lora lacks (waves L3 and L4)', () => {
+  it("come from Noto Serif's Latin Extended face, named for just them, after Lora", () => {
+    const face = styles.split('@font-face').find((rule) => rule.includes('noto-serif-latin-ext-wght-normal.woff2'));
+    expect(face).to.be.a('string');
+    expect(face).to.include("font-family: 'Noto Serif Fill'");
+    const range = /unicode-range:([^;]+);/.exec(face!)![1];
+    const covered = (char: string) =>
+      range.split(',').some((part) => {
+        const [from, to] = part.trim().replace('U+', '').split('-');
+        const code = char.codePointAt(0)!;
+        return code >= parseInt(from, 16) && code <= parseInt(to ?? from, 16);
+      });
+    // ɓ ɗ ƙ ƴ and their capitals (Hausa), ṅ (Igbo), ṣ and ḿ (Yoruba); not ẹ ọ ị ụ, which Lora has.
+    for (const char of 'ɓɗƙƴƁƊƘƳṅṄṣṢḿḾ') expect(covered(char), char).to.equal(true);
+    for (const char of 'ẹọịụaé') expect(covered(char), char).to.equal(false);
+    expect(styles).to.match(/--gc-font:\s*'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill'/);
+  });
+});
+
 describe('the Indian languages’ font and line-height tables', () => {
   it('give every language the checks know a font stack, system fonts first and none served', () => {
     const fonts = map('$gc-script-fonts');

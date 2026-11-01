@@ -1343,6 +1343,312 @@ const LANGUAGES = {
         'A time in Ethiopian time or a date in the Ethiopian calendar is a difference from the English figure: report it.'
       ]
     }
+  },
+  // Round 10's waves L3 and L4 (scratch/round10/c-l34): Afrikaans (standard notice), Hausa and Yoruba (L3), Zulu,
+  // Igbo and Somali (L4), and Quechua (with extra review, the owner's decision), all but Afrikaans with the plain
+  // notice. Glaze chemistry is taught in English in all the African ones (Afrikaans has its own words), and in
+  // Spanish for Quechua, so most technical terms are loans.
+  af: {
+    language: 'Afrikaans',
+    country: 'South Africa and Namibia',
+    region: 'ZA',
+    shops:
+      'lib/regions/suppliers.js lists South African shops, which sell in English; read what the bag prints, and Afrikaans pottery books and Ceramics Southern Africa pages for the Afrikaans words (glasuur, oond, erdewerk, steengoed, veldspaat).',
+    termbank:
+      "the Taalkommissie's Afrikaanse Woordelys en Spelreëls (AWS) and the Verklarende Handwoordeboek van die Afrikaanse Taal (HAT); the Dutch sheet docs/translations/nl.md as a cross-check, never a source",
+    kilns:
+      "South African potters' and kiln makers' pages (mostly English) and Afrikaans hobby books: the Afrikaans word where one is in use (oond, glasuurbak, biskwietbak), never the Dutch one where Afrikaans differs.",
+    law: "South Africa's laws are published in English (the Hazardous Chemical Agents Regulations, Occupational Health and Safety Act): give the Afrikaans words for their ideas, never added figures; who to call only as lib/regions/safety.js prints it for ZA (10177, 10111, 112; Poisons Information Helpline 0861 555 777). Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the term banks of Afrikaans ({TERMBANK}); IATE has no Afrikaans. For software conventions (register, buttons, punctuation), Microsoft's Afrikaans terminology and style guide.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/af.md exists already (start from it; add, do not rewrite). Mark every row with no source read **Native check**.',
+        'Afrikaans has its own ceramics words (glasuur, oond, erdewerk, steengoed, porselein, veldspaat, kaolien, kegel): use them; English loans only where Afrikaans has none (frit, UMF, LOI, SG).',
+        'Register: jy, never u; buttons in the imperative (Stoor, Skrap, Kanselleer).',
+        'Numbers as CLDR af: decimal comma (1,5), thousands with a non-breaking space (U+00A0: 12 500 g), four-digit temperatures as the English writes them (1222 °C), the 24-hour clock.',
+        'Plural forms: `one` (1 only) and `other`, as English.',
+        'Law terms: "at most" hoogstens / nie meer as … nie; "less than" minder as; "at least" ten minste. Keep them apart.',
+        'Lead is lood (pencil is potlood): no (Pb) needed beyond the English. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/af.md.',
+        'Register: jy; buttons as the style sheet gives them; compounds as one word (glasuurresep), hyphen with abbreviations (UMF-waarde).',
+        'Numbers: 1,5; 12 500 g with a non-breaking space (U+00A0; a plain space reads as two numbers); 1222 °C as the English writes it; 20:00 on the 24-hour clock.',
+        'The double negative (nie … nie) is correct Afrikaans: keep it.',
+        'Law terms: "at most" hoogstens, never minder as ("less than"). Cones as Orton (kegel 6). Lead (lood), barium and silica warnings as strong as the English; no added altyd, nooit, moet.'
+      ],
+      review: [
+        'Afrikaans: "at most" and "no more than" are hoogstens / nie meer as … nie, never minder as. Check every one in the food-contact, silica and safety text.',
+        'Afrikaans: decimal comma, space for thousands, the 24-hour clock; Afrikaans words where they exist (not Dutch: glasuur, not glazuur); compounds as one word.',
+        'Afrikaans: jy throughout; the double negative present where the sentence is negative; warnings not softened.'
+      ],
+      backtranslate: [
+        'hoogstens and nie meer as … nie mean "at most" (the limit itself passes); minder as means "less than" (it does not). Translate each back exactly as it reads.',
+        'Words of emphasis and obligation (altyd, nooit, moet, beslis) are translated back as strongly as they read.'
+      ]
+    }
+  },
+  ha: {
+    language: 'Hausa',
+    country: 'Nigeria and Niger',
+    region: 'NG',
+    shops:
+      'lib/regions has no Nigeria region yet (its emergency number is not confirmed). Nigerian studio supplies are sold in English; read what the bag prints, and Hausa craft sources (tukwane, Kano and Zaria potters) for the everyday words (yumɓu, tukunya, gasa, maginiya).',
+    termbank:
+      "Paul Newman's Modern Hausa–English Dictionary, Roxana Ma Newman's English–Hausa Dictionary and Bargery's Hausa–English Dictionary; Bayero University Kano's Centre for the Study of Nigerian Languages; BBC Hausa's usage for health and science words",
+    kilns:
+      'Nigerian polytechnics and Ahmadu Bello University pages, which write kiln words in English: keep kiln and cone as loans with a Hausa gloss at first use, and gasa for firing; never murhu (a cooking hearth) alone for a kiln.',
+    law: "Nigeria's and Niger's laws are published in English and French: give the Hausa words for their ideas (lafiya a wurin aiki, ƙura, guba), never added figures; no emergency number for Nigeria or Niger is confirmed, so name none. Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the dictionaries of Hausa ({TERMBANK}); IATE has no Hausa. For software conventions, Microsoft's and Google's Hausa interfaces.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/ha.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Hausa has the plain notice.',
+        "Latin script (boko), NFC, with the hooked letters ɓ ɗ ƙ (never b d k) and Nigeria's ʼy (U+02BC + y); tone and vowel length not written.",
+        'Glaze chemistry has no Hausa terms: English loans (glaze, kiln, cone, frit, feldspar, UMF, LOI, SG) with a short Hausa gloss at first use.',
+        'Register: the imperative (not marked for gender); the plural ku where a pronoun is needed, never ka or ki alone.',
+        'Numbers as CLDR ha: decimal point (1.5), thousands with a comma (12,500 g), the 24-hour clock (20:00), never "ƙarfe takwas na dare".',
+        'Plural forms: `one` (1 only) and `other`, each written in full (Hausa plurals are often irregular).',
+        'Law terms: "at most" bai wuce … ba; "less than" ƙasa da; "at least" aƙalla. Keep them apart.',
+        'Lead is darma, which can also mean tin: write darma (lead, Pb) at first use on each page and keep (Pb) in every warning. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/ha.md. Hooked letters ɓ ɗ ƙ and ʼy always; NFC.',
+        'Register: the imperative; ku where a pronoun is needed; buttons as the style sheet gives them.',
+        'Numbers: digits 0–9; 1.5; 12,500 g; 1222 °C as the English writes it; 20:00 on the 24-hour clock.',
+        'Plural forms: `one` and `other`, each in full.',
+        'Law terms: "at most" bai wuce … ba, never ƙasa da ("less than"). Lead as darma (lead, Pb); warnings as strong as the English; no added dole, ko kaɗan, kullum.'
+      ],
+      review: [
+        'Hausa: "at most" and "no more than" are bai wuce … ba, never ƙasa da. Check every one in the food-contact, silica and safety text.',
+        'Hausa: ɓ ɗ ƙ never written as plain b d k; ʼy with U+02BC; NFC; digits 0–9 and the 24-hour clock.',
+        'Hausa: lead written darma (lead, Pb), never darma alone in a warning; a kiln is never murhu alone; glaze never fenti; warnings not softened.'
+      ],
+      backtranslate: [
+        'bai wuce … ba means "at most" (the limit itself passes); ƙasa da means "less than" (it does not). Translate each back exactly as it reads.',
+        'darma may read as "tin": if a sentence about lead reads so, report it.',
+        'Words of emphasis and obligation (dole, ko kaɗan, kullum, wajibi) are translated back as strongly as they read.'
+      ]
+    }
+  },
+  yo: {
+    language: 'Yoruba',
+    country: 'Nigeria',
+    region: 'NG',
+    shops:
+      'lib/regions has no Nigeria region yet. Nigerian studio supplies are sold in English; read what the bag prints, and Yoruba craft sources (Ìlọrin, Abẹ́òkúta potters) for the everyday words (amọ̀, ìkòkò, amọ̀kòkò, sun).',
+    termbank:
+      "R. C. Abraham's Dictionary of Modern Yoruba and the University of Lagos and Ìbàdàn Yoruba dictionaries; the Yoruba Orthography Committee's standard as Nigerian schools teach it",
+    kilns:
+      "Obafemi Awolowo University's and Yaba College of Technology's ceramics pages, which write kiln words in English: keep kiln and cone as loans with a Yoruba gloss at first use, and sun / ìsun for firing; never ààrò (a hearth) for a kiln.",
+    law: "Nigeria's laws are published in English: give the Yoruba words for their ideas (ààbò níbi iṣẹ́, eruku, májèlé), never added figures; no Nigerian emergency number is confirmed, so name none. Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the dictionaries of Yoruba ({TERMBANK}); IATE has no Yoruba. For software conventions, Google's and Microsoft's Yoruba interfaces.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/yo.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Yoruba has the plain notice.',
+        'Every tone mark and dot written, always, in every word (òjé lead, oje sap); NFC: precomposed letters where Unicode has them, else the dotted letter then the combining tone mark (ẹ́ = ẹ + U+0301).',
+        'Glaze chemistry has no Yoruba terms: English loans (glaze, kiln, cone, frit, feldspar, UMF, LOI, SG) with a short Yoruba gloss at first use.',
+        'Register: the honorific ẹ for "you", never o.',
+        'Numbers: digits 0–9, decimal point (1.5), thousands with a comma (12,500 g), the 24-hour clock (20:00), never Yoruba counting words for a figure.',
+        'Plural forms: CLDR yo has only `other`: one form with `#` (àwọn marks a plural without a number).',
+        'Law terms: "at most" kò ju … lọ; "less than" kéré sí; "at least" ó kéré tán. Keep them apart.',
+        'Lead is òjé: write òjé (lead, Pb) at first use on each page and keep (Pb) in every warning. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/yo.md. Full tone marks and dots on every word, NFC.',
+        'Register: ẹ; buttons as the style sheet gives them (Fi pamọ́, Pa rẹ́).',
+        'Numbers: digits 0–9; 1.5; 12,500 g; 1222 °C as the English writes it; 20:00 on the 24-hour clock.',
+        'Plural forms: only `other`, with `#`.',
+        'Law terms: "at most" kò ju … lọ, never kéré sí ("less than"). Lead as òjé (lead, Pb); warnings as strong as the English; no added gbọ́dọ̀, láéláé, nígbà gbogbo.'
+      ],
+      review: [
+        'Yoruba: "at most" and "no more than" are kò ju … lọ, never kéré sí. Check every one in the food-contact, silica and safety text.',
+        'Yoruba: every word fully tone-marked and dotted (a missing mark is an error, not a style choice); NFC; no Vietnamese letters (ệ, ộ) for ẹ́ / ọ́.',
+        'Yoruba: lead written òjé (lead, Pb) in every warning; a kiln is never ààrò; glaze never àwọ̀; ẹ throughout; warnings not softened.'
+      ],
+      backtranslate: [
+        'kò ju … lọ means "at most" (the limit itself passes); kéré sí means "less than" (it does not). Translate each back exactly as it reads.',
+        'A word whose tone marks are missing or wrong may read as another word: translate what the marks say, and report it.',
+        'Words of emphasis and obligation (gbọ́dọ̀, láéláé, nígbà gbogbo) are translated back as strongly as they read.'
+      ]
+    }
+  },
+  zu: {
+    language: 'Zulu',
+    country: 'South Africa',
+    region: 'ZA',
+    shops:
+      'lib/regions/suppliers.js lists South African shops, which sell in English; read what the bag prints, and Zulu craft sources (ukhamba, KwaZulu-Natal potters) for the everyday words (ubumba, ukubumba, imbiza, ukushisa).',
+    termbank:
+      "Doke and Vilakazi's Zulu–English Dictionary and the Oxford isiZulu–English school dictionary; PanSALB's isiZulu National Lexicography Unit and the Department of Sport, Arts and Culture's term lists",
+    kilns:
+      "Durban University of Technology's and KwaZulu-Natal potters' pages, which write kiln words in English: keep i-kiln and i-cone as prefixed loans with a Zulu gloss at first use; never uhhavini (a kitchen oven) for a kiln.",
+    law: "South Africa's laws are published in English: give the Zulu words for their ideas (ukuphepha emsebenzini, uthuli, ushevu), never added figures; who to call only as lib/regions/safety.js prints it for ZA (10177, 10111, 112; 0861 555 777). Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the dictionaries and term lists of Zulu ({TERMBANK}); IATE has no Zulu. For software conventions, Microsoft's isiZulu terminology and Google's interface.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/zu.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Zulu has the plain notice.',
+        'Loans, abbreviations and names take their noun prefix with a hyphen and keep their spelling (i-glaze, ama-glaze, i-UMF, ku-cone 6, eNingizimu Afrika); give each loan its class.',
+        'Register: the singular (u-) for one reader; buttons in the imperative (Londoloza, Susa, Khansela).',
+        'Numbers: digits 0–9, decimal point (1.5), thousands with a comma (12,500 g), the 24-hour clock (20:00).',
+        'Plural forms: CLDR zu `one` covers 0 and 1: `one` keeps `#`; where the English `one` has no `#`, add `=1` and keep `one` with `#`.',
+        'Law terms: "at most" okungeqile ku-; "less than" ngaphansi kuka-; "at least" okungenani. Keep them apart.',
+        'Lead is umthofu: write umthofu (lead, Pb) at first use on each page and keep (Pb) in every warning. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/zu.md. Prefixed loans with a hyphen (i-glaze).',
+        'Register: the singular u-; buttons as the style sheet gives them.',
+        'Numbers: digits 0–9; 1.5; 12,500 g; 1222 °C as the English writes it; 20:00 on the 24-hour clock.',
+        'Plural forms: `one` keeps `#` (it shows for 0); `=1` where the English `one` has no `#`.',
+        'Never glue a prefix to a placeholder ({name}); put a noun before it.',
+        'Law terms: "at most" okungeqile ku-, never ngaphansi kuka- ("less than"). Lead as umthofu (lead, Pb); warnings as strong as the English; no added kumele, nanini, njalo.'
+      ],
+      review: [
+        'Zulu: "at most" and "no more than" are okungeqile ku-, never ngaphansi kuka-. Check every one in the food-contact, silica and safety text.',
+        'Zulu: prefixed loans with a hyphen and the right class agreement; plural `one` keeps `#`, with `=1` where needed; digits 0–9.',
+        'Zulu: lead written umthofu (lead, Pb) in every warning; a kiln never uhhavini; glaze never upende; warnings not softened.'
+      ],
+      backtranslate: [
+        'okungeqile ku- means "at most" (the limit itself passes); ngaphansi kuka- means "less than" (it does not). Translate each back exactly as it reads.',
+        'Words of emphasis and obligation (kumele, nanini, njalo, akufanele) are translated back as strongly as they read.'
+      ]
+    }
+  },
+  ig: {
+    language: 'Igbo',
+    country: 'Nigeria',
+    region: 'NG',
+    shops:
+      'lib/regions has no Nigeria region yet. Nigerian studio supplies are sold in English; read what the bag prints, and Igbo craft sources (Ishiagu, Inyi, Afikpo potters) for the everyday words (ụrọ, ite, ọkpụ ite).',
+    termbank:
+      "Echeruo's Igbo–English Dictionary and Kay Williamson's Igbo–English Dictionary; the Society for Promoting Igbo Language and Culture's standard orthography and Igbo Metalanguage",
+    kilns:
+      "the University of Nigeria, Nsukka's ceramics pages, which write kiln words in English: keep kiln and cone as loans with an Igbo gloss at first use; never ekwu (the cooking hearth) for a kiln.",
+    law: "Nigeria's laws are published in English: give the Igbo words for their ideas (nchekwa n'ebe ọrụ, uzuzu, nsí), never added figures; no Nigerian emergency number is confirmed, so name none. Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the dictionaries of Igbo ({TERMBANK}); IATE has no Igbo. For software conventions, Google's and Microsoft's Igbo interfaces.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/ig.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Igbo has the plain notice.',
+        'The dotted letters ị ọ ụ ṅ (precomposed, NFC) are letters of their own, never i o u n; tone marks only where two words would be confused in a warning.',
+        'Glaze chemistry has no Igbo terms: English loans (glaze, kiln, cone, frit, feldspar, UMF, LOI, SG) with a short Igbo gloss at first use.',
+        'Register: the singular gị / imperative for one reader.',
+        'Numbers: digits 0–9, decimal point (1.5), thousands with a comma (12,500 g), the 24-hour clock (20:00).',
+        'Plural forms: CLDR ig has only `other`: one form with `#`.',
+        'Law terms: "at most" agaghị karịa; "less than" erughị; "at least" opekata mpe. Keep them apart.',
+        'No settled Igbo word for the metal lead was found: write lead (Pb) as a loan, the symbol in every warning, unless a source gives one. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/ig.md. ị ọ ụ ṅ always (precomposed); NFC.',
+        'Register: gị / the imperative; buttons as the style sheet gives them (Chekwaa, Hichapụ, Kagbuo).',
+        'Numbers: digits 0–9; 1.5; 12,500 g; 1222 °C as the English writes it; 20:00 on the 24-hour clock.',
+        'Plural forms: only `other`, with `#`.',
+        'Law terms: "at most" agaghị karịa, never erughị ("less than"). Lead as lead (Pb); warnings as strong as the English; no added ga-adịrịrị, mgbe niile, ọ dịghị mgbe.'
+      ],
+      review: [
+        'Igbo: "at most" and "no more than" are agaghị karịa, never erughị. Check every one in the food-contact, silica and safety text.',
+        'Igbo: ị ọ ụ ṅ never written as i o u n; precomposed, NFC; digits 0–9 and the 24-hour clock; plural only `other`.',
+        'Igbo: lead written with (Pb) in every warning; a kiln never ekwu; warnings not softened.'
+      ],
+      backtranslate: [
+        'agaghị karịa means "at most" (the limit itself passes); erughị means "less than" (it does not). Translate each back exactly as it reads.',
+        'A word missing its dots (o for ọ) may read as another word: translate what is written, and report it.',
+        'Words of emphasis and obligation (ga-adịrịrị, mgbe niile, ọ dịghị mgbe) are translated back as strongly as they read.'
+      ]
+    }
+  },
+  so: {
+    language: 'Somali',
+    country: 'Somalia, Djibouti, Ethiopia and Kenya',
+    region: 'KE',
+    shops:
+      'lib/regions has only Kenya (KE) of these countries, and no shop in it; studio supplies there are sold in English. Read what the bag prints, and Somali craft sources for the everyday words (dhoobo, dheri, weel, dabqaad).',
+    termbank:
+      "Zorc and Osman's Somali–English Dictionary and the Somali Academy's word lists; BBC Somali's usage for health and science words",
+    kilns:
+      'there are no Somali ceramics pages: keep kiln and cone as loans with a Somali gloss at first use, and gub / gubid for firing; never burjiko (a cooking stove) for a kiln.',
+    law: "Somalia's, Djibouti's, Ethiopia's and Kenya's laws are not published in Somali: give the Somali words for their ideas (badbaadada shaqada, boodh, sun), never added figures; who to call only as lib/regions/safety.js prints it (Kenya 922); no number elsewhere is confirmed. Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the dictionaries of Somali ({TERMBANK}); IATE has no Somali. For software conventions, Google's and Microsoft's Somali interfaces.",
+    notes: {
+      glossary: [
+        'Style sheet: docs/translations/so.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Somali has the plain notice.',
+        "The 1972 Latin alphabet (c, x, q, dh, kh, sh; the glottal stop as ASCII '), long vowels doubled; NFC.",
+        'Glaze chemistry has no Somali terms: English loans (glaze, kiln, cone, frit, feldspar, UMF, LOI, SG) with a short Somali gloss at first use; the article suffix after a hyphen (glaze-ka, UMF-ta).',
+        'Register: the singular imperative for one reader.',
+        'Numbers: digits 0–9, decimal point (1.5), thousands with a comma (12,500 g), the 24-hour clock (20:00), never "8-da fiidnimo".',
+        'Plural forms: `one` (1 only) and `other`, each in full (Somali plurals change the noun).',
+        'Law terms: "at most" ugu badnaan / aan ka badnayn; "less than" ka yar; "at least" ugu yaraan. Keep them apart.',
+        'Lead is rasaas, which is also bullets and ammunition: write rasaas (lead, Pb) at first use on each page and keep (Pb) in every warning. Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        'Style sheet and glossary: docs/translations/so.md.',
+        'Register: the singular imperative; buttons as the style sheet gives them (Kaydi, Tirtir, Jooji).',
+        'Numbers: digits 0–9; 1.5; 12,500 g; 1222 °C as the English writes it; 20:00 on the 24-hour clock.',
+        'Never put the article suffix on a placeholder ({name}-ka); put a noun before it.',
+        'Law terms: "at most" ugu badnaan / aan ka badnayn, never ka yar ("less than"). Lead as rasaas (lead, Pb); warnings as strong as the English; no added waa inaad, marnaba, had iyo jeer.'
+      ],
+      review: [
+        'Somali: "at most" and "no more than" are ugu badnaan / aan ka badnayn, never ka yar. Check every one in the food-contact, silica and safety text.',
+        'Somali: the 1972 spelling (c, x, dh; long vowels doubled); digits 0–9 and the 24-hour clock; article suffixes after a hyphen on loans.',
+        'Somali: lead written rasaas (lead, Pb) in every warning; a kiln never burjiko; glaze never rinji; warnings not softened.'
+      ],
+      backtranslate: [
+        'ugu badnaan and aan ka badnayn mean "at most" (the limit itself passes); ka yar means "less than" (it does not). Translate each back exactly as it reads.',
+        'rasaas may read as "bullets": if a sentence about lead reads so, report it.',
+        'Words of emphasis and obligation (waa inaad, marnaba, had iyo jeer) are translated back as strongly as they read.'
+      ]
+    }
+  },
+  qu: {
+    language: 'Quechua',
+    country: 'Peru and Bolivia',
+    region: 'PE',
+    shops:
+      'lib/regions has no Peru or Bolivia region yet. Andean studio supplies are sold in Spanish: read what the bag prints (esmalte, feldespato, caolín, frita), docs/translations/es-419.md for the Spanish terms, and Quechua sources for the everyday words (mitu, manka, saña, ruphachiy).',
+    termbank:
+      "the Academia Mayor de la Lengua Quechua's Diccionario Quechua–Español–Quechua (Cusco) and Peru's Ministry of Education's Manual de escritura quechua sureño (the official three-vowel alphabet); docs/translations/es-419.md for the Spanish loans",
+    kilns:
+      "Peruvian and Bolivian potters (Pucará, Quinua, Chulucanas) write kiln words in Spanish: keep horno, cono and the other Spanish terms as loans, with Quechua suffixes joined to them (hornopi); ruphachiy for firing; never q'uncha (the kitchen hearth) for a kiln.",
+    law: "Peru's and Bolivia's laws are published in Spanish (Quechua editions exist of the constitutions only): give the Quechua words for their ideas, with the Spanish term in brackets where needed, never added figures; no emergency number for Peru, Bolivia or Ecuador is confirmed, so name none. Where the English names EU law (Directive 84/500/EEC, CLP), describe it plainly, keeping the number;",
+    terms:
+      "the term banks of Quechua ({TERMBANK}); IATE has no Quechua. For software conventions, Microsoft's Quechua (Peru) language pack and Google's Quechua interface.",
+    notes: {
+      glossary: [
+        "Style sheet: docs/translations/qu.md exists already (start from it; add, do not rewrite). Every row with no source read is **Native check**. Quechua has the plain notice and, by the owner's decision, extra review.",
+        "Southern Quechua, Cusco-Collao (aspirates and ejectives written: ph, qh, p', q'), in Peru's official three-vowel alphabet (a i u; e and o only in Spanish loans and names). Ayacucho forms only in Notes.",
+        'Glaze chemistry has no Quechua terms: Spanish loans as docs/translations/es-419.md gives them (esmalte, horno, cono, frita, feldespato), never English ones; Quechua suffixes join a loan directly (esmaltekuna) and an abbreviation or number after a hyphen (UMF-ta, cono 6-kama).',
+        'Register: the singular imperative -y for buttons (Waqaychay, Pichay); polite -ykuy in requests.',
+        'Evidentials: the direct -mi / -n for the app\'s facts; never the reportative -si ("they say") in a safety warning.',
+        'Numbers: digits 0–9, figures as the English writes them (1.5; 12,500 g; 1222 °C), the 24-hour clock (20:00).',
+        'Plural forms: `one` (1 only) and `other` (CLDR qu); -kuna not after a number.',
+        'Law terms: "at most" … kama (aswanqa); "less than" … manta pisi; "at least" pisimanta pisi. Keep them apart, with the Spanish (como máximo, menos de, como mínimo) in brackets where the sentence is a limit.',
+        'Lead is titi (also tin in some areas): write titi (plomo, Pb) at first use on each page and keep (Pb) in every warning. Poison is miyu, never bare hampi (medicine). Lead, barium and silica warnings never softened.'
+      ],
+      translate: [
+        "Style sheet and glossary: docs/translations/qu.md. Southern Quechua, Cusco-Collao, three-vowel spelling; the ejectives' apostrophe ASCII '.",
+        'Spanish loans for glaze terms (esmalte, horno, cono), never English; suffixes as the style sheet gives them; never a suffix glued to a placeholder.',
+        'Numbers: digits 0–9; figures as the English writes them; 20:00 on the 24-hour clock.',
+        'Plural forms: `one` and `other`, each in full.',
+        'The direct evidential -mi / -n in safety text, never -si.',
+        'Law terms: "at most" … kama, never … manta pisi ("less than"), with (como máximo) in brackets. Lead as titi (plomo, Pb); poison miyu; warnings as strong as the English; no added ama hayk\'aqpas, sapa kuti, hinapuni.'
+      ],
+      review: [
+        'Quechua: "at most" and "no more than" are … kama (como máximo), never … manta pisi. Check every one in the food-contact, silica and safety text.',
+        "Quechua: Southern Quechua, Cusco-Collao; three vowels (e, o only in Spanish loans); ejectives with ASCII '; Spanish loans, not English; digits 0–9.",
+        'Quechua: lead written titi (plomo, Pb) in every warning; poison miyu, never hampi; no reportative -si in a warning; warnings not softened.',
+        'Quechua (extra review): a second reviewer reads every safety and food-contact part on its own.'
+      ],
+      backtranslate: [
+        '… kama means "up to, at most" (the limit itself passes); … manta pisi means "less than" (it does not). Translate each back exactly as it reads.',
+        'hampi means medicine: if a warning about poison reads so, report it. The reportative -si ("they say") in a warning is a difference: report it.',
+        'titi may read as "tin": if a sentence about lead reads so, report it.',
+        "Words of emphasis and obligation (ama hayk'aqpas, sapa kuti, -na-n) are translated back as strongly as they read."
+      ]
+    }
   }
 };
 

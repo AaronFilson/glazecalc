@@ -59,6 +59,19 @@
   // The subscripts and superscripts, arrows and math signs.
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C, U+2190-21FF, U+2200-22FF;
 }
+// The letters of Hausa (ɓ ɗ ƙ ƴ), Igbo (ṅ) and Yoruba (ṣ, ḿ) that Lora lacks (waves L3 and L4,
+// scratch/round10/c-l34/intl-and-fonts.mjs, 2026-11-01): Lora has ị ọ ụ ẹ and the combining tone marks, so only
+// these come from Noto Serif's Latin Extended face, and only a page with one of them fetches it. Without it each
+// device fell back to a font of its own (Georgia lacks them) in the middle of a word.
+@font-face {
+  font-family: 'Noto Serif Fill';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-latin-ext-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+0181, U+018A, U+0198-0199, U+01B3-01B4, U+0253, U+0257, U+1E3E-1E3F, U+1E44-1E45, U+1E62-1E63;
+}
 // The subscripts and superscripts only, ahead of Lora (--gc-font): the same math face cut to just them (42
 // signs, 7 kB, not the whole 65 kB file every home page asked for early to set K₂O and Al₂O₃), weights kept.
 // Made with fontTools 4.60.1 from @fontsource-variable/noto-serif 5.3.0 (OFL, THIRD-PARTY-NOTICES.md); make

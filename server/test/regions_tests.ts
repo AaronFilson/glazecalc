@@ -1930,6 +1930,24 @@ describe('Latin America and Africa', () => {
     }
   });
 
+  it("waves L3 and L4: each language's plural rules and figures as its style sheet records them", () => {
+    // docs/translations/<code>.md: Zulu's `one` takes 0 (so =1 where the English `one` has no #), Yoruba and Igbo
+    // have only `other`, the rest one (1 only) and other; Quechua takes English's.
+    const plurals = (code: string) =>
+      [0, 1, 2].map((n) => new Intl.PluralRules(languages.textLanguage(code)).select(n));
+    expect(['af', 'ha', 'so', 'qu'].map(plurals)).to.eql(Array(4).fill(['other', 'one', 'other']));
+    expect(plurals('zu')).to.eql(['one', 'one', 'other']);
+    expect([plurals('yo'), plurals('ig')]).to.eql([Array(3).fill('other'), Array(3).fill('other')]);
+    // All write 0–9; Afrikaans a decimal comma and a space for thousands, the others as English, and Bolivia's
+    // Quechua as Bolivia's Spanish (the reader's region decides).
+    const shown = (locale: string) => new Intl.NumberFormat(locale).format(1234.5);
+    expect(shown('af-ZA')).to.equal('1 234,5');
+    for (const locale of ['ha-NG', 'yo-NG', 'zu-ZA', 'ig-NG', 'so-SO', 'qu-PE']) {
+      expect(shown(locale), locale).to.equal('1,234.5');
+    }
+    expect(shown('qu-BO')).to.equal('1.234,5');
+  });
+
   it('gives each emergency number read on an official page, and only the poison lines confirmed', () => {
     const numbers = (code: string) => {
       const shown = safety.shownFor(code)!;

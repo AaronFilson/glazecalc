@@ -427,6 +427,32 @@ describe('translations', () => {
       expect(languageOfTag('am-ET', ['en', 'am-XI'])).toBeNull();
     });
 
+    it("finds waves L3 and L4's languages for their countries' tags, only once they are offered", () => {
+      const tags: [string, string][] = [
+        ['af-ZA', 'af'],
+        ['af-NA', 'af'],
+        ['ha-NG', 'ha'],
+        ['ha-NE', 'ha'],
+        ['yo-NG', 'yo'],
+        ['zu-ZA', 'zu'],
+        ['ig-NG', 'ig'],
+        ['so-SO', 'so'],
+        ['so-DJ', 'so'],
+        ['so-ET', 'so'],
+        ['so-KE', 'so'],
+        ['qu-PE', 'qu'],
+        ['qu-BO', 'qu'],
+        ['qu-EC', 'qu']
+      ];
+      const all = ['en', 'af', 'ha', 'yo', 'zu', 'ig', 'so', 'qu'];
+      expect(tags.map(([tag]) => languageOfTag(tag, ['en', 'fr', 'es-419']))).toEqual(tags.map(() => null));
+      expect(tags.map(([tag]) => languageOfTag(tag, all))).toEqual(tags.map(([, code]) => code));
+      // Each only for its own language: Afrikaans is not Dutch, and South Africa's English stays English.
+      expect(languageOfTag('nl-NL', all)).toBeNull();
+      expect(languageOfTag('en-ZA', all)).toBe('en');
+      expect(languageOfTag('zu-ZA', ['en', 'af'])).toBeNull();
+    });
+
     it("gives the pseudo-Kannada Kannada's plural rules, where one is for 0 as well as 1, and the pseudo-Tamil Tamil's", () => {
       const message = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'kn-XG');
       const kannada = new IcuTranspiler();
