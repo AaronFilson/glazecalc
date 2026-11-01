@@ -13,7 +13,7 @@ Kichocheo huorodhesha malighafi, kama feldspar, whiting na kaolini. Tanuruni, se
 - **Flux** (viyeyushi) hushusha kiwango cha kuyeyuka hadi kile ambacho tanuru inaweza kufikia. **Alkali**, zinazoandikwa **R₂O**, ni oksidi za sodiamu, potasiamu na lithiamu (Na₂O, K₂O, Li₂O); hufanya kazi kuanzia koni 06 hadi moto wa kati na moto mkali. **Alkali-ardhi**, zinazoandikwa **RO**, ni oksidi za kalsiamu, magnesiamu, bariamu na strontiamu (CaO, MgO, BaO, SrO), pamoja na oksidi ya zinki (ZnO) iliyowekwa kando yake; hufanya kazi vizuri zaidi kuanzia koni 5 hadi koni 10. Herufi R inawakilisha metali yoyote ya familia hiyo.
 - **Alumina** (Al₂O₃) ni **kiimarisha**. Hufanya myeyuko uwe mzito ili ubaki kwenye kuta zilizosimama, na huongeza ugumu na uimara. Onyo la Glazy: ikiwa alumina ni ndogo mno “glaze yako inaweza kutiririka; ikiwa nyingi mno inaweza kufanya myeyuko uwe mzito hadi kuwa matte”. Alumina hutoka hasa kwenye udongo na feldspar.
 
-**Boroni** (B₂O₃) haiko wazi upande mmoja. Wanakemia huiweka kati ya vijenzi vya kioo, lakini kwenye joto la studio hufanya kazi kama flux, na wafinyanzi huichukulia hivyo. Ni muhimu sana kwenye koni 5–6 na haihitajiki kwenye moto mkali. (Koni, jina wanalotumia wafinyanzi kwa uchomaji, zinaelezwa hapa chini.)
+**Boroni** (B₂O₃) haiko wazi upande mmoja. Wanakemia huiweka kati ya vijenzi vya kioo, lakini kwenye joto la karakana hufanya kazi kama flux, na wafinyanzi huichukulia hivyo. Ni muhimu sana kwenye koni 5–6 na haihitajiki kwenye moto mkali. (Koni, jina wanalotumia wafinyanzi kwa uchomaji, zinaelezwa hapa chini.)
 
 > [!NOTE]
 > Njia moja ya kukumbuka: silika ndiyo kioo, flux huiruhusu iyeyuke kwenye joto ambalo tanuru yako inaweza kufikia, na alumina huifanya iwe nzito ili ibaki mahali ulipoiweka.
@@ -71,9 +71,9 @@ Label: Viwango vya uchomaji
 | Moto mkali   | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware na porcelaini      |
 
 > [!NOTE]
-> Taja na panga uchomaji wako kwa koni, na uchukulie joto kuwa makadirio. **Koni ya ushahidi (witness cone)** kwenye rafu kati ya vyungu, au **kifurushi cha koni (cone pack)** cha koni tatu (koni ya mwongozo, ya uchomaji na ya ulinzi), huonyesha kazi ya joto ambayo vyungu vyako vilipata kweli.
+> Taja na panga uchomaji wako kwa koni, na uchukulie joto kuwa makadirio. **Koni shahidi (witness cone)** kwenye rafu kati ya vyungu, au **kifurushi cha koni (cone pack)** cha koni tatu (koni ya mwongozo, ya uchomaji na ya ulinzi), huonyesha kazi ya joto ambayo vyungu vyako vilipata kweli.
 
-Joto lililochapishwa hutofautiana. Glazy inatoa moto mkali, koni 9–11, kuwa takriban {{2336–2390 °F; 1280–1310 °C}}, inayolingana na safu ya haraka ya Orton, na Digitalfire inaripoti kuwa tanuru nyingi hufikia koni 6 kwa takriban {{2200 °F; 1204 °C}}. Ushauri wetu: tumia viwango vya kasi ya kati vya Orton, kama mwongozo huu unavyofanya, panga kwa koni, na uache koni ya ushahidi iamue.
+Joto lililochapishwa hutofautiana. Glazy inatoa moto mkali, koni 9–11, kuwa takriban {{2336–2390 °F; 1280–1310 °C}}, inayolingana na safu ya haraka ya Orton, na Digitalfire inaripoti kuwa tanuru nyingi hufikia koni 6 kwa takriban {{2200 °F; 1204 °C}}. Ushauri wetu: tumia viwango vya kasi ya kati vya Orton, kama mwongozo huu unavyofanya, panga kwa koni, na uache koni shahidi iamue.
 
 Nje ya Amerika Kaskazini, wasambazaji mara nyingi hutoa °C badala ya koni. Hermann Seger alibuni koni za kisasa, zilizotumika kwa mara ya kwanza Berlin mwaka 1886, na Uingereza ina koni zake za Staffordshire; nambari zake zisichukuliwe kuwa zinalingana na za Orton, na hatukupata jedwali la kubadilisha. [Kuchoma katika tanuru rahisi](/guides/firing) inaeleza koni kwa undani zaidi.
 
@@ -301,7 +301,7 @@ Kila tanuru, ikiwemo ya umeme, hutoa moshi, kwa hiyo ipitishie hewa nje. [Kuchan
 ## Faharasa {#glossary}
 
 Kiongezo (additive)
-: Kitia rangi, kiziba mwanga au kisimamisha kinachoongezwa juu ya 100 ya kichocheo.
+: Kitia rangi, kizuia mwanga au kisimamisha kinachoongezwa juu ya 100 ya kichocheo.
 
 Alumina (Al₂O₃)
 : Kiimarisha kikuu: huzuia kutiririka na huongeza ugumu. Hutoka kwenye udongo na feldspar.
@@ -328,7 +328,7 @@ Kitia rangi na stain (colorant and stain)
 : Oksidi ya metali au kaboneti inayotia glaze rangi; stain ni kitia rangi cha kiwandani, thabiti zaidi.
 
 Koni (cone)
-: Piramidi ya kauri iliyopimwa inayopinda kwenye kazi ya joto fulani. Koni ya ushahidi huonyesha vyungu vilipata nini.
+: Piramidi ya kauri iliyopimwa inayopinda kwenye kazi ya joto fulani. Koni shahidi huonyesha vyungu vilipata nini.
 
 Crawling
 : Glaze kujivuta na kuwa shanga wakati wa uchomaji, ikiacha udongo wazi.

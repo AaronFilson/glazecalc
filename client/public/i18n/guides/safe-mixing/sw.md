@@ -33,9 +33,9 @@ Nchi kadhaa wanachama wa EU huweka viwango vya chini kuliko vya EU. Kiwango cha 
 ::silica-limit
 
 > [!NOTE]
-> Hivi ni viwango vya mahali pa kazi. Vinawabana waajiri, kwa hiyo hakuna anayemkagua mfinyanzi anayefanya kazi peke yake nyumbani, ingawa studio za jamii na shule zenye wafanyakazi kwa kawaida zinahusika (angalia sheria za eneo lako). Vumbi ni lilelile nyumbani, na viwango hivi vinaonyesha ukubwa wa hatari: sehemu 25 hadi 100 za milioni ya gramu katika kila mita ya ujazo ya hewa, kwa wastani wa siku.
+> Hivi ni viwango vya mahali pa kazi. Vinawabana waajiri, kwa hiyo hakuna anayemkagua mfinyanzi anayefanya kazi peke yake nyumbani, ingawa karakana za jamii na shule zenye wafanyakazi kwa kawaida zinahusika (angalia sheria za eneo lako). Vumbi ni lilelile nyumbani, na viwango hivi vinaonyesha ukubwa wa hatari: sehemu 25 hadi 100 za milioni ya gramu katika kila mita ya ujazo ya hewa, kwa wastani wa siku.
 
-Karibu hakuna aliyepima vumbi katika studio za wapenda ufinyanzi, kwa hiyo tunapendekeza uchukulie kila kazi ya unga mkavu kuwa kazi yenye vumbi.
+Karibu hakuna aliyepima vumbi katika karakana za wapenda ufinyanzi, kwa hiyo tunapendekeza uchukulie kila kazi ya unga mkavu kuwa kazi yenye vumbi.
 
 ## Tabia muhimu zaidi {#habits}
 
@@ -63,7 +63,7 @@ Kinga kubwa zaidi hutokana na tabia, si vifaa. Ushauri wa HSE kwa viwanda vya uf
 2. Changanya unga chini ya kofia yenye kivuta hewa, au nje ambapo hakuna upepo, mbali na watu wengine; vaa barakoa ya kupumua katika hali zote mbili.
 3. Ndani bila kofia: barakoa ya kupumua, kuchota kwa upole, vifuniko vimefungwa, na kusafisha kwa maji mara moja.
 
-Mpangilio huu ni pendekezo letu, uliojengwa juu ya kanuni ya HSE ya kuepuka unga kwanza. Kwa kupima na kuchanganya hatua kwa hatua, tazama [Kutengeneza glaze](/guides/making-a-glaze).
+Mpangilio huu ni pendekezo letu, uliojengwa juu ya kanuni ya HSE ya kuepuka unga kwanza. Kwa kupima na kuchanganya hatua kwa hatua, tazama [Jinsi ya kutengeneza glaze](/guides/making-a-glaze).
 
 ## Barakoa za kupumua {#respirators}
 
@@ -80,7 +80,7 @@ Label: Madaraja ya barakoa za kupumua
 | Uingereza na EU          | FFP2              | FFP3          | EN 149 kwenye barakoa za kutupwa; nusu-barakoa za EN 140 zenye vichujio vya EN 143 P2 au P3 |
 | Australia na New Zealand | P2                | P3            | AS/NZS 1716                                                                                 |
 
-Daraja la juu huchuja sehemu kubwa zaidi ya chembe laini. Vyanzo havikubaliani juu ya kiasi ambacho P3 ya Australia huchuja (angalau 99%, au angalau 99.95%), kwa hiyo nunua daraja lililothibitishwa linalouzwa katika eneo lako. **Nusu-barakoa** inayotumika tena (inayofunika pua na mdomo, yenye vichujio vinavyobadilishwa) yenye vichujio vya P100 (P3 nje ya Marekani) ni chaguo la kawaida studioni.
+Daraja la juu huchuja sehemu kubwa zaidi ya chembe laini. Vyanzo havikubaliani juu ya kiasi ambacho P3 ya Australia huchuja (angalau 99%, au angalau 99.95%), kwa hiyo nunua daraja lililothibitishwa linalouzwa katika eneo lako. **Nusu-barakoa** inayotumika tena (inayofunika pua na mdomo, yenye vichujio vinavyobadilishwa) yenye vichujio vya P100 (P3 nje ya Marekani) ni chaguo la kawaida karakanani.
 
 ### Kukaa na kuziba vizuri
 
@@ -95,7 +95,7 @@ Barakoa inayovuja huingiza vumbi kuzunguka kingo zake, vyovyote liwavyo daraja l
 
 ### Wakati wa kuivaa
 
-HSE inasema barakoa ya kupumua “kwa kawaida haihitajiki” pale kupima na kuchanganya kunapofanyika ndani ya kizimba chenye kivuta hewa, lakini “huenda ikahitajika kwa matengenezo na usafishaji”. Studio nyingi za nyumbani hazina kizimba, kwa hiyo tunapendekeza uvae moja (angalau N95, FFP2 au P2; P100, FFP3 au P3 ni bora zaidi) kila unapofanya mojawapo ya haya:
+HSE inasema barakoa ya kupumua “kwa kawaida haihitajiki” pale kupima na kuchanganya kunapofanyika ndani ya kizimba chenye kivuta hewa, lakini “huenda ikahitajika kwa matengenezo na usafishaji”. Karakana nyingi za nyumbani hazina kizimba, kwa hiyo tunapendekeza uvae moja (angalau N95, FFP2 au P2; P100, FFP3 au P3 ni bora zaidi) kila unapofanya mojawapo ya haya:
 
 - kufungua mifuko au kumimina unga;
 - kupima unga na kuukoroga ndani ya maji;
@@ -121,8 +121,8 @@ Vumbi linalotua kwenye sakafu, meza za kazi na nguo hurudi hewani kila linapogus
 
 ### Nguo, chakula na mikono
 
-- **Vaa nguo za studio pekee** za kitambaa kilichofumwa kwa karibu kisichonasa vumbi, na zifue mara kwa mara (Utah inapendekeza kila wiki), kando na nguo nyingine. HSE inaeleza kwamba nguo zenye vumbi huendelea kukuweka hatarini baada ya kazi kwisha, kwa hiyo tunapendekeza ubadilishe nguo kabla ya kuingia sehemu nyingine za nyumba.
-- **Usile, usinywe wala usivute sigara studioni.** Kama Digitalfire inavyosema, “mtu hapaswi kuchanganya bariamu kaboneti na sukari ya mezani anapotayarisha kahawa”. Weka lebo kwenye kila chombo.
+- **Vaa nguo za karakana pekee** za kitambaa kilichofumwa kwa karibu kisichonasa vumbi, na zifue mara kwa mara (Utah inapendekeza kila wiki), kando na nguo nyingine. HSE inaeleza kwamba nguo zenye vumbi huendelea kukuweka hatarini baada ya kazi kwisha, kwa hiyo tunapendekeza ubadilishe nguo kabla ya kuingia sehemu nyingine za nyumba.
+- **Usile, usinywe wala usivute sigara karakanani.** Kama Digitalfire inavyosema, “mtu hapaswi kuchanganya bariamu kaboneti na sukari ya mezani anapotayarisha kahawa”. Weka lebo kwenye kila chombo.
 - **Nawa mikono** kabla ya kula, kunywa, kuvuta sigara au kutumia choo, na safisha chini ya kucha zako. Tumia maji ya uvuguvugu na sabuni laini badala ya kisafishaji kinachokwaruza.
 
 Kwa kuweka vumbi na malighafi mbali na watoto na wanyama vipenzi, tazama [Usiitie familia yako sumu](/guides/home-safety).
@@ -243,7 +243,7 @@ Picha za tahadhari na kauli za hatari zinatoka kwa **GHS** (Globally Harmonized 
 
 ## Miongozo rasmi kwa eneo {#official-guidance}
 
-Hivi ni vyanzo vya msingi vinavyofaa zaidi kusomwa. Vingi vimeandikwa kwa ajili ya mahali pa kazi, lakini ushauri wake unafaa vizuri pia kwa studio ya nyumbani.
+Hivi ni vyanzo vya msingi vinavyofaa zaidi kusomwa. Vingi vimeandikwa kwa ajili ya mahali pa kazi, lakini ushauri wake unafaa vizuri pia kwa karakana ya nyumbani.
 
 - **Marekani:** [kiwango cha silika](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) cha OSHA (29 CFR 1910.1053) na [ushauri wake kwa watu wanaochagua kuvaa barakoa ya kupumua](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD); [tahadhari ya silikosisi](https://www.cdc.gov/niosh/docs/92-107) ya NIOSH.
 - **Uingereza:** karatasi za COSHH essentials za HSE kwa kauri (COSHH ni kanuni za Control of Substances Hazardous to Health, udhibiti wa vitu hatari kwa afya), hasa [CR1 kuhusu kutayarisha glaze na rangi](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) na [CR5 kuhusu kuzinyunyizia](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), na [misingi ya kupima ukaaji](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm) ya HSE.

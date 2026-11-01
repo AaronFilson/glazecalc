@@ -5,7 +5,7 @@ lead: Jinsi ya kununua, kuhifadhi, kupima na kuchanganya glaze, kupata unene una
 
 ## Kabla ya kuanza {#before-you-start}
 
-Kutengeneza **glaze**{{en: glaze}} (rangi ya kioo) ni kupima **malighafi** za unga (madini yaliyosagwa, udongo na **frit**, ambazo ni kioo kilichotengenezwa kiwandani na kusagwa kuwa unga) kulingana na kichocheo, kisha kuzichanganya na maji kuwa **slurry**, yaani kimiminika kizito cha unga ulioshikiliwa ndani ya maji. Baada ya hapo unaichuja, unarekebisha unene wake, na unaijaribu kwenye udongo wako mwenyewe kabla ya kuiamini kwenye chungu. Kila nambari katika mwongozo huu ni mahali pa kuanzia: maji, unene na chujio vinavyofaa glaze yako ni vile ambavyo majaribio yako yanaonyesha, kwa hiyo andika unachofanya na unachopata.
+Kutengeneza **glaze**{{en: glaze}} (rangi ya kioo) ni kupima **malighafi** za unga (madini yaliyosagwa, udongo na **frit**, ambazo ni kioo kilichotengenezwa kiwandani na kusagwa kuwa unga) kulingana na kichocheo, kisha kuzichanganya na maji kuwa **tope**{{en: slurry}}, yaani kimiminika kizito cha unga ulioshikiliwa ndani ya maji. Baada ya hapo unaichuja, unarekebisha unene wake, na unaijaribu kwenye udongo wako mwenyewe kabla ya kuiamini kwenye chungu. Kila nambari katika mwongozo huu ni mahali pa kuanzia: maji, unene na chujio vinavyofaa glaze yako ni vile ambavyo majaribio yako yanaonyesha, kwa hiyo andika unachofanya na unachopata.
 
 ### Unachohitaji
 
@@ -83,7 +83,7 @@ Weka unga ukiwa mkavu, kwenye vyombo vyenye mifuniko vinavyobaki vimefungwa usip
 
 ### Glaze zilizochanganywa
 
-Glaze iliyo ndani ya ndoo huendelea kubadilika. Malighafi zinazoyeyuka kidogo (nepheline syenite, lithiamu kaboneti, Gerstley Borate, colemanite, strontiamu kaboneti, na frit kwa ujumla) hubadilisha jinsi inavyotiririka kadiri muda unavyopita na zinaweza kukuza fuwele ndogo, zaidi kwenye chumba chenye joto. Gerstley Borate hufanya slurry igande kama jeli, “hata kwa asilimia ndogo”. Maji ya kahawia juu ya glaze iliyotuama ni chuma kilichoyeyuka: yamwage na uweke maji safi. Tarajia pia:
+Glaze iliyo ndani ya ndoo huendelea kubadilika. Malighafi zinazoyeyuka kidogo (nepheline syenite, lithiamu kaboneti, Gerstley Borate, colemanite, strontiamu kaboneti, na frit kwa ujumla) hubadilisha jinsi inavyotiririka kadiri muda unavyopita na zinaweza kukuza fuwele ndogo, zaidi kwenye chumba chenye joto. Gerstley Borate hufanya tope ligande kama jeli, “hata kwa asilimia ndogo”. Maji ya kahawia juu ya glaze iliyotuama ni chuma kilichoyeyuka: yamwage na uweke maji safi. Tarajia pia:
 
 - **Hard-panning**: glaze iliyochanganywa nzito kiasi cha kutohitaji viongezi mara nyingi hutuama na kuwa tabaka gumu. Kuipunguzia unene na kuifanya igande kama jeli husaidia (tazama Uzito linganishi).
 - **Harufu**, kutokana na vijidudu vinavyokula gundi kama CMC. Glaze yenye harufu bado inaweza kutumika ikipakika vizuri.
@@ -93,7 +93,7 @@ Usimimine glaze iliyotumika kurudi kwenye ndoo ya akiba, wala usichovye brashi n
 
 ### Lebo
 
-Weka lebo kwenye kila ndoo kwa kalamu isiyoyeyuka kwa maji. Zakin, akiandikia Ceramic Arts Network, anatoa jina la glaze, kichocheo chake kamili pamoja na vitia rangi, koni, tarehe na, kwenye studio ya pamoja, herufi za kwanza za jina lako. Tunapendekeza uongeze uzito linganishi lengwa na chumvi yoyote ya Epsom au CMC. UT Austin pia hutumia rangi kutambua: ndoo za rangi ya machungwa kwa moto mdogo, nyeupe kwa moto wa kati. Glaze isiyo na lebo ichukulie kama inayoweza kuwa na madini ya risasi (lead, Pb), na usiitumie kwenye vyungu vya chakula.
+Weka lebo kwenye kila ndoo kwa kalamu isiyoyeyuka kwa maji. Zakin, akiandikia Ceramic Arts Network, anatoa jina la glaze, kichocheo chake kamili pamoja na vitia rangi, koni, tarehe na, kwenye karakana ya pamoja, herufi za kwanza za jina lako. Tunapendekeza uongeze uzito linganishi lengwa na chumvi yoyote ya Epsom au CMC. UT Austin pia hutumia rangi kutambua: ndoo za rangi ya machungwa kwa moto mdogo, nyeupe kwa moto wa kati. Glaze isiyo na lebo ichukulie kama inayoweza kuwa na madini ya risasi (lead, Pb), na usiitumie kwenye vyungu vya chakula.
 
 ## Kupima {#weighing}
 
@@ -133,7 +133,7 @@ Maji ni rahisi kuongeza na magumu kutoa, kwa hiyo anza kidogo. Makadirio yetu: a
 - **Blenda.** “Hufanya kazi vizuri sana kwa makundi madogo” (Digitalfire). Iweke kwa ajili ya glaze tu: kamwe isirudi jikoni.
 - **Kimiaji au kijiti.** Chaguo la Zakin pale ambapo hakuna kichanganyio.
 
-Maji pia hutofautiana, na Digitalfire inabainisha kwamba hubadilisha jinsi slurry inavyofanya kazi. Derek Au hutumia maji ya reverse-osmosis kwa sababu maji ya bomba lake ni magumu. Chochote unachotumia, kiandike.
+Maji pia hutofautiana, na Digitalfire inabainisha kwamba hubadilisha jinsi tope linavyofanya kazi. Derek Au hutumia maji ya reverse-osmosis kwa sababu maji ya bomba lake ni magumu. Chochote unachotumia, kiandike.
 
 ### Hatua kwa hatua
 
@@ -165,7 +165,7 @@ Label: Mesh ya chujio
 
 ## Uzito linganishi {#specific-gravity}
 
-**Uzito linganishi** (SG) unakuambia kuna unga kiasi gani ndani ya slurry yako. Ni uzito wa ujazo fulani wa glaze ukigawanywa na uzito wa ujazo uleule wa maji. Maji ni 1.00, na glaze yenye {{SG 1.45}} ina uzito wa 145 g kwa kila 100 mL. Kuchanganya hadi SG iliyopimwa ndiyo njia ya kupata unene uleule, na tabaka lilelile la glaze, kila mara. Haina vipimo, kwa hiyo ni sawa kwa gramu au aunsi.
+**Uzito linganishi** (SG) unakuambia kuna unga kiasi gani ndani ya tope lako. Ni uzito wa ujazo fulani wa glaze ukigawanywa na uzito wa ujazo uleule wa maji. Maji ni 1.00, na glaze yenye {{SG 1.45}} ina uzito wa 145 g kwa kila 100 mL. Kuchanganya hadi SG iliyopimwa ndiyo njia ya kupata unene uleule, na tabaka lilelile la glaze, kila mara. Haina vipimo, kwa hiyo ni sawa kwa gramu au aunsi.
 
 ### Ipime kwa kupima 100 mL
 
@@ -183,11 +183,11 @@ Vyanzo havikubaliani, hasa kuhusu kupaka kwa brashi na kunyunyizia, ambapo muuza
 Table: Malengo ya uzito linganishi, ambapo vyanzo havikubaliani
 Label: Malengo ya uzito linganishi
 
-| Matumizi          | Digitalfire na Glazy                                                                                                                                                                                | Potclays (Uingereza)                           | Mahali salama pa kuanzia                                                  |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| Kuchovya          | {{SG 1.40}} (kwa kuchovya sekunde 5) hadi {{SG 1.50}} (kwa kuchovya sekunde 1); glaze zilizochanganywa nyumbani zilizoganda kama jeli hufanya vizuri zaidi kwa {{SG 1.43–1.45}}                     | Safi {{SG 1.46–1.48}}; yenye rangi {{SG 1.61}} | {{SG 1.45}}; ipunguzie hadi {{SG 1.43}} na uiganishe kama jeli ikidondoka |
-| Kupaka kwa brashi | {{SG 1.25}} (safi nyembamba) hadi {{SG 1.55}} (maelezo meusi)                                                                                                                                       | {{SG 1.71–1.81}}                               | Fuata bidhaa; tumia gundi ya CMC au kimiminika cha kupakia kwa brashi     |
-| Kunyunyizia       | Hakuna nambari; Hopper, akiandikia Ceramic Arts Network, anasema nyembamba zaidi kwa kiasi kikubwa, pamoja na kimiminisha (deflocculant: kiongezi kinachofanya slurry iwe nyepesi zaidi kutiririka) | {{SG 1.71}}                                    | Hakuna nambari ya kuaminika; nyunyizia tu ndani ya chumba cha kunyunyizia |
+| Matumizi          | Digitalfire na Glazy                                                                                                                                                                              | Potclays (Uingereza)                           | Mahali salama pa kuanzia                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
+| Kuchovya          | {{SG 1.40}} (kwa kuchovya sekunde 5) hadi {{SG 1.50}} (kwa kuchovya sekunde 1); glaze zilizochanganywa nyumbani zilizoganda kama jeli hufanya vizuri zaidi kwa {{SG 1.43–1.45}}                   | Safi {{SG 1.46–1.48}}; yenye rangi {{SG 1.61}} | {{SG 1.45}}; ipunguzie hadi {{SG 1.43}} na uiganishe kama jeli ikidondoka |
+| Kupaka kwa brashi | {{SG 1.25}} (safi nyembamba) hadi {{SG 1.55}} (maelezo meusi)                                                                                                                                     | {{SG 1.71–1.81}}                               | Fuata bidhaa; tumia gundi ya CMC au kimiminika cha kupakia kwa brashi     |
+| Kunyunyizia       | Hakuna nambari; Hopper, akiandikia Ceramic Arts Network, anasema nyembamba zaidi kwa kiasi kikubwa, pamoja na kimiminisha (deflocculant: kiongezi kinachofanya tope liwe jepesi zaidi kutiririka) | {{SG 1.71}}                                    | Hakuna nambari ya kuaminika; nyunyizia tu ndani ya chumba cha kunyunyizia |
 
 Ili kukagua glaze ya kuchovya kwa macho, AMACO huchovya kwa sekunde 5 na hutafuta tabaka lenye unene wa takriban sarafu ya dime ya Marekani. Digitalfire huchoma vigae vilivyochovywa kwa sekunde 5 ili kukagua.
 
@@ -209,7 +209,7 @@ Label: Maji kwa uzito linganishi lengwa
 
 **Chumvi ya Epsom** hufanya glaze igande kidogo kama jeli inaposimama tuli na itiririke tena inapokorogwa. Hii inaitwa kuifanya **flocculating**, na glaze inayofanya hivyo ni **thixotropic**: hupakika kwa usawa zaidi, hudondoka kidogo na hutua kidogo. Digitalfire inapendekeza kuanza kwa takriban 2 g kwa galoni mara SG inapokuwa sahihi (takriban 0.5 g kwa lita, ubadilishaji wetu) na kurekebisha kiasi kila unapochanganya, kwa kuwa hakuna kichocheo kinachopaswa kuweka kipimo. Tunapendekeza kuiyeyusha kwanza kwenye maji kidogo ya moto. Katika mfano wa Digitalfire, glaze yenye {{SG 1.45}} ilidondoka, kwa hiyo maji yaliishusha hadi {{SG 1.43}} na chumvi ya Epsom ikaiganisha kama jeli hadi kuwa kama krimu, nayo ikapakika kwa usawa. Ukaguzi wa haraka: koroga, simama na uangalie. Glaze iliyoganda kama jeli huendelea kusogea kwa takriban sekunde 2 au 3, kisha husimama na kurudi nyuma kidogo.
 
-**Gundi ya CMC** (carboxymethyl cellulose) hufanya slurry ibandike zaidi na ikauke polepole zaidi, na huacha tabaka gumu zaidi linaloshikamana na chungu. Ni muhimu zaidi kwa glaze za kupaka kwa brashi na glaze zenye frit nyingi. Mfano wa Digitalfire huchanganya 3.75 g ndani ya 1000 g za slurry, na lazima iingie kwa blenda. Glaze yenye CMC haitaganda kama jeli kwa chumvi ya Epsom, na kwa kuwa vijidudu hula gundi hiyo, inaweza kubadilika ndani ya ndoo na kuanza kutoa harufu.
+**Gundi ya CMC** (carboxymethyl cellulose) hufanya tope libandike zaidi na likauke polepole zaidi, na huacha tabaka gumu zaidi linaloshikamana na chungu. Ni muhimu zaidi kwa glaze za kupaka kwa brashi na glaze zenye frit nyingi. Mfano wa Digitalfire huchanganya 3.75 g ndani ya 1000 g za tope, na lazima iingie kwa blenda. Glaze yenye CMC haitaganda kama jeli kwa chumvi ya Epsom, na kwa kuwa vijidudu hula gundi hiyo, inaweza kubadilika ndani ya ndoo na kuanza kutoa harufu.
 
 **Bentoniti**, udongo laini sana, husaidia kushikilia chembe nyingine zikiwa zimeelea. Glaze za kuchovya kwa kawaida hutegemea udongo ghafi wa 15 hadi 25% kwa kusudi hili. Kwa kichocheo kinachopungukiwa udongo, takriban 1 hadi 3% ya bentoniti husaidia; Digitalfire inasema glaze yenye udongo zaidi ya 15% haipaswi kuhitaji bentoniti kwa zaidi ya 1% ya uzito wa glaze kavu.
 
@@ -217,7 +217,7 @@ Label: Maji kwa uzito linganishi lengwa
 
 ### Anza kidogo
 
-Derek Au hupanda kwa hatua tatu: jaribio la 50 au 100 g, jaribio la 1 hadi 2 kg likifaulu, kisha kundi la studio la 5 hadi 10 kg. Kwa makadirio yetu, jaribio la 100 g lenye {{SG 1.45}} hutoa takriban 135 mL (takriban 4½ US fl oz) za slurry, za kutosha kuchovya vigae vichache vidogo kwenye kikombe chembamba.
+Derek Au hupanda kwa hatua tatu: jaribio la 50 au 100 g, jaribio la 1 hadi 2 kg likifaulu, kisha kundi la karakana la 5 hadi 10 kg. Kwa makadirio yetu, jaribio la 100 g lenye {{SG 1.45}} hutoa takriban 135 mL (takriban 4½ US fl oz) za tope, za kutosha kuchovya vigae vichache vidogo kwenye kikombe chembamba.
 
 ### Jaribu kwenye udongo wako mwenyewe
 
@@ -229,7 +229,7 @@ Glaze inaweza kuonekana tofauti kabisa kwenye udongo mwingine au tanuru nyingine
 - kila kigae kwenye mzigo uleule wa tanuru
 - alama kwenye kila kigae kabla ya kuchoma, kwa muhuri, kuchonga au penseli ya underglaze.
 
-Tunapendekeza vigae vinavyosimama wima, kwa kuwa kigae bapa huficha glaze inakimbia umbali gani, vyenye ukanda wenye umbile ili kuonyesha glaze inavyokatika kwenye kingo, na mguu usio na glaze. Viweke kila kimoja juu ya sahani ndogo au kipande cha bisque, au juu ya rafu iliyopakwa kiosha-tanuru, ili kunasa matone. Weka **koni ya ushahidi (witness cone)**, koni ndogo ya kauri inayopinda ikishapata joto la kutosha, karibu na vigae ili kuonyesha vilipata nini; [mwongozo wa Kuchoma katika tanuru rahisi](/guides/firing) unaeleza koni. Kipe kila kigae msimbo mfupi, na uuandike kando ya kichocheo kwenye kumbukumbu zako. Willers, akiandikia Ceramic Arts Network, hutumia nambari na herufi, na huandika mfumo wenyewe mwanzoni mwa daftari.
+Tunapendekeza vigae vinavyosimama wima, kwa kuwa kigae bapa huficha glaze inakimbia umbali gani, vyenye ukanda wenye umbile ili kuonyesha glaze inavyokatika kwenye kingo, na mguu usio na glaze. Viweke kila kimoja juu ya sahani ndogo au kipande cha bisque, au juu ya rafu iliyopakwa kiln wash, ili kunasa matone. Weka **koni shahidi (witness cone)**, koni ndogo ya kauri inayopinda ikishapata joto la kutosha, karibu na vigae ili kuonyesha vilipata nini; [mwongozo wa Kuchoma katika tanuru rahisi](/guides/firing) unaeleza koni. Kipe kila kigae msimbo mfupi, na uuandike kando ya kichocheo kwenye kumbukumbu zako. Willers, akiandikia Ceramic Arts Network, hutumia nambari na herufi, na huandika mfumo wenyewe mwanzoni mwa daftari.
 
 ### Line blend
 
@@ -270,7 +270,7 @@ Label: Kiolezo cha kumbukumbu
 | Kichocheo   | Kichocheo na toleo lake; chapa za malighafi na nambari za lot; mbadala wowote                                                                                                                                                                              |
 | Kuchanganya | Tarehe; ukubwa wa kundi; maji yaliyoongezwa, na aina yake (ya bomba, reverse osmosis au ya kuchemshwa na kufupishwa); SG baada ya kuchanganya na SG ya mwisho; chumvi ya Epsom, CMC na bentoniti zilizoongezwa; mesh ya chujio na idadi ya mara za kuchuja |
 | Upakaji     | Mchanganyiko wa udongo; koni ya bisque; kuchovya, kupaka kwa brashi au kumimina; muda wa kuchovya au idadi ya tabaka; unene ukiwa mkavu                                                                                                                    |
-| Uchomaji    | Tanuru na nafasi ya rafu; ratiba ya uchomaji, pamoja na ramp, hold na kupoa; angahewa (oksidesheni au upunguzaji); kile koni ya ushahidi ilichoonyesha, si tu kile tanuru ilichowekwa                                                                      |
+| Uchomaji    | Tanuru na nafasi ya rafu; ratiba ya uchomaji, pamoja na ramp, hold na kupoa; angahewa (oksidesheni au upunguzaji); kile koni shahidi ilichoonyesha, si tu kile tanuru ilichowekwa                                                                          |
 | Matokeo     | Uso na rangi; kutiririka, crazing au pinholes zozote; picha za mbele, nyuma na pembeni; msimbo wa kigae                                                                                                                                                    |
 
 > [!NOTE]

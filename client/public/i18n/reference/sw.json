@@ -49,7 +49,7 @@
     "crumb": "Jedwali la koni",
     "heading": "Jedwali la koni: koni za Orton na SK",
     "lead": "Joto ambalo Glazecalc inatumia kwa koni za pyrometric za Orton na SK, kwa °C na °F, pamoja na kasi ya kupasha joto inayohusika na mahali kila takwimu inapotoka.",
-    "intro": "Koni hupima heatwork, yaani joto na muda pamoja, si joto peke yake. Joto la koni linategemea jinsi tanuru linavyopata joto kwa haraka karibu na mwisho, kwa hiyo kila jedwali hapa chini linataja kasi yake. Weka koni ya ushahidi ndani ya tanuru na uisome, bila kujali jedwali linasema nini. <firing>Jinsi ya kuchagua, kuweka na kusoma koni</firing> kumo katika mwongozo wa kuchoma.",
+    "intro": "Koni hupima kazi ya joto (heatwork), yaani joto na muda pamoja, si joto peke yake. Joto la koni linategemea jinsi tanuru linavyopata joto kwa haraka karibu na mwisho, kwa hiyo kila jedwali hapa chini linataja kasi yake. Weka koni shahidi (witness cone) ndani ya tanuru na uisome, bila kujali jedwali linasema nini. <firing>Jinsi ya kuchagua, kuweka na kusoma koni</firing> kumo katika mwongozo wa kuchoma.",
     "ortonHeading": "Koni za Orton",
     "ortonCaption": "Koni za Orton, 022 hadi 15: koni kubwa zilizopashwa joto kwa {rate} °C kwa saa ({rateF} °F kwa saa)",
     "ortonSource": "Chanzo: {title}, kama ilivyochapishwa upya na {reprinted}.",

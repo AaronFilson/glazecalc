@@ -97,7 +97,7 @@ after a noun that fixes the class ("katika nchi ya {region}", "malighafi iitwayo
 | Library                                   | Maktaba                                        |
 | My materials                              | Malighafi zangu                                |
 | Glazing basics                            | Misingi ya glaze                               |
-| Making a glaze                            | Kutengeneza glaze                              |
+| How to make a glaze                       | Jinsi ya kutengeneza glaze                     |
 | Safe mixing and ventilation               | Kuchanganya kwa usalama na hewa safi           |
 | Firing a basic kiln                       | Kuchoma katika tanuru rahisi                   |
 | Don't poison your family                  | **Usiitie familia yako sumu**                  |
@@ -246,6 +246,25 @@ Orton, Seger, HEPA, FFP2/FFP3, N95, GHS codes (H350)**; Glazecalc (class 9: "Gla
 | -------- | ---------- | ----------------------------- |
 | passkey  | passkey    | Kept, as Google's sw screens. |
 | SK cones | koni za SK |                               |
+
+### 5.1 Consistency pass (L2, 2026-10-31)
+
+One form per concept across the app, records, reference, guides and emails.
+
+| English                  | sw                                                 | Notes                                                                                        |
+| ------------------------ | -------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| witness cone             | koni shahidi (9/10)                                | "koni shahidi (witness cone)" at first use. Not _koni ya ushahidi_ / _koni ya kuthibitisha_. |
+| heatwork                 | kazi ya joto (heatwork)                            | English in brackets (or show English) at first use, then _kazi ya joto_.                     |
+| leach test               | kipimo cha kuvuja kwa madini                       | "(leach test)" may follow at first use.                                                      |
+| slurry                   | tope (5/6) la glaze                                | "tope (slurry)" at first use; class 5: "tope **li**nabaki". Not bare _slurry_.               |
+| flocculant, deflocculant | kiganisha (flocculant); kimiminisha (deflocculant) | English in brackets at first use. **Native check**                                           |
+| opacifier                | kizuia mwanga (7/8)                                | Not _kiziba mwanga_. **Native check**                                                        |
+| kiln wash                | kiln wash                                          | Loan. Not _kiosha-tanuru_.                                                                   |
+| studio (pottery)         | karakana (9/10)                                    | Not _studio_; place names (Updraft Pottery Studio) and quoted English titles keep "Studio".  |
+| vacuum cleaner           | kisafishaji cha kufyonza vumbi (7/8)               | Not _kivuta-vumbi_. Extraction hoods and booths stay _kivuta hewa_ / _kivuta moshi_.         |
+| kiln sitter              | kiln sitter                                        | Loan. Never glossed _kidhibiti_ (that is the controller).                                    |
+| controller (kiln)        | kidhibiti (7/8)                                    | Electronic controller only.                                                                  |
+| limit timer              | kipima muda cha ukomo (limit timer)                |                                                                                              |
 
 ## 6. Choices for the owner and a native potter
 

@@ -75,7 +75,7 @@ Hizi ni kanuni za jumla za kuzuia sumu zilizotumika kwa glaze. Hakuna kiwango ch
 - Weka karatasi ya data ya usalama ya kila malighafi pamoja nayo, kwenye karatasi au kwenye simu yako.
 - Usiweke kitu chochote cha karakana jikoni: hakuna mifuko, ndoo, zana wala vigae vya majaribio.
 
-Kwa maelezo zaidi kuhusu kununua na kuhifadhi malighafi, tazama [Kutengeneza glaze](/guides/making-a-glaze).
+Kwa maelezo zaidi kuhusu kununua na kuhifadhi malighafi, tazama [Jinsi ya kutengeneza glaze](/guides/making-a-glaze).
 
 ### Takataka za glaze na maji ya kuoshea
 
@@ -90,12 +90,12 @@ Idara ya afya ya Pennsylvania inaeleza tatizo waziwazi: “Vumbi lenye madini ya
 - Nawa mikono kabla ya kula.
 - Badilisha nguo na viatu vya karakana kabla ya kuingia nyumbani.
 - Fua nguo za karakana peke yake, mbali na nguo za familia.
-- Safisha nyumba na gari mara kwa mara kwa kivuta-vumbi cha **HEPA** (chenye kichujio chenye ufanisi mkubwa kinachonasa vumbi laini).
+- Safisha nyumba na gari mara kwa mara kwa kisafishaji cha kufyonza vumbi cha **HEPA** (chenye kichujio chenye ufanisi mkubwa kinachonasa vumbi laini).
 
 ### Kanuni za nyumbani tunazopendekeza
 
 - Usifanye kazi ya udongo wa mfinyanzi au glaze kwenye meza ya jikoni au ya kulia chakula, hata kwa kazi ya haraka.
-- Safisha karakana kwa maji. Ukurasa wa usalama wa ufinyanzi wa chuo kikuu kimoja unasema uepuke kufagia kukiwa kukavu, utumie kivuta-vumbi chenye kichujio cha HEPA tu na upige deki kwa maji kila siku. Pangusa nyuso kwa kitambaa chenye maji baada ya kila kipindi cha kazi pia.
+- Safisha karakana kwa maji. Ukurasa wa usalama wa ufinyanzi wa chuo kikuu kimoja unasema uepuke kufagia kukiwa kukavu, utumie kisafishaji cha kufyonza vumbi chenye kichujio cha HEPA tu na upige deki kwa maji kila siku. Pangusa nyuso kwa kitambaa chenye maji baada ya kila kipindi cha kazi pia.
 - Chukulia vumbi lote la glaze kama vumbi la madini ya risasi, hata kama glaze zako hazina madini ya risasi. Vumbi lenye bariamu, chrome, kobalti au manganisi husafiri hadi nyumbani kwa njia ileile.
 - Sugua mikono na kucha zako kabla ya kumbeba mtoto, kuandaa chakula au kumpapasa mnyama kipenzi.
 - Usiwaache watoto wacheze katika karakana, na usiruhusu iwe njia ya mkato kwenda uani au bustanini.

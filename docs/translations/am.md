@@ -99,6 +99,11 @@ The home-safety title keeps the owner's blunt form, never softened.
 - **ቀለም** is paint, colour or ink: never for glaze. Glaze is the loan **ግላዝ (glaze)**.
 - **አፈር** is soil; potter's clay is **ሸክላ** (also "pottery").
 - ሲሊካ (silica) ≠ ሲሊከን (silicon) ≠ ሲሊኮን (silicone).
+- **pencil ≠ እርሳስ** here: እርሳስ is kept for lead (Pb). An underglaze pencil is **የunderglaze መጻፊያ**; never እርሳስ
+  for a pencil.
+- No Latin word with an Amharic plural suffix for stains ("stainዎች"): write **stain ማቅለሚያዎች**.
+- Colons in running prose, headings and bold labels are **፥**, never the Latin ":" (only a field label ending a
+  string keeps ":") and never ፤ for an English colon.
 
 ## 2. Glossary
 
@@ -106,16 +111,18 @@ Every row **Native check** unless noted.
 
 ### 2.1 Glaze and chemistry
 
-| English                       | am                   | Notes             |
-| ----------------------------- | -------------------- | ----------------- |
-| glaze **show English**        | ግላዝ (glaze)          | Loan.             |
-| unity molecular formula (UMF) | የሴገር ፎርሙላ (UMF)      |                   |
-| loss on ignition (LOI)        | በእሳት የሚጠፋ ክብደት (LOI) |                   |
-| oxide                         | ኦክሳይድ                | School chemistry. |
-| mole                          | ሞል                   | School chemistry. |
-| flux                          | ፍለክስ (flux)          |                   |
-| thermal expansion             | የሙቀት መስፋፋት           |                   |
-| gloss, matte                  | አንጸባራቂ, ደብዛዛ (matte) |                   |
+| English                       | am                   | Notes                       |
+| ----------------------------- | -------------------- | --------------------------- |
+| glaze **show English**        | ግላዝ (glaze)          | Loan.                       |
+| unity molecular formula (UMF) | የሴገር ፎርሙላ (UMF)      |                             |
+| loss on ignition (LOI)        | በእሳት የሚጠፋ ክብደት (LOI) |                             |
+| oxide                         | ኦክሳይድ                | School chemistry.           |
+| mole                          | ሞል                   | School chemistry.           |
+| flux                          | ፍለክስ (flux)          |                             |
+| thermal expansion             | የሙቀት መስፋፋት           |                             |
+| gloss, matte                  | አንጸባራቂ, ደብዛዛ (matte) |                             |
+| opacifier                     | ኦፓሲፋየር (opacifier)   | Loan; not ግልጽነት ቀናሽ, አደብዛዥ. |
+| heatwork                      | የሙቀት ሥራ (heatwork)   | Never bare "heatwork".      |
 
 ### 2.2 Materials
 
@@ -143,34 +150,39 @@ Every row **Native check** unless noted.
 
 ### 2.4 Kilns and firing
 
-| English              | am                        | Notes |
-| -------------------- | ------------------------- | ----- |
-| kiln                 | እቶን                       | Dict. |
-| electric / gas kiln  | የኤሌክትሪክ / የጋዝ እቶን         |       |
-| to fire, firing      | ማቃጠል                      | Dict. |
-| cone                 | ኮን                        | Loan. |
-| kiln shelf           | የእቶን መደርደሪያ               |       |
-| oxidation, reduction | ኦክሲዴሽን, ሪዳክሽን (reduction) |       |
-| cooling              | ማቀዝቀዝ                     |       |
+| English              | am                        | Notes         |
+| -------------------- | ------------------------- | ------------- |
+| kiln                 | እቶን                       | Dict.         |
+| electric / gas kiln  | የኤሌክትሪክ / የጋዝ እቶን         |               |
+| to fire, firing      | ማቃጠል                      | Dict.         |
+| cone                 | ኮን                        | Loan.         |
+| kiln shelf           | የእቶን መደርደሪያ               |               |
+| oxidation, reduction | ኦክሲዴሽን, ሪዳክሽን (reduction) |               |
+| cooling              | ማቀዝቀዝ                     |               |
+| witness cone         | ምስክር ኮን (witness cone)    | Not የምስክር ኮን. |
+| kiln wash            | የእቶን ቅብ (kiln wash)       |               |
 
 ### 2.5 Defects
 
-| English   | am                           |
-| --------- | ---------------------------- |
-| crazing   | crazing (በግላዙ ላይ ጥቃቅን ስንጥቆች) |
-| crawling  | crawling (ግላዙ መሰብሰብ)         |
-| pinholing | pinholes (ጥቃቅን ቀዳዳዎች)        |
-| leaching  | ብረቶች መውጣት (leaching)         |
+| English    | am                           |
+| ---------- | ---------------------------- |
+| crazing    | crazing (በግላዙ ላይ ጥቃቅን ስንጥቆች) |
+| crawling   | crawling (ግላዙ መሰብሰብ)         |
+| pinholing  | pinholes (ጥቃቅን ቀዳዳዎች)        |
+| leaching   | ብረቶች መውጣት (leaching)         |
+| leach test | የብረቶች መውጣት ምርመራ (leach test) |
 
 ### 2.6 Making glaze
 
-| English          | am              |
-| ---------------- | --------------- |
-| batch            | ባች (batch)      |
-| scale            | ሚዛን             |
-| sieve            | ወንፊት; ማጣራት      |
-| specific gravity | SG (አንጻራዊ ክብደት) |
-| test tile        | የሙከራ ንጣፍ        |
+| English           | am                                   |
+| ----------------- | ------------------------------------ |
+| batch             | ባች (batch)                           |
+| scale             | ሚዛን                                  |
+| sieve             | ወንፊት; ማጣራት                           |
+| specific gravity  | SG (አንጻራዊ ክብደት)                      |
+| test tile         | የሙከራ ንጣፍ                             |
+| underglaze pencil | የunderglaze መጻፊያ (underglaze pencil) |
+| hard water        | ብዙ ማዕድን የተሟሟበት ውሃ (hard water)       |
 
 ### 2.7 Health and safety
 
@@ -178,17 +190,18 @@ Never softened: lead, barium and silica warnings read as strongly as the English
 English/digits (Pb, BaCO₃, 0.025 mg/m³). Because machine translation is weak here, the back-translation of every
 safety sentence is compared line by line with the English before go-live.
 
-| English                       | am                       | Notes                                       |
-| ----------------------------- | ------------------------ | ------------------------------------------- |
-| dust                          | አቧራ                      | Dict.                                       |
-| respirable crystalline silica | ወደ ሳንባ የሚገባ ክሪስታል ሲሊካ    |                                             |
-| silicosis                     | ሲሊኮሲስ (የሳንባ በሽታ)         |                                             |
-| respirator                    | የመተንፈሻ ጭምብል (respirator) |                                             |
-| poison, toxic                 | መርዝ; መርዛማ                | Dict.                                       |
-| food safe                     | ለምግብ ደህንነቱ የተጠበቀ         |                                             |
-| lead-free                     | ከእርሳስ (lead) ነጻ          |                                             |
-| at most / no more than        | ቢበዛ; ከ… ያልበለጠ            | "less than" is ከ… ያነሰ: never for "at most". |
-| at least                      | ቢያንስ                     |                                             |
+| English                       | am                              | Notes                                         |
+| ----------------------------- | ------------------------------- | --------------------------------------------- |
+| dust                          | አቧራ                             | Dict.                                         |
+| respirable crystalline silica | ወደ ሳንባ የሚገባ ክሪስታል ሲሊካ           |                                               |
+| silicosis                     | ሲሊኮሲስ (የሳንባ በሽታ)                |                                               |
+| respirator                    | የመተንፈሻ ጭምብል (respirator)        |                                               |
+| poison, toxic                 | መርዝ; መርዛማ                       | Dict.                                         |
+| food safe                     | ለምግብ ደህንነቱ የተጠበቀ                |                                               |
+| lead-free                     | ከእርሳስ (lead) ነጻ                 |                                               |
+| at most / no more than        | ቢበዛ; ከ… ያልበለጠ                   | "less than" is ከ… ያነሰ: never for "at most".   |
+| at least                      | ቢያንስ                            |                                               |
+| safety data sheet (SDS)       | የደህንነት መረጃ ሉህ (SDS); plural ሉሆች | Not …ሰነድ, …ወረቀት. "SDS" alone after first use. |
 
 **Who to call (Ethiopia).** Secondary sources give 907 (ambulance, Red Cross), 991 (police), 939 (fire); one gives 911.
 **None verified on an official Ethiopian page**, so none is in the region data; the translation names only what the
@@ -196,17 +209,18 @@ English and the data print. No poison line found.
 
 ### 2.8 The app's own words (MS; Native check)
 
-| English            | am                                                             |
-| ------------------ | -------------------------------------------------------------- |
-| recipe             | የግላዝ አዘገጃጀት                                                    |
-| Save               | አስቀምጥ                                                          |
-| Delete, Remove     | ሰርዝ, አስወግድ                                                     |
-| Cancel             | ይቅር                                                            |
-| Sign in, Sign out  | ግባ, ውጣ                                                         |
-| Settings           | ቅንብሮች                                                          |
-| account, password  | መለያ, የይለፍ ቃል                                                   |
-| passkey            | የይለፍ ቁልፍ (passkey)                                             |
-| Translation notice | "ይህ ገጽ ከእንግሊዝኛ በAI ተተርጉሟል። ትርጉሙ ደካማ ሊሆን ይችላል፤ እንግሊዝኛውን ይመልከቱ።" |
+| English                | am                                                             |
+| ---------------------- | -------------------------------------------------------------- |
+| recipe                 | የግላዝ አዘገጃጀት                                                    |
+| Save                   | አስቀምጥ                                                          |
+| Delete, Remove         | ሰርዝ, አስወግድ                                                     |
+| Cancel                 | ይቅር                                                            |
+| Sign in, Sign out      | ግባ, ውጣ                                                         |
+| Settings               | ቅንብሮች                                                          |
+| library (of materials) | ቤተ መጻሕፍት (never ቤተ መዛግብት, "archives")                          |
+| account, password      | መለያ, የይለፍ ቃል                                                   |
+| passkey                | የይለፍ ቁልፍ (passkey)                                             |
+| Translation notice     | "ይህ ገጽ ከእንግሊዝኛ በAI ተተርጉሟል። ትርጉሙ ደካማ ሊሆን ይችላል፤ እንግሊዝኛውን ይመልከቱ።" |
 
 ## 3. Never translated
 

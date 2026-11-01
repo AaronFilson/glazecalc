@@ -25,7 +25,7 @@ Label: Masafa ya kuchoma
 | Joto la kati  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Stoneware na porcelaini za tanuru ya umeme         |
 | Joto la juu   | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Hasa stoneware na porcelaini zinazochomwa kwa gesi |
 
-Wasambazaji nchini Uingereza, Ulaya, Australia na New Zealand mara nyingi hutoa joto kwa °C badala ya koni: tafuta koni iliyo karibu zaidi kwenye chati iliyo hapa chini na ithibitishe kwa koni ya kuthibitisha. Koni za Seger na Staffordshire, mfululizo wa zamani wa Ulaya, hazipaswi kudhaniwa kuwa na nambari sawa na za Orton, kwa hiyo mwongozo huu unatumia koni za Orton.
+Wasambazaji nchini Uingereza, Ulaya, Australia na New Zealand mara nyingi hutoa joto kwa °C badala ya koni: tafuta koni iliyo karibu zaidi kwenye chati iliyo hapa chini na ithibitishe kwa koni shahidi. Koni za Seger na Staffordshire, mfululizo wa zamani wa Ulaya, hazipaswi kudhaniwa kuwa na nambari sawa na za Orton, kwa hiyo mwongozo huu unatumia koni za Orton.
 
 ### Kushikilia joto huongeza kazi ya joto
 
@@ -52,12 +52,12 @@ Orton hutengeneza aina nne. Mbili husimama kwenye rafu kuonyesha vyombo vilipata
 Table: Aina nne za koni za Orton
 Label: Aina za koni
 
-| Aina           | Hutumika kwa                     | Jinsi inavyosimama                                                                                            |
-| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Inajisimamia   | Koni ya kuthibitisha kwenye rafu | Msingi uliojengewa ndani huweka urefu, inchi 1¾ (44 mm), na mwegemeo wa 8°; hakuna kishikilio kinachohitajika |
-| Kubwa          | Koni ya kuthibitisha kwenye rafu | Huwekwa kwenye bamba au kibonge cha udongo huku inchi 2 (51 mm) kamili zikionekana, ikiegemea 8° kutoka wima  |
-| Ndogo (junior) | Kiln sitter                      | Hulala juu ya vishikilio vya sitter; inchi 15/16 (24 mm) zikionekana ikisimamishwa kwenye rafu                |
-| Baa            | Kiln sitter                      | Unga ule ule wa koni ndogo, kwa umbo la baa lililo sawa                                                       |
+| Aina           | Hutumika kwa             | Jinsi inavyosimama                                                                                            |
+| -------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| Inajisimamia   | Koni shahidi kwenye rafu | Msingi uliojengewa ndani huweka urefu, inchi 1¾ (44 mm), na mwegemeo wa 8°; hakuna kishikilio kinachohitajika |
+| Kubwa          | Koni shahidi kwenye rafu | Huwekwa kwenye bamba au kibonge cha udongo huku inchi 2 (51 mm) kamili zikionekana, ikiegemea 8° kutoka wima  |
+| Ndogo (junior) | Kiln sitter              | Hulala juu ya vishikilio vya sitter; inchi 15/16 (24 mm) zikionekana ikisimamishwa kwenye rafu                |
+| Baa            | Kiln sitter              | Unga ule ule wa koni ndogo, kwa umbo la baa lililo sawa                                                       |
 
 Urefu ni muhimu: tofauti ya inchi ¼ (6 mm) katika urefu wa koni kubwa “inaweza kusababisha tofauti ya kupinda ya zaidi ya nusu koni”. Koni haziharibiki wala hazizeeki, na uhifadhi wenye unyevu hauziathiri.
 
@@ -68,7 +68,7 @@ Chati inatoa koni 6 inayojisimamia kuwa {{2232 °F; 1222 °C}}, lakini tu pale {
 :::orton
 
 > [!NOTE]
-> Choma kwa koni, si kwa saa wala kwa kitasa. Weka kidhibiti kwa nambari ya koni, na acha koni ya kuthibitisha kwenye rafu ithibitishe kila uchomaji.
+> Choma kwa koni, si kwa saa wala kwa kitasa. Weka kidhibiti kwa nambari ya koni, na acha koni shahidi kwenye rafu ithibitishe kila uchomaji.
 
 :::
 
@@ -115,7 +115,7 @@ Label: Chati ya koni ya Orton
 
 Mstari mfupi (–) unaonyesha takwimu ambayo haijanakiliwa hapa; tazama chati kamili ya Orton kuipata.
 
-Orton hutengeneza koni hadi 42 kwa kazi za joto la juu, lakini huchapisha joto hadi koni 14 pekee; kwa koni zenye joto zaidi, chati zake “zinapatikana (kwa ombi)”. Chati ya zamani ya Orton, kama watengenezaji wa matanuru wanavyoichapisha tena, inatoa koni 15 kubwa kuwa {{2608 °F; 1431 °C}} kwa {{270 °F/h; 150 °C/h}}, na hatukupata takwimu iliyochapishwa ya koni 16 au zaidi. Zaidi ya koni 14, weka koni za kuthibitisha na ziongoze, na hakikisha tanuru lako limekadiriwa kwa joto hilo.
+Orton hutengeneza koni hadi 42 kwa kazi za joto la juu, lakini huchapisha joto hadi koni 14 pekee; kwa koni zenye joto zaidi, chati zake “zinapatikana (kwa ombi)”. Chati ya zamani ya Orton, kama watengenezaji wa matanuru wanavyoichapisha tena, inatoa koni 15 kubwa kuwa {{2608 °F; 1431 °C}} kwa {{270 °F/h; 150 °C/h}}, na hatukupata takwimu iliyochapishwa ya koni 16 au zaidi. Zaidi ya koni 14, weka koni shahidi na ziongoze, na hakikisha tanuru lako limekadiriwa kwa joto hilo.
 
 Koni kubwa husomeka ndani ya digrii chache za takwimu hizi: koni 6 kubwa kwa {{108 °F/h; 60 °C/h}} ni {{2228 °F; 1220 °C}}. Koni ndogo, zinazotumika kwenye kiln sitter, zimeorodheshwa kwa {{540 °F/h; 300 °C/h}} pekee, kwa hiyo chati inatoa koni 6 ndogo kuwa {{2291 °F; 1255 °C}}. Hilo si joto ambalo sitter huzima tanuru. Kazi ya koni ya sitter ni kulingana na koni ya rafu, na koni ya rafu ndiyo yenye neno la mwisho.
 
@@ -139,9 +139,9 @@ Kipimo husoma hewa karibu na ukuta, si vyombo. Ikiwa uchomaji unatoka na joto za
 
 ## Kuweka pakiti ya koni {#cone-pack}
 
-**Koni ya kuthibitisha**{{en: witness cone}} ni koni iliyowekwa kwenye rafu kando ya vyombo, ambako hupata joto lile lile. Orton ni wazi kuhusu kazi yake: “Kipimo pekee cha kweli cha kazi ya joto ni kutoka kwa koni Kubwa au Inayojisimamia iliyowekwa kwenye rafu karibu na vyombo.” Kiln sitter huwa karibu na ukuta, na kipimo cha kidhibiti au cha pyrometer husoma joto karibu na ukuta; koni ya kuthibitisha husoma mahali vyungu vilipo.
+**Koni shahidi**{{en: witness cone}} ni koni iliyowekwa kwenye rafu kando ya vyombo, ambako hupata joto lile lile. Orton ni wazi kuhusu kazi yake: “Kipimo pekee cha kweli cha kazi ya joto ni kutoka kwa koni Kubwa au Inayojisimamia iliyowekwa kwenye rafu karibu na vyombo.” Kiln sitter huwa karibu na ukuta, na kipimo cha kidhibiti au cha pyrometer husoma joto karibu na ukuta; koni shahidi husoma mahali vyungu vilipo.
 
-**Pakiti ya koni** ni koni tatu za kuthibitisha zilizowekwa pamoja, nambari moja moja tofauti:
+**Pakiti ya koni** ni koni tatu shahidi zilizowekwa pamoja, nambari moja moja tofauti:
 
 Table: Pakiti ya koni tatu
 Label: Pakiti ya koni tatu
@@ -228,7 +228,7 @@ Label: Matatizo ya kiln sitter
 | Koni ya sitter haikupinda, au iliyeyuka kuwa donge             | Sitter yenyewe: urekebishaji mbaya, fimbo iliyopinda au yenye kutu, au kitu kilichokwama ndani au kando ya bomba | Kagua na rekebisha sitter kwa kijitabu chake kabla ya kuchoma tena      |
 | Mapema au kuchelewa kila mara                                  | Haijarekebishwa, au fimbo imechakaa                                                                              | Kagua kwa kipimo cha uchomaji; sogeza bamba la kichochezi               |
 
-Ili kukagua urekebishaji, Dawson hutumia **kipimo cha uchomaji**{{en: firing gauge}} kinachoshikilia fimbo mahali ambapo koni iliyopinda kabisa ingeiacha; kisha kunapaswa kuwa na “pengo la 1/16 ya inchi” (takriban 1.6 mm) kwenye kikucha. Kagua kila uchomaji 30. Kanuni ya Ceramics Monthly: tanuru likizima mapema, sogeza bamba la kichochezi juu kidogo; likichelewa, lishushe kidogo. Sitter ifanye lolote, “Amini koni kubwa za kuthibitisha kuliko koni ndogo za sitter kila wakati.”
+Ili kukagua urekebishaji, Dawson hutumia **kipimo cha uchomaji**{{en: firing gauge}} kinachoshikilia fimbo mahali ambapo koni iliyopinda kabisa ingeiacha; kisha kunapaswa kuwa na “pengo la 1/16 ya inchi” (takriban 1.6 mm) kwenye kikucha. Kagua kila uchomaji 30. Kanuni ya Ceramics Monthly: tanuru likizima mapema, sogeza bamba la kichochezi juu kidogo; likichelewa, lishushe kidogo. Sitter ifanye lolote, “Amini koni kubwa shahidi kuliko koni ndogo za sitter kila wakati.”
 
 > [!WARNING]
 > **Kiln sitter si kifaa cha usalama.** Kijitabu cha Dawson kinasema “HAIKUSUDIWI kufanya kazi kama kifaa cha kuzima kinachokinga dhidi ya kushindwa (fail-safe) na tanuru lako HALIPASWI kuachwa bila mtu zaidi ya muda unaokadiriwa wa uchomaji.” Jambo dogo kama vyombo vya udongo ambavyo havijachomwa kuangukia bomba “linaweza kusababisha uchomaji kupita kiasi”. Kuwa hapo kukagua tanuru linapopaswa kumaliza, na kamwe usilichome juu ya kitu chochote kinachoungua au karibu nacho, kama sakafu ya mbao au zulia.
@@ -281,7 +281,7 @@ Label: Kurekebisha uchomaji ujao
 | Imechomwa kupita kiasi                             | Koni moja iliyo baridi zaidi, au sehemu nyembamba chini ya fimbo; koni ya sitter ikidondoka mbali zaidi ya 90°, punguza mipangilio ya swichi | Tumia cone offset kuchoma kwa joto la chini kidogo, au fupisha au ondoa kushikilia                                                           |
 | Juu na chini zinatofautiana kwa zaidi ya koni moja | Badilisha mpangilio wa swichi (tazama Matanuru ya mkono kwa kina)                                                                            | Pakia eneo lenye baridi zaidi kwa wepesi zaidi; fuata kijitabu chako                                                                         |
 
-**Cone offset**{{en: cone offset}} ni mpangilio wa kidhibiti unaosogeza joto lake kwa koni juu au chini ili kulingana na kile koni zako za kuthibitisha zinaonyesha. Hifadhi kila pakiti iliyochomwa na andika jinsi kila moja ilivyopinda (tazama Baada ya uchomaji, hapa chini).
+**Cone offset**{{en: cone offset}} ni mpangilio wa kidhibiti unaosogeza joto lake kwa koni juu au chini ili kulingana na kile koni zako shahidi zinaonyesha. Hifadhi kila pakiti iliyochomwa na andika jinsi kila moja ilivyopinda (tazama Baada ya uchomaji, hapa chini).
 
 :::
 
@@ -289,7 +289,7 @@ Label: Kurekebisha uchomaji ujao
 
 ## Kuchoma kwa koni za SK {#sk-cones}
 
-Koni za SK ni koni za pirometri zinazotengenezwa kwa kiwango cha Japani, JIS R 8101, na kuuzwa Japani na wauzaji kama Yuko Trading (有恒商事). Kama koni yoyote, koni ya SK hupima kazi ya joto, si joto peke yake: hulainika na kupinda vyombo vinapopata joto la kutosha, na unasoma kiasi ilichopinda. Koni za kuthibitisha, kusoma kiasi koni ilichopinda, na kushikilia joto hufanya kazi kwa SK kama kwa koni yoyote. Sehemu hii inataja mfumo wa kila koni, na kamwe haibadilishi nambari ya SK kuwa nambari ya mfumo mwingine: nambari za mfululizo tofauti wa koni haziwezi kubadilishana.
+Koni za SK ni koni za pirometri zinazotengenezwa kwa kiwango cha Japani, JIS R 8101, na kuuzwa Japani na wauzaji kama Yuko Trading (有恒商事). Kama koni yoyote, koni ya SK hupima kazi ya joto, si joto peke yake: hulainika na kupinda vyombo vinapopata joto la kutosha, na unasoma kiasi ilichopinda. Koni shahidi, kusoma kiasi koni ilichopinda, na kushikilia joto hufanya kazi kwa SK kama kwa koni yoyote. Sehemu hii inataja mfumo wa kila koni, na kamwe haibadilishi nambari ya SK kuwa nambari ya mfumo mwingine: nambari za mfululizo tofauti wa koni haziwezi kubadilishana.
 
 > [!NOTE]
 > Andika “SK” kabla ya nambari kila wakati. Mapishi mengi ya zamani ya Kijapani husema tu “SK 8” au “SK 9” bila kusema ni koni ya nani. Koni za Kyoto na koni za SK kwa JIS zina nambari zile zile lakini hupinda kwa joto tofauti (tazama Koni za Kyoto, hapa chini).
@@ -360,7 +360,7 @@ Label: Chati ya SK
 | SK 19   |  {{2768 °F; 1520 °C}} |
 | SK 20   |  {{2786 °F; 1530 °C}} |
 
-Kila takwimu ni ya kawaida (JIS): joto ambalo kiwango kinatoa kwa koni, kama lilivyochapishwa kwenye jedwali la Yuko Trading. Jedwali halichapishi kasi ya kupasha joto. Kiwango kinatoa joto la rejea. Kwa kasi ya mfinyanzi ya takriban 100 °C/h, taasisi ya manispaa ya Kyoto ilipima koni zake za Kyoto zikipinda kwa joto lililo baridi zaidi ya 47–79 °C kuliko takwimu ya JIS kwa nambari ile ile; hatukupata vipimo kama hivyo vya koni za SK kwa JIS. Weka koni ya kuthibitisha na ulinganishe.
+Kila takwimu ni ya kawaida (JIS): joto ambalo kiwango kinatoa kwa koni, kama lilivyochapishwa kwenye jedwali la Yuko Trading. Jedwali halichapishi kasi ya kupasha joto. Kiwango kinatoa joto la rejea. Kwa kasi ya mfinyanzi ya takriban 100 °C/h, taasisi ya manispaa ya Kyoto ilipima koni zake za Kyoto zikipinda kwa joto lililo baridi zaidi ya 47–79 °C kuliko takwimu ya JIS kwa nambari ile ile; hatukupata vipimo kama hivyo vya koni za SK kwa JIS. Weka koni shahidi na ulinganishe.
 
 ### Koni za Kyoto
 
@@ -452,7 +452,7 @@ BQ1000 huchukua takriban saa 7 dakika 44. Mwandishi wake anaona hadi {{500 °F/h
 
 ### Koni za kidhibiti na chati ya Orton
 
-Vidhibiti vya L&L na Bartlett hutumia {{1926 °F; 1052 °C}} kwa koni 04 na {{1819 °F; 993 °C}} kwa koni 06, chini kidogo ya {{1945 °F; 1063 °C}} na {{1828 °F; 998 °C}} za Orton; vinakubaliana kwenye koni 6 na koni 10. Koni za kuthibitisha huamua tofauti: zikitofautiana na kidhibiti, kisahihishe kwa cone offset.
+Vidhibiti vya L&L na Bartlett hutumia {{1926 °F; 1052 °C}} kwa koni 04 na {{1819 °F; 993 °C}} kwa koni 06, chini kidogo ya {{1945 °F; 1063 °C}} na {{1828 °F; 998 °C}} za Orton; vinakubaliana kwenye koni 6 na koni 10. Koni shahidi huamua tofauti: zikitofautiana na kidhibiti, kisahihishe kwa cone offset.
 
 ### Kwenye tanuru la mkono
 
@@ -587,7 +587,7 @@ Ikiwa pakiti zako za koni zinaonyesha chini inachomwa kwa joto la chini kuliko j
 
 ### Mahali pa kuanzia kwa tanuru lako mwenyewe
 
-Ikiwa tanuru lako lilikuja bila maelekezo, jedwali lililo hapa chini ni mahali pa kuanzia tulipokusanya kutoka kwa taratibu zilizochapishwa hapo juu. Si ratiba iliyochapishwa. Lirekebishe kwa koni za kuthibitisha na ulirekebishe kutokana na kumbukumbu zako; ongeza muda wa kila hatua kwa mizigo mizito au vyombo vinene.
+Ikiwa tanuru lako lilikuja bila maelekezo, jedwali lililo hapa chini ni mahali pa kuanzia tulipokusanya kutoka kwa taratibu zilizochapishwa hapo juu. Si ratiba iliyochapishwa. Lirekebishe kwa koni shahidi na ulirekebishe kutokana na kumbukumbu zako; ongeza muda wa kila hatua kwa mizigo mizito au vyombo vinene.
 
 Table: Mahali petu pa kuanzia kwa tanuru la mkono (makadirio, si ratiba iliyochapishwa)
 Label: Mahali pa kuanzia kwa tanuru la mkono
@@ -642,13 +642,13 @@ Label: Kufungua na kupakua
 > [!NOTE]
 > Pendekezo letu: fungua mfuniko tu chini ya takriban {{200 °F; 93 °C}}, na pakua chini ya takriban {{125 °F; 52 °C}}, au unapoweza kushika vyombo kwa raha kwa mikono mitupu. Mizigo ya glaze, iliyoshikana na ya kioo, inahitaji subira zaidi kuliko bisque. Bila pyrometer, subiri hadi tanuru lipoe kabisa.
 
-Soma koni za kuthibitisha mara tu unapofungua tanuru, kabla ya kitu chochote kusogezwa, na andika unachoona wakati bado ni kipya akilini.
+Soma koni shahidi mara tu unapofungua tanuru, kabla ya kitu chochote kusogezwa, na andika unachoona wakati bado ni kipya akilini.
 
 ## Baada ya uchomaji {#after}
 
 ### Irekodi
 
-Andika kila uchomaji: tarehe, tanuru, mzigo, ratiba au nyakati za swichi, usomaji wa kipima muda, na jinsi kila koni ya kuthibitisha na koni ya sitter ilivyopinda, rafu kwa rafu. Hifadhi koni zilizochomwa pia. Orton anabainisha kuwa “Kulinganisha matokeo ya uchomaji 6 hadi 10 wa mwisho kutaonyesha mabadiliko ya taratibu yanayotokea kwenye tanuru, kama kuzeeka kwa elementi za kupasha joto.” [Kumbukumbu za kuchoma](/firing) za Glazecalc zinaweza kuhifadhi rekodi hizi, zikiwa na safu unazochagua kama muda, joto, koni, ramp na kushikilia; matokeo ya glaze yanaweza kwenda kwenye [maelezo](/notes) yako.
+Andika kila uchomaji: tarehe, tanuru, mzigo, ratiba au nyakati za swichi, usomaji wa kipima muda, na jinsi kila koni shahidi na koni ya sitter ilivyopinda, rafu kwa rafu. Hifadhi koni zilizochomwa pia. Orton anabainisha kuwa “Kulinganisha matokeo ya uchomaji 6 hadi 10 wa mwisho kutaonyesha mabadiliko ya taratibu yanayotokea kwenye tanuru, kama kuzeeka kwa elementi za kupasha joto.” [Kumbukumbu za kuchoma](/firing) za Glazecalc zinaweza kuhifadhi rekodi hizi, zikiwa na safu unazochagua kama muda, joto, koni, ramp na kushikilia; matokeo ya glaze yanaweza kwenda kwenye [maelezo](/notes) yako.
 
 :::orton
 
