@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "በፎርሙላው ውስጥ ያልታወቀ ውህድ አለ፦ {compound}",
+  "unknown-oxide": "በጥሬ ዕቃው {material} ውስጥ ያልታወቀ ኦክሳይድ አለ፦ {oxide}",
+  "invalid-oxide-amount": "በጥሬ ዕቃው {material} ውስጥ ያለው የኦክሳይዱ {oxide} መጠን ልክ አይደለም",
+  "loi-range": "የጥሬ ዕቃው {material} LOI ቢያንስ 0 እና ከ100 ያነሰ መሆን አለበት",
+  "no-oxides": "ጥሬ ዕቃው {material} ምንም ኦክሳይድ የለውም",
+  "no-name": "ጥሬ ዕቃው ስም ሊኖረው ይገባል",
+  "no-analysis": "ጥሬ ዕቃው {material} ፎርሙላ ወይም ትንተና ያስፈልገዋል",
+  "recipe-shape": "የግላዝ አዘገጃጀቱ የ'{ material, amount }' ዝርዝር (array) ወይም የመጠኖች ካርታ (map) መሆን አለበት",
+  "invalid-amount": "የጥሬ ዕቃው {material} መጠን ልክ አይደለም",
+  "missing-material": "የግላዝ አዘገጃጀቱ አንድ መስመር ጥሬ ዕቃ ይጎድለዋል",
+  "unknown-material": "ያልታወቀ ጥሬ ዕቃ፦ {material}",
+  "no-flux": "የግላዝ አዘገጃጀቱ ምንም የፍለክስ ኦክሳይድ የለውም፤ ስለዚህ UMF ሊወሰን አይችልም",
+  "no-target": "ዒላማው የሚታለሙ ኦክሳይዶች የሉትም",
+  "no-materials": "የሚሰሉ ጥሬ ዕቃዎች የሉም",
+  "no-temperature": "ቦሮኑን ለመወሰን የማቃጠያው ሙቀት ያስፈልጋል",
+  "no-flux-to-rebuild": "ግላዙ እንደገና የሚገነባ ፍለክስ የለውም",
+  "unknown-element": "በፎርሙላው {formula} ውስጥ ያልታወቀ ንጥረ ነገር አለ፦ {element}",
+  "bad-formula": "ፎርሙላውን መተንተን አልተቻለም፦ {formula}",
+  "analysis-total": "የጥሬ ዕቃው {material} ትንተና LOIን ጨምሮ ድምሩ {total}% ነው፤ የሚጠበቀው ወደ 100% ገደማ ነው።",
+  "stored-equivalent": "የተቀመጠው የጥሬ ዕቃው {material} ተመጣጣኝ ክብደት ከፎርሙላው እና ከLOI ጋር አይጣጣምም፤ በምትኩ ፎርሙላው እና LOI ጥቅም ላይ ውለዋል።",
+  "trace-flux": "የግላዝ አዘገጃጀቱ የፍለክስ ኦክሳይዶችን በጣም ጥቂት ብቻ ይዟል፤ ስለዚህ UMF ትርጉም ያለው አይደለም።"
+}

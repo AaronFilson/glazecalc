@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Andika fomula kwa nambari za kawaida, kama {typed}: hesabu huonekana kama herufi ndogo chini ya mstari, {shown}. Ili kuunganisha sehemu za fomula, kama katika {joined}, nakili nukta hii:",
+    "relatedTo": "Inayohusiana na",
+    "notes": "Maelezo",
+    "loi": "Upotevu wa uzito kwa moto (LOI), %",
+    "molecularWeight": "Uzito wa molekuli wa fomula ghafi (hutumika tu ikiwa LOI imeachwa wazi)",
+    "formulaHeading": "Fomula, baada ya kuchomwa",
+    "oxideSelection": "Oksidi",
+    "noOxide": "hakuna",
+    "addOxide": "Ongeza oksidi kwenye orodha",
+    "formulaIn": "Fomula hii iko katika",
+    "percent": "Asilimia",
+    "molecular": "Molekuli (unity)",
+    "amount": "kiasi",
+    "removeOxide": "Ondoa",
+    "removeOxideName": "Ondoa {oxide} kwenye fomula",
+    "save": "Hifadhi",
+    "elements": "Elementi",
+    "removeNote": "Vichocheo vilivyohifadhiwa hubaki na nakala yake yenyewe, kwa hiyo havitabadilika.",
+    "saveFailed": "Hitilafu: ombi kwa seva halikufanikiwa."
+  },
+  "material": {
+    "title": "Malighafi",
+    "lead": "Malighafi zako mwenyewe, zilizoingizwa kama fomula ya kemikali au uchambuzi wa oksidi.",
+    "newHeading": "Ongeza malighafi",
+    "name": "Jina",
+    "rawFormula": "Fomula ghafi",
+    "weightsNote": "Uzito sawia na uzito baada ya kuchomwa hukokotolewa kutoka kwenye fomula na LOI unapohifadhi.",
+    "mineHeading": "Malighafi zangu",
+    "none": "Bado hakuna. Malighafi unazoongeza hapa chini zinaweza kuingia kwenye vichocheo vyako, pamoja na zile za kawaida.",
+    "rawFormulaColumn": "Fomula ghafi",
+    "standardHeading": "Malighafi za kawaida",
+    "fetchFailed": "Kulikuwa na hitilafu katika kupata taarifa za malighafi.",
+    "standardFetchFailed": "Kulikuwa na hitilafu katika kupata taarifa za malighafi za kawaida.",
+    "saved": "Imefanikiwa. Malighafi imeongezwa kwenye hifadhidata."
+  },
+  "additive": {
+    "title": "Viongezi na vitia rangi",
+    "lead": "Vitia rangi na opacifier (kiongezi kinachofanya glaze isiwe angavu) vinavyopimwa juu ya kichocheo cha msingi, kama oksidi ya kobalti au ya bati. Kichocheo kinaweza kuviacha nje ya fomula ya Seger au kuvihesabu ndani yake.",
+    "newHeading": "Ongeza kiongezi au kitia rangi",
+    "name": "Jina",
+    "formulaAsSold": "Fomula, kama inavyouzwa",
+    "noChemistry": "Hakina uchambuzi wa oksidi, kama stain ya kibiashara: kiache nje ya fomula ya Seger",
+    "firedNote": "Weka kile kinachoipa glaze baada ya kuchomwa: oksidi nyeusi ya kobalti, {asSold}, ni {fired} yenye LOI ya {loi}%. Kichocheo kinaweza kisha kukihesabu katika fomula ya Seger.",
+    "mineHeading": "Viongezi na vitia rangi vyangu",
+    "none": "Bado hakuna. Viongezi unavyoongeza hapa chini vinaweza kuingia kwenye vichocheo vyako, pamoja na vile vya kawaida.",
+    "standardHeading": "Viongezi vya kawaida",
+    "fetchFailed": "Kulikuwa na hitilafu katika kupata taarifa za viongezi.",
+    "standardFetchFailed": "Kulikuwa na hitilafu katika kupata taarifa za viongezi vya kawaida.",
+    "saved": "Imefanikiwa. Kiongezi kimeongezwa kwenye hifadhidata."
+  }
+}
