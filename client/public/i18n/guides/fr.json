@@ -40,6 +40,17 @@
     }
   },
   "more": "Plus de guides",
+  "related": {
+    "heading": "Pages de référence",
+    "cones": {
+      "title": "Tableau des cônes : cônes Orton et SK",
+      "text": "Cônes Orton et SK avec leurs températures en °C et en °F, et l’origine de chaque valeur."
+    },
+    "materials": {
+      "title": "Matières standard",
+      "text": "Chaque matière de la bibliothèque avec son analyse en oxydes, son apport à la formule de Seger et ses dangers."
+    }
+  },
   "contents": "Sur cette page",
   "poison": {
     "numbersFor": "Numéros pour",
@@ -133,6 +144,13 @@
     "respirators": "Ici, les masques antipoussière sont vendus par classe : {everyday} pour la poussière d’émail, ou {higher} pour une meilleure protection (<link>les classes officielles</link>).",
     "unknown": "{region} : nous n’avons pas pu confirmer la valeur limite nationale. La valeur limite contraignante de l’UE, {value} mg/m³, s’applique dans chaque État membre.",
     "noData": "{region} : nous n’avons pas encore confirmé la valeur limite.",
+    "statesLabel": "Limites fixées par les États en {region}",
+    "statesCaption": "Limites que certains États ont fixées pour les poussières contenant du quartz, où Q est la teneur en quartz de la poussière, en %. Nous ne les avons lues que dans des copies publiées par des tiers : elles ne sont donc pas confirmées (vérifiées le {date}).",
+    "state": "État",
+    "respirableDust": "Poussières alvéolaires",
+    "totalDust": "Poussières totales",
+    "cutOff": "Tronqué dans la copie que nous avons lue",
+    "stateSetBy": "{area} : fixé par <link>{law}</link>.",
     "agency": "L’organisme national chargé de la sécurité au travail : <link>{name}</link>.",
     "agencySilica": "Sa <link>page sur la silice</link>.",
     "choosePrompt": "Choisissez votre pays ou votre région pour voir sa valeur limite."

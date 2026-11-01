@@ -40,6 +40,17 @@
     }
   },
   "more": "更多指南",
+  "related": {
+    "heading": "參考頁面",
+    "cones": {
+      "title": "測溫錐溫度表",
+      "text": "Orton 與 SK 測溫錐的溫度（°C 和 °F），以及每個數值的出處。"
+    },
+    "materials": {
+      "title": "標準原料",
+      "text": "原料庫中的每種原料，附有氧化物分析值、對塞格式的貢獻值和危害資訊。"
+    }
+  },
   "contents": "本頁內容",
   "poison": {
     "numbersFor": "查看電話號碼的國家/地區：",
@@ -133,6 +144,13 @@
     "respirators": "當地的呼吸防護具依等級販售：釉藥粉塵用 {everyday}，需要更高防護時用 {higher}（<link>官方等級</link>）。",
     "unknown": "我們無法確認{region}的國家限值。歐盟具法律約束力的限值 {value} mg/m³ 適用於所有會員國。",
     "noData": "我們尚未確認{region}的限值。",
+    "statesLabel": "{region}各州／邦訂定的限值",
+    "statesCaption": "部分州／邦為含石英的粉塵訂定的限值，其中 Q 是粉塵中石英的含量（%）。我們只查閱了他人公布的副本，因此這些限值尚未獲得確認（查閱日期：{date}）。",
+    "state": "州／邦",
+    "respirableDust": "可呼吸性粉塵",
+    "totalDust": "總粉塵",
+    "cutOff": "在我們查閱的副本中被截斷",
+    "stateSetBy": "{area}：依<link>{law}</link>訂定。",
     "agency": "國家職業安全衛生主管機關：<link>{name}</link>。",
     "agencySilica": "該機關的<link>二氧化矽專頁</link>。",
     "choosePrompt": "選擇您的國家或地區，即可查看當地的限值。"

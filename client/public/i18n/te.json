@@ -86,6 +86,13 @@
     "languages": "భాషలు",
     "language": "భాష:"
   },
+  "offline": {
+    "languageNotSaved": "ఈ భాష ఈ ఫోన్లో సేవ్ చేయబడలేదు. దీన్ని ఉపయోగించడానికి ఇంటర్నెట్కు కనెక్ట్ అవ్వండి.",
+    "updateReady": "Glazecalc కొత్త వెర్షన్ సిద్ధంగా ఉంది.",
+    "reload": "మళ్లీ లోడ్ చేయి",
+    "dismiss": "ఇప్పుడు వద్దు",
+    "install": "యాప్ను ఇన్స్టాల్ చేయి"
+  },
   "picker": {
     "results": "{count, plural, one {# సరిపోలిక} other {# సరిపోలికలు}}",
     "languages": {
@@ -104,6 +111,7 @@
       "asia": "ఆసియా",
       "eastAsia": "తూర్పు ఆసియా",
       "europe": "యూరప్",
+      "latinAmerica": "లాటిన్ అమెరికా",
       "middleEastNorthAfrica": "మధ్యప్రాచ్యం, ఉత్తర ఆఫ్రికా",
       "oceania": "ఓషియానియా",
       "southAsia": "దక్షిణ ఆసియా",

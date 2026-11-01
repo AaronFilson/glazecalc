@@ -40,6 +40,17 @@
     }
   },
   "more": "Mai multe ghiduri",
+  "related": {
+    "heading": "Pagini de referință",
+    "cones": {
+      "title": "Tabelul conurilor",
+      "text": "Conurile Orton și SK cu temperaturile lor în °C și °F și sursa fiecărei cifre."
+    },
+    "materials": {
+      "title": "Materii prime standard",
+      "text": "Fiecare materie primă din bibliotecă cu analiza oxizilor, contribuția la formula Seger și pericolele ei."
+    }
+  },
   "contents": "Pe această pagină",
   "poison": {
     "numbersFor": "Numere pentru",
@@ -133,6 +144,13 @@
     "respirators": "Aici, măștile de protecție împotriva prafului se vând pe clase: {everyday} pentru praful de glazură sau {higher} pentru o protecție mai mare (<link>clasele oficiale</link>).",
     "unknown": "Nu am putut confirma valoarea-limită națională în {region}. Valoarea-limită obligatorie a UE, de {value} mg/m³, se aplică în fiecare stat membru.",
     "noData": "Nu am confirmat încă valoarea-limită în {region}.",
+    "statesLabel": "Limite stabilite de state în {region}",
+    "statesCaption": "Limitele stabilite de unele state pentru pulberea care conține cuarț, unde Q este cuarțul din pulbere, în %. Le-am citit numai în copii publicate de alții, deci nu sunt confirmate (verificat {date}).",
+    "state": "Stat",
+    "respirableDust": "Pulbere respirabilă",
+    "totalDust": "Pulbere totală",
+    "cutOff": "Tăiat în copia pe care am citit-o",
+    "stateSetBy": "{area}: stabilită de <link>{law}</link>.",
     "agency": "Organismul național pentru securitate și sănătate în muncă: <link>{name}</link>.",
     "agencySilica": "<link>Pagina sa despre silice</link>.",
     "choosePrompt": "Alegeți țara sau regiunea pentru a vedea valoarea-limită de acolo."

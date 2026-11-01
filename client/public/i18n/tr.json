@@ -21,6 +21,7 @@
     "recipe": "Reçeteler - Glazecalc",
     "import": "Reçeteleri yapıştırma - Glazecalc",
     "blends": "Test karoları için karışımlar - Glazecalc",
+    "solve": "Hedefe göre çözüm - Glazecalc",
     "material": "Hammaddeler - Glazecalc",
     "additive": "Katkılar - Glazecalc",
     "firingLogs": "Pişirim kayıtları - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Bulunamadı - Glazecalc",
     "shared": "Paylaşılan reçete - Glazecalc",
     "assistants": "Glazecalc’i yapay zekâ asistanınızla kullanma - Glazecalc",
-    "confirm": "Değişikliği onaylama - Glazecalc"
+    "confirm": "Değişikliği onaylama - Glazecalc",
+    "cones": "Piramit tablosu: Orton ve SK piramit sıcaklıkları - Glazecalc",
+    "materials": "Standart sır hammaddeleri: analiz ve tehlikeler - Glazecalc",
+    "materialInfo": "{name}: oksit analizi ve tehlikeler - Glazecalc"
   },
   "nav": {
     "skip": "İçeriğe geç",
@@ -82,6 +86,13 @@
     "languages": "Diller",
     "language": "Dil:"
   },
+  "offline": {
+    "languageNotSaved": "Bu dil bu telefonda kayıtlı değil. Kullanmak için internete bağlanın.",
+    "updateReady": "Glazecalc’in yeni bir sürümü hazır.",
+    "reload": "Yeniden yükle",
+    "dismiss": "Şimdi değil",
+    "install": "Uygulamayı yükle"
+  },
   "picker": {
     "results": "{count, plural, one {# eşleşme} other {# eşleşme}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asya",
       "eastAsia": "Doğu Asya",
       "europe": "Avrupa",
+      "latinAmerica": "Latin Amerika",
       "middleEastNorthAfrica": "Orta Doğu ve Kuzey Afrika",
       "oceania": "Okyanusya",
       "southAsia": "Güney Asya",
@@ -127,6 +139,10 @@
     "terms": "Glazecalc’in kullanım koşulları: kendi sırlarınız ve çalışmanız için ücretsiz, ortak sunucuya karşı adil ve olduğu gibi sunulur.",
     "assistants": "Glazecalc’i MCP ile Claude, Copilot, Cursor veya Gemini’den kullanın: sır kimyası, sınır kontrolleri, yedek hammaddeler, rehberler ve kendi reçeteleriniz.",
     "signup": "Seramik sır reçetelerinizi, hammaddelerinizi, notlarınızı ve pişirim kayıtlarınızı ücretsiz Glazecalc hesabında saklayın. Reklam yok; verileriniz asla satılmaz.",
+    "cones": "022’den başlayan Orton ve SK pirometrik piramitleri; °C ve °F cinsinden sıcaklıkları, her tablonun hangi ısıtma hızı için olduğu ve rakamların nereden geldiği.",
+    "materials": "Glazecalc’in standart kütüphanesindeki hammaddeler: feldspatlardan ve killerden fritlere ve bor kaynaklarına kadar, her birinin oksit analizi, Seger formülü ve tehlikeleriyle.",
+    "materialInfo": "{name}: Glazecalc’in standart kütüphanesinde oksit analizi, Seger formülü, kızdırma kaybı ve tehlikeler.",
+    "materialInfoLong": "{name}, Glazecalc’in standart sır hammaddeleri kütüphanesinde: oksit analizi, Seger formülüne katkısı, kızdırma kaybı ve tehlikeler.",
     "imageAlt": "Glazecalc ana sayfası: çömlekçiler için ücretsiz sır kimyası, pişmiş piramit gruplarının fotoğrafının yanında."
   },
   "notices": {

@@ -21,6 +21,7 @@
     "recipe": "레시피 - Glazecalc",
     "import": "레시피 붙여넣기 - Glazecalc",
     "blends": "시편 블렌드 - Glazecalc",
+    "solve": "목표에 맞는 레시피 구하기 - Glazecalc",
     "material": "원료 - Glazecalc",
     "additive": "첨가제 - Glazecalc",
     "firingLogs": "소성 기록 - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "찾을 수 없음 - Glazecalc",
     "shared": "공유된 레시피 - Glazecalc",
     "assistants": "AI 어시스턴트에서 Glazecalc 사용하기 - Glazecalc",
-    "confirm": "변경 승인 - Glazecalc"
+    "confirm": "변경 승인 - Glazecalc",
+    "cones": "콘 온도표: 오튼 콘과 SK 콘의 온도 - Glazecalc",
+    "materials": "표준 유약 원료: 분석값과 위험성 - Glazecalc",
+    "materialInfo": "{name}: 산화물 분석과 위험성 - Glazecalc"
   },
   "nav": {
     "skip": "본문으로 건너뛰기",
@@ -82,6 +86,13 @@
     "languages": "언어",
     "language": "언어:"
   },
+  "offline": {
+    "languageNotSaved": "이 언어는 이 휴대폰에 저장되어 있지 않습니다. 사용하려면 인터넷에 연결하세요.",
+    "updateReady": "Glazecalc 새 버전을 사용할 수 있습니다.",
+    "reload": "새로고침",
+    "dismiss": "나중에",
+    "install": "앱 설치"
+  },
   "picker": {
     "results": "{count, plural, other {결과 #개}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "아시아",
       "eastAsia": "동아시아",
       "europe": "유럽",
+      "latinAmerica": "라틴아메리카",
       "middleEastNorthAfrica": "중동 및 북아프리카",
       "oceania": "오세아니아",
       "southAsia": "남아시아",
@@ -127,6 +139,10 @@
     "terms": "Glazecalc 이용약관: 나의 유약과 작업에는 무료이고, 함께 쓰는 서버에는 공정하게 쓰며, 있는 그대로 제공됩니다.",
     "assistants": "Claude, Copilot, Cursor, Gemini에서 MCP로 Glazecalc를 사용할 수 있습니다. 유약 화학, 한도 확인, 대체 원료, 가이드, 내 레시피까지.",
     "signup": "무료 Glazecalc 계정으로 유약 레시피, 원료, 메모, 소성 기록을 보관하세요. 광고가 없고 데이터를 판매하지 않습니다.",
+    "cones": "022부터 시작하는 오튼 콘과 SK 콘의 온도를 °C와 °F로 보여 주고, 표마다 해당하는 승온 속도와 수치의 출처를 밝힙니다.",
+    "materials": "Glazecalc 표준 라이브러리의 원료를 장석과 점토부터 프릿, 붕소 원료까지 모아, 각각의 산화물 분석, 제게르식, 위험성을 보여 줍니다.",
+    "materialInfo": "{name}: Glazecalc 표준 라이브러리의 산화물 분석, 제게르식, 강열감량, 위험성.",
+    "materialInfoLong": "Glazecalc 유약 원료 표준 라이브러리의 {name}: 산화물 분석, 제게르식 기여값, 강열감량, 위험성.",
     "imageAlt": "Glazecalc 홈페이지: 도예가를 위한 무료 유약 화학 계산기와 소성한 콘 세트 사진."
   },
   "notices": {

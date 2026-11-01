@@ -40,6 +40,17 @@
     }
   },
   "more": "ほかのガイド",
+  "related": {
+    "heading": "参考ページ",
+    "cones": {
+      "title": "コーンの温度表",
+      "text": "オルトンコーンと SK コーンの温度を °C と °F で示し、各数値の出典も載せています。"
+    },
+    "materials": {
+      "title": "標準原料",
+      "text": "ライブラリにある各原料の酸化物分析、ゼーゲル式への寄与、危険性を載せています。"
+    }
+  },
   "contents": "このページの内容",
   "poison": {
     "numbersFor": "連絡先を表示する国・地域:",
@@ -133,6 +144,13 @@
     "respirators": "ここでは、防じんマスクは区分ごとに販売されています。釉薬の粉じんには {everyday}、より高い防護には {higher} です（<link>公式の区分</link>）。",
     "unknown": "{region}の国としての限度値は確認できませんでした。EU の法的拘束力のある限度値 {value} mg/m³ は、すべての加盟国に適用されます。",
     "noData": "{region}の限度値はまだ確認していません。",
+    "statesLabel": "{region}の州が定めた限度値",
+    "statesCaption": "石英を含む粉じんについて、一部の州が定めている限度値です。Q は粉じん中の石英の含有率（%）です。他者が公開したコピーでしか読めていないため、確認はできていません（確認日: {date}）。",
+    "state": "州",
+    "respirableDust": "吸入性粉じん",
+    "totalDust": "総粉じん",
+    "cutOff": "読んだコピーでは途切れている",
+    "stateSetBy": "{area}: <link>{law}</link>で定められています。",
     "agency": "国の労働安全衛生機関: <link>{name}</link>",
     "agencySilica": "同機関の<link>シリカについてのページ</link>。",
     "choosePrompt": "国・地域を選ぶと、その国・地域の限度値が表示されます。"

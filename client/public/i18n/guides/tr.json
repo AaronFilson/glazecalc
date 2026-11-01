@@ -40,6 +40,17 @@
     }
   },
   "more": "Diğer rehberler",
+  "related": {
+    "heading": "Başvuru sayfaları",
+    "cones": {
+      "title": "Piramit tablosu",
+      "text": "Orton ve SK piramitleri, °C ve °F cinsinden sıcaklıkları ve her rakamın nereden geldiği."
+    },
+    "materials": {
+      "title": "Standart hammaddeler",
+      "text": "Kütüphanedeki her hammadde; oksit analizi, Seger formülüne katkısı ve tehlikeleriyle."
+    }
+  },
   "contents": "Bu sayfada",
   "poison": {
     "numbersFor": "Numaraların gösterileceği yer:",
@@ -133,6 +144,13 @@
     "respirators": "Toz maskeleri burada sınıflara göre satılır: sır tozu için {everyday}, daha yüksek koruma için {higher} (<link>resmî sınıflar</link>).",
     "unknown": "{region}: ulusal sınır değeri doğrulayamadık. AB’nin {value} mg/m³ olan bağlayıcı sınır değeri her üye devlette geçerlidir.",
     "noData": "{region}: sınır değeri henüz doğrulamadık.",
+    "statesLabel": "{region} bölgesinde eyaletlerin koyduğu sınırlar",
+    "statesCaption": "Bazı eyaletlerin kuvars içeren toz için koyduğu sınırlar; Q tozdaki kuvarsın yüzdesidir. Bunları yalnızca başkalarının yayımladığı kopyalarda okuduk, bu yüzden doğrulanmış değiller (kontrol tarihi {date}).",
+    "state": "Eyalet",
+    "respirableDust": "Solunabilir toz",
+    "totalDust": "Toplam toz",
+    "cutOff": "Okuduğumuz kopyada kesik",
+    "stateSetBy": "{area}: <link>{law}</link> ile belirlenmiştir.",
     "agency": "İş güvenliğinden sorumlu ulusal kurum: <link>{name}</link>.",
     "agencySilica": "Kurumun <link>silika sayfası</link>.",
     "choosePrompt": "Sınır değeri görmek için ülkenizi veya bölgenizi seçin."

@@ -40,6 +40,17 @@
     }
   },
   "more": "Panduan lainnya",
+  "related": {
+    "heading": "Halaman referensi",
+    "cones": {
+      "title": "Tabel kerucut",
+      "text": "Kerucut Orton dan SK beserta suhunya dalam °C dan °F, dan asal setiap angka."
+    },
+    "materials": {
+      "title": "Bahan standar",
+      "text": "Setiap bahan di pustaka dengan analisis oksida, kontribusi terhadap formula Seger, dan bahayanya."
+    }
+  },
   "contents": "Di halaman ini",
   "poison": {
     "numbersFor": "Nomor untuk",
@@ -133,6 +144,13 @@
     "respirators": "Masker debu di sini dijual menurut kelas: {everyday} untuk debu glasir, atau {higher} untuk perlindungan lebih (<link>kelas resminya</link>).",
     "unknown": "Kami tidak dapat memastikan batas nasional di {region}. Batas mengikat UE sebesar {value} mg/m³ berlaku di setiap negara anggota.",
     "noData": "Kami belum memastikan batas di {region}.",
+    "statesLabel": "Batas yang ditetapkan negara bagian di {region}",
+    "statesCaption": "Batas yang ditetapkan beberapa negara bagian untuk debu yang mengandung kuarsa, dengan Q adalah kuarsa dalam debu, dalam %. Kami membacanya hanya dalam salinan yang diterbitkan pihak lain, jadi belum terkonfirmasi (diperiksa {date}).",
+    "state": "Negara bagian",
+    "respirableDust": "Debu respirabel",
+    "totalDust": "Debu total",
+    "cutOff": "Terpotong di salinan yang kami baca",
+    "stateSetBy": "{area}: ditetapkan oleh <link>{law}</link>.",
     "agency": "Lembaga nasional keselamatan kerja: <link>{name}</link>.",
     "agencySilica": "<link>Halaman tentang silika</link> dari lembaga itu.",
     "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat batasnya."

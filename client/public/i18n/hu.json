@@ -21,6 +21,7 @@
     "recipe": "Receptek - Glazecalc",
     "import": "Receptek beillesztése - Glazecalc",
     "blends": "Keverékek próbalapokhoz - Glazecalc",
+    "solve": "Számítás célérték szerint - Glazecalc",
     "material": "Nyersanyagok - Glazecalc",
     "additive": "Adalékok - Glazecalc",
     "firingLogs": "Égetési naplók - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Az oldal nem található - Glazecalc",
     "shared": "Megosztott recept - Glazecalc",
     "assistants": "A Glazecalc használata az MI-asszisztensből - Glazecalc",
-    "confirm": "Módosítás jóváhagyása - Glazecalc"
+    "confirm": "Módosítás jóváhagyása - Glazecalc",
+    "cones": "Gúlatáblázat: az Orton- és SK-gúlák hőfokai - Glazecalc",
+    "materials": "Beépített mázanyagok: összetétel és veszélyek - Glazecalc",
+    "materialInfo": "{name}: oxidos összetétel és veszélyek - Glazecalc"
   },
   "nav": {
     "skip": "Ugrás a tartalomhoz",
@@ -82,6 +86,13 @@
     "languages": "Nyelvek",
     "language": "Nyelv:"
   },
+  "offline": {
+    "languageNotSaved": "Ez a nyelv nincs elmentve ezen a telefonon. Csatlakozzon az internetre a használatához.",
+    "updateReady": "A Glazecalc új verziója elérhető.",
+    "reload": "Újratöltés",
+    "dismiss": "Most nem",
+    "install": "Alkalmazás telepítése"
+  },
   "picker": {
     "results": "{count, plural, one {# találat} other {# találat}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Ázsia",
       "eastAsia": "Kelet-Ázsia",
       "europe": "Európa",
+      "latinAmerica": "Latin-Amerika",
       "middleEastNorthAfrica": "Közel-Kelet és Észak-Afrika",
       "oceania": "Óceánia",
       "southAsia": "Dél-Ázsia",
@@ -127,6 +139,10 @@
     "terms": "A Glazecalc használatának feltételei: ingyenes a saját mázaihoz és munkájához, tisztességes a közös szerverrel szemben, és úgy érhető el, ahogy van.",
     "assistants": "A Glazecalc MCP-n át a Claude, Copilot, Cursor vagy Gemini asszisztensből: mázkémia, határérték-ellenőrzés, helyettesítők, útmutatók és saját receptjei.",
     "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el.",
+    "cones": "Orton- és SK-hőfokjelző gúlák 022-estől felfelé, hőfokaikkal °C-ban és °F-ban, az egyes táblázatok felfűtési sebességével és az értékek forrásával.",
+    "materials": "A Glazecalc beépített könyvtárának nyersanyagai a földpátoktól és agyagoktól a frittekig és bórforrásokig, mindegyik oxidos összetételével, Seger-képletével és veszélyeivel.",
+    "materialInfo": "{name}: oxidos összetétel, Seger-képlet, izzítási veszteség és veszélyek a Glazecalc beépített könyvtárában.",
+    "materialInfoLong": "{name} a Glazecalc beépített mázanyag-könyvtárában: oxidos összetétele, hozzájárulása a Seger-képlethez, izzítási vesztesége és veszélyei.",
     "imageAlt": "A Glazecalc kezdőoldala: ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."
   },
   "notices": {

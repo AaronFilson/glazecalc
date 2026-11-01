@@ -21,6 +21,7 @@
     "recipe": "Resep - Glazecalc",
     "import": "Tempel resep - Glazecalc",
     "blends": "Campuran untuk ubin uji - Glazecalc",
+    "solve": "Cari resep untuk target - Glazecalc",
     "material": "Bahan - Glazecalc",
     "additive": "Aditif - Glazecalc",
     "firingLogs": "Catatan pembakaran - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Tidak ditemukan - Glazecalc",
     "shared": "Resep yang dibagikan - Glazecalc",
     "assistants": "Pakai Glazecalc dari asisten AI Anda - Glazecalc",
-    "confirm": "Setujui perubahan - Glazecalc"
+    "confirm": "Setujui perubahan - Glazecalc",
+    "cones": "Tabel kerucut: suhu kerucut Orton dan SK - Glazecalc",
+    "materials": "Bahan glasir standar: analisis dan bahaya - Glazecalc",
+    "materialInfo": "{name}: analisis oksida dan bahaya - Glazecalc"
   },
   "nav": {
     "skip": "Langsung ke konten",
@@ -82,6 +86,13 @@
     "languages": "Bahasa",
     "language": "Bahasa:"
   },
+  "offline": {
+    "languageNotSaved": "Bahasa ini tidak tersimpan di ponsel ini. Sambungkan ke internet untuk memakainya.",
+    "updateReady": "Versi baru Glazecalc sudah siap.",
+    "reload": "Muat ulang",
+    "dismiss": "Jangan sekarang",
+    "install": "Pasang aplikasi"
+  },
   "picker": {
     "results": "{count, plural, other {# hasil}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asia",
       "eastAsia": "Asia Timur",
       "europe": "Eropa",
+      "latinAmerica": "Amerika Latin",
       "middleEastNorthAfrica": "Timur Tengah dan Afrika Utara",
       "oceania": "Oseania",
       "southAsia": "Asia Selatan",
@@ -127,6 +139,10 @@
     "terms": "Syarat penggunaan Glazecalc: gratis untuk glasir dan pekerjaan Anda sendiri, adil terhadap server bersama, dan disediakan apa adanya.",
     "assistants": "Pakai Glazecalc dari Claude, Copilot, Cursor, atau Gemini lewat MCP: kimia glasir, pemeriksaan batas, pengganti, panduan, dan resep Anda sendiri.",
     "signup": "Buat akun Glazecalc gratis untuk menyimpan resep glasir, bahan, catatan, dan catatan pembakaran Anda. Tanpa iklan, dan data Anda tidak pernah dijual.",
+    "cones": "Kerucut pirometrik Orton dan SK dari 022 ke atas, dengan suhunya dalam °C dan °F, laju pemanasan yang dimaksud tiap tabel, dan asal angkanya.",
+    "materials": "Bahan dalam pustaka standar Glazecalc, dari feldspar dan tanah liat hingga frit dan sumber boron, masing-masing dengan analisis oksida, formula Seger, dan bahayanya.",
+    "materialInfo": "{name}: analisis oksida, formula Seger, susut pijar, dan bahaya dalam pustaka standar Glazecalc.",
+    "materialInfoLong": "{name} dalam pustaka standar bahan glasir Glazecalc: analisis oksida, kontribusi terhadap formula Seger, susut pijar, dan bahayanya.",
     "imageAlt": "Beranda Glazecalc: kimia glasir gratis untuk pembuat keramik, di samping foto set kerucut yang sudah dibakar."
   },
   "notices": {
@@ -315,6 +331,8 @@
     "label": "Tentang terjemahan ini",
     "text": "Halaman ini diterjemahkan dari bahasa Inggris oleh AI. Glazecalc bersumber terbuka: jika ada yang terbaca janggal, silakan sarankan koreksi di GitHub.",
     "brief": "Diterjemahkan dari bahasa Inggris oleh AI.",
+    "plain": "Halaman ini diterjemahkan dari bahasa Inggris oleh AI, yang menangani bahasa ini kurang baik dibandingkan kebanyakan bahasa lain. Halaman bahasa Inggrisnya mungkin lebih enak dibaca. Glazecalc bersifat sumber terbuka: jika ada yang terbaca salah, silakan sarankan koreksi di GitHub.",
+    "plainBrief": "Diterjemahkan oleh AI; versi bahasa Inggrisnya mungkin lebih enak dibaca.",
     "suggest": "Sarankan koreksi",
     "english": "Baca versi Inggris",
     "close": "Tutup"

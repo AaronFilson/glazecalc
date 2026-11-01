@@ -21,6 +21,7 @@
     "recipe": "Receptai – Glazecalc",
     "import": "Receptų įklijavimas – Glazecalc",
     "blends": "Mišiniai bandiniams – Glazecalc",
+    "solve": "Receptas pagal tikslą – Glazecalc",
     "material": "Žaliavos – Glazecalc",
     "additive": "Priedai – Glazecalc",
     "firingLogs": "Degimo žurnalai – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Puslapis nerastas – Glazecalc",
     "shared": "Bendrinamas receptas – Glazecalc",
     "assistants": "Glazecalc naudojimas su dirbtinio intelekto asistentu – Glazecalc",
-    "confirm": "Pakeitimo patvirtinimas – Glazecalc"
+    "confirm": "Pakeitimo patvirtinimas – Glazecalc",
+    "cones": "Piroskopų lentelė: Ortono ir SK piroskopų temperatūros – Glazecalc",
+    "materials": "Standartinės glazūros žaliavos: analizė ir pavojai – Glazecalc",
+    "materialInfo": "{name}: oksidų analizė ir pavojai – Glazecalc"
   },
   "nav": {
     "skip": "Pereiti prie turinio",
@@ -82,6 +86,13 @@
     "languages": "Kalbos",
     "language": "Kalba:"
   },
+  "offline": {
+    "languageNotSaved": "Ši kalba šiame telefone neišsaugota. Norėdami ją naudoti, prisijunkite prie interneto.",
+    "updateReady": "Paruošta nauja Glazecalc versija.",
+    "reload": "Įkelti iš naujo",
+    "dismiss": "Ne dabar",
+    "install": "Įdiegti programą"
+  },
   "picker": {
     "results": "{count, plural, one {# atitikmuo} few {# atitikmenys} many {# atitikmens} other {# atitikmenų}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Azija",
       "eastAsia": "Rytų Azija",
       "europe": "Europa",
+      "latinAmerica": "Lotynų Amerika",
       "middleEastNorthAfrica": "Artimieji Rytai ir Šiaurės Afrika",
       "oceania": "Okeanija",
       "southAsia": "Pietų Azija",
@@ -127,6 +139,10 @@
     "terms": "Glazecalc naudojimo sąlygos: nemokamas jūsų pačių glazūroms ir darbui, sąžiningas bendram serveriui ir teikiamas toks, koks yra.",
     "assistants": "Naudokite Glazecalc per MCP iš Claude, Copilot, Cursor ar Gemini: glazūrų chemija, ribų patikros, pakaitalai, vadovai ir jūsų pačių receptai.",
     "signup": "Nemokama Glazecalc paskyra keramikos glazūrų receptams, žaliavoms, užrašams ir degimo žurnalams saugoti. Be reklamų, jūsų duomenys niekada neparduodami.",
+    "cones": "Ortono ir SK piroskopai nuo 022, jų temperatūros °C ir °F, kaitinimo greitis, kuriam skirta kiekviena lentelė, ir kur imami skaičiai.",
+    "materials": "Glazecalc standartinės bibliotekos žaliavos: nuo lauko špatų ir molių iki fritų ir boro šaltinių, su oksidų analize, Segerio formule ir pavojais.",
+    "materialInfo": "{name}: oksidų analizė, Segerio formulė, degimo nuostoliai ir pavojai Glazecalc standartinėje bibliotekoje.",
+    "materialInfoLong": "{name} Glazecalc standartinėje glazūros žaliavų bibliotekoje: oksidų analizė, indėlis į Segerio formulę, degimo nuostoliai ir pavojai.",
     "imageAlt": "Glazecalc pradžios puslapis: nemokama glazūrų chemija keramikams, šalia – išdegintų piroskopų nuotrauka."
   },
   "notices": {

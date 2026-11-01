@@ -21,6 +21,7 @@
     "recipe": "Rezepte - Glazecalc",
     "import": "Rezepte einfügen - Glazecalc",
     "blends": "Mischreihen für Probeplättchen - Glazecalc",
+    "solve": "Auf ein Ziel hin berechnen - Glazecalc",
     "material": "Rohstoffe - Glazecalc",
     "additive": "Zusätze - Glazecalc",
     "firingLogs": "Brennprotokolle - Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Seite nicht gefunden - Glazecalc",
     "shared": "Geteiltes Rezept - Glazecalc",
     "assistants": "Glazecalc mit Ihrem KI-Assistenten nutzen - Glazecalc",
-    "confirm": "Eine Änderung genehmigen - Glazecalc"
+    "confirm": "Eine Änderung genehmigen - Glazecalc",
+    "cones": "Kegeltabelle: Temperaturen der Orton- und SK-Kegel - Glazecalc",
+    "materials": "Standard-Glasurrohstoffe: Analyse und Gefahren - Glazecalc",
+    "materialInfo": "{name}: Oxidanalyse und Gefahren - Glazecalc"
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -82,6 +86,13 @@
     "languages": "Sprachen",
     "language": "Sprache:"
   },
+  "offline": {
+    "languageNotSaved": "Diese Sprache ist auf diesem Telefon nicht gespeichert. Stellen Sie eine Internetverbindung her, um sie zu verwenden.",
+    "updateReady": "Eine neue Version von Glazecalc ist bereit.",
+    "reload": "Neu laden",
+    "dismiss": "Jetzt nicht",
+    "install": "App installieren"
+  },
   "picker": {
     "results": "{count, plural, one {# Treffer} other {# Treffer}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Asien",
       "eastAsia": "Ostasien",
       "europe": "Europa",
+      "latinAmerica": "Lateinamerika",
       "middleEastNorthAfrica": "Naher Osten und Nordafrika",
       "oceania": "Ozeanien",
       "southAsia": "Südasien",
@@ -127,6 +139,10 @@
     "terms": "Die Bedingungen für die Nutzung von Glazecalc: kostenlos für Ihre eigenen Glasuren und Ihre Arbeit, fair gegenüber dem gemeinsam genutzten Server, und so bereitgestellt, wie es ist.",
     "assistants": "Glazecalc über MCP aus Claude, Copilot, Cursor oder Gemini nutzen: Glasurchemie, Grenzwertprüfung, Ersatzstoffe, Anleitungen und Ihre eigenen Rezepte.",
     "signup": "Kostenloses Konto bei Glazecalc erstellen, für Ihre Glasurrezepte, Rohstoffe, Notizen und Brennprotokolle. Keine Werbung, und Ihre Daten werden nie verkauft.",
+    "cones": "Pyrometrische Orton- und SK-Kegel ab 022 mit ihren Temperaturen in °C und °F, der Aufheizrate, für die jede Tabelle gilt, und der Herkunft der Werte.",
+    "materials": "Die Rohstoffe aus der Standardbibliothek von Glazecalc, von Feldspäten und Tonen bis zu Fritten und Borquellen, jeweils mit Oxidanalyse, Segerformel und Gefahren.",
+    "materialInfo": "{name}: Oxidanalyse, Segerformel, Glühverlust und Gefahren in der Standardbibliothek von Glazecalc.",
+    "materialInfoLong": "{name} in der Standardbibliothek der Glasurrohstoffe von Glazecalc: Oxidanalyse, Beitrag zur Segerformel, Glühverlust und Gefahren.",
     "imageAlt": "Die Startseite von Glazecalc: kostenlose Glasurchemie für die Töpferei, neben einem Foto gebrannter Kegelsätze."
   },
   "notices": {

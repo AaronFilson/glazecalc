@@ -21,6 +21,7 @@
     "recipe": "Receptes – Glazecalc",
     "import": "Recepšu ielīmēšana – Glazecalc",
     "blends": "Maisījumi provēm – Glazecalc",
+    "solve": "Risināšana pēc mērķa – Glazecalc",
     "material": "Izejvielas – Glazecalc",
     "additive": "Piedevas – Glazecalc",
     "firingLogs": "Apdedzināšanas žurnāli – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Lapa nav atrasta – Glazecalc",
     "shared": "Kopīgota recepte – Glazecalc",
     "assistants": "Glazecalc lietošana ar mākslīgā intelekta asistentu – Glazecalc",
-    "confirm": "Izmaiņu apstiprināšana – Glazecalc"
+    "confirm": "Izmaiņu apstiprināšana – Glazecalc",
+    "cones": "Konusu tabula: Ortona un SK konusu temperatūras – Glazecalc",
+    "materials": "Standarta glazūras izejvielas: analīze un apdraudējumi – Glazecalc",
+    "materialInfo": "{name}: oksīdu analīze un apdraudējumi – Glazecalc"
   },
   "nav": {
     "skip": "Pāriet uz saturu",
@@ -82,6 +86,13 @@
     "languages": "Valodas",
     "language": "Valoda:"
   },
+  "offline": {
+    "languageNotSaved": "Šī valoda nav saglabāta šajā tālrunī. Lai to izmantotu, izveidojiet interneta savienojumu.",
+    "updateReady": "Ir gatava jauna Glazecalc versija.",
+    "reload": "Pārlādēt",
+    "dismiss": "Ne tagad",
+    "install": "Instalēt lietotni"
+  },
   "picker": {
     "results": "{count, plural, zero {# atbilstību} one {# atbilstība} other {# atbilstības}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Āzija",
       "eastAsia": "Austrumāzija",
       "europe": "Eiropa",
+      "latinAmerica": "Latīņamerika",
       "middleEastNorthAfrica": "Tuvie Austrumi un Ziemeļāfrika",
       "oceania": "Okeānija",
       "southAsia": "Dienvidāzija",
@@ -127,6 +139,10 @@
     "terms": "Glazecalc lietošanas noteikumi: bezmaksas jūsu pašu glazūrām un darbam, godīgi pret kopīgo serveri, un tiek sniegts tāds, kāds tas ir.",
     "assistants": "Lietojiet Glazecalc no Claude, Copilot, Cursor vai Gemini, ar MCP: glazūru ķīmija, robežvērtību pārbaudes, aizvietotāji, ceļveži un jūsu pašu receptes.",
     "signup": "Izveidojiet bezmaksas Glazecalc kontu keramikas glazūru receptēm, izejvielām, piezīmēm un apdedzināšanas žurnāliem. Bez reklāmām; jūsu datus nekad nepārdod.",
+    "cones": "Ortona un SK pirometriskie konusi no 022, to temperatūras °C un °F, sildīšanas ātrums, kuram atbilst katra tabula, un skaitļu avots.",
+    "materials": "Glazecalc standarta bibliotēkas izejvielas, no laukšpatiem un māliem līdz fritēm un bora avotiem, katrai ar oksīdu analīzi, Zēgera formulu un apdraudējumiem.",
+    "materialInfo": "{name}: oksīdu analīze, Zēgera formula, karsēšanas zudumi un apdraudējumi Glazecalc standarta bibliotēkā.",
+    "materialInfoLong": "{name} Glazecalc glazūras izejvielu standarta bibliotēkā: oksīdu analīze, devums Zēgera formulā, karsēšanas zudumi un apdraudējumi.",
     "imageAlt": "Glazecalc sākumlapa: bezmaksas glazūru ķīmija podniekiem blakus fotogrāfijai ar apdedzinātiem konusu komplektiem."
   },
   "notices": {

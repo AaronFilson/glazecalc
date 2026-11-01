@@ -40,6 +40,17 @@
     }
   },
   "more": "Več vodnikov",
+  "related": {
+    "heading": "Referenčne strani",
+    "cones": {
+      "title": "Preglednica stožcev",
+      "text": "Ortonovi stožci in stožci SK z njihovimi temperaturami v °C in °F ter z navedbo, od kod izvira vsak podatek."
+    },
+    "materials": {
+      "title": "Standardne surovine",
+      "text": "Vsaka surovina v knjižnici z oksidno analizo, prispevkom k Segerjevi formuli in nevarnostmi."
+    }
+  },
   "contents": "Na tej strani",
   "poison": {
     "numbersFor": "Telefonske številke:",
@@ -133,6 +144,13 @@
     "respirators": "Zaščitne dihalne maske proti prahu se tu prodajajo po razredih: {everyday} za prah glazur ali {higher} za večjo zaščito (<link>uradni razredi</link>).",
     "unknown": "{region}: nacionalne mejne vrednosti nismo mogli potrditi. Zavezujoča mejna vrednost EU, {value} mg/m³, velja v vsaki državi članici.",
     "noData": "{region}: mejne vrednosti še nismo potrdili.",
+    "statesLabel": "Mejne vrednosti zveznih držav: {region}",
+    "statesCaption": "Mejne vrednosti, ki so jih nekatere zvezne države določile za prah, ki vsebuje kremen, kjer je Q delež kremena v prahu, v %. Prebrali smo jih samo v kopijah, ki so jih objavili drugi, zato niso potrjene (preverjeno: {date}).",
+    "state": "Zvezna država",
+    "respirableDust": "Respirabilni prah",
+    "totalDust": "Celotni prah",
+    "cutOff": "Odrezano v kopiji, ki smo jo prebrali",
+    "stateSetBy": "{area}: določa <link>{law}</link>.",
     "agency": "Državni organ za varnost in zdravje pri delu: <link>{name}</link>.",
     "agencySilica": "Njegova <link>stran o kremenu</link>.",
     "choosePrompt": "Izberite državo ali regijo, da vidite njeno mejno vrednost."

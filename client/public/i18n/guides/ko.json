@@ -40,6 +40,17 @@
     }
   },
   "more": "다른 가이드",
+  "related": {
+    "heading": "참고 페이지",
+    "cones": {
+      "title": "콘 온도표",
+      "text": "오튼 콘과 SK 콘의 온도를 °C와 °F로 보여 주고, 각 수치의 출처를 밝힙니다."
+    },
+    "materials": {
+      "title": "표준 원료",
+      "text": "라이브러리의 각 원료를 산화물 분석, 제게르식 기여값, 위험성과 함께 보여 줍니다."
+    }
+  },
   "contents": "이 페이지의 내용",
   "poison": {
     "numbersFor": "연락처를 볼 국가/지역:",
@@ -133,6 +144,13 @@
     "respirators": "이곳에서는 방진마스크가 등급별로 판매됩니다. 유약 분진용은 {everyday}, 더 높은 보호용은 {higher}입니다(<link>공식 등급</link>).",
     "unknown": "{region}의 국가 기준은 확인하지 못했습니다. EU의 법적 구속력이 있는 기준 {value} mg/m³는 모든 회원국에 적용됩니다.",
     "noData": "{region}의 기준은 아직 확인하지 않았습니다.",
+    "statesLabel": "{region}의 주에서 정한 기준",
+    "statesCaption": "일부 주가 석영이 든 분진에 정한 기준입니다. Q는 분진 중 석영의 함량(%)입니다. 다른 곳에서 게시한 사본으로만 읽었으므로 확인된 것은 아닙니다(확인일: {date}).",
+    "state": "주",
+    "respirableDust": "호흡성 분진",
+    "totalDust": "총 분진",
+    "cutOff": "읽은 사본에서 잘려 있음",
+    "stateSetBy": "{area}: <link>{law}</link>에서 정했습니다.",
     "agency": "국가 산업안전보건 기관: <link>{name}</link>",
     "agencySilica": "이 기관의 <link>실리카 관련 페이지</link>.",
     "choosePrompt": "나라나 지역을 선택하면 그곳의 기준이 표시됩니다."

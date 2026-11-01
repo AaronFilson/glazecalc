@@ -21,6 +21,7 @@
     "recipe": "Recepti – Glazecalc",
     "import": "Lepljenje receptov – Glazecalc",
     "blends": "Testne serije za ploščice – Glazecalc",
+    "solve": "Reševanje za cilj – Glazecalc",
     "material": "Surovine – Glazecalc",
     "additive": "Dodatki – Glazecalc",
     "firingLogs": "Dnevniki žganja – Glazecalc",
@@ -32,7 +33,10 @@
     "notFound": "Strani ni mogoče najti – Glazecalc",
     "shared": "Deljeni recept – Glazecalc",
     "assistants": "Uporaba Glazecalc v pomočniku z umetno inteligenco – Glazecalc",
-    "confirm": "Odobritev spremembe – Glazecalc"
+    "confirm": "Odobritev spremembe – Glazecalc",
+    "cones": "Preglednica stožcev: temperature Ortonovih stožcev in stožcev SK – Glazecalc",
+    "materials": "Standardne glazurne surovine: analiza in nevarnosti – Glazecalc",
+    "materialInfo": "{name}: oksidna analiza in nevarnosti – Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na vsebino",
@@ -82,6 +86,13 @@
     "languages": "Jeziki",
     "language": "Jezik:"
   },
+  "offline": {
+    "languageNotSaved": "Ta jezik ni shranjen v tem telefonu. Za uporabo se povežite z internetom.",
+    "updateReady": "Nova različica aplikacije Glazecalc je pripravljena.",
+    "reload": "Znova naloži",
+    "dismiss": "Ne zdaj",
+    "install": "Namesti aplikacijo"
+  },
   "picker": {
     "results": "{count, plural, one {# zadetek} two {# zadetka} few {# zadetki} other {# zadetkov}}",
     "languages": {
@@ -100,6 +111,7 @@
       "asia": "Azija",
       "eastAsia": "Vzhodna Azija",
       "europe": "Evropa",
+      "latinAmerica": "Latinska Amerika",
       "middleEastNorthAfrica": "Bližnji vzhod in Severna Afrika",
       "oceania": "Oceanija",
       "southAsia": "Južna Azija",
@@ -127,6 +139,10 @@
     "terms": "Pogoji za uporabo Glazecalc: brezplačen za lastne glazure in delo, pošten do skupnega strežnika in na voljo takšen, kot je.",
     "assistants": "Uporabljajte Glazecalc iz Claudea, Copilota, Cursorja ali Geminija prek MCP: kemija glazur, preverjanje mej, nadomestki, vodniki in vaši lastni recepti.",
     "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo.",
+    "cones": "Ortonovi in pirometrični stožci SK od 022 naprej: temperature v °C in °F, hitrost segrevanja, za katero velja preglednica, in vir podatkov.",
+    "materials": "Surovine v standardni knjižnici Glazecalc, od glinencev in glin do frit in virov bora, vsaka z oksidno analizo, Segerjevo formulo in nevarnostmi.",
+    "materialInfo": "{name}: oksidna analiza, Segerjeva formula, izguba pri žarenju in nevarnosti v standardni knjižnici Glazecalc.",
+    "materialInfoLong": "{name} v standardni knjižnici glazurnih surovin Glazecalc: oksidna analiza, prispevek k Segerjevi formuli, izguba pri žarenju in nevarnosti.",
     "imageAlt": "Domača stran Glazecalc: brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
   },
   "notices": {
