@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Selles brauseris muudetud säte, et järgmine leht näitaks seda kohe, enne kui server vastab. <code>theme</code> ja <code>palette</code> värvivad lehe enne selle ilmumist ning <code>language</code> avab lehed teie keeles.",
-        "lasts": "Kuni te seda muudate. Väljalogimisel taastatakse see, mille valisite väljalogituna, kui midagi valisite, ja ülejäänu eemaldatakse."
+        "lasts": "Kuni te seda muudate. Midagi ei eemaldata iseenesest: kui naasete pärast peaaegu aastast eemalolekut, pakub teade nuppu teie sätete tühjendamiseks. Väljalogimisel taastatakse see, mille valisite väljalogituna, kui midagi valisite, ja ülejäänu eemaldatakse."
       },
       "visitor": {
         "purpose": "Väljalogituna valitud keel või see, et sulgesite tõlketeate, et see taastuks väljalogimisel.",
-        "lasts": "Kuni tühjendate brauseri salvestusruumi või kustutate selles brauseris konto."
+        "lasts": "Kuni tühjendate brauseri salvestusruumi või kustutate selles brauseris konto. Midagi ei eemaldata iseenesest: kui naasete pärast peaaegu aastast eemalolekut, pakub teade nuppu teie sätete tühjendamiseks."
       },
       "region": {
         "purpose": "Teegi loendi piirkonnafilter.",
-        "lasts": "Kuni seate filtri tagasi kõigile piirkondadele."
+        "lasts": "Kuni seate filtri tagasi kõigile piirkondadele. Midagi ei eemaldata iseenesest: kui naasete pärast peaaegu aastast eemalolekut, pakub teade nuppu teie sätete tühjendamiseks."
       },
       "includeAdditives": {
         "purpose": "Kas uutes retseptides arvestatakse lisaained Segeri valemisse, nagu viimati valisite.",
-        "lasts": "Kuni tühjendate brauseri salvestusruumi."
+        "lasts": "Kuni tühjendate brauseri salvestusruumi. Midagi ei eemaldata iseenesest: kui naasete pärast peaaegu aastast eemalolekut, pakub teade nuppu teie sätete tühjendamiseks."
       },
       "print": {
         "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept, segu või tööleht ja segu suurus.",
-        "lasts": "Kuni tühjendate brauseri salvestusruumi."
+        "lasts": "Kuni tühjendate brauseri salvestusruumi. Midagi ei eemaldata iseenesest: kui naasete pärast peaaegu aastast eemalolekut, pakub teade nuppu teie sätete tühjendamiseks."
+      },
+      "recipeLayout": {
+        "purpose": "Paigutus, mille valisite viimati retseptivormi jaoks: tavaline, töölaud või samm-sammult.",
+        "lasts": "Kuni tühjendate brauseri salvestusruumi. Midagi ei eemaldata iseenesest: kui naasete pärast peaaegu aastast eemalolekut, pakub teade nuppu teie sätete tühjendamiseks."
+      },
+      "settingsDates": {
+        "purpose": "Millal see brauser viimati Glazecalci ülaltoodud sätetega avas, et naasmisel pärast peaaegu aastast eemalolekut saaks näidata teadet, mis pakub need tühjendada, ja millise tõlketeate versiooni te sulgesite. Isikuandmeid pole.",
+        "lasts": "Seni, kuni mõnda neist sätetest siin hoitakse."
       },
       "token": {
         "purpose": "Glazecalci vana versiooni sisselogimisluba. Seda enam ei kirjutata.",

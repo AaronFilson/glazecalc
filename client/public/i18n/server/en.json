@@ -123,6 +123,16 @@
   "trash-full": "The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.",
   "firing-links-full": "A recipe can be linked to at most {most} firing logs. Unlink one to link another.",
   "account-limit": "An account can keep up to {limit} records in all: recipes, materials, notes, firing logs and the rest together. Please remove some to save more.",
+  "import-not-export": "This is not a Glazecalc data file. Please choose the JSON file from Download my data.",
+  "import-newer": "This file was made by a newer version of Glazecalc. Please reload the page and try again.",
+  "import-too-many": "This file holds {count} records. One import can take up to {most}. Nothing was imported.",
+  "import-invalid": "{count, plural, one {# record in this file cannot be read.} other {# records in this file cannot be read.}} Nothing was imported.",
+  "import-over-limit": "This import would add {count} records, but your account has room for {room} more. Nothing was imported.",
+  "import-busy": "An import into this account is already under way. Please wait for it to finish.",
+  "import-failed": "The import did not work because of a problem on our side. Nothing was imported.",
+  "import-done": "The import is done.",
+  "import-undone": "The import was taken back.",
+  "import-undo-gone": "This import can no longer be undone.",
   "not-shared": "This recipe is not shared, or the link is not complete.",
   "share-stopped": "The recipe is no longer shared. Its link no longer opens it.",
   "token-invalid": "The access token is not valid, has expired or was revoked.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.",
   "too-many-mcp": "Too many requests to the Glazecalc tools for AI assistants. Please wait a few minutes and try again.",
   "too-many-oauth": "Too many requests to connect apps from this address. Please wait a few minutes and try again.",
-  "too-many-registrations": "Too many apps registered themselves. Please try again later."
+  "too-many-registrations": "Too many apps registered themselves. Please try again later.",
+  "too-many-imports": "Too many imports into this account in the last hour. Please try again later."
 }

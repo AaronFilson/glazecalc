@@ -96,6 +96,7 @@
     "recordsHint": "Só num dispositivo usado apenas por si. Removidos quando termina a sessão.",
     "recordsBanner": "Não é possível aceder ao Glazecalc. A mostrar a cópia guardada neste dispositivo em {date}.",
     "recordsNotSaved": "Os seus registos não estão guardados neste dispositivo. Ligue-se à internet para os ver. Pode ativar esta opção na sua conta.",
+    "recordsBackOnline": "Voltou a estar ligado à internet. Recarregue para ver os seus registos mais recentes e voltar a guardar.",
     "recordsNotKept": "Este navegador não vai guardar uma cópia (navegação privada ou falta de espaço)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "As matérias-primas da biblioteca padrão do Glazecalc, de feldspatos e argilas a fritas e fontes de boro, com análise de óxidos, fórmula de Seger e perigos.",
     "materialInfo": "{name}: análise de óxidos, fórmula de Seger, perda ao fogo e perigos na biblioteca padrão do Glazecalc.",
     "materialInfoLong": "{name} na biblioteca padrão de matérias-primas para vidrados do Glazecalc: análise de óxidos, contribuição para a fórmula de Seger, perda ao fogo e perigos.",
-    "imageAlt": "A página inicial do Glazecalc: química de vidrados gratuita para ceramistas, ao lado de uma fotografia de conjuntos de cones depois da cozedura."
+    "imageAlt": "O logótipo do Glazecalc e o seu título, química de vidrados gratuita para ceramistas, ao lado de uma fotografia de conjuntos de cones depois da cozedura."
   },
   "notices": {
     "dismiss": "Dispensar",
@@ -341,6 +342,10 @@
     "suggest": "Sugerir uma correção",
     "english": "Ler o original em inglês",
     "close": "Fechar"
+  },
+  "settingsExpiry": {
+    "text": "Não utiliza o Glazecalc neste navegador há quase um ano. As suas definições aqui, como o tema e o idioma, são mantidas enquanto o utilizar. Pode apagá-las agora, se quiser. As definições guardadas na sua conta não são afetadas.",
+    "clear": "Apagar as minhas definições"
   },
   "unity": {
     "fluxes": "Fundentes – R₂O e RO",

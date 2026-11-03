@@ -123,6 +123,16 @@
   "trash-full": "A Lomtár megtelt, ezért egy hozzáférési token nem tud több elemet áthelyezni bele. Kérjük, előbb ürítsen ki belőle valamennyit a weboldalon.",
   "firing-links-full": "Egy recept legfeljebb {most} égetési naplóhoz kapcsolható. Válasszon le egyet, hogy másikat kapcsolhasson.",
   "account-limit": "Egy fiókban legfeljebb {limit} bejegyzés tárolható összesen: receptek, nyersanyagok, jegyzetek, égetési naplók és a többi együtt. Ha többet szeretne menteni, kérjük, távolítson el néhányat.",
+  "import-not-export": "Ez nem Glazecalc-adatfájl. Kérjük, válassza az Adataim letöltése részben kapott JSON-fájlt.",
+  "import-newer": "Ezt a fájlt a Glazecalc egy újabb verziója készítette. Kérjük, töltse újra az oldalt, és próbálja újra.",
+  "import-too-many": "Ez a fájl {count} bejegyzést tartalmaz. Egy importálás legfeljebb {most} bejegyzést fogadhat. Semmi nem került át.",
+  "import-invalid": "{count, plural, one {A fájlban # bejegyzés nem olvasható.} other {A fájlban # bejegyzés nem olvasható.}} Semmi nem került át.",
+  "import-over-limit": "Ez az importálás {count} bejegyzést adna hozzá, de a fiókjában már csak {room} számára van hely. Semmi nem került át.",
+  "import-busy": "Ebbe a fiókba már folyamatban van egy importálás. Kérjük, várja meg, amíg befejeződik.",
+  "import-failed": "Az importálás a mi oldalunkon fellépő hiba miatt nem sikerült. Semmi nem került át.",
+  "import-done": "Az importálás kész.",
+  "import-undone": "Az importálás visszavonva.",
+  "import-undo-gone": "Ez az importálás már nem vonható vissza.",
   "not-shared": "Ez a recept nincs megosztva, vagy a link nem teljes.",
   "share-stopped": "A recept már nincs megosztva. A linkje már nem nyitja meg.",
   "token-invalid": "A hozzáférési token érvénytelen, lejárt, vagy visszavonták.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Túl sok módosítást végeztek ezen a fiókon hozzáférési tokenekkel. Kérjük, várjon egy kicsit, és próbálja újra; a weboldalon végzett módosítások továbbra is működnek.",
   "too-many-mcp": "Túl sok kérés érkezett a Glazecalc MI-asszisztenseknek szánt eszközeihez. Kérjük, várjon néhány percet, majd próbálja újra.",
   "too-many-oauth": "Túl sok alkalmazás-csatlakoztatási kérés érkezett erről a címről. Kérjük, várjon néhány percet, és próbálja újra.",
-  "too-many-registrations": "Túl sok alkalmazás regisztrálta saját magát. Kérjük, próbálja újra később."
+  "too-many-registrations": "Túl sok alkalmazás regisztrálta saját magát. Kérjük, próbálja újra később.",
+  "too-many-imports": "Túl sok importálás történt ebbe a fiókba az elmúlt órában. Kérjük, próbálja újra később."
 }

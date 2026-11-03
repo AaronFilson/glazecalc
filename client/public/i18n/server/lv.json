@@ -123,6 +123,16 @@
   "trash-full": "Atkritne ir pilna, tāpēc piekļuves marķieris tajā vairs neko nevar pārvietot. Vispirms iztukšojiet daļu tīmekļa vietnē.",
   "firing-links-full": "Lielākais apdedzināšanas žurnālu skaits, ko var sasaistīt ar recepti: {most}. Atsaistiet vienu, lai sasaistītu citu.",
   "account-limit": "Kontā kopā var glabāt ierobežotu ierakstu skaitu ({limit}): receptes, izejvielas, piezīmes, apdedzināšanas žurnālus un pārējo kopā. Lai saglabātu vairāk, dzēsiet dažus.",
+  "import-not-export": "Šis nav Glazecalc datu fails. Izvēlieties JSON failu no sadaļas “Manu datu lejupielāde”.",
+  "import-newer": "Šis fails izveidots ar jaunāku Glazecalc versiju. Pārlādējiet lapu un mēģiniet vēlreiz.",
+  "import-too-many": "Ierakstu skaits šajā failā: {count}. Vienā importēšanā var būt ne vairāk kā {most}. Nekas netika importēts.",
+  "import-invalid": "{count, plural, zero {Nenolasāmo ierakstu skaits šajā failā: #.} one {Nenolasāmo ierakstu skaits šajā failā: #.} other {Nenolasāmo ierakstu skaits šajā failā: #.}} Nekas netika importēts.",
+  "import-over-limit": "Šī importēšana pievienotu ierakstus: {count}, bet jūsu kontā vēl ir vieta tikai {room}. Nekas netika importēts.",
+  "import-busy": "Šajā kontā jau notiek importēšana. Lūdzu, uzgaidiet, līdz tā beigsies.",
+  "import-failed": "Importēšana neizdevās mūsu puses problēmas dēļ. Nekas netika importēts.",
+  "import-done": "Importēšana pabeigta.",
+  "import-undone": "Importēšana atsaukta.",
+  "import-undo-gone": "Šo importēšanu vairs nevar atsaukt.",
   "not-shared": "Šī recepte netiek kopīgota, vai arī saite nav pilnīga.",
   "share-stopped": "Recepte vairs netiek kopīgota. Tās saite to vairs neatver.",
   "token-invalid": "Piekļuves marķieris nav derīgs, ir beidzies vai anulēts.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Ar piekļuves marķieriem šajā kontā veikts pārāk daudz izmaiņu. Mazliet uzgaidiet un mēģiniet vēlreiz; izmaiņas tīmekļa vietnē joprojām darbojas.",
   "too-many-mcp": "Pārāk daudz pieprasījumu Glazecalc rīkiem mākslīgā intelekta asistentiem. Pagaidiet dažas minūtes un mēģiniet vēlreiz.",
   "too-many-oauth": "No šīs adreses ir pārāk daudz lietotņu pievienošanas pieprasījumu. Pagaidiet dažas minūtes un mēģiniet vēlreiz.",
-  "too-many-registrations": "Pārāk daudz lietotņu reģistrējās pašas. Mēģiniet vēlreiz vēlāk."
+  "too-many-registrations": "Pārāk daudz lietotņu reģistrējās pašas. Mēģiniet vēlreiz vēlāk.",
+  "too-many-imports": "Pēdējās stundas laikā šajā kontā veikts pārāk daudz importēšanu. Mēģiniet vēlāk."
 }

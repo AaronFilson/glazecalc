@@ -143,8 +143,10 @@ type Chemistry = ReturnType<typeof analysisOf>['result'];
  * A recipe given to a blend or a comparison, by its name ("Recipe A"): its materials found, some amount above nothing,
  * and its unity formula worked out, or a ToolProblem naming the letter.
  */
-export const cornerOf = (lines: Line[], name: string, lang: string) => {
-  const materials = resolveLines(lines);
+export const cornerOf = (lines: Line[], name: string, lang: string) => cornerFrom(resolveLines(lines), name, lang);
+
+/** cornerOf for lines whose materials are already found (a saved recipe's own copies, say). */
+export const cornerFrom = (materials: RecipeLine[], name: string, lang: string) => {
   if (!materials.some((line) => Number(line.amount) > 0)) {
     throw new ToolProblem(`${name} has no amounts to mix.`);
   }

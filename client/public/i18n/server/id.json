@@ -123,6 +123,16 @@
   "trash-full": "Sampah penuh, sehingga token akses tidak dapat memindahkan apa pun lagi ke dalamnya. Silakan kosongkan sebagian di situs web dulu.",
   "firing-links-full": "Satu resep dapat ditautkan ke paling banyak {most} catatan pembakaran. Putuskan satu tautan untuk menautkan yang lain.",
   "account-limit": "Satu akun dapat menyimpan paling banyak {limit} catatan secara keseluruhan: resep, bahan, catatan, catatan pembakaran, dan sisanya digabungkan. Silakan hapus sebagian untuk menyimpan lebih banyak.",
+  "import-not-export": "Ini bukan berkas data Glazecalc. Silakan pilih berkas JSON dari Unduh data saya.",
+  "import-newer": "Berkas ini dibuat oleh versi Glazecalc yang lebih baru. Silakan muat ulang halaman dan coba lagi.",
+  "import-too-many": "Berkas ini berisi {count} catatan. Satu impor dapat menampung paling banyak {most}. Tidak ada yang diimpor.",
+  "import-invalid": "{count, plural, other {# catatan di berkas ini tidak dapat dibaca.}} Tidak ada yang diimpor.",
+  "import-over-limit": "Impor ini akan menambahkan {count} catatan, tetapi akun Anda hanya punya ruang untuk {room} lagi. Tidak ada yang diimpor.",
+  "import-busy": "Impor ke akun ini sedang berlangsung. Silakan tunggu sampai selesai.",
+  "import-failed": "Impor tidak berhasil karena masalah di pihak kami. Tidak ada yang diimpor.",
+  "import-done": "Impor selesai.",
+  "import-undone": "Impor telah diurungkan.",
+  "import-undo-gone": "Impor ini tidak dapat diurungkan lagi.",
   "not-shared": "Resep ini tidak dibagikan, atau tautannya tidak lengkap.",
   "share-stopped": "Resep ini tidak lagi dibagikan. Tautannya tidak lagi membukanya.",
   "token-invalid": "Token akses tidak valid, sudah kedaluwarsa, atau telah dicabut.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Terlalu banyak perubahan dibuat pada akun ini dengan token akses. Silakan tunggu sebentar lalu coba lagi; perubahan di situs web tetap berfungsi.",
   "too-many-mcp": "Terlalu banyak permintaan ke alat Glazecalc untuk asisten AI. Silakan tunggu beberapa menit lalu coba lagi.",
   "too-many-oauth": "Terlalu banyak permintaan untuk menghubungkan aplikasi dari alamat ini. Silakan tunggu beberapa menit dan coba lagi.",
-  "too-many-registrations": "Terlalu banyak aplikasi yang mendaftarkan dirinya sendiri. Silakan coba lagi nanti."
+  "too-many-registrations": "Terlalu banyak aplikasi yang mendaftarkan dirinya sendiri. Silakan coba lagi nanti.",
+  "too-many-imports": "Terlalu banyak impor ke akun ini dalam satu jam terakhir. Silakan coba lagi nanti."
 }

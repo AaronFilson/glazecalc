@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Eine Einstellung, die Sie in diesem Browser geändert haben, damit die nächste Seite sie sofort zeigt, bevor der Server antwortet. <code>theme</code> und <code>palette</code> färben die Seite, bevor sie erscheint, und <code>language</code> öffnet Seiten in Ihrer Sprache.",
-        "lasts": "Bis Sie sie ändern. Beim Abmelden wird wiederhergestellt, was Sie im abgemeldeten Zustand gewählt hatten, falls überhaupt etwas, und der Rest wird entfernt."
+        "lasts": "Bis Sie sie ändern. Nichts wird von selbst entfernt: Wenn Sie nach fast einem Jahr Abwesenheit zurückkehren, bietet ein Hinweis eine Schaltfläche an, um Ihre Einstellungen zu löschen. Beim Abmelden wird wiederhergestellt, was Sie im abgemeldeten Zustand gewählt hatten, falls überhaupt etwas, und der Rest wird entfernt."
       },
       "visitor": {
         "purpose": "Die Sprache, die Sie gewählt haben, oder dass Sie den Übersetzungshinweis geschlossen haben, während Sie abgemeldet waren, damit es nach dem Abmelden wieder gilt.",
-        "lasts": "Bis Sie den Speicher Ihres Browsers löschen oder in diesem Browser ein Konto löschen."
+        "lasts": "Bis Sie den Speicher Ihres Browsers löschen oder in diesem Browser ein Konto löschen. Nichts wird von selbst entfernt: Wenn Sie nach fast einem Jahr Abwesenheit zurückkehren, bietet ein Hinweis eine Schaltfläche an, um Ihre Einstellungen zu löschen."
       },
       "region": {
         "purpose": "Der Regionsfilter einer Liste in der Bibliothek.",
-        "lasts": "Bis Sie den Filter wieder auf alle Regionen stellen."
+        "lasts": "Bis Sie den Filter wieder auf alle Regionen stellen. Nichts wird von selbst entfernt: Wenn Sie nach fast einem Jahr Abwesenheit zurückkehren, bietet ein Hinweis eine Schaltfläche an, um Ihre Einstellungen zu löschen."
       },
       "includeAdditives": {
         "purpose": "Ob neue Rezepte ihre Zusätze in der Segerformel mitzählen, wie Sie es zuletzt gewählt haben.",
-        "lasts": "Bis Sie den Speicher Ihres Browsers löschen."
+        "lasts": "Bis Sie den Speicher Ihres Browsers löschen. Nichts wird von selbst entfernt: Wenn Sie nach fast einem Jahr Abwesenheit zurückkehren, bietet ein Hinweis eine Schaltfläche an, um Ihre Einstellungen zu löschen."
       },
       "print": {
         "purpose": "Ihre letzten Einstellungen zum Drucken eines Rezepts: das ganze Rezept, ein Ansatz oder das Arbeitsblatt, und die Ansatzgröße.",
-        "lasts": "Bis Sie den Speicher Ihres Browsers löschen."
+        "lasts": "Bis Sie den Speicher Ihres Browsers löschen. Nichts wird von selbst entfernt: Wenn Sie nach fast einem Jahr Abwesenheit zurückkehren, bietet ein Hinweis eine Schaltfläche an, um Ihre Einstellungen zu löschen."
+      },
+      "recipeLayout": {
+        "purpose": "Die Ansicht, die Sie zuletzt für das Rezeptformular gewählt haben: Standard, Werkbank oder Schritt für Schritt.",
+        "lasts": "Bis Sie den Speicher Ihres Browsers löschen. Nichts wird von selbst entfernt: Wenn Sie nach fast einem Jahr Abwesenheit zurückkehren, bietet ein Hinweis eine Schaltfläche an, um Ihre Einstellungen zu löschen."
+      },
+      "settingsDates": {
+        "purpose": "Wann dieser Browser Glazecalc zuletzt mit den Einstellungen oben geöffnet hat, damit bei einer Rückkehr nach fast einem Jahr Abwesenheit der Hinweis erscheinen kann, der anbietet, sie zu löschen, und welche Version des Übersetzungshinweises Sie geschlossen haben. Keine personenbezogenen Daten.",
+        "lasts": "Solange eine dieser Einstellungen hier gespeichert ist."
       },
       "token": {
         "purpose": "Ein Anmelde-Token aus einer alten Version von Glazecalc. Es wird heute nicht mehr geschrieben.",

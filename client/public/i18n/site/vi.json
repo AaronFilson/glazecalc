@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Một cài đặt bạn đã đổi trên trình duyệt này, để trang tiếp theo hiển thị nó ngay, trước khi máy chủ trả lời. <code>theme</code> và <code>palette</code> tô màu trang trước khi nó xuất hiện, và <code>language</code> mở các trang bằng ngôn ngữ của bạn.",
-        "lasts": "Cho đến khi bạn đổi nó. Đăng xuất sẽ đặt lại những gì bạn đã chọn khi chưa đăng nhập, nếu có, và xóa phần còn lại."
+        "lasts": "Cho đến khi bạn đổi nó. Không có gì tự bị xóa: nếu bạn quay lại sau gần một năm vắng mặt, một ghi chú sẽ đưa ra nút để xóa cài đặt của bạn. Đăng xuất sẽ đặt lại những gì bạn đã chọn khi chưa đăng nhập, nếu có, và xóa phần còn lại."
       },
       "visitor": {
         "purpose": "Ngôn ngữ bạn đã chọn, hoặc việc bạn đã đóng ghi chú bản dịch, khi chưa đăng nhập, để nó trở lại khi bạn đăng xuất.",
-        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt hoặc xóa một tài khoản trên trình duyệt này."
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt hoặc xóa một tài khoản trên trình duyệt này. Không có gì tự bị xóa: nếu bạn quay lại sau gần một năm vắng mặt, một ghi chú sẽ đưa ra nút để xóa cài đặt của bạn."
       },
       "region": {
         "purpose": "Bộ lọc khu vực trên một danh sách thư viện.",
-        "lasts": "Cho đến khi bạn đặt bộ lọc về tất cả khu vực."
+        "lasts": "Cho đến khi bạn đặt bộ lọc về tất cả khu vực. Không có gì tự bị xóa: nếu bạn quay lại sau gần một năm vắng mặt, một ghi chú sẽ đưa ra nút để xóa cài đặt của bạn."
       },
       "includeAdditives": {
         "purpose": "Việc các công thức men mới có tính phụ gia của chúng vào công thức Seger hay không, như bạn đã chọn lần gần nhất.",
-        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt."
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt. Không có gì tự bị xóa: nếu bạn quay lại sau gần một năm vắng mặt, một ghi chú sẽ đưa ra nút để xóa cài đặt của bạn."
       },
       "print": {
         "purpose": "Các lựa chọn gần nhất của bạn để in một công thức men: toàn bộ công thức men, một mẻ hoặc bảng tính, và cỡ mẻ.",
-        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt."
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt. Không có gì tự bị xóa: nếu bạn quay lại sau gần một năm vắng mặt, một ghi chú sẽ đưa ra nút để xóa cài đặt của bạn."
+      },
+      "recipeLayout": {
+        "purpose": "Bố cục bạn đã chọn lần gần nhất cho biểu mẫu công thức men: tiêu chuẩn, bàn làm việc hoặc từng bước có hướng dẫn.",
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt. Không có gì tự bị xóa: nếu bạn quay lại sau gần một năm vắng mặt, một ghi chú sẽ đưa ra nút để xóa cài đặt của bạn."
+      },
+      "settingsDates": {
+        "purpose": "Lần cuối trình duyệt này mở Glazecalc với các cài đặt ở trên, để khi quay lại sau gần một năm vắng mặt có thể hiển thị ghi chú đề nghị xóa chúng, và phiên bản nào của ghi chú bản dịch mà bạn đã đóng. Không có dữ liệu cá nhân.",
+        "lasts": "Chừng nào còn bất kỳ cài đặt nào trong số đó được giữ ở đây."
       },
       "token": {
         "purpose": "Một mã thông báo đăng nhập từ một phiên bản cũ của Glazecalc. Giờ nó không bao giờ được ghi.",

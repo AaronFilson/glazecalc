@@ -1164,7 +1164,7 @@ describe('MCP: the guides, resources and prompts', () => {
     }
   });
 
-  it('offers seven prompts, each naming the tools to use', async () => {
+  it('offers eight prompts, each naming the tools to use', async () => {
     const { prompts } = await result('prompts/list');
     expect(prompts.map((p: Json) => p.name).sort()).to.eql([
       'diagnose_glaze_fault',
@@ -1173,12 +1173,16 @@ describe('MCP: the guides, resources and prompts', () => {
       'glaze_course_lesson',
       'make_lead_free',
       'replace_discontinued',
+      'teach_me',
       'what_does_this_material_do'
     ]);
-    // A lesson needs a unit, and the material prompt a material; the recipe is the learner's own, if they have one.
+    // A lesson needs a unit, the material prompt a material and teach_me a topic; the recipe is the learner's own, if they have one.
+    const teach = prompts.find((p: Json) => p.name === 'teach_me');
+    expect(teach.arguments.find((a: Json) => a.name === 'topic')).to.include({ required: true });
+    expect(teach.arguments.find((a: Json) => a.name === 'recipe').required ?? false).to.equal(false);
     // Dictation takes the person's notes instead (server/test/dictation_tests.ts).
     for (const prompt of prompts.filter(
-      (p: Json) => !['glaze_course_lesson', 'what_does_this_material_do', 'dictation'].includes(p.name)
+      (p: Json) => !['glaze_course_lesson', 'what_does_this_material_do', 'dictation', 'teach_me'].includes(p.name)
     )) {
       expect(prompt.description, prompt.name).to.have.length.above(40);
       expect(
@@ -1496,6 +1500,38 @@ describe('MCP: personal access tokens', () => {
       const theirs = await call('get_recipe', { id: otherRecipeId }, headers);
       expect(theirs.isError).to.equal(true);
       expect((await call('get_recipe', { id: 'nonsense' }, headers)).isError).to.equal(true);
+    });
+
+    it('compare_recipes takes the account’s own saved recipes by id, never someone else’s', async () => {
+      const lines = [
+        { material: 'Custer Spar', amount: 40 },
+        { material: 'Whiting', amount: 20 },
+        { material: 'EPK', amount: 20 },
+        { material: 'Silica', amount: 20 }
+      ];
+      const byId = await data('compare_recipes', { aRecipeId: recipeId, b: lines }, headers);
+      expect(byId.a).to.include({ label: 'Satin white', recipeId });
+      expect(byId.b.label).to.equal('B');
+      // The saved recipe is the same as its lines given inline: no differences, an unchanged summary.
+      expect(byId.differences).to.eql([]);
+      expect(byId.summary.expansion).to.include({ change: 0, fitFlag: false });
+      const labelled = await data(
+        'compare_recipes',
+        { aRecipeId: recipeId, bRecipeId: recipeId, labels: ['Mine', 'Again'] },
+        headers
+      );
+      expect(labelled.a).to.include({ label: 'Mine', recipeId });
+      const theirs = await call('compare_recipes', { aRecipeId: otherRecipeId, b: lines }, headers);
+      expect(theirs.isError).to.equal(true);
+      expect(theirs.content[0]!.text).to.include('No recipe with id');
+      expect((await call('compare_recipes', { aRecipeId: goneId, b: lines }, headers)).content[0]!.text).to.include(
+        'No recipe with id'
+      );
+      expect((await call('compare_recipes', { aRecipeId: 'nonsense', b: lines }, headers)).isError).to.equal(true);
+      // Signed out, the same call asks to sign in or give the lines.
+      const out = await call('compare_recipes', { aRecipeId: recipeId, b: lines });
+      expect(out.isError).to.equal(true);
+      expect(out.content[0]!.text).to.include('Sign in to Glazecalc');
     });
 
     it('get_recipe checks a recipe for its saved firing band against the limit set chosen in Settings', async () => {

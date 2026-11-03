@@ -1104,5 +1104,21 @@
     "add": "ውጤት አክል ለ",
     "addButton": "አክል",
     "saveFailed": "የማቃጠል መዝገቡ የት እንደተቃጠለ ማስቀመጥ አልተቻለም።"
+  },
+  "layout": {
+    "label": "የቅጹ አቀማመጥ",
+    "standard": "መደበኛ",
+    "workbench": "የሥራ ጠረጴዛ",
+    "guided": "ደረጃ በደረጃ",
+    "side": "ፎርሙላ እና ገደቦች",
+    "fixFold": "አስተካክል እና ቀይር ({count})",
+    "detailsFold": "ዝርዝሮች፦ ቀን፣ ማስታወሻ፣ ተኩስ፣ ወጪ፣ አደጋዎች",
+    "steps": "ደረጃዎች",
+    "stepRecipe": "አዘገጃጀት",
+    "stepAmounts": "መጠኖች",
+    "stepCheck": "ፈትሽ",
+    "amountsHint": "እያንዳንዱን መጠን ይተይቡ። Enter ወደ ቀጣዩ መጠን ይወስዳል።",
+    "back": "ተመለስ",
+    "next": "ቀጣይ"
   }
 }

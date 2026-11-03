@@ -225,10 +225,92 @@ describe('the records kept on this device', () => {
     await vi.waitFor(async () => expect((await records.read('prices'))!.savedAt.getTime()).toBe(later));
     expect((await records.read('recipe'))!.savedAt.getTime()).toBe(first);
 
+    // Settings alone do not make a page read-only; beside the recipes, whose page saves with them, they count.
     await offlineGet(API + '/prices');
-    expect(records.showingCopy()?.getTime()).toBe(later);
+    expect(records.showingCopy()).toBeNull();
+    expect(records.readOnly()).toBe(false);
     await offlineGet(API + '/recipe/getAll');
     expect(records.showingCopy()?.getTime()).toBe(first);
+  });
+
+  it('counts a settings copy beside the recipes when it is the oldest', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await records.read('prices')).not.toBeNull());
+    const prices = (await records.read('prices'))!.savedAt.getTime();
+    vi.spyOn(Date, 'now').mockReturnValue(prices + 3 * 60 * 60 * 1000);
+    const recipes = get(API + '/recipe/getAll');
+    await answerNext(API + '/recipe/getAll', RECIPES);
+    await recipes;
+    await vi.waitFor(async () => expect((await records.read('recipe'))!.savedAt.getTime()).toBeGreaterThan(prices));
+    await offlineGet(API + '/prices');
+    await offlineGet(API + '/recipe/getAll');
+    expect(records.showingCopy()?.getTime()).toBe(prices);
+  });
+
+  it('is read-only per page: a new page starts afresh, and its date is its own collection', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await records.read('notes')).not.toBeNull());
+    const recipeAt = (await records.read('recipe'))!.savedAt.getTime();
+    const later = recipeAt + 3 * 60 * 60 * 1000;
+    vi.spyOn(Date, 'now').mockReturnValue(later);
+    const notes = get(API + '/notes/getAll');
+    await answerNext(API + '/notes/getAll', []);
+    await notes;
+    await vi.waitFor(async () => expect((await records.read('notes'))!.savedAt.getTime()).toBe(later));
+
+    // Offline on the recipe page.
+    await offlineGet(API + '/recipe/getAll');
+    expect(records.showingCopy()?.getTime()).toBe(recipeAt);
+    // Then the notes page, still offline: its own copy's date.
+    records.pageStarted();
+    expect(records.readOnly()).toBe(false);
+    await offlineGet(API + '/notes/getAll');
+    expect(records.showingCopy()?.getTime()).toBe(later);
+    // The network is back and another page loads fresh: not read-only, though a copy was shown before.
+    records.pageStarted();
+    const fresh = get(API + '/notes/getAll');
+    await answerNext(API + '/notes/getAll', []);
+    await fresh;
+    expect(records.readOnly()).toBe(false);
+    expect(records.showingCopy()).toBeNull();
+  });
+
+  it('forgets "not saved on this device" when a new page starts', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await offlineGet(API + '/recipe/getAll');
+    expect(records.notSaved()).toBe(true);
+    records.pageStarted();
+    expect(records.notSaved()).toBe(false);
+  });
+
+  it('offers to reload when the network comes back, until the page loads again or another starts', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+    await offlineGet(API + '/recipe/getAll');
+    expect(records.backOnline()).toBe(false);
+    window.dispatchEvent(new Event('online'));
+    expect(records.backOnline()).toBe(true);
+    await answerNext(API + '/recipe/getAll', RECIPES);
+    expect(records.backOnline()).toBe(true);
+    expect(records.readOnly()).toBe(true);
+    const fresh = get(API + '/recipe/getAll');
+    await answerNext(API + '/recipe/getAll', RECIPES);
+    await fresh;
+    expect(records.backOnline()).toBe(false);
+    expect(records.readOnly()).toBe(false);
+
+    await offlineGet(API + '/recipe/getAll');
+    window.dispatchEvent(new Event('online'));
+    await answerNext(API + '/recipe/getAll', RECIPES);
+    records.pageStarted();
+    expect(records.backOnline()).toBe(false);
   });
 
   it('does not answer a 401 from the copy, and the session it ends deletes the copy', async () => {

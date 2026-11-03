@@ -109,7 +109,7 @@ test.describe('home and navigation', () => {
     await expect(visitor.locator('h1')).toHaveText('Privacy');
     await expect(visitor.locator('a[href="mailto:privacy@glazecalcapp.com"]').first()).toBeVisible();
     const storage = visitor.locator('#storage');
-    await expect(storage.locator('tbody tr')).toHaveCount(14);
+    await expect(storage.locator('tbody tr')).toHaveCount(16);
     await expect(storage.locator('tbody tr').first()).toContainText('glazecalc_session');
     await visitor.close();
   });

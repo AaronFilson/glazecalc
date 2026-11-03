@@ -48,7 +48,20 @@ an assistant to act for one person that is not their web session.
   Stull regions the tiles cross; the math is `varyMaterial` in `lib/recipe/blends.js`), and
   `compare_recipes`, two recipes side by side with the oxide-by-oxide differences and the
   materials in one or both, the same comparison `blend_recipes` makes with two steps, sharing
-  its tile and difference code. Every recipe answer from these tools (`analyze_recipe`,
+  its tile and difference code. Round 12 (2026-11, server 1.4.0) extended both, backward
+  compatible: `compare_recipes` also takes the signed-in person's own saved recipes by id
+  (`aRecipeId`, `bRecipeId`: one of lines or id per side; only the caller's recipes, read as
+  `get_recipe` reads them, with `recipes:read`; signed out, a refusal asking to sign in or give the
+  lines) and adds `summary`, the differences that matter: the flux ratio (R2O against RO), silica to
+  alumina, silica, alumina and boron, expansion with `fitFlag` when the two differ by 0.3 x10^-6 per °C
+  or more (`EXPANSION_FIT_FLAG`, **a default to be confirmed by the owner or a glaze chemist**), the
+  Stull regions, the cautions only one side has, and the cone fit verdicts. `vary_material` adds each
+  tile's `fluxRatio` and, in `trend`, the move of the R2O share, `firstCaution` (the first tile with a
+  limit caution the first tile lacks) and `firstConeFitChange`; the cap stays at 11 tiles. These two
+  are the server's first tools to declare an `outputSchema` (zod loose objects, so fields added later
+  do not break a client validating against an older listing; the SDK checks every answer against it
+  and skips refusals); the other tools may follow. Tool names are kept: no `line_blend` alias.
+  Every recipe answer from these tools (`analyze_recipe`,
   `check_limits`, the tiles) carries `stull`, the recipe's place on the Stull chart the recipe
   page draws (`stullPoint`, `lib/recipe/analysis.js`): silica and alumina in moles, the region
   and whether it is in the crazed area. The chart itself is not offered as a window in the
@@ -91,7 +104,14 @@ an assistant to act for one person that is not their web session.
   (read back first, saved only on a yes): a notebook entry, `about` a recipe or firing log when it is
   one's, a recipe, a firing log (`create_firing_log`) or a recipe's result in a firing (`link_firing`). A sixth, `what_does_this_material_do` (2026-10), runs
   `get_material` and `vary_material` on a base the person gives, or asks for one (it never invents
-  one), and explains the trend and the Stull walk. John Britt is named and his episodes linked by his
+  one), and explains the trend and the Stull walk. A seventh, `teach_me` (2026-11), takes a free
+  topic and a level (`new`, the default, `some` or `experienced`) with an optional recipe and cone:
+  it attaches up to two guide sections (the matched unit's reads, else the best `search_guides` hits),
+  asks for one small experiment with one tool, what to look for on the tile, and a question to check
+  understanding. `matchTopic` (`server/mcp/course.ts`: unit id or number, title, then a keyword list
+  per unit) decides whether the topic is a course unit's; only then are that unit's videos linked, by
+  his titles with credit and the same request never to retell, summarise or quote them. With no match
+  no video is named, and the prompt tells the assistant not to guess one. John Britt is named and his episodes linked by his
   titles; nothing of what he says is copied, quoted or retold, and the course guide's tests check
   that each Watch line is a bare link, that nothing is embedded, and that every tool or prompt an
   exercise names exists.

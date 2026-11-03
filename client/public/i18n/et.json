@@ -96,6 +96,7 @@
     "recordsHint": "Ainult seadmes, mida kasutate üksnes teie. Eemaldatakse väljalogimisel.",
     "recordsBanner": "Glazecalciga ei saa ühendust. Kuvatakse koopiat, mis salvestati selles seadmes {date}.",
     "recordsNotSaved": "Teie andmed ei ole selles seadmes salvestatud. Nende nägemiseks looge internetiühendus. Selle saate sisse lülitada oma kontol.",
+    "recordsBackOnline": "Olete taas võrgus. Laadige leht uuesti, et näha oma viimaseid kirjeid ja saaksite jälle salvestada.",
     "recordsNotKept": "See brauser ei hoia koopiat (privaatne sirvimine või ruumi pole)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalci standardteegi toorained põldpaodest ja savidest fritideni ja boori allikateni, igaühel oksiidanalüüs, Segeri valem ja ohud.",
     "materialInfo": "{name}: oksiidanalüüs, Segeri valem, hõõgumiskadu ja ohud Glazecalci standardteegis.",
     "materialInfoLong": "{name} Glazecalci glasuuritoorainete standardteegis: oksiidanalüüs, panus Segeri valemisse, hõõgumiskadu ja ohud.",
-    "imageAlt": "Glazecalci avaleht: tasuta glasuurikeemia keraamikutele, kõrval foto põletatud koonustest."
+    "imageAlt": "Glazecalci logo ja pealkiri „tasuta glasuurikeemia keraamikutele”, kõrval foto põletatud koonustest."
   },
   "notices": {
     "dismiss": "Sulge",
@@ -219,7 +220,7 @@
     "oxProbe": "Hapnikuandur",
     "atmosphere": "Atmosfäär",
     "weather": "Ilm",
-    "ramp": "Ramp",
+    "ramp": "Tõus",
     "hold": "Hoid",
     "comments": "Märkused",
     "drawTile": "Väljavõetav proov",
@@ -341,6 +342,10 @@
     "suggest": "Soovita parandust",
     "english": "Loe ingliskeelset originaali",
     "close": "Sulge"
+  },
+  "settingsExpiry": {
+    "text": "Te pole Glazecalci selles brauseris peaaegu aasta kasutanud. Teie sätteid siin, näiteks teemat ja keelt, hoitakse alles seni, kuni te seda kasutate. Soovi korral saate need nüüd tühjendada. Teie kontole salvestatud sätteid see ei puuduta.",
+    "clear": "Tühjenda mu sätted"
   },
   "unity": {
     "fluxes": "Sulandajad – R₂O ja RO",

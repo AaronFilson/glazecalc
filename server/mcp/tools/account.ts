@@ -127,7 +127,7 @@ const ownRecord = async <T>(
 };
 
 /** A saved recipe's lines as the recipe tools read them: its own copies of its materials. */
-const savedLines = (materials: unknown[]): RecipeLine[] =>
+export const savedLines = (materials: unknown[]): RecipeLine[] =>
   materials
     .filter(
       (m): m is MaterialRecord & { amount?: string } => Boolean(m) && typeof m === 'object' && 'name' in (m as object)

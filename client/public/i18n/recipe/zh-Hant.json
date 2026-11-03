@@ -1104,5 +1104,21 @@
     "add": "為以下條件新增結果",
     "addButton": "新增",
     "saveFailed": "無法儲存這筆燒窯紀錄是在哪裡燒的。"
+  },
+  "layout": {
+    "label": "表單版面",
+    "standard": "標準",
+    "workbench": "工作台",
+    "guided": "分步引導",
+    "side": "化學式與限值",
+    "fixFold": "修正與替換（{count}）",
+    "detailsFold": "詳細資料：日期、備註、燒成、成本、危害",
+    "steps": "步驟",
+    "stepRecipe": "釉方",
+    "stepAmounts": "用量",
+    "stepCheck": "檢查",
+    "amountsHint": "逐項輸入用量。按 Enter 跳到下一個用量。",
+    "back": "上一步",
+    "next": "下一步"
   }
 }

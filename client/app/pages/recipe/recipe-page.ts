@@ -37,7 +37,15 @@ import { Busy } from '../../shared/busy';
 import { fixed, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
 import { DatePipe, FixedPipe, PlainPipe } from '../../shared/format-pipes';
 import { NumberInput } from '../../shared/number-input';
-import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
+import { Check, FieldCheck, FieldChecks, required, reveal } from '../../shared/field-checks';
+import {
+  GUIDED_STEPS,
+  LAYOUT_OPTIONS,
+  RecipeLayout,
+  layoutFromParam,
+  storeLayout,
+  storedLayout
+} from './recipe-layout';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
 import { chosenRegion, findNamed, folded, hasLead } from '../../shared/library-info';
@@ -327,8 +335,149 @@ const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMed
       width: auto;
       flex: 0 1 14rem;
     }
+
+    /* The form's layout (recipe-layout.ts): a small switch above the editor. */
+    .layout-choice {
+      display: flex;
+      align-items: center;
+      margin-block-end: 0.75rem;
+    }
+    .layout-choice legend {
+      float: none;
+      width: auto;
+      margin: 0;
+      margin-inline-end: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    /* A, the workbench: the recipe at the start, its formula and limits beside it, in view as it scrolls. */
+    .layout-workbench .workbench-side {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 0;
+    }
+    .workbench-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+    .workbench-more {
+      position: relative;
+    }
+    .workbench-more > summary {
+      list-style: none;
+    }
+    .workbench-more > summary::-webkit-details-marker {
+      display: none;
+    }
+    .workbench-more-list {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.3rem;
+      margin-block-start: 0.3rem;
+    }
+    .workbench-status {
+      margin-block: 0.25rem 0.5rem;
+    }
+    .workbench-fold {
+      margin-block: 1rem;
+      border-block-start: 1px solid var(--gc-border);
+      padding-block-start: 0.75rem;
+    }
+    .workbench-fold > summary {
+      font-weight: 600;
+      margin-block-end: 0.5rem;
+    }
+    /* On a phone: the formula on one line, kept at the top, with a way to the whole of it. */
+    .workbench-peek {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.25rem 0.5rem;
+      margin-block-end: 0.5rem;
+      padding: 0.4rem 0.6rem;
+      background: var(--gc-surface-2);
+      color: var(--gc-text);
+      border: 1px solid var(--gc-border);
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .workbench-peek-text {
+      flex: 1 1 12rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    /* What gets the focus scrolls clear of the peek bar (WCAG 2.4.11). */
+    .layout-workbench :is(input, select, textarea, button, a, summary, [tabindex]) {
+      scroll-margin-block-start: 6rem;
+    }
+    @media (min-width: 992px) {
+      .layout-workbench {
+        grid-template-columns: minmax(0, 1fr) minmax(19rem, 26rem);
+      }
+      .workbench-peek {
+        display: none;
+      }
+      .layout-workbench :is(input, select, textarea, button, a, summary, [tabindex]) {
+        scroll-margin-block-start: 1rem;
+      }
+      .layout-workbench .workbench-side {
+        position: sticky;
+        inset-block-start: 1rem;
+        align-self: start;
+        max-block-size: calc(100vh - 2rem);
+        overflow-y: auto;
+      }
+      .layout-workbench .workbench-side .unity-panel {
+        position: static;
+      }
+    }
+
+    /* B, guided steps: one part of the recipe at a time. */
+    .guided-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0 0 1rem;
+      padding: 0;
+      list-style: none;
+    }
+    .guided-steps .btn {
+      border-radius: 999px;
+    }
+    /* The step's number in the reader's own digits (gcFixed), set apart by weight rather than a full stop. */
+    .guided-step-number {
+      font-weight: 700;
+      margin-inline-end: 0.2rem;
+    }
+    .guided-steps .btn[aria-current='step'] {
+      background: var(--gc-primary);
+      border-color: var(--gc-primary);
+      color: var(--gc-on-primary);
+    }
+    .guided-heading {
+      font-size: 1.2rem;
+    }
+    .guided-additives {
+      margin-block-start: 1.5rem;
+    }
+    .guided-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-block-start: 1rem;
+    }
+    .guided-nav #guided-next {
+      margin-inline-start: auto;
+    }
   `,
-  host: { '(window:beforeunload)': 'beforeUnload($event)' }
+  host: { '(window:beforeunload)': 'beforeUnload($event)', '(gc-reveal)': 'revealStep($event)' }
 })
 export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly resources = inject(ApiResourceFactory);
@@ -488,6 +637,26 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   });
   /** Whether the firing part is open: when nothing is stated yet, and on wide screens; closed on a phone once set. */
   protected readonly firingFoldOpen = signal(true);
+
+  // The form's layout: standard, workbench (A) or guided steps (B). One recipe, one set of actions; only the
+  // arrangement in the template differs. ?layout=a|b|today chooses for a visit; the choice made here is kept.
+  protected readonly layoutOptions = LAYOUT_OPTIONS;
+  protected readonly guidedSteps = GUIDED_STEPS;
+  private readonly layoutParam = toSignal(
+    this.route.queryParamMap.pipe(map((params) => layoutFromParam(params.get('layout')))),
+    { initialValue: layoutFromParam(this.route.snapshot?.queryParamMap?.get('layout')) }
+  );
+  private readonly chosenLayout = signal<RecipeLayout>(storedLayout());
+  /** Chosen on the page this visit, over ?layout=. */
+  private readonly layoutPicked = signal(false);
+  protected readonly layout = computed<RecipeLayout>(() =>
+    this.layoutPicked() ? this.chosenLayout() : (this.layoutParam() ?? this.chosenLayout())
+  );
+  /** The guided form's step shown (0 recipe, 1 amounts, 2 check, 3 save). */
+  protected readonly guidedStep = signal(0);
+  /** The workbench's folds. */
+  protected readonly fixFoldOpen = signal(false);
+  protected readonly detailsFoldOpen = signal(false);
   /** The firing logs part is open: asked for, or the recipe has links. */
   protected readonly firingsAsked = signal(false);
   protected readonly firingsShown = computed(() => this.firingsAsked() || this.firings().length > 0);
@@ -1872,7 +2041,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.shelfOpen.set(false);
       this.suggestProblem.set('');
       this.notices.success(translate('recipe.firing.duplicateNote', { title: recipe.title }), 'duplicate');
-      afterNextRender(() => document.getElementById('firing-low')?.focus(), { injector: this.injector });
+      afterNextRender(() => this.focusShown('firing-low'), { injector: this.injector });
     });
   }
 
@@ -1990,6 +2159,53 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.shelfOpen.set(false);
     this.suggestProblem.set('');
     this.batchOpen.set(false);
+  }
+
+  /** What the workbench's "Fix and swap" fold has to offer: modern swaps, lead to replace, a swap to undo. */
+  protected readonly fixCount = computed(
+    () =>
+      (this.lines().length ? this.modern().swaps.length + this.modern().colorants.length : 0) +
+      (this.leadAmount() ? 1 : 0) +
+      (this.swapUndo() ? 1 : 0)
+  );
+
+  /** The layout chosen here: kept on this browser, and over ?layout= for the rest of the visit. */
+  protected chooseLayout(layout: RecipeLayout): void {
+    this.chosenLayout.set(layout);
+    this.layoutPicked.set(true);
+    storeLayout(layout);
+  }
+
+  /** Shows a guided step, its heading taking the focus. */
+  protected goToStep(step: number): void {
+    const to = Math.max(0, Math.min(this.guidedSteps.length - 1, step));
+    this.guidedStep.set(to);
+    afterNextRender(() => document.getElementById('guided-step-' + to)?.focus(), { injector: this.injector });
+  }
+
+  /** gc-reveal (shared/field-checks.ts): the focus is going to something in a hidden guided step, so it shows. */
+  protected revealStep(event: Event): void {
+    const pane = (event.target as HTMLElement | null)?.closest<HTMLElement>('.guided-pane');
+    const step = Number(pane?.dataset['step']);
+    if (!pane || Number.isNaN(step)) return;
+    this.guidedStep.set(step);
+    // Shown now, not at the next drawing: the focus goes there as soon as this returns.
+    pane.hidden = false;
+  }
+
+  /** Moves the focus to an element, opening a fold or step it is in. */
+  private focusShown(id: string): void {
+    const element = document.getElementById(id);
+    if (!element) return;
+    reveal(element);
+    element.focus();
+  }
+
+  /** The workbench's peek bar on a phone: to the formula and limits beside (below) the recipe. */
+  protected toFormula(): void {
+    const heading = document.getElementById('unity-heading');
+    heading?.scrollIntoView({ block: 'start' });
+    heading?.focus({ preventScroll: true });
   }
 
   /** Counts the additives in the unity formula, or not; new recipes start with the choice made last. */
@@ -2127,17 +2343,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     const started = Date.now();
     const attempt = () => {
       const element = document.getElementById(id);
-      if (element) return element.focus();
+      if (element) return this.focusShown(id);
       if (id === deferred && Date.now() - started < 2000) {
         setTimeout(attempt, 20);
         return;
       }
-      if (fallback) document.getElementById(fallback)?.focus();
+      if (fallback) this.focusShown(fallback);
     };
     afterNextRender(attempt, { injector: this.injector });
   }
 
   private focusTitle(): void {
-    afterNextRender(() => document.getElementById('recipe-name')?.focus(), { injector: this.injector });
+    afterNextRender(() => this.focusShown('recipe-name'), { injector: this.injector });
   }
 }

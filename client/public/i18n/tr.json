@@ -96,6 +96,7 @@
     "recordsHint": "Yalnızca tek başınıza kullandığınız bir cihazda. Oturumu kapattığınızda kaldırılır.",
     "recordsBanner": "Glazecalc’e ulaşılamıyor. Bu cihazda {date} tarihinde kaydedilen kopya gösteriliyor.",
     "recordsNotSaved": "Kayıtlarınız bu cihazda kayıtlı değil. Görmek için internete bağlanın. Bunu hesabınızdan açabilirsiniz.",
+    "recordsBackOnline": "Yeniden çevrimiçisiniz. En son kayıtlarınızı görmek ve yeniden kaydedebilmek için sayfayı yenileyin.",
     "recordsNotKept": "Bu tarayıcı kopya saklamayacak (gizli gezinme ya da yer yok)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalc’in standart kütüphanesindeki hammaddeler: feldspatlardan ve killerden fritlere ve bor kaynaklarına kadar, her birinin oksit analizi, Seger formülü ve tehlikeleriyle.",
     "materialInfo": "{name}: Glazecalc’in standart kütüphanesinde oksit analizi, Seger formülü, kızdırma kaybı ve tehlikeler.",
     "materialInfoLong": "{name}, Glazecalc’in standart sır hammaddeleri kütüphanesinde: oksit analizi, Seger formülüne katkısı, kızdırma kaybı ve tehlikeler.",
-    "imageAlt": "Glazecalc ana sayfası: çömlekçiler için ücretsiz sır kimyası, pişmiş piramit gruplarının fotoğrafının yanında."
+    "imageAlt": "Glazecalc logosu ve başlığı, çömlekçiler için ücretsiz sır kimyası, pişmiş piramit gruplarının fotoğrafının yanında."
   },
   "notices": {
     "dismiss": "Kapat",
@@ -341,6 +342,10 @@
     "suggest": "Düzeltme önerin",
     "english": "İngilizcesini okuyun",
     "close": "Kapat"
+  },
+  "settingsExpiry": {
+    "text": "Glazecalc'ı bu tarayıcıda neredeyse bir yıldır kullanmadınız. Buradaki tema ve dil gibi ayarlarınız, siz kullandıkça saklanır. İsterseniz bunları şimdi temizleyebilirsiniz. Hesabınıza kaydedilmiş ayarlar bundan etkilenmez.",
+    "clear": "Ayarlarımı temizle"
   },
   "unity": {
     "fluxes": "Ergiticiler - R₂O ve RO",

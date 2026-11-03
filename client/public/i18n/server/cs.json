@@ -123,6 +123,16 @@
   "trash-full": "Koš je plný, proto do něj přístupový token nemůže přesunout nic dalšího. Nejdřív prosím část koše vyprázdněte na webu.",
   "firing-links-full": "S receptem lze propojit nejvýše {most} záznamů výpalů. Chcete-li propojit další, zrušte propojení s jedním z nich.",
   "account-limit": "V účtu lze celkem uchovávat nejvýše {limit} záznamů: receptů, surovin, poznámek, záznamů výpalů a dalšího dohromady. Chcete-li uložit víc, některé prosím odeberte.",
+  "import-not-export": "Toto není soubor dat Glazecalc. Vyberte prosím soubor JSON ze Stáhnout moje data.",
+  "import-newer": "Tento soubor vytvořila novější verze Glazecalc. Načtěte prosím stránku znovu a zkuste to znovu.",
+  "import-too-many": "Tento soubor obsahuje {count} záznamů. Jeden import pojme nejvýše {most}. Nic nebylo importováno.",
+  "import-invalid": "{count, plural, one {# záznam v tomto souboru nelze přečíst.} few {# záznamy v tomto souboru nelze přečíst.} many {# záznamu v tomto souboru nelze přečíst.} other {# záznamů v tomto souboru nelze přečíst.}} Nic nebylo importováno.",
+  "import-over-limit": "Tento import by přidal {count} záznamů, ale ve vašem účtu je místo už jen pro {room}. Nic nebylo importováno.",
+  "import-busy": "Do tohoto účtu už probíhá import. Počkejte prosím, až skončí.",
+  "import-failed": "Import se nezdařil kvůli problému na naší straně. Nic nebylo importováno.",
+  "import-done": "Import je hotový.",
+  "import-undone": "Import byl vrácen zpět.",
+  "import-undo-gone": "Tento import už nelze vrátit zpět.",
   "not-shared": "Tento recept není sdílený, nebo je odkaz neúplný.",
   "share-stopped": "Recept už není sdílený. Jeho odkaz ho už neotevře.",
   "token-invalid": "Přístupový token není platný, vypršel nebo byl zneplatněn.",
@@ -188,5 +198,6 @@
   "too-many-changes": "S přístupovými tokeny bylo u tohoto účtu provedeno příliš mnoho změn. Chvíli počkejte a zkuste to znovu; změny na webu stále fungují.",
   "too-many-mcp": "Příliš mnoho požadavků na nástroje Glazecalc pro AI asistenty. Počkejte prosím několik minut a zkuste to znovu.",
   "too-many-oauth": "Z této adresy přišlo příliš mnoho žádostí o připojení aplikací. Počkejte prosím několik minut a zkuste to znovu.",
-  "too-many-registrations": "Příliš mnoho aplikací se zaregistrovalo samo. Zkuste to prosím později."
+  "too-many-registrations": "Příliš mnoho aplikací se zaregistrovalo samo. Zkuste to prosím později.",
+  "too-many-imports": "Do tohoto účtu bylo za poslední hodinu provedeno příliš mnoho importů. Zkuste to prosím později."
 }

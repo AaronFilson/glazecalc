@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Setting li bdilt f’dan il-brawżer, biex il-paġna li jmiss turih minnufih, qabel ma jwieġeb is-server. <code>theme</code> u <code>palette</code> jagħtu l-kulur lill-paġna qabel ma tidher, u <code>language</code> jiftaħ il-paġni bil-lingwa tiegħek.",
-        "lasts": "Sakemm tibdlu. Meta toħroġ, terġa’ tidher l-għażla li kont għamilt meta ma kontx dieħel, jekk għamilt waħda, u l-bqija jitneħħa."
+        "lasts": "Sakemm tibdlu. Xejn ma jitneħħa waħdu: jekk terġa’ lura wara kważi sena ’l bogħod, avviż joffrilek buttuna biex tħassar is-settings tiegħek. Meta toħroġ, terġa’ tidher l-għażla li kont għamilt meta ma kontx dieħel, jekk għamilt waħda, u l-bqija jitneħħa."
       },
       "visitor": {
         "purpose": "Il-lingwa li għażilt, jew li għalaqt l-avviż tat-traduzzjoni, meta ma kontx dieħel, biex terġa’ tidher meta toħroġ.",
-        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek jew tħassar kont f’dan il-brawżer."
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek jew tħassar kont f’dan il-brawżer. Xejn ma jitneħħa waħdu: jekk terġa’ lura wara kważi sena ’l bogħod, avviż joffrilek buttuna biex tħassar is-settings tiegħek."
       },
       "region": {
         "purpose": "Il-filtru tar-reġjun fuq lista tal-librerija.",
-        "lasts": "Sakemm terġa’ tissettja l-filtru għar-reġjuni kollha."
+        "lasts": "Sakemm terġa’ tissettja l-filtru għar-reġjuni kollha. Xejn ma jitneħħa waħdu: jekk terġa’ lura wara kważi sena ’l bogħod, avviż joffrilek buttuna biex tħassar is-settings tiegħek."
       },
       "includeAdditives": {
         "purpose": "Jekk ir-riċetti l-ġodda jgħoddux l-addittivi tagħhom fil-formula ta’ Seger, kif għażilt l-aħħar darba.",
-        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek. Xejn ma jitneħħa waħdu: jekk terġa’ lura wara kważi sena ’l bogħod, avviż joffrilek buttuna biex tħassar is-settings tiegħek."
       },
       "print": {
         "purpose": "L-aħħar għażliet tiegħek biex tipprintja riċetta: ir-riċetta kollha, taħlita jew l-iskeda tax-xogħol, u d-daqs tat-taħlita.",
-        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek. Xejn ma jitneħħa waħdu: jekk terġa’ lura wara kważi sena ’l bogħod, avviż joffrilek buttuna biex tħassar is-settings tiegħek."
+      },
+      "recipeLayout": {
+        "purpose": "It-tqassim li għażilt l-aħħar darba għall-formola tar-riċetta: standard, bank tax-xogħol jew pass pass.",
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek. Xejn ma jitneħħa waħdu: jekk terġa’ lura wara kważi sena ’l bogħod, avviż joffrilek buttuna biex tħassar is-settings tiegħek."
+      },
+      "settingsDates": {
+        "purpose": "Meta dan il-brawżer fetaħ l-aħħar Glazecalc bis-settings ta’ hawn fuq, biex meta terġa’ lura wara kważi sena ’l bogħod ikun jista’ jidher l-avviż li joffri li jħassarhom, u liema verżjoni tal-avviż tat-traduzzjoni għalaqt. Ebda data personali.",
+        "lasts": "Sakemm xi wieħed minn dawk is-settings jinżamm hawn."
       },
       "token": {
         "purpose": "Token tad-dħul minn verżjoni qadima ta’ Glazecalc. Illum qatt ma jinkiteb.",

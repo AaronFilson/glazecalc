@@ -1104,5 +1104,21 @@
     "add": "Pievienot rezultātu šim:",
     "addButton": "Pievienot",
     "saveFailed": "Neizdevās saglabāt, kur apdedzināts apdedzināšanas žurnāls."
+  },
+  "layout": {
+    "label": "Veidlapas izkārtojums",
+    "standard": "Standarta",
+    "workbench": "Darbgalds",
+    "guided": "Pa soļiem",
+    "side": "Formula un robežvērtības",
+    "fixFold": "Labot un aizstāt ({count})",
+    "detailsFold": "Sīkāk: datums, piezīmes, apdedzināšana, izmaksas, bīstamība",
+    "steps": "Soļi",
+    "stepRecipe": "Recepte",
+    "stepAmounts": "Daudzumi",
+    "stepCheck": "Pārbaude",
+    "amountsHint": "Ierakstiet katru daudzumu. Enter pāriet uz nākamo daudzumu.",
+    "back": "Atpakaļ",
+    "next": "Tālāk"
   }
 }

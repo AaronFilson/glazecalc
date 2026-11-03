@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "En indstilling, du har ændret i denne browser, så næste side viser den med det samme, før serveren svarer. <code>theme</code> og <code>palette</code> farver siden, før den vises, og <code>language</code> åbner sider på dit sprog.",
-        "lasts": "Indtil du ændrer den. Når du logger ud, sættes det tilbage, du eventuelt valgte, mens du var logget ud, og resten fjernes."
+        "lasts": "Indtil du ændrer den. Intet fjernes af sig selv: Hvis du vender tilbage efter næsten et års fravær, tilbyder en note en knap til at rydde dine indstillinger. Når du logger ud, sættes det tilbage, du eventuelt valgte, mens du var logget ud, og resten fjernes."
       },
       "visitor": {
         "purpose": "Det sprog, du valgte, eller at du lukkede noten om oversættelsen, mens du var logget ud, så det kommer tilbage, når du logger ud.",
-        "lasts": "Indtil du rydder browserens lager eller sletter en konto i denne browser."
+        "lasts": "Indtil du rydder browserens lager eller sletter en konto i denne browser. Intet fjernes af sig selv: Hvis du vender tilbage efter næsten et års fravær, tilbyder en note en knap til at rydde dine indstillinger."
       },
       "region": {
         "purpose": "Regionsfilteret på en liste i biblioteket.",
-        "lasts": "Indtil du sætter filteret tilbage til alle regioner."
+        "lasts": "Indtil du sætter filteret tilbage til alle regioner. Intet fjernes af sig selv: Hvis du vender tilbage efter næsten et års fravær, tilbyder en note en knap til at rydde dine indstillinger."
       },
       "includeAdditives": {
         "purpose": "Om nye opskrifter medregner tilsætningerne i Seger-formlen, som du sidst valgte.",
-        "lasts": "Indtil du rydder browserens lager."
+        "lasts": "Indtil du rydder browserens lager. Intet fjernes af sig selv: Hvis du vender tilbage efter næsten et års fravær, tilbyder en note en knap til at rydde dine indstillinger."
       },
       "print": {
         "purpose": "De seneste valg til udskrivning af en opskrift: hele opskriften, en portion eller arbejdsarket, og portionsstørrelsen.",
-        "lasts": "Indtil du rydder browserens lager."
+        "lasts": "Indtil du rydder browserens lager. Intet fjernes af sig selv: Hvis du vender tilbage efter næsten et års fravær, tilbyder en note en knap til at rydde dine indstillinger."
+      },
+      "recipeLayout": {
+        "purpose": "Det layout, du sidst valgte til opskriftsformularen: standard, arbejdsbord eller trin for trin.",
+        "lasts": "Indtil du rydder browserens lager. Intet fjernes af sig selv: Hvis du vender tilbage efter næsten et års fravær, tilbyder en note en knap til at rydde dine indstillinger."
+      },
+      "settingsDates": {
+        "purpose": "Hvornår denne browser sidst åbnede Glazecalc med indstillingerne ovenfor, så en tilbagevenden efter næsten et års fravær kan vise noten, der tilbyder at rydde dem, og hvilken version af noten om oversættelsen du lukkede. Ingen personoplysninger.",
+        "lasts": "Så længe nogen af de indstillinger gemmes her."
       },
       "token": {
         "purpose": "Et login-token fra en gammel version af Glazecalc. Det skrives aldrig nu.",

@@ -1,9 +1,10 @@
 // The kinds of record a user keeps, each served under /api/<path> by the same
 // routes (server/lib/record_routes.ts), and the Trash they go to when removed
 // (./trash_routes.ts). `fields` are what a user may set, `required` what a new
-// record must have.
+// record must have (server/lib/record_fields.ts, shared with the import).
 import type { Router } from 'express';
 import { addFiringLinkRoutes } from '../lib/firing_links.ts';
+import { RECORD_FIELDS } from '../lib/record_fields.ts';
 import recordRoutes from '../lib/record_routes.ts';
 import { stopSharing } from '../lib/share_links.ts';
 import Additive from '../models/additive.ts';
@@ -19,22 +20,7 @@ import trashRouter from './trash_routes.ts';
 const recipeRoutes = recordRoutes(Recipe, {
   label: 'recipe',
   area: 'recipes',
-  fields: [
-    'title',
-    'date',
-    'notes',
-    'materials',
-    'additives',
-    'computed',
-    'includeAdditives',
-    'firing',
-    'firedAt',
-    'foodSurface',
-    'firings',
-    'coneResults',
-    'sgTarget'
-  ],
-  required: ['title', 'materials'],
+  ...RECORD_FIELDS.recipes,
   wrapper: { change: 'recipe' },
   standard: true,
   // Its share link stops working, and stays stopped if the recipe is put back.
@@ -46,59 +32,30 @@ const records: Record<string, Router> = {
   additives: recordRoutes(Additive, {
     label: 'additive',
     area: 'additives',
-    fields: [
-      'name',
-      'rawformula',
-      'fields',
-      'notes',
-      'relatedTo',
-      'percentmole',
-      'loi',
-      'molecularweight',
-      'equivalent',
-      'formulaweight',
-      // A commercial stain, say: left out of the unity formula.
-      'noChemistry'
-    ],
-    required: ['name', 'fields'],
+    ...RECORD_FIELDS.additives,
     standard: true
   }),
   advice: recordRoutes(Advice, {
     label: 'advice',
     area: 'advice',
-    fields: ['title', 'content', 'tags'],
-    required: ['title', 'content', 'tags'],
+    ...RECORD_FIELDS.advice,
     standard: true
   }),
   firing: recordRoutes(Firing, {
     label: 'firing',
     area: 'firing',
-    fields: ['title', 'kiln', 'date', 'notes', 'fieldsIncluded', 'rows'],
-    required: ['title', 'fieldsIncluded', 'rows']
+    ...RECORD_FIELDS.firing
   }),
   materials: recordRoutes(Material, {
     label: 'material',
     area: 'materials',
-    fields: [
-      'name',
-      'rawformula',
-      'relatedTo',
-      'notes',
-      'fields',
-      'percentmole',
-      'loi',
-      'molecularweight',
-      'equivalent',
-      'formulaweight'
-    ],
-    required: ['name', 'fields', 'formulaweight', 'loi', 'molecularweight', 'percentmole', 'equivalent'],
+    ...RECORD_FIELDS.materials,
     standard: true
   }),
   notes: recordRoutes(Note, {
     label: 'note',
     area: 'notes',
-    fields: ['title', 'content', 'relatedCollection', 'relatedId'],
-    required: ['content', 'relatedCollection', 'relatedId']
+    ...RECORD_FIELDS.notes
   }),
   recipe: recipeRoutes,
   // The Trash has routes of its own.

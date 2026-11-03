@@ -96,6 +96,7 @@
     "recordsHint": "Biss fuq apparat li tużah int biss. Jitneħħew meta toħroġ.",
     "recordsBanner": "Glazecalc ma jistax jintlaħaq. Qed tintwera l-kopja ssejvjata fuq dan l-apparat fil-{date}.",
     "recordsNotSaved": "Ir-rekords tiegħek mhumiex issejvjati fuq dan l-apparat. Qabbad mal-internet biex tarahom. Tista’ tixgħel dan fil-kont tiegħek.",
+    "recordsBackOnline": "Erġajt online. Erġa’ tella’ l-paġna biex tara l-aħħar rekords tiegħek u terġa’ tissejvja.",
     "recordsNotKept": "Dan il-brawżer mhux se jżomm kopja (browsing privat jew m’hemmx spazju)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Il-materjali tal-librerija standard ta’ Glazecalc, mill-feldspati u t-tafal sal-frits u s-sorsi tal-boron, bl-analiżi tal-ossidi, il-formula ta’ Seger u l-perikli.",
     "materialInfo": "{name}: analiżi tal-ossidi, formula ta’ Seger, telf mit-tqabbid bin-nar u perikli fil-librerija standard ta’ Glazecalc.",
     "materialInfoLong": "{name} fil-librerija standard ta’ Glazecalc tal-materjali tal-glejż: l-analiżi tal-ossidi, il-kontribut fil-formula ta’ Seger, it-telf mit-tqabbid bin-nar u l-perikli.",
-    "imageAlt": "Il-paġna prinċipali ta’ Glazecalc: kimika tal-glejż b’xejn għall-fuħħarin, maġenb ritratt ta’ settijiet ta’ koni moħmija."
+    "imageAlt": "Il-logo ta’ Glazecalc u l-intestatura tiegħu, kimika tal-glazes b’xejn għall-fuħħara, ħdejn ritratt ta’ pakketti ta’ koni maħmija."
   },
   "notices": {
     "dismiss": "Agħlaq",
@@ -341,6 +342,10 @@
     "suggest": "Issuġġerixxi korrezzjoni",
     "english": "Aqra bl-Ingliż",
     "close": "Agħlaq"
+  },
+  "settingsExpiry": {
+    "text": "Ilek ma tuża Glazecalc f’dan il-brawżer għal kważi sena. Is-settings tiegħek hawn, bħat-tema u l-lingwa, jinżammu sakemm tużah. Tista’ tħassarhom issa jekk trid. Is-settings issejvjati fil-kont tiegħek mhumiex affettwati.",
+    "clear": "Ħassar is-settings tiegħi"
   },
   "unity": {
     "fluxes": "Flussi – R₂O u RO",

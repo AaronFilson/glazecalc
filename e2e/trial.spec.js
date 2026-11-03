@@ -142,6 +142,10 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
     'theme',
     'weightUnit'
   ];
+  // Not settings and not sign-in data either: when the language's files were last kept for offline use (written by
+  // core/offline-languages.ts 4 s after load, so present or not depending on how long the test took), and when each
+  // setting was last changed (core/settings-expiry.ts).
+  const notSignIn = ['offlineLanguage', 'settingsDates'];
   const stored = await page.evaluate(() => Object.keys(localStorage).sort());
-  expect(stored.filter((key) => !settings.includes(key))).toEqual(['session', 'trial']);
+  expect(stored.filter((key) => !settings.includes(key) && !notSignIn.includes(key))).toEqual(['session', 'trial']);
 });

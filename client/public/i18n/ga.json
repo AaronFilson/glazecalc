@@ -96,6 +96,7 @@
     "recordsHint": "Ach amháin ar ghléas nach n-úsáideann aon duine ach tusa. Baintear iad nuair a shíníonn tú amach.",
     "recordsBanner": "Ní féidir Glazecalc a shroicheadh. Ag taispeáint na cóipe a sábháladh ar an ngléas seo ar {date}.",
     "recordsNotSaved": "Níl do thaifid sábháilte ar an ngléas seo. Ceangail leis an idirlíon chun iad a fheiceáil. Is féidir leat é seo a chasadh air i do chuntas.",
+    "recordsBackOnline": "Tá tú ar líne arís. Athlódáil chun do thaifid is déanaí a fheiceáil agus chun sábháil arís.",
     "recordsNotKept": "Ní choinneoidh an brabhsálaí seo cóip (brabhsáil phríobháideach nó gan spás)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Ábhair leabharlann chaighdeánach Glazecalc, ó iathchlocha agus cré go frits agus foinsí bóróin, le hanailís ocsaíde, foirmle Seger agus guaiseacha.",
     "materialInfo": "{name}: anailís ocsaíde, foirmle Seger, cailliúint ar adhaint agus guaiseacha i leabharlann chaighdeánach Glazecalc.",
     "materialInfoLong": "{name} i leabharlann chaighdeánach Glazecalc d’ábhair ghlónra: a anailís ocsaíde, a rannchuidiú le foirmle Seger, cailliúint ar adhaint agus guaiseacha.",
-    "imageAlt": "Leathanach baile Glazecalc: ceimic ghlónra saor in aisce do photadóirí, taobh le grianghraf de phacaí cón bácáilte."
+    "imageAlt": "Lógó Glazecalc agus a cheannteideal, ceimic ghlónra saor in aisce do photadóirí, taobh le grianghraf de phacaí cón bácáilte."
   },
   "notices": {
     "dismiss": "Ruaig",
@@ -341,6 +342,10 @@
     "suggest": "Mol ceartúchán",
     "english": "Léigh an Béarla",
     "close": "Dún"
+  },
+  "settingsExpiry": {
+    "text": "Níor úsáid tú Glazecalc sa bhrabhsálaí seo le beagnach bliain. Coinnítear do shocruithe anseo, mar an téama agus an teanga, fad is a úsáideann tú é. Is féidir leat iad a ghlanadh anois más maith leat. Ní bhaineann sé seo le socruithe atá sábháilte i do chuntas.",
+    "clear": "Glan mo shocruithe"
   },
   "unity": {
     "fluxes": "Floscanna – R₂O agus RO",

@@ -123,6 +123,16 @@
   "trash-full": "Šiukšlinė pilna, todėl prieigos žetonas negali į ją perkelti daugiau nieko. Pirmiausia ištuštinkite dalį svetainėje.",
   "firing-links-full": "Receptą galima susieti daugiausia su {most} degimo žurnalų. Atsiekite vieną, kad susietumėte kitą.",
   "account-limit": "Paskyroje iš viso galima laikyti ne daugiau kaip {limit} įrašų: receptų, žaliavų, užrašų, degimo žurnalų ir kitų kartu. Pašalinkite dalį, kad galėtumėte įrašyti daugiau.",
+  "import-not-export": "Tai ne Glazecalc duomenų failas. Pasirinkite JSON failą iš „Mano duomenų atsisiuntimas“.",
+  "import-newer": "Šis failas sukurtas naujesne Glazecalc versija. Įkelkite puslapį iš naujo ir bandykite dar kartą.",
+  "import-too-many": "Šiame faile įrašų: {count}. Vienu kartu galima importuoti ne daugiau kaip {most}. Nieko neimportuota.",
+  "import-invalid": "{count, plural, one {# šio failo įrašo nepavyksta perskaityti.} few {# šio failo įrašų nepavyksta perskaityti.} many {# šio failo įrašo nepavyksta perskaityti.} other {# šio failo įrašų nepavyksta perskaityti.}} Nieko neimportuota.",
+  "import-over-limit": "Šis importavimas pridėtų įrašų: {count}, bet jūsų paskyroje vietos liko dar {room}. Nieko neimportuota.",
+  "import-busy": "Į šią paskyrą jau vyksta importavimas. Palaukite, kol jis baigsis.",
+  "import-failed": "Importuoti nepavyko dėl problemos mūsų pusėje. Nieko neimportuota.",
+  "import-done": "Importavimas baigtas.",
+  "import-undone": "Importavimas atšauktas.",
+  "import-undo-gone": "Šio importavimo atšaukti nebegalima.",
   "not-shared": "Šis receptas nebendrinamas arba nuoroda neišsami.",
   "share-stopped": "Receptas nebebendrinamas. Jo nuoroda jo nebeatveria.",
   "token-invalid": "Prieigos žetonas negalioja, nustojo galioti arba buvo atšauktas.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Su prieigos žetonais šioje paskyroje padaryta per daug pakeitimų. Šiek tiek palaukite ir bandykite dar kartą; pakeitimai svetainėje vis dar veikia.",
   "too-many-mcp": "Per daug užklausų Glazecalc įrankiams, skirtiems dirbtinio intelekto asistentams. Palaukite kelias minutes ir bandykite dar kartą.",
   "too-many-oauth": "Per daug programų prijungimo užklausų iš šio adreso. Palaukite kelias minutes ir bandykite dar kartą.",
-  "too-many-registrations": "Per daug programų užsiregistravo pačios. Bandykite vėliau."
+  "too-many-registrations": "Per daug programų užsiregistravo pačios. Bandykite vėliau.",
+  "too-many-imports": "Per pastarąją valandą į šią paskyrą importuota per daug kartų. Bandykite vėliau."
 }

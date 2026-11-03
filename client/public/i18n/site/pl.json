@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Ustawienie zmienione w tej przeglądarce, aby następna strona od razu je pokazała, zanim odpowie serwer. <code>theme</code> i <code>palette</code> nadają stronie kolory, zanim się pojawi, a <code>language</code> otwiera strony w wybranym języku.",
-        "lasts": "Do jego zmiany. Wylogowanie przywraca to, co zostało wybrane bez zalogowania, jeśli cokolwiek wybrano, a resztę usuwa."
+        "lasts": "Do jego zmiany. Nic nie jest usuwane samoczynnie: po powrocie po prawie roku nieobecności pojawia się informacja z przyciskiem pozwalającym wyczyścić ustawienia. Wylogowanie przywraca to, co zostało wybrane bez zalogowania, jeśli cokolwiek wybrano, a resztę usuwa."
       },
       "visitor": {
         "purpose": "Język wybrany bez zalogowania albo to, że bez zalogowania zamknięto informację o tłumaczeniu, aby wróciło to po wylogowaniu.",
-        "lasts": "Do wyczyszczenia pamięci przeglądarki lub usunięcia konta w tej przeglądarce."
+        "lasts": "Do wyczyszczenia pamięci przeglądarki lub usunięcia konta w tej przeglądarce. Nic nie jest usuwane samoczynnie: po powrocie po prawie roku nieobecności pojawia się informacja z przyciskiem pozwalającym wyczyścić ustawienia."
       },
       "region": {
         "purpose": "Filtr regionu na liście w bibliotece.",
-        "lasts": "Do przywrócenia filtra na wszystkie regiony."
+        "lasts": "Do przywrócenia filtra na wszystkie regiony. Nic nie jest usuwane samoczynnie: po powrocie po prawie roku nieobecności pojawia się informacja z przyciskiem pozwalającym wyczyścić ustawienia."
       },
       "includeAdditives": {
         "purpose": "Czy nowe receptury uwzględniają dodatki we wzorze Segera, zgodnie z ostatnim wyborem.",
-        "lasts": "Do wyczyszczenia pamięci przeglądarki."
+        "lasts": "Do wyczyszczenia pamięci przeglądarki. Nic nie jest usuwane samoczynnie: po powrocie po prawie roku nieobecności pojawia się informacja z przyciskiem pozwalającym wyczyścić ustawienia."
       },
       "print": {
         "purpose": "Ostatnie wybory dotyczące drukowania receptury: cała receptura, porcja lub arkusz oraz wielkość porcji.",
-        "lasts": "Do wyczyszczenia pamięci przeglądarki."
+        "lasts": "Do wyczyszczenia pamięci przeglądarki. Nic nie jest usuwane samoczynnie: po powrocie po prawie roku nieobecności pojawia się informacja z przyciskiem pozwalającym wyczyścić ustawienia."
+      },
+      "recipeLayout": {
+        "purpose": "Ostatnio wybrany układ formularza receptury: standardowy, warsztat lub krok po kroku.",
+        "lasts": "Do wyczyszczenia pamięci przeglądarki. Nic nie jest usuwane samoczynnie: po powrocie po prawie roku nieobecności pojawia się informacja z przyciskiem pozwalającym wyczyścić ustawienia."
+      },
+      "settingsDates": {
+        "purpose": "Kiedy ta przeglądarka ostatnio otworzyła Glazecalc z powyższymi ustawieniami, aby po powrocie po prawie roku nieobecności mogła się pojawić informacja z propozycją ich wyczyszczenia, oraz którą wersję informacji o tłumaczeniu zamknięto. Bez danych osobowych.",
+        "lasts": "Dopóki którekolwiek z tych ustawień jest tu przechowywane."
       },
       "token": {
         "purpose": "Token logowania ze starej wersji aplikacji Glazecalc. Obecnie nigdy nie jest zapisywany.",

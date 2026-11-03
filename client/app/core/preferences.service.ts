@@ -8,6 +8,7 @@ import type { Palette, ThemeMode } from './theme';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
 import { FIRST_RENDER } from './first-render';
+import { DATES_KEY, checkSettingsExpiry, clearSettings } from './settings-expiry';
 
 export interface Preferences {
   weightUnit: WeightUnit;
@@ -136,6 +137,13 @@ export class PreferencesService {
   private readonly apiBase = inject(API_BASE);
   private readonly auth = inject(AuthService);
   private readonly firstRender = inject(FIRST_RENDER);
+  /**
+   * Each visit counts as use of the settings kept here (core/settings-expiry.ts). Checked first, before the
+   * copies below are read; true while the notice for a return after nearly a year away should show.
+   */
+  private readonly expiring = signal(checkSettingsExpiry() === 'warn');
+  /** Whether to show the return notice: using Glazecalc keeps the settings here, or they can be cleared. */
+  readonly settingsExpiring = computed(() => !this.firstRender() && this.expiring());
   /** The sign-in the choices were fetched for, and the request. */
   private fetched: { session: number; request: Promise<void> } | null = null;
   /** Counts saves of each, so only the latest one's failure puts the old choice back. */
@@ -305,6 +313,22 @@ export class PreferencesService {
     writeRaw(visitorKey(name), value);
   }
 
+  /** Closes the return notice; the settings stay (this visit already counted as use). */
+  closeSettingsNotice(): void {
+    this.expiring.set(false);
+  }
+
+  /** "Clear my settings": removes the settings kept here, and reloads so the defaults apply. */
+  clearSettings(): void {
+    clearSettings();
+    this.expiring.set(false);
+    try {
+      globalThis.location.reload();
+    } catch {
+      // Not in a browser: nothing to reload.
+    }
+  }
+
   /**
    * Removes every choice this browser keeps, the account's copy and a visitor's
    * own. The page goes on showing them until it is reloaded.
@@ -315,6 +339,7 @@ export class PreferencesService {
         localStorage.removeItem(copyKey(name));
         localStorage.removeItem(visitorKey(name));
       }
+      localStorage.removeItem(DATES_KEY);
     } catch {
       // Without storage there is nothing to remove.
     }

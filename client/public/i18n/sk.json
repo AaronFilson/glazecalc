@@ -96,6 +96,7 @@
     "recordsHint": "Len v zariadení, ktoré používate iba vy. Odstránia sa, keď sa odhlásite.",
     "recordsBanner": "Glazecalc nie je dostupný. Zobrazuje sa kópia uložená v tomto zariadení {date}.",
     "recordsNotSaved": "Vaše záznamy nie sú uložené v tomto zariadení. Ak ich chcete vidieť, pripojte sa na internet. Túto možnosť môžete zapnúť vo svojom účte.",
+    "recordsBackOnline": "Ste opäť online. Načítajte stránku znova, aby ste videli svoje najnovšie záznamy a mohli znova ukladať.",
     "recordsNotKept": "Tento prehliadač si kópiu neuchová (súkromné prehliadanie alebo nedostatok miesta)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Suroviny zo štandardnej knižnice Glazecalc, od živcov a ílov po frity a zdroje bóru, každá s oxidovým rozborom, Segerovým vzorcom a rizikami.",
     "materialInfo": "{name}: oxidový rozbor, Segerov vzorec, strata žíhaním a riziká v štandardnej knižnici Glazecalc.",
     "materialInfoLong": "{name} v štandardnej knižnici surovín na glazúry Glazecalc: oxidový rozbor, príspevok k Segerovmu vzorcu, strata žíhaním a riziká.",
-    "imageAlt": "Úvodná stránka Glazecalc: bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov."
+    "imageAlt": "Logo Glazecalc a jeho nadpis, bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov."
   },
   "notices": {
     "dismiss": "Zavrieť",
@@ -341,6 +342,10 @@
     "suggest": "Navrhnúť opravu",
     "english": "Prečítať anglický originál",
     "close": "Zavrieť"
+  },
+  "settingsExpiry": {
+    "text": "Glazecalc ste v tomto prehliadači nepoužili takmer rok. Vaše nastavenia tu, napríklad motív a jazyk, sa uchovávajú, kým ho používate. Ak chcete, môžete ich teraz vymazať. Nastavenia uložené vo vašom účte to neovplyvní.",
+    "clear": "Vymazať moje nastavenia"
   },
   "unity": {
     "fluxes": "Tavivá – R₂O a RO",

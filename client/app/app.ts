@@ -40,6 +40,7 @@ import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } fro
 import { LanguageLinks } from './i18n/language-links';
 import { ownLanguagePage } from './i18n/own-language';
 import { TranslationNotice } from './i18n/translation-notice';
+import { SettingsExpiryNotice } from './core/settings-expiry-notice';
 import { PreferencesService } from './core/preferences.service';
 import { FIRST_RENDER } from './core/first-render';
 
@@ -66,6 +67,7 @@ const APP_PAGES = [
     RouterLinkActive,
     RouterOutlet,
     TranslationNotice,
+    SettingsExpiryNotice,
     TranslocoDirective
   ],
   template: `<ng-container *transloco="let t">
@@ -232,7 +234,18 @@ const APP_PAGES = [
       </div>
       <!-- Offline, the user's records come from the copy on this device, if they keep one (core/offline-records.ts). -->
       <div role="status">
-        @if (auth.shownSession() && offlineRecords.showingCopy(); as savedAt) {
+        @if (auth.shownSession() && offlineRecords.showingCopy() && offlineRecords.backOnline()) {
+          <div class="update-bar offline-records-bar offline-records-back">
+            <div class="trial-bar-inner">
+              <p>{{ t('offline.recordsBackOnline') }}</p>
+              <div class="trial-actions">
+                <button type="button" class="btn btn-primary btn-sm" (click)="reloadPage()">
+                  {{ t('offline.reload') }}
+                </button>
+              </div>
+            </div>
+          </div>
+        } @else if (auth.shownSession() && offlineRecords.showingCopy(); as savedAt) {
           <div class="update-bar offline-records-bar">
             <div class="trial-bar-inner">
               <p>
@@ -268,6 +281,7 @@ const APP_PAGES = [
 
     <main #main id="main" class="app-main" tabindex="-1">
       <gc-translation-notice />
+      <gc-settings-expiry-notice />
       <router-outlet />
     </main>
 
@@ -405,7 +419,11 @@ export class App implements OnInit {
     let trigger: NavigationStart['navigationTrigger'];
     let shown: string | null = null;
     this.router.events.pipe(takeUntilDestroyed()).subscribe((event) => {
-      if (event instanceof NavigationStart) trigger = event.navigationTrigger;
+      if (event instanceof NavigationStart) {
+        trigger = event.navigationTrigger;
+        // Read-only and the offline notices are the page's: the next page's requests set them again.
+        this.offlineRecords.pageStarted();
+      }
       if (!(event instanceof NavigationEnd)) return;
       this.menuOpen.set(false);
       this.ready.set(true);
@@ -496,6 +514,16 @@ export class App implements OnInit {
   protected skipToContent(event: Event, main: HTMLElement): void {
     event.preventDefault();
     main.focus();
+  }
+
+  /**
+   * Back online: opens this page again, so it loads the user's records from the server and can save. Through the
+   * router, so the recipe page still asks first about changes not saved.
+   */
+  protected async reloadPage(): Promise<void> {
+    const url = this.router.url;
+    if (!(await this.router.navigateByUrl('/about', { skipLocationChange: true }))) return;
+    await this.router.navigateByUrl(url, { replaceUrl: true });
   }
 
   /** Signs out once the page has been left: the recipe page asks first about changes not saved. */

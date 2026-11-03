@@ -96,6 +96,7 @@
     "recordsHint": "Tylko na urządzeniu, z którego nikt inny nie korzysta. Usuwane po wylogowaniu.",
     "recordsBanner": "Nie można połączyć się z Glazecalc. Wyświetlana jest kopia zapisana na tym urządzeniu {date}.",
     "recordsNotSaved": "Zapisy nie są przechowywane na tym urządzeniu. Aby je zobaczyć, należy połączyć się z internetem. Tę opcję można włączyć na stronie konta.",
+    "recordsBackOnline": "Połączenie z internetem wróciło. Aby zobaczyć najnowsze zapisy i znów zapisywać, należy załadować stronę ponownie.",
     "recordsNotKept": "Ta przeglądarka nie zachowa kopii (przeglądanie prywatne lub brak miejsca)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Surowce ze standardowej biblioteki Glazecalc, od skaleni i glin po fryty i źródła boru, każdy ze składem tlenkowym, wzorem Segera i zagrożeniami.",
     "materialInfo": "{name}: skład tlenkowy, wzór Segera, strata prażenia i zagrożenia w standardowej bibliotece Glazecalc.",
     "materialInfoLong": "{name} w standardowej bibliotece surowców do szkliw Glazecalc: skład tlenkowy, udział we wzorze Segera, strata prażenia i zagrożenia.",
-    "imageAlt": "Strona główna Glazecalc: darmowa chemia szkliw dla ceramików, obok zdjęcia wypalonych zestawów stożków."
+    "imageAlt": "Logo Glazecalc i jego nagłówek: darmowa chemia szkliw dla ceramików, obok zdjęcia wypalonych zestawów stożków."
   },
   "notices": {
     "dismiss": "Zamknij",
@@ -341,6 +342,10 @@
     "suggest": "Zaproponuj poprawkę",
     "english": "Przeczytaj po angielsku",
     "close": "Zamknij"
+  },
+  "settingsExpiry": {
+    "text": "Glazecalc nie był używany w tej przeglądarce od prawie roku. Ustawienia tutaj, takie jak motyw i język, są przechowywane, dopóki Glazecalc jest używany. W razie potrzeby można je teraz wyczyścić. Nie dotyczy to ustawień zapisanych na koncie.",
+    "clear": "Wyczyść moje ustawienia"
   },
   "unity": {
     "fluxes": "Topniki – R₂O i RO",

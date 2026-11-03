@@ -96,6 +96,7 @@
     "recordsHint": "Numai pe un dispozitiv pe care îl folosiți doar dumneavoastră. Se elimină când vă deconectați.",
     "recordsBanner": "Glazecalc nu poate fi accesat. Se afișează copia salvată pe acest dispozitiv la {date}.",
     "recordsNotSaved": "Înregistrările dumneavoastră nu sunt salvate pe acest dispozitiv. Conectați-vă la internet ca să le vedeți. Puteți activa această opțiune în cont.",
+    "recordsBackOnline": "Sunteți din nou online. Reîncărcați ca să vedeți cele mai noi înregistrări și să puteți salva din nou.",
     "recordsNotKept": "Acest browser nu va păstra o copie (navigare privată sau lipsă de spațiu)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Materiile prime din biblioteca standard Glazecalc, de la feldspați și argile până la frite și surse de bor, fiecare cu analiza oxizilor, formula Seger și pericolele ei.",
     "materialInfo": "{name}: analiza oxizilor, formula Seger, pierderea la calcinare și pericole în biblioteca standard Glazecalc.",
     "materialInfoLong": "{name} în biblioteca standard Glazecalc de materii prime pentru glazuri: analiza oxizilor, contribuția la formula Seger, pierderea la calcinare și pericole.",
-    "imageAlt": "Pagina de pornire Glazecalc: chimia glazurilor, gratuită pentru ceramiști, lângă o fotografie cu seturi de conuri arse."
+    "imageAlt": "Sigla Glazecalc și titlul ei, chimia glazurilor gratuită pentru ceramiști, lângă o fotografie cu seturi de conuri arse."
   },
   "notices": {
     "dismiss": "Închideți",
@@ -341,6 +342,10 @@
     "suggest": "Sugerați o corectură",
     "english": "Citiți originalul în engleză",
     "close": "Închideți"
+  },
+  "settingsExpiry": {
+    "text": "Nu ați folosit Glazecalc în acest browser de aproape un an. Setările dumneavoastră de aici, cum ar fi tema și limba, sunt păstrate cât timp îl folosiți. Le puteți șterge acum, dacă doriți. Setările salvate în cont nu sunt afectate.",
+    "clear": "Ștergeți setările mele"
   },
   "unity": {
     "fluxes": "Fondanți – R₂O și RO",

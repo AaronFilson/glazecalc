@@ -96,6 +96,7 @@
     "recordsHint": "Naanị na ngwaọrụ nke gị naanị na-eji. A na-ewepụ ha mgbe ị pụrụ.",
     "recordsBanner": "Enweghị ike iru Glazecalc. A na-egosi mbipụta e chekwara na ngwaọrụ a na {date}.",
     "recordsNotSaved": "E chekwaghị ndekọ gị na ngwaọrụ a. Jikọọ na ịntanetị iji hụ ha. Ị nwere ike ịgbanye nke a n'akaụntụ gị.",
+    "recordsBackOnline": "Ị laghachila n'ịntanetị. Bugharịa ibe ahụ ọzọ iji hụ ndekọ gị kachasị ọhụrụ ma chekwaa ọzọ.",
     "recordsNotKept": "Brawza a agaghị edebe mbipụta (nchọgharị nzuzo ma ọ bụ enweghị ohere)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Ihe dị n'ọbá akwụkwọ Glazecalc, site na feldspar na ụrọ ruo frit na ihe boron, nke ọ bụla ya na nyocha oxide ya, usoro unity na ihe ize ndụ.",
     "materialInfo": "{name}: nyocha oxide, usoro unity, LOI na ihe ize ndụ n'ọbá akwụkwọ Glazecalc.",
     "materialInfoLong": "{name} n'ọbá akwụkwọ ihe glaze nke Glazecalc: nyocha oxide ya, ihe o nyere na usoro unity, LOI na ihe ize ndụ.",
-    "imageAlt": "Ibe mbụ Glazecalc: kemistri glaze n'efu maka ndị ọkpụ ite, n'akụkụ foto ngwugwu cone a gbara ọkụ."
+    "imageAlt": "Akara Glazecalc na isiokwu ya, kemistri glaze n'efu maka ndị ọkpụ ite, n'akụkụ foto ngwugwu cone a gbara ọkụ."
   },
   "notices": {
     "dismiss": "Wepụ",
@@ -341,6 +342,10 @@
     "suggest": "Tụọ aro mmezi",
     "english": "Gụọ nke Bekee",
     "close": "Mechie"
+  },
+  "settingsExpiry": {
+    "text": "Ị jibeghị Glazecalc na brawza a ihe fọrọ obere ka ọ bụrụ otu afọ. A na-edebe ntọala gị ebe a, dịka isiokwu ọdịdị na asụsụ, mgbe ị na-eji ya. Ị nwere ike ihichapụ ha ugbu a ma ọ bụrụ na ị chọrọ. Nke a anaghị emetụta ntọala echekwara n'akaụntụ gị.",
+    "clear": "Hichapụ ntọala m"
   },
   "unity": {
     "fluxes": "Flux - R₂O na RO",

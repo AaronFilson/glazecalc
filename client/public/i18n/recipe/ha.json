@@ -1104,5 +1104,21 @@
     "add": "Ƙara sakamako don",
     "addButton": "Ƙara",
     "saveFailed": "Ba a iya ajiye inda aka gasa bayanan gasar ba."
+  },
+  "layout": {
+    "label": "Tsarin fom",
+    "standard": "Na yau da kullum",
+    "workbench": "Teburin aiki",
+    "guided": "Mataki-mataki",
+    "side": "Tsari da iyakoki",
+    "fixFold": "Gyara da musanya ({count})",
+    "detailsFold": "Cikakkun bayanai: kwanan wata, bayanai, gasawa, kuɗi, haɗurra",
+    "steps": "Matakai",
+    "stepRecipe": "Girke-girke",
+    "stepAmounts": "Adadai",
+    "stepCheck": "Duba",
+    "amountsHint": "Rubuta kowane adadi. Enter yana zuwa adadi na gaba.",
+    "back": "Baya",
+    "next": "Gaba"
   }
 }

@@ -123,6 +123,16 @@
   "trash-full": "垃圾桶已滿，所以存取權杖無法再把更多內容移到其中。請先在網站上清理一部分。",
   "firing-links-full": "一個釉方最多可以連結 {most} 筆燒窯紀錄。請先取消連結一筆，再連結另一筆。",
   "account-limit": "每個帳戶最多可保存 {limit} 筆紀錄，釉方、原料、筆記、燒窯紀錄和其他紀錄合計在內。請移除一些後再儲存更多。",
+  "import-not-export": "這不是 Glazecalc 資料檔。請選擇「下載我的資料」取得的 JSON 檔案。",
+  "import-newer": "此檔案由較新版本的 Glazecalc 產生。請重新載入頁面後再試一次。",
+  "import-too-many": "此檔案包含 {count} 筆紀錄。一次匯入最多 {most} 筆。沒有匯入任何內容。",
+  "import-invalid": "{count, plural, other {此檔案中有 # 筆紀錄無法讀取。}}沒有匯入任何內容。",
+  "import-over-limit": "這次匯入將加入 {count} 筆紀錄，但您的帳戶只能再容納 {room} 筆。沒有匯入任何內容。",
+  "import-busy": "此帳戶已有一項匯入正在進行。請等待它完成。",
+  "import-failed": "由於我們這邊發生問題，匯入未成功。沒有匯入任何內容。",
+  "import-done": "匯入完成。",
+  "import-undone": "匯入已復原。",
+  "import-undo-gone": "這次匯入已無法復原。",
   "not-shared": "這個釉方沒有分享，或連結不完整。",
   "share-stopped": "這個釉方已不再分享。其連結已無法開啟這個釉方。",
   "token-invalid": "存取權杖無效、已過期或已被撤銷。",
@@ -188,5 +198,6 @@
   "too-many-changes": "透過存取權杖對這個帳戶做出的變更太多。請稍等一會兒再試；在網站上做的變更仍然可以進行。",
   "too-many-mcp": "對 Glazecalc 的 AI 助理工具的要求太多。請等幾分鐘後再試。",
   "too-many-oauth": "來自這個位址的連接應用程式要求太多。請等幾分鐘後再試。",
-  "too-many-registrations": "自行註冊的應用程式太多。請稍後再試。"
+  "too-many-registrations": "自行註冊的應用程式太多。請稍後再試。",
+  "too-many-imports": "過去一小時內匯入此帳戶的次數過多。請稍後再試。"
 }

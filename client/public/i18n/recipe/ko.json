@@ -1104,5 +1104,21 @@
     "add": "결과를 추가할 대상:",
     "addButton": "추가",
     "saveFailed": "소성 기록의 소성 위치를 저장하지 못했습니다."
+  },
+  "layout": {
+    "label": "양식 레이아웃",
+    "standard": "기본",
+    "workbench": "작업대",
+    "guided": "단계별 안내",
+    "side": "화학식과 한도",
+    "fixFold": "수정 및 교체 ({count})",
+    "detailsFold": "세부 정보: 날짜, 메모, 소성, 비용, 유해성",
+    "steps": "단계",
+    "stepRecipe": "레시피",
+    "stepAmounts": "양",
+    "stepCheck": "확인",
+    "amountsHint": "양을 하나씩 입력하세요. Enter를 누르면 다음 양으로 이동합니다.",
+    "back": "이전",
+    "next": "다음"
   }
 }

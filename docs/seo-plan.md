@@ -123,7 +123,9 @@ This is what Angular's own SSR package does. It is not a crazy idea; it is the u
 11. **Small head fixes.**
     - Merge `og:locale` and `Content-Language` from `asia-groundwork-locales` (already built and tested there).
     - `og:locale:alternate` for the other live languages.
-    - The `og:image` stays the English image for now; a per-language image is "Later".
+    - The `og:image` stays the English image for now; a per-language image is "Later". (Done in round 12:
+      `og:image` and `twitter:image` per language from `scripts/og-images.mjs`, and IndexNow after each
+      production deploy, `scripts/indexnow.mjs`.)
     - Effort S. Files: `server/lib/pages.ts`.
 
 12. **Owner's tasks (outside the code).**

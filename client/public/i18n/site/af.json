@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "'n Instelling wat jy op hierdie blaaier verander het, sodat die volgende bladsy dit dadelik wys, voordat die bediener antwoord. <code>theme</code> en <code>palette</code> kleur die bladsy voordat dit verskyn, en <code>language</code> maak bladsye in jou taal oop.",
-        "lasts": "Totdat jy dit verander. As jy afmeld, kom wat jy gekies het terwyl jy afgemeld was terug, as daar iets was, en die res word verwyder."
+        "lasts": "Totdat jy dit verander. Niks word vanself verwyder nie: as jy ná amper 'n jaar weg terugkom, bied 'n kennisgewing 'n knoppie om jou instellings uit te vee. As jy afmeld, kom wat jy gekies het terwyl jy afgemeld was terug, as daar iets was, en die res word verwyder."
       },
       "visitor": {
         "purpose": "Die taal wat jy gekies het, of dat jy die vertalingkennisgewing toegemaak het, terwyl jy afgemeld is, sodat dit terugkom wanneer jy afmeld.",
-        "lasts": "Totdat jy jou blaaier se berging uitvee of 'n rekening op hierdie blaaier skrap."
+        "lasts": "Totdat jy jou blaaier se berging uitvee of 'n rekening op hierdie blaaier skrap. Niks word vanself verwyder nie: as jy ná amper 'n jaar weg terugkom, bied 'n kennisgewing 'n knoppie om jou instellings uit te vee."
       },
       "region": {
         "purpose": "Die streekfilter op 'n biblioteeklys.",
-        "lasts": "Totdat jy die filter terugstel na alle streke."
+        "lasts": "Totdat jy die filter terugstel na alle streke. Niks word vanself verwyder nie: as jy ná amper 'n jaar weg terugkom, bied 'n kennisgewing 'n knoppie om jou instellings uit te vee."
       },
       "includeAdditives": {
         "purpose": "Of nuwe resepte hul bymiddels in die Seger-formule tel, soos jy laas gekies het.",
-        "lasts": "Totdat jy jou blaaier se berging uitvee."
+        "lasts": "Totdat jy jou blaaier se berging uitvee. Niks word vanself verwyder nie: as jy ná amper 'n jaar weg terugkom, bied 'n kennisgewing 'n knoppie om jou instellings uit te vee."
       },
       "print": {
         "purpose": "Jou laaste keuses vir die druk van 'n resep: die hele resep, 'n mengsel of die werkblad, en die mengselgrootte.",
-        "lasts": "Totdat jy jou blaaier se berging uitvee."
+        "lasts": "Totdat jy jou blaaier se berging uitvee. Niks word vanself verwyder nie: as jy ná amper 'n jaar weg terugkom, bied 'n kennisgewing 'n knoppie om jou instellings uit te vee."
+      },
+      "recipeLayout": {
+        "purpose": "Die uitleg wat jy laas vir die resepvorm gekies het: standaard, werkbank of stap vir stap.",
+        "lasts": "Totdat jy jou blaaier se berging uitvee. Niks word vanself verwyder nie: as jy ná amper 'n jaar weg terugkom, bied 'n kennisgewing 'n knoppie om jou instellings uit te vee."
+      },
+      "settingsDates": {
+        "purpose": "Wanneer hierdie blaaier Glazecalc laas met die instellings hierbo oopgemaak het, sodat 'n terugkeer ná amper 'n jaar weg die kennisgewing kan wys wat aanbied om hulle uit te vee, en watter weergawe van die vertalingkennisgewing jy toegemaak het. Geen persoonlike data nie.",
+        "lasts": "Solank enige van daardie instellings hier gehou word."
       },
       "token": {
         "purpose": "'n Aanmeldtoken van 'n ou weergawe van Glazecalc. Dit word nou nooit geskryf nie.",

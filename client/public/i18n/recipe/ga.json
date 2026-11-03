@@ -1104,5 +1104,21 @@
     "add": "Cuir toradh leis le haghaidh:",
     "addButton": "Cuir leis",
     "saveFailed": "Níorbh fhéidir a shábháil cá ndearnadh an taifead bácála a bhácáil."
+  },
+  "layout": {
+    "label": "Leagan amach na foirme",
+    "standard": "Caighdeánach",
+    "workbench": "Binse oibre",
+    "guided": "Céim ar chéim",
+    "side": "Foirmle agus teorainneacha",
+    "fixFold": "Ceartaigh agus malartaigh ({count})",
+    "detailsFold": "Sonraí: dáta, nótaí, bácáil, costas, guaiseacha",
+    "steps": "Céimeanna",
+    "stepRecipe": "Oideas",
+    "stepAmounts": "Méideanna",
+    "stepCheck": "Seiceáil",
+    "amountsHint": "Clóscríobh gach méid. Téann Enter go dtí an chéad mhéid eile.",
+    "back": "Siar",
+    "next": "Ar aghaidh"
   }
 }

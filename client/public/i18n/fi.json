@@ -96,6 +96,7 @@
     "recordsHint": "Vain laitteella, jota käytät yksin. Poistetaan, kun kirjaudut ulos.",
     "recordsBanner": "Glazecalciin ei saada yhteyttä. Näytetään tälle laitteelle {date} tallennettu kopio.",
     "recordsNotSaved": "Tietojasi ei ole tallennettu tälle laitteelle. Muodosta internetyhteys nähdäksesi ne. Voit ottaa tämän käyttöön tililläsi.",
+    "recordsBackOnline": "Olet taas verkossa. Lataa sivu uudelleen, niin näet uusimmat tietueesi ja voit taas tallentaa.",
     "recordsNotKept": "Tämä selain ei säilytä kopiota (yksityinen selaus tai tila ei riitä)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalcin vakiokirjaston raaka-aineet maasälvistä ja saveista fritteihin ja boorin lähteisiin, kustakin oksidianalyysi, Segerin kaava ja vaarat.",
     "materialInfo": "{name}: oksidianalyysi, Segerin kaava, polttohäviö ja vaarat Glazecalcin vakiokirjastossa.",
     "materialInfoLong": "{name} Glazecalcin lasiteraaka-aineiden vakiokirjastossa: oksidianalyysi, osuus Segerin kaavassa, polttohäviö ja vaarat.",
-    "imageAlt": "Glazecalcin etusivu: ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista."
+    "imageAlt": "Glazecalcin logo ja otsikko, ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista."
   },
   "notices": {
     "dismiss": "Sulje",
@@ -341,6 +342,10 @@
     "suggest": "Ehdota korjausta",
     "english": "Lue englanninkielinen alkuteksti",
     "close": "Sulje"
+  },
+  "settingsExpiry": {
+    "text": "Et ole käyttänyt Glazecalcia tässä selaimessa lähes vuoteen. Asetuksesi täällä, kuten teema ja kieli, säilytetään niin kauan kuin käytät sitä. Voit halutessasi tyhjentää ne nyt. Tilillesi tallennettuihin asetuksiin tämä ei vaikuta.",
+    "clear": "Tyhjennä asetukseni"
   },
   "unity": {
     "fluxes": "Sulattajat – R₂O ja RO",

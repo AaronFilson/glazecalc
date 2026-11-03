@@ -96,6 +96,7 @@
     "recordsHint": "僅限只有您一人使用的裝置。登出時會移除。",
     "recordsBanner": "無法連線到 Glazecalc。正在顯示 {date} 儲存在這部裝置上的副本。",
     "recordsNotSaved": "您的紀錄尚未儲存在這部裝置上。請連上網路後查看。您可以在帳戶中開啟此功能。",
+    "recordsBackOnline": "您已重新連上網路。請重新載入頁面，以查看最新的紀錄並能再次儲存。",
     "recordsNotKept": "這個瀏覽器不會保留副本（無痕瀏覽或空間不足）。"
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalc 標準原料庫中的原料，從長石、黏土到熔塊和含硼原料，每種都附有氧化物分析值、塞格式和危害資訊。",
     "materialInfo": "{name}：Glazecalc 標準原料庫中的氧化物分析值、塞格式、燒失量和危害資訊。",
     "materialInfoLong": "{name}在 Glazecalc 釉藥原料標準庫中的資料：氧化物分析值、對塞格式的貢獻值、燒失量和危害資訊。",
-    "imageAlt": "Glazecalc 首頁：給陶藝家的免費釉藥化學工具，旁邊是一張燒過的測溫錐組的照片。"
+    "imageAlt": "Glazecalc 的標誌和標題「給陶藝家的免費釉藥化學工具」，旁邊是一張燒過的測溫錐組的照片。"
   },
   "notices": {
     "dismiss": "關閉",
@@ -341,6 +342,10 @@
     "suggest": "建議修正",
     "english": "閱讀英文版",
     "close": "關閉"
+  },
+  "settingsExpiry": {
+    "text": "您已將近一年沒有在這個瀏覽器中使用 Glazecalc。您在這裡的設定（例如主題和語言）在您使用期間會一直保留。如果願意，您現在可以清除它們。儲存在帳戶中的設定不受影響。",
+    "clear": "清除我的設定"
   },
   "unity": {
     "fluxes": "助熔劑 – R₂O 與 RO",

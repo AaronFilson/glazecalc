@@ -123,6 +123,16 @@
   "trash-full": "La corbeille est pleine : un jeton d’accès ne peut donc plus rien y mettre. Veuillez d’abord en vider une partie sur le site web.",
   "firing-links-full": "Une recette peut être associée à {most} relevés de cuisson au plus. Dissociez-en un pour en associer un autre.",
   "account-limit": "Un compte peut garder jusqu’à {limit} enregistrements au total : recettes, matières, notes, relevés de cuisson et le reste ensemble. Retirez-en pour en enregistrer davantage.",
+  "import-not-export": "Ce n’est pas un fichier de données Glazecalc. Veuillez choisir le fichier JSON de Télécharger mes données.",
+  "import-newer": "Ce fichier a été créé par une version plus récente de Glazecalc. Veuillez recharger la page et réessayer.",
+  "import-too-many": "Ce fichier contient {count} enregistrements. Une importation peut en prendre jusqu’à {most}. Rien n’a été importé.",
+  "import-invalid": "{count, plural, one {# enregistrement de ce fichier ne peut pas être lu.} many {# d’enregistrements de ce fichier ne peuvent pas être lus.} other {# enregistrements de ce fichier ne peuvent pas être lus.}} Rien n’a été importé.",
+  "import-over-limit": "Cette importation ajouterait {count} enregistrements, mais votre compte n’a de place que pour {room} de plus. Rien n’a été importé.",
+  "import-busy": "Une importation dans ce compte est déjà en cours. Veuillez attendre qu’elle se termine.",
+  "import-failed": "L’importation n’a pas fonctionné à cause d’un problème de notre côté. Rien n’a été importé.",
+  "import-done": "L’importation est terminée.",
+  "import-undone": "L’importation a été annulée.",
+  "import-undo-gone": "Cette importation ne peut plus être annulée.",
   "not-shared": "Cette recette n’est pas partagée, ou le lien est incomplet.",
   "share-stopped": "La recette n’est plus partagée. Son lien ne l’ouvre plus.",
   "token-invalid": "Le jeton d’accès n’est pas valide, a expiré ou a été révoqué.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Trop de modifications ont été faites sur ce compte avec des jetons d’accès. Veuillez patienter un moment puis réessayer ; les modifications sur le site fonctionnent toujours.",
   "too-many-mcp": "Trop de requêtes vers les outils Glazecalc pour les assistants IA. Veuillez patienter quelques minutes et réessayer.",
   "too-many-oauth": "Trop de demandes de connexion d’applications depuis cette adresse. Veuillez patienter quelques minutes et réessayer.",
-  "too-many-registrations": "Trop d’applications se sont inscrites elles-mêmes. Veuillez réessayer plus tard."
+  "too-many-registrations": "Trop d’applications se sont inscrites elles-mêmes. Veuillez réessayer plus tard.",
+  "too-many-imports": "Trop d’importations dans ce compte au cours de la dernière heure. Veuillez réessayer plus tard."
 }

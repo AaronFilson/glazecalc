@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Bu tarayıcıda değiştirdiğiniz bir ayar; böylece bir sonraki sayfa onu sunucu yanıt vermeden hemen gösterir. <code>theme</code> ve <code>palette</code> sayfayı görünmeden önce renklendirir, <code>language</code> ise sayfaları sizin dilinizde açar.",
-        "lasts": "Siz değiştirene kadar. Oturumu kapattığınızda, oturum kapalıyken bir şey seçtiyseniz o geri gelir, gerisi kaldırılır."
+        "lasts": "Siz değiştirene kadar. Hiçbir şey kendiliğinden kaldırılmaz: neredeyse bir yıl uzak kaldıktan sonra dönerseniz, bir not size ayarlarınızı temizlemek için bir düğme sunar. Oturumu kapattığınızda, oturum kapalıyken bir şey seçtiyseniz o geri gelir, gerisi kaldırılır."
       },
       "visitor": {
         "purpose": "Oturum kapalıyken seçtiğiniz dil ya da çeviri notunu kapattığınız; böylece oturumu kapattığınızda geri gelir.",
-        "lasts": "Tarayıcınızın depolama alanını temizleyene ya da bu tarayıcıda bir hesabı silene kadar."
+        "lasts": "Tarayıcınızın depolama alanını temizleyene ya da bu tarayıcıda bir hesabı silene kadar. Hiçbir şey kendiliğinden kaldırılmaz: neredeyse bir yıl uzak kaldıktan sonra dönerseniz, bir not size ayarlarınızı temizlemek için bir düğme sunar."
       },
       "region": {
         "purpose": "Bir kütüphane listesindeki bölge filtresi.",
-        "lasts": "Filtreyi yeniden tüm bölgelere ayarlayana kadar."
+        "lasts": "Filtreyi yeniden tüm bölgelere ayarlayana kadar. Hiçbir şey kendiliğinden kaldırılmaz: neredeyse bir yıl uzak kaldıktan sonra dönerseniz, bir not size ayarlarınızı temizlemek için bir düğme sunar."
       },
       "includeAdditives": {
         "purpose": "Yeni reçetelerin katkılarını Seger formülüne katıp katmayacağı, en son seçtiğiniz gibi.",
-        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
+        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar. Hiçbir şey kendiliğinden kaldırılmaz: neredeyse bir yıl uzak kaldıktan sonra dönerseniz, bir not size ayarlarınızı temizlemek için bir düğme sunar."
       },
       "print": {
         "purpose": "Bir reçeteyi yazdırmak için son seçimleriniz: reçetenin tamamı, bir tartım veya çalışma sayfası ve tartım miktarı.",
-        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
+        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar. Hiçbir şey kendiliğinden kaldırılmaz: neredeyse bir yıl uzak kaldıktan sonra dönerseniz, bir not size ayarlarınızı temizlemek için bir düğme sunar."
+      },
+      "recipeLayout": {
+        "purpose": "Reçete formu için en son seçtiğiniz düzen: standart, çalışma tezgâhı ya da adım adım.",
+        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar. Hiçbir şey kendiliğinden kaldırılmaz: neredeyse bir yıl uzak kaldıktan sonra dönerseniz, bir not size ayarlarınızı temizlemek için bir düğme sunar."
+      },
+      "settingsDates": {
+        "purpose": "Bu tarayıcının Glazecalc'ı yukarıdaki ayarlarla en son ne zaman açtığı, böylece neredeyse bir yıl uzak kaldıktan sonra dönüldüğünde bu ayarları temizlemeyi öneren not gösterilebilsin, ve çeviri notunun hangi sürümünü kapattığınız. Kişisel veri yoktur.",
+        "lasts": "Bu ayarlardan herhangi biri burada saklandığı sürece."
       },
       "token": {
         "purpose": "Glazecalc’ın eski bir sürümünden kalma bir oturum açma belirteci. Artık hiç yazılmaz.",

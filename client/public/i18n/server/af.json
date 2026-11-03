@@ -123,6 +123,16 @@
   "trash-full": "Die Asblik is vol, so 'n toegangstoken kan niks meer daarheen skuif nie. Maak asseblief eers 'n deel daarvan op die webwerf leeg.",
   "firing-links-full": "'n Resep kan aan hoogstens {most} bakrekords gekoppel word. Ontkoppel een om nog een te koppel.",
   "account-limit": "'n Rekening kan tot {limit} rekords in totaal hou: resepte, grondstowwe, notas, bakrekords en die res saam. Verwyder asseblief 'n paar om meer te stoor.",
+  "import-not-export": "Dit is nie 'n Glazecalc-datalêer nie. Kies asseblief die JSON-lêer van Laai my data af.",
+  "import-newer": "Hierdie lêer is deur 'n nuwer weergawe van Glazecalc gemaak. Laai asseblief die bladsy weer en probeer weer.",
+  "import-too-many": "Hierdie lêer bevat {count} rekords. Een invoer kan tot {most} neem. Niks is ingevoer nie.",
+  "import-invalid": "{count, plural, one {# rekord in hierdie lêer kan nie gelees word nie.} other {# rekords in hierdie lêer kan nie gelees word nie.}} Niks is ingevoer nie.",
+  "import-over-limit": "Hierdie invoer sou {count} rekords byvoeg, maar jou rekening het plek vir nog {room}. Niks is ingevoer nie.",
+  "import-busy": "'n Invoer na hierdie rekening is reeds aan die gang. Wag asseblief totdat dit klaar is.",
+  "import-failed": "Die invoer het nie gewerk nie weens 'n probleem aan ons kant. Niks is ingevoer nie.",
+  "import-done": "Die invoer is klaar.",
+  "import-undone": "Die invoer is teruggetrek.",
+  "import-undo-gone": "Hierdie invoer kan nie meer ontdoen word nie.",
   "not-shared": "Hierdie resep is nie gedeel nie, of die skakel is nie volledig nie.",
   "share-stopped": "Die resep word nie meer gedeel nie. Sy skakel maak dit nie meer oop nie.",
   "token-invalid": "Die toegangstoken is nie geldig nie, het verval of is herroep.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Te veel veranderinge is met toegangstokens aan hierdie rekening gemaak. Wag asseblief 'n rukkie en probeer weer; veranderinge op die webwerf werk steeds.",
   "too-many-mcp": "Te veel versoeke aan die Glazecalc-gereedskap vir KI-assistente. Wag asseblief 'n paar minute en probeer weer.",
   "too-many-oauth": "Te veel versoeke om toepassings te koppel vanaf hierdie adres. Wag asseblief 'n paar minute en probeer weer.",
-  "too-many-registrations": "Te veel toepassings het hulself geregistreer. Probeer asseblief later weer."
+  "too-many-registrations": "Te veel toepassings het hulself geregistreer. Probeer asseblief later weer.",
+  "too-many-imports": "Te veel invoere na hierdie rekening in die afgelope uur. Probeer asseblief later weer."
 }

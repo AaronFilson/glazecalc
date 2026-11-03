@@ -22,6 +22,7 @@ import {
   prerenderLanguages,
   prerenderedFile
 } from '../../lib/pages.js';
+import { ogImageFile } from '../../lib/og-images.js';
 import { labelShown } from './site.ts';
 
 export { ENGLISH_ONLY_PAGES, MATERIAL_PAGES, PUBLIC_PAGES, REFERENCE_PAGES, prerenderLanguages };
@@ -305,6 +306,11 @@ export function pageHtml(
     out = put(out, /(<meta\s+name="description"\s+content=")[^"]*(")/, text.description);
     out = put(out, /(<meta\s+property="og:description"\s+content=")[^"]*(")/, text.description);
   }
+  // The preview image in the page's language (scripts/og-images.mjs): the English for a language not offered
+  // yet, and for a page in English only, whose one address for search engines is the English.
+  const image = site + '/' + ogImageFile(live.includes(code) && !englishOnly ? code : 'en');
+  out = put(out, /(<meta\s+property="og:image"\s+content=")[^"]*(")/, image);
+  out = put(out, /(<meta\s+name="twitter:image"\s+content=")[^"]*(")/, image);
   if (text.imageAlt) out = put(out, /(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/, text.imageAlt);
   if (label) out = out.replace(/<body[^>]*>/, (body) => body + '\n    ' + labelBanner(label));
   return out;

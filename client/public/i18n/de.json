@@ -96,6 +96,7 @@
     "recordsHint": "Nur auf einem Gerät, das Sie allein nutzen. Wird beim Abmelden entfernt.",
     "recordsBanner": "Glazecalc ist nicht erreichbar. Angezeigt wird die Kopie, die am {date} auf diesem Gerät gespeichert wurde.",
     "recordsNotSaved": "Ihre Daten sind auf diesem Gerät nicht gespeichert. Stellen Sie eine Internetverbindung her, um sie zu sehen. Sie können dies in Ihrem Konto einschalten.",
+    "recordsBackOnline": "Sie sind wieder online. Laden Sie die Seite neu, um Ihre neuesten Daten zu sehen und wieder zu speichern.",
     "recordsNotKept": "Dieser Browser behält keine Kopie (privates Surfen oder kein Platz)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Die Rohstoffe aus der Standardbibliothek von Glazecalc, von Feldspäten und Tonen bis zu Fritten und Borquellen, jeweils mit Oxidanalyse, Segerformel und Gefahren.",
     "materialInfo": "{name}: Oxidanalyse, Segerformel, Glühverlust und Gefahren in der Standardbibliothek von Glazecalc.",
     "materialInfoLong": "{name} in der Standardbibliothek der Glasurrohstoffe von Glazecalc: Oxidanalyse, Beitrag zur Segerformel, Glühverlust und Gefahren.",
-    "imageAlt": "Die Startseite von Glazecalc: kostenlose Glasurchemie für die Töpferei, neben einem Foto gebrannter Kegelsätze."
+    "imageAlt": "Das Glazecalc-Logo und seine Überschrift, kostenlose Glasurchemie für die Töpferei, neben einem Foto gebrannter Kegelsätze."
   },
   "notices": {
     "dismiss": "Schließen",
@@ -341,6 +342,10 @@
     "suggest": "Korrektur vorschlagen",
     "english": "Englisches Original lesen",
     "close": "Schließen"
+  },
+  "settingsExpiry": {
+    "text": "Sie haben Glazecalc in diesem Browser fast ein Jahr lang nicht verwendet. Ihre Einstellungen hier, etwa Design und Sprache, bleiben erhalten, solange Sie ihn verwenden. Sie können sie jetzt löschen, wenn Sie möchten. In Ihrem Konto gespeicherte Einstellungen sind nicht betroffen.",
+    "clear": "Meine Einstellungen löschen"
   },
   "unity": {
     "fluxes": "Flussmittel – R₂O und RO",

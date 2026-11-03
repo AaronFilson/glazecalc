@@ -1104,5 +1104,21 @@
     "add": "Aggiungi un risultato per",
     "addButton": "Aggiungi",
     "saveFailed": "Non è stato possibile salvare dove è stato cotto il registro di cottura."
+  },
+  "layout": {
+    "label": "Disposizione del modulo",
+    "standard": "Standard",
+    "workbench": "Banco di lavoro",
+    "guided": "Passo per passo",
+    "side": "Formula e limiti",
+    "fixFold": "Correggi e sostituisci ({count})",
+    "detailsFold": "Dettagli: data, note, cottura, costo, pericoli",
+    "steps": "Passi",
+    "stepRecipe": "Ricetta",
+    "stepAmounts": "Quantità",
+    "stepCheck": "Verifica",
+    "amountsHint": "Inserisci ogni quantità. Invio passa alla quantità successiva.",
+    "back": "Indietro",
+    "next": "Avanti"
   }
 }

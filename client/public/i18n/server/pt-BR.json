@@ -123,6 +123,16 @@
   "trash-full": "A Lixeira está cheia, então um token de acesso não pode mover mais nada para ela. Esvazie parte dela primeiro no site.",
   "firing-links-full": "Uma receita pode ser vinculada a no máximo {most} registros de queima. Desvincule um para vincular outro.",
   "account-limit": "Uma conta pode guardar até {limit} registros no total: receitas, matérias-primas, anotações, registros de queima e o resto, juntos. Remova alguns para salvar mais.",
+  "import-not-export": "Este não é um arquivo de dados do Glazecalc. Escolha o arquivo JSON de Baixar meus dados.",
+  "import-newer": "Este arquivo foi feito por uma versão mais nova do Glazecalc. Recarregue a página e tente novamente.",
+  "import-too-many": "Este arquivo contém {count} registros. Uma importação aceita até {most}. Nada foi importado.",
+  "import-invalid": "{count, plural, one {# registro deste arquivo não pode ser lido.} many {# registros deste arquivo não podem ser lidos.} other {# registros deste arquivo não podem ser lidos.}} Nada foi importado.",
+  "import-over-limit": "Esta importação adicionaria {count} registros, mas sua conta só tem espaço para mais {room}. Nada foi importado.",
+  "import-busy": "Já há uma importação em andamento nesta conta. Aguarde até ela terminar.",
+  "import-failed": "A importação não funcionou por causa de um problema do nosso lado. Nada foi importado.",
+  "import-done": "A importação foi concluída.",
+  "import-undone": "A importação foi desfeita.",
+  "import-undo-gone": "Esta importação não pode mais ser desfeita.",
   "not-shared": "Esta receita não está compartilhada, ou o link está incompleto.",
   "share-stopped": "A receita não está mais compartilhada. O link dela não a abre mais.",
   "token-invalid": "O token de acesso não é válido, expirou ou foi revogado.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Alterações demais foram feitas nesta conta com tokens de acesso. Aguarde um pouco e tente novamente; as alterações no site continuam funcionando.",
   "too-many-mcp": "Solicitações demais às ferramentas do Glazecalc para assistentes de IA. Aguarde alguns minutos e tente novamente.",
   "too-many-oauth": "Solicitações demais para conectar apps a partir deste endereço. Aguarde alguns minutos e tente novamente.",
-  "too-many-registrations": "Apps demais se registraram sozinhos. Tente novamente mais tarde."
+  "too-many-registrations": "Apps demais se registraram sozinhos. Tente novamente mais tarde.",
+  "too-many-imports": "Importações demais nesta conta na última hora. Tente novamente mais tarde."
 }

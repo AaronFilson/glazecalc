@@ -123,6 +123,16 @@
   "trash-full": "Çöp kutusu dolu; bu yüzden bir erişim belirteci ona başka bir şey taşıyamaz. Lütfen önce web sitesinde bir kısmını boşaltın.",
   "firing-links-full": "Bir reçeteye en fazla {most} pişirim kaydı bağlanabilir. Başkasını bağlamak için birinin bağlantısını kaldırın.",
   "account-limit": "Bir hesapta toplam en fazla {limit} kayıt saklanabilir: reçeteler, hammaddeler, notlar, pişirim kayıtları ve geri kalanı birlikte. Daha fazlasını kaydetmek için lütfen bazılarını kaldırın.",
+  "import-not-export": "Bu bir Glazecalc veri dosyası değil. Lütfen Verilerimi indir ile alınan JSON dosyasını seçin.",
+  "import-newer": "Bu dosya Glazecalc'ın daha yeni bir sürümüyle oluşturulmuş. Lütfen sayfayı yenileyip tekrar deneyin.",
+  "import-too-many": "Bu dosyada {count} kayıt var. Bir içe aktarma en fazla {most} kayıt alabilir. Hiçbir şey içe aktarılmadı.",
+  "import-invalid": "{count, plural, one {Bu dosyadaki # kayıt okunamıyor.} other {Bu dosyadaki # kayıt okunamıyor.}} Hiçbir şey içe aktarılmadı.",
+  "import-over-limit": "Bu içe aktarma {count} kayıt ekler, ama hesabınızda yalnızca {room} kayıtlık yer kaldı. Hiçbir şey içe aktarılmadı.",
+  "import-busy": "Bu hesaba zaten bir içe aktarma sürüyor. Lütfen bitmesini bekleyin.",
+  "import-failed": "İçe aktarma bizim tarafımızdaki bir sorun nedeniyle çalışmadı. Hiçbir şey içe aktarılmadı.",
+  "import-done": "İçe aktarma tamamlandı.",
+  "import-undone": "İçe aktarma geri alındı.",
+  "import-undo-gone": "Bu içe aktarma artık geri alınamaz.",
   "not-shared": "Bu reçete paylaşılmıyor veya bağlantı eksik.",
   "share-stopped": "Reçete artık paylaşılmıyor. Bağlantısı artık onu açmıyor.",
   "token-invalid": "Erişim belirteci geçerli değil, süresi dolmuş veya iptal edilmiş.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Bu hesapta erişim belirteçleriyle çok fazla değişiklik yapıldı. Lütfen biraz bekleyip yeniden deneyin; web sitesindeki değişiklikler hâlâ çalışır.",
   "too-many-mcp": "Yapay zekâ asistanları için Glazecalc araçlarına çok fazla istek yapıldı. Lütfen birkaç dakika bekleyip yeniden deneyin.",
   "too-many-oauth": "Bu adresten çok fazla uygulama bağlama isteği geldi. Lütfen birkaç dakika bekleyip yeniden deneyin.",
-  "too-many-registrations": "Çok fazla uygulama kendini kaydetti. Lütfen daha sonra yeniden deneyin."
+  "too-many-registrations": "Çok fazla uygulama kendini kaydetti. Lütfen daha sonra yeniden deneyin.",
+  "too-many-imports": "Son bir saatte bu hesaba çok fazla içe aktarma yapıldı. Lütfen daha sonra tekrar deneyin."
 }

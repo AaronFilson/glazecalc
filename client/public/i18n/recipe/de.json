@@ -1104,5 +1104,21 @@
     "add": "Ergebnis hinzufügen für",
     "addButton": "Hinzufügen",
     "saveFailed": "Wo das Brennprotokoll gebrannt wurde, konnte nicht gespeichert werden."
+  },
+  "layout": {
+    "label": "Formularansicht",
+    "standard": "Standard",
+    "workbench": "Werkbank",
+    "guided": "Schritt für Schritt",
+    "side": "Formel und Grenzwerte",
+    "fixFold": "Korrigieren und ersetzen ({count})",
+    "detailsFold": "Details: Datum, Notizen, Brand, Kosten, Gefahren",
+    "steps": "Schritte",
+    "stepRecipe": "Rezept",
+    "stepAmounts": "Mengen",
+    "stepCheck": "Prüfen",
+    "amountsHint": "Jede Menge eintippen. Enter springt zur nächsten Menge.",
+    "back": "Zurück",
+    "next": "Weiter"
   }
 }

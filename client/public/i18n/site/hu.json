@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Egy beállítás, amelyet ebben a böngészőben módosított, hogy a következő oldal azonnal mutassa, még mielőtt a szerver válaszol. A <code>theme</code> és a <code>palette</code> már a megjelenése előtt kiszínezi az oldalt, a <code>language</code> pedig az Ön nyelvén nyitja meg az oldalakat.",
-        "lasts": "Amíg meg nem változtatja. Kijelentkezéskor visszaáll az, amit kijelentkezett állapotban választott, ha volt ilyen, a többi törlődik."
+        "lasts": "Amíg meg nem változtatja. Semmi sem törlődik magától: ha majdnem egy év távollét után tér vissza, egy megjegyzés gombot kínál a beállításai törléséhez. Kijelentkezéskor visszaáll az, amit kijelentkezett állapotban választott, ha volt ilyen, a többi törlődik."
       },
       "visitor": {
         "purpose": "A kijelentkezett állapotban választott nyelv, vagy az, hogy bezárta a fordítási megjegyzést, hogy kijelentkezéskor visszatérjen.",
-        "lasts": "Amíg nem törli a böngésző tárhelyét, vagy nem töröl egy fiókot ebben a böngészőben."
+        "lasts": "Amíg nem törli a böngésző tárhelyét, vagy nem töröl egy fiókot ebben a böngészőben. Semmi sem törlődik magától: ha majdnem egy év távollét után tér vissza, egy megjegyzés gombot kínál a beállításai törléséhez."
       },
       "region": {
         "purpose": "Egy könyvtárlista régiószűrője.",
-        "lasts": "Amíg vissza nem állítja a szűrőt minden régióra."
+        "lasts": "Amíg vissza nem állítja a szűrőt minden régióra. Semmi sem törlődik magától: ha majdnem egy év távollét után tér vissza, egy megjegyzés gombot kínál a beállításai törléséhez."
       },
       "includeAdditives": {
         "purpose": "Hogy az új receptek beszámítják-e adalékaikat a Seger-képletbe, ahogy legutóbb választotta.",
-        "lasts": "Amíg nem törli a böngésző tárhelyét."
+        "lasts": "Amíg nem törli a böngésző tárhelyét. Semmi sem törlődik magától: ha majdnem egy év távollét után tér vissza, egy megjegyzés gombot kínál a beállításai törléséhez."
       },
       "print": {
         "purpose": "Legutóbbi választásai egy recept nyomtatásához: a teljes recept, egy adag vagy a munkalap, és az adag mérete.",
-        "lasts": "Amíg nem törli a böngésző tárhelyét."
+        "lasts": "Amíg nem törli a böngésző tárhelyét. Semmi sem törlődik magától: ha majdnem egy év távollét után tér vissza, egy megjegyzés gombot kínál a beállításai törléséhez."
+      },
+      "recipeLayout": {
+        "purpose": "A receptűrlaphoz legutóbb választott elrendezés: normál, munkapad vagy lépésenként.",
+        "lasts": "Amíg nem törli a böngésző tárhelyét. Semmi sem törlődik magától: ha majdnem egy év távollét után tér vissza, egy megjegyzés gombot kínál a beállításai törléséhez."
+      },
+      "settingsDates": {
+        "purpose": "Mikor nyitotta meg ez a böngésző utoljára a Glazecalcot a fenti beállításokkal, hogy majdnem egy év távollét utáni visszatéréskor megjelenhessen a megjegyzés, amely felajánlja a törlésüket, és a fordítási megjegyzés melyik változatát zárta be. Személyes adatot nem tartalmaz.",
+        "lasts": "Ameddig ezek közül a beállítások közül bármelyik itt marad."
       },
       "token": {
         "purpose": "Bejelentkezési token a Glazecalc egy régi verziójából. Ma már soha nem jön létre.",

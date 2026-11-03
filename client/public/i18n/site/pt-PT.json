@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Uma definição que alterou neste navegador, para que a página seguinte a mostre logo, antes de o servidor responder. <code>theme</code> e <code>palette</code> dão cor à página antes de ela aparecer, e <code>language</code> abre as páginas na sua língua.",
-        "lasts": "Até a alterar. Terminar a sessão repõe o que escolheu sem sessão iniciada, se for o caso, e remove o resto."
+        "lasts": "Até a alterar. Nada é removido por si só: se voltar após quase um ano de ausência, um aviso oferece um botão para apagar as suas definições. Terminar a sessão repõe o que escolheu sem sessão iniciada, se for o caso, e remove o resto."
       },
       "visitor": {
         "purpose": "A língua que escolheu, ou o facto de ter fechado o aviso de tradução, sem sessão iniciada, para que volte quando terminar a sessão.",
-        "lasts": "Até apagar o armazenamento do navegador ou eliminar uma conta neste navegador."
+        "lasts": "Até apagar o armazenamento do navegador ou eliminar uma conta neste navegador. Nada é removido por si só: se voltar após quase um ano de ausência, um aviso oferece um botão para apagar as suas definições."
       },
       "region": {
         "purpose": "O filtro de região numa lista da biblioteca.",
-        "lasts": "Até repor o filtro em todas as regiões."
+        "lasts": "Até repor o filtro em todas as regiões. Nada é removido por si só: se voltar após quase um ano de ausência, um aviso oferece um botão para apagar as suas definições."
       },
       "includeAdditives": {
         "purpose": "Se as novas receitas incluem os aditivos na fórmula de Seger, como escolheu da última vez.",
-        "lasts": "Até apagar o armazenamento do navegador."
+        "lasts": "Até apagar o armazenamento do navegador. Nada é removido por si só: se voltar após quase um ano de ausência, um aviso oferece um botão para apagar as suas definições."
       },
       "print": {
         "purpose": "As suas últimas escolhas para imprimir uma receita: a receita inteira, um lote ou a folha de trabalho, e o tamanho do lote.",
-        "lasts": "Até apagar o armazenamento do navegador."
+        "lasts": "Até apagar o armazenamento do navegador. Nada é removido por si só: se voltar após quase um ano de ausência, um aviso oferece um botão para apagar as suas definições."
+      },
+      "recipeLayout": {
+        "purpose": "A disposição que escolheu por último para o formulário da receita: padrão, bancada ou passo a passo.",
+        "lasts": "Até apagar o armazenamento do navegador. Nada é removido por si só: se voltar após quase um ano de ausência, um aviso oferece um botão para apagar as suas definições."
+      },
+      "settingsDates": {
+        "purpose": "Quando este navegador abriu o Glazecalc pela última vez com as definições acima, para que um regresso após quase um ano de ausência possa mostrar o aviso que oferece apagá-las, e que versão do aviso de tradução fechou. Nenhum dado pessoal.",
+        "lasts": "Enquanto qualquer uma dessas definições estiver guardada aqui."
       },
       "token": {
         "purpose": "Um token de sessão de uma versão antiga do Glazecalc. Já não é escrito.",

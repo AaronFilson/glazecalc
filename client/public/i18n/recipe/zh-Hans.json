@@ -1104,5 +1104,21 @@
     "add": "为以下条件添加结果",
     "addButton": "添加",
     "saveFailed": "无法保存这条烧窑记录是在哪里烧的。"
+  },
+  "layout": {
+    "label": "表单布局",
+    "standard": "标准",
+    "workbench": "工作台",
+    "guided": "分步引导",
+    "side": "化学式和限值",
+    "fixFold": "修正和替换（{count}）",
+    "detailsFold": "详细信息：日期、备注、烧成、成本、危害",
+    "steps": "步骤",
+    "stepRecipe": "配方",
+    "stepAmounts": "用量",
+    "stepCheck": "检查",
+    "amountsHint": "逐项输入用量。按 Enter 跳到下一个用量。",
+    "back": "上一步",
+    "next": "下一步"
   }
 }

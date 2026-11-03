@@ -1104,5 +1104,21 @@
     "add": "Ku dar natiijo",
     "addButton": "Ku dar",
     "saveFailed": "Meesha diiwaanka gubidda lagu gubay lama kaydin karo."
+  },
+  "layout": {
+    "label": "Qaabka foomka",
+    "standard": "Caadi",
+    "workbench": "Miis shaqo",
+    "guided": "Tallaabooyin la hagayo",
+    "side": "Qaacidada iyo xadadka",
+    "fixFold": "Hagaaji oo beddel ({count})",
+    "detailsFold": "Faahfaahin: taariikhda, qoraallo, gubidda, qiimaha, khataraha",
+    "steps": "Tallaabooyin",
+    "stepRecipe": "Hab",
+    "stepAmounts": "Qadarrada",
+    "stepCheck": "Hubi",
+    "amountsHint": "Qor qadar kasta. Enter wuxuu u gudbaa qadarka xiga.",
+    "back": "Dib u noqo",
+    "next": "Xiga"
   }
 }

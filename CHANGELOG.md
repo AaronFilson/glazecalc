@@ -6,6 +6,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **The teaching companion, round 12** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
+  short lesson on any glaze topic at the learner's level (new, some, experienced), with up to two guide sections
+  attached, one small experiment with one tool, and John Britt's videos linked by his titles with credit only when the
+  topic matches a unit of the course companion (`matchTopic`); otherwise no video is named. `compare_recipes` also
+  takes the signed-in person's own saved recipes by id (`aRecipeId`, `bRecipeId`) and adds a `summary` of what
+  matters: flux ratio, silica to alumina, silica, alumina and boron, expansion with a fit flag at a difference of 0.3
+  (a default the owner is to confirm), Stull regions, cautions on one side only and cone fit. `vary_material` adds
+  each tile's flux ratio and, in its trend, the first tile with a new caution and the first whose cone fit changes.
+  Both tools now declare an output schema. Assistants only: no change on the website.
 - **Latin American Spanish** (docs/translations/es-419.md): the app, the emails and all five guides, live at
   `/es-419/…`, written for Mexico first, with the Southern Cone's forms in the style sheet's notes. Mexico, Argentina
   and Chile now read it (Spain keeps Spain's Spanish), and a browser asking for Spanish of the Americas (es-MX, es-AR …)

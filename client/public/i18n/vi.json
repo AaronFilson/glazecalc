@@ -96,6 +96,7 @@
     "recordsHint": "Chỉ dùng trên thiết bị mà chỉ mình bạn sử dụng. Bị xóa khi bạn đăng xuất.",
     "recordsBanner": "Không thể kết nối tới Glazecalc. Đang hiển thị bản sao đã lưu trên thiết bị này vào {date}.",
     "recordsNotSaved": "Bản ghi của bạn chưa được lưu trên thiết bị này. Hãy kết nối internet để xem. Bạn có thể bật tính năng này trong tài khoản của mình.",
+    "recordsBackOnline": "Bạn đã trực tuyến trở lại. Hãy tải lại trang để xem các bản ghi mới nhất và lưu lại được.",
     "recordsNotKept": "Trình duyệt này sẽ không giữ bản sao (đang duyệt web riêng tư hoặc hết dung lượng)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Các nguyên liệu trong thư viện có sẵn của Glazecalc, từ trường thạch, đất sét đến frit và nguồn bo, kèm phân tích oxit, công thức Seger và mối nguy.",
     "materialInfo": "{name}: phân tích oxit, công thức Seger, lượng mất khi nung và mối nguy trong thư viện có sẵn của Glazecalc.",
     "materialInfoLong": "{name} trong thư viện nguyên liệu men có sẵn của Glazecalc: phân tích oxit, đóng góp vào công thức Seger, lượng mất khi nung và mối nguy.",
-    "imageAlt": "Trang chủ Glazecalc: hóa học men miễn phí cho thợ gốm, bên cạnh ảnh các bộ côn đã nung."
+    "imageAlt": "Logo Glazecalc và tiêu đề, hóa học men miễn phí cho thợ gốm, bên cạnh ảnh các bộ côn đã nung."
   },
   "notices": {
     "dismiss": "Bỏ qua",
@@ -341,6 +342,10 @@
     "suggest": "Gợi ý chỉnh sửa",
     "english": "Đọc bản tiếng Anh",
     "close": "Đóng"
+  },
+  "settingsExpiry": {
+    "text": "Bạn đã không dùng Glazecalc trên trình duyệt này gần một năm. Cài đặt của bạn ở đây, như giao diện và ngôn ngữ, được giữ lại khi bạn còn dùng nó. Bạn có thể xóa chúng ngay bây giờ nếu muốn. Cài đặt đã lưu vào tài khoản của bạn không bị ảnh hưởng.",
+    "clear": "Xóa cài đặt của tôi"
   },
   "unity": {
     "fluxes": "Chất trợ chảy - R₂O và RO",

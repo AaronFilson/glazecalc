@@ -96,6 +96,7 @@
     "recordsHint": "Only on a device you alone use. Removed when you sign out.",
     "recordsBanner": "Glazecalc can't be reached. Showing the copy saved on this device on {date}.",
     "recordsNotSaved": "Your records are not saved on this device. Connect to the internet to see them. You can turn this on in your account.",
+    "recordsBackOnline": "You are back online. Reload to see your latest records and save again.",
     "recordsNotKept": "This browser won't keep a copy (private browsing or no space)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "The materials in Glazecalc's standard library, from feldspars and clays to frits and boron sources, each with its oxide analysis, unity formula and hazards.",
     "materialInfo": "{name}: oxide analysis, unity formula, loss on ignition and hazards in Glazecalc's standard library.",
     "materialInfoLong": "{name} in Glazecalc's standard library of glaze materials: its oxide analysis, unity formula contribution, loss on ignition and hazards.",
-    "imageAlt": "The Glazecalc home page: free glaze chemistry for potters, beside a photo of fired cone packs."
+    "imageAlt": "The Glazecalc logo and its heading, free glaze chemistry for potters, beside a photo of fired cone packs."
   },
   "notices": {
     "dismiss": "Dismiss",
@@ -341,6 +342,10 @@
     "suggest": "Suggest a correction",
     "english": "Read the English",
     "close": "Close"
+  },
+  "settingsExpiry": {
+    "text": "You haven't used Glazecalc in this browser for nearly a year. Your settings here, such as theme and language, are kept while you use it. You can clear them now if you like. Settings saved to your account are not affected.",
+    "clear": "Clear my settings"
   },
   "unity": {
     "fluxes": "Fluxes - R₂O and RO",

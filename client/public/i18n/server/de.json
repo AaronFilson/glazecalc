@@ -123,6 +123,16 @@
   "trash-full": "Der Papierkorb ist voll, deshalb kann ein Zugriffstoken nichts mehr hineinlegen. Bitte leeren Sie ihn zuerst teilweise auf der Website.",
   "firing-links-full": "Ein Rezept kann mit höchstens {most} Brennprotokollen verknüpft werden. Trennen Sie eines, um ein anderes zu verknüpfen.",
   "account-limit": "Ein Konto kann insgesamt bis zu {limit} Datensätze behalten: Rezepte, Rohstoffe, Notizen, Brennprotokolle und alles Übrige zusammen. Bitte entfernen Sie einige, um mehr zu speichern.",
+  "import-not-export": "Dies ist keine Glazecalc-Datendatei. Bitte wählen Sie die JSON-Datei aus „Meine Daten herunterladen“.",
+  "import-newer": "Diese Datei wurde von einer neueren Version von Glazecalc erstellt. Bitte laden Sie die Seite neu und versuchen Sie es erneut.",
+  "import-too-many": "Diese Datei enthält {count} Datensätze. Ein Import kann höchstens {most} aufnehmen. Es wurde nichts importiert.",
+  "import-invalid": "{count, plural, one {# Datensatz in dieser Datei kann nicht gelesen werden.} other {# Datensätze in dieser Datei können nicht gelesen werden.}} Es wurde nichts importiert.",
+  "import-over-limit": "Dieser Import würde {count} Datensätze hinzufügen, aber Ihr Konto hat nur noch Platz für {room}. Es wurde nichts importiert.",
+  "import-busy": "In dieses Konto wird bereits importiert. Bitte warten Sie, bis der Import abgeschlossen ist.",
+  "import-failed": "Der Import hat wegen eines Problems auf unserer Seite nicht funktioniert. Es wurde nichts importiert.",
+  "import-done": "Der Import ist abgeschlossen.",
+  "import-undone": "Der Import wurde zurückgenommen.",
+  "import-undo-gone": "Dieser Import kann nicht mehr rückgängig gemacht werden.",
   "not-shared": "Dieses Rezept wird nicht geteilt, oder der Link ist nicht vollständig.",
   "share-stopped": "Das Rezept wird nicht mehr geteilt. Der Link öffnet es nicht mehr.",
   "token-invalid": "Das Zugriffstoken ist ungültig, abgelaufen oder widerrufen.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Mit Zugriffstoken wurden zu viele Änderungen an diesem Konto vorgenommen. Bitte warten Sie eine Weile und versuchen Sie es erneut; Änderungen auf der Website funktionieren weiterhin.",
   "too-many-mcp": "Zu viele Anfragen an die Glazecalc-Werkzeuge für KI-Assistenten. Bitte warten Sie ein paar Minuten und versuchen Sie es erneut.",
   "too-many-oauth": "Zu viele Anfragen von dieser Adresse, Apps zu verbinden. Bitte warten Sie einige Minuten und versuchen Sie es erneut.",
-  "too-many-registrations": "Zu viele Apps haben sich selbst registriert. Bitte versuchen Sie es später erneut."
+  "too-many-registrations": "Zu viele Apps haben sich selbst registriert. Bitte versuchen Sie es später erneut.",
+  "too-many-imports": "Zu viele Importe in dieses Konto in der letzten Stunde. Bitte versuchen Sie es später erneut."
 }

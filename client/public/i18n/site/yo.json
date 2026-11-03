@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Ètò kan tí ẹ yí padà lórí browser yìí, kí ojú-ìwé tó tẹ̀lé lè fi hàn lẹ́sẹ̀kẹsẹ̀, kí server tó dáhùn. <code>theme</code> àti <code>palette</code> ń fi àwọ̀ sí ojú-ìwé kí ó tó farahàn, <code>language</code> sì ń ṣí ojú-ìwé ní èdè yín.",
-        "lasts": "Títí ẹ ó fi yí i padà. Jíjáde ń dá ohun tí ẹ yàn nígbà tí ẹ wà níta padà, bí ó bá wà, ó sì ń yọ ìyókù kúrò."
+        "lasts": "Títí ẹ ó fi yí i padà. Kò sí ohun tí a ó yọ kúrò fúnra rẹ̀: bí ẹ bá padà wá lẹ́yìn tí ẹ ti lọ fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan, ìfitónilétí kan yóò fún yín ní bọ́tìnnì láti pa ètò yín rẹ́. Jíjáde ń dá ohun tí ẹ yàn nígbà tí ẹ wà níta padà, bí ó bá wà, ó sì ń yọ ìyókù kúrò."
       },
       "visitor": {
         "purpose": "Èdè tí ẹ yàn, tàbí pé ẹ pa ìfitónilétí ìtúmọ̀ dé, nígbà tí ẹ wà níta, kí ó lè padà wá nígbà tí ẹ bá jáde.",
-        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́ tàbí pa àkáǹtì kan rẹ́ lórí browser yìí."
+        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́ tàbí pa àkáǹtì kan rẹ́ lórí browser yìí. Kò sí ohun tí a ó yọ kúrò fúnra rẹ̀: bí ẹ bá padà wá lẹ́yìn tí ẹ ti lọ fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan, ìfitónilétí kan yóò fún yín ní bọ́tìnnì láti pa ètò yín rẹ́."
       },
       "region": {
         "purpose": "Àlẹ̀mọ́ agbègbè lórí àtòjọ ibi ìkówèésí.",
-        "lasts": "Títí ẹ ó fi dá àlẹ̀mọ́ náà padà sí gbogbo agbègbè."
+        "lasts": "Títí ẹ ó fi dá àlẹ̀mọ́ náà padà sí gbogbo agbègbè. Kò sí ohun tí a ó yọ kúrò fúnra rẹ̀: bí ẹ bá padà wá lẹ́yìn tí ẹ ti lọ fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan, ìfitónilétí kan yóò fún yín ní bọ́tìnnì láti pa ètò yín rẹ́."
       },
       "includeAdditives": {
         "purpose": "Bóyá àwọn ìlànà tuntun ń ka ohun àfikún wọn mọ́ UMF, bí ẹ ṣe yàn kẹ́yìn.",
-        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́."
+        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́. Kò sí ohun tí a ó yọ kúrò fúnra rẹ̀: bí ẹ bá padà wá lẹ́yìn tí ẹ ti lọ fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan, ìfitónilétí kan yóò fún yín ní bọ́tìnnì láti pa ètò yín rẹ́."
       },
       "print": {
         "purpose": "Àwọn ìyàn yín ìkẹyìn fún títẹ ìlànà jáde: gbogbo ìlànà, batch kan tàbí worksheet, àti ìwọ̀n batch.",
-        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́."
+        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́. Kò sí ohun tí a ó yọ kúrò fúnra rẹ̀: bí ẹ bá padà wá lẹ́yìn tí ẹ ti lọ fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan, ìfitónilétí kan yóò fún yín ní bọ́tìnnì láti pa ètò yín rẹ́."
+      },
+      "recipeLayout": {
+        "purpose": "Ìtò tí ẹ yàn kẹ́yìn fún fọ́ọ̀mù ìlànà: àbọ̀dé, tábìlì iṣẹ́ tàbí ìgbésẹ̀ pẹ̀lú ìtọ́sọ́nà.",
+        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́. Kò sí ohun tí a ó yọ kúrò fúnra rẹ̀: bí ẹ bá padà wá lẹ́yìn tí ẹ ti lọ fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan, ìfitónilétí kan yóò fún yín ní bọ́tìnnì láti pa ètò yín rẹ́."
+      },
+      "settingsDates": {
+        "purpose": "Ìgbà tí browser yìí ṣí Glazecalc kẹ́yìn pẹ̀lú àwọn ètò tó wà lókè, kí ìpadàbọ̀ lẹ́yìn ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan tí ẹ kò wá lè fi ìfitónilétí tí ó fúnni láti pa wọ́n rẹ́ hàn, àti ẹ̀yà wo nínú ìfitónilétí ìtúmọ̀ ni ẹ pa dé. Kò sí dátà ti ara ẹni.",
+        "lasts": "Níwọ̀n ìgbà tí èyíkéyìí nínú àwọn ètò yẹn bá ṣì wà ní ìpamọ́ níbí."
       },
       "token": {
         "purpose": "Token wíwọlé láti ẹ̀yà Glazecalc àtijọ́. A kò kọ ọ́ mọ́ báyìí.",

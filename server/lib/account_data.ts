@@ -11,6 +11,7 @@ import Advice from '../models/advice.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
 import Deletion from '../models/deletion.ts';
 import Firing from '../models/firing.ts';
+import ImportRun from '../models/import_run.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import OAuthLogin from '../models/oauth_login.ts';
@@ -48,11 +49,12 @@ export const OWNED_KINDS: Record<string, RecordModel> = {
 };
 /**
  * Also the user's (ownedBy), but not records they keep: the earlier versions
- * of their records, the activity log and the recipes' share links. They go,
+ * of their records, the activity log, the recipes' share links and the
+ * imports that can still be undone (models/import_run.ts). They go,
  * and move from a trial, with the account. Access tokens are the account's
  * by userId; a trial has none, nor any share link.
  */
-const OWNED_HISTORY: RecordModel[] = [RecordVersion, Activity, ShareLink];
+const OWNED_HISTORY: RecordModel[] = [RecordVersion, Activity, ShareLink, ImportRun];
 const OWNED_MODELS: RecordModel[] = [...Object.values(OWNED_KINDS), ...OWNED_HISTORY];
 // Accounts removed at a time when the log is re-applied.
 const BATCH = 500;

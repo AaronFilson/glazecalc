@@ -8,6 +8,8 @@
 //    and production's must not, so a staging file installed on production fails.
 // 3. Every live language's home page and every English public page
 //    (lib/pages.js) answers 200 with a page that has a heading.
+// 4. The IndexNow key file answers with the key as text/plain, and the English
+//    and German preview images are there.
 // Read-only: plain GETs, a few at a time. e2e/live loads the same pages in a browser.
 //
 //   node scripts/live-check.mjs --videos
@@ -21,6 +23,8 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import languages from '../lib/regions/languages.js';
+import indexnow from '../lib/indexnow.js';
+import ogImages from '../lib/og-images.js';
 import pages from '../lib/pages.js';
 
 /** Requests in flight at once: gentle on a 1 GB instance. */
@@ -127,6 +131,21 @@ async function main() {
 
   const home = await fetch(base + '/');
   for (const problem of headerProblems(home.headers, base)) failures.push('/: ' + problem);
+
+  // The IndexNow key (scripts/indexnow.mjs), as plain text, and a preview image (scripts/og-images.mjs).
+  const key = await fetch(`${base}/${indexnow.INDEXNOW_KEY}.txt`, { redirect: 'manual' });
+  const keyText = await key.text();
+  if (key.status !== 200 || keyText.trim() !== indexnow.INDEXNOW_KEY)
+    failures.push(`/<IndexNow key>.txt answered ${key.status}`);
+  else if (!/^text\/plain/.test(key.headers.get('content-type') ?? ''))
+    failures.push('/<IndexNow key>.txt is not text/plain');
+  for (const file of new Set([ogImages.ogImageFile('en'), ogImages.ogImageFile('de')])) {
+    const image = await fetch(`${base}/${file}`, { redirect: 'manual' });
+    await image.arrayBuffer();
+    if (image.status !== 200) failures.push(`/${file} answered ${image.status}`);
+    else if (!/^image\/(png|jpeg)/.test(image.headers.get('content-type') ?? ''))
+      failures.push(`/${file} is not an image`);
+  }
 
   const list = pagesToCheck();
   await inTurns(

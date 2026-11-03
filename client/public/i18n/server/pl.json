@@ -123,6 +123,16 @@
   "trash-full": "Kosz jest pełny, więc token dostępu nie może przenieść do niego niczego więcej. Proszę najpierw opróżnić część kosza na stronie internetowej.",
   "firing-links-full": "Z recepturą można połączyć najwyżej {most} dzienników wypałów. Aby połączyć kolejny, trzeba odłączyć jeden.",
   "account-limit": "Konto może przechowywać łącznie do {limit} zapisów: receptury, surowce, notatki, dzienniki wypałów i resztę razem. Proszę usunąć część, aby zapisać więcej.",
+  "import-not-export": "To nie jest plik danych Glazecalc. Proszę wybrać plik JSON z sekcji Pobieranie moich danych.",
+  "import-newer": "Ten plik został utworzony przez nowszą wersję Glazecalc. Proszę załadować stronę ponownie i spróbować jeszcze raz.",
+  "import-too-many": "Ten plik zawiera {count} zapisów. Jeden import może przyjąć najwyżej {most}. Nic nie zostało zaimportowane.",
+  "import-invalid": "{count, plural, one {Nie można odczytać # zapisu w tym pliku.} few {Nie można odczytać # zapisów w tym pliku.} many {Nie można odczytać # zapisów w tym pliku.} other {Nie można odczytać # zapisu w tym pliku.}} Nic nie zostało zaimportowane.",
+  "import-over-limit": "Ten import dodałby {count, plural, one {# zapis} few {# zapisy} many {# zapisów} other {# zapisu}}, ale na koncie jest miejsce już tylko na {room}. Nic nie zostało zaimportowane.",
+  "import-busy": "Import na to konto już trwa. Proszę poczekać, aż się zakończy.",
+  "import-failed": "Import się nie udał z powodu problemu po naszej stronie. Nic nie zostało zaimportowane.",
+  "import-done": "Import został zakończony.",
+  "import-undone": "Import został cofnięty.",
+  "import-undo-gone": "Tego importu nie można już cofnąć.",
   "not-shared": "Ta receptura nie jest udostępniona albo link jest niekompletny.",
   "share-stopped": "Receptura nie jest już udostępniana. Jej link już jej nie otwiera.",
   "token-invalid": "Token dostępu jest nieprawidłowy, wygasł lub został unieważniony.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Wprowadzono zbyt wiele zmian na tym koncie za pomocą tokenów dostępu. Proszę chwilę poczekać i spróbować ponownie; zmiany na stronie internetowej nadal działają.",
   "too-many-mcp": "Zbyt wiele żądań do narzędzi Glazecalc dla asystentów AI. Proszę odczekać kilka minut i spróbować ponownie.",
   "too-many-oauth": "Zbyt wiele próśb o połączenie aplikacji z tego adresu. Proszę odczekać kilka minut i spróbować ponownie.",
-  "too-many-registrations": "Zbyt wiele aplikacji zarejestrowało się samodzielnie. Proszę spróbować ponownie później."
+  "too-many-registrations": "Zbyt wiele aplikacji zarejestrowało się samodzielnie. Proszę spróbować ponownie później.",
+  "too-many-imports": "Zbyt wiele importów na to konto w ciągu ostatniej godziny. Proszę spróbować później."
 }

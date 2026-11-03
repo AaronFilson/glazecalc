@@ -1104,5 +1104,21 @@
     "add": "Dodaj wynik dla",
     "addButton": "Dodaj",
     "saveFailed": "Nie udało się zapisać, gdzie wypalono ten dziennik wypału."
+  },
+  "layout": {
+    "label": "Układ formularza",
+    "standard": "Standardowy",
+    "workbench": "Warsztat",
+    "guided": "Krok po kroku",
+    "side": "Wzór i limity",
+    "fixFold": "Popraw i zamień ({count})",
+    "detailsFold": "Szczegóły: data, notatki, wypał, koszt, zagrożenia",
+    "steps": "Kroki",
+    "stepRecipe": "Receptura",
+    "stepAmounts": "Ilości",
+    "stepCheck": "Sprawdzenie",
+    "amountsHint": "Wpisz każdą ilość. Enter przechodzi do następnej ilości.",
+    "back": "Wstecz",
+    "next": "Dalej"
   }
 }

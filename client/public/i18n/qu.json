@@ -96,6 +96,7 @@
     "recordsHint": "Qamlla llamk'achisqayki dispositivopilla. Lluqsiptiyki qichukun.",
     "recordsBanner": "Glazecalcman manam chayayta atikunchu. {date} p'unchawpi kay dispositivopi waqaychasqa copiatam rikuchichkan.",
     "recordsNotSaved": "Qillqasqaykikunaqa manam kay dispositivopi waqaychasqachu. Rikunaykipaq internetman tinkiy. Kaytaqa cuentaykipi hap'ichiyta atinki.",
+    "recordsBackOnline": "Internetman kutimunkiña. Musuq qillqasqaykikunata rikunaykipaq, yapamanta waqaychanaykipaqpas, p'anqata yapamanta kichay.",
     "recordsNotKept": "Kay navegadorqa manam copiata waqaychanqachu (pakasqa navegaciónpi kasqanrayku utaq mana espacio kaptin)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalcpa estándar qillqa wasinpi materialkuna, feldespatokunamanta mitukunamanta fritakunakama, boro maqakunakama, óxido análisisninwan, UMF-nwan, peligronkunawan.",
     "materialInfo": "{name}: óxido análisis, fórmula unitaria, ruphaypi chinkaq (LOI), peligrokuna, Glazecalcpa estándar qillqa wasinpi.",
     "materialInfoLong": "{name}, Glazecalcpa esmalte materialkuna estándar qillqa wasinpi: óxido análisisnin, fórmula unitariaman yapasqan, ruphaypi chinkaq (LOI), peligronkuna.",
-    "imageAlt": "Glazecalcpa qallariy p'anqan: saña ruraqkunapaq mana qullqiyuq esmalte química, ruphasqa cono huñukunapa fotonpa kinranpi."
+    "imageAlt": "Glazecalcpa logonwan títulonwan, saña ruraqkunapaq mana qullqiyuq esmalte química, ruphasqa cono huñukunapa fotonpa kinranpi."
   },
   "notices": {
     "dismiss": "Pakay",
@@ -336,11 +337,15 @@
     "label": "Kay t'ikraymanta",
     "text": "Kay p'anqataqa AI-mi inglés simimanta t'ikran. Glazecalcqa kichasqa códigoyuqmi: imapas mana allin ñawinchakuptin, ama hina kaspa GitHubpi allichayta niwayku.",
     "brief": "AI-mi inglés simimanta t'ikran.",
-    "plain": "Kay p'anqataqa AI-mi inglés simimanta t'ikran, chay AI-taq kay simitaqa achkha huk simikunamanta aswan mana allintam t'ikran. Inglés p'anqa aswan allin ñawinchakunman. Glazecalcqa kichasqa códigoyuqmi: imapas mana allin ñawinchakuptin, ama hina kaspa GitHubpi allichayta niwayku.",
+    "plain": "Kay p'anqataqa AI-mi inglés simimanta t'ikran, chay AI-taq kay simitaqa achka huk simikunamanta aswan mana allintam t'ikran. Inglés p'anqa aswan allin ñawinchakunman. Glazecalcqa kichasqa códigoyuqmi: imapas mana allin ñawinchakuptin, ama hina kaspa GitHubpi allichayta niwayku.",
     "plainBrief": "AI-mi t'ikran; inglés aswan allin ñawinchakunman.",
     "suggest": "Allichayta niy",
     "english": "Ingléspi ñawinchay",
     "close": "Wichq'ay"
+  },
+  "settingsExpiry": {
+    "text": "Yaqa huk watañam kay navegadorpi Glazecalcta mana llamk'achinkichu. Kaypi allichanaykikunaqa (tema, simi hina) llamk'achisqaykikama waqaychasqa kanku. Munaspaykiqa, kunanpacha pichayta atinki. Cuentaykipi waqaychasqa allichanakunaqa manam imananqachu.",
+    "clear": "Allichanaykunata pichay"
   },
   "unity": {
     "fluxes": "Fundentekuna - R₂O, RO",

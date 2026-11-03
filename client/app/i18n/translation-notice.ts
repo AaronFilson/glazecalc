@@ -7,6 +7,7 @@ import { filter } from 'rxjs';
 import { languageFor } from '../../../lib/regions/languages';
 import { AuthService } from '../core/auth.service';
 import { PreferencesService } from '../core/preferences.service';
+import { noteNoticeClosed } from '../core/settings-expiry';
 import { PAGE_LANGUAGE, pathIn } from './language';
 
 const ISSUES = 'https://github.com/AaronFilson/glazecalc/issues/new';
@@ -137,6 +138,7 @@ export class TranslationNotice {
 
   /** Closes it on this browser, and for the account if signed in. */
   protected close(): void {
+    noteNoticeClosed();
     if (this.auth.hasSession()) void this.preferences.set('notice', 'hidden').catch(() => undefined);
     else this.preferences.remember('notice', 'hidden');
   }

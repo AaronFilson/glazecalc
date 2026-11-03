@@ -6,6 +6,7 @@ import { linkPlace } from '../../../../lib/cones/results';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { FiringLinksService } from '../../core/firing-links.service';
+import { OfflineRecords } from '../../core/offline-records';
 import { Firing, FiringLink } from '../../core/models';
 import { LocaleService } from '../../core/locale.service';
 import { DatePipe, IsolatedPipe } from '../../shared/format-pipes';
@@ -70,6 +71,8 @@ const RESULT_MAX = 500;
                 type="button"
                 class="btn btn-light border btn-sm"
                 [attr.aria-label]="t('recipe.firings.unlinkName', { title: logOf(link.firing)?.title ?? '' })"
+                [attr.aria-disabled]="linksOff() || null"
+                [attr.title]="linksOff() ? offlineRecords.note() : null"
                 (click)="unlink(link.firing)"
               >
                 {{ t('recipe.firings.unlink') }}
@@ -86,7 +89,14 @@ const RESULT_MAX = 500;
               <option [value]="log._id">{{ log.title | gcIsolated }}{{ log.date ? ' · ' + log.date : '' }}</option>
             }
           </select>
-          <button id="firing-link" type="button" class="btn btn-light border btn-sm" (click)="link(choice.value)">
+          <button
+            id="firing-link"
+            type="button"
+            class="btn btn-light border btn-sm"
+            [attr.aria-disabled]="linksOff() || null"
+            [attr.title]="linksOff() ? offlineRecords.note() : null"
+            (click)="link(choice.value)"
+          >
             {{ t('recipe.firings.link') }}
           </button>
         </div>
@@ -188,6 +198,9 @@ export class RecipeFirings implements OnInit {
   protected readonly asking = signal<{ now: string; logs: string; cones: string[] } | null>(null);
 
   private readonly linksApi = inject(FiringLinksService);
+  protected readonly offlineRecords = inject(OfflineRecords);
+  /** Whether link changes are off: a saved recipe's links are saved at once, and the page shows the offline copy. */
+  protected readonly linksOff = computed(() => !!this.recipeId() && this.offlineRecords.readOnly());
   /** Why the last change to a link was not saved, or ''. */
   protected readonly saveFailed = signal('');
   /** The links shown: those to logs that are there (one in the Trash is hidden, not lost). */
@@ -276,6 +289,11 @@ export class RecipeFirings implements OnInit {
     const recipeId = this.recipeId();
     if (!recipeId) {
       this.links.update(here);
+      return;
+    }
+    // Offline, showing the copy kept on this device: a saved recipe's links cannot change until the network is back.
+    if (this.offlineRecords.readOnly()) {
+      this.saveFailed.set(this.offlineRecords.note() ?? '');
       return;
     }
     try {

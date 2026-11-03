@@ -13,6 +13,7 @@ import { refuseAccessTokens } from './lib/token_auth.ts';
 import authRoutes from './routes/auth_routes.ts';
 import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
+import importRoutes from './routes/import_routes.ts';
 import mfaRoutes from './routes/mfa_routes.ts';
 import oauthRoutes, { microsoftAssociation } from './routes/oauth_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
@@ -119,6 +120,8 @@ api.use('/pending-changes', pendingChangeRoutes);
 // item 5). A route that should take one goes above, behind requireScope.
 api.use(refuseAccessTokens);
 api.use('/export', exportRoutes);
+// Importing an export (routes/import_routes.ts): the session of an account only.
+api.use('/import', importRoutes);
 // Share links: the owner's (signed in), and the recipe a link opens (anyone).
 api.use('/share', shareRouter);
 api.use('/shared', sharedRouter);
@@ -161,7 +164,9 @@ app.get('/.well-known/microsoft-identity-association.json', microsoftAssociation
 // and the fonts it copies to media/ (lora-latin-wght-normal-6YFDQXH3.woff2).
 // The service worker and its manifest (scripts/service-worker.mjs), and the kill switch beside them.
 const SERVICE_WORKER_FILES = new Set(['ngsw-worker.js', 'ngsw.json', 'safety-worker.js', 'worker-basic.min.js']);
-const HASHED = /^((main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)|[\w.-]+-[A-Z0-9]{8}\.woff2)$/;
+// And the link preview images (scripts/og-images.mjs): og/de.c10d78d3.jpg.
+const HASHED =
+  /^((main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)|[\w.-]+-[A-Z0-9]{8}\.woff2|[A-Za-z]{2,3}(-[A-Za-z0-9]+)?\.[0-9a-f]{8}\.(png|jpg))$/;
 // The translations (client/public/i18n: JSON, and the guides' Markdown) keep
 // their names from build to build, so a browser may use its copy for five
 // minutes before asking again, rather than asking on every load. A reader who

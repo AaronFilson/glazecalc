@@ -1104,5 +1104,21 @@
     "add": "Lisää tulos kohteelle",
     "addButton": "Lisää",
     "saveFailed": "Polttopäiväkirjan polttopaikan tallentaminen ei onnistunut."
+  },
+  "layout": {
+    "label": "Lomakkeen asettelu",
+    "standard": "Tavallinen",
+    "workbench": "Työpöytä",
+    "guided": "Vaihe vaiheelta",
+    "side": "Kaava ja rajat",
+    "fixFold": "Korjaa ja vaihda ({count})",
+    "detailsFold": "Tiedot: päivämäärä, muistiinpanot, poltto, hinta, vaarat",
+    "steps": "Vaiheet",
+    "stepRecipe": "Resepti",
+    "stepAmounts": "Määrät",
+    "stepCheck": "Tarkistus",
+    "amountsHint": "Kirjoita jokainen määrä. Enter siirtyy seuraavaan määrään.",
+    "back": "Takaisin",
+    "next": "Seuraava"
   }
 }

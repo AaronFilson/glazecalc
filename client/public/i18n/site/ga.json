@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Socrú a d’athraigh tú ar an mbrabhsálaí seo, ionas go dtaispeánann an chéad leathanach eile é láithreach, sula bhfreagraíonn an freastalaí. Dathaíonn <code>theme</code> agus <code>palette</code> an leathanach sula dtaispeántar é, agus osclaíonn <code>language</code> leathanaigh i do theanga.",
-        "lasts": "Go dtí go n-athraíonn tú é. Nuair a shíníonn tú amach, cuirtear ar ais a roghnaigh tú agus tú sínithe amach, más ann dó, agus baintear an chuid eile."
+        "lasts": "Go dtí go n-athraíonn tú é. Ní bhaintear aon rud as a stuaim féin: má fhilleann tú tar éis beagnach bliain as láthair, tairgeann fógra cnaipe chun do shocruithe a ghlanadh. Nuair a shíníonn tú amach, cuirtear ar ais a roghnaigh tú agus tú sínithe amach, más ann dó, agus baintear an chuid eile."
       },
       "visitor": {
         "purpose": "An teanga a roghnaigh tú, nó gur dhún tú fógra an aistriúcháin, agus tú sínithe amach, ionas go dtagann sé ar ais nuair a shíníonn tú amach.",
-        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí nó go scriosann tú cuntas ar an mbrabhsálaí seo."
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí nó go scriosann tú cuntas ar an mbrabhsálaí seo. Ní bhaintear aon rud as a stuaim féin: má fhilleann tú tar éis beagnach bliain as láthair, tairgeann fógra cnaipe chun do shocruithe a ghlanadh."
       },
       "region": {
         "purpose": "An scagaire réigiúin ar liosta leabharlainne.",
-        "lasts": "Go dtí go gcuireann tú an scagaire ar ais go gach réigiún."
+        "lasts": "Go dtí go gcuireann tú an scagaire ar ais go gach réigiún. Ní bhaintear aon rud as a stuaim féin: má fhilleann tú tar éis beagnach bliain as láthair, tairgeann fógra cnaipe chun do shocruithe a ghlanadh."
       },
       "includeAdditives": {
         "purpose": "Cé acu a áiríonn oidis nua a mbreiseáin san fhoirmle Seger nó nach n-áiríonn, mar a roghnaigh tú an uair dheireanach.",
-        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí. Ní bhaintear aon rud as a stuaim féin: má fhilleann tú tar éis beagnach bliain as láthair, tairgeann fógra cnaipe chun do shocruithe a ghlanadh."
       },
       "print": {
         "purpose": "Do roghanna deireanacha maidir le hoideas a phriontáil: an t-oideas iomlán, baisc nó an bhileog oibre, agus méid na baisce.",
-        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí. Ní bhaintear aon rud as a stuaim féin: má fhilleann tú tar éis beagnach bliain as láthair, tairgeann fógra cnaipe chun do shocruithe a ghlanadh."
+      },
+      "recipeLayout": {
+        "purpose": "An leagan amach a roghnaigh tú an uair dheireanach don fhoirm oidis: caighdeánach, binse oibre nó céim ar chéim.",
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí. Ní bhaintear aon rud as a stuaim féin: má fhilleann tú tar éis beagnach bliain as láthair, tairgeann fógra cnaipe chun do shocruithe a ghlanadh."
+      },
+      "settingsDates": {
+        "purpose": "Cathain a d’oscail an brabhsálaí seo Glazecalc go deireanach leis na socruithe thuas, ionas gur féidir, nuair a fhilleann tú tar éis beagnach bliain as láthair, an fógra a thaispeáint a thairgeann iad a ghlanadh, agus cén leagan d’fhógra an aistriúcháin a dhún tú. Gan aon sonraí pearsanta.",
+        "lasts": "Fad is a choinnítear aon cheann de na socruithe sin anseo."
       },
       "token": {
         "purpose": "Comhartha sínithe isteach ó sheanleagan den aip Glazecalc. Ní scríobhtar anois é riamh.",

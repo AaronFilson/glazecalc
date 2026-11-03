@@ -1104,5 +1104,21 @@
     "add": "Kaypaq lluqsisqanta yapay",
     "addButton": "Yapay",
     "saveFailed": "Ruphachiy qillqa maypi ruphachisqa kasqanqa manan waqaychakuyta atirqanchu."
+  },
+  "layout": {
+    "label": "Formapa churasqan",
+    "standard": "Sapsilla",
+    "workbench": "Llamk'ana mesa",
+    "guided": "Pasokunawan",
+    "side": "Fórmula, limitekunapas",
+    "fixFold": "Allichay, t'ikray ({count})",
+    "detailsFold": "Astawan: p'unchaw, willakuykuna, ruphachiy, chanin, peligrokuna",
+    "steps": "Pasokuna",
+    "stepRecipe": "Rurana",
+    "stepAmounts": "Hayk'akuna",
+    "stepCheck": "Qhaway",
+    "amountsHint": "Sapa hayk'ata qillqay. Enter qhipa hayk'aman rin.",
+    "back": "Kutiy",
+    "next": "Qhipaman"
   }
 }

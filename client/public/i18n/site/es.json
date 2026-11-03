@@ -172,23 +172,31 @@
       },
       "settings": {
         "purpose": "Un ajuste que ha cambiado en este navegador, para que la página siguiente lo muestre enseguida, antes de que responda el servidor. <code>theme</code> y <code>palette</code> dan color a la página antes de que aparezca, y <code>language</code> abre las páginas en su idioma.",
-        "lasts": "Hasta que lo cambie. Al cerrar sesión se recupera lo que eligió sin haber iniciado sesión, si eligió algo, y se quita el resto."
+        "lasts": "Hasta que lo cambie. Nada se quita por sí solo: si vuelve tras casi un año sin venir, un aviso le ofrece un botón para borrar sus ajustes. Al cerrar sesión se recupera lo que eligió sin haber iniciado sesión, si eligió algo, y se quita el resto."
       },
       "visitor": {
         "purpose": "El idioma que eligió, o que cerró el aviso de traducción, sin haber iniciado sesión, para que vuelva cuando cierre sesión.",
-        "lasts": "Hasta que borre el almacenamiento del navegador o elimine una cuenta en este navegador."
+        "lasts": "Hasta que borre el almacenamiento del navegador o elimine una cuenta en este navegador. Nada se quita por sí solo: si vuelve tras casi un año sin venir, un aviso le ofrece un botón para borrar sus ajustes."
       },
       "region": {
         "purpose": "El filtro de región de una lista de la biblioteca.",
-        "lasts": "Hasta que vuelva a poner el filtro en todas las regiones."
+        "lasts": "Hasta que vuelva a poner el filtro en todas las regiones. Nada se quita por sí solo: si vuelve tras casi un año sin venir, un aviso le ofrece un botón para borrar sus ajustes."
       },
       "includeAdditives": {
         "purpose": "Si las recetas nuevas cuentan sus aditivos en la fórmula Seger, según lo que eligió la última vez.",
-        "lasts": "Hasta que borre el almacenamiento del navegador."
+        "lasts": "Hasta que borre el almacenamiento del navegador. Nada se quita por sí solo: si vuelve tras casi un año sin venir, un aviso le ofrece un botón para borrar sus ajustes."
       },
       "print": {
         "purpose": "Sus últimas elecciones para imprimir una receta: la receta entera, una tanda o la hoja de trabajo, y el tamaño de la tanda.",
-        "lasts": "Hasta que borre el almacenamiento del navegador."
+        "lasts": "Hasta que borre el almacenamiento del navegador. Nada se quita por sí solo: si vuelve tras casi un año sin venir, un aviso le ofrece un botón para borrar sus ajustes."
+      },
+      "recipeLayout": {
+        "purpose": "El diseño que eligió por última vez para el formulario de receta: estándar, banco de trabajo o paso a paso.",
+        "lasts": "Hasta que borre el almacenamiento del navegador. Nada se quita por sí solo: si vuelve tras casi un año sin venir, un aviso le ofrece un botón para borrar sus ajustes."
+      },
+      "settingsDates": {
+        "purpose": "Cuándo abrió este navegador Glazecalc por última vez con los ajustes anteriores, para que, al volver tras casi un año sin venir, pueda mostrarse el aviso que ofrece borrarlos, y qué versión del aviso de traducción cerró. Ningún dato personal.",
+        "lasts": "Mientras se conserve aquí alguno de esos ajustes."
       },
       "token": {
         "purpose": "Un token de inicio de sesión de una versión antigua de Glazecalc. Ya no se escribe nunca.",

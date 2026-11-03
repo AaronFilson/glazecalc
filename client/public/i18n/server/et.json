@@ -123,6 +123,16 @@
   "trash-full": "Prügikast on täis, seega ei saa juurdepääsuluba sinna enam midagi viia. Tühjendage esmalt osa sellest veebisaidil.",
   "firing-links-full": "Retsepti saab siduda kõige rohkem {most} põletuspäevikuga. Eemaldage üks seos, et siduda teine.",
   "account-limit": "Kontol saab hoida kokku kuni {limit} kirjet: retseptid, toorained, märkmed, põletuspäevikud ja muu kokku. Rohkema salvestamiseks eemaldage mõned.",
+  "import-not-export": "See ei ole Glazecalci andmefail. Valige JSON-fail jaotisest Minu andmete allalaadimine.",
+  "import-newer": "Selle faili tegi Glazecalci uuem versioon. Laadige leht uuesti ja proovige siis uuesti.",
+  "import-too-many": "Selles failis on {count} kirjet. Üks import võib võtta kuni {most}. Midagi ei imporditud.",
+  "import-invalid": "{count, plural, one {# kirjet selles failis ei saa lugeda.} other {# kirjet selles failis ei saa lugeda.}} Midagi ei imporditud.",
+  "import-over-limit": "See import lisaks {count} kirjet, kuid teie kontole mahub veel {room}. Midagi ei imporditud.",
+  "import-busy": "Sellele kontole juba käib import. Oodake, kuni see lõpeb.",
+  "import-failed": "Import ei õnnestunud meie poolse probleemi tõttu. Midagi ei imporditud.",
+  "import-done": "Import on tehtud.",
+  "import-undone": "Import võeti tagasi.",
+  "import-undo-gone": "Seda importi ei saa enam tagasi võtta.",
   "not-shared": "See retsept ei ole jagatud või link ei ole täielik.",
   "share-stopped": "Retsept ei ole enam jagatud. Selle link seda enam ei ava.",
   "token-invalid": "Juurdepääsuluba ei kehti, on aegunud või tühistatud.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Sellel kontol tehti juurdepääsulubadega liiga palju muudatusi. Oodake veidi ja proovige uuesti; veebisaidil tehtud muudatused töötavad endiselt.",
   "too-many-mcp": "Glazecalci tehisintellekti assistentide tööriistadele tehti liiga palju päringuid. Oodake mõni minut ja proovige uuesti.",
   "too-many-oauth": "Sellelt aadressilt on liiga palju rakenduste ühendamise taotlusi. Oodake mõni minut ja proovige uuesti.",
-  "too-many-registrations": "Liiga palju rakendusi registreeris end ise. Proovige hiljem uuesti."
+  "too-many-registrations": "Liiga palju rakendusi registreeris end ise. Proovige hiljem uuesti.",
+  "too-many-imports": "Viimase tunni jooksul on sellele kontole tehtud liiga palju importe. Proovige hiljem uuesti."
 }
