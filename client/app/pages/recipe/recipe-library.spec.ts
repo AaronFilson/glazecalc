@@ -73,7 +73,7 @@ describe('RecipeLibrary', () => {
     const { fixture, picked, button, filter, names } = await create();
     await filter('custer');
     expect(names().length).toBe(1);
-    button('Add Custer Spar').click();
+    button('Custer Spar').click();
     await fixture.whenStable();
     expect(picked.map((i) => i.name)).toEqual(['Custer Spar (my analysis)']);
     expect((fixture.nativeElement.querySelector('input[type=search]') as HTMLInputElement).value).toBe('');
@@ -84,8 +84,8 @@ describe('RecipeLibrary', () => {
     const { fixture, button } = await create(MINE, new Set([MINE[0]._id!]));
     expect(text(fixture, '.in-recipe')).toContain('Custer Spar (my analysis)');
     expect(text(fixture, '.in-recipe')).toContain('In recipe');
-    expect(button('Add Custer Spar')).toBeUndefined();
-    expect(button('Add Soda spar')).toBeDefined();
+    expect(button('Custer Spar')).toBeUndefined();
+    expect(button('Soda spar')).toBeDefined();
   });
 });
 
@@ -114,10 +114,15 @@ describe('RecipeLibrary with the standard library', () => {
     // Alphabetical.
     expect(names()).toEqual(['Custer Spar', 'Grolleg China Clay', 'Whiting', 'Zircon']);
     expect(text(fixture, '.library-status')).toBe('Discontinued 2023');
-    // A screen reader hears the status too.
-    expect(
-      [...fixture.nativeElement.querySelectorAll('.library-item')].map((b: Element) => b.getAttribute('aria-label'))
-    ).toEqual(['Add Custer Spar, Discontinued 2023', 'Add Grolleg China Clay', 'Add Whiting', 'Add Zircon']);
+    // A screen reader hears what is seen, status and "+ Add" too (WCAG 2.5.3: no separate label).
+    const buttons = [...fixture.nativeElement.querySelectorAll('.library-item')] as Element[];
+    expect(buttons.map((b) => b.getAttribute('aria-label'))).toEqual([null, null, null, null]);
+    expect(buttons.map((b) => b.textContent?.replace(/\s+/g, ' ').trim())).toEqual([
+      'Custer Spar Discontinued 2023 + Add',
+      'Grolleg China Clay + Add',
+      'Whiting + Add',
+      'Zircon + Add'
+    ]);
 
     const filter = fixture.nativeElement.querySelector('input[type=search]') as HTMLInputElement;
     filter.value = 'zircopax';

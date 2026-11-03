@@ -32,9 +32,9 @@ const startTrial = async (page) => {
 // Text to match as it is, inside a regular expression.
 const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-// A library entry's Add button: "Add Custer Spar", with ", Discontinued 2023" after
-// the name when it is no longer current.
-const addButtonName = (name) => new RegExp('^Add ' + escapeRegExp(name) + '(,|$)');
+// A library entry's Add button, named by its visible text (WCAG 2.5.3): "Custer Spar + Add",
+// with "Discontinued 2023" after the name when it is no longer current.
+const addButtonName = (name) => new RegExp('^' + escapeRegExp(name) + '( .+)?\\s*\\+ Add$');
 
 // Adds a material to the recipe from the library ('Standard' or 'My materials')
 // and enters its amount.
@@ -239,6 +239,7 @@ const usePasskey = (page, optionsJSON) =>
 
 module.exports = {
   API,
+  addButtonName,
   addColorant,
   addMaterial,
   addStandardMaterial,

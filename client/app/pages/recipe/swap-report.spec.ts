@@ -79,7 +79,8 @@ describe('SwapReport', () => {
   it('asks to work it out again: leaving one out, adding one, swapping alike ones, lifting a cap', async () => {
     const { reruns, button } = await create({ run: RUN, report: REPORT, cautions: [] });
     button('Leave out G-200 EU Feldspar')!.click();
-    button('Add Redart')!.click();
+    // Redart's button is "Add it", next to its name.
+    button('Add it')!.click();
     button('Use Minspar 200 instead of G-200 EU Feldspar')!.click();
     button('Allow more Whiting')!.click();
     expect(reruns[0]).toEqual({ avoid: ['G-200 EU Feldspar'] });
@@ -111,13 +112,15 @@ describe('TryMaterials', () => {
     await fixture.whenStable();
     const click = async (label: string) => {
       const found = [...fixture.nativeElement.querySelectorAll('button')].find(
-        (b: Element) => (b.getAttribute('aria-label') ?? b.textContent ?? '').trim() === label
+        (b: Element) =>
+          (b.getAttribute('aria-label') ?? b.textContent ?? '').trim() === label ||
+          (b.classList.contains('library-item') && b.querySelector('bdi')?.textContent?.trim() === label)
       ) as HTMLButtonElement;
       found.click();
       await fixture.whenStable();
     };
-    await click('Add Whiting');
-    await click('Add Redart');
+    await click('Whiting');
+    await click('Redart');
     expect(fixture.componentInstance.tries().map((t) => t.material.name)).toEqual(['Whiting', 'Redart']);
     // Marked as added in the list, not offered twice.
     expect(text(fixture, '.library-list')).toContain('Added');

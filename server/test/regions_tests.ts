@@ -739,7 +739,28 @@ describe('Latin America and Africa, as added', () => {
   it('are, with the earlier snapshots, every region', () => {
     const earlier = regions.REGION_CODES.slice(0, regions.REGION_CODES.indexOf('VN') + 1);
     expect(earlier).to.have.length(43);
-    expect([...earlier, ...SOUTH_ASIA_MENA, ...SOUTH_ASIA_C3, ...LATAM_AFRICA_L0]).to.eql([...regions.REGION_CODES]);
+    expect([...earlier, ...SOUTH_ASIA_MENA, ...SOUTH_ASIA_C3, ...LATAM_AFRICA_L0, ...ROUND11_REGIONS]).to.eql([
+      ...regions.REGION_CODES
+    ]);
+  });
+});
+
+// Round 11's regions (scratch/round11/a-regions/plan.md, batch A5), frozen as added on 2026-11-02.
+const ROUND11_REGIONS = ['NG', 'UG', 'EC', 'CO', 'CR', 'UY', 'PY', 'GT', 'RW', 'ZW', 'BW', 'CI', 'CM'];
+
+describe('round 11 regions, as added', () => {
+  it('keep their data exactly', () => {
+    const data: unknown[] = ROUND11_REGIONS.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('745468fb2347fac715f0916b714a90404d9c820d285a2a8915deb6e539ff47d1');
   });
 });
 
@@ -1860,7 +1881,7 @@ describe('Latin America and Africa', () => {
       expect(groups.regionGroup(code), code).to.equal(group);
     }
     // Puerto Rico takes the United States' data; the regions with no confirmed emergency number wait.
-    for (const code of ['PR', 'CO', 'PE', 'NG', 'ET']) expect(regions.regionFor(code), code).to.equal(undefined);
+    for (const code of ['PR', 'PE', 'ET']) expect(regions.regionFor(code), code).to.equal(undefined);
   });
 
   it("writes Chile's peso without decimals, and leaves Spanish and Portuguese pages written for Spain and Portugal", () => {
@@ -1970,6 +1991,96 @@ describe('Latin America and Africa', () => {
       expect(safety.ministryFor(code), code).to.include({ status: 'verified' });
       expect(food.foodRulesFor(code), code).to.equal(null);
       expect(workplace.workplaceFor(code), code).to.include({ silica: null, respirators: null });
+    }
+  });
+});
+
+// Round 11's regions (scratch/round11/a-regions/plan.md): those whose number was read on an official page.
+describe('round 11 regions', () => {
+  it('fire by temperature in °C with the US library, each in its languages, currency and group', () => {
+    for (const [code, name, languageList, currency, group] of [
+      ['NG', 'Nigeria', ['en', 'ha', 'yo', 'ig'], 'NGN', 'africa'],
+      ['UG', 'Uganda', ['en', 'sw'], 'UGX', 'africa'],
+      ['EC', 'Ecuador', ['es-419', 'qu'], 'USD', 'americas'],
+      ['CO', 'Colombia', ['es-419'], 'COP', 'americas'],
+      ['CR', 'Costa Rica', ['es-419'], 'CRC', 'americas'],
+      ['UY', 'Uruguay', ['es-419'], 'UYU', 'americas'],
+      ['PY', 'Paraguay', ['es-419'], 'PYG', 'americas'],
+      ['GT', 'Guatemala', ['es-419'], 'GTQ', 'americas'],
+      ['RW', 'Rwanda', ['en', 'fr'], 'RWF', 'africa'],
+      ['ZW', 'Zimbabwe', ['en'], 'ZWG', 'africa'],
+      ['BW', 'Botswana', ['en'], 'BWP', 'africa'],
+      ['CI', "Côte d'Ivoire", ['fr'], 'XOF', 'africa'],
+      ['CM', 'Cameroon', ['fr', 'en'], 'XAF', 'africa']
+    ] as Array<[string, string, string[], string, string]>) {
+      expect(regions.regionFor(code), code).to.eql({
+        code,
+        name,
+        languages: languageList,
+        eu: false,
+        temperature: 'C',
+        cones: 'temperature',
+        density: 'sg',
+        library: 'US',
+        currency
+      });
+      expect(groups.regionGroup(code), code).to.equal(group);
+    }
+    // The regions with no confirmed number wait.
+    for (const code of ['TZ', 'ET', 'PE', 'BO', 'DO', 'VE', 'CU', 'NA', 'SN', 'MZ', 'AO'])
+      expect(regions.regionFor(code), code).to.equal(undefined);
+  });
+
+  it('writes each currency with the decimals Intl gives it', () => {
+    const decimals = (currency: string) =>
+      new Intl.NumberFormat('en', { style: 'currency', currency }).resolvedOptions().maximumFractionDigits;
+    for (const currency of ['COP', 'UGX', 'PYG', 'XOF', 'XAF', 'RWF']) expect(decimals(currency), currency).to.equal(0);
+    for (const currency of ['NGN', 'CRC', 'UYU', 'GTQ', 'ZWG', 'BWP']) expect(decimals(currency), currency).to.equal(2);
+    expect(
+      new Intl.NumberFormat(regions.formatLocaleFor('es-419', 'CO', 'auto'), {
+        style: 'currency',
+        currency: 'COP'
+      }).format(1234.5)
+    ).to.equal('$ 1.235');
+  });
+
+  it('writes Hausa, Yoruba and Igbo pages for Nigeria and Quechua for Ecuador, leaving the others where they were', () => {
+    const first = (language: string) => regions.REGIONS.find((r) => r.languages.includes(language))?.code;
+    expect(['ha', 'yo', 'ig', 'qu'].map(first)).to.eql(['NG', 'NG', 'NG', 'EC']);
+    expect(['es-419', 'sw'].map(first)).to.eql(['MX', 'KE']);
+    expect(regions.REGIONS.find((r) => r.languages[0] === 'fr')?.code).to.equal('FR');
+    expect(regions.formatLocaleFor('ha', 'NG', 'auto')).to.equal('ha-NG-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('qu', 'EC', 'auto')).to.equal('qu-EC-u-ca-gregory-nu-latn');
+    // Offered as formats only where every browser tested writes them as Node does.
+    expect(regions.FORMAT_LOCALES).to.include.members(['en-NG', 'es-CO', 'fr-CM', 'sw-UG']);
+    for (const locale of ['ha-NG', 'yo-NG', 'ig-NG', 'qu-EC']) expect(regions.FORMAT_LOCALES).not.to.include(locale);
+  });
+
+  it('gives each emergency number read on an official page, and only the poison lines confirmed', () => {
+    const numbers = (code: string) => {
+      const shown = safety.shownFor(code)!;
+      return [shown.emergency.map((l) => l.number), shown.poison.map((l) => l.number)];
+    };
+    expect(numbers('NG')).to.eql([['122'], []]);
+    expect(numbers('UG')).to.eql([['999', '112'], []]);
+    expect(numbers('EC')).to.eql([['911'], []]);
+    expect(numbers('CO')).to.eql([['123'], ['018000 916012']]);
+    expect(numbers('CR')).to.eql([['911'], []]);
+    expect(numbers('UY')).to.eql([['911'], []]);
+    expect(numbers('PY')).to.eql([['141'], []]);
+    expect(numbers('GT')).to.eql([['122', '123'], []]);
+    expect(numbers('RW')).to.eql([['112', '912'], []]);
+    expect(numbers('ZW')).to.eql([['999'], []]);
+    expect(numbers('BW')).to.eql([['997'], []]);
+    expect(numbers('CI')).to.eql([['185', '180'], []]);
+    expect(numbers('CM')).to.eql([['119', '118'], []]);
+    // Ecuador's CIATOX page is undated (about 2012), so its line is not in the data.
+    expect(JSON.stringify(safety.SAFETY.EC)).not.to.contain('836366');
+    for (const code of ROUND11_REGIONS) {
+      expect(safety.ministryFor(code) === null, code).to.equal(['GT', 'ZW', 'CI'].includes(code));
+      expect(food.foodRulesFor(code), code).to.equal(null);
+      expect(workplace.workplaceFor(code), code).to.include({ silica: null, respirators: null });
+      expect(suppliers.SUPPLIERS[code], code).to.eql({ shops: [] });
     }
   });
 });

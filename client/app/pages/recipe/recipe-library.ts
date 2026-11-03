@@ -104,16 +104,8 @@ let nextId = 0;
                 <span class="library-mark">{{ markLabel() || t('recipe.library.inRecipe') }}</span>
               </span>
             } @else {
-              <button
-                type="button"
-                class="library-item"
-                [attr.aria-label]="
-                  statusText(item)
-                    ? t('recipe.library.addWithStatus', { name: item.name, status: statusText(item) })
-                    : t('recipe.library.add', { name: item.name })
-                "
-                (click)="choose(item)"
-              >
+              <!-- No aria-label: the name heard is the text seen (name, status, "+ Add"), as WCAG 2.5.3 asks. -->
+              <button type="button" class="library-item" (click)="choose(item)">
                 <span
                   ><bdi>{{ item.name }}</bdi
                   >&ngsp;
@@ -121,7 +113,7 @@ let nextId = 0;
                     <span class="library-status">{{ status }}</span>
                   }
                 </span>
-                <span class="library-mark" aria-hidden="true">{{ t('recipe.library.addMark') }}</span>
+                &ngsp;<span class="library-mark">{{ t('recipe.library.addMark') }}</span>
               </button>
             }
           </li>

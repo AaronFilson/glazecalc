@@ -91,7 +91,11 @@
     "updateReady": "A new version of Glazecalc is ready.",
     "reload": "Reload",
     "dismiss": "Not now",
-    "install": "Install app"
+    "install": "Install app",
+    "recordsSwitch": "Keep my records on this phone so they open without internet",
+    "recordsHint": "Only on a phone or computer you alone use. Removed when you sign out.",
+    "recordsBanner": "You are offline. Showing the records saved on this phone on {date}. Changes are off until you reconnect.",
+    "recordsNotSaved": "Your records are not saved on this phone. Connect to the internet to see them."
   },
   "picker": {
     "results": "{count, plural, one {# match} other {# matches}}",

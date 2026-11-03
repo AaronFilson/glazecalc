@@ -384,12 +384,7 @@ interface Result {
               <li>
                 <bdi>{{ help.name }}</bdi
                 >&ngsp;
-                <button
-                  type="button"
-                  class="btn btn-link btn-sm"
-                  [attr.aria-label]="t('recipe.swapReport.addName', { name: help.name })"
-                  (click)="mustUse(help.name)"
-                >
+                <button type="button" class="btn btn-link btn-sm" (click)="mustUse(help.name)">
                   {{ t('recipe.swapReport.add') }}
                 </button>
               </li>

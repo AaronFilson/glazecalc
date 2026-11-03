@@ -113,12 +113,7 @@ const list = (names: string[]): string => listOf(names);
               <li>
                 <bdi>{{ help.name }}</bdi
                 >&ngsp;
-                <button
-                  type="button"
-                  class="btn btn-link btn-sm swap-action"
-                  [attr.aria-label]="t('recipe.swapReport.addName', { name: help.name })"
-                  (click)="add(help.name)"
-                >
+                <button type="button" class="btn btn-link btn-sm swap-action" (click)="add(help.name)">
                   {{ t('recipe.swapReport.add') }}
                 </button>
               </li>

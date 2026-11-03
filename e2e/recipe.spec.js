@@ -4,6 +4,7 @@ const recipeTools = require('../lib/recipe');
 const standardData = require('../data');
 const {
   API,
+  addButtonName,
   addColorant,
   addMaterial,
   addStandardMaterial,
@@ -214,7 +215,7 @@ test('uses my own materials and lists additives with the result', async ({ page 
   const additives = page.locator('.library', { hasText: 'Add colorants and additives' });
   await additives.getByRole('button', { name: /^Standard/ }).click();
   await additives.getByRole('searchbox').fill('cobalt carb');
-  await additives.getByRole('button', { name: 'Add Cobalt carbonate' }).click();
+  await additives.getByRole('button', { name: addButtonName('Cobalt carbonate') }).click();
   await amount(page, 'Cobalt carbonate').fill('0.5');
 
   await expect(unity(page)).toContainText('CaO : 1.000');
@@ -367,7 +368,7 @@ test('asks for an amount for every material', async ({ page }) => {
   const library = page.locator('.library', { hasText: 'Add materials' });
   await library.getByRole('button', { name: /^Standard/ }).click();
   await library.getByRole('searchbox').fill('Whiting');
-  await library.getByRole('button', { name: 'Add Whiting', exact: true }).click();
+  await library.getByRole('button', { name: /^Whiting\s*\+ Add$/ }).click();
   // The cursor is ready in the new amount.
   await expect(amount(page, 'Whiting')).toBeFocused();
   await save(page);
@@ -383,7 +384,7 @@ test('Enter in an amount goes back to the list to add the next material from, by
   await library.getByRole('button', { name: /^Standard/ }).click();
   const search = library.getByRole('searchbox');
   await search.fill('Whiting');
-  await library.getByRole('button', { name: 'Add Whiting', exact: true }).click();
+  await library.getByRole('button', { name: /^Whiting\s*\+ Add$/ }).click();
   await expect(amount(page, 'Whiting')).toBeFocused();
   // Nothing typed yet: Enter stays, and says what is missing.
   await page.keyboard.press('Enter');
