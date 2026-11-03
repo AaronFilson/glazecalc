@@ -1,7 +1,7 @@
 // The Lead setting and Replace lead (docs/adr/0011-replacing-lead.md).
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { addButtonName, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const expectNoProblems = async (page, label) => {
@@ -25,7 +25,7 @@ test('lead is off until its warning is confirmed; a lead glaze is then rebuilt w
   const library = page.locator('.library', { hasText: 'Add materials' });
   await library.getByRole('button', { name: /^Standard \(/ }).click();
   await library.getByRole('searchbox').fill('lead');
-  await expect(library.getByRole('button', { name: /^Add Lead, Red/ })).toHaveCount(0);
+  await expect(library.getByRole('button', { name: addButtonName('Lead, Red') })).toHaveCount(0);
   await expect(library.locator('.library-hidden')).toContainText('with lead are not listed: lead is off in Settings.');
 
   // Turning it on asks first.
@@ -114,8 +114,10 @@ test('says how a lead glaze was rebuilt: the base frit and clay kept, the rest o
   await expect(report).toContainText('lead-free formula for the firing');
   // The base frit and the clay are the app's: no Leave it out.
   await expect(report.locator('.swap-uses li', { hasText: base })).toHaveCount(1);
-  await expect(report.getByRole('button', { name: 'Leave out ' + base })).toHaveCount(0);
-  await expect(report.getByRole('button', { name: 'Leave out China Clay' })).toHaveCount(0);
+  const leaveOut = (name) =>
+    report.locator('.swap-uses li', { hasText: name }).getByRole('button', { name: 'Leave it out' });
+  await expect(leaveOut(base)).toHaveCount(0);
+  await expect(leaveOut('China Clay')).toHaveCount(0);
   // What to watch for, in plain words.
   await expect(report.locator('.swap-cautions')).toContainText('expansion');
   await expectNoProblems(page, 'the rebuild report');

@@ -2235,7 +2235,10 @@ describe('RecipePage', () => {
       expect(text(fixture, '.compare-controls .swap-report')).toContain('G-200 EU Feldspar');
 
       // Left out, it is worked out again from the recipe as it was.
-      (fixture.nativeElement.querySelector('[aria-label="Leave out Silica"]') as HTMLElement).click();
+      const silica = [...fixture.nativeElement.querySelectorAll('.swap-uses li')].find((li: Element) =>
+        li.textContent?.includes('Silica')
+      ) as HTMLElement;
+      (silica.querySelector('button') as HTMLElement).click();
       await settle(fixture);
       expect(page['lines']().map((l: Material) => l.name)).not.toContain('Silica');
       expect(text(fixture, '.swap-report')).toContain('Left out: Silica.');

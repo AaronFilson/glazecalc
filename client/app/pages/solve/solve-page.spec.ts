@@ -158,7 +158,7 @@ describe('SolvePage', () => {
     await click('#solve-run');
     // Leave out the whiting: no calcium can be had, and the recipe says so.
     const leave = [...root.querySelectorAll('.solve-uses button')].find((b) =>
-      b.getAttribute('aria-label')?.includes('Whiting')
+      document.getElementById(b.getAttribute('aria-describedby')!)?.textContent?.includes('Whiting')
     ) as HTMLElement;
     leave.click();
     await settle(fixture);

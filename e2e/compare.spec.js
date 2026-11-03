@@ -160,7 +160,7 @@ test('says how a suggestion was made, and works it out again leaving one out or 
   expect(report1.violations.map((v) => v.id + ': ' + v.help)).toEqual([]);
 
   // Leave it out: worked out again from the recipe as it was, without it.
-  await feldspar.getByRole('button', { name: 'Leave out ' + usedName }).click();
+  await feldspar.getByRole('button', { name: 'Leave it out' }).click();
   await expect(report.getByRole('heading', { name: 'How the new recipe was made' })).toBeFocused();
   await expect(report).toContainText('Left out: ' + usedName + '.');
   await expect(report.locator('.swap-uses li b', { hasText: usedName })).toHaveCount(0);

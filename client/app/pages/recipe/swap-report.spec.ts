@@ -58,11 +58,17 @@ describe('SwapReport', () => {
       [...fixture.nativeElement.querySelectorAll('button')].find(
         (b: Element) => (b.getAttribute('aria-label') ?? b.textContent ?? '').trim() === label
       ) as HTMLButtonElement | undefined;
-    return { fixture, reruns, button };
+    // A button named by its visible text, described by the item's text (which contains `about`).
+    const described = (label: string, about: string) =>
+      [...fixture.nativeElement.querySelectorAll('button[aria-describedby]')].find((b: Element) => {
+        const description = document.getElementById(b.getAttribute('aria-describedby')!)?.textContent ?? '';
+        return (b.textContent ?? '').trim() === label && description.includes(about);
+      }) as HTMLButtonElement | undefined;
+    return { fixture, reruns, button, described };
   };
 
   it('says what each material supplies, and what else would help', async () => {
-    const { fixture, button } = await create({ run: RUN, report: REPORT, cautions: ['It may craze.'] });
+    const { fixture, described } = await create({ run: RUN, report: REPORT, cautions: ['It may craze.'] });
     expect(text(fixture, 'p')).toContain('Its fired oxides come close to the lead-free formula for the firing.');
     expect(text(fixture, '.swap-uses')).toContain('G-200 EU Feldspar 20: most of the potash.');
     expect(text(fixture, '.swap-uses')).toContain('The match is nearly as good without it.');
@@ -72,16 +78,16 @@ describe('SwapReport', () => {
     );
     expect(text(fixture, '.swap-cautions')).toBe('It may craze.');
     // The base frit is the app's: it cannot be left out.
-    expect(button('Leave out Ferro Frit 3124')).toBeUndefined();
-    expect(button('Leave out G-200 EU Feldspar')).toBeDefined();
+    expect(described('Leave it out', 'Ferro Frit 3124')).toBeUndefined();
+    expect(described('Leave it out', 'G-200 EU Feldspar')).toBeDefined();
   });
 
   it('asks to work it out again: leaving one out, adding one, swapping alike ones, lifting a cap', async () => {
-    const { reruns, button } = await create({ run: RUN, report: REPORT, cautions: [] });
-    button('Leave out G-200 EU Feldspar')!.click();
+    const { reruns, button, described } = await create({ run: RUN, report: REPORT, cautions: [] });
+    described('Leave it out', 'G-200 EU Feldspar')!.click();
     // Redart's button is "Add it", next to its name.
     button('Add it')!.click();
-    button('Use Minspar 200 instead of G-200 EU Feldspar')!.click();
+    described('Use it instead', 'Minspar 200')!.click();
     button('Allow more Whiting')!.click();
     expect(reruns[0]).toEqual({ avoid: ['G-200 EU Feldspar'] });
     expect(reruns[1].tries?.map((t) => [t.material.name, t.must])).toEqual([['Redart', true]]);

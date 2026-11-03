@@ -58,9 +58,12 @@ const list = (names: string[]): string => listOf(names);
         <ul class="swap-uses">
           @for (use of report.uses; track use.name) {
             <li>
-              <gc-rich
-                [text]="t('recipe.swapReport.use', { name: use.name, amount: use.amount, supplies: use.supplies })"
-              />{{ ' ' }}
+              <span [id]="headingId() + '-use-' + $index"
+                ><gc-rich
+                  [text]="
+                    t('recipe.swapReport.use', { name: use.name, amount: use.amount, supplies: use.supplies })
+                  " /></span
+              >{{ ' ' }}
               @if (!use.needed) {
                 <span class="muted">{{ t('recipe.swapReport.nearlyAsGood') }}</span>
               }
@@ -68,7 +71,7 @@ const list = (names: string[]): string => listOf(names);
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"
-                  [attr.aria-label]="t('recipe.swapReport.leaveOutName', { name: use.name })"
+                  [attr.aria-describedby]="headingId() + '-use-' + $index"
                   (click)="leaveOut(use.name)"
                 >
                   {{ t('recipe.swapReport.leaveOut') }}
@@ -125,11 +128,13 @@ const list = (names: string[]): string => listOf(names);
           <ul class="swap-uses">
             @for (pair of report.alike; track pair.used + pair.other) {
               <li>
-                {{ t('recipe.swapReport.standIn', { other: pair.other, used: pair.used }) }}
+                <span [id]="headingId() + '-alike-' + $index">{{
+                  t('recipe.swapReport.standIn', { other: pair.other, used: pair.used })
+                }}</span>
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"
-                  [attr.aria-label]="t('recipe.swapReport.useInsteadOf', { other: pair.other, used: pair.used })"
+                  [attr.aria-describedby]="headingId() + '-alike-' + $index"
                   (click)="useInstead(pair.used, pair.other)"
                 >
                   {{ t('recipe.swapReport.useInstead') }}

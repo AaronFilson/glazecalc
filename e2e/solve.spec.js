@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { signUpAndSignIn } = require('./helpers');
+const { pressAdd, signUpAndSignIn } = require('./helpers');
 
 // Solve for a target (docs/adr/0026-target-and-solve.md), against the real standard library.
 
@@ -35,8 +35,8 @@ test('solves a pasted unity formula from chosen materials and opens it as a new 
     ['silica', 'Silica']
   ]) {
     await library.getByRole('searchbox').fill(filter);
-    // A name may carry its status: "Add EPK Kaolin, Scarce".
-    await library.getByRole('button', { name: new RegExp('^Add ' + name + '(,|$)') }).click();
+    // A name may carry its status: "EPK Kaolin Scarce + Add".
+    await pressAdd(library, name);
   }
   await expect(page.locator('.solve-tries li')).toHaveCount(4);
 

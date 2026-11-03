@@ -260,6 +260,7 @@ module.exports = {
   confirmedAccount,
   createPasskey,
   expectFieldProblem,
+  pressAdd,
   signUpAndSignIn,
   startTrial,
   totp,

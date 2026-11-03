@@ -92,7 +92,9 @@ test('a language that is not on the phone says so with no network, and stays', a
   await page.locator('.footer-language summary').click();
   await page.locator('.footer-languages').getByRole('link', { name: 'Français' }).click();
   // Said in the reader's language (German here), from the files kept on the phone.
-  await expect(page.getByRole('status').filter({ hasText: 'auf diesem Telefon nicht gespeichert' })).toBeVisible();
+  await expect(
+    page.getByRole('status').filter({ hasText: 'Diese Sprache ist auf diesem Gerät nicht gespeichert.' })
+  ).toBeVisible();
   await expect(page).toHaveURL(/\/de\/guides\/safe-mixing$/);
   // English and the reader’s own language are there.
   await page.locator('.footer-languages').getByRole('link', { name: 'English' }).click();
