@@ -4,6 +4,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Note } from '../../core/models';
+import { OfflineRecords } from '../../core/offline-records';
 import { Busy } from '../../shared/busy';
 import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -46,7 +47,13 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
             gcFieldName="content"
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="saving.active()"
+          [attr.aria-disabled]="offlineRecords.readOnly() || null"
+          [attr.title]="offlineRecords.note()"
+        >
           {{ t('notebook.notes.save') }}
         </button>
       </form>
@@ -99,6 +106,7 @@ export class NotesPage implements OnInit {
 
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
+  protected readonly offlineRecords = inject(OfflineRecords);
   protected readonly title = signal('');
   protected readonly content = signal('');
   protected readonly checks = new FieldChecks(() => ({
@@ -126,6 +134,11 @@ export class NotesPage implements OnInit {
   }
 
   protected save(): Promise<void> {
+    // Offline, showing the copy kept on this device: nothing can be saved (core/offline-records.ts).
+    if (this.offlineRecords.readOnly()) {
+      this.notices.error(this.offlineRecords.note() ?? '');
+      return Promise.resolve();
+    }
     return this.saving.run(() => this.saveNow());
   }
 

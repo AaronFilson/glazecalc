@@ -87,15 +87,16 @@
     "language": "Language:"
   },
   "offline": {
-    "languageNotSaved": "This language is not saved on this phone. Connect to the internet to use it.",
+    "languageNotSaved": "This language is not saved on this device. Connect to the internet to use it.",
     "updateReady": "A new version of Glazecalc is ready.",
     "reload": "Reload",
     "dismiss": "Not now",
     "install": "Install app",
-    "recordsSwitch": "Keep my records on this phone so they open without internet",
-    "recordsHint": "Only on a phone or computer you alone use. Removed when you sign out.",
-    "recordsBanner": "You are offline. Showing the records saved on this phone on {date}. Changes are off until you reconnect.",
-    "recordsNotSaved": "Your records are not saved on this phone. Connect to the internet to see them."
+    "recordsSwitch": "Keep my records on this device so they open without internet",
+    "recordsHint": "Only on a device you alone use. Removed when you sign out.",
+    "recordsBanner": "Glazecalc can't be reached. Showing the copy saved on this device on {date}.",
+    "recordsNotSaved": "Your records are not saved on this device. Connect to the internet to see them. You can turn this on in your account.",
+    "recordsNotKept": "This browser won't keep a copy (private browsing or no space)."
   },
   "picker": {
     "results": "{count, plural, one {# match} other {# matches}}",

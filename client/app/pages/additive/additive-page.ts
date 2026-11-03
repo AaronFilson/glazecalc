@@ -5,6 +5,7 @@ import { formatFormula } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive } from '../../core/models';
+import { OfflineRecords } from '../../core/offline-records';
 import { Busy } from '../../shared/busy';
 import { CHEMISTRY_FORM_STYLES, ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
@@ -41,6 +42,7 @@ export class AdditivePage implements OnInit {
   protected readonly fixed = fixed;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
+  protected readonly offlineRecords = inject(OfflineRecords);
 
   // An additive is entered as a material is (fired oxides and LOI), so a recipe can count it in the unity formula.
   protected readonly form = new ChemistryForm(this.notices, 'additive');
@@ -74,6 +76,11 @@ export class AdditivePage implements OnInit {
   }
 
   protected save(): Promise<void> {
+    // Offline, showing the copy kept on this device: nothing can be saved (core/offline-records.ts).
+    if (this.offlineRecords.readOnly()) {
+      this.notices.error(this.offlineRecords.note() ?? '');
+      return Promise.resolve();
+    }
     return this.saving.run(() => this.saveNow());
   }
 

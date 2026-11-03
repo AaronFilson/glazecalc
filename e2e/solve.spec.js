@@ -27,7 +27,7 @@ test('solves a pasted unity formula from chosen materials and opens it as a new 
 
   // A new account has nothing on hand: the materials are picked from the library.
   const library = page.locator('.library');
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   for (const [filter, name] of [
     ['minspar', 'Minspar 200'],
     ['whiting', 'Whiting'],

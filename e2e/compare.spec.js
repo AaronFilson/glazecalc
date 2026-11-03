@@ -141,7 +141,7 @@ test('says how a suggestion was made, and works it out again leaving one out or 
   // Materials to try, before working it out: added from the library, perhaps as a must.
   await page.getByRole('button', { name: 'Materials to try (0)' }).click();
   const tries = page.locator('.recipe-suggest .try-materials');
-  await tries.getByRole('button', { name: /^Standard/ }).click();
+  await tries.getByRole('button', { name: /^Standard \(/ }).click();
   await tries.getByRole('searchbox').fill('wollastonite');
   await tries.getByRole('button', { name: addButtonName('Wollastonite (NYAD 400)') }).click();
   await expect(tries.locator('.try-list')).toContainText('Wollastonite (NYAD 400)');
@@ -193,7 +193,7 @@ test('makes a recipe from what is on hand, kept with the account for next time',
   await expect(page.locator('.recipe-shelf-status')).toHaveText('Saved with your account.');
   await page.getByRole('button', { name: 'Remove Custer Spar from your materials on hand' }).click();
   const library = page.locator('.recipe-shelf .library');
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   await library.getByRole('searchbox').fill('minspar');
   await library.getByRole('button', { name: addButtonName('Minspar 200') }).click();
   await expect(onHand).toContainText('Minspar 200');

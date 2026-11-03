@@ -4,7 +4,8 @@
 (UMF): the fluxes, alumina and silica it becomes in the kiln, and their ratio. Keep your recipes,
 materials, colorants, firing logs and notes together in one private notebook.
 
-**[glazecalcapp.com](https://glazecalcapp.com)**: try it without an account.
+**[glazecalcapp.com](https://glazecalcapp.com)**: try it without an account. A non-profit project by
+Aaron Filson, in 57 languages, and usable from AI assistants through its MCP server.
 
 [![CI](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -71,10 +72,10 @@ materials, colorants, firing logs and notes together in one private notebook.
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your region and your numbers:** where you work sets numbers and dates as you write them
   (12,5 or 12.5 typed either way), °C or °F, Orton cones, SK cones (JIS R 8101) or firing by temperature, the standard
-  materials sold there, and in the guides, for 37 countries: who to call in an emergency, shops that
-  sell glaze materials, the closest materials sold there to those a recipe names, the workplace
-  limit for silica dust and the food-contact limits for glazed ware (for 36: no official limit
-  was found for New Zealand), each checked on an official or the shop's own page.
+  materials sold there, and in the guides: who to call in an emergency for 72 countries, and for
+  41 of them shops that sell glaze materials, the closest materials sold there to those a recipe
+  names and the workplace limit for silica dust, with food-contact limits for glazed ware for 42;
+  each checked on an official or the shop's own page.
 - **Translated into 57 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese, Turkish, Traditional Chinese, Korean, Simplified Chinese, Thai, Vietnamese, Indonesian, Arabic and Urdu (right to left), Hindi, Bengali, Tamil, Marathi, Kannada, Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepali, Sinhala, Latin American Spanish, Brazilian Portuguese, Swahili, Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua, each at its own addresses (`/de/recipe`).
 
   Translated by AI with a glossary per language from suppliers' catalogues, reviewed, and the safety text checked by translating it back; every translated page says so and links to a form to suggest a better wording.
@@ -125,6 +126,23 @@ For anyone reading the code:
   rate limits; ownership checks on every query; the current password to change the email or
   delete the account ([ADR 5](docs/adr/0005-sign-in-tokens.md),
   [ADR 6](docs/adr/0006-email-through-ses-smtp.md)).
+- **Two-step sign-in and outside providers:** passkeys, authenticator apps and recovery codes
+  ([ADR 14](docs/adr/0014-two-step-sign-in.md)); Google and GitHub linked by the provider's id, never
+  silently by email ([ADR 15](docs/adr/0015-provider-sign-in.md)); Microsoft by tenant and subject
+  ([ADR 23](docs/adr/0023-microsoft-sign-in.md)).
+- **AI assistants as first-class clients:** a stateless MCP endpoint sharing the app's recipe tools
+  ([ADR 17](docs/adr/0017-mcp-server.md), [ADR 19](docs/adr/0019-shared-recipe-tools.md)), Glazecalc's
+  own OAuth authorization server ([ADR 24](docs/adr/0024-authorization-server.md)), and changes from an
+  app that wait for the person's yes ([ADR 25](docs/adr/0025-confirm-before-changes.md)).
+- **A translation pipeline for 57 languages:** Transloco with ICU messages and the language in the URL
+  ([ADR 13](docs/adr/0013-translations.md)); per-language glossaries sourced from suppliers'
+  catalogues, staged reviews, blind back-translation of the safety text, and a plain notice for
+  languages AI translates less well ([process](docs/translations/process)); `npm run check:i18n`
+  guards placeholders, plurals and stale English in CI.
+- **Works offline once visited:** Angular's service worker keeps the app, and the app keeps the
+  reader's language and the guides in Cache Storage ([ADR 28](docs/adr/0028-service-worker.md)).
+- **Public pages prerendered** in every language at build and hydrated in place, with hreflang and
+  a sitemap per language ([ADR 16](docs/adr/0016-prerendered-public-pages.md)).
 - **Trials as real accounts:** a generated name, a placeholder email on the reserved `.invalid`
   domain so every email stays unique, conversion to an account in place (or into an existing
   account at sign-in), limits against abuse,
@@ -313,6 +331,8 @@ are rate limited per client address; behind a reverse proxy the app trusts one h
 ## More
 
 - [Decision records](docs/adr/README.md): why it is built the way it is.
+- [How translations are made](docs/translations/README.md) and [how to write text](docs/translating.md).
+- [Contributing](CONTRIBUTING.md) and [reporting a security problem](SECURITY.md).
 - [Changelog](CHANGELOG.md).
 - [Case study](docs/case-study.md): reviving a 2017 app.
 - Found a problem or have an idea? [Open an issue](https://github.com/AaronFilson/glazecalc/issues).

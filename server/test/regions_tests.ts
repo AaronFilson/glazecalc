@@ -205,7 +205,9 @@ describe('region facts', () => {
     'LK',
     'NP',
     ...['MX', 'BR', 'AR', 'CL'],
-    ...['ZA', 'KE', 'GH']
+    ...['ZA', 'KE', 'GH'],
+    ...['NG', 'UG', 'RW', 'ZW', 'BW', 'CI', 'CM'],
+    ...['EC', 'CO', 'CR', 'UY', 'PY', 'GT']
   ];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
@@ -2041,7 +2043,7 @@ describe('round 11 regions', () => {
         style: 'currency',
         currency: 'COP'
       }).format(1234.5)
-    ).to.equal('$ 1.235');
+    ).to.equal('$ 1.235');
   });
 
   it('writes Hausa, Yoruba and Igbo pages for Nigeria and Quechua for Ecuador, leaving the others where they were', () => {

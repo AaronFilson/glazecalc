@@ -213,7 +213,7 @@ test('uses my own materials and lists additives with the result', async ({ page 
   await addStandardMaterial(page, 'Silica', 30);
 
   const additives = page.locator('.library', { hasText: 'Add colorants and additives' });
-  await additives.getByRole('button', { name: /^Standard/ }).click();
+  await additives.getByRole('button', { name: /^Standard \(/ }).click();
   await additives.getByRole('searchbox').fill('cobalt carb');
   await additives.getByRole('button', { name: addButtonName('Cobalt carbonate') }).click();
   await amount(page, 'Cobalt carbonate').fill('0.5');
@@ -366,7 +366,7 @@ test('says when a recipe has no flux, and will not save it', async ({ page }) =>
 test('asks for an amount for every material', async ({ page }) => {
   await page.locator('#recipe-name').fill('No amount');
   const library = page.locator('.library', { hasText: 'Add materials' });
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   await library.getByRole('searchbox').fill('Whiting');
   await library.getByRole('button', { name: /^Whiting\s*\+ Add$/ }).click();
   // The cursor is ready in the new amount.
@@ -381,7 +381,7 @@ test('asks for an amount for every material', async ({ page }) => {
 
 test('Enter in an amount goes back to the list to add the next material from, by keyboard alone', async ({ page }) => {
   const library = page.locator('.library', { hasText: 'Add materials' });
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   const search = library.getByRole('searchbox');
   await search.fill('Whiting');
   await library.getByRole('button', { name: /^Whiting\s*\+ Add$/ }).click();

@@ -1,6 +1,7 @@
 // The signed-in account.
 //
-//   GET    /api/verify            who the session belongs to (mfa: true when two-step sign-in is on)
+//   GET    /api/verify            who the session belongs to (mfa: true when two-step sign-in is on), and when the
+//                                  sign-in runs out (sessionEndsAt; sessionOnly: true when it ends with the browser)
 //   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead,
 //                                  region, format, decimalMark, temperature, cones, language,
 //                                  density, englishTerms, notice, recipeHelp, limitSet, currency, calendar,
@@ -23,7 +24,7 @@ import mongoose from 'mongoose';
 import { deleteAccount } from '../lib/account_data.ts';
 import * as accountMail from '../lib/account_mail.ts';
 import { notGuest } from '../lib/guest_limits.ts';
-import jwtAuth, { tokenOf, userOf } from '../lib/jwt_auth.ts';
+import jwtAuth, { sessionEndOf, tokenOf, userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
 import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
@@ -48,7 +49,15 @@ const tokenFilter = (req: Request, res: Response, next: NextFunction) => {
 userRouter.get('/verify', tokenFilter, jwtAuth, async (req, res) => {
   const user = userOf(req);
   // A trial's placeholder email stays on the server; the app shows its name.
-  const identity = { ...say('verified'), id: user.id as string, name: user.displayname };
+  const ends = sessionEndOf(req);
+  const identity = {
+    ...say('verified'),
+    id: user.id as string,
+    name: user.displayname,
+    // When this sign-in runs out, and whether it ends with the browser session (core/offline-records.ts).
+    ...(ends && { sessionEndsAt: new Date(ends.endsAt).toISOString() }),
+    ...(ends?.sessionOnly && { sessionOnly: true })
+  };
   if (user.guest) return res.status(200).json({ ...identity, guest: true, expiresAt: user.expiresAt });
   // jwtAuth leaves the factors out, so whether two-step sign-in is on is read here.
   const factors = await User.findById(user._id, { mfa: 1 });

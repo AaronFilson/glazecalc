@@ -80,6 +80,18 @@ export const keepsSignIn = (req: Request): boolean => {
   return !(claims && typeof claims === 'object' && claims.ss === true);
 };
 
+/**
+ * When the request's sign-in token runs out (its `exp`, ms since 1970), and whether it was for this browser
+ * session only, or null without a token that says. The app keeps these beside the copy of the records on the
+ * device (client/app/core/offline-records.ts), to remove the copy once the session has ended even with no network.
+ */
+export const sessionEndOf = (req: Request): { endsAt: number; sessionOnly: boolean } | null => {
+  const token = tokenOf(req);
+  const claims = token ? jwt.decode(token) : null;
+  if (!claims || typeof claims !== 'object' || typeof claims.exp !== 'number') return null;
+  return { endsAt: claims.exp * 1000, sessionOnly: claims.ss === true };
+};
+
 /** The signed-in user, in a route behind jwtAuth. */
 export const userOf = (req: Request): UserDocument => {
   if (!req.user) throw new Error('jwtAuth must run before this route');

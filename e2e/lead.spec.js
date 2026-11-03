@@ -23,7 +23,7 @@ test('lead is off until its warning is confirmed; a lead glaze is then rebuilt w
   // Off unless chosen: no material with lead is listed to add.
   await page.goto('/recipe');
   const library = page.locator('.library', { hasText: 'Add materials' });
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   await library.getByRole('searchbox').fill('lead');
   await expect(library.getByRole('button', { name: /^Add Lead, Red/ })).toHaveCount(0);
   await expect(library.locator('.library-hidden')).toContainText('with lead are not listed: lead is off in Settings.');

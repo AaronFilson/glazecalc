@@ -25,8 +25,11 @@ describe('user API', () => {
         msg: 'User verified',
         id: String(user._id),
         name: 'Test Potter',
-        email: user.email
+        email: user.email,
+        // When the sign-in runs out (client/app/core/offline-records.ts); a 7-day token by default.
+        sessionEndsAt: res.body.sessionEndsAt
       });
+      expect(Date.parse(res.body.sessionEndsAt)).to.be.greaterThan(Date.now() + 6 * 24 * 60 * 60 * 1000);
     });
 
     it('says goodbye, without an error, when there is no token yet', async () => {

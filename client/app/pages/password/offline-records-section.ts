@@ -26,6 +26,11 @@ import { OfflineRecords } from '../../core/offline-records';
           <label class="form-check-label" for="offline-records">{{ t('offline.recordsSwitch') }}</label>
           <p id="offline-records-hint" class="form-text">{{ t('offline.recordsHint') }}</p>
         </div>
+        <div role="alert">
+          @if (records.notKept()) {
+            <p class="text-danger offline-records-not-kept">{{ t('offline.recordsNotKept') }}</p>
+          }
+        </div>
       </section>
     }
   </ng-container>`
@@ -36,8 +41,10 @@ export class OfflineRecordsSection {
 
   protected async toggle(event: Event): Promise<void> {
     this.busy.set(true);
+    const box = event.target as HTMLInputElement;
     try {
-      await this.records.setEnabled((event.target as HTMLInputElement).checked);
+      // The box shows what is so: unchecked again when this browser would not keep the copy.
+      box.checked = await this.records.setEnabled(box.checked);
     } finally {
       this.busy.set(false);
     }

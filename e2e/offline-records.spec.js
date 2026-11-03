@@ -49,7 +49,9 @@ const copiedTitles = (page) =>
         const get = db.transaction('copies').objectStore('copies').get('recipe');
         get.onsuccess = () => {
           db.close();
-          resolve(Array.isArray(get.result) ? get.result.map((r) => r.title) : null);
+          // Each copy is kept as { body, savedAt } (core/offline-records.ts).
+          const body = get.result?.body;
+          resolve(Array.isArray(body) ? body.map((r) => r.title) : null);
         };
       };
       opening.onerror = () => resolve(null);
@@ -64,14 +66,32 @@ const savedRecipe = async (page, title) => {
 
 const turnOn = async (page) => {
   await page.goto('/account');
-  const box = page.getByLabel('Keep my records on this phone so they open without internet');
+  const box = page.getByLabel('Keep my records on this device so they open without internet');
   await expect(box).not.toBeChecked();
   await box.check();
   await expect(box).toBeChecked();
 };
 
-const banner = (page) => page.getByRole('status').filter({ hasText: 'You are offline. Showing the records saved' });
-const notSaved = (page) => page.getByRole('status').filter({ hasText: 'Your records are not saved on this phone' });
+/** Signs in through the sign-in page, without "Keep me signed in" (a sign-in that ends with the browser). */
+const signInThroughPage = async (page, email) => {
+  await page.goto('/signin');
+  await page.locator('#email').fill(email);
+  await page.locator('#password').fill('password123');
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
+  await expect(page).toHaveURL(/\/home$/);
+};
+
+/** An account made in another browser context, so this one is not signed in to it. */
+const newAccount = async (request, label) => {
+  const email = label + '-' + Date.now() + '-' + process.pid + '@test.com';
+  const res = await request.post(API + '/signup', { data: { email, password: 'password123' } });
+  expect(res.ok()).toBe(true);
+  return email;
+};
+
+const banner = (page) =>
+  page.getByRole('status').filter({ hasText: "Glazecalc can't be reached. Showing the copy saved on this device" });
+const notSaved = (page) => page.getByRole('status').filter({ hasText: 'Your records are not saved on this device' });
 
 test('turned on, a recipe opens with no network, read-only, with the banner', async ({ page, context }) => {
   await signUpAndSignIn(page);
@@ -84,10 +104,87 @@ test('turned on, a recipe opens with no network, read-only, with the banner', as
 
   await context.setOffline(true);
   await page.reload();
+  // The worker runs the page. Left to it, an /api request with no network gets its made-up 504 (what an installed
+  // app on a phone gets); the app's requests go past it (ngsw-bypass), so they fail as the network does.
+  expect(await page.evaluate(() => Boolean(globalThis.navigator.serviceWorker.controller))).toBe(true);
+  const viaWorker = await page.evaluate(async () => (await fetch('/api/recipe/getAll')).status);
+  expect(viaWorker).toBe(504);
   await expect(page.locator('#recipe-name')).toHaveValue('Offline Celadon');
   await expect(banner(page)).toBeVisible();
   const save = page.locator('.recipe-save').getByRole('button', { name: 'Save', exact: true });
   await expect(save).toHaveAttribute('aria-disabled', 'true');
+});
+
+test('the notes, firing, material and additive pages save and remove nothing while the copy is shown', async ({
+  page,
+  context
+}) => {
+  await signUpAndSignIn(page);
+  for (const [path, data] of [
+    [
+      '/notes/create',
+      { title: 'Kept Note', content: 'Glaze test', relatedCollection: 'Notes', relatedId: 'general notes' }
+    ],
+    ['/firing/create', { title: 'Kept Firing', fieldsIncluded: ['Time', 'Cone'], rows: [['9:00', '6 down']] }]
+  ]) {
+    expect((await page.request.post(API + path, { data })).ok()).toBe(true);
+  }
+  await installed(page, '/notes');
+  await turnOn(page);
+  await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual([]);
+  // Each page once online, so its code and messages are on the device too.
+  for (const path of ['/material', '/additive', '/firing', '/notes']) {
+    await page.goto(path);
+    await expect(page.locator('main h1')).toBeVisible();
+  }
+  await context.setOffline(true);
+
+  await page.goto('/notes');
+  await expect(page.getByText('Kept Note')).toBeVisible();
+  await expect(banner(page)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Save', exact: true })).toHaveAttribute('aria-disabled', 'true');
+  const remove = page.getByRole('button', { name: 'Remove Kept Note' });
+  await expect(remove).toHaveAttribute('aria-disabled', 'true');
+  // Playwright will not click a button marked disabled; a click event still reaches it, and asks nothing.
+  await remove.dispatchEvent('click');
+  await expect(page.getByRole('button', { name: 'Yes, remove' })).toHaveCount(0);
+
+  await page.goto('/firing');
+  await expect(page.getByText('Kept Firing').first()).toBeVisible();
+  await expect(page.locator('button[form="firing-form"]')).toHaveAttribute('aria-disabled', 'true');
+
+  await page.goto('/material');
+  await expect(page.locator('form').getByRole('button', { name: 'Save', exact: true })).toHaveAttribute(
+    'aria-disabled',
+    'true'
+  );
+  await page.goto('/additive');
+  await expect(page.locator('form').getByRole('button', { name: 'Save', exact: true })).toHaveAttribute(
+    'aria-disabled',
+    'true'
+  );
+});
+
+test('a sign-in without "Keep me signed in": once the browser is closed, an offline start never shows the copy', async ({
+  page,
+  context,
+  request
+}) => {
+  const email = await newAccount(request, 'session-only');
+  await installed(page, '/about');
+  await signInThroughPage(page, email);
+  await savedRecipe(page, 'Session Only Recipe');
+  await turnOn(page);
+  await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Session Only Recipe']);
+
+  // Closing the browser ends the session cookie and this browser session's storage; the rest stays.
+  await context.clearCookies();
+  await page.evaluate(() => globalThis.sessionStorage.clear());
+  await context.setOffline(true);
+  await page.goto('/recipe');
+  await expect(page.getByText('Session Only Recipe')).toHaveCount(0);
+  await expect(banner(page)).toHaveCount(0);
+  await expect.poll(() => hasCopy(page), { timeout: 30_000 }).toBe(false);
 });
 
 test('off by default: with no network the records are not there, and the page says so', async ({ page, context }) => {
@@ -103,30 +200,47 @@ test('off by default: with no network the records are not there, and the page sa
   await expect(page.locator('#recipe-name')).not.toHaveValue('Not Kept');
 });
 
-test('signing out, online or offline, deletes the copy; the next user never sees it', async ({ page, context }) => {
-  await signUpAndSignIn(page);
+test('signing out, online or offline, deletes the copy; the next user never sees it', async ({
+  page,
+  context,
+  request
+}) => {
+  const first = await newAccount(request, 'first');
+  const second = await newAccount(request, 'second');
+  await installed(page, '/about');
+  await signInThroughPage(page, first);
   await savedRecipe(page, 'First User Recipe');
-  await installed(page, '/recipe');
   await turnOn(page);
   await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['First User Recipe']);
 
   // Offline sign-out.
   await context.setOffline(true);
-  await page.getByRole('button', { name: 'Sign out' }).click();
+  await page.getByRole('button', { name: 'Sign out', exact: true }).click();
   await expect.poll(() => hasCopy(page)).toBe(false);
   expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBeNull();
   await context.setOffline(false);
 
-  // A second user on the same browser.
-  const email = 'second-' + Date.now() + '-' + process.pid + '@test.com';
-  const res = await page.request.post(API + '/signup', { data: { email, password: 'password123' } });
-  expect(res.ok()).toBe(true);
-  await page.evaluate(() => globalThis.localStorage.setItem('session', 'account'));
+  // A second user signs in on the same browser, through the sign-in page.
+  await signInThroughPage(page, second);
   await page.goto('/recipe');
   await context.setOffline(true);
   await page.reload();
   await expect(page.getByText('First User Recipe')).toHaveCount(0);
   expect(await hasCopy(page)).toBe(false);
+});
+
+test('signing in as someone else without signing out first deletes the copy', async ({ page, request }) => {
+  const first = await newAccount(request, 'first');
+  const second = await newAccount(request, 'second');
+  await installed(page, '/about');
+  await signInThroughPage(page, first);
+  await savedRecipe(page, 'Not For B');
+  await turnOn(page);
+  await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Not For B']);
+  // The sign-in page, opened while still signed in.
+  await signInThroughPage(page, second);
+  await expect.poll(() => hasCopy(page)).toBe(false);
+  expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBeNull();
 });
 
 test('signing out online deletes the copy before the sign-in page', async ({ page, context }) => {
@@ -135,7 +249,7 @@ test('signing out online deletes the copy before the sign-in page', async ({ pag
   await installed(page, '/recipe');
   await turnOn(page);
   await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Online Sign Out']);
-  await page.getByRole('button', { name: 'Sign out' }).click();
+  await page.getByRole('button', { name: 'Sign out', exact: true }).click();
   await expect.poll(() => hasCopy(page)).toBe(false);
   await context.setOffline(true);
   await page.reload().catch(() => null);

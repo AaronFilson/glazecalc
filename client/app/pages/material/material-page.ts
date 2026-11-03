@@ -5,6 +5,7 @@ import { formatFormula } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Material } from '../../core/models';
+import { OfflineRecords } from '../../core/offline-records';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { Busy } from '../../shared/busy';
 import { CHEMISTRY_FORM_STYLES, ChemistryForm } from '../../shared/chemistry-form';
@@ -44,6 +45,7 @@ export class MaterialPage implements OnInit {
   protected readonly formatFormula = formatFormula;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
+  protected readonly offlineRecords = inject(OfflineRecords);
 
   protected readonly form = new ChemistryForm(this.notices);
 
@@ -77,6 +79,11 @@ export class MaterialPage implements OnInit {
   }
 
   protected save(): Promise<void> {
+    // Offline, showing the copy kept on this device: nothing can be saved (core/offline-records.ts).
+    if (this.offlineRecords.readOnly()) {
+      this.notices.error(this.offlineRecords.note() ?? '');
+      return Promise.resolve();
+    }
     return this.saving.run(() => this.saveNow());
   }
 

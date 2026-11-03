@@ -34,7 +34,7 @@ import { ShelfService } from '../../core/shelf.service';
 import { UpdateService } from '../../core/update.service';
 import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
-import { fixed, formatDate, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
+import { fixed, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
 import { DatePipe, FixedPipe, PlainPipe } from '../../shared/format-pipes';
 import { NumberInput } from '../../shared/number-input';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
@@ -346,14 +346,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly recipes = this.resources.for<Recipe>('recipe');
   protected readonly offlineRecords = inject(OfflineRecords);
   /** Why saving is off, while the records shown are the copy on this device; null when it is on. */
-  protected readonly offlineNote = computed(() => {
-    const savedAt = this.offlineRecords.showingCopy();
-    return savedAt
-      ? translate('offline.recordsBanner', {
-          date: formatDate(savedAt, { dateStyle: 'medium', timeStyle: 'short' })
-        })
-      : null;
-  });
+  protected readonly offlineNote = this.offlineRecords.note;
   private readonly materials = this.resources.for<Material>('materials');
   private readonly additives = this.resources.for<Additive>('additives');
 

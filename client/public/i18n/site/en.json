@@ -138,7 +138,7 @@
     "rightsAsk": "For anything else, such as asking for your data to be held back from use while a mistake is put right, or objecting to how it is used, write to <mail>privacy@glazecalcapp.com</mail>. It is free, and you will have an answer within a month. You will only be asked to show the account is yours, by signing in or by opening a link sent to its address, never for an ID.",
     "rightsComplain": "If you are not satisfied, you can complain to a data protection authority: in the EU, <edpb>the authority in your country</edpb>, and in the UK, the <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies and browser storage",
-    "storageIntro": "Glazecalc sets two cookies, the second only while you sign in with Google, GitHub or Microsoft, and keeps a few small values in your browser, and, only if you turn it on, a copy of your records. Each is there for something you asked for: staying signed in, signing in with Google, GitHub or Microsoft, or remembering a choice you made. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
+    "storageIntro": "Glazecalc sets two cookies, the second only while you sign in with Google, GitHub or Microsoft. In your browser it also keeps a few small values, the app's text for use without internet, and, only if you turn it on, a copy of your records. Each is there for something you asked for: staying signed in, signing in with Google, GitHub or Microsoft, remembering a choice you made, or using the app without internet. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
     "storageLabel": "Cookies and browser storage",
     "storageName": "Name",
     "storagePurpose": "What it is for",
@@ -151,7 +151,7 @@
     "storageNote": "You can clear any of these in your browser's settings at any time. Deleting your account removes the sign-in note, every setting kept here and the copy of your records.",
     "keys": {
       "offlineRecords": {
-        "purpose": "Only if you turn on \"Keep my records on this phone\" on your account page: a copy of your recipes, materials, additives, firings, notes, settings and prices, so they open without internet. <code>offlineRecords</code> notes that you turned it on. The copy stays in this browser on this device and is never sent anywhere. Glazecalc does not encrypt it; it is protected only by your browser, which keeps each site's storage apart, and by your device's own encryption, if it has it.",
+        "purpose": "Only if you turn on \"Keep my records on this device\" on your account page: a copy of your recipes, materials, additives, firings, notes, settings and prices, so they open without internet. <code>offlineRecords</code> notes that you turned it on. The copy stays in this browser on this device and is never sent anywhere. Glazecalc does not encrypt it; it is protected only by your browser, which keeps each site's storage apart, and by your device's own encryption, if it has it.",
         "lasts": "Until you turn it off, sign out, or your session ends. A copy on another device is removed when that device next connects to Glazecalc, or when you sign out there."
       },
       "offlineFiles": {
