@@ -199,7 +199,15 @@
           }
         </ul>
       }
-      <button type="submit" class="btn btn-primary" [disabled]="saving.active()">{{ t('library.common.save') }}</button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="saving.active()"
+        [attr.aria-disabled]="offlineRecords.readOnly() || null"
+        [attr.title]="offlineRecords.note()"
+      >
+        {{ t('library.common.save') }}
+      </button>
     </form>
   </section>
 

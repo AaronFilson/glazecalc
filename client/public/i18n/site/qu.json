@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Pakasqa kay",
-    "lead": "Qhipa kuti musuqyachisqa: Octubre 2026.",
+    "lead": "Qhipa kuti musuqyachisqa: Noviembre 2026.",
     "shortHeading": "Pisi simipi",
     "short": "Glazecalcqa cuentaykita purichinanpaq necesitasqallantam waqaychan, manam aswantachu. Manam publicidad, analítica, qatipaypas kanchu. Willakuyniykikunaqa manam hayk'aqpas rantikunchu, chaykunata llamk'achiq sapalla empresaqa Amazon Web Servicesmi, web p'anqata hap'iq correotapas kachaq.",
     "whoHeading": "Pitaq responsable",
@@ -138,7 +138,7 @@
     "rightsAsk": "Ima hukpaqpas, huk pantay allichakunankama willakuyniykikuna mana llamk'achisqa kanankupaq mañakuy hina, utaq imayna llamk'achisqa kasqanta mana munay hina, <mail>privacy@glazecalcapp.com</mail> nisqaman qillqay. Mana qullqiyuqmi, huk killa ukhupitaq kutichiyta chaskinki. Cuenta qampa kasqanta rikuchinaykipaqllam mañakusunki, yaykuspa utaq correonman kachasqa enlaceta kichaspa, manam hayk'aqpas DNI-tachu.",
     "rightsComplain": "Mana kusisqa kaspaqa, huk willakuy amachay autoridadmanmi quejakuyta atinki: UE-pi, <edpb>suyuykipi autoridadman</edpb>, Reino Unidopitaq <ico>Information Commissioner's Office</ico> nisqaman.",
     "storageHeading": "Cookiekuna, navegador waqaychanapas",
-    "storageIntro": "Glazecalcqa iskay cookietam churan, iskay ñiqintaq Google, GitHub utaq Microsoftwan yaykuchkaptiykillam, navegadorniykipitaq wakin huch'uy chanikunata waqaychan. Sapakamam mañakusqayki imapaq kachkhan: yaykusqa qhipakuy, Google, GitHub utaq Microsoftwan yaykuy, utaq rurasqayki akllayta yuyariy. Manam mayqinpas qatipasunkichu manataq rakikunchu, chaymi kamachiyqa manam ñawpaqta tapuyta mañanchu, manataq cookie banner kanchu.",
+    "storageIntro": "Glazecalcqa iskay cookietam churan, iskay ñiqintaq Google, GitHub utaq Microsoftwan yaykuchkaptiykillam. Navegadorniykipitaq wakin huch'uy chanikunata, mana internetwan llamk'achinapaq aplicaciónpa qillqankunata, hinallataq, hap'ichiptiykilla, qillqasqaykikunapa copianta waqaychan. Sapakamam mañakusqayki imapaq kachkhan: yaykusqa qhipakuy, Google, GitHub utaq Microsoftwan yaykuy, rurasqayki akllayta yuyariy, utaq mana internetwan aplicaciónta llamk'achiy. Manam mayqinpas qatipasunkichu manataq rakikunchu, chaymi kamachiyqa manam ñawpaqta tapuyta mañanchu, manataq cookie banner kanchu.",
     "storageLabel": "Cookiekuna, navegador waqaychanapas",
     "storageName": "Suti",
     "storagePurpose": "Imapaq",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Local waqaychana",
     "storageSession": "Sesión waqaychana",
-    "storageNote": "Kaykunamanta mayqintapas navegadorniykipa allichanankunapi ima pachapas pichayta atinki. Cuentaykita pichayqa yaykuy willakuyta, kaypi waqaychasqa sapa allichanatapas qichun.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Cache waqaychana",
+    "storageNote": "Kaykunamanta mayqintapas navegadorniykipa allichanankunapi ima pachapas pichayta atinki. Cuentaykita pichayqa yaykuy willakuyta, kaypi waqaychasqa sapa allichanata, qillqasqaykikunapa copiantapas qichun.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Cuenta p'anqaykipi \"Qillqasqaykunata kay dispositivopi waqaychay\" nisqata hap'ichiptiykilla: recetaykikunapa, materialniykikunapa, aditivoykikunapa, ruphachiyniykikunapa, willakuyniykikunapa, allichanaykikunapa, chaniykikunapapas copian, mana internetwan kichakunankupaq. <code>offlineRecords</code> hap'ichisqaykitam willan. Copiaqa kay navegadorpi, kay dispositivopim qhipakun, manataq hayk'appas mayman kachakunchu. Glazecalcqa manam pakasqa qillqaman (cifrado) t'ikranchu; navegadorniykillam amachan, sapa web sitiopa waqaychanantaq t'aqasqata hap'in, dispositivoykipa kikin cifradonpas, kapuptinqa.",
+        "lasts": "Wañuchinaykikama, lluqsinaykikama utaq sesiónniyki tukukunankama. Huk dispositivopi copiaqa qichukunmi, chay dispositivo hamuq kutipi Glazecalcman tinkiptin, utaq chaypi lluqsiptiyki."
+      },
+      "offlineFiles": {
+        "purpose": "Aplicaciónpa qillqankuna, yachachiykunanpas simiykipi, inglés simipipas, p'anqakuna mana internetwan kichakunankupaq, hinallataq mayqin simi waqaychasqa kasqan, hayk'ap waqaychasqa kasqanpas. Mana sapan runapa willakuyninkunayuq.",
+        "lasts": "Navegadorniykipa waqaychananta pichanaykikama. Sapa p'unchaw huk kuti yapamanta waqaychakun; huk simipa archivonkunaqa qichukunmi simita t'ikraptiyki."
+      },
       "cookie": {
         "purpose": "Yaykusqatam qhipachisunki. Yaykuy tokenniykitam hap'in. P'anqapi scriptkunaqa manam ñawinchayta atinkuchu, navegadorniykitaq Glazecalcpa kikin servidorninmanllam kachan, HTTPS-wan, manam hayk'aqpas huk web p'anqapi qallariq mañakuywanchu.",
         "lasts": "Yaykuptiyki, cuentata kichaptiyki utaq pruebata qallariptiykim churakun. Navegadorniykita wichq'anaykikama, utaq 7 p'unchaw \"Kay dispositivopi yaykusqata qhipachiway\" señalaptiyki; huk pruebapaq 14 p'unchaw. Lluqsiyqa qichunmi."

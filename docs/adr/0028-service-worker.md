@@ -89,8 +89,23 @@ in `deploy/README.md`.
 - The cached set is about 2 MB for the app, 0.1 to 0.5 MB for a language and English; the browser test fails above
   3 MB. First visit costs the downloads of the `app` group in the background after the page is stable.
 - A signed-in person offline gets the calculator, the guides, the safety pages, the cone chart and the materials;
-  their own recipes, notes and firing logs are not on the phone (stage 3, opt in, off by default, cleared on
-  sign out) and saving waits for a network (stage 4, not planned).
+  their own records are on the phone only if they turned on "Keep my records on this phone" (stage 3, below), and
+  saving waits for a network (stage 4, not planned).
+
+**Stage 3: the user's records (November 2026).** An account (never a trial) can turn on one switch on the account
+page, per device, off by default. `core/offline-records.ts` then keeps the answers of `/api/{recipe,materials,
+additives,firing,notes}/getAll`, `/api/preferences` and `/api/prices` in IndexedDB `gc-records` (one store keyed
+by those names plus `meta` with the user id from `/verify`, the time saved and a schema number); the flag is
+localStorage `offlineRecords`. `core/offline-records.interceptor.ts` writes every such answer through, fetches the
+touched copies again after any saved change, and answers from the copy only when the network fails (status 0),
+never on a 4xx or 5xx. A full fetch runs once right after the switch is turned on and at most once a day 4 s after
+load. Read-only: a banner says the records shown are the copy and when it was saved; the recipe page's Save buttons
+are off. The copy and the flag are deleted on every session end (`AuthService.onSessionEnd`: sign-out, 401, trial
+end, email change, delete), when the switch is turned off, when another tab removes the session note, and at
+start when there is no session note (a delete another tab blocked). A copy of another user or schema is dropped.
+No app-level encryption: the browser keeps sites apart and the device encrypts its disk; a key the page holds
+would sit on the same device.
+
 - A signed-out visitor offline who opens `/recipe` is sent to the sign-in page, which needs the network: the
   calculator offline is for a session already on the device (an account or a trial).
 - Messages for the new notices are in English only (`offline.*` in `client/public/i18n/en.json`); other languages

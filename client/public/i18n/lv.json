@@ -87,11 +87,16 @@
     "language": "Valoda:"
   },
   "offline": {
-    "languageNotSaved": "Šī valoda nav saglabāta šajā tālrunī. Lai to izmantotu, izveidojiet interneta savienojumu.",
+    "languageNotSaved": "Šī valoda nav saglabāta šajā ierīcē. Lai to izmantotu, izveidojiet interneta savienojumu.",
     "updateReady": "Ir gatava jauna Glazecalc versija.",
     "reload": "Pārlādēt",
     "dismiss": "Ne tagad",
-    "install": "Instalēt lietotni"
+    "install": "Instalēt lietotni",
+    "recordsSwitch": "Glabāt manus ierakstus šajā ierīcē, lai tie atvērtos bez interneta",
+    "recordsHint": "Tikai ierīcē, ko lietojat tikai jūs. Tiek noņemti, kad izrakstāties.",
+    "recordsBanner": "Glazecalc nav sasniedzams. Tiek rādīta kopija, kas šajā ierīcē saglabāta {date}.",
+    "recordsNotSaved": "Jūsu ieraksti nav saglabāti šajā ierīcē. Lai tos redzētu, izveidojiet interneta savienojumu. To varat ieslēgt savā kontā.",
+    "recordsNotKept": "Šī pārlūkprogramma kopiju neglabās (privātā pārlūkošana vai nav vietas)."
   },
   "picker": {
     "results": "{count, plural, zero {# atbilstību} one {# atbilstība} other {# atbilstības}}",

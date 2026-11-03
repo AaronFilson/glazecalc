@@ -87,11 +87,16 @@
     "language": "Teanga:"
   },
   "offline": {
-    "languageNotSaved": "Níl an teanga seo sábháilte ar an bhfón seo. Ceangail leis an idirlíon chun í a úsáid.",
+    "languageNotSaved": "Níl an teanga seo sábháilte ar an ngléas seo. Ceangail leis an idirlíon chun í a úsáid.",
     "updateReady": "Tá leagan nua de Glazecalc réidh.",
     "reload": "Athluchtaigh",
     "dismiss": "Ní anois",
-    "install": "Suiteáil an aip"
+    "install": "Suiteáil an aip",
+    "recordsSwitch": "Coinnigh mo thaifid ar an ngléas seo ionas go n-osclaíonn siad gan idirlíon",
+    "recordsHint": "Ach amháin ar ghléas nach n-úsáideann aon duine ach tusa. Baintear iad nuair a shíníonn tú amach.",
+    "recordsBanner": "Ní féidir Glazecalc a shroicheadh. Ag taispeáint na cóipe a sábháladh ar an ngléas seo ar {date}.",
+    "recordsNotSaved": "Níl do thaifid sábháilte ar an ngléas seo. Ceangail leis an idirlíon chun iad a fheiceáil. Is féidir leat é seo a chasadh air i do chuntas.",
+    "recordsNotKept": "Ní choinneoidh an brabhsálaí seo cóip (brabhsáil phríobháideach nó gan spás)."
   },
   "picker": {
     "results": "{count, plural, one {# mheaitseáil} two {# mheaitseáil} few {# mheaitseáil} many {# meaitseáil} other {# meaitseáil}}",

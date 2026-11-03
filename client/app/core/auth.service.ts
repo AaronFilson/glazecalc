@@ -115,6 +115,10 @@ interface VerifyResponse {
   expiresAt?: string;
   /** The account's email is not confirmed yet. */
   unverified?: boolean;
+  /** When this sign-in runs out (core/offline-records.ts). */
+  sessionEndsAt?: string;
+  /** The sign-in ends when the browser closes. */
+  sessionOnly?: boolean;
 }
 
 interface TrialResponse {
@@ -157,6 +161,7 @@ export class AuthService {
   private readonly session = signal<SessionKind | null>(readStoredSession());
   private checked: Promise<void> | null = null;
   private readonly onEnd: Array<() => void> = [];
+  private readonly onStart: Array<() => void> = [];
   private readonly onDeleted: Array<() => void> = [];
 
   /** Whether this browser has a session (an account's or a trial's), as far as the app knows. */
@@ -588,6 +593,11 @@ export class AuthService {
     this.onEnd.push(then);
   }
 
+  /** Calls `then` each time a session starts on this browser: signed in, signed up, or a trial started. */
+  onSessionStart(then: () => void): void {
+    this.onStart.push(then);
+  }
+
   /** Calls `then` when the account or trial on this browser is deleted, after the session has ended. */
   onAccountDeleted(then: () => void): void {
     this.onDeleted.push(then);
@@ -645,6 +655,7 @@ export class AuthService {
     this.session.set(kind);
     this.sessionVersion.update((v) => v + 1);
     store(SESSION_KEY, kind);
+    if (kind) for (const then of this.onStart) then();
   }
 
   private setTrial(trial: Trial | null): void {

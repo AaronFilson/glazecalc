@@ -87,11 +87,16 @@
     "language": "Simi:"
   },
   "offline": {
-    "languageNotSaved": "Kay simiqa manam kay celularpi waqaychasqachu. Llamk'achinaykipaq internetman tinkiy.",
+    "languageNotSaved": "Kay simiqa manam kay dispositivopi waqaychasqachu. Llamk'achinaykipaq internetman tinkiy.",
     "updateReady": "Glazecalcpa musuq versiónninmi listo kachkhan.",
     "reload": "Yapamanta kichay",
     "dismiss": "Manaraq kunanqa",
-    "install": "Aplicaciónta churay"
+    "install": "Aplicaciónta churay",
+    "recordsSwitch": "Qillqasqaykunata kay dispositivopi waqaychay, mana internetwan kichakunanpaq",
+    "recordsHint": "Qamlla llamk'achisqayki dispositivopilla. Lluqsiptiyki qichukun.",
+    "recordsBanner": "Glazecalcman manam chayayta atikunchu. {date} p'unchawpi kay dispositivopi waqaychasqa copiatam rikuchichkan.",
+    "recordsNotSaved": "Qillqasqaykikunaqa manam kay dispositivopi waqaychasqachu. Rikunaykipaq internetman tinkiy. Kaytaqa cuentaykipi hap'ichiyta atinki.",
+    "recordsNotKept": "Kay navegadorqa manam copiata waqaychanqachu (pakasqa navegaciónpi kasqanrayku utaq mana espacio kaptin)."
   },
   "picker": {
     "results": "{count, plural, one {# tupaq} other {# tupaq}}",

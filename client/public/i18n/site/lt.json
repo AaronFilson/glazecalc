@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privatumas",
-    "lead": "Paskutinį kartą atnaujinta 2026 m. spalio mėn.",
+    "lead": "Paskutinį kartą atnaujinta 2026 m. lapkričio mėn.",
     "shortHeading": "Trumpai",
     "short": "Glazecalc saugo tai, ko reikia jūsų paskyrai veikti, ir nieko daugiau. Nėra reklamų, analitikos ir sekimo. Jūsų duomenys niekada neparduodami, o vienintelė juos tvarkanti bendrovė yra Amazon Web Services, kuri talpina svetainę ir siunčia jos el. laiškus.",
     "whoHeading": "Kas atsakingas",
@@ -138,7 +138,7 @@
     "rightsAsk": "Dėl visų kitų dalykų, pvz., norėdami, kad jūsų duomenys nebūtų naudojami, kol taisoma klaida, arba nesutikdami su tuo, kaip jie naudojami, rašykite adresu <mail>privacy@glazecalcapp.com</mail>. Tai nemokama, o atsakymą gausite per mėnesį. Jūsų bus paprašyta tik įrodyti, kad paskyra jūsų – prisijungiant arba atidarant nuorodą, išsiųstą jos adresu, – ir niekada asmens dokumento.",
     "rightsComplain": "Jei esate nepatenkinti, galite pateikti skundą duomenų apsaugos priežiūros institucijai: ES – <edpb>savo šalies institucijai</edpb>, o Jungtinėje Karalystėje – <ico>Informacijos komisaro tarnybai (Information Commissioner’s Office)</ico>.",
     "storageHeading": "Slapukai ir naršyklės saugykla",
-    "storageIntro": "Glazecalc nustato du slapukus, antrąjį tik tada, kai prisijungiate per Google, GitHub ar Microsoft, ir naršyklėje saugo keletą mažų reikšmių. Kiekviena yra todėl, kad to paprašėte: kad liktumėte prisijungę, prisijungtumėte per Google, GitHub ar Microsoft arba kad būtų prisimintas jūsų pasirinkimas. Nė viena jūsų neseka ir nė viena niekam neperduodama, todėl pagal įstatymą klausti iš anksto nereikia, ir slapukų pranešimo juostos nėra.",
+    "storageIntro": "Glazecalc nustato du slapukus, antrąjį tik prisijungimo per Google, GitHub ar Microsoft metu. Naršyklėje ji taip pat saugo keletą mažų reikšmių, programos tekstą naudojimui be interneto ir, tik jei tai įjungiate, jūsų įrašų kopiją. Kiekviena yra todėl, kad to paprašėte: kad liktumėte prisijungę, prisijungtumėte per Google, GitHub ar Microsoft, kad būtų prisimintas jūsų pasirinkimas arba kad galėtumėte naudotis programa be interneto. Nė viena jūsų neseka ir nė viena niekam neperduodama, todėl pagal įstatymą klausti iš anksto nereikia, ir slapukų pranešimo juostos nėra.",
     "storageLabel": "Slapukai ir naršyklės saugykla",
     "storageName": "Pavadinimas",
     "storagePurpose": "Kam skirta",
@@ -146,8 +146,18 @@
     "storageCookie": "Slapukas",
     "storageLocal": "Vietinė saugykla",
     "storageSession": "Seanso saugykla",
-    "storageNote": "Bet kurį iš jų galite bet kada išvalyti naršyklės nustatymuose. Panaikinus paskyrą, pašalinama prisijungimo žymė ir visi čia laikomi nustatymai.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Podėlio saugykla",
+    "storageNote": "Bet kurį iš jų galite bet kada išvalyti naršyklės nustatymuose. Panaikinus paskyrą, pašalinama prisijungimo žymė, visi čia laikomi nustatymai ir jūsų įrašų kopija.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Tik jei paskyros puslapyje įjungiate „Laikyti mano įrašus šiame įrenginyje“: jūsų receptų, medžiagų, priedų, degimų, pastabų, nustatymų ir kainų kopija, kad jie atsidarytų be interneto. <code>offlineRecords</code> pažymi, kad tai įjungėte. Kopija lieka šioje naršyklėje šiame įrenginyje ir niekada niekur nesiunčiama. Glazecalc jos nešifruoja; ją saugo tik jūsų naršyklė, kuri kiekvienos svetainės saugyklą laiko atskirai, ir paties įrenginio šifravimas, jei jis jį turi.",
+        "lasts": "Kol tai išjungiate, atsijungiate arba baigiasi seansas. Kopija kitame įrenginyje pašalinama, kai tas įrenginys kitą kartą prisijungia prie Glazecalc arba kai jame atsijungiate."
+      },
+      "offlineFiles": {
+        "purpose": "Programos tekstas ir vadovai jūsų kalba ir anglų kalba, kad puslapiai atsidarytų be interneto, ir kuri kalba buvo išsaugota ir kada. Jokių asmens duomenų.",
+        "lasts": "Kol išvalysite naršyklės saugyklą. Iš naujo išsaugoma kartą per dieną; kitos kalbos failai pašalinami, kai pakeičiate kalbą."
+      },
       "cookie": {
         "purpose": "Palaiko jūsų prisijungimą. Jame saugomas jūsų prisijungimo žetonas. Puslapio scenarijai negali jo perskaityti, o naršyklė jį siunčia tik į paties Glazecalc serverį, per HTTPS, ir niekada su užklausa, kuri prasideda kitoje svetainėje.",
         "lasts": "Nustatomas, kai prisijungiate, sukuriate paskyrą arba pradedate bandomąjį laikotarpį. Galioja, kol uždarote naršyklę, arba 7 dienas, jei pažymite langelį Likti prisijungus šiame įrenginyje; bandomuoju laikotarpiu – 14 dienų. Atsijungus jis pašalinamas."
@@ -193,7 +203,7 @@
         "lasts": "Kol uždarysite skirtuką."
       },
       "oauthCookie": {
-        "purpose": "Tik kai prisijungiate per Google, GitHub ar Microsoft: jis susieja paslaugos atsakymą su jūsų naršykle, kad niekas kitas negalėtų užbaigti jūsų prisijungimo ar pradėti jo už jus. Puslapio scenarijai jo perskaityti negali.",
+        "purpose": "Tik prisijungimo per Google, GitHub ar Microsoft metu: jis susieja paslaugos atsakymą su jūsų naršykle, kad niekas kitas negalėtų užbaigti jūsų prisijungimo ar pradėti jo už jus. Puslapio scenarijai jo perskaityti negali.",
         "lasts": "Nustatomas, kai paspaudžiate Tęsti su Google, Tęsti su GitHub ar Prisijungti per Microsoft arba susiejate vieną iš jų paskyros puslapyje. Pašalinamas, kai prisijungimas baigiasi, arba po 10 minučių."
       }
     },

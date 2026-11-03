@@ -87,11 +87,16 @@
     "language": "Harshe:"
   },
   "offline": {
-    "languageNotSaved": "Ba a ajiye wannan harshe a wannan waya ba. Haɗa da intanet don amfani da shi.",
+    "languageNotSaved": "Ba a ajiye wannan harshe a wannan na'ura ba. Haɗa da intanet don amfani da shi.",
     "updateReady": "Sabuwar sigar Glazecalc ta shirya.",
     "reload": "Sake lodawa",
     "dismiss": "Ba yanzu ba",
-    "install": "Saka manhaja"
+    "install": "Saka manhaja",
+    "recordsSwitch": "Ajiye bayanaina a wannan na'ura don su buɗe ba tare da intanet ba",
+    "recordsHint": "Sai a na'urar da ku kaɗai kuke amfani da ita. Ana cire su idan kun fita.",
+    "recordsBanner": "Ba a iya kaiwa ga Glazecalc. Ana nuna kwafin da aka ajiye a wannan na'ura a {date}.",
+    "recordsNotSaved": "Ba a ajiye bayananku a wannan na'ura ba. Haɗa da intanet don ganin su. Kuna iya kunna wannan a asusunku.",
+    "recordsNotKept": "Wannan burauza ba za ta ajiye kwafi ba (bincike na sirri ko babu wuri)."
   },
   "picker": {
     "results": "{count, plural, one {# sakamako} other {# sakamako}}",

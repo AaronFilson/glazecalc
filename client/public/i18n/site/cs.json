@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Ochrana soukromí",
-    "lead": "Naposledy aktualizováno v říjnu 2026.",
+    "lead": "Naposledy aktualizováno v listopadu 2026.",
     "shortHeading": "Stručně",
     "short": "Glazecalc uchovává to, co potřebuje k provozu vašeho účtu, a nic víc. Nejsou tu žádné reklamy, analytika ani sledování. Vaše data se nikdy neprodávají a jedinou firmou, která s nimi pracuje, je Amazon Web Services, která hostuje web a odesílá jeho e-maily.",
     "whoHeading": "Kdo za data odpovídá",
@@ -138,7 +138,7 @@
     "rightsAsk": "Ve všech ostatních věcech, například když chcete, aby se vaše data do opravy chyby nepoužívala, nebo když chcete vznést námitku proti způsobu jejich použití, napište na <mail>privacy@glazecalcapp.com</mail>. Je to zdarma a odpověď dostanete do jednoho měsíce. Požádáme vás jen o doklad, že účet je váš: přihlášení nebo otevření odkazu poslaného na jeho adresu, nikdy o průkaz totožnosti.",
     "rightsComplain": "Pokud nejste spokojeni, můžete podat stížnost u úřadu pro ochranu osobních údajů: v EU u <edpb>úřadu ve vaší zemi</edpb> a ve Spojeném království u <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Soubory cookie a úložiště prohlížeče",
-    "storageIntro": "Glazecalc nastavuje dva soubory cookie, druhý jen během přihlašování přes Google, GitHub nebo Microsoft, a uchovává pár drobných hodnot ve vašem prohlížeči. Každé z nich je tu kvůli něčemu, o co jste požádali: zůstat přihlášeni, přihlásit se přes Google, GitHub nebo Microsoft, nebo si zapamatovat vaši volbu. Žádné vás nesleduje a žádné se nesdílí, takže zákon nevyžaduje předchozí souhlas a není tu lišta o cookies.",
+    "storageIntro": "Glazecalc nastavuje dva soubory cookie, druhý jen během přihlašování přes Google, GitHub nebo Microsoft. Ve vašem prohlížeči také uchovává pár drobných hodnot, texty aplikace pro použití bez internetu a, jen pokud to zapnete, kopii vašich záznamů. Každé z nich je tu kvůli něčemu, o co jste požádali: zůstat přihlášeni, přihlásit se přes Google, GitHub nebo Microsoft, zapamatovat si vaši volbu, nebo používat aplikaci bez internetu. Žádné vás nesleduje a žádné se nesdílí, takže zákon nevyžaduje předchozí souhlas a není tu lišta o cookies.",
     "storageLabel": "Soubory cookie a úložiště prohlížeče",
     "storageName": "Název",
     "storagePurpose": "K čemu slouží",
@@ -146,8 +146,18 @@
     "storageCookie": "Soubor cookie",
     "storageLocal": "Místní úložiště",
     "storageSession": "Úložiště relace",
-    "storageNote": "Kterékoli z nich můžete kdykoli vymazat v nastavení prohlížeče. Odstraněním účtu se odstraní poznámka o přihlášení i všechna nastavení zde uložená.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Úložiště mezipaměti",
+    "storageNote": "Kterékoli z nich můžete kdykoli vymazat v nastavení prohlížeče. Odstraněním účtu se odstraní poznámka o přihlášení, všechna nastavení zde uložená i kopie vašich záznamů.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Jen pokud na stránce účtu zapnete „Uchovávat moje záznamy v tomto zařízení“: kopie vašich receptur, surovin, přísad, výpalů, poznámek, nastavení a cen, aby se otevřely bez internetu. <code>offlineRecords</code> zaznamenává, že jste to zapnuli. Kopie zůstává v tomto prohlížeči v tomto zařízení a nikdy se nikam neodesílá. Glazecalc ji nešifruje; chrání ji jen váš prohlížeč, který drží úložiště každého webu odděleně, a vlastní šifrování vašeho zařízení, pokud ho má.",
+        "lasts": "Dokud to nevypnete, neodhlásíte se nebo neskončí vaše relace. Kopie v jiném zařízení se odstraní, až se toto zařízení příště připojí ke Glazecalc, nebo když se tam odhlásíte."
+      },
+      "offlineFiles": {
+        "purpose": "Texty a návody aplikace ve vašem jazyce a v angličtině, aby se stránky otevřely bez internetu, a který jazyk byl uložen a kdy. Žádné osobní údaje.",
+        "lasts": "Dokud nevymažete úložiště prohlížeče. Znovu se ukládají jednou denně; soubory jiného jazyka se odstraní, když jazyk změníte."
+      },
       "cookie": {
         "purpose": "Udržuje vás přihlášené. Obsahuje váš přihlašovací token. Skripty na stránce ho nemohou číst a prohlížeč ho posílá jen na vlastní server projektu Glazecalc, přes HTTPS, a nikdy s požadavkem, který začíná na jiném webu.",
         "lasts": "Nastaví se při přihlášení, vytvoření účtu nebo zahájení zkušebního přístupu. Platí do zavření prohlížeče, nebo 7 dní, pokud zaškrtnete volbu Neodhlašovat mě na tomto zařízení; u zkušebního přístupu 14 dní. Odhlášením se odstraní."

@@ -142,7 +142,14 @@
         <span id="add-row-why" class="muted">{{ t('notebook.firing.addRowWhy') }}</span>
       }
     </div>
-    <button type="submit" form="firing-form" class="btn btn-primary" [disabled]="saving.active()">
+    <button
+      type="submit"
+      form="firing-form"
+      class="btn btn-primary"
+      [disabled]="saving.active()"
+      [attr.aria-disabled]="offlineRecords.readOnly() || null"
+      [attr.title]="offlineRecords.note()"
+    >
       {{ t('notebook.firing.save') }}
     </button>
   </section>
@@ -194,6 +201,8 @@
                           type="button"
                           class="btn btn-light border btn-sm"
                           [disabled]="linking() === fr._id"
+                          [attr.aria-disabled]="offlineRecords.readOnly() || null"
+                          [attr.title]="offlineRecords.note()"
                           [attr.aria-label]="t('notebook.firing.unlinkRecipe', { title: rec.title })"
                           (click)="setFiredIn(fr, rec._id ?? '', false)"
                         >
@@ -223,6 +232,8 @@
                     class="btn btn-light border btn-sm"
                     [id]="'fired-add-' + fr._id"
                     [disabled]="linking() === fr._id"
+                    [attr.aria-disabled]="offlineRecords.readOnly() || null"
+                    [attr.title]="offlineRecords.note()"
                     (click)="setFiredIn(fr, pick.value, true)"
                   >
                     {{ t('notebook.firing.linkRecipe') }}

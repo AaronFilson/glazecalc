@@ -87,11 +87,16 @@
     "language": "Keel:"
   },
   "offline": {
-    "languageNotSaved": "See keel ei ole selles telefonis salvestatud. Selle kasutamiseks looge internetiühendus.",
+    "languageNotSaved": "See keel ei ole selles seadmes salvestatud. Selle kasutamiseks looge internetiühendus.",
     "updateReady": "Glazecalci uus versioon on valmis.",
     "reload": "Laadi uuesti",
     "dismiss": "Mitte praegu",
-    "install": "Paigalda rakendus"
+    "install": "Paigalda rakendus",
+    "recordsSwitch": "Hoia minu andmed selles seadmes, et need avaneksid ilma internetita",
+    "recordsHint": "Ainult seadmes, mida kasutate üksnes teie. Eemaldatakse väljalogimisel.",
+    "recordsBanner": "Glazecalciga ei saa ühendust. Kuvatakse koopiat, mis salvestati selles seadmes {date}.",
+    "recordsNotSaved": "Teie andmed ei ole selles seadmes salvestatud. Nende nägemiseks looge internetiühendus. Selle saate sisse lülitada oma kontol.",
+    "recordsNotKept": "See brauser ei hoia koopiat (privaatne sirvimine või ruumi pole)."
   },
   "picker": {
     "results": "{count, plural, one {# vaste} other {# vastet}}",

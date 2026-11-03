@@ -71,7 +71,15 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
   { names: ['printMode', 'printBatch'], kind: marker('site.privacy.storageLocal'), key: 'print' },
   { names: ['token'], kind: marker('site.privacy.storageLocal'), key: 'token' },
   { names: ['readEnglish'], kind: marker('site.privacy.storageSession'), key: 'readEnglish' }, // i18n/translation-notice.ts
-  { names: ['reloadedFor'], kind: marker('site.privacy.storageSession'), key: 'reloadedFor' } // core/stale-build.ts
+  { names: ['reloadedFor'], kind: marker('site.privacy.storageSession'), key: 'reloadedFor' }, // core/stale-build.ts
+  // core/offline-records.ts: the database, and the flag in local storage.
+  {
+    names: ['gc-records', 'offlineRecords'],
+    kind: marker('site.privacy.storageIndexedDb'),
+    key: 'offlineRecords'
+  },
+  // core/offline-languages.ts: the cache, and the note in local storage.
+  { names: ['gc-i18n', 'offlineLanguage'], kind: marker('site.privacy.storageCache'), key: 'offlineFiles' }
 ];
 
 // The keys manager finds the row texts by these.
@@ -99,7 +107,11 @@ marker([
   'site.privacy.keys.readEnglish.purpose',
   'site.privacy.keys.readEnglish.lasts',
   'site.privacy.keys.reloadedFor.purpose',
-  'site.privacy.keys.reloadedFor.lasts'
+  'site.privacy.keys.reloadedFor.lasts',
+  'site.privacy.keys.offlineRecords.purpose',
+  'site.privacy.keys.offlineRecords.lasts',
+  'site.privacy.keys.offlineFiles.purpose',
+  'site.privacy.keys.offlineFiles.lasts'
 ]);
 
 /**

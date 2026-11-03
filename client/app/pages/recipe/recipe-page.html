@@ -970,13 +970,20 @@
         }
 
         <div class="recipe-save">
-          <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">
+          <button
+            type="button"
+            class="btn btn-primary"
+            [attr.aria-disabled]="saving.active() || offlineRecords.readOnly() || null"
+            [attr.title]="offlineNote()"
+            (click)="save()"
+          >
             {{ t('recipe.page.save') }}
           </button>
           <button
             type="button"
             class="btn btn-light border"
-            [attr.aria-disabled]="saving.active() || null"
+            [attr.aria-disabled]="saving.active() || offlineRecords.readOnly() || null"
+            [attr.title]="offlineNote()"
             (click)="saveAndNext()"
           >
             {{ t('recipe.page.saveAndNext') }}
@@ -985,7 +992,8 @@
             <button
               type="button"
               class="btn btn-light border"
-              [attr.aria-disabled]="saving.active() || null"
+              [attr.aria-disabled]="saving.active() || offlineRecords.readOnly() || null"
+              [attr.title]="offlineNote()"
               (click)="saveAsCopy()"
             >
               {{ t('recipe.page.saveAsCopy') }}

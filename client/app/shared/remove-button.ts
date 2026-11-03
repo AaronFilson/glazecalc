@@ -17,6 +17,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResource } from '../core/api-resource.service';
 import { errorMessage } from '../core/error-message';
 import { Owned } from '../core/models';
+import { OfflineRecords } from '../core/offline-records';
 import { Notices } from './notices';
 
 /**
@@ -159,6 +160,8 @@ let nextQuestionId = 0;
         class="btn btn-sm remove-start"
         [class]="danger() ? 'btn-outline-danger' : 'btn-light border'"
         [attr.aria-label]="t('remove.removeName', { name: name() })"
+        [attr.aria-disabled]="offlineRecords.readOnly() || null"
+        [attr.title]="offlineRecords.note()"
         (click)="ask()"
       >
         {{ t('remove.remove') }}
@@ -207,6 +210,8 @@ export class RemoveButton {
   readonly confirmed = output<void>();
 
   protected readonly asking = signal(false);
+  /** Offline, showing the copy kept on this device: nothing can be removed (core/offline-records.ts). */
+  protected readonly offlineRecords = inject(OfflineRecords);
   protected readonly questionId = 'remove-question-' + nextQuestionId++;
   private readonly removeButton = viewChild<ElementRef<HTMLElement>>('removeButton');
   private readonly cancelButton = viewChild<ElementRef<HTMLElement>>('cancelButton');
@@ -233,6 +238,7 @@ export class RemoveButton {
   }
 
   protected ask(): void {
+    if (this.offlineRecords.readOnly()) return;
     this.asking.set(true);
     afterNextRender(() => this.cancelButton()?.nativeElement.focus(), { injector: this.injector });
   }

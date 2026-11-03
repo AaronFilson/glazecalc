@@ -32,17 +32,27 @@ const startTrial = async (page) => {
 // Text to match as it is, inside a regular expression.
 const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-// A library entry's Add button: "Add Custer Spar", with ", Discontinued 2023" after
-// the name when it is no longer current.
-const addButtonName = (name) => new RegExp('^Add ' + escapeRegExp(name) + '(,|$)');
+// A library entry's Add button, named by its visible text (WCAG 2.5.3): "Custer Spar + Add",
+// with "Discontinued 2023" after the name when it is no longer current.
+const addButtonName = (name) => new RegExp('^' + escapeRegExp(name) + '( .+)?\\s*\\+ Add$');
+
+// Presses a library entry's Add button: "Silica + Add" exactly when there is one, otherwise the entry
+// with a status after the name (addButtonName alone would also find "Silica 325 Mesh + Add").
+const pressAdd = async (library, name) => {
+  const loose = library.getByRole('button', { name: addButtonName(name) });
+  const exact = library.getByRole('button', { name: new RegExp('^' + escapeRegExp(name) + '\\s*\\+ Add$') });
+  await loose.first().waitFor();
+  await ((await exact.count()) ? exact : loose).click();
+};
 
 // Adds a material to the recipe from the library ('Standard' or 'My materials')
 // and enters its amount.
 const addMaterial = async (page, name, amount, tab = 'Standard') => {
   const library = page.locator('.library', { hasText: 'Add materials' });
-  await library.getByRole('button', { name: new RegExp('^' + tab) }).click();
+  // The tab, not an entry whose name starts the same way ("Standard Borax Frit + Add").
+  await library.locator('.library-tab', { hasText: new RegExp('^\\s*' + tab) }).click();
   await library.getByRole('searchbox').fill(name);
-  await library.getByRole('button', { name: addButtonName(name) }).click();
+  await pressAdd(library, name);
   await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
 const addStandardMaterial = (page, name, amount) => addMaterial(page, name, amount, 'Standard');
@@ -50,9 +60,9 @@ const addStandardMaterial = (page, name, amount) => addMaterial(page, name, amou
 // Adds a standard colorant to the recipe and enters its amount (a percent of the base, unless changed).
 const addColorant = async (page, name, amount) => {
   const library = page.locator('.library', { hasText: 'Add colorants and additives' });
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   await library.getByRole('searchbox').fill(name);
-  await library.getByRole('button', { name: addButtonName(name) }).click();
+  await pressAdd(library, name);
   await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
 
@@ -239,6 +249,7 @@ const usePasskey = (page, optionsJSON) =>
 
 module.exports = {
   API,
+  addButtonName,
   addColorant,
   addMaterial,
   addStandardMaterial,
@@ -249,6 +260,7 @@ module.exports = {
   confirmedAccount,
   createPasskey,
   expectFieldProblem,
+  pressAdd,
   signUpAndSignIn,
   startTrial,
   totp,

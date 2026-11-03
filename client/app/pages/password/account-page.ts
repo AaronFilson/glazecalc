@@ -11,6 +11,7 @@ import { errorMessage } from '../../core/error-message';
 import { IdentityConfirm } from '../auth/identity-confirm';
 import { SectionLinks } from '../guides/guide-contents';
 import { ExportSection } from './export-section';
+import { OfflineRecordsSection } from './offline-records-section';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
@@ -44,6 +45,7 @@ type Confirming = 'password' | 'email' | 'delete';
     IdentityConfirm,
     NgTemplateOutlet,
     NoticesList,
+    OfflineRecordsSection,
     PageHeader,
     ProvidersSection,
     RouterLink,
@@ -95,6 +97,7 @@ type Confirming = 'password' | 'email' | 'delete';
         </section>
       }
       <gc-settings />
+      <gc-offline-records />
       <gc-export />
       <ng-container [ngTemplateOutlet]="trash" />
       <gc-shared-recipes />

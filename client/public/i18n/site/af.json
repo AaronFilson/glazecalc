@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privaatheid",
-    "lead": "Laas opgedateer in oktober 2026.",
+    "lead": "Laas opgedateer in november 2026.",
     "shortHeading": "Kortliks",
     "short": "Glazecalc bewaar wat dit nodig het om jou rekening te laat werk, en niks meer nie. Daar is geen advertensies, geen analise en geen opsporing nie. Jou data word nooit verkoop nie, en die enigste maatskappy wat dit hanteer, is Amazon Web Services, wat die webwerf huisves en sy e-pos stuur.",
     "whoHeading": "Wie verantwoordelik is",
@@ -138,7 +138,7 @@
     "rightsAsk": "Vir enigiets anders, soos om te vra dat jou data nie gebruik word terwyl 'n fout reggestel word nie, of om beswaar te maak teen hoe dit gebruik word, skryf aan <mail>privacy@glazecalcapp.com</mail>. Dit is gratis, en jy sal binne 'n maand 'n antwoord hê. Daar sal net van jou gevra word om te wys dat die rekening joune is, deur aan te meld of deur 'n skakel oop te maak wat na sy adres gestuur is, nooit vir 'n identiteitsdokument nie.",
     "rightsComplain": "As jy nie tevrede is nie, kan jy by 'n databeskermingsowerheid klag: in die EU, <edpb>die owerheid in jou land</edpb>, en in die VK, die <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Koekies en blaaierberging",
-    "storageIntro": "Glazecalc stel twee koekies, die tweede slegs terwyl jy met Google, GitHub of Microsoft aanmeld, en hou 'n paar klein waardes in jou blaaier. Elkeen is daar vir iets waarvoor jy gevra het: aangemeld bly, met Google, GitHub of Microsoft aanmeld, of 'n keuse onthou wat jy gemaak het. Geeneen volg jou nie en geeneen word gedeel nie, so die wet vereis nie dat daar eers gevra word nie, en daar is geen koekie-banier nie.",
+    "storageIntro": "Glazecalc stel twee koekies, die tweede slegs terwyl jy met Google, GitHub of Microsoft aanmeld. In jou blaaier hou dit ook 'n paar klein waardes, die toepassing se teks vir gebruik sonder internet, en, slegs as jy dit aanskakel, 'n kopie van jou rekords. Elkeen is daar vir iets waarvoor jy gevra het: aangemeld bly, met Google, GitHub of Microsoft aanmeld, 'n keuse onthou wat jy gemaak het, of die toepassing sonder internet gebruik. Geeneen volg jou nie en geeneen word gedeel nie, so die wet vereis nie dat daar eers gevra word nie, en daar is geen koekie-banier nie.",
     "storageLabel": "Koekies en blaaierberging",
     "storageName": "Naam",
     "storagePurpose": "Waarvoor dit is",
@@ -146,8 +146,18 @@
     "storageCookie": "Koekie",
     "storageLocal": "Plaaslike berging",
     "storageSession": "Sessieberging",
-    "storageNote": "Jy kan enige van hierdie te eniger tyd in jou blaaier se instellings uitvee. As jy jou rekening skrap, verwyder dit die aanmeldnota en elke instelling wat hier gehou word.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Kasberging",
+    "storageNote": "Jy kan enige van hierdie te eniger tyd in jou blaaier se instellings uitvee. As jy jou rekening skrap, verwyder dit die aanmeldnota, elke instelling wat hier gehou word en die kopie van jou rekords.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Slegs as jy \"Hou my rekords op hierdie toestel\" op jou rekeningblad aanskakel: 'n kopie van jou resepte, materiale, bymiddels, brande, notas, instellings en pryse, sodat hulle sonder internet oopmaak. <code>offlineRecords</code> teken aan dat jy dit aangeskakel het. Die kopie bly in hierdie blaaier op hierdie toestel en word nooit enige plek heen gestuur nie. Glazecalc enkripteer dit nie; dit word slegs beskerm deur jou blaaier, wat elke webwerf se berging apart hou, en deur jou toestel se eie enkripsie, as dit dit het.",
+        "lasts": "Totdat jy dit afskakel, afmeld, of jou sessie eindig. 'n Kopie op 'n ander toestel word verwyder wanneer daardie toestel volgende keer aan Glazecalc koppel, of wanneer jy daar afmeld."
+      },
+      "offlineFiles": {
+        "purpose": "Die toepassing se teks en gidse in jou taal en in Engels, sodat bladsye sonder internet oopmaak, en watter taal gestoor is en wanneer. Geen persoonlike data nie.",
+        "lasts": "Totdat jy jou blaaier se berging uitvee. Een keer per dag weer gestoor; 'n ander taal se lêers word verwyder wanneer jy van taal verander."
+      },
       "cookie": {
         "purpose": "Hou jou aangemeld. Dit bevat jou aanmeldtoken. Skrifte op die bladsy kan dit nie lees nie, en jou blaaier stuur dit slegs na Glazecalc se eie bediener, oor HTTPS, en nooit saam met 'n versoek wat op 'n ander webwerf begin nie.",
         "lasts": "Gestel wanneer jy aanmeld, 'n rekening skep of 'n proef begin. Totdat jy jou blaaier toemaak, of 7 dae as jy \"Hou my aangemeld op hierdie toestel\" merk; 14 dae vir 'n proef. As jy afmeld, verwyder dit dit."

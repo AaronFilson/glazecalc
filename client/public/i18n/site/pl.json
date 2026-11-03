@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Prywatność",
-    "lead": "Ostatnia aktualizacja: październik 2026 r.",
+    "lead": "Ostatnia aktualizacja: listopad 2026 r.",
     "shortHeading": "W skrócie",
     "short": "Glazecalc przechowuje to, czego potrzebuje do prowadzenia konta, i nic więcej. Nie ma reklam, analityki ani śledzenia. Dane nigdy nie są sprzedawane, a jedyną firmą, która je przetwarza, jest Amazon Web Services, która utrzymuje stronę i wysyła z niej wiadomości e-mail.",
     "whoHeading": "Kto jest odpowiedzialny",
@@ -138,7 +138,7 @@
     "rightsAsk": "W każdej innej sprawie, np. aby poprosić o wstrzymanie wykorzystywania danych do czasu poprawienia błędu lub aby wnieść sprzeciw wobec sposobu ich wykorzystywania, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Jest to bezpłatne, a odpowiedź nadejdzie w ciągu miesiąca. Poprosimy jedynie o wykazanie, że konto należy do osoby piszącej, przez zalogowanie się lub otwarcie linku wysłanego na adres konta, nigdy o dokument tożsamości.",
     "rightsComplain": "W razie niezadowolenia można złożyć skargę do organu ochrony danych: w UE do <edpb>organu we własnym kraju</edpb>, a w Wielkiej Brytanii do <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Pliki cookie i pamięć przeglądarki",
-    "storageIntro": "Glazecalc ustawia dwa pliki cookie, drugi tylko podczas logowania przez Google, GitHub lub Microsoft, i zapisuje w przeglądarce kilka małych wartości. Każdy służy czemuś, o co użytkownik poprosił: pozostawaniu zalogowanym, logowaniu przez Google, GitHub lub Microsoft albo zapamiętaniu dokonanego wyboru. Żaden nie śledzi i żaden nie jest udostępniany, więc prawo nie wymaga pytania o zgodę z góry i nie ma banera cookie.",
+    "storageIntro": "Glazecalc ustawia dwa pliki cookie, drugi tylko podczas logowania przez Google, GitHub lub Microsoft. W przeglądarce zapisuje też kilka małych wartości, tekst aplikacji do używania bez internetu oraz, tylko jeśli użytkownik to włączy, kopię jego zapisów. Każdy z nich służy czemuś, o co użytkownik poprosił: pozostawaniu zalogowanym, logowaniu przez Google, GitHub lub Microsoft, zapamiętaniu dokonanego wyboru albo korzystaniu z aplikacji bez internetu. Żaden nie śledzi i żaden nie jest udostępniany, więc prawo nie wymaga pytania o zgodę z góry i nie ma banera cookie.",
     "storageLabel": "Pliki cookie i pamięć przeglądarki",
     "storageName": "Nazwa",
     "storagePurpose": "Do czego służy",
@@ -146,8 +146,18 @@
     "storageCookie": "Plik cookie",
     "storageLocal": "Pamięć lokalna",
     "storageSession": "Pamięć sesji",
-    "storageNote": "Każdą z tych wartości można w dowolnym momencie usunąć w ustawieniach przeglądarki. Usunięcie konta usuwa informację o zalogowaniu i każde przechowywane tu ustawienie.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Pamięć podręczna (Cache storage)",
+    "storageNote": "Każdą z tych wartości można w dowolnym momencie usunąć w ustawieniach przeglądarki. Usunięcie konta usuwa informację o zalogowaniu, każde przechowywane tu ustawienie oraz kopię zapisów.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Tylko jeśli na stronie konta włączono opcję „Przechowuj moje zapisy na tym urządzeniu”: kopia receptur, surowców, dodatków, wypałów, notatek, ustawień i cen, aby otwierały się bez internetu. <code>offlineRecords</code> zapisuje, że opcja została włączona. Kopia pozostaje w tej przeglądarce na tym urządzeniu i nigdy nie jest nigdzie wysyłana. Glazecalc jej nie szyfruje; chroni ją jedynie przeglądarka, która oddziela od siebie dane każdej witryny, oraz własne szyfrowanie urządzenia, jeśli je ma.",
+        "lasts": "Do wyłączenia opcji, wylogowania lub zakończenia sesji. Kopia na innym urządzeniu jest usuwana, gdy to urządzenie następnym razem połączy się z Glazecalc, albo po wylogowaniu się na nim."
+      },
+      "offlineFiles": {
+        "purpose": "Tekst i poradniki aplikacji w wybranym języku i po angielsku, aby strony otwierały się bez internetu, oraz informacja, który język został zapisany i kiedy. Bez danych osobowych.",
+        "lasts": "Do wyczyszczenia pamięci przeglądarki. Zapisywane ponownie raz dziennie; pliki innego języka są usuwane po zmianie języka."
+      },
       "cookie": {
         "purpose": "Utrzymuje zalogowanie. Zawiera token logowania. Skrypty na stronie nie mogą go odczytać, a przeglądarka wysyła go tylko do serwera projektu Glazecalc, przez HTTPS, i nigdy z żądaniem rozpoczętym na innej stronie.",
         "lasts": "Ustawiany przy logowaniu, zakładaniu konta lub rozpoczęciu okresu próbnego. Do zamknięcia przeglądarki albo przez 7 dni po zaznaczeniu pola Nie wylogowuj mnie na tym urządzeniu; 14 dni w okresie próbnym. Wylogowanie go usuwa."

@@ -14,6 +14,7 @@ import { Busy } from '../../shared/busy';
 import { FORM_GRID_STYLES } from '../../shared/chemistry-form';
 import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
+import { OfflineRecords } from '../../core/offline-records';
 import { localDate, optional } from '../../shared/dates';
 import { FIRING_FIELDS, firingFieldLabel, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
@@ -131,6 +132,8 @@ export class FiringPage implements OnInit {
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
+  /** Offline, showing the copy kept on this device: nothing can be saved (core/offline-records.ts). */
+  protected readonly offlineRecords = inject(OfflineRecords);
 
   protected readonly title = signal('');
   protected readonly kiln = signal('');
@@ -191,6 +194,10 @@ export class FiringPage implements OnInit {
    * changes on the server, never the recipe's whole list, so the recipe page open at once loses nothing.
    */
   protected async setFiredIn(firing: Firing, recipeId: string, fired: boolean): Promise<void> {
+    if (this.offlineRecords.readOnly()) {
+      this.notices.error(this.offlineRecords.note() ?? '');
+      return;
+    }
     const recipe = this.myRecipes().find((r) => r._id === recipeId);
     if (!recipe || !firing._id) return;
     this.linking.set(firing._id);
@@ -250,6 +257,10 @@ export class FiringPage implements OnInit {
   }
 
   protected save(): Promise<void> {
+    if (this.offlineRecords.readOnly()) {
+      this.notices.error(this.offlineRecords.note() ?? '');
+      return Promise.resolve();
+    }
     return this.saving.run(() => this.saveNow());
   }
 

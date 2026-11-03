@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Integritet",
-    "lead": "Senast uppdaterad i oktober 2026.",
+    "lead": "Senast uppdaterad i november 2026.",
     "shortHeading": "I korthet",
     "short": "Glazecalc sparar det som behövs för att driva kontot, och inget mer. Det finns inga annonser, ingen analys och ingen spårning. Uppgifterna säljs aldrig, och det enda företag som hanterar dem är Amazon Web Services, som är värd för webbplatsen och skickar dess e-post.",
     "whoHeading": "Vem som är ansvarig",
@@ -138,7 +138,7 @@
     "rightsAsk": "För allt annat, till exempel att begära att uppgifterna inte används medan ett fel rättas, eller att invända mot hur de används, skriv till <mail>privacy@glazecalcapp.com</mail>. Det är gratis, och du får svar inom en månad. Du blir bara ombedd att visa att kontot är ditt, genom att logga in eller öppna en länk som skickas till kontots adress, aldrig att visa legitimation.",
     "rightsComplain": "Om du inte är nöjd kan du klaga hos en dataskyddsmyndighet: i EU hos <edpb>myndigheten i ditt land</edpb> och i Storbritannien hos <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Kakor och lagring i webbläsaren",
-    "storageIntro": "Glazecalc sätter två cookies, den andra bara medan du loggar in med Google, GitHub eller Microsoft, och sparar några små värden i webbläsaren. Var och en finns för något du har bett om: att förbli inloggad, att logga in med Google, GitHub eller Microsoft, eller att komma ihåg ett val du har gjort. Ingen spårar dig och ingen delas, så lagen kräver inte att vi frågar först, och det finns ingen cookiebanner.",
+    "storageIntro": "Glazecalc sätter två cookies, den andra bara medan du loggar in med Google, GitHub eller Microsoft. I webbläsaren sparar den också några små värden, appens text för användning utan internet och, bara om du slår på det, en kopia av dina poster. Var och en finns för något du har bett om: att förbli inloggad, att logga in med Google, GitHub eller Microsoft, att komma ihåg ett val du har gjort eller att använda appen utan internet. Ingen spårar dig och ingen delas, så lagen kräver inte att vi frågar först, och det finns ingen cookiebanner.",
     "storageLabel": "Kakor och lagring i webbläsaren",
     "storageName": "Namn",
     "storagePurpose": "Vad den används till",
@@ -146,8 +146,18 @@
     "storageCookie": "Kaka",
     "storageLocal": "Lokal lagring",
     "storageSession": "Sessionslagring",
-    "storageNote": "Allt detta går att rensa i webbläsarens inställningar när som helst. När kontot raderas tas anteckningen om inloggning och varje inställning som sparats här bort.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Cachelagring",
+    "storageNote": "Allt detta går att rensa i webbläsarens inställningar när som helst. När kontot raderas tas anteckningen om inloggning, varje inställning som sparats här och kopian av dina poster bort.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Bara om du slår på ”Behåll mina poster på den här enheten” på kontosidan: en kopia av dina recept, råvaror, tillsatser, bränningar, anteckningar, inställningar och priser, så att de öppnas utan internet. <code>offlineRecords</code> noterar att du har slagit på det. Kopian stannar i den här webbläsaren på den här enheten och skickas aldrig någonstans. Glazecalc krypterar den inte; den skyddas bara av webbläsaren, som håller varje webbplats lagring åtskild, och av enhetens egen kryptering, om den har sådan.",
+        "lasts": "Tills du slår av det, loggar ut eller sessionen tar slut. En kopia på en annan enhet tas bort nästa gång den enheten ansluter till Glazecalc, eller när du loggar ut där."
+      },
+      "offlineFiles": {
+        "purpose": "Appens text och guider på ditt språk och på engelska, så att sidor öppnas utan internet, samt vilket språk som sparades och när. Inga personuppgifter.",
+        "lasts": "Tills du rensar webbläsarens lagring. Sparas igen en gång om dagen; ett annat språks filer tas bort när du byter språk."
+      },
       "cookie": {
         "purpose": "Håller dig inloggad. Den innehåller inloggningstoken. Skript på sidan kan inte läsa den, och webbläsaren skickar den bara till den egna servern för Glazecalc, via HTTPS, och aldrig med en förfrågan som börjar på en annan webbplats.",
         "lasts": "Sätts vid inloggning, när ett konto skapas eller när en provperiod startas. Tills webbläsaren stängs, eller i 7 dagar om rutan Håll mig inloggad på den här enheten är ikryssad; 14 dagar för en provperiod. Utloggning tar bort den."

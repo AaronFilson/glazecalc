@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Nzuzo",
-    "lead": "Emelitere ikpeazụ n'Ọktoba 2026.",
+    "lead": "Emelitere ikpeazụ na Nọvemba 2026.",
     "shortHeading": "Na nkenke",
     "short": "Glazecalc na-edebe ihe ọ chọrọ iji rụọ akaụntụ gị, ọ dịghị ihe ọzọ. Enweghị mgbasa ozi, enweghị nyocha, enweghị nsochi. A dịghị ere data gị, naanị ụlọ ọrụ na-ejikwa ya bụ Amazon Web Services, nke na-ebu saịtị ahụ ma na-eziga email ya.",
     "whoHeading": "Onye nwe ọrụ ahụ",
@@ -138,7 +138,7 @@
     "rightsAsk": "Maka ihe ọ bụla ọzọ, dịka ịrịọ ka a kwụsị iji data gị mgbe a na-edozi njehie, ma ọ bụ ịjụ otu e si eji ya, dee na <mail>privacy@glazecalcapp.com</mail>. Ọ bụ n'efu, ị ga-enwetakwa azịza n'ime otu ọnwa. A ga-arịọ gị naanị igosi na akaụntụ ahụ bụ nke gị, site n'ịbanye ma ọ bụ imepe njikọ e zigara adreesị ya, ọ dịghị mgbe maka akwụkwọ njirimara.",
     "rightsComplain": "Ọ bụrụ na afọ adịghị gị ojuju, ị nwere ike ime mkpesa nye ọchịchị nchekwa data: na EU, <edpb>ọchịchị dị na mba gị</edpb>, na na UK, <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Kuki na nchekwa brawza",
-    "storageIntro": "Glazecalc na-etinye kuki abụọ, nke abụọ naanị mgbe ị na-abanye site na Google, GitHub ma ọ bụ Microsoft, ma na-edebe obere ụkpụrụ ole na ole na brawza gị. Nke ọ bụla dị maka ihe ị rịọrọ: ịnọ n'ime akaụntụ, ịbanye site na Google, GitHub ma ọ bụ Microsoft, ma ọ bụ icheta nhọrọ i mere. Ọ dịghị nke na-esochi gị, ọ dịghịkwa nke a na-ekerịta, ya mere iwu achọghị ka a jụọ mbụ, enweghịkwa ọkọlọtọ kuki.",
+    "storageIntro": "Glazecalc na-etinye kuki abụọ, nke abụọ naanị mgbe ị na-abanye site na Google, GitHub ma ọ bụ Microsoft. Na brawza gị, ọ na-edebekwa obere ụkpụrụ ole na ole, ederede ngwa ahụ maka iji ya n'enweghị ịntanetị, na, naanị ma ọ bụrụ na ị gbanyere ya, mbipụta ndekọ gị. Nke ọ bụla dị maka ihe ị rịọrọ: ịnọ n'ime akaụntụ, ịbanye site na Google, GitHub ma ọ bụ Microsoft, icheta nhọrọ i mere, ma ọ bụ iji ngwa ahụ n'enweghị ịntanetị. Ọ dịghị nke na-esochi gị, ọ dịghịkwa nke a na-ekerịta, ya mere iwu achọghị ka a jụọ mbụ, enweghịkwa ọkọlọtọ kuki.",
     "storageLabel": "Kuki na nchekwa brawza",
     "storageName": "Aha",
     "storagePurpose": "Ihe ọ bụ maka ya",
@@ -146,8 +146,18 @@
     "storageCookie": "Kuki",
     "storageLocal": "Nchekwa mpaghara",
     "storageSession": "Nchekwa nnọkọ",
-    "storageNote": "Ị nwere ike ihicha nke ọ bụla n'ime ndị a na ntọala brawza gị oge ọ bụla. Ihichapụ akaụntụ gị na-ewepụ ndetu mbanye na ntọala ọ bụla e debere ebe a.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Nchekwa cache",
+    "storageNote": "Ị nwere ike ihicha nke ọ bụla n'ime ndị a na ntọala brawza gị oge ọ bụla. Ihichapụ akaụntụ gị na-ewepụ ndetu mbanye, ntọala ọ bụla e debere ebe a na mbipụta ndekọ gị.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Naanị ma ọ bụrụ na ị gbanye \"Debe ndekọ m na ngwaọrụ a\" na ibe akaụntụ gị: mbipụta usoro glaze gị, ihe eji arụ ọrụ, ihe mgbakwunye, ịgba ọkụ, ndetu, ntọala na ọnụahịa, ka ha mepee n'enweghị ịntanetị. <code>offlineRecords</code> na-edeba na ị gbanyere ya. Mbipụta ahụ na-anọ na brawza a na ngwaọrụ a, a naghịkwa ezipụ ya ebe ọ bụla. Glazecalc anaghị ezo ya (encrypt); naanị brawza gị na-echebe ya, nke na-ekewa nchekwa saịtị ọ bụla, na nzuzo nke ngwaọrụ gị n'onwe ya, ma ọ bụrụ na o nwere ya.",
+        "lasts": "Ruo mgbe ị gbanyụrụ ya, pụọ, ma ọ bụ nnọkọ gị gwụ. A na-ewepụ mbipụta dị na ngwaọrụ ọzọ mgbe ngwaọrụ ahụ jikọrọ na Glazecalc ọzọ, ma ọ bụ mgbe ị pụrụ n'ebe ahụ."
+      },
+      "offlineFiles": {
+        "purpose": "Ederede na ntuziaka ngwa ahụ n'asụsụ gị na n'asụsụ Bekee, ka ibe mepee n'enweghị ịntanetị, na asụsụ e chekwara na mgbe e chekwara ya. Enweghị data nkeonwe.",
+        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị. A na-echekwa ya ọzọ otu ugboro kwa ụbọchị; a na-ewepụ faịlụ asụsụ ọzọ mgbe ị gbanwere asụsụ."
+      },
       "cookie": {
         "purpose": "Na-eme ka ị nọrọ n'ime akaụntụ. O nwere token mbanye gị. Script dị na ibe ahụ enweghị ike ịgụ ya, brawza gị na-ezigakwa ya naanị na sava Glazecalc n'onwe ya, site na HTTPS, ọ dịghịkwa mgbe ya na arịrịọ malitere na saịtị ọzọ.",
         "lasts": "A na-etinye ya mgbe ị banyere, mepụta akaụntụ ma ọ bụ malite nnwale. Ruo mgbe ị mechiri brawza gị, ma ọ bụ ruo ụbọchị 7 ma ọ bụrụ na ị kara \"Mee ka m nọrọ n'ime akaụntụ na ngwaọrụ a\"; ụbọchị 14 maka nnwale. Ịpụ na-ewepụ ya."

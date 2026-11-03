@@ -87,11 +87,16 @@
     "language": "Luqadda:"
   },
   "offline": {
-    "languageNotSaved": "Luqaddan kuma kaydsana taleefankan. Ku xir internetka si aad u isticmaasho.",
+    "languageNotSaved": "Luqaddan kuma kaydsana qalabkan. Ku xir internetka si aad u isticmaasho.",
     "updateReady": "Nooc cusub oo Glazecalc ah ayaa diyaar ah.",
     "reload": "Dib u soo rar",
     "dismiss": "Hadda maya",
-    "install": "Ku rakib app-ka"
+    "install": "Ku rakib app-ka",
+    "recordsSwitch": "Diiwaannadayda ku hay qalabkan si ay u furmaan internet la'aan",
+    "recordsHint": "Kaliya qalab adiga keligaa isticmaasho. Waa la saaraa markaad ka baxdo.",
+    "recordsBanner": "Glazecalc lama gaari karo. Waxaa la muujinayaa nuqulka lagu kaydiyay qalabkan {date}.",
+    "recordsNotSaved": "Diiwaannadaadu kuma kaydsana qalabkan. Ku xir internetka si aad u aragto. Waxaad tan ka shidi kartaa akoonkaaga.",
+    "recordsNotKept": "Browser-kani ma hayn doono nuqul (daalacasho gaar ah ama meel la'aan)."
   },
   "picker": {
     "results": "{count, plural, one {# ayaa u dhigma} other {# ayaa u dhigma}}",

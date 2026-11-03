@@ -87,11 +87,16 @@
     "language": "Bahasa:"
   },
   "offline": {
-    "languageNotSaved": "Bahasa ini tidak tersimpan di ponsel ini. Sambungkan ke internet untuk memakainya.",
+    "languageNotSaved": "Bahasa ini tidak tersimpan di perangkat ini. Sambungkan ke internet untuk memakainya.",
     "updateReady": "Versi baru Glazecalc sudah siap.",
     "reload": "Muat ulang",
     "dismiss": "Jangan sekarang",
-    "install": "Pasang aplikasi"
+    "install": "Pasang aplikasi",
+    "recordsSwitch": "Simpan data saya di perangkat ini agar bisa dibuka tanpa internet",
+    "recordsHint": "Hanya di perangkat yang Anda pakai sendiri. Dihapus saat Anda keluar.",
+    "recordsBanner": "Glazecalc tidak dapat dijangkau. Menampilkan salinan yang disimpan di perangkat ini pada {date}.",
+    "recordsNotSaved": "Data Anda tidak tersimpan di perangkat ini. Sambungkan ke internet untuk melihatnya. Anda dapat mengaktifkan ini di akun Anda.",
+    "recordsNotKept": "Peramban ini tidak akan menyimpan salinan (penjelajahan pribadi atau ruang tidak cukup)."
   },
   "picker": {
     "results": "{count, plural, other {# hasil}}",

@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Ubumfihlo",
-    "lead": "Kubuyekezwe okokugcina ngo-Okthoba 2026.",
+    "lead": "Kubuyekezwe okokugcina ngo-Novemba 2026.",
     "shortHeading": "Ngamafuphi",
     "short": "I-Glazecalc igcina lokho ekudingayo ukuze iqhube i-akhawunti yakho, hhayi okunye. Azikho izikhangiso, akukho ukuhlaziywa futhi akukho ukulandelelwa. Imininingwane yakho ayilokothi ithengiswe, futhi okuwukuphela kwenkampani eyiphathayo yi-Amazon Web Services, ephethe isayithi futhi ithumela ama-imeyili ayo.",
     "whoHeading": "Ubani obhekele",
@@ -138,7 +138,7 @@
     "rightsAsk": "Kunoma yini enye, njengokucela ukuthi imininingwane yakho ingasetshenziswa ngenkathi iphutha lilungiswa, noma ukuphikisa indlela esetshenziswa ngayo, bhalela ku-<mail>privacy@glazecalcapp.com</mail>. Kumahhala, futhi uzothola impendulo kungakapheli inyanga. Uzocelwa kuphela ukubonisa ukuthi i-akhawunti ngeyakho, ngokungena noma ngokuvula isixhumanisi esithunyelwe ekhelini layo, hhayi i-ID.",
     "rightsComplain": "Uma unganelisekile, ungakhalaza kwisiphathimandla sokuvikelwa kwemininingwane: e-EU, <edpb>isiphathimandla sezwe lakho</edpb>, nase-UK, i-<ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Ama-cookie nesitoreji sesiphequluli",
-    "storageIntro": "I-Glazecalc isetha ama-cookie amabili, elesibili kuphela ngenkathi ungena nge-Google, i-GitHub noma i-Microsoft, futhi igcina amanani ambalwa amancane kusiphequluli sakho. Ngalinye lilapho ngenxa yokuthile okucelile: ukuhlala ungenile, ukungena nge-Google, i-GitHub noma i-Microsoft, noma ukukhumbula ukukhetha okwenzile. Akukho elikulandelelayo futhi akukho elabiwayo, ngakho umthetho awudingi ukuthi kubuzwe kuqala, futhi alikho ibhanela lama-cookie.",
+    "storageIntro": "I-Glazecalc isetha ama-cookie amabili, elesibili kuphela ngenkathi ungena nge-Google, i-GitHub noma i-Microsoft. Kusiphequluli sakho igcina futhi amanani ambalwa amancane, umbhalo wohlelo wokusetshenziswa ngaphandle kwe-inthanethi, futhi, kuphela uma ukuvulile, ikhophi yamarekhodi akho. Ngalinye lilapho ngenxa yokuthile okucelile: ukuhlala ungenile, ukungena nge-Google, i-GitHub noma i-Microsoft, ukukhumbula ukukhetha okwenzile, noma ukusebenzisa uhlelo ngaphandle kwe-inthanethi. Akukho elikulandelelayo futhi akukho elabiwayo, ngakho umthetho awudingi ukuthi kubuzwe kuqala, futhi alikho ibhanela lama-cookie.",
     "storageLabel": "Ama-cookie nesitoreji sesiphequluli",
     "storageName": "Igama",
     "storagePurpose": "Kungokwani",
@@ -146,8 +146,18 @@
     "storageCookie": "I-cookie",
     "storageLocal": "Isitoreji sendawo",
     "storageSession": "Isitoreji sesikhathi",
-    "storageNote": "Ungasula noma yikuphi kwalokhu ezilungiselelweni zesiphequluli sakho noma nini. Ukusula i-akhawunti yakho kususa inothi lokungena nesilungiselelo ngasinye esigcinwe lapha.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Isitoreji se-cache",
+    "storageNote": "Ungasula noma yikuphi kwalokhu ezilungiselelweni zesiphequluli sakho noma nini. Ukusula i-akhawunti yakho kususa inothi lokungena, isilungiselelo ngasinye esigcinwe lapha nekhophi yamarekhodi akho.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Kuphela uma uvula okuthi \"Gcina amarekhodi ami kule divayisi\" ekhasini lakho le-akhawunti: ikhophi yamaresiphi akho, okokwakha, izithasiselo, ukushisa, amanothi, izilungiselelo namanani, ukuze avuleke ngaphandle kwe-inthanethi. <code>offlineRecords</code> iqopha ukuthi ukuvulile lokhu. Ikhophi ihlala kulesi siphequluli kule divayisi futhi ayithunyelwa ndawo nanini. I-Glazecalc ayiyibetheli; ivikelwa kuphela isiphequluli sakho, esihlukanisa isitoreji sesayithi ngalinye, nokubethela kwedivayisi yakho uqobo, uma inakho.",
+        "lasts": "Kuze kube yilapho ukuvala, uphuma, noma isikhathi sakho siphela. Ikhophi kwenye idivayisi iyasuswa uma leyo divayisi ixhuma ku-Glazecalc ngokulandelayo, noma uma uphuma lapho."
+      },
+      "offlineFiles": {
+        "purpose": "Umbhalo nemihlahlandlela yohlelo ngolimi lwakho nangesiNgisi, ukuze amakhasi avuleke ngaphandle kwe-inthanethi, nokuthi yiluphi ulimi olulondoloziwe nokuthi nini. Ayikho imininingwane yomuntu siqu.",
+        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho. Kulondolozwa futhi kanye ngosuku; amafayela olunye ulimi ayasuswa uma ushintsha ulimi."
+      },
       "cookie": {
         "purpose": "Ikugcina ungenile. Iphethe i-token yakho yokungena. Izikripthi ekhasini azikwazi ukuyifunda, futhi isiphequluli sakho siyithumela kuphela kuseva ye-Glazecalc uqobo, nge-HTTPS, futhi asilokothi siyithumele nesicelo esiqala kwelinye isayithi.",
         "lasts": "Isethwa uma ungena, uvula i-akhawunti noma uqala ukuzama. Kuze kube yilapho uvala isiphequluli sakho, noma izinsuku ezingu-7 uma uthikha okuthi \"Ngigcine ngingenile kule divayisi\"; izinsuku ezingu-14 ekuzameni. Ukuphuma kuyayisusa."

@@ -87,11 +87,16 @@
     "language": "Ngôn ngữ:"
   },
   "offline": {
-    "languageNotSaved": "Ngôn ngữ này chưa được lưu trên điện thoại này. Hãy kết nối internet để dùng.",
+    "languageNotSaved": "Ngôn ngữ này chưa được lưu trên thiết bị này. Hãy kết nối internet để dùng.",
     "updateReady": "Đã có phiên bản mới của Glazecalc.",
     "reload": "Tải lại",
     "dismiss": "Để sau",
-    "install": "Cài đặt ứng dụng"
+    "install": "Cài đặt ứng dụng",
+    "recordsSwitch": "Giữ bản ghi của tôi trên thiết bị này để mở được khi không có internet",
+    "recordsHint": "Chỉ dùng trên thiết bị mà chỉ mình bạn sử dụng. Bị xóa khi bạn đăng xuất.",
+    "recordsBanner": "Không thể kết nối tới Glazecalc. Đang hiển thị bản sao đã lưu trên thiết bị này vào {date}.",
+    "recordsNotSaved": "Bản ghi của bạn chưa được lưu trên thiết bị này. Hãy kết nối internet để xem. Bạn có thể bật tính năng này trong tài khoản của mình.",
+    "recordsNotKept": "Trình duyệt này sẽ không giữ bản sao (đang duyệt web riêng tư hoặc hết dung lượng)."
   },
   "picker": {
     "results": "{count, plural, other {# kết quả}}",

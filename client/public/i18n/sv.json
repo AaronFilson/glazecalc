@@ -87,11 +87,16 @@
     "language": "Språk:"
   },
   "offline": {
-    "languageNotSaved": "Det här språket är inte sparat på den här telefonen. Anslut till internet för att använda det.",
+    "languageNotSaved": "Det här språket är inte sparat på den här enheten. Anslut till internet för att använda det.",
     "updateReady": "En ny version av Glazecalc är klar.",
     "reload": "Läs in igen",
     "dismiss": "Inte nu",
-    "install": "Installera appen"
+    "install": "Installera appen",
+    "recordsSwitch": "Behåll mina poster på den här enheten så att de öppnas utan internet",
+    "recordsHint": "Bara på en enhet som endast du använder. Tas bort när du loggar ut.",
+    "recordsBanner": "Det går inte att nå Glazecalc. Visar kopian som sparades på den här enheten {date}.",
+    "recordsNotSaved": "Dina poster är inte sparade på den här enheten. Anslut till internet för att se dem. Du kan slå på det här på ditt konto.",
+    "recordsNotKept": "Den här webbläsaren sparar ingen kopia (privat surfning eller inget utrymme)."
   },
   "picker": {
     "results": "{count, plural, one {# träff} other {# träffar}}",

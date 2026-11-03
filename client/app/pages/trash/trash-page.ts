@@ -5,6 +5,7 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from '../../core/api-base';
 import { errorMessage } from '../../core/error-message';
+import { OfflineRecords } from '../../core/offline-records';
 import { Busy } from '../../shared/busy';
 import { DatePipe } from '../../shared/format-pipes';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -69,7 +70,8 @@ const OTHER_KIND = marker('notebook.trash.kinds.other');
                   type="button"
                   class="btn btn-outline-primary btn-sm"
                   [attr.aria-label]="t('notebook.trash.putBackName', { name: nameOf(entry) })"
-                  [attr.aria-disabled]="pending().has(entry._id) || null"
+                  [attr.aria-disabled]="pending().has(entry._id) || offlineRecords.readOnly() || null"
+                  [attr.title]="offlineRecords.note()"
                   (click)="putBack(entry)"
                 >
                   {{ t('notebook.trash.putBack') }}
@@ -167,6 +169,7 @@ export class TrashPage implements OnInit {
   private readonly injector = inject(Injector);
 
   protected readonly notices = new Notices();
+  protected readonly offlineRecords = inject(OfflineRecords);
   protected readonly entries = signal<TrashEntry[]>([]);
   /** The list has been asked for: until then, "The Trash is empty" would be premature. */
   protected readonly loaded = signal(false);
@@ -197,6 +200,11 @@ export class TrashPage implements OnInit {
   }
 
   protected async putBack(entry: TrashEntry): Promise<void> {
+    // Offline, showing the copy kept on this device: nothing can be put back (core/offline-records.ts).
+    if (this.offlineRecords.readOnly()) {
+      this.notices.error(this.offlineRecords.note() ?? '');
+      return;
+    }
     if (!this.start(entry)) return;
     const name = this.nameOf(entry);
     try {

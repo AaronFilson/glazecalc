@@ -87,11 +87,16 @@
     "language": "Èdè:"
   },
   "offline": {
-    "languageNotSaved": "A kò fi èdè yìí pamọ́ sórí fóònù yìí. Ẹ so mọ́ íńtánẹ́ẹ̀tì láti lò ó.",
+    "languageNotSaved": "A kò fi èdè yìí pamọ́ sórí ẹ̀rọ yìí. Ẹ so mọ́ íńtánẹ́ẹ̀tì láti lò ó.",
     "updateReady": "Ẹ̀yà tuntun Glazecalc ti ṣetán.",
     "reload": "Tún ṣí i",
     "dismiss": "Kì í ṣe báyìí",
-    "install": "Fi app sí i"
+    "install": "Fi app sí i",
+    "recordsSwitch": "Pa àwọn àkọsílẹ̀ mi mọ́ sórí ẹ̀rọ yìí kí wọ́n lè ṣí láìsí íńtánẹ́ẹ̀tì",
+    "recordsHint": "Kìkì lórí ẹ̀rọ tí ẹ̀yin nìkan ń lò. A ó yọ ọ́ kúrò nígbà tí ẹ bá jáde.",
+    "recordsBanner": "A kò lè dé Glazecalc. À ń fi ẹ̀dà tí a pa mọ́ sórí ẹ̀rọ yìí ní {date} hàn.",
+    "recordsNotSaved": "A kò pa àwọn àkọsílẹ̀ yín mọ́ sórí ẹ̀rọ yìí. Ẹ so mọ́ íńtánẹ́ẹ̀tì láti rí wọn. Ẹ lè tan èyí nínú àkáǹtì yín.",
+    "recordsNotKept": "Browser yìí kò ní pa ẹ̀dà mọ́ (lílọ kiri ní ìkọ̀kọ̀ tàbí kò sí àyè)."
   },
   "picker": {
     "results": "{count, plural, other {Ohun # ló bá a mu}}",

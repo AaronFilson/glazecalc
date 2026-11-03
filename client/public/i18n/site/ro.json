@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Confidențialitate",
-    "lead": "Ultima actualizare: octombrie 2026.",
+    "lead": "Ultima actualizare: noiembrie 2026.",
     "shortHeading": "Pe scurt",
     "short": "Glazecalc păstrează ce îi trebuie pentru funcționarea contului și nimic mai mult. Nu există reclame, instrumente de analiză sau urmărire. Datele dumneavoastră nu se vând niciodată, iar singura companie care le prelucrează este Amazon Web Services, care găzduiește site-ul și trimite e-mailurile acestuia.",
     "whoHeading": "Cine este responsabil",
@@ -138,7 +138,7 @@
     "rightsAsk": "Pentru orice altceva, cum ar fi să cereți ca datele să nu fie folosite cât timp se corectează o greșeală sau să vă opuneți modului în care sunt folosite, scrieți la <mail>privacy@glazecalcapp.com</mail>. Este gratuit și veți primi un răspuns în termen de o lună. Vi se va cere doar să arătați că acel cont vă aparține, conectându-vă sau deschizând un link trimis la adresa contului, niciodată un act de identitate.",
     "rightsComplain": "Dacă răspunsul nu vă mulțumește, puteți depune o plângere la o autoritate pentru protecția datelor: în UE, la <edpb>autoritatea din țara dumneavoastră</edpb>, iar în Regatul Unit, la <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookie-uri și stocarea în browser",
-    "storageIntro": "Glazecalc setează două cookie-uri, al doilea numai cât timp vă conectați cu Google, GitHub sau Microsoft, și păstrează câteva valori mici în browser. Fiecare există pentru ceva ce ați cerut: să rămâneți conectat, să vă conectați cu Google, GitHub sau Microsoft ori să se rețină o alegere făcută de dumneavoastră. Niciunul nu vă urmărește și niciunul nu este împărtășit, așa că legea nu cere să întrebăm mai întâi și nu există un banner pentru cookie-uri.",
+    "storageIntro": "Glazecalc setează două cookie-uri, al doilea numai cât timp vă conectați cu Google, GitHub sau Microsoft. În browser păstrează și câteva valori mici, textul aplicației pentru folosire fără internet și, numai dacă activați această opțiune, o copie a înregistrărilor dumneavoastră. Fiecare există pentru ceva ce ați cerut: să rămâneți conectat, să vă conectați cu Google, GitHub sau Microsoft, să se rețină o alegere făcută de dumneavoastră ori să folosiți aplicația fără internet. Niciunul nu vă urmărește și niciunul nu este împărtășit, așa că legea nu cere să întrebăm mai întâi și nu există un banner pentru cookie-uri.",
     "storageLabel": "Cookie-uri și stocarea în browser",
     "storageName": "Denumire",
     "storagePurpose": "La ce folosește",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Stocare locală",
     "storageSession": "Stocare de sesiune",
-    "storageNote": "Le puteți șterge oricând din setările browserului. Ștergerea contului elimină nota privind conectarea și toate setările păstrate aici.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Stocare cache",
+    "storageNote": "Le puteți șterge oricând din setările browserului. Ștergerea contului elimină nota privind conectarea, toate setările păstrate aici și copia înregistrărilor dumneavoastră.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Numai dacă activați „Păstrați înregistrările mele pe acest dispozitiv” pe pagina contului: o copie a rețetelor, materialelor, aditivilor, arderilor, notelor, setărilor și prețurilor dumneavoastră, ca să se deschidă fără internet. <code>offlineRecords</code> notează că ați activat opțiunea. Copia rămâne în acest browser, pe acest dispozitiv, și nu este trimisă niciodată nicăieri. Glazecalc nu o criptează; este protejată numai de browser, care ține separată stocarea fiecărui site, și de criptarea proprie a dispozitivului, dacă o are.",
+        "lasts": "Până când o dezactivați, vă deconectați sau sesiunea se încheie. O copie de pe alt dispozitiv este eliminată când acel dispozitiv se conectează din nou la Glazecalc sau când vă deconectați acolo."
+      },
+      "offlineFiles": {
+        "purpose": "Textul și ghidurile aplicației în limba dumneavoastră și în engleză, ca paginile să se deschidă fără internet, precum și ce limbă a fost salvată și când. Fără date personale.",
+        "lasts": "Până când ștergeți stocarea browserului. Se salvează din nou o dată pe zi; fișierele altei limbi sunt eliminate când schimbați limba."
+      },
       "cookie": {
         "purpose": "Menține conectarea. Conține tokenul de conectare. Scripturile din pagină nu îl pot citi, iar browserul îl trimite numai la serverul propriu al aplicației Glazecalc, prin HTTPS, și niciodată cu o cerere care pornește de pe alt site.",
         "lasts": "Se setează când vă conectați, creați un cont sau începeți o perioadă de probă. Rămâne până când închideți browserul sau 7 zile dacă bifați „Păstrați conectarea pe acest dispozitiv”; 14 zile pentru o perioadă de probă. Deconectarea îl elimină."

@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Faragha",
-    "lead": "Ilisasishwa mara ya mwisho Oktoba 2026.",
+    "lead": "Ilisasishwa mara ya mwisho Novemba 2026.",
     "shortHeading": "Kwa ufupi",
     "short": "Glazecalc huhifadhi tu kinachohitajika kuendesha akaunti yako, na si zaidi. Hakuna matangazo, uchanganuzi wala ufuatiliaji. Data yako haiuzwi kamwe, na kampuni pekee inayoishughulikia ni Amazon Web Services, ambayo huendesha tovuti na kutuma barua pepe zake.",
     "whoHeading": "Nani anawajibika",
@@ -138,7 +138,7 @@
     "rightsAsk": "Kwa jambo lolote jingine, kama kuomba data yako izuiwe kutumika wakati kosa linarekebishwa, au kupinga jinsi inavyotumiwa, andika kwa <mail>privacy@glazecalcapp.com</mail>. Ni bure, nawe utapata jibu ndani ya mwezi mmoja. Utaombwa tu kuthibitisha kuwa akaunti ni yako, kwa kuingia au kwa kufungua kiungo kilichotumwa kwa anwani yake, kamwe si kitambulisho.",
     "rightsComplain": "Usiporidhika, unaweza kulalamika kwa mamlaka ya ulinzi wa data: katika EU, <edpb>mamlaka ya nchi yako</edpb>, na katika UK, <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Kuki na hifadhi ya kivinjari",
-    "storageIntro": "Glazecalc huweka kuki mbili, ya pili tu unapoingia kwa Google, GitHub au Microsoft, na huhifadhi thamani chache ndogo kwenye kivinjari chako. Kila moja ipo kwa jambo ulilolitaka: kubaki umeingia, kuingia kwa Google, GitHub au Microsoft, au kukumbuka chaguo ulilofanya. Hakuna inayokufuatilia wala kushirikiwa, kwa hiyo sheria haihitaji kuuliza kwanza, na hakuna bango la kuki.",
+    "storageIntro": "Glazecalc huweka kuki mbili, ya pili tu unapoingia kwa Google, GitHub au Microsoft. Kwenye kivinjari chako pia huhifadhi thamani chache ndogo, maandishi ya programu kwa matumizi bila intaneti, na, ikiwa tu utawasha hili, nakala ya rekodi zako. Kila moja ipo kwa jambo ulilolitaka: kubaki umeingia, kuingia kwa Google, GitHub au Microsoft, kukumbuka chaguo ulilofanya, au kutumia programu bila intaneti. Hakuna inayokufuatilia wala kushirikiwa, kwa hiyo sheria haihitaji kuuliza kwanza, na hakuna bango la kuki.",
     "storageLabel": "Kuki na hifadhi ya kivinjari",
     "storageName": "Jina",
     "storagePurpose": "Ni kwa ajili ya nini",
@@ -146,8 +146,18 @@
     "storageCookie": "Kuki",
     "storageLocal": "Hifadhi ya ndani",
     "storageSession": "Hifadhi ya kipindi",
-    "storageNote": "Unaweza kufuta yoyote kati ya hizi kwenye mipangilio ya kivinjari chako wakati wowote. Kufuta akaunti yako huondoa kumbukumbu ya kuingia na kila mpangilio uliohifadhiwa hapa.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Hifadhi ya akiba (cache)",
+    "storageNote": "Unaweza kufuta yoyote kati ya hizi kwenye mipangilio ya kivinjari chako wakati wowote. Kufuta akaunti yako huondoa kumbukumbu ya kuingia, kila mpangilio uliohifadhiwa hapa na nakala ya rekodi zako.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Ikiwa tu utawasha “Hifadhi rekodi zangu kwenye kifaa hiki” kwenye ukurasa wa akaunti yako: nakala ya vichocheo vyako, malighafi, viongezi, uchomaji, maelezo, mipangilio na bei, ili zifunguke bila intaneti. <code>offlineRecords</code> huonyesha kwamba uliwasha hili. Nakala hubaki kwenye kivinjari hiki kwenye kifaa hiki na haitumwi popote kamwe. Glazecalc haiisimbi fiche; inalindwa tu na kivinjari chako, kinachotenganisha hifadhi ya kila tovuti, na usimbaji fiche wa kifaa chako chenyewe, ikiwa kinao.",
+        "lasts": "Hadi uzime hili, utoke, au kipindi chako kiishe. Nakala kwenye kifaa kingine huondolewa kifaa hicho kitakapounganishwa tena na Glazecalc, au utakapotoka huko."
+      },
+      "offlineFiles": {
+        "purpose": "Maandishi na miongozo ya programu katika lugha yako na kwa Kiingereza, ili kurasa zifunguke bila intaneti, na lugha ipi ilihifadhiwa na lini. Hakuna data binafsi.",
+        "lasts": "Hadi ufute hifadhi ya kivinjari chako. Huhifadhiwa tena mara moja kwa siku; faili za lugha nyingine huondolewa unapobadilisha lugha."
+      },
       "cookie": {
         "purpose": "Hukuweka umeingia. Inashikilia tokeni yako ya kuingia. Hati kwenye ukurasa haziwezi kuisoma, na kivinjari chako huituma tu kwa seva ya Glazecalc yenyewe, kupitia HTTPS, na kamwe pamoja na ombi linaloanzia tovuti nyingine.",
         "lasts": "Huwekwa unapoingia, unapofungua akaunti au kuanza jaribio. Hadi ufunge kivinjari chako, au siku 7 ukiweka alama kwenye “Niache nimeingia kwenye kifaa hiki”; siku 14 kwa jaribio. Kutoka huiondoa."

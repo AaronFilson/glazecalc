@@ -87,11 +87,16 @@
     "language": "Asụsụ:"
   },
   "offline": {
-    "languageNotSaved": "E chekwaghị asụsụ a na ekwentị a. Jikọọ na ịntanetị iji jiri ya.",
+    "languageNotSaved": "E chekwaghị asụsụ a na ngwaọrụ a. Jikọọ na ịntanetị iji jiri ya.",
     "updateReady": "Ụdị ọhụrụ nke Glazecalc adịla njikere.",
     "reload": "Bugharịa",
     "dismiss": "Ọ bụghị ugbu a",
-    "install": "Wụnye ngwa"
+    "install": "Wụnye ngwa",
+    "recordsSwitch": "Debe ndekọ m na ngwaọrụ a ka ha mepee n'enweghị ịntanetị",
+    "recordsHint": "Naanị na ngwaọrụ nke gị naanị na-eji. A na-ewepụ ha mgbe ị pụrụ.",
+    "recordsBanner": "Enweghị ike iru Glazecalc. A na-egosi mbipụta e chekwara na ngwaọrụ a na {date}.",
+    "recordsNotSaved": "E chekwaghị ndekọ gị na ngwaọrụ a. Jikọọ na ịntanetị iji hụ ha. Ị nwere ike ịgbanye nke a n'akaụntụ gị.",
+    "recordsNotKept": "Brawza a agaghị edebe mbipụta (nchọgharị nzuzo ma ọ bụ enweghị ohere)."
   },
   "picker": {
     "results": "{count, plural, other {Ihe # dabara}}",

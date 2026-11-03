@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { addButtonName, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const OLD_CELADON = [
   ['Custer Spar', 30],
@@ -141,9 +141,9 @@ test('says how a suggestion was made, and works it out again leaving one out or 
   // Materials to try, before working it out: added from the library, perhaps as a must.
   await page.getByRole('button', { name: 'Materials to try (0)' }).click();
   const tries = page.locator('.recipe-suggest .try-materials');
-  await tries.getByRole('button', { name: /^Standard/ }).click();
+  await tries.getByRole('button', { name: /^Standard \(/ }).click();
   await tries.getByRole('searchbox').fill('wollastonite');
-  await tries.getByRole('button', { name: 'Add Wollastonite (NYAD 400)' }).click();
+  await tries.getByRole('button', { name: addButtonName('Wollastonite (NYAD 400)') }).click();
   await expect(tries.locator('.try-list')).toContainText('Wollastonite (NYAD 400)');
   await expect(page.getByRole('button', { name: 'Materials to try (1)' })).toBeVisible();
   const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
@@ -160,7 +160,7 @@ test('says how a suggestion was made, and works it out again leaving one out or 
   expect(report1.violations.map((v) => v.id + ': ' + v.help)).toEqual([]);
 
   // Leave it out: worked out again from the recipe as it was, without it.
-  await feldspar.getByRole('button', { name: 'Leave out ' + usedName }).click();
+  await feldspar.getByRole('button', { name: 'Leave it out' }).click();
   await expect(report.getByRole('heading', { name: 'How the new recipe was made' })).toBeFocused();
   await expect(report).toContainText('Left out: ' + usedName + '.');
   await expect(report.locator('.swap-uses li b', { hasText: usedName })).toHaveCount(0);
@@ -193,9 +193,9 @@ test('makes a recipe from what is on hand, kept with the account for next time',
   await expect(page.locator('.recipe-shelf-status')).toHaveText('Saved with your account.');
   await page.getByRole('button', { name: 'Remove Custer Spar from your materials on hand' }).click();
   const library = page.locator('.recipe-shelf .library');
-  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('button', { name: /^Standard \(/ }).click();
   await library.getByRole('searchbox').fill('minspar');
-  await library.getByRole('button', { name: 'Add Minspar 200' }).click();
+  await library.getByRole('button', { name: addButtonName('Minspar 200') }).click();
   await expect(onHand).toContainText('Minspar 200');
   await expect(onHand).not.toContainText('Custer Spar');
   const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();

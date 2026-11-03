@@ -334,16 +334,19 @@ interface Result {
         <ul class="solve-uses">
           @for (use of r.solved.report.uses; track use.name) {
             <li>
-              <gc-rich
-                [text]="t('recipe.swapReport.use', { name: use.name, amount: use.amount, supplies: use.supplies })"
-              />{{ ' ' }}
+              <span [id]="'solve-use-' + $index"
+                ><gc-rich
+                  [text]="
+                    t('recipe.swapReport.use', { name: use.name, amount: use.amount, supplies: use.supplies })
+                  " /></span
+              >{{ ' ' }}
               @if (!use.needed) {
                 <span class="muted">{{ t('recipe.swapReport.nearlyAsGood') }}</span>
               }
               <button
                 type="button"
                 class="btn btn-link btn-sm"
-                [attr.aria-label]="t('recipe.swapReport.leaveOutName', { name: use.name })"
+                [attr.aria-describedby]="'solve-use-' + $index"
                 (click)="leaveOut(use.name)"
               >
                 {{ t('recipe.swapReport.leaveOut') }}
@@ -384,12 +387,7 @@ interface Result {
               <li>
                 <bdi>{{ help.name }}</bdi
                 >&ngsp;
-                <button
-                  type="button"
-                  class="btn btn-link btn-sm"
-                  [attr.aria-label]="t('recipe.swapReport.addName', { name: help.name })"
-                  (click)="mustUse(help.name)"
-                >
+                <button type="button" class="btn btn-link btn-sm" (click)="mustUse(help.name)">
                   {{ t('recipe.swapReport.add') }}
                 </button>
               </li>

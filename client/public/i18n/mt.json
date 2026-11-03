@@ -87,11 +87,16 @@
     "language": "Lingwa:"
   },
   "offline": {
-    "languageNotSaved": "Din il-lingwa mhix issejvjata fuq dan it-telefon. Qabbad mal-internet biex tużaha.",
+    "languageNotSaved": "Din il-lingwa mhix issejvjata fuq dan l-apparat. Qabbad mal-internet biex tużaha.",
     "updateReady": "Verżjoni ġdida ta’ Glazecalc hija lesta.",
     "reload": "Erġa’ ikkarga",
     "dismiss": "Mhux issa",
-    "install": "Installa l-app"
+    "install": "Installa l-app",
+    "recordsSwitch": "Żomm ir-rekords tiegħi fuq dan l-apparat biex jinfetħu mingħajr internet",
+    "recordsHint": "Biss fuq apparat li tużah int biss. Jitneħħew meta toħroġ.",
+    "recordsBanner": "Glazecalc ma jistax jintlaħaq. Qed tintwera l-kopja ssejvjata fuq dan l-apparat fil-{date}.",
+    "recordsNotSaved": "Ir-rekords tiegħek mhumiex issejvjati fuq dan l-apparat. Qabbad mal-internet biex tarahom. Tista’ tixgħel dan fil-kont tiegħek.",
+    "recordsNotKept": "Dan il-brawżer mhux se jżomm kopja (browsing privat jew m’hemmx spazju)."
   },
   "picker": {
     "results": "{count, plural, one {# riżultat} two {# riżultati} few {# riżultati} many {#-il riżultat} other {# riżultat}}",

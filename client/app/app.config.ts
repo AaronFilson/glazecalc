@@ -13,6 +13,7 @@ import { provideRouter, withInMemoryScrolling, withNavigationErrorHandler } from
 import { provideServiceWorker } from '@angular/service-worker';
 import { routes } from './app.routes';
 import { offlineFilesInterceptor } from './core/offline-files.interceptor';
+import { offlineRecordsInterceptor } from './core/offline-records.interceptor';
 import { sessionExpiredInterceptor } from './core/session-expired.interceptor';
 import { redirectLegacyHashUrl } from './core/legacy-hash-url';
 import { reloadIfCodeIsMissing } from './core/stale-build';
@@ -35,8 +36,12 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ anchorScrolling: 'enabled' }),
       withNavigationErrorHandler((error) => reloadIfCodeIsMissing(error))
     ),
-    // The translations and guides come from the copy the phone keeps when the network is gone.
-    provideHttpClient(withFetch(), withInterceptors([sessionExpiredInterceptor, offlineFilesInterceptor])),
+    // The translations and guides come from the copy the phone keeps when the network is gone, and so do the
+    // user's records if they asked for them to be kept (core/offline-records.ts).
+    provideHttpClient(
+      withFetch(),
+      withInterceptors([sessionExpiredInterceptor, offlineRecordsInterceptor, offlineFilesInterceptor])
+    ),
     // The prerendered pages are adopted, not drawn again. Only the translation and guide files go in the
     // page for the browser to reuse, so it makes no request for them before it hydrates. No event
     // replay: it needs an inline script, which the build cannot hash into the page's policy.

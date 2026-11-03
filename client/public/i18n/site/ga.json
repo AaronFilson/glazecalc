@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Príobháideachas",
-    "lead": "Nuashonraithe go deireanach: Deireadh Fómhair 2026.",
+    "lead": "Nuashonraithe go deireanach: Samhain 2026.",
     "shortHeading": "Go hachomair",
     "short": "Coinníonn Glazecalc a bhfuil ag teastáil chun do chuntas a reáchtáil, agus faic níos mó. Níl aon fhógraí, aon anailísíocht ná aon rianú ann. Ní dhíoltar do shonraí riamh, agus is é Amazon Web Services, a óstálann an suíomh agus a sheolann a ríomhphost, an t-aon chomhlacht a láimhseálann iad.",
     "whoHeading": "Cé atá freagrach",
@@ -138,7 +138,7 @@
     "rightsAsk": "Maidir le haon rud eile, mar shampla iarraidh nach n-úsáidfí do shonraí fad a bhíonn botún á cheartú, nó agóid a dhéanamh i gcoinne an chaoi a n-úsáidtear iad, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Tá sé saor in aisce, agus gheobhaidh tú freagra laistigh de mhí. Ní iarrfar ort ach a thaispeáint gur leatsa an cuntas, trí shíniú isteach nó trí nasc a sheoltar chuig a sheoladh a oscailt, agus ní iarrfar cárta aitheantais ort riamh.",
     "rightsComplain": "Mura bhfuil tú sásta, is féidir leat gearán a dhéanamh le húdarás cosanta sonraí: san Aontas Eorpach, <edpb>an t-údarás i do thír féin</edpb>, agus sa Ríocht Aontaithe, an <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Fianáin agus stóras brabhsálaí",
-    "storageIntro": "Socraíonn Glazecalc dhá fhianán, an dara ceann ach amháin nuair a shíníonn tú isteach le Google, GitHub nó Microsoft, agus coinníonn sé cúpla luach beag i do bhrabhsálaí. Tá gach ceann ann le haghaidh rud a d’iarr tú: fanacht sínithe isteach, síniú isteach le Google, GitHub nó Microsoft, nó rogha a rinne tú a mheabhrú. Ní rianaíonn aon cheann acu thú agus ní chomhroinntear aon cheann acu, mar sin ní éilíonn an dlí go n-iarrfaí ar dtús, agus níl aon bhratach fianán ann.",
+    "storageIntro": "Socraíonn Glazecalc dhá fhianán, an dara ceann ach amháin fad atá tú ag síniú isteach le Google, GitHub nó Microsoft. I do bhrabhsálaí coinníonn sé freisin cúpla luach beag, téacs na haipe le húsáid gan idirlíon, agus, ach amháin má chasann tú air é, cóip de do thaifid. Tá gach ceann ann le haghaidh rud a d’iarr tú: fanacht sínithe isteach, síniú isteach le Google, GitHub nó Microsoft, rogha a rinne tú a mheabhrú, nó an aip a úsáid gan idirlíon. Ní rianaíonn aon cheann acu thú agus ní chomhroinntear aon cheann acu, mar sin ní éilíonn an dlí go n-iarrfaí ar dtús, agus níl aon bhratach fianán ann.",
     "storageLabel": "Fianáin agus stóras brabhsálaí",
     "storageName": "Ainm",
     "storagePurpose": "Cad chuige é",
@@ -146,8 +146,18 @@
     "storageCookie": "Fianán",
     "storageLocal": "Stóras logánta",
     "storageSession": "Stóras seisiúin",
-    "storageNote": "Is féidir leat aon cheann díobh seo a ghlanadh i socruithe do bhrabhsálaí am ar bith. Nuair a scriosann tú do chuntas, baintear an nóta sínithe isteach agus gach socrú a choinnítear anseo.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Stóras taisce",
+    "storageNote": "Is féidir leat aon cheann díobh seo a ghlanadh i socruithe do bhrabhsálaí am ar bith. Nuair a scriosann tú do chuntas, baintear an nóta sínithe isteach, gach socrú a choinnítear anseo agus an chóip de do thaifid.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Ach amháin má chasann tú air ‘Coinnigh mo thaifid ar an ngléas seo’ ar leathanach do chuntais: cóip de do chuid oidis, ábhar, breiseán, bácálacha, nótaí, socruithe agus praghsanna, ionas go n-osclaíonn siad gan idirlíon. Nótálann <code>offlineRecords</code> gur chas tú air é. Fanann an chóip sa bhrabhsálaí seo ar an ngléas seo agus ní sheoltar áit ar bith í riamh. Ní chriptíonn Glazecalc í; ní chosnaítear í ach ag do bhrabhsálaí, a choinníonn stóras gach suímh ar leith, agus ag criptiú do ghléis féin, má tá sé aige.",
+        "lasts": "Go dtí go gcasann tú as é, go síníonn tú amach, nó go gcríochnaíonn do sheisiún. Baintear cóip ar ghléas eile an chéad uair eile a cheanglaíonn an gléas sin le Glazecalc, nó nuair a shíníonn tú amach ansin."
+      },
+      "offlineFiles": {
+        "purpose": "Téacs agus treoracha na haipe i do theanga agus i mBéarla, ionas go n-osclaíonn leathanaigh gan idirlíon, agus cén teanga a sábháladh agus cathain. Gan aon sonraí pearsanta.",
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí. Sábháiltear arís é uair sa lá; baintear comhaid teanga eile nuair a athraíonn tú teanga."
+      },
       "cookie": {
         "purpose": "Coinníonn sé sínithe isteach thú. Tá do chomhartha sínithe isteach ann. Ní féidir le scripteanna ar an leathanach é a léamh, agus ní sheolann do bhrabhsálaí é ach chuig freastalaí Glazecalc féin, thar HTTPS, agus ní sheolann sé riamh é le hiarratas a thosaíonn ar shuíomh eile.",
         "lasts": "Socraítear é nuair a shíníonn tú isteach, nuair a chruthaíonn tú cuntas nó nuair a thosaíonn tú triail. Go dtí go ndúnann tú do bhrabhsálaí, nó ar feadh 7 lá má chuireann tú tic le ‘Coinnigh sínithe isteach mé ar an ngléas seo’; 14 lá do thriail. Baineann síniú amach é."
@@ -193,7 +203,7 @@
         "lasts": "Go dtí go ndúnann tú an cluaisín."
       },
       "oauthCookie": {
-        "purpose": "Ach amháin nuair a shíníonn tú isteach le Google, GitHub nó Microsoft: ceanglaíonn sé freagra an tsoláthraí le do bhrabhsálaí, ionas nach féidir le duine ar bith eile do shíniú isteach a chríochnú ná ceann a thosú duit. Ní féidir le scripteanna ar an leathanach é a léamh.",
+        "purpose": "Ach amháin fad atá tú ag síniú isteach le Google, GitHub nó Microsoft: ceanglaíonn sé freagra an tsoláthraí le do bhrabhsálaí, ionas nach féidir le duine ar bith eile do shíniú isteach a chríochnú ná ceann a thosú duit. Ní féidir le scripteanna ar an leathanach é a léamh.",
         "lasts": "Socraítear é nuair a bhrúnn tú ‘Lean ar aghaidh le Google’, ‘Lean ar aghaidh le GitHub’ nó ‘Sínigh isteach le Microsoft’, nó nuair a cheanglaíonn tú ceann acu ar leathanach do chuntais. Baintear é nuair a chríochnaíonn an síniú isteach, nó tar éis 10 nóiméad."
       }
     },

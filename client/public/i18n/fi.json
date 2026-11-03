@@ -87,11 +87,16 @@
     "language": "Kieli:"
   },
   "offline": {
-    "languageNotSaved": "Tätä kieltä ei ole tallennettu tähän puhelimeen. Muodosta internetyhteys, niin voit käyttää sitä.",
+    "languageNotSaved": "Tätä kieltä ei ole tallennettu tälle laitteelle. Muodosta internetyhteys, niin voit käyttää sitä.",
     "updateReady": "Glazecalcista on valmiina uusi versio.",
     "reload": "Lataa uudelleen",
     "dismiss": "Ei nyt",
-    "install": "Asenna sovellus"
+    "install": "Asenna sovellus",
+    "recordsSwitch": "Säilytä tietoni tällä laitteella, jotta ne avautuvat ilman internetyhteyttä",
+    "recordsHint": "Vain laitteella, jota käytät yksin. Poistetaan, kun kirjaudut ulos.",
+    "recordsBanner": "Glazecalciin ei saada yhteyttä. Näytetään tälle laitteelle {date} tallennettu kopio.",
+    "recordsNotSaved": "Tietojasi ei ole tallennettu tälle laitteelle. Muodosta internetyhteys nähdäksesi ne. Voit ottaa tämän käyttöön tililläsi.",
+    "recordsNotKept": "Tämä selain ei säilytä kopiota (yksityinen selaus tai tila ei riitä)."
   },
   "picker": {
     "results": "{count, plural, one {# osuma} other {# osumaa}}",

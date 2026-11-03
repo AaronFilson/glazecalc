@@ -30,6 +30,7 @@ import { AuthService } from './core/auth.service';
 import { InstallService } from './core/install.service';
 import { LocaleService } from './core/locale.service';
 import { OfflineLanguages } from './core/offline-languages';
+import { OfflineRecords } from './core/offline-records';
 import { UpdateService } from './core/update.service';
 import { sameSitePath } from './core/signed-in.guard';
 import { formatDate } from './shared/format';
@@ -229,6 +230,26 @@ const APP_PAGES = [
           </div>
         }
       </div>
+      <!-- Offline, the user's records come from the copy on this device, if they keep one (core/offline-records.ts). -->
+      <div role="status">
+        @if (auth.shownSession() && offlineRecords.showingCopy(); as savedAt) {
+          <div class="update-bar offline-records-bar">
+            <div class="trial-bar-inner">
+              <p>
+                {{
+                  t('offline.recordsBanner', { date: formatDate(savedAt, { dateStyle: 'medium', timeStyle: 'short' }) })
+                }}
+              </p>
+            </div>
+          </div>
+        } @else if (auth.shownSession() && offlineRecords.notSaved()) {
+          <div class="update-bar offline-records-bar">
+            <div class="trial-bar-inner">
+              <p>{{ t('offline.recordsNotSaved') }}</p>
+            </div>
+          </div>
+        }
+      </div>
     </header>
 
     <!-- The account's round initial, or a person for a trial, which has no email. -->
@@ -331,6 +352,8 @@ export class App implements OnInit {
    */
   protected readonly nextParams = signal<{ next: string } | null>(null);
   private readonly offlineLanguages = inject(OfflineLanguages);
+  /** Injected at start, so a copy left behind is deleted and a session's end deletes it. */
+  protected readonly offlineRecords = inject(OfflineRecords);
   protected readonly updates = inject(UpdateService);
   protected readonly install = inject(InstallService);
   /** A language was chosen with no network and its files are not on this phone: the footer says so. */
@@ -458,7 +481,12 @@ export class App implements OnInit {
   ngOnInit(): void {
     void this.auth.whenChecked();
     // The files of this language, and English, are kept on the phone for the pages to open without a network.
-    if (this.offlineLanguages.isBrowser()) setTimeout(() => void this.offlineLanguages.keep(this.pageLanguage), 4000);
+    // So are the user's records, if they asked: fetched in full at most once a day.
+    if (this.offlineLanguages.isBrowser())
+      setTimeout(() => {
+        void this.offlineLanguages.keep(this.pageLanguage);
+        void this.offlineRecords.refresh();
+      }, 4000);
   }
 
   /**

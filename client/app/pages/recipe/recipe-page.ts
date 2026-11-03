@@ -28,6 +28,7 @@ import { AsksBeforeLeaving } from '../../core/leave.guard';
 import { Additive, AdditiveUnit, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
+import { OfflineRecords } from '../../core/offline-records';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { ShelfService } from '../../core/shelf.service';
 import { UpdateService } from '../../core/update.service';
@@ -343,6 +344,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** Lead is off in Settings: materials with lead are not listed to add, or suggested. */
   protected readonly leadOff = computed(() => this.preferences.lead() === 'off');
   private readonly recipes = this.resources.for<Recipe>('recipe');
+  protected readonly offlineRecords = inject(OfflineRecords);
+  /** Why saving is off, while the records shown are the copy on this device; null when it is on. */
+  protected readonly offlineNote = this.offlineRecords.note;
   private readonly materials = this.resources.for<Material>('materials');
   private readonly additives = this.resources.for<Additive>('additives');
 
@@ -1124,6 +1128,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   private async saveAs(mode: SaveMode): Promise<Saved | null> {
     this.saveProblem.set('');
+    // Offline, showing the copy kept on this device: nothing can be saved until the network is back.
+    if (this.offlineRecords.readOnly()) {
+      this.saveProblem.set(this.offlineNote() ?? '');
+      return null;
+    }
     const problem = this.problemBeforeSave();
     if (problem !== null) {
       this.saveProblem.set(problem);

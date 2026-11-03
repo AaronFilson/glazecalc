@@ -105,6 +105,25 @@ describe('how long a sign-in lasts', () => {
       .set('Authorization', 'Bearer ' + token);
     expect(cookieOf(verified)).to.eql('');
   });
+
+  it('the verify route says when the sign-in runs out, and whether it ends with the browser', async () => {
+    const { email } = await makeUser();
+    for (const keep of [false, true]) {
+      const before = Date.now();
+      const signedIn = await api()
+        .get('/signin')
+        .set('authorization', basic(email, 'password123'))
+        .set(keep ? KEEP : {});
+      const verified = await api()
+        .get('/verify')
+        .set('Authorization', 'Bearer ' + sessionToken(signedIn));
+      expect(verified).to.have.status(200);
+      const ends = Date.parse(verified.body.sessionEndsAt);
+      expect(ends).to.be.within(before + 7 * DAY * 1000 - 5000, Date.now() + 7 * DAY * 1000 + 5000);
+      if (keep) expect(verified.body).to.not.have.property('sessionOnly');
+      else expect(verified.body.sessionOnly).to.eql(true);
+    }
+  });
 });
 
 // Two-step sign-in (docs/mfa-plan.md, item 9): the choice made with the

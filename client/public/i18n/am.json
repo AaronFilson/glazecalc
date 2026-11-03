@@ -87,11 +87,16 @@
     "language": "ቋንቋ:"
   },
   "offline": {
-    "languageNotSaved": "ይህ ቋንቋ በዚህ ስልክ ላይ አልተቀመጠም። ለመጠቀም ከኢንተርኔት ጋር ይገናኙ።",
+    "languageNotSaved": "ይህ ቋንቋ በዚህ መሣሪያ ላይ አልተቀመጠም። ለመጠቀም ከኢንተርኔት ጋር ይገናኙ።",
     "updateReady": "አዲስ የGlazecalc ስሪት ዝግጁ ነው።",
     "reload": "እንደገና ጫን",
     "dismiss": "አሁን አይደለም",
-    "install": "መተግበሪያውን ጫን"
+    "install": "መተግበሪያውን ጫን",
+    "recordsSwitch": "መዝገቦቼን በዚህ መሣሪያ ላይ አቆይ፣ ያለ ኢንተርኔት እንዲከፈቱ",
+    "recordsHint": "እርስዎ ብቻ በሚጠቀሙበት መሣሪያ ላይ ብቻ። ሲወጡ ይወገዳል።",
+    "recordsBanner": "Glazecalc ሊደረስበት አይችልም። በ{date} በዚህ መሣሪያ ላይ የተቀመጠው ቅጂ እየታየ ነው።",
+    "recordsNotSaved": "መዝገቦችዎ በዚህ መሣሪያ ላይ አልተቀመጡም። ለማየት ከኢንተርኔት ጋር ይገናኙ። ይህንን በመለያዎ ውስጥ ማብራት ይችላሉ።",
+    "recordsNotKept": "ይህ አሳሽ ቅጂ አያቆይም (የግል አሰሳ ወይም ቦታ የለም)።"
   },
   "picker": {
     "results": "{count, plural, one {# ውጤት} other {# ውጤቶች}}",
