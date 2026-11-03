@@ -494,6 +494,96 @@ export const RESET: Record<string, Email> = {
       'O link funciona uma única vez. Se você não pediu isso, ignore este e-mail; sua senha continua a mesma.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  sw: {
+    subject: 'Weka upya nenosiri lako la Glazecalc',
+    text:
+      'Mtu (tunatumaini ni wewe) ameomba kuweka upya nenosiri la akaunti ya Glazecalc {account}.\n\n' +
+      'Ili kuchagua nenosiri jipya, fungua kiungo hiki ndani ya dakika {minutes}:\n\n' +
+      '{link}\n\n' +
+      'Kiungo kinafanya kazi mara moja tu. Ikiwa hukuomba hili, puuza barua pepe hii; nenosiri lako litabaki kama lilivyo.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  am: {
+    subject: 'የGlazecalc የይለፍ ቃልዎን ዳግም ያስጀምሩ',
+    text:
+      'አንድ ሰው (እርስዎ እንደሆኑ ተስፋ እናደርጋለን) ለዚህ የGlazecalc መለያ የይለፍ ቃሉን ዳግም ለማስጀመር ጠይቋል፥ {account}።\n\n' +
+      'አዲስ የይለፍ ቃል ለመምረጥ፣ ይህን ሊንክ {minutes} ደቂቃዎች ሳያልፉ ይክፈቱ፥\n\n' +
+      '{link}\n\n' +
+      'ሊንኩ የሚሠራው አንድ ጊዜ ነው። ይህን ካልጠየቁ፣ ይህን ኢሜይል ችላ ይበሉ፤ የይለፍ ቃልዎ እንዳለ ይቆያል።\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  af: {
+    subject: 'Stel jou Glazecalc-wagwoord terug',
+    text:
+      'Iemand (hopelik jy) het gevra om die wagwoord vir die Glazecalc-rekening {account} terug te stel.\n\n' +
+      "Om 'n nuwe wagwoord te kies, maak hierdie skakel binne {minutes} minute oop:\n\n" +
+      '{link}\n\n' +
+      'Die skakel werk een keer. As jy nie hiervoor gevra het nie, ignoreer hierdie e-pos; jou wagwoord bly dieselfde.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ha: {
+    subject: 'Sake saita kalmar sirrinku ta Glazecalc',
+    text:
+      'Wani (muna fatan ku ne) ya nemi a sake saita kalmar sirri ta asusun Glazecalc {account}.\n\n' +
+      'Don zaɓar sabuwar kalmar sirri, buɗe wannan hanyar haɗi cikin minti {minutes}:\n\n' +
+      '{link}\n\n' +
+      'Hanyar haɗin tana aiki sau ɗaya. Idan ba ku nemi wannan ba, ku yi watsi da wannan imel; kalmar sirrinku za ta kasance yadda take.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  yo: {
+    subject: 'Ẹ tún ọ̀rọ̀ aṣínà Glazecalc yín ṣe',
+    text:
+      'Ẹnì kan (a nírètí pé ẹ̀yin ni) béèrè láti tún ọ̀rọ̀ aṣínà àkáǹtì Glazecalc {account} ṣe.\n\n' +
+      'Láti yan ọ̀rọ̀ aṣínà tuntun, ẹ ṣí líǹkì yìí láàárín ìṣẹ́jú {minutes}:\n\n' +
+      '{link}\n\n' +
+      'Líǹkì náà ń ṣiṣẹ́ lẹ́ẹ̀kan. Bí kì í bá ṣe ẹ̀yin ló béèrè fún èyí, ẹ fojú fo ímeèlì yìí; ọ̀rọ̀ aṣínà yín kò ní yí padà.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  zu: {
+    subject: 'Setha kabusha iphasiwedi yakho ye-Glazecalc',
+    text:
+      'Othile (sethemba ukuthi nguwe) ucele ukusetha kabusha iphasiwedi ye-akhawunti ye-Glazecalc ethi {account}.\n\n' +
+      'Ukuze ukhethe iphasiwedi entsha, vula lesi sixhumanisi kungakapheli imizuzu engu-{minutes}:\n\n' +
+      '{link}\n\n' +
+      'Isixhumanisi sisebenza kanye. Uma kungewena ocele lokhu, ungayinaki le imeyili; iphasiwedi yakho ihlala injalo.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ig: {
+    subject: 'Tọgharịa okwuntughe Glazecalc gị',
+    text:
+      'Mmadụ (anyị na-atụ anya na ọ bụ gị) rịọrọ ka a tọgharịa okwuntughe maka akaụntụ Glazecalc {account}.\n\n' +
+      "Iji họrọ okwuntughe ọhụrụ, mepee njikọ a n'ime nkeji {minutes}:\n\n" +
+      '{link}\n\n' +
+      'Njikọ ahụ na-arụ ọrụ otu ugboro. Ọ bụrụ na ọ bụghị gị rịọrọ nke a, leghara email a anya; okwuntughe gị ka ga-adị otu ahụ.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  so: {
+    subject: 'Dib u deji furaha sirta ee Glazecalc',
+    text:
+      'Qof (waxaan rajaynaynaa inaad adigu tahay) ayaa codsaday in dib loo dejiyo furaha sirta ee akoonka Glazecalc {account}.\n\n' +
+      'Si aad u doorato furo sir ah oo cusub, fur link-gan {minutes} daqiiqo gudahood:\n\n' +
+      '{link}\n\n' +
+      'Link-gu hal mar ayuu shaqeeyaa. Haddii aadan tan codsan, iska indha tir email-kan; furaha sirtaadu sidiisa ayuu ahaanayaa.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  qu: {
+    subject: 'Glazecalc pakasqa simiykita musuqyachiy',
+    text:
+      'Pipas (qamchá) Glazecalc cuentapa {account} pakasqa siminta musuqyachiyta mañakurqan.\n\n' +
+      'Musuq pakasqa simita akllanaykipaq, kay enlaceta {minutes} minuto ukhupi kichay:\n\n' +
+      '{link}\n\n' +
+      "Enlaceqa huk kutillam llamk'an. Sichus mana qamchu kayta mañakurqanki chayqa, kay correota ama kasuychu; pakasqa simiykiqa kaqllam kanqa.\n" +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -879,6 +969,78 @@ export const CHANGED: Record<string, Email> = {
     text:
       'A senha da conta {account} do Glazecalc acabou de ser alterada, e todos os dispositivos que estavam conectados foram desconectados.\n\n' +
       'Se foi você, não há mais nada a fazer. Se não foi, redefina sua senha agora mesmo em {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  sw: {
+    subject: 'Nenosiri lako la Glazecalc limebadilishwa',
+    text:
+      'Nenosiri la akaunti ya Glazecalc {account} limebadilishwa sasa hivi, na kila kifaa kilichokuwa kimeingia kimetolewa.\n\n' +
+      'Ikiwa ulifanya hili wewe, hakuna kingine cha kufanya. Ikiwa sivyo, weka upya nenosiri lako mara moja kwenye {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  am: {
+    subject: 'የGlazecalc የይለፍ ቃልዎ ተቀይሯል',
+    text:
+      'የዚህ የGlazecalc መለያ የይለፍ ቃል አሁን ተቀይሯል፥ {account}፤ የገቡባቸው ሁሉም መሣሪያዎችም ወጥተዋል።\n\n' +
+      'ይህን ያደረጉት እርስዎ ከሆኑ፣ ሌላ የሚያደርጉት ነገር የለም። እርስዎ ካልሆኑ፣ የይለፍ ቃልዎን ወዲያውኑ እዚህ ዳግም ያስጀምሩ፥ {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  af: {
+    subject: 'Jou Glazecalc-wagwoord is verander',
+    text:
+      'Die wagwoord vir die Glazecalc-rekening {account} is pas verander, en elke toestel wat aangemeld was, is afgemeld.\n\n' +
+      'As dit jy was, is daar niks anders om te doen nie. As nie, stel jou wagwoord dadelik terug by {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ha: {
+    subject: 'An canza kalmar sirrinku ta Glazecalc',
+    text:
+      "An canza kalmar sirri ta asusun Glazecalc {account} yanzun nan, kuma an fitar da duk na'urorin da suka shiga.\n\n" +
+      'Idan ku ne, babu wani abu kuma da za ku yi. Idan ba ku ba ne, sake saita kalmar sirrinku nan take a {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  yo: {
+    subject: 'A ti yí ọ̀rọ̀ aṣínà Glazecalc yín padà',
+    text:
+      'A ṣẹ̀ṣẹ̀ yí ọ̀rọ̀ aṣínà àkáǹtì Glazecalc {account} padà, a sì ti mú gbogbo ẹ̀rọ tí ó ti wọlé jáde.\n\n' +
+      'Bí ẹ̀yin ni, kò sí ohun mìíràn láti ṣe. Bí kì í bá ṣe ẹ̀yin, ẹ tún ọ̀rọ̀ aṣínà yín ṣe lẹ́sẹ̀kẹsẹ̀ ní {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  zu: {
+    subject: 'Iphasiwedi yakho ye-Glazecalc ishintshiwe',
+    text:
+      'Iphasiwedi ye-akhawunti ye-Glazecalc ethi {account} isanda kushintshwa, futhi yonke idivayisi ebingene ikhishiwe.\n\n' +
+      'Uma bekunguwe, akukho okunye okufanele ukwenze. Uma bekungewena, setha kabusha iphasiwedi yakho ngokushesha ku-{forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ig: {
+    subject: 'Agbanweela okwuntughe Glazecalc gị',
+    text:
+      'A gbanwere okwuntughe maka akaụntụ Glazecalc {account} ugbu a, e mekwara ka ngwaọrụ ọ bụla banyere pụọ.\n\n' +
+      'Ọ bụrụ na ọ bụ gị, ọ dịghị ihe ọzọ ị ga-eme. Ọ bụrụ na ọ bụghị gị, tọgharịa okwuntughe gị ozugbo na {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  so: {
+    subject: 'Furaha sirta ee Glazecalc waa la beddelay',
+    text:
+      'Furaha sirta ee akoonka Glazecalc {account} hadda ayaa la beddelay, qalab kasta oo ku jiray akoonkana waa laga saaray.\n\n' +
+      'Haddii ay adiga ahayd, wax kale oo la sameeyo ma jiraan. Haddii kale, isla markiiba dib u deji furaha sirta {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  qu: {
+    subject: "Glazecalc pakasqa simiykiqa t'ikrasqañam",
+    text:
+      "Glazecalc cuentapa {account} pakasqa siminqa kunanllan t'ikrasqa, yaykusqa kaq llapan dispositivokunapas lluqsichisqañam.\n\n" +
+      'Sichus qam karqanki chayqa, manam imapas ruranaykipaq kanchu. Mana chayqa, pakasqa simiykita kunanpacha musuqyachiy kaypi: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }

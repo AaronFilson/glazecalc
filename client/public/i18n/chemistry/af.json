@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Onbekende verbinding {compound} in formule",
+  "unknown-oxide": "Onbekende oksied {oxide} in grondstof {material}",
+  "invalid-oxide-amount": "Ongeldige hoeveelheid vir {oxide} in grondstof {material}",
+  "loi-range": "LOI van {material} moet ten minste 0 en minder as 100 wees",
+  "no-oxides": "Grondstof {material} het geen oksiede nie",
+  "no-name": "Grondstof moet 'n naam hê",
+  "no-analysis": "Grondstof {material} het 'n formule of 'n ontleding nodig",
+  "recipe-shape": "Resep moet 'n reeks van '{ material, amount }' of 'n kaart van hoeveelhede wees",
+  "invalid-amount": "Ongeldige hoeveelheid vir grondstof {material}",
+  "missing-material": "Resepreël het geen grondstof nie",
+  "unknown-material": "Onbekende grondstof {material}",
+  "no-flux": "Resep bevat geen vloeimiddeloksiede nie, so die UMF is ongedefinieer",
+  "no-target": "Die teiken het geen oksiede om na te mik nie",
+  "no-materials": "Daar is geen grondstowwe om uit te werk nie",
+  "no-temperature": "Die baktemperatuur is nodig om die boor te bepaal",
+  "no-flux-to-rebuild": "Die glasuur het geen vloeimiddel om te herbou nie",
+  "unknown-element": "Onbekende element {element} in {formula}",
+  "bad-formula": "Kon nie formule {formula} ontleed nie",
+  "analysis-total": "Ontleding van {material} gee 'n totaal van {total}% met LOI ingesluit; ongeveer 100% is verwag.",
+  "stored-equivalent": "Die gestoorde ekwivalente gewig van {material} stem nie met sy formule en LOI ooreen nie; die formule en LOI is eerder gebruik.",
+  "trace-flux": "Resep bevat net spore van vloeimiddeloksiede, so die UMF is nie betekenisvol nie."
+}

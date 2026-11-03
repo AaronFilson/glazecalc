@@ -33,6 +33,25 @@ const NOTO: Record<string, string> = {
   Sinh: 'SansSinhala'
 };
 
+describe('the letters of Hausa, Igbo and Yoruba that Lora lacks (waves L3 and L4)', () => {
+  it("come from Noto Serif's Latin Extended face, named for just them, after Lora", () => {
+    const face = styles.split('@font-face').find((rule) => rule.includes('noto-serif-latin-ext-wght-normal.woff2'));
+    expect(face).to.be.a('string');
+    expect(face).to.include("font-family: 'Noto Serif Fill'");
+    const range = /unicode-range:([^;]+);/.exec(face!)![1];
+    const covered = (char: string) =>
+      range.split(',').some((part) => {
+        const [from, to] = part.trim().replace('U+', '').split('-');
+        const code = char.codePointAt(0)!;
+        return code >= parseInt(from, 16) && code <= parseInt(to ?? from, 16);
+      });
+    // ɓ ɗ ƙ ƴ and their capitals (Hausa), ṅ (Igbo), ṣ and ḿ (Yoruba); not ẹ ọ ị ụ, which Lora has.
+    for (const char of 'ɓɗƙƴƁƊƘƳṅṄṣṢḿḾ') expect(covered(char), char).to.equal(true);
+    for (const char of 'ẹọịụaé') expect(covered(char), char).to.equal(false);
+    expect(styles).to.match(/--gc-font:\s*'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill'/);
+  });
+});
+
 describe('the Indian languages’ font and line-height tables', () => {
   it('give every language the checks know a font stack, system fonts first and none served', () => {
     const fonts = map('$gc-script-fonts');
@@ -43,9 +62,18 @@ describe('the Indian languages’ font and line-height tables', () => {
       expect(line, code).to.match(/^\s*'[a-z]+': "'Nirmala UI', /);
       expect(line, code).to.include("'Noto Sans ");
     }
-    // Only the app's serif subscripts and Urdu's Nastaliq are served: no Indian font file is named.
+    // Only the app's serif subscripts, Urdu's Nastaliq and Amharic's Ethiopic (wave L2, for devices without one)
+    // are served: no Indian font file is named.
     const served = [...styles.matchAll(/url\('\.\/fonts\/([^']+)'\)/g)].map((match) => match[1]);
-    expect(served).to.eql(['noto-serif-sub-wght-normal.woff2', 'noto-nastaliq-urdu-wght-normal.woff2']);
+    expect(served).to.eql([
+      'noto-serif-sub-wght-normal.woff2',
+      'noto-nastaliq-urdu-wght-normal.woff2',
+      'noto-sans-ethiopic-wght-normal.woff2'
+    ]);
+    // The Ethiopic file is named only in Amharic's stack, last, after the systems' own Ethiopic fonts.
+    const amharic = fonts.split('\n').find((l) => l.trim().startsWith("'am':"));
+    expect(amharic).to.match(/^\s*'am': "Ebrima, .*'Noto Sans Ethiopic Served'"$/);
+    expect(styles.split("'Noto Sans Ethiopic Served'").length).to.equal(3);
   });
 
   it('give every one a line height for its text and its headings, taller the more its marks reach', () => {

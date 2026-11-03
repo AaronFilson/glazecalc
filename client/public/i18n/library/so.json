@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Ku qor formula tirooyin caadi ah, sida {typed}: tirooyinku waxay u muuqdaan xarfo hoose, {shown}. Si aad isugu xidhdho qaybaha formula-da, sida {joined}, koobiyee dhibicdan:",
+    "relatedTo": "La xidhiidha",
+    "notes": "Qoraallo",
+    "loi": "Lumitaanka gubidda (LOI), %",
+    "molecularWeight": "Miisaanka molecular-ka ee formula-da ceeriin (waxaa la isticmaalaa oo keliya haddii LOI bannaan yahay)",
+    "formulaHeading": "Formula-da, ka dib gubidda",
+    "oxideSelection": "Oksaydh",
+    "noOxide": "midna",
+    "addOxide": "Ku dar oksaydhka liiska",
+    "formulaIn": "Formula-dani waxay ku qoran tahay",
+    "percent": "Boqolley",
+    "molecular": "Molecular (unity)",
+    "amount": "qadar",
+    "removeOxide": "Ka saar",
+    "removeOxideName": "Ka saar {oxide} formula-da",
+    "save": "Kaydi",
+    "elements": "Curiyeyaal",
+    "removeNote": "Habab la kaydiyay waxay hayaan nuqul u gaar ah, sidaa darteed isma beddeli doonaan.",
+    "saveFailed": "Khalad: codsigii loo diray server-ka wuu fashilmay."
+  },
+  "material": {
+    "title": "Walxo",
+    "lead": "Walxahaaga ceeriin ee adiga kuu gaarka ah, oo loo galiyay formula kiimiko ama falanqayn oksaydh.",
+    "newHeading": "Ku dar walax",
+    "name": "Magac",
+    "rawFormula": "Formula ceeriin",
+    "weightsNote": "Miisaanka u dhigma iyo miisaanka gubidda kadib waxaa laga xisaabiyaa formula-da iyo LOI marka aad kaydiso.",
+    "mineHeading": "Walxahayga",
+    "none": "Weli midna ma jiro. Walxaha aad hoos ku darto waxay geli karaan hababkaaga, walxaha caadiga ah agtooda.",
+    "rawFormulaColumn": "Formula ceeriin",
+    "standardHeading": "Walxaha caadiga ah",
+    "fetchFailed": "Khalad ayaa ka dhacay helitaanka macluumaadka walxaha.",
+    "standardFetchFailed": "Khalad ayaa ka dhacay helitaanka macluumaadka walxaha caadiga ah.",
+    "saved": "Waa guul. Walaxda waa lagu daray xogta."
+  },
+  "additive": {
+    "title": "Walxo lagu daro iyo midabeeyeyaal",
+    "lead": "Midabeeyeyaal iyo walxo iftiinka ka celiya inuu dhex maro (opacifier) oo lagu cabbiro habka aasaasiga ah dushiisa, sida cobalt ama tin oxide. Habku wuu ka reebi karaa unity formula-da ama wuu ku tirin karaa.",
+    "newHeading": "Ku dar walax lagu daro ama midabeeye",
+    "name": "Magac",
+    "formulaAsSold": "Formula, sida loo iibiyo",
+    "noChemistry": "Ma laha falanqayn oksaydh, sida stain ganacsi: ka reeb unity formula-da",
+    "firedNote": "Geli waxa ay glaze-ka siiso marka la gubo: cobalt oxide madow, {asSold}, waa {fired} oo leh {loi}% LOI. Habku markaas wuu ku tirin karaa unity formula-da.",
+    "mineHeading": "Walxahayga lagu daro iyo midabeeyeyaashayda",
+    "none": "Weli midna ma jiro. Walxaha lagu daro ee aad hoos ku darto waxay geli karaan hababkaaga, kuwa caadiga ah agtooda.",
+    "standardHeading": "Walxaha caadiga ah ee lagu daro",
+    "fetchFailed": "Khalad ayaa ka dhacay helitaanka macluumaadka walxaha lagu daro.",
+    "standardFetchFailed": "Khalad ayaa ka dhacay helitaanka macluumaadka walxaha caadiga ah ee lagu daro.",
+    "saved": "Waa guul. Walaxda lagu daro waa lagu daray xogta."
+  }
+}

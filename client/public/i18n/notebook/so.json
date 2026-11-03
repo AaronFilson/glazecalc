@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Buuggaaga qoraalka ee istuudiyaha",
+    "signedInAs": "Waxaad ku gashay sida {email}.",
+    "trying": "Waxaad Glazecalc ku tijaabinaysaa sida {name}. Ku bilow hab.",
+    "welcomeBack": "Ka sii wad meeshii aad ka joogsatay.",
+    "welcome": {
+      "heading": "Ku soo dhowow Glazecalc",
+      "text": "Buuggaaga qoraalku waa diyaar. Tallaabo hore oo wanaagsan: ku qor glaze aad hore u isku qasto, walxihiisa iyo qadarkooda, oo arag unity formula-diisa.",
+      "firstRecipe": "Bilow habkaaga koowaad",
+      "confirmHeading": "Xaqiiji email-kaaga",
+      "confirm": "Xaqiiji email-kaaga: waxaan link u dirnay {email}. Galitaanka laba-tallaabo ayaa u baahan. <account>Bogga akoonkaagu</account> mar kale ayuu diri karaa.",
+      "confirmText": "Waxaan link u dirnay {email}. Fur si aad u xaqiijiso in cinwaanku adiga kuu yahay: galitaanka laba-tallaabo ayaa u baahan. <account>Bogga akoonkaagu</account> mar kale ayuu diri karaa."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Habab",
+        "text": "Ka dhis glaze walxo iyo qadar, arag unity formula-diisa, oo kaydi."
+      },
+      "import": {
+        "title": "Ku dheji habab",
+        "text": "Ku dheji habab laga keenay website, spreadsheet ama qoraallo, hubi waxa la akhriyay, oo kaydi."
+      },
+      "blends": {
+        "title": "Isku-darka test tile-yada",
+        "text": "Isku dar laba, saddex ama afar ka mid ah hababkaaga, una samee test tile-yo lambaraysan, oo leh waxa loo miisaamayo mid kasta."
+      },
+      "material": {
+        "title": "Walxo",
+        "text": "Ku dar walxo ceeriin oo adiga kuu gaar ah, laga keenay formula kiimiko ama falanqaynta iibiyaha."
+      },
+      "additive": {
+        "title": "Walxo lagu daro iyo midabeeyeyaal",
+        "text": "Hay midabeeyeyaasha iyo walxaha iftiinka ka celiya inuu dhex maro (opacifier) ee aad ku darto glaze aasaasi ah dushiisa."
+      },
+      "firing": {
+        "title": "Diiwaanka gubidda",
+        "text": "Qor waqtiyada, heerkulka iyo cone-yada gubid kasta."
+      },
+      "notes": {
+        "title": "Qoraallo",
+        "text": "Hay natiijooyinka tijaabooyinka iyo wax kasta oo kale oo mudan in la xasuusto."
+      },
+      "advice": {
+        "title": "Talooyin glaze",
+        "text": "Talooyin ku saabsan isku-qasidda, glaze-marinta iyo gubidda, iyo talooyinkaaga."
+      },
+      "guides": {
+        "title": "Hagayaal",
+        "text": "Laga bilaabo waxa glaze yahay ilaa gubiddiisa, iyo sida qof walba loo ilaaliyo inta lagu jiro."
+      },
+      "trash": {
+        "title": "Qashinka",
+        "text": "Dib u celi waxa aad ka saartay 30-kii maalmood ee la soo dhaafay."
+      },
+      "account": {
+        "title": "Akoonka iyo dejinta",
+        "text": "Dejinta, furaha sirta, galitaanka laba-tallaabo, iyo soo dejinta wax kasta oo aad halkan ku hayso."
+      }
+    },
+    "newHere": "Ma ku cusub tahay unity formula? <advice>Bogga talooyinku</advice> wuxuu sharxaa aasaaska, <about>bogga ku saabsanna</about> wuxuu sheegaa sida Glazecalc u shaqeeyo."
+  },
+  "firing": {
+    "title": "Diiwaanka gubidda",
+    "lead": "Qor gubid kasta: waqtiyada, heerkulka, cone-yada iyo qoraallada kiln-ka.",
+    "newHeading": "Gubid cusub",
+    "titleLabel": "Cinwaan",
+    "kiln": "Kiln",
+    "date": "Taariikh",
+    "notes": "Qoraallo",
+    "fieldSelect": "Goobaha la qorayo",
+    "addField": "Ku dar goobta",
+    "included": "Goobaha diiwaankan ku jira",
+    "moveLeft": "U guuri goobta bidix",
+    "moveRight": "U guuri goobta midig",
+    "removeField": "Ka saar goobta",
+    "addRow": "Ku dar saf shaxda gubidda",
+    "addRowWhy": "Marka hore ku dar goob.",
+    "recordHeading": "Qor gubidda",
+    "rowActions": "Falalka safka",
+    "cell": "{field} safka {row}",
+    "removeRow": "Ka saar safka",
+    "save": "Kaydi",
+    "storedHeading": "Gubiddayda la kaydiyay",
+    "noneSaved": "Weli midna ma jiro. Gubidda la kaydiyo halkan ayay ka muuqdaan.",
+    "storedIn": "Lagu gubay {kiln} taariikhda {date}.",
+    "storedOn": "La gubay taariikhda {date}.",
+    "storedNotes": "Qoraallo: {notes}",
+    "titleMissing": "Sii gubidda cinwaan.",
+    "fieldsMissing": "Ku dar ugu yaraan hal goob oo la qoro, sida {example}.",
+    "chooseField": "Dooro goob aad ku darto, kadib riix Ku dar goobta.",
+    "fetchFailed": "Khalad ayaa ka dhacay helitaanka macluumaadka diiwaanka gubidda.",
+    "saved": "Diiwaanka gubidda si guul leh ayaa loogu daray server-ka.",
+    "saveFailed": "Khalad: codsigii loo diray server-ka wuu fashilmay.",
+    "recipesHeading": "Habab lagu gubay",
+    "noRecipes": "Weli hab lama xidhin.",
+    "recipesFailed": "Hababkaaga lama soo heli karin, sidaa darteed hadda midna lama xidhi karo.",
+    "pickRecipe": "Hab lagu gubay",
+    "linkRecipe": "Xidh habka",
+    "unlink": "Fur xidhiidhka",
+    "unlinkRecipe": "Ka fur xidhiidhka {title}",
+    "linkFailed": "Xidhiidhka lama kaydin karin."
+  },
+  "notes": {
+    "title": "Qoraallo",
+    "lead": "Wax kasta oo kale oo mudan in la xasuusto oo ku saabsan glaze-yadaada.",
+    "newHeading": "Qoraal cusub",
+    "titleLabel": "Cinwaan",
+    "content": "Qoraal",
+    "save": "Kaydi",
+    "mineHeading": "Qoraalladayda la kaydiyay",
+    "noneSaved": "Weli midna ma jiro. Qoraallada la kaydiyo halkan ayay ka muuqdaan.",
+    "titleMissing": "Sii qoraalka cinwaan.",
+    "contentMissing": "Qor qoraalka.",
+    "untitled": "Qoraal aan cinwaan lahayn",
+    "fetchFailed": "Khalad ayaa ka dhacay helitaanka macluumaadka qoraallada.",
+    "saved": "Qoraalka si guul leh ayaa loogu daray server-ka.",
+    "saveFailed": "Khalad: codsigii loo diray server-ka wuu fashilmay."
+  },
+  "trash": {
+    "title": "Qashinka",
+    "lead": "Waxa aad ka saarto (habab, walxo, walxo lagu daro, qoraallo, diiwaanka gubidda iyo talooyin) halkan ayay ku sugaan 30 maalmood. Dib u celi, ama tirtir weligiis.",
+    "listHeading": "Qashinka ku jira",
+    "none": "Qashinku waa madhan yahay.",
+    "untitled": "Aan cinwaan lahayn",
+    "kinds": {
+      "recipes": "Hab",
+      "materials": "Walax",
+      "additives": "Walax lagu daro",
+      "notes": "Qoraal",
+      "firing": "Diiwaanka gubidda",
+      "advice": "Talo",
+      "other": "Diiwaan"
+    },
+    "removedOn": "La saaray {date}",
+    "goesOn": "Weligiis waa la tirtiri doonaa {date}",
+    "byApp": "Waxaa ka saaray app ku xidhan",
+    "putBack": "Dib u celi",
+    "putBackName": "Dib u celi {name}",
+    "restored": "\"{name}\" waxaa loo celiyay meeshii uu ku jiray.",
+    "restoredAlready": "\"{name}\" hore ayaa dib loogu celiyay.",
+    "restoreFailed": "\"{name}\" dib looma celin karin. Fadlan isku day mar kale.",
+    "deleted": "\"{name}\" weligiis waa la tirtiray.",
+    "empty": "Madhi Qashinka",
+    "emptyQuestion": "Weligiis ma tirtirtaa {count, plural, one {# diiwaanka} other {dhammaan # diiwaannada}} ku jira Qashinka? Tan dib looma celin karo.",
+    "emptyYes": "Haa, madhi",
+    "emptying": "Waa la madhinayaa...",
+    "emptied": "Qashinku waa madhan yahay.",
+    "emptyFailed": "Qashinka lama madhin karin. Fadlan isku day mar kale.",
+    "fetchFailed": "Qashinka lama soo rari karin. Fadlan isku day mar kale."
+  }
+}

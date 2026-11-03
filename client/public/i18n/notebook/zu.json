@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Incwadi yakho yesitudiyo",
+    "signedInAs": "Ungene njengo-{email}.",
+    "trying": "Uzama i-Glazecalc njengo-{name}. Qala ngeresiphi.",
+    "welcomeBack": "Qhubeka lapho ugcine khona.",
+    "welcome": {
+      "heading": "Siyakwamukela ku-Glazecalc",
+      "text": "Incwadi yakho isilungile. Isinyathelo sokuqala esihle: bhala i-glaze osuvele uyixuba, okokwakha kwayo namanani, ubone i-unity formula yayo.",
+      "firstRecipe": "Qala iresiphi yakho yokuqala",
+      "confirmHeading": "Qinisekisa i-imeyili yakho",
+      "confirm": "Qinisekisa i-imeyili yakho: sithumele isixhumanisi ku-{email}. Ukungena ngezinyathelo ezimbili kuyasidinga. <account>Ikhasi le-akhawunti</account> yakho lingasithumela futhi.",
+      "confirmText": "Sithumele isixhumanisi ku-{email}. Sivule ukuze uqinisekise ukuthi ikheli ngelakho: ukungena ngezinyathelo ezimbili kuyasidinga. <account>Ikhasi le-akhawunti</account> yakho lingasithumela futhi."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Amaresiphi",
+        "text": "Yakha i-glaze ngokokwakha namanani, ubone i-unity formula yayo, bese uyilondoloza."
+      },
+      "import": {
+        "title": "Namathisela amaresiphi",
+        "text": "Namathisela amaresiphi avela kuwebhusayithi, kuspredishithi noma emanothini, uhlole okufundiwe, bese uzilondoloza."
+      },
+      "blends": {
+        "title": "Ukuxuba kwama-test tile",
+        "text": "Xuba amaresiphi akho amabili, amathathu noma amane abe ama-test tile anezinombolo, nalokho okufanele ukukale ku-tile ngayinye."
+      },
+      "material": {
+        "title": "Okokwakha",
+        "text": "Engeza okokwakha okuluhlaza kwakho, ku-formula yamakhemikhali noma ekuhlaziyweni komphakeli."
+      },
+      "additive": {
+        "title": "Izithasiselo nokokufaka umbala",
+        "text": "Gcina okokufaka umbala nokwenza i-glaze ingabonisi okwengeza ngaphezu kwe-glaze eyisisekelo."
+      },
+      "firing": {
+        "title": "Amarekhodi okushisa",
+        "text": "Bhala izikhathi, amazinga okushisa nama-cone kukho konke ukushisa."
+      },
+      "notes": {
+        "title": "Amanothi",
+        "text": "Gcina imiphumela yokuhlola nanoma yini enye okufanele ikhunjulwe."
+      },
+      "advice": {
+        "title": "Iseluleko nge-glaze",
+        "text": "Amathiphu okuxuba, okufaka i-glaze nokushisa, neseluleko sakho."
+      },
+      "guides": {
+        "title": "Imihlahlandlela",
+        "text": "Kusukela kulokho okuyi-glaze kuya ekuyishiseni, nokugcina wonke umuntu ephephile endleleni."
+      },
+      "trash": {
+        "title": "Udoti",
+        "text": "Buyisela lokho okukhiphe ezinsukwini ezingu-30 ezedlule."
+      },
+      "account": {
+        "title": "I-akhawunti nezilungiselelo",
+        "text": "Izilungiselelo, iphasiwedi yakho, ukungena ngezinyathelo ezimbili, nokulanda konke okugcina lapha."
+      }
+    },
+    "newHere": "Usemusha kuma-unity formula? <advice>Ikhasi leseluleko</advice> lichaza izisekelo, futhi <about>ikhasi elimayelana nathi</about> lisho ukuthi i-Glazecalc isebenza kanjani."
+  },
+  "firing": {
+    "title": "Amarekhodi okushisa",
+    "lead": "Bhala konke ukushisa: izikhathi, amazinga okushisa, ama-cone namanothi e-kiln.",
+    "newHeading": "Ukushisa okusha",
+    "titleLabel": "Isihloko",
+    "kiln": "I-kiln",
+    "date": "Usuku",
+    "notes": "Amanothi",
+    "fieldSelect": "Izinkambu okufanele zibhalwe",
+    "addField": "Engeza inkambu",
+    "included": "Izinkambu kuleli rekhodi",
+    "moveLeft": "Hambisa inkambu iye kwesobunxele",
+    "moveRight": "Hambisa inkambu iye kwesokudla",
+    "removeField": "Khipha inkambu",
+    "addRow": "Engeza umugqa etafuleni lokushisa",
+    "addRowWhy": "Engeza inkambu kuqala.",
+    "recordHeading": "Bhala ukushisa",
+    "rowActions": "Izenzo zomugqa",
+    "cell": "{field} umugqa {row}",
+    "removeRow": "Khipha umugqa",
+    "save": "Londoloza",
+    "storedHeading": "Ukushisa kwami okulondoloziwe",
+    "noneSaved": "Akukabikho okwamanje. Ukushisa okulondoloziwe kuvela lapha.",
+    "storedIn": "Kushiswe ku-kiln {kiln} ngomhla {date}.",
+    "storedOn": "Kushiswe ngomhla {date}.",
+    "storedNotes": "Amanothi: {notes}",
+    "titleMissing": "Nika ukushisa isihloko.",
+    "fieldsMissing": "Engeza okungenani inkambu eyodwa okufanele ibhalwe, njengo-{example}.",
+    "chooseField": "Khetha inkambu ozoyengeza, bese uchofoza ethi Engeza inkambu.",
+    "fetchFailed": "Kube nephutha ekutholeni ulwazi lwamarekhodi okushisa.",
+    "saved": "Irekhodi lokushisa lengezwe eseva ngempumelelo.",
+    "saveFailed": "Iphutha: isicelo eseva sehlulekile.",
+    "recipesHeading": "Amaresiphi ashiswe kukho",
+    "noRecipes": "Awakabikho amaresiphi axhunyiwe.",
+    "recipesFailed": "Amaresiphi akho awakwazanga ukulandwa, ngakho ayikho iresiphi engaxhunywa manje.",
+    "pickRecipe": "Iresiphi eshiswe kukho",
+    "linkRecipe": "Xhuma iresiphi",
+    "unlink": "Nqamula",
+    "unlinkRecipe": "Nqamula iresiphi {title}",
+    "linkFailed": "Ukuxhuma akukwazanga ukulondolozwa."
+  },
+  "notes": {
+    "title": "Amanothi",
+    "lead": "Noma yini enye okufanele ikhunjulwe mayelana nama-glaze akho.",
+    "newHeading": "Inothi elisha",
+    "titleLabel": "Isihloko",
+    "content": "Inothi",
+    "save": "Londoloza",
+    "mineHeading": "Amanothi ami alondoloziwe",
+    "noneSaved": "Akukabikho okwamanje. Amanothi alondoloziwe avela lapha.",
+    "titleMissing": "Nika inothi isihloko.",
+    "contentMissing": "Bhala inothi.",
+    "untitled": "Inothi elingenasihloko",
+    "fetchFailed": "Kube nephutha ekutholeni ulwazi lwamanothi.",
+    "saved": "Inothi lengezwe eseva ngempumelelo.",
+    "saveFailed": "Iphutha: isicelo eseva sehlulekile."
+  },
+  "trash": {
+    "title": "Udoti",
+    "lead": "Lokho okukhiphayo (amaresiphi, okokwakha, izithasiselo, amanothi, amarekhodi okushisa neseluleko) kulinda lapha izinsuku ezingu-30. Kubuyisele, noma ukususe unomphela.",
+    "listHeading": "Kudoti",
+    "none": "Udoti awunalutho.",
+    "untitled": "Akunasihloko",
+    "kinds": {
+      "recipes": "Iresiphi",
+      "materials": "Okokwakha",
+      "additives": "Isithasiselo",
+      "notes": "Inothi",
+      "firing": "Irekhodi lokushisa",
+      "advice": "Iseluleko",
+      "other": "Irekhodi"
+    },
+    "removedOn": "Kukhishwe ngomhla {date}",
+    "goesOn": "Kuzosuswa unomphela ngomhla {date}",
+    "byApp": "Kukhishwe uhlelo oluxhunyiwe",
+    "putBack": "Buyisela",
+    "putBackName": "Buyisela u-{name}",
+    "restored": "U-\"{name}\" ubuyiselwe lapho ebekhona.",
+    "restoredAlready": "U-\"{name}\" usevele ubuyiselwe.",
+    "restoreFailed": "U-\"{name}\" akakwazanga ukubuyiselwa. Sicela uzame futhi.",
+    "deleted": "U-\"{name}\" ususwe unomphela.",
+    "empty": "Thulula udoti",
+    "emptyQuestion": "Susa unomphela {count, plural, one {irekhodi elingu-#} other {wonke amarekhodi angu-#}} akudoti? Lokhu akunakuhlehliswa.",
+    "emptyYes": "Yebo, wuthulule",
+    "emptying": "Iyathulula...",
+    "emptied": "Udoti awunalutho.",
+    "emptyFailed": "Udoti awukwazanga ukuthululwa. Sicela uzame futhi.",
+    "fetchFailed": "Udoti awukwazanga ukulayishwa. Sicela uzame futhi."
+  }
+}

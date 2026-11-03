@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "I-compound engaziwa {compound} ku-formula",
+  "unknown-oxide": "I-oxide engaziwa {oxide} kokokwakha {material}",
+  "invalid-oxide-amount": "Inani elingalungile le-oxide {oxide} kokokwakha {material}",
+  "loi-range": "I-LOI yokokwakha {material} kumele okungenani ibe ngu-0 futhi ibe ngaphansi kuka-100",
+  "no-oxides": "Okokwakha {material} akunawo ama-oxide",
+  "no-name": "Okokwakha kumele kube negama",
+  "no-analysis": "Okokwakha {material} kudinga i-formula noma ukuhlaziywa",
+  "recipe-shape": "Iresiphi kumele ibe uhlu lwe-'{ material, amount }' noma imephu yamanani",
+  "invalid-amount": "Inani elingalungile lokokwakha {material}",
+  "missing-material": "Umugqa weresiphi awunakho okokwakha",
+  "unknown-material": "Okokwakha okungaziwa {material}",
+  "no-flux": "Iresiphi ayinawo ama-oxide e-flux, ngakho i-UMF ayichazeki",
+  "no-target": "Okuhlosiwe akunawo ama-oxide okufanele kuqondwe kuwo",
+  "no-materials": "Akukho okokwakha okufanele kubalwe",
+  "no-temperature": "Izinga lokushisa kokushiswa liyadingeka ukuze kusethwe i-boron",
+  "no-flux-to-rebuild": "I-glaze ayinayo i-flux engakhiwa kabusha",
+  "unknown-element": "I-element engaziwa {element} ku-{formula}",
+  "bad-formula": "Ayikwazanga ukufunda i-formula {formula}",
+  "analysis-total": "Ukuhlaziywa kokokwakha {material} kufika ku-{total}% kuhlanganise ne-LOI; bekulindelwe cishe u-100%.",
+  "stored-equivalent": "Isisindo esilinganayo esigciniwe sokokwakha {material} asihambisani ne-formula ne-LOI yakho; kusetshenziswe i-formula ne-LOI esikhundleni saso.",
+  "trace-flux": "Iresiphi inama-oxide e-flux amancane kakhulu kuphela (traces), ngakho i-UMF ayinancazelo."
+}

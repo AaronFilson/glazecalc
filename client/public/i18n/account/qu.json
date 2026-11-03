@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Yaykuy",
+    "keepHeading": "Llamk'ayniykita waqaychay",
+    "signUpHeading": "Cuentaykita kichay",
+    "signInLead": "Yapamanta allin hamusqa kay esmalte qillqaykiman.",
+    "keepLead": "{name} sutiwan llapan rurasqaykita waqaychay: correoykita huk pakasqa simitapas yapay. Mana qullqiyuqllam qhipan.",
+    "signUpLead": "Mana qullqiyuq. Ruranaykikuna, materialniykikuna, apunteykikunapas cuentaykipi pakasqam waqaychakun.",
+    "trialNote": "¿Cuentayki kanñachu? Yaykuspaqa {name} sutiwan rurasqaykitam chayman apanki. ¿Musuqchu kanki? Rantinpi waqaychanaykipaq <signup>cuentata kichay</signup>.",
+    "email": "Correo",
+    "password": "Pakasqa simi",
+    "passwordHint": "Pisimanta pisi 8 letra.",
+    "confirmation": "Pakasqa simita takyachiy",
+    "keepSignedIn": "Kay dispositivopi yaykusqata qhipachiway",
+    "passwordMissing": "Pakasqa simiykita qillqay.",
+    "createAccount": "Cuentata kichay",
+    "signIn": "Yaykuy",
+    "haveAccount": "¿Cuentayki kanñachu? <signin>Yaykuy</signin>",
+    "privacy": "Correoyki waqaychasqaykipas cuentaykita purichinallapaqmi llamk'achikun, Amazon Web Services nisqapitaq EE. UU.-pi waqaychakun. <privacy>Imaynata Glazecalc willakuyniykikunata llamk'achin</privacy>",
+    "terms": "Cuentata kichaspaqa, <terms>Llamk'achiy kamachiykunata</terms> arinichinki.",
+    "dataNotice": "Glazecalcqa mana qullqiyuq, kichasqa códigoyuq proyectom, cuentakunataq Estados Unidospi servidorkunapim waqaychakun. Yachachiykunata ñawinchayta, calculadorata pruebaytapas mana cuentayuq atinki, utaq kikiykipa copiaykita purichiyta. Kaypi cuentata kichaykichus qampa kikiykipa decisióniykim, proyectotaq manam chaymanta ima responsabilidadtapas hap'inchu. <where>Maypim cuentayki waqaychakun, akllayniykipas</where>",
+    "forgot": "¿Pakasqa simiykita qunqarqankichu? Musuqyachiy",
+    "newHere": "¿Musuqchu kanki? <signup>Mana qullqiyuq cuentata kichay</signup>",
+    "signUpFailed": "Pantay: manam cuentata kichayta atikurqanchu.",
+    "signInFailed": "Pantay: manam yaykuyta atikurqanchu.",
+    "or": "utaq",
+    "passkeySignIn": "Passkeywan yaykuy",
+    "passkeyHint": "Passkeyqa pakasqa simipa rantinpim dedo señalniykita, uyaykita utaq pantalla wichq'anata llamk'achin. Cuenta p'anqaykipi hukta yapay."
+  },
+  "secondStep": {
+    "heading": "Iskay patapi yaykuy",
+    "signingInAs": "Pakasqa simiykiqa allinmi. Huk pata aswanraq kay correowan yaykunaykipaq: {email}.",
+    "leadCode": "Autenticador aplicacióniykita kichay, Glazecalcpaq rikuchisqan códigotataq qillqay.",
+    "leadPasskey": "Yaykuyta tukuchinaykipaq passkeyniykita llamk'achiy.",
+    "leadRecovery": "Iskay patapi yaykuyta kanchachispa waqaychasqayki kutichina códigokunamanta hukta qillqay. Sapa códigoqa huk kutillam llamk'an.",
+    "code": "Autenticador aplicacióniykimanta código",
+    "codeHint": "{digits} dígitokuna. Sapa 30 segundopim musuq código rikhurin.",
+    "codeFormat": "Autenticador aplicacióniykimanta código qillqay ({digits} dígitoyuq).",
+    "recoveryCode": "Kutichina código",
+    "recoveryHint": "Kay hinam: abcde-12345.",
+    "recoveryMissing": "Kutichina códigoykikunamanta hukta qillqay.",
+    "finish": "Yaykuyta tukuchiy",
+    "usePasskey": "Passkeyta llamk'achiy",
+    "noPasskeysHere": "Kay navegadorqa manam passkeykunata llamk'achiyta atinchu. Uraypi huk ñanta llamk'achiy, utaq atiq dispositivopi yaykuy.",
+    "useRecovery": "Rantinpi kutichina códigota llamk'achiy",
+    "useApp": "Rantinpi autenticador aplicacióniykita llamk'achiy",
+    "startOver": "Musuqmanta qallariy",
+    "reloadNote": "Kay pataqa {minutes} minutom suyan. Kay p'anqata saqispa utaq yapamanta kichaspaqa, pakasqa simiykita yapamanta qillqanaykim kanqa.",
+    "expired": "Yaykuyqa ancha unaytam qhipakurqan. Ama hina kaspa, pakasqa simiykita yapamanta qillqay."
+  },
+  "passkey": {
+    "cancelled": "Passkeyqa manam llamk'achisqachu karqan: mañakuyqa saqisqam karqan utaq pachan tukukurqan, utaq kay dispositivoqa manam Glazecalcpaq passkeyniyuqchu. Ama hina kaspa, yapamanta ruray, utaq huk ñanta llamk'achiy.",
+    "registered": "Kay passkeyqa cuentaykipiñam kachkhan.",
+    "browserFailed": "Kay navegadorqa manam passkeyta llamk'achiyta atirqanchu. Ama hina kaspa, yapamanta ruray, utaq huk ñanta llamk'achiy."
+  },
+  "forgot": {
+    "heading": "Pakasqa simiykita musuqyachiy",
+    "checkInbox": "Buzónniykita, spam carpetaykitapas qhawariy. Mana imapas chayamuptinqa, correota qhawariy, yapamantataq mañakuy.",
+    "intro": "Cuentaykipa correonta qillqay, musuq pakasqa simita akllanaykipaqtaq huk enlaceta kachamusqayku.",
+    "email": "Correo:",
+    "send": "Musuqyachiy enlaceta kachay",
+    "back": "Yaykuyman kutiy",
+    "failed": "Pantay: manam musuqyachiy correota kachayta atikurqanchu. Ama hina kaspa, yapamanta ruray."
+  },
+  "reset": {
+    "heading": "Musuq pakasqa simita akllay",
+    "signIn": "Yaykuy",
+    "incomplete": "Kay p'anqaqa pakasqa simi musuqyachiy correomanta enlacetam necesitan, kaytaq mana hunt'asqachu.",
+    "askAgain": "Musuq enlaceta mañakuy",
+    "password": "Musuq pakasqa simi:",
+    "confirmation": "Musuq pakasqa simita takyachiy:",
+    "save": "Musuq pakasqa simita waqaychay",
+    "hint": "Pisimanta pisi 8 letra. Cuentaman yaykusqa sapa dispositivom lluqsichisqa kanqa.",
+    "failed": "Pantay: manam pakasqa simita t'ikrayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "secondStep": "Cuentayki iskay patapi yaykuyta llamk'achiptinqa, yaykunaykipaq autenticador aplicacióniykitam, huk passkeyta utaq huk kutichina códigotam necesitallankiraq."
+  },
+  "account": {
+    "trialTitle": "Pruebayki",
+    "trialLead": "Glazecalctam kay sutiwan pruebachkhanki: {name}.",
+    "keepHeading": "Llamk'ayniykita waqaychay",
+    "keepText": "Kay pruebaqa llapan kaqninwan kay p'unchawpim qichukunqa: {date}. Waqaychanaykipaq mana qullqiyuq cuentata kichay: ruranaykikuna, materialniykikuna, apunteykikunapas imayna kasqankullapim qhipanqa, {name} sutitaq rikuchina sutiyki qhipanqa.",
+    "createAccount": "Cuentata kichay",
+    "title": "Cuentayki",
+    "signedInAs": "Kay correowan yaykusqa: {email}.",
+    "contents": "Kay p'anqapi",
+    "changeHeading": "Pakasqa simiykita t'ikray",
+    "current": "Kunan pakasqa simi",
+    "currentMissing": "Kunan pakasqa simiykita qillqay.",
+    "password": "Musuq pakasqa simi",
+    "passwordHint": "Pisimanta pisi 8 letra. Kay cuentaman yaykusqa huk dispositivokunam lluqsichisqa kanqa.",
+    "confirmation": "Musuq pakasqa simita takyachiy",
+    "change": "Pakasqa simita t'ikray",
+    "changeFailed": "Pantay: manam pakasqa simita t'ikrayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "deleteHeading": "Cuentaykita pichay",
+    "deleteText": "Kayqa cuentaykitam llapan waqaychasqaykiwan qichun: ruranakuna, materialkuna, aditivokuna, apuntekuna, ruphachiy qillqakuna, yuyaychaykunapas. Manam kutichiyta atikunchu.",
+    "deletePassword": "Pakasqa simiyki, takyachinapaq",
+    "deletePasswordMissing": "Takyachinaykipaq pakasqa simiykita qillqay.",
+    "delete": "Cuentayta pichay",
+    "deleteFailed": "Pantay: manam cuentata pichayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "unverifiedHeading": "Correoykita takyachiy",
+    "unverifiedText": "Kay cuentata kichaptiykim huk enlaceta kay correoman kachamurqayku: {email}. Correo qampa kasqanta takyachinaykipaq kichay. Chaykamaqa mañakuptiykillam correota chayman kachayku, pakasqa simi musuqyachiy hina.",
+    "resend": "Enlaceta yapamanta kachay",
+    "resendFailed": "Pantay: manam enlaceta kachayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "emailHeading": "Correoykita t'ikray",
+    "emailText": "Musuq correomanmi huk enlaceta kachayku, kichaptiykitaq correoyki t'ikrakun. Kunan correoykimanpas willayku. Kay cuentaman yaykusqa sapa dispositivom lluqsichisqa kanqa.",
+    "newEmail": "Musuq correo",
+    "emailPassword": "Pakasqa simiyki, takyachinapaq",
+    "emailSend": "Enlaceta kachay",
+    "emailFailed": "Pantay: manam enlaceta kachayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "signOutHeading": "Tukuy maypi lluqsiy",
+    "signOutText": "Sapa dispositivopim lluqsichisunki, kaytapas, yaykuna tokenniykikunatapas rakiy enlaceykikunatapas sayachin. Huk dispositivota chinkachispa utaq hukpa yaykuyniykita hap'isqanta yuyaspa llamk'achiy.",
+    "signOutButton": "Tukuy maypi lluqsiy",
+    "signOutFailed": "Pantay: manam lluqsiyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "confirmStep": "Iskay patapi yaykuyqa kanchachisqam, chaymi qam kasqaykita takyachiy: pakasqa simiykiwan iskay ñiqin patawanpas."
+  },
+  "mfa": {
+    "heading": "Iskay patapi yaykuy",
+    "intro": "Yaykuptiyki iskay ñiqin patata mañay, pakasqa simiykiwan kuska: autenticador aplicaciónmanta huk código, utaq huk passkey. Chaymantaqa pakasqa simiykita yachaqpas manam yaykuyta atinmanchu.",
+    "loadFailed": "Manam iskay patapi yaykuyniykita apamuyta atikurqanchu. Ama hina kaspa, p'anqata yapamanta kichay.",
+    "on": "Iskay patapi yaykuyqa kanchachisqam.",
+    "onText": "Pakasqa simiykiwan iskay ñiqin patawanmi yaykunki, utaq huk passkeyllawan.",
+    "off": "Iskay patapi yaykuyqa wañuchisqam.",
+    "badgeOn": "Kanchachisqa",
+    "badgeOff": "Wañuchisqa",
+    "offText": "Kanchachinaykipaq, huk autenticador aplicaciónta allichay utaq huk passkeyta yapay.",
+    "confirmEmailFirst": "Ñawpaqta correoykita takyachiy, hanaqpi. Imayna yaykusqaykipi t'ikraykunamanta willanaykupaq, iskay ñiqin pataykita chinkachiptiyki yanapanaykupaqpas llamk'achiyku.",
+    "appHeading": "Autenticador aplicación",
+    "appText": "Celularniykipi utaq pakasqa simi waqaychanaykipi huk aplicaciónmi sapa 30 segundopi musuq códigota rikuchin, yaykuptiyki qillqanaykipaq.",
+    "addApp": "Autenticador aplicaciónta allichay",
+    "removeApp": "Autenticador aplicaciónta qichuy",
+    "added": "Yapasqa: {date}.",
+    "lastUsed": "Qhipa kuti llamk'achisqa: {date}.",
+    "notUsed": "Manaraq llamk'achisqachu.",
+    "passkeysHeading": "Passkeykuna",
+    "passkeysText": "Passkeyqa dedo señalniykiwan, uyaykiwan utaq pantalla wichq'anawanmi yaykuchisunki, kay dispositivopi utaq celularniykipi. Iskay ñiqin pataykim kanman, utaq kikillanmi yaykuchisunkiman, mana pakasqa simiykiwan.",
+    "noPasskeysHere": "Kay navegadorqa manam passkeykunata rurayta nitaq llamk'achiyta atinchu. Huk navegadorta utaq dispositivota pruebay.",
+    "addPasskey": "Passkeyta yapay",
+    "removePasskey": "Passkeyta qichuy",
+    "rename": "Sutinta t'ikray",
+    "remove": "Qichuy",
+    "renameLabel": "Musuq suti, \"{name}\" kaqpaq",
+    "saveName": "Sutita waqaychay",
+    "name": "Passkeypa sutin",
+    "nameHint": "Passkeykunata riqsinaykipaq, \"Laptop\" utaq \"Celular\" hina.",
+    "nameCheck": "Passkeyman 1-manta {most} letrakama sutita quy.",
+    "passkeyLimit": "{most} passkeykunam kapusunki, huk cuentapa aswan kapuyninmi. Hukta yapanaykipaq hukta qichuy.",
+    "codesTitle": "Kutichina códigokuna",
+    "codesLeft": "{count, plural, one {# kutichina código qhipan, {total} códigomanta.} other {# kutichina código qhipan, {total} códigomanta.}} Aplicacióniykita utaq huk passkeyta mana llamk'achiyta atispaqa, huk códigom rantinpi yaykuchisunki. Sapa códigoqa huk kutillam llamk'an.",
+    "codesLow": "Utqaylla musuq códigokunata ruray. Tukukuptinku, aplicacióniykitapas passkeyniykikunatapas chinkachiptiykiqa, manam yaykuyta atinkichu.",
+    "newCodes": "Musuq kutichina códigokunata ruray",
+    "offHeading": "Wañuchiy",
+    "offWhat": "Iskay patapi yaykuyqa kanchachisqam qhipan huk autenticador aplicación utaq huk passkey kapusuptiyki. Qhipa kaqninta qichuyqa wañuchinmi, chaymantaqa:",
+    "offPassword": "Yaykunapaqqa pakasqa simiykillatam necesitanki, chaymi yachaq pipas yaykuyta atinman.",
+    "offCodes": "Kutichina códigoykikunaqa manañam llamk'ankuchu.",
+    "offSignOut": "Cuentaykiman yaykusqa sapa huk dispositivom lluqsichisqa kanqa. Kayqa yaykusqallam qhipan.",
+    "offEmail": "Wañuchisqa kasqanmanta correota kachamusqayku.",
+    "offRemoveApp": "Iskay patapi yaykuyta wañuchiy (aplicaciónta qichun)",
+    "offRemoveAppFirst": "Wañuchiyta qallarinaykipaq aplicaciónta qichuy",
+    "offPasskeys": "{count, plural, one {Wañuchinaykipaq, passkeyniykita Passkeykuna nisqapi qichuy, hanaqpi.} other {Wañuchinaykipaq, # passkeyniykikunata Passkeykuna nisqapi qichuy, hanaqpi.}}",
+    "offPasskeysToo": "{count, plural, one {Huk passkeypas kapusunkim: Passkeykuna nisqapi qichuy, hanaqpi, aplicaciónwan kuska.} other {# passkeykunapas kapusunkim: Passkeykuna nisqapi qichuy, hanaqpi, aplicaciónwan kuska.}}",
+    "addAppText": "Huk autenticador aplicaciónta allichanaykipaq, ñawpaqta qam kasqaykita takyachiy.",
+    "removeAppText": "Autenticador aplicaciónta qichunaykipaq, qam kasqaykita takyachiy.",
+    "addPasskeyText": "Passkeyta sutichay, qam kasqaykitataq takyachiy. Chaymanta navegadorniykim passkeyta rurananpaq mañakusunki.",
+    "removePasskeyText": "\"{name}\" passkeyta qichunaykipaq, qam kasqaykita takyachiy.",
+    "newCodesText": "Musuq códigokunam ñawpaq códigoykikunata rantinku, chaykunataq manaña llamk'ankuchu. Qam kasqaykita takyachiy.",
+    "lastFactor": "Kayqa qhipa iskay ñiqin pataykim, chaymi iskay patapi yaykuyqa wañun, kutichina códigoykikunapas manaña llamk'ankuchu.",
+    "continue": "Qatiy",
+    "cancel": "Saqiy",
+    "password": "Pakasqa simiyki",
+    "factorLegend": "Iskay ñiqin pataykipas",
+    "passkeyNext": "Qatiptiyki navegadorniykim passkeyniykita mañakunqa.",
+    "passkeyReadyText": "Sulpayki. Kunan \"{name}\" passkeyta ruray: botónta ñit'iptiyki, navegadorniykim dedo señalniykita, uyaykita utaq pantalla wichq'anaykita, utaq celularniykita mañakunqa. Mana llamk'aptinqa, {minutes} minuto ukhupi yapamanta pruebayta atinki, mana yapamanta takyachispa.",
+    "passkeyCreate": "Kunan passkeyta yapay",
+    "useApp": "Rantinpi autenticador aplicacióniykita llamk'achiy",
+    "usePasskey": "Rantinpi passkeyta llamk'achiy",
+    "useRecovery": "Rantinpi kutichina códigota llamk'achiy",
+    "failed": "Pantay: manam t'ikrayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "setupHeading": "Autenticador aplicacióniykita allichay",
+    "setupOpen": "Autenticador aplicacióniykita kichay, huk cuentata yapaytataq akllay.",
+    "setupScan": "Kay QR códigota aplicaciónwan escaneay, utaq llaveta qillqay.",
+    "setupTap": "Botónta ñit'iy Glazecalcta kay celularpi huk autenticador aplicaciónman utaq pakasqa simi waqaychanaman yapanaykipaq.",
+    "showQr": "QR códigota rikuchiy, huk dispositivopi allichanaykipaq",
+    "setupScanOther": "Huk dispositivopi autenticador aplicaciónwan escaneay.",
+    "qrAlt": "Glazecalcta huk autenticador aplicaciónman yapanapaq QR código",
+    "key": "Llave",
+    "copyKey": "Llaveta copiay",
+    "openInApp": "Kay dispositivopi huk autenticador aplicaciónman yapay",
+    "clipboardNote": "Copiasqa qillqaqa clipboard historialniykipim qhipanman, huk dispositivoykikunamanpas chayanman. Chiqanta pakasqa simi waqaychanaykiman ch'aqtay, chaymantataq clipboard historialniykita pichay.",
+    "setupCode": "Aplicación kunan Glazecalcpaq rikuchisqan códigota qillqay ({digits} dígitoyuq)",
+    "setupFinish": "Allichayta tukuchiy",
+    "codesHeading": "Kutichina códigoykikuna",
+    "codesText": "Kaykunata mana manchakuna kitipi waqaychay, pakasqa simi waqaychanaykipi hina, utaq imprimispa papelniykikunawan waqaychay. Aplicacióniykita utaq huk passkeyta mana llamk'achiyta atispaqa, huk códigom rantinpi yaykuchisunki. Sapa códigoqa huk kutillam llamk'an. Kunallam rikuchikunku.",
+    "print": "Códigokunata imprimiy",
+    "printNote": "Sapa códigoqa huk kutillam llamk'an. Kay p'anqata mana manchakuna kitipi waqaychay.",
+    "download": "Qillqa archivo hina uraykachiy",
+    "copy": "Códigokunata copiay",
+    "copied": "Copiasqa.",
+    "copyFailed": "Manam copiayta atikurqanchu. Ama hina kaspa, qillqata akllay, copiaytaq.",
+    "saved": "Waqaycharqaniñam",
+    "fileTitle": "Glazecalc kutichina códigokuna, kay correopaq: {email}",
+    "fileNote": "Sapa códigoqa huk kutillam llamk'an. Kay archivota mana manchakuna kitipi waqaychay."
+  },
+  "export": {
+    "heading": "Willakuyniyta uraykachiy",
+    "text": "Cuentayki hap'isqan llapanmanta huk copiata huk archivopi waqaychay: sut'inchayniykikuna, allichanaykikuna, kapuq materialkuna, ruranakuna, materialkuna, aditivokuna, apuntekuna, ruphachiy qillqakuna, yuyaychaykuna, q'upapas. Manam pakasqa simiykitachu apan. Archivota pakasqa kitipi waqaychay, llapan waqaychasqaykitam hap'in.",
+    "json": "Llapanta uraykachiy (JSON)",
+    "csvText": "Utaq ruranaykikunallamanta utaq kikiykipa materialniykikunallamanta huk hoja de cálculota waqaychay, Excel, Numbers utaq Sheets nisqapi kichanaykipaq.",
+    "recipes": "Ruranakuna (CSV)",
+    "materials": "Materialkuna (CSV)"
+  },
+  "trash": {
+    "heading": "Q'upa",
+    "text": "Qillqaykimanta qichusqaykiqa Q'upapim 30 p'unchaw suyan. Chaymanta kutichiy, utaq wiñaypaq pichay.",
+    "open": "Q'upata kichay"
+  },
+  "shared": {
+    "heading": "Rakisqa ruranakuna",
+    "text": "Enlacewan rakisqayki ruranakuna, enlaceyuq pipas mana cuentayuq ñawinchayta atin. Enlaceqa huk kutillam rikuchikun, rurakuptin, chaymi kaypi manam rikuchikunmanchu. Huk ruranata yapamanta rakinaykipaq, ruranapa Aswan nisqanpi musuq enlaceta ruray.",
+    "since": "Rakisqa kay p'unchawmanta: {date}",
+    "notesShown": "Apuntekuna rikuchisqa",
+    "notesHidden": "Apuntekuna mana rikuchisqa",
+    "untitled": "Mana sutiyuq rurana",
+    "stop": "Rakiyta sayachiy",
+    "stopName": "Rakiyta sayachiy: {name}",
+    "stopped": "{name} manañam rakisqachu. Enlacenqa manañam llamk'anchu.",
+    "stopFailed": "Manam llamk'arqanchu. Ama hina kaspa, yapamanta ruray.",
+    "fetchFailed": "Rakisqa ruranaykikunata manam apamuyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "none": "Manam ima ruranatapas rakichkankichu."
+  },
+  "settings": {
+    "heading": "Allichanakuna",
+    "intro": "Cuentaykiwan waqaychasqa, chaymi sapa dispositivopi kaqlla.",
+    "saveFailed": "Allichanata manam waqaychayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "language": {
+      "legend": "Simi",
+      "help": "Aplicaciónpa, yachachiykunapa, correoykikunapapas simin. T'ikrayqa kay p'anqata chay simipi kichan.",
+      "saved": "Waqaychasqa: {language}."
+    },
+    "region": {
+      "legend": "Maypim llamk'anki",
+      "none": {
+        "label": "Mana akllasqa",
+        "saved": "Waqaychasqa: mana región akllasqa; navegadorniykim imayna kanankunata kamachin."
+      },
+      "saved": "Waqaychasqa: {region}.",
+      "help": "Chaypi rantikuq materialkuna, uraypi yupaykunapa, p'unchawkunapa, temperaturakunapa, conokunapa imayna kanankupas. Manaraq akllaptiykiqa, navegadorniykipa siminta qatinku."
+    },
+    "format": {
+      "legend": "Yupaykuna, p'unchawkunapas",
+      "auto": {
+        "label": "Simiyman regiónniyman hina",
+        "saved": "Waqaychasqa: yupaykuna p'unchawkunapas simiyki regiónniyki qillqasqanman hina."
+      },
+      "saved": "Waqaychasqa: yupaykuna p'unchawkunapas kay simipi hina: {language}.",
+      "help": "Imaynatam yupaykuna p'unchawkunapas qillqakun: 12,345.6 utaq 12.345,6, p'unchawpa killapa ñiqinpas."
+    },
+    "calendar": {
+      "legend": "Calendario",
+      "help": "P'unchawkuna rikuchikunanpaq calendario. Qillqasqayki p'unchawkunaqa calendario gregorianopim qhipanku.",
+      "gregory": {
+        "label": "Gregoriano",
+        "saved": "Waqaychasqa: p'unchawkunaqa calendario gregorianopim rikuchikun."
+      },
+      "buddhist": {
+        "label": "Thai budista era",
+        "saved": "Waqaychasqa: p'unchawkunaqa thai budista erapim rikuchikun."
+      },
+      "japanese": {
+        "label": "Japón era",
+        "saved": "Waqaychasqa: p'unchawkunaqa Japón erakunapim rikuchikun."
+      }
+    },
+    "digits": {
+      "legend": "Dígitokuna",
+      "help": "Yupaykuna rikuchikunanpaq dígitokuna. Wakin simikunaqa kikinpa dígitonkunayuqmi, árabe, bengalí, hindi hina, maypi kasqaykitaq mayqin sapa kuti kasqanta kamachin. Mayqinwanpas yupaykunata qillqayta atinki.",
+      "auto": {
+        "label": "Maypi kasqaykipi sapa kuti hina",
+        "saved": "Waqaychasqa: dígitokuna maypi kasqaykipi sapa kuti hina."
+      },
+      "western": {
+        "label": "Occidental dígitokuna, 0–9",
+        "saved": "Waqaychasqa: yupaykunaqa 0–9 dígitokunawanmi rikuchikun."
+      },
+      "native": {
+        "label": "Simipa kikin dígitonkuna, kapuptin",
+        "saved": "Waqaychasqa: yupaykunaqa simipa kikin dígitonkunapim rikuchikun, kapuptin."
+      }
+    },
+    "decimalMark": {
+      "legend": "Hayk'a kaykunata qillqay",
+      "either": {
+        "label": "Decimalkunapaq coma utaq punto",
+        "example": "12,5 utaq 12.5",
+        "saved": "Waqaychasqa: hayk'a kaykunaqa comawan utaq puntowanmi qillqakunman."
+      },
+      "comma": {
+        "label": "Decimalkunapaq coma",
+        "saved": "Waqaychasqa: hayk'a kaykunaqa decimalkunapaq comawanmi qillqakun."
+      },
+      "point": {
+        "label": "Decimalkunapaq punto",
+        "saved": "Waqaychasqa: hayk'a kaykunaqa decimalkunapaq puntowanmi qillqakun."
+      },
+      "help": "Mayqinwanpas, 1,250 hina hayk'a kayqa hanaqpi yupaykuna qillqasqa kasqanman hinam ñawinchakun."
+    },
+    "temperature": {
+      "legend": "Temperaturakuna",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Waqaychasqa: temperaturakuna °C nisqapi."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Waqaychasqa: temperaturakuna °F nisqapi."
+      },
+      "help": "Manaraq akllaptiykiqa, regiónniykitam qatin: Estados Unidospi °F, hukkunapi °C."
+    },
+    "cones": {
+      "legend": "Ruphachiy",
+      "orton": {
+        "label": "Orton conokuna",
+        "example": "cono 04, cono 6",
+        "saved": "Waqaychasqa: Orton conokunaman ruphachiy."
+      },
+      "sk": {
+        "label": "SK conokuna, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Waqaychasqa: SK conokunaman ruphachiy."
+      },
+      "temperature": {
+        "label": "Temperatura, horno controladorpa programan hina",
+        "saved": "Waqaychasqa: temperaturawan ruphachiy."
+      },
+      "help": "Manaraq akllaptiykiqa, regiónniykitam qatin: Orton conokuna EE. UU.-pi, Reino Unidopi, Irlandapi, Australiapi, Nueva Zelandapi, SK conokuna Japónpi, temperatura Europapa hukninpi."
+    },
+    "density": {
+      "legend": "Esmalte densidad",
+      "sg": {
+        "label": "Gravedad específica",
+        "saved": "Waqaychasqa: esmalte densidad gravedad específica hina.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Grados Baumé, hidrómetromanta",
+        "saved": "Waqaychasqa: esmalte densidad grados Baumépi."
+      },
+      "pint": {
+        "label": "Pinta llasa, imperial pintapi onzakuna",
+        "saved": "Waqaychasqa: esmalte densidad pinta llasa hina."
+      },
+      "help": "Imaynatam yachachiykuna huk esmaltepa rakhu kayninta nin. Manaraq akllaptiykiqa, regiónniykitam qatin: grados Baumé Italiapi Japónpipas, gravedad específica hukkunapi."
+    },
+    "currency": {
+      "legend": "Chanikunapaq qullqi",
+      "help": "Materialkunapaq qusqayki chanikuna, huk lote hayk'a chanin kasqanpas, kay qullqipim kanku. T'ikrayqa manam ñawpaqta qusqayki chanikunata t'ikranchu. Manaraq akllaptiykiqa, regiónniykitam qatin.",
+      "saved": "Waqaychasqa: chanikuna kay qullqipi: {currency}.",
+      "notConverted": "Waqaychasqa chaniykikunaqa manam t'ikrasqachu karqan: qusqayki yupaykunallam kachkhanku."
+    },
+    "theme": {
+      "legend": "K'anchay utaq tutayaq",
+      "system": {
+        "label": "Kay dispositivo allichasqa hina",
+        "saved": "Waqaychasqa: k'anchay utaq tutayaq sapa dispositivo allichasqa hina."
+      },
+      "light": {
+        "label": "K'anchay",
+        "saved": "Waqaychasqa: sapa kuti k'anchay."
+      },
+      "dark": {
+        "label": "Tutayaq",
+        "saved": "Waqaychasqa: sapa kuti tutayaq."
+      },
+      "help": "Imprimisqa ruranakunaqa sapa kutim yana yuraqpi."
+    },
+    "palette": {
+      "legend": "Llimp'ikuna",
+      "saved": "Waqaychasqa: botónkuna enlacekunapas kay llimp'ipi: {palette}.",
+      "help": "Botónkunapaq, enlacekunapaq, pestañakunapaqpas, esmaltekunapa sutinwan. Sapakamam k'anchaypi tutayaqpipas allinta ñawinchakun."
+    },
+    "weightUnit": {
+      "legend": "Lote llasakuna",
+      "grams": {
+        "label": "Gramokuna",
+        "saved": "Waqaychasqa: lote llasakunaqa gramokunapim."
+      },
+      "pounds": {
+        "label": "Librakuna, onzakunapas",
+        "saved": "Waqaychasqa: lote llasakunaqa librakunapi onzakunapim."
+      },
+      "help": "Imprimisqa lotekunapaq."
+    },
+    "gramPrecision": {
+      "legend": "Imprimisqa lotekunapi gramokuna",
+      "single": {
+        "label": "Gramopa chunka ñiqin partenkama",
+        "saved": "Waqaychasqa: gramokuna chunka ñiqin partenkama rikuchikun."
+      },
+      "full": {
+        "label": "Llapan precisión",
+        "saved": "Waqaychasqa: gramokuna llapanpi rikuchikun, 5 decimalkama."
+      },
+      "help": "Chunka ñiqin partenkama kaspapas, 10 g-manta pisi hayk'a kaykunaqa pachak ñiqin partekunatam rikuchinku (2.35 g), huch'uy prueba lotekunapi llimp'iqkunapaq."
+    },
+    "lead": {
+      "legend": "Titi (plomo, Pb)",
+      "off": {
+        "label": "Wañuchisqa: ama hayk'aqpas titita (Pb) ruranaman yapaychu nitaq niychu",
+        "saved": "Waqaychasqa: titi (Pb) manam hayk'aqpas ruranaman yapakunchu nitaq nikunchu."
+      },
+      "on": {
+        "label": "Kanchachisqa: titiyuq (Pb) materialkunaqa yapakunmanmi nikunmanmi",
+        "saved": "Waqaychasqa: titiyuq (Pb) materialkunaqa yapakunmanmi nikunmanmi."
+      },
+      "help": "Titi (plomo, Pb) samaykuspa utaq millp'uspaqa miyum, ukhupitaq huñukun, titi esmaltetaq mikhunaman ukyanaman lluqsichinmanmi; manam ima yupaypas ruphasqa saña chayta ruranchus manachus willayta atinchu. Wañuchisqa kaptin, titiyuqña ruranakunaqa imayna kasqankullapim kichakun.",
+      "warning": "Titita (Pb) fritallapi llamk'achiy, ama hayk'aqpas chawa puka, yuraq utaq qillu titi (Pb) nitaq litargirio hinachu. Huq'uyasqata chaqruy, ama hayk'aqpas rociaychu, respiradorta churakuy, huq'u pañowantaq pichay. Titi (Pb) esmalteyuq sañakunata mikhunamanta ukyanamantapas karupi waqaychay, ruphasqa sañamanta laboratoriopi metalkuna lluqsiyninmanta prueba (leach test) allinta lluqsinankama.",
+      "turnOn": "Titita kanchachiy",
+      "keepOff": "Wañuchisqata saqiy"
+    },
+    "englishTerms": {
+      "legend": "Inglés simikuna",
+      "off": {
+        "label": "Wañuchisqa",
+        "saved": "Waqaychasqa: mana inglés simikuna."
+      },
+      "on": {
+        "label": "Hatun simikunapa qhipanpi inglésta rikuchiy",
+        "saved": "Waqaychasqa: hatun simikunapa qhipanpi inglés rikuchisqa."
+      },
+      "help": "Inglés pukyukunata, Digitalfire hina, kaypa kinranpi ñawinchanapaq: hatun simikunaqa inglésninkuta paréntesis ukhupim chaskinku."
+    },
+    "notice": {
+      "legend": "T'ikray willakuy",
+      "shown": {
+        "label": "Rikuchisqa",
+        "saved": "Waqaychasqa: willakuyqa rikuchisqam."
+      },
+      "hidden": {
+        "label": "Pakasqa",
+        "saved": "Waqaychasqa: willakuyqa pakasqam. Huk siq'inmi seguridad yachachiykunapi qhipan.",
+        "savedPlain": "Waqaychasqa: willakuyqa pakasqam. Huk siq'inmi sapa p'anqapa hanaqninpi qhipan."
+      },
+      "help": "Sapa p'anqapa hanaqninpi willakuy, AI-wan t'ikrasqa kasqanta nispa, allichayta ninapaq huk ñanwan."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Correoykita takyachiy",
+    "intro": "Kay correota takyachinaykipaq botónta ñit'iy.",
+    "confirm": "Takyachiy",
+    "incomplete": "Kay p'anqaqa takyachiy correomanta enlacetam necesitan, kaytaq mana hunt'asqachu.",
+    "account": "Cuentayki",
+    "signIn": "Yaykuy",
+    "failed": "Pantay: manam correota takyachiyta atikurqanchu. Ama hina kaspa, yapamanta ruray."
+  },
+  "providers": {
+    "continueGoogle": "Googlewan qatiy",
+    "continueGithub": "GitHubwan qatiy",
+    "continueMicrosoft": "Microsoftwan yaykuy",
+    "failed": "Yaykuyqa manam llamk'arqanchu. Ama hina kaspa, yapamanta ruray.",
+    "heading": "Google, GitHub, Microsoft",
+    "intro": "Huk Google, GitHub utaq Microsoft cuentata tinkiy chaywan yaykunaykipaq. Glazecalcqa chaymanta cuentapa id-nillantam waqaychan, manam hayk'aqpas sutinta, fotonta nitaq imatapas hukta, iskay patapi yaykuypas iskay ñiqin patantam mañallanraq.",
+    "passwordless": "Kay cuentaqa manam pakasqa simiyuqchu. Correoykita, iskay patapi yaykuyta utaq yaykuy ñanniykikunata t'ikranaykipaq, utaq cuentaykita pichanaykipaq, qam kasqaykitam takyachinki Google, GitHub utaq Microsoftwan yapamanta yaykuspa, mayqintachus tinkirqanki. Huk pakasqa simitapas churayta atinki.",
+    "setPassword": "Pakasqa simi churanapaq enlaceta correoyman kachamuway",
+    "setPasswordUnlinks": "Correowan kachasqa enlacewan pakasqa simita churayqa Googleta, GitHubta, Microsoftta ima mana tinkisqatam saqin. Qhipaman yapamanta tinkiyta atinki.",
+    "setPasswordFailed": "Manam enlaceta kachayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "confirmFirst": "Ñawpaqta correoykita takyachiy, kachamusqayku enlacewan, Googleta, GitHubta utaq Microsoftta tinkinaykipaq.",
+    "linkedOn": "Tinkisqa: {date}",
+    "notLinked": "Mana tinkisqa",
+    "link": "Tinkiy: {provider}",
+    "unlink": "Tinkiyta qichuy: {provider}",
+    "linkFailed": "Manam tinkiyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "reauthIntro": "Kay cuentaqa manam pakasqa simiyuqchu, chaymi yapamanta yaykuspa qam kasqaykita takyachiy. Chaymanta 5 minuto ukhupi t'ikrayta ruray.",
+    "reauthButton": "Yapamanta yaykuy, kaywan: {provider}",
+    "reauthHeld": "Yapamanta yaykurqanki kaywan: {provider}. Qhipan 5 minutokunapi huk t'ikraytam mana pakasqa simiyuq rurayta atinki.",
+    "reauthFirst": "Ama hina kaspa, ñawpaqta yapamanta yaykuy, hanaq botónkunamanta hukwan.",
+    "reauthFailed": "Manam yapamanta yaykuyta qallariyta atikurqanchu. Ama hina kaspa, yapamanta ruray."
+  },
+  "apps": {
+    "title": "Tinkisqa aplicacionkuna",
+    "lead": "Qillqasqaykikunaman chayayta atiq yanapaqkuna, scriptkuna, aplicacionkunapas. Sapakama ima rurasqanta rikuy, Q'upaman apasqanta kutichiy, munasqaykipi sayachiy.",
+    "listHeading": "Tinkisqa aplicacionniykikuna, yaykuna tokenniykikunapas",
+    "listLabel": "Tinkisqa aplicacionkuna, yaykuna tokenkunapas",
+    "makeToken": "Yaykuna tokenta ruray",
+    "none": "Manam imapas cuentaykiman tinkisqachu.",
+    "loadFailed": "Tinkisqa aplicacionniykikunata manam apamuyta atikurqanchu. Ama hina kaspa, yapamanta pruebanaykipaq p'anqata yapamanta kichay.",
+    "kindToken": "Yaykuna token",
+    "kindOauth": "Tinkisqa aplicación",
+    "clientHost": "Aplicaciónpa direcciónnin: {host}",
+    "redirectHost": "Kayman kutichisunki: {host}",
+    "last90": "Qhipa 90 p'unchawkunapi:",
+    "nothingDone": "Qhipa 90 p'unchawkunapiqa manam imatapas t'ikrarqanchu.",
+    "count": {
+      "create": "{count, plural, one {# qillqasqa rurasqa} other {# qillqasqa rurasqa}}",
+      "change": "{count, plural, one {# qillqasqa t'ikrasqa} other {# qillqasqa t'ikrasqa}}",
+      "trash": "{count, plural, one {# qillqasqa Q'upaman apasqa} other {# qillqasqa Q'upaman apasqa}}",
+      "restore": "{count, plural, one {# qillqasqa kutichisqa} other {# qillqasqa kutichisqa}}",
+      "undo": "{count, plural, one {# t'ikray kutichisqa} other {# t'ikray kutichisqa}}"
+    },
+    "action": {
+      "create": "Rurasqa",
+      "change": "T'ikrasqa",
+      "trash": "Q'upaman apasqa:",
+      "restore": "Kutichisqa:",
+      "undo": "Huk t'ikrayta kutichirqan:"
+    },
+    "show": "Sut'inchaykunata rikuchiy",
+    "hide": "Sut'inchaykunata pakay",
+    "showNamed": "Sut'inchaykunata rikuchiy: {name}",
+    "hideNamed": "Sut'inchaykunata pakay: {name}",
+    "loading": "Apamuchkan...",
+    "detailFailed": "Manam sut'inchaykunata apamuyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "movedHeading": "Q'upaman apasqa",
+    "movedNone": "Apasqanmanta manam imapas Q'upapiraqchu kachkhan.",
+    "putAllBack": "Llapanta kutichiy",
+    "activityHeading": "Ima rurasqan",
+    "activityNone": "Qhipa 90 p'unchawkunapiqa manam imapas.",
+    "older": "Ñawpaq kaqkunata rikuchiy",
+    "revokeQuestion": "¿Qichunkichu kayta: {name}? Chay pachallam manaña llamk'anqachu.",
+    "revokeYes": "Arí, qichuy",
+    "revokeAll": "Llapanta qichuy",
+    "revokeAllQuestion": "{count, plural, one {¿Llamk'achkhaq # tinkiyta qichunkichu?} other {¿Llamk'achkhaq llapan # tinkiykunata qichunkichu?}} Chay pachallam manaña llamk'anqakuchu.",
+    "revokeFailed": "Pantay: manam qichuyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "restoreFailed": "Pantay: manam qillqasqakunata kutichiyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "selfDescribed": "kikinmanta willakuq",
+    "selfDescribedNote": "Kikinmanta qillqakurqan, chaymi sutinqa kikinmanta nisqallan.",
+    "confirm": {
+      "heading": "T'ikraykunamanta ñawpaq takyachiy",
+      "intro": "Akllay huk yanapaqmanta, aplicaciónmanta utaq yaykuna tokenmanta t'ikraychus kaypi arinichinaykikama suyan, yaykusqa. Mañakusqanmanta manam imapas t'ikrakunchu chayta ruranaykikama.",
+      "off": "Ama hayk'aqpas tapuychu",
+      "offHint": "T'ikraykunaqa chay pachallam rurakun. Sapakamam qillqasqata imayna kasqanta waqaychan, kutichinaykipaq, sapa aplicación ima rurasqantaq uraypi rikuchikun.",
+      "removals": "Qichuykunamanta ñawpaq tapuy",
+      "removalsHintSite": "Huk qillqasqata Q'upaman apay, kapuq materialniykikunamanta huk materialta qichuy, utaq huk ruranamanta huk ruphachiy qillqata qichuy, kay web p'anqapi arinichiyniykitam suyan.",
+      "all": "Sapa t'ikraymanta ñawpaq tapuy",
+      "allHint": "Sapa musuq qillqasqa, t'ikray, kutichiy, qichuypas kay web p'anqapi arinichiyniykitam suyan.",
+      "how": "Suyaq t'ikrayqa kikinpa p'anqanmi kan, yanapaq utaq script chayman enlaceta qusunki. 30 minutom suyan, chaymanta manam imapas t'ikrakunchu. \"Kay tokenmanta t'ikraykunaqa manam takyachiyta necesitankuchu\" nisqawan rurasqa yaykuna tokentaqa manam hayk'aqpas tapukunchu.",
+      "exempt": "T'ikrayninkunaqa manam takyachiyta necesitankuchu.",
+      "saveFailed": "Pantay: manam akllayniykita waqaychayta atikurqanchu. Ama hina kaspa, yapamanta ruray."
+    }
+  },
+  "connect": {
+    "title": "Huk aplicaciónta cuentaykiman tinkiy",
+    "loading": "Apamuchkan...",
+    "loadFailed": "Kay aplicación tinkiy mañakuytaqa manam apamuyta atikurqanchu. Ama hina kaspa, p'anqata yapamanta kichay, utaq aplicaciónpi musuqmanta qallariy.",
+    "answerFailed": "Pantay: kutichiyniykitaqa manam kachayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "toAccount": "Cuentaykiman riy",
+    "asking": "Kay aplicaciónmi Glazecalc cuentaykiman tinkiyta mañakuchkan:",
+    "noName": "Mana sutiyuq aplicación",
+    "selfDescribed": "kikinmanta willakuq",
+    "selfDescribedNote": "Kikinmanta qillqakurqan, chaymi kay sutiqa kikinmanta nisqallan. Glazecalcqa manam qhawarqanchu.",
+    "account": "Kay correowan yaykusqa: {email}",
+    "appAddress": "Aplicaciónpa direcciónnin",
+    "checked": "(Glazecalcpa qhawasqan)",
+    "answerTo": "Maymanmi kutichiyniyki rin",
+    "ownComputer": "Kikiykipa computadorayki",
+    "appOnDevice": "Dispositivoykipi huk aplicación, kay enlacekunata kichaq: {scheme}",
+    "loopbackWarning": "Kay aplicaciónqa kutichiytam kikiykipa computadoraykipi chaskin. Kikiyki kayta qallarirqanki chayllam saqiy, kay computadorapi, kunallan.",
+    "loopbackWriteWarning": "Qillqasqaykikunata t'ikraytapas mañakunmi: kay computadorapi kutichiyta hap'iq ima programapas chaymantaqa t'ikranmanmi.",
+    "appSchemeWarning": "Kutichiyqa dispositivoykipi kay enlacekunata kichaq aplicaciónmanmi rin: {scheme}. Chay direcciónpa hukninqa manam qhawasqachu, chaymi ima web p'anqa hinapas rikch'akunman. Iñisqayki aplicaciónmanta kayta qallarirqanki chayllam saqiy, kunallan.",
+    "elsewhereWarning": "Kay aplicaciónpa direcciónninqa kaymi: {app}, ichaqa kutichiyniykiqa kaymanmi rin: {answer}. Chayta suyarqanki chayllam saqiy.",
+    "canHeading": "Imatataq ruranman",
+    "canRead": "Ruranaykikunata, qillqaykita, materialniykikunata, kapuq materialkunata, allichanaykikunatapas ñawinchay.",
+    "readOnly": "Manam imatapas t'ikrayta atinchu.",
+    "alsoWrite": "Qillqasqaykunata t'ikrananpaqpas saqiy",
+    "writeWarning": "Chaymantaqa qillqasqaykikunata rurayta, t'ikrayta, Q'upaman apaytapas atinman. Sapa t'ikraymi qillqasqapa imayna kasqan versiónninta waqaychan, kutichinaykipaq. Ima pachapas Tinkisqa aplicacionkuna nisqapi qichuyta atinki.",
+    "privacy": "Glazecalc tinkisqa aplicacionkunamanta ima waqaychasqanqa <privacy>pakasqa kay willakuypim</privacy> kachkhan. Aplicacionniykikunata <apps>Tinkisqa aplicacionkuna</apps> nisqapi rikuyta qichuytapas atinki.",
+    "allow": "Arí niy",
+    "deny": "Mana niy",
+    "sending": "Kutichiyniykita aplicaciónman kachachkhan..."
+  },
+  "tokens": {
+    "heading": "Yaykuna tokenkuna",
+    "intro": "Yaykuna tokenqa kikiykipa AI yanapaqniykitam utaq scriptniykitam saqin cuentaykipi ruranakunata, materialkunata, apuntekunata, ruphachiy qillqakunatapas ñawinchananpaq, akllaptiykitaq t'ikrananpaq. Sapa tokenqa akllasqayki p'unchawpim manaña llamk'anchu, utaq qichusqaykillamanta.",
+    "howTo": "Imaynata huk AI yanapaqta tinkinki",
+    "seeThem": "Tokenniykikuna, tinkisqa aplicacionniykikunapas, sapakama ima rurasqan, Qichuy nisqapas Tinkisqa aplicacionkuna p'anqapim kachkhan.",
+    "seeThemLink": "Tinkisqa aplicacionkunata kichay",
+    "hint": "tukukuyninqa: {hint}",
+    "readOnly": "Ñawinchanalla",
+    "readWrite": "Ñawinchay, t'ikray",
+    "created": "rurasqa: {date}",
+    "lastUsed": "qhipa kuti llamk'achisqa: {date}",
+    "neverUsed": "mana hayk'aqpas llamk'achisqa",
+    "expires": "tukukun: {date}",
+    "expiredOn": "tukukurqan: {date}",
+    "revokedOn": "qichusqa: {date}",
+    "revoke": "Qichuy",
+    "revokeNamed": "Qichuy: {name}",
+    "revokeAll": "Llapan yaykuna tokenkunata qichuy",
+    "revokeFailed": "Pantay: manam tokenta qichuyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "loadFailed": "Yaykuna tokenniykikunata manam apamuyta atikurqanchu. Ama hina kaspa, yapamanta pruebanaykipaq p'anqata yapamanta kichay.",
+    "createHeading": "Tokenta ruray",
+    "name": "Suti",
+    "nameHint": "Riqsinaykipaq ima, mayqin yanapaqpaq utaq computadorapaq kasqan hina.",
+    "nameCheck": "Ama hina kaspa, tokenman 1-manta {most} letrakama sutita quy.",
+    "expiry": "Kaymanta manaña llamk'anchu",
+    "days": "{count, plural, one {# p'unchaw} other {# p'unchaw}}",
+    "expiryHint": "Huk token manaña llamk'anqachu chaymanta 7 p'unchaw ñawpaqtam correota kachamuyku.",
+    "expiryWriteHint": "{count, plural, one {Qillqasqaykikunata t'ikrayta atiq tokenqa aswanqa # p'unchawmantam (como máximo) manaña llamk'anchu.} other {Qillqasqaykikunata t'ikrayta atiq tokenqa aswanqa # p'unchawmantam (como máximo) manaña llamk'anchu.}}",
+    "confirmEmailFirst": "Manaraq huk tokenta ruraspa, correoykita takyachiy: kay correoman kachasqayku enlaceta kichay: {email}. Chay correopim willayku huk token rurakuptin, manaraq huk token llamk'ayta saqichkaptinpas.",
+    "resend": "Takyachiy enlaceta yapamanta kachay",
+    "scopeNote": "Tokenqa qillqasqaykikunata ñawinchayta atin, ichaqa manam t'ikrayta.",
+    "scope": "Imatataq ruranman",
+    "scopeWriteNote": "Tokenqa musuq qillqasqakunata waqaychaytapas, t'ikraytapas, Q'upaman apaytapas atin. Sapa t'ikraymi qillqasqata imayna kasqanta waqaychan, kutichinaykipaq, token ima rurasqantaq Tinkisqa aplicacionkuna nisqapi Willakuyniyta uraykachiy nisqapipas kachkhan. Qillqasqaykikunata t'ikrananpaq iñisqayki yanapaqpaq utaq scriptpaqllam kayta akllay.",
+    "confirmStep": "Tokenta ruranaykipaq, qam kasqaykita takyachiy.",
+    "create": "Tokenta ruray",
+    "failed": "Pantay: manam tokenta rurayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "limit": "{most} yaykuna tokenkunam llamk'achkhan, huk cuentapa aswan kapuyninmi. Hukta ruranaykipaq hukta qichuy.",
+    "newHeading": "Musuq tokenniykita kunan copiay",
+    "newText": "Kay kutillam rikuchikun. Hap'iq pipas qillqasqaykikunata ñawinchanmanmi manaña llamk'anankama, chaymi huk pakasqa simita hina waqaychay, kikiykipa yanapaqniykiman utaq scriptniykimanllataq quy.",
+    "newTextWrite": "Kay kutillam rikuchikun. Hap'iq pipas qillqasqaykikunata ñawinchanmanmi t'ikranmanmi manaña llamk'anankama, chaymi huk pakasqa simita hina waqaychay, kikiykipa yanapaqniykiman utaq scriptniykimanllataq quy.",
+    "newLabel": "Musuq yaykuna tokenniyki",
+    "copy": "Tokenta copiay",
+    "copied": "Copiasqa.",
+    "copyFailed": "Manam copiayta atikurqanchu. Tokenta akllay, kikiykitaq copiay.",
+    "done": "Copiarqaniñam",
+    "keptHeading": "Yaykuna tokenniykikunaqa llamk'allankum",
+    "keptText": "{count, plural, one {Pakasqa simiykita t'ikrayqa manam yaykuna tokenniykita sayachirqanchu. Hukpas yachanman nispa t'ikrarqanki chayqa, tokentapas qichuy.} other {Pakasqa simiykita t'ikrayqa manam # yaykuna tokenniykikunata sayachirqanchu. Hukpas yachanman nispa t'ikrarqanki chayqa, chaykunatapas qichuy.}}",
+    "keep": "Llamk'allachunku",
+    "signOutNote": "{count, plural, one {Yaykuna tokenniykitapas sayachinmi, wiñaypaq.} other {# yaykuna tokenniykikunatapas sayachinmi, wiñaypaq.}}",
+    "noConfirm": "Kay tokenmanta t'ikraykunaqa manam takyachiyta necesitankuchu",
+    "noConfirmHint": "Kikiyki purichisqayki scriptpaq. Tinkisqa aplicacionkuna nisqapi t'ikraykunata takyachiyta akllaptiykipas, kay tokentaqa manam hayk'aqpas tapukunchu. Kunallam, token rurakuchkaptin, kayta akllayta atinki."
+  },
+  "confirm": {
+    "title": "Huk t'ikrayta arinichiy",
+    "lead": "Cuentaykiman tinkisqa huk aplicaciónmi kay t'ikrayta rurayta mañakun. Arinichinaykikamaqa manam imapas t'ikrakunchu.",
+    "from": "Mañakuq: {name}",
+    "fromToken": "huk yaykuna token",
+    "fromConnectedApp": "huk tinkisqa aplicación",
+    "selfDescribed": "kikinmanta willakuq",
+    "selfDescribedNote": "Kikinmanta qillqakurqan, chaymi sutinqa kikinmanta nisqallan. Glazecalcqa manam qhawarqanchu.",
+    "asked": "Mañakusqa: {date}. Suyan kaykama: {time}, chaymanta manam imapas t'ikrakunchu.",
+    "removal": "Kayqa imatapas qichunmi: huk qillqasqa Q'upaman rin, maymanta 30 p'unchaw kutichiyta atinki, utaq huk material kapuq materialniykikunamanta lluqsin.",
+    "check": "Kay t'ikrayta mañakurqanki chayllam arinichiy. Mana mañakurqankichu chayqa, mana niy, aplicaciónta Tinkisqa aplicacionkuna nisqapi qichuytaq.",
+    "approve": "T'ikrayta arinichiy",
+    "decline": "Mana niy",
+    "titleBefore": "Kay aplicación manaraq t'ikrachkhaptin, sutinqa “{title}” karqan.",
+    "untitled": "(mana sutiyuq)",
+    "changedAgo": "{minutes, plural, =0 {Kay aplicaciónqa huk minutomanta pisi ñawpaqtam t'ikrarqan.} one {Kay aplicaciónqa # minuto ñawpaqtam t'ikrarqan.} other {Kay aplicaciónqa # minuto ñawpaqtam t'ikrarqan.}}",
+    "now": "Kunan:",
+    "after": "T'ikraymanta qhipaman:",
+    "showAll": "Llapanta rikuchiy",
+    "showLess": "Aswan pisita rikuchiy",
+    "othersHeading": "{count, plural, one {# t'ikray aswanraq suyachkhan, kaymanta: {name}} other {# t'ikray aswanraq suyachkhan, kaymanta: {name}}}",
+    "approveAllShown": "{count, plural, one {Llapan # t'ikrayta arinichiy, kaymanta: {name}} other {Llapan # t'ikrayta arinichiy, kaymanta: {name}}}",
+    "declineAll": "{count, plural, one {Llapan # t'ikrayta mana niy, kaymanta: {name}} other {Llapan # t'ikrayta mana niy, kaymanta: {name}}}",
+    "decided": "Kay t'ikrayqa decidisqañam karqan.",
+    "notFound": "Kay direcciónpiqa manam ima t'ikraypas suyachkhanchu. Arinichisqaña utaq mana nisqaña kanman, 30 minutomanta aswan suyarqan, utaq huk cuentapaq.",
+    "signIn": "T'ikray kaqnin cuentawan Glazecalcman yaykuy, chaymantataq kay enlaceta yapamanta kichay.",
+    "signInLink": "Yaykuy",
+    "loadFailed": "T'ikraytaqa manam apamuyta atikurqanchu. Ama hina kaspa, yapamanta pruebanaykipaq p'anqata yapamanta kichay.",
+    "failed": "Pantay: manam kutichiyniykita kachayta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
+    "apps": "Tinkisqa aplicacionniykikunata rikuy"
+  }
+}

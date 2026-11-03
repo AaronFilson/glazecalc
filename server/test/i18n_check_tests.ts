@@ -91,6 +91,21 @@ describe('message checks', () => {
     expect(numbersIn('Queime a 1.222 °C, depois 1.240 °C, com 1,5% e 12.500 g.', 'pt-BR')).to.eql(l1);
     expect(numbersIn('Queime a 1222 °C, depois 1240 °C, com 1,5% e 12.500 g.', 'pt-BR')).to.eql(l1);
     expect(numbersIn('Quema a 1222 °C, luego 1240 °C, con 1.5 % y 12,500 g.', 'es-419')).to.eql(l1);
+    // Wave L2: Swahili and Amharic write 0–9 with a decimal point and a comma for thousands, as English does;
+    // Amharic's own full stop (።) and comma (፣) end a sentence or a clause after a figure.
+    expect(numbersIn('Choma hadi 1240 °C, kisha 1222 °C, kwa 1.5% na 12,500 g.', 'sw')).to.eql(l1);
+    expect(numbersIn('እስከ 1240 °C፣ ከዚያ 1222 °C፣ በ1.5% እና 12,500 g።', 'am')).to.eql(l1);
+    // Waves L3 and L4: Afrikaans writes a decimal comma and groups with a space; the others write as English,
+    // Yoruba's tone marks and Hausa's hooked letters beside a figure, Quechua's suffixes after a hyphen.
+    // A plain space is no group: 12 500 reads as two numbers, so Afrikaans' sheet asks for U+00A0.
+    expect(numbersIn('Bak tot 1222 °C, dan 1240 °C, met 1,5% en 12 500 g.', 'af')).not.to.eql(l1);
+    expect(numbersIn('Bak tot 1222 °C, dan 1240 °C, met 1,5% en 12 500 g.', 'af')).to.eql(l1);
+    expect(numbersIn('Gasa har zuwa 1222 °C, sannan 1240 °C, da 1.5% da 12,500 g.', 'ha')).to.eql(l1);
+    expect(numbersIn('Ẹ sun dé 1222 °C, lẹ́yìn náà 1240 °C, pẹ̀lú 1.5% àti 12,500 g.', 'yo')).to.eql(l1);
+    expect(numbersIn('Shisa kuze kube ku-1222 °C, bese ku-1240 °C, nge-1.5% no-12,500 g.', 'zu')).to.eql(l1);
+    expect(numbersIn('Gbaa ọkụ ruo 1222 °C, mgbe ahụ 1240 °C, na 1.5% na 12,500 g.', 'ig')).to.eql(l1);
+    expect(numbersIn('Gub ilaa 1222 °C, kadib 1240 °C, 1.5% iyo 12,500 g.', 'so')).to.eql(l1);
+    expect(numbersIn('1222 °C-kama ruphachiy, chaymanta 1240 °C-kama, 1.5%-wan 12,500 g-wan.', 'qu')).to.eql(l1);
   });
 
   describe('in the languages of East and Southeast Asia, and Turkish', () => {
@@ -353,6 +368,18 @@ describe('message checks', () => {
           'pt-BR',
           '{count, plural, one {Esta chave} many {Estas # de chaves} other {Estas # chaves}}',
           '{count, plural, =1 {Esta chave} one {# chave} many {Estas # de chaves} other {Estas # chaves}}'
+        ],
+        // Wave L2: Amharic's `one` is 0 and 1 too (CLDR am: i = 0 or n = 1).
+        [
+          'am',
+          '{count, plural, one {ይህ የይለፍ ቁልፍ} other {እነዚህ # የይለፍ ቁልፎች}}',
+          '{count, plural, =1 {ይህ የይለፍ ቁልፍ} one {# የይለፍ ቁልፍ} other {እነዚህ # የይለፍ ቁልፎች}}'
+        ],
+        // Wave L4: Zulu's `one` is 0 and 1 too (CLDR zu: i = 0 or n = 1).
+        [
+          'zu',
+          '{count, plural, one {Le passkey} other {Lawa ma-passkey angu-#}}',
+          '{count, plural, =1 {Le passkey} one {I-passkey #} other {Lawa ma-passkey angu-#}}'
         ]
       ];
       for (const [language, was, fixed] of messages) {
@@ -361,6 +388,16 @@ describe('message checks', () => {
         ]);
         expect(compareMessage(language, 'k', passkey, fixed), language).to.eql([]);
       }
+    });
+
+    it("asks nothing of Swahili, whose `one` is 1 alone, as English's", () => {
+      expect(compareMessage('sw', 'k', passkey, '{count, plural, one {Ufunguo huu} other {Funguo hizi #}}')).to.eql([]);
+      // Waves L3 and L4: Afrikaans, Hausa, Somali and Quechua as English; Yoruba and Igbo with `other` alone.
+      expect(
+        compareMessage('af', 'k', passkey, '{count, plural, one {Hierdie passkey} other {Hierdie # passkeys}}')
+      ).to.eql([]);
+      expect(compareMessage('yo', 'k', passkey, '{count, plural, other {Àwọn passkey # yìí}}')).to.eql([]);
+      expect(compareMessage('ig', 'k', passkey, '{count, plural, other {Passkey # ndị a}}')).to.eql([]);
     });
 
     it('asks nothing of a language whose "one" is only 1, or of an English with its own =0 or a # in its "one"', () => {

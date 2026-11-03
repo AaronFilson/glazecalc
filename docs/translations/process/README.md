@@ -317,3 +317,30 @@ Brazil reads it, and Angola and Mozambique keep `pt-PT`. What the wave taught:
   NOM-018-STPS-2015 does, not Spain's FDS.
 
 Still open: native reviewers for both (the Native check rows).
+
+## Africa, wave L2: Swahili and Amharic (both live)
+
+Round 10, on the same rules as L1, with the reference pages translated in the same wave (the plan and log are in
+scratch/round10/c-l2/ in the main checkout). `sw` (Kiswahili, docs/translations/sw.md) and `am` (አማርኛ,
+docs/translations/am.md) went live with `go-live.mjs sw` and `go-live.mjs am` on 2026-11-01, both with
+`reference: true` and the plain notice (Amharic's was set ahead of the wave; Swahili's is the owner's decision of
+2026-11-01). Kenya, which already listed Swahili, offers it; Tanzania, Uganda and Ethiopia are not regions yet. Amharic
+is written with Ethiopic punctuation (። ፣ ፤, and ፥ for colons in prose), digits 0–9, Gregorian dates and the 24-hour
+clock; Swahili never uses Swahili time. Lead is always named with "(Pb)" in both languages. go-live.mjs wrote
+Amharic's density example as "አንጻራዊ ክብደት 1.45", repeating its label "አንጻራዊ ክብደት (SG)" (the label's "(SG)" kept
+the repeat check from seeing it); it was set to the number alone by hand.
+
+Still open: native reviewers for both (the Native check rows).
+
+## Africa and Latin America, waves L3 and L4: Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua (all live)
+
+Round 10, on the same rules as L2, on L2's branch (the plan and log are in scratch/round10/c-l34/ in the main
+checkout). `af`, `ha`, `yo`, `zu`, `ig`, `so` and `qu` went live with `go-live.mjs <code>` on 2026-11-02, each with
+`reference: true`; all but Afrikaans carry the plain notice (the owner's decisions). Quechua is Southern Quechua
+(Cusco-Collao) and had the owner's extra review. South Africa, which already listed Afrikaans and Zulu, offers them;
+Nigeria, Peru, Bolivia and Ecuador are not regions yet. go-live.mjs wrote the density example as "SG 1.45" for Hausa,
+Yoruba, Igbo and Somali, whose labels end in "(SG)", so it repeated the label as Amharic's did; each was set to
+"1.45" by hand. Zulu ("i-SG 1.45", label "I-specific gravity") and Quechua ("SG 1.45", label "Gravedad específica")
+were left as written.
+
+Still open: native reviewers for all seven (the Native check rows).

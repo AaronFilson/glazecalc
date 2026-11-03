@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Banye",
+    "keepHeading": "Debe ọrụ gị",
+    "signUpHeading": "Mepụta akaụntụ gị",
+    "signInLead": "Nnọọ ọzọ n'akwụkwọ ndetu glaze gị.",
+    "keepLead": "Debe ihe niile i mere dịka {name}: tinye email gị na okwuntughe. Ọ ka dị n'efu.",
+    "signUpLead": "N'efu. Usoro glaze gị, ihe gị na ndetu gị na-anọ na nzuzo n'akaụntụ gị.",
+    "trialNote": "I nwerela akaụntụ? Ịbanye na-ebubata ihe i mere dịka {name} n'ime ya. Ị bụ onye ọhụrụ? <signup>Mepụta akaụntụ</signup> iji debe ya kama.",
+    "email": "Email",
+    "password": "Okwuntughe",
+    "passwordHint": "Opekata mpe mkpụrụedemede 8.",
+    "confirmation": "Kwado okwuntughe",
+    "keepSignedIn": "Mee ka m nọrọ n'ime akaụntụ na ngwaọrụ a",
+    "passwordMissing": "Tinye okwuntughe gị.",
+    "createAccount": "Mepụta akaụntụ",
+    "signIn": "Banye",
+    "haveAccount": "I nwerela akaụntụ? <signin>Banye</signin>",
+    "privacy": "A na-eji email gị na ihe ị chekwara naanị iji rụọ akaụntụ gị, a na-edebekwa ha na Amazon Web Services na US. <privacy>Otu Glazecalc si ejikwa data gị</privacy>",
+    "terms": "Site n'imepụta akaụntụ, ị kwenyere na <terms>Usoro ojiji</terms>.",
+    "dataNotice": "Glazecalc bụ ọrụ n'efu, isi mmalite mepere emepe, a na-edebekwa akaụntụ na sava dị na United States. Ị nwere ike ịgụ ntuziaka ma nwaa ihe ngụkọ n'enweghị akaụntụ, ma ọ bụ gbaa mbipụta nke gị. Ma ị ga-emepụta akaụntụ ebe a bụ mkpebi nke gị, ọrụ ahụ anaghị anabata ọrụ ọ bụla maka ya. <where>Ebe a na-edebe akaụntụ gị, na nhọrọ gị</where>",
+    "forgot": "I chefuru okwuntughe gị? Tọgharịa ya",
+    "newHere": "Ị bụ onye ọhụrụ? <signup>Mepụta akaụntụ n'efu</signup>",
+    "signUpFailed": "Njehie: enweghị ike imepụta akaụntụ ahụ.",
+    "signInFailed": "Njehie: enweghị ike ịbanye.",
+    "or": "ma ọ bụ",
+    "passkeySignIn": "Banye site na passkey",
+    "passkeyHint": "Passkey na-eji mkpịsị aka gị, ihu gị ma ọ bụ mkpọchi ihuenyo kama okwuntughe. Tinye otu na ibe akaụntụ gị."
+  },
+  "secondStep": {
+    "heading": "Mbanye nzọụkwụ abụọ",
+    "signingInAs": "Okwuntughe gị ziri ezi. Otu nzọụkwụ ọzọ iji banye dịka {email}.",
+    "leadCode": "Mepee ngwa authenticator gị ma tinye koodu ọ na-egosi maka Glazecalc.",
+    "leadPasskey": "Jiri passkey gị mechaa ịbanye.",
+    "leadRecovery": "Tinye otu n'ime koodu mgbake i chekwara mgbe ị gbanyere mbanye nzọụkwụ abụọ. Koodu ọ bụla na-arụ ọrụ otu ugboro.",
+    "code": "Koodu si na ngwa authenticator gị",
+    "codeHint": "Ọnụọgụ {digits}. Koodu ọhụrụ na-apụta kwa sekọnd 30.",
+    "codeFormat": "Tinye koodu nwere ọnụọgụ {digits} si na ngwa authenticator gị.",
+    "recoveryCode": "Koodu mgbake",
+    "recoveryHint": "Ọ dị ka abcde-12345.",
+    "recoveryMissing": "Tinye otu n'ime koodu mgbake gị.",
+    "finish": "Mechaa ịbanye",
+    "usePasskey": "Jiri passkey",
+    "noPasskeysHere": "Brawza a enweghị ike iji passkey. Jiri ụzọ ọzọ dị n'okpuru, ma ọ bụ banye na ngwaọrụ nwere ike.",
+    "useRecovery": "Jiri koodu mgbake kama",
+    "useApp": "Jiri ngwa authenticator gị kama",
+    "startOver": "Malite ọzọ",
+    "reloadNote": "Nzọụkwụ a na-eche nkeji {minutes}. Ọ bụrụ na ị hapụ ma ọ bụ bugharịa ibe a, ị ga-etinye okwuntughe gị ọzọ.",
+    "expired": "Ịbanye were ogologo oge. Biko tinye okwuntughe gị ọzọ."
+  },
+  "passkey": {
+    "cancelled": "E jighị passkey ahụ: a kagburu arịrịọ ahụ ma ọ bụ oge ya gafere, ma ọ bụ ngwaọrụ a enweghị passkey maka Glazecalc. Biko nwaa ọzọ, ma ọ bụ jiri ụzọ ọzọ.",
+    "registered": "Passkey a dịlarị n'akaụntụ gị.",
+    "browserFailed": "Brawza a enweghị ike iji passkey ahụ. Biko nwaa ọzọ, ma ọ bụ jiri ụzọ ọzọ."
+  },
+  "forgot": {
+    "heading": "Tọgharịa okwuntughe gị",
+    "checkInbox": "Lelee igbe ozi gị na folda junk. Ọ bụrụ na ọ dịghị ihe rutere, lelee adreesị ahụ ma rịọ ọzọ.",
+    "intro": "Tinye email maka akaụntụ gị, anyị ga-ezitekwara gị njikọ iji họrọ okwuntughe ọhụrụ.",
+    "email": "Email:",
+    "send": "Zipu njikọ ịtọgharị",
+    "back": "Laghachi na mbanye",
+    "failed": "Njehie: enweghị ike iziga email ịtọgharị ahụ. Biko nwaa ọzọ."
+  },
+  "reset": {
+    "heading": "Họrọ okwuntughe ọhụrụ",
+    "signIn": "Banye",
+    "incomplete": "Ibe a chọrọ njikọ si n'email ịtọgharị okwuntughe, nke a ezughị ezu.",
+    "askAgain": "Rịọ njikọ ọhụrụ",
+    "password": "Okwuntughe ọhụrụ:",
+    "confirmation": "Kwado okwuntughe ọhụrụ:",
+    "save": "Chekwaa okwuntughe ọhụrụ",
+    "hint": "Opekata mpe mkpụrụedemede 8. A ga-ewepụ ngwaọrụ ọ bụla banyere n'akaụntụ ahụ.",
+    "failed": "Njehie: enweghị ike ịgbanwe okwuntughe ahụ. Biko nwaa ọzọ.",
+    "secondStep": "Ọ bụrụ na akaụntụ gị na-eji mbanye nzọụkwụ abụọ, ị ka ga-achọ ngwa authenticator gị, passkey ma ọ bụ koodu mgbake iji banye."
+  },
+  "account": {
+    "trialTitle": "Nnwale gị",
+    "trialLead": "Ị na-anwale Glazecalc dịka {name}.",
+    "keepHeading": "Debe ọrụ gị",
+    "keepText": "A ga-ewepụ nnwale a na ihe niile dị n'ime ya na {date}. Mepụta akaụntụ n'efu iji debe ha: usoro glaze gị, ihe gị na ndetu gị na-anọ otu ha dị, {name} na-anọkwa dịka aha ngosi gị.",
+    "createAccount": "Mepụta akaụntụ",
+    "title": "Akaụntụ gị",
+    "signedInAs": "I banyere dịka {email}.",
+    "contents": "Na ibe a",
+    "changeHeading": "Gbanwee okwuntughe gị",
+    "current": "Okwuntughe ugbu a",
+    "currentMissing": "Tinye okwuntughe gị ugbu a.",
+    "password": "Okwuntughe ọhụrụ",
+    "passwordHint": "Opekata mpe mkpụrụedemede 8. A ga-ewepụ ngwaọrụ ndị ọzọ banyere n'akaụntụ a.",
+    "confirmation": "Kwado okwuntughe ọhụrụ",
+    "change": "Gbanwee okwuntughe",
+    "changeFailed": "Njehie: enweghị ike ịgbanwe okwuntughe ahụ. Biko nwaa ọzọ.",
+    "deleteHeading": "Hichapụ akaụntụ gị",
+    "deleteText": "Nke a na-ewepụ akaụntụ gị na ihe niile ị chekwara: usoro glaze, ihe, ihe mgbakwunye, ndetu, ndekọ ọkụ na ndụmọdụ. A gaghị enwe ike ịmehie ya.",
+    "deletePassword": "Okwuntughe gị, iji kwado",
+    "deletePasswordMissing": "Tinye okwuntughe gị iji kwado.",
+    "delete": "Hichapụ akaụntụ m",
+    "deleteFailed": "Njehie: enweghị ike ihichapụ akaụntụ ahụ. Biko nwaa ọzọ.",
+    "unverifiedHeading": "Kwado email gị",
+    "unverifiedText": "Anyị zigara njikọ na {email} mgbe i mere akaụntụ a. Mepee ya iji kwado na adreesị ahụ bụ nke gị. Ruo mgbe ahụ, anyị na-eziga ozi na ya naanị mgbe ị rịọrọ, dịka ịtọgharị okwuntughe.",
+    "resend": "Zipu njikọ ahụ ọzọ",
+    "resendFailed": "Njehie: enweghị ike iziga njikọ ahụ. Biko nwaa ọzọ.",
+    "emailHeading": "Gbanwee email gị",
+    "emailText": "Anyị na-eziga njikọ na adreesị ọhụrụ ahụ, email gị na-agbanwekwa mgbe i mepere ya. Anyị na-agwakwa adreesị gị ugbu a. A ga-ewepụ ngwaọrụ ọ bụla banyere n'akaụntụ a.",
+    "newEmail": "Email ọhụrụ",
+    "emailPassword": "Okwuntughe gị, iji kwado",
+    "emailSend": "Zipu njikọ ahụ",
+    "emailFailed": "Njehie: enweghị ike iziga njikọ ahụ. Biko nwaa ọzọ.",
+    "signOutHeading": "Pụọ ebe niile",
+    "signOutText": "Na-ewepụ gị na ngwaọrụ ọ bụla, gụnyere nke a, ma na-akwụsị token nnweta gị na njikọ nkesa gị. Jiri ya ma ọ bụrụ na ngwaọrụ furu gị ma ọ bụ i chere na onye ọzọ nwere mbanye gị.",
+    "signOutButton": "Pụọ ebe niile",
+    "signOutFailed": "Njehie: enweghị ike ịpụ. Biko nwaa ọzọ.",
+    "confirmStep": "Mbanye nzọụkwụ abụọ gbanyere, ya mere kwado na ọ bụ gị: okwuntughe gị na nzọụkwụ nke abụọ."
+  },
+  "mfa": {
+    "heading": "Mbanye nzọụkwụ abụọ",
+    "intro": "Rịọ nzọụkwụ nke abụọ mgbe ị na-abanye, tinyere okwuntughe gị: koodu si na ngwa authenticator, ma ọ bụ passkey. Mgbe ahụ onye matara okwuntughe gị ka enweghị ike ịbanye.",
+    "loadFailed": "Enweghị ike ibugo mbanye nzọụkwụ abụọ gị. Biko bugharịa ibe ahụ.",
+    "on": "Mbanye nzọụkwụ abụọ gbanyere.",
+    "onText": "Ị na-abanye site n'okwuntughe gị na nzọụkwụ nke abụọ, ma ọ bụ site na passkey naanị.",
+    "off": "Mbanye nzọụkwụ abụọ gbanyụrụ.",
+    "badgeOn": "Gbanyere",
+    "badgeOff": "Gbanyụrụ",
+    "offText": "Iji gbanye ya, hazie ngwa authenticator ma ọ bụ tinye passkey.",
+    "confirmEmailFirst": "Kwado email gị mbụ, n'elu. Anyị na-eji ya agwa gị maka mgbanwe n'otu ị si abanye, na inyere aka ma ọ bụrụ na nzọụkwụ nke abụọ gị efuo.",
+    "appHeading": "Ngwa authenticator",
+    "appText": "Ngwa dị na ekwentị gị ma ọ bụ na ihe njikwa okwuntughe gị na-egosi koodu ọhụrụ kwa sekọnd 30, iji tinye mgbe ị na-abanye.",
+    "addApp": "Hazie ngwa authenticator",
+    "removeApp": "Wepụ ngwa authenticator",
+    "added": "Agbakwunyere ya na {date}.",
+    "lastUsed": "E jiri ya ikpeazụ na {date}.",
+    "notUsed": "E jibeghị ya.",
+    "passkeysHeading": "Passkey",
+    "passkeysText": "Passkey na-eme ka ị banye site na mkpịsị aka gị, ihu gị ma ọ bụ mkpọchi ihuenyo, na ngwaọrụ a ma ọ bụ ekwentị gị. Ọ nwere ike ịbụ nzọụkwụ nke abụọ gị, ma ọ bụ mee ka ị banye n'onwe ya, n'enweghị okwuntughe gị.",
+    "noPasskeysHere": "Brawza a enweghị ike ịme ma ọ bụ iji passkey. Nwaa brawza ma ọ bụ ngwaọrụ ọzọ.",
+    "addPasskey": "Tinye passkey",
+    "removePasskey": "Wepụ passkey ahụ",
+    "rename": "Gbanwee aha",
+    "remove": "Wepụ",
+    "renameLabel": "Aha ọhụrụ maka \"{name}\"",
+    "saveName": "Chekwaa aha ahụ",
+    "name": "Aha maka passkey ahụ",
+    "nameHint": "Ka i nwee ike ịmata passkey gị iche, dịka \"Laptop\" ma ọ bụ \"Ekwentị\".",
+    "nameCheck": "Nye passkey ahụ aha nwere mkpụrụedemede 1 ruo {most}.",
+    "passkeyLimit": "I nwere passkey {most}, nke kacha akaụntụ nwere ike inwe. Wepụ otu iji tinye ọzọ.",
+    "codesTitle": "Koodu mgbake",
+    "codesLeft": "{count, plural, other {Koodu mgbake # n'ime {total} fọdụrụ.}} Ọ bụrụ na ị nweghị ike iji ngwa gị ma ọ bụ passkey, koodu na-eme ka ị banye kama. Koodu ọ bụla na-arụ ọrụ otu ugboro.",
+    "codesLow": "Mee koodu ọhụrụ n'oge na-adịghị anya. Ọ bụrụ na ha agwụ ma ngwa gị na passkey gị efuo, ị gaghị enwe ike ịbanye.",
+    "newCodes": "Mee koodu mgbake ọhụrụ",
+    "offHeading": "Ịgbanyụ ya",
+    "offWhat": "Mbanye nzọụkwụ abụọ na-anọ na-agbanye mgbe i nwere ngwa authenticator ma ọ bụ passkey. Iwepụ nke ikpeazụ n'ime ha na-agbanyụ ya, mgbe ahụ:",
+    "offPassword": "Ịbanye chọrọ naanị okwuntughe gị, ya mere onye ọ bụla matara ya nwere ike ịbanye.",
+    "offCodes": "Koodu mgbake gị na-akwụsị ịrụ ọrụ.",
+    "offSignOut": "A na-ewepụ ngwaọrụ ọ bụla ọzọ banyere n'akaụntụ gị. Nke a na-anọ n'ime.",
+    "offEmail": "Anyị na-ezitere gị email na a gbanyụrụ ya.",
+    "offRemoveApp": "Gbanyụọ mbanye nzọụkwụ abụọ (na-ewepụ ngwa ahụ)",
+    "offRemoveAppFirst": "Wepụ ngwa ahụ, iji malite ịgbanyụ ya",
+    "offPasskeys": "{count, plural, other {Iji gbanyụọ ya, wepụ passkey # gị n'okpuru Passkey, n'elu.}}",
+    "offPasskeysToo": "{count, plural, other {I nwekwara passkey #: wepụ ha n'okpuru Passkey, n'elu, tinyere ngwa ahụ.}}",
+    "addAppText": "Iji hazie ngwa authenticator, kwado mbụ na ọ bụ gị.",
+    "removeAppText": "Iji wepụ ngwa authenticator, kwado na ọ bụ gị.",
+    "addPasskeyText": "Nye passkey ahụ aha ma kwado na ọ bụ gị. Mgbe ahụ brawza gị ga-arịọ gị ime passkey ahụ.",
+    "removePasskeyText": "Iji wepụ passkey \"{name}\", kwado na ọ bụ gị.",
+    "newCodesText": "Koodu ọhụrụ na-anọchi nke ochie gị, ndị na-akwụsị ịrụ ọrụ. Kwado na ọ bụ gị.",
+    "lastFactor": "Nke a bụ nzọụkwụ nke abụọ ikpeazụ gị, ya mere mbanye nzọụkwụ abụọ na-agbanyụ, koodu mgbake gị na-akwụsịkwa ịrụ ọrụ.",
+    "continue": "Gaa n'ihu",
+    "cancel": "Kagbuo",
+    "password": "Okwuntughe gị",
+    "factorLegend": "Na nzọụkwụ nke abụọ gị",
+    "passkeyNext": "Brawza gị ga-arịọ passkey gị mgbe ị gara n'ihu.",
+    "passkeyReadyText": "Daalụ. Ugbu a mee passkey \"{name}\": mgbe ị pịrị bọtịnụ ahụ, brawza gị ga-arịọ mkpịsị aka gị, ihu gị ma ọ bụ mkpọchi ihuenyo, ma ọ bụ ekwentị gị. Ọ bụrụ na ọ rụghị ọrụ, ị nwere ike ịnwa ọzọ ruo nkeji {minutes} n'akwadoghị ọzọ.",
+    "passkeyCreate": "Tinye passkey ahụ ugbu a",
+    "useApp": "Jiri ngwa authenticator gị kama",
+    "usePasskey": "Jiri passkey kama",
+    "useRecovery": "Jiri koodu mgbake kama",
+    "failed": "Njehie: enweghị ike ime mgbanwe ahụ. Biko nwaa ọzọ.",
+    "setupHeading": "Hazie ngwa authenticator gị",
+    "setupOpen": "Mepee ngwa authenticator gị ma họrọ itinye akaụntụ.",
+    "setupScan": "Jiri ngwa ahụ nyochaa koodu QR a, ma ọ bụ pịnye igodo ahụ.",
+    "setupTap": "Pịa bọtịnụ ahụ iji tinye Glazecalc na ngwa authenticator ma ọ bụ ihe njikwa okwuntughe na ekwentị a.",
+    "showQr": "Gosi koodu QR, iji hazie ya na ngwaọrụ ọzọ",
+    "setupScanOther": "Jiri ngwa authenticator dị na ngwaọrụ nke ọzọ nyochaa ya.",
+    "qrAlt": "Koodu QR maka itinye Glazecalc na ngwa authenticator",
+    "key": "Igodo",
+    "copyKey": "Depụta igodo ahụ",
+    "openInApp": "Tinye na ngwa authenticator na ngwaọrụ a",
+    "clipboardNote": "Ederede e depụtara nwere ike ịnọ n'akụkọ clipboard gị ma rute ngwaọrụ gị ndị ọzọ. Mado ya ozugbo n'ihe njikwa okwuntughe gị, wee hichaa akụkọ clipboard gị.",
+    "setupCode": "Tinye koodu nwere ọnụọgụ {digits} ngwa ahụ na-egosi ugbu a maka Glazecalc",
+    "setupFinish": "Mechaa nhazi",
+    "codesHeading": "Koodu mgbake gị",
+    "codesText": "Debe ndị a n'ebe dị nchebe, dịka ihe njikwa okwuntughe gị, ma ọ bụ bipụta ha ma debe ha ya na akwụkwọ gị. Ọ bụrụ na ị nweghị ike iji ngwa gị ma ọ bụ passkey, koodu na-eme ka ị banye kama. Koodu ọ bụla na-arụ ọrụ otu ugboro. A na-egosi ha naanị ugbu a.",
+    "print": "Bipụta koodu ndị ahụ",
+    "printNote": "Koodu ọ bụla na-arụ ọrụ otu ugboro. Debe ibe a n'ebe dị nchebe.",
+    "download": "Budata dịka faịlụ ederede",
+    "copy": "Depụta koodu ndị ahụ",
+    "copied": "E depụtala ya.",
+    "copyFailed": "Enweghị ike idepụta. Biko họrọ ederede ahụ ma depụta ya.",
+    "saved": "Echekwala m ha",
+    "fileTitle": "Koodu mgbake Glazecalc maka {email}",
+    "fileNote": "Koodu ọ bụla na-arụ ọrụ otu ugboro. Debe faịlụ a n'ebe dị nchebe."
+  },
+  "export": {
+    "heading": "Budata data m",
+    "text": "Chekwaa mbipụta ihe niile akaụntụ gị nwere dịka otu faịlụ: nkọwa gị, ntọala, ihe ị nwere n'aka, usoro glaze, ihe, ihe mgbakwunye, ndetu, ndekọ ọkụ, ndụmọdụ na ebe mkpofu. O nweghị okwuntughe gị. Debe faịlụ ahụ n'ebe nzuzo, n'ihi na o nwere ihe niile i chekwara.",
+    "json": "Budata ihe niile (JSON)",
+    "csvText": "Ma ọ bụ chekwaa spreadsheet nke naanị usoro glaze gị ma ọ bụ naanị ihe nke gị, iji mepee na Excel, Numbers ma ọ bụ Sheets.",
+    "recipes": "Usoro glaze (CSV)",
+    "materials": "Ihe (CSV)"
+  },
+  "trash": {
+    "heading": "Ebe mkpofu",
+    "text": "Ihe i wepụrụ n'akwụkwọ ndetu gị na-eche n'Ebe mkpofu ruo ụbọchị 30. Weghachi ya site n'ebe ahụ, ma ọ bụ hichapụ ya kpamkpam.",
+    "open": "Mepee Ebe mkpofu"
+  },
+  "shared": {
+    "heading": "Usoro glaze e kesara",
+    "text": "Usoro glaze i kesara site na njikọ, nke onye ọ bụla nwere njikọ ahụ nwere ike ịgụ n'enweghị akaụntụ. A na-egosi njikọ naanị otu ugboro, mgbe e mere ya, ya mere a pụghị igosi ya ebe a. Iji kesaa usoro glaze ọzọ, mee njikọ ọhụrụ n'okpuru Ndị ọzọ nke usoro glaze ahụ.",
+    "since": "E kesara ya kemgbe {date}",
+    "notesShown": "A na-egosi ndetu",
+    "notesHidden": "A naghị egosi ndetu",
+    "untitled": "Usoro glaze enweghị aha",
+    "stop": "Kwụsị ikesa",
+    "stopName": "Kwụsị ikesa {name}",
+    "stopped": "A naghịzi ekesa {name}. Njikọ ya anaghịzi arụ ọrụ.",
+    "stopFailed": "Nke ahụ arụghị ọrụ. Biko nwaa ọzọ.",
+    "fetchFailed": "Enweghị ike ibugo usoro glaze i kesara. Biko nwaa ọzọ.",
+    "none": "Ị naghị ekesa usoro glaze ọ bụla."
+  },
+  "settings": {
+    "heading": "Ntọala",
+    "intro": "E chekwara ha ya na akaụntụ gị, ya mere ha na-adị na ngwaọrụ ọ bụla.",
+    "saveFailed": "Enweghị ike ichekwa ntọala ahụ. Biko nwaa ọzọ.",
+    "language": {
+      "legend": "Asụsụ",
+      "help": "Asụsụ ngwa ahụ, ntuziaka na email gị. Ịgbanwe ya na-emepe ibe a n'asụsụ ahụ.",
+      "saved": "E chekwara: {language}."
+    },
+    "region": {
+      "legend": "Ebe ị na-arụ ọrụ",
+      "none": {
+        "label": "Ahọrọghị",
+        "saved": "E chekwara: ahọrọghị mpaghara; ndabara na-eso brawza gị."
+      },
+      "saved": "E chekwara: {region}.",
+      "help": "Ihe a na-ere n'ebe ahụ, na ndabara maka ọnụọgụ, ụbọchị, okpomọkụ na cone dị n'okpuru. Ruo mgbe ị họọrọ, ha na-eso asụsụ brawza gị."
+    },
+    "format": {
+      "legend": "Ọnụọgụ na ụbọchị",
+      "auto": {
+        "label": "Dịka asụsụ na mpaghara m",
+        "saved": "E chekwara: ọnụọgụ na ụbọchị dịka asụsụ na mpaghara gị si ede ha."
+      },
+      "saved": "E chekwara: ọnụọgụ na ụbọchị dịka na {language}.",
+      "help": "Otu e si ede ọnụọgụ na ụbọchị: 12,345.6 ma ọ bụ 12.345,6, na usoro ụbọchị na ọnwa."
+    },
+    "calendar": {
+      "legend": "Kalenda",
+      "help": "Kalenda e ji egosi ụbọchị. Ụbọchị ị pịnyere na-anọ na kalenda Gregorian.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "E chekwara: a na-egosi ụbọchị na kalenda Gregorian."
+      },
+      "buddhist": {
+        "label": "Oge Buddhist nke Thai",
+        "saved": "E chekwara: a na-egosi ụbọchị n'oge Buddhist nke Thai."
+      },
+      "japanese": {
+        "label": "Oge Japan",
+        "saved": "E chekwara: a na-egosi ụbọchị n'oge Japan."
+      }
+    },
+    "digits": {
+      "legend": "Ọnụọgụ",
+      "help": "Mkpụrụ ọnụọgụ e ji egosi ọnụọgụ. Ụfọdụ asụsụ nwere nke ha, dịka Arabic, Bengali na Hindi, ebe ị nọ na-ekpebikwa nke a na-ejikarị. Ị nwere ike iji nke ọ bụla pịnye ọnụọgụ.",
+      "auto": {
+        "label": "Dịka a na-ejikarị ebe ị nọ",
+        "saved": "E chekwara: mkpụrụ ọnụọgụ dịka a na-ejikarị ebe ị nọ."
+      },
+      "western": {
+        "label": "Mkpụrụ ọnụọgụ Western, 0–9",
+        "saved": "E chekwara: a na-egosi ọnụọgụ site na mkpụrụ 0–9."
+      },
+      "native": {
+        "label": "Mkpụrụ ọnụọgụ nke asụsụ ahụ, ebe o nwere ha",
+        "saved": "E chekwara: a na-egosi ọnụọgụ na mkpụrụ ọnụọgụ nke asụsụ ahụ, ebe o nwere ha."
+      }
+    },
+    "decimalMark": {
+      "legend": "Ịpịnye ọnụọgụ",
+      "either": {
+        "label": "Rịkọm ma ọ bụ ntụpọ maka ntụpọ ntụ",
+        "example": "12,5 ma ọ bụ 12.5",
+        "saved": "E chekwara: a nwere ike iji rịkọm ma ọ bụ ntụpọ pịnye ọnụọgụ."
+      },
+      "comma": {
+        "label": "Rịkọm maka ntụpọ ntụ",
+        "saved": "E chekwara: a na-eji rịkọm maka ntụpọ ntụ pịnye ọnụọgụ."
+      },
+      "point": {
+        "label": "Ntụpọ maka ntụpọ ntụ",
+        "saved": "E chekwara: a na-eji ntụpọ maka ntụpọ ntụ pịnye ọnụọgụ."
+      },
+      "help": "N'ụzọ ọ bụla, a na-agụ ọnụọgụ dịka 1,250 otu e si ede ọnụọgụ gị n'elu."
+    },
+    "temperature": {
+      "legend": "Okpomọkụ",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "E chekwara: okpomọkụ na °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "E chekwara: okpomọkụ na °F."
+      },
+      "help": "Ruo mgbe ị họọrọ, nke a na-eso mpaghara gị: °F na United States, °C n'ebe ndị ọzọ."
+    },
+    "cones": {
+      "legend": "Ịgba ọkụ",
+      "orton": {
+        "label": "Cone Orton",
+        "example": "cone 04, cone 6",
+        "saved": "E chekwara: ịgba ọkụ ruo cone Orton."
+      },
+      "sk": {
+        "label": "Cone SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "E chekwara: ịgba ọkụ ruo cone SK."
+      },
+      "temperature": {
+        "label": "Okpomọkụ, dịka mmemme ihe njikwa kiln",
+        "saved": "E chekwara: ịgba ọkụ site n'okpomọkụ."
+      },
+      "help": "Ruo mgbe ị họọrọ, nke a na-eso mpaghara gị: cone Orton na US, UK, Ireland, Australia na New Zealand, cone SK na Japan, okpomọkụ na Yurop ndị ọzọ."
+    },
+    "density": {
+      "legend": "Oke glaze",
+      "sg": {
+        "label": "Specific gravity (SG)",
+        "saved": "E chekwara: oke glaze dịka specific gravity.",
+        "example": "1.45"
+      },
+      "baume": {
+        "label": "Degrees Baumé, site na hydrometer",
+        "saved": "E chekwara: oke glaze na degrees Baumé."
+      },
+      "pint": {
+        "label": "Pint weight, ounces dị na imperial pint",
+        "saved": "E chekwara: oke glaze dịka pint weight."
+      },
+      "help": "Otu ntuziaka si enye oke glaze. Ruo mgbe ị họọrọ, nke a na-eso mpaghara gị: degrees Baumé na Italy na Japan, specific gravity n'ebe ndị ọzọ."
+    },
+    "currency": {
+      "legend": "Ego maka ọnụahịa",
+      "help": "Ọnụahịa i nyere maka ihe, na ọnụ ahịa batch, dị n'ego a. Ịgbanwe ya anaghị atụgharị ọnụahịa i nyelarị. Ruo mgbe ị họọrọ, nke a na-eso mpaghara gị.",
+      "saved": "E chekwara: ọnụahịa na {currency}.",
+      "notConverted": "A tụgharịghị ọnụahịa i chekwara: ha ka bụ ọnụọgụ i nyere."
+    },
+    "theme": {
+      "legend": "Ìhè ma ọ bụ ọchịchịrị",
+      "system": {
+        "label": "Dịka e si hazie ngwaọrụ a",
+        "saved": "E chekwara: ìhè ma ọ bụ ọchịchịrị dịka e si hazie ngwaọrụ ọ bụla."
+      },
+      "light": {
+        "label": "Ìhè",
+        "saved": "E chekwara: ìhè mgbe niile."
+      },
+      "dark": {
+        "label": "Ọchịchịrị",
+        "saved": "E chekwara: ọchịchịrị mgbe niile."
+      },
+      "help": "Usoro glaze e bipụtara na-adị oji n'elu ọcha mgbe niile."
+    },
+    "palette": {
+      "legend": "Agba",
+      "saved": "E chekwara: bọtịnụ na njikọ {palette}.",
+      "help": "Maka bọtịnụ, njikọ na taabụ, a kpọrọ aha glaze. Nke ọ bụla dị mfe ịgụ na ìhè na n'ọchịchịrị."
+    },
+    "weightUnit": {
+      "legend": "Ibu batch",
+      "grams": {
+        "label": "Gram",
+        "saved": "E chekwara: ibu batch dị na gram."
+      },
+      "pounds": {
+        "label": "Pound na ounce",
+        "saved": "E chekwara: ibu batch dị na pound na ounce."
+      },
+      "help": "Maka batch e bipụtara."
+    },
+    "gramPrecision": {
+      "legend": "Gram na batch e bipụtara",
+      "single": {
+        "label": "Ruo otu ụzọ n'ụzọ iri nke gram",
+        "saved": "E chekwara: gram na-egosi ruo otu ụzọ n'ụzọ iri."
+      },
+      "full": {
+        "label": "Nkenke zuru ezu",
+        "saved": "E chekwara: gram na-egosi n'uju, ruo ebe ntụpọ ntụ 5."
+      },
+      "help": "Ruo otu ụzọ n'ụzọ iri, ọnụọgụ n'okpuru 10 g ka na-egosi otu ụzọ n'ụzọ narị (2.35 g), maka ihe na-enye agba na obere batch nnwale."
+    },
+    "lead": {
+      "legend": "Lead (Pb)",
+      "off": {
+        "label": "Gbanyụrụ: etinyela lead (Pb) na usoro glaze ma ọ bụ tụọ aro ya",
+        "saved": "E chekwara: a naghị etinye lead (Pb) na usoro glaze ma ọ bụ tụọ aro ya."
+      },
+      "on": {
+        "label": "Gbanyere: a nwere ike itinye ma tụọ aro ihe nwere lead (Pb)",
+        "saved": "E chekwara: a nwere ike itinye ma tụọ aro ihe nwere lead (Pb)."
+      },
+      "help": "Lead (Pb) bụ nsí ma e kuo ya ma ọ bụ loo ya, ọ na-agbakọkwa n'ahụ, glaze nwere lead (Pb) nwekwara ike ịhapụ ya banye na nri na ihe ọṅụṅụ; ọ dịghị ngụkọ nwere ike ịkọ ma ite a gbara ọkụ na-eme ya. Mgbe ọ gbanyụrụ, usoro glaze nwerelarị lead (Pb) ka na-emepe otu ha dị.",
+      "warning": "Jiri lead (Pb) naanị dịka frit, ọ dịghị mgbe dịka red lead esighị ọkụ (raw), white lead ma ọ bụ yellow lead ma ọ bụ litharge. Gwakọta ya mmiri mmiri, agbasala ya (spray) mgbe ọ bụla, yiri respirator ma jiri mmiri hichaa. Debe ite nwere glaze lead (Pb) n'ebe nri na ihe ọṅụṅụ na-adịghị, belụsọ ma ite ahụ a gbara ọkụ gafere nnwale ụlọ nyocha maka metal na-esi na ya apụta (leach test).",
+      "turnOn": "Gbanye lead (Pb)",
+      "keepOff": "Hapụ ya ka ọ gbanyụọ"
+    },
+    "englishTerms": {
+      "legend": "Okwu Bekee",
+      "off": {
+        "label": "Gbanyụrụ",
+        "saved": "E chekwara: enweghị okwu Bekee."
+      },
+      "on": {
+        "label": "Gosi Bekee n'azụ okwu ndị bụ isi",
+        "saved": "E chekwara: a na-egosi Bekee n'azụ okwu ndị bụ isi."
+      },
+      "help": "Maka ịgụ isi mmalite Bekee, dịka Digitalfire, n'akụkụ nke a: okwu ndị bụ isi na-enweta Bekee ha n'ime mkpọchi."
+    },
+    "notice": {
+      "legend": "Ọkwa ntụgharị",
+      "shown": {
+        "label": "A na-egosi ya",
+        "saved": "E chekwara: a na-egosi ọkwa ahụ."
+      },
+      "hidden": {
+        "label": "Ezoro ezo",
+        "saved": "E chekwara: e zoro ọkwa ahụ. Otu ahịrị ya na-anọ na ntuziaka nchekwa.",
+        "savedPlain": "E chekwara: e zoro ọkwa ahụ. Otu ahịrị ya na-anọ n'elu ibe ọ bụla."
+      },
+      "help": "Ndetu dị n'elu ibe ọ bụla na-ekwu na AI sụgharịrị ya, ya na ụzọ isi tụọ aro mmezi."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Kwado email gị",
+    "intro": "Pịa bọtịnụ ahụ iji kwado adreesị a.",
+    "confirm": "Kwado",
+    "incomplete": "Ibe a chọrọ njikọ si n'email nkwado, nke a ezughị ezu.",
+    "account": "Akaụntụ gị",
+    "signIn": "Banye",
+    "failed": "Njehie: enweghị ike ịkwado adreesị ahụ. Biko nwaa ọzọ."
+  },
+  "providers": {
+    "continueGoogle": "Gaa n'ihu na Google",
+    "continueGithub": "Gaa n'ihu na GitHub",
+    "continueMicrosoft": "Banye site na Microsoft",
+    "failed": "Ịbanye arụghị ọrụ. Biko nwaa ọzọ.",
+    "heading": "Google, GitHub na Microsoft",
+    "intro": "Jikọọ akaụntụ Google, GitHub ma ọ bụ Microsoft iji banye site na ya. Glazecalc na-edebe naanị id akaụntụ ahụ site na ya, ọ dịghị mgbe aha ya, foto ya ma ọ bụ ihe ọ bụla ọzọ, mbanye nzọụkwụ abụọ ka na-arịọkwa nzọụkwụ nke abụọ ya.",
+    "passwordless": "Akaụntụ a enweghị okwuntughe. Iji gbanwee email gị, mbanye nzọụkwụ abụọ ma ọ bụ ụzọ ị si abanye, ma ọ bụ iji hichapụ akaụntụ gị, ị na-akwado na ọ bụ gị site n'ịbanye ọzọ site na Google, GitHub ma ọ bụ Microsoft, nke ọ bụla i jikọrọ. Ị nwekwara ike ịtọ okwuntughe.",
+    "setPassword": "Zitere m njikọ iji tọọ okwuntughe",
+    "setPasswordUnlinks": "Ịtọ okwuntughe site na njikọ e zitere n'email na-ewepụkwa njikọ Google, GitHub na Microsoft. Ị nwere ike ijikọ ha ọzọ emesịa.",
+    "setPasswordFailed": "Enweghị ike iziga njikọ ahụ. Biko nwaa ọzọ.",
+    "confirmFirst": "Kwado email gị mbụ, site na njikọ anyị zitere gị, iji jikọọ Google, GitHub ma ọ bụ Microsoft.",
+    "linkedOn": "E jikọrọ ya na {date}",
+    "notLinked": "E jikọghị ya",
+    "link": "Jikọọ {provider}",
+    "unlink": "Wepụ njikọ {provider}",
+    "linkFailed": "Enweghị ike ijikọ ya. Biko nwaa ọzọ.",
+    "reauthIntro": "Akaụntụ a enweghị okwuntughe, ya mere kwado na ọ bụ gị site n'ịbanye ọzọ. Wee mee mgbanwe ahụ n'ime nkeji 5.",
+    "reauthButton": "Banye ọzọ site na {provider}",
+    "reauthHeld": "I banyere ọzọ site na {provider}. Ị nwere ike ime otu mgbanwe n'enweghị okwuntughe n'ime nkeji 5 na-abịa.",
+    "reauthFirst": "Biko banye ọzọ mbụ, site n'otu n'ime bọtịnụ ndị dị n'elu.",
+    "reauthFailed": "Enweghị ike ịmalite ịbanye ọzọ. Biko nwaa ọzọ."
+  },
+  "apps": {
+    "title": "Ngwa ejikọrọ",
+    "lead": "Ndị inyeaka, script na ngwa nwere ike iru ndekọ gị. Hụ ihe nke ọ bụla mere, weghachi ihe o bugara n'Ebe mkpofu, ma kwụsị ya mgbe ọ bụla masịrị gị.",
+    "listHeading": "Ngwa ejikọrọ gị na token nnweta",
+    "listLabel": "Ngwa ejikọrọ na token nnweta",
+    "makeToken": "Mee token nnweta",
+    "none": "Ọ dịghị ihe ejikọrọ n'akaụntụ gị.",
+    "loadFailed": "Enweghị ike ibugo ngwa ejikọrọ gị. Biko bugharịa ibe ahụ iji nwaa ọzọ.",
+    "kindToken": "Token nnweta",
+    "kindOauth": "Ngwa ejikọrọ",
+    "clientHost": "Adreesị ngwa: {host}",
+    "redirectHost": "Na-ezighachi gị na: {host}",
+    "last90": "N'ime ụbọchị 90 gara aga:",
+    "nothingDone": "Ọ gbanwebeghị ihe ọ bụla n'ime ụbọchị 90 gara aga.",
+    "count": {
+      "create": "{count, plural, other {E mere ndekọ #}}",
+      "change": "{count, plural, other {A gbanwere ndekọ #}}",
+      "trash": "{count, plural, other {E bugara ndekọ # n'Ebe mkpofu}}",
+      "restore": "{count, plural, other {E weghachiri ndekọ #}}",
+      "undo": "{count, plural, other {A mehiere mgbanwe #}}"
+    },
+    "action": {
+      "create": "Mere",
+      "change": "Gbanwere",
+      "trash": "Bugara n'Ebe mkpofu:",
+      "restore": "Weghachiri:",
+      "undo": "Mehiere mgbanwe na"
+    },
+    "show": "Gosi nkọwa",
+    "hide": "Zoo nkọwa",
+    "showNamed": "Gosi nkọwa nke {name}",
+    "hideNamed": "Zoo nkọwa nke {name}",
+    "loading": "Na-ebugo...",
+    "detailFailed": "Enweghị ike ibugo nkọwa ahụ. Biko nwaa ọzọ.",
+    "movedHeading": "E bugara n'Ebe mkpofu",
+    "movedNone": "Ọ dịghị ihe o bugara ka nọ n'Ebe mkpofu.",
+    "putAllBack": "Weghachi ha niile",
+    "activityHeading": "Ihe o mere",
+    "activityNone": "Ọ dịghị ihe n'ime ụbọchị 90 gara aga.",
+    "older": "Gosi ndị ochie",
+    "revokeQuestion": "Kagbuo {name}? Ọ na-akwụsị ịrụ ọrụ ozugbo.",
+    "revokeYes": "Ee, kagbuo",
+    "revokeAll": "Kagbuo ha niile",
+    "revokeAllQuestion": "{count, plural, other {Kagbuo njikọ # niile ka na-arụ ọrụ?}} Ha na-akwụsị ịrụ ọrụ ozugbo.",
+    "revokeFailed": "Njehie: enweghị ike ịkagbu. Biko nwaa ọzọ.",
+    "restoreFailed": "Njehie: enweghị ike iweghachi ndekọ ndị ahụ. Biko nwaa ọzọ.",
+    "selfDescribed": "kọwara onwe ya",
+    "selfDescribedNote": "O debanyere onwe ya aha, ya mere aha ya bụ naanị ihe ọ na-ekwu banyere onwe ya.",
+    "confirm": {
+      "heading": "Kwado tupu mgbanwe",
+      "intro": "Họrọ ma mgbanwe si n'onye inyeaka, ngwa ma ọ bụ token nnweta na-eche ruo mgbe i kwadoro ya ebe a, mgbe ị banyere. Ọ dịghị ihe ọ rịọrọ a na-agbanwe ruo mgbe i mere ya.",
+      "off": "Ajụla mgbe ọ bụla",
+      "offHint": "A na-eme mgbanwe ozugbo. Nke ọ bụla na-edebe ndekọ ahụ dịka ọ dị, ka i nwee ike ịmehie ya, a na-egosikwa ihe ngwa ọ bụla mere n'okpuru.",
+      "removals": "Jụọ tupu iwepụ ihe",
+      "removalsHintSite": "Ibuga ndekọ n'Ebe mkpofu, iwepụ ihe n'ihe ị nwere n'aka, ma ọ bụ iwepụ ndekọ ọkụ n'usoro glaze na-eche nkwado gị na weebụsaịtị a.",
+      "all": "Jụọ tupu mgbanwe ọ bụla",
+      "allHint": "Ndekọ ọhụrụ ọ bụla, mgbanwe, mmehie na mwepụ na-eche nkwado gị na weebụsaịtị a.",
+      "how": "Mgbanwe na-eche nwere ibe nke ya, nke onye inyeaka ma ọ bụ script na-enye gị njikọ ya. Ọ na-eche nkeji 30, mgbe ahụ ọ dịghị ihe a gbanwere. A naghị ajụ token nnweta e mere na \"Mgbanwe si na token a achọghị nkwado\" mgbe ọ bụla.",
+      "exempt": "Mgbanwe ya achọghị nkwado.",
+      "saveFailed": "Njehie: enweghị ike ichekwa nhọrọ gị. Biko nwaa ọzọ."
+    }
+  },
+  "connect": {
+    "title": "Jikọọ ngwa n'akaụntụ gị",
+    "loading": "Na-ebugo...",
+    "loadFailed": "Enweghị ike ibugo arịrịọ a ijikọ ngwa. Biko bugharịa ibe ahụ, ma ọ bụ malite ọzọ na ngwa ahụ.",
+    "answerFailed": "Njehie: enweghị ike iziga azịza gị. Biko nwaa ọzọ.",
+    "toAccount": "Gaa n'akaụntụ gị",
+    "asking": "Ngwa a na-arịọ ijikọ n'akaụntụ Glazecalc gị:",
+    "noName": "Ngwa enweghị aha",
+    "selfDescribed": "kọwara onwe ya",
+    "selfDescribedNote": "O debanyere onwe ya aha, ya mere aha a bụ naanị ihe ọ na-ekwu banyere onwe ya. Glazecalc eleleghị ya.",
+    "account": "I banyere dịka {email}",
+    "appAddress": "Adreesị ngwa ahụ",
+    "checked": "(Glazecalc lelere ya)",
+    "answerTo": "Ebe azịza gị na-aga",
+    "ownComputer": "Kọmputa nke gị",
+    "appOnDevice": "Ngwa dị na ngwaọrụ gị na-emepe njikọ {scheme}",
+    "loopbackWarning": "Ngwa a na-anata azịza ahụ na kọmputa nke gị. Kwe ya naanị ma ọ bụrụ na ọ bụ gị malitere nke a n'onwe gị, na kọmputa a, ugbu a.",
+    "loopbackWriteWarning": "Ọ na-arịọkwa ịgbanwe ndekọ gị: mmemme ọ bụla na kọmputa a natara azịza ahụ nwere ike ịgbanwe ha mgbe ahụ.",
+    "appSchemeWarning": "Azịza ahụ na-aga na ngwa ọ bụla dị na ngwaọrụ gị na-emepe njikọ {scheme}. A naghị elele akụkụ fọdụrụ nke adreesị ahụ, ya mere ọ nwere ike ịdị ka weebụsaịtị ọ bụla. Kwe ya naanị ma ọ bụrụ na ọ bụ gị malitere nke a site na ngwa ị tụkwasịrị obi, ugbu a.",
+    "elsewhereWarning": "Adreesị ngwa a bụ {app}, mana azịza gị na-aga na {answer}. Kwe ya naanị ma ọ bụrụ na ị tụrụ anya nke ahụ.",
+    "canHeading": "Ihe ọ nwere ike ime",
+    "canRead": "Gụọ usoro glaze gị, akwụkwọ ndetu, ihe, ihe ị nwere n'aka na ntọala.",
+    "readOnly": "Ọ nweghị ike ịgbanwe ihe ọ bụla.",
+    "alsoWrite": "Kwekwa ka ọ gbanwee ndekọ m",
+    "writeWarning": "Mgbe ahụ ọ ga-enwe ike ịmepụta na ịgbanwe ndekọ gị, ma buga ha n'Ebe mkpofu. Mgbanwe ọ bụla na-edebe ụdị ndekọ ahụ dịka ọ dị, ka i nwee ike ịmehie ya. Ị nwere ike ịkagbu ya oge ọ bụla na Ngwa ejikọrọ.",
+    "privacy": "Ihe Glazecalc na-edebe banyere ngwa ejikọrọ dị na <privacy>ọkwa nzuzo</privacy>. Ị nwere ike ịhụ ma kagbuo ngwa gị na <apps>Ngwa ejikọrọ</apps>.",
+    "allow": "Kwe",
+    "deny": "Ekwela",
+    "sending": "Na-eziga azịza gị na ngwa ahụ..."
+  },
+  "tokens": {
+    "heading": "Token nnweta",
+    "intro": "Token nnweta na-ekwe ka onye inyeaka AI ma ọ bụ script nke gị gụọ usoro glaze, ihe, ndetu na ndekọ ọkụ dị n'akaụntụ gị, ma, ọ bụrụ na ị họrọ, gbanwee ha. Token ọ bụla na-akwụsị ịrụ ọrụ n'ụbọchị ị họọrọ, ma ọ bụ ozugbo ị kagburu ya.",
+    "howTo": "Otu esi ejikọ onye inyeaka AI",
+    "seeThem": "Token gị na ngwa ejikọrọ, ihe nke ọ bụla mere, na Kagbuo dị na ibe Ngwa ejikọrọ.",
+    "seeThemLink": "Mepee Ngwa ejikọrọ",
+    "hint": "na-agwụ na {hint}",
+    "readOnly": "Ịgụ naanị",
+    "readWrite": "Gụọ ma gbanwee",
+    "created": "e mere {date}",
+    "lastUsed": "e jiri ikpeazụ {date}",
+    "neverUsed": "e jibeghị ya",
+    "expires": "na-agwụ {date}",
+    "expiredOn": "gwụrụ {date}",
+    "revokedOn": "a kagburu {date}",
+    "revoke": "Kagbuo",
+    "revokeNamed": "Kagbuo {name}",
+    "revokeAll": "Kagbuo token nnweta niile",
+    "revokeFailed": "Njehie: enweghị ike ịkagbu token ahụ. Biko nwaa ọzọ.",
+    "loadFailed": "Enweghị ike ibugo token nnweta gị. Biko bugharịa ibe ahụ iji nwaa ọzọ.",
+    "createHeading": "Mee token nnweta",
+    "name": "Aha",
+    "nameHint": "Ihe ị ga-eji mata ya iche, dịka onye inyeaka ma ọ bụ kọmputa ọ bụ maka ya.",
+    "nameCheck": "Biko nye token ahụ aha nwere mkpụrụedemede 1 ruo {most}.",
+    "expiry": "Na-akwụsị ịrụ ọrụ mgbe",
+    "days": "{count, plural, other {ụbọchị #}}",
+    "expiryHint": "Anyị na-ezitere gị email ụbọchị 7 tupu token akwụsị ịrụ ọrụ.",
+    "expiryWriteHint": "{count, plural, other {Token nwere ike ịgbanwe ndekọ gị na-akwụsị ịrụ ọrụ mgbe ụbọchị # gachara agaghị karịa.}}",
+    "confirmEmailFirst": "Tupu i nwee ike ime token, kwado email gị: mepee njikọ anyị zigara na {email}. Anyị na-agwa gị n'adreesị ahụ mgbe e mere token na tupu otu akwụsị ịrụ ọrụ.",
+    "resend": "Zipu njikọ nkwado ahụ ọzọ",
+    "scopeNote": "Token ahụ nwere ike ịgụ ndekọ gị mana ọ nweghị ike ịgbanwe ha.",
+    "scope": "Ihe ọ nwere ike ime",
+    "scopeWriteNote": "Token ahụ nwekwara ike ichekwa ndekọ ọhụrụ, gbanwee ha ma buga ha n'Ebe mkpofu. Mgbanwe ọ bụla na-edebe ndekọ ahụ dịka ọ dị, ka i nwee ike ịmehie ya, ihe token ahụ mere dịkwa na Ngwa ejikọrọ na na Budata data m. Họrọ nke a naanị maka onye inyeaka ma ọ bụ script ị tụkwasịrị obi ịgbanwe ndekọ gị.",
+    "confirmStep": "Iji mee token ahụ, kwado na ọ bụ gị.",
+    "create": "Mee token ahụ",
+    "failed": "Njehie: enweghị ike ime token ahụ. Biko nwaa ọzọ.",
+    "limit": "I nwere token nnweta {most} na-arụ ọrụ, nke kacha akaụntụ nwere ike inwe. Kagbuo otu iji mee ọzọ.",
+    "newHeading": "Depụta token ọhụrụ gị ugbu a",
+    "newText": "Nke a bụ naanị oge a na-egosi ya. Onye ọ bụla nwere ya nwere ike ịgụ ndekọ gị ruo mgbe ọ kwụsịrị ịrụ ọrụ, ya mere debe ya dịka okwuntughe, ma nye ya naanị onye inyeaka ma ọ bụ script nke gị.",
+    "newTextWrite": "Nke a bụ naanị oge a na-egosi ya. Onye ọ bụla nwere ya nwere ike ịgụ ma gbanwee ndekọ gị ruo mgbe ọ kwụsịrị ịrụ ọrụ, ya mere debe ya dịka okwuntughe, ma nye ya naanị onye inyeaka ma ọ bụ script nke gị.",
+    "newLabel": "Token nnweta ọhụrụ gị",
+    "copy": "Depụta token ahụ",
+    "copied": "E depụtala ya.",
+    "copyFailed": "Enweghị ike idepụta. Họrọ token ahụ ma depụta ya n'onwe gị.",
+    "done": "Edepụtala m ya",
+    "keptHeading": "Token nnweta gị ka na-arụ ọrụ",
+    "keptText": "{count, plural, other {Ịgbanwe okwuntughe gị akwụsịghị token nnweta # gị. Ọ bụrụ na i gbanwere ya n'ihi na onye ọzọ nwere ike ịma ya, kagbuokwa token ndị ahụ.}}",
+    "keep": "Debe ha",
+    "signOutNote": "{count, plural, other {Ọ na-akwụsịkwa token nnweta # gị, kpamkpam.}}",
+    "noConfirm": "Mgbanwe si na token a achọghị nkwado",
+    "noConfirmHint": "Maka script ị na-agba n'onwe gị. Ọ bụrụ na ị họrọ ịkwado mgbanwe na Ngwa ejikọrọ, a ka naghị ajụ token a mgbe ọ bụla. Ị nwere ike ịhọrọ nke a naanị ugbu a, mgbe a na-eme token ahụ."
+  },
+  "confirm": {
+    "title": "Kwado mgbanwe",
+    "lead": "Ngwa ejikọrọ n'akaụntụ gị na-arịọ ime mgbanwe a. Ọ dịghị ihe a na-agbanwe ruo mgbe i kwadoro ya.",
+    "from": "{name} rịọrọ ya",
+    "fromToken": "token nnweta",
+    "fromConnectedApp": "ngwa ejikọrọ",
+    "selfDescribed": "kọwara onwe ya",
+    "selfDescribedNote": "O debanyere onwe ya aha, ya mere aha ya bụ naanị ihe ọ na-ekwu banyere onwe ya. Glazecalc eleleghị ya.",
+    "asked": "A rịọrọ ya {date}. Ọ na-eche ruo {time}, mgbe ahụ ọ dịghị ihe a gbanwere.",
+    "removal": "Nke a na-ewepụ ihe: ndekọ na-aga n'Ebe mkpofu, ebe i nwere ike iweghachi ya ruo ụbọchị 30, ma ọ bụ ihe na-apụ n'ihe ị nwere n'aka.",
+    "check": "Kwado ya naanị ma ọ bụrụ na ị rịọrọ mgbanwe a. Ọ bụrụ na ị rịọghị, jụ ya, ma kagbuo ngwa ahụ na Ngwa ejikọrọ.",
+    "approve": "Kwado mgbanwe ahụ",
+    "decline": "Jụ",
+    "titleBefore": "Tupu ngwa a agbanwee ya, aha ya bụ “{title}”.",
+    "untitled": "(enweghị aha)",
+    "changedAgo": "{minutes, plural, =0 {Ngwa a gbanwere ya erughị otu nkeji gara aga.} other {Ngwa a gbanwere ya nkeji # gara aga.}}",
+    "now": "Ugbu a:",
+    "after": "Mgbe mgbanwe ahụ gasịrị:",
+    "showAll": "Gosi ha niile",
+    "showLess": "Gosi obere",
+    "othersHeading": "{count, plural, other {Mgbanwe # ọzọ si n'aka {name} na-eche}}",
+    "approveAllShown": "{count, plural, other {Kwado mgbanwe # niile si n'aka {name}}}",
+    "declineAll": "{count, plural, other {Jụ mgbanwe # niile si n'aka {name}}}",
+    "decided": "E kpebiela mgbanwe a.",
+    "notFound": "Ọ dịghị mgbanwe na-eche n'adreesị a. O nwere ike ịbụ na a kwadolarị ya ma ọ bụ jụọ ya, ma ọ bụ o chere karịa nkeji 30, ma ọ bụ ọ bụ maka akaụntụ ọzọ.",
+    "signIn": "Banye na Glazecalc site n'akaụntụ mgbanwe ahụ bụ maka ya, wee mepee njikọ a ọzọ.",
+    "signInLink": "Banye",
+    "loadFailed": "Enweghị ike ibugo mgbanwe ahụ. Biko bugharịa ibe ahụ iji nwaa ọzọ.",
+    "failed": "Njehie: enweghị ike iziga azịza gị. Biko nwaa ọzọ.",
+    "apps": "Hụ ngwa ejikọrọ gị"
+  }
+}

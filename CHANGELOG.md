@@ -17,7 +17,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Brazilian Portuguese** (docs/translations/pt-BR.md): the app, the emails and all five guides, live at `/pt-BR/…`,
   by the same process, after the owner read its sign-up notice and approved the standard one. Brazil now reads it, and
   a browser asking for pt-BR gets it; Portugal, Angola and Mozambique keep Portugal's Portuguese. The language picker
-  lists both under "Latin America". The README counts 48 languages.
+  lists both under "Latin America".
+- **Swahili and Amharic** (docs/translations/sw.md, am.md; wave L2): the app, the emails, all five guides and the
+  reference pages (cone chart, list of materials, each material's page), live at `/sw/…` and `/am/…`, by the same
+  process, with the safety text back-translated blind. Both carry the plain notice, as Irish and Maltese do: AI
+  translates them less well than most, so the notice says so, points to the English, and a line of it stays on every
+  page (the owner's decision for Swahili, 2026-11-01). Amharic is written in Ethiopic with its own punctuation, digits
+  0–9, Gregorian dates and the 24-hour clock. Kenya, which already listed Swahili, now offers it; the language picker
+  has an "Africa" group for both.
+- **Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua** (docs/translations/af.md, ha.md, yo.md, zu.md, ig.md,
+  so.md, qu.md; waves L3 and L4): the app, the emails, all five guides and the reference pages, live at `/af/…`,
+  `/ha/…`, `/yo/…`, `/zu/…`, `/ig/…`, `/so/…` and `/qu/…`, by the same process, with the safety text back-translated
+  blind. Afrikaans carries the standard notice; the other six the plain notice. Quechua is Southern Quechua
+  (Cusco-Collao) in Peru's official alphabet, with Spanish loans for the glaze terms, and had the owner's extra
+  review. South Africa, which already listed Afrikaans and Zulu, now offers them; the picker's "Africa" group lists
+  the six and "Latin America" Quechua. Nigeria, Peru, Bolivia and Ecuador are not regions yet. The README counts 57
+  languages.
 - **Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana as regions**, in English and the languages
   already offered: who to call, each read on an official page (Brazil's and Argentina's national poison lines, South
   Africa's Poisons Information Helpline with its own hours), the health ministries, each currency, and Orton cones

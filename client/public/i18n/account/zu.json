@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Ngena",
+    "keepHeading": "Gcina umsebenzi wakho",
+    "signUpHeading": "Vula i-akhawunti yakho",
+    "signInLead": "Siyakwamukela futhi encwadini yakho ye-glaze.",
+    "keepLead": "Gcina konke okwenze njengo-{name}: engeza i-imeyili yakho nephasiwedi. Kuhlala kumahhala.",
+    "signUpLead": "Kumahhala. Amaresiphi akho, okokwakha namanothi kugcinwa kuyimfihlo ku-akhawunti yakho.",
+    "trialNote": "Usunayo i-akhawunti? Ukungena kuletha kuyo lokho okwenze njengo-{name}. Umusha lapha? <signup>Vula i-akhawunti</signup> ukuze ukugcine esikhundleni salokho.",
+    "email": "I-imeyili",
+    "password": "Iphasiwedi",
+    "passwordHint": "Okungenani izinhlamvu ezingu-8.",
+    "confirmation": "Qinisekisa iphasiwedi",
+    "keepSignedIn": "Ngigcine ngingenile kule divayisi",
+    "passwordMissing": "Faka iphasiwedi yakho.",
+    "createAccount": "Vula i-akhawunti",
+    "signIn": "Ngena",
+    "haveAccount": "Usunayo i-akhawunti? <signin>Ngena</signin>",
+    "privacy": "I-imeyili yakho nalokho okulondolozayo kusetshenziswa kuphela ukuqhuba i-akhawunti yakho, futhi kugcinwa ku-Amazon Web Services e-US. <privacy>Indlela i-Glazecalc ephatha ngayo imininingwane yakho</privacy>",
+    "terms": "Ngokuvula i-akhawunti, uyavumelana <terms>neMigomo yokusebenzisa</terms>.",
+    "dataNotice": "I-Glazecalc iyiphrojekthi yamahhala, enomthombo ovulekile, futhi ama-akhawunti agcinwa kumaseva ase-United States. Ungafunda imihlahlandlela futhi uzame isibali ngaphandle kwe-akhawunti, noma uqhube ikhophi yakho. Ukuthi uvule i-akhawunti lapha yini kuyisinqumo sakho, futhi iphrojekthi ayemukeli umthwalo ngakho. <where>Lapho i-akhawunti yakho igcinwa khona, nokukhetha kwakho</where>",
+    "forgot": "Ukhohlwe iphasiwedi yakho? Yisethe kabusha",
+    "newHere": "Umusha lapha? <signup>Vula i-akhawunti yamahhala</signup>",
+    "signUpFailed": "Iphutha: i-akhawunti ayikwazanga ukuvulwa.",
+    "signInFailed": "Iphutha: akukwazekanga ukungena.",
+    "or": "noma",
+    "passkeySignIn": "Ngena nge-passkey",
+    "passkeyHint": "I-passkey isebenzisa isigxivizo somunwe wakho, ubuso noma ukhiye wesikrini esikhundleni sephasiwedi. Yengeze ekhasini lakho le-akhawunti."
+  },
+  "secondStep": {
+    "heading": "Ukungena ngezinyathelo ezimbili",
+    "signingInAs": "Iphasiwedi yakho ilungile. Isinyathelo esisodwa futhi ukuze ungene njengo-{email}.",
+    "leadCode": "Vula uhlelo lwakho lwe-authenticator bese ufaka ikhodi olubonisa yona ye-Glazecalc.",
+    "leadPasskey": "Sebenzisa i-passkey yakho ukuze uqede ukungena.",
+    "leadRecovery": "Faka elinye lamakhodi okubuyisela owalondoloza lapho uvula ukungena ngezinyathelo ezimbili. Ikhodi ngayinye isebenza kanye.",
+    "code": "Ikhodi evela ohlelweni lwakho lwe-authenticator",
+    "codeHint": "Izinombolo ezingu-{digits}. Ikhodi entsha ivela njalo ngemizuzwana engu-30.",
+    "codeFormat": "Faka ikhodi enezinombolo ezingu-{digits} evela ohlelweni lwakho lwe-authenticator.",
+    "recoveryCode": "Ikhodi yokubuyisela",
+    "recoveryHint": "Ibukeka njengo-abcde-12345.",
+    "recoveryMissing": "Faka elinye lamakhodi akho okubuyisela.",
+    "finish": "Qeda ukungena",
+    "usePasskey": "Sebenzisa i-passkey",
+    "noPasskeysHere": "Lesi siphequluli asikwazi ukusebenzisa ama-passkey. Sebenzisa enye indlela ngezansi, noma ungene kudivayisi engakwazi.",
+    "useRecovery": "Sebenzisa ikhodi yokubuyisela esikhundleni salokho",
+    "useApp": "Sebenzisa uhlelo lwakho lwe-authenticator esikhundleni salokho",
+    "startOver": "Qala phansi",
+    "reloadNote": "Lesi sinyathelo silinda imizuzu engu-{minutes}. Uma ushiya noma ulayisha kabusha leli khasi, kuzodingeka ufake iphasiwedi yakho futhi.",
+    "expired": "Ukungena kuthathe isikhathi eside kakhulu. Sicela ufake iphasiwedi yakho futhi."
+  },
+  "passkey": {
+    "cancelled": "I-passkey ayisetshenziswanga: isicelo sikhanseliwe noma isikhathi siphelile, noma le divayisi ayinayo i-passkey ye-Glazecalc. Sicela uzame futhi, noma usebenzise enye indlela.",
+    "registered": "Le passkey isivele iku-akhawunti yakho.",
+    "browserFailed": "Lesi siphequluli asikwazanga ukusebenzisa i-passkey. Sicela uzame futhi, noma usebenzise enye indlela."
+  },
+  "forgot": {
+    "heading": "Setha kabusha iphasiwedi yakho",
+    "checkInbox": "Hlola i-inbox yakho nefolda ye-junk. Uma kungafiki lutho, hlola ikheli bese ucela futhi.",
+    "intro": "Faka i-imeyili ye-akhawunti yakho, futhi sizokuthumelela isixhumanisi sokukhetha iphasiwedi entsha.",
+    "email": "I-imeyili:",
+    "send": "Thumela isixhumanisi sokusetha kabusha",
+    "back": "Buyela ekungeneni",
+    "failed": "Iphutha: i-imeyili yokusetha kabusha ayikwazanga ukuthunyelwa. Sicela uzame futhi."
+  },
+  "reset": {
+    "heading": "Khetha iphasiwedi entsha",
+    "signIn": "Ngena",
+    "incomplete": "Leli khasi lidinga isixhumanisi esivela ku-imeyili yokusetha kabusha iphasiwedi, futhi lesi asiphelele.",
+    "askAgain": "Cela isixhumanisi esisha",
+    "password": "Iphasiwedi entsha:",
+    "confirmation": "Qinisekisa iphasiwedi entsha:",
+    "save": "Londoloza iphasiwedi entsha",
+    "hint": "Okungenani izinhlamvu ezingu-8. Yonke idivayisi engene ku-akhawunti izokhishwa.",
+    "failed": "Iphutha: iphasiwedi ayikwazanga ukushintshwa. Sicela uzame futhi.",
+    "secondStep": "Uma i-akhawunti yakho isebenzisa ukungena ngezinyathelo ezimbili, usazodinga uhlelo lwakho lwe-authenticator, i-passkey noma ikhodi yokubuyisela ukuze ungene."
+  },
+  "account": {
+    "trialTitle": "Ukuzama kwakho",
+    "trialLead": "Uzama i-Glazecalc njengo-{name}.",
+    "keepHeading": "Gcina umsebenzi wakho",
+    "keepText": "Lokhu kuzama nakho konke okukukho kuyasuswa ngomhla {date}. Vula i-akhawunti yamahhala ukuze ukugcine: amaresiphi akho, okokwakha namanothi kuhlala kunjalo, futhi u-{name} uhlala eyigama lakho elibonakalayo.",
+    "createAccount": "Vula i-akhawunti",
+    "title": "I-akhawunti yakho",
+    "signedInAs": "Ungene njengo-{email}.",
+    "contents": "Kuleli khasi",
+    "changeHeading": "Shintsha iphasiwedi yakho",
+    "current": "Iphasiwedi yamanje",
+    "currentMissing": "Faka iphasiwedi yakho yamanje.",
+    "password": "Iphasiwedi entsha",
+    "passwordHint": "Okungenani izinhlamvu ezingu-8. Amanye amadivayisi angene kule akhawunti azokhishwa.",
+    "confirmation": "Qinisekisa iphasiwedi entsha",
+    "change": "Shintsha iphasiwedi",
+    "changeFailed": "Iphutha: iphasiwedi ayikwazanga ukushintshwa. Sicela uzame futhi.",
+    "deleteHeading": "Susa i-akhawunti yakho",
+    "deleteText": "Lokhu kususa i-akhawunti yakho nakho konke okulondolozile: amaresiphi, okokwakha, izithasiselo, amanothi, amarekhodi okushisa neseluleko. Akunakuhlehliswa.",
+    "deletePassword": "Iphasiwedi yakho, ukuze uqinisekise",
+    "deletePasswordMissing": "Faka iphasiwedi yakho ukuze uqinisekise.",
+    "delete": "Susa i-akhawunti yami",
+    "deleteFailed": "Iphutha: i-akhawunti ayikwazanga ukususwa. Sicela uzame futhi.",
+    "unverifiedHeading": "Qinisekisa i-imeyili yakho",
+    "unverifiedText": "Sathumela isixhumanisi ku-{email} lapho uvula le akhawunti. Sivule ukuze uqinisekise ukuthi ikheli ngelakho. Kuze kube yilapho sithumela ama-imeyili kulo kuphela uma ucela, njengokusetha kabusha iphasiwedi.",
+    "resend": "Thumela isixhumanisi futhi",
+    "resendFailed": "Iphutha: isixhumanisi asikwazanga ukuthunyelwa. Sicela uzame futhi.",
+    "emailHeading": "Shintsha i-imeyili yakho",
+    "emailText": "Sithumela isixhumanisi ekhelini elisha, futhi i-imeyili yakho iyashintsha uma usivula. Siyalitshela nekheli lakho lamanje. Yonke idivayisi engene kule akhawunti izokhishwa.",
+    "newEmail": "I-imeyili entsha",
+    "emailPassword": "Iphasiwedi yakho, ukuze uqinisekise",
+    "emailSend": "Thumela isixhumanisi",
+    "emailFailed": "Iphutha: isixhumanisi asikwazanga ukuthunyelwa. Sicela uzame futhi.",
+    "signOutHeading": "Phuma yonke indawo",
+    "signOutText": "Ikukhipha kuyo yonke idivayisi, nale ihlanganisiwe, futhi imise ama-access token akho nezixhumanisi zakho zokwabelana. Yisebenzise uma ulahlekelwe idivayisi noma ucabanga ukuthi omunye umuntu unemininingwane yakho yokungena.",
+    "signOutButton": "Phuma yonke indawo",
+    "signOutFailed": "Iphutha: akukwazekanga ukuphuma. Sicela uzame futhi.",
+    "confirmStep": "Ukungena ngezinyathelo ezimbili kuvuliwe, ngakho qinisekisa ukuthi nguwe: iphasiwedi yakho nesinyathelo sesibili."
+  },
+  "mfa": {
+    "heading": "Ukungena ngezinyathelo ezimbili",
+    "intro": "Cela isinyathelo sesibili uma ungena, kanye nephasiwedi yakho: ikhodi evela ohlelweni lwe-authenticator, noma i-passkey. Bese umuntu othola iphasiwedi yakho angakwazi ukungena.",
+    "loadFailed": "Ukungena kwakho ngezinyathelo ezimbili akukwazanga ukulayishwa. Sicela ulayishe kabusha ikhasi.",
+    "on": "Ukungena ngezinyathelo ezimbili kuvuliwe.",
+    "onText": "Ungena ngephasiwedi yakho nesinyathelo sesibili, noma nge-passkey yodwa.",
+    "off": "Ukungena ngezinyathelo ezimbili kuvaliwe.",
+    "badgeOn": "Kuvuliwe",
+    "badgeOff": "Kuvaliwe",
+    "offText": "Ukuze ukuvule, setha uhlelo lwe-authenticator noma wengeze i-passkey.",
+    "confirmEmailFirst": "Qinisekisa i-imeyili yakho kuqala, ngenhla. Siyisebenzisa ukukutshela ngezinguquko endleleni ongena ngayo, nokusiza uma ulahlekelwa yisinyathelo sakho sesibili.",
+    "appHeading": "Uhlelo lwe-authenticator",
+    "appText": "Uhlelo olusefonini yakho noma kumphathi wakho wamaphasiwedi lubonisa ikhodi entsha njalo ngemizuzwana engu-30, ozoyifaka uma ungena.",
+    "addApp": "Setha uhlelo lwe-authenticator",
+    "removeApp": "Khipha uhlelo lwe-authenticator",
+    "added": "Kwengezwe ngomhla {date}.",
+    "lastUsed": "Kugcine ukusetshenziswa ngomhla {date}.",
+    "notUsed": "Akukasetshenziswa.",
+    "passkeysHeading": "Ama-passkey",
+    "passkeysText": "I-passkey ikungenisa ngesigxivizo somunwe wakho, ubuso noma ukhiye wesikrini, kule divayisi noma efonini yakho. Ingaba yisinyathelo sakho sesibili, noma ikungenise yodwa, ngaphandle kwephasiwedi yakho.",
+    "noPasskeysHere": "Lesi siphequluli asikwazi ukwenza noma ukusebenzisa ama-passkey. Zama esinye isiphequluli noma idivayisi.",
+    "addPasskey": "Engeza i-passkey",
+    "removePasskey": "Khipha i-passkey",
+    "rename": "Qamba kabusha",
+    "remove": "Khipha",
+    "renameLabel": "Igama elisha lika-\"{name}\"",
+    "saveName": "Londoloza igama",
+    "name": "Igama le-passkey",
+    "nameHint": "Ukuze ukwazi ukuhlukanisa ama-passkey akho, njengo-\"Laptop\" noma \"Ifoni\".",
+    "nameCheck": "Nika i-passkey igama elinezinhlamvu ezingu-1 kuya ku-{most}.",
+    "passkeyLimit": "Unama-passkey angu-{most}, okuyinani elikhulu kakhulu i-akhawunti engaba nalo. Khipha eyodwa ukuze wengeze enye.",
+    "codesTitle": "Amakhodi okubuyisela",
+    "codesLeft": "{count, plural, one {Kusele amakhodi okubuyisela angu-# kwangu-{total}.} other {Kusele amakhodi okubuyisela angu-# kwangu-{total}.}} Uma ungakwazi ukusebenzisa uhlelo lwakho noma i-passkey, ikhodi ikungenisa esikhundleni salokho. Ikhodi ngayinye isebenza kanye.",
+    "codesLow": "Yenza amakhodi amasha maduze. Uma ephela futhi ulahlekelwa wuhlelo lwakho nama-passkey, ngeke ukwazi ukungena.",
+    "newCodes": "Yenza amakhodi amasha okubuyisela",
+    "offHeading": "Ukukuvala",
+    "offWhat": "Ukungena ngezinyathelo ezimbili kuhlala kuvuliwe ngenkathi unohlelo lwe-authenticator noma i-passkey. Ukukhipha okokugcina kwakho kuyakuvala, bese:",
+    "offPassword": "Ukungena kudinga iphasiwedi yakho kuphela, ngakho noma ubani oyithola angangena.",
+    "offCodes": "Amakhodi akho okubuyisela ayayeka ukusebenza.",
+    "offSignOut": "Yonke enye idivayisi engene ku-akhawunti yakho iyakhishwa. Le ihlala ingenile.",
+    "offEmail": "Sikuthumelela i-imeyili yokuthi kuvaliwe.",
+    "offRemoveApp": "Vala ukungena ngezinyathelo ezimbili (kukhipha uhlelo)",
+    "offRemoveAppFirst": "Khipha uhlelo, ukuze uqale ukukuvala",
+    "offPasskeys": "{count, plural, =1 {Ukuze ukuvale, khipha i-passkey yakho ngaphansi kokuthi Ama-passkey, ngenhla.} one {Ukuze ukuvale, khipha ama-passkey akho angu-# ngaphansi kokuthi Ama-passkey, ngenhla.} other {Ukuze ukuvale, khipha ama-passkey akho angu-# ngaphansi kokuthi Ama-passkey, ngenhla.}}",
+    "offPasskeysToo": "{count, plural, =1 {Unayo futhi i-passkey: yikhiphe ngaphansi kokuthi Ama-passkey, ngenhla, kanye nohlelo.} one {Unawo futhi ama-passkey angu-#: wakhiphe ngaphansi kokuthi Ama-passkey, ngenhla, kanye nohlelo.} other {Unawo futhi ama-passkey angu-#: wakhiphe ngaphansi kokuthi Ama-passkey, ngenhla, kanye nohlelo.}}",
+    "addAppText": "Ukuze usethe uhlelo lwe-authenticator, qala uqinisekise ukuthi nguwe.",
+    "removeAppText": "Ukuze ukhiphe uhlelo lwe-authenticator, qinisekisa ukuthi nguwe.",
+    "addPasskeyText": "Qamba i-passkey bese uqinisekisa ukuthi nguwe. Bese isiphequluli sakho sikucela ukuthi wenze i-passkey.",
+    "removePasskeyText": "Ukuze ukhiphe i-passkey ethi \"{name}\", qinisekisa ukuthi nguwe.",
+    "newCodesText": "Amakhodi amasha athatha indawo yawo amadala, ayeka ukusebenza. Qinisekisa ukuthi nguwe.",
+    "lastFactor": "Lesi yisinyathelo sakho sesibili sokugcina, ngakho ukungena ngezinyathelo ezimbili kuyavaleka futhi amakhodi akho okubuyisela ayayeka ukusebenza.",
+    "continue": "Qhubeka",
+    "cancel": "Khansela",
+    "password": "Iphasiwedi yakho",
+    "factorLegend": "Nesinyathelo sakho sesibili",
+    "passkeyNext": "Isiphequluli sakho sicela i-passkey yakho uma uqhubeka.",
+    "passkeyReadyText": "Siyabonga. Manje yenza i-passkey ethi \"{name}\": uma ucindezela inkinobho, isiphequluli sakho sicela isigxivizo somunwe wakho, ubuso noma ukhiye wesikrini, noma ifoni yakho. Uma kungasebenzi, ungazama futhi imizuzu engu-{minutes} ngaphandle kokuqinisekisa futhi.",
+    "passkeyCreate": "Manje engeza i-passkey",
+    "useApp": "Sebenzisa uhlelo lwakho lwe-authenticator esikhundleni salokho",
+    "usePasskey": "Sebenzisa i-passkey esikhundleni salokho",
+    "useRecovery": "Sebenzisa ikhodi yokubuyisela esikhundleni salokho",
+    "failed": "Iphutha: ushintsho alukwazanga ukwenziwa. Sicela uzame futhi.",
+    "setupHeading": "Setha uhlelo lwakho lwe-authenticator",
+    "setupOpen": "Vula uhlelo lwakho lwe-authenticator bese ukhetha ukwengeza i-akhawunti.",
+    "setupScan": "Skena le khodi ye-QR ngohlelo, noma uthayiphe ukhiye.",
+    "setupTap": "Thepha inkinobho ukuze wengeze i-Glazecalc ohlelweni lwe-authenticator noma kumphathi wamaphasiwedi kule foni.",
+    "showQr": "Bonisa ikhodi ye-QR, ukuze uyisethe kwenye idivayisi",
+    "setupScanOther": "Yiskene ngohlelo lwe-authenticator olukwenye idivayisi.",
+    "qrAlt": "Ikhodi ye-QR yokwengeza i-Glazecalc ohlelweni lwe-authenticator",
+    "key": "Ukhiye",
+    "copyKey": "Khophela ukhiye",
+    "openInApp": "Engeza ohlelweni lwe-authenticator kule divayisi",
+    "clipboardNote": "Umbhalo okhophelwe ungahlala emlandweni webhodi lakho lokunamathisela futhi ufike kwamanye amadivayisi akho. Wunamathisele ngqo kumphathi wakho wamaphasiwedi, bese usula umlando webhodi lokunamathisela.",
+    "setupCode": "Faka ikhodi enezinombolo ezingu-{digits} uhlelo olubonisa yona manje ye-Glazecalc",
+    "setupFinish": "Qeda ukusetha",
+    "codesHeading": "Amakhodi akho okubuyisela",
+    "codesText": "Wagcine endaweni ephephile, njengakumphathi wakho wamaphasiwedi, noma uwaphrinte bese uwagcina namaphepha akho. Uma ungakwazi ukusebenzisa uhlelo lwakho noma i-passkey, ikhodi ikungenisa esikhundleni salokho. Ikhodi ngayinye isebenza kanye. Aboniswa manje kuphela.",
+    "print": "Phrinta amakhodi",
+    "printNote": "Ikhodi ngayinye isebenza kanye. Gcina leli khasi endaweni ephephile.",
+    "download": "Landa njengefayela lombhalo",
+    "copy": "Khophela amakhodi",
+    "copied": "Kukhophelwe.",
+    "copyFailed": "Akukwazekanga ukukhophela. Sicela ukhethe umbhalo bese uwukhophela.",
+    "saved": "Sengiwalondolozile",
+    "fileTitle": "Amakhodi okubuyisela e-Glazecalc e-{email}",
+    "fileNote": "Ikhodi ngayinye isebenza kanye. Gcina leli fayela endaweni ephephile."
+  },
+  "export": {
+    "heading": "Landa imininingwane yami",
+    "text": "Londoloza ikhophi yakho konke okuphethwe yi-akhawunti yakho njengefayela elilodwa: imininingwane yakho, izilungiselelo, okokwakha onakho, amaresiphi, okokwakha, izithasiselo, amanothi, amarekhodi okushisa, iseluleko nodoti. Ayifaki iphasiwedi yakho. Gcina ifayela endaweni eyimfihlo, ngoba liphethe konke okulondolozile.",
+    "json": "Landa konke (JSON)",
+    "csvText": "Noma londoloza i-spreadsheet yamaresiphi akho kuphela noma yokokwakha kwakho kuphela, ukuze uyivule ku-Excel, Numbers noma Sheets.",
+    "recipes": "Amaresiphi (CSV)",
+    "materials": "Okokwakha (CSV)"
+  },
+  "trash": {
+    "heading": "Udoti",
+    "text": "Lokho okukhipha encwadini yakho kulinda kuDoti izinsuku ezingu-30. Kubuyise kusuka lapho, noma ukusule unomphela.",
+    "open": "Vula uDoti"
+  },
+  "shared": {
+    "heading": "Amaresiphi abelwana ngawo",
+    "text": "Amaresiphi owabelana ngawo ngesixhumanisi, noma ubani onesixhumanisi angawafunda ngaphandle kwe-akhawunti. Isixhumanisi siboniswa kanye kuphela, uma senziwa, ngakho asikwazi ukuboniswa lapha. Ukuze wabelane futhi ngeresiphi, yenza isixhumanisi esisha ngaphansi kokuthi Okunye kweresiphi.",
+    "since": "Kwabiwe kusukela ngomhla {date}",
+    "notesShown": "Amanothi ayaboniswa",
+    "notesHidden": "Amanothi awaboniswa",
+    "untitled": "Iresiphi engenasihloko",
+    "stop": "Yeka ukwabelana",
+    "stopName": "Yeka ukwabelana ngo-{name}",
+    "stopped": "U-{name} akusabelwana ngaye. Isixhumanisi sayo asisasebenzi.",
+    "stopFailed": "Lokho akusebenzanga. Sicela uzame futhi.",
+    "fetchFailed": "Amaresiphi akho abelwana ngawo awakwazanga ukulayishwa. Sicela uzame futhi.",
+    "none": "Awabelani nganoma iyiphi iresiphi."
+  },
+  "settings": {
+    "heading": "Izilungiselelo",
+    "intro": "Zilondolozwe ne-akhawunti yakho, ngakho zisebenza kuyo yonke idivayisi.",
+    "saveFailed": "Isilungiselelo asikwazanga ukulondolozwa. Sicela uzame futhi.",
+    "language": {
+      "legend": "Ulimi",
+      "help": "Ulimi lohlelo, lwemihlahlandlela nolwama-imeyili akho. Ukulushintsha kuvula leli khasi ngalolo limi.",
+      "saved": "Kulondoloziwe: {language}."
+    },
+    "region": {
+      "legend": "Lapho usebenza khona",
+      "none": {
+        "label": "Akukhethwanga",
+        "saved": "Kulondoloziwe: asikho isifunda esikhethiwe; okuzenzakalelayo kulandela isiphequluli sakho."
+      },
+      "saved": "Kulondoloziwe: {region}.",
+      "help": "Okokwakha okuthengiswa lapho, nokuzenzakalelayo kwezinombolo, izinsuku, amazinga okushisa nama-cone ngezansi. Uze ukhethe, kulandela ulimi lwesiphequluli sakho."
+    },
+    "format": {
+      "legend": "Izinombolo nezinsuku",
+      "auto": {
+        "label": "Njengolimi lwami nesifunda sami",
+        "saved": "Kulondoloziwe: izinombolo nezinsuku njengoba ulimi lwakho nesifunda sakho kuzibhala."
+      },
+      "saved": "Kulondoloziwe: izinombolo nezinsuku njengaku-{language}.",
+      "help": "Indlela izinombolo nezinsuku ezibhalwa ngayo: 12,345.6 noma 12.345,6, nokulandelana kosuku nenyanga."
+    },
+    "calendar": {
+      "legend": "Ikhalenda",
+      "help": "Ikhalenda izinsuku eziboniswa ngalo. Izinsuku ozithayiphayo zihlala ekhalendeni lama-Gregorian.",
+      "gregory": {
+        "label": "Ama-Gregorian",
+        "saved": "Kulondoloziwe: izinsuku ziboniswa ekhalendeni lama-Gregorian."
+      },
+      "buddhist": {
+        "label": "Inkathi yamaBuddha yaseThailand",
+        "saved": "Kulondoloziwe: izinsuku ziboniswa ngenkathi yamaBuddha yaseThailand."
+      },
+      "japanese": {
+        "label": "Inkathi yaseJapan",
+        "saved": "Kulondoloziwe: izinsuku ziboniswa ngezinkathi zaseJapan."
+      }
+    },
+    "digits": {
+      "legend": "Izinombolo",
+      "help": "Izinombolo ezisetshenziswa ukubonisa amanani. Ezinye izilimi zinezazo, njengesi-Arabhu, isi-Bengali nesi-Hindi, futhi lapho ukhona kunquma ukuthi yiziphi ezijwayelekile. Ungathayipha izinombolo ngazo zombili.",
+      "auto": {
+        "label": "Njengokujwayelekile lapho ukhona",
+        "saved": "Kulondoloziwe: izinombolo njengokujwayelekile lapho ukhona."
+      },
+      "western": {
+        "label": "Izinombolo zaseNtshonalanga, 0–9",
+        "saved": "Kulondoloziwe: amanani aboniswa ngezinombolo 0–9."
+      },
+      "native": {
+        "label": "Izinombolo zolimi uqobo, lapho lunazo",
+        "saved": "Kulondoloziwe: amanani aboniswa ngezinombolo zolimi uqobo, lapho lunazo."
+      }
+    },
+    "decimalMark": {
+      "legend": "Ukuthayipha amanani",
+      "either": {
+        "label": "Ukhefana noma ichashazi lamadesimali",
+        "example": "12,5 noma 12.5",
+        "saved": "Kulondoloziwe: amanani angathayiphwa ngokhefana noma ngechashazi."
+      },
+      "comma": {
+        "label": "Ukhefana lwamadesimali",
+        "saved": "Kulondoloziwe: amanani athayiphwa ngokhefana lwamadesimali."
+      },
+      "point": {
+        "label": "Ichashazi lamadesimali",
+        "saved": "Kulondoloziwe: amanani athayiphwa ngechashazi lamadesimali."
+      },
+      "help": "Ngakho kokubili, inani elifana no-1,250 lifundwa ngendlela izinombolo zakho ezibhalwa ngayo ngenhla."
+    },
+    "temperature": {
+      "legend": "Amazinga okushisa",
+      "celsius": {
+        "label": "I-Celsius",
+        "saved": "Kulondoloziwe: amazinga okushisa ngo-°C."
+      },
+      "fahrenheit": {
+        "label": "I-Fahrenheit",
+        "saved": "Kulondoloziwe: amazinga okushisa ngo-°F."
+      },
+      "help": "Uze ukhethe, lokhu kulandela isifunda sakho: °F e-United States, °C kwezinye izindawo."
+    },
+    "cones": {
+      "legend": "Ukushisa",
+      "orton": {
+        "label": "Ama-cone e-Orton",
+        "example": "i-cone 04, i-cone 6",
+        "saved": "Kulondoloziwe: ukushisa ngama-cone e-Orton."
+      },
+      "sk": {
+        "label": "Ama-cone e-SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Kulondoloziwe: ukushisa ngama-cone e-SK."
+      },
+      "temperature": {
+        "label": "Izinga lokushisa, njengohlelo lwe-controller ye-kiln",
+        "saved": "Kulondoloziwe: ukushisa ngezinga lokushisa."
+      },
+      "help": "Uze ukhethe, lokhu kulandela isifunda sakho: ama-cone e-Orton e-US, e-UK, e-Ireland, e-Australia nase-New Zealand, ama-cone e-SK e-Japan, izinga lokushisa kwezinye izindawo zaseYurophu."
+    },
+    "density": {
+      "legend": "Ukuminyana kwe-glaze",
+      "sg": {
+        "label": "I-specific gravity",
+        "saved": "Kulondoloziwe: ukuminyana kwe-glaze njenge-specific gravity.",
+        "example": "i-SG 1.45"
+      },
+      "baume": {
+        "label": "Ama-degree e-Baumé, avela ku-hydrometer",
+        "saved": "Kulondoloziwe: ukuminyana kwe-glaze ngama-degree e-Baumé."
+      },
+      "pint": {
+        "label": "Isisindo se-pint, ama-ounce ku-imperial pint",
+        "saved": "Kulondoloziwe: ukuminyana kwe-glaze njengesisindo se-pint."
+      },
+      "help": "Indlela imihlahlandlela enikeza ngayo ukujiya kwe-glaze. Uze ukhethe, lokhu kulandela isifunda sakho: ama-degree e-Baumé e-Italy nase-Japan, i-specific gravity kwezinye izindawo."
+    },
+    "currency": {
+      "legend": "Imali yamanani",
+      "help": "Amanani owanikeza okokwakha, nalokho i-batch ekubizayo, kusemalini le. Ukuyishintsha akuguquli amanani osuwanikezile. Uze ukhethe, lokhu kulandela isifunda sakho.",
+      "saved": "Kulondoloziwe: amanani ngo-{currency}.",
+      "notConverted": "Amanani akho agciniwe awaguqulwanga: asewuzinombolo owazinikeza."
+    },
+    "theme": {
+      "legend": "Ukukhanya noma ubumnyama",
+      "system": {
+        "label": "Njengoba le divayisi isethiwe",
+        "saved": "Kulondoloziwe: ukukhanya noma ubumnyama njengoba idivayisi ngayinye isethiwe."
+      },
+      "light": {
+        "label": "Ukukhanya",
+        "saved": "Kulondoloziwe: njalo kukhanya."
+      },
+      "dark": {
+        "label": "Ubumnyama",
+        "saved": "Kulondoloziwe: njalo kumnyama."
+      },
+      "help": "Amaresiphi aphrintiwe ahlala emnyama phezu kokumhlophe."
+    },
+    "palette": {
+      "legend": "Imibala",
+      "saved": "Kulondoloziwe: izinkinobho nezixhumanisi ze-{palette}.",
+      "help": "Ezinkinobho, ezixhumanisini nakumathebhu, aqanjwe ngama-glaze. Ngalinye kulula ukulifunda ekukhanyeni nasebumnyameni."
+    },
+    "weightUnit": {
+      "legend": "Izisindo ze-batch",
+      "grams": {
+        "label": "Amagremu",
+        "saved": "Kulondoloziwe: izisindo ze-batch zingamagremu."
+      },
+      "pounds": {
+        "label": "Amaphawundi nama-ounce",
+        "saved": "Kulondoloziwe: izisindo ze-batch zingamaphawundi nama-ounce."
+      },
+      "help": "Kuma-batch aphrintiwe."
+    },
+    "gramPrecision": {
+      "legend": "Amagremu kuma-batch aphrintiwe",
+      "single": {
+        "label": "Kuze kube yingxenye yeshumi yegremu",
+        "saved": "Kulondoloziwe: amagremu aboniswa kuze kube yingxenye yeshumi."
+      },
+      "full": {
+        "label": "Ukunemba okugcwele",
+        "saved": "Kulondoloziwe: amagremu aboniswa ngokugcwele, kuze kube yizindawo zamadesimali ezingu-5."
+      },
+      "help": "Kuze kube yingxenye yeshumi, amanani angaphansi kuka-10 g asabonisa izingxenye zekhulu (2.35 g), okokufaka umbala kuma-batch amancane okuhlola."
+    },
+    "lead": {
+      "legend": "Umthofu (lead, Pb)",
+      "off": {
+        "label": "Kuvaliwe: ungalokothi wengeze umthofu (Pb) eresiphini noma uwuphakamise",
+        "saved": "Kulondoloziwe: umthofu (Pb) awulokothi wengezwe eresiphini noma uphakanyiswe."
+      },
+      "on": {
+        "label": "Kuvuliwe: okokwakha okunomthofu (Pb) kungengezwa futhi kuphakanyiswe",
+        "saved": "Kulondoloziwe: okokwakha okunomthofu (Pb) kungengezwa futhi kuphakanyiswe."
+      },
+      "help": "Umthofu (lead, Pb) uwushevu uma uwuhogela noma uwugwinya futhi uyanqwabelana emzimbeni, futhi i-glaze enomthofu ingawukhiphela ekudleni nasekuphuzweni; akukho kubala okungasho ukuthi isitsha esishisiwe siyakwenza yini. Uma kuvaliwe, amaresiphi asevele enomthofu asavuleka njengoba ayenjalo.",
+      "warning": "Sebenzisa umthofu (Pb) kuphela njenge-frit, ungalokothi njengomthofu obomvu, omhlophe noma ophuzi ongahlanganisiwe noma i-litharge. Wuxube umanzi, ungalokothi uwufafaze, gqoka i-respirator futhi uhlanze ngamanzi. Gcina izitsha ezine-glaze enomthofu (Pb) kude nokudla neziphuzo ngaphandle uma ukuhlolwa kokuphuma kwezinsimbi (leach test) kwelabhorethri kwesitsha esishisiwe kuphumelele.",
+      "turnOn": "Vula umthofu",
+      "keepOff": "Wugcine uvaliwe"
+    },
+    "englishTerms": {
+      "legend": "Amagama esiNgisi",
+      "off": {
+        "label": "Kuvaliwe",
+        "saved": "Kulondoloziwe: awekho amagama esiNgisi."
+      },
+      "on": {
+        "label": "Bonisa isiNgisi ngemva kwamagama abalulekile",
+        "saved": "Kulondoloziwe: isiNgisi siboniswa ngemva kwamagama abalulekile."
+      },
+      "help": "Ukufunda imithombo yesiNgisi, njenge-Digitalfire, eceleni kwalona: amagama abalulekile athola isiNgisi sawo kubakaki."
+    },
+    "notice": {
+      "legend": "Isaziso sokuhumusha",
+      "shown": {
+        "label": "Siyaboniswa",
+        "saved": "Kulondoloziwe: isaziso siyaboniswa."
+      },
+      "hidden": {
+        "label": "Sifihliwe",
+        "saved": "Kulondoloziwe: isaziso sifihliwe. Umugqa waso uhlala emihlahlandleleni yokuphepha.",
+        "savedPlain": "Kulondoloziwe: isaziso sifihliwe. Umugqa waso uhlala phezulu ekhasini ngalinye."
+      },
+      "help": "Inothi eliphezulu ekhasini ngalinye elisho ukuthi lihunyushwe yi-AI, nendlela yokuphakamisa ukulungiswa."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Qinisekisa i-imeyili yakho",
+    "intro": "Cindezela inkinobho ukuze uqinisekise leli kheli.",
+    "confirm": "Qinisekisa",
+    "incomplete": "Leli khasi lidinga isixhumanisi esivela ku-imeyili yokuqinisekisa, futhi lesi asiphelele.",
+    "account": "I-akhawunti yakho",
+    "signIn": "Ngena",
+    "failed": "Iphutha: ikheli alikwazanga ukuqinisekiswa. Sicela uzame futhi."
+  },
+  "providers": {
+    "continueGoogle": "Qhubeka nge-Google",
+    "continueGithub": "Qhubeka nge-GitHub",
+    "continueMicrosoft": "Ngena nge-Microsoft",
+    "failed": "Ukungena akusebenzanga. Sicela uzame futhi.",
+    "heading": "I-Google, i-GitHub ne-Microsoft",
+    "intro": "Xhumanisa i-akhawunti ye-Google, ye-GitHub noma ye-Microsoft ukuze ungene ngayo. I-Glazecalc igcina kuphela i-id ye-akhawunti evela kuyo, hhayi igama layo, isithombe noma okunye, futhi ukungena ngezinyathelo ezimbili kusacela isinyathelo sako sesibili.",
+    "passwordless": "Le akhawunti ayinayo iphasiwedi. Ukuze ushintshe i-imeyili yakho, ukungena ngezinyathelo ezimbili noma izindlela ongena ngazo, noma ukuze usule i-akhawunti yakho, uqinisekisa ukuthi nguwe ngokungena futhi nge-Google, i-GitHub noma i-Microsoft, noma yikuphi okuxhumanisile. Ungasetha futhi iphasiwedi.",
+    "setPassword": "Ngithumelele isixhumanisi sokusetha iphasiwedi nge-imeyili",
+    "setPasswordUnlinks": "Ukusetha iphasiwedi ngesixhumanisi esithunyelwe nge-imeyili kuyaqeda nokuxhumanisa i-Google, i-GitHub ne-Microsoft. Ungaziphinda uzixhumanise ngemva kwalokho.",
+    "setPasswordFailed": "Isixhumanisi asikwazanga ukuthunyelwa. Sicela uzame futhi.",
+    "confirmFirst": "Qinisekisa i-imeyili yakho kuqala, ngesixhumanisi esikuthumelele sona, ukuze uxhumanise i-Google, i-GitHub noma i-Microsoft.",
+    "linkedOn": "Kuxhumaniswe ngomhla {date}",
+    "notLinked": "Akuxhumanisiwe",
+    "link": "Xhumanisa i-{provider}",
+    "unlink": "Qeda ukuxhumanisa i-{provider}",
+    "linkFailed": "Akukwazekanga ukukuxhumanisa. Sicela uzame futhi.",
+    "reauthIntro": "Le akhawunti ayinayo iphasiwedi, ngakho qinisekisa ukuthi nguwe ngokungena futhi. Bese wenza ushintsho kungakapheli imizuzu engu-5.",
+    "reauthButton": "Ngena futhi nge-{provider}",
+    "reauthHeld": "Ungene futhi nge-{provider}. Ungenza ushintsho olulodwa ngaphandle kwephasiwedi emizuzwini engu-5 elandelayo.",
+    "reauthFirst": "Sicela ungene futhi kuqala, ngenye yezinkinobho ezingenhla.",
+    "reauthFailed": "Akukwazekanga ukuqala ukungena futhi. Sicela uzame futhi."
+  },
+  "apps": {
+    "title": "Izinhlelo ezixhunyiwe",
+    "lead": "Abasizi, izikripthi nezinhlelo ezingafinyelela amarekhodi akho. Bona ukuthi ngakunye kwenzeni, buyisa lokho okukuyise kuDoti, futhi ukumise noma nini uthanda.",
+    "listHeading": "Izinhlelo zakho ezixhunyiwe nama-access token",
+    "listLabel": "Izinhlelo ezixhunyiwe nama-access token",
+    "makeToken": "Yenza i-access token",
+    "none": "Akukho okuxhunywe ku-akhawunti yakho.",
+    "loadFailed": "Izinhlelo zakho ezixhunyiwe azikwazanga ukulayishwa. Sicela ulayishe kabusha ikhasi ukuze uzame futhi.",
+    "kindToken": "I-access token",
+    "kindOauth": "Uhlelo oluxhunyiwe",
+    "clientHost": "Ikheli lohlelo: {host}",
+    "redirectHost": "Ikubuyisela ku: {host}",
+    "last90": "Ezinsukwini ezingu-90 ezedlule:",
+    "nothingDone": "Ayishintshanga lutho ezinsukwini ezingu-90 ezedlule.",
+    "count": {
+      "create": "{count, plural, one {Amarekhodi angu-# enziwe} other {Amarekhodi angu-# enziwe}}",
+      "change": "{count, plural, one {Amarekhodi angu-# ashintshiwe} other {Amarekhodi angu-# ashintshiwe}}",
+      "trash": "{count, plural, one {Amarekhodi angu-# ayiswe kuDoti} other {Amarekhodi angu-# ayiswe kuDoti}}",
+      "restore": "{count, plural, one {Amarekhodi angu-# abuyisiwe} other {Amarekhodi angu-# abuyisiwe}}",
+      "undo": "{count, plural, one {Izinguquko ezingu-# zihlehlisiwe} other {Izinguquko ezingu-# zihlehlisiwe}}"
+    },
+    "action": {
+      "create": "Kwenziwe",
+      "change": "Kushintshiwe",
+      "trash": "Kuyiswe kuDoti:",
+      "restore": "Kubuyisiwe:",
+      "undo": "Kuhlehliswe ushintsho ku"
+    },
+    "show": "Bonisa imininingwane",
+    "hide": "Fihla imininingwane",
+    "showNamed": "Bonisa imininingwane ka-{name}",
+    "hideNamed": "Fihla imininingwane ka-{name}",
+    "loading": "Iyalayisha...",
+    "detailFailed": "Imininingwane ayikwazanga ukulayishwa. Sicela uzame futhi.",
+    "movedHeading": "Kuyiswe kuDoti",
+    "movedNone": "Akukho okukususile okusekuDoti.",
+    "putAllBack": "Buyisa konke",
+    "activityHeading": "Lokho okwenzile",
+    "activityNone": "Akukho lutho ezinsukwini ezingu-90 ezedlule.",
+    "older": "Bonisa okudala",
+    "revokeQuestion": "Hoxisa u-{name}? Uyayeka ukusebenza ngaso leso sikhathi.",
+    "revokeYes": "Yebo, hoxisa",
+    "revokeAll": "Hoxisa konke",
+    "revokeAllQuestion": "{count, plural, one {Hoxisa uxhumano olungu-# olusasebenza?} other {Hoxisa lonke uxhumano olungu-# olusasebenza?}} Luyayeka ukusebenza ngaso leso sikhathi.",
+    "revokeFailed": "Iphutha: akukwazekanga ukuhoxisa. Sicela uzame futhi.",
+    "restoreFailed": "Iphutha: amarekhodi awakwazanga ukubuyiswa. Sicela uzame futhi.",
+    "selfDescribed": "luzichazile",
+    "selfDescribedNote": "Luzibhalisile, ngakho igama lalo yilokho kuphela olukushoyo ngalo.",
+    "confirm": {
+      "heading": "Qinisekisa ngaphambi kwezinguquko",
+      "intro": "Khetha ukuthi ushintsho oluvela kumsizi, ohlelweni noma ku-access token lulinde yini uze uluvume lapha, ungenile. Akukho olukucelayo okushintshwayo uze ukwenze.",
+      "off": "Ungalokothi ubuze",
+      "offHint": "Izinguquko zenziwa ngaso leso sikhathi. Ngalunye lugcina irekhodi njengoba lalinjalo, ukuze ukwazi ukuluhlehlisa, futhi lokho uhlelo ngalunye olukwenzile kuboniswa ngezansi.",
+      "removals": "Buza ngaphambi kokukhipha",
+      "removalsHintSite": "Ukuyisa irekhodi kuDoti, ukukhipha okokwakha kokokwakha onakho, noma ukukhipha irekhodi lokushisa eresiphini kulinda imvume yakho kule webhusayithi.",
+      "all": "Buza ngaphambi kwalo lonke ushintsho",
+      "allHint": "Lonke irekhodi elisha, ushintsho, ukuhlehlisa nokukhipha kulinda imvume yakho kule webhusayithi.",
+      "how": "Ushintsho olulindayo lunekhasi lalo, umsizi noma isikripthi esikunika isixhumanisi salo. Lulinda imizuzu engu-30, bese kungashintshwa lutho. I-access token eyenziwe nokuthi \"Izinguquko ezivela kule token azidingi ukuqinisekiswa\" ayilokothi ibuzwe.",
+      "exempt": "Izinguquko zayo azidingi ukuqinisekiswa.",
+      "saveFailed": "Iphutha: ukukhetha kwakho akukwazanga ukulondolozwa. Sicela uzame futhi."
+    }
+  },
+  "connect": {
+    "title": "Xhuma uhlelo ku-akhawunti yakho",
+    "loading": "Iyalayisha...",
+    "loadFailed": "Lesi sicelo sokuxhuma uhlelo asikwazanga ukulayishwa. Sicela ulayishe kabusha ikhasi, noma uqale futhi ohlelweni.",
+    "answerFailed": "Iphutha: impendulo yakho ayikwazanga ukuthunyelwa. Sicela uzame futhi.",
+    "toAccount": "Iya ku-akhawunti yakho",
+    "asking": "Lolu hlelo lucela ukuxhuma ku-akhawunti yakho ye-Glazecalc:",
+    "noName": "Uhlelo olungenalo igama",
+    "selfDescribed": "luzichazile",
+    "selfDescribedNote": "Luzibhalisile, ngakho leli gama yilokho kuphela olukushoyo ngalo. I-Glazecalc ayilihlolanga.",
+    "account": "Ungene njengo-{email}",
+    "appAddress": "Ikheli lohlelo",
+    "checked": "(kuhlolwe yi-Glazecalc)",
+    "answerTo": "Lapho impendulo yakho iya khona",
+    "ownComputer": "Ikhompyutha yakho",
+    "appOnDevice": "Uhlelo kudivayisi yakho oluvula izixhumanisi ze-{scheme}",
+    "loopbackWarning": "Lolu hlelo luthola impendulo kukhompyutha yakho. Luvumele kuphela uma uqale lokhu wena, kule khompyutha, manje nje.",
+    "loopbackWriteWarning": "Luphinde lucele ukushintsha amarekhodi akho: noma yiluphi uhlelo kule khompyutha oluthola impendulo lungabe seluwashintsha.",
+    "appSchemeWarning": "Impendulo iya kunoma yiluphi uhlelo kudivayisi yakho oluvula izixhumanisi ze-{scheme}. Okunye kwalelo kheli akuhlolwa, ngakho kungabukeka njenganoma iyiphi iwebhusayithi. Luvumele kuphela uma uqale lokhu ohlelweni olwethembayo, manje nje.",
+    "elsewhereWarning": "Ikheli lalolu hlelo lingu-{app}, kodwa impendulo yakho iya ku-{answer}. Luvumele kuphela uma ubukulindele lokho.",
+    "canHeading": "Okungakwenza",
+    "canRead": "Ukufunda amaresiphi akho, incwadi, okokwakha, okokwakha onakho nezilungiselelo.",
+    "readOnly": "Alukwazi ukushintsha lutho.",
+    "alsoWrite": "Luvumele futhi lushintshe amarekhodi ami",
+    "writeWarning": "Lungabe selwakha futhi lushintshe amarekhodi akho, futhi luwayise kuDoti. Ushintsho ngalunye lugcina inguqulo yerekhodi njengoba lalinjalo, ukuze ukwazi ukuluhlehlisa. Ungaluhoxisa noma nini ku-Izinhlelo ezixhunyiwe.",
+    "privacy": "Lokho i-Glazecalc ekugcinayo ngezinhlelo ezixhunyiwe kusesaziso <privacy>sobumfihlo</privacy>. Ungabona futhi uhoxise izinhlelo zakho ku-<apps>Izinhlelo ezixhunyiwe</apps>.",
+    "allow": "Vumela",
+    "deny": "Ungavumeli",
+    "sending": "Ithumela impendulo yakho ohlelweni..."
+  },
+  "tokens": {
+    "heading": "Ama-access token",
+    "intro": "I-access token ivumela umsizi wakho we-AI noma isikripthi sakho ukuthi sifunde amaresiphi, okokwakha, amanothi namarekhodi okushisa ku-akhawunti yakho, futhi, uma ukhetha, sikushintshe. I-token ngayinye iyeka ukusebenza ngosuku olukhethayo, noma ngokushesha nje uma uyihoxisa.",
+    "howTo": "Indlela yokuxhuma umsizi we-AI",
+    "seeThem": "Ama-token akho nezinhlelo ezixhunyiwe, lokho ngakunye okwenzile, nokuthi Hoxisa kusekhasini elithi Izinhlelo ezixhunyiwe.",
+    "seeThemLink": "Vula Izinhlelo ezixhunyiwe",
+    "hint": "egcina ngo-{hint}",
+    "readOnly": "Ukufunda kuphela",
+    "readWrite": "Funda futhi ushintshe",
+    "created": "yenziwe ngomhla {date}",
+    "lastUsed": "igcine ukusetshenziswa ngomhla {date}",
+    "neverUsed": "ayikaze isetshenziswe",
+    "expires": "iphelelwa ngomhla {date}",
+    "expiredOn": "iphelelwe ngomhla {date}",
+    "revokedOn": "ihoxiswe ngomhla {date}",
+    "revoke": "Hoxisa",
+    "revokeNamed": "Hoxisa u-{name}",
+    "revokeAll": "Hoxisa wonke ama-access token",
+    "revokeFailed": "Iphutha: i-token ayikwazanga ukuhoxiswa. Sicela uzame futhi.",
+    "loadFailed": "Ama-access token akho awakwazanga ukulayishwa. Sicela ulayishe kabusha ikhasi ukuze uzame futhi.",
+    "createHeading": "Yenza i-token",
+    "name": "Igama",
+    "nameHint": "Okuthile ongayihlukanisa ngakho, njengomsizi noma ikhompyutha eyenzelwe yona.",
+    "nameCheck": "Sicela unike i-token igama elinezinhlamvu ezingu-1 kuya ku-{most}.",
+    "expiry": "Iyeka ukusebenza ngemva kwesikhathi",
+    "days": "{count, plural, one {Izinsuku ezingu-#} other {Izinsuku ezingu-#}}",
+    "expiryHint": "Sikuthumelela i-imeyili izinsuku ezingu-7 ngaphambi kokuba i-token iyeke ukusebenza.",
+    "expiryWriteHint": "{count, plural, one {I-token engashintsha amarekhodi akho iyeka ukusebenza ngemva kwezinsuku ezingeqile ku-#.} other {I-token engashintsha amarekhodi akho iyeka ukusebenza ngemva kwezinsuku ezingeqile ku-#.}}",
+    "confirmEmailFirst": "Ngaphambi kokuthi ukwazi ukwenza i-token, qinisekisa i-imeyili yakho: vula isixhumanisi esisithumele ku-{email}. Sikutshela kulelo kheli uma kwenziwa i-token nangaphambi kokuthi iyeke ukusebenza.",
+    "resend": "Thumela isixhumanisi sokuqinisekisa futhi",
+    "scopeNote": "I-token ingafunda amarekhodi akho kodwa ingawashintshi.",
+    "scope": "Okungakwenza",
+    "scopeWriteNote": "I-token ingaphinda ilondoloze amarekhodi amasha, iwashintshe futhi iwayise kuDoti. Ushintsho ngalunye lugcina irekhodi njengoba lalinjalo, ukuze ukwazi ukuluhlehlisa, futhi lokho i-token ekwenzile kusekhasini elithi Izinhlelo ezixhunyiwe nakokuthi Landa imininingwane yami. Khetha lokhu kuphela kumsizi noma isikripthi osithemba ukuthi singashintsha amarekhodi akho.",
+    "confirmStep": "Ukuze wenze i-token, qinisekisa ukuthi nguwe.",
+    "create": "Yenza i-token",
+    "failed": "Iphutha: i-token ayikwazanga ukwenziwa. Sicela uzame futhi.",
+    "limit": "Unama-access token angu-{most} asebenzayo, okuyinani elikhulu kakhulu i-akhawunti engaba nalo. Hoxisa eyodwa ukuze wenze enye.",
+    "newHeading": "Khophela i-token yakho entsha manje",
+    "newText": "Lesi yisikhathi kuphela eboniswa ngaso. Noma ubani onayo angafunda amarekhodi akho ize iyeke ukusebenza, ngakho yigcine njengephasiwedi, futhi uyinike kuphela umsizi wakho noma isikripthi sakho.",
+    "newTextWrite": "Lesi yisikhathi kuphela eboniswa ngaso. Noma ubani onayo angafunda futhi ashintshe amarekhodi akho ize iyeke ukusebenza, ngakho yigcine njengephasiwedi, futhi uyinike kuphela umsizi wakho noma isikripthi sakho.",
+    "newLabel": "I-access token yakho entsha",
+    "copy": "Khophela i-token",
+    "copied": "Kukhophelwe.",
+    "copyFailed": "Akukwazekanga ukukhophela. Khetha i-token bese uyikhophela wena.",
+    "done": "Sengiyikhophelile",
+    "keptHeading": "Ama-access token akho asasebenza",
+    "keptText": "{count, plural, =1 {Ukushintsha iphasiwedi yakho akuyimisanga i-access token yakho. Uma uyishintshe ngoba omunye umuntu angase ayazi, hoxisa ne-token.} one {Ukushintsha iphasiwedi yakho akuwamisanga ama-access token akho angu-#. Uma uyishintshe ngoba omunye umuntu angase ayazi, wahoxise nawo.} other {Ukushintsha iphasiwedi yakho akuwamisanga ama-access token akho angu-#. Uma uyishintshe ngoba omunye umuntu angase ayazi, wahoxise nawo.}}",
+    "keep": "Wagcine",
+    "signOutNote": "{count, plural, =1 {Iphinde imise i-access token yakho, unomphela.} one {Iphinde imise ama-access token akho angu-#, unomphela.} other {Iphinde imise ama-access token akho angu-#, unomphela.}}",
+    "noConfirm": "Izinguquko ezivela kule token azidingi ukuqinisekiswa",
+    "noConfirmHint": "Okwesikripthi osiqhuba wena. Uma ukhetha ukuqinisekisa izinguquko ku-Izinhlelo ezixhunyiwe, le token ayilokothi ibuzwe. Ungakhetha lokhu manje kuphela, lapho i-token yenziwa."
+  },
+  "confirm": {
+    "title": "Vumela ushintsho",
+    "lead": "Uhlelo oluxhunywe ku-akhawunti yakho lucela ukwenza lolu shintsho. Akukho okushintshwayo uze uluvume.",
+    "from": "Kucelwe ngu-{name}",
+    "fromToken": "i-access token",
+    "fromConnectedApp": "uhlelo oluxhunyiwe",
+    "selfDescribed": "luzichazile",
+    "selfDescribedNote": "Luzibhalisile, ngakho igama lalo yilokho kuphela olukushoyo ngalo. I-Glazecalc ayilihlolanga.",
+    "asked": "Kucelwe ngomhla {date}. Kulinda kuze kube ngu-{time}, bese kungashintshwa lutho.",
+    "removal": "Lokhu kususa okuthile: irekhodi liya kuDoti, lapho ungalibuyisa khona phakathi nezinsuku ezingu-30, noma okokwakha kuyakhishwa kokokwakha onakho.",
+    "check": "Luvume kuphela uma ucele lolu shintsho. Uma ungalucelanga, luchithe, futhi uhoxise uhlelo ku-Izinhlelo ezixhunyiwe.",
+    "approve": "Vuma ushintsho",
+    "decline": "Chitha",
+    "titleBefore": "Ngaphambi kokuthi lolu hlelo lulishintshe, lalibizwa ngokuthi “{title}”.",
+    "untitled": "(asikho isihloko)",
+    "changedAgo": "{minutes, plural, =0 {Lolu hlelo lulishintshe ngaphansi komzuzu odlule.} one {Lolu hlelo lulishintshe emizuzwini engu-# edlule.} other {Lolu hlelo lulishintshe emizuzwini engu-# edlule.}}",
+    "now": "Manje:",
+    "after": "Ngemva koshintsho:",
+    "showAll": "Bonisa konke",
+    "showLess": "Bonisa okuncane",
+    "othersHeading": "{count, plural, one {Izinguquko ezingu-# ezengeziwe zilindile ezivela ku-{name}} other {Izinguquko ezingu-# ezengeziwe zilindile ezivela ku-{name}}}",
+    "approveAllShown": "{count, plural, one {Vuma zonke izinguquko ezingu-# ezivela ku-{name}} other {Vuma zonke izinguquko ezingu-# ezivela ku-{name}}}",
+    "declineAll": "{count, plural, one {Chitha zonke izinguquko ezingu-# ezivela ku-{name}} other {Chitha zonke izinguquko ezingu-# ezivela ku-{name}}}",
+    "decided": "Lolu shintsho selunqunyiwe.",
+    "notFound": "Alukho ushintsho olulindile kuleli kheli. Kungenzeka ukuthi seluvunyiwe noma luchithiwe, noma lulinde isikhathi esingaphezu kwemizuzu engu-30, noma lungolwenye i-akhawunti.",
+    "signIn": "Ngena ku-Glazecalc nge-akhawunti ushintsho olungolwayo, bese uvula lesi sixhumanisi futhi.",
+    "signInLink": "Ngena",
+    "loadFailed": "Ushintsho alukwazanga ukulayishwa. Sicela ulayishe kabusha ikhasi ukuze uzame futhi.",
+    "failed": "Iphutha: impendulo yakho ayikwazanga ukuthunyelwa. Sicela uzame futhi.",
+    "apps": "Bona izinhlelo zakho ezixhunyiwe"
+  }
+}

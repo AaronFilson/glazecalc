@@ -1885,25 +1885,67 @@ describe('Latin America and Africa', () => {
     expect(regions.formatLocaleFor('en-XA', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
   });
 
-  it('knows eleven languages, grouped, Latin American Spanish and Brazilian Portuguese offered since wave L1, six of Africa and Quechua with the plain notice', () => {
+  it('offers eleven languages, grouped, with the reference pages (waves L1 to L4), seven of Africa and Quechua with the plain notice', () => {
     for (const code of NEW_LANGUAGES) {
       const language = languages.languageFor(code)!;
-      const live = code === 'es-419' || code === 'pt-BR';
-      expect(language, code).to.include({ code, dir: 'ltr', live });
-      if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
-      else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      expect(language, code).to.include({ code, dir: 'ltr', live: true, reference: true });
+      expect(languages.LIVE_LANGUAGES, code).to.include(code);
+      expect(languages.REFERENCE_LANGUAGES, code).to.include(code);
       expect(groups.languageGroup(code), code).to.equal(
         ['pt-BR', 'es-419', 'qu'].includes(code) ? 'latin-america' : 'africa'
       );
       expect(language.name, code).to.equal(language.name.normalize('NFC'));
     }
     const plain = NEW_LANGUAGES.filter((code) => languages.languageFor(code)!.plainNotice);
-    expect(plain).to.eql(['am', 'ha', 'yo', 'zu', 'ig', 'so', 'qu']);
+    // Swahili's plain notice: the owner's decision of 2026-11-01; Afrikaans has the standard one.
+    expect(languages.languageFor('af')!.plainNotice).to.not.equal(true);
+    expect(plain).to.eql(['sw', 'am', 'ha', 'yo', 'zu', 'ig', 'so', 'qu']);
     // Brazil's plural rules, not Portugal's: 0 is singular.
     expect(new Intl.PluralRules(languages.textLanguage('pt-BR')).select(0)).to.equal('one');
     expect(new Intl.PluralRules(languages.textLanguage('pt-PT')).select(0)).to.equal('other');
     // Spain's Spanish and Portugal's Portuguese stay in Europe's group.
     expect([groups.languageGroup('es'), groups.languageGroup('pt-PT')]).to.eql(['europe', 'europe']);
+  });
+
+  it('wave L2: Swahili and Amharic offered with the plain notice and reference pages, Amharic on its own plural rules with the pseudo-Amharic', () => {
+    expect(languages.languageFor('sw')).to.include({
+      name: 'Kiswahili',
+      live: true,
+      plainNotice: true,
+      reference: true
+    });
+    expect(languages.languageFor('am')).to.include({ name: 'አማርኛ', live: true, plainNotice: true, reference: true });
+    expect(languages.REFERENCE_LANGUAGES).to.include.members(['sw', 'am']);
+    expect(languages.languageFor('am-XI')).to.include({ base: 'am', pseudo: true, live: false });
+    expect(languages.textLanguage('am-XI')).to.equal('am');
+    expect(groups.languageGroup('am-XI')).to.equal('other');
+    // CLDR am: `one` is 0 and 1 (as Kannada's and Hindi's); sw: 1 only, as English.
+    const am = new Intl.PluralRules('am');
+    expect([0, 1, 2].map((n) => am.select(n))).to.eql(['one', 'one', 'other']);
+    const sw = new Intl.PluralRules('sw');
+    expect([0, 1, 2].map((n) => sw.select(n))).to.eql(['other', 'one', 'other']);
+    // Both write 0–9 and a decimal point, as English does.
+    for (const locale of ['sw-KE', 'sw-TZ', 'am-ET']) {
+      expect(new Intl.NumberFormat(locale).format(1234.5), locale).to.equal('1,234.5');
+    }
+  });
+
+  it("waves L3 and L4: each language's plural rules and figures as its style sheet records them", () => {
+    // docs/translations/<code>.md: Zulu's `one` takes 0 (so =1 where the English `one` has no #), Yoruba and Igbo
+    // have only `other`, the rest one (1 only) and other; Quechua takes English's.
+    const plurals = (code: string) =>
+      [0, 1, 2].map((n) => new Intl.PluralRules(languages.textLanguage(code)).select(n));
+    expect(['af', 'ha', 'so', 'qu'].map(plurals)).to.eql(Array(4).fill(['other', 'one', 'other']));
+    expect(plurals('zu')).to.eql(['one', 'one', 'other']);
+    expect([plurals('yo'), plurals('ig')]).to.eql([Array(3).fill('other'), Array(3).fill('other')]);
+    // All write 0–9; Afrikaans a decimal comma and a space for thousands, the others as English, and Bolivia's
+    // Quechua as Bolivia's Spanish (the reader's region decides).
+    const shown = (locale: string) => new Intl.NumberFormat(locale).format(1234.5);
+    expect(shown('af-ZA')).to.equal('1 234,5');
+    for (const locale of ['ha-NG', 'yo-NG', 'zu-ZA', 'ig-NG', 'so-SO', 'qu-PE']) {
+      expect(shown(locale), locale).to.equal('1,234.5');
+    }
+    expect(shown('qu-BO')).to.equal('1.234,5');
   });
 
   it('gives each emergency number read on an official page, and only the poison lines confirmed', () => {

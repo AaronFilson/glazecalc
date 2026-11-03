@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Bhala i-formula ngezinombolo ezivamile, njengo-{typed}: izinombolo zivela njengezinombolo ezincane ngezansi, {shown}. Ukuze uhlanganise izingxenye ze-formula, njengaku-{joined}, khophela leli chashazi:",
+    "relatedTo": "Ihlobene no-",
+    "notes": "Amanothi",
+    "loi": "Okulahleka ekushiseni (LOI), %",
+    "molecularWeight": "Isisindo samamolekyuli se-formula eluhlaza (sisetshenziswa kuphela uma i-LOI ingabhalwanga)",
+    "formulaHeading": "I-formula, emva kokushiswa",
+    "oxideSelection": "I-oxide",
+    "noOxide": "lutho",
+    "addOxide": "Engeza i-oxide ohlwini",
+    "formulaIn": "Le formula ibhalwe nge-",
+    "percent": "Iphesenti",
+    "molecular": "Nge-molecule (i-unity)",
+    "amount": "inani",
+    "removeOxide": "Khipha",
+    "removeOxideName": "Khipha i-oxide {oxide} ku-formula",
+    "save": "Londoloza",
+    "elements": "Ama-element",
+    "removeNote": "Amaresiphi alondoloziwe agcina ikhophi yawo, ngakho ngeke ashintshe.",
+    "saveFailed": "Iphutha: isicelo eseva sehlulekile."
+  },
+  "material": {
+    "title": "Okokwakha",
+    "lead": "Okokwakha kwakho okuluhlaza, okufakwe njenge-formula yamakhemikhali noma njengokuhlaziywa kwama-oxide.",
+    "newHeading": "Engeza okokwakha",
+    "name": "Igama",
+    "rawFormula": "I-formula eluhlaza",
+    "weightsNote": "Isisindo esilinganayo nesisindo emva kokushiswa kubalwa ku-formula naku-LOI uma ulondoloza.",
+    "mineHeading": "Okokwakha kwami",
+    "none": "Akukabikho okwamanje. Okokwakha okwengeza ngezansi kungangena kumaresiphi akho, eceleni kwalokho okujwayelekile.",
+    "rawFormulaColumn": "I-formula eluhlaza",
+    "standardHeading": "Okokwakha okujwayelekile",
+    "fetchFailed": "Kube nephutha ekutholeni ulwazi lokokwakha.",
+    "standardFetchFailed": "Kube nephutha ekutholeni ulwazi lokokwakha okujwayelekile.",
+    "saved": "Kuphumelele. Okokwakha kwengezwe kudathabheyisi."
+  },
+  "additive": {
+    "title": "Izithasiselo nokokufaka umbala",
+    "lead": "Okokufaka umbala nokwenza i-glaze ingabonisi, okulinganiswa ngaphezu kweresiphi eyisisekelo, njenge-cobalt noma i-tin oxide. Iresiphi ingakushiya ngaphandle kwe-unity formula noma ikubale kuyo.",
+    "newHeading": "Engeza isithasiselo noma okokufaka umbala",
+    "name": "Igama",
+    "formulaAsSold": "I-formula, njengoba kudayiswa",
+    "noChemistry": "Akunakho ukuhlaziywa kwama-oxide, njenge-stain yasezitolo: kushiye ngaphandle kwe-unity formula",
+    "firedNote": "Faka lokho okunikeza i-glaze emva kokushiswa: i-cobalt oxide emnyama, {asSold}, iba ngu-{fired} ne-LOI engu-{loi}%. Iresiphi ingabe isiyibala ku-unity formula.",
+    "mineHeading": "Izithasiselo nokokufaka umbala kwami",
+    "none": "Akukabikho okwamanje. Izithasiselo ozengeza ngezansi zingangena kumaresiphi akho, eceleni kwalokho okujwayelekile.",
+    "standardHeading": "Izithasiselo ezijwayelekile",
+    "fetchFailed": "Kube nephutha ekutholeni ulwazi lwezithasiselo.",
+    "standardFetchFailed": "Kube nephutha ekutholeni ulwazi lwezithasiselo ezijwayelekile.",
+    "saved": "Kuphumelele. Isithasiselo sengezwe kudathabheyisi."
+  }
+}

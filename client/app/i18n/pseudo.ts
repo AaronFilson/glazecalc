@@ -32,6 +32,10 @@ import { printAST } from '@formatjs/icu-messageformat-parser/printer.js';
 //          into one, are the longest of all: each word takes a case ending with a
 //          chillu letter (ങ്ങളിൽ; ൽ is one character), so a sentence has about 40%
 //          more letters than the English, each of them wider.
+//   am-XI  each English word in Ethiopic syllables (a consonant and its vowel as one letter,
+//          ለ ሉ ሊ ላ), with Ethiopic's full stop, comma and semicolon (። ፣ ፤) and
+//          Amharic's plural rules (`one` covers 0): Amharic's fonts (the app's
+//          Noto Sans Ethiopic where the device has none) and line height.
 //
 // Placeholders, plurals and tags keep their ICU form; only the text changes. In
 // ar-XD and the Indic pseudo-locales what a translation keeps in Latin stays so:
@@ -340,6 +344,69 @@ function indicText(text: string, code: string): string {
   );
 }
 
+/**
+ * Ethiopic consonants for English ones, as the first code point of each one's row of syllables: a row is seven
+ * syllables, the consonant with each vowel in Ethiopic's order (ä u i a e ə o), so ለ ሉ ሊ ላ ሌ ል ሎ are U+1208 to
+ * U+120E. አ's row writes a vowel with no consonant before it.
+ */
+const ETHIOPIC_ROWS: Record<string, number> = {
+  b: 0x1260,
+  c: 0x1278,
+  d: 0x12f0,
+  f: 0x1348,
+  g: 0x1308,
+  h: 0x1200,
+  j: 0x1300,
+  k: 0x12a8,
+  l: 0x1208,
+  m: 0x1218,
+  n: 0x1290,
+  p: 0x1350,
+  q: 0x1240,
+  r: 0x1228,
+  s: 0x1230,
+  t: 0x1270,
+  v: 0x1268,
+  w: 0x12c8,
+  x: 0x12b8,
+  y: 0x12e8,
+  z: 0x12d8
+};
+/** Each English vowel's place in a row (a's ላ, e's ሌ, i's ሊ, o's ሎ, u's ሉ); a bare consonant takes the sixth, ል. */
+const ETHIOPIC_ORDERS: Record<string, number> = { a: 3, e: 4, i: 2, o: 6, u: 1 };
+const ETHIOPIC_VOWEL_ROW = 0x12a0;
+const ETHIOPIC_BARE = 5;
+
+/** One English word in Ethiopic syllables: each consonant with the vowel after it, or bare (sixth order). */
+function ethiopicWord(word: string): string {
+  let written = '';
+  let row: number | undefined;
+  for (const char of word.toLowerCase()) {
+    const order = ETHIOPIC_ORDERS[char];
+    if (order !== undefined) {
+      written += String.fromCodePoint((row ?? ETHIOPIC_VOWEL_ROW) + order);
+      row = undefined;
+    } else if (ETHIOPIC_ROWS[char] !== undefined) {
+      if (row !== undefined) written += String.fromCodePoint(row + ETHIOPIC_BARE);
+      row = ETHIOPIC_ROWS[char];
+    }
+  }
+  return written + (row !== undefined ? String.fromCodePoint(row + ETHIOPIC_BARE) : '');
+}
+
+/**
+ * Text in Ethiopic, words kept apart by spaces as Amharic writes them now, with Ethiopic's full stop (።), comma
+ * (፣) and semicolon (፤) after its letters; digits stay 0–9, as Amharic's translations write them.
+ */
+function ethiopicText(text: string): string {
+  return eachWord(text, ethiopicWord, (part) =>
+    part
+      .replace(/(?<=[ሀ-᎟])\.(?=\s|$)/gu, '።')
+      .replace(/(?<=[ሀ-᎟]),(?=\s)/gu, '፣')
+      .replace(/(?<=[ሀ-᎟]);/gu, '፤')
+  );
+}
+
 /** Arabic's plural forms. A plural is given all six, each a copy of its "other", so every one is used. */
 const ARABIC_FORMS = ['zero', 'one', 'two', 'few', 'many', 'other'];
 
@@ -382,6 +449,8 @@ export function pseudoMessage(message: string, code: string): string {
     rewrite(ast, arabicText);
   } else if (Object.hasOwn(INDIC_SCRIPTS, code)) {
     rewrite(ast, (text) => indicText(text, code));
+  } else if (code === 'am-XI') {
+    rewrite(ast, ethiopicText);
   } else {
     rewrite(ast, (text) => [...text].map((c) => ACCENTED[c] ?? c).join(''));
     const padding = '·'.repeat(Math.max(1, Math.round(message.length / 3)));
@@ -397,6 +466,7 @@ export function pseudoText(text: string, code: string): string {
   if (code === 'ja-XC') return japaneseText(text);
   if (code === 'ar-XD') return arabicText(text);
   if (Object.hasOwn(INDIC_SCRIPTS, code)) return indicText(text, code);
+  if (code === 'am-XI') return ethiopicText(text);
   return [...text].map((c) => ACCENTED[c] ?? c).join('');
 }
 

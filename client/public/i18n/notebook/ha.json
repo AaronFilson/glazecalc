@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Littafin rubutun ɗakin aikinku",
+    "signedInAs": "Kun shiga a matsayin {email}.",
+    "trying": "Kuna gwada Glazecalc a matsayin {name}. Fara da girke-girke.",
+    "welcomeBack": "Ci gaba daga inda kuka tsaya.",
+    "welcome": {
+      "heading": "Barka da zuwa Glazecalc",
+      "text": "Littafin rubutunku ya shirya. Mataki na farko mai kyau: rubuta glaze da kuka saba haɗawa, kayansa da yawansu, ku ga unity formula ɗinsa.",
+      "firstRecipe": "Fara girke-girkenku na farko",
+      "confirmHeading": "Tabbatar da imel ɗinku",
+      "confirm": "Tabbatar da imel ɗinku: mun aika hanyar haɗi zuwa {email}. Shiga mai matakai biyu yana buƙatarsa. <account>Shafin asusunku</account> zai iya sake aika shi.",
+      "confirmText": "Mun aika hanyar haɗi zuwa {email}. Buɗe shi don tabbatar da cewa adireshin naku ne: shiga mai matakai biyu yana buƙatarsa. <account>Shafin asusunku</account> zai iya sake aika shi."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Girke-girke",
+        "text": "Gina glaze daga kaya da yawansu, ku ga unity formula ɗinsa, ku ajiye shi."
+      },
+      "import": {
+        "title": "Liƙa girke-girke",
+        "text": "Liƙa girke-girke daga shafin yanar gizo, takardar lissafi ko bayanai, ku duba abin da aka karanta, ku ajiye su."
+      },
+      "blends": {
+        "title": "Haɗe-haɗe don test tile",
+        "text": "Haɗa girke-girkenku biyu, uku ko huɗu zuwa test tile masu lamba, tare da abin da za a auna wa kowanne."
+      },
+      "material": {
+        "title": "Kaya",
+        "text": "Ƙara kayan aiki na kanku, daga formula na sinadarai ko nazarin mai sayarwa."
+      },
+      "additive": {
+        "title": "Ƙarin kaya da masu launi",
+        "text": "Riƙe masu launi da masu hana haske ratsawa da kuke ƙarawa a kan glaze na tushe."
+      },
+      "firing": {
+        "title": "Bayanan gasa",
+        "text": "Rubuta lokuta, zafi da cone na kowace gasa."
+      },
+      "notes": {
+        "title": "Bayanai",
+        "text": "Riƙe sakamakon gwaji da duk wani abin da ya cancanci a tuna."
+      },
+      "advice": {
+        "title": "Shawarwarin glaze",
+        "text": "Shawarwari kan haɗawa, shafa glaze da gasa, da shawarwarinku na kanku."
+      },
+      "guides": {
+        "title": "Jagorori",
+        "text": "Daga mene ne glaze zuwa gasa shi, da kiyaye lafiyar kowa a hanya."
+      },
+      "trash": {
+        "title": "Kwandon shara",
+        "text": "Mayar da abin da kuka cire a cikin kwanaki 30 na ƙarshe."
+      },
+      "account": {
+        "title": "Asusu da saituna",
+        "text": "Saituna, kalmar sirrinku, shiga mai matakai biyu, da sauke duk abin da kuke ajiyewa a nan."
+      }
+    },
+    "newHere": "Sabo ga unity formula? <advice>Shafin shawarwari</advice> yana bayyana tushen abubuwa, kuma <about>shafin game da mu</about> yana faɗin yadda Glazecalc ke aiki."
+  },
+  "firing": {
+    "title": "Bayanan gasa",
+    "lead": "Rubuta kowace gasa: lokuta, zafi, cone da bayanan kiln.",
+    "newHeading": "Sabuwar gasa",
+    "titleLabel": "Take",
+    "kiln": "Kiln",
+    "date": "Kwanan wata",
+    "notes": "Bayanai",
+    "fieldSelect": "Filayen da za a rubuta",
+    "addField": "Ƙara filin",
+    "included": "Filayen da ke cikin wannan bayani",
+    "moveLeft": "Matsar da filin hagu",
+    "moveRight": "Matsar da filin dama",
+    "removeField": "Cire filin",
+    "addRow": "Ƙara layi a teburin gasa",
+    "addRowWhy": "Ƙara fili tukuna.",
+    "recordHeading": "Rubuta gasar",
+    "rowActions": "Ayyukan layi",
+    "cell": "{field} layi {row}",
+    "removeRow": "Cire layi",
+    "save": "Ajiye",
+    "storedHeading": "Gasannin da na ajiye",
+    "noneSaved": "Babu tukuna. Gasannin da aka ajiye suna bayyana a nan.",
+    "storedIn": "An gasa a cikin {kiln} a ranar {date}.",
+    "storedOn": "An gasa a ranar {date}.",
+    "storedNotes": "Bayanai: {notes}",
+    "titleMissing": "Ba gasar take.",
+    "fieldsMissing": "Ƙara aƙalla fili ɗaya da za a rubuta, kamar {example}.",
+    "chooseField": "Zaɓi filin da za a ƙara, sannan Ƙara filin.",
+    "fetchFailed": "An sami kuskure wajen samo bayanan gasa.",
+    "saved": "An yi nasarar ƙara bayanin gasa a sabar.",
+    "saveFailed": "Kuskure: buƙatar zuwa sabar ba ta yi nasara ba.",
+    "recipesHeading": "Girke-girken da aka gasa a ciki",
+    "noRecipes": "Babu girke-girken da aka haɗa tukuna.",
+    "recipesFailed": "Ba a iya samo girke-girkenku ba, don haka ba za a iya haɗa ko ɗaya yanzu ba.",
+    "pickRecipe": "Girke-girken da aka gasa a ciki",
+    "linkRecipe": "Haɗa girke-girken",
+    "unlink": "Raba",
+    "unlinkRecipe": "Raba {title}",
+    "linkFailed": "Ba a iya ajiye haɗin ba."
+  },
+  "notes": {
+    "title": "Bayanai",
+    "lead": "Duk wani abin da ya cancanci a tuna game da glaze ɗinku.",
+    "newHeading": "Sabon bayani",
+    "titleLabel": "Take",
+    "content": "Bayani",
+    "save": "Ajiye",
+    "mineHeading": "Bayanan da na ajiye",
+    "noneSaved": "Babu tukuna. Bayanan da aka ajiye suna bayyana a nan.",
+    "titleMissing": "Ba bayanin take.",
+    "contentMissing": "Rubuta bayanin.",
+    "untitled": "Bayani marar take",
+    "fetchFailed": "An sami kuskure wajen samo bayanan.",
+    "saved": "An yi nasarar ƙara bayanin a sabar.",
+    "saveFailed": "Kuskure: buƙatar zuwa sabar ba ta yi nasara ba."
+  },
+  "trash": {
+    "title": "Kwandon shara",
+    "lead": "Abin da kuka cire (girke-girke, kaya, ƙarin kaya, bayanai, bayanan gasa da shawarwari) yana jira a nan na kwanaki 30. Mayar da shi, ko share shi gaba ɗaya.",
+    "listHeading": "A cikin Kwandon shara",
+    "none": "Kwandon shara babu komai.",
+    "untitled": "Marar take",
+    "kinds": {
+      "recipes": "Girke-girke",
+      "materials": "Kaya",
+      "additives": "Ƙarin kaya",
+      "notes": "Bayani",
+      "firing": "Bayanin gasa",
+      "advice": "Shawara",
+      "other": "Bayani"
+    },
+    "removedOn": "An cire {date}",
+    "goesOn": "Za a share gaba ɗaya {date}",
+    "byApp": "Wata manhaja da aka haɗa ce ta cire",
+    "putBack": "Mayar",
+    "putBackName": "Mayar da {name}",
+    "restored": "An mayar da \"{name}\" inda yake.",
+    "restoredAlready": "An riga an mayar da \"{name}\".",
+    "restoreFailed": "Ba a iya mayar da \"{name}\" ba. Da fatan a sake gwadawa.",
+    "deleted": "An share \"{name}\" gaba ɗaya.",
+    "empty": "Zubar da Kwandon shara",
+    "emptyQuestion": "A share {count, plural, one {bayani # ɗin} other {duk bayanai # ɗin}} da ke cikin Kwandon shara gaba ɗaya? Ba za a iya mayar da wannan ba.",
+    "emptyYes": "Eh, zubar",
+    "emptying": "Ana zubarwa...",
+    "emptied": "Kwandon shara babu komai.",
+    "emptyFailed": "Ba a iya zubar da Kwandon shara ba. Da fatan a sake gwadawa.",
+    "fetchFailed": "Ba a iya loda Kwandon shara ba. Da fatan a sake gwadawa."
+  }
+}

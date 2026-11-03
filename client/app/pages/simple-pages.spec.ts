@@ -127,6 +127,7 @@ describe('static pages', () => {
     expect(nav.querySelectorAll('li a')).toHaveLength(many.length);
     const names = [...nav.querySelectorAll('.language-group-name')].map((p) => p.textContent);
     expect(names).toEqual([
+      'Africa',
       'East Asia',
       'Europe',
       'Latin America',
@@ -144,6 +145,7 @@ describe('static pages', () => {
       )
     ).toEqual([
       null,
+      'Africa',
       'East Asia',
       'Europe',
       'Latin America',

@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Ingia",
+    "keepHeading": "Hifadhi kazi yako",
+    "signUpHeading": "Fungua akaunti yako",
+    "signInLead": "Karibu tena kwenye daftari lako la glaze.",
+    "keepLead": "Hifadhi kila ulichotengeneza kama {name}: ongeza barua pepe yako na nenosiri. Inabaki bure.",
+    "signUpLead": "Bure. Vichocheo vyako, malighafi na maelezo vinatunzwa kuwa vya faragha kwenye akaunti yako.",
+    "trialNote": "Tayari una akaunti? Kuingia kunaleta ulichotengeneza kama {name} ndani yake. Wewe ni mgeni? <signup>Fungua akaunti</signup> ili kukihifadhi badala yake.",
+    "email": "Barua pepe",
+    "password": "Nenosiri",
+    "passwordHint": "Angalau herufi 8.",
+    "confirmation": "Thibitisha nenosiri",
+    "keepSignedIn": "Niache nimeingia kwenye kifaa hiki",
+    "passwordMissing": "Andika nenosiri lako.",
+    "createAccount": "Fungua akaunti",
+    "signIn": "Ingia",
+    "haveAccount": "Tayari una akaunti? <signin>Ingia</signin>",
+    "privacy": "Barua pepe yako na unachohifadhi hutumiwa tu kuendesha akaunti yako, na huhifadhiwa kwenye Amazon Web Services nchini Marekani. <privacy>Jinsi Glazecalc inavyoshughulikia data yako</privacy>",
+    "terms": "Kwa kufungua akaunti, unakubaliana na <terms>Masharti ya matumizi</terms>.",
+    "dataNotice": "Glazecalc ni mradi wa bure wenye chanzo wazi, na akaunti huhifadhiwa kwenye seva nchini Marekani. Unaweza kusoma miongozo na kujaribu kikokotoo bila akaunti, au kuendesha nakala yako mwenyewe. Kufungua akaunti hapa ni uamuzi wako mwenyewe, na mradi haukubali wajibu kwa uamuzi huo. <where>Akaunti yako inahifadhiwa wapi, na chaguo lako</where>",
+    "forgot": "Umesahau nenosiri lako? Liweke upya",
+    "newHere": "Wewe ni mgeni? <signup>Fungua akaunti ya bure</signup>",
+    "signUpFailed": "Hitilafu: haikuwezekana kufungua akaunti.",
+    "signInFailed": "Hitilafu: haikuwezekana kuingia.",
+    "or": "au",
+    "passkeySignIn": "Ingia kwa passkey",
+    "passkeyHint": "Passkey hutumia alama yako ya kidole, uso wako au kufuli ya skrini badala ya nenosiri. Ongeza moja kwenye ukurasa wa akaunti yako."
+  },
+  "secondStep": {
+    "heading": "Kuingia kwa hatua mbili",
+    "signingInAs": "Nenosiri lako ni sahihi. Hatua moja zaidi ili kuingia kama {email}.",
+    "leadCode": "Fungua programu yako ya uthibitishaji na uandike msimbo inaoonyesha kwa Glazecalc.",
+    "leadPasskey": "Tumia passkey yako kumaliza kuingia.",
+    "leadRecovery": "Andika mojawapo ya misimbo ya kurejesha uliyohifadhi ulipowasha kuingia kwa hatua mbili. Kila msimbo hufanya kazi mara moja.",
+    "code": "Msimbo kutoka kwenye programu yako ya uthibitishaji",
+    "codeHint": "Tarakimu {digits}. Msimbo mpya huonekana kila sekunde 30.",
+    "codeFormat": "Andika msimbo wa tarakimu {digits} kutoka kwenye programu yako ya uthibitishaji.",
+    "recoveryCode": "Msimbo wa kurejesha",
+    "recoveryHint": "Unaonekana kama abcde-12345.",
+    "recoveryMissing": "Andika mojawapo ya misimbo yako ya kurejesha.",
+    "finish": "Maliza kuingia",
+    "usePasskey": "Tumia passkey",
+    "noPasskeysHere": "Kivinjari hiki hakiwezi kutumia passkey. Tumia njia nyingine hapa chini, au ingia kwenye kifaa kinachoweza.",
+    "useRecovery": "Tumia msimbo wa kurejesha badala yake",
+    "useApp": "Tumia programu yako ya uthibitishaji badala yake",
+    "startOver": "Anza upya",
+    "reloadNote": "Hatua hii inasubiri dakika {minutes}. Ukiondoka au ukipakia ukurasa huu upya, utahitaji kuandika nenosiri lako tena.",
+    "expired": "Kuingia kulichukua muda mrefu sana. Tafadhali andika nenosiri lako tena."
+  },
+  "passkey": {
+    "cancelled": "Passkey haikutumika: ombi lilighairiwa au muda uliisha, au kifaa hiki hakina passkey ya Glazecalc. Tafadhali jaribu tena, au tumia njia nyingine.",
+    "registered": "Passkey hii tayari iko kwenye akaunti yako.",
+    "browserFailed": "Kivinjari hiki hakikuweza kutumia passkey. Tafadhali jaribu tena, au tumia njia nyingine."
+  },
+  "forgot": {
+    "heading": "Weka upya nenosiri lako",
+    "checkInbox": "Angalia kikasha chako na folda ya taka. Kama hakuna kinachofika, angalia anwani na uombe tena.",
+    "intro": "Andika barua pepe ya akaunti yako, nasi tutakutumia kiungo cha kuchagua nenosiri jipya.",
+    "email": "Barua pepe:",
+    "send": "Tuma kiungo cha kuweka upya",
+    "back": "Rudi kwenye kuingia",
+    "failed": "Hitilafu: haikuwezekana kutuma barua pepe ya kuweka upya. Tafadhali jaribu tena."
+  },
+  "reset": {
+    "heading": "Chagua nenosiri jipya",
+    "signIn": "Ingia",
+    "incomplete": "Ukurasa huu unahitaji kiungo kutoka kwenye barua pepe ya kuweka upya nenosiri, na hiki hakijakamilika.",
+    "askAgain": "Omba kiungo kipya",
+    "password": "Nenosiri jipya:",
+    "confirmation": "Thibitisha nenosiri jipya:",
+    "save": "Hifadhi nenosiri jipya",
+    "hint": "Angalau herufi 8. Kila kifaa kilichoingia kwenye akaunti kitatolewa.",
+    "failed": "Hitilafu: haikuwezekana kubadilisha nenosiri. Tafadhali jaribu tena.",
+    "secondStep": "Ikiwa akaunti yako inatumia kuingia kwa hatua mbili, bado utahitaji programu yako ya uthibitishaji, passkey au msimbo wa kurejesha ili kuingia."
+  },
+  "account": {
+    "trialTitle": "Jaribio lako",
+    "trialLead": "Unajaribu Glazecalc kama {name}.",
+    "keepHeading": "Hifadhi kazi yako",
+    "keepText": "Jaribio hili na kila kitu ndani yake vitaondolewa tarehe {date}. Fungua akaunti ya bure ili kuvihifadhi: vichocheo vyako, malighafi na maelezo vinabaki kama vilivyo, na jina {name} linabaki jina lako la kuonyeshwa.",
+    "createAccount": "Fungua akaunti",
+    "title": "Akaunti yako",
+    "signedInAs": "Umeingia kama {email}.",
+    "contents": "Kwenye ukurasa huu",
+    "changeHeading": "Badilisha nenosiri lako",
+    "current": "Nenosiri la sasa",
+    "currentMissing": "Andika nenosiri lako la sasa.",
+    "password": "Nenosiri jipya",
+    "passwordHint": "Angalau herufi 8. Vifaa vingine vilivyoingia kwenye akaunti hii vitatolewa.",
+    "confirmation": "Thibitisha nenosiri jipya",
+    "change": "Badilisha nenosiri",
+    "changeFailed": "Hitilafu: haikuwezekana kubadilisha nenosiri. Tafadhali jaribu tena.",
+    "deleteHeading": "Futa akaunti yako",
+    "deleteText": "Hili huondoa akaunti yako na kila ulichohifadhi: vichocheo, malighafi, viongezi, maelezo, kumbukumbu za kuchoma na ushauri. Haliwezi kutenduliwa.",
+    "deletePassword": "Nenosiri lako, ili kuthibitisha",
+    "deletePasswordMissing": "Andika nenosiri lako ili kuthibitisha.",
+    "delete": "Futa akaunti yangu",
+    "deleteFailed": "Hitilafu: haikuwezekana kufuta akaunti. Tafadhali jaribu tena.",
+    "unverifiedHeading": "Thibitisha barua pepe yako",
+    "unverifiedText": "Tulituma kiungo kwa {email} ulipofungua akaunti hii. Kifungue ili kuthibitisha kuwa anwani ni yako. Hadi hapo tunaituma barua tu unapoomba, kama kuweka upya nenosiri.",
+    "resend": "Tuma kiungo tena",
+    "resendFailed": "Hitilafu: haikuwezekana kutuma kiungo. Tafadhali jaribu tena.",
+    "emailHeading": "Badilisha barua pepe yako",
+    "emailText": "Tunatuma kiungo kwa anwani mpya, na barua pepe yako hubadilika unapokifungua. Pia tunaiarifu anwani yako ya sasa. Kila kifaa kilichoingia kwenye akaunti hii kitatolewa.",
+    "newEmail": "Barua pepe mpya",
+    "emailPassword": "Nenosiri lako, ili kuthibitisha",
+    "emailSend": "Tuma kiungo",
+    "emailFailed": "Hitilafu: haikuwezekana kutuma kiungo. Tafadhali jaribu tena.",
+    "signOutHeading": "Toka kila mahali",
+    "signOutText": "Hukutoa kwenye kila kifaa, hiki pia, na husimamisha tokeni zako za ufikiaji na viungo vyako vya kushiriki. Kitumie ukipoteza kifaa au ukidhani mtu mwingine ana kuingia kwako.",
+    "signOutButton": "Toka kila mahali",
+    "signOutFailed": "Hitilafu: haikuwezekana kutoka. Tafadhali jaribu tena.",
+    "confirmStep": "Kuingia kwa hatua mbili kumewashwa, kwa hiyo thibitisha kuwa ni wewe: nenosiri lako na hatua ya pili."
+  },
+  "mfa": {
+    "heading": "Kuingia kwa hatua mbili",
+    "intro": "Omba hatua ya pili unapoingia, pamoja na nenosiri lako: msimbo kutoka kwenye programu ya uthibitishaji, au passkey. Hivyo mtu anayejua nenosiri lako bado hawezi kuingia.",
+    "loadFailed": "Haikuwezekana kupakia kuingia kwako kwa hatua mbili. Tafadhali pakia ukurasa upya.",
+    "on": "Kuingia kwa hatua mbili kumewashwa.",
+    "onText": "Unaingia kwa nenosiri lako na hatua ya pili, au kwa passkey peke yake.",
+    "off": "Kuingia kwa hatua mbili kumezimwa.",
+    "badgeOn": "Kumewashwa",
+    "badgeOff": "Kumezimwa",
+    "offText": "Ili kukiwasha, sanidi programu ya uthibitishaji au ongeza passkey.",
+    "confirmEmailFirst": "Thibitisha barua pepe yako kwanza, hapo juu. Tunaitumia kukuarifu kuhusu mabadiliko ya jinsi unavyoingia, na kukusaidia ukipoteza hatua yako ya pili.",
+    "appHeading": "Programu ya uthibitishaji",
+    "appText": "Programu kwenye simu yako au kwenye kidhibiti chako cha manenosiri huonyesha msimbo mpya kila sekunde 30, wa kuandika unapoingia.",
+    "addApp": "Sanidi programu ya uthibitishaji",
+    "removeApp": "Ondoa programu ya uthibitishaji",
+    "added": "Iliongezwa tarehe {date}.",
+    "lastUsed": "Ilitumika mara ya mwisho tarehe {date}.",
+    "notUsed": "Haijatumika bado.",
+    "passkeysHeading": "Passkey",
+    "passkeysText": "Passkey hukuingiza kwa alama yako ya kidole, uso wako au kufuli ya skrini, kwenye kifaa hiki au simu yako. Inaweza kuwa hatua yako ya pili, au kukuingiza yenyewe, bila nenosiri lako.",
+    "noPasskeysHere": "Kivinjari hiki hakiwezi kutengeneza wala kutumia passkey. Jaribu kivinjari au kifaa kingine.",
+    "addPasskey": "Ongeza passkey",
+    "removePasskey": "Ondoa passkey",
+    "rename": "Badilisha jina",
+    "remove": "Ondoa",
+    "renameLabel": "Jina jipya la “{name}”",
+    "saveName": "Hifadhi jina",
+    "name": "Jina la passkey",
+    "nameHint": "Ili uweze kutofautisha passkey zako, kama “Laptop” au “Simu”.",
+    "nameCheck": "Lipe passkey jina la herufi 1 hadi {most}.",
+    "passkeyLimit": "Una passkey {most}, nyingi zaidi ambazo akaunti inaweza kuwa nazo. Ondoa moja ili kuongeza nyingine.",
+    "codesTitle": "Misimbo ya kurejesha",
+    "codesLeft": "{count, plural, one {Msimbo # kati ya {total} ya kurejesha umebaki.} other {Misimbo # kati ya {total} ya kurejesha imebaki.}} Ikiwa huwezi kutumia programu yako au passkey, msimbo hukuingiza badala yake. Kila msimbo hufanya kazi mara moja.",
+    "codesLow": "Tengeneza misimbo mipya hivi karibuni. Ikiisha na ukapoteza programu yako na passkey, huwezi kuingia.",
+    "newCodes": "Tengeneza misimbo mipya ya kurejesha",
+    "offHeading": "Kuzima",
+    "offWhat": "Kuingia kwa hatua mbili kunabaki kumewashwa ukiwa na programu ya uthibitishaji au passkey. Kuondoa ya mwisho kati yake kunakuzima, na kisha:",
+    "offPassword": "Kuingia kunahitaji nenosiri lako peke yake, kwa hiyo yeyote anayelijua anaweza kuingia.",
+    "offCodes": "Misimbo yako ya kurejesha huacha kufanya kazi.",
+    "offSignOut": "Kila kifaa kingine kilichoingia kwenye akaunti yako kinatolewa. Hiki kinabaki kimeingia.",
+    "offEmail": "Tunakutumia barua pepe kwamba kumezimwa.",
+    "offRemoveApp": "Zima kuingia kwa hatua mbili (huondoa programu)",
+    "offRemoveAppFirst": "Ondoa programu, ili kuanza kukizima",
+    "offPasskeys": "{count, plural, one {Ili kukizima, ondoa passkey yako chini ya Passkey, hapo juu.} other {Ili kukizima, ondoa passkey zako # chini ya Passkey, hapo juu.}}",
+    "offPasskeysToo": "{count, plural, one {Pia una passkey moja: iondoe chini ya Passkey, hapo juu, pamoja na programu.} other {Pia una passkey #: ziondoe chini ya Passkey, hapo juu, pamoja na programu.}}",
+    "addAppText": "Ili kusanidi programu ya uthibitishaji, thibitisha kwanza kuwa ni wewe.",
+    "removeAppText": "Ili kuondoa programu ya uthibitishaji, thibitisha kuwa ni wewe.",
+    "addPasskeyText": "Pa passkey jina na uthibitishe kuwa ni wewe. Kisha kivinjari chako kitakuomba utengeneze passkey.",
+    "removePasskeyText": "Ili kuondoa passkey “{name}”, thibitisha kuwa ni wewe.",
+    "newCodesText": "Misimbo mipya inachukua nafasi ya ya zamani, ambayo huacha kufanya kazi. Thibitisha kuwa ni wewe.",
+    "lastFactor": "Hii ni hatua yako ya mwisho ya pili, kwa hiyo kuingia kwa hatua mbili kunazimwa na misimbo yako ya kurejesha huacha kufanya kazi.",
+    "continue": "Endelea",
+    "cancel": "Ghairi",
+    "password": "Nenosiri lako",
+    "factorLegend": "Na hatua yako ya pili",
+    "passkeyNext": "Kivinjari chako kitaomba passkey yako unapoendelea.",
+    "passkeyReadyText": "Asante. Sasa tengeneza passkey “{name}”: ukibonyeza kitufe, kivinjari chako kitaomba alama yako ya kidole, uso wako au kufuli ya skrini, au simu yako. Isipofanya kazi, unaweza kujaribu tena kwa dakika {minutes} bila kuthibitisha tena.",
+    "passkeyCreate": "Sasa ongeza passkey",
+    "useApp": "Tumia programu yako ya uthibitishaji badala yake",
+    "usePasskey": "Tumia passkey badala yake",
+    "useRecovery": "Tumia msimbo wa kurejesha badala yake",
+    "failed": "Hitilafu: haikuwezekana kufanya badiliko. Tafadhali jaribu tena.",
+    "setupHeading": "Sanidi programu yako ya uthibitishaji",
+    "setupOpen": "Fungua programu yako ya uthibitishaji na uchague kuongeza akaunti.",
+    "setupScan": "Changanua msimbo huu wa QR kwa programu, au andika ufunguo.",
+    "setupTap": "Gusa kitufe ili kuongeza Glazecalc kwenye programu ya uthibitishaji au kidhibiti cha manenosiri kwenye simu hii.",
+    "showQr": "Onyesha msimbo wa QR, ili kusanidi kwenye kifaa kingine",
+    "setupScanOther": "Uchanganue kwa programu ya uthibitishaji kwenye kifaa kingine.",
+    "qrAlt": "Msimbo wa QR wa kuongeza Glazecalc kwenye programu ya uthibitishaji",
+    "key": "Ufunguo",
+    "copyKey": "Nakili ufunguo",
+    "openInApp": "Ongeza kwenye programu ya uthibitishaji kwenye kifaa hiki",
+    "clipboardNote": "Maandishi yaliyonakiliwa yanaweza kubaki kwenye historia ya ubao wako wa kunakili na kufika kwenye vifaa vyako vingine. Yabandike moja kwa moja kwenye kidhibiti chako cha manenosiri, kisha futa historia ya ubao wako wa kunakili.",
+    "setupCode": "Andika msimbo wa tarakimu {digits} ambao programu sasa inaonyesha kwa Glazecalc",
+    "setupFinish": "Maliza kusanidi",
+    "codesHeading": "Misimbo yako ya kurejesha",
+    "codesText": "Ihifadhi mahali salama, kama kwenye kidhibiti chako cha manenosiri, au ichapishe na uiweke pamoja na karatasi zako. Ikiwa huwezi kutumia programu yako au passkey, msimbo hukuingiza badala yake. Kila msimbo hufanya kazi mara moja. Inaonyeshwa sasa tu.",
+    "print": "Chapisha misimbo",
+    "printNote": "Kila msimbo hufanya kazi mara moja. Weka ukurasa huu mahali salama.",
+    "download": "Pakua kama faili ya maandishi",
+    "copy": "Nakili misimbo",
+    "copied": "Imenakiliwa.",
+    "copyFailed": "Haikuweza kunakiliwa. Tafadhali chagua maandishi na uyanakili.",
+    "saved": "Nimeihifadhi",
+    "fileTitle": "Misimbo ya kurejesha ya Glazecalc ya {email}",
+    "fileNote": "Kila msimbo hufanya kazi mara moja. Weka faili hii mahali salama."
+  },
+  "export": {
+    "heading": "Pakua data yangu",
+    "text": "Hifadhi nakala ya kila kitu akaunti yako inashikilia kama faili moja: maelezo yako, mipangilio, malighafi ulizo nazo, vichocheo, malighafi, viongezi, maelezo, kumbukumbu za kuchoma, ushauri na tupio. Haijumuishi nenosiri lako. Weka faili mahali pa faragha, kwa sababu inashikilia ulichohifadhi chote.",
+    "json": "Pakua kila kitu (JSON)",
+    "csvText": "Au hifadhi lahajedwali ya vichocheo vyako tu au malighafi zako mwenyewe tu, ili kufungua kwenye Excel, Numbers au Sheets.",
+    "recipes": "Vichocheo (CSV)",
+    "materials": "Malighafi (CSV)"
+  },
+  "trash": {
+    "heading": "Tupio",
+    "text": "Unachoondoa kwenye daftari lako husubiri Tupioni kwa siku 30. Kirudishe kutoka huko, au kifute kabisa.",
+    "open": "Fungua Tupio"
+  },
+  "shared": {
+    "heading": "Vichocheo vilivyoshirikiwa",
+    "text": "Vichocheo unavyoshiriki kwa kiungo, ambavyo yeyote aliye na kiungo anaweza kuvisoma bila akaunti. Kiungo huonyeshwa mara moja tu, kinapotengenezwa, kwa hiyo hakiwezi kuonyeshwa hapa. Ili kushiriki kichocheo tena, tengeneza kiungo kipya chini ya Zaidi ya kichocheo.",
+    "since": "Kimeshirikiwa tangu {date}",
+    "notesShown": "Maelezo yanaonyeshwa",
+    "notesHidden": "Maelezo hayaonyeshwi",
+    "untitled": "Kichocheo kisicho na kichwa",
+    "stop": "Acha kushiriki",
+    "stopName": "Acha kushiriki {name}",
+    "stopped": "Kichocheo “{name}” hakishirikiwi tena. Kiungo chake hakifanyi kazi tena.",
+    "stopFailed": "Haikufanya kazi. Tafadhali jaribu tena.",
+    "fetchFailed": "Vichocheo vyako vilivyoshirikiwa havikuweza kupakiwa. Tafadhali jaribu tena.",
+    "none": "Hushiriki kichocheo chochote."
+  },
+  "settings": {
+    "heading": "Mipangilio",
+    "intro": "Imehifadhiwa na akaunti yako, kwa hiyo inabaki kwenye kila kifaa.",
+    "saveFailed": "Mpangilio haukuweza kuhifadhiwa. Tafadhali jaribu tena.",
+    "language": {
+      "legend": "Lugha",
+      "help": "Lugha ya programu, miongozo na barua pepe zako. Kuibadilisha kunafungua ukurasa huu katika lugha hiyo.",
+      "saved": "Imehifadhiwa: {language}."
+    },
+    "region": {
+      "legend": "Mahali unapofanyia kazi",
+      "none": {
+        "label": "Haijachaguliwa",
+        "saved": "Imehifadhiwa: hakuna eneo lililochaguliwa; chaguo-msingi zinafuata kivinjari chako."
+      },
+      "saved": "Imehifadhiwa: {region}.",
+      "help": "Malighafi zinazouzwa huko, na chaguo-msingi za nambari, tarehe, joto na koni zilizo hapa chini. Hadi uchague, zinafuata lugha ya kivinjari chako."
+    },
+    "format": {
+      "legend": "Nambari na tarehe",
+      "auto": {
+        "label": "Kama lugha na eneo langu",
+        "saved": "Imehifadhiwa: nambari na tarehe kama lugha na eneo lako zinavyoziandika."
+      },
+      "saved": "Imehifadhiwa: nambari na tarehe kama katika {language}.",
+      "help": "Jinsi nambari na tarehe zinavyoandikwa: 12,345.6 au 12.345,6, na mpangilio wa siku na mwezi."
+    },
+    "calendar": {
+      "legend": "Kalenda",
+      "help": "Kalenda ambayo tarehe zinaonyeshwa. Tarehe unazoandika zinabaki katika kalenda ya Gregori.",
+      "gregory": {
+        "label": "Gregori",
+        "saved": "Imehifadhiwa: tarehe zinaonyeshwa katika kalenda ya Gregori."
+      },
+      "buddhist": {
+        "label": "Enzi ya Kibudha ya Thailand",
+        "saved": "Imehifadhiwa: tarehe zinaonyeshwa katika enzi ya Kibudha ya Thailand."
+      },
+      "japanese": {
+        "label": "Enzi ya Japani",
+        "saved": "Imehifadhiwa: tarehe zinaonyeshwa katika enzi za Japani."
+      }
+    },
+    "digits": {
+      "legend": "Tarakimu",
+      "help": "Tarakimu ambazo nambari zinaonyeshwa. Baadhi ya lugha zina zake, kama Kiarabu, Kibengali na Kihindi, na mahali ulipo huamua zipi ni za kawaida. Unaweza kuandika nambari kwa zote mbili.",
+      "auto": {
+        "label": "Kama ilivyo kawaida mahali ulipo",
+        "saved": "Imehifadhiwa: tarakimu kama ilivyo kawaida mahali ulipo."
+      },
+      "western": {
+        "label": "Tarakimu za Magharibi, 0–9",
+        "saved": "Imehifadhiwa: nambari zinaonyeshwa kwa tarakimu 0–9."
+      },
+      "native": {
+        "label": "Tarakimu za lugha yenyewe, inapokuwa nazo",
+        "saved": "Imehifadhiwa: nambari zinaonyeshwa kwa tarakimu za lugha yenyewe, inapokuwa nazo."
+      }
+    },
+    "decimalMark": {
+      "legend": "Kuandika kiasi",
+      "either": {
+        "label": "Koma au nukta kwa desimali",
+        "example": "12,5 au 12.5",
+        "saved": "Imehifadhiwa: kiasi kinaweza kuandikwa kwa koma au nukta."
+      },
+      "comma": {
+        "label": "Koma kwa desimali",
+        "saved": "Imehifadhiwa: kiasi kinaandikwa kwa koma kwa desimali."
+      },
+      "point": {
+        "label": "Nukta kwa desimali",
+        "saved": "Imehifadhiwa: kiasi kinaandikwa kwa nukta kwa desimali."
+      },
+      "help": "Kwa mojawapo, kiasi kama 1,250 husomwa jinsi nambari zako zinavyoandikwa hapo juu."
+    },
+    "temperature": {
+      "legend": "Joto",
+      "celsius": {
+        "label": "Selsiasi",
+        "saved": "Imehifadhiwa: joto kwa °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Imehifadhiwa: joto kwa °F."
+      },
+      "help": "Hadi uchague, hii inafuata eneo lako: °F nchini Marekani, °C kwingineko."
+    },
+    "cones": {
+      "legend": "Kuchoma",
+      "orton": {
+        "label": "Koni za Orton",
+        "example": "koni 04, koni 6",
+        "saved": "Imehifadhiwa: kuchoma kwa koni za Orton."
+      },
+      "sk": {
+        "label": "Koni za SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Imehifadhiwa: kuchoma kwa koni za SK."
+      },
+      "temperature": {
+        "label": "Joto, kama programu ya kidhibiti cha tanuru",
+        "saved": "Imehifadhiwa: kuchoma kwa joto."
+      },
+      "help": "Hadi uchague, hii inafuata eneo lako: koni za Orton nchini Marekani, UK, Ireland, Australia na New Zealand, koni za SK nchini Japani, joto katika sehemu nyingine za Ulaya."
+    },
+    "density": {
+      "legend": "Msongamano wa glaze",
+      "sg": {
+        "label": "Uzito linganishi",
+        "saved": "Imehifadhiwa: msongamano wa glaze kama uzito linganishi.",
+        "example": "1.45"
+      },
+      "baume": {
+        "label": "Digrii za Baumé, kutoka kwenye haidrometa",
+        "saved": "Imehifadhiwa: msongamano wa glaze kwa digrii za Baumé."
+      },
+      "pint": {
+        "label": "Uzito wa painti, aunsi katika painti ya imperial",
+        "saved": "Imehifadhiwa: msongamano wa glaze kama uzito wa painti."
+      },
+      "help": "Jinsi miongozo inavyotoa unene wa glaze. Hadi uchague, hii inafuata eneo lako: digrii za Baumé nchini Italia na Japani, uzito linganishi kwingineko."
+    },
+    "currency": {
+      "legend": "Sarafu ya bei",
+      "help": "Bei unazotoa kwa malighafi, na gharama ya kundi, ziko katika sarafu hii. Kuibadilisha hakubadilishi bei ulizokwisha kutoa. Hadi uchague, hii inafuata eneo lako.",
+      "saved": "Imehifadhiwa: bei katika {currency}.",
+      "notConverted": "Bei ulizohifadhi hazikubadilishwa: bado ni nambari ulizotoa."
+    },
+    "theme": {
+      "legend": "Nuru au giza",
+      "system": {
+        "label": "Kama kifaa hiki kilivyowekwa",
+        "saved": "Imehifadhiwa: nuru au giza kama kila kifaa kilivyowekwa."
+      },
+      "light": {
+        "label": "Nuru",
+        "saved": "Imehifadhiwa: daima nuru."
+      },
+      "dark": {
+        "label": "Giza",
+        "saved": "Imehifadhiwa: daima giza."
+      },
+      "help": "Vichocheo vilivyochapishwa daima ni vyeusi kwenye nyeupe."
+    },
+    "palette": {
+      "legend": "Rangi",
+      "saved": "Imehifadhiwa: vitufe na viungo vya {palette}.",
+      "help": "Kwa vitufe, viungo na vichupo, vilivyopewa majina ya glaze. Kila moja ni rahisi kusoma kwenye nuru na kwenye giza."
+    },
+    "weightUnit": {
+      "legend": "Uzito wa kundi",
+      "grams": {
+        "label": "Gramu",
+        "saved": "Imehifadhiwa: uzito wa kundi uko kwa gramu."
+      },
+      "pounds": {
+        "label": "Pauni na aunsi",
+        "saved": "Imehifadhiwa: uzito wa kundi uko kwa pauni na aunsi."
+      },
+      "help": "Kwa makundi yaliyochapishwa."
+    },
+    "gramPrecision": {
+      "legend": "Gramu kwenye makundi yaliyochapishwa",
+      "single": {
+        "label": "Hadi sehemu ya kumi ya gramu",
+        "saved": "Imehifadhiwa: gramu zinaonyeshwa hadi sehemu ya kumi."
+      },
+      "full": {
+        "label": "Usahihi kamili",
+        "saved": "Imehifadhiwa: gramu zinaonyeshwa kikamilifu, hadi sehemu 5 za desimali."
+      },
+      "help": "Kwa sehemu ya kumi, kiasi chini ya 10 g bado huonyesha sehemu ya mia (2.35 g), kwa vitia rangi katika makundi madogo ya majaribio."
+    },
+    "lead": {
+      "legend": "Madini ya risasi (lead, Pb)",
+      "off": {
+        "label": "Imezimwa: kamwe usiweke madini ya risasi (Pb) kwenye kichocheo wala kuyapendekeza",
+        "saved": "Imehifadhiwa: madini ya risasi (Pb) hayawekwi kamwe kwenye kichocheo wala kupendekezwa."
+      },
+      "on": {
+        "label": "Imewashwa: malighafi zenye madini ya risasi (Pb) zinaweza kuwekwa na kupendekezwa",
+        "saved": "Imehifadhiwa: malighafi zenye madini ya risasi (Pb) zinaweza kuwekwa na kupendekezwa."
+      },
+      "help": "Madini ya risasi (Pb) ni sumu yakivutwa au kumezwa na hujilimbikiza mwilini, na glaze yenye madini ya risasi inaweza kuyatoa kwenye chakula na kinywaji; hakuna hesabu inayoweza kusema kama kipande kilichochomwa kinafanya hivyo. Ikiwa imezimwa, vichocheo vilivyokwisha kuwa na madini ya risasi bado vinafunguka kama vilivyokuwa.",
+      "warning": "Tumia madini ya risasi (Pb) tu kama frit, kamwe si kama madini ya risasi mabichi (red lead, white lead au yellow lead) wala litharge. Yachanganye yakiwa mvua, kamwe usiyapulizie, vaa barakoa ya kupumua na safisha ukiwa mvua. Weka vyombo vilivyopakwa glaze yenye madini ya risasi (Pb) mbali na chakula na kinywaji isipokuwa kipande kilichochomwa kimefaulu kipimo cha maabara cha kuvuja kwa madini (leach test).",
+      "turnOn": "Washa madini ya risasi (Pb)",
+      "keepOff": "Yaache yamezimwa"
+    },
+    "englishTerms": {
+      "legend": "Istilahi za Kiingereza",
+      "off": {
+        "label": "Imezimwa",
+        "saved": "Imehifadhiwa: hakuna istilahi za Kiingereza."
+      },
+      "on": {
+        "label": "Onyesha Kiingereza baada ya istilahi muhimu",
+        "saved": "Imehifadhiwa: Kiingereza kinaonyeshwa baada ya istilahi muhimu."
+      },
+      "help": "Kwa kusoma vyanzo vya Kiingereza, kama Digitalfire, kando ya hiki: istilahi muhimu hupata Kiingereza chake kwenye mabano."
+    },
+    "notice": {
+      "legend": "Taarifa ya tafsiri",
+      "shown": {
+        "label": "Inaonyeshwa",
+        "saved": "Imehifadhiwa: taarifa inaonyeshwa."
+      },
+      "hidden": {
+        "label": "Imefichwa",
+        "saved": "Imehifadhiwa: taarifa imefichwa. Mstari wake unabaki kwenye miongozo ya usalama.",
+        "savedPlain": "Imehifadhiwa: taarifa imefichwa. Mstari wake unabaki juu ya kila ukurasa."
+      },
+      "help": "Maelezo yaliyo juu ya kila ukurasa yanayosema umetafsiriwa na AI, pamoja na njia ya kupendekeza marekebisho."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Thibitisha barua pepe yako",
+    "intro": "Bonyeza kitufe ili kuthibitisha anwani hii.",
+    "confirm": "Thibitisha",
+    "incomplete": "Ukurasa huu unahitaji kiungo kutoka kwenye barua pepe ya uthibitisho, na hiki hakijakamilika.",
+    "account": "Akaunti yako",
+    "signIn": "Ingia",
+    "failed": "Hitilafu: haikuwezekana kuthibitisha anwani. Tafadhali jaribu tena."
+  },
+  "providers": {
+    "continueGoogle": "Endelea na Google",
+    "continueGithub": "Endelea na GitHub",
+    "continueMicrosoft": "Ingia kwa Microsoft",
+    "failed": "Kuingia hakukufanya kazi. Tafadhali jaribu tena.",
+    "heading": "Google, GitHub na Microsoft",
+    "intro": "Unganisha akaunti ya Google, GitHub au Microsoft ili uingie nayo. Glazecalc huhifadhi tu kitambulisho cha akaunti hiyo, kamwe si jina lake, picha au kitu kingine chochote, na kuingia kwa hatua mbili bado kunaomba hatua yake ya pili.",
+    "passwordless": "Akaunti hii haina nenosiri. Ili kubadilisha barua pepe yako, kuingia kwa hatua mbili au njia unazoingia, au kufuta akaunti yako, unathibitisha kuwa ni wewe kwa kuingia tena kwa Google, GitHub au Microsoft, yoyote uliyounganisha. Unaweza pia kuweka nenosiri.",
+    "setPassword": "Nitumie kiungo cha kuweka nenosiri kwa barua pepe",
+    "setPasswordUnlinks": "Kuweka nenosiri kwa kiungo kilichotumwa kwa barua pepe pia huondoa muunganisho wa Google, GitHub na Microsoft. Unaweza kuviunganisha tena baadaye.",
+    "setPasswordFailed": "Haikuwezekana kutuma kiungo. Tafadhali jaribu tena.",
+    "confirmFirst": "Thibitisha barua pepe yako kwanza, kwa kiungo tulichokutumia, ili kuunganisha Google, GitHub au Microsoft.",
+    "linkedOn": "Imeunganishwa tarehe {date}",
+    "notLinked": "Haijaunganishwa",
+    "link": "Unganisha {provider}",
+    "unlink": "Ondoa muunganisho wa {provider}",
+    "linkFailed": "Haikuwezekana kuunganisha. Tafadhali jaribu tena.",
+    "reauthIntro": "Akaunti hii haina nenosiri, kwa hiyo thibitisha kuwa ni wewe kwa kuingia tena. Kisha fanya badiliko ndani ya dakika 5.",
+    "reauthButton": "Ingia tena kwa {provider}",
+    "reauthHeld": "Uliingia tena kwa {provider}. Unaweza kufanya badiliko moja bila nenosiri katika dakika 5 zijazo.",
+    "reauthFirst": "Tafadhali ingia tena kwanza, kwa mojawapo ya vitufe vilivyo hapo juu.",
+    "reauthFailed": "Haikuwezekana kuanza kuingia tena. Tafadhali jaribu tena."
+  },
+  "apps": {
+    "title": "Programu zilizounganishwa",
+    "lead": "Wasaidizi, hati na programu zinazoweza kufikia rekodi zako. Ona kila moja ilifanya nini, rudisha ilichohamishia Tupioni, na iache wakati wowote unapotaka.",
+    "listHeading": "Programu zako zilizounganishwa na tokeni za ufikiaji",
+    "listLabel": "Programu zilizounganishwa na tokeni za ufikiaji",
+    "makeToken": "Tengeneza tokeni ya ufikiaji",
+    "none": "Hakuna kilichounganishwa kwenye akaunti yako.",
+    "loadFailed": "Programu zako zilizounganishwa hazikuweza kupakiwa. Tafadhali pakia ukurasa upya ili ujaribu tena.",
+    "kindToken": "Tokeni ya ufikiaji",
+    "kindOauth": "Programu iliyounganishwa",
+    "clientHost": "Anwani ya programu: {host}",
+    "redirectHost": "Inakurudisha kwa: {host}",
+    "last90": "Katika siku 90 zilizopita:",
+    "nothingDone": "Haijabadilisha kitu chochote katika siku 90 zilizopita.",
+    "count": {
+      "create": "{count, plural, one {Rekodi # imetengenezwa} other {Rekodi # zimetengenezwa}}",
+      "change": "{count, plural, one {Rekodi # imebadilishwa} other {Rekodi # zimebadilishwa}}",
+      "trash": "{count, plural, one {Rekodi # imehamishiwa Tupioni} other {Rekodi # zimehamishiwa Tupioni}}",
+      "restore": "{count, plural, one {Rekodi # imerudishwa} other {Rekodi # zimerudishwa}}",
+      "undo": "{count, plural, one {Badiliko # limetenduliwa} other {Mabadiliko # yametenduliwa}}"
+    },
+    "action": {
+      "create": "Ilitengeneza",
+      "change": "Ilibadilisha",
+      "trash": "Ilihamishia Tupioni:",
+      "restore": "Ilirudisha:",
+      "undo": "Ilitendua badiliko la"
+    },
+    "show": "Onyesha maelezo",
+    "hide": "Ficha maelezo",
+    "showNamed": "Onyesha maelezo ya {name}",
+    "hideNamed": "Ficha maelezo ya {name}",
+    "loading": "Inapakia...",
+    "detailFailed": "Haikuwezekana kupakia maelezo. Tafadhali jaribu tena.",
+    "movedHeading": "Vilivyohamishiwa Tupioni",
+    "movedNone": "Hakuna ilichohamisha ambacho bado kiko Tupioni.",
+    "putAllBack": "Rudisha vyote",
+    "activityHeading": "Ilichofanya",
+    "activityNone": "Hakuna katika siku 90 zilizopita.",
+    "older": "Onyesha vya zamani",
+    "revokeQuestion": "Batilisha {name}? Inaacha kufanya kazi mara moja.",
+    "revokeYes": "Ndiyo, batilisha",
+    "revokeAll": "Batilisha zote",
+    "revokeAllQuestion": "{count, plural, one {Batilisha muunganisho # unaofanya kazi bado?} other {Batilisha miunganisho yote # inayofanya kazi bado?}} Inaacha kufanya kazi mara moja.",
+    "revokeFailed": "Hitilafu: haikuwezekana kubatilisha. Tafadhali jaribu tena.",
+    "restoreFailed": "Hitilafu: haikuwezekana kurudisha rekodi. Tafadhali jaribu tena.",
+    "selfDescribed": "imejieleza yenyewe",
+    "selfDescribedNote": "Ilijisajili yenyewe, kwa hiyo jina lake ni kile tu inachosema kuhusu yenyewe.",
+    "confirm": {
+      "heading": "Thibitisha kabla ya mabadiliko",
+      "intro": "Chagua kama badiliko kutoka kwa msaidizi, programu au tokeni ya ufikiaji lisubiri hadi uliidhinishe hapa, ukiwa umeingia. Hakuna kinachoombwa kinachobadilishwa hadi ufanye hivyo.",
+      "off": "Usiulize kamwe",
+      "offHint": "Mabadiliko hufanywa mara moja. Kila moja huweka rekodi jinsi ilivyokuwa, ili uweze kulitendua, na kila programu ilichofanya kinaonyeshwa hapa chini.",
+      "removals": "Uliza kabla ya kuondoa",
+      "removalsHintSite": "Kuhamishia rekodi Tupioni, kuondoa malighafi kwenye malighafi ulizo nazo, au kuondoa kumbukumbu ya kuchoma kwenye kichocheo kunasubiri idhini yako kwenye tovuti hii.",
+      "all": "Uliza kabla ya kila badiliko",
+      "allHint": "Kila rekodi mpya, badiliko, utenduaji na uondoaji husubiri idhini yako kwenye tovuti hii.",
+      "how": "Badiliko linalosubiri lina ukurasa wake, ambao msaidizi au hati hukupa kiungo chake. Linasubiri dakika 30, kisha hakuna kinachobadilishwa. Tokeni ya ufikiaji iliyotengenezwa kwa “Mabadiliko kutoka kwa tokeni hii hayahitaji uthibitisho” haiulizwi kamwe.",
+      "exempt": "Mabadiliko yake hayahitaji uthibitisho.",
+      "saveFailed": "Hitilafu: haikuwezekana kuhifadhi chaguo lako. Tafadhali jaribu tena."
+    }
+  },
+  "connect": {
+    "title": "Unganisha programu kwenye akaunti yako",
+    "loading": "Inapakia...",
+    "loadFailed": "Ombi hili la kuunganisha programu halikuweza kupakiwa. Tafadhali pakia ukurasa upya, au anza tena kwenye programu.",
+    "answerFailed": "Hitilafu: jibu lako halikuweza kutumwa. Tafadhali jaribu tena.",
+    "toAccount": "Nenda kwenye akaunti yako",
+    "asking": "Programu hii inaomba kuunganishwa kwenye akaunti yako ya Glazecalc:",
+    "noName": "Programu isiyo na jina",
+    "selfDescribed": "imejieleza yenyewe",
+    "selfDescribedNote": "Ilijisajili yenyewe, kwa hiyo jina hili ni kile tu inachosema kuhusu yenyewe. Glazecalc haijalikagua.",
+    "account": "Umeingia kama {email}",
+    "appAddress": "Anwani ya programu",
+    "checked": "(imekaguliwa na Glazecalc)",
+    "answerTo": "Mahali jibu lako linapokwenda",
+    "ownComputer": "Kompyuta yako mwenyewe",
+    "appOnDevice": "Programu kwenye kifaa chako inayofungua viungo vya {scheme}",
+    "loopbackWarning": "Programu hii inapokea jibu kwenye kompyuta yako mwenyewe. Iruhusu tu ikiwa wewe mwenyewe ulianzisha hili, kwenye kompyuta hii, sasa hivi.",
+    "loopbackWriteWarning": "Pia inaomba kubadilisha rekodi zako: programu yoyote kwenye kompyuta hii inayochukua jibu inaweza kisha kuzibadilisha.",
+    "appSchemeWarning": "Jibu linakwenda kwa programu yoyote kwenye kifaa chako inayofungua viungo vya {scheme}. Sehemu iliyobaki ya anwani hiyo haikaguliwi, kwa hiyo inaweza kuonekana kama tovuti yoyote. Iruhusu tu ikiwa ulianzisha hili kutoka kwa programu unayoiamini, sasa hivi.",
+    "elsewhereWarning": "Anwani ya programu hii ni {app}, lakini jibu lako linakwenda {answer}. Iruhusu tu ikiwa ulitarajia hilo.",
+    "canHeading": "Inachoweza kufanya",
+    "canRead": "Kusoma vichocheo vyako, daftari, malighafi, rafu na mipangilio.",
+    "readOnly": "Haiwezi kubadilisha chochote.",
+    "alsoWrite": "Iruhusu pia ibadilishe rekodi zangu",
+    "writeWarning": "Ingeweza kisha kutengeneza na kubadilisha rekodi zako, na kuzihamishia Tupioni. Kila badiliko huweka toleo la rekodi jinsi ilivyokuwa, ili uweze kulitendua. Unaweza kuibatilisha wakati wowote kwenye Programu zilizounganishwa.",
+    "privacy": "Kile ambacho Glazecalc huhifadhi kuhusu programu zilizounganishwa kiko kwenye <privacy>taarifa ya faragha</privacy>. Unaweza kuona na kubatilisha programu zako kwenye <apps>Programu zilizounganishwa</apps>.",
+    "allow": "Ruhusu",
+    "deny": "Usiruhusu",
+    "sending": "Inatuma jibu lako kwa programu..."
+  },
+  "tokens": {
+    "heading": "Tokeni za ufikiaji",
+    "intro": "Tokeni ya ufikiaji humruhusu msaidizi wako wa AI au hati yako kusoma vichocheo, malighafi, maelezo na kumbukumbu za kuchoma kwenye akaunti yako, na, ukichagua, kuvibadilisha. Kila tokeni huacha kufanya kazi siku unayochagua, au mara tu unapoibatilisha.",
+    "howTo": "Jinsi ya kuunganisha msaidizi wa AI",
+    "seeThem": "Tokeni zako na programu zilizounganishwa, kila moja ilifanya nini, na Batilisha ziko kwenye ukurasa wa Programu zilizounganishwa.",
+    "seeThemLink": "Fungua Programu zilizounganishwa",
+    "hint": "inaishia {hint}",
+    "readOnly": "Kusoma tu",
+    "readWrite": "Kusoma na kubadilisha",
+    "created": "ilitengenezwa {date}",
+    "lastUsed": "ilitumika mara ya mwisho {date}",
+    "neverUsed": "haijatumika kamwe",
+    "expires": "inaisha {date}",
+    "expiredOn": "iliisha {date}",
+    "revokedOn": "ilibatilishwa {date}",
+    "revoke": "Batilisha",
+    "revokeNamed": "Batilisha {name}",
+    "revokeAll": "Batilisha tokeni zote za ufikiaji",
+    "revokeFailed": "Hitilafu: haikuwezekana kubatilisha tokeni. Tafadhali jaribu tena.",
+    "loadFailed": "Tokeni zako za ufikiaji hazikuweza kupakiwa. Tafadhali pakia ukurasa upya ili ujaribu tena.",
+    "createHeading": "Tengeneza tokeni",
+    "name": "Jina",
+    "nameHint": "Kitu cha kuitofautisha nacho, kama msaidizi au kompyuta ambayo ni yake.",
+    "nameCheck": "Tafadhali lipe tokeni jina la herufi 1 hadi {most}.",
+    "expiry": "Inaacha kufanya kazi baada ya",
+    "days": "{count, plural, one {siku #} other {siku #}}",
+    "expiryHint": "Tunakutumia barua pepe siku 7 kabla tokeni haijaacha kufanya kazi.",
+    "expiryWriteHint": "{count, plural, one {Tokeni inayoweza kubadilisha rekodi zako huacha kufanya kazi baada ya siku # isiyozidi.} other {Tokeni inayoweza kubadilisha rekodi zako huacha kufanya kazi baada ya siku # zisizozidi.}}",
+    "confirmEmailFirst": "Kabla ya kutengeneza tokeni, thibitisha barua pepe yako: fungua kiungo tulichotuma kwa {email}. Tunakuarifu kwa anwani hiyo tokeni inapotengenezwa na kabla haijaacha kufanya kazi.",
+    "resend": "Tuma kiungo cha uthibitisho tena",
+    "scopeNote": "Tokeni inaweza kusoma rekodi zako lakini si kuzibadilisha.",
+    "scope": "Inachoweza kufanya",
+    "scopeWriteNote": "Tokeni pia inaweza kuhifadhi rekodi mpya, kuzibadilisha na kuzihamishia Tupioni. Kila badiliko huweka rekodi jinsi ilivyokuwa, ili uweze kulitendua, na tokeni ilichofanya kiko kwenye Programu zilizounganishwa na katika Pakua data yangu. Chagua hili tu kwa msaidizi au hati unayoiamini kubadilisha rekodi zako.",
+    "confirmStep": "Ili kutengeneza tokeni, thibitisha kuwa ni wewe.",
+    "create": "Tengeneza tokeni",
+    "failed": "Hitilafu: haikuwezekana kutengeneza tokeni. Tafadhali jaribu tena.",
+    "limit": "Una tokeni {most} za ufikiaji zinazofanya kazi, nyingi zaidi ambazo akaunti inaweza kuwa nazo. Batilisha moja ili kutengeneza nyingine.",
+    "newHeading": "Nakili tokeni yako mpya sasa",
+    "newText": "Hii ndiyo mara pekee inayoonyeshwa. Yeyote aliye nayo anaweza kusoma rekodi zako hadi iache kufanya kazi, kwa hiyo iweke kama nenosiri, na uipe tu msaidizi au hati yako mwenyewe.",
+    "newTextWrite": "Hii ndiyo mara pekee inayoonyeshwa. Yeyote aliye nayo anaweza kusoma na kubadilisha rekodi zako hadi iache kufanya kazi, kwa hiyo iweke kama nenosiri, na uipe tu msaidizi au hati yako mwenyewe.",
+    "newLabel": "Tokeni yako mpya ya ufikiaji",
+    "copy": "Nakili tokeni",
+    "copied": "Imenakiliwa.",
+    "copyFailed": "Haikuweza kunakiliwa. Chagua tokeni na uinakili mwenyewe.",
+    "done": "Nimeinakili",
+    "keptHeading": "Tokeni zako za ufikiaji bado zinafanya kazi",
+    "keptText": "{count, plural, one {Kubadilisha nenosiri lako hakukusimamisha tokeni yako ya ufikiaji. Ikiwa ulilibadilisha kwa sababu mtu mwingine anaweza kulijua, batilisha tokeni pia.} other {Kubadilisha nenosiri lako hakukusimamisha tokeni zako # za ufikiaji. Ikiwa ulilibadilisha kwa sababu mtu mwingine anaweza kulijua, zibatilishe pia.}}",
+    "keep": "Ziache",
+    "signOutNote": "{count, plural, one {Pia husimamisha tokeni yako ya ufikiaji, kabisa.} other {Pia husimamisha tokeni zako # za ufikiaji, kabisa.}}",
+    "noConfirm": "Mabadiliko kutoka kwa tokeni hii hayahitaji uthibitisho",
+    "noConfirmHint": "Kwa hati unayoiendesha mwenyewe. Ukichagua kuthibitisha mabadiliko kwenye Programu zilizounganishwa, tokeni hii bado haiulizwi kamwe. Unaweza kuchagua hili sasa tu, tokeni inapotengenezwa."
+  },
+  "confirm": {
+    "title": "Idhinisha mabadiliko",
+    "lead": "Programu iliyounganishwa kwenye akaunti yako inaomba kufanya badiliko hili. Hakuna kinachobadilishwa hadi ulidhinishe.",
+    "from": "Imeombwa na {name}",
+    "fromToken": "tokeni ya ufikiaji",
+    "fromConnectedApp": "programu iliyounganishwa",
+    "selfDescribed": "imejieleza yenyewe",
+    "selfDescribedNote": "Ilijisajili yenyewe, kwa hiyo jina lake ni kile tu inachosema kuhusu yenyewe. Glazecalc haijalikagua.",
+    "asked": "Imeombwa {date}. Inasubiri hadi {time}, kisha hakuna kinachobadilishwa.",
+    "removal": "Hili huondoa kitu: rekodi inakwenda Tupioni, ambako unaweza kuirudisha ndani ya siku 30, au malighafi inaondolewa kwenye malighafi ulizo nazo.",
+    "check": "Liidhinishe tu ikiwa wewe uliomba badiliko hili. Kama sivyo, likatae, na ubatilishe programu kwenye Programu zilizounganishwa.",
+    "approve": "Idhinisha badiliko",
+    "decline": "Kataa",
+    "titleBefore": "Kabla programu hii haijaibadilisha, ilikuwa ikiitwa “{title}”.",
+    "untitled": "(hakuna kichwa)",
+    "changedAgo": "{minutes, plural, =0 {Programu hii iliibadilisha chini ya dakika moja iliyopita.} one {Programu hii iliibadilisha dakika # iliyopita.} other {Programu hii iliibadilisha dakika # zilizopita.}}",
+    "now": "Sasa:",
+    "after": "Baada ya badiliko:",
+    "showAll": "Onyesha vyote",
+    "showLess": "Onyesha kidogo",
+    "othersHeading": "{count, plural, one {Badiliko # zaidi linasubiri kutoka kwa {name}} other {Mabadiliko # zaidi yanasubiri kutoka kwa {name}}}",
+    "approveAllShown": "{count, plural, one {Idhinisha badiliko lote # kutoka kwa {name}} other {Idhinisha mabadiliko yote # kutoka kwa {name}}}",
+    "declineAll": "{count, plural, one {Kataa badiliko lote # kutoka kwa {name}} other {Kataa mabadiliko yote # kutoka kwa {name}}}",
+    "decided": "Badiliko hili limeamuliwa tayari.",
+    "notFound": "Hakuna badiliko linalosubiri kwenye anwani hii. Huenda liliidhinishwa au kukataliwa tayari, au lilisubiri zaidi ya dakika 30, au ni la akaunti nyingine.",
+    "signIn": "Ingia kwenye Glazecalc kwa akaunti ambayo badiliko ni lake, kisha fungua kiungo hiki tena.",
+    "signInLink": "Ingia",
+    "loadFailed": "Badiliko halikuweza kupakiwa. Tafadhali pakia ukurasa upya ili ujaribu tena.",
+    "failed": "Hitilafu: haikuwezekana kutuma jibu lako. Tafadhali jaribu tena.",
+    "apps": "Ona programu zako zilizounganishwa"
+  }
+}

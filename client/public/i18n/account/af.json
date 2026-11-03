@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Meld aan",
+    "keepHeading": "Hou jou werk",
+    "signUpHeading": "Skep jou rekening",
+    "signInLead": "Welkom terug by jou glasuurnotaboek.",
+    "keepLead": "Hou alles wat jy as {name} gemaak het: voeg jou e-pos en 'n wagwoord by. Dit bly gratis.",
+    "signUpLead": "Gratis. Jou resepte, grondstowwe en notas word privaat vir jou rekening gehou.",
+    "trialNote": "Het jy reeds 'n rekening? As jy aanmeld, word wat jy as {name} gemaak het daarin ingebring. Nuut hier? <signup>Skep 'n rekening</signup> om dit eerder te hou.",
+    "email": "E-pos",
+    "password": "Wagwoord",
+    "passwordHint": "Ten minste 8 karakters.",
+    "confirmation": "Bevestig wagwoord",
+    "keepSignedIn": "Hou my aangemeld op hierdie toestel",
+    "passwordMissing": "Tik jou wagwoord in.",
+    "createAccount": "Skep rekening",
+    "signIn": "Meld aan",
+    "haveAccount": "Het jy reeds 'n rekening? <signin>Meld aan</signin>",
+    "privacy": "Jou e-pos en wat jy stoor word slegs gebruik om jou rekening te laat werk, en word by Amazon Web Services in die VSA bewaar. <privacy>Hoe Glazecalc met jou data omgaan</privacy>",
+    "terms": "Deur 'n rekening te skep, stem jy in tot die <terms>Gebruiksvoorwaardes</terms>.",
+    "dataNotice": "Glazecalc is 'n gratis, oopbronprojek, en rekeninge word op bedieners in die Verenigde State bewaar. Jy kan die gidse lees en die sakrekenaar sonder 'n rekening probeer, of jou eie kopie laat loop. Of jy hier 'n rekening skep, is jou eie besluit, en die projek aanvaar geen verantwoordelikheid daarvoor nie. <where>Waar jou rekening bewaar word, en jou keuse</where>",
+    "forgot": "Jou wagwoord vergeet? Stel dit terug",
+    "newHere": "Nuut hier? <signup>Skep 'n gratis rekening</signup>",
+    "signUpFailed": "Fout: kon nie die rekening skep nie.",
+    "signInFailed": "Fout: kon nie aanmeld nie.",
+    "or": "of",
+    "passkeySignIn": "Meld aan met 'n wagwoordsleutel",
+    "passkeyHint": "'n Wagwoordsleutel gebruik jou vingerafdruk, gesig of skermslot in plaas van 'n wagwoord. Voeg een op jou rekeningbladsy by."
+  },
+  "secondStep": {
+    "heading": "Tweestap-aanmelding",
+    "signingInAs": "Jou wagwoord is reg. Nog een stap om as {email} aan te meld.",
+    "leadCode": "Maak jou verifikasieprogram oop en tik die kode in wat dit vir Glazecalc wys.",
+    "leadPasskey": "Gebruik jou wagwoordsleutel om die aanmelding te voltooi.",
+    "leadRecovery": "Tik een van die herstelkodes in wat jy gestoor het toe jy tweestap-aanmelding aangeskakel het. Elke kode werk een keer.",
+    "code": "Kode van jou verifikasieprogram",
+    "codeHint": "{digits} syfers. 'n Nuwe kode verskyn elke 30 sekondes.",
+    "codeFormat": "Tik die kode van {digits} syfers van jou verifikasieprogram in.",
+    "recoveryCode": "Herstelkode",
+    "recoveryHint": "Dit lyk soos abcde-12345.",
+    "recoveryMissing": "Tik een van jou herstelkodes in.",
+    "finish": "Voltooi aanmelding",
+    "usePasskey": "Gebruik 'n wagwoordsleutel",
+    "noPasskeysHere": "Hierdie blaaier kan nie wagwoordsleutels gebruik nie. Gebruik 'n ander manier hieronder, of meld aan op 'n toestel wat kan.",
+    "useRecovery": "Gebruik eerder 'n herstelkode",
+    "useApp": "Gebruik eerder jou verifikasieprogram",
+    "startOver": "Begin van voor af",
+    "reloadNote": "Hierdie stap wag {minutes} minute. As jy hierdie bladsy verlaat of herlaai, sal jy jou wagwoord weer moet intik.",
+    "expired": "Die aanmelding het te lank geneem. Tik asseblief jou wagwoord weer in."
+  },
+  "passkey": {
+    "cancelled": "Die wagwoordsleutel is nie gebruik nie: die versoek is gekanselleer of het uitgetel, of hierdie toestel het nie 'n wagwoordsleutel vir Glazecalc nie. Probeer asseblief weer, of gebruik 'n ander manier.",
+    "registered": "Hierdie wagwoordsleutel is reeds op jou rekening.",
+    "browserFailed": "Hierdie blaaier kon nie die wagwoordsleutel gebruik nie. Probeer asseblief weer, of gebruik 'n ander manier."
+  },
+  "forgot": {
+    "heading": "Stel jou wagwoord terug",
+    "checkInbox": "Kyk in jou inkassie en strooipos-vouer. As niks aankom nie, gaan die adres na en vra weer.",
+    "intro": "Tik die e-pos vir jou rekening in, en ons stuur vir jou 'n skakel om 'n nuwe wagwoord te kies.",
+    "email": "E-pos:",
+    "send": "Stuur terugstelskakel",
+    "back": "Terug na aanmeld",
+    "failed": "Fout: kon nie die terugstel-e-pos stuur nie. Probeer asseblief weer."
+  },
+  "reset": {
+    "heading": "Kies 'n nuwe wagwoord",
+    "signIn": "Meld aan",
+    "incomplete": "Hierdie bladsy het die skakel uit 'n wagwoordterugstel-e-pos nodig, en hierdie een is onvolledig.",
+    "askAgain": "Vra vir 'n nuwe skakel",
+    "password": "Nuwe wagwoord:",
+    "confirmation": "Bevestig nuwe wagwoord:",
+    "save": "Stoor nuwe wagwoord",
+    "hint": "Ten minste 8 karakters. Elke toestel wat by die rekening aangemeld is, sal afgemeld word.",
+    "failed": "Fout: kon nie die wagwoord verander nie. Probeer asseblief weer.",
+    "secondStep": "As jou rekening tweestap-aanmelding gebruik, sal jy steeds jou verifikasieprogram, 'n wagwoordsleutel of 'n herstelkode nodig hê om aan te meld."
+  },
+  "account": {
+    "trialTitle": "Jou proef",
+    "trialLead": "Jy probeer Glazecalc as {name}.",
+    "keepHeading": "Hou jou werk",
+    "keepText": "Hierdie proef en alles daarin word op {date} verwyder. Skep 'n gratis rekening om dit te hou: jou resepte, grondstowwe en notas bly presies soos hulle is, en {name} bly jou vertoonnaam.",
+    "createAccount": "Skep 'n rekening",
+    "title": "Jou rekening",
+    "signedInAs": "Aangemeld as {email}.",
+    "contents": "Op hierdie bladsy",
+    "changeHeading": "Verander jou wagwoord",
+    "current": "Huidige wagwoord",
+    "currentMissing": "Tik jou huidige wagwoord in.",
+    "password": "Nuwe wagwoord",
+    "passwordHint": "Ten minste 8 karakters. Ander toestelle wat by hierdie rekening aangemeld is, sal afgemeld word.",
+    "confirmation": "Bevestig nuwe wagwoord",
+    "change": "Verander wagwoord",
+    "changeFailed": "Fout: kon nie die wagwoord verander nie. Probeer asseblief weer.",
+    "deleteHeading": "Skrap jou rekening",
+    "deleteText": "Dit verwyder jou rekening en alles wat jy gestoor het: resepte, grondstowwe, bymiddels, notas, bakrekords en advies. Dit kan nie ongedaan gemaak word nie.",
+    "deletePassword": "Jou wagwoord, om te bevestig",
+    "deletePasswordMissing": "Tik jou wagwoord in om te bevestig.",
+    "delete": "Skrap my rekening",
+    "deleteFailed": "Fout: kon nie die rekening skrap nie. Probeer asseblief weer.",
+    "unverifiedHeading": "Bevestig jou e-pos",
+    "unverifiedText": "Ons het 'n skakel na {email} gestuur toe jy hierdie rekening gemaak het. Maak dit oop om te bevestig dat die adres joune is. Tot dan stuur ons slegs pos soontoe wanneer jy daarvoor vra, soos 'n wagwoordterugstelling.",
+    "resend": "Stuur die skakel weer",
+    "resendFailed": "Fout: kon nie die skakel stuur nie. Probeer asseblief weer.",
+    "emailHeading": "Verander jou e-pos",
+    "emailText": "Ons stuur 'n skakel na die nuwe adres, en jou e-pos verander wanneer jy dit oopmaak. Ons laat ook jou huidige adres weet. Elke toestel wat by hierdie rekening aangemeld is, sal afgemeld word.",
+    "newEmail": "Nuwe e-pos",
+    "emailPassword": "Jou wagwoord, om te bevestig",
+    "emailSend": "Stuur die skakel",
+    "emailFailed": "Fout: kon nie die skakel stuur nie. Probeer asseblief weer.",
+    "signOutHeading": "Meld oral af",
+    "signOutText": "Meld jou op elke toestel af, hierdie een ingesluit, en stop jou toegangstokens en jou deelskakels. Gebruik dit as jy 'n toestel verloor het of dink iemand anders het jou aanmelding.",
+    "signOutButton": "Meld oral af",
+    "signOutFailed": "Fout: kon nie afmeld nie. Probeer asseblief weer.",
+    "confirmStep": "Tweestap-aanmelding is aan, so bevestig dat dit jy is: jou wagwoord en 'n tweede stap."
+  },
+  "mfa": {
+    "heading": "Tweestap-aanmelding",
+    "intro": "Vra vir 'n tweede stap wanneer jy aanmeld, benewens jou wagwoord: 'n kode van 'n verifikasieprogram, of 'n wagwoordsleutel. Dan kan iemand wat jou wagwoord leer ken steeds nie inkom nie.",
+    "loadFailed": "Kon nie jou tweestap-aanmelding laai nie. Herlaai asseblief die bladsy.",
+    "on": "Tweestap-aanmelding is aan.",
+    "onText": "Jy meld aan met jou wagwoord en 'n tweede stap, of met 'n wagwoordsleutel alleen.",
+    "off": "Tweestap-aanmelding is af.",
+    "badgeOn": "Aan",
+    "badgeOff": "Af",
+    "offText": "Om dit aan te skakel, stel 'n verifikasieprogram op of voeg 'n wagwoordsleutel by.",
+    "confirmEmailFirst": "Bevestig eers jou e-pos, hierbo. Ons gebruik dit om jou van veranderinge aan hoe jy aanmeld te laat weet, en om te help as jy jou tweede stap verloor.",
+    "appHeading": "Verifikasieprogram",
+    "appText": "'n Program op jou foon of in jou wagwoordbestuurder wys elke 30 sekondes 'n nuwe kode, om in te tik wanneer jy aanmeld.",
+    "addApp": "Stel 'n verifikasieprogram op",
+    "removeApp": "Verwyder die verifikasieprogram",
+    "added": "Bygevoeg op {date}.",
+    "lastUsed": "Laas gebruik op {date}.",
+    "notUsed": "Nog nie gebruik nie.",
+    "passkeysHeading": "Wagwoordsleutels",
+    "passkeysText": "'n Wagwoordsleutel meld jou aan met jou vingerafdruk, gesig of skermslot, op hierdie toestel of jou foon. Dit kan jou tweede stap wees, of jou op sy eie aanmeld, sonder jou wagwoord.",
+    "noPasskeysHere": "Hierdie blaaier kan nie wagwoordsleutels maak of gebruik nie. Probeer 'n ander blaaier of toestel.",
+    "addPasskey": "Voeg 'n wagwoordsleutel by",
+    "removePasskey": "Verwyder die wagwoordsleutel",
+    "rename": "Hernoem",
+    "remove": "Verwyder",
+    "renameLabel": "Nuwe naam vir \"{name}\"",
+    "saveName": "Stoor die naam",
+    "name": "Naam vir die wagwoordsleutel",
+    "nameHint": "Sodat jy jou wagwoordsleutels uitmekaar kan ken, soos \"Skootrekenaar\" of \"Foon\".",
+    "nameCheck": "Gee die wagwoordsleutel 'n naam van 1 tot {most} karakters.",
+    "passkeyLimit": "Jy het {most} wagwoordsleutels, die meeste wat 'n rekening kan hê. Verwyder een om nog een by te voeg.",
+    "codesTitle": "Herstelkodes",
+    "codesLeft": "{count, plural, one {# van {total} herstelkodes oor.} other {# van {total} herstelkodes oor.}} As jy nie jou program of 'n wagwoordsleutel kan gebruik nie, meld 'n kode jou eerder aan. Elke kode werk een keer.",
+    "codesLow": "Maak gou nuwe kodes. As hulle opraak en jy jou program en wagwoordsleutels verloor, kan jy nie aanmeld nie.",
+    "newCodes": "Maak nuwe herstelkodes",
+    "offHeading": "Dit afskakel",
+    "offWhat": "Tweestap-aanmelding bly aan terwyl jy 'n verifikasieprogram of 'n wagwoordsleutel het. As jy die laaste daarvan verwyder, skakel dit af, en dan:",
+    "offPassword": "Aanmelding het net jou wagwoord nodig, so enigiemand wat dit leer ken, kan aanmeld.",
+    "offCodes": "Jou herstelkodes hou op werk.",
+    "offSignOut": "Elke ander toestel wat by jou rekening aangemeld is, word afgemeld. Hierdie een bly aangemeld.",
+    "offEmail": "Ons e-pos jou dat dit afgeskakel is.",
+    "offRemoveApp": "Skakel tweestap-aanmelding af (verwyder die program)",
+    "offRemoveAppFirst": "Verwyder die program, om te begin afskakel",
+    "offPasskeys": "{count, plural, one {Om dit af te skakel, verwyder jou wagwoordsleutel onder Wagwoordsleutels, hierbo.} other {Om dit af te skakel, verwyder jou # wagwoordsleutels onder Wagwoordsleutels, hierbo.}}",
+    "offPasskeysToo": "{count, plural, one {Jy het ook 'n wagwoordsleutel: verwyder dit onder Wagwoordsleutels, hierbo, sowel as die program.} other {Jy het ook # wagwoordsleutels: verwyder hulle onder Wagwoordsleutels, hierbo, sowel as die program.}}",
+    "addAppText": "Om 'n verifikasieprogram op te stel, bevestig eers dat dit jy is.",
+    "removeAppText": "Om die verifikasieprogram te verwyder, bevestig dat dit jy is.",
+    "addPasskeyText": "Gee die wagwoordsleutel 'n naam en bevestig dat dit jy is. Dan vra jou blaaier jou om die wagwoordsleutel te maak.",
+    "removePasskeyText": "Om die wagwoordsleutel \"{name}\" te verwyder, bevestig dat dit jy is.",
+    "newCodesText": "Nuwe kodes vervang jou ou kodes, wat ophou werk. Bevestig dat dit jy is.",
+    "lastFactor": "Dit is jou laaste tweede stap, so tweestap-aanmelding skakel af en jou herstelkodes hou op werk.",
+    "continue": "Gaan voort",
+    "cancel": "Kanselleer",
+    "password": "Jou wagwoord",
+    "factorLegend": "En jou tweede stap",
+    "passkeyNext": "Jou blaaier vra vir jou wagwoordsleutel wanneer jy voortgaan.",
+    "passkeyReadyText": "Dankie. Maak nou die wagwoordsleutel \"{name}\": wanneer jy die knoppie druk, vra jou blaaier vir jou vingerafdruk, gesig of skermslot, of vir jou foon. As dit nie werk nie, kan jy {minutes} minute lank weer probeer sonder om weer te bevestig.",
+    "passkeyCreate": "Voeg nou die wagwoordsleutel by",
+    "useApp": "Gebruik eerder jou verifikasieprogram",
+    "usePasskey": "Gebruik eerder 'n wagwoordsleutel",
+    "useRecovery": "Gebruik eerder 'n herstelkode",
+    "failed": "Fout: kon nie die verandering maak nie. Probeer asseblief weer.",
+    "setupHeading": "Stel jou verifikasieprogram op",
+    "setupOpen": "Maak jou verifikasieprogram oop en kies om 'n rekening by te voeg.",
+    "setupScan": "Skandeer hierdie QR-kode met die program, of tik die sleutel in.",
+    "setupTap": "Tik die knoppie om Glazecalc by 'n verifikasieprogram of wagwoordbestuurder op hierdie foon te voeg.",
+    "showQr": "Wys die QR-kode, om dit op 'n ander toestel op te stel",
+    "setupScanOther": "Skandeer dit met die verifikasieprogram op die ander toestel.",
+    "qrAlt": "QR-kode om Glazecalc by 'n verifikasieprogram te voeg",
+    "key": "Sleutel",
+    "copyKey": "Kopieer die sleutel",
+    "openInApp": "Voeg by 'n verifikasieprogram op hierdie toestel",
+    "clipboardNote": "Gekopieerde teks kan in jou knipbordgeskiedenis bly en jou ander toestelle bereik. Plak dit reguit in jou wagwoordbestuurder, en maak dan jou knipbordgeskiedenis skoon.",
+    "setupCode": "Tik die kode van {digits} syfers in wat die program nou vir Glazecalc wys",
+    "setupFinish": "Voltooi die opstelling",
+    "codesHeading": "Jou herstelkodes",
+    "codesText": "Bêre hierdie op 'n veilige plek, soos jou wagwoordbestuurder, of druk hulle en hou hulle by jou papiere. As jy nie jou program of 'n wagwoordsleutel kan gebruik nie, meld 'n kode jou eerder aan. Elke kode werk een keer. Hulle word net nou gewys.",
+    "print": "Druk die kodes",
+    "printNote": "Elke kode werk een keer. Hou hierdie bladsy op 'n veilige plek.",
+    "download": "Laai af as 'n tekslêer",
+    "copy": "Kopieer die kodes",
+    "copied": "Gekopieer.",
+    "copyFailed": "Kon nie kopieer nie. Kies asseblief die teks en kopieer dit.",
+    "saved": "Ek het hulle gestoor",
+    "fileTitle": "Glazecalc-herstelkodes vir {email}",
+    "fileNote": "Elke kode werk een keer. Hou hierdie lêer op 'n veilige plek."
+  },
+  "export": {
+    "heading": "Laai my data af",
+    "text": "Stoor 'n kopie van alles wat jou rekening bevat as een lêer: jou besonderhede, instellings, grondstowwe byderhand, resepte, grondstowwe, bymiddels, notas, bakrekords, advies en asblik. Dit sluit nie jou wagwoord in nie. Hou die lêer êrens privaat, want dit bevat alles wat jy gestoor het.",
+    "json": "Laai alles af (JSON)",
+    "csvText": "Of stoor 'n sigblad van net jou resepte of net jou eie grondstowwe, om in Excel, Numbers of Sheets oop te maak.",
+    "recipes": "Resepte (CSV)",
+    "materials": "Grondstowwe (CSV)"
+  },
+  "trash": {
+    "heading": "Asblik",
+    "text": "Wat jy uit jou notaboek verwyder, wag 30 dae in die Asblik. Sit dit van daar terug, of skrap dit vir goed.",
+    "open": "Maak die Asblik oop"
+  },
+  "shared": {
+    "heading": "Gedeelde resepte",
+    "text": "Die resepte wat jy met 'n skakel deel, wat enigiemand met die skakel sonder 'n rekening kan lees. 'n Skakel word net een keer gewys, wanneer dit gemaak word, so dit kan nie hier gewys word nie. Om 'n resep weer te deel, maak 'n nuwe skakel onder die resep se Meer.",
+    "since": "Gedeel sedert {date}",
+    "notesShown": "Notas gewys",
+    "notesHidden": "Notas nie gewys nie",
+    "untitled": "Resep sonder titel",
+    "stop": "Hou op deel",
+    "stopName": "Hou op om {name} te deel",
+    "stopped": "{name} word nie meer gedeel nie. Sy skakel werk nie meer nie.",
+    "stopFailed": "Dit het nie gewerk nie. Probeer asseblief weer.",
+    "fetchFailed": "Jou gedeelde resepte kon nie gelaai word nie. Probeer asseblief weer.",
+    "none": "Jy deel geen resep nie."
+  },
+  "settings": {
+    "heading": "Instellings",
+    "intro": "Met jou rekening gestoor, so hulle geld op elke toestel.",
+    "saveFailed": "Die instelling kon nie gestoor word nie. Probeer asseblief weer.",
+    "language": {
+      "legend": "Taal",
+      "help": "Die taal van die toepassing, die gidse en jou e-posse. As jy dit verander, gaan hierdie bladsy in daardie taal oop.",
+      "saved": "Gestoor: {language}."
+    },
+    "region": {
+      "legend": "Waar jy werk",
+      "none": {
+        "label": "Nie gekies nie",
+        "saved": "Gestoor: geen streek gekies nie; verstekwaardes volg jou blaaier."
+      },
+      "saved": "Gestoor: {region}.",
+      "help": "Die grondstowwe wat daar verkoop word, en die verstekwaardes vir getalle, datums, temperature en kegels hieronder. Totdat jy kies, volg hulle jou blaaier se taal."
+    },
+    "format": {
+      "legend": "Getalle en datums",
+      "auto": {
+        "label": "Soos my taal en streek",
+        "saved": "Gestoor: getalle en datums soos jou taal en streek dit skryf."
+      },
+      "saved": "Gestoor: getalle en datums soos in {language}.",
+      "help": "Hoe getalle en datums geskryf word: 12,345.6 of 12.345,6, en die volgorde van dag en maand."
+    },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Die kalender waarin datums gewys word. Datums wat jy tik, bly in die Gregoriaanse kalender.",
+      "gregory": {
+        "label": "Gregoriaans",
+        "saved": "Gestoor: datums word in die Gregoriaanse kalender gewys."
+      },
+      "buddhist": {
+        "label": "Thaise Boeddhistiese era",
+        "saved": "Gestoor: datums word in die Thaise Boeddhistiese era gewys."
+      },
+      "japanese": {
+        "label": "Japannese era",
+        "saved": "Gestoor: datums word in Japannese eras gewys."
+      }
+    },
+    "digits": {
+      "legend": "Syfers",
+      "help": "Die syfers waarin getalle gewys word. Sommige tale het hul eie, soos Arabies, Bengaals en Hindi, en waar jy is, bepaal watter gebruiklik is. Jy kan getalle met enigeen tik.",
+      "auto": {
+        "label": "Soos gebruiklik waar jy is",
+        "saved": "Gestoor: syfers soos gebruiklik waar jy is."
+      },
+      "western": {
+        "label": "Westerse syfers, 0–9",
+        "saved": "Gestoor: getalle word met die syfers 0–9 gewys."
+      },
+      "native": {
+        "label": "Die taal se eie syfers, waar dit hulle het",
+        "saved": "Gestoor: getalle word in die taal se eie syfers gewys, waar dit hulle het."
+      }
+    },
+    "decimalMark": {
+      "legend": "Hoeveelhede tik",
+      "either": {
+        "label": "'n Komma of 'n punt vir desimale",
+        "example": "12,5 of 12.5",
+        "saved": "Gestoor: hoeveelhede kan met 'n komma of 'n punt getik word."
+      },
+      "comma": {
+        "label": "'n Komma vir desimale",
+        "saved": "Gestoor: hoeveelhede word met 'n komma vir desimale getik."
+      },
+      "point": {
+        "label": "'n Punt vir desimale",
+        "saved": "Gestoor: hoeveelhede word met 'n punt vir desimale getik."
+      },
+      "help": "Met enigeen van die twee word 'n hoeveelheid soos 1 250 gelees soos jou getalle hierbo geskryf word."
+    },
+    "temperature": {
+      "legend": "Temperature",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Gestoor: temperature in °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Gestoor: temperature in °F."
+      },
+      "help": "Totdat jy kies, volg dit jou streek: °F in die Verenigde State, °C elders."
+    },
+    "cones": {
+      "legend": "Bak",
+      "orton": {
+        "label": "Orton-kegels",
+        "example": "kegel 04, kegel 6",
+        "saved": "Gestoor: bak volgens Orton-kegels."
+      },
+      "sk": {
+        "label": "SK-kegels, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Gestoor: bak volgens SK-kegels."
+      },
+      "temperature": {
+        "label": "Temperatuur, as 'n oondbeheerder se program",
+        "saved": "Gestoor: bak volgens temperatuur."
+      },
+      "help": "Totdat jy kies, volg dit jou streek: Orton-kegels in die VSA, VK, Ierland, Australië en Nieu-Seeland, SK-kegels in Japan, temperatuur in die res van Europa."
+    },
+    "density": {
+      "legend": "Glasuurdigtheid",
+      "sg": {
+        "label": "Soortlike gewig",
+        "saved": "Gestoor: glasuurdigtheid as soortlike gewig.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Grade Baumé, van 'n hidrometer",
+        "saved": "Gestoor: glasuurdigtheid in grade Baumé."
+      },
+      "pint": {
+        "label": "Pintgewig, die onse in 'n imperiale pint",
+        "saved": "Gestoor: glasuurdigtheid as pintgewig."
+      },
+      "help": "Hoe die gidse die dikte van 'n glasuur gee. Totdat jy kies, volg dit jou streek: grade Baumé in Italië en Japan, soortlike gewig elders."
+    },
+    "currency": {
+      "legend": "Geldeenheid vir pryse",
+      "help": "Die pryse wat jy vir grondstowwe gee, en wat 'n mengsel kos, is in hierdie geldeenheid. Om dit te verander, reken nie pryse om wat jy reeds gegee het nie. Totdat jy kies, volg dit jou streek.",
+      "saved": "Gestoor: pryse in {currency}.",
+      "notConverted": "Jou gestoorde pryse is nie omgereken nie: hulle is steeds die getalle wat jy gegee het."
+    },
+    "theme": {
+      "legend": "Lig of donker",
+      "system": {
+        "label": "Soos hierdie toestel gestel is",
+        "saved": "Gestoor: lig of donker soos elke toestel gestel is."
+      },
+      "light": {
+        "label": "Lig",
+        "saved": "Gestoor: altyd lig."
+      },
+      "dark": {
+        "label": "Donker",
+        "saved": "Gestoor: altyd donker."
+      },
+      "help": "Gedrukte resepte is altyd swart op wit."
+    },
+    "palette": {
+      "legend": "Kleure",
+      "saved": "Gestoor: {palette}-knoppies en -skakels.",
+      "help": "Vir knoppies, skakels en oortjies, na glasure genoem. Elkeen is maklik om in lig en in donker te lees."
+    },
+    "weightUnit": {
+      "legend": "Mengselgewigte",
+      "grams": {
+        "label": "Gram",
+        "saved": "Gestoor: mengselgewigte is in gram."
+      },
+      "pounds": {
+        "label": "Ponde en onse",
+        "saved": "Gestoor: mengselgewigte is in ponde en onse."
+      },
+      "help": "Vir gedrukte mengsels."
+    },
+    "gramPrecision": {
+      "legend": "Gram op gedrukte mengsels",
+      "single": {
+        "label": "Tot 'n tiende van 'n gram",
+        "saved": "Gestoor: gram word tot 'n tiende gewys."
+      },
+      "full": {
+        "label": "Volle akkuraatheid",
+        "saved": "Gestoor: gram word volledig gewys, tot 5 desimale plekke."
+      },
+      "help": "Tot 'n tiende wys hoeveelhede onder 10 g steeds honderdstes (2,35 g), vir kleurstowwe in klein toetsmengsels."
+    },
+    "lead": {
+      "legend": "Lood",
+      "off": {
+        "label": "Af: voeg nooit lood by 'n resep of stel dit voor nie",
+        "saved": "Gestoor: lood word nooit by 'n resep gevoeg of voorgestel nie."
+      },
+      "on": {
+        "label": "Aan: grondstowwe met lood kan bygevoeg en voorgestel word",
+        "saved": "Gestoor: grondstowwe met lood kan bygevoeg en voorgestel word."
+      },
+      "help": "Lood is giftig om in te asem of in te sluk en bou in die liggaam op, en 'n loodglasuur kan dit in kos en drank vrystel; geen berekening kan sê of 'n gebakte stuk dit doen nie. As dit af is, gaan resepte wat reeds lood het steeds oop soos hulle was.",
+      "warning": "Gebruik lood slegs as frit, nooit as rou rooi, wit of geel lood of litargiet nie. Meng dit nat, spuit dit nooit, dra 'n respirator en maak nat skoon. Hou loodgeglasuurde ware weg van kos en drank, tensy 'n laboratoriumtoets (leach test) van die metale wat uit die gebakte stuk loskom, geslaag is.",
+      "turnOn": "Skakel lood aan",
+      "keepOff": "Hou dit af"
+    },
+    "englishTerms": {
+      "legend": "Engelse terme",
+      "off": {
+        "label": "Af",
+        "saved": "Gestoor: geen Engelse terme nie."
+      },
+      "on": {
+        "label": "Wys die Engels na sleutelterme",
+        "saved": "Gestoor: die Engels word na sleutelterme gewys."
+      },
+      "help": "Om Engelse bronne, soos Digitalfire, naas hierdie een te lees: sleutelterme kry hul Engels tussen hakies."
+    },
+    "notice": {
+      "legend": "Vertalingkennisgewing",
+      "shown": {
+        "label": "Gewys",
+        "saved": "Gestoor: die kennisgewing word gewys."
+      },
+      "hidden": {
+        "label": "Versteek",
+        "saved": "Gestoor: die kennisgewing is versteek. 'n Reël daarvan bly in die veiligheidsgidse.",
+        "savedPlain": "Gestoor: die kennisgewing is versteek. 'n Reël daarvan bly bo-aan elke bladsy."
+      },
+      "help": "Die nota bo-aan elke bladsy wat sê dit is deur KI vertaal, met 'n manier om 'n regstelling voor te stel."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Bevestig jou e-pos",
+    "intro": "Druk die knoppie om hierdie adres te bevestig.",
+    "confirm": "Bevestig",
+    "incomplete": "Hierdie bladsy het die skakel uit 'n bevestigings-e-pos nodig, en hierdie een is onvolledig.",
+    "account": "Jou rekening",
+    "signIn": "Meld aan",
+    "failed": "Fout: kon nie die adres bevestig nie. Probeer asseblief weer."
+  },
+  "providers": {
+    "continueGoogle": "Gaan voort met Google",
+    "continueGithub": "Gaan voort met GitHub",
+    "continueMicrosoft": "Meld aan met Microsoft",
+    "failed": "Die aanmelding het nie gewerk nie. Probeer asseblief weer.",
+    "heading": "Google, GitHub en Microsoft",
+    "intro": "Koppel 'n Google-, GitHub- of Microsoft-rekening om daarmee aan te meld. Glazecalc hou net die rekening se id daarvan, nooit sy naam, foto of enigiets anders nie, en tweestap-aanmelding vra steeds vir sy tweede stap.",
+    "passwordless": "Hierdie rekening het geen wagwoord nie. Om jou e-pos, tweestap-aanmelding of die maniere waarop jy aanmeld te verander, of om jou rekening te skrap, bevestig jy dat dit jy is deur weer met Google, GitHub of Microsoft aan te meld, watter een jy ook al gekoppel het. Jy kan ook 'n wagwoord stel.",
+    "setPassword": "E-pos vir my 'n skakel om 'n wagwoord te stel",
+    "setPasswordUnlinks": "As jy 'n wagwoord met die e-posskakel stel, ontkoppel dit ook Google, GitHub en Microsoft. Jy kan hulle daarna weer koppel.",
+    "setPasswordFailed": "Kon nie die skakel stuur nie. Probeer asseblief weer.",
+    "confirmFirst": "Bevestig eers jou e-pos, met die skakel wat ons vir jou gestuur het, om Google, GitHub of Microsoft te koppel.",
+    "linkedOn": "Gekoppel op {date}",
+    "notLinked": "Nie gekoppel nie",
+    "link": "Koppel {provider}",
+    "unlink": "Ontkoppel {provider}",
+    "linkFailed": "Kon dit nie koppel nie. Probeer asseblief weer.",
+    "reauthIntro": "Hierdie rekening het geen wagwoord nie, so bevestig dat dit jy is deur weer aan te meld. Maak dan die verandering binne 5 minute.",
+    "reauthButton": "Meld weer aan met {provider}",
+    "reauthHeld": "Jy het weer met {provider} aangemeld. Jy kan die volgende 5 minute een verandering sonder 'n wagwoord maak.",
+    "reauthFirst": "Meld asseblief eers weer aan, met een van die knoppies hierbo.",
+    "reauthFailed": "Kon nie begin om weer aan te meld nie. Probeer asseblief weer."
+  },
+  "apps": {
+    "title": "Gekoppelde toepassings",
+    "lead": "Die assistente, skrifte en toepassings wat by jou rekords kan uitkom. Sien wat elkeen gedoen het, sit terug wat dit na die Asblik geskuif het, en stop dit wanneer jy wil.",
+    "listHeading": "Jou gekoppelde toepassings en toegangstokens",
+    "listLabel": "Gekoppelde toepassings en toegangstokens",
+    "makeToken": "Maak 'n toegangstoken",
+    "none": "Niks is aan jou rekening gekoppel nie.",
+    "loadFailed": "Jou gekoppelde toepassings kon nie gelaai word nie. Herlaai asseblief die bladsy om weer te probeer.",
+    "kindToken": "Toegangstoken",
+    "kindOauth": "Gekoppelde toepassing",
+    "clientHost": "Toepassingadres: {host}",
+    "redirectHost": "Stuur jou terug na: {host}",
+    "last90": "In die afgelope 90 dae:",
+    "nothingDone": "Dit het niks in die afgelope 90 dae verander nie.",
+    "count": {
+      "create": "{count, plural, one {# rekord gemaak} other {# rekords gemaak}}",
+      "change": "{count, plural, one {# rekord verander} other {# rekords verander}}",
+      "trash": "{count, plural, one {# rekord na die Asblik geskuif} other {# rekords na die Asblik geskuif}}",
+      "restore": "{count, plural, one {# rekord teruggesit} other {# rekords teruggesit}}",
+      "undo": "{count, plural, one {# verandering ongedaan gemaak} other {# veranderinge ongedaan gemaak}}"
+    },
+    "action": {
+      "create": "Gemaak",
+      "change": "Verander",
+      "trash": "Na die Asblik geskuif:",
+      "restore": "Teruggesit:",
+      "undo": "Het 'n verandering ongedaan gemaak aan"
+    },
+    "show": "Wys besonderhede",
+    "hide": "Versteek besonderhede",
+    "showNamed": "Wys besonderhede van {name}",
+    "hideNamed": "Versteek besonderhede van {name}",
+    "loading": "Laai tans...",
+    "detailFailed": "Kon nie die besonderhede laai nie. Probeer asseblief weer.",
+    "movedHeading": "Na die Asblik geskuif",
+    "movedNone": "Niks wat dit geskuif het, is nog in die Asblik nie.",
+    "putAllBack": "Sit alles terug",
+    "activityHeading": "Wat dit gedoen het",
+    "activityNone": "Niks in die afgelope 90 dae nie.",
+    "older": "Wys ouer",
+    "revokeQuestion": "Herroep {name}? Dit hou dadelik op werk.",
+    "revokeYes": "Ja, herroep",
+    "revokeAll": "Herroep almal",
+    "revokeAllQuestion": "{count, plural, one {Herroep die # koppeling wat nog werk?} other {Herroep al # koppelings wat nog werk?}} Hulle hou dadelik op werk.",
+    "revokeFailed": "Fout: kon nie herroep nie. Probeer asseblief weer.",
+    "restoreFailed": "Fout: kon nie die rekords terugsit nie. Probeer asseblief weer.",
+    "selfDescribed": "self-beskrywe",
+    "selfDescribedNote": "Dit het homself geregistreer, so sy naam is net wat dit van homself sê.",
+    "confirm": {
+      "heading": "Bevestig voor veranderinge",
+      "intro": "Kies of 'n verandering van 'n assistent, toepassing of toegangstoken wag totdat jy dit hier goedkeur, aangemeld. Niks wat dit vra, word verander totdat jy dit doen nie.",
+      "off": "Vra nooit",
+      "offHint": "Veranderinge word dadelik gemaak. Elkeen hou die rekord soos dit was, sodat jy dit ongedaan kan maak, en wat elke toepassing gedoen het, word hieronder gewys.",
+      "removals": "Vra voor verwyderings",
+      "removalsHintSite": "Om 'n rekord na die Asblik te skuif, 'n grondstof van die grondstowwe byderhand af te haal, of 'n bakrekord van 'n resep af te haal, wag op jou goedkeuring op hierdie webwerf.",
+      "all": "Vra voor elke verandering",
+      "allHint": "Elke nuwe rekord, verandering, ontdoening en verwydering wag op jou goedkeuring op hierdie webwerf.",
+      "how": "'n Verandering wat wag, het sy eie bladsy, waarna die assistent of skrif vir jou 'n skakel gee. Dit wag 30 minute, dan word niks verander nie. 'n Toegangstoken wat met \"Veranderinge van hierdie token het geen bevestiging nodig nie\" gemaak is, word nooit gevra nie.",
+      "exempt": "Sy veranderinge het geen bevestiging nodig nie.",
+      "saveFailed": "Fout: kon nie jou keuse stoor nie. Probeer asseblief weer."
+    }
+  },
+  "connect": {
+    "title": "Koppel 'n toepassing aan jou rekening",
+    "loading": "Laai tans...",
+    "loadFailed": "Hierdie versoek om 'n toepassing te koppel kon nie gelaai word nie. Herlaai asseblief die bladsy, of begin weer in die toepassing.",
+    "answerFailed": "Fout: jou antwoord kon nie gestuur word nie. Probeer asseblief weer.",
+    "toAccount": "Gaan na jou rekening",
+    "asking": "Hierdie toepassing vra om aan jou Glazecalc-rekening te koppel:",
+    "noName": "'n Toepassing sonder naam",
+    "selfDescribed": "self-beskrywe",
+    "selfDescribedNote": "Dit het homself geregistreer, so hierdie naam is net wat dit van homself sê. Glazecalc het dit nie nagegaan nie.",
+    "account": "Aangemeld as {email}",
+    "appAddress": "Die toepassing se adres",
+    "checked": "(deur Glazecalc nagegaan)",
+    "answerTo": "Waarheen jou antwoord gaan",
+    "ownComputer": "Jou eie rekenaar",
+    "appOnDevice": "'n Toepassing op jou toestel wat {scheme}-skakels oopmaak",
+    "loopbackWarning": "Hierdie toepassing ontvang die antwoord op jou eie rekenaar. Laat dit slegs toe as jy dit self, op hierdie rekenaar, net nou begin het.",
+    "loopbackWriteWarning": "Dit vra ook om jou rekords te verander: enige program op hierdie rekenaar wat die antwoord optel, kan hulle dan verander.",
+    "appSchemeWarning": "Die antwoord gaan na watter toepassing op jou toestel ook al {scheme}-skakels oopmaak. Die res van daardie adres word nie nagegaan nie, so dit kan soos enige webwerf lyk. Laat dit slegs toe as jy dit net nou vanaf 'n toepassing wat jy vertrou, begin het.",
+    "elsewhereWarning": "Hierdie toepassing se adres is {app}, maar jou antwoord gaan na {answer}. Laat dit slegs toe as jy dit verwag het.",
+    "canHeading": "Wat dit kan doen",
+    "canRead": "Jou resepte, notaboek, grondstowwe, rak en instellings lees.",
+    "readOnly": "Dit kan niks verander nie.",
+    "alsoWrite": "Laat dit ook my rekords verander",
+    "writeWarning": "Dit kan dan jou rekords skep en verander, en hulle na die Asblik skuif. Elke verandering hou 'n weergawe van die rekord soos dit was, sodat jy dit ongedaan kan maak. Jy kan dit te eniger tyd op Gekoppelde toepassings herroep.",
+    "privacy": "Wat Glazecalc oor gekoppelde toepassings bewaar, is in die <privacy>privaatheidskennisgewing</privacy>. Jy kan jou toepassings op <apps>Gekoppelde toepassings</apps> sien en herroep.",
+    "allow": "Laat toe",
+    "deny": "Moenie toelaat nie",
+    "sending": "Stuur tans jou antwoord na die toepassing..."
+  },
+  "tokens": {
+    "heading": "Toegangstokens",
+    "intro": "'n Toegangstoken laat jou eie KI-assistent of skrif die resepte, grondstowwe, notas en bakrekords in jou rekening lees, en, as jy kies, verander. Elke token hou op werk op die dag wat jy kies, of sodra jy dit herroep.",
+    "howTo": "Hoe om 'n KI-assistent te koppel",
+    "seeThem": "Jou tokens en gekoppelde toepassings, wat elkeen gedoen het, en Herroep is op die bladsy Gekoppelde toepassings.",
+    "seeThemLink": "Maak Gekoppelde toepassings oop",
+    "hint": "eindig op {hint}",
+    "readOnly": "Net lees",
+    "readWrite": "Lees en verander",
+    "created": "gemaak {date}",
+    "lastUsed": "laas gebruik {date}",
+    "neverUsed": "nooit gebruik nie",
+    "expires": "verval {date}",
+    "expiredOn": "het verval {date}",
+    "revokedOn": "herroep {date}",
+    "revoke": "Herroep",
+    "revokeNamed": "Herroep {name}",
+    "revokeAll": "Herroep alle toegangstokens",
+    "revokeFailed": "Fout: kon nie die token herroep nie. Probeer asseblief weer.",
+    "loadFailed": "Jou toegangstokens kon nie gelaai word nie. Herlaai asseblief die bladsy om weer te probeer.",
+    "createHeading": "Maak 'n token",
+    "name": "Naam",
+    "nameHint": "Iets om dit mee uitmekaar te ken, soos die assistent of rekenaar waarvoor dit is.",
+    "nameCheck": "Gee asseblief die token 'n naam van 1 tot {most} karakters.",
+    "expiry": "Hou op werk na",
+    "days": "{count, plural, one {# dag} other {# dae}}",
+    "expiryHint": "Ons e-pos jou 7 dae voordat 'n token ophou werk.",
+    "expiryWriteHint": "{count, plural, one {'n Token wat jou rekords kan verander, hou na hoogstens # dag op werk.} other {'n Token wat jou rekords kan verander, hou na hoogstens # dae op werk.}}",
+    "confirmEmailFirst": "Voordat jy 'n token kan maak, bevestig jou e-pos: maak die skakel oop wat ons na {email} gestuur het. Ons laat jou by daardie adres weet wanneer 'n token gemaak word en voordat een ophou werk.",
+    "resend": "Stuur die bevestigingskakel weer",
+    "scopeNote": "Die token kan jou rekords lees maar nie verander nie.",
+    "scope": "Wat dit kan doen",
+    "scopeWriteNote": "Die token kan ook nuwe rekords stoor, hulle verander en hulle na die Asblik skuif. Elke verandering hou die rekord soos dit was, sodat jy dit ongedaan kan maak, en wat die token gedoen het, is op Gekoppelde toepassings en in Laai my data af. Kies dit slegs vir 'n assistent of skrif wat jy vertrou om jou rekords te verander.",
+    "confirmStep": "Om die token te maak, bevestig dat dit jy is.",
+    "create": "Maak die token",
+    "failed": "Fout: kon nie die token maak nie. Probeer asseblief weer.",
+    "limit": "Jy het {most} toegangstokens wat werk, die meeste wat 'n rekening kan hê. Herroep een om nog een te maak.",
+    "newHeading": "Kopieer jou nuwe token nou",
+    "newText": "Dit is die enigste keer dat dit gewys word. Enigiemand wat dit het, kan jou rekords lees totdat dit ophou werk, so hou dit soos 'n wagwoord, en gee dit slegs aan jou eie assistent of skrif.",
+    "newTextWrite": "Dit is die enigste keer dat dit gewys word. Enigiemand wat dit het, kan jou rekords lees en verander totdat dit ophou werk, so hou dit soos 'n wagwoord, en gee dit slegs aan jou eie assistent of skrif.",
+    "newLabel": "Jou nuwe toegangstoken",
+    "copy": "Kopieer die token",
+    "copied": "Gekopieer.",
+    "copyFailed": "Kon nie kopieer nie. Kies die token en kopieer dit self.",
+    "done": "Ek het dit gekopieer",
+    "keptHeading": "Jou toegangstokens werk steeds",
+    "keptText": "{count, plural, one {Die verandering van jou wagwoord het nie jou toegangstoken gestop nie. As jy dit verander het omdat iemand anders dit dalk ken, herroep die token ook.} other {Die verandering van jou wagwoord het nie jou # toegangstokens gestop nie. As jy dit verander het omdat iemand anders dit dalk ken, herroep hulle ook.}}",
+    "keep": "Hou hulle",
+    "signOutNote": "{count, plural, one {Dit stop ook jou toegangstoken, vir goed.} other {Dit stop ook jou # toegangstokens, vir goed.}}",
+    "noConfirm": "Veranderinge van hierdie token het geen bevestiging nodig nie",
+    "noConfirmHint": "Vir 'n skrif wat jy self laat loop. As jy kies om veranderinge op Gekoppelde toepassings te bevestig, word hierdie token steeds nooit gevra nie. Jy kan dit slegs nou kies, wanneer die token gemaak word."
+  },
+  "confirm": {
+    "title": "Keur 'n verandering goed",
+    "lead": "'n Toepassing wat aan jou rekening gekoppel is, vra om hierdie verandering te maak. Niks word verander totdat jy dit goedkeur nie.",
+    "from": "Gevra deur {name}",
+    "fromToken": "'n toegangstoken",
+    "fromConnectedApp": "'n gekoppelde toepassing",
+    "selfDescribed": "self-beskrywe",
+    "selfDescribedNote": "Dit het homself geregistreer, so sy naam is net wat dit van homself sê. Glazecalc het dit nie nagegaan nie.",
+    "asked": "Gevra {date}. Dit wag tot {time}, dan word niks verander nie.",
+    "removal": "Dit verwyder iets: 'n rekord gaan na die Asblik, waar jy dit 30 dae lank kan terugsit, of 'n grondstof kom van die grondstowwe byderhand af.",
+    "check": "Keur dit slegs goed as jy vir hierdie verandering gevra het. As jy nie het nie, wys dit van die hand, en herroep die toepassing op Gekoppelde toepassings.",
+    "approve": "Keur die verandering goed",
+    "decline": "Wys van die hand",
+    "titleBefore": "Voordat hierdie toepassing dit verander het, is dit “{title}” genoem.",
+    "untitled": "(geen titel nie)",
+    "changedAgo": "{minutes, plural, =0 {Hierdie toepassing het dit minder as 'n minuut gelede verander.} one {Hierdie toepassing het dit # minuut gelede verander.} other {Hierdie toepassing het dit # minute gelede verander.}}",
+    "now": "Nou:",
+    "after": "Ná die verandering:",
+    "showAll": "Wys alles",
+    "showLess": "Wys minder",
+    "othersHeading": "{count, plural, one {# verandering meer wag van {name}} other {# veranderinge meer wag van {name}}}",
+    "approveAllShown": "{count, plural, one {Keur die # verandering van {name} goed} other {Keur al # veranderinge van {name} goed}}",
+    "declineAll": "{count, plural, one {Wys die # verandering van {name} van die hand} other {Wys al # veranderinge van {name} van die hand}}",
+    "decided": "Daar is reeds oor hierdie verandering besluit.",
+    "notFound": "Daar is geen verandering wat by hierdie adres wag nie. Dit is dalk reeds goedgekeur of van die hand gewys, of het langer as 30 minute gewag, of dit is vir 'n ander rekening.",
+    "signIn": "Meld by Glazecalc aan met die rekening waarvoor die verandering is, en maak dan hierdie skakel weer oop.",
+    "signInLink": "Meld aan",
+    "loadFailed": "Die verandering kon nie gelaai word nie. Herlaai asseblief die bladsy om weer te probeer.",
+    "failed": "Fout: kon nie jou antwoord stuur nie. Probeer asseblief weer.",
+    "apps": "Sien jou gekoppelde toepassings"
+  }
+}

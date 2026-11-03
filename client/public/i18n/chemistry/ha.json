@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Ba a san sinadarin {compound} da ke cikin formula ba",
+  "unknown-oxide": "Ba a san oxide {oxide} da ke cikin kaya {material} ba",
+  "invalid-oxide-amount": "Yawan {oxide} a cikin kaya {material} bai dace ba",
+  "loi-range": "LOI na {material} dole ya zama aƙalla 0 kuma ƙasa da 100",
+  "no-oxides": "Kaya {material} ba shi da oxide",
+  "no-name": "Dole kaya ya kasance da suna",
+  "no-analysis": "Kaya {material} yana buƙatar formula ko nazari",
+  "recipe-shape": "Dole girke-girke ya zama jerin '{ material, amount }' ko taswirar yawa",
+  "invalid-amount": "Yawan kaya {material} bai dace ba",
+  "missing-material": "Layin girke-girke ba shi da kaya",
+  "unknown-material": "Ba a san kaya {material} ba",
+  "no-flux": "Girke-girken ba shi da oxide na flux, don haka ba a iya bayyana UMF ba",
+  "no-target": "Abin da ake nufi ba shi da oxide da za a nufa",
+  "no-materials": "Babu kayan da za a lissafa",
+  "no-temperature": "Ana buƙatar zafin gasa don saita boron",
+  "no-flux-to-rebuild": "Glaze ɗin ba shi da flux da za a sake ginawa",
+  "unknown-element": "Ba a san element {element} da ke cikin {formula} ba",
+  "bad-formula": "Ba a iya karanta formula {formula} ba",
+  "analysis-total": "Jimillar nazarin {material} ya kai {total}% har da LOI; ana tsammanin kusan 100%.",
+  "stored-equivalent": "Nauyin equivalent na {material} da aka ajiye bai dace da formula da LOI ɗinsa ba; an yi amfani da formula da LOI a maimakon haka.",
+  "trace-flux": "Girke-girken yana da ɗan burbushin oxide na flux kawai, don haka UMF ba shi da ma'ana."
+}

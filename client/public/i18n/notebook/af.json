@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Jou ateljeeboek",
+    "signedInAs": "Aangemeld as {email}.",
+    "trying": "Jy probeer Glazecalc as {name}. Begin met 'n resep.",
+    "welcomeBack": "Gaan voort waar jy opgehou het.",
+    "welcome": {
+      "heading": "Welkom by Glazecalc",
+      "text": "Jou boek is gereed. 'n Goeie eerste stap: tik 'n glasuur in wat jy reeds meng, sy grondstowwe en hoeveelhede, en sien sy Seger-formule.",
+      "firstRecipe": "Begin jou eerste resep",
+      "confirmHeading": "Bevestig jou e-pos",
+      "confirm": "Bevestig jou e-pos: ons het 'n skakel na {email} gestuur. Tweestap-aanmelding het dit nodig. Jou <account>rekeningbladsy</account> kan dit weer stuur.",
+      "confirmText": "Ons het 'n skakel na {email} gestuur. Maak dit oop om te bevestig dat die adres joune is: tweestap-aanmelding het dit nodig. Jou <account>rekeningbladsy</account> kan dit weer stuur."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Resepte",
+        "text": "Bou 'n glasuur uit grondstowwe en hoeveelhede, sien sy Seger-formule, en stoor dit."
+      },
+      "import": {
+        "title": "Plak resepte in",
+        "text": "Plak resepte van 'n webwerf, sigblad of notas in, kyk wat gelees is, en stoor hulle."
+      },
+      "blends": {
+        "title": "Mengsels vir toetsteëls",
+        "text": "Meng twee, drie of vier van jou resepte tot genommerde toetsteëls, met wat om vir elkeen te weeg."
+      },
+      "material": {
+        "title": "Grondstowwe",
+        "text": "Voeg jou eie grondstowwe by, uit 'n chemiese formule of 'n verskaffer se ontleding."
+      },
+      "additive": {
+        "title": "Bymiddels en kleurstowwe",
+        "text": "Hou die kleurstowwe en vertroebelaars by wat jy bo-op 'n basisglasuur voeg."
+      },
+      "firing": {
+        "title": "Bakrekords",
+        "text": "Teken tye, temperature en kegels vir elke bak aan."
+      },
+      "notes": {
+        "title": "Notas",
+        "text": "Hou toetsresultate en enigiets anders by wat die moeite werd is om te onthou."
+      },
+      "advice": {
+        "title": "Glasuuradvies",
+        "text": "Wenke oor meng, glasuur en bak, en jou eie advies."
+      },
+      "guides": {
+        "title": "Gidse",
+        "text": "Van wat 'n glasuur is tot om dit te bak, en om almal onderweg veilig te hou."
+      },
+      "trash": {
+        "title": "Asblik",
+        "text": "Sit terug wat jy in die laaste 30 dae verwyder het."
+      },
+      "account": {
+        "title": "Rekening en instellings",
+        "text": "Instellings, jou wagwoord, tweestap-aanmelding, en 'n aflaai van alles wat jy hier hou."
+      }
+    },
+    "newHere": "Nuut by Seger-formules? Die <advice>adviesbladsy</advice> verduidelik die basiese beginsels, en die <about>Oor-bladsy</about> sê hoe Glazecalc werk."
+  },
+  "firing": {
+    "title": "Bakrekords",
+    "lead": "Teken elke bak aan: tye, temperature, kegels en oondnotas.",
+    "newHeading": "'n Nuwe bak",
+    "titleLabel": "Titel",
+    "kiln": "Oond",
+    "date": "Datum",
+    "notes": "Notas",
+    "fieldSelect": "Velde om aan te teken",
+    "addField": "Voeg die veld by",
+    "included": "Velde in hierdie rekord",
+    "moveLeft": "Skuif veld links",
+    "moveRight": "Skuif veld regs",
+    "removeField": "Verwyder die veld",
+    "addRow": "Voeg 'n ry by die baktabel",
+    "addRowWhy": "Voeg eers 'n veld by.",
+    "recordHeading": "Teken die bak aan",
+    "rowActions": "Ryaksies",
+    "cell": "{field} ry {row}",
+    "removeRow": "Verwyder ry",
+    "save": "Stoor",
+    "storedHeading": "My gestoorde bakke",
+    "noneSaved": "Nog geen. Gestoorde bakke verskyn hier.",
+    "storedIn": "Gebak in {kiln} op {date}.",
+    "storedOn": "Gebak op {date}.",
+    "storedNotes": "Notas: {notes}",
+    "titleMissing": "Gee die bak 'n titel.",
+    "fieldsMissing": "Voeg ten minste een veld by om aan te teken, soos {example}.",
+    "chooseField": "Kies 'n veld om by te voeg, en kies dan Voeg die veld by.",
+    "fetchFailed": "Daar was 'n fout met die haal van die bakrekords.",
+    "saved": "Sukses: die bakrekord is by die bediener gevoeg.",
+    "saveFailed": "Fout: die versoek aan die bediener het misluk.",
+    "recipesHeading": "Resepte daarin gebak",
+    "noRecipes": "Nog geen resepte gekoppel nie.",
+    "recipesFailed": "Kon nie jou resepte kry nie, so nou kan geen gekoppel word nie.",
+    "pickRecipe": "'n Resep wat daarin gebak is",
+    "linkRecipe": "Koppel die resep",
+    "unlink": "Ontkoppel",
+    "unlinkRecipe": "Ontkoppel {title}",
+    "linkFailed": "Kon nie die koppeling stoor nie."
+  },
+  "notes": {
+    "title": "Notas",
+    "lead": "Enigiets anders wat die moeite werd is om oor jou glasure te onthou.",
+    "newHeading": "'n Nuwe nota",
+    "titleLabel": "Titel",
+    "content": "Nota",
+    "save": "Stoor",
+    "mineHeading": "My gestoorde notas",
+    "noneSaved": "Nog geen. Gestoorde notas verskyn hier.",
+    "titleMissing": "Gee die nota 'n titel.",
+    "contentMissing": "Skryf die nota.",
+    "untitled": "Nota sonder titel",
+    "fetchFailed": "Daar was 'n fout met die haal van die notas.",
+    "saved": "Sukses: die nota is by die bediener gevoeg.",
+    "saveFailed": "Fout: die versoek aan die bediener het misluk."
+  },
+  "trash": {
+    "title": "Asblik",
+    "lead": "Wat jy verwyder (resepte, grondstowwe, bymiddels, notas, bakrekords en advies) wag hier 30 dae lank. Sit dit terug, of skrap dit vir goed.",
+    "listHeading": "In die Asblik",
+    "none": "Die Asblik is leeg.",
+    "untitled": "Sonder titel",
+    "kinds": {
+      "recipes": "Resep",
+      "materials": "Grondstof",
+      "additives": "Bymiddel",
+      "notes": "Nota",
+      "firing": "Bakrekord",
+      "advice": "Advies",
+      "other": "Rekord"
+    },
+    "removedOn": "Verwyder {date}",
+    "goesOn": "Vir goed geskrap {date}",
+    "byApp": "Verwyder deur 'n gekoppelde toepassing",
+    "putBack": "Sit terug",
+    "putBackName": "Sit {name} terug",
+    "restored": "\"{name}\" is teruggesit waar dit was.",
+    "restoredAlready": "\"{name}\" is reeds teruggesit.",
+    "restoreFailed": "\"{name}\" kon nie teruggesit word nie. Probeer asseblief weer.",
+    "deleted": "\"{name}\" is vir goed geskrap.",
+    "empty": "Maak die Asblik leeg",
+    "emptyQuestion": "Skrap {count, plural, one {die # rekord} other {al # rekords}} in die Asblik vir goed? Dit kan nie ongedaan gemaak word nie.",
+    "emptyYes": "Ja, maak dit leeg",
+    "emptying": "Maak tans leeg...",
+    "emptied": "Die Asblik is leeg.",
+    "emptyFailed": "Kon nie die Asblik leegmaak nie. Probeer asseblief weer.",
+    "fetchFailed": "Kon nie die Asblik laai nie. Probeer asseblief weer."
+  }
+}

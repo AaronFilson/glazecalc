@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Kiambato {compound} kisichojulikana kwenye fomula",
+  "unknown-oxide": "Oksidi {oxide} isiyojulikana kwenye malighafi {material}",
+  "invalid-oxide-amount": "Kiasi si sahihi kwa {oxide} kwenye malighafi {material}",
+  "loi-range": "LOI ya {material} lazima iwe angalau 0 na chini ya 100",
+  "no-oxides": "Malighafi {material} haina oksidi",
+  "no-name": "Malighafi lazima iwe na jina",
+  "no-analysis": "Malighafi {material} inahitaji fomula au uchambuzi",
+  "recipe-shape": "Kichocheo lazima kiwe safu ya '{ material, amount }' au ramani ya kiasi",
+  "invalid-amount": "Kiasi si sahihi kwa malighafi {material}",
+  "missing-material": "Mstari wa kichocheo hauna malighafi",
+  "unknown-material": "Malighafi {material} isiyojulikana",
+  "no-flux": "Kichocheo hakina oksidi za flux, kwa hiyo UMF haijafafanuliwa",
+  "no-target": "Lengo halina oksidi za kulenga",
+  "no-materials": "Hakuna malighafi za kukokotoa",
+  "no-temperature": "Joto la kuchoma linahitajika ili kuweka boroni",
+  "no-flux-to-rebuild": "Glaze haina flux ya kuijenga upya",
+  "unknown-element": "Elementi {element} isiyojulikana kwenye {formula}",
+  "bad-formula": "Haikuwezekana kusoma fomula {formula}",
+  "analysis-total": "Uchambuzi wa {material} unafikia jumla ya {total}% ukijumuisha LOI; ilitarajiwa takriban 100%.",
+  "stored-equivalent": "Uzito sawia uliohifadhiwa wa {material} hauendani na fomula yake na LOI; fomula na LOI ndizo zilizotumika badala yake.",
+  "trace-flux": "Kichocheo kina athari ndogo tu za oksidi za flux, kwa hiyo UMF haina maana."
+}

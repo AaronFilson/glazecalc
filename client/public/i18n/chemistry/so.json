@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Iskudhis aan la aqoon {compound} oo formula-da ku jira",
+  "unknown-oxide": "Oksaydh aan la aqoon {oxide} oo ku jira walaxda {material}",
+  "invalid-oxide-amount": "Qadar aan ansax ahayn oo loogu talagalay {oxide} walaxda {material}",
+  "loi-range": "LOI-ga walaxda {material} waa inuu ahaadaa ugu yaraan 0 oo ka yar 100",
+  "no-oxides": "Walaxda {material} ma laha oksaydhyo",
+  "no-name": "Walaxdu waa inay leedahay magac",
+  "no-analysis": "Walaxda {material} waxay u baahan tahay formula ama falanqayn",
+  "recipe-shape": "Habku waa inuu noqdaa liis '{ material, amount }' ah ama khariidad qadarro ah",
+  "invalid-amount": "Qadar aan ansax ahayn oo loogu talagalay walaxda {material}",
+  "missing-material": "Safka habka walax ayaa ka maqan",
+  "unknown-material": "Walax aan la aqoon {material}",
+  "no-flux": "Habku ma laha oksaydhyo flux ah, sidaa darteed UMF-ta lama qeexi karo",
+  "no-target": "Bartilmaameedku ma laha oksaydhyo loo hiigsado",
+  "no-materials": "Ma jiraan walxo la xisaabiyo",
+  "no-temperature": "Heerkulka gubidda ayaa loo baahan yahay si boron-ka loo dejiyo",
+  "no-flux-to-rebuild": "Glaze-ku ma laha flux dib loo dhiso",
+  "unknown-element": "Curiye aan la aqoon {element} oo ku jira {formula}",
+  "bad-formula": "Formula-da {formula} lama fasiri karin",
+  "analysis-total": "Falanqaynta walaxda {material} wadarteedu waa {total}% oo LOI ku jirto; waxaa la filayay ku dhawaad 100%.",
+  "stored-equivalent": "Miisaanka u dhigma ee la kaydiyay ee walaxda {material} kuma habboona formula-deeda iyo LOI-ga; formula-da iyo LOI-ga ayaa beddelkeeda la isticmaalay.",
+  "trace-flux": "Habku wuxuu leeyahay oo keliya raad yar oo oksaydhyo flux ah, sidaa darteed UMF-tu macno ma laha."
+}

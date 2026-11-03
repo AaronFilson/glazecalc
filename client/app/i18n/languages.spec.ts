@@ -6,7 +6,7 @@ import { App } from '../app';
 import { firstValueFrom } from 'rxjs';
 import { API, httpMock, settle, testProviders } from '../testing/test-providers';
 import { FileLoader } from './loader';
-import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
+import { LIVE_LANGUAGES, languageFor } from '../../../lib/regions/languages';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from './language';
 import { ownLanguagePage } from './own-language';
 import { RichText } from './rich-text';
@@ -125,6 +125,20 @@ describe('the translation notice', () => {
       expect(element.querySelector('aside button')).toBeNull();
     }
   });
+
+  // Every language offered with the plain notice (Maltese, waves L2–L4), read from the data.
+  const plain = LIVE_LANGUAGES.filter((code) => code !== 'ga' && languageFor(code)?.plainNotice);
+  it('has the plain notice in the languages the owner chose', () => {
+    expect([...plain].sort()).toEqual(['am', 'ha', 'ig', 'mt', 'qu', 'so', 'sw', 'yo', 'zu']);
+  });
+  for (const code of plain) {
+    it(`says it plainly in ${code} too`, async () => {
+      const { element } = await create(code);
+      expect(element.querySelector('aside p')?.textContent).toContain(
+        'which handles this language less well than most languages. The English page may read better.'
+      );
+    });
+  }
 });
 
 describe('the footer’s languages', () => {

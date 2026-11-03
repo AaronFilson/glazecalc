@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Fórmulapi mana riqsisqa compuesto: {compound}",
+  "unknown-oxide": "Material {material} nisqapi mana riqsisqa óxido: {oxide}",
+  "invalid-oxide-amount": "Material {material} nisqapi {oxide} nisqapaq mana valeq hayk'a",
+  "loi-range": "Material {material} nisqapa LOI-nqa pisimanta pisi 0 kanan tiyan, 100-manta pisitaq",
+  "no-oxides": "Material {material} nisqaqa mana óxidoyuqchu",
+  "no-name": "Materialqa sutiyuq kanan tiyan",
+  "no-analysis": "Material {material} nisqaqa fórmulata utaq análisista munan",
+  "recipe-shape": "Esmalte ruranaqa '{ material, amount }' nisqakunapa arraynin utaq hayk'akunapa mapan kanan tiyan",
+  "invalid-amount": "Material {material} nisqapaq mana valeq hayk'a",
+  "missing-material": "Esmalte ruranapa huk filanpi material pisin",
+  "unknown-material": "Mana riqsisqa material: {material}",
+  "no-flux": "Esmalte ruranaqa mana fundente óxidokunayuqchu, chayrayku UMF-qa mana definisqachu",
+  "no-target": "Objetivoqa mana maskanapaq óxidokunayuqchu",
+  "no-materials": "Manam yupanapaq materialkuna kanchu",
+  "no-temperature": "Borota churanapaq ruphachiy temperaturam necesitakun",
+  "no-flux-to-rebuild": "Esmalteqa mana yapamanta ruranapaq fundenteyuqchu",
+  "unknown-element": "{formula} nisqapi mana riqsisqa elemento: {element}",
+  "bad-formula": "Fórmulata mana ñawinchayta atikurqanchu: {formula}",
+  "analysis-total": "Material {material} nisqapa análisisninqa {total}% LOI-wan kuska; yaqa 100% suyakurqan.",
+  "stored-equivalent": "Material {material} nisqapa waqaychasqa peso equivalentenqa mana fórmulanwan LOI-nwan tupanchu; chaypa rantinpi fórmulawan LOI-wan llamk'achikurqan.",
+  "trace-flux": "Esmalte ruranaqa fundente óxidokunapa rastrollanta hap'in, chayrayku UMF-qa mana imatapas niyta munanchu."
+}

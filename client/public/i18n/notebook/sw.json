@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Daftari lako la karakana",
+    "signedInAs": "Umeingia kama {email}.",
+    "trying": "Unajaribu Glazecalc kama {name}. Anza na kichocheo.",
+    "welcomeBack": "Endelea ulipoachia.",
+    "welcome": {
+      "heading": "Karibu kwenye Glazecalc",
+      "text": "Daftari lako liko tayari. Hatua nzuri ya kwanza: andika glaze unayoichanganya tayari, malighafi zake na kiasi, uone fomula yake ya Seger.",
+      "firstRecipe": "Anza kichocheo chako cha kwanza",
+      "confirmHeading": "Thibitisha barua pepe yako",
+      "confirm": "Thibitisha barua pepe yako: tumetuma kiungo kwa {email}. Kuingia kwa hatua mbili kunahitaji hili. <account>Ukurasa wa akaunti</account> yako unaweza kukituma tena.",
+      "confirmText": "Tumetuma kiungo kwa {email}. Kifungue ili kuthibitisha kwamba anwani ni yako: kuingia kwa hatua mbili kunahitaji hili. <account>Ukurasa wa akaunti</account> yako unaweza kukituma tena."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Vichocheo",
+        "text": "Tengeneza glaze kutoka kwa malighafi na kiasi, uone fomula yake ya Seger, kisha uihifadhi."
+      },
+      "import": {
+        "title": "Bandika vichocheo",
+        "text": "Bandika vichocheo kutoka kwenye tovuti, lahajedwali au maelezo, kagua kilichosomwa, kisha uvihifadhi."
+      },
+      "blends": {
+        "title": "Mchanganyiko wa vigae vya majaribio",
+        "text": "Changanya vichocheo vyako viwili, vitatu au vinne kuwa vigae vya majaribio vilivyohesabiwa, pamoja na cha kupima kwa kila kimoja."
+      },
+      "material": {
+        "title": "Malighafi",
+        "text": "Ongeza malighafi zako mwenyewe, kutoka kwenye fomula ya kemikali au uchambuzi wa muuzaji."
+      },
+      "additive": {
+        "title": "Viongezi na vitia rangi",
+        "text": "Hifadhi vitia rangi na opacifier unavyoongeza juu ya glaze ya msingi."
+      },
+      "firing": {
+        "title": "Kumbukumbu za kuchoma",
+        "text": "Rekodi nyakati, joto na koni za kila uchomaji."
+      },
+      "notes": {
+        "title": "Maelezo",
+        "text": "Hifadhi matokeo ya majaribio na kila kingine kinachostahili kukumbukwa."
+      },
+      "advice": {
+        "title": "Ushauri wa glaze",
+        "text": "Vidokezo kuhusu kuchanganya, kupaka glaze na kuchoma, na ushauri wako mwenyewe."
+      },
+      "guides": {
+        "title": "Miongozo",
+        "text": "Kuanzia glaze ni nini hadi kuichoma, na kuwaweka wote salama njiani."
+      },
+      "trash": {
+        "title": "Tupio",
+        "text": "Rudisha ulichoondoa katika siku 30 zilizopita."
+      },
+      "account": {
+        "title": "Akaunti na mipangilio",
+        "text": "Mipangilio, nenosiri lako, kuingia kwa hatua mbili, na upakuaji wa kila kitu unachohifadhi hapa."
+      }
+    },
+    "newHere": "Wewe ni mgeni kwa fomula za Seger? <advice>Ukurasa wa ushauri</advice> unaeleza misingi, na <about>ukurasa wa kuhusu</about> unaeleza jinsi Glazecalc inavyofanya kazi."
+  },
+  "firing": {
+    "title": "Kumbukumbu za kuchoma",
+    "lead": "Rekodi kila uchomaji: nyakati, joto, koni na maelezo ya tanuru.",
+    "newHeading": "Uchomaji mpya",
+    "titleLabel": "Kichwa",
+    "kiln": "Tanuru",
+    "date": "Tarehe",
+    "notes": "Maelezo",
+    "fieldSelect": "Sehemu za kurekodi",
+    "addField": "Ongeza sehemu",
+    "included": "Sehemu zilizo katika rekodi hii",
+    "moveLeft": "Hamisha sehemu kushoto",
+    "moveRight": "Hamisha sehemu kulia",
+    "removeField": "Ondoa sehemu",
+    "addRow": "Ongeza safu kwenye jedwali la uchomaji",
+    "addRowWhy": "Ongeza sehemu kwanza.",
+    "recordHeading": "Rekodi uchomaji",
+    "rowActions": "Vitendo vya safu",
+    "cell": "{field}, safu {row}",
+    "removeRow": "Ondoa safu",
+    "save": "Hifadhi",
+    "storedHeading": "Uchomaji wangu uliohifadhiwa",
+    "noneSaved": "Bado hakuna. Uchomaji uliohifadhiwa utaonekana hapa.",
+    "storedIn": "Ulichomwa kwenye {kiln} tarehe {date}.",
+    "storedOn": "Ulichomwa tarehe {date}.",
+    "storedNotes": "Maelezo: {notes}",
+    "titleMissing": "Pa uchomaji kichwa.",
+    "fieldsMissing": "Ongeza angalau sehemu moja ya kurekodi, kama {example}.",
+    "chooseField": "Chagua sehemu ya kuongeza, kisha ubofye Ongeza sehemu.",
+    "fetchFailed": "Kulikuwa na hitilafu katika kupata taarifa za rekodi za uchomaji.",
+    "saved": "Imefanikiwa kuongeza rekodi ya uchomaji kwenye seva.",
+    "saveFailed": "Hitilafu: ombi kwa seva halikufanikiwa.",
+    "recipesHeading": "Vichocheo vilivyochomwa ndani yake",
+    "noRecipes": "Bado hakuna kichocheo kilichounganishwa.",
+    "recipesFailed": "Vichocheo vyako havikuweza kupatikana, kwa hiyo hakuna kinachoweza kuunganishwa sasa.",
+    "pickRecipe": "Kichocheo kilichochomwa ndani yake",
+    "linkRecipe": "Unganisha kichocheo",
+    "unlink": "Ondoa kiungo",
+    "unlinkRecipe": "Ondoa kiungo cha {title}",
+    "linkFailed": "Kiungo hakikuweza kuhifadhiwa."
+  },
+  "notes": {
+    "title": "Maelezo",
+    "lead": "Kila kingine kinachostahili kukumbukwa kuhusu glaze zako.",
+    "newHeading": "Maelezo mapya",
+    "titleLabel": "Kichwa",
+    "content": "Maelezo",
+    "save": "Hifadhi",
+    "mineHeading": "Maelezo yangu yaliyohifadhiwa",
+    "noneSaved": "Bado hakuna. Maelezo yaliyohifadhiwa yataonekana hapa.",
+    "titleMissing": "Pa maelezo kichwa.",
+    "contentMissing": "Andika maelezo.",
+    "untitled": "Maelezo yasiyo na kichwa",
+    "fetchFailed": "Kulikuwa na hitilafu katika kupata taarifa za maelezo.",
+    "saved": "Imefanikiwa kuongeza maelezo kwenye seva.",
+    "saveFailed": "Hitilafu: ombi kwa seva halikufanikiwa."
+  },
+  "trash": {
+    "title": "Tupio",
+    "lead": "Unachoondoa (vichocheo, malighafi, viongezi, maelezo, kumbukumbu za kuchoma na ushauri) hukaa hapa kwa siku 30. Kirudishe au ukifute kabisa.",
+    "listHeading": "Ndani ya Tupio",
+    "none": "Tupio ni tupu.",
+    "untitled": "Bila kichwa",
+    "kinds": {
+      "recipes": "Kichocheo",
+      "materials": "Malighafi",
+      "additives": "Kiongezi",
+      "notes": "Maelezo",
+      "firing": "Kumbukumbu ya kuchoma",
+      "advice": "Ushauri",
+      "other": "Rekodi"
+    },
+    "removedOn": "Imeondolewa {date}",
+    "goesOn": "Itafutwa kabisa {date}",
+    "byApp": "Imeondolewa na programu iliyounganishwa",
+    "putBack": "Rudisha",
+    "putBackName": "Rudisha {name}",
+    "restored": "Imerudishwa mahali pake: “{name}”.",
+    "restoredAlready": "Tayari imerudishwa: “{name}”.",
+    "restoreFailed": "Haikuwezekana kurudisha “{name}”. Tafadhali jaribu tena.",
+    "deleted": "Imefutwa kabisa: “{name}”.",
+    "empty": "Safisha Tupio",
+    "emptyQuestion": "Je, ufute kabisa {count, plural, one {rekodi # iliyo} other {rekodi zote # zilizo}} kwenye Tupio? Hili haliwezi kutenduliwa.",
+    "emptyYes": "Ndiyo, lisafishe",
+    "emptying": "Linasafishwa...",
+    "emptied": "Tupio ni tupu.",
+    "emptyFailed": "Tupio halikuweza kusafishwa. Tafadhali jaribu tena.",
+    "fetchFailed": "Tupio halikuweza kupakiwa. Tafadhali jaribu tena."
+  }
+}

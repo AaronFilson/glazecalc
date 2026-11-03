@@ -241,6 +241,19 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 ```
 
+## Noto Sans Ethiopic
+
+`client/fonts/noto-sans-ethiopic-wght-normal.woff2` is Noto Sans Ethiopic's Ethiopic subset, copied unchanged from
+`files/noto-sans-ethiopic-ethiopic-wght-normal.woff2` in `@fontsource-variable/noto-sans-ethiopic` 5.3.0; its
+licence is beside it, in `client/fonts/noto-sans-ethiopic-OFL.txt`, and is the SIL Open Font License 1.1 copied
+in full above (under Noto Nastaliq Urdu). Noto Sans Ethiopic is from <https://github.com/notofonts/ethiopic>.
+
+```
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/ethiopic)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+```
+
 ## Glazy recipes in the cone check's test set
 
 `scripts/cone-fit-test-set.json`, the test set for the check of a glaze's chemistry against its
