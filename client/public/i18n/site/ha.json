@@ -171,24 +171,19 @@
         "lasts": "Har sai gwajin ya ƙare, ko aka ajiye shi ko aka watsar da shi."
       },
       "settings": {
-        "purpose": "Saitin da kuka canza a wannan burauza, don shafi na gaba ya nuna shi nan take, kafin sabar ta amsa. <code>theme</code> da <code>palette</code> suna sa wa shafin launi kafin ya bayyana, kuma <code>language</code> yana buɗe shafuka a harshenku.",
-        "lasts": "Har sai kun canza shi. Fita yana dawo da abin da kuka zaɓa yayin da kuke waje, idan akwai, kuma yana cire sauran."
+        "purpose": "Saitin da kuka canza a wannan burauza, don shafi na gaba ya nuna shi nan take, kafin sabar ta amsa. <code>theme</code> da <code>palette</code> suna sa wa shafin launi kafin ya bayyana, kuma <code>language</code> yana buɗe shafuka a harshenku."
       },
       "visitor": {
-        "purpose": "Harshen da kuka zaɓa, ko cewa kun rufe sanarwar fassara, yayin da kuke waje, don ya dawo idan kun fita.",
-        "lasts": "Har sai kun share ma'ajiyar burauzarku ko kun share asusu a wannan burauza."
+        "purpose": "Harshen da kuka zaɓa, ko cewa kun rufe sanarwar fassara, yayin da kuke waje, don ya dawo idan kun fita."
       },
       "region": {
-        "purpose": "Matatar yanki a jerin laburare.",
-        "lasts": "Har sai kun mayar da matatar zuwa dukkan yankuna."
+        "purpose": "Matatar yanki a jerin laburare."
       },
       "includeAdditives": {
-        "purpose": "Ko sababbin girke-girke suna ƙidaya kayan ƙarinsu a cikin UMF, kamar yadda kuka zaɓa na ƙarshe.",
-        "lasts": "Har sai kun share ma'ajiyar burauzarku."
+        "purpose": "Ko sababbin girke-girke suna ƙidaya kayan ƙarinsu a cikin UMF, kamar yadda kuka zaɓa na ƙarshe."
       },
       "print": {
-        "purpose": "Zaɓuɓɓukanku na ƙarshe don buga girke-girke: girke-girken gaba ɗaya, batch ko takardar aiki, da girman batch.",
-        "lasts": "Har sai kun share ma'ajiyar burauzarku."
+        "purpose": "Zaɓuɓɓukanku na ƙarshe don buga girke-girke: girke-girken gaba ɗaya, batch ko takardar aiki, da girman batch."
       },
       "token": {
         "purpose": "Token ɗin shiga daga tsohon sigar Glazecalc. Ba a taɓa rubuta shi yanzu.",

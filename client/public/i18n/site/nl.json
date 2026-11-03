@@ -171,24 +171,19 @@
         "lasts": "Tot de proefperiode afloopt, of wordt bewaard of gewist."
       },
       "settings": {
-        "purpose": "Een instelling die u in deze browser hebt gewijzigd, zodat de volgende pagina die meteen toont, voordat de server antwoordt. <code>theme</code> en <code>palette</code> kleuren de pagina voordat die verschijnt, en <code>language</code> opent pagina’s in uw taal.",
-        "lasts": "Tot u de instelling wijzigt. Bij uitloggen komt terug wat u eventueel had gekozen terwijl u was uitgelogd, en de rest wordt verwijderd."
+        "purpose": "Een instelling die u in deze browser hebt gewijzigd, zodat de volgende pagina die meteen toont, voordat de server antwoordt. <code>theme</code> en <code>palette</code> kleuren de pagina voordat die verschijnt, en <code>language</code> opent pagina’s in uw taal."
       },
       "visitor": {
-        "purpose": "De taal die u hebt gekozen, of dat u de vertalingsmelding hebt gesloten, terwijl u was uitgelogd, zodat dat terugkomt als u uitlogt.",
-        "lasts": "Tot u de opslag van uw browser wist of een account in deze browser verwijdert."
+        "purpose": "De taal die u hebt gekozen, of dat u de vertalingsmelding hebt gesloten, terwijl u was uitgelogd, zodat dat terugkomt als u uitlogt."
       },
       "region": {
-        "purpose": "Het regiofilter van een lijst in de bibliotheek.",
-        "lasts": "Tot u het filter terugzet op alle regio’s."
+        "purpose": "Het regiofilter van een lijst in de bibliotheek."
       },
       "includeAdditives": {
-        "purpose": "Of nieuwe recepten hun toevoegingen meetellen in de Segerformule, zoals u het laatst hebt gekozen.",
-        "lasts": "Tot u de opslag van uw browser wist."
+        "purpose": "Of nieuwe recepten hun toevoegingen meetellen in de Segerformule, zoals u het laatst hebt gekozen."
       },
       "print": {
-        "purpose": "Uw laatste keuzes voor het afdrukken van een recept: het hele recept, een mengsel of het werkblad, en de grootte van het mengsel.",
-        "lasts": "Tot u de opslag van uw browser wist."
+        "purpose": "Uw laatste keuzes voor het afdrukken van een recept: het hele recept, een mengsel of het werkblad, en de grootte van het mengsel."
       },
       "token": {
         "purpose": "Een inlogtoken van een oude versie van Glazecalc. Het wordt nu nooit meer geschreven.",

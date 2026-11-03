@@ -171,24 +171,19 @@
         "lasts": "Jusqu’à la fin de la période d’essai, ou jusqu’à ce qu’elle soit conservée ou abandonnée."
       },
       "settings": {
-        "purpose": "Un paramètre que vous avez modifié dans ce navigateur, pour que la page suivante l’affiche tout de suite, avant la réponse du serveur. <code>theme</code> et <code>palette</code> colorent la page avant qu’elle n’apparaisse, et <code>language</code> ouvre les pages dans votre langue.",
-        "lasts": "Jusqu’à ce que vous le modifiiez. La déconnexion rétablit ce que vous aviez choisi hors connexion, le cas échéant, et supprime le reste."
+        "purpose": "Un paramètre que vous avez modifié dans ce navigateur, pour que la page suivante l’affiche tout de suite, avant la réponse du serveur. <code>theme</code> et <code>palette</code> colorent la page avant qu’elle n’apparaisse, et <code>language</code> ouvre les pages dans votre langue."
       },
       "visitor": {
-        "purpose": "La langue que vous avez choisie, ou le fait que vous avez fermé l’avis de traduction, hors connexion, pour les retrouver après la déconnexion.",
-        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur ou supprimiez un compte dans ce navigateur."
+        "purpose": "La langue que vous avez choisie, ou le fait que vous avez fermé l’avis de traduction, hors connexion, pour les retrouver après la déconnexion."
       },
       "region": {
-        "purpose": "Le filtre de région d’une liste de la bibliothèque.",
-        "lasts": "Jusqu’à ce que vous remettiez le filtre sur toutes les régions."
+        "purpose": "Le filtre de région d’une liste de la bibliothèque."
       },
       "includeAdditives": {
-        "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix.",
-        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."
+        "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix."
       },
       "print": {
-        "purpose": "Vos derniers choix pour l’impression d’une recette : la recette entière, une préparation ou la feuille de calcul, et la taille de la préparation.",
-        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."
+        "purpose": "Vos derniers choix pour l’impression d’une recette : la recette entière, une préparation ou la feuille de calcul, et la taille de la préparation."
       },
       "token": {
         "purpose": "Un jeton de connexion d’une ancienne version de Glazecalc. Il n’est plus jamais écrit.",

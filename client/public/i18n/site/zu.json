@@ -171,24 +171,19 @@
         "lasts": "Kuze kube yilapho ukuzama kuphela, noma kugcinwa noma kulahlwa."
       },
       "settings": {
-        "purpose": "Isilungiselelo osishintshe kulesi siphequluli, ukuze ikhasi elilandelayo lisibonise ngokushesha, ngaphambi kokuba iseva iphendule. <code>theme</code> ne-<code>palette</code> kufaka umbala ekhasini ngaphambi kokuba livele, futhi i-<code>language</code> ivula amakhasi ngolimi lwakho.",
-        "lasts": "Kuze kube yilapho usishintsha. Ukuphuma kubuyisa lokho okukhethile ngenkathi ungangenile, uma kukhona, futhi kususe okunye."
+        "purpose": "Isilungiselelo osishintshe kulesi siphequluli, ukuze ikhasi elilandelayo lisibonise ngokushesha, ngaphambi kokuba iseva iphendule. <code>theme</code> ne-<code>palette</code> kufaka umbala ekhasini ngaphambi kokuba livele, futhi i-<code>language</code> ivula amakhasi ngolimi lwakho."
       },
       "visitor": {
-        "purpose": "Ulimi olukhethile, noma ukuthi uvale isaziso sokuhumusha, ngenkathi ungangenile, ukuze kubuye uma uphuma.",
-        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho noma usula i-akhawunti kulesi siphequluli."
+        "purpose": "Ulimi olukhethile, noma ukuthi uvale isaziso sokuhumusha, ngenkathi ungangenile, ukuze kubuye uma uphuma."
       },
       "region": {
-        "purpose": "Isihlungi sesifunda ohlwini lomtapo.",
-        "lasts": "Kuze kube yilapho ubuyisela isihlungi kuzo zonke izifunda."
+        "purpose": "Isihlungi sesifunda ohlwini lomtapo."
       },
       "includeAdditives": {
-        "purpose": "Ukuthi amaresiphi amasha abala yini izithasiselo zawo ku-UMF, njengoba ukhethe okokugcina.",
-        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho."
+        "purpose": "Ukuthi amaresiphi amasha abala yini izithasiselo zawo ku-UMF, njengoba ukhethe okokugcina."
       },
       "print": {
-        "purpose": "Ukukhetha kwakho kokugcina kokuphrinta iresiphi: iresiphi yonke, i-batch noma i-worksheet, nosayizi we-batch.",
-        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho."
+        "purpose": "Ukukhetha kwakho kokugcina kokuphrinta iresiphi: iresiphi yonke, i-batch noma i-worksheet, nosayizi we-batch."
       },
       "token": {
         "purpose": "I-token yokungena evela enguqulweni endala ye-Glazecalc. Ayisabhalwa manje.",

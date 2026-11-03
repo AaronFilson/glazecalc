@@ -171,24 +171,19 @@
         "lasts": "Kunnes kokeilu päättyy, säilytetään tai hylätään."
       },
       "settings": {
-        "purpose": "Tässä selaimessa muutettu asetus, jotta seuraava sivu näyttää sen heti, ennen kuin palvelin vastaa. <code>theme</code> ja <code>palette</code> värittävät sivun ennen kuin se tulee näkyviin, ja <code>language</code> avaa sivut valitulla kielellä.",
-        "lasts": "Kunnes sitä muutetaan. Uloskirjautuminen palauttaa uloskirjautuneena tehdyt valinnat, jos niitä on, ja poistaa loput."
+        "purpose": "Tässä selaimessa muutettu asetus, jotta seuraava sivu näyttää sen heti, ennen kuin palvelin vastaa. <code>theme</code> ja <code>palette</code> värittävät sivun ennen kuin se tulee näkyviin, ja <code>language</code> avaa sivut valitulla kielellä."
       },
       "visitor": {
-        "purpose": "Uloskirjautuneena valittu kieli tai tieto siitä, että käännösilmoitus suljettiin, jotta ne palaavat uloskirjautumisen jälkeen.",
-        "lasts": "Kunnes selaimen tallennustila tyhjennetään tai tässä selaimessa poistetaan tili."
+        "purpose": "Uloskirjautuneena valittu kieli tai tieto siitä, että käännösilmoitus suljettiin, jotta ne palaavat uloskirjautumisen jälkeen."
       },
       "region": {
-        "purpose": "Kirjastoluettelon aluesuodatin.",
-        "lasts": "Kunnes suodatin palautetaan kaikkiin alueisiin."
+        "purpose": "Kirjastoluettelon aluesuodatin."
       },
       "includeAdditives": {
-        "purpose": "Lasketaanko uusien reseptien lisäaineet mukaan Segerin kaavaan, kuten viimeksi valittiin.",
-        "lasts": "Kunnes selaimen tallennustila tyhjennetään."
+        "purpose": "Lasketaanko uusien reseptien lisäaineet mukaan Segerin kaavaan, kuten viimeksi valittiin."
       },
       "print": {
-        "purpose": "Viimeisimmät valinnat reseptin tulostamiseen: koko resepti, erä tai työlomake sekä eräkoko.",
-        "lasts": "Kunnes selaimen tallennustila tyhjennetään."
+        "purpose": "Viimeisimmät valinnat reseptin tulostamiseen: koko resepti, erä tai työlomake sekä eräkoko."
       },
       "token": {
         "purpose": "Glazecalcin vanhan version kirjautumistunniste. Sitä ei enää koskaan tallenneta.",

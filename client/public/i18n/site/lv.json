@@ -171,24 +171,19 @@
         "lasts": "Līdz izmēģinājums beidzas, tiek saglabāts vai atmests."
       },
       "settings": {
-        "purpose": "Iestatījums, ko mainījāt šajā pārlūkprogrammā, lai nākamā lapa to parādītu uzreiz, pirms serveris atbild. <code>theme</code> un <code>palette</code> iekrāso lapu, pirms tā parādās, un <code>language</code> atver lapas jūsu valodā.",
-        "lasts": "Līdz to maināt. Izrakstoties tiek atjaunots tas, ko izvēlējāties bez pierakstīšanās (ja ko izvēlējāties), un pārējais tiek noņemts."
+        "purpose": "Iestatījums, ko mainījāt šajā pārlūkprogrammā, lai nākamā lapa to parādītu uzreiz, pirms serveris atbild. <code>theme</code> un <code>palette</code> iekrāso lapu, pirms tā parādās, un <code>language</code> atver lapas jūsu valodā."
       },
       "visitor": {
-        "purpose": "Valoda, ko izvēlējāties, vai tas, ka aizvērāt tulkojuma paziņojumu bez pierakstīšanās, lai tas atgrieztos, kad izrakstāties.",
-        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi vai dzēšat kontu šajā pārlūkprogrammā."
+        "purpose": "Valoda, ko izvēlējāties, vai tas, ka aizvērāt tulkojuma paziņojumu bez pierakstīšanās, lai tas atgrieztos, kad izrakstāties."
       },
       "region": {
-        "purpose": "Reģiona filtrs bibliotēkas sarakstā.",
-        "lasts": "Līdz atkal iestatāt filtru uz visiem reģioniem."
+        "purpose": "Reģiona filtrs bibliotēkas sarakstā."
       },
       "includeAdditives": {
-        "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties.",
-        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
+        "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties."
       },
       "print": {
-        "purpose": "Jūsu pēdējās izvēles, drukājot recepti: visa recepte, porcija vai darba lapa un porcijas lielums.",
-        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
+        "purpose": "Jūsu pēdējās izvēles, drukājot recepti: visa recepte, porcija vai darba lapa un porcijas lielums."
       },
       "token": {
         "purpose": "Pierakstīšanās marķieris no vecas lietotnes Glazecalc versijas. Tagad tas vairs netiek ierakstīts.",

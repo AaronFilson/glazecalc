@@ -171,24 +171,19 @@
         "lasts": "Ilaa tijaabadu dhammaato, ama la hayo ama la tuuro."
       },
       "settings": {
-        "purpose": "Dejin aad ku beddeshay browser-kan, si bogga xiga isla markiiba u muujiyo, ka hor inta uusan server-ku jawaabin. <code>theme</code> iyo <code>palette</code> waxay midabeeyaan bogga ka hor inta uusan soo muuqan, <code>language</code>-na wuxuu bogagga ku furaa luqaddaada.",
-        "lasts": "Ilaa aad beddesho. Ka bixistu waxay dib u celisaa waxaad dooratay adigoo maqan, haddii ay jiraan, inta kalena way saartaa."
+        "purpose": "Dejin aad ku beddeshay browser-kan, si bogga xiga isla markiiba u muujiyo, ka hor inta uusan server-ku jawaabin. <code>theme</code> iyo <code>palette</code> waxay midabeeyaan bogga ka hor inta uusan soo muuqan, <code>language</code>-na wuxuu bogagga ku furaa luqaddaada."
       },
       "visitor": {
-        "purpose": "Luqadda aad dooratay, ama inaad xirtay ogeysiiska turjumaadda, adigoo maqan, si ay u soo noqoto markaad ka baxdo.",
-        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga ama tirtirto akoon browser-kan ku jira."
+        "purpose": "Luqadda aad dooratay, ama inaad xirtay ogeysiiska turjumaadda, adigoo maqan, si ay u soo noqoto markaad ka baxdo."
       },
       "region": {
-        "purpose": "Shaandhada gobolka ee liiska maktabadda.",
-        "lasts": "Ilaa aad shaandhada dib ugu celiso dhammaan gobollada."
+        "purpose": "Shaandhada gobolka ee liiska maktabadda."
       },
       "includeAdditives": {
-        "purpose": "In hababka cusubi ku tiriyaan walxaha lagu daro UMF-ta, sidaad markii ugu dambaysay dooratay.",
-        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga."
+        "purpose": "In hababka cusubi ku tiriyaan walxaha lagu daro UMF-ta, sidaad markii ugu dambaysay dooratay."
       },
       "print": {
-        "purpose": "Doorashooyinkaagii ugu dambeeyay ee daabacaadda hab: habka oo dhan, batch ama xaashida shaqada, iyo cabbirka batch-ka.",
-        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga."
+        "purpose": "Doorashooyinkaagii ugu dambeeyay ee daabacaadda hab: habka oo dhan, batch ama xaashida shaqada, iyo cabbirka batch-ka."
       },
       "token": {
         "purpose": "Token galitaan oo ka yimid nooc hore oo Glazecalc ah. Hadda marnaba lama qoro.",

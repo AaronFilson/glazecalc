@@ -171,24 +171,19 @@
         "lasts": "Kol bandomasis laikotarpis baigsis, bus pasiliktas arba jo bus atsisakyta."
       },
       "settings": {
-        "purpose": "Nustatymas, kurį pakeitėte šioje naršyklėje, kad kitas puslapis jį parodytų iš karto, dar prieš atsakant serveriui. <code>theme</code> ir <code>palette</code> nuspalvina puslapį prieš jam pasirodant, o <code>language</code> atidaro puslapius jūsų kalba.",
-        "lasts": "Kol jį pakeisite. Atsijungus grąžinama tai, ką buvote pasirinkę neprisijungę, jei ką nors pasirinkote, o visa kita pašalinama."
+        "purpose": "Nustatymas, kurį pakeitėte šioje naršyklėje, kad kitas puslapis jį parodytų iš karto, dar prieš atsakant serveriui. <code>theme</code> ir <code>palette</code> nuspalvina puslapį prieš jam pasirodant, o <code>language</code> atidaro puslapius jūsų kalba."
       },
       "visitor": {
-        "purpose": "Kalba, kurią pasirinkote, arba tai, kad uždarėte pranešimą apie vertimą, kol buvote neprisijungę, kad tai grįžtų jums atsijungus.",
-        "lasts": "Kol išvalysite naršyklės saugyklą arba panaikinsite paskyrą šioje naršyklėje."
+        "purpose": "Kalba, kurią pasirinkote, arba tai, kad uždarėte pranešimą apie vertimą, kol buvote neprisijungę, kad tai grįžtų jums atsijungus."
       },
       "region": {
-        "purpose": "Regiono filtras bibliotekos sąraše.",
-        "lasts": "Kol filtrą vėl nustatysite į visus regionus."
+        "purpose": "Regiono filtras bibliotekos sąraše."
       },
       "includeAdditives": {
-        "purpose": "Ar naujuose receptuose priedai įskaičiuojami į Segerio formulę, kaip pasirinkote paskutinį kartą.",
-        "lasts": "Kol išvalysite naršyklės saugyklą."
+        "purpose": "Ar naujuose receptuose priedai įskaičiuojami į Segerio formulę, kaip pasirinkote paskutinį kartą."
       },
       "print": {
-        "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas, užmaišas ar darbo lapas ir užmaišo dydis.",
-        "lasts": "Kol išvalysite naršyklės saugyklą."
+        "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas, užmaišas ar darbo lapas ir užmaišo dydis."
       },
       "token": {
         "purpose": "Prisijungimo žetonas iš senos Glazecalc versijos. Dabar jis niekada neįrašomas.",

@@ -171,24 +171,19 @@
         "lasts": "Kým sa skúšobný prístup neskončí alebo kým si ho neponecháte alebo ho nezahodíte."
       },
       "settings": {
-        "purpose": "Nastavenie, ktoré ste v tomto prehliadači zmenili, aby ho ďalšia stránka ukázala hneď, ešte pred odpoveďou servera. <code>theme</code> a <code>palette</code> zafarbia stránku skôr, ako sa zobrazí, a <code>language</code> otvára stránky vo vašom jazyku.",
-        "lasts": "Kým ho nezmeníte. Odhlásenie vráti to, čo ste si zvolili bez prihlásenia, ak také niečo je, a zvyšok odstráni."
+        "purpose": "Nastavenie, ktoré ste v tomto prehliadači zmenili, aby ho ďalšia stránka ukázala hneď, ešte pred odpoveďou servera. <code>theme</code> a <code>palette</code> zafarbia stránku skôr, ako sa zobrazí, a <code>language</code> otvára stránky vo vašom jazyku."
       },
       "visitor": {
-        "purpose": "Jazyk, ktorý ste si zvolili, alebo to, že ste zavreli upozornenie na preklad, kým ste boli bez prihlásenia, aby sa to vrátilo, keď sa odhlásite.",
-        "lasts": "Kým nevymažete úložisko prehliadača alebo nezrušíte účet v tomto prehliadači."
+        "purpose": "Jazyk, ktorý ste si zvolili, alebo to, že ste zavreli upozornenie na preklad, kým ste boli bez prihlásenia, aby sa to vrátilo, keď sa odhlásite."
       },
       "region": {
-        "purpose": "Filter regiónu v zozname knižnice.",
-        "lasts": "Kým filter nevrátite na všetky regióny."
+        "purpose": "Filter regiónu v zozname knižnice."
       },
       "includeAdditives": {
-        "purpose": "Či nové recepty započítavajú prísady do Segerovho vzorca, ako ste naposledy zvolili.",
-        "lasts": "Kým nevymažete úložisko prehliadača."
+        "purpose": "Či nové recepty započítavajú prísady do Segerovho vzorca, ako ste naposledy zvolili."
       },
       "print": {
-        "purpose": "Vaše posledné voľby pre tlač receptu: celý recept, dávka alebo pracovný list a veľkosť dávky.",
-        "lasts": "Kým nevymažete úložisko prehliadača."
+        "purpose": "Vaše posledné voľby pre tlač receptu: celý recept, dávka alebo pracovný list a veľkosť dávky."
       },
       "token": {
         "purpose": "Prihlasovací token zo starej verzie Glazecalc. Teraz sa už nikdy nezapisuje.",

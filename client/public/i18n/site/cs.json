@@ -171,24 +171,19 @@
         "lasts": "Do konce zkušebního přístupu, nebo dokud si ho neuchováte nebo ho nezahodíte."
       },
       "settings": {
-        "purpose": "Nastavení změněné v tomto prohlížeči, aby ho další stránka ukázala hned, ještě než odpoví server. <code>theme</code> a <code>palette</code> obarví stránku dřív, než se zobrazí, a <code>language</code> otevírá stránky ve vašem jazyce.",
-        "lasts": "Dokud ho nezměníte. Odhlášení vrátí volby provedené v odhlášeném stavu, pokud nějaké jsou, a zbytek odstraní."
+        "purpose": "Nastavení změněné v tomto prohlížeči, aby ho další stránka ukázala hned, ještě než odpoví server. <code>theme</code> a <code>palette</code> obarví stránku dřív, než se zobrazí, a <code>language</code> otevírá stránky ve vašem jazyce."
       },
       "visitor": {
-        "purpose": "Jazyk zvolený v odhlášeném stavu, nebo to, že jste v něm zavřeli upozornění na překlad, aby se to po odhlášení vrátilo.",
-        "lasts": "Dokud nevymažete úložiště prohlížeče nebo v tomto prohlížeči neodstraníte účet."
+        "purpose": "Jazyk zvolený v odhlášeném stavu, nebo to, že jste v něm zavřeli upozornění na překlad, aby se to po odhlášení vrátilo."
       },
       "region": {
-        "purpose": "Filtr regionu u seznamu v knihovně.",
-        "lasts": "Dokud filtr nevrátíte na všechny regiony."
+        "purpose": "Filtr regionu u seznamu v knihovně."
       },
       "includeAdditives": {
-        "purpose": "Zda nové recepty započítávají přísady do Segerova vzorce (UMF), jak jste naposledy zvolili.",
-        "lasts": "Dokud nevymažete úložiště prohlížeče."
+        "purpose": "Zda nové recepty započítávají přísady do Segerova vzorce (UMF), jak jste naposledy zvolili."
       },
       "print": {
-        "purpose": "Vaše poslední volby pro tisk receptu: celý recept, dávka nebo pracovní list a velikost dávky.",
-        "lasts": "Dokud nevymažete úložiště prohlížeče."
+        "purpose": "Vaše poslední volby pro tisk receptu: celý recept, dávka nebo pracovní list a velikost dávky."
       },
       "token": {
         "purpose": "Přihlašovací token ze staré verze aplikace Glazecalc. Dnes se už nikdy nezapisuje.",

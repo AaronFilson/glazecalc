@@ -171,24 +171,19 @@
         "lasts": "Sakemm tispiċċa l-prova, jew tinżamm jew titwarrab."
       },
       "settings": {
-        "purpose": "Setting li bdilt f’dan il-brawżer, biex il-paġna li jmiss turih minnufih, qabel ma jwieġeb is-server. <code>theme</code> u <code>palette</code> jagħtu l-kulur lill-paġna qabel ma tidher, u <code>language</code> jiftaħ il-paġni bil-lingwa tiegħek.",
-        "lasts": "Sakemm tibdlu. Meta toħroġ, terġa’ tidher l-għażla li kont għamilt meta ma kontx dieħel, jekk għamilt waħda, u l-bqija jitneħħa."
+        "purpose": "Setting li bdilt f’dan il-brawżer, biex il-paġna li jmiss turih minnufih, qabel ma jwieġeb is-server. <code>theme</code> u <code>palette</code> jagħtu l-kulur lill-paġna qabel ma tidher, u <code>language</code> jiftaħ il-paġni bil-lingwa tiegħek."
       },
       "visitor": {
-        "purpose": "Il-lingwa li għażilt, jew li għalaqt l-avviż tat-traduzzjoni, meta ma kontx dieħel, biex terġa’ tidher meta toħroġ.",
-        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek jew tħassar kont f’dan il-brawżer."
+        "purpose": "Il-lingwa li għażilt, jew li għalaqt l-avviż tat-traduzzjoni, meta ma kontx dieħel, biex terġa’ tidher meta toħroġ."
       },
       "region": {
-        "purpose": "Il-filtru tar-reġjun fuq lista tal-librerija.",
-        "lasts": "Sakemm terġa’ tissettja l-filtru għar-reġjuni kollha."
+        "purpose": "Il-filtru tar-reġjun fuq lista tal-librerija."
       },
       "includeAdditives": {
-        "purpose": "Jekk ir-riċetti l-ġodda jgħoddux l-addittivi tagħhom fil-formula ta’ Seger, kif għażilt l-aħħar darba.",
-        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
+        "purpose": "Jekk ir-riċetti l-ġodda jgħoddux l-addittivi tagħhom fil-formula ta’ Seger, kif għażilt l-aħħar darba."
       },
       "print": {
-        "purpose": "L-aħħar għażliet tiegħek biex tipprintja riċetta: ir-riċetta kollha, taħlita jew l-iskeda tax-xogħol, u d-daqs tat-taħlita.",
-        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
+        "purpose": "L-aħħar għażliet tiegħek biex tipprintja riċetta: ir-riċetta kollha, taħlita jew l-iskeda tax-xogħol, u d-daqs tat-taħlita."
       },
       "token": {
         "purpose": "Token tad-dħul minn verżjoni qadima ta’ Glazecalc. Illum qatt ma jinkiteb.",

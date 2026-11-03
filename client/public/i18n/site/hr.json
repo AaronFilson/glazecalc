@@ -171,24 +171,19 @@
         "lasts": "Dok probno korištenje ne završi ili dok ga ne zadržite ili odbacite."
       },
       "settings": {
-        "purpose": "Postavka koju ste promijenili u ovom pregledniku, kako bi je sljedeća stranica odmah prikazala, prije nego što poslužitelj odgovori. <code>theme</code> i <code>palette</code> boje stranicu prije nego što se pojavi, a <code>language</code> otvara stranice na vašem jeziku.",
-        "lasts": "Dok je ne promijenite. Odjavom se vraća ono što ste odabrali dok ste bili odjavljeni, ako ste išta odabrali, a ostalo se uklanja."
+        "purpose": "Postavka koju ste promijenili u ovom pregledniku, kako bi je sljedeća stranica odmah prikazala, prije nego što poslužitelj odgovori. <code>theme</code> i <code>palette</code> boje stranicu prije nego što se pojavi, a <code>language</code> otvara stranice na vašem jeziku."
       },
       "visitor": {
-        "purpose": "Jezik koji ste odabrali ili to da ste zatvorili obavijest o prijevodu dok ste bili odjavljeni, kako bi se to vratilo kad se odjavite.",
-        "lasts": "Dok ne izbrišete pohranu preglednika ili ne izbrišete račun u ovom pregledniku."
+        "purpose": "Jezik koji ste odabrali ili to da ste zatvorili obavijest o prijevodu dok ste bili odjavljeni, kako bi se to vratilo kad se odjavite."
       },
       "region": {
-        "purpose": "Filtar regije na popisu u biblioteci.",
-        "lasts": "Dok filtar ne vratite na sve regije."
+        "purpose": "Filtar regije na popisu u biblioteci."
       },
       "includeAdditives": {
-        "purpose": "Uračunavaju li novi recepti svoje dodatke u Segerovu formulu, kako ste posljednji put odabrali.",
-        "lasts": "Dok ne izbrišete pohranu preglednika."
+        "purpose": "Uračunavaju li novi recepti svoje dodatke u Segerovu formulu, kako ste posljednji put odabrali."
       },
       "print": {
-        "purpose": "Vaši zadnji odabiri za ispis recepta: cijeli recept, smjesa ili radni list, i veličina smjese.",
-        "lasts": "Dok ne izbrišete pohranu preglednika."
+        "purpose": "Vaši zadnji odabiri za ispis recepta: cijeli recept, smjesa ili radni list, i veličina smjese."
       },
       "token": {
         "purpose": "Token za prijavu iz stare verzije aplikacije Glazecalc. Više se nikad ne zapisuje.",

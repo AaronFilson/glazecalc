@@ -171,24 +171,19 @@
         "lasts": "Hadi jaribio liishe, au lihifadhiwe au litupwe."
       },
       "settings": {
-        "purpose": "Mpangilio uliobadilisha kwenye kivinjari hiki, ili ukurasa unaofuata uuonyeshe mara moja, kabla seva haijajibu. <code>theme</code> na <code>palette</code> hutia rangi ukurasa kabla haujaonekana, na <code>language</code> hufungua kurasa katika lugha yako.",
-        "lasts": "Hadi ubadilishe. Kutoka hurudisha ulichochagua ukiwa umetoka, ikiwa kipo, na huondoa kilichobaki."
+        "purpose": "Mpangilio uliobadilisha kwenye kivinjari hiki, ili ukurasa unaofuata uuonyeshe mara moja, kabla seva haijajibu. <code>theme</code> na <code>palette</code> hutia rangi ukurasa kabla haujaonekana, na <code>language</code> hufungua kurasa katika lugha yako."
       },
       "visitor": {
-        "purpose": "Lugha uliyochagua, au kwamba ulifunga taarifa ya tafsiri, ukiwa umetoka, ili irudi unapotoka.",
-        "lasts": "Hadi ufute hifadhi ya kivinjari chako au ufute akaunti kwenye kivinjari hiki."
+        "purpose": "Lugha uliyochagua, au kwamba ulifunga taarifa ya tafsiri, ukiwa umetoka, ili irudi unapotoka."
       },
       "region": {
-        "purpose": "Kichujio cha eneo kwenye orodha ya maktaba.",
-        "lasts": "Hadi urudishe kichujio kuwa maeneo yote."
+        "purpose": "Kichujio cha eneo kwenye orodha ya maktaba."
       },
       "includeAdditives": {
-        "purpose": "Kama vichocheo vipya vihesabu viongezi vyake katika fomula ya Seger, kama ulivyochagua mara ya mwisho.",
-        "lasts": "Hadi ufute hifadhi ya kivinjari chako."
+        "purpose": "Kama vichocheo vipya vihesabu viongezi vyake katika fomula ya Seger, kama ulivyochagua mara ya mwisho."
       },
       "print": {
-        "purpose": "Chaguo zako za mwisho za kuchapisha kichocheo: kichocheo kizima, kundi au karatasi ya kazi, na ukubwa wa kundi.",
-        "lasts": "Hadi ufute hifadhi ya kivinjari chako."
+        "purpose": "Chaguo zako za mwisho za kuchapisha kichocheo: kichocheo kizima, kundi au karatasi ya kazi, na ukubwa wa kundi."
       },
       "token": {
         "purpose": "Tokeni ya kuingia kutoka toleo la zamani la Glazecalc. Haiandikwi tena sasa.",

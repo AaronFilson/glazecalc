@@ -171,24 +171,19 @@
         "lasts": "Tills provperioden tar slut, behålls eller raderas."
       },
       "settings": {
-        "purpose": "En inställning som har ändrats i den här webbläsaren, så att nästa sida visar den direkt, innan servern svarar. <code>theme</code> och <code>palette</code> färgar sidan innan den visas, och <code>language</code> öppnar sidor på ditt språk.",
-        "lasts": "Tills den ändras. Utloggning återställer det du valde när du var utloggad, om något, och tar bort resten."
+        "purpose": "En inställning som har ändrats i den här webbläsaren, så att nästa sida visar den direkt, innan servern svarar. <code>theme</code> och <code>palette</code> färgar sidan innan den visas, och <code>language</code> öppnar sidor på ditt språk."
       },
       "visitor": {
-        "purpose": "Språket du valde, eller att du stängde meddelandet om översättningen, medan du var utloggad, så att det kommer tillbaka när du loggar ut.",
-        "lasts": "Tills webbläsarens lagring rensas eller ett konto raderas i den här webbläsaren."
+        "purpose": "Språket du valde, eller att du stängde meddelandet om översättningen, medan du var utloggad, så att det kommer tillbaka när du loggar ut."
       },
       "region": {
-        "purpose": "Regionfiltret i en lista i biblioteket.",
-        "lasts": "Tills filtret ställs tillbaka till alla regioner."
+        "purpose": "Regionfiltret i en lista i biblioteket."
       },
       "includeAdditives": {
-        "purpose": "Om nya recept räknar med tillsatserna i Segerformeln, enligt ditt senaste val.",
-        "lasts": "Tills webbläsarens lagring rensas."
+        "purpose": "Om nya recept räknar med tillsatserna i Segerformeln, enligt ditt senaste val."
       },
       "print": {
-        "purpose": "De senaste valen för utskrift av ett recept: hela receptet, en sats eller arbetsbladet, och satsstorleken.",
-        "lasts": "Tills webbläsarens lagring rensas."
+        "purpose": "De senaste valen för utskrift av ett recept: hela receptet, en sats eller arbetsbladet, och satsstorleken."
       },
       "token": {
         "purpose": "En inloggningstoken från en gammal version av Glazecalc. Den skrivs aldrig numera.",

@@ -171,24 +171,19 @@
         "lasts": "Finché la prova non termina, o non viene conservata o eliminata."
       },
       "settings": {
-        "purpose": "Un’impostazione cambiata su questo browser, così la pagina successiva la mostra subito, prima che il server risponda. <code>theme</code> e <code>palette</code> colorano la pagina prima che appaia, e <code>language</code> apre le pagine nella Sua lingua.",
-        "lasts": "Finché non la cambia. Uscendo dall’account si ripristina ciò che aveva scelto senza aver effettuato l’accesso, se c’è, e si rimuove il resto."
+        "purpose": "Un’impostazione cambiata su questo browser, così la pagina successiva la mostra subito, prima che il server risponda. <code>theme</code> e <code>palette</code> colorano la pagina prima che appaia, e <code>language</code> apre le pagine nella Sua lingua."
       },
       "visitor": {
-        "purpose": "La lingua scelta, o il fatto che ha chiuso l’avviso sulla traduzione, senza aver effettuato l’accesso, così ritorna quando esce dall’account.",
-        "lasts": "Finché non cancella i dati del browser o non elimina un account su questo browser."
+        "purpose": "La lingua scelta, o il fatto che ha chiuso l’avviso sulla traduzione, senza aver effettuato l’accesso, così ritorna quando esce dall’account."
       },
       "region": {
-        "purpose": "Il filtro per area negli elenchi dei materiali standard.",
-        "lasts": "Finché non riporta il filtro su tutte le aree."
+        "purpose": "Il filtro per area negli elenchi dei materiali standard."
       },
       "includeAdditives": {
-        "purpose": "Se le nuove ricette conteggiano gli additivi nella formula di Seger (UMF), come scelto l’ultima volta.",
-        "lasts": "Finché non cancella i dati del browser."
+        "purpose": "Se le nuove ricette conteggiano gli additivi nella formula di Seger (UMF), come scelto l’ultima volta."
       },
       "print": {
-        "purpose": "Le Sue ultime scelte per la stampa di una ricetta: la ricetta intera, una pesata o il foglio di calcolo, e il peso della pesata.",
-        "lasts": "Finché non cancella i dati del browser."
+        "purpose": "Le Sue ultime scelte per la stampa di una ricetta: la ricetta intera, una pesata o il foglio di calcolo, e il peso della pesata."
       },
       "token": {
         "purpose": "Un token di accesso di una vecchia versione di Glazecalc. Oggi non viene più scritto.",

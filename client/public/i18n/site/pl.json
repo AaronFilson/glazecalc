@@ -171,24 +171,19 @@
         "lasts": "Do końca okresu próbnego albo do jego zachowania lub zakończenia."
       },
       "settings": {
-        "purpose": "Ustawienie zmienione w tej przeglądarce, aby następna strona od razu je pokazała, zanim odpowie serwer. <code>theme</code> i <code>palette</code> nadają stronie kolory, zanim się pojawi, a <code>language</code> otwiera strony w wybranym języku.",
-        "lasts": "Do jego zmiany. Wylogowanie przywraca to, co zostało wybrane bez zalogowania, jeśli cokolwiek wybrano, a resztę usuwa."
+        "purpose": "Ustawienie zmienione w tej przeglądarce, aby następna strona od razu je pokazała, zanim odpowie serwer. <code>theme</code> i <code>palette</code> nadają stronie kolory, zanim się pojawi, a <code>language</code> otwiera strony w wybranym języku."
       },
       "visitor": {
-        "purpose": "Język wybrany bez zalogowania albo to, że bez zalogowania zamknięto informację o tłumaczeniu, aby wróciło to po wylogowaniu.",
-        "lasts": "Do wyczyszczenia pamięci przeglądarki lub usunięcia konta w tej przeglądarce."
+        "purpose": "Język wybrany bez zalogowania albo to, że bez zalogowania zamknięto informację o tłumaczeniu, aby wróciło to po wylogowaniu."
       },
       "region": {
-        "purpose": "Filtr regionu na liście w bibliotece.",
-        "lasts": "Do przywrócenia filtra na wszystkie regiony."
+        "purpose": "Filtr regionu na liście w bibliotece."
       },
       "includeAdditives": {
-        "purpose": "Czy nowe receptury uwzględniają dodatki we wzorze Segera, zgodnie z ostatnim wyborem.",
-        "lasts": "Do wyczyszczenia pamięci przeglądarki."
+        "purpose": "Czy nowe receptury uwzględniają dodatki we wzorze Segera, zgodnie z ostatnim wyborem."
       },
       "print": {
-        "purpose": "Ostatnie wybory dotyczące drukowania receptury: cała receptura, porcja lub arkusz oraz wielkość porcji.",
-        "lasts": "Do wyczyszczenia pamięci przeglądarki."
+        "purpose": "Ostatnie wybory dotyczące drukowania receptury: cała receptura, porcja lub arkusz oraz wielkość porcji."
       },
       "token": {
         "purpose": "Token logowania ze starej wersji aplikacji Glazecalc. Obecnie nigdy nie jest zapisywany.",

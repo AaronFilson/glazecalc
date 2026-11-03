@@ -171,24 +171,19 @@
         "lasts": "Cho đến khi bản dùng thử kết thúc, hoặc được giữ lại hay bị bỏ."
       },
       "settings": {
-        "purpose": "Một cài đặt bạn đã đổi trên trình duyệt này, để trang tiếp theo hiển thị nó ngay, trước khi máy chủ trả lời. <code>theme</code> và <code>palette</code> tô màu trang trước khi nó xuất hiện, và <code>language</code> mở các trang bằng ngôn ngữ của bạn.",
-        "lasts": "Cho đến khi bạn đổi nó. Đăng xuất sẽ đặt lại những gì bạn đã chọn khi chưa đăng nhập, nếu có, và xóa phần còn lại."
+        "purpose": "Một cài đặt bạn đã đổi trên trình duyệt này, để trang tiếp theo hiển thị nó ngay, trước khi máy chủ trả lời. <code>theme</code> và <code>palette</code> tô màu trang trước khi nó xuất hiện, và <code>language</code> mở các trang bằng ngôn ngữ của bạn."
       },
       "visitor": {
-        "purpose": "Ngôn ngữ bạn đã chọn, hoặc việc bạn đã đóng ghi chú bản dịch, khi chưa đăng nhập, để nó trở lại khi bạn đăng xuất.",
-        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt hoặc xóa một tài khoản trên trình duyệt này."
+        "purpose": "Ngôn ngữ bạn đã chọn, hoặc việc bạn đã đóng ghi chú bản dịch, khi chưa đăng nhập, để nó trở lại khi bạn đăng xuất."
       },
       "region": {
-        "purpose": "Bộ lọc khu vực trên một danh sách thư viện.",
-        "lasts": "Cho đến khi bạn đặt bộ lọc về tất cả khu vực."
+        "purpose": "Bộ lọc khu vực trên một danh sách thư viện."
       },
       "includeAdditives": {
-        "purpose": "Việc các công thức men mới có tính phụ gia của chúng vào công thức Seger hay không, như bạn đã chọn lần gần nhất.",
-        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt."
+        "purpose": "Việc các công thức men mới có tính phụ gia của chúng vào công thức Seger hay không, như bạn đã chọn lần gần nhất."
       },
       "print": {
-        "purpose": "Các lựa chọn gần nhất của bạn để in một công thức men: toàn bộ công thức men, một mẻ hoặc bảng tính, và cỡ mẻ.",
-        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt."
+        "purpose": "Các lựa chọn gần nhất của bạn để in một công thức men: toàn bộ công thức men, một mẻ hoặc bảng tính, và cỡ mẻ."
       },
       "token": {
         "purpose": "Một mã thông báo đăng nhập từ một phiên bản cũ của Glazecalc. Giờ nó không bao giờ được ghi.",

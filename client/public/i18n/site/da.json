@@ -171,24 +171,19 @@
         "lasts": "Indtil prøveperioden slutter eller beholdes eller kasseres."
       },
       "settings": {
-        "purpose": "En indstilling, du har ændret i denne browser, så næste side viser den med det samme, før serveren svarer. <code>theme</code> og <code>palette</code> farver siden, før den vises, og <code>language</code> åbner sider på dit sprog.",
-        "lasts": "Indtil du ændrer den. Når du logger ud, sættes det tilbage, du eventuelt valgte, mens du var logget ud, og resten fjernes."
+        "purpose": "En indstilling, du har ændret i denne browser, så næste side viser den med det samme, før serveren svarer. <code>theme</code> og <code>palette</code> farver siden, før den vises, og <code>language</code> åbner sider på dit sprog."
       },
       "visitor": {
-        "purpose": "Det sprog, du valgte, eller at du lukkede noten om oversættelsen, mens du var logget ud, så det kommer tilbage, når du logger ud.",
-        "lasts": "Indtil du rydder browserens lager eller sletter en konto i denne browser."
+        "purpose": "Det sprog, du valgte, eller at du lukkede noten om oversættelsen, mens du var logget ud, så det kommer tilbage, når du logger ud."
       },
       "region": {
-        "purpose": "Regionsfilteret på en liste i biblioteket.",
-        "lasts": "Indtil du sætter filteret tilbage til alle regioner."
+        "purpose": "Regionsfilteret på en liste i biblioteket."
       },
       "includeAdditives": {
-        "purpose": "Om nye opskrifter medregner tilsætningerne i Seger-formlen, som du sidst valgte.",
-        "lasts": "Indtil du rydder browserens lager."
+        "purpose": "Om nye opskrifter medregner tilsætningerne i Seger-formlen, som du sidst valgte."
       },
       "print": {
-        "purpose": "De seneste valg til udskrivning af en opskrift: hele opskriften, en portion eller arbejdsarket, og portionsstørrelsen.",
-        "lasts": "Indtil du rydder browserens lager."
+        "purpose": "De seneste valg til udskrivning af en opskrift: hele opskriften, en portion eller arbejdsarket, og portionsstørrelsen."
       },
       "token": {
         "purpose": "Et login-token fra en gammel version af Glazecalc. Det skrives aldrig nu.",

@@ -171,24 +171,19 @@
         "lasts": "Ruo mgbe nnwale ahụ gwụrụ, ma ọ bụ e debere ya ma ọ bụ tufuo ya."
       },
       "settings": {
-        "purpose": "Ntọala i gbanwere na brawza a, ka ibe na-esote gosi ya ozugbo, tupu sava aza. <code>theme</code> na <code>palette</code> na-ete ibe ahụ agba tupu ọ pụta, <code>language</code> na-emepekwa ibe n'asụsụ gị.",
-        "lasts": "Ruo mgbe ị gbanwere ya. Ịpụ na-eweghachi ihe ị họọrọ mgbe ị nọ n'èzí, ma ọ bụrụ na e nwere, ma na-ewepụ ndị fọdụrụ."
+        "purpose": "Ntọala i gbanwere na brawza a, ka ibe na-esote gosi ya ozugbo, tupu sava aza. <code>theme</code> na <code>palette</code> na-ete ibe ahụ agba tupu ọ pụta, <code>language</code> na-emepekwa ibe n'asụsụ gị."
       },
       "visitor": {
-        "purpose": "Asụsụ ị họọrọ, ma ọ bụ na i mechiri ọkwa ntụgharị, mgbe ị nọ n'èzí, ka ọ lọghachi mgbe ị pụrụ.",
-        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị ma ọ bụ hichapụ akaụntụ na brawza a."
+        "purpose": "Asụsụ ị họọrọ, ma ọ bụ na i mechiri ọkwa ntụgharị, mgbe ị nọ n'èzí, ka ọ lọghachi mgbe ị pụrụ."
       },
       "region": {
-        "purpose": "Nzacha mpaghara na ndepụta ọbá akwụkwọ.",
-        "lasts": "Ruo mgbe ị tọgharịrị nzacha ahụ ka ọ bụrụ mpaghara niile."
+        "purpose": "Nzacha mpaghara na ndepụta ọbá akwụkwọ."
       },
       "includeAdditives": {
-        "purpose": "Ma usoro glaze ọhụrụ na-agụ ihe mgbakwunye ha n'usoro unity, dịka ị họọrọ ikpeazụ.",
-        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị."
+        "purpose": "Ma usoro glaze ọhụrụ na-agụ ihe mgbakwunye ha n'usoro unity, dịka ị họọrọ ikpeazụ."
       },
       "print": {
-        "purpose": "Nhọrọ ikpeazụ gị maka ibipụta usoro glaze: usoro glaze niile, batch ma ọ bụ mpempe akwụkwọ ọrụ, na ịdị ukwuu batch.",
-        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị."
+        "purpose": "Nhọrọ ikpeazụ gị maka ibipụta usoro glaze: usoro glaze niile, batch ma ọ bụ mpempe akwụkwọ ọrụ, na ịdị ukwuu batch."
       },
       "token": {
         "purpose": "Token mbanye site n'ụdị Glazecalc ochie. A naghịzi ede ya ugbu a.",

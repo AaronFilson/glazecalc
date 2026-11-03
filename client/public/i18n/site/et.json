@@ -171,24 +171,19 @@
         "lasts": "Kuni proovikasutus lõpeb või see säilitatakse või sellest loobutakse."
       },
       "settings": {
-        "purpose": "Selles brauseris muudetud säte, et järgmine leht näitaks seda kohe, enne kui server vastab. <code>theme</code> ja <code>palette</code> värvivad lehe enne selle ilmumist ning <code>language</code> avab lehed teie keeles.",
-        "lasts": "Kuni te seda muudate. Väljalogimisel taastatakse see, mille valisite väljalogituna, kui midagi valisite, ja ülejäänu eemaldatakse."
+        "purpose": "Selles brauseris muudetud säte, et järgmine leht näitaks seda kohe, enne kui server vastab. <code>theme</code> ja <code>palette</code> värvivad lehe enne selle ilmumist ning <code>language</code> avab lehed teie keeles."
       },
       "visitor": {
-        "purpose": "Väljalogituna valitud keel või see, et sulgesite tõlketeate, et see taastuks väljalogimisel.",
-        "lasts": "Kuni tühjendate brauseri salvestusruumi või kustutate selles brauseris konto."
+        "purpose": "Väljalogituna valitud keel või see, et sulgesite tõlketeate, et see taastuks väljalogimisel."
       },
       "region": {
-        "purpose": "Teegi loendi piirkonnafilter.",
-        "lasts": "Kuni seate filtri tagasi kõigile piirkondadele."
+        "purpose": "Teegi loendi piirkonnafilter."
       },
       "includeAdditives": {
-        "purpose": "Kas uutes retseptides arvestatakse lisaained Segeri valemisse, nagu viimati valisite.",
-        "lasts": "Kuni tühjendate brauseri salvestusruumi."
+        "purpose": "Kas uutes retseptides arvestatakse lisaained Segeri valemisse, nagu viimati valisite."
       },
       "print": {
-        "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept, segu või tööleht ja segu suurus.",
-        "lasts": "Kuni tühjendate brauseri salvestusruumi."
+        "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept, segu või tööleht ja segu suurus."
       },
       "token": {
         "purpose": "Glazecalci vana versiooni sisselogimisluba. Seda enam ei kirjutata.",

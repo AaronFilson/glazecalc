@@ -171,24 +171,19 @@
         "lasts": "Títí ìdánwò yóò fi parí, tàbí tí a bá pa á mọ́ tàbí pa á rẹ́."
       },
       "settings": {
-        "purpose": "Ètò kan tí ẹ yí padà lórí browser yìí, kí ojú-ìwé tó tẹ̀lé lè fi hàn lẹ́sẹ̀kẹsẹ̀, kí server tó dáhùn. <code>theme</code> àti <code>palette</code> ń fi àwọ̀ sí ojú-ìwé kí ó tó farahàn, <code>language</code> sì ń ṣí ojú-ìwé ní èdè yín.",
-        "lasts": "Títí ẹ ó fi yí i padà. Jíjáde ń dá ohun tí ẹ yàn nígbà tí ẹ wà níta padà, bí ó bá wà, ó sì ń yọ ìyókù kúrò."
+        "purpose": "Ètò kan tí ẹ yí padà lórí browser yìí, kí ojú-ìwé tó tẹ̀lé lè fi hàn lẹ́sẹ̀kẹsẹ̀, kí server tó dáhùn. <code>theme</code> àti <code>palette</code> ń fi àwọ̀ sí ojú-ìwé kí ó tó farahàn, <code>language</code> sì ń ṣí ojú-ìwé ní èdè yín."
       },
       "visitor": {
-        "purpose": "Èdè tí ẹ yàn, tàbí pé ẹ pa ìfitónilétí ìtúmọ̀ dé, nígbà tí ẹ wà níta, kí ó lè padà wá nígbà tí ẹ bá jáde.",
-        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́ tàbí pa àkáǹtì kan rẹ́ lórí browser yìí."
+        "purpose": "Èdè tí ẹ yàn, tàbí pé ẹ pa ìfitónilétí ìtúmọ̀ dé, nígbà tí ẹ wà níta, kí ó lè padà wá nígbà tí ẹ bá jáde."
       },
       "region": {
-        "purpose": "Àlẹ̀mọ́ agbègbè lórí àtòjọ ibi ìkówèésí.",
-        "lasts": "Títí ẹ ó fi dá àlẹ̀mọ́ náà padà sí gbogbo agbègbè."
+        "purpose": "Àlẹ̀mọ́ agbègbè lórí àtòjọ ibi ìkówèésí."
       },
       "includeAdditives": {
-        "purpose": "Bóyá àwọn ìlànà tuntun ń ka ohun àfikún wọn mọ́ UMF, bí ẹ ṣe yàn kẹ́yìn.",
-        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́."
+        "purpose": "Bóyá àwọn ìlànà tuntun ń ka ohun àfikún wọn mọ́ UMF, bí ẹ ṣe yàn kẹ́yìn."
       },
       "print": {
-        "purpose": "Àwọn ìyàn yín ìkẹyìn fún títẹ ìlànà jáde: gbogbo ìlànà, batch kan tàbí worksheet, àti ìwọ̀n batch.",
-        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́."
+        "purpose": "Àwọn ìyàn yín ìkẹyìn fún títẹ ìlànà jáde: gbogbo ìlànà, batch kan tàbí worksheet, àti ìwọ̀n batch."
       },
       "token": {
         "purpose": "Token wíwọlé láti ẹ̀yà Glazecalc àtijọ́. A kò kọ ọ́ mọ́ báyìí.",

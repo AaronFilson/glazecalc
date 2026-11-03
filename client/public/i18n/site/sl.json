@@ -171,24 +171,19 @@
         "lasts": "Dokler se preizkus ne izteče ali ga ne ohranite ali zavržete."
       },
       "settings": {
-        "purpose": "Nastavitev, ki ste jo spremenili v tem brskalniku, da jo naslednja stran prikaže takoj, še preden odgovori strežnik. <code>theme</code> in <code>palette</code> obarvata stran, preden se prikaže, <code>language</code> pa odpira strani v vašem jeziku.",
-        "lasts": "Dokler je ne spremenite. Odjava povrne, kar ste morda izbrali, ko niste bili prijavljeni, ostalo pa odstrani."
+        "purpose": "Nastavitev, ki ste jo spremenili v tem brskalniku, da jo naslednja stran prikaže takoj, še preden odgovori strežnik. <code>theme</code> in <code>palette</code> obarvata stran, preden se prikaže, <code>language</code> pa odpira strani v vašem jeziku."
       },
       "visitor": {
-        "purpose": "Jezik, ki ste ga izbrali, ali to, da ste zaprli obvestilo o prevodu, ko niste bili prijavljeni, da se to povrne, ko se odjavite.",
-        "lasts": "Dokler ne počistite shrambe brskalnika ali v tem brskalniku ne izbrišete računa."
+        "purpose": "Jezik, ki ste ga izbrali, ali to, da ste zaprli obvestilo o prevodu, ko niste bili prijavljeni, da se to povrne, ko se odjavite."
       },
       "region": {
-        "purpose": "Filter regije na seznamu v knjižnici.",
-        "lasts": "Dokler filtra ne nastavite nazaj na vse regije."
+        "purpose": "Filter regije na seznamu v knjižnici."
       },
       "includeAdditives": {
-        "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali.",
-        "lasts": "Dokler ne počistite shrambe brskalnika."
+        "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali."
       },
       "print": {
-        "purpose": "Vaše zadnje izbire pri tiskanju recepta: celoten recept, mešanica ali delovni list in velikost mešanice.",
-        "lasts": "Dokler ne počistite shrambe brskalnika."
+        "purpose": "Vaše zadnje izbire pri tiskanju recepta: celoten recept, mešanica ali delovni list in velikost mešanice."
       },
       "token": {
         "purpose": "Žeton za prijavo iz stare različice aplikacije Glazecalc. Zdaj se nikoli ne zapiše.",

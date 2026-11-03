@@ -171,24 +171,19 @@
         "lasts": "Até o período de experiência acabar, ou ser guardado ou descartado."
       },
       "settings": {
-        "purpose": "Uma definição que alterou neste navegador, para que a página seguinte a mostre logo, antes de o servidor responder. <code>theme</code> e <code>palette</code> dão cor à página antes de ela aparecer, e <code>language</code> abre as páginas na sua língua.",
-        "lasts": "Até a alterar. Terminar a sessão repõe o que escolheu sem sessão iniciada, se for o caso, e remove o resto."
+        "purpose": "Uma definição que alterou neste navegador, para que a página seguinte a mostre logo, antes de o servidor responder. <code>theme</code> e <code>palette</code> dão cor à página antes de ela aparecer, e <code>language</code> abre as páginas na sua língua."
       },
       "visitor": {
-        "purpose": "A língua que escolheu, ou o facto de ter fechado o aviso de tradução, sem sessão iniciada, para que volte quando terminar a sessão.",
-        "lasts": "Até apagar o armazenamento do navegador ou eliminar uma conta neste navegador."
+        "purpose": "A língua que escolheu, ou o facto de ter fechado o aviso de tradução, sem sessão iniciada, para que volte quando terminar a sessão."
       },
       "region": {
-        "purpose": "O filtro de região numa lista da biblioteca.",
-        "lasts": "Até repor o filtro em todas as regiões."
+        "purpose": "O filtro de região numa lista da biblioteca."
       },
       "includeAdditives": {
-        "purpose": "Se as novas receitas incluem os aditivos na fórmula de Seger, como escolheu da última vez.",
-        "lasts": "Até apagar o armazenamento do navegador."
+        "purpose": "Se as novas receitas incluem os aditivos na fórmula de Seger, como escolheu da última vez."
       },
       "print": {
-        "purpose": "As suas últimas escolhas para imprimir uma receita: a receita inteira, um lote ou a folha de trabalho, e o tamanho do lote.",
-        "lasts": "Até apagar o armazenamento do navegador."
+        "purpose": "As suas últimas escolhas para imprimir uma receita: a receita inteira, um lote ou a folha de trabalho, e o tamanho do lote."
       },
       "token": {
         "purpose": "Um token de sessão de uma versão antiga do Glazecalc. Já não é escrito.",

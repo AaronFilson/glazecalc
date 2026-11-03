@@ -171,24 +171,19 @@
         "lasts": "Deneme sona erene, saklanana ya da silinene kadar."
       },
       "settings": {
-        "purpose": "Bu tarayıcıda değiştirdiğiniz bir ayar; böylece bir sonraki sayfa onu sunucu yanıt vermeden hemen gösterir. <code>theme</code> ve <code>palette</code> sayfayı görünmeden önce renklendirir, <code>language</code> ise sayfaları sizin dilinizde açar.",
-        "lasts": "Siz değiştirene kadar. Oturumu kapattığınızda, oturum kapalıyken bir şey seçtiyseniz o geri gelir, gerisi kaldırılır."
+        "purpose": "Bu tarayıcıda değiştirdiğiniz bir ayar; böylece bir sonraki sayfa onu sunucu yanıt vermeden hemen gösterir. <code>theme</code> ve <code>palette</code> sayfayı görünmeden önce renklendirir, <code>language</code> ise sayfaları sizin dilinizde açar."
       },
       "visitor": {
-        "purpose": "Oturum kapalıyken seçtiğiniz dil ya da çeviri notunu kapattığınız; böylece oturumu kapattığınızda geri gelir.",
-        "lasts": "Tarayıcınızın depolama alanını temizleyene ya da bu tarayıcıda bir hesabı silene kadar."
+        "purpose": "Oturum kapalıyken seçtiğiniz dil ya da çeviri notunu kapattığınız; böylece oturumu kapattığınızda geri gelir."
       },
       "region": {
-        "purpose": "Bir kütüphane listesindeki bölge filtresi.",
-        "lasts": "Filtreyi yeniden tüm bölgelere ayarlayana kadar."
+        "purpose": "Bir kütüphane listesindeki bölge filtresi."
       },
       "includeAdditives": {
-        "purpose": "Yeni reçetelerin katkılarını Seger formülüne katıp katmayacağı, en son seçtiğiniz gibi.",
-        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
+        "purpose": "Yeni reçetelerin katkılarını Seger formülüne katıp katmayacağı, en son seçtiğiniz gibi."
       },
       "print": {
-        "purpose": "Bir reçeteyi yazdırmak için son seçimleriniz: reçetenin tamamı, bir tartım veya çalışma sayfası ve tartım miktarı.",
-        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
+        "purpose": "Bir reçeteyi yazdırmak için son seçimleriniz: reçetenin tamamı, bir tartım veya çalışma sayfası ve tartım miktarı."
       },
       "token": {
         "purpose": "Glazecalc’ın eski bir sürümünden kalma bir oturum açma belirteci. Artık hiç yazılmaz.",

@@ -171,24 +171,19 @@
         "lasts": "Totdat die proef eindig, of gehou of weggegooi word."
       },
       "settings": {
-        "purpose": "'n Instelling wat jy op hierdie blaaier verander het, sodat die volgende bladsy dit dadelik wys, voordat die bediener antwoord. <code>theme</code> en <code>palette</code> kleur die bladsy voordat dit verskyn, en <code>language</code> maak bladsye in jou taal oop.",
-        "lasts": "Totdat jy dit verander. As jy afmeld, kom wat jy gekies het terwyl jy afgemeld was terug, as daar iets was, en die res word verwyder."
+        "purpose": "'n Instelling wat jy op hierdie blaaier verander het, sodat die volgende bladsy dit dadelik wys, voordat die bediener antwoord. <code>theme</code> en <code>palette</code> kleur die bladsy voordat dit verskyn, en <code>language</code> maak bladsye in jou taal oop."
       },
       "visitor": {
-        "purpose": "Die taal wat jy gekies het, of dat jy die vertalingkennisgewing toegemaak het, terwyl jy afgemeld is, sodat dit terugkom wanneer jy afmeld.",
-        "lasts": "Totdat jy jou blaaier se berging uitvee of 'n rekening op hierdie blaaier skrap."
+        "purpose": "Die taal wat jy gekies het, of dat jy die vertalingkennisgewing toegemaak het, terwyl jy afgemeld is, sodat dit terugkom wanneer jy afmeld."
       },
       "region": {
-        "purpose": "Die streekfilter op 'n biblioteeklys.",
-        "lasts": "Totdat jy die filter terugstel na alle streke."
+        "purpose": "Die streekfilter op 'n biblioteeklys."
       },
       "includeAdditives": {
-        "purpose": "Of nuwe resepte hul bymiddels in die Seger-formule tel, soos jy laas gekies het.",
-        "lasts": "Totdat jy jou blaaier se berging uitvee."
+        "purpose": "Of nuwe resepte hul bymiddels in die Seger-formule tel, soos jy laas gekies het."
       },
       "print": {
-        "purpose": "Jou laaste keuses vir die druk van 'n resep: die hele resep, 'n mengsel of die werkblad, en die mengselgrootte.",
-        "lasts": "Totdat jy jou blaaier se berging uitvee."
+        "purpose": "Jou laaste keuses vir die druk van 'n resep: die hele resep, 'n mengsel of die werkblad, en die mengselgrootte."
       },
       "token": {
         "purpose": "'n Aanmeldtoken van 'n ou weergawe van Glazecalc. Dit word nou nooit geskryf nie.",

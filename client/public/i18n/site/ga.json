@@ -171,24 +171,19 @@
         "lasts": "Go dtí go gcríochnaíonn an triail, nó go gcoinnítear nó go scriostar í."
       },
       "settings": {
-        "purpose": "Socrú a d’athraigh tú ar an mbrabhsálaí seo, ionas go dtaispeánann an chéad leathanach eile é láithreach, sula bhfreagraíonn an freastalaí. Dathaíonn <code>theme</code> agus <code>palette</code> an leathanach sula dtaispeántar é, agus osclaíonn <code>language</code> leathanaigh i do theanga.",
-        "lasts": "Go dtí go n-athraíonn tú é. Nuair a shíníonn tú amach, cuirtear ar ais a roghnaigh tú agus tú sínithe amach, más ann dó, agus baintear an chuid eile."
+        "purpose": "Socrú a d’athraigh tú ar an mbrabhsálaí seo, ionas go dtaispeánann an chéad leathanach eile é láithreach, sula bhfreagraíonn an freastalaí. Dathaíonn <code>theme</code> agus <code>palette</code> an leathanach sula dtaispeántar é, agus osclaíonn <code>language</code> leathanaigh i do theanga."
       },
       "visitor": {
-        "purpose": "An teanga a roghnaigh tú, nó gur dhún tú fógra an aistriúcháin, agus tú sínithe amach, ionas go dtagann sé ar ais nuair a shíníonn tú amach.",
-        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí nó go scriosann tú cuntas ar an mbrabhsálaí seo."
+        "purpose": "An teanga a roghnaigh tú, nó gur dhún tú fógra an aistriúcháin, agus tú sínithe amach, ionas go dtagann sé ar ais nuair a shíníonn tú amach."
       },
       "region": {
-        "purpose": "An scagaire réigiúin ar liosta leabharlainne.",
-        "lasts": "Go dtí go gcuireann tú an scagaire ar ais go gach réigiún."
+        "purpose": "An scagaire réigiúin ar liosta leabharlainne."
       },
       "includeAdditives": {
-        "purpose": "Cé acu a áiríonn oidis nua a mbreiseáin san fhoirmle Seger nó nach n-áiríonn, mar a roghnaigh tú an uair dheireanach.",
-        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
+        "purpose": "Cé acu a áiríonn oidis nua a mbreiseáin san fhoirmle Seger nó nach n-áiríonn, mar a roghnaigh tú an uair dheireanach."
       },
       "print": {
-        "purpose": "Do roghanna deireanacha maidir le hoideas a phriontáil: an t-oideas iomlán, baisc nó an bhileog oibre, agus méid na baisce.",
-        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
+        "purpose": "Do roghanna deireanacha maidir le hoideas a phriontáil: an t-oideas iomlán, baisc nó an bhileog oibre, agus méid na baisce."
       },
       "token": {
         "purpose": "Comhartha sínithe isteach ó sheanleagan den aip Glazecalc. Ní scríobhtar anois é riamh.",

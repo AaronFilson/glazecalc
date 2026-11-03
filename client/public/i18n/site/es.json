@@ -171,24 +171,19 @@
         "lasts": "Hasta que termine el periodo de prueba, o se conserve o se descarte."
       },
       "settings": {
-        "purpose": "Un ajuste que ha cambiado en este navegador, para que la página siguiente lo muestre enseguida, antes de que responda el servidor. <code>theme</code> y <code>palette</code> dan color a la página antes de que aparezca, y <code>language</code> abre las páginas en su idioma.",
-        "lasts": "Hasta que lo cambie. Al cerrar sesión se recupera lo que eligió sin haber iniciado sesión, si eligió algo, y se quita el resto."
+        "purpose": "Un ajuste que ha cambiado en este navegador, para que la página siguiente lo muestre enseguida, antes de que responda el servidor. <code>theme</code> y <code>palette</code> dan color a la página antes de que aparezca, y <code>language</code> abre las páginas en su idioma."
       },
       "visitor": {
-        "purpose": "El idioma que eligió, o que cerró el aviso de traducción, sin haber iniciado sesión, para que vuelva cuando cierre sesión.",
-        "lasts": "Hasta que borre el almacenamiento del navegador o elimine una cuenta en este navegador."
+        "purpose": "El idioma que eligió, o que cerró el aviso de traducción, sin haber iniciado sesión, para que vuelva cuando cierre sesión."
       },
       "region": {
-        "purpose": "El filtro de región de una lista de la biblioteca.",
-        "lasts": "Hasta que vuelva a poner el filtro en todas las regiones."
+        "purpose": "El filtro de región de una lista de la biblioteca."
       },
       "includeAdditives": {
-        "purpose": "Si las recetas nuevas cuentan sus aditivos en la fórmula Seger, según lo que eligió la última vez.",
-        "lasts": "Hasta que borre el almacenamiento del navegador."
+        "purpose": "Si las recetas nuevas cuentan sus aditivos en la fórmula Seger, según lo que eligió la última vez."
       },
       "print": {
-        "purpose": "Sus últimas elecciones para imprimir una receta: la receta entera, una tanda o la hoja de trabajo, y el tamaño de la tanda.",
-        "lasts": "Hasta que borre el almacenamiento del navegador."
+        "purpose": "Sus últimas elecciones para imprimir una receta: la receta entera, una tanda o la hoja de trabajo, y el tamaño de la tanda."
       },
       "token": {
         "purpose": "Un token de inicio de sesión de una versión antigua de Glazecalc. Ya no se escribe nunca.",
