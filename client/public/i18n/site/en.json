@@ -172,23 +172,27 @@
       },
       "settings": {
         "purpose": "A setting you changed on this browser, so the next page shows it straight away, before the server answers. <code>theme</code> and <code>palette</code> color the page before it appears, and <code>language</code> opens pages in your language.",
-        "lasts": "Until you change it. Signing out puts back what you chose while signed out, if anything, and removes the rest."
+        "lasts": "Until you change it, or a year without a visit, after a notice with a button to keep it. Signing out puts back what you chose while signed out, if anything, and removes the rest."
       },
       "visitor": {
         "purpose": "The language you chose, or that you closed the translation notice, while signed out, so it comes back when you sign out.",
-        "lasts": "Until you clear your browser's storage or delete an account on this browser."
+        "lasts": "Until you clear your browser's storage or delete an account on this browser, or a year without a visit, after a notice with a button to keep it."
       },
       "region": {
         "purpose": "The region filter on a library list.",
-        "lasts": "Until you set the filter back to all regions."
+        "lasts": "Until you set the filter back to all regions, or a year without a visit, after a notice with a button to keep it."
       },
       "includeAdditives": {
         "purpose": "Whether new recipes count their additives in the unity formula, as you chose last.",
-        "lasts": "Until you clear your browser's storage."
+        "lasts": "Until you clear your browser's storage, or a year without a visit, after a notice with a button to keep it."
       },
       "print": {
         "purpose": "Your last choices for printing a recipe: the whole recipe, a batch or the worksheet, and the batch size.",
-        "lasts": "Until you clear your browser's storage."
+        "lasts": "Until you clear your browser's storage, or a year without a visit, after a notice with a button to keep it."
+      },
+      "settingsDates": {
+        "purpose": "When this browser last opened Glazecalc with the settings above, whether it has shown the notice that they will be removed, and which version of the translation notice you closed. No personal data.",
+        "lasts": "As long as any of those settings are kept here."
       },
       "token": {
         "purpose": "A sign-in token from an old version of Glazecalc. It is never written now.",

@@ -4,6 +4,7 @@ import { TestBed } from '@angular/core/testing';
 import { Meta } from '@angular/platform-browser';
 import { TRANSLOCO_LOADER, TranslocoService } from '@jsverse/transloco';
 import { of } from 'rxjs';
+import { OG_IMAGES } from '../../../lib/og-images';
 import { PAGE_LANGUAGE } from './language';
 import { provideI18n } from './provide-i18n';
 
@@ -15,6 +16,12 @@ describe('provideI18n', () => {
     en: { 'meta.description': 'A description', 'meta.imageAlt': 'A picture' },
     de: { 'meta.description': 'Eine Beschreibung', 'meta.imageAlt': 'Ein Bild' }
   };
+
+  const ENGLISH_IMAGE = 'https://glazecalcapp.com/og-image.png';
+  const image = (doc: Document) => [
+    doc.querySelector('meta[property="og:image"]')?.getAttribute('content'),
+    doc.querySelector('meta[name="twitter:image"]')?.getAttribute('content')
+  ];
 
   // A document of its own with the address given: the one the render has, not the test page's.
   const withAddress = (doc: Document, pathname: string): Document =>
@@ -31,11 +38,13 @@ describe('provideI18n', () => {
     for (const [attr, name] of [
       ['name', 'description'],
       ['property', 'og:description'],
-      ['property', 'og:image:alt']
+      ['property', 'og:image:alt'],
+      ['property', 'og:image'],
+      ['name', 'twitter:image']
     ]) {
       const tag = doc.createElement('meta');
       tag.setAttribute(attr, name);
-      tag.setAttribute('content', 'English');
+      tag.setAttribute('content', name.endsWith('image') ? ENGLISH_IMAGE : 'English');
       doc.head.append(tag);
     }
     TestBed.configureTestingModule({
@@ -76,6 +85,19 @@ describe('provideI18n', () => {
     expect(meta.getTag('name="description"')?.content).toBe('Eine Beschreibung');
     expect(doc.querySelector('meta[property="og:description"]')?.getAttribute('content')).toBe('Eine Beschreibung');
     expect(doc.querySelector('meta[property="og:image:alt"]')?.getAttribute('content')).toBe('Ein Bild');
+  });
+
+  it("writes the language's preview image, on index.html's site, when rendering", async () => {
+    const german = 'https://glazecalcapp.com/' + OG_IMAGES['de'];
+    expect(OG_IMAGES['de']).toMatch(/^og\/de\.[0-9a-f]{8}\.(png|jpg)$/);
+    expect(image(await start('/de/guides'))).toEqual([german, german]);
+    TestBed.resetTestingModule();
+    const english = 'https://glazecalcapp.com/' + OG_IMAGES['en'];
+    expect(image(await start('/guides'))).toEqual([english, english]);
+  });
+
+  it("starting in the browser leaves the server's preview image", async () => {
+    expect(image(await start('/de/guides', undefined, 'browser'))).toEqual([ENGLISH_IMAGE, ENGLISH_IMAGE]);
   });
 
   it("starting in the browser leaves the page's own description and its og:description as they are", async () => {

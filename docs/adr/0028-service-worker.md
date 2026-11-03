@@ -100,7 +100,12 @@ localStorage `offlineRecords`. `core/offline-records.interceptor.ts` writes ever
 touched copies again after any saved change, and answers from the copy only when the network fails (status 0),
 never on a 4xx or 5xx. A full fetch runs once right after the switch is turned on and at most once a day 4 s after
 load. Read-only: a banner says the records shown are the copy and when it was saved; the recipe page's Save buttons
-are off. The copy and the flag are deleted on every session end (`AuthService.onSessionEnd`: sign-out, 401, trial
+are off. Read-only is the page's (round 12): each navigation starts afresh, so a page that loads its own records
+from the server saves even after another page showed the copy; the banner's date is the page's own collection
+(the oldest on the recipe page, where preferences and prices count too; elsewhere settings alone never make a page
+read-only). When the network comes back while a copy is shown, the banner turns into "You are back online" with
+Reload, which opens the page again through the router (the recipe page still asks about unsaved changes). Trash,
+the shelf and the token pages are not copied and keep their usual fetch error offline. The copy and the flag are deleted on every session end (`AuthService.onSessionEnd`: sign-out, 401, trial
 end, email change, delete), when the switch is turned off, when another tab removes the session note, and at
 start when there is no session note (a delete another tab blocked). A copy of another user or schema is dropped.
 No app-level encryption: the browser keeps sites apart and the device encrypts its disk; a key the page holds

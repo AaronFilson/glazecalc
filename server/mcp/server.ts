@@ -25,7 +25,7 @@ import { signInChallenge } from './urls.ts';
 export const SERVER_INFO = {
   name: 'glazecalc',
   title: 'Glazecalc',
-  version: '1.3.0',
+  version: '1.4.0',
   websiteUrl: 'https://glazecalcapp.com'
 } as const;
 
@@ -136,7 +136,7 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
   withSecuritySchemes(server);
   registerPublicTools(server, caller);
   registerBlendTools(server);
-  registerCompanionTools(server);
+  registerCompanionTools(server, caller);
   registerGuides(server);
   registerPrompts(server);
   registerDictation(server);

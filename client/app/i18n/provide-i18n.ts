@@ -15,6 +15,7 @@ import {
   provideTranslocoTranspiler
 } from '@jsverse/transloco';
 import { firstValueFrom, forkJoin, map, of } from 'rxjs';
+import { ogImageFile } from '../../../lib/og-images';
 import { LANGUAGE_CODES, languageFor } from '../../../lib/regions/languages';
 import { useCodedMessages } from './coded';
 import { IcuTranspiler } from './icu-transpiler';
@@ -82,6 +83,14 @@ export function provideI18n(language?: string): Array<Provider | EnvironmentProv
           const description = translate('meta.description');
           set('name="description"', description);
           set('property="og:description"', description);
+          // The preview image in the language (scripts/og-images.mjs), on the same site as index.html's.
+          // The server writes it again for each reply, the English for a page in English only.
+          const site = meta.getTag('property="og:image"')?.content;
+          if (site) {
+            const image = new URL('/' + ogImageFile(language), site).href;
+            set('property="og:image"', image);
+            set('name="twitter:image"', image);
+          }
         }
         set('property="og:image:alt"', translate('meta.imageAlt'));
       });

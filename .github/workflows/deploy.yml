@@ -31,6 +31,11 @@ on:
         description: 'Image tag: latest or sha-<full commit SHA> (blank: this commit)'
         required: false
         type: string
+      indexnow:
+        description: 'Tell search engines (IndexNow) about changed pages afterwards'
+        required: false
+        type: boolean
+        default: true
 
 permissions: {}
 
@@ -99,3 +104,51 @@ jobs:
     with:
       url: https://glazecalcapp.com
       ref: ${{ needs.deploy.outputs.ref }}
+
+  # Tells search engines that use IndexNow (Bing and others) that pages changed,
+  # once the Live checks have passed, so they fetch a working site
+  # (scripts/indexnow.mjs): every address in the sitemap when anything a page
+  # shows changed since the last commit sent, which a cache keeps. Production
+  # only (staging.yml has no such job). It cannot fail a deploy: it runs after
+  # it, continue-on-error, and the script exits 0 whatever IndexNow answers.
+  # Skip it on a hand-run deploy with indexnow: false.
+  indexnow:
+    needs: [deploy, check]
+    if: github.event_name != 'workflow_dispatch' || inputs.indexnow != false
+    continue-on-error: true
+    runs-on: ubuntu-26.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.deploy.outputs.ref }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+
+      - name: The last commit sent
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .indexnow-last
+          # Never this run's own: the newest earlier one, by its prefix.
+          key: indexnow-${{ github.run_id }}
+          restore-keys: indexnow-
+
+      - name: Send the changed pages
+        env:
+          TO: ${{ needs.deploy.outputs.ref }}
+        run: |
+          from=$(cat .indexnow-last 2>/dev/null || true)
+          node scripts/indexnow.mjs https://glazecalcapp.com "$TO" "$from"
+          git rev-parse HEAD > .indexnow-last
+
+      - name: Keep this commit as the last sent
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .indexnow-last
+          key: indexnow-${{ github.run_id }}

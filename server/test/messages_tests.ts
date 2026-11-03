@@ -24,7 +24,8 @@ describe('messages', () => {
       made: 2,
       notMade: 1,
       log: 'Cone 6 glaze',
-      logNamed: 'yes'
+      logNamed: 'yes',
+      room: 10
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);

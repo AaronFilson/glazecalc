@@ -11,6 +11,7 @@ import { errorMessage } from '../../core/error-message';
 import { IdentityConfirm } from '../auth/identity-confirm';
 import { SectionLinks } from '../guides/guide-contents';
 import { ExportSection } from './export-section';
+import { ImportSection } from './import-section';
 import { OfflineRecordsSection } from './offline-records-section';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -43,6 +44,7 @@ type Confirming = 'password' | 'email' | 'delete';
     FieldCheck,
     FormsModule,
     IdentityConfirm,
+    ImportSection,
     NgTemplateOutlet,
     NoticesList,
     OfflineRecordsSection,
@@ -99,6 +101,7 @@ type Confirming = 'password' | 'email' | 'delete';
       <gc-settings />
       <gc-offline-records />
       <gc-export />
+      <gc-import />
       <ng-container [ngTemplateOutlet]="trash" />
       <gc-shared-recipes />
 
@@ -361,6 +364,7 @@ export class AccountPage {
   protected readonly contents = computed(() => [
     { id: 'settings-heading', label: marker('account.settings.heading') },
     { id: 'export-heading', label: marker('account.export.heading') },
+    { id: 'import-heading', label: marker('account.import.heading') },
     { id: 'trash-heading', label: marker('account.trash.heading') },
     { id: 'shared-heading', label: marker('account.shared.heading') },
     { id: 'password-heading', label: marker('account.account.changeHeading') },

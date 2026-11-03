@@ -1,5 +1,8 @@
 const { test, expect } = require('@playwright/test');
+const { default: AxeBuilder } = require('@axe-core/playwright');
 const { signUpAndSignIn } = require('./helpers');
+
+const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
 const API = 'http://localhost:' + (process.env.E2E_PORT || '3100') + '/api';
 
@@ -163,6 +166,51 @@ test('the notes, firing, material and additive pages save and remove nothing whi
     'aria-disabled',
     'true'
   );
+});
+
+test("read-only is the page's: back online the bar offers Reload, and the next page saves", async ({
+  page,
+  context
+}) => {
+  await signUpAndSignIn(page);
+  await savedRecipe(page, 'Back Online Recipe');
+  await installed(page, '/notes');
+  await turnOn(page);
+  await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Back Online Recipe']);
+  for (const path of ['/about', '/recipe']) {
+    await page.goto(path);
+    await expect(page.locator('main h1').first()).toBeVisible();
+  }
+  const backOnline = page.locator('.offline-records-back');
+  const notesSave = () => page.locator('main').getByRole('button', { name: 'Save', exact: true });
+
+  // Offline on the recipe page, then the network comes back: the bar offers to reload.
+  await context.setOffline(true);
+  await page.reload();
+  await expect(banner(page)).toBeVisible();
+  await context.setOffline(false);
+  await expect(backOnline).toBeVisible();
+  await expect(backOnline).toContainText('You are back online.');
+  // Opening Notes (in the app, not a new load): it loads fresh, so it saves and shows no bar.
+  await page.locator('header a[href="/notes"]').first().click();
+  await expect(page).toHaveURL(/\/notes$/);
+  await expect(page.locator('main h1')).toBeVisible();
+  await expect(page.locator('.offline-records-bar')).toHaveCount(0);
+  await expect(notesSave()).not.toHaveAttribute('aria-disabled', 'true');
+
+  // Offline on Notes, then back: Reload loads it again and saving is on.
+  await context.setOffline(true);
+  await page.reload();
+  await expect(banner(page)).toBeVisible();
+  await expect(notesSave()).toHaveAttribute('aria-disabled', 'true');
+  await context.setOffline(false);
+  await expect(backOnline).toBeVisible();
+  const { violations } = await new AxeBuilder({ page }).include('.offline-records-back').withTags(WCAG).analyze();
+  expect(violations.map((v) => v.id + ': ' + v.help)).toEqual([]);
+  await backOnline.getByRole('button', { name: 'Reload', exact: true }).click();
+  await expect(page).toHaveURL(/\/notes$/);
+  await expect(page.locator('.offline-records-bar')).toHaveCount(0);
+  await expect(notesSave()).not.toHaveAttribute('aria-disabled', 'true');
 });
 
 test('a sign-in without "Keep me signed in": once the browser is closed, an offline start never shows the copy', async ({

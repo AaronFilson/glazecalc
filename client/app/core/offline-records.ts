@@ -80,7 +80,10 @@ export class OfflineRecords {
   private held = false;
   /** The start-up check of the copy's session; reads wait for it. */
   private readonly ready: Promise<void> = Promise.resolve();
-  /** The copies pages show in place of the server's answers, and when each was saved. */
+  /**
+   * The copies the page on screen shows in place of the server's answers, and when each was saved. Emptied as each
+   * navigation starts (pageStarted): the next page's own requests fill it again if the network is still gone.
+   */
   private readonly shownKeys = new Map<string, Date>();
 
   /** Whether the user asked for their records to be kept on this device. */
@@ -89,6 +92,8 @@ export class OfflineRecords {
   readonly showingCopy = signal<Date | null>(null);
   /** The network failed for the user's records and there is no copy to show. */
   readonly notSaved = signal(false);
+  /** The network came back while the page shows copies: it can be loaded again to save. */
+  readonly backOnline = signal(false);
   /** Turning it on failed: this browser would not keep the copy (private browsing, no space). */
   readonly notKept = signal(false);
   /** Whether saving is off: the page shows the copy. */
@@ -113,9 +118,12 @@ export class OfflineRecords {
       if (event.key === null || ((event.key === SESSION_NOTE || event.key === RECORDS_FLAG) && event.newValue === null))
         void this.clear();
     };
-    // The network is back: refresh the copies that were shown. Pages stay read-only until they load again.
+    // The network is back: refresh the copies that were shown, and offer to load the page again. It stays
+    // read-only until it does.
     const onOnline = () => {
-      if (this.shownKeys.size) void this.refetch([...this.shownKeys.keys()]);
+      if (!this.shownKeys.size) return;
+      if (this.showingCopy()) this.backOnline.set(true);
+      void this.refetch([...this.shownKeys.keys()]);
     };
     window.addEventListener('storage', onStorage);
     window.addEventListener('online', onOnline);
@@ -264,6 +272,16 @@ export class OfflineRecords {
     } else if (this.auth.hasSession()) this.notSaved.set(true);
   }
 
+  /**
+   * A navigation starts (app.ts): what the last page showed no longer counts. Read-only, its date and the notices
+   * follow the new page's own requests.
+   */
+  pageStarted(): void {
+    this.shownKeys.clear();
+    this.showOldest();
+    this.notSaved.set(false);
+  }
+
   /** Deletes the copy and its flag. Starts at once, so it runs before any page after a sign-out shows. */
   clear(): Promise<void> {
     for (const storage of [globalThis.localStorage, globalThis.sessionStorage]) {
@@ -277,14 +295,23 @@ export class OfflineRecords {
     this.shownKeys.clear();
     this.showingCopy.set(null);
     this.notSaved.set(false);
+    this.backOnline.set(false);
     this.user = null;
     this.held = false;
     return this.drop();
   }
 
+  /**
+   * Shows the date of the oldest copy on the page. Settings (preferences, prices) alone never make a page read-only:
+   * they count only beside the recipes, whose page saves with them.
+   */
   private showOldest(): void {
-    const times = [...this.shownKeys.values()].map((date) => date.getTime());
+    const withSettings = this.shownKeys.has('recipe');
+    const times = [...this.shownKeys]
+      .filter(([key]) => withSettings || !(RECORD_SETTINGS as readonly string[]).includes(key))
+      .map(([, date]) => date.getTime());
     this.showingCopy.set(times.length ? new Date(Math.min(...times)) : null);
+    if (!times.length) this.backOnline.set(false);
   }
 
   private keeping(): boolean {

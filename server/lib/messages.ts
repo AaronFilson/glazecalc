@@ -180,6 +180,20 @@ export const MESSAGES = {
   'account-limit':
     'An account can keep up to {limit} records in all: recipes, materials, notes, firing logs and the rest together. Please remove some to save more.',
 
+  // Importing an account export (server/routes/import_routes.ts).
+  'import-not-export': 'This is not a Glazecalc data file. Please choose the JSON file from Download my data.',
+  'import-newer': 'This file was made by a newer version of Glazecalc. Please reload the page and try again.',
+  'import-too-many': 'This file holds {count} records. One import can take up to {most}. Nothing was imported.',
+  'import-invalid':
+    '{count, plural, one {# record in this file cannot be read.} other {# records in this file cannot be read.}} Nothing was imported.',
+  'import-over-limit':
+    'This import would add {count} records, but your account has room for {room} more. Nothing was imported.',
+  'import-busy': 'An import into this account is already under way. Please wait for it to finish.',
+  'import-failed': 'The import did not work because of a problem on our side. Nothing was imported.',
+  'import-done': 'The import is done.',
+  'import-undone': 'The import was taken back.',
+  'import-undo-gone': 'This import can no longer be undone.',
+
   // Share links (server/routes/share_routes.ts).
   'not-shared': 'This recipe is not shared, or the link is not complete.',
   'share-stopped': 'The recipe is no longer shared. Its link no longer opens it.',
@@ -276,7 +290,8 @@ export const MESSAGES = {
     'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
   'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT,
   'too-many-oauth': 'Too many requests to connect apps from this address. ' + WAIT,
-  'too-many-registrations': 'Too many apps registered themselves. Please try again later.'
+  'too-many-registrations': 'Too many apps registered themselves. Please try again later.',
+  'too-many-imports': 'Too many imports into this account in the last hour. Please try again later.'
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

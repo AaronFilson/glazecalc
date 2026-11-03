@@ -161,6 +161,7 @@ describe('AccountPage', () => {
     expect(headings).toEqual([
       'Settings',
       'Download my data',
+      'Import my data',
       'Trash',
       'Shared recipes',
       'Change your password',
@@ -184,6 +185,7 @@ describe('AccountPage', () => {
     expect(links.map((a) => a.textContent?.trim())).toEqual([
       'Settings',
       'Download my data',
+      'Import my data',
       'Trash',
       'Shared recipes',
       'Change your password',
@@ -198,7 +200,7 @@ describe('AccountPage', () => {
       const id = link.getAttribute('href')!.split('#')[1]!;
       expect(fixture.nativeElement.querySelector('#' + id)?.tagName).toBe('H2');
     }
-    links[5]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
+    links[6]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
     expect(document.activeElement?.id).toBe('mfa-heading');
     // One filled button at most, for a step under way: none while nothing is.
     expect(fixture.nativeElement.querySelectorAll('.btn-primary').length).toBe(0);

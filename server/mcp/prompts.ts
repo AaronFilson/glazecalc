@@ -9,8 +9,16 @@
 // tools' descriptions are, and ask for the answer in the person's language.
 import * as z from 'zod';
 import { completable, type McpServer } from '@modelcontextprotocol/server';
-import { COURSE_GUIDE, courseUnits, findUnit } from './course.ts';
-import { type Guide, type GuideSection, readGuide, sectionMarkdown, sectionUri } from './guides.ts';
+import { COURSE_GUIDE, courseUnits, findUnit, matchTopic } from './course.ts';
+import {
+  GUIDE_IDS,
+  type Guide,
+  type GuideSection,
+  readGuide,
+  searchGuides,
+  sectionMarkdown,
+  sectionUri
+} from './guides.ts';
 import { searchLibrary } from './library.ts';
 
 /** The faults the diagnosis offers by name; any other is taken as written. */
@@ -75,6 +83,17 @@ const sectionIn = (id: string, section: string, language: string | undefined) =>
   const found = guide?.sections.find((s) => s.id === section);
   return guide && found ? attached(guide, found) : null;
 };
+
+/** The learner levels teach_me takes, and how each is spoken to. */
+export const LEVELS = {
+  new: 'I am new to glaze chemistry: use plain words, and no formula notation (unity formula figures, ratios) until I ask for it.',
+  some: 'I know some glaze chemistry (what a flux, a glass former and a stabilizer are): explain the figures as you use them.',
+  experienced:
+    'I am experienced: use the unity formula, ratios and limits freely, and go into the chemistry where it helps.'
+} as const;
+
+/** The most guide sections teach_me attaches. */
+const MOST_TEACH_SECTIONS = 2;
 
 /** One blank line at most between parts. */
 const lines = (parts: string[]): string =>
@@ -393,4 +412,107 @@ export const registerPrompts = (server: McpServer): void => {
       ]
     })
   );
+
+  server.registerPrompt(
+    'teach_me',
+    {
+      title: 'Teach me about a glaze topic',
+      description:
+        "A short lesson on any glaze topic (crazing, line blends, what boron does...), at your level: plain words from Glazecalc's guides (attached), one small experiment with Glazecalc's tools, what to look for on the tile, and, where the topic matches a unit of the companion to John Britt's free glaze course, links to his videos by his titles, with credit.",
+      argsSchema: z.object({
+        topic: completable(
+          z.string().min(1).max(200).describe('What to learn about, such as "crazing", "line blends" or "boron".'),
+          (value) => topicChoices(value ?? '')
+        ),
+        level: z
+          .enum(['new', 'some', 'experienced'])
+          .optional()
+          .describe('How much glaze chemistry you know: "new" (the default), "some" or "experienced".'),
+        recipe: recipeArg.optional().describe('A recipe of yours to work with, if you have one.'),
+        cone: coneArg,
+        language: languageArg
+      })
+    },
+    ({ topic, level, recipe, cone, language }) => {
+      const unit = matchTopic(topic);
+      // The guide sections: the unit's own reads where the topic is a unit's, else the best search hits
+      // (not the companion guide itself, nor a list of sources).
+      const picked = unit
+        ? unit.reads.map((read) => ({ guide: read.guide, section: read.section }))
+        : searchGuides(topic, { language, limit: 6 }).hits.filter(
+            (hit) => hit.guide !== COURSE_GUIDE && hit.section !== 'sources'
+          );
+      const sections = picked
+        .map((hit) => sectionIn(hit.guide, hit.section, language))
+        .filter((message) => message !== null)
+        .slice(0, MOST_TEACH_SECTIONS);
+      const lab = unit?.lab === true;
+      const safety = lab ? sectionIn('safe-mixing', 'habits', language) : null;
+      const pace = LEVELS[level ?? 'new'];
+      return {
+        description: `Teach me: ${topic}`,
+        messages: [
+          user(
+            lines([
+              `Teach me about this glaze topic: ${topic}.`,
+              pace,
+              '',
+              recipe ? 'My recipe:' : '',
+              recipe ?? '',
+              recipe ? firingLine(cone) : cone ? `I fire to ${cone}.` : '',
+              '',
+              unit
+                ? `This matches unit ${unit.number} of Glazecalc's companion to John Britt's free online Glaze Course: ${unit.title} (${COURSE_GUIDE}#${unit.id}).`
+                : '',
+              unit ? "His videos for it (John Britt's own, free on YouTube, in English):" : '',
+              ...(unit ? unit.videos.map((video) => `- ${video.title}: ${video.url}`) : []),
+              '',
+              sections.length ? 'Glazecalc guide sections on it are attached.' : '',
+              '',
+              'Please:',
+              '1. Say in a sentence what the topic is and why it matters on a pot.',
+              `2. Explain it from the attached Glazecalc guide sections${sections.length ? '' : ' (search_guides finds them)'}, at my level, and cite them by their addresses. Do not go past what the guides and the tools support.`,
+              '3. Give me one small experiment with one tool call: analyze_recipe or check_limits on my recipe, vary_material (one material, 5 steps at most) or compare_recipes (before and after one change). ' +
+                (recipe
+                  ? 'Use my recipe as given: find each material with search_materials first.'
+                  : 'I have not given a recipe: ask me for one, or offer a plain one that I choose, before going on. Do not invent a recipe and present it as mine.'),
+              '4. Say which numbers moved and what that predicts on a fired tile, then what to fire and what to write down.',
+              unit
+                ? '5. List his videos above with their titles and links, credit John Britt (johnbrittpottery.com), and tell me to watch them on YouTube. Do not retell, summarise or quote what he says in them: you have not seen them, and they are his. Glazecalc is not connected with him. Link only the videos listed here; do not add others.'
+                : "5. No video of John Britt's course is matched to this topic: do not name or link one, and do not guess one. Link the Glazecalc guide sections instead.",
+              '6. Ask me one question to check I understood, then offer the next step up a level.',
+              '',
+              (lab
+                ? 'This topic is lab work: before anything else, point me to the safe mixing guide (the attached section on habits): dust, a fitted respirator, wet cleaning. '
+                : 'If the experiment leads to weighing and mixing dry materials, point me to the safe mixing guide first (dust, a fitted respirator, wet cleaning). ') +
+                'The numbers are a calculation from published figures, not a test: the fired tiles decide. ' +
+                SAFETY +
+                answerIn(language) +
+                (unit && language && !/^en(-|$)/i.test(language)
+                  ? ' His videos are in English: say so, and give their titles as he wrote them.'
+                  : '')
+            ])
+          ),
+          ...[safety, ...sections].filter((message) => message !== null)
+        ]
+      };
+    }
+  );
+};
+
+/** What teach_me's topic completes to: the course units' ids and titles, and the guides' section headings. */
+const topicChoices = (typed: string): string[] => {
+  const wanted = typed.trim().toLowerCase();
+  const choices = new Set<string>();
+  for (const unit of courseUnits()) {
+    choices.add(unit.id);
+    choices.add(unit.title);
+  }
+  for (const id of GUIDE_IDS) {
+    if (id === COURSE_GUIDE) continue;
+    for (const section of readGuide(id, 'en')?.sections ?? []) {
+      if (section.id !== 'sources') choices.add(section.heading);
+    }
+  }
+  return [...choices].filter((choice) => choice.toLowerCase().startsWith(wanted)).slice(0, 20);
 };

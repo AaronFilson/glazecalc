@@ -118,6 +118,18 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
 });
 
 /**
+ * Importing an account export (server/routes/import_routes.ts), per account,
+ * after jwtAuth: each request reads up to 20 MB and compares every record with
+ * the account's. Previews, which write nothing, 30 an hour; imports 5 an hour.
+ */
+export const importPreviews = limiter(60, 30, 'too-many-imports', {
+  keyGenerator: (req) => 'import-preview:' + String(req.user?._id)
+});
+export const imports = limiter(60, 5, 'too-many-imports', {
+  keyGenerator: (req) => 'import:' + String(req.user?._id)
+});
+
+/**
  * Access tokens (server/lib/token_auth.ts) that do not work, per address:
  * only requests that carry one are counted, and only those refused with 401.
  * A token that works is checked first and never counted or held up, so

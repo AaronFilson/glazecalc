@@ -69,6 +69,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
   { names: ['region'], kind: marker('site.privacy.storageLocal'), key: 'region' }, // shared/library-info.ts
   { names: ['includeAdditives'], kind: marker('site.privacy.storageLocal'), key: 'includeAdditives' },
   { names: ['printMode', 'printBatch'], kind: marker('site.privacy.storageLocal'), key: 'print' },
+  // core/settings-expiry.ts: when the rows above were last used; they expire after a year, after a notice.
+  { names: ['settingsDates'], kind: marker('site.privacy.storageLocal'), key: 'settingsDates' },
   { names: ['token'], kind: marker('site.privacy.storageLocal'), key: 'token' },
   { names: ['readEnglish'], kind: marker('site.privacy.storageSession'), key: 'readEnglish' }, // i18n/translation-notice.ts
   { names: ['reloadedFor'], kind: marker('site.privacy.storageSession'), key: 'reloadedFor' }, // core/stale-build.ts
@@ -102,6 +104,8 @@ marker([
   'site.privacy.keys.includeAdditives.lasts',
   'site.privacy.keys.print.purpose',
   'site.privacy.keys.print.lasts',
+  'site.privacy.keys.settingsDates.purpose',
+  'site.privacy.keys.settingsDates.lasts',
   'site.privacy.keys.token.purpose',
   'site.privacy.keys.token.lasts',
   'site.privacy.keys.readEnglish.purpose',

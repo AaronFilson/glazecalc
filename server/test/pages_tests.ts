@@ -22,6 +22,7 @@ import {
 } from '../lib/pages.ts';
 import languages from '../../lib/regions/languages.js';
 import { materialSlug } from '../../lib/material-slug.js';
+import { OG_IMAGES } from '../../lib/og-images.js';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -249,6 +250,49 @@ describe('pages in each language', () => {
     expect(html).to.include('<meta property="og:image:alt" content="Glazecalc: Verstehen Sie Ihre Glasuren" />');
     expect(html).not.to.include('See any glaze');
     expect(html).not.to.include('understand your glazes');
+  });
+
+  describe('the preview image', () => {
+    const WITH_IMAGE = HTML.replace(
+      '</head>',
+      '<meta property="og:image" content="https://glazecalcapp.com/og-image.png" />\n' +
+        '<meta name="twitter:card" content="summary_large_image" />\n' +
+        '<meta name="twitter:image" content="https://glazecalcapp.com/og-image.png" />\n</head>'
+    );
+    const images = (html: string) => [
+      /property="og:image"\s+content="([^"]*)"/.exec(html)?.[1],
+      /name="twitter:image"\s+content="([^"]*)"/.exec(html)?.[1]
+    ];
+    const german = SITE + '/' + OG_IMAGES['de'];
+    const english = SITE + '/' + OG_IMAGES['en'];
+
+    it("is the language's own, in og:image and twitter:image", () => {
+      expect(OG_IMAGES['de']).to.match(/^og\/de\.[0-9a-f]{8}\.(png|jpg)$/);
+      expect(images(pageHtml(WITH_IMAGE, '/de/', SITE, {}, ['en', 'de']))).to.deep.equal([german, german]);
+      expect(images(pageHtml(WITH_IMAGE, '/de/guides/firing', SITE, {}, ['en', 'de']))).to.deep.equal([german, german]);
+    });
+
+    it('is the English on an English page, in a language not offered, and on a page in English only', () => {
+      expect(images(pageHtml(WITH_IMAGE, '/', SITE, {}, ['en', 'de']))).to.deep.equal([english, english]);
+      expect(images(pageHtml(WITH_IMAGE, '/de/', SITE, {}, ['en']))).to.deep.equal([english, english]);
+      expect(images(pageHtml(WITH_IMAGE, '/de/guides/learn-with-john-britt', SITE, {}, ['en', 'de']))).to.deep.equal([
+        english,
+        english
+      ]);
+    });
+
+    it('keeps one twitter:card', () => {
+      expect(pageHtml(WITH_IMAGE, '/de/', SITE, {}, ['en', 'de']).match(/twitter:card/g)).to.have.length(1);
+    });
+
+    it("is in the page the server sends, with index.html's twitter:card", async function () {
+      const html = (await site().get('/de/')).text;
+      // Needs a client build (CI builds before testing; locally: npm run build).
+      if (!/property="og:image"/.test(html)) this.skip();
+      const origin = new URL(/property="og:url"\s+content="([^"]*)"/.exec(html)![1]!).origin;
+      expect(images(html)).to.deep.equal([origin + '/' + OG_IMAGES['de'], origin + '/' + OG_IMAGES['de']]);
+      expect(html.match(/name="twitter:card"/g)).to.have.length(1);
+    });
   });
 
   it("keeps a prerendered page's own title and description, and still writes its address and languages", () => {

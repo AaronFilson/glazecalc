@@ -3,8 +3,10 @@
 // the tools it reuses (analyze_recipe, blend_recipes) so the three never disagree.
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
+import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
-import { COURSE_GUIDE, courseUnits } from '../mcp/course.ts';
+import { COURSE_GUIDE, courseUnits, matchTopic, UNIT_KEYWORDS } from '../mcp/course.ts';
+import { EXPANSION_FIT_FLAG, fluxRatioOf } from '../mcp/tools/companion.ts';
 import { base, expect } from './support/app.ts';
 
 let id = 0;
@@ -471,6 +473,270 @@ describe('MCP: the companion prompts', () => {
       clientInfo: { name: 'test', version: '1' }
     });
     expect(answer.body.result.instructions).to.include('vary_material').and.to.include('compare_recipes');
+  });
+});
+
+describe('the teaching companion: matchTopic (server/mcp/course.ts)', () => {
+  it('finds a unit by its id, number or title, in any case or accent', () => {
+    expect(matchTopic('blending')?.id).to.equal('blending');
+    expect(matchTopic('unit 3')?.id).to.equal('oxides');
+    expect(matchTopic('12')?.id).to.equal('firing');
+    expect(matchTopic('  THE UNITY FORMULA ')?.id).to.equal('unity-formula');
+    expect(matchTopic('Tell me about limits and the Stull chart please')?.id).to.equal('limits-and-stull');
+  });
+
+  it('finds a unit by its keywords, by the start of a word', () => {
+    expect(matchTopic('line blends')?.id).to.equal('blending');
+    expect(matchTopic('a triaxial blend')?.id).to.equal('blending');
+    expect(matchTopic('what is a shino?')?.id).to.equal('special-surfaces');
+    expect(matchTopic('Gerstley Borate substitutes')?.id).to.equal('recipes-and-substitutes');
+    expect(matchTopic('specific gravity of my slurry')?.id).to.equal('slurry-and-application');
+    expect(matchTopic('reduction firing in a gas kiln')?.id).to.equal('firing');
+    expect(matchTopic('copper reds')?.id).to.equal('color-in-bases');
+    expect(matchTopic('wild clay')?.id).to.equal('clay');
+  });
+
+  it('matches nothing rather than guess: no video for a topic no unit covers', () => {
+    expect(matchTopic('')).to.equal(undefined);
+    expect(matchTopic('   ')).to.equal(undefined);
+    expect(matchTopic('how to price my mugs at a market')).to.equal(undefined);
+    expect(matchTopic('unit 99')).to.equal(undefined);
+    // A keyword inside another word is not a match: "rust" is not at the start of "trust".
+    expect(matchTopic('trust')).to.equal(undefined);
+  });
+
+  it('every unit has keywords and every keyword list names a unit of the guide', () => {
+    const ids = courseUnits().map((unit) => unit.id);
+    expect(ids).to.have.length(12);
+    expect(Object.keys(UNIT_KEYWORDS).sort()).to.eql([...ids].sort());
+  });
+
+  it('takes the units it is given, so it can be checked without the guide', () => {
+    const units = [{ id: 'glazes', number: 1, title: 'Glazes', videos: [], reads: [], exercises: [], lab: false }];
+    expect(matchTopic('glazes', units)?.id).to.equal('glazes');
+    expect(matchTopic('line blends', units)).to.equal(undefined);
+  });
+});
+
+describe('MCP: the round 12 companion additions', () => {
+  const MATTE = [
+    { material: 'Custer Spar', amount: 30 },
+    { material: 'Dolomite', amount: 25 },
+    { material: 'EPK', amount: 25 },
+    { material: 'Silica', amount: 20 }
+  ];
+  const groups = chemistry.OXIDE_GROUPS as Record<string, string>;
+  const sumOf = (fluxes: Record<string, number>, group: string) =>
+    sum(
+      Object.entries(fluxes)
+        .filter(([oxide]) => groups[oxide] === group)
+        .map(([, amount]) => amount)
+    );
+
+  it('fluxRatioOf sums the alkalis against the RO fluxes, null with none', () => {
+    expect(fluxRatioOf({ K2O: 0.2, Na2O: 0.1, CaO: 0.6, MgO: 0.1 })).to.eql({ R2O: 0.3, RO: 0.7 });
+    expect(fluxRatioOf({})).to.equal(null);
+    expect(fluxRatioOf(undefined)).to.equal(null);
+  });
+
+  it('vary_material: a flux ratio on every tile, and its R2O share in the trend', async () => {
+    const result = await data('vary_material', { recipe: BASE, material: 'Whiting', to: 20 });
+    for (const tile of result.tiles) {
+      expect(tile.fluxRatio.R2O, 'tile ' + tile.number).to.be.closeTo(sumOf(tile.unity.fluxes, 'R2O'), 0.003);
+      expect(tile.fluxRatio.RO, 'tile ' + tile.number).to.be.closeTo(sumOf(tile.unity.fluxes, 'RO'), 0.003);
+    }
+    // More whiting: more lime, so the alkalis' share falls.
+    expect(result.trend.fluxRatio).to.include({ direction: 'falls' });
+    expect(result.trend.fluxRatio.first).to.equal(result.tiles[0].fluxRatio.R2O);
+  });
+
+  it('vary_material: firstCaution and firstConeFitChange are the first tiles where they happen', async () => {
+    for (const args of [
+      { recipe: BASE, material: 'Whiting', to: 40, steps: 11, firing: { cone: '6' } },
+      { recipe: BASE, material: 'Ferro Frit 3134', to: 60, steps: 7, firing: { cone: '10' } },
+      { recipe: BASE, material: 'Silica', to: 60, steps: 6, firing: { cone: '04' } }
+    ]) {
+      const result = await data('vary_material', args);
+      const tiles: Json[] = result.tiles;
+      const start: string[] = tiles[0]!.cautions;
+      const cautionAt = tiles.find((tile) => tile.cautions.some((c: string) => !start.includes(c)));
+      if (cautionAt) {
+        expect(result.trend.firstCaution, JSON.stringify(args)).to.eql({
+          tile: cautionAt.number,
+          cautions: cautionAt.cautions.filter((c: string) => !start.includes(c))
+        });
+      } else {
+        expect(result.trend, JSON.stringify(args)).to.not.have.property('firstCaution');
+      }
+      const fitAt = tiles.find((tile) => tile.coneFit !== tiles[0]!.coneFit);
+      if (fitAt) {
+        expect(result.trend.firstConeFitChange).to.eql({
+          tile: fitAt.number,
+          from: tiles[0]!.coneFit,
+          to: fitAt.coneFit
+        });
+      } else {
+        expect(result.trend).to.not.have.property('firstConeFitChange');
+      }
+    }
+    // Without a firing there is no cone fit, so no change in it.
+    const unfired = await data('vary_material', { recipe: BASE, material: 'Whiting', to: 40, steps: 5 });
+    expect(unfired.trend).to.not.have.property('firstConeFitChange');
+  });
+
+  it('compare_recipes: a summary of what matters, from each side', async () => {
+    const result = await data('compare_recipes', { a: WITH_WHITING, b: MATTE, firing: { cone: '6' } });
+    const { a, b, summary } = result;
+    expect(summary.fluxRatio).to.eql({
+      a: a.fluxRatio,
+      b: b.fluxRatio,
+      change: Number((b.fluxRatio.R2O - a.fluxRatio.R2O).toFixed(3))
+    });
+    expect(summary.silicaToAlumina).to.include({ a: a.silicaToAlumina, b: b.silicaToAlumina });
+    expect(summary.SiO2).to.include({ a: a.unity.SiO2, b: b.unity.SiO2 });
+    expect(summary.Al2O3).to.include({ a: a.unity.Al2O3, b: b.unity.Al2O3 });
+    expect(summary.B2O3).to.include({ a: 0, b: 0, change: 0 });
+    expect(summary.expansion).to.include({ a: a.expansion, b: b.expansion, fitThreshold: EXPANSION_FIT_FLAG });
+    expect(summary.expansion.change).to.be.closeTo(b.expansion - a.expansion, 0.011);
+    expect(summary.expansion.fitFlag).to.equal(Math.abs(summary.expansion.change) >= 0.3);
+    if (summary.expansion.fitFlag) expect(summary.expansion.fitNote).to.include('test both');
+    expect(summary.stull).to.eql({ a: a.stull.region, b: b.stull.region });
+    expect(summary.cautions.onlyA).to.eql(a.cautions.filter((c: string) => !b.cautions.includes(c)));
+    expect(summary.cautions.onlyB).to.eql(b.cautions.filter((c: string) => !a.cautions.includes(c)));
+    expect(summary.coneFit).to.eql({ a: a.coneFit, b: b.coneFit });
+    // Without a firing, no cone fit in the summary.
+    expect((await data('compare_recipes', { a: WITH_WHITING, b: MATTE })).summary).to.not.have.property('coneFit');
+  });
+
+  it('compare_recipes: the expansion flag is raised at a difference of 0.3 or more, not below', async () => {
+    // The same recipe twice: no change, no flag.
+    const same = await data('compare_recipes', { a: BASE, b: BASE });
+    expect(same.summary.expansion).to.include({ change: 0, fitFlag: false });
+    expect(same.summary.expansion).to.not.have.property('fitNote');
+    // Much more soda feldspar against much more silica: a large difference, flagged.
+    const far = await data('compare_recipes', {
+      a: [
+        { material: 'Silica', amount: 40 },
+        { material: 'Whiting', amount: 20 },
+        { material: 'EPK', amount: 20 },
+        { material: 'Custer Spar', amount: 20 }
+      ],
+      b: [
+        { material: 'Nepheline Syenite', amount: 60 },
+        { material: 'Whiting', amount: 10 },
+        { material: 'EPK', amount: 10 },
+        { material: 'Silica', amount: 20 }
+      ]
+    });
+    expect(Math.abs(far.summary.expansion.change)).to.be.at.least(0.3);
+    expect(far.summary.expansion.fitFlag).to.equal(true);
+  });
+
+  it('compare_recipes: by recipe id only signed in, and never with both lines and an id', async () => {
+    expect(await refused('compare_recipes', { aRecipeId: '0123456789abcdef01234567', b: MATTE })).to.include(
+      'Sign in to Glazecalc'
+    );
+    expect(await refused('compare_recipes', { a: BASE, aRecipeId: '0123456789abcdef01234567', b: MATTE })).to.include(
+      'not both'
+    );
+    expect(await refused('compare_recipes', { a: BASE })).to.include('Give Recipe B');
+    expect((await call('compare_recipes', { a: BASE, bRecipeId: 'x'.repeat(41) })).isError).to.equal(true);
+  });
+
+  it('both tools declare an output schema, and their answers keep to it', async () => {
+    const tools: Json[] = (await rpc('tools/list')).body.result.tools;
+    const vary = tools.find((t) => t.name === 'vary_material')!;
+    const compare = tools.find((t) => t.name === 'compare_recipes')!;
+    expect(vary.outputSchema.type).to.equal('object');
+    expect(vary.outputSchema.properties).to.include.keys('tiles', 'trend', 'note');
+    expect(compare.outputSchema.properties).to.include.keys('a', 'b', 'differences', 'materials', 'summary');
+    expect(compare.inputSchema.properties).to.include.keys('aRecipeId', 'bRecipeId');
+    expect(compare.inputSchema.required ?? []).to.not.include('a');
+    // The SDK checks each answer against the schema: a range of answers comes back, not a validation error.
+    for (const args of [
+      { recipe: BASE, material: 'Whiting', to: 20, firing: { cone: '14' } },
+      {
+        recipe: WITH_WHITING,
+        material: 'Dolomite',
+        to: 10,
+        mode: 'replace',
+        instead: 'Whiting',
+        limitSet: 'hesselberth-roy'
+      }
+    ]) {
+      await data('vary_material', args);
+    }
+    await data('compare_recipes', { a: WITH_WHITING, b: MATTE, labels: ['One', 'Two'], firing: { cone: '14' } });
+  });
+});
+
+describe('MCP: teach_me', () => {
+  const prompt = async (args: object): Promise<Json> => {
+    const answer = await rpc('prompts/get', { name: 'teach_me', arguments: args });
+    expect(answer.body.error, JSON.stringify(answer.body.error)).to.equal(undefined);
+    return answer.body.result as Json;
+  };
+
+  it('links the matched unit’s videos by his titles, with credit, and never retells them', async () => {
+    const got = await prompt({ topic: 'line blends', language: 'de' });
+    const text: string = got.messages[0].content.text;
+    const unit = courseUnits().find((u) => u.id === 'blending')!;
+    for (const video of unit.videos) expect(text).to.include(`- ${video.title}: ${video.url}`);
+    for (const part of [
+      'unit 5',
+      'johnbrittpottery.com',
+      'Do not retell, summarise or quote',
+      'not connected with him',
+      'do not add others',
+      'His videos are in English',
+      'language: "de"',
+      'leach test',
+      'safe mixing guide'
+    ]) {
+      expect(text).to.include(part);
+    }
+    expect(got.description).to.equal('Teach me: line blends');
+    // Lab work: the safe mixing habits come attached, with the unit's guide sections (two at most).
+    const resources = got.messages.slice(1).map((m: Json) => m.content.resource.uri as string);
+    expect(resources[0]).to.include('safe-mixing/habits');
+    expect(resources.length).to.be.within(2, 3);
+  });
+
+  it('with no matching unit: no video at all, the guide sections attached instead', async () => {
+    const got = await prompt({ topic: 'pinholes in my glaze' });
+    const text: string = got.messages[0].content.text;
+    expect(text).to.not.include('youtube.com');
+    expect(text).to.include('do not guess one');
+    expect(text).to.not.include('His videos');
+    const resources = got.messages.slice(1);
+    expect(resources.length).to.be.within(1, 2);
+    for (const message of resources) expect(message.content.resource.uri).to.not.include(COURSE_GUIDE);
+  });
+
+  it('speaks to the level asked for, new by default, and never invents a recipe', async () => {
+    const plain = (await prompt({ topic: 'boron' })).messages[0].content.text as string;
+    expect(plain).to.include('I am new to glaze chemistry');
+    expect(plain).to.include('Do not invent a recipe');
+    const expert = (
+      await prompt({ topic: 'boron', level: 'experienced', recipe: 'Custer Spar 40, Silica 30', cone: '6' })
+    ).messages[0].content.text as string;
+    expect(expert).to.include('I am experienced');
+    expect(expert).to.include('My recipe:');
+    expect(expert).to.include('fired to 6');
+    expect(expert).to.include('Use my recipe as given');
+    expect(expert).to.not.include('Do not invent');
+    const bad = await rpc('prompts/get', { name: 'teach_me', arguments: { topic: 'boron', level: 'guru' } });
+    expect(bad.body.error).to.have.property('code');
+    const long = await rpc('prompts/get', { name: 'teach_me', arguments: { topic: 'x'.repeat(201) } });
+    expect(long.body.error).to.have.property('code');
+  });
+
+  it('completes the topic from the units and the guides’ headings', async () => {
+    const answer = await rpc('completion/complete', {
+      ref: { type: 'ref/prompt', name: 'teach_me' },
+      argument: { name: 'topic', value: 'blen' }
+    });
+    expect(answer.body.result.completion.values).to.include('blending');
   });
 });
 
