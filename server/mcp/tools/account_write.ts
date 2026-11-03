@@ -81,6 +81,7 @@ import {
   TRASH_FULL,
   type TokenActor
 } from '../../lib/record_history.ts';
+import { revFilter, revOf, withBump } from '../../lib/record_rev.ts';
 import { allows, type Area, type Permission } from '../../lib/scopes.ts';
 import { stopSharing } from '../../lib/share_links.ts';
 import Additive from '../../models/additive.ts';
@@ -107,6 +108,7 @@ import {
   type RecipeLine
 } from '../common.ts';
 import { findAdditive, findMaterial, libraryIdOf, nameKey } from '../library.ts';
+import { conflictText, staleProblem } from '../stale.ts';
 import { isConfirmState, requestStateCodec, type ConfirmState } from '../request_state.ts';
 import { chemistryText } from '../words.ts';
 import { DICTATION_TOOLS, describeDictation, dictationWork, registerDictationTools } from './dictation_write.ts';
@@ -178,6 +180,14 @@ const colorantsArg = z
   .describe(
     'Colorants and opacifiers added to the base, as the recipe page lists them; left out of the unity formula.'
   );
+const revArg = z
+  .number()
+  .int()
+  .min(0)
+  .optional()
+  .describe(
+    'The record’s rev as you last read it. When given, the change is made only if the record has not changed since; otherwise nothing is changed. Left out, the change is always made.'
+  );
 const namesArg = z
   .array(
     z
@@ -200,6 +210,7 @@ const createRecipeInput = z.object({
 });
 const updateRecipeInput = z.object({
   id: idArg.describe('The recipe, from list_recipes.'),
+  rev: revArg,
   title: titleArg.optional(),
   lines: linesArg.optional().describe('All of its base materials, in place of the ones it has.'),
   notes: notesArg.optional().describe('Its notes, in place of the ones it has.'),
@@ -227,6 +238,7 @@ const addMaterialInput = z.object({
 });
 const updateMaterialInput = z.object({
   id: idArg.describe('The material, from list_my_materials.'),
+  rev: revArg,
   name: z.string().trim().min(1).max(100).optional(),
   analysis: analysisArg.optional(),
   loi: z.number().min(0).max(99.9).optional(),
@@ -237,7 +249,8 @@ const shelfInput = z.object({ materials: namesArg.describe('The materials, by na
 const undoShelfInput = z.object({});
 const trashInput = z.object({
   kind: z.enum(['recipe', 'material', 'note', 'firing']).describe('What it is: a note is a notebook entry.'),
-  id: idArg.describe('Its id, from list_recipes, list_my_materials, list_notes or list_firings.')
+  id: idArg.describe('Its id, from list_recipes, list_my_materials, list_notes or list_firings.'),
+  rev: revArg
 });
 
 type CreateRecipeArgs = z.infer<typeof createRecipeInput>;
@@ -415,13 +428,15 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         includeAdditives: false,
         ...(firing && { firing }),
         ...(foodSurface && { foodSurface: true }),
-        ownedBy: userId
+        ownedBy: userId,
+        rev: 0,
+        updatedAt: new Date()
       });
       await logActivityBy(actor, userId, 'create', 'recipes', saved.toObject());
       return ok({ id: String(saved._id), title: saved.title, saved: true, analysis });
     },
 
-    update_recipe: async ({ id, title, lines, notes, firing, foodSurface, language }: UpdateRecipeArgs) => {
+    update_recipe: async ({ id, rev, title, lines, notes, firing, foodSurface, language }: UpdateRecipeArgs) => {
       const lang = languageOf(language);
       await mayChange('recipes:write');
       const changes: Record<string, unknown> = {
@@ -440,16 +455,17 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       if (!Object.keys(changes).length) throw new ToolProblem('Give at least one thing to change.');
       const mine = { _id: mongoose.isObjectIdOrHexString(id) ? id : null, ownedBy: userId };
       // A recipe that counts its colorants in its unity formula is worked out on the recipe page.
-      const filter = lines ? { ...mine, includeAdditives: { $ne: true } } : mine;
+      const filter = { ...(lines ? { ...mine, includeAdditives: { $ne: true } } : mine), ...revFilter(rev) };
       // The recipe as it was, found and changed in one step, so the version kept is the one changed.
       const before = mine._id
-        ? await Recipe.findOneAndUpdate(
-            filter,
-            { $set: changes },
-            { runValidators: true, returnDocument: 'before', lean: true }
-          )
+        ? await Recipe.findOneAndUpdate(filter, withBump(changes), {
+            runValidators: true,
+            returnDocument: 'before',
+            lean: true
+          })
         : null;
       if (!before) {
+        if (mine._id && rev !== undefined) await staleProblem(Recipe, mine, rev, 'recipe');
         if (mine._id && lines && (await Recipe.exists(mine))) {
           throw new ToolProblem(
             'This recipe counts its colorants in its unity formula, so its materials can be changed only on the recipe page. Nothing was changed.'
@@ -462,6 +478,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       return ok({
         id: String(before._id),
         title: (changes.title as string | undefined) ?? before.title,
+        rev: revOf(before) + 1,
         changed: Object.keys(changes).filter((key) => key !== 'computed'),
         undo: 'The recipe as it was is kept as an earlier version: Undo on its page on the website puts it back.',
         ...(analysis && { analysis })
@@ -485,7 +502,9 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         content,
         relatedCollection: about && related ? related.collection : 'Notes',
         relatedId: about ? about.id : 'general notes',
-        ownedBy: userId
+        ownedBy: userId,
+        rev: 0,
+        updatedAt: new Date()
       });
       await logActivityBy(actor, userId, 'create', 'notes', saved.toObject());
       return ok({ id: String(saved._id), ...(saved.title && { title: saved.title }), saved: true });
@@ -502,7 +521,14 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         loi: loi ?? 0
       });
       await needRoom(Material, 'material');
-      const saved = await Material.create({ name, ...worked, ...(notes && { notes: [notes] }), ownedBy: userId });
+      const saved = await Material.create({
+        name,
+        ...worked,
+        ...(notes && { notes: [notes] }),
+        ownedBy: userId,
+        rev: 0,
+        updatedAt: new Date()
+      });
       await logActivityBy(actor, userId, 'create', 'materials', saved.toObject());
       return ok({
         id: String(saved._id),
@@ -512,7 +538,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       });
     },
 
-    update_my_material: async ({ id, name, analysis, loi, notes, language }: UpdateMaterialArgs) => {
+    update_my_material: async ({ id, rev, name, analysis, loi, notes, language }: UpdateMaterialArgs) => {
       const lang = languageOf(language);
       await mayChange('materials:write');
       if (name === undefined && analysis === undefined && loi === undefined && notes === undefined) {
@@ -544,16 +570,20 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         warnings = warningCodes.map((w) => warningOut(w, lang));
       }
       // Found and changed in one step, so the version kept is the one changed.
-      const before = await Material.findOneAndUpdate(
-        mine,
-        { $set: changes },
-        { runValidators: true, returnDocument: 'before', lean: true }
-      );
-      if (!before) throw new ToolProblem(`No material with id ${id} in your account.`);
+      const before = await Material.findOneAndUpdate({ ...mine, ...revFilter(rev) }, withBump(changes), {
+        runValidators: true,
+        returnDocument: 'before',
+        lean: true
+      });
+      if (!before) {
+        if (rev !== undefined) await staleProblem(Material, mine, rev, 'material');
+        throw new ToolProblem(`No material with id ${id} in your account.`);
+      }
       await saveVersion('materials', before, actor.via, { tokenId });
       await logActivityBy(actor, userId, 'change', 'materials', { ...before, ...changes });
       return ok({
         id: String(before._id),
+        rev: revOf(before) + 1,
         name: (changes.name as string | undefined) ?? before.name,
         changed: Object.keys(changes).filter((key) => ['name', 'notes', 'fields', 'loi'].includes(key)),
         undo: 'The material as it was is kept as an earlier version: Undo on the Materials page puts it back.',
@@ -610,7 +640,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       return ok({ restored: true, materialsOnShelf: shelf.length });
     },
 
-    move_to_trash: async ({ kind, id }: TrashArgs) => {
+    move_to_trash: async ({ kind, id, rev }: TrashArgs) => {
       const { Model, area } = TRASHABLE[kind]!;
       await mayChange(`${area}:write`);
       if (!(await countTokenDelete(tokenId))) {
@@ -619,7 +649,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         );
       }
       const user = mongoose.isObjectIdOrHexString(id) ? await User.findById(userId) : null;
-      const trashed = user ? await moveToTrash(Model, area, user, id, actor.via, tokenId) : null;
+      const trashed = user ? await moveToTrash(Model, area, user, id, actor.via, tokenId, new Date(), rev) : null;
       if (!trashed)
         throw new ToolProblem(`No ${kind === 'note' ? 'notebook entry' : kind} with id ${id} in your account.`);
       if (trashed === TRASH_FULL) {
@@ -627,6 +657,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
           'Nothing was moved: the Trash is full, so an access token cannot move anything more to it. The person can empty some of it on the website first.'
         );
       }
+      if ('conflict' in trashed) throw new ToolProblem(conflictText(kind, trashed.conflict));
       // Its share link stops working, and stays stopped if it is put back (as record_routes' onTrash).
       if (kind === 'recipe') await stopSharing(id, userId);
       await logActivityBy(actor, userId, 'trash', area, trashed.record);

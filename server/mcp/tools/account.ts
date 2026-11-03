@@ -15,6 +15,7 @@ import results from '../../../lib/cones/results.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
 import { liveLinks, type Link } from '../../lib/firing_links.ts';
+import { revOf } from '../../lib/record_rev.ts';
 import { allows, type Permission } from '../../lib/scopes.ts';
 import Firing from '../../models/firing.ts';
 import Material from '../../models/material.ts';
@@ -172,7 +173,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               `"${cone}" is not a cone of the ${coneScale} scale. Orton cones run 022 … 01, then 1 … 42 (half cones as "5.5"); SK cones as printed ("6a", "8"); a temperature in whole °C.`
             );
           }
-          const projection = { title: 1, date: 1, materials: 1, firedAt: 1 };
+          const projection = { title: 1, date: 1, materials: 1, firedAt: 1, rev: 1 };
           let found;
           let total;
           if (cone === undefined) {
@@ -201,6 +202,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               const firedAt = firingOut(r.firedAt);
               return {
                 id: String(r._id),
+                rev: revOf(r),
                 title: r.title,
                 ...(r.date && { date: r.date }),
                 ...(firedAt && { firedAt }),
@@ -272,6 +274,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           }
           return ok({
             id: String(found._id),
+            rev: revOf(found),
             title: found.title,
             ...(found.date && { date: found.date }),
             ...(textOf(found.notes) && { notes: textOf(found.notes) }),
@@ -328,6 +331,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             total,
             materials: found.map((m) => ({
               id: String(m._id),
+              rev: revOf(m),
               name: m.name,
               oxides: oxidesOf(m as unknown as MaterialRecord),
               oxidesAre: m.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
@@ -401,7 +405,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           const filter: Record<string, unknown> = { ownedBy: userId };
           if (search) filter.$or = [{ title: containing(search) }, { kiln: containing(search) }];
           const total = await Firing.countDocuments(filter);
-          const found = await Firing.find(filter, { title: 1, date: 1, kiln: 1, rows: 1 })
+          const found = await Firing.find(filter, { title: 1, date: 1, kiln: 1, rows: 1, rev: 1 })
             .sort({ _id: -1 })
             .skip(offset ?? 0)
             .limit(limit ?? 25)
@@ -410,6 +414,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             total,
             firings: found.map((f) => ({
               id: String(f._id),
+              rev: revOf(f),
               title: f.title,
               ...(f.date && { date: f.date }),
               ...(f.kiln && { kiln: f.kiln }),
@@ -433,6 +438,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           const f = await ownRecord(Firing, id, userId, 'firing log');
           return ok({
             id: String(f._id),
+            rev: revOf(f),
             title: f.title,
             ...(f.date && { date: f.date }),
             ...(f.kiln && { kiln: f.kiln }),
@@ -479,6 +485,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             total,
             notes: found.map((n) => ({
               id: String(n._id),
+              rev: revOf(n),
               ...(n.title && { title: n.title }),
               content: n.content,
               about: { kind: n.relatedCollection, id: n.relatedId }

@@ -14,6 +14,9 @@ const materialSchema = new mongoose.Schema({
   name: { type: String, required: true },
   percentmole: { type: String, required: true },
   rawformula: String,
+  // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
+  rev: { type: Number, default: 0 },
+  updatedAt: Date,
   ...libraryInfo
 });
 

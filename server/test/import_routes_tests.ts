@@ -28,7 +28,7 @@ const exportOf = async (token: string): Promise<Row> =>
 /** A record's content without ids and owners, as two accounts' copies compare. */
 const content = (record: Row): Row => {
   // Ids at every depth: a recipe line's copy of its material drops the other account's owner too.
-  const dropped = new Set(['_id', '__v', 'firing', 'ownedBy', 'relatedId']);
+  const dropped = new Set(['_id', '__v', 'firing', 'ownedBy', 'relatedId', 'rev', 'updatedAt']);
   return JSON.parse(JSON.stringify(record, (key, value) => (dropped.has(key) ? undefined : value)));
 };
 
@@ -122,6 +122,16 @@ describe('import API', () => {
     }
   });
 
+  it('adds records at rev 0 and counts the changes it makes to the preferences and prices', async () => {
+    const file = await exportOf(alice.token);
+    await post('/import', bob.token, { file, include: { preferences: true, prices: true } });
+    const added = await Recipe.findOne({ ownedBy: String(bob.user._id) }).lean();
+    expect(added!.rev).to.equal(0);
+    expect(added!.updatedAt).to.be.instanceOf(Date);
+    const user = (await User.findById(bob.user._id).lean()) as unknown as { prefsRev?: number; pricesRev?: number };
+    expect([user.prefsRev, user.pricesRev]).to.eql([1, 1]);
+  });
+
   it('adds nothing when the same file is imported twice', async () => {
     const file = await exportOf(alice.token);
     await post('/import', bob.token, { file });
@@ -187,6 +197,16 @@ describe('import API', () => {
       const undone = await post('/recipe/undo/' + bobRecipe, bob.token, {});
       expect(undone).to.have.status(200);
       expect((await Recipe.findById(bobRecipe).lean())!.notes).to.eql(['fires satin']);
+    });
+
+    it('counts a replace as a change to the record, and an Undo of the import as another', async () => {
+      expect((await Recipe.findById(bobRecipe).lean())!.rev).to.equal(0);
+      const res = await post('/import', bob.token, { file, choices: { 'recipes:0': 'replace' } });
+      const replaced = await Recipe.findById(bobRecipe).lean();
+      expect(replaced!.rev).to.equal(1);
+      expect(replaced!.updatedAt).to.be.instanceOf(Date);
+      await post('/import/undo/' + res.body.importId, bob.token, {});
+      expect((await Recipe.findById(bobRecipe).lean())!.rev).to.equal(2);
     });
 
     it('is put back as it was by Undo this import', async () => {

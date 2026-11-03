@@ -590,6 +590,35 @@ describe('recipe firing (API)', () => {
       expect(cleared.body.firings).to.eql([{ firing: b }]);
     });
 
+    it('counts linking, noting and unlinking as changes to the recipe, so a stale save is refused', async () => {
+      const a = await newLog('A');
+      const saved = (await create(recipe)).body._id as string;
+      const revOf = async () => (await Recipe.findById(saved).lean())!.rev;
+      expect(await revOf()).to.equal(0);
+      await link(saved, a);
+      expect(await revOf()).to.equal(1);
+      // Linking it again changes nothing, so it counts nothing.
+      await link(saved, a);
+      expect(await revOf()).to.equal(1);
+      await api()
+        .put(`/recipe/firings/${saved}/${a}`)
+        .set('Authorization', 'Bearer ' + token)
+        .send({ result: 'glossy' });
+      expect(await revOf()).to.equal(2);
+      await api()
+        .delete(`/recipe/firings/${saved}/${a}`)
+        .set('Authorization', 'Bearer ' + token);
+      expect(await revOf()).to.equal(3);
+      // A save made from the recipe as it was before the links is now stale.
+      const stale = await api()
+        .put('/recipe/change/' + saved)
+        .set('Authorization', 'Bearer ' + token)
+        .set('If-Match', '"0"')
+        .send({ recipe: { title: 'Old copy' } });
+      expect(stale).to.have.status(409);
+      expect(stale.body.record.rev).to.equal(3);
+    });
+
     it("refuses another account's recipe or log, a bad id and too long a result", async () => {
       const mine = await newLog();
       const saved = (await create(recipe)).body._id as string;

@@ -8,6 +8,7 @@ import mongoose from 'mongoose';
 import app from './app.ts';
 import { reapplyDeletions } from './lib/account_data.ts';
 import { dateOldTrash } from './lib/record_history.ts';
+import { addMissingRevs } from './lib/record_rev_migration.ts';
 import * as guestSweeper from './lib/guest_sweeper.ts';
 import * as tokenReminders from './lib/token_reminders.ts';
 import * as log from './lib/log.ts';
@@ -41,6 +42,14 @@ const start = async () => {
     if (dated) log.info('Dated old Trash entries', { count: dated });
   } catch (err) {
     log.error('Could not date old Trash entries', { err });
+  }
+
+  // Records and accounts from before revisions get a rev of 0 (a missing one reads as 0, so this can fail safely).
+  try {
+    const { records, accounts } = await addMissingRevs();
+    if (records || accounts) log.info('Gave revisions to older records', { records, accounts });
+  } catch (err) {
+    log.error('Could not give revisions to older records', { err });
   }
 
   // Each model builds its indexes once connected. One that cannot be built (an

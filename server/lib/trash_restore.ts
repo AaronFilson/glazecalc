@@ -4,6 +4,7 @@ import { OWNED_KINDS } from './account_data.ts';
 import { giveBack, makeRoom, type RecordModel } from './guest_limits.ts';
 import { isDuplicateKey } from './mongo_errors.ts';
 import { keepVersions } from './record_history.ts';
+import { revOf } from './record_rev.ts';
 import { stopSharing } from './share_links.ts';
 import type { say } from './messages.ts';
 import Trash from '../models/trash.ts';
@@ -49,7 +50,9 @@ export const putBackEntry = async (user: UserDocument, entryId: string): Promise
     // Taken out of the Trash in one step, so two requests at once cannot both put it back.
     const taken = await Trash.findOneAndDelete({ _id: entry._id, ownedBy }).lean();
     if (taken?.recordId && taken.record) {
-      const record = { ...(taken.record as Record<string, unknown>), _id: taken.recordId, ownedBy };
+      const trashed = taken.record as Record<string, unknown>;
+      // Putting it back is a change: a copy made before it was trashed is at an earlier revision.
+      const record = { ...trashed, _id: taken.recordId, ownedBy, rev: revOf(trashed) + 1, updatedAt: new Date() };
       try {
         // A recipe never comes back shared, whether or not its link was stopped when it went (or one was made
         // since); taken away before it is back, so there is no moment it is both.

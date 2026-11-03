@@ -35,6 +35,7 @@ import User, { mfaOn, PREFERENCES, SHELF_KEY_LONGEST, type Preferences, type Pri
 import { isPrice } from '../../lib/recipe/cost.js';
 import regions from '../../lib/regions/index.js';
 import { say } from '../lib/messages.ts';
+import { counterOf } from '../lib/record_rev.ts';
 
 const userRouter = express.Router();
 export default userRouter;
@@ -78,7 +79,7 @@ const preferencesOf = (saved: Partial<Preferences> = {}): Preferences =>
   Object.fromEntries(PREFERENCE_NAMES.map((name) => [name, saved[name] ?? PREFERENCES[name][0]])) as Preferences;
 
 userRouter.get('/preferences', jwtAuth, (req, res) => {
-  res.status(200).json(preferencesOf(userOf(req).preferences));
+  res.status(200).json({ ...preferencesOf(userOf(req).preferences), prefsRev: counterOf(userOf(req), 'prefsRev') });
 });
 
 // Changes the preferences sent, leaving the others as they are.
@@ -96,10 +97,10 @@ userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
   const changes = Object.fromEntries(changing.map((name) => ['preferences.' + name, body[name]]));
   const user = await User.findByIdAndUpdate(
     userOf(req)._id,
-    { $set: changes },
-    { returnDocument: 'after', projection: { preferences: 1 } }
+    { $set: changes, $inc: { prefsRev: 1 } },
+    { returnDocument: 'after', projection: { preferences: 1, prefsRev: 1 } }
   );
-  return res.status(200).json(preferencesOf(user?.preferences));
+  return res.status(200).json({ ...preferencesOf(user?.preferences), prefsRev: counterOf(user, 'prefsRev') });
 });
 
 // A key is at most SHELF_KEY_LONGEST characters (server/models/user.ts), as the shelf's.
@@ -113,7 +114,10 @@ const KEY_LONGEST = SHELF_KEY_LONGEST;
 const PRICES_MOST = 1000;
 
 userRouter.get('/prices', jwtAuth, (req, res) => {
-  res.status(200).json({ prices: (userOf(req).prices ?? []).map(({ key, perKg }) => ({ key, perKg })) });
+  res.status(200).json({
+    prices: (userOf(req).prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
+    pricesRev: counterOf(userOf(req), 'pricesRev')
+  });
 });
 
 userRouter.put('/prices', jwtAuth, express.json(), async (req, res) => {
@@ -129,8 +133,12 @@ userRouter.put('/prices', jwtAuth, express.json(), async (req, res) => {
     return res.status(400).json(say('prices-invalid', { most: PRICES_MOST }));
   }
   const prices = [...byKey].map(([key, perKg]) => ({ key, perKg }));
-  await User.updateOne({ _id: userOf(req)._id }, { $set: { prices } });
-  return res.status(200).json({ prices });
+  const updated = await User.findOneAndUpdate(
+    { _id: userOf(req)._id },
+    { $set: { prices }, $inc: { pricesRev: 1 } },
+    { returnDocument: 'after', projection: { pricesRev: 1 } }
+  );
+  return res.status(200).json({ prices, pricesRev: counterOf(updated, 'pricesRev') });
 });
 
 // Changes to the list by key, in one step on the server: only what the person
@@ -163,6 +171,7 @@ userRouter.patch('/prices', jwtAuth, express.json(), async (req, res) => {
     [
       {
         $set: {
+          pricesRev: { $add: [{ $ifNull: ['$pricesRev', 0] }, 1] },
           // The currency the prices were shown in becomes the account's, the first time and only then.
           ...(typeof body.currency === 'string' && {
             'preferences.currency': {
@@ -187,11 +196,16 @@ userRouter.patch('/prices', jwtAuth, express.json(), async (req, res) => {
         }
       }
     ],
-    { returnDocument: 'after', updatePipeline: true, projection: { prices: 1, 'preferences.currency': 1 } }
+    {
+      returnDocument: 'after',
+      updatePipeline: true,
+      projection: { prices: 1, pricesRev: 1, 'preferences.currency': 1 }
+    }
   ).lean();
   return res.status(200).json({
     prices: (updated?.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
-    currency: (updated as { preferences?: { currency?: string } } | null)?.preferences?.currency ?? ''
+    currency: (updated as { preferences?: { currency?: string } } | null)?.preferences?.currency ?? '',
+    pricesRev: counterOf(updated, 'pricesRev')
   });
 });
 

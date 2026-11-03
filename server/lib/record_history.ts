@@ -11,6 +11,7 @@ import Trash, { TRASH_DAYS, TRASH_MAX_ACCOUNT, TRASH_MAX_TRIAL } from '../models
 import type { UserDocument } from '../models/user.ts';
 import type { RecordModel } from './guest_limits.ts';
 import * as log from './log.ts';
+import { revFilter, revOf } from './record_rev.ts';
 
 type Row = Record<string, unknown> & { _id: Types.ObjectId };
 type By = 'session' | 'pat' | 'oauth';
@@ -55,14 +56,17 @@ export const moveToTrash = async (
   id: string,
   by: By,
   tokenId?: string,
-  now = new Date()
-): Promise<{ record: Row; trashId: string } | typeof TRASH_FULL | null> => {
+  now = new Date(),
+  rev?: number
+): Promise<{ record: Row; trashId: string } | { conflict: Row } | typeof TRASH_FULL | null> => {
   const ownedBy = String(user._id);
   const most = user.guest ? TRASH_MAX_TRIAL : TRASH_MAX_ACCOUNT;
   const byToken = by !== 'session';
   if (byToken && (await Trash.countDocuments({ ownedBy })) >= most) return TRASH_FULL;
   const record = (await Model.findOne({ _id: id, ownedBy }).lean()) as Row | null;
   if (!record) return null;
+  // Changed since the revision the caller saw: not removed (server/lib/record_rev.ts).
+  if (rev !== undefined && revOf(record) !== rev) return { conflict: record };
   const entry = await Trash.create({
     ownedBy,
     fromCollection: kind,
@@ -78,10 +82,12 @@ export const moveToTrash = async (
     await Trash.deleteOne({ _id: entry._id });
     return TRASH_FULL;
   }
-  if ((await Model.deleteOne({ _id: id, ownedBy })).deletedCount !== 1) {
-    // Removed meanwhile, by another request that trashed it too.
+  if ((await Model.deleteOne({ _id: id, ownedBy, ...revFilter(rev) })).deletedCount !== 1) {
+    // Removed meanwhile, by another request that trashed it too, or changed meanwhile when a revision was named.
     await Trash.deleteOne({ _id: entry._id });
-    return null;
+    if (rev === undefined) return null;
+    const current = (await Model.findOne({ _id: id, ownedBy }).lean()) as Row | null;
+    return current ? { conflict: current } : null;
   }
   // Its earlier versions go when its Trash entry does (models/record_version.ts).
   await RecordVersion.updateMany(

@@ -5,7 +5,10 @@ const noteSchema = new mongoose.Schema({
   ownedBy: { type: String, required: true },
   relatedCollection: { type: String, required: true },
   relatedId: { type: String, required: true },
-  title: String
+  // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
+  rev: { type: Number, default: 0 },
+  title: String,
+  updatedAt: Date
 });
 
 // Each account's records in the order they were made: the lists, the

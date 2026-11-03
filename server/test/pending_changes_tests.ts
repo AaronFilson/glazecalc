@@ -415,6 +415,38 @@ describe('confirm before changes: the REST routes', () => {
     expect((await Note.findById(noteId).lean())!.title).to.equal('Mine');
   });
 
+  it('counts an approved change as a change to the record, and a rev that went stale while it waited changes nothing', async () => {
+    await setting(mine.token, 'all');
+    const before = (await Note.findById(noteId).lean())!.rev ?? 0;
+    const asked = await api()
+      .put('/notes/change/' + noteId)
+      .set('Authorization', bearer(write))
+      .set('If-Match', '"' + before + '"')
+      .send({ title: 'From the app' });
+    expect(asked).to.have.status(202);
+    const approved = await api()
+      .post('/pending-changes/' + asked.body.pendingId + '/approve')
+      .set('Authorization', bearer(mine.token));
+    expect(approved.body.status).to.not.equal('conflict');
+    expect(await Note.findById(noteId).lean()).to.include({ title: 'From the app', rev: before + 1 });
+
+    // Asked for from a rev that has gone by the time the person approves: the version guard or the rev refuses it.
+    const stale = await api()
+      .put('/notes/change/' + noteId)
+      .set('Authorization', bearer(write))
+      .set('If-Match', '"' + (before + 1) + '"')
+      .send({ title: 'Too late' });
+    await api()
+      .put('/notes/change/' + noteId)
+      .set('Authorization', bearer(mine.token))
+      .send({ title: 'Mine' });
+    const refused = await api()
+      .post('/pending-changes/' + stale.body.pendingId + '/approve')
+      .set('Authorization', bearer(mine.token));
+    expect(refused.body).to.include({ status: 'conflict' });
+    expect((await Note.findById(noteId).lean())!.title).to.equal('Mine');
+  });
+
   it('approves all from one app: only the changes the page showed, never one that came later', async () => {
     await setting(mine.token, 'all');
     const ids: string[] = [];

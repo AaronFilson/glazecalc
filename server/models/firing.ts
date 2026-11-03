@@ -8,7 +8,10 @@ const firingSchema = new mongoose.Schema({
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
   rows: { type: [mongoose.Schema.Types.Mixed], required: true },
-  title: { type: String, required: true }
+  // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
+  rev: { type: Number, default: 0 },
+  title: { type: String, required: true },
+  updatedAt: Date
 });
 
 // Each account's records in the order they were made: the lists, the

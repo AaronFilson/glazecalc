@@ -176,6 +176,8 @@ export const MESSAGES = {
   'trash-emptied': 'The Trash is empty.',
   'trash-full':
     'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
+  'record-conflict': `This {label, select, ${ONE}} was changed somewhere else after the copy you were working from, so your change was not saved.`,
+  'record-gone': `This {label, select, ${ONE}} is no longer there: it was removed or moved to the Trash.`,
   'firing-links-full': 'A recipe can be linked to at most {most} firing logs. Unlink one to link another.',
   'account-limit':
     'An account can keep up to {limit} records in all: recipes, materials, notes, firing logs and the rest together. Please remove some to save more.',

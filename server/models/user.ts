@@ -309,6 +309,12 @@ export const SHELF_MOST = 500;
 /** The longest key the shelf takes. */
 export const SHELF_KEY_LONGEST = 200;
 
+/**
+ * How many times the preferences, and the prices, have been changed (server/lib/record_rev.ts); absent
+ * reads as 0. Not in UserFields: the compiler cannot work out some queries on the user with more fields in it.
+ */
+const REV_FIELDS = { prefsRev: { type: Number, default: 0 }, pricesRev: { type: Number, default: 0 } };
+
 const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   email: { type: String, required: true, trim: true, lowercase: true },
   displayname: String,
@@ -366,7 +372,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     default: undefined
   },
   passwordless: Boolean,
-  confirmChanges: { type: String, enum: CONFIRM_CHANGES }
+  confirmChanges: { type: String, enum: CONFIRM_CHANGES },
+  ...REV_FIELDS
 });
 
 userSchema.method('hashPassword', function (this: UserDocument, password: string) {

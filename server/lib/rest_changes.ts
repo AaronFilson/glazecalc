@@ -35,6 +35,7 @@ import {
   type Summary
 } from './pending_changes.ts';
 import { countTokenDelete, countTokenWrite } from './rate_limit.ts';
+import { ifMatchOf } from './record_rev.ts';
 import type { Permission } from './scopes.ts';
 import type { Access } from './token_auth.ts';
 
@@ -48,6 +49,8 @@ export interface Who {
 export interface OpInput {
   params: Record<string, string>;
   body: unknown;
+  /** The revision the request's If-Match names (server/lib/record_rev.ts); none asks for no check. */
+  rev?: number;
 }
 
 /** What a route answers. */
@@ -72,10 +75,14 @@ export const registerOp = (name: string, op: Op, { trashes = false }: { trashes?
 };
 
 /** The route's input as a waiting change keeps it. */
-export const inputOf = (req: Request): OpInput => ({
-  params: { ...(req.params as Record<string, string>) },
-  body: req.body ?? null
-});
+export const inputOf = (req: Request): OpInput => {
+  const rev = ifMatchOf(req);
+  return {
+    params: { ...(req.params as Record<string, string>) },
+    body: req.body ?? null,
+    ...(rev !== undefined && { rev })
+  };
+};
 
 /** Sends what an Op answered. */
 export const send = (res: Response, reply: Reply): void => {
