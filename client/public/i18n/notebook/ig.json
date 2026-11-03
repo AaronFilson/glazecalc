@@ -6,20 +6,20 @@
     "welcomeBack": "Gaa n'ihu site n'ebe ị kwụsịrị.",
     "welcome": {
       "heading": "Nnọọ na Glazecalc",
-      "text": "Akwụkwọ ndetu gị adịla njikere. Ezigbo nzọụkwụ mbụ: pịnye glaze ị na-agwakọta ugbu a, ihe eji arụ ya na ọnụọgụ ha, ma hụ unity formula ya.",
+      "text": "Akwụkwọ ndetu gị adịla njikere. Ezigbo nzọụkwụ mbụ: pịnye glaze ị na-agwakọta ugbu a, ihe eji arụ ya na ọnụọgụ ha, ma hụ usoro unity ya.",
       "firstRecipe": "Malite usoro mbụ gị",
       "confirmHeading": "Kwado email gị",
-      "confirm": "Kwado email gị: anyị zigara njikọ na {email}. Ịbanye n'usoro abụọ chọrọ ya. <account>Ibe akaụntụ</account> gị nwere ike iziga ya ọzọ.",
-      "confirmText": "Anyị zigara njikọ na {email}. Mepee ya iji kwado na adreesị ahụ bụ nke gị: ịbanye n'usoro abụọ chọrọ ya. <account>Ibe akaụntụ</account> gị nwere ike iziga ya ọzọ."
+      "confirm": "Kwado email gị: anyị zigara njikọ na {email}. Mbanye nzọụkwụ abụọ chọrọ ya. <account>Ibe akaụntụ</account> gị nwere ike iziga ya ọzọ.",
+      "confirmText": "Anyị zigara njikọ na {email}. Mepee ya iji kwado na adreesị ahụ bụ nke gị: mbanye nzọụkwụ abụọ chọrọ ya. <account>Ibe akaụntụ</account> gị nwere ike iziga ya ọzọ."
     },
     "sections": {
       "recipe": {
         "title": "Usoro glaze",
-        "text": "Wuo glaze site n'ihe eji arụ ọrụ na ọnụọgụ ha, hụ unity formula ya, ma chekwaa ya."
+        "text": "Wuo glaze site n'ihe eji arụ ọrụ na ọnụọgụ ha, hụ usoro unity ya, ma chekwaa ya."
       },
       "import": {
-        "title": "Mado usoro",
-        "text": "Mado usoro site na weebụsaịtị, spreadsheet ma ọ bụ ihe edere, lelee ihe a gụrụ, ma chekwaa ha."
+        "title": "Mado usoro glaze",
+        "text": "Mado usoro glaze site na weebụsaịtị, spreadsheet ma ọ bụ ndetu, lelee ihe a gụrụ, ma chekwaa ha."
       },
       "blends": {
         "title": "Ngwakọta maka test tile",
@@ -38,7 +38,7 @@
         "text": "Dekọọ oge, okpomọkụ na cone maka ịgba ọkụ ọ bụla."
       },
       "notes": {
-        "title": "Ihe edere",
+        "title": "Ndetu",
         "text": "Debe nsonaazụ nnwale na ihe ọ bụla ọzọ kwesịrị icheta."
       },
       "advice": {
@@ -55,19 +55,19 @@
       },
       "account": {
         "title": "Akaụntụ na ntọala",
-        "text": "Ntọala, okwuntughe gị, ịbanye n'usoro abụọ, na ibudata ihe niile ị debere ebe a."
+        "text": "Ntọala, okwuntughe gị, mbanye nzọụkwụ abụọ, na ibudata ihe niile ị debere ebe a."
       }
     },
-    "newHere": "Unity formula ọ dị gị ọhụrụ? <advice>Ibe ndụmọdụ</advice> na-akọwa isi ihe, <about>ibe gbasara anyị</about> na-akọkwa otu Glazecalc si arụ ọrụ."
+    "newHere": "Usoro unity ọ dị gị ọhụrụ? <advice>Ibe ndụmọdụ</advice> na-akọwa isi ihe, <about>ibe gbasara anyị</about> na-akọkwa otu Glazecalc si arụ ọrụ."
   },
   "firing": {
     "title": "Ndekọ ọkụ",
-    "lead": "Dekọọ ịgba ọkụ ọ bụla: oge, okpomọkụ, cone na ihe edere gbasara kiln.",
+    "lead": "Dekọọ ịgba ọkụ ọ bụla: oge, okpomọkụ, cone na ndetu gbasara kiln.",
     "newHeading": "Ịgba ọkụ ọhụrụ",
     "titleLabel": "Aha",
     "kiln": "Kiln",
     "date": "Ụbọchị",
-    "notes": "Ihe edere",
+    "notes": "Ndetu",
     "fieldSelect": "Ubi ị ga-edekọ",
     "addField": "Tinye ubi ahụ",
     "included": "Ubi dị na ndekọ a",
@@ -85,13 +85,13 @@
     "noneSaved": "Ọ dịbeghị. Ịgba ọkụ echekwara na-apụta ebe a.",
     "storedIn": "A gbara ọkụ na {kiln} na {date}.",
     "storedOn": "A gbara ọkụ na {date}.",
-    "storedNotes": "Ihe edere: {notes}",
+    "storedNotes": "Ndetu: {notes}",
     "titleMissing": "Nye ịgba ọkụ ahụ aha.",
     "fieldsMissing": "Tinye opekata mpe otu ubi ị ga-edekọ, dịka {example}.",
     "chooseField": "Họrọ ubi ị ga-etinye, wee pịa Tinye ubi ahụ.",
     "fetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ndekọ ịgba ọkụ.",
     "saved": "Etinyela ndekọ ịgba ọkụ ahụ na sava nke ọma.",
-    "saveFailed": "Njehie: arịrịọ a zigara sava ahụ adaghị.",
+    "saveFailed": "Njehie: arịrịọ a zigara sava ahụ arụghị ọrụ.",
     "recipesHeading": "Usoro a gbara ọkụ n'ime ya",
     "noRecipes": "Ejikọbeghị usoro ọ bụla.",
     "recipesFailed": "Enweghị ike iweta usoro gị, ya mere enweghị ike ijikọ nke ọ bụla ugbu a.",
@@ -102,32 +102,32 @@
     "linkFailed": "Enweghị ike ichekwa njikọ ahụ."
   },
   "notes": {
-    "title": "Ihe edere",
+    "title": "Ndetu",
     "lead": "Ihe ọ bụla ọzọ kwesịrị icheta gbasara glaze gị.",
-    "newHeading": "Ihe edere ọhụrụ",
+    "newHeading": "Ndetu ọhụrụ",
     "titleLabel": "Aha",
-    "content": "Ihe edere",
+    "content": "Ndetu",
     "save": "Chekwaa",
-    "mineHeading": "Ihe edere m echekwara",
-    "noneSaved": "Ọ dịbeghị. Ihe edere echekwara na-apụta ebe a.",
-    "titleMissing": "Nye ihe edere ahụ aha.",
-    "contentMissing": "Dee ihe edere ahụ.",
-    "untitled": "Ihe edere na-enweghị aha",
-    "fetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ihe edere.",
-    "saved": "Etinyela ihe edere ahụ na sava nke ọma.",
-    "saveFailed": "Njehie: arịrịọ a zigara sava ahụ adaghị."
+    "mineHeading": "Ndetu m echekwara",
+    "noneSaved": "Ọ dịbeghị. Ndetu echekwara na-apụta ebe a.",
+    "titleMissing": "Nye ndetu ahụ aha.",
+    "contentMissing": "Dee ndetu ahụ.",
+    "untitled": "Ndetu na-enweghị aha",
+    "fetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ndetu.",
+    "saved": "Etinyela ndetu ahụ na sava nke ọma.",
+    "saveFailed": "Njehie: arịrịọ a zigara sava ahụ arụghị ọrụ."
   },
   "trash": {
     "title": "Ebe mkpofu",
-    "lead": "Ihe ị wepụrụ (usoro, ihe eji arụ ọrụ, ihe mgbakwunye, ihe edere, ndekọ ọkụ na ndụmọdụ) na-echere ebe a ụbọchị 30. Weghachi ya, ma ọ bụ hichapụ ya kpamkpam.",
+    "lead": "Ihe ị wepụrụ (usoro, ihe eji arụ ọrụ, ihe mgbakwunye, ndetu, ndekọ ọkụ na ndụmọdụ) na-echere ebe a ụbọchị 30. Weghachi ya, ma ọ bụ hichapụ ya kpamkpam.",
     "listHeading": "N'ebe mkpofu",
     "none": "Ebe mkpofu tọgbọ chakoo.",
     "untitled": "Enweghị aha",
     "kinds": {
-      "recipes": "Usoro",
+      "recipes": "Usoro glaze",
       "materials": "Ihe eji arụ ọrụ",
       "additives": "Ihe mgbakwunye",
-      "notes": "Ihe edere",
+      "notes": "Ndetu",
       "firing": "Ndekọ ọkụ",
       "advice": "Ndụmọdụ",
       "other": "Ndekọ"
@@ -142,11 +142,11 @@
     "restoreFailed": "Enweghị ike iweghachi \"{name}\". Biko nwaa ọzọ.",
     "deleted": "Ehichapụla \"{name}\" kpamkpam.",
     "empty": "Kpofuo ihe niile dị n'ebe mkpofu",
-    "emptyQuestion": "Hichapụ {count, plural, other {ndekọ # niile}} dị n'ebe mkpofu kpamkpam? Enweghị ike ịgbanwe nke a.",
+    "emptyQuestion": "Hichapụ {count, plural, other {ndekọ # niile}} dị n'ebe mkpofu kpamkpam? A gaghị enwe ike ịmehie nke a.",
     "emptyYes": "Ee, kpofuo ha",
     "emptying": "Na-akpofu...",
     "emptied": "Ebe mkpofu tọgbọ chakoo.",
     "emptyFailed": "Enweghị ike ikpofu ihe dị n'ebe mkpofu. Biko nwaa ọzọ.",
-    "fetchFailed": "Enweghị ike ibuga ebe mkpofu. Biko nwaa ọzọ."
+    "fetchFailed": "Enweghị ike ibugo Ebe mkpofu. Biko nwaa ọzọ."
   }
 }

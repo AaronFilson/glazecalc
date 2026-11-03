@@ -99,57 +99,71 @@ the English writes them (1222 °C). Dates as the app prints them. Times as the E
 
 ### 2.1 Glaze, materials and chemistry
 
-| English                        | so                                 | Notes                  |
-| ------------------------------ | ---------------------------------- | ---------------------- |
-| glaze **show English**         | glaze (-ka)                        | Loan. **Native check** |
-| UMF, LOI, SG                   | UMF, LOI, SG                       | Kept.                  |
-| oxide                          | oksaydh                            | **Native check**       |
-| gloss, matte                   | dhalaalaya, aan dhalaalayn (matte) | **Native check**       |
-| raw materials                  | walxo (sg. walax)                  | **Native check**       |
-| feldspar, kaolin, silica, frit | feldspar, kaolin, silica, frit     | Loans.                 |
-| colorant                       | midabeeye                          | **Native check**       |
-| lead, barium, cadmium          | rasaas (lead, Pb), barium, cadmium | Zorc (_rasaas_).       |
+| English                        | so                                          | Notes                                                                                 |
+| ------------------------------ | ------------------------------------------- | ------------------------------------------------------------------------------------- |
+| glaze **show English**         | glaze (-ka)                                 | Loan. **Native check**                                                                |
+| UMF, LOI, SG                   | UMF, LOI, SG                                | Kept.                                                                                 |
+| oxide                          | oksaydh                                     | **Native check**                                                                      |
+| gloss, glossy; matte           | ifid; ifaya; aan ifayn (matte)              | **Native check**. Never _dhalaal-_: that is melt, so "glossier" read as "melts more". |
+| melt, to melt                  | dhalaal; dhalaali (to melt something)       | Kiln only. **Native check**                                                           |
+| soluble, dissolve              | milma; milmid                               | In water or the body. Never _dhalaal-_ (melt).                                        |
+| clear (glaze)                  | hufan                                       | Transparent, never _cad_ (white).                                                     |
+| opaque, opacifier              | aan iftiinka gudbin (opaque); iftiin-celiye | Stops light. Never _madoobeeya_ (dark). **Native check**                              |
+| crystalline silica             | silica kiristaalka ah                       | Keep "crystalline". **Native check**                                                  |
+| raw materials                  | walxo (sg. walax)                           | **Native check**                                                                      |
+| feldspar, kaolin, silica, frit | feldspar, kaolin, silica, frit              | Loans.                                                                                |
+| colorant                       | midabeeye                                   | **Native check**                                                                      |
+| lead, barium, cadmium          | rasaas (lead, Pb), barium, cadmium          | Zorc (_rasaas_).                                                                      |
 
 ### 2.2 Clay, ware, kilns and firing
 
-| English                           | so                                | Notes                  |
-| --------------------------------- | --------------------------------- | ---------------------- |
-| pottery, potter                   | dhoobo-samayn; dhoobo-sameeye     | **Native check**       |
-| clay                              | dhoobo                            | Zorc.                  |
-| pot                               | dheri (pl. dheryo); weel          | Zorc.                  |
-| earthenware, stoneware, porcelain | earthenware, stoneware, porcelain | Loans.                 |
-| bisque                            | bisque (gubidda koowaad)          | **Native check**       |
-| kiln                              | kiln                              | Loan. **Native check** |
-| firing, to fire                   | gubid; gub                        | **Native check**       |
-| cooling                           | qaboojin                          |                        |
+| English                           | so                                  | Notes                             |
+| --------------------------------- | ----------------------------------- | --------------------------------- |
+| pottery, potter                   | dhoobo-samayn; dhoobo-sameeye       | **Native check**                  |
+| clay                              | dhoobo                              | Zorc.                             |
+| pot                               | dheri (pl. dheryo); weel            | Zorc.                             |
+| earthenware, stoneware, porcelain | earthenware, stoneware, porcelain   | Loans.                            |
+| bisque                            | bisque (gubidda koowaad)            | **Native check**                  |
+| kiln                              | kiln                                | Loan. **Native check**            |
+| firing, to fire                   | gubid; gub                          | **Native check**                  |
+| cooling                           | qaboojin                            |                                   |
+| kiln wash                         | kiln wash (dahaarka rafaha kiln-ka) | Shelf coating. **Native check**   |
+| kiln shelf                        | raf (rafaha)                        | Not _khaanad_.                    |
+| witness cone                      | cone markhaati ah (witness cone)    | **Native check**                  |
+| studio                            | istuudiyo (istuudiyaha)             | Not _studio-ga_. **Native check** |
+| inch, foot                        | inji, fuudh                         | **Native check**                  |
+| early, too soon                   | goor hore                           | Not "in the morning".             |
 
 ### 2.3 Defects and making
 
-| English   | so                            | Notes            |
-| --------- | ----------------------------- | ---------------- |
-| crazing   | crazing (dillaac yaryar)      | **Native check** |
-| leaching  | leaching (rasaas ka soo baxa) | **Native check** |
-| batch     | batch                         | Loan.            |
-| scale     | miisaan                       | Zorc.            |
-| sieve     | shaandho; shaandhee (verb)    | Zorc.            |
-| test tile | test tile                     | Loan.            |
+| English              | so                                         | Notes                                                                            |
+| -------------------- | ------------------------------------------ | -------------------------------------------------------------------------------- |
+| crazing              | crazing (dillaac yaryar)                   | **Native check**                                                                 |
+| leaching, leach test | biraha ka soo baxa (leaching / leach test) | Metals in general (lead, cadmium, barium...), never lead alone. **Native check** |
+| batch                | batch                                      | Loan.                                                                            |
+| scale                | miisaan                                    | Zorc.                                                                            |
+| sieve                | shaandho; shaandhee (verb)                 | Zorc.                                                                            |
+| test tile            | test tile                                  | Loan.                                                                            |
 
 ### 2.4 Health and safety
 
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures in
 English and digits.
 
-| English                       | so                                  | Notes                                         |
-| ----------------------------- | ----------------------------------- | --------------------------------------------- |
-| dust                          | boodh                               | Zorc.                                         |
-| respirable crystalline silica | boodhka silica ee la neefsado       | **Native check**                              |
-| silicosis                     | silicosis (cudur sambabada)         | **Native check**                              |
-| respirator                    | respirator (maaskarada neefsashada) | **Native check**                              |
-| poison, toxic                 | sun; sumaysan                       | Zorc.                                         |
-| food safe                     | ammaan u ah cuntada                 | **Native check**                              |
-| lead-free                     | aan rasaas lahayn (lead-free)       | **Native check**                              |
-| at most / no more than        | ugu badnaan; aan ka badnayn         | "less than" is _ka yar_: never for "at most". |
-| at least                      | ugu yaraan                          |                                               |
+| English                       | so                                           | Notes                                                |
+| ----------------------------- | -------------------------------------------- | ---------------------------------------------------- |
+| dust                          | boodh                                        | Zorc.                                                |
+| respirable crystalline silica | boodhka silica kiristaalka ah ee la neefsado | Never drop _kiristaalka ah_. **Native check**        |
+| safety data sheet (SDS)       | warqadda xogta badbaadada (SDS)              | Not _xaashida_ or _xogta ammaanka_. **Native check** |
+| combustible                   | guban kara                                   | **Native check**                                     |
+| less, fewer, reduce           | ka yar; yaree                                | Never "a little more".                               |
+| silicosis                     | silicosis (cudur sambabada)                  | **Native check**                                     |
+| respirator                    | respirator (maaskarada neefsashada)          | **Native check**                                     |
+| poison, toxic                 | sun; sumaysan                                | Zorc.                                                |
+| food safe                     | ammaan u ah cuntada                          | **Native check**                                     |
+| lead-free                     | aan rasaas lahayn (lead-free)                | **Native check**                                     |
+| at most / no more than        | ugu badnaan; aan ka badnayn                  | "less than" is _ka yar_: never for "at most".        |
+| at least                      | ugu yaraan                                   |                                                      |
 
 **Who to call.** The translation names only what the English and the region data print:
 

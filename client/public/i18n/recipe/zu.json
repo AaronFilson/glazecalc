@@ -43,7 +43,7 @@
     "workOut": "Kubale bese uqhathanisa",
     "cancel": "Khansela",
     "noMaterials": "Akukho okokwakha okwamanje. Kwengeze ohlwini olungezansi.",
-    "containsLead": "<b>Inomthofu (lead, Pb):</b> i-PbO {unity} ku-UMF ({percent}% ye-glaze eshisiwe). Umthofu (Pb) ungaphuma ezitsheni ezishisiwe ungene ekudleni nasekuphuzweni, futhi kuphela ukuhlolwa kokuphuma kwezinsimbi (leach test) kwelabhorethri kwesitsha esishisiwe okungasho ukuthi le glaze iyakwenza yini; ukubala akukwazi. Yisebenzise kuphela lapho ingathinti khona ukudla noma isiphuzo, noma uthathe isikhundla somthofu (Pb).",
+    "containsLead": "<b>Inomthofu (lead, Pb):</b> i-PbO {unity} ku-UMF ({percent}% ye-glaze eshisiwe). Umthofu (Pb) ungaphuma ezitsheni ezishisiwe ungene ekudleni nasekuphuzweni, futhi kuphela ukuhlolwa kokuphuma kwezinsimbi (leach test) kwelabhorethri kwesitsha esishisiwe okungasho ukuthi le glaze iyakwenza yini; ukubala akukwazi. Yisebenzise kuphela lapho ingeke ithinte khona nanini ukudla noma isiphuzo, noma uthathe isikhundla somthofu (Pb).",
     "replaceLead": "Thatha isikhundla somthofu",
     "replaceHeading": "Thatha isikhundla somthofu",
     "firedToCone": "Ishiswe kuze kube ku-cone",
@@ -406,7 +406,7 @@
   },
   "lead": {
     "why": {
-      "rawCalcium": "isiqondiso sale app uqobo se-whiting ne-dolomite eluhlaza ekushiseni okuphansi, lapho zincibilika kancane nje futhi zikhipha igesi",
+      "rawCalcium": "isiqondiso sale app uqobo se-whiting ne-dolomite eluhlaza ekushiseni okuphansi, lapho zicishe zingancibiliki futhi zikhipha igesi",
       "lowExpansion": "ama-frit anokunwebeka okuphansi ayamelapha i-crazing, asetshenziswa cishe ku-5 kuya ku-10%",
       "boronFrit": "i-frit ye-calcium borate iyisengezo se-boron, hhayi isisekelo",
       "zinc": "amandla e-zinc oxide eluhlaza okuncibilikisa ehla ngokushesha ngaphezu kwecishe u-5%, futhi ingenza i-glaze ihoxe (crawl)"

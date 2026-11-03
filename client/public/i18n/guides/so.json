@@ -105,8 +105,8 @@
   "silica": {
     "limitIn": "Xadka",
     "label": "Xadka silica gudaha {region}",
-    "caption": "Xadka goobta shaqada ee boodhka silica ee la neefsado (respirable crystalline silica) gudaha {region}, celcelis 8 saacadood ah (la hubiyay {date})",
-    "captionControl": "Cabbirka lagu qiimeeyo boodhka silica ee la neefsado ee hawada goobta shaqada gudaha {region} (la hubiyay {date})",
+    "caption": "Xadka goobta shaqada ee boodhka silica kiristaalka ah ee la neefsado (respirable crystalline silica) gudaha {region}, celcelis 8 saacadood ah (la hubiyay {date})",
+    "captionControl": "Cabbirka lagu qiimeeyo boodhka silica kiristaalka ah ee la neefsado (respirable crystalline silica) ee hawada goobta shaqada gudaha {region} (la hubiyay {date})",
     "both": "Quartz iyo cristobalite",
     "freeSilica": "Silica xor ah",
     "quartz": "Quartz",
@@ -125,8 +125,8 @@
     "bandAbove": "Boodh leh in ka badan {from}% silica xor ah",
     "untilDate": "Ilaa {date}",
     "fromDate": "Laga bilaabo {date}",
-    "beforeFormula": "Xadka boodhka la neefsado, halka Q tahay crystalline silica ee ku jirta, %",
-    "beforeAll": "Boodh gebi ahaanba crystalline silica ah",
+    "beforeFormula": "Xadka boodhka la neefsado, halka Q tahay silica kiristaalka ah ee ku jirta, %",
+    "beforeAll": "Boodh gebi ahaanba silica kiristaal ah",
     "recommended": "Waxaa ku taliyay {abbr}",
     "value": "{value} mg/m³",
     "kind": {

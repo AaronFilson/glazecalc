@@ -9,11 +9,11 @@ Esmalte llamk'aypi unay pachapaq hatun manchakuyqa ñut'u allpam (polvo), aswant
 
 Unay pacha samaykusqaqa **silicosis** (surq'an unquy) unquyta apamunmanmi, HSE "sinchi, mana kutichiy atina" nisqan surq'an unquy, "wiñaypaq mana atiyta, ñawpaqlla wañuyta ima apamunman" nisqan. **EPOC**-tapas (enfermedad pulmonar obstructiva crónica: unay bronquitis, enfisema ima) apamunmanmi, chaytaqa sayri pitayqa aswan millayman tukuchin. IARC, Organización Mundial de la Saludpa cáncer kamachiqnin, samaykusqa sílice cristalinata Grupo 1-pi churan, "runakunapaq carcinógeno".
 
-Síliceqa hornopi mana q'usñiman tukunchu, huq'u esmaltepas mana samaykuspa manchakuychu, pulverizaspa (soplete) mana ch'aqchusqa kaptinqa: pulverizasqa phuyuqa sílicetam apan, ch'akispa ñut'u allpaman tukun (uraypi Pulverizay qhaway). Material ch'aki kaptinmi allinta qhawakunayki: bolsakunata kichaspa, llasachispa, ñut'uta yakuman chaqruspa, sutuykunata, pulverizay puchukunata, esmalte puchukunata ima ch'akispa ñut'u allpaman kutisqanta pichaspa.
+Síliceqa hornopi mana q'usñiman tukunchu, huq'u esmaltepas mana samaykuspa manchakuychu, pulverizasqa kaptillanmi manchakuy: pulverizasqa phuyuqa sílicetam apan, ch'akispa ñut'u allpaman tukun (uraypi Pulverizay qhaway). Material ch'aki kaptinmi allinta qhawakunayki: bolsakunata kichaspa, llasachispa, ñut'uta unuman chaqruspa, sutuykunata, pulverizay puchukunata, esmalte puchukunata ima ch'akispa ñut'u allpaman kutisqanta pichaspa.
 
 ### Exposición límitekuna
 
-Llamk'ay kamachiykunam **exposición límiteta** churanku: llamk'aq aswan achka sílice samaykunan, 8 hora p'unchaw kuskanchasqa, miligramopi (mg) utaq microgramopi (µg, miligramopa waranqa t'aqanmanta huknin) sapa metro cúbico wayrapi.
+Llamk'ay kamachiykunam **exposición límiteta** churanku: llamk'aqpa samaykuyta atisqan sílicepa aswan hatun kaynin, 8 hora p'unchaw kuskanchasqa, miligramopi (mg) utaq microgramopi (µg, miligramopa waranqa t'aqanmanta huknin) sapa metro cúbico wayrapi.
 
 Table: Samaykuspa yaykuq sílice cristalinapaq llamk'ay límitekuna (8 horapa kuskanchaynin)
 Label: Sílice exposición límitekuna
@@ -28,7 +28,7 @@ Label: Sílice exposición límitekuna
 
 Wakin p'anqakunam Australiapaq 0.025 mg/m³ nin, ichaqa kamachisqa límiteqa 0.05-raqmi. Imaynapas kachun, kamachiyqa kaqllam: ñut'u allpata atisqaykikama pisillapi waqaychay.
 
-Unión Europeapa achka suyunkunam Unión Europeapa límitenmanta aswan pisi límiteta churanku. Maypi tiyasqaykipi límite, chayta churaq ley, llamk'aypi mana manchakuypaq suyu kamachiq ima:
+Unión Europeapa wakin suyunkunam Unión Europeapa límitenmanta aswan pisi límiteta churanku. Maypi tiyasqaykipi límite, chayta churaq ley, llamk'aypi mana manchakuypaq suyu kamachiq ima:
 
 ::silica-limit
 
@@ -44,14 +44,14 @@ Aswan achka harkakuyqa yachaykunamantam hamun, mana llamk'anakunamantachu. Saña
 ### Atispaqa ñut'uta ama llamk'achiychu
 
 - **Ña chaqrusqa huq'u esmalteta rantiy**, llamk'ayniykipaq allin kaptin. HSEpa ñawpaq yuyaychayninqa "Atikuptinqa ña llamk'achinapaq esmalteta rantiy", utaq granulasqa utaq barbotina rikch'aqta.
-- **Aswan mana manchakuna esmalte ruranakunata akllay.** HSE yuyaychan "aswan pisi sílice cristalinayuq esmaltekunata". Digitalfire yuyaychan **fritata** (fábricapi rurasqa vidrio, ñut'uman kutachisqa, chawa materialkunamanta aswan pisitam chulluchikun) chawa carbonato de bario rantinpi, **colorante cerámicotapas** (fábricapi rurasqa cerámica llimp'i) yana llimp'ipaq achka manganeso, cobalto utaq níquel rantinpi.
+- **Aswan mana manchakuna esmalte ruranakunata akllay.** HSE yuyaychan "aswan pisi sílice cristalinayuq esmaltekunata". Digitalfire yuyaychan **fritata** (fábricapi rurasqa vidrio, ñut'uman kutachisqa, chawa materialkunamanta ancha aswan pisitam chulluchikun) chawa carbonato de bario rantinpi, **colorante cerámicotapas** (fábricapi rurasqa cerámica llimp'i) yana llimp'ipaq achka manganeso, cobalto utaq níquel rantinpi.
 
 ### Ñut'uta llamk'achispaqa
 
-- **Llamp'ullata hurquy.** HSE nin "bolsakunamanta llamp'ullata hich'ay/hurquy", hatun ukhu mankakunatapas ama llamk'achiychu, ñut'u allpa aswan pisita urmananpaq.
+- **Llamp'ullata hurquy.** HSE nin "bolsakunamanta llamp'ullata hich'ay/hurquy", hatun ukhu mankakunatapas ama llamk'achiychu, ñut'u allpa aswan pisi alturamanta urmananpaq.
 - **Tapanta churasqa waqaychay** manka mana llamk'achisqa kaptinqa, balanzamanta baldekama apaspapas.
 - **Wayra mana puriqpi llamk'ay.** Punkukunamanta, ventanakunamanta, purina ñankunamanta karupi llasachiy, huk runakunatapas cuartomanta hark'ay.
-- **Ñut'uta yakuman yapay.** Yuyaychaykum ñawpaqta yakuta baldeman churanaykita, chaymanta ñut'uta llamp'ullata yapanaykita, ch'aki ñut'u muqu patamanqa yakuta mana hich'aspa. Kayqa sapa kuti ruraymi, mana pukyukunapa kamachiyninchu.
+- **Ñut'uta unuman yapay.** Yuyaychaykum ñawpaqta unuta baldeman churanaykita, chaymanta ñut'uta llamp'ullata yapanaykita, ch'aki ñut'u muqu patamanqa unuta mana hich'aspa. Kayqa sapa kuti ruraymi, mana pukyukunapa kamachiyninchu.
 - **Chaqruna k'aspiwan chaqruy,** mana makiykiwanchu, guantekunatapas churakuy.
 - **Huq'ullata waqaychay.** Huq'u hich'akusqakunata pichay "mana ch'akinanpaq", huq'u puchukunatataq wayra mana yaykuq wisq'asqa mankakunapi waqaychay.
 - **Bolsakunata qhaway.** Costalkunaqa hawanpi ñut'u allpayuqmi. Ch'usaq costalkunata llamp'ullata k'uyuy, wikch'unaykipaq ñawpaqtataq huk bolsaman churay.
@@ -80,7 +80,7 @@ Label: Respirador clasekuna
 | Reino Unido, Unión Europea | FFP2                | FFP3              | EN 149 huk kutilla llamk'achina máscarakunapi; EN 140 kuskan máscarakuna EN 143 P2 utaq P3 filtrokunawan |
 | Australia, Nueva Zelanda   | P2                  | P3                | AS/NZS 1716                                                                                              |
 
-Aswan hatun claseqa ñut'u ñut'ukunamanta aswan achkatam suysun. Pukyukunaqa mana kaqllatachu ninku Australiapa P3 hayk'ata suysusqanmanta (pisimanta pisi 99%, utaq pisimanta pisi 99.95%), chaymi suyuykipi venderisqa certificasqa claseta rantiy. Kutipayta llamk'achina **kuskan máscara** (sinqata simita ima p'istuq, rantikuq filtrokunayuq) P100 filtrokunawan (Estados Unidos hawanpi P3) llamk'ana wasikunapi sapa kuti akllasqam.
+Aswan hatun claseqa ñut'u ñut'ukunamanta aswan achkatam suysun. Pukyukunaqa mana kaqllatachu ninku Australiapa P3 hayk'ata suysusqanmanta (pisimanta pisi 99%, utaq pisimanta pisi 99.95%), chaymi suyuykipi venderisqa certificasqa claseta rantiy. Kutipayta llamk'achina **kuskan máscara** (sinqata simita ima p'istuq, tikrana filtrokunayuq) P100 filtrokunawan (Estados Unidos hawanpi P3) llamk'ana wasikunapi sapa kuti akllasqam.
 
 ### Tupay, llutharikuy
 
@@ -88,17 +88,17 @@ Mana allin llutharikuq máscaraqa patakunanpi ñut'u allpata yaykuchin, ima clas
 
 - **Llamk'anaykipaq pisi ñawpaqta barbaykita rutuy.** Kamachiykunaqa mana kaqllachu hayk'a ñawpaqta "ch'uya rutusqa" kanaykimanta. Reino Unidopa huk ruraqnin, HSEta sutichaspa, nin llamk'ay qallarinaykimanta 8 hora ukhupi rutusqa. Australiapa Nueva Zelandapa tupachiy kamachiyninqa tupachiy prueba ñawpaqta rutukuyta mañakun, "aswan allin 12 hora ukhupi". Llamk'anaykipaq pisi ñawpaqta rutukuspaqa iskayninta hunt'anki.
 - **Barbaykita waqaychaspaqa,** kachaqlla churakuna **motoryuq respiradorqa** (PAPR: suysusqa wayrata quq ventiladoryuq capucha utaq casco) mana uyaman llutharikuyta munanchu.
-- **Allin sayayninta akllay.** Mana allin tupayqa yaykuypa hatun kayninmi. Llamk'ana wasikunaqa **tupachiy pruebata** llamk'achinku, huk máscara huk uyaman llutharikusqanta qhawanapaq. Wasipiqa, sapa churakuptiyki llutharikuyta qhawanapaq ruraqpa kamachiyninkunata qatinaykita yuyaychayku.
+- **Allin sayayninta akllay.** Mana allin tupaymi aswanta ñut'u allpata yaykuchin. Llamk'ana wasikunaqa **tupachiy pruebata** llamk'achinku, huk máscara huk uyaman llutharikusqanta qhawanapaq. Wasipiqa, sapa churakuptiyki llutharikuyta qhawanapaq ruraqpa kamachiyninkunata qatinaykita yuyaychayku.
 
 > [!NOTE]
-> Yuyayniykupiqa, tupayqa claseman aswan chaniyuqmi: allin tupaq N95, FFP2 utaq P2 sapa kutilla kachaqlla P100-manta aswan allinta ruran.
+> Yuyayniykupiqa, tupayqa clasemanta aswan chaniyuqmi: allin tupaq N95, FFP2 utaq P2 sapa kutilla kachaqlla P100-manta aswan allinta ruran.
 
 ### Hayk'aq churakuna
 
 HSE nin respiradorqa "sapa kutilla mana necesitakunchu" wayra hurquq wisq'asqa ukhupi llasachispa chaqruspa ima, ichaqa "allichaypaq pichaypaq necesitakunman". Aswan achka wasi llamk'ana wasikunaqa mana wisq'asqayuqchu, chaymi churakunaykita yuyaychayku (pisimanta pisi N95, FFP2 utaq P2; P100, FFP3 utaq P3 aswan allinmi) sapa kuti:
 
 - bolsakunata kichaspa utaq ñut'uta hich'aspa;
-- ñut'ukunata llasachispa yakuman chaqruspa ima;
+- ñut'ukunata llasachispa unuman chaqruspa ima;
 - ch'akisqa esmalteta utaq bizcochota (ñawpaq ruphachiy) qaspaspa, lijaspa utaq kutaspa;
 - ima ch'aki pichaytapas ruraspa, utaq aspiradorata ch'usaqyachispa;
 - esmalteta pulverizaspa (cabinapi: uraypi qhaway).
@@ -115,7 +115,7 @@ Pampakunapi, mesakunapi, p'achakunapi tiyakuq ñut'u allpaqa sapa kuti kuyuchisq
 
 ### Huq'uwan pichay
 
-- **Yakuwan trapeay, pichay ima.** Universidad de Utah yuyaychan sapa p'unchaw pampakunata llamk'ana mesakunata huq'u trapeadorwan pichanata, HSEtaq llamk'ana wasikunata sapa p'unchaw tukukuyninpi yakuwan mayllanankuta mañakun. Wasipiqa, sapa chaqruy qhipaman pichanaykita trapeanaykita ima yuyaychayku.
+- **Unuwan trapeay, pichay ima.** Universidad de Utah yuyaychan sapa p'unchaw pampakunata llamk'ana mesakunata huq'u trapeadorwan pichanata, HSEtaq llamk'ana wasikunata sapa p'unchaw tukukuyninpi unuwan mayllanankuta mañakun. Wasipiqa, sapa chaqruy qhipaman pichanaykita trapeanaykita ima yuyaychayku.
 - **Ama hayk'aqpas ch'akita pichaychu, ch'aki escobillawanpas, aire comprimidowanpas.** OSHA kaykunata hark'an exposiciónta yapaptinku, HSEtaq nin ama hayk'aqpas qarakunamanta p'achakunamanta ñut'u allpata escobillawan pichaychu nitaq phukuychu.
 - **Ñut'u manchakuq allpapaq rurasqa máquinawanlla aspiraray:** Estados Unidospi **HEPA** (0.3 µm sayayniyuq ñut'ukunamanta pisimanta pisi 99.97%-ta hap'iq filtro), utaq Reino Unidopi Unión Europeapi pisimanta pisi **ñut'u allpa Clase M**. Huk suyukunapi, kaqlla calificaciónta maskay. Sapa kuti taller aspiradorakuna, wasi aspiradorakuna ima mana kayhinachu calificasqa, mana llamk'achiykumanchu, ñut'u allpa pasaspa lluqsinanmanta lluqsinman. Ch'usaqyachinaykipaqqa respiradorniykita churakuy.
 
@@ -123,9 +123,9 @@ Pampakunapi, mesakunapi, p'achakunapi tiyakuq ñut'u allpaqa sapa kuti kuyuchisq
 
 - **Llamk'ana wasipaqlla p'achakunata churakuy**, sinchi awasqa telamanta, ñut'u allpata mana hap'iqta, sapa kutitaq t'aqsay (Utah sapa semana yuyaychan), huk p'achakunamanta t'aqasqa. HSE willan ñut'u allpayuq p'achaqa llamk'ay tukukuptinpas exposicionniykita qatinmi, chaymi wasiykipa huk cuartonkunaman manaraq yaykuspa p'achaykita tikranaykita yuyaychayku.
 - **Llamk'ana wasipi ama mikhuychu, ama ukyaychu, ama sayri pitaychu.** Digitalfire nisqanman hina, "cafeta wakichispaqa ama carbonato de bariota mesa azúcarwan pantachinkichu". Sapa mankata sutinwan qillqay.
-- **Makiykita mayllakuy** manaraq mikhuspa, ukyaspa, sayri pitaspa utaq bañoman rispa, silluykipa uranpipas pichay. Q'uñi yakuta llamp'u jabóntawan llamk'achiy, mana raspaq pichanawanchu.
+- **Makiykita mayllakuy** manaraq mikhuspa, ukyaspa, sayri pitaspa utaq bañoman rispa, silluykipa uranpipas pichay. Q'uñi unuta llamp'u jabóntawan llamk'achiy, mana raspaq pichanawanchu.
 
-Wawakunamanta uywakunamanta ima ñut'u allpata materialkunata karunchanapaq, [Ama ayllu-masiykita hampi-ruruwan wañuchiychu](/guides/home-safety) qhaway.
+Wawakunamanta uywakunamanta ima ñut'u allpata materialkunata karunchanapaq, [Ama ayllu-masiykita miyuwan wañuchiychu](/guides/home-safety) qhaway.
 
 ## Kaylla wayra hurquy, pulverizay {#extraction-and-spraying}
 
@@ -134,7 +134,7 @@ Wawakunamanta uywakunamanta ima ñut'u allpata materialkunata karunchanapaq, [Am
 **Kaylla wayra hurquyqa** (LEV) ñut'u allpata rurakusqan kaqpi hap'in: llamk'ay patapi campana utaq wisq'asqa, uyaykimanta wayrata aysaq wasimanta hawaman hurquq ventiladoryuq. Llasachiypim aswan achka ñut'u allpa rurakun, chaymi HSE huch'uy kichasqa ñawpaqniyuq wisq'asqa llasachina k'uchuta willan, Digitalfiretaq balanza patapi rendijayuq campanata. Kapusunki chayqa, HSEpa llamk'ana wasi yuyaychaynin chayan:
 
 - punkukunamanta, ventanakunamanta, purina ñankunamanta karupi waqaychay, wayra puriyqa atipanmi;
-- ch'uya **reemplazo wayrata** yaykuchiy (ventiladorpa hurqusqanta rantiq musuq wayra, punku k'irawan, ventanawan utaq yaykunawan);
+- ch'uya **reemplazo wayrata** yaykuchiy (ventiladorpa hurqusqanpa rantinpi yaykuq musuq wayra, punku k'irawan, ventanawan utaq yaykunawan);
 - hurqusqa wayrata hawaman kachay, punkukunamanta, ventanakunamanta, wayra yaykunakunamanta karupi;
 - manaraq qallarispa hap'ichisqa llamk'asqantapas qhaway.
 
@@ -144,7 +144,7 @@ Mana ima pukyupas kusikuypaq campanapaq wayra puriy yupaykunata quchu. Campana m
 
 HSE willan pulverizayqa "RCS-yuq phuyukunata ruranmanmi" (samaykuspa yaykuq sílice cristalina), "esmalte phuyukunaqa usqhaylla ch'akinku ñut'u allpamantaq tukunku". Tarisqayku sapa pukyum nin wayra hurquq cabina ukhullapi pulverizanata.
 
-- HSE wayra hurquq wisq'asqata munan, "atikuptinqa, yaku qhipayuq cabinatapas", pulverizay puchukunata yakupi hap'iq.
+- HSE wayra hurquq wisq'asqata munan, "atikuptinqa, unu qhipayuq cabinatapas", pulverizay puchukunata unupi hap'iq.
 - Cabinapi muyuq tornota llamk'achiy, nitrilo guantekunata respiradortawan churakuy, cabinata filtrontawan pichay pulverizay puchukuna manaraq ch'akiptin.
 - Manaraq esmaltachispa bizcochota escobillawan ñut'u allpamanta pichayqa ñut'u allpatam ruranpas; rantinpi huq'u esponjata yuyaychayku.
 
@@ -155,7 +155,7 @@ HSE willan pulverizayqa "RCS-yuq phuyukunata ruranmanmi" (samaykuspa yaykuq síl
 
 ### Ruphachiy ima q'usñitataq qun
 
-Sapa ruphachiymi q'usñita qun, ch'uya mitullawanpas. Yaku, dióxido de carbono ima lluqsin, "pisi monóxido de carbonowan" kawsaq rurasqakuna ruphaspa, Dave Finkelnburgtaq, Ceramics Monthlypi qillqaspa, monóxido de carbonopa atiyninta "aswan chaylla manchakuy" nin. **Monóxido de carbonoqa** (CO) ukhuta oxígenomanta yarqachiq gasmi, sayk'uyta, uma nanayta, uma muyuyta ima apamun. Ball clay, gres mitukunapi azufreqa bizcocho ruphachiykunaman ismusqa runtu q'apayta qun, azufre q'usñikunataq ñawikunata, sinqata, surq'ankunata ima ruphachin.
+Sapa ruphachiymi q'usñita qun, ch'uya mitullawanpas. Unu, dióxido de carbono ima lluqsin, "pisi monóxido de carbonowan" kawsaq rurasqakuna ruphaspa, Dave Finkelnburgtaq, Ceramics Monthlypi qillqaspa, monóxido de carbonopa atiyninta "aswan chaylla manchakuy" nin. **Monóxido de carbonoqa** (CO) ukhuta oxígenomanta yarqachiq gasmi, sayk'uyta, uma nanayta, uma muyuyta ima apamun. Ball clay, gres mitukunapi azufreqa bizcocho ruphachiykunaman ismusqa runtu q'apayta qun, azufre q'usñikunataq ñawikunata, sinqata, surq'ankunata ima ruphachin.
 
 Esmalte materialkunaqa aswanta yapan. Wakin metal óxidokunam q'usñita ruranku, "aswantaqa cobre, zinc, manganeso", chaykunam **metal q'usñi rupha unquyta** apamunman, chiri-chiriwan ruphawan unquy. Titi (plomo, Pb) "aswan manchakuymi", Universidad de Utah nin, "pisi temperaturallapi vaporman tukusqanrayku": gres temperaturakama ruphachisqaqa, "titiqa vaporman tukunqam". Fluorita, criolita, lepidolita ima flúor compuestokunata qunku. Pipas mana kusikuypaq hornokunamanta tupuykunata willarqanchu, chaymi sapa ruphachiypi wayrata hurquyta yuyaychayku.
 
@@ -173,41 +173,41 @@ Esmalte materialkunaqa aswanta yapan. Wakin metal óxidokunam q'usñita ruranku,
 ### Maypitaq hornota churana
 
 - Yuyaychayku garajeta, galponta utaq hornopaqlla cuartota, mana tiyana cuartotachu, wawakunamanta uywakunamanta wisq'ay atinata, Skutt yuyaychasqanman hina.
-- **Karunchay.** Pukyukunaqa mana kaqllatachu ninku: Skutt nin pisimanta pisi 18 in (46 cm) ima perqamanta utaq **rupharqaq** materialmanta (ima rupharqaqpas), CIRMA, Connecticutpa seguro empresan, yuyaychan 3 ft (0.9 m) ima rupharqaqmantapas. Hornoykipa manualninta qatiy; mana kaptinqa, perqakunamanta 18 in karunchay, ima rupharqaqmantapas 3 ft.
-- **Pampa.** Mana rupharqaq pampata llamk'achiy, concreto utaq cerámica baldosa hina, ama hayk'aqpas k'aspita, alfombrata utaq vinilota. K'aspikunata, papelkunata, solventekunata ima hornomanta karunchay.
-- **Electricidad.** CIRMA yuyaychan hornopaqlla circuitota, mana extensión cablekunata nitaq protector de sobretensiónkunata, ruphachiykuna chawpipi enchufeta hurquyta, 25 ft (7.6 m) ukhupitaq extintorta.
+- **Karunchay.** Pukyukunaqa mana kaqllatachu ninku: Skutt nin pisimanta pisi 18 pulgada (46 cm) ima perqamantapas utaq **rawrayta atiq** materialmanta (combustible: ima rawrayta atiqpas), CIRMA, Connecticutpa seguro empresan, yuyaychan 3 pie (0.9 m) ima rawrayta atiqmantapas. Hornoykipa manualninta qatiy; mana kaptinqa, perqakunamanta 18 pulgada karunchay, ima rawrayta atiqmantapas 3 pie.
+- **Pampa.** Mana rawrayta atiq pampata llamk'achiy, concreto utaq cerámica baldosa hina, ama hayk'aqpas k'aspita, alfombrata utaq vinilota. K'aspikunata, papelkunata, solventekunata ima hornomanta karunchay.
+- **Electricidad.** CIRMA yuyaychan hornopaqlla circuitota, mana extensión cablekunata nitaq protector de sobretensiónkunata, ruphachiykuna chawpipi enchufeta hurquyta, 25 pie (7.6 m) ukhupitaq extintorta.
 - **Cuartopa ruphaynin.** Skutt nin cuartota {{38 °C; 100 °F}} uranpi waqaychanata, mana chayqa controladorqa hornota wañuchinmanmi. Wayra hurquq mana ruphayta hurquptin, huch'uy cuartoqa ventiladortapas munanmanmi. Rociadorkunata ruphay sensorkunata ima ama horno pataman chiqanta churaychu.
-- **Monóxido de carbono alarma.** Mana tarirqaykuchu electricidad hornopaq hukta mañakuq kamachiyta, ichaqa ruphaq kawsaq rurasqakunam CO-ta ruranku, chaymi horno cuartopi, waqtanpi cuartokunapi ima alarmaqa allin yuyaywan, pisi chaniyuq ruraymi ([Ama ayllu-masiykita hampi-ruruwan wañuchiychu](/guides/home-safety) qhaway).
+- **Monóxido de carbono alarma.** Mana tarirqaykuchu electricidad hornopaq hukta mañakuq kamachiyta, ichaqa ruphaq kawsaq rurasqakunam CO-ta ruranku, chaymi horno cuartopi, waqtanpi cuartokunapi ima alarmaqa allin yuyaywan, pisi chaniyuq ruraymi ([Ama ayllu-masiykita miyuwan wañuchiychu](/guides/home-safety) qhaway).
 
 Rakuqa achka q'usñita, CO-tawan ima ruran; Utah yuyaychan hawapi ruranata, wayra yaykunakunamanta ventanakunamanta karupi. Ruphachiymantaqa, [Huch'uy hornopi ruphachiy](/guides/firing) qhaway.
 
 ## Aswan allinta qhawana materialkuna {#materials}
 
-Aswan achka esmalte materialkuna, sílice, mitukuna, feldespatokuna, fritakuna ima, aswantaqa ñut'u allpa manchakuymi, chaytaqa hawapi yachaykuna kamachin. Aswan pisi materialkunam kikinmanta miyuyuq, samaykuspa, millp'uspa utaq qarawan llamiykuspa. Digitalfire yapan colorantekunaqa sapa kutilla chawa óxidokunamanta aswan mana manchakunam kasqankuta, "miyuyuq metalkunata qunanpaq mana allin tupachisqa esmaltekunaqa ima materialkunamantapas rurakunmanmi" nispa: mikhunapaq mana manchakuyqa llapan esmalte ruranamantam hamun, mana huk materialllamantachu.
+Aswan achka esmalte materialkuna, sílice, mitukuna, feldespatokuna, fritakuna ima, aswantaqa ñut'u allpa manchakuymi, chaytaqa hawapi yachaykuna kamachin. Aswan pisi materialkunam kikinmanta miyuyuq, samaykuspa, millp'uspa utaq qarawan llamiykuspa. Digitalfire yapan colorantekunaqa sapa kutilla chawa óxidokunamanta ancha aswan mana manchakunam kasqankuta, "miyuyuq metalkunata qunanpaq mana allin tupachisqa esmaltekunaqa ima materialkunamantapas rurakunmanmi" nispa: mikhunapaq mana manchakuyqa llapan esmalte ruranamantam hamun, mana huk materialllamantachu.
 
-**IARC grupoqa** cáncer t'aqaymi: Grupo 1 niyta munan "runakunapaq carcinógeno", Grupo 2A "yaqapaschá runakunapaq carcinógeno", Grupo 2B "ichapas runakunapaq carcinógeno", Grupo 3 "runakunapaq carcinógeno kasqanpi mana t'aqay atina", chaytaqa niyta munan mana yaqa pruebakuna kanchu imaynatapas yuyaychanapaq.
+**IARC grupoqa** cáncer t'aqaymi: Grupo 1 niyta munan "runakunapaq carcinógeno", Grupo 2A "yaqapaschá runakunapaq carcinógeno", Grupo 2B "ichapas runakunapaq carcinógeno", Grupo 3 "runakunapaq carcinógeno kasqanpi mana t'aqay atina", chaytaqa niyta munan pruebakuna mana aypanchu imaynatapas t'aqanapaq.
 
 Table: Aswan allinta qhawana esmalte materialkuna
 Label: Aswan allinta qhawana materialkuna
 
-| Material                                          | Manchakuy                                                                                                                                                                                                                                                               | Harkakuy                                                                                                                               |
-| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Titi (plomo, Pb) compuestokuna, titi fritakuna    | "Samaykuspa utaq millp'uspa ancha miyuyuqmi"; gres temperaturakama ruphachisqaqa, titi (Pb) vaporman tukun.                                                                                                                                                             | Ama llamk'achiychu; Digitalfire nin yachaqkunallapaq. "Mana titiyuq" (sin plomo) mana qillqasqa esmalteqa titiyuq (Pb) kasqanta yuyay. |
-| Carbonato de bario                                | Yakupi mana chulluchikunchu, ichaqa wiksapa ácidonpi chulluchikunmi; sunquta aychakunatawan unquchin (mana allin sunqu takay, pisi potasio).                                                                                                                            | Bario frita utaq estroncio, esmalte rurana atichiptin; respirador; sutiyuq manka.                                                      |
-| Dióxido de manganeso                              | Ñut'u allpa utaq q'usñi **manganismota** apamunman, Parkinson unquy hina nervio unquy, sapa kutilla 1-manta 3 watakama exposición qhipaman. Q'usñi metal q'usñi rupha unquyta apamunman.                                                                                | Rantinpi yana colorantekuna pisi porcentajepi; hornopa wayranta hurquy.                                                                |
-| Dicromato de potasio, óxido de cromo              | Cromo(VI), dicromatopi hina, IARC Grupo 1-mi. Chay listaqa mana cromo(III)-ta hap'inchu, óxido de cromopi hina.                                                                                                                                                         | Dicromatota ama llamk'achiychu. Óxido de cromotaqa aswan pisi manchakuq hina qhawayku, ichaqa ñut'u allpanta pisillapi waqaychay.      |
-| Cobalto                                           | Chulluchikuq cobalto(II) salkuna IARC 2A; óxido de cobalto(II) 2B; yana Co₃O₄ Grupo 3. Carbonato de cobaltotaqa Unión Europeapi t'aqasqam samaykusqa cáncerta apamunman, wawa ruray atiyta waqllichinman, genético waqllikuyta apamunmanchá nispa (H350i, H360F, H341). | Ñut'u allpata pisillapi waqaychay; yana llimp'ipaq colorantekuna.                                                                      |
-| Níquel compuestokuna                              | Universidad de Utahpa yachasqa utaq yaqapaschá runakunapaq carcinógenokunanpa ukhunpim.                                                                                                                                                                                 | Hatun porcentajekunamanta aswan colorantekuna.                                                                                         |
-| Cadmio, selenio, chawa utaq colorantekunapi       | Cadmio compuestokunaqa Utahpa yachasqa utaq yaqapaschá runakunapaq carcinógenokunanpa ukhunpim.                                                                                                                                                                         | "Yachaqkunallam" (Digitalfire); sapa colorantepa SDS-ninta ñawiriy.                                                                    |
-| Antimonio, vanadio                                | Kimsa valenciayuq antimonio (trióxido de antimoniopi hina) IARC 2A; vanadio "samaykuspa ancha miyuyuqmi".                                                                                                                                                               | Vanadio yachaqkunallapaq; antimonio ñut'u allpata pisillapi waqaychay.                                                                 |
-| Cobre, zinc                                       | Hornopa q'usñinqa metal q'usñi rupha unquyta apamunman; chawa óxido de zincqa "sapa kutilla mana manchakuq hina qhawasqam".                                                                                                                                             | Hornopa wayranta hurquy.                                                                                                               |
-| Carbonato de litio                                | "Samaykuspa ancha miyuyuqmi". Unión Europeapa yachaq comiténmi tukuchirqan wawa ruray atiyta, manaraq paqarisqa wawata, ñuñuq wawakunatapas waqllichinmanmi nispa; qhawasqaykupiqa kamachiy hina chaskisqa kasqanqa mana takyachisqachu karqan.                         | Guantekuna, respirador; wawakunamanta karunchay. Wiksayuq kaspa ñuñuchispa ima aswan allinta qhawanaykita yuyaychayku.                 |
-| Bórax, ácido bórico                               | Unión Europeapi t'aqasqa "wawa ruray atiyta waqllichinmanmi; manaraq paqarisqa wawata waqllichinmanmi" nispa.                                                                                                                                                           | Guantekuna; atispaqa boro fritamanta.                                                                                                  |
-| Carbonato de sodio, potasa, álcali feldespatokuna | Qarata ruphachiqkuna.                                                                                                                                                                                                                                                   | Guantekuna.                                                                                                                            |
-| Fluorita, criolita, lepidolita                    | Ruphachiypi flúor gaskunata qunku; fluoritaqa qaratapas ruphachin.                                                                                                                                                                                                      | Hornopa wayranta hawaman hurquy; guantekuna.                                                                                           |
-| Talco                                             | IARC 2A julio 2024-manta; asbestowan qhillichasqa talcoqa asbesto hina yupasqam, Grupo 1.                                                                                                                                                                               | Laminasqa (mana fibrosochu), mana asbestoyuq talco; SDS-ninta qhaway.                                                                  |
+| Material                                          | Manchakuy                                                                                                                                                                                                                                                               | Harkakuy                                                                                                                                |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Titi (plomo, Pb) compuestokuna, titi fritakuna    | "Samaykuspa utaq millp'uspa ancha miyuyuqmi"; gres temperaturakama ruphachisqaqa, titi (Pb) vaporman tukun.                                                                                                                                                             | Ama llamk'achiychu; Digitalfire nin yachaqkunallapaq. "Mana titiyuq" (sin plomo) mana qillqasqa esmalteqa titiyuq (Pb) kasqanta yuyay.  |
+| Carbonato de bario                                | Unupi mana chulluchikunchu, ichaqa wiksapa ácidonpi chulluchikunmi; sunquta aychakunatawan unquchin (mana allin sunqu takay, pisi potasio).                                                                                                                             | Bario frita utaq estroncio, esmalte rurana atichiptin; respirador; sutiyuq manka.                                                       |
+| Dióxido de manganeso                              | Ñut'u allpa utaq q'usñi **manganismota** apamunman, Parkinson unquy hina nervio unquy, sapa kutilla 1-manta 3 watakama exposición qhipaman. Q'usñi metal q'usñi rupha unquyta apamunman.                                                                                | Rantinpi yana colorantekuna pisi porcentajepi; hornopa wayranta hurquy.                                                                 |
+| Dicromato de potasio, óxido de cromo              | Cromo(VI), dicromatopi hina, IARC Grupo 1-mi. Chay listaqa mana cromo(III)-ta hap'inchu, óxido de cromopi hina.                                                                                                                                                         | Dicromatota ama llamk'achiychu. Óxido de cromotaqa ancha aswan pisi manchakuq hina qhawayku, ichaqa ñut'u allpanta pisillapi waqaychay. |
+| Cobalto                                           | Chulluchikuq cobalto(II) salkuna IARC 2A; óxido de cobalto(II) 2B; yana Co₃O₄ Grupo 3. Carbonato de cobaltotaqa Unión Europeapi t'aqasqam samaykusqa cáncerta apamunman, wawa ruray atiyta waqllichinman, genético waqllikuyta apamunmanchá nispa (H350i, H360F, H341). | Ñut'u allpata pisillapi waqaychay; yana llimp'ipaq colorantekuna.                                                                       |
+| Níquel compuestokuna                              | Universidad de Utahpa yachasqa utaq yaqapaschá runakunapaq carcinógenokunanpa ukhunpim.                                                                                                                                                                                 | Hatun porcentajekunamanta aswan colorantekuna.                                                                                          |
+| Cadmio, selenio, chawa utaq colorantekunapi       | Cadmio compuestokunaqa Utahpa yachasqa utaq yaqapaschá runakunapaq carcinógenokunanpa ukhunpim.                                                                                                                                                                         | "Yachaqkunallam" (Digitalfire); sapa colorantepa SDS-ninta ñawiriy.                                                                     |
+| Antimonio, vanadio                                | Kimsa valenciayuq antimonio (trióxido de antimoniopi hina) IARC 2A; vanadio "samaykuspa ancha miyuyuqmi".                                                                                                                                                               | Vanadio yachaqkunallapaq; antimonio ñut'u allpata pisillapi waqaychay.                                                                  |
+| Cobre, zinc                                       | Hornopa q'usñinqa metal q'usñi rupha unquyta apamunman; chawa óxido de zincqa "sapa kutilla mana manchakuq hina qhawasqam".                                                                                                                                             | Hornopa wayranta hurquy.                                                                                                                |
+| Carbonato de litio                                | "Samaykuspa ancha miyuyuqmi". Unión Europeapa yachaq comiténmi tukuchirqan wawa ruray atiyta, manaraq paqarisqa wawata, ñuñuq wawakunatapas waqllichinmanmi nispa; qhawasqaykupiqa kamachiy hina chaskisqa kasqanqa mana takyachisqachu karqan.                         | Guantekuna, respirador; wawakunamanta karunchay. Wiksayuq kaspa ñuñuchispa ima aswan allinta qhawanaykita yuyaychayku.                  |
+| Bórax, ácido bórico                               | Unión Europeapi t'aqasqa "wawa ruray atiyta waqllichinmanmi; manaraq paqarisqa wawata waqllichinmanmi" nispa.                                                                                                                                                           | Guantekuna; atispaqa boro fritamanta.                                                                                                   |
+| Carbonato de sodio, potasa, álcali feldespatokuna | Qarata k'arachiqkuna (irritantekuna).                                                                                                                                                                                                                                   | Guantekuna.                                                                                                                             |
+| Fluorita, criolita, lepidolita                    | Ruphachiypi flúor gaskunata qunku; fluoritaqa qaratapas k'arachin.                                                                                                                                                                                                      | Hornopa wayranta hawaman hurquy; guantekuna.                                                                                            |
+| Talco                                             | IARC 2A julio 2024-manta; asbestowan qhillichasqa talcoqa asbesto hina yupasqam, Grupo 1.                                                                                                                                                                               | Laminasqa (mana fibrosochu), mana asbestoyuq talco; SDS-ninta qhaway.                                                                   |
 
-Bórax, ácido bórico, carbonato de sodio, potasa ima yakupi chulluchikunku, chaymi paykunata p'akisqa qarawan ukhuman yaykunankupaq utaq mana mayllasqa makikunamanta millp'unapaq aswan atikuq hina qhawayku.
+Bórax, ácido bórico, carbonato de sodio, potasa ima unupi chulluchikunku, chaymi paykunata p'akisqa qarawan ukhuman yaykunankupaq utaq mana mayllasqa makikunamanta millp'unapaq aswan atikuq hina qhawayku.
 
 > [!NOTE]
 > Esmalte rurana chawa carbonato de bariota, achka manganesota, utaq ima titi (Pb) utaq cadmio materialtapas mañakuptinqa, rantinpi frita utaq colorante llamk'achiq rikch'aqta maskay. Glazecalcqa ñawpaq esmaltepa rantinpa ima químicanta tupachiyta atin; chaymantataq musuq esmalteta pruebay.
@@ -218,17 +218,17 @@ Bórax, ácido bórico, carbonato de sodio, potasa ima yakupi chulluchikunku, ch
 
 - **Guantekunata churakuy** huq'u utaq ch'aki esmaltepaq; Utah nin "churakunanmi tiyan". HSE pulverizanapaq nitrilota sutichan. Mana ima pukyupas guante materialkunata tupachirqanchu, chaymi llapan esmalte llamk'aypaq nitrilota yuyaychayku.
 - **Barrera cremakunaqa mana guantekunachu.** HSE: "'Barrera cremakunaqa' mana 'huq'u guantekunachu'".
-- Sílice ñut'u allpapas huq'u llamk'aypas **contacto dermatitista** (puka, nanaq, p'akisqa qara) apamunku, p'akisqa qarataq materialkunata yaykuchin. Q'uñi yakuwan llamp'u jabónwan mayllakuy, llamk'ay qhipamantaq cremata llamk'achiy.
+- Sílice ñut'u allpapas huq'u llamk'aypas **contacto dermatitista** (puka, nanaq, p'akisqa qara) apamunku, p'akisqa qarataq materialkunata yaykuchin. Q'uñi unuwan llamp'u jabónwan mayllakuy, llamk'ay qhipamantaq cremata llamk'achiy.
 - **K'irikunata p'istuy.** Bario compuestokunaqa, huk rikch'aq, mana p'akisqa qaramanta pasasqankuta mana yuyakunchu, ichaqa p'akisqa qaramanta pasanmanmi.
 
 ### Ñawikuna
 
 - Esmaltasqa sañakunata kutaspaqa mana manchakuna anteojokunata churakuy. Ñut'ukunata hich'aspapas yuyaychaykum.
-- **Q'uñi horno ukhuman qhawaspa.** Hornokunaqa **infrarrojo** radiaciónta (mana rikuy atina ruphay) qunku, chaytaq "cataratakunata apamunman". IR-paq calificasqa anteojokunapa yanayaynin yuyaychasqaqa mana kaqllachu: 1.7-manta 3.0-kama (Universidad de Utah), 2.0-manta 5.0-kama (Universidad de Calgary). Yanayay 3 iskayninpa ukhunpim; qhawayniykipi manchakuna rikhuriptinqa aswan yanata akllay.
+- **Q'uñi horno ukhuman qhawaspa.** Hornokunaqa **infrarrojo** radiaciónta (mana rikuy atina ruphay) qunku, chaytaq "cataratakunata apamunman". IR-paq calificasqa anteojokunapa yanayaynin yuyaychasqaqa mana kaqllachu: 1.7-manta 3.0-kama (Universidad de Utah), 2.0-manta 5.0-kama (Universidad de Calgary). Yanayay 3 iskayninpa ukhunpim; qhawayniykipi ch'iqchikuna (manchas) rikhuriptinqa aswan yanata akllay.
 
 ## Mana manchakunapaq willakuy hojata ñawiriy {#safety-data-sheets}
 
-**Mana manchakunapaq willakuy hojaqa** (SDS; mawk'akunaqa MSDS ninku) rantiqpa qillqanmi, rantikuqpa ima kasqanmanta, manchakuyninkunamanta, llamk'achiyninmanta ima. Sapa chawa materialpas, sapa rantikuq esmaltepas hukniyuq kanan tiyan; rantikuqpa p'anqanpi maskay utaq rantiqta tapuy. 16 t'aqayuqmi, iskaytaq aswan chaniyuq:
+**Mana manchakunapaq willakuy hojaqa** (SDS; mawk'akunaqa MSDS ninku) qhatuqpa qillqanmi, rantikunapa ima kasqanmanta, manchakuyninkunamanta, llamk'achiyninmanta ima. Sapa chawa materialpas, sapa rantikuna esmaltepas hukniyuq kananmi; rantikunapa p'anqanpi maskay utaq qhatuqta tapuy. 16 t'aqayuqmi, iskaytaq aswan chaniyuq:
 
 - **2 t'aqa, Manchakuy riqsichiy:** t'aqay, **willakuy simi**, "Peligro" hina, **pictogramakuna** (huch'uy willakuy siqikuna), manchakuy niykunapas.
 - **8 t'aqa, Exposición kamachiy, sapa runapa harkakuynin:** exposición límitekuna, necesitakuq **ingeniería kamachiykuna** (wayra puriy, wayra hurquy) churakunapaq harkakuy llamk'anakunapas.

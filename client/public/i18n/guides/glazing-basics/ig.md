@@ -24,7 +24,7 @@ Usoro glaze na-edepụta ihe eji arụ ọrụ, dịka feldspar, whiting na kaol
 
 **Ahụ ụrọ** (clay body) bụ ụrọ e ji kpụọ ite. Enwere ụdị atọ bụ isi.
 
-- **Earthenware**: ahụ ụrọ ọkụ dị ala, ihe dị ka cone 06–02, nke na-anọgide na-enwe oghere. Ọ na-adịkarị uhie ma ọ bụ buff, ọ chọrọ glaze ka o jide mmiri.
+- **Earthenware**: ahụ ụrọ ọkụ dị ala, ihe dị ka cone 06–02, nke na-anọgide na-enwe oghere. Ọ na-adịkarị uhie ma ọ bụ buff, ọ chọrọ glaze{{en: glaze}} ka o jide mmiri.
 - **Stoneware**: ahụ ụrọ ọkụ etiti ruo ọkụ dị elu, ihe dị ka cone 5–10, nke na-aghọ vitreous ma ọ bụ ihe fọrọ nke nta.
 - **Porcelain**: ahụ ụrọ ọcha, ọkụ dị elu, nwere ọtụtụ kaolin, nke na-enwekarị ìhè na-agafe ya.
 
@@ -57,7 +57,7 @@ Potclays, onye na-ere ngwa UK, na-akọwa ịgba biscuit ruo ihe dị ka {{1000 
 
 Ndị ọkpụ ite na-akpọ ịgba ọkụ site na **cone**: obere pyramid ceramic nke na-ehulata mgbe ọ natara ọkụ a kara aka. Orton, nke na-eme ha, kwuru ya otu a: "Cone anaghị atụ naanị ọkụ. Ha na-atụ heatwork, mmetụta jikọrọ oge na ọkụ."
 
-**Heatwork** bụ ihe kpatara ya: glaze, ụrọ na cone niile na-aza otu ogologo oge ha dị ọkụ na otu ọkụ ha dị. Ịgba ọkụ nwayọọ na-ehulata cone n'ọkụ dị ala karịa, nke ọsọ n'ọkụ dị elu karịa. Chaatị Orton gosiri cone 6 na-ehulata na {{2165 °F; 1185 °C}} mgbe ịgba ọkụ na-akwụsị na-arịgo {{27 °F; 15 °C}} kwa elekere, na {{2232 °F; 1222 °C}} na {{108 °F; 60 °C}} kwa elekere, na {{2269 °F; 1243 °C}} na {{270 °F; 150 °C}} kwa elekere, ọsọ a tụrụ n'ime {{180 °F; 100 °C}} ikpeazụ. Cone emechaala mgbe isi ya hulatara 90°, nke Orton kpọrọ ọnọdụ elekere 5.
+**Heatwork** bụ ihe kpatara ya: glaze{{en: glaze}}, ụrọ na cone niile na-aza otu ogologo oge ha dị ọkụ na otu ọkụ ha dị. Ịgba ọkụ nwayọọ na-ehulata cone n'ọkụ dị ala karịa, nke ọsọ n'ọkụ dị elu karịa. Chaatị Orton gosiri cone 6 na-ehulata na {{2165 °F; 1185 °C}} mgbe ịgba ọkụ na-akwụsị na-arịgo {{27 °F; 15 °C}} kwa elekere, na {{2232 °F; 1222 °C}} na {{108 °F; 60 °C}} kwa elekere, na {{2269 °F; 1243 °C}} na {{270 °F; 150 °C}} kwa elekere, ọsọ a tụrụ n'ime {{180 °F; 100 °C}} ikpeazụ. Cone emechaala mgbe isi ya hulatara 90°, nke Orton kpọrọ ọnọdụ elekere 5.
 
 Nọmba cone si na 022 ruo 42. Efu n'ihu na-egosi usoro dị jụụ karịa, ebe nọmba ka ukwuu dị jụụ karịa: cone 06 dị jụụ karịa cone 04, cone 01 dịkwa jụụ karịa cone 1.
 
@@ -79,7 +79,7 @@ N'èzí North America, ndị na-ere ngwa na-enyekarị °C kama cone. Hermann Se
 
 ## Site n'usoro glaze ruo unity formula {#unity-formula}
 
-**Usoro batch** (batch recipe) na-edepụta ihe eji arụ ọrụ site n'ịdị arọ, a na-ahazikarị ya ka ntọala ya gbakọọ 100. **Ihe mgbakwunye** (additives: ihe na-enye agba, opacifier na ihe na-ejide ya n'ime mmiri) na-aga n'elu 100 ahụ, na-abụkarị pasentị nke ntọala. Iji hụ ihe glaze ahụ bụ, ndị ọkpụ ite na-agbanwe usoro ahụ ka ọ ghọọ **UMF (unity molecular formula)** (**UMF**, ma ọ bụ **Seger formula**, n'aha Hermann Seger, onye jiri usoro kọlụm atọ ya mbụ).
+**Usoro batch** (batch recipe) na-edepụta ihe eji arụ ọrụ site n'ịdị arọ, a na-ahazikarị ya ka ntọala ya gbakọọ 100. **Ihe mgbakwunye** (additives: ihe na-enye agba, opacifier na ihe na-ejide ya n'ime mmiri) na-aga n'elu 100 ahụ, na-abụkarị pasentị nke ntọala. Iji hụ ihe glaze{{en: glaze}} ahụ bụ, ndị ọkpụ ite na-agbanwe usoro ahụ ka ọ ghọọ **unity molecular formula** (**UMF**, ma ọ bụ **Seger formula**, n'aha Hermann Seger, onye jiri usoro kọlụm atọ ya mbụ).
 
 Table: Site n'usoro glaze ruo unity formula: ihe atụ Glazy rụpụtara
 Label: Site n'usoro glaze ruo unity formula
@@ -89,7 +89,7 @@ Label: Site n'usoro glaze ruo unity formula
 | 1. Usoro batch  | Ihe eji arụ ọrụ site n'ịdị arọ, ahaziri ruo 100                                                                          | Feldspar 40%, n'etiti ndị ọzọ                                                                                                       |
 | 2. Nyocha oxide | Dị ka akara nri: a na-agbakọ oxide nke ihe ọ bụla dịka pasentị ịdị arọ, a na-ahapụkwa gas                                | Feldspar ahụ bụ 64.8% silica, ya mere 40% ya na-eweta 25.9% SiO₂. Glaze a gbara ọkụ bụ 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
 | 3. Mole         | Ịdị arọ na-aghọ **mole**, ọnụ ọgụgụ molecule, n'ihi na "Gram nwere ike iduhie n'ihi na oxide ụfọdụ dị arọ karịa ndị ọzọ" | 60.1 g nke SiO₂ bụ otu mole, ya mere 67.4 g bụ ihe dị ka 1.12 mole                                                                  |
-| 4. Unity        | A na-eji ngụkọta flux kee ihe niile, ka flux gbakọọ 1                                                                    | Flux gbakọrọ 0.303; ike na-enye K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                                           |
+| 4. Unity        | A na-eji ngụkọta flux kee ihe niile, ka flux gbakọọ 1                                                                    | Flux gbakọrọ 0.303; ịkee ya na-enye K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                                       |
 
 [Ibe usoro glaze](/recipe) Glazecalc na-eme nzọụkwụ anọ ahụ ka ị na-ede, ma gosi nsonaazụ ya na kọlụm atọ: flux (R₂O na RO) gbakọrọ 1; stabilizer (R₂O₃: alumina, ebe a na-etinyekarị boron); na ihe na-eme iko (RO₂: silica). "Unification bụ naanị ngwa ọrụ nhazi," ka Glazy kwuru: usoro glaze abụọ e ji ihe dị iche iche mee mana nwere otu unity formula "na-akpa àgwà fọrọ nke nta ka ọ bụrụ otu mgbe a gbachara ha ọkụ". Ya mere 1 ahụ bụ ihe ntụle a na-ekerịta, ọ bụghị ọnụ ọgụgụ ị na-atụ. Digitalfire gbakwunyere na usoro ahụ "anaghị arụ ọrụ nke ọma n'ọkụ dị ala", ebe boron abụghị flux nkịtị, nakwa na unity formula bụ "maka ntụle, a na-ahụkwa ha nke ọma n'ọnọdụ ha". **Tụlee** na-etinye usoro abụọ n'akụkụ, oxide na oxide.
 
@@ -131,7 +131,7 @@ Akwụkwọ ochie na-eji aka eme mgbakọ a, site na **molecular weight** (ịd�
 
 ### Frit
 
-**Frit** bụ iko e mere n'ụlọ ọrụ: mineral e gbazere, e tinyere na mmiri ka ọ jụọ ngwa ngwa, e gwerekwa ya. Ime frit na-eme ka ihe na-agbaze na mmiri dịka borax ghara ịgbaze, na-ekpochi oxide nwere nsí dịka lead (Pb) na barium n'ime iko kwụsiri ike, na-enye ihe na-adịgide otu karịa mineral amụ, na-achụpụkwa gas, ya mere glaze e ji frit mee "enweghị ntụpọ karịa nke ukwuu" (Digitalfire). Frit na-agbazekwa n'oge: frit soda na-arụ ọrụ na cone 06, ebe feldspar "na-amalite naanị ịdị nro na cone 6". Ha dị oke ọnụ, ha chọrọ ụrọ ka ha nọrọ n'ime mmiri (ihe atụ Digitalfire bụ 85% frit na 15% ụrọ), ha bụkwa "n'echiche anaghị agbaze, mana n'ezie, ọ bụghị otu a".
+**Frit** bụ iko e mere n'ụlọ ọrụ: mineral e gbazere, e tinyere na mmiri ka ọ jụọ ngwa ngwa, e gwerekwa ya. Ime frit na-eme ka ihe na-agbaze na mmiri dịka borax ghara ịgbaze, na-ekpochi oxide nwere nsí dịka lead (Pb) na barium n'ime iko kwụsiri ike, na-enye ihe na-adịgide otu karịa mineral amụ, na-achụpụkwa gas, ya mere glaze{{en: glaze}} e ji frit mee "enweghị ntụpọ karịa nke ukwuu" (Digitalfire). Frit na-agbazekwa n'oge: frit soda na-arụ ọrụ na cone 06, ebe feldspar "na-amalite naanị ịdị nro na cone 6". Ha dị oke ọnụ, ha chọrọ ụrọ ka ha nọrọ n'ime mmiri (ihe atụ Digitalfire bụ 85% frit na 15% ụrọ), ha bụkwa "n'echiche anaghị agbaze, mana n'ezie, ọ bụghị otu a".
 
 A na-akpọ frit North America site n'aha onye mere ya na nọmba: Ferro Frit 3134 (Ferro bụ Vibrantz ugbu a) dị n'ihe dị ka 22% nke usoro glaze ọha Glazy. Usoro glaze UK na-akpọkarị frit nkịtị, dịka standard borax frit.
 
@@ -152,7 +152,7 @@ Label: Ihe glaze a na-ahụkarị
 | Zinc oxide                                        | ZnO                         | Ngbuke na kristal; nke karịrị akarị nwere ike ịkpata crawling                                                                                                         |
 | Frit boron, Gerstley Borate, colemanite           | B₂O₃                        | Dị mkpa site na cone 06 ruo cone 6; frit "na-adịgide otu karịa ma na-agbazeghị na mmiri karịa borate amụ"                                                             |
 | Lithium carbonate                                 | Li₂O                        | Flux mgbasa dị ala; dị oke ọnụ, ya mere a na-eji ya obere obere                                                                                                       |
-| Strontium carbonate                               | SrO                         | Onye nnọchi barium nwere nsí pere mpe                                                                                                                                 |
+| Strontium carbonate                               | SrO                         | Onye nnọchi barium nwere nsí pere mpe karịa barium                                                                                                                    |
 | Barium carbonate                                  | BaO                         | Nwere nsí n'ụdị amụ ya; glaze nwere ọtụtụ barium nwere ike ịhapụ metal (leach)                                                                                        |
 | Bentonite                                         | Ijide n'ime mmiri           | Ụrọ dị nnọọ nro, na-abụkarị 1–3%, iji kwụsị ịda n'ala                                                                                                                 |
 
@@ -173,7 +173,7 @@ Ihe na-agbanwekwa. Custer feldspar kwụsịrị na 2023. Ebe ngwuputa Gerstley 
 
 ## Ihe na-enye agba na opacifier {#color}
 
-**Ihe na-enye agba** (colorant) bụ metal oxide ma ọ bụ carbonate na-enye glaze agba; **stain** bụ ihe na-enye agba e mere n'ụlọ ọrụ, kwụsiri ike ma na-adịgide otu karịa oxide amụ. Ihe na-enye agba na-adịkarị n'okpuru 5% nke ntọala, ọtụtụ n'okpuru 1%, carbonate nwekwara ihe dị ka ọkara ike oxide yiri ya.
+**Ihe na-enye agba** (colorant) bụ metal oxide ma ọ bụ carbonate na-enye glaze{{en: glaze}} agba; **stain** bụ ihe na-enye agba e mere n'ụlọ ọrụ, kwụsiri ike ma na-adịgide otu karịa oxide amụ. Ihe na-enye agba na-adịkarị n'okpuru 5% nke ntọala, ọtụtụ n'okpuru 1%, carbonate nwekwara ihe dị ka ọkara ike oxide yiri ya.
 
 Table: Ihe na-enye agba a na-ahụkarị, dịka pasentị nke ntọala
 Label: Ihe na-enye agba a na-ahụkarị
@@ -194,19 +194,19 @@ Glaze ntọala na-agbanwe agba. Ntọala na-egbuke egbuke, doro anya na-enye agb
 
 ### Opacifier
 
-**Opacifier** na-eme ka glaze **ghara ịhụ ìhè** (opaque), na-ezo ụrọ; glaze **doro anya** (transparent) na-ahapụ ya ka ọ pụta.
+**Opacifier** na-eme ka glaze **ghara ikwe ka ìhè gafee** (opaque), na-ezo ụrọ; glaze **doro anya** (transparent) na-ahapụ ya ka ọ pụta.
 
 Table: Opacifier
 
-| Opacifier                                     | Ọnụ ọgụgụ a na-ahụkarị             | Ihe ndetu                                                                                                 |
-| --------------------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% maka ịghara ịhụ ìhè kpamkpam | Nhọrọ dị ọnụ ala karịa; brand ndị ahụ bụ otu ihe e gwere n'ọnụ dị iche iche                               |
-| Tin oxide                                     | Ihe dị ka 5–7% (atụmatụ anyị)      | Dị oke ọnụ; anaghị eme ka ọ ghara ịhụ ìhè nke ọma na reduction                                            |
-| Titanium dioxide                              | Karịa 2%                           | Ịghara ịhụ ìhè dị nro, na-ahapụ ntakịrị ìhè; na 10% ma ọ bụ karịa, elu matte, nwere ụdị, kristal na-apụta |
+| Opacifier                                     | Ọnụ ọgụgụ a na-ahụkarị            | Ihe ndetu                                                                                                         |
+| --------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% ka ìhè ghara ịgafe kpamkpam | Nhọrọ dị ọnụ ala karịa; brand ndị ahụ bụ otu ihe e gwere n'ọnụ dị iche iche                                       |
+| Tin oxide                                     | Ihe dị ka 5–7% (atụmatụ anyị)     | Dị oke ọnụ; anaghị egbochi ìhè ịgafe nke ọma na reduction                                                         |
+| Titanium dioxide                              | Karịa 2%                          | Mgbochi ìhè dị nro, na-ahapụ ntakịrị ìhè ka ọ gafee; na 10% ma ọ bụ karịa, elu matte, nwere ụdị, kristal na-apụta |
 
 ## Glaze fit na ntụpọ {#fit-and-defects}
 
-Ụrọ na glaze na-ebuwanye ka ha na-ekpo ọkụ ma na-ebelata ka ha na-ajụ oyi, nke ọ bụla otu o si dị: **mgbasa ọkụ** ya (thermal expansion). **Glaze fit** bụ otu ha abụọ si dabara. Fit dị mma na-ahapụ glaze ka ụrọ pịkọọ ya ntakịrị; Digitalfire sị ntakịrị mpịkọ na-eme ka ite sie ike, ebe nke karịrị akarị nwere ike ime ka ọ ghara ike ma gbawaa ya.
+Ụrọ na glaze{{en: glaze}} na-ebuwanye ka ha na-ekpo ọkụ ma na-ebelata ka ha na-ajụ oyi, nke ọ bụla otu o si dị: **mgbasa ọkụ** ya (thermal expansion). **Glaze fit** bụ otu ha abụọ si dabara. Fit dị mma na-ahapụ glaze ka ụrọ pịkọọ ya ntakịrị; Digitalfire sị ntakịrị mpịkọ na-eme ka ite sie ike, ebe nke karịrị akarị nwere ike ime ka ọ ghara ike ma gbawaa ya.
 
 ### Crazing na shivering
 
@@ -230,17 +230,17 @@ Gbanwee otu ihe n'otu oge, debe test tile gị.
 Table: Ntụpọ glaze a na-ahụkarị, ihe na-akpatakarị ha na ngwọta mbụ
 Label: Ntụpọ glaze a na-ahụkarị
 
-| Ntụpọ      | Otu ọ dị                                       | Ihe na-akpatakarị ya                                                                                                    | Ngwọta mbụ                                                                                      |
-| ---------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Crawling   | Glaze na-adọkọta ghọọ mkpụrụ, na-ahapụ ụrọ efu | Bisque nwere uzuzu ma ọ bụ mmanụ; akwa ọkpụrụkpụ nwere ọtụtụ ụrọ nke gbawara ka ọ na-akpọ nkụ; zinc, zircon ma ọ bụ tin | Hichaa bisque; tinye ya gịrịgịrị; calcine ụfọdụ ụrọ; tinye ihe njikọ dịka CMC gum               |
-| Pinholing  | Obere oghere ma ọ bụ olulu                     | Gas sitere n'ahụ ụrọ ma ọ bụ glaze nke na-emechighị; glaze agbaghị ọkụ nke ọma ma ọ bụ siri ike                         | Jide n'ọkụ kachasị elu ihe dị ka ọkara elekere; tinye ya gịrịgịrị; zinc ma ọ bụ rutile pere mpe |
-| Blistering | Olulu nwere ọnụ nkọ                            | Na-abụkarị ịgbafe ọkụ; akwa dị oke ọkpụrụkpụ; flux na-efe efe karịa ihe dị ka {{2192 °F; 1200 °C}}                      | Gbaa ọkụ dị ala karịa; tinye ya gịrịgịrị. Ọnụ nkọ na-eme ka ite e ji arụ ọrụ ghara ịdị nchebe   |
-| Running    | Glaze na-asọba n'elu shelf                     | Alumina pere mpe; oke ọkpụrụkpụ, dịka ebe ịwụ glaze kpuchiri onwe ha; ọtụtụ iron                                        | Tinye ya gịrịgịrị; gbakwunye alumina; debe glaze nke ọma n'elu ụkwụ ite                         |
-| Dunting    | Mgbawa n'ite site n'ijụ oyi ma ọ bụ ikpo ọkụ   | Ijụ oyi ọsọ ọsọ n'oge quartz inversion, {{1063 °F; 573 °C}}; mgbidi na-adịghị otu; fit adịghị mma                       | Gbaa ọkụ nwayọọ site na {{1063 °F; 573 °C}}, n'ịrịgo na n'ịgbada; mgbidi dị otu                 |
+| Ntụpọ            | Otu ọ dị                                       | Ihe na-akpatakarị ya                                                                                                    | Ngwọta mbụ                                                                                    |
+| ---------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Crawling         | Glaze na-adọkọta ghọọ mkpụrụ, na-ahapụ ụrọ efu | Bisque nwere uzuzu ma ọ bụ mmanụ; akwa ọkpụrụkpụ nwere ọtụtụ ụrọ nke gbawara ka ọ na-akpọ nkụ; zinc, zircon ma ọ bụ tin | Hichaa bisque; tinye ya gịrịgịrị; calcine ụfọdụ ụrọ; tinye ihe njikọ dịka CMC gum             |
+| Pinholing        | Obere oghere ma ọ bụ olulu                     | Gas sitere n'ahụ ụrọ ma ọ bụ glaze nke na-emechighị; glaze agbaghị ọkụ nke ọma ma ọ bụ siri ike                         | Jide n'ọkụ kachasị elu ihe dị ka ọkara elekere; tinye ya gịrịgịrị; belata zinc ma ọ bụ rutile |
+| Blistering (afụ) | Olulu nwere ọnụ nkọ                            | Na-abụkarị ịgbafe ọkụ; akwa dị oke ọkpụrụkpụ; flux na-efe efe karịa ihe dị ka {{2192 °F; 1200 °C}}                      | Gbaa ọkụ dị ala karịa; tinye ya gịrịgịrị. Ọnụ nkọ na-eme ka ite e ji arụ ọrụ ghara ịdị nchebe |
+| Running          | Glaze na-asọba n'elu shelf                     | Alumina pere mpe; oke ọkpụrụkpụ, dịka ebe ịwụ glaze kpuchiri onwe ha; ọtụtụ iron                                        | Tinye ya gịrịgịrị; gbakwunye alumina; debe glaze nke ọma n'elu ụkwụ ite                       |
+| Dunting          | Mgbawa n'ite site n'ijụ oyi ma ọ bụ ikpo ọkụ   | Ijụ oyi ọsọ ọsọ n'oge quartz inversion, {{1063 °F; 573 °C}}; mgbidi na-adịghị otu; fit adịghị mma                       | Gbaa ọkụ nwayọọ site na {{1063 °F; 573 °C}}, n'ịrịgo na n'ịgbada; mgbidi dị otu               |
 
 ## Nchekwa nri {#food-safety}
 
-**Leaching** (ịhapụ metal) bụ metal na-agbaze site na glaze a gbara ọkụ banye na nri ma ọ bụ ihe ọṅụṅụ, glaze nwere ike ịdị mma n'anya ma ka na-eme ya. Nnwale iwu na-etinye ite a gbara ọkụ na mmiri acid ma tụọ lead (Pb) na cadmium na-apụta.
+**Leaching** (ịhapụ metal) bụ metal na-agbaze site na glaze{{en: glaze}} a gbara ọkụ banye na nri ma ọ bụ ihe ọṅụṅụ, glaze nwere ike ịdị mma n'anya ma ka na-eme ya. Nnwale iwu na-etinye ite a gbara ọkụ na mmiri acid ma tụọ lead (Pb) na cadmium na-apụta.
 
 ### Enweghị lead abụghị otu ihe ahụ dị mma maka nri
 
@@ -267,7 +267,7 @@ FDA sị ngwa nnwale swab ụlọ nwere ike igosi lead nwere ike ịpụta, mana
 
 ### Specific gravity
 
-Ntụ glaze e gwakọtara na mmiri bụ **slurry**. **Specific gravity** (**SG**) ya bụ ịdị arọ ya ma e tụnyere ya na otu olu mmiri ahụ, nke nwere SG 1.0: ka ọ dị elu, ka ntụ dị na bọket karịa. Akwụkwọ UK ochie na-ekwu **pint weight**. Glazy kpọrọ 1.4–1.5 "ebe mmalite dị mma maka ọtụtụ glaze". Iji tụọ ya, tụọ kpọmkwem 100 mL nke slurry (Glazy na-atụ aro sirinji) ma kee ya site na 100: 145 g pụtara SG 1.45. Hydrometer anaghị atụkwasị obi na glaze kpụkọrọ akpụkọ, mmiri na-efekwa, ya mere lelee ọzọ tupu i tinye glaze.
+Ntụ glaze{{en: glaze}} e gwakọtara na mmiri bụ **slurry**. **Specific gravity** (**SG**) ya bụ ịdị arọ ya ma e tụnyere ya na otu olu mmiri ahụ, nke nwere SG 1.0: ka ọ dị elu, ka ntụ dị na bọket karịa. Akwụkwọ UK ochie na-ekwu **pint weight**. Glazy kpọrọ 1.4–1.5 "ebe mmalite dị mma maka ọtụtụ glaze". Iji tụọ ya, tụọ kpọmkwem 100 mL nke slurry (Glazy na-atụ aro sirinji) ma kee ya site na 100: 145 g pụtara SG 1.45. Hydrometer anaghị atụkwasị obi na glaze kpụkọrọ akpụkọ, mmiri na-efekwa, ya mere lelee ọzọ tupu i tinye glaze.
 
 Ebumnuche dị iche site n'isi mmalite. Digitalfire na-etinye glaze ịbanye na 1.40–1.50 na glaze azụmahịa e ji brọsh etinye na 1.25–1.55, ebe Potclays na-enye 1.71–1.81 maka brọsh na 1.71 maka ịgbasa. Ndụmọdụ anyị: banye n'ihe dị ka 1.45 ka glaze ahụ kpụkọọ ntakịrị, soro akara maka glaze brọsh, dekwaa ihe na-arụ ọrụ.
 
@@ -289,7 +289,7 @@ Akwa dị oke ọkpụrụkpụ nwere ike ime crawling, blistering ma ọ bụ �
 
 ## Oxidation na reduction {#atmosphere}
 
-Gas dị na kiln, **ikuku** ya (atmosphere), na-agbanwe otu glaze si apụta. **Oxidation** pụtara oxygen zuru ezu. "Kiln eletrik na ịgba ọkụ oxidation bụ otu," ka Digitalfire kwuru, glaze oxidation na-adịkarị nchapụta karịa nke reduction, ọkachasị n'ọkụ dị ala. N'oxidation, copper na-enye akwụkwọ ndụ na turquoise, iron na-enyekwa aja aja, tan na uhie. Kiln eletrik juru n'ite na-ewepụta gas, nke na-enweghị ezigbo ụzọ ikuku, nwere ike ịdị nnọọ etiti karịa ka a chọrọ; ụzọ ikuku e jikọtara ozugbo na kiln na-enyere aka.
+Gas dị na kiln, **ikuku** ya (atmosphere), na-agbanwe otu glaze{{en: glaze}} si apụta. **Oxidation** pụtara oxygen zuru ezu. "Kiln eletrik na ịgba ọkụ oxidation bụ otu," ka Digitalfire kwuru, glaze oxidation na-adịkarị nchapụta karịa nke reduction, ọkachasị n'ọkụ dị ala. N'oxidation, copper na-enye akwụkwọ ndụ na turquoise, iron na-enyekwa aja aja, tan na uhie. Kiln eletrik juru n'ite na-ewepụta gas, nke na-enweghị ezigbo ụzọ ikuku, nwere ike ịdị nnọọ etiti karịa ka a chọrọ; ụzọ ikuku e jikọtara ozugbo na kiln na-enyere aka.
 
 **Reduction** na-egbochi oxygen n'ebumnuche, na-abụkarị na kiln gas, nkụ ma ọ bụ kiln pụrụ iche. Copper na-aghọ uhie, iron na-aghọkwa flux siri ike karịa ma na-enye **celadon** (blu-akwụkwọ ndụ ruo ntụ-akwụkwọ ndụ, site n'ihe dị ka ½–2% iron) na **tenmoku** (temmoku: aja aja-ojii, ihe dị ka 5–6% iron). Glazy sị celadon na uhie copper "dabere na reduction". Ụrọ na-agbanwekwa: n'otu ntụle Digitalfire, ahụ stoneware gbara ntụ na reduction ma gbaa odo-odo n'oxidation. Silicon carbide na glaze nwere ike ime obere ebe reduction ọbụna na kiln eletrik. Maka reduction site na cone 010 ruo cone 3, Orton na-atụ aro cone ya na-enweghị iron.
 
@@ -301,7 +301,7 @@ Kiln ọ bụla, gụnyere nke eletrik, na-ewepụta anwụrụ, ya mere wepụ 
 ## Nchịkọta okwu {#glossary}
 
 Ihe mgbakwunye (additive)
-: Ihe na-enye agba, opacifier ma ọ bụ ihe na-ejide n'ime mmiri a gbakwunyere n'elu 100 nke usoro glaze.
+: Ihe na-enye agba, opacifier ma ọ bụ ihe na-ejide n'ime mmiri a gbakwunyere n'elu 100 nke usoro glaze{{en: glaze}}.
 
 Alumina (Al₂O₃)
 : Isi stabilizer: na-akwụsị ịgba ọsọ ma na-agbakwunye isi ike. Site n'ụrọ na feldspar.
@@ -406,7 +406,7 @@ LOI (loss on ignition)
 : Itinye glaze n'ite a na-agbabeghị ọkụ ma gbaa ya naanị otu ugboro.
 
 Opacifier
-: Ihe, dịka zircon, tin oxide ma ọ bụ titanium dioxide, nke na-eme ka glaze ghara ịhụ ìhè.
+: Ihe, dịka zircon, tin oxide ma ọ bụ titanium dioxide, nke na-eme ka glaze ghara ikwe ka ìhè gafee.
 
 Oxidation na reduction
 : Ịgba ọkụ na oxygen zuru ezu (kiln eletrik), ma ọ bụ na oxygen e gbochiri (na-abụkarị gas ma ọ bụ nkụ).
@@ -414,7 +414,7 @@ Oxidation na reduction
 Oxide
 : Ngwakọta nke element na oxygen; nyocha oxide na-edepụta ha site na pasentị ịdị arọ.
 
-Pinholing na blistering
+Pinholing na blistering (afụ)
 : Obere oghere, ma ọ bụ olulu nwere ọnụ nkọ, ebe gas gbapụrụ site n'ihe gbazere.
 
 Porcelain
@@ -450,7 +450,7 @@ Thixotropy
 Underglaze
 : Slip nwere agba ma ọ bụ ịchọ mma oxide, na-anọkarị n'okpuru glaze doro anya.
 
-UMF (unity molecular formula, Seger formula)
+Unity molecular formula (UMF, Seger formula)
 : Oxide nke glaze dịka ọnụ ọgụgụ molecule, ahaziri ka flux gbakọọ 1.
 
 Vitrification

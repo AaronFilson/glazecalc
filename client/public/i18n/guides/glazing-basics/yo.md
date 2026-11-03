@@ -106,7 +106,7 @@ Label: Ìpín silica sí alumina
 |        5–7 | Ó wọ́pọ̀ ní ọ̀pọ̀ glaze stoneware tí ó dúró ṣinṣin   |
 |        3–5 | Ó lè jẹ́ matte tàbí kí a má sun ún tó             |
 
-Ìpín 5–7 nìkan kò sọ tẹ́lẹ̀ pé yóò dán tàbí pé yóò jẹ́ matte: flux, boron àti cone gbogbo wọn ń yí ààlà náà padà. Glazy fúnni ní ìwọ̀ntúnwọ̀nsì flux tí ó wọ́pọ̀ fún glaze tí ó dúró ṣinṣin ní 0.2 R₂O pẹ̀lú 0.8 RO, títí dé 0.3 R₂O pẹ̀lú 0.7 RO. Alkali púpọ̀ jù máa ń mú ohun tí ó yọ́ ṣàn jù, ó sì ń gbé ìfẹ̀ rẹ̀ sókè, àti bẹ́ẹ̀ ewu crazing.
+Ìpín 5–7 nìkan kò sọ tẹ́lẹ̀ pé yóò dán tàbí pé yóò jẹ́ matte: flux, boron àti cone gbogbo wọn ń yí ààlà náà padà. Glazy fúnni ní ìwọ̀ntúnwọ̀nsì flux tí ó wọ́pọ̀ fún glaze tí ó dúró ṣinṣin ní 0.2 R₂O pẹ̀lú 0.8 RO, títí dé 0.3 R₂O pẹ̀lú 0.7 RO. Alkali tí ó pọ̀ sí i máa ń mú ohun tí ó yọ́ ṣàn sí i, ó sì ń gbé ìfẹ̀ rẹ̀ sókè, àti bẹ́ẹ̀ ewu crazing.
 
 ### Loss on ignition
 
@@ -152,8 +152,8 @@ Label: Àwọn ohun èlò glaze tí ó wọ́pọ̀
 | Zinc oxide                                        | ZnO                     | Dídán àti crystal; tí ó bá pọ̀ jù, ó lè fa crawling                                                                                                           |
 | Boron frits, Gerstley Borate, colemanite          | B₂O₃                    | Ó ṣe pàtàkì láti cone 06 dé cone 6; frit "dọ́gba jù, wọn kò sì yọ́ nínú omi tó borate àdáyébá"                                                                 |
 | Lithium carbonate                                 | Li₂O                    | Flux ìfẹ̀ kékeré; owó rẹ̀ pọ̀, nítorí náà a ń lò ó níwọ̀nba                                                                                                      |
-| Strontium carbonate                               | SrO                     | Ìrọ́pò barium tí kò ní májèlé tó                                                                                                                              |
-| Barium carbonate                                  | BaO                     | Olóró ní ìrísí àdáyébá rẹ̀; irin lè ṣàn jáde (leach) láti inú glaze tí barium rẹ̀ pọ̀                                                                           |
+| Strontium carbonate                               | SrO                     | Ìrọ́pò barium tí májèlé rẹ̀ kéré jù                                                                                                                            |
+| Barium carbonate                                  | BaO                     | Olóró ní ìrísí àdáyébá rẹ̀; glaze tí barium rẹ̀ pọ̀ lè ní ìṣàn irin jáde (leaching)                                                                             |
 | Bentonite                                         | Ìléfòó                  | Amọ̀ tí ó kúnná gan-an, sábà 1–3%, láti dènà dídì sísàlẹ̀                                                                                                      |
 
 > [!WARNING]
@@ -167,7 +167,7 @@ Label: Àwọn ohun èlò glaze tí ó wọ́pọ̀
 - **Whiting** ni calcium carbonate; àwọn olùpèsè Germany ń pè é ní Kreide (chalk).
 
 > [!NOTE]
-> Ẹ fi oxide tí ohun èlò ń pèsè dá a lẹ́jọ́, kì í ṣe orúkọ rẹ̀. Bẹ́ẹ̀ ni Glazecalc ṣe ń ṣiṣẹ́: ẹ lè tẹ ìtúpalẹ̀ olùpèsè yín sí [ojú-ìwé Ohun èlò](/material), àti **Try modern materials and compare**, **Suggest amounts and compare** àti **Match with what I have** gbogbo wọn ń bá oxide tí a sun mu, kì í ṣe orúkọ.
+> Ẹ fi oxide tí ohun èlò ń pèsè dá a lẹ́jọ́, kì í ṣe orúkọ rẹ̀. Bẹ́ẹ̀ ni Glazecalc ṣe ń ṣiṣẹ́: ẹ lè tẹ ìtúpalẹ̀ olùpèsè yín sí [ojú-ìwé Ohun èlò](/material), àti **Gbìyànjú ohun èlò òde òní kí ẹ sì fi wé**, **Dábàá ìwọ̀n kí ẹ sì fi wé** àti **Bá a mu pẹ̀lú ohun tí mo ní** gbogbo wọn ń bá oxide tí a sun mu, kì í ṣe orúkọ.
 
 Ohun èlò náà ń yí padà. Custer feldspar dópin ní 2023. Ibi ìwakùsà Gerstley Borate àkọ́kọ́ ti pa ní nǹkan bí 1999–2000; Laguna ṣì ń ta ọjà kan ní orúkọ yẹn, Gillespie Borate sì ni ìrọ́pò pàtàkì. Àwọn orísun kò fohùn ṣọ̀kan lórí bóyá Gillespie rọ́pò Gerstley Borate ní ìwọ̀n kan náà (olùṣe rẹ̀ àti Potclays sọ pé bẹ́ẹ̀ni, Digitalfire àti àwọn mìíràn sọ pé rárá), nítorí náà ẹ fi méjèèjì wé ara wọn nínú Glazecalc, lẹ́yìn náà ẹ dán batch kékeré wò.
 
@@ -194,15 +194,15 @@ Glaze ìpìlẹ̀ máa ń yí àwọ̀ padà. Ìpìlẹ̀ tí ó ń dán tí ó 
 
 ### Opacifier
 
-**Opacifier** máa ń mú glaze **ṣókùnkùn** (opaque), kí ó bo amọ̀ mọ́lẹ̀; glaze **tí ó mọ́ kedere** (transparent) máa ń jẹ́ kí ó hàn.
+**Opacifier** máa ń mú glaze **dínà ìmọ́lẹ̀** (opaque), kí ó bo amọ̀ mọ́lẹ̀; glaze **tí ó mọ́ kedere** (transparent) máa ń jẹ́ kí ó hàn.
 
 Table: Opacifier
 
-| Opacifier                                     | Iye tí ó wọ́pọ̀                 | Àkíyèsí                                                                                                  |
-| --------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% fún ìṣókùnkùn kíkún     | Èyí tí owó rẹ̀ kéré jù; àwọn orúkọ ọjà náà jẹ́ ohun èlò kan náà tí a lọ̀ sí ìwọ̀n ọ̀tọ̀ọ̀tọ̀                     |
-| Tin oxide                                     | Nǹkan bí 5–7% (ìfojúdíwọ̀n wa) | Owó rẹ̀ pọ̀; kì í mú un ṣókùnkùn dáadáa ní reduction                                                       |
-| Titanium dioxide                              | Ju 2% lọ                      | Ìṣókùnkùn bí sílíìkì tí ìmọ́lẹ̀ ń kọjá díẹ̀; ní 10% tàbí jù bẹ́ẹ̀ lọ, ojú matte oníkókó pẹ̀lú crystal tí ó hàn |
+| Opacifier                                     | Iye tí ó wọ́pọ̀                   | Àkíyèsí                                                                                                       |
+| --------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% fún dídínà ìmọ́lẹ̀ pátápátá | Èyí tí owó rẹ̀ kéré jù; àwọn orúkọ ọjà náà jẹ́ ohun èlò kan náà tí a lọ̀ sí ìwọ̀n ọ̀tọ̀ọ̀tọ̀                          |
+| Tin oxide                                     | Nǹkan bí 5–7% (ìfojúdíwọ̀n wa)   | Owó rẹ̀ pọ̀; kì í dínà ìmọ́lẹ̀ dáadáa ní reduction                                                                |
+| Titanium dioxide                              | Ju 2% lọ                        | Ìdínà ìmọ́lẹ̀ bí sílíìkì tí ìmọ́lẹ̀ ṣì ń kọjá díẹ̀; ní 10% tàbí jù bẹ́ẹ̀ lọ, ojú matte oníkókó pẹ̀lú crystal tí ó hàn |
 
 ## Ìbámu glaze àti àbùkù {#fit-and-defects}
 
@@ -261,7 +261,7 @@ Ní US, ohun amọ̀ ọ̀ṣọ́ tí ó dàbí pé a lè lò ó fún oúnjẹ 
 FDA sọ pé ohun èlò ìdánwò tí a fi ń nu ojú nílé lè fi òjé (Pb) tí ó lè ṣàn jáde hàn, ṣùgbọ́n Ceramics New Zealand kìlọ̀ pé a kò ṣe kálàmù ìdánwò fún ohun amọ̀, wọ́n sì ń fúnni ní èsì rere èké. Ẹ ka èsì rere sí ìdí láti dá lílo ohun náà dúró, kí ẹ sì ka èsì òdì sí èyí tí kò fi ohunkóhun hàn. Ìdánwò ìṣàn irin jáde (leach test) ní ilé ìwádìí lórí ohun tí a sun (ASTM C738 ní US; EN 1388 tàbí ISO 6486 ní Europe) ni ìdáhùn tòótọ́.
 
 > [!WARNING]
-> "Láìléwu fún oúnjẹ" túmọ̀ sí pé glaze yìí, lórí amọ̀ yìí, tí a sun dé cone yìí nínú kiln yìí tí a sì fi sí i lọ́nà yìí, ń tú èyí tí ó kéré sí ààlà òfin jáde. Glazecalc lè ràn yín lọ́wọ́ láti kọ́ glaze tí ó dúró ṣinṣin, **Replace lead** sì lè tún ìlànà òjé (Pb) àtijọ́ kọ́ láìsí òjé, ṣùgbọ́n kò sí ẹ̀rọ ìṣirò tí ó lè jẹ́rìí sí ìkòkò kan. Ìdánwò ohun tí a sun nìkan ló lè ṣe é.
+> "Láìléwu fún oúnjẹ" túmọ̀ sí pé glaze yìí, lórí amọ̀ yìí, tí a sun dé cone yìí nínú kiln yìí tí a sì fi sí i lọ́nà yìí, ń tú èyí tí ó kéré sí ààlà òfin jáde. Glazecalc lè ràn yín lọ́wọ́ láti kọ́ glaze tí ó dúró ṣinṣin, **Rọ́pò òjé** sì lè tún ìlànà òjé (Pb) àtijọ́ kọ́ láìsí òjé, ṣùgbọ́n kò sí ẹ̀rọ ìṣirò tí ó lè jẹ́rìí sí ìkòkò kan. Ìdánwò ohun tí a sun nìkan ló lè ṣe é.
 
 ## Specific gravity àti fífi glaze sí i {#application}
 
@@ -406,7 +406,7 @@ LOI (loss on ignition)
 : Fífi glaze sí ohun tí a kò tíì sun àti sísun ún lẹ́ẹ̀kan ṣoṣo.
 
 Opacifier
-: Ohun èlò, bí zircon, tin oxide tàbí titanium dioxide, tí ó ń mú glaze ṣókùnkùn.
+: Ohun èlò, bí zircon, tin oxide tàbí titanium dioxide, tí ó ń mú glaze dínà ìmọ́lẹ̀.
 
 Oxidation àti reduction
 : Ìsun pẹ̀lú oxygen púpọ̀ (kiln iná mànàmáná), tàbí pẹ̀lú oxygen tí a dín kù (sábà gáàsì tàbí igi).

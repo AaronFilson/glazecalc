@@ -120,7 +120,7 @@
   "trash-restored": "Die {label, select, additive {bymiddel} advice {advies} firing {bakrekord} material {grondstof} note {nota} recipe {resep} trash {asblik} other {rekord}} is teruggesit.",
   "trash-restored-already": "Dit is reeds teruggesit.",
   "trash-emptied": "Die Asblik is leeg.",
-  "trash-full": "Die Asblik is vol, so 'n toegangstoken kan niks meer daarheen skuif nie. Maak asseblief eers van dit op die webwerf leeg.",
+  "trash-full": "Die Asblik is vol, so 'n toegangstoken kan niks meer daarheen skuif nie. Maak asseblief eers 'n deel daarvan op die webwerf leeg.",
   "firing-links-full": "'n Resep kan aan hoogstens {most} bakrekords gekoppel word. Ontkoppel een om nog een te koppel.",
   "account-limit": "'n Rekening kan tot {limit} rekords in totaal hou: resepte, grondstowwe, notas, bakrekords en die res saam. Verwyder asseblief 'n paar om meer te stoor.",
   "not-shared": "Hierdie resep is nie gedeel nie, of die skakel is nie volledig nie.",

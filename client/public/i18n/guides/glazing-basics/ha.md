@@ -51,7 +51,7 @@ Label: Yadda bisque ke canza shafa glaze
 
 Potclays, mai sayar da kaya a Birtaniya, ya bayyana gasar biscuit zuwa kusan {{1000 °C; 1832 °F}}, kusan cone 06. Idan muka karanta waɗannan majiyoyi tare, muna ba da shawarar cone 06–04 don bisque na farko: {{1828–1945 °F; 998–1063 °C}} a matsakaicin saurin Orton.
 
-**Gasa glaze** (glaze firing; maginan tukwane na Birtaniya na iya cewa gasar **glost**) tana narkar da glaze kuma, ga stoneware, tana kuma nuna yumɓun. **Gasa sau ɗaya** (once-firing) shi ne shafa glaze a kan kayan da ba a gasa ba a gasa shi sau ɗaya kawai. Digitalfire ya ba da labarin wani wurin samarwa inda kayan da aka shafa wa glaze ba tare da gasa ba suka yi crawling a bakinsu har sai da gasar bisque ta magance shi, don haka ku fara da gasa biyu. [Gasa a cikin murhu mai sauƙi](/guides/firing) yana ba da jadawalin duka biyun.
+**Gasa glaze** (glaze firing; maginan tukwane na Birtaniya na iya cewa gasar **glost**) tana narkar da glaze kuma, ga stoneware, tana kuma nuna yumɓun. **Gasa sau ɗaya** (once-firing) shi ne shafa glaze a kan kayan da ba a gasa ba a gasa shi sau ɗaya kawai. Digitalfire ya ba da labarin wani wurin samarwa inda kayan da aka shafa wa glaze ba tare da gasa ba suka yi crawling a bakinsu har sai da gasar bisque ta magance shi, don haka ku fara da gasa biyu. [Gasa a cikin kiln mai sauƙi](/guides/firing) yana ba da jadawalin duka biyun.
 
 ## Cone da aikin zafi {#cones}
 
@@ -71,11 +71,11 @@ Label: Matakan gasa
 | Babban zafi     | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware da porcelain       |
 
 > [!NOTE]
-> Ku sanya wa gasarku suna kuma ku tsara ta da cone, ku ɗauki yanayin zafin a matsayin kimanin kawai. **Cone na shaida** (witness cone) a kan shiryayye a cikin tukwane, ko **fakitin cone** guda uku (cone na jagora, na gasa da na tsaro), yana nuna aikin zafin da tukwanenku suka samu da gaske.
+> Ku sanya wa gasarku suna kuma ku tsara ta da cone, ku ɗauki yanayin zafin a matsayin kimanin kawai. **Cone mai shaida** (witness cone) a kan shiryayye a cikin tukwane, ko **fakitin cone** guda uku (cone na jagora, na gasa da na tsaro), yana nuna aikin zafin da tukwanenku suka samu da gaske.
 
-Yanayin zafin da aka wallafa ya bambanta. Glazy ya ba da babban zafi, cone 9–11, a matsayin kusan {{2336–2390 °F; 1280–1310 °C}}, wanda ya dace da ginshiƙin Orton na sauri, kuma Digitalfire ya ce yawancin kiln suna kaiwa cone 6 a kusan {{2200 °F; 1204 °C}}. Shawararmu: ku yi amfani da alƙaluman Orton na matsakaicin sauri, kamar yadda wannan jagora ke yi, ku tsara da cone, ku bar cone na shaida ya yanke hukunci.
+Yanayin zafin da aka wallafa ya bambanta. Glazy ya ba da babban zafi, cone 9–11, a matsayin kusan {{2336–2390 °F; 1280–1310 °C}}, wanda ya dace da ginshiƙin Orton na sauri, kuma Digitalfire ya ce yawancin kiln suna kaiwa cone 6 a kusan {{2200 °F; 1204 °C}}. Shawararmu: ku yi amfani da alƙaluman Orton na matsakaicin sauri, kamar yadda wannan jagora ke yi, ku tsara da cone, ku bar cone mai shaida ya yanke hukunci.
 
-A wajen Arewacin Amurka, masu sayar da kaya sau da yawa suna ba da °C maimakon cone. Hermann Seger ne ya ƙirƙiri cone na zamani, wanda aka fara amfani da shi a Berlin a 1886, kuma Birtaniya ta daɗe tana da nata cone na Staffordshire; bai kamata a ɗauka lambobinsu sun yi daidai da na Orton ba, kuma ba mu sami jadawalin canza su ba. [Gasa a cikin murhu mai sauƙi](/guides/firing) ya yi ƙarin bayani kan cone.
+A wajen Arewacin Amurka, masu sayar da kaya sau da yawa suna ba da °C maimakon cone. Hermann Seger ne ya ƙirƙiri cone na zamani, wanda aka fara amfani da shi a Berlin a 1886, kuma Birtaniya ta daɗe tana da nata cone na Staffordshire; bai kamata a ɗauka lambobinsu sun yi daidai da na Orton ba, kuma ba mu sami jadawalin canza su ba. [Gasa a cikin kiln mai sauƙi](/guides/firing) ya yi ƙarin bayani kan cone.
 
 ## Daga tsarin glaze zuwa UMF {#unity-formula}
 
@@ -167,7 +167,7 @@ Label: Kayan glaze na yau da kullum
 - **Whiting** calcium carbonate ne; masu sayar da kaya na Jamus suna kiransa Kreide (alli).
 
 > [!NOTE]
-> Ku auna kaya da oxide da yake bayarwa, ba da sunansa ba. Glazecalc yana aiki haka: kuna iya shigar da nazarin mai sayar muku da kaya a [shafin Kaya](/material), kuma **Try modern materials and compare**, **Suggest amounts and compare** da **Match with what I have** duk suna daidaita oxide na bayan gasa, ba sunaye ba.
+> Ku auna kaya da oxide da yake bayarwa, ba da sunansa ba. Glazecalc yana aiki haka: kuna iya shigar da nazarin mai sayar muku da kaya a [shafin Kaya](/material), kuma **Gwada kayan zamani kuma ku kwatanta**, **Ba da shawarar adadi kuma ku kwatanta** da **Daidaita da abin da nake da shi** duk suna daidaita oxide na bayan gasa, ba sunaye ba.
 
 Kaya ma suna canzawa. Custer feldspar ya ƙare a 2023. Asalin ma'adinar Gerstley Borate ta rufe a kusan 1999–2000; Laguna har yanzu tana sayar da wani kaya da wannan suna, kuma Gillespie Borate shi ne babban madadinsa. Majiyoyi ba su yarda ba ko Gillespie yana maye gurbin Gerstley Borate fam da fam (mai yinsa da Potclays sun ce eh, Digitalfire da wasu sun ce a'a), don haka ku kwatanta su biyun a Glazecalc, sannan ku gwada ƙaramin batch.
 
@@ -188,7 +188,7 @@ Label: Masu launi na yau da kullum
 | Rutile          | Kusan 2–5%                                     | Launi mai tabo-tabo, mai bambanci; mai kaushi ko marar sheƙi sama da kusan 5%                                                                                 |
 | Stain na kasuwa | 2–12%                                          | 2–4% don launuka masu sauƙi, 5–8% don matsakaici, 10–12% don launuka masu ƙarfi                                                                               |
 
-Adadin cobalt da chrome ana jayayya a kansu da gaske. Glazy ya ce cobalt 0.1% ya isa don shuɗi; Glendale Community College ya ba da ½–2% ko ½–3% gwargwadon yanayin iska a kiln; Birdie Boone, a Pottery Making Illustrated, ya ce 3% ko ƙasa da haka. Ga chrome, Boone ya ce ƙasa da 0.5% kuma Glendale 2–3%. Hanya mafi aminci ita ce fara da kaɗan ku yi **line blend**: jerin test tile (tayil ɗin gwaji) da ke ƙara kaya ɗaya mataki-mataki daga kaɗan zuwa da yawa.
+Adadin cobalt da chrome ana jayayya a kansu da gaske. Glazy ya ce cobalt 0.1% ya isa don shuɗi; Glendale Community College ya ba da ½–2% ko ½–3% gwargwadon yanayin iska a kiln; Birdie Boone, a Pottery Making Illustrated, ta ce 3% ko ƙasa da haka. Ga chrome, Boone ta ce ƙasa da 0.5% kuma Glendale 2–3%. Hanya mafi aminci ita ce fara da kaɗan ku yi **line blend**: jerin test tile (tayil ɗin gwaji) da ke ƙara kaya ɗaya mataki-mataki daga kaɗan zuwa da yawa.
 
 Glaze na tushe yana canza launin. Tushe mai sheƙi, mai haske yana ba da launi mafi haske; tushe na satin da marar sheƙi, yawanci masu yawan alumina, suna dusashe shi. Magnesium yana tura cobalt zuwa ruwan shunayya, zinc yana mayar da chrome ruwan ƙasa, kuma chrome tare da tin yana ba da ruwan hoda.
 
@@ -212,7 +212,7 @@ Yumɓu da glaze duka suna girma yayin da suke zafi kuma suna raguwa yayin da suk
 
 **Crazing** (ƙananan tsage-tsage) wata raga ce ta ƙananan tsage-tsage. Faɗaɗawar glaze ta fi ta jikin, don haka a lokacin hucewa yana raguwa fiye, ana jan sa kuma yana tsagewa, yawanci saboda yawan sodium da potassium (Na₂O, K₂O). Zai iya kuma bayyana daga baya, a lokacin amfani, bayan sanyaya ba zato akai-akai kamar haɗuwa da ruwa mai sanyi. Idan ana son sa, kamar a raku, ana kiransa **crackle**. Digitalfire ya ce "a kashi 95% na lokuta maganin shi ne daidaita faɗaɗawar glaze saboda zafi"; hucewa a hankali yana jinkirta crazing ne kawai. Gwajinsa: ku zafafa kayan zuwa kusan {{300 °F; 149 °C}}, ku tsoma shi cikin ruwan ƙanƙara, ku shafa alƙalamin felt a kansa don nuna tsage-tsage.
 
-Majiyoyi sun bambanta kan maganin farko. Glazy ya ba da shawarar ƙara silica ko alumina; Digitalfire ya amsa cewa ƙarin silica "yana tsarma KNaO ne kawai" (sodium da potassium); Linda Bloomfield yana ƙara boron ko rage feldspar, kaya ɗaya a lokaci guda. Shawararmu: a [na'urar lissafin tsarin glaze](/recipe), ku musanya wani ɓangare na sodium da potassium da flux masu ƙarancin faɗaɗawa (boron, lithium, magnesium, calcium), ku duba canjin da **Kwatanta**, ku tabbatar da gwajin ruwan ƙanƙara.
+Majiyoyi sun bambanta kan maganin farko. Glazy ya ba da shawarar ƙara silica ko alumina; Digitalfire ya amsa cewa ƙarin silica "yana tsarma KNaO ne kawai" (sodium da potassium); Linda Bloomfield tana ƙara boron ko rage feldspar, kaya ɗaya a lokaci guda. Shawararmu: a [na'urar lissafin tsarin glaze](/recipe), ku musanya wani ɓangare na sodium da potassium da flux masu ƙarancin faɗaɗawa (boron, lithium, magnesium, calcium), ku duba canjin da **Kwatanta**, ku tabbatar da gwajin ruwan ƙanƙara.
 
 **Shivering** shi ne akasin haka: faɗaɗawar glaze ta yi ƙasa sosai da ta jikin, don haka an matse shi fiye da kima kuma yana ɓarewa daga baki da gefuna. Digitalfire ya yi gargaɗi cewa ɓawon na iya zama kaifi kamar reza kuma ana iya haɗiye su, kuma Glazy ya kira shivering "ya fi crazing haɗari a kan kayan amfani". Maganin shi ne glaze mai yawan faɗaɗawa ko jiki mai ƙarancin faɗaɗawa.
 
@@ -258,10 +258,10 @@ A Amurka, kayan tukwane na ado da suka yi kama da ana iya amfani da su don abinc
 
 ### Gwaji
 
-FDA ta ce kayan gwaji na swab na gida na iya nuna darma (Pb) da ke zubowa, amma Ceramics New Zealand ya yi gargaɗi cewa alƙalaman gwaji ba don tukwane aka yi su ba kuma suna ba da sakamako mai kyau na ƙarya. Ku ɗauki sakamako mai kyau (positive) a matsayin dalilin daina amfani da abin, kuma marar kyau (negative) a matsayin wanda bai tabbatar da komai ba. Gwajin zubar ƙarfe (leach test) na dakin gwaje-gwaje akan abin da aka gasa (ASTM C738 a Amurka; EN 1388 ko ISO 6486 a Turai) shi ne ainihin amsar.
+FDA ta ce kayan gwaji na swab na gida na iya nuna darma (Pb) da ke zubowa, amma Ceramics New Zealand ya yi gargaɗi cewa alƙalaman gwaji ba don tukwane aka yi su ba kuma suna nuna akwai darma alhali babu (false positives). Ku ɗauki sakamakon da ya nuna darma (positive) a matsayin dalilin daina amfani da abin, kuma wanda bai nuna ba (negative) a matsayin wanda bai tabbatar da komai ba. Gwajin zubar ƙarfe (leach test) na dakin gwaje-gwaje akan abin da aka gasa (ASTM C738 a Amurka; EN 1388 ko ISO 6486 a Turai) shi ne ainihin amsar.
 
 > [!WARNING]
-> "Lafiya ga abinci" yana nufin wannan glaze, a kan wannan yumɓu, da aka gasa zuwa wannan cone a cikin wannan kiln kuma aka shafa ta wannan hanya, yana fitarwa ƙasa da iyakokin doka. Glazecalc zai iya taimaka muku gina glaze mai daidaito, kuma **Replace lead** zai iya sake gina tsohon tsarin glaze na darma (Pb) ba tare da darma ba, amma babu na'urar lissafi da za ta iya tabbatar da tukunya. Gwajin abin da aka gasa ne kaɗai zai iya.
+> "Lafiya ga abinci" yana nufin wannan glaze, a kan wannan yumɓu, da aka gasa zuwa wannan cone a cikin wannan kiln kuma aka shafa ta wannan hanya, yana fitarwa ƙasa da iyakokin doka. Glazecalc zai iya taimaka muku gina glaze mai daidaito, kuma **Maye gurbin darma** zai iya sake gina tsohon tsarin glaze na darma (Pb) ba tare da darma ba, amma babu na'urar lissafi da za ta iya tabbatar da tukunya. Gwajin abin da aka gasa ne kaɗai zai iya.
 
 ## SG da shafawa {#application}
 
@@ -289,7 +289,7 @@ Shafi mai kauri sosai zai iya yin crawling, blistering ko gudana. Ka'idodin masu
 
 ## Oxidation da reduction {#atmosphere}
 
-Gas ɗin da ke cikin kiln, **yanayin iskarsa** (atmosphere), suna canza yadda glaze ke fitowa. **Oxidation** yana nufin oxygen mai yawa. "Kiln na lantarki iri ɗaya ne da gasar oxidation," in ji Digitalfire, kuma glaze na oxidation yawanci sun fi na reduction haske, musamman a ƙananan yanayin zafi. A oxidation, copper yana ba da kore da turquoise, iron kuma ruwan ƙasa, ruwan ƙasa mai haske da ja. Kiln na lantarki marar isasshen hanyar iska cike da kayan da ke fitar da gas zai iya yin aiki fiye da yadda aka nufa a tsaka-tsaki; hanyar iska (vent) da aka haɗa kai tsaye da kiln tana taimakawa.
+Gas ɗin da ke cikin kiln, **yanayin iskarsa** (atmosphere), suna canza yadda glaze ke fitowa. **Oxidation** yana nufin oxygen mai yawa. "Kiln na lantarki iri ɗaya ne da gasar oxidation," in ji Digitalfire, kuma glaze na oxidation yawanci sun fi na reduction haske, musamman a ƙananan yanayin zafi. A oxidation, copper yana ba da kore da turquoise, iron kuma ruwan ƙasa, ruwan ƙasa mai haske da ja. Kiln na lantarki marar isasshen hanyar iska cike da kayan da ke fitar da gas zai iya samun yanayin iska na tsaka-tsaki fiye da yadda aka nufa; hanyar iska (vent) da aka haɗa kai tsaye da kiln tana taimakawa.
 
 **Reduction** yana takura oxygen da gangan, yawanci a kiln na gas, na itace ko na musamman. Copper yana zama ja, iron kuma yana zama flux mafi ƙarfi kuma yana ba da **celadon** (shuɗi-kore zuwa toka-kore, daga kusan ½–2% iron) da **tenmoku** (temmoku: ruwan ƙasa-baƙi, kusan 5–6% iron). Glazy ya ce celadon da copper red "sun dogara da reduction". Yumɓun ma yana canzawa: a wata kwatancen Digitalfire, jikin stoneware ya fito toka a reduction kuma mai ɗan rawaya a oxidation. Silicon carbide a cikin glaze zai iya yin ƙananan wuraren reduction ko a cikin kiln na lantarki. Don reduction daga cone 010 zuwa cone 3, Orton yana ba da shawarar cone ɗinsa marasa iron.
 
@@ -328,7 +328,7 @@ Mai launi da stain (colorant and stain)
 : Oxide ko carbonate na ƙarfe da ke ba glaze launi; stain mai launi ne da aka yi a masana'anta, mafi tsayayye.
 
 Cone (mazugi)
-: Dalar tukwane da aka daidaita wadda ke lanƙwasawa a wani aikin zafi da aka ƙayyade. Cone na shaida yana nuna abin da tukwane suka samu.
+: Dalar tukwane da aka daidaita wadda ke lanƙwasawa a wani aikin zafi da aka ƙayyade. Cone mai shaida yana nuna abin da tukwane suka samu.
 
 Crawling
 : Glaze yana janyewa ya zama ƙwalla a lokacin gasa, yana barin yumɓu a fili.

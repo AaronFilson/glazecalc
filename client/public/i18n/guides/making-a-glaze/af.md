@@ -36,7 +36,7 @@ Die standaardsak is **50 lb (22,7 kg)** in die VSA en **25 kg (55 lb)** elders, 
 
 ### 'n Beginnerstel
 
-Glazy se kernlys vir enige temperatuur is silika, kaolien, veldspaat, kalksteen, sinkoksied, en dolomiet of talk. Die meeste glasure vir middeltemperatuur (kegel 5 tot 6) het ook boor nodig, gewoonlik uit 'n frit, wat Glazy "bestendig en minder oplosbaar as rou boraat" noem. Die stel hieronder is ons voorstel, getrek uit Glazy se lys en 'n forumlys. Die [gids oor die basiese beginsels van glasuur](/guides/glazing-basics) verduidelik wat elke grondstof doen.
+Glazy se kernlys vir enige temperatuur is silika, kaolien, veldspaat, kalksteen, sinkoksied, en dolomiet of talk. Die meeste glasure vir middeltemperatuur (kegel 5 tot 6) het ook boor nodig, gewoonlik uit 'n frit, wat Glazy "konsekwent en minder oplosbaar as rou boraat" noem. Die stel hieronder is ons voorstel, getrek uit Glazy se lys en 'n forumlys. Die [gids oor die basiese beginsels van glasuur](/guides/glazing-basics) verduidelik wat elke grondstof doen.
 
 Table: 'n Beginnerstel grondstowwe (ons voorstel)
 Label: Beginnerstel
@@ -54,11 +54,11 @@ Label: Beginnerstel
 
 ### Datablaaie en veiligheidsdatablaaie
 
-Vra vir twee dokumente vir elke grondstof. 'n **Tegniese datablad** (TDB) gee sy **chemiese ontleding**: die deel van elke oksied in die poeier, volgens gewig. Glazecalc werk hiervandaan, en jy kan 'n grondstof volgens 'n verskaffer se ontleding byvoeg op die [Grondstowwe-bladsy](/material). 'n **Veiligheidsdatablad** (VDB) sê hoe om die rou poeier te hanteer. Hou elke VDB, en lees dit voor jy meng.
+Vra vir twee dokumente vir elke grondstof. 'n **Tegniese datablad** (TDB) gee sy **chemiese ontleding**: die deel van elke oksied in die poeier, volgens gewig. Glazecalc werk hiervandaan, en jy kan 'n grondstof volgens 'n verskaffer se ontleding byvoeg op die [Grondstowwe-bladsy](/material). 'n **Veiligheidsdatablad** (SDS) sê hoe om die rou poeier te hanteer. Hou elke SDS, en lees dit voor jy meng.
 
 Ontledings is gemiddeldes, nie beloftes nie. Valentine Clays druk "GEMIDDELDE WAARDES. DIT STEL NIE 'N SPESIFIKASIE VOOR NIE" op sy flint-datablad, en Glazy se ontledings van Custer-veldspaat uit verskillende jare wissel van ongeveer 68,5% tot 72,4% silika. Ons raai aan dat jy elke sak se **lotnommer** (sy bondelkode) in jou rekords neerskryf, sodat jy kan sien of 'n verandering in 'n vertroude glasuur van die grondstof gekom het.
 
-Die VK se HSE waarsku dat kristallyne silika "verkeerdelik as 'amorfe silika' geëtiketteer kan word". En 'n VDB gaan oor die poeier, nie die pot nie: dit sê niks oor of 'n gebakte glasuur veilig is vir kos nie. Net 'n laboratoriumtoets van die metale wat die gebakte pot afgee (uitlogingstoets) kan dit wys.
+Die VK se HSE waarsku dat kristallyne silika "verkeerdelik as 'amorfe silika' geëtiketteer kan word". En 'n SDS gaan oor die poeier, nie die pot nie: dit sê niks oor of 'n gebakte glasuur veilig is vir kos nie. Net 'n laboratoriumtoets van die metale wat die gebakte pot afgee (uitlogingstoets) kan dit wys.
 
 ### Name verander, so koop volgens chemie
 
@@ -129,7 +129,7 @@ Water is vinnig bygevoeg en stadig verwyder, so begin laag. Ons skatting: begin 
 
 ### Gereedskap en water
 
-- **Propellermenger.** Digitalfire noem 'n goeie een "noodsaaklik". 'n Boormasjien met 'n kabel en 'n mengpaddel doen die werk in 'n emmer. UT Austin laat dit ten minste 4 tot 5 minute loop nadat die glasuur gemeng lyk, en hou die lem weg van die emmer, wat dit plastiek kan afskaaf.
+- **Propellermenger.** Digitalfire noem 'n goeie een "noodsaaklik". 'n Boormasjien met 'n kabel en 'n mengpaddel doen die werk in 'n emmer. UT Austin laat dit ten minste 4 tot 5 minute loop nadat die glasuur gemeng lyk, en hou die lem weg van die emmer, waarvan dit plastiek kan afskaaf.
 - **Menger.** Dit "werk uiters goed vir klein mengsels" (Digitalfire). Hou dit net vir glasuur: dit mag nooit terug kombuis toe gaan nie.
 - **Klopper of stok.** Zakin se keuse as daar geen menger is nie.
 
@@ -207,9 +207,9 @@ Label: Water vir 'n teiken-soortlike gewig
 
 ### Epsom-soute, CMC-gom en bentoniet
 
-**Epsom-soute** laat 'n glasuur effens gel wanneer dit stilstaan en weer vloei wanneer dit geroer word. Dit word **flokkulering** genoem, en 'n glasuur wat so optree is **tiksotropies**: dit gaan egalieger aan, drup minder en sak minder. Digitalfire stel voor dat jy begin teen ongeveer 2 g per gelling sodra die SG reg is (ongeveer 0,5 g per liter, ons omskakeling) en die hoeveelheid by elke meng bysteel, aangesien geen resep die dosis moet vasstel nie. Ons raai aan dat jy dit eers in 'n bietjie warm water oplos. In 'n voorbeeld van Digitalfire het 'n glasuur teen {{SG 1.45}} gedrup, so water het dit tot {{SG 1.43}} gebring en Epsom-soute het dit weer tot romerig laat gel, en dit het egalig aangegaan. 'n Growwe toets: roer, hou op en kyk. 'n Gegelleerde glasuur beweeg nog ongeveer 2 of 3 sekondes, hou dan op en veer effens terug.
+**Epsom-soute** laat 'n glasuur effens gel wanneer dit stilstaan en weer vloei wanneer dit geroer word. Dit word **flokkulering** genoem, en 'n glasuur wat so optree is **tiksotropies**: dit gaan egaliger aan, drup minder en sak minder. Digitalfire stel voor dat jy begin teen ongeveer 2 g per gelling sodra die SG reg is (ongeveer 0,5 g per liter, ons omskakeling) en die hoeveelheid by elke meng fynstel, aangesien geen resep die dosis moet vasstel nie. Ons raai aan dat jy dit eers in 'n bietjie warm water oplos. In 'n voorbeeld van Digitalfire het 'n glasuur teen {{SG 1.45}} gedrup, so water het dit tot {{SG 1.43}} gebring en Epsom-soute het dit weer tot romerig laat gel, en dit het egalig aangegaan. 'n Growwe toets: roer, hou op en kyk. 'n Gegelleerde glasuur beweeg nog ongeveer 2 of 3 sekondes, hou dan op en veer effens terug.
 
-**CMC-gom** (karboksimetielsellulose) maak 'n slurrie klewerger en stadiger om te droog, en laat 'n harder laag wat aan die pot vashou. Dit maak die meeste saak vir kwasglasure en glasure ryk aan frit. Digitalfire se voorbeeld meng 3,75 g in 1000 g slurrie, en dit moet met 'n menger ingaan. 'n Glasuur met CMC sal nie met Epsom-soute gel nie, en aangesien mikrobes op die gom voed, kan dit in die emmer verander en begin ruik.
+**CMC-gom** (karboksimetielsellulose) maak 'n slurrie klewer en stadiger om te droog, en laat 'n harder laag wat aan die pot vashou. Dit maak die meeste saak vir kwasglasure en glasure ryk aan frit. Digitalfire se voorbeeld meng 3,75 g in 1000 g slurrie, en dit moet met 'n menger ingaan. 'n Glasuur met CMC sal nie met Epsom-soute gel nie, en aangesien mikrobes op die gom voed, kan dit in die emmer verander en begin ruik.
 
 **Bentoniet**, 'n baie fyn klei, help om die ander deeltjies in suspensie te hou. Doopglasure steun gewoonlik hiervoor op 15 tot 25% rou klei. Vir 'n resep met te min klei help ongeveer 1 tot 3% bentoniet; Digitalfire sê 'n glasuur met meer as 15% klei behoort nie bentoniet teen meer as 1% van die droë glasuur se gewig nodig te hê nie.
 
@@ -229,7 +229,7 @@ Derek Au werk in drie stappe op: 'n toets van 50 of 100 g, 'n proef van 1 tot 2 
 - elke teël in dieselfde oondlading
 - 'n merk op elke teël voor die bak, met 'n stempel, 'n kerf of 'n onderglasuurpotlood.
 
-Ons raai teëls aan wat regop staan, aangesien 'n plat teël wegsteek hoe ver 'n glasuur loop, met 'n getekstureerde strook om te wys hoe die glasuur oor rande breek, en 'n kaal voet. Sit elkeen op 'n klein skoteltjie of 'n stukkie biskwiet, of op 'n rak met oondwas, om druppels op te vang. Sit 'n **kontrolekegel**, 'n klein keramiekkegel wat buig wanneer dit genoeg hitte gehad het, naby die teëls om te wys wat hulle ontvang het; die [gids oor bak](/guides/firing) verduidelik kegels. Gee elke teël 'n kort kode, en skryf dit teenaan die resep in jou rekords neer. Willers, wat vir Ceramic Arts Network skryf, gebruik syfers en letters, en skryf die stelsel self voorin die notaboek.
+Ons raai teëls aan wat regop staan, aangesien 'n plat teël wegsteek hoe ver 'n glasuur loop, met 'n getekstureerde strook om te wys hoe die glasuur oor rande breek, en 'n kaal voet. Sit elkeen op 'n klein skoteltjie of 'n stukkie biskwiet, of op 'n rak met rakdeklaag, om druppels op te vang. Sit 'n **getuiekegel**, 'n klein keramiekkegel wat buig wanneer dit genoeg hitte gehad het, naby die teëls om te wys wat hulle ontvang het; die [gids oor bak](/guides/firing) verduidelik kegels. Gee elke teël 'n kort kode, en skryf dit teenaan die resep in jou rekords neer. Willers, wat vir Ceramic Arts Network skryf, gebruik syfers en letters, en skryf die stelsel self voorin die notaboek.
 
 ### Lynmengings
 
@@ -260,18 +260,18 @@ Die metode vereis noukeurige rekenwerk, goed gemengde ente met eweredige SG, en 
 
 ## Rekords hou {#records}
 
-Willers stel die doel goed: "genoeg inligting om die resultate wat jy ontdek het te kan herhaal, of te vermy". Skryf neer wat jy beplan om te toets voor jy begin, en die resultate wanneer jy uitpak. Potclays voeg die aanwending, dikte, kleiliggaam en volle bak by, insluitend tempo's, houtye en afkoeling. 'n **Tempo** is 'n tempo van verhitting of afkoeling, soos {{60 °C; 108 °F}} per uur, en 'n **houtyd** hou die oond vir 'n vasgestelde tyd op een temperatuur. Skryf lotnommers, die water wat jy gebruik het en enige plaasvervanging neer: Clay Art Center se veldspaatruil het beteken dat ongeveer die helfte van sy glasure aangepas moes word.
+Willers stel die doel goed: "genoeg inligting om die resultate wat jy ontdek het te kan herhaal, of te vermy". Skryf neer wat jy beplan om te toets voor jy begin, en die resultate wanneer jy uitpak. Potclays voeg die aanwending, dikte, kleiliggaam en volle bak by, insluitend tempo's, houtye en afkoeling. 'n **Tempo** (ramp) is die spoed van verhitting of afkoeling, soos {{60 °C; 108 °F}} per uur, en 'n **houtyd** hou die oond vir 'n vasgestelde tyd op een temperatuur. Skryf lotnommers, die water wat jy gebruik het en enige plaasvervanging neer: Clay Art Center se veldspaatruil het beteken dat ongeveer die helfte van sy glasure aangepas moes word.
 
 Table: Wat om vir elke glasuurmengsel aan te teken (ons sjabloon)
 Label: Rekordsjabloon
 
-| Deel       | Wat om neer te skryf                                                                                                                                                                |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resep      | Die resep en sy weergawe; handelsmerke en lotnommers van grondstowwe; enige plaasvervangings                                                                                        |
-| Meng       | Datum; mengselgrootte; water bygevoeg, en sy tipe (kraan, truosmose of gedistilleer); SG na meng en finale SG; Epsom-soute, CMC en bentoniet bygevoeg; sif-mesh en getal deurgange  |
-| Aanwending | Kleiliggaam; biskwietkegel; doop, kwas of giet; dooptyd of getal lae; droë dikte                                                                                                    |
-| Bak        | Oond en rakposisie; die bakskedule, met sy tempo's, houtye en afkoeling; atmosfeer (oksidasie of reduksie); wat die kontrolekegel gewys het, nie net waarop die oond gestel was nie |
-| Resultaat  | Oppervlak en kleur; enige loop, haarlynbarsies of speldeprikgaatjies; foto's van die voorkant, agterkant en kant; die teëlkode                                                      |
+| Deel       | Wat om neer te skryf                                                                                                                                                               |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resep      | Die resep en sy weergawe; handelsmerke en lotnommers van grondstowwe; enige plaasvervangings                                                                                       |
+| Meng       | Datum; mengselgrootte; water bygevoeg, en sy tipe (kraan, truosmose of gedistilleer); SG na meng en finale SG; Epsom-soute, CMC en bentoniet bygevoeg; sif-mesh en getal deurgange |
+| Aanwending | Kleiliggaam; biskwietkegel; doop, kwas of giet; dooptyd of getal lae; droë dikte                                                                                                   |
+| Bak        | Oond en rakposisie; die bakskedule, met sy tempo's, houtye en afkoeling; atmosfeer (oksidasie of reduksie); wat die getuiekegel gewys het, nie net waarop die oond gestel was nie  |
+| Resultaat  | Oppervlak en kleur; enige loop, haarlynbarsies of speldeprikgaatjies; foto's van die voorkant, agterkant en kant; die teëlkode                                                     |
 
 > [!NOTE]
 > In Glazecalc hou 'n gestoorde [resep](/recipe) die resep self. 'n [Bakrekord](/firing) teken elke bak aan: die oond, die datum, tye, temperature, kegels en notas. [Notas](/notes) hou al die res, soos die mengselrekord hierbo en wat elke teël gewys het.

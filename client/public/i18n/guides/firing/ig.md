@@ -41,9 +41,9 @@ Label: Hold na heatwork
 | Ihe dị ka awa 2    | Ọkụ kacha elu dị ọkụ karịa {{54 °F; 30 °C}} |
 | Awa 4–6            | Zuru ihulata cone nọmba abụọ dị ọkụ karịa   |
 
-Orton gbakwụnyere na hold nke awa 1–2 "nwere ike zuo imebi cone nọmba na-esote ya n'elu".
+Orton gbakwụnyere na hold nke awa 1–2 "nwere ike zuo imebi cone na-esote ya dị ọkụ karịa".
 
-Ya mere hold anaghị abụ n'efu: ọ bụrụ na ị tinye otu, tụọ anya na cone ga-ehulata karịa, ma wedata ọkụ kacha elu ka o kwekọọ.
+Ya mere ọ dịghị mgbe hold bụ n'efu: ọ bụrụ na ị tinye otu, tụọ anya na cone ga-ehulata karịa, ma wedata ọkụ kacha elu ka o kwekọọ.
 
 ### Ụdị cone
 
@@ -139,7 +139,7 @@ Probe na-agụ ikuku dị nso na mgbidi, ọ bụghị ite. Ọ bụrụ na ịg
 
 ## Idozi cone pack {#cone-pack}
 
-**Witness cone** bụ cone e dowere na shelf n'akụkụ ite, ebe ọ na-enweta otu ọkụ ahụ. Orton kwuru ọrụ ya n'ụzọ doro anya: "Naanị ezi ntụle heatwork si na Large ma ọ bụ Self-supporting cone e dowere na shelf n'akụkụ ite." Kiln sitter na-anọ nso na mgbidi, probe controller ma ọ bụ pyrometer na-agụkwa ọkụ dị nso na mgbidi; witness cone na-agụ ebe ite dị.
+**Witness cone** (cone akaebe) bụ cone e dowere na shelf n'akụkụ ite, ebe ọ na-enweta otu ọkụ ahụ. Orton kwuru ọrụ ya n'ụzọ doro anya: "Naanị ezi ntụle heatwork si na Large ma ọ bụ Self-supporting cone e dowere na shelf n'akụkụ ite." Kiln sitter na-anọ nso na mgbidi, probe controller ma ọ bụ pyrometer na-agụkwa ọkụ dị nso na mgbidi; witness cone na-agụ ebe ite dị.
 
 **Cone pack** bụ witness cone atọ e dowere ọnụ, otu nọmba dị n'etiti ha:
 
@@ -165,7 +165,7 @@ Large cone chọrọ **plaque** (ihe njide a kwadebere) ma ọ bụ **pat** nke 
 3. Na kiln nwere sitter, debe shelf pack ahụ opekata mpe 1 inch (25 mm) n'elu ma ọ bụ n'okpuru tube sitter, ka shelf na-ada ada ghara ịkpachi sitter.
 4. Maka ịgba ọkụ mbụ gị, dowe pack na shelf elu, etiti na nke ala. Nnwale calibration L&L na-agakwa n'ihu: pack abụọ nke cone 07, 06 na 05 na shelf ọ bụla, otu n'ọnụ ya, otu n'etiti ya.
 
-Tụọ anya ọdịiche: Orton kwuru "Na-emekarị, ị ga-ahụ opekata mpe ọdịiche otu cone site n'elu ruo n'ala kiln", ebe ndị e jupụtara nke ukwuu na-agba ọkụ dị jụụ karịa. Pack ị na-anaghị ahụ n'oge ịgba ọkụ ka na-enye ndekọ ma e mesịa.
+Tụọ anya ọdịiche: Orton kwuru "Na-emekarị, ị ga-ahụ opekata mpe ọdịiche otu cone site n'elu ruo n'ala kiln", ebe ndị e jupụtara nke ukwuu na-agba ọkụ dị jụụ karịa. Pack ị na-ahụghị n'oge ịgba ọkụ ka na-enye ndekọ ma e mesịa.
 
 :::
 
@@ -183,7 +183,7 @@ Small cone na bar "na-enye otu ọkụ ahụ". Orton kwuru na ọtụtụ ndị 
 
 ### Cone ole na-aga n'ime sitter
 
-Isi mmalite ekwekọrịtaghị. Dawson, onye mere sitter ahụ, kwuru ka e jiri otu nọmba ahụ dịka firing cone na shelf, ma gaa otu nọmba dị ọkụ karịa naanị ma ọ bụrụ na cone shelf ahụ ahulataghị. L&L kwuru ka e jiri otu nọmba dị ọkụ karịa cone shelf, n'ihi na sitter na-anọ nso na mgbidi na element, na-enweta ọkụ karịa, ma na-anyụkarị n'oge. Orton doziri ụkpụrụ ahụ: "Cone shelf bụ onye ikpe ikpeazụ nke ịgba ọkụ, ọ bụghị cone ma ọ bụ bar Kiln-Sitter."
+Isi mmalite ekwekọrịtaghị. Dawson, onye mere sitter ahụ, kwuru ka e jiri otu nọmba ahụ dịka firing cone na shelf, ma gaa otu nọmba dị ọkụ karịa naanị ma ọ bụrụ na cone shelf ahụ ahulataghị. L&L kwuru ka e jiri otu nọmba dị ọkụ karịa cone shelf, n'ihi na sitter na-anọ nso na mgbidi na element, na-enweta ọkụ karịa, ma na-anyụkarị tupu oge eruo. Orton doziri ụkpụrụ ahụ: "Cone shelf bụ onye ikpe ikpeazụ nke ịgba ọkụ, ọ bụghị cone ma ọ bụ bar Kiln-Sitter."
 
 > [!NOTE]
 > Ebe anyị na-amalite: tinye small cone nwere otu nọmba ahụ dịka nke ị chọrọ n'ime sitter, ya na cone pack na shelf. Ọ bụrụ na firing cone na shelf ahulataghị nke zuru ezu mgbe kiln nyụrụ, gaa otu nọmba dị ọkụ karịa na sitter oge ọzọ, ma ọ bụ dowe akụkụ cone ahụ dị oke n'okpuru rod. Ọ bụrụ na ọ hulafere oke, mee ihe dị iche.
@@ -214,7 +214,7 @@ Label: Ntọala limit timer
 > [!NOTE]
 > Ebe anyị na-amalite: nye ya oge buru ibu na nke mbụ (n'ime awa 20 nke dial ahụ), mgbe ahụ awa ½ ruo 1 karịa oge i dekọrọ. Timer ahụ na-agwakwa gị ogologo oge ịgba ọkụ were: edozi na 7 ma kwụsị na 1 pụtara awa 6.
 
-### Mgbe ọ na-anyụ n'oge ma ọ bụ n'azụ oge
+### Mgbe ọ na-anyụ tupu oge eruo ma ọ bụ n'azụ oge
 
 Mgbe ịgba ọkụ ọ bụla gasịrị, gụọ cone sitter n'akụkụ cone shelf.
 
@@ -226,9 +226,9 @@ Label: Nsogbu kiln sitter
 | Sitter nyụrụ, firing cone shelf ahulataghị nke zuru ezu | Sitter dị ọkụ karịa shelf (ọ na-anọ nso na mgbidi)                                                                      | Otu cone dị ọkụ karịa na sitter, ma ọ bụ akụkụ dị oke n'okpuru rod |
 | Cone sitter dara nke ukwuu gafere 90°                   | Kiln rịgoro ngwa ngwa nke ukwuu nso na njedebe                                                                          | Wedata ntọala switch, ka ịrị elu ahụ dị nwayọọ (Dawson)            |
 | Cone sitter ahulataghị, ma ọ bụ gbazere ghọọ okirikiri  | Sitter n'onwe ya: ndozi adịghị mma, rod hulatara ma ọ bụ nwere nchara, ma ọ bụ ihe rapara n'ime tube ma ọ bụ n'akụkụ ya | Lelee ma dozie sitter site n'akwụkwọ ntụziaka ya tupu ịgba ọkụ ọzọ |
-| N'oge ma ọ bụ n'azụ oge oge niile                       | Ndozi ya apụọla, ma ọ bụ rod mebiri emebi                                                                               | Jiri firing gauge lelee; megharịa trigger plate                    |
+| Tupu oge eruo ma ọ bụ n'azụ oge, oge niile              | Ndozi ya apụọla, ma ọ bụ rod mebiri emebi                                                                               | Jiri firing gauge lelee; megharịa trigger plate                    |
 
-Iji lelee ndozi ahụ, Dawson na-eji **firing gauge** na-ejide rod ahụ ebe cone hulatara kpam kpam ga-ahapụ ya; mgbe ahụ a ga-enwe "ohere 1/16 inch" (ihe dị ka 1.6 mm) na mbọ ahụ. Lelee ya ịgba ọkụ 30 ọ bụla. Iwu Ceramics Monthly: ọ bụrụ na kiln nyụrụ n'oge, bulie trigger plate elu ntakịrị; ọ bụrụ n'azụ oge, wedata ya ntakịrị. N'agbanyeghị ihe sitter mere, "Tụkwasị large witness cone obi karịa small cone sitter mgbe niile."
+Iji lelee ndozi ahụ, Dawson na-eji **firing gauge** na-ejide rod ahụ ebe cone hulatara kpam kpam ga-ahapụ ya; mgbe ahụ a ga-enwe "ohere 1/16 inch" (ihe dị ka 1.6 mm) na mbọ ahụ. Lelee ya ịgba ọkụ 30 ọ bụla. Iwu Ceramics Monthly: ọ bụrụ na kiln nyụrụ tupu oge eruo, bulie trigger plate elu ntakịrị; ọ bụrụ n'azụ oge, wedata ya ntakịrị. N'agbanyeghị ihe sitter mere, "Tụkwasị large witness cone obi karịa small cone sitter mgbe niile."
 
 > [!WARNING]
 > **Kiln sitter abụghị ngwa nchekwa.** Akwụkwọ ntụziaka Dawson kwuru na "E MEGHỊ ya ka ọ rụọ ọrụ dịka ngwa na-anyụ n'enweghị ọdịda, a GAGHỊ ahapụkwa kiln gị n'enweghị onye na-ele ya karịa oge ịgba ọkụ a tụrụ anya." Ihe dị mfe dịka greenware dabara na tube ahụ "nwere ike ịkpata ịgbafe ọkụ oke". Nọrọ ebe ahụ ilele kiln mgbe o kwesịrị ịgwụ, ma agbala ya ọkụ n'elu ma ọ bụ nso ihe ọ bụla na-agba ọkụ, dịka ala osisi ma ọ bụ kapeeti.
@@ -263,7 +263,7 @@ Label: Ịgụ cone pack
 | Ihe ị hụrụ                                                                                                      | Ihe ọ pụtara                                                          |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | Cone 5 dara; isi cone 6 ruru otu ọkwa na ntọala ya ma ọ bụ dị ala ntakịrị; cone 7 guzoro ma ọ bụ dabara ntakịrị | Ọ ruru ebe a chọrọ: e rutere cone 6                                   |
-| Cone 5 hulatara; cone 6 naanị ụzọ ụfọdụ, n'elekere 2 ma ọ bụ 3, ma ọ bụ guzoro                                  | Agbaghị ọkụ zuru ezu: ịgba ọkụ kwụsịrị n'oge                          |
+| Cone 5 hulatara; cone 6 naanị ụzọ ụfọdụ, n'elekere 2 ma ọ bụ 3, ma ọ bụ guzoro                                  | Agbaghị ọkụ zuru ezu: ịgba ọkụ kwụsịrị tupu oge eruo                  |
 | Ọbụna cone 5 emegharịghị nke ọma                                                                                | Agbaghị ọkụ zuru ezu nke ukwuu, site n'otu cone ma ọ bụ karịa         |
 | Cone 5 na 6 dara larịị; cone 7 hulatara                                                                         | Agbafere ọkụ oke: "ị gafeela mmekọrịta oge na ọkụ kacha mma"          |
 | Cone atọ niile dara larịị ma ọ bụ gbazere n'elu plaque                                                          | Agbafere ọkụ oke nke ukwuu; lelee sitter na timer tupu ịgba ọkụ ọzọ   |
@@ -275,11 +275,11 @@ Label: Ịgụ cone pack
 Table: Ihe ị ga-agbanwe oge ọzọ
 Label: Idozi ịgba ọkụ na-esote
 
-| Ihe cone kwuru                    | Kiln sitter                                                                                                                          | Controller                                                                                                                     |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Agbaghị ọkụ zuru ezu              | Otu cone dị ọkụ karịa na sitter, ma ọ bụ akụkụ dị oke n'okpuru rod                                                                   | Jiri cone offset gbaa ọkụ ntakịrị karịa, ma ọ bụ tinye obere hold (ihe dị ka nkeji 20 ruru {{18 °F; 10 °C}} nke ọkụ kacha elu) |
-| Agbafere ọkụ oke                  | Otu cone dị jụụ karịa, ma ọ bụ akụkụ dị gịrịgịrị n'okpuru rod; ọ bụrụ na cone sitter dara nke ukwuu gafere 90°, wedata ntọala switch | Jiri cone offset gbaa ọkụ dị jụụ ntakịrị, ma ọ bụ mee ka hold dị mkpụmkpụ ma ọ bụ wepụ ya                                      |
-| Elu na ala dị iche karịa otu cone | Gbanwee usoro switch (lee Kiln aka n'uju)                                                                                            | Bunye ebe dị jụụ ibu dị mfe karịa; soro akwụkwọ ntụziaka gị                                                                    |
+| Ihe cone kwuru                    | Kiln sitter                                                                                                                          | Controller                                                                                                                            |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Agbaghị ọkụ zuru ezu              | Otu cone dị ọkụ karịa na sitter, ma ọ bụ akụkụ dị oke n'okpuru rod                                                                   | Jiri cone offset gbaa ọkụ dị ọkụ ntakịrị karịa, ma ọ bụ tinye obere hold (ihe dị ka nkeji 20 ruru {{18 °F; 10 °C}} nke ọkụ kacha elu) |
+| Agbafere ọkụ oke                  | Otu cone dị jụụ karịa, ma ọ bụ akụkụ dị gịrịgịrị n'okpuru rod; ọ bụrụ na cone sitter dara nke ukwuu gafere 90°, wedata ntọala switch | Jiri cone offset gbaa ọkụ dị jụụ ntakịrị, ma ọ bụ mee ka hold dị mkpụmkpụ ma ọ bụ wepụ ya                                             |
+| Elu na ala dị iche karịa otu cone | Gbanwee usoro switch (lee Kiln aka n'uju)                                                                                            | Bunye ebe dị jụụ ibu dị mfe karịa; soro akwụkwọ ntụziaka gị                                                                           |
 
 **Cone offset** bụ ntọala controller na-ebuli ma ọ bụ wedata ọkụ ya maka cone ka o kwekọọ n'ihe witness cone gị na-egosi. Debe pack ọ bụla e gbara ọkụ ma dee etu nke ọ bụla si hulata (lee Mgbe ịgba ọkụ gachara, n'okpuru).
 
@@ -289,7 +289,7 @@ Label: Idozi ịgba ọkụ na-esote
 
 ## Ịgba ọkụ ruo SK cone {#sk-cones}
 
-SK cone bụ pyrometric cone e mere dịka ụkpụrụ Japan, JIS R 8101, ndị na-ere ihe dịka Yuko Trading (有恒商事) na-erekwa ha na Japan. Dịka cone ọ bụla, SK cone na-atụ heatwork, ọ bụghị naanị ọkụ: ọ na-adị nro ma hulata mgbe ite nwetara ọkụ zuru ezu, ị na-agụkwa etu o si hulata. Witness cone, ịgụ etu cone si hulata, na hold na-arụ ọrụ maka ya dịka maka cone ọ bụla. Ngalaba a na-akpọ usoro cone ọ bụla aha, anaghịkwa agbanwe nọmba SK ka ọ bụrụ nọmba usoro ọzọ: nọmba usoro cone dị iche iche apụghị ịnọchi ibe ha.
+SK cone bụ pyrometric cone e mere dịka ụkpụrụ Japan, JIS R 8101, ndị na-ere ihe dịka Yuko Trading (有恒商事) na-erekwa ha na Japan. Dịka cone ọ bụla, SK cone na-atụ heatwork, ọ bụghị naanị ọkụ: ọ na-adị nro ma hulata mgbe ite nwetara ọkụ zuru ezu, ị na-agụkwa etu o si hulata. Witness cone, ịgụ etu cone si hulata, na hold na-arụ ọrụ maka ya dịka maka cone ọ bụla. Ngalaba a na-akpọ usoro cone ọ bụla aha, ọ dịghịkwa mgbe ọ na-agbanwe nọmba SK ka ọ bụrụ nọmba usoro ọzọ: nọmba usoro cone dị iche iche apụghị ịnọchi ibe ha.
 
 > [!NOTE]
 > Dee "SK" tupu nọmba ahụ mgbe niile. Ọtụtụ usoro glaze Japan ochie na-ekwu naanị "SK 8" ma ọ bụ "SK 9" n'ekwughị cone onye ọ bụ. Kyoto cone na SK cone dịka JIS nwere otu nọmba ahụ mana ha na-ehulata n'ọkụ dị iche (lee Kyoto cone, n'okpuru).
@@ -604,7 +604,7 @@ Label: Ebe mmalite maka kiln aka
 
 ### Iji pyrometer
 
-**Pyrometer** bụ ngwa ntụle ọkụ a na-agụ site na **thermocouple**, probe ọkụ gafere mgbidi kiln. Ọ na-egosi etu kiln si arị ngwa ngwa, ka i nwee ike ịhọrọ kọlụm ziri ezi nke chaatị cone. Mana ọ na-agụ nso mgbidi, ọ bụghị n'ebe ite dị, ọ na-agbanwekwa nwayọọ nwayọọ. L&L kwuru na thermocouple type K nwere ike ịdị iche karịa {{25 °F; 14 °C}} mgbe ịgba cone 6 ọtụtụ ugboro gasịrị, "ọdịiche karịrị otu cone zuru ezu", ebe self-supporting cone anaghị adị iche karịa {{4 °F; 2 °C}}. Orton kwuru na pyrometer chọrọ ka a na-agbazigharị ha site n'oge ruo n'oge, cone bụkwa otu esi elele ha.
+**Pyrometer** bụ ngwa ntụle ọkụ a na-agụ site na **thermocouple**, probe ọkụ gafere mgbidi kiln. Ọ na-egosi etu kiln si arị ngwa ngwa, ka i nwee ike ịhọrọ kọlụm ziri ezi nke chaatị cone. Mana ọ na-agụ nso mgbidi, ọ bụghị n'ebe ite dị, ọ na-agbanwekwa nwayọọ nwayọọ. L&L kwuru na thermocouple type K nwere ike ịdị iche karịa {{25 °F; 14 °C}} mgbe ịgba cone 6 ọtụtụ ugboro gasịrị, "ọdịiche karịrị otu cone zuru ezu", ebe ọdịiche self-supporting cone agaghị karịa {{4 °F; 2 °C}}. Orton kwuru na pyrometer chọrọ ka a na-agbazigharị ha site n'oge ruo n'oge, cone bụkwa otu esi elele ha.
 
 ## Ikuku, ilele anya na nchekwa {#venting}
 
@@ -625,7 +625,7 @@ Maka ịhapụ ikuku apụ n'ime ụlọ, na maka alarm carbon monoxide, lee [�
 
 ## Ịjụ oyi na iwepụta ite {#cooling}
 
-Ịjụ oyi bụ akụkụ nke ịgba ọkụ. L&L na Orton na-adụ ọdụ: "Hapụ kiln ka ọ jụọ oyi n'onwe ya ya na mkpuchi mechiri", na "Ewebatala ikuku jụrụ oyi n'ime kiln dị ọkụ." Imeghe ya n'oge "nwere ike ịkpata mgbawa", silica dị n'ite na-ebelatakwa na mberede ka ọ na-ajụ oyi gafere {{1063 °F; 573 °C}}. Na-enweghị controller, debe kiln ahụ mechiri "ruo mgbe ọkụ dara nke ọma n'okpuru ọkụ uhie (900°F / 482°C)", na opekata mpe awa 8. Emela ka kiln ka na-enwu ọkụ jụọ oyi n'ike. Mgbawa nwere ọnụ dị nkọ n'ite e gbara ọkụ bụ akara na ọ jụrụ oyi ngwa ngwa nke ukwuu.
+Ịjụ oyi bụ akụkụ nke ịgba ọkụ. L&L na Orton na-adụ ọdụ: "Hapụ kiln ka ọ jụọ oyi n'onwe ya ya na mkpuchi mechiri", na "Ewebatala ikuku jụrụ oyi n'ime kiln dị ọkụ." Imeghe ya tupu oge eruo "nwere ike ịkpata mgbawa", silica dị n'ite na-ebelatakwa na mberede ka ọ na-ajụ oyi gafere {{1063 °F; 573 °C}}. Na-enweghị controller, debe kiln ahụ mechiri "ruo mgbe ọkụ dara nke ọma n'okpuru ọkụ uhie (900°F / 482°C)", na opekata mpe awa 8. Emela ka kiln ka na-enwu ọkụ jụọ oyi n'ike. Mgbawa nwere ọnụ dị nkọ n'ite e gbara ọkụ bụ akara na ọ jụrụ oyi ngwa ngwa nke ukwuu.
 
 ### Mgbe a ga-emeghe ma wepụta ite
 

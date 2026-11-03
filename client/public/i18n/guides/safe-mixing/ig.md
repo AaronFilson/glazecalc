@@ -5,7 +5,7 @@ lead: Otu esi egbochi uzuzu glaze ịbanye na ngụgụ gị, na anwụrụ kiln
 
 ## Ihe ize ndụ kacha ukwuu: uzuzu {#the-main-hazard}
 
-Ihe ize ndụ kacha ukwuu n'ogologo oge n'ọrụ glaze bụ uzuzu, karịsịa **uzuzu silica a na-eku ume** (respirable crystalline silica): irighiri quartz ma ọ bụ cristobalite (ụdị kristal nke silica) dị obere nke na ha nwere ike iru n'ime ime ngụgụ. Silica kristal nwere ike ịbụ ihe dị ka 10 ruo 60% nke ịdị arọ glaze mgbe ọ kpọrọ nkụ, na ọtụtụ ụrọ (ma e wezụga kaolin) na ọtụtụ feldspar na-ebukwa quartz dị nro. Health and Safety Executive (HSE) nke UK kwuru na uzuzu a "dị nro nke ukwuu, a naghịkwa ahụ ya n'ìhè nkịtị", ya mere ụlọ na-ele anya ka ọ dị ọcha egosighị na ikuku ya dị ọcha.
+Ihe ize ndụ kacha ukwuu n'ogologo oge n'ọrụ glaze bụ uzuzu, karịsịa **uzuzu crystalline silica a na-eku ume** (respirable crystalline silica): irighiri quartz ma ọ bụ cristobalite (ụdị kristal nke silica) dị obere nke na ha nwere ike iru n'ime ime ngụgụ. Silica kristal nwere ike ịbụ ihe dị ka 10 ruo 60% nke ịdị arọ glaze mgbe ọ kpọrọ nkụ, na ọtụtụ ụrọ (ma e wezụga kaolin) na ọtụtụ feldspar na-ebukwa quartz dị nro. Health and Safety Executive (HSE) nke UK kwuru na uzuzu a "dị nro nke ukwuu, a naghịkwa ahụ ya n'ìhè nkịtị", ya mere ụlọ na-ele anya ka ọ dị ọcha egosighị na ikuku ya dị ọcha.
 
 Ọ bụrụ na e kuru ya ume ruo ogologo oge, ọ nwere ike ịkpata **silicosis**, ọrịa ngụgụ nke HSE kọwara dị ka "ihe dị njọ, nke a na-apụghị ịgbanwe" nke nwere ike "ịkpata nkwarụ na-adịgide adịgide na ọnwụ n'oge". O nwekwara ike ịkpata **COPD** (chronic obstructive pulmonary disease: bronchitis na emphysema na-adịte aka), nke ịṅụ sịga na-eme ka ọ ka njọ. IARC, ụlọ ọrụ World Health Organization na-ahụ maka ọrịa kansa, tinyere silica kristal a na-eku ume na Group 1, "na-akpata kansa n'ime mmadụ".
 
@@ -15,7 +15,7 @@ Silica anaghị aghọ anwụrụ n'ime kiln, glaze mmiri anaghịkwa abụ ihe 
 
 Iwu ebe ọrụ na-esetịpụ **oke ikuku uzuzu** (exposure limit): silica kacha nke onye ọrụ nwere ike iku ume, ọnụ ọgụgụ etiti ya n'ụbọchị awa 8, na milligram (mg) ma ọ bụ microgram (µg, otu ụzọ n'ụzọ puku nke milligram) n'otu mita cubic nke ikuku.
 
-Table: Oke ebe ọrụ maka uzuzu silica a na-eku ume (ọnụ ọgụgụ etiti awa 8)
+Table: Oke ebe ọrụ maka uzuzu crystalline silica a na-eku ume (ọnụ ọgụgụ etiti awa 8)
 Label: Oke silica
 
 | Mpaghara       |                   Oke | Ihe edeturu                                                                                   |
@@ -88,7 +88,7 @@ Ihe mkpuchi na-agbapụ na-ahapụ uzuzu ka ọ banye n'akụkụ ya, n'agbanyeg
 
 - **Kpụọ afụ ọnụ obere oge tupu ị rụọ ọrụ.** Ndụmọdụ dị iche n'otú "kpụrụ afụ ọnụ ọcha" ga-esi dị ọhụrụ. Onye na-emepụta ihe na UK, na-ekwu okwu HSE, kwuru na a ga-akpụ ya n'ime awa 8 tupu ịmalite ọrụ. Ụkpụrụ fit test nke Australia na New Zealand chọrọ ịkpụ afụ ọnụ tupu fit test, "ka mma n'ime awa 12". Ịkpụ afụ ọnụ obere oge tupu ị rụọ ọrụ na-emezu ha abụọ.
 - **Ọ bụrụ na ị na-edebe ajị agba,** **respirator nwere ike eletrik** (PAPR: hood ma ọ bụ okpu igwe nwere fan na-enye ikuku e nyochara) nke na-adịghị ejide ihu achọghị imechi ihu.
-- **Nweta nha ziri ezi.** Ihe mkpuchi na-adabaghị nke ọma n'ihu bụ isi ihe na-akpata ịgbapụ. Ebe ọrụ na-eji **fit test**, nlele na otu ihe mkpuchi na-emechi nke ọma n'otu ihu. N'ụlọ, anyị na-atụ aro ka i soro ntụziaka onye mepụtara ya maka ịlele imechi ya oge ọ bụla i yiri ya.
+- **Nweta nha ziri ezi.** Ihe mkpuchi na-adabaghị nke ọma n'ihu bụ otu n'ime isi ihe na-akpata ịgbapụ. Ebe ọrụ na-eji **fit test**, nlele na otu ihe mkpuchi na-emechi nke ọma n'otu ihu. N'ụlọ, anyị na-atụ aro ka i soro ntụziaka onye mepụtara ya maka ịlele imechi ya oge ọ bụla i yiri ya.
 
 > [!NOTE]
 > N'echiche anyị, ịdaba nke ọma dị mkpa karịa klas: N95, FFP2 ma ọ bụ P2 dabara nke ọma ga-akakarị mma karịa P100 na-adabaghị nke ọma n'ihu.
@@ -142,7 +142,7 @@ Maka idebe uzuzu na ihe eji arụ ọrụ n'ebe dị anya site n'ụmụaka na a
 
 ### Ịgba spray
 
-HSE dọrọ aka na ntị na ịgba spray "nwere ike imepụta alụlụ nwere RCS" (uzuzu silica a na-eku ume), nakwa na "alụlụ glaze na-akpọ nkụ ngwa ngwa ma ghọọ uzuzu". Isi mmalite ọ bụla anyị hụrụ kwuru ka a gbaa spray naanị n'ime booth nwere ikuku na-agafe.
+HSE dọrọ aka na ntị na ịgba spray "nwere ike imepụta alụlụ nwere RCS" (uzuzu crystalline silica a na-eku ume), nakwa na "alụlụ glaze na-akpọ nkụ ngwa ngwa ma ghọọ uzuzu". Isi mmalite ọ bụla anyị hụrụ kwuru ka a gbaa spray naanị n'ime booth nwere ikuku na-agafe.
 
 - HSE chọrọ ebe e mechiri emechi nwere ikuku na-adọpụ na, "ebe o kwere omume, booth nwere mmiri n'azụ", nke na-ejide spray fere efe n'ime mmiri.
 - Jiri tebụl na-atụgharị n'ime booth, yiri uwe aka nitrile na respirator, ma hichaa booth na filter ya tupu spray fere efe akpọọ nkụ.
@@ -183,7 +183,7 @@ Raku na-emepụta anwụrụ ọkụ na CO dị ukwuu; Utah na-adụ ọdụ ime
 
 ## Ihe ndị chọrọ nlezi anya kacha {#materials}
 
-Ọtụtụ ihe glaze, gụnyere silica, ụrọ, feldspar na frit, bụ isi ihe ize ndụ uzuzu, nke omume ndị dị n'elu na-achịkwa. Ndepụta dị mkpụmkpụ nwere nsí n'onwe ha, site n'iku ume, ilo ma ọ bụ imetụ akpụkpọ ahụ. Digitalfire gbakwunyere na stain dịkarịsịrị nchebe karịa oxide a na-esighị esi, nakwa na "a pụrụ iji ihe ọ bụla mee glaze na-adịghị ziri ezi na-ahapụ metal nwere nsí": nchekwa nri dabere n'usoro niile, ọ bụghị n'otu ihe.
+Ọtụtụ ihe glaze, gụnyere silica, ụrọ, feldspar na frit, bụ isi ihe ize ndụ uzuzu, nke omume ndị dị n'elu na-achịkwa. Ndepụta dị mkpụmkpụ nwere nsí n'onwe ha, site n'iku ume, ilo ma ọ bụ imetụ akpụkpọ ahụ. Digitalfire gbakwunyere na stain dịkarịsịrị nchebe nke ukwuu karịa oxide a na-esighị esi, nakwa na "a pụrụ iji ihe ọ bụla mee glaze na-adịghị ziri ezi na-ahapụ metal nwere nsí": nchekwa nri dabere n'usoro niile, ọ bụghị n'otu ihe.
 
 **Otu IARC** bụ nkewa kansa: Group 1 pụtara "na-akpata kansa n'ime mmadụ", Group 2A "eleghị anya na-akpata kansa n'ime mmadụ", Group 2B "ikekwe na-akpata kansa n'ime mmadụ", na Group 3 "a pụghị ikewa ya maka ịkpata kansa n'ime mmadụ", nke pụtara ihe akaebe ezughị oke ikpe n'ụzọ ọ bụla.
 
@@ -226,9 +226,9 @@ Borax, boric acid, soda ash na potash na-agbaze na mmiri, ya mere anyị na-ewer
 - Yiri iko nchekwa anya mgbe ị na-egwe ihe e tinyere glaze. Anyị na-atụkwa aro ha mgbe ị na-awụpụ ntụ.
 - **Ilele n'ime kiln dị ọkụ.** Kiln na-ewepụta radieshọn **infrared** (okpomọkụ ị na-adịghị ahụ anya) nke "nwere ike ịkpata cataract". Ọchịchịrị a na-atụ aro maka iko nwere ọkwa IR dị iche: 1.7 ruo 3.0 (University of Utah) na 2.0 ruo 5.0 (University of Calgary). Shade 3 dị n'ime ha abụọ; họrọ nke gbara ọchịchịrị karịa ma ọ bụrụ na ntụpọ apụta n'ihe ị na-ahụ.
 
-## Ịgụ safety data sheet {#safety-data-sheets}
+## Ịgụ mpempe data nchekwa {#safety-data-sheets}
 
-**Safety data sheet** (SDS; ndị ochie na-ede MSDS) bụ akwụkwọ onye na-ere ihe banyere ihe dị n'ime ngwaahịa, ihe ize ndụ ya na otu esi ejikwa ya. Ihe eji arụ ọrụ ọ bụla na glaze ọ bụla a na-ere n'ahịa kwesịrị inwe otu; lelee n'ibe ngwaahịa ahụ ma ọ bụ jụọ onye na-ere ya. O nwere ngalaba 16, abụọ kachakwa mkpa:
+**Mpempe data nchekwa** (safety data sheet, SDS; ndị ochie na-ede MSDS) bụ akwụkwọ onye na-ere ihe banyere ihe dị n'ime ngwaahịa, ihe ize ndụ ya na otu esi ejikwa ya. Ihe eji arụ ọrụ ọ bụla na glaze ọ bụla a na-ere n'ahịa kwesịrị inwe otu; lelee n'ibe ngwaahịa ahụ ma ọ bụ jụọ onye na-ere ya. O nwere ngalaba 16, abụọ kachakwa mkpa:
 
 - **Ngalaba 2, Nchọpụta ihe ize ndụ:** nkewa ahụ, **okwu ịdọ aka na ntị** dị ka "Danger", **pictogram** (obere akara ịdọ aka na ntị) na nkwupụta ihe ize ndụ.
 - **Ngalaba 8, Njikwa ikuku uzuzu na nchekwa onwe onye:** oke ikuku uzuzu, **njikwa injinia** achọrọ (ikuku na-agafe na ikuku na-adọpụ) na ngwá nchekwa ị ga-eyi.
@@ -239,7 +239,7 @@ Pictogram na nkwupụta ihe ize ndụ sitere na **GHS** (Globally Harmonized Sys
 - **"Not classified" abụghị "enweghị nsogbu".** Glaze emechara na-enweghị pictogram ọ bụla ka na-emepụta uzuzu silica mgbe ọ kpọrọ nkụ.
 
 > [!NOTE]
-> Ntụzịaka a na-achịkọta ndụmọdụ e bipụtara, mana ọ bụghị ihe nnọchi maka safety data sheet nke ihe, akwụkwọ ntụziaka kiln gị ma ọ bụ iwu obodo gị. Ebe ha dị iche n'ihe ị gụrụ ebe a, soro ha.
+> Ntụzịaka a na-achịkọta ndụmọdụ e bipụtara, mana ọ bụghị ihe nnọchi maka mpempe data nchekwa nke ihe, akwụkwọ ntụziaka kiln gị ma ọ bụ iwu obodo gị. Ebe ha dị iche n'ihe ị gụrụ ebe a, soro ha.
 
 ## Ntụzịaka gọọmentị dịka mpaghara {#official-guidance}
 

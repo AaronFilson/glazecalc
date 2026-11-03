@@ -86,7 +86,7 @@ _mazugi_ as a gloss at first use. **Native check**. Seger and SK cones never con
 | Glazing basics                            | Tushen glaze                                   |
 | How to make a glaze                       | Yadda ake haɗa glaze                           |
 | Safe mixing and ventilation               | Haɗawa cikin aminci da iska mai kyau           |
-| Firing a basic kiln                       | Gasa a cikin murhu mai sauƙi                   |
+| Firing a basic kiln                       | Gasa a cikin kiln mai sauƙi                    |
 | Don't poison your family                  | **Kada ka sa wa iyalinka guba**                |
 | Learn with John Britt's free glaze course | Koyi da kwas ɗin glaze na kyauta na John Britt |
 
@@ -107,16 +107,19 @@ The home-safety title keeps the owner's blunt form (here the singular _ka_ is th
 
 ### 2.1 Glaze and its chemistry
 
-| English                       | ha                            | Notes                  |
-| ----------------------------- | ----------------------------- | ---------------------- |
-| glaze **show English**        | glaze; shafa glaze (verb)     | Loan. **Native check** |
-| unity molecular formula (UMF) | UMF                           | Loan.                  |
-| loss on ignition (LOI)        | LOI (raguwar nauyi a wuta)    | **Native check**       |
-| oxide                         | oxide (ogsaid)                | Loan. **Native check** |
-| mole                          | mole                          | Loan.                  |
-| thermal expansion             | faɗaɗawa saboda zafi          | **Native check**       |
-| gloss, satin, matte           | mai sheƙi, satin, marar sheƙi | **Native check**       |
-| flux                          | flux (mai narkarwa)           | **Native check**       |
+| English                       | ha                                                                    | Notes                                                                        |
+| ----------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| glaze **show English**        | glaze; shafa glaze (verb)                                             | Loan. **Native check**                                                       |
+| unity molecular formula (UMF) | UMF                                                                   | Loan.                                                                        |
+| loss on ignition (LOI)        | LOI (raguwar nauyi a wuta)                                            | **Native check**                                                             |
+| oxide                         | oxide (ogsaid)                                                        | Loan. **Native check**                                                       |
+| mole                          | mole                                                                  | Loan.                                                                        |
+| thermal expansion             | faɗaɗawa saboda zafi                                                  | **Native check**                                                             |
+| gloss, satin, matte           | mai sheƙi, satin, marar sheƙi                                         | **Native check**                                                             |
+| flux                          | flux (mai narkarwa)                                                   | **Native check**                                                             |
+| opaque, opacifier             | mai hana haske ratsawa (opaque); masu hana haske ratsawa (opacifiers) | Stops light passing; never "dark" (_duhu_). **Native check**                 |
+| soluble, dissolve             | mai narkewa a ruwa; narke a ruwa                                      | Always "a ruwa" (in water) or "a acid": bare _narke_ is melting in the kiln. |
+| clear glaze                   | glaze mai haske (clear)                                               | Transparent (light passes), never white (_fari_). **Native check**           |
 
 ### 2.2 Materials and oxides
 
@@ -143,43 +146,51 @@ The home-safety title keeps the owner's blunt form (here the singular _ka_ is th
 
 ### 2.4 Kilns, cones and firing
 
-| English              | ha                         | Notes            |
-| -------------------- | -------------------------- | ---------------- |
-| kiln                 | kiln (murhun gasa tukwane) | **Native check** |
-| firing, to fire      | gasa                       | Newman.          |
-| cone                 | cone (mazugi)              | **Native check** |
-| oxidation, reduction | oxidation, reduction       | Loans.           |
-| cooling              | hucewa                     | **Native check** |
+| English              | ha                                                   | Notes                                                                           |
+| -------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------- |
+| kiln                 | kiln (murhun gasa tukwane)                           | **Native check**                                                                |
+| firing, to fire      | gasa                                                 | Newman.                                                                         |
+| cone                 | cone (mazugi)                                        | **Native check**                                                                |
+| oxidation, reduction | oxidation, reduction                                 | Loans.                                                                          |
+| cooling              | hucewa                                               | **Native check**                                                                |
+| witness cone         | cone mai shaida (witness cone); pl. cone masu shaida | Not _cone na shaida_, not bare English. **Native check**                        |
+| kiln wash            | kiln wash                                            | Loan: the protective coating painted on kiln shelves, never a wash of the kiln. |
+| inch, foot           | inci, ƙafa                                           | Figures as the English, metric in brackets.                                     |
 
 ### 2.5 Defects and making
 
-| English          | ha                            | Notes            |
-| ---------------- | ----------------------------- | ---------------- |
-| crazing          | crazing (ƙananan tsage-tsage) | **Native check** |
-| crawling         | crawling                      | Loan.            |
-| leaching         | zubar ƙarfe (leaching)        | **Native check** |
-| batch            | batch (haɗi)                  | **Native check** |
-| scale            | sikeli                        | Loan, everyday.  |
-| sieve            | rariya; tace (verb)           | Newman.          |
-| specific gravity | SG                            | Loan.            |
-| test tile        | test tile (tayil ɗin gwaji)   | **Native check** |
+| English               | ha                                                      | Notes                                                                                 |
+| --------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| crazing               | crazing (ƙananan tsage-tsage)                           | **Native check**                                                                      |
+| crawling              | crawling                                                | Loan.                                                                                 |
+| leaching, leach test  | zubar ƙarfe (leaching); gwajin zubar ƙarfe (leach test) | _ƙarfe_ = metals in general (lead, cadmium, barium…), not lead only. **Native check** |
+| crystals (in a glaze) | ƙwayoyi (crystals)                                      | Not _ƙyalli_, not _kristal_. **Native check**                                         |
+| batch                 | batch (haɗi)                                            | **Native check**                                                                      |
+| scale                 | sikeli                                                  | Loan, everyday.                                                                       |
+| sieve                 | rariya; tace (verb)                                     | Newman.                                                                               |
+| specific gravity      | SG                                                      | Loan.                                                                                 |
+| test tile             | test tile (tayil ɗin gwaji)                             | **Native check**                                                                      |
 
 ### 2.6 Health and safety
 
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures in
 English and digits (Pb, BaCO₃, 0.025 mg/m³).
 
-| English                       | ha                                   | Notes                                          |
-| ----------------------------- | ------------------------------------ | ---------------------------------------------- |
-| dust                          | ƙura                                 | Newman.                                        |
-| respirable crystalline silica | ƙurar silica da ake shaƙa            | **Native check**                               |
-| silicosis                     | silicosis (cutar huhu)               | **Native check**                               |
-| respirator                    | respirator (abin rufe hanci da baki) | **Native check**                               |
-| poison, toxic                 | guba; mai guba                       | Newman.                                        |
-| food safe                     | lafiya ga abinci                     | **Native check**                               |
-| lead-free                     | babu darma (lead-free)               | **Native check**                               |
-| at most / no more than        | bai wuce … ba; mafi yawa             | "less than" is _ƙasa da_: never for "at most". |
-| at least                      | aƙalla                               |                                                |
+| English                       | ha                                                         | Notes                                                                                          |
+| ----------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| dust                          | ƙura                                                       | Newman.                                                                                        |
+| respirable crystalline silica | ƙurar crystalline silica da ake iya shaƙa                  | Keep the loan "crystalline"; never _silica mai ƙyalli_ (reads as glittering). **Native check** |
+| safety data sheet (SDS)       | takardar bayanan aminci (SDS); pl. takardun bayanan aminci | "SDS" alone only where the English cites one by name. **Native check**                         |
+| combustible                   | mai kamawa da wuta                                         | **Native check**                                                                               |
+| early, too soon               | da wuri                                                    | Never "in the morning" or "on time".                                                           |
+| less, fewer, reduce           | ƙasa da …; rage                                            | Never _ɗan ƙari_ ("a little more").                                                            |
+| silicosis                     | silicosis (cutar huhu)                                     | **Native check**                                                                               |
+| respirator                    | respirator (abin rufe hanci da baki)                       | **Native check**                                                                               |
+| poison, toxic                 | guba; mai guba                                             | Newman.                                                                                        |
+| food safe                     | lafiya ga abinci                                           | **Native check**                                                                               |
+| lead-free                     | babu darma (lead-free)                                     | **Native check**                                                                               |
+| at most / no more than        | bai wuce … ba; mafi yawa                                   | "less than" is _ƙasa da_: never for "at most".                                                 |
+| at least                      | aƙalla                                                     |                                                                                                |
 
 **Who to call.** The region data has neither Nigeria nor Niger, so the translation names no number. For the record:
 

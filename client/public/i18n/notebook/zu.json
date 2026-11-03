@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Incwadi yakho yasesitudiyo",
+    "title": "Incwadi yakho yesitudiyo",
     "signedInAs": "Ungene njengo-{email}.",
     "trying": "Uzama i-Glazecalc njengo-{name}. Qala ngeresiphi.",
     "welcomeBack": "Qhubeka lapho ugcine khona.",
@@ -14,24 +14,24 @@
     },
     "sections": {
       "recipe": {
-        "title": "Izindlela zokwenza i-glaze",
+        "title": "Amaresiphi",
         "text": "Yakha i-glaze ngokokwakha namanani, ubone i-unity formula yayo, bese uyilondoloza."
       },
       "import": {
-        "title": "Namathisela izindlela zokwenza",
-        "text": "Namathisela izindlela zokwenza i-glaze ezivela kuwebhusayithi, kuspredishithi noma emanothini, uhlole okufundiwe, bese uzilondoloza."
+        "title": "Namathisela amaresiphi",
+        "text": "Namathisela amaresiphi avela kuwebhusayithi, kuspredishithi noma emanothini, uhlole okufundiwe, bese uzilondoloza."
       },
       "blends": {
         "title": "Ukuxuba kwama-test tile",
-        "text": "Xuba izindlela zakho zokwenza ezimbili, ezintathu noma ezine zibe ama-test tile anezinombolo, nalokho okufanele ukukale ku-tile ngayinye."
+        "text": "Xuba amaresiphi akho amabili, amathathu noma amane abe ama-test tile anezinombolo, nalokho okufanele ukukale ku-tile ngayinye."
       },
       "material": {
         "title": "Okokwakha",
         "text": "Engeza okokwakha okuluhlaza kwakho, ku-formula yamakhemikhali noma ekuhlaziyweni komphakeli."
       },
       "additive": {
-        "title": "Okokwengeza nokokufaka umbala",
-        "text": "Gcina okokufaka umbala nokwenza i-glaze ingabonisi ngaphakathi okwengeza ngaphezu kwe-glaze eyisisekelo."
+        "title": "Izithasiselo nokokufaka umbala",
+        "text": "Gcina okokufaka umbala nokwenza i-glaze ingabonisi okwengeza ngaphezu kwe-glaze eyisisekelo."
       },
       "firing": {
         "title": "Amarekhodi okushisa",
@@ -92,9 +92,9 @@
     "fetchFailed": "Kube nephutha ekutholeni ulwazi lwamarekhodi okushisa.",
     "saved": "Irekhodi lokushisa lengezwe eseva ngempumelelo.",
     "saveFailed": "Iphutha: isicelo eseva sehlulekile.",
-    "recipesHeading": "Izindlela zokwenza ezishiswe kukho",
-    "noRecipes": "Azikabikho izindlela zokwenza ezixhunyiwe.",
-    "recipesFailed": "Izindlela zakho zokwenza azikwazanga ukulandwa, ngakho ayikho engaxhunywa manje.",
+    "recipesHeading": "Amaresiphi ashiswe kukho",
+    "noRecipes": "Awakabikho amaresiphi axhunyiwe.",
+    "recipesFailed": "Amaresiphi akho awakwazanga ukulandwa, ngakho ayikho iresiphi engaxhunywa manje.",
     "pickRecipe": "Iresiphi eshiswe kukho",
     "linkRecipe": "Xhuma iresiphi",
     "unlink": "Nqamula",
@@ -119,14 +119,14 @@
   },
   "trash": {
     "title": "Udoti",
-    "lead": "Lokho okukhiphayo (izindlela zokwenza, okokwakha, okokwengeza, amanothi, amarekhodi okushisa neseluleko) kulinda lapha izinsuku ezingu-30. Kubuyisele, noma ukususe unomphela.",
+    "lead": "Lokho okukhiphayo (amaresiphi, okokwakha, izithasiselo, amanothi, amarekhodi okushisa neseluleko) kulinda lapha izinsuku ezingu-30. Kubuyisele, noma ukususe unomphela.",
     "listHeading": "Kudoti",
     "none": "Udoti awunalutho.",
     "untitled": "Akunasihloko",
     "kinds": {
       "recipes": "Iresiphi",
       "materials": "Okokwakha",
-      "additives": "Okokwengeza",
+      "additives": "Isithasiselo",
       "notes": "Inothi",
       "firing": "Irekhodi lokushisa",
       "advice": "Iseluleko",

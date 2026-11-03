@@ -146,11 +146,11 @@ I-**cone pack** ingama-witness cone amathathu abekwe ndawonye, ehlukene ngenombo
 Table: I-cone pack yama-cone amathathu
 Label: I-cone pack yamathathu
 
-| I-cone                 | Iyiphi inombolo                      | I-bisque ye-cone 04 | I-glaze ye-cone 6 | Uma igoba                     |
-| ---------------------- | ------------------------------------ | ------------------- | ----------------- | ----------------------------- |
-| Umhlahlandlela (guide) | Ipholile ngenombolo eyodwa kunehloso | 05                  | 5                 | Izitsha zisondela ekuvuthweni |
-| Ukushisa (firing)      | Inhloso                              | 04                  | 6                 | Ukushisa kusendaweni efanele  |
-| Umlindi (guard)        | Ishisa kakhulu ngenombolo eyodwa     | 03                  | 7                 | Ukushisa sekudlulele kakhulu  |
+| I-cone                 | Iyiphi inombolo                       | I-bisque ye-cone 04 | I-glaze ye-cone 6 | Uma igoba                     |
+| ---------------------- | ------------------------------------- | ------------------- | ----------------- | ----------------------------- |
+| Umhlahlandlela (guide) | Ipholile ngenombolo eyodwa kunenhloso | 05                  | 5                 | Izitsha zisondela ekuvuthweni |
+| Ukushisa (firing)      | Inhloso                               | 04                  | 6                 | Ukushisa kusendaweni efanele  |
+| Umlindi (guard)        | Ishisa kakhulu ngenombolo eyodwa      | 03                  | 7                 | Ukushisa sekudlulele kakhulu  |
 
 ### Ama-cone azimele ngokwawo noma i-plaque
 
@@ -183,7 +183,7 @@ Ama-cone amancane nama-bar "anikeza ukushisa okulinganayo". U-Orton uphawula uku
 
 ### Iyiphi i-cone engena ku-sitter
 
-Imithombo ayivumelani. U-Dawson, owenza i-sitter, uthi sebenzisa inombolo efanayo ne-cone yokushisa eshalofini, futhi uye enombolweni eyodwa eshisa kakhulu kuphela uma i-cone yeshalofu ihlala ingagobile. I-L&L ithi sebenzisa inombolo eyodwa eshisa kakhulu kunama-cone eshalofu, ngoba i-sitter ihlala eduze nodonga nama-element, ithola ukushisa okwengeziwe, futhi ivame ukuvala kusesekuseni. U-Orton uqinisa umgomo: "I-cone yeshalofu ingumahluleli wokugcina wenqubo yokushisa, hhayi i-cone noma i-bar ye-Kiln-Sitter."
+Imithombo ayivumelani. U-Dawson, owenza i-sitter, uthi sebenzisa inombolo efanayo ne-cone yokushisa eshalofini, futhi uye enombolweni eyodwa eshisa kakhulu kuphela uma i-cone yeshalofu ihlala ingagobile. I-L&L ithi sebenzisa inombolo eyodwa eshisa kakhulu kunama-cone eshalofu, ngoba i-sitter ihlala eduze nodonga nama-element, ithola ukushisa okwengeziwe, futhi ivame ukuvala ngaphambi kwesikhathi. U-Orton uqinisa umgomo: "I-cone yeshalofu ingumahluleli wokugcina wenqubo yokushisa, hhayi i-cone noma i-bar ye-Kiln-Sitter."
 
 > [!NOTE]
 > Indawo yethu yokuqala: faka i-cone encane yenombolo efanayo nenhloso yakho ku-sitter, ne-cone pack eshalofini. Uma i-cone yokushisa yeshalofu ingagobanga ngokwanele lapho i-kiln ivala, ngokuzayo yiya enombolweni eyodwa eshisa kakhulu ku-sitter, noma ubeke ingxenye ewugqinsi ye-cone ngaphansi kwenduku. Uma igobe ngokweqile, yenza okuphambene.
@@ -214,7 +214,7 @@ Label: Izilungiselelo ze-limit timer
 > [!NOTE]
 > Indawo yethu yokuqala: phana okokuqala (ngaphakathi kwamahora angu-20 edayela), bese kuba yihora elingu-½ kuya ku-1 ngaphezu kwesikhathi osibhalile. I-timer ikutshela nokuthi ukushisa kuthathe isikhathi esingakanani: isethwe ku-7 iphele ku-1 kusho amahora angu-6.
 
-### Uma ivala kusesekuseni noma sekwephuzile
+### Uma ivala ngaphambi kwesikhathi noma sekwephuzile
 
 Ngemuva kokushisa ngakunye, funda i-cone ye-sitter eceleni kwama-cone eshalofu.
 
@@ -226,14 +226,14 @@ Label: Izinkinga ze-kiln sitter
 | I-sitter ivalile, i-cone yokushisa yeshalofu ayigobanga ngokwanele | I-sitter ibishisa kakhulu kuneshalofu (ihlala eduze nodonga)                                                             | I-cone eyodwa eshisa kakhulu ku-sitter, noma ingxenye ewugqinsi ngaphansi kwenduku     |
 | I-cone ye-sitter iwe kakhulu ngale kuka-90°                        | I-kiln ikhuphuke ngokushesha kakhulu eduze nokuphela                                                                     | Yehlisa izilungiselelo zamaswishi, ukuze ukukhuphuka kuhambe kancane (Dawson)          |
 | I-cone ye-sitter ayigobanga, noma incibilike yaba yisigaxa         | I-sitter ngokwayo: ukulungiswa okubi, induku egobile noma egqwalile, noma okuthile okubambeke ngaphakathi noma kweshubhu | Hlola futhi ulungise i-sitter ngokwencwadi yayo yemiyalelo ngaphambi kokuphinda ushise |
-| Kusesekuseni noma sekwephuzile njalo                               | Ayilungisiwe kahle, noma induku eguguleyo                                                                                | Hlola nge-firing gauge; hambisa i-trigger plate                                        |
+| Ngaphambi kwesikhathi noma sekwephuzile njalo                      | Ayilungisiwe kahle, noma induku eguguleyo                                                                                | Hlola nge-firing gauge; hambisa i-trigger plate                                        |
 
-Ukuze ahlole ukulungiswa, u-Dawson usebenzisa i-**firing gauge** ebamba induku lapho i-cone egobe ngokuphelele ibingayishiya khona; khona-ke kufanele kube nesikhala "se-1/16th-inch" (cishe u-1.6 mm) enzipheni. Kuhlole njalo ngemuva kokushisa okungu-30. Umthetho we-Ceramics Monthly: uma i-kiln ivala kusesekuseni, hambisa i-trigger plate phezulu kancane; uma sekwephuzile, yihambise phansi kancane. Noma ngabe i-sitter yenzani, "Njalo themba ama-witness cone amakhulu kunama-cone amancane e-sitter."
+Ukuze ahlole ukulungiswa, u-Dawson usebenzisa i-**firing gauge** ebamba induku lapho i-cone egobe ngokuphelele ibingayishiya khona; khona-ke kufanele kube nesikhala "se-1/16 yeyintshi" (cishe u-1.6 mm) enzipheni. Kuhlole njalo ngemuva kokushisa okungu-30. Umthetho we-Ceramics Monthly: uma i-kiln ivala ngaphambi kwesikhathi, hambisa i-trigger plate phezulu kancane; uma sekwephuzile, yihambise phansi kancane. Noma ngabe i-sitter yenzani, "Njalo themba ama-witness cone amakhulu kunama-cone amancane e-sitter."
 
 > [!WARNING]
 > **I-kiln sitter akuyona into yokuphepha.** Incwadi yemiyalelo ka-Dawson ithi "AYENZELWE ukusebenza njengento yokuvala engehluleki futhi i-kiln yakho AKUFANELE ishiywe ingabhekiwe ngale kwesikhathi sokushisa esilinganisiwe." Into elula njengezitsha eziluhlaza (greenware) eziwela eshubhwini "ingadala ukushisa ngokweqile". Yiba khona ukuze uhlole i-kiln lapho kufanele iqede khona, futhi ungalokothi uyishise phezu noma eduze kwanoma yini evuthayo, njengephansi lokhuni noma ukhaphethi.
 
-I-sitter yakhelwe ukushisa "kuze kufike futhi kuhlanganise ne-Cone 8". Ayikwazi ukubamba izinga lokushisa noma ukupholisa kancane ngokwayo. Kodwa ngokuzijwayeza nencwadi yokubhala, ungakwazi "ukuba yi-controller", njengoba i-Digitalfire isho: buka ama-cone bese uphenduka amaswishi ngesandla.
+I-sitter yakhelwe ukushisa "kuze kufike futhi kuhlanganise ne-Cone 8". Ayikwazi ukubamba izinga lokushisa noma ukupholisa kancane ngokwayo. Kodwa ngokuzijwayeza nencwadi yokubhala, ungakwazi "ukuba yi-controller", njengoba i-Digitalfire isho: buka ama-cone bese uphendula amaswishi ngesandla.
 
 :::
 
@@ -263,8 +263,8 @@ Label: Ukufunda i-cone pack
 | Okubonayo                                                                                                                 | Kusho ukuthini                                                                          |
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | I-cone 5 iwile; isihloko se-cone 6 silingana nesisekelo sayo noma ngaphansi kancane; i-cone 7 imi mpo noma incike kancane | Kuhlosiwe kahle: i-cone 6 ifinyelelwe                                                   |
-| I-cone 5 igobile; i-cone 6 ingxenye kuphela, ku-2 noma ku-3 ewashini, noma imi mpo                                        | Akushiswanga ngokwanele: ukushisa kumile kusesekuseni kakhulu                           |
-| Ngisho ne-cone 5 ayinyakazanga neze                                                                                       | Akushiswanga ngokwanele nhlobo, nge-cone noma ngaphezulu                                |
+| I-cone 5 igobile; i-cone 6 ingxenye kuphela, ku-2 noma ku-3 ewashini, noma imi mpo                                        | Akushiswanga ngokwanele: ukushisa kumile ngaphambi kwesikhathi                          |
+| Ngisho ne-cone 5 inyakaze kancane nje                                                                                     | Akushiswanga ngokwanele kakhulu, nge-cone noma ngaphezulu                               |
 | Ama-cone 5 no-6 alele phansi; i-cone 7 igobile                                                                            | Kushiswe ngokweqile: "useqe ubudlelwano obungcono kakhulu besikhathi nezinga lokushisa" |
 | Womathathu awele phansi noma ancibilikele ku-plaque                                                                       | Kushiswe ngokweqile kakhulu; hlola i-sitter ne-timer ngaphambi kokuphinda ushise        |
 | Ama-cone aluhlaza okotshani, noma i-bisque empunga                                                                        | Ukuphuma komoya okubi, noma ukushisa ngokushesha kakhulu                                |
@@ -275,11 +275,11 @@ Label: Ukufunda i-cone pack
 Table: Okufanele ukushintshe ngokuzayo
 Label: Ukulungisa ukushisa okulandelayo
 
-| Ama-cone athi                               | I-kiln sitter                                                                                                                                       | I-controller                                                                                                                                      |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Akushiswanga ngokwanele                     | I-cone eyodwa eshisa kakhulu ku-sitter, noma ingxenye ewugqinsi ngaphansi kwenduku                                                                  | Sebenzisa i-cone offset ukushisa kancane kakhulu, noma wengeze ukubamba okufushane (cishe imizuzu engu-20 ilingana no-{{18 °F; 10 °C}} wesiqongo) |
-| Kushiswe ngokweqile                         | I-cone eyodwa epholile, noma ingxenye encane ngaphansi kwenduku; uma i-cone ye-sitter iwe kakhulu ngale kuka-90°, yehlisa izilungiselelo zamaswishi | Sebenzisa i-cone offset ukushisa kupholile kancane, noma unciphise noma ususe ukubamba                                                            |
-| Phezulu naphansi kwehluka ngaphezu kwe-cone | Shintsha iphethini yamaswishi (bona Ama-kiln esandla ngokuningiliziwe)                                                                              | Layisha indawo epholile kancane; landela incwadi yakho yemiyalelo                                                                                 |
+| Ama-cone athi                               | I-kiln sitter                                                                                                                                       | I-controller                                                                                                                                              |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Akushiswanga ngokwanele                     | I-cone eyodwa eshisa kakhulu ku-sitter, noma ingxenye ewugqinsi ngaphansi kwenduku                                                                  | Sebenzisa i-cone offset ukuze ushise kakhudlwana kancane, noma wengeze ukubamba okufushane (cishe imizuzu engu-20 ilingana no-{{18 °F; 10 °C}} wesiqongo) |
+| Kushiswe ngokweqile                         | I-cone eyodwa epholile, noma ingxenye encane ngaphansi kwenduku; uma i-cone ye-sitter iwe kakhulu ngale kuka-90°, yehlisa izilungiselelo zamaswishi | Sebenzisa i-cone offset ukushisa kupholile kancane, noma unciphise noma ususe ukubamba                                                                    |
+| Phezulu naphansi kwehluka ngaphezu kwe-cone | Shintsha iphethini yamaswishi (bona Ama-kiln esandla ngokuningiliziwe)                                                                              | Faka umthwalo omncane endaweni epholile; landela incwadi yakho yemiyalelo                                                                                 |
 
 I-**cone offset** isilungiselelo se-controller esihambisa izinga layo lokushisa le-cone phezulu noma phansi ukuze lifane nalokho ama-witness cone akho akukhombisayo. Gcina yonke i-pack eshisiwe futhi ubhale ukuthi ngayinye igobe kanjani (bona Ngemuva kokushisa, ngezansi).
 
@@ -604,7 +604,7 @@ Uma i-sitter ivala ngaphambi kokuba ama-cone eshalofu awe, ngokuzayo yiya ku-con
 
 ### Ukusebenzisa i-pyrometer
 
-I-**pyrometer** yisilinganiso sokushisa esifundwa ku-**thermocouple**, i-probe yokushisa edlula odongeni lwe-kiln. Ikhombisa ukuthi i-kiln ikhuphuka ngokushesha kangakanani, ukuze ukhethe ikholomu efanele yeshadi lama-cone. Kodwa ifunda eduze nodonga, hhayi ezitsheni, futhi iyaphambuka. I-L&L iphawula ukuthi i-thermocouple yohlobo K ingaphambuka ngaphezu kuka-{{25 °F; 14 °C}} ngemuva kokushisa okuphindaphindiwe kwe-cone 6, "umehluko omkhulu kune-cone ephelele", kanti i-cone ezimele ngokwayo yehluka okungeqile ku-{{4 °F; 2 °C}}. U-Orton uthi ama-pyrometer adinga ukulinganiswa kabusha ngezikhathi ezithile, futhi ama-cone yiwo ondlela yokuwahlola.
+I-**pyrometer** yisilinganiso sokushisa esifundwa ku-**thermocouple**, i-probe yokushisa edlula odongeni lwe-kiln. Ikhombisa ukuthi i-kiln ikhuphuka ngokushesha kangakanani, ukuze ukhethe ikholomu efanele yeshadi lama-cone. Kodwa ifunda eduze nodonga, hhayi ezitsheni, futhi iyaphambuka. I-L&L iphawula ukuthi i-thermocouple yohlobo K ingaphambuka ngaphezu kuka-{{25 °F; 14 °C}} ngemuva kokushisa okuphindaphindiwe kwe-cone 6, "umehluko omkhulu kune-cone ephelele", kanti i-cone ezimele ngokwayo yehluka okungeqile ku-{{4 °F; 2 °C}}. U-Orton uthi ama-pyrometer adinga ukulinganiswa kabusha ngezikhathi ezithile, futhi ama-cone yiwo indlela yokuwahlola.
 
 ## Ukuphuma komoya, ukulunguza nokuphepha {#venting}
 
@@ -625,7 +625,7 @@ Ngokukhipha umoya egumbini, nangama-alamu e-carbon monoxide, bona [Ukuxuba ngoku
 
 ## Ukupholisa nokukhipha {#cooling}
 
-Ukupholisa kuyingxenye yokushisa. I-L&L no-Orton beluleka: "Vumela i-kiln iphole ngokwemvelo isivalo sivaliwe", futhi "Ungalokothi ufake umoya opholile ku-kiln eshisayo." Ukuvula kusesekuseni kakhulu "kungadala ukuqhekeka", futhi i-silica esezitsheni iyancipha ngokuzumayo njengoba ipholela ngale kuka-{{1063 °F; 573 °C}}. Uma ingekho i-controller, gcina i-kiln ivaliwe "kuze kube yilapho izinga lokushisa lehla kakhulu ngaphansi kokushisa okubomvu (900°F / 482°C)", futhi okungenani amahora angu-8. Ungalokothi uphoqe ukupholisa i-kiln esakhanya. Imifantu enemiphetho ebukhali ezitsheni ezishisiwe iwuphawu lokupholisa ngokushesha kakhulu.
+Ukupholisa kuyingxenye yokushisa. I-L&L no-Orton beluleka: "Vumela i-kiln iphole ngokwemvelo isivalo sivaliwe", futhi "Ungalokothi ufake umoya opholile ku-kiln eshisayo." Ukuvula ngaphambi kwesikhathi "kungadala ukuqhekeka", futhi i-silica esezitsheni iyancipha ngokuzumayo njengoba ipholela ngale kuka-{{1063 °F; 573 °C}}. Uma ingekho i-controller, gcina i-kiln ivaliwe "kuze kube yilapho izinga lokushisa lehla kakhulu ngaphansi kokushisa okubomvu (900°F / 482°C)", futhi okungenani amahora angu-8. Ungalokothi uphoqe ukupholisa i-kiln esakhanya. Imifantu enemiphetho ebukhali ezitsheni ezishisiwe iwuphawu lokupholisa ngokushesha kakhulu.
 
 ### Uvula nini futhi ukhiphe
 

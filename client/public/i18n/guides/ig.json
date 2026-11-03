@@ -13,7 +13,7 @@
   "list": {
     "title": "Ntuziaka",
     "lead": "Ntuziaka n'asụsụ dị mfe maka ndị ọkpụ ite ọhụrụ: site n'ihe glaze bụ ruo n'ịgba ya ọkụ, na idebe onye ọ bụla n'udo n'ụzọ.",
-    "note": "Ntuziaka ndị a na-achịkọta ihe ndị na-emepụta ihe, ụlọ ọrụ nchekwa na ndị ọkpụ ite nwere ahụmahụ na-ebipụta, ya na isi mmalite ha na njedebe nke ọ bụla. Ha bụ mmalite, ọ bụghị ihe dochiri safety data sheet nke ihe eji arụ ọrụ gị, akwụkwọ ntuziaka kiln gị ma ọ bụ iwu obodo gị.",
+    "note": "Ntuziaka ndị a na-achịkọta ihe ndị na-emepụta ihe, ụlọ ọrụ nchekwa na ndị ọkpụ ite nwere ahụmahụ na-ebipụta, ya na isi mmalite ha na njedebe nke ọ bụla. Ha bụ mmalite, ọ bụghị ihe dochiri mpempe data nchekwa nke ihe eji arụ ọrụ gị, akwụkwọ ntuziaka kiln gị ma ọ bụ iwu obodo gị.",
     "glazingBasics": {
       "title": "Ntọala glaze",
       "text": "Ihe glaze bụ, otu o si agbaze, na okwu ọ bụla ị ga-ahụ n'usoro ma ọ bụ n'akpa, a kọwara ha."
@@ -48,7 +48,7 @@
     },
     "materials": {
       "title": "Ihe eji arụ ọrụ a na-ejikarị",
-      "text": "Ihe ọ bụla dị n'ọbá akwụkwọ ya na nyocha oxide ya, ihe o nyere unity formula, na ihe ize ndụ ya."
+      "text": "Ihe ọ bụla dị n'ọbá akwụkwọ ya na nyocha oxide ya, ihe o nyere usoro unity, na ihe ize ndụ ya."
     }
   },
   "contents": "N'ibe a",
@@ -105,8 +105,8 @@
   "silica": {
     "limitIn": "Oke na",
     "label": "Oke silica na {region}",
-    "caption": "Oke ebe ọrụ maka uzuzu silica a na-eku ume na {region}, nkezi awa 8 (e lere ya {date})",
-    "captionControl": "Ihe ọtụtụ maka uzuzu silica a na-eku ume n'ikuku ebe ọrụ na {region} (e lere ya {date})",
+    "caption": "Oke ebe ọrụ maka uzuzu crystalline silica a na-eku ume na {region}, nkezi awa 8 (e lere ya {date})",
+    "captionControl": "Ihe ọtụtụ maka uzuzu crystalline silica a na-eku ume n'ikuku ebe ọrụ na {region} (e lere ya {date})",
     "both": "Quartz na cristobalite",
     "freeSilica": "Silica nweere onwe ya (free silica)",
     "quartz": "Quartz",
@@ -163,15 +163,15 @@
     "lead": "Lead (Pb)",
     "cadmium": "Cadmium",
     "category": {
-      "flat": "Ihe a na-apụghị ịgbaju, ma ọ bụ nke miri emighị karịa 25 mm",
+      "flat": "Ihe a na-apụghị ịgbaju, ma ọ bụ nke miri ya agaghị karịa 25 mm",
       "fillable": "Ihe ndị ọzọ a pụrụ ịgbaju",
       "cooking": "Ite esi nri n'ịdị ukwu ọ bụla; na ihe ngwugwu na ite nchekwa karịrị 3 L",
       "rimBand": "Egbegbere ihe a na-aṅụ ihe na ya: eriri 2 cm, n'ime na n'èzí",
       "rimArticle": "Egbegbere ihe a na-aṅụ ihe na ya: eriri 20 mm n'èzí n'elu ọnụ ya, kwa ihe",
-      "flatware": "Efere dị larịị, nke miri emighị karịa 25 mm",
-      "smallHollow": "Obere ihe nwere oghere, erughị 1.1 L, karịa iko na mug",
+      "flatware": "Efere dị larịị, nke miri ya agaghị karịa 25 mm",
+      "smallHollow": "Obere ihe nwere oghere, erughị 1.1 L, ewezuga iko na mug",
       "cups": "Iko na mug",
-      "largeHollow": "Nnukwu ihe nwere oghere, 1.1 L ma ọ bụ karịa, karịa jọg",
+      "largeHollow": "Nnukwu ihe nwere oghere, 1.1 L ma ọ bụ karịa, ewezuga jọg",
       "pitchers": "Jọg",
       "auSmall": "Iko, mug, jọg, efere miri emi, ite tii na ihe ndị ọzọ e ji eri nri erughị 1100 mL",
       "auLarge": "Otu ihe ahụ, 1100 mL ma ọ bụ karịa",
@@ -209,7 +209,7 @@
       "vnCooking": "Ihe miri emi maka isi nri",
       "vnCups": "Iko na obere efere miri emi",
       "cnFlat": "Efere dị larịị, miri ya 25 mm ma ọ bụ erughị",
-      "cnSmall": "Obere ihe nwere oghere, erughị 1.1 L, karịa iko",
+      "cnSmall": "Obere ihe nwere oghere, erughị 1.1 L, ewezuga iko",
       "cnLarge": "Nnukwu ihe nwere oghere, site na 1.1 L ruo erughị 3 L",
       "cnStorage": "Ite nchekwa, 3 L ma ọ bụ karịa",
       "cnCups": "Iko, maka mmiri ma ọ bụ ihe ọṅụṅụ",
@@ -239,9 +239,9 @@
     "soldIn": "A na-ere ya na",
     "closest": "{library, select, US {Nke kacha yie ya a na-ere na US} UK {Nke kacha yie ya a na-ere na UK} EU {Nke kacha yie ya a na-ere na EU} other {Nke kacha yie ya a na-ere na Australia na New Zealand}}",
     "apart": "dị iche site na {grams} g kwa 100 g",
-    "noneClose": "Ọ dịghị nke dị n'ime 15 g kwa 100 g: tụlee site na kemịkalụ.",
-    "loading": "Na-ebuga ọbá akwụkwọ…",
-    "failed": "Enweghị ike ibuga ọbá akwụkwọ. Nwaa ọzọ mgbe e mesịrị.",
+    "noneClose": "Ọ dịghị nke dị n'ime 15 g kwa 100 g: tụlee site na kemistri.",
+    "loading": "Na-ebugo ọbá akwụkwọ…",
+    "failed": "Enweghị ike ibugo ọbá akwụkwọ. Nwaa ọzọ mgbe e mesịrị.",
     "choosePrompt": "Họrọ obodo gị ma ọ bụ mpaghara gị iji hụ ihe a na-ere n'ebe ahụ."
   }
 }

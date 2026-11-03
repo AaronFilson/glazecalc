@@ -586,7 +586,7 @@
     "revokeAll": "Kagbuo token nnweta niile",
     "revokeFailed": "Njehie: enweghị ike ịkagbu token ahụ. Biko nwaa ọzọ.",
     "loadFailed": "Enweghị ike ibugo token nnweta gị. Biko bugharịa ibe ahụ iji nwaa ọzọ.",
-    "createHeading": "Mee token",
+    "createHeading": "Mee token nnweta",
     "name": "Aha",
     "nameHint": "Ihe ị ga-eji mata ya iche, dịka onye inyeaka ma ọ bụ kọmputa ọ bụ maka ya.",
     "nameCheck": "Biko nye token ahụ aha nwere mkpụrụedemede 1 ruo {most}.",

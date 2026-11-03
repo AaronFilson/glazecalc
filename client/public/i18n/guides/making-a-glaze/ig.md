@@ -5,7 +5,7 @@ lead: Otu esi azụ, chekwaa, tụọ ma gwakọta glaze, mee ka ọkpụrụkp�
 
 ## Tupu ịmalite {#before-you-start}
 
-Ime glaze pụtara ịtụ **ihe eji arụ ọrụ** e gwere egwe (mineral e gwere egwe, ụrọ na **frit**, nke bụ iko e mere n'ụlọ ọrụ ma gwerie ya ka ọ ghọọ ntụ) site n'usoro glaze, na ịgwakọta ha na mmiri ka ha ghọọ **slurry**, mmiri dị ọkpụrụkpụ nke ntụ dị n'ime ya. Mgbe ahụ ị na-enyọ ya, hazie ọkpụrụkpụ ya, ma nwalee ya n'ụrọ nke gị tupu i tụkwasị ya obi n'ite. Ọnụ ọgụgụ ọ bụla n'ime nduzi a bụ ebe mmalite: mmiri, ọkpụrụkpụ na ihe nyọ kwesịrị glaze gị bụ ndị nnwale gị gosiri, ya mere dee ihe ị mere na ihe ị hụrụ.
+Ime glaze{{en: glaze}} pụtara ịtụ **ihe eji arụ ọrụ** e gwere egwe (mineral e gwere egwe, ụrọ na **frit**, nke bụ iko e mere n'ụlọ ọrụ ma gwerie ya ka ọ ghọọ ntụ) site n'usoro glaze, na ịgwakọta ha na mmiri ka ha ghọọ **slurry**, mmiri dị ọkpụrụkpụ nke ntụ dị n'ime ya. Mgbe ahụ ị na-enyọ ya, hazie ọkpụrụkpụ ya, ma nwalee ya n'ụrọ nke gị tupu i tụkwasị ya obi n'ite. Ọnụ ọgụgụ ọ bụla n'ime nduzi a bụ ebe mmalite: mmiri, ọkpụrụkpụ na ihe nyọ kwesịrị glaze gị bụ ndị nnwale gị gosiri, ya mere dee ihe ị mere na ihe ị hụrụ.
 
 ### Ihe ị chọrọ
 
@@ -26,13 +26,13 @@ Ime glaze pụtara ịtụ **ihe eji arụ ọrụ** e gwere egwe (mineral e gwe
 
 ### Ebe ị ga-azụ
 
-Ndị ọkpụ ite na-azụ n'aka ndị na-ere ngwa ceramic, ndị na-ere ụrọ, ihe glaze na ngwa ọrụ. Tebụl ahụ na-egosi ụfọdụ maka mba gị, e lelere nke ọ bụla na saịtị ụlọ ahịa ahụ n'onwe ya, ị nwekwara ike ịhọrọ mba ọzọ ma ọ bụ mpaghara ọzọ iji hụ ụlọ ahịa ya. Ngwaahịa na-agbanwe, ya mere lelee tupu ị tụọ ịzụ. Ndị na-emepụta ihe buru ibu dịka Sibelco na Imerys na-ere ụlọ ọrụ; ndị ọkpụ ite na-azụ ihe ha site n'ụlọ ahịa dị ka ndị a. Digitalfire, saịtị nrụtụ aka ceramic, na-edebe ndepụta ụlọ ahịa ndị na-ere ngwa maka ebe ndị ọzọ.
+Ndị ọkpụ ite na-azụ n'aka ndị na-ere ngwa ceramic, ndị na-ere ụrọ, ihe glaze{{en: glaze}} na ngwa ọrụ. Tebụl ahụ na-egosi ụfọdụ maka mba gị, e lelere nke ọ bụla na saịtị ụlọ ahịa ahụ n'onwe ya, ị nwekwara ike ịhọrọ mba ọzọ ma ọ bụ mpaghara ọzọ iji hụ ụlọ ahịa ya. Ngwaahịa na-agbanwe, ya mere lelee tupu ị tụọ ịzụ. Ndị na-emepụta ihe buru ibu dịka Sibelco na Imerys na-ere ụlọ ọrụ; ndị ọkpụ ite na-azụ ihe ha site n'ụlọ ahịa dị ka ndị a. Digitalfire, saịtị nrụtụ aka ceramic, na-edebe ndepụta ụlọ ahịa ndị na-ere ngwa maka ebe ndị ọzọ.
 
 ::shops
 
 ### Ole ị ga-azụ
 
-Akpa a na-ahụkarị bụ **50 lb (22.7 kg)** na US na **25 kg (55 lb)** n'ebe ndị ọzọ, ya mere ha abụọ fọrọ nke nta ka ha hà. Ọtụtụ ndị na-ere ngwa na-erekwa ngwugwu 1, 2.5 ma ọ bụ 5 kg (ihe dị ka 2.2, 5.5 ma ọ bụ 11 lb) maka nnwale. Glazy, ebe nchekwa usoro glaze mepere emepe, na-atụ aro ịzụ ihe ị na-eji mgbe niile (feldspar, silica, kaolin, whiting, na frit maka ọkụ etiti) n'akpa zuru ezu, nke na-adịkarị ọnụ ala 20 ruo 30%. Zụta **ihe na-enye agba** (colorant), metal oxide na stain na-enye glaze agba, n'obere ọnụ ọgụgụ: a na-eji ọtụtụ n'ime ha n'okpuru 5%. Ndepụta ịzụ ahịa ihe atụ Glazy ruru ihe dị ka $515 maka ọkụ etiti na $397 maka ọkụ dị elu, n'ọnụ ahịa US.
+Akpa a na-ahụkarị bụ **50 lb (22.7 kg)** na US na **25 kg (55 lb)** n'ebe ndị ọzọ, ya mere ha abụọ fọrọ nke nta ka ha hà. Ọtụtụ ndị na-ere ngwa na-erekwa ngwugwu 1, 2.5 ma ọ bụ 5 kg (ihe dị ka 2.2, 5.5 ma ọ bụ 11 lb) maka nnwale. Glazy, ebe nchekwa usoro glaze mepere emepe, na-atụ aro ịzụ ihe ị na-eji mgbe niile (feldspar, silica, kaolin, whiting, na frit maka ọkụ etiti) n'akpa zuru ezu, nke na-adịkarị ọnụ ala karịa site na 20 ruo 30%. Zụta **ihe na-enye agba** (colorant), metal oxide na stain na-enye glaze agba, n'obere ọnụ ọgụgụ: a na-eji ọtụtụ n'ime ha n'okpuru 5%. Ndepụta ịzụ ahịa ihe atụ Glazy ruru ihe dị ka $515 maka ọkụ etiti na $397 maka ọkụ dị elu, n'ọnụ ahịa US.
 
 ### Ihe mmalite
 
@@ -41,20 +41,20 @@ Ndepụta isi Glazy maka ọkụ ọ bụla bụ silica, kaolin, feldspar, whiti
 Table: Ihe mmalite (aro anyị)
 Label: Ihe mmalite
 
-| Ihe                                          | Ihe ị ga-azụ                                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Silica (a na-akpọkwa ya flint; lee n'okpuru) | 325 mesh, ngwere dị nro karịa nke Glazy na-ahọrọ maka glaze                                      |
-| Kaolin (china clay na UK)                    | EPK na US; Grolleg ma ọ bụ china clay ọzọ na UK; NZ kaolin na New Zealand                        |
-| Potash feldspar                              | Nke ọ bụla dị ugbu a n'ebe ị bi, dịka Mahavir na US                                              |
-| Nepheline syenite                            | Nke ọ bụla; Glazy kwuru na ike flux ya siri ike karịa, a na-ejikarị ya n'ọkụ dị ala na nke etiti |
-| Whiting                                      | Nke ọ bụla                                                                                       |
-| Talc                                         | Ngwere ọ bụla na-enweghị asbestos; lelee SDS ya (lee Ịgwakọta n'enweghị ihe ize ndụ)             |
-| Frit boron, maka ọkụ etiti                   | Ferro 3134, 3124 ma ọ bụ 3195; na UK, Potterycrafts P3124 ma ọ bụ P3195                          |
-| Bentonite na ihe na-enye agba                | Obere ọnụ ọgụgụ                                                                                  |
+| Ihe                                          | Ihe ị ga-azụ                                                                                          |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Silica (a na-akpọkwa ya flint; lee n'okpuru) | 325 mesh, ngwere dị nro karịa, nke Glazy na-ahọrọ maka glaze                                          |
+| Kaolin (china clay na UK)                    | EPK na US; Grolleg ma ọ bụ china clay ọzọ na UK; NZ kaolin na New Zealand                             |
+| Potash feldspar                              | Nke ọ bụla dị ugbu a n'ebe ị bi, dịka Mahavir na US                                                   |
+| Nepheline syenite                            | Nke ọ bụla; Glazy kwuru na ike flux ya siri ike karịa, a na-ejikarị ya n'ọkụ dị ala na nke etiti      |
+| Whiting                                      | Nke ọ bụla                                                                                            |
+| Talc                                         | Ngwere ọ bụla na-enweghị asbestos; lelee SDS ya (lee Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha) |
+| Frit boron, maka ọkụ etiti                   | Ferro 3134, 3124 ma ọ bụ 3195; na UK, Potterycrafts P3124 ma ọ bụ P3195                               |
+| Bentonite na ihe na-enye agba                | Obere ọnụ ọgụgụ                                                                                       |
 
 ### Akwụkwọ data na akwụkwọ data nchekwa
 
-Rịọ akwụkwọ abụọ maka ihe ọ bụla. **Akwụkwọ data teknụzụ** (TDS) na-enye **nyocha kemịkal** ya: òkè oxide ọ bụla n'ime ntụ ahụ, site n'ịdị arọ. Glazecalc na-arụ ọrụ site na ndị a, ị nwekwara ike itinye ihe site na nyocha onye na-ere ngwa na [ibe Ihe](/material). **Akwụkwọ data nchekwa** (SDS) na-ekwu otu esi ejide ntụ amụ ahụ. Debe SDS ọ bụla, gụọkwa ya tupu ị gwakọta.
+Rịọ akwụkwọ abụọ maka ihe ọ bụla. **Akwụkwọ data teknụzụ** (TDS) na-enye **nyocha kemịkal** ya: òkè oxide ọ bụla n'ime ntụ ahụ, site n'ịdị arọ. Glazecalc na-arụ ọrụ site na ndị a, ị nwekwara ike itinye ihe site na nyocha onye na-ere ngwa na [ibe Ihe](/material). **Mpempe data nchekwa** (SDS) na-ekwu otu esi ejide ntụ amụ ahụ. Debe SDS ọ bụla, gụọkwa ya tupu ị gwakọta.
 
 Nyocha bụ nkezi, ọ bụghị nkwa. Valentine Clays na-ebipụta "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" (ọnụ ọgụgụ nkezi; ha anọchighị anya nkọwapụta) n'akwụkwọ data flint ya, nyocha Glazy nke Custer feldspar site n'afọ dị iche iche si n'ihe dị ka 68.5% ruo 72.4% silica. Anyị na-atụ aro ka i dee **nọmba lot** (koodu batch ya) nke akpa ọ bụla na ndekọ gị, ka i wee mata ma mgbanwe na glaze ị tụkwasịrị obi si n'ihe ahụ.
 
@@ -83,7 +83,7 @@ Debe ntụ ka ọ kpọọ nkụ, n'ihe nchekwa nwere mkpuchi nke na-anọ emech
 
 ### Glaze e gwakọtara
 
-Glaze dị na bọket na-aga n'ihu na-agbanwe. Ihe na-agbaze ntakịrị na mmiri (nepheline syenite, lithium carbonate, Gerstley Borate, colemanite, strontium carbonate, na frit n'ozuzu) na-agbanwe otu ọ si asọ ka oge na-aga ma nwee ike ịmụ obere kristal, karịa n'ime ụlọ dị ọkụ. Gerstley Borate na-eme ka slurry kpụkọọ, "ọbụna na pasentị pere mpe". Mmiri dị aja aja n'elu glaze dara n'ala bụ iron gbazere: wụpụ ya ma jiri mmiri dị ọcha dochie ya. Tụọkwa anya:
+Glaze{{en: glaze}} dị na bọket na-aga n'ihu na-agbanwe. Ihe na-agbaze ntakịrị na mmiri (nepheline syenite, lithium carbonate, Gerstley Borate, colemanite, strontium carbonate, na frit n'ozuzu) na-agbanwe otu ọ si asọ ka oge na-aga ma nwee ike ịmụ obere kristal, karịa n'ime ụlọ dị ọkụ. Gerstley Borate na-eme ka slurry kpụkọọ, "ọbụna na pasentị pere mpe". Mmiri dị aja aja n'elu glaze dara n'ala bụ iron gbazere: wụpụ ya ma jiri mmiri dị ọcha dochie ya. Tụọkwa anya:
 
 - **Ịkpụkọ n'ala** (hard-panning): glaze e gwakọtara nke ọkpụrụkpụ zuru ezu nke na ọ chọghị ihe mgbakwunye na-adakarị n'ala ghọọ akwa siri ike. Ime ka ọ dị gịrịgịrị na ime ka ọ kpụkọọ na-enyere aka (lee Specific gravity).
 - **Isi**, site na microbe na-eri gum dịka CMC. Enwere ike iji glaze na-esi ísì ma ọ bụrụ na ọ na-etinye nke ọma.
@@ -108,7 +108,7 @@ Usoro glaze na-enye ihe ọ bụla dịka pasentị nke ịdị arọ akọrọ.
 
 **Resolution** ihe ọtụtụ, nzọụkwụ kacha nta ọ na-egosi, na-egbochi otu obere ọnụ ọgụgụ ị nwere ike ịtụ nke ọma. N'ime nnwale 100 g, ihe na-enye agba na 0.5% bụ 0.5 g. Ihe ọtụtụ na-agụ ruo 0.1 g nwere ike ihie ụzọ site na 0.05 g, ihe dị ka 10% nke ya; maka 0.15 g, njehie ahụ bụ ihe dị ka otu ụzọ n'ụzọ atọ. Nke ahụ bụ mgbakọ anyị, mana ọ na-egosi ihe mere ihe na-enye agba ji chọọ ihe ọtụtụ dị nro karịa.
 
-Ndụmọdụ dị iche gbasara otu ihe ọtụtụ ị chọrọ si dị nro. Derek Au chọpụtara na ihe ọtụtụ dijitalụ 200 g dị ọnụ ala anaghị atụ nke ọma mgbe niile. Ọ na-atụ aro ihe ọtụtụ 200 g na-agụ ruo 0.01 g ma ọ bụrụ na ị ga-azụ naanị otu, ọ na-ewekwa triple-beam balance dị mma dịka "nke a pụrụ ịtụkwasị obi karịa ihe ọtụtụ dijitalụ dị ọnụ ala". Nhọrọ dị nchebe, n'echiche anyị, bụ 0.01 g maka nnwale (50 ruo 200 g) na ihe na-enye agba, na ihe ọtụtụ bench na-agụ ruo 0.1 g ma ọ bụ 1 g maka batch 1 kg (ihe dị ka 2 lb) gaa n'elu. Lelee ha abụọ site n'oge ruo n'oge site na ihe arọ calibration.
+Ndụmọdụ dị iche gbasara otu ihe ọtụtụ ị chọrọ si dị nro. Derek Au chọpụtara na ihe ọtụtụ dijitalụ 200 g dị ọnụ ala anaghị atụ nke ọma mgbe niile. Ọ na-atụ aro ihe ọtụtụ 200 g na-agụ ruo 0.01 g ma ọ bụrụ na ị ga-azụ naanị otu, ọ na-ewekwa triple-beam balance dị mma dịka "nke a pụrụ ịtụkwasị obi nke ukwuu karịa ihe ọtụtụ dijitalụ dị ọnụ ala". Nhọrọ dị nchebe, n'echiche anyị, bụ 0.01 g maka nnwale (50 ruo 200 g) na ihe na-enye agba, na ihe ọtụtụ bench na-agụ ruo 0.1 g ma ọ bụ 1 g maka batch 1 kg (ihe dị ka 2 lb) gaa n'elu. Lelee ha abụọ site n'oge ruo n'oge site na ihe arọ calibration.
 
 ### Tụọ n'usoro, ma kaa akara n'ihe ọ bụla
 
@@ -123,14 +123,14 @@ Derek Au na-atụ n'otu efere n'ikpo dị iche iche, ka e wee nwee ike ikpupụt
 
 ### Ole mmiri
 
-Isi mmalite ekwekọrịtaghị. Derek Au na-amalite ọkpụrụkpụ, na 50 mL mmiri kwa 100 g ntụ, ma gbakwunye karịa emesịa. Potterycrafts na-enye 65 mL kwa 100 g maka otu glaze ntụ. UT Austin na-eji mmiri na ntụ hà n'ịdị arọ, mgbe Digitalfire tinyere 20 kg ntụ n'ime 20 kg mmiri, ọ tụrụ specific gravity 1.46.
+Isi mmalite ekwekọrịtaghị. Derek Au na-amalite ọkpụrụkpụ, na 50 mL mmiri kwa 100 g ntụ, ma gbakwunye karịa emesịa. Potterycrafts na-enye 65 mL kwa 100 g maka otu glaze{{en: glaze}} ntụ. UT Austin na-eji mmiri na ntụ hà n'ịdị arọ, mgbe Digitalfire tinyere 20 kg ntụ n'ime 20 kg mmiri, ọ tụrụ specific gravity 1.46.
 
 Ọ dị mfe ịgbakwunye mmiri, ọ na-ewe oge iwepụ ya, ya mere malite na obere. Atụmatụ anyị: malite na **ihe dị ka 70 ruo 80 mL kwa 100 g** (700 ruo 800 mL kwa kilogram, ma ọ bụ ihe dị ka 11 ruo 12 US fl oz kwa pound). Mee slake, gwakọta ma nyọọ n'ọkpụrụkpụ ahụ, mgbe ahụ gbakwunye mmiri ntakịrị ntakịrị ruo mgbe specific gravity ziri ezi. 1 mL mmiri dị arọ 1 g, ya mere ị nwere ike ịtụ ya. Ọ bụrụ na ị gafere, hapụ glaze ka ọ dọdaa, mgbe ahụ jiri ogbo wepụ ma ọ bụ wụpụ mmiri doro anya n'elu ya.
 
 ### Ngwa ọrụ na mmiri
 
 - **Ihe ịgwakọta propeller.** Digitalfire kpọrọ nke dị mma "dị oke mkpa". Drill nwere waya na paddle ịgwakọta na-arụ ọrụ ahụ na bọket. UT Austin na-agba ya opekata mpe 4 ruo 5 nkeji mgbe glaze yiri ka a gwakọtala ya, ma na-edebe agụba ya pụọ na bọket, nke ọ nwere ike ikpochapụ plastik site na ya.
-- **Blender.** Ọ "na-arụ ọrụ nke ọma nke ukwuu maka obere batch" (Digitalfire). Debe ya naanị maka glaze: ọ gaghị alaghachi na kichin ọzọ.
+- **Blender.** Ọ "na-arụ ọrụ nke ọma nke ukwuu maka obere batch" (Digitalfire). Debe ya naanị maka glaze: ọ dịghị mgbe ọ ga-alaghachi na kichin ọzọ.
 - **Whisk ma ọ bụ osisi.** Nhọrọ Zakin mgbe enweghị ihe ịgwakọta.
 
 Mmiri dịkwa iche iche, Digitalfire kwukwara na ọ na-agbanwe otu slurry si akpa àgwà. Derek Au na-eji mmiri reverse-osmosis n'ihi na mmiri pọmpụ ya siri ike. Ihe ọ bụla i ji, dee ya.
@@ -139,7 +139,7 @@ Mmiri dịkwa iche iche, Digitalfire kwukwara na ọ na-agbanwe otu slurry si ak
 
 1. Yiri respirator gị, na uwe aka rọba ma ọ bụrụ na aka gị ga-abanye. Zakin na-eyi mask site na mmalite ịtụ ihe ruo mgbe glaze dị mmiri.
 2. Tụọ ihe dị ka 70 ruo 80 mL mmiri kwa 100 g ntụ n'ime bọket.
-3. Jiri nwayọọ tinye ntụ a tụrụ atụ, site n'ebe dị ala. UT Austin na-etinye ntụ na mmiri dị ọkụ; Zakin na Au na-etinye mmiri na ntụ. Anyị na-atụ aro ntụ n'ime mmiri, nke na-ebuli uzuzu pere mpe, belụsọ maka usoro glaze nwere ọtụtụ bentonite: buru ụzọ kpalie ntụ akọrọ ya ọnụ.
+3. Jiri nwayọọ tinye ntụ a tụrụ atụ, site n'ebe dị ala. UT Austin na-etinye ntụ na mmiri dị ọkụ; Zakin na Au na-etinye mmiri na ntụ. Anyị na-atụ aro ntụ n'ime mmiri, nke na-ebuli uzuzu pere mpe karịa, belụsọ maka usoro glaze nwere ọtụtụ bentonite: buru ụzọ kpalie ntụ akọrọ ya ọnụ.
 4. Mee ya **slake**: hapụ ntụ ka ọ mịkọọ mmiri na-akpaliteghị ya. Digitalfire na-echere ihe dị ka nkeji 20. Ntụ nwere gum ma ọ bụ binder kwesịrị iguzo abalị niile.
 5. Gwakọta ruo mgbe enweghị akpa akọrọ ma ọ bụ mkpụrụ.
 6. Nyọọ ya ugboro abụọ (lee n'okpuru).
@@ -165,7 +165,7 @@ Label: Mesh ihe nyọ
 
 ## Specific gravity {#specific-gravity}
 
-**Specific gravity** (SG) na-agwa gị ole ntụ dị na slurry gị. Ọ bụ ịdị arọ otu olu glaze kere site n'ịdị arọ otu olu mmiri ahụ. Mmiri bụ 1.00, glaze dị na {{SG 1.45}} dịkwa arọ 145 g kwa 100 mL. Ịgwakọta ruo SG a tụrụ atụ bụ otu ị ga-esi nweta otu ọkpụrụkpụ ahụ, na otu mkpuchi ahụ, oge ọ bụla. O nweghị unit, ya mere ọ bụ otu na gram ma ọ bụ ounce.
+**Specific gravity** (SG) na-agwa gị ole ntụ dị na slurry gị. Ọ bụ ịdị arọ otu olu glaze{{en: glaze}} kere site n'ịdị arọ otu olu mmiri ahụ. Mmiri bụ 1.00, glaze dị na {{SG 1.45}} dịkwa arọ 145 g kwa 100 mL. Ịgwakọta ruo SG a tụrụ atụ bụ otu ị ga-esi nweta otu ọkpụrụkpụ ahụ, na otu mkpuchi ahụ, oge ọ bụla. O nweghị unit, ya mere ọ bụ otu na gram ma ọ bụ ounce.
 
 ### Tụọ ya site n'ịtụ 100 mL
 
@@ -186,7 +186,7 @@ Label: Ebumnuche specific gravity
 | Ojiji  | Digitalfire na Glazy                                                                                                                                                   | Potclays (UK)                                      | Ebe mmalite dị nchebe                                                              |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | Ịbanye | {{SG 1.40}} (maka ịbanye sekọnd 5) ruo {{SG 1.50}} (maka ịbanye sekọnd 1); glaze e gwakọtara n'ụlọ nke kpụkọrọ na-adị mma kacha na {{SG 1.43–1.45}}                    | Doro anya {{SG 1.46–1.48}}; nwere agba {{SG 1.61}} | {{SG 1.45}}; mee ka ọ dị gịrịgịrị ruo {{SG 1.43}} ma mee ka ọ kpụkọọ ma ọ na-atapụ |
-| Brọsh  | {{SG 1.25}} (doro anya, gịrịgịrị) ruo {{SG 1.55}} (nkọwa gbara ọchịchịrị)                                                                                              | {{SG 1.71–1.81}}                                   | Soro ngwaahịa ahụ; jiri CMC gum ma ọ bụ brushing medium                            |
+| Brọsh  | {{SG 1.25}} (doro anya, gịrịgịrị) ruo {{SG 1.55}} (ịchọ mma dị nta, gbara ọchịchịrị)                                                                                   | {{SG 1.71–1.81}}                                   | Soro ngwaahịa ahụ; jiri CMC gum ma ọ bụ brushing medium                            |
 | Ịgbasa | Enweghị ọnụ ọgụgụ; Hopper, na-ede maka Ceramic Arts Network, kwuru na ọ dị gịrịgịrị karịa nke ukwuu, ya na deflocculant (ihe mgbakwunye na-eme ka slurry na-asọ karịa) | {{SG 1.71}}                                        | Enweghị ọnụ ọgụgụ a pụrụ ịtụkwasị obi; gbasaa naanị n'ime ụlọ ịgbasa               |
 
 Iji lelee glaze ịbanye site n'anya, AMACO na-abanye ya sekọnd 5 ma chọọ mkpuchi ọkpụrụkpụ ya dị ka nke dime US. Digitalfire na-agba tile a banyere sekọnd 5 ọkụ iji lelee.
@@ -221,7 +221,7 @@ Derek Au na-arịgo n'ụzọ atọ: nnwale 50 ma ọ bụ 100 g, nnwale 1 ruo 2
 
 ### Nwalee n'ụrọ nke gị
 
-Glaze nwere ike ịdị iche nke ukwuu n'ụrọ ọzọ ma ọ bụ na kiln ọzọ: Clay Art Center nwalere glaze ọ bụla o mezigharịrị n'ahụ ụrọ anọ, na cone 6 na cone 10. Nduzi Potclays maka ndị mbido na nnwale glaze na-atụ aro:
+Glaze{{en: glaze}} nwere ike ịdị iche nke ukwuu n'ụrọ ọzọ ma ọ bụ na kiln ọzọ: Clay Art Center nwalere glaze ọ bụla o mezigharịrị n'ahụ ụrọ anọ, na cone 6 na cone 10. Nduzi Potclays maka ndị mbido na nnwale glaze na-atụ aro:
 
 - **test tile** 6 ruo 10 (obere iberibe maka ịnwale glaze) nke ụrọ ị ga-eji n'ezie, na-edetu ma a gbara ha bisque ma ọ bụ ha bụ bone dry
 - otu mgbanwe n'otu oge
@@ -260,7 +260,7 @@ Usoro a chọrọ mgbakọ nlezianya, nsọtụ e gwakọtara nke ọma nwere SG
 
 ## Idebe ndekọ {#records}
 
-Willers kọwara ebumnuche ahụ nke ọma: "ozi zuru ezu iji nwee ike imeghachi, ma ọ bụ zere, nsonaazụ ị chọpụtara". Dee ihe ị chọrọ ịnwale tupu ịmalite, na nsonaazụ ya mgbe ị wepụtara ite. Potclays gbakwunyere itinye, ọkpụrụkpụ, ahụ ụrọ na ịgba ọkụ zuru ezu, gụnyere ramp, hold na ijụ oyi. **Ramp** bụ ọsọ ikpo ọkụ ma ọ bụ ijụ oyi, dịka {{60 °C; 108 °F}} kwa elekere, **hold** na-edobekwa kiln n'otu ọkụ ruo oge a kara aka. Dee nọmba lot, mmiri i ji na onye nnọchi ọ bụla: mgbanwe feldspar Clay Art Center pụtara ịhazi ihe dị ka ọkara glaze ya.
+Willers kọwara ebumnuche ahụ nke ọma: "ozi zuru ezu iji nwee ike imeghachi, ma ọ bụ zere, nsonaazụ ị chọpụtara". Dee ihe ị chọrọ ịnwale tupu ịmalite, na nsonaazụ ya mgbe ị wepụtara ite. Potclays gbakwunyere itinye, ọkpụrụkpụ, ahụ ụrọ na ịgba ọkụ zuru ezu, gụnyere ramp, hold na ijụ oyi. **Ramp** bụ ọsọ ikpo ọkụ ma ọ bụ ijụ oyi, dịka {{60 °C; 108 °F}} kwa elekere, **hold** na-edobekwa kiln n'otu ọkụ ruo oge a kara aka. Dee nọmba lot, mmiri i ji na onye nnọchi ọ bụla: mgbanwe feldspar Clay Art Center pụtara ịhazi ihe dị ka ọkara glaze{{en: glaze}} ya.
 
 Table: Ihe ị ga-edekọ maka batch glaze ọ bụla (ndebiri anyị)
 Label: Ndebiri ndekọ

@@ -1,16 +1,16 @@
 ---
 title: Indlela yokwenza i-glaze
-lead: Indlela yokuthenga, ukugcina, ukukala nokuxuba i-glaze, ukuthola ubukhulu bayo obufanele, ukuyihlola ebumbeni lwakho, nokubhala phansi okwanele ukuze uphinde uyenze.
+lead: Indlela yokuthenga, ukugcina, ukukala nokuxuba i-glaze, ukuthola ukujiya kwayo okufanele, ukuyihlola ebumbeni lwakho, nokubhala phansi okwanele ukuze uphinde uyenze.
 ---
 
 ## Ngaphambi kokuqala {#before-you-start}
 
-Ukwenza i-glaze kusho ukukala **okokwakha** okuyimpuphu (amaminerali agayiwe, ubumba nama-**frit**, okuyingilazi eyenziwe efektri yagaywa yaba yimpuphu) kusuka kuresiphi, nokukuxuba namanzi kube yi-**slurry**, uketshezi olujiyile lwempuphu ephethwe ngamanzi. Bese uyihlunga, ulungise ubukhulu bayo, futhi uyihlole ebumbeni lwakho ngaphambi kokuyethemba embizeni. Zonke izinombolo kulo mhlahlandlela ziyisiqalo: amanzi, ubukhulu nesihlungo esifanele i-glaze yakho yilokho okuboniswa ukuhlola kwakho, ngakho bhala phansi okwenzayo nokukutholayo.
+Ukwenza i-glaze kusho ukukala **okokwakha** okuyimpuphu (amaminerali agayiwe, ubumba nama-**frit**, okuyingilazi eyenziwe efektri yagaywa yaba yimpuphu) kusuka kuresiphi, nokukuxuba namanzi kube yi-**slurry**, uketshezi olujiyile lwempuphu ephethwe ngamanzi. Bese uyihlunga, ulungise ukujiya kwayo, futhi uyihlole ebumbeni lwakho ngaphambi kokuyethemba embizeni. Zonke izinombolo kulo mhlahlandlela ziyisiqalo: amanzi, ukujiya nesihlungo esifanele i-glaze yakho yilokho okuboniswa ukuhlola kwakho, ngakho bhala phansi okwenzayo nokukutholayo.
 
 ### Okudingayo
 
 - **Isikali** esifunda kuze kufike ku-0.01 g sokuhlola nokokufaka umbala, nesikhulu sama-batch angamakhilogremu.
-- **Iziqukathi ezinamabhodlela**: eziphansi zokokwakha okomile, namabhakede e-glaze. UDerek Au ugcina ama-glaze okuhlola eziqukathini zesobho ezinamabhodlela.
+- **Iziqukathi ezinezivalo**: eziphansi zokokwakha okomile, namabhakede e-glaze. UDerek Au ugcina ama-glaze okuhlola eziqukathini zesobho ezinezivalo.
 - **Isikopi esihlanzekile sento ngayinye yokwakha**, ukuze impuphu eyodwa ingangeni kwenye.
 - **Ithuluzi lokuxuba**: i-drill ene-paddle yokuxuba, noma ukuhlola okuncane i-blender egcinelwe i-glaze kuphela. I-whisk izokwenza uma ungenalutho olunye.
 - **Izihlungo**, ezithengiswa e-UK njengama-sieve nama-**lawn**: i-mesh 80, kanye ne-mesh 100 noma 120 yama-glaze anokokufaka umbala.
@@ -20,7 +20,7 @@ Ukwenza i-glaze kusho ukukala **okokwakha** okuyimpuphu (amaminerali agayiwe, ub
 - **I-respirator, amagilavu enjoloba, isipontshi ne-mop.**
 
 > [!WARNING]
-> **Impuphu ye-glaze eyomile iyingozi yothuli.** I-silica ecrystalline ingaba ngu-10 kuya ku-60% we-glaze eyomile, futhi i-Health and Safety Executive (HSE) yase-UK ixwayisa ngokuthi uthuli lwayo alubonakali ekukhanyeni okujwayelekile. Kopisha kancane usendaweni ephansi, gcina amabhodlela evaliwe, manzisa impuphu ngokushesha okukhulu, futhi uhlanze kumanzi, ungalokothi usebenzise umshanelo. Gqoka i-respirator ekulingene kahle ngesikhathi izimpuphu zisomile (i-N95 noma i-P100 e-US, i-FFP2 noma i-FFP3 e-UK nase-EU, i-P2 noma i-P3 e-Australia nase-New Zealand). [Umhlahlandlela wokuxuba ngokuphepha](/guides/safe-mixing) uchaza ngokugcwele uthuli, ama-respirator nokuhlanza.
+> **Impuphu ye-glaze eyomile iyingozi yothuli.** I-silica eyikristalu ingaba ngu-10 kuya ku-60% we-glaze eyomile, futhi i-Health and Safety Executive (HSE) yase-UK ixwayisa ngokuthi uthuli lwayo alubonakali ekukhanyeni okujwayelekile. Kopisha kancane usendaweni ephansi, gcina iziqukathi zivaliwe, manzisa impuphu ngokushesha okukhulu, futhi uhlanze kumanzi, ungalokothi usebenzise umshanelo. Gqoka i-respirator ekulingene kahle ngesikhathi izimpuphu zisomile (i-N95 noma i-P100 e-US, i-FFP2 noma i-FFP3 e-UK nase-EU, i-P2 noma i-P3 e-Australia nase-New Zealand). [Umhlahlandlela wokuxuba ngokuphepha](/guides/safe-mixing) uchaza ngokugcwele uthuli, ama-respirator nokuhlanza.
 
 ## Ukuthenga okokwakha {#buying-materials}
 
@@ -36,7 +36,7 @@ Isaka elijwayelekile lingu-**50 lb (22.7 kg)** e-US kanye no-**25 kg (55 lb)** k
 
 ### Isethi yokuqala
 
-Uhlu oluyisisekelo lwe-Glazy lwanoma yiliphi izinga lokushisa yi-silica, i-kaolin, i-feldspar, i-whiting, i-zinc oxide, ne-dolomite noma i-talc. Iningi lama-glaze e-mid-fire (i-cone 5 kuya ku-6) liphinde lidinge i-boron, ngokuvamile evela ku-frit, i-Glazy ethi "iyafana njalo futhi ayincibiliki kalula njengama-borate aluhlaza". Isethi engezansi iyisiphakamiso sethu, esithathwe ohlwini lwe-Glazy nohlwini lwenkundla yokuxoxa. [Umhlahlandlela we-Izisekelo ze-glaze](/guides/glazing-basics) uchaza ukuthi into ngayinye yenzani.
+Uhlu oluyisisekelo lwe-Glazy lwanoma yiliphi izinga lokushisa yi-silica, i-kaolin, i-feldspar, i-whiting, i-zinc oxide, ne-dolomite noma i-talc. Iningi lama-glaze e-mid-fire (i-cone 5 kuya ku-6) liphinde lidinge i-boron, ngokuvamile evela ku-frit, i-Glazy ethi "iyafana njalo futhi incibilika kancane kunama-borate aluhlaza". Isethi engezansi iyisiphakamiso sethu, esithathwe ohlwini lwe-Glazy nohlwini lwenkundla yokuxoxa. [Umhlahlandlela we-Izisekelo ze-glaze](/guides/glazing-basics) uchaza ukuthi into ngayinye yenzani.
 
 Table: Isethi yokuqala yokokwakha (isiphakamiso sethu)
 Label: Isethi yokuqala
@@ -58,7 +58,7 @@ Cela imibhalo emibili yento ngayinye yokwakha. **Ishidi ledatha lobuchwepheshe**
 
 Ukuhlaziywa kuyizilinganiso, hhayi izithembiso. I-Valentine Clays iphrinta ethi "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" eshidini layo ledatha le-flint, futhi ukuhlaziywa kwe-Glazy kwe-Custer feldspar yeminyaka ehlukene kusukela cishe ku-68.5% kuya ku-72.4% we-silica. Siphakamisa ukuthi ubhale **inombolo ye-lot** yesaka ngalinye (ikhodi ye-batch yalo) emarekhodini akho, ukuze ukwazi ukubona ukuthi ushintsho ku-glaze owethembayo luvela yini kokokwakha.
 
-I-HSE ixwayisa ngokuthi i-silica ecrystalline "ingabhalwa kabi njenge-'amorphous silica'". Futhi i-SDS imayelana nempuphu, hhayi imbiza: ayisho lutho ngokuthi i-glaze eshisiwe iphephile yini ekudleni. Ukuhlolwa kwaselabhorethri kwezinsimbi eziphuma embizeni eshisiwe (leach test) kuphela okungakubonisa lokho.
+I-HSE ixwayisa ngokuthi i-silica eyikristalu "ingabhalwa kabi njenge-'amorphous silica'". Futhi i-SDS imayelana nempuphu, hhayi imbiza: ayisho lutho ngokuthi i-glaze eshisiwe iphephile yini ekudleni. Ukuhlolwa kwaselabhorethri kwezinsimbi eziphuma embizeni eshisiwe (leach test) kuphela okungakubonisa lokho.
 
 ### Amagama ayashintsha, ngakho thenga ngamakhemikhali
 
@@ -79,7 +79,7 @@ Amaresiphi amaningi abala okokwakha okuthengiswa kwelinye izwe hhayi kwelinye. I
 
 ### Okokwakha okomile
 
-Gcina izimpuphu zomile, eziqukathini ezinamabhodlela ezihlala zivaliwe uma ungakopishi; i-Glazy yeluleka ezingangeni moya. Khetha iziqukathi eziphansi kunemigqomo ejulile: i-HSE iphawula ukuthi umgqomo ojulile ukwenza ukhothame ungene, futhi uthuli lunebanga elide lokuwa. Zigcine eshalofini, ukuze ukwazi ukuhlanza nge-mop ngaphansi. I-soda ash ne-Cornish stone kumunca umswakama emoyeni. Omunye umbumbi wenkundla yokuxoxa uzomisa ethreyini yokubhaka cishe ku-{{50 °C; 122 °F}}, futhi uxwayisa ngokuthi amabhakede apende amancane angaqhekeka egaraji elibandayo kakhulu. Siphakamisa ukuthi ugcine okokwakha okuncibilikayo (i-soda ash, i-borax, i-lithium carbonate, nama-borate aluhlaza afana ne-Gerstley Borate) kungangeni moya futhi kungaphakathi endlini.
+Gcina izimpuphu zomile, eziqukathini ezinezivalo ezihlala zivaliwe uma ungakopishi; i-Glazy yeluleka ezingangeni moya. Khetha iziqukathi eziphansi kunemigqomo ejulile: i-HSE iphawula ukuthi umgqomo ojulile ukwenza ukhothame ungene, futhi uthuli lunebanga elide lokuwa. Zigcine eshalofini, ukuze ukwazi ukuhlanza nge-mop ngaphansi. I-soda ash ne-Cornish stone kumunca umswakama emoyeni. Omunye umbumbi wenkundla yokuxoxa uzomisa ethreyini yokubhaka cishe ku-{{50 °C; 122 °F}}, futhi uxwayisa ngokuthi amabhakede apende amancane angaqhekeka egaraji elibanda kuze kuqandeke. Siphakamisa ukuthi ugcine okokwakha okuncibilikayo (i-soda ash, i-borax, i-lithium carbonate, nama-borate aluhlaza afana ne-Gerstley Borate) kungangeni moya futhi kungaphakathi endlini.
 
 ### Ama-glaze axutshiwe
 
@@ -125,7 +125,7 @@ UDerek Au ukala endishini eyodwa ngezinqwaba ezihlukene, ukuze iphutha likwazi u
 
 Imithombo ayivumelani. UDerek Au uqala ngokujiyile, ngo-50 mL wamanzi ku-100 g wempuphu, bese engeza amaningi kamuva. I-Potterycrafts inika u-65 mL ku-100 g we-glaze eyodwa eyimpuphu. I-UT Austin isebenzisa izisindo ezilinganayo zamanzi nempuphu, futhi lapho i-Digitalfire ifaka u-20 kg wempuphu ku-20 kg wamanzi, yakala i-specific gravity engu-1.46.
 
-Amanzi kuyashesha ukuwengeza futhi kuyephuza ukuwakhipha, ngakho qala ngamancane. Isilinganiso sethu: qala **ngo-70 kuya ku-80 mL cishe ku-100 g** (700 kuya ku-800 mL ngekhilogremu, noma cishe u-11 kuya ku-12 US fl oz ngephawundi). Yenza i-slake, uxube futhi uhlunge kulobo bukhulu, bese wengeza amanzi kancane kancane kuze kube yilapho i-specific gravity ilungile. U-1 mL wamanzi unesisindo esingu-1 g, ngakho ungawakala. Uma weqisa, yekela i-glaze izinze, bese uthatha ngesipontshi noma uthele amanzi acwebile aphezulu.
+Amanzi kuyashesha ukuwengeza futhi kuyephuza ukuwakhipha, ngakho qala ngamancane. Isilinganiso sethu: qala **ngo-70 kuya ku-80 mL cishe ku-100 g** (700 kuya ku-800 mL ngekhilogremu, noma cishe u-11 kuya ku-12 US fl oz ngephawundi). Yenza i-slake, uxube futhi uhlunge kulokho kujiya, bese wengeza amanzi kancane kancane kuze kube yilapho i-specific gravity ilungile. U-1 mL wamanzi unesisindo esingu-1 g, ngakho ungawakala. Uma weqisa, yekela i-glaze izinze, bese uthatha ngesipontshi noma uthele amanzi acwebile aphezulu.
 
 ### Amathuluzi namanzi
 
@@ -139,7 +139,7 @@ Namanzi ayehluka, futhi i-Digitalfire iphawula ukuthi ashintsha indlela i-slurry
 
 1. Gqoka i-respirator yakho, namagilavu enjoloba uma izandla zakho zizongena. UZakin ugqoka imaski kusukela ekuqaleni kokukala kuze kube yilapho i-glaze isimanzi.
 2. Kala amanzi angaba ngu-70 kuya ku-80 mL ku-100 g wempuphu uwafake ebhakedeni.
-3. Faka impuphu ekaliwe kancane, usendaweni ephansi. I-UT Austin ifaka impuphu emanzini afudumele; uZakin no-Au bafaka amanzi empuphini. Siphakamisa impuphu emanzini, okukhuphula uthuli oluncane, ngaphandle kweresiphi ene-bentonite eningi: govuza izimpuphu zayo ezomile ndawonye kuqala.
+3. Faka impuphu ekaliwe kancane, usendaweni ephansi. I-UT Austin ifaka impuphu emanzini afudumele; uZakin no-Au bafaka amanzi empuphini. Siphakamisa impuphu emanzini, okukhuphula uthuli oluncane kunalokho, ngaphandle kweresiphi ene-bentonite eningi: govuza izimpuphu zayo ezomile ndawonye kuqala.
 4. **Yenza i-slake**: yekela impuphu icwile ngaphandle kokugovuza. I-Digitalfire ilinda cishe imizuzu engu-20. Izimpuphu ezine-gum noma i-binder zidinga ukuma ubusuku bonke.
 5. Xuba kuze kungabi khona izingxenye ezomile noma izigaxa.
 6. Yihlunge kabili (bheka ngezansi).
@@ -165,7 +165,7 @@ Label: I-mesh yesihlungo
 
 ## I-specific gravity {#specific-gravity}
 
-**I-specific gravity** (SG) ikutshela ukuthi ingakanani impuphu ese-slurry yakho. Isisindo sevolumu ye-glaze sihlukaniswe ngesisindo sevolumu efanayo yamanzi. Amanzi angu-1.00, futhi i-glaze engu-{{SG 1.45}} inesisindo esingu-145 g ku-100 mL. Ukuxuba kuze kube yi-SG ekaliwe kuyindlela yokuthola ubukhulu obufanayo, nongqimba olufanayo, njalo. Ayinawo amayunithi, ngakho iyafana ngamagremu noma ngama-ounce.
+**I-specific gravity** (SG) ikutshela ukuthi ingakanani impuphu ese-slurry yakho. Isisindo sevolumu ye-glaze sihlukaniswe ngesisindo sevolumu efanayo yamanzi. Amanzi angu-1.00, futhi i-glaze engu-{{SG 1.45}} inesisindo esingu-145 g ku-100 mL. Ukuxuba kuze kube yi-SG ekaliwe kuyindlela yokuthola ukujiya okufanayo, nongqimba olufanayo, njalo. Ayinawo amayunithi, ngakho iyafana ngamagremu noma ngama-ounce.
 
 ### Yikale ngokukala u-100 mL
 
@@ -207,7 +207,7 @@ Label: Amanzi e-specific gravity ehlosiwe
 
 ### Ama-Epsom salts, i-CMC gum ne-bentonite
 
-**Ama-Epsom salts** enza i-glaze ibe yi-gel kancane uma imile, futhi igeleze futhi uma igovuzwa. Lokhu kubizwa ngokuthi **i-flocculating**, futhi i-glaze eziphatha ngale ndlela **i-thixotropic**: igcobeka ngokulinganayo, iconsa kancane futhi izinza kancane. I-Digitalfire iphakamisa ukuqala cishe ngo-2 g nge-gallon uma i-SG isilungile (cishe u-0.5 g ngelitha, ukuguqula kwethu) nokulungisa inani njalo uma uxuba, ngoba ayikho iresiphi okufanele inqume umthamo. Siphakamisa ukuthi uwancibilikise emanzini ashisayo amancane kuqala. Esibonelweni se-Digitalfire, i-glaze engu-{{SG 1.45}} yayiconsa, ngakho amanzi ayehlisa yaba ngu-{{SG 1.43}} futhi ama-Epsom salts ayibuyisela ku-gel enokhilimu, futhi yagcobeka ngokulinganayo. Ukuhlola okulula: govuza, yima ubuke. I-glaze eyi-gel iqhubeka inyakaza cishe imizuzwana engu-2 noma engu-3, bese iyama ibuyele emuva kancane.
+**Ama-Epsom salts** enza i-glaze ibe yi-gel kancane uma imile, futhi igeleze futhi uma igovuzwa. Lokhu kubizwa ngokuthi **i-flocculating**, futhi i-glaze eziphatha ngale ndlela **i-thixotropic**: igcobeka ngokulinganayo, ayiconsi kakhulu futhi ayizinzi kakhulu. I-Digitalfire iphakamisa ukuqala cishe ngo-2 g nge-gallon uma i-SG isilungile (cishe u-0.5 g ngelitha, ukuguqula kwethu) nokulungisa inani njalo uma uxuba, ngoba ayikho iresiphi okufanele inqume umthamo. Siphakamisa ukuthi uwancibilikise emanzini ashisayo amancane kuqala. Esibonelweni se-Digitalfire, i-glaze engu-{{SG 1.45}} yayiconsa, ngakho amanzi ayehlisa yaba ngu-{{SG 1.43}} futhi ama-Epsom salts ayibuyisela ku-gel enokhilimu, futhi yagcobeka ngokulinganayo. Ukuhlola okulula: govuza, yima ubuke. I-glaze eyi-gel iqhubeka inyakaza cishe imizuzwana engu-2 noma engu-3, bese iyama ibuyele emuva kancane.
 
 **I-CMC gum** (carboxymethyl cellulose) yenza i-slurry inamathele kakhulu futhi yome kancane, futhi ishiya ungqimba oluqinile olubambelela embizeni. Ibaluleke kakhulu kuma-glaze okugcoba ngebhulashi nakuma-glaze ane-frit eningi. Isibonelo se-Digitalfire sixuba u-3.75 g ku-1000 g we-slurry, futhi kufanele ingene nge-blender. I-glaze ene-CMC ngeke ibe yi-gel ngama-Epsom salts, futhi njengoba amagciwane edla i-gum, ingashintsha ebhakedeni futhi iqale ukunuka.
 
@@ -260,7 +260,7 @@ Indlela idinga ukubala ngokucophelela, iziphetho ezixubeke kahle ze-SG elinganay
 
 ## Ukugcina amarekhodi {#records}
 
-UWillers uyibeka kahle inhloso: "ulwazi olwanele ukuze ukwazi ukuphinda, noma ukugwema, imiphumela oyitholile". Bhala phansi lokho ohlela ukukuhlola ngaphambi kokuqala, nemiphumela lapho ukhipha. I-Potclays yengeza indlela yokugcoba, ubukhulu, uhlobo lobumba nokushisa okuphelele, kuhlanganise nama-ramp, ama-hold nokupholisa. I-**ramp** yizinga lokushisisa noma lokupholisa, njengo-{{60 °C; 108 °F}} ngehora, kanti i-**hold** igcina i-kiln ezingeni elilodwa lokushisa isikhathi esibekiwe. Bhala izinombolo ze-lot, amanzi owasebenzisile nanoma yikuphi ukushintshwa: ukushintshwa kwe-feldspar kwe-Clay Art Center kwasho ukulungisa cishe ingxenye yama-glaze ayo.
+UWillers uyibeka kahle inhloso: "ulwazi olwanele ukuze ukwazi ukuphinda, noma ukugwema, imiphumela oyitholile". Bhala phansi lokho ohlela ukukuhlola ngaphambi kokuqala, nemiphumela lapho ukhipha. I-Potclays yengeza indlela yokugcoba, ugqinsi, uhlobo lobumba nokushisa okuphelele, kuhlanganise nama-ramp, ama-hold nokupholisa. I-**ramp** yizinga lokushisisa noma lokupholisa, njengo-{{60 °C; 108 °F}} ngehora, kanti i-**hold** igcina i-kiln ezingeni elilodwa lokushisa isikhathi esibekiwe. Bhala izinombolo ze-lot, amanzi owasebenzisile nanoma yikuphi ukushintshwa: ukushintshwa kwe-feldspar kwe-Clay Art Center kwasho ukulungisa cishe ingxenye yama-glaze ayo.
 
 Table: Okufanele ukubhale ku-batch ngayinye ye-glaze (isifanekiso sethu)
 Label: Isifanekiso serekhodi
@@ -269,7 +269,7 @@ Label: Isifanekiso serekhodi
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Iresiphi  | Iresiphi nenguqulo yayo; izinkampani zokokwakha nezinombolo ze-lot; noma yikuphi ukushintshwa                                                                                                                                         |
 | Ukuxuba   | Usuku; ubukhulu be-batch; amanzi engeziwe, nohlobo lwawo (asempompini, e-reverse osmosis noma e-distilled); i-SG ngemva kokuxuba ne-SG yokugcina; ama-Epsom salts, i-CMC ne-bentonite okwengeziwe; i-mesh yesihlungo nenani lokudlula |
-| Ukugcoba  | Uhlobo lobumba; i-cone ye-bisque; ukucwilisa, ukugcoba ngebhulashi noma ukuthela; isikhathi sokucwilisa noma inani longqimba; ubukhulu uma somile                                                                                     |
+| Ukugcoba  | Uhlobo lobumba; i-cone ye-bisque; ukucwilisa, ukugcoba ngebhulashi noma ukuthela; isikhathi sokucwilisa noma inani longqimba; ugqinsi uma somile                                                                                      |
 | Ukushisa  | I-kiln nendawo eshalofini; uhlelo lokushisa, nama-ramp alo, ama-hold nokupholisa; umoya (oxidation noma reduction); lokho i-witness cone ekubonisile, hhayi nje lokho i-kiln eyayisethelwe kukho                                      |
 | Umphumela | Ubuso nombala; noma yikuphi ukugeleza, i-crazing noma ama-pinhole; izithombe zangaphambili, ezangemuva nezaseceleni; ikhodi ye-tile                                                                                                   |
 

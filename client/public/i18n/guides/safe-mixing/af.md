@@ -5,7 +5,7 @@ lead: Hoe om glasuurstof uit jou longe en oonddampe uit jou huis te hou: die gew
 
 ## Die grootste gevaar: stof {#the-main-hazard}
 
-Die grootste langtermyngevaar in glasuurwerk{{en: glaze}} is stof, bowenal **inasembare kristallyne silika**: deeltjies kwarts of kristobaliet (kristalvorme van silika) klein genoeg om diep in die longe te kom. Kristallyne silika kan ongeveer 10 tot 60% van 'n glasuur se droë gewig uitmaak, en die meeste kleie (behalwe kaolien) en baie veldspate bevat ook fyn kwarts. Die Verenigde Koninkryk se Health and Safety Executive (HSE) sê hierdie stof "is baie fyn en onsigbaar onder gewone beligting", so 'n kamer wat skoon lyk, is nie bewys dat die lug skoon is nie.
+Die grootste langtermyngevaar in glasuurwerk{{en: glaze}} is stof, bowenal **respireerbare kristallyne silika**: deeltjies kwarts of kristobaliet (kristalvorme van silika) klein genoeg om diep in die longe te kom. Kristallyne silika kan ongeveer 10 tot 60% van 'n glasuur se droë gewig uitmaak, en die meeste kleie (behalwe kaolien) en baie veldspate bevat ook fyn kwarts. Die Verenigde Koninkryk se Health and Safety Executive (HSE) sê hierdie stof "is baie fyn en onsigbaar onder gewone beligting", so 'n kamer wat skoon lyk, is nie bewys dat die lug skoon is nie.
 
 As dit oor tyd ingeasem word, kan dit **silikose** veroorsaak, 'n longsiekte wat HSE beskryf as "ernstig en onomkeerbaar" en wat "permanente ongeskiktheid en vroeë dood kan veroorsaak". Dit kan ook **COPD** veroorsaak (chroniese obstruktiewe longsiekte: langdurige brongitis en emfiseem), wat rook erger maak. IARC, die Wêreldgesondheidsorganisasie se kankeragentskap, plaas ingeasemde kristallyne silika in Groep 1, "karsinogenies vir mense".
 
@@ -15,7 +15,7 @@ Silika word nie in die oond tot dampe nie, en 'n nat glasuur is nie 'n inaseming
 
 Werkplekreëls stel 'n **blootstellingsgrens**: die meeste silika wat 'n werker mag inasem, gemiddeld oor 'n 8-uur-dag, in milligram (mg) of mikrogram (µg, duisendstes van 'n milligram) per kubieke meter lug.
 
-Table: Werkplekgrense vir inasembare kristallyne silika (8-uur-gemiddeld)
+Table: Werkplekgrense vir respireerbare kristallyne silika (8-uur-gemiddeld)
 Label: Silika-blootstellingsgrense
 
 | Streek              |                 Grens | Notas                                                                                            |
@@ -142,7 +142,7 @@ Geen bron gee lugvloeisyfers vir 'n stokperdjiekap nie. Sonder 'n kap, maak staa
 
 ### Spuit
 
-HSE waarsku dat spuit "newels kan veroorsaak wat RCS bevat" (inasembare kristallyne silika), en dat "glasuurnewels vinnig uitdroog en in stof verander". Elke bron wat ons gevind het, sê om net binne 'n geventileerde spuithokkie te spuit.
+HSE waarsku dat spuit "newels kan veroorsaak wat RCS bevat" (respireerbare kristallyne silika), en dat "glasuurnewels vinnig uitdroog en in stof verander". Elke bron wat ons gevind het, sê om net binne 'n geventileerde spuithokkie te spuit.
 
 - HSE wil 'n omhulsel met afsuiging hê en, "waar moontlik, 'n spuithokkie met 'n waterwand", wat oorspuitsel in water vang.
 - Gebruik 'n draaitafel in die hokkie, dra nitrilhandskoene en 'n respirator, en maak die hokkie en sy filter skoon voordat oorspuitsel droog word.
@@ -173,9 +173,9 @@ Glasuurgrondstowwe{{en: glaze}} voeg meer by. Sommige metaaloksiede vorm dampe, 
 ### Waar om die oond te sit
 
 - Ons stel 'n motorhuis, skuur of kamer voor wat vir die oond opsy gesit is eerder as 'n woonruimte, en een wat jy van kinders en troeteldiere kan afsluit, soos Skutt aanraai.
-- **Vrye ruimte.** Bronne verskil: Skutt spesifiseer ten minste 18 in (46 cm) van enige muur of **brandbare** materiaal (enigiets wat kan brand), terwyl CIRMA, 'n versekeraar in Connecticut, 3 ft (0,9 m) van enigiets brandbaars voorstel. Volg jou oond se handleiding; sonder een, hou 18 in van mure en 3 ft van enigiets wat kan brand.
+- **Vrye ruimte.** Bronne verskil: Skutt spesifiseer ten minste 18 duim (46 cm) van enige muur of **brandbare** materiaal (enigiets wat kan brand), terwyl CIRMA, 'n versekeraar in Connecticut, 3 voet (0,9 m) van enigiets brandbaars voorstel. Volg jou oond se handleiding; sonder een, hou 18 duim van mure en 3 voet van enigiets wat kan brand.
 - **Vloer.** Gebruik 'n onbrandbare vloer soos beton of keramiekteëls, nooit hout, mat of viniel nie. Hou hout, papier en oplosmiddels weg van die oond.
-- **Elektrisiteit.** CIRMA beveel 'n toegewyde stroombaan aan, geen verlengkoorde of oorspanningsbeskermers nie, die prop uittrek tussen bakke, en 'n brandblusser binne 25 ft (7,6 m).
+- **Elektrisiteit.** CIRMA beveel 'n toegewyde stroombaan aan, geen verlengkoorde of oorspanningsbeskermers nie, die prop uittrek tussen bakke, en 'n brandblusser binne 25 voet (7,6 m).
 - **Kamerhitte.** Skutt sê hou die kamer onder {{38 °C; 100 °F}}, anders kan die beheerder die oond afskakel. Omdat die ventilator geen hitte verwyder nie, kan 'n klein kamer ook 'n waaier nodig hê. Hou sproeierkoppe en hittesensors weg van direk bo die oond.
 - **Koolstofmonoksiedalarm.** Ons het geen reël gevind wat een vir 'n elektriese oond vereis nie, maar brandende organiese stowwe maak CO, so 'n alarm in die oondkamer en die kamers langsaan is 'n verstandige, goedkoop stap (sien [Moenie jou gesin vergiftig nie](/guides/home-safety)).
 

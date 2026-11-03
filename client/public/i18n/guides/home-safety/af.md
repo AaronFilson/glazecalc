@@ -6,7 +6,7 @@ lead: Wat om te doen as 'n kind of troeteldier 'n glasuurgrondstof insluk, en ho
 ## As iets ingesluk is {#if-something-is-swallowed}
 
 > [!NOTE]
-> As 'n kind of troeteldier dalk 'n glasuurgrondstof ingesluk, ingeasem of gemors het, bel nou die gifhulplyn vir jou streek, selfs as hulle oënskynlik orraait is. Moenie vir simptome wag nie. As iemand bewusteloos is, nie asemhaal nie, sukkel om asem te haal of 'n stuipaanval het, bel eers die noodnommer.
+> As 'n kind of troeteldier dalk 'n glasuurgrondstof ingesluk, ingeasem of gemors het, bel nou die gifhulplyn vir jou streek, selfs as dit lyk of niks met hulle skort nie. Moenie vir simptome wag nie. As iemand bewusteloos is, nie asemhaal nie, sukkel om asem te haal of 'n stuipaanval het, bel eers die noodnommer.
 
 Hierdie gids is nie mediese advies nie: 'n gifsentrum, 'n dokter of 'n veearts besluit wat om te doen. Hierdie bladsy help jou om hulle vinnig te bereik en, nog beter, om hulle nie nodig te kry nie.
 
@@ -119,7 +119,7 @@ Kinders kry meer huisstof in as volwassenes. Hulle asem meer lug in vir hul ligg
 Bloedlood word in **µg/dL** gemeet (mikrogram lood per desiliter, 'n tiende van 'n liter, bloed). Die CDC se **bloedlood-verwysingswaarde** is 3,5 µg/dL, in 2021 verlaag van 5 µg/dL. Dit is die vlak waaronder 97,5% van Amerikaanse kinders van 1 tot 5 jaar oud val, so 'n kind op of bo dit het meer lood in sy bloed as byna alle kinders van sy ouderdom. Die CDC sê die waarde "is nie op gesondheid gegrond nie en is nie 'n regulatoriese standaard nie", en toe dit die waarde verlaag het, het dit gesê "Blootstelling aan lood op alle vlakke is skadelik vir kinders."
 
 > [!NOTE]
-> Dus is 3,5 µg/dL 'n teken vir opvolg, nie 'n veilige grens nie. 'n Uitslag daaronder beteken nie dat lood geen skade gedoen het nie. 'n Uitslag op of bo dit beteken dat jy moet uitvind waar die lood vandaan kom; die CDC se riglyn is om 'n vingerprik-uitslag met 'n monster uit 'n aar te bevestig. Dokters buite die VSA volg hul eie riglyne, en joune sal verduidelik wat 'n uitslag beteken.
+> Dus is 3,5 µg/dL 'n teken vir opvolg, nie 'n veilige grens nie. 'n Uitslag daaronder beteken nie dat lood geen skade gedoen het nie. 'n Uitslag op of bo dit beteken dat jy moet uitvind waar die lood vandaan kom; die CDC se riglyn is om 'n vingerprik-uitslag met 'n monster uit 'n aar te bevestig. Dokters buite die VS volg hul eie riglyne, en joune sal verduidelik wat 'n uitslag beteken.
 
 ### Wat ons voorstel
 
@@ -197,7 +197,7 @@ Ons stel voor dat jy 'n "voedselveilig"-etiket op 'n kommersiële glasuur lees a
 
 ### Toetsing
 
-Laboratoriums toets gebakte stukke met 'n standaard suurweektoets wat die ergste geval voorstel, soos ASTM C738 in die VSA. Een laboratorium se EU-toets vereis vier identiese stukke en neem sewe werksdae, so maak ekstras van enigiets wat jy wil laat toets.
+Laboratoriums toets gebakte stukke met 'n standaard suurweektoets wat die ergste geval voorstel, soos ASTM C738 in die VS. Een laboratorium se EU-toets vereis vier identiese stukke en neem sewe werksdae, so maak ekstras van enigiets wat jy wil laat toets.
 
 Tuistoetse word betwis. Die FDA sê tuisdepper-stelle kan uitloogbare lood toon, en dat 'n stuk wat positief toets nie vir kos gebruik behoort te word nie. Ceramics NZ waarsku dat loodtoetspenne vir verbruikers "nie vir hierdie gebruik ontwerp is nie" op keramiek en vals positiewe uitslae kan gee. Digitalfire stel voor dat jy 'n skyfie suurlemoen oornag op die glasuur los as 'n rowwe sifting. Die veilige lesing: 'n positiewe tuistoets beteken hou op om die stuk vir kos te gebruik, en 'n negatiewe een bewys niks. Net 'n laboratorium kan jou sê dat 'n stuk veilig is.
 

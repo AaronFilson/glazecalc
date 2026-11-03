@@ -15,7 +15,7 @@
     "lead": "Ìtọ́sọ́nà ní èdè tó rọrùn fún àwọn amọ̀kòkò tuntun: láti ohun tí glaze jẹ́ dé sísun rẹ̀, àti pípa gbogbo ènìyàn mọ́ láìléwu lójú ọ̀nà.",
     "note": "Àwọn ìtọ́sọ́nà yìí kó ohun tí àwọn olùpèsè, àwọn àjọ ààbò àti àwọn amọ̀kòkò onírìírí ń tẹ̀ jáde jọ, pẹ̀lú orísun wọn ní òpin ọ̀kọ̀ọ̀kan. Ibẹ̀rẹ̀ ni wọ́n, wọn kì í ṣe àrọ́pò fún ìwé ìsọfúnni ààbò (safety data sheet) àwọn ohun èlò yín, ìwé ìtọ́ni kiln yín tàbí òfin ìbílẹ̀.",
     "glazingBasics": {
-      "title": "Glaze láti ìpìlẹ̀",
+      "title": "Ìpìlẹ̀ glaze",
       "text": "Ohun tí glaze jẹ́, bí ó ṣe ń yọ́, àti gbogbo ọ̀rọ̀ tí ẹ ó bá pàdé lórí ìlànà tàbí àpò, pẹ̀lú àlàyé."
     },
     "makingAGlaze": {
@@ -105,8 +105,8 @@
   "silica": {
     "limitIn": "Òpin ní",
     "label": "Òpin silica ní {region}",
-    "caption": "Òpin ibi iṣẹ́ fún eruku silica tí a ń mí sínú ní {region}, ìpíndọ́gba wákàtí 8 (a ṣàyẹ̀wò ní {date})",
-    "captionControl": "Òṣùwọ̀n fún eruku silica tí a ń mí sínú nínú afẹ́fẹ́ ibi iṣẹ́ ní {region} (a ṣàyẹ̀wò ní {date})",
+    "caption": "Òpin ibi iṣẹ́ fún eruku silica crystalline tí a ń mí sínú ní {region}, ìpíndọ́gba wákàtí 8 (a ṣàyẹ̀wò ní {date})",
+    "captionControl": "Òṣùwọ̀n fún eruku silica crystalline tí a ń mí sínú nínú afẹ́fẹ́ ibi iṣẹ́ ní {region} (a ṣàyẹ̀wò ní {date})",
     "both": "Quartz àti cristobalite",
     "freeSilica": "Silica òmìnira (free silica)",
     "quartz": "Quartz",

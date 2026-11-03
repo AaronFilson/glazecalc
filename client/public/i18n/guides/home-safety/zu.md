@@ -136,7 +136,7 @@ I-Glazecalc igcina umthofu uvaliwe ngaphandle uma uwukhetha ku-[Izilungiselelo](
 
 ### Okwaziwayo
 
-I-Pet Poison Helpline ithi "Umthofu unoshevu kuzo zonke izinhlobo, kodwa izilwane ezincane kanye/noma ezingondlekile kahle zisengozini enkulu kakhulu yokudliswa ushevu", nezimpawu ezinjengokuhlanza, isifo sohudo, ukungadli, ukukhubeka, isifo sokuwa nobumpumputhe. Umbiko wesimo sezilwane uchaza inja eyadla ama-sparkler aqukethe i-barium nitrate (usawoti we-barium oncibilikayo, okungesikho okokwakha kwe-glaze{{en: glaze}}): yaba nobuthakathaka obungazelelwe, ukuconsa amathe nokushaya kwenhliziyo okungalingani, futhi yalulama ngokwelashwa ngudokotela wezilwane. Izinyoni ziyisimo esikhethekile: udokotela wezilwane wase-University of Illinois uchaza ukuthi "Izinyoni zinesimiso sokuphefumula esiyinkimbinkimbi kakhulu nesisebenza kahle ngokweqile, okuzenza zisengozini kakhulu yokuhogela intuthu nama-aerosol."
+I-Pet Poison Helpline ithi "Umthofu unoshevu kuzo zonke izinhlobo, kodwa izilwane ezisencane kanye/noma ezingondlekile kahle zisengozini enkulu kakhulu yokudliswa ushevu", nezimpawu ezinjengokuhlanza, isifo sohudo, ukungadli, ukukhubeka, isifo sokuwa nobumpumputhe. Umbiko wesimo sezilwane uchaza inja eyadla ama-sparkler aqukethe i-barium nitrate (usawoti we-barium oncibilikayo, okungesikho okokwakha kwe-glaze{{en: glaze}}): yaba nobuthakathaka obungazelelwe, ukuconsa amathe nokushaya kwenhliziyo okungalingani, futhi yalulama ngokwelashwa ngudokotela wezilwane. Izinyoni ziyisimo esikhethekile: udokotela wezilwane wase-University of Illinois uchaza ukuthi "Izinyoni zinesimiso sokuphefumula esiyinkimbinkimbi kakhulu nesisebenza kahle ngokweqile, okuzenza zisengozini kakhulu yokuhogela intuthu nama-aerosol."
 
 ### Imithetho yokuqonda okuvamile
 
@@ -163,9 +163,9 @@ Imithombo ayivumelani ngesikhala. I-Rio Grande ithi okungenani amayintshi angu-1
 
 ### Ugesi
 
-I-Rio Grande incoma **isekethe ezimele** (engaphi gesi kokunye) nesokhethi enomhlabathi (grounded) ofanele. Sikweluleka ukuthi ungasebenzisi intambo yokwelula (extension cord). Phakathi kokushisa, cisha i-breaker noma iswishi yokunqamula ye-kiln, noma uyikhiphe ogesini, ukuze ingane ingakwazi ukuyiqalisa.
+I-Rio Grande incoma **isekethe ezimele** (engaphi gesi kokunye) nesokhethi enomhlabathi (grounded) ofanele. Sikweluleka ukuthi ungasebenzisi intambo yokwelula (extension cord). Phakathi kokushisa okukodwa nokulandelayo, cisha i-breaker noma iswishi yokunqamula ye-kiln, noma uyikhiphe ogesini, ukuze ingane ingakwazi ukuyiqalisa.
 
-### Yiba khona uma ukushisa kuphela
+### Yiba khona lapho ukushisa kuphothulwa
 
 I-**kiln sitter** yiswishi yemishini kuma-kiln amaningi asebenza ngesandla: i-cone encane iyagoba ekupheleni kokushisa bese icisha iswishi. Incwadi yayo yemiyalelo ithi "AYENZELWE ukusebenza njengethuluzi lokucisha eliqinisekisa ukuphepha." I-Rio Grande ithi ungalokothi ushiye i-kiln eshisayo ingabhekiwe, "ikakhulukazi eduze nesikhathi okulindeleke ukuthi icishe ngaso". Ngakho hlala eduze futhi uhlole i-kiln ngenkathi ishisa, ikakhulukazi eduze nokuphela; shisa kuphela uma umuntu omdala ezoba sekhaya futhi ephapheme phakathi nakho konke ukushisa, hlola ukuthi icishile, futhi ugcine isicishamlilo se-ABC egumbini le-kiln. Ukuze wazi ukuthi ama-sitter, ama-controller nezinhlelo zokushisa kusebenza kanjani, bheka [Ukushisa ku-kiln elula](/guides/firing).
 
@@ -180,7 +180,7 @@ I-**carbon monoxide** (CO) iyigesi enoshevu ongakwazi ukuyibona noma ukuyihogela
 Ukukhanya kwe-infrared, ongakwazi ukukubona, "kuqala ku-752°F (400°C)", futhi i-Ceramic Arts Network ithi ukulunguza ku-kiln ngaphezu kwalokhu kufanele kwenziwe njalo kugqokwe isivikelo samehlo. I-infrared ingalimaza i-lens yeso futhi iholele ku-cataract, futhi ukubuka isikhathi eside kungalimaza i-retina. Izibuko zelanga nezibuko ze-didymium aziyivimbi.
 
 > [!WARNING]
-> Izingane akufanele zilunguze ku-kiln nhlobo. Imbobo yokulunguza ekhazimulayo iyazidonsa, futhi ngeke zigcine izibuko zokuvikela zigqokile ngokuthembekile, ngakho zigcine kude ngenkathi i-kiln ishisa. Abantu abadala kufanele balunguze isikhashana kuphela, ngezibuko zokushisela (welding) ezilinganiselwe i-IR. Imithombo incoma ama-shade asukela ku-1.7 kuya ku-5; i-shade 3 iyisinqumo esinengqondo, emnyama kakhulu uma ubona amachashaza ngemuva kwalokho.
+> Izingane akufanele zilunguze ku-kiln nhlobo. Imbobo yokulunguza ekhazimulayo iyazidonsa, futhi ngeke zigcine izibuko zokuvikela zigqokile ngokuthembekile, ngakho zigcine kude ngenkathi i-kiln isashisa, nangesikhathi iphola. Abantu abadala kufanele balunguze isikhashana kuphela, ngezibuko zokushisela (welding) ezilinganiselwe i-IR. Imithombo incoma ama-shade asukela ku-1.7 kuya ku-5; i-shade 3 iyisinqumo esinengqondo, emnyama kakhulu uma ubona amachashaza ngemuva kwalokho.
 
 ## Izitsha ezenziwe ngesandla etafuleni lomndeni {#handmade-ware}
 
@@ -188,7 +188,7 @@ Umbuzo wezitsha etafuleni lomndeni **ukuvuza** (leaching): izinsimbi ezincibilik
 
 ### Ukungabi nomthofu akufani nokuphepha ekudleni
 
-I-glaze{{en: glaze}} engenamthofu (Pb) isengavuza. I-Digitalfire, incwadi yereferensi yamakhemikhali e-glaze, ibala ama-glaze aqukethe "okokufaka umbala kwe-oxide yezinsimbi ezisindayo, i-barium, i-lithium, noma umthofu" njengokukhathazayo, futhi ixwayisa ukuthi i-stain eshiswe ngaphezu kwezinga lokushisa elilinganiselwe ingakhipha i-cadmium. Ilebula yezinto zobuciko ye-ASTM D-4236 esitsheni "AYIQINISEKISI ukuthi i-glaze eshisiwe iphephile ekudleni", futhi "Abakhiqizi bezitsha zetafula kumele bahlole zonke izitsha eziqediwe ukuze baqinisekise isimo sazo njengezitsha zokudla."
+I-glaze{{en: glaze}} engenamthofu (Pb) isengavuza. I-Digitalfire, incwadi yereferensi yamakhemikhali e-glaze, ibala ama-glaze aqukethe "okokufaka umbala kwe-oxide yezinsimbi ezisindayo, i-barium, i-lithium, noma umthofu" njengokukhathazayo, futhi ixwayisa ukuthi i-stain eshiswe ngaphezu kwezinga lokushisa elilinganiselwe ingakhipha i-cadmium. Ilebula yezinto zobuciko ye-ASTM D-4236 esitsheni se-glaze "AYIQINISEKISI ukuthi i-glaze eshisiwe iphephile ekudleni", futhi "Abakhiqizi bezitsha zetafula kumele bahlole zonke izitsha eziqediwe ukuze baqinisekise isimo sazo njengezitsha zokudla."
 
 > [!NOTE]
 > "Iphephile ekudleni" kusho ukuthi le glaze, kulobu bumba, ishiswe kule cone, igcotshwe ngale ndlela, ikhipha ngaphansi kwemikhawulo yomthetho. Ukubala iresiphi, nokwe-Glazecalc kuhlanganisiwe, kungaveza iresiphi enobungozi kodwa ngeke kufakazele ukuthi imbiza iphephile. Ukuhlolwa kokuvuza kwezinsimbi (leach test) kwesitsha esishisiwe kuphela okungakwenza.

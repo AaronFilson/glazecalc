@@ -1,5 +1,5 @@
 ---
-title: Gasa a cikin murhu mai sauƙi
+title: Gasa a cikin kiln mai sauƙi
 lead: Yadda ake gasa a cikin kiln na lantarki mai kiln sitter ko suwis na hannu: zaɓa, ajiyewa da karanta cone, tare da jadawalan da aka wallafa na gasa bisque da na gasa glaze.
 ---
 
@@ -34,12 +34,12 @@ Masu sayar da kaya a Birtaniya, Turai, Australia da New Zealand sukan bayar da z
 Table: Darajar tsayawa a ƙoli
 Label: Tsayawa da aikin zafi
 
-| Tsayawa        | Kusan aikin zafi ɗaya da                            |
-| -------------- | --------------------------------------------------- |
-| Kusan minti 20 | Ƙoli mai zafi fiye da {{18 °F; 10 °C}}              |
-| Minti 40–60    | Ƙoli mai zafi fiye da {{36 °F; 20 °C}}              |
-| Kusan awa 2    | Ƙoli mai zafi fiye da {{54 °F; 30 °C}}              |
-| Awa 4–6        | Ya isa ya lanƙwasa cone mai zafi da lamba biyu sama |
+| Tsayawa        | Kusan aikin zafi ɗaya da                               |
+| -------------- | ------------------------------------------------------ |
+| Kusan minti 20 | Ƙoli mai zafi fiye da {{18 °F; 10 °C}}                 |
+| Minti 40–60    | Ƙoli mai zafi fiye da {{36 °F; 20 °C}}                 |
+| Kusan awa 2    | Ƙoli mai zafi fiye da {{54 °F; 30 °C}}                 |
+| Awa 4–6        | Ya isa ya lanƙwasa cone wanda ya fi zafi da lamba biyu |
 
 Orton ya ƙara da cewa tsayawa na awa 1–2 "zai iya isa ya lanƙwasa cone na lamba ta gaba mai zafi".
 
@@ -52,14 +52,14 @@ Orton yana yin nau'i huɗu. Biyu suna tsayawa a kan shiryayye don nuna abin da t
 Table: Nau'o'in cone huɗu na Orton
 Label: Nau'o'in cone
 
-| Nau'i                | Amfaninsa                       | Yadda yake tsayawa                                                                                         |
-| -------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Mai tsayawa da kansa | Cone mai shaida a kan shiryayye | Gindin da aka gina a jikinsa yana saita tsayi, 1¾ in (44 mm), da karkata ta 8°; ba a buƙatar mariƙi        |
-| Babba                | Cone mai shaida a kan shiryayye | Ana kafa shi a plaque ko dunƙulen yumɓu, inda daidai 2 in (51 mm) suke bayyane, yana karkata 8° daga tsaye |
-| Ƙarami (junior)      | Kiln sitter                     | Yana kwanciya a kan mariƙan sitter; 15/16 in (24 mm) suna bayyane idan an tsayar da shi a shiryayye        |
-| Sanda (bar)          | Kiln sitter                     | Gari ɗaya ne da na ƙananan cone, a siffar sanda mai kauri ɗaya                                             |
+| Nau'i                | Amfaninsa                       | Yadda yake tsayawa                                                                                           |
+| -------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Mai tsayawa da kansa | Cone mai shaida a kan shiryayye | Gindin da aka gina a jikinsa yana saita tsayi, 1¾ inci (44 mm), da karkata ta 8°; ba a buƙatar mariƙi        |
+| Babba                | Cone mai shaida a kan shiryayye | Ana kafa shi a plaque ko dunƙulen yumɓu, inda daidai 2 inci (51 mm) suke bayyane, yana karkata 8° daga tsaye |
+| Ƙarami (junior)      | Kiln sitter                     | Yana kwanciya a kan mariƙan sitter; 15/16 inci (24 mm) suna bayyane idan an tsayar da shi a shiryayye        |
+| Sanda (bar)          | Kiln sitter                     | Gari ɗaya ne da na ƙananan cone, a siffar sanda mai kauri ɗaya                                               |
 
-Tsayi yana da muhimmanci: bambancin ¼ in (6 mm) a tsayin babban cone "zai iya kawo bambancin lanƙwasa fiye da rabin cone". Cone ba sa lalacewa ko tsufa, kuma ajiye su a wuri mai danshi ba ya shafar su.
+Tsayi yana da muhimmanci: bambancin ¼ inci (6 mm) a tsayin babban cone "zai iya kawo bambancin lanƙwasa fiye da rabin cone". Cone ba sa lalacewa ko tsufa, kuma ajiye su a wuri mai danshi ba ya shafar su.
 
 ### Ma'anar "cone 6" a aikace
 
@@ -146,23 +146,23 @@ Sandar auna zafin tana karanta iskar da ke kusa da bango, ba tukwane ba. Idan ga
 Table: Rukunin cone uku
 Label: Rukunin cone uku
 
-| Cone       | Wace lamba                       | Bisque na cone 04 | Glaze na cone 6 | Idan ya lanƙwasa                |
-| ---------- | -------------------------------- | ----------------- | --------------- | ------------------------------- |
-| Mai jagora | Lamba ɗaya ƙasa da ta burin zafi | 05                | 5               | Tukwane suna kusa da nuna       |
-| Na gasa    | Burin zafin                      | 04                | 6               | Gasar ta kai daidai inda ake so |
-| Mai tsaro  | Lamba ɗaya mai zafi fiye         | 03                | 7               | Gasar ta wuce gona da iri       |
+| Cone       | Wace lamba                                   | Bisque na cone 04 | Glaze na cone 6 | Idan ya lanƙwasa                |
+| ---------- | -------------------------------------------- | ----------------- | --------------- | ------------------------------- |
+| Mai jagora | Cone ɗaya mai ƙarancin zafi fiye da na burin | 05                | 5               | Tukwane suna kusa da nuna       |
+| Na gasa    | Burin zafin                                  | 04                | 6               | Gasar ta kai daidai inda ake so |
+| Mai tsaro  | Lamba ɗaya mai zafi fiye                     | 03                | 7               | Gasar ta wuce gona da iri       |
 
 ### Cone masu tsayawa da kansu ko plaque
 
 L&L, mai yin kiln a Amurka, yana ba da shawarar cone masu tsayawa da kansu ga rukunin "saboda su ne mafi sauƙin amfani kuma suna bayar da sakamako mafi daidaito": tsayinsu da karkatarsu suna cikin jikinsu.
 
-Manyan cone suna buƙatar **plaque** (mariƙin da aka riga aka yi) ko **dunƙulen** yumɓu mai laushi, mai ramuka, wanda aka huda da fensir. Ku kafa kowanne inda daidai 2 in (51 mm) suke bayyane, yana karkata 8° daga tsaye zuwa **fuskar lanƙwasarsa**. Don gano wannan fuska, ku tsayar da cone a kan gindinsa a wuri mai lebur, ku riƙe shi ta ƙarshensa, sannan ku sake shi: zai faɗi zuwa fuskar lanƙwasarsa.
+Manyan cone suna buƙatar **plaque** (mariƙin da aka riga aka yi) ko **dunƙulen** yumɓu mai laushi, mai ramuka, wanda aka huda da fensir. Ku kafa kowanne inda daidai 2 inci (51 mm) suke bayyane, yana karkata 8° daga tsaye zuwa **fuskar lanƙwasarsa**. Don gano wannan fuska, ku tsayar da cone a kan gindinsa a wuri mai lebur, ku riƙe shi ta ƙarshensa, sannan ku sake shi: zai faɗi zuwa fuskar lanƙwasarsa.
 
 ### Inda za a ajiye rukunan
 
 1. Ku ajiye rukunin "can cikin kiln, amma kuma... ana iya ganinsa ta ramin leƙe" (Orton), kusa da tsakiyar kayan da aka loda kuma nesa da iska mai shigowa (L&L). Ba daidai a bakin ramin leƙe ba: ya kamata cone su ji zafin da tukwane suke ji.
 2. Kafin ku rufe murfi, ku leƙa ta ramin leƙe ku tabbatar cewa kuna ganin cone ukun duka.
-3. A kiln mai sitter, ku ajiye shiryayyen rukunin aƙalla 1 in (25 mm) sama ko ƙasa da bututun sitter, don kada shiryayye mai karkata ya toshe sitter.
+3. A kiln mai sitter, ku ajiye shiryayyen rukunin aƙalla 1 inci (25 mm) sama ko ƙasa da bututun sitter, don kada shiryayye mai karkata ya toshe sitter.
 4. A gasarku ta farko-farko, ku ajiye rukuni a shiryayyen sama, na tsakiya da na ƙasa. Gwajin daidaitawa na L&L ya fi haka: rukunai biyu na cone 07, 06 da 05 a kowane shiryayye, ɗaya a gefe ɗaya kuma a tsakiya.
 
 Ku sa ran bambanci: Orton ya ce "Galibi, za ku ga aƙalla bambancin cone ɗaya daga sama zuwa ƙasan kiln", kuma wuraren da aka cika sosai suna gasuwa da ƙarancin zafi. Rukunan da ba ku iya gani yayin gasa suna bayar da bayani bayan gasar.
@@ -194,7 +194,7 @@ Hanyar Dawson, wadda kuma take aiki a matsayin bincike kafin kowace gasa:
 
 1. Ku kashe dukkan suwis. Ku tabbatar cewa sandar ji tana motsi ba tare da tsaiko ba, tana zaune a tsakiyar bututun, kuma ba ta lanƙwashe ko ta yi tsatsa ba. Idan tana da nauyin motsi, Dawson ya ce a sauya bututun gaba ɗaya.
 2. Ku shafa siririn **kiln wash** na zafi mai yawa (shafen da yake hana abu da ya narke mannewa) a kan mariƙan cone da kuma sandar inda take taɓa cone. Kada ku taɓa shafa wash a kan cone ko bututun porcelain.
-3. Ku loda shiryayyu da tukwane aƙalla 1 in (25 mm) sama ko ƙasa da bututun, don kada wani abu ya taɓa shi, ya faɗa masa ko ya toshe shi.
+3. Ku loda shiryayyu da tukwane aƙalla 1 inci (25 mm) sama ko ƙasa da bututun, don kada wani abu ya taɓa shi, ya faɗa masa ko ya toshe shi.
 4. Ku ɗaga nauyin, ku danna ƙugiyar ƙasa a kan maɓallin sakin, sannan ku kwantar da cone ko sandar a kan mariƙan, jingine da matakin ƙarfe, kamar yadda littafin jagora na sitter ɗinku ya nuna, ta hanya ɗaya kowane lokaci. Ku sake dubawa kafin ku rufe murfi: "CONE KO SANDAR DA BA A AJIYE DAIDAI BA ZAI IYA JAWO GASA FIYE DA KIMA."
 5. Ku saita limit timer ku tura plunger ciki har ya kulle. Ku riƙe kiln a daidaice, kuma ku bar wurin da ke ƙarƙashin nauyin a buɗe, don nauyin ya iya faɗuwa.
 
@@ -228,7 +228,7 @@ Label: Matsalolin kiln sitter
 | Cone na sitter bai lanƙwasa ba, ko ya narke ya zama dunƙule      | Sitter ɗin kansa: rashin daidaitawa, sanda da ta lanƙwashe ko ta yi tsatsa, ko wani abu da ya maƙale a ciki ko jikin bututun | Ku duba ku daidaita sitter bisa littafin jagorarsa kafin ku sake gasa   |
 | Da wuri ko a makare kowane lokaci                                | Ya fita daga daidaito, ko sanda ta zaizaye                                                                                   | Ku duba da firing gauge; ku motsa trigger plate                         |
 
-Don duba daidaiton, Dawson yana amfani da **firing gauge** (ma'aunin gasa) wanda yake riƙe sandar inda cone da ya lanƙwasa gaba ɗaya zai bar ta; sannan ya kamata a sami "tazarar 1/16 inch" (kusan 1.6 mm) a ƙugiyar. Ku duba shi bayan kowace gasa 30. Ƙa'idar Ceramics Monthly: idan kiln yana kashewa da wuri, ku ɗaga trigger plate kaɗan; idan a makare, ku saukar da shi kaɗan. Ko me sitter ya yi, "Koyaushe ku amince da manyan cone masu shaida fiye da ƙananan cone na sitter."
+Don duba daidaiton, Dawson yana amfani da **firing gauge** (ma'aunin gasa) wanda yake riƙe sandar inda cone da ya lanƙwasa gaba ɗaya zai bar ta; sannan ya kamata a sami "tazarar 1/16 inci" (kusan 1.6 mm) a ƙugiyar. Ku duba shi bayan kowace gasa 30. Ƙa'idar Ceramics Monthly: idan kiln yana kashewa da wuri, ku ɗaga trigger plate kaɗan; idan a makare, ku saukar da shi kaɗan. Ko me sitter ya yi, "Koyaushe ku amince da manyan cone masu shaida fiye da ƙananan cone na sitter."
 
 > [!WARNING]
 > **Kiln sitter ba na'urar tsaro ba ne.** Littafin jagora na Dawson ya ce "BA a yi shi don ya zama makunnin kashewa mai tabbatar da tsaro ba, kuma BAI kamata a bar kiln ɗinku ba tare da kulawa ba fiye da lokacin gasar da aka kiyasta." Abu mai sauƙi kamar ɗanyen tukunya da ya faɗa wa bututun "zai iya jawo gasa fiye da kima". Ku kasance a wurin don duba kiln lokacin da ya kamata ya gama, kuma kada ku taɓa gasa shi a kan ko kusa da wani abu mai ci da wuta, kamar ƙasan katako ko kafet.
@@ -464,9 +464,9 @@ Gasa glaze{{en: glaze}} tana narkar da glaze ya zama gilashi a kan bisque. Yawan
 
 ### Loda don gasa glaze
 
-- Kada tukwanen da aka shafa wa glaze su taɓa juna ko bango: ku bar kusan ½ in (13 mm).
+- Kada tukwanen da aka shafa wa glaze su taɓa juna ko bango: ku bar kusan ½ inci (13 mm).
 - Ku hana glaze hawa ƙafar tukunya (**dry-footing**), ko ku ajiye tukwane na zafi ƙasa a kan **stilts**, ƙananan mariƙai masu tsini. Bai kamata stoneware da porcelain su tsaya a kan stilts ba, domin suna nutsewa cikinsu a waɗannan zafin; ku yi amfani da kiln wash na zafi mai yawa ko yashin silica a maimakon haka.
-- Ku bar aƙalla 1 in (25 mm) tsakanin gefen shiryayyu da bango ko sitter.
+- Ku bar aƙalla 1 inci (25 mm) tsakanin gefen shiryayyu da bango ko sitter.
 
 ### Jadawalan controller
 
@@ -619,7 +619,7 @@ Don fitar da hayaƙi daga ɗaki, da ƙararrawar carbon monoxide, duba [Haɗawa c
 - Ku leƙa ta ramin leƙe sai da gilashin walda na shade 3 masu kariya daga IR kaɗai; gilashin rana ba su isa ba. Skutt yana ba da shawarar a murɗa toshen a wurinsu don kada su faɗi.
 - Ku zauna kusa ku duba kiln yayin da yake gasawa, musamman kusa da lokacin da ake tsammanin zai gama; sitter ba na'urar tsaro mai tabbaci ba ne. Ku gasa ne kawai idan wani babba zai kasance a gida kuma a farke tsawon gasar gaba ɗaya.
 - Kada ku taɓa gasa a kan ko kusa da wani abu mai ci da wuta, kamar ƙasan katako ko kafet.
-- Ku kiyaye tazarar da ke cikin littafin jagorarku. Alƙaluman da aka wallafa suna daga 12 in (30 cm) zuwa 3 ft (91 cm); inda littafin bai faɗi ba, 18 in (46 cm) daga bango da 3 ft (91 cm) daga duk wani abu mai ci da wuta shi ne zaɓi mafi aminci.
+- Ku kiyaye tazarar da ke cikin littafin jagorarku. Alƙaluman da aka wallafa suna daga 12 inci (30 cm) zuwa 3 ƙafa (91 cm); inda littafin bai faɗi ba, 18 inci (46 cm) daga bango da 3 ƙafa (91 cm) daga duk wani abu mai ci da wuta shi ne zaɓi mafi aminci.
 - Ku bar wurin da ke kewayen nauyin sitter a buɗe don ya iya faɗuwa.
 - Idan gasa ta ƙare, ku kashe suwis ku kuma kashe breaker.
 

@@ -2,9 +2,9 @@
   "common": {
     "formulaHelp": "Fórmulata yupaykunallawan qillqay, {typed} hina: yupaykunaqa uraypi huch'uyllapi rikhurinqa, {shown}. Fórmulapa t'aqankunata huñunaykipaq, {joined} hina, kay puntota copiay:",
     "relatedTo": "Kaywan tupan",
-    "notes": "Willakuykuna",
+    "notes": "Apuntekuna",
     "loi": "Ruphachiypi chinkaq (LOI), %",
-    "molecularWeight": "Mana ruphachisqa fórmulapa peso molecularnin (LOI ch'usaq kaqtinlla llamk'achikun)",
+    "molecularWeight": "Mana ruphachisqa fórmulapa peso molecularnin (LOI ch'usaq kaptinlla llamk'achikun)",
     "formulaHeading": "Fórmula, ruphachisqa",
     "oxideSelection": "Óxido",
     "noOxide": "mana imapas",
@@ -17,7 +17,7 @@
     "removeOxideName": "Óxido {oxide} nisqata fórmulamanta qichuy",
     "save": "Waqaychay",
     "elements": "Elementokuna",
-    "removeNote": "Waqaychasqa esmalte ruranakunaqa paykunapa copiantam waqaychanku, chayrayku mana tikrankuchu.",
+    "removeNote": "Waqaychasqa esmalte ruranakunaqa paykunapa copiantam waqaychanku, chayrayku mana t'ikrankuchu.",
     "saveFailed": "Pantay: servidorman mañakuyqa mana atikurqanchu."
   },
   "material": {
@@ -26,7 +26,7 @@
     "newHeading": "Material yapay",
     "name": "Suti",
     "rawFormula": "Mana ruphachisqa fórmula",
-    "weightsNote": "Peso equivalente, ruphachisqa pesopas fórmulamanta LOI-manta ima yupakun waqaychaqtiyki.",
+    "weightsNote": "Peso equivalente, ruphachisqa pesopas fórmulamanta LOI-manta ima yupakun waqaychaptiyki.",
     "mineHeading": "Materialniykuna",
     "none": "Manaraq kanchu. Uraypi yapasqayki materialkunaqa esmalte ruranaykikunapi kanman, estándar kaqkunapa ladonpi.",
     "rawFormulaColumn": "Mana ruphachisqa fórmula",
@@ -42,7 +42,7 @@
     "name": "Suti",
     "formulaAsSold": "Fórmula, rantikusqan hina",
     "noChemistry": "Mana óxido análisisniyuqchu, comercial tinte hina: fórmula unitariamanta qichuy",
-    "firedNote": "Ruphachisqa kaqtin esmalteman imata quqta qillqay: yana óxido de cobalto, {asSold}, {fired} kanqa, LOI {loi}% kaqwan. Chaymanta esmalte ruranaqa fórmula unitariapi yupanmanña.",
+    "firedNote": "Ruphachisqa kaptin esmalteman imata quqta qillqay: yana óxido de cobalto, {asSold}, {fired} kanqa, LOI {loi}% kaqwan. Chaymanta esmalte ruranaqa fórmula unitariapi yupanmanña.",
     "mineHeading": "Aditivoykuna, llimp'iqniykunapas",
     "none": "Manaraq kanchu. Uraypi yapasqayki aditivokunaqa esmalte ruranaykikunapi kanman, estándar kaqkunapa ladonpi.",
     "standardHeading": "Estándar aditivokuna",

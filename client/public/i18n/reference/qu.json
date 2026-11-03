@@ -5,7 +5,7 @@
     "heading": "Estándar materialkuna",
     "lead": "Glazecalcpa estándar qillqa wasinpi kaq {count} material, feldespatokunamanta mitukunamanta qallarispa fritakunakama, boro fuentekunakama ima, sapankan óxido análisisniyuq, peligronkunayuq ima.",
     "intro": "Glazecalcpi sapa esmalte ruranam kay materialkunata apaykachanman. Sapa p''anqam qun óxido análisista, Glazecalcpa llamk''anan fórmula unitariaman yapayninta, peligrokunata qillqa wasipa qillqasqan hina, yupaykuna maymanta hamusqantapas.",
-    "careAbout": "Mayqin esmalte materialtapas manaraq hap''ispa, <mixing>Mana manchakuspa chaqruy, wayra puriynin</mixing>, <home>Ama ayllu-masiykita hampi-ruruwan wañuchiychu</home> ima qillqakunata ñawinchay.",
+    "careAbout": "Mayqin esmalte materialtapas manaraq hap''ispa, <mixing>Mana manchakuspa chaqruy, wayra puriynin</mixing>, <home>Ama ayllu-masiykita miyuwan wañuchiychu</home> ima qillqakunata ñawinchay.",
     "own": "Cuentaykipi waqaychasqa kikiykipa materialniykikunaqa <own>Materialkuna p''anqapim</own> kachkan. <cones>Cono tablaqa</cones> conokunapa temperaturanta listan."
   },
   "material": {
@@ -39,7 +39,7 @@
     "hazards": "Peligrokuna: {hazards}",
     "noHazards": "Qillqa wasiqa manam kay materialpaq peligro willakuyniyuqchu. Qhatuqniykipa seguridad datos p''anqanta (SDS) qhawariy.",
     "hasLead": "Kay materialqa titi (plomo, Pb) óxidotam (PbO) apan.",
-    "care": "Glazecalcqa peligro simikunata qillqa wasipa registron qusqan hinam rikuchin. Manam hunt''asqa peligro tupuychu, chaymi qhatuqniykipa seguridad datos p''anqanta ñawinchay. Mayqin esmalte materialtapas manaraq hap''ispa, <mixing>Mana manchakuspa chaqruy, wayra puriynin</mixing>, <home>Ama ayllu-masiykita hampi-ruruwan wañuchiychu</home> ima qillqakunata ñawinchay.",
+    "care": "Glazecalcqa peligro simikunata qillqa wasipa registron qusqan hinam rikuchin. Manam hunt''asqa peligro tupuychu, chaymi qhatuqniykipa seguridad datos p''anqanta ñawinchay. Mayqin esmalte materialtapas manaraq hap''ispa, <mixing>Mana manchakuspa chaqruy, wayra puriynin</mixing>, <home>Ama ayllu-masiykita miyuwan wañuchiychu</home> ima qillqakunata ñawinchay.",
     "useHeading": "Esmalte ruranapi apaykachay",
     "use": "Material {name} sutiyuqta Glazecalc calculadorapi huk esmalte ruranaman yapay, esmaltepa fórmula unitarianta imayna cambiachisqanta rikunaykipaq.",
     "useLink": "Esmalte rurana calculadorata kichay",
@@ -49,7 +49,7 @@
     "crumb": "Cono tabla",
     "heading": "Cono tabla: Orton, SK conokuna",
     "lead": "Glazecalcpa Orton, SK pirométrico conokunapaq apaykachasqan temperaturakuna, °C-pi °F-pi ima, mayqin q''uñichiy velocidadpaq kasqanwan, sapa yupay maymanta hamusqanwan ima.",
-    "intro": "Conokunaqa ruphaypa llamk''ayninta (heatwork) tupunku, chayqa temperatura pachawan kuskam, manam temperaturallachu. Conopa temperaturanqa hornopa tukukuyninpi hayk''a utqaylla q''uñisqanmantam kan, chaymi uraypi sapa tabla velocidadninta nin. Hornopi testigo conota churay, ñawinchaytaq, tabla imata nisqanpas. <firing>Imaynatataq conokunata akllanki, churanki, ñawinchanki</firing> ruphachiy qillqapim kachkan.",
+    "intro": "Conokunaqa ruphaypa llamk''ayninta (heatwork) tupunku, chayqa temperatura pachawan kuskam, manam temperaturallachu. Conopa temperaturanqa hornopa tukukuyninpi hayk''a utqaylla q''uñisqanmantam kan, chaymi uraypi sapa tabla velocidadninta nin. Hornopi cono testigota churay, ñawinchaytaq, tabla imata nisqanpas. <firing>Imaynatataq conokunata akllanki, churanki, ñawinchanki</firing> ruphachiy qillqapim kachkan.",
     "ortonHeading": "Orton conokuna",
     "ortonCaption": "Orton conokuna, 022-manta 15-kama: hatun conokuna, sapa horapi {rate} °C q''uñichisqa (sapa horapi {rateF} °F)",
     "ortonSource": "Fuente: {title}, {reprinted} yapamanta qillqasqan hina.",

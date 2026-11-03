@@ -127,31 +127,41 @@ converted. **Native check**.
 
 ### 2.3 Defects and making
 
-| English   | zu                            | Notes            |
-| --------- | ----------------------------- | ---------------- |
-| crazing   | i-crazing (imifantu emincane) | **Native check** |
-| leaching  | ukuvuza kukamthofu (leaching) | **Native check** |
-| batch     | i-batch                       | Loan.            |
-| scale     | isikali                       |                  |
-| sieve     | isihlungo; hlunga (verb)      | Doke.            |
-| test tile | i-test tile                   | Loan.            |
+| English              | zu                                                   | Notes                                                                             |
+| -------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------- |
+| crazing              | i-crazing (imifantu emincane)                        | **Native check**                                                                  |
+| leaching, leach test | ukuvuza kwezinsimbi; ukuphuma kwezinsimbi (leaching) | Metals in general (lead, cadmium, barium…), never lead alone. **Native check**    |
+| batch                | i-batch                                              | Loan.                                                                             |
+| scale                | isikali                                              |                                                                                   |
+| sieve                | isihlungo; hlunga (verb)                             | Doke.                                                                             |
+| test tile            | i-test tile                                          | Loan.                                                                             |
+| opaque, opacifier    | ingabonisi (i-opaque); i-opacifier                   | Stops light passing (usually white), never "dark". **Native check**               |
+| clear glaze          | i-glaze ebonisa ngaphakathi (transparent)            | Transparent, never "white". **Native check**                                      |
+| soluble, dissolve    | -ncibilika emanzini / emzimbeni                      | Always name the water or body, so it is not melting in the kiln. **Native check** |
+| kiln wash            | i-kiln wash                                          | Loan: the coating on kiln shelves.                                                |
+| witness cone         | i-witness cone                                       | Loan.                                                                             |
+| inch, foot           | iyintshi (amayintshi), ifidi (amafidi)               | "engu-1/4 yeyintshi". **Native check**                                            |
+| early, too soon      | ngaphambi kwesikhathi                                | Never "in the morning". **Native check**                                          |
+| less, fewer          | okuncane; -nciphisa                                  | Never "a little more". **Native check**                                           |
 
 ### 2.4 Health and safety
 
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures in
 English and digits.
 
-| English                       | zu                                         | Notes                                                  |
-| ----------------------------- | ------------------------------------------ | ------------------------------------------------------ |
-| dust                          | uthuli                                     | Doke.                                                  |
-| respirable crystalline silica | uthuli lwe-silica oluhogelwayo             | **Native check**                                       |
-| silicosis                     | i-silicosis (isifo samaphaphu)             | **Native check**                                       |
-| respirator                    | i-respirator                               | Loan.                                                  |
-| poison, toxic                 | ushevu; -noshevu                           | Doke.                                                  |
-| food safe                     | iphephile ekudleni                         | **Native check**                                       |
-| lead-free                     | engenamthofu (lead-free)                   | **Native check**                                       |
-| at most / no more than        | okungeqile ku-; kuze kufike ku- (ubuningi) | "less than" is _ngaphansi kuka-_: never for "at most". |
-| at least                      | okungenani                                 |                                                        |
+| English                       | zu                                                                          | Notes                                                                    |
+| ----------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| dust                          | uthuli                                                                      | Doke.                                                                    |
+| respirable crystalline silica | i-silica eyikristalu ehogelwayo; uthuli lwe-silica eyikristalu oluhogelwayo | Always _eyikristalu_ (not "ye-crystal"); never drop it. **Native check** |
+| safety data sheet (SDS)       | ishidi ledatha yokuphepha (SDS)                                             | **Native check**                                                         |
+| combustible                   | okungasha (combustible: noma yini engasha)                                  | **Native check**                                                         |
+| silicosis                     | i-silicosis (isifo samaphaphu)                                              | **Native check**                                                         |
+| respirator                    | i-respirator                                                                | Loan.                                                                    |
+| poison, toxic                 | ushevu; -noshevu                                                            | Doke.                                                                    |
+| food safe                     | iphephile ekudleni                                                          | **Native check**                                                         |
+| lead-free                     | engenamthofu (lead-free)                                                    | **Native check**                                                         |
+| at most / no more than        | okungeqile ku-; kuze kufike ku- (ubuningi)                                  | "less than" is _ngaphansi kuka-_: never for "at most".                   |
+| at least                      | okungenani                                                                  |                                                                          |
 
 **Who to call.** As the region data prints for South Africa: 10177 (ambulance), 10111 (police), 112 from a mobile, and
 the Poisons Information Helpline 0861 555 777 (verified 2026-10-30). Nothing else.
@@ -160,7 +170,9 @@ the Poisons Information Helpline 0861 555 777 (verified 2026-10-30). Nothing els
 
 | English              | zu                                                |
 | -------------------- | ------------------------------------------------- |
-| recipe               | iresiphi (ye-glaze)                               |
+| recipe               | iresiphi (ye-glaze); plural amaresiphi            |
+| additive             | isithasiselo (izithasiselo)                       |
+| access token         | i-access token (ama-access token)                 |
 | Save, Save as a copy | Londoloza, Londoloza njengekhophi                 |
 | Delete, Remove       | Susa, Khipha                                      |
 | Cancel               | Khansela                                          |

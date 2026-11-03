@@ -6,11 +6,11 @@
   "no-oxides": "Ihe eji arụ ọrụ {material} enweghị oxide",
   "no-name": "Ihe eji arụ ọrụ ga-enwerịrị aha",
   "no-analysis": "Ihe eji arụ ọrụ {material} chọrọ formula ma ọ bụ nyocha",
-  "recipe-shape": "Usoro ga-abụrịrị array nke '{ material, amount }' ma ọ bụ map nke ọnụọgụ",
+  "recipe-shape": "Usoro glaze ga-abụrịrị array nke '{ material, amount }' ma ọ bụ map nke ọnụọgụ",
   "invalid-amount": "Ọnụọgụ adịghị mma maka ihe eji arụ ọrụ {material}",
-  "missing-material": "Ahịrị usoro enweghị ihe eji arụ ọrụ",
+  "missing-material": "Ahịrị usoro glaze enweghị ihe eji arụ ọrụ",
   "unknown-material": "Ihe eji arụ ọrụ {material} a na-amaghị",
-  "no-flux": "Usoro enweghị flux oxide, ya mere UMF enweghị nkọwa",
+  "no-flux": "Usoro glaze enweghị flux oxide, ya mere UMF enweghị nkọwa",
   "no-target": "Ebumnuche ahụ enweghị oxide a ga-elekwasị anya",
   "no-materials": "Ọ dịghị ihe eji arụ ọrụ a ga-agbakọ",
   "no-temperature": "A chọrọ okpomọkụ ịgba ọkụ iji tọọ boron",
@@ -19,5 +19,5 @@
   "bad-formula": "Enweghị ike ịgụ formula {formula}",
   "analysis-total": "Nyocha nke {material} ruru {total}% gụnyere LOI; a tụrụ anya ihe dịka 100%.",
   "stored-equivalent": "Ịdị arọ equivalent echekwara nke {material} adabaghị na formula ya na LOI; ejiri formula na LOI kama.",
-  "trace-flux": "Usoro nwere naanị ntakịrị flux oxide, ya mere UMF enweghị isi."
+  "trace-flux": "Usoro glaze nwere naanị ntakịrị flux oxide, ya mere UMF enweghị isi."
 }

@@ -5,7 +5,7 @@ lead: Indlela yokugcina uthuli lwe-glaze lungangeni emaphashini akho, nentuthu y
 
 ## Ingozi enkulu: uthuli {#the-main-hazard}
 
-Ingozi enkulu yesikhathi eside emsebenzini we-glaze{{en: glaze}} wuthuli, ikakhulukazi **uthuli lwe-silica oluhogelwayo** (respirable crystalline silica): izinhlayiya ze-quartz noma ze-cristobalite (izinhlobo ze-silica ezingamakristalu) ezincane ngokwanele ukuthi zingene ekujuleni kwamaphaphu. I-silica engamakristalu ingaba cishe u-10 kuya ku-60% wesisindo esomile se-glaze, futhi iningi lobumba (ngaphandle kwe-kaolin) nama-feldspar amaningi nawo aphethe i-quartz ecolekileyo. I-Health and Safety Executive (HSE) yase-UK ithi lolu thuli "lucoleke kakhulu futhi alubonakali ekukhanyeni okujwayelekile", ngakho igumbi elibukeka lihlanzekile aliyona ubufakazi bokuthi umoya uhlanzekile.
+Ingozi enkulu yesikhathi eside emsebenzini we-glaze{{en: glaze}} wuthuli, ikakhulukazi **uthuli lwe-silica engamakristalu oluhogelwayo** (respirable crystalline silica): izinhlayiya ze-quartz noma ze-cristobalite (izinhlobo ze-silica ezingamakristalu) ezincane ngokwanele ukuthi zingene ekujuleni kwamaphaphu. I-silica engamakristalu ingaba cishe u-10 kuya ku-60% wesisindo esomile se-glaze, futhi iningi lobumba (ngaphandle kwe-kaolin) nama-feldspar amaningi nawo aphethe i-quartz ecolekileyo. I-Health and Safety Executive (HSE) yase-UK ithi lolu thuli "lucoleke kakhulu futhi alubonakali ekukhanyeni okujwayelekile", ngakho igumbi elibukeka lihlanzekile aliyona ubufakazi bokuthi umoya uhlanzekile.
 
 Uma luhogelwa isikhathi eside, lungabangela **i-silicosis**, isifo samaphaphu i-HSE esichaza ngokuthi "sibi futhi asilapheki" futhi singa "bangela ukukhubazeka unomphela nokufa ngaphambi kwesikhathi". Lungabangela futhi **i-COPD** (chronic obstructive pulmonary disease: i-bronchitis yesikhathi eside ne-emphysema), ebhebhetheka ngokubhema. I-IARC, inhlangano yomdlavuza ye-World Health Organization, ibeka i-silica engamakristalu ehogelwayo ku-Group 1, "ibangela umdlavuza ebantwini".
 
@@ -15,7 +15,7 @@ I-silica ayiphenduki intuthu ku-kiln, futhi i-glaze emanzi ayiyona ingozi yokuho
 
 Imithetho yasemsebenzini ibeka **umngcele wokuchayeka**: i-silica eningi kakhulu isisebenzi esingayihogela, ilinganiselwe phezu kosuku lwamahora angu-8, ngama-milligram (mg) noma ama-microgram (µg, inkulungwane yengxenye ye-milligram) ngemitha ngayinye eyi-cubic yomoya.
 
-Table: Imingcele yasemsebenzini yothuli lwe-silica oluhogelwayo (isilinganiso samahora angu-8)
+Table: Imingcele yasemsebenzini yothuli lwe-silica engamakristalu oluhogelwayo (isilinganiso samahora angu-8)
 Label: Imingcele yokuchayeka ku-silica
 
 | Isifunda       |              Umngcele | Amanothi                                                                                          |
@@ -95,7 +95,7 @@ Imaski evuzayo ingenisa uthuli emaphethelweni ayo, noma ngabe iyiliphi izinga la
 
 ### Nini ukuyigqoka
 
-I-HSE ithi i-respirator "ngokuvamile ayidingeki" lapho ukukala nokuxuba kwenzeka endaweni evalekile enomoya, kodwa "ingadingeka ekulungiseni nasekuhlanzeni". Iningi lezitudiyo zasekhaya alinayo indawo evalekile, ngakho siphakamisa ukuthi uyigqoke (okungenani i-N95, i-FFP2 noma i-P2; i-P100, i-FFP3 noma i-P3 ingcono) noma nini lapho:
+I-HSE ithi i-respirator "ngokuvamile ayidingeki" lapho ukukala nokuxuba kwenzeka endaweni evalekile enomoya, kodwa "ingadingeka ekunakekeleni imishini nasekuhlanzeni". Iningi lezitudiyo zasekhaya alinayo indawo evalekile, ngakho siphakamisa ukuthi uyigqoke (okungenani i-N95, i-FFP2 noma i-P2; i-P100, i-FFP3 noma i-P3 ingcono) noma nini lapho:
 
 - uvula izikhwama noma uthela impuphu;
 - ukala izimpuphu futhi uzixuba emanzini;
@@ -142,7 +142,7 @@ Awukho umthombo onikeza izibalo zokugeleza komoya kwe-hood yabazilibazisayo. Nga
 
 ### Ukufutha
 
-I-HSE iyaxwayisa ukuthi ukufutha "kungaveza inkungu equkethe i-RCS" (uthuli lwe-silica oluhogelwayo), nokuthi "inkungu ye-glaze{{en: glaze}} yoma ngokushesha iphenduke uthuli". Yonke imithombo esiyitholile ithi fusa kuphela ngaphakathi kwebhokisi lokufutha elinomoya.
+I-HSE iyaxwayisa ukuthi ukufutha "kungaveza inkungu equkethe i-RCS" (uthuli lwe-silica engamakristalu oluhogelwayo), nokuthi "inkungu ye-glaze{{en: glaze}} yoma ngokushesha iphenduke uthuli". Yonke imithombo esiyitholile ithi fusa kuphela ngaphakathi kwebhokisi lokufutha elinomoya.
 
 - I-HSE ifuna indawo evalekile ekhipha umoya futhi, "lapho kungenzeka khona, ibhokisi elinamanzi ngemuva", elibamba i-glaze efuthwe yeqa emanzini.
 - Sebenzisa itafula elijikayo ebhokisini, gqoka amagilavu e-nitrile ne-respirator, futhi uhlanze ibhokisi nesihlungi salo ngaphambi kokuba i-glaze efuthwe yeqa yome.
@@ -175,7 +175,7 @@ Okokwakha kwe-glaze{{en: glaze}} kwengeza okunye. Amanye ama-oxide ensimbi akha 
 - Siphakamisa igaraji, ishede noma igumbi elibekelwe i-kiln kunendawo yokuhlala, futhi ongalivalela izingane nezilwane ezifuywayo, njengoba u-Skutt eluleka.
 - **Izikhala.** Imithombo iyehluka: u-Skutt ucacisa okungenani amayintshi angu-18 (46 cm) kunoma yiluphi udonga noma okokwakha **okungasha** (combustible: noma yini engasha), kanti i-CIRMA, umshuwalense wase-Connecticut, iphakamisa amafidi angu-3 (0.9 m) kunoma yini engasha. Landela incwadi yemiyalelo ye-kiln yakho; uma ungenayo, gcina amayintshi angu-18 ezindongeni namafidi angu-3 kunoma yini engasha.
 - **Phansi.** Sebenzisa phansi okungashi njengokhonkolo noma ithayela lobumba, hhayi neze ukhuni, ukhaphethi noma i-vinyl. Gcina amapulangwe, iphepha nama-solvent kude ne-kiln.
-- **Ugesi.** I-CIRMA incoma isekhethi eyodwa ebekelwe i-kiln kuphela, kungabikho izintambo zokwelula noma izivikeli zokugxuma kukagesi (surge protectors), ukukhipha ugesi phakathi kokushisa, nesicishamlilo esingaphakathi kwamafidi angu-25 (7.6 m).
+- **Ugesi.** I-CIRMA incoma isekhethi eyodwa ebekelwe i-kiln kuphela, kungabikho izintambo zokwelula noma izivikeli zokugxuma kukagesi (surge protectors), ukukhipha ipulaki phakathi kokushisa okukodwa nokulandelayo, nesicishamlilo esingaphakathi kwamafidi angu-25 (7.6 m).
 - **Ukushisa kwegumbi.** U-Skutt uthi gcina igumbi lingaphansi kuka-{{38 °C; 100 °F}}, kungenjalo isilawuli singacisha i-kiln. Njengoba i-vent ingasusi ukushisa, igumbi elincane lingadinga nefeni. Gwema ukuthi amakhanda okufafaza amanzi (sprinklers) nezinzwa zokushisa zibe ngqo ngenhla kwe-kiln.
 - **I-alamu ye-carbon monoxide.** Asitholanga mthetho odinga eyodwa ku-kiln kagesi, kodwa izinto eziphilayo ezivuthayo zenza i-CO, ngakho i-alamu egumbini le-kiln nasemagumbini aseduze nalo iyisinyathelo esinengqondo nesishibhile (bheka [Ungawadliseli ushevu umndeni wakho](/guides/home-safety)).
 
@@ -207,7 +207,7 @@ Label: Okokwakha okudinga ukunakekelwa kakhulu
 | I-fluorspar, i-cryolite, i-lepidolite                | Zikhipha amagesi e-fluorine ekushiseni; i-fluorspar icunula nesikhumba.                                                                                                                                                                                             | Khipha umoya we-kiln ngaphandle; amagilavu.                                                                                                                 |
 | I-talc                                               | IARC 2A kusukela ngoJulayi 2024; i-talc engcoliswe yi-asbestos ibalwa njenge-asbestos, Group 1.                                                                                                                                                                     | I-talc eyizicwecwe (hhayi enemicu), engenayo i-asbestos; hlola i-SDS yayo.                                                                                  |
 
-I-borax, i-boric acid, i-soda ash ne-potash zincibilika emanzini, ngakho sizithatha njengezingamuncwa kalula ngesikhumba esilimele noma zigwinywe ezandleni ezingagezwanga.
+I-borax, i-boric acid, i-soda ash ne-potash zincibilika emanzini, ngakho sizithatha njengezingamuncwa kalula kunazo zonke ngesikhumba esilimele noma zigwinywe ezandleni ezingagezwanga.
 
 > [!NOTE]
 > Uma iresiphi idinga i-barium carbonate engaphekiwe, i-manganese eningi, noma noma yikuphi okokwakha komthofu (Pb) noma kwe-cadmium, funa enye inguqulo esebenzisa i-frit noma i-stain esikhundleni. I-Glazecalc ingaqhathanisa i-chemistry yeyokuqala neyokushintsha; bese uhlola i-glaze entsha.

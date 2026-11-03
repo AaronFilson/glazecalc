@@ -1,16 +1,16 @@
 {
   "home": {
-    "title": "Taller qillqaykiwan",
+    "title": "Taller qillqayki",
     "signedInAs": "Kay correowan yaykusqa: {email}.",
-    "trying": "Glazecalc-ta kay sutiwan pruebachkanki: {name}. Esmalte ruranawan qallariy.",
+    "trying": "Glazecalc-ta kay sutiwan pruebachkhanki: {name}. Esmalte ruranawan qallariy.",
     "welcomeBack": "Saqisqaykimanta qatipay.",
     "welcome": {
       "heading": "Glazecalc-man allin hamusqayki",
       "text": "Qillqaykiqa listoñam. Allin ñawpaq ruray: ña chaqrusqayki esmalteta qillqay, materialninkunata hayk'anta ima, fórmula unitarianta qhawariy.",
       "firstRecipe": "Ñawpaq esmalte ruranaykita qallariy",
       "confirmHeading": "Correoykita takyachiy",
-      "confirm": "Correoykita takyachiy: kayman huk enlaceta kacharqayku: {email}. Iskay pasupi yaykuyqa chayta munan. <account>Cuenta p'anqayki</account> watmanta kachanman.",
-      "confirmText": "Kayman huk enlaceta kacharqayku: {email}. Kichay, chay correoqa qampa kasqanta takyachinaykipaq: iskay pasupi yaykuyqa chayta munan. <account>Cuenta p'anqayki</account> watmanta kachanman."
+      "confirm": "Correoykita takyachiy: kayman huk enlaceta kacharqayku: {email}. Iskay patapi yaykuyqa chayta munan. <account>Cuenta p'anqayki</account> yapamanta kachanman.",
+      "confirmText": "Kayman huk enlaceta kacharqayku: {email}. Kichay, chay correoqa qampa kasqanta takyachinaykipaq: iskay patapi yaykuyqa chayta munan. <account>Cuenta p'anqayki</account> yapamanta kachanman."
     },
     "sections": {
       "recipe": {
@@ -18,8 +18,8 @@
         "text": "Materialkunamanta hayk'ankunamanta ima esmalteta ruray, fórmula unitarianta qhawariy, waqaychay."
       },
       "import": {
-        "title": "Esmalte ruranakunata pegay",
-        "text": "Esmalte ruranakunata web p'anqamanta, hoja de cálculomanta utaq willakuykunamanta pegay, ima ñawinchasqata qhawariy, waqaychay."
+        "title": "Esmalte ruranakunata ch'aqtay",
+        "text": "Esmalte ruranakunata web p'anqamanta, hoja de cálculomanta utaq apuntekunamanta ch'aqtay, ima ñawinchasqata qhawariy, waqaychay."
       },
       "blends": {
         "title": "Probetakunapaq chaqrusqakuna",
@@ -38,36 +38,36 @@
         "text": "Sapa ruphachiypaq pachakunata, temperaturakunata, conokunatapas qillqay."
       },
       "notes": {
-        "title": "Willakuykuna",
+        "title": "Apuntekuna",
         "text": "Pruebakunapa resultadonkunata, yuyarinapaq hukkunatapas waqaychay."
       },
       "advice": {
-        "title": "Esmalte yuyaychakuykuna",
-        "text": "Chaqruymanta, esmaltaymanta, ruphachiymanta yuyaychakuykuna, kikiykipa yuyaychakuyniykikunapas."
+        "title": "Esmalte yuyaychaykuna",
+        "text": "Chaqruymanta, esmaltaymanta, ruphachiymanta yuyaychaykuna, kikiykipa yuyaychayniykikunapas."
       },
       "guides": {
-        "title": "Yachachiqkuna",
+        "title": "Yachachiykuna",
         "text": "Esmalte ima kasqanmanta ruphachiykama, ñanpi llapanta mana manchakuypi waqaychaspa."
       },
       "trash": {
-        "title": "Basura",
+        "title": "Q'upa",
         "text": "Qhipa 30 p'unchawkunapi qichusqaykita kutichiy."
       },
       "account": {
         "title": "Cuenta, allichanakunapas",
-        "text": "Allichanakuna, pakasqa simiyki, iskay pasupi yaykuy, kaypi waqaychasqaykikunata llapanta uraqachiy ima."
+        "text": "Allichanakuna, pakasqa simiyki, iskay patapi yaykuy, kaypi waqaychasqaykikunata llapanta uraykachiy ima."
       }
     },
-    "newHere": "¿Fórmula unitariakunapi musuqchu kanki? <advice>Yuyaychakuy p'anqa</advice> qallariykunata sut'ichan, <about>Glazecalc-manta p'anqataq</about> Glazecalc imayna llamk'asqanta willan."
+    "newHere": "¿Fórmula unitariakunapi musuqchu kanki? <advice>Yuyaychay p'anqa</advice> qallariykunata sut'ichan, <about>Glazecalc-manta p'anqataq</about> Glazecalc imayna llamk'asqanta willan."
   },
   "firing": {
     "title": "Ruphachiy qillqakuna",
-    "lead": "Sapa ruphachiyta qillqay: pachakuna, temperaturakuna, conokuna, hornomanta willakuykuna ima.",
+    "lead": "Sapa ruphachiyta qillqay: pachakuna, temperaturakuna, conokuna, hornomanta apuntekuna ima.",
     "newHeading": "Musuq ruphachiy",
     "titleLabel": "Título",
     "kiln": "Horno",
     "date": "P'unchaw",
-    "notes": "Willakuykuna",
+    "notes": "Apuntekuna",
     "fieldSelect": "Qillqanapaq campokuna",
     "addField": "Campota yapay",
     "included": "Kay qillqapi campokuna",
@@ -85,7 +85,7 @@
     "noneSaved": "Manaraq kanchu. Waqaychasqa ruphachiykuna kaypi rikhurinqa.",
     "storedIn": "Horno {kiln} nisqapi ruphachisqa, p'unchaw {date}.",
     "storedOn": "Ruphachisqa, p'unchaw {date}.",
-    "storedNotes": "Willakuykuna: {notes}",
+    "storedNotes": "Apuntekuna: {notes}",
     "titleMissing": "Ruphachiyman huk títulota quy.",
     "fieldsMissing": "Qillqanapaq pisimanta pisi huk campota yapay, {example} hina.",
     "chooseField": "Yapanapaq huk campota akllay, chaymanta Campota yapay.",
@@ -102,34 +102,34 @@
     "linkFailed": "Tinkiyqa mana waqaychayta atikurqanchu."
   },
   "notes": {
-    "title": "Willakuykuna",
+    "title": "Apuntekuna",
     "lead": "Esmalteykikunamanta yuyarinapaq hukkuna.",
-    "newHeading": "Musuq willakuy",
+    "newHeading": "Musuq apunte",
     "titleLabel": "Título",
-    "content": "Willakuy",
+    "content": "Apunte",
     "save": "Waqaychay",
-    "mineHeading": "Waqaychasqa willakuyniykuna",
-    "noneSaved": "Manaraq kanchu. Waqaychasqa willakuykuna kaypi rikhurinqa.",
-    "titleMissing": "Willakuyman huk títulota quy.",
-    "contentMissing": "Willakuyta qillqay.",
-    "untitled": "Mana títuloyuq willakuy",
-    "fetchFailed": "Willakuykunapa willakuyninta apamuspa pantay karqan.",
-    "saved": "Allinmi. Willakuyqa servidorman yapasqañam.",
+    "mineHeading": "Waqaychasqa apunteykuna",
+    "noneSaved": "Manaraq kanchu. Waqaychasqa apuntekuna kaypi rikhurinqa.",
+    "titleMissing": "Apunteman huk títulota quy.",
+    "contentMissing": "Apunteta qillqay.",
+    "untitled": "Mana títuloyuq apunte",
+    "fetchFailed": "Apuntekunapa willakuyninta apamuspa pantay karqan.",
+    "saved": "Allinmi. Apunteqa servidorman yapasqañam.",
     "saveFailed": "Pantay: servidorman mañakuyqa mana atikurqanchu."
   },
   "trash": {
-    "title": "Basura",
-    "lead": "Qichusqayki (esmalte ruranakuna, materialkuna, aditivokuna, willakuykuna, ruphachiy qillqakuna, yuyaychakuykunapas) kaypi 30 p'unchaw suyan. Kutichiy, utaq wiñaypaq pichay.",
-    "listHeading": "Basurapi",
-    "none": "Basuraqa ch'usaqmi.",
+    "title": "Q'upa",
+    "lead": "Qichusqayki (esmalte ruranakuna, materialkuna, aditivokuna, willakuykuna, ruphachiy qillqakuna, yuyaychaykunapas) kaypi 30 p'unchaw suyan. Kutichiy, utaq wiñaypaq pichay.",
+    "listHeading": "Q'upapi",
+    "none": "Q'upaqa ch'usaqmi.",
     "untitled": "Mana títuloyuq",
     "kinds": {
       "recipes": "Esmalte rurana",
       "materials": "Material",
       "additives": "Aditivo",
-      "notes": "Willakuy",
+      "notes": "Apunte",
       "firing": "Ruphachiy qillqa",
-      "advice": "Yuyaychakuy",
+      "advice": "Yuyaychay",
       "other": "Qillqa"
     },
     "removedOn": "Qichusqa {date}",
@@ -139,14 +139,14 @@
     "putBackName": "Kutichiy: {name}",
     "restored": "\"{name}\" kasqan chiqasmanña kutichisqa.",
     "restoredAlready": "\"{name}\" ñam kutichisqaña karqan.",
-    "restoreFailed": "\"{name}\" mana kutichiyta atikurqanchu. Watmanta pruebay.",
+    "restoreFailed": "\"{name}\" mana kutichiyta atikurqanchu. Yapamanta pruebay.",
     "deleted": "\"{name}\" wiñaypaq pichasqañam.",
-    "empty": "Basurata ch'usaqyachiy",
-    "emptyQuestion": "¿Basurapi {count, plural, one {# qillqata} other {llapan # qillqakunata}} wiñaypaq pichanaykichu? Kayqa manañam kutichiyta atikunchu.",
+    "empty": "Q'upata ch'usaqyachiy",
+    "emptyQuestion": "¿Q'upapi {count, plural, one {# qillqata} other {llapan # qillqakunata}} wiñaypaq pichanaykichu? Kayqa manañam kutichiyta atikunchu.",
     "emptyYes": "Arí, ch'usaqyachiy",
     "emptying": "Ch'usaqyachichkan...",
-    "emptied": "Basuraqa ch'usaqmi.",
-    "emptyFailed": "Basuraqa mana ch'usaqyachiyta atikurqanchu. Watmanta pruebay.",
-    "fetchFailed": "Basuraqa mana cargayta atikurqanchu. Watmanta pruebay."
+    "emptied": "Q'upaqa ch'usaqmi.",
+    "emptyFailed": "Q'upaqa mana ch'usaqyachiyta atikurqanchu. Yapamanta pruebay.",
+    "fetchFailed": "Q'upaqa mana apamuyta atikurqanchu. Yapamanta pruebay."
   }
 }

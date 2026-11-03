@@ -38,7 +38,7 @@ Werk wat nog nie gebak is nie, is **ongebakte werk** (bronne verskil oor of die 
 
 ### Die twee bakke
 
-Die eerste, laer bak is die **biskwietbak** (VK: **biscuit**), gewoonlik kegel 08–04 (meestal 06–04), ongeveer {{1728–1945 °F; 942–1063 °C}}. Dit laat werk sterk maar poreus. Digitalfire, 'n verwysingswebwerf vir glasuur, stel voor gewoonlik meer as 15% poreusheid, sodat die biskwiet water uit die glasuur trek terwyl dit aangebring word. 'n Sagte biskwiet (kegel 08–06) is poreuser; 'n harde biskwiet (dikwels kegel 04) is sterker maar neem glasuur minder maklik op.
+Die eerste, laer bak is die **biskwietbak** (VK: **biscuit**), gewoonlik kegel 08–04 (meestal 06–04), ongeveer {{1728–1945 °F; 942–1063 °C}}. Dit laat werk sterk maar poreus. Digitalfire, 'n verwysingswebwerf vir glasuur, stel oor die algemeen meer as 15% poreusheid voor, sodat die biskwiet water uit die glasuur trek terwyl dit aangebring word. 'n Sagte biskwiet (kegel 08–06) is poreuser; 'n harde biskwiet (dikwels kegel 04) is sterker maar neem glasuur minder maklik op.
 
 Table: Hoe die biskwiet glasering verander (Digitalfire)
 Label: Hoe die biskwiet glasering verander
@@ -71,9 +71,9 @@ Label: Bakreekse
 | Hoëtemperatuur    | 9–10   | 2300–2345 | 1260–1285 | Steengoed en porselein    |
 
 > [!NOTE]
-> Noem en programmeer jou bakke volgens kegel, en beskou die temperature as benaderd. 'n **Kontrolekegel** op 'n rak tussen die potte, of 'n **kegelstel** van drie (gids-, bak- en wagkegels), wys die hittewerk wat jou potte werklik ontvang het.
+> Noem en programmeer jou bakke volgens kegel, en beskou die temperature as benaderd. 'n **Getuiekegel** op 'n rak tussen die potte, of 'n **kegelstel** van drie (gids-, bak- en wagkegels), wys die hittewerk wat jou potte werklik ontvang het.
 
-Gepubliseerde temperature verskil. Glazy gee hoëtemperatuur, kegel 9–11, as ongeveer {{2336–2390 °F; 1280–1310 °C}}, wat met Orton se vinnige kolom ooreenstem, en Digitalfire berig dat die meeste oonde kegel 6 by ongeveer {{2200 °F; 1204 °C}} haal. Ons raad: gebruik Orton se middeltempo-syfers, soos hierdie gids doen, programmeer volgens kegel, en laat 'n kontrolekegel die saak besleg.
+Gepubliseerde temperature verskil. Glazy gee hoëtemperatuur, kegel 9–11, as ongeveer {{2336–2390 °F; 1280–1310 °C}}, wat met Orton se vinnige kolom ooreenstem, en Digitalfire berig dat die meeste oonde kegel 6 by ongeveer {{2200 °F; 1204 °C}} haal. Ons raad: gebruik Orton se middeltempo-syfers, soos hierdie gids doen, programmeer volgens kegel, en laat 'n getuiekegel die saak besleg.
 
 Buite Noord-Amerika gee verskaffers dikwels °C eerder as 'n kegel. Hermann Seger het die moderne kegel ontwikkel, wat eerste in 1886 in Berlyn gebruik is, en die VK het sy eie Staffordshire-kegels gehad; hulle nommers moet nie as dieselfde as Orton s'n aanvaar word nie, en ons het geen tabel gevind om te omskakel nie. ['n Eenvoudige oond bak](/guides/firing) behandel kegels in meer besonderhede.
 
@@ -87,11 +87,11 @@ Label: Van resep tot Seger-formule
 | Stap               | Wat gebeur                                                                                                               | In die voorbeeld                                                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | 1. Mengselresep    | Grondstowwe volgens gewig, geskaal tot 100                                                                               | Veldspaat 40%, onder andere                                                                                                    |
-| 2. Oksiedontleding | Soos 'n voedingsetiket: elke materiaal se oksiede word as gewigspersentasie bymekaargetel, en die gasse word weggelaat   | Die veldspaat is 64,8% silika, so sy 40% bring 25,9% SiO₂. Die gebakte glasuur is 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
+| 2. Oksiedontleding | Soos 'n voedingsetiket: elke grondstof se oksiede word as gewigspersentasie bymekaargetel, en die gasse word weggelaat   | Die veldspaat is 64,8% silika, so sy 40% bring 25,9% SiO₂. Die gebakte glasuur is 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
 | 3. Mol             | Gewigte word **mol**, tellings van molekules, want “Gram kan misleidend wees omdat sommige oksiede swaarder as ander is” | 60,1 g SiO₂ is een mol, so 67,4 g is omtrent 1,12 mol                                                                          |
 | 4. Eenheid (unity) | Alles word gedeel deur die totaal van die vloeimiddels, sodat die vloeimiddels tot 1 optel                               | Die vloeimiddels totaal 0,303; deling gee K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                            |
 
-Glazecalc se [resepbladsy](/recipe) doen al vier stappe terwyl jy tik, en wys die resultaat in drie kolomme: vloeimiddels (R₂O en RO) wat tot 1 optel; stabiliseerders (R₂O₃: alumina, met boor dikwels hier geplaas); en glasvormers (RO₂: silika). “Eenheid is net 'n skaalinstrument,” sê Glazy: twee resepte van verskillende materiale maar met dieselfde Seger-formule “gedra hulle byna identies nadat hulle gebak is”. Die 1 is dus 'n gedeelde maatstaf, nie 'n hoeveelheid wat jy afweeg nie. Digitalfire voeg by dat die metode “nie so goed by laer temperature werk nie”, waar boor nie 'n gewone vloeimiddel is nie, en dat Seger-formules “vergelykend is en die beste in konteks beskou word”. **Vergelyk** lyn twee resepte se formules oksied vir oksied op.
+Glazecalc se [resepbladsy](/recipe) doen al vier stappe terwyl jy tik, en wys die resultaat in drie kolomme: vloeimiddels (R₂O en RO) wat tot 1 optel; stabiliseerders (R₂O₃: alumina, met boor dikwels hier geplaas); en glasvormers (RO₂: silika). “Eenheid is net 'n skaalinstrument,” sê Glazy: twee resepte van verskillende grondstowwe maar met dieselfde Seger-formule “gedra hulle byna identies nadat hulle gebak is”. Die 1 is dus 'n gedeelde maatstaf, nie 'n hoeveelheid wat jy afweeg nie. Digitalfire voeg by dat die metode “nie so goed by laer temperature werk nie”, waar boor nie 'n gewone vloeimiddel is nie, en dat Seger-formules “vergelykend is en die beste in konteks beskou word”. **Vergelyk** lyn twee resepte se formules oksied vir oksied op.
 
 ### Die silika-tot-alumina-verhouding
 
@@ -110,12 +110,12 @@ Label: Silika-tot-alumina-verhouding
 
 ### Gloeiverlies
 
-**Gloeiverlies** (**LOI**) is die gewig wat 'n materiaal in die oond verloor wanneer water, koolstofdioksied, organiese stof of swael as gas verdwyn. 'n Gebakte glasuur het geen, so die Seger-formule laat dit uit.
+**Gloeiverlies** (**LOI**) is die gewig wat 'n grondstof in die oond verloor wanneer water, koolstofdioksied, organiese stof of swael as gas verdwyn. 'n Gebakte glasuur het geen, so die Seger-formule laat dit uit.
 
 Table: Tipiese gloeiverlies (Digitalfire)
 Label: Gloeiverlies
 
-| Materiaal                              | Tipiese LOI                                                                       |
+| Grondstof                              | Tipiese LOI                                                                       |
 | -------------------------------------- | --------------------------------------------------------------------------------- |
 | Kalksteen (kalsiumkarbonaat), dolomiet | Meer as 40%, meestal koolstofdioksied: 100 g kalsiumkarbonaat gee omtrent 45 g af |
 | Litiumkarbonaat                        | Omtrent 60%                                                                       |
@@ -123,24 +123,24 @@ Label: Gloeiverlies
 | Kaolien                                | Omtrent 12%, hoofsaaklik water wat in sy kristalle gebind is                      |
 | Veldspate                              | Minder as 1%                                                                      |
 
-Gas wat verdwyn nadat die glasuur begin smelt het, moet daardeur borrel, wat, in Digitalfire se woorde, “borrels, blase, speldeprikgaatjies, kruip” veroorsaak. Talk bly gas afgee tot ongeveer {{1650 °F; 899 °C}}. Frit, **gekalsineerde** materiale (vooraf verhit om hul gasse uit te dryf) en veranderinge aan die bak help almal.
+Gas wat verdwyn nadat die glasuur begin smelt het, moet daardeur borrel, wat, in Digitalfire se woorde, “borrels, blase, speldeprikgaatjies, kruip” veroorsaak. Talk bly gas afgee tot ongeveer {{1650 °F; 899 °C}}. Frit, **gekalsineerde** grondstowwe (vooraf verhit om hul gasse uit te dryf) en veranderinge aan die bak help almal.
 
-Ouer boeke doen hierdie rekenwerk met die hand, met **molekulêre gewig** (die gewig van een mol van 'n materiaal of oksied) en **ekwivalente gewig** (die gewig van 'n materiaal wat een mol van 'n oksied lewer). Volgens ons berekening lewer omtrent 100 g kalksteen een mol, 56 g, kalsiumoksied. 'n Sakrekenaar hanteer albei.
+Ouer boeke doen hierdie rekenwerk met die hand, met **molekulêre gewig** (die gewig van een mol van 'n grondstof of oksied) en **ekwivalente gewig** (die gewig van 'n grondstof wat een mol van 'n oksied lewer). Volgens ons berekening lewer omtrent 100 g kalksteen een mol, 56 g, kalsiumoksied. 'n Sakrekenaar hanteer albei.
 
 ## Frit en grondstowwe {#materials}
 
 ### Frit
 
-'n **Frit** is glas wat in 'n fabriek gemaak word: minerale wat gesmelt, in water geblus en gemaal word. Frit maak oplosbare materiale soos boraks onoplosbaar, sluit giftige oksiede soos lood en barium in 'n stabiele glas toe, gee 'n meer konsekwente materiaal as rou minerale, en dryf gasse uit, so gefritte glasure is “baie meer defekvry” (Digitalfire). Frit smelt ook vroeg: 'n sodafrit is aktief by kegel 06, terwyl veldspaat “eers by kegel 6 begin sag word”. Dit kos meer, dit het klei nodig om in suspensie te bly (Digitalfire se voorbeeld is 85% frit met 15% klei), en dit is “teoreties onoplosbaar, maar in die praktyk is hulle nie”.
+'n **Frit** is glas wat in 'n fabriek gemaak word: minerale wat gesmelt, in water geblus en gemaal word. Frit maak oplosbare grondstowwe soos boraks onoplosbaar, sluit giftige oksiede soos lood en barium in 'n stabiele glas toe, gee 'n meer konsekwente grondstof as rou minerale, en dryf gasse uit, so gefritte glasure is “baie meer defekvry” (Digitalfire). Frit smelt ook vroeg: 'n sodafrit is aktief by kegel 06, terwyl veldspaat “eers by kegel 6 begin sag word”. Dit kos meer, dit het klei nodig om in suspensie te bly (Digitalfire se voorbeeld is 85% frit met 15% klei), en dit is “teoreties onoplosbaar, maar in die praktyk is hulle nie”.
 
 Noord-Amerikaanse frit gaan volgens vervaardiger en nommer: Ferro Frit 3134 (Ferro is nou Vibrantz) is in omtrent 22% van Glazy se openbare resepte. Britse resepte noem meer dikwels generiese frit, soos standaard boraksfrit.
 
 ### Die algemene grondstowwe
 
-Table: Algemene glasuurmateriale en wat hulle lewer
-Label: Algemene glasuurmateriale
+Table: Algemene glasuurgrondstowwe en wat hulle lewer
+Label: Algemene glasuurgrondstowwe
 
-| Materiaal (ander name)                              | Lewer                  | Notas                                                                                                                                                                    |
+| Grondstof (ander name)                              | Lewer                  | Notas                                                                                                                                                                    |
 | --------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Silika (vuurklip, kwarts)                           | SiO₂                   | Gebruik 325 mesh, 'n baie fyn maling, in glasure                                                                                                                         |
 | Kaolien (VK: china clay; Australië: Eckalite)       | Al₂O₃, SiO₂            | Die belangrikste aluminabron; hou ook glasuur{{en: glaze}} in suspensie                                                                                                  |
@@ -157,23 +157,23 @@ Label: Algemene glasuurmateriale
 | Bentoniet                                           | Suspensie              | 'n Baie fyn klei, gewoonlik 1–3%, om bessinking te keer                                                                                                                  |
 
 > [!WARNING]
-> Glasuurmateriale is fyn poeiers. Silikastof beskadig die longe, aanvanklik sonder simptome, en sommige materiale, soos bariumkarbonaat en litiumkarbonaat, is giftig as dit ingesluk word. Hanteer poeiers saggies, maak nat skoon, en dra 'n respirator wat reg pas wanneer jy droog werk. [Veilig meng en ventilasie](/guides/safe-mixing) en [Moenie jou gesin vergiftig nie](/guides/home-safety) verduidelik hoe.
+> Glasuurgrondstowwe is fyn poeiers. Silikastof beskadig die longe, aanvanklik sonder simptome, en sommige grondstowwe, soos bariumkarbonaat en litiumkarbonaat, is giftig as dit ingesluk word. Hanteer poeiers saggies, maak nat skoon, en dra 'n respirator wat reg pas wanneer jy droog werk. [Veilig meng en ventilasie](/guides/safe-mixing) en [Moenie jou gesin vergiftig nie](/guides/home-safety) verduidelik hoe.
 
 ### Streeksname
 
 - **Kaolien** is **china clay** in die VK; Australiese verskaffers verkoop dit as Eckalite.
 - **Vuurklip** (flint) is 'n ouer Britse naam vir silika. Britse verskaffers verkoop steeds **gekalsineerde vuurklip** as 'n eie produk, so “flint” in 'n Britse resep beteken waarskynlik gekalsineerde vuurklip, en in 'n Amerikaanse een waarskynlik gemaalde kwarts. Albei word as bronne van silika verkoop; kyk na die ontleding.
-- **China stone** en **Cornish stone** (Cornwall stone) is dieselfde materiaal, verwant aan veldspaat.
+- **China stone** en **Cornish stone** (Cornwall stone) is dieselfde grondstof, verwant aan veldspaat.
 - **Kalksteen** (whiting) is kalsiumkarbonaat; Duitse verskaffers noem dit Kreide (kryt).
 
 > [!NOTE]
-> Beoordeel 'n materiaal volgens die oksiede wat dit lewer, nie volgens sy naam nie. Glazecalc werk so: jy kan jou verskaffer se ontleding op die [Materiaalbladsy](/material) invoer, en **Probeer moderne materiale en vergelyk**, **Stel hoeveelhede voor en vergelyk** en **Pas by wat ek het** pas almal gebakte oksiede, nie name nie.
+> Beoordeel 'n grondstof volgens die oksiede wat dit lewer, nie volgens sy naam nie. Glazecalc werk so: jy kan jou verskaffer se ontleding op die [Grondstowwe-bladsy](/material) invoer, en **Probeer moderne grondstowwe en vergelyk**, **Stel hoeveelhede voor en vergelyk** en **Pas aan by wat ek het** pas almal gebakte oksiede, nie name nie.
 
 Materiale verander ook. Custer-veldspaat het in 2023 geëindig. Die oorspronklike Gerstley Borate-myn het omtrent 1999–2000 gesluit; Laguna verkoop nog 'n produk onder daardie naam, en Gillespie Borate is die vernaamste plaasvervanger. Bronne verskil oor of Gillespie Gerstley Borate pond vir pond vervang (sy vervaardiger en Potclays sê ja, Digitalfire en ander nee), so vergelyk die twee in Glazecalc, en toets dan 'n klein bondel.
 
 ## Kleurstowwe en opasiteitsmiddels {#color}
 
-'n **Kleurstof** is 'n metaaloksied of -karbonaat wat 'n glasuur{{en: glaze}} kleur; 'n **stain** is 'n kleurstof wat in 'n fabriek gemaak is, stabieler en meer konsekwent as rou oksiede. Kleurstowwe is gewoonlik minder as 5% van die basis, baie minder as 1%, en 'n karbonaat is omtrent half so sterk as die ooreenstemmende oksied.
+'n **Kleurstof** is 'n metaaloksied of -karbonaat wat 'n glasuur{{en: glaze}} kleur; 'n **stain** is 'n kleurstof wat in 'n fabriek gemaak is, stabieler en meer konsekwent as rou oksiede. Kleurstowwe is gewoonlik minder as 5% van die basis, baie van hulle minder as 1%, en 'n karbonaat is omtrent half so sterk as die ooreenstemmende oksied.
 
 Table: Algemene kleurstowwe, as 'n persentasie van die basis
 Label: Algemene kleurstowwe
@@ -200,7 +200,7 @@ Table: Opasiteitsmiddels
 
 | Opasiteitsmiddel                               | Gewone hoeveelheid          | Notas                                                                                                       |
 | ---------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Sirkoon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% vir volle opasiteit   | Die goedkoper keuse; die handelsname is dieselfde materiaal wat tot verskillende groottes gemaal is         |
+| Sirkoon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% vir volle opasiteit   | Die goedkoper keuse; die handelsname is dieselfde grondstof wat tot verskillende groottes gemaal is         |
 | Tinoksied                                      | Omtrent 5–7% (ons skatting) | Duur; maak swak ondeurskynend in reduksie                                                                   |
 | Titaandioksied                                 | Bo 2%                       | Sydesagte, deurskynende opasiteit; by 10% of meer, 'n matte, getekstureerde oppervlak met sigbare kristalle |
 
@@ -212,7 +212,7 @@ Klei en glasuur{{en: glaze}} sit albei uit soos hulle warm word en krimp soos hu
 
 **Haarlynbarsies** is 'n netwerk van fyn krake. Die glasuur se uitsetting is hoër as die kleiliggaam s'n, so met afkoeling krimp dit meer, word gerek en bars, gewoonlik weens te veel natrium en kalium (Na₂O, K₂O). Dit kan ook later verskyn, in gebruik, ná herhaalde skielike afkoeling soos kontak met koue vloeistowwe. Wanneer dit gewens word, soos by raku, word dit **krakelering** genoem. Digitalfire sê “95% van die tyd is die oplossing om die termiese uitsetting van die glasuur aan te pas”; stadige afkoeling stel haarlynbarsies net uit. Sy toets: verhit die werk tot omtrent {{300 °F; 149 °C}}, dompel dit in yswater, en vryf viltpen daaroor om krake te wys.
 
-Bronne verskil oor die eerste regstelling. Glazy stel voor om silika of alumina by te voeg; Digitalfire antwoord dat ekstra silika “net die KNaO verdun” (die natrium en kalium); Linda Bloomfield voeg boor by of sny veldspaat, een materiaal op 'n slag. Ons raad: ruil in die [resepberekenaar](/recipe) van die natrium en kalium vir vloeimiddels met laer uitsetting (boor, litium, magnesium, kalsium), kyk die verandering na met **Vergelyk**, en bevestig dit met die yswatertoets.
+Bronne verskil oor die eerste regstelling. Glazy stel voor om silika of alumina by te voeg; Digitalfire antwoord dat ekstra silika “net die KNaO verdun” (die natrium en kalium); Linda Bloomfield voeg boor by of sny veldspaat, een grondstof op 'n slag. Ons raad: ruil in die [resepberekenaar](/recipe) 'n mate van die natrium en kalium vir vloeimiddels met laer uitsetting (boor, litium, magnesium, kalsium), kyk die verandering na met **Vergelyk**, en bevestig dit met die yswatertoets.
 
 **Afskilfering** is die omgekeerde: die glasuur se uitsetting is baie laer as die kleiliggaam s'n, so dit is te veel saamgedruk en skilfer van rande en kante af. Digitalfire waarsku dat die skilfers skeermeskerp kan wees en ingesluk kan word, en Glazy noem afskilfering “selfs gevaarliker as haarlynbarsies op gebruiksware”. Die oplossing is 'n glasuur met hoër uitsetting of 'n kleiliggaam met laer uitsetting.
 
@@ -230,13 +230,13 @@ Verander een ding op 'n slag, en hou jou toetsteëls.
 Table: Algemene glasuurdefekte, hul gewone oorsake en eerste regstellings
 Label: Algemene glasuurdefekte
 
-| Defek                 | Lyk soos                                          | Gewone oorsake                                                                                               | Eerste regstellings                                                                                 |
-| --------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Kruip                 | Glasuur trek terug in krale en laat kaal klei oor | Stowwerige of vetterige biskwiet; 'n dik, kleirykie laag wat tydens droging gebars het; sink, sirkoon of tin | Maak die biskwiet skoon; dra dunner aan; kalsineer van die klei; voeg 'n bindmiddel soos CMC-gom by |
-| Speldeprikgaatjies    | Klein gaatjies of putjies                         | Gas uit die kleiliggaam of glasuur wat nie toegeheel het nie; 'n te min gebakte of stywe glasuur             | Hou ongeveer 'n halfuur by die hoogste temperatuur; dra dunner aan; minder sink of rutiel           |
-| Blase                 | Skerprandige kraters                              | Gewoonlik te veel gebak; baie dik lae; vlugtige vloeimiddels bo omtrent {{2192 °F; 1200 °C}}                 | Bak laer; dra dunner aan. Skerp rande maak gebruiksware onveilig                                    |
-| Wegloop               | Glasuur vloei op die rak                          | Te min alumina; te dik, soos waar gietsels oorvleuel; baie yster                                             | Dra dunner aan; voeg alumina by; hou glasuur ver bo die voet                                        |
-| Termiese skeurvorming | Krake in die pot van afkoeling of verhitting      | Vinnige afkoeling deur kwartsinversie, {{1063 °F; 573 °C}}; ongelyke mure; swak passing                      | Bak stadig deur {{1063 °F; 573 °C}}, op en af; gelyke mure                                          |
+| Defek                 | Lyk soos                                          | Gewone oorsake                                                                                              | Eerste regstellings                                                                                         |
+| --------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Kruip                 | Glasuur trek terug in krale en laat kaal klei oor | Stowwerige of vetterige biskwiet; 'n dik, kleiryke laag wat tydens droging gebars het; sink, sirkoon of tin | Maak die biskwiet skoon; dra dunner aan; kalsineer 'n mate van die klei; voeg 'n bindmiddel soos CMC-gom by |
+| Speldeprikgaatjies    | Klein gaatjies of putjies                         | Gas uit die kleiliggaam of glasuur wat nie toegeheel het nie; 'n te min gebakte of stywe glasuur            | Hou ongeveer 'n halfuur by die hoogste temperatuur; dra dunner aan; minder sink of rutiel                   |
+| Blase                 | Skerprandige kraters                              | Gewoonlik te veel gebak; baie dik lae; vlugtige vloeimiddels bo omtrent {{2192 °F; 1200 °C}}                | Bak laer; dra dunner aan. Skerp rande maak gebruiksware onveilig                                            |
+| Wegloop               | Glasuur vloei op die rak                          | Te min alumina; te dik, soos waar gietsels oorvleuel; baie yster                                            | Dra dunner aan; voeg alumina by; hou glasuur ver bo die voet                                                |
+| Termiese skeurvorming | Krake in die pot van afkoeling of verhitting      | Vinnige afkoeling deur kwartsinversie, {{1063 °F; 573 °C}}; ongelyke mure; swak passing                     | Bak stadig deur {{1063 °F; 573 °C}}, op en af; gelyke mure                                                  |
 
 ## Voedselveiligheid {#food-safety}
 
@@ -267,7 +267,7 @@ Die FDA sê tuisveegstelle kan uitloogbare lood wys, maar Ceramics New Zealand w
 
 ### Soortlike gewig
 
-Glasuurpoeier wat met water gemeng is, is 'n **slurrie**. Sy **soortlike gewig** (**SG**) is sy gewig vergeleke met dieselfde volume water, wat 'n SG van 1,0 het: hoe hoër dit is, hoe meer poeier in die emmer. Ouer Britse boeke sê **pintgewig**. Glazy noem 1,4–1,5 “'n goeie beginpunt vir die meeste glasure”. Om dit te meet, weeg presies 100 mL slurrie af (Glazy stel 'n spuit voor) en deel deur 100: 145 g beteken soortlike gewig 1,45. Hidrometers is onbetroubaar in geleerde glasure, en water verdamp, so kyk weer voordat jy glaseer.
+Glasuurpoeier wat met water gemeng is, is 'n **slurrie**. Sy **soortlike gewig** (**SG**) is sy gewig vergeleke met dieselfde volume water, wat 'n SG van 1,0 het: hoe hoër dit is, hoe meer poeier in die emmer. Ouer Britse boeke sê **pintgewig**. Glazy noem 1,4–1,5 “'n goeie beginpunt vir die meeste glasure”. Om dit te meet, weeg presies 100 mL slurrie af (Glazy stel 'n spuit voor) en deel deur 100: 145 g beteken soortlike gewig 1,45. Hidrometers is onbetroubaar in gegelleerde glasure, en water verdamp, so kyk weer voordat jy glaseer.
 
 Teikens verskil volgens bron. Digitalfire plaas doopglasure by 1,40–1,50 en kommersiële kwasglasure by 1,25–1,55, terwyl Potclays 1,71–1,81 vir kwas en 1,71 vir spuit gee. Ons raad: doop by omtrent 1,45 met die glasuur effens gel, volg die etiket vir 'n kwasglasuur, en skryf neer wat werk.
 
@@ -285,7 +285,7 @@ Maak eers stof en vet van die biskwiet af met 'n skaars klam spons eerder as om 
 > [!WARNING]
 > Spuit net in 'n geventileerde spuitkamer, met 'n respirator wat behoorlik pas. Sien [Veilig meng en ventilasie](/guides/safe-mixing).
 
-'n Te dik laag kan kruip, blase maak of loop. Verskaffers se vuistereëls wissel van die dikte van 'n kredietkaart tot dié van 'n Amerikaanse dime, volgens ons skatting omtrent 1 mm droë glasuur; toetsteëls by 'n paar diktes is die betroubare toets. **Wasweerlaag** op die voet stoot glasuur af, sodat die pot nie aan die rak kan vassit nie, en **oondrakbedekking**, 'n hitte-bestande laag, dikwels van kaolien en silika, beskerm rakke teen drupse.
+'n Te dik laag kan kruip, blase maak of loop. Verskaffers se vuistereëls wissel van die dikte van 'n kredietkaart tot dié van 'n Amerikaanse dime, volgens ons skatting omtrent 1 mm droë glasuur; toetsteëls by 'n paar diktes is die betroubare toets. **Wasweerlaag** op die voet stoot glasuur af, sodat die pot nie aan die rak kan vassit nie, en **oondrakbedekking**, 'n hitte-bestande laag, dikwels van kaolien en silika, beskerm rakke teen drupsels.
 
 ## Oksidasie en reduksie {#atmosphere}
 
@@ -373,7 +373,7 @@ Kalksteen (whiting)
 : Kalsiumkarbonaat, die vernaamste kalsiumvloeimiddel; verloor meer as 40% van sy gewig tydens bak. Duits: Kreide.
 
 Kegel (cone)
-: 'n Gekalibreerde keramiekpiramide wat by 'n vasgestelde hittewerk buig. 'n Kontrolekegel wys wat die potte ontvang het.
+: 'n Gekalibreerde keramiekpiramide wat by 'n vasgestelde hittewerk buig. 'n Getuiekegel wys wat die potte ontvang het.
 
 Kleurstof en stain (colorant and stain)
 : 'n Metaaloksied of -karbonaat wat glasuur kleur; 'n stain is 'n fabrieksgemaakte, stabieler kleurstof.
@@ -391,7 +391,7 @@ Mengselresep (batch recipe)
 : 'n Glasuur se grondstowwe volgens gewig, gewoonlik wat tot 100 optel.
 
 Oondrakbedekking (kiln wash)
-: 'n Hitte-bestande laag wat oondrakke teen drupse beskerm.
+: 'n Hitte-bestande laag wat oondrakke teen drupsels beskerm.
 
 Oksidasie en reduksie (oxidation and reduction)
 : Bak met volop suurstof (elektriese oonde), of met beperkte suurstof (gewoonlik gas of hout).
@@ -409,7 +409,7 @@ Ontglassing (devitrification)
 : Kristalle wat vroeg in afkoeling uit die glas groei, waar hulle nie gewens word nie.
 
 Opasiteitsmiddel (opacifier)
-: 'n Materiaal, soos sirkoon, tinoksied of titaandioksied, wat glasuur ondeurskynend maak.
+: 'n Grondstof, soos sirkoon, tinoksied of titaandioksied, wat glasuur ondeurskynend maak.
 
 Porselein (porcelain)
 : 'n Wit, kaolienryke hoëtemperatuur-kleiliggaam, dikwels deurskynend.
@@ -448,7 +448,7 @@ Uitloging (leaching)
 : Metale wat uit 'n gebakte glasuur in kos of drank oplos.
 
 Veldspaat (feldspar)
-: 'n Mineraal wat alkalivloeimiddel met alumina en silika lewer: kalium-, natrium- of nefelien-sieniet.
+: 'n Mineraal wat alkalivloeimiddel met alumina en silika lewer: kaliumveldspaat, natriumveldspaat of nefelien-sieniet.
 
 Verglasing (vitrification)
 : 'n Kleiliggaam wat tydens bak glasagtig en nie-poreus word.

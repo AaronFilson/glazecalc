@@ -127,31 +127,43 @@ Yoruba marks the plural with _àwọn_ before the noun, or not at all after a nu
 
 ### 2.3 Defects and making
 
-| English   | yo                       | Notes            |
-| --------- | ------------------------ | ---------------- |
-| crazing   | crazing (ìfọ́ wẹ́wẹ́)       | **Native check** |
-| leaching  | ìṣàn òjé jáde (leaching) | **Native check** |
-| batch     | batch                    | Loan.            |
-| scale     | òṣùwọ̀n                   | Abraham.         |
-| sieve     | asẹ́; sẹ́ (verb)           | Abraham.         |
-| test tile | test tile (táílì ìdánwò) | **Native check** |
+| English               | yo                                                            | Notes                                                                         |
+| --------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| crazing               | crazing (ìfọ́ wẹ́wẹ́)                                            | **Native check**                                                              |
+| leaching, leach test  | ìṣàn irin jáde (leaching); ìdánwò ìṣàn irin jáde (leach test) | Metals in general (lead, cadmium, barium), never lead alone. **Native check** |
+| opaque, opacifier     | dínà ìmọ́lẹ̀ (opaque); ohun ìdínà ìmọ́lẹ̀ (opacifier)             | Stops light passing; never _ṣú_ / _ṣókùnkùn_ (dark). **Native check**         |
+| dull, cloud(y), milky | dín dídán kù; rí bí wàrà                                      | Never _ṣú_ (darken). **Native check**                                         |
+| soluble, dissolve     | yọ́ nínú omi (in water / the body)                             | Not melting in the kiln: say "nínú omi" or "nínú ara". **Native check**       |
+| clear glaze           | glaze tí ó mọ́ kedere                                          | Transparent, never _funfun_ (white). **Native check**                         |
+| kiln wash             | kiln wash (ohun ìbora pẹpẹ kiln)                              | The protective coating on kiln shelves. **Native check**                      |
+| witness cone          | cone ẹlẹ́rìí (witness cone)                                    | **Native check**                                                              |
+| inch, foot            | íǹṣì; ẹsẹ̀ bàtà                                                | Metric figure in brackets as the English gives it.                            |
+| invalid               | kò tọ́                                                         | Not _kò bófin mu_ ("unlawful"); keep that only for unlawful content.          |
+| batch                 | batch                                                         | Loan.                                                                         |
+| scale                 | òṣùwọ̀n                                                        | Abraham.                                                                      |
+| sieve                 | asẹ́; sẹ́ (verb)                                                | Abraham.                                                                      |
+| test tile             | test tile (táílì ìdánwò)                                      | **Native check**                                                              |
 
 ### 2.4 Health and safety
 
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures in
 English and digits.
 
-| English                       | yo                          | Notes                                          |
-| ----------------------------- | --------------------------- | ---------------------------------------------- |
-| dust                          | eruku                       | Abraham.                                       |
-| respirable crystalline silica | eruku silica tí a ń mí sínú | **Native check**                               |
-| silicosis                     | silicosis (àrùn ẹ̀dọ̀fóró)    | **Native check**                               |
-| respirator                    | respirator (ìbòjú èémí)     | **Native check**                               |
-| poison, toxic                 | májèlé; olóró               | Abraham.                                       |
-| food safe                     | láìléwu fún oúnjẹ           | **Native check**                               |
-| lead-free                     | láìní òjé (lead-free)       | **Native check**                               |
-| at most / no more than        | kò ju … lọ; ó pọ̀ jù lọ      | "less than" is _kéré sí_: never for "at most". |
-| at least                      | ó kéré tán                  |                                                |
+| English                       | yo                                      | Notes                                                         |
+| ----------------------------- | --------------------------------------- | ------------------------------------------------------------- |
+| dust                          | eruku                                   | Abraham.                                                      |
+| respirable crystalline silica | eruku silica crystalline tí a ń mí sínú | Keep "crystalline". **Native check**                          |
+| safety data sheet (SDS)       | ìwé ìsọfúnni ààbò                       | One form; not _ìwé ààbò_ or _ìwé dátà ààbò_. **Native check** |
+| combustible                   | tí ó lè jóná                            | **Native check**                                              |
+| early, too soon               | ní kùtùkùtù; ṣáájú àkókò                | Never "in the morning" or "on time". **Native check**         |
+| less, fewer, reduce           | X tí ó dín kù; dín … kù                 | Never _díẹ̀ sí i_ ("a little more").                           |
+| silicosis                     | silicosis (àrùn ẹ̀dọ̀fóró)                | **Native check**                                              |
+| respirator                    | respirator (ìbòjú èémí)                 | **Native check**                                              |
+| poison, toxic                 | májèlé; olóró                           | Abraham.                                                      |
+| food safe                     | láìléwu fún oúnjẹ                       | **Native check**                                              |
+| lead-free                     | láìní òjé (lead-free)                   | **Native check**                                              |
+| at most / no more than        | kò ju … lọ; ó pọ̀ jù lọ                  | "less than" is _kéré sí_: never for "at most".                |
+| at least                      | ó kéré tán                              |                                                               |
 
 **Who to call.** Nigeria is not in the region data: no number is named. For the record: Nigeria 112, **not verified**
 on an official page; no poison line confirmed.

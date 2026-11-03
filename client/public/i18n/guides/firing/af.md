@@ -8,7 +8,7 @@ lead: Hoe om 'n elektriese oond met 'n kiln sitter of handskakelaars te bak: keg
 > [!NOTE]
 > Volg eers jou oond se eie handleiding. Hierdie gids bring saam wat kegel- en oondvervaardigers oor eenvoudige elektriese oonde publiseer; dit vervang nie die instruksies vir jou model nie, en waar die twee verskil, wen die handleiding.
 
-'n **Pirometriese kegel**{{en: pyrometric cone}} is 'n klein, slanke piramide van 'n gestandaardiseerde keramiekpoeier. Wanneer dit genoeg hitte gehad het, word dit sag en buig dit op 'n herhaalbare manier om. Jy sit kegels in die oond langs die ware en lees hoe ver hulle gebuig het.
+'n **Pirometriese kegel** is 'n klein, slanke piramide van 'n gestandaardiseerde keramiekpoeier. Wanneer dit genoeg hitte gehad het, word dit sag en buig dit op 'n herhaalbare manier om. Jy sit kegels in die oond langs die ware en lees hoe ver hulle gebuig het.
 
 Kegels meet **hittewerk**, die gesamentlike uitwerking van temperatuur en tyd. In die woorde van Orton, die vernaamste Amerikaanse kegelmaker: “Kegels meet nie temperatuur alleen nie.” 'n Kegel wat stadig verhit word, buig by 'n laer temperatuur as een wat vinnig verhit word, en 'n glasuur{{en: glaze}} gedra hom net so. Daarom gee Orton elke kegel se temperatuur vir 'n vermelde verhittingstempo oor die laaste {{180 °F; 100 °C}} van die bak. Sodra 'n kegel begin beweeg, buig dit oor 'n nou reeks, “gewoonlik minder as 40° F” (22 °C).
 
@@ -25,7 +25,7 @@ Label: Bakreekse
 | Middelbak | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Steengoed en porselein in elektriese oonde |
 | Hoogbak   | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Meestal steengoed en porselein in gasoonde |
 
-Verskaffers in die VK, Europa, Australië en Nieu-Seeland gee dikwels 'n temperatuur in °C in plaas van 'n kegel: soek die naaste kegel in die tabel hieronder en bevestig dit met 'n getuiekegel{{en: witness cone}}. Seger- en Staffordshire-kegels, die ouer Europese reekse, moet nie veronderstel word dieselfde nommers as Orton s'n te hê nie, so hierdie gids gebruik Orton-kegels.
+Verskaffers in die VK, Europa, Australië en Nieu-Seeland gee dikwels 'n temperatuur in °C in plaas van 'n kegel: soek die naaste kegel in die tabel hieronder en bevestig dit met 'n getuiekegel. Seger- en Staffordshire-kegels, die ouer Europese reekse, moet nie veronderstel word dieselfde nommers as Orton s'n te hê nie, so hierdie gids gebruik Orton-kegels.
 
 ### Houtyd voeg hittewerk by
 
@@ -146,11 +146,11 @@ Die voeler lees die lug naby die muur, nie die ware nie. As bakke warmer of koel
 Table: Die driekegelstel
 Label: Driekegelstel
 
-| Kegel     | Watter nommer                   | Kegel 04-biskwiet | Kegel 6-glasuur | Wanneer dit buig             |
-| --------- | ------------------------------- | ----------------- | --------------- | ---------------------------- |
-| Leidkegel | Een nommer koeler as die teiken | 05                | 5               | Die ware nader volwassenheid |
-| Bakkegel  | Die teiken                      | 04                | 6               | Die bak is by die regte punt |
-| Wagkegel  | Een nommer warmer               | 03                | 7               | Die bak het te ver gegaan    |
+| Kegel     | Watter nommer                  | Kegel 04-biskwiet | Kegel 6-glasuur | Wanneer dit buig             |
+| --------- | ------------------------------ | ----------------- | --------------- | ---------------------------- |
+| Leidkegel | Een kegel koeler as die teiken | 05                | 5               | Die ware nader volwassenheid |
+| Bakkegel  | Die teiken                     | 04                | 6               | Die bak is by die regte punt |
+| Wagkegel  | Een kegel warmer               | 03                | 7               | Die bak het te ver gegaan    |
 
 ### Selfdraende kegels of 'n plaat
 
@@ -193,7 +193,7 @@ Bronne verskil. Dawson, wat die kiln sitter gemaak het, sê gebruik dieselfde no
 Dawson se prosedure, wat ook as 'n nagaan voor elke bak dien:
 
 1. Skakel al die skakelaars af. Kyk dat die voelstaaf vrylik beweeg, in die middel van die buis sit en nie gebuig of gekorrodeer is nie. As dit traag is, sê Dawson vervang die buisinstallasie.
-2. Borsel 'n dun laag hoëtemperatuur-**oondwas** ('n laag wat keer dat gesmelte materiaal vassit) op die kegelsteunpunte en die staaf waar dit die kegel raak. Sit nooit was op die kegel of die porseleinbuis nie.
+2. Borsel 'n dun laag hoëtemperatuur-**rakdeklaag** (kiln wash: 'n laag wat keer dat gesmelte materiaal vassit) op die kegelsteunpunte en die staaf waar dit die kegel raak. Sit nooit rakdeklaag op die kegel of die porseleinbuis nie.
 3. Pak rakke en ware minstens 1 duim (25 mm) bo of onder die buis, sodat niks dit kan raak, daarteen val of dit kan blokkeer nie.
 4. Lig die gewig, druk die klou af op die snellers, en lê die kegel of staaf plat op die steunpunte teen die metaalstap, soos jou kiln sitter se handleiding wys, elke keer dieselfde. Gaan dit weer na voor jy die deksel toemaak: “'N VERKEERD GEPLAASTE KEGEL OF STAAF KAN 'N OORBAK VEROORSAAK.”
 5. Stel die limiettimer en druk die plunjer in totdat dit sluit. Hou die oond gelyk en die spasie onder die gewig oop, sodat die gewig kan val.
@@ -382,7 +382,7 @@ Orton se selfdraende kegels word in Japan onder die naam 立つゼーゲル (“
 
 ## Biskwietbak {#bisque}
 
-Die **biskwiet**{{en: bisque}}bak (biscuit in die VK) is die eerste, laer bak wat droë klei in harde, poreuse ware omskep wat gereed is om te glasuur. Dit word gewoonlik tot kegel 06–04 gebak, {{1828–1945 °F; 998–1063 °C}} op Orton se tabel; VK-pottebakkers bak dikwels tot omtrent {{1000 °C; 1832 °F}}, naby kegel 06. Die biskwiet moet poreus bly, “oor die algemeen meer as 15%” (Digitalfire), sodat dit water uit die glasuur suig. 'n Biskwiet wat te sag is, neem glasuur te dik op, wat dan krake kry en **kruip** (in eilande terugtrek en kaal klei laat). Ondergebakte biskwiet “krimp ook tydens die glasuurbak aan”, wat die glasuurpassing bederf. Inpak is vergewensgesind: stukke mag raak, deksels kan op hul potte gebak word, en bakke gaan rand teen rand eerder as in mekaar.
+Die **biskwietbak** (biscuit in die VK) is die eerste, laer bak wat droë klei in harde, poreuse ware omskep wat gereed is om te glasuur. Dit word gewoonlik tot kegel 06–04 gebak, {{1828–1945 °F; 998–1063 °C}} op Orton se tabel; VK-pottebakkers bak dikwels tot omtrent {{1000 °C; 1832 °F}}, naby kegel 06. Die biskwiet moet poreus bly, “oor die algemeen meer as 15%” (Digitalfire), sodat dit water uit die glasuur suig. 'n Biskwiet wat te sag is, neem glasuur te dik op, wat dan krake kry en **kruip** (in eilande terugtrek en kaal klei laat). Ondergebakte biskwiet “krimp ook tydens die glasuurbak aan”, wat die glasuurpassing bederf. Inpak is vergewensgesind: stukke mag raak, deksels kan op hul potte gebak word, en bakke gaan rand teen rand eerder as in mekaar.
 
 ### Hoekom die begin stadig gaan
 
@@ -391,16 +391,16 @@ Water brei meer as duisendvoudig uit wanneer dit stoom word, so klam ware moet s
 Table: Wat gebeur soos 'n biskwiet verhit
 Label: Wat in 'n biskwiet gebeur
 
-|                      Temperatuur | Wat gebeur                                                                  |
-| -------------------------------: | --------------------------------------------------------------------------- |
-|       {{300–500 °F; 149–260 °C}} | Bindmiddels brand weg                                                       |
-|       Omtrent {{450 °F; 232 °C}} | Organiese materiaal begin brand                                             |
-|           Tot {{700 °F; 371 °C}} | Water bly die klei verlaat totdat dit bo hierdie temperatuur is             |
-|      {{842–1022 °F; 450–550 °C}} | Chemies gebinde water verlaat die klei                                      |
-|              {{1063 °F; 573 °C}} | Kwartsinversie{{en: quartz inversion}}: silika in die klei brei skielik uit |
-|           Bo {{1112 °F; 600 °C}} | Swawel brand uit                                                            |
-| Tot {{1200–1400 °F; 649–760 °C}} | Natuurlike koolstof brand weg; dit moet onder rooihitte klaar wees          |
-|           Bo {{1544 °F; 840 °C}} | Kalsiumkarbonaat breek af                                                   |
+|                      Temperatuur | Wat gebeur                                                         |
+| -------------------------------: | ------------------------------------------------------------------ |
+|       {{300–500 °F; 149–260 °C}} | Bindmiddels brand weg                                              |
+|       Omtrent {{450 °F; 232 °C}} | Organiese materiaal begin brand                                    |
+|           Tot {{700 °F; 371 °C}} | Water bly die klei verlaat totdat dit bo hierdie temperatuur is    |
+|      {{842–1022 °F; 450–550 °C}} | Chemies gebinde water verlaat die klei                             |
+|              {{1063 °F; 573 °C}} | Kwartsinversie: silika in die klei brei skielik uit                |
+|           Bo {{1112 °F; 600 °C}} | Swawel brand uit                                                   |
+| Tot {{1200–1400 °F; 649–760 °C}} | Natuurlike koolstof brand weg; dit moet onder rooihitte klaar wees |
+|           Bo {{1544 °F; 840 °C}} | Kalsiumkarbonaat breek af                                          |
 
 **Kwartsinversie** is die skielike verandering in grootte van die silika in klei by {{1063 °F; 573 °C}}: dit brei op pad op uit en trek op pad af saam. L&L se Slow Bisque gaan stadig daardeur, tussen {{1000 °F; 538 °C}} en {{1100 °F; 593 °C}}. Digitalfire het dit “onnodig vir biskwietbakke” gevind, en Ceramics Monthly sê dit maak hoofsaaklik saak wanneer digte ware afkoel. Stadiger gaan kos min, so ons voorstel is om dit vir dik stukke te hou.
 
@@ -452,7 +452,7 @@ BQ1000 neem omtrent 7 uur 44 minute. Sy skrywer vind tot {{500 °F/h; 278 °C/h}
 
 ### Beheereenheid-kegels en Orton se tabel
 
-L&L- en Bartlett-beheereenhede gebruik {{1926 °F; 1052 °C}} vir kegel 04 en {{1819 °F; 993 °C}} vir kegel 06, 'n bietjie onder Orton se {{1945 °F; 1063 °C}} en {{1828 °F; 998 °C}}; hulle stem by kegel 6 en kegel 10 ooreen. Getuiekegels{{en: witness cone}} besleg die verskil: as hulle van die beheereenheid verskil, regstel dit met die kegelafwyking.
+L&L- en Bartlett-beheereenhede gebruik {{1926 °F; 1052 °C}} vir kegel 04 en {{1819 °F; 993 °C}} vir kegel 06, 'n bietjie onder Orton se {{1945 °F; 1063 °C}} en {{1828 °F; 998 °C}}; hulle stem by kegel 6 en kegel 10 ooreen. Getuiekegels besleg die verskil: as hulle van die beheereenheid verskil, regstel dit met die kegelafwyking.
 
 ### By 'n handbediende oond
 
@@ -465,7 +465,7 @@ Die glasuurbak smelt die glasuur{{en: glaze}} tot glas op die biskwiet. Die mees
 ### Inpak vir 'n glasuurbak
 
 - Geglasuurde stukke mag nie mekaar of die mure raak nie: laat omtrent ½ duim (13 mm).
-- Hou glasuur van die voet af (**voet glasuurvry hou**), of sit laagbakware op **stutte**, klein staanders met punte. Steengoed en porselein moet nie op stutte staan nie, wat by daardie temperature insink; gebruik eerder hoëtemperatuur-oondwas of silikasand.
+- Hou glasuur van die voet af (**voet glasuurvry hou**), of sit laagbakware op **stutte**, klein staanders met punte. Steengoed en porselein moet nie op stutte staan nie, wat by daardie temperature insink; gebruik eerder hoëtemperatuur-rakdeklaag of silikasand.
 - Laat minstens 1 duim (25 mm) tussen die rakkante en die muur of kiln sitter.
 
 ### Skedules vir die beheereenheid
@@ -564,7 +564,7 @@ Label: Bracker's handskedules
 | Medium      | Proppe in, deksel toe; al die skakelaars Medium, 3–4 uur                                      | Proppe in, deksel toe; al die skakelaars Medium, 3–4 uur         |
 | High        | Omtrent 2–3 uur, totdat die kiln sitter afskakel                                              | Omtrent 3 uur; 15–30 minute meer vir elke kegel warmer           |
 
-Bracker's sê nie met watter rakkegel sy biskwiet-kiln sitter-kegel ooreenstem nie, so gaan dit na met jou eie kegelstel. Met 'n afwaartse ventilator{{en: downdraft vent}} is die stappe dieselfde, maar die ventilator loop deur die bak en die afkoeling, en die deksel bly toe. Bracker's stel ook voor om te vertraag: bring die skakelaars een vir een op, omtrent 30 minute uitmekaar.
+Bracker's sê nie met watter rakkegel sy biskwiet-kiln sitter-kegel ooreenstem nie, so gaan dit na met jou eie kegelstel. Met 'n afwaartse ventilator is die stappe dieselfde, maar die ventilator loop deur die bak en die afkoeling, en die deksel bly toe. Bracker's stel ook voor om te vertraag: bring die skakelaars een vir een op, omtrent 30 minute uitmekaar.
 
 ### Wanneer om die deksel toe te maak en die kykgate toe te stop
 
@@ -587,7 +587,7 @@ As jou kegelstelle wys dat die onderkant koeler bak as die bokant, stel Orton vo
 
 ### 'n Beginpunt vir jou eie oond
 
-As jou oond sonder instruksies gekom het, is die tabel hieronder 'n beginpunt wat ons uit die gepubliseerde prosedures hierbo saamgestel het. Dit is nie 'n gepubliseerde skedule nie. Kalibreer dit met getuiekegels{{en: witness cone}} en pas dit aan volgens jou rekords; maak elke stadium langer vir swaar ladings of dik ware.
+As jou oond sonder instruksies gekom het, is die tabel hieronder 'n beginpunt wat ons uit die gepubliseerde prosedures hierbo saamgestel het. Dit is nie 'n gepubliseerde skedule nie. Kalibreer dit met getuiekegels en pas dit aan volgens jou rekords; maak elke stadium langer vir swaar ladings of dik ware.
 
 Table: Ons beginpunt vir 'n handbediende oond ('n skatting, nie 'n gepubliseerde skedule nie)
 Label: Beginpunt vir 'n handbediende oond
@@ -642,7 +642,7 @@ Label: Oopmaak en uitpak
 > [!NOTE]
 > Ons voorstel: maak die deksel net onder omtrent {{200 °F; 93 °C}} oop, en pak uit onder omtrent {{125 °F; 52 °C}}, of wanneer jy die ware gemaklik met kaal hande kan hou. Glasuurladings, dig en glasagtig, verg meer geduld as biskwiet. Sonder 'n pirometer, wag totdat die oond heeltemal afgekoel het.
 
-Lees die getuiekegels{{en: witness cone}} sodra jy die oond oopmaak, voor enigiets verskuif word, en skryf neer wat jy sien terwyl dit vars is.
+Lees die getuiekegels sodra jy die oond oopmaak, voor enigiets verskuif word, en skryf neer wat jy sien terwyl dit vars is.
 
 ## Ná die bak {#after}
 
@@ -654,16 +654,16 @@ Skryf elke bak neer: die datum, die oond, die lading, die skedule of die skakela
 
 ### Kiln sitter-onderhoud
 
-- Maak die kegelsteunpunte skoon “ná elke bak met 'n klein draadborsel”. As was of gesmelte kegel nie loskom nie, draai die steunpunte om of vervang hulle; Dawson stel voor om twee pare te hou.
+- Maak die kegelsteunpunte skoon “ná elke bak met 'n klein draadborsel”. As rakdeklaag of gesmelte kegel nie loskom nie, draai die steunpunte om of vervang hulle; Dawson stel voor om twee pare te hou.
 - “MOENIE ENIGE SOORT SMEERMIDDELS OP DIE KILN-SITTER GEBRUIK NIE.”
 - Inspekteer die draaipunt elke 6–12 maande, en vervang 'n gebuigde of verslete staaf.
 - Gaan die instelling elke 30 bakke met die baktoetsmeter na.
 
 :::
 
-### Rakke en oondwas
+### Rakke en rakdeklaag
 
-Oondwas beskerm rakke teen druppende glasuur en laat gebakte potte losskiet. Sit dit net op die bokant van elke rak en op die oondvloer, “omtrent die dikte van 'n poskaart”. L&L se beste praktyk is drie dun lae, tussen lae gebak indien moontlik. Baie pottebakkers sit ook stukke met vloeibare glasure op 'n **koekie**, 'n skyf biskwiet wat druppels opvang. Dit is algemene praktyk, hoewel ons geen oondmaker se raad daaroor gevind het nie.
+Rakdeklaag beskerm rakke teen druppende glasuur en laat gebakte potte losskiet. Sit dit net op die bokant van elke rak en op die oondvloer, “omtrent die dikte van 'n poskaart”. L&L se beste praktyk is drie dun lae, tussen lae gebak indien moontlik. Baie pottebakkers sit ook stukke met vloeibare glasure op 'n **koekie**, 'n skyf biskwiet wat druppels opvang. Dit is algemene praktyk, hoewel ons geen oondmaker se raad daaroor gevind het nie.
 
 ### Elemente
 

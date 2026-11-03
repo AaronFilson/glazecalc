@@ -41,7 +41,7 @@ Label: Joogsiyada iyo shaqada kulaylka
 | Qiyaastii 2 saacadood | Heerkul ugu sarreeya oo {{54 °F; 30 °C}} ka kulul  |
 | 4–6 saacadood         | Ku filan in uu foorariyo cone laba lambar ka kulul |
 
-Orton wuxuu ku daraa in joogsi 1–2 saacadood ah "uu ku filnaan karo in uu qalloociyo lambarka cone ee xiga".
+Orton wuxuu ku daraa in joogsi 1–2 saacadood ah "uu ku filnaan karo in uu qalloociyo cone-ka xiga ee ka kulul".
 
 Sidaas darteed joogsi weligiis bilaash ma aha: haddii aad mid ku darto, filo in cone-yadu sii foorarsadaan, oo hoos u dhig heerkulka ugu sarreeya si ay isugu dheelitirmaan.
 
@@ -54,12 +54,12 @@ Label: Noocyada cone-yada
 
 | Nooca        | Loo isticmaalo             | Sida uu u taagan yahay                                                                                     |
 | ------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Is-taaga     | Cone markhaati ah oo rafka | Saldhig ku dhisan ayaa go'aamiya dhererka, 1¾ inch (44 mm), iyo janjeerka 8°; looma baahna hayn            |
-| Weyn         | Cone markhaati ah oo rafka | Lagu dhigo plaque ama xabbad dhoobo ah, iyadoo si sax ah 2 inch (51 mm) muuqato, 8° ka janjeera toosnaanta |
-| Yar (junior) | Kiln sitter                | Wuxuu dul jiifaa tiirarka sitter-ka; 15/16 inch (24 mm) ayaa muuqda haddii rafka la dul taago              |
+| Is-taaga     | Cone markhaati ah oo rafka | Saldhig ku dhisan ayaa go'aamiya dhererka, 1¾ inji (44 mm), iyo janjeerka 8°; looma baahna hayn            |
+| Weyn         | Cone markhaati ah oo rafka | Lagu dhigo plaque ama xabbad dhoobo ah, iyadoo si sax ah 2 inji (51 mm) muuqato, 8° ka janjeera toosnaanta |
+| Yar (junior) | Kiln sitter                | Wuxuu dul jiifaa tiirarka sitter-ka; 15/16 inji (24 mm) ayaa muuqda haddii rafka la dul taago              |
 | Bar          | Kiln sitter                | Budo la mid ah tan cone-yada yaryar, qaab bar siman ah                                                     |
 
-Dhererku muhiim buu yahay: farqi ¼ inch (6 mm) ah oo dhererka cone weyn "wuxuu keeni karaa farqi foorarsi oo ka badan nus cone". Cone-yadu ma xumaadaan, mana gaboobaan, kaydinta qoyanna saamayn kuma yeelato.
+Dhererku muhiim buu yahay: farqi ¼ inji (6 mm) ah oo dhererka cone weyn "wuxuu keeni karaa farqi foorarsi oo ka badan nus cone". Cone-yadu ma xumaadaan, mana gaboobaan, kaydinta qoyanna saamayn kuma yeelato.
 
 ### Waxa "cone 6" ula jeedo marka la dhaqan galiyo
 
@@ -156,13 +156,13 @@ Label: Xidhmada saddexda cone
 
 L&L, sameeye kiln oo Maraykan ah, wuxuu xidhmada ugu talinayaa cone-yo is-taaga "sababtoo ah waa kuwa ugu fudud isticmaalka, waxayna bixiyaan natiijooyinka ugu joogtada badan": dhererkooda iyo janjeerkoodu way ku dhisan yihiin.
 
-Cone-yada waaweyni waxay u baahan yihiin **plaque** (hay diyaarsan) ama **xabbad** (pat) dhoobo jilicsan oo daloolo leh, oo qalin lagu duleeliyay. Mid walba ku dhig si sax ah 2 inch (51 mm) oo muuqda, 8° ka janjeera toosnaanta xagga **wejigiisa foorarsiga**. Si aad wejigaas u hesho, cone-ka ku taag saldhigiisa meel siman, ka qabo caarada, kadibna sii daa: wuxuu u dhacaa xagga wejiga foorarsiga.
+Cone-yada waaweyni waxay u baahan yihiin **plaque** (hay diyaarsan) ama **xabbad** (pat) dhoobo jilicsan oo daloolo leh, oo qalin lagu duleeliyay. Mid walba ku dhig si sax ah 2 inji (51 mm) oo muuqda, 8° ka janjeera toosnaanta xagga **wejigiisa foorarsiga**. Si aad wejigaas u hesho, cone-ka ku taag saldhigiisa meel siman, ka qabo caarada, kadibna sii daa: wuxuu u dhacaa xagga wejiga foorarsiga.
 
 ### Meesha xidhmooyinka la dhigo
 
 1. Xidhmada dhig "qoto dheer gudaha kiln-ka, haddana... laga arki karo peephole" (Orton), u dhow bartamaha rarka oo ka fog hawo socota (L&L). Ha dhigin peephole-ka agtiisa: cone-yadu waa inay dareemaan kulaylka ay alaabtu dareemayso.
 2. Intaadan daboolka xidhin, ka eeg peephole-ka oo hubi inaad arki karto saddexda cone.
-3. Kiln leh sitter, rafka xidhmada ka dhig ugu yaraan 1 inch (25 mm) ka sarreeya ama ka hooseeya tuubada sitter-ka, si raf janjeera uusan u xannibin sitter-ka.
+3. Kiln leh sitter, rafka xidhmada ka dhig ugu yaraan 1 inji (25 mm) ka sarreeya ama ka hooseeya tuubada sitter-ka, si raf janjeera uusan u xannibin sitter-ka.
 4. Gubidyadaada ugu horreeya, xidhmo dhig rafka sare, kan dhexe iyo kan hoose. Tijaabada hagaajinta ee L&L way ka sii fogaataa: laba xidhmo oo cone-yo 07, 06 iyo 05 ah raf kasta, mid cidhifka iyo mid bartamaha.
 
 Filo farqiyo: Orton wuxuu leeyahay "Caadi ahaan, waxaad arkaysaa ugu yaraan farqi hal cone ah inta u dhaxaysa sare iyo hoose ee kiln-ka", meelaha si cufan loo raray waxay gubtaan si ka qabow. Xidhmooyinka aadan arki karin inta gubiddu socoto weli waxay bixiyaan diiwaan dabadeed.
@@ -193,8 +193,8 @@ Iluhu way isku khilaafaan. Dawson, oo sameeyay sitter-ka, wuxuu leeyahay isticma
 Habka Dawson, oo sidoo kale ah hubin gubid kasta ka hor:
 
 1. Dami dhammaan furayaasha. Hubi in ulka dareemuhu si xor ah u dhaqaaqo, uu ku fadhiyo bartamaha tuubada, aanu qalloocsanayn ama daxalaysnayn. Haddii uu gaabis yahay, Dawson wuxuu leeyahay beddel qaybta tuubada oo dhan.
-2. Tiirarka cone-ka iyo ulka meesha uu cone-ka taabto ku mari lakab khafiif ah oo **kiln wash** gubid sare ah (dahaar ilaaliya oo ka hortaga in walax dhalaashay ay ku dhegto). Weligaa ha marin wash cone-ka ama tuubada porcelain-ka.
-3. Rafaha iyo alaabta ku rar ugu yaraan 1 inch (25 mm) ka sarreeya ama ka hooseeya tuubada, si aanay waxba u taaban, ugu dhicin ama u xannibin.
+2. Tiirarka cone-ka iyo ulka meesha uu cone-ka taabto ku mari lakab khafiif ah oo **kiln wash** gubid sare ah (dahaarka rafaha kiln-ka, kaas oo ka hortaga in walax dhalaashay ay ku dhegto). Weligaa ha marin wash cone-ka ama tuubada porcelain-ka.
+3. Rafaha iyo alaabta ku rar ugu yaraan 1 inji (25 mm) ka sarreeya ama ka hooseeya tuubada, si aanay waxba u taaban, ugu dhicin ama u xannibin.
 4. Kor u qaad culayska, ciddiyaha hoos ugu riix kiciyaha (trigger), cone-ka ama bar-ka si siman ugu jiifi tiirarka, oo ku tiirsan tallaabada birta ah, sida buugga tilmaamaha sitter-kaagu muujiyo, mar walba si isku mid ah. Hubi mar kale intaadan daboolka xidhin: "CONE AMA BAR SI KHALAD AH LOO DHIGAY WUXUU KEENI KARAA XAD-DHAAF GUBID."
 5. Deji limit timer-ka oo riix badhanka (plunger) ilaa uu xidhmo. Kiln-ka ku hay meel siman, meesha culayska hoostiisana bannaan ka dhig, si culaysku u dhici karo.
 
@@ -228,7 +228,7 @@ Label: Dhibaatooyinka kiln sitter-ka
 | Cone-ka sitter-ku ma foorarsan, ama wuu dhalaalay oo kuus noqday        | Sitter-ka laftiisa: hagaajin xun, ul qalloocsan ama daxalaysan, ama wax ku dhegay tuubada gudaheeda ama agteeda | Hubi oo hagaaji sitter-ka sida buuggiisa tilmaamuhu sheegayo intaadan mar kale gubin |
 | Goor hore ama goor dambe mar walba                                      | Hagaajin la'aan, ama ul duugoobay                                                                               | Ku hubi firing gauge-ka; dhaqaaji saxanka kiciyaha (trigger plate)                   |
 
-Si loo hubiyo hagaajinta, Dawson wuxuu isticmaalaa **firing gauge** oo ulka ku haya meeshii cone si buuxda u foorarsaday uu kaga tagi lahaa; markaas waa inay jirtaa "bannaan 1/16th-inch ah" (qiyaastii 1.6 mm) ciddiyaha. Hubi 30-kii gubidba mar. Xeerka Ceramics Monthly: haddii kiln-ku goor hore damo, saxanka kiciyaha wax yar kor u dhaqaaji; haddii goor dambe, wax yar hoos u dhaqaaji. Wax kasta oo sitter-ku sameeyo, "Mar walba ku kalsoonow cone-yada markhaatiga waaweyn halkii cone-yada yaryar ee sitter-ka."
+Si loo hubiyo hagaajinta, Dawson wuxuu isticmaalaa **firing gauge** oo ulka ku haya meeshii cone si buuxda u foorarsaday uu kaga tagi lahaa; markaas waa inay jirtaa "bannaan 1/16 inji ah" (qiyaastii 1.6 mm) ciddiyaha. Hubi 30-kii gubidba mar. Xeerka Ceramics Monthly: haddii kiln-ku goor hore damo, saxanka kiciyaha wax yar kor u dhaqaaji; haddii goor dambe, wax yar hoos u dhaqaaji. Wax kasta oo sitter-ku sameeyo, "Mar walba ku kalsoonow cone-yada markhaatiga waaweyn halkii cone-yada yaryar ee sitter-ka."
 
 > [!WARNING]
 > **Kiln sitter ma aha qalab badbaado.** Buugga tilmaamaha Dawson wuxuu leeyahay "LOOGUMA talagalin inuu u shaqeeyo qalab damin oo aan fashilmin, kiln-kaagana waa in AAN la dayacin waqtiga gubidda la qiyaasay dabadiis." Wax sida greenware oo tuubada ku dhaca oo kale "waxay keeni karaan xad-dhaaf gubid". Joog si aad u hubiso kiln-ka marka uu dhammaanayo, oo weligaa ha ku gubin wax guban kara korkiisa ama agtiisa, sida sagxad alwaax ah ama roog.
@@ -364,7 +364,7 @@ Tiro kasta waa magac ahaan (JIS): heerkulka heerku u bixiyo cone-ka, sida lagu d
 
 ### Cone-yada Kyoto
 
-Cone-yada Kyoto (京都ゼーゲル), oo uu sameeyay machadka degmada Kyoto, hadda lama sameeyo: wararku waxay sheegaan in machadku joojiyay soo saarista dhammaadka sannadka maaliyadeed 2009. Waxay sitaan lambarro la mid ah cone-yada SK ee JIS laakiin way ka qabow yihiin foorarsigooda: cone Kyoto wuxuu ku foorarsadaa qiyaastii heerkulka cone-ka SK ee JIS ee laba ama saddex lambar ka hooseeya. Hab ka yimid Kyoto oo leh "SK 8" wuxuu ula jeedi karaa cone Kyoto. Machadku wuxuu daabacay talo loogu talagalay dhoobo-sameeyayaasha ka guuraya cone-yada Kyoto una guuraya cone-yada Orton, wuxuuna Orton cone 10 ku beddelaa Kyoto SK 12-kiisa. Taasi waa doorashada machadka ee ka timid cabbirradiisa: wuxuu cone-yada Kyoto iyo cone-yada Orton ku foorariyay isla kiln-ka 100 °C/h, Kyoto SK 12 (1290 °C) wuxuu ku foorarsaday meeshii Orton 10 (1290 °C) uu ku foorarsaday. Isla jadwalkaas Kyoto SK 8 (1198 °C) wuxuu ku foorarsaday meel u dhow Orton 5 (1207 °C), Kyoto SK 10 (1232 °C)-na meeshii Orton 7 (1232 °C). Glazecalc wuxuu isticmaalaa jadwalkan, ma aha jaantuska Orton ee 60 °C/h, marka uu cone SK barbar dhigo cone Orton, wuxuuna sheegaa in isbarbardhig kastaa uu qiyaas yahay.
+Cone-yada Kyoto (京都ゼーゲル), oo uu sameeyay machadka degmada Kyoto, hadda lama sameeyo: wararku waxay sheegaan in machadku joojiyay soo saarista dhammaadka sannadka maaliyadeed 2009. Waxay sitaan lambarro la mid ah cone-yada SK ee JIS laakiin way ka qabow yihiin foorarsigooda: cone Kyoto wuxuu ku foorarsadaa qiyaastii heerkulka cone-ka SK ee JIS ee laba ama saddex cone ka qabow. Hab ka yimid Kyoto oo leh "SK 8" wuxuu ula jeedi karaa cone Kyoto. Machadku wuxuu daabacay talo loogu talagalay dhoobo-sameeyayaasha ka guuraya cone-yada Kyoto una guuraya cone-yada Orton, wuxuuna Orton cone 10 ku beddelaa Kyoto SK 12-kiisa. Taasi waa doorashada machadka ee ka timid cabbirradiisa: wuxuu cone-yada Kyoto iyo cone-yada Orton ku foorariyay isla kiln-ka 100 °C/h, Kyoto SK 12 (1290 °C) wuxuu ku foorarsaday meeshii Orton 10 (1290 °C) uu ku foorarsaday. Isla jadwalkaas Kyoto SK 8 (1198 °C) wuxuu ku foorarsaday meel u dhow Orton 5 (1207 °C), Kyoto SK 10 (1232 °C)-na meeshii Orton 7 (1232 °C). Glazecalc wuxuu isticmaalaa jadwalkan, ma aha jaantuska Orton ee 60 °C/h, marka uu cone SK barbar dhigo cone Orton, wuxuuna sheegaa in isbarbardhig kastaa uu qiyaas yahay.
 
 ### Cone-yada Orton ee Japan lagu iibiyo
 
@@ -391,16 +391,16 @@ Biyuhu waxay ku fidaan in ka badan kun jeer marka ay uumi noqdaan, sidaas dartee
 Table: Waxa dhaca marka bisque kululaado
 Label: Waxa ka dhaca bisque
 
-|                         Heerkulka | Waxa dhaca                                                                            |
-| --------------------------------: | ------------------------------------------------------------------------------------- |
-|        {{300–500 °F; 149–260 °C}} | Walxaha isku haya (binders) way gubtaan                                               |
-|      Qiyaastii {{450 °F; 232 °C}} | Walaxda dabiiciga ah (organic) waxay bilaabaan inay gubato                            |
-|           Ilaa {{700 °F; 371 °C}} | Biyuhu way sii ka baxayaan dhoobada ilaa heerkulkan laga sarreeyo                     |
-|       {{842–1022 °F; 450–550 °C}} | Biyaha kiimiko ahaan ku xidhan ayaa ka baxa dhoobada                                  |
-|               {{1063 °F; 573 °C}} | Quartz inversion: silica-da dhoobada ku jirta ayaa si kedis ah u fidda                |
-|   Ka sarreeya {{1112 °F; 600 °C}} | Baaruuddu (sulfur) way gubataa                                                        |
-| Ilaa {{1200–1400 °F; 649–760 °C}} | Kaarboonka dabiiciga ahi wuu gubtaa; tani waa inay dhammaato ka hor kulaylka casaanka |
-|   Ka sarreeya {{1544 °F; 840 °C}} | Calcium carbonate ayaa burbura                                                        |
+|                         Heerkulka | Waxa dhaca                                                                                           |
+| --------------------------------: | ---------------------------------------------------------------------------------------------------- |
+|        {{300–500 °F; 149–260 °C}} | Walxaha isku haya (binders) way gubtaan                                                              |
+|      Qiyaastii {{450 °F; 232 °C}} | Walaxda dabiiciga ah (organic) waxay bilaabaan inay gubato                                           |
+|           Ilaa {{700 °F; 371 °C}} | Biyuhu way sii ka baxayaan dhoobada ilaa heerkulkan laga sarreeyo                                    |
+|       {{842–1022 °F; 450–550 °C}} | Biyaha kiimiko ahaan ku xidhan ayaa ka baxa dhoobada                                                 |
+|               {{1063 °F; 573 °C}} | Quartz inversion: silica-da dhoobada ku jirta ayaa si kedis ah u fidda                               |
+|   Ka sarreeya {{1112 °F; 600 °C}} | Baaruuddu (sulfur) way gubataa                                                                       |
+| Ilaa {{1200–1400 °F; 649–760 °C}} | Kaarboonka dabiiciga ahi wuu gubtaa; tani waxay ahaan lahayd inay dhammaato ka hor kulaylka casaanka |
+|   Ka sarreeya {{1544 °F; 840 °C}} | Calcium carbonate ayaa burbura                                                                       |
 
 **Quartz inversion** waa isbeddelka kedis ah ee cabbirka silica-da dhoobada ku jirta {{1063 °F; 573 °C}}: way fiddaa marka kor loo socdo, wayna isku soo ururtaa marka hoos loo socdo. Slow Bisque-ka L&L wuu ku gaabiyaa marka uu dhex marayo, inta u dhaxaysa {{1000 °F; 538 °C}} iyo {{1100 °F; 593 °C}}. Digitalfire wuxuu ogaaday in tani ay "aan loo baahnayn gubidyada bisque", Ceramics Monthly-na wuxuu leeyahay inay inta badan muhiim tahay marka la qaboojinayo alaab cufan. Gaabintu wax yar ayay ku kacdaa, sidaas darteed talo ahaan waxaan leenahay u hay xabbadaha qarada weyn.
 
@@ -464,9 +464,9 @@ Gubidda glaze-ku waxay glaze-ka u dhalaalisaa muraayad bisque-ka dul saaran. Bil
 
 ### Raridda gubidda glaze-ka
 
-- Xabbadaha glaze-ka leh waa inaanay isa taaban ama derbiyada taaban: u daa qiyaastii ½ inch (13 mm).
+- Xabbadaha glaze-ka leh waa inaanay isa taaban ama derbiyada taaban: u daa qiyaastii ½ inji (13 mm).
 - Glaze-ka ka ilaali cagta (**dry-footing**), ama alaabta gubidda hoose dul dhig **stilts**, taageerooyin yaryar oo caarooyin leh. Stoneware iyo porcelain waa inaanay stilts dul istaagin, kuwaas oo heerkulkaas ku dhex gala; isticmaal kiln wash gubid sare ah ama ciid silica ah.
-- U daa ugu yaraan 1 inch (25 mm) cidhifyada rafaha iyo derbiga ama sitter-ka dhexdooda.
+- U daa ugu yaraan 1 inji (25 mm) cidhifyada rafaha iyo derbiga ama sitter-ka dhexdooda.
 
 ### Jadwallada controller-ka
 
@@ -509,7 +509,7 @@ PLC6DS wuxuu qaataa qiyaastii 9 saacadood iyo 36 daqiiqo. Glaze-yada ka socodka 
 
 ### Qaboojinta tartiibka ah
 
-**Qaboojinta tartiibka ah** (slow cooling) waxay ka dhigan tahay in controller-ku kiln-ka ku qaboojiyo xawaare la dejiyay halkii uu si xor ah u dhici lahaa. C6DHSC ee Digitalfire waa PLC6DS oo ay ku xigto qaboojin {{150 °F/h; 83 °C/h}} ah oo ka bilaabanta {{2100 °F; 1148 °C}} ilaa {{1400 °F; 760 °C}}, kadibna la damiyo. Waxay "hagaajisaa dhalaalka iyo tayada dusha", waxayna caawisaa buluugga rutile, laakiin qaboojinta tartiibka ahi "waxay kordhin kartaa matte-nimada" (glaze matte ah ayaa qallalay), waxayna gaabin kartaa cimriga relay-yada kiln-ka. L&L sidoo kale wuxuu la keenaa barnaamij qaboojin tartiib ah oo cone 6 ah:
+**Qaboojinta tartiibka ah** (slow cooling) waxay ka dhigan tahay in controller-ku kiln-ka ku qaboojiyo xawaare la dejiyay halkii uu si xor ah u dhici lahaa. C6DHSC ee Digitalfire waa PLC6DS oo ay ku xigto qaboojin {{150 °F/h; 83 °C/h}} ah oo ka bilaabanta {{2100 °F; 1148 °C}} ilaa {{1400 °F; 760 °C}}, kadibna la damiyo. Waxay "hagaajisaa ifidda iyo tayada dusha", waxayna caawisaa buluugga rutile, laakiin qaboojinta tartiibka ahi "waxay kordhin kartaa matte-nimada" (glaze matte ah ayaa qallalay), waxayna gaabin kartaa cimriga relay-yada kiln-ka. L&L sidoo kale wuxuu la keenaa barnaamij qaboojin tartiib ah oo cone 6 ah:
 
 Table: L&L "User 6": qaboojin tartiib ah oo glaze-yada cone 6
 Label: L iyo L qaboojin tartiib ah
@@ -541,8 +541,8 @@ Label: Habka L iyo L
 
 | Marxaladda                                            | Waxa la sameeyo                                                                                                                                                                                                                                                      |
 | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Diyaarin                                              | Cone-ka sitter-ka hal lambar ka kulul cone-yada rafka (talada L&L; eeg Kiln sitter-ka). Daboolka kor u qabo "qiyaastii 4 ama 5 inch" (10–13 cm) oo ka saar dhammaan furka peephole-yada. Timer-ka aad u sarreysii markii ugu horreysay, oo qor inta gubiddu qaadato. |
-| Low                                                   | Dhammaan furayaasha Low (1): 3 saacadood haddii dhoobadu qalalan tahay, 8 ilaa 20 saacadood ama ka badan haddii ay qoyan tahay                                                                                                                                       |
+| Diyaarin                                              | Cone-ka sitter-ka hal lambar ka kulul cone-yada rafka (talada L&L; eeg Kiln sitter-ka). Daboolka kor u qabo "qiyaastii 4 ama 5 inji" (10–13 cm) oo ka saar dhammaan furka peephole-yada. Timer-ka aad u sarreysii markii ugu horreysay, oo qor inta gubiddu qaadato. |
+| Low                                                   | Dhammaan furayaasha Low (1): 3 saacadood haddii dhoobadu qalalan tahay, 8 ilaa 20 saacadood ama ka badan haddii ay u muuqato inay qoyan tahay                                                                                                                        |
 | Medium                                                | Xidh daboolka. Labada fure ee sare 5, furaha hoose 6.                                                                                                                                                                                                                |
 | Kulaylka casaanka ee ugu horreeya                     | Isla marka aad aragto iftiin kasta, xidh labada peephole ee hoose. Kan sare u daa furan gubidda oo dhan.                                                                                                                                                             |
 | Kulayl casaan oo badan, qiyaastii {{1400 °F; 760 °C}} | Labada fure ee hoose High, furaha sare 9                                                                                                                                                                                                                             |
@@ -619,7 +619,7 @@ Hawo-wareejinta qolka, iyo digniinta carbon monoxide, eeg [Isku-darka ammaanka a
 - Peephole ka eeg keliya adigoo xidhan muraayadaha alxanka shade 3 ee loo qiimeeyay IR; muraayadaha qorraxdu kuma filna. Skutt wuxuu ku taliyaa in furka la maroojiyo meeshooda si aanay u dhicin.
 - Agtiisa joog oo hubi kiln-ka inta uu gubayo, gaar ahaan marka uu ku dhow yahay waqtiga dhammaadka la filayo; sitter ma aha qalab aan fashilmin. Gub keliya marka qof weyn uu guriga joogo oo soo jeedo gubidda oo dhan.
 - Weligaa ha ku gubin wax guban kara korkiisa ama agtiisa, sida sagxad alwaax ah ama roog.
-- Ilaali masaafada bannaan ee buuggaaga tilmaamaha. Tirooyinka la daabacay waxay u dhexeeyaan 12 inch (30 cm) ilaa 3 feet (91 cm); meesha buugga tilmaamuhu aanu waxba ka sheegin, 18 inch (46 cm) derbiyada iyo 3 feet (91 cm) wax kasta oo guban kara waa doorashada ugu ammaanka badan.
+- Ilaali masaafada bannaan ee buuggaaga tilmaamaha. Tirooyinka la daabacay waxay u dhexeeyaan 12 inji (30 cm) ilaa 3 fuudh (91 cm); meesha buugga tilmaamuhu aanu waxba ka sheegin, 18 inji (46 cm) derbiyada iyo 3 fuudh (91 cm) wax kasta oo guban kara waa doorashada ugu ammaanka badan.
 - Meesha ku wareegsan culayska sitter-ka bannaan ka dhig si uu u dhici karo.
 - Marka gubiddu dhammaato, dami furayaasha, sidoo kale dami breaker-ka.
 

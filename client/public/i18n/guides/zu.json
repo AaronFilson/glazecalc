@@ -105,8 +105,8 @@
   "silica": {
     "limitIn": "Umkhawulo e-",
     "label": "Umkhawulo we-silica: {region}",
-    "caption": "Umkhawulo wasemsebenzini wothuli lwe-silica oluhogelwayo, {region}, isilinganiso samahora angu-8 (kuhlolwe ngomhla {date})",
-    "captionControl": "Isilinganiso sothuli lwe-silica oluhogelwayo emoyeni wendawo yokusebenza, {region} (kuhlolwe ngomhla {date})",
+    "caption": "Umkhawulo wasemsebenzini wothuli lwe-silica eyikristalu oluhogelwayo, {region}, isilinganiso samahora angu-8 (kuhlolwe ngomhla {date})",
+    "captionControl": "Isilinganiso sothuli lwe-silica eyikristalu oluhogelwayo emoyeni wendawo yokusebenza, {region} (kuhlolwe ngomhla {date})",
     "both": "I-quartz ne-cristobalite",
     "freeSilica": "I-silica ekhululekile",
     "quartz": "I-quartz",
@@ -125,8 +125,8 @@
     "bandAbove": "Uthuli olune-silica ekhululekile engaphezu kuka-{from}%",
     "untilDate": "Kuze kube ngumhla {date}",
     "fromDate": "Kusukela ngomhla {date}",
-    "beforeFormula": "Umkhawulo wothuli oluhogelwayo, lapho u-Q eyi-silica ye-crystal ekulo, ku-%",
-    "beforeAll": "Kothuli oluyi-silica ye-crystal lonke",
+    "beforeFormula": "Umkhawulo wothuli oluhogelwayo, lapho u-Q eyi-silica eyikristalu ekulo, ku-%",
+    "beforeAll": "Kothuli oluyi-silica eyikristalu lonke",
     "recommended": "Kunconywa yi-{abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -165,7 +165,7 @@
     "category": {
       "flat": "Izitsha ezingenakugcwaliswa, noma ezingajulile ngaphezu kuka-25 mm",
       "fillable": "Ezinye izitsha ezingagcwaliswa",
-      "cooking": "Izitsha zokupheka zanoma yimuphi usayizi; kanye neziqukathi zokupakisha nezokugcina ezingaphezu kuka-3 L",
+      "cooking": "Iziqukathi zokupakisha nezokugcina ezingaphezu kuka-3 L, kanye nezitsha zokupheka zanoma yimuphi usayizi",
       "rimBand": "Umlomo wesitsha sokuphuza: ibhande elingu-2 cm, ngaphakathi nangaphandle",
       "rimArticle": "Umlomo wesitsha sokuphuza: ibhande elingu-20 mm ngaphandle konqenqema olungaphezulu, esitsheni ngasinye",
       "flatware": "Izitsha eziyisicaba, ezingajulile ngaphezu kuka-25 mm",

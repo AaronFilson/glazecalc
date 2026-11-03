@@ -1,13 +1,13 @@
 ---
 title: Haɗawa cikin aminci da iska mai kyau
-lead: Yadda za ku hana ƙurar glaze shiga huhunku, da hayaƙin kiln shiga gidanku: ɗabi'u, kayan aiki da kayan haɗi da suka fi muhimmanci.
+lead: Yadda za ku hana ƙurar glaze shiga huhunku, da hayaƙin kiln shiga gidanku: ɗabi'u, kayan aiki da kayan glaze da suka fi muhimmanci.
 ---
 
 ## Babban haɗari: ƙura {#the-main-hazard}
 
-Babban haɗari na dogon lokaci a aikin glaze shi ne ƙura, musamman **ƙurar silica da ake shaƙa** (respirable crystalline silica): ƙananan ƙwayoyin quartz ko cristobalite (siffofin silica masu ƙyalli, wato crystal) waɗanda suke da ƙanƙanta har su kai can cikin huhu. Silica mai ƙyalli tana iya kaiwa kusan 10 zuwa 60% na busasshen nauyin glaze, kuma yawancin nau'o'in yumɓu (banda kaolin) da feldspar da yawa suna ɗauke da quartz mai laushi. Hukumar Lafiya da Tsaro ta Birtaniya, Health and Safety Executive (HSE), ta ce wannan ƙura "tana da laushi sosai kuma ba a ganinta a haske na yau da kullum", don haka ɗakin da yake kama da mai tsabta ba hujja ba ce cewa iskarsa ma tana da tsabta.
+Babban haɗari na dogon lokaci a aikin glaze shi ne ƙura, musamman **ƙurar crystalline silica da ake iya shaƙa** (respirable crystalline silica): ƙananan ƙwayoyin quartz ko cristobalite (siffofin crystalline na silica, wato crystal) waɗanda suke da ƙanƙanta har su kai can cikin huhu. Crystalline silica tana iya kaiwa kusan 10 zuwa 60% na busasshen nauyin glaze, kuma yawancin nau'o'in yumɓu (banda kaolin) da feldspar da yawa suna ɗauke da quartz mai laushi. Hukumar Lafiya da Tsaro ta Birtaniya, Health and Safety Executive (HSE), ta ce wannan ƙura "tana da laushi sosai kuma ba a ganinta a haske na yau da kullum", don haka ɗakin da yake kama da mai tsabta ba hujja ba ce cewa iskarsa ma tana da tsabta.
 
-Idan ana shaƙarta tsawon lokaci, tana iya haddasa **silicosis** (cutar huhu), wadda HSE ta bayyana a matsayin "mai tsanani kuma wadda ba a iya warkewa daga gare ta", wadda kuma za ta iya "haddasa naƙasa ta dindindin da mutuwa da wuri". Tana kuma iya haddasa **COPD** (cutar toshewar hanyoyin iska ta dogon lokaci: mashaƙo na dogon lokaci da emphysema), wadda shan taba yake ƙara muni. IARC, hukumar ciwon daji ta Hukumar Lafiya ta Duniya, ta sanya silica mai ƙyalli da ake shaƙa a Rukuni na 1, "mai haddasa ciwon daji ga ɗan Adam".
+Idan ana shaƙarta tsawon lokaci, tana iya haddasa **silicosis** (cutar huhu), wadda HSE ta bayyana a matsayin "mai tsanani kuma wadda ba a iya warkewa daga gare ta", wadda kuma za ta iya "haddasa naƙasa ta dindindin da mutuwa da wuri". Tana kuma iya haddasa **COPD** (cutar toshewar hanyoyin iska ta dogon lokaci: mashaƙo na dogon lokaci da emphysema), wadda shan taba yake ƙara muni. IARC, hukumar ciwon daji ta Hukumar Lafiya ta Duniya, ta sanya crystalline silica da ake iya shaƙa a Rukuni na 1, "mai haddasa ciwon daji ga ɗan Adam".
 
 Silica ba ta zama hayaƙi a cikin kiln (murhun gasa tukwane), kuma glaze mai ruwa ba haɗarin shaƙa ba ne sai dai idan an fesa shi: hazon fesawa yana ɗauke da silica kuma yana bushewa ya zama ƙura (duba Fesawa, a ƙasa). Lokutan yin hankali su ne lokacin da kaya suke a bushe: buɗe buhuna, aunawa, juya gari a cikin ruwa, da share ɗigo, abin da ya fesa waje da tabo da zarar sun bushe sun koma ƙura.
 
@@ -15,7 +15,7 @@ Silica ba ta zama hayaƙi a cikin kiln (murhun gasa tukwane), kuma glaze mai ruw
 
 Dokokin wurin aiki suna kafa **iyakar shaƙa**: mafi yawan silica da aka yarda ma'aikaci ya shaƙa, a matsakaicin rana ta awa 8, a milligram (mg) ko microgram (µg, kashi ɗaya cikin dubu na milligram) a kowane mita mai siffar sukari na iska.
 
-Table: Iyakokin wurin aiki na ƙurar silica da ake shaƙa (matsakaicin awa 8)
+Table: Iyakokin wurin aiki na ƙurar crystalline silica da ake iya shaƙa (matsakaicin awa 8)
 Label: Iyakokin shaƙar silica
 
 | Yanki          |                 Iyaka | Bayani                                                                                           |
@@ -44,7 +44,7 @@ Yawancin kariya tana fitowa daga ɗabi'u, ba kayan aiki ba. Shawarar HSE ga masa
 ### Ku guji gari inda za ku iya
 
 - **Ku sayi glaze da aka riga aka haɗa** idan ya dace da aikinku. Shawarar farko ta HSE ita ce "A sayi glaze da yake shirye don amfani, idan zai yiwu", ko kuma a siffar ƙwaya-ƙwaya ko ta laka.
-- **Ku zaɓi tsarin glaze mafi aminci.** HSE ta ba da shawarar "glaze da ke ɗauke da ƙarancin silica mai ƙyalli". Digitalfire ta ba da shawarar **frit** (gilashin masana'anta da aka niƙa ya zama gari, wanda yake narkewa ƙasa sosai da ɗanyun kaya) a madadin ɗanyen barium carbonate, da **stain** (launin yumɓu da aka ƙera a masana'anta) a madadin manganese, cobalt ko nickel masu yawa don baƙi.
+- **Ku zaɓi tsarin glaze mafi aminci.** HSE ta ba da shawarar "glaze da ke ɗauke da ƙarancin crystalline silica". Digitalfire ta ba da shawarar **frit** (gilashin masana'anta da aka niƙa ya zama gari, wanda yake narkewa ƙasa sosai da ɗanyun kaya) a madadin ɗanyen barium carbonate, da **stain** (launin yumɓu da aka ƙera a masana'anta) a madadin manganese, cobalt ko nickel masu yawa don baƙi.
 
 ### Lokacin da kuke amfani da gari
 
@@ -142,7 +142,7 @@ Babu majiya da ta ba da adadin gudun iska ga murfin masu sha'awa. Idan ba ku da 
 
 ### Fesawa
 
-HSE ta yi gargaɗi cewa fesawa "na iya samar da hazo mai ɗauke da RCS" (ƙurar silica da ake shaƙa), kuma "hazon glaze yana bushewa da sauri ya zama ƙura". Kowace majiya da muka samo ta ce a fesa ne kawai a cikin akwatin fesawa mai tsotsar iska.
+HSE ta yi gargaɗi cewa fesawa "na iya samar da hazo mai ɗauke da RCS" (ƙurar crystalline silica da ake iya shaƙa), kuma "hazon glaze yana bushewa da sauri ya zama ƙura". Kowace majiya da muka samo ta ce a fesa ne kawai a cikin akwatin fesawa mai tsotsar iska.
 
 - HSE tana son wurin da aka kewaye mai tsotsar iska kuma, "inda zai yiwu, akwati mai ruwa a baya", wanda ke kama abin da ya fesa waje a cikin ruwa.
 - Ku yi amfani da faranti mai juyawa a cikin akwatin, ku sa safar hannu ta nitrile da respirator, kuma ku tsabtace akwatin da matatarsa kafin abin da ya fesa waje ya bushe.
@@ -179,7 +179,7 @@ Kayan glaze suna ƙara wasu. Wasu oxide (ogsaid) na ƙarfe suna yin hayaƙi, "mu
 - **Zafin ɗaki.** Skutt ya ce a bar zafin ɗakin ƙasa da {{38 °C; 100 °F}}, ko kuma na'urar sarrafawa za ta iya kashe kiln. Da yake bututun ba ya cire zafi, ƙaramin ɗaki na iya buƙatar fanka kuma. Kada ku bar kawunan yayyafin ruwan kashe gobara (sprinkler) da na'urorin jin zafi su kasance kai tsaye a saman kiln.
 - **Ƙararrawar carbon monoxide.** Ba mu sami wata doka da ke buƙatar ɗaya ga kiln na lantarki ba, amma abubuwa masu rai da ke ƙonewa suna yin CO, don haka ƙararrawa a ɗakin kiln da ɗakunan da ke kusa da shi mataki ne mai hankali kuma mai arha (duba [Kada ka sa wa iyalinka guba](/guides/home-safety)).
 
-Raku yana yin hayaƙi da CO masu yawa; Utah ta ba da shawarar a yi shi a waje, nesa da mashigan iska da tagogi. Don gasa kanta, duba [Gasa a cikin murhu mai sauƙi](/guides/firing).
+Raku yana yin hayaƙi da CO masu yawa; Utah ta ba da shawarar a yi shi a waje, nesa da mashigan iska da tagogi. Don gasa kanta, duba [Gasa a cikin kiln mai sauƙi](/guides/firing).
 
 ## Kayan da suka fi buƙatar kulawa {#materials}
 
@@ -193,7 +193,7 @@ Label: Kayan da suka fi buƙatar kulawa
 | Kaya                                        | Haɗari                                                                                                                                                                                                                                                                                        | Matakin kariya                                                                                                                                     |
 | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Mahaɗan darma (lead, Pb) da frit na darma   | "Mai guba sosai idan aka shaƙa ko aka haɗiye"; idan aka gasa zuwa zafin stoneware, darma (Pb) tana zama tururi.                                                                                                                                                                               | Ku guje masa; Digitalfire ta ce ƙwararru kaɗai. Ku ɗauka cewa duk glaze da ba a rubuta masa "lead-free" ko "leadless" ba yana ɗauke da darma (Pb). |
-| Barium carbonate                            | Ba ya narkewa a ruwa amma yana narkewa a ruwan ciki; yana shafar zuciya da tsoka (bugun zuciya mara daidaito, ƙarancin potassium).                                                                                                                                                            | Frit na barium ko strontium inda tsarin glaze ya yarda; respirator; kwantena mai suna.                                                             |
+| Barium carbonate                            | Ba ya narkewa a ruwa amma yana narkewa a ruwan ciki; yana shafar zuciya da tsoka (bugun zuciya mara daidaito, ƙarancin potassium).                                                                                                                                                            | Frit na barium, ko strontium, inda tsarin glaze ya yarda; respirator; kwantena mai suna.                                                           |
 | Manganese dioxide                           | Ƙura ko hayaƙi na iya haddasa **manganism**, cutar jijiyoyin jiki kamar cutar Parkinson, yawanci bayan shekara 1 zuwa 3 na shaƙa. Hayaƙi na iya haddasa zazzaɓin hayaƙin ƙarfe.                                                                                                               | Stain baƙi a ƙananan kaso a maimakon haka; ku fitar da hayaƙin kiln.                                                                               |
 | Potassium dichromate da chrome oxide        | Chromium(VI), kamar a cikin dichromate, Rukuni na 1 ne na IARC. Wannan rajista ba ta shafi chromium(III), kamar a cikin chrome oxide ba.                                                                                                                                                      | Ku guji dichromate. Muna ɗaukar chrome oxide a matsayin mai ƙarancin haɗari sosai, amma ku rage ƙurarsa.                                           |
 | Cobalt                                      | Gishirin cobalt(II) masu narkewa IARC 2A; cobalt(II) oxide 2B; baƙin Co₃O₄ Rukuni na 3. A EU an rarraba cobalt carbonate a matsayin mai yiwuwa ya haddasa ciwon daji idan aka shaƙa, mai yiwuwa ya lalata haihuwa, kuma ana zargin yana haddasa lahani ga ƙwayoyin gado (H350i, H360F, H341). | Ku rage ƙura; stain don baƙi.                                                                                                                      |
@@ -235,7 +235,7 @@ Borax, boric acid, soda ash da potash suna narkewa a ruwa, don haka muna ɗaukar
 
 Hotunan gargaɗi da bayanan haɗari suna fitowa daga **GHS** (Globally Harmonized System), tsarin ƙasa da ƙasa na sa wa sinadarai alamomi. Misali, borax yana ɗauke da hoton gargaɗin haɗarin lafiya GHS08, kalmar gargaɗi "Danger" da bayanin haɗari H360FD, "mai yiwuwa ya lalata haihuwa; mai yiwuwa ya cutar da jaririn da ke ciki". Iya saninmu, SDS a Birtaniya, EU, Ostiraliya da New Zealand suna amfani da sassa 16 iri ɗaya.
 
-- **Ku duba siffar silica.** HSE ta yi gargaɗi cewa silica mai ƙyalli "ana iya rubuta mata suna bisa kuskure a matsayin 'amorphous silica'".
+- **Ku duba siffar silica.** HSE ta yi gargaɗi cewa crystalline silica "ana iya rubuta mata suna bisa kuskure a matsayin 'amorphous silica'".
 - **"Not classified" (ba a rarraba ba) ba yana nufin "marar lahani" ba.** Glaze da aka gama wanda ba shi da hotunan gargaɗi har yanzu yana yin ƙurar silica idan ya bushe.
 
 > [!NOTE]
@@ -248,7 +248,7 @@ Waɗannan su ne majiyoyin farko da suka fi cancantar karantawa. Yawancinsu an ru
 - **Amurka:** [ma'aunin silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) na OSHA (29 CFR 1910.1053) da [shawararta ga mutanen da suka zaɓi sa respirator](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD); [gargaɗin silicosis](https://www.cdc.gov/niosh/docs/92-107) na NIOSH.
 - **Birtaniya:** takardun COSHH essentials na HSE don yumɓu (COSHH su ne dokokin Control of Substances Hazardous to Health, sarrafa abubuwa masu haɗari ga lafiya), musamman [CR1 kan shirya glaze da launuka](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) da [CR5 kan fesa su](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), da [tushen gwajin dacewa](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm) na HSE.
 - **Tarayyar Turai:** Directive (EU) 2017/2398 ta kafa iyakar silica mai ɗaurewa; iyakar kowace ƙasa mamba, da hukumarta ta ƙasa ta tsaro a wurin aiki, suna ƙarƙashin Iyakokin shaƙa, a sama. ECHA, Hukumar Sinadarai ta Turai, tana wallafa rabe-rabe kamar na borate.
-- **Ostiraliya:** [shafukan silica mai ƙyalli da silicosis](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0) na Safe Work Australia.
+- **Ostiraliya:** [shafukan crystalline silica da silicosis](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0) na Safe Work Australia.
 - **New Zealand:** WorkSafe New Zealand ce ke kafa ma'aunan shaƙa a wurin aiki; [tarihin ma'aunin silica](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) na MBIE yana ba da kwanakin.
 - **Kiln:** [jagorar ɗakin kiln](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf) na Skutt, [takardar Orton da CCSA kan hayaƙin kiln](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), kuma fiye da duka, littafin jagorar kiln ɗinku.
 

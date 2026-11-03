@@ -52,9 +52,9 @@ Label: Ohun èlò ìbẹ̀rẹ̀
 | Frit boron, fún mid-fire                  | Ferro 3134, 3124 tàbí 3195; ní UK, Potterycrafts P3124 tàbí P3195                           |
 | Bentonite àti ohun àwọ̀                    | Iye kékeré                                                                                  |
 
-### Ìwé dátà àti ìwé dátà ààbò
+### Ìwé dátà àti ìwé ìsọfúnni ààbò
 
-Ẹ bèèrè ìwé méjì fún ohun èlò kọ̀ọ̀kan. **Ìwé dátà ìmọ̀ ẹ̀rọ** (TDS) ń fúnni ní **àyẹ̀wò kẹ́míkà** rẹ̀: ìpín oxide kọ̀ọ̀kan nínú lúúlúú náà, ní ìwọ̀n. Glazecalc ń ṣiṣẹ́ láti inú ìwọ̀nyí, ẹ sì lè ṣàfikún ohun èlò láti inú àyẹ̀wò olùtajà lórí [ojú-ìwé Ohun èlò](/material). **Ìwé dátà ààbò** (SDS) ń sọ bí a ṣe ń mú lúúlúú àìṣe. Ẹ tọ́jú SDS kọ̀ọ̀kan, kí ẹ sì kà á kí ẹ tó pò.
+Ẹ bèèrè ìwé méjì fún ohun èlò kọ̀ọ̀kan. **Ìwé dátà ìmọ̀ ẹ̀rọ** (TDS) ń fúnni ní **àyẹ̀wò kẹ́míkà** rẹ̀: ìpín oxide kọ̀ọ̀kan nínú lúúlúú náà, ní ìwọ̀n. Glazecalc ń ṣiṣẹ́ láti inú ìwọ̀nyí, ẹ sì lè ṣàfikún ohun èlò láti inú àyẹ̀wò olùtajà lórí [ojú-ìwé Ohun èlò](/material). **Ìwé ìsọfúnni ààbò** (SDS) ń sọ bí a ṣe ń mú lúúlúú àìṣe. Ẹ tọ́jú SDS kọ̀ọ̀kan, kí ẹ sì kà á kí ẹ tó pò.
 
 Àwọn àyẹ̀wò jẹ́ ìpíndọ́gba, kì í ṣe ìlérí. Valentine Clays tẹ "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" (ìpíndọ́gba ni wọ́n, wọn kì í ṣe ìlérí ìwọ̀n) sórí ìwé dátà flint rẹ̀, àti àwọn àyẹ̀wò Glazy ti Custer feldspar láti ọdún ọ̀tọ̀ọ̀tọ̀ wà láàárín nǹkan bí 68.5% sí 72.4% silica. A dábàá pé kí ẹ kọ **lot number** àpò kọ̀ọ̀kan (kóòdù batch rẹ̀) sínú àkọsílẹ̀ yín, kí ẹ lè mọ̀ bóyá ìyípadà nínú glaze tí ẹ gbẹ́kẹ̀lé wá láti inú ohun èlò náà.
 
@@ -73,7 +73,7 @@ Orúkọ agbègbè náà yàtọ̀. Ní North America, **flint**, quartz àti si
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc ń fi àwọn ohun èlò wé ara wọn nípa ohun tí wọ́n ń mú wá sínú glaze tí a ti sun, kì í ṣe nípa orúkọ. [Ìlànà](/recipe) tí ó ní ohun èlò tí wọn kò ṣe mọ́ ń sọ ohun tí a ń lò báyìí. **Dábàá iye kí o sì fi wé** ń ṣírò iye náà lẹ́ẹ̀kan sí i fún ìrọ́pò, **Bá ohun tí mo ní mu** sì ń tún ìlànà náà ṣe láti inú àwọn ohun èlò tí ó wà lórí pẹpẹ yín. Méjèèjì ń bá oxide lẹ́yìn ìsun nìkan mu, nítorí náà ẹ kọ́kọ́ dán batch kékeré wò.
+> Glazecalc ń fi àwọn ohun èlò wé ara wọn nípa ohun tí wọ́n ń mú wá sínú glaze tí a ti sun, kì í ṣe nípa orúkọ. [Ìlànà](/recipe) tí ó ní ohun èlò tí wọn kò ṣe mọ́ ń sọ ohun tí a ń lò báyìí. **Dábàá ìwọ̀n kí ẹ sì fi wé** ń ṣírò iye náà lẹ́ẹ̀kan sí i fún ìrọ́pò, **Bá a mu pẹ̀lú ohun tí mo ní** sì ń tún ìlànà náà ṣe láti inú àwọn ohun èlò tí ó wà lórí pẹpẹ yín. Méjèèjì ń bá oxide lẹ́yìn ìsun nìkan mu, nítorí náà ẹ kọ́kọ́ dán batch kékeré wò.
 
 ## Títọ́jú ohun èlò àti glaze {#storing}
 
@@ -102,7 +102,7 @@ Glaze nínú garawa kì í dúró lójú kan. Àwọn ohun èlò tí ń yọ́ d
 Ìlànà ń fúnni ní ohun èlò kọ̀ọ̀kan gẹ́gẹ́ bí ìpín ọgọ́rùn-ún ìwọ̀n gbígbẹ. Àwọn ohun èlò pàtàkì sábà máa ń jẹ́ 100 lápapọ̀, a sì sábà máa ń fi ohun àwọ̀ kún un lókè. Láti ṣe **batch**, iye tí ẹ ó pò lẹ́ẹ̀kan, ẹ fi ìwọ̀n batch tí a pín sí 100 sọ gbogbo nọ́ńbà di púpọ̀. Fún 5000 g, UT Austin ń fi 50 sọ ọ́ di púpọ̀, nítorí náà ohun èlò tí ó jẹ́ 4% di 200 g.
 
 > [!NOTE]
-> Lórí [ojú-ìwé ìlànà](/recipe), **Ṣe ìwọ̀n sí batch** ń ṣe ìsọdipúpọ̀ náà: ẹ tẹ 500 g, fún àpẹẹrẹ, gbogbo iye yóò sì di gíráàmù láti wọ̀n, tàbí pọ́ọ̀nù àti áúnsì bí ẹ bá yàn wọ́n nínú Ètò. **Tẹ̀ jáde** lè fúnni ní àtòjọ batch nìkan, pẹ̀lú àròpọ̀ tí ń lọ fún wíwọ̀n sínú garawa kan àti àpótí láti sàmì sí lẹ́gbẹ̀ẹ́ ohun èlò kọ̀ọ̀kan.
+> Lórí [ojú-ìwé ìlànà](/recipe), **Ṣe é fún batch kan** ń ṣe ìsọdipúpọ̀ náà: ẹ tẹ 500 g, fún àpẹẹrẹ, gbogbo iye yóò sì di gíráàmù láti wọ̀n, tàbí pọ́ọ̀nù àti áúnsì bí ẹ bá yàn wọ́n nínú Ètò. **Tẹ̀ jáde** lè fúnni ní àtòjọ batch nìkan, pẹ̀lú àròpọ̀ tí ń lọ fún wíwọ̀n sínú garawa kan àti àpótí láti sàmì sí lẹ́gbẹ̀ẹ́ ohun èlò kọ̀ọ̀kan.
 
 ### Ẹ yan òṣùwọ̀n fún iye tí ó kéré jù yín
 
@@ -139,7 +139,7 @@ Omi náà yàtọ̀ síra, Digitalfire sì ṣàkíyèsí pé ó ń yí bí slur
 
 1. Ẹ wọ respirator yín, àti ìbọwọ́ rọ́bà bí ọwọ́ yín bá máa wọlé. Zakin ń wọ ìbòjú láti ìbẹ̀rẹ̀ wíwọ̀n títí glaze yóò fi rin.
 2. Ẹ wọ̀n nǹkan bí 70 sí 80 mL omi fún 100 g lúúlúú sínú garawa.
-3. Ẹ fi lúúlúú tí ẹ ti wọ̀n sí i jẹ́jẹ́, láti ibi tí kò ga. UT Austin ń fi lúúlúú sínú omi lílọ́wọ́rọ́; Zakin àti Au ń fi omi sínú lúúlúú. A dábàá lúúlúú sínú omi, tí ó ń ru eruku sókè díẹ̀, àyàfi fún ìlànà tí ó ní bentonite púpọ̀: ẹ kọ́kọ́ rú lúúlúú gbígbẹ rẹ̀ pọ̀.
+3. Ẹ fi lúúlúú tí ẹ ti wọ̀n sí i jẹ́jẹ́, láti ibi tí kò ga. UT Austin ń fi lúúlúú sínú omi lílọ́wọ́rọ́; Zakin àti Au ń fi omi sínú lúúlúú. A dábàá lúúlúú sínú omi, tí eruku rẹ̀ kì í ru sókè tó, àyàfi fún ìlànà tí ó ní bentonite púpọ̀: ẹ kọ́kọ́ rú lúúlúú gbígbẹ rẹ̀ pọ̀.
 4. Ẹ **rẹ ẹ́ (slake)**: ẹ jẹ́ kí lúúlúú náà rin láìrú u. Digitalfire ń dúró fún nǹkan bí ìṣẹ́jú 20. Lúúlúú tí ó ní gọ́ọ̀mù tàbí ohun ìsopọ̀ nílò láti dúró mọ́jú.
 5. Ẹ pò ó títí kò fi ní sí ibi gbígbẹ tàbí kókó kankan mọ́.
 6. Ẹ sẹ́ ẹ lẹ́ẹ̀mejì (wo ìsàlẹ̀).
@@ -178,7 +178,7 @@ Digitalfire tún ń sàmì sí ife kan ní ibi tí 500 g omi dé, ó ń fi glaze
 
 ### Ohun tí ẹ ó fojú sí
 
-Àwọn orísun kò fohùn ṣọ̀kan, jù gbogbo rẹ̀ lọ lórí fífi búrọ́ọ̀ṣì kùn àti fífọ́n, níbi tí olùtajà UK Potclays ti fúnni ní nọ́ńbà tí ó ga jù lọ (tirẹ̀ jẹ́ "for guidance only", fún ìtọ́sọ́nà nìkan). Ẹ ka gbogbo nọ́ńbà sí ibi ìbẹ̀rẹ̀. Ìmọ̀ràn pàtàkì Digitalfire ni láti wá SG àti dídì bí jẹ́lì tí ó ń ṣiṣẹ́ fún glaze kọ̀ọ̀kan, lẹ́yìn náà kí ẹ máa tún wọn ṣe kí ẹ sì kọ wọ́n sílẹ̀.
+Àwọn orísun kò fohùn ṣọ̀kan, jù gbogbo rẹ̀ lọ lórí fífi búrọ́ọ̀ṣì kùn àti fífọ́n, níbi tí olùtajà UK Potclays ti fúnni ní nọ́ńbà tí ó ga jù bẹ́ẹ̀ lọ fíìfíì (tirẹ̀ jẹ́ "for guidance only", fún ìtọ́sọ́nà nìkan). Ẹ ka gbogbo nọ́ńbà sí ibi ìbẹ̀rẹ̀. Ìmọ̀ràn pàtàkì Digitalfire ni láti wá SG àti dídì bí jẹ́lì tí ó ń ṣiṣẹ́ fún glaze kọ̀ọ̀kan, lẹ́yìn náà kí ẹ máa tún wọn ṣe kí ẹ sì kọ wọ́n sílẹ̀.
 
 Table: Specific gravity tí a ń fojú sí, níbi tí àwọn orísun kò ti fohùn ṣọ̀kan
 Label: Specific gravity tí a ń fojú sí
@@ -207,7 +207,7 @@ Label: Omi fún specific gravity tí a ń fojú sí
 
 ### Epsom salts, gọ́ọ̀mù CMC àti bentonite
 
-**Epsom salts** ń mú glaze dì díẹ̀ bí jẹ́lì nígbà tí ó bá dúró jẹ́ẹ́, kí ó sì tún ṣàn nígbà tí a bá rú u. A ń pe èyí ní **flocculating** rẹ̀, glaze tí ó bá sì ń hùwà báyìí jẹ́ **thixotropic**: ó ń lọ ní déédé jù, kì í kán tó, kì í sì silẹ̀ tó. Digitalfire dábàá bíbẹ̀rẹ̀ ní nǹkan bí 2 g fún gallon kan nígbà tí SG bá ti tọ́ (nǹkan bí 0.5 g fún lítà kan, ìyípadà tiwa) àti títún iye náà ṣe nígbàkúùgbà tí ẹ bá pò ó, nítorí pé ìlànà kankan kò gbọdọ̀ fi iye náà lélẹ̀. A dábàá pé kí ẹ kọ́kọ́ yọ́ ọ nínú omi gbígbóná díẹ̀. Nínú àpẹẹrẹ Digitalfire kan, glaze tí ó jẹ́ {{SG 1.45}} ń kán, nítorí náà omi mú un wálẹ̀ sí {{SG 1.43}}, Epsom salts sì mú un dì padà di bí ọ̀rá, ó sì lọ ní déédé. Àyẹ̀wò ráńpẹ́: ẹ rú u, ẹ dúró kí ẹ sì wò ó. Glaze tí ó ti dì bí jẹ́lì ń bá a lọ fún nǹkan bí ìṣẹ́jú-àáyá 2 tàbí 3, lẹ́yìn náà ó dúró, ó sì fà sẹ́yìn díẹ̀.
+**Epsom salts** ń mú glaze dì díẹ̀ bí jẹ́lì nígbà tí ó bá dúró jẹ́ẹ́, kí ó sì tún ṣàn nígbà tí a bá rú u. A ń pe èyí ní **flocculating** rẹ̀, glaze tí ó bá sì ń hùwà báyìí jẹ́ **thixotropic**: ó ń lọ ní déédé jù, kì í kán tó, kì í sì silẹ̀ tó. Digitalfire dábàá bíbẹ̀rẹ̀ ní nǹkan bí 2 g fún gallon kan nígbà tí SG bá ti tọ́ (nǹkan bí 0.5 g fún lítà kan, ìyípadà tiwa) àti títún iye náà ṣe nígbàkúùgbà tí ẹ bá pò ó, nítorí pé kò yẹ kí ìlànà kankan fi iye náà lélẹ̀. A dábàá pé kí ẹ kọ́kọ́ yọ́ ọ nínú omi gbígbóná díẹ̀. Nínú àpẹẹrẹ Digitalfire kan, glaze tí ó jẹ́ {{SG 1.45}} ń kán, nítorí náà omi mú un wálẹ̀ sí {{SG 1.43}}, Epsom salts sì mú un dì padà di bí ọ̀rá, ó sì lọ ní déédé. Àyẹ̀wò ráńpẹ́: ẹ rú u, ẹ dúró kí ẹ sì wò ó. Glaze tí ó ti dì bí jẹ́lì ń bá a lọ fún nǹkan bí ìṣẹ́jú-àáyá 2 tàbí 3, lẹ́yìn náà ó dúró, ó sì fà sẹ́yìn díẹ̀.
 
 **Gọ́ọ̀mù CMC** (carboxymethyl cellulose) ń mú slurry lẹ̀ mọ́ni jù, kí ó sì lọ́ra láti gbẹ, ó sì ń fi ìbora tí ó le jù tí ó di ìkòkò mú sílẹ̀. Ó ṣe pàtàkì jù fún glaze fífi búrọ́ọ̀ṣì kùn àti glaze tí frit pọ̀ nínú rẹ̀. Àpẹẹrẹ Digitalfire pò 3.75 g sínú 1000 g slurry, a sì gbọdọ̀ fi blender pò ó. Glaze tí ó ní CMC kò ní dì bí jẹ́lì pẹ̀lú Epsom salts, àti nítorí pé kòkòrò àìfojúrí ń jẹ gọ́ọ̀mù náà, ó lè yí padà nínú garawa kí ó sì bẹ̀rẹ̀ sí í rùn.
 

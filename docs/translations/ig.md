@@ -94,16 +94,21 @@ Igbo nouns do not change for the plural; the number says it:
 
 ### 2.1 Glaze, materials and chemistry
 
-| English                        | ig                                      | Notes                  |
-| ------------------------------ | --------------------------------------- | ---------------------- |
-| glaze **show English**         | glaze                                   | Loan. **Native check** |
-| UMF, LOI, SG                   | UMF, LOI, SG                            | Kept.                  |
-| oxide                          | oxide                                   | Loan.                  |
-| gloss, matte                   | na-egbuke egbuke, anaghị egbuke (matte) | **Native check**       |
-| raw materials                  | ihe eji arụ ọrụ; ihe                    | **Native check**       |
-| feldspar, kaolin, silica, frit | feldspar, kaolin, silica, frit          | Loans.                 |
-| colorant                       | ihe na-enye agba                        | **Native check**       |
-| lead, barium, cadmium          | lead (Pb), barium, cadmium              | Loans; symbols kept.   |
+| English                        | ig                                                                 | Notes                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| glaze **show English**         | glaze                                                              | Loan. **Native check**                                                                                       |
+| UMF, LOI, SG                   | UMF, LOI, SG                                                       | Kept.                                                                                                        |
+| oxide                          | oxide                                                              | Loan.                                                                                                        |
+| gloss, matte                   | na-egbuke egbuke, anaghị egbuke (matte)                            | **Native check**                                                                                             |
+| raw materials                  | ihe eji arụ ọrụ; ihe                                               | **Native check**                                                                                             |
+| feldspar, kaolin, silica, frit | feldspar, kaolin, silica, frit                                     | Loans.                                                                                                       |
+| colorant                       | ihe na-enye agba                                                   | **Native check**                                                                                             |
+| lead, barium, cadmium          | lead (Pb), barium, cadmium                                         | Loans; symbols kept.                                                                                         |
+| lead compounds                 | ihe ndị nwere lead (Pb)                                            | Never _ogige_ (a yard). **Native check**                                                                     |
+| opaque, opacifier              | ghara ikwe ka ìhè gafee; opacifier (ihe na-eme ka ìhè ghara ịgafe) | Stops light passing through (usually white); never _ọchịchịrị_ (dark), not _ghara ịhụ ụzọ_. **Native check** |
+| clear (glaze)                  | doro anya (transparent)                                            | Lets light through; never _ọcha_ (white). **Native check**                                                   |
+| soluble, dissolves             | na-agbaze na mmiri                                                 | In water or the body; the kiln's melting is _ịgbaze n'ọkụ_. **Native check**                                 |
+| additive                       | ihe mgbakwunye                                                     | **Native check**                                                                                             |
 
 ### 2.2 Clay, ware, kilns and firing
 
@@ -120,46 +125,57 @@ Igbo nouns do not change for the plural; the number says it:
 
 ### 2.3 Defects and making
 
-| English   | ig                        | Notes            |
-| --------- | ------------------------- | ---------------- |
-| crazing   | crazing (obere mgbawa)    | **Native check** |
-| leaching  | leaching (ọpụpụ nke lead) | **Native check** |
-| batch     | batch                     | Loan.            |
-| scale     | ihe ọtụtụ                 | **Native check** |
-| sieve     | nyọ (verb); ihe nyọ       | **Native check** |
-| test tile | test tile                 | Loan.            |
+| English              | ig                                                         | Notes                                                                                               |
+| -------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| crazing              | crazing (obere mgbawa)                                     | **Native check**                                                                                    |
+| leaching, leach test | leaching (ịhapụ metal); nnwale metal na-apụta (leach test) | Metals in general (lead, cadmium, barium…), never lead alone; _metal_, not _igwe_. **Native check** |
+| blister(ing)         | afụ (blister)                                              | Not _ọkpụ_. **Native check**                                                                        |
+| clouding             | nke na-adịghị doro anya (clouding)                         | Never "dark". **Native check**                                                                      |
+| kiln wash            | kiln wash (ihe mkpuchi shelf na-eguzogide ọkụ)             | The shelf coating. **Native check**                                                                 |
+| witness cone         | cone akaebe (witness cone)                                 | Not _cone onye akaebe_; the firing guide keeps the loan after its gloss. **Native check**           |
+| early, too soon      | tupu oge eruo                                              | Never _n'ụtụtụ_ (in the morning) for "early". **Native check**                                      |
+| less, fewer, reduce  | belata; obere karịa                                        | Never "a little more". **Native check**                                                             |
+| inch, foot           | inch, ft (loans as the English writes them)                | **Native check**                                                                                    |
+| batch                | batch                                                      | Loan.                                                                                               |
+| scale                | ihe ọtụtụ                                                  | **Native check**                                                                                    |
+| sieve                | nyọ (verb); ihe nyọ                                        | **Native check**                                                                                    |
+| test tile            | test tile                                                  | Loan.                                                                                               |
 
 ### 2.4 Health and safety
 
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures in
 English and digits.
 
-| English                       | ig                        | Notes                                         |
-| ----------------------------- | ------------------------- | --------------------------------------------- |
-| dust                          | ájá; uzuzu                | Echeruo. **Native check**                     |
-| respirable crystalline silica | uzuzu silica a na-eku ume | **Native check**                              |
-| silicosis                     | silicosis (ọrịa ngụgụ)    | **Native check**                              |
-| respirator                    | respirator                | Loan.                                         |
-| poison, toxic                 | nsí; nwere nsí            | Echeruo.                                      |
-| food safe                     | dị mma maka nri           | **Native check**                              |
-| lead-free                     | enweghị lead (lead-free)  | **Native check**                              |
-| at most / no more than        | agaghị karịa              | "less than" is _erughị_: never for "at most". |
-| at least                      | opekata mpe               |                                               |
+| English                       | ig                                    | Notes                                                                                                                                            |
+| ----------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| dust                          | ájá; uzuzu                            | Echeruo. **Native check**                                                                                                                        |
+| respirable crystalline silica | uzuzu crystalline silica a na-eku ume | Keep "crystalline". **Native check**                                                                                                             |
+| safety data sheet (SDS)       | mpempe data nchekwa (SDS)             | One form everywhere; not _akwụkwọ data nchekwa_, _mpempe akwụkwọ data nchekwa_ or English. Bare "SDS" where the English has it. **Native check** |
+| combustible                   | na-ere ọkụ                            | **Native check**                                                                                                                                 |
+| silicosis                     | silicosis (ọrịa ngụgụ)                | **Native check**                                                                                                                                 |
+| respirator                    | respirator                            | Loan.                                                                                                                                            |
+| poison, toxic                 | nsí; nwere nsí                        | Echeruo.                                                                                                                                         |
+| food safe                     | dị mma maka nri                       | **Native check**                                                                                                                                 |
+| lead-free                     | enweghị lead (lead-free)              | **Native check**                                                                                                                                 |
+| at most / no more than        | agaghị karịa                          | "less than" is _erughị_: never for "at most".                                                                                                    |
+| at least                      | opekata mpe                           |                                                                                                                                                  |
 
 **Who to call.** Nigeria is not in the region data: no number is named. Nigeria 112 is **not verified** on an official
 page; no poison line confirmed.
 
 ### 2.5 The app's own words
 
-| English              | ig                                       |
-| -------------------- | ---------------------------------------- |
-| recipe               | usoro (usoro glaze)                      |
-| Save, Save as a copy | Chekwaa, Chekwaa dịka mbipụta            |
-| Delete, Remove       | Hichapụ, Wepụ                            |
-| Cancel               | Kagbuo                                   |
-| Sign in, Sign out    | Banye, Pụọ                               |
-| account, password    | akaụntụ, okwuntughe                      |
-| Translation notice   | "AI sụgharịrị ibe a site n'asụsụ Bekee." |
+| English              | ig                                                           |
+| -------------------- | ------------------------------------------------------------ |
+| recipe               | usoro glaze (bare _usoro_ only after it in the same passage) |
+| notes                | ndetu; notebook: akwụkwọ ndetu                               |
+| access token         | token nnweta                                                 |
+| Save, Save as a copy | Chekwaa, Chekwaa dịka mbipụta                                |
+| Delete, Remove       | Hichapụ, Wepụ                                                |
+| Cancel               | Kagbuo                                                       |
+| Sign in, Sign out    | Banye, Pụọ                                                   |
+| account, password    | akaụntụ, okwuntughe                                          |
+| Translation notice   | "AI sụgharịrị ibe a site n'asụsụ Bekee."                     |
 
 **Native check** on the whole table.
 

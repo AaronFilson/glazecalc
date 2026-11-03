@@ -14,7 +14,7 @@ Conokunaqa **ruphay llamk'ayta** (trabajo térmico) tupunku: temperaturaq pachaq
 
 ### Conoq yupayninkuna
 
-Cono yupaykunaqa 022-manta, aswan chiri kaqmanta, 42-kama purin. Ñawpaqpi ceroqa aswan chiri seriemi, "o" hina ñawinchakun: cono 06 ("o-seis") cono 04-manta aswan chirin, cono 01-pas cono 1-manta aswan pisi ruphaytam munan. Ortonqa willan: ama iskaynin seriekunata chaqrunaykichu. Karu kanku: cono 06-qa cono 6-manta {{400 °F; 220 °C}}-manta aswan chiripim k'umuykun.
+Cono yupaykunaqa 022-manta, aswan chiri kaqmanta, 42-kama purin. Ñawpaqpi ceroqa aswan chiri seriemi, "o" hina ñawinchakun: cono 06 ("o-seis") cono 04-manta aswan chirin, cono 01-pas cono 1-manta aswan pisi ruphaytam munan. Ortonqa willan: ancha chaniyuqmi iskaynin seriekunata mana chaqruyqa. Karu kanku: cono 06-qa cono 6-manta {{400 °F; 220 °C}}-manta aswan chiripim k'umuykun.
 
 Table: Riqsisqa ruphachiy patakuna, sapanmanta sayaq conokunapaq {{108 °F/h; 60 °C/h}}-pi
 Label: Ruphachiy patakuna
@@ -193,7 +193,7 @@ Willakuqkunaqa mana kikintachu ninku. Dawson, sitterta ruraq, nin placapi ruphac
 Dawsonpa ruwaynin, sapa ruphachiypa ñawpaqninpi qhawaypas:
 
 1. Tukuy interruptorkunata wañuchiy. Sensor varilla kacharisqa kuyusqanta, tubopa chawpinpi tiyasqanta, mana k'umusqa nitaq oxidasqa kasqanta qhaway. Qhillilla kuyuptinqa, Dawsonqa nin tubopa hunt'a conjuntonta rantinaykita.
-2. Hatun ruphaypaq **separador** (engobe refractario; chulluq imakuna mana k'askakunanpaq ch'aqchu) llañu capata cono sayachiqkunaman, varillaq cono llamiykusqanmanpas brochawan llimp'iy. Ama hayk'aqpas separadorta conoman nitaq porcelana tuboman churaychu.
+2. Hatun ruphaypaq **horno tablakunata amachaq llut'anata** (kiln wash; chullusqa imakuna mana k'askakunanpaq llut'ana) llañu capata cono sayachiqkunaman, varillaq cono llamiykusqanmanpas brochawan llimp'iy. Ama hayk'aqpas chay llut'anata conoman nitaq porcelana tuboman churaychu.
 3. Placakunata piezakunatapas tubomanta pisimanta pisi 1 pulgada (25 mm) hanaqpi utaq uraypi churay, chhaynapi mana imapas llamiykunanpaq, hawanman urmanapaq nitaq hark'anapaq.
 4. Pesata huqariy, sillutaq disparadorman ñit'iy, hinaspa conota utaq barrata sayachiqkuna patapi metal patapa waqtanpi pampata churay, sitteriykiq manualnin rikuchisqanman hina, sapa kuti kikillanta. Tapata wichq'anaykipaq ñawpaqta musuqmanta qhaway: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING." ("MANA ALLIN CHURASQA CONO UTAQ BARRAQA ANCHATA RUPHACHIYTAM RURANMAN.")
 5. Temporizador límiteta churay, émbolotaq wichq'akunankama ñit'iy. Hornota parejollata waqaychay, pesaq urayninpi k'itita ch'uyata, chhaynapi pesa urmayta atinanpaq.
@@ -382,25 +382,25 @@ Orton sapanmanta sayaq conokunaqa Japónpim 立つゼーゲル ("sayaq Seger") s
 
 ## Bizcocho ruphachiy {#bisque}
 
-**Bizcocho** ruphachiyqa (Reino Unidopi biscuit) ñawpaq, aswan pisi ruphachiymi, ch'aki mituta rumi hina, t'uquyuq piezakunaman t'ikraq, esmaltenapaq listo. Sapa kutim cono 06–04-kama ruphachikun, Ortonpa tablanpi {{1828–1945 °F; 998–1063 °C}}; Reino Unido saña ruraqkunaqa sapa kuti yaqa {{1000 °C; 1832 °F}}-kama ruphachinku, cono 06 qayllapi. Bizcochoqa t'uquyuqmi qhipakunan, "generally more than 15%" ("sapa kutim 15%-manta aswan", Digitalfire), esmaltemanta yakuta ch'unqananpaq. Ancha llamp'u bizcochoqa esmalteta ancha rakhutam chaskin, chaymantataq rajakun **crawling** nisqatataq ruran (esmalte islakuna hina huñukun, mitutataq q'alata saqin). Pisi ruphachisqa bizcochopas "continues to shrink during glaze firing" ("esmalte ruphachiypi huch'uyachkanraqmi"), chaytaq esmalteq tupayninta waqllichin. Cargayqa mana sasachu: piezakuna llamiykunakuyta atinku, tapakunaqa mankankupi ruphachikuyta atinku, puchukunataq simi simipi churakunku, manam ukhunpi ukhunpichu.
+**Bizcocho** ruphachiyqa (Reino Unidopi biscuit) ñawpaq, aswan pisi ruphachiymi, ch'aki mituta rumi hina, t'uquyuq piezakunaman t'ikraq, esmaltenapaq listo. Sapa kutim cono 06–04-kama ruphachikun, Ortonpa tablanpi {{1828–1945 °F; 998–1063 °C}}; Reino Unido saña ruraqkunaqa sapa kuti yaqa {{1000 °C; 1832 °F}}-kama ruphachinku, cono 06 qayllapi. Bizcochoqa t'uquyuqmi qhipakunan, "generally more than 15%" ("sapa kutim 15%-manta aswan", Digitalfire), esmaltemanta unuta ch'unqananpaq. Ancha llamp'u bizcochoqa esmalteta ancha rakhutam chaskin, chaymantataq rajakun **crawling** nisqatataq ruran (esmalte islakuna hina huñukun, mitutataq q'alata saqin). Pisi ruphachisqa bizcochopas "continues to shrink during glaze firing" ("esmalte ruphachiypi huch'uyachkanraqmi"), chaytaq esmalteq tupayninta waqllichin. Cargayqa mana sasachu: piezakuna llamiykunakuyta atinku, tapakunaqa mankankupi ruphachikuyta atinku, puchukunataq simi simipi churakunku, manam ukhunpi ukhunpichu.
 
 ### Imaraykutaq qallariyninqa allillamanta purin
 
-Yakuqa wapsiman t'ikrakuspa waranqa kutimanta aswantam hatunyan, chaymi hump'uyuq piezakunata allillamanta ch'akichina. L&L, Ortonpas yuyaychanku "Special care should be taken below 1500°F (815°C) to heat the body evenly" ("1500°F (815°C) uraypiqa ancha cuidaywanmi mituta parejollata q'uñichina"), hinaspa carbónqa yaqa {{1200 °F; 650 °C}}-paq ñawpaqninpi rawrananmi. {{1500 °F; 816 °C}} hanaqpiqa hornoqa aswan utqayta wichayta atinmi.
+Unuqa wapsiman t'ikrakuspa waranqa kutimanta aswantam hatunyan, chaymi hump'uyuq piezakunata allillamanta ch'akichina. L&L, Ortonpas yuyaychanku "Special care should be taken below 1500°F (815°C) to heat the body evenly" ("1500°F (815°C) uraypiqa ancha cuidaywanmi mituta parejollata q'uñichina"), hinaspa carbónqa yaqa {{1200 °F; 650 °C}}-paq ñawpaqninpi rawrananmi. {{1500 °F; 816 °C}} hanaqpiqa hornoqa aswan utqayta wichayta atinmi.
 
 Table: Bizcocho q'uñiyachkaptin imakunataq kan
 Label: Bizcochopi imakunataq kan
 
-|                       Temperatura | Imataq kan                                                  |
-| --------------------------------: | ----------------------------------------------------------- |
-|        {{300–500 °F; 149–260 °C}} | K'askachiqkuna rawrakun                                     |
-|           Yaqa {{450 °F; 232 °C}} | Orgánico materia rawrayta qallarin                          |
-|           {{700 °F; 371 °C}}-kama | Kay temperatura hanaqkama yakuqa mitumanta lluqsichkanraqmi |
-|       {{842–1022 °F; 450–550 °C}} | Química hina watasqa yaku mitumanta lluqsin                 |
-|               {{1063 °F; 573 °C}} | Cuarzo inversión: mitupi sílice qunqayllamanta hatunyan     |
-|       {{1112 °F; 600 °C}} hanaqpi | Azufre rawrakun                                             |
-| {{1200–1400 °F; 649–760 °C}}-kama | Kikin carbón rawrakun; puka ruphaypa ñawpaqninpim tukunan   |
-|       {{1544 °F; 840 °C}} hanaqpi | Carbonato de calcio t'aqakun                                |
+|                       Temperatura | Imataq kan                                                 |
+| --------------------------------: | ---------------------------------------------------------- |
+|        {{300–500 °F; 149–260 °C}} | K'askachiqkuna rawrakun                                    |
+|           Yaqa {{450 °F; 232 °C}} | Orgánico materia rawrayta qallarin                         |
+|           {{700 °F; 371 °C}}-kama | Kay temperatura hanaqkama unuqa mitumanta lluqsichkanraqmi |
+|       {{842–1022 °F; 450–550 °C}} | Química hina watasqa unu mitumanta lluqsin                 |
+|               {{1063 °F; 573 °C}} | Cuarzo inversión: mitupi sílice qunqayllamanta hatunyan    |
+|       {{1112 °F; 600 °C}} hanaqpi | Azufre rawrakun                                            |
+| {{1200–1400 °F; 649–760 °C}}-kama | Kikin carbón rawrakun; puka ruphaypa ñawpaqninpim tukunan  |
+|       {{1544 °F; 840 °C}} hanaqpi | Carbonato de calcio t'aqakun                               |
 
 **Cuarzo inversión** nisqaqa mitupi sílice {{1063 °F; 573 °C}}-pi qunqayllamanta hatun kayninta t'ikrasqanmi: wichaspa hatunyan, uraykuspataq huch'uyan. L&Lpa Slow Bisque nisqanqa chaypi allillamanta purin, {{1000 °F; 538 °C}}-manta {{1100 °F; 593 °C}}-kama. Digitalfireqa chayta "unnecessary for bisque firings" ("bizcocho ruphachiykunapaq mana necesario") nispa tarirqa, Ceramics Monthlytaq nin aswanqa sinchi piezakunata chiriyachispa chaniyuq kasqanta. Allillamanta puriyqa pisillatam qullqichan, chaymi yuyaychayniyku rakhu piezakunapaq waqaychanapaq.
 
@@ -410,16 +410,16 @@ Label: Bizcochopi imakunataq kan
 
 Table: Candling temperaturakuna
 
-| Willakuq             | Candling                                                                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly     | T'impunanpa ñawpaqllanpi; qhawarina, {{25 °F/h; 14 °C/h}}-pi 4–6 ura wichay                                                           |
-| L&L ñawpaq q'uñichiy | {{150–200 °F; 66–93 °C}}-pi sayachiy                                                                                                  |
-| Digitalfire          | {{250 °F; 121 °C}}-pi sayachiy, t'impuy uraypi sayachiyqa "does not expel all the water" ("manam tukuy yakuta qarqunchu") nisqanrayku |
+| Willakuq             | Candling                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Ceramics Monthly     | T'impunanpa ñawpaqllanpi; qhawarina, {{25 °F/h; 14 °C/h}}-pi 4–6 ura wichay                                                          |
+| L&L ñawpaq q'uñichiy | {{150–200 °F; 66–93 °C}}-pi sayachiy                                                                                                 |
+| Digitalfire          | {{250 °F; 121 °C}}-pi sayachiy, t'impuy uraypi sayachiyqa "does not expel all the water" ("manam tukuy unuta qarqunchu") nisqanrayku |
 
 > [!NOTE]
 > Ñuqaykuq qallariyniyku: allillamanta wichay yaqa {{250 °F; 121 °C}}-kama, manam aswanchu, hinaspa ventiladorpi espejo ch'uya qhipakunankama sayachiy. Rakhu utaq hump'uyuq piezakunapaqqa tuta pacha sayachiy.
 
-**Espejo prueba**: wasi temperaturayuq espejota ventilador t'uqupi utaq kicharisqa tapaq urayninpi hap'iy. Pukyuyaptinqa yaku lluqsichkanraqmi; suyay, hinaspa musuqmanta pruebay.
+**Espejo prueba**: wasi temperaturayuq espejota ventilador t'uqupi utaq kicharisqa tapaq urayninpi hap'iy. Pukyuyaptinqa unu lluqsichkanraqmi; suyay, hinaspa musuqmanta pruebay.
 
 ### Controlador programakuna
 
@@ -465,7 +465,7 @@ Esmalte ruphachiyqa bizcocho hawapi esmalteta vidrioman chullichin. Aswan qallar
 ### Esmalte ruphachiypaq cargay
 
 - Esmaltesqa piezakunaqa manam paykunapura nitaq perqakunata llamiykunankuchu: yaqa ½ pulgada (13 mm) saqiy.
-- Chakinmanta esmalteta qichuy (**dry-footing**), utaq pisi ruphay piezakunata **trípodekunapi** churay, puntayuq huch'uy sayachiqkuna. Gres, porcelana piezakunaqa manam trípodekunapi sayanankuchu, chay temperaturakunapi k'askakunku; rantinpi hatun ruphay separadorta utaq sílice aqutam llamk'achiy.
+- Chakinmanta esmalteta qichuy (**dry-footing**), utaq pisi ruphay piezakunata **trípodekunapi** churay, puntayuq huch'uy sayachiqkuna. Gres, porcelana piezakunaqa manam trípodekunapi sayanankuchu, chay temperaturakunapi k'askakunku; rantinpi hatun ruphay horno tablakunata amachaq llut'anata (kiln wash) utaq sílice aqutam llamk'achiy.
 - Placakunaq patanmanta perqakama utaq sitterkama pisimanta pisi 1 pulgada (25 mm) saqiy.
 
 ### Controlador programakuna
@@ -509,7 +509,7 @@ PLC6DS-qa yaqa 9 ura 36 minutotam qhipan. Aswan suruq esmaltekunapaqqa, Digitalf
 
 ### Allillamanta chiriyachiy
 
-**Allillamanta chiriyachiy** niyta munan controlador hornota churasqa utqaypi chiriyachisqanta, kikillanmanta urmanqanta saqinanpa rantinpi. Digitalfireq C6DHSC-ninqa PLC6DS-mi, qhipanpitaq {{150 °F/h; 83 °C/h}}-pi chiriyachiy {{2100 °F; 1148 °C}}-manta {{1400 °F; 760 °C}}-kama, chaymanta wañuchiy. Chayqa "improves brilliance and surface quality" ("lliphiyninta hawanpa allin kayninta allinyachin"), rutilo anqaskunatapas yanapan, ichaqa allillamanta chiriyachiyqa "can increase matteness" ("mate kayta yapanmanmi") (huk mate esmalte ch'akiyarqa), hornoq relénkunaq kawsayninta pisiyachinmanpas. L&Lpas cono 6-paq allillamanta chiriyachiy programatam apachimun:
+**Allillamanta chiriyachiy** niyta munan controlador hornota churasqa utqaypi chiriyachisqanta, kikillanmanta uraykunanta saqinanpa rantinpi. Digitalfireq C6DHSC-ninqa PLC6DS-mi, qhipanpitaq {{150 °F/h; 83 °C/h}}-pi chiriyachiy {{2100 °F; 1148 °C}}-manta {{1400 °F; 760 °C}}-kama, chaymanta wañuchiy. Chayqa "improves brilliance and surface quality" ("lliphiyninta hawanpa allin kayninta allinyachin"), rutilo anqaskunatapas yanapan, ichaqa allillamanta chiriyachiyqa "can increase matteness" ("mate kayta yapanmanmi") (huk mate esmalte ch'akiyarqa), hornoq relénkunaq kawsayninta pisiyachinmanpas. L&Lpas cono 6-paq allillamanta chiriyachiy programatam apachimun:
 
 Table: L&L "User 6": cono 6 esmaltekunapaq allillamanta chiriyachiy
 Label: L, L allillamanta chiriyachiy
@@ -604,22 +604,22 @@ Placa conokuna manaraq urmaykuptin sitter wañuchiptinqa, hamuq kutipi sitterpi 
 
 ### Pirómetrota llamk'achiy
 
-**Pirómetro** nisqaqa **termoparmanta** ñawinchasqa temperatura tupuqmi, hornoq perqanta pasaq ruphay sonda. Horno hayk'a utqayta wichasqanta rikuchin, chhaynapi cono tablapi allin columnata akllanaykipaq. Ichaqa perqa qayllapim ñawinchan, manam piezakunapichu, pisi pisitataq pantayta qallarin. L&Lqa willan K rikch'aq termoparqa cono 6 ruphachiykunata kutipaspa {{25 °F; 14 °C}}-manta aswantam pantanman, "a difference greater than a full cone" ("hunt'a conomanta aswan mana kikin kay"), sapanmanta sayaq conotaq {{4 °F; 2 °C}}-manta mana aswantachu t'ikrakun. Ortonqa nin pirómetrokunaqa wakin kutipi musuqmanta calibrasqa kananmi, conokunawantaq chaykunata qhawanki.
+**Pirómetro** nisqaqa **termoparmanta** ñawinchasqa temperatura tupuqmi, hornoq perqanta pasaq ruphay sonda. Horno hayk'a utqayta wichasqanta rikuchin, chhaynapi cono tablapi allin columnata akllanaykipaq. Ichaqa perqa qayllapim ñawinchan, manam piezakunapichu, pisi pisitataq pantayta qallarin. L&Lqa willan K rikch'aq termoparqa cono 6 ruphachiykunata kutipaspa {{25 °F; 14 °C}}-manta aswantam pantanman, "a difference greater than a full cone" ("hunt'a conomanta aswan mana kikin kay"), sapanmanta sayaq conotaq {{4 °F; 2 °C}}-kamallam t'ikrakun. Ortonqa nin pirómetrokunaqa wakin kutipi musuqmanta calibrasqa kananmi, conokunawantaq chaykunata qhawanki.
 
 ## Wayrachiy, qhawaykuy, seguridadpas {#venting}
 
 ### Wayrachiy
 
-Ruphachiypa qallariyninpi, mitupas esmaltepas yaku wapsitam q'usnikunatapas lluqsichinku, monóxido de carbono nisqatapas, esmaltekunataq ruphachiypa qhipanpipas miyuyuq q'usnikunata lluqsichiyta atinkum. L&Lqa chaykunata wayrachiyta "essential" ("mana saqiy atina") nispa nin. Mana ventilación sistemayuq kaspaqa, chayqa niyta munan qallariy patakunapi tapa huk chikan kicharisqa, qhawana t'uqukunapas kicharisqa, hanaqpi ruwaykunapi hina; kay pachapi q'uñichiyta allillamanta purichiypas carbón rawrananpaq yanapanmi. Mana ventiladoryuq hornopi, Dawson, sitterta ruraq, ninmi hanaq qhawana t'uquta tukuy ruphachiy kicharisqata saqinaykita: wayrachiyqa "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly" ("hornoq metal partenkuna waqllikuyninta pisiyachinqa, tubo conjuntoq kawsayninta aswan unayyachinqa"). **Downdraft ventilador** (hornoman churasqa electricidadwan llamk'aq ventilador) chayta t'ikran. Payqa wayrachin, chaymi Ortonqa nin tapapas qhawana t'uqukunapas tukuy ruphachiy wichq'asqa qhipakunanku, conokunata qhawanapaqlla mana, L&Ltaq nin ventiladorta hap'ichisqata saqinaykita qhawana t'uqukunatataq wichq'anaykita.
+Ruphachiypa qallariyninpi, mitupas esmaltepas unu wapsitam q'usnikunatapas lluqsichinku, monóxido de carbono nisqatapas, esmaltekunataq ruphachiypa qhipanpipas miyuyuq q'usnikunata lluqsichiyta atinkum. L&Lqa chaykunata wayrachiyta "essential" ("mana saqiy atina") nispa nin. Mana ventilación sistemayuq kaspaqa, chayqa niyta munan qallariy patakunapi tapa huk chikan kicharisqa, qhawana t'uqukunapas kicharisqa, hanaqpi ruwaykunapi hina; kay pachapi q'uñichiyta allillamanta purichiypas carbón rawrananpaq yanapanmi. Mana ventiladoryuq hornopi, Dawson, sitterta ruraq, ninmi hanaq qhawana t'uquta tukuy ruphachiy kicharisqata saqinaykita: wayrachiyqa "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly" ("hornoq metal partenkuna waqllikuyninta pisiyachinqa, tubo conjuntoq kawsayninta aswan unayyachinqa"). **Downdraft ventilador** (hornoman churasqa electricidadwan llamk'aq ventilador) chayta t'ikran. Payqa wayrachin, chaymi Ortonqa nin tapapas qhawana t'uqukunapas tukuy ruphachiy wichq'asqa qhipakunanku, conokunata qhawanapaqlla mana, L&Ltaq nin ventiladorta hap'ichisqata saqinaykita qhawana t'uqukunatataq wichq'anaykita.
 
-Cuarto wayrachiypaq, monóxido de carbono alarmakunapaqpas, [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing), [Ama ayllu-masiykita hampi-ruruwan wañuchiychu](/guides/home-safety) qhaway.
+Cuarto wayrachiypaq, monóxido de carbono alarmakunapaqpas, [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing), [Ama ayllu-masiykita miyuwan wañuchiychu](/guides/home-safety) qhaway.
 
 ### Horno ruphachkaptin
 
 - Qhawana t'uqunta IR-paq rurasqa shade 3 soldador antiyuqunawanlla qhaway; inti antiyuqunaqa manam aypanchu. Skuttqa yuyaychan tapónkunata muyuchispa churanaykita mana urmanankupaq.
 - Qayllapi kay, hornota ruphachkaptin qhaway, aswanqa suyasqa tukunan pachapa qayllanpi; sitterqa manam mana pantaq aparatochu. Tukuy ruphachiy pacha wasipi rikch'asqa hatun runa kaptinlla ruphachiy.
 - Ama hayk'aqpas rawrayta atiq ima hawapipas nitaq qayllanpipas ruphachiychu, k'ullu pampa utaq alfombra hina.
-- Manualniykipi karu kaykunata waqaychay. Qillqasqa yupaykunaqa 12 pulgada (30 cm)-manta 3 pies (91 cm)-kama kanku; manual mana imatapas niptinqa, perqakunamanta 18 pulgada (46 cm), rawrayta atiq imamantapas 3 pies (91 cm) aswan seguro akllaymi.
+- Manualniykipi karu kaykunata waqaychay. Qillqasqa yupaykunaqa 12 pulgada (30 cm)-manta 3 pie (91 cm)-kama kanku; manual mana imatapas niptinqa, perqakunamanta 18 pulgada (46 cm), rawrayta atiq imamantapas 3 pie (91 cm) aswan seguro akllaymi.
 - Sitterpa pesanpa muyuriqninta ch'uyata waqaychay urmayta atinanpaq.
 - Ruphachiy tukuptin, interruptorkunata wañuchiy, interruptor generaltapas wañuchiy.
 
@@ -654,16 +654,16 @@ Sapa ruphachiyta qillqay: p'unchayta, hornota, cargata, programata utaq interrup
 
 ### Kiln sitterta qhaway
 
-- Cono sayachiqkunata pichay "after every firing with a small wire brush" ("sapa ruphachiypa qhipanpi huch'uy alambre escobillawan"). Separador utaq chullisqa cono mana lluqsiptinqa, sayachiqkunata muyuchiy utaq rantiy; Dawsonqa iskay parta waqaychanaykitam yuyaychan.
+- Cono sayachiqkunata pichay "after every firing with a small wire brush" ("sapa ruphachiypa qhipanpi huch'uy alambre escobillawan"). Amachaq llut'ana utaq chullusqa cono mana lluqsiptinqa, sayachiqkunata muyuchiy utaq rantiy; Dawsonqa iskay parta waqaychanaykitam yuyaychan.
 - "NEVER USE LUBRICANTS OF ANY KIND ON THE KILN-SITTER." ("AMA HAYK'AQPAS KILN-SITTERPI IMA RIKCH'AQ LUBRICANTETAPAS LLAMK'ACHIYCHU.")
 - Sapa 6–12 killapi pivotta qhaway, k'umusqa utaq mullk'usqa varillatataq rantiy.
 - Sapa 30 ruphachiypi calibradorwan allichasqanta qhaway.
 
 :::
 
-### Placakuna, separadorpas
+### Placakuna, amachaq llut'anapas
 
-Separador (engobe refractario) placakunata sut'urimuq esmaltemanta waqaychan, ruphachisqa mankakunatataq huqarikunanpaq saqin. Sapa placaq hanaqninpi hornoq pampanpi ima churay, "about the thickness of a postcard" ("yaqa postal tarjeta rakhu hina"). L&Lpa aswan allin ruwayninqa kimsa llañu capakunam, atikuptinqa capakunaq chawpinpi ruphachisqa. Achka saña ruraqkunapas suruq esmalteyuq piezakunata **galletapi** churanku, sut'urimuqta hap'iq bizcocho disco. Kayqa riqsisqa ruwaymi, ichaqa manam ima horno ruraqpa yuyaychayninta chaymanta tarirqanchikchu.
+Horno tablakunata amachaq llut'anaqa (kiln wash) placakunata sut'urimuq esmaltemanta waqaychan, ruphachisqa mankakunatataq huqarikunanpaq saqin. Sapa placaq hanaqninpi hornoq pampanpi ima churay, "about the thickness of a postcard" ("yaqa postal tarjeta rakhu hina"). L&Lpa aswan allin ruwayninqa kimsa llañu capakunam, atikuptinqa capakunaq chawpinpi ruphachisqa. Achka saña ruraqkunapas suruq esmalteyuq piezakunata **galletapi** churanku, sut'urimuqta hap'iq bizcocho disco. Kayqa riqsisqa ruwaymi, ichaqa manam ima horno ruraqpa yuyaychayninta chaymanta tarirqanchikchu.
 
 ### Resistenciakuna
 

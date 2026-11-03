@@ -364,10 +364,10 @@
   },
   "hazards": {
     "heading": "Ihe ize ndụ",
-    "intro": "Dịka ndekọ ihe ọ bụla si enye ha; nke ọbá akwụkwọ ọkọlọtọ si na mpempe akwụkwọ data nchekwa nke ndị na-ere ha.",
+    "intro": "Dịka ndekọ ihe ọ bụla si enye ha; nke ọbá akwụkwọ ọkọlọtọ si na mpempe data nchekwa nke ndị na-ere ha.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {Enyeghị ihe ize ndụ maka {list}: lee mpempe akwụkwọ data nchekwa so ha bịa.}}",
-    "safety": "Ihe glaze kpọrọ nkụ na-eme uzuzu, ị ghaghị igbochi ya ịbanye na ngụgụ gị, ọbụna uzuzu site n'ihe a na-ekewaghị dịka ihe ize ndụ. Lee <mixing>Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha</mixing>. Ọ bụrụ na ụmụaka ma ọ bụ anụ ụlọ nọ nso, lekwaa <home>Ewela nsí gbuo ezinụlọ gị</home>. Ebe mpempe akwụkwọ data nchekwa nke ihe kwuru karịa, soro ya."
+    "unknown": "{count, plural, other {Enyeghị ihe ize ndụ maka {list}: lee mpempe data nchekwa so ha bịa.}}",
+    "safety": "Ihe glaze kpọrọ nkụ na-eme uzuzu, ị ghaghị igbochi ya ịbanye na ngụgụ gị, ọbụna uzuzu site n'ihe a na-ekewaghị dịka ihe ize ndụ. Lee <mixing>Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha</mixing>. Ọ bụrụ na ụmụaka ma ọ bụ anụ ụlọ nọ nso, lekwaa <home>Ewela nsí gbuo ezinụlọ gị</home>. Ebe mpempe data nchekwa nke ihe kwuru karịa, soro ya."
   },
   "compare": {
     "heading": "Tụlee usoro abụọ",
@@ -1024,7 +1024,7 @@
     "hold": "Idebe n'okpomọkụ kacha elu (nkeji)",
     "schedule": "Ndetu usoro oge",
     "schedulePlaceholder": "Debe nkeji 10, jụọ oyi nwayọọ...",
-    "witness": "Cone onye akaebe kwadoro ya",
+    "witness": "Cone akaebe kwadoro ya",
     "foodSurface": "Maka elu nri (liner)",
     "liner": {
       "note": "Ịdị mma maka nri dabere n'ịgba glaze a ọkụ ruo cone a nwalere ya na ya: glaze esighị ọkụ zuru ezu nwere ike ịhapụ metal pụta (leach).",
@@ -1063,7 +1063,7 @@
     },
     "rateText": "{rate} kwa elekere n'elekere ikpeazụ",
     "holdText": "e debere {minutes} min",
-    "witnessText": "e lelere ya na cone onye akaebe",
+    "witnessText": "e lelere ya na cone akaebe",
     "asGiven": "Ịgba ọkụ, dịka onye dere ya nyere:",
     "filterCone": "Gosi usoro maka cone",
     "anyCone": "Cone ọ bụla",

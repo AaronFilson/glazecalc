@@ -128,17 +128,17 @@ The home-safety title keeps the owner's blunt form. **Native check** on all titl
 
 ### 2.2 Materials and oxides
 
-| English               | af                    | Notes                        |
-| --------------------- | --------------------- | ---------------------------- |
-| raw materials         | grondstowwe           | "Materials" → "Grondstowwe". |
-| feldspar              | veldspaat             | HAT.                         |
-| kaolin, ball clay     | kaolien; balklei      | _balklei_ **Native check**   |
-| silica, flint         | silika                | School chemistry.            |
-| whiting               | kalksteen (whiting)   | **Native check**             |
-| frit                  | frit                  | Loan.                        |
-| colorant, stain       | kleurstof; stain      | **Native check**             |
-| lead, barium, cadmium | lood, barium, kadmium | Symbols kept (Pb, Ba, Cd).   |
-| lithium, boron, zinc  | litium, boor, sink    | School chemistry.            |
+| English               | af                     | Notes                                                                         |
+| --------------------- | ---------------------- | ----------------------------------------------------------------------------- |
+| raw materials         | grondstof; grondstowwe | "Materials" → "Grondstowwe" everywhere, incl. the page link; not _materiaal_. |
+| feldspar              | veldspaat              | HAT.                                                                          |
+| kaolin, ball clay     | kaolien; balklei       | _balklei_ **Native check**                                                    |
+| silica, flint         | silika                 | School chemistry.                                                             |
+| whiting               | kalksteen (whiting)    | **Native check**                                                              |
+| frit                  | frit                   | Loan.                                                                         |
+| colorant, stain       | kleurstof; stain       | **Native check**                                                              |
+| lead, barium, cadmium | lood, barium, kadmium  | Symbols kept (Pb, Ba, Cd).                                                    |
+| lithium, boron, zinc  | litium, boor, sink     | School chemistry.                                                             |
 
 ### 2.3 Clay, ware and firing stages
 
@@ -153,24 +153,27 @@ The home-safety title keeps the owner's blunt form. **Native check** on all titl
 
 ### 2.4 Kilns, cones and firing
 
-| English              | af                   | Notes                                    |
-| -------------------- | -------------------- | ---------------------------------------- |
-| kiln                 | oond (keramiekoond)  | HAT.                                     |
-| electric / gas kiln  | elektriese / gasoond |                                          |
-| firing, to fire      | bak; die bak         | **Native check** (_brand_ is also heard) |
-| cone                 | kegel                | **Native check**                         |
-| kiln shelf           | oondrak              | **Native check**                         |
-| oxidation, reduction | oksidasie, reduksie  |                                          |
-| cooling              | afkoeling            |                                          |
+| English              | af                   | Notes                                                 |
+| -------------------- | -------------------- | ----------------------------------------------------- |
+| kiln                 | oond (keramiekoond)  | HAT.                                                  |
+| electric / gas kiln  | elektriese / gasoond |                                                       |
+| firing, to fire      | bak; die bak         | **Native check** (_brand_ is also heard)              |
+| cone                 | kegel                | **Native check**                                      |
+| kiln shelf           | oondrak              | **Native check**                                      |
+| kiln wash            | rakdeklaag           | Coating on shelves; never _oondwas_. **Native check** |
+| witness cone         | getuiekegel          | **Native check**                                      |
+| inch, foot           | duim, voet           |                                                       |
+| oxidation, reduction | oksidasie, reduksie  |                                                       |
+| cooling              | afkoeling            |                                                       |
 
 ### 2.5 Defects
 
-| English   | af                       | Notes            |
-| --------- | ------------------------ | ---------------- |
-| crazing   | haarlynbarsies (crazing) | **Native check** |
-| crawling  | kruip (crawling)         | **Native check** |
-| pinholing | speldeprikgaatjies       | **Native check** |
-| leaching  | uitloging                | **Native check** |
+| English              | af                         | Notes                                                                           |
+| -------------------- | -------------------------- | ------------------------------------------------------------------------------- |
+| crazing              | haarlynbarsies (crazing)   | **Native check**                                                                |
+| crawling             | kruip (crawling)           | **Native check**                                                                |
+| pinholing            | speldeprikgaatjies         | **Native check**                                                                |
+| leaching, leach test | uitloging; uitlogingstoets | Metals in general (lead, cadmium, barium …), never lead alone. **Native check** |
 
 ### 2.6 Making and applying glaze
 
@@ -187,17 +190,25 @@ The home-safety title keeps the owner's blunt form. **Native check** on all titl
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures as the
 English writes them (Pb, BaCO₃, 0,025 mg/m³ with the decimal comma).
 
-| English                       | af                            | Notes                                            |
-| ----------------------------- | ----------------------------- | ------------------------------------------------ |
-| dust                          | stof                          |                                                  |
-| respirable crystalline silica | inasembare kristallyne silika | **Native check**                                 |
-| silicosis                     | silikose                      |                                                  |
-| respirator                    | respirator; asemhalingsmasker | **Native check**                                 |
-| poison, toxic                 | gif; giftig                   |                                                  |
-| food safe                     | voedselveilig                 |                                                  |
-| lead-free                     | loodvry                       |                                                  |
-| at most / no more than        | hoogstens; nie meer as … nie  | "less than" is _minder as_: never for "at most". |
-| at least                      | ten minste                    |                                                  |
+| English                       | af                                   | Notes                                                                       |
+| ----------------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
+| dust                          | stof                                 |                                                                             |
+| respirable crystalline silica | respireerbare kristallyne silika     | Always keep _kristallyne_; not _inasembare_ (= inhalable). **Native check** |
+| safety data sheet (SDS)       | veiligheidsdatablad (SDS)            | Abbreviation SDS, as on the documents; not VDB.                             |
+| combustible                   | brandbaar                            |                                                                             |
+| opaque, opacifier             | ondeurskynend / opaak; vertroebelaar | Stops light (usually white), never dark. **Native check**                   |
+| soluble, dissolve             | oplosbaar; oplos                     | In water or the body; never _smelt_ (kiln).                                 |
+| clear glaze                   | deursigtige glasuur                  | Transparent, not white.                                                     |
+| early, too soon               | vroeg; te vroeg                      | Not "in the morning".                                                       |
+| less, fewer, reduce           | minder; verminder                    | Never "a little more".                                                      |
+| some                          | 'n mate van                          | "a little" is _'n bietjie_.                                                 |
+| silicosis                     | silikose                             |                                                                             |
+| respirator                    | respirator; asemhalingsmasker        | **Native check**                                                            |
+| poison, toxic                 | gif; giftig                          |                                                                             |
+| food safe                     | voedselveilig                        |                                                                             |
+| lead-free                     | loodvry                              |                                                                             |
+| at most / no more than        | hoogstens; nie meer as … nie         | "less than" is _minder as_: never for "at most".                            |
+| at least                      | ten minste                           |                                                                             |
 
 **Who to call.** The translation names only what the English and the region data print. For the record:
 

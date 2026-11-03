@@ -5,7 +5,7 @@ lead: Waxa glaze laga sameeyo, sida kiln-ku ugu beddelo dhalo, iyo eray kasta oo
 
 ## Waa maxay glaze {#what-a-glaze-is}
 
-**Glaze** waa lakab khafiif ah oo dhalo ah oo dheriga ku dhalaalay. Glazy, keydka furan ee hababka glaze-ka, wuxuu ku tilmaamaa "qaab dhalo ah oo loo habeeyay inuu dhalaalo oo ku dhego dhoobada heerkulyo gaar ah". Wuxuu ku dul fadhiyaa sida lakab budo ah, kiln-ka (foornada dhoobada lagu dubo) gudihiisana wuxuu ku dhalaalaa oo noqdaa lakab dhalo u eg oo dhoobada xira, sidaas darteed dheriga waxaa yaraanaya inuu dhuuqo, wasakhoobo ama daalo. Marka gubiddu ugu kulul tahay, waxa dhalaalay wuxuu sidoo kale la falgalaa dhoobada, inta badan wuxuuna samaystaa lakab u dhexeeya labadooda oo glaze-ka xaggiisa ku qabta. Earthenware-ka, glaze-ku wuxuu dusha ka fadhiyaa sida lakab gooni ah; stoneware-ka, wuxuu ku dhalaalaa jirka dhoobada.
+**Glaze** waa lakab khafiif ah oo dhalo ah oo dheriga ku dhalaalay. Glazy, keydka furan ee hababka glaze-ka, wuxuu ku tilmaamaa "qaab dhalo ah oo loo habeeyay inuu dhalaalo oo ku dhego dhoobada heerkulyo gaar ah". Wuxuu ku dul fadhiyaa sida lakab budo ah, kiln-ka (foornada dhoobada lagu dubo) gudihiisana wuxuu ku dhalaalaa oo noqdaa lakab dhalo u eg oo dhoobada xira, sidaas darteed dheriga waxaa yaraanaya inuu biyo ka daadiyo, wasakhoobo ama daalo. Marka gubiddu ugu kulul tahay, waxa dhalaalay wuxuu sidoo kale la falgalaa dhoobada, inta badan wuxuuna samaystaa lakab u dhexeeya labadooda oo glaze-ka xaggiisa ku qabta. Earthenware-ka, glaze-ku wuxuu dusha ka fadhiyaa sida lakab gooni ah; stoneware-ka, wuxuu ku dhalaalaa jirka dhoobada.
 
 Hab wuxuu taxaa walxo ceeriin ah, sida feldspar, whiting iyo kaolin. Kiln-ka gudihiisa, qayb ka mid ah walax kasta waxay u baxdaa gaas ahaan (biyo ama kaarboon laba-oksaydh), inta kalena waxay noqotaa **oksaydh** (oxides): isku-dhis ka kooban curiye iyo oksijiin, sida silica (SiO₂) ama kaalshiyam oksaydh (CaO). Dhalada la gubay waxay ka samaysan tahay oksaydhyo, sidaas darteed dhoobo-sameeyayaashu glaze-ka waxay ku sharraxaan iyaga. Oksaydh kastaa wuxuu qabtaa mid ka mid ah saddex shaqo.
 
@@ -32,7 +32,7 @@ Hab wuxuu taxaa walxo ceeriin ah, sida feldspar, whiting iyo kaolin. Kiln-ka gud
 
 ### Lakabyada iyo qallajinta
 
-**Slip** waa dhoobo biyo ku dhex jirta, oo loo isticmaalo shubid, isku-xirid ama qurxin. **Engobe** waa lakab slip u eg, inta badan midab leh, oo ay ku jiraan walxo badan oo aan dhoobo ahayn. **Underglaze** waa slip midab leh ama qurxin oksaydh ah, oo inta badan lagu daboolo glaze daah-furan.
+**Slip** waa dhoobo biyo ku dhex jirta, oo loo isticmaalo shubid, isku-xirid ama qurxin. **Engobe** waa lakab slip u eg, inta badan midab leh, oo ay ku jiraan walxo badan oo aan dhoobo ahayn. **Underglaze** waa slip midab leh ama qurxin oksaydh ah, oo inta badan lagu daboolo glaze hufan.
 
 Alaabta aan la gubin waa **greenware** (ilaha way isku khilaafsan yihiin in erayga uu koobayo dhammaan alaabta aan la gubin ama kaliya tan qallalan). Marka ay qallasho waxay noqotaa **leather-hard**, adag laakiin wax yar qoyan, heerka la jarjaro oo gacmaha lagu dhejiyo; kadibna **bone dry**, oo aan biyo xor ah ku harin, aad u jilicsan oo diyaar u ah gubid.
 
@@ -71,9 +71,9 @@ Label: Heerarka gubidda
 | Gubid sare  | 9–10      | 2,300–2,345 | 1,260–1,285 | Stoneware iyo porcelain        |
 
 > [!NOTE]
-> Gubiddaada ku magacow oo ku barnaamij cone, heerkulyadana u qaado kuwo qiyaas ah. **Witness cone** (cone markhaati) oo dul saaran khaanadda dheryaha dhexdooda, ama **cone pack** saddex ah (cone-yada hagaha, gubidda iyo ilaalinta), ayaa muujiya heatwork-ka dheryahaagu runtii heleen.
+> Gubiddaada ku magacow oo ku barnaamij cone, heerkulyadana u qaado kuwo qiyaas ah. **Cone markhaati ah** (witness cone) oo dul saaran khaanadda dheryaha dhexdooda, ama **cone pack** saddex ah (cone-yada hagaha, gubidda iyo ilaalinta), ayaa muujiya heatwork-ka dheryahaagu runtii heleen.
 
-Heerkulyada la daabacay way kala duwan yihiin. Glazy wuxuu gubidda sare, cone 9–11, ku qiyaasaa {{2336–2390 °F; 1280–1310 °C}}, taas oo la mid ah tiirka degdegga ah ee Orton, Digitalfire-na wuxuu sheegaa in kiln-ka badankiisu gaaro cone 6 qiyaastii {{2200 °F; 1204 °C}}. Taladayadu: isticmaal tirooyinka xawaaraha dhexe ee Orton, sida hagahani sameeyo, ku barnaamij cone, witness cone-na ha go'aamiyo.
+Heerkulyada la daabacay way kala duwan yihiin. Glazy wuxuu gubidda sare, cone 9–11, ku qiyaasaa {{2336–2390 °F; 1280–1310 °C}}, taas oo la mid ah tiirka degdegga ah ee Orton, Digitalfire-na wuxuu sheegaa in kiln-ka badankiisu gaaro cone 6 qiyaastii {{2200 °F; 1204 °C}}. Taladayadu: isticmaal tirooyinka xawaaraha dhexe ee Orton, sida hagahani sameeyo, ku barnaamij cone, cone markhaati ahina ha go'aamiyo.
 
 Waqooyiga Ameerika dibaddiisa, iibiyayaashu inta badan waxay bixiyaan °C halkii cone. Hermann Seger ayaa sameeyay cone-ka casriga ah, oo markii ugu horraysay laga isticmaalay Berlin 1886, UK-na waxay lahayd cone-yadeeda Staffordshire; lambarradooda looma malayn karo inay la mid yihiin kuwa Orton, mana helin jadwal lagu beddelo. [Gubidda kiln fudud](/guides/firing) ayaa cone-yada si faahfaahsan uga hadasha.
 
@@ -100,13 +100,13 @@ Tirada keliya ee ugu faa'iidada badan waa **saamiga silica iyo alumina** (silica
 Table: Waxa saamiga silica iyo alumina tilmaamo (Glazy)
 Label: Saamiga silica iyo alumina
 
-|     Saamiga | Akhriska Glazy                                                  |
-| ----------: | --------------------------------------------------------------- |
-| Qiyaastii 9 | Wuxuu tilmaamaa dhalaal dhalaalaya, haddii kulayl ku filan jiro |
-|         5–7 | Caadi u ah glaze-yo badan oo stoneware ah oo deggan             |
-|         3–5 | Waxay noqon kartaa matte ama si yar loo gubay                   |
+|     Saamiga | Akhriska Glazy                                             |
+| ----------: | ---------------------------------------------------------- |
+| Qiyaastii 9 | Wuxuu tilmaamaa dhalaal ifaya, haddii kulayl ku filan jiro |
+|         5–7 | Caadi u ah glaze-yo badan oo stoneware ah oo deggan        |
+|         3–5 | Waxay noqon kartaa matte ama si yar loo gubay              |
 
-Saami 5–7 ah keligiis ma saadaaliyo dhalaal ama matte: fluxes-ka, boron-ka iyo cone-ku dhammaantood xadka ayay dhaqaajiyaan. Glazy wuxuu glaze-yada deggan u bixiyaa isku-dheelitirka flux ee caadiga ah 0.2 R₂O iyo 0.8 RO, ilaa 0.3 R₂O iyo 0.7 RO. Alkali badan waxa dhalaalay wuxuu ka dhigaa mid aad u qulqula wuxuuna kordhiyaa ballaarintiisa, sidaas darteedna khatarta crazing-ka.
+Saami 5–7 ah keligiis ma saadaaliyo ifid ama matte: fluxes-ka, boron-ka iyo cone-ku dhammaantood xadka ayay dhaqaajiyaan. Glazy wuxuu glaze-yada deggan u bixiyaa isku-dheelitirka flux ee caadiga ah 0.2 R₂O iyo 0.8 RO, ilaa 0.3 R₂O iyo 0.7 RO. Alkali badan waxa dhalaalay wuxuu ka dhigaa mid aad u qulqula wuxuuna kordhiyaa ballaarintiisa, sidaas darteedna khatarta crazing-ka.
 
 ### Loss on ignition
 
@@ -149,11 +149,11 @@ Label: Walxaha glaze ee caadiga ah
 | Whiting (kaalshiyam kaarboonayt)                  | CaO                      | Flux-ka kaalshiyamka ee ugu weyn; wuxuu sii daayaa kaarboon laba-oksaydh                                                                                                   |
 | Wollastonite                                      | CaO, SiO₂                | Kaalshiyam aan kaarboon laba-oksaydh lahayn                                                                                                                                |
 | Dolomite, talc                                    | MgO, oo leh CaO ama SiO₂ | Dusha matte xariir u eg; ballaarin hoose                                                                                                                                   |
-| Zinc oxide                                        | ZnO                      | Dhalaal iyo crystals; mid aad u badan wuxuu keeni karaa gurguurasho                                                                                                        |
+| Zinc oxide                                        | ZnO                      | Ifid iyo crystals; mid aad u badan wuxuu keeni karaa gurguurasho                                                                                                           |
 | Boron frits, Gerstley Borate, colemanite          | B₂O₃                     | Lagama maarmaan laga bilaabo cone 06 ilaa cone 6; frits waa "kuwo ka joogto badan oo ka milmid yar borates-ka ceeriin"                                                     |
 | Lithium carbonate                                 | Li₂O                     | Flux ballaarin hoose leh; waa qaali, sidaas darteed si yar ayaa loo isticmaalaa                                                                                            |
 | Strontium carbonate                               | SrO                      | Beddelka barium-ka ee sunta ka yar                                                                                                                                         |
-| Barium carbonate                                  | BaO                      | Waa sun marka uu ceeriin yahay; glaze-yada barium-ku ku badan yahay macdan ayay sii dayn karaan (leaching)                                                                 |
+| Barium carbonate                                  | BaO                      | Waa sun marka uu ceeriin yahay; glaze-yada barium-ku ku badan yahay biraha ayay sii dayn karaan (leaching)                                                                 |
 | Bentonite                                         | Sabbayn                  | Dhoobo aad u fiican, inta badan 1–3%, si ay u joojiso degitaanka                                                                                                           |
 
 > [!WARNING]
@@ -182,7 +182,7 @@ Label: Midabeeyayaasha caadiga ah
 | -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Cobalt         | 0.1–2% (ilaha way isku khilaafsan yihiin)              | Buluug, aad u xoog badan; xagga guduudka marka saldhiggu leeyahay magnesium                                                                               |
 | Iron           | 0.5–10%                                                | Bunni, tan iyo casaan oxidation-ka; reduction-ka, ½–2% wuxuu bixiyaa celadon, 5–6%-na tenmoku. Waa flux, sidaas darteed mid badan glaze-ka wuu qulquliyaa |
-| Copper         | 1–3%                                                   | Cagaar ama turquoise oxidation-ka, casaan reduction-ka. Wuxuu glaze-ka ka dhigi karaa mid macdan sii daaya (leaching)                                     |
+| Copper         | 1–3%                                                   | Cagaar ama turquoise oxidation-ka, casaan reduction-ka. Wuxuu glaze-ka ka dhigi karaa mid biraha sii daaya (leaching)                                     |
 | Chrome         | Ka yar 0.5% ilaa 2% (ilaha way isku khilaafsan yihiin) | Cagaar; bunni haddii saldhiggu leeyahay zinc, casaan khafiif ah (pink) haddii tin la socdo                                                                |
 | Manganese      | 2–10%                                                  | Bunni iyo guduud                                                                                                                                          |
 | Rutile         | Qiyaastii 2–5%                                         | Midab barbaro leh oo kala duwan; qallafsan ama matte wixii ka badan qiyaastii 5%                                                                          |
@@ -190,7 +190,7 @@ Label: Midabeeyayaasha caadiga ah
 
 Qadarka cobalt iyo chrome runtii waa lagu muransan yahay. Glazy wuxuu yiri 0.1% cobalt ah ayaa ku filan buluug; Glendale Community College wuxuu bixiyaa ½–2% ama ½–3% iyadoo ku xiran jawiga; Birdie Boone, Pottery Making Illustrated, wuxuu yiri 3% ama ka yar. Chrome-ka, Boone wuxuu yiri ka yar 0.5%, Glendale-na 2–3%. Jidka ammaanka ahi waa inaad ku bilowdo wax yar oo aad samayso **line blend**: saf test tiles ah oo hal walax ka tallaabsada wax yar ilaa wax badan.
 
-Glaze-ka saldhigga ah ayaa midabka beddela. Saldhig dhalaalaya oo daah-furan wuxuu bixiyaa midabka ugu iftiinka badan; saldhigyada satin iyo matte, oo inta badan alumina ku badan tahay, way demiyaan. Magnesium-ku cobalt-ka wuxuu u riixaa xagga guduudka, zinc-ku chrome-ka wuxuu u beddelaa bunni, chrome iyo tin-na waxay bixiyaan pink.
+Glaze-ka saldhigga ah ayaa midabka beddela. Saldhig ifaya oo daah-furan wuxuu bixiyaa midabka ugu iftiinka badan; saldhigyada satin iyo matte, oo inta badan alumina ku badan tahay, way demiyaan. Magnesium-ku cobalt-ka wuxuu u riixaa xagga guduudka, zinc-ku chrome-ka wuxuu u beddelaa bunni, chrome iyo tin-na waxay bixiyaan pink.
 
 ### Opacifiers
 
@@ -219,9 +219,9 @@ Ilaha way ku kala duwan yihiin hagaajinta koowaad. Glazy wuxuu soo jeediyaa in s
 > [!WARNING]
 > Alaab crazing ama shivering leh ha u isticmaalin cunto ama cabbitaan. Ilaha way isku khilaafsan yihiin in dheryaha crazing leh si ku filan loo nadiifin karo (mid wuxuu yiri mashiinka weelka dhaqa ayaa ku filan; mid kalena wuxuu alaabta shaqaynaysa ee crazing leh ku tilmaamaa mid cillad leh), sidaas darteed waxaan qaadanaynaa dhinaca taxaddarka.
 
-### Dhalaal iyo matte
+### Ifid iyo matte
 
-Dusha **dhalaalaya** (gloss) waa mid iftiin celiya oo siman, **satin** wuxuu leeyahay dhalaal yar, **matte** (aan dhalaalayn) waa mid aan iftiin lahayn. Dhalaalku wuxuu u baahan yahay dhalo si buuxda u dhalaashay. Matte wuxuu ka iman karaa alumina badan (saami silica iyo alumina oo hooseeya), fluxes sida kaalshiyam, magnesium, barium ama strontium oo samaysta crystals aad u yaryar marka glaze-ku qaboobo, ama gubid yar.
+Dusha **ifaya** (gloss) waa mid iftiin celiya oo siman, **satin** wuxuu leeyahay ifid yar, **matte** (aan ifayn) waa mid aan ifid lahayn. Ifiddu waxay u baahan tahay dhalo si buuxda u dhalaashay. Matte wuxuu ka iman karaa alumina badan (saami silica iyo alumina oo hooseeya), fluxes sida kaalshiyam, magnesium, barium ama strontium oo samaysta crystals aad u yaryar marka glaze-ku qaboobo, ama gubid yar.
 
 ### Cilladaha caadiga ah
 
@@ -233,20 +233,20 @@ Label: Cilladaha glaze ee caadiga ah
 | Cilladda                   | Waxay u egtahay                                                      | Sababaha caadiga ah                                                                                                | Hagaajinta koowaad                                                                                                    |
 | -------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | Crawling (gurguurasho)     | Glaze-ku wuxuu isu ururaa kuul ahaan, isagoo ka tagaya dhoobo qaawan | Bisque boodh ama dufan leh; lakab qaro weyn oo dhoobo badan oo dillaacay markuu qallalayay; zinc, zircon ama tin   | Nadiifi bisque-ka; mari lakab khafiif ah; calcine dhoobada qaarkeed; ku dar xiriiriye sida CMC gum                    |
-| Pinholing (daloolo yaryar) | Daloolo ama godad yaryar                                             | Gaas ka yimid jirka ama glaze-ka oo aan bogsan; glaze si yar loo gubay ama adag                                    | Ku hay heerkulka sare qiyaastii nus saac; mari lakab khafiif ah; zinc ama rutile yar                                  |
+| Pinholing (daloolo yaryar) | Daloolo ama godad yaryar                                             | Gaas ka yimid jirka ama glaze-ka oo aan bogsan; glaze si yar loo gubay ama adag                                    | Ku hay heerkulka sare qiyaastii nus saac; mari lakab khafiif ah; yaree zinc ama rutile                                |
 | Blistering (finan)         | Godad af badan                                                       | Inta badan gubid xad-dhaaf ah; lakabyo aad u qaro weyn; fluxes duula oo ka sarreeya qiyaastii {{2192 °F; 1200 °C}} | Ku gub heerkul hoose; mari lakab khafiif ah. Geesaha af badan alaabta shaqaynaysa way ka dhigaan mid aan ammaan ahayn |
 | Running (qulqul)           | Glaze-ku wuxuu ku qulqulaa khaanadda                                 | Alumina aad u yar; aad u qaro weyn, sida meesha shubiddu isku dul dhacaan; bir badan                               | Mari lakab khafiif ah; ku dar alumina; glaze-ka si fiican uga fogee lugta                                             |
 | Dunting                    | Dillaacyo dheriga ka yimid qaboojin ama kululayn                     | Qaboojin degdeg ah oo dhex marta quartz inversion, {{1063 °F; 573 °C}}; darbiyo aan sinnayn; ku habboonaan xun     | Si gaabis ah u dhex mar {{1063 °F; 573 °C}}, kor iyo hoos; darbiyo siman                                              |
 
 ## Ammaanka cuntada {#food-safety}
 
-**Leaching** (macdan ka soo baxda) waa bir ka milanta glaze la gubay oo gasha cunto ama cabbitaan, glaze-kuna wuxuu u ekaan karaa mid dhammaystiran oo weli sidaas samayn karaa. Tijaabooyinka sharciga ah waxay alaabta la gubay ku qooyaan dareere aashito ah waxayna cabbiraan rasaas (lead, Pb) iyo cadmium-ka ka soo baxa.
+**Leaching** (biraha ka soo baxa) waa bir ka milanta glaze la gubay oo gasha cunto ama cabbitaan, glaze-kuna wuxuu u ekaan karaa mid dhammaystiran oo weli sidaas samayn karaa. Tijaabooyinka sharciga ah waxay alaabta la gubay ku qooyaan dareere aashito ah waxayna cabbiraan rasaas (lead, Pb) iyo cadmium-ka ka soo baxa.
 
 ### Aan rasaas lahayn ma aha ammaan u ah cuntada
 
 Xeerarka US, EU, UK iyo Australia waxay xaddidaan rasaasta (Pb) iyo cadmium-ka ay alaabta la gubay sii dayso, ma aha waxa glaze-ku ka kooban yahay. "Aan rasaas lahayn" (lead-free) wuxuu ka saaraa hal khatar; ma aha qiimayn ammaanka cuntada. Oksaydhyo kale sidoo kale way soo baxaan: Glazy wuxuu ka digayaa in glaze-yada barium-ku ku badan yahay "ay sii dayn karaan macdan, guud ahaanna aysan ammaan u ahayn cuntada", Digitalfire wuxuu yiri copper "wuxuu glaze-ka ka dhigi karaa mid macdan sii daaya; tijaabi", Glazy-na mar dambe kuma talinayo glaze-yada rasaasta (Pb) leh alaabta shaqaynaysa.
 
-**Liner glaze** waa glaze deggan, inta badan daah-furan ama cad, oo loogu talagalay dusha taabata cuntada. Aragtidayada, mid aan lahayn midabeeye, barium, rasaas (Pb) ama lithium, oo si buuxda u dhalaala, aan crazing samayn oo si fiican u adkaysta, ayaa ah doorashada khatarta yar. Khatar yar ma aha caddayn.
+**Liner glaze** waa glaze deggan, inta badan hufan ama cad, oo loogu talagalay dusha taabata cuntada. Aragtidayada, mid aan lahayn midabeeye, barium, rasaas (Pb) ama lithium, oo si buuxda u dhalaala, aan crazing samayn oo si fiican u adkaysta, ayaa ah doorashada khatarta yar. Khatar yar ma aha caddayn.
 
 **Limit formulas** (Digitalfire wuxuu door biday **target formulas**) waxay bixiyaan xadka caadiga ah ee unity formula glaze-yada deggan ee cone gaar ah: target-yada cone 6 ee Digitalfire alumina waxay dhigaan 0.285–0.64, silica-na 2.4–4.7. Waxay kugu hagaan kiimiko sax ah laakiin waxba ma caddeeyaan; Digitalfire wuxuu ka fogaadaa erayga "limit" maxaa yeelay wuxuu tilmaamayaa in glaze-yada xadkaas ku jira "ay si uun ammaan u yihiin". Qalabka Glazecalc ee habka beddela wuxuu sheegaa marka habka cusub uu dhaafo xad la soo jeediyay, sida boron badan cone 6, iyo waxa glaze-ku u badan tahay inuu sameeyo.
 
@@ -258,7 +258,7 @@ US-da, alaabta dhoobada ee qurxinta ah ee u eg mid cuntada loo isticmaali karo w
 
 ### Tijaabinta
 
-FDA-du waxay tiri qalabka tijaabada guriga ee la masaxo wuxuu muujin karaa rasaas (Pb) soo bixi karta, laakiin Ceramics New Zealand waxay ka digaysaa in qalimaanta tijaabadu aan loogu talagalin dhoobada oo ay bixiyaan natiijooyin been ah oo togan. Natiijo togan u qaado sabab aad u joojiso isticmaalka alaabta, mid tabanna mid aan waxba caddayn. Tijaabada macdanta ka soo baxda (leach test) ee shaybaarka ee alaabta la gubay (ASTM C738 US-da; EN 1388 ama ISO 6486 Yurub) ayaa ah jawaabta dhabta ah.
+FDA-du waxay tiri qalabka tijaabada guriga ee la masaxo wuxuu muujin karaa rasaas (Pb) soo bixi karta, laakiin Ceramics New Zealand waxay ka digaysaa in qalimaanta tijaabadu aan loogu talagalin dhoobada oo ay bixiyaan natiijooyin been ah oo togan. Natiijo togan u qaado sabab aad u joojiso isticmaalka alaabta, mid tabanna mid aan waxba caddayn. Tijaabada biraha ka soo baxa (leach test) ee shaybaarka ee alaabta la gubay (ASTM C738 US-da; EN 1388 ama ISO 6486 Yurub) ayaa ah jawaabta dhabta ah.
 
 > [!WARNING]
 > "Ammaan u ah cuntada" macnaheedu waa glaze-kan, dhoobadan, oo lagu gubay cone-kan kiln-kan, oo sidan loo mariyay, wuxuu sii daayaa wax ka yar xadadka sharciga. Glazecalc wuxuu kaa caawin karaa inaad dhisto glaze deggan, **Replace lead**-na wuxuu dib u dhisi karaa hab hore oo rasaas (Pb) leh iyadoo aan rasaas lahayn, laakiin calculator-na ma shahaadayn karo dheri. Kaliya tijaabada alaabta la gubay ayaa awooda.
@@ -328,7 +328,7 @@ Midabeeye iyo stain (colorant and stain)
 : Bir oksaydh ama kaarboonayt ah oo glaze midab siisa; stain waa midabeeye warshad lagu sameeyay oo ka deggan.
 
 Cone
-: Haram dhoobo ah oo la qiyaasay oo ku qalloocda heatwork cayiman. Witness cone ayaa muujiya waxa dheryuhu heleen.
+: Haram dhoobo ah oo la qiyaasay oo ku qalloocda heatwork cayiman. Cone markhaati ah ayaa muujiya waxa dheryuhu heleen.
 
 Crawling (gurguurasho)
 : Glaze isu ururaya kuul ahaan gubidda, isagoo ka tagaya dhoobo qaawan.
@@ -372,8 +372,8 @@ Gubidda glaze-ka (glaze firing; UK: glost firing)
 Glaze fit (ku habboonaanta glaze-ka)
 : Sida ballaarinta glaze-ka iyo jirku isugu beegan yihiin; ku habboonaan fiican waxay glaze-ka uga tagtaa mid wax yar la cadaadiyay.
 
-Dhalaalaya, satin iyo matte (gloss, satin and matte)
-: Iftiin celiya oo siman; dhalaal yar; aan iftiin lahayn.
+Ifaya, satin iyo matte (gloss, satin and matte)
+: Iftiin celiya oo siman; ifid yar; aan ifid lahayn.
 
 Greenware
 : Alaab aan la gubin: leather-hard marka ay adag tahay laakiin qoyan tahay, bone dry marka aan biyo xor ah ku harin.
@@ -385,9 +385,9 @@ Kaolin (UK: china clay)
 : Dhoobo cad oo saafi ah oo bixisa alumina iyo silica; glaze-ka way sabbeysaa. Australia: Eckalite.
 
 Kiln wash
-: Lakab kulayl u adkaysta oo khaanadaha kiln-ka ka ilaaliya dhibcaha.
+: Lakab kulayl u adkaysta oo rafaha kiln-ka ka ilaaliya dhibcaha.
 
-Leaching (macdan ka soo baxda)
+Leaching (biraha ka soo baxa)
 : Macdano ka milma glaze la gubay oo gala cunto ama cabbitaan.
 
 Limit formula (target formula)
@@ -397,7 +397,7 @@ Line blend
 : Tijaabooyin hal walax ka tallaabsada laba qadar dhexdooda. Triaxial blend wuxuu beddelaa saddex shabakad dul.
 
 Liner glaze
-: Glaze deggan, inta badan daah-furan ama cad, oo loogu talagalay dusha taabata cuntada.
+: Glaze deggan, inta badan hufan ama cad, oo loogu talagalay dusha taabata cuntada.
 
 LOI (loss on ignition)
 : Miisaan gubidda ku lumay sida biyo, kaarboon laba-oksaydh, walxo noole ah ama sulfur.
@@ -430,7 +430,7 @@ Silica (SiO₂)
 : Dhise-dhalada; sidoo kale loo yaqaan flint ama quartz.
 
 Saamiga silica iyo alumina (silica to alumina ratio)
-: Silica oo loo qaybiyay alumina unity formula-da: mid sare wuxuu u janjeeraa dhalaal, mid hoosena matte.
+: Silica oo loo qaybiyay alumina unity formula-da: mid sare wuxuu u janjeeraa ifid, mid hoosena matte.
 
 Slip iyo engobe
 : Dhoobo biyo ku jirta; engobe waa lakab slip u eg oo walxo badan oo aan dhoobo ahayn leh.
@@ -448,7 +448,7 @@ Thixotropy
 : Qulqulid marka la walaaqo, iyo ku degid jelly jilicsan marka uu deggan yahay.
 
 Underglaze
-: Slip midab leh ama qurxin oksaydh ah, inta badan glaze daah-furan hoostiisa.
+: Slip midab leh ama qurxin oksaydh ah, inta badan glaze hufan hoostiisa.
 
 Unity molecular formula (UMF, Seger formula)
 : Oksaydhyada glaze tirinta molecules ahaan, la qiyaasay si fluxes-ku u wadarnaadaan 1.
@@ -457,7 +457,7 @@ Vitrification
 : Jir noqonaya dhalo u eg oo aan dalool lahayn gubidda.
 
 Wax resist
-: Shamac lagu mariyo meesha glaze-ku aanu gaarin karin, inta badan lugta.
+: Shamac lagu mariyo meesha aan glaze-ka la doonayn, inta badan lugta.
 
 Whiting
 : Kaalshiyam kaarboonayt, flux-ka kaalshiyamka ee ugu weyn; wuxuu gubidda ku lumiyaa in ka badan 40% miisaankiisa. Jarmal: Kreide.

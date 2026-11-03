@@ -155,7 +155,7 @@ Idan akwai yiwuwar dabbar gida ta ci ko ta sha wani abu daga wurin aiki, ko tana
 
 Wani kimanta haɗari na makarantun UK ya ce wajen kiln (murhun gasa tukwane) "na iya kai 160 °C kuma watakila fiye" (kusan 320 °F), kuma wata jagorar kiln ta makaranta ta ruwaito ɗamarar ƙarfe har zuwa 460 °F (kusan 240 °C). Skutt, mai ƙera kiln, yana ba da shawarar ɗakin kiln da ake iya kullewa don hana yara da dabbobin gida. Inda ba za a iya kulle ɗaki ba, jagorar makarantar tana ba da shawarar shinge kamar allon kare kiln.
 
-Ƙananan yara da dabbobin gida ba sa iya fahimtar alamar gargaɗi. Muna ba da shawarar ku ajiye su a bayan ƙofa a kulle ko shinge yayin da kiln ke gasa da kuma yayin da yake hucewa, kuma ku liƙa alamar gargaɗi don kowa da kowa.
+Ƙananan yara da dabbobin gida ba sa iya fahimtar alamar gargaɗi. Muna ba da shawarar ku ajiye su a bayan ƙofa a kulle ko shinge yayin da kiln ke gasa da kuma yayin da yake hucewa, kuma ku liƙa alamar gargaɗi don sauran mutane.
 
 ### Fili a kewayensa
 
@@ -167,7 +167,7 @@ Rio Grande tana ba da shawarar **layin wuta na musamman** (wanda ba ya ba wani a
 
 ### Ku kasance a wurin lokacin da gasa ke ƙarewa
 
-**Kiln sitter** maɓalli ne na inji a kan kiln da yawa na hannu: ƙaramin cone yana lanƙwasa a ƙarshen gasa kuma yana kashe maɓallin. Littafin jagorarsa ya ce "BA a yi shi don ya zama na'urar kashewa da ba ta kasawa ba." Rio Grande ta ce kada a taɓa barin kiln da ke gasa ba tare da mai lura ba, "musamman kusa da lokacin da ake sa ran zai kashe". Don haka ku zauna kusa ku riƙa duba kiln yayin da yake gasa, musamman kusa da ƙarshe; ku yi gasa ne kawai lokacin da babba zai kasance a gida a farke a duk tsawon gasar, ku tabbatar ya kashe, kuma ku ajiye abin kashe gobara na ABC a ɗakin kiln. Don yadda sitter, controller da jadawali ke aiki, duba [Gasa a cikin murhu mai sauƙi](/guides/firing).
+**Kiln sitter** maɓalli ne na inji a kan kiln da yawa na hannu: ƙaramin cone yana lanƙwasa a ƙarshen gasa kuma yana kashe maɓallin. Littafin jagorarsa ya ce "BA a yi shi don ya zama na'urar kashewa da ba ta kasawa ba." Rio Grande ta ce kada a taɓa barin kiln da ke gasa ba tare da mai lura ba, "musamman kusa da lokacin da ake sa ran zai kashe". Don haka ku zauna kusa ku riƙa duba kiln yayin da yake gasa, musamman kusa da ƙarshe; ku yi gasa ne kawai lokacin da babba zai kasance a gida a farke a duk tsawon gasar, ku tabbatar ya kashe, kuma ku ajiye abin kashe gobara na ABC a ɗakin kiln. Don yadda sitter, controller da jadawali ke aiki, duba [Gasa a cikin kiln mai sauƙi](/guides/firing).
 
 ### Hayaƙi da carbon monoxide
 

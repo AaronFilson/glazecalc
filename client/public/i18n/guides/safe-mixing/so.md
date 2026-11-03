@@ -5,9 +5,9 @@ lead: Sida boodhka glaze-ka looga ilaaliyo sambabadaada, qiiqa kiln-kana gurigaa
 
 ## Khatarta ugu weyn: boodhka {#the-main-hazard}
 
-Khatarta muddada dheer ee ugu weyn ee shaqada glaze-ka waa boodhka, gaar ahaan **boodhka silica ee la neefsado** (respirable crystalline silica): qaybo quartz ama cristobalite ah (qaababka kiristaalka ee silica) oo aad u yar oo gaari kara gudaha qoto dheer ee sambabada. Silica kiristaalka ahi waxay noqon kartaa qiyaastii 10 ilaa 60% miisaanka engegan ee glaze, dhoobooyinka badankoodna (marka laga reebo kaolin) iyo feldspar badan ayaa sidoo kale wata quartz yar-yar oo jilicsan. Hay'adda Caafimaadka iyo Badbaadada ee UK (Health and Safety Executive, HSE) waxay sheegtaa in boodhkani "aad u yar yahay oo aan lagu arki karin iftiinka caadiga ah", sidaas darteed qol u eg mid nadiif ah caddayn uma aha in hawadiisu nadiif tahay.
+Khatarta muddada dheer ee ugu weyn ee shaqada glaze-ka waa boodhka, gaar ahaan **boodhka silica kiristaalka ah ee la neefsado** (respirable crystalline silica): qaybo quartz ama cristobalite ah (qaababka kiristaalka ee silica) oo aad u yar oo gaari kara gudaha qoto dheer ee sambabada. Silica kiristaalka ahi waxay noqon kartaa qiyaastii 10 ilaa 60% miisaanka engegan ee glaze, dhoobooyinka badankoodna (marka laga reebo kaolin) iyo feldspar badan ayaa sidoo kale wata quartz yar-yar oo jilicsan. Hay'adda Caafimaadka iyo Badbaadada ee UK (Health and Safety Executive, HSE) waxay sheegtaa in boodhkani "aad u yar yahay oo aan lagu arki karin iftiinka caadiga ah", sidaas darteed qol u eg mid nadiif ah caddayn uma aha in hawadiisu nadiif tahay.
 
-Haddii la neefsado muddo dheer, wuxuu keeni karaa **silicosis** (cudur sambabada), cudur sambabada ah oo HSE ku tilmaanto "khatar ah oo aan dib loo celin karin", kana dhalin kara "naafo joogto ah iyo dhimasho hore". Wuxuu kale oo keeni karaa **COPD** (cudurka sambabada ee xannibaadda joogtada ah: bronchitis muddo dheer ah iyo emphysema), oo sigaar cabiddu ka sii dartu. IARC, hay'adda kansarka ee Ururka Caafimaadka Adduunka, waxay silica kiristaalka ah ee la neefsado gelisaa Kooxda 1, "kansar ku keena dadka".
+Haddii la neefsado muddo dheer, wuxuu keeni karaa **silicosis**, cudur sambabada ah oo HSE ku tilmaanto "khatar ah oo aan dib loo celin karin", kana dhalin kara "naafo joogto ah iyo dhimasho hore". Wuxuu kale oo keeni karaa **COPD** (cudurka sambabada ee xannibaadda joogtada ah: bronchitis muddo dheer ah iyo emphysema), oo sigaar cabiddu ka sii dartu. IARC, hay'adda kansarka ee Ururka Caafimaadka Adduunka, waxay silica kiristaalka ah ee la neefsado gelisaa Kooxda 1, "kansar ku keena dadka".
 
 Silica isuma beddesho qiiq kiln-ka gudihiisa, glaze qoyanna khatar neefsasho ma aha haddii aan la buufin mooyee: ciirta buufintu waxay wadataa silica waxayna u engegtaa boodh (eeg Buufinta, hoos). Waqtiyada laga taxaddaro waa marka walaxdu engegan tahay: furitaanka bacaha, miisaamidda, budada biyaha lagu walaaqayo, iyo nadiifinta dhibcaha, buufinta dhinac u baxday iyo qashinka qoyan marka ay dib ugu engegaan boodh.
 
@@ -15,7 +15,7 @@ Silica isuma beddesho qiiq kiln-ka gudihiisa, glaze qoyanna khatar neefsasho ma 
 
 Xeerarka goobta shaqadu waxay dejiyaan **xad soo-gaadhis** (exposure limit): inta ugu badan ee silica ee shaqaaluhu neefsan karo, celcelis ahaan maalin 8 saacadood ah, milligram (mg) ama microgram (µg, kun-meelood meel milligram) mitir kasta oo kuul ah oo hawo ah.
 
-Table: Xadka goobta shaqada ee boodhka silica ee la neefsado (celceliska 8 saacadood)
+Table: Xadka goobta shaqada ee boodhka silica kiristaalka ah ee la neefsado (celceliska 8 saacadood)
 Label: Xadka soo-gaadhista silica
 
 | Gobol                 |                   Xad | Faahfaahin                                                                                                |
@@ -44,7 +44,7 @@ Ilaalinta badankeedu waxay ka timaadaa caadooyin, ma aha qalab. Talada HSE ee wa
 ### Ka fogow budada meesha aad kari karto
 
 - **Iibso glaze diyaar ahaan loo qasay** (qoyan) marka ay shaqadaada ku habboon tahay. Talada ugu horreysa ee HSE waa "Iibso glaze diyaar u ah isticmaalka, marka ay suurtagal tahay", ama qaab xabbad-xabbad ah ama dareere qaro weyn (slurry) ah.
-- **Dooro habab ammaan badan.** HSE waxay soo jeedisaa "glaze-yo ka kooban silica kiristaal ah oo ka yar". Digitalfire waxay soo jeedisaa **frit** (dhalo warshad lagu sameeyay oo budo loo shiiday, oo aad uga milma wax yar marka loo eego walxaha ceeriin) halkii barium carbonate ceeriin ah, iyo **stain** (midab dhoobo oo warshad lagu sameeyay) halkii manganese, cobalt ama nickel badan oo madow loogu talagalay.
+- **Dooro habab ammaan badan.** HSE waxay soo jeedisaa "glaze-yo ka kooban silica kiristaal ah oo ka yar". Digitalfire waxay soo jeedisaa **frit** (dhalo warshad lagu sameeyay oo budo loo shiiday, oo aad uga milan yar walxaha ceeriinka ah) halkii barium carbonate ceeriin ah, iyo **stain** (midab dhoobo oo warshad lagu sameeyay) halkii manganese, cobalt ama nickel badan oo madow loogu talagalay.
 
 ### Marka aad budo isticmaalayso
 
@@ -88,7 +88,7 @@ Maaskaro hawo ka soo dusisaa waxay boodh ka soo gelisaa geesaheeda, heer kasta o
 
 - **Xiir wax yar ka hor intaadan shaqo bilaabin.** Tilmaamuhu way ku kala duwan yihiin inta ay tahay inuu "xiiran" dhowaa. Warshad UK ah, oo soo xiganaysa HSE, waxay leedahay in la xiiray 8 saacadood gudahood ka hor bilaabidda shaqada. Heerka imtixaanka ku-habboonaanta ee Australia iyo New Zealand wuxuu weydiiyaa xiirid ka hor imtixaanka ku-habboonaanta, "doorbid ahaan 12 saacadood gudahood". Xiiridda wax yar ka hor intaadan shaqeyn waxay buuxisaa labadaba.
 - **Haddii aad gadh haysato,** **respirator koronto ku shaqeeya** (PAPR: koofiyad ama helmet leh marawaxad keenta hawo la shaandheeyay) oo aan wejiga ku dhegin uma baahna in wejiga lagu xidho.
-- **Cabbirka sax.** Ku-habboonaan xumo waa sababta ugu weyn ee hawo-dusidda. Goobaha shaqadu waxay isticmaalaan **imtixaan ku-habboonaan** (fit test), hubin in maaskaro gaar ah ay ku xidhanto weji gaar ah. Guriga, waxaan soo jeedinaynaa inaad raacdo tilmaamaha warshadda ee hubinta xidhitaanka mar kasta oo aad xidhato.
+- **Cabbirka sax.** Ku-habboonaan xumo waa sabab weyn oo hawo-dusidda keenta. Goobaha shaqadu waxay isticmaalaan **imtixaan ku-habboonaan** (fit test), hubin in maaskaro gaar ah ay ku xidhanto weji gaar ah. Guriga, waxaan soo jeedinaynaa inaad raacdo tilmaamaha warshadda ee hubinta xidhitaanka mar kasta oo aad xidhato.
 
 > [!NOTE]
 > Fikradayada, ku-habboonaantu way ka muhiimsan tahay heerka: N95, FFP2 ama P2 si fiican ugu habboon inta badan way ka fiicnaan doontaa P100 dabacsan.
@@ -121,7 +121,7 @@ Boodhka dhulka, miisaska iyo dharka ku degaa wuxuu dib ugu noqdaa hawada mar kas
 
 ### Dharka, cuntada iyo gacmaha
 
-- **Xiro dhar istuudiyaha oo keliya ah** oo ka samaysan maro si dhow loo tolay oo aan boodh xajin, oo si joogto ah u dhaq (Utah waxay soo jeedisaa toddobaad kasta), dhar kale la'aantood. HSE waxay xustaa in dharka boodhka lihi ku sii soo-gaadhsiiyo kadib marka shaqada la dhammeeyo, sidaas darteed waxaan soo jeedinaynaa inaad beddesho ka hor intaadan gelin qaybta kale ee guriga.
+- **Xiro dhar istuudiyaha oo keliya ah** oo ka samaysan maro si dhow loo tolay oo aan boodh xajin, oo si joogto ah u dhaq (Utah waxay soo jeedisaa toddobaad kasta), iyagoo ka gooni ah dharka kale. HSE waxay xustaa in dharka boodhka lihi ku sii soo-gaadhsiiyo kadib marka shaqada la dhammeeyo, sidaas darteed waxaan soo jeedinaynaa inaad beddesho ka hor intaadan gelin qaybta kale ee guriga.
 - **Istuudiyaha laguma cuno, laguma cabbo, sigaarna laguma cabbo.** Sida Digitalfire u dhigto, "qofku waa inuusan barium carbonate ku khaldin sonkorta miiska marka uu kafee diyaarinayo". Weel kasta calaamadee.
 - **Gacmahaaga dhaq** ka hor cunidda, cabbidda, sigaar cabidda ama isticmaalka musqusha, oo nadiifi ciddiyahaaga hoostooda. Isticmaal biyo diirran iyo saabuun jilicsan halkii nadiifiye xoqa.
 
@@ -142,7 +142,7 @@ Ma jiro il bixisa tirooyinka socodka hawada ee dabool hiwaayadeed. Dabool la'aan
 
 ### Buufinta
 
-HSE waxay ka digtaa in buufintu "soo saari karto ciiro ka kooban RCS" (boodhka silica ee la neefsado), iyo in "ciirada glaze-ku si dhakhso ah u engegto oo boodh isu beddesho". Il kasta oo aan helnay waxay leedahay ku buufi oo keliya god buufin oo hawo-wareejin leh gudihiisa.
+HSE waxay ka digtaa in buufintu "soo saari karto ciiro ka kooban RCS" (boodhka silica kiristaalka ah ee la neefsado), iyo in "ciirada glaze-ku si dhakhso ah u engegto oo boodh isu beddesho". Il kasta oo aan helnay waxay leedahay ku buufi oo keliya god buufin oo hawo-wareejin leh gudihiisa.
 
 - HSE waxay rabtaa god hawo laga saaro iyo, "meesha ay suurtagal tahay, god buufin oo biyo gadaal ka leh", kaas oo buufinta dhinac u baxda biyo ku qabta.
 - Isticmaal miis wareega god-ka gudihiisa, xiro gacmo-gashi nitrile iyo respirator, oo nadiifi god-ka iyo shaandhadiisa ka hor inta buufinta dhinac u baxday aysan engegin.
@@ -163,8 +163,8 @@ Walxaha glaze-ku wax kale ayay ku daraan. Oksaydh bireed qaarkood ayaa sameeya q
 
 **Downdraft vent** waa qalab marawaxad yar oo kiln-ka lagu rakibo. Wuxuu hawo yar ka soo jiidaa qolka gubidda, wuxuu ku qasaa hawada qolka wuxuuna tuubo ku mariyaa bannaanka, isagoo qiiqa qabta ka hor inta uusan qolka gaadhin. Warshadda kiln-ka Skutt waxay leedahay dhammaan warshadaha kiln-ku waxay ku taliyaan mid.
 
-- **Wuxuu u baahan yahay hawo beddel ah.** EnviroVent 2 ee Skutt wuxuu bannaanka u diraa 140 cubic feet (qiyaastii 4 m³) hawo ah daqiiqad kasta, intaas oo kale waa inay dib u soo gashaa.
-- **Wuxuu saaraa "qiiqa khatarta ah oo keliya, ma aha kulaylka"** (Skutt), waana inuu u shaqeeyaa si ka madax-bannaan kululaynta iyo qaboojinta dhismaha.
+- **Wuxuu u baahan yahay hawo beddel ah.** EnviroVent 2 ee Skutt wuxuu bannaanka u diraa 140 fuudh kuul ah (qiyaastii 4 m³) hawo ah daqiiqad kasta, intaas oo kale waa inay dib u soo gashaa.
+- **Wuxuu saaraa "qiiqa khatarta ah oo keliya, ma aha kulaylka"** (Skutt), waxaana habboon inuu u shaqeeyo si ka madax-bannaan kululaynta iyo qaboojinta dhismaha.
 - **Tuubo ku mari bannaanka,** kana fogee daaqadaha, albaabbada iyo meelaha hawadu ka gasho. Finkelnburg wuxuu ku taliyaa marawaxad squirrel-cage (centrifugal) ah, ma aha marawaxad baal leh (propeller).
 - Xeerarka deegaanka qaarkood waxay u baahan yihiin hawo-saare kiln, sidaas darteed hubi kuwaaga.
 
@@ -173,9 +173,9 @@ Walxaha glaze-ku wax kale ayay ku daraan. Oksaydh bireed qaarkood ayaa sameeya q
 ### Meesha kiln-ka la dhigo
 
 - Waxaan soo jeedinaynaa garaash, aqal yar ama qol loo gooni yeelay kiln-ka halkii meel lagu noolyahay, oo ah mid aad ka xidhi karto carruurta iyo xayawaanka guriga, sida Skutt ku taliso.
-- **Masaafada bannaan.** Iluhu way kala duwan yihiin: Skutt waxay qeexdaa ugu yaraan 18 in (46 cm) gidaar kasta ama walax **gubanaysa** (combustible: wax kasta oo guban kara), halka CIRMA, shirkad caymis oo Connecticut ah, ay soo jeediso 3 ft (0.9 m) wax kasta oo guban kara. Raac buugga tilmaamaha kiln-kaaga; haddii aadan haysan, ka ilaali 18 in gidaarada iyo 3 ft wax kasta oo guban kara.
+- **Masaafada bannaan.** Iluhu way kala duwan yihiin: Skutt waxay qeexdaa ugu yaraan 18 inji (46 cm) gidaar kasta ama walax **gubanaysa** (combustible: wax kasta oo guban kara), halka CIRMA, shirkad caymis oo Connecticut ah, ay soo jeediso 3 fuudh (0.9 m) wax kasta oo guban kara. Raac buugga tilmaamaha kiln-kaaga; haddii aadan haysan, ka ilaali 18 inji gidaarada iyo 3 fuudh wax kasta oo guban kara.
 - **Dhulka.** Isticmaal dhul aan guban karin sida shub (concrete) ama tile dhoobo ah, weligaa ha isticmaalin alwaax, roog ama vinyl. Alwaaxda, warqadda iyo dareerayaasha milmay (solvents) ka fogee kiln-ka.
-- **Korontada.** CIRMA waxay ku talisaa wareeg koronto oo gaar ah, ha isticmaalin fidiyeyaal koronto ama ilaaliyeyaal korontada kediska ah (surge protectors), ka fur fiilada inta u dhaxaysa gubidyada, iyo dab-demiye 25 ft (7.6 m) gudahood ah.
+- **Korontada.** CIRMA waxay ku talisaa wareeg koronto oo gaar ah, ha isticmaalin fidiyeyaal koronto ama ilaaliyeyaal korontada kediska ah (surge protectors), ka fur fiilada inta u dhaxaysa gubidyada, iyo dab-demiye 25 fuudh (7.6 m) gudahood ah.
 - **Kulaylka qolka.** Skutt waxay leedahay qolka ka hooseysii {{38 °C; 100 °F}}, haddii kale kontaroolahu wuxuu dami karaa kiln-ka. Maadaama hawo-saaruhu aanu kulayl saarin, qol yar wuxuu u baahan karaa marawaxad sidoo kale. Ha u oggolaan madaxyada biyo-buufiyeyaasha (sprinkler) iyo dareemayaasha kulaylka inay si toos ah uga sarreeyaan kiln-ka.
 - **Digniinta carbon monoxide.** Ma aanan helin xeer u baahan mid kiln koronto ah, laakiin walxaha noolaha ah ee gubanayaa waxay sameeyaan CO, sidaas darteed digniin ku taal qolka kiln-ka iyo qolalka ku xiga waa tallaabo caqli leh oo jaban (eeg [Ha sumayn qoyskaaga](/guides/home-safety)).
 
@@ -228,7 +228,7 @@ Borax, boric acid, soda ash iyo potash waxay ku milmaan biyaha, sidaas darteed w
 
 ## Akhrinta warqadda xogta badbaadada {#safety-data-sheets}
 
-**Warqadda xogta badbaadada** (safety data sheet, SDS; kuwa duugga ahi waxay leeyihiin MSDS) waa dukumentiga alaab-qeybiyaha ee ku saabsan waxa alaabtu ka kooban tahay, khataraheeda iyo sida loola dhaqmo. Walax ceeriin kasta iyo glaze ganacsi kasta waa inay leeyihiin mid; ka raadi bogga alaabta ama weydii alaab-qeybiyaha. Waxay leedahay 16 qaybood, labana ayaa ugu muhiimsan:
+**Warqadda xogta badbaadada** (safety data sheet, SDS; kuwa duugga ahi waxay leeyihiin MSDS) waa dukumentiga alaab-qeybiyaha ee ku saabsan waxa alaabtu ka kooban tahay, khataraheeda iyo sida loola dhaqmo. Walax ceeriin kasta iyo glaze ganacsi kasta waxaa habboon inay leeyihiin mid; ka raadi bogga alaabta ama weydii alaab-qeybiyaha. Waxay leedahay 16 qaybood, labana ayaa ugu muhiimsan:
 
 - **Qaybta 2, Aqoonsiga khatarta:** kala-saaridda, **eray calaamad** sida "Danger" (Khatar), **sawir-calaamado** (pictograms: astaamo digniin oo yaryar) iyo bayaannada khatarta.
 - **Qaybta 8, Xakamaynta soo-gaadhista iyo ilaalinta shakhsiga:** xadka soo-gaadhista, **xakamaynta injineerinka** (engineering controls) ee loo baahan yahay (hawo-wareejin iyo hawo-saar) iyo qalabka ilaalinta ee la xidho.

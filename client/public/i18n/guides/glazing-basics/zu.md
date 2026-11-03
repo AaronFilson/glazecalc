@@ -152,7 +152,7 @@ Label: Okokwakha okuvamile kwe-glaze
 | I-zinc oxide                                            | ZnO                     | Ukucwebezela namakristalu; eningi kakhulu ingadala ukuhoxa                                                                                                               |
 | Ama-boron frit, i-Gerstley Borate, i-colemanite         | B₂O₃                    | Abalulekile kusukela ku-cone 06 kuya ku-cone 6; ama-frit “angaguquki futhi ancibilika kancane emanzini kunama-borate aluhlaza”                                           |
 | I-lithium carbonate                                     | Li₂O                    | I-flux yokukhula okuphansi; iyabiza, ngakho isetshenziswa kancane                                                                                                        |
-| I-strontium carbonate                                   | SrO                     | Indawo ye-barium enoshevu omncane                                                                                                                                        |
+| I-strontium carbonate                                   | SrO                     | Ingena esikhundleni se-barium; inoshevu omncane kune-barium                                                                                                              |
 | I-barium carbonate                                      | BaO                     | Inoshevu uma iluhlaza; ama-glaze ane-barium eningi angavuza                                                                                                              |
 | I-bentonite                                             | Ukugcina ixubile        | Ubumba oluyimpuphu kakhulu, ngokuvamile u-1–3%, ukuvimba ukuzika                                                                                                         |
 
@@ -221,7 +221,7 @@ Imithombo ayivumelani ngokulungisa kokuqala. I-Glazy iphakamisa ukwengeza i-sili
 
 ### Ukucwebezela ne-matte
 
-Ubuso **obucwebezelayo** (gloss) buyakhanya futhi bushelelezi, i-**satin** inokukhanya okuthulile, kanti i-**matte** ayicwebezeli. Ukucwebezela kudinga ingilazi encibilike ngokuphelele. I-matte ingavela ku-alumina eningi (isilinganiso se-silica ne-alumina esiphansi), kuma-flux afana ne-calcium, i-magnesium, i-barium noma i-strontium akha amakristalu amancane njengoba i-glaze iphola, noma ekushiseni kancane.
+Ubuso **obucwebezelayo** (gloss) buyakhanya futhi bushelelezi, i-**satin** inokukhanya okuthulile, kanti i-**matte** ayicwebezeli. Ukucwebezela kudinga ingilazi encibilike ngokuphelele. I-matte ingavela ku-alumina eningi (isilinganiso se-silica ne-alumina esiphansi), kuma-flux afana ne-calcium, i-magnesium, i-barium noma i-strontium akha amakristalu amancane njengoba i-glaze iphola, noma ekungashisweni ngokwanele.
 
 ### Amaphutha avamile
 
@@ -230,13 +230,13 @@ Shintsha into eyodwa ngesikhathi, futhi ugcine ama-test tile akho.
 Table: Amaphutha avamile e-glaze, izimbangela zawo ezivamile nokulungisa kokuqala
 Label: Amaphutha avamile e-glaze
 
-| Iphutha                       | Kubukeka kanjani                                        | Izimbangela ezivamile                                                                                                      | Ukulungisa kokuqala                                                                                                  |
-| ----------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Ukuhoxa (crawling)            | I-glaze ihoxa ibe ngamaconsi, ishiye ubumba bungembozwe | I-bisque enothuli noma enamafutha; ungqimba olugqinsi, olunobumba oluningi olwaqhekeka lusoma; i-zinc, i-zircon noma i-tin | Hlanza i-bisque; faka ungqimba oluncane; shisa ngaphambili (calcine) obunye ubumba; engeza okokubopha njenge-CMC gum |
-| Izimbobo ezincane (pinholing) | Izimbobo ezincane noma imigodi                          | Igesi evela emzimbeni noma ku-glaze engazange ivaleke; i-glaze eshiswe kancane noma eqinile                                | Gcina ezingeni lokushisa eliphezulu cishe isigamu sehora; faka ungqimba oluncane; i-zinc noma i-rutile encane        |
-| Amabhamuza (blistering)       | Imigodi enemiphetho ebukhali                            | Ngokuvamile ukushisa ngokweqile; izingqimba eziwugqinsi kakhulu; ama-flux ahwamukayo ngaphezu kuka-{{2192 °F; 1200 °C}}    | Shisa kancane; faka ungqimba oluncane. Imiphetho ebukhali yenza izitsha ezisetshenziswayo zingaphephi                |
-| Ukugeleza (running)           | I-glaze igelezela eshalofini                            | I-alumina encane kakhulu; iwugqinsi kakhulu, njengalapho ukuthela kugqagqana khona; i-iron eningi                          | Faka ungqimba oluncane; engeza i-alumina; gcina i-glaze ikude kahle nonyawo                                          |
-| I-dunting                     | Imifantu embizeni ngenxa yokupholisa noma ukushisa      | Ukupholisa ngokushesha ku-quartz inversion, {{1063 °F; 573 °C}}; izindonga ezingalingani; ukulingana okubi                 | Shisa kancane ku-{{1063 °F; 573 °C}}, ukhuphuka nokwehla; izindonga ezilinganayo                                     |
+| Iphutha                       | Kubukeka kanjani                                        | Izimbangela ezivamile                                                                                                      | Ukulungisa kokuqala                                                                                                        |
+| ----------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Ukuhoxa (crawling)            | I-glaze ihoxa ibe ngamaconsi, ishiye ubumba bungembozwe | I-bisque enothuli noma enamafutha; ungqimba olugqinsi, olunobumba oluningi olwaqhekeka lusoma; i-zinc, i-zircon noma i-tin | Hlanza i-bisque; faka ungqimba oluncane; shisa ngaphambili (calcine) obunye ubumba; engeza okokubopha njenge-CMC gum       |
+| Izimbobo ezincane (pinholing) | Izimbobo ezincane noma imigodi                          | Igesi evela emzimbeni noma ku-glaze engazange ivaleke; i-glaze eshiswe kancane noma eqinile                                | Gcina ezingeni lokushisa eliphezulu cishe isigamu sehora; faka ungqimba oluncane; nciphisa i-zinc noma i-rutile            |
+| Amabhamuza (blistering)       | Imigodi enemiphetho ebukhali                            | Ngokuvamile ukushisa ngokweqile; izingqimba eziwugqinsi kakhulu; ama-flux ahwamukayo ngaphezu kuka-{{2192 °F; 1200 °C}}    | Shisa ezingeni lokushisa eliphansi; faka ungqimba oluncane. Imiphetho ebukhali yenza izitsha ezisetshenziswayo zingaphephi |
+| Ukugeleza (running)           | I-glaze igelezela eshalofini                            | I-alumina encane kakhulu; iwugqinsi kakhulu, njengalapho ukuthela kugqagqana khona; i-iron eningi                          | Faka ungqimba oluncane; engeza i-alumina; gcina i-glaze ikude kahle nonyawo                                                |
+| I-dunting                     | Imifantu embizeni ngenxa yokupholisa noma ukushisa      | Ukupholisa ngokushesha ku-quartz inversion, {{1063 °F; 573 °C}}; izindonga ezingalingani; ukulingana okubi                 | Shisa kancane ku-{{1063 °F; 573 °C}}, ukhuphuka nokwehla; izindonga ezilinganayo                                           |
 
 ## Ukuphepha kokudla {#food-safety}
 
@@ -296,7 +296,7 @@ Amagesi angaphakathi ku-kiln, **umoya** wayo (atmosphere), ashintsha ukuthi ama-
 > [!NOTE]
 > Lindela ukuthi iresiphi ebhalelwe i-kiln yegesi ye-reduction iphume ngokuhlukile ku-kiln kagesi: i-celadon noma i-copper red encike ku-reduction ngeke ibukeke ngendlela efanayo ku-oxidation. Hlola ukuthi iresiphi yenzelwe muphi umoya, bese ubhala owakho, ne-cone, kumanothi eresiphi ku-Glazecalc.
 
-Yonke i-kiln, nezikagesi, ikhipha intuthu enobuthi (fumes), ngakho yikhiphele umoya ngaphandle. [Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing) kuchaza ukuthi kanjani.
+Yonke i-kiln, nezikagesi, ikhipha intuthu namagesi (fumes), ngakho yikhiphele umoya ngaphandle. [Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing) kuchaza ukuthi kanjani.
 
 ## Uhlu lwamagama {#glossary}
 

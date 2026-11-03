@@ -125,7 +125,7 @@
     "notANumberPoint": "Faka inombolo, njengo-{example}, ngechashazi lamadesimali."
   },
   "meta": {
-    "description": "Faka iresiphi ye-glaze ubone i-UMF yayo, isilinganiso se-silica ne-alumina nebhalansi yama-flux. Kumahhala, okwamaresiphi, okokwakha namarekhodi okushisa.",
+    "description": "Bona i-UMF yeresiphi ye-glaze, isilinganiso se-silica ne-alumina nebhalansi yama-flux. Mahhala, umthombo ovulekile: amaresiphi, okokwakha, amarekhodi okushisa.",
     "guides": "Imihlahlandlela ngolimi olulula yababumbi abasha: yini i-glaze, indlela yokuyenza nokuyixuba ngokuphepha, ukuvikela umndeni wakho, nokushisa ku-kiln elula.",
     "glazingBasics": "Yini eyakha i-glaze, i-kiln iyiguqula kanjani ibe yingilazi, nokuthi ama-cone, ama-frit, i-UMF nezinkinga ze-glaze kusho ukuthini. Umhlahlandlela wababumbi abasha.",
     "makingAGlaze": "Indlela yokuthenga, ukugcina, ukukala nokuxuba i-glaze, ukuthola ukujiya kwayo kahle, ukuyihlola obumbeni lwakho nokugcina amarekhodi ukuze uphinde uyenze.",
@@ -163,7 +163,7 @@
     "removing": "Iyakhipha...",
     "yes": "Yebo, khipha",
     "cancel": "Khansela",
-    "removeName": "Khipha u-{name}",
+    "removeName": "Khipha {name}",
     "remove": "Khipha"
   },
   "oxides": {
@@ -199,7 +199,7 @@
   "firingFields": {
     "time": "Isikhathi",
     "gas": "Igesi",
-    "fuel": "Uphethiloli",
+    "fuel": "Isibaso",
     "primaryAir": "Umoya wokuqala",
     "blower": "Isiphephetha",
     "damper": "I-damper",

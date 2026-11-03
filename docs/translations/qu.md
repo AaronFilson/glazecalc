@@ -103,7 +103,7 @@ after a number: both forms are written in full.
 | How to make a glaze                       | Imaynatataq esmalteta ruranki                              |
 | Safe mixing and ventilation               | Mana manchakuspa chaqruy, wayra puriynin                   |
 | Firing a basic kiln                       | Huch'uy hornopi ruphachiy                                  |
-| Don't poison your family                  | **Ama ayllu-masiykita hampi-ruruwan wañuchiychu**          |
+| Don't poison your family                  | **Ama ayllu-masiykita miyuwan wañuchiychu**                |
 | Learn with John Britt's free glaze course | John Brittpa mana qullqiyuq esmalte yachachiyninwan yachay |
 
 **Pitfalls.**
@@ -113,7 +113,10 @@ after a number: both forms are written in full.
 - _allpa_ is earth and soil; clay is **mitu** (Ayacucho _mitu_ too); write _mitu allpa_ where it could read "mud".
 - Lead is **titi** (also tin in some areas): write **titi (plomo, Pb)** at first use on each page and keep **(Pb)** in
   every warning. **Native check**.
-- _hampi_ is medicine and _hampi-ruru_ / _miyu_ poison: a warning about poison never uses bare _hampi_.
+- _hampi_ is medicine; poison is **miyu** (the home-safety title too). Never _hampi_ or _hampi-ruru_ for poison.
+- Cusco-Collao forms, not Chanka/Ayacucho: water **unu** (never _yaku_), drink **ukyay** (not _upyay_), many
+  **achka** (not _ashka_), true **chiqaq** (not _cheqaq_). Melting in the kiln is **chulluy** (never _unuyay_, which
+  now reads "turn into water"), so water and melting never share a root.
 
 ## 2. Glossary
 
@@ -147,31 +150,49 @@ after a number: both forms are written in full.
 
 ### 2.3 Defects and making
 
-| English   | qu                               | Notes            |
-| --------- | -------------------------------- | ---------------- |
-| crazing   | cuarteado (huch'uy p'akisqakuna) | **Native check** |
-| leaching  | titi lluqsiynin (lixiviación)    | **Native check** |
-| batch     | lote                             | Spanish loan.    |
-| scale     | balanza                          | Spanish loan.    |
-| sieve     | tamiz; suysuy (verb)             | AMLQ (_suysuy_). |
-| test tile | probeta                          | Spanish loan.    |
+| English              | qu                                                                              | Notes                                                        |
+| -------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| crazing              | cuarteado (huch'uy p'akisqakuna)                                                | **Native check**                                             |
+| leaching, leach test | metalkuna lluqsiynin (lixiviación); metalkuna lluqsiyninpaq prueba (leach test) | Metals in general, never lead alone. **Native check**        |
+| batch                | lote                                                                            | Spanish loan.                                                |
+| scale                | balanza                                                                         | Spanish loan.                                                |
+| sieve                | tamiz; suysuy (verb)                                                            | AMLQ (_suysuy_).                                             |
+| test tile            | probeta                                                                         | Spanish loan. Only the tile: never the measuring cylinder.   |
+| graduated cylinder   | tupuna tubo (marcasqa tubo)                                                     | Never _probeta_ (Spanish "probeta" is also the cylinder).    |
+| line blend           | mezcla lineal                                                                   | Spanish loan.                                                |
+| kiln wash            | horno tablakunata amachaq llut'ana (kiln wash)                                  | Shelf coating; never _horno lavado_, never _p'acha_ (cloth). |
+| witness cone         | cono testigo                                                                    | Spanish order (noun first); never _testigo cono_.            |
+| melt, fuse           | chulluy; chullusqa; mana chullusqa (unfused)                                    | Never _unuyay_.                                              |
+| fluid (runny glaze)  | unu hina puriq                                                                  | **Native check**                                             |
 
 ### 2.4 Health and safety
 
 Never softened: a lead, barium or silica warning reads as strongly as the English. Chemical names and figures in
 English/Spanish and digits. Every safety part has a second review (owner: extra review).
 
-| English                       | qu                                     | Notes                                                                |
-| ----------------------------- | -------------------------------------- | -------------------------------------------------------------------- |
-| dust                          | ñut'u allpa; polvo                     | **Native check**                                                     |
-| respirable crystalline silica | samaykuspa ukhuman yaykuq sílice ñut'u | **Native check**                                                     |
-| silicosis                     | silicosis (surq'an unquy)              | **Native check**                                                     |
-| respirator                    | respirador                             | Spanish loan.                                                        |
-| poison, toxic                 | miyu; miyuyuq                          | AMLQ. Never bare _hampi_.                                            |
-| food safe                     | mikhunapaq mana manchakuy              | **Native check**                                                     |
-| lead-free                     | mana titiyuq (sin plomo)               | **Native check**                                                     |
-| at most / no more than        | aswanqa … kama; mana … aswanchu        | "less than" is _… manta pisi_: never for "at most". **Native check** |
-| at least                      | pisimanta pisi                         | **Native check**                                                     |
+| English                       | qu                                                | Notes                                                                                     |
+| ----------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| dust                          | ñut'u allpa; polvo                                | **Native check**                                                                          |
+| respirable crystalline silica | samaykuspa ukhuman yaykuq sílice cristalina ñut'u | Never drop _cristalina_ (or its gloss "(sílice cristalina respirable)"). **Native check** |
+| safety data sheet (SDS)       | seguridad datos p'anqa                            | Never _hoja de datos de seguridad_; "(SDS)" only where the English has it.                |
+| combustible                   | rawrayta atiq                                     | **Native check**                                                                          |
+| over a direct flame           | chiqan nina hawanpi                               | Never _nina rawrayta_ (reads "burning fire").                                             |
+| water                         | unu                                               | Cusco-Collao. Never _yaku_ (Chanka).                                                      |
+| soluble, dissolve             | unupi chulluq; (wiksa) ácidopi chulluq            | Always with _unupi_ / _ácidopi_, so it never reads "melts" (kiln).                        |
+| opaque, opacifier             | opaco (k'anchay mana pasaq); opacificante         | Stops light, usually white; never "dark".                                                 |
+| clear glaze                   | ch'uya esmalte                                    | Transparent, never "white" (_yuraq_).                                                     |
+| inch, foot                    | pulgada, pie                                      | Spanish loans.                                                                            |
+| early, too soon               | ñawpaqta; mana tiempollanpi                       | Never "in the morning". **Native check**                                                  |
+| less, fewer, reduce           | aswan pisi; pisiyachiy                            | Never _aswan_ alone or "a little more".                                                   |
+| supplier                      | qhatuq                                            | Never _rantiq_ (buyer). _rantikuq_ (seller) also understood. **Native check**             |
+| dry                           | ch'aki                                            | Never _chaki_ (that is foot: "chakinpi" = on its foot, correct).                          |
+| silicosis                     | silicosis (surq'an unquy)                         | **Native check**                                                                          |
+| respirator                    | respirador                                        | Spanish loan.                                                                             |
+| poison, toxic                 | miyu; miyuyuq                                     | AMLQ. Never bare _hampi_.                                                                 |
+| food safe                     | mikhunapaq mana manchakuy                         | **Native check**                                                                          |
+| lead-free                     | mana titiyuq (sin plomo)                          | **Native check**                                                                          |
+| at most / no more than        | aswanqa … kama; mana … aswanchu                   | "less than" is _… manta pisi_: never for "at most". **Native check**                      |
+| at least                      | pisimanta pisi                                    | **Native check**                                                                          |
 
 **Who to call.** None of Peru, Bolivia or Ecuador is in the region data: no number is named. No
 number for them has been read on an official page yet (the region work will); no poison line confirmed.
@@ -187,6 +208,9 @@ number for them has been read on an official page yet (the region work will); no
 | Sign in, Sign out    | Yaykuy, Lluqsiy                                  |
 | account, password    | cuenta, pakasqa simi                             |
 | Translation notice   | "Kay p'anqataqa AI-mi inglés simimanta t'ikran." |
+| access token         | yaykuna token                                    |
+| notes                | apuntekuna                                       |
+| Trash                | Q'upa                                            |
 
 **Native check** on the whole table.
 

@@ -5,9 +5,9 @@ lead: Bí ẹ ṣe lè pa eruku glaze (ìdán amọ̀) mọ́ kúrò nínú ẹ�
 
 ## Ewu pàtàkì: eruku {#the-main-hazard}
 
-Ewu pàtàkì fún ìgbà pípẹ́ nínú iṣẹ́ glaze (ìdán amọ̀) ni eruku, ju gbogbo rẹ̀ lọ **eruku silica tí a ń mí sínú** (respirable crystalline silica): àwọn wóró quartz tàbí cristobalite (àwọn ìrísí kirisita ti silica) tí ó kéré tó láti dé inú ẹ̀dọ̀fóró lọ́hùn-ún. Silica kirisita lè jẹ́ nǹkan bí 10 sí 60% ìwúwo glaze gbígbẹ, àti pé ọ̀pọ̀ jù lọ amọ̀ (àyàfi kaolin) àti ọ̀pọ̀ feldspar náà ní quartz kíkúnná nínú. Health and Safety Executive (HSE) ti UK sọ pé eruku yìí "kúnná gidigidi, a kò sì lè rí i lábẹ́ ìmọ́lẹ̀ lásán", nítorí náà yàrá tí ó dàbí ẹni pé ó mọ́ kì í ṣe ẹ̀rí pé afẹ́fẹ́ rẹ̀ mọ́.
+Ewu pàtàkì fún ìgbà pípẹ́ nínú iṣẹ́ glaze (ìdán amọ̀) ni eruku, ju gbogbo rẹ̀ lọ **eruku silica crystalline tí a ń mí sínú** (respirable crystalline silica): àwọn wóró quartz tàbí cristobalite (àwọn ìrísí kirisita ti silica) tí ó kéré tó láti dé inú ẹ̀dọ̀fóró lọ́hùn-ún. Silica kirisita lè jẹ́ nǹkan bí 10 sí 60% ìwúwo glaze gbígbẹ, àti pé ọ̀pọ̀ jù lọ amọ̀ (àyàfi kaolin) àti ọ̀pọ̀ feldspar náà ní quartz kíkúnná nínú. Health and Safety Executive (HSE) ti UK sọ pé eruku yìí "kúnná gidigidi, a kò sì lè rí i lábẹ́ ìmọ́lẹ̀ lásán", nítorí náà yàrá tí ó dàbí ẹni pé ó mọ́ kì í ṣe ẹ̀rí pé afẹ́fẹ́ rẹ̀ mọ́.
 
-Bí a bá ń mí i sínú fún ìgbà pípẹ́, ó lè fa **silicosis** (àrùn ẹ̀dọ̀fóró), àrùn ẹ̀dọ̀fóró tí HSE pè ní "líle, tí kò sì ṣeé yí padà", tí ó sì lè "fa àìlera tí kò ní lọ àti ikú ní kùtùkùtù". Ó tún lè fa **COPD** (chronic obstructive pulmonary disease: bronchitis fún ìgbà pípẹ́ àti emphysema), èyí tí sìgá mímu ń mú burú sí i. IARC, ilé iṣẹ́ àrùn jẹjẹrẹ ti World Health Organization, fi silica kirisita tí a mí sínú sí Group 1, "ó ń fa àrùn jẹjẹrẹ nínú ènìyàn".
+Bí a bá ń mí i sínú fún ìgbà pípẹ́, ó lè fa **silicosis** (àrùn ẹ̀dọ̀fóró), àrùn ẹ̀dọ̀fóró tí HSE pè ní "líle, tí kò sì ṣeé yí padà", tí ó sì lè "fa àbùkù ara títí láé àti ikú ní kùtùkùtù". Ó tún lè fa **COPD** (chronic obstructive pulmonary disease: bronchitis fún ìgbà pípẹ́ àti emphysema), èyí tí sìgá mímu ń mú burú sí i. IARC, ilé iṣẹ́ àrùn jẹjẹrẹ ti World Health Organization, fi silica kirisita tí a mí sínú sí Group 1, "ó ń fa àrùn jẹjẹrẹ nínú ènìyàn".
 
 Silica kì í di èéfín nínú kiln, glaze tútù kì í sì í ṣe ewu fún mímí àyàfi tí a bá fín in: ìkùukùu ìfín ń gbé silica, ó sì ń gbẹ di eruku (ẹ wo Fífín glaze, nísàlẹ̀). Àkókò láti ṣọ́ra ni ìgbà tí ohun èlò bá gbẹ: ṣíṣí àpò, wíwọ̀n, rírú lulú sínú omi, àti kíkó ohun tó dà sílẹ̀, ohun tí ìfín fọ́n ká àti ẹrẹ̀ glaze nù lẹ́yìn tí wọ́n ti gbẹ padà di eruku.
 
@@ -15,7 +15,7 @@ Silica kì í di èéfín nínú kiln, glaze tútù kì í sì í ṣe ewu fún 
 
 Àwọn òfin ibi iṣẹ́ fi **ìwọ̀n ààlà ìfarakàn** (exposure limit) lélẹ̀: silica tí ó pọ̀ jù lọ tí òṣìṣẹ́ kan lè mí sínú, ní ìpíndọ́gba ọjọ́ iṣẹ́ wákàtí 8, ní milligram (mg) tàbí microgram (µg, ìdá ẹgbẹ̀rún kan milligram) nínú mítà oníkùbù kan afẹ́fẹ́.
 
-Table: Ìwọ̀n ààlà ibi iṣẹ́ fún eruku silica tí a ń mí sínú (ìpíndọ́gba wákàtí 8)
+Table: Ìwọ̀n ààlà ibi iṣẹ́ fún eruku silica crystalline tí a ń mí sínú (ìpíndọ́gba wákàtí 8)
 Label: Ìwọ̀n ààlà silica
 
 | Agbègbè        |                  Ààlà | Àkíyèsí                                                                                          |
@@ -44,7 +44,7 @@ Label: Ìwọ̀n ààlà silica
 ### Ẹ yẹra fún lulú níbi tí ẹ bá ti lè ṣe é
 
 - **Ẹ ra glaze tí a ti pò** nígbà tí ó bá bá iṣẹ́ yín mu. Àbá àkọ́kọ́ HSE ni "Ẹ ra glaze tí ó ṣetán fún lílò, nígbà tí ó bá ṣeé ṣe", tàbí èyí tí ó jẹ́ wóró tàbí ẹrẹ̀ (slurry).
-- **Ẹ yan àwọn ìlànà tí ó láìléwu jù.** HSE dábàá "glaze tí ó ní silica kirisita díẹ̀ jù". Digitalfire dábàá **frit** (gíláàsì tí ilé iṣẹ́ ṣe, tí a lọ̀ di lulú, tí ó ń yọ́ kéré púpọ̀ ju ohun èlò tútù lọ) dípò barium carbonate tútù, àti **stain** (àwọ̀ seramiki tí ilé iṣẹ́ ṣe) dípò manganese, cobalt tàbí nickel púpọ̀ fún dúdú.
+- **Ẹ yan àwọn ìlànà tí ó láìléwu jù.** HSE dábàá "glaze tí silica kirisita inú wọn kéré ju ti àwọn mìíràn lọ". Digitalfire dábàá **frit** (gíláàsì tí ilé iṣẹ́ ṣe, tí a lọ̀ di lulú, tí ó ń yọ́ nínú omi kéré púpọ̀ ju ohun èlò tútù lọ) dípò barium carbonate tútù, àti **stain** (àwọ̀ seramiki tí ilé iṣẹ́ ṣe) dípò manganese, cobalt tàbí nickel púpọ̀ fún dúdú.
 
 ### Nígbà tí ẹ bá ń lo lulú
 
@@ -142,7 +142,7 @@ Kò sí orísun tí ó fún wa ní ìwọ̀n ìṣàn afẹ́fẹ́ fún ìbòr�
 
 ### Fífín glaze
 
-HSE kìlọ̀ pé fífín "lè mú ìkùukùu tí ó ní RCS jáde" (eruku silica tí a ń mí sínú), àti pé "ìkùukùu glaze ń gbẹ kíákíá ó sì ń di eruku". Gbogbo orísun tí a rí sọ pé kí a fín nìkan nínú àgọ́ ìfín tí afẹ́fẹ́ ń fà jáde.
+HSE kìlọ̀ pé fífín "lè mú ìkùukùu tí ó ní RCS jáde" (eruku silica crystalline tí a ń mí sínú), àti pé "ìkùukùu glaze ń gbẹ kíákíá ó sì ń di eruku". Gbogbo orísun tí a rí sọ pé kí a fín nìkan nínú àgọ́ ìfín tí afẹ́fẹ́ ń fà jáde.
 
 - HSE fẹ́ àhámọ́ tí a ń fa afẹ́fẹ́ rẹ̀ jáde àti, "níbi tí ó bá ṣeé ṣe, àgọ́ tí ó ní omi lẹ́yìn", èyí tí ó ń fi omi mú ohun tí ìfín fọ́n ká.
 - Ẹ lo tábìlì yíyí nínú àgọ́ náà, ẹ wọ ìbọ̀wọ́ nitrile àti respirator, kí ẹ sì nu àgọ́ náà àti àsẹ́ rẹ̀ kí ohun tí ìfín fọ́n ká tó gbẹ.
@@ -172,10 +172,10 @@ Gbogbo ìsun ló ń tú èéfín jáde, kódà pẹ̀lú amọ̀ lásán. Omi à
 
 ### Ibi tí ẹ ó gbé kiln sí
 
-- A dábàá gáréèjì, ilé kékeré lẹ́yìn ilé tàbí yàrá tí a yà sọ́tọ̀ fún kiln dípò ibi tí èèyàn ń gbé, àti èyí tí ẹ lè tì kúrò lọ́dọ̀ àwọn ọmọdé àti ẹranko ilé, gẹ́gẹ́ bí Skutt ti gbani nímọ̀ràn.
+- A dábàá gáréèjì, ilé kékeré lẹ́yìn ilé tàbí yàrá tí a yà sọ́tọ̀ fún kiln dípò ibi tí èèyàn ń gbé, àti èyí tí ẹ lè sé mọ́ kúrò lọ́dọ̀ àwọn ọmọdé àti ẹranko ilé, gẹ́gẹ́ bí Skutt ti gbani nímọ̀ràn.
 - **Àyè.** Àwọn orísun yàtọ̀: Skutt sọ pé ó kéré tán 18 íǹṣì (46 cm) kúrò lára ògiri tàbí ohun **tí ó lè jóná** (combustible) èyíkéyìí, nígbà tí CIRMA, ilé iṣẹ́ ìdánilójú kan ní Connecticut, dábàá ẹsẹ̀ bàtà 3 (0.9 m) kúrò lára ohunkóhun tí ó lè jóná. Ẹ tẹ̀lé ìwé ìtọ́ni kiln yín; bí kò bá sí, ẹ fi 18 íǹṣì sílẹ̀ kúrò lára ògiri àti ẹsẹ̀ bàtà 3 kúrò lára ohunkóhun tí ó lè jóná.
 - **Ilẹ̀.** Ẹ lo ilẹ̀ tí kò lè jóná bíi kọnkéré tàbí táílì seramiki, kì í ṣe igi, kápẹ́ẹ̀tì tàbí vinyl láé. Ẹ pa pákó, bébà àti àwọn olómi tí ń jóná mọ́ kúrò lẹ́gbẹ̀ẹ́ kiln.
-- **Iná mànàmáná.** CIRMA dámọ̀ràn ìlà iná tí ó jẹ́ ti kiln nìkan, kò sí okùn ìfàgùn tàbí ohun ààbò ìgbì iná (surge protector), yíyọ ọ́ kúrò lára iná láàárín ìsun, àti ohun ìpaná láàárín ẹsẹ̀ bàtà 25 (7.6 m).
+- **Iná mànàmáná.** CIRMA dámọ̀ràn ìlà iná tí ó jẹ́ ti kiln nìkan, kò sí okùn ìfàgùn tàbí ohun ààbò ìgbì iná (surge protector), yíyọ ọ́ kúrò lára iná láàárín ìsun kan sí òmíràn, àti ohun ìpaná láàárín ẹsẹ̀ bàtà 25 (7.6 m).
 - **Ooru yàrá.** Skutt sọ pé kí ẹ jẹ́ kí yàrá wà nísàlẹ̀ {{38 °C; 100 °F}}, bí bẹ́ẹ̀ kọ́ ẹ̀rọ ìdarí lè pa kiln. Bí vent kò ti ń mú ooru kúrò, yàrá kékeré lè nílò fáànù pẹ̀lú. Ẹ má ṣe jẹ́ kí orí ẹ̀rọ ìfọ́nmi ìpaná àti ẹ̀rọ ìmọ̀ ooru wà ní tààrà lókè kiln.
 - **Ẹ̀rọ ìkìlọ̀ carbon monoxide.** A kò rí òfin tí ó béèrè fún un fún kiln oníná mànàmáná, ṣùgbọ́n ohun ẹlẹ́ran-ara tí ń jóná ń mú CO jáde, nítorí náà ẹ̀rọ ìkìlọ̀ nínú yàrá kiln àti àwọn yàrá tí ó wà lẹ́gbẹ̀ẹ́ rẹ̀ jẹ́ ìgbésẹ̀ tí ó bọ́gbọ́n mu, tí kò sì wọ́n (ẹ wo [Ẹ má ṣe fi májèlé pa ìdílé yín](/guides/home-safety)).
 

@@ -1,10 +1,10 @@
 {
   "common": {
-    "formulaHelp": "Bhala i-formula ngezinombolo ezivamile, njengo-{typed}: izinombolo zivela njengezinombolo ezincane ngezansi, {shown}. Ukuze uhlanganise izingxenye ze-formula, njengaku-{joined}, kopisha leli chashazi:",
+    "formulaHelp": "Bhala i-formula ngezinombolo ezivamile, njengo-{typed}: izinombolo zivela njengezinombolo ezincane ngezansi, {shown}. Ukuze uhlanganise izingxenye ze-formula, njengaku-{joined}, khophela leli chashazi:",
     "relatedTo": "Ihlobene no-",
     "notes": "Amanothi",
     "loi": "Okulahleka ekushiseni (LOI), %",
-    "molecularWeight": "Isisindo se-molecule se-formula eluhlaza (sisetshenziswa kuphela uma i-LOI ingabhalwanga)",
+    "molecularWeight": "Isisindo samamolekyuli se-formula eluhlaza (sisetshenziswa kuphela uma i-LOI ingabhalwanga)",
     "formulaHeading": "I-formula, emva kokushiswa",
     "oxideSelection": "I-oxide",
     "noOxide": "lutho",
@@ -17,7 +17,7 @@
     "removeOxideName": "Khipha i-oxide {oxide} ku-formula",
     "save": "Londoloza",
     "elements": "Ama-element",
-    "removeNote": "Izindlela zokwenza ezilondoloziwe zigcina ikhophi yazo, ngakho ngeke zishintshe.",
+    "removeNote": "Amaresiphi alondoloziwe agcina ikhophi yawo, ngakho ngeke ashintshe.",
     "saveFailed": "Iphutha: isicelo eseva sehlulekile."
   },
   "material": {
@@ -28,7 +28,7 @@
     "rawFormula": "I-formula eluhlaza",
     "weightsNote": "Isisindo esilinganayo nesisindo emva kokushiswa kubalwa ku-formula naku-LOI uma ulondoloza.",
     "mineHeading": "Okokwakha kwami",
-    "none": "Akukabikho okwamanje. Okokwakha okwengeza ngezansi kungangena ezindleleni zakho zokwenza i-glaze, eceleni kwalokho okujwayelekile.",
+    "none": "Akukabikho okwamanje. Okokwakha okwengeza ngezansi kungangena kumaresiphi akho, eceleni kwalokho okujwayelekile.",
     "rawFormulaColumn": "I-formula eluhlaza",
     "standardHeading": "Okokwakha okujwayelekile",
     "fetchFailed": "Kube nephutha ekutholeni ulwazi lokokwakha.",
@@ -36,18 +36,18 @@
     "saved": "Kuphumelele. Okokwakha kwengezwe kudathabheyisi."
   },
   "additive": {
-    "title": "Okokwengeza nokokufaka umbala",
-    "lead": "Okokufaka umbala nokwenza i-glaze ingabonisi ngaphakathi, okulinganiswa ngaphezu kweresiphi eyisisekelo, njenge-cobalt noma i-tin oxide. Iresiphi ingakushiya ngaphandle kwe-unity formula noma ikubale kuyo.",
-    "newHeading": "Engeza okokwengeza noma okokufaka umbala",
+    "title": "Izithasiselo nokokufaka umbala",
+    "lead": "Okokufaka umbala nokwenza i-glaze ingabonisi, okulinganiswa ngaphezu kweresiphi eyisisekelo, njenge-cobalt noma i-tin oxide. Iresiphi ingakushiya ngaphandle kwe-unity formula noma ikubale kuyo.",
+    "newHeading": "Engeza isithasiselo noma okokufaka umbala",
     "name": "Igama",
     "formulaAsSold": "I-formula, njengoba kudayiswa",
     "noChemistry": "Akunakho ukuhlaziywa kwama-oxide, njenge-stain yasezitolo: kushiye ngaphandle kwe-unity formula",
     "firedNote": "Faka lokho okunikeza i-glaze emva kokushiswa: i-cobalt oxide emnyama, {asSold}, iba ngu-{fired} ne-LOI engu-{loi}%. Iresiphi ingabe isiyibala ku-unity formula.",
-    "mineHeading": "Okokwengeza nokokufaka umbala kwami",
-    "none": "Akukabikho okwamanje. Okokwengeza okwengeza ngezansi kungangena ezindleleni zakho zokwenza i-glaze, eceleni kwalokho okujwayelekile.",
-    "standardHeading": "Okokwengeza okujwayelekile",
-    "fetchFailed": "Kube nephutha ekutholeni ulwazi lokokwengeza.",
-    "standardFetchFailed": "Kube nephutha ekutholeni ulwazi lokokwengeza okujwayelekile.",
-    "saved": "Kuphumelele. Okokwengeza kwengezwe kudathabheyisi."
+    "mineHeading": "Izithasiselo nokokufaka umbala kwami",
+    "none": "Akukabikho okwamanje. Izithasiselo ozengeza ngezansi zingangena kumaresiphi akho, eceleni kwalokho okujwayelekile.",
+    "standardHeading": "Izithasiselo ezijwayelekile",
+    "fetchFailed": "Kube nephutha ekutholeni ulwazi lwezithasiselo.",
+    "standardFetchFailed": "Kube nephutha ekutholeni ulwazi lwezithasiselo ezijwayelekile.",
+    "saved": "Kuphumelele. Isithasiselo sengezwe kudathabheyisi."
   }
 }

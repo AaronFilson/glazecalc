@@ -233,7 +233,7 @@
     "saveFailed": "Die instelling kon nie gestoor word nie. Probeer asseblief weer.",
     "language": {
       "legend": "Taal",
-      "help": "Die taal van die toepassing, die gidse en jou e-posse. As jy dit verander, maak hierdie bladsy in daardie taal oop.",
+      "help": "Die taal van die toepassing, die gidse en jou e-posse. As jy dit verander, gaan hierdie bladsy in daardie taal oop.",
       "saved": "Gestoor: {language}."
     },
     "region": {
@@ -282,8 +282,8 @@
         "saved": "Gestoor: getalle word met die syfers 0–9 gewys."
       },
       "native": {
-        "label": "Die taal se eie syfers, waar dit het",
-        "saved": "Gestoor: getalle word in die taal se eie syfers gewys, waar dit het."
+        "label": "Die taal se eie syfers, waar dit hulle het",
+        "saved": "Gestoor: getalle word in die taal se eie syfers gewys, waar dit hulle het."
       }
     },
     "decimalMark": {
@@ -579,7 +579,7 @@
     "lastUsed": "laas gebruik {date}",
     "neverUsed": "nooit gebruik nie",
     "expires": "verval {date}",
-    "expiredOn": "verval {date}",
+    "expiredOn": "het verval {date}",
     "revokedOn": "herroep {date}",
     "revoke": "Herroep",
     "revokeNamed": "Herroep {name}",

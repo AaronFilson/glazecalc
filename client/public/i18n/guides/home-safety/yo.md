@@ -55,7 +55,7 @@ Label: Ohun èlò tí ń yọ́
 
 ### Ohun àwọ̀ àti òjé
 
-**Ohun àwọ̀** ni àwọn oxide irin àti stain tí ń fún glaze ní àwọ̀ rẹ̀: copper, cobalt, chrome, manganese, nickel, stain cadmium-selenium àti àwọn mìíràn. Ojú-ìwé ààbò iṣẹ́ amọ̀ ti yunifásítì kan dárúkọ òjé (lead, Pb), cadmium, cobalt àti chromium láàárín àwọn èròjà glaze tí ó léwu ní pàtàkì. A kò rí ìwọ̀n tí a lè gbẹ́kẹ̀ lé fún ohun àwọ̀ kankan, nítorí náà ẹ pe fún iye èyíkéyìí. Garawa glaze tí a ti pò ní àwọn ohun èlò kan náà bí àwọn àpò tí ó ti wá, ó kàn tutù ni.
+**Ohun àwọ̀** ni àwọn oxide irin àti stain tí ń fún glaze ní àwọ̀ rẹ̀: copper, cobalt, chrome, manganese, nickel, stain cadmium-selenium àti àwọn mìíràn. Ojú-ìwé ìsọfúnni ààbò iṣẹ́ amọ̀ ti yunifásítì kan dárúkọ òjé (lead, Pb), cadmium, cobalt àti chromium láàárín àwọn èròjà glaze tí ó léwu ní pàtàkì. A kò rí ìwọ̀n tí a lè gbẹ́kẹ̀ lé fún ohun àwọ̀ kankan, nítorí náà ẹ pe fún iye èyíkéyìí. Garawa glaze tí a ti pò ní àwọn ohun èlò kan náà bí àwọn àpò tí ó ti wá, ó kàn tutù ni.
 
 Ewu pàtàkì òjé yàtọ̀: kì í ṣe ṣíbí kan, bí kò ṣe eruku díẹ̀díẹ̀ tí a ń gbé mì fún ọ̀sẹ̀ tàbí oṣù, láìsí àmì ìkìlọ̀ kankan (ẹ wo Òjé àti àwọn ọmọdé, ní ìsàlẹ̀).
 
@@ -95,7 +95,7 @@ A dábàá ìdérí lórí garawa náà: ẹrẹ̀ inú rẹ̀ ní àwọn irin 
 ### Òfin ilé tí a dábàá
 
 - Kò sí iṣẹ́ amọ̀ tàbí glaze lórí tábìlì ilé ìdáná tàbí tábìlì oúnjẹ, kódà fún iṣẹ́ kíákíá.
-- Ẹ fi omi nu ilé iṣẹ́ amọ̀. Ojú-ìwé ààbò iṣẹ́ amọ̀ ti yunifásítì kan sọ pé kí ẹ yẹra fún gbígbá ilẹ̀ ní gbígbẹ, kí ẹ fi ẹ̀rọ ìfàmọ́ tí ó ní àlẹ̀mọ́ HEPA nìkan fà á, kí ẹ sì fi aṣọ olómi nu ilẹ̀ lójoojúmọ́. Ẹ fi aṣọ olómi nu àwọn ojú ohun lẹ́yìn iṣẹ́ kọ̀ọ̀kan pẹ̀lú.
+- Ẹ fi omi nu ilé iṣẹ́ amọ̀. Ojú-ìwé ìsọfúnni ààbò iṣẹ́ amọ̀ ti yunifásítì kan sọ pé kí ẹ yẹra fún gbígbá ilẹ̀ ní gbígbẹ, kí ẹ fi ẹ̀rọ ìfàmọ́ tí ó ní àlẹ̀mọ́ HEPA nìkan fà á, kí ẹ sì fi aṣọ olómi nu ilẹ̀ lójoojúmọ́. Ẹ fi aṣọ olómi nu àwọn ojú ohun lẹ́yìn iṣẹ́ kọ̀ọ̀kan pẹ̀lú.
 - Ẹ ṣe gbogbo eruku glaze bí eruku òjé, kódà bí glaze yín kò bá ní òjé. Eruku tí ó gbé barium, chrome, cobalt tàbí manganese ń wọlé ní ọ̀nà kan náà.
 - Ẹ fọ ọwọ́ àti èékánná yín dáadáa kí ẹ tó gbé ọmọdé, se oúnjẹ tàbí fọwọ́ pa ẹranko ilé lára.
 - Ẹ má ṣe jẹ́ kí àwọn ọmọdé ṣeré nínú ilé iṣẹ́ amọ̀, ẹ má sì jẹ́ kí ó di ọ̀nà àbùjá sí àgbàlá tàbí ọgbà.
@@ -141,7 +141,7 @@ Pet Poison Helpline sọ pé "Òjé jẹ́ májèlé fún gbogbo irú ẹranko, 
 ### Òfin òye gbogbogbò
 
 - Ẹ pa àwọn ẹranko ilé mọ́ kúrò nínú ilé iṣẹ́ amọ̀, pẹ̀lú ilẹ̀kùn tí a tì.
-- Àwọn ajá máa ń jẹ àpò, wọ́n sì máa ń mu omi láti inú garawa. Ẹ pa àpò mọ́ sínú kọ́bọ́ọ̀dù tí a tì, kí ìdérí sì wà lórí gbogbo garawa.
+- Àwọn ajá máa ń jẹ àpò, wọ́n sì máa ń mu omi láti inú garawa. Ẹ pa àpò mọ́ sínú kọ́bọ́ọ̀dù tí a pa dé, kí ìdérí sì wà lórí gbogbo garawa.
 - Àwọn ológbò máa ń rìn kọjá nínú eruku, wọ́n sì máa ń lá a kúrò ní àtẹ́lẹsẹ̀ àti irun wọn. Ẹ fi omi nu ilẹ̀, kí ẹ sì pa àwọn ológbò mọ́ kúrò nínú ilé iṣẹ́ amọ̀, kí ó má baà sí nǹkan kan tí wọn ó lá kúrò lára.
 - Àwọn ẹyẹ àti àwọn ẹranko ọlọ́mú kékeré (ehoro, ẹlẹ́dẹ̀ Guinea, hamster) ń pín afẹ́fẹ́ ilé. Ẹ pa wọ́n mọ́ sínú yàrá tí ó jìnnà pẹ̀lú ilẹ̀kùn tí a tì nígbà tí ẹ bá ń lo ohun èlò gbígbẹ àti nígbà tí kiln bá ń sun.
 - Àpótí ẹja máa ń gba eruku tí ó ń silẹ̀. Ẹ pa wọ́n mọ́ kúrò nínú ilé iṣẹ́ amọ̀, kí ẹ sì bò wọ́n.
@@ -173,14 +173,14 @@ Rio Grande dábàá **wáyà iná tirẹ̀ lọ́tọ̀** (èyí tí kò fún n�
 
 Ìsun ń tú èéfín jáde, nítorí náà ẹ darí afẹ́fẹ́ kiln sí ìta; [Pípò láìléwu àti afẹ́fẹ́ tó mọ́](/guides/safe-mixing) ṣàlàyé bí a ṣe ń ṣe é. Kiln nínú garéèjì tí ó so mọ́ ilé nílò ọ̀nà afẹ́fẹ́ tí kò ní jẹ́ kí èéfín dé inú ilé láti ẹnu ilẹ̀kùn tí ó so wọ́n pọ̀. Ẹ pa àwọn ẹyẹ mọ́ sínú yàrá tí ó jìnnà nígbàkígbà tí kiln bá ń sun.
 
-**Carbon monoxide** (CO) jẹ́ gáàsì olóró tí ẹ kò lè rí tàbí gbọ́ òórùn rẹ̀. Ìwé ààbò kiln ti yunifásítì kan béèrè ẹ̀rọ ìkìlọ̀ CO pẹ̀lú kiln gáàsì. Èrò yàtọ̀ síra fún kiln iná mànàmáná, ṣùgbọ́n sísun àwọn nǹkan ẹlẹ́ẹ̀mí (nínú amọ̀, tàbí nǹkan bí ìwé tàbí ìda) lè mú CO jáde. A rò pé ẹ̀rọ ìkìlọ̀ CO nínú yàrá kiln àti àwọn yàrá tí ó wà lẹ́gbẹ̀ẹ́ rẹ̀ jẹ́ ìgbésẹ̀ tí ó bọ́gbọ́n mu tí kò sì wọ́n fún kiln èyíkéyìí.
+**Carbon monoxide** (CO) jẹ́ gáàsì olóró tí ẹ kò lè rí tàbí gbọ́ òórùn rẹ̀. Ìwé ìsọfúnni ààbò kiln ti yunifásítì kan béèrè ẹ̀rọ ìkìlọ̀ CO pẹ̀lú kiln gáàsì. Èrò yàtọ̀ síra fún kiln iná mànàmáná, ṣùgbọ́n sísun àwọn nǹkan ẹlẹ́ẹ̀mí (nínú amọ̀, tàbí nǹkan bí ìwé tàbí ìda) lè mú CO jáde. A rò pé ẹ̀rọ ìkìlọ̀ CO nínú yàrá kiln àti àwọn yàrá tí ó wà lẹ́gbẹ̀ẹ́ rẹ̀ jẹ́ ìgbésẹ̀ tí ó bọ́gbọ́n mu tí kò sì wọ́n fún kiln èyíkéyìí.
 
 ### Ihò ìwòran àti ojú
 
 Ìmọ́lẹ̀ infrared, tí ẹ kò lè rí, "bẹ̀rẹ̀ ní 752°F (400°C)", Ceramic Arts Network sì sọ pé wíwo inú kiln tí ó gbóná ju èyí lọ yẹ kí ó máa jẹ́ pẹ̀lú ohun ààbò ojú nígbà gbogbo. Infrared lè ba lẹ́ńsì ojú jẹ́ kí ó sì fa cataract (ojú funfun), wíwò fún ìgbà pípẹ́ sì lè pa retina lára. Gíláàsì oòrùn àti gíláàsì didymium kò dí i.
 
 > [!WARNING]
-> Àwọn ọmọdé kò yẹ kí wọ́n wo inú kiln rárá. Ihò ìwòran tí ń tàn ń fà wọ́n mọ́ra, wọn kò sì ní fi gíláàsì ààbò sójú dájúdájú, nítorí náà ẹ pa wọ́n mọ́ kúrò nígbà tí kiln bá gbóná. Àwọn àgbàlagbà yẹ kí wọ́n wò fún ìgbà díẹ̀ péré, nípasẹ̀ gíláàsì àwọn tí ń jó irin pọ̀ (welding glasses) tí a ṣe fún IR. Àwọn orísun dábàá shade láti 1.7 sí 5; shade 3 jẹ́ àṣàyàn tí ó bọ́gbọ́n mu, èyí tí ó ṣókùnkùn jù bí ẹ bá rí àbàwọ́n lójú lẹ́yìn náà.
+> Àwọn ọmọdé kò yẹ kí wọ́n wo inú kiln rárá. Ihò ìwòran tí ń tàn ń fà wọ́n mọ́ra, a kò sì lè gbẹ́kẹ̀ lé pé wọn yóò fi gíláàsì ààbò sílẹ̀ lójú, nítorí náà ẹ pa wọ́n mọ́ kúrò nígbà tí kiln bá gbóná. Àwọn àgbàlagbà yẹ kí wọ́n wò fún ìgbà díẹ̀ péré, nípasẹ̀ gíláàsì àwọn tí ń jó irin pọ̀ (welding glasses) tí a ṣe fún IR. Àwọn orísun dábàá shade láti 1.7 sí 5; shade 3 jẹ́ àṣàyàn tí ó bọ́gbọ́n mu, èyí tí ó ṣókùnkùn jù bí ẹ bá rí àbàwọ́n lójú lẹ́yìn náà.
 
 ## Ohun èlò afọwọ́ṣe lórí tábìlì ìdílé {#handmade-ware}
 

@@ -52,14 +52,14 @@ Orton ń ṣe irú mẹ́rin. Méjì ń dúró lórí pẹpẹ láti fi ohun tí
 Table: Irú cone mẹ́rin ti Orton
 Label: Irú cone
 
-| Irú             | Ìlò                    | Bí ó ṣe ń dúró                                                                                      |
-| --------------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
-| Dídúró fúnra rẹ̀ | Witness cone lórí pẹpẹ | Ìsàlẹ̀ tí a kọ́ mọ́ ọn ń ṣètò gíga rẹ̀, 1¾ in (44 mm), àti ìtẹ̀ 8°; kò nílò ohun ìdìmú                   |
-| Ńlá             | Witness cone lórí pẹpẹ | A gbé e sínú plaque tàbí ìṣù amọ̀, kí 2 in (51 mm) gẹ́lẹ́ hàn síta, kí ó tẹ̀ ní 8° kúrò ní ìdúró ṣánṣán |
-| Kékeré (junior) | Kiln sitter            | Ó dùbúlẹ̀ kọjá àwọn ohun ìtìlẹ́yìn sitter; 15/16 in (24 mm) ló ń hàn bí a bá gbé e dúró lórí pẹpẹ     |
-| Ọ̀pá (bar)       | Kiln sitter            | Lúúlúú kan náà pẹ̀lú cone kékeré, ní ìrísí ọ̀pá tí ó dọ́gba                                            |
+| Irú             | Ìlò                    | Bí ó ṣe ń dúró                                                                                        |
+| --------------- | ---------------------- | ----------------------------------------------------------------------------------------------------- |
+| Dídúró fúnra rẹ̀ | Witness cone lórí pẹpẹ | Ìsàlẹ̀ tí a kọ́ mọ́ ọn ń ṣètò gíga rẹ̀, 1¾ íǹṣì (44 mm), àti ìtẹ̀ 8°; kò nílò ohun ìdìmú                   |
+| Ńlá             | Witness cone lórí pẹpẹ | A gbé e sínú plaque tàbí ìṣù amọ̀, kí 2 íǹṣì (51 mm) gẹ́lẹ́ hàn síta, kí ó tẹ̀ ní 8° kúrò ní ìdúró ṣánṣán |
+| Kékeré (junior) | Kiln sitter            | Ó dùbúlẹ̀ kọjá àwọn ohun ìtìlẹ́yìn sitter; 15/16 íǹṣì (24 mm) ló ń hàn bí a bá gbé e dúró lórí pẹpẹ     |
+| Ọ̀pá (bar)       | Kiln sitter            | Lúúlúú kan náà pẹ̀lú cone kékeré, ní ìrísí ọ̀pá tí ó dọ́gba                                              |
 
-Gíga ṣe pàtàkì: ìyàtọ̀ ¼ in (6 mm) nínú gíga cone ńlá "lè fa ìyàtọ̀ tí ó ju ààbọ̀ cone lọ nínú títẹ̀". Cone kì í bàjẹ́ tàbí gbó, ọ̀rinrin níbi ìpamọ́ kò sì nípa lórí wọn.
+Gíga ṣe pàtàkì: ìyàtọ̀ ¼ íǹṣì (6 mm) nínú gíga cone ńlá "lè fa ìyàtọ̀ tí ó ju ààbọ̀ cone lọ nínú títẹ̀". Cone kì í bàjẹ́ tàbí gbó, ọ̀rinrin níbi ìpamọ́ kò sì nípa lórí wọn.
 
 ### Ohun tí "cone 6" túmọ̀ sí ní ìṣe
 
@@ -156,13 +156,13 @@ Label: Cone pack ẹlẹ́ta
 
 L&L, olùṣe kiln ní US, dábàá cone tí ó dúró fúnra rẹ̀ fún pack "nítorí pé wọ́n rọrùn jùlọ láti lò, wọ́n sì ń fún ni ní àbájáde tí ó dúró déédé jùlọ": gíga àti ìtẹ̀ wọn ti wà nínú wọn.
 
-Cone ńlá nílò **plaque** (ohun ìdìmú tí a ti ṣe sílẹ̀) tàbí **ìṣù** amọ̀ rírọ̀, tí ó ń mu omi, tí a fi pẹ́ńsùlù gún ihò sí. Ẹ gbé ọ̀kọ̀ọ̀kan kí 2 in (51 mm) gẹ́lẹ́ hàn síta, kí ó tẹ̀ ní 8° kúrò ní ìdúró ṣánṣán sí **ojú títẹ̀** rẹ̀. Láti wá ojú yẹn, ẹ gbé cone dúró lórí ìsàlẹ̀ rẹ̀ lórí ilẹ̀ tí ó tẹ́jú, ẹ di í mú ní orí rẹ̀ kí ẹ sì fi í sílẹ̀: yóò ṣubú sí ojú títẹ̀ rẹ̀.
+Cone ńlá nílò **plaque** (ohun ìdìmú tí a ti ṣe sílẹ̀) tàbí **ìṣù** amọ̀ rírọ̀, tí ó ń mu omi, tí a fi pẹ́ńsùlù gún ihò sí. Ẹ gbé ọ̀kọ̀ọ̀kan kí 2 íǹṣì (51 mm) gẹ́lẹ́ hàn síta, kí ó tẹ̀ ní 8° kúrò ní ìdúró ṣánṣán sí **ojú títẹ̀** rẹ̀. Láti wá ojú yẹn, ẹ gbé cone dúró lórí ìsàlẹ̀ rẹ̀ lórí ilẹ̀ tí ó tẹ́jú, ẹ di í mú ní orí rẹ̀ kí ẹ sì fi í sílẹ̀: yóò ṣubú sí ojú títẹ̀ rẹ̀.
 
 ### Ibi tí a ó gbé àwọn pack sí
 
 1. Ẹ gbé pack náà "jìn sínú kiln, síbẹ̀... kí ó hàn láti inú ihò ìwòye" (Orton), nítòsí àárín ẹrù kí ó sì jìnnà sí afẹ́fẹ́ tí ń fẹ́ wọlé (L&L). Kì í ṣe ní ẹnu ihò ìwòye gan-an: ó yẹ kí àwọn cone gba ooru tí àwọn iṣẹ́ amọ̀ ń gbà.
 2. Kí ẹ tó pa ìdérí, ẹ wo inú ihò ìwòye kí ẹ sì ṣàyẹ̀wò pé ẹ lè rí cone mẹ́tẹ̀ẹ̀ta.
-3. Nínú kiln tí ó ní sitter, ẹ jẹ́ kí pẹpẹ pack wà ó kéré tán 1 in (25 mm) lókè tàbí nísàlẹ̀ tube sitter, kí pẹpẹ tí ó bá tẹ̀ má baà lè há sitter mọ́.
+3. Nínú kiln tí ó ní sitter, ẹ jẹ́ kí pẹpẹ pack wà ó kéré tán 1 íǹṣì (25 mm) lókè tàbí nísàlẹ̀ tube sitter, kí pẹpẹ tí ó bá tẹ̀ má baà lè há sitter mọ́.
 4. Fún àwọn ìsun yín àkọ́kọ́, ẹ gbé pack sórí pẹpẹ òkè, àárín àti ìsàlẹ̀. Ìdánwò ìṣàtúnṣe L&L lọ jù bẹ́ẹ̀ lọ: pack méjì ti cone 07, 06 àti 05 lórí gbogbo pẹpẹ, ọ̀kan ní etí àti ọ̀kan ní àárín.
 
 Ẹ retí ìyàtọ̀: Orton sọ pé "Ní ọ̀pọ̀ ìgbà, ẹ ó rí ìyàtọ̀ tí ó kéré tán cone kan láti òkè dé ìsàlẹ̀ nínú kiln", àwọn ibi tí a kó ẹrù sí pọ̀ sì máa ń jóná tutù jù. Àwọn pack tí ẹ kò lè rí nígbà ìsun ṣì ń fún ni ní àkọsílẹ̀ lẹ́yìn náà.
@@ -194,7 +194,7 @@ Cone kékeré àti ọ̀pá "ń fún ni ní ìtọ́jú ooru tí ó dọ́gba". 
 
 1. Ẹ pa gbogbo switch. Ẹ ṣàyẹ̀wò pé ọ̀pá ìmọ̀lára ń yí láìdínà, ó jókòó sí àárín tube, kò sì tẹ̀ tàbí dípẹtà. Bí ó bá ń lọ́ra, Dawson sọ pé kí a pààrọ̀ gbogbo ẹ̀yà tube náà.
 2. Ẹ fi búrọ́ọ̀ṣì kun ìpele tínínrín **kiln wash** fún ìsun gíga (ìpara ààbò tí ń dá ohun yíyọ́ dúró láti lẹ̀ mọ́ nǹkan) sí ohun ìtìlẹ́yìn cone àti sí ọ̀pá níbi tí ó ti kan cone. Ẹ má ṣe fi wash sí cone tàbí tube porcelain láéláé.
-3. Ẹ kó pẹpẹ àti àwọn iṣẹ́ amọ̀ ó kéré tán 1 in (25 mm) lókè tàbí nísàlẹ̀ tube, kí ohunkóhun má baà lè kàn án, ṣubú lù ú tàbí dí i.
+3. Ẹ kó pẹpẹ àti àwọn iṣẹ́ amọ̀ ó kéré tán 1 íǹṣì (25 mm) lókè tàbí nísàlẹ̀ tube, kí ohunkóhun má baà lè kàn án, ṣubú lù ú tàbí dí i.
 4. Ẹ gbé ìwúwo sókè, ẹ tẹ èékánná mọ́lẹ̀ sórí trigger, kí ẹ sì gbé cone tàbí ọ̀pá dùbúlẹ̀ pẹrẹsẹ sórí ohun ìtìlẹ́yìn mọ́ ìgbésẹ̀ irin, bí ìwé ìtọ́ni sitter yín ṣe fi hàn, bákan náà ní gbogbo ìgbà. Ẹ tún ṣàyẹ̀wò rẹ̀ kí ẹ tó pa ìdérí: "CONE TÀBÍ Ọ̀PÁ TÍ A KÒ GBÉ SÍ IPÒ RẸ̀ DÁADÁA LÈ FA ÌSUN-JÙ."
 5. Ẹ ṣètò limit timer kí ẹ sì ti plunger wọlé títí yóò fi tì. Ẹ jẹ́ kí kiln wà ní ìpele tí ó tẹ́jú, kí abẹ́ ìwúwo sì wà ní òfìfo, kí ìwúwo lè ṣubú.
 
@@ -264,7 +264,7 @@ Label: Kíka cone pack
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | Cone 5 ti wó; orí cone 6 dọ́gba pẹ̀lú ìsàlẹ̀ rẹ̀ tàbí ó wà nísàlẹ̀ díẹ̀; cone 7 dúró ṣánṣán tàbí ó tẹ̀ díẹ̀ péré | Ó bá ibi tí a fojú sí mu: a dé cone 6                             |
 | Cone 5 ti tẹ̀; cone 6 tẹ̀ ní apá kan nìkan, ní aago 2 tàbí 3, tàbí ó dúró ṣánṣán                           | Kò jóná tó: ìsun dúró ní kùtùkùtù jù                              |
-| Kódà cone 5 kò fi bẹ́ẹ̀ yí                                                                                 | Kò jóná tó rárá, ní cone kan tàbí jù bẹ́ẹ̀ lọ                       |
+| Kódà cone 5 kò fi bẹ́ẹ̀ yí                                                                                 | Kò jóná tó, ó kù púpọ̀: cone kan tàbí jù bẹ́ẹ̀ lọ                    |
 | Cone 5 àti 6 dùbúlẹ̀ pẹrẹsẹ; cone 7 ti tẹ̀                                                                 | Ó jóná jù: "ẹ ti kọjá ìbáṣepọ̀ àkókò àti ìwọ̀n ooru tí ó dára jùlọ" |
 | Gbogbo mẹ́tẹ̀ẹ̀ta wó pẹrẹsẹ tàbí yọ́ mọ́ plaque                                                               | Ó jóná jù gan-an; ẹ ṣàyẹ̀wò sitter àti timer kí ẹ tó tún sun       |
 | Cone aláwọ̀ ewé díẹ̀, tàbí bisque aláwọ̀ eérú                                                               | Afẹ́fẹ́ tí kò jáde dáadáa, tàbí sísun yára jù                       |
@@ -364,7 +364,7 @@ Gbogbo ìwọ̀n jẹ́ ti orúkọ (JIS): ìwọ̀n ooru tí ìlànà náà fú
 
 ### Cone Kyoto
 
-Cone Kyoto (京都ゼーゲル), tí ilé iṣẹ́ ìlú Kyoto ń ṣe, ni a kò ṣe mọ́: ìròyìn sọ pé ilé iṣẹ́ náà dá ṣíṣe wọn dúró ní òpin ọdún ìnáwó 2009. Wọ́n ní nọ́ńbà kan náà pẹ̀lú cone SK ti JIS ṣùgbọ́n wọ́n ń tẹ̀ ní títutù jù: cone Kyoto ń tẹ̀ ní bí ìwọ̀n ooru cone SK ti JIS tí ó kéré sí i ní nọ́ńbà méjì tàbí mẹ́ta. Ìlànà láti Kyoto tí ó sọ "SK 8" lè túmọ̀ sí cone Kyoto. Ilé iṣẹ́ náà ti tẹ ìmọ̀ràn jáde fún àwọn amọ̀kòkò tí ń kúrò ní cone Kyoto lọ sí cone Orton, ó sì fi Orton cone 10 rọ́pò Kyoto SK 12 tirẹ̀. Ìyẹn ni ìpinnu ilé iṣẹ́ náà láti inú ìwọ̀n tirẹ̀: ó tẹ cone Kyoto àti cone Orton nínú kiln kan náà ní 100 °C/h, Kyoto SK 12 (1290 °C) sì tẹ̀ níbi tí Orton 10 (1290 °C) tẹ̀. Nínú àtẹ kan náà, Kyoto SK 8 (1198 °C) tẹ̀ nítòsí Orton 5 (1207 °C), Kyoto SK 10 (1232 °C) sì tẹ̀ níbi tí Orton 7 (1232 °C) tẹ̀. Glazecalc ń lo àtẹ yìí, kì í ṣe àtẹ Orton ní 60 °C/h, nígbà tí ó bá ń fi cone SK hàn lẹ́gbẹ̀ẹ́ cone Orton, ó sì ń sọ pé ìbámu kọ̀ọ̀kan jẹ́ ìsúnmọ́.
+Cone Kyoto (京都ゼーゲル), tí ilé iṣẹ́ ìlú Kyoto ń ṣe, ni a kò ṣe mọ́: ìròyìn sọ pé ilé iṣẹ́ náà dá ṣíṣe wọn dúró ní òpin ọdún ìnáwó 2009. Wọ́n ní nọ́ńbà kan náà pẹ̀lú cone SK ti JIS ṣùgbọ́n wọ́n ń tẹ̀ ní títutù jù: cone Kyoto ń tẹ̀ ní bí ìwọ̀n ooru cone SK ti JIS tí ó tutù jù ní nọ́ńbà méjì tàbí mẹ́ta. Ìlànà láti Kyoto tí ó sọ "SK 8" lè túmọ̀ sí cone Kyoto. Ilé iṣẹ́ náà ti tẹ ìmọ̀ràn jáde fún àwọn amọ̀kòkò tí ń kúrò ní cone Kyoto lọ sí cone Orton, ó sì fi Orton cone 10 rọ́pò Kyoto SK 12 tirẹ̀. Ìyẹn ni ìpinnu ilé iṣẹ́ náà láti inú ìwọ̀n tirẹ̀: ó tẹ cone Kyoto àti cone Orton nínú kiln kan náà ní 100 °C/h, Kyoto SK 12 (1290 °C) sì tẹ̀ níbi tí Orton 10 (1290 °C) tẹ̀. Nínú àtẹ kan náà, Kyoto SK 8 (1198 °C) tẹ̀ nítòsí Orton 5 (1207 °C), Kyoto SK 10 (1232 °C) sì tẹ̀ níbi tí Orton 7 (1232 °C) tẹ̀. Glazecalc ń lo àtẹ yìí, kì í ṣe àtẹ Orton ní 60 °C/h, nígbà tí ó bá ń fi cone SK hàn lẹ́gbẹ̀ẹ́ cone Orton, ó sì ń sọ pé ìbámu kọ̀ọ̀kan jẹ́ ìsúnmọ́.
 
 ### Cone Orton tí a ń tà ní Japan
 
@@ -386,7 +386,7 @@ A ń ta cone Orton tí ó dúró fúnra rẹ̀ ní Japan lábẹ́ orúkọ 立�
 
 ### Ìdí tí apá àkọ́kọ́ fi ń lọ díẹ̀díẹ̀
 
-Omi ń fẹ̀ ju ìlọ́po ẹgbẹ̀rún lọ bí ó ṣe ń di èéfín omi, nítorí náà a gbọ́dọ̀ gbẹ iṣẹ́ amọ̀ tí ó ní ọ̀rinrin díẹ̀díẹ̀. L&L àti Orton gbà ni nímọ̀ràn pé "Ó yẹ kí a ṣọ́ra ní pàtàkì nísàlẹ̀ 1500°F (815°C) láti mú amọ̀ gbóná déédé", àti pé a gbọ́dọ̀ sun carbon tán ṣáájú bí {{1200 °F; 650 °C}}. Lókè {{1500 °F; 816 °C}} kiln lè gòkè yára jù.
+Omi ń fẹ̀ ju ìlọ́po ẹgbẹ̀rún lọ bí ó ṣe ń di èéfín omi, nítorí náà a gbọ́dọ̀ gbẹ iṣẹ́ amọ̀ tí ó ní ọ̀rinrin díẹ̀díẹ̀. L&L àti Orton gbà ni nímọ̀ràn pé "Ó yẹ kí a ṣọ́ra ní pàtàkì nísàlẹ̀ 1500°F (815°C) láti mú amọ̀ gbóná déédé", àti pé a gbọ́dọ̀ sun carbon tán ṣáájú bí {{1200 °F; 650 °C}}. Lókè {{1500 °F; 816 °C}} kiln lè gòkè yára sí i.
 
 Table: Ohun tí ń ṣẹlẹ̀ bí bisque ṣe ń gbóná
 Label: Ohun tí ń ṣẹlẹ̀ nínú bisque
@@ -464,9 +464,9 @@ Kiln ọwọ́ ń tẹ̀lé ètò kan náà pẹ̀lú ọwọ́: ẹ gbẹ ẹ́
 
 ### Kíkó ẹrù fún ìsun glaze
 
-- Àwọn iṣẹ́ amọ̀ tí a fi glaze sí kò gbọdọ̀ kan ara wọn tàbí ògiri: ẹ fi bí ½ in (13 mm) sílẹ̀.
+- Àwọn iṣẹ́ amọ̀ tí a fi glaze sí kò gbọdọ̀ kan ara wọn tàbí ògiri: ẹ fi bí ½ íǹṣì (13 mm) sílẹ̀.
 - Ẹ má ṣe jẹ́ kí glaze dé ẹsẹ̀ (**dry-footing**), tàbí kí ẹ gbé iṣẹ́ amọ̀ ìsun kékeré sórí **stilts**, ìdúró kékeré tí ó ní ṣóńṣó. Kò yẹ kí stoneware àti porcelain dúró lórí stilts, èyí tí ń wọ inú wọn ní ìwọ̀n ooru bẹ́ẹ̀; ẹ lo kiln wash fún ìsun gíga tàbí iyanrìn silica dípò bẹ́ẹ̀.
-- Ẹ fi ó kéré tán 1 in (25 mm) sílẹ̀ láàárín etí pẹpẹ àti ògiri tàbí sitter.
+- Ẹ fi ó kéré tán 1 íǹṣì (25 mm) sílẹ̀ láàárín etí pẹpẹ àti ògiri tàbí sitter.
 
 ### Ètò ìsun controller
 
@@ -539,14 +539,14 @@ Kiln ọwọ́ kò lè tẹ̀lé àwọn ètò wọ̀nyí gẹ́lẹ́, ṣùgb�
 Table: Ìlànà ìsun ọwọ́ ti L&L
 Label: Ìlànà L and L
 
-| Ìpele                                  | Ohun tí ẹ ó ṣe                                                                                                                                                                                                                                      |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ìmúrasílẹ̀                              | Cone sitter ní nọ́ńbà kan tí ó gbóná ju cone pẹpẹ (ìmọ̀ràn L&L; ẹ wo Kiln sitter). Ẹ gbé ìdérí sókè "ní bí 4 tàbí 5 inches" (10–13 cm), kí ẹ sì yọ gbogbo plug ihò ìwòye kúrò. Ẹ ṣètò timer ga púpọ̀ ní ìgbà àkọ́kọ́, kí ẹ sì kọ àkókò tí ìsun gbà sílẹ̀. |
-| Low                                    | Gbogbo switch lórí Low (1): wákàtí 3 bí amọ̀ bá ti gbẹ, wákàtí 8 sí 20 tàbí jù bẹ́ẹ̀ lọ bí ó bá dà bí ẹni pé ó tutù                                                                                                                                    |
-| Medium                                 | Ẹ pa ìdérí. Switch méjì òkè sí 5, switch ìsàlẹ̀ sí 6.                                                                                                                                                                                                |
-| Ooru pupa àkọ́kọ́                        | Ní kété tí ẹ bá rí ìtànná èyíkéyìí, ẹ dí ihò ìwòye méjì ìsàlẹ̀. Ẹ fi ti òkè sílẹ̀ ní ṣíṣí fún gbogbo ìsun.                                                                                                                                            |
-| Ooru pupa púpọ̀, bí {{1400 °F; 760 °C}} | Switch méjì ìsàlẹ̀ sí High, switch òkè sí 9                                                                                                                                                                                                          |
-| Òpin                                   | Ẹ wo cone kí ẹ sì ṣàtúnṣe switch òkè àti ìsàlẹ̀ díẹ̀díẹ̀. Nígbà tí cone bá wó, ẹ pa gbogbo switch kí ẹ sì pa breaker. Ẹ jẹ́ kí kiln tutù pátápátá kí ẹ tó ṣí i.                                                                                         |
+| Ìpele                                  | Ohun tí ẹ ó ṣe                                                                                                                                                                                                                                    |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ìmúrasílẹ̀                              | Cone sitter ní nọ́ńbà kan tí ó gbóná ju cone pẹpẹ (ìmọ̀ràn L&L; ẹ wo Kiln sitter). Ẹ gbé ìdérí sókè "ní bí íǹṣì 4 tàbí 5" (10–13 cm), kí ẹ sì yọ gbogbo plug ihò ìwòye kúrò. Ẹ ṣètò timer ga púpọ̀ ní ìgbà àkọ́kọ́, kí ẹ sì kọ àkókò tí ìsun gbà sílẹ̀. |
+| Low                                    | Gbogbo switch lórí Low (1): wákàtí 3 bí amọ̀ bá ti gbẹ, wákàtí 8 sí 20 tàbí jù bẹ́ẹ̀ lọ bí ó bá dà bí ẹni pé ó tutù                                                                                                                                  |
+| Medium                                 | Ẹ pa ìdérí. Switch méjì òkè sí 5, switch ìsàlẹ̀ sí 6.                                                                                                                                                                                              |
+| Ooru pupa àkọ́kọ́                        | Ní kété tí ẹ bá rí ìtànná èyíkéyìí, ẹ dí ihò ìwòye méjì ìsàlẹ̀. Ẹ fi ti òkè sílẹ̀ ní ṣíṣí fún gbogbo ìsun.                                                                                                                                          |
+| Ooru pupa púpọ̀, bí {{1400 °F; 760 °C}} | Switch méjì ìsàlẹ̀ sí High, switch òkè sí 9                                                                                                                                                                                                        |
+| Òpin                                   | Ẹ wo cone kí ẹ sì ṣàtúnṣe switch òkè àti ìsàlẹ̀ díẹ̀díẹ̀. Nígbà tí cone bá wó, ẹ pa gbogbo switch kí ẹ sì pa breaker. Ẹ jẹ́ kí kiln tutù pátápátá kí ẹ tó ṣí i.                                                                                       |
 
 ### Ètò ìsun Bracker's
 
@@ -619,7 +619,7 @@ Fún mímú afẹ́fẹ́ jáde nínú yàrá, àti fún ẹ̀rọ ìkìlọ̀ c
 - Ẹ wo inú ihò ìwòye kìkì pẹ̀lú gíláàsì ìtàrin shade 3 tí a ṣe fún IR; gíláàsì oòrùn kò tó. Skutt gbà ni nímọ̀ràn láti yí plug sí ipò rẹ̀ kí wọ́n má baà jábọ́.
 - Ẹ wà nítòsí kí ẹ sì máa ṣàyẹ̀wò kiln nígbà tí ó ń jóná, ní pàtàkì nítòsí àkókò tí a retí pé yóò parí; sitter kì í ṣe ohun tí kò lè kùnà. Ẹ sun kìkì nígbà tí àgbàlagbà kan yóò wà nílé tí yóò sì wà lójúfò jákèjádò gbogbo ìsun.
 - Ẹ má ṣe sun lórí tàbí nítòsí ohunkóhun tí ó lè jóná láéláé, bí ilẹ̀ igi tàbí kápẹ́ẹ̀tì.
-- Ẹ pa àwọn àlàfo tí ó wà nínú ìwé ìtọ́ni yín mọ́. Àwọn ìwọ̀n tí a tẹ̀ jáde wà láti 12 in (30 cm) sí 3 ft (91 cm); níbi tí ìwé ìtọ́ni kò ti sọ nǹkan, 18 in (46 cm) kúrò lára ògiri àti 3 ft (91 cm) kúrò lára ohunkóhun tí ó lè jóná ni yíyàn tí ó láàbò jùlọ.
+- Ẹ pa àwọn àlàfo tí ó wà nínú ìwé ìtọ́ni yín mọ́. Àwọn ìwọ̀n tí a tẹ̀ jáde wà láti 12 íǹṣì (30 cm) sí ẹsẹ̀ bàtà 3 (91 cm); níbi tí ìwé ìtọ́ni kò ti sọ nǹkan, 18 íǹṣì (46 cm) kúrò lára ògiri àti ẹsẹ̀ bàtà 3 (91 cm) kúrò lára ohunkóhun tí ó lè jóná ni yíyàn tí ó láàbò jùlọ.
 - Ẹ jẹ́ kí àyíká ìwúwo sitter wà ní òfìfo kí ó lè ṣubú.
 - Nígbà tí ìsun bá parí, ẹ pa switch kí ẹ sì pa breaker pẹ̀lú.
 

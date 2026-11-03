@@ -81,7 +81,7 @@ Maka ịzụ na ichekwa ihe n'ụzọ miri emi, lee [Otu esi eme glaze](/guides/
 
 Awụsala glaze, ma ọ bụ mmiri i ji saa ngwa glaze, n'ime sink ma ọ bụ n'ubi. UK Crafts Council na-atụ aro bọket mmiri dị iche maka ịsa aka, brọshị, ihe nyọ na ngwa. Hapụ ya ka ọ dọdaa n'abalị niile, wụpụ mmiri doro anya, mgbe ahụ mee ka glaze dọdara akọrọ ma tụba ya n'ihe nkpofu (ọ na-aga n'ebe a na-ekpofu ahịhịa), ọ dịghị mgbe n'ime ọwa mmiri.
 
-Anyị na-atụ aro mkpuchi n'elu bọket ahụ: apịtị ahụ nwere otu igwe ahụ dị na glaze, anụ ụlọ na-aṅụkwa mmiri tọrọ atọ. Iwu nkpofu dị iche site n'otu ebe ruo ebe ọzọ, ya mere lelee mpempe data nchekwa nke ngwaahịa ọ bụla, jụọkwa kansụl obodo gị ma ọ bụ ụlọ ọrụ mmiri ma ọ bụrụ na ị maghị nke ọma.
+Anyị na-atụ aro mkpuchi n'elu bọket ahụ: apịtị ahụ nwere otu metal ahụ dị na glaze, anụ ụlọ na-aṅụkwa mmiri tọrọ atọ. Iwu nkpofu dị iche site n'otu ebe ruo ebe ọzọ, ya mere lelee mpempe data nchekwa nke ngwaahịa ọ bụla, jụọkwa kansụl obodo gị ma ọ bụ ụlọ ọrụ mmiri ma ọ bụrụ na ị maghị nke ọma.
 
 ## Idobe uzuzu n'ebe ọrụ {#keeping-dust-in-the-studio}
 
@@ -97,7 +97,7 @@ Ngalaba ahụike Pennsylvania kwuru nsogbu ahụ n'ụzọ doro anya: "Uzuzu lea
 - Arụla ọrụ ụrọ ma ọ bụ glaze na tebụl kichin ma ọ bụ tebụl nri, ọ bụrụgodị maka obere ọrụ ngwa ngwa.
 - Jiri mmiri hichaa ebe ọrụ. Ibe nchekwa seramiiki nke otu mahadum kwuru ka a zere ịza akọrọ, iji naanị ihe nzacha HEPA vacuum, na iji mmiri hichaa ala kwa ụbọchị. Jirikwa akwa mmiri hichaa elu ihe mgbe ọ bụla ị rụchara ọrụ.
 - Were uzuzu glaze niile dị ka uzuzu lead, ọ bụrụgodị na glaze gị enweghị lead. Uzuzu nwere barium, chrome, cobalt ma ọ bụ manganese na-eso otu ụzọ ahụ abata n'ụlọ.
-- Kpọọ aka na mbọ gị nke ọma tupu i bulie nwatakịrị, sie nri ma ọ bụ metụ anụ ụlọ aka.
+- Saa aka gị na mbọ gị nke ọma tupu i bulie nwatakịrị, sie nri ma ọ bụ metụ anụ ụlọ aka.
 - Egbochi ụmụaka ka ha ghara igwu egwu n'ebe ọrụ, ekwela ka ọ ghọọ ụzọ mkpụmkpụ ha si aga n'ezi ma ọ bụ n'ubi.
 
 ### Ime ime na inye ara
@@ -180,18 +180,18 @@ Rio Grande na-atụ aro **sekit naanị ya** (nke na-enyeghị ihe ọzọ ọk�
 Ìhè infrared, nke ị na-apụghị ịhụ, "na-amalite na 752°F (400°C)", Ceramic Arts Network kwukwara na ile anya n'ime kiln dị ọkụ karịa okpomọkụ a ga-eji ihe nchekwa anya mgbe niile. Infrared nwere ike imebi lens anya ma butere cataract, ilegide anya ogologo oge nwekwara ike imerụ retina. Ugogbe anya anwụ na ugogbe didymium anaghị egbochi ya.
 
 > [!WARNING]
-> Ụmụaka ekwesịghị ilegharị anya n'ime kiln ma ọlị. Oghere nlele na-enwu ọkụ na-adọta ha, ha agaghịkwa eyi ugogbe nchekwa n'ụzọ a pụrụ ịtụkwasị obi, ya mere mee ka ha nọrọ n'ebe dị anya mgbe kiln na-ekpo ọkụ. Ndị okenye kwesịrị ile naanị nwa oge, site n'ugogbe welding e mere maka IR. Isi mmalite na-atụ aro shade site na 1.7 ruo 5; shade 3 bụ nhọrọ ezi uche, nke gbara ọchịchịrị karịa ma ọ bụrụ na ị hụ ntụpọ mgbe e mesịrị.
+> Ụmụaka ekwesịghị ile anya n'ime kiln ma ọlị. Oghere nlele na-enwu ọkụ na-adọta ha, ha agaghịkwa eyi ugogbe nchekwa n'ụzọ a pụrụ ịtụkwasị obi, ya mere mee ka ha nọrọ n'ebe dị anya mgbe kiln na-ekpo ọkụ. Ndị okenye kwesịrị ile naanị nwa oge, site n'ugogbe welding e mere maka IR. Isi mmalite na-atụ aro shade site na 1.7 ruo 5; shade 3 bụ nhọrọ ezi uche, nke gbara ọchịchịrị karịa ma ọ bụrụ na ị hụ ntụpọ mgbe e mesịrị.
 
 ## Ite aka mere na tebụl ezinụlọ {#handmade-ware}
 
-Ajụjụ maka ite dị na tebụl ezinụlọ bụ **leaching**: igwe na-agbaze site na glaze a gbara ọkụ banye na nri ma ọ bụ ihe ọṅụṅụ. FDA na-adọ aka ná ntị na ọ bụrụ na ite "e mepụtaghị ya nke ọma, lead a nwere ike ịpụ banye na nri na ihe ọṅụṅụ", na "ọ dịghị ịsa, isi ma ọ bụ usoro ọzọ ọ bụla nwere ike iwepụ lead n'ite." Ndị na-achịkwa iwu dị ka US FDA na EU na-edobe oke lead na cadmium ole ite emechara na-ewepụta na nnwale acid ọkọlọtọ, ọ bụghị ihe glaze nwere. Oke US siri ike karịa, maka iko, mug na ite mmiri, bụ 0.5 µg/mL nke lead.
+Ajụjụ maka ite dị na tebụl ezinụlọ bụ **leaching**: metal na-agbaze site na glaze a gbara ọkụ banye na nri ma ọ bụ ihe ọṅụṅụ. FDA na-adọ aka ná ntị na ọ bụrụ na ite "e mepụtaghị ya nke ọma, lead a nwere ike ịpụ banye na nri na ihe ọṅụṅụ", na "ọ dịghị ịsa, isi ma ọ bụ usoro ọzọ ọ bụla nwere ike iwepụ lead n'ite." Ndị na-achịkwa iwu dị ka US FDA na EU na-edobe oke lead na cadmium ole ite emechara na-ewepụta na nnwale acid ọkọlọtọ, ọ bụghị ihe glaze nwere. Oke US siri ike karịa, maka iko, mug na ite mmiri, bụ 0.5 µg/mL nke lead.
 
 ### Enweghị lead abụghị otu ihe ahụ na ịdị mma maka nri
 
-Glaze na-enweghị lead ka nwere ike ịhapụ igwe. Digitalfire, akwụkwọ ntụaka kemistri glaze, kpọrọ glaze nwere "oxide igwe dị arọ na-enye agba, barium, lithium, ma ọ bụ lead" dị ka ihe na-echegbu, ma dọọ aka ná ntị na stain a gbara ọkụ karịa okpomọkụ e debere maka ya nwere ike ịhapụ cadmium. Akara ihe nka ASTM D-4236 dị n'ite "EGOSIGHỊ na glaze a gbara ọkụ dị mma maka nri", na "Ndị na-emepụta efere ga-anwale ite emechara niile iji gosi na ha dị mma maka nri."
+Glaze na-enweghị lead ka nwere ike ịhapụ metal. Digitalfire, akwụkwọ ntụaka kemistri glaze, kpọrọ glaze nwere "oxide igwe dị arọ na-enye agba, barium, lithium, ma ọ bụ lead" dị ka ihe na-echegbu, ma dọọ aka ná ntị na stain a gbara ọkụ karịa okpomọkụ e debere maka ya nwere ike ịhapụ cadmium. Akara ihe nka ASTM D-4236 dị n'ite "EGOSIGHỊ na glaze a gbara ọkụ dị mma maka nri", na "Ndị na-emepụta efere ga-anwale ite emechara niile iji gosi na ha dị mma maka nri."
 
 > [!NOTE]
-> "Dị mma maka nri" pụtara na glaze a, n'ụrọ a, a gbara ọkụ ruo cone a, etinyere n'ụzọ a, na-ewepụta erughị oke iwu. Ngụkọ usoro, nke Glazecalc gụnyere, nwere ike igosi usoro dị ize ndụ mana ọ pụghị igosi na ite dị nchebe. Naanị nnwale igwe na-apụta (leach test) n'ite a gbara ọkụ nwere ike.
+> "Dị mma maka nri" pụtara na glaze a, n'ụrọ a, a gbara ọkụ ruo cone a, etinyere n'ụzọ a, na-ewepụta erughị oke iwu. Ngụkọ usoro, nke Glazecalc gụnyere, nwere ike igosi usoro dị ize ndụ mana ọ pụghị igosi na ite dị nchebe. Naanị nnwale metal na-apụta (leach test) n'ite a gbara ọkụ nwere ike.
 
 Anyị na-atụ aro ka ị gụọ akara "dị mma maka nri" na glaze a zụrụ n'ahịa dị ka mmalite dị mma, ọ bụghị nkwa: ụrọ dị iche, mkpuchi gbara okpotokpo karịa, cone ọzọ ma ọ bụ glaze nke abụọ n'elu na-agbanwe nsonaazụ.
 
@@ -199,7 +199,7 @@ Anyị na-atụ aro ka ị gụọ akara "dị mma maka nri" na glaze a zụrụ
 
 Ụlọ nyocha na-anwale ite a gbara ọkụ site n'imikpu ha n'acid ọkọlọtọ nke na-anọchite anya ọnọdụ kacha njọ, dị ka ASTM C738 na US. Nnwale EU nke otu ụlọ nyocha chọrọ ite anọ yiri onwe ha ma were ụbọchị ọrụ asaa, ya mere mee ndị ọzọ nke ihe ọ bụla ị na-eme atụmatụ ịnwale.
 
-Nnwale ụlọ bụ ihe a na-arụrịta ụka. FDA kwuru na ngwa nnwale swab ụlọ nwere ike igosi lead nwere ike ịpụ, na ite nnwale gosiri ihe dị adị ekwesịghị iji ya maka nri. Ceramics NZ na-adọ aka ná ntị na pen nnwale lead ndị ahịa "e mebeghị ya maka ojiji a" na seramiiki ma nwee ike inye nsonaazụ ụgha. Digitalfire na-atụ aro ịhapụ mpekere lemon n'elu glaze n'abalị niile dị ka nlele mbụ na-ezughị oke. Ịgụ ya n'ụzọ dị nchebe: nnwale ụlọ gosiri ihe dị adị pụtara kwụsị iji ite ahụ maka nri, nke na-egosighị ihe ọ bụla anaghị egosi ihe ọ bụla. Naanị ụlọ nyocha nwere ike ịgwa gị na ite dị nchebe.
+Nnwale ụlọ bụ ihe a na-arụrịta ụka. FDA kwuru na ngwa nnwale swab ụlọ nwere ike igosi lead nwere ike ịpụ, na ite nnwale gosiri ihe dị adị ekwesịghị iji ya maka nri. Ceramics NZ na-adọ aka ná ntị na pen nnwale lead ndị ahịa "e mebeghị ya maka ojiji a" na seramiiki ma nwee ike igosi lead n'ụgha ebe ọ na-adịghị. Digitalfire na-atụ aro ịhapụ mpekere lemon n'elu glaze n'abalị niile dị ka nlele mbụ na-ezughị oke. Ịgụ ya n'ụzọ dị nchebe: nnwale ụlọ gosiri ihe dị adị pụtara kwụsị iji ite ahụ maka nri, nke na-egosighị ihe ọ bụla anaghị egosi ihe ọ bụla. Naanị ụlọ nyocha nwere ike ịgwa gị na ite dị nchebe.
 
 ### Ite nwere crazing
 
@@ -207,18 +207,18 @@ Nnwale ụlọ bụ ihe a na-arụrịta ụka. FDA kwuru na ngwa nnwale swab �
 
 ### Glaze ime (liner)
 
-**Glaze ime** (liner glaze) bụ glaze dị n'ime iko ma ọ bụ efere, ebe nri na-anọ. Digitalfire na-akọwa liner nke ihe ize ndụ ya nwere ike ịdị ala nke ga-ekwe iji ya n'enweghị nnwale ụlọ nyocha: enweghị ihe na-enye agba, barium, lead ma ọ bụ lithium; gbazere nke ọma; enweghị crazing; ọ na-adịkwa ogologo oge. Ọbụna mgbe ahụ, naanị nnwale igwe na-apụta n'ite gị a gbara ọkụ na-egosi ma ha dị mma maka nri. Ihe ịrịba ama ịdọ aka ná ntị na glaze ọ bụla bụ ọtụtụ ihe na-enye agba, kristal n'elu ya na igbaze na-adịghị mma.
+**Glaze ime** (liner glaze) bụ glaze dị n'ime iko ma ọ bụ efere, ebe nri na-anọ. Digitalfire na-akọwa liner nke ihe ize ndụ ya nwere ike ịdị ala nke ga-ekwe iji ya n'enweghị nnwale ụlọ nyocha: enweghị ihe na-enye agba, barium, lead ma ọ bụ lithium; gbazere nke ọma; enweghị crazing; ọ na-adịkwa ogologo oge. Ọbụna mgbe ahụ, naanị nnwale metal na-apụta n'ite gị a gbara ọkụ na-egosi ma ha dị mma maka nri. Ihe ịrịba ama ịdọ aka ná ntị na glaze ọ bụla bụ ọtụtụ ihe na-enye agba, kristal n'elu ya na igbaze na-adịghị mma.
 
 ### Iwu ezinụlọ anyị na-atụ aro
 
-- Iko, efere na efere miri emi ụmụaka: naanị glaze ime nwere ike, nke ụlọ nyocha nwalere, ma ọ bụ efere a zụrụ n'ahịa.
+- Iko, efere na efere miri emi ụmụaka: naanị glaze ime na-adịgide ogologo oge, nke ụlọ nyocha nwalere, ma ọ bụ efere a zụrụ n'ahịa.
 - Edobela nri ma ọ bụ ihe ọṅụṅụ nwere acid (oroma, tomato, vinegar, mmiri mkpụrụ osisi, mmanya) n'ite e ji ihe ọ bụla ị na-anwalebeghị tee glaze.
 - Ejila ite nwere crazing maka nri.
 - Test tile na nnwale na-anọ n'ebe ọrụ, ọ dịghị mgbe na kichin, igbe ihe egwuregwu ma ọ bụ efere anụ ụlọ.
 - Kpachara anya na ite ndị ọzọ kwa. FDA na-adụ ọdụ ịkpachara anya na ite aka mere ma ọ bụ nke yiri nke e mere n'ụzọ siri ike, ihe ochie, ite mebiri emebi ma ọ bụ nke gbara ochie, ihe a zụtara n'ahịa ihe ochie na ihe ịchọ mma na-acha oroma, uhie ma ọ bụ odo na-egbuke egbuke.
 - Ọ bụrụ na nwatakịrị ejirila ite ị na-enwe obi abụọ ugbu a, FDA kwuru ka ị gwa dọkịta maka nyocha ọbara maka lead.
 
-Maka ihe ndị ọzọ banyere otu glaze si agbaze, ihe kpatara ụfọdụ ji ahapụ igwe na ihe oke ndị ahụ pụtara, lee [Ntọala glaze](/guides/glazing-basics).
+Maka ihe ndị ọzọ banyere otu glaze si agbaze, ihe kpatara ụfọdụ ji ahapụ metal na ihe oke ndị ahụ pụtara, lee [Ntọala glaze](/guides/glazing-basics).
 
 ## Isi mmalite {#sources}
 

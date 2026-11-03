@@ -31,7 +31,7 @@
       "text": "Ginin tukwane a gida tare da yara da dabbobin gida: ajiya, ƙura, kiln, da abin da za a yi idan an haɗiye wani abu."
     },
     "firing": {
-      "title": "Gasa a cikin murhu mai sauƙi",
+      "title": "Gasa a cikin kiln mai sauƙi",
       "text": "Cone, kiln sitter da maɓallan hannu, tare da jadawalin gasa bisque da gasa glaze."
     },
     "learnWithJohnBritt": {
@@ -105,8 +105,8 @@
   "silica": {
     "limitIn": "Iyaka a",
     "label": "Iyakar silica a {region}",
-    "caption": "Iyakar wurin aiki ta ƙurar silica da ake shaƙa (respirable crystalline silica) a {region}, matsakaicin awa 8 (an duba {date})",
-    "captionControl": "Ma’aunin ƙurar silica da ake shaƙa (respirable crystalline silica) a iskar wurin aiki a {region} (an duba {date})",
+    "caption": "Iyakar wurin aiki ta ƙurar crystalline silica da ake iya shaƙa (respirable crystalline silica) a {region}, matsakaicin awa 8 (an duba {date})",
+    "captionControl": "Ma’aunin ƙurar crystalline silica da ake iya shaƙa (respirable crystalline silica) a iskar wurin aiki a {region} (an duba {date})",
     "both": "Quartz da cristobalite",
     "freeSilica": "Free silica",
     "quartz": "Quartz",

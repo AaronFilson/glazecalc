@@ -12,12 +12,12 @@ Hagahan ma aha talo caafimaad: xarun sunta, dhakhtar ama dhakhtarka xoolaha ayaa
 
 ::poison-lines
 
-Waxaan kuu soo jeedinaynaa inaad maanta lambarada gobolkaaga ku kaydiso taleefankaaga, iyo kaar ku yaal albaabka studio-ga gudihiisa.
+Waxaan kuu soo jeedinaynaa inaad maanta lambarada gobolkaaga ku kaydiso taleefankaaga, iyo kaar ku yaal albaabka istuudiyaha gudihiisa.
 
 ### Waxa diyaar loo hayo marka aad wacayso
 
-- Magaca walaxda sida saxda ah ee loogu qoray kiishka ama baaldiga, iyo calaamaddeeda ama **xaashida xogta badbaadada** (SDS: xaashida alaab-qeybiyaha ee sheegta khatarta walaxda iyo gargaarka degdegga ah). Sawir kiishka ah wuu shaqeeyaa.
-- Glaze{{en: glaze}} la isku daray, habkiisa. Habkaaga Glazecalc waa liiska walxaha glaze-ka.
+- Magaca walaxda sida saxda ah ee loogu qoray kiishka ama baaldiga, iyo calaamaddeeda ama **warqadda xogta badbaadada** (SDS: xaashida alaab-qeybiyaha ee sheegta khatarta walaxda iyo gargaarka degdegga ah). Sawir kiishka ah wuu shaqeeyaa.
+- Haddii uu yahay glaze{{en: glaze}} la isku daray, habkiisa. Habkaaga Glazecalc waa liiska walxaha glaze-ka.
 - Qiyaas ahaan inta le'eg, iyo goorta.
 - Sida: la liqay, la neefsaday, maqaarka ku dhacay ama indhaha ku dhacay.
 - Calaamad kasta oo ilaa hadda muuqatay.
@@ -28,27 +28,27 @@ Waxaan kuu soo jeedinaynaa inaad maanta lambarada gobolkaaga ku kaydiso taleefan
 > [!WARNING]
 > NHS-ku wuxuu kugula talinayaa: ha isku dayin inaad qofka matagsiiso, hana siin wax uu cuno ama cabbo. Xayawaanka, waxba ha samayn ilaa dhakhtarka xoolaha ama khadka sunta xayawaanku ay kuu sheegaan waxa la samaynayo.
 
-Haddii aad isbitaal aaddo, NHS-ku wuxuu leeyahay qaado baakadda ama muunad haddii ay ammaan tahay. Walax glaze, taasi waa calaamadda kiishka ama xaashida xogta badbaadada.
+Haddii aad isbitaal aaddo, NHS-ku wuxuu leeyahay qaado baakadda ama muunad haddii ay ammaan tahay. Walax glaze, taasi waa calaamadda kiishka ama warqadda xogta badbaadada.
 
 ## Waxa ugu khatarta badan in la liqo {#most-dangerous}
 
 Walxaha glaze{{en: glaze}} waxay qoys ku dhibi karaan laba siyaabood oo kala duwan:
 
-- Khatarta **degdegga ah** (dhib ka yimaada hal mar, saacado gudahood) waa liqidda walax **dhalaasha**, mid ku dhalaasha biyaha ama aashitada caloosha. Kaydinta la quful iyo lambarada kor ku qoran ayaa wax ka qabta.
+- Khatarta **degdegga ah** (dhib ka yimaada hal mar, saacado gudahood) waa liqidda walax **milma**, mid ku milma biyaha ama aashitada caloosha. Kaydinta la quful iyo lambarada kor ku qoran ayaa wax ka qabta.
 - Khatarta **daba-dheeraata** (dhib ka yimaada qaddarro yaryar oo badan) waa boodhka, inta badan silica iyo rasaas (lead, Pb), oo marka hore aan calaamad lahayn oo dharka ku raaca guriga. Caadooyin nadiif ah ayaa wax ka qabta.
 
-Glaze-ka intiisa badan waa silica, kaolin iyo feldspar, oo aan ku sigan dhalaalin. Waxaan u aragnaa khatar neefsasho oo muddo dheer ah halkii ay ka ahaan lahaayeen xaalad degdeg ah oo liqid. Walxaha dhalaala ee hoos ku qoran ayaa ah kuwa marka hore la quful.
+Glaze-ka intiisa badan waa silica, kaolin iyo feldspar, oo ku dhowaad aan milmin. Waxaan u aragnaa khatar neefsasho oo muddo dheer ah halkii ay ka ahaan lahaayeen xaalad degdeg ah oo liqid. Walxaha milma ee hoos ku qoran ayaa ah kuwa marka hore la quful.
 
-Table: Walxaha glaze ee dhalaala: waxa ay sameeyaan haddii la liqo
-Label: Walxaha dhalaala
+Table: Walxaha glaze ee milma: waxa ay sameeyaan haddii la liqo
+Label: Walxaha milma
 
-| Walaxda                     | Waxa ay samayso                                                                                                                                                                                                                                                                                                                                                                                                    | Qaddarrada la soo sheegay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Barium carbonate            | Mar ayaa loo iibin jiray sun jiir. Biyaha ku sigan kuma dhalaasho laakiin aashitada way ku dhalaashaa, sidaa darteed u qaad mid dhalaasha marka la liqo. Barium wuxuu hoos u dhigaa potassium-ka dhiigga, isagoo keena matag, shuban iyo murqo daciifnimo oo u gudbi karta curyaannimo, neefsasho istaagta iyo garaaca wadnaha oo aan joogto ahayn. Calaamaduhu caadi ahaan waxay bilaabmaan 2 saacadood gudahood. | Ilaha way isku khilaafaan. Dib-u-eegis WHO ah waxay ku qiyaastaa qaddarka dila ee barium ee mindhicirka laga nuugo 3 ilaa 4 g xaaladaha aan la daaweyn, saameyn sun ah 0.2 ilaa 0.5 g, waxayna sheegtaa qaddarka dila ee ugu yar ee la soo sheegay ee barium chloride, milix barium oo dhalaasha, 11.4 mg kiilo kasta oo miisaanka jidhka ah. Tixraac daawada degdegga ah ayaa milixyada barium siisa qaddar dila oo u dhexeeya 1 ilaa 30 g, dhibna laga yaabo inuu ka yimaado qiyaastii 200 mg. Midkoodna ma bixiyo tiro carruurta ah, sidaa darteed wac qaddar kasta. |
-| Borax iyo boric acid        | Lallabo, matag, shuban iyo calool xanuun ayaa marka hore yimaada; matagga iyo saxarada waxay noqon karaan buluug-cagaar. Xaaladaha daran waxay keenaan finan casaan dhalaalaya oo markii dambe diirma, suuxdin, dhaawac kelyaha iyo shoog.                                                                                                                                                                         | Qaddarrada dila ee ugu yar, qiyaas ahaan: 2 ilaa 3 g ilmo aad u yar, 5 ilaa 6 g ilmo. Dib-u-eegis ku saabsan 784 liqid, kaliya 12% ayaa calaamado keenay, midna ma dilin, laakiin dhimasho way dhacdaa, mana jiro daawo ka hortag ah.                                                                                                                                                                                                                                                                                                                                   |
-| Lithium carbonate           | Ilmo miisaankiisu yahay 15 kg (33 lb) oo liqay 300 mg ayaa muddo gaaban qabay murqo isku-qabsasho aan ikhtiyaari ahayn iyo falcelin xad-dhaaf ah (acute dystonia iyo hyperreflexia), oo tagay.                                                                                                                                                                                                                     | Wax yar ayaa laga qoray carruurta yaryar. 300 mg aad ayay uga yar tahay qaaddo budo ah.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Soda ash (sodium carbonate) | Si fudud ayay biyaha ugu dhalaashaa. Ma helin tirooyin la isku halleyn karo oo ku saabsan waxa ay ku samayso ilmo.                                                                                                                                                                                                                                                                                                 | Lama helin. Wac qaddar kasta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Potassium dichromate        | Midabeeye chrome ah oo habab qaarkood lagu isticmaalo. Xaashida xogta badbaadada ee Fisher Scientific waxay ka digaysaa inay "dili karto haddii la liqo", inay mindhicirka gubto, iyo inay kelyaha dhaawici karto. Isla xaashidu waxay ka digaysaa inay "dili karto haddii la neefsado", inay kansar keeni karto, iyo "khatar suurtagal ah oo dhib ku ah ilmaha aan dhalan".                                       | Lama xaqiijin, xaashiyaha xogta badbaadaduna way isku khilaafaan inta ay sun tahay.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Walaxda                     | Waxa ay samayso                                                                                                                                                                                                                                                                                                                                                                                          | Qaddarrada la soo sheegay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Mar ayaa loo iibin jiray sun jiir. Biyaha ku dhowaad kuma milmo laakiin aashitada wuu ku milmaa, sidaa darteed u qaad mid milma marka la liqo. Barium wuxuu hoos u dhigaa potassium-ka dhiigga, isagoo keena matag, shuban iyo murqo daciifnimo oo u gudbi karta curyaannimo, neefsasho istaagta iyo garaaca wadnaha oo aan joogto ahayn. Calaamaduhu caadi ahaan waxay bilaabmaan 2 saacadood gudahood. | Ilaha way isku khilaafaan. Dib-u-eegis WHO ah waxay ku qiyaastaa qaddarka dila ee barium ee mindhicirka laga nuugo 3 ilaa 4 g xaaladaha aan la daaweyn, saameyn sun ah 0.2 ilaa 0.5 g, waxayna sheegtaa qaddarka dila ee ugu yar ee la soo sheegay ee barium chloride, milix barium oo milma, 11.4 mg kiilo kasta oo miisaanka jidhka ah. Tixraac daawada degdegga ah ayaa milixyada barium siisa qaddar dila oo u dhexeeya 1 ilaa 30 g, dhibna laga yaabo inuu ka yimaado qiyaastii 200 mg. Midkoodna ma bixiyo tiro carruurta ah, sidaa darteed wac qaddar kasta. |
+| Borax iyo boric acid        | Lallabo, matag, shuban iyo calool xanuun ayaa marka hore yimaada; matagga iyo saxarada waxay noqon karaan buluug-cagaar. Xaaladaha daran waxay keenaan finan casaan ifaya oo markii dambe diirma, suuxdin, dhaawac kelyaha iyo shoog.                                                                                                                                                                    | Qaddarrada dila ee ugu yar, qiyaas ahaan: 2 ilaa 3 g ilmo aad u yar, 5 ilaa 6 g ilmo. Dib-u-eegis ku saabsan 784 liqid, kaliya 12% ayaa calaamado keenay, midna ma dilin, laakiin dhimasho way dhacdaa, mana jiro daawo ka hortag ah.                                                                                                                                                                                                                                                                                                                               |
+| Lithium carbonate           | Ilmo miisaankiisu yahay 15 kg (33 lb) oo liqay 300 mg ayaa muddo gaaban qabay murqo isku-qabsasho aan ikhtiyaari ahayn iyo falcelin xad-dhaaf ah (acute dystonia iyo hyperreflexia), oo tagay.                                                                                                                                                                                                           | Wax yar ayaa laga qoray carruurta yaryar. 300 mg aad ayay uga yar tahay qaaddo budo ah.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Si fudud ayay biyaha ugu milmaa. Ma helin tirooyin la isku halleyn karo oo ku saabsan waxa ay ku samayso ilmo.                                                                                                                                                                                                                                                                                           | Lama helin. Wac qaddar kasta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Potassium dichromate        | Midabeeye chrome ah oo habab qaarkood lagu isticmaalo. Warqadda xogta badbaadada ee Fisher Scientific waxay ka digaysaa inay "dili karto haddii la liqo", inay mindhicirka gubto, iyo inay kelyaha dhaawici karto. Isla xaashidu waxay ka digaysaa inay "dili karto haddii la neefsado", inay kansar keeni karto, iyo "khatar suurtagal ah oo dhib ku ah ilmaha aan dhalan".                             | Lama xaqiijin, warqadaha xogta badbaadaduna way isku khilaafaan inta ay sun tahay.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 > [!NOTE]
 > Qaddarradan dhibta leh waxay u dhexeeyaan dhowr boqol oo milligram ilaa dhowr garaam. Walxaha glaze waxaa lagu iibiyaa rodol ama kiilo, sidaa darteed hal kiish ama baaldi furan wuxuu hayaa wax aad uga badan inta ku filan in ilmo yar la dhibo.
@@ -67,13 +67,13 @@ Ma jiro hay'ad rasmi ah oo dejisa xeerar lagu kaydiyo walxaha glaze guriga, laak
 
 Kuwani waa xeerar guud oo ka hortagga sunta ah oo glaze lagu dabaqay. Heerka dhoobo-samaynta midna ma dejiyo, laakiin dhammaantood waan kuu soo jeedinaynaa:
 
-- Walxaha engegan meel la quful ku hay: armaajo, ama qol, garaash ama aqal yar oo la quful karo. Khaanad sare way caawisaa, laakiin carruurtu way fuulaan. Haddii aad marka hore wax yar oo kaliya quful karto, ka bilow walxaha dhalaala iyo midabeeyayaasha.
+- Walxaha engegan meel la quful ku hay: armaajo, ama qol, garaash ama aqal yar oo la quful karo. Khaanad sare way caawisaa, laakiin carruurtu way fuulaan. Haddii aad marka hore wax yar oo kaliya quful karto, ka bilow walxaha milma iyo midabeeyayaasha.
 - Walxaha ku hay kiishashkooda ama weelashooda asalka ah. Haddii aad mid weel kale u wareejiso, ku qor magaca sida saxda ah ee loogu qoray kiishka.
 - Marnaba ha u isticmaalin weelasha cuntada ama cabitaanka (weelasha caanaha fadhiisay, dhalooyin, quraarado) walxaha glaze, xataa haddii la calaamadeeyo. Ilmuhu wuu og yahay waxa weelka caanaha fadhiisay ku jira.
-- Qalabka studio-ga (macaaliiqda, qaaddooyinka, qalabka walaaqa, shaandhooyinka, miisaannada) ku hay studio-ga. Marnaba ha u isticmaalin qalabka jikada glaze, ama qalabka glaze cunto.
+- Qalabka istuudiyaha (macaaliiqda, qaaddooyinka, qalabka walaaqa, shaandhooyinka, miisaannada) ku hay istuudiyaha. Marnaba ha u isticmaalin qalabka jikada glaze, ama qalabka glaze cunto.
 - Glaze-yada qoyan ku hay baaldiyo calaamadaysan oo daboolkoodu saaran yahay.
-- Walax kasta xaashideeda xogta badbaadada la hay, warqad ahaan ama taleefankaaga.
-- Jikada waxba ha ku hayn oo studio-ga ka yimid: kiishash, baaldiyo, qalab ama test tile midna.
+- Walax kasta warqaddeeda xogta badbaadada la hay, warqad ahaan ama taleefankaaga.
+- Jikada waxba ha ku hayn oo istuudiyaha ka yimid: kiishash, baaldiyo, qalab ama test tile midna.
 
 Iibsashada iyo kaydinta walxaha si qoto dheer, eeg [Sida loo sameeyo glaze](/guides/making-a-glaze).
 
@@ -81,28 +81,28 @@ Iibsashada iyo kaydinta walxaha si qoto dheer, eeg [Sida loo sameeyo glaze](/gui
 
 Marnaba ha ku shubin glaze{{en: glaze}}, ama biyo aad ku maydhay qalabka glaze, saxanka dhaqidda ama beerta. Golaha Farshaxanka UK (Crafts Council) wuxuu soo jeedinayaa baaldi biyo ah oo gaar ah oo lagu dhaqo gacmaha, burushyada, shaandhooyinka iyo qalabka. Habeenkii ha degto, biyaha saafiga ah ka shub, ka dibna qalaji glaze-ka degay oo ku rid qashinka (wuxuu aadaa meesha qashinka lagu aaso), marnaba ha ku shubin bullaacadda.
 
-Waxaan soo jeedinaynaa dabool baaldigaas: dhoobada hoos fadhida waxay haysaa isla biraha glaze-ka, xayawaankuna waxay cabbaan biyaha taagan. Xeerarka qashin-tuurku way kala duwan yihiin meel ilaa meel, sidaa darteed hubi xaashida xogta badbaadada ee alaab kasta, weydiina dawladda hoose ama shirkadda biyaha haddii aadan hubin.
+Waxaan soo jeedinaynaa dabool baaldigaas: dhoobada hoos fadhida waxay haysaa isla biraha glaze-ka, xayawaankuna waxay cabbaan biyaha taagan. Xeerarka qashin-tuurku way kala duwan yihiin meel ilaa meel, sidaa darteed hubi warqadda xogta badbaadada ee alaab kasta, weydiina dawladda hoose ama shirkadda biyaha haddii aadan hubin.
 
-## Boodhka studio-ga ku hay {#keeping-dust-in-the-studio}
+## Boodhka istuudiyaha ku hay {#keeping-dust-in-the-studio}
 
 Waaxda caafimaadka Pennsylvania si cad ayay dhibaatada u sheegtaa: "Boodhka rasaasta ku wasakhaysan ee hiwaayaddaada wuxuu ku dhegi karaa dharkaaga, kabahaaga, timahaaga, maqaarkaaga iyo alaabtaada gaarka ah, si fududna ugu gudbi karaa gaadhigaaga iyo dusha meelaha gurigaaga." CDC-gu wuxuu ku daraa in dadka waaweyni "rasaas guriga la iman karaan oo qoysaskooda rasaas u soo bandhigi karaan iyagoon ogayn." Hagaha Pennsylvania ayaa bixiya xalka:
 
 - Gacmahaaga dhaq ka hor intaadan wax cunin.
-- Iska bedel dharka iyo kabaha studio-ga ka hor intaadan guriga gelin.
-- Dharka studio-ga si gaar ah uga dhaq dharka qoyska.
+- Iska bedel dharka iyo kabaha istuudiyaha ka hor intaadan guriga gelin.
+- Dharka istuudiyaha si gaar ah uga dhaq dharka qoyska.
 - Si joogto ah guriga iyo gaadhiga ugu nadiifi vacuum **HEPA** ah (mid leh shaandho waxtar sare leh oo qabta boodhka yar).
 
 ### Xeerarka guriga ee aan soo jeedinayno
 
 - Shaqo dhoobo ama glaze{{en: glaze}} midna ha ku samayn miiska jikada ama miiska cuntada, xataa shaqo degdeg ah.
-- Studio-ga ku nadiifi qoyaan. Bog badbaadada dhoobo-samaynta ee jaamacad ayaa leh iska ilaali xaaqidda engegan, vacuum ku isticmaal oo kaliya shaandho HEPA ah, maalin kastana masaxaad qoyan ku masax sagxadda. Dusha meelaha sidoo kale masax qoyaan shaqo kasta ka dib.
-- Boodhka glaze oo dhan u qaad sida boodhka rasaasta, xataa haddii glaze-yadaadu aan rasaas lahayn. Boodhka sida barium, chrome, cobalt ama manganese isla siddaas ayuu guriga u gaaraa.
+- Istuudiyaha ku nadiifi qoyaan. Bog badbaadada dhoobo-samaynta ee jaamacad ayaa leh iska ilaali xaaqidda engegan, vacuum ku isticmaal oo kaliya shaandho HEPA ah, maalin kastana masaxaad qoyan ku masax sagxadda. Dusha meelaha sidoo kale masax qoyaan shaqo kasta ka dib.
+- Boodhka glaze oo dhan u qaad sida boodhka rasaasta, xataa haddii glaze-yadaadu aan rasaas lahayn. Boodhka wata barium, chrome, cobalt ama manganese isla siddaas ayuu guriga u gaaraa.
 - Gacmahaaga iyo ciddiyahaaga xoqid ku dhaq ka hor intaadan ilmo qaadin, cunto samayn ama xayawaan salaaxin.
-- Carruurta ha u oggolaan inay studio-ga ku ciyaaraan, hana ka dhigin waddo gaaban oo loo maro barxadda ama beerta.
+- Carruurta ha u oggolaan inay istuudiyaha ku ciyaaraan, hana ka dhigin waddo gaaban oo loo maro barxadda ama beerta.
 
 ### Uurka iyo naas-nuujinta
 
-Waxaan soo jeedinaynaa taxaddar dheeraad ah haddii qof guriga ku jira uu uur leeyahay ama naas nuujinayo. Ka ilaali studio-ga inta aad walxaha engegan qabanayso, haddii aad rasaas isticmaashayna, weydii dhakhtarkooda ama umulisadooda in baaritaanka rasaasta dhiiggu macno u samaynayo qoyska.
+Waxaan soo jeedinaynaa taxaddar dheeraad ah haddii qof guriga ku jira uu uur leeyahay ama naas nuujinayo. Ka ilaali istuudiyaha inta aad walxaha engegan qabanayso, haddii aad rasaas isticmaashayna, weydii dhakhtarkooda ama umulisadooda in baaritaanka rasaasta dhiiggu macno u samaynayo qoyska.
 
 Xakamaynta boodhka inta aad shaqaynayso (respirator-ada, hababka qoyan iyo hawo-wareejinta), eeg [Isku-darka ammaanka ah iyo hawo-wareejinta](/guides/safe-mixing).
 
@@ -127,7 +127,7 @@ Rasaasta dhiigga waxaa lagu cabbiraa **µg/dL** (microgram rasaas ah deciliter k
 - Haddii aad isticmaashay **frit-yo rasaas leh** (rasaas horay loogu dhalaaliyay dhalo oo budo loo shiiday), ama glaze-yo hore oo aadan aqoon waxa ay ka samaysan yihiin, weydii dhakhtarka ilmahaaga baaritaanka rasaasta dhiigga.
 - Raac xeerarka boodhka ee kor ku qoran glaze kasta, ma aha kaliya kuwa rasaasta leh.
 
-Glazecalc rasaasta wuu daminayaa ilaa aad ka doorato [Dejinta](/account). Marka rasaastu dansan tahay, marnaba kuma daro rasaas hab, mana soo jeediyo.
+Glazecalc rasaasta dansan ayuu ku hayaa ilaa aad ka doorato [Dejinta](/account). Marka rasaastu dansan tahay, marnaba kuma daro rasaas hab, mana soo jeediyo.
 
 ## Xayawaanka {#pets}
 
@@ -136,18 +136,18 @@ Glazecalc rasaasta wuu daminayaa ilaa aad ka doorato [Dejinta](/account). Marka 
 
 ### Waxa la yaqaan
 
-Pet Poison Helpline wuxuu leeyahay "Rasaastu waa sun u ah dhammaan noocyada, laakiin xayawaanka yaryar iyo/ama nafaqo-darrida qaba ayaa khatarta ugu sarreysa u leh sumowga", iyadoo calaamaduhu yihiin matag, shuban, cunid la'aan, turunturooyin, suuxdin iyo indho-la'aan. Warbixin kiis xoolo-caafimaad ah ayaa sharraxaysa eey cunay sparkler-o ay ku jirto barium nitrate (milix barium oo dhalaasha, ma aha walax glaze): wuxuu yeeshay daciifnimo lama filaan ah, candhuuf daadasho iyo garaaca wadnaha oo aan joogto ahayn, wuxuuna ku bogsaday daaweyn xoolo-caafimaad. Shimbiruhu waa xaalad gaar ah: dhakhtar xoolaha oo ka tirsan Jaamacadda Illinois ayaa sharxaya in "Shimbiruhu leeyihiin hab neefsasho oo aad u horumarsan oo waxtar sare leh, taas oo ka dhigaysa kuwo si gaar ah ugu nugul neefsashada qiiqa iyo aerosol-yada."
+Pet Poison Helpline wuxuu leeyahay "Rasaastu waa sun u ah dhammaan noocyada, laakiin xayawaanka yaryar iyo/ama nafaqo-darrida qaba ayaa khatarta ugu sarreysa u leh sumowga", iyadoo calaamaduhu yihiin matag, shuban, cunid la'aan, turunturooyin, suuxdin iyo indho-la'aan. Warbixin kiis xoolo-caafimaad ah ayaa sharraxaysa eey cunay sparkler-o ay ku jirto barium nitrate (milix barium oo milma, ma aha walax glaze): wuxuu yeeshay daciifnimo lama filaan ah, candhuuf daadasho iyo garaaca wadnaha oo aan joogto ahayn, wuxuuna ku bogsaday daaweyn xoolo-caafimaad. Shimbiruhu waa xaalad gaar ah: dhakhtar xoolaha oo ka tirsan Jaamacadda Illinois ayaa sharxaya in "Shimbiruhu leeyihiin hab neefsasho oo aad u horumarsan oo waxtar sare leh, taas oo ka dhigaysa kuwo si gaar ah ugu nugul neefsashada qiiqa iyo aerosol-yada."
 
 ### Xeerarka caqli-galka ah
 
-- Xayawaanka studio-ga ka ilaali, albaabkuna xiran yahay.
+- Xayawaanka istuudiyaha ka ilaali, albaabkuna xiran yahay.
 - Eeyuhu way calaaliyaan kiishashka oo baaldiyada ka cabbaan. Kiishashka ku hay armaajo xiran, baaldi kastana dabool saar.
-- Bisaduhu boodhka way dhex maraan oo cagahooda iyo dhogortooda ayay ka leefaan. Sagxadda qoyaan ku nadiifi, bisadahana studio-ga ka ilaali, si aanu jirin wax ay iska leefaan.
+- Bisaduhu boodhka way dhex maraan oo cagahooda iyo dhogortooda ayay ka leefaan. Sagxadda qoyaan ku nadiifi, bisadahana istuudiyaha ka ilaali, si aanu jirin wax ay iska leefaan.
 - Shimbiraha iyo naasleyda yaryar (bakaylaha, guinea pig-yada, hamster-yada) waxay la wadaagaan hawada guriga. Ku hay qol fog oo albaabku xiran yahay inta aad walxaha engegan qabanayso iyo inta kiln-ku gubayo.
-- Taangiyada kalluunka boodhka degaya way ururiyaan. Studio-ga ka fogee, oo dabool.
-- Weelasha cuntada iyo biyaha xayawaanka ka fogee studio-ga iyo kiln-ka, isticmaalna weelal ganacsi ama kuwo la baaray, ma aha tijaabooyin studio.
+- Taangiyada kalluunka boodhka degaya way ururiyaan. Istuudiyaha ka fogee, oo dabool.
+- Weelasha cuntada iyo biyaha xayawaanka ka fogee istuudiyaha iyo kiln-ka, isticmaalna weelal ganacsi ama kuwo la baaray, ma aha tijaabooyin istuudiyo.
 
-Haddii xayawaan laga yaabo inuu cunay ama cabbay wax studio-ga ka yimid, ama uu muujiyo calaamado kuwa kor ku xusan oo kale, wac dhakhtarka xoolahaaga ama khad sunta xayawaanka (eeg shaxda sare), adigoo diyaar u haya magaca walaxda iyo miisaanka xayawaanka.
+Haddii xayawaan laga yaabo inuu cunay ama cabbay wax istuudiyaha ka yimid, ama uu muujiyo calaamado kuwa kor ku xusan oo kale, wac dhakhtarka xoolahaaga ama khad sunta xayawaanka (eeg shaxda sare), adigoo diyaar u haya magaca walaxda iyo miisaanka xayawaanka.
 
 ## Kiln-ka {#the-kiln}
 
@@ -159,11 +159,11 @@ Carruurta yaryar iyo xayawaanku ma fahmi karaan calaamad digniin. Waxaan soo jee
 
 ### Meesha ku wareegsan
 
-Ilaha way isku khilaafaan masaafada. Rio Grande wuxuu leeyahay ugu yaraan 12 inch (30 cm) derbiyada iyo wax kasta oo guban kara. L&L wuxuu si adag ugu talinayaa 18 inch (46 cm) dhammaan derbiyada, xeerka dhismaha uu soo xigtayna wuxuu weydiinayaa 3 feet (0.9 m) derbiyada guban kara. Raac buugga tilmaamaha kiln-kaaga iyo xeerka dabka ee deegaanka; haddii aadan hubin, u daa 18 inch derbi kasta iyo 3 feet wax kasta oo guban kara. Garaash, gaadhiyada, shidaalka iyo rinjiga aad uga fogee.
+Ilaha way isku khilaafaan masaafada. Rio Grande wuxuu leeyahay ugu yaraan 12 inji (30 cm) derbiyada iyo wax kasta oo guban kara. L&L wuxuu si adag ugu talinayaa 18 inji (46 cm) dhammaan derbiyada, xeerka dhismaha uu soo xigtayna wuxuu weydiinayaa 3 fuudh (0.9 m) derbiyada guban kara. Raac buugga tilmaamaha kiln-kaaga iyo xeerka dabka ee deegaanka; haddii aadan hubin, u daa 18 inji derbi kasta iyo 3 fuudh wax kasta oo guban kara. Garaash, gaadhiyada, shidaalka iyo rinjiga aad uga fogee.
 
 ### Korontada
 
-Rio Grande wuxuu ku talinayaa **wareeg u gaar ah** (mid aan waxba kale shidin) oo leh fiilo-gelis si sax ah dhulka loogu xiray. Waxaan soo jeedinaynaa fiilo dheereysi la'aan. Gubidda dhexdeeda, dami breaker-ka kiln-ka ama furaha go'aynta, ama ka saar fiilada, si aanu ilmo u shidi karin.
+Rio Grande wuxuu ku talinayaa **wareeg u gaar ah** (mid aan waxba kale shidin) oo leh fiilo-gelis si sax ah dhulka loogu xiray. Waxaan soo jeedinaynaa fiilo dheereysi la'aan. Inta u dhaxaysa gubidyada, dami breaker-ka kiln-ka ama furaha go'aynta, ama ka saar fiilada, si aanu ilmo u shidi karin.
 
 ### Joog marka gubiddu dhammaanayso
 
@@ -177,18 +177,18 @@ Gubiddu waxay sii daysaa qiiq, sidaa darteed kiln-ka hawadiisa u saar dibadda; [
 
 ### Daloolada daawashada iyo indhaha
 
-Iftiinka infrared, oo aadan arki karin, "wuxuu ka bilaabmaa 752°F (400°C)", Ceramic Arts Network-na wuxuu leeyahay in kiln laga eego heerkaas ka sarreeya waa in mar walba lagu sameeyo ilaalinta indhaha. Infrared wuxuu dhaawici karaa muraayadda indhaha oo keeni karaa biyo-indhood (cataract), eegid dheerina waxay dhaawici kartaa retina-da. Muraayadaha qorraxda iyo muraayadaha didymium ma celiyaan.
+Iftiinka infrared, oo aadan arki karin, "wuxuu ka bilaabmaa 752°F (400°C)", Ceramic Arts Network-na wuxuu leeyahay in kiln laga eego heerkaas ka sarreeya ay habboon tahay in mar walba lagu sameeyo ilaalinta indhaha. Infrared wuxuu dhaawici karaa muraayadda indhaha oo keeni karaa biyo-indhood (cataract), eegid dheerina waxay dhaawici kartaa retina-da. Muraayadaha qorraxda iyo muraayadaha didymium ma celiyaan.
 
 > [!WARNING]
-> Carruurtu waa inaanay gabi ahaanba kiln ka eegin. Dalool daawasho oo iftiimaya ayaa soo jiita, si la isku halleyn karona uma xidhan doonaan muraayadaha ilaalinta, sidaa darteed ka fogee inta kiln-ku kulul yahay. Dadka waaweyni waa inay eegaan oo kaliya muddo gaaban, iyagoo isticmaalaya muraayadaha alxanka ee loo qiimeeyay IR. Iluhu waxay ku talinayaan shade 1.7 ilaa 5; shade 3 waa doorasho caqli-gal ah, mid ka madow haddii aad dhibco aragto ka dib.
+> Ma habboona in carruurtu gabi ahaanba kiln ka eegaan. Dalool daawasho oo iftiimaya ayaa soo jiita, si la isku halleyn karona uma xidhan doonaan muraayadaha ilaalinta, sidaa darteed ka fogee inta kiln-ku kulul yahay. Dadka waaweyn waxaa habboon inay eegaan oo kaliya muddo gaaban, iyagoo isticmaalaya muraayadaha alxanka ee loo qiimeeyay IR. Iluhu waxay ku talinayaan shade 1.7 ilaa 5; shade 3 waa doorasho caqli-gal ah, mid ka madow haddii aad dhibco aragto ka dib.
 
 ## Weelasha gacanta lagu sameeyay ee miiska qoyska {#handmade-ware}
 
-Su'aasha dheryaha miiska qoyska waa **leaching** (biraha oo ka soo baxa): biraha oo ka dhalaala glaze{{en: glaze}}-ka la gubay oo gala cuntada ama cabitaanka. FDA-du waxay ka digaysaa in haddii dhoobada "aan si sax ah loo samayn, rasaastani ay u gudbi karto cuntada iyo cabitaanka", iyo in "dhaqid, karkarin ama hab kale midna aanu dhoobada ka saari karin rasaasta." Hay'adaha sharciga sida FDA-da Maraykanka iyo EU waxay xaddidaan inta rasaas (lead, Pb) iyo cadmium ah ee weel dhammaystiran uu sii daayo baaritaan aashito oo caadi ah, ma aha waxa glaze-ku ka kooban yahay. Xadka ugu adag ee Maraykanka, koobabka, mug-yada iyo jeegaga, waa 0.5 µg/mL oo rasaas ah.
+Su'aasha dheryaha miiska qoyska waa **leaching** (biraha oo ka soo baxa): biraha oo ka milma glaze{{en: glaze}}-ka la gubay oo gala cuntada ama cabitaanka. FDA-du waxay ka digaysaa in haddii dhoobada "aan si sax ah loo samayn, rasaastani ay u gudbi karto cuntada iyo cabitaanka", iyo in "dhaqid, karkarin ama hab kale midna aanu dhoobada ka saari karin rasaasta." Hay'adaha sharciga sida FDA-da Maraykanka iyo EU waxay xaddidaan inta rasaas (lead, Pb) iyo cadmium ah ee weel dhammaystiran uu sii daayo baaritaan aashito oo caadi ah, ma aha waxa glaze-ku ka kooban yahay. Xadka ugu adag ee Maraykanka, koobabka, mug-yada iyo jeegaga, waa 0.5 µg/mL oo rasaas ah.
 
 ### Aan rasaas lahayn ma aha isla ammaan u ah cuntada
 
-Glaze aan rasaas lahayn wuu sii daayn karaa. Digitalfire, tixraac kimistariga glaze, wuxuu ku magacaabaa glaze-yada ay ku jiraan "midabeeyayaasha oksaydhka birta culus, barium, lithium, ama rasaas" kuwa walaaca leh, wuxuuna ka digayaa in stain lagu gubo heer ka sarreeya heerkiisa la qiimeeyay uu sii dayn karo cadmium. Calaamadda walxaha farshaxanka ASTM D-4236 ee dhalada "MA CADDAYNAYSO in glaze la gubay uu ammaan u yahay cuntada", iyo "Soo saarayaasha weelasha miiska waa inay baaraan dhammaan weelasha dhammaystiran si ay u caddeeyaan heerka weelasha cuntada."
+Glaze aan rasaas lahayn wuu sii dayn karaa. Digitalfire, tixraac kimistariga glaze, wuxuu ku magacaabaa glaze-yada ay ku jiraan "midabeeyayaasha oksaydhka birta culus, barium, lithium, ama rasaas" kuwa walaaca leh, wuxuuna ka digayaa in stain lagu gubo heer ka sarreeya heerkiisa la qiimeeyay uu sii dayn karo cadmium. Calaamadda walxaha farshaxanka ASTM D-4236 ee dhalada "MA CADDAYNAYSO in glaze la gubay uu ammaan u yahay cuntada", iyo "Soo saarayaasha weelasha miiska waa inay baaraan dhammaan weelasha dhammaystiran si ay u caddeeyaan heerka weelasha cuntada."
 
 > [!NOTE]
 > "Ammaan u ah cuntada" macnaheedu waa glaze-kan, dhoobadan dushiisa, lagu gubay cone-kan, loo marinayo sidan, wuxuu sii daayaa wax ka yar xadka sharciga. Xisaabinta hab, tan Glazecalc ku jirto, waxay calaamadayn kartaa hab khatar ah laakiin ma caddayn karto in dheri ammaan yahay. Kaliya baaritaanka leaching ee weelka la gubay ayaa caddayn kara.
@@ -197,7 +197,7 @@ Waxaan soo jeedinaynaa in calaamadda "ammaan u ah cuntada" ee glaze ganacsi loo 
 
 ### Baaritaanka
 
-Shaybaarradu waxay weelasha la gubay ku baaraan qoyn aashito oo caadi ah oo matalaysa xaaladda ugu xun, sida ASTM C738 ee Maraykanka. Baaritaanka EU ee shaybaar ayaa u baahan afar weel oo isku mid ah oo qaata toddoba maalmood oo shaqo, sidaa darteed samee kuwo dheeraad ah wax kasta oo aad qorshaynayso in la baaro.
+Shaybaarradu waxay weelasha la gubay ku baaraan qoyn aashito oo caadi ah oo matalaysa xaaladda ugu xun, sida ASTM C738 ee Maraykanka. Baaritaanka EU ee shaybaar ayaa u baahan afar weel oo isku mid ah, waxayna qaadataa toddoba maalmood oo shaqo, sidaa darteed samee kuwo dheeraad ah wax kasta oo aad qorshaynayso in la baaro.
 
 Baaritaannada guriga waa lagu murmay. FDA-du waxay leedahay xirmooyinka masaxaadda guriga waxay muujin karaan rasaas soo bixi karta, iyo in weel natiijadiisu togan tahay aan cuntada loo isticmaalin. Ceramics NZ ayaa ka digaysa in qalimaanta baaritaanka rasaasta ee macaamiisha "loogu talagalin isticmaalkan" dhoobada, oo ay bixin karaan natiijooyin togan oo been ah. Digitalfire wuxuu soo jeedinayaa in jeex liin ah habeenkii lagu dul daayo glaze-ka baaritaan qallafsan ahaan. Akhrinta ammaanka ah: baaritaan guri oo togan macnaheedu waa jooji weelka cuntada, mid taban waxba ma caddeeyo. Kaliya shaybaar ayaa kuu sheegi kara in weel ammaan yahay.
 
@@ -214,8 +214,8 @@ Baaritaannada guriga waa lagu murmay. FDA-du waxay leedahay xirmooyinka masaxaad
 - Koobabka, baaquliyada iyo saxannada carruurta: kaliya glaze-yo gudaha oo adkaysi leh oo shaybaar lagu baaray, ama weelasha cuntada ee ganacsiga.
 - Ha ku kaydin cunto ama cabitaan aashito leh (liin, yaanyo, khal, casiir miro, khamri) dheryo lagu mariyay wax kasta oo aadan baarin.
 - Weelasha crazing-ka leh ha u isticmaalin cuntada.
-- Test tile-yada iyo tijaabooyinku studio-ga ayay joogaan, marnaba jikada, sanduuqa alaabta ciyaarta ama weelka xayawaanka.
-- Dhoobada kale sidoo kale taxaddar ka yeel. FDA-du waxay ku talinaysaa taxaddar weelasha gacanta lagu sameeyay ama kuwa u muuqda kuwo qallafsan, alaabta qadiimiga ah, weelasha dhaawacan ama duugoobay, waxyaabaha suuqa alaabta duugga laga helo iyo qurxinta oranji, casaan ama jaale dhalaalaya.
+- Test tile-yada iyo tijaabooyinku istuudiyaha ayay joogaan, marnaba jikada, sanduuqa alaabta ciyaarta ama weelka xayawaanka.
+- Dhoobada kale sidoo kale taxaddar ka yeel. FDA-du waxay ku talinaysaa taxaddar weelasha gacanta lagu sameeyay ama kuwa u muuqda kuwo qallafsan, alaabta qadiimiga ah, weelasha dhaawacan ama duugoobay, waxyaabaha suuqa alaabta duugga laga helo iyo qurxinta oranji, casaan ama jaale ifaya.
 - Haddii ilmo isticmaalay dhoobo aad hadda shaki ka qabto, FDA-du waxay leedahay la hadal dhakhtar ku saabsan baaritaanka rasaasta dhiigga.
 
 Wax badan oo ku saabsan sida glaze-yadu u dhalaalaan, sababta qaarkood u sii daayaan iyo waxa xadadku macnaheedu yahay, eeg [Aasaaska glaze-ka](/guides/glazing-basics).

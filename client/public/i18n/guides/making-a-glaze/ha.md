@@ -5,7 +5,7 @@ lead: Yadda ake saya, ajiye, auna da haɗa glaze, samun kaurinsa daidai, gwada s
 
 ## Kafin ku fara {#before-you-start}
 
-Haɗa **glaze**{{en: glaze}} yana nufin auna **kayan aiki** na gari (ma'adinai da aka niƙa, yumɓu da **frit**, wato gilashin da aka yi a masana'anta aka niƙa shi ya zama gari) bisa ga tsarin glaze, da haɗa su da ruwa su zama **slurry** (ruwa mai kauri), wato ruwa mai kauri na gari da ke cikin ruwa. Sannan ku tace shi, ku gyara kaurinsa, ku gwada shi a kan yumɓunku kafin ku amince da shi a kan tukunya. Kowace lamba a wannan jagora mafari ce kawai: ruwa, kauri da rariya da suka dace da glaze ɗinku su ne waɗanda gwaje-gwajenku suka nuna, don haka ku rubuta abin da kuka yi da abin da kuka samu.
+Haɗa **glaze**{{en: glaze}} yana nufin auna **kayan aiki** na gari (ma'adinai da aka niƙa, yumɓu da **frit**, wato gilashin da aka yi a masana'anta aka niƙa shi ya zama gari) bisa ga tsarin glaze, da haɗa su da ruwa su zama **slurry**, wato ruwa mai kauri na gari da ke cikin ruwa. Sannan ku tace shi, ku gyara kaurinsa, ku gwada shi a kan yumɓunku kafin ku amince da shi a kan tukunya. Kowace lamba a wannan jagora mafari ce kawai: ruwa, kauri da rariya da suka dace da glaze ɗinku su ne waɗanda gwaje-gwajenku suka nuna, don haka ku rubuta abin da kuka yi da abin da kuka samu.
 
 ### Abin da kuke buƙata
 
@@ -20,7 +20,7 @@ Haɗa **glaze**{{en: glaze}} yana nufin auna **kayan aiki** na gari (ma'adinai d
 - **Respirator (abin rufe hanci da baki), safar hannu ta roba, soso da mop.**
 
 > [!WARNING]
-> **Busasshen garin glaze haɗarin ƙura ne.** Silica mai ƙyalli (crystalline) na iya kaiwa 10 zuwa 60% na busasshen glaze, kuma Health and Safety Executive (HSE) na Burtaniya ya yi gargaɗin cewa ƙurarta ba a ganinta a haske na yau da kullum. Ku ɗeba a hankali daga ƙasa-ƙasa, ku bar murfi a rufe, ku jiƙa garin da wuri-wuri, ku yi tsabta da ruwa, kada ku taɓa yin ta da tsintsiya. Ku sa respirator da ya dace da fuskarku a duk lokacin da gari ke bushe (N95 ko P100 a Amurka, FFP2 ko FFP3 a Burtaniya da EU, P2 ko P3 a Australia da New Zealand). [Haɗawa cikin aminci da iska mai kyau](/guides/safe-mixing) yana bayani dalla-dalla kan ƙura, respirator da tsabtacewa.
+> **Busasshen garin glaze haɗarin ƙura ne.** Crystalline silica na iya kaiwa 10 zuwa 60% na busasshen glaze, kuma Health and Safety Executive (HSE) na Burtaniya ya yi gargaɗin cewa ƙurarta ba a ganinta a haske na yau da kullum. Ku ɗeba a hankali daga ƙasa-ƙasa, ku bar murfi a rufe, ku jiƙa garin da wuri-wuri, ku yi tsabta da ruwa, kada ku taɓa yin ta da tsintsiya. Ku sa respirator da ya dace da fuskarku a duk lokacin da gari ke bushe (N95 ko P100 a Amurka, FFP2 ko FFP3 a Burtaniya da EU, P2 ko P3 a Australia da New Zealand). [Haɗawa cikin aminci da iska mai kyau](/guides/safe-mixing) yana bayani dalla-dalla kan ƙura, respirator da tsabtacewa.
 
 ## Sayen kaya {#buying-materials}
 
@@ -58,7 +58,7 @@ Ku nemi takardu biyu ga kowane kaya. **Takardar bayanan fasaha** (TDS) tana ba d
 
 Bincike matsakaici ne, ba alƙawari ba. Valentine Clays tana buga "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" (matsakaicin ƙima ne, ba ƙayyadaddun bayani ba) a takardar bayanan flint ɗinta, kuma binciken Glazy na Custer feldspar na shekaru daban-daban ya kama daga kusan 68.5% zuwa 72.4% silica. Muna ba da shawarar ku rubuta **lot number** na kowane buhu (lambar batch ɗinsa) a cikin bayananku, don ku gane ko canji a glaze da kuka amince da shi ya fito daga kayan.
 
-HSE ya yi gargaɗin cewa silica mai ƙyalli "can be wrongly labelled as 'amorphous silica'" (ana iya yi mata kuskuren rubuta "amorphous silica"). Kuma SDS game da garin ne, ba tukunyar ba: ba ta faɗin komai game da ko glaze da aka gasa yana da lafiya ga abinci. Sai gwajin zubar ƙarfe (leaching) na tukunyar da aka gasa a ɗakin gwaje-gwaje ne kawai zai iya nuna haka.
+HSE ya yi gargaɗin cewa crystalline silica "can be wrongly labelled as 'amorphous silica'" (ana iya yi mata kuskuren rubuta "amorphous silica"). Kuma SDS game da garin ne, ba tukunyar ba: ba ta faɗin komai game da ko glaze da aka gasa yana da lafiya ga abinci. Sai gwajin zubar ƙarfe (leach test) na tukunyar da aka gasa a ɗakin gwaje-gwaje ne kawai zai iya nuna haka.
 
 ### Sunaye na canzawa, don haka ku saya bisa sinadarai
 
@@ -83,17 +83,17 @@ Ku ajiye gari a bushe, a kwanoni masu murfi da ke zama a rufe idan ba kuna ɗeba
 
 ### Glaze da aka haɗa
 
-Glaze a cikin bokiti yana ci gaba da canzawa. Kayan da ke ɗan narkewa a ruwa (nepheline syenite, lithium carbonate, Gerstley Borate, colemanite, strontium carbonate, da frit gaba ɗaya) suna canza yadda yake gudana da lokaci kuma suna iya fitar da ƙananan ƙyalli (crystals), fiye da haka a ɗaki mai zafi. Gerstley Borate yana sa slurry ya yi gel, "even in smaller percentages" (ko da a ƙananan kaso). Ruwa mai ruwan ƙasa a kan glaze da ya kwanta ƙarfe ne da ya narke: ku zubar da shi ku sa ruwa mai tsabta a madadinsa. Ku kuma yi tsammanin:
+Glaze a cikin bokiti yana ci gaba da canzawa. Kayan da ke ɗan narkewa a ruwa (nepheline syenite, lithium carbonate, Gerstley Borate, colemanite, strontium carbonate, da frit gaba ɗaya) suna canza yadda yake gudana da lokaci kuma suna iya fitar da ƙananan ƙwayoyi (crystals), fiye da haka a ɗaki mai zafi. Gerstley Borate yana sa slurry ya yi gel, "even in smaller percentages" (ko da a ƙananan kaso). Ruwa mai ruwan ƙasa a kan glaze da ya kwanta ƙarfe ne da ya narke: ku zubar da shi ku sa ruwa mai tsabta a madadinsa. Ku kuma yi tsammanin:
 
 - **Taurin ƙasa (hard-panning)**: glaze da aka haɗa da kauri har ba ya buƙatar ƙari sau da yawa yana kwanciya ya zama tauraren layi. Rage kaurinsa da sa shi yin gel yana taimakawa (duba SG).
 - **Wari**, daga ƙananan halittu da ke cin gum kamar CMC. Ana iya amfani da glaze mai wari idan yana shafuwa da kyau.
 - **Daskarewa**: ku kare bokiti daga gare ta. Ku narkar da wanda ya daskare a zafin ɗaki, ku duba ko ya tsage.
 
-Kada ku mayar da glaze da aka yi amfani da shi cikin babban bokiti, ko ku tsoma burushi a ciki. Kafin amfani da glaze da aka ajiye, ku juya shi, ku sake auna SG ɗinsa, ku tace shi idan yana da gudaji ko ƙyalli.
+Kada ku mayar da glaze da aka yi amfani da shi cikin babban bokiti, ko ku tsoma burushi a ciki. Kafin amfani da glaze da aka ajiye, ku juya shi, ku sake auna SG ɗinsa, ku tace shi idan yana da gudaji ko ƙwayoyi (crystals).
 
 ### Takardun suna
 
-Ku rubuta suna a kan kowane bokiti da alƙalamin da ruwa ba ya gogewa. Zakin, a rubutunta don Ceramic Arts Network, ta lissafa sunan glaze, cikakken tsarinsa har da masu launi, cone, kwanan wata kuma, a ɗakin aiki na tare, baƙaƙen sunanku. Muna ba da shawarar ƙara SG da ake nema da duk wani Epsom salts ko CMC. UT Austin kuma tana amfani da launuka: bokitin lemu don gasa ta ƙasa, fari don gasa ta tsakiya. Ku ɗauki glaze marar suna a matsayin wanda ka iya ƙunsar darma (lead, Pb), kuma kada ku yi amfani da shi a kan tukwanen abinci.
+Ku rubuta suna a kan kowane bokiti da alƙalamin da ruwa ba ya gogewa. Zakin, a rubutunsa don Ceramic Arts Network, ya lissafa sunan glaze, cikakken tsarinsa har da masu launi, cone, kwanan wata kuma, a ɗakin aiki na tare, baƙaƙen sunanku. Muna ba da shawarar ƙara SG da ake nema da duk wani Epsom salts ko CMC. UT Austin kuma tana amfani da launuka: bokitin lemu don gasa ta ƙasa, fari don gasa ta tsakiya. Ku ɗauki glaze marar suna a matsayin wanda ka iya ƙunsar darma (lead, Pb), kuma kada ku yi amfani da shi a kan tukwanen abinci.
 
 ## Aunawa {#weighing}
 
@@ -137,7 +137,7 @@ Ruwa ma ya bambanta, kuma Digitalfire ta lura cewa yana canza halayen slurry. De
 
 ### Mataki-mataki
 
-1. Ku sa respirator ɗinku, da safar hannu ta roba idan hannayenku za su shiga. Zakin tana sa abin rufe fuska tun daga farkon aunawa har glaze ya jiƙe.
+1. Ku sa respirator ɗinku, da safar hannu ta roba idan hannayenku za su shiga. Zakin yana sa abin rufe fuska tun daga farkon aunawa har glaze ya jiƙe.
 2. Ku auna kusan 70 zuwa 80 mL na ruwa ga kowane 100 g na gari cikin bokiti.
 3. Ku ƙara garin da aka auna a hankali, daga ƙasa-ƙasa. UT Austin tana ƙara gari cikin ruwan ɗumi; Zakin da Au suna ƙara ruwa cikin gari. Muna ba da shawarar gari cikin ruwa, wanda ke tayar da ƙarancin ƙura, sai dai tsarin glaze mai bentonite mai yawa: ku fara juya busassun garinsa tare.
 4. Ku **jiƙa** shi (slake): ku bar garin ya jiƙe ba tare da juyawa ba. Digitalfire tana jira kusan minti 20. Gari mai gum ko abin ɗaurewa yana buƙatar ya kwana.
@@ -152,7 +152,7 @@ Ruwa ma ya bambanta, kuma Digitalfire ta lura cewa yana canza halayen slurry. De
 
 **Rariya** raga ce a cikin firam. Tura glaze ta cikinta da burushi yana fasa gudajin da haɗawa ke barin su, kuma yana kama ƙwayoyin da za su fito a matsayin ɗigo bayan gasa. Mafi girman lambar **mesh**, mafi laushin ragar: mesh 80 tana da ramuka na kusan 0.18 mm, mesh 100 kuma kusan 0.15 mm.
 
-Majiyoyi suna ba da shawarar mesh daban-daban. Zakin tana tacewa sau biyu ta mesh 50 ko 80. Derek Au yana amfani da mesh 120 don yawancin glaze, musamman masu cobalt ko ƙarfe: tacewa sau uku ta mesh 80 ta bar ɗigon ƙarfe a wani celadon, kuma tacewa sau ɗaya ta mesh 120 ta warware shi. Yana keɓe mesh 60 zuwa 80 don glaze na toka da wasu masu kaya marasa laushi. Potterycrafts, a Burtaniya, tana ba da shawarar mesh 60 zuwa 80. Zaɓi mai aminci:
+Majiyoyi suna ba da shawarar mesh daban-daban. Zakin yana tacewa sau biyu ta mesh 50 ko 80. Derek Au yana amfani da mesh 120 don yawancin glaze, musamman masu cobalt ko ƙarfe: tacewa sau uku ta mesh 80 ta bar ɗigon ƙarfe a wani celadon, kuma tacewa sau ɗaya ta mesh 120 ta warware shi. Yana keɓe mesh 60 zuwa 80 don glaze na toka da wasu masu kaya marasa laushi. Potterycrafts, a Burtaniya, tana ba da shawarar mesh 60 zuwa 80. Zaɓi mai aminci:
 
 Table: Wace rariya za a yi amfani da ita
 Label: Mesh na rariya
@@ -187,7 +187,7 @@ Label: SG da ake nema
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------- |
 | Tsomawa            | {{SG 1.40}} (don tsomawa na daƙiƙa 5) zuwa {{SG 1.50}} (don tsomawa na daƙiƙa 1); glaze da aka haɗa a gida masu gel sun fi kyau a {{SG 1.43–1.45}} | Marar launi {{SG 1.46–1.48}}; mai launi {{SG 1.61}} | {{SG 1.45}}; ku rage zuwa {{SG 1.43}} ku sa gel idan yana ɗiga |
 | Shafawa da burushi | {{SG 1.25}} (marar launi siriri) zuwa {{SG 1.55}} (zane mai duhu)                                                                                  | {{SG 1.71–1.81}}                                    | Ku bi samfurin; ku yi amfani da gum na CMC ko brushing medium  |
-| Fesawa             | Babu lamba; Hopper, a rubutunta don Ceramic Arts Network, ta ce ya fi siriri sosai, da deflocculant (ƙarin da ke sa slurry ya fi ruwa)             | {{SG 1.71}}                                         | Babu lamba amintacciya; ku fesa a cikin ɗakin fesawa kawai     |
+| Fesawa             | Babu lamba; Hopper, a rubutunsa don Ceramic Arts Network, ya ce ya fi siriri sosai, da deflocculant (ƙarin da ke sa slurry ya fi ruwa)             | {{SG 1.71}}                                         | Babu lamba amintacciya; ku fesa a cikin ɗakin fesawa kawai     |
 
 Don duba glaze na tsomawa da ido, AMACO tana tsomawa na daƙiƙa 5 tana neman shafi mai kauri kamar tsabar dime ta Amurka. Digitalfire tana gasa tayil da aka tsoma na daƙiƙa 5 don dubawa.
 
@@ -207,7 +207,7 @@ Label: Ruwa don SG da ake nema
 
 ### Epsom salts, gum na CMC da bentonite
 
-**Epsom salts** suna sa glaze ya ɗan yi gel idan ya tsaya cak kuma ya sake gudana idan aka juya shi. Ana kiran wannan **flocculating**, kuma glaze da ke yin haka **thixotropic** ne: yana shafuwa daidai, ba ya ɗiga sosai kuma ba ya kwanciya sosai. Digitalfire tana ba da shawarar farawa da kusan 2 g a kowane galan da zarar SG ya yi daidai (kusan 0.5 g a kowace lita, juyawarmu) da daidaita yawan kowane lokacin da kuka haɗa, tunda babu tsarin glaze da ya kamata ya ƙayyade yawan. Muna ba da shawarar narkar da shi a cikin ɗan ruwan zafi tukuna. A wani misali na Digitalfire, glaze a {{SG 1.45}} yana ɗiga, sai ruwa ya sauko da shi zuwa {{SG 1.43}} kuma Epsom salts suka mayar da shi gel mai laushi kamar kirim, kuma ya shafu daidai. Dubawa a taƙaice: ku juya, ku tsaya ku kalla. Glaze mai gel yana ci gaba da motsi na kusan daƙiƙa 2 ko 3, sannan ya tsaya ya ɗan koma baya.
+**Epsom salts** suna sa glaze ya ɗan yi gel idan ya tsaya cak kuma ya sake gudana idan aka juya shi. Ana kiran wannan **flocculating**, kuma glaze da ke yin haka **thixotropic** ne: yana shafuwa daidai fiye da da, kuma ɗigowarsa da kwanciyarsa suna raguwa. Digitalfire tana ba da shawarar farawa da kusan 2 g a kowane galan da zarar SG ya yi daidai (kusan 0.5 g a kowace lita, juyawarmu) da daidaita yawan kowane lokacin da kuka haɗa, tunda babu tsarin glaze da ya kamata ya ƙayyade yawan. Muna ba da shawarar narkar da shi a cikin ɗan ruwan zafi tukuna. A wani misali na Digitalfire, glaze a {{SG 1.45}} yana ɗiga, sai ruwa ya sauko da shi zuwa {{SG 1.43}} kuma Epsom salts suka mayar da shi gel mai laushi kamar kirim, kuma ya shafu daidai. Dubawa a taƙaice: ku juya, ku tsaya ku kalla. Glaze mai gel yana ci gaba da motsi na kusan daƙiƙa 2 ko 3, sannan ya tsaya ya ɗan koma baya.
 
 **Gum na CMC** (carboxymethyl cellulose) yana sa slurry ya fi ɗanko kuma ya fi jinkirin bushewa, kuma yana barin shafi mai tauri da ke manne wa tukunya. Ya fi muhimmanci ga glaze na shafawa da burushi da glaze masu frit mai yawa. Misalin Digitalfire yana haɗa 3.75 g cikin 1000 g na slurry, kuma dole ne a sa shi da blender. Glaze mai CMC ba zai yi gel da Epsom salts ba, kuma tunda ƙananan halittu suna cin gum ɗin, zai iya canzawa a cikin bokiti ya fara wari.
 
@@ -229,7 +229,7 @@ Glaze zai iya yin kama da wani abu daban sosai a kan wani yumɓu ko a cikin wani
 - kowane tayil a cikin lodin kiln ɗaya
 - alama a kan kowane tayil kafin gasa, da tambari, sassaƙa ko fensirin underglaze.
 
-Muna ba da shawarar tayil da ke tsaye a miƙe, tunda tayil a kwance yana ɓoye yadda glaze ke gudu, mai layi mai kaushi don nuna yadda glaze ke rabuwa a kan gefuna, da ƙafa marar glaze. Ku ɗora kowanne a kan ɗan faranti ko guntun bisque, ko a kan shiryayyen kiln da aka shafa wa kiln wash, don ya kama ɗigo. Ku sa **witness cone**, ƙaramin cone na yumɓu da ke lanƙwasa idan ya sami isasshen zafi, kusa da tayil ɗin don nuna abin da suka samu; [Gasa a cikin murhu mai sauƙi](/guides/firing) yana bayanin cone. Ku ba kowane tayil gajeriyar lamba, ku rubuta ta kusa da tsarin glaze a cikin bayananku. Willers, a rubutunta don Ceramic Arts Network, tana amfani da lambobi da haruffa, kuma tana rubuta tsarin kansa a farkon littafin rubutu.
+Muna ba da shawarar tayil da ke tsaye a miƙe, tunda tayil a kwance yana ɓoye yadda glaze ke gudu, mai layi mai kaushi don nuna yadda glaze ke rabuwa a kan gefuna, da ƙafa marar glaze. Ku ɗora kowanne a kan ɗan faranti ko guntun bisque, ko a kan shiryayyen kiln da aka shafa wa kiln wash, don ya kama ɗigo. Ku sa **cone mai shaida** (witness cone), ƙaramin cone na yumɓu da ke lanƙwasa idan ya sami isasshen zafi, kusa da tayil ɗin don nuna abin da suka samu; [Gasa a cikin kiln mai sauƙi](/guides/firing) yana bayanin cone. Ku ba kowane tayil gajeriyar lamba, ku rubuta ta kusa da tsarin glaze a cikin bayananku. Willers, a rubutunta don Ceramic Arts Network, tana amfani da lambobi da haruffa, kuma tana rubuta tsarin kansa a farkon littafin rubutu.
 
 ### Line blend
 
@@ -270,7 +270,7 @@ Label: Samfurin bayanai
 | Tsarin glaze | Tsarin glaze da sigarsa; sunayen kamfanin kaya da lot number; duk wani musanya                                                                                                                            |
 | Haɗawa       | Kwanan wata; girman batch; ruwan da aka ƙara, da irinsa (famfo, reverse osmosis ko distilled); SG bayan haɗawa da SG na ƙarshe; Epsom salts, CMC da bentonite da aka ƙara; mesh na rariya da yawan tacewa |
 | Shafawa      | Yumɓu; cone na bisque; tsomawa, shafawa da burushi ko zubawa; lokacin tsomawa ko yawan shafi; kauri bayan bushewa                                                                                         |
-| Gasa         | Kiln da wurin shiryayye; jadawalin gasa, da ramp, hold da hucewa; yanayi (oxidation ko reduction); abin da witness cone ya nuna, ba abin da aka saita kiln kawai ba                                       |
+| Gasa         | Kiln da wurin shiryayye; jadawalin gasa, da ramp, hold da hucewa; yanayi (oxidation ko reduction); abin da cone mai shaida ya nuna, ba abin da aka saita kiln kawai ba                                    |
 | Sakamako     | Fuska da launi; duk wani gudu, crazing (ƙananan tsage-tsage) ko ƙananan ramuka (pinholes); hotunan gaba, baya da gefe; lambar tayil                                                                       |
 
 > [!NOTE]

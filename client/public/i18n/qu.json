@@ -6,7 +6,7 @@
     "glazingBasics": "Esmalte yachaypa qallariynin - Glazecalc",
     "makingAGlaze": "Imaynatataq esmalteta ruranki - Glazecalc",
     "safeMixing": "Mana manchakuspa chaqruy, wayra puriynin - Glazecalc",
-    "homeSafety": "Ama ayllu-masiykita hampi-ruruwan wañuchiychu - Glazecalc",
+    "homeSafety": "Ama ayllu-masiykita miyuwan wañuchiychu - Glazecalc",
     "firing": "Huch'uy hornopi ruphachiy - Glazecalc",
     "learnWithJohnBritt": "John Brittpa mana qullqiyuq esmalte yachachiyninwan yachay - Glazecalc",
     "about": "Imamanta - Glazecalc",
@@ -17,7 +17,7 @@
     "forgot": "Pakasqa simiykita musuqyachiy - Glazecalc",
     "reset": "Musuq pakasqa simita akllay - Glazecalc",
     "confirmEmail": "Correoykita takyachiy - Glazecalc",
-    "home": "Taller qillqaykiwan - Glazecalc",
+    "home": "Taller qillqayki - Glazecalc",
     "recipe": "Ruranakuna - Glazecalc",
     "import": "Ruranakunata ch'aqtay - Glazecalc",
     "blends": "Probetakunapaq chaqrukuna - Glazecalc",
@@ -60,7 +60,7 @@
   },
   "trial": {
     "label": "Pruebayki",
-    "trying": "Glazecalctam <strong>{name}</strong> sutiwan pruebachkanki. Llamk'ayniykiqa waqaychasqam kanqa kay p'unchawkama: {date}.",
+    "trying": "Glazecalctam <strong>{name}</strong> sutiwan pruebachkhanki. Llamk'ayniykiqa waqaychasqam kanqa kay p'unchawkama: {date}.",
     "keep": "Waqaychanaykipaq cuentata kichay",
     "discard": "Pruebata wikch'uy",
     "confirm": "¿Kay pruebapi tukuy rurasqaykita wikch'unkichu? Manam kutichiyta atikunchu.",
@@ -69,7 +69,7 @@
     "discardFailed": "Manam pruebata wikch'uyta atikurqanchu. Ama hina kaspa, yapamanta ruray."
   },
   "signedOut": {
-    "recipeLost": "\"{title}\" ruranapi t'ikrasqaykikuna manaraq waqaychasqa kachkaptinmi lluqsichisqa karqanki, chaymi chinkarqan."
+    "recipeLost": "\"{title}\" ruranapi t'ikrasqaykikuna manaraq waqaychasqa kachkhaptinmi lluqsichisqa karqanki, chaymi chinkarqan."
   },
   "footer": {
     "site": "Web",
@@ -88,7 +88,7 @@
   },
   "offline": {
     "languageNotSaved": "Kay simiqa manam kay celularpi waqaychasqachu. Llamk'achinaykipaq internetman tinkiy.",
-    "updateReady": "Glazecalcpa musuq versiónninmi listo kachkan.",
+    "updateReady": "Glazecalcpa musuq versiónninmi listo kachkhan.",
     "reload": "Yapamanta kichay",
     "dismiss": "Manaraq kunanqa",
     "install": "Aplicaciónta churay"
@@ -114,8 +114,8 @@
       "latinAmerica": "América Latina",
       "middleEastNorthAfrica": "Chawpi Inti lluqsimuy, Chinchay África",
       "oceania": "Oceanía",
-      "southAsia": "Uray Asia",
-      "southeastAsia": "Uray inti lluqsimuy Asia",
+      "southAsia": "Qulla Asia",
+      "southeastAsia": "Qulla inti lluqsimuy Asia",
       "other": "Hukkuna"
     }
   },
@@ -125,7 +125,7 @@
     "notANumberPoint": "Huk yupayta qillqay, kay hina: {example}, decimalkunapaq puntowan."
   },
   "meta": {
-    "description": "Esmalte ruranata qillqay, UMF-ta, sílice alúmina tupuyta, fundente kuskan kayta rikuy. Mana qullqiyuq, kichasqa código: ruranakuna, materialkuna, ruphachiy.",
+    "description": "Esmalte ruranata qillqay, UMF-ta, sílice alúmina tupuyta, fundente kuskan kayta rikuy. Mana qullqiyuq, kichasqa código: ruranakuna, materialkuna, ruphachiy qillqakuna.",
     "guides": "Musuq saña ruraqkunapaq sut'i yachachiykuna: imataq esmalte, imaynata mana manchakuspa ruranki chaqrunki, aylluykita waqaychay, huch'uy hornopi ruphachiy.",
     "glazingBasics": "Imamanta esmalte rurasqa, imaynatataq horno vidrioman tukuchin, imataq conokuna, fritakuna, fórmula unitaria, esmalte pantaykuna. Musuq saña ruraqkunapaq.",
     "makingAGlaze": "Imaynata esmalteta rantinki, waqaychanki, pesanki, chaqrunki, rakhu kayninta allichanki, mituykipi pruebanki, qillqanki yapa ruranaykipaq.",
@@ -147,7 +147,7 @@
   },
   "notices": {
     "dismiss": "Pakay",
-    "warning": "Willakuy: {text}",
+    "warning": "Paqtataq: {text}",
     "error": "Pantay: {text}"
   },
   "remove": {
@@ -155,7 +155,7 @@
     "trashed": "\"{name}\" Q'upaman apasqa.",
     "undo": "Kutichiy",
     "restored": "\"{name}\" kutichisqa.",
-    "restoreFailed": "\"{name}\" manam kutichiyta atikurqanchu. Q'upapiraqmi kachkan.",
+    "restoreFailed": "\"{name}\" manam kutichiyta atikurqanchu. Q'upapiraqmi kachkhan.",
     "failed": "Manam qichuyta atikurqanchu. Ama hina kaspa, yapamanta ruray.",
     "question": "¿\"{name}\" qichunkichu?",
     "cannotUndo": "Manam kutichiyta atikunchu.",
@@ -331,7 +331,7 @@
     "label": "Kay t'ikraymanta",
     "text": "Kay p'anqataqa AI-mi inglés simimanta t'ikran. Glazecalcqa kichasqa códigoyuqmi: imapas mana allin ñawinchakuptin, ama hina kaspa GitHubpi allichayta niwayku.",
     "brief": "AI-mi inglés simimanta t'ikran.",
-    "plain": "Kay p'anqataqa AI-mi inglés simimanta t'ikran, kay simitaqa astawan simikunamanta aswan pisitam allinta t'ikran. Inglés p'anqa aswan allin ñawinchakunman. Glazecalcqa kichasqa códigoyuqmi: imapas mana allin ñawinchakuptin, ama hina kaspa GitHubpi allichayta niwayku.",
+    "plain": "Kay p'anqataqa AI-mi inglés simimanta t'ikran, chay AI-taq kay simitaqa achkha huk simikunamanta aswan mana allintam t'ikran. Inglés p'anqa aswan allin ñawinchakunman. Glazecalcqa kichasqa códigoyuqmi: imapas mana allin ñawinchakuptin, ama hina kaspa GitHubpi allichayta niwayku.",
     "plainBrief": "AI-mi t'ikran; inglés aswan allin ñawinchakunman.",
     "suggest": "Allichayta niy",
     "english": "Ingléspi ñawinchay",

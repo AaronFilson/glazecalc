@@ -63,7 +63,7 @@
     "trying": "Ị na-anwale Glazecalc dịka <strong>{name}</strong>. A ga-edebe ọrụ gị ruo {date}.",
     "keep": "Mepụta akaụntụ iji debe ya",
     "discard": "Tufuo nnwale",
-    "confirm": "Tufuo ihe niile i mere n'ime nnwale a? A gaghị enwe ike ịgbanwe nke a.",
+    "confirm": "Tufuo ihe niile i mere n'ime nnwale a? A gaghị enwe ike ịmehie nke a.",
     "discardIt": "Tufuo ya",
     "keepTrying": "Gaa n'ihu na-anwale",
     "discardFailed": "Enweghị ike ịtufu nnwale ahụ. Biko nwaa ọzọ."
@@ -257,7 +257,7 @@
     "flux": "Flux",
     "silica": "Silica",
     "alumina": "Alumina",
-    "opacifier": "Ihe na-eme ka ọ ghara ịhụ ụzọ",
+    "opacifier": "Opacifier",
     "colorant": "Ihe na-enye agba",
     "suspender": "Ihe na-ejide glaze n'ime mmiri",
     "other": "Ndị ọzọ"

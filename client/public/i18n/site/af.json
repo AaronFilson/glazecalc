@@ -50,7 +50,7 @@
     "alongside": "Naas die sakrekenaar hou dit jou resepte, jou eie grondstowwe, kleurstowwe en ander bymiddels, notas en bakrekords, 'n bladsy met praktiese <advice>glasuuradvies</advice>, en <guides>gidse</guides> vir nuwe pottebakkers, van wat 'n glasuur is tot hoe om dit veilig te bak.",
     "numbersHeading": "Hoe die syfers uitgewerk word",
     "numbers": "Elke grondstof word beskryf deur sy chemiese formule of deur 'n oksiedontleding, plus sy gloeiverlies: die deel wat in die oond uitbrand, soos die koolstofdioksied in kalksteen of die water in kaolien. Glazecalc omskep elke hoeveelheid in mol van elke oksied met standaard molêre massas, tel dit oor die hele resep op, en deel deur die totale mol vloeimiddel. Kleurstowwe en ander bymiddels word saam met 'n resep gelys, maar uit die Seger-formule gelaat, soos gebruiklik is.",
-    "guide": "Die resultate is 'n riglyn, nie 'n waarborg nie. Regte grondstowwe wissel van verskaffer tot verskaffer en van lot tot lot, en bak maak net soveel saak as chemie, so toets elke glasuur. Glasure vir oppervlakke wat met kos in aanraking kom, moet vir uitloging getoets word.",
+    "guide": "Die resultate is 'n riglyn, nie 'n waarborg nie. Regte grondstowwe wissel van verskaffer tot verskaffer en van lot tot lot, en bak maak net soveel saak as chemie, so toets elke glasuur. Glasure vir oppervlakke wat met kos in aanraking kom, behoort vir uitloging getoets te word.",
     "builtHeading": "Hoe dit gebou is",
     "built": "Glazecalc het in 2017 begin en is in 2026 herbou. Dit is een klein webtoepassing, en sy <source>bronkode is op GitHub</source> onder die MIT-lisensie.",
     "stackBrowser": "Angular 22 in die blaaier (selfstandige komponente en seine), met die glasuurchemie in 'n klein gedeelde biblioteek.",
@@ -211,7 +211,7 @@
     "shortHeading": "Kortliks",
     "short": "Glazecalc is gratis om te gebruik. Gebruik dit vir jou eie glasure, rekords en leer, wees billik teenoor die bediener wat almal deel, en moenie probeer om dit stukkend te maak nie.",
     "whoHeading": "Wie dit bestuur",
-    "who": "Glazecalc is 'n gratis, oopbron-, nieprofytgewende projek, bestuur deur sy eienaar, Aaron Filson, in die Verenigde State. Hierdie voorwaardes is vir die gebruik van die webwerf by glazecalcapp.com. Deur dit te gebruik, stem jy daarmee saam; as jy nie saamstem nie, moet asseblief nie dit gebruik nie.",
+    "who": "Glazecalc is 'n gratis, oopbron-, nieprofytgewende projek, bestuur deur sy eienaar, Aaron Filson, in die Verenigde State. Hierdie voorwaardes is vir die gebruik van die webwerf by glazecalcapp.com. Deur dit te gebruik, stem jy daarmee saam; as jy nie saamstem nie, moet dit asseblief nie gebruik nie.",
     "codeHeading": "Die kode en die webwerf",
     "code": "Glazecalc se <source>bronkode</source> is gratis onder die MIT-lisensie, wat enigiemand toelaat om dit te gebruik, te kopieer, te verander en te deel, en hul eie kopie te laat loop. Daardie lisensie is vir die kode. Hierdie voorwaardes is vir hierdie webwerf: sy bediener, en die rekening wat jy daarop maak.",
     "useHeading": "Glazecalc gebruik",
@@ -248,7 +248,7 @@
   },
   "notFound": {
     "heading": "Bladsy nie gevind nie",
-    "text": "Daar is geen bladsy by hierdie adres nie. Dit kan skuif, of die skakel kan verkeerd getik wees.",
+    "text": "Daar is geen bladsy by hierdie adres nie. Dit is dalk geskuif, of die skakel is dalk verkeerd getik.",
     "start": "Gaan na die beginbladsy"
   },
   "advice": {

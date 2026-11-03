@@ -14,7 +14,7 @@
   "no-target": "Objetivoqa mana maskanapaq óxidokunayuqchu",
   "no-materials": "Manam yupanapaq materialkuna kanchu",
   "no-temperature": "Borota churanapaq ruphachiy temperaturam necesitakun",
-  "no-flux-to-rebuild": "Esmalteqa mana watmanta ruranapaq fundenteyuqchu",
+  "no-flux-to-rebuild": "Esmalteqa mana yapamanta ruranapaq fundenteyuqchu",
   "unknown-element": "{formula} nisqapi mana riqsisqa elemento: {element}",
   "bad-formula": "Fórmulata mana ñawinchayta atikurqanchu: {formula}",
   "analysis-total": "Material {material} nisqapa análisisninqa {total}% LOI-wan kuska; yaqa 100% suyakurqan.",
