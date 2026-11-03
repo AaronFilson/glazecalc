@@ -338,7 +338,7 @@
       "sg": {
         "label": "Soortlike gewig",
         "saved": "Gestoor: glasuurdigtheid as soortlike gewig.",
-        "example": "SG 1.45"
+        "example": "1,45"
       },
       "baume": {
         "label": "Grade Baumé, van 'n hidrometer",

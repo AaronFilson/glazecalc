@@ -338,7 +338,7 @@
       "sg": {
         "label": "Specific gravity (SG)",
         "saved": "A ti fi pamọ́: ìwúwo glaze bí specific gravity.",
-        "example": "SG 1.45"
+        "example": "1.45"
       },
       "baume": {
         "label": "Degrees Baumé, láti hydrometer",

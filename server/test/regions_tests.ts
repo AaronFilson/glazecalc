@@ -1885,20 +1885,20 @@ describe('Latin America and Africa', () => {
     expect(regions.formatLocaleFor('en-XA', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
   });
 
-  it('knows eleven languages, grouped, Latin American Spanish and Brazilian Portuguese offered since wave L1, Swahili and Amharic since wave L2, seven of Africa and Quechua with the plain notice', () => {
+  it('offers eleven languages, grouped, with the reference pages (waves L1 to L4), seven of Africa and Quechua with the plain notice', () => {
     for (const code of NEW_LANGUAGES) {
       const language = languages.languageFor(code)!;
-      const live = ['es-419', 'pt-BR', 'sw', 'am'].includes(code);
-      expect(language, code).to.include({ code, dir: 'ltr', live });
-      if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
-      else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      expect(language, code).to.include({ code, dir: 'ltr', live: true, reference: true });
+      expect(languages.LIVE_LANGUAGES, code).to.include(code);
+      expect(languages.REFERENCE_LANGUAGES, code).to.include(code);
       expect(groups.languageGroup(code), code).to.equal(
         ['pt-BR', 'es-419', 'qu'].includes(code) ? 'latin-america' : 'africa'
       );
       expect(language.name, code).to.equal(language.name.normalize('NFC'));
     }
     const plain = NEW_LANGUAGES.filter((code) => languages.languageFor(code)!.plainNotice);
-    // Swahili's plain notice: the owner's decision of 2026-11-01.
+    // Swahili's plain notice: the owner's decision of 2026-11-01; Afrikaans has the standard one.
+    expect(languages.languageFor('af')!.plainNotice).to.not.equal(true);
     expect(plain).to.eql(['sw', 'am', 'ha', 'yo', 'zu', 'ig', 'so', 'qu']);
     // Brazil's plural rules, not Portugal's: 0 is singular.
     expect(new Intl.PluralRules(languages.textLanguage('pt-BR')).select(0)).to.equal('one');

@@ -597,6 +597,13 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   2026-11-01). Kenya, which listed Swahili beside English, now offers it; the picker's "Africa" group lists both.
   Tanzania, Uganda and Ethiopia are not regions yet (Ethiopia waits for an emergency number confirmed on an official
   page). Native reviewers for both are wanted (the Native check rows in docs/translations/sw.md, am.md).
+- **Africa and Latin America, waves L3 and L4** (round 10, scratch/round10/c-l34/): Afrikaans (`af`, the standard
+  notice), Hausa (`ha`), Yoruba (`yo`), Zulu (`zu`), Igbo (`ig`), Somali (`so`) and Southern Quechua (`qu`,
+  Cusco-Collao, with the owner's extra review) are offered, each with the reference pages; all but Afrikaans carry
+  the plain notice. South Africa, which listed Afrikaans and Zulu beside English, now offers them; the picker lists
+  the six under "Africa" and Quechua under "Latin America". Nigeria, Peru, Bolivia and Ecuador are not regions yet
+  (no emergency number confirmed on an official page). Native reviewers are wanted for all seven (the Native check
+  rows in docs/translations/af.md, ha.md, yo.md, zu.md, ig.md, so.md, qu.md).
 
 ## What stays the same
 

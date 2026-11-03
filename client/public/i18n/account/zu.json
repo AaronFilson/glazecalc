@@ -338,7 +338,7 @@
       "sg": {
         "label": "I-specific gravity",
         "saved": "Kulondoloziwe: ukuminyana kwe-glaze njenge-specific gravity.",
-        "example": "SG 1.45"
+        "example": "i-SG 1.45"
       },
       "baume": {
         "label": "Ama-degree e-Baumé, avela ku-hydrometer",

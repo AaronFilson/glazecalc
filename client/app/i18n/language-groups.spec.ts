@@ -26,13 +26,14 @@ describe('the languages in groups', () => {
       'picker.groups.southeastAsia'
     ]);
     expect(sections[0]!.codes).toEqual(['en']);
-    // Amharic and Swahili (wave L2), by their English names.
-    expect(sections[1]!.codes).toEqual(['am', 'sw']);
+    // Amharic and Swahili (wave L2), Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali (L3, L4), by their English names.
+    expect(sections[1]!.codes).toEqual(['af', 'am', 'ha', 'ig', 'so', 'sw', 'yo', 'zu']);
     // Korean, Japanese and the Chinese: by their English names, not by script or code.
     expect(sections[2]!.codes).toEqual(['ja', 'ko', 'zh-Hans', 'zh-Hant']);
     expect(sections[3]!.codes.slice(0, 4)).toEqual(['bg', 'hr', 'cs', 'da']);
-    // Brazilian Portuguese and Latin American Spanish (wave L1); Portugal's and Spain's stay in Europe's group.
-    expect(sections[4]!.codes).toEqual(['pt-BR', 'es-419']);
+    // Brazilian Portuguese and Latin American Spanish (wave L1) and Quechua (L4); Portugal's and Spain's stay in
+    // Europe's group.
+    expect(sections[4]!.codes).toEqual(['pt-BR', 'qu', 'es-419']);
     expect(sections[3]!.codes).toContain('es');
     expect(sections[3]!.codes).toContain('pt-PT');
     expect(sections[5]!.codes).toEqual(['ar', 'tr']);
@@ -97,6 +98,17 @@ describe('the languages in groups', () => {
     expect(found('swahili')).toEqual(['sw']);
     expect(found('amharic')).toEqual(['am']);
     expect(found('አማርኛ')).toEqual(['am']);
+    expect(found('afrikaans')).toEqual(['af']);
+    expect(found('hausa')).toEqual(['ha']);
+    expect(found('Yorùbá')).toEqual(['yo']);
+    expect(found('yoruba')).toEqual(['yo']);
+    expect(found('isiZulu')).toEqual(['zu']);
+    expect(found('zulu')).toEqual(['zu']);
+    expect(found('igbo')).toEqual(['ig']);
+    expect(found('soomaali')).toEqual(['so']);
+    expect(found('somali')).toEqual(['so']);
+    expect(found('runasimi')).toEqual(['qu']);
+    expect(found('quechua')).toEqual(['qu']);
   });
 });
 

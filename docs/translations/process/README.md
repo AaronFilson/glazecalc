@@ -331,3 +331,16 @@ Amharic's density example as "አንጻራዊ ክብደት 1.45", repeating its 
 the repeat check from seeing it); it was set to the number alone by hand.
 
 Still open: native reviewers for both (the Native check rows).
+
+## Africa and Latin America, waves L3 and L4: Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua (all live)
+
+Round 10, on the same rules as L2, on L2's branch (the plan and log are in scratch/round10/c-l34/ in the main
+checkout). `af`, `ha`, `yo`, `zu`, `ig`, `so` and `qu` went live with `go-live.mjs <code>` on 2026-11-02, each with
+`reference: true`; all but Afrikaans carry the plain notice (the owner's decisions). Quechua is Southern Quechua
+(Cusco-Collao) and had the owner's extra review. South Africa, which already listed Afrikaans and Zulu, offers them;
+Nigeria, Peru, Bolivia and Ecuador are not regions yet. go-live.mjs wrote the density example as "SG 1.45" for Hausa,
+Yoruba, Igbo and Somali, whose labels end in "(SG)", so it repeated the label as Amharic's did; each was set to
+"1.45" by hand. Zulu ("i-SG 1.45", label "I-specific gravity") and Quechua ("SG 1.45", label "Gravedad específica")
+were left as written.
+
+Still open: native reviewers for all seven (the Native check rows).

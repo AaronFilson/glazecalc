@@ -338,7 +338,7 @@
       "sg": {
         "label": "Specific gravity (SG)",
         "saved": "E chekwara: oke glaze dịka specific gravity.",
-        "example": "SG 1.45"
+        "example": "1.45"
       },
       "baume": {
         "label": "Degrees Baumé, site na hydrometer",
