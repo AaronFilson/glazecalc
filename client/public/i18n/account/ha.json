@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Shiga",
+    "keepHeading": "Ajiye aikinku",
+    "signUpHeading": "Buɗe asusunku",
+    "signInLead": "Barka da dawowa littafin glaze ɗinku.",
+    "keepLead": "Ajiye duk abin da kuka yi a matsayin {name}: ƙara imel ɗinku da kalmar sirri. Har yanzu kyauta ne.",
+    "signUpLead": "Kyauta. Girke-girkenku, kayan aiki da rubuce-rubuce na sirri ne ga asusunku.",
+    "trialNote": "Kuna da asusu tuni? Shiga yana kawo abin da kuka yi a matsayin {name} cikinsa. Sababbi ne? <signup>Buɗe asusu</signup> don ajiye shi maimakon haka.",
+    "email": "Imel",
+    "password": "Kalmar sirri",
+    "passwordHint": "Aƙalla haruffa 8.",
+    "confirmation": "Tabbatar da kalmar sirri",
+    "keepSignedIn": "Riƙe ni a ciki a wannan na'ura",
+    "passwordMissing": "Shigar da kalmar sirrinku.",
+    "createAccount": "Buɗe asusu",
+    "signIn": "Shiga",
+    "haveAccount": "Kuna da asusu tuni? <signin>Shiga</signin>",
+    "privacy": "Ana amfani da imel ɗinku da abin da kuke ajiyewa ne kawai don gudanar da asusunku, kuma ana ajiye su a Amazon Web Services a Amurka. <privacy>Yadda Glazecalc ke sarrafa bayananku</privacy>",
+    "terms": "Ta buɗe asusu, kun yarda da <terms>Sharuɗɗan amfani</terms>.",
+    "dataNotice": "Glazecalc aiki ne na kyauta, buɗaɗɗen tushe, kuma ana ajiye asusu a sabobi a Amurka. Kuna iya karanta jagororin ku gwada lissafin ba tare da asusu ba, ko ku gudanar da naku kwafi. Ko za ku buɗe asusu a nan shawararku ce, kuma aikin ba ya ɗaukar wani alhaki a kai. <where>Inda ake ajiye asusunku, da zaɓinku</where>",
+    "forgot": "Kun manta kalmar sirrinku? Sake saita ta",
+    "newHere": "Sababbi ne? <signup>Buɗe asusu kyauta</signup>",
+    "signUpFailed": "Kuskure: ba a iya buɗe asusun ba.",
+    "signInFailed": "Kuskure: ba a iya shiga ba.",
+    "or": "ko",
+    "passkeySignIn": "Shiga da passkey",
+    "passkeyHint": "Passkey yana amfani da hoton yatsanku, fuskarku ko kulle allo maimakon kalmar sirri. Ƙara ɗaya a shafin asusunku."
+  },
+  "secondStep": {
+    "heading": "Shiga mataki biyu",
+    "signingInAs": "Kalmar sirrinku daidai ce. Saura mataki ɗaya don shiga a matsayin {email}.",
+    "leadCode": "Buɗe manhajar authenticator ɗinku ku shigar da lambar da take nunawa don Glazecalc.",
+    "leadPasskey": "Yi amfani da passkey ɗinku don gama shiga.",
+    "leadRecovery": "Shigar da ɗaya daga cikin lambobin dawo da shiga da kuka ajiye lokacin da kuka kunna shiga mataki biyu. Kowace lamba tana aiki sau ɗaya.",
+    "code": "Lamba daga manhajar authenticator ɗinku",
+    "codeHint": "Lambobi {digits}. Sabuwar lamba tana bayyana kowane daƙiƙa 30.",
+    "codeFormat": "Shigar da lamba mai lambobi {digits} daga manhajar authenticator ɗinku.",
+    "recoveryCode": "Lambar dawo da shiga",
+    "recoveryHint": "Tana kama da abcde-12345.",
+    "recoveryMissing": "Shigar da ɗaya daga cikin lambobin dawo da shigarku.",
+    "finish": "Gama shiga",
+    "usePasskey": "Yi amfani da passkey",
+    "noPasskeysHere": "Wannan burauza ba za ta iya amfani da passkey ba. Yi amfani da wata hanya a ƙasa, ko ku shiga a na'urar da za ta iya.",
+    "useRecovery": "Yi amfani da lambar dawo da shiga maimakon haka",
+    "useApp": "Yi amfani da manhajar authenticator ɗinku maimakon haka",
+    "startOver": "Sake farawa",
+    "reloadNote": "Wannan mataki yana jira minti {minutes}. Idan kun bar ko kun sake loda wannan shafi, za ku buƙaci sake shigar da kalmar sirrinku.",
+    "expired": "Shiga ya ɗauki lokaci da yawa. Don Allah ku sake shigar da kalmar sirrinku."
+  },
+  "passkey": {
+    "cancelled": "Ba a yi amfani da passkey ɗin ba: an soke buƙatar ko lokacinta ya ƙare, ko wannan na'ura ba ta da passkey don Glazecalc. Don Allah a sake gwadawa, ko ku yi amfani da wata hanya.",
+    "registered": "Wannan passkey yana kan asusunku tuni.",
+    "browserFailed": "Wannan burauza ba ta iya amfani da passkey ɗin ba. Don Allah a sake gwadawa, ko ku yi amfani da wata hanya."
+  },
+  "forgot": {
+    "heading": "Sake saita kalmar sirrinku",
+    "checkInbox": "Duba akwatin saƙonku da foldar junk. Idan babu abin da ya iso, duba adireshin ku sake nema.",
+    "intro": "Shigar da imel na asusunku, za mu aika muku mahaɗi don zaɓar sabuwar kalmar sirri.",
+    "email": "Imel:",
+    "send": "Aika mahaɗin sake saita",
+    "back": "Koma zuwa shiga",
+    "failed": "Kuskure: ba a iya aika imel ɗin sake saita ba. Don Allah a sake gwadawa."
+  },
+  "reset": {
+    "heading": "Zaɓi sabuwar kalmar sirri",
+    "signIn": "Shiga",
+    "incomplete": "Wannan shafi yana buƙatar mahaɗi daga imel ɗin sake saita kalmar sirri, kuma wannan bai cika ba.",
+    "askAgain": "Nemi sabon mahaɗi",
+    "password": "Sabuwar kalmar sirri:",
+    "confirmation": "Tabbatar da sabuwar kalmar sirri:",
+    "save": "Ajiye sabuwar kalmar sirri",
+    "hint": "Aƙalla haruffa 8. Za a fitar da kowace na'ura da ke cikin asusun.",
+    "failed": "Kuskure: ba a iya canza kalmar sirrin ba. Don Allah a sake gwadawa.",
+    "secondStep": "Idan asusunku yana amfani da shiga mataki biyu, har yanzu za ku buƙaci manhajar authenticator ɗinku, passkey ko lambar dawo da shiga don shiga."
+  },
+  "account": {
+    "trialTitle": "Gwajinku",
+    "trialLead": "Kuna gwada Glazecalc a matsayin {name}.",
+    "keepHeading": "Ajiye aikinku",
+    "keepText": "Za a cire wannan gwaji da duk abin da ke ciki a {date}. Buɗe asusu kyauta don ajiye su: girke-girkenku, kayan aiki da rubuce-rubuce za su kasance yadda suke, kuma {name} zai kasance sunan da ake nuna muku.",
+    "createAccount": "Buɗe asusu",
+    "title": "Asusunku",
+    "signedInAs": "Kun shiga a matsayin {email}.",
+    "contents": "A wannan shafi",
+    "changeHeading": "Canza kalmar sirrinku",
+    "current": "Kalmar sirri ta yanzu",
+    "currentMissing": "Shigar da kalmar sirrinku ta yanzu.",
+    "password": "Sabuwar kalmar sirri",
+    "passwordHint": "Aƙalla haruffa 8. Za a fitar da sauran na'urorin da ke cikin wannan asusu.",
+    "confirmation": "Tabbatar da sabuwar kalmar sirri",
+    "change": "Canza kalmar sirri",
+    "changeFailed": "Kuskure: ba a iya canza kalmar sirrin ba. Don Allah a sake gwadawa.",
+    "deleteHeading": "Share asusunku",
+    "deleteText": "Wannan yana cire asusunku da duk abin da kuka ajiye: girke-girke, kayan aiki, kayan ƙari, rubuce-rubuce, bayanan gasa da shawarwari. Ba za a iya dawo da shi ba.",
+    "deletePassword": "Kalmar sirrinku, don tabbatarwa",
+    "deletePasswordMissing": "Shigar da kalmar sirrinku don tabbatarwa.",
+    "delete": "Share asusuna",
+    "deleteFailed": "Kuskure: ba a iya share asusun ba. Don Allah a sake gwadawa.",
+    "unverifiedHeading": "Tabbatar da imel ɗinku",
+    "unverifiedText": "Mun aika mahaɗi zuwa {email} lokacin da kuka buɗe wannan asusu. Buɗe shi don tabbatar da cewa adireshin naku ne. Har zuwa lokacin muna aika saƙo zuwa gare shi ne kawai idan kun nema, kamar sake saita kalmar sirri.",
+    "resend": "Sake aika mahaɗin",
+    "resendFailed": "Kuskure: ba a iya aika mahaɗin ba. Don Allah a sake gwadawa.",
+    "emailHeading": "Canza imel ɗinku",
+    "emailText": "Muna aika mahaɗi zuwa sabon adireshin, kuma imel ɗinku yana canzawa idan kun buɗe shi. Muna kuma sanar da adireshinku na yanzu. Za a fitar da kowace na'ura da ke cikin wannan asusu.",
+    "newEmail": "Sabon imel",
+    "emailPassword": "Kalmar sirrinku, don tabbatarwa",
+    "emailSend": "Aika mahaɗin",
+    "emailFailed": "Kuskure: ba a iya aika mahaɗin ba. Don Allah a sake gwadawa.",
+    "signOutHeading": "Fita a ko'ina",
+    "signOutText": "Yana fitar da ku a kowace na'ura, har da wannan, kuma yana dakatar da access token ɗinku da mahaɗan rabawarku. Yi amfani da shi idan kun rasa na'ura ko kuna tsammanin wani yana da bayanan shigarku.",
+    "signOutButton": "Fita a ko'ina",
+    "signOutFailed": "Kuskure: ba a iya fita ba. Don Allah a sake gwadawa.",
+    "confirmStep": "Shiga mataki biyu yana kunne, don haka ku tabbatar cewa ku ne: kalmar sirrinku da mataki na biyu."
+  },
+  "mfa": {
+    "heading": "Shiga mataki biyu",
+    "intro": "Nemi mataki na biyu idan kun shiga, ban da kalmar sirrinku: lamba daga manhajar authenticator, ko passkey. Sannan wanda ya san kalmar sirrinku har yanzu ba zai iya shiga ba.",
+    "loadFailed": "Ba a iya loda shiga mataki biyunku ba. Don Allah ku sake loda shafin.",
+    "on": "Shiga mataki biyu yana kunne.",
+    "onText": "Kuna shiga da kalmar sirrinku da mataki na biyu, ko da passkey shi kaɗai.",
+    "off": "Shiga mataki biyu a kashe yake.",
+    "badgeOn": "Kunne",
+    "badgeOff": "A kashe",
+    "offText": "Don kunna shi, saita manhajar authenticator ko ku ƙara passkey.",
+    "confirmEmailFirst": "Tabbatar da imel ɗinku da farko, a sama. Muna amfani da shi don sanar da ku canje-canje ga yadda kuke shiga, da kuma taimakawa idan kun rasa mataki na biyunku.",
+    "appHeading": "Manhajar authenticator",
+    "appText": "Manhaja a wayarku ko a manajan kalmomin sirrinku tana nuna sabuwar lamba kowane daƙiƙa 30, don ku shigar da ita idan kun shiga.",
+    "addApp": "Saita manhajar authenticator",
+    "removeApp": "Cire manhajar authenticator",
+    "added": "An ƙara a {date}.",
+    "lastUsed": "An yi amfani da shi na ƙarshe a {date}.",
+    "notUsed": "Ba a yi amfani da shi ba tukuna.",
+    "passkeysHeading": "Passkey",
+    "passkeysText": "Passkey yana shigar da ku da hoton yatsanku, fuskarku ko kulle allo, a wannan na'ura ko wayarku. Zai iya zama mataki na biyunku, ko ya shigar da ku shi kaɗai, ba tare da kalmar sirrinku ba.",
+    "noPasskeysHere": "Wannan burauza ba za ta iya yi ko amfani da passkey ba. Gwada wata burauza ko na'ura.",
+    "addPasskey": "Ƙara passkey",
+    "removePasskey": "Cire passkey ɗin",
+    "rename": "Sake suna",
+    "remove": "Cire",
+    "renameLabel": "Sabon suna don \"{name}\"",
+    "saveName": "Ajiye sunan",
+    "name": "Suna don passkey ɗin",
+    "nameHint": "Don ku iya bambanta passkey ɗinku, kamar \"Laptop\" ko \"Waya\".",
+    "nameCheck": "Ba passkey ɗin suna mai haruffa 1 zuwa {most}.",
+    "passkeyLimit": "Kuna da passkey {most}, mafi yawan da asusu zai iya samu. Cire ɗaya don ƙara wani.",
+    "codesTitle": "Lambobin dawo da shiga",
+    "codesLeft": "{count, plural, one {Saura lamba # cikin lambobin dawo da shiga {total}.} other {Saura lambobi # cikin lambobin dawo da shiga {total}.}} Idan ba za ku iya amfani da manhajarku ko passkey ba, lamba tana shigar da ku maimakon haka. Kowace lamba tana aiki sau ɗaya.",
+    "codesLow": "Yi sababbin lambobi ba da daɗewa ba. Idan suka ƙare kuma kuka rasa manhajarku da passkey ɗinku, ba za ku iya shiga ba.",
+    "newCodes": "Yi sababbin lambobin dawo da shiga",
+    "offHeading": "Kashe shi",
+    "offWhat": "Shiga mataki biyu yana kasancewa a kunne muddin kuna da manhajar authenticator ko passkey. Cire na ƙarshe daga cikinsu yana kashe shi, sannan:",
+    "offPassword": "Shiga yana buƙatar kalmar sirrinku kawai, don haka duk wanda ya san ta zai iya shiga.",
+    "offCodes": "Lambobin dawo da shigarku suna daina aiki.",
+    "offSignOut": "Ana fitar da kowace sauran na'ura da ke cikin asusunku. Wannan tana kasancewa a ciki.",
+    "offEmail": "Muna aika muku imel cewa an kashe shi.",
+    "offRemoveApp": "Kashe shiga mataki biyu (yana cire manhajar)",
+    "offRemoveAppFirst": "Cire manhajar, don fara kashe shi",
+    "offPasskeys": "{count, plural, one {Don kashe shi, cire passkey ɗinku a ƙarƙashin Passkey, a sama.} other {Don kashe shi, cire passkey # ɗinku a ƙarƙashin Passkey, a sama.}}",
+    "offPasskeysToo": "{count, plural, one {Kuna kuma da passkey: cire shi a ƙarƙashin Passkey, a sama, tare da manhajar.} other {Kuna kuma da passkey #: cire su a ƙarƙashin Passkey, a sama, tare da manhajar.}}",
+    "addAppText": "Don saita manhajar authenticator, da farko ku tabbatar cewa ku ne.",
+    "removeAppText": "Don cire manhajar authenticator, ku tabbatar cewa ku ne.",
+    "addPasskeyText": "Ba passkey ɗin suna ku tabbatar cewa ku ne. Sannan burauzarku za ta nemi ku yi passkey ɗin.",
+    "removePasskeyText": "Don cire passkey ɗin \"{name}\", ku tabbatar cewa ku ne.",
+    "newCodesText": "Sababbin lambobi suna maye gurbin tsofaffinku, waɗanda suke daina aiki. Ku tabbatar cewa ku ne.",
+    "lastFactor": "Wannan shi ne mataki na biyunku na ƙarshe, don haka shiga mataki biyu zai kashe kuma lambobin dawo da shigarku za su daina aiki.",
+    "continue": "Ci gaba",
+    "cancel": "Soke",
+    "password": "Kalmar sirrinku",
+    "factorLegend": "Da mataki na biyunku",
+    "passkeyNext": "Burauzarku za ta nemi passkey ɗinku idan kun ci gaba.",
+    "passkeyReadyText": "Na gode. Yanzu yi passkey ɗin \"{name}\": idan kun danna maɓallin, burauzarku za ta nemi hoton yatsanku, fuskarku ko kulle allo, ko wayarku. Idan bai yi aiki ba, kuna iya sake gwadawa na minti {minutes} ba tare da sake tabbatarwa ba.",
+    "passkeyCreate": "Yanzu ƙara passkey ɗin",
+    "useApp": "Yi amfani da manhajar authenticator ɗinku maimakon haka",
+    "usePasskey": "Yi amfani da passkey maimakon haka",
+    "useRecovery": "Yi amfani da lambar dawo da shiga maimakon haka",
+    "failed": "Kuskure: ba a iya yin canjin ba. Don Allah a sake gwadawa.",
+    "setupHeading": "Saita manhajar authenticator ɗinku",
+    "setupOpen": "Buɗe manhajar authenticator ɗinku ku zaɓi ƙara asusu.",
+    "setupScan": "Duba wannan QR code da manhajar, ko ku rubuta maɓallin.",
+    "setupTap": "Taɓa maɓallin don ƙara Glazecalc cikin manhajar authenticator ko manajan kalmomin sirri a wannan waya.",
+    "showQr": "Nuna QR code, don saita shi a wata na'ura",
+    "setupScanOther": "Duba shi da manhajar authenticator a ɗayan na'urar.",
+    "qrAlt": "QR code don ƙara Glazecalc cikin manhajar authenticator",
+    "key": "Maɓalli",
+    "copyKey": "Kwafe maɓallin",
+    "openInApp": "Ƙara cikin manhajar authenticator a wannan na'ura",
+    "clipboardNote": "Rubutun da aka kwafe zai iya zama a tarihin clipboard ɗinku ya kai ga sauran na'urorinku. Liƙa shi kai tsaye cikin manajan kalmomin sirrinku, sannan ku share tarihin clipboard ɗinku.",
+    "setupCode": "Shigar da lamba mai lambobi {digits} da manhajar take nunawa yanzu don Glazecalc",
+    "setupFinish": "Gama saitawa",
+    "codesHeading": "Lambobin dawo da shigarku",
+    "codesText": "Ajiye su a wuri mai aminci, kamar manajan kalmomin sirrinku, ko ku buga su ku ajiye su tare da takardunku. Idan ba za ku iya amfani da manhajarku ko passkey ba, lamba tana shigar da ku maimakon haka. Kowace lamba tana aiki sau ɗaya. Ana nuna su ne yanzu kawai.",
+    "print": "Buga lambobin",
+    "printNote": "Kowace lamba tana aiki sau ɗaya. Ajiye wannan shafi a wuri mai aminci.",
+    "download": "Sauke a matsayin fayil ɗin rubutu",
+    "copy": "Kwafe lambobin",
+    "copied": "An kwafe.",
+    "copyFailed": "Ba a iya kwafewa ba. Don Allah ku zaɓi rubutun ku kwafe shi.",
+    "saved": "Na ajiye su",
+    "fileTitle": "Lambobin dawo da shiga na Glazecalc don {email}",
+    "fileNote": "Kowace lamba tana aiki sau ɗaya. Ajiye wannan fayil a wuri mai aminci."
+  },
+  "export": {
+    "heading": "Sauke bayanaina",
+    "text": "Ajiye kwafin duk abin da asusunku ke ɗauke da shi a matsayin fayil ɗaya: bayananku, saituna, kayan da kuke da su, girke-girke, kayan aiki, kayan ƙari, rubuce-rubuce, bayanan gasa, shawarwari da kwandon shara. Bai ƙunshi kalmar sirrinku ba. Ajiye fayil ɗin a wuri na sirri, domin yana ɗauke da duk abin da kuka ajiye.",
+    "json": "Sauke komai (JSON)",
+    "csvText": "Ko ku ajiye spreadsheet na girke-girkenku kawai ko kayanku kawai, don buɗewa a Excel, Numbers ko Sheets.",
+    "recipes": "Girke-girke (CSV)",
+    "materials": "Kayan aiki (CSV)"
+  },
+  "trash": {
+    "heading": "Kwandon shara",
+    "text": "Abin da kuka cire daga littafin aikinku yana jira a Kwandon shara na kwana 30. Dawo da shi daga can, ko ku share shi har abada.",
+    "open": "Buɗe Kwandon shara"
+  },
+  "shared": {
+    "heading": "Girke-girken da aka raba",
+    "text": "Girke-girken da kuke rabawa ta mahaɗi, waɗanda duk wanda ke da mahaɗin zai iya karantawa ba tare da asusu ba. Ana nuna mahaɗi sau ɗaya kawai, lokacin da aka yi shi, don haka ba za a iya nuna shi a nan ba. Don sake raba girke-girke, yi sabon mahaɗi a ƙarƙashin Ƙari na girke-girken.",
+    "since": "An raba tun {date}",
+    "notesShown": "Ana nuna rubuce-rubuce",
+    "notesHidden": "Ba a nuna rubuce-rubuce",
+    "untitled": "Girke-girke marar take",
+    "stop": "Daina rabawa",
+    "stopName": "Daina raba {name}",
+    "stopped": "Ba a raba {name} yanzu. Mahaɗinsa ba ya aiki yanzu.",
+    "stopFailed": "Hakan bai yi aiki ba. Don Allah a sake gwadawa.",
+    "fetchFailed": "Ba a iya loda girke-girkenku da aka raba ba. Don Allah a sake gwadawa.",
+    "none": "Ba kwa raba wani girke-girke."
+  },
+  "settings": {
+    "heading": "Saituna",
+    "intro": "Ana ajiye su tare da asusunku, don haka suna aiki a kowace na'ura.",
+    "saveFailed": "Ba a iya ajiye saitin ba. Don Allah a sake gwadawa.",
+    "language": {
+      "legend": "Harshe",
+      "help": "Harshen manhajar, jagororin da imel ɗinku. Canza shi yana buɗe wannan shafi a wannan harshe.",
+      "saved": "An ajiye: {language}."
+    },
+    "region": {
+      "legend": "Inda kuke aiki",
+      "none": {
+        "label": "Ba a zaɓa ba",
+        "saved": "An ajiye: ba a zaɓi yanki ba; tsoffin saituna suna bin burauzarku."
+      },
+      "saved": "An ajiye: {region}.",
+      "help": "Kayan da ake sayarwa a can, da tsoffin saituna don lambobi, kwanan wata, zafi da cone a ƙasa. Har sai kun zaɓa, suna bin harshen burauzarku."
+    },
+    "format": {
+      "legend": "Lambobi da kwanan wata",
+      "auto": {
+        "label": "Kamar harshena da yankina",
+        "saved": "An ajiye: lambobi da kwanan wata kamar yadda harshenku da yankinku ke rubuta su."
+      },
+      "saved": "An ajiye: lambobi da kwanan wata kamar a {language}.",
+      "help": "Yadda ake rubuta lambobi da kwanan wata: 12,345.6 ko 12.345,6, da tsarin rana da wata."
+    },
+    "calendar": {
+      "legend": "Kalanda",
+      "help": "Kalandar da ake nuna kwanan wata a cikinta. Kwanan watan da kuke rubutawa suna kasancewa a kalandar Gregorian.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "An ajiye: ana nuna kwanan wata a kalandar Gregorian."
+      },
+      "buddhist": {
+        "label": "Zamanin Buddha na Thailand",
+        "saved": "An ajiye: ana nuna kwanan wata a zamanin Buddha na Thailand."
+      },
+      "japanese": {
+        "label": "Zamanin Japan",
+        "saved": "An ajiye: ana nuna kwanan wata a zamanin Japan."
+      }
+    },
+    "digits": {
+      "legend": "Lambobi",
+      "help": "Lambobin da ake nuna adadi da su. Wasu harsuna suna da nasu, kamar Larabci, Bengali da Hindi, kuma inda kuke ne ke yanke wanda aka saba. Kuna iya rubuta lambobi da kowanne.",
+      "auto": {
+        "label": "Kamar yadda aka saba inda kuke",
+        "saved": "An ajiye: lambobi kamar yadda aka saba inda kuke."
+      },
+      "western": {
+        "label": "Lambobin Turawa, 0–9",
+        "saved": "An ajiye: ana nuna adadi da lambobin 0–9."
+      },
+      "native": {
+        "label": "Lambobin harshen na kansa, inda yake da su",
+        "saved": "An ajiye: ana nuna adadi da lambobin harshen na kansa, inda yake da su."
+      }
+    },
+    "decimalMark": {
+      "legend": "Rubuta yawa",
+      "either": {
+        "label": "Waƙafi ko ɗigo don ɗigon goma",
+        "example": "12,5 ko 12.5",
+        "saved": "An ajiye: ana iya rubuta yawa da waƙafi ko ɗigo."
+      },
+      "comma": {
+        "label": "Waƙafi don ɗigon goma",
+        "saved": "An ajiye: ana rubuta yawa da waƙafi don ɗigon goma."
+      },
+      "point": {
+        "label": "Ɗigo don ɗigon goma",
+        "saved": "An ajiye: ana rubuta yawa da ɗigo don ɗigon goma."
+      },
+      "help": "Da kowanne, ana karanta yawa kamar 1,250 yadda ake rubuta lambobinku a sama."
+    },
+    "temperature": {
+      "legend": "Zafi",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "An ajiye: zafi a °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "An ajiye: zafi a °F."
+      },
+      "help": "Har sai kun zaɓa, wannan yana bin yankinku: °F a Amurka, °C a sauran wurare."
+    },
+    "cones": {
+      "legend": "Gasa",
+      "orton": {
+        "label": "Cone na Orton",
+        "example": "cone 04, cone 6",
+        "saved": "An ajiye: gasa da cone na Orton."
+      },
+      "sk": {
+        "label": "Cone na SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "An ajiye: gasa da cone na SK."
+      },
+      "temperature": {
+        "label": "Zafi, kamar shirin mai sarrafa kiln",
+        "saved": "An ajiye: gasa ta zafi."
+      },
+      "help": "Har sai kun zaɓa, wannan yana bin yankinku: cone na Orton a Amurka, Birtaniya, Ireland, Australia da New Zealand, cone na SK a Japan, zafi a sauran Turai."
+    },
+    "density": {
+      "legend": "Kaurin glaze",
+      "sg": {
+        "label": "Specific gravity (SG)",
+        "saved": "An ajiye: kaurin glaze a matsayin specific gravity.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Digiri Baumé, daga hydrometer",
+        "saved": "An ajiye: kaurin glaze a digiri Baumé."
+      },
+      "pint": {
+        "label": "Nauyin pint, oza a cikin pint na imperial",
+        "saved": "An ajiye: kaurin glaze a matsayin nauyin pint."
+      },
+      "help": "Yadda jagororin ke ba da kaurin glaze. Har sai kun zaɓa, wannan yana bin yankinku: digiri Baumé a Italiya da Japan, specific gravity a sauran wurare."
+    },
+    "currency": {
+      "legend": "Kuɗin farashi",
+      "help": "Farashin da kuke bayarwa don kaya, da abin da batch ke kashewa, suna cikin wannan kuɗi. Canza shi ba ya juya farashin da kuka riga kuka bayar. Har sai kun zaɓa, wannan yana bin yankinku.",
+      "saved": "An ajiye: farashi a {currency}.",
+      "notConverted": "Ba a juya farashinku da aka ajiye ba: har yanzu su ne lambobin da kuka bayar."
+    },
+    "theme": {
+      "legend": "Haske ko duhu",
+      "system": {
+        "label": "Kamar yadda aka saita wannan na'ura",
+        "saved": "An ajiye: haske ko duhu kamar yadda aka saita kowace na'ura."
+      },
+      "light": {
+        "label": "Haske",
+        "saved": "An ajiye: haske kullum."
+      },
+      "dark": {
+        "label": "Duhu",
+        "saved": "An ajiye: duhu kullum."
+      },
+      "help": "Girke-girken da aka buga baƙi ne a kan fari kullum."
+    },
+    "palette": {
+      "legend": "Launuka",
+      "saved": "An ajiye: maɓallai da mahaɗai {palette}.",
+      "help": "Don maɓallai, mahaɗai da tab, an sa musu sunayen glaze. Kowanne yana da sauƙin karantawa a haske da a duhu."
+    },
+    "weightUnit": {
+      "legend": "Nauyin batch",
+      "grams": {
+        "label": "Gram",
+        "saved": "An ajiye: nauyin batch a gram."
+      },
+      "pounds": {
+        "label": "Fam da oza",
+        "saved": "An ajiye: nauyin batch a fam da oza."
+      },
+      "help": "Don batch da aka buga."
+    },
+    "gramPrecision": {
+      "legend": "Gram a kan batch da aka buga",
+      "single": {
+        "label": "Zuwa goma ɗaya na gram",
+        "saved": "An ajiye: gram suna nunawa zuwa goma ɗaya."
+      },
+      "full": {
+        "label": "Cikakken daidaito",
+        "saved": "An ajiye: gram suna nunawa cikakke, zuwa wurare 5 bayan ɗigo."
+      },
+      "help": "Zuwa goma ɗaya, yawan da ke ƙasa da 10 g har yanzu yana nuna ɗari ɗaya (2.35 g), don masu launi a ƙananan batch na gwaji."
+    },
+    "lead": {
+      "legend": "Darma (lead, Pb)",
+      "off": {
+        "label": "A kashe: kada a taɓa ƙara darma a girke-girke ko a ba da shawararta",
+        "saved": "An ajiye: ba a taɓa ƙara darma a girke-girke ko a ba da shawararta."
+      },
+      "on": {
+        "label": "Kunne: ana iya ƙara kaya masu darma da ba da shawararsu",
+        "saved": "An ajiye: ana iya ƙara kaya masu darma da ba da shawararsu."
+      },
+      "help": "Darma (Pb) guba ce idan aka shaƙa ko aka haɗiye ta kuma tana taruwa a jiki, kuma glaze mai darma zai iya sakin ta cikin abinci da abin sha; babu lissafin da zai iya faɗin ko tukunyar da aka gasa tana yi. A kashe, girke-girken da suke da darma tuni har yanzu suna buɗewa yadda suke.",
+      "warning": "Yi amfani da darma (Pb) a matsayin frit kawai, kada a taɓa amfani da ita a matsayin ɗanyar darma ja, fara ko rawaya ko litharge. Haɗa ta da ruwa, kada a taɓa fesa ta, sa respirator kuma ku tsaftace da ruwa. Ajiye tukwane masu glaze na darma nesa da abinci da abin sha sai dai idan gwajin zubar ƙarfe (leach test) na dakin gwaji kan tukunyar da aka gasa ya yi nasara.",
+      "turnOn": "Kunna darma",
+      "keepOff": "Bar ta a kashe"
+    },
+    "englishTerms": {
+      "legend": "Kalmomin Turanci",
+      "off": {
+        "label": "A kashe",
+        "saved": "An ajiye: babu kalmomin Turanci."
+      },
+      "on": {
+        "label": "Nuna Turanci bayan muhimman kalmomi",
+        "saved": "An ajiye: ana nuna Turanci bayan muhimman kalmomi."
+      },
+      "help": "Don karanta tushen Turanci, kamar Digitalfire, tare da wannan: muhimman kalmomi suna samun Turancinsu a cikin baka."
+    },
+    "notice": {
+      "legend": "Sanarwar fassara",
+      "shown": {
+        "label": "Ana nunawa",
+        "saved": "An ajiye: ana nuna sanarwar."
+      },
+      "hidden": {
+        "label": "A ɓoye",
+        "saved": "An ajiye: sanarwar a ɓoye take. Layi ɗaya nata yana kasancewa a jagororin tsaro.",
+        "savedPlain": "An ajiye: sanarwar a ɓoye take. Layi ɗaya nata yana kasancewa a saman kowane shafi."
+      },
+      "help": "Bayanin da ke saman kowane shafi da ke cewa AI ce ta fassara shi, tare da hanyar ba da shawarar gyara."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Tabbatar da imel ɗinku",
+    "intro": "Danna maɓallin don tabbatar da wannan adireshi.",
+    "confirm": "Tabbatar",
+    "incomplete": "Wannan shafi yana buƙatar mahaɗi daga imel ɗin tabbatarwa, kuma wannan bai cika ba.",
+    "account": "Asusunku",
+    "signIn": "Shiga",
+    "failed": "Kuskure: ba a iya tabbatar da adireshin ba. Don Allah a sake gwadawa."
+  },
+  "providers": {
+    "continueGoogle": "Ci gaba da Google",
+    "continueGithub": "Ci gaba da GitHub",
+    "continueMicrosoft": "Shiga da Microsoft",
+    "failed": "Shiga bai yi aiki ba. Don Allah a sake gwadawa.",
+    "heading": "Google, GitHub da Microsoft",
+    "intro": "Haɗa asusun Google, GitHub ko Microsoft don shiga da shi. Glazecalc yana ajiye id na asusun kawai daga gare shi, ba a taɓa ajiye sunansa, hotonsa ko wani abu dabam ba, kuma shiga mataki biyu har yanzu yana neman mataki na biyunsa.",
+    "passwordless": "Wannan asusu ba shi da kalmar sirri. Don canza imel ɗinku, shiga mataki biyu ko hanyoyin da kuke shiga, ko don share asusunku, kuna tabbatar cewa ku ne ta sake shiga da Google, GitHub ko Microsoft, duk wanda kuka haɗa. Kuna kuma iya saita kalmar sirri.",
+    "setPassword": "Aika min mahaɗi ta imel don saita kalmar sirri",
+    "setPasswordUnlinks": "Saita kalmar sirri da mahaɗin da aka aika ta imel yana kuma cire haɗin Google, GitHub da Microsoft. Kuna iya sake haɗa su daga baya.",
+    "setPasswordFailed": "Ba a iya aika mahaɗin ba. Don Allah a sake gwadawa.",
+    "confirmFirst": "Tabbatar da imel ɗinku da farko, da mahaɗin da muka aika muku, don haɗa Google, GitHub ko Microsoft.",
+    "linkedOn": "An haɗa a {date}",
+    "notLinked": "Ba a haɗa ba",
+    "link": "Haɗa {provider}",
+    "unlink": "Cire haɗin {provider}",
+    "linkFailed": "Ba a iya haɗa shi ba. Don Allah a sake gwadawa.",
+    "reauthIntro": "Wannan asusu ba shi da kalmar sirri, don haka ku tabbatar cewa ku ne ta sake shiga. Sannan ku yi canjin cikin minti 5.",
+    "reauthButton": "Sake shiga da {provider}",
+    "reauthHeld": "Kun sake shiga da {provider}. Kuna iya yin canji ɗaya ba tare da kalmar sirri ba a cikin minti 5 masu zuwa.",
+    "reauthFirst": "Don Allah ku sake shiga da farko, da ɗaya daga cikin maɓallan da ke sama.",
+    "reauthFailed": "Ba a iya fara sake shiga ba. Don Allah a sake gwadawa."
+  },
+  "apps": {
+    "title": "Manhajojin da aka haɗa",
+    "lead": "Mataimaka, rubutun kwamfuta da manhajojin da za su iya kai ga bayananku. Ga abin da kowanne ya yi, dawo da abin da ya mayar zuwa Kwandon shara, kuma ku dakatar da shi a duk lokacin da kuke so.",
+    "listHeading": "Manhajojinku da aka haɗa da access token",
+    "listLabel": "Manhajojin da aka haɗa da access token",
+    "makeToken": "Yi access token",
+    "none": "Babu abin da aka haɗa da asusunku.",
+    "loadFailed": "Ba a iya loda manhajojinku da aka haɗa ba. Don Allah ku sake loda shafin don sake gwadawa.",
+    "kindToken": "Access token",
+    "kindOauth": "Manhajar da aka haɗa",
+    "clientHost": "Adireshin manhaja: {host}",
+    "redirectHost": "Yana mayar da ku zuwa: {host}",
+    "last90": "A cikin kwana 90 da suka wuce:",
+    "nothingDone": "Bai canza komai ba a cikin kwana 90 da suka wuce.",
+    "count": {
+      "create": "{count, plural, one {An yi bayani #} other {An yi bayanai #}}",
+      "change": "{count, plural, one {An canza bayani #} other {An canza bayanai #}}",
+      "trash": "{count, plural, one {An mayar da bayani # zuwa Kwandon shara} other {An mayar da bayanai # zuwa Kwandon shara}}",
+      "restore": "{count, plural, one {An dawo da bayani #} other {An dawo da bayanai #}}",
+      "undo": "{count, plural, one {An soke canji #} other {An soke canje-canje #}}"
+    },
+    "action": {
+      "create": "An yi",
+      "change": "An canza",
+      "trash": "An mayar zuwa Kwandon shara:",
+      "restore": "An dawo da:",
+      "undo": "An soke canji ga"
+    },
+    "show": "Nuna cikakkun bayanai",
+    "hide": "Ɓoye cikakkun bayanai",
+    "showNamed": "Nuna cikakkun bayanan {name}",
+    "hideNamed": "Ɓoye cikakkun bayanan {name}",
+    "loading": "Ana lodawa...",
+    "detailFailed": "Ba a iya loda cikakkun bayanan ba. Don Allah a sake gwadawa.",
+    "movedHeading": "An mayar zuwa Kwandon shara",
+    "movedNone": "Babu abin da ya mayar da yake cikin Kwandon shara har yanzu.",
+    "putAllBack": "Dawo da duka",
+    "activityHeading": "Abin da ya yi",
+    "activityNone": "Babu komai a cikin kwana 90 da suka wuce.",
+    "older": "Nuna tsofaffi",
+    "revokeQuestion": "A soke {name}? Zai daina aiki nan take.",
+    "revokeYes": "Eh, soke",
+    "revokeAll": "Soke duka",
+    "revokeAllQuestion": "{count, plural, one {A soke haɗi # da ke aiki har yanzu?} other {A soke dukkan haɗi # da ke aiki har yanzu?}} Za su daina aiki nan take.",
+    "revokeFailed": "Kuskure: ba a iya sokewa ba. Don Allah a sake gwadawa.",
+    "restoreFailed": "Kuskure: ba a iya dawo da bayanan ba. Don Allah a sake gwadawa.",
+    "selfDescribed": "ta bayyana kanta",
+    "selfDescribedNote": "Ta yi wa kanta rajista, don haka sunanta abin da ta faɗa game da kanta ne kawai.",
+    "confirm": {
+      "heading": "Tabbatar kafin canje-canje",
+      "intro": "Zaɓi ko canji daga mataimaki, manhaja ko access token zai jira har sai kun amince da shi a nan, bayan kun shiga. Babu abin da ya nema da za a canza har sai kun yi.",
+      "off": "Kada a taɓa tambaya",
+      "offHint": "Ana yin canje-canje nan take. Kowanne yana ajiye bayanin kamar yadda yake, don ku iya soke shi, kuma ana nuna abin da kowace manhaja ta yi a ƙasa.",
+      "removals": "Tambaya kafin cirewa",
+      "removalsHintSite": "Mayar da bayani zuwa Kwandon shara, cire kaya daga kayan da kuke da su, ko cire bayanan gasa daga girke-girke yana jiran amincewarku a wannan shafin yanar gizo.",
+      "all": "Tambaya kafin kowane canji",
+      "allHint": "Kowane sabon bayani, canji, soke canji da cirewa yana jiran amincewarku a wannan shafin yanar gizo.",
+      "how": "Canjin da ke jira yana da shafinsa, wanda mataimaki ko rubutun kwamfuta ke ba ku mahaɗinsa. Yana jira minti 30, sannan ba a canza komai. Access token da aka yi da \"Canje-canje daga wannan token ba sa buƙatar tabbatarwa\" ba a taɓa tambayarsa.",
+      "exempt": "Canje-canjensa ba sa buƙatar tabbatarwa.",
+      "saveFailed": "Kuskure: ba a iya ajiye zaɓinku ba. Don Allah a sake gwadawa."
+    }
+  },
+  "connect": {
+    "title": "Haɗa manhaja da asusunku",
+    "loading": "Ana lodawa...",
+    "loadFailed": "Ba a iya loda wannan buƙatar haɗa manhaja ba. Don Allah ku sake loda shafin, ko ku sake farawa a cikin manhajar.",
+    "answerFailed": "Kuskure: ba a iya aika amsarku ba. Don Allah a sake gwadawa.",
+    "toAccount": "Je zuwa asusunku",
+    "asking": "Wannan manhaja tana neman haɗawa da asusunku na Glazecalc:",
+    "noName": "Manhaja marar suna",
+    "selfDescribed": "ta bayyana kanta",
+    "selfDescribedNote": "Ta yi wa kanta rajista, don haka wannan suna abin da ta faɗa game da kanta ne kawai. Glazecalc bai duba shi ba.",
+    "account": "Kun shiga a matsayin {email}",
+    "appAddress": "Adireshin manhajar",
+    "checked": "(Glazecalc ya duba)",
+    "answerTo": "Inda amsarku za ta tafi",
+    "ownComputer": "Kwamfutarku",
+    "appOnDevice": "Manhaja a na'urarku da ke buɗe mahaɗan {scheme}",
+    "loopbackWarning": "Wannan manhaja tana karɓar amsar a kwamfutarku. Ku yarda ne kawai idan ku da kanku kuka fara wannan, a wannan kwamfuta, yanzu.",
+    "loopbackWriteWarning": "Tana kuma neman canza bayananku: duk wani shiri a wannan kwamfuta da ya ɗauki amsar zai iya canza su.",
+    "appSchemeWarning": "Amsar tana zuwa duk manhajar da ke buɗe mahaɗan {scheme} a na'urarku. Ba a duba sauran adireshin ba, don haka zai iya kama da kowane shafin yanar gizo. Ku yarda ne kawai idan kun fara wannan daga manhajar da kuka amince da ita, yanzu.",
+    "elsewhereWarning": "Adireshin wannan manhaja {app} ne, amma amsarku tana zuwa {answer}. Ku yarda ne kawai idan kun yi tsammanin hakan.",
+    "canHeading": "Abin da za ta iya yi",
+    "canRead": "Karanta girke-girkenku, littafin aiki, kayan aiki, kayan da kuke da su da saituna.",
+    "readOnly": "Ba za ta iya canza komai ba.",
+    "alsoWrite": "Kuma bar ta ta canza bayanaina",
+    "writeWarning": "Daga nan za ta iya ƙirƙira da canza bayananku, da mayar da su zuwa Kwandon shara. Kowane canji yana ajiye sigar bayanin kamar yadda yake, don ku iya soke shi. Kuna iya soke ta a kowane lokaci a Manhajojin da aka haɗa.",
+    "privacy": "Abin da Glazecalc ke ajiyewa game da manhajojin da aka haɗa yana cikin <privacy>sanarwar sirri</privacy>. Kuna iya gani da soke manhajojinku a <apps>Manhajojin da aka haɗa</apps>.",
+    "allow": "Yarda",
+    "deny": "Kada a yarda",
+    "sending": "Ana aika amsarku zuwa manhajar..."
+  },
+  "tokens": {
+    "heading": "Access token",
+    "intro": "Access token yana bar mataimakin AI ɗinku ko rubutun kwamfutarku ya karanta girke-girke, kayan aiki, rubuce-rubuce da bayanan gasa a asusunku, kuma, idan kun zaɓa, ya canza su. Kowane token yana daina aiki a ranar da kuka zaɓa, ko da zarar kun soke shi.",
+    "howTo": "Yadda ake haɗa mataimakin AI",
+    "seeThem": "Token ɗinku da manhajojin da aka haɗa, abin da kowanne ya yi, da Soke suna shafin Manhajojin da aka haɗa.",
+    "seeThemLink": "Buɗe Manhajojin da aka haɗa",
+    "hint": "mai ƙarewa da {hint}",
+    "readOnly": "Karantawa kawai",
+    "readWrite": "Karantawa da canzawa",
+    "created": "an yi {date}",
+    "lastUsed": "an yi amfani na ƙarshe {date}",
+    "neverUsed": "ba a taɓa amfani ba",
+    "expires": "zai ƙare {date}",
+    "expiredOn": "ya ƙare {date}",
+    "revokedOn": "an soke {date}",
+    "revoke": "Soke",
+    "revokeNamed": "Soke {name}",
+    "revokeAll": "Soke dukkan access token",
+    "revokeFailed": "Kuskure: ba a iya soke token ɗin ba. Don Allah a sake gwadawa.",
+    "loadFailed": "Ba a iya loda access token ɗinku ba. Don Allah ku sake loda shafin don sake gwadawa.",
+    "createHeading": "Yi token",
+    "name": "Suna",
+    "nameHint": "Wani abu da za a bambanta shi da shi, kamar mataimaki ko kwamfutar da yake don ita.",
+    "nameCheck": "Don Allah ku ba token ɗin suna mai haruffa 1 zuwa {most}.",
+    "expiry": "Yana daina aiki bayan",
+    "days": "{count, plural, one {kwana #} other {kwanaki #}}",
+    "expiryHint": "Muna aika muku imel kwana 7 kafin token ya daina aiki.",
+    "expiryWriteHint": "{count, plural, one {Token da zai iya canza bayananku yana daina aiki bayan kwana # bai wuce haka ba.} other {Token da zai iya canza bayananku yana daina aiki bayan kwanaki # bai wuce haka ba.}}",
+    "confirmEmailFirst": "Kafin ku iya yin token, ku tabbatar da imel ɗinku: buɗe mahaɗin da muka aika zuwa {email}. Muna sanar da ku a wannan adireshi idan aka yi token da kafin ɗaya ya daina aiki.",
+    "resend": "Sake aika mahaɗin tabbatarwa",
+    "scopeNote": "Token ɗin zai iya karanta bayananku amma ba zai canza su ba.",
+    "scope": "Abin da zai iya yi",
+    "scopeWriteNote": "Token ɗin zai kuma iya ajiye sababbin bayanai, canza su da mayar da su zuwa Kwandon shara. Kowane canji yana ajiye bayanin kamar yadda yake, don ku iya soke shi, kuma abin da token ɗin ya yi yana a Manhajojin da aka haɗa da cikin Sauke bayanaina. Zaɓi wannan ne kawai don mataimaki ko rubutun kwamfuta da kuka amince ya canza bayananku.",
+    "confirmStep": "Don yin token ɗin, ku tabbatar cewa ku ne.",
+    "create": "Yi token ɗin",
+    "failed": "Kuskure: ba a iya yin token ɗin ba. Don Allah a sake gwadawa.",
+    "limit": "Kuna da access token {most} da ke aiki, mafi yawan da asusu zai iya samu. Soke ɗaya don yin wani.",
+    "newHeading": "Kwafe sabon token ɗinku yanzu",
+    "newText": "Wannan ne kawai lokacin da ake nuna shi. Duk wanda ke da shi zai iya karanta bayananku har sai ya daina aiki, don haka ku riƙe shi kamar kalmar sirri, kuma ku ba da shi ga mataimakinku ko rubutun kwamfutarku kawai.",
+    "newTextWrite": "Wannan ne kawai lokacin da ake nuna shi. Duk wanda ke da shi zai iya karanta da canza bayananku har sai ya daina aiki, don haka ku riƙe shi kamar kalmar sirri, kuma ku ba da shi ga mataimakinku ko rubutun kwamfutarku kawai.",
+    "newLabel": "Sabon access token ɗinku",
+    "copy": "Kwafe token ɗin",
+    "copied": "An kwafe.",
+    "copyFailed": "Ba a iya kwafewa ba. Zaɓi token ɗin ku kwafe shi da kanku.",
+    "done": "Na kwafe shi",
+    "keptHeading": "Access token ɗinku suna aiki har yanzu",
+    "keptText": "{count, plural, one {Canza kalmar sirrinku bai dakatar da access token ɗinku ba. Idan kun canza ta ne saboda wani zai iya saninta, ku soke token ɗin shi ma.} other {Canza kalmar sirrinku bai dakatar da access token # ɗinku ba. Idan kun canza ta ne saboda wani zai iya saninta, ku soke su su ma.}}",
+    "keep": "Bar su",
+    "signOutNote": "{count, plural, one {Yana kuma dakatar da access token ɗinku, har abada.} other {Yana kuma dakatar da access token # ɗinku, har abada.}}",
+    "noConfirm": "Canje-canje daga wannan token ba sa buƙatar tabbatarwa",
+    "noConfirmHint": "Don rubutun kwamfuta da kuke gudanarwa da kanku. Idan kun zaɓi a tabbatar da canje-canje a Manhajojin da aka haɗa, ba a taɓa tambayar wannan token. Kuna iya zaɓar wannan ne yanzu kawai, lokacin da ake yin token ɗin."
+  },
+  "confirm": {
+    "title": "Amince da canji",
+    "lead": "Manhajar da aka haɗa da asusunku tana neman yin wannan canji. Babu abin da za a canza har sai kun amince da shi.",
+    "from": "{name} ne ya nema",
+    "fromToken": "access token",
+    "fromConnectedApp": "manhajar da aka haɗa",
+    "selfDescribed": "ta bayyana kanta",
+    "selfDescribedNote": "Ta yi wa kanta rajista, don haka sunanta abin da ta faɗa game da kanta ne kawai. Glazecalc bai duba shi ba.",
+    "asked": "An nema {date}. Yana jira har zuwa {time}, sannan ba a canza komai.",
+    "removal": "Wannan yana cire wani abu: bayani yana zuwa Kwandon shara, inda za ku iya dawo da shi cikin kwana 30, ko wani kaya yana fita daga kayan da kuke da su.",
+    "check": "Ku amince da shi ne kawai idan ku kuka nemi wannan canji. Idan ba ku nema ba, ku ƙi shi, kuma ku soke manhajar a Manhajojin da aka haɗa.",
+    "approve": "Amince da canjin",
+    "decline": "Ƙi",
+    "titleBefore": "Kafin wannan manhaja ta canza shi, sunansa “{title}” ne.",
+    "untitled": "(babu take)",
+    "changedAgo": "{minutes, plural, =0 {Wannan manhaja ta canza shi ƙasa da minti ɗaya da ya wuce.} one {Wannan manhaja ta canza shi minti # da ya wuce.} other {Wannan manhaja ta canza shi mintuna # da suka wuce.}}",
+    "now": "Yanzu:",
+    "after": "Bayan canjin:",
+    "showAll": "Nuna duka",
+    "showLess": "Nuna ƙasa",
+    "othersHeading": "{count, plural, one {Ƙarin canji # yana jira daga {name}} other {Ƙarin canje-canje # suna jira daga {name}}}",
+    "approveAllShown": "{count, plural, one {Amince da dukkan canje-canje # daga {name}} other {Amince da dukkan canje-canje # daga {name}}}",
+    "declineAll": "{count, plural, one {Ƙi dukkan canje-canje # daga {name}} other {Ƙi dukkan canje-canje # daga {name}}}",
+    "decided": "An riga an yanke shawara kan wannan canji.",
+    "notFound": "Babu canjin da ke jira a wannan adireshi. Wataƙila an riga an amince ko an ƙi shi, ko ya jira fiye da minti 30, ko na wani asusu ne.",
+    "signIn": "Shiga Glazecalc da asusun da canjin yake don shi, sannan ku sake buɗe wannan mahaɗi.",
+    "signInLink": "Shiga",
+    "loadFailed": "Ba a iya loda canjin ba. Don Allah ku sake loda shafin don sake gwadawa.",
+    "failed": "Kuskure: ba a iya aika amsarku ba. Don Allah a sake gwadawa.",
+    "apps": "Duba manhajojinku da aka haɗa"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Rubuta formula da lambobi kawai, kamar {typed}: lambobin za su bayyana a ƙasa kaɗan, {shown}. Don haɗa sassan formula, kamar a {joined}, kwafi wannan ɗigo:",
+    "relatedTo": "Yana da alaƙa da",
+    "notes": "Bayanai",
+    "loi": "LOI (raguwar nauyi a wuta), %",
+    "molecularWeight": "Nauyin molecule na ɗanyen formula (ana amfani da shi ne kawai idan LOI babu komai)",
+    "formulaHeading": "Formula bayan gasa",
+    "oxideSelection": "Oxide",
+    "noOxide": "babu",
+    "addOxide": "Ƙara oxide ɗin cikin jerin",
+    "formulaIn": "Wannan formula yana cikin",
+    "percent": "Kashi",
+    "molecular": "Molecular (unity)",
+    "amount": "yawa",
+    "removeOxide": "Cire",
+    "removeOxideName": "Cire {oxide} daga formula",
+    "save": "Ajiye",
+    "elements": "Abubuwan asali (elements)",
+    "removeNote": "Girke-girken da aka ajiye suna riƙe da nasu kwafi, don haka ba za su canza ba.",
+    "saveFailed": "Kuskure: buƙatar zuwa sabar ba ta yi nasara ba."
+  },
+  "material": {
+    "title": "Kaya",
+    "lead": "Kayan aikinku na kanku, da aka shigar a matsayin formula na sinadarai ko nazarin oxide.",
+    "newHeading": "Ƙara kaya",
+    "name": "Suna",
+    "rawFormula": "Ɗanyen formula",
+    "weightsNote": "Ana lissafa nauyin equivalent da nauyin bayan gasa daga formula da LOI idan kun ajiye.",
+    "mineHeading": "Kayana",
+    "none": "Babu tukuna. Kayan da kuka ƙara a ƙasa za su iya shiga girke-girkenku, tare da na yau da kullum.",
+    "rawFormulaColumn": "Ɗanyen formula",
+    "standardHeading": "Kaya na yau da kullum",
+    "fetchFailed": "An sami kuskure wajen samo bayanan kaya.",
+    "standardFetchFailed": "An sami kuskure wajen samo bayanan kaya na yau da kullum.",
+    "saved": "An yi nasara. An ƙara kayan cikin rumbun bayanai."
+  },
+  "additive": {
+    "title": "Ƙarin kaya da masu launi",
+    "lead": "Masu launi da masu hana haske ratsawa (opacifiers) da ake aunawa a kan girke-girken tushe, kamar cobalt ko tin oxide. Girke-girke zai iya barin su daga unity formula ko ya ƙidaya su a ciki.",
+    "newHeading": "Ƙara ƙarin kaya ko mai launi",
+    "name": "Suna",
+    "formulaAsSold": "Formula, kamar yadda ake sayar da shi",
+    "noChemistry": "Ba shi da nazarin oxide, kamar stain na kasuwa: a bar shi daga unity formula",
+    "firedNote": "Shigar da abin da yake ba glaze bayan gasa: baƙin cobalt oxide, {asSold}, shi ne {fired} tare da LOI na {loi}%. Daga nan girke-girke zai iya ƙidaya shi a cikin unity formula.",
+    "mineHeading": "Ƙarin kayana da masu launi",
+    "none": "Babu tukuna. Ƙarin kayan da kuka ƙara a ƙasa za su iya shiga girke-girkenku, tare da na yau da kullum.",
+    "standardHeading": "Ƙarin kaya na yau da kullum",
+    "fetchFailed": "An sami kuskure wajen samo bayanan ƙarin kaya.",
+    "standardFetchFailed": "An sami kuskure wajen samo bayanan ƙarin kaya na yau da kullum.",
+    "saved": "An yi nasara. An ƙara ƙarin kayan cikin rumbun bayanai."
+  }
+}

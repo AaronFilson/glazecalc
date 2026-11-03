@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Tik 'n formule met gewone getalle in, soos {typed}: die tellings verskyn as onderskrifte, {shown}. Om die dele van 'n formule te verbind, soos in {joined}, kopieer hierdie punt:",
+    "relatedTo": "Verwant aan",
+    "notes": "Notas",
+    "loi": "Gloeiverlies (LOI), %",
+    "molecularWeight": "Molekulêre gewig van die rou formule (word net gebruik as die LOI leeg is)",
+    "formulaHeading": "Die formule, gebak",
+    "oxideSelection": "Oksied",
+    "noOxide": "geen",
+    "addOxide": "Voeg die oksied by die lys",
+    "formulaIn": "Hierdie formule is in",
+    "percent": "Persent",
+    "molecular": "Molekulêr (Seger)",
+    "amount": "hoeveelheid",
+    "removeOxide": "Verwyder",
+    "removeOxideName": "Verwyder {oxide} uit die formule",
+    "save": "Stoor",
+    "elements": "Elemente",
+    "removeNote": "Gestoorde resepte hou hul eie afskrif, so hulle sal nie verander nie.",
+    "saveFailed": "Fout: die versoek aan die bediener het misluk."
+  },
+  "material": {
+    "title": "Grondstowwe",
+    "lead": "Jou eie grondstowwe, ingevoer as 'n chemiese formule of 'n oksiedontleding.",
+    "newHeading": "Voeg 'n grondstof by",
+    "name": "Naam",
+    "rawFormula": "Rou formule",
+    "weightsNote": "Die ekwivalente en gebakte gewigte word uit die formule en LOI bereken wanneer jy stoor.",
+    "mineHeading": "My grondstowwe",
+    "none": "Nog geen. Grondstowwe wat jy hieronder byvoeg, kan saam met die standaardgrondstowwe in jou resepte gebruik word.",
+    "rawFormulaColumn": "Rou formule",
+    "standardHeading": "Standaardgrondstowwe",
+    "fetchFailed": "Daar was 'n fout met die haal van die grondstofinligting.",
+    "standardFetchFailed": "Daar was 'n fout met die haal van die inligting oor die standaardgrondstowwe.",
+    "saved": "Sukses. Grondstof by die databasis gevoeg."
+  },
+  "additive": {
+    "title": "Bymiddels en kleurstowwe",
+    "lead": "Kleurstowwe en vertroebelaars wat bo-op die basisresep gemeet word, soos kobalt- of tinoksied. 'n Resep kan hulle uit die Seger-formule weglaat of daarin tel.",
+    "newHeading": "Voeg 'n bymiddel of kleurstof by",
+    "name": "Naam",
+    "formulaAsSold": "Formule, soos verkoop",
+    "noChemistry": "Dit het geen oksiedontleding nie, soos 'n kommersiële stain: laat dit uit die Seger-formule weg",
+    "firedNote": "Tik in wat dit die glasuur gee sodra dit gebak is: swart kobaltoksied, {asSold}, is {fired} met 'n gloeiverlies (LOI) van {loi}%. 'n Resep kan dit dan in die Seger-formule tel.",
+    "mineHeading": "My bymiddels en kleurstowwe",
+    "none": "Nog geen. Bymiddels wat jy hieronder byvoeg, kan saam met die standaardbymiddels in jou resepte gebruik word.",
+    "standardHeading": "Standaardbymiddels",
+    "fetchFailed": "Daar was 'n fout met die haal van die bymiddelinligting.",
+    "standardFetchFailed": "Daar was 'n fout met die haal van die inligting oor die standaardbymiddels.",
+    "saved": "Sukses. Bymiddel by die databasis gevoeg."
+  }
+}

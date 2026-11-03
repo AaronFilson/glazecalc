@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Ẹ tẹ formula pẹ̀lú àwọn nọ́ńbà lásán, bí {typed}: àwọn iye náà yóò hàn ní ìsàlẹ̀, {shown}. Láti so àwọn apá formula pọ̀, bí ó ti wà nínú {joined}, ẹ ṣe ẹ̀dà àmì yìí:",
+    "relatedTo": "Ó jẹmọ́",
+    "notes": "Àkọsílẹ̀",
+    "loi": "Ìwúwo tó ń sọnù nínú iná (LOI), %",
+    "molecularWeight": "Ìwúwo molecule ti formula àkọ́kọ́ (a ń lò ó nìkan bí LOI bá ṣófo)",
+    "formulaHeading": "Formula náà, lẹ́yìn ìsun",
+    "oxideSelection": "Oxide",
+    "noOxide": "kò sí",
+    "addOxide": "Ṣàfikún oxide náà sí àkójọ",
+    "formulaIn": "Formula yìí wà ní",
+    "percent": "Ìdá ọgọ́rùn-ún",
+    "molecular": "Molecule (unity)",
+    "amount": "iye",
+    "removeOxide": "Yọ kúrò",
+    "removeOxideName": "Yọ {oxide} kúrò nínú formula náà",
+    "save": "Fi pamọ́",
+    "elements": "Àwọn element",
+    "removeNote": "Àwọn ìlànà tí a ti fi pamọ́ ní ẹ̀dà tiwọn, nítorí náà wọn kò ní yí padà.",
+    "saveFailed": "Àṣìṣe: ìbéèrè sí server kò ṣeé ṣe."
+  },
+  "material": {
+    "title": "Àwọn ohun èlò",
+    "lead": "Àwọn ohun èlò tiyín, tí a tẹ̀ sílẹ̀ bí formula kẹ́míkà tàbí ìtúpalẹ̀ oxide.",
+    "newHeading": "Ṣàfikún ohun èlò",
+    "name": "Orúkọ",
+    "rawFormula": "Formula àkọ́kọ́",
+    "weightsNote": "A ń ṣírò ìwúwo equivalent àti ìwúwo lẹ́yìn ìsun láti inú formula àti LOI nígbà tí ẹ bá fi pamọ́.",
+    "mineHeading": "Àwọn ohun èlò mi",
+    "none": "Kò sí ìkankan síbẹ̀. Àwọn ohun èlò tí ẹ bá ṣàfikún nísàlẹ̀ lè wọ inú àwọn ìlànà yín, lẹ́gbẹ̀ẹ́ àwọn ti àṣà.",
+    "rawFormulaColumn": "Formula àkọ́kọ́",
+    "standardHeading": "Àwọn ohun èlò àṣà",
+    "fetchFailed": "Àṣìṣe kan wáyé nígbà tí a ń gba ìsọfúnni àwọn ohun èlò.",
+    "standardFetchFailed": "Àṣìṣe kan wáyé nígbà tí a ń gba ìsọfúnni àwọn ohun èlò àṣà.",
+    "saved": "Ó yọrí sí rere. A ti fi ohun èlò kún database."
+  },
+  "additive": {
+    "title": "Àwọn ohun àfikún àti ohun àwọ̀",
+    "lead": "Àwọn ohun àwọ̀ àti opacifier tí a ń wọ̀n lórí ìlànà ìpìlẹ̀, bí cobalt tàbí tin oxide. Ìlànà kan lè fi wọ́n sílẹ̀ kúrò nínú unity formula tàbí kà wọ́n mọ́ ọn.",
+    "newHeading": "Ṣàfikún ohun àfikún tàbí ohun àwọ̀",
+    "name": "Orúkọ",
+    "formulaAsSold": "Formula, bí wọ́n ṣe ń tà á",
+    "noChemistry": "Kò ní ìtúpalẹ̀ oxide, bí stain ilé-iṣẹ́: ẹ fi í sílẹ̀ kúrò nínú unity formula",
+    "firedNote": "Ẹ tẹ ohun tí ó ń fún glaze lẹ́yìn ìsun: cobalt oxide dúdú, {asSold}, jẹ́ {fired} pẹ̀lú LOI {loi}%. Ìlànà kan lè kà á mọ́ unity formula nígbà náà.",
+    "mineHeading": "Àwọn ohun àfikún àti ohun àwọ̀ mi",
+    "none": "Kò sí ìkankan síbẹ̀. Àwọn ohun àfikún tí ẹ bá ṣàfikún nísàlẹ̀ lè wọ inú àwọn ìlànà yín, lẹ́gbẹ̀ẹ́ àwọn ti àṣà.",
+    "standardHeading": "Àwọn ohun àfikún àṣà",
+    "fetchFailed": "Àṣìṣe kan wáyé nígbà tí a ń gba ìsọfúnni àwọn ohun àfikún.",
+    "standardFetchFailed": "Àṣìṣe kan wáyé nígbà tí a ń gba ìsọfúnni àwọn ohun àfikún àṣà.",
+    "saved": "Ó yọrí sí rere. A ti fi ohun àfikún kún database."
+  }
+}

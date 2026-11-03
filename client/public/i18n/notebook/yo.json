@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Ìwé àkọsílẹ̀ iṣẹ́ amọ̀ yín",
+    "signedInAs": "Ẹ wọlé bí {email}.",
+    "trying": "Ẹ ń gbìdánwò Glazecalc bí {name}. Ẹ bẹ̀rẹ̀ pẹ̀lú ìlànà kan.",
+    "welcomeBack": "Ẹ máa bá a lọ láti ibi tí ẹ dúró sí.",
+    "welcome": {
+      "heading": "Ẹ kú àbọ̀ sí Glazecalc",
+      "text": "Ìwé àkọsílẹ̀ yín ti ṣetán. Ìgbésẹ̀ àkọ́kọ́ tó dára: ẹ tẹ glaze kan tí ẹ ti máa ń pò, àwọn ohun èlò rẹ̀ àti iye wọn, kí ẹ sì wo unity formula rẹ̀.",
+      "firstRecipe": "Bẹ̀rẹ̀ ìlànà àkọ́kọ́ yín",
+      "confirmHeading": "Ẹ fìdí ímeèlì yín múlẹ̀",
+      "confirm": "Ẹ fìdí ímeèlì yín múlẹ̀: a fi líǹkì kan ránṣẹ́ sí {email}. Ìwọlé onígbésẹ̀ méjì nílò rẹ̀. <account>Ojú-ìwé àkáǹtì</account> yín lè tún un fi ránṣẹ́.",
+      "confirmText": "A fi líǹkì kan ránṣẹ́ sí {email}. Ẹ ṣí i láti fìdí múlẹ̀ pé tiyín ni àdírẹ́sì náà: ìwọlé onígbésẹ̀ méjì nílò rẹ̀. <account>Ojú-ìwé àkáǹtì</account> yín lè tún un fi ránṣẹ́."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Àwọn ìlànà",
+        "text": "Ẹ kọ́ glaze kan láti inú àwọn ohun èlò àti iye wọn, ẹ wo unity formula rẹ̀, kí ẹ sì fi pamọ́."
+      },
+      "import": {
+        "title": "Lẹ àwọn ìlànà wọlé",
+        "text": "Ẹ lẹ àwọn ìlànà láti ojú-ìwé ayélujára, spreadsheet tàbí àkọsílẹ̀, ẹ ṣàyẹ̀wò ohun tí a kà, kí ẹ sì fi wọ́n pamọ́."
+      },
+      "blends": {
+        "title": "Àdàpọ̀ fún test tile",
+        "text": "Ẹ da méjì, mẹ́ta tàbí mẹ́rin nínú àwọn ìlànà yín pọ̀ sí àwọn test tile (táílì ìdánwò) oní-nọ́ńbà, pẹ̀lú ohun tí ẹ ó wọ̀n fún ọ̀kọ̀ọ̀kan."
+      },
+      "material": {
+        "title": "Àwọn ohun èlò",
+        "text": "Ẹ ṣàfikún àwọn ohun èlò tiyín, láti inú formula kẹ́míkà tàbí ìtúpalẹ̀ olùpèsè."
+      },
+      "additive": {
+        "title": "Àwọn ohun àfikún àti ohun àwọ̀",
+        "text": "Ẹ tọ́jú àwọn ohun àwọ̀ àti opacifier tí ẹ ń fi kún glaze ìpìlẹ̀."
+      },
+      "firing": {
+        "title": "Àkọsílẹ̀ ìsun",
+        "text": "Ẹ kọ àkókò, ìgbóná àti cone sílẹ̀ fún ìsun kọ̀ọ̀kan."
+      },
+      "notes": {
+        "title": "Àkọsílẹ̀",
+        "text": "Ẹ tọ́jú àbájáde ìdánwò àti ohunkóhun mìíràn tó yẹ kí a rántí."
+      },
+      "advice": {
+        "title": "Ìmọ̀ràn glaze",
+        "text": "Ìmọ̀ràn lórí pípò, fífi glaze sí àti ìsun, àti ìmọ̀ràn tiyín."
+      },
+      "guides": {
+        "title": "Àwọn ìtọ́sọ́nà",
+        "text": "Láti ohun tí glaze jẹ́ dé sísun rẹ̀, àti pípa gbogbo ènìyàn mọ́ láìléwu lójú ọ̀nà."
+      },
+      "trash": {
+        "title": "Ààtàn",
+        "text": "Ẹ dá ohun tí ẹ yọ kúrò ní ọjọ́ 30 sẹ́yìn padà."
+      },
+      "account": {
+        "title": "Àkáǹtì àti ètò",
+        "text": "Ètò, ọ̀rọ̀ aṣínà yín, ìwọlé onígbésẹ̀ méjì, àti gbígba gbogbo ohun tí ẹ tọ́jú síbí sílẹ̀."
+      }
+    },
+    "newHere": "Ṣé unity formula jẹ́ tuntun sí yín? <advice>Ojú-ìwé ìmọ̀ràn</advice> ṣàlàyé àwọn ìpìlẹ̀, <about>ojú-ìwé nípa wa</about> sì sọ bí Glazecalc ṣe ń ṣiṣẹ́."
+  },
+  "firing": {
+    "title": "Àkọsílẹ̀ ìsun",
+    "lead": "Ẹ kọ ìsun kọ̀ọ̀kan sílẹ̀: àkókò, ìgbóná, cone àti àkọsílẹ̀ kiln.",
+    "newHeading": "Ìsun tuntun",
+    "titleLabel": "Àkọlé",
+    "kiln": "Kiln",
+    "date": "Ọjọ́",
+    "notes": "Àkọsílẹ̀",
+    "fieldSelect": "Àwọn àpótí láti kọ sílẹ̀",
+    "addField": "Ṣàfikún àpótí náà",
+    "included": "Àwọn àpótí nínú àkọsílẹ̀ yìí",
+    "moveLeft": "Gbé àpótí sí apá òsì",
+    "moveRight": "Gbé àpótí sí apá ọ̀tún",
+    "removeField": "Yọ àpótí náà kúrò",
+    "addRow": "Ṣàfikún ìlà kan sí tábìlì ìsun",
+    "addRowWhy": "Ẹ kọ́kọ́ ṣàfikún àpótí kan.",
+    "recordHeading": "Kọ ìsun náà sílẹ̀",
+    "rowActions": "Iṣẹ́ ìlà",
+    "cell": "{field} ìlà {row}",
+    "removeRow": "Yọ ìlà kúrò",
+    "save": "Fi pamọ́",
+    "storedHeading": "Àwọn ìsun mi tí a fi pamọ́",
+    "noneSaved": "Kò sí ìkankan síbẹ̀. Àwọn ìsun tí a fi pamọ́ yóò hàn síbí.",
+    "storedIn": "A sun ún nínú {kiln} ní {date}.",
+    "storedOn": "A sun ún ní {date}.",
+    "storedNotes": "Àkọsílẹ̀: {notes}",
+    "titleMissing": "Ẹ fún ìsun náà ní àkọlé.",
+    "fieldsMissing": "Ẹ ṣàfikún ó kéré tán àpótí kan láti kọ sílẹ̀, bí {example}.",
+    "chooseField": "Ẹ yan àpótí kan láti ṣàfikún, lẹ́yìn náà Ṣàfikún àpótí náà.",
+    "fetchFailed": "Àṣìṣe kan wáyé nígbà tí a ń gba ìsọfúnni àkọsílẹ̀ ìsun.",
+    "saved": "A ti fi àkọsílẹ̀ ìsun náà kún server ní àṣeyọrí.",
+    "saveFailed": "Àṣìṣe: ìbéèrè sí server kò ṣeé ṣe.",
+    "recipesHeading": "Àwọn ìlànà tí a sun nínú rẹ̀",
+    "noRecipes": "Kò sí ìlànà tí a so mọ́ ọn síbẹ̀.",
+    "recipesFailed": "A kò lè gba àwọn ìlànà yín, nítorí náà a kò lè so ìkankan báyìí.",
+    "pickRecipe": "Ìlànà kan tí a sun nínú rẹ̀",
+    "linkRecipe": "So ìlànà náà mọ́ ọn",
+    "unlink": "Tú u",
+    "unlinkRecipe": "Tú {title}",
+    "linkFailed": "A kò lè fi ìsopọ̀ náà pamọ́."
+  },
+  "notes": {
+    "title": "Àkọsílẹ̀",
+    "lead": "Ohunkóhun mìíràn tó yẹ kí a rántí nípa àwọn glaze yín.",
+    "newHeading": "Àkọsílẹ̀ tuntun",
+    "titleLabel": "Àkọlé",
+    "content": "Àkọsílẹ̀",
+    "save": "Fi pamọ́",
+    "mineHeading": "Àwọn àkọsílẹ̀ mi tí a fi pamọ́",
+    "noneSaved": "Kò sí ìkankan síbẹ̀. Àwọn àkọsílẹ̀ tí a fi pamọ́ yóò hàn síbí.",
+    "titleMissing": "Ẹ fún àkọsílẹ̀ náà ní àkọlé.",
+    "contentMissing": "Ẹ kọ àkọsílẹ̀ náà.",
+    "untitled": "Àkọsílẹ̀ tí kò ní àkọlé",
+    "fetchFailed": "Àṣìṣe kan wáyé nígbà tí a ń gba ìsọfúnni àwọn àkọsílẹ̀.",
+    "saved": "A ti fi àkọsílẹ̀ náà kún server ní àṣeyọrí.",
+    "saveFailed": "Àṣìṣe: ìbéèrè sí server kò ṣeé ṣe."
+  },
+  "trash": {
+    "title": "Ààtàn",
+    "lead": "Ohun tí ẹ bá yọ kúrò (ìlànà, ohun èlò, ohun àfikún, àkọsílẹ̀, àkọsílẹ̀ ìsun àti ìmọ̀ràn) yóò dúró síbí fún ọjọ́ 30. Ẹ dá a padà, tàbí kí ẹ pa á rẹ́ pátápátá.",
+    "listHeading": "Nínú Ààtàn",
+    "none": "Ààtàn ṣófo.",
+    "untitled": "Kò ní àkọlé",
+    "kinds": {
+      "recipes": "Ìlànà",
+      "materials": "Ohun èlò",
+      "additives": "Ohun àfikún",
+      "notes": "Àkọsílẹ̀",
+      "firing": "Àkọsílẹ̀ ìsun",
+      "advice": "Ìmọ̀ràn",
+      "other": "Àkọsílẹ̀"
+    },
+    "removedOn": "A yọ ọ́ kúrò ní {date}",
+    "goesOn": "A ó pa á rẹ́ pátápátá ní {date}",
+    "byApp": "Áàpù tí a so pọ̀ ló yọ ọ́ kúrò",
+    "putBack": "Dá a padà",
+    "putBackName": "Dá {name} padà",
+    "restored": "A ti dá \"{name}\" padà sí ibi tí ó wà.",
+    "restoredAlready": "A ti dá \"{name}\" padà tẹ́lẹ̀.",
+    "restoreFailed": "A kò lè dá \"{name}\" padà. Ẹ jọ̀wọ́ ẹ tún gbìyànjú.",
+    "deleted": "A ti pa \"{name}\" rẹ́ pátápátá.",
+    "empty": "Sọ Ààtàn di òfo",
+    "emptyQuestion": "Ṣé kí a pa {count, plural, other {gbogbo àkọsílẹ̀ # }}nínú Ààtàn rẹ́ pátápátá? A kò lè yí èyí padà.",
+    "emptyYes": "Bẹ́ẹ̀ni, sọ ọ́ di òfo",
+    "emptying": "Ó ń sọ ọ́ di òfo...",
+    "emptied": "Ààtàn ṣófo.",
+    "emptyFailed": "A kò lè sọ Ààtàn di òfo. Ẹ jọ̀wọ́ ẹ tún gbìyànjú.",
+    "fetchFailed": "A kò lè ṣí Ààtàn. Ẹ jọ̀wọ́ ẹ tún gbìyànjú."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Pịnye formula jiri ọnụọgụ nkịtị, dịka {typed}: ọnụọgụ ndị ahụ na-apụta dịka subscript, {shown}. Iji jikọta akụkụ nke formula, dịka na {joined}, depụta ntụpọ a:",
+    "relatedTo": "Metụtara",
+    "notes": "Ihe edere",
+    "loi": "Ọnwụ n'ọkụ (LOI), %",
+    "molecularWeight": "Ịdị arọ molecular nke formula raw (a na-eji ya naanị ma ọ bụrụ na LOI tọgbọ chakoo)",
+    "formulaHeading": "Formula ahụ, mgbe a gbachara ya ọkụ",
+    "oxideSelection": "Oxide",
+    "noOxide": "ọ dịghị",
+    "addOxide": "Tinye oxide ahụ na ndepụta",
+    "formulaIn": "Formula a dị na",
+    "percent": "Pasent",
+    "molecular": "Molecular (unity)",
+    "amount": "ọnụọgụ",
+    "removeOxide": "Wepụ",
+    "removeOxideName": "Wepụ {oxide} na formula ahụ",
+    "save": "Chekwaa",
+    "elements": "Element",
+    "removeNote": "Usoro ndị echekwara na-edebe mbipụta nke ha, ya mere ha agaghị agbanwe.",
+    "saveFailed": "Njehie: arịrịọ a zigara sava ahụ adaghị."
+  },
+  "material": {
+    "title": "Ihe eji arụ ọrụ",
+    "lead": "Ihe eji arụ ọrụ nke gị, nke e dere dịka formula kemịkalụ ma ọ bụ nyocha oxide.",
+    "newHeading": "Tinye ihe eji arụ ọrụ",
+    "name": "Aha",
+    "rawFormula": "Formula raw",
+    "weightsNote": "A na-agbakọ ịdị arọ equivalent na ịdị arọ mgbe a gbachara ọkụ site na formula na LOI mgbe ị chekwara.",
+    "mineHeading": "Ihe m",
+    "none": "Ọ dịbeghị. Ihe ị tinyere n'okpuru nwere ike ịbanye n'usoro gị, n'akụkụ ndị a na-ejikarị.",
+    "rawFormulaColumn": "Formula raw",
+    "standardHeading": "Ihe eji arụ ọrụ a na-ejikarị",
+    "fetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ihe eji arụ ọrụ.",
+    "standardFetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ihe eji arụ ọrụ a na-ejikarị.",
+    "saved": "Ọ gara nke ọma. Etinyela ihe eji arụ ọrụ ahụ na ebe nchekwa data."
+  },
+  "additive": {
+    "title": "Ihe mgbakwunye na ihe na-enye agba",
+    "lead": "Ihe na-enye agba na ihe na-eme ka glaze ghara ịdị ọcha anya (opacifier) a na-atụ n'elu usoro isi, dịka cobalt ma ọ bụ tin oxide. Usoro nwere ike ịhapụ ha na unity formula ma ọ bụ gụnye ha n'ime ya.",
+    "newHeading": "Tinye ihe mgbakwunye ma ọ bụ ihe na-enye agba",
+    "name": "Aha",
+    "formulaAsSold": "Formula, dịka a na-ere ya",
+    "noChemistry": "O nweghị nyocha oxide, dịka stain a na-ere n'ahịa: hapụ ya na unity formula",
+    "firedNote": "Dee ihe ọ na-enye glaze mgbe a gbachara ya ọkụ: cobalt oxide ojii, {asSold}, bụ {fired} nwere LOI {loi}%. Usoro nwere ike gụnye ya na unity formula.",
+    "mineHeading": "Ihe mgbakwunye m na ihe na-enye agba m",
+    "none": "Ọ dịbeghị. Ihe mgbakwunye ị tinyere n'okpuru nwere ike ịbanye n'usoro gị, n'akụkụ ndị a na-ejikarị.",
+    "standardHeading": "Ihe mgbakwunye a na-ejikarị",
+    "fetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ihe mgbakwunye.",
+    "standardFetchFailed": "Njehie mere mgbe a na-eweta ozi gbasara ihe mgbakwunye a na-ejikarị.",
+    "saved": "Ọ gara nke ọma. Etinyela ihe mgbakwunye ahụ na ebe nchekwa data."
+  }
+}

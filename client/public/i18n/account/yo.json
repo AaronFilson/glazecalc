@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Wọlé",
+    "keepHeading": "Ẹ pa iṣẹ́ yín mọ́",
+    "signUpHeading": "Ṣẹ̀dá àkáǹtì yín",
+    "signInLead": "Ẹ kú àbọ̀ sí ìwé àkọsílẹ̀ glaze yín.",
+    "keepLead": "Ẹ pa gbogbo ohun tí ẹ ṣe gẹ́gẹ́ bí {name} mọ́: ẹ fi email yín àti ọ̀rọ̀ aṣínà kún un. Ó ṣì jẹ́ ọ̀fẹ́.",
+    "signUpLead": "Ọ̀fẹ́. Àwọn ìlànà, ohun èlò àti àkíyèsí yín wà ní àṣírí sí àkáǹtì yín.",
+    "trialNote": "Ṣé ẹ ti ní àkáǹtì? Wíwọlé ń mú ohun tí ẹ ṣe gẹ́gẹ́ bí {name} wọ inú rẹ̀. Ẹ jẹ́ tuntun níbí? <signup>Ṣẹ̀dá àkáǹtì</signup> láti pa á mọ́ dípò bẹ́ẹ̀.",
+    "email": "Email",
+    "password": "Ọ̀rọ̀ aṣínà",
+    "passwordHint": "Ó kéré tán àmì 8.",
+    "confirmation": "Jẹ́rìí ọ̀rọ̀ aṣínà",
+    "keepSignedIn": "Jẹ́ kí n wà ní wíwọlé lórí ẹ̀rọ yìí",
+    "passwordMissing": "Ẹ tẹ ọ̀rọ̀ aṣínà yín.",
+    "createAccount": "Ṣẹ̀dá àkáǹtì",
+    "signIn": "Wọlé",
+    "haveAccount": "Ṣé ẹ ti ní àkáǹtì? <signin>Wọlé</signin>",
+    "privacy": "A ń lo email yín àti ohun tí ẹ fi pamọ́ láti ṣiṣẹ́ àkáǹtì yín nìkan, a sì ń pa wọ́n mọ́ pẹ̀lú Amazon Web Services ní US. <privacy>Bí Glazecalc ṣe ń bójú tó dátà yín</privacy>",
+    "terms": "Nípa ṣíṣẹ̀dá àkáǹtì, ẹ gba <terms>Òfin ìlò</terms>.",
+    "dataNotice": "Glazecalc jẹ́ iṣẹ́ àkànṣe ọ̀fẹ́, orísun ṣíṣí, a sì ń pa àwọn àkáǹtì mọ́ sórí server ní United States. Ẹ lè ka àwọn ìtọ́sọ́nà kí ẹ sì dán ẹ̀rọ ìṣirò wò láìsí àkáǹtì, tàbí ṣiṣẹ́ ẹ̀dà tiyín. Bóyá kí ẹ ṣẹ̀dá àkáǹtì níbí jẹ́ ìpinnu tiyín, iṣẹ́ àkànṣe náà kò sì gba ojúṣe kankan fún un. <where>Ibi tí a ń pa àkáǹtì yín mọ́ sí, àti ìyàn yín</where>",
+    "forgot": "Ṣé ẹ gbàgbé ọ̀rọ̀ aṣínà yín? Ẹ tún un ṣe",
+    "newHere": "Ẹ jẹ́ tuntun níbí? <signup>Ṣẹ̀dá àkáǹtì ọ̀fẹ́</signup>",
+    "signUpFailed": "Àṣìṣe: a kò lè ṣẹ̀dá àkáǹtì náà.",
+    "signInFailed": "Àṣìṣe: a kò lè wọlé.",
+    "or": "tàbí",
+    "passkeySignIn": "Wọlé pẹ̀lú passkey",
+    "passkeyHint": "Passkey ń lo ìka yín, ojú yín tàbí títì ojú ẹ̀rọ dípò ọ̀rọ̀ aṣínà. Ẹ fi ọ̀kan kún un lórí ojú-ìwé àkáǹtì yín."
+  },
+  "secondStep": {
+    "heading": "Wíwọlé ìgbésẹ̀ méjì",
+    "signingInAs": "Ọ̀rọ̀ aṣínà yín tọ̀nà. Ìgbésẹ̀ kan sí i láti wọlé gẹ́gẹ́ bí {email}.",
+    "leadCode": "Ẹ ṣí app authenticator yín kí ẹ sì tẹ code tí ó fi hàn fún Glazecalc.",
+    "leadPasskey": "Ẹ lo passkey yín láti parí wíwọlé.",
+    "leadRecovery": "Ẹ tẹ ọ̀kan nínú àwọn recovery code tí ẹ fi pamọ́ nígbà tí ẹ tan wíwọlé ìgbésẹ̀ méjì. Code kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan.",
+    "code": "Code láti app authenticator yín",
+    "codeHint": "Díjíìtì {digits}. Code tuntun ń farahàn ní gbogbo ìṣẹ́jú-àáyá 30.",
+    "codeFormat": "Ẹ tẹ code oní-díjíìtì {digits} láti app authenticator yín.",
+    "recoveryCode": "Recovery code",
+    "recoveryHint": "Ó rí bí abcde-12345.",
+    "recoveryMissing": "Ẹ tẹ ọ̀kan nínú àwọn recovery code yín.",
+    "finish": "Parí wíwọlé",
+    "usePasskey": "Lo passkey",
+    "noPasskeysHere": "Browser yìí kò lè lo passkey. Ẹ lo ọ̀nà mìíràn ní ìsàlẹ̀, tàbí ẹ wọlé lórí ẹ̀rọ tí ó lè lò ó.",
+    "useRecovery": "Lo recovery code dípò rẹ̀",
+    "useApp": "Lo app authenticator yín dípò rẹ̀",
+    "startOver": "Bẹ̀rẹ̀ lẹ́ẹ̀kan sí i",
+    "reloadNote": "Ìgbésẹ̀ yìí ń dúró fún ìṣẹ́jú {minutes}. Bí ẹ bá kúrò tàbí tún ojú-ìwé yìí ṣí, ẹ ó ní láti tún tẹ ọ̀rọ̀ aṣínà yín.",
+    "expired": "Wíwọlé pẹ́ jù. Ẹ jọ̀wọ́, ẹ tún tẹ ọ̀rọ̀ aṣínà yín."
+  },
+  "passkey": {
+    "cancelled": "A kò lo passkey náà: a fagilé ìbéèrè náà tàbí àkókò rẹ̀ tán, tàbí ẹ̀rọ yìí kò ní passkey fún Glazecalc. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i, tàbí ẹ lo ọ̀nà mìíràn.",
+    "registered": "Passkey yìí ti wà lórí àkáǹtì yín.",
+    "browserFailed": "Browser yìí kò lè lo passkey náà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i, tàbí ẹ lo ọ̀nà mìíràn."
+  },
+  "forgot": {
+    "heading": "Tún ọ̀rọ̀ aṣínà yín ṣe",
+    "checkInbox": "Ẹ wo àpótí méèlì yín àti fódà junk. Bí nǹkan kan kò bá dé, ẹ ṣàyẹ̀wò àdírẹ́sì náà kí ẹ sì tún bèèrè.",
+    "intro": "Ẹ tẹ email àkáǹtì yín, a ó sì fi ìjápọ̀ ránṣẹ́ sí yín láti yan ọ̀rọ̀ aṣínà tuntun.",
+    "email": "Email:",
+    "send": "Fi ìjápọ̀ ránṣẹ́",
+    "back": "Padà sí wíwọlé",
+    "failed": "Àṣìṣe: a kò lè fi email títún ṣe ránṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i."
+  },
+  "reset": {
+    "heading": "Yan ọ̀rọ̀ aṣínà tuntun",
+    "signIn": "Wọlé",
+    "incomplete": "Ojú-ìwé yìí nílò ìjápọ̀ láti inú email títún ọ̀rọ̀ aṣínà ṣe, èyí kò sì pé.",
+    "askAgain": "Bèèrè fún ìjápọ̀ tuntun",
+    "password": "Ọ̀rọ̀ aṣínà tuntun:",
+    "confirmation": "Jẹ́rìí ọ̀rọ̀ aṣínà tuntun:",
+    "save": "Fi ọ̀rọ̀ aṣínà tuntun pamọ́",
+    "hint": "Ó kéré tán àmì 8. A ó mú gbogbo ẹ̀rọ tí ó wọlé sí àkáǹtì náà jáde.",
+    "failed": "Àṣìṣe: a kò lè yí ọ̀rọ̀ aṣínà náà padà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "secondStep": "Bí àkáǹtì yín bá ń lo wíwọlé ìgbésẹ̀ méjì, ẹ ó ṣì nílò app authenticator yín, passkey tàbí recovery code láti wọlé."
+  },
+  "account": {
+    "trialTitle": "Ìdánwò yín",
+    "trialLead": "Ẹ ń dán Glazecalc wò gẹ́gẹ́ bí {name}.",
+    "keepHeading": "Ẹ pa iṣẹ́ yín mọ́",
+    "keepText": "A ó yọ ìdánwò yìí àti gbogbo ohun tó wà nínú rẹ̀ kúrò ní {date}. Ẹ ṣẹ̀dá àkáǹtì ọ̀fẹ́ láti pa wọ́n mọ́: àwọn ìlànà, ohun èlò àti àkíyèsí yín yóò wà bí wọ́n ti wà, {name} yóò sì jẹ́ orúkọ ìfihàn yín.",
+    "createAccount": "Ṣẹ̀dá àkáǹtì",
+    "title": "Àkáǹtì yín",
+    "signedInAs": "Ẹ wọlé gẹ́gẹ́ bí {email}.",
+    "contents": "Lórí ojú-ìwé yìí",
+    "changeHeading": "Yí ọ̀rọ̀ aṣínà yín padà",
+    "current": "Ọ̀rọ̀ aṣínà ìsinsìnyí",
+    "currentMissing": "Ẹ tẹ ọ̀rọ̀ aṣínà ìsinsìnyí yín.",
+    "password": "Ọ̀rọ̀ aṣínà tuntun",
+    "passwordHint": "Ó kéré tán àmì 8. A ó mú àwọn ẹ̀rọ mìíràn tí ó wọlé sí àkáǹtì yìí jáde.",
+    "confirmation": "Jẹ́rìí ọ̀rọ̀ aṣínà tuntun",
+    "change": "Yí ọ̀rọ̀ aṣínà padà",
+    "changeFailed": "Àṣìṣe: a kò lè yí ọ̀rọ̀ aṣínà náà padà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "deleteHeading": "Pa àkáǹtì yín rẹ́",
+    "deleteText": "Èyí ń yọ àkáǹtì yín àti gbogbo ohun tí ẹ fi pamọ́ kúrò: ìlànà, ohun èlò, ohun àfikún, àkíyèsí, àkọsílẹ̀ ìsun àti ìmọ̀ràn. A kò lè dá a padà.",
+    "deletePassword": "Ọ̀rọ̀ aṣínà yín, láti jẹ́rìí",
+    "deletePasswordMissing": "Ẹ tẹ ọ̀rọ̀ aṣínà yín láti jẹ́rìí.",
+    "delete": "Pa àkáǹtì mi rẹ́",
+    "deleteFailed": "Àṣìṣe: a kò lè pa àkáǹtì náà rẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "unverifiedHeading": "Ẹ jẹ́rìí sí email yín",
+    "unverifiedText": "A fi ìjápọ̀ ránṣẹ́ sí {email} nígbà tí ẹ ṣe àkáǹtì yìí. Ẹ ṣí i láti jẹ́rìí pé tiyín ni àdírẹ́sì náà. Títí di ìgbà náà, a ń fi méèlì ránṣẹ́ sí i nígbà tí ẹ bá bèèrè nìkan, bí fún títún ọ̀rọ̀ aṣínà ṣe.",
+    "resend": "Tún fi ìjápọ̀ náà ránṣẹ́",
+    "resendFailed": "Àṣìṣe: a kò lè fi ìjápọ̀ náà ránṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "emailHeading": "Yí email yín padà",
+    "emailText": "A ń fi ìjápọ̀ ránṣẹ́ sí àdírẹ́sì tuntun, email yín sì ń yí padà nígbà tí ẹ bá ṣí i. A tún ń sọ fún àdírẹ́sì ìsinsìnyí yín. A ó mú gbogbo ẹ̀rọ tí ó wọlé sí àkáǹtì yìí jáde.",
+    "newEmail": "Email tuntun",
+    "emailPassword": "Ọ̀rọ̀ aṣínà yín, láti jẹ́rìí",
+    "emailSend": "Fi ìjápọ̀ náà ránṣẹ́",
+    "emailFailed": "Àṣìṣe: a kò lè fi ìjápọ̀ náà ránṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "signOutHeading": "Jáde níbi gbogbo",
+    "signOutText": "Ó ń mú yín jáde lórí gbogbo ẹ̀rọ, títí kan èyí, ó sì ń dá access token yín àti ìjápọ̀ pínpín yín dúró. Ẹ lò ó bí ẹ bá sọ ẹ̀rọ kan nù tàbí tí ẹ rò pé ẹlòmíràn ní ọ̀nà wíwọlé yín.",
+    "signOutButton": "Jáde níbi gbogbo",
+    "signOutFailed": "Àṣìṣe: a kò lè mú yín jáde. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "confirmStep": "Wíwọlé ìgbésẹ̀ méjì wà ní títàn, nítorí náà ẹ jẹ́rìí pé ẹ̀yin ni: ọ̀rọ̀ aṣínà yín àti ìgbésẹ̀ kejì."
+  },
+  "mfa": {
+    "heading": "Wíwọlé ìgbésẹ̀ méjì",
+    "intro": "Ẹ bèèrè fún ìgbésẹ̀ kejì nígbà tí ẹ bá ń wọlé, pẹ̀lú ọ̀rọ̀ aṣínà yín: code láti app authenticator, tàbí passkey. Nígbà náà ẹni tí ó mọ ọ̀rọ̀ aṣínà yín ṣì kò lè wọlé.",
+    "loadFailed": "A kò lè gbé wíwọlé ìgbésẹ̀ méjì yín wá. Ẹ jọ̀wọ́, ẹ tún ojú-ìwé náà ṣí.",
+    "on": "Wíwọlé ìgbésẹ̀ méjì wà ní títàn.",
+    "onText": "Ẹ ń wọlé pẹ̀lú ọ̀rọ̀ aṣínà yín àti ìgbésẹ̀ kejì, tàbí pẹ̀lú passkey nìkan.",
+    "off": "Wíwọlé ìgbésẹ̀ méjì wà ní pípa.",
+    "badgeOn": "Tàn",
+    "badgeOff": "Pa",
+    "offText": "Láti tàn án, ẹ ṣètò app authenticator tàbí ẹ fi passkey kún un.",
+    "confirmEmailFirst": "Ẹ kọ́kọ́ jẹ́rìí sí email yín, lókè. A ń lò ó láti sọ fún yín nípa àyípadà sí bí ẹ ṣe ń wọlé, àti láti ṣèrànwọ́ bí ẹ bá sọ ìgbésẹ̀ kejì yín nù.",
+    "appHeading": "App authenticator",
+    "appText": "App kan lórí fóònù yín tàbí nínú olùṣàkóso ọ̀rọ̀ aṣínà yín ń fi code tuntun hàn ní gbogbo ìṣẹ́jú-àáyá 30, láti tẹ̀ nígbà tí ẹ bá ń wọlé.",
+    "addApp": "Ṣètò app authenticator",
+    "removeApp": "Yọ app authenticator kúrò",
+    "added": "A fi kún un ní {date}.",
+    "lastUsed": "A lò ó kẹ́yìn ní {date}.",
+    "notUsed": "A kò tíì lò ó.",
+    "passkeysHeading": "Passkey",
+    "passkeysText": "Passkey ń mú yín wọlé pẹ̀lú ìka yín, ojú yín tàbí títì ojú ẹ̀rọ, lórí ẹ̀rọ yìí tàbí fóònù yín. Ó lè jẹ́ ìgbésẹ̀ kejì yín, tàbí kí ó mú yín wọlé fúnra rẹ̀, láìsí ọ̀rọ̀ aṣínà yín.",
+    "noPasskeysHere": "Browser yìí kò lè ṣe passkey tàbí lò ó. Ẹ gbìyànjú browser tàbí ẹ̀rọ mìíràn.",
+    "addPasskey": "Fi passkey kún un",
+    "removePasskey": "Yọ passkey náà kúrò",
+    "rename": "Yí orúkọ padà",
+    "remove": "Yọ kúrò",
+    "renameLabel": "Orúkọ tuntun fún \"{name}\"",
+    "saveName": "Fi orúkọ náà pamọ́",
+    "name": "Orúkọ fún passkey náà",
+    "nameHint": "Kí ẹ lè dá àwọn passkey yín mọ̀ yàtọ̀, bí \"Laptop\" tàbí \"Fóònù\".",
+    "nameCheck": "Ẹ fún passkey náà ní orúkọ tí ó ní àmì 1 sí {most}.",
+    "passkeyLimit": "Ẹ ní passkey {most}, èyí tí ó pọ̀ jù lọ tí àkáǹtì lè ní. Ẹ yọ ọ̀kan kúrò láti fi òmíràn kún un.",
+    "codesTitle": "Recovery code",
+    "codesLeft": "{count, plural, other {Recovery code # nínú {total} ló kù.}} Bí ẹ kò bá lè lo app yín tàbí passkey, code kan yóò mú yín wọlé dípò rẹ̀. Code kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan.",
+    "codesLow": "Ẹ ṣe code tuntun láìpẹ́. Bí wọ́n bá tán, tí ẹ sì sọ app àti passkey yín nù, ẹ kò ní lè wọlé.",
+    "newCodes": "Ṣe recovery code tuntun",
+    "offHeading": "Pípa á",
+    "offWhat": "Wíwọlé ìgbésẹ̀ méjì ń wà ní títàn nígbà tí ẹ bá ní app authenticator tàbí passkey. Yíyọ èyí tí ó kẹ́yìn nínú wọn kúrò ń pa á, lẹ́yìn náà:",
+    "offPassword": "Wíwọlé nílò ọ̀rọ̀ aṣínà yín nìkan, nítorí náà ẹnikẹ́ni tí ó mọ̀ ọ́n lè wọlé.",
+    "offCodes": "Àwọn recovery code yín dẹ́kun iṣẹ́.",
+    "offSignOut": "A ó mú gbogbo ẹ̀rọ mìíràn tí ó wọlé sí àkáǹtì yín jáde. Èyí yóò wà ní wíwọlé.",
+    "offEmail": "A ó fi email ránṣẹ́ sí yín pé a ti pa á.",
+    "offRemoveApp": "Pa wíwọlé ìgbésẹ̀ méjì (ó ń yọ app náà kúrò)",
+    "offRemoveAppFirst": "Yọ app náà kúrò, láti bẹ̀rẹ̀ sí í pa á",
+    "offPasskeys": "{count, plural, other {Láti pa á, ẹ yọ passkey # yín kúrò lábẹ́ Passkey, lókè.}}",
+    "offPasskeysToo": "{count, plural, other {Ẹ tún ní passkey #: ẹ yọ wọ́n kúrò lábẹ́ Passkey, lókè, pẹ̀lú app náà.}}",
+    "addAppText": "Láti ṣètò app authenticator, ẹ kọ́kọ́ jẹ́rìí pé ẹ̀yin ni.",
+    "removeAppText": "Láti yọ app authenticator kúrò, ẹ jẹ́rìí pé ẹ̀yin ni.",
+    "addPasskeyText": "Ẹ dárúkọ passkey náà kí ẹ sì jẹ́rìí pé ẹ̀yin ni. Lẹ́yìn náà browser yín yóò ní kí ẹ ṣe passkey náà.",
+    "removePasskeyText": "Láti yọ passkey \"{name}\" kúrò, ẹ jẹ́rìí pé ẹ̀yin ni.",
+    "newCodesText": "Code tuntun ń rọ́pò àwọn àtijọ́ yín, tí yóò dẹ́kun iṣẹ́. Ẹ jẹ́rìí pé ẹ̀yin ni.",
+    "lastFactor": "Èyí ni ìgbésẹ̀ kejì yín ìkẹyìn, nítorí náà wíwọlé ìgbésẹ̀ méjì yóò kú, àwọn recovery code yín yóò sì dẹ́kun iṣẹ́.",
+    "continue": "Tẹ̀síwájú",
+    "cancel": "Fagilé",
+    "password": "Ọ̀rọ̀ aṣínà yín",
+    "factorLegend": "Àti ìgbésẹ̀ kejì yín",
+    "passkeyNext": "Browser yín yóò bèèrè fún passkey yín nígbà tí ẹ bá tẹ̀síwájú.",
+    "passkeyReadyText": "Ẹ ṣé. Báyìí ẹ ṣe passkey \"{name}\": nígbà tí ẹ bá tẹ bọ́tìnnì náà, browser yín yóò bèèrè fún ìka yín, ojú yín tàbí títì ojú ẹ̀rọ, tàbí fún fóònù yín. Bí kò bá ṣiṣẹ́, ẹ lè tún gbìyànjú fún ìṣẹ́jú {minutes} láìtún jẹ́rìí.",
+    "passkeyCreate": "Fi passkey náà kún un báyìí",
+    "useApp": "Lo app authenticator yín dípò rẹ̀",
+    "usePasskey": "Lo passkey dípò rẹ̀",
+    "useRecovery": "Lo recovery code dípò rẹ̀",
+    "failed": "Àṣìṣe: a kò lè ṣe àyípadà náà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "setupHeading": "Ṣètò app authenticator yín",
+    "setupOpen": "Ẹ ṣí app authenticator yín kí ẹ sì yàn láti fi àkáǹtì kún un.",
+    "setupScan": "Ẹ ṣe scan QR code yìí pẹ̀lú app náà, tàbí ẹ tẹ kọ́kọ́rọ́ náà.",
+    "setupTap": "Ẹ tẹ bọ́tìnnì náà láti fi Glazecalc kún app authenticator tàbí olùṣàkóso ọ̀rọ̀ aṣínà lórí fóònù yìí.",
+    "showQr": "Fi QR code hàn, láti ṣètò rẹ̀ lórí ẹ̀rọ mìíràn",
+    "setupScanOther": "Ẹ ṣe scan rẹ̀ pẹ̀lú app authenticator lórí ẹ̀rọ kejì.",
+    "qrAlt": "QR code fún fífi Glazecalc kún app authenticator",
+    "key": "Kọ́kọ́rọ́",
+    "copyKey": "Da kọ́kọ́rọ́ náà kọ",
+    "openInApp": "Fi kún app authenticator lórí ẹ̀rọ yìí",
+    "clipboardNote": "Ọ̀rọ̀ tí a dà kọ lè wà nínú ìtàn clipboard yín kí ó sì dé àwọn ẹ̀rọ mìíràn yín. Ẹ lẹ̀ ẹ́ tààrà sínú olùṣàkóso ọ̀rọ̀ aṣínà yín, lẹ́yìn náà ẹ pa ìtàn clipboard yín rẹ́.",
+    "setupCode": "Ẹ tẹ code oní-díjíìtì {digits} tí app náà ń fi hàn fún Glazecalc báyìí",
+    "setupFinish": "Parí ìṣètò",
+    "codesHeading": "Àwọn recovery code yín",
+    "codesText": "Ẹ pa wọ́n mọ́ sí ibi tí ó láàbò, bí olùṣàkóso ọ̀rọ̀ aṣínà yín, tàbí ẹ tẹ̀ wọ́n jáde kí ẹ sì pa wọ́n mọ́ pẹ̀lú àwọn ìwé yín. Bí ẹ kò bá lè lo app yín tàbí passkey, code kan yóò mú yín wọlé dípò rẹ̀. Code kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan. A ń fi wọ́n hàn báyìí nìkan.",
+    "print": "Tẹ àwọn code jáde",
+    "printNote": "Code kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan. Ẹ pa ojú-ìwé yìí mọ́ sí ibi tí ó láàbò.",
+    "download": "Gbà á sílẹ̀ bí fáìlì ọ̀rọ̀",
+    "copy": "Da àwọn code kọ",
+    "copied": "A ti dà á kọ.",
+    "copyFailed": "A kò lè dà á kọ. Ẹ jọ̀wọ́, ẹ yan ọ̀rọ̀ náà kí ẹ sì dà á kọ.",
+    "saved": "Mo ti fi wọ́n pamọ́",
+    "fileTitle": "Recovery code Glazecalc fún {email}",
+    "fileNote": "Code kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan. Ẹ pa fáìlì yìí mọ́ sí ibi tí ó láàbò."
+  },
+  "export": {
+    "heading": "Gba dátà mi sílẹ̀",
+    "text": "Ẹ fi ẹ̀dà gbogbo ohun tí àkáǹtì yín ní pamọ́ bí fáìlì kan: kúlẹ̀kúlẹ̀ yín, ètò, ohun èlò tí ẹ ní lọ́wọ́, ìlànà, ohun èlò, ohun àfikún, àkíyèsí, àkọsílẹ̀ ìsun, ìmọ̀ràn àti Ibi ìdọ̀tí. Kò ní ọ̀rọ̀ aṣínà yín nínú. Ẹ pa fáìlì náà mọ́ sí ibi àṣírí, nítorí ó ní gbogbo ohun tí ẹ fi pamọ́.",
+    "json": "Gba gbogbo rẹ̀ sílẹ̀ (JSON)",
+    "csvText": "Tàbí ẹ fi spreadsheet ti àwọn ìlànà yín nìkan tàbí ti ohun èlò tiyín nìkan pamọ́, láti ṣí nínú Excel, Numbers tàbí Sheets.",
+    "recipes": "Ìlànà (CSV)",
+    "materials": "Ohun èlò (CSV)"
+  },
+  "trash": {
+    "heading": "Ibi ìdọ̀tí",
+    "text": "Ohun tí ẹ yọ kúrò nínú ìwé àkọsílẹ̀ yín ń dúró nínú Ibi ìdọ̀tí fún ọjọ́ 30. Ẹ dá a padà láti ibẹ̀, tàbí ẹ pa á rẹ́ pátápátá.",
+    "open": "Ṣí Ibi ìdọ̀tí"
+  },
+  "shared": {
+    "heading": "Àwọn ìlànà tí a pín",
+    "text": "Àwọn ìlànà tí ẹ pín nípasẹ̀ ìjápọ̀, tí ẹnikẹ́ni tí ó ní ìjápọ̀ náà lè kà láìsí àkáǹtì. A ń fi ìjápọ̀ hàn lẹ́ẹ̀kan ṣoṣo, nígbà tí a ṣe é, nítorí náà a kò lè fi hàn níbí. Láti tún ìlànà kan pín, ẹ ṣe ìjápọ̀ tuntun lábẹ́ More ìlànà náà.",
+    "since": "A ti ń pín in láti {date}",
+    "notesShown": "A ń fi àkíyèsí hàn",
+    "notesHidden": "A kò fi àkíyèsí hàn",
+    "untitled": "Ìlànà tí kò ní àkọlé",
+    "stop": "Dẹ́kun pínpín",
+    "stopName": "Dẹ́kun pínpín {name}",
+    "stopped": "A kò pín {name} mọ́. Ìjápọ̀ rẹ̀ kò ṣiṣẹ́ mọ́.",
+    "stopFailed": "Ìyẹn kò ṣiṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "fetchFailed": "A kò lè gbé àwọn ìlànà tí ẹ pín wá. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "none": "Ẹ kò pín ìlànà kankan."
+  },
+  "settings": {
+    "heading": "Ètò",
+    "intro": "A fi wọ́n pamọ́ pẹ̀lú àkáǹtì yín, nítorí náà wọ́n wà lórí gbogbo ẹ̀rọ.",
+    "saveFailed": "A kò lè fi ètò náà pamọ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "language": {
+      "legend": "Èdè",
+      "help": "Èdè app, àwọn ìtọ́sọ́nà àti àwọn email yín. Yíyí i padà ń ṣí ojú-ìwé yìí ní èdè náà.",
+      "saved": "A ti fi pamọ́: {language}."
+    },
+    "region": {
+      "legend": "Ibi tí ẹ ti ń ṣiṣẹ́",
+      "none": {
+        "label": "A kò tíì yàn án",
+        "saved": "A ti fi pamọ́: a kò yan agbègbè; àwọn ètò àkọ́kọ́ ń tẹ̀lé browser yín."
+      },
+      "saved": "A ti fi pamọ́: {region}.",
+      "help": "Àwọn ohun èlò tí wọ́n ń tà níbẹ̀, àti ètò àkọ́kọ́ fún nọ́ńbà, ọjọ́, ìgbóná àti cone ní ìsàlẹ̀. Títí ẹ ó fi yàn, wọ́n ń tẹ̀lé èdè browser yín."
+    },
+    "format": {
+      "legend": "Nọ́ńbà àti ọjọ́",
+      "auto": {
+        "label": "Bí èdè àti agbègbè mi",
+        "saved": "A ti fi pamọ́: nọ́ńbà àti ọjọ́ bí èdè àti agbègbè yín ṣe ń kọ wọ́n."
+      },
+      "saved": "A ti fi pamọ́: nọ́ńbà àti ọjọ́ bí ti {language}.",
+      "help": "Bí a ṣe ń kọ nọ́ńbà àti ọjọ́: 12,345.6 tàbí 12.345,6, àti ètò ọjọ́ àti oṣù."
+    },
+    "calendar": {
+      "legend": "Kàlẹ́ńdà",
+      "help": "Kàlẹ́ńdà tí a fi ń fi ọjọ́ hàn. Ọjọ́ tí ẹ tẹ̀ ń wà nínú kàlẹ́ńdà Gregorian.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "A ti fi pamọ́: a ń fi ọjọ́ hàn nínú kàlẹ́ńdà Gregorian."
+      },
+      "buddhist": {
+        "label": "Sànmánì Buddhist ti Thailand",
+        "saved": "A ti fi pamọ́: a ń fi ọjọ́ hàn nínú sànmánì Buddhist ti Thailand."
+      },
+      "japanese": {
+        "label": "Sànmánì Japan",
+        "saved": "A ti fi pamọ́: a ń fi ọjọ́ hàn nínú sànmánì Japan."
+      }
+    },
+    "digits": {
+      "legend": "Díjíìtì",
+      "help": "Díjíìtì tí a fi ń fi nọ́ńbà hàn. Àwọn èdè kan ní tiwọn, bí Arabic, Bengali àti Hindi, ibi tí ẹ wà sì ń pinnu èwo ló wọ́pọ̀. Ẹ lè tẹ nọ́ńbà pẹ̀lú èyíkéyìí.",
+      "auto": {
+        "label": "Bí ó ṣe wọ́pọ̀ níbi tí ẹ wà",
+        "saved": "A ti fi pamọ́: díjíìtì bí ó ṣe wọ́pọ̀ níbi tí ẹ wà."
+      },
+      "western": {
+        "label": "Díjíìtì Western, 0–9",
+        "saved": "A ti fi pamọ́: a ń fi nọ́ńbà hàn pẹ̀lú díjíìtì 0–9."
+      },
+      "native": {
+        "label": "Díjíìtì èdè náà fúnra rẹ̀, níbi tí ó bá ní wọn",
+        "saved": "A ti fi pamọ́: a ń fi nọ́ńbà hàn ní díjíìtì èdè náà fúnra rẹ̀, níbi tí ó bá ní wọn."
+      }
+    },
+    "decimalMark": {
+      "legend": "Títẹ iye",
+      "either": {
+        "label": "Kọ́mà tàbí àmì ìdúró fún ìdá",
+        "example": "12,5 tàbí 12.5",
+        "saved": "A ti fi pamọ́: a lè tẹ iye pẹ̀lú kọ́mà tàbí àmì ìdúró."
+      },
+      "comma": {
+        "label": "Kọ́mà fún ìdá",
+        "saved": "A ti fi pamọ́: a ń tẹ iye pẹ̀lú kọ́mà fún ìdá."
+      },
+      "point": {
+        "label": "Àmì ìdúró fún ìdá",
+        "saved": "A ti fi pamọ́: a ń tẹ iye pẹ̀lú àmì ìdúró fún ìdá."
+      },
+      "help": "Pẹ̀lú èyíkéyìí, iye bí 1,250 ni a ń kà bí a ṣe ń kọ nọ́ńbà yín lókè."
+    },
+    "temperature": {
+      "legend": "Ìgbóná",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "A ti fi pamọ́: ìgbóná ní °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "A ti fi pamọ́: ìgbóná ní °F."
+      },
+      "help": "Títí ẹ ó fi yàn, èyí ń tẹ̀lé agbègbè yín: °F ní United States, °C níbòmíràn."
+    },
+    "cones": {
+      "legend": "Ìsun",
+      "orton": {
+        "label": "Cone Orton",
+        "example": "cone 04, cone 6",
+        "saved": "A ti fi pamọ́: sísun dé cone Orton."
+      },
+      "sk": {
+        "label": "Cone SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "A ti fi pamọ́: sísun dé cone SK."
+      },
+      "temperature": {
+        "label": "Ìgbóná, bí ètò controller kiln",
+        "saved": "A ti fi pamọ́: sísun nípa ìgbóná."
+      },
+      "help": "Títí ẹ ó fi yàn, èyí ń tẹ̀lé agbègbè yín: cone Orton ní US, UK, Ireland, Australia àti New Zealand, cone SK ní Japan, ìgbóná ní ìyókù Europe."
+    },
+    "density": {
+      "legend": "Ìwúwo glaze",
+      "sg": {
+        "label": "Specific gravity (SG)",
+        "saved": "A ti fi pamọ́: ìwúwo glaze bí specific gravity.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Degrees Baumé, láti hydrometer",
+        "saved": "A ti fi pamọ́: ìwúwo glaze ní degrees Baumé."
+      },
+      "pint": {
+        "label": "Pint weight, ounce inú imperial pint kan",
+        "saved": "A ti fi pamọ́: ìwúwo glaze bí pint weight."
+      },
+      "help": "Bí àwọn ìtọ́sọ́nà ṣe ń sọ nípọn glaze. Títí ẹ ó fi yàn, èyí ń tẹ̀lé agbègbè yín: degrees Baumé ní Italy àti Japan, specific gravity níbòmíràn."
+    },
+    "currency": {
+      "legend": "Owó fún iye owó",
+      "help": "Iye owó tí ẹ fún ohun èlò, àti iye tí batch kan ń ná, wà nínú owó yìí. Yíyí i padà kò yí iye owó tí ẹ ti fún padà. Títí ẹ ó fi yàn, èyí ń tẹ̀lé agbègbè yín.",
+      "saved": "A ti fi pamọ́: iye owó ní {currency}.",
+      "notConverted": "A kò yí iye owó tí ẹ pa mọ́ padà: wọ́n ṣì jẹ́ nọ́ńbà tí ẹ fún wa."
+    },
+    "theme": {
+      "legend": "Ìmọ́lẹ̀ tàbí òkùnkùn",
+      "system": {
+        "label": "Bí a ṣe ṣètò ẹ̀rọ yìí",
+        "saved": "A ti fi pamọ́: ìmọ́lẹ̀ tàbí òkùnkùn bí a ṣe ṣètò ẹ̀rọ kọ̀ọ̀kan."
+      },
+      "light": {
+        "label": "Ìmọ́lẹ̀",
+        "saved": "A ti fi pamọ́: ìmọ́lẹ̀ nígbà gbogbo."
+      },
+      "dark": {
+        "label": "Òkùnkùn",
+        "saved": "A ti fi pamọ́: òkùnkùn nígbà gbogbo."
+      },
+      "help": "Ìlànà tí a tẹ̀ jáde máa ń jẹ́ dúdú lórí funfun nígbà gbogbo."
+    },
+    "palette": {
+      "legend": "Àwọ̀",
+      "saved": "A ti fi pamọ́: bọ́tìnnì àti ìjápọ̀ {palette}.",
+      "help": "Fún bọ́tìnnì, ìjápọ̀ àti tab, tí a dárúkọ fún glaze. Ọ̀kọ̀ọ̀kan rọrùn láti kà ní ìmọ́lẹ̀ àti ní òkùnkùn."
+    },
+    "weightUnit": {
+      "legend": "Ìwọ̀n batch",
+      "grams": {
+        "label": "Gíráàmù",
+        "saved": "A ti fi pamọ́: ìwọ̀n batch wà ní gíráàmù."
+      },
+      "pounds": {
+        "label": "Pound àti ounce",
+        "saved": "A ti fi pamọ́: ìwọ̀n batch wà ní pound àti ounce."
+      },
+      "help": "Fún batch tí a tẹ̀ jáde."
+    },
+    "gramPrecision": {
+      "legend": "Gíráàmù lórí batch tí a tẹ̀ jáde",
+      "single": {
+        "label": "Dé ìdá kan nínú mẹ́wàá gíráàmù",
+        "saved": "A ti fi pamọ́: gíráàmù ń fi hàn dé ìdá kan nínú mẹ́wàá."
+      },
+      "full": {
+        "label": "Ní kíkún",
+        "saved": "A ti fi pamọ́: gíráàmù ń fi hàn ní kíkún, dé ibi ìdá 5."
+      },
+      "help": "Dé ìdá kan nínú mẹ́wàá, iye tí kò tó 10 g ṣì ń fi ìdá kan nínú ọgọ́rùn-ún hàn (2.35 g), fún ohun àwọ̀ nínú batch ìdánwò kékeré."
+    },
+    "lead": {
+      "legend": "Òjé (lead, Pb)",
+      "off": {
+        "label": "Pa: má ṣe fi òjé (Pb) kún ìlànà tàbí dá a lábàá láé",
+        "saved": "A ti fi pamọ́: a kò ní fi òjé (Pb) kún ìlànà tàbí dá a lábàá láé."
+      },
+      "on": {
+        "label": "Tàn: a lè fi ohun èlò tí ó ní òjé (Pb) kún un kí a sì dá a lábàá",
+        "saved": "A ti fi pamọ́: a lè fi ohun èlò tí ó ní òjé (Pb) kún un kí a sì dá a lábàá."
+      },
+      "help": "Òjé (lead, Pb) jẹ́ májèlé láti mí sínú tàbí gbé mì, ó sì ń kó jọ sínú ara, glaze òjé sì lè tú u sílẹ̀ sínú oúnjẹ àti ohun mímu; kò sí ìṣirò tí ó lè sọ bóyá ìkòkò tí a ti sun ń ṣe bẹ́ẹ̀. Nígbà tí ó bá wà ní pípa, àwọn ìlànà tí ó ti ní òjé ṣì ń ṣí bí wọ́n ti wà.",
+      "warning": "Ẹ lo òjé (Pb) bí frit nìkan, kì í ṣe bí òjé aláìsè pupa, funfun tàbí yẹ́lò tàbí litharge láé. Ẹ pò ó ní tútù, ẹ má ṣe fọ́n ọn láé, ẹ wọ respirator kí ẹ sì fọ̀ ọ́ mọ́ ní tútù. Ẹ pa ìkòkò tí a fi glaze òjé (Pb) ṣe mọ́ kúrò lọ́dọ̀ oúnjẹ àti ohun mímu àyàfi bí ìdánwò ìṣàn irin jáde (leach test) ti ilé ìwádìí lórí ìkòkò tí a ti sun bá ti yege.",
+      "turnOn": "Tan òjé",
+      "keepOff": "Fi í sílẹ̀ ní pípa"
+    },
+    "englishTerms": {
+      "legend": "Ọ̀rọ̀ èdè Gẹ̀ẹ́sì",
+      "off": {
+        "label": "Pa",
+        "saved": "A ti fi pamọ́: kò sí ọ̀rọ̀ èdè Gẹ̀ẹ́sì."
+      },
+      "on": {
+        "label": "Fi èdè Gẹ̀ẹ́sì hàn lẹ́yìn ọ̀rọ̀ pàtàkì",
+        "saved": "A ti fi pamọ́: a ń fi èdè Gẹ̀ẹ́sì hàn lẹ́yìn ọ̀rọ̀ pàtàkì."
+      },
+      "help": "Fún kíka orísun èdè Gẹ̀ẹ́sì, bí Digitalfire, lẹ́gbẹ̀ẹ́ èyí: ọ̀rọ̀ pàtàkì ń gba èdè Gẹ̀ẹ́sì wọn nínú àkámọ́."
+    },
+    "notice": {
+      "legend": "Ìfitónilétí ìtúmọ̀",
+      "shown": {
+        "label": "Ó ń hàn",
+        "saved": "A ti fi pamọ́: ìfitónilétí náà ń hàn."
+      },
+      "hidden": {
+        "label": "A fi pamọ́",
+        "saved": "A ti fi pamọ́: ìfitónilétí náà kò hàn. Ìlà kan nínú rẹ̀ ṣì wà nínú àwọn ìtọ́sọ́nà ààbò.",
+        "savedPlain": "A ti fi pamọ́: ìfitónilétí náà kò hàn. Ìlà kan nínú rẹ̀ ṣì wà lókè ojú-ìwé kọ̀ọ̀kan."
+      },
+      "help": "Àkíyèsí lókè ojú-ìwé kọ̀ọ̀kan tí ó sọ pé AI ló túmọ̀ rẹ̀, pẹ̀lú ọ̀nà láti dá àtúnṣe lábàá."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Ẹ jẹ́rìí sí email yín",
+    "intro": "Ẹ tẹ bọ́tìnnì náà láti jẹ́rìí sí àdírẹ́sì yìí.",
+    "confirm": "Jẹ́rìí",
+    "incomplete": "Ojú-ìwé yìí nílò ìjápọ̀ láti inú email ìjẹ́rìí, èyí kò sì pé.",
+    "account": "Àkáǹtì yín",
+    "signIn": "Wọlé",
+    "failed": "Àṣìṣe: a kò lè jẹ́rìí sí àdírẹ́sì náà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i."
+  },
+  "providers": {
+    "continueGoogle": "Tẹ̀síwájú pẹ̀lú Google",
+    "continueGithub": "Tẹ̀síwájú pẹ̀lú GitHub",
+    "continueMicrosoft": "Wọlé pẹ̀lú Microsoft",
+    "failed": "Wíwọlé kò ṣiṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "heading": "Google, GitHub àti Microsoft",
+    "intro": "Ẹ so àkáǹtì Google, GitHub tàbí Microsoft pọ̀ láti wọlé pẹ̀lú rẹ̀. Glazecalc ń pa id àkáǹtì náà nìkan mọ́ láti ọ̀dọ̀ rẹ̀, kì í ṣe orúkọ rẹ̀, fọ́tò rẹ̀ tàbí ohunkóhun mìíràn láé, wíwọlé ìgbésẹ̀ méjì sì ṣì ń bèèrè fún ìgbésẹ̀ kejì rẹ̀.",
+    "passwordless": "Àkáǹtì yìí kò ní ọ̀rọ̀ aṣínà. Láti yí email yín, wíwọlé ìgbésẹ̀ méjì tàbí àwọn ọ̀nà tí ẹ fi ń wọlé padà, tàbí láti pa àkáǹtì yín rẹ́, ẹ ń jẹ́rìí pé ẹ̀yin ni nípa wíwọlé lẹ́ẹ̀kan sí i pẹ̀lú Google, GitHub tàbí Microsoft, èyí tí ẹ so pọ̀. Ẹ tún lè ṣètò ọ̀rọ̀ aṣínà.",
+    "setPassword": "Fi ìjápọ̀ ránṣẹ́ sí mi láti ṣètò ọ̀rọ̀ aṣínà",
+    "setPasswordUnlinks": "Ṣíṣètò ọ̀rọ̀ aṣínà pẹ̀lú ìjápọ̀ tí a fi email ránṣẹ́ tún ń tú Google, GitHub àti Microsoft kúrò. Ẹ lè tún so wọ́n pọ̀ lẹ́yìn náà.",
+    "setPasswordFailed": "A kò lè fi ìjápọ̀ náà ránṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "confirmFirst": "Ẹ kọ́kọ́ jẹ́rìí sí email yín, pẹ̀lú ìjápọ̀ tí a fi ránṣẹ́ sí yín, láti so Google, GitHub tàbí Microsoft pọ̀.",
+    "linkedOn": "A so ó pọ̀ ní {date}",
+    "notLinked": "A kò so ó pọ̀",
+    "link": "So {provider} pọ̀",
+    "unlink": "Tú {provider} kúrò",
+    "linkFailed": "A kò lè so ó pọ̀. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "reauthIntro": "Àkáǹtì yìí kò ní ọ̀rọ̀ aṣínà, nítorí náà ẹ jẹ́rìí pé ẹ̀yin ni nípa wíwọlé lẹ́ẹ̀kan sí i. Lẹ́yìn náà ẹ ṣe àyípadà náà láàárín ìṣẹ́jú 5.",
+    "reauthButton": "Tún wọlé pẹ̀lú {provider}",
+    "reauthHeld": "Ẹ tún wọlé pẹ̀lú {provider}. Ẹ lè ṣe àyípadà kan láìsí ọ̀rọ̀ aṣínà láàárín ìṣẹ́jú 5 tó ń bọ̀.",
+    "reauthFirst": "Ẹ jọ̀wọ́, ẹ kọ́kọ́ tún wọlé, pẹ̀lú ọ̀kan nínú àwọn bọ́tìnnì tó wà lókè.",
+    "reauthFailed": "A kò lè bẹ̀rẹ̀ wíwọlé lẹ́ẹ̀kan sí i. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i."
+  },
+  "apps": {
+    "title": "Àwọn app tí a so pọ̀",
+    "lead": "Àwọn olùrànlọ́wọ́, script àti app tí ó lè dé àwọn àkọsílẹ̀ yín. Ẹ wo ohun tí ọ̀kọ̀ọ̀kan ṣe, ẹ dá ohun tí ó gbé lọ sí Ibi ìdọ̀tí padà, kí ẹ sì dá a dúró nígbàkígbà tí ẹ bá fẹ́.",
+    "listHeading": "Àwọn app tí ẹ so pọ̀ àti access token yín",
+    "listLabel": "Àwọn app tí a so pọ̀ àti access token",
+    "makeToken": "Ṣe access token",
+    "none": "Kò sí ohun tí a so pọ̀ mọ́ àkáǹtì yín.",
+    "loadFailed": "A kò lè gbé àwọn app tí ẹ so pọ̀ wá. Ẹ jọ̀wọ́, ẹ tún ojú-ìwé náà ṣí láti gbìyànjú lẹ́ẹ̀kan sí i.",
+    "kindToken": "Access token",
+    "kindOauth": "App tí a so pọ̀",
+    "clientHost": "Àdírẹ́sì app: {host}",
+    "redirectHost": "Ó ń dá yín padà sí: {host}",
+    "last90": "Ní ọjọ́ 90 sẹ́yìn:",
+    "nothingDone": "Kò yí nǹkan kan padà ní ọjọ́ 90 sẹ́yìn.",
+    "count": {
+      "create": "{count, plural, other {Àkọsílẹ̀ # ni a ṣe}}",
+      "change": "{count, plural, other {Àkọsílẹ̀ # ni a yí padà}}",
+      "trash": "{count, plural, other {Àkọsílẹ̀ # ni a gbé lọ sí Ibi ìdọ̀tí}}",
+      "restore": "{count, plural, other {Àkọsílẹ̀ # ni a dá padà}}",
+      "undo": "{count, plural, other {Àyípadà # ni a dá padà}}"
+    },
+    "action": {
+      "create": "Ó ṣe",
+      "change": "Ó yí padà",
+      "trash": "Ó gbé lọ sí Ibi ìdọ̀tí:",
+      "restore": "Ó dá padà:",
+      "undo": "Ó dá àyípadà padà sí"
+    },
+    "show": "Fi kúlẹ̀kúlẹ̀ hàn",
+    "hide": "Fi kúlẹ̀kúlẹ̀ pamọ́",
+    "showNamed": "Fi kúlẹ̀kúlẹ̀ {name} hàn",
+    "hideNamed": "Fi kúlẹ̀kúlẹ̀ {name} pamọ́",
+    "loading": "Ó ń gbé e wá...",
+    "detailFailed": "A kò lè gbé kúlẹ̀kúlẹ̀ náà wá. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "movedHeading": "A gbé e lọ sí Ibi ìdọ̀tí",
+    "movedNone": "Kò sí ohun tí ó gbé tí ó ṣì wà nínú Ibi ìdọ̀tí.",
+    "putAllBack": "Dá gbogbo rẹ̀ padà",
+    "activityHeading": "Ohun tí ó ṣe",
+    "activityNone": "Kò sí nǹkan ní ọjọ́ 90 sẹ́yìn.",
+    "older": "Fi àwọn àtijọ́ hàn",
+    "revokeQuestion": "Ṣé kí a fagilé {name}? Yóò dẹ́kun iṣẹ́ lójú ẹsẹ̀.",
+    "revokeYes": "Bẹ́ẹ̀ni, fagilé e",
+    "revokeAll": "Fagilé gbogbo rẹ̀",
+    "revokeAllQuestion": "{count, plural, other {Ṣé kí a fagilé gbogbo ìsopọ̀ # tí ó ṣì ń ṣiṣẹ́?}} Wọn yóò dẹ́kun iṣẹ́ lójú ẹsẹ̀.",
+    "revokeFailed": "Àṣìṣe: a kò lè fagilé e. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "restoreFailed": "Àṣìṣe: a kò lè dá àwọn àkọsílẹ̀ náà padà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "selfDescribed": "ó ṣàpèjúwe ara rẹ̀",
+    "selfDescribedNote": "Ó forúkọ ara rẹ̀ sílẹ̀, nítorí náà orúkọ rẹ̀ jẹ́ ohun tí ó sọ nípa ara rẹ̀ nìkan.",
+    "confirm": {
+      "heading": "Jẹ́rìí kí àyípadà tó ṣẹlẹ̀",
+      "intro": "Ẹ yan bóyá àyípadà láti ọ̀dọ̀ olùrànlọ́wọ́, app tàbí access token yóò dúró títí ẹ ó fi fọwọ́ sí i níbí, nígbà tí ẹ ti wọlé. Kò sí ohun tí ó bèèrè tí a ó yí padà títí ẹ ó fi ṣe bẹ́ẹ̀.",
+      "off": "Má ṣe bèèrè láé",
+      "offHint": "A ń ṣe àyípadà lójú ẹsẹ̀. Ọ̀kọ̀ọ̀kan ń pa àkọsílẹ̀ náà mọ́ bí ó ti wà, kí ẹ lè dá a padà, a sì ń fi ohun tí app kọ̀ọ̀kan ṣe hàn ní ìsàlẹ̀.",
+      "removals": "Bèèrè kí a tó yọ nǹkan kúrò",
+      "removalsHintSite": "Gbígbé àkọsílẹ̀ kan lọ sí Ibi ìdọ̀tí, yíyọ ohun èlò kan kúrò nínú àwọn ohun èlò tí ẹ ní lọ́wọ́, tàbí yíyọ àkọsílẹ̀ ìsun kan kúrò lára ìlànà kan ń dúró de ìfọwọ́sí yín lórí ojú òpó yìí.",
+      "all": "Bèèrè kí gbogbo àyípadà tó ṣẹlẹ̀",
+      "allHint": "Gbogbo àkọsílẹ̀ tuntun, àyípadà, ìdápadà àti yíyọkúrò ń dúró de ìfọwọ́sí yín lórí ojú òpó yìí.",
+      "how": "Àyípadà tí ń dúró ní ojú-ìwé tirẹ̀, tí olùrànlọ́wọ́ tàbí script yóò fún yín ní ìjápọ̀ sí. Ó ń dúró fún ìṣẹ́jú 30, lẹ́yìn náà a kò yí nǹkan kan padà. Access token tí a ṣe pẹ̀lú \"Àyípadà láti token yìí kò nílò ìjẹ́rìí\" ni a kò ní bèèrè lọ́wọ́ rẹ̀ láé.",
+      "exempt": "Àwọn àyípadà rẹ̀ kò nílò ìjẹ́rìí.",
+      "saveFailed": "Àṣìṣe: a kò lè fi ìyàn yín pamọ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i."
+    }
+  },
+  "connect": {
+    "title": "So app kan pọ̀ mọ́ àkáǹtì yín",
+    "loading": "Ó ń gbé e wá...",
+    "loadFailed": "A kò lè gbé ìbéèrè yìí láti so app kan pọ̀ wá. Ẹ jọ̀wọ́, ẹ tún ojú-ìwé náà ṣí, tàbí ẹ tún bẹ̀rẹ̀ nínú app náà.",
+    "answerFailed": "Àṣìṣe: a kò lè fi èsì yín ránṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "toAccount": "Lọ sí àkáǹtì yín",
+    "asking": "App yìí ń bèèrè láti so pọ̀ mọ́ àkáǹtì Glazecalc yín:",
+    "noName": "App tí kò ní orúkọ",
+    "selfDescribed": "ó ṣàpèjúwe ara rẹ̀",
+    "selfDescribedNote": "Ó forúkọ ara rẹ̀ sílẹ̀, nítorí náà orúkọ yìí jẹ́ ohun tí ó sọ nípa ara rẹ̀ nìkan. Glazecalc kò tíì ṣàyẹ̀wò rẹ̀.",
+    "account": "Ẹ wọlé gẹ́gẹ́ bí {email}",
+    "appAddress": "Àdírẹ́sì app náà",
+    "checked": "(Glazecalc ti ṣàyẹ̀wò rẹ̀)",
+    "answerTo": "Ibi tí èsì yín ń lọ",
+    "ownComputer": "Kọ̀ǹpútà yín fúnra yín",
+    "appOnDevice": "App kan lórí ẹ̀rọ yín tí ó ń ṣí ìjápọ̀ {scheme}",
+    "loopbackWarning": "App yìí ń gba èsì náà lórí kọ̀ǹpútà yín fúnra yín. Ẹ gbà á láàyè kìkì bí ẹ̀yin fúnra yín bá bẹ̀rẹ̀ èyí, lórí kọ̀ǹpútà yìí, ní báyìí.",
+    "loopbackWriteWarning": "Ó tún ń bèèrè láti yí àwọn àkọsílẹ̀ yín padà: ètò èyíkéyìí lórí kọ̀ǹpútà yìí tí ó bá gba èsì náà lè yí wọn padà nígbà náà.",
+    "appSchemeWarning": "Èsì náà ń lọ sí app èyíkéyìí lórí ẹ̀rọ yín tí ó ń ṣí ìjápọ̀ {scheme}. A kò ṣàyẹ̀wò ìyókù àdírẹ́sì yẹn, nítorí náà ó lè dà bí ojú òpó èyíkéyìí. Ẹ gbà á láàyè kìkì bí ẹ bá bẹ̀rẹ̀ èyí láti app tí ẹ gbẹ́kẹ̀lé, ní báyìí.",
+    "elsewhereWarning": "Àdírẹ́sì app yìí ni {app}, ṣùgbọ́n èsì yín ń lọ sí {answer}. Ẹ gbà á láàyè kìkì bí ẹ bá ń retí ìyẹn.",
+    "canHeading": "Ohun tí ó lè ṣe",
+    "canRead": "Ka àwọn ìlànà, ìwé àkọsílẹ̀, ohun èlò, àtòjọ ohun èlò lọ́wọ́ àti ètò yín.",
+    "readOnly": "Kò lè yí nǹkan kan padà.",
+    "alsoWrite": "Jẹ́ kí ó tún yí àwọn àkọsílẹ̀ mi padà",
+    "writeWarning": "Nígbà náà ó lè ṣẹ̀dá àwọn àkọsílẹ̀ yín kí ó sì yí wọn padà, kí ó sì gbé wọn lọ sí Ibi ìdọ̀tí. Àyípadà kọ̀ọ̀kan ń pa ẹ̀yà àkọsílẹ̀ náà mọ́ bí ó ti wà, kí ẹ lè dá a padà. Ẹ lè fagilé e nígbàkígbà lórí Àwọn app tí a so pọ̀.",
+    "privacy": "Ohun tí Glazecalc ń pa mọ́ nípa àwọn app tí a so pọ̀ wà nínú <privacy>ìkéde àṣírí</privacy>. Ẹ lè rí àwọn app yín kí ẹ sì fagilé wọn lórí <apps>Àwọn app tí a so pọ̀</apps>.",
+    "allow": "Gbà láàyè",
+    "deny": "Má ṣe gbà láàyè",
+    "sending": "A ń fi èsì yín ránṣẹ́ sí app náà..."
+  },
+  "tokens": {
+    "heading": "Access token",
+    "intro": "Access token ń jẹ́ kí olùrànlọ́wọ́ AI tàbí script tiyín ka àwọn ìlànà, ohun èlò, àkíyèsí àti àkọsílẹ̀ ìsun inú àkáǹtì yín, àti, bí ẹ bá yàn, yí wọn padà. Token kọ̀ọ̀kan ń dẹ́kun iṣẹ́ ní ọjọ́ tí ẹ yàn, tàbí ní kété tí ẹ bá fagilé e.",
+    "howTo": "Bí a ṣe ń so olùrànlọ́wọ́ AI pọ̀",
+    "seeThem": "Àwọn token yín àti app tí a so pọ̀, ohun tí ọ̀kọ̀ọ̀kan ṣe, àti Fagilé wà lórí ojú-ìwé Àwọn app tí a so pọ̀.",
+    "seeThemLink": "Ṣí Àwọn app tí a so pọ̀",
+    "hint": "tí ó parí sí {hint}",
+    "readOnly": "Kíkà nìkan",
+    "readWrite": "Kíkà àti yíyí padà",
+    "created": "a ṣe é ní {date}",
+    "lastUsed": "a lò ó kẹ́yìn ní {date}",
+    "neverUsed": "a kò tíì lò ó",
+    "expires": "ó ń tán ní {date}",
+    "expiredOn": "ó tán ní {date}",
+    "revokedOn": "a fagilé e ní {date}",
+    "revoke": "Fagilé",
+    "revokeNamed": "Fagilé {name}",
+    "revokeAll": "Fagilé gbogbo access token",
+    "revokeFailed": "Àṣìṣe: a kò lè fagilé token náà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "loadFailed": "A kò lè gbé access token yín wá. Ẹ jọ̀wọ́, ẹ tún ojú-ìwé náà ṣí láti gbìyànjú lẹ́ẹ̀kan sí i.",
+    "createHeading": "Ṣe token",
+    "name": "Orúkọ",
+    "nameHint": "Ohun kan láti fi dá a mọ̀ yàtọ̀, bí olùrànlọ́wọ́ tàbí kọ̀ǹpútà tí ó wà fún.",
+    "nameCheck": "Ẹ jọ̀wọ́, ẹ fún token náà ní orúkọ tí ó ní àmì 1 sí {most}.",
+    "expiry": "Ó dẹ́kun iṣẹ́ lẹ́yìn",
+    "days": "{count, plural, other {ọjọ́ #}}",
+    "expiryHint": "A ó fi email ránṣẹ́ sí yín ọjọ́ 7 kí token kan tó dẹ́kun iṣẹ́.",
+    "expiryWriteHint": "{count, plural, other {Token tí ó lè yí àwọn àkọsílẹ̀ yín padà ń dẹ́kun iṣẹ́ lẹ́yìn tí kò ju ọjọ́ # lọ.}}",
+    "confirmEmailFirst": "Kí ẹ tó lè ṣe token, ẹ jẹ́rìí sí email yín: ẹ ṣí ìjápọ̀ tí a fi ránṣẹ́ sí {email}. A ń sọ fún yín ní àdírẹ́sì yẹn nígbà tí a bá ṣe token àti kí ọ̀kan tó dẹ́kun iṣẹ́.",
+    "resend": "Tún fi ìjápọ̀ ìjẹ́rìí ránṣẹ́",
+    "scopeNote": "Token náà lè ka àwọn àkọsílẹ̀ yín ṣùgbọ́n kò lè yí wọn padà.",
+    "scope": "Ohun tí ó lè ṣe",
+    "scopeWriteNote": "Token náà tún lè fi àkọsílẹ̀ tuntun pamọ́, yí wọn padà kí ó sì gbé wọn lọ sí Ibi ìdọ̀tí. Àyípadà kọ̀ọ̀kan ń pa àkọsílẹ̀ náà mọ́ bí ó ti wà, kí ẹ lè dá a padà, ohun tí token náà ṣe sì wà lórí Àwọn app tí a so pọ̀ àti nínú Gba dátà mi sílẹ̀. Ẹ yan èyí fún olùrànlọ́wọ́ tàbí script tí ẹ gbẹ́kẹ̀lé láti yí àwọn àkọsílẹ̀ yín padà nìkan.",
+    "confirmStep": "Láti ṣe token náà, ẹ jẹ́rìí pé ẹ̀yin ni.",
+    "create": "Ṣe token náà",
+    "failed": "Àṣìṣe: a kò lè ṣe token náà. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "limit": "Ẹ ní access token {most} tí ń ṣiṣẹ́, èyí tí ó pọ̀ jù lọ tí àkáǹtì lè ní. Ẹ fagilé ọ̀kan láti ṣe òmíràn.",
+    "newHeading": "Ẹ da token tuntun yín kọ báyìí",
+    "newText": "Ìgbà yìí nìkan ni a ó fi hàn. Ẹnikẹ́ni tí ó bá ní in lè ka àwọn àkọsílẹ̀ yín títí yóò fi dẹ́kun iṣẹ́, nítorí náà ẹ pa á mọ́ bí ọ̀rọ̀ aṣínà, kí ẹ sì fún olùrànlọ́wọ́ tàbí script tiyín nìkan.",
+    "newTextWrite": "Ìgbà yìí nìkan ni a ó fi hàn. Ẹnikẹ́ni tí ó bá ní in lè ka àwọn àkọsílẹ̀ yín kí ó sì yí wọn padà títí yóò fi dẹ́kun iṣẹ́, nítorí náà ẹ pa á mọ́ bí ọ̀rọ̀ aṣínà, kí ẹ sì fún olùrànlọ́wọ́ tàbí script tiyín nìkan.",
+    "newLabel": "Access token tuntun yín",
+    "copy": "Da token náà kọ",
+    "copied": "A ti dà á kọ.",
+    "copyFailed": "A kò lè dà á kọ. Ẹ yan token náà kí ẹ sì dà á kọ fúnra yín.",
+    "done": "Mo ti dà á kọ",
+    "keptHeading": "Access token yín ṣì ń ṣiṣẹ́",
+    "keptText": "{count, plural, other {Yíyí ọ̀rọ̀ aṣínà yín padà kò dá access token # yín dúró. Bí ẹ bá yí i padà nítorí pé ẹlòmíràn lè mọ̀ ọ́n, ẹ fagilé token náà pẹ̀lú.}}",
+    "keep": "Pa wọ́n mọ́",
+    "signOutNote": "{count, plural, other {Ó tún ń dá access token # yín dúró, pátápátá.}}",
+    "noConfirm": "Àyípadà láti token yìí kò nílò ìjẹ́rìí",
+    "noConfirmHint": "Fún script tí ẹ̀yin fúnra yín ń ṣiṣẹ́. Bí ẹ bá yàn láti jẹ́rìí àyípadà lórí Àwọn app tí a so pọ̀, a kò ní bèèrè lọ́wọ́ token yìí láé. Ẹ lè yan èyí báyìí nìkan, nígbà tí a ń ṣe token náà."
+  },
+  "confirm": {
+    "title": "Fọwọ́ sí àyípadà kan",
+    "lead": "App kan tí a so pọ̀ mọ́ àkáǹtì yín ń bèèrè láti ṣe àyípadà yìí. A kò ní yí nǹkan kan padà títí ẹ ó fi fọwọ́ sí i.",
+    "from": "{name} ló bèèrè",
+    "fromToken": "access token kan",
+    "fromConnectedApp": "app kan tí a so pọ̀",
+    "selfDescribed": "ó ṣàpèjúwe ara rẹ̀",
+    "selfDescribedNote": "Ó forúkọ ara rẹ̀ sílẹ̀, nítorí náà orúkọ rẹ̀ jẹ́ ohun tí ó sọ nípa ara rẹ̀ nìkan. Glazecalc kò tíì ṣàyẹ̀wò rẹ̀.",
+    "asked": "A bèèrè ní {date}. Ó ń dúró títí di {time}, lẹ́yìn náà a kò yí nǹkan kan padà.",
+    "removal": "Èyí ń yọ nǹkan kan kúrò: àkọsílẹ̀ kan ń lọ sí Ibi ìdọ̀tí, níbi tí ẹ ti lè dá a padà fún ọjọ́ 30, tàbí ohun èlò kan ń kúrò nínú àwọn ohun èlò tí ẹ ní lọ́wọ́.",
+    "check": "Ẹ fọwọ́ sí i kìkì bí ẹ bá bèèrè fún àyípadà yìí. Bí ẹ kò bá bèèrè, ẹ kọ̀ ọ́, kí ẹ sì fagilé app náà lórí Àwọn app tí a so pọ̀.",
+    "approve": "Fọwọ́ sí àyípadà náà",
+    "decline": "Kọ̀ ọ́",
+    "titleBefore": "Kí app yìí tó yí i padà, orúkọ rẹ̀ ni “{title}”.",
+    "untitled": "(kò ní àkọlé)",
+    "changedAgo": "{minutes, plural, =0 {App yìí yí i padà ní kò tó ìṣẹ́jú kan sẹ́yìn.} other {App yìí yí i padà ní ìṣẹ́jú # sẹ́yìn.}}",
+    "now": "Báyìí:",
+    "after": "Lẹ́yìn àyípadà:",
+    "showAll": "Fi gbogbo rẹ̀ hàn",
+    "showLess": "Fi díẹ̀ hàn",
+    "othersHeading": "{count, plural, other {Àyípadà # sí i ń dúró láti ọ̀dọ̀ {name}}}",
+    "approveAllShown": "{count, plural, other {Fọwọ́ sí gbogbo àyípadà # láti ọ̀dọ̀ {name}}}",
+    "declineAll": "{count, plural, other {Kọ gbogbo àyípadà # láti ọ̀dọ̀ {name}}}",
+    "decided": "A ti pinnu àyípadà yìí tẹ́lẹ̀.",
+    "notFound": "Kò sí àyípadà tí ń dúró ní àdírẹ́sì yìí. Ó lè jẹ́ pé a ti fọwọ́ sí i tàbí kọ̀ ọ́ tẹ́lẹ̀, tàbí ó ti dúró ju ìṣẹ́jú 30 lọ, tàbí ó jẹ́ ti àkáǹtì mìíràn.",
+    "signIn": "Ẹ wọlé sí Glazecalc pẹ̀lú àkáǹtì tí àyípadà náà wà fún, lẹ́yìn náà ẹ tún ṣí ìjápọ̀ yìí.",
+    "signInLink": "Wọlé",
+    "loadFailed": "A kò lè gbé àyípadà náà wá. Ẹ jọ̀wọ́, ẹ tún ojú-ìwé náà ṣí láti gbìyànjú lẹ́ẹ̀kan sí i.",
+    "failed": "Àṣìṣe: a kò lè fi èsì yín ránṣẹ́. Ẹ jọ̀wọ́, ẹ gbìyànjú lẹ́ẹ̀kan sí i.",
+    "apps": "Ẹ wo àwọn app tí ẹ so pọ̀"
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "signInHeading": "Gal",
+    "keepHeading": "Hayso shaqadaada",
+    "signUpHeading": "Samee akoonkaaga",
+    "signInLead": "Ku soo dhowow mar kale buuggaaga glaze-ka.",
+    "keepLead": "Hayso wax kasta oo aad ku samaysay magaca {name}: ku dar iimaylkaaga iyo furo sir. Wuxuu sii ahaanayaa bilaash.",
+    "signUpLead": "Bilaash. Hababkaaga, walxahaaga iyo qoraalladaada waxay ku gaar yihiin akoonkaaga.",
+    "trialNote": "Akoon ma haysataa? Markaad gasho, wixii aad ku samaysay magaca {name} ayaa lagu darayaa. Cusub ma tahay? <signup>Samee akoon</signup> si aad u haysato.",
+    "email": "Iimayl",
+    "password": "Furaha sirta",
+    "passwordHint": "Ugu yaraan 8 xaraf.",
+    "confirmation": "Xaqiiji furaha sirta",
+    "keepSignedIn": "Igu hay akoonka qalabkan",
+    "passwordMissing": "Geli furaha sirtaada.",
+    "createAccount": "Samee akoon",
+    "signIn": "Gal",
+    "haveAccount": "Akoon ma haysataa? <signin>Gal</signin>",
+    "privacy": "Iimaylkaaga iyo waxaad kaydiso waxaa loo isticmaalaa oo kaliya si akoonkaaga loo shaqeeyo, waxaana lagu kaydiyaa Amazon Web Services ee Maraykanka. <privacy>Sida Glazecalc u maareeyo xogtaada</privacy>",
+    "terms": "Markaad akoon samayso, waxaad oggolaanaysaa <terms>Shuruudaha isticmaalka</terms>.",
+    "dataNotice": "Glazecalc waa mashruuc bilaash ah oo il furan, akoonnadana waxaa lagu hayaa server-yo ku yaal Maraykanka. Waxaad akhrin kartaa hagayaasha oo tijaabin kartaa xisaabiyaha akoon la'aan, ama shaqaysiin kartaa nuqulkaaga. In aad halkan akoon ka samayso waa go'aankaaga, mashruuciina mas'uuliyad kama qaado. <where>Halka akoonkaaga lagu hayo, iyo doorashadaada</where>",
+    "forgot": "Ma ilowday furaha sirta? Dib u deji",
+    "newHere": "Cusub ma tahay? <signup>Samee akoon bilaash ah</signup>",
+    "signUpFailed": "Qalad: akoonka lama samayn karin.",
+    "signInFailed": "Qalad: lama geli karin.",
+    "or": "ama",
+    "passkeySignIn": "Ku gal passkey",
+    "passkeyHint": "Passkey wuxuu isticmaalaa faraha, wejiga ama qufulka shaashadda, halkii furo sir. Mid ku dar bogga akoonkaaga."
+  },
+  "secondStep": {
+    "heading": "Galitaanka laba-tallaabo",
+    "signingInAs": "Furaha sirtaadu waa sax. Hal tallaabo oo kale si aad u gasho sida {email}.",
+    "leadCode": "Fur app-ka xaqiijinta (authenticator app) oo geli koodhka uu u muujiyo Glazecalc.",
+    "leadPasskey": "Isticmaal passkey-gaaga si aad u dhammaystirto galitaanka.",
+    "leadRecovery": "Geli mid ka mid ah koodhadhka soo-celinta ee aad kaydisay markaad shiday galitaanka laba-tallaabo. Koodh kasta hal mar ayuu shaqeeyaa.",
+    "code": "Koodhka app-ka xaqiijinta",
+    "codeHint": "{digits} god. Koodh cusub ayaa soo baxa 30 ilbiriqsi kasta.",
+    "codeFormat": "Geli koodhka {digits} god ah ee app-ka xaqiijinta.",
+    "recoveryCode": "Koodhka soo-celinta",
+    "recoveryHint": "Wuxuu u eg yahay abcde-12345.",
+    "recoveryMissing": "Geli mid ka mid ah koodhadhkaaga soo-celinta.",
+    "finish": "Dhammaystir galitaanka",
+    "usePasskey": "Isticmaal passkey",
+    "noPasskeysHere": "Browser-kan ma isticmaali karo passkey. Isticmaal hab kale oo hoose, ama ka gal qalab awood u leh.",
+    "useRecovery": "Beddelkeeda isticmaal koodh soo-celin",
+    "useApp": "Beddelkeeda isticmaal app-ka xaqiijinta",
+    "startOver": "Dib u bilow",
+    "reloadNote": "Tallaabadani waxay sugaysaa {minutes} daqiiqo. Haddii aad ka tagto ama dib u soo rarto boggan, waa inaad mar kale gelisaa furaha sirta.",
+    "expired": "Galitaanku aad buu u dheeraaday. Fadlan mar kale geli furaha sirta."
+  },
+  "passkey": {
+    "cancelled": "Passkey-ga lama isticmaalin: codsiga waa la joojiyay ama waqtigiisa ayaa dhammaaday, ama qalabkani passkey Glazecalc uma laha. Fadlan mar kale isku day, ama isticmaal hab kale.",
+    "registered": "Passkey-gan horay ayuu ugu jiray akoonkaaga.",
+    "browserFailed": "Browser-kani ma isticmaali karin passkey-ga. Fadlan mar kale isku day, ama isticmaal hab kale."
+  },
+  "forgot": {
+    "heading": "Dib u deji furaha sirta",
+    "checkInbox": "Eeg sanduuqa iimaylka iyo galka qashinka (junk). Haddii waxba imaan waayaan, hubi cinwaanka oo mar kale codso.",
+    "intro": "Geli iimaylka akoonkaaga, waxaanu kuu soo diraynaa link aad ku doorato furo sir oo cusub.",
+    "email": "Iimayl:",
+    "send": "Dir link-ga dib-u-dejinta",
+    "back": "Ku noqo galitaanka",
+    "failed": "Qalad: iimaylka dib-u-dejinta lama diri karin. Fadlan mar kale isku day."
+  },
+  "reset": {
+    "heading": "Dooro furo sir oo cusub",
+    "signIn": "Gal",
+    "incomplete": "Boggani wuxuu u baahan yahay link-ga iimaylka dib-u-dejinta furaha sirta, kanna ma dhammaystirna.",
+    "askAgain": "Codso link cusub",
+    "password": "Furaha sirta cusub:",
+    "confirmation": "Xaqiiji furaha sirta cusub:",
+    "save": "Kaydi furaha sirta cusub",
+    "hint": "Ugu yaraan 8 xaraf. Qalab kasta oo akoonka ku jira waa laga saarayaa.",
+    "failed": "Qalad: furaha sirta lama beddeli karin. Fadlan mar kale isku day.",
+    "secondStep": "Haddii akoonkaagu isticmaalo galitaanka laba-tallaabo, weli waxaad u baahan doontaa app-ka xaqiijinta, passkey ama koodh soo-celin si aad u gasho."
+  },
+  "account": {
+    "trialTitle": "Tijaabadaada",
+    "trialLead": "Waxaad Glazecalc u tijaabinaysaa sida {name}.",
+    "keepHeading": "Hayso shaqadaada",
+    "keepText": "Tijaabadan iyo wax kasta oo ku jira waa la saarayaa {date}. Samee akoon bilaash ah si aad u haysato: hababkaaga, walxahaaga iyo qoraalladaada sidooda ayay ahaanayaan, magaca {name} ayaana ahaanaya magacaaga la muujiyo.",
+    "createAccount": "Samee akoon",
+    "title": "Akoonkaaga",
+    "signedInAs": "Waxaad u gashay sida {email}.",
+    "contents": "Boggan",
+    "changeHeading": "Beddel furaha sirta",
+    "current": "Furaha sirta hadda",
+    "currentMissing": "Geli furaha sirtaada hadda.",
+    "password": "Furaha sirta cusub",
+    "passwordHint": "Ugu yaraan 8 xaraf. Qalabka kale ee akoonkan ku jira waa laga saarayaa.",
+    "confirmation": "Xaqiiji furaha sirta cusub",
+    "change": "Beddel furaha sirta",
+    "changeFailed": "Qalad: furaha sirta lama beddeli karin. Fadlan mar kale isku day.",
+    "deleteHeading": "Tirtir akoonkaaga",
+    "deleteText": "Tani waxay tirtiraysaa akoonkaaga iyo wax kasta oo aad kaydisay: habab, walxo, walxaha lagu daro, qoraallo, diiwaanka gubidda iyo talooyin. Dib looma celin karo.",
+    "deletePassword": "Furaha sirtaada, si aad u xaqiijiso",
+    "deletePasswordMissing": "Geli furaha sirtaada si aad u xaqiijiso.",
+    "delete": "Tirtir akoonkayga",
+    "deleteFailed": "Qalad: akoonka lama tirtiri karin. Fadlan mar kale isku day.",
+    "unverifiedHeading": "Xaqiiji iimaylkaaga",
+    "unverifiedText": "Waxaan link u dirnay {email} markaad samaysay akoonkan. Fur si aad u xaqiijiso in cinwaanku adiga kuu yahay. Ilaa markaas, waxaan iimayl u dirnaa oo kaliya markaad codsato, sida dib-u-dejinta furaha sirta.",
+    "resend": "Mar kale dir link-ga",
+    "resendFailed": "Qalad: link-ga lama diri karin. Fadlan mar kale isku day.",
+    "emailHeading": "Beddel iimaylkaaga",
+    "emailText": "Waxaan link u diraynaa cinwaanka cusub, iimaylkaaguna wuu isbeddelaa markaad furto. Waxaan sidoo kale u sheegaynaa cinwaankaaga hadda. Qalab kasta oo akoonkan ku jira waa laga saarayaa.",
+    "newEmail": "Iimaylka cusub",
+    "emailPassword": "Furaha sirtaada, si aad u xaqiijiso",
+    "emailSend": "Dir link-ga",
+    "emailFailed": "Qalad: link-ga lama diri karin. Fadlan mar kale isku day.",
+    "signOutHeading": "Meel kasta ka bax",
+    "signOutText": "Wuxuu kaa saarayaa qalab kasta, kan ku jiro, wuxuuna joojinayaa access token-adaada iyo link-yada wadaagga. Isticmaal haddii aad qalab lumisay ama aad u malaynayso in qof kale haysto galitaankaaga.",
+    "signOutButton": "Meel kasta ka bax",
+    "signOutFailed": "Qalad: lagama bixi karin. Fadlan mar kale isku day.",
+    "confirmStep": "Galitaanka laba-tallaabo waa shidan yahay, ee xaqiiji inaad adigu tahay: furaha sirtaada iyo tallaabo labaad."
+  },
+  "mfa": {
+    "heading": "Galitaanka laba-tallaabo",
+    "intro": "Weydii tallaabo labaad markaad gasho, furaha sirta ka sokow: koodh ka yimid app-ka xaqiijinta, ama passkey. Markaas qof ogaada furaha sirtaada weli ma geli karo.",
+    "loadFailed": "Galitaankaaga laba-tallaabo lama soo rari karin. Fadlan dib u soo rar bogga.",
+    "on": "Galitaanka laba-tallaabo waa shidan yahay.",
+    "onText": "Waxaad ku gashaa furaha sirtaada iyo tallaabo labaad, ama passkey kaliya.",
+    "off": "Galitaanka laba-tallaabo waa dansan yahay.",
+    "badgeOn": "Shidan",
+    "badgeOff": "Dansan",
+    "offText": "Si aad u shido, deji app xaqiijin ama ku dar passkey.",
+    "confirmEmailFirst": "Marka hore xaqiiji iimaylkaaga, kor. Waxaan u isticmaalnaa inaan kuugu sheegno isbeddellada habka aad u gasho, iyo inaan ku caawinno haddii aad lumiso tallaabadaada labaad.",
+    "appHeading": "App-ka xaqiijinta",
+    "appText": "App ku jira taleefankaaga ama maareeyaha furayaasha sirta ayaa muujiya koodh cusub 30 ilbiriqsi kasta, si aad u geliso markaad gasho.",
+    "addApp": "Deji app xaqiijin",
+    "removeApp": "Ka saar app-ka xaqiijinta",
+    "added": "La daray {date}.",
+    "lastUsed": "Markii ugu dambaysay la isticmaalay {date}.",
+    "notUsed": "Weli lama isticmaalin.",
+    "passkeysHeading": "Passkey-yada",
+    "passkeysText": "Passkey wuxuu kugu geliyaa faraha, wejiga ama qufulka shaashadda, qalabkan ama taleefankaaga. Wuxuu noqon karaa tallaabadaada labaad, ama kaligiis ku gelin karaa, furaha sirta la'aan.",
+    "noPasskeysHere": "Browser-kani ma samayn karo, mana isticmaali karo passkey. Isku day browser ama qalab kale.",
+    "addPasskey": "Ku dar passkey",
+    "removePasskey": "Ka saar passkey-ga",
+    "rename": "Magac beddel",
+    "remove": "Ka saar",
+    "renameLabel": "Magac cusub oo “{name}” ah",
+    "saveName": "Kaydi magaca",
+    "name": "Magaca passkey-ga",
+    "nameHint": "Si aad u kala garato passkey-yadaada, sida “Laptop” ama “Taleefan”.",
+    "nameCheck": "Sii passkey-ga magac 1 ilaa {most} xaraf ah.",
+    "passkeyLimit": "Waxaad haysataa {most} passkey, inta ugu badan ee akoon yeelan karo. Mid ka saar si aad mid kale ugu darto.",
+    "codesTitle": "Koodhadhka soo-celinta",
+    "codesLeft": "{count, plural, one {# ka mid ah {total} koodh soo-celin ayaa haray.} other {# ka mid ah {total} koodh soo-celin ayaa haray.}} Haddii aadan isticmaali karin app-kaaga ama passkey, koodh ayaa ku gelinaya. Koodh kasta hal mar ayuu shaqeeyaa.",
+    "codesLow": "Dhawaan samee koodhadh cusub. Haddii ay dhammaadaan oo aad lumiso app-kaaga iyo passkey-yadaada, ma geli kartid.",
+    "newCodes": "Samee koodhadh soo-celin oo cusub",
+    "offHeading": "Damintiisa",
+    "offWhat": "Galitaanka laba-tallaabo wuu shidnaanayaa inta aad haysato app xaqiijin ama passkey. Ka saarista kan ugu dambeeya ayaa damisa, kadibna:",
+    "offPassword": "Galitaanku wuxuu u baahan yahay furaha sirta oo kaliya, sidaas darteed qof kasta oo ogaada wuu geli karaa.",
+    "offCodes": "Koodhadhkaaga soo-celinta way joogsanayaan.",
+    "offSignOut": "Qalab kasta oo kale oo akoonkaaga ku jira waa laga saarayaa. Kan wuu ku jirayaa.",
+    "offEmail": "Waxaan kuu soo iimayl garaynaa in la damiyay.",
+    "offRemoveApp": "Dami galitaanka laba-tallaabo (wuxuu ka saarayaa app-ka)",
+    "offRemoveAppFirst": "Ka saar app-ka, si aad u bilowdo damintiisa",
+    "offPasskeys": "{count, plural, one {Si aad u damiso, ka saar passkey-gaaga qaybta Passkey-yada, kor.} other {Si aad u damiso, ka saar # passkey-yadaada qaybta Passkey-yada, kor.}}",
+    "offPasskeysToo": "{count, plural, one {Waxaad sidoo kale haysataa passkey: ka saar qaybta Passkey-yada, kor, iyo app-ka labadaba.} other {Waxaad sidoo kale haysataa # passkey: ka saar qaybta Passkey-yada, kor, iyo app-ka labadaba.}}",
+    "addAppText": "Si aad u dejiso app xaqiijin, marka hore xaqiiji inaad adigu tahay.",
+    "removeAppText": "Si aad uga saarto app-ka xaqiijinta, xaqiiji inaad adigu tahay.",
+    "addPasskeyText": "Magacaw passkey-ga oo xaqiiji inaad adigu tahay. Kadib browser-kaaga ayaa kaa codsanaya inaad samayso passkey-ga.",
+    "removePasskeyText": "Si aad uga saarto passkey-ga “{name}”, xaqiiji inaad adigu tahay.",
+    "newCodesText": "Koodhadhka cusub waxay beddelaan kuwaagii hore, oo joogsanaya. Xaqiiji inaad adigu tahay.",
+    "lastFactor": "Kani waa tallaabadaada labaad ee ugu dambaysa, sidaas darteed galitaanka laba-tallaabo wuu demayaa, koodhadhkaaga soo-celintana way joogsanayaan.",
+    "continue": "Sii wad",
+    "cancel": "Jooji",
+    "password": "Furaha sirtaada",
+    "factorLegend": "Iyo tallaabadaada labaad",
+    "passkeyNext": "Browser-kaaga ayaa ku weydiinaya passkey-gaaga markaad sii wado.",
+    "passkeyReadyText": "Mahadsanid. Hadda samee passkey-ga “{name}”: markaad riixdo badhanka, browser-kaaga ayaa ku weydiinaya faraha, wejiga ama qufulka shaashadda, ama taleefankaaga. Haddii uusan shaqayn, waxaad mar kale isku dayi kartaa muddo {minutes} daqiiqo ah adigoon mar kale xaqiijin.",
+    "passkeyCreate": "Hadda ku dar passkey-ga",
+    "useApp": "Beddelkeeda isticmaal app-ka xaqiijinta",
+    "usePasskey": "Beddelkeeda isticmaal passkey",
+    "useRecovery": "Beddelkeeda isticmaal koodh soo-celin",
+    "failed": "Qalad: isbeddelka lama samayn karin. Fadlan mar kale isku day.",
+    "setupHeading": "Deji app-kaaga xaqiijinta",
+    "setupOpen": "Fur app-kaaga xaqiijinta oo dooro inaad akoon ku darto.",
+    "setupScan": "App-ka ku iskaan koodhkan QR, ama qor furaha (key).",
+    "setupTap": "Taabo badhanka si aad Glazecalc ugu darto app xaqiijin ama maareeyaha furayaasha sirta ee taleefankan.",
+    "showQr": "Muuji koodhka QR, si aad qalab kale ugu dejiso",
+    "setupScanOther": "Ku iskaan app-ka xaqiijinta ee qalabka kale.",
+    "qrAlt": "Koodhka QR ee Glazecalc loogu daro app xaqiijin",
+    "key": "Furaha (key)",
+    "copyKey": "Koobiyee furaha",
+    "openInApp": "Ku dar app xaqiijin ee qalabkan",
+    "clipboardNote": "Qoraalka la koobiyeeyay wuxuu ku hari karaa taariikhda clipboard-ka oo gaari karaa qalabkaaga kale. Si toos ah ugu dheji maareeyaha furayaasha sirta, kadib tirtir taariikhda clipboard-ka.",
+    "setupCode": "Geli koodhka {digits} god ah ee app-ku hadda u muujinayo Glazecalc",
+    "setupFinish": "Dhammaystir dejinta",
+    "codesHeading": "Koodhadhkaaga soo-celinta",
+    "codesText": "Ku hay meel ammaan ah, sida maareeyaha furayaasha sirta, ama daabac oo la hay waraaqahaaga. Haddii aadan isticmaali karin app-kaaga ama passkey, koodh ayaa ku gelinaya. Koodh kasta hal mar ayuu shaqeeyaa. Hadda kaliya ayaa la muujinayaa.",
+    "print": "Daabac koodhadhka",
+    "printNote": "Koodh kasta hal mar ayuu shaqeeyaa. Boggan ku hay meel ammaan ah.",
+    "download": "Soo deji fayl qoraal ah",
+    "copy": "Koobiyee koodhadhka",
+    "copied": "Waa la koobiyeeyay.",
+    "copyFailed": "Lama koobiyeyn karin. Fadlan dooro qoraalka oo koobiyee.",
+    "saved": "Waan kaydiyay",
+    "fileTitle": "Koodhadhka soo-celinta Glazecalc ee {email}",
+    "fileNote": "Koodh kasta hal mar ayuu shaqeeyaa. Faylkan ku hay meel ammaan ah."
+  },
+  "export": {
+    "heading": "Soo deji xogtayda",
+    "text": "Kaydi nuqul wax kasta oo akoonkaagu hayo hal fayl ahaan: faahfaahintaada, dejinta, walxaha aad haysato, habab, walxo, walxaha lagu daro, qoraallo, diiwaanka gubidda, talooyin iyo qashinka. Kuma jiro furaha sirtaada. Faylka ku hay meel gaar ah, maxaa yeelay wuxuu hayaa wax kasta oo aad kaydisay.",
+    "json": "Soo deji wax kasta (JSON)",
+    "csvText": "Ama kaydi xaashi (spreadsheet) oo ah hababkaaga oo kaliya ama walxahaaga oo kaliya, si aad ugu furto Excel, Numbers ama Sheets.",
+    "recipes": "Habab (CSV)",
+    "materials": "Walxo (CSV)"
+  },
+  "trash": {
+    "heading": "Qashinka",
+    "text": "Waxaad ka saarto buuggaaga waxay Qashinka ku sugayaan 30 maalmood. Halkaas dib uga soo celi, ama si buuxda u tirtir.",
+    "open": "Fur Qashinka"
+  },
+  "shared": {
+    "heading": "Habab la wadaagay",
+    "text": "Hababka aad link ku wadaagto, oo qof kasta oo haysta link-ga akhrin karo akoon la'aan. Link waxaa la muujiyaa hal mar oo kaliya, marka la sameeyo, sidaas darteed halkan laguma muujin karo. Si aad hab mar kale u wadaagto, samee link cusub oo ka hooseeya “More” ee habka.",
+    "since": "La wadaagay tan iyo {date}",
+    "notesShown": "Qoraallada waa la muujiyay",
+    "notesHidden": "Qoraallada lama muujin",
+    "untitled": "Hab aan cinwaan lahayn",
+    "stop": "Jooji wadaagga",
+    "stopName": "Jooji wadaagga {name}",
+    "stopped": "{name} hadda lama wadaago. Link-giisu hadda ma shaqeeyo.",
+    "stopFailed": "Taasi ma shaqayn. Fadlan mar kale isku day.",
+    "fetchFailed": "Hababkaaga la wadaagay lama soo rari karin. Fadlan mar kale isku day.",
+    "none": "Wax hab ah ma wadaagaysid."
+  },
+  "settings": {
+    "heading": "Dejinta",
+    "intro": "Waxaa lagu kaydiyaa akoonkaaga, sidaas darteed qalab kasta way ku shaqeeyaan.",
+    "saveFailed": "Dejinta lama kaydin karin. Fadlan mar kale isku day.",
+    "language": {
+      "legend": "Luqadda",
+      "help": "Luqadda app-ka, hagayaasha iyo iimayllada. Beddelkeedu wuxuu boggan ku furayaa luqaddaas.",
+      "saved": "La kaydiyay: {language}."
+    },
+    "region": {
+      "legend": "Halka aad ka shaqayso",
+      "none": {
+        "label": "Lama dooran",
+        "saved": "La kaydiyay: gobol lama dooran; caadiyan waxay raacayaan browser-kaaga."
+      },
+      "saved": "La kaydiyay: {region}.",
+      "help": "Walxaha halkaas lagu iibiyo, iyo caadiyan tirooyinka, taariikhaha, heerkulka iyo cone-yada hoose. Ilaa aad doorato, waxay raacayaan luqadda browser-kaaga."
+    },
+    "format": {
+      "legend": "Tirooyinka iyo taariikhaha",
+      "auto": {
+        "label": "Sida luqaddayda iyo gobolkayga",
+        "saved": "La kaydiyay: tirooyinka iyo taariikhaha sida luqaddaada iyo gobolkaagu u qoraan."
+      },
+      "saved": "La kaydiyay: tirooyinka iyo taariikhaha sida {language}.",
+      "help": "Sida tirooyinka iyo taariikhaha loo qoro: 12,345.6 ama 12.345,6, iyo kala horraynta maalinta iyo bisha."
+    },
+    "calendar": {
+      "legend": "Kalandarka",
+      "help": "Kalandarka taariikhaha lagu muujiyo. Taariikhaha aad qorto waxay ku hadhayaan kalandarka Gregorian.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "La kaydiyay: taariikhaha waxaa lagu muujiyaa kalandarka Gregorian."
+      },
+      "buddhist": {
+        "label": "Waqtiga Buddhist-ka Thai",
+        "saved": "La kaydiyay: taariikhaha waxaa lagu muujiyaa waqtiga Buddhist-ka Thai."
+      },
+      "japanese": {
+        "label": "Waqtiyada Jabaan",
+        "saved": "La kaydiyay: taariikhaha waxaa lagu muujiyaa waqtiyada Jabaan."
+      }
+    },
+    "digits": {
+      "legend": "Godadka (digits)",
+      "help": "Godadka tirooyinka lagu muujiyo. Luqadaha qaar waxay leeyihiin kuwo u gaar ah, sida Carabiga, Bengali iyo Hindi, halka aad joogtaana waxay go'aamisaa kuwa caadiga ah. Waxaad tirooyinka ku qori kartaa midkood.",
+      "auto": {
+        "label": "Sida caadiga ka ah halka aad joogto",
+        "saved": "La kaydiyay: godadka sida caadiga ka ah halka aad joogto."
+      },
+      "western": {
+        "label": "Godadka reer galbeedka, 0–9",
+        "saved": "La kaydiyay: tirooyinka waxaa lagu muujiyaa godadka 0–9."
+      },
+      "native": {
+        "label": "Godadka luqadda u gaarka ah, halka ay ku leedahay",
+        "saved": "La kaydiyay: tirooyinka waxaa lagu muujiyaa godadka luqadda u gaarka ah, halka ay ku leedahay."
+      }
+    },
+    "decimalMark": {
+      "legend": "Qorista qadarrada",
+      "either": {
+        "label": "Hakad (comma) ama dhibic jajabka",
+        "example": "12,5 ama 12.5",
+        "saved": "La kaydiyay: qadarrada waxaa lagu qori karaa hakad ama dhibic."
+      },
+      "comma": {
+        "label": "Hakad (comma) jajabka",
+        "saved": "La kaydiyay: qadarrada waxaa jajabka loogu qoraa hakad."
+      },
+      "point": {
+        "label": "Dhibic jajabka",
+        "saved": "La kaydiyay: qadarrada waxaa jajabka loogu qoraa dhibic."
+      },
+      "help": "Midkood ha ahaado, qadar sida 1,250 waxaa loo akhriyaa sida tirooyinkaaga kor loogu qoro."
+    },
+    "temperature": {
+      "legend": "Heerkulka",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "La kaydiyay: heerkulka °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "La kaydiyay: heerkulka °F."
+      },
+      "help": "Ilaa aad doorato, tani waxay raacaysaa gobolkaaga: °F Maraykanka, °C meelaha kale."
+    },
+    "cones": {
+      "legend": "Gubidda",
+      "orton": {
+        "label": "Cone-yada Orton",
+        "example": "cone 04, cone 6",
+        "saved": "La kaydiyay: gubidda cone-yada Orton."
+      },
+      "sk": {
+        "label": "Cone-yada SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "La kaydiyay: gubidda cone-yada SK."
+      },
+      "temperature": {
+        "label": "Heerkul, sida barnaamijka kontaroolaha kiln-ka",
+        "saved": "La kaydiyay: gubidda heerkul ahaan."
+      },
+      "help": "Ilaa aad doorato, tani waxay raacaysaa gobolkaaga: cone-yada Orton US, UK, Ireland, Australia iyo New Zealand, cone-yada SK Jabaan, heerkul inta kale ee Yurub."
+    },
+    "density": {
+      "legend": "Cufnaanta glaze-ka",
+      "sg": {
+        "label": "Culeyska gaarka ah (SG)",
+        "saved": "La kaydiyay: cufnaanta glaze-ka culeys gaar ah ahaan.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Darajooyinka Baumé, hydrometer ka yimid",
+        "saved": "La kaydiyay: cufnaanta glaze-ka darajooyinka Baumé."
+      },
+      "pint": {
+        "label": "Miisaanka pint-ka, ounces-ka hal pint imperial ah",
+        "saved": "La kaydiyay: cufnaanta glaze-ka miisaanka pint-ka."
+      },
+      "help": "Sida hagayaashu u bixiyaan adkaanta glaze-ka. Ilaa aad doorato, tani waxay raacaysaa gobolkaaga: darajooyinka Baumé Talyaaniga iyo Jabaan, culeyska gaarka ah meelaha kale."
+    },
+    "currency": {
+      "legend": "Lacagta qiimaha",
+      "help": "Qiimaha aad siiso walxaha, iyo waxa batch ku kacayo, waxay ku jiraan lacagtan. Beddelkeedu ma beddelo qiimihii aad horay u siisay. Ilaa aad doorato, tani waxay raacaysaa gobolkaaga.",
+      "saved": "La kaydiyay: qiimaha {currency}.",
+      "notConverted": "Qiimahaaga la kaydiyay lama beddelin: weli waa tirooyinkii aad siisay."
+    },
+    "theme": {
+      "legend": "Iftiin ama madow",
+      "system": {
+        "label": "Sida qalabkan loo dejiyay",
+        "saved": "La kaydiyay: iftiin ama madow sida qalab kasta loo dejiyay."
+      },
+      "light": {
+        "label": "Iftiin",
+        "saved": "La kaydiyay: had iyo jeer iftiin."
+      },
+      "dark": {
+        "label": "Madow",
+        "saved": "La kaydiyay: had iyo jeer madow."
+      },
+      "help": "Hababka la daabaco had iyo jeer waa madow oo cad ku yaal."
+    },
+    "palette": {
+      "legend": "Midabada",
+      "saved": "La kaydiyay: badhamada iyo link-yada {palette}.",
+      "help": "Badhamada, link-yada iyo tab-yada, oo loogu magac daray glaze-yo. Mid walba si fudud ayaa loo akhriyaa iftiin iyo madowba."
+    },
+    "weightUnit": {
+      "legend": "Miisaanka batch-ka",
+      "grams": {
+        "label": "Garaam",
+        "saved": "La kaydiyay: miisaanka batch-ka waa garaam."
+      },
+      "pounds": {
+        "label": "Rodol iyo ounces",
+        "saved": "La kaydiyay: miisaanka batch-ka waa rodol iyo ounces."
+      },
+      "help": "Batch-yada la daabaco."
+    },
+    "gramPrecision": {
+      "legend": "Garaamka batch-yada la daabaco",
+      "single": {
+        "label": "Ilaa toban-meelood hal garaam",
+        "saved": "La kaydiyay: garaamka waxaa lagu muujiyaa ilaa toban-meelood."
+      },
+      "full": {
+        "label": "Saxnaan buuxda",
+        "saved": "La kaydiyay: garaamka si buuxda ayaa loo muujiyaa, ilaa 5 meelood oo jajab ah."
+      },
+      "help": "Ilaa toban-meelood, qadarrada ka yar 10 g weli waxay muujiyaan boqol-meelood (2.35 g), midabeeyayaasha batch-yada tijaabada yaryar."
+    },
+    "lead": {
+      "legend": "Rasaas (lead, Pb)",
+      "off": {
+        "label": "Dansan: marnaba rasaas (Pb) ha ku darin hab, hana soo jeedin",
+        "saved": "La kaydiyay: rasaasta (Pb) marnaba laguma daro hab, lamana soo jeediyo."
+      },
+      "on": {
+        "label": "Shidan: walxaha rasaasta (Pb) leh waa lagu dari karaa waana la soo jeedin karaa",
+        "saved": "La kaydiyay: walxaha rasaasta (Pb) leh waa lagu dari karaa waana la soo jeedin karaa."
+      },
+      "help": "Rasaasta (Pb) waa sun haddii la neefsado ama la liqo, waxayna jirka ku urursantaa, glaze rasaas leh wuxuu ku sii deyn karaa cuntada iyo cabbitaanka; xisaabin ma sheegi karto in gabal la gubay sidaas sameeyo iyo in kale. Marka uu dansan yahay, hababka horay rasaas ugu jirtay weli sidoodii ayay u furmaan.",
+      "warning": "Rasaasta (Pb) u isticmaal frit ahaan oo kaliya, marnaba rasaas cas, cad ama jaale ah oo ceeriin ah ama litharge. Isku dar adigoo qoyan, marnaba ha buufin, xiro respirator, oo ku nadiifi biyo. Weelka glaze rasaas (Pb) leh ka fogee cuntada iyo cabbitaanka ilaa tijaabada shaybaarka ee macdanta ka soo baxda (leach test) ee gabalka la gubay ay ku guulaysato.",
+      "turnOn": "Shid rasaasta",
+      "keepOff": "Dansan ku hay"
+    },
+    "englishTerms": {
+      "legend": "Ereyada Ingiriisiga",
+      "off": {
+        "label": "Dansan",
+        "saved": "La kaydiyay: ereyo Ingiriisi ah ma jiraan."
+      },
+      "on": {
+        "label": "Muuji Ingiriisiga ereyada muhiimka ah kadib",
+        "saved": "La kaydiyay: Ingiriisiga waxaa lagu muujiyaa ereyada muhiimka ah kadib."
+      },
+      "help": "Si aad u akhrido ilo Ingiriisi ah, sida Digitalfire, oo kan la socda: ereyada muhiimka ah waxay helayaan Ingiriisigooda xayndaab gudahood."
+    },
+    "notice": {
+      "legend": "Ogeysiiska turjumaadda",
+      "shown": {
+        "label": "La muujiyay",
+        "saved": "La kaydiyay: ogeysiiska waa la muujinayaa."
+      },
+      "hidden": {
+        "label": "La qariyay",
+        "saved": "La kaydiyay: ogeysiiska waa la qariyay. Hal sadar oo ka mid ah ayaa ku hadhaya hagayaasha badbaadada.",
+        "savedPlain": "La kaydiyay: ogeysiiska waa la qariyay. Hal sadar oo ka mid ah ayaa ku hadhaya bogga kasta korkiisa."
+      },
+      "help": "Qoraalka bogga kasta korkiisa ah ee sheegaya in AI turjumay, oo leh hab lagu soo jeediyo sixitaan."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Xaqiiji iimaylkaaga",
+    "intro": "Riix badhanka si aad u xaqiijiso cinwaankan.",
+    "confirm": "Xaqiiji",
+    "incomplete": "Boggani wuxuu u baahan yahay link-ga iimaylka xaqiijinta, kanna ma dhammaystirna.",
+    "account": "Akoonkaaga",
+    "signIn": "Gal",
+    "failed": "Qalad: cinwaanka lama xaqiijin karin. Fadlan mar kale isku day."
+  },
+  "providers": {
+    "continueGoogle": "Ku sii wad Google",
+    "continueGithub": "Ku sii wad GitHub",
+    "continueMicrosoft": "Ku gal Microsoft",
+    "failed": "Galitaanku ma shaqayn. Fadlan mar kale isku day.",
+    "heading": "Google, GitHub iyo Microsoft",
+    "intro": "Ku xir akoon Google, GitHub ama Microsoft si aad ugu gasho. Glazecalc wuxuu ka hayaa id-ga akoonka oo kaliya, marnaba magaciisa, sawirkiisa ama wax kale, galitaanka laba-tallaabona weli wuxuu weydiinayaa tallaabadiisa labaad.",
+    "passwordless": "Akoonkani furo sir ma laha. Si aad u beddesho iimaylkaaga, galitaanka laba-tallaabo ama hababka aad u gasho, ama si aad u tirtirto akoonkaaga, waxaad xaqiijinaysaa inaad adigu tahay adigoo mar kale ku galaya Google, GitHub ama Microsoft, midkii aad ku xirtay. Waxaad sidoo kale dejin kartaa furo sir.",
+    "setPassword": "Iimayl iigu soo dir link aan ku dejiyo furo sir",
+    "setPasswordUnlinks": "Dejinta furo sir adigoo isticmaalaya link-ga iimaylka waxay sidoo kale kala furaysaa Google, GitHub iyo Microsoft. Mar kale ayaad ku xiri kartaa kadib.",
+    "setPasswordFailed": "Link-ga lama diri karin. Fadlan mar kale isku day.",
+    "confirmFirst": "Marka hore xaqiiji iimaylkaaga, adigoo isticmaalaya link-ga aan kuu soo dirnay, si aad u xirto Google, GitHub ama Microsoft.",
+    "linkedOn": "La xiray {date}",
+    "notLinked": "Lama xirin",
+    "link": "Ku xir {provider}",
+    "unlink": "Ka fur {provider}",
+    "linkFailed": "Lama xiri karin. Fadlan mar kale isku day.",
+    "reauthIntro": "Akoonkani furo sir ma laha, sidaas darteed xaqiiji inaad adigu tahay adigoo mar kale galaya. Kadib samee isbeddelka 5 daqiiqo gudahood.",
+    "reauthButton": "Mar kale ku gal {provider}",
+    "reauthHeld": "Waxaad mar kale ku gashay {provider}. Waxaad samayn kartaa hal isbeddel furo sir la'aan 5 daqiiqo ee soo socda.",
+    "reauthFirst": "Fadlan marka hore mar kale gal, adigoo isticmaalaya mid ka mid ah badhamada kor ku xusan.",
+    "reauthFailed": "Dib-u-galitaanka lama bilaabi karin. Fadlan mar kale isku day."
+  },
+  "apps": {
+    "title": "App-yada ku xiran",
+    "lead": "Kaaliyayaasha, script-yada iyo app-yada gaari kara diiwaanadaada. Arag waxa mid walba sameeyay, dib u celi waxa uu u raray Qashinka, oo jooji wakhtiga aad rabto.",
+    "listHeading": "App-yadaada ku xiran iyo access token-adaada",
+    "listLabel": "App-yada ku xiran iyo access token-ada",
+    "makeToken": "Samee access token",
+    "none": "Waxba kuma xirna akoonkaaga.",
+    "loadFailed": "App-yadaada ku xiran lama soo rari karin. Fadlan dib u soo rar bogga si aad mar kale isugu daydo.",
+    "kindToken": "Access token",
+    "kindOauth": "App ku xiran",
+    "clientHost": "Cinwaanka app-ka: {host}",
+    "redirectHost": "Wuxuu kugu celiyaa: {host}",
+    "last90": "90-kii maalmood ee la soo dhaafay:",
+    "nothingDone": "Waxba ma beddelin 90-kii maalmood ee la soo dhaafay.",
+    "count": {
+      "create": "{count, plural, one {# diiwaan ayaa la sameeyay} other {# diiwaan ayaa la sameeyay}}",
+      "change": "{count, plural, one {# diiwaan ayaa la beddelay} other {# diiwaan ayaa la beddelay}}",
+      "trash": "{count, plural, one {# diiwaan ayaa loo raray Qashinka} other {# diiwaan ayaa loo raray Qashinka}}",
+      "restore": "{count, plural, one {# diiwaan ayaa dib loo celiyay} other {# diiwaan ayaa dib loo celiyay}}",
+      "undo": "{count, plural, one {# isbeddel ayaa laga noqday} other {# isbeddel ayaa laga noqday}}"
+    },
+    "action": {
+      "create": "La sameeyay",
+      "change": "La beddelay",
+      "trash": "Loo raray Qashinka:",
+      "restore": "Dib loo celiyay:",
+      "undo": "Laga noqday isbeddel ku dhacay"
+    },
+    "show": "Muuji faahfaahinta",
+    "hide": "Qari faahfaahinta",
+    "showNamed": "Muuji faahfaahinta {name}",
+    "hideNamed": "Qari faahfaahinta {name}",
+    "loading": "Waa la soo rarayaa...",
+    "detailFailed": "Faahfaahinta lama soo rari karin. Fadlan mar kale isku day.",
+    "movedHeading": "Loo raray Qashinka",
+    "movedNone": "Waxba oo uu raray weli kuma jiraan Qashinka.",
+    "putAllBack": "Dhammaan dib u celi",
+    "activityHeading": "Waxa uu sameeyay",
+    "activityNone": "Waxba 90-kii maalmood ee la soo dhaafay.",
+    "older": "Muuji kuwa hore",
+    "revokeQuestion": "Ma ka noqonaysaa oggolaanshaha {name}? Isla markiiba wuu joogsanayaa.",
+    "revokeYes": "Haa, ka noqo",
+    "revokeAll": "Dhammaan ka noqo",
+    "revokeAllQuestion": "{count, plural, one {Ma ka noqonaysaa # xiriirka weli shaqaynaya?} other {Ma ka noqonaysaa dhammaan # xiriir ee weli shaqaynaya?}} Isla markiiba way joogsanayaan.",
+    "revokeFailed": "Qalad: lagama noqon karin. Fadlan mar kale isku day.",
+    "restoreFailed": "Qalad: diiwaanada dib looma celin karin. Fadlan mar kale isku day.",
+    "selfDescribed": "is-sharraxay",
+    "selfDescribedNote": "Isagaa is diiwaan geliyay, sidaas darteed magaciisu waa uun wuxuu isku sheego.",
+    "confirm": {
+      "heading": "Xaqiiji ka hor isbeddellada",
+      "intro": "Dooro in isbeddel ka yimid kaaliye, app ama access token uu sugo ilaa aad halkan ku oggolaato, adigoo galay. Waxba oo uu codsado lama beddelo ilaa aad sidaas samayso.",
+      "off": "Marnaba ha weydiin",
+      "offHint": "Isbeddellada isla markiiba ayaa la sameeyaa. Mid walba wuxuu hayaa diiwaanka sidiisii hore, si aad uga noqoto, waxa app kasta sameeyayna hoos ayaa lagu muujiyaa.",
+      "removals": "Weydii ka hor saarista",
+      "removalsHintSite": "U rarista diiwaan Qashinka, ka saarista walax liiska walxaha aad haysato, ama ka saarista diiwaanka gubidda hab, waxay sugaysaa oggolaanshahaaga bogga internetka ee halkan.",
+      "all": "Weydii ka hor isbeddel kasta",
+      "allHint": "Diiwaan kasta oo cusub, isbeddel, ka-noqosho iyo saaris waxay sugaysaa oggolaanshahaaga bogga internetka ee halkan.",
+      "how": "Isbeddelka sugaya wuxuu leeyahay bog u gaar ah, oo kaaliyaha ama script-ku kuu siinayo link. Wuxuu sugaa 30 daqiiqo, kadib waxba lama beddelo. Access token lagu sameeyay “Isbeddellada token-kan uma baahna xaqiijin” marnaba lama weydiiyo.",
+      "exempt": "Isbeddelladiisu uma baahna xaqiijin.",
+      "saveFailed": "Qalad: doorashadaada lama kaydin karin. Fadlan mar kale isku day."
+    }
+  },
+  "connect": {
+    "title": "App ku xir akoonkaaga",
+    "loading": "Waa la soo rarayaa...",
+    "loadFailed": "Codsigan ah in app la xiro lama soo rari karin. Fadlan dib u soo rar bogga, ama dib uga bilow app-ka.",
+    "answerFailed": "Qalad: jawaabtaada lama diri karin. Fadlan mar kale isku day.",
+    "toAccount": "Tag akoonkaaga",
+    "asking": "App-kan wuxuu codsanayaa inuu ku xirmo akoonkaaga Glazecalc:",
+    "noName": "App aan magac lahayn",
+    "selfDescribed": "is-sharraxay",
+    "selfDescribedNote": "Isagaa is diiwaan geliyay, sidaas darteed magacani waa uun wuxuu isku sheego. Glazecalc ma hubin.",
+    "account": "Waxaad u gashay sida {email}",
+    "appAddress": "Cinwaanka app-ka",
+    "checked": "(Glazecalc ayaa hubiyay)",
+    "answerTo": "Halka jawaabtaadu aado",
+    "ownComputer": "Kombuyuutarkaaga",
+    "appOnDevice": "App ku jira qalabkaaga oo fura link-yada {scheme}",
+    "loopbackWarning": "App-kani wuxuu jawaabta ku helayaa kombuyuutarkaaga. Oggolow oo kaliya haddii adigu aad tan bilowday, kombuyuutarkan, hadda.",
+    "loopbackWriteWarning": "Wuxuu sidoo kale codsanayaa inuu beddelo diiwaanadaada: barnaamij kasta oo kombuyuutarkan ku jira oo qabsada jawaabta ayaa markaas beddeli kara.",
+    "appSchemeWarning": "Jawaabtu waxay u socotaa app kasta oo qalabkaaga ku jira oo fura link-yada {scheme}. Inta kale ee cinwaankaas lama hubiyo, sidaas darteed wuxuu u ekaan karaa bog kasta. Oggolow oo kaliya haddii aad tan ka bilowday app aad aaminsan tahay, hadda.",
+    "elsewhereWarning": "Cinwaanka app-kan waa {app}, laakiin jawaabtaadu waxay u socotaa {answer}. Oggolow oo kaliya haddii aad taas filaysay.",
+    "canHeading": "Waxa uu samayn karo",
+    "canRead": "Akhri hababkaaga, buuggaaga, walxahaaga, armaajadaada (shelf) iyo dejintaada.",
+    "readOnly": "Waxba ma beddeli karo.",
+    "alsoWrite": "Sidoo kale u oggolow inuu beddelo diiwaanadayda",
+    "writeWarning": "Markaas wuxuu samayn karaa oo beddeli karaa diiwaanadaada, una rari karaa Qashinka. Isbeddel kasta wuxuu hayaa nooc diiwaanka sidiisii hore ah, si aad uga noqoto. Wakhti kasta waad ka noqon kartaa oggolaanshaha bogga App-yada ku xiran.",
+    "privacy": "Waxa Glazecalc ka hayo app-yada ku xiran waxay ku qoran yihiin <privacy>ogeysiiska xogta gaarka ah</privacy>. Waxaad arki kartaa oo ka noqon kartaa app-yadaada bogga <apps>App-yada ku xiran</apps>.",
+    "allow": "Oggolow",
+    "deny": "Ha oggolaan",
+    "sending": "Jawaabtaada waxaa loo dirayaa app-ka..."
+  },
+  "tokens": {
+    "heading": "Access token-ada",
+    "intro": "Access token wuxuu u oggolaanayaa kaaliyahaaga AI ama script-kaaga inuu akhriyo hababka, walxaha, qoraallada iyo diiwaanka gubidda ee akoonkaaga, oo, haddii aad doorato, beddelo. Token kasta wuu joogsadaa maalinta aad doorato, ama isla marka aad ka noqoto.",
+    "howTo": "Sida loo xiro kaaliye AI",
+    "seeThem": "Token-adaada iyo app-yadaada ku xiran, waxa mid walba sameeyay, iyo “Ka noqo” waxay ku yaalaan bogga App-yada ku xiran.",
+    "seeThemLink": "Fur App-yada ku xiran",
+    "hint": "ku dhammaada {hint}",
+    "readOnly": "Akhris oo kaliya",
+    "readWrite": "Akhri oo beddel",
+    "created": "la sameeyay {date}",
+    "lastUsed": "markii ugu dambaysay la isticmaalay {date}",
+    "neverUsed": "weligiis lama isticmaalin",
+    "expires": "wuu dhacayaa {date}",
+    "expiredOn": "wuu dhacay {date}",
+    "revokedOn": "laga noqday {date}",
+    "revoke": "Ka noqo",
+    "revokeNamed": "Ka noqo {name}",
+    "revokeAll": "Ka noqo dhammaan access token-ada",
+    "revokeFailed": "Qalad: token-ka lagama noqon karin. Fadlan mar kale isku day.",
+    "loadFailed": "Access token-adaada lama soo rari karin. Fadlan dib u soo rar bogga si aad mar kale isugu daydo.",
+    "createHeading": "Samee token",
+    "name": "Magac",
+    "nameHint": "Wax lagu kala garto, sida kaaliyaha ama kombuyuutarka loogu talagalay.",
+    "nameCheck": "Fadlan sii token-ka magac 1 ilaa {most} xaraf ah.",
+    "expiry": "Wuu joogsadaa kadib",
+    "days": "{count, plural, one {# maalin} other {# maalmood}}",
+    "expiryHint": "Waxaan kuu soo iimayl garaynaa 7 maalmood ka hor inta uusan token joogsan.",
+    "expiryWriteHint": "{count, plural, one {Token beddeli kara diiwaanadaada wuu joogsadaa kadib ugu badnaan # maalin.} other {Token beddeli kara diiwaanadaada wuu joogsadaa kadib ugu badnaan # maalmood.}}",
+    "confirmEmailFirst": "Ka hor inta aadan samayn token, xaqiiji iimaylkaaga: fur link-ga aan u dirnay {email}. Cinwaankaas ayaan kuugu sheegnaa marka token la sameeyo iyo ka hor inta uusan mid joogsan.",
+    "resend": "Mar kale dir link-ga xaqiijinta",
+    "scopeNote": "Token-ku wuu akhrin karaa diiwaanadaada laakiin ma beddeli karo.",
+    "scope": "Waxa uu samayn karo",
+    "scopeWriteNote": "Token-ku wuxuu sidoo kale kaydin karaa diiwaanno cusub, beddeli karaa, una rari karaa Qashinka. Isbeddel kasta wuxuu hayaa diiwaanka sidiisii hore, si aad uga noqoto, waxa token-ku sameeyayna wuxuu ku yaal App-yada ku xiran iyo Soo deji xogtayda. Kan dooro oo kaliya kaaliye ama script aad u aaminsan tahay inuu beddelo diiwaanadaada.",
+    "confirmStep": "Si aad u samayso token-ka, xaqiiji inaad adigu tahay.",
+    "create": "Samee token-ka",
+    "failed": "Qalad: token-ka lama samayn karin. Fadlan mar kale isku day.",
+    "limit": "Waxaad haysataa {most} access token oo shaqaynaya, inta ugu badan ee akoon yeelan karo. Mid ka noqo si aad mid kale u samayso.",
+    "newHeading": "Hadda koobiyee token-kaaga cusub",
+    "newText": "Tani waa mar kaliya ee la muujinayo. Qof kasta oo haysta wuu akhrin karaa diiwaanadaada ilaa uu joogsado, sidaas darteed u hay sida furo sir, oo sii oo kaliya kaaliyahaaga ama script-kaaga.",
+    "newTextWrite": "Tani waa mar kaliya ee la muujinayo. Qof kasta oo haysta wuu akhrin karaa oo beddeli karaa diiwaanadaada ilaa uu joogsado, sidaas darteed u hay sida furo sir, oo sii oo kaliya kaaliyahaaga ama script-kaaga.",
+    "newLabel": "Access token-kaaga cusub",
+    "copy": "Koobiyee token-ka",
+    "copied": "Waa la koobiyeeyay.",
+    "copyFailed": "Lama koobiyeyn karin. Dooro token-ka oo adigu koobiyee.",
+    "done": "Waan koobiyeeyay",
+    "keptHeading": "Access token-adaadu weli way shaqeeyaan",
+    "keptText": "{count, plural, one {Beddelka furaha sirta ma joojin access token-kaaga. Haddii aad u beddeshay sababtoo ah qof kale ayaa laga yaabaa inuu ogyahay, ka noqo token-ka sidoo kale.} other {Beddelka furaha sirta ma joojin # access token-adaada. Haddii aad u beddeshay sababtoo ah qof kale ayaa laga yaabaa inuu ogyahay, ka noqo iyaga sidoo kale.}}",
+    "keep": "Hayso",
+    "signOutNote": "{count, plural, one {Wuxuu sidoo kale joojinayaa access token-kaaga, gebi ahaanba.} other {Wuxuu sidoo kale joojinayaa # access token-adaada, gebi ahaanba.}}",
+    "noConfirm": "Isbeddellada token-kan uma baahna xaqiijin",
+    "noConfirmHint": "Script aad adigu shaqaysiiso. Haddii aad doorato inaad xaqiijiso isbeddellada bogga App-yada ku xiran, token-kan weli marnaba lama weydiiyo. Tan waxaad dooran kartaa oo kaliya hadda, marka token-ka la samaynayo."
+  },
+  "confirm": {
+    "title": "Oggolow isbeddel",
+    "lead": "App ku xiran akoonkaaga ayaa codsanaya inuu sameeyo isbeddelkan. Waxba lama beddelo ilaa aad oggolaato.",
+    "from": "Waxaa codsaday {name}",
+    "fromToken": "access token",
+    "fromConnectedApp": "app ku xiran",
+    "selfDescribed": "is-sharraxay",
+    "selfDescribedNote": "Isagaa is diiwaan geliyay, sidaas darteed magaciisu waa uun wuxuu isku sheego. Glazecalc ma hubin.",
+    "asked": "La codsaday {date}. Wuxuu sugayaa ilaa {time}, kadib waxba lama beddelo.",
+    "removal": "Tani wax bay saaraysaa: diiwaan ayaa u socda Qashinka, halkaas oo aad dib uga soo celin karto 30 maalmood, ama walax ayaa laga saarayaa walxaha aad haysato.",
+    "check": "Oggolow oo kaliya haddii aad codsatay isbeddelkan. Haddii aadan codsan, diid, oo ka noqo app-ka bogga App-yada ku xiran.",
+    "approve": "Oggolow isbeddelka",
+    "decline": "Diid",
+    "titleBefore": "Ka hor inta uusan app-kani beddelin, waxaa la odhan jiray “{title}”.",
+    "untitled": "(cinwaan ma leh)",
+    "changedAgo": "{minutes, plural, =0 {App-kani wuxuu beddelay wax ka yar daqiiqo ka hor.} one {App-kani wuxuu beddelay # daqiiqo ka hor.} other {App-kani wuxuu beddelay # daqiiqo ka hor.}}",
+    "now": "Hadda:",
+    "after": "Isbeddelka kadib:",
+    "showAll": "Muuji dhammaan",
+    "showLess": "Muuji wax yar",
+    "othersHeading": "{count, plural, one {# isbeddel oo kale ayaa ka sugaya {name}} other {# isbeddel oo kale ayaa ka sugaya {name}}}",
+    "approveAllShown": "{count, plural, one {Oggolow # isbeddel ee ka yimid {name}} other {Oggolow dhammaan # isbeddel ee ka yimid {name}}}",
+    "declineAll": "{count, plural, one {Diid # isbeddel ee ka yimid {name}} other {Diid dhammaan # isbeddel ee ka yimid {name}}}",
+    "decided": "Isbeddelkan horay ayaa go'aan loo gaaray.",
+    "notFound": "Ma jiro isbeddel ku sugaya cinwaankan. Waxaa laga yaabaa in horay la oggolaaday ama la diiday, ama uu sugay in ka badan 30 daqiiqo, ama uu u yahay akoon kale.",
+    "signIn": "Ku gal Glazecalc akoonka isbeddelku u yahay, kadib mar kale fur link-gan.",
+    "signInLink": "Gal",
+    "loadFailed": "Isbeddelka lama soo rari karin. Fadlan dib u soo rar bogga si aad mar kale isugu daydo.",
+    "failed": "Qalad: jawaabtaada lama diri karin. Fadlan mar kale isku day.",
+    "apps": "Arag app-yadaada ku xiran"
+  }
+}
