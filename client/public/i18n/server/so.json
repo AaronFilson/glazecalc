@@ -123,6 +123,16 @@
   "trash-full": "Qashinku waa buuxaa, sidaa darteed access token wax kale uma rari karo. Fadlan marka hore qaar ka madhi website-ka.",
   "firing-links-full": "Hab waxaa lagu xidhi karaa ugu badnaan {most} diiwaan gubid. Mid ka fur si aad mid kale u xidho.",
   "account-limit": "Akoon wuxuu hayn karaa ilaa {limit} diiwaan wadar ahaan: habab, walxo, qoraallo, diiwaanno gubid iyo inta kale oo wada jira. Fadlan qaar ka saar si aad u kaydiso wax ka badan.",
+  "import-not-export": "Kani ma aha fayl xog Glazecalc ah. Fadlan dooro faylka JSON ee Soo deji xogtayda.",
+  "import-newer": "Faylkan waxaa sameeyay nooc ka cusub oo Glazecalc ah. Fadlan dib u soo rar bogga oo isku day mar kale.",
+  "import-too-many": "Faylkani wuxuu hayaa {count} diiwaan. Hal soo gelin waxay qaadan kartaa ilaa {most}. Waxba lama soo gelin.",
+  "import-invalid": "{count, plural, one {# diiwaan oo faylkan ku jira lama akhrin karo.} other {# diiwaan oo faylkan ku jira lama akhrin karo.}} Waxba lama soo gelin.",
+  "import-over-limit": "Soo gelintani waxay ku dari lahayd {count} diiwaan, laakiin akoonkaagu wuxuu meel u leeyahay {room} kale oo kaliya. Waxba lama soo gelin.",
+  "import-busy": "Soo gelin akoonkan ah ayaa hadda socota. Fadlan sug inta ay dhammaanayso.",
+  "import-failed": "Soo gelintu ma shaqayn dhibaato dhinacayaga ah awgeed. Waxba lama soo gelin.",
+  "import-done": "Soo gelintii way dhammaatay.",
+  "import-undone": "Soo gelintii waa laga noqday.",
+  "import-undo-gone": "Soo gelintan hadda lagama noqon karo.",
   "not-shared": "Habkan lama wadaagin, ama link-gu ma dhammaystirna.",
   "share-stopped": "Habka mar dambe lama wadaago. Link-giisu mar dambe ma furo.",
   "token-invalid": "Access token-ku ma ansaxna, waa dhacay ama waa la buriyay.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Isbeddello aad u badan ayaa akoonkan lagu sameeyay access token-yo. Fadlan muddo sug oo isku day mar kale; isbeddellada website-ka weli way shaqeeyaan.",
   "too-many-mcp": "Codsiyo aad u badan oo loo diray qalabka Glazecalc ee kaaliyeyaasha AI. Fadlan sug dhowr daqiiqo oo isku day mar kale.",
   "too-many-oauth": "Codsiyo xidhid app oo aad u badan oo ka yimid cinwaankan. Fadlan sug dhowr daqiiqo oo isku day mar kale.",
-  "too-many-registrations": "App-yo aad u badan ayaa is diiwaangeliyay. Fadlan mar dambe isku day."
+  "too-many-registrations": "App-yo aad u badan ayaa is diiwaangeliyay. Fadlan mar dambe isku day.",
+  "too-many-imports": "Soo gelinno aad u badan ayaa akoonkan lagu sameeyay saacaddii la soo dhaafay. Fadlan isku day mar dambe."
 }

@@ -96,6 +96,7 @@
     "recordsHint": "Bara på en enhet som endast du använder. Tas bort när du loggar ut.",
     "recordsBanner": "Det går inte att nå Glazecalc. Visar kopian som sparades på den här enheten {date}.",
     "recordsNotSaved": "Dina poster är inte sparade på den här enheten. Anslut till internet för att se dem. Du kan slå på det här på ditt konto.",
+    "recordsBackOnline": "Du är online igen. Ladda om sidan för att se dina senaste poster och kunna spara igen.",
     "recordsNotKept": "Den här webbläsaren sparar ingen kopia (privat surfning eller inget utrymme)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Råvarorna i Glazecalcs standardbibliotek, från fältspater och leror till fritter och borkällor, var och en med oxidanalys, Segerformel och faror.",
     "materialInfo": "{name}: oxidanalys, Segerformel, glödförlust och faror i Glazecalcs standardbibliotek.",
     "materialInfoLong": "{name} i Glazecalcs standardbibliotek över glasyrråvaror: oxidanalys, bidrag till Segerformeln, glödförlust och faror.",
-    "imageAlt": "Glazecalcs startsida: gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."
+    "imageAlt": "Glazecalcs logotyp och rubrik, gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."
   },
   "notices": {
     "dismiss": "Stäng",
@@ -341,6 +342,10 @@
     "suggest": "Föreslå en rättelse",
     "english": "Läs originalet på engelska",
     "close": "Stäng"
+  },
+  "settingsExpiry": {
+    "text": "Den här webbläsaren har sparat dina Glazecalc-inställningar, till exempel tema och språk, i nästan ett år utan att du har varit här. De tas snart bort om du inte behåller dem. Inställningar som är sparade på ditt konto påverkas inte.",
+    "keep": "Behåll mina inställningar"
   },
   "unity": {
     "fluxes": "Flussmedel – R₂O och RO",

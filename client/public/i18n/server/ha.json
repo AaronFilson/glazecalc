@@ -123,6 +123,16 @@
   "trash-full": "Kwandon shara ya cika, don haka access token ba zai iya matsar da wani abu kuma zuwa gare shi ba. Da fatan a zubar da wani ɓangare nasa a shafin yanar gizo tukuna.",
   "firing-links-full": "Ana iya haɗa girke-girke da bayanan gasa da ba su wuce {most} ba. Raba ɗaya don haɗa wani.",
   "account-limit": "Asusu zai iya riƙe bayanai har {limit} gaba ɗaya: girke-girke, kaya, bayanai, bayanan gasa da sauran tare. Da fatan a cire wasu don ajiye ƙari.",
+  "import-not-export": "Wannan ba fayil ɗin bayanan Glazecalc ba ne. Da fatan a zaɓi fayil ɗin JSON daga Sauke bayanaina.",
+  "import-newer": "Sabuwar sigar Glazecalc ce ta yi wannan fayil. Da fatan a sake loda shafin kuma a sake gwadawa.",
+  "import-too-many": "Wannan fayil yana ɗauke da bayanai {count}. Shigowa ɗaya za ta iya ɗaukar har {most}. Ba a shigo da komai ba.",
+  "import-invalid": "{count, plural, one {Ba za a iya karanta bayani # a cikin wannan fayil ba.} other {Ba za a iya karanta bayanai # a cikin wannan fayil ba.}} Ba a shigo da komai ba.",
+  "import-over-limit": "Wannan shigowa za ta ƙara bayanai {count}, amma asusunku yana da sarari don ƙarin {room} kawai. Ba a shigo da komai ba.",
+  "import-busy": "Ana riga ana shigo da bayanai cikin wannan asusu. Da fatan a jira ta ƙare.",
+  "import-failed": "Shigowar ba ta yi aiki ba saboda matsala a ɓangarenmu. Ba a shigo da komai ba.",
+  "import-done": "An gama shigowar.",
+  "import-undone": "An soke shigowar.",
+  "import-undo-gone": "Ba za a iya soke wannan shigowa yanzu ba.",
   "not-shared": "Ba a raba wannan girke-girke ba, ko hanyar haɗin ba ta cika ba.",
   "share-stopped": "Ba a raba girke-girken kuma. Hanyar haɗinsa ba ta buɗe shi kuma.",
   "token-invalid": "Access token ɗin ba shi da inganci, ya ƙare ko an soke shi.",
@@ -188,5 +198,6 @@
   "too-many-changes": "An yi canje-canje da yawa ga wannan asusu da access token. Da fatan a jira ɗan lokaci a sake gwadawa; canje-canje a shafin yanar gizo har yanzu suna aiki.",
   "too-many-mcp": "Buƙatu zuwa na’urorin Glazecalc na mataimakan AI sun yi yawa. Da fatan a jira ’yan mintuna a sake gwadawa.",
   "too-many-oauth": "Buƙatun haɗa manhajoji daga wannan adireshi sun yi yawa. Da fatan a jira ’yan mintuna a sake gwadawa.",
-  "too-many-registrations": "Manhajoji da yawa sun yi wa kansu rajista. Da fatan a sake gwadawa daga baya."
+  "too-many-registrations": "Manhajoji da yawa sun yi wa kansu rajista. Da fatan a sake gwadawa daga baya.",
+  "too-many-imports": "An yi shigowa da yawa cikin wannan asusu a cikin awa ɗaya da ta wuce. Da fatan a sake gwadawa daga baya."
 }

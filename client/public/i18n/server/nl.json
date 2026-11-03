@@ -123,6 +123,16 @@
   "trash-full": "De prullenbak is vol, dus een toegangstoken kan er niets meer naartoe verplaatsen. Maak er eerst op de website iets van leeg.",
   "firing-links-full": "Een recept kan aan ten hoogste {most} stookverslagen worden gekoppeld. Ontkoppel er een om een ander te koppelen.",
   "account-limit": "Een account kan in totaal maximaal {limit} records bewaren: recepten, grondstoffen, notities, stookverslagen en de rest samen. Verwijder er enkele om meer op te slaan.",
+  "import-not-export": "Dit is geen Glazecalc-gegevensbestand. Kies het JSON-bestand van Mijn gegevens downloaden.",
+  "import-newer": "Dit bestand is gemaakt door een nieuwere versie van Glazecalc. Laad de pagina opnieuw en probeer het nog eens.",
+  "import-too-many": "Dit bestand bevat {count} records. Eén import kan er maximaal {most} aan. Er is niets geïmporteerd.",
+  "import-invalid": "{count, plural, one {# record in dit bestand kan niet worden gelezen.} other {# records in dit bestand kunnen niet worden gelezen.}} Er is niets geïmporteerd.",
+  "import-over-limit": "Deze import zou {count} records toevoegen, maar uw account heeft nog ruimte voor {room}. Er is niets geïmporteerd.",
+  "import-busy": "Er loopt al een import naar dit account. Wacht tot die klaar is.",
+  "import-failed": "Het importeren is niet gelukt door een probleem bij ons. Er is niets geïmporteerd.",
+  "import-done": "Het importeren is voltooid.",
+  "import-undone": "De import is ongedaan gemaakt.",
+  "import-undo-gone": "Deze import kan niet meer ongedaan worden gemaakt.",
   "not-shared": "Dit recept wordt niet gedeeld, of de link is niet volledig.",
   "share-stopped": "Het recept wordt niet meer gedeeld. De link opent het niet meer.",
   "token-invalid": "Het toegangstoken is niet geldig, is verlopen of is ingetrokken.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Er zijn te veel wijzigingen met toegangstokens in dit account gedaan. Wacht even en probeer het opnieuw; wijzigingen op de website werken nog.",
   "too-many-mcp": "Te veel verzoeken aan de Glazecalc-hulpmiddelen voor AI-assistenten. Wacht een paar minuten en probeer het opnieuw.",
   "too-many-oauth": "Te veel verzoeken om apps te koppelen vanaf dit adres. Wacht een paar minuten en probeer het opnieuw.",
-  "too-many-registrations": "Te veel apps hebben zichzelf geregistreerd. Probeer het later opnieuw."
+  "too-many-registrations": "Te veel apps hebben zichzelf geregistreerd. Probeer het later opnieuw.",
+  "too-many-imports": "Te veel imports naar dit account in het afgelopen uur. Probeer het later opnieuw."
 }

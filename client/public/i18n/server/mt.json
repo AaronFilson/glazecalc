@@ -123,6 +123,16 @@
   "trash-full": "Il-barmil mimli, għalhekk token tal-aċċess ma jistax iżid aktar xejn fih. Żvojta xi ħaġa minnu fuq il-websajt l-ewwel.",
   "firing-links-full": "Riċetta tista’ tiġi magħquda ma’ reġistri tal-ħami (mhux aktar minn {most}). Neħħi l-għaqda ma’ wieħed biex tgħaqqad ieħor.",
   "account-limit": "Kont jista’ jżomm rekords (mhux aktar minn {limit} b’kollox): riċetti, materjali, noti, reġistri tal-ħami u l-bqija flimkien. Neħħi xi wħud biex tissejvja aktar.",
+  "import-not-export": "Dan mhuwiex fajl tad-data ta’ Glazecalc. Jekk jogħġbok agħżel il-fajl JSON minn Niżżel id-data tiegħi.",
+  "import-newer": "Dan il-fajl sar minn verżjoni aktar ġdida ta’ Glazecalc. Jekk jogħġbok erġa’ tella’ l-paġna u erġa’ pprova.",
+  "import-too-many": "Dan il-fajl fih {count} rekord. Importazzjoni waħda tista’ tieħu sa {most}. Ma ġie importat xejn.",
+  "import-invalid": "{count, plural, one {# rekord f’dan il-fajl ma jistax jinqara.} two {# rekords f’dan il-fajl ma jistgħux jinqraw.} few {# rekords f’dan il-fajl ma jistgħux jinqraw.} many {#-il rekord f’dan il-fajl ma jistgħux jinqraw.} other {# rekord f’dan il-fajl ma jistgħux jinqraw.}} Ma ġie importat xejn.",
+  "import-over-limit": "Din l-importazzjoni żżid {count} rekord, iżda l-kont tiegħek għandu spazju għal {room} oħra biss. Ma ġie importat xejn.",
+  "import-busy": "Diġà għaddeja importazzjoni f’dan il-kont. Jekk jogħġbok stenna sakemm tispiċċa.",
+  "import-failed": "L-importazzjoni ma rnexxietx minħabba problema min-naħa tagħna. Ma ġie importat xejn.",
+  "import-done": "L-importazzjoni spiċċat.",
+  "import-undone": "L-importazzjoni treġġgħet lura.",
+  "import-undo-gone": "Din l-importazzjoni ma tistax treġġa’ lura aktar.",
   "not-shared": "Din ir-riċetta mhix maqsuma, jew il-link mhux komplut.",
   "share-stopped": "Ir-riċetta m’għadhiex maqsuma. Il-link tagħha m’għadux jiftaħha.",
   "token-invalid": "It-token tal-aċċess mhux validu, skada jew ġie rrevokat.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Saru wisq bidliet f’dan il-kont b’tokens tal-aċċess. Stenna ftit u erġa’ pprova; il-bidliet fuq il-websajt għadhom jaħdmu.",
   "too-many-mcp": "Wisq talbiet lill-għodod ta’ Glazecalc għall-assistenti tal-IA. Stenna ftit minuti u erġa’ pprova.",
   "too-many-oauth": "Wisq talbiet biex jiġu konnessi apps minn dan l-indirizz. Stenna ftit minuti u erġa’ pprova.",
-  "too-many-registrations": "Wisq apps irreġistraw lilhom infushom. Erġa’ pprova aktar tard."
+  "too-many-registrations": "Wisq apps irreġistraw lilhom infushom. Erġa’ pprova aktar tard.",
+  "too-many-imports": "Saru wisq importazzjonijiet f’dan il-kont fl-aħħar siegħa. Jekk jogħġbok erġa’ pprova aktar tard."
 }

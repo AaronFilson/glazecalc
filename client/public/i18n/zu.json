@@ -96,6 +96,7 @@
     "recordsHint": "Kuphela kudivayisi oyisebenzisa wena wedwa. Kuyasuswa uma uphuma.",
     "recordsBanner": "I-Glazecalc ayitholakali. Kukhonjiswa ikhophi elondolozwe kule divayisi ngo-{date}.",
     "recordsNotSaved": "Amarekhodi akho awalondolozwanga kule divayisi. Xhuma ku-inthanethi ukuze uwabone. Ungakuvula lokhu ku-akhawunti yakho.",
+    "recordsBackOnline": "Usubuyele ku-inthanethi. Layisha kabusha ikhasi ukuze ubone amarekhodi akho akamuva futhi ukwazi ukulondoloza futhi.",
     "recordsNotKept": "Lesi siphequluli ngeke sigcine ikhophi (ukuphequlula ngasese noma asikho isikhala)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Okokwakha emtatsheni ojwayelekile we-Glazecalc, kusukela kuma-feldspar nobumba kuya kuma-frit nemithombo ye-boron, ngakunye nokuhlaziywa kwama-oxide, i-UMF nezingozi.",
     "materialInfo": "Okokwakha {name}: ukuhlaziywa kwama-oxide, i-UMF, i-LOI (loss on ignition) nezingozi emtatsheni ojwayelekile we-Glazecalc.",
     "materialInfoLong": "Okokwakha {name} emtatsheni ojwayelekile we-Glazecalc wokokwakha kwe-glaze: ukuhlaziywa kwama-oxide, isabelo sayo ku-UMF, i-LOI (loss on ignition) nezingozi.",
-    "imageAlt": "Ikhasi lasekhaya le-Glazecalc: ikhemistri ye-glaze yamahhala yababumbi, eduze kwesithombe samaqoqo ama-cone ashisiwe."
+    "imageAlt": "Uphawu lwe-Glazecalc nesihloko salo, ikhemistri ye-glaze yamahhala yababumbi, eduze kwesithombe samaqoqo ama-cone ashisiwe."
   },
   "notices": {
     "dismiss": "Vala",
@@ -341,6 +342,10 @@
     "suggest": "Phakamisa ukulungiswa",
     "english": "Funda isiNgisi",
     "close": "Vala"
+  },
+  "settingsExpiry": {
+    "text": "Lesi siphequluli sigcine izilungiselelo zakho ze-Glazecalc, njengetimu nolimi, cishe unyaka wonke ungavakashele. Zizosuswa maduze ngaphandle uma uzigcina. Izilungiselelo ezilondolozwe ku-akhawunti yakho azithinteki.",
+    "keep": "Gcina izilungiselelo zami"
   },
   "unity": {
     "fluxes": "Ama-flux - R₂O ne-RO",

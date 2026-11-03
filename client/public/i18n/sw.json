@@ -96,6 +96,7 @@
     "recordsHint": "Kwenye kifaa unachotumia wewe peke yako tu. Huondolewa unapotoka.",
     "recordsBanner": "Glazecalc haipatikani. Inaonyesha nakala iliyohifadhiwa kwenye kifaa hiki tarehe {date}.",
     "recordsNotSaved": "Rekodi zako hazijahifadhiwa kwenye kifaa hiki. Unganisha na intaneti ili kuziona. Unaweza kuwasha hili kwenye akaunti yako.",
+    "recordsBackOnline": "Uko mtandaoni tena. Pakia upya ukurasa ili kuona rekodi zako za karibuni na kuhifadhi tena.",
     "recordsNotKept": "Kivinjari hiki hakitahifadhi nakala (kuvinjari kwa faragha au hakuna nafasi)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Malighafi katika maktaba ya kawaida ya Glazecalc, kuanzia feldspar na udongo hadi frit na vyanzo vya boroni, kila moja na uchambuzi wake wa oksidi, fomula ya Seger na hatari.",
     "materialInfo": "{name}: uchambuzi wa oksidi, fomula ya Seger, upotevu wa uzito kwa moto na hatari katika maktaba ya kawaida ya Glazecalc.",
     "materialInfoLong": "{name} katika maktaba ya kawaida ya Glazecalc ya malighafi za glaze: uchambuzi wake wa oksidi, mchango katika fomula ya Seger, upotevu wa uzito kwa moto na hatari.",
-    "imageAlt": "Ukurasa wa mwanzo wa Glazecalc: kemia ya bure ya glaze kwa wafinyanzi, kando ya picha ya vifurushi vya koni zilizochomwa."
+    "imageAlt": "Nembo ya Glazecalc na kichwa chake, kemia ya bure ya glaze kwa wafinyanzi, kando ya picha ya vifurushi vya koni zilizochomwa."
   },
   "notices": {
     "dismiss": "Funga",
@@ -341,6 +342,10 @@
     "suggest": "Pendekeza marekebisho",
     "english": "Soma Kiingereza",
     "close": "Funga"
+  },
+  "settingsExpiry": {
+    "text": "Kivinjari hiki kimehifadhi mipangilio yako ya Glazecalc, kama mandhari na lugha, kwa karibu mwaka mmoja bila wewe kutembelea. Itaondolewa hivi karibuni usipoibakiza. Mipangilio iliyohifadhiwa kwenye akaunti yako haiathiriwi.",
+    "keep": "Bakiza mipangilio yangu"
   },
   "unity": {
     "fluxes": "Flux - R₂O na RO",

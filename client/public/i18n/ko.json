@@ -96,6 +96,7 @@
     "recordsHint": "혼자만 쓰는 기기에서만. 로그아웃하면 삭제됩니다.",
     "recordsBanner": "Glazecalc에 연결할 수 없습니다. {date}에 이 기기에 저장된 사본을 보여 드립니다.",
     "recordsNotSaved": "기록이 이 기기에 저장되어 있지 않습니다. 보려면 인터넷에 연결하세요. 계정에서 이 기능을 켤 수 있습니다.",
+    "recordsBackOnline": "다시 온라인 상태입니다. 최신 기록을 보고 다시 저장하려면 페이지를 새로 고치세요.",
     "recordsNotKept": "이 브라우저는 사본을 보관하지 않습니다(비공개 브라우징 중이거나 공간이 없음)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalc 표준 라이브러리의 원료를 장석과 점토부터 프릿, 붕소 원료까지 모아, 각각의 산화물 분석, 제게르식, 위험성을 보여 줍니다.",
     "materialInfo": "{name}: Glazecalc 표준 라이브러리의 산화물 분석, 제게르식, 강열감량, 위험성.",
     "materialInfoLong": "Glazecalc 유약 원료 표준 라이브러리의 {name}: 산화물 분석, 제게르식 기여값, 강열감량, 위험성.",
-    "imageAlt": "Glazecalc 홈페이지: 도예가를 위한 무료 유약 화학 계산기와 소성한 콘 세트 사진."
+    "imageAlt": "Glazecalc 로고와 제목 '도예가를 위한 무료 유약 화학', 그 옆에 소성한 콘 팩 사진."
   },
   "notices": {
     "dismiss": "닫기",
@@ -341,6 +342,10 @@
     "suggest": "수정 제안",
     "english": "영어로 읽기",
     "close": "닫기"
+  },
+  "settingsExpiry": {
+    "text": "이 브라우저는 테마와 언어 같은 Glazecalc 설정을 방문 없이 거의 한 해 동안 보관해 왔습니다. 유지하지 않으면 곧 삭제됩니다. 계정에 저장된 설정에는 영향이 없습니다.",
+    "keep": "내 설정 유지"
   },
   "unity": {
     "fluxes": "융제 - R₂O와 RO",

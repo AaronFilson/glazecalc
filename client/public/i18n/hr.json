@@ -96,6 +96,7 @@
     "recordsHint": "Samo na uređaju kojim se koristite isključivo vi. Uklanja se kad se odjavite.",
     "recordsBanner": "Glazecalc nije dostupan. Prikazuje se kopija spremljena na ovom uređaju {date}.",
     "recordsNotSaved": "Vaši zapisi nisu spremljeni na ovom uređaju. Povežite se s internetom da biste ih vidjeli. To možete uključiti na svojem računu.",
+    "recordsBackOnline": "Ponovno ste na mreži. Ponovno učitajte stranicu da biste vidjeli najnovije zapise i opet mogli spremati.",
     "recordsNotKept": "Ovaj preglednik neće zadržati kopiju (privatno pregledavanje ili nema prostora)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Sirovine iz standardne biblioteke aplikacije Glazecalc, od feldspata i glina do frita i izvora bora, svaka s oksidnom analizom, Segerovom formulom i opasnostima.",
     "materialInfo": "{name}: oksidna analiza, Segerova formula, gubitak žarenjem i opasnosti u standardnoj biblioteci aplikacije Glazecalc.",
     "materialInfoLong": "{name} u standardnoj biblioteci sirovina za glazure aplikacije Glazecalc: oksidna analiza, doprinos Segerovoj formuli, gubitak žarenjem i opasnosti.",
-    "imageAlt": "Početna stranica aplikacije Glazecalc: besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca."
+    "imageAlt": "Logotip aplikacije Glazecalc i njezin naslov, besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca."
   },
   "notices": {
     "dismiss": "Odbaci",
@@ -341,6 +342,10 @@
     "suggest": "Predloži ispravak",
     "english": "Pročitaj izvornik na engleskom",
     "close": "Zatvori"
+  },
+  "settingsExpiry": {
+    "text": "Ovaj preglednik čuva vaše postavke za Glazecalc, kao što su tema i jezik, gotovo godinu dana bez posjeta. Uskoro će biti uklonjene ako ih ne zadržite. Postavke spremljene na vašem računu ostaju netaknute.",
+    "keep": "Zadrži moje postavke"
   },
   "unity": {
     "fluxes": "Topitelji – R₂O i RO",

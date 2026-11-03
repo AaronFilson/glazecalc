@@ -123,6 +123,16 @@
   "trash-full": "Kôš je plný, preto do neho prístupový token nemôže presunúť nič ďalšie. Najprv, prosím, vyprázdnite časť Koša na webe.",
   "firing-links-full": "S receptom možno prepojiť najviac {most} záznamov výpalov. Ak chcete prepojiť ďalší, zrušte prepojenie s jedným z nich.",
   "account-limit": "Účet umožňuje spolu uložiť najviac {limit} záznamov: receptov, surovín, poznámok, záznamov výpalov a ďalšieho dokopy. Ak chcete uložiť viac, odstráňte, prosím, niektoré z nich.",
+  "import-not-export": "Toto nie je súbor údajov Glazecalc. Vyberte, prosím, súbor JSON zo Stiahnutia mojich údajov.",
+  "import-newer": "Tento súbor vytvorila novšia verzia Glazecalc. Načítajte, prosím, stránku znova a skúste to znova.",
+  "import-too-many": "Tento súbor obsahuje {count} záznamov. Jeden import prijme najviac {most}. Nič sa neimportovalo.",
+  "import-invalid": "{count, plural, one {# záznam v tomto súbore sa nedá prečítať.} few {# záznamy v tomto súbore sa nedajú prečítať.} many {# záznamu v tomto súbore sa nedá prečítať.} other {# záznamov v tomto súbore sa nedá prečítať.}} Nič sa neimportovalo.",
+  "import-over-limit": "Tento import by pridal {count, plural, one {# záznam} few {# záznamy} many {# záznamu} other {# záznamov}}, ale váš účet má miesto už len pre {room}. Nič sa neimportovalo.",
+  "import-busy": "Do tohto účtu už prebieha import. Počkajte, prosím, kým sa dokončí.",
+  "import-failed": "Import sa nepodaril pre problém na našej strane. Nič sa neimportovalo.",
+  "import-done": "Import je dokončený.",
+  "import-undone": "Import bol vrátený späť.",
+  "import-undo-gone": "Tento import sa už nedá vrátiť späť.",
   "not-shared": "Tento recept nie je zdieľaný, alebo je odkaz neúplný.",
   "share-stopped": "Recept už nie je zdieľaný. Jeho odkaz ho už neotvorí.",
   "token-invalid": "Prístupový token nie je platný, vypršal alebo bol zneplatnený.",
@@ -188,5 +198,6 @@
   "too-many-changes": "S prístupovými tokenmi sa pri tomto účte urobilo príliš veľa zmien. Chvíľu počkajte a skúste to znova; zmeny na webe stále fungujú.",
   "too-many-mcp": "Príliš veľa požiadaviek na nástroje Glazecalc pre AI asistentov. Počkajte, prosím, niekoľko minút a skúste to znova.",
   "too-many-oauth": "Z tejto adresy prišlo príliš veľa žiadostí o pripojenie aplikácií. Počkajte, prosím, niekoľko minút a skúste to znova.",
-  "too-many-registrations": "Príliš veľa aplikácií sa zaregistrovalo samých. Skúste to, prosím, neskôr."
+  "too-many-registrations": "Príliš veľa aplikácií sa zaregistrovalo samých. Skúste to, prosím, neskôr.",
+  "too-many-imports": "Do tohto účtu bolo za poslednú hodinu príliš veľa importov. Skúste to, prosím, neskôr."
 }

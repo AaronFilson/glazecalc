@@ -96,6 +96,7 @@
     "recordsHint": "Uniquement sur un appareil que vous êtes seul à utiliser. Supprimées à la déconnexion.",
     "recordsBanner": "Glazecalc est injoignable. Affichage de la copie enregistrée sur cet appareil le {date}.",
     "recordsNotSaved": "Vos données ne sont pas enregistrées sur cet appareil. Connectez-vous à Internet pour les voir. Vous pouvez activer cette option dans votre compte.",
+    "recordsBackOnline": "Vous êtes de nouveau en ligne. Rechargez la page pour voir vos derniers enregistrements et pouvoir enregistrer à nouveau.",
     "recordsNotKept": "Ce navigateur ne conservera pas de copie (navigation privée ou espace insuffisant)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Les matières de la bibliothèque standard de Glazecalc, des feldspaths et argiles aux frittes et aux sources de bore, chacune avec son analyse en oxydes, sa formule de Seger et ses dangers.",
     "materialInfo": "{name} : analyse en oxydes, formule de Seger, perte au feu et dangers dans la bibliothèque standard de Glazecalc.",
     "materialInfoLong": "{name} dans la bibliothèque standard de matières pour émaux de Glazecalc : analyse en oxydes, apport à la formule de Seger, perte au feu et dangers.",
-    "imageAlt": "La page d’accueil de Glazecalc : la chimie des émaux, gratuite, pour les céramistes, à côté d’une photo de jeux de cônes après cuisson."
+    "imageAlt": "Le logo de Glazecalc et son titre, la chimie des émaux, gratuite, pour les céramistes, à côté d’une photo de jeux de cônes après cuisson."
   },
   "notices": {
     "dismiss": "Fermer",
@@ -341,6 +342,10 @@
     "suggest": "Proposer une correction",
     "english": "Lire la version anglaise",
     "close": "Fermer"
+  },
+  "settingsExpiry": {
+    "text": "Ce navigateur garde vos paramètres Glazecalc, comme le thème et la langue, depuis près d’un an sans visite. Ils seront bientôt supprimés, sauf si vous les gardez. Les paramètres enregistrés dans votre compte ne sont pas concernés.",
+    "keep": "Garder mes paramètres"
   },
   "unity": {
     "fluxes": "Fondants – R₂O et RO",

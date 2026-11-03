@@ -96,6 +96,7 @@
     "recordsHint": "Solo su un dispositivo che usa soltanto Lei. Vengono rimossi quando esce dall’account.",
     "recordsBanner": "Impossibile raggiungere Glazecalc. Viene mostrata la copia salvata su questo dispositivo il {date}.",
     "recordsNotSaved": "I Suoi dati non sono salvati su questo dispositivo. Collegarsi a Internet per vederli. Può attivare questa opzione nel Suo account.",
+    "recordsBackOnline": "È di nuovo online. Ricaricare la pagina per vedere gli elementi più recenti e salvare di nuovo.",
     "recordsNotKept": "Questo browser non conserverà una copia (navigazione privata o spazio esaurito)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "I materiali dell’elenco standard di Glazecalc, da feldspati e argille a fritte e fonti di boro, con analisi degli ossidi, formula di Seger e pericoli.",
     "materialInfo": "{name}: analisi degli ossidi, formula di Seger, perdita al fuoco e pericoli nell’elenco standard di Glazecalc.",
     "materialInfoLong": "{name} nell’elenco standard di materiali per smalti di Glazecalc: analisi degli ossidi, contributo alla formula di Seger, perdita al fuoco e pericoli.",
-    "imageAlt": "La home page di Glazecalc: chimica degli smalti gratuita per ceramisti, accanto alla foto di terne di coni dopo la cottura."
+    "imageAlt": "Il logo di Glazecalc e il suo titolo, chimica degli smalti gratuita per ceramisti, accanto alla foto di coni pirometrici cotti."
   },
   "notices": {
     "dismiss": "Chiudi",
@@ -341,6 +342,10 @@
     "suggest": "Suggerisci una correzione",
     "english": "Leggi l’originale inglese",
     "close": "Chiudi"
+  },
+  "settingsExpiry": {
+    "text": "Questo browser conserva le Sue impostazioni di Glazecalc, come tema e lingua, da quasi un anno senza una visita. Saranno presto rimosse, a meno che non le conservi. Le impostazioni salvate nel Suo account non sono interessate.",
+    "keep": "Conserva le mie impostazioni"
   },
   "unity": {
     "fluxes": "Fondenti - R₂O e RO",

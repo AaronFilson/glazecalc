@@ -123,6 +123,16 @@
   "trash-full": "Koš je poln, zato dostopni žeton vanj ne more premakniti ničesar več. Najprej nekaj izpraznite na spletni strani.",
   "firing-links-full": "Recept je mogoče povezati z največ {most} dnevniki žganja. Prekinite povezavo z enim, da povežete drugega.",
   "account-limit": "Račun lahko hrani največ {limit} zapisov skupaj: recepte, surovine, zapiske, dnevnike žganja in drugo skupaj. Če želite shraniti več, nekaj odstranite.",
+  "import-not-export": "To ni podatkovna datoteka Glazecalc. Izberite datoteko JSON iz Prenosa mojih podatkov.",
+  "import-newer": "To datoteko je ustvarila novejša različica aplikacije Glazecalc. Znova naložite stran in poskusite znova.",
+  "import-too-many": "Ta datoteka vsebuje {count} zapisov. En uvoz sprejme največ {most}. Nič ni bilo uvoženo.",
+  "import-invalid": "{count, plural, one {# zapisa v tej datoteki ni mogoče prebrati.} two {# zapisov v tej datoteki ni mogoče prebrati.} few {# zapisov v tej datoteki ni mogoče prebrati.} other {# zapisov v tej datoteki ni mogoče prebrati.}} Nič ni bilo uvoženo.",
+  "import-over-limit": "Ta uvoz bi dodal {count, plural, one {# zapis} two {# zapisa} few {# zapise} other {# zapisov}}, vendar je v vašem računu prostora le še za {room}. Nič ni bilo uvoženo.",
+  "import-busy": "Uvoz v ta račun že poteka. Počakajte, da se konča.",
+  "import-failed": "Uvoz ni uspel zaradi težave na naši strani. Nič ni bilo uvoženo.",
+  "import-done": "Uvoz je končan.",
+  "import-undone": "Uvoz je bil razveljavljen.",
+  "import-undo-gone": "Tega uvoza ni več mogoče razveljaviti.",
   "not-shared": "Ta recept ni deljen ali pa povezava ni popolna.",
   "share-stopped": "Recept ni več deljen. Njegova povezava ga ne odpre več.",
   "token-invalid": "Dostopni žeton ni veljaven, je potekel ali je bil preklican.",
@@ -188,5 +198,6 @@
   "too-many-changes": "S tem računom je bilo z dostopnimi žetoni narejenih preveč sprememb. Malo počakajte in poskusite znova; spremembe na spletni strani še vedno delujejo.",
   "too-many-mcp": "Preveč zahtev za orodja Glazecalc za pomočnike z umetno inteligenco. Počakajte nekaj minut in poskusite znova.",
   "too-many-oauth": "Preveč zahtev za povezavo aplikacij s tega naslova. Počakajte nekaj minut in poskusite znova.",
-  "too-many-registrations": "Preveč aplikacij se je registriralo samih. Poskusite znova pozneje."
+  "too-many-registrations": "Preveč aplikacij se je registriralo samih. Poskusite znova pozneje.",
+  "too-many-imports": "V zadnji uri je bilo v ta račun preveč uvozov. Poskusite pozneje."
 }

@@ -123,6 +123,16 @@
   "trash-full": "Papirkurven er fuld, så et adgangstoken kan ikke flytte mere til den. Tøm noget af den på webstedet først.",
   "firing-links-full": "En opskrift kan tilknyttes højst {most} brændingsjournaler. Frakobl en for at tilknytte en anden.",
   "account-limit": "En konto kan have op til {limit} poster i alt: opskrifter, råvarer, noter, brændingsjournaler og resten tilsammen. Fjern nogle for at kunne gemme flere.",
+  "import-not-export": "Dette er ikke en Glazecalc-datafil. Vælg JSON-filen fra Download mine data.",
+  "import-newer": "Denne fil er lavet af en nyere version af Glazecalc. Indlæs siden igen, og prøv igen.",
+  "import-too-many": "Denne fil indeholder {count} poster. Én import kan tage op til {most}. Intet blev importeret.",
+  "import-invalid": "{count, plural, one {# post i denne fil kan ikke læses.} other {# poster i denne fil kan ikke læses.}} Intet blev importeret.",
+  "import-over-limit": "Denne import ville tilføje {count} poster, men din konto har kun plads til {room} mere. Intet blev importeret.",
+  "import-busy": "En import til denne konto er allerede i gang. Vent, til den er færdig.",
+  "import-failed": "Importen lykkedes ikke på grund af et problem hos os. Intet blev importeret.",
+  "import-done": "Importen er færdig.",
+  "import-undone": "Importen blev fortrudt.",
+  "import-undo-gone": "Denne import kan ikke længere fortrydes.",
   "not-shared": "Denne opskrift deles ikke, eller linket er ikke komplet.",
   "share-stopped": "Opskriften deles ikke længere. Linket åbner den ikke mere.",
   "token-invalid": "Adgangstokenet er ikke gyldigt, er udløbet eller er blevet tilbagekaldt.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Der er foretaget for mange ændringer på denne konto med adgangstokens. Vent lidt, og prøv igen; ændringer på webstedet virker stadig.",
   "too-many-mcp": "For mange forespørgsler til Glazecalcs værktøjer til AI-assistenter. Vent et par minutter, og prøv igen.",
   "too-many-oauth": "For mange anmodninger om at tilslutte apps fra denne adresse. Vent et par minutter, og prøv igen.",
-  "too-many-registrations": "For mange apps har registreret sig selv. Prøv igen senere."
+  "too-many-registrations": "For mange apps har registreret sig selv. Prøv igen senere.",
+  "too-many-imports": "For mange importer til denne konto inden for den seneste time. Prøv igen senere."
 }

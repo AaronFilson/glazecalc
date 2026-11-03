@@ -96,6 +96,7 @@
     "recordsHint": "仅限只有您一人使用的设备。退出登录时会被移除。",
     "recordsBanner": "无法连接 Glazecalc。正在显示 {date} 保存在此设备上的副本。",
     "recordsNotSaved": "您的记录没有保存在此设备上。请连接互联网后查看。您可以在账户中开启此功能。",
+    "recordsBackOnline": "您已重新联网。请重新加载页面，以查看最新的记录并能再次保存。",
     "recordsNotKept": "此浏览器不会保存副本（无痕浏览或空间不足）。"
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalc 标准库中的原料，从长石、黏土到熔块和硼原料，每种都附氧化物分析、釉式和危害。",
     "materialInfo": "{name}：Glazecalc 标准库中的氧化物分析、釉式、烧失量和危害。",
     "materialInfoLong": "{name}在 Glazecalc 釉料原料标准库中的资料：氧化物分析、对釉式的贡献量、烧失量和危害。",
-    "imageAlt": "Glazecalc 首页：面向陶艺人的免费釉料化学工具，旁边是一张烧过的测温锥组的照片。"
+    "imageAlt": "Glazecalc 的标志和标题“面向陶艺人的免费釉料化学工具”，旁边是一张烧过的测温锥组的照片。"
   },
   "notices": {
     "dismiss": "关闭",
@@ -341,6 +342,10 @@
     "suggest": "提出修改建议",
     "english": "阅读英文原文",
     "close": "关闭"
+  },
+  "settingsExpiry": {
+    "text": "您已将近一年没有访问，这个浏览器一直保存着您的 Glazecalc 设置，例如主题和语言。如果您不保留，这些设置很快会被移除。保存在账户中的设置不受影响。",
+    "keep": "保留我的设置"
   },
   "unity": {
     "fluxes": "熔剂 – R₂O 和 RO",

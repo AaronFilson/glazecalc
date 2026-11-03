@@ -123,6 +123,16 @@
   "trash-full": "Ebe mkpofu ejupụtala, ya mere token nnweta enweghị ike ibuga ihe ọzọ n'ime ya. Biko buru ụzọ kpofuo ụfọdụ n'ime ya na weebụsaịtị.",
   "firing-links-full": "Enwere ike ijikọ usoro na ndekọ ọkụ agaghị karịa {most}. Kwụpụ njikọ otu iji jikọọ nke ọzọ.",
   "account-limit": "Akaụntụ nwere ike idebe ndekọ ruo {limit} n'ozuzu: usoro, ihe eji arụ ọrụ, ndetu, ndekọ ọkụ na ndị ọzọ niile ọnụ. Biko wepụ ụfọdụ iji chekwaa ndị ọzọ.",
+  "import-not-export": "Nke a abụghị faịlụ data Glazecalc. Biko họrọ faịlụ JSON sitere na Budata data m.",
+  "import-newer": "Ụdị Glazecalc ọhụrụ karịa mere faịlụ a. Biko bugharịa ibe ahụ ọzọ ma nwaa ọzọ.",
+  "import-too-many": "Faịlụ a nwere ndekọ {count}. Otu mbubata nwere ike iwere ruo {most}. Ọ dịghị ihe e bubatara.",
+  "import-invalid": "{count, plural, other {Enweghị ike ịgụ ndekọ # dị na faịlụ a.}} Ọ dịghị ihe e bubatara.",
+  "import-over-limit": "Mbubata a ga-agbakwunye ndekọ {count}, mana akaụntụ gị nwere ohere maka {room} ọzọ naanị. Ọ dịghị ihe e bubatara.",
+  "import-busy": "Mbubata n'akaụntụ a na-aga n'ihu ugbu a. Biko chere ka ọ gwụ.",
+  "import-failed": "Mbubata ahụ arụghị ọrụ n'ihi nsogbu n'akụkụ anyị. Ọ dịghị ihe e bubatara.",
+  "import-done": "Emechaala mbubata ahụ.",
+  "import-undone": "E mehiela mbubata ahụ.",
+  "import-undo-gone": "Enweghịzi ike ịmehie mbubata a.",
   "not-shared": "Ekesaghị usoro glaze a, ma ọ bụ njikọ ahụ ezughị ezu.",
   "share-stopped": "A naghịzi ekesa usoro glaze ahụ. Njikọ ya anaghịzi emepe ya.",
   "token-invalid": "Token nnweta ahụ adịghị mma, o kwụsịla ịrụ ọrụ ma ọ bụ e kagburu ya.",
@@ -188,5 +198,6 @@
   "too-many-changes": "E mere mgbanwe dị ọtụtụ n'akaụntụ a site na token nnweta. Biko chere ntakịrị oge wee nwaa ọzọ; mgbanwe na weebụsaịtị ka na-arụ ọrụ.",
   "too-many-mcp": "Arịrịọ dị ọtụtụ na ngwaọrụ Glazecalc maka ndị inyeaka AI. Biko chere nkeji ole na ole wee nwaa ọzọ.",
   "too-many-oauth": "Arịrịọ ijikọ ngwa dị ọtụtụ si n'adreesị a. Biko chere nkeji ole na ole wee nwaa ọzọ.",
-  "too-many-registrations": "Ngwa dị ọtụtụ debanyere onwe ha aha. Biko nwaa ọzọ mgbe e mesịrị."
+  "too-many-registrations": "Ngwa dị ọtụtụ debanyere onwe ha aha. Biko nwaa ọzọ mgbe e mesịrị.",
+  "too-many-imports": "Mbubata dị ọtụtụ n'akaụntụ a n'ime otu awa gara aga. Biko nwaa ọzọ mgbe e mesịrị."
 }

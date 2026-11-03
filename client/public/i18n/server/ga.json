@@ -123,6 +123,16 @@
   "trash-full": "Tá an bruscar lán, mar sin ní féidir le comhartha rochtana aon rud eile a bhogadh isteach ann. Folmhaigh cuid de ar an suíomh gréasáin ar dtús.",
   "firing-links-full": "Is féidir oideas a cheangal le {most} taifead bácála ar a mhéad. Dícheangail ceann chun ceann eile a cheangal.",
   "account-limit": "Is féidir le cuntas suas le {limit} taifead a choinneáil ar fad: oidis, ábhair, nótaí, taifid bhácála agus an chuid eile le chéile. Bain cuid acu chun tuilleadh a shábháil.",
+  "import-not-export": "Ní comhad sonraí Glazecalc é seo. Roghnaigh an comhad JSON ó ‘Mo shonraí a íoslódáil’.",
+  "import-newer": "Rinne leagan níos nuaí de Glazecalc an comhad seo. Athlódáil an leathanach agus bain triail eile as.",
+  "import-too-many": "Tá {count} taifead sa chomhad seo. Is féidir le hiompórtáil amháin suas le {most} a ghlacadh. Níor iompórtáladh aon rud.",
+  "import-invalid": "{count, plural, one {Ní féidir # thaifead sa chomhad seo a léamh.} two {Ní féidir # thaifead sa chomhad seo a léamh.} few {Ní féidir # thaifead sa chomhad seo a léamh.} many {Ní féidir # dtaifead sa chomhad seo a léamh.} other {Ní féidir # taifead sa chomhad seo a léamh.}} Níor iompórtáladh aon rud.",
+  "import-over-limit": "Chuirfeadh an iompórtáil seo {count} taifead leis, ach níl spás i do chuntas ach do {room} eile. Níor iompórtáladh aon rud.",
+  "import-busy": "Tá iompórtáil isteach sa chuntas seo ar siúl cheana. Fan go gcríochnóidh sí.",
+  "import-failed": "Níor oibrigh an iompórtáil mar gheall ar fhadhb ar ár dtaobh féin. Níor iompórtáladh aon rud.",
+  "import-done": "Tá an iompórtáil déanta.",
+  "import-undone": "Cealaíodh an iompórtáil.",
+  "import-undo-gone": "Ní féidir an iompórtáil seo a chealú a thuilleadh.",
   "not-shared": "Níl an t-oideas seo comhroinnte, nó níl an nasc iomlán.",
   "share-stopped": "Níl an t-oideas comhroinnte a thuilleadh. Ní osclaíonn a nasc é a thuilleadh.",
   "token-invalid": "Níl an comhartha rochtana bailí, tá sé imithe in éag nó cúlghaireadh é.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Rinneadh an iomarca athruithe ar an gcuntas seo le comharthaí rochtana. Fan tamall agus bain triail eile as; oibríonn athruithe ar an suíomh gréasáin fós.",
   "too-many-mcp": "An iomarca iarratas ar uirlisí Glazecalc do chúntóirí AI. Fan cúpla nóiméad agus bain triail eile as.",
   "too-many-oauth": "An iomarca iarratas ón seoladh seo chun aipeanna a cheangal. Fan cúpla nóiméad agus bain triail eile as.",
-  "too-many-registrations": "Chláraigh an iomarca aipeanna iad féin. Bain triail eile as ar ball."
+  "too-many-registrations": "Chláraigh an iomarca aipeanna iad féin. Bain triail eile as ar ball.",
+  "too-many-imports": "An iomarca iompórtálacha isteach sa chuntas seo san uair dheireanach. Bain triail eile as ar ball."
 }

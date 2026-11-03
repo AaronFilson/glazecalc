@@ -96,6 +96,7 @@
     "recordsHint": "Samo v napravi, ki jo uporabljate samo vi. Odstranjeni ob odjavi.",
     "recordsBanner": "Glazecalc ni dosegljiv. Prikazana je kopija, shranjena v tej napravi {date}.",
     "recordsNotSaved": "Vaši zapisi niso shranjeni v tej napravi. Za ogled se povežite z internetom. To lahko vklopite v svojem računu.",
+    "recordsBackOnline": "Spet ste povezani. Znova naložite stran, da vidite najnovejše zapise in lahko spet shranjujete.",
     "recordsNotKept": "Ta brskalnik ne bo hranil kopije (zasebno brskanje ali premalo prostora)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Surovine v standardni knjižnici Glazecalc, od glinencev in glin do frit in virov bora, vsaka z oksidno analizo, Segerjevo formulo in nevarnostmi.",
     "materialInfo": "{name}: oksidna analiza, Segerjeva formula, izguba pri žarenju in nevarnosti v standardni knjižnici Glazecalc.",
     "materialInfoLong": "{name} v standardni knjižnici glazurnih surovin Glazecalc: oksidna analiza, prispevek k Segerjevi formuli, izguba pri žarenju in nevarnosti.",
-    "imageAlt": "Domača stran Glazecalc: brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
+    "imageAlt": "Logotip Glazecalc in njegov naslov, brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
   },
   "notices": {
     "dismiss": "Opusti",
@@ -341,6 +342,10 @@
     "suggest": "Predlagaj popravek",
     "english": "Preberi angleški izvirnik",
     "close": "Zapri"
+  },
+  "settingsExpiry": {
+    "text": "Ta brskalnik hrani vaše nastavitve Glazecalc, na primer temo in jezik, že skoraj leto dni brez obiska. Kmalu bodo odstranjene, razen če jih obdržite. Na nastavitve, shranjene v vašem računu, to ne vpliva.",
+    "keep": "Obdrži moje nastavitve"
   },
   "unity": {
     "fluxes": "Talila – R₂O in RO",

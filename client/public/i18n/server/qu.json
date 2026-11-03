@@ -123,6 +123,16 @@
   "trash-full": "Q'upaqa hunt'asqam, chayrayku yaykuna tokenqa manañam imatapas chayman astayta atinchu. Ñawpaqta web p'anqapi wakinta ch'usaqyachiy.",
   "firing-links-full": "Esmalte ruranaqa aswanqa {most}-kama (como máximo) ruphachiy qillqakunaman tinkikunman. Hukta tinkinaykipaq hukpa tinkiyninta qichuy.",
   "account-limit": "Huk cuentaqa llapanpi {limit}-kama qillqakunata waqaychanman: esmalte ruranakuna, materialkuna, apuntekuna, ruphachiy qillqakuna, hukkunapas kuska. Astawan waqaychanaykipaq wakinta qichuy.",
+  "import-not-export": "Kayqa manam Glazecalc willakuy archivochu. Willakuyniyta uraykachiy nisqamanta JSON archivota akllariykuy.",
+  "import-newer": "Kay archivotaqa Glazecalcpa aswan musuq versiónninmi rurarqan. P'anqata yapamanta kichay, yapamanta pruebariykuy.",
+  "import-too-many": "Kay archivoqa {count} qillqatam hap'in. Huk yaykuchiyqa {most} qillqakamallam hap'iyta atin. Manam imapas yaykuchisqachu.",
+  "import-invalid": "{count, plural, one {Kay archivopi # qillqataqa manam ñawinchayta atikunchu.} other {Kay archivopi # qillqataqa manam ñawinchayta atikunchu.}} Manam imapas yaykuchisqachu.",
+  "import-over-limit": "Kay yaykuchiyqa {count} qillqatam yapanman, ichaqa cuentaykipiqa {room} qillqapaqllañam kiti kan. Manam imapas yaykuchisqachu.",
+  "import-busy": "Kay cuentamanqa huk yaykuchiymi ñam rurakuchkhan. Tukunankama suyariykuy.",
+  "import-failed": "Yaykuchiyqa manam allinchu karqan, ñuqaykupa ladoykupi huk sasachakuy kasqanrayku. Manam imapas yaykuchisqachu.",
+  "import-done": "Yaykuchiyqa tukusqañam.",
+  "import-undone": "Yaykuchiyqa kutichisqañam.",
+  "import-undo-gone": "Kay yaykuchiytaqa manañam kutichiyta atikunchu.",
   "not-shared": "Kay esmalte ruranaqa mana rakisqachu, utaq enlaceqa mana hunt'asqachu.",
   "share-stopped": "Esmalte ruranaqa manañam rakisqachu. Enlacenqa manañam kichanchu.",
   "token-invalid": "Yaykuna tokenqa mana valechu, tukukapunña utaq qichusqañam.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Kay cuentapi yaykuna tokenkunawan ancha achkha t'ikraykuna rurasqa karqan. Huk rato suyay, yapamanta pruebay; web p'anqapi t'ikraykunaqa llamk'allanraqmi.",
   "too-many-mcp": "AI yanapaqkunapaq Glazecalc herramientakunaman ancha achkha mañakuykuna. Wakin minutota suyay, yapamanta pruebay.",
   "too-many-oauth": "Kay direcciónmanta aplicaciónkunata tinkinapaq ancha achkha mañakuykuna. Wakin minutota suyay, yapamanta pruebay.",
-  "too-many-registrations": "Ancha achkha aplicaciónkunam kikinkuta qillqachikurqanku. Qhipaman yapamanta pruebay."
+  "too-many-registrations": "Ancha achka aplicaciónkunam kikinkuta qillqachikurqanku. Qhipaman yapamanta pruebay.",
+  "too-many-imports": "Kay cuentaman qhipa huk horapi ancha achka yaykuchiykunam rurakurqan.Qhipaman yapamanta pruebariykuy."
 }

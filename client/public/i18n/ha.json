@@ -96,6 +96,7 @@
     "recordsHint": "Sai a na'urar da ku kaɗai kuke amfani da ita. Ana cire su idan kun fita.",
     "recordsBanner": "Ba a iya kaiwa ga Glazecalc. Ana nuna kwafin da aka ajiye a wannan na'ura a {date}.",
     "recordsNotSaved": "Ba a ajiye bayananku a wannan na'ura ba. Haɗa da intanet don ganin su. Kuna iya kunna wannan a asusunku.",
+    "recordsBackOnline": "Kun dawo kan intanet. Sake loda shafin don ganin sabbin bayananku kuma ku sake ajiyewa.",
     "recordsNotKept": "Wannan burauza ba za ta ajiye kwafi ba (bincike na sirri ko babu wuri)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Kayan da ke cikin laburaren Glazecalc, daga feldspar da yumɓu zuwa frit da tushen boron, kowanne da sinadaran oxide, UMF da haɗarinsa.",
     "materialInfo": "{name}: sinadaran oxide, UMF, LOI da haɗari a cikin laburaren Glazecalc.",
     "materialInfoLong": "{name} a cikin laburaren kayan glaze na Glazecalc: sinadaran oxide ɗinsa, gudummawarsa ga UMF, LOI da haɗari.",
-    "imageAlt": "Shafin farko na Glazecalc: sinadaran glaze kyauta don maginan tukwane, kusa da hoton cone da aka gasa."
+    "imageAlt": "Tambarin Glazecalc da takensa, sinadaran glaze kyauta don maginan tukwane, kusa da hoton cone da aka gasa."
   },
   "notices": {
     "dismiss": "Rufe",
@@ -341,6 +342,10 @@
     "suggest": "Ba da shawarar gyara",
     "english": "Karanta na Turanci",
     "close": "Rufe"
+  },
+  "settingsExpiry": {
+    "text": "Wannan burauza ta riƙe saitunanku na Glazecalc, kamar jigo da harshe, kusan shekara ɗaya ba tare da ziyara ba. Za a cire su nan ba da daɗewa ba sai dai idan kun riƙe su. Saitunan da aka ajiye a asusunku ba abin ya shafa ba.",
+    "keep": "Riƙe saitunana"
   },
   "unity": {
     "fluxes": "Flux - R₂O da RO",

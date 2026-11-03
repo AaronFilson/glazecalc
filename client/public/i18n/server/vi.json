@@ -123,6 +123,16 @@
   "trash-full": "Thùng rác đã đầy, nên mã thông báo truy cập không thể chuyển thêm gì vào đó. Vui lòng dọn bớt thùng rác trên trang web trước.",
   "firing-links-full": "Một công thức có thể liên kết với tối đa {most} nhật ký nung. Hãy hủy liên kết một nhật ký để liên kết nhật ký khác.",
   "account-limit": "Một tài khoản có thể giữ tối đa {limit} bản ghi tính chung: công thức men, nguyên liệu, ghi chú, nhật ký nung và những thứ còn lại gộp lại. Vui lòng xóa bớt để lưu thêm.",
+  "import-not-export": "Đây không phải tệp dữ liệu Glazecalc. Vui lòng chọn tệp JSON từ Tải xuống dữ liệu của tôi.",
+  "import-newer": "Tệp này được tạo bởi phiên bản Glazecalc mới hơn. Vui lòng tải lại trang rồi thử lại.",
+  "import-too-many": "Tệp này chứa {count} bản ghi. Một lần nhập nhận tối đa {most}. Không có gì được nhập.",
+  "import-invalid": "{count, plural, other {Không đọc được # bản ghi trong tệp này.}} Không có gì được nhập.",
+  "import-over-limit": "Lần nhập này sẽ thêm {count} bản ghi, nhưng tài khoản của bạn chỉ còn chỗ cho {room} bản ghi nữa. Không có gì được nhập.",
+  "import-busy": "Đang có một lần nhập vào tài khoản này. Vui lòng chờ nó hoàn tất.",
+  "import-failed": "Nhập không thành công do sự cố từ phía chúng tôi. Không có gì được nhập.",
+  "import-done": "Đã nhập xong.",
+  "import-undone": "Lần nhập đã được hoàn tác.",
+  "import-undo-gone": "Lần nhập này không thể hoàn tác được nữa.",
   "not-shared": "Công thức men này không được chia sẻ, hoặc liên kết không đầy đủ.",
   "share-stopped": "Công thức men không còn được chia sẻ. Liên kết của nó không còn mở được nó.",
   "token-invalid": "Mã thông báo truy cập không hợp lệ, đã hết hạn hoặc đã bị thu hồi.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Đã có quá nhiều thay đổi được thực hiện trên tài khoản này bằng mã thông báo truy cập. Vui lòng đợi một lúc rồi thử lại; các thay đổi trên trang web vẫn dùng được.",
   "too-many-mcp": "Quá nhiều yêu cầu gửi đến các công cụ Glazecalc dành cho trợ lý AI. Vui lòng chờ vài phút rồi thử lại.",
   "too-many-oauth": "Có quá nhiều yêu cầu kết nối ứng dụng từ địa chỉ này. Vui lòng đợi vài phút rồi thử lại.",
-  "too-many-registrations": "Có quá nhiều ứng dụng tự đăng ký. Vui lòng thử lại sau."
+  "too-many-registrations": "Có quá nhiều ứng dụng tự đăng ký. Vui lòng thử lại sau.",
+  "too-many-imports": "Có quá nhiều lần nhập vào tài khoản này trong một giờ qua. Vui lòng thử lại sau."
 }

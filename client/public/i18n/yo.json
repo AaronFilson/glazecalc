@@ -96,6 +96,7 @@
     "recordsHint": "Kìkì lórí ẹ̀rọ tí ẹ̀yin nìkan ń lò. A ó yọ ọ́ kúrò nígbà tí ẹ bá jáde.",
     "recordsBanner": "A kò lè dé Glazecalc. À ń fi ẹ̀dà tí a pa mọ́ sórí ẹ̀rọ yìí ní {date} hàn.",
     "recordsNotSaved": "A kò pa àwọn àkọsílẹ̀ yín mọ́ sórí ẹ̀rọ yìí. Ẹ so mọ́ íńtánẹ́ẹ̀tì láti rí wọn. Ẹ lè tan èyí nínú àkáǹtì yín.",
+    "recordsBackOnline": "Ẹ ti padà sórí íńtánẹ́ẹ̀tì. Ẹ tún ojú-ìwé náà gbé láti rí àwọn àkọsílẹ̀ yín tuntun jù àti láti tún fi pamọ́.",
     "recordsNotKept": "Browser yìí kò ní pa ẹ̀dà mọ́ (lílọ kiri ní ìkọ̀kọ̀ tàbí kò sí àyè)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Àwọn ohun èlò inú ibi ìkówèésí àjùmọ̀lò Glazecalc, láti feldspar àti amọ̀ dé frit àti orísun boron, pẹ̀lú oxide, UMF àti ewu ọ̀kọ̀ọ̀kan.",
     "materialInfo": "{name}: oxide, UMF, LOI àti ewu nínú ibi ìkówèésí àjùmọ̀lò Glazecalc.",
     "materialInfoLong": "{name} nínú ibi ìkówèésí àjùmọ̀lò Glazecalc: oxide rẹ̀, ìpín rẹ̀ nínú UMF, LOI rẹ̀ àti ewu rẹ̀.",
-    "imageAlt": "Ojú-ìwé àkọ́kọ́ Glazecalc: kẹ́mísírì glaze ọ̀fẹ́ fún amọ̀kòkò, lẹ́gbẹ̀ẹ́ fọ́tò àwọn àkójọ cone tí a ti sun."
+    "imageAlt": "Àmì Glazecalc àti àkọlé rẹ̀, kẹ́mísírì glaze ọ̀fẹ́ fún amọ̀kòkò, lẹ́gbẹ̀ẹ́ fọ́tò àwọn àkójọ cone tí a ti sun."
   },
   "notices": {
     "dismiss": "Pa á tì",
@@ -341,6 +342,10 @@
     "suggest": "Dá àtúnṣe lábàá",
     "english": "Ka ti èdè Gẹ̀ẹ́sì",
     "close": "Pa á dé"
+  },
+  "settingsExpiry": {
+    "text": "Aṣàwákiri yìí ti pa ètò Glazecalc yín mọ́, bí àwọ̀ ojú-ìwé àti èdè, fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan láìsí pé ẹ wá. A ó yọ wọ́n kúrò láìpẹ́ àyàfi tí ẹ bá pa wọ́n mọ́. Ètò tí ẹ fi pamọ́ sínú àkáǹtì yín kò ní yí padà.",
+    "keep": "Pa ètò mi mọ́"
   },
   "unity": {
     "fluxes": "Flux - R₂O àti RO",

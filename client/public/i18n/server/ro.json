@@ -123,6 +123,16 @@
   "trash-full": "Coșul de reciclare este plin, așa că un token de acces nu mai poate muta nimic în el. Goliți mai întâi o parte pe site.",
   "firing-links-full": "O rețetă poate fi asociată cu cel mult {most} de jurnale de ardere. Dezasociați unul pentru a-l asocia pe altul.",
   "account-limit": "Un cont poate păstra cel mult {limit} înregistrări în total: rețete, materii prime, notițe, jurnale de ardere și restul la un loc. Eliminați câteva ca să puteți salva mai multe.",
+  "import-not-export": "Acesta nu este un fișier de date Glazecalc. Alegeți fișierul JSON de la Descărcați datele mele.",
+  "import-newer": "Acest fișier a fost creat de o versiune mai nouă a Glazecalc. Reîncărcați pagina și încercați din nou.",
+  "import-too-many": "Acest fișier conține {count, plural, one {# înregistrare} few {# înregistrări} other {# de înregistrări}}. Un import poate primi cel mult {most}. Nu s-a importat nimic.",
+  "import-invalid": "{count, plural, one {# înregistrare din acest fișier nu poate fi citită.} few {# înregistrări din acest fișier nu pot fi citite.} other {# de înregistrări din acest fișier nu pot fi citite.}} Nu s-a importat nimic.",
+  "import-over-limit": "Acest import ar adăuga {count, plural, one {# înregistrare} few {# înregistrări} other {# de înregistrări}}, dar contul mai are loc doar pentru {room}. Nu s-a importat nimic.",
+  "import-busy": "Un import în acest cont este deja în desfășurare. Așteptați să se termine.",
+  "import-failed": "Importul nu a reușit din cauza unei probleme la noi. Nu s-a importat nimic.",
+  "import-done": "Importul s-a încheiat.",
+  "import-undone": "Importul a fost anulat.",
+  "import-undo-gone": "Acest import nu mai poate fi anulat.",
   "not-shared": "Această rețetă nu este partajată sau linkul nu este complet.",
   "share-stopped": "Rețeta nu mai este partajată. Linkul ei nu o mai deschide.",
   "token-invalid": "Tokenul de acces nu este valid, a expirat sau a fost revocat.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Prea multe modificări au fost făcute în acest cont cu tokenuri de acces. Așteptați puțin și încercați din nou; modificările de pe site funcționează în continuare.",
   "too-many-mcp": "Prea multe cereri către instrumentele Glazecalc pentru asistenți AI. Așteptați câteva minute și încercați din nou.",
   "too-many-oauth": "Prea multe cereri de conectare a aplicațiilor de la această adresă. Așteptați câteva minute și încercați din nou.",
-  "too-many-registrations": "Prea multe aplicații s-au înregistrat singure. Încercați din nou mai târziu."
+  "too-many-registrations": "Prea multe aplicații s-au înregistrat singure. Încercați din nou mai târziu.",
+  "too-many-imports": "Prea multe importuri în acest cont în ultima oră. Încercați din nou mai târziu."
 }

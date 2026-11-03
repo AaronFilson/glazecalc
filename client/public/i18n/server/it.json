@@ -123,6 +123,16 @@
   "trash-full": "Il cestino è pieno, quindi un token di accesso non può spostarvi altro. Svuotarne prima una parte sul sito web.",
   "firing-links-full": "Una ricetta può essere collegata al massimo a {most} registri di cottura. Scollegarne uno per collegarne un altro.",
   "account-limit": "Un account può conservare fino a {limit} elementi in tutto: ricette, materiali, note, registri di cottura e il resto insieme. Per salvarne di più, rimuoverne prima una parte.",
+  "import-not-export": "Questo non è un file di dati di Glazecalc. Scegliere il file JSON di Scarica i miei dati.",
+  "import-newer": "Questo file è stato creato da una versione più recente di Glazecalc. Ricaricare la pagina e riprovare.",
+  "import-too-many": "Questo file contiene {count} elementi. Una singola importazione ne può accettare al massimo {most}. Non è stato importato nulla.",
+  "import-invalid": "{count, plural, one {# elemento di questo file non può essere letto.} many {# di elementi di questo file non possono essere letti.} other {# elementi di questo file non possono essere letti.}} Non è stato importato nulla.",
+  "import-over-limit": "Questa importazione aggiungerebbe {count} elementi, ma il Suo account ha spazio per altri {room}. Non è stato importato nulla.",
+  "import-busy": "È già in corso un’importazione in questo account. Attendere che finisca.",
+  "import-failed": "L’importazione non è riuscita per un problema da parte nostra. Non è stato importato nulla.",
+  "import-done": "L’importazione è completata.",
+  "import-undone": "L’importazione è stata annullata.",
+  "import-undo-gone": "Questa importazione non può più essere annullata.",
   "not-shared": "Questa ricetta non è condivisa, oppure il link non è completo.",
   "share-stopped": "La ricetta non è più condivisa. Il suo link non la apre più.",
   "token-invalid": "Il token di accesso non è valido, è scaduto o è stato revocato.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Con i token di accesso sono state fatte troppe modifiche a questo account. Attendere un po’ e riprovare; le modifiche dal sito funzionano ancora.",
   "too-many-mcp": "Troppe richieste agli strumenti di Glazecalc per gli assistenti IA. Attendere qualche minuto e riprovare.",
   "too-many-oauth": "Troppe richieste di collegare app da questo indirizzo. Attendere qualche minuto e riprovare.",
-  "too-many-registrations": "Troppe app si sono registrate da sole. Riprovare più tardi."
+  "too-many-registrations": "Troppe app si sono registrate da sole. Riprovare più tardi.",
+  "too-many-imports": "Troppe importazioni in questo account nell’ultima ora. Riprovare più tardi."
 }

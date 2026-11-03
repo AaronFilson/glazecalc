@@ -96,6 +96,7 @@
     "recordsHint": "Kaliya qalab adiga keligaa isticmaasho. Waa la saaraa markaad ka baxdo.",
     "recordsBanner": "Glazecalc lama gaari karo. Waxaa la muujinayaa nuqulka lagu kaydiyay qalabkan {date}.",
     "recordsNotSaved": "Diiwaannadaadu kuma kaydsana qalabkan. Ku xir internetka si aad u aragto. Waxaad tan ka shidi kartaa akoonkaaga.",
+    "recordsBackOnline": "Mar kale ayaad internetka ku xiran tahay. Dib u soo rar si aad u aragto diiwaannadaadii ugu dambeeyay oo aad mar kale u kaydiso.",
     "recordsNotKept": "Browser-kani ma hayn doono nuqul (daalacasho gaar ah ama meel la'aan)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Walxaha maktabadda caadiga ah ee Glazecalc, feldspar iyo dhoobo ilaa frit iyo ilaha boron, mid walba falanqaynta oksaydhka, UMF-ta iyo khataraha.",
     "materialInfo": "{name}: falanqaynta oksaydhka, UMF-ta, LOI iyo khataraha ee maktabadda caadiga ah ee Glazecalc.",
     "materialInfoLong": "Walaxda {name} ee maktabadda caadiga ah ee Glazecalc: falanqaynta oksaydhka, qaybta ay ku leedahay UMF-ta, LOI iyo khataraha.",
-    "imageAlt": "Bogga hore ee Glazecalc: kimistariga glaze oo bilaash ah oo dhoobo-sameeyayaasha, ag sawir xirmooyin cone ah oo la gubay."
+    "imageAlt": "Astaanta Glazecalc iyo cinwaankeeda, kimistariga glaze oo bilaash ah oo loogu talagalay dhoobo-sameeyayaasha, ag sawir xirmooyin cone ah oo la gubay."
   },
   "notices": {
     "dismiss": "Xir",
@@ -341,6 +342,10 @@
     "suggest": "Soo jeedi sixitaan",
     "english": "Akhri Ingiriisiga",
     "close": "Xir"
+  },
+  "settingsExpiry": {
+    "text": "Browser-kani wuxuu hayay dejintaada Glazecalc, sida muuqaalka iyo luqadda, ku dhowaad sannad iyada oo aan booqasho jirin. Dhawaan waa la saari doonaa haddii aadan hayn. Dejinta lagu kaydiyay akoonkaaga wax saameyn ah kuma yeelanayso.",
+    "keep": "Hay dejintayda"
   },
   "unity": {
     "fluxes": "Flux-yada - R₂O iyo RO",

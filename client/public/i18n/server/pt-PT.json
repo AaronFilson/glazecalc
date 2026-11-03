@@ -123,6 +123,16 @@
   "trash-full": "O lixo está cheio, por isso um token de acesso não pode mover mais nada para lá. Esvazie primeiro uma parte no site.",
   "firing-links-full": "Uma receita pode ser associada a, no máximo, {most} registos de cozedura. Desassocie um para associar outro.",
   "account-limit": "Uma conta pode guardar até {limit} registos no total: receitas, matérias-primas, notas, registos de cozedura e o resto em conjunto. Para guardar mais, remova primeiro uma parte.",
+  "import-not-export": "Este não é um ficheiro de dados do Glazecalc. Escolha o ficheiro JSON de Transferir os meus dados.",
+  "import-newer": "Este ficheiro foi criado por uma versão mais recente do Glazecalc. Recarregue a página e tente novamente.",
+  "import-too-many": "Este ficheiro contém {count} registos. Uma importação aceita até {most}. Nada foi importado.",
+  "import-invalid": "{count, plural, one {Não é possível ler # registo deste ficheiro.} many {Não é possível ler # registos deste ficheiro.} other {Não é possível ler # registos deste ficheiro.}} Nada foi importado.",
+  "import-over-limit": "Esta importação acrescentaria {count} registos, mas a sua conta só tem espaço para mais {room}. Nada foi importado.",
+  "import-busy": "Já está em curso uma importação para esta conta. Aguarde que termine.",
+  "import-failed": "A importação não funcionou devido a um problema do nosso lado. Nada foi importado.",
+  "import-done": "A importação está concluída.",
+  "import-undone": "A importação foi anulada.",
+  "import-undo-gone": "Esta importação já não pode ser anulada.",
   "not-shared": "Esta receita não está partilhada, ou a ligação está incompleta.",
   "share-stopped": "A receita deixou de ser partilhada. A sua ligação já não a abre.",
   "token-invalid": "O token de acesso não é válido, expirou ou foi revogado.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Foram feitas demasiadas alterações a esta conta com tokens de acesso. Aguarde um pouco e tente novamente; as alterações no site continuam a funcionar.",
   "too-many-mcp": "Demasiados pedidos às ferramentas do Glazecalc para assistentes de IA. Aguarde alguns minutos e tente novamente.",
   "too-many-oauth": "Demasiados pedidos para ligar aplicações a partir deste endereço. Aguarde alguns minutos e tente novamente.",
-  "too-many-registrations": "Demasiadas aplicações registaram-se a si próprias. Tente novamente mais tarde."
+  "too-many-registrations": "Demasiadas aplicações registaram-se a si próprias. Tente novamente mais tarde.",
+  "too-many-imports": "Demasiadas importações para esta conta na última hora. Tente novamente mais tarde."
 }

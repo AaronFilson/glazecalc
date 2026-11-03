@@ -459,7 +459,7 @@ export class ImportSection {
       this.preview.set(preview);
     } catch (err) {
       input.value = '';
-      this.showError(err, 'account.import.previewFailed');
+      this.showError(err, translate('account.import.previewFailed'));
     } finally {
       this.busy.set(false);
     }
@@ -487,7 +487,7 @@ export class ImportSection {
       this.preview.set(null);
       this.result.set(result);
     } catch (err) {
-      this.showError(err, 'account.import.importFailed');
+      this.showError(err, translate('account.import.importFailed'));
     } finally {
       this.busy.set(false);
     }
@@ -509,8 +509,9 @@ export class ImportSection {
   }
 
   /** The server's message, with the list of records it could not read when it sends one. */
+  /** fallback: the message, already translated (written as translate('…') at the call, so the key check sees it). */
   private showError(err: unknown, fallback: string): void {
-    this.problem.set(errorMessage(err, translate(fallback)));
+    this.problem.set(errorMessage(err, fallback));
     const body = (err as { error?: { problems?: ImportProblem[] } })?.error;
     this.problems.set(Array.isArray(body?.problems) ? body.problems : []);
   }

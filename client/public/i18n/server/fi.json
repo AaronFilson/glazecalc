@@ -123,6 +123,16 @@
   "trash-full": "Roskakori on täynnä, joten käyttöoikeustunnus ei voi siirtää sinne enempää. Tyhjennä osa siitä ensin verkkosivustolla.",
   "firing-links-full": "Reseptin voi liittää enintään {most} polttopäiväkirjaan. Irrota yksi, jotta voi liittää toisen.",
   "account-limit": "Tilillä voi säilyttää enintään {limit} tietuetta yhteensä: reseptit, raaka-aineet, muistiinpanot, polttopäiväkirjat ja muut yhdessä. Poista joitakin, jotta uusia voi tallentaa.",
+  "import-not-export": "Tämä ei ole Glazecalcin tietotiedosto. Valitse JSON-tiedosto kohdasta Omien tietojen lataaminen.",
+  "import-newer": "Tämä tiedosto on tehty Glazecalcin uudemmalla versiolla. Lataa sivu uudelleen ja yritä uudelleen.",
+  "import-too-many": "Tiedostossa on {count} tietuetta. Yksi tuonti voi ottaa enintään {most}. Mitään ei tuotu.",
+  "import-invalid": "{count, plural, one {# tietuetta tässä tiedostossa ei voi lukea.} other {# tietuetta tässä tiedostossa ei voi lukea.}} Mitään ei tuotu.",
+  "import-over-limit": "Tämä tuonti lisäisi {count} tietuetta, mutta tilillesi mahtuu enää {room}. Mitään ei tuotu.",
+  "import-busy": "Tälle tilille on jo tuonti käynnissä. Odota, että se valmistuu.",
+  "import-failed": "Tuonti epäonnistui meidän päässämme olleen ongelman vuoksi. Mitään ei tuotu.",
+  "import-done": "Tuonti on valmis.",
+  "import-undone": "Tuonti kumottiin.",
+  "import-undo-gone": "Tätä tuontia ei voi enää kumota.",
   "not-shared": "Tätä reseptiä ei jaeta tai linkki ei ole kokonainen.",
   "share-stopped": "Reseptiä ei enää jaeta. Sen linkki ei enää avaa sitä.",
   "token-invalid": "Käyttöoikeustunnus ei ole kelvollinen, se on vanhentunut tai se on peruutettu.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Tilille tehtiin liian monta muutosta käyttöoikeustunnuksilla. Odota hetki ja yritä uudelleen; verkkosivustolla tehdyt muutokset toimivat yhä.",
   "too-many-mcp": "Liian monta pyyntöä Glazecalcin tekoälyavustajille tarkoitettuihin työkaluihin. Odota muutama minuutti ja yritä uudelleen.",
   "too-many-oauth": "Tästä osoitteesta on tullut liian monta sovellusten yhdistämispyyntöä. Odota muutama minuutti ja yritä uudelleen.",
-  "too-many-registrations": "Liian moni sovellus rekisteröi itsensä. Yritä myöhemmin uudelleen."
+  "too-many-registrations": "Liian moni sovellus rekisteröi itsensä. Yritä myöhemmin uudelleen.",
+  "too-many-imports": "Tälle tilille on tehty liian monta tuontia viimeisen tunnin aikana. Yritä myöhemmin uudelleen."
 }

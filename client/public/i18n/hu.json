@@ -96,6 +96,7 @@
     "recordsHint": "Csak olyan eszközön, amelyet egyedül Ön használ. Kijelentkezéskor törlődik.",
     "recordsBanner": "A Glazecalc nem érhető el. Az ezen az eszközön {date} napon mentett másolat látható.",
     "recordsNotSaved": "Az adatai nincsenek elmentve ezen az eszközön. A megtekintésükhöz csatlakozzon az internetre. Ezt a fiókjában kapcsolhatja be.",
+    "recordsBackOnline": "Újra online. Töltse újra az oldalt, hogy lássa a legfrissebb bejegyzéseit, és újra menthessen.",
     "recordsNotKept": "Ez a böngésző nem őriz meg másolatot (privát böngészés vagy nincs elég hely)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "A Glazecalc beépített könyvtárának nyersanyagai a földpátoktól és agyagoktól a frittekig és bórforrásokig, mindegyik oxidos összetételével, Seger-képletével és veszélyeivel.",
     "materialInfo": "{name}: oxidos összetétel, Seger-képlet, izzítási veszteség és veszélyek a Glazecalc beépített könyvtárában.",
     "materialInfoLong": "{name} a Glazecalc beépített mázanyag-könyvtárában: oxidos összetétele, hozzájárulása a Seger-képlethez, izzítási vesztesége és veszélyei.",
-    "imageAlt": "A Glazecalc kezdőoldala: ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."
+    "imageAlt": "A Glazecalc logója és címsora, ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."
   },
   "notices": {
     "dismiss": "Bezárás",
@@ -341,6 +342,10 @@
     "suggest": "Javítási javaslat",
     "english": "Az angol eredeti",
     "close": "Bezárás"
+  },
+  "settingsExpiry": {
+    "text": "Ez a böngésző majdnem egy éve látogatás nélkül őrzi a Glazecalc-beállításait, például a témát és a nyelvet. Hamarosan törlődnek, hacsak meg nem tartja őket. A fiókjába mentett beállításokat ez nem érinti.",
+    "keep": "Beállításaim megtartása"
   },
   "unity": {
     "fluxes": "Olvasztóanyagok – R₂O és RO",

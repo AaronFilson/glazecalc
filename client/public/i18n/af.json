@@ -96,6 +96,7 @@
     "recordsHint": "Net op 'n toestel wat jy alleen gebruik. Verwyder wanneer jy afmeld.",
     "recordsBanner": "Glazecalc kan nie bereik word nie. Die kopie wat op {date} op hierdie toestel gestoor is, word gewys.",
     "recordsNotSaved": "Jou rekords is nie op hierdie toestel gestoor nie. Koppel aan die internet om hulle te sien. Jy kan dit in jou rekening aanskakel.",
+    "recordsBackOnline": "Jy is weer aanlyn. Laai weer om jou nuutste rekords te sien en weer te stoor.",
     "recordsNotKept": "Hierdie blaaier sal nie 'n kopie hou nie (privaat blaai of geen spasie nie)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Die grondstowwe in Glazecalc se standaardbiblioteek, van veldspate en klei tot frits en boorbronne, elk met sy oksiedontleding, Seger-formule en gevare.",
     "materialInfo": "{name}: oksiedontleding, Seger-formule, gloeiverlies en gevare in Glazecalc se standaardbiblioteek.",
     "materialInfoLong": "{name} in Glazecalc se standaardbiblioteek van glasuurgrondstowwe: sy oksiedontleding, bydrae tot die Seger-formule, gloeiverlies en gevare.",
-    "imageAlt": "Die Glazecalc-tuisblad: gratis glasuurchemie vir pottebakkers, langs 'n foto van gebakte kegelpakkies."
+    "imageAlt": "Die Glazecalc-logo en sy opskrif, gratis glasuurchemie vir pottebakkers, langs 'n foto van gebakte kegelpakkies."
   },
   "notices": {
     "dismiss": "Maak toe",
@@ -341,6 +342,10 @@
     "suggest": "Stel 'n regstelling voor",
     "english": "Lees die Engels",
     "close": "Maak toe"
+  },
+  "settingsExpiry": {
+    "text": "Hierdie blaaier het jou Glazecalc-instellings, soos tema en taal, amper 'n jaar lank sonder 'n besoek gehou. Hulle sal binnekort verwyder word, tensy jy hulle hou. Instellings wat in jou rekening gestoor is, word nie geraak nie.",
+    "keep": "Hou my instellings"
   },
   "unity": {
     "fluxes": "Vloeimiddels - R₂O en RO",

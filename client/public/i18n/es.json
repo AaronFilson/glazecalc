@@ -96,6 +96,7 @@
     "recordsHint": "Solo en un dispositivo que use únicamente usted. Se quitan al cerrar sesión.",
     "recordsBanner": "No se puede acceder a Glazecalc. Se muestra la copia guardada en este dispositivo el {date}.",
     "recordsNotSaved": "Sus registros no están guardados en este dispositivo. Conéctese a internet para verlos. Puede activarlo en su cuenta.",
+    "recordsBackOnline": "Vuelve a tener conexión. Recargue la página para ver sus registros más recientes y volver a guardar.",
     "recordsNotKept": "Este navegador no guardará una copia (navegación privada o falta de espacio)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Los materiales de la biblioteca estándar de Glazecalc, desde feldespatos y arcillas hasta fritas y fuentes de boro, cada uno con su análisis de óxidos, su fórmula Seger y sus peligros.",
     "materialInfo": "{name}: análisis de óxidos, fórmula Seger, pérdida al fuego y peligros en la biblioteca estándar de Glazecalc.",
     "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aportación a la fórmula Seger, su pérdida al fuego y sus peligros.",
-    "imageAlt": "La página de inicio de Glazecalc: química de esmaltes gratuita para ceramistas, junto a una foto de tríos de conos tras la cocción."
+    "imageAlt": "El logotipo de Glazecalc y su título, química de esmaltes gratuita para ceramistas, junto a una foto de tríos de conos tras la cocción."
   },
   "notices": {
     "dismiss": "Cerrar",
@@ -341,6 +342,10 @@
     "suggest": "Sugerir una corrección",
     "english": "Leer el original en inglés",
     "close": "Cerrar"
+  },
+  "settingsExpiry": {
+    "text": "Este navegador ha conservado sus ajustes de Glazecalc, como el tema y el idioma, durante casi un año sin ninguna visita. Se quitarán pronto, a menos que los conserve. Los ajustes guardados en su cuenta no se ven afectados.",
+    "keep": "Conservar mis ajustes"
   },
   "unity": {
     "fluxes": "Fundentes - R₂O y RO",

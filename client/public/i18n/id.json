@@ -96,6 +96,7 @@
     "recordsHint": "Hanya di perangkat yang Anda pakai sendiri. Dihapus saat Anda keluar.",
     "recordsBanner": "Glazecalc tidak dapat dijangkau. Menampilkan salinan yang disimpan di perangkat ini pada {date}.",
     "recordsNotSaved": "Data Anda tidak tersimpan di perangkat ini. Sambungkan ke internet untuk melihatnya. Anda dapat mengaktifkan ini di akun Anda.",
+    "recordsBackOnline": "Anda kembali daring. Muat ulang untuk melihat data terbaru Anda dan menyimpan lagi.",
     "recordsNotKept": "Peramban ini tidak akan menyimpan salinan (penjelajahan pribadi atau ruang tidak cukup)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Bahan di pustaka standar Glazecalc, dari feldspar dan tanah liat hingga frit dan sumber boron, masing-masing dengan analisis oksida, formula Seger, dan bahaya.",
     "materialInfo": "{name}: analisis oksida, formula Seger, susut pijar, dan bahaya dalam pustaka standar Glazecalc.",
     "materialInfoLong": "{name} dalam pustaka standar bahan glasir Glazecalc: analisis oksida, kontribusi terhadap formula Seger, susut pijar, dan bahayanya.",
-    "imageAlt": "Beranda Glazecalc: kimia glasir gratis untuk pembuat keramik, di samping foto set kerucut yang sudah dibakar."
+    "imageAlt": "Logo Glazecalc dan judulnya, kimia glasir gratis untuk pembuat keramik, di samping foto set kerucut yang sudah dibakar."
   },
   "notices": {
     "dismiss": "Tutup",
@@ -341,6 +342,10 @@
     "suggest": "Sarankan koreksi",
     "english": "Baca versi Inggris",
     "close": "Tutup"
+  },
+  "settingsExpiry": {
+    "text": "Peramban ini telah menyimpan pengaturan Glazecalc Anda, seperti tema dan bahasa, selama hampir setahun tanpa kunjungan. Pengaturan itu akan segera dihapus kecuali Anda menyimpannya. Pengaturan yang tersimpan di akun Anda tidak terpengaruh.",
+    "keep": "Simpan pengaturan saya"
   },
   "unity": {
     "fluxes": "Pelebur - R₂O dan RO",

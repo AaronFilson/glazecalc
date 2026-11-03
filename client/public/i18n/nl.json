@@ -96,6 +96,7 @@
     "recordsHint": "Alleen op een apparaat dat alleen u gebruikt. Verwijderd als u uitlogt.",
     "recordsBanner": "Glazecalc is niet bereikbaar. U ziet de kopie die op {date} op dit apparaat is opgeslagen.",
     "recordsNotSaved": "Uw gegevens zijn niet op dit apparaat opgeslagen. Maak verbinding met internet om ze te zien. U kunt dit inschakelen in uw account.",
+    "recordsBackOnline": "U bent weer online. Laad de pagina opnieuw om uw nieuwste records te zien en weer op te slaan.",
     "recordsNotKept": "Deze browser bewaart geen kopie (privé browsen of geen ruimte)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "De grondstoffen in de standaardbibliotheek van Glazecalc, van veldspaten en klei tot fritten en boorbronnen, elk met oxideanalyse, Segerformule en gevaren.",
     "materialInfo": "{name}: oxideanalyse, Segerformule, gloeiverlies en gevaren in de standaardbibliotheek van Glazecalc.",
     "materialInfoLong": "{name} in de standaardbibliotheek van glazuurgrondstoffen van Glazecalc: oxideanalyse, bijdrage aan de Segerformule, gloeiverlies en gevaren.",
-    "imageAlt": "De startpagina van Glazecalc: gratis glazuurchemie voor pottenbakkers, naast een foto van gestookte kegeldrietallen."
+    "imageAlt": "Het Glazecalc-logo en de kop, gratis glazuurchemie voor pottenbakkers, naast een foto van gestookte kegelrijen."
   },
   "notices": {
     "dismiss": "Sluiten",
@@ -341,6 +342,10 @@
     "suggest": "Correctie voorstellen",
     "english": "De Engelse tekst lezen",
     "close": "Sluiten"
+  },
+  "settingsExpiry": {
+    "text": "Deze browser bewaart uw Glazecalc-instellingen, zoals thema en taal, al bijna een jaar zonder bezoek. Ze worden binnenkort verwijderd, tenzij u ze bewaart. Instellingen die in uw account zijn opgeslagen, blijven ongewijzigd.",
+    "keep": "Mijn instellingen bewaren"
   },
   "unity": {
     "fluxes": "Smeltmiddelen – R₂O en RO",

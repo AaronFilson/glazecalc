@@ -123,6 +123,16 @@
   "trash-full": "Udoti ugcwele, ngakho i-access token ayikwazi ukuhambisa okunye kuwo. Sicela uthulule okunye kwawo kuwebhusayithi kuqala.",
   "firing-links-full": "Iresiphi ingaxhunywa kumarekhodi okushisa angeqile ku-{most}. Nqamula elilodwa ukuze uxhume elinye.",
   "account-limit": "I-akhawunti ingagcina amarekhodi afika ku-{limit} esewonke: amaresiphi, okokwakha, amanothi, amarekhodi okushisa nokunye ndawonye. Sicela ukhiphe amanye ukuze ulondoloze okwengeziwe.",
+  "import-not-export": "Leli akulona ifayela lemininingwane ye-Glazecalc. Sicela ukhethe ifayela le-JSON elivela ku-Landa imininingwane yami.",
+  "import-newer": "Leli fayela lenziwe yinguqulo entsha ye-Glazecalc. Sicela ulayishe kabusha ikhasi bese uzama futhi.",
+  "import-too-many": "Leli fayela linamarekhodi angu-{count}. Ukungenisa okukodwa kungathatha afika ku-{most}. Akukho okungenisiwe.",
+  "import-invalid": "{count, plural, one {Amarekhodi angu-# akuleli fayela awafundeki.} other {Amarekhodi angu-# akuleli fayela awafundeki.}} Akukho okungenisiwe.",
+  "import-over-limit": "Lokhu kungenisa kungangeza amarekhodi angu-{count}, kodwa i-akhawunti yakho isenendawo yamanye angu-{room} kuphela. Akukho okungenisiwe.",
+  "import-busy": "Kukhona ukungenisa okusaqhubeka kule akhawunti. Sicela ulinde kuze kuqedwe.",
+  "import-failed": "Ukungenisa akusebenzanga ngenxa yenkinga ohlangothini lwethu. Akukho okungenisiwe.",
+  "import-done": "Ukungenisa kuqediwe.",
+  "import-undone": "Ukungenisa kuhlehlisiwe.",
+  "import-undo-gone": "Lokhu kungenisa akusakwazi ukuhlehliswa.",
   "not-shared": "Le resiphi ayabelwanga, noma isixhumanisi asiphelele.",
   "share-stopped": "Iresiphi ayisabelwana. Isixhumanisi sayo asisayivuli.",
   "token-invalid": "I-access token ayivumelekile, iphelelwe yisikhathi noma ihoxisiwe.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Kwenziwe izinguquko eziningi kakhulu kule akhawunti ngama-access token. Sicela ulinde isikhashana bese uzama futhi; izinguquko kuwebhusayithi zisasebenza.",
   "too-many-mcp": "Izicelo eziningi kakhulu kumathuluzi e-Glazecalc abasizi be-AI. Sicela ulinde imizuzu embalwa bese uzama futhi.",
   "too-many-oauth": "Izicelo eziningi kakhulu zokuxhuma izinhlelo ezivela kuleli kheli. Sicela ulinde imizuzu embalwa bese uzama futhi.",
-  "too-many-registrations": "Izinhlelo eziningi kakhulu zizibhalise zona. Sicela uzame futhi emuva kwesikhathi."
+  "too-many-registrations": "Izinhlelo eziningi kakhulu zizibhalise zona. Sicela uzame futhi emuva kwesikhathi.",
+  "too-many-imports": "Kube nokungenisa okuningi kakhulu kule akhawunti ehoreni elidlule. Sicela uzame futhi emuva kwesikhathi."
 }

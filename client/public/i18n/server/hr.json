@@ -123,6 +123,16 @@
   "trash-full": "Koš za smeće je pun, pa pristupni token u njega ne može premjestiti ništa više. Prvo ispraznite dio Koša za smeće na web-stranici.",
   "firing-links-full": "Recept se može povezati s najviše {most} zapisnika pečenja. Prekinite vezu s jednim da biste povezali drugi.",
   "account-limit": "Jedan račun može ukupno čuvati najviše {limit} zapisa: recepte, sirovine, bilješke, zapisnike pečenja i ostalo zajedno. Uklonite neke da biste mogli spremiti više.",
+  "import-not-export": "Ovo nije podatkovna datoteka Glazecalca. Odaberite JSON datoteku iz odjeljka Preuzimanje mojih podataka.",
+  "import-newer": "Ovu je datoteku izradila novija verzija Glazecalca. Ponovno učitajte stranicu i pokušajte ponovno.",
+  "import-too-many": "Ova datoteka sadrži {count} zapisa. Jedan uvoz može primiti najviše {most}. Ništa nije uvezeno.",
+  "import-invalid": "{count, plural, one {# zapis u ovoj datoteci ne može se pročitati.} few {# zapisa u ovoj datoteci ne mogu se pročitati.} other {# zapisa u ovoj datoteci ne može se pročitati.}} Ništa nije uvezeno.",
+  "import-over-limit": "Ovaj bi uvoz dodao {count} zapisa, ali na vašem računu ima mjesta za još samo {room}. Ništa nije uvezeno.",
+  "import-busy": "Uvoz na ovaj račun već je u tijeku. Pričekajte da završi.",
+  "import-failed": "Uvoz nije uspio zbog problema na našoj strani. Ništa nije uvezeno.",
+  "import-done": "Uvoz je gotov.",
+  "import-undone": "Uvoz je poništen.",
+  "import-undo-gone": "Ovaj se uvoz više ne može poništiti.",
   "not-shared": "Ovaj recept nije podijeljen ili poveznica nije potpuna.",
   "share-stopped": "Recept se više ne dijeli. Njegova ga poveznica više ne otvara.",
   "token-invalid": "Pristupni token nije valjan, istekao je ili je opozvan.",
@@ -188,5 +198,6 @@
   "too-many-changes": "S pristupnim tokenima izvršeno je previše promjena na ovom računu. Pričekajte malo i pokušajte ponovno; promjene na web-stranici i dalje rade.",
   "too-many-mcp": "Previše zahtjeva za alate Glazecalca za AI asistente. Pričekajte nekoliko minuta i pokušajte ponovno.",
   "too-many-oauth": "Previše zahtjeva za povezivanje aplikacija s ove adrese. Pričekajte nekoliko minuta i pokušajte ponovno.",
-  "too-many-registrations": "Previše se aplikacija registriralo samo. Pokušajte ponovno kasnije."
+  "too-many-registrations": "Previše se aplikacija registriralo samo. Pokušajte ponovno kasnije.",
+  "too-many-imports": "Previše uvoza na ovaj račun u posljednjih sat vremena. Pokušajte ponovno kasnije."
 }

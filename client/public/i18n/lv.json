@@ -96,6 +96,7 @@
     "recordsHint": "Tikai ierīcē, ko lietojat tikai jūs. Tiek noņemti, kad izrakstāties.",
     "recordsBanner": "Glazecalc nav sasniedzams. Tiek rādīta kopija, kas šajā ierīcē saglabāta {date}.",
     "recordsNotSaved": "Jūsu ieraksti nav saglabāti šajā ierīcē. Lai tos redzētu, izveidojiet interneta savienojumu. To varat ieslēgt savā kontā.",
+    "recordsBackOnline": "Jūs atkal esat tiešsaistē. Pārlādējiet lapu, lai redzētu jaunākos ierakstus un varētu atkal saglabāt.",
     "recordsNotKept": "Šī pārlūkprogramma kopiju neglabās (privātā pārlūkošana vai nav vietas)."
   },
   "picker": {
@@ -148,7 +149,7 @@
     "materials": "Glazecalc standarta bibliotēkas izejvielas, no laukšpatiem un māliem līdz fritēm un bora avotiem, katrai ar oksīdu analīzi, Zēgera formulu un apdraudējumiem.",
     "materialInfo": "{name}: oksīdu analīze, Zēgera formula, karsēšanas zudumi un apdraudējumi Glazecalc standarta bibliotēkā.",
     "materialInfoLong": "{name} Glazecalc glazūras izejvielu standarta bibliotēkā: oksīdu analīze, devums Zēgera formulā, karsēšanas zudumi un apdraudējumi.",
-    "imageAlt": "Glazecalc sākumlapa: bezmaksas glazūru ķīmija podniekiem blakus fotogrāfijai ar apdedzinātiem konusu komplektiem."
+    "imageAlt": "Glazecalc logotips un virsraksts “bezmaksas glazūru ķīmija keramiķiem” blakus apdedzinātu konusu fotoattēlam."
   },
   "notices": {
     "dismiss": "Aizvērt",
@@ -341,6 +342,10 @@
     "suggest": "Ieteikt labojumu",
     "english": "Lasīt angļu valodā",
     "close": "Aizvērt"
+  },
+  "settingsExpiry": {
+    "text": "Šī pārlūkprogramma jau gandrīz gadu bez apmeklējuma glabā jūsu Glazecalc iestatījumus, piemēram, motīvu un valodu. Drīz tie tiks noņemti, ja vien jūs tos nepaturēsiet. Kontā saglabātos iestatījumus tas neietekmē.",
+    "keep": "Paturēt manus iestatījumus"
   },
   "unity": {
     "fluxes": "Kušņi – R₂O un RO",

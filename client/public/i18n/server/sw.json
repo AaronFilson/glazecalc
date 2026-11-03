@@ -123,6 +123,16 @@
   "trash-full": "Tupio limejaa, kwa hiyo tokeni ya ufikiaji haiwezi kuhamishia kitu kingine humo. Tafadhali safisha sehemu yake kwenye tovuti kwanza.",
   "firing-links-full": "Kichocheo kinaweza kuunganishwa na kumbukumbu za kuchoma zisizozidi {most}. Ondoa kiungo cha moja ili kuunganisha nyingine.",
   "account-limit": "Akaunti inaweza kuhifadhi rekodi zisizozidi {limit} kwa jumla: vichocheo, malighafi, maelezo, kumbukumbu za kuchoma na vingine vyote kwa pamoja. Tafadhali ondoa baadhi ili kuhifadhi zaidi.",
+  "import-not-export": "Hii si faili ya data ya Glazecalc. Tafadhali chagua faili ya JSON kutoka Pakua data yangu.",
+  "import-newer": "Faili hii iliundwa na toleo jipya zaidi la Glazecalc. Tafadhali pakia upya ukurasa na ujaribu tena.",
+  "import-too-many": "Faili hii ina rekodi {count}. Uletaji mmoja unaweza kuchukua hadi {most}. Hakuna kilicholetwa.",
+  "import-invalid": "{count, plural, one {Rekodi # kwenye faili hii haiwezi kusomwa.} other {Rekodi # kwenye faili hii haziwezi kusomwa.}} Hakuna kilicholetwa.",
+  "import-over-limit": "Uletaji huu ungeongeza rekodi {count}, lakini akaunti yako ina nafasi ya {room} zaidi. Hakuna kilicholetwa.",
+  "import-busy": "Uletaji kwenye akaunti hii tayari unaendelea. Tafadhali subiri ukamilike.",
+  "import-failed": "Uletaji haukufanikiwa kwa sababu ya tatizo upande wetu. Hakuna kilicholetwa.",
+  "import-done": "Uletaji umekamilika.",
+  "import-undone": "Uletaji umetenduliwa.",
+  "import-undo-gone": "Uletaji huu hauwezi kutenduliwa tena.",
   "not-shared": "Kichocheo hiki hakijashirikiwa, au kiungo si kamili.",
   "share-stopped": "Kichocheo hakishirikiwi tena. Kiungo chake hakikifungui tena.",
   "token-invalid": "Tokeni ya ufikiaji si halali, imeisha muda wake au ilibatilishwa.",
@@ -188,5 +198,6 @@
   "too-many-changes": "Mabadiliko mengi mno yamefanywa kwenye akaunti hii kwa tokeni za ufikiaji. Tafadhali subiri kwa muda kisha ujaribu tena; mabadiliko kwenye tovuti bado yanafanya kazi.",
   "too-many-mcp": "Maombi mengi mno kwa zana za Glazecalc za wasaidizi wa AI. Tafadhali subiri dakika chache kisha ujaribu tena.",
   "too-many-oauth": "Maombi mengi mno ya kuunganisha programu kutoka anwani hii. Tafadhali subiri dakika chache kisha ujaribu tena.",
-  "too-many-registrations": "Programu nyingi mno zimejisajili. Tafadhali jaribu tena baadaye."
+  "too-many-registrations": "Programu nyingi mno zimejisajili. Tafadhali jaribu tena baadaye.",
+  "too-many-imports": "Uletaji mwingi mno kwenye akaunti hii katika saa iliyopita. Tafadhali jaribu tena baadaye."
 }
