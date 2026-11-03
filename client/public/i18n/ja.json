@@ -87,11 +87,16 @@
     "language": "言語:"
   },
   "offline": {
-    "languageNotSaved": "この言語はこのスマートフォンに保存されていません。使うにはインターネットに接続してください。",
+    "languageNotSaved": "この言語はこの端末に保存されていません。使うにはインターネットに接続してください。",
     "updateReady": "Glazecalc の新しいバージョンを利用できます。",
     "reload": "再読み込み",
     "dismiss": "あとで",
-    "install": "アプリをインストール"
+    "install": "アプリをインストール",
+    "recordsSwitch": "記録をこの端末に保存して、インターネットなしで開けるようにする",
+    "recordsHint": "自分だけが使う端末でのみ。ログアウトすると削除されます。",
+    "recordsBanner": "Glazecalc に接続できません。{date} にこの端末に保存したコピーを表示しています。",
+    "recordsNotSaved": "記録はこの端末に保存されていません。見るにはインターネットに接続してください。アカウントでオンにできます。",
+    "recordsNotKept": "このブラウザはコピーを保存しません（プライベートブラウズ中か、空き容量がありません）。"
   },
   "picker": {
     "results": "{count, plural, other {#件が該当}}",

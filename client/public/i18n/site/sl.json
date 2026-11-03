@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Zasebnost",
-    "lead": "Zadnja posodobitev: oktober 2026.",
+    "lead": "Zadnja posodobitev: november 2026.",
     "shortHeading": "Na kratko",
     "short": "Glazecalc hrani to, kar potrebuje za delovanje vašega računa, in nič več. Ni oglasov, analitike ali sledenja. Vaši podatki se nikoli ne prodajajo, edino podjetje, ki z njimi ravna, pa je Amazon Web Services, ki gosti spletno mesto in pošilja njegovo e-pošto.",
     "whoHeading": "Kdo je odgovoren",
@@ -138,7 +138,7 @@
     "rightsAsk": "Za vse drugo, na primer če želite, da se vaši podatki ne uporabljajo, dokler se napaka ne popravi, ali če ugovarjate načinu njihove uporabe, pišite na <mail>privacy@glazecalcapp.com</mail>. To je brezplačno in odgovor boste prejeli v enem mesecu. Prosili vas bomo samo, da dokažete, da je račun vaš, s prijavo ali z odprtjem povezave, poslane na njegov naslov, nikoli pa za osebni dokument.",
     "rightsComplain": "Če niste zadovoljni, se lahko pritožite pri nadzornem organu za varstvo podatkov: v EU pri <edpb>organu v vaši državi</edpb>, v Združenem kraljestvu pa pri <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Piškotki in shramba brskalnika",
-    "storageIntro": "Glazecalc nastavi dva piškotka, drugega samo med prijavo z Googlom, GitHubom ali Microsoftom, in hrani nekaj majhnih vrednosti v vašem brskalniku. Vsaka je tam zaradi nečesa, kar ste zahtevali: da ostanete prijavljeni, da se prijavite z Googlom, GitHubom ali Microsoftom ali da se zapomni vaša izbira. Nobena vam ne sledi in nobena se ne deli, zato zakon ne zahteva, da bi vprašali vnaprej, pasice o piškotkih pa ni.",
+    "storageIntro": "Glazecalc nastavi dva piškotka, drugega samo med prijavo z Googlom, GitHubom ali Microsoftom. V vašem brskalniku hrani tudi nekaj majhnih vrednosti, besedilo aplikacije za uporabo brez interneta in, samo če to vklopite, kopijo vaših zapisov. Vsaka je tam zaradi nečesa, kar ste zahtevali: da ostanete prijavljeni, da se prijavite z Googlom, GitHubom ali Microsoftom, da se zapomni vaša izbira ali da aplikacijo uporabljate brez interneta. Nobena vam ne sledi in nobena se ne deli, zato zakon ne zahteva, da bi vprašali vnaprej, pasice o piškotkih pa ni.",
     "storageLabel": "Piškotki in shramba brskalnika",
     "storageName": "Ime",
     "storagePurpose": "Čemu služi",
@@ -146,8 +146,18 @@
     "storageCookie": "Piškotek",
     "storageLocal": "Lokalna shramba",
     "storageSession": "Shramba seje",
-    "storageNote": "Vse to lahko kadar koli počistite v nastavitvah brskalnika. Izbris računa odstrani zapis o prijavi in vse nastavitve, ki se hranijo tukaj.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Predpomnilnik (Cache storage)",
+    "storageNote": "Vse to lahko kadar koli počistite v nastavitvah brskalnika. Izbris računa odstrani zapis o prijavi, vse nastavitve, ki se hranijo tukaj, in kopijo vaših zapisov.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Samo če na strani računa vklopite »Hrani moje zapise v tej napravi«: kopija vaših receptov, surovin, dodatkov, žganj, zapiskov, nastavitev in cen, da se odprejo brez interneta. <code>offlineRecords</code> zapiše, da ste to vklopili. Kopija ostane v tem brskalniku v tej napravi in se nikoli nikamor ne pošlje. Glazecalc je ne šifrira; zaščitena je le z vašim brskalnikom, ki shrambo vsakega spletnega mesta hrani ločeno, in z lastnim šifriranjem naprave, če ga ima.",
+        "lasts": "Dokler tega ne izklopite, se ne odjavite ali se vaša seja ne konča. Kopija v drugi napravi se odstrani, ko se ta naprava naslednjič poveže z Glazecalcom ali ko se v njej odjavite."
+      },
+      "offlineFiles": {
+        "purpose": "Besedilo in vodniki aplikacije v vašem jeziku in v angleščini, da se strani odprejo brez interneta, ter kateri jezik je bil shranjen in kdaj. Brez osebnih podatkov.",
+        "lasts": "Dokler ne počistite shrambe brskalnika. Znova shranjeno enkrat na dan; datoteke drugega jezika se odstranijo, ko zamenjate jezik."
+      },
       "cookie": {
         "purpose": "Ohranja vašo prijavo. Vsebuje vaš žeton za prijavo. Skripti na strani ga ne morejo prebrati, brskalnik pa ga pošlje samo strežniku aplikacije Glazecalc, prek HTTPS, in nikoli z zahtevo, ki se začne na drugem spletnem mestu.",
         "lasts": "Nastavi se, ko se prijavite, ustvarite račun ali začnete preizkus. Dokler ne zaprete brskalnika ali 7 dni, če označite »Ohrani prijavo v tej napravi«; pri preizkusu 14 dni. Odjava ga odstrani."

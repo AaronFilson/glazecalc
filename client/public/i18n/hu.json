@@ -87,11 +87,16 @@
     "language": "Nyelv:"
   },
   "offline": {
-    "languageNotSaved": "Ez a nyelv nincs elmentve ezen a telefonon. Csatlakozzon az internetre a használatához.",
+    "languageNotSaved": "Ez a nyelv nincs elmentve ezen az eszközön. Csatlakozzon az internetre a használatához.",
     "updateReady": "A Glazecalc új verziója elérhető.",
     "reload": "Újratöltés",
     "dismiss": "Most nem",
-    "install": "Alkalmazás telepítése"
+    "install": "Alkalmazás telepítése",
+    "recordsSwitch": "Adataim megőrzése ezen az eszközön, hogy internet nélkül is megnyíljanak",
+    "recordsHint": "Csak olyan eszközön, amelyet egyedül Ön használ. Kijelentkezéskor törlődik.",
+    "recordsBanner": "A Glazecalc nem érhető el. Az ezen az eszközön {date} napon mentett másolat látható.",
+    "recordsNotSaved": "Az adatai nincsenek elmentve ezen az eszközön. A megtekintésükhöz csatlakozzon az internetre. Ezt a fiókjában kapcsolhatja be.",
+    "recordsNotKept": "Ez a böngésző nem őriz meg másolatot (privát böngészés vagy nincs elég hely)."
   },
   "picker": {
     "results": "{count, plural, one {# találat} other {# találat}}",

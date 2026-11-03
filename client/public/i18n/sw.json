@@ -87,11 +87,16 @@
     "language": "Lugha:"
   },
   "offline": {
-    "languageNotSaved": "Lugha hii haijahifadhiwa kwenye simu hii. Unganisha na intaneti ili kuitumia.",
+    "languageNotSaved": "Lugha hii haijahifadhiwa kwenye kifaa hiki. Unganisha na intaneti ili kuitumia.",
     "updateReady": "Toleo jipya la Glazecalc liko tayari.",
     "reload": "Pakia upya",
     "dismiss": "Si sasa",
-    "install": "Sakinisha programu"
+    "install": "Sakinisha programu",
+    "recordsSwitch": "Hifadhi rekodi zangu kwenye kifaa hiki ili zifunguke bila intaneti",
+    "recordsHint": "Kwenye kifaa unachotumia wewe peke yako tu. Huondolewa unapotoka.",
+    "recordsBanner": "Glazecalc haipatikani. Inaonyesha nakala iliyohifadhiwa kwenye kifaa hiki tarehe {date}.",
+    "recordsNotSaved": "Rekodi zako hazijahifadhiwa kwenye kifaa hiki. Unganisha na intaneti ili kuziona. Unaweza kuwasha hili kwenye akaunti yako.",
+    "recordsNotKept": "Kivinjari hiki hakitahifadhi nakala (kuvinjari kwa faragha au hakuna nafasi)."
   },
   "picker": {
     "results": "{count, plural, one {Kinacholingana: #} other {Vinavyolingana: #}}",

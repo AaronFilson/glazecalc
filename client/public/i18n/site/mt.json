@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privatezza",
-    "lead": "L-aħħar aġġornament: Ottubru 2026.",
+    "lead": "L-aħħar aġġornament: Novembru 2026.",
     "shortHeading": "Fil-qosor",
     "short": "Glazecalc iżomm dak li għandu bżonn biex jaħdem il-kont tiegħek, u xejn aktar. M’hemm l-ebda reklam, l-ebda analitika u l-ebda traċċar. Id-data tiegħek qatt ma tinbiegħ, u l-unika kumpanija li tittrattaha hija Amazon Web Services, li tospita s-sit u tibgħat il-messaġġi elettroniċi tiegħu.",
     "whoHeading": "Min hu responsabbli",
@@ -138,7 +138,7 @@
     "rightsAsk": "Għal kull ħaġa oħra, bħal biex titlob li d-data tiegħek ma tintużax sakemm jiġi kkoreġut żball, jew biex toġġezzjona għal kif tintuża, ikteb lil <mail>privacy@glazecalcapp.com</mail>. Huwa b’xejn, u jkollok tweġiba fi żmien xahar. Tintalab biss turi li l-kont huwa tiegħek, billi tidħol fih jew billi tiftaħ link mibgħut lill-indirizz tiegħu, qatt biex turi dokument tal-identità.",
     "rightsComplain": "Jekk m’intix sodisfatt, tista’ tressaq ilment quddiem awtorità tal-protezzjoni tad-data: fl-UE, <edpb>l-awtorità tal-pajjiż tiegħek</edpb>, u fir-Renju Unit, l-<ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies u l-ħażna tal-brawżer",
-    "storageIntro": "Glazecalc jistabbilixxi żewġ cookies, it-tieni waħda biss waqt li tidħol b’Google, b’GitHub jew b’Microsoft, u jżomm ftit valuri żgħar fil-brawżer tiegħek. Kull waħda hi hemm għal xi ħaġa li talbt: biex tibqa’ dieħel, biex tidħol b’Google, b’GitHub jew b’Microsoft, jew biex tiġi mfakkra għażla li għamilt. Ebda waħda ma ssegwik u ebda waħda ma tinqasam, għalhekk il-liġi ma teħtieġx li nistaqsuk l-ewwel, u m’hemm l-ebda banner tal-cookies.",
+    "storageIntro": "Glazecalc jistabbilixxi żewġ cookies, it-tieni waħda biss waqt li tidħol b’Google, b’GitHub jew b’Microsoft. Fil-brawżer tiegħek iżomm ukoll ftit valuri żgħar, it-test tal-app biex tużaha mingħajr internet, u, biss jekk tixgħlu int, kopja tar-rekords tiegħek. Kull waħda hi hemm għal xi ħaġa li talbt: biex tibqa’ dieħel, biex tidħol b’Google, b’GitHub jew b’Microsoft, biex tiġi mfakkra għażla li għamilt, jew biex tuża l-app mingħajr internet. Ebda waħda ma ssegwik u ebda waħda ma tinqasam, għalhekk il-liġi ma teħtieġx li nistaqsuk l-ewwel, u m’hemm l-ebda banner tal-cookies.",
     "storageLabel": "Cookies u l-ħażna tal-brawżer",
     "storageName": "Isem",
     "storagePurpose": "Għal xiex inhu",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Ħażna lokali",
     "storageSession": "Ħażna tas-sessjoni",
-    "storageNote": "Tista’ tħassar kwalunkwe wieħed minn dawn fis-settings tal-brawżer tiegħek meta trid. Jekk tħassar il-kont tiegħek, titneħħa n-nota tad-dħul u kull setting miżmum hawn.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Ħażna tal-cache",
+    "storageNote": "Tista’ tħassar kwalunkwe wieħed minn dawn fis-settings tal-brawżer tiegħek meta trid. Jekk tħassar il-kont tiegħek, titneħħa n-nota tad-dħul, kull setting miżmum hawn u l-kopja tar-rekords tiegħek.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Biss jekk tixgħel “Żomm ir-rekords tiegħi fuq dan l-apparat” fil-paġna tal-kont tiegħek: kopja tar-riċetti, il-materjali, l-addittivi, il-ħruq, in-noti, is-settings u l-prezzijiet tiegħek, biex jinfetħu mingħajr internet. <code>offlineRecords</code> jinnota li xgħeltu. Il-kopja tibqa’ f’dan il-brawżer fuq dan l-apparat u qatt ma tintbagħat imkien. Glazecalc ma jikkriptahiex; hi protetta biss mill-brawżer tiegħek, li jżomm il-ħażna ta’ kull sit separata, u mill-kriptaġġ tal-apparat innifsu, jekk għandu.",
+        "lasts": "Sakemm titfih, toħroġ, jew tispiċċa s-sessjoni tiegħek. Kopja fuq apparat ieħor titneħħa meta dak l-apparat jerġa’ jikkonnettja ma’ Glazecalc, jew meta toħroġ minn hemm."
+      },
+      "offlineFiles": {
+        "purpose": "It-test u l-gwidi tal-app bil-lingwa tiegħek u bl-Ingliż, biex il-paġni jinfetħu mingħajr internet, u liema lingwa ġiet issejvjata u meta. Ebda data personali.",
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek. Jerġgħu jiġu ssejvjati darba kuljum; il-fajls ta’ lingwa oħra jitneħħew meta tibdel il-lingwa."
+      },
       "cookie": {
         "purpose": "Iżommok dieħel. Fiha t-token tad-dħul tiegħek. L-iscripts fuq il-paġna ma jistgħux jaqrawha, u l-brawżer tiegħek jibgħatha biss lis-server ta’ Glazecalc stess, permezz ta’ HTTPS, u qatt ma’ talba li tibda f’sit ieħor.",
         "lasts": "Tiġi ssettjata meta tidħol, toħloq kont jew tibda prova. Sakemm tagħlaq il-brawżer tiegħek, jew għal 7 ijiem jekk timmarka “Żommni dieħel f’dan l-apparat”; 14-il jum għal prova. Meta toħroġ, titneħħa."

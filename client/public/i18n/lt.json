@@ -87,11 +87,16 @@
     "language": "Kalba:"
   },
   "offline": {
-    "languageNotSaved": "Ši kalba šiame telefone neišsaugota. Norėdami ją naudoti, prisijunkite prie interneto.",
+    "languageNotSaved": "Ši kalba šiame įrenginyje neišsaugota. Norėdami ją naudoti, prisijunkite prie interneto.",
     "updateReady": "Paruošta nauja Glazecalc versija.",
     "reload": "Įkelti iš naujo",
     "dismiss": "Ne dabar",
-    "install": "Įdiegti programą"
+    "install": "Įdiegti programą",
+    "recordsSwitch": "Laikyti mano įrašus šiame įrenginyje, kad jie atsidarytų be interneto",
+    "recordsHint": "Tik įrenginyje, kuriuo naudojatės tik jūs. Pašalinama, kai atsijungiate.",
+    "recordsBanner": "Nepavyksta pasiekti Glazecalc. Rodoma kopija, išsaugota šiame įrenginyje {date}.",
+    "recordsNotSaved": "Jūsų įrašai šiame įrenginyje neišsaugoti. Norėdami juos matyti, prisijunkite prie interneto. Šią funkciją galite įjungti savo paskyroje.",
+    "recordsNotKept": "Ši naršyklė kopijos neišsaugos (privatusis naršymas arba nėra vietos)."
   },
   "picker": {
     "results": "{count, plural, one {# atitikmuo} few {# atitikmenys} many {# atitikmens} other {# atitikmenų}}",

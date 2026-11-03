@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Quyền riêng tư",
-    "lead": "Cập nhật lần cuối tháng 10 năm 2026.",
+    "lead": "Cập nhật lần cuối tháng 11 năm 2026.",
     "shortHeading": "Tóm tắt",
     "short": "Glazecalc chỉ giữ những gì cần để vận hành tài khoản của bạn, và không giữ gì hơn. Không có quảng cáo, không có phân tích và không có theo dõi. Dữ liệu của bạn không bao giờ bị bán, và công ty duy nhất xử lý nó là Amazon Web Services, nơi lưu trữ trang web và gửi email của trang.",
     "whoHeading": "Ai chịu trách nhiệm",
@@ -138,7 +138,7 @@
     "rightsAsk": "Với bất kỳ điều gì khác, chẳng hạn yêu cầu giữ dữ liệu của bạn lại không sử dụng trong khi một sai sót được sửa, hoặc phản đối cách nó được sử dụng, hãy viết thư đến <mail>privacy@glazecalcapp.com</mail>. Việc này miễn phí, và bạn sẽ có câu trả lời trong vòng một tháng. Bạn chỉ được yêu cầu chứng minh tài khoản là của bạn, bằng cách đăng nhập hoặc mở một liên kết gửi đến địa chỉ của nó, không bao giờ yêu cầu giấy tờ tùy thân.",
     "rightsComplain": "Nếu bạn không hài lòng, bạn có thể khiếu nại với cơ quan bảo vệ dữ liệu: ở EU, <edpb>cơ quan ở quốc gia của bạn</edpb>, và ở Vương quốc Anh, <ico>Văn phòng Ủy viên Thông tin</ico>.",
     "storageHeading": "Cookie và bộ nhớ trình duyệt",
-    "storageIntro": "Glazecalc đặt hai cookie, cookie thứ hai chỉ khi bạn đăng nhập bằng Google, GitHub hoặc Microsoft, và giữ một vài giá trị nhỏ trong trình duyệt của bạn. Mỗi cái có mặt vì một điều bạn đã yêu cầu: giữ đăng nhập, đăng nhập bằng Google, GitHub hoặc Microsoft, hoặc ghi nhớ một lựa chọn bạn đã đưa ra. Không cái nào theo dõi bạn và không cái nào được chia sẻ, nên luật không yêu cầu phải hỏi trước, và không có biểu ngữ cookie.",
+    "storageIntro": "Glazecalc đặt hai cookie, cookie thứ hai chỉ khi bạn đăng nhập bằng Google, GitHub hoặc Microsoft. Trong trình duyệt của bạn, Glazecalc còn giữ một vài giá trị nhỏ, văn bản của ứng dụng để dùng khi không có internet, và, chỉ khi bạn bật, một bản sao các bản ghi của bạn. Mỗi cái có mặt vì một điều bạn đã yêu cầu: giữ đăng nhập, đăng nhập bằng Google, GitHub hoặc Microsoft, ghi nhớ một lựa chọn bạn đã đưa ra, hoặc dùng ứng dụng khi không có internet. Không cái nào theo dõi bạn và không cái nào được chia sẻ, nên luật không yêu cầu phải hỏi trước, và không có biểu ngữ cookie.",
     "storageLabel": "Cookie và bộ nhớ trình duyệt",
     "storageName": "Tên",
     "storagePurpose": "Dùng để làm gì",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Bộ nhớ cục bộ",
     "storageSession": "Bộ nhớ phiên",
-    "storageNote": "Bạn có thể xóa bất kỳ mục nào trong số này trong cài đặt của trình duyệt bất cứ lúc nào. Xóa tài khoản của bạn sẽ xóa ghi chú đăng nhập và mọi cài đặt được giữ ở đây.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Bộ nhớ đệm",
+    "storageNote": "Bạn có thể xóa bất kỳ mục nào trong số này trong cài đặt của trình duyệt bất cứ lúc nào. Xóa tài khoản của bạn sẽ xóa ghi chú đăng nhập, mọi cài đặt được giữ ở đây và bản sao các bản ghi của bạn.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Chỉ khi bạn bật “Giữ bản ghi của tôi trên thiết bị này” trên trang tài khoản: một bản sao công thức men, nguyên liệu, phụ gia, lần nung, ghi chú, cài đặt và giá của bạn, để chúng mở được khi không có internet. <code>offlineRecords</code> ghi nhận rằng bạn đã bật tính năng này. Bản sao nằm trong trình duyệt này trên thiết bị này và không bao giờ được gửi đi đâu. Glazecalc không mã hóa nó; nó chỉ được bảo vệ bởi trình duyệt của bạn, vốn giữ riêng bộ nhớ của từng trang web, và bởi tính năng mã hóa riêng của thiết bị, nếu có.",
+        "lasts": "Cho đến khi bạn tắt tính năng này, đăng xuất, hoặc phiên của bạn kết thúc. Bản sao trên thiết bị khác sẽ bị xóa khi thiết bị đó kết nối lại với Glazecalc lần tới, hoặc khi bạn đăng xuất ở đó."
+      },
+      "offlineFiles": {
+        "purpose": "Văn bản và hướng dẫn của ứng dụng bằng ngôn ngữ của bạn và bằng tiếng Anh, để các trang mở được khi không có internet, cùng với ngôn ngữ nào đã được lưu và vào lúc nào. Không có dữ liệu cá nhân.",
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt. Được lưu lại mỗi ngày một lần; tệp của ngôn ngữ khác bị xóa khi bạn đổi ngôn ngữ."
+      },
       "cookie": {
         "purpose": "Giữ bạn đăng nhập. Nó chứa mã thông báo đăng nhập của bạn. Các tập lệnh trên trang không đọc được nó, và trình duyệt của bạn chỉ gửi nó đến máy chủ riêng của Glazecalc, qua HTTPS, và không bao giờ kèm một yêu cầu bắt đầu từ trang khác.",
         "lasts": "Được đặt khi bạn đăng nhập, tạo tài khoản hoặc bắt đầu bản dùng thử. Cho đến khi bạn đóng trình duyệt, hoặc 7 ngày nếu bạn đánh dấu “Giữ tôi đăng nhập trên thiết bị này”; 14 ngày cho bản dùng thử. Đăng xuất sẽ xóa nó."

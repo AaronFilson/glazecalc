@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Sirri",
-    "lead": "An sabunta a Oktoba 2026.",
+    "lead": "An sabunta a Nuwamba 2026.",
     "shortHeading": "A taƙaice",
     "short": "Glazecalc yana ajiye abin da yake buƙata don gudanar da asusunku kawai, ba fiye ba. Babu talla, babu bincike, babu bin diddigi. Ba a taɓa sayar da bayananku ba, kuma kamfani ɗaya tilo da ke sarrafa su shi ne Amazon Web Services, wanda ke ɗaukar shafin kuma yake aika imel ɗinsa.",
     "whoHeading": "Wanda ke da alhaki",
@@ -138,7 +138,7 @@
     "rightsAsk": "Kan kowane abu dabam, kamar neman a dakatar da amfani da bayananku yayin da ake gyara kuskure, ko ƙin yadda ake amfani da su, ku rubuta zuwa <mail>privacy@glazecalcapp.com</mail>. Kyauta ne, kuma za ku sami amsa cikin wata ɗaya. Za a nemi ku nuna cewa asusun naku ne kawai, ta shiga ko ta buɗe mahaɗin da aka aika zuwa adireshinsa, ba a taɓa neman katin shaida ba.",
     "rightsComplain": "Idan ba ku gamsu ba, kuna iya kai ƙara zuwa hukumar kare bayanai: a EU, <edpb>hukumar ƙasarku</edpb>, a UK kuma, <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookie da ma'ajiyar burauza",
-    "storageIntro": "Glazecalc yana saita cookie biyu, na biyun kawai yayin da kuke shiga da Google, GitHub ko Microsoft, kuma yana ajiye ƙananan ƙima kaɗan a burauzarku. Kowanne yana nan ne don wani abu da kuka nema: kasancewa a ciki, shiga da Google, GitHub ko Microsoft, ko tuna zaɓin da kuka yi. Babu ɗaya da ke bin diddiginku kuma babu wanda ake rabawa, don haka doka ba ta buƙatar a fara tambaya, kuma babu tutar cookie.",
+    "storageIntro": "Glazecalc yana saita cookie biyu, na biyun kawai yayin da kuke shiga da Google, GitHub ko Microsoft. A burauzarku kuma yana ajiye ƙananan ƙima kaɗan, rubutun manhajar don amfani ba tare da intanet ba, kuma, sai idan kun kunna shi, kwafin bayananku. Kowanne yana nan ne don wani abu da kuka nema: kasancewa a ciki, shiga da Google, GitHub ko Microsoft, tuna zaɓin da kuka yi, ko amfani da manhajar ba tare da intanet ba. Babu ɗaya da ke bin diddiginku kuma babu wanda ake rabawa, don haka doka ba ta buƙatar a fara tambaya, kuma babu tutar cookie.",
     "storageLabel": "Cookie da ma'ajiyar burauza",
     "storageName": "Suna",
     "storagePurpose": "Abin da yake don shi",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Local storage",
     "storageSession": "Session storage",
-    "storageNote": "Kuna iya share kowane ɗayan waɗannan a saitunan burauzarku a kowane lokaci. Share asusunku yana cire bayanin shiga da kowane saitin da aka ajiye a nan.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Cache storage",
+    "storageNote": "Kuna iya share kowane ɗayan waɗannan a saitunan burauzarku a kowane lokaci. Share asusunku yana cire bayanin shiga, kowane saitin da aka ajiye a nan da kwafin bayananku.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Sai idan kun kunna \"Ajiye bayanaina a wannan na'ura\" a shafin asusunku: kwafin girke-girkenku, kayayyaki, ƙari, gasawa, bayanan kula, saituna da farashi, don su buɗe ba tare da intanet ba. <code>offlineRecords</code> yana lura cewa kun kunna shi. Kwafin yana zama a wannan burauza a wannan na'ura kuma ba a taɓa aika shi ko'ina ba. Glazecalc ba ya ɓoye shi (encrypt); burauzarku kaɗai ce ke kare shi, wadda ke raba ajiyar kowane shafi, da kuma ɓoyewar na'urarku ta kanta, idan tana da ita.",
+        "lasts": "Har sai kun kashe shi, kun fita, ko zamanku ya ƙare. Ana cire kwafi a wata na'ura idan waccan na'urar ta sake haɗawa da Glazecalc, ko idan kun fita a can."
+      },
+      "offlineFiles": {
+        "purpose": "Rubutun manhajar da jagororinta a harshenku da Turanci, don shafuka su buɗe ba tare da intanet ba, da kuma wane harshe aka ajiye da kuma yaushe. Babu bayanan sirri.",
+        "lasts": "Har sai kun share ajiyar burauzarku. Ana sake ajiyewa sau ɗaya a rana; ana cire fayilolin wani harshe idan kun canza harshe."
+      },
       "cookie": {
         "purpose": "Yana riƙe ku a ciki. Yana ɗauke da token ɗin shigarku. Rubutun kwamfuta a shafin ba za su iya karanta shi ba, kuma burauzarku tana aika shi ne kawai zuwa sabar Glazecalc ta kanta, ta HTTPS, kuma ba a taɓa aika shi da buƙatar da ta fara a wani shafi ba.",
         "lasts": "Ana saita shi idan kun shiga, kun buɗe asusu ko kun fara gwaji. Har sai kun rufe burauzarku, ko na kwana 7 idan kun yi alama a \"Riƙe ni a ciki a wannan na'ura\"; kwana 14 don gwaji. Fita yana cire shi."

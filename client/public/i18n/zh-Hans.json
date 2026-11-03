@@ -87,11 +87,16 @@
     "language": "语言："
   },
   "offline": {
-    "languageNotSaved": "这种语言没有保存在这部手机上。请连接互联网后使用。",
+    "languageNotSaved": "这种语言没有保存在这台设备上。请连接互联网后使用。",
     "updateReady": "Glazecalc 有新版本可用。",
     "reload": "重新加载",
     "dismiss": "暂不",
-    "install": "安装应用"
+    "install": "安装应用",
+    "recordsSwitch": "将我的记录保存在此设备上，以便没有互联网时也能打开",
+    "recordsHint": "仅限只有您一人使用的设备。退出登录时会被移除。",
+    "recordsBanner": "无法连接 Glazecalc。正在显示 {date} 保存在此设备上的副本。",
+    "recordsNotSaved": "您的记录没有保存在此设备上。请连接互联网后查看。您可以在账户中开启此功能。",
+    "recordsNotKept": "此浏览器不会保存副本（无痕浏览或空间不足）。"
   },
   "picker": {
     "results": "{count, plural, other {# 个结果}}",

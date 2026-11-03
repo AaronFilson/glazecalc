@@ -87,11 +87,16 @@
     "language": "Sprache:"
   },
   "offline": {
-    "languageNotSaved": "Diese Sprache ist auf diesem Telefon nicht gespeichert. Stellen Sie eine Internetverbindung her, um sie zu verwenden.",
+    "languageNotSaved": "Diese Sprache ist auf diesem Gerät nicht gespeichert. Stellen Sie eine Internetverbindung her, um sie zu verwenden.",
     "updateReady": "Eine neue Version von Glazecalc ist bereit.",
     "reload": "Neu laden",
     "dismiss": "Jetzt nicht",
-    "install": "App installieren"
+    "install": "App installieren",
+    "recordsSwitch": "Meine Daten auf diesem Gerät behalten, damit sie sich ohne Internet öffnen",
+    "recordsHint": "Nur auf einem Gerät, das Sie allein nutzen. Wird beim Abmelden entfernt.",
+    "recordsBanner": "Glazecalc ist nicht erreichbar. Angezeigt wird die Kopie, die am {date} auf diesem Gerät gespeichert wurde.",
+    "recordsNotSaved": "Ihre Daten sind auf diesem Gerät nicht gespeichert. Stellen Sie eine Internetverbindung her, um sie zu sehen. Sie können dies in Ihrem Konto einschalten.",
+    "recordsNotKept": "Dieser Browser behält keine Kopie (privates Surfen oder kein Platz)."
   },
   "picker": {
     "results": "{count, plural, one {# Treffer} other {# Treffer}}",

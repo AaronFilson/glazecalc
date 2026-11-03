@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privacidade",
-    "lead": "Última atualização: outubro de 2026.",
+    "lead": "Última atualização: novembro de 2026.",
     "shortHeading": "Em resumo",
     "short": "O Glazecalc guarda o que precisa para o funcionamento da sua conta, e nada mais. Não há anúncios, nem análises de utilização, nem rastreio. Os seus dados nunca são vendidos, e a única empresa que os trata é a Amazon Web Services, que aloja o site e envia os seus e-mails.",
     "whoHeading": "Quem é o responsável",
@@ -138,7 +138,7 @@
     "rightsAsk": "Para tudo o resto, como pedir que a utilização dos seus dados seja suspensa enquanto um erro é corrigido, ou opor-se à forma como são usados, escreva para <mail>privacy@glazecalcapp.com</mail>. É gratuito, e terá uma resposta no prazo de um mês. Só lhe será pedido que mostre que a conta é sua, iniciando sessão ou abrindo uma ligação enviada para o endereço da conta, e nunca um documento de identificação.",
     "rightsComplain": "Em caso de insatisfação, pode apresentar uma reclamação a uma autoridade de proteção de dados: na UE, <edpb>a autoridade do seu país</edpb>, e no Reino Unido, o <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies e armazenamento do navegador",
-    "storageIntro": "O Glazecalc define dois cookies, o segundo apenas enquanto inicia sessão com o Google, o GitHub ou a Microsoft, e guarda alguns valores pequenos no seu navegador. Cada um existe para algo que pediu: manter a sessão iniciada, iniciar sessão com o Google, o GitHub ou a Microsoft, ou lembrar uma escolha que fez. Nenhum o rastreia e nenhum é partilhado, por isso a lei não exige pedir autorização antes, e não há banner de cookies.",
+    "storageIntro": "O Glazecalc define dois cookies, o segundo apenas enquanto inicia sessão com o Google, o GitHub ou a Microsoft. No seu navegador, guarda também alguns valores pequenos, o texto da aplicação para uso sem internet e, apenas se ativar esta opção, uma cópia dos seus registos. Cada um existe para algo que pediu: manter a sessão iniciada, iniciar sessão com o Google, o GitHub ou a Microsoft, lembrar uma escolha que fez ou usar a aplicação sem internet. Nenhum o rastreia e nenhum é partilhado, por isso a lei não exige pedir autorização antes, e não há banner de cookies.",
     "storageLabel": "Cookies e armazenamento do navegador",
     "storageName": "Nome",
     "storagePurpose": "Para que serve",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Armazenamento local",
     "storageSession": "Armazenamento de sessão",
-    "storageNote": "Pode apagar qualquer um destes nas definições do seu navegador em qualquer altura. Eliminar a sua conta remove a nota de sessão iniciada e todas as definições guardadas aqui.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Armazenamento em cache",
+    "storageNote": "Pode apagar qualquer um destes nas definições do seu navegador em qualquer altura. Eliminar a sua conta remove a nota de sessão iniciada, todas as definições guardadas aqui e a cópia dos seus registos.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Apenas se ativar «Guardar os meus registos neste dispositivo» na página da sua conta: uma cópia das suas receitas, materiais, aditivos, cozeduras, notas, definições e preços, para que abram sem internet. <code>offlineRecords</code> regista que ativou esta opção. A cópia fica neste navegador, neste dispositivo, e nunca é enviada para lado nenhum. O Glazecalc não a encripta; está protegida apenas pelo seu navegador, que mantém separado o armazenamento de cada site, e pela encriptação do próprio dispositivo, se a tiver.",
+        "lasts": "Até a desativar, terminar a sessão ou a sua sessão acabar. Uma cópia noutro dispositivo é removida quando esse dispositivo voltar a ligar-se ao Glazecalc, ou quando terminar a sessão nele."
+      },
+      "offlineFiles": {
+        "purpose": "O texto e os guias da aplicação na sua língua e em inglês, para que as páginas abram sem internet, e que língua foi guardada e quando. Nenhum dado pessoal.",
+        "lasts": "Até limpar o armazenamento do navegador. Guardado de novo uma vez por dia; os ficheiros de outra língua são removidos quando muda de língua."
+      },
       "cookie": {
         "purpose": "Mantém a sessão iniciada. Contém o seu token de sessão. Os scripts da página não o conseguem ler, e o seu navegador só o envia para o servidor do próprio Glazecalc, por HTTPS, e nunca com um pedido que comece noutro site.",
         "lasts": "Definido quando inicia sessão, cria uma conta ou começa um período de experiência. Até fechar o navegador, ou durante 7 dias se assinalar «Manter a sessão iniciada neste dispositivo»; 14 dias para um período de experiência. Terminar a sessão remove-o."

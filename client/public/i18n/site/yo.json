@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Àṣírí",
-    "lead": "Àtúnṣe ìkẹyìn: Oṣù Ọ̀wàrà 2026.",
+    "lead": "Àtúnṣe ìkẹyìn: Oṣù Bélú 2026.",
     "shortHeading": "Ní ṣókí",
     "short": "Glazecalc ń pa ohun tí ó nílò láti ṣiṣẹ́ àkáǹtì yín mọ́, kò sí ju bẹ́ẹ̀ lọ. Kò sí ìpolówó, kò sí analytics, kò sì sí ìtọpa. A kò ta dátà yín láé, ilé iṣẹ́ kan ṣoṣo tí ó ń bójú tó o ni Amazon Web Services, tí ó ń gbé ojú òpó náà, tí ó sì ń fi email rẹ̀ ránṣẹ́.",
     "whoHeading": "Ẹni tó ní ojúṣe",
@@ -138,7 +138,7 @@
     "rightsAsk": "Fún ohunkóhun mìíràn, bí bíbèèrè pé kí a dá lílo dátà yín dúró nígbà tí a ń ṣàtúnṣe àṣìṣe kan, tàbí títako bí a ṣe ń lò ó, ẹ kọ̀wé sí <mail>privacy@glazecalcapp.com</mail>. Ọ̀fẹ́ ni, ẹ ó sì gba èsì láàárín oṣù kan. A ó bèèrè pé kí ẹ fi hàn pé tiyín ni àkáǹtì náà nìkan, nípa wíwọlé tàbí ṣíṣí ìjápọ̀ tí a fi ránṣẹ́ sí àdírẹ́sì rẹ̀, kì í ṣe fún káàdì ìdánimọ̀ láé.",
     "rightsComplain": "Bí inú yín kò bá dùn, ẹ lè ṣe ẹ̀sùn sí àjọ ààbò dátà: ní EU, <edpb>àjọ tí ó wà ní orílẹ̀-èdè yín</edpb>, àti ní UK, <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookie àti ibi ìpamọ́ browser",
-    "storageIntro": "Glazecalc ń ṣètò cookie méjì, èkejì nìkan nígbà tí ẹ bá ń wọlé pẹ̀lú Google, GitHub tàbí Microsoft, ó sì ń pa àwọn ìwọ̀n kékeré díẹ̀ mọ́ nínú browser yín. Ọ̀kọ̀ọ̀kan wà fún ohun tí ẹ bèèrè fún: dídúró ní wíwọlé, wíwọlé pẹ̀lú Google, GitHub tàbí Microsoft, tàbí rírántí ìyàn tí ẹ ṣe. Kò sí èyí tí ó ń tọpa yín, a kò sì pín èyíkéyìí, nítorí náà òfin kò béèrè pé kí a kọ́kọ́ bèèrè, kò sì sí àsíá cookie.",
+    "storageIntro": "Glazecalc ń ṣètò cookie méjì, èkejì nìkan nígbà tí ẹ bá ń wọlé pẹ̀lú Google, GitHub tàbí Microsoft. Nínú browser yín, ó tún ń pa àwọn ìwọ̀n kékeré díẹ̀ mọ́, ọ̀rọ̀ app náà fún lílò láìsí íńtánẹ́ẹ̀tì, àti, kìkì bí ẹ bá tan án, ẹ̀dà àwọn àkọsílẹ̀ yín. Ọ̀kọ̀ọ̀kan wà fún ohun tí ẹ bèèrè fún: dídúró ní wíwọlé, wíwọlé pẹ̀lú Google, GitHub tàbí Microsoft, rírántí ìyàn tí ẹ ṣe, tàbí lílo app náà láìsí íńtánẹ́ẹ̀tì. Kò sí èyí tí ó ń tọpa yín, a kò sì pín èyíkéyìí, nítorí náà òfin kò béèrè pé kí a kọ́kọ́ bèèrè, kò sì sí àsíá cookie.",
     "storageLabel": "Cookie àti ibi ìpamọ́ browser",
     "storageName": "Orúkọ",
     "storagePurpose": "Ohun tí ó wà fún",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Local storage",
     "storageSession": "Session storage",
-    "storageNote": "Ẹ lè pa èyíkéyìí nínú ìwọ̀nyí rẹ́ nínú ètò browser yín nígbàkígbà. Pípa àkáǹtì yín rẹ́ ń yọ àkọsílẹ̀ wíwọlé àti gbogbo ètò tí a pa mọ́ síbí kúrò.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Cache storage",
+    "storageNote": "Ẹ lè pa èyíkéyìí nínú ìwọ̀nyí rẹ́ nínú ètò browser yín nígbàkígbà. Pípa àkáǹtì yín rẹ́ ń yọ àkọsílẹ̀ wíwọlé, gbogbo ètò tí a pa mọ́ síbí àti ẹ̀dà àwọn àkọsílẹ̀ yín kúrò.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Kìkì bí ẹ bá tan \"Pa àwọn àkọsílẹ̀ mi mọ́ sórí ẹ̀rọ yìí\" lórí ojú-ìwé àkáǹtì yín: ẹ̀dà àwọn ìlànà yín, àwọn ohun èlò, àwọn ohun àfikún, àwọn ìsun, àwọn àkíyèsí, ètò àti iye owó, kí wọ́n lè ṣí láìsí íńtánẹ́ẹ̀tì. <code>offlineRecords</code> ń kọ ọ́ sílẹ̀ pé ẹ ti tan án. Ẹ̀dà náà ń wà nínú browser yìí lórí ẹ̀rọ yìí, a kò sì fi ránṣẹ́ sí ibikíbi láéláé. Glazecalc kò dì í ní ìpamọ́ (encrypt); kìkì browser yín, tí ó ń ya ibi ìpamọ́ ojú-òpó kọ̀ọ̀kan sọ́tọ̀, àti ìdìpamọ́ ẹ̀rọ yín fúnra rẹ̀, bí ó bá ní in, ni ó ń dáàbò bò ó.",
+        "lasts": "Títí ẹ ó fi pa á, tí ẹ ó fi jáde, tàbí tí session yín bá parí. A ó yọ ẹ̀dà tí ó wà lórí ẹ̀rọ mìíràn kúrò nígbà tí ẹ̀rọ náà bá tún so mọ́ Glazecalc, tàbí nígbà tí ẹ bá jáde níbẹ̀."
+      },
+      "offlineFiles": {
+        "purpose": "Ọ̀rọ̀ àti àwọn ìtọ́sọ́nà app náà ní èdè yín àti ní Gẹ̀ẹ́sì, kí àwọn ojú-ìwé lè ṣí láìsí íńtánẹ́ẹ̀tì, àti èdè wo ni a pa mọ́ àti ìgbà wo. Kò sí dátà ti ara ẹni.",
+        "lasts": "Títí ẹ ó fi pa ibi ìpamọ́ browser yín rẹ́. A ń tún un pa mọ́ lẹ́ẹ̀kan lójúmọ́; a ó yọ àwọn fáìlì èdè mìíràn kúrò nígbà tí ẹ bá yí èdè padà."
+      },
       "cookie": {
         "purpose": "Ó ń jẹ́ kí ẹ wà ní wíwọlé. Ó di token wíwọlé yín mú. Script lórí ojú-ìwé kò lè kà á, browser yín sì ń fi ránṣẹ́ sí server Glazecalc fúnra rẹ̀ nìkan, lórí HTTPS, kì í sì ṣe pẹ̀lú ìbéèrè tí ó bẹ̀rẹ̀ lórí ojú òpó mìíràn láé.",
         "lasts": "A ń ṣètò rẹ̀ nígbà tí ẹ bá wọlé, ṣẹ̀dá àkáǹtì tàbí bẹ̀rẹ̀ ìdánwò. Títí ẹ ó fi pa browser yín dé, tàbí fún ọjọ́ 7 bí ẹ bá sàmì sí \"Jẹ́ kí n wà ní wíwọlé lórí ẹ̀rọ yìí\"; ọjọ́ 14 fún ìdánwò. Jíjáde ń yọ ọ́ kúrò."

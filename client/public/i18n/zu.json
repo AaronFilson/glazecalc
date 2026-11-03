@@ -87,11 +87,16 @@
     "language": "Ulimi:"
   },
   "offline": {
-    "languageNotSaved": "Lolu limi alulondolozwanga kule foni. Xhuma ku-inthanethi ukuze ulusebenzise.",
+    "languageNotSaved": "Lolu limi alulondolozwanga kule divayisi. Xhuma ku-inthanethi ukuze ulusebenzise.",
     "updateReady": "Inguqulo entsha ye-Glazecalc isilungile.",
     "reload": "Layisha kabusha",
     "dismiss": "Hhayi manje",
-    "install": "Faka uhlelo"
+    "install": "Faka uhlelo",
+    "recordsSwitch": "Gcina amarekhodi ami kule divayisi ukuze avuleke ngaphandle kwe-inthanethi",
+    "recordsHint": "Kuphela kudivayisi oyisebenzisa wena wedwa. Kuyasuswa uma uphuma.",
+    "recordsBanner": "I-Glazecalc ayitholakali. Kukhonjiswa ikhophi elondolozwe kule divayisi ngo-{date}.",
+    "recordsNotSaved": "Amarekhodi akho awalondolozwanga kule divayisi. Xhuma ku-inthanethi ukuze uwabone. Ungakuvula lokhu ku-akhawunti yakho.",
+    "recordsNotKept": "Lesi siphequluli ngeke sigcine ikhophi (ukuphequlula ngasese noma asikho isikhala)."
   },
   "picker": {
     "results": "{count, plural, one {Okufanayo okungu-#} other {Okufanayo okungu-#}}",

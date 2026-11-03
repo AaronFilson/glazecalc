@@ -87,11 +87,16 @@
     "language": "Dil:"
   },
   "offline": {
-    "languageNotSaved": "Bu dil bu telefonda kayıtlı değil. Kullanmak için internete bağlanın.",
+    "languageNotSaved": "Bu dil bu cihazda kayıtlı değil. Kullanmak için internete bağlanın.",
     "updateReady": "Glazecalc’in yeni bir sürümü hazır.",
     "reload": "Yeniden yükle",
     "dismiss": "Şimdi değil",
-    "install": "Uygulamayı yükle"
+    "install": "Uygulamayı yükle",
+    "recordsSwitch": "Kayıtlarımı bu cihazda tut, internet olmadan da açılsın",
+    "recordsHint": "Yalnızca tek başınıza kullandığınız bir cihazda. Oturumu kapattığınızda kaldırılır.",
+    "recordsBanner": "Glazecalc’e ulaşılamıyor. Bu cihazda {date} tarihinde kaydedilen kopya gösteriliyor.",
+    "recordsNotSaved": "Kayıtlarınız bu cihazda kayıtlı değil. Görmek için internete bağlanın. Bunu hesabınızdan açabilirsiniz.",
+    "recordsNotKept": "Bu tarayıcı kopya saklamayacak (gizli gezinme ya da yer yok)."
   },
   "picker": {
     "results": "{count, plural, one {# eşleşme} other {# eşleşme}}",

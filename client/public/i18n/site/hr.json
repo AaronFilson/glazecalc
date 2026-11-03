@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privatnost",
-    "lead": "Posljednje ažuriranje: listopad 2026.",
+    "lead": "Posljednje ažuriranje: studeni 2026.",
     "shortHeading": "Ukratko",
     "short": "Glazecalc čuva ono što mu je potrebno za vođenje vašeg računa i ništa više. Nema oglasa, analitike ni praćenja. Vaši se podaci nikad ne prodaju, a jedina tvrtka koja s njima postupa jest Amazon Web Services, na čijim je poslužiteljima stranica i koja šalje njezinu e-poštu.",
     "whoHeading": "Tko je odgovoran",
@@ -138,7 +138,7 @@
     "rightsAsk": "Za sve ostalo, primjerice ako tražite da se vaši podaci ne koriste dok se ne ispravi pogreška ili ako prigovarate načinu na koji se koriste, pišite na <mail>privacy@glazecalcapp.com</mail>. To je besplatno, a odgovor ćete dobiti u roku od mjesec dana. Od vas će se tražiti samo da pokažete da je račun vaš, prijavom ili otvaranjem poveznice poslane na njegovu adresu, a nikad osobna isprava.",
     "rightsComplain": "Ako niste zadovoljni, možete podnijeti pritužbu tijelu za zaštitu podataka: u EU-u <edpb>tijelu u svojoj zemlji</edpb>, a u Ujedinjenom Kraljevstvu uredu <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Kolačići i pohrana u pregledniku",
-    "storageIntro": "Glazecalc postavlja dva kolačića, drugi samo dok se prijavljujete putem Googlea, GitHuba ili Microsofta, i čuva nekoliko malih vrijednosti u vašem pregledniku. Svaki postoji zbog nečega što ste zatražili: ostanka prijavljenima, prijave putem Googlea, GitHuba ili Microsofta ili pamćenja vašeg odabira. Nijedan vas ne prati i nijedan se ne dijeli, pa zakon ne zahtijeva prethodno pitanje i nema bannera za kolačiće.",
+    "storageIntro": "Glazecalc postavlja dva kolačića, drugi samo dok se prijavljujete putem Googlea, GitHuba ili Microsofta. U vašem pregledniku čuva i nekoliko malih vrijednosti, tekst aplikacije za korištenje bez interneta i, samo ako to uključite, kopiju vaših zapisa. Svaki postoji zbog nečega što ste zatražili: ostanka prijavljenima, prijave putem Googlea, GitHuba ili Microsofta, pamćenja vašeg odabira ili korištenja aplikacije bez interneta. Nijedan vas ne prati i nijedan se ne dijeli, pa zakon ne zahtijeva prethodno pitanje i nema bannera za kolačiće.",
     "storageLabel": "Kolačići i pohrana u pregledniku",
     "storageName": "Naziv",
     "storagePurpose": "Čemu služi",
@@ -146,8 +146,18 @@
     "storageCookie": "Kolačić",
     "storageLocal": "Lokalna pohrana",
     "storageSession": "Pohrana sesije",
-    "storageNote": "Bilo što od ovoga možete u bilo kojem trenutku izbrisati u postavkama preglednika. Brisanjem računa uklanjaju se bilješka o prijavi i sve postavke koje se ovdje čuvaju.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Pohrana predmemorije",
+    "storageNote": "Bilo što od ovoga možete u bilo kojem trenutku izbrisati u postavkama preglednika. Brisanjem računa uklanjaju se bilješka o prijavi, sve postavke koje se ovdje čuvaju i kopija vaših zapisa.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Samo ako na stranici svojeg računa uključite „Zadrži moje zapise na ovom uređaju”: kopija vaših recepata, materijala, aditiva, pečenja, bilješki, postavki i cijena, kako bi se otvarali bez interneta. <code>offlineRecords</code> bilježi da ste to uključili. Kopija ostaje u ovom pregledniku na ovom uređaju i nikad se nikamo ne šalje. Glazecalc je ne šifrira; štiti je samo vaš preglednik, koji pohranu svake stranice drži odvojeno, i vlastito šifriranje vašeg uređaja, ako ga ima.",
+        "lasts": "Dok to ne isključite, ne odjavite se ili dok vaša sesija ne završi. Kopija na drugom uređaju uklanja se kad se taj uređaj sljedeći put poveže s Glazecalcom ili kad se ondje odjavite."
+      },
+      "offlineFiles": {
+        "purpose": "Tekst i vodiči aplikacije na vašem jeziku i na engleskom, kako bi se stranice otvarale bez interneta, te koji je jezik spremljen i kada. Nema osobnih podataka.",
+        "lasts": "Dok ne izbrišete pohranu preglednika. Ponovno se sprema jednom dnevno; datoteke drugog jezika uklanjaju se kad promijenite jezik."
+      },
       "cookie": {
         "purpose": "Održava vas prijavljenima. Sadrži vaš token za prijavu. Skripte na stranici ne mogu ga pročitati, a preglednik ga šalje samo vlastitom poslužitelju aplikacije Glazecalc, preko HTTPS-a, i nikad uz zahtjev koji počinje na drugoj stranici.",
         "lasts": "Postavlja se kad se prijavite, stvorite račun ili započnete probno korištenje. Ostaje dok ne zatvorite preglednik ili 7 dana ako označite mogućnost Zadrži prijavu na ovom uređaju; 14 dana za probno korištenje. Odjavom se uklanja."

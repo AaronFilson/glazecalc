@@ -87,11 +87,16 @@
     "language": "Limba:"
   },
   "offline": {
-    "languageNotSaved": "Această limbă nu este salvată pe acest telefon. Conectați-vă la internet ca să o folosiți.",
+    "languageNotSaved": "Această limbă nu este salvată pe acest dispozitiv. Conectați-vă la internet ca să o folosiți.",
     "updateReady": "O versiune nouă a aplicației Glazecalc este gata.",
     "reload": "Reîncărcați",
     "dismiss": "Nu acum",
-    "install": "Instalați aplicația"
+    "install": "Instalați aplicația",
+    "recordsSwitch": "Păstrați înregistrările mele pe acest dispozitiv ca să se deschidă fără internet",
+    "recordsHint": "Numai pe un dispozitiv pe care îl folosiți doar dumneavoastră. Se elimină când vă deconectați.",
+    "recordsBanner": "Glazecalc nu poate fi accesat. Se afișează copia salvată pe acest dispozitiv la {date}.",
+    "recordsNotSaved": "Înregistrările dumneavoastră nu sunt salvate pe acest dispozitiv. Conectați-vă la internet ca să le vedeți. Puteți activa această opțiune în cont.",
+    "recordsNotKept": "Acest browser nu va păstra o copie (navigare privată sau lipsă de spațiu)."
   },
   "picker": {
     "results": "{count, plural, one {# rezultat} few {# rezultate} other {# de rezultate}}",

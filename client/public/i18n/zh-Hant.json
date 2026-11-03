@@ -87,11 +87,16 @@
     "language": "語言："
   },
   "offline": {
-    "languageNotSaved": "這個語言尚未儲存在這支手機上。請連上網路後使用。",
+    "languageNotSaved": "這個語言尚未儲存在這部裝置上。請連上網路後使用。",
     "updateReady": "Glazecalc 的新版本已準備好。",
     "reload": "重新載入",
     "dismiss": "暫時不要",
-    "install": "安裝應用程式"
+    "install": "安裝應用程式",
+    "recordsSwitch": "將我的紀錄保存在這部裝置上，沒有網路時也能開啟",
+    "recordsHint": "僅限只有您一人使用的裝置。登出時會移除。",
+    "recordsBanner": "無法連線到 Glazecalc。正在顯示 {date} 儲存在這部裝置上的副本。",
+    "recordsNotSaved": "您的紀錄尚未儲存在這部裝置上。請連上網路後查看。您可以在帳戶中開啟此功能。",
+    "recordsNotKept": "這個瀏覽器不會保留副本（無痕瀏覽或空間不足）。"
   },
   "picker": {
     "results": "{count, plural, other {# 筆結果}}",

@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privātums",
-    "lead": "Pēdējo reizi atjaunināts 2026. gada oktobrī.",
+    "lead": "Pēdējo reizi atjaunināts 2026. gada novembrī.",
     "shortHeading": "Īsumā",
     "short": "Glazecalc glabā to, kas vajadzīgs jūsu konta uzturēšanai, un neko vairāk. Nav reklāmu, analītikas un izsekošanas. Jūsu dati nekad netiek pārdoti, un vienīgais uzņēmums, kas tos apstrādā, ir Amazon Web Services, kas uztur vietni un sūta tās e-pasta vēstules.",
     "whoHeading": "Atbildīgā persona",
@@ -138,7 +138,7 @@
     "rightsAsk": "Visos citos jautājumos, piemēram, lai lūgtu nelietot jūsu datus, kamēr tiek labota kļūda, vai lai iebilstu pret to izmantošanu, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Tas ir bez maksas, un atbildi saņemsiet mēneša laikā. Jums lūgs tikai pierādīt, ka konts ir jūsu, pierakstoties vai atverot saiti, kas nosūtīta uz tā adresi, bet nekad – uzrādīt personu apliecinošu dokumentu.",
     "rightsComplain": "Ja kaut kas jūs neapmierina, varat iesniegt sūdzību datu aizsardzības uzraudzības iestādē: ES – <edpb>savas valsts iestādē</edpb>, Apvienotajā Karalistē – <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Sīkdatnes un pārlūkprogrammas krātuve",
-    "storageIntro": "Glazecalc iestata divas sīkdatnes, otro tikai tad, kad pierakstāties ar Google, GitHub vai Microsoft, un glabā dažas mazas vērtības jūsu pārlūkprogrammā. Katra ir paredzēta tam, ko esat lūguši: lai saglabātos pierakstīšanās, lai pierakstītos ar Google, GitHub vai Microsoft vai lai atcerētos jūsu izdarīto izvēli. Neviena jūs neizseko un neviena netiek kopīgota, tāpēc likums neprasa vispirms jautāt, un sīkdatņu joslas nav.",
+    "storageIntro": "Glazecalc iestata divas sīkdatnes, otro tikai, kamēr pierakstāties ar Google, GitHub vai Microsoft. Jūsu pārlūkprogrammā tā glabā arī dažas mazas vērtības, lietotnes tekstu lietošanai bez interneta un, tikai ja to ieslēdzat, jūsu ierakstu kopiju. Katra ir paredzēta tam, ko esat lūguši: lai saglabātos pierakstīšanās, lai pierakstītos ar Google, GitHub vai Microsoft, lai atcerētos jūsu izdarīto izvēli vai lai lietotni varētu izmantot bez interneta. Neviena jūs neizseko un neviena netiek kopīgota, tāpēc likums neprasa vispirms jautāt, un sīkdatņu joslas nav.",
     "storageLabel": "Sīkdatnes un pārlūkprogrammas krātuve",
     "storageName": "Nosaukums",
     "storagePurpose": "Mērķis",
@@ -146,8 +146,18 @@
     "storageCookie": "Sīkdatne",
     "storageLocal": "Vietējā krātuve",
     "storageSession": "Sesijas krātuve",
-    "storageNote": "Jebkuru no tām varat jebkurā laikā notīrīt pārlūkprogrammas iestatījumos. Dzēšot kontu, tiek noņemta pierakstīšanās piezīme un visi šeit glabātie iestatījumi.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Kešatmiņas krātuve",
+    "storageNote": "Jebkuru no tām varat jebkurā laikā notīrīt pārlūkprogrammas iestatījumos. Dzēšot kontu, tiek noņemta pierakstīšanās piezīme, visi šeit glabātie iestatījumi un jūsu ierakstu kopija.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Tikai tad, ja konta lapā ieslēdzat “Glabāt manus ierakstus šajā ierīcē”: jūsu receptu, materiālu, piedevu, apdedzināšanu, piezīmju, iestatījumu un cenu kopija, lai tie atvērtos bez interneta. <code>offlineRecords</code> atzīmē, ka to ieslēdzāt. Kopija paliek šajā pārlūkprogrammā šajā ierīcē un nekad netiek nekur sūtīta. Glazecalc to nešifrē; to aizsargā tikai jūsu pārlūkprogramma, kas katras vietnes krātuvi tur atsevišķi, un pašas ierīces šifrēšana, ja tā ierīcei ir.",
+        "lasts": "Līdz to izslēdzat, izrakstāties vai beidzas sesija. Kopija citā ierīcē tiek noņemta, kad šī ierīce nākamreiz savienojas ar Glazecalc vai kad tajā izrakstāties."
+      },
+      "offlineFiles": {
+        "purpose": "Lietotnes teksts un ceļveži jūsu valodā un angļu valodā, lai lapas atvērtos bez interneta, un kura valoda tika saglabāta un kad. Nekādu personas datu.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi. Reizi dienā saglabāti no jauna; citas valodas faili tiek noņemti, kad maināt valodu."
+      },
       "cookie": {
         "purpose": "Uztur jūsu pierakstīšanos. Tajā ir jūsu pierakstīšanās marķieris. Lapas skripti to nevar nolasīt, un pārlūkprogramma to sūta tikai uz lietotnes Glazecalc pašas serveri, izmantojot HTTPS, un nekad ar pieprasījumu, kas sākas citā vietnē.",
         "lasts": "Tiek iestatīta, kad pierakstāties, izveidojat kontu vai sākat izmēģinājumu. Līdz pārlūkprogrammas aizvēršanai vai 7 dienas, ja atzīmējat “Saglabāt pierakstīšanos šajā ierīcē”; izmēģinājumam – 14 dienas. Izrakstoties tā tiek noņemta."

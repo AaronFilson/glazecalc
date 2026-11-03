@@ -87,11 +87,16 @@
     "language": "Jazyk:"
   },
   "offline": {
-    "languageNotSaved": "Tento jazyk nie je v tomto telefóne uložený. Ak ho chcete použiť, pripojte sa na internet.",
+    "languageNotSaved": "Tento jazyk nie je v tomto zariadení uložený. Ak ho chcete použiť, pripojte sa na internet.",
     "updateReady": "Je pripravená nová verzia Glazecalc.",
     "reload": "Načítať znova",
     "dismiss": "Teraz nie",
-    "install": "Nainštalovať aplikáciu"
+    "install": "Nainštalovať aplikáciu",
+    "recordsSwitch": "Uchovávať moje záznamy v tomto zariadení, aby sa otvorili bez internetu",
+    "recordsHint": "Len v zariadení, ktoré používate iba vy. Odstránia sa, keď sa odhlásite.",
+    "recordsBanner": "Glazecalc nie je dostupný. Zobrazuje sa kópia uložená v tomto zariadení {date}.",
+    "recordsNotSaved": "Vaše záznamy nie sú uložené v tomto zariadení. Ak ich chcete vidieť, pripojte sa na internet. Túto možnosť môžete zapnúť vo svojom účte.",
+    "recordsNotKept": "Tento prehliadač si kópiu neuchová (súkromné prehliadanie alebo nedostatok miesta)."
   },
   "picker": {
     "results": "{count, plural, one {# zhoda} few {# zhody} many {# zhody} other {# zhôd}}",

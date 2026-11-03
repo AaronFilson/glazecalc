@@ -87,11 +87,16 @@
     "language": "Sprog:"
   },
   "offline": {
-    "languageNotSaved": "Dette sprog er ikke gemt på denne telefon. Opret forbindelse til internettet for at bruge det.",
+    "languageNotSaved": "Dette sprog er ikke gemt på denne enhed. Opret forbindelse til internettet for at bruge det.",
     "updateReady": "Der er en ny version af Glazecalc klar.",
     "reload": "Indlæs igen",
     "dismiss": "Ikke nu",
-    "install": "Installer appen"
+    "install": "Installer appen",
+    "recordsSwitch": "Behold mine data på denne enhed, så de kan åbnes uden internet",
+    "recordsHint": "Kun på en enhed, som kun du bruger. Fjernes, når du logger ud.",
+    "recordsBanner": "Glazecalc kan ikke nås. Viser kopien, der blev gemt på denne enhed {date}.",
+    "recordsNotSaved": "Dine data er ikke gemt på denne enhed. Opret forbindelse til internettet for at se dem. Du kan slå det til på din konto.",
+    "recordsNotKept": "Denne browser gemmer ikke en kopi (privat browsing eller ingen plads)."
   },
   "picker": {
     "results": "{count, plural, one {# resultat} other {# resultater}}",

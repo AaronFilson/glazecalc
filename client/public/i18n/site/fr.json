@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Confidentialité",
-    "lead": "Dernière mise à jour : octobre 2026.",
+    "lead": "Dernière mise à jour : novembre 2026.",
     "shortHeading": "En bref",
     "short": "Glazecalc conserve ce dont il a besoin pour faire fonctionner votre compte, et rien de plus. Il n’y a ni publicité, ni mesure d’audience, ni pistage. Vos données ne sont jamais vendues, et la seule entreprise qui les traite est Amazon Web Services, qui héberge le site et envoie ses e-mails.",
     "whoHeading": "Qui est responsable",
@@ -138,7 +138,7 @@
     "rightsAsk": "Pour toute autre demande, par exemple pour que l’utilisation de vos données soit suspendue le temps de corriger une erreur, ou pour vous opposer à la façon dont elles sont utilisées, écrivez à <mail>privacy@glazecalcapp.com</mail>. C’est gratuit, et vous aurez une réponse dans un délai d’un mois. On vous demandera seulement de montrer que le compte est bien le vôtre, en vous connectant ou en ouvrant un lien envoyé à son adresse, jamais une pièce d’identité.",
     "rightsComplain": "Si vous n’êtes pas satisfait, vous pouvez déposer une plainte auprès d’une autorité de protection des données : dans l’UE, <edpb>l’autorité de votre pays</edpb>, et au Royaume-Uni, l’<ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies et stockage du navigateur",
-    "storageIntro": "Glazecalc dépose deux cookies, le second seulement pendant que vous vous connectez avec Google, GitHub ou Microsoft, et conserve quelques petites valeurs dans votre navigateur. Chacun sert à quelque chose que vous avez demandé : rester connecté, vous connecter avec Google, GitHub ou Microsoft, ou retenir un choix que vous avez fait. Aucun ne vous suit et aucun n’est partagé : la loi n’exige donc pas de demander d’abord, et il n’y a pas de bandeau de cookies.",
+    "storageIntro": "Glazecalc dépose deux cookies, le second seulement pendant que vous vous connectez avec Google, GitHub ou Microsoft. Dans votre navigateur, il conserve aussi quelques petites valeurs, le texte de l’application pour une utilisation sans Internet et, seulement si vous l’activez, une copie de vos données. Chacun sert à quelque chose que vous avez demandé : rester connecté, vous connecter avec Google, GitHub ou Microsoft, retenir un choix que vous avez fait ou utiliser l’application sans Internet. Aucun ne vous suit et aucun n’est partagé : la loi n’exige donc pas de demander d’abord, et il n’y a pas de bandeau de cookies.",
     "storageLabel": "Cookies et stockage du navigateur",
     "storageName": "Nom",
     "storagePurpose": "À quoi il sert",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Stockage local",
     "storageSession": "Stockage de session",
-    "storageNote": "Vous pouvez effacer chacun de ces éléments à tout moment dans les paramètres de votre navigateur. La suppression de votre compte efface la note de connexion et chaque paramètre conservé ici.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Stockage du cache",
+    "storageNote": "Vous pouvez effacer chacun de ces éléments à tout moment dans les paramètres de votre navigateur. La suppression de votre compte efface la note de connexion, chaque paramètre conservé ici et la copie de vos données.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Uniquement si vous activez « Garder mes données sur cet appareil » sur la page de votre compte : une copie de vos recettes, matières premières, additifs, cuissons, notes, paramètres et prix, pour qu’ils s’ouvrent sans Internet. <code>offlineRecords</code> indique que vous l’avez activé. La copie reste dans ce navigateur sur cet appareil et n’est jamais envoyée nulle part. Glazecalc ne la chiffre pas ; elle n’est protégée que par votre navigateur, qui sépare le stockage de chaque site, et par le chiffrement propre à votre appareil, s’il en dispose.",
+        "lasts": "Jusqu’à ce que vous le désactiviez, que vous vous déconnectiez ou que votre session prenne fin. Une copie sur un autre appareil est supprimée quand cet appareil se connecte de nouveau à Glazecalc, ou quand vous vous y déconnectez."
+      },
+      "offlineFiles": {
+        "purpose": "Le texte et les guides de l’application dans votre langue et en anglais, pour que les pages s’ouvrent sans Internet, ainsi que la langue enregistrée et la date. Aucune donnée personnelle.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur. Enregistré de nouveau une fois par jour ; les fichiers d’une autre langue sont supprimés quand vous changez de langue."
+      },
       "cookie": {
         "purpose": "Garde votre session ouverte. Il contient votre jeton de connexion. Les scripts de la page ne peuvent pas le lire, et votre navigateur ne l’envoie qu’au serveur de Glazecalc, en HTTPS, et jamais avec une requête qui part d’un autre site.",
         "lasts": "Créé quand vous vous connectez, créez un compte ou démarrez une période d’essai. Jusqu’à la fermeture de votre navigateur, ou 7 jours si vous cochez Garder la session ouverte sur cet appareil ; 14 jours pour une période d’essai. La déconnexion le supprime."

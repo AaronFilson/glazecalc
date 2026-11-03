@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Xogtaada gaarka ah",
-    "lead": "La cusboonaysiiyay Oktoobar 2026.",
+    "lead": "La cusboonaysiiyay Nofembar 2026.",
     "shortHeading": "Kooban",
     "short": "Glazecalc wuxuu hayaa waxa uu u baahan yahay si akoonkaaga u shaqeeyo, waxba kama badna. Ma jiraan xayeysiis, falanqayn iyo raadraac. Xogtaada marnaba lama iibiyo, shirkadda kaliya ee maareysaana waa Amazon Web Services, oo martigelisa bogga oo dirta iimayladiisa.",
     "whoHeading": "Cidda mas'uulka ah",
@@ -138,7 +138,7 @@
     "rightsAsk": "Wax kasta oo kale, sida codsiga in xogtaada laga hayo isticmaalka inta khalad la saxayo, ama diidmada sida loo isticmaalo, u qor <mail>privacy@glazecalcapp.com</mail>. Waa bilaash, jawaabna waxaad heli doontaa bil gudaheed. Waxaa lagu weydiin doonaa oo kaliya inaad muujiso in akoonku adiga kuu yahay, adigoo galaya ama furaya link loo diray cinwaankiisa, marnaba aqoonsi (ID).",
     "rightsComplain": "Haddii aadan ku qanacsanayn, waxaad u ashtakoon kartaa hay'ad ilaalinta xogta: EU, <edpb>hay'adda waddankaaga</edpb>, UK-na, <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookie-yada iyo kaydka browser-ka",
-    "storageIntro": "Glazecalc wuxuu dejiyaa laba cookie, tan labaad oo kaliya inta aad ku galayso Google, GitHub ama Microsoft, wuxuuna browser-kaaga ku hayaa dhawr qiime oo yaryar. Mid walba wuxuu u joogaa wax aad codsatay: inaad ku jirto akoonka, inaad ku gasho Google, GitHub ama Microsoft, ama xusuusta doorasho aad samaysay. Midna kuma raadraaco, midna lama wadaago, sidaas darteed sharcigu uma baahna in marka hore la weydiiyo, banner cookie-na ma jiro.",
+    "storageIntro": "Glazecalc wuxuu dejiyaa laba cookie, tan labaad oo kaliya inta aad ku galayso Google, GitHub ama Microsoft. Browser-kaaga wuxuu sidoo kale ku hayaa dhawr qiime oo yaryar, qoraalka app-ka si loogu isticmaalo internet la'aan, iyo, kaliya haddii aad shido, nuqul diiwaannadaada ah. Mid walba wuxuu u joogaa wax aad codsatay: inaad ku jirto akoonka, inaad ku gasho Google, GitHub ama Microsoft, xusuusta doorasho aad samaysay, ama isticmaalka app-ka internet la'aan. Midna kuma raadraaco, midna lama wadaago, sidaas darteed sharcigu uma baahna in marka hore la weydiiyo, banner cookie-na ma jiro.",
     "storageLabel": "Cookie-yada iyo kaydka browser-ka",
     "storageName": "Magac",
     "storagePurpose": "Waxa loogu talagalay",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Kaydka maxalliga ah (local storage)",
     "storageSession": "Kaydka fadhiga (session storage)",
-    "storageNote": "Waxaad tirtiri kartaa mid kasta oo kuwan ka mid ah dejinta browser-kaaga wakhti kasta. Tirtirka akoonkaaga ayaa saara qoraalka galitaanka iyo dejin kasta oo halkan lagu hayo.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Kaydka cache-ka (Cache storage)",
+    "storageNote": "Waxaad tirtiri kartaa mid kasta oo kuwan ka mid ah dejinta browser-kaaga wakhti kasta. Tirtirka akoonkaaga ayaa saara qoraalka galitaanka, dejin kasta oo halkan lagu hayo iyo nuqulka diiwaannadaada.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Kaliya haddii aad bogga akoonkaaga ka shido “Diiwaannadayda ku hay qalabkan”: nuqul hababkaaga, alaabtaada, waxyaabaha lagu daro, gubidda, qoraallada, dejinta iyo qiimaha, si ay u furmaan internet la'aan. <code>offlineRecords</code> wuxuu qoraa inaad shiday. Nuqulku wuxuu ku jiraa browser-kan ee qalabkan, weligiisna meelna looma diro. Glazecalc ma sir-qariyo; waxaa ilaaliya oo keliya browser-kaaga, oo kayd goob kasta kala fogeeya, iyo sir-qarinta qalabkaaga, haddii uu leeyahay.",
+        "lasts": "Ilaa aad damiso, ka baxdo, ama fadhigaagu dhammaado. Nuqul ku jira qalab kale waa la saaraa marka qalabkaasi mar kale ku xidhmo Glazecalc, ama markaad halkaas ka baxdo."
+      },
+      "offlineFiles": {
+        "purpose": "Qoraalka iyo hagayaasha app-ka ee luqaddaada iyo Ingiriisiga, si bogaggu u furmaan internet la'aan, iyo luqadda la kaydiyay iyo goorta. Xog shakhsi ah ma jirto.",
+        "lasts": "Ilaa aad nadiifiso kaydka browser-kaaga. Mar kale ayaa la kaydiyaa maalintii hal mar; faylasha luqad kale waa la saaraa markaad luqadda beddesho."
+      },
       "cookie": {
         "purpose": "Wuxuu kugu hayaa akoonka. Wuxuu hayaa token-ka galitaankaaga. Script-yada boggu ma akhrin karaan, browser-kaaguna wuxuu u diraa oo kaliya server-ka Glazecalc laftiisa, HTTPS, marnaba codsi ka bilaabma bog kale.",
         "lasts": "Waxaa la dejiyaa markaad gasho, akoon samayso ama tijaabo bilowdo. Ilaa aad xirto browser-kaaga, ama 7 maalmood haddii aad calaamadeyso “Igu hay akoonka qalabkan”; 14 maalmood tijaabo. Ka bixistu way saartaa."

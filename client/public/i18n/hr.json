@@ -87,11 +87,16 @@
     "language": "Jezik:"
   },
   "offline": {
-    "languageNotSaved": "Ovaj jezik nije spremljen na ovom telefonu. Povežite se s internetom da biste ga koristili.",
+    "languageNotSaved": "Ovaj jezik nije spremljen na ovom uređaju. Povežite se s internetom da biste ga koristili.",
     "updateReady": "Dostupna je nova verzija aplikacije Glazecalc.",
     "reload": "Ponovno učitaj",
     "dismiss": "Ne sada",
-    "install": "Instaliraj aplikaciju"
+    "install": "Instaliraj aplikaciju",
+    "recordsSwitch": "Zadrži moje zapise na ovom uređaju kako bi se otvarali bez interneta",
+    "recordsHint": "Samo na uređaju kojim se koristite isključivo vi. Uklanja se kad se odjavite.",
+    "recordsBanner": "Glazecalc nije dostupan. Prikazuje se kopija spremljena na ovom uređaju {date}.",
+    "recordsNotSaved": "Vaši zapisi nisu spremljeni na ovom uređaju. Povežite se s internetom da biste ih vidjeli. To možete uključiti na svojem računu.",
+    "recordsNotKept": "Ovaj preglednik neće zadržati kopiju (privatno pregledavanje ili nema prostora)."
   },
   "picker": {
     "results": "{count, plural, one {# podudaranje} few {# podudaranja} other {# podudaranja}}",

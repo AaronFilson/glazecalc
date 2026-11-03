@@ -87,11 +87,16 @@
     "language": "Taal:"
   },
   "offline": {
-    "languageNotSaved": "Hierdie taal is nie op hierdie foon gestoor nie. Koppel aan die internet om dit te gebruik.",
+    "languageNotSaved": "Hierdie taal is nie op hierdie toestel gestoor nie. Koppel aan die internet om dit te gebruik.",
     "updateReady": "'n Nuwe weergawe van Glazecalc is gereed.",
     "reload": "Laai weer",
     "dismiss": "Nie nou nie",
-    "install": "Installeer toepassing"
+    "install": "Installeer toepassing",
+    "recordsSwitch": "Hou my rekords op hierdie toestel sodat hulle sonder internet oopmaak",
+    "recordsHint": "Net op 'n toestel wat jy alleen gebruik. Verwyder wanneer jy afmeld.",
+    "recordsBanner": "Glazecalc kan nie bereik word nie. Die kopie wat op {date} op hierdie toestel gestoor is, word gewys.",
+    "recordsNotSaved": "Jou rekords is nie op hierdie toestel gestoor nie. Koppel aan die internet om hulle te sien. Jy kan dit in jou rekening aanskakel.",
+    "recordsNotKept": "Hierdie blaaier sal nie 'n kopie hou nie (privaat blaai of geen spasie nie)."
   },
   "picker": {
     "results": "{count, plural, one {# treffer} other {# treffers}}",

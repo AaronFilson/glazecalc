@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privaatsus",
-    "lead": "Viimati uuendatud oktoobris 2026.",
+    "lead": "Viimati uuendatud novembris 2026.",
     "shortHeading": "Lühidalt",
     "short": "Glazecalc säilitab ainult seda, mida on vaja teie konto toimimiseks, ja mitte midagi rohkemat. Reklaame, analüütikat ega jälgimist ei ole. Teie andmeid ei müüda kunagi ja ainus ettevõte, kes neid käsitleb, on Amazon Web Services, mis majutab saiti ja saadab selle e-kirju.",
     "whoHeading": "Kes vastutab",
@@ -138,7 +138,7 @@
     "rightsAsk": "Kõige muu jaoks, näiteks kui soovite, et teie andmete kasutamine peatataks vea parandamise ajaks, või kui esitate vastuväite nende kasutamisele, kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. See on tasuta ja vastuse saate kuu jooksul. Teil palutakse ainult tõendada, et konto on teie oma, sisse logides või selle aadressile saadetud linki avades, mitte kunagi isikut tõendava dokumendiga.",
     "rightsComplain": "Kui te ei ole rahul, võite esitada kaebuse andmekaitse järelevalveasutusele: EL-is <edpb>oma riigi asutusele</edpb> ja Ühendkuningriigis asutusele <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Küpsised ja brauseri salvestusruum",
-    "storageIntro": "Glazecalc seab kaks küpsist, teise ainult siis, kui logite sisse Google’i, GitHubi või Microsoftiga, ja hoiab brauseris mõnda väikest väärtust. Igaüks on olemas millegi jaoks, mida te palusite: sisselogituks jäämiseks, Google’i, GitHubi või Microsoftiga sisselogimiseks või tehtud valiku meeldejätmiseks. Mitte ükski ei jälgi teid ega ole jagatud, seega ei nõua seadus eelnevat küsimist ja küpsisepaneeli pole.",
+    "storageIntro": "Glazecalc seab kaks küpsist, teise ainult sisselogimise ajal Google’i, GitHubi või Microsoftiga. Brauseris hoiab see ka mõnda väikest väärtust, rakenduse teksti kasutamiseks ilma internetita ja, ainult kui selle sisse lülitate, teie andmete koopiat. Igaüks on olemas millegi jaoks, mida te palusite: sisselogituks jäämiseks, Google’i, GitHubi või Microsoftiga sisselogimiseks, tehtud valiku meeldejätmiseks või rakenduse kasutamiseks ilma internetita. Mitte ükski ei jälgi teid ega ole jagatud, seega ei nõua seadus eelnevat küsimist ja küpsisepaneeli pole.",
     "storageLabel": "Küpsised ja brauseri salvestusruum",
     "storageName": "Nimi",
     "storagePurpose": "Mille jaoks",
@@ -146,8 +146,18 @@
     "storageCookie": "Küpsis",
     "storageLocal": "Kohalik salvestusruum",
     "storageSession": "Seansi salvestusruum",
-    "storageNote": "Neid kõiki saate igal ajal oma brauseri sätetes kustutada. Konto kustutamisel eemaldatakse sisselogimise märge ja kõik siin hoitud sätted.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Vahemälu salvestusruum",
+    "storageNote": "Neid kõiki saate igal ajal oma brauseri sätetes kustutada. Konto kustutamisel eemaldatakse sisselogimise märge, kõik siin hoitud sätted ja teie andmete koopia.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Ainult kui lülitate oma konto lehel sisse valiku „Hoia minu andmed selles seadmes”: teie retseptide, materjalide, lisandite, põletuste, märkmete, sätete ja hindade koopia, et need avaneksid ilma internetita. <code>offlineRecords</code> märgib, et lülitasite selle sisse. Koopia jääb sellesse brauserisse selles seadmes ja seda ei saadeta kunagi kuhugi. Glazecalc seda ei krüpteeri; seda kaitseb ainult teie brauser, mis hoiab iga saidi salvestusruumi eraldi, ja teie seadme enda krüpteerimine, kui see on olemas.",
+        "lasts": "Kuni selle välja lülitate, välja logite või teie seanss lõpeb. Teises seadmes olev koopia eemaldatakse, kui see seade järgmine kord Glazecalciga ühendust võtab, või kui te seal välja logite."
+      },
+      "offlineFiles": {
+        "purpose": "Rakenduse tekst ja juhendid teie keeles ja inglise keeles, et lehed avaneksid ilma internetita, ning see, milline keel ja millal salvestati. Isikuandmeid pole.",
+        "lasts": "Kuni tühjendate oma brauseri salvestusruumi. Salvestatakse uuesti kord päevas; keele vahetamisel eemaldatakse teise keele failid."
+      },
       "cookie": {
         "purpose": "Hoiab teid sisselogituna. Sisaldab teie sisselogimisluba. Lehe skriptid ei saa seda lugeda ning brauser saadab selle ainult Glazecalci enda serverile, HTTPS-i kaudu, ja mitte kunagi päringuga, mis algab teiselt saidilt.",
         "lasts": "Seatakse sisselogimisel, konto loomisel või proovikasutuse alustamisel. Kehtib brauseri sulgemiseni või 7 päeva, kui märgite valiku Jäta mind selles seadmes sisselogituks; proovikasutuse puhul 14 päeva. Väljalogimine eemaldab selle."
@@ -193,7 +203,7 @@
         "lasts": "Kuni sulgete vahekaardi."
       },
       "oauthCookie": {
-        "purpose": "Ainult siis, kui logite sisse Google’i, GitHubi või Microsoftiga: see seob teenusepakkuja vastuse teie brauseriga, et keegi teine ei saaks teie sisselogimist lõpule viia ega teie eest ühte alustada. Lehe skriptid ei saa seda lugeda.",
+        "purpose": "Ainult sisselogimise ajal Google’i, GitHubi või Microsoftiga: see seob teenusepakkuja vastuse teie brauseriga, et keegi teine ei saaks teie sisselogimist lõpule viia ega teie eest ühte alustada. Lehe skriptid ei saa seda lugeda.",
         "lasts": "Seatakse, kui vajutate „Jätka Google’iga“, „Jätka GitHubiga“ või „Logi sisse Microsoftiga“ või seote ühe oma konto lehel. Eemaldatakse, kui sisselogimine lõpeb, või 10 minuti pärast."
       }
     },

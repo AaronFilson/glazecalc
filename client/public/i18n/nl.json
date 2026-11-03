@@ -87,11 +87,16 @@
     "language": "Taal:"
   },
   "offline": {
-    "languageNotSaved": "Deze taal is niet op deze telefoon opgeslagen. Maak verbinding met internet om haar te gebruiken.",
+    "languageNotSaved": "Deze taal is niet op dit apparaat opgeslagen. Maak verbinding met internet om haar te gebruiken.",
     "updateReady": "Er is een nieuwe versie van Glazecalc klaar.",
     "reload": "Opnieuw laden",
     "dismiss": "Niet nu",
-    "install": "App installeren"
+    "install": "App installeren",
+    "recordsSwitch": "Mijn gegevens op dit apparaat bewaren, zodat ze zonder internet openen",
+    "recordsHint": "Alleen op een apparaat dat alleen u gebruikt. Verwijderd als u uitlogt.",
+    "recordsBanner": "Glazecalc is niet bereikbaar. U ziet de kopie die op {date} op dit apparaat is opgeslagen.",
+    "recordsNotSaved": "Uw gegevens zijn niet op dit apparaat opgeslagen. Maak verbinding met internet om ze te zien. U kunt dit inschakelen in uw account.",
+    "recordsNotKept": "Deze browser bewaart geen kopie (privé browsen of geen ruimte)."
   },
   "picker": {
     "results": "{count, plural, one {# resultaat} other {# resultaten}}",

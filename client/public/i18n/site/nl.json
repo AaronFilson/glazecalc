@@ -67,7 +67,7 @@
   },
   "privacy": {
     "title": "Privacy",
-    "lead": "Laatst bijgewerkt in oktober 2026.",
+    "lead": "Laatst bijgewerkt in november 2026.",
     "shortHeading": "In het kort",
     "short": "Glazecalc bewaart wat nodig is om uw account te laten werken, en niets meer. Er zijn geen advertenties, geen analysetools en geen tracking. Uw gegevens worden nooit verkocht, en het enige bedrijf dat ermee omgaat, is Amazon Web Services, dat de site host en de e-mail verstuurt.",
     "whoHeading": "Wie verantwoordelijk is",
@@ -138,7 +138,7 @@
     "rightsAsk": "Voor al het andere, zoals vragen om uw gegevens niet te gebruiken zolang een fout wordt rechtgezet, of bezwaar maken tegen hoe ze worden gebruikt, schrijft u naar <mail>privacy@glazecalcapp.com</mail>. Dat is gratis, en u krijgt binnen een maand antwoord. U wordt alleen gevraagd aan te tonen dat het account van u is, door in te loggen of door een link te openen die naar het adres ervan is gestuurd, nooit om een identiteitsbewijs.",
     "rightsComplain": "Als u niet tevreden bent, kunt u een klacht indienen bij een toezichthouder voor gegevensbescherming: in de EU bij <edpb>de toezichthouder in uw land</edpb>, en in het Verenigd Koninkrijk bij het <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies en browseropslag",
-    "storageIntro": "Glazecalc plaatst twee cookies, de tweede alleen terwijl u inlogt met Google, GitHub of Microsoft, en bewaart een paar kleine waarden in uw browser. Elk is er voor iets wat u hebt gevraagd: ingelogd blijven, inloggen met Google, GitHub of Microsoft, of een keuze onthouden die u hebt gemaakt. Geen enkele volgt u en geen enkele wordt gedeeld, dus de wet vereist niet dat we eerst vragen, en er is geen cookiebanner.",
+    "storageIntro": "Glazecalc plaatst twee cookies, de tweede alleen terwijl u inlogt met Google, GitHub of Microsoft. In uw browser bewaart het ook een paar kleine waarden, de tekst van de app om zonder internet te gebruiken en, alleen als u het inschakelt, een kopie van uw gegevens. Elk is er voor iets wat u hebt gevraagd: ingelogd blijven, inloggen met Google, GitHub of Microsoft, een keuze onthouden die u hebt gemaakt, of de app zonder internet gebruiken. Geen enkele volgt u en geen enkele wordt gedeeld, dus de wet vereist niet dat we eerst vragen, en er is geen cookiebanner.",
     "storageLabel": "Cookies en browseropslag",
     "storageName": "Naam",
     "storagePurpose": "Waarvoor",
@@ -146,8 +146,18 @@
     "storageCookie": "Cookie",
     "storageLocal": "Lokale opslag",
     "storageSession": "Sessieopslag",
-    "storageNote": "U kunt elk hiervan op elk moment wissen in de instellingen van uw browser. Als u uw account verwijdert, worden de inlognotitie en elke instelling die hier wordt bewaard, verwijderd.",
+    "storageIndexedDb": "IndexedDB",
+    "storageCache": "Cacheopslag",
+    "storageNote": "U kunt elk hiervan op elk moment wissen in de instellingen van uw browser. Als u uw account verwijdert, worden de inlognotitie, elke instelling die hier wordt bewaard en de kopie van uw gegevens verwijderd.",
     "keys": {
+      "offlineRecords": {
+        "purpose": "Alleen als u \"Mijn gegevens op dit apparaat bewaren\" inschakelt op uw accountpagina: een kopie van uw recepten, materialen, toevoegingen, stookgangen, notities, instellingen en prijzen, zodat ze zonder internet openen. <code>offlineRecords</code> noteert dat u het hebt ingeschakeld. De kopie blijft in deze browser op dit apparaat en wordt nooit ergens naartoe gestuurd. Glazecalc versleutelt hem niet; hij wordt alleen beschermd door uw browser, die de opslag van elke site gescheiden houdt, en door de eigen versleuteling van uw apparaat, als het die heeft.",
+        "lasts": "Tot u het uitschakelt, uitlogt of uw sessie eindigt. Een kopie op een ander apparaat wordt verwijderd zodra dat apparaat weer verbinding maakt met Glazecalc, of als u daar uitlogt."
+      },
+      "offlineFiles": {
+        "purpose": "De tekst en handleidingen van de app in uw taal en in het Engels, zodat pagina's zonder internet openen, en welke taal is opgeslagen en wanneer. Geen persoonsgegevens.",
+        "lasts": "Tot u de opslag van uw browser wist. Eens per dag opnieuw opgeslagen; de bestanden van een andere taal worden verwijderd als u van taal wisselt."
+      },
       "cookie": {
         "purpose": "Houdt u ingelogd. De cookie bevat uw inlogtoken. Scripts op de pagina kunnen hem niet lezen, en uw browser stuurt hem alleen naar de eigen server van Glazecalc, via HTTPS, en nooit met een verzoek dat op een andere site begint.",
         "lasts": "Geplaatst als u inlogt, een account aanmaakt of een proefperiode start. Tot u uw browser sluit, of 7 dagen als u Ingelogd blijven op dit apparaat aanvinkt; 14 dagen voor een proefperiode. Uitloggen verwijdert hem."
