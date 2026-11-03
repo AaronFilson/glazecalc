@@ -1104,5 +1104,21 @@
     "add": "Add a result for",
     "addButton": "Add",
     "saveFailed": "Where the firing log was fired could not be saved."
+  },
+  "layout": {
+    "label": "Form layout",
+    "standard": "Standard",
+    "workbench": "Workbench",
+    "guided": "Guided steps",
+    "side": "Formula and limits",
+    "fixFold": "Fix and swap ({count})",
+    "detailsFold": "Details: date, notes, firing, cost, hazards",
+    "steps": "Steps",
+    "stepRecipe": "Recipe",
+    "stepAmounts": "Amounts",
+    "stepCheck": "Check",
+    "amountsHint": "Type each amount. Enter goes to the next amount.",
+    "back": "Back",
+    "next": "Next"
   }
 }

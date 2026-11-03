@@ -153,8 +153,22 @@ export class FieldChecks {
   }
 
   private focus(field: string): void {
-    this.elements.get(field)?.focus();
+    const element = this.elements.get(field);
+    if (!element) return;
+    reveal(element);
+    element.focus();
   }
+}
+
+/**
+ * Opens what hides an element before the focus goes to it: each closed fold (details) around it, and, inside
+ * something hidden (a step of the guided recipe form), asks with a bubbling gc-reveal event for it to be shown.
+ */
+export function reveal(element: HTMLElement): void {
+  for (let node = element.parentElement; node; node = node.parentElement) {
+    if (node instanceof HTMLDetailsElement && !node.open) node.open = true;
+  }
+  if (element.closest('[hidden]')) element.dispatchEvent(new CustomEvent('gc-reveal', { bubbles: true }));
 }
 
 /**

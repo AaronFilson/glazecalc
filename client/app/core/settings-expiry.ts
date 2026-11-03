@@ -1,11 +1,11 @@
 /**
- * Settings kept in this browser's localStorage expire after 12 months unused, but only after a notice
- * (docs/eu-data-plan.md item 23). One record, under DATES_KEY, holds when this browser last opened
- * Glazecalc with them, and whether the notice has been shown:
+ * Settings kept in this browser's localStorage (docs/eu-data-plan.md item 23). The clock only runs between
+ * visits: every visit counts as use, and nothing is ever removed on its own. One record, under DATES_KEY,
+ * holds when this browser last opened Glazecalc with them, and which translation notice was closed:
  *
- * - opened within 11 months of that date: the date moves to now, and nothing shows;
- * - opened later, and not yet warned: the notice shows once ("Keep my settings" moves the date to now);
- * - opened again after a notice, and 12 months have passed: the settings are removed.
+ * - each load moves the date to now;
+ * - a load after nearly a year away (11 months or more) shows a notice for that return: using Glazecalc
+ *   keeps the settings here, and "Clear my settings" removes them (clearSettings).
  *
  * The sign-in note, the trial, the old token, the offline-records switch and the offline-language note are
  * not listed: they end with the session or with their cache (core/auth.service.ts, core/offline-records.ts,
@@ -20,7 +20,7 @@ export const NOTICE_VERSION = 1;
 const DAY = 24 * 60 * 60 * 1000;
 /** Twelve months. */
 export const EXPIRE_AFTER_MS = 365 * DAY;
-/** The notice shows once this close to expiry. */
+/** The return notice shows after this long away less than EXPIRE_AFTER_MS: nearly a year. */
 export const WARN_BEFORE_MS = 30 * DAY;
 
 /** The preferences (core/preferences.service.ts, the region as preferredRegion) and their signed-out copies. */
@@ -46,21 +46,20 @@ const PREFERENCE_NAMES = [
   'digits'
 ];
 
-/** Every localStorage name that expires. */
+/** Every localStorage name the dates record covers, and "Clear my settings" removes. */
 export const EXPIRING_KEYS: readonly string[] = [
   ...PREFERENCE_NAMES.map((name) => (name === 'region' ? 'preferredRegion' : name)),
   ...PREFERENCE_NAMES.map((name) => 'visitor.' + name),
   'region', // shared/library-info.ts
   'includeAdditives', // pages/recipe/recipe-page.ts
+  'recipeLayout', // pages/recipe/recipe-layout.ts
   'printMode', // pages/recipe/recipe-print.ts
   'printBatch'
 ];
 
 interface Dates {
-  /** When this browser last opened Glazecalc with these settings, or kept them. */
+  /** When this browser last opened Glazecalc with these settings. */
   used: number;
-  /** When the notice was shown, if it has been since. */
-  warned?: number;
   /** The translation notice's version when it was closed. */
   notice?: number;
 }
@@ -109,12 +108,13 @@ function remove(storage: Store, keys: readonly string[]): void {
   }
 }
 
-/** What check() found: whether to show the notice. */
+/** What check() found: whether to show the return notice. */
 export type ExpiryState = 'none' | 'warn';
 
 /**
- * Run once per page load, before the settings are read. Removes expired settings, or a closed translation
- * notice of an older version, and says whether to show the notice.
+ * Run once per page load, before the settings are read. Counts the visit as use (the date moves to now),
+ * removes a closed translation notice of an older version, and says whether this is a return after nearly a
+ * year away, for the notice. Nothing else is ever removed here.
  */
 export function checkSettingsExpiry(storage: Store | undefined = localStore(), now: number = Date.now()): ExpiryState {
   if (!storage) return 'none';
@@ -132,27 +132,15 @@ export function checkSettingsExpiry(storage: Store | undefined = localStore(), n
     remove(storage, ['notice', 'visitor.notice']);
     dates.notice = NOTICE_VERSION;
   }
-  const age = now - dates.used;
-  if (dates.warned !== undefined && age >= EXPIRE_AFTER_MS) {
-    remove(storage, [...EXPIRING_KEYS, DATES_KEY]);
-    return 'none';
-  }
-  if (age < EXPIRE_AFTER_MS - WARN_BEFORE_MS) {
-    write(storage, { used: now, notice: dates.notice });
-    return 'none';
-  }
-  if (dates.warned === undefined) {
-    write(storage, { ...dates, warned: now });
-    return 'warn';
-  }
-  write(storage, dates);
-  return 'none';
+  const away = now - dates.used;
+  write(storage, { used: now, notice: dates.notice });
+  return away >= EXPIRE_AFTER_MS - WARN_BEFORE_MS ? 'warn' : 'none';
 }
 
-/** "Keep my settings": they count from now again. */
-export function keepSettings(storage: Store | undefined = localStore(), now: number = Date.now()): void {
+/** "Clear my settings": removes every setting listed above, and the dates record. */
+export function clearSettings(storage: Store | undefined = localStore()): void {
   if (!storage) return;
-  write(storage, { used: now, notice: read(storage)?.notice ?? NOTICE_VERSION });
+  remove(storage, [...EXPIRING_KEYS, DATES_KEY]);
 }
 
 /** Notes the translation notice's version when it is closed. */

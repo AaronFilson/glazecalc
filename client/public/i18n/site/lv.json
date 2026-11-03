@@ -171,19 +171,32 @@
         "lasts": "Līdz izmēģinājums beidzas, tiek saglabāts vai atmests."
       },
       "settings": {
-        "purpose": "Iestatījums, ko mainījāt šajā pārlūkprogrammā, lai nākamā lapa to parādītu uzreiz, pirms serveris atbild. <code>theme</code> un <code>palette</code> iekrāso lapu, pirms tā parādās, un <code>language</code> atver lapas jūsu valodā."
+        "purpose": "Iestatījums, ko mainījāt šajā pārlūkprogrammā, lai nākamā lapa to parādītu uzreiz, pirms serveris atbild. <code>theme</code> un <code>palette</code> iekrāso lapu, pirms tā parādās, un <code>language</code> atver lapas jūsu valodā.",
+        "lasts": "Līdz to maināt. Nekas netiek noņemts pats no sevis: ja atgriežaties pēc gandrīz gada prombūtnes, paziņojums piedāvā pogu, lai notīrītu jūsu iestatījumus. Izrakstoties tiek atjaunots tas, ko izvēlējāties bez pierakstīšanās (ja ko izvēlējāties), un pārējais tiek noņemts."
       },
       "visitor": {
-        "purpose": "Valoda, ko izvēlējāties, vai tas, ka aizvērāt tulkojuma paziņojumu bez pierakstīšanās, lai tas atgrieztos, kad izrakstāties."
+        "purpose": "Valoda, ko izvēlējāties, vai tas, ka aizvērāt tulkojuma paziņojumu bez pierakstīšanās, lai tas atgrieztos, kad izrakstāties.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi vai dzēšat kontu šajā pārlūkprogrammā. Nekas netiek noņemts pats no sevis: ja atgriežaties pēc gandrīz gada prombūtnes, paziņojums piedāvā pogu, lai notīrītu jūsu iestatījumus."
       },
       "region": {
-        "purpose": "Reģiona filtrs bibliotēkas sarakstā."
+        "purpose": "Reģiona filtrs bibliotēkas sarakstā.",
+        "lasts": "Līdz atkal iestatāt filtru uz visiem reģioniem. Nekas netiek noņemts pats no sevis: ja atgriežaties pēc gandrīz gada prombūtnes, paziņojums piedāvā pogu, lai notīrītu jūsu iestatījumus."
       },
       "includeAdditives": {
-        "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties."
+        "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi. Nekas netiek noņemts pats no sevis: ja atgriežaties pēc gandrīz gada prombūtnes, paziņojums piedāvā pogu, lai notīrītu jūsu iestatījumus."
       },
       "print": {
-        "purpose": "Jūsu pēdējās izvēles, drukājot recepti: visa recepte, porcija vai darba lapa un porcijas lielums."
+        "purpose": "Jūsu pēdējās izvēles, drukājot recepti: visa recepte, porcija vai darba lapa un porcijas lielums.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi. Nekas netiek noņemts pats no sevis: ja atgriežaties pēc gandrīz gada prombūtnes, paziņojums piedāvā pogu, lai notīrītu jūsu iestatījumus."
+      },
+      "recipeLayout": {
+        "purpose": "Receptes veidlapai pēdējo reizi izvēlētais izkārtojums: standarta, darbgalds vai pa soļiem.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi. Nekas netiek noņemts pats no sevis: ja atgriežaties pēc gandrīz gada prombūtnes, paziņojums piedāvā pogu, lai notīrītu jūsu iestatījumus."
+      },
+      "settingsDates": {
+        "purpose": "Kad šī pārlūkprogramma pēdējo reizi atvēra Glazecalc ar iepriekš minētajiem iestatījumiem, lai, atgriežoties pēc gandrīz gada prombūtnes, varētu parādīt paziņojumu, kas piedāvā tos notīrīt, un kuru tulkojuma paziņojuma versiju aizvērāt. Nekādu personas datu.",
+        "lasts": "Kamēr šeit tiek glabāts kāds no šiem iestatījumiem."
       },
       "token": {
         "purpose": "Pierakstīšanās marķieris no vecas lietotnes Glazecalc versijas. Tagad tas vairs netiek ierakstīts.",

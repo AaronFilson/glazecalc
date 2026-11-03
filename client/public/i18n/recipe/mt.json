@@ -1104,5 +1104,21 @@
     "add": "Żid riżultat għal:",
     "addButton": "Żid",
     "saveFailed": "Ma setax jiġi ssejvjat fejn inħema r-reġistru tal-ħami."
+  },
+  "layout": {
+    "label": "Tqassim tal-formola",
+    "standard": "Standard",
+    "workbench": "Bank tax-xogħol",
+    "guided": "Pass pass",
+    "side": "Formula u limiti",
+    "fixFold": "Ikkoreġi u biddel ({count})",
+    "detailsFold": "Dettalji: data, noti, ħami, spiża, perikli",
+    "steps": "Passi",
+    "stepRecipe": "Riċetta",
+    "stepAmounts": "Ammonti",
+    "stepCheck": "Iċċekkja",
+    "amountsHint": "Ikteb kull ammont. Enter imur għall-ammont li jmiss.",
+    "back": "Lura",
+    "next": "Li jmiss"
   }
 }

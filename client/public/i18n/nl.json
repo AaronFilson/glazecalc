@@ -344,8 +344,8 @@
     "close": "Sluiten"
   },
   "settingsExpiry": {
-    "text": "Deze browser bewaart uw Glazecalc-instellingen, zoals thema en taal, al bijna een jaar zonder bezoek. Ze worden binnenkort verwijderd, tenzij u ze bewaart. Instellingen die in uw account zijn opgeslagen, blijven ongewijzigd.",
-    "keep": "Mijn instellingen bewaren"
+    "text": "U hebt Glazecalc in deze browser bijna een jaar niet gebruikt. Uw instellingen hier, zoals thema en taal, worden bewaard zolang u het gebruikt. U kunt ze nu wissen als u wilt. Instellingen die in uw account zijn opgeslagen, blijven ongewijzigd.",
+    "clear": "Mijn instellingen wissen"
   },
   "unity": {
     "fluxes": "Smeltmiddelen – R₂O en RO",

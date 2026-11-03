@@ -344,8 +344,8 @@
     "close": "Zapri"
   },
   "settingsExpiry": {
-    "text": "Ta brskalnik hrani vaše nastavitve Glazecalc, na primer temo in jezik, že skoraj leto dni brez obiska. Kmalu bodo odstranjene, razen če jih obdržite. Na nastavitve, shranjene v vašem računu, to ne vpliva.",
-    "keep": "Obdrži moje nastavitve"
+    "text": "Glazecalca v tem brskalniku niste uporabljali skoraj leto dni. Vaše nastavitve tukaj, na primer tema in jezik, se hranijo, dokler ga uporabljate. Če želite, jih lahko zdaj izbrišete. Na nastavitve, shranjene v vašem računu, to ne vpliva.",
+    "clear": "Izbriši moje nastavitve"
   },
   "unity": {
     "fluxes": "Talila – R₂O in RO",

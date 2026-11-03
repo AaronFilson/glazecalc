@@ -1104,5 +1104,21 @@
     "add": "Eredmény hozzáadása ehhez:",
     "addButton": "Hozzáadás",
     "saveFailed": "Nem sikerült elmenteni, hol égették ki az égetési naplót."
+  },
+  "layout": {
+    "label": "Űrlap elrendezése",
+    "standard": "Normál",
+    "workbench": "Munkapad",
+    "guided": "Lépésenként",
+    "side": "Képlet és határértékek",
+    "fixFold": "Javítás és csere ({count})",
+    "detailsFold": "Részletek: dátum, megjegyzések, égetés, költség, veszélyek",
+    "steps": "Lépések",
+    "stepRecipe": "Recept",
+    "stepAmounts": "Mennyiségek",
+    "stepCheck": "Ellenőrzés",
+    "amountsHint": "Írja be az egyes mennyiségeket. Az Enter a következő mennyiségre lép.",
+    "back": "Vissza",
+    "next": "Tovább"
   }
 }

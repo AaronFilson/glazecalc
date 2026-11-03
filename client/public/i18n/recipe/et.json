@@ -1104,5 +1104,21 @@
     "add": "Lisa tulemus:",
     "addButton": "Lisa",
     "saveFailed": "Põletuspäeviku põletuskohta ei saanud salvestada."
+  },
+  "layout": {
+    "label": "Vormi paigutus",
+    "standard": "Tavaline",
+    "workbench": "Töölaud",
+    "guided": "Samm-sammult",
+    "side": "Valem ja piirid",
+    "fixFold": "Paranda ja asenda ({count})",
+    "detailsFold": "Üksikasjad: kuupäev, märkused, põletus, hind, ohud",
+    "steps": "Sammud",
+    "stepRecipe": "Retsept",
+    "stepAmounts": "Kogused",
+    "stepCheck": "Kontroll",
+    "amountsHint": "Sisesta iga kogus. Enter viib järgmise koguse juurde.",
+    "back": "Tagasi",
+    "next": "Edasi"
   }
 }

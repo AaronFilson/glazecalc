@@ -1104,5 +1104,21 @@
     "add": "結果を追加:",
     "addButton": "追加",
     "saveFailed": "焼成記録をどこで焼成したかを保存できませんでした。"
+  },
+  "layout": {
+    "label": "フォームのレイアウト",
+    "standard": "標準",
+    "workbench": "ワークベンチ",
+    "guided": "ステップ形式",
+    "side": "化学式と限界値",
+    "fixFold": "修正と置き換え（{count}）",
+    "detailsFold": "詳細：日付、メモ、焼成、費用、危険有害性",
+    "steps": "ステップ",
+    "stepRecipe": "調合",
+    "stepAmounts": "量",
+    "stepCheck": "確認",
+    "amountsHint": "量を一つずつ入力します。Enter で次の量に移ります。",
+    "back": "戻る",
+    "next": "次へ"
   }
 }

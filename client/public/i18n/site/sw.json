@@ -171,19 +171,32 @@
         "lasts": "Hadi jaribio liishe, au lihifadhiwe au litupwe."
       },
       "settings": {
-        "purpose": "Mpangilio uliobadilisha kwenye kivinjari hiki, ili ukurasa unaofuata uuonyeshe mara moja, kabla seva haijajibu. <code>theme</code> na <code>palette</code> hutia rangi ukurasa kabla haujaonekana, na <code>language</code> hufungua kurasa katika lugha yako."
+        "purpose": "Mpangilio uliobadilisha kwenye kivinjari hiki, ili ukurasa unaofuata uuonyeshe mara moja, kabla seva haijajibu. <code>theme</code> na <code>palette</code> hutia rangi ukurasa kabla haujaonekana, na <code>language</code> hufungua kurasa katika lugha yako.",
+        "lasts": "Hadi ubadilishe. Hakuna kinachoondolewa chenyewe: ukirudi baada ya kutokuwepo kwa karibu mwaka, taarifa inakupa kitufe cha kufuta mipangilio yako. Kutoka hurudisha ulichochagua ukiwa umetoka, ikiwa kipo, na huondoa kilichobaki."
       },
       "visitor": {
-        "purpose": "Lugha uliyochagua, au kwamba ulifunga taarifa ya tafsiri, ukiwa umetoka, ili irudi unapotoka."
+        "purpose": "Lugha uliyochagua, au kwamba ulifunga taarifa ya tafsiri, ukiwa umetoka, ili irudi unapotoka.",
+        "lasts": "Hadi ufute hifadhi ya kivinjari chako au ufute akaunti kwenye kivinjari hiki. Hakuna kinachoondolewa chenyewe: ukirudi baada ya kutokuwepo kwa karibu mwaka, taarifa inakupa kitufe cha kufuta mipangilio yako."
       },
       "region": {
-        "purpose": "Kichujio cha eneo kwenye orodha ya maktaba."
+        "purpose": "Kichujio cha eneo kwenye orodha ya maktaba.",
+        "lasts": "Hadi urudishe kichujio kuwa maeneo yote. Hakuna kinachoondolewa chenyewe: ukirudi baada ya kutokuwepo kwa karibu mwaka, taarifa inakupa kitufe cha kufuta mipangilio yako."
       },
       "includeAdditives": {
-        "purpose": "Kama vichocheo vipya vihesabu viongezi vyake katika fomula ya Seger, kama ulivyochagua mara ya mwisho."
+        "purpose": "Kama vichocheo vipya vihesabu viongezi vyake katika fomula ya Seger, kama ulivyochagua mara ya mwisho.",
+        "lasts": "Hadi ufute hifadhi ya kivinjari chako. Hakuna kinachoondolewa chenyewe: ukirudi baada ya kutokuwepo kwa karibu mwaka, taarifa inakupa kitufe cha kufuta mipangilio yako."
       },
       "print": {
-        "purpose": "Chaguo zako za mwisho za kuchapisha kichocheo: kichocheo kizima, kundi au karatasi ya kazi, na ukubwa wa kundi."
+        "purpose": "Chaguo zako za mwisho za kuchapisha kichocheo: kichocheo kizima, kundi au karatasi ya kazi, na ukubwa wa kundi.",
+        "lasts": "Hadi ufute hifadhi ya kivinjari chako. Hakuna kinachoondolewa chenyewe: ukirudi baada ya kutokuwepo kwa karibu mwaka, taarifa inakupa kitufe cha kufuta mipangilio yako."
+      },
+      "recipeLayout": {
+        "purpose": "Mpangilio wa ukurasa uliouchagua mara ya mwisho kwa fomu ya kichocheo: wa kawaida, meza ya kazi au hatua za kuongozwa.",
+        "lasts": "Hadi ufute hifadhi ya kivinjari chako. Hakuna kinachoondolewa chenyewe: ukirudi baada ya kutokuwepo kwa karibu mwaka, taarifa inakupa kitufe cha kufuta mipangilio yako."
+      },
+      "settingsDates": {
+        "purpose": "Lini kivinjari hiki kilifungua Glazecalc mara ya mwisho kikiwa na mipangilio iliyo hapo juu, ili ukirudi baada ya kutokuwepo kwa karibu mwaka taarifa inayojitolea kuifuta iweze kuonyeshwa, na toleo lipi la taarifa ya tafsiri ulilofunga. Hakuna data binafsi.",
+        "lasts": "Muda wote mpangilio wowote kati ya hiyo unahifadhiwa hapa."
       },
       "token": {
         "purpose": "Tokeni ya kuingia kutoka toleo la zamani la Glazecalc. Haiandikwi tena sasa.",

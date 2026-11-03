@@ -344,8 +344,8 @@
     "close": "Luk"
   },
   "settingsExpiry": {
-    "text": "Denne browser har gemt dine Glazecalc-indstillinger, f.eks. tema og sprog, i næsten et år uden et besøg. De fjernes snart, medmindre du beholder dem. Indstillinger, der er gemt på din konto, berøres ikke.",
-    "keep": "Behold mine indstillinger"
+    "text": "Du har ikke brugt Glazecalc i denne browser i næsten et år. Dine indstillinger her, f.eks. tema og sprog, beholdes, så længe du bruger den. Du kan rydde dem nu, hvis du vil. Indstillinger, der er gemt på din konto, berøres ikke.",
+    "clear": "Ryd mine indstillinger"
   },
   "unity": {
     "fluxes": "Flusmidler – R₂O og RO",

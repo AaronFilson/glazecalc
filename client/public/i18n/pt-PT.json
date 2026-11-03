@@ -344,8 +344,8 @@
     "close": "Fechar"
   },
   "settingsExpiry": {
-    "text": "Este navegador guarda as suas definições do Glazecalc, como o tema e o idioma, há quase um ano sem uma visita. Serão removidas em breve, a menos que as mantenha. As definições guardadas na sua conta não são afetadas.",
-    "keep": "Manter as minhas definições"
+    "text": "Não utiliza o Glazecalc neste navegador há quase um ano. As suas definições aqui, como o tema e o idioma, são mantidas enquanto o utilizar. Pode apagá-las agora, se quiser. As definições guardadas na sua conta não são afetadas.",
+    "clear": "Apagar as minhas definições"
   },
   "unity": {
     "fluxes": "Fundentes – R₂O e RO",

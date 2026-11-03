@@ -171,19 +171,32 @@
         "lasts": "Kunnes kokeilu päättyy, säilytetään tai hylätään."
       },
       "settings": {
-        "purpose": "Tässä selaimessa muutettu asetus, jotta seuraava sivu näyttää sen heti, ennen kuin palvelin vastaa. <code>theme</code> ja <code>palette</code> värittävät sivun ennen kuin se tulee näkyviin, ja <code>language</code> avaa sivut valitulla kielellä."
+        "purpose": "Tässä selaimessa muutettu asetus, jotta seuraava sivu näyttää sen heti, ennen kuin palvelin vastaa. <code>theme</code> ja <code>palette</code> värittävät sivun ennen kuin se tulee näkyviin, ja <code>language</code> avaa sivut valitulla kielellä.",
+        "lasts": "Kunnes sitä muutetaan. Mitään ei poisteta itsestään: jos palaat lähes vuoden poissaolon jälkeen, ilmoitus tarjoaa painikkeen asetustesi tyhjentämiseen. Uloskirjautuminen palauttaa uloskirjautuneena tehdyt valinnat, jos niitä on, ja poistaa loput."
       },
       "visitor": {
-        "purpose": "Uloskirjautuneena valittu kieli tai tieto siitä, että käännösilmoitus suljettiin, jotta ne palaavat uloskirjautumisen jälkeen."
+        "purpose": "Uloskirjautuneena valittu kieli tai tieto siitä, että käännösilmoitus suljettiin, jotta ne palaavat uloskirjautumisen jälkeen.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään tai tässä selaimessa poistetaan tili. Mitään ei poisteta itsestään: jos palaat lähes vuoden poissaolon jälkeen, ilmoitus tarjoaa painikkeen asetustesi tyhjentämiseen."
       },
       "region": {
-        "purpose": "Kirjastoluettelon aluesuodatin."
+        "purpose": "Kirjastoluettelon aluesuodatin.",
+        "lasts": "Kunnes suodatin palautetaan kaikkiin alueisiin. Mitään ei poisteta itsestään: jos palaat lähes vuoden poissaolon jälkeen, ilmoitus tarjoaa painikkeen asetustesi tyhjentämiseen."
       },
       "includeAdditives": {
-        "purpose": "Lasketaanko uusien reseptien lisäaineet mukaan Segerin kaavaan, kuten viimeksi valittiin."
+        "purpose": "Lasketaanko uusien reseptien lisäaineet mukaan Segerin kaavaan, kuten viimeksi valittiin.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään. Mitään ei poisteta itsestään: jos palaat lähes vuoden poissaolon jälkeen, ilmoitus tarjoaa painikkeen asetustesi tyhjentämiseen."
       },
       "print": {
-        "purpose": "Viimeisimmät valinnat reseptin tulostamiseen: koko resepti, erä tai työlomake sekä eräkoko."
+        "purpose": "Viimeisimmät valinnat reseptin tulostamiseen: koko resepti, erä tai työlomake sekä eräkoko.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään. Mitään ei poisteta itsestään: jos palaat lähes vuoden poissaolon jälkeen, ilmoitus tarjoaa painikkeen asetustesi tyhjentämiseen."
+      },
+      "recipeLayout": {
+        "purpose": "Asettelu, jonka valitsit viimeksi reseptilomakkeelle: tavallinen, työpöytä tai vaihe vaiheelta.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään. Mitään ei poisteta itsestään: jos palaat lähes vuoden poissaolon jälkeen, ilmoitus tarjoaa painikkeen asetustesi tyhjentämiseen."
+      },
+      "settingsDates": {
+        "purpose": "Milloin tämä selain viimeksi avasi Glazecalcin yllä olevin asetuksin, jotta lähes vuoden poissaolon jälkeen palatessa voidaan näyttää ilmoitus, joka tarjoaa niiden tyhjentämistä, ja mikä käännösilmoituksen versio suljettiin. Ei henkilötietoja.",
+        "lasts": "Niin kauan kuin jokin noista asetuksista säilytetään täällä."
       },
       "token": {
         "purpose": "Glazecalcin vanhan version kirjautumistunniste. Sitä ei enää koskaan tallenneta.",

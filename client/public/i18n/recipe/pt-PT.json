@@ -1104,5 +1104,21 @@
     "add": "Adicionar um resultado para",
     "addButton": "Adicionar",
     "saveFailed": "Não foi possível guardar onde o registo de cozedura foi cozido."
+  },
+  "layout": {
+    "label": "Esquema do formulário",
+    "standard": "Padrão",
+    "workbench": "Bancada",
+    "guided": "Passo a passo",
+    "side": "Fórmula e limites",
+    "fixFold": "Corrigir e substituir ({count})",
+    "detailsFold": "Detalhes: data, notas, cozedura, custo, perigos",
+    "steps": "Passos",
+    "stepRecipe": "Receita",
+    "stepAmounts": "Quantidades",
+    "stepCheck": "Verificar",
+    "amountsHint": "Escreva cada quantidade. Enter passa para a quantidade seguinte.",
+    "back": "Voltar",
+    "next": "Seguinte"
   }
 }

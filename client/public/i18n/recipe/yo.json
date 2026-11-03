@@ -1104,5 +1104,21 @@
     "add": "Ṣàfikún àbájáde fún",
     "addButton": "Ṣàfikún",
     "saveFailed": "A kò lè fi ibi tí a ti sun àkọsílẹ̀ ìsun náà pamọ́."
+  },
+  "layout": {
+    "label": "Ìtò fọ́ọ̀mù",
+    "standard": "Àbọ̀dé",
+    "workbench": "Tábìlì iṣẹ́",
+    "guided": "Ìgbésẹ̀ pẹ̀lú ìtọ́sọ́nà",
+    "side": "Fọ́múlà àti ààlà",
+    "fixFold": "Àtúnṣe àti pàṣípààrọ̀ ({count})",
+    "detailsFold": "Àlàyé: ọjọ́, àkọsílẹ̀, ìsun, iye owó, ewu",
+    "steps": "Ìgbésẹ̀",
+    "stepRecipe": "Ìlànà",
+    "stepAmounts": "Ìwọ̀n",
+    "stepCheck": "Àyẹ̀wò",
+    "amountsHint": "Tẹ ìwọ̀n kọ̀ọ̀kan. Enter máa lọ sí ìwọ̀n tó kàn.",
+    "back": "Padà",
+    "next": "Èyí tó kàn"
   }
 }

@@ -344,8 +344,8 @@
     "close": "Rufe"
   },
   "settingsExpiry": {
-    "text": "Wannan burauza ta riƙe saitunanku na Glazecalc, kamar jigo da harshe, kusan shekara ɗaya ba tare da ziyara ba. Za a cire su nan ba da daɗewa ba sai dai idan kun riƙe su. Saitunan da aka ajiye a asusunku ba abin ya shafa ba.",
-    "keep": "Riƙe saitunana"
+    "text": "Ba ku yi amfani da Glazecalc a wannan burauza ba kusan shekara ɗaya. Ana riƙe saitunanku a nan, kamar jigo da harshe, muddin kuna amfani da ita. Kuna iya share su yanzu idan kuna so. Saitunan da aka ajiye a asusunku ba abin ya shafa ba.",
+    "clear": "Share saitunana"
   },
   "unity": {
     "fluxes": "Flux - R₂O da RO",

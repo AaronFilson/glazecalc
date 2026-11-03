@@ -344,8 +344,8 @@
     "close": "Maak toe"
   },
   "settingsExpiry": {
-    "text": "Hierdie blaaier het jou Glazecalc-instellings, soos tema en taal, amper 'n jaar lank sonder 'n besoek gehou. Hulle sal binnekort verwyder word, tensy jy hulle hou. Instellings wat in jou rekening gestoor is, word nie geraak nie.",
-    "keep": "Hou my instellings"
+    "text": "Jy het Glazecalc amper 'n jaar lank nie in hierdie blaaier gebruik nie. Jou instellings hier, soos tema en taal, word gehou terwyl jy dit gebruik. Jy kan hulle nou uitvee as jy wil. Instellings wat in jou rekening gestoor is, word nie geraak nie.",
+    "clear": "Vee my instellings uit"
   },
   "unity": {
     "fluxes": "Vloeimiddels - R₂O en RO",

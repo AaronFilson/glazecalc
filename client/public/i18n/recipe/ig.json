@@ -1104,5 +1104,21 @@
     "add": "Tinye nsonaazụ maka",
     "addButton": "Tinye",
     "saveFailed": "Enweghị ike ịchekwa ebe a gbara ndekọ ọkụ ahụ ọkụ."
+  },
+  "layout": {
+    "label": "Nhazi fọm",
+    "standard": "Nke a na-ejikarị",
+    "workbench": "Ebe ọrụ",
+    "guided": "Nzọụkwụ e duziri",
+    "side": "Usoro kemịkal na oke",
+    "fixFold": "Dozie ma gbanwee ({count})",
+    "detailsFold": "Nkọwa: ụbọchị, ndetu, ịgba ọkụ, ọnụahịa, ihe ize ndụ",
+    "steps": "Nzọụkwụ",
+    "stepRecipe": "Usoro",
+    "stepAmounts": "Ọnụọgụ",
+    "stepCheck": "Lelee",
+    "amountsHint": "Pịnye ọnụọgụ ọ bụla. Enter na-aga n'ọnụọgụ na-esote.",
+    "back": "Azụ",
+    "next": "Ọzọ"
   }
 }

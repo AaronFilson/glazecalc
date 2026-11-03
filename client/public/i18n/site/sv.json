@@ -171,19 +171,32 @@
         "lasts": "Tills provperioden tar slut, behålls eller raderas."
       },
       "settings": {
-        "purpose": "En inställning som har ändrats i den här webbläsaren, så att nästa sida visar den direkt, innan servern svarar. <code>theme</code> och <code>palette</code> färgar sidan innan den visas, och <code>language</code> öppnar sidor på ditt språk."
+        "purpose": "En inställning som har ändrats i den här webbläsaren, så att nästa sida visar den direkt, innan servern svarar. <code>theme</code> och <code>palette</code> färgar sidan innan den visas, och <code>language</code> öppnar sidor på ditt språk.",
+        "lasts": "Tills den ändras. Inget tas bort av sig självt: om du kommer tillbaka efter nästan ett års frånvaro erbjuder ett meddelande en knapp för att rensa dina inställningar. Utloggning återställer det du valde när du var utloggad, om något, och tar bort resten."
       },
       "visitor": {
-        "purpose": "Språket du valde, eller att du stängde meddelandet om översättningen, medan du var utloggad, så att det kommer tillbaka när du loggar ut."
+        "purpose": "Språket du valde, eller att du stängde meddelandet om översättningen, medan du var utloggad, så att det kommer tillbaka när du loggar ut.",
+        "lasts": "Tills webbläsarens lagring rensas eller ett konto raderas i den här webbläsaren. Inget tas bort av sig självt: om du kommer tillbaka efter nästan ett års frånvaro erbjuder ett meddelande en knapp för att rensa dina inställningar."
       },
       "region": {
-        "purpose": "Regionfiltret i en lista i biblioteket."
+        "purpose": "Regionfiltret i en lista i biblioteket.",
+        "lasts": "Tills filtret ställs tillbaka till alla regioner. Inget tas bort av sig självt: om du kommer tillbaka efter nästan ett års frånvaro erbjuder ett meddelande en knapp för att rensa dina inställningar."
       },
       "includeAdditives": {
-        "purpose": "Om nya recept räknar med tillsatserna i Segerformeln, enligt ditt senaste val."
+        "purpose": "Om nya recept räknar med tillsatserna i Segerformeln, enligt ditt senaste val.",
+        "lasts": "Tills webbläsarens lagring rensas. Inget tas bort av sig självt: om du kommer tillbaka efter nästan ett års frånvaro erbjuder ett meddelande en knapp för att rensa dina inställningar."
       },
       "print": {
-        "purpose": "De senaste valen för utskrift av ett recept: hela receptet, en sats eller arbetsbladet, och satsstorleken."
+        "purpose": "De senaste valen för utskrift av ett recept: hela receptet, en sats eller arbetsbladet, och satsstorleken.",
+        "lasts": "Tills webbläsarens lagring rensas. Inget tas bort av sig självt: om du kommer tillbaka efter nästan ett års frånvaro erbjuder ett meddelande en knapp för att rensa dina inställningar."
+      },
+      "recipeLayout": {
+        "purpose": "Layouten du valde senast för receptformuläret: standard, arbetsbänk eller steg för steg.",
+        "lasts": "Tills webbläsarens lagring rensas. Inget tas bort av sig självt: om du kommer tillbaka efter nästan ett års frånvaro erbjuder ett meddelande en knapp för att rensa dina inställningar."
+      },
+      "settingsDates": {
+        "purpose": "När den här webbläsaren senast öppnade Glazecalc med inställningarna ovan, så att en återkomst efter nästan ett års frånvaro kan visa meddelandet som erbjuder att rensa dem, och vilken version av meddelandet om översättningen du stängde. Inga personuppgifter.",
+        "lasts": "Så länge någon av de inställningarna sparas här."
       },
       "token": {
         "purpose": "En inloggningstoken från en gammal version av Glazecalc. Den skrivs aldrig numera.",

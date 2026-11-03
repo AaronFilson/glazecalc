@@ -171,19 +171,32 @@
         "lasts": "Kuze kube yilapho ukuzama kuphela, noma kugcinwa noma kulahlwa."
       },
       "settings": {
-        "purpose": "Isilungiselelo osishintshe kulesi siphequluli, ukuze ikhasi elilandelayo lisibonise ngokushesha, ngaphambi kokuba iseva iphendule. <code>theme</code> ne-<code>palette</code> kufaka umbala ekhasini ngaphambi kokuba livele, futhi i-<code>language</code> ivula amakhasi ngolimi lwakho."
+        "purpose": "Isilungiselelo osishintshe kulesi siphequluli, ukuze ikhasi elilandelayo lisibonise ngokushesha, ngaphambi kokuba iseva iphendule. <code>theme</code> ne-<code>palette</code> kufaka umbala ekhasini ngaphambi kokuba livele, futhi i-<code>language</code> ivula amakhasi ngolimi lwakho.",
+        "lasts": "Kuze kube yilapho usishintsha. Akukho lutho olususwa ngokwalo: uma ubuya ngemva kokuba ungekho cishe unyaka, isaziso sikunikeza inkinobho yokusula izilungiselelo zakho. Ukuphuma kubuyisa lokho okukhethile ngenkathi ungangenile, uma kukhona, futhi kususe okunye."
       },
       "visitor": {
-        "purpose": "Ulimi olukhethile, noma ukuthi uvale isaziso sokuhumusha, ngenkathi ungangenile, ukuze kubuye uma uphuma."
+        "purpose": "Ulimi olukhethile, noma ukuthi uvale isaziso sokuhumusha, ngenkathi ungangenile, ukuze kubuye uma uphuma.",
+        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho noma usula i-akhawunti kulesi siphequluli. Akukho lutho olususwa ngokwalo: uma ubuya ngemva kokuba ungekho cishe unyaka, isaziso sikunikeza inkinobho yokusula izilungiselelo zakho."
       },
       "region": {
-        "purpose": "Isihlungi sesifunda ohlwini lomtapo."
+        "purpose": "Isihlungi sesifunda ohlwini lomtapo.",
+        "lasts": "Kuze kube yilapho ubuyisela isihlungi kuzo zonke izifunda. Akukho lutho olususwa ngokwalo: uma ubuya ngemva kokuba ungekho cishe unyaka, isaziso sikunikeza inkinobho yokusula izilungiselelo zakho."
       },
       "includeAdditives": {
-        "purpose": "Ukuthi amaresiphi amasha abala yini izithasiselo zawo ku-UMF, njengoba ukhethe okokugcina."
+        "purpose": "Ukuthi amaresiphi amasha abala yini izithasiselo zawo ku-UMF, njengoba ukhethe okokugcina.",
+        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho. Akukho lutho olususwa ngokwalo: uma ubuya ngemva kokuba ungekho cishe unyaka, isaziso sikunikeza inkinobho yokusula izilungiselelo zakho."
       },
       "print": {
-        "purpose": "Ukukhetha kwakho kokugcina kokuphrinta iresiphi: iresiphi yonke, i-batch noma i-worksheet, nosayizi we-batch."
+        "purpose": "Ukukhetha kwakho kokugcina kokuphrinta iresiphi: iresiphi yonke, i-batch noma i-worksheet, nosayizi we-batch.",
+        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho. Akukho lutho olususwa ngokwalo: uma ubuya ngemva kokuba ungekho cishe unyaka, isaziso sikunikeza inkinobho yokusula izilungiselelo zakho."
+      },
+      "recipeLayout": {
+        "purpose": "Isakhiwo osikhethe okokugcina sefomu leresiphi: esijwayelekile, ibhentshi lokusebenza noma izinyathelo eziqondisiwe.",
+        "lasts": "Kuze kube yilapho usula isitoreji sesiphequluli sakho. Akukho lutho olususwa ngokwalo: uma ubuya ngemva kokuba ungekho cishe unyaka, isaziso sikunikeza inkinobho yokusula izilungiselelo zakho."
+      },
+      "settingsDates": {
+        "purpose": "Ukuthi lesi siphequluli sagcina nini ukuvula i-Glazecalc nezilungiselelo ezingenhla, ukuze uma ubuya ngemva kokuba ungekho cishe unyaka kuboniswe isaziso esinikeza ukuzisula, nokuthi yiluphi uhlobo lwesaziso sokuhumusha oluvalile. Ayikho imininingwane yomuntu siqu.",
+        "lasts": "Inqobo nje uma noma yisiphi salezo zilungiselelo sigcinwe lapha."
       },
       "token": {
         "purpose": "I-token yokungena evela enguqulweni endala ye-Glazecalc. Ayisabhalwa manje.",

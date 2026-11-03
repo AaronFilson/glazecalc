@@ -344,8 +344,8 @@
     "close": "Zatvori"
   },
   "settingsExpiry": {
-    "text": "Ovaj preglednik čuva vaše postavke za Glazecalc, kao što su tema i jezik, gotovo godinu dana bez posjeta. Uskoro će biti uklonjene ako ih ne zadržite. Postavke spremljene na vašem računu ostaju netaknute.",
-    "keep": "Zadrži moje postavke"
+    "text": "Glazecalc niste koristili u ovom pregledniku gotovo godinu dana. Vaše postavke ovdje, kao što su tema i jezik, čuvaju se dok ga koristite. Ako želite, sada ih možete izbrisati. Postavke spremljene na vašem računu ostaju netaknute.",
+    "clear": "Izbriši moje postavke"
   },
   "unity": {
     "fluxes": "Topitelji – R₂O i RO",

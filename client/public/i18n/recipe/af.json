@@ -1104,5 +1104,21 @@
     "add": "Voeg 'n resultaat by vir",
     "addButton": "Voeg by",
     "saveFailed": "Waar die bakrekord gebak is, kon nie gestoor word nie."
+  },
+  "layout": {
+    "label": "Vormuitleg",
+    "standard": "Standaard",
+    "workbench": "Werkbank",
+    "guided": "Stap vir stap",
+    "side": "Formule en grense",
+    "fixFold": "Regstel en vervang ({count})",
+    "detailsFold": "Besonderhede: datum, notas, bak, koste, gevare",
+    "steps": "Stappe",
+    "stepRecipe": "Resep",
+    "stepAmounts": "Hoeveelhede",
+    "stepCheck": "Kontroleer",
+    "amountsHint": "Tik elke hoeveelheid. Enter gaan na die volgende hoeveelheid.",
+    "back": "Terug",
+    "next": "Volgende"
   }
 }

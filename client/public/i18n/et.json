@@ -344,8 +344,8 @@
     "close": "Sulge"
   },
   "settingsExpiry": {
-    "text": "See brauser on hoidnud teie Glazecalci sätteid, näiteks teemat ja keelt, peaaegu aasta ilma külastuseta. Need eemaldatakse peagi, kui te neid alles ei jäta. Teie kontole salvestatud sätteid see ei puuduta.",
-    "keep": "Jäta mu sätted alles"
+    "text": "Te pole Glazecalci selles brauseris peaaegu aasta kasutanud. Teie sätteid siin, näiteks teemat ja keelt, hoitakse alles seni, kuni te seda kasutate. Soovi korral saate need nüüd tühjendada. Teie kontole salvestatud sätteid see ei puuduta.",
+    "clear": "Tühjenda mu sätted"
   },
   "unity": {
     "fluxes": "Sulandajad – R₂O ja RO",

@@ -171,19 +171,32 @@
         "lasts": "Ilaa tijaabadu dhammaato, ama la hayo ama la tuuro."
       },
       "settings": {
-        "purpose": "Dejin aad ku beddeshay browser-kan, si bogga xiga isla markiiba u muujiyo, ka hor inta uusan server-ku jawaabin. <code>theme</code> iyo <code>palette</code> waxay midabeeyaan bogga ka hor inta uusan soo muuqan, <code>language</code>-na wuxuu bogagga ku furaa luqaddaada."
+        "purpose": "Dejin aad ku beddeshay browser-kan, si bogga xiga isla markiiba u muujiyo, ka hor inta uusan server-ku jawaabin. <code>theme</code> iyo <code>palette</code> waxay midabeeyaan bogga ka hor inta uusan soo muuqan, <code>language</code>-na wuxuu bogagga ku furaa luqaddaada.",
+        "lasts": "Ilaa aad beddesho. Waxba iskood looma saaro: haddii aad soo noqoto ka dib ku dhowaad sannad aad maqnayd, ogeysiis ayaa ku siinaya badhan aad ku tirtirto dejimahaaga. Ka bixistu waxay dib u celisaa waxaad dooratay adigoo maqan, haddii ay jiraan, inta kalena way saartaa."
       },
       "visitor": {
-        "purpose": "Luqadda aad dooratay, ama inaad xirtay ogeysiiska turjumaadda, adigoo maqan, si ay u soo noqoto markaad ka baxdo."
+        "purpose": "Luqadda aad dooratay, ama inaad xirtay ogeysiiska turjumaadda, adigoo maqan, si ay u soo noqoto markaad ka baxdo.",
+        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga ama tirtirto akoon browser-kan ku jira. Waxba iskood looma saaro: haddii aad soo noqoto ka dib ku dhowaad sannad aad maqnayd, ogeysiis ayaa ku siinaya badhan aad ku tirtirto dejimahaaga."
       },
       "region": {
-        "purpose": "Shaandhada gobolka ee liiska maktabadda."
+        "purpose": "Shaandhada gobolka ee liiska maktabadda.",
+        "lasts": "Ilaa aad shaandhada dib ugu celiso dhammaan gobollada. Waxba iskood looma saaro: haddii aad soo noqoto ka dib ku dhowaad sannad aad maqnayd, ogeysiis ayaa ku siinaya badhan aad ku tirtirto dejimahaaga."
       },
       "includeAdditives": {
-        "purpose": "In hababka cusubi ku tiriyaan walxaha lagu daro UMF-ta, sidaad markii ugu dambaysay dooratay."
+        "purpose": "In hababka cusubi ku tiriyaan walxaha lagu daro UMF-ta, sidaad markii ugu dambaysay dooratay.",
+        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga. Waxba iskood looma saaro: haddii aad soo noqoto ka dib ku dhowaad sannad aad maqnayd, ogeysiis ayaa ku siinaya badhan aad ku tirtirto dejimahaaga."
       },
       "print": {
-        "purpose": "Doorashooyinkaagii ugu dambeeyay ee daabacaadda hab: habka oo dhan, batch ama xaashida shaqada, iyo cabbirka batch-ka."
+        "purpose": "Doorashooyinkaagii ugu dambeeyay ee daabacaadda hab: habka oo dhan, batch ama xaashida shaqada, iyo cabbirka batch-ka.",
+        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga. Waxba iskood looma saaro: haddii aad soo noqoto ka dib ku dhowaad sannad aad maqnayd, ogeysiis ayaa ku siinaya badhan aad ku tirtirto dejimahaaga."
+      },
+      "recipeLayout": {
+        "purpose": "Qaabka aad markii ugu dambaysay u dooratay foomka habka: caadi, miis shaqo ama tallaabooyin la hagayo.",
+        "lasts": "Ilaa aad tirtirto kaydka browser-kaaga. Waxba iskood looma saaro: haddii aad soo noqoto ka dib ku dhowaad sannad aad maqnayd, ogeysiis ayaa ku siinaya badhan aad ku tirtirto dejimahaaga."
+      },
+      "settingsDates": {
+        "purpose": "Goorta browser-kan uu ugu dambeysay furay Glazecalc isagoo leh dejimaha kor ku xusan, si marka aad soo noqoto ka dib ku dhowaad sannad aad maqnayd loo muujin karo ogeysiiska kuu soo bandhigaya inaad tirtirto, iyo nooca ogeysiiska turjumaadda ee aad xirtay. Xog shakhsi ah ma jirto.",
+        "lasts": "Inta mid kasta oo dejimahaas ka mid ah halkan lagu hayo."
       },
       "token": {
         "purpose": "Token galitaan oo ka yimid nooc hore oo Glazecalc ah. Hadda marnaba lama qoro.",

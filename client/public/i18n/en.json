@@ -344,8 +344,8 @@
     "close": "Close"
   },
   "settingsExpiry": {
-    "text": "This browser has kept your Glazecalc settings, such as theme and language, for almost a year without a visit. They will be removed soon unless you keep them. Settings saved to your account are not affected.",
-    "keep": "Keep my settings"
+    "text": "You haven't used Glazecalc in this browser for nearly a year. Your settings here, such as theme and language, are kept while you use it. You can clear them now if you like. Settings saved to your account are not affected.",
+    "clear": "Clear my settings"
   },
   "unity": {
     "fluxes": "Fluxes - R₂O and RO",

@@ -171,19 +171,32 @@
         "lasts": "Tot de proefperiode afloopt, of wordt bewaard of gewist."
       },
       "settings": {
-        "purpose": "Een instelling die u in deze browser hebt gewijzigd, zodat de volgende pagina die meteen toont, voordat de server antwoordt. <code>theme</code> en <code>palette</code> kleuren de pagina voordat die verschijnt, en <code>language</code> opent pagina’s in uw taal."
+        "purpose": "Een instelling die u in deze browser hebt gewijzigd, zodat de volgende pagina die meteen toont, voordat de server antwoordt. <code>theme</code> en <code>palette</code> kleuren de pagina voordat die verschijnt, en <code>language</code> opent pagina’s in uw taal.",
+        "lasts": "Tot u de instelling wijzigt. Er wordt niets vanzelf verwijderd: als u na bijna een jaar wegblijven terugkomt, biedt een melding een knop om uw instellingen te wissen. Bij uitloggen komt terug wat u eventueel had gekozen terwijl u was uitgelogd, en de rest wordt verwijderd."
       },
       "visitor": {
-        "purpose": "De taal die u hebt gekozen, of dat u de vertalingsmelding hebt gesloten, terwijl u was uitgelogd, zodat dat terugkomt als u uitlogt."
+        "purpose": "De taal die u hebt gekozen, of dat u de vertalingsmelding hebt gesloten, terwijl u was uitgelogd, zodat dat terugkomt als u uitlogt.",
+        "lasts": "Tot u de opslag van uw browser wist of een account in deze browser verwijdert. Er wordt niets vanzelf verwijderd: als u na bijna een jaar wegblijven terugkomt, biedt een melding een knop om uw instellingen te wissen."
       },
       "region": {
-        "purpose": "Het regiofilter van een lijst in de bibliotheek."
+        "purpose": "Het regiofilter van een lijst in de bibliotheek.",
+        "lasts": "Tot u het filter terugzet op alle regio’s. Er wordt niets vanzelf verwijderd: als u na bijna een jaar wegblijven terugkomt, biedt een melding een knop om uw instellingen te wissen."
       },
       "includeAdditives": {
-        "purpose": "Of nieuwe recepten hun toevoegingen meetellen in de Segerformule, zoals u het laatst hebt gekozen."
+        "purpose": "Of nieuwe recepten hun toevoegingen meetellen in de Segerformule, zoals u het laatst hebt gekozen.",
+        "lasts": "Tot u de opslag van uw browser wist. Er wordt niets vanzelf verwijderd: als u na bijna een jaar wegblijven terugkomt, biedt een melding een knop om uw instellingen te wissen."
       },
       "print": {
-        "purpose": "Uw laatste keuzes voor het afdrukken van een recept: het hele recept, een mengsel of het werkblad, en de grootte van het mengsel."
+        "purpose": "Uw laatste keuzes voor het afdrukken van een recept: het hele recept, een mengsel of het werkblad, en de grootte van het mengsel.",
+        "lasts": "Tot u de opslag van uw browser wist. Er wordt niets vanzelf verwijderd: als u na bijna een jaar wegblijven terugkomt, biedt een melding een knop om uw instellingen te wissen."
+      },
+      "recipeLayout": {
+        "purpose": "De indeling die u het laatst hebt gekozen voor het receptformulier: standaard, werkbank of stap voor stap.",
+        "lasts": "Tot u de opslag van uw browser wist. Er wordt niets vanzelf verwijderd: als u na bijna een jaar wegblijven terugkomt, biedt een melding een knop om uw instellingen te wissen."
+      },
+      "settingsDates": {
+        "purpose": "Wanneer deze browser Glazecalc voor het laatst opende met de instellingen hierboven, zodat bij een terugkeer na bijna een jaar wegblijven de melding kan verschijnen die aanbiedt ze te wissen, en welke versie van de vertalingsmelding u hebt gesloten. Geen persoonsgegevens.",
+        "lasts": "Zolang een van die instellingen hier wordt bewaard."
       },
       "token": {
         "purpose": "Een inlogtoken van een oude versie van Glazecalc. Het wordt nu nooit meer geschreven.",

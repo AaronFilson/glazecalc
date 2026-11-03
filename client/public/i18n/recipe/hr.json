@@ -1104,5 +1104,21 @@
     "add": "Dodaj rezultat za",
     "addButton": "Dodaj",
     "saveFailed": "Nije bilo moguće spremiti gdje je zapisnik pečenja pečen."
+  },
+  "layout": {
+    "label": "Izgled obrasca",
+    "standard": "Standardni",
+    "workbench": "Radni stol",
+    "guided": "Korak po korak",
+    "side": "Formula i granice",
+    "fixFold": "Ispravi i zamijeni ({count})",
+    "detailsFold": "Pojedinosti: datum, napomene, pečenje, trošak, opasnosti",
+    "steps": "Koraci",
+    "stepRecipe": "Recept",
+    "stepAmounts": "Količine",
+    "stepCheck": "Provjera",
+    "amountsHint": "Upišite svaku količinu. Enter prelazi na sljedeću količinu.",
+    "back": "Natrag",
+    "next": "Dalje"
   }
 }

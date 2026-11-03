@@ -1104,5 +1104,21 @@
     "add": "Dodaj rezultat za",
     "addButton": "Dodaj",
     "saveFailed": "Mesta žganja dnevnika žganja ni bilo mogoče shraniti."
+  },
+  "layout": {
+    "label": "Postavitev obrazca",
+    "standard": "Običajna",
+    "workbench": "Delovna miza",
+    "guided": "Vodeni koraki",
+    "side": "Formula in meje",
+    "fixFold": "Popravek in zamenjava ({count})",
+    "detailsFold": "Podrobnosti: datum, opombe, žganje, cena, nevarnosti",
+    "steps": "Koraki",
+    "stepRecipe": "Recept",
+    "stepAmounts": "Količine",
+    "stepCheck": "Preverjanje",
+    "amountsHint": "Vnesite vsako količino. Enter skoči na naslednjo količino.",
+    "back": "Nazaj",
+    "next": "Naprej"
   }
 }

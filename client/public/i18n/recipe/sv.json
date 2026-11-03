@@ -1104,5 +1104,21 @@
     "add": "Lägg till ett resultat för",
     "addButton": "Lägg till",
     "saveFailed": "Det gick inte att spara var brännloggen brändes."
+  },
+  "layout": {
+    "label": "Formulärets layout",
+    "standard": "Standard",
+    "workbench": "Arbetsbänk",
+    "guided": "Steg för steg",
+    "side": "Formel och gränser",
+    "fixFold": "Åtgärda och byt ({count})",
+    "detailsFold": "Detaljer: datum, anteckningar, bränning, kostnad, faror",
+    "steps": "Steg",
+    "stepRecipe": "Recept",
+    "stepAmounts": "Mängder",
+    "stepCheck": "Kontroll",
+    "amountsHint": "Skriv varje mängd. Enter går till nästa mängd.",
+    "back": "Tillbaka",
+    "next": "Nästa"
   }
 }

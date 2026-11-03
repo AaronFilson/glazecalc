@@ -344,8 +344,8 @@
     "close": "Fermer"
   },
   "settingsExpiry": {
-    "text": "Ce navigateur garde vos paramètres Glazecalc, comme le thème et la langue, depuis près d’un an sans visite. Ils seront bientôt supprimés, sauf si vous les gardez. Les paramètres enregistrés dans votre compte ne sont pas concernés.",
-    "keep": "Garder mes paramètres"
+    "text": "Vous n’avez pas utilisé Glazecalc dans ce navigateur depuis près d’un an. Vos paramètres ici, comme le thème et la langue, sont conservés tant que vous l’utilisez. Vous pouvez les effacer maintenant si vous le souhaitez. Les paramètres enregistrés dans votre compte ne sont pas concernés.",
+    "clear": "Effacer mes paramètres"
   },
   "unity": {
     "fluxes": "Fondants – R₂O et RO",

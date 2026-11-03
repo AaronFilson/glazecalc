@@ -171,19 +171,32 @@
         "lasts": "Jusqu’à la fin de la période d’essai, ou jusqu’à ce qu’elle soit conservée ou abandonnée."
       },
       "settings": {
-        "purpose": "Un paramètre que vous avez modifié dans ce navigateur, pour que la page suivante l’affiche tout de suite, avant la réponse du serveur. <code>theme</code> et <code>palette</code> colorent la page avant qu’elle n’apparaisse, et <code>language</code> ouvre les pages dans votre langue."
+        "purpose": "Un paramètre que vous avez modifié dans ce navigateur, pour que la page suivante l’affiche tout de suite, avant la réponse du serveur. <code>theme</code> et <code>palette</code> colorent la page avant qu’elle n’apparaisse, et <code>language</code> ouvre les pages dans votre langue.",
+        "lasts": "Jusqu’à ce que vous le modifiiez. Rien n’est supprimé de lui-même : si vous revenez après près d’un an d’absence, un avis propose un bouton pour effacer vos paramètres. La déconnexion rétablit ce que vous aviez choisi hors connexion, le cas échéant, et supprime le reste."
       },
       "visitor": {
-        "purpose": "La langue que vous avez choisie, ou le fait que vous avez fermé l’avis de traduction, hors connexion, pour les retrouver après la déconnexion."
+        "purpose": "La langue que vous avez choisie, ou le fait que vous avez fermé l’avis de traduction, hors connexion, pour les retrouver après la déconnexion.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur ou supprimiez un compte dans ce navigateur. Rien n’est supprimé de lui-même : si vous revenez après près d’un an d’absence, un avis propose un bouton pour effacer vos paramètres."
       },
       "region": {
-        "purpose": "Le filtre de région d’une liste de la bibliothèque."
+        "purpose": "Le filtre de région d’une liste de la bibliothèque.",
+        "lasts": "Jusqu’à ce que vous remettiez le filtre sur toutes les régions. Rien n’est supprimé de lui-même : si vous revenez après près d’un an d’absence, un avis propose un bouton pour effacer vos paramètres."
       },
       "includeAdditives": {
-        "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix."
+        "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur. Rien n’est supprimé de lui-même : si vous revenez après près d’un an d’absence, un avis propose un bouton pour effacer vos paramètres."
       },
       "print": {
-        "purpose": "Vos derniers choix pour l’impression d’une recette : la recette entière, une préparation ou la feuille de calcul, et la taille de la préparation."
+        "purpose": "Vos derniers choix pour l’impression d’une recette : la recette entière, une préparation ou la feuille de calcul, et la taille de la préparation.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur. Rien n’est supprimé de lui-même : si vous revenez après près d’un an d’absence, un avis propose un bouton pour effacer vos paramètres."
+      },
+      "recipeLayout": {
+        "purpose": "La disposition que vous avez choisie en dernier pour le formulaire de recette : standard, établi ou pas à pas.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur. Rien n’est supprimé de lui-même : si vous revenez après près d’un an d’absence, un avis propose un bouton pour effacer vos paramètres."
+      },
+      "settingsDates": {
+        "purpose": "Quand ce navigateur a ouvert Glazecalc pour la dernière fois avec les paramètres ci-dessus, afin qu’un retour après près d’un an d’absence puisse afficher l’avis proposant de les effacer, et quelle version de l’avis de traduction vous avez fermée. Aucune donnée personnelle.",
+        "lasts": "Tant que l’un de ces paramètres est conservé ici."
       },
       "token": {
         "purpose": "Un jeton de connexion d’une ancienne version de Glazecalc. Il n’est plus jamais écrit.",

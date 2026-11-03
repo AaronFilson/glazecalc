@@ -1104,5 +1104,21 @@
     "add": "Een resultaat toevoegen voor",
     "addButton": "Toevoegen",
     "saveFailed": "Kon niet opslaan waar het stookverslag is gestookt."
+  },
+  "layout": {
+    "label": "Indeling van het formulier",
+    "standard": "Standaard",
+    "workbench": "Werkbank",
+    "guided": "Stap voor stap",
+    "side": "Formule en limieten",
+    "fixFold": "Verbeteren en vervangen ({count})",
+    "detailsFold": "Details: datum, notities, stook, kosten, gevaren",
+    "steps": "Stappen",
+    "stepRecipe": "Recept",
+    "stepAmounts": "Hoeveelheden",
+    "stepCheck": "Controle",
+    "amountsHint": "Typ elke hoeveelheid. Enter gaat naar de volgende hoeveelheid.",
+    "back": "Terug",
+    "next": "Volgende"
   }
 }

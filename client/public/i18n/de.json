@@ -344,8 +344,8 @@
     "close": "Schließen"
   },
   "settingsExpiry": {
-    "text": "Dieser Browser hat Ihre Glazecalc-Einstellungen, etwa Design und Sprache, fast ein Jahr ohne Besuch aufbewahrt. Sie werden bald entfernt, wenn Sie sie nicht behalten. In Ihrem Konto gespeicherte Einstellungen sind nicht betroffen.",
-    "keep": "Meine Einstellungen behalten"
+    "text": "Sie haben Glazecalc in diesem Browser fast ein Jahr lang nicht verwendet. Ihre Einstellungen hier, etwa Design und Sprache, bleiben erhalten, solange Sie ihn verwenden. Sie können sie jetzt löschen, wenn Sie möchten. In Ihrem Konto gespeicherte Einstellungen sind nicht betroffen.",
+    "clear": "Meine Einstellungen löschen"
   },
   "unity": {
     "fluxes": "Flussmittel – R₂O und RO",

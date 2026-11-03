@@ -1104,5 +1104,21 @@
     "add": "Añadir un resultado para",
     "addButton": "Añadir",
     "saveFailed": "No se ha podido guardar dónde se coció el registro de cocción."
+  },
+  "layout": {
+    "label": "Diseño del formulario",
+    "standard": "Estándar",
+    "workbench": "Banco de trabajo",
+    "guided": "Paso a paso",
+    "side": "Fórmula y límites",
+    "fixFold": "Corregir y sustituir ({count})",
+    "detailsFold": "Detalles: fecha, notas, cocción, coste, riesgos",
+    "steps": "Pasos",
+    "stepRecipe": "Receta",
+    "stepAmounts": "Cantidades",
+    "stepCheck": "Comprobar",
+    "amountsHint": "Escribe cada cantidad. Enter pasa a la siguiente cantidad.",
+    "back": "Atrás",
+    "next": "Siguiente"
   }
 }

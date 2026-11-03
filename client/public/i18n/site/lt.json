@@ -171,19 +171,32 @@
         "lasts": "Kol bandomasis laikotarpis baigsis, bus pasiliktas arba jo bus atsisakyta."
       },
       "settings": {
-        "purpose": "Nustatymas, kurį pakeitėte šioje naršyklėje, kad kitas puslapis jį parodytų iš karto, dar prieš atsakant serveriui. <code>theme</code> ir <code>palette</code> nuspalvina puslapį prieš jam pasirodant, o <code>language</code> atidaro puslapius jūsų kalba."
+        "purpose": "Nustatymas, kurį pakeitėte šioje naršyklėje, kad kitas puslapis jį parodytų iš karto, dar prieš atsakant serveriui. <code>theme</code> ir <code>palette</code> nuspalvina puslapį prieš jam pasirodant, o <code>language</code> atidaro puslapius jūsų kalba.",
+        "lasts": "Kol jį pakeisite. Niekas nepašalinama savaime: jei grįšite po beveik metų pertraukos, pranešimas pasiūlys mygtuką jūsų nustatymams išvalyti. Atsijungus grąžinama tai, ką buvote pasirinkę neprisijungę, jei ką nors pasirinkote, o visa kita pašalinama."
       },
       "visitor": {
-        "purpose": "Kalba, kurią pasirinkote, arba tai, kad uždarėte pranešimą apie vertimą, kol buvote neprisijungę, kad tai grįžtų jums atsijungus."
+        "purpose": "Kalba, kurią pasirinkote, arba tai, kad uždarėte pranešimą apie vertimą, kol buvote neprisijungę, kad tai grįžtų jums atsijungus.",
+        "lasts": "Kol išvalysite naršyklės saugyklą arba panaikinsite paskyrą šioje naršyklėje. Niekas nepašalinama savaime: jei grįšite po beveik metų pertraukos, pranešimas pasiūlys mygtuką jūsų nustatymams išvalyti."
       },
       "region": {
-        "purpose": "Regiono filtras bibliotekos sąraše."
+        "purpose": "Regiono filtras bibliotekos sąraše.",
+        "lasts": "Kol filtrą vėl nustatysite į visus regionus. Niekas nepašalinama savaime: jei grįšite po beveik metų pertraukos, pranešimas pasiūlys mygtuką jūsų nustatymams išvalyti."
       },
       "includeAdditives": {
-        "purpose": "Ar naujuose receptuose priedai įskaičiuojami į Segerio formulę, kaip pasirinkote paskutinį kartą."
+        "purpose": "Ar naujuose receptuose priedai įskaičiuojami į Segerio formulę, kaip pasirinkote paskutinį kartą.",
+        "lasts": "Kol išvalysite naršyklės saugyklą. Niekas nepašalinama savaime: jei grįšite po beveik metų pertraukos, pranešimas pasiūlys mygtuką jūsų nustatymams išvalyti."
       },
       "print": {
-        "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas, užmaišas ar darbo lapas ir užmaišo dydis."
+        "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas, užmaišas ar darbo lapas ir užmaišo dydis.",
+        "lasts": "Kol išvalysite naršyklės saugyklą. Niekas nepašalinama savaime: jei grįšite po beveik metų pertraukos, pranešimas pasiūlys mygtuką jūsų nustatymams išvalyti."
+      },
+      "recipeLayout": {
+        "purpose": "Paskutinį kartą pasirinktas recepto formos išdėstymas: standartinis, darbastalis arba žingsnis po žingsnio.",
+        "lasts": "Kol išvalysite naršyklės saugyklą. Niekas nepašalinama savaime: jei grįšite po beveik metų pertraukos, pranešimas pasiūlys mygtuką jūsų nustatymams išvalyti."
+      },
+      "settingsDates": {
+        "purpose": "Kada ši naršyklė paskutinį kartą atidarė Glazecalc su aukščiau nurodytais nustatymais, kad grįžus po beveik metų pertraukos būtų galima parodyti pranešimą, siūlantį juos išvalyti, ir kurią pranešimo apie vertimą versiją uždarėte. Jokių asmens duomenų.",
+        "lasts": "Kol čia laikomas bent vienas iš tų nustatymų."
       },
       "token": {
         "purpose": "Prisijungimo žetonas iš senos Glazecalc versijos. Dabar jis niekada neįrašomas.",

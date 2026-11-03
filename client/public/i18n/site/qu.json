@@ -171,19 +171,32 @@
         "lasts": "Prueba tukukunankama, utaq waqaychasqa utaq wikch'usqa kanankama."
       },
       "settings": {
-        "purpose": "Kay navegadorpi t'ikrasqayki huk allichana, qhipan p'anqa chay pachalla rikuchinanpaq, servidor manaraq kutichichkaptin. <code>theme</code>, <code>palette</code> nisqakunaqa p'anqata manaraq rikhurichkaptin llimp'in, <code>language</code>-taq p'anqakunata simiykipi kichan."
+        "purpose": "Kay navegadorpi t'ikrasqayki huk allichana, qhipan p'anqa chay pachalla rikuchinanpaq, servidor manaraq kutichichkaptin. <code>theme</code>, <code>palette</code> nisqakunaqa p'anqata manaraq rikhurichkaptin llimp'in, <code>language</code>-taq p'anqakunata simiykipi kichan.",
+        "lasts": "T'ikranaykikama. Manam imapas kikinmanta qichukunchu: yaqa huk wata mana kaypi kasqaykimanta kutimuspaykiqa, huk willakuy allichanaykikunata pichanapaq botonta qusunki. Lluqsiyqa mana yaykusqa kaspa akllasqaykitam kutichin, kaptinqa, hukkunatataq qichun."
       },
       "visitor": {
-        "purpose": "Akllasqayki simi, utaq t'ikray willakuyta wichq'asqayki, mana yaykusqa kachkhaspa, lluqsiptiyki kutimunanpaq."
+        "purpose": "Akllasqayki simi, utaq t'ikray willakuyta wichq'asqayki, mana yaykusqa kachkhaspa, lluqsiptiyki kutimunanpaq.",
+        "lasts": "Navegadorniykipa waqaychananta pichanaykikama utaq kay navegadorpi huk cuentata pichanaykikama. Manam imapas kikinmanta qichukunchu: yaqa huk wata mana kaypi kasqaykimanta kutimuspaykiqa, huk willakuy allichanaykikunata pichanapaq botonta qusunki."
       },
       "region": {
-        "purpose": "Huk qillqa wasi listapi región akllana."
+        "purpose": "Huk qillqa wasi listapi región akllana.",
+        "lasts": "Akllanata tukuy regionkunaman kutichinaykikama. Manam imapas kikinmanta qichukunchu: yaqa huk wata mana kaypi kasqaykimanta kutimuspaykiqa, huk willakuy allichanaykikunata pichanapaq botonta qusunki."
       },
       "includeAdditives": {
-        "purpose": "Musuq ruranakunachus aditivonkunata fórmula unitariapi yupanku, qhipa kuti akllasqayki hina."
+        "purpose": "Musuq ruranakunachus aditivonkunata fórmula unitariapi yupanku, qhipa kuti akllasqayki hina.",
+        "lasts": "Navegadorniykipa waqaychananta pichanaykikama. Manam imapas kikinmanta qichukunchu: yaqa huk wata mana kaypi kasqaykimanta kutimuspaykiqa, huk willakuy allichanaykikunata pichanapaq botonta qusunki."
       },
       "print": {
-        "purpose": "Huk ruranata imprimiypaq qhipa akllayniykikuna: llapan rurana, huk lote utaq hoja de trabajo, lotepa hatun kayninpas."
+        "purpose": "Huk ruranata imprimiypaq qhipa akllayniykikuna: llapan rurana, huk lote utaq hoja de trabajo, lotepa hatun kayninpas.",
+        "lasts": "Navegadorniykipa waqaychananta pichanaykikama. Manam imapas kikinmanta qichukunchu: yaqa huk wata mana kaypi kasqaykimanta kutimuspaykiqa, huk willakuy allichanaykikunata pichanapaq botonta qusunki."
+      },
+      "recipeLayout": {
+        "purpose": "Ruranapa formularionpaq qhipa kuti akllasqayki rikchay: sapsilla, llamk'ana mesa utaq pasokunawan.",
+        "lasts": "Navegadorniykipa waqaychananta pichanaykikama. Manam imapas kikinmanta qichukunchu: yaqa huk wata mana kaypi kasqaykimanta kutimuspaykiqa, huk willakuy allichanaykikunata pichanapaq botonta qusunki."
+      },
+      "settingsDates": {
+        "purpose": "Hayk'aqmi kay navegador qhipa kutita Glazecalcta kicharqan hawapi kaq allichanakunawan, yaqa huk wata mana kaypi kaspa kutimuptiyki chaykunata pichanapaq willakuyta rikuchinanpaq, hinallataq t'ikray willakuypa mayqin versionninta wichq'asqayki. Mana sapan runapa willakuyninkunayuq.",
+        "lasts": "Chay allichanakunamanta mayqinpas kaypi waqaychasqa kachkaptinkama."
       },
       "token": {
         "purpose": "Glazecalcpa ñawpaq versiónninmanta huk yaykuy token. Kunanqa manam hayk'aqpas qillqakunchu.",

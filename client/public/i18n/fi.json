@@ -344,8 +344,8 @@
     "close": "Sulje"
   },
   "settingsExpiry": {
-    "text": "Tämä selain on säilyttänyt Glazecalc-asetuksiasi, kuten teeman ja kielen, lähes vuoden ilman käyntiä. Ne poistetaan pian, ellet säilytä niitä. Tilillesi tallennettuihin asetuksiin tämä ei vaikuta.",
-    "keep": "Säilytä asetukseni"
+    "text": "Et ole käyttänyt Glazecalcia tässä selaimessa lähes vuoteen. Asetuksesi täällä, kuten teema ja kieli, säilytetään niin kauan kuin käytät sitä. Voit halutessasi tyhjentää ne nyt. Tilillesi tallennettuihin asetuksiin tämä ei vaikuta.",
+    "clear": "Tyhjennä asetukseni"
   },
   "unity": {
     "fluxes": "Sulattajat – R₂O ja RO",

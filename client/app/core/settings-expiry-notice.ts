@@ -3,8 +3,8 @@ import { TranslocoDirective } from '@jsverse/transloco';
 import { PreferencesService } from './preferences.service';
 
 /**
- * Shown once, on the first page load at which the settings kept in this browser are within 30 days of a
- * year unused (core/settings-expiry.ts). Left alone, they are removed at the first load after the year.
+ * Shown on a return to this browser after nearly a year away (core/settings-expiry.ts): using Glazecalc keeps
+ * the settings kept here, and "Clear my settings" removes them. Nothing is removed unless asked.
  */
 @Component({
   selector: 'gc-settings-expiry-notice',
@@ -14,8 +14,21 @@ import { PreferencesService } from './preferences.service';
       <aside class="settings-expiry-notice" role="status">
         <p>
           {{ t('settingsExpiry.text') }}
-          <button type="button" class="btn btn-link link-inline" (click)="preferences.keepSettings()">
-            {{ t('settingsExpiry.keep') }}
+          <button
+            id="settings-clear"
+            type="button"
+            class="btn btn-link link-inline"
+            (click)="preferences.clearSettings()"
+          >
+            {{ t('settingsExpiry.clear') }}
+          </button>
+          <button
+            id="settings-notice-close"
+            type="button"
+            class="btn btn-link link-inline"
+            (click)="preferences.closeSettingsNotice()"
+          >
+            {{ t('notice.close') }}
           </button>
         </p>
       </aside>

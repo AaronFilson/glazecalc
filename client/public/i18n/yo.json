@@ -344,8 +344,8 @@
     "close": "Pa á dé"
   },
   "settingsExpiry": {
-    "text": "Aṣàwákiri yìí ti pa ètò Glazecalc yín mọ́, bí àwọ̀ ojú-ìwé àti èdè, fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan láìsí pé ẹ wá. A ó yọ wọ́n kúrò láìpẹ́ àyàfi tí ẹ bá pa wọ́n mọ́. Ètò tí ẹ fi pamọ́ sínú àkáǹtì yín kò ní yí padà.",
-    "keep": "Pa ètò mi mọ́"
+    "text": "Ẹ kò tíì lo Glazecalc lórí aṣàwákiri yìí fún ohun tí ó fẹ́rẹ̀ẹ́ tó ọdún kan. Àwọn ètò yín níbí, bí àwọ̀ ojú-ìwé àti èdè, ni a ń pa mọ́ níwọ̀n ìgbà tí ẹ bá ń lò ó. Ẹ lè pa wọ́n rẹ́ nísinsìnyí bí ẹ bá fẹ́. Ètò tí ẹ fi pamọ́ sínú àkáǹtì yín kò ní yí padà.",
+    "clear": "Pa ètò mi rẹ́"
   },
   "unity": {
     "fluxes": "Flux - R₂O àti RO",

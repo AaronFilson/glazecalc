@@ -171,19 +171,32 @@
         "lasts": "Dok probno korištenje ne završi ili dok ga ne zadržite ili odbacite."
       },
       "settings": {
-        "purpose": "Postavka koju ste promijenili u ovom pregledniku, kako bi je sljedeća stranica odmah prikazala, prije nego što poslužitelj odgovori. <code>theme</code> i <code>palette</code> boje stranicu prije nego što se pojavi, a <code>language</code> otvara stranice na vašem jeziku."
+        "purpose": "Postavka koju ste promijenili u ovom pregledniku, kako bi je sljedeća stranica odmah prikazala, prije nego što poslužitelj odgovori. <code>theme</code> i <code>palette</code> boje stranicu prije nego što se pojavi, a <code>language</code> otvara stranice na vašem jeziku.",
+        "lasts": "Dok je ne promijenite. Ništa se ne uklanja samo od sebe: ako se vratite nakon gotovo godinu dana odsutnosti, obavijest nudi gumb za brisanje vaših postavki. Odjavom se vraća ono što ste odabrali dok ste bili odjavljeni, ako ste išta odabrali, a ostalo se uklanja."
       },
       "visitor": {
-        "purpose": "Jezik koji ste odabrali ili to da ste zatvorili obavijest o prijevodu dok ste bili odjavljeni, kako bi se to vratilo kad se odjavite."
+        "purpose": "Jezik koji ste odabrali ili to da ste zatvorili obavijest o prijevodu dok ste bili odjavljeni, kako bi se to vratilo kad se odjavite.",
+        "lasts": "Dok ne izbrišete pohranu preglednika ili ne izbrišete račun u ovom pregledniku. Ništa se ne uklanja samo od sebe: ako se vratite nakon gotovo godinu dana odsutnosti, obavijest nudi gumb za brisanje vaših postavki."
       },
       "region": {
-        "purpose": "Filtar regije na popisu u biblioteci."
+        "purpose": "Filtar regije na popisu u biblioteci.",
+        "lasts": "Dok filtar ne vratite na sve regije. Ništa se ne uklanja samo od sebe: ako se vratite nakon gotovo godinu dana odsutnosti, obavijest nudi gumb za brisanje vaših postavki."
       },
       "includeAdditives": {
-        "purpose": "Uračunavaju li novi recepti svoje dodatke u Segerovu formulu, kako ste posljednji put odabrali."
+        "purpose": "Uračunavaju li novi recepti svoje dodatke u Segerovu formulu, kako ste posljednji put odabrali.",
+        "lasts": "Dok ne izbrišete pohranu preglednika. Ništa se ne uklanja samo od sebe: ako se vratite nakon gotovo godinu dana odsutnosti, obavijest nudi gumb za brisanje vaših postavki."
       },
       "print": {
-        "purpose": "Vaši zadnji odabiri za ispis recepta: cijeli recept, smjesa ili radni list, i veličina smjese."
+        "purpose": "Vaši zadnji odabiri za ispis recepta: cijeli recept, smjesa ili radni list, i veličina smjese.",
+        "lasts": "Dok ne izbrišete pohranu preglednika. Ništa se ne uklanja samo od sebe: ako se vratite nakon gotovo godinu dana odsutnosti, obavijest nudi gumb za brisanje vaših postavki."
+      },
+      "recipeLayout": {
+        "purpose": "Raspored koji ste zadnji put odabrali za obrazac recepta: standardni, radni stol ili korak po korak.",
+        "lasts": "Dok ne izbrišete pohranu preglednika. Ništa se ne uklanja samo od sebe: ako se vratite nakon gotovo godinu dana odsutnosti, obavijest nudi gumb za brisanje vaših postavki."
+      },
+      "settingsDates": {
+        "purpose": "Kada je ovaj preglednik zadnji put otvorio Glazecalc s gore navedenim postavkama, kako bi se po povratku nakon gotovo godinu dana odsutnosti mogla prikazati obavijest koja nudi njihovo brisanje, i koju ste verziju obavijesti o prijevodu zatvorili. Nema osobnih podataka.",
+        "lasts": "Dok se ovdje čuva bilo koja od tih postavki."
       },
       "token": {
         "purpose": "Token za prijavu iz stare verzije aplikacije Glazecalc. Više se nikad ne zapisuje.",

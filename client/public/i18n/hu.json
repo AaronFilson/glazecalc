@@ -344,8 +344,8 @@
     "close": "Bezárás"
   },
   "settingsExpiry": {
-    "text": "Ez a böngésző majdnem egy éve látogatás nélkül őrzi a Glazecalc-beállításait, például a témát és a nyelvet. Hamarosan törlődnek, hacsak meg nem tartja őket. A fiókjába mentett beállításokat ez nem érinti.",
-    "keep": "Beállításaim megtartása"
+    "text": "Majdnem egy éve nem használta a Glazecalcot ebben a böngészőben. Az itteni beállításait, például a témát és a nyelvet, megőrizzük, amíg használja. Ha szeretné, most törölheti őket. A fiókjába mentett beállításokat ez nem érinti.",
+    "clear": "Beállításaim törlése"
   },
   "unity": {
     "fluxes": "Olvasztóanyagok – R₂O és RO",

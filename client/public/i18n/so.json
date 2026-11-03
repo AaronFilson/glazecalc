@@ -344,8 +344,8 @@
     "close": "Xir"
   },
   "settingsExpiry": {
-    "text": "Browser-kani wuxuu hayay dejintaada Glazecalc, sida muuqaalka iyo luqadda, ku dhowaad sannad iyada oo aan booqasho jirin. Dhawaan waa la saari doonaa haddii aadan hayn. Dejinta lagu kaydiyay akoonkaaga wax saameyn ah kuma yeelanayso.",
-    "keep": "Hay dejintayda"
+    "text": "Kuma aadan isticmaalin Glazecalc browser-kan ku dhowaad sannad. Dejimahaaga halkan, sida muuqaalka iyo luqadda, waa la hayaa inta aad isticmaalayso. Hadda waad tirtiri kartaa haddii aad rabto. Dejinta lagu kaydiyay akoonkaaga wax saameyn ah kuma yeelanayso.",
+    "clear": "Tirtir dejimahayga"
   },
   "unity": {
     "fluxes": "Flux-yada - R₂O iyo RO",

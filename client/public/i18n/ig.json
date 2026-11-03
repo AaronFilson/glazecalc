@@ -344,8 +344,8 @@
     "close": "Mechie"
   },
   "settingsExpiry": {
-    "text": "Ihe nchọgharị a edebela ntọala Glazecalc gị, dịka isiokwu ọdịdị na asụsụ, ihe fọrọ obere ka ọ bụrụ otu afọ na-enweghị nleta. A ga-ewepụ ha n'oge na-adịghị anya ma ọ bụrụ na i debeghị ha. Ntọala echekwara n'akaụntụ gị anaghị emetụta.",
-    "keep": "Debe ntọala m"
+    "text": "Ị jibeghị Glazecalc na brawza a ihe fọrọ obere ka ọ bụrụ otu afọ. A na-edebe ntọala gị ebe a, dịka isiokwu ọdịdị na asụsụ, mgbe ị na-eji ya. Ị nwere ike ihichapụ ha ugbu a ma ọ bụrụ na ị chọrọ. Nke a anaghị emetụta ntọala echekwara n'akaụntụ gị.",
+    "clear": "Hichapụ ntọala m"
   },
   "unity": {
     "fluxes": "Flux - R₂O na RO",

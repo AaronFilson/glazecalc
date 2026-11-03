@@ -1104,5 +1104,21 @@
     "add": "Ongeza matokeo kwa",
     "addButton": "Ongeza",
     "saveFailed": "Mahali kumbukumbu ya kuchoma ilipochomwa hapakuweza kuhifadhiwa."
+  },
+  "layout": {
+    "label": "Mpangilio wa fomu",
+    "standard": "Kawaida",
+    "workbench": "Meza ya kazi",
+    "guided": "Hatua za kuongozwa",
+    "side": "Fomula na vikomo",
+    "fixFold": "Rekebisha na badilisha ({count})",
+    "detailsFold": "Maelezo zaidi: tarehe, maelezo, uchomaji, gharama, hatari",
+    "steps": "Hatua",
+    "stepRecipe": "Kichocheo",
+    "stepAmounts": "Viasi",
+    "stepCheck": "Kagua",
+    "amountsHint": "Andika kila kiasi. Enter inakwenda kwenye kiasi kinachofuata.",
+    "back": "Rudi",
+    "next": "Endelea"
   }
 }

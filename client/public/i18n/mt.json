@@ -344,8 +344,8 @@
     "close": "Agħlaq"
   },
   "settingsExpiry": {
-    "text": "Dan il-browser ilu jżomm is-settings tiegħek ta’ Glazecalc, bħat-tema u l-lingwa, għal kważi sena mingħajr żjara. Dalwaqt jitneħħew sakemm ma żżommhomx. Is-settings issejvjati fil-kont tiegħek mhumiex affettwati.",
-    "keep": "Żomm is-settings tiegħi"
+    "text": "Ilek ma tuża Glazecalc f’dan il-brawżer għal kważi sena. Is-settings tiegħek hawn, bħat-tema u l-lingwa, jinżammu sakemm tużah. Tista’ tħassarhom issa jekk trid. Is-settings issejvjati fil-kont tiegħek mhumiex affettwati.",
+    "clear": "Ħassar is-settings tiegħi"
   },
   "unity": {
     "fluxes": "Flussi – R₂O u RO",

@@ -344,8 +344,8 @@
     "close": "Funga"
   },
   "settingsExpiry": {
-    "text": "Kivinjari hiki kimehifadhi mipangilio yako ya Glazecalc, kama mandhari na lugha, kwa karibu mwaka mmoja bila wewe kutembelea. Itaondolewa hivi karibuni usipoibakiza. Mipangilio iliyohifadhiwa kwenye akaunti yako haiathiriwi.",
-    "keep": "Bakiza mipangilio yangu"
+    "text": "Hujatumia Glazecalc kwenye kivinjari hiki kwa karibu mwaka. Mipangilio yako hapa, kama mandhari na lugha, inahifadhiwa unapoendelea kukitumia. Unaweza kuifuta sasa ukipenda. Mipangilio iliyohifadhiwa kwenye akaunti yako haiathiriwi.",
+    "clear": "Futa mipangilio yangu"
   },
   "unity": {
     "fluxes": "Flux - R₂O na RO",

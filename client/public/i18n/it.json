@@ -344,8 +344,8 @@
     "close": "Chiudi"
   },
   "settingsExpiry": {
-    "text": "Questo browser conserva le Sue impostazioni di Glazecalc, come tema e lingua, da quasi un anno senza una visita. Saranno presto rimosse, a meno che non le conservi. Le impostazioni salvate nel Suo account non sono interessate.",
-    "keep": "Conserva le mie impostazioni"
+    "text": "Non usa Glazecalc in questo browser da quasi un anno. Le Sue impostazioni qui, come tema e lingua, vengono conservate finché lo usa. Se vuole, può cancellarle ora. Le impostazioni salvate nel Suo account non sono interessate.",
+    "clear": "Cancella le mie impostazioni"
   },
   "unity": {
     "fluxes": "Fondenti - R₂O e RO",

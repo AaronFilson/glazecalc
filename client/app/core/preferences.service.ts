@@ -8,7 +8,7 @@ import type { Palette, ThemeMode } from './theme';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
 import { FIRST_RENDER } from './first-render';
-import { DATES_KEY, checkSettingsExpiry, keepSettings } from './settings-expiry';
+import { DATES_KEY, checkSettingsExpiry, clearSettings } from './settings-expiry';
 
 export interface Preferences {
   weightUnit: WeightUnit;
@@ -138,11 +138,11 @@ export class PreferencesService {
   private readonly auth = inject(AuthService);
   private readonly firstRender = inject(FIRST_RENDER);
   /**
-   * Settings kept here a year unused are removed after a notice (core/settings-expiry.ts). Checked first,
-   * before the copies below are read; true while the notice should show.
+   * Each visit counts as use of the settings kept here (core/settings-expiry.ts). Checked first, before the
+   * copies below are read; true while the notice for a return after nearly a year away should show.
    */
   private readonly expiring = signal(checkSettingsExpiry() === 'warn');
-  /** Whether to show the notice that the settings kept here will soon be removed. */
+  /** Whether to show the return notice: using Glazecalc keeps the settings here, or they can be cleared. */
   readonly settingsExpiring = computed(() => !this.firstRender() && this.expiring());
   /** The sign-in the choices were fetched for, and the request. */
   private fetched: { session: number; request: Promise<void> } | null = null;
@@ -313,10 +313,20 @@ export class PreferencesService {
     writeRaw(visitorKey(name), value);
   }
 
-  /** "Keep my settings": the settings kept here count their year from now. */
-  keepSettings(): void {
-    keepSettings();
+  /** Closes the return notice; the settings stay (this visit already counted as use). */
+  closeSettingsNotice(): void {
     this.expiring.set(false);
+  }
+
+  /** "Clear my settings": removes the settings kept here, and reloads so the defaults apply. */
+  clearSettings(): void {
+    clearSettings();
+    this.expiring.set(false);
+    try {
+      globalThis.location.reload();
+    } catch {
+      // Not in a browser: nothing to reload.
+    }
   }
 
   /**

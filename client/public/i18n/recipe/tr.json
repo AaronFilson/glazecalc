@@ -1104,5 +1104,21 @@
     "add": "Şunun için sonuç ekle:",
     "addButton": "Ekle",
     "saveFailed": "Pişirim kaydının nerede pişirildiği kaydedilemedi."
+  },
+  "layout": {
+    "label": "Form düzeni",
+    "standard": "Standart",
+    "workbench": "Çalışma tezgâhı",
+    "guided": "Adım adım",
+    "side": "Formül ve sınırlar",
+    "fixFold": "Düzelt ve değiştir ({count})",
+    "detailsFold": "Ayrıntılar: tarih, notlar, pişirim, maliyet, tehlikeler",
+    "steps": "Adımlar",
+    "stepRecipe": "Reçete",
+    "stepAmounts": "Miktarlar",
+    "stepCheck": "Kontrol",
+    "amountsHint": "Her miktarı yazın. Enter bir sonraki miktara geçer.",
+    "back": "Geri",
+    "next": "İleri"
   }
 }

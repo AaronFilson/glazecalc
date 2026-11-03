@@ -1104,5 +1104,21 @@
     "add": "Adăugați un rezultat pentru",
     "addButton": "Adăugați",
     "saveFailed": "Nu s-a putut salva locul în care s-a făcut arderea din jurnal."
+  },
+  "layout": {
+    "label": "Aspectul formularului",
+    "standard": "Standard",
+    "workbench": "Masă de lucru",
+    "guided": "Pași ghidați",
+    "side": "Formula și limitele",
+    "fixFold": "Corectare și înlocuire ({count})",
+    "detailsFold": "Detalii: dată, note, ardere, cost, pericole",
+    "steps": "Pași",
+    "stepRecipe": "Rețeta",
+    "stepAmounts": "Cantități",
+    "stepCheck": "Verificare",
+    "amountsHint": "Introduceți fiecare cantitate. Enter trece la cantitatea următoare.",
+    "back": "Înapoi",
+    "next": "Înainte"
   }
 }

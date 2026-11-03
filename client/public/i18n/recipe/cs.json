@@ -1104,5 +1104,21 @@
     "add": "Přidat výsledek pro",
     "addButton": "Přidat",
     "saveFailed": "Kde se záznam výpalu vypaloval, se nepodařilo uložit."
+  },
+  "layout": {
+    "label": "Rozvržení formuláře",
+    "standard": "Standardní",
+    "workbench": "Pracovní stůl",
+    "guided": "Krok za krokem",
+    "side": "Vzorec a limity",
+    "fixFold": "Opravit a nahradit ({count})",
+    "detailsFold": "Podrobnosti: datum, poznámky, výpal, cena, rizika",
+    "steps": "Kroky",
+    "stepRecipe": "Recept",
+    "stepAmounts": "Množství",
+    "stepCheck": "Kontrola",
+    "amountsHint": "Zadejte každé množství. Enter přejde na další množství.",
+    "back": "Zpět",
+    "next": "Další"
   }
 }

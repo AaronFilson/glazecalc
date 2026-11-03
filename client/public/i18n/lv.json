@@ -344,8 +344,8 @@
     "close": "Aizvērt"
   },
   "settingsExpiry": {
-    "text": "Šī pārlūkprogramma jau gandrīz gadu bez apmeklējuma glabā jūsu Glazecalc iestatījumus, piemēram, motīvu un valodu. Drīz tie tiks noņemti, ja vien jūs tos nepaturēsiet. Kontā saglabātos iestatījumus tas neietekmē.",
-    "keep": "Paturēt manus iestatījumus"
+    "text": "Glazecalc šajā pārlūkprogrammā nav izmantots gandrīz gadu. Jūsu iestatījumi šeit, piemēram, motīvs un valoda, tiek glabāti, kamēr to izmantojat. Ja vēlaties, varat tos notīrīt tagad. Kontā saglabātos iestatījumus tas neietekmē.",
+    "clear": "Notīrīt manus iestatījumus"
   },
   "unity": {
     "fluxes": "Kušņi – R₂O un RO",

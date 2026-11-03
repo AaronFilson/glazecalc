@@ -1104,5 +1104,21 @@
     "add": "Tambah hasil untuk",
     "addButton": "Tambah",
     "saveFailed": "Tempat catatan pembakaran ini dibakar tidak dapat disimpan."
+  },
+  "layout": {
+    "label": "Tata letak formulir",
+    "standard": "Standar",
+    "workbench": "Meja kerja",
+    "guided": "Langkah terpandu",
+    "side": "Formula dan batas",
+    "fixFold": "Perbaiki dan tukar ({count})",
+    "detailsFold": "Detail: tanggal, catatan, pembakaran, biaya, bahaya",
+    "steps": "Langkah",
+    "stepRecipe": "Resep",
+    "stepAmounts": "Jumlah",
+    "stepCheck": "Periksa",
+    "amountsHint": "Ketik setiap jumlah. Enter pindah ke jumlah berikutnya.",
+    "back": "Kembali",
+    "next": "Berikutnya"
   }
 }

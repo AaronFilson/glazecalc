@@ -171,19 +171,32 @@
         "lasts": "Até o teste terminar, ou ser mantido ou descartado."
       },
       "settings": {
-        "purpose": "Uma configuração que você mudou neste navegador, para que a próxima página já a mostre, antes de o servidor responder. <code>theme</code> e <code>palette</code> dão cor à página antes de ela aparecer, e <code>language</code> abre as páginas no seu idioma."
+        "purpose": "Uma configuração que você mudou neste navegador, para que a próxima página já a mostre, antes de o servidor responder. <code>theme</code> e <code>palette</code> dão cor à página antes de ela aparecer, e <code>language</code> abre as páginas no seu idioma.",
+        "lasts": "Até você mudá-la. Nada é removido sozinho: se você voltar depois de quase um ano longe, um aviso oferece um botão para limpar suas configurações. Sair restaura o que você escolheu enquanto estava desconectado, se houver, e remove o resto."
       },
       "visitor": {
-        "purpose": "O idioma que você escolheu, ou que você fechou o aviso de tradução, enquanto desconectado, para que isso volte quando você sair."
+        "purpose": "O idioma que você escolheu, ou que você fechou o aviso de tradução, enquanto desconectado, para que isso volte quando você sair.",
+        "lasts": "Até você limpar o armazenamento do navegador ou excluir uma conta neste navegador. Nada é removido sozinho: se você voltar depois de quase um ano longe, um aviso oferece um botão para limpar suas configurações."
       },
       "region": {
-        "purpose": "O filtro de região em uma lista da biblioteca."
+        "purpose": "O filtro de região em uma lista da biblioteca.",
+        "lasts": "Até você voltar o filtro para todas as regiões. Nada é removido sozinho: se você voltar depois de quase um ano longe, um aviso oferece um botão para limpar suas configurações."
       },
       "includeAdditives": {
-        "purpose": "Se as receitas novas contam seus aditivos na fórmula de Seger, como você escolheu da última vez."
+        "purpose": "Se as receitas novas contam seus aditivos na fórmula de Seger, como você escolheu da última vez.",
+        "lasts": "Até você limpar o armazenamento do navegador. Nada é removido sozinho: se você voltar depois de quase um ano longe, um aviso oferece um botão para limpar suas configurações."
       },
       "print": {
-        "purpose": "Suas últimas escolhas para imprimir uma receita: a receita inteira, um lote ou a folha de trabalho, e o tamanho do lote."
+        "purpose": "Suas últimas escolhas para imprimir uma receita: a receita inteira, um lote ou a folha de trabalho, e o tamanho do lote.",
+        "lasts": "Até você limpar o armazenamento do navegador. Nada é removido sozinho: se você voltar depois de quase um ano longe, um aviso oferece um botão para limpar suas configurações."
+      },
+      "recipeLayout": {
+        "purpose": "O layout que você escolheu por último para o formulário de receita: padrão, bancada ou passo a passo.",
+        "lasts": "Até você limpar o armazenamento do navegador. Nada é removido sozinho: se você voltar depois de quase um ano longe, um aviso oferece um botão para limpar suas configurações."
+      },
+      "settingsDates": {
+        "purpose": "Quando este navegador abriu o Glazecalc pela última vez com as configurações acima, para que uma volta depois de quase um ano longe possa mostrar o aviso que oferece limpá-las, e qual versão do aviso de tradução você fechou. Nenhum dado pessoal.",
+        "lasts": "Enquanto qualquer uma dessas configurações for mantida aqui."
       },
       "token": {
         "purpose": "Um token de login de uma versão antiga do Glazecalc. Hoje ele nunca é gravado.",

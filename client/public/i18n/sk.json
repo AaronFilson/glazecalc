@@ -344,8 +344,8 @@
     "close": "Zavrieť"
   },
   "settingsExpiry": {
-    "text": "Tento prehliadač uchováva vaše nastavenia Glazecalc, napríklad motív a jazyk, už takmer rok bez návštevy. Čoskoro sa odstránia, ak si ich neponecháte. Nastavenia uložené vo vašom účte to neovplyvní.",
-    "keep": "Ponechať moje nastavenia"
+    "text": "Glazecalc ste v tomto prehliadači nepoužili takmer rok. Vaše nastavenia tu, napríklad motív a jazyk, sa uchovávajú, kým ho používate. Ak chcete, môžete ich teraz vymazať. Nastavenia uložené vo vašom účte to neovplyvní.",
+    "clear": "Vymazať moje nastavenia"
   },
   "unity": {
     "fluxes": "Tavivá – R₂O a RO",

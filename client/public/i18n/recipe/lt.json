@@ -1104,5 +1104,21 @@
     "add": "Pridėti rezultatą:",
     "addButton": "Pridėti",
     "saveFailed": "Nepavyko įrašyti, kur degtas degimo žurnalas."
+  },
+  "layout": {
+    "label": "Formos išdėstymas",
+    "standard": "Standartinis",
+    "workbench": "Darbastalis",
+    "guided": "Žingsnis po žingsnio",
+    "side": "Formulė ir ribos",
+    "fixFold": "Taisyti ir keisti ({count})",
+    "detailsFold": "Išsamiau: data, pastabos, degimas, kaina, pavojai",
+    "steps": "Žingsniai",
+    "stepRecipe": "Receptas",
+    "stepAmounts": "Kiekiai",
+    "stepCheck": "Patikra",
+    "amountsHint": "Įveskite kiekvieną kiekį. Enter pereina prie kito kiekio.",
+    "back": "Atgal",
+    "next": "Toliau"
   }
 }

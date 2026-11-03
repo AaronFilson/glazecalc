@@ -344,8 +344,8 @@
     "close": "Dún"
   },
   "settingsExpiry": {
-    "text": "Tá do shocruithe Glazecalc, mar an téama agus an teanga, coinnithe ag an mbrabhsálaí seo le beagnach bliain gan cuairt. Bainfear iad go luath mura gcoinníonn tú iad. Ní bhaineann sé seo le socruithe atá sábháilte i do chuntas.",
-    "keep": "Coinnigh mo shocruithe"
+    "text": "Níor úsáid tú Glazecalc sa bhrabhsálaí seo le beagnach bliain. Coinnítear do shocruithe anseo, mar an téama agus an teanga, fad is a úsáideann tú é. Is féidir leat iad a ghlanadh anois más maith leat. Ní bhaineann sé seo le socruithe atá sábháilte i do chuntas.",
+    "clear": "Glan mo shocruithe"
   },
   "unity": {
     "fluxes": "Floscanna – R₂O agus RO",

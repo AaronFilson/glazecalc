@@ -5,7 +5,7 @@ import {
   NOTICE_VERSION,
   WARN_BEFORE_MS,
   checkSettingsExpiry,
-  keepSettings,
+  clearSettings,
   noteNoticeClosed
 } from './settings-expiry';
 
@@ -52,44 +52,45 @@ describe('settings expiry', () => {
     expect(storage.getItem('theme')).toBe('dark');
   });
 
-  it('warns once within 30 days of a year, then removes at the first load after the year', () => {
+  it('shows the notice once for a return after nearly a year away; the visit itself keeps the settings', () => {
+    const storage = memory({ theme: 'dark', [DATES_KEY]: JSON.stringify({ used: START, notice: 1, warned: START }) });
+    const back = START + EXPIRE_AFTER_MS - WARN_BEFORE_MS;
+    expect(checkSettingsExpiry(storage, back)).toBe('warn');
+    // The return counted as use: the next load is a short gap, with no notice, and the old "warned" is gone.
+    expect(dates(storage)).toEqual({ used: back, notice: 1 });
+    expect(checkSettingsExpiry(storage, back + DAY)).toBe('none');
+    expect(storage.getItem('theme')).toBe('dark');
+  });
+
+  it('never removes settings on its own, however long the browser was away', () => {
+    const storage = memory({
+      language: 'fr',
+      printMode: 'batch',
+      [DATES_KEY]: JSON.stringify({ used: START, notice: 1 })
+    });
+    const late = START + 5 * EXPIRE_AFTER_MS;
+    expect(checkSettingsExpiry(storage, late)).toBe('warn');
+    expect(checkSettingsExpiry(storage, late + 2 * EXPIRE_AFTER_MS)).toBe('warn');
+    expect(storage.getItem('language')).toBe('fr');
+    expect(storage.getItem('printMode')).toBe('batch');
+  });
+
+  it('"Clear my settings" removes every expiring setting and the dates, and nothing else', () => {
     const storage = memory({
       theme: 'dark',
       'visitor.language': 'de',
-      printMode: 'batch',
+      recipeLayout: 'guided',
       session: 'account',
       offlineRecords: '1',
       [DATES_KEY]: JSON.stringify({ used: START, notice: 1 })
     });
-    const warnAt = START + EXPIRE_AFTER_MS - WARN_BEFORE_MS + DAY;
-    expect(checkSettingsExpiry(storage, warnAt)).toBe('warn');
-    expect(checkSettingsExpiry(storage, warnAt + DAY)).toBe('none');
-    expect(storage.getItem('theme')).toBe('dark');
-    expect(checkSettingsExpiry(storage, START + EXPIRE_AFTER_MS)).toBe('none');
+    clearSettings(storage);
     for (const key of EXPIRING_KEYS) expect(storage.getItem(key)).toBeNull();
     expect(storage.getItem(DATES_KEY)).toBeNull();
-    // The session note and the offline-records switch are never expired.
+    // The session note and the offline-records switch are not settings to clear.
     expect(storage.getItem('session')).toBe('account');
     expect(storage.getItem('offlineRecords')).toBe('1');
-  });
-
-  it('warns first, never removes, on a first visit already past the year', () => {
-    const storage = memory({ language: 'fr', [DATES_KEY]: JSON.stringify({ used: START, notice: 1 }) });
-    const late = START + 2 * EXPIRE_AFTER_MS;
-    expect(checkSettingsExpiry(storage, late)).toBe('warn');
-    expect(storage.getItem('language')).toBe('fr');
-    expect(checkSettingsExpiry(storage, late + 1000)).toBe('none');
-    expect(storage.getItem('language')).toBeNull();
-  });
-
-  it('"Keep my settings" starts the year again', () => {
-    const storage = memory({ region: 'EU', [DATES_KEY]: JSON.stringify({ used: START, notice: 1 }) });
-    const warnAt = START + EXPIRE_AFTER_MS - DAY;
-    expect(checkSettingsExpiry(storage, warnAt)).toBe('warn');
-    keepSettings(storage, warnAt);
-    expect(dates(storage)).toEqual({ used: warnAt, notice: 1 });
-    expect(checkSettingsExpiry(storage, START + EXPIRE_AFTER_MS + DAY)).toBe('none');
-    expect(storage.getItem('region')).toBe('EU');
+    expect(() => clearSettings(undefined)).not.toThrow();
   });
 
   it('notes the translation notice version when it is closed', () => {

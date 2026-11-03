@@ -1104,5 +1104,21 @@
     "add": "Engeza umphumela",
     "addButton": "Engeza",
     "saveFailed": "Lapho irekhodi lokushisa lashiswa khona akukwazanga ukulondolozwa."
+  },
+  "layout": {
+    "label": "Isakhiwo sefomu",
+    "standard": "Okujwayelekile",
+    "workbench": "Ibhentshi lokusebenza",
+    "guided": "Izinyathelo eziqondisiwe",
+    "side": "Ifomula nemikhawulo",
+    "fixFold": "Lungisa ushintshe ({count})",
+    "detailsFold": "Imininingwane: usuku, amanothi, ukushisa, izindleko, izingozi",
+    "steps": "Izinyathelo",
+    "stepRecipe": "Iresiphi",
+    "stepAmounts": "Amanani",
+    "stepCheck": "Hlola",
+    "amountsHint": "Thayipha inani ngalinye. U-Enter uya enanini elilandelayo.",
+    "back": "Emuva",
+    "next": "Okulandelayo"
   }
 }

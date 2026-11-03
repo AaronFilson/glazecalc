@@ -171,19 +171,32 @@
         "lasts": "Ruo mgbe nnwale ahụ gwụrụ, ma ọ bụ e debere ya ma ọ bụ tufuo ya."
       },
       "settings": {
-        "purpose": "Ntọala i gbanwere na brawza a, ka ibe na-esote gosi ya ozugbo, tupu sava aza. <code>theme</code> na <code>palette</code> na-ete ibe ahụ agba tupu ọ pụta, <code>language</code> na-emepekwa ibe n'asụsụ gị."
+        "purpose": "Ntọala i gbanwere na brawza a, ka ibe na-esote gosi ya ozugbo, tupu sava aza. <code>theme</code> na <code>palette</code> na-ete ibe ahụ agba tupu ọ pụta, <code>language</code> na-emepekwa ibe n'asụsụ gị.",
+        "lasts": "Ruo mgbe ị gbanwere ya. Ọ dịghị ihe a na-ewepụ n'onwe ya: ọ bụrụ na ị lọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị, ọkwa na-enye bọtịnụ iji hichapụ ntọala gị. Ịpụ na-eweghachi ihe ị họọrọ mgbe ị nọ n'èzí, ma ọ bụrụ na e nwere, ma na-ewepụ ndị fọdụrụ."
       },
       "visitor": {
-        "purpose": "Asụsụ ị họọrọ, ma ọ bụ na i mechiri ọkwa ntụgharị, mgbe ị nọ n'èzí, ka ọ lọghachi mgbe ị pụrụ."
+        "purpose": "Asụsụ ị họọrọ, ma ọ bụ na i mechiri ọkwa ntụgharị, mgbe ị nọ n'èzí, ka ọ lọghachi mgbe ị pụrụ.",
+        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị ma ọ bụ hichapụ akaụntụ na brawza a. Ọ dịghị ihe a na-ewepụ n'onwe ya: ọ bụrụ na ị lọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị, ọkwa na-enye bọtịnụ iji hichapụ ntọala gị."
       },
       "region": {
-        "purpose": "Nzacha mpaghara na ndepụta ọbá akwụkwọ."
+        "purpose": "Nzacha mpaghara na ndepụta ọbá akwụkwọ.",
+        "lasts": "Ruo mgbe ị tọgharịrị nzacha ahụ ka ọ bụrụ mpaghara niile. Ọ dịghị ihe a na-ewepụ n'onwe ya: ọ bụrụ na ị lọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị, ọkwa na-enye bọtịnụ iji hichapụ ntọala gị."
       },
       "includeAdditives": {
-        "purpose": "Ma usoro glaze ọhụrụ na-agụ ihe mgbakwunye ha n'usoro unity, dịka ị họọrọ ikpeazụ."
+        "purpose": "Ma usoro glaze ọhụrụ na-agụ ihe mgbakwunye ha n'usoro unity, dịka ị họọrọ ikpeazụ.",
+        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị. Ọ dịghị ihe a na-ewepụ n'onwe ya: ọ bụrụ na ị lọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị, ọkwa na-enye bọtịnụ iji hichapụ ntọala gị."
       },
       "print": {
-        "purpose": "Nhọrọ ikpeazụ gị maka ibipụta usoro glaze: usoro glaze niile, batch ma ọ bụ mpempe akwụkwọ ọrụ, na ịdị ukwuu batch."
+        "purpose": "Nhọrọ ikpeazụ gị maka ibipụta usoro glaze: usoro glaze niile, batch ma ọ bụ mpempe akwụkwọ ọrụ, na ịdị ukwuu batch.",
+        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị. Ọ dịghị ihe a na-ewepụ n'onwe ya: ọ bụrụ na ị lọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị, ọkwa na-enye bọtịnụ iji hichapụ ntọala gị."
+      },
+      "recipeLayout": {
+        "purpose": "Nhazi ị họọrọ ikpeazụ maka fọm usoro glaze: nke a na-ejikarị, ebe ọrụ ma ọ bụ nzọụkwụ e duziri.",
+        "lasts": "Ruo mgbe ị hichara nchekwa brawza gị. Ọ dịghị ihe a na-ewepụ n'onwe ya: ọ bụrụ na ị lọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị, ọkwa na-enye bọtịnụ iji hichapụ ntọala gị."
+      },
+      "settingsDates": {
+        "purpose": "Mgbe brawza a meghere Glazecalc ikpeazụ na ntọala ndị dị n'elu, ka nlọghachi mgbe ihe fọrọ obere ka ọ bụrụ otu afọ ị nọghị nwee ike igosi ọkwa na-enye ka e hichapụ ha, na ụdị ọkwa ntụgharị nke i mechiri. Enweghị data nkeonwe.",
+        "lasts": "Ọ bụrụhaala na e debere ntọala ọ bụla n'ime ndị ahụ ebe a."
       },
       "token": {
         "purpose": "Token mbanye site n'ụdị Glazecalc ochie. A naghịzi ede ya ugbu a.",

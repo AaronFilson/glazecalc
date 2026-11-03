@@ -344,8 +344,8 @@
     "close": "Tutup"
   },
   "settingsExpiry": {
-    "text": "Peramban ini telah menyimpan pengaturan Glazecalc Anda, seperti tema dan bahasa, selama hampir setahun tanpa kunjungan. Pengaturan itu akan segera dihapus kecuali Anda menyimpannya. Pengaturan yang tersimpan di akun Anda tidak terpengaruh.",
-    "keep": "Simpan pengaturan saya"
+    "text": "Anda belum menggunakan Glazecalc di peramban ini selama hampir setahun. Pengaturan Anda di sini, seperti tema dan bahasa, tetap disimpan selama Anda menggunakannya. Anda dapat menghapusnya sekarang jika mau. Pengaturan yang tersimpan di akun Anda tidak terpengaruh.",
+    "clear": "Hapus pengaturan saya"
   },
   "unity": {
     "fluxes": "Pelebur - R₂O dan RO",

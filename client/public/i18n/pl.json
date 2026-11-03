@@ -344,8 +344,8 @@
     "close": "Zamknij"
   },
   "settingsExpiry": {
-    "text": "Ta przeglądarka przechowuje ustawienia Glazecalc, takie jak motyw i język, od prawie roku bez żadnej wizyty. Wkrótce zostaną usunięte, chyba że zostaną zachowane. Nie dotyczy to ustawień zapisanych na koncie.",
-    "keep": "Zachowaj moje ustawienia"
+    "text": "Glazecalc nie był używany w tej przeglądarce od prawie roku. Ustawienia tutaj, takie jak motyw i język, są przechowywane, dopóki Glazecalc jest używany. W razie potrzeby można je teraz wyczyścić. Nie dotyczy to ustawień zapisanych na koncie.",
+    "clear": "Wyczyść moje ustawienia"
   },
   "unity": {
     "fluxes": "Topniki – R₂O i RO",

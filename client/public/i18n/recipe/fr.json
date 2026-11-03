@@ -1104,5 +1104,21 @@
     "add": "Ajouter un résultat pour",
     "addButton": "Ajouter",
     "saveFailed": "L’endroit où le relevé de cuisson a été cuit n’a pas pu être enregistré."
+  },
+  "layout": {
+    "label": "Disposition du formulaire",
+    "standard": "Standard",
+    "workbench": "Établi",
+    "guided": "Pas à pas",
+    "side": "Formule et limites",
+    "fixFold": "Corriger et remplacer ({count})",
+    "detailsFold": "Détails : date, notes, cuisson, coût, dangers",
+    "steps": "Étapes",
+    "stepRecipe": "Recette",
+    "stepAmounts": "Quantités",
+    "stepCheck": "Vérification",
+    "amountsHint": "Saisissez chaque quantité. Entrée passe à la quantité suivante.",
+    "back": "Retour",
+    "next": "Suivant"
   }
 }

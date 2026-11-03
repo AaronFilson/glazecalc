@@ -171,19 +171,32 @@
         "lasts": "Sampai percobaan berakhir, atau disimpan atau dibuang."
       },
       "settings": {
-        "purpose": "Pengaturan yang Anda ubah di peramban ini, agar halaman berikutnya langsung menampilkannya, sebelum server menjawab. <code>theme</code> dan <code>palette</code> mewarnai halaman sebelum muncul, dan <code>language</code> membuka halaman dalam bahasa Anda."
+        "purpose": "Pengaturan yang Anda ubah di peramban ini, agar halaman berikutnya langsung menampilkannya, sebelum server menjawab. <code>theme</code> dan <code>palette</code> mewarnai halaman sebelum muncul, dan <code>language</code> membuka halaman dalam bahasa Anda.",
+        "lasts": "Sampai Anda mengubahnya. Tidak ada yang dihapus dengan sendirinya: jika Anda kembali setelah hampir setahun tidak berkunjung, sebuah catatan menawarkan tombol untuk menghapus pengaturan Anda. Keluar mengembalikan apa yang Anda pilih saat tidak masuk, jika ada, dan menghapus sisanya."
       },
       "visitor": {
-        "purpose": "Bahasa yang Anda pilih, atau bahwa Anda menutup catatan terjemahan, saat belum masuk, agar kembali saat Anda keluar."
+        "purpose": "Bahasa yang Anda pilih, atau bahwa Anda menutup catatan terjemahan, saat belum masuk, agar kembali saat Anda keluar.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban atau menghapus akun di peramban ini. Tidak ada yang dihapus dengan sendirinya: jika Anda kembali setelah hampir setahun tidak berkunjung, sebuah catatan menawarkan tombol untuk menghapus pengaturan Anda."
       },
       "region": {
-        "purpose": "Filter wilayah pada daftar pustaka."
+        "purpose": "Filter wilayah pada daftar pustaka.",
+        "lasts": "Sampai Anda mengembalikan filter ke semua wilayah. Tidak ada yang dihapus dengan sendirinya: jika Anda kembali setelah hampir setahun tidak berkunjung, sebuah catatan menawarkan tombol untuk menghapus pengaturan Anda."
       },
       "includeAdditives": {
-        "purpose": "Apakah resep baru menghitung aditifnya dalam formula Seger, sesuai pilihan terakhir Anda."
+        "purpose": "Apakah resep baru menghitung aditifnya dalam formula Seger, sesuai pilihan terakhir Anda.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban. Tidak ada yang dihapus dengan sendirinya: jika Anda kembali setelah hampir setahun tidak berkunjung, sebuah catatan menawarkan tombol untuk menghapus pengaturan Anda."
       },
       "print": {
-        "purpose": "Pilihan terakhir Anda untuk mencetak resep: seluruh resep, batch, atau lembar kerja, dan ukuran batch."
+        "purpose": "Pilihan terakhir Anda untuk mencetak resep: seluruh resep, batch, atau lembar kerja, dan ukuran batch.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban. Tidak ada yang dihapus dengan sendirinya: jika Anda kembali setelah hampir setahun tidak berkunjung, sebuah catatan menawarkan tombol untuk menghapus pengaturan Anda."
+      },
+      "recipeLayout": {
+        "purpose": "Tata letak yang terakhir Anda pilih untuk formulir resep: standar, meja kerja, atau langkah terpandu.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban. Tidak ada yang dihapus dengan sendirinya: jika Anda kembali setelah hampir setahun tidak berkunjung, sebuah catatan menawarkan tombol untuk menghapus pengaturan Anda."
+      },
+      "settingsDates": {
+        "purpose": "Kapan terakhir kali peramban ini membuka Glazecalc dengan pengaturan di atas, agar saat Anda kembali setelah hampir setahun tidak berkunjung, catatan yang menawarkan untuk menghapusnya dapat ditampilkan, dan versi catatan terjemahan mana yang Anda tutup. Tidak ada data pribadi.",
+        "lasts": "Selama salah satu pengaturan tersebut masih disimpan di sini."
       },
       "token": {
         "purpose": "Token masuk dari versi lama Glazecalc. Sekarang tidak pernah ditulis.",

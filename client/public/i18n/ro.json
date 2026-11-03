@@ -344,8 +344,8 @@
     "close": "Închideți"
   },
   "settingsExpiry": {
-    "text": "Acest browser păstrează setările dumneavoastră Glazecalc, cum ar fi tema și limba, de aproape un an fără nicio vizită. Vor fi eliminate în curând, dacă nu le păstrați. Setările salvate în cont nu sunt afectate.",
-    "keep": "Păstrați setările mele"
+    "text": "Nu ați folosit Glazecalc în acest browser de aproape un an. Setările dumneavoastră de aici, cum ar fi tema și limba, sunt păstrate cât timp îl folosiți. Le puteți șterge acum, dacă doriți. Setările salvate în cont nu sunt afectate.",
+    "clear": "Ștergeți setările mele"
   },
   "unity": {
     "fluxes": "Fondanți – R₂O și RO",

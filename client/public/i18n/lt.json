@@ -344,8 +344,8 @@
     "close": "Uždaryti"
   },
   "settingsExpiry": {
-    "text": "Ši naršyklė jau beveik metus be apsilankymo laiko jūsų Glazecalc nustatymus, pavyzdžiui, temą ir kalbą. Netrukus jie bus pašalinti, nebent juos išsaugosite. Paskyroje įrašyti nustatymai nepaliečiami.",
-    "keep": "Išsaugoti mano nustatymus"
+    "text": "Šioje naršyklėje nenaudojote Glazecalc beveik metus. Jūsų nustatymai čia, pavyzdžiui, tema ir kalba, laikomi, kol juo naudojatės. Jei norite, galite juos išvalyti dabar. Paskyroje įrašyti nustatymai nepaliečiami.",
+    "clear": "Išvalyti mano nustatymus"
   },
   "unity": {
     "fluxes": "Fliusai – R₂O ir RO",

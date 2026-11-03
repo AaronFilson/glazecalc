@@ -171,19 +171,32 @@
         "lasts": "Dokler se preizkus ne izteče ali ga ne ohranite ali zavržete."
       },
       "settings": {
-        "purpose": "Nastavitev, ki ste jo spremenili v tem brskalniku, da jo naslednja stran prikaže takoj, še preden odgovori strežnik. <code>theme</code> in <code>palette</code> obarvata stran, preden se prikaže, <code>language</code> pa odpira strani v vašem jeziku."
+        "purpose": "Nastavitev, ki ste jo spremenili v tem brskalniku, da jo naslednja stran prikaže takoj, še preden odgovori strežnik. <code>theme</code> in <code>palette</code> obarvata stran, preden se prikaže, <code>language</code> pa odpira strani v vašem jeziku.",
+        "lasts": "Dokler je ne spremenite. Nič se ne odstrani samo od sebe: če se vrnete po skoraj letu dni odsotnosti, vam obvestilo ponudi gumb za izbris nastavitev. Odjava povrne, kar ste morda izbrali, ko niste bili prijavljeni, ostalo pa odstrani."
       },
       "visitor": {
-        "purpose": "Jezik, ki ste ga izbrali, ali to, da ste zaprli obvestilo o prevodu, ko niste bili prijavljeni, da se to povrne, ko se odjavite."
+        "purpose": "Jezik, ki ste ga izbrali, ali to, da ste zaprli obvestilo o prevodu, ko niste bili prijavljeni, da se to povrne, ko se odjavite.",
+        "lasts": "Dokler ne počistite shrambe brskalnika ali v tem brskalniku ne izbrišete računa. Nič se ne odstrani samo od sebe: če se vrnete po skoraj letu dni odsotnosti, vam obvestilo ponudi gumb za izbris nastavitev."
       },
       "region": {
-        "purpose": "Filter regije na seznamu v knjižnici."
+        "purpose": "Filter regije na seznamu v knjižnici.",
+        "lasts": "Dokler filtra ne nastavite nazaj na vse regije. Nič se ne odstrani samo od sebe: če se vrnete po skoraj letu dni odsotnosti, vam obvestilo ponudi gumb za izbris nastavitev."
       },
       "includeAdditives": {
-        "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali."
+        "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali.",
+        "lasts": "Dokler ne počistite shrambe brskalnika. Nič se ne odstrani samo od sebe: če se vrnete po skoraj letu dni odsotnosti, vam obvestilo ponudi gumb za izbris nastavitev."
       },
       "print": {
-        "purpose": "Vaše zadnje izbire pri tiskanju recepta: celoten recept, mešanica ali delovni list in velikost mešanice."
+        "purpose": "Vaše zadnje izbire pri tiskanju recepta: celoten recept, mešanica ali delovni list in velikost mešanice.",
+        "lasts": "Dokler ne počistite shrambe brskalnika. Nič se ne odstrani samo od sebe: če se vrnete po skoraj letu dni odsotnosti, vam obvestilo ponudi gumb za izbris nastavitev."
+      },
+      "recipeLayout": {
+        "purpose": "Postavitev obrazca za recept, ki ste jo nazadnje izbrali: običajna, delovna miza ali vodeni koraki.",
+        "lasts": "Dokler ne počistite shrambe brskalnika. Nič se ne odstrani samo od sebe: če se vrnete po skoraj letu dni odsotnosti, vam obvestilo ponudi gumb za izbris nastavitev."
+      },
+      "settingsDates": {
+        "purpose": "Kdaj je ta brskalnik nazadnje odprl Glazecalc z zgornjimi nastavitvami, da se ob vrnitvi po skoraj letu dni odsotnosti lahko prikaže obvestilo, ki ponudi njihov izbris, in katero različico obvestila o prevodu ste zaprli. Brez osebnih podatkov.",
+        "lasts": "Dokler je tu shranjena katera koli od teh nastavitev."
       },
       "token": {
         "purpose": "Žeton za prijavo iz stare različice aplikacije Glazecalc. Zdaj se nikoli ne zapiše.",

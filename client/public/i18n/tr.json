@@ -344,8 +344,8 @@
     "close": "Kapat"
   },
   "settingsExpiry": {
-    "text": "Bu tarayıcı, tema ve dil gibi Glazecalc ayarlarınızı siz hiç ziyaret etmeden neredeyse bir yıldır saklıyor. Saklamayı seçmezseniz yakında silinecekler. Hesabınıza kaydedilmiş ayarlar bundan etkilenmez.",
-    "keep": "Ayarlarımı sakla"
+    "text": "Glazecalc'ı bu tarayıcıda neredeyse bir yıldır kullanmadınız. Buradaki tema ve dil gibi ayarlarınız, siz kullandıkça saklanır. İsterseniz bunları şimdi temizleyebilirsiniz. Hesabınıza kaydedilmiş ayarlar bundan etkilenmez.",
+    "clear": "Ayarlarımı temizle"
   },
   "unity": {
     "fluxes": "Ergiticiler - R₂O ve RO",

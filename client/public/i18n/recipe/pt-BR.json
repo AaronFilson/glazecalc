@@ -1104,5 +1104,21 @@
     "add": "Adicionar um resultado para",
     "addButton": "Adicionar",
     "saveFailed": "Não foi possível salvar onde o registro de queima foi queimado."
+  },
+  "layout": {
+    "label": "Layout do formulário",
+    "standard": "Padrão",
+    "workbench": "Bancada",
+    "guided": "Passo a passo",
+    "side": "Fórmula e limites",
+    "fixFold": "Corrigir e substituir ({count})",
+    "detailsFold": "Detalhes: data, notas, queima, custo, riscos",
+    "steps": "Etapas",
+    "stepRecipe": "Receita",
+    "stepAmounts": "Quantidades",
+    "stepCheck": "Conferir",
+    "amountsHint": "Digite cada quantidade. Enter vai para a próxima quantidade.",
+    "back": "Voltar",
+    "next": "Avançar"
   }
 }

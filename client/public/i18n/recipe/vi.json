@@ -1104,5 +1104,21 @@
     "add": "Thêm một kết quả cho",
     "addButton": "Thêm",
     "saveFailed": "Không lưu được nơi lần nung của nhật ký nung này."
+  },
+  "layout": {
+    "label": "Bố cục biểu mẫu",
+    "standard": "Tiêu chuẩn",
+    "workbench": "Bàn làm việc",
+    "guided": "Từng bước có hướng dẫn",
+    "side": "Công thức và giới hạn",
+    "fixFold": "Sửa và thay thế ({count})",
+    "detailsFold": "Chi tiết: ngày, ghi chú, nung, chi phí, mối nguy",
+    "steps": "Các bước",
+    "stepRecipe": "Công thức men",
+    "stepAmounts": "Lượng",
+    "stepCheck": "Kiểm tra",
+    "amountsHint": "Nhập từng lượng. Enter chuyển sang lượng tiếp theo.",
+    "back": "Quay lại",
+    "next": "Tiếp"
   }
 }

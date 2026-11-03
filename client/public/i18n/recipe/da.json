@@ -1104,5 +1104,21 @@
     "add": "Tilføj et resultat for",
     "addButton": "Tilføj",
     "saveFailed": "Det lykkedes ikke at gemme, hvor brændingsjournalen blev brændt."
+  },
+  "layout": {
+    "label": "Formularens layout",
+    "standard": "Standard",
+    "workbench": "Arbejdsbord",
+    "guided": "Trin for trin",
+    "side": "Formel og grænser",
+    "fixFold": "Ret og udskift ({count})",
+    "detailsFold": "Detaljer: dato, noter, brænding, pris, farer",
+    "steps": "Trin",
+    "stepRecipe": "Opskrift",
+    "stepAmounts": "Mængder",
+    "stepCheck": "Tjek",
+    "amountsHint": "Skriv hver mængde. Enter går til den næste mængde.",
+    "back": "Tilbage",
+    "next": "Næste"
   }
 }

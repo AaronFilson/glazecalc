@@ -171,19 +171,32 @@
         "lasts": "Până la încheierea perioadei de probă sau până când o păstrați ori renunțați la ea."
       },
       "settings": {
-        "purpose": "O setare pe care ați schimbat-o în acest browser, ca pagina următoare să o afișeze imediat, înainte ca serverul să răspundă. <code>theme</code> și <code>palette</code> colorează pagina înainte să apară, iar <code>language</code> deschide paginile în limba dumneavoastră."
+        "purpose": "O setare pe care ați schimbat-o în acest browser, ca pagina următoare să o afișeze imediat, înainte ca serverul să răspundă. <code>theme</code> și <code>palette</code> colorează pagina înainte să apară, iar <code>language</code> deschide paginile în limba dumneavoastră.",
+        "lasts": "Până când o schimbați. Nimic nu este eliminat de la sine: dacă reveniți după aproape un an de absență, o notă vă oferă un buton pentru a vă șterge setările. Deconectarea readuce ce ați ales în afara contului, dacă ați ales ceva, și elimină restul."
       },
       "visitor": {
-        "purpose": "Limba pe care ați ales-o sau faptul că ați închis nota despre traducere, în afara contului, ca acestea să revină când vă deconectați."
+        "purpose": "Limba pe care ați ales-o sau faptul că ați închis nota despre traducere, în afara contului, ca acestea să revină când vă deconectați.",
+        "lasts": "Până când ștergeți datele stocate de browser sau ștergeți un cont în acest browser. Nimic nu este eliminat de la sine: dacă reveniți după aproape un an de absență, o notă vă oferă un buton pentru a vă șterge setările."
       },
       "region": {
-        "purpose": "Filtrul de regiune dintr-o listă a bibliotecii."
+        "purpose": "Filtrul de regiune dintr-o listă a bibliotecii.",
+        "lasts": "Până când readuceți filtrul la toate regiunile. Nimic nu este eliminat de la sine: dacă reveniți după aproape un an de absență, o notă vă oferă un buton pentru a vă șterge setările."
       },
       "includeAdditives": {
-        "purpose": "Dacă rețetele noi includ aditivii în formula Seger, așa cum ați ales ultima dată."
+        "purpose": "Dacă rețetele noi includ aditivii în formula Seger, așa cum ați ales ultima dată.",
+        "lasts": "Până când ștergeți datele stocate de browser. Nimic nu este eliminat de la sine: dacă reveniți după aproape un an de absență, o notă vă oferă un buton pentru a vă șterge setările."
       },
       "print": {
-        "purpose": "Ultimele dumneavoastră alegeri pentru tipărirea unei rețete: rețeta întreagă, un amestec sau fișa de lucru, și mărimea amestecului."
+        "purpose": "Ultimele dumneavoastră alegeri pentru tipărirea unei rețete: rețeta întreagă, un amestec sau fișa de lucru, și mărimea amestecului.",
+        "lasts": "Până când ștergeți datele stocate de browser. Nimic nu este eliminat de la sine: dacă reveniți după aproape un an de absență, o notă vă oferă un buton pentru a vă șterge setările."
+      },
+      "recipeLayout": {
+        "purpose": "Aspectul pe care l-ați ales ultima dată pentru formularul rețetei: standard, masă de lucru sau pași ghidați.",
+        "lasts": "Până când ștergeți datele stocate de browser. Nimic nu este eliminat de la sine: dacă reveniți după aproape un an de absență, o notă vă oferă un buton pentru a vă șterge setările."
+      },
+      "settingsDates": {
+        "purpose": "Când a deschis acest browser ultima dată Glazecalc cu setările de mai sus, pentru ca, la o revenire după aproape un an de absență, să poată fi afișată nota care oferă ștergerea lor, și ce versiune a notei despre traducere ați închis. Fără date personale.",
+        "lasts": "Cât timp oricare dintre acele setări este păstrată aici."
       },
       "token": {
         "purpose": "Un token de conectare dintr-o versiune veche a aplicației Glazecalc. Acum nu mai este scris niciodată.",
