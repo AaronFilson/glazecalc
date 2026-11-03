@@ -157,7 +157,7 @@ Label: Kayan glaze na yau da kullum
 | Bentonite                                            | Riƙewa a cikin ruwa      | Yumɓu mai laushi sosai, yawanci 1–3%, don hana kwanciya a ƙasa                                                                                                      |
 
 > [!WARNING]
-> Kayan glaze gari ne mai laushi. Ƙurar silica tana cutar da huhu ba tare da alamun cuta da farko ba, kuma wasu kaya, kamar barium carbonate da lithium carbonate, guba ne idan an haɗiye su. Ku riƙe gari a hankali, ku share da ruwa, kuma ku sa respirator (abin rufe hanci da baki) da ya dace da fuskarku idan kuna aiki da busasshe. [Haɗawa cikin aminci da iska mai kyau](/guides/safe-mixing) da [Kada ka sa wa iyalinka guba](/guides/home-safety) sun bayyana yadda.
+> Kayan glaze gari ne mai laushi. Ƙurar silica tana cutar da huhu ba tare da alamun cuta da farko ba, kuma wasu kaya, kamar barium carbonate da lithium carbonate, guba ne idan an haɗiye su. Ku riƙe gari a hankali, ku share da ruwa, kuma ku sa respirator (abin rufe fuska mai tace iska) da ya dace da fuskarku idan kuna aiki da busasshe. [Haɗawa cikin aminci da iska mai kyau](/guides/safe-mixing) da [Kada ka sa wa iyalinka guba](/guides/home-safety) sun bayyana yadda.
 
 ### Sunaye a yankuna
 

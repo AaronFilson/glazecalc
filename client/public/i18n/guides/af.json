@@ -147,7 +147,7 @@
     "statesLabel": "Limiete wat deur state in {region} vasgestel is",
     "statesCaption": "Limiete wat sommige state vir stof wat kwarts bevat vasgestel het, waar Q die kwarts in die stof is, in %. Ons het hulle net in kopieë gelees wat deur ander gepubliseer is, so hulle is nie bevestig nie (nagegaan {date}).",
     "state": "Staat",
-    "respirableDust": "Inasembare stof",
+    "respirableDust": "Respireerbare stof",
     "totalDust": "Totale stof",
     "cutOff": "Afgesny in die kopie wat ons gelees het",
     "stateSetBy": "{area}: vasgestel deur <link>{law}</link>.",

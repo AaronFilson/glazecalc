@@ -185,7 +185,7 @@ English and digits (Pb, BaCO₃, 0.025 mg/m³).
 | early, too soon               | da wuri                                                    | Never "in the morning" or "on time".                                                           |
 | less, fewer, reduce           | ƙasa da …; rage                                            | Never _ɗan ƙari_ ("a little more").                                                            |
 | silicosis                     | silicosis (cutar huhu)                                     | **Native check**                                                                               |
-| respirator                    | respirator (abin rufe hanci da baki)                       | **Native check**                                                                               |
+| respirator                    | respirator (abin rufe fuska mai tace iska)                 | **Native check**                                                                               |
 | poison, toxic                 | guba; mai guba                                             | Newman.                                                                                        |
 | food safe                     | lafiya ga abinci                                           | **Native check**                                                                               |
 | lead-free                     | babu darma (lead-free)                                     | **Native check**                                                                               |

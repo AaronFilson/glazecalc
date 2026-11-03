@@ -28,7 +28,7 @@ Ons stel voor dat jy vandag jou streek se nommers in jou foon stoor, en op 'n ka
 > [!WARNING]
 > Die NHS raai aan: moenie probeer om die persoon te laat opgooi nie, en moenie vir hulle iets gee om te eet of te drink nie. Met 'n troeteldier, doen niks totdat die veearts of die gifhulplyn vir diere jou sê wat om te doen nie.
 
-As jy hospitaal toe gaan, sê die NHS jy moet die verpakking of 'n monster saamneem as dit veilig is om dit te doen. Vir 'n glasuurgrondstof beteken dit die sak se etiket of die veiligheidsdatablad.
+As jy hospitaal toe gaan, sê die NHS: neem die verpakking of 'n monster saam as dit veilig is om dit te doen. Vir 'n glasuurgrondstof beteken dit die sak se etiket of die veiligheidsdatablad.
 
 ## Wat die gevaarlikste is om in te sluk {#most-dangerous}
 
@@ -155,7 +155,7 @@ As 'n troeteldier dalk iets uit die ateljee geëet of gedrink het, of tekens soo
 
 'n Britse risikobepaling vir skole sê 'n keramiekoond se buitekant "kan 160 °C en moontlik meer bereik" (ongeveer 320 °F), en 'n skoolgids oor oonde rapporteer metaalbande van tot 460 °F (ongeveer 240 °C). Skutt, 'n oondvervaardiger, beveel 'n oondkamer aan wat teen kinders en troeteldiere gesluit kan word. Waar 'n kamer nie gesluit kan word nie, stel die skoolgids 'n versperring voor, soos 'n oondveiligheidskerm.
 
-Klein kinders en troeteldiere kan nie 'n waarskuwingsbord verstaan nie. Ons stel voor dat jy hulle agter 'n geslote deur of 'n versperring hou terwyl die oond bak en terwyl dit afkoel, en 'n waarskuwingsbord vir almal anders opsit.
+Klein kinders en troeteldiere kan nie 'n waarskuwingsbord verstaan nie. Ons stel voor dat jy hulle agter 'n gesluite deur of 'n versperring hou terwyl die oond bak en terwyl dit afkoel, en 'n waarskuwingsbord vir almal anders opsit.
 
 ### Ruimte rondom die oond
 
@@ -177,7 +177,7 @@ Bak gee dampe af, so lei die oond se dampe na buite; [Veilig meng en ventilasie]
 
 ### Kykgate en oë
 
-Infrarooi lig, wat jy nie kan sien nie, "begin by 752°F (400°C)", en die Ceramic Arts Network sê dat om bo hierdie temperatuur in 'n oond te kyk altyd met oogbeskerming gedoen moet word. Infrarooi kan die lens van die oog beskadig en tot katarakte lei, en lank staar kan die retina beseer. Sonbrille en didimiumbrille keer dit nie.
+Infrarooi lig, wat jy nie kan sien nie, "begin by 752°F (400°C)", en die Ceramic Arts Network sê dat om bo hierdie temperatuur in 'n oond te kyk altyd met oogbeskerming gedoen behoort te word. Infrarooi kan die lens van die oog beskadig en tot katarakte lei, en lank staar kan die retina beseer. Sonbrille en didimiumbrille keer dit nie.
 
 > [!WARNING]
 > Kinders behoort glad nie in 'n oond te kyk nie. 'n Gloeiende kykgat trek hulle aan, en hulle sal nie betroubaar 'n beskermende bril ophou nie, so hou hulle weg terwyl die oond warm is. Volwassenes behoort net kortliks te kyk, deur IR-gegradeerde sweisbrille. Bronne beveel skakerings van 1,7 tot 5 aan; skakering 3 is 'n verstandige keuse, donkerder as jy agterna kolle sien.

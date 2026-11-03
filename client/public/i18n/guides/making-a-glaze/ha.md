@@ -17,7 +17,7 @@ Haɗa **glaze**{{en: glaze}} yana nufin auna **kayan aiki** na gari (ma'adinai d
 - **Kofin awo mai alamomi (graduated cylinder) na 100 mL ko sirinji**, don auna SG.
 - **Takardun suna (label), alƙalamin da ruwa ba ya gogewa da littafin rubutu**, ko [bayanai](/notes) da [bayanan gasa](/firing) na Glazecalc.
 - **Test tile (tayil ɗin gwaji)** da aka yi da yumɓun da za ku shafa wa glaze.
-- **Respirator (abin rufe hanci da baki), safar hannu ta roba, soso da mop.**
+- **Respirator (abin rufe fuska mai tace iska), safar hannu ta roba, soso da mop.**
 
 > [!WARNING]
 > **Busasshen garin glaze haɗarin ƙura ne.** Crystalline silica na iya kaiwa 10 zuwa 60% na busasshen glaze, kuma Health and Safety Executive (HSE) na Burtaniya ya yi gargaɗin cewa ƙurarta ba a ganinta a haske na yau da kullum. Ku ɗeba a hankali daga ƙasa-ƙasa, ku bar murfi a rufe, ku jiƙa garin da wuri-wuri, ku yi tsabta da ruwa, kada ku taɓa yin ta da tsintsiya. Ku sa respirator da ya dace da fuskarku a duk lokacin da gari ke bushe (N95 ko P100 a Amurka, FFP2 ko FFP3 a Burtaniya da EU, P2 ko P3 a Australia da New Zealand). [Haɗawa cikin aminci da iska mai kyau](/guides/safe-mixing) yana bayani dalla-dalla kan ƙura, respirator da tsabtacewa.

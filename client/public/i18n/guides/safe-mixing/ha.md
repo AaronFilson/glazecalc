@@ -67,7 +67,7 @@ Wannan tsari shawararmu ce, bisa ƙa'idar HSE ta fara guje wa gari. Don aunawa d
 
 ## Respirator {#respirators}
 
-**Respirator** (abin rufe hanci da baki) abin rufe fuska ne da aka tabbatar yana tace ƙananan ƙwayoyi daga iskar da kuke shaƙa. Yana aiki ne kawai idan ya manne sosai da fuskarku, kuma yana ƙarfafa ɗabi'u masu kyau ne, ba ya maye gurbinsu.
+**Respirator** (abin rufe fuska mai tace iska) abin rufe fuska ne da aka tabbatar yana tace ƙananan ƙwayoyi daga iskar da kuke shaƙa. Yana aiki ne kawai idan ya manne sosai da fuskarku, kuma yana ƙarfafa ɗabi'u masu kyau ne, ba ya maye gurbinsu.
 
 ### Aji-aji bisa yanki
 

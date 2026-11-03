@@ -5,9 +5,9 @@ lead: Indlela yokugcina uthuli lwe-glaze lungangeni emaphashini akho, nentuthu y
 
 ## Ingozi enkulu: uthuli {#the-main-hazard}
 
-Ingozi enkulu yesikhathi eside emsebenzini we-glaze{{en: glaze}} wuthuli, ikakhulukazi **uthuli lwe-silica engamakristalu oluhogelwayo** (respirable crystalline silica): izinhlayiya ze-quartz noma ze-cristobalite (izinhlobo ze-silica ezingamakristalu) ezincane ngokwanele ukuthi zingene ekujuleni kwamaphaphu. I-silica engamakristalu ingaba cishe u-10 kuya ku-60% wesisindo esomile se-glaze, futhi iningi lobumba (ngaphandle kwe-kaolin) nama-feldspar amaningi nawo aphethe i-quartz ecolekileyo. I-Health and Safety Executive (HSE) yase-UK ithi lolu thuli "lucoleke kakhulu futhi alubonakali ekukhanyeni okujwayelekile", ngakho igumbi elibukeka lihlanzekile aliyona ubufakazi bokuthi umoya uhlanzekile.
+Ingozi enkulu yesikhathi eside emsebenzini we-glaze{{en: glaze}} wuthuli, ikakhulukazi **uthuli lwe-silica eyikristalu oluhogelwayo** (respirable crystalline silica): izinhlayiya ze-quartz noma ze-cristobalite (izinhlobo ze-silica eyikristalu) ezincane ngokwanele ukuthi zingene ekujuleni kwamaphaphu. I-silica eyikristalu ingaba cishe u-10 kuya ku-60% wesisindo esomile se-glaze, futhi iningi lobumba (ngaphandle kwe-kaolin) nama-feldspar amaningi nawo aphethe i-quartz ecolekileyo. I-Health and Safety Executive (HSE) yase-UK ithi lolu thuli "lucoleke kakhulu futhi alubonakali ekukhanyeni okujwayelekile", ngakho igumbi elibukeka lihlanzekile aliyona ubufakazi bokuthi umoya uhlanzekile.
 
-Uma luhogelwa isikhathi eside, lungabangela **i-silicosis**, isifo samaphaphu i-HSE esichaza ngokuthi "sibi futhi asilapheki" futhi singa "bangela ukukhubazeka unomphela nokufa ngaphambi kwesikhathi". Lungabangela futhi **i-COPD** (chronic obstructive pulmonary disease: i-bronchitis yesikhathi eside ne-emphysema), ebhebhetheka ngokubhema. I-IARC, inhlangano yomdlavuza ye-World Health Organization, ibeka i-silica engamakristalu ehogelwayo ku-Group 1, "ibangela umdlavuza ebantwini".
+Uma luhogelwa isikhathi eside, lungabangela **i-silicosis**, isifo samaphaphu i-HSE esichaza ngokuthi "sibi futhi asilapheki" futhi singa "bangela ukukhubazeka unomphela nokufa ngaphambi kwesikhathi". Lungabangela futhi **i-COPD** (chronic obstructive pulmonary disease: i-bronchitis yesikhathi eside ne-emphysema), ebhebhetheka ngokubhema. I-IARC, inhlangano yomdlavuza ye-World Health Organization, ibeka i-silica eyikristalu ehogelwayo ku-Group 1, "ibangela umdlavuza ebantwini".
 
 I-silica ayiphenduki intuthu ku-kiln, futhi i-glaze emanzi ayiyona ingozi yokuhogela ngaphandle uma ifuthwa: inkungu yokufutha iphethe i-silica futhi yome ibe uthuli (bheka Ukufutha, ngezansi). Izikhathi zokuqaphela yilapho okokwakha komile: uma uvula izikhwama, ukala, uxuba impuphu emanzini, nalapho uhlanza amaconsi, i-glaze efuthwe yeqa, nodaka sekuphinde komile kwaba uthuli.
 
@@ -15,7 +15,7 @@ I-silica ayiphenduki intuthu ku-kiln, futhi i-glaze emanzi ayiyona ingozi yokuho
 
 Imithetho yasemsebenzini ibeka **umngcele wokuchayeka**: i-silica eningi kakhulu isisebenzi esingayihogela, ilinganiselwe phezu kosuku lwamahora angu-8, ngama-milligram (mg) noma ama-microgram (µg, inkulungwane yengxenye ye-milligram) ngemitha ngayinye eyi-cubic yomoya.
 
-Table: Imingcele yasemsebenzini yothuli lwe-silica engamakristalu oluhogelwayo (isilinganiso samahora angu-8)
+Table: Imingcele yasemsebenzini yothuli lwe-silica eyikristalu oluhogelwayo (isilinganiso samahora angu-8)
 Label: Imingcele yokuchayeka ku-silica
 
 | Isifunda       |              Umngcele | Amanothi                                                                                          |
@@ -44,7 +44,7 @@ Ukuvikeleka okuningi kuvela emikhubeni, hhayi ezintweni zokusebenza. Iseluleko s
 ### Gwema impuphu lapho ungakwazi
 
 - **Thenga i-glaze{{en: glaze}} esixutshiwe kakade** uma kufanelana nomsebenzi wakho. Isiphakamiso sokuqala se-HSE sithi "Thenga i-glaze esilungele ukusetshenziswa, uma kungenzeka", noma esesimweni sezinhlamvu noma sodaka (slurry).
-- **Khetha amaresiphi aphephile.** I-HSE iphakamisa "ama-glaze anokuncane kwe-silica engamakristalu". I-Digitalfire iphakamisa **i-frit** (ingilazi eyenziwe efektri yagaywa yaba impuphu, encibilika kancane kakhulu kunokokwakha okungaphekiwe) esikhundleni se-barium carbonate engaphekiwe, ne-**stain** (umbala wobumba owenziwe efektri) esikhundleni senani elikhulu le-manganese, i-cobalt noma i-nickel kwemibala emnyama.
+- **Khetha amaresiphi aphephile.** I-HSE iphakamisa "ama-glaze anokuncane kwe-silica eyikristalu". I-Digitalfire iphakamisa **i-frit** (ingilazi eyenziwe efektri yagaywa yaba impuphu, encibilika kancane kakhulu kunokokwakha okungaphekiwe) esikhundleni se-barium carbonate engaphekiwe, ne-**stain** (umbala wobumba owenziwe efektri) esikhundleni senani elikhulu le-manganese, i-cobalt noma i-nickel kwemibala emnyama.
 
 ### Uma usebenzisa impuphu
 
@@ -142,7 +142,7 @@ Awukho umthombo onikeza izibalo zokugeleza komoya kwe-hood yabazilibazisayo. Nga
 
 ### Ukufutha
 
-I-HSE iyaxwayisa ukuthi ukufutha "kungaveza inkungu equkethe i-RCS" (uthuli lwe-silica engamakristalu oluhogelwayo), nokuthi "inkungu ye-glaze{{en: glaze}} yoma ngokushesha iphenduke uthuli". Yonke imithombo esiyitholile ithi fusa kuphela ngaphakathi kwebhokisi lokufutha elinomoya.
+I-HSE iyaxwayisa ukuthi ukufutha "kungaveza inkungu equkethe i-RCS" (uthuli lwe-silica eyikristalu oluhogelwayo), nokuthi "inkungu ye-glaze{{en: glaze}} yoma ngokushesha iphenduke uthuli". Yonke imithombo esiyitholile ithi fusa kuphela ngaphakathi kwebhokisi lokufutha elinomoya.
 
 - I-HSE ifuna indawo evalekile ekhipha umoya futhi, "lapho kungenzeka khona, ibhokisi elinamanzi ngemuva", elibamba i-glaze efuthwe yeqa emanzini.
 - Sebenzisa itafula elijikayo ebhokisini, gqoka amagilavu e-nitrile ne-respirator, futhi uhlanze ibhokisi nesihlungi salo ngaphambi kokuba i-glaze efuthwe yeqa yome.
@@ -235,7 +235,7 @@ I-borax, i-boric acid, i-soda ash ne-potash zincibilika emanzini, ngakho sizitha
 
 Ama-pictogram nezitatimende zengozi zivela ku-**GHS** (Globally Harmonized System), uhlelo lwamazwe ngamazwe lokufaka amalebula kumakhemikhali. I-borax, isibonelo, iphethe i-pictogram yengozi yempilo i-GHS08, igama lesixwayiso elithi "Danger" nesitatimende sengozi H360FD, "kungalimaza ukuzala; kungalimaza ingane engakazalwa". Ngokwazi kwethu, ama-SDS ase-UK, e-EU, e-Australia nase-New Zealand asebenzisa izigaba ezifanayo ezingu-16.
 
-- **Hlola uhlobo lwe-silica.** I-HSE iyaxwayisa ukuthi i-silica engamakristalu "ingafakwa ilebula ngephutha ngokuthi 'amorphous silica'".
+- **Hlola uhlobo lwe-silica.** I-HSE iyaxwayisa ukuthi i-silica eyikristalu "ingafakwa ilebula ngephutha ngokuthi 'amorphous silica'".
 - **"Not classified" akusho "ayinangozi".** I-glaze eseqediwe engenawo ama-pictogram isenza uthuli lwe-silica uma yomile.
 
 > [!NOTE]

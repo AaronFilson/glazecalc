@@ -173,7 +173,7 @@ Rio Grande wuxuu ku talinayaa **wareeg u gaar ah** (mid aan waxba kale shidin) o
 
 Gubiddu waxay sii daysaa qiiq, sidaa darteed kiln-ka hawadiisa u saar dibadda; [Isku-darka ammaanka ah iyo hawo-wareejinta](/guides/safe-mixing) ayaa sharxaya sida. Kiln ku jira garaash guriga ku dheggan wuxuu u baahan yahay hawo-saar ka celiya qiiqa inuu guriga ka galo albaabka isku xira. Shimbiraha ku hay qol fog mar kasta oo kiln-ku gubayo.
 
-**Carbon monoxide** (CO) waa gaas sun ah oo aadan arki karin ama urin karin. Xaashi badbaadada kiln ee jaamacad ayaa kiln-yada gaaska ku shaqeeya ku xiraysa digniinta CO. Aragtiyuhu way kala duwan yihiin kiln-yada korontada, laakiin gubidda walxaha dabiiciga ah (ee dhoobada ku jira, ama waxyaabo sida warqad ama shamac) waxay samayn kartaa CO. Waxaan u aragnaa digniinta CO ee qolka kiln-ka iyo qolalka ku xiga tallaabo caqli-gal ah oo aan qaali ahayn kiln kasta.
+**Carbon monoxide** (CO) waa gaas sun ah oo aadan arki karin ama urin karin. Xaashi badbaadada kiln ee jaamacad ayaa kiln-yada gaaska ku shaqeeya ku waajibisa digniinta CO. Aragtiyuhu way kala duwan yihiin kiln-yada korontada, laakiin gubidda walxaha dabiiciga ah (ee dhoobada ku jira, ama waxyaabo sida warqad ama shamac) waxay samayn kartaa CO. Waxaan u aragnaa digniinta CO ee qolka kiln-ka iyo qolalka ku xiga tallaabo caqli-gal ah oo aan qaali ahayn kiln kasta.
 
 ### Daloolada daawashada iyo indhaha
 
@@ -197,13 +197,13 @@ Waxaan soo jeedinaynaa in calaamadda "ammaan u ah cuntada" ee glaze ganacsi loo 
 
 ### Baaritaanka
 
-Shaybaarradu waxay weelasha la gubay ku baaraan qoyn aashito oo caadi ah oo matalaysa xaaladda ugu xun, sida ASTM C738 ee Maraykanka. Baaritaanka EU ee shaybaar ayaa u baahan afar weel oo isku mid ah, waxayna qaadataa toddoba maalmood oo shaqo, sidaa darteed samee kuwo dheeraad ah wax kasta oo aad qorshaynayso in la baaro.
+Shaybaarradu waxay weelasha la gubay ku baaraan qoyn aashito oo caadi ah oo matalaysa xaaladda ugu xun, sida ASTM C738 ee Maraykanka. Baaritaanka EU ee hal shaybaar ayaa u baahan afar weel oo isku mid ah, waxayna qaadataa toddoba maalmood oo shaqo, sidaa darteed samee kuwo dheeraad ah wax kasta oo aad qorshaynayso in la baaro.
 
 Baaritaannada guriga waa lagu murmay. FDA-du waxay leedahay xirmooyinka masaxaadda guriga waxay muujin karaan rasaas soo bixi karta, iyo in weel natiijadiisu togan tahay aan cuntada loo isticmaalin. Ceramics NZ ayaa ka digaysa in qalimaanta baaritaanka rasaasta ee macaamiisha "loogu talagalin isticmaalkan" dhoobada, oo ay bixin karaan natiijooyin togan oo been ah. Digitalfire wuxuu soo jeedinayaa in jeex liin ah habeenkii lagu dul daayo glaze-ka baaritaan qallafsan ahaan. Akhrinta ammaanka ah: baaritaan guri oo togan macnaheedu waa jooji weelka cuntada, mid taban waxba ma caddeeyo. Kaliya shaybaar ayaa kuu sheegi kara in weel ammaan yahay.
 
 ### Weelasha crazing-ka leh
 
-**Crazing** (dillaac yaryar) waa shabakad dillaacyo aad u yaryar oo dusha glaze{{en: glaze}}-ka ah, iluhuna way isku khilaafaan. Tijaabo Ceramics Monthly ayaa ogaatay in tile-yada crazing-ka leh la nadiifin karo, si fiican mashiinka weelasha lagu dhaqo, inkastoo ay ka soo baxeen kuwo ka nadiifsan yar tile-yada aan crazing lahayn kadib saabuun iyo biyo. Digitalfire wuxuu qabaa in "Weelasha crazing-ka leh aan la aqbali karin" iyo in crazing "si weyn u daciifiyo weelasha". Jidka ammaanka ahi waa fudud yahay: weelasha crazing-ka leh ha u isticmaalin cuntada.
+**Crazing** (dillaac yaryar) waa shabakad dillaacyo aad u yaryar oo dusha glaze{{en: glaze}}-ka ah, iluhuna way isku khilaafaan. Tijaabo Ceramics Monthly ayaa ogaatay in tile-yada crazing-ka leh la nadiifin karo, gaar ahaan si fiican mashiinka weelasha lagu dhaqo, inkastoo ay ka soo baxeen kuwo ka nadiifsan yar tile-yada aan crazing lahayn kadib saabuun iyo biyo. Digitalfire wuxuu qabaa in "Weelasha crazing-ka leh aan la aqbali karin" iyo in crazing "si weyn u daciifiyo weelasha". Jidka ammaanka ahi waa fudud yahay: weelasha crazing-ka leh ha u isticmaalin cuntada.
 
 ### Glaze-yada gudaha
 

@@ -164,7 +164,7 @@ Glasuurgrondstowwe{{en: glaze}} voeg meer by. Sommige metaaloksiede vorm dampe, 
 'n **Afwaartse-trek-ventilator** (downdraft vent) is 'n klein waaiereenheid wat aan die oond gemonteer word. Dit trek 'n bietjie lug uit die bakkamer, verdun dit met kamerlug en lei dit deur 'n pyp buitentoe, en vang so dampe voordat hulle die kamer bereik. Oondmaker Skutt sê alle oondmakers beveel een aan.
 
 - **Dit het vervangingslug nodig.** Skutt se EnviroVent 2 stuur elke minuut 140 kubieke voet (ongeveer 4 m³) lug buitentoe, en net soveel moet terugkom.
-- **Dit verwyder "net gevaarlike dampe, nie hitte nie"** (Skutt), en moet onafhanklik van die gebou se verwarming en verkoeling werk.
+- **Dit verwyder "net gevaarlike dampe, nie hitte nie"** (Skutt), en behoort onafhanklik van die gebou se verwarming en verkoeling te werk.
 - **Lei dit buitentoe,** weg van vensters, deure en luginlate. Finkelnburg beveel 'n eekhoringhok-waaier (sentrifugaal) aan, nie 'n skroefwaaier nie.
 - Sommige plaaslike regulasies vereis 'n oondventilator, so kyk na joune.
 

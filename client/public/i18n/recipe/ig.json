@@ -367,7 +367,7 @@
     "intro": "Dịka ndekọ ihe ọ bụla si enye ha; nke ọbá akwụkwọ ọkọlọtọ si na mpempe data nchekwa nke ndị na-ere ha.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, other {Enyeghị ihe ize ndụ maka {list}: lee mpempe data nchekwa so ha bịa.}}",
-    "safety": "Ihe glaze kpọrọ nkụ na-eme uzuzu, ị ghaghị igbochi ya ịbanye na ngụgụ gị, ọbụna uzuzu site n'ihe a na-ekewaghị dịka ihe ize ndụ. Lee <mixing>Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha</mixing>. Ọ bụrụ na ụmụaka ma ọ bụ anụ ụlọ nọ nso, lekwaa <home>Ewela nsí gbuo ezinụlọ gị</home>. Ebe mpempe data nchekwa nke ihe kwuru karịa, soro ya."
+    "safety": "Ihe glaze kpọrọ nkụ na-eme uzuzu, ị ghaghị igbochi ya ịbanye na ngụgụ gị, ọbụna uzuzu site n'ihe a na-ekewaghị dịka ihe ize ndụ. Lee <mixing>Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha</mixing>. Ọ bụrụ na ụmụaka ma ọ bụ anụ ụlọ nọ nso, lekwaa <home>Enyela ezinụlọ gị nsí</home>. Ebe mpempe data nchekwa nke ihe kwuru karịa, soro ya."
   },
   "compare": {
     "heading": "Tụlee usoro abụọ",
@@ -471,7 +471,7 @@
     "soluble": "{name} na-agbaze na mmiri, nke na-eme ya ihe glaze na-adịghị mma: ọ na-abanye n'ite ma na-agbanwe ka glaze na-eguzo. Frit na-ebu otu oxide ahụ na-agbazeghị.",
     "boronFrit": "Frit calcium borate na-abụkarị obere mgbakwunye boron, ọ bụghị ntọala (otu onye na-ere kwuru 10% agaghị karịa). Dịka frit isi, tụọ anya glaze na-agbapụ nke nwere ike ịghọ dị ka mmiri ara ma ọ bụ acha anụnụ-ọcha ma too crystal na bọket. Jiri frit ntọala borosilicate ma mee ka nke a dị obere.",
     "lowExpansionFrit": "Frit nwere mgbasa dị ala bụ ọgwụ crazing, a na-eji ya ihe dị ka 5-10%. Dịka frit isi, glaze ahụ nwere ike ọ gaghị agbaze nke ọma na cone 06-02 ma nwee ike ịdị ka ọ chapụghị; ebe ọ gbazere, ọ nwere ike inwe shivering, na-atụpụ iberibe dị nkọ site n'ọnụ ite.",
-    "alkaliFrit": "Frit alkaline dị elu dịka flux isi na-enye agba na-enwu gbaa mana glaze dị nro, na-asọ asọ nke na-enwe crazing n'ụrọ ọ bụla: ọ dị mma maka crackle na raku, ọ bụghị maka elu nri.",
+    "alkaliFrit": "Frit alkaline dị elu dịka flux isi na-enye agba na-enwu gbaa mana glaze dị nro, na-asọ asọ nke na-enwe crazing n'ihe fọrọ nke nta ka ọ bụrụ ụrọ ọ bụla: ọ dị mma maka crackle na raku, ọ bụghị maka elu nri.",
     "expansionRises": "Mgbasa ya a gbakọrọ na-arị elu site na {was} ruo {now}.",
     "expansionRisesProbably": "Ọ bụrụ na glaze ochie ahụ dabara ụrọ gị naanị ntakịrị, o yikarịrị ka nke a ga-enwe crazing, mgbe ụfọdụ izu ole na ole ka e mesịrị.",
     "expansionRisesMay": "Ọ bụrụ na glaze ochie ahụ dabara ụrọ gị naanị ntakịrị, nke a nwere ike inwe crazing, mgbe ụfọdụ izu ole na ole ka e mesịrị.",

@@ -1,5 +1,5 @@
 ---
-title: Ewela nsí gbuo ezinụlọ gị
+title: Enyela ezinụlọ gị nsí
 lead: Ihe ị ga-eme ma ọ bụrụ na nwatakịrị ma ọ bụ anụ ụlọ elodata ihe glaze, na otu ị ga-esi debe ihe ndị a, uzuzu na kiln n'ebe ha na-agaghị eru, ka ọ ghara ime.
 ---
 

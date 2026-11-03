@@ -157,7 +157,7 @@ Label: Ihe glaze a na-ahụkarị
 | Bentonite                                         | Ijide n'ime mmiri           | Ụrọ dị nnọọ nro, na-abụkarị 1–3%, iji kwụsị ịda n'ala                                                                                                                 |
 
 > [!WARNING]
-> Ihe glaze bụ ntụ dị nro. Uzuzu silica na-emerụ ngụgụ ahụ na-enweghị ihe mgbaàmà na mbụ, ihe ụfọdụ, dịka barium carbonate na lithium carbonate, nwekwara nsí ma e loo ha. Jiri nwayọọ jide ntụ, jiri mmiri hichaa, yiri respirator dabara gị mgbe ị na-arụ ọrụ akọrọ. [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing) na [Ewela nsí gbuo ezinụlọ gị](/guides/home-safety) na-akọwa otu.
+> Ihe glaze bụ ntụ dị nro. Uzuzu silica na-emerụ ngụgụ ahụ na-enweghị ihe mgbaàmà na mbụ, ihe ụfọdụ, dịka barium carbonate na lithium carbonate, nwekwara nsí ma e loo ha. Jiri nwayọọ jide ntụ, jiri mmiri hichaa, yiri respirator dabara gị mgbe ị na-arụ ọrụ akọrọ. [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing) na [Enyela ezinụlọ gị nsí](/guides/home-safety) na-akọwa otu.
 
 ### Aha dị iche n'ebe dị iche
 

@@ -125,7 +125,7 @@ Uzuzu dakwasịrị n'ala, n'elu tebụl ọrụ na n'uwe na-alaghachi n'ikuku o
 - **Erila nri, aṅụla ihe ọṅụṅụ, aṅụla sịga n'ụlọ ọrụ ite.** Dị ka Digitalfire si kwuo ya, "mmadụ ekwesighi ighọta barium carbonate n'ụzọ ezighị ezi dị ka shuga tebụl mgbe ọ na-eme kọfị". Dee aha n'elu igbe ọ bụla.
 - **Saa aka gị** tupu i rie nri, ṅụọ ihe, ṅụọ sịga ma ọ bụ jiri ụlọ mposi, ma hichaa n'okpuru mbọ gị. Jiri mmiri ọkụ na ncha dị nro kama ihe nhicha na-akọ akọ.
 
-Maka idebe uzuzu na ihe eji arụ ọrụ n'ebe dị anya site n'ụmụaka na anụ ụlọ, lee [Ewela nsí gbuo ezinụlọ gị](/guides/home-safety).
+Maka idebe uzuzu na ihe eji arụ ọrụ n'ebe dị anya site n'ụmụaka na anụ ụlọ, lee [Enyela ezinụlọ gị nsí](/guides/home-safety).
 
 ## Ikuku na-adọpụ n'ebe ọrụ na ịgba spray {#extraction-and-spraying}
 
@@ -177,7 +177,7 @@ Ihe glaze na-agbakwunye ndị ọzọ. Oxide metal ụfọdụ na-emepụta anw�
 - **Ala.** Jiri ala na-adịghị ere ọkụ dị ka concrete ma ọ bụ tile ceramic, ọ dịghị mgbe osisi, kapet ma ọ bụ vinyl. Debe osisi, akwụkwọ na ihe mgbaze n'ebe dị anya site na kiln.
 - **Ọkụ eletrik.** CIRMA na-atụ aro circuit nke ya naanị, ọ dịghị extension cord ma ọ bụ surge protector, iwepụ plọg n'etiti ịgba ọkụ, na ihe mgbanyụ ọkụ n'ime 25 ft (7.6 m).
 - **Okpomọkụ ụlọ.** Skutt kwuru ka i debe ụlọ ahụ n'okpuru {{38 °C; 100 °F}}, ma ọ bụghị ya, controller nwere ike ịgbanyụ kiln. Ebe ọ bụ na vent anaghị ewepụ okpomọkụ, obere ụlọ nwere ike ịchọkwa fan. Ekwela ka isi sprinkler na ihe na-achọpụta okpomọkụ nọ ozugbo n'elu kiln.
-- **Alarm carbon monoxide.** Anyị ahụghị iwu chọrọ otu maka kiln eletrik, mana ihe ndụ na-ere ọkụ na-emepụta CO, ya mere alarm n'ime ụlọ kiln na n'ime ụlọ ndị dị ya nso bụ nzọụkwụ nwere ezi uche, dị ọnụ ala (lee [Ewela nsí gbuo ezinụlọ gị](/guides/home-safety)).
+- **Alarm carbon monoxide.** Anyị ahụghị iwu chọrọ otu maka kiln eletrik, mana ihe ndụ na-ere ọkụ na-emepụta CO, ya mere alarm n'ime ụlọ kiln na n'ime ụlọ ndị dị ya nso bụ nzọụkwụ nwere ezi uche, dị ọnụ ala (lee [Enyela ezinụlọ gị nsí](/guides/home-safety)).
 
 Raku na-emepụta anwụrụ ọkụ na CO dị ukwuu; Utah na-adụ ọdụ ime ya n'èzí, n'ebe dị anya site n'ebe ikuku na-abata na windo. Maka ịgba ọkụ n'onwe ya, lee [Ịgba ọkụ na kiln dị mfe](/guides/firing).
 

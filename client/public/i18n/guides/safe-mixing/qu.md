@@ -44,7 +44,7 @@ Aswan achka harkakuyqa yachaykunamantam hamun, mana llamk'anakunamantachu. Saña
 ### Atispaqa ñut'uta ama llamk'achiychu
 
 - **Ña chaqrusqa huq'u esmalteta rantiy**, llamk'ayniykipaq allin kaptin. HSEpa ñawpaq yuyaychayninqa "Atikuptinqa ña llamk'achinapaq esmalteta rantiy", utaq granulasqa utaq barbotina rikch'aqta.
-- **Aswan mana manchakuna esmalte ruranakunata akllay.** HSE yuyaychan "aswan pisi sílice cristalinayuq esmaltekunata". Digitalfire yuyaychan **fritata** (fábricapi rurasqa vidrio, ñut'uman kutachisqa, chawa materialkunamanta ancha aswan pisitam chulluchikun) chawa carbonato de bario rantinpi, **colorante cerámicotapas** (fábricapi rurasqa cerámica llimp'i) yana llimp'ipaq achka manganeso, cobalto utaq níquel rantinpi.
+- **Aswan mana manchakuna esmalte ruranakunata akllay.** HSE yuyaychan "aswan pisi sílice cristalinayuq esmaltekunata". Digitalfire yuyaychan **fritata** (fábricapi rurasqa vidrio, ñut'uman kutachisqa, chawa materialkunamanta ancha aswan pisitam unupi chulluchikun) chawa carbonato de bario rantinpi, **colorante cerámicotapas** (fábricapi rurasqa cerámica llimp'i) yana llimp'ipaq achka manganeso, cobalto utaq níquel rantinpi.
 
 ### Ñut'uta llamk'achispaqa
 
@@ -116,8 +116,8 @@ Pampakunapi, mesakunapi, p'achakunapi tiyakuq ñut'u allpaqa sapa kuti kuyuchisq
 ### Huq'uwan pichay
 
 - **Unuwan trapeay, pichay ima.** Universidad de Utah yuyaychan sapa p'unchaw pampakunata llamk'ana mesakunata huq'u trapeadorwan pichanata, HSEtaq llamk'ana wasikunata sapa p'unchaw tukukuyninpi unuwan mayllanankuta mañakun. Wasipiqa, sapa chaqruy qhipaman pichanaykita trapeanaykita ima yuyaychayku.
-- **Ama hayk'aqpas ch'akita pichaychu, ch'aki escobillawanpas, aire comprimidowanpas.** OSHA kaykunata hark'an exposiciónta yapaptinku, HSEtaq nin ama hayk'aqpas qarakunamanta p'achakunamanta ñut'u allpata escobillawan pichaychu nitaq phukuychu.
-- **Ñut'u manchakuq allpapaq rurasqa máquinawanlla aspiraray:** Estados Unidospi **HEPA** (0.3 µm sayayniyuq ñut'ukunamanta pisimanta pisi 99.97%-ta hap'iq filtro), utaq Reino Unidopi Unión Europeapi pisimanta pisi **ñut'u allpa Clase M**. Huk suyukunapi, kaqlla calificaciónta maskay. Sapa kuti taller aspiradorakuna, wasi aspiradorakuna ima mana kayhinachu calificasqa, mana llamk'achiykumanchu, ñut'u allpa pasaspa lluqsinanmanta lluqsinman. Ch'usaqyachinaykipaqqa respiradorniykita churakuy.
+- **Ama hayk'aqpas ch'akita pichaychu, ch'aki escobillawanpas, aire comprimidowanpas.** OSHA kaykunata hark'an maypichus exposiciónta yapanku chaypi, HSEtaq nin ama hayk'aqpas qarakunamanta p'achakunamanta ñut'u allpata escobillawan pichaychu nitaq phukuychu.
+- **Ñut'u manchakuq allpapaq rurasqa máquinawanlla aspiraray:** Estados Unidospi **HEPA** (0.3 µm sayayniyuq ñut'ukunamanta pisimanta pisi 99.97%-ta hap'iq filtro), utaq Reino Unidopi Unión Europeapi pisimanta pisi **ñut'u allpa Clase M**. Huk suyukunapi, kaqlla calificaciónta maskay. Común taller aspiradorakuna, wasi aspiradorakuna imaqa manam kayhinachu calificasqa, mana llamk'achiykumanchu, ñut'u allpa pasaspa lluqsinanmanta lluqsinman. Ch'usaqyachinaykipaqqa respiradorniykita churakuy.
 
 ### P'achakuna, mikhuy, makikuna
 
@@ -164,7 +164,7 @@ Esmalte materialkunaqa aswanta yapan. Wakin metal óxidokunam q'usñita ruranku,
 **Uraykuq wayra hurquqqa** (downdraft) hornoman churasqa huch'uy ventiladormi. Ruphachina ukhumanta pisi wayrata aysan, cuartopa wayranwan ch'uyanchan, tubowantaq hawaman apan, q'usñikuna manaraq cuartoman chayaptin hap'ispa. Horno ruraq Skutt nin llapan horno ruraqkunam hukta yuyaychanku.
 
 - **Reemplazo wayratam munan.** Skuttpa EnviroVent 2-nin sapa minuto 140 pies cúbicos (yaqa 4 m³) wayrata hawaman kachan, chhaynallataq yaykunan tiyan.
-- **"Manchakuq q'usñikunallatam hurqun, mana ruphaytachu"** (Skutt), wasipa q'uñichiyninmanta chiriyachiyninmanta ima sapaqmi llamk'anan.
+- **"Manchakuq q'usñikunallatam hurqun, mana ruphaytachu"** (Skutt), wasipa q'uñichiyninmanta chiriyachiyninmanta ima sapaq llamk'anan allinmi kanman.
 - **Tubowan hawaman apay,** ventanakunamanta, punkukunamanta, wayra yaykunakunamanta karupi. Finkelnburg yuyaychan muyuq jaula (centrífugo) ventiladorta, mana hélice ventiladortachu.
 - Wakin llaqta kamachiykunam horno wayra hurquqta mañakun, chaymi llaqtaykipa kamachiyninta qhaway.
 
@@ -207,7 +207,7 @@ Label: Aswan allinta qhawana materialkuna
 | Fluorita, criolita, lepidolita                    | Ruphachiypi flúor gaskunata qunku; fluoritaqa qaratapas k'arachin.                                                                                                                                                                                                      | Hornopa wayranta hawaman hurquy; guantekuna.                                                                                            |
 | Talco                                             | IARC 2A julio 2024-manta; asbestowan qhillichasqa talcoqa asbesto hina yupasqam, Grupo 1.                                                                                                                                                                               | Laminasqa (mana fibrosochu), mana asbestoyuq talco; SDS-ninta qhaway.                                                                   |
 
-Bórax, ácido bórico, carbonato de sodio, potasa ima unupi chulluchikunku, chaymi paykunata p'akisqa qarawan ukhuman yaykunankupaq utaq mana mayllasqa makikunamanta millp'unapaq aswan atikuq hina qhawayku.
+Bórax, ácido bórico, carbonato de sodio, potasa ima unupi chulluchikunku, chaymi paykunata p'akisqa qarawan ukhuman yaykunankupaq utaq mana mayllasqa makikunamanta millp'unapaq llapanmanta aswan atikuq hina qhawayku.
 
 > [!NOTE]
 > Esmalte rurana chawa carbonato de bariota, achka manganesota, utaq ima titi (Pb) utaq cadmio materialtapas mañakuptinqa, rantinpi frita utaq colorante llamk'achiq rikch'aqta maskay. Glazecalcqa ñawpaq esmaltepa rantinpa ima químicanta tupachiyta atin; chaymantataq musuq esmalteta pruebay.

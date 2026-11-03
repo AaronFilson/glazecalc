@@ -612,7 +612,7 @@ Label: Ebe mmalite maka kiln aka
 
 Na mmalite ịgba ọkụ, ụrọ na glaze na-ewepụta uzuoku mmiri na anwụrụ, gụnyere carbon monoxide, glaze nwekwara ike iwepụta anwụrụ nwere nsí ma e mesịa n'ịgba ọkụ. L&L kpọrọ ịhapụ ha ka ha pụọ "ihe dị oke mkpa". Ọ bụrụ na enweghị usoro vent, nke ahụ pụtara mkpuchi e weliri na peephole meghere emeghe na ogbo mbụ, dịka n'usoro ndị dị n'elu; ime ka ikpo ọkụ dị nwayọọ n'oge a na-enyekwa carbon aka ịgbapụ. Na kiln na-enweghị vent, Dawson, onye mere sitter ahụ, kwukwara ka a hapụ peephole dị n'elu ka ọ dị meghere n'oge ịgba ọkụ niile: ịhapụ ikuku ahụ "ga-ebelata mmebi nke akụkụ igwe kiln ma mee ka tube assembly dị ogologo ndụ". **Downdraft vent** (vent nwere ọkụ eletrik e tinyere na kiln) na-agbanwe nke a. Ọ na-ahapụ ikuku apụ, ya mere Orton kwuru na mkpuchi na peephole na-anọgide mechiri n'oge ịgba ọkụ niile ewezuga ilele cone, L&L kwukwara ka a hapụ vent ka ọ na-agba ma tinye plug na peephole.
 
-Maka ịhapụ ikuku apụ n'ime ụlọ, na maka alarm carbon monoxide, lee [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing) na [Ewela nsí gbuo ezinụlọ gị](/guides/home-safety).
+Maka ịhapụ ikuku apụ n'ime ụlọ, na maka alarm carbon monoxide, lee [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing) na [Enyela ezinụlọ gị nsí](/guides/home-safety).
 
 ### Mgbe kiln na-agba ọkụ
 

@@ -37,7 +37,7 @@ Esmalte materialkunaqa iskay hina ñanpi ayllutan mana allinta ruranman:
 - **Agudo** manchakuyqa (huk kutilla chaskisqamanta mana allin, pisi horaskunapi) **soluble** materialta millp'uymi, unupi utaq wiksa ácidopi chulluq material. Llaveyuq waqaychaywan, hanaqpi yupaykunawanmi chayta hark'akun.
 - **Crónico** manchakuyqa (achka huch'uy kutikunamanta mana allin) ñut'u allpan, aswantaqa sílice, titi (plomo, Pb), qallariypi mana ima rikch'aytapas qun, p'achakunapitaq wasiman puriykun. Llimphu yachaykunawanmi chayta hark'akun.
 
-Esmaltepa aswan achkan sílice, caolín, feldespato ima, yaqa mana chulluqkuna. Paykunataqa unay pachapaq samaypa manchakuynin hina qhawayku, mana millp'uypa emergencian hina. Uraypi soluble materialkunatan ñawpaqta llaveyuqpi waqaychana.
+Esmaltepa aswan achkan sílice, caolín, feldespato ima, unupi yaqa mana chulluqkuna. Paykunataqa unay pachapaq samaypa manchakuynin hina qhawayku, mana millp'uypa emergencian hina. Uraypi soluble materialkunatan ñawpaqta llaveyuqpi waqaychana.
 
 Table: Soluble esmalte materialkuna: millp'usqa kaspa imatataq ruranku
 Label: Soluble materialkuna
@@ -180,7 +180,7 @@ Ruphachiyqa q'usñikunatan qun, chayrayku hornopa q'usñinta hawaman lluqsichiy;
 Infrarrojo k'anchay, mana rikuy atina, "752°F (400°C)-manta qallarin", Ceramic Arts Networktaq nin chaymanta hanaqpi hornoman qhawayqa sapa kuti ñawi hark'anawan ruranapaq. Infrarrojoqa ñawipa lentenintan mana allinta ruranman, cataratakunamantaq apanman, unay qhawaytaq retinata k'irinman. Inti lentekunapas didymium lentekunapas manan hark'ankuchu.
 
 > [!WARNING]
-> Wawakunaqa manan ni imaynapas hornoman qhawanankuchu. K'anchaq qhawana t'uquqa paykunatan aysan, manataq hark'ana lentekunata takyasqata churakunqakuchu, chayrayku horno q'uñi kashaptin paykunata karupi hap'iy. Kuraqkunaqa pisi pachallan qhawanankuman, IR-paq tupusqa soldadura lentekunawan. Qillqakunaqa 1.7 manta 5-kama tonokunata yuyaychanku; tono 3 yuyaysapa akllaymi, aswan yanataq qhipaman ch'iqchikunata (manchas) rikuspaqa.
+> Wawakunaqa ama ni imaynapas hornoman qhawankumanchu. K'anchaq qhawana t'uquqa paykunatan aysan, manataq hark'ana lentekunata takyasqata churakunqakuchu, chayrayku horno q'uñi kashaptin paykunata karupi hap'iy. Kuraqkunaqa pisi pachallan qhawanankuman, IR-paq tupusqa soldadura lentekunawan. Qillqakunaqa 1.7 manta 5-kama tonokunata yuyaychanku; tono 3 yuyaysapa akllaymi, aswan yanataq qhipaman ch'iqchikunata (manchas) rikuspaqa.
 
 ## Makiwan rurasqa saña ayllupa mesanpi {#handmade-ware}
 

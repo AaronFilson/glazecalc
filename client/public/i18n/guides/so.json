@@ -137,7 +137,7 @@
     },
     "setBy": "Waxaa dejiyay <link>{law}</link>.",
     "from": "Wuxuu dhaqan galayaa laga bilaabo {date}.",
-    "beforeSetBy": "Ilaa markaas, xadka waxaa dejiyay <link>{law}</link>.",
+    "beforeSetBy": "Ilaa markaas, xadka waxaa dejiya <link>{law}</link>.",
     "lowerThanEu": "Waa ka hooseeyaa xadka waajibka ah ee EU ee {value} mg/m³.",
     "sameAsEu": "Waa la mid xadka waajibka ah ee EU.",
     "recommendedBy": "{abbr} ({by}) wuxuu qiimahan ku taliyaa <link>{title}</link>. Ma aha sharci.",

@@ -76,7 +76,7 @@ Igbo nouns do not change for the plural; the number says it:
 | How to make a glaze                       | Otu esi eme glaze                               |
 | Safe mixing and ventilation               | Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha |
 | Firing a basic kiln                       | Ịgba ọkụ na kiln dị mfe                         |
-| Don't poison your family                  | **Ewela nsí gbuo ezinụlọ gị**                   |
+| Don't poison your family                  | **Enyela ezinụlọ gị nsí**                       |
 | Learn with John Britt's free glaze course | Mụta na nkuzi glaze n'efu nke John Britt        |
 
 **Pitfalls.**
