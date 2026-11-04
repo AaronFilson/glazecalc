@@ -801,10 +801,10 @@ describe('MCP: teach_me', () => {
       expect(text).to.include(part);
     }
     expect(got.description).to.equal('Teach me: line blends');
-    // Lab work: the safe mixing habits come attached, with the unit's guide sections (two at most).
+    // Lab work: the safe mixing habits come attached, with the unit's guide sections (three at most).
     const resources = got.messages.slice(1).map((m: Json) => m.content.resource.uri as string);
     expect(resources[0]).to.include('safe-mixing/habits');
-    expect(resources.length).to.be.within(2, 3);
+    expect(resources.length).to.be.within(2, 4);
   });
 
   it('with no matching unit: no video at all, the guide sections attached instead', async () => {
@@ -814,7 +814,7 @@ describe('MCP: teach_me', () => {
     expect(text).to.include('do not guess one');
     expect(text).to.not.include('His videos');
     const resources = got.messages.slice(1);
-    expect(resources.length).to.be.within(1, 2);
+    expect(resources.length).to.be.within(1, 3);
     for (const message of resources) expect(message.content.resource.uri).to.not.include(COURSE_GUIDE);
   });
 

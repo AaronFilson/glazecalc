@@ -97,7 +97,7 @@ export const LEVELS = {
 } as const;
 
 /** The most guide sections teach_me attaches. */
-const MOST_TEACH_SECTIONS = 2;
+const MOST_TEACH_SECTIONS = 3;
 
 /** What to put first for lab work, from the safe mixing sections attached: the kiln, the dust, or both. */
 const safetyWords = (ids: readonly string[]): string => {
@@ -465,14 +465,14 @@ export const registerPrompts = (server: McpServer): void => {
       const lab = unit?.lab === true;
       const safetyIds = lab ? (unit?.safety ?? ['habits']) : [];
       const safety = safetyIds.map((id) => sectionIn('safe-mixing', id, language));
-      // The guide sections: the best search hit first (not the companion guide itself, nor a list of
+      // The guide sections: the two best search hits first (not the companion guide itself, nor a list of
       // sources), then the matched unit's first read, then the rest; each once, and none of the safety
       // sections attached above.
       const hits = searchGuides(topic, { language, limit: 6 }).hits.filter(
         (hit) => hit.guide !== COURSE_GUIDE && hit.section !== 'sources'
       );
       const reads = unit?.reads ?? [];
-      const picked = [...hits.slice(0, 1), ...reads.slice(0, 1), ...hits.slice(1), ...reads.slice(1)]
+      const picked = [...hits.slice(0, 2), ...reads.slice(0, 1), ...hits.slice(2), ...reads.slice(1)]
         .map((hit) => ({ guide: hit.guide, section: hit.section }))
         .filter((hit) => !(hit.guide === 'safe-mixing' && safetyIds.includes(hit.section)))
         .filter((hit, i, all) => all.findIndex((h) => h.guide === hit.guide && h.section === hit.section) === i);
