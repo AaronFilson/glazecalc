@@ -12,6 +12,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 ### How to use it
 
 - Take the units in order, or pick the one you need. Some of his videos are numbered out of order; here they are grouped by subject.
+- The numbers are his. His list has no video 32 and no video 42, and he gave the number 49 to two videos. Two videos that are promotions (46 and 51) and a question and answer video are left out here.
 - Watch the videos first. They open on YouTube, and they are in English.
 - Then read the guide sections, and try the exercises. You need an account for the exercises that save a recipe, a blend or a firing log.
 - The exercises name the tools an assistant can use, such as `analyze_recipe`. In an assistant, the prompt **glaze_course_lesson** sets up a lesson for a unit.
@@ -92,9 +93,11 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 ### Try
 
-1. Save two base glazes as recipes, then copy each and add the same colorant to the copies. Compare their unity formulas: what differs in the bases (boron, zinc, magnesium, alkali) that might change the color?
+1. Save two base glazes as recipes, then copy each and add the same colorant to the copies, as an addition on top of the 100. Compare their unity formulas: what differs in the bases (boron, zinc, magnesium, alkali) that might change the color?
 2. On [Blends](/blends), make a line blend from a base to the same base with a colorant, and print what to weigh for each tile.
-3. With an assistant: ask it to run `compare_recipes` on two bases, or on a base and the same base with the colorant, and say what differs. Then `blend_recipes` from the base to the colored base for the tiles.
+3. With an assistant: ask it to run `compare_recipes` on the two bases only, without the colorant, and say what differs. Then add the colorant to each base as an addition on top of the 100.
+
+Colorant oxides count as fluxes in the unity formula. So a colorant changes the unity formula a little, too.
 
 ## Unit 5: Blending and testing methods {#blending}
 
@@ -172,6 +175,9 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 ## Unit 8: Where recipes come from, and substitutes {#recipes-and-substitutes}
 
+> [!WARNING]
+> Testing a substitute means weighing raw materials. Borates such as Gerstley Borate dissolve a little in water. Read [Materials that need most care](/guides/safe-mixing#materials) and [Habits that matter most](/guides/safe-mixing#habits) first.
+
 ### Watch
 
 - [ORIGINS OF GLAZE RECIPES (Video #37 in the FREE online glaze course)](https://www.youtube.com/watch?v=0_tI2JZHLNA)
@@ -237,7 +243,10 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 ## Unit 11: Clay and slip {#clay}
 
-These videos are about clay bodies and slips. Glazecalc works out glazes, not clay bodies, so this unit is for watching.
+These videos are about clay bodies and slips. Glazecalc works out glazes, not clay bodies, so there is little to calculate here. If you dig or mix clay yourself, read the warning first.
+
+> [!WARNING]
+> Digging, drying and sieving wild clay makes dust, and clay dust has silica in it. You do not know what else a wild clay holds. Read [The main hazard: dust](/guides/safe-mixing#the-main-hazard) and [Respirators](/guides/safe-mixing#respirators) first.
 
 ### Watch
 
@@ -259,6 +268,9 @@ These videos are about clay bodies and slips. Glazecalc works out glazes, not cl
 1. Write down the clay bodies you use, with their firing range, in a [note](/notes), and test every glaze on each of them.
 
 ## Unit 12: Firing {#firing}
+
+> [!WARNING]
+> A firing kiln gives off fumes, and a gas kiln or a reduction firing makes carbon monoxide. Vent the kiln and the room, and keep away from the hot kiln and its parts: they burn. Read [Venting the kiln](/guides/safe-mixing#kiln) first.
 
 ### Watch
 

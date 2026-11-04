@@ -12,6 +12,7 @@
 import { McpServer, type McpRequestContext, type RegisteredTool } from '@modelcontextprotocol/server';
 import { type Caller, fail } from './common.ts';
 import { registerDictation } from './dictation.ts';
+import { BRITT_RULE } from './guides.ts';
 import { registerPrompts } from './prompts.ts';
 import { requestStateCodec } from './request_state.ts';
 import { ACCOUNT_TOOLS, registerAccountTools } from './tools/account.ts';
@@ -29,7 +30,7 @@ export const SERVER_INFO = {
   websiteUrl: 'https://glazecalcapp.com'
 } as const;
 
-const INSTRUCTIONS =
+export const INSTRUCTIONS =
   'Glazecalc works out ceramic glaze chemistry. Use search_materials to find material names, then analyze_recipe, ' +
   'check_limits, suggest_substitutes or match_from_materials with recipe lines; solve_target makes a recipe ' +
   'for a target unity formula or oxide analysis from given materials; blend_recipes works out the test ' +
@@ -52,7 +53,9 @@ const INSTRUCTIONS =
   'for their approval and nothing is changed until they give it: pass on the link Glazecalc gives, and never ' +
   'say a change was made before it was. When the person dictates studio notes (a recipe, a firing log, test tile ' +
   'results), the prompt dictation says how: read every record back and save only after a clear yes, and never fill ' +
-  'in an amount, temperature or result they did not give.';
+  "in an amount, temperature or result they did not give. The guides include a companion to John Britt's free " +
+  'online Glaze Course on YouTube: Glazecalc is not connected with him. ' +
+  BRITT_RULE;
 
 /** The caller authInfo carries, as server/mcp/index.ts sets it. */
 export const callerOf = (ctx: McpRequestContext): Caller => {

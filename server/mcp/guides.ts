@@ -182,12 +182,19 @@ export const guideMarkdown = (guide: Guide): string =>
     .filter(Boolean)
     .join('\n\n');
 
+/** The companion to John Britt's course, whose sections carry BRITT_RULE when given alone. */
+export const BRITT_GUIDE = 'learn-with-john-britt';
+
+/** Said wherever John Britt's course is named: his videos are linked, never retold. */
+export const BRITT_RULE = "Link John Britt's videos by title only; never retell, summarise or quote them.";
+
 /** One section as Markdown; on its own, with the guide's title and where it comes from. */
 export const sectionMarkdown = (guide: Guide, section: GuideSection, alone = true): string =>
   [
     alone ? `# ${guide.title}` : '',
     `## ${section.heading}`,
     alone ? `Source: ${guideUrl(guide.id, guide.asked, section.id)}` : '',
+    alone && guide.id === BRITT_GUIDE ? `Note: ${BRITT_RULE}` : '',
     section.text
   ]
     .filter(Boolean)

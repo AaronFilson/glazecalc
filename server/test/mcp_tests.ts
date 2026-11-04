@@ -1263,8 +1263,8 @@ describe('MCP: the guides, resources and prompts', () => {
     ]) {
       expect(text).to.include(part);
     }
-    // Twelve of his videos for this unit, and no embedding.
-    expect(text.match(/https:\/\/www\.youtube\.com\/watch\?v=/g)).to.have.length(12);
+    // Twelve of his videos for this unit, the first of the next unit's, and no embedding.
+    expect(text.match(/https:\/\/www\.youtube\.com\/watch\?v=/g)).to.have.length(13);
     expect(text).not.to.match(/embed|iframe/i);
     // The unit itself, the safe mixing habits first, then the sections it points to, in the language asked.
     expect(attached.map((m: Json) => m.content.resource.uri)).to.eql([

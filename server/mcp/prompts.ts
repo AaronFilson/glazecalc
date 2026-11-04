@@ -9,7 +9,7 @@
 // tools' descriptions are, and ask for the answer in the person's language.
 import * as z from 'zod';
 import { completable, type McpServer } from '@modelcontextprotocol/server';
-import { COURSE_GUIDE, courseUnits, findUnit, matchTopic } from './course.ts';
+import { BRITT_RULE, COURSE_GUIDE, courseUnits, findUnit, matchTopic } from './course.ts';
 import {
   GUIDE_IDS,
   type Guide,
@@ -61,6 +61,10 @@ const firingLine = (cone: string | undefined): string =>
 
 const SAFETY =
   'The limit checks are cautions from published limits, not proof that a glaze is safe: never call a glaze food safe, and advise a test firing on a test tile and, for surfaces that touch food or drink, a leach test by a laboratory.';
+
+/** The safe mixing line for prompts that may lead to weighing and mixing, and to a material's hazards. */
+const MIXING =
+  'If the work leads to weighing and mixing dry materials, point me to the safe mixing guide first (dust, a fitted respirator, wet cleaning). If get_material lists hazards for a material, name them and point to /guides/safe-mixing#materials. ';
 
 const user = (text: string) => ({ role: 'user' as const, content: { type: 'text' as const, text } });
 
@@ -146,7 +150,7 @@ export const registerPrompts = (server: McpServer): void => {
               '4. Give the first changes to try, smallest first, with amounts, and check a changed recipe with analyze_recipe and check_limits before suggesting it.',
               '5. Cite the guide sections you used by their addresses.',
               '',
-              SAFETY + answerIn(language)
+              MIXING + SAFETY + answerIn(language)
             ]
               .filter((line, i, all) => line !== '' || all[i - 1] !== '')
               .join('\n')
@@ -275,6 +279,7 @@ export const registerPrompts = (server: McpServer): void => {
             firingLine(cone),
             '',
             'Please find each material with search_materials and get_material and say in a sentence what it brings (flux, glass former, stabilizer, colorant), run analyze_recipe and explain the unity formula and silica to alumina ratio in plain words (likely gloss or matte, how well it melts), run check_limits for the firing and explain any cautions, and point to the guides with search_guides for the words a beginner meets (unity formula, frit, specific gravity). ' +
+              MIXING +
               SAFETY +
               answerIn(language)
           ].join('\n')
@@ -287,7 +292,8 @@ export const registerPrompts = (server: McpServer): void => {
     {
       title: "A lesson from John Britt's free glaze course",
       description:
-        "Sets up one unit of Glazecalc's companion to John Britt's free online Glaze Course on YouTube: links to his videos by his titles, with credit, the Glazecalc guide sections to read (attached), and hands-on exercises with Glazecalc's tools, with your own recipe if you give one.",
+        "Sets up one unit of Glazecalc's companion to John Britt's free online Glaze Course on YouTube: links to his videos by his titles, with credit, the Glazecalc guide sections to read (attached), and hands-on exercises with Glazecalc's tools, with your own recipe if you give one. " +
+        BRITT_RULE,
       argsSchema: z.object({
         unit: completable(
           z
@@ -316,12 +322,14 @@ export const registerPrompts = (server: McpServer): void => {
         throw new Error(`No unit "${asked}" in the course. The units are: ${names}.`);
       }
       const course = sectionIn(COURSE_GUIDE, unit.id, language);
-      const reads = unit.reads.map((read) => sectionIn(read.guide, read.section, language));
-      // Lab work: the safe mixing guide's habits come first, whatever the unit lists.
-      const safety =
-        unit.lab && !unit.reads.some((read) => read.guide === 'safe-mixing' && read.section === 'habits')
-          ? sectionIn('safe-mixing', 'habits', language)
-          : null;
+      // Lab work: the safe mixing section its warning points to comes first, whatever the unit lists.
+      const safetyId = unit.lab ? (unit.safety ?? 'habits') : undefined;
+      const safety = safetyId ? sectionIn('safe-mixing', safetyId, language) : null;
+      const reads = unit.reads
+        .filter((read) => !(read.guide === 'safe-mixing' && read.section === safetyId))
+        .map((read) => sectionIn(read.guide, read.section, language));
+      const next = courseUnits().find((u) => u.number === unit.number + 1);
+      const nextVideo = next?.videos[0];
       return {
         description: `Unit ${unit.number}: ${unit.title}`,
         messages: [
@@ -344,7 +352,7 @@ export const registerPrompts = (server: McpServer): void => {
               '',
               'Please:',
               unit.lab
-                ? '1. This unit is lab work. Before anything else, point me to the safe mixing guide (the attached section on habits, and search_guides for more): dust, a fitted respirator, wet cleaning.'
+                ? `1. This unit is lab work. Before anything else, point me to the safe mixing guide (the attached section safe-mixing#${safetyId}, and search_guides for more)${safetyId === 'kiln' ? ': kiln fumes, venting, carbon monoxide from gas and reduction kilns, burns.' : ': dust, a fitted respirator, wet cleaning.'}`
                 : '1. Say in a sentence what this unit covers, from its title and the attached guide sections.',
               '2. List his videos with their links and titles, credit John Britt (johnbrittpottery.com), and tell me to watch them on YouTube. Do not retell, summarise or quote what he says in them: you have not seen them, and they are his. Glazecalc is not connected with him.',
               '3. Explain the ideas I need from the attached Glazecalc guide sections, in plain words, and cite them by their addresses.',
@@ -352,6 +360,9 @@ export const registerPrompts = (server: McpServer): void => {
                 (recipe ? ', with my recipe where it fits: find each material with search_materials first.' : '.'),
               '5. End with what to test on a tile next, and what to write down.',
               '6. If Glazecalc is connected to my account, offer to save what we made: a notebook entry (add_notebook_entry) with the series of tiles, their codes and amounts, given about when it is about one of my recipes or firing logs; a recipe (create_recipe) for a tile I liked; a firing log of the test firing (create_firing_log) with the readings I gave; or what came of a recipe in a firing (link_firing). Read back exactly what you will save, and save it only if I say yes. Do not say anything was saved until it was, and do not fill in an amount, temperature or result I did not give.',
+              next
+                ? `7. Close by naming the next unit: unit ${next.number}, ${next.title}${nextVideo ? `, which starts with his video "${nextVideo.title}" (${nextVideo.url})` : ''}.`
+                : '7. Close by saying this was the last unit: the course is done.',
               '',
               SAFETY +
                 answerIn(language) +
@@ -405,6 +416,7 @@ export const registerPrompts = (server: McpServer): void => {
             '5. Suggest the tiles worth making and firing to see it for myself, and what to write down. If Glazecalc is connected to my account, offer to save the series as a notebook entry (add_notebook_entry); read back what you will save and save it only if I say yes.',
             '',
             'The numbers are a calculation from published figures, not a test: the fired tiles decide. ' +
+              MIXING +
               SAFETY +
               answerIn(language)
           ])
@@ -418,7 +430,8 @@ export const registerPrompts = (server: McpServer): void => {
     {
       title: 'Teach me about a glaze topic',
       description:
-        "A short lesson on any glaze topic (crazing, line blends, what boron does...), at your level: plain words from Glazecalc's guides (attached), one small experiment with Glazecalc's tools, what to look for on the tile, and, where the topic matches a unit of the companion to John Britt's free glaze course, links to his videos by his titles, with credit.",
+        "A short lesson on any glaze topic (crazing, line blends, what boron does...), at your level: plain words from Glazecalc's guides (attached), one small experiment with Glazecalc's tools, what to look for on the tile, and, where the topic matches a unit of the companion to John Britt's free glaze course, links to his videos by his titles, with credit. " +
+        BRITT_RULE,
       argsSchema: z.object({
         topic: completable(
           z.string().min(1).max(200).describe('What to learn about, such as "crazing", "line blends" or "boron".'),
@@ -435,19 +448,21 @@ export const registerPrompts = (server: McpServer): void => {
     },
     ({ topic, level, recipe, cone, language }) => {
       const unit = matchTopic(topic);
-      // The guide sections: the unit's own reads where the topic is a unit's, else the best search hits
-      // (not the companion guide itself, nor a list of sources).
-      const picked = unit
-        ? unit.reads.map((read) => ({ guide: read.guide, section: read.section }))
-        : searchGuides(topic, { language, limit: 6 }).hits.filter(
-            (hit) => hit.guide !== COURSE_GUIDE && hit.section !== 'sources'
-          );
+      // The guide sections: the best search hits first (not the companion guide itself, nor a list of
+      // sources), then the matched unit's own reads, each once.
+      const hits = searchGuides(topic, { language, limit: 6 }).hits.filter(
+        (hit) => hit.guide !== COURSE_GUIDE && hit.section !== 'sources'
+      );
+      const picked = [...hits, ...(unit?.reads ?? [])]
+        .map((hit) => ({ guide: hit.guide, section: hit.section }))
+        .filter((hit, i, all) => all.findIndex((h) => h.guide === hit.guide && h.section === hit.section) === i);
       const sections = picked
         .map((hit) => sectionIn(hit.guide, hit.section, language))
         .filter((message) => message !== null)
         .slice(0, MOST_TEACH_SECTIONS);
       const lab = unit?.lab === true;
-      const safety = lab ? sectionIn('safe-mixing', 'habits', language) : null;
+      const safetyId = unit?.safety ?? 'habits';
+      const safety = lab ? sectionIn('safe-mixing', safetyId, language) : null;
       const pace = LEVELS[level ?? 'new'];
       return {
         description: `Teach me: ${topic}`,
@@ -483,7 +498,7 @@ export const registerPrompts = (server: McpServer): void => {
               '6. Ask me one question to check I understood, then offer the next step up a level.',
               '',
               (lab
-                ? 'This topic is lab work: before anything else, point me to the safe mixing guide (the attached section on habits): dust, a fitted respirator, wet cleaning. '
+                ? `This topic is lab work: before anything else, point me to the safe mixing guide (the attached section safe-mixing#${safetyId})${safetyId === 'kiln' ? ': kiln fumes, venting, carbon monoxide from gas and reduction kilns, burns. ' : ': dust, a fitted respirator, wet cleaning. '}`
                 : 'If the experiment leads to weighing and mixing dry materials, point me to the safe mixing guide first (dust, a fitted respirator, wet cleaning). ') +
                 'The numbers are a calculation from published figures, not a test: the fired tiles decide. ' +
                 SAFETY +
