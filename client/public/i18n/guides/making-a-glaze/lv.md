@@ -119,99 +119,120 @@ Ieteikumi par to, cik precīzi svari vajadzīgi, atšķiras. Dereks Au konstatē
 
 Dereks Au sver vienā bļodā atsevišķās kaudzītēs, lai kļūdas gadījumā pulveri varētu izsmelt atpakaļ. Ja sverat vienā spainī, netarējot svarus starp izejvielām, lietotnes Glazecalc uzkrātā kopsumma norāda, kas svariem jārāda pēc katras izejvielas.
 
-## Jaukšana un izkāšana {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### Cik daudz ūdens
+### How much water
 
-Avoti nav vienisprātis. Dereks Au sāk ar biezu maisījumu – 50 mL ūdens uz 100 g pulvera – un vēlāk pielej vairāk. Potterycrafts vienai pulverveida glazūrai{{en: glaze}} norāda 65 mL uz 100 g. UT Austin ņem vienādu ūdens un pulvera svaru, un, kad Digitalfire iebēra 20 kg pulvera 20 kg ūdens, izmērītais relatīvais blīvums{{en: specific gravity}} bija 1,46.
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-Ūdeni pieliet ir ātri, bet atdalīt – lēni, tāpēc sāciet ar mazāku daudzumu. Mūsu aplēse: sāciet ar **apmēram 70–80 mL uz 100 g** (700–800 mL uz kilogramu jeb apmēram 11–12 ASV fl oz uz mārciņu). Ļaujiet pulverim izmirkt, samaisiet un izkāsiet šādā biezumā, pēc tam pamazām pielejiet ūdeni, līdz relatīvais blīvums ir pareizs. 1 mL ūdens sver 1 g, tāpēc ūdeni var nosvērt. Ja ūdens sanācis par daudz, ļaujiet glazūrai nosēsties un pēc tam savāciet dzidro ūdeni no virsmas ar sūkli vai nolejiet to.
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### Rīki un ūdens
+### Tools and water
 
-- **Propellera maisītājs.** Digitalfire labu maisītāju sauc par “neaizstājamu”. Spainī darbu paveic urbjmašīna ar vadu un maisīšanas uzgali. UT Austin to darbina vismaz 4–5 minūtes pēc tam, kad glazūra izskatās samaisīta, un tur asmeni nost no spaiņa, jo tas var nokasīt no tā plastmasu.
-- **Blenderis.** Tas “lieliski darbojas nelielām porcijām” (Digitalfire). Lietojiet to tikai glazūrai: tas nekad nedrīkst atgriezties virtuvē.
-- **Virtuves slotiņa vai nūjiņa.** To izvēlas Zakins, ja nav maisītāja.
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-Arī ūdens mēdz atšķirties, un Digitalfire norāda, ka tas maina to, kā uzvedas glazūras suspensija{{en: slurry}}. Dereks Au izmanto reversās osmozes ūdeni, jo viņa krāna ūdens ir ciets. Lai kādu ūdeni lietotu, pierakstiet to.
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### Soli pa solim
+### Step by step
 
-1. Uzlieciet respiratoru un, ja rokas nonāks glazūrā, arī gumijas cimdus. Zakins valkā masku no svēršanas sākuma līdz brīdim, kad glazūra ir mitra.
-2. Ielejiet spainī apmēram 70–80 mL ūdens uz 100 g pulvera.
-3. Saudzīgi un no neliela augstuma pievienojiet nosvērto pulveri. UT Austin ber pulveri siltā ūdenī, bet Zakins un Au pielej ūdeni pulverim. Mēs iesakām bērt pulveri ūdenī, jo tā paceļas mazāk putekļu, izņemot recepti ar daudz bentonīta: tās sausos pulverus vispirms samaisiet savā starpā.
-4. **Ļaujiet pulverim izmirkt**: lai tas mirkst, to nemaisot. Digitalfire gaida apmēram 20 minūtes. Pulveriem, kuros ir līmviela vai saistviela, jānostāv pa nakti.
-5. Maisiet, līdz vairs nav sausu vietu vai kunkuļu.
-6. Izkāsiet to divreiz (skatiet zemāk).
-7. Apsedziet un ļaujiet nostāvēties pa nakti, tad samaisiet vēlreiz un pārbaudiet, vai dibenā nav izveidojies ciets slānis.
-8. Izmēriet relatīvo blīvumu un pamazām pielejiet ūdeni, līdz sasniedzat mērķa vērtību.
-9. Marķējiet spaini un pierakstiet, ko darījāt.
-10. Uzkopiet mitri: izmazgājiet grīdu un noslaukiet visas virsmas, arī izejvielu trauku ārpusi.
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### Izkāšana
+### Sieving
 
-**Siets** ir rāmī nostiprināts smalks tīkls. Spiežot glazūru caur to ar otu, sadalās kunkuļi, kas paliek pēc maisīšanas, un siets aiztur daļiņas, kas pēc apdedzināšanas būtu redzamas kā tumši punktiņi. Jo lielāks **mesh** skaitlis, jo smalkāks siets: 80 mesh sietam atveres ir apmēram 0,18 mm, bet 100 mesh sietam – apmēram 0,15 mm.
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-Avoti iesaka dažādus sietus. Zakins izkāš divreiz caur 50 vai 80 mesh sietu. Dereks Au lielākajai daļai glazūru izmanto 120 mesh, īpaši tām, kurās ir kobalts vai dzelzs: vienā seladona glazūrā pēc trīs izkāšanām caur 80 mesh joprojām palika dzelzs punktiņi, bet viena izkāšana caur 120 mesh tos novērsa. 60–80 mesh viņš izmanto pelnu glazūrām un citām glazūrām ar rupjām izejvielām. Potterycrafts Apvienotajā Karalistē iesaka 60–80 mesh. Droša pamata izvēle:
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: Kādu sietu izmantot
-Label: Sieta mesh
+Table: Which sieve to use
+Label: Sieve mesh
 
-| Glazūra                                                               | Siets                        |
-| --------------------------------------------------------------------- | ---------------------------- |
-| Lielākā daļa glazūru                                                  | Divas izkāšanas caur 80 mesh |
-| Glazūras ar krāsvielām{{en: colorants}}, piemēram, kobaltu vai dzelzi | 100–120 mesh                 |
-| Pelnu glazūras un citas glazūras ar rupjām izejvielām                 | 60–80 mesh                   |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## Relatīvais blīvums {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Relatīvais blīvums**{{en: specific gravity, SG}} (rel. blīvums) parāda, cik daudz pulvera ir jūsu glazūras suspensijā{{en: slurry}}. Tas ir noteikta glazūras{{en: glaze}} tilpuma svars, dalīts ar tāda paša ūdens tilpuma svaru. Ūdenim tas ir 1,00, un glazūra, kuras rādījums ir {{SG 1.45}}, sver 145 g uz 100 mL. Sajaucot līdz izmērītam relatīvajam blīvumam, jūs katru reizi iegūstat tādu pašu biezumu un tādu pašu glazūras kārtu. Tam nav mērvienības, tāpēc tas ir vienāds gan gramos, gan uncēs.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Mērīšana, nosverot 100 mL
+### Measure it by weighing 100 mL
 
-1. Samaisiet glazūru, lai nekas nebūtu nosēdies.
-2. Novietojiet uz svariem 100 mL **mērcilindru** (augstu mērtrauku ar iedaļām) vai 100 mL šļirci un notarējiet svarus.
-3. Piepildiet to ar glazūru tieši līdz 100 mL atzīmei, nolasot atzīmi acu augstumā.
-4. Nosveriet un gramus daliet ar 100: 145 g nozīmē rel. blīvumu 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire arī atzīmē uz krūzes 500 g ūdens līmeni, piepilda krūzi līdz atzīmei ar glazūru un svaru dala ar 500. Lielāks, pilnāks mērtrauks ir precīzāks. **Areometrs** – pludiņš, kura rādījumu nolasa tur, kur tas iegrimst glazūrā, – ir ātrs, bet bieza vai sabiezējusi glazūra var dot kļūdainu rādījumu. Britu areometri, piemēram, tie, ko pārdod Potclays, rāda Bomē grādos (°Bé). Pēc mūsu aprēķina rel. blīvums = 145 ÷ (145 − °Bé), tātad 46 °Bé atbilst apmēram 1,46. Vecākās britu grāmatās norādīts **pintes svars** – cik unču sver britu pinte glazūras: daliet to ar 20, tātad 29 oz atbilst apmēram rel. blīvumam 1,45 (arī mūsu aprēķins).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Mērķa vērtības
+### What to aim for
 
-Avoti nav vienisprātis, visvairāk par uzklāšanu ar otu un uzsmidzināšanu, kur britu piegādātājs Potclays norāda daudz augstākas vērtības (pēc paša teiktā, “tikai orientējošas”). Uzskatiet katru skaitli par sākumpunktu. Digitalfire galvenais ieteikums ir atrast katrai glazūrai piemērotu relatīvo blīvumu un sabiezēšanas pakāpi, tad tos atkārtot un pierakstīt.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Relatīvā blīvuma mērķa vērtības, kur avoti nav vienisprātis
-Label: Relatīvā blīvuma mērķa vērtības
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Lietojums        | Digitalfire un Glazy                                                                                                                                                                  | Potclays (Apvienotā Karaliste)                       | Drošs sākumpunkts                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------- |
-| Iemērkšana       | No {{SG 1.40}} (5 sekunžu iemērkšanai) līdz {{SG 1.50}} (1 sekundes iemērkšanai); mājās sajauktām sabiezinātām glazūrām vislabāk der {{SG 1.43–1.45}}                                 | Caurspīdīgai {{SG 1.46–1.48}}; krāsainai {{SG 1.61}} | {{SG 1.45}}; ja glazūra pil, atšķaidiet līdz {{SG 1.43}} un sabieziniet |
-| Uzklāšana ar otu | No {{SG 1.25}} (plāna caurspīdīga glazūra) līdz {{SG 1.55}} (tumšas detaļas)                                                                                                          | {{SG 1.71–1.81}}                                     | Ievērojiet produkta norādījumus; lietojiet CMC vai otas mediju          |
-| Uzsmidzināšana   | Skaitlis nav dots; Hopers (Hopper), rakstot vietnei Ceramic Arts Network, iesaka daudz šķidrāku glazūru ar deflokulantu{{en: deflocculant}} (piedevu, kas padara suspensiju šķidrāku) | {{SG 1.71}}                                          | Uzticama skaitļa nav; smidziniet tikai smidzināšanas kabīnē             |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Lai iemērkšanas glazūru pārbaudītu ar aci, AMACO iemērc uz 5 sekundēm un skatās, vai kārta ir apmēram tik bieza kā ASV desmit centu monēta (dime). Digitalfire pārbaudei apdedzina proves{{en: test tiles}}, kas iemērktas uz 5 sekundēm.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Ūdens daudzums mērķa relatīvajam blīvumam: mūsu aplēse
+### Water for a target SG: our estimate
 
-Zemāk dotā tabula ir mūsu pašu aprēķins, nevis kāda avota dati. Tajā pieņemts, ka pulvera daļiņu blīvums ir 2,6 g uz cm³, un tas ir pieņēmums, nevis mērījums. Māls, šķīstošas izejvielas un sabiezēšana – tas viss maina īstu glazūru, tāpēc izmantojiet tabulu sākumam un pēc tam mēriet. Pārbaudei: vienādam pulvera un ūdens svaram tā paredz rādījumu {{SG 1.44}}, kas ir tuvu Digitalfire izmērītajam rādījumam {{SG 1.46}}. Tā arī parāda, ka ar 70–80 mL uz 100 g jūs sākat virs rādījuma {{SG 1.50}}, tātad biezāk, nekā vajag.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Ūdens daudzums mērķa relatīvajam blīvumam (mūsu aplēse)
-Label: Ūdens daudzums mērķa relatīvajam blīvumam
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mērķis      | Uz 100 g pulvera |    Uz kilogramu |           Uz mārciņu |
-| ----------- | ---------------: | --------------: | -------------------: |
-| {{SG 1.40}} |   apmēram 115 mL | apmēram 1150 mL | apmēram 18 ASV fl oz |
-| {{SG 1.45}} |    apmēram 98 mL |  apmēram 980 mL | apmēram 15 ASV fl oz |
-| {{SG 1.50}} |    apmēram 85 mL |  apmēram 850 mL | apmēram 13 ASV fl oz |
-| {{SG 1.60}} |    apmēram 64 mL |  apmēram 640 mL | apmēram 10 ASV fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Epsoma sāls, CMC un bentonīts
+### Find your own glaze's dry SG while you mix
 
-**Epsoma sāls** liek glazūrai nedaudz sabiezēt, kad tā stāv mierā, un atkal plūst, kad to samaisa. To sauc par glazūras **flokulēšanu**{{en: flocculating}}, un glazūra, kas šādi uzvedas, ir **tiksotropa**{{en: thixotropic}}: tā uzklājas vienmērīgāk, mazāk pil un mazāk nosēžas. Digitalfire iesaka, kad relatīvais blīvums ir pareizs, sākt ar apmēram 2 g uz galonu (aptuveni 0,5 g uz litru, mūsu pārrēķins) un daudzumu pielāgot katru reizi, kad jaucat, jo devu nevajadzētu noteikt receptē. Iesakām to vispirms izšķīdināt nelielā daudzumā karsta ūdens. Kādā Digitalfire piemērā glazūra, kuras rādījums bija {{SG 1.45}}, pilēja, tāpēc ar ūdeni to atšķaidīja līdz {{SG 1.43}}, bet Epsoma sāls to atkal sabiezināja līdz krēmīgai konsistencei, un tā uzklājās vienmērīgi. Aptuvena pārbaude: samaisiet, apstājieties un vērojiet. Sabiezējusi glazūra vēl apmēram 2 vai 3 sekundes turpina kustēties, tad apstājas un nedaudz atvirzās atpakaļ.
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-**CMC** (karboksimetilceluloze) padara glazūras suspensiju lipīgāku un lēnāk žūstošu un atstāj cietāku kārtu, kas labi turas uz izstrādājuma. Vislielākā nozīme tai ir glazūrām uzklāšanai ar otu un glazūrām ar daudz frites{{en: frit}}. Digitalfire piemērā 3,75 g iejauc 1000 g suspensijas, un CMC jāiejauc ar blenderi. Glazūra ar CMC ar Epsoma sāli nesabiezē, un, tā kā mikrobi barojas ar šo saistvielu, glazūra spainī var mainīties un sākt smirdēt.
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai, kurā ir vairāk nekā 15% māla, nevajadzētu būt vajadzīgs vairāk bentonīta par 1% no sausās glazūras masas.
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## Pieraksti {#records}
+## Keeping records {#records lang=en}
 
-Villerss mērķi formulē labi: “pietiekami daudz informācijas, lai varētu atkārtot iegūtos rezultātus vai no tiem izvairīties”. Pierakstiet, ko plānojat izmēģināt, pirms sākat, un rezultātus, kad izkraujat krāsni. Potclays sarakstam pievieno uzklāšanas veidu, biezumu, masu{{en: clay body}} un visu apdedzināšanu, ieskaitot rampas{{en: ramps}}, noturēšanu{{en: holds}} un dzesēšanu. **Rampa** ir sildīšanas vai dzesēšanas ātrums, piemēram, {{60 °C; 108 °F}} stundā, bet **noturēšana** uztur krāsnī vienu temperatūru noteiktu laiku. Pierakstiet partijas numurus, izmantoto ūdeni un jebkuru aizstāšanu: kad Clay Art Center nomainīja laukšpatu{{en: feldspar}}, apmēram puse tā glazūru{{en: glazes}} bija jākoriģē.
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: Ko pierakstīt par katru glazūras porciju (mūsu veidne)
-Label: Pierakstu veidne
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| Daļa          | Ko pierakstīt                                                                                                                                                                                                                                            |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recepte       | Recepte un tās versija; izejvielu zīmoli un partijas numuri; visas aizstāšanas                                                                                                                                                                           |
-| Jaukšana      | Datums; porcijas lielums; pievienotais ūdens un tā veids (krāna, reversās osmozes vai destilēts); relatīvais blīvums pēc sajaukšanas un galīgais relatīvais blīvums; Epsoma sāls, CMC un bentonīta pievienotais daudzums; sieta mesh un izkāšanu skaits  |
-| Uzklāšana     | Masa; biskvīta apdedzināšanas konuss; iemērkšana, uzklāšana ar otu vai apliešana; iemērkšanas laiks vai kārtu skaits; sausās kārtas biezums                                                                                                              |
-| Apdedzināšana | Krāsns un vieta uz plaukta; apdedzināšanas programma ar rampām, noturēšanu un dzesēšanu; atmosfēra (oksidējoša{{en: oxidation}} vai reducējoša{{en: reduction}}); ko parādīja kontrolkonuss{{en: witness cone}}, ne tikai tas, kas bija iestatīts krāsnī |
-| Rezultāts     | Virsma un krāsa; notecējumi, matplaisas{{en: crazing}} vai adatas dūrieni{{en: pinholes}}; priekšpuses, aizmugures un sāna fotogrāfijas; proves{{en: test tile}} kods                                                                                    |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> Lietotnē Glazecalc saglabātā [recepte](/recipe) glabā pašu recepti. [Apdedzināšanas žurnāls](/firing) reģistrē katru apdedzināšanu: krāsni, datumu, laikus, temperatūras, konusus un piezīmes. [Piezīmēs](/notes) glabājas viss pārējais, piemēram, iepriekš aprakstītais porcijas pieraksts un tas, ko parādīja katra prove.
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## Avoti {#sources}
 

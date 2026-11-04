@@ -119,99 +119,120 @@ Lời khuyên khác nhau về việc cần một chiếc cân mịn đến đâu
 
 Derek Au cân vào một cái bát thành các đống riêng, để một sai sót có thể được xúc ra lại. Nếu bạn cân vào một cái xô mà không trừ bì giữa các nguyên liệu, tổng cộng dồn của Glazecalc cho bạn biết cân nên đọc bao nhiêu sau mỗi nguyên liệu.
 
-## Pha và sàng {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### Bao nhiêu nước
+### How much water
 
-Các nguồn không thống nhất. Derek Au bắt đầu đặc, ở 50 mL nước trên 100 g bột, và thêm sau. Potterycrafts nêu 65 mL trên 100 g cho một loại men bột. UT Austin dùng khối lượng nước và bột bằng nhau, và khi Digitalfire cho 20 kg bột vào 20 kg nước, họ đo được tỷ trọng 1,46.
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-Nước thêm vào nhanh và lấy ra chậm, nên hãy bắt đầu ít. Ước tính của chúng tôi: bắt đầu với **khoảng 70 đến 80 mL trên 100 g** (700 đến 800 mL trên mỗi kilôgam, hay khoảng 11 đến 12 US fl oz trên mỗi pound). Hãy ngâm, pha và sàng ở độ đặc đó, rồi thêm nước từng chút một cho đến khi tỷ trọng đúng. 1 mL nước nặng 1 g, nên bạn có thể cân nó. Nếu bạn thêm quá tay, hãy để men lắng, rồi thấm hoặc đổ nước trong ở trên cùng ra.
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### Dụng cụ và nước
+### Tools and water
 
-- **Máy trộn cánh quạt.** Digitalfire gọi một chiếc tốt là “thiết yếu”. Một máy khoan có dây với cánh khuấy làm được việc trong một cái xô. UT Austin chạy nó ít nhất 4 đến 5 phút sau khi men trông đã trộn, và giữ lưỡi tránh xa xô, vì nó có thể làm bong nhựa.
-- **Máy xay.** Nó “hoạt động cực kỳ tốt cho các mẻ nhỏ” (Digitalfire). Hãy chỉ dùng nó cho men: tuyệt đối không được đem nó trở lại nhà bếp.
-- **Cái đánh trứng hoặc que.** Lựa chọn của Zakin khi không có máy trộn.
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-Nước cũng khác nhau, và Digitalfire ghi chú rằng nó làm thay đổi cách nước men hoạt động. Derek Au dùng nước thẩm thấu ngược vì nước máy của ông cứng. Dù bạn dùng gì, hãy ghi lại.
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### Từng bước
+### Step by step
 
-1. Đeo khẩu trang lọc bụi đạt chuẩn, và găng tay cao su nếu tay bạn sẽ nhúng vào. Zakin đeo khẩu trang từ lúc bắt đầu cân cho đến khi men ướt.
-2. Đong khoảng 70 đến 80 mL nước trên 100 g bột vào xô.
-3. Thêm bột đã cân nhẹ nhàng, từ độ cao thấp. UT Austin cho bột vào nước ấm; Zakin và Au cho nước vào bột. Chúng tôi gợi ý bột vào nước, cách này bốc ít bụi hơn, trừ với một công thức men có nhiều bentonit: hãy khuấy các bột khô của nó với nhau trước.
-4. **Ngâm** nó: để bột thấm mà không khuấy. Digitalfire chờ khoảng 20 phút. Các loại bột có keo hoặc chất kết dính cần để qua đêm.
-5. Trộn cho đến khi không còn chỗ khô hay cục.
-6. Sàng hai lần (xem bên dưới).
-7. Đậy lại và để nghỉ qua đêm, rồi trộn lại và kiểm tra đáy xem có lớp cứng không.
-8. Đo tỷ trọng, và thêm nước từng chút một để đạt mục tiêu của bạn.
-9. Dán nhãn xô, và ghi lại những gì bạn đã làm.
-10. Lau dọn ướt: lau sàn và lau mọi bề mặt, kể cả bên ngoài các đồ đựng nguyên liệu.
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### Sàng
+### Sieving
 
-**Sàng** là một tấm lưới trong một khung. Đẩy men qua nó bằng cọ làm vỡ các cục mà việc trộn để lại và giữ lại các hạt sẽ thành đốm khi nung. Số **mesh** càng cao, lưới càng mịn: 80 mesh có lỗ khoảng 0,18 mm, và 100 mesh khoảng 0,15 mm.
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-Các nguồn khuyên các cỡ mesh khác nhau. Zakin sàng hai lần qua 50 hoặc 80 mesh. Derek Au dùng 120 mesh cho hầu hết các loại men, đặc biệt những loại có coban hoặc sắt: ba lần qua 80 mesh vẫn để lại đốm sắt trong một men ngọc, và một lần qua 120 mesh đã chữa được. Ông giữ 60 đến 80 mesh cho men tro và các loại khác có nguyên liệu thô. Potterycrafts, ở Anh, gợi ý 60 đến 80 mesh. Một mặc định an toàn:
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: Dùng sàng nào
-Label: Mesh của sàng
+Table: Which sieve to use
+Label: Sieve mesh
 
-| Men                                          | Sàng                |
-| -------------------------------------------- | ------------------- |
-| Hầu hết các loại men                         | Hai lần qua 80 mesh |
-| Men có chất tạo màu như coban hoặc sắt       | 100 đến 120 mesh    |
-| Men tro, và các loại khác có nguyên liệu thô | 60 đến 80 mesh      |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## Tỷ trọng {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Tỷ trọng** cho bạn biết có bao nhiêu bột trong nước men. Nó là khối lượng của một thể tích men chia cho khối lượng của cùng thể tích nước. Nước là 1,00, và một loại men ở {{SG 1.45}} nặng 145 g trên 100 mL. Pha đến một tỷ trọng đã đo là cách bạn có cùng độ đặc, và cùng một lớp phủ, mỗi lần. Nó không có đơn vị, nên giống nhau dù tính bằng gam hay ounce.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Đo bằng cách cân 100 mL
+### Measure it by weighing 100 mL
 
-1. Khuấy men để không gì lắng lại.
-2. Đặt một **ống đong** 100 mL (một ống đo cao có vạch) hoặc một ống tiêm 100 mL lên cân, và trừ bì.
-3. Đổ đầy men đến đúng 100 mL, đọc vạch ở ngang tầm mắt.
-4. Cân nó và chia số gam cho 100: 145 g là tỷ trọng 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire cũng đánh dấu một cái cốc ở mức 500 g nước, đổ men đến vạch, và chia khối lượng cho 500; một dụng cụ đo lớn hơn, đầy hơn thì chính xác hơn. Một **tỷ trọng kế**, một cái phao đọc ở chỗ nó nằm trong men, nhanh nhưng có thể đọc sai với men đặc hoặc bị keo hóa. Tỷ trọng kế của Anh, như của Potclays, đọc theo độ Baumé (°Bé). Theo phép tính của chúng tôi, tỷ trọng = 145 ÷ (145 − °Bé), nên 46 °Bé là khoảng 1,46. Các sách cũ của Anh nêu **trọng lượng pint**, số ounce trong một pint Anh men: chia nó cho 20, nên 29 oz là khoảng tỷ trọng 1,45 (cũng là phép tính của chúng tôi).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Nhắm đến mức nào
+### What to aim for
 
-Các nguồn không thống nhất, nhất là về quét và phun, nơi nhà cung cấp Anh Potclays nêu các số cao hơn nhiều (số của chính họ là “chỉ để tham khảo”). Hãy coi mọi con số là điểm khởi đầu. Lời khuyên cốt lõi của Digitalfire là tìm tỷ trọng và độ keo hóa phù hợp cho từng loại men, rồi lặp lại chúng và ghi lại.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Mục tiêu tỷ trọng, nơi các nguồn không thống nhất
-Label: Mục tiêu tỷ trọng
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Cách dùng | Digitalfire và Glazy                                                                                                                           | Potclays (Anh)                                  | Điểm khởi đầu an toàn                                                  |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------- |
-| Nhúng     | {{SG 1.40}} (cho lần nhúng 5 giây) đến {{SG 1.50}} (cho lần nhúng 1 giây); men tự pha tại nhà bị keo hóa hoạt động tốt nhất ở {{SG 1.43–1.45}} | Men trong {{SG 1.46–1.48}}; men màu {{SG 1.61}} | {{SG 1.45}}; làm loãng đến {{SG 1.43}} và làm keo hóa nếu nó chảy giọt |
-| Quét      | {{SG 1.25}} (trong, loãng) đến {{SG 1.55}} (chi tiết đậm)                                                                                      | {{SG 1.71–1.81}}                                | Làm theo sản phẩm; dùng keo CMC hoặc chất quét                         |
-| Phun      | Không có số liệu; Hopper, viết cho Ceramic Arts Network, nói loãng hơn nhiều, với một chất khử keo tụ (phụ gia làm nước men lỏng hơn)          | {{SG 1.71}}                                     | Không có con số đáng tin; chỉ phun trong buồng phun                    |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Để kiểm tra men nhúng bằng mắt, AMACO nhúng trong 5 giây và tìm lớp phủ dày xấp xỉ một đồng dime của Mỹ. Digitalfire nung các mẫu thử nhúng 5 giây để kiểm tra.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Nước cho một tỷ trọng mục tiêu: ước tính của chúng tôi
+### Water for a target SG: our estimate
 
-Bảng bên dưới là phép tính riêng của chúng tôi, không phải của một nguồn nào. Nó giả định các hạt bột có khối lượng riêng 2,6 g trên cm³, đó là một giả định, không phải một phép đo. Đất sét, các nguyên liệu tan và việc keo hóa đều làm thay đổi một loại men thật, nên hãy dùng nó để bắt đầu, rồi đo. Để kiểm tra, nó dự đoán {{SG 1.44}} cho khối lượng bột và nước bằng nhau, gần với {{SG 1.46}} mà Digitalfire đã đo. Nó cũng cho thấy 70 đến 80 mL trên 100 g khiến bạn bắt đầu trên {{SG 1.50}}, đặc hơn mức bạn cần.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Nước cho một tỷ trọng mục tiêu (ước tính của chúng tôi)
-Label: Nước cho một tỷ trọng mục tiêu
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mục tiêu    | Trên 100 g bột |   Trên kilôgam |         Trên pound |
-| ----------- | -------------: | -------------: | -----------------: |
-| {{SG 1.40}} |  khoảng 115 mL | khoảng 1150 mL | khoảng 18 US fl oz |
-| {{SG 1.45}} |   khoảng 98 mL |  khoảng 980 mL | khoảng 15 US fl oz |
-| {{SG 1.50}} |   khoảng 85 mL |  khoảng 850 mL | khoảng 13 US fl oz |
-| {{SG 1.60}} |   khoảng 64 mL |  khoảng 640 mL | khoảng 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Muối Epsom, keo CMC và bentonit
+### Find your own glaze's dry SG while you mix
 
-**Muối Epsom** làm men keo hóa nhẹ khi đứng yên và chảy lại khi được khuấy. Việc này gọi là **keo tụ** nó, và một loại men hoạt động như vậy là **xúc biến**: nó phủ đều hơn, ít chảy giọt hơn và ít lắng hơn. Digitalfire gợi ý bắt đầu ở khoảng 2 g trên mỗi gallon khi tỷ trọng đã đúng (xấp xỉ 0,5 g trên mỗi lít, phép quy đổi của chúng tôi) và tinh chỉnh lượng mỗi lần bạn pha, vì không công thức men nào nên cố định liều. Chúng tôi gợi ý hòa tan nó trong một ít nước nóng trước. Trong một ví dụ của Digitalfire, một loại men ở {{SG 1.45}} chảy giọt, nên nước đưa nó xuống {{SG 1.43}} và muối Epsom làm nó keo hóa lại thành dạng kem, và nó phủ đều. Một cách kiểm tra sơ bộ: khuấy, dừng và quan sát. Một loại men keo hóa tiếp tục chuyển động khoảng 2 hoặc 3 giây, rồi dừng và nảy lại một chút.
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-**Keo CMC** (carboxymethyl cellulose) làm nước men dính hơn và khô chậm hơn, và để lại lớp phủ cứng hơn bám vào sản phẩm. Nó quan trọng nhất với men quét và men nhiều frit. Ví dụ của Digitalfire trộn 3,75 g vào 1000 g nước men, và nó phải được cho vào bằng máy xay. Một loại men có CMC sẽ không keo hóa với muối Epsom, và vì vi sinh vật ăn keo, nó có thể thay đổi trong xô và bắt đầu có mùi.
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-**Bentonit**, một loại đất sét rất mịn, giúp giữ các hạt khác lơ lửng. Men nhúng thường dựa vào 15 đến 25% đất sét thô cho việc này. Với một công thức men thiếu đất sét, khoảng 1 đến 3% bentonit sẽ giúp ích; Digitalfire cho biết một loại men có hơn 15% đất sét có lẽ không cần bentonit quá 1% trọng lượng men khô.
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## Ghi chép {#records}
+## Keeping records {#records lang=en}
 
-Willers nêu mục tiêu rất hay: “đủ thông tin để có thể lặp lại, hoặc tránh, những kết quả bạn đã khám phá”. Hãy ghi lại những gì bạn định thử trước khi bắt đầu, và các kết quả khi bạn dỡ lò. Potclays thêm cách phủ men, độ dày, xương gốm và toàn bộ lần nung, gồm các giai đoạn tăng nhiệt, giữ nhiệt và làm nguội. Một **giai đoạn tăng nhiệt**{{en: ramp}} là một tốc độ nung nóng hoặc làm nguội, như {{60 °C; 108 °F}} một giờ, và một **lần giữ nhiệt** giữ lò ở một nhiệt độ trong một thời gian đã đặt. Hãy ghi các số lô, nước bạn đã dùng và mọi sự thay thế: việc đổi trường thạch của Clay Art Center nghĩa là phải điều chỉnh khoảng một nửa số men của họ.
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: Cần ghi gì cho mỗi mẻ men (mẫu của chúng tôi)
-Label: Mẫu ghi chép
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| Phần          | Cần ghi gì                                                                                                                                                                              |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Công thức men | Công thức men và phiên bản của nó; nhãn hiệu nguyên liệu và số lô; mọi sự thay thế                                                                                                      |
-| Pha trộn      | Ngày; cỡ mẻ; nước đã thêm, và loại của nó (nước máy, thẩm thấu ngược hay cất); tỷ trọng sau khi pha và tỷ trọng cuối; muối Epsom, CMC và bentonit đã thêm; mesh của sàng và số lần sàng |
-| Cách phủ men  | Xương gốm; côn nung mộc; nhúng, quét hay rót; thời gian nhúng hoặc số lớp; độ dày khô                                                                                                   |
-| Nung          | Lò và vị trí kệ; đường cong nung, với các giai đoạn tăng nhiệt, giữ nhiệt và làm nguội; môi trường nung (oxy hóa hay khử); những gì côn chứng cho thấy, không chỉ những gì lò được đặt  |
-| Kết quả       | Bề mặt và màu sắc; mọi hiện tượng chảy men, rạn nứt men hay lỗ chân kim; ảnh mặt trước, mặt sau và mặt bên; mã mẫu thử                                                                  |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> Trong Glazecalc, một [công thức men](/recipe) đã lưu chứa chính công thức men. Một [nhật ký nung](/firing) ghi lại mỗi lần nung: lò, ngày, thời gian, nhiệt độ, côn và ghi chú. [Ghi chú](/notes) chứa mọi thứ khác, như bản ghi mẻ ở trên và những gì mỗi mẫu thử cho thấy.
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## Nguồn {#sources}
 

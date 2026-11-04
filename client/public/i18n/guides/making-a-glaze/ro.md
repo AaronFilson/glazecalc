@@ -119,99 +119,120 @@ Sfaturile diferă în privința preciziei de care aveți nevoie. Derek Au a cons
 
 Derek Au cântărește în același castron, în grămezi separate, ca o greșeală să poată fi scoasă înapoi cu lingura. Dacă cântăriți în aceeași găleată fără să tarați între materiile prime, totalul parțial din Glazecalc vă arată ce ar trebui să indice cântarul după fiecare dintre ele.
 
-## Amestecarea și cernerea {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### Câtă apă
+### How much water
 
-Sursele nu sunt de acord. Derek Au începe cu o glazură groasă, cu 50 mL de apă la 100 g de pulbere, și adaugă mai multă apă mai târziu. Potterycrafts indică 65 mL la 100 g pentru una dintre glazurile sale praf. UT Austin folosește mase egale de apă și pulbere, iar când Digitalfire a pus 20 kg de pulbere în 20 kg de apă, a măsurat o greutate specifică{{en: specific gravity}} de 1,46.
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-Apa se adaugă repede și se scoate greu, așa că începeți cu puțină. Estimarea noastră: începeți cu **aproximativ 70–80 mL la 100 g** (700–800 mL la kilogram sau aproximativ 11–12 US fl oz la livră). Lăsați la înmuiat, amestecați și cerneți la această consistență, apoi adăugați apă puțin câte puțin până când greutatea specifică este cea potrivită. 1 mL de apă cântărește 1 g, așa că o puteți cântări. Dacă ați pus prea multă, lăsați glazura{{en: glaze}} să se sedimenteze, apoi luați apa limpede de deasupra cu buretele sau turnați-o.
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### Unelte și apă
+### Tools and water
 
-- **Mixer cu elice.** Digitalfire spune că unul bun este „esențial”. O bormașină cu fir și cu paletă de amestecare face treaba într-o găleată. UT Austin o ține pornită cel puțin 4–5 minute după ce glazura pare amestecată și nu lasă paleta să atingă găleata, din care poate răzui plastic.
-- **Blender.** „Funcționează extrem de bine pentru cantități mici” (Digitalfire). Folosiți-l numai pentru glazuri: nu trebuie să se mai întoarcă niciodată în bucătărie.
-- **Tel sau băț.** Alegerea lui Zakin când nu există mixer.
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-Și apa diferă, iar Digitalfire observă că schimbă comportamentul glazurii preparate{{en: slurry}}. Derek Au folosește apă obținută prin osmoză inversă, pentru că apa lui de la robinet este dură. Orice apă folosiți, notați-o.
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### Pas cu pas
+### Step by step
 
-1. Puneți-vă masca de protecție respiratorie și mănuși de cauciuc, dacă veți băga mâinile în glazură. Zakin poartă mască de la începutul cântăririi până când glazura este udă.
-2. Măsurați în găleată aproximativ 70–80 mL de apă la 100 g de pulbere.
-3. Adăugați ușor pulberea cântărită, de la mică înălțime. UT Austin pune pulberea în apă caldă; Zakin și Au pun apa peste pulbere. Vă sugerăm pulberea în apă, care ridică mai puțin praf, cu excepția unei rețete cu multă bentonită: amestecați mai întâi între ele pulberile ei uscate.
-4. **Lăsați-o la înmuiat**: lăsați pulberea să se îmbibe, fără să amestecați. Digitalfire așteaptă aproximativ 20 de minute. Pulberile cu gumă sau liant trebuie să stea peste noapte.
-5. Amestecați până nu mai rămân zone uscate sau cocoloașe.
-6. Cerneți-o de două ori (vedeți mai jos).
-7. Acoperiți-o și lăsați-o să stea peste noapte, apoi amestecați din nou și verificați dacă pe fund s-a format un strat tare.
-8. Măsurați greutatea specifică și adăugați apă puțin câte puțin până ajungeți la valoarea țintă.
-9. Etichetați găleata și notați ce ați făcut.
-10. Curățați umed: ștergeți podeaua cu mopul și ștergeți toate suprafețele, inclusiv exteriorul recipientelor cu materii prime.
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### Cernerea
+### Sieving
 
-O **sită** este o plasă întinsă pe o ramă. Când împingeți glazura prin ea cu o pensulă, spargeți cocoloașele rămase după amestecare și rețineți particulele care după ardere ar apărea ca puncte negre. Cu cât numărul **mesh** este mai mare, cu atât sita este mai fină: 80 mesh are ochiuri de aproximativ 0,18 mm, iar 100 mesh, de aproximativ 0,15 mm.
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-Sursele recomandă site diferite. Zakin cerne de două ori prin sită de 50 sau 80 mesh. Derek Au folosește 120 mesh pentru majoritatea glazurilor, mai ales pentru cele cu cobalt sau fier: după trei treceri prin 80 mesh, într-un celadon tot rămăseseră puncte de fier, iar o singură trecere prin 120 mesh a rezolvat problema. Pentru glazurile de cenușă și altele cu materii prime grosiere păstrează 60–80 mesh. Potterycrafts, în Regatul Unit, sugerează 60–80 mesh. O alegere sigură, ca punct de plecare:
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: Ce sită să folosiți
-Label: Mărimea sitei (mesh)
+Table: Which sieve to use
+Label: Sieve mesh
 
-| Glazură                                                              | Sită                      |
-| -------------------------------------------------------------------- | ------------------------- |
-| Majoritatea glazurilor                                               | Două treceri prin 80 mesh |
-| Glazuri cu coloranți{{en: colorants}}, cum ar fi cobaltul sau fierul | 100–120 mesh              |
-| Glazuri de cenușă și altele cu materii prime grosiere                | 60–80 mesh                |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## Greutatea specifică {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Greutatea specifică**{{en: specific gravity, SG}} vă arată câtă pulbere conține glazura preparată{{en: slurry}}. Este greutatea unui volum de glazură{{en: glaze}} împărțită la greutatea aceluiași volum de apă. Pentru apă, valoarea este 1,00, iar o glazură cu {{SG 1.45}} cântărește 145 g la 100 mL. Dacă preparați glazura la o greutate specifică măsurată, obțineți de fiecare dată aceeași consistență și același strat. Nu are unitate de măsură, deci este aceeași în grame sau în uncii.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Măsurați-o cântărind 100 mL
+### Measure it by weighing 100 mL
 
-1. Amestecați glazura, ca nimic să nu rămână sedimentat.
-2. Puneți pe cântar un **cilindru gradat** de 100 mL (un tub de măsurare înalt, cu gradații) sau o seringă de 100 mL și tarați cântarul.
-3. Umpleți-l cu glazură exact până la 100 mL, citind gradația la nivelul ochilor.
-4. Cântăriți și împărțiți gramele la 100: 145 g înseamnă greutatea specifică 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire mai marchează un pahar la nivelul a 500 g de apă, îl umple cu glazură până la semn și împarte greutatea la 500; o măsură mai mare și mai plină este mai precisă. Un **areometru**, un plutitor citit la nivelul la care stă în glazură, este rapid, dar poate da citiri greșite în glazurile groase sau gelificate. Areometrele din Regatul Unit, cum este cel de la Potclays, indică grade Baumé (°Bé). După calculul nostru, greutatea specifică = 145 ÷ (145 − °Bé), deci 46 °Bé înseamnă aproximativ 1,46. Cărțile britanice mai vechi dau **greutatea pintei**, adică uncii la o pintă imperială de glazură: împărțiți-o la 20, deci 29 oz înseamnă aproximativ greutatea specifică 1,45 (tot după calculul nostru).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Ce valori să urmăriți
+### What to aim for
 
-Sursele nu sunt de acord, mai ales la pensulare și pulverizare, unde furnizorul britanic Potclays dă cifre mult mai mari (despre ale sale spune că sunt „doar orientative”). Considerați fiecare cifră un punct de plecare. Sfatul de bază al Digitalfire este să găsiți greutatea specifică și gradul de gelificare potrivite pentru fiecare glazură, apoi să le repetați și să le notați.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Greutăți specifice țintă, acolo unde sursele nu sunt de acord
-Label: Greutăți specifice țintă
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Utilizare   | Digitalfire și Glazy                                                                                                                                                                                         | Potclays (Regatul Unit)                               | Punct de plecare sigur                                                    |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------------------------------- |
-| Imersie     | De la {{SG 1.40}} (pentru o imersie de 5 secunde) la {{SG 1.50}} (pentru o imersie de 1 secundă); glazurile preparate acasă și gelificate dau cele mai bune rezultate la {{SG 1.43–1.45}}                    | Transparente: {{SG 1.46–1.48}}; colorate: {{SG 1.61}} | {{SG 1.45}}; dacă picură, diluați-o la {{SG 1.43}} și gelificați-o        |
-| Pensulare   | De la {{SG 1.25}} (glazură transparentă, subțire) la {{SG 1.55}} (detalii închise la culoare)                                                                                                                | {{SG 1.71–1.81}}                                      | Urmați indicațiile produsului; folosiți CMC sau un mediu pentru pensulare |
-| Pulverizare | Nicio cifră; Hopper, într-un articol pentru Ceramic Arts Network, spune că glazura trebuie să fie mult mai diluată, cu un defloculant{{en: deflocculant}} (un aditiv care face glazura preparată mai fluidă) | {{SG 1.71}}                                           | Nicio cifră de încredere; pulverizați numai într-o cabină de pulverizare  |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Pentru a verifica din ochi o glazură pentru imersie, AMACO scufundă piesa timp de 5 secunde și urmărește un strat cam de grosimea unui dime (o monedă americană). Pentru verificare, Digitalfire face o ardere cu plăcuțe de test{{en: test tiles}} scufundate timp de 5 secunde.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Apa pentru o greutate specifică țintă: estimarea noastră
+### Water for a target SG: our estimate
 
-Tabelul de mai jos este calculul nostru, nu al unei surse. Pornește de la ipoteza că particulele pulberii au o densitate de 2,6 g pe cm³, ceea ce este o presupunere, nu o măsurătoare. Argila, materiile prime solubile și gelificarea schimbă toate o glazură reală, așa că folosiți tabelul pentru început, apoi măsurați. Ca verificare, pentru mase egale de pulbere și apă, calculul dă {{SG 1.44}}, aproape de valoarea măsurată de Digitalfire, {{SG 1.46}}. Tabelul mai arată că, pornind cu 70–80 mL la 100 g, ajungeți peste {{SG 1.50}}, deci la o glazură mai groasă decât aveți nevoie.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Apa pentru o greutate specifică țintă (estimarea noastră)
-Label: Apa pentru o greutate specifică țintă
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Țintă       | La 100 g de pulbere |         La kilogram |                La livră |
-| ----------- | ------------------: | ------------------: | ----------------------: |
-| {{SG 1.40}} |  aproximativ 115 mL | aproximativ 1150 mL | aproximativ 18 US fl oz |
-| {{SG 1.45}} |   aproximativ 98 mL |  aproximativ 980 mL | aproximativ 15 US fl oz |
-| {{SG 1.50}} |   aproximativ 85 mL |  aproximativ 850 mL | aproximativ 13 US fl oz |
-| {{SG 1.60}} |   aproximativ 64 mL |  aproximativ 640 mL | aproximativ 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Sarea amară, CMC și bentonita
+### Find your own glaze's dry SG while you mix
 
-**Sarea amară** (sulfat de magneziu) face ca glazura să se gelifice ușor când stă nemișcată și să curgă din nou când este amestecată. Aceasta se numește **floculare**{{en: flocculating}}, iar o glazură care se comportă astfel este **tixotropă**{{en: thixotropic}}: se aplică mai uniform, picură mai puțin și se sedimentează mai puțin. Digitalfire sugerează să începeți cu aproximativ 2 g la galon, după ce greutatea specifică este cea potrivită (cam 0,5 g la litru, conversia noastră), și să ajustați cantitatea la fiecare preparare, pentru că nicio rețetă nu ar trebui să fixeze doza. Vă sugerăm să o dizolvați mai întâi în puțină apă fierbinte. Într-un exemplu al Digitalfire, o glazură cu {{SG 1.45}} picura, așa că a fost diluată cu apă până la {{SG 1.43}}, iar sarea amară a gelificat-o din nou până la o consistență cremoasă, și s-a aplicat uniform. O verificare aproximativă: amestecați, opriți-vă și urmăriți. O glazură gelificată se mai mișcă aproximativ 2 sau 3 secunde, apoi se oprește și revine puțin.
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-**CMC** (carboximetilceluloză) face glazura preparată mai lipicioasă și mai lentă la uscare și lasă un strat mai tare, care aderă la piesă. Contează cel mai mult la glazurile pentru pensulare și la cele cu multă frită{{en: frit}}. În exemplul Digitalfire se amestecă 3,75 g în 1000 g de glazură preparată, iar încorporarea trebuie făcută cu blenderul. O glazură cu CMC nu se gelifică cu sare amară și, pentru că microbii se hrănesc cu acest liant, se poate schimba în găleată și poate începe să miroasă.
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-**Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–3 % bentonită; Digitalfire spune că o glazură cu peste 15 % argilă nu ar trebui să aibă nevoie de bentonită în proporție de peste 1 % din greutatea glazurii uscate.
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## Ținerea evidenței {#records}
+## Keeping records {#records lang=en}
 
-Willers formulează bine scopul: „suficiente informații pentru a putea repeta sau evita rezultatele pe care le-ați descoperit”. Notați ce plănuiți să testați înainte de a începe, iar rezultatele, când descărcați cuptorul. Potclays adaugă modul de aplicare, grosimea stratului, pasta ceramică{{en: clay body}} și arderea completă, inclusiv rampele{{en: ramps}}, menținerile{{en: holds}} și răcirea. O **rampă** este o viteză de încălzire sau de răcire, de exemplu {{60 °C; 108 °F}} pe oră, iar o **menținere** ține cuptorul la aceeași temperatură un timp stabilit. Notați numerele de lot, apa folosită și orice înlocuire: la Clay Art Center, schimbarea feldspatului{{en: feldspar}} a însemnat ajustarea a aproximativ jumătate dintre glazuri{{en: glazes}}.
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: Ce să notați pentru fiecare amestec de glazură (modelul nostru)
-Label: Model de evidență
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| Parte     | Ce să notați                                                                                                                                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Rețetă    | Rețeta și versiunea ei; mărcile materiilor prime și numerele de lot; eventualele înlocuiri                                                                                                                                                       |
-| Preparare | Data; cantitatea de preparat; apa adăugată și tipul ei (de la robinet, prin osmoză inversă sau distilată); greutatea specifică după amestecare și cea finală; sarea amară, CMC și bentonita adăugate; mărimea sitei (mesh) și numărul de treceri |
-| Aplicare  | Pasta ceramică; conul arderii biscuit{{en: bisque cone}}; imersie, pensulare sau turnare; timpul de imersie sau numărul de straturi; grosimea stratului uscat                                                                                    |
-| Ardere    | Cuptorul și poziția pe placă; programul de ardere, cu rampele, menținerile și răcirea; atmosfera (oxidantă{{en: oxidation}} sau reducătoare{{en: reduction}}); ce a arătat conul martor{{en: witness cone}}, nu doar la ce a fost setat cuptorul |
-| Rezultat  | Suprafața și culoarea; eventuala curgere, fisurare{{en: crazing}} sau înțepături{{en: pinholes}}; fotografii din față, din spate și din lateral; codul plăcuței                                                                                  |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> În Glazecalc, o [rețetă](/recipe) salvată păstrează rețeta propriu-zisă. Un [jurnal de ardere](/firing) înregistrează fiecare ardere: cuptorul, data, orele, temperaturile, conurile și observațiile. [Notițele](/notes) păstrează tot restul, cum ar fi evidența amestecului de mai sus și ce a arătat fiecare plăcuță.
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## Surse {#sources}
 

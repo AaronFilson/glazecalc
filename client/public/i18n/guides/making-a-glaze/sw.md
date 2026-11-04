@@ -119,99 +119,120 @@ Ushauri unatofautiana kuhusu mizani sahihi kiasi gani unahitaji. Derek Au aligun
 
 Derek Au hupima ndani ya bakuli moja kwa marundo tofauti, ili kosa liweze kuchotwa tena. Ukipima ndani ya ndoo moja bila kufanya tare kati ya malighafi, jumla inayoendelea ya Glazecalc inakuambia mizani inapaswa kusoma nini baada ya kila moja.
 
-## Kuchanganya na kuchuja {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### Maji kiasi gani
+### How much water
 
-Vyanzo havikubaliani. Derek Au huanza nzito, kwa 50 mL za maji kwa kila 100 g za unga, na huongeza zaidi baadaye. Potterycrafts inatoa 65 mL kwa kila 100 g kwa glaze moja ya unga. UT Austin hutumia uzito sawa wa maji na unga, na Digitalfire ilipoweka 20 kg za unga ndani ya 20 kg za maji, ilipima uzito linganishi wa 1.46.
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-Maji ni rahisi kuongeza na magumu kutoa, kwa hiyo anza kidogo. Makadirio yetu: anza na **takriban 70 hadi 80 mL kwa kila 100 g** (700 hadi 800 mL kwa kilo, au takriban 11 hadi 12 US fl oz kwa pauni). Loweka (slake), changanya na chuja kwa unene huo, kisha ongeza maji kidogo kidogo hadi uzito linganishi ufae. 1 mL ya maji ina uzito wa 1 g, kwa hiyo unaweza kuyapima kwa mizani. Ukizidisha, acha glaze itue, kisha nyonya kwa sifongo au mimina maji safi kutoka juu.
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### Zana na maji
+### Tools and water
 
-- **Kichanganyio cha propela.** Digitalfire inaita kizuri “muhimu sana”. Drili yenye waya na kiwiko cha kuchanganya hufanya kazi hiyo ndani ya ndoo. UT Austin huiendesha kwa angalau dakika 4 hadi 5 baada ya glaze kuonekana imechanganyika, na huweka kisu mbali na ndoo, ambayo inaweza kukwangua plastiki.
-- **Blenda.** “Hufanya kazi vizuri sana kwa makundi madogo” (Digitalfire). Iweke kwa ajili ya glaze tu: kamwe isirudi jikoni.
-- **Kimiaji au kijiti.** Chaguo la Zakin pale ambapo hakuna kichanganyio.
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-Maji pia hutofautiana, na Digitalfire inabainisha kwamba hubadilisha jinsi tope linavyofanya kazi. Derek Au hutumia maji ya reverse-osmosis kwa sababu maji ya bomba lake ni magumu. Chochote unachotumia, kiandike.
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### Hatua kwa hatua
+### Step by step
 
-1. Vaa barakoa yako ya kupumua, na glavu za mpira kama mikono yako itaingia ndani. Zakin huvaa barakoa kuanzia mwanzo wa kupima hadi glaze iwe na unyevu.
-2. Pima takriban 70 hadi 80 mL za maji kwa kila 100 g za unga ndani ya ndoo.
-3. Ongeza unga uliopimwa taratibu, kutoka urefu mdogo. UT Austin huongeza unga kwenye maji ya uvuguvugu; Zakin na Au huongeza maji kwenye unga. Tunapendekeza unga ndani ya maji, ambao hupeperusha vumbi kidogo, isipokuwa kwa kichocheo chenye bentoniti nyingi: koroga kwanza unga wake mkavu pamoja.
-4. **Loweka (slake)** unga: uache ulowe bila kukoroga. Digitalfire hungoja takriban dakika 20. Unga wenye gundi au kiambatanishi unahitaji kusimama usiku mzima.
-5. Changanya hadi pasiwe na mifuko mikavu wala madonge.
-6. Uchuje mara mbili (tazama hapa chini).
-7. Ufunike na uuache upumzike usiku mzima, kisha changanya tena na uangalie chini kama kuna tabaka gumu.
-8. Pima uzito linganishi, na uongeze maji kidogo kidogo hadi ufikie lengo lako.
-9. Weka lebo kwenye ndoo, na uandike ulichofanya.
-10. Safisha kwa unyevu: deki sakafu na futa kila uso, ikiwa ni pamoja na nje ya vyombo vya malighafi.
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### Kuchuja
+### Sieving
 
-**Chujio** ni skrini ya wavu ndani ya fremu. Kusukuma glaze kupitia kwake kwa brashi huvunja madonge yanayobaki baada ya kuchanganya na hunasa chembe ambazo zingechomeka kama madoa. Kadiri nambari ya **mesh** inavyokuwa kubwa, ndivyo skrini inavyokuwa laini: mesh 80 ina matundu ya takriban 0.18 mm, na mesh 100 takriban 0.15 mm.
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-Vyanzo vinapendekeza mesh tofauti. Zakin huchuja mara mbili kupitia mesh 50 au 80. Derek Au hutumia mesh 120 kwa glaze nyingi, hasa zenye kobalti au chuma: mara tatu kupitia mesh 80 bado ziliacha madoa ya chuma kwenye celadon moja, na mara moja kupitia mesh 120 iliyatibu. Huweka mesh 60 hadi 80 kwa glaze za majivu na nyingine zenye malighafi korofi. Potterycrafts, Uingereza, inapendekeza mesh 60 hadi 80. Chaguo salama la kuanzia:
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: Chujio gani cha kutumia
-Label: Mesh ya chujio
+Table: Which sieve to use
+Label: Sieve mesh
 
-| Glaze                                               | Chujio                     |
-| --------------------------------------------------- | -------------------------- |
-| Glaze nyingi                                        | Mara mbili kupitia mesh 80 |
-| Glaze zenye vitia rangi kama kobalti au chuma       | Mesh 100 hadi 120          |
-| Glaze za majivu, na nyingine zenye malighafi korofi | Mesh 60 hadi 80            |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## Uzito linganishi {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Uzito linganishi** (SG) unakuambia kuna unga kiasi gani ndani ya tope lako. Ni uzito wa ujazo fulani wa glaze ukigawanywa na uzito wa ujazo uleule wa maji. Maji ni 1.00, na glaze yenye {{SG 1.45}} ina uzito wa 145 g kwa kila 100 mL. Kuchanganya hadi SG iliyopimwa ndiyo njia ya kupata unene uleule, na tabaka lilelile la glaze, kila mara. Haina vipimo, kwa hiyo ni sawa kwa gramu au aunsi.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Ipime kwa kupima 100 mL
+### Measure it by weighing 100 mL
 
-1. Koroga glaze ili kisiwepo kilichotua.
-2. Weka silinda ya kupimia ya 100 mL (**graduated cylinder**, mrija mrefu wenye alama za kupimia) au sirinji ya 100 mL kwenye mizani, na ufanye tare.
-3. Ijaze glaze hadi 100 mL kamili, ukisoma alama kwa usawa wa macho.
-4. Ipime na ugawanye gramu kwa 100: 145 g ni SG 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire pia huweka alama kwenye kikombe kwenye kiwango cha 500 g za maji, huijaza glaze hadi alama, na kugawanya uzito kwa 500; kipimo kikubwa na kilichojaa zaidi ni sahihi zaidi. **Haidromita**, kielea kinachosomwa mahali kilipoketi ndani ya glaze, ni ya haraka lakini inaweza kusoma vibaya glaze nzito au iliyoganda kama jeli. Haidromita za Uingereza, kama za Potclays, husoma kwa digrii Baumé (°Bé). Kwa hesabu yetu, SG = 145 ÷ (145 − °Bé), kwa hiyo 46 °Bé ni takriban 1.46. Vitabu vya zamani vya Uingereza hutoa **uzito wa painti**, aunsi zilizomo kwenye painti moja ya imperial ya glaze: ugawanye kwa 20, kwa hiyo 29 oz ni takriban SG 1.45 (pia hesabu yetu).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Cha kulenga
+### What to aim for
 
-Vyanzo havikubaliani, hasa kuhusu kupaka kwa brashi na kunyunyizia, ambapo muuzaji wa Uingereza Potclays anatoa nambari za juu zaidi (zake mwenyewe ni “kwa mwongozo tu”). Chukulia kila nambari kama mahali pa kuanzia. Ushauri mkuu wa Digitalfire ni kupata SG na kuganda kama jeli vinavyofaa kila glaze, kisha kuvirudia na kuviandika.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Malengo ya uzito linganishi, ambapo vyanzo havikubaliani
-Label: Malengo ya uzito linganishi
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Matumizi          | Digitalfire na Glazy                                                                                                                                                                              | Potclays (Uingereza)                           | Mahali salama pa kuanzia                                                  |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| Kuchovya          | {{SG 1.40}} (kwa kuchovya sekunde 5) hadi {{SG 1.50}} (kwa kuchovya sekunde 1); glaze zilizochanganywa nyumbani zilizoganda kama jeli hufanya vizuri zaidi kwa {{SG 1.43–1.45}}                   | Safi {{SG 1.46–1.48}}; yenye rangi {{SG 1.61}} | {{SG 1.45}}; ipunguzie hadi {{SG 1.43}} na uiganishe kama jeli ikidondoka |
-| Kupaka kwa brashi | {{SG 1.25}} (safi nyembamba) hadi {{SG 1.55}} (maelezo meusi)                                                                                                                                     | {{SG 1.71–1.81}}                               | Fuata bidhaa; tumia gundi ya CMC au kimiminika cha kupakia kwa brashi     |
-| Kunyunyizia       | Hakuna nambari; Hopper, akiandikia Ceramic Arts Network, anasema nyembamba zaidi kwa kiasi kikubwa, pamoja na kimiminisha (deflocculant: kiongezi kinachofanya tope liwe jepesi zaidi kutiririka) | {{SG 1.71}}                                    | Hakuna nambari ya kuaminika; nyunyizia tu ndani ya chumba cha kunyunyizia |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Ili kukagua glaze ya kuchovya kwa macho, AMACO huchovya kwa sekunde 5 na hutafuta tabaka lenye unene wa takriban sarafu ya dime ya Marekani. Digitalfire huchoma vigae vilivyochovywa kwa sekunde 5 ili kukagua.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Maji kwa SG lengwa: makadirio yetu
+### Water for a target SG: our estimate
 
-Jedwali lililo hapa chini ni hesabu yetu wenyewe, si ya chanzo. Linadhania kwamba chembe za unga zina msongamano wa 2.6 g kwa cm³, ambalo ni dhana, si kipimo. Udongo, malighafi zinazoyeyuka majini na kuganda kama jeli vyote hubadilisha glaze halisi, kwa hiyo litumie kuanzia, kisha pima. Kama ukaguzi, linatabiri {{SG 1.44}} kwa uzito sawa wa unga na maji, karibu na {{SG 1.46}} iliyopimwa na Digitalfire. Pia linaonyesha kwamba 70 hadi 80 mL kwa kila 100 g inakuanzisha juu ya {{SG 1.50}}, nzito kuliko unavyohitaji.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Maji kwa uzito linganishi lengwa (makadirio yetu)
-Label: Maji kwa uzito linganishi lengwa
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Lengo       | Kwa kila 100 g za unga |    Kwa kilo moja |       Kwa pauni moja |
-| ----------- | ---------------------: | ---------------: | -------------------: |
-| {{SG 1.40}} |        takriban 115 mL | takriban 1150 mL | takriban 18 US fl oz |
-| {{SG 1.45}} |         takriban 98 mL |  takriban 980 mL | takriban 15 US fl oz |
-| {{SG 1.50}} |         takriban 85 mL |  takriban 850 mL | takriban 13 US fl oz |
-| {{SG 1.60}} |         takriban 64 mL |  takriban 640 mL | takriban 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Chumvi ya Epsom, gundi ya CMC na bentoniti
+### Find your own glaze's dry SG while you mix
 
-**Chumvi ya Epsom** hufanya glaze igande kidogo kama jeli inaposimama tuli na itiririke tena inapokorogwa. Hii inaitwa kuifanya **flocculating**, na glaze inayofanya hivyo ni **thixotropic**: hupakika kwa usawa zaidi, hudondoka kidogo na hutua kidogo. Digitalfire inapendekeza kuanza kwa takriban 2 g kwa galoni mara SG inapokuwa sahihi (takriban 0.5 g kwa lita, ubadilishaji wetu) na kurekebisha kiasi kila unapochanganya, kwa kuwa hakuna kichocheo kinachopaswa kuweka kipimo. Tunapendekeza kuiyeyusha kwanza kwenye maji kidogo ya moto. Katika mfano wa Digitalfire, glaze yenye {{SG 1.45}} ilidondoka, kwa hiyo maji yaliishusha hadi {{SG 1.43}} na chumvi ya Epsom ikaiganisha kama jeli hadi kuwa kama krimu, nayo ikapakika kwa usawa. Ukaguzi wa haraka: koroga, simama na uangalie. Glaze iliyoganda kama jeli huendelea kusogea kwa takriban sekunde 2 au 3, kisha husimama na kurudi nyuma kidogo.
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-**Gundi ya CMC** (carboxymethyl cellulose) hufanya tope libandike zaidi na likauke polepole zaidi, na huacha tabaka gumu zaidi linaloshikamana na chungu. Ni muhimu zaidi kwa glaze za kupaka kwa brashi na glaze zenye frit nyingi. Mfano wa Digitalfire huchanganya 3.75 g ndani ya 1000 g za tope, na lazima iingie kwa blenda. Glaze yenye CMC haitaganda kama jeli kwa chumvi ya Epsom, na kwa kuwa vijidudu hula gundi hiyo, inaweza kubadilika ndani ya ndoo na kuanza kutoa harufu.
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-**Bentoniti**, udongo laini sana, husaidia kushikilia chembe nyingine zikiwa zimeelea. Glaze za kuchovya kwa kawaida hutegemea udongo ghafi wa 15 hadi 25% kwa kusudi hili. Kwa kichocheo kinachopungukiwa udongo, takriban 1 hadi 3% ya bentoniti husaidia; Digitalfire inasema glaze yenye udongo zaidi ya 15% haipaswi kuhitaji bentoniti kwa zaidi ya 1% ya uzito wa glaze kavu.
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## Kuweka kumbukumbu {#records}
+## Keeping records {#records lang=en}
 
-Willers anaeleza lengo vizuri: “taarifa za kutosha ili kuweza kurudia, au kuepuka, matokeo uliyogundua”. Andika unachopanga kujaribu kabla ya kuanza, na matokeo unapopakua tanuru. Potclays inaongeza upakaji, unene, mchanganyiko wa udongo na uchomaji kamili, ikiwa ni pamoja na ramp, hold na kupoa. **Ramp** ni kasi ya kupasha joto au kupoza, kama {{60 °C; 108 °F}} kwa saa, na **hold** huweka tanuru kwenye joto moja kwa muda uliowekwa. Andika nambari za lot, maji uliyotumia na mbadala wowote: kubadilisha feldspar kwa Clay Art Center kulimaanisha kurekebisha takriban nusu ya glaze zake.
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: Cha kurekodi kwa kila kundi la glaze (kiolezo chetu)
-Label: Kiolezo cha kumbukumbu
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| Sehemu      | Cha kuandika                                                                                                                                                                                                                                               |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kichocheo   | Kichocheo na toleo lake; chapa za malighafi na nambari za lot; mbadala wowote                                                                                                                                                                              |
-| Kuchanganya | Tarehe; ukubwa wa kundi; maji yaliyoongezwa, na aina yake (ya bomba, reverse osmosis au ya kuchemshwa na kufupishwa); SG baada ya kuchanganya na SG ya mwisho; chumvi ya Epsom, CMC na bentoniti zilizoongezwa; mesh ya chujio na idadi ya mara za kuchuja |
-| Upakaji     | Mchanganyiko wa udongo; koni ya bisque; kuchovya, kupaka kwa brashi au kumimina; muda wa kuchovya au idadi ya tabaka; unene ukiwa mkavu                                                                                                                    |
-| Uchomaji    | Tanuru na nafasi ya rafu; ratiba ya uchomaji, pamoja na ramp, hold na kupoa; angahewa (oksidesheni au upunguzaji); kile koni shahidi ilichoonyesha, si tu kile tanuru ilichowekwa                                                                          |
-| Matokeo     | Uso na rangi; kutiririka, crazing au pinholes zozote; picha za mbele, nyuma na pembeni; msimbo wa kigae                                                                                                                                                    |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> Katika Glazecalc, [kichocheo](/recipe) kilichohifadhiwa kina kichocheo chenyewe. [Kumbukumbu ya kuchoma](/firing) hurekodi kila uchomaji: tanuru, tarehe, saa, joto, koni na madokezo. [Madokezo](/notes) hushikilia kila kitu kingine, kama rekodi ya kundi hapo juu na kile kila kigae kilichoonyesha.
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## Vyanzo {#sources}
 
