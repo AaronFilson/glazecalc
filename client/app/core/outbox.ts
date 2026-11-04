@@ -8,6 +8,8 @@ import {
   HttpResponse
 } from '@angular/common/http';
 import { Injectable, Injector, PLATFORM_ID, inject, signal } from '@angular/core';
+import { translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from './api-base';
 import { OfflineRecords } from './offline-records';
@@ -29,7 +31,8 @@ const RETRY_MS = 30_000;
 export type OutboxOp = 'create' | 'change' | 'delete' | 'put' | 'patch';
 /**
  * waiting: to be sent. sending: on its way (after a crash it is sent again; its key makes that safe). conflict: the
- * record moved on or is gone (a later phase asks the user). failed: the server refused it; kept until removed.
+ * record moved on or is gone (the user decides: core/outbox-conflict.dialog.ts). failed: the server refused it;
+ * kept until the user copies its text or removes it.
  */
 export type OutboxState = 'waiting' | 'sending' | 'conflict' | 'failed';
 
@@ -55,6 +58,17 @@ export interface OutboxEntry {
   queuedAt: number;
   state: OutboxState;
   error?: string;
+  /** For a conflict: the record as the server holds it now (absent for a record that is gone). */
+  theirs?: unknown;
+}
+
+/** What the user can decide about a change that met a conflict. */
+export type ConflictChoice = 'copy' | 'mine' | 'theirs' | 'saveNew' | 'discard';
+
+/** A message for the user about what the outbox did on its own; shown by the app until dismissed. */
+export interface OutboxNotice {
+  id: number;
+  text: string;
 }
 
 /** A change as the interceptor made it out of a request. */
@@ -86,7 +100,7 @@ export function rewriteIds<T>(value: T, ids: ReadonlyMap<string, string>): T {
 }
 
 /** The fields a record change sets (a recipe's is wrapped: { recipe: {...} }). */
-function fieldsOf(call: Pick<OutboxCall, 'area' | 'op' | 'body'>): Body {
+export function fieldsOf(call: Pick<OutboxCall, 'area' | 'op' | 'body'>): Body {
   const body = isBody(call.body) ? call.body : {};
   if (call.area === 'recipe' && call.op === 'change') return isBody(body['recipe']) ? body['recipe'] : {};
   return body;
@@ -174,6 +188,80 @@ export function outboxCallOf(
   return null;
 }
 
+/** Between the server's text and the user's, when both changed a note's content. */
+export const NOTE_DIVIDER = '\n\n-----\n\n';
+
+/**
+ * The 3-way merge of a note: `base` is the note when the change was made, `theirs` how the server holds it now,
+ * `mine` the fields the change sets. A field only one side changed takes that side's value. When both changed the
+ * content to different texts, the result is theirs, a divider, and mine (`both`); another field both changed
+ * takes mine. Fields the change did not alter are left out of the result, so nothing is sent for them.
+ */
+export function mergeNote(
+  base: unknown,
+  theirs: unknown,
+  mine: Record<string, unknown>
+): { fields: Record<string, unknown>; both: boolean } {
+  const was = isBody(base) ? base : {};
+  const now = isBody(theirs) ? theirs : {};
+  const fields: Record<string, unknown> = {};
+  let both = false;
+  for (const [key, value] of Object.entries(mine)) {
+    if (value === was[key]) continue;
+    if (now[key] === was[key] || now[key] === value) fields[key] = value;
+    else if (key === 'content' && typeof now[key] === 'string' && typeof value === 'string') {
+      fields[key] = now[key] + NOTE_DIVIDER + value;
+      both = true;
+    } else fields[key] = value;
+  }
+  return { fields, both };
+}
+
+/** A record's rev, or null when it has none. */
+export const revOf = (record: unknown): number | null =>
+  isBody(record) && typeof record['rev'] === 'number' ? record['rev'] : null;
+
+/** What a record is called, for a message: its name (a material), else its title. */
+export const nameOfRecord = (...records: unknown[]): string => {
+  for (const record of records) {
+    if (!isBody(record)) continue;
+    for (const key of ['name', 'title']) if (typeof record[key] === 'string' && record[key]) return record[key];
+  }
+  return '';
+};
+
+/**
+ * The text of a change, to copy out before a refused change is removed: the title or name, then every other text
+ * the change holds, one per line.
+ */
+export function textOfEntry(entry: Pick<OutboxEntry, 'area' | 'op' | 'body' | 'base'>): string {
+  const fields = fieldsOf(entry);
+  const lines: string[] = [];
+  const title = nameOfRecord(fields);
+  if (title) lines.push(title);
+  for (const [key, value] of Object.entries(fields)) {
+    if (typeof value === 'string' && value && value !== title && key !== 'date') lines.push(value);
+  }
+  return lines.join('\n\n');
+}
+
+/** What the server keeps about a record itself, which a copy made from it must not carry. */
+const RECORD_META = ['_id', '__v', 'ownedBy', 'rev', 'updatedAt', 'createdAt', 'idemKey'];
+
+/**
+ * The body of a create that makes a record out of a change that could not be made to the one it was for: the
+ * record as the change left it (the copy's record with the change made to it), without the server's own fields.
+ * `suffix` is added to its name or title; recipe links to firing logs stay behind.
+ */
+export function copyBody(entry: Pick<OutboxEntry, 'area' | 'base' | 'body' | 'op'>, suffix: string): Body {
+  const record: Body = { ...(isBody(entry.base) ? entry.base : {}), ...fieldsOf(entry) };
+  for (const key of RECORD_META) delete record[key];
+  if (entry.area === 'recipe') delete record['firings'];
+  const key = entry.area === 'materials' || entry.area === 'additives' ? 'name' : 'title';
+  if (suffix && typeof record[key] === 'string') record[key] = `${record[key]} ${suffix}`;
+  return record;
+}
+
 /**
  * The changes the user made while offline, kept in the same IndexedDB database as the copy of their records
  * (core/offline-records.ts) and sent when the network is back: first in, first out, one at a time, in one tab
@@ -202,6 +290,33 @@ export class Outbox {
   readonly signInNeeded = signal(false);
   /** How many changes of the user wait for a decision (conflict) or were refused (failed). */
   readonly stuck = signal(0);
+  /** How many changes of the user are still to be sent (waiting or on their way). */
+  readonly sendable = signal(0);
+  /** The user's changes that wait for a decision, oldest first. */
+  readonly conflicts = signal<OutboxEntry[]>([]);
+  /** The user's changes the server refused, oldest first. */
+  readonly failures = signal<OutboxEntry[]>([]);
+  /** What the outbox did on its own that the user should know (a flush finished, a delete skipped). */
+  readonly notices = signal<OutboxNotice[]>([]);
+  /** The records and settings (as "area/id") that have a change waiting to be sent. */
+  private readonly pendingKeys = signal<ReadonlySet<string>>(new Set());
+  private noticeId = 0;
+  private sentCount = 0;
+  private readonly mergeTries = new Map<number, number>();
+
+  /** Whether a change to this record (or setting) waits to be sent: for a "Waiting to save" mark. */
+  pendingFor(area: string, id: string): boolean {
+    return this.pendingKeys().has(`${area}/${id}`);
+  }
+
+  /** Dismisses a notice. */
+  dismissNotice(id: number): void {
+    this.notices.update((list) => list.filter((notice) => notice.id !== id));
+  }
+
+  private tell(key: string, params?: Record<string, unknown>): void {
+    this.notices.update((list) => [...list, { id: ++this.noticeId, text: translate(key, params) }]);
+  }
 
   /** Whether the outbox may hold a change; false skips opening the database. */
   noted(): boolean {
@@ -319,14 +434,23 @@ export class Outbox {
     if (!this.noted()) {
       this.count.set(0);
       this.stuck.set(0);
+      this.sendable.set(0);
+      this.conflicts.set([]);
+      this.failures.set([]);
+      this.pendingKeys.set(new Set());
       return;
     }
     const id = userId ?? (await this.records().ownerId());
     const all = await this.entries();
     this.setNote(all.length > 0);
     const mine = id ? all.filter((entry) => entry.userId === id) : [];
+    const sendable = mine.filter((entry) => entry.state === 'waiting' || entry.state === 'sending');
     this.count.set(mine.length);
-    this.stuck.set(mine.filter((entry) => entry.state === 'conflict' || entry.state === 'failed').length);
+    this.sendable.set(sendable.length);
+    this.conflicts.set(mine.filter((entry) => entry.state === 'conflict'));
+    this.failures.set(mine.filter((entry) => entry.state === 'failed'));
+    this.stuck.set(mine.length - sendable.length);
+    this.pendingKeys.set(new Set(sendable.map((entry) => `${entry.area}/${entry.id}`)));
   }
 
   /** Removes the changes of these users (not a copy's other users'); true if no change is left at all. */
@@ -344,6 +468,10 @@ export class Outbox {
     this.setNote(left > 0);
     this.count.set(0);
     this.stuck.set(0);
+    this.sendable.set(0);
+    this.conflicts.set([]);
+    this.failures.set([]);
+    this.pendingKeys.set(new Set());
     return left === 0;
   }
 
@@ -370,6 +498,8 @@ export class Outbox {
     }
     this.signInNeeded.set(false);
     const touched = new Set<string>();
+    this.sentCount = 0;
+    this.mergeTries.clear();
     try {
       for (;;) {
         const entry = this.nextToSend(await this.mine(userId));
@@ -379,6 +509,9 @@ export class Outbox {
     } finally {
       await this.refreshCount(userId);
       if (touched.size) await this.records().refetch([...touched]);
+      // Everything that could go has gone: the person is told once.
+      if (this.sentCount > 0 && this.sendable() === 0) this.tell(marker('outbox.saved'));
+      this.sentCount = 0;
     }
   }
 
@@ -418,13 +551,14 @@ export class Outbox {
         })
       );
       await this.sent(entry, res, touched);
+      this.sentCount++;
       return true;
     } catch (err) {
       if (!(err instanceof HttpErrorResponse)) {
         await this.update(entry.seq!, { state: 'waiting' });
         return false;
       }
-      return this.refused(entry, err);
+      return this.refused(entry, err, touched);
     }
   }
 
@@ -472,7 +606,7 @@ export class Outbox {
   }
 
   /** The server answered with an error (or the network failed): what becomes of the change. */
-  private async refused(entry: OutboxEntry, err: HttpErrorResponse): Promise<boolean> {
+  private async refused(entry: OutboxEntry, err: HttpErrorResponse, touched: Set<string>): Promise<boolean> {
     const code = isBody(err.error) && typeof err.error['code'] === 'string' ? err.error['code'] : `http-${err.status}`;
     // The network is gone again, the sign-in has run out, or the server is busy: it stays, and goes again later.
     if (err.status === 0 || err.status === 401 || err.status === 429 || err.status >= 500) {
@@ -481,14 +615,133 @@ export class Outbox {
       else if (err.status !== 0) this.retryLater();
       return false;
     }
-    // The record moved on or is gone: a later phase asks the user; it waits, with everything behind it for the record.
-    if (err.status === 409 || err.status === 404) {
-      await this.update(entry.seq!, { state: 'conflict', error: code });
+    const theirs = isBody(err.error) && isBody(err.error['record']) ? err.error['record'] : undefined;
+    if (entry.op === 'delete' && (err.status === 409 || err.status === 404)) {
+      // Gone already: done. Changed on the server since: the delete is dropped, so the newer record is not lost.
+      await this.drop(entry.seq!);
+      touched.add(entry.area);
+      if (err.status === 409) this.tell(marker('conflict.deleteSkipped'), { name: nameOfRecord(theirs, entry.base) });
+      return true;
+    }
+    if (entry.op === 'change' && err.status === 409 && entry.area === 'notes' && theirs) {
+      if (await this.mergeNoteChange(entry, theirs)) return true;
+    }
+    // The record moved on or is gone: the user decides (core/outbox-conflict.dialog.ts). It waits, with everything
+    // behind it for the record.
+    if (entry.op === 'change' && (err.status === 409 || err.status === 404)) {
+      await this.update(entry.seq!, {
+        state: 'conflict',
+        error: err.status === 404 ? 'record-gone' : 'record-conflict',
+        theirs: err.status === 404 ? undefined : theirs
+      });
       return true;
     }
     await this.update(entry.seq!, { state: 'failed', error: code });
     if (entry.op === 'create') await this.failDependents(entry.id);
     return true;
+  }
+
+  private async drop(seq: number): Promise<void> {
+    const db = await this.open();
+    const tx = db.transaction(OUTBOX, 'readwrite');
+    tx.objectStore(OUTBOX).delete(seq);
+    await done(tx);
+  }
+
+  /**
+   * A note changed on the server since it was edited here: merged with the server's (mergeNote) and queued again to
+   * go from the server's rev. No dialog; a note both sides rewrote keeps both texts, and the user is told.
+   * False when it cannot be merged (it keeps going back and forth), so the user decides.
+   */
+  private async mergeNoteChange(entry: OutboxEntry, theirs: Body): Promise<boolean> {
+    const tries = (this.mergeTries.get(entry.seq!) ?? 0) + 1;
+    this.mergeTries.set(entry.seq!, tries);
+    if (tries > 3) return false;
+    const { fields, both } = mergeNote(entry.base, theirs, fieldsOf(entry));
+    if (!Object.keys(fields).length) {
+      // Nothing of the edit is left to send: the server's note already says it.
+      await this.drop(entry.seq!);
+    } else {
+      await this.update(entry.seq!, {
+        state: 'waiting',
+        body: fields,
+        baseRev: revOf(theirs),
+        base: theirs,
+        error: undefined
+      });
+    }
+    if (both) this.tell(marker('conflict.noteMerged'), { name: nameOfRecord(theirs, entry.base) });
+    return true;
+  }
+
+  /**
+   * Settles a change that met a conflict, as the user chose:
+   * - copy: it is made as a new record named "... (offline copy)", and the record on the server is left as it is;
+   * - mine: it goes again from the server's rev, overwriting what the server holds;
+   * - theirs: it is dropped, and the server's record stays;
+   * - saveNew: for a record that is gone, the edited record is made again as a new one;
+   * - discard: for a record that is gone, the change (and any behind it) is dropped.
+   */
+  async resolve(seq: number, choice: ConflictChoice): Promise<void> {
+    const db = await this.open();
+    const tx = db.transaction(OUTBOX, 'readwrite');
+    const store = tx.objectStore(OUTBOX);
+    const all = await request<OutboxEntry[]>(store.getAll());
+    const entry = all.find((one) => one.seq === seq);
+    if (!entry || entry.state !== 'conflict') {
+      await done(tx);
+      return;
+    }
+    // The changes made after it to the same record.
+    const behind = all.filter(
+      (one) => one.userId === entry.userId && one.seq! > seq && one.area === entry.area && one.id === entry.id
+    );
+    const theirRev = revOf(entry.theirs);
+    switch (choice) {
+      case 'mine':
+        store.put({ ...entry, state: 'waiting', baseRev: theirRev, theirs: undefined, error: undefined });
+        break;
+      case 'theirs':
+        store.delete(seq);
+        for (const other of behind) store.put({ ...other, baseRev: theirRev });
+        break;
+      case 'discard':
+        store.delete(seq);
+        for (const other of behind) store.delete(other.seq!);
+        break;
+      case 'copy':
+      case 'saveNew': {
+        const id = TMP + crypto.randomUUID();
+        const suffix = choice === 'copy' ? translate('conflict.copySuffix') : '';
+        store.put({
+          ...entry,
+          op: 'create',
+          id,
+          key: crypto.randomUUID(),
+          baseRev: null,
+          base: undefined,
+          body: copyBody(entry, suffix),
+          state: 'waiting',
+          theirs: undefined,
+          error: undefined
+        });
+        for (const other of behind) store.put({ ...other, id, baseRev: null });
+        break;
+      }
+    }
+    await done(tx);
+    await this.refreshCount(entry.userId);
+    // The copy of the records follows: the server's version for a dropped change, with the new record for a copy.
+    await this.records().refetch([entry.area]);
+    void this.flush();
+  }
+
+  /** Removes a refused change the user does not want kept. */
+  async discardFailed(seq: number): Promise<void> {
+    const entry = (await this.entries()).find((one) => one.seq === seq);
+    await this.drop(seq);
+    await this.refreshCount(entry?.userId);
+    if (entry) await this.records().refetch([entry.area]);
   }
 
   /** What was to be made with the temporary id of a record that failed to be made cannot be sent either. */

@@ -21,6 +21,7 @@
               <tr>
                 <td>
                   <bdi>{{ add.name }}</bdi>
+                  <gc-pending-badge area="additives" [id]="add._id" />
                   <div>
                     <gc-remove-button
                       [name]="removal.nameOf(add)"
@@ -199,13 +200,7 @@
           }
         </ul>
       }
-      <button
-        type="submit"
-        class="btn btn-primary"
-        [disabled]="saving.active()"
-        [attr.aria-disabled]="offlineRecords.readOnly() || null"
-        [attr.title]="offlineRecords.note()"
-      >
+      <button type="submit" class="btn btn-primary" [disabled]="saving.active()">
         {{ t('library.common.save') }}
       </button>
     </form>

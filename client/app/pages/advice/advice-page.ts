@@ -92,6 +92,7 @@ import { STANDARD_ADVICE } from './standard-advice';
               <p class="keep-lines" dir="auto">{{ adv.content }}</p>
               <div class="small muted">{{ t('site.advice.tags', { list: tagsText(adv) }) }}</div>
               <gc-remove-button
+                needsNetwork
                 [name]="removal.nameOf(adv)"
                 [busy]="removal.isPending(adv)"
                 [problem]="removal.problemFor(adv)"

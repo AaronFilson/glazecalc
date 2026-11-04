@@ -12,7 +12,17 @@ import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
 import { FIRST_RENDER } from './first-render';
 import { OfflineRecords, RECORDS_DB, RECORDS_FLAG, RECORD_KEYS } from './offline-records';
 import { offlineRecordsInterceptor } from './offline-records.interceptor';
-import { OUTBOX_NOTE, Outbox, applyEntry, outboxCallOf, rewriteIds } from './outbox';
+import {
+  NOTE_DIVIDER,
+  OUTBOX_NOTE,
+  Outbox,
+  applyEntry,
+  mergeNote,
+  outboxCallOf,
+  rewriteIds,
+  textOfEntry
+} from './outbox';
+import { entryName } from './outbox-conflict.dialog';
 import { sessionExpiredInterceptor } from './session-expired.interceptor';
 
 const network = { status: 0, statusText: 'Unknown Error' };
@@ -507,5 +517,229 @@ describe('the outbox: changes made while offline', () => {
     await vi.waitFor(async () => expect(await outbox.entries()).toHaveLength(1));
     expect(await databases()).toContain(RECORDS_DB);
     expect(localStorage.getItem(OUTBOX_NOTE)).toBe('1');
+  });
+});
+
+const conflict = { status: 409, statusText: 'Conflict' };
+const gone = { status: 404, statusText: 'Not Found' };
+
+describe('the outbox: conflicts', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    sessionStorage.clear();
+    vi.stubGlobal('indexedDB', new IDBFactory());
+  });
+  afterEach(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    vi.unstubAllGlobals();
+    vi.restoreAllMocks();
+  });
+
+  /** Signs in, turns the copy on, queues the changes offline and starts the flush. */
+  async function queued(changes: () => Promise<unknown>) {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await changes();
+    vi.restoreAllMocks();
+    return { records, outbox };
+  }
+
+  it('merges a note: the fields only one side changed take that side, and both texts are kept when both changed the content', () => {
+    const base = { title: 'T', content: 'first' };
+    expect(mergeNote(base, { title: 'T', content: 'theirs' }, { title: 'Mine' })).toEqual({
+      fields: { title: 'Mine' },
+      both: false
+    });
+    expect(mergeNote(base, { title: 'Theirs', content: 'first' }, { content: 'mine' })).toEqual({
+      fields: { content: 'mine' },
+      both: false
+    });
+    // The same change on both sides: nothing to merge.
+    expect(mergeNote(base, { content: 'same' }, { content: 'same' }).fields).toEqual({ content: 'same' });
+    // A field the change left as it was is not sent.
+    expect(mergeNote(base, { content: 'theirs' }, { content: 'first' }).fields).toEqual({});
+    expect(mergeNote(base, { content: 'theirs' }, { content: 'mine' })).toEqual({
+      fields: { content: 'theirs' + NOTE_DIVIDER + 'mine' },
+      both: true
+    });
+    // A title both changed: the user's own.
+    expect(mergeNote(base, { title: 'A' }, { title: 'B' }).fields).toEqual({ title: 'B' });
+  });
+
+  it('merges a note edited elsewhere in another field, sending it again from the server rev, without asking', async () => {
+    const { records, outbox } = await queued(() => change('notes', 'n1', { title: 'Glaze notes' }));
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/notes/change/n1')).flush(
+      { code: 'record-conflict', record: { _id: 'n1', content: 'edited elsewhere', rev: 2 } },
+      conflict
+    );
+    const again = await nextRequest(API + '/notes/change/n1');
+    expect(again.request.headers.get('If-Match')).toBe('"2"');
+    expect(again.request.body).toEqual({ title: 'Glaze notes' });
+    again.flush({ code: 'record-updated', rev: 3 });
+    await answerNext(records.addressOf('notes'), []);
+    await flushed;
+    expect(await outbox.entries()).toEqual([]);
+    expect(outbox.conflicts()).toEqual([]);
+    // Said once: everything is saved. No word about a merge, as nothing clashed.
+    expect(outbox.notices().map((n) => n.text)).toEqual(['Your offline changes are saved.']);
+  });
+
+  it('keeps both texts of a note both sides rewrote: theirs, a divider, mine, and says so', async () => {
+    const { records, outbox } = await queued(() => change('notes', 'n1', { content: 'mine' }));
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/notes/change/n1')).flush(
+      { code: 'record-conflict', record: { _id: 'n1', title: 'Glazes', content: 'theirs', rev: 5 } },
+      conflict
+    );
+    const again = await nextRequest(API + '/notes/change/n1');
+    expect(again.request.headers.get('If-Match')).toBe('"5"');
+    expect(again.request.body).toEqual({ content: 'theirs' + NOTE_DIVIDER + 'mine' });
+    again.flush({ code: 'record-updated', rev: 6 });
+    await answerNext(records.addressOf('notes'), []);
+    await flushed;
+    expect(outbox.notices().map((n) => n.text)).toContain(
+      'The note Glazes was changed in two places. Both texts are kept, one below the other.'
+    );
+  });
+
+  it('drops a queued delete of a record changed elsewhere, with a notice; a delete of one already gone is done', async () => {
+    const { records, outbox } = await queued(async () => {
+      await remove('recipe', 'r1');
+      await remove('recipe', 'r2');
+    });
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/recipe/delete/r1')).flush(
+      { code: 'record-conflict', record: { _id: 'r1', title: 'Celadon (edited)', rev: 4 } },
+      conflict
+    );
+    (await nextRequest(API + '/recipe/delete/r2')).flush({ code: 'record-gone' }, gone);
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await flushed;
+    expect(await outbox.entries()).toEqual([]);
+    expect(outbox.stuck()).toBe(0);
+    expect(outbox.notices().map((n) => n.text)).toEqual([
+      'Celadon (edited) was not removed: it was changed somewhere else after you removed it here.'
+    ]);
+  });
+
+  /** A recipe change that met a newer record on the server: the entry waits for a decision. */
+  async function conflictOnRecipe() {
+    const { records, outbox } = await queued(() =>
+      change('recipe', 'r1', { recipe: { title: 'Celadon 2', notes: 'mine' } })
+    );
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/recipe/change/r1')).flush(
+      { code: 'record-conflict', record: { _id: 'r1', title: 'Celadon theirs', rev: 4 } },
+      conflict
+    );
+    await flushed;
+    expect(outbox.conflicts()).toHaveLength(1);
+    expect(outbox.conflicts()[0].error).toBe('record-conflict');
+    expect(outbox.pendingFor('recipe', 'r1')).toBe(false);
+    return { records, outbox, seq: outbox.conflicts()[0].seq! };
+  }
+
+  it('Save mine as a copy makes a new recipe named "(offline copy)" from the edited one and leaves the server\'s alone', async () => {
+    const { records, outbox, seq } = await conflictOnRecipe();
+    const resolved = outbox.resolve(seq, 'copy');
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await resolved;
+    const create = await nextRequest(API + '/recipe/create');
+    expect(create.request.body).toEqual({ title: 'Celadon 2 (offline copy)', notes: 'mine' });
+    expect(create.request.headers.has('If-Match')).toBe(false);
+    create.flush({ _id: 'r7', rev: 0 });
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+  });
+
+  it("Keep mine sends the change again from the server's rev", async () => {
+    const { records, outbox, seq } = await conflictOnRecipe();
+    const resolved = outbox.resolve(seq, 'mine');
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await resolved;
+    const again = await nextRequest(API + '/recipe/change/r1');
+    expect(again.request.headers.get('If-Match')).toBe('"4"');
+    again.flush({ code: 'record-updated', rev: 5 });
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+  });
+
+  it("Keep theirs drops the change and brings the server's record back into the copy", async () => {
+    const { records, outbox, seq } = await conflictOnRecipe();
+    const resolved = outbox.resolve(seq, 'theirs');
+    await answerNext(records.addressOf('recipe'), [{ _id: 'r1', title: 'Celadon theirs', rev: 4 }]);
+    await resolved;
+    expect(await outbox.entries()).toEqual([]);
+    await vi.waitFor(async () =>
+      expect(((await records.read('recipe'))?.body as Array<{ title: string }>)[0].title).toBe('Celadon theirs')
+    );
+  });
+
+  it('a record that is gone: Save as new makes it again with the same name; Discard drops the change', async () => {
+    for (const choice of ['saveNew', 'discard'] as const) {
+      localStorage.clear();
+      vi.stubGlobal('indexedDB', new IDBFactory());
+      TestBed.resetTestingModule();
+      const { records, outbox } = await queued(() => change('recipe', 'r2', { recipe: { title: 'Shino 2' } }));
+      const flushed = outbox.flush();
+      (await nextRequest(API + '/recipe/change/r2')).flush({ code: 'record-gone' }, gone);
+      await flushed;
+      const [entry] = outbox.conflicts();
+      expect(entry.error).toBe('record-gone');
+      const resolved = outbox.resolve(entry.seq!, choice);
+      await answerNext(records.addressOf('recipe'), RECIPES);
+      await resolved;
+      if (choice === 'saveNew') {
+        const create = await nextRequest(API + '/recipe/create');
+        expect((create.request.body as { title: string }).title).toBe('Shino 2');
+        create.flush({ _id: 'r8', rev: 0 });
+        await answerNext(records.addressOf('recipe'), RECIPES);
+      }
+      await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+    }
+  });
+
+  it('a copy the quota refuses fails and keeps its text until the person copies it out or removes it', async () => {
+    const { records, outbox, seq } = await conflictOnRecipe();
+    const resolved = outbox.resolve(seq, 'copy');
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await resolved;
+    (await nextRequest(API + '/recipe/create')).flush({ code: 'quota' }, { status: 403, statusText: 'Forbidden' });
+    await vi.waitFor(() => expect(outbox.failures()).toHaveLength(1));
+    const [failed] = outbox.failures();
+    expect(failed.state).toBe('failed');
+    expect(textOfEntry(failed)).toBe('Celadon 2 (offline copy)\n\nmine');
+    expect(entryName(failed)).toBe('Celadon 2 (offline copy)');
+    const removed = outbox.discardFailed(failed.seq!);
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await removed;
+    expect(await outbox.entries()).toEqual([]);
+    expect(outbox.failures()).toEqual([]);
+  });
+
+  it('marks what waits: pendingFor and the count, and says "saved" once everything has gone', async () => {
+    const { records, outbox } = await queued(async () => {
+      await change('recipe', 'r1', { recipe: { title: 'A' } });
+      await create('materials', { name: 'M' });
+    });
+    expect(outbox.sendable()).toBe(2);
+    expect(outbox.pendingFor('recipe', 'r1')).toBe(true);
+    expect(outbox.pendingFor('recipe', 'r2')).toBe(false);
+    const [made] = (await outbox.entries()).filter((e) => e.op === 'create');
+    expect(outbox.pendingFor('materials', made.id)).toBe(true);
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/recipe/change/r1')).flush({ code: 'record-updated', rev: 4 });
+    (await nextRequest(API + '/materials/create')).flush({ _id: 'm1', rev: 0 });
+    for (const key of ['recipe', 'materials']) await answerNext(records.addressOf(key), []);
+    await flushed;
+    expect(outbox.sendable()).toBe(0);
+    expect(outbox.pendingFor('recipe', 'r1')).toBe(false);
+    expect(outbox.notices().map((n) => n.text)).toEqual(['Your offline changes are saved.']);
+    outbox.dismissNotice(outbox.notices()[0].id);
+    expect(outbox.notices()).toEqual([]);
   });
 });

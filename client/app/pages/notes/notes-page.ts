@@ -4,16 +4,16 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Note } from '../../core/models';
-import { OfflineRecords } from '../../core/offline-records';
 import { Busy } from '../../shared/busy';
 import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
+import { PendingBadge } from '../../shared/pending-badge';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 
 @Component({
   selector: 'gc-notes-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, TranslocoDirective],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, PendingBadge, RemoveButton, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('notebook.notes.title')" [lead]="t('notebook.notes.lead')" />
     <gc-notices [notices]="notices" />
@@ -47,13 +47,7 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
             gcFieldName="content"
           ></textarea>
         </div>
-        <button
-          type="submit"
-          class="btn btn-primary"
-          [disabled]="saving.active()"
-          [attr.aria-disabled]="offlineRecords.readOnly() || null"
-          [attr.title]="offlineRecords.note()"
-        >
+        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">
           {{ t('notebook.notes.save') }}
         </button>
       </form>
@@ -67,6 +61,7 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
             <li>
               <h3 class="h5">
                 <bdi>{{ note.title }}</bdi>
+                <gc-pending-badge area="notes" [id]="note._id" />
               </h3>
               <p class="keep-lines" dir="auto">{{ note.content }}</p>
               <gc-remove-button
@@ -106,7 +101,6 @@ export class NotesPage implements OnInit {
 
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
-  protected readonly offlineRecords = inject(OfflineRecords);
   protected readonly title = signal('');
   protected readonly content = signal('');
   protected readonly checks = new FieldChecks(() => ({
@@ -134,11 +128,7 @@ export class NotesPage implements OnInit {
   }
 
   protected save(): Promise<void> {
-    // Offline, showing the copy kept on this device: nothing can be saved (core/offline-records.ts).
-    if (this.offlineRecords.readOnly()) {
-      this.notices.error(this.offlineRecords.note() ?? '');
-      return Promise.resolve();
-    }
+    // Offline, a save is queued and sent later (core/outbox.ts).
     return this.saving.run(() => this.saveNow());
   }
 

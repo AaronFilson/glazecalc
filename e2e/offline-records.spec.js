@@ -7,7 +7,7 @@ const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const API = 'http://localhost:' + (process.env.E2E_PORT || '3100') + '/api';
 
 // Offline stage 3 (docs/adr/0028-service-worker.md, core/offline-records.ts): a signed-in user's records kept on
-// the device when they turn it on, read-only offline, and deleted only by the person (signing out, signing in as
+// the device when they turn it on, editable offline (changes wait: e2e/offline-edits.spec.js), and deleted only by the person (signing out, signing in as
 // someone else, turning it off); a sign-in that runs out or a closed browser deletes nothing. The service worker is
 // allowed, as in offline.spec.js, so a reload with no network has the app.
 test.use({ serviceWorkers: 'allow', viewport: { width: 1280, height: 800 } });
@@ -97,7 +97,7 @@ const banner = (page) =>
   page.getByRole('status').filter({ hasText: "Glazecalc can't be reached. Showing the copy saved on this device" });
 const notSaved = (page) => page.getByRole('status').filter({ hasText: 'Your records are not saved on this device' });
 
-test('turned on, a recipe opens with no network, read-only, with the banner', async ({ page, context }) => {
+test('turned on, a recipe opens with no network, with the banner', async ({ page, context }) => {
   await signUpAndSignIn(page);
   const id = await savedRecipe(page, 'Offline Celadon');
   await installed(page, '/recipe');
@@ -115,11 +115,12 @@ test('turned on, a recipe opens with no network, read-only, with the banner', as
   expect(viaWorker).toBe(504);
   await expect(page.locator('#recipe-name')).toHaveValue('Offline Celadon');
   await expect(banner(page)).toBeVisible();
+  // Saving is on: an offline save waits on the device and is sent later (e2e/offline-edits.spec.js).
   const save = page.locator('.recipe-save').getByRole('button', { name: 'Save', exact: true });
-  await expect(save).toHaveAttribute('aria-disabled', 'true');
+  await expect(save).not.toHaveAttribute('aria-disabled', 'true');
 });
 
-test('the notes, firing, material and additive pages save and remove nothing while the copy is shown', async ({
+test('the notes, firing, material and additive pages still save and remove while the copy is shown', async ({
   page,
   context
 }) => {
@@ -146,24 +147,25 @@ test('the notes, firing, material and additive pages save and remove nothing whi
   await page.goto('/notes');
   await expect(page.getByText('Kept Note')).toBeVisible();
   await expect(banner(page)).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Save', exact: true })).toHaveAttribute('aria-disabled', 'true');
+  // Saving and removing are on: offline they wait on the device (e2e/offline-edits.spec.js).
+  await expect(page.getByRole('button', { name: 'Save', exact: true })).not.toHaveAttribute('aria-disabled', 'true');
   const remove = page.getByRole('button', { name: 'Remove Kept Note' });
-  await expect(remove).toHaveAttribute('aria-disabled', 'true');
-  // Playwright will not click a button marked disabled; a click event still reaches it, and asks nothing.
-  await remove.dispatchEvent('click');
-  await expect(page.getByRole('button', { name: 'Yes, remove' })).toHaveCount(0);
+  await expect(remove).not.toHaveAttribute('aria-disabled', 'true');
+  await remove.click();
+  await expect(page.getByRole('button', { name: 'Yes, remove' })).toBeVisible();
+  await page.getByRole('button', { name: 'Cancel' }).click();
 
   await page.goto('/firing');
   await expect(page.getByText('Kept Firing').first()).toBeVisible();
-  await expect(page.locator('button[form="firing-form"]')).toHaveAttribute('aria-disabled', 'true');
-
+  await expect(page.locator('button[form="firing-form"]')).not.toHaveAttribute('aria-disabled', 'true');
+  // Linking a recipe to a log needs the network.
   await page.goto('/material');
-  await expect(page.locator('form').getByRole('button', { name: 'Save', exact: true })).toHaveAttribute(
+  await expect(page.locator('form').getByRole('button', { name: 'Save', exact: true })).not.toHaveAttribute(
     'aria-disabled',
     'true'
   );
   await page.goto('/additive');
-  await expect(page.locator('form').getByRole('button', { name: 'Save', exact: true })).toHaveAttribute(
+  await expect(page.locator('form').getByRole('button', { name: 'Save', exact: true })).not.toHaveAttribute(
     'aria-disabled',
     'true'
   );
@@ -203,7 +205,6 @@ test("read-only is the page's: back online the bar offers Reload, and the next p
   await context.setOffline(true);
   await page.reload();
   await expect(banner(page)).toBeVisible();
-  await expect(notesSave()).toHaveAttribute('aria-disabled', 'true');
   await context.setOffline(false);
   await expect(backOnline).toBeVisible();
   const { violations } = await new AxeBuilder({ page }).include('.offline-records-back').withTags(WCAG).analyze();

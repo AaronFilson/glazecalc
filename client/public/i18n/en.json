@@ -99,6 +99,30 @@
     "recordsBackOnline": "You are back online. Reload to see your latest records and save again.",
     "recordsNotKept": "This browser won't keep a copy (private browsing or no space)."
   },
+  "outbox": {
+    "waiting": "Waiting to save",
+    "count": "{count, plural, one {# change waiting to save} other {# changes waiting to save}}",
+    "bannerEdit": "You can keep working: your changes wait on this device and are sent when Glazecalc can be reached.",
+    "saved": "Your offline changes are saved.",
+    "dismiss": "Dismiss",
+    "failed": "A change to {name} could not be saved. It was not sent.",
+    "copyText": "Copy text",
+    "remove": "Remove",
+    "dependsFailed": "It depends on a record that could not be saved."
+  },
+  "conflict": {
+    "title": "Your offline change needs a decision",
+    "body": "{name} was changed somewhere else while you were editing it offline. What should happen to your changes?",
+    "copy": "Save mine as a copy",
+    "mine": "Keep mine",
+    "theirs": "Keep theirs",
+    "copySuffix": "(offline copy)",
+    "gone": "{name} is no longer there: it was removed or is in the Trash. Your offline changes to it were not saved.",
+    "saveNew": "Save as new",
+    "discard": "Discard my changes",
+    "deleteSkipped": "{name} was not removed: it was changed somewhere else after you removed it here.",
+    "noteMerged": "The note {name} was changed in two places. Both texts are kept, one below the other."
+  },
   "picker": {
     "results": "{count, plural, one {# match} other {# matches}}",
     "languages": {

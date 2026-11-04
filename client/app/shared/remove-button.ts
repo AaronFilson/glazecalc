@@ -7,6 +7,7 @@ import {
   WritableSignal,
   afterNextRender,
   booleanAttribute,
+  computed,
   inject,
   input,
   output,
@@ -160,8 +161,8 @@ let nextQuestionId = 0;
         class="btn btn-sm remove-start"
         [class]="danger() ? 'btn-outline-danger' : 'btn-light border'"
         [attr.aria-label]="t('remove.removeName', { name: name() })"
-        [attr.aria-disabled]="offlineRecords.readOnly() || null"
-        [attr.title]="offlineRecords.note()"
+        [attr.aria-disabled]="needsNetworkNow() || null"
+        [attr.title]="needsNetworkNow() ? offlineRecords.note() : null"
         (click)="ask()"
       >
         {{ t('remove.remove') }}
@@ -202,6 +203,11 @@ export class RemoveButton {
   readonly danger = input(false, { transform: booleanAttribute });
   /** It is deleted for good, not moved to the Trash: on the Trash page. */
   readonly forGood = input(false, { transform: booleanAttribute });
+  /**
+   * Removing it needs the network (the Trash page, advice): it is off while the page shows the copy kept on this
+   * device. Without this a removal is queued and sent later (core/outbox.ts).
+   */
+  readonly needsNetwork = input(false, { transform: booleanAttribute });
   /** The page is removing it now. */
   readonly busy = input(false);
   /** Why the last try failed, shown in the question. */
@@ -210,8 +216,12 @@ export class RemoveButton {
   readonly confirmed = output<void>();
 
   protected readonly asking = signal(false);
-  /** Offline, showing the copy kept on this device: nothing can be removed (core/offline-records.ts). */
+  /** Offline, showing the copy kept on this device (core/offline-records.ts). */
   protected readonly offlineRecords = inject(OfflineRecords);
+  /** Off: the copy is shown and this removal cannot be queued. */
+  protected readonly needsNetworkNow = computed(
+    () => this.offlineRecords.readOnly() && (this.needsNetwork() || this.forGood())
+  );
   protected readonly questionId = 'remove-question-' + nextQuestionId++;
   private readonly removeButton = viewChild<ElementRef<HTMLElement>>('removeButton');
   private readonly cancelButton = viewChild<ElementRef<HTMLElement>>('cancelButton');
@@ -238,7 +248,7 @@ export class RemoveButton {
   }
 
   protected ask(): void {
-    if (this.offlineRecords.readOnly()) return;
+    if (this.needsNetworkNow()) return;
     this.asking.set(true);
     afterNextRender(() => this.cancelButton()?.nativeElement.focus(), { injector: this.injector });
   }

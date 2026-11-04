@@ -141,6 +141,7 @@
                   >
                     <bdi>{{ rec.title }}</bdi>
                   </button>
+                  <gc-pending-badge area="recipe" [id]="rec._id" />
                   @if (rec.date) {
                     <span class="saved-recipe-date">{{ rec.date | gcDate: 'medium' }}</span>
                   }
@@ -1170,13 +1171,7 @@
     }
   </ng-template>
   <ng-template #saveButton>
-    <button
-      type="button"
-      class="btn btn-primary"
-      [attr.aria-disabled]="saving.active() || offlineRecords.readOnly() || null"
-      [attr.title]="offlineNote()"
-      (click)="save()"
-    >
+    <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">
       {{ t('recipe.page.save') }}
     </button>
   </ng-template>
@@ -1184,8 +1179,7 @@
     <button
       type="button"
       class="btn btn-light border"
-      [attr.aria-disabled]="saving.active() || offlineRecords.readOnly() || null"
-      [attr.title]="offlineNote()"
+      [attr.aria-disabled]="saving.active() || null"
       (click)="saveAndNext()"
     >
       {{ t('recipe.page.saveAndNext') }}
@@ -1194,8 +1188,7 @@
       <button
         type="button"
         class="btn btn-light border"
-        [attr.aria-disabled]="saving.active() || offlineRecords.readOnly() || null"
-        [attr.title]="offlineNote()"
+        [attr.aria-disabled]="saving.active() || null"
         (click)="saveAsCopy()"
       >
         {{ t('recipe.page.saveAsCopy') }}

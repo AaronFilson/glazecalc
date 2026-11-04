@@ -142,14 +142,7 @@
         <span id="add-row-why" class="muted">{{ t('notebook.firing.addRowWhy') }}</span>
       }
     </div>
-    <button
-      type="submit"
-      form="firing-form"
-      class="btn btn-primary"
-      [disabled]="saving.active()"
-      [attr.aria-disabled]="offlineRecords.readOnly() || null"
-      [attr.title]="offlineRecords.note()"
-    >
+    <button type="submit" form="firing-form" class="btn btn-primary" [disabled]="saving.active()">
       {{ t('notebook.firing.save') }}
     </button>
   </section>
@@ -162,6 +155,7 @@
           <li class="stored-firing">
             <h3 class="h5">
               <bdi>{{ fr.title }}</bdi>
+              <gc-pending-badge area="firing" [id]="fr._id" />
             </h3>
             <p class="muted">
               {{

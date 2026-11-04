@@ -111,6 +111,8 @@ export class OfflineRecords {
     this.auth.onSessionStart(() => this.sessionStarted());
     // A copy left behind that nothing needs (no flag, no waiting change): a clear another tab blocked.
     if (!this.enabled() && !this.outbox().noted()) this.ready = this.drop();
+    // Changes waiting from before: counted at once, so a start with no network shows them (the user is the copy's).
+    else if (this.outbox().noted()) queueMicrotask(() => void this.outbox().refreshCount());
     // Another tab turned the copy off, or the storage was cleared by the person.
     const onStorage = (event: StorageEvent) => {
       if (event.key === null) void this.clear();
