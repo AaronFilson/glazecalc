@@ -119,99 +119,120 @@ HSE ክሪስታል ሲሊካ «በስህተት 'amorphous silica' (ክሪስታ
 
 Derek Au በአንድ ሳህን ውስጥ በተለያዩ ክምሮች ይመዝናል፣ ስህተት ቢፈጠር ተዝግኖ እንዲወጣ። በጥሬ ዕቃዎች መካከል tare ሳያደርጉ ወደ አንድ ባልዲ ከመዘኑ፣ የGlazecalc ተከታታይ ድምር ከእያንዳንዱ በኋላ ሚዛኑ ምን ማንበብ እንዳለበት ይነግርዎታል።
 
-## መቀላቀል እና በወንፊት ማጣራት {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### ምን ያህል ውሃ
+### How much water
 
-ምንጮች አይስማሙም። Derek Au ወፍራም አድርጎ ይጀምራል፣ በ100 g ዱቄት 50 mL ውሃ፣ እና በኋላ ተጨማሪ ያክላል። Potterycrafts ለአንድ የዱቄት ግላዝ በ100 g 65 mL ይሰጣል። UT Austin እኩል ክብደት ያለው ውሃ እና ዱቄት ይጠቀማል፣ እና Digitalfire 20 kg ዱቄት ወደ 20 kg ውሃ ሲያደርግ SG 1.46 ለክቷል።
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-ውሃ ለማከል ፈጣን ለማውጣት ደግሞ ቀርፋፋ ነው፣ ስለዚህ በትንሹ ይጀምሩ። የእኛ ግምት፥ **በ100 g ከ70 እስከ 80 mL ገደማ** ይጀምሩ (በኪሎግራም ከ700 እስከ 800 mL፣ ወይም በፓውንድ ከ11 እስከ 12 US fl oz ገደማ)። በዚያ ውፍረት ያራስሱ፣ ይቀላቅሉ እና በወንፊት ያጣሩ፣ ከዚያም SG ትክክል እስኪሆን ድረስ ውሃ ጥቂት በጥቂት ያክሉ። 1 mL ውሃ 1 g ይመዝናል፣ ስለዚህ መመዘን ይችላሉ። ካለፉ፣ ግላዙ እንዲረጋ ይተዉት፣ ከዚያም ከላይ ያለውን ጥርት ያለ ውሃ በስፖንጅ ያውጡ ወይም ያፍስሱ።
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### መሣሪያዎች እና ውሃ
+### Tools and water
 
-- **ባለ ፕሮፔለር መቀላቀያ።** Digitalfire ጥሩውን «አስፈላጊ» ይለዋል። የመቀላቀያ ምላጭ ያለው ባለ ገመድ ድሪል በባልዲ ውስጥ ሥራውን ይሠራል። UT Austin ግላዙ የተቀላቀለ ከመሰለ በኋላ ቢያንስ ከ4 እስከ 5 ደቂቃ ያሠራዋል፣ እና ምላጩን ከባልዲው ያርቃል፣ ምክንያቱም ፕላስቲክ ሊፍቅበት ይችላል።
-- **ብሌንደር።** «ለትንንሽ ባቾች በጣም በደንብ ይሠራል» (Digitalfire)። ለግላዝ ብቻ ያቆዩት፥ ወደ ማእድ ቤት በጭራሽ መመለስ የለበትም።
-- **ዊስክ ወይም ዱላ።** መቀላቀያ ሲጠፋ የZakin ምርጫ።
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-ውሃም ይለያያል፣ እና Digitalfire ስለሪ እንዴት እንደሚሆን እንደሚለውጥ ይጠቅሳል። Derek Au የቧንቧ ውሃው ብዙ ማዕድን የተሟሟበት (hard water) ስለሆነ reverse-osmosis ውሃ ይጠቀማል። የሚጠቀሙት ምንም ይሁን፣ ይጻፉት።
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### ደረጃ በደረጃ
+### Step by step
 
-1. የመተንፈሻ ጭምብልዎን ያድርጉ፣ እጆችዎ ወደ ውስጥ የሚገቡ ከሆነም የጎማ ጓንት። Zakin ከመመዘን መጀመሪያ ጀምሮ ግላዙ እስኪረጥብ ድረስ ጭምብል ያደርጋል።
-2. በ100 g ዱቄት ከ70 እስከ 80 mL ገደማ ውሃ ለክተው ወደ ባልዲው ያድርጉ።
-3. የተመዘነውን ዱቄት ቀስ ብለው፣ ከዝቅተኛ ከፍታ ያክሉ። UT Austin ዱቄትን ወደ ለብ ውሃ ያክላል፤ Zakin እና Au ውሃን ወደ ዱቄት ያክላሉ። ዱቄትን ወደ ውሃ እንዲያደርጉ እንመክራለን፣ ይህም አቧራ ያነሰ ያስነሣል፣ ብዙ ቤንቶናይት ካለበት የግላዝ አዘገጃጀት በስተቀር፥ ደረቅ ዱቄቶቹን መጀመሪያ አብረው ያማስሏቸው።
-4. **ያራስሱት (slake)**፥ ዱቄቱ ሳይማሰል እንዲጠጣ ይተዉት። Digitalfire 20 ደቂቃ ገደማ ይጠብቃል። ሙጫ ወይም ማያያዣ ያላቸው ዱቄቶች ሌሊቱን ሙሉ መቆም አለባቸው።
-5. ደረቅ ኪሶች ወይም ጓጉንቸሮች እስኪጠፉ ድረስ ይቀላቅሉ።
-6. ሁለት ጊዜ በወንፊት ያጣሩት (ከታች ይመልከቱ)።
-7. ሸፍነው ሌሊቱን ሙሉ እንዲያርፍ ይተዉት፣ ከዚያም እንደገና ይቀላቅሉ እና ታችኛው ላይ ጠንካራ ንብርብር እንዳለ ያረጋግጡ።
-8. SGውን ይለኩ፣ እና ዒላማዎ ላይ ለመድረስ ውሃ ጥቂት በጥቂት ያክሉ።
-9. ባልዲውን ይሰይሙ፣ እና ያደረጉትን ይጻፉ።
-10. በእርጥብ ያጽዱ፥ ወለሉን ይወልውሉ እና የጥሬ ዕቃ ዕቃዎቹን ውጪ ጨምሮ እያንዳንዱን ገጽ ይጥረጉ።
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### በወንፊት ማጣራት
+### Sieving
 
-**ወንፊት** በፍሬም ውስጥ ያለ የሽቦ መረብ ነው። ግላዙን በብሩሽ በእሱ ውስጥ መግፋት መቀላቀል የሚተዋቸውን ጓጉንቸሮች ይሰብራል፣ እና ሲቃጠሉ ነጠብጣብ የሚሆኑ ቅንጣቶችን ይይዛል። የ**mesh** ቁጥሩ በጨመረ ቁጥር መረቡ ይበልጥ ልም ይሆናል፥ 80 mesh ወደ 0.18 mm ገደማ ቀዳዳዎች አሉት፣ 100 mesh ደግሞ ወደ 0.15 mm ገደማ።
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-ምንጮች የተለያዩ mesh ይመክራሉ። Zakin በ50 ወይም 80 mesh ሁለት ጊዜ ያጣራል። Derek Au ለአብዛኞቹ ግላዞች 120 mesh ይጠቀማል፣ በተለይ ኮባልት ወይም ብረት (iron) ላላቸው፥ በ80 mesh ሦስት ጊዜ ማሳለፍ በአንድ celadon ውስጥ አሁንም የብረት ነጠብጣቦችን ትቷል፣ በ120 mesh አንድ ጊዜ ማሳለፍ ደግሞ አስተካክሎታል። 60 እስከ 80 meshን ለአመድ ግላዞች እና ሻካራ ጥሬ ዕቃዎች ላሏቸው ሌሎች ያቆያል። በዩናይትድ ኪንግደም ያለው Potterycrafts ከ60 እስከ 80 mesh ይመክራል። ደህንነቱ የተጠበቀ መነሻ፥
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: የትኛውን ወንፊት እንደሚጠቀሙ
-Label: የወንፊት mesh
+Table: Which sieve to use
+Label: Sieve mesh
 
-| ግላዝ                                          | ወንፊት              |
-| -------------------------------------------- | ----------------- |
-| አብዛኞቹ ግላዞች                                   | በ80 mesh ሁለት ጊዜ   |
-| እንደ ኮባልት ወይም ብረት (iron) ያሉ ማቅለሚያዎች ያላቸው ግላዞች | ከ100 እስከ 120 mesh |
-| የአመድ ግላዞች፣ እና ሻካራ ጥሬ ዕቃዎች ያላቸው ሌሎች           | ከ60 እስከ 80 mesh   |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## SG (አንጻራዊ ክብደት) {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**SG (አንጻራዊ ክብደት)** በስለሪዎ ውስጥ ምን ያህል ዱቄት እንዳለ ይነግርዎታል። የአንድ መጠን (volume) ግላዝ ክብደት በተመሳሳይ መጠን ውሃ ክብደት ሲካፈል ነው። ውሃ 1.00 ነው፣ እና {{SG 1.45}} ያለው ግላዝ በ100 mL 145 g ይመዝናል። ወደ ተለካ SG መቀላቀል ሁልጊዜ ተመሳሳይ ውፍረት እና ተመሳሳይ ሽፋን የሚያገኙበት መንገድ ነው። መለኪያ አሃድ የለውም፣ ስለዚህ በግራምም በአውንስም ተመሳሳይ ነው።
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 100 mL በመመዘን ይለኩት
+### Measure it by weighing 100 mL
 
-1. ምንም ነገር እንዳይረጋ ግላዙን ያማስሉት።
-2. 100 mL **የመለኪያ ሲሊንደር** (ረጅም፣ ምልክት ያለው የመለኪያ ቱቦ) ወይም 100 mL ሲሪንጅ በሚዛኑ ላይ አድርገው tare ያድርጉት።
-3. ምልክቱን በዓይን ደረጃ እያነበቡ በትክክል እስከ 100 mL ግላዝ ይሙሉት።
-4. ይመዝኑት እና ግራሙን በ100 ያካፍሉ፥ 145 g SG 1.45 ነው።
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire ደግሞ አንድ ኩባያ በ500 g ውሃ ደረጃ ምልክት ያደርጋል፣ እስከ ምልክቱ በግላዝ ይሞላዋል፣ እና ክብደቱን በ500 ያካፍላል፤ ትልቅ እና የተሞላ መለኪያ ይበልጥ ትክክለኛ ነው። **ሃይድሮሜትር (hydrometer)**፣ በግላዙ ውስጥ በሚቆምበት ቦታ የሚነበብ ተንሳፋፊ፣ ፈጣን ነው ግን ወፍራም ወይም የጀለ ግላዞችን በስህተት ሊያነብ ይችላል። እንደ Potclays ያሉ የዩናይትድ ኪንግደም ሃይድሮሜትሮች በBaumé ዲግሪ (°Bé) ያነባሉ። በእኛ ስሌት SG = 145 ÷ (145 − °Bé)፣ ስለዚህ 46 °Bé ወደ 1.46 ገደማ ነው። የቆዩ የዩናይትድ ኪንግደም መጻሕፍት **pint weight** ይሰጣሉ፣ ማለትም በአንድ imperial pint ግላዝ ውስጥ ያሉ አውንሶች፥ በ20 ያካፍሉት፣ ስለዚህ 29 oz ወደ SG 1.45 ገደማ ነው (ይህም የእኛ ስሌት)።
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### ምን ላይ ማነጣጠር
+### What to aim for
 
-ምንጮች አይስማሙም፣ ከሁሉም በላይ በብሩሽ መቀባት እና በመርጨት ላይ፣ በዚያም የዩናይትድ ኪንግደሙ አቅራቢ Potclays በጣም ከፍ ያሉ ቁጥሮችን ይሰጣል (የራሱ ቁጥሮች «ለመመሪያ ብቻ» ናቸው)። እያንዳንዱን ቁጥር እንደ መነሻ ይውሰዱ። የDigitalfire ዋና ምክር ለእያንዳንዱ ግላዝ የሚሠራውን SG እና ጀል ማግኘት፣ ከዚያም መድገም እና መጻፍ ነው።
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: የSG ዒላማዎች፣ ምንጮች የማይስማሙበት
-Label: የSG ዒላማዎች
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| አጠቃቀም     | Digitalfire እና Glazy                                                                                       | Potclays (ዩናይትድ ኪንግደም)                     | ደህንነቱ የተጠበቀ መነሻ                                   |
-| --------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------- |
-| መንከር      | {{SG 1.40}} (ለ5 ሰከንድ መንከር) እስከ {{SG 1.50}} (ለ1 ሰከንድ መንከር)፤ በቤት የተቀላቀሉ የጀሉ ግላዞች በ{{SG 1.43–1.45}} የተሻለ ይሠራሉ | ጥርት ያለ {{SG 1.46–1.48}}፤ ባለቀለም {{SG 1.61}} | {{SG 1.45}}፤ ቢንጠባጠብ ወደ {{SG 1.43}} ያቅጥኑት እና ያጀሉት  |
-| በብሩሽ መቀባት | {{SG 1.25}} (ቀጭን ጥርት ያለ) እስከ {{SG 1.55}} (ጥቁር ዝርዝር ሥራ)                                                     | {{SG 1.71–1.81}}                           | ምርቱን ይከተሉ፤ CMC ሙጫ ወይም የብሩሽ መቀቢያ ይጠቀሙ              |
-| መርጨት      | ቁጥር የለም፤ ለCeramic Arts Network የሚጽፈው Hopper በጣም ቀጭን ይላል፣ ከdeflocculant ጋር (ስለሪን ይበልጥ ፈሳሽ የሚያደርግ ተጨማሪ ነገር)  | {{SG 1.71}}                                | አስተማማኝ ቁጥር የለም፤ በመርጫ ክፍል (spray booth) ውስጥ ብቻ ይርጩ |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-የመንከሪያ ግላዝን በዓይን ለመፈተሽ AMACO ለ5 ሰከንድ ይነክራል እና የአሜሪካ dime ሳንቲም ያህል ውፍረት ያለው ሽፋን ይፈልጋል። Digitalfire ለማረጋገጥ ለ5 ሰከንድ የተነከሩ ንጣፎችን ያቃጥላል።
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### ለታለመ SG የሚያስፈልግ ውሃ፥ የእኛ ግምት
+### Water for a target SG: our estimate
 
-ከታች ያለው ሰንጠረዥ የእኛ የራሳችን ስሌት ነው እንጂ የምንጭ አይደለም። የዱቄቱ ቅንጣቶች 2.6 g በcm³ ጥግግት እንዳላቸው ይገምታል፣ ይህም ግምት ነው እንጂ ልኬት አይደለም። ሸክላ፣ የሚሟሙ ጥሬ ዕቃዎች እና ጀል እውነተኛውን ግላዝ ይለውጣሉ፣ ስለዚህ ለመጀመር ይጠቀሙበት፣ ከዚያም ይለኩ። ለማረጋገጫ፣ ለእኩል ክብደት ዱቄት እና ውሃ {{SG 1.44}} ይተነብያል፣ ይህም ለDigitalfire የተለካ {{SG 1.46}} ቅርብ ነው። እንዲሁም በ100 g ከ70 እስከ 80 mL ከ{{SG 1.50}} በላይ እንደሚያስጀምርዎ ያሳያል፣ ከሚያስፈልግዎ የበለጠ ወፍራም።
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: ለታለመ SG የሚያስፈልግ ውሃ (የእኛ ግምት)
-Label: ለታለመ SG የሚያስፈልግ ውሃ
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| ዒላማ         | በ100 g ዱቄት |      በኪሎግራም |           በፓውንድ |
-| ----------- | ---------: | ----------: | --------------: |
-| {{SG 1.40}} | 115 mL ገደማ | 1150 mL ገደማ | 18 US fl oz ገደማ |
-| {{SG 1.45}} |  98 mL ገደማ |  980 mL ገደማ | 15 US fl oz ገደማ |
-| {{SG 1.50}} |  85 mL ገደማ |  850 mL ገደማ | 13 US fl oz ገደማ |
-| {{SG 1.60}} |  64 mL ገደማ |  640 mL ገደማ | 10 US fl oz ገደማ |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Epsom salts፣ CMC ሙጫ እና ቤንቶናይት
+### Find your own glaze's dry SG while you mix
 
-**Epsom salts** ግላዝ ዝም ብሎ ሲቆም በጥቂቱ እንዲጀል፣ ሲማሰል ደግሞ እንደገና እንዲፈስ ያደርጉታል። ይህ **flocculating** ይባላል፣ እና በዚህ መንገድ የሚሠራ ግላዝ **thixotropic** ነው፥ ይበልጥ እኩል ይቀባል፣ ያነሰ ይንጠባጠባል እና ያነሰ ይረጋል። Digitalfire SG ትክክል ከሆነ በኋላ በጋሎን 2 g ገደማ እንዲጀምሩ (በሊትር 0.5 g ገደማ፣ የእኛ ቅየራ) እና በቀላቀሉ ቁጥር መጠኑን እንዲያስተካክሉ ይመክራል፣ ምክንያቱም የትኛውም የግላዝ አዘገጃጀት መጠኑን መወሰን የለበትም። መጀመሪያ በትንሽ ሙቅ ውሃ ውስጥ እንዲያሟሙት እንመክራለን። በአንድ የDigitalfire ምሳሌ፣ {{SG 1.45}} ያለው ግላዝ ይንጠባጠብ ነበር፣ ስለዚህ ውሃ ወደ {{SG 1.43}} አወረደው እና Epsom salts እንደገና ክሬም መሰል እንዲሆን አጀሉት፣ እና እኩል ተቀባ። ግምታዊ ፈተና፥ ያማስሉ፣ ያቁሙ እና ይመልከቱ። የጀለ ግላዝ ለ2 ወይም 3 ሰከንድ ገደማ መንቀሳቀሱን ይቀጥላል፣ ከዚያም ይቆማል እና ትንሽ ወደ ኋላ ይመለሳል።
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-**CMC ሙጫ** (carboxymethyl cellulose) ስለሪን ይበልጥ የሚጣበቅ እና ቀስ ብሎ የሚደርቅ ያደርገዋል፣ እና ከድስቱ ጋር የሚጣበቅ ጠንካራ ሽፋን ይተዋል። ከሁሉም በላይ የሚጠቅመው ለብሩሽ ግላዞች እና ብዙ ፍሪት ላላቸው ግላዞች ነው። የDigitalfire ምሳሌ 3.75 gን ወደ 1000 g ስለሪ ይቀላቅላል፣ እና በብሌንደር መግባት አለበት። CMC ያለው ግላዝ በEpsom salts አይጀልም፣ እና ጥቃቅን ተሕዋስያን በሙጫው ላይ ስለሚመገቡ፣ በባልዲው ውስጥ ሊለወጥ እና መሽተት ሊጀምር ይችላል።
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-በጣም ልም ሸክላ የሆነው **ቤንቶናይት** ሌሎቹ ቅንጣቶች ተንጠልጥለው እንዲቆዩ ይረዳል። የመንከሪያ ግላዞች ለዚህ ብዙ ጊዜ በ15 እስከ 25% ጥሬ ሸክላ ይተማመናሉ። ሸክላ ለጎደለው የግላዝ አዘገጃጀት 1 እስከ 3% ገደማ ቤንቶናይት ይረዳል፤ Digitalfire ከ15% በላይ ሸክላ ያለው ግላዝ ከደረቁ ግላዝ ክብደት ከ1% በላይ ቤንቶናይት ሊያስፈልገው አይገባም ይላል።
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 3%. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## መዝገብ መያዝ {#records}
+## Keeping records {#records lang=en}
 
-Willers ግቡን በደንብ ይገልጸዋል፥ «ያገኟቸውን ውጤቶች ለመድገም፣ ወይም ለማስወገድ የሚያስችል በቂ መረጃ»። ከመጀመርዎ በፊት ምን ለመሞከር እንዳቀዱ፣ እቶኑን ሲያራግፉ ደግሞ ውጤቶቹን ይጻፉ። Potclays የአቀባብ ዘዴውን፣ ውፍረቱን፣ የሸክላውን ዓይነት እና ramps፣ holds እና ማቀዝቀዝን ጨምሮ ሙሉውን ማቃጠል ያክላል። **Ramp** የማሞቂያ ወይም የማቀዝቀዣ ፍጥነት ነው፣ ለምሳሌ በሰዓት {{60 °C; 108 °F}}፣ **hold** ደግሞ እቶኑን ለተወሰነ ጊዜ በአንድ ሙቀት ያቆየዋል። የlot number ኮዶችን፣ የተጠቀሙበትን ውሃ እና ማንኛውንም ምትክ ይጻፉ፥ የClay Art Center የፌልድስፓር ለውጥ ከግላዞቹ ግማሽ ያህሉን ማስተካከል አስፈልጎታል።
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: ለእያንዳንዱ የግላዝ ባች ምን እንደሚመዘግቡ (የእኛ ቅጽ)
-Label: የመዝገብ ቅጽ
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| ክፍል         | ምን እንደሚጽፉ                                                                                                                                                            |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| የግላዝ አዘገጃጀት | የግላዝ አዘገጃጀቱ እና እትሙ፤ የጥሬ ዕቃዎች ብራንዶች እና የlot number ኮዶች፤ ማንኛውም ምትክ                                                                                                     |
-| መቀላቀል       | ቀን፤ የባች መጠን፤ የታከለ ውሃ፣ እና ዓይነቱ (የቧንቧ፣ reverse osmosis ወይም የተጣራ (distilled))፤ ከመቀላቀል በኋላ ያለው SG እና የመጨረሻው SG፤ የታከሉ Epsom salts፣ CMC እና ቤንቶናይት፤ የወንፊት mesh እና የማሳለፍ ብዛት |
-| አቀባብ        | የሸክላ ዓይነት፤ የመጀመሪያ ማቃጠል (bisque) ኮን፤ መንከር፣ በብሩሽ መቀባት ወይም ማፍሰስ፤ የመንከሪያ ጊዜ ወይም የንብርብሮች ብዛት፤ የደረቀ ውፍረት                                                                   |
-| ማቃጠል        | እቶኑ እና በመደርደሪያው ላይ ያለ ቦታ፤ የማቃጠል መርሐ ግብሩ፣ ከramps፣ holds እና ማቀዝቀዝ ጋር፤ ከባቢ አየር (ኦክሲዴሽን ወይም ሪዳክሽን (reduction))፤ እቶኑ የተቀናበረበትን ብቻ ሳይሆን ምስክር ኮን ያሳየውን                      |
-| ውጤት         | ገጽታ እና ቀለም፤ ማንኛውም መፍሰስ፣ crazing ወይም pinholes፤ የፊት፣ የኋላ እና የጎን ፎቶዎች፤ የንጣፉ ኮድ                                                                                          |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> በGlazecalc ውስጥ የተቀመጠ [የግላዝ አዘገጃጀት](/recipe) የግላዝ አዘገጃጀቱን ራሱ ይይዛል። [የማቃጠል መዝገብ](/firing) እያንዳንዱን ማቃጠል ይመዘግባል፥ እቶኑን፣ ቀኑን፣ ሰዓቶችን፣ ሙቀቶችን፣ ኮኖችን እና ማስታወሻዎችን። [ማስታወሻዎች](/notes) ሌላውን ሁሉ ይይዛሉ፣ ለምሳሌ ከላይ ያለውን የባች መዝገብ እና እያንዳንዱ ንጣፍ ያሳየውን።
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## ምንጮች {#sources}
 

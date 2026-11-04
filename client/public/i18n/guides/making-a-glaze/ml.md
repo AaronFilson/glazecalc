@@ -119,99 +119,120 @@ Label: തുടക്ക സെറ്റ്
 
 ഒരു പിഴവ് തിരികെ കോരിയെടുക്കാൻ കഴിയാൻ വേണ്ടി Derek Au പ്രത്യേക കൂനകളായി ഒരു പാത്രത്തിലേക്ക് തൂക്കുന്നു. മെറ്റീരിയലുകൾക്കിടയിൽ ടെയർ ചെയ്യാതെ നിങ്ങൾ ഒരു ബക്കറ്റിലേക്ക് തൂക്കുകയാണെങ്കിൽ, ഓരോന്നിനും ശേഷം ത്രാസ് എത്ര കാണിക്കണമെന്ന് Glazecalc-ന്റെ ഇതുവരെയുള്ള ആകെ പറയുന്നു.
 
-## മിക്സ് ചെയ്യലും അരിക്കലും {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### എത്ര വെള്ളം
+### How much water
 
-സ്രോതസ്സുകൾ യോജിക്കുന്നില്ല. Derek Au കട്ടിയായി തുടങ്ങുന്നു, 100 g പൊടിക്ക് 50 mL വെള്ളം, പിന്നീട് കൂടുതൽ ചേർക്കുന്നു. ഒരു പൊടി ഗ്ലേസിന് Potterycrafts 100 g-ന് 65 mL നൽകുന്നു. UT Austin വെള്ളവും പൊടിയും തുല്യ ഭാരത്തിൽ ഉപയോഗിക്കുന്നു, 20 kg പൊടി 20 kg വെള്ളത്തിൽ ഇട്ടപ്പോൾ Digitalfire ആപേക്ഷിക സാന്ദ്രത 1.46 അളന്നു.
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-വെള്ളം ചേർക്കാൻ എളുപ്പമാണ്, എടുത്തുമാറ്റാൻ പ്രയാസമാണ്, അതുകൊണ്ട് കുറച്ചു കൊണ്ട് തുടങ്ങുക. ഞങ്ങളുടെ ഏകദേശ കണക്ക്: **100 g-ന് ഏകദേശം 70 മുതൽ 80 mL വരെ** കൊണ്ട് തുടങ്ങുക (ഒരു കിലോഗ്രാമിന് 700 മുതൽ 800 mL വരെ, അല്ലെങ്കിൽ ഒരു പൗണ്ടിന് ഏകദേശം 11 മുതൽ 12 US fl oz വരെ). ആ കട്ടിയിൽ വെള്ളത്തിൽ കുതിരാൻ വയ്ക്കുക, മിക്സ് ചെയ്യുക, അരിക്കുക, എന്നിട്ട് ആപേക്ഷിക സാന്ദ്രത ശരിയാകുന്നത് വരെ കുറച്ചുകുറച്ചായി വെള്ളം ചേർക്കുക. 1 mL വെള്ളത്തിന് 1 g ഭാരമുണ്ട്, അതുകൊണ്ട് നിങ്ങൾക്ക് അത് തൂക്കാം. വെള്ളം കൂടിപ്പോയാൽ, ഗ്ലേസ് അടിയാൻ അനുവദിക്കുക, എന്നിട്ട് മുകളിലെ തെളിഞ്ഞ വെള്ളം സ്പോഞ്ച് കൊണ്ട് ഒപ്പിയെടുക്കുകയോ ഒഴിച്ചുകളയുകയോ ചെയ്യുക.
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### ഉപകരണങ്ങളും വെള്ളവും
+### Tools and water
 
-- **പ്രൊപ്പല്ലർ മിക്സർ.** നല്ല ഒന്നിനെ Digitalfire “അത്യാവശ്യം” എന്ന് വിളിക്കുന്നു. മിക്സിങ് പാഡിൽ ഘടിപ്പിച്ച വയർ ഉള്ള ഒരു ഡ്രിൽ ബക്കറ്റിൽ ആ ജോലി ചെയ്യും. ഗ്ലേസ് മിക്സ് ആയതായി തോന്നിയതിന് ശേഷം UT Austin അത് കുറഞ്ഞത് 4 മുതൽ 5 മിനിറ്റ് വരെ പ്രവർത്തിപ്പിക്കുന്നു, ബ്ലേഡ് ബക്കറ്റിൽ തൊടാതെ വയ്ക്കുകയും ചെയ്യുന്നു, കാരണം അതിന് ബക്കറ്റിൽ നിന്ന് പ്ലാസ്റ്റിക് ചുരണ്ടിയെടുക്കാൻ കഴിയും.
-- **ബ്ലെൻഡർ.** ഇത് “ചെറിയ ബാച്ചുകൾക്ക് വളരെ നന്നായി പ്രവർത്തിക്കുന്നു” (Digitalfire). ഇത് ഗ്ലേസിന് മാത്രമായി സൂക്ഷിക്കുക: ഇത് ഒരിക്കലും അടുക്കളയിലേക്ക് തിരികെ പോകരുത്.
-- **വിസ്ക് അല്ലെങ്കിൽ വടി.** മിക്സർ ഇല്ലാത്തപ്പോൾ Zakin തിരഞ്ഞെടുക്കുന്നത്.
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-വെള്ളവും വ്യത്യാസപ്പെടുന്നു, അത് ഒരു സ്ലറിയുടെ സ്വഭാവം മാറ്റുന്നുവെന്ന് Digitalfire ചൂണ്ടിക്കാട്ടുന്നു. തന്റെ ടാപ്പ് വെള്ളം കടുപ്പമുള്ളത് (ഹാർഡ്) ആയതുകൊണ്ട് Derek Au റിവേഴ്സ്-ഓസ്മോസിസ് വെള്ളം ഉപയോഗിക്കുന്നു. നിങ്ങൾ ഏത് ഉപയോഗിച്ചാലും, അത് കുറിച്ചുവയ്ക്കുക.
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### ഘട്ടം ഘട്ടമായി
+### Step by step
 
-1. റെസ്പിറേറ്റർ ധരിക്കുക, നിങ്ങളുടെ കൈകൾ അകത്തേക്ക് പോകുമെങ്കിൽ റബ്ബർ കയ്യുറകളും. തൂക്കൽ തുടങ്ങുന്നത് മുതൽ ഗ്ലേസ് നനയുന്നത് വരെ Zakin ഒരു മാസ്ക് ധരിക്കുന്നു.
-2. 100 g പൊടിക്ക് ഏകദേശം 70 മുതൽ 80 mL വരെ വെള്ളം ബക്കറ്റിലേക്ക് അളന്നൊഴിക്കുക.
-3. തൂക്കിയ പൊടി കുറഞ്ഞ ഉയരത്തിൽ നിന്ന് പതുക്കെ ചേർക്കുക. UT Austin ചൂടുവെള്ളത്തിലേക്ക് പൊടി ചേർക്കുന്നു; Zakin-ഉം Au-ഉം പൊടിയിലേക്ക് വെള്ളം ചേർക്കുന്നു. ഞങ്ങൾ വെള്ളത്തിലേക്ക് പൊടി ചേർക്കാൻ നിർദ്ദേശിക്കുന്നു, ഇത് കുറച്ച് പൊടി മാത്രമേ പൊങ്ങിപ്പറക്കാൻ ഇടയാക്കൂ, ധാരാളം ബെന്റോണൈറ്റ് ഉള്ള ഒരു റെസിപ്പി ഒഴികെ: അതിന്റെ ഉണങ്ങിയ പൊടികൾ ആദ്യം ഒരുമിച്ച് ഇളക്കുക.
-4. **കുതിരാൻ വയ്ക്കുക**: ഇളക്കാതെ പൊടി വെള്ളത്തിൽ കുതിരാൻ അനുവദിക്കുക. Digitalfire ഏകദേശം 20 മിനിറ്റ് കാത്തിരിക്കുന്നു. ഗമ്മോ ബൈൻഡറോ ഉള്ള പൊടികൾ രാത്രി മുഴുവൻ വയ്ക്കണം.
-5. ഉണങ്ങിയ ഭാഗങ്ങളോ കട്ടകളോ ഇല്ലാതാകുന്നത് വരെ മിക്സ് ചെയ്യുക.
-6. രണ്ടു തവണ അരിക്കുക (താഴെ കാണുക).
-7. മൂടിവച്ച് രാത്രി മുഴുവൻ വിശ്രമിക്കാൻ അനുവദിക്കുക, എന്നിട്ട് വീണ്ടും മിക്സ് ചെയ്ത് അടിയിൽ കട്ടിയുള്ള ഒരു പാളി ഉണ്ടോ എന്ന് നോക്കുക.
-8. ആപേക്ഷിക സാന്ദ്രത അളക്കുക, ലക്ഷ്യത്തിൽ എത്താൻ കുറച്ചുകുറച്ചായി വെള്ളം ചേർക്കുക.
-9. ബക്കറ്റിൽ ലേബൽ ഒട്ടിക്കുക, നിങ്ങൾ ചെയ്തത് എഴുതിവയ്ക്കുക.
-10. നനച്ച് വൃത്തിയാക്കുക: തറ മോപ്പ് ചെയ്യുക, മെറ്റീരിയൽ കണ്ടെയ്നറുകളുടെ പുറംഭാഗം ഉൾപ്പെടെ എല്ലാ പ്രതലങ്ങളും തുടയ്ക്കുക.
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### അരിക്കൽ
+### Sieving
 
-ഒരു **അരിപ്പ** ഒരു ഫ്രെയിമിലുള്ള മെഷ് സ്ക്രീൻ ആണ്. ബ്രഷ് കൊണ്ട് ഗ്ലേസ് അതിലൂടെ തള്ളുന്നത് മിക്സിങ് ബാക്കിവയ്ക്കുന്ന കട്ടകളെ പൊടിക്കുകയും ഫയർ ചെയ്യുമ്പോൾ കറുത്ത പുള്ളികളായി വരുമായിരുന്ന കണികകളെ പിടിച്ചുനിർത്തുകയും ചെയ്യുന്നു. **മെഷ്** സംഖ്യ കൂടുന്തോറും സ്ക്രീൻ കൂടുതൽ നേർത്തതാണ്: 80 മെഷിന് ഏകദേശം 0.18 mm വലിപ്പമുള്ള ദ്വാരങ്ങളും, 100 മെഷിന് ഏകദേശം 0.15 mm ഉം ഉണ്ട്.
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-സ്രോതസ്സുകൾ വ്യത്യസ്ത മെഷുകൾ ശുപാർശ ചെയ്യുന്നു. Zakin 50 അല്ലെങ്കിൽ 80 മെഷിലൂടെ രണ്ടു തവണ അരിക്കുന്നു. Derek Au മിക്ക ഗ്ലേസുകൾക്കും, പ്രത്യേകിച്ച് കോബാൾട്ടോ അയണോ ഉള്ളവയ്ക്ക്, 120 മെഷ് ഉപയോഗിക്കുന്നു: ഒരു സെലഡോണിൽ 80 മെഷിലൂടെ മൂന്ന് തവണ അരിച്ചിട്ടും അയൺ പുള്ളികൾ ബാക്കിയായി, 120 മെഷിലൂടെ ഒരു തവണ അരിച്ചപ്പോൾ അത് പരിഹരിച്ചു. ആഷ് ഗ്ലേസുകൾക്കും പരുക്കൻ മെറ്റീരിയലുകൾ ഉള്ള മറ്റുള്ളവയ്ക്കും അദ്ദേഹം 60 മുതൽ 80 മെഷ് വരെ ഉപയോഗിക്കുന്നു. ബ്രിട്ടനിലെ Potterycrafts 60 മുതൽ 80 മെഷ് വരെ നിർദ്ദേശിക്കുന്നു. സുരക്ഷിതമായ ഒരു തുടക്കം:
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: ഏത് അരിപ്പ ഉപയോഗിക്കണം
-Label: അരിപ്പയുടെ മെഷ്
+Table: Which sieve to use
+Label: Sieve mesh
 
-| ഗ്ലേസ്                                                   | അരിപ്പ                |
-| -------------------------------------------------------- | --------------------- |
-| മിക്ക ഗ്ലേസുകളും                                         | 80 മെഷിലൂടെ രണ്ടു തവണ |
-| കോബാൾട്ട് അല്ലെങ്കിൽ അയൺ പോലുള്ള കളറന്റുകൾ ഉള്ള ഗ്ലേസുകൾ | 100 മുതൽ 120 മെഷ് വരെ |
-| ആഷ് ഗ്ലേസുകളും പരുക്കൻ മെറ്റീരിയലുകൾ ഉള്ള മറ്റുള്ളവയും   | 60 മുതൽ 80 മെഷ് വരെ   |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## ആപേക്ഷിക സാന്ദ്രത {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**ആപേക്ഷിക സാന്ദ്രത**{{en: specific gravity}} നിങ്ങളുടെ സ്ലറിയിൽ എത്ര പൊടി ഉണ്ടെന്ന് പറയുന്നു. ഒരു വ്യാപ്തം ഗ്ലേസിന്റെ ഭാരത്തെ അതേ വ്യാപ്തം വെള്ളത്തിന്റെ ഭാരം കൊണ്ട് ഹരിച്ചതാണ് അത്. വെള്ളം 1.00 ആണ്, {{SG 1.45}} ഉള്ള ഒരു ഗ്ലേസിന് 100 mL-ന് 145 g ഭാരമുണ്ട്. അളന്ന ആപേക്ഷിക സാന്ദ്രതയിലേക്ക് മിക്സ് ചെയ്യുന്നതാണ് ഓരോ തവണയും ഒരേ കട്ടിയും ഒരേ കോട്ടും കിട്ടാനുള്ള വഴി. ഇതിന് യൂണിറ്റ് ഇല്ല, അതുകൊണ്ട് ഗ്രാമിലായാലും ഔൺസിലായാലും ഇത് ഒന്നുതന്നെയാണ്.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 100 mL തൂക്കി അളക്കുക
+### Measure it by weighing 100 mL
 
-1. ഒന്നും അടിയാതിരിക്കാൻ ഗ്ലേസ് ഇളക്കുക.
-2. ഒരു 100 mL **മെഷറിങ് സിലിണ്ടർ** (അളവുകൾ അടയാളപ്പെടുത്തിയ ഉയരമുള്ള ഒരു അളവുകുഴൽ) അല്ലെങ്കിൽ ഒരു 100 mL സിറിഞ്ച് ത്രാസിൽ വച്ച് ടെയർ ചെയ്യുക.
-3. കണ്ണിന്റെ നിരപ്പിൽ അടയാളം നോക്കി, അതിൽ കൃത്യമായി 100 mL വരെ ഗ്ലേസ് നിറയ്ക്കുക.
-4. തൂക്കി ഗ്രാമിനെ 100 കൊണ്ട് ഹരിക്കുക: 145 g എന്നാൽ ആപേക്ഷിക സാന്ദ്രത 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-500 g വെള്ളത്തിന്റെ നിരപ്പിൽ Digitalfire ഒരു കപ്പിൽ അടയാളം ഇടുകയും, ആ അടയാളം വരെ ഗ്ലേസ് നിറയ്ക്കുകയും, ഭാരത്തെ 500 കൊണ്ട് ഹരിക്കുകയും ചെയ്യുന്നു; വലുതും കൂടുതൽ നിറഞ്ഞതുമായ അളവ് കൂടുതൽ കൃത്യമാണ്. **ഹൈഡ്രോമീറ്റർ**, ഗ്ലേസിൽ അത് ഇരിക്കുന്ന ഇടത്ത് വായിക്കുന്ന ഒരു പൊങ്ങുകുഴൽ, വേഗത്തിൽ ഉപയോഗിക്കാം, പക്ഷേ കട്ടിയുള്ളതോ ജെൽ ആയതോ ആയ ഗ്ലേസുകളിൽ തെറ്റായി വായിച്ചേക്കാം. Potclays-ന്റേത് പോലുള്ള ബ്രിട്ടീഷ് ഹൈഡ്രോമീറ്ററുകൾ ബോമേ ഡിഗ്രിയിൽ (°Bé) വായിക്കുന്നു. ഞങ്ങളുടെ കണക്കനുസരിച്ച്, ആപേക്ഷിക സാന്ദ്രത = 145 ÷ (145 − °Bé), അതുകൊണ്ട് 46 °Bé ഏകദേശം 1.46 ആണ്. പഴയ ബ്രിട്ടീഷ് പുസ്തകങ്ങൾ **പൈന്റ് ഭാരം** നൽകുന്നു, അതായത് ഒരു ഇംപീരിയൽ പൈന്റ് ഗ്ലേസിലെ ഔൺസ്: അതിനെ 20 കൊണ്ട് ഹരിക്കുക, അതുകൊണ്ട് 29 oz ഏകദേശം ആപേക്ഷിക സാന്ദ്രത 1.45 ആണ് (ഇതും ഞങ്ങളുടെ കണക്കാണ്).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### ലക്ഷ്യമിടേണ്ടത്
+### What to aim for
 
-സ്രോതസ്സുകൾ യോജിക്കുന്നില്ല, ബ്രഷ് ചെയ്യുന്നതിലും സ്പ്രേ ചെയ്യുന്നതിലും ഏറ്റവുമധികം, അവിടെ ബ്രിട്ടീഷ് വിതരണക്കാരായ Potclays വളരെ ഉയർന്ന സംഖ്യകൾ നൽകുന്നു (അവരുടെ സ്വന്തം സംഖ്യകൾ “മാർഗനിർദ്ദേശത്തിന് മാത്രം” ആണ്). ഓരോ സംഖ്യയും ഒരു തുടക്കബിന്ദുവായി കണക്കാക്കുക. ഓരോ ഗ്ലേസിനും പ്രവർത്തിക്കുന്ന ആപേക്ഷിക സാന്ദ്രതയും ജെൽ ആക്കലും കണ്ടെത്തുക, എന്നിട്ട് അവ ആവർത്തിക്കുകയും എഴുതിവയ്ക്കുകയും ചെയ്യുക എന്നതാണ് Digitalfire-ന്റെ പ്രധാന ഉപദേശം.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: ആപേക്ഷിക സാന്ദ്രതാ ലക്ഷ്യങ്ങൾ, സ്രോതസ്സുകൾ യോജിക്കാത്തിടത്ത്
-Label: ആപേക്ഷിക സാന്ദ്രതാ ലക്ഷ്യങ്ങൾ
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| ഉപയോഗം        | Digitalfire, Glazy                                                                                                                                                                             | Potclays (ബ്രിട്ടൻ)                             | സുരക്ഷിതമായ തുടക്കം                                                       |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------- |
-| മുക്കൽ        | {{SG 1.40}} (5 സെക്കൻഡ് മുക്കലിന്) മുതൽ {{SG 1.50}} (1 സെക്കൻഡ് മുക്കലിന്) വരെ; വീട്ടിൽ മിക്സ് ചെയ്ത് ജെൽ ആക്കിയ ഗ്ലേസുകൾ {{SG 1.43–1.45}} ആയിരിക്കുമ്പോൾ ഏറ്റവും നന്നായി വരും                 | ക്ലിയർ {{SG 1.46–1.48}}; നിറമുള്ളത് {{SG 1.61}} | {{SG 1.45}}; ഒലിച്ചാൽ {{SG 1.43}} ആക്കി നേർപ്പിച്ച് ജെൽ ആക്കുക            |
-| ബ്രഷ് ചെയ്യൽ  | {{SG 1.25}} (നേർത്ത ക്ലിയർ) മുതൽ {{SG 1.55}} (ഇരുണ്ട വിശദാംശങ്ങൾക്ക്) വരെ                                                                                                                      | {{SG 1.71–1.81}}                                | ഉൽപ്പന്നത്തെ പിന്തുടരുക; CMC ഗം അല്ലെങ്കിൽ ഒരു ബ്രഷിങ് മീഡിയം ഉപയോഗിക്കുക |
-| സ്പ്രേ ചെയ്യൽ | സംഖ്യ ഇല്ല; Ceramic Arts Network-ന് വേണ്ടി എഴുതുന്ന Hopper പറയുന്നത് വളരെ നേർത്തത് വേണമെന്നാണ്, ഒരു ഡിഫ്ലോക്കുലന്റ്{{en: deflocculant}} (സ്ലറിയെ കൂടുതൽ ഒഴുകുന്നതാക്കുന്ന ഒരു അഡിറ്റീവ്) സഹിതം | {{SG 1.71}}                                     | വിശ്വസനീയമായ സംഖ്യ ഇല്ല; ഒരു സ്പ്രേ ബൂത്തിൽ മാത്രം സ്പ്രേ ചെയ്യുക         |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-ഒരു ഡിപ്പിങ് ഗ്ലേസ് കണ്ണുകൊണ്ട് പരിശോധിക്കാൻ AMACO 5 സെക്കൻഡ് മുക്കി, ഒരു അമേരിക്കൻ ഡൈം നാണയത്തിന്റെ അത്രയും കട്ടിയുള്ള കോട്ട് ഉണ്ടോ എന്ന് നോക്കുന്നു. പരിശോധിക്കാൻ Digitalfire 5 സെക്കൻഡ് മുക്കിയ ടൈലുകൾ ഫയർ ചെയ്യുന്നു.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### ലക്ഷ്യമിടുന്ന ആപേക്ഷിക സാന്ദ്രതയ്ക്കുള്ള വെള്ളം: ഞങ്ങളുടെ ഏകദേശ കണക്ക്
+### Water for a target SG: our estimate
 
-താഴെയുള്ള പട്ടിക ഞങ്ങളുടെ സ്വന്തം കണക്കുകൂട്ടലാണ്, ഒരു സ്രോതസ്സിന്റേതല്ല. പൊടിയുടെ കണികകൾക്ക് ഒരു cm³-ന് 2.6 g സാന്ദ്രതയുണ്ടെന്ന് ഇത് അനുമാനിക്കുന്നു, അത് ഒരു അനുമാനമാണ്, അളവല്ല. കളിമണ്ണ്, ലയിക്കുന്ന മെറ്റീരിയലുകൾ, ജെൽ ആക്കൽ എന്നിവ ഒരു യഥാർത്ഥ ഗ്ലേസിനെ മാറ്റുന്നു, അതുകൊണ്ട് ഇത് തുടങ്ങാൻ ഉപയോഗിക്കുക, എന്നിട്ട് അളക്കുക. ഒരു പരിശോധനയായി, പൊടിയും വെള്ളവും തുല്യ ഭാരത്തിൽ ആയാൽ ഇത് {{SG 1.44}} എന്ന് പ്രവചിക്കുന്നു, Digitalfire അളന്ന {{SG 1.46}}-നോട് അടുത്ത്. 100 g-ന് 70 മുതൽ 80 mL വരെ വെള്ളം ചേർത്താൽ നിങ്ങൾ തുടങ്ങുന്നത് {{SG 1.50}}-നെക്കാൾ കൂടുതലിലാണെന്നും, ആവശ്യത്തിലും കട്ടിയിലാണെന്നും ഇത് കാണിക്കുന്നു.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: ലക്ഷ്യമിടുന്ന ആപേക്ഷിക സാന്ദ്രതയ്ക്കുള്ള വെള്ളം (ഞങ്ങളുടെ ഏകദേശ കണക്ക്)
-Label: ലക്ഷ്യമിടുന്ന ആപേക്ഷിക സാന്ദ്രതയ്ക്കുള്ള വെള്ളം
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| ലക്ഷ്യം     | 100 g പൊടിക്ക് | ഒരു കിലോഗ്രാമിന് |       ഒരു പൗണ്ടിന് |
-| ----------- | -------------: | ---------------: | -----------------: |
-| {{SG 1.40}} |  ഏകദേശം 115 mL |   ഏകദേശം 1150 mL | ഏകദേശം 18 US fl oz |
-| {{SG 1.45}} |   ഏകദേശം 98 mL |    ഏകദേശം 980 mL | ഏകദേശം 15 US fl oz |
-| {{SG 1.50}} |   ഏകദേശം 85 mL |    ഏകദേശം 850 mL | ഏകദേശം 13 US fl oz |
-| {{SG 1.60}} |   ഏകദേശം 64 mL |    ഏകദേശം 640 mL | ഏകദേശം 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### എപ്സം സാൾട്ട്, CMC ഗം, ബെന്റോണൈറ്റ്
+### Find your own glaze's dry SG while you mix
 
-**എപ്സം സാൾട്ട്** ഒരു ഗ്ലേസ് അനങ്ങാതെ നിൽക്കുമ്പോൾ അല്പം ജെൽ പോലെയാക്കുകയും ഇളക്കുമ്പോൾ വീണ്ടും ഒഴുകാൻ അനുവദിക്കുകയും ചെയ്യുന്നു. ഇതിനെ **ഫ്ലോക്കുലേറ്റ് ചെയ്യൽ**{{en: flocculant}} എന്ന് വിളിക്കുന്നു, ഇങ്ങനെ പെരുമാറുന്ന ഒരു ഗ്ലേസ് **തിക്സോട്രോപ്പിക്**{{en: thixotropic}} ആണ്: അത് കൂടുതൽ ഒരേപോലെ പുരളുന്നു, കുറച്ച് മാത്രം ഒലിക്കുന്നു, കുറച്ച് മാത്രം അടിയുന്നു. ആപേക്ഷിക സാന്ദ്രത ശരിയായിക്കഴിഞ്ഞാൽ ഏകദേശം ഒരു ഗാലന് 2 g (ഒരു ലിറ്ററിന് ഏകദേശം 0.5 g, ഞങ്ങളുടെ മാറ്റൽ) എന്ന അളവിൽ തുടങ്ങാനും, ഓരോ തവണ മിക്സ് ചെയ്യുമ്പോഴും അളവ് ക്രമീകരിക്കാനും Digitalfire നിർദ്ദേശിക്കുന്നു, കാരണം ഒരു റെസിപ്പിയും ഡോസ് ഉറപ്പിച്ചുവയ്ക്കരുത്. ആദ്യം അല്പം ചൂടുവെള്ളത്തിൽ ഇത് ലയിപ്പിക്കാൻ ഞങ്ങൾ നിർദ്ദേശിക്കുന്നു. ഒരു Digitalfire ഉദാഹരണത്തിൽ, {{SG 1.45}} ഉള്ള ഒരു ഗ്ലേസ് ഒലിച്ചു, അതുകൊണ്ട് വെള്ളം ചേർത്ത് അതിനെ {{SG 1.43}} ആക്കി, എപ്സം സാൾട്ട് അതിനെ വീണ്ടും ക്രീം പോലെ ജെൽ ആക്കി, അത് ഒരേപോലെ പുരണ്ടു. ഒരു ഏകദേശ പരിശോധന: ഇളക്കുക, നിർത്തുക, നോക്കുക. ജെൽ ആയ ഒരു ഗ്ലേസ് ഏകദേശം 2 അല്ലെങ്കിൽ 3 സെക്കൻഡ് നീങ്ങിക്കൊണ്ടിരിക്കും, പിന്നെ നിന്ന് അല്പം പിന്നോട്ട് തിരിച്ചുവരും.
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-**CMC ഗം** (കാർബോക്സിമെഥൈൽ സെല്ലുലോസ്) ഒരു സ്ലറിയെ കൂടുതൽ ഒട്ടുന്നതും ഉണങ്ങാൻ കൂടുതൽ സമയം എടുക്കുന്നതുമാക്കുന്നു, പാത്രത്തിൽ പിടിച്ചുനിൽക്കുന്ന കൂടുതൽ കഠിനമായ ഒരു കോട്ട് ബാക്കിയാക്കുകയും ചെയ്യുന്നു. ബ്രഷ് ചെയ്യാനുള്ള ഗ്ലേസുകൾക്കും ഫ്രിറ്റ് കൂടുതലുള്ള ഗ്ലേസുകൾക്കും ഇത് ഏറ്റവും പ്രധാനമാണ്. Digitalfire-ന്റെ ഉദാഹരണം 1000 g സ്ലറിയിലേക്ക് 3.75 g ചേർക്കുന്നു, അത് ഒരു ബ്ലെൻഡർ ഉപയോഗിച്ച് ചേർക്കേണ്ടതുണ്ട്. CMC ഉള്ള ഒരു ഗ്ലേസ് എപ്സം സാൾട്ട് കൊണ്ട് ജെൽ ആകില്ല, സൂക്ഷ്മജീവികൾ ഗമ്മിനെ തിന്നുന്നതിനാൽ അത് ബക്കറ്റിൽ വച്ച് മാറുകയും ദുർഗന്ധം വരാൻ തുടങ്ങുകയും ചെയ്യാം.
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-വളരെ നേർത്ത കളിമണ്ണായ **ബെന്റോണൈറ്റ്** മറ്റ് കണികകളെ സസ്പെൻഷനിൽ പിടിച്ചുനിർത്താൻ സഹായിക്കുന്നു. ഡിപ്പിങ് ഗ്ലേസുകൾ ഇതിന് സാധാരണയായി 15 മുതൽ 25% വരെ അസംസ്കൃത കളിമണ്ണിനെ ആശ്രയിക്കുന്നു. കളിമണ്ണ് കുറവുള്ള ഒരു റെസിപ്പിക്ക്, ഏകദേശം 1 മുതൽ 3% വരെ ബെന്റോണൈറ്റ് സഹായിക്കും; 15%-ൽ കൂടുതൽ കളിമണ്ണുള്ള ഒരു ഗ്ലേസിന് ഉണങ്ങിയ ഗ്ലേസിന്റെ ഭാരത്തിന്റെ 1%-ൽ കൂടുതൽ ബെന്റോണൈറ്റ് ആവശ്യമായി വരേണ്ടതില്ലെന്ന് Digitalfire പറയുന്നു.
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 3%. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## രേഖകൾ സൂക്ഷിക്കൽ {#records}
+## Keeping records {#records lang=en}
 
-Willers ലക്ഷ്യം നന്നായി പറയുന്നു: “നിങ്ങൾ കണ്ടെത്തിയ ഫലങ്ങൾ ആവർത്തിക്കാനോ ഒഴിവാക്കാനോ കഴിയാൻ വേണ്ടത്ര വിവരങ്ങൾ”. തുടങ്ങുന്നതിന് മുമ്പ് നിങ്ങൾ ടെസ്റ്റ് ചെയ്യാൻ ഉദ്ദേശിക്കുന്നത്, കിൽനിൽ നിന്ന് എടുക്കുമ്പോൾ ഫലങ്ങൾ എന്നിവ എഴുതിവയ്ക്കുക. പുരട്ടിയ രീതി, കട്ടി, ക്ലേ ബോഡി, റാമ്പുകൾ, ഹോൾഡുകൾ, തണുപ്പിക്കൽ എന്നിവ ഉൾപ്പെടെ മുഴുവൻ ഫയറിങ്ങും Potclays കൂട്ടിച്ചേർക്കുന്നു. ഒരു **റാമ്പ്**{{en: ramp}} എന്നത് മണിക്കൂറിൽ {{60 °C; 108 °F}} പോലെ ചൂടാക്കുന്നതിന്റെയോ തണുപ്പിക്കുന്നതിന്റെയോ നിരക്കാണ്, ഒരു **ഹോൾഡ്**{{en: hold}} ഒരു നിശ്ചിത സമയത്തേക്ക് കിൽനിനെ ഒരേ താപനിലയിൽ നിർത്തുന്നു. ലോട്ട് നമ്പറുകൾ, നിങ്ങൾ ഉപയോഗിച്ച വെള്ളം, ഏതെങ്കിലും പകരം ഉപയോഗിക്കൽ എന്നിവ കുറിച്ചുവയ്ക്കുക: Clay Art Center-ന്റെ ഫെൽസ്പാർ മാറ്റിവയ്ക്കൽ അതിന്റെ ഏകദേശം പകുതി ഗ്ലേസുകൾ ക്രമീകരിക്കാൻ ഇടയാക്കി.
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: ഓരോ ഗ്ലേസ് ബാച്ചിനും എന്ത് രേഖപ്പെടുത്തണം (ഞങ്ങളുടെ ടെംപ്ലേറ്റ്)
-Label: രേഖാ ടെംപ്ലേറ്റ്
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| ഭാഗം     | എന്ത് എഴുതിവയ്ക്കണം                                                                                                                                                                                                                                    |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| റെസിപ്പി | റെസിപ്പിയും അതിന്റെ പതിപ്പും; മെറ്റീരിയൽ ബ്രാൻഡുകളും ലോട്ട് നമ്പറുകളും; പകരം ഉപയോഗിച്ചവ                                                                                                                                                                |
-| മിക്സിങ് | തീയതി; ബാച്ച് വലിപ്പം; ചേർത്ത വെള്ളവും അതിന്റെ തരവും (ടാപ്പ്, റിവേഴ്സ് ഓസ്മോസിസ് അല്ലെങ്കിൽ ഡിസ്റ്റിൽഡ്); മിക്സ് ചെയ്ത ശേഷമുള്ളതും അവസാനത്തേതുമായ ആപേക്ഷിക സാന്ദ്രത; ചേർത്ത എപ്സം സാൾട്ട്, CMC, ബെന്റോണൈറ്റ്; അരിപ്പയുടെ മെഷും അരിച്ച തവണകളുടെ എണ്ണവും |
-| പുരട്ടൽ  | ക്ലേ ബോഡി; ബിസ്ക് കോൺ; മുക്കൽ, ബ്രഷ് ചെയ്യൽ അല്ലെങ്കിൽ ഒഴിക്കൽ; മുക്കിയ സമയം അല്ലെങ്കിൽ കോട്ടുകളുടെ എണ്ണം; ഉണങ്ങിയ കട്ടി                                                                                                                               |
-| ഫയറിങ്   | കിൽനും ഷെൽഫിലെ സ്ഥാനവും; റാമ്പുകൾ, ഹോൾഡുകൾ, തണുപ്പിക്കൽ എന്നിവ സഹിതം ഫയറിങ് ഷെഡ്യൂൾ; അന്തരീക്ഷം (ഓക്സിഡേഷൻ (ഓക്സീകരണം){{en: oxidation}} അല്ലെങ്കിൽ റിഡക്ഷൻ (നിരോക്സീകരണം){{en: reduction}}); കിൽൻ സെറ്റ് ചെയ്തത് മാത്രമല്ല, വിറ്റ്നസ് കോൺ കാണിച്ചത്    |
-| ഫലം      | പ്രതലവും നിറവും; ഒലിച്ചിറങ്ങൽ, ക്രേസിങ്{{en: crazing}} അല്ലെങ്കിൽ പിൻഹോളുകൾ{{en: pinholes}}; മുൻഭാഗം, പിൻഭാഗം, വശം എന്നിവയുടെ ഫോട്ടോകൾ; ടൈൽ കോഡ്                                                                                                       |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> Glazecalc-ൽ, സംരക്ഷിച്ച ഒരു [റെസിപ്പി](/recipe) റെസിപ്പി തന്നെ സൂക്ഷിക്കുന്നു. ഒരു [ഫയറിങ് രേഖ](/firing) ഓരോ ഫയറിങ്ങും രേഖപ്പെടുത്തുന്നു: കിൽൻ, തീയതി, സമയങ്ങൾ, താപനിലകൾ, കോണുകൾ, കുറിപ്പുകൾ. മുകളിലെ ബാച്ച് രേഖയും ഓരോ ടൈലും കാണിച്ചതും പോലെ മറ്റെല്ലാം [കുറിപ്പുകൾ](/notes) സൂക്ഷിക്കുന്നു.
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## ഉറവിടങ്ങൾ {#sources}
 

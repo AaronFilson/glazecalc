@@ -119,99 +119,120 @@ Il-pariri jvarjaw dwar kemm irid ikun fin il-miżien. Derek Au sab li miżien di
 
 Derek Au jiżen kollox fi skutella waħda, f’munzelli separati, biex jekk ikun hemm żball, ikun jista’ jerġa’ jneħħih bl-imgħarfa. Jekk tiżen kollox f’barmil wieħed mingħajr ma tġib il-miżien fuq żero bejn materjal u ieħor, it-total sa issa ta’ Glazecalc jgħidlek x’għandu juri l-miżien wara kull wieħed.
 
-## It-taħlit u l-għarbil {#mixing}
+## Mixing and sieving {#mixing lang=en}
 
-### Kemm ilma
+### How much water
 
-Is-sorsi ma jaqblux. Derek Au jibda oħxon, b’50 mL ilma kull 100 g trab, u jżid aktar wara. Potterycrafts jagħti 65 mL kull 100 g għal wieħed mill-glejżijiet{{en: glazes}} tiegħu li jinbiegħu trab. UT Austin juża l-istess piż ta’ ilma u ta’ trab, u meta Digitalfire poġġa 20 kg trab f’20 kg ilma, kejjel gravità speċifika{{en: specific gravity}} ta’ 1.46.
+Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
 
-L-ilma jiżdied malajr u jitneħħa bil-mod, għalhekk ibda b’ammont baxx. L-istima tagħna: ibda b’**madwar 70 sa 80 mL kull 100 g** (700 sa 800 mL kull kilogramma, jew madwar 11 sa 12 US fl oz kull libra). Ħalli t-trab jixxarrab, ħallat u għarbel b’din il-ħxuna, imbagħad żid l-ilma ftit ftit sakemm il-gravità speċifika tkun it-tajba. 1 mL ilma jiżen 1 g, għalhekk tista’ tiżnu. Jekk iżżid wisq, ħalli l-glejż jinżel fil-qiegħ, imbagħad neħħi l-ilma ċar minn fuq bi sponża jew billi tferrgħu.
+Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
 
-### Għodda u ilma
+### Tools and water
 
-- **Mikser b’elika.** Digitalfire jgħid li wieħed tajjeb huwa “essenzjali”. Trapan bil-wajer b’paletta tat-taħlit jagħmel ix-xogħol f’barmil. UT Austin iħaddmu mill-anqas 4 sa 5 minuti wara li l-glejż jidher imħallat, u jżomm ix-xafra ’l bogħod mill-barmil, għax tista’ tobrox il-plastik minnu.
-- **Blender.** “Jaħdem eċċellenti għal taħlitiet żgħar” (Digitalfire). Użah għall-glejż biss: qatt ma jista’ jerġa’ lura fil-kċina.
-- **Frosta jew stikka.** L-għażla ta’ Zakin meta ma jkunx hemm mikser.
+- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
+- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
+- **Whisk or stick.** Zakin's choice when there is no mixer.
 
-L-ilma wkoll ivarja, u Digitalfire jinnota li jibdel kif iġib ruħu l-glejż likwidu{{en: slurry}}. Derek Au juża ilma tal-osmożi inversa għax l-ilma tal-vit tiegħu huwa iebes. Kwalunkwe ilma tuża, ikteb liema.
+Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
 
-### Pass pass
+### Step by step
 
-1. Ilbes ir-respiratur, u ingwanti tal-gomma jekk se ddaħħal idejk. Zakin jilbes maskra mill-bidu tal-użin sakemm il-glejż jixxarrab.
-2. Kejjel madwar 70 sa 80 mL ilma kull 100 g trab u ferrgħu fil-barmil.
-3. Żid it-trab miżun bil-mod, minn ftit għoli. UT Austin iżid it-trab mal-ilma fietel; Zakin u Au jżidu l-ilma mat-trab. Nissuġġerixxu li tpoġġi t-trab fl-ilma, għax iqajjem inqas trab, ħlief għal riċetta b’ħafna bentonit: ħallat it-trabijiet nexfin tagħha flimkien l-ewwel.
-4. **Ħalli t-trab jixxarrab**: ħallih fl-ilma mingħajr ma tħawwad. Digitalfire jistenna madwar 20 minuta. Trabijiet b’gomma jew legant għandhom bżonn joqogħdu matul il-lejl.
-5. Ħallat sakemm ma jibqgħux partijiet nexfin jew ċapep.
-6. Għarblu darbtejn (ara aktar ’l isfel).
-7. Għattih u ħallih jistrieħ matul il-lejl, imbagħad erġa’ ħallat u ċċekkja jekk hemmx saff iebes fil-qiegħ.
-8. Kejjel il-gravità speċifika, u żid l-ilma ftit ftit biex tilħaq il-mira tiegħek.
-9. Agħmel tikketta fuq il-barmil, u kteb x’għamilt.
-10. Naddaf bl-ilma: għaddi l-mop mal-art u msaħ kull wiċċ, inkluż in-naħa ta’ barra tal-kontenituri tal-materjali.
+1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
+2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
+3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
+4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
+5. Mix until there are no dry pockets or lumps.
+6. Sieve it twice (see below).
+7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
+8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
+9. Label the bucket, and write down what you did.
+10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
 
-### L-għarbil
+### Sieving
 
-**Għarbiel** huwa xibka f’qafas. Meta tgħaddi l-glejż minnu b’pinzell, iċ-ċapep li jħalli t-taħlit jitfarrku, u l-partiċelli li fil-ħami jsiru tikek skuri jinqabdu. Aktar ma jkun għoli n-numru tal-**mesh**, aktar tkun fina x-xibka: 80 mesh għandu toqob ta’ madwar 0.18 mm, u 100 mesh ta’ madwar 0.15 mm.
+A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
 
-Is-sorsi jirrakkomandaw mesh differenti. Zakin jgħarbel darbtejn minn 50 jew 80 mesh. Derek Au juża 120 mesh għall-biċċa l-kbira tal-glejżijiet, speċjalment dawk bil-kobalt jew bil-ħadid: tliet darbiet minn 80 mesh xorta ħallew tikek tal-ħadid f’seladon wieħed, u darba waħda minn 120 mesh solviet il-problema. Għall-glejżijiet tar-rmied u oħrajn b’materjali ħoxnin iżomm 60 sa 80 mesh. Potterycrafts, fir-Renju Unit, jissuġġerixxi 60 sa 80 mesh. Punt tat-tluq sikur:
+Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
 
-Table: Liema għarbiel tuża
-Label: Il-mesh tal-għarbiel
+Table: Which sieve to use
+Label: Sieve mesh
 
-| Glejż                                                             | Għarbiel              |
-| ----------------------------------------------------------------- | --------------------- |
-| Il-biċċa l-kbira tal-glejżijiet                                   | Darbtejn minn 80 mesh |
-| Glejżijiet b’kuluranti{{en: colorants}} bħall-kobalt jew il-ħadid | 100 sa 120 mesh       |
-| Glejżijiet tar-rmied, u oħrajn b’materjali ħoxnin                 | 60 sa 80 mesh         |
+| Glaze                                        | Sieve                      |
+| -------------------------------------------- | -------------------------- |
+| Most glazes                                  | Two passes through 80 mesh |
+| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
+| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
 
-## Il-gravità speċifika {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-Il-**gravità speċifika**{{en: specific gravity}} (SG) turik kemm hemm trab fil-glejż likwidu{{en: slurry}} tiegħek. Hija l-piż ta’ volum ta’ glejż{{en: glaze}} maqsum bil-piż tal-istess volum ta’ ilma. L-ilma huwa 1.00, u glejż b’{{SG 1.45}} jiżen 145 g kull 100 mL. It-taħlit sa gravità speċifika mkejla huwa l-mod kif tikseb l-istess ħxuna, u l-istess saff, kull darba. M’għandha l-ebda unità, għalhekk hija l-istess kemm bil-grammi kif ukoll bl-uqija.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Kejjilha billi tiżen 100 mL
+### Measure it by weighing 100 mL
 
-1. Ħawwad il-glejż biex xejn ma jkun niżel fil-qiegħ.
-2. Poġġi **ċilindru graduat** ta’ 100 mL (tubu twil tal-kejl, immarkat) jew siringa ta’ 100 mL fuq il-miżien, u ġib il-miżien fuq żero.
-3. Imlieh bil-glejż sa eżatt 100 mL, u aqra l-marka b’għajnejk fil-livell tagħha.
-4. Iżnu u aqsam il-grammi b’100: 145 g ifissru gravità speċifika ta’ 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire jimmarka wkoll tazza fil-livell ta’ 500 g ilma, jimlieha bil-glejż sal-marka, u jaqsam il-piż b’500; kejl akbar u aktar mimli huwa aktar preċiż. **Idrometru**, għawwiema li taqraha fejn tieqaf fil-glejż, huwa mgħaġġel iżda jista’ jaqra ħażin fi glejżijiet ħoxnin jew ġellifikati. L-idrometri tar-Renju Unit, bħal dak ta’ Potclays, jaqraw bi gradi Baumé (°Bé). Skont il-kalkolu tagħna, gravità speċifika = 145 ÷ (145 − °Bé), għalhekk 46 °Bé jagħti madwar 1.46. Il-kotba Brittaniċi eqdem jagħtu l-**piż tal-pinta**, l-uqija f’pinta imperjali ta’ glejż: aqsmu b’20, għalhekk 29 oz jagħtu madwar gravità speċifika ta’ 1.45 (ukoll skont il-kalkolu tagħna).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Għal xiex timmira
+### What to aim for
 
-Is-sorsi ma jaqblux, l-aktar fuq il-pinzellar u l-isprejjar, fejn il-fornitur Brittaniku Potclays jagħti ċifri ferm ogħla (iċ-ċifri tiegħu stess huma “indikattivi biss”). Qis kull numru bħala punt tat-tluq. Il-parir ewlieni ta’ Digitalfire huwa li ssib il-gravità speċifika u l-ġellifikazzjoni li jaħdmu għal kull glejż, imbagħad tirrepetihom u tiktibhom.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Gravità speċifika fil-mira, fejn is-sorsi ma jaqblux
-Label: Gravità speċifika fil-mira
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Użu       | Digitalfire u Glazy                                                                                                                                                     | Potclays (Renju Unit)                                 | Punt tat-tluq sikur                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------- |
-| Għadis    | {{SG 1.40}} (għal għadsa ta’ 5 sekondi) sa {{SG 1.50}} (għal għadsa ta’ 1 sekonda); il-glejżijiet imħallta d-dar li jkunu ġellifikati jaħdmu l-aħjar b’{{SG 1.43–1.45}} | Trasparenti: {{SG 1.46–1.48}}; ikkulurit: {{SG 1.61}} | {{SG 1.45}}; raqqaq sa {{SG 1.43}} u ġegħlu jagħqad jekk iqattar    |
-| Pinzellar | {{SG 1.25}} (trasparenti rqiq) sa {{SG 1.55}} (dettall skur)                                                                                                            | {{SG 1.71–1.81}}                                      | Segwi dak li jgħid il-prodott; uża gomma CMC jew mezz għall-pinzell |
-| Sprejjar  | L-ebda ċifra; Hopper, li jikteb għal Ceramic Arts Network, jgħid ferm irqaq, b’deflokkulant{{en: deflocculant}} (addittiv li jagħmel il-glejż likwidu jiġri aktar)      | {{SG 1.71}}                                           | L-ebda numru affidabbli; sprejja biss ġo kabina tal-isprejjar       |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Biex tiċċekkja glejż għall-għadis bl-għajn, AMACO jgħaddas għal 5 sekondi u jfittex saff oħxon madwar daqs munita dime Amerikana. Digitalfire jaħmi madum imgħaddas għal 5 sekondi biex jiċċekkja.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Ilma għal gravità speċifika fil-mira: l-istima tagħna
+### Water for a target SG: our estimate
 
-It-tabella hawn taħt hija l-kalkolu tagħna stess, mhux ta’ sors. Tassumi li l-partiċelli tat-trab għandhom densità ta’ 2.6 g kull cm³, li hija suppożizzjoni, mhux kejl. It-tafal, il-materjali solubbli u l-ġellifikazzjoni kollha jibdlu glejż reali, għalhekk użaha biex tibda, imbagħad kejjel. Bħala kontroll, tbassar {{SG 1.44}} għall-istess piż ta’ trab u ta’ ilma, qrib il-valur li kejjel Digitalfire, {{SG 1.46}}. Turi wkoll li b’70 sa 80 mL kull 100 g tibda ’l fuq minn {{SG 1.50}}, aktar oħxon milli għandek bżonn.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Ilma għal gravità speċifika fil-mira (l-istima tagħna)
-Label: Ilma għal gravità speċifika fil-mira
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mira        | Kull 100 g trab | Kull kilogramma |         Kull libra |
-| ----------- | --------------: | --------------: | -----------------: |
-| {{SG 1.40}} |   madwar 115 mL |  madwar 1150 mL | madwar 18 US fl oz |
-| {{SG 1.45}} |    madwar 98 mL |   madwar 980 mL | madwar 15 US fl oz |
-| {{SG 1.50}} |    madwar 85 mL |   madwar 850 mL | madwar 13 US fl oz |
-| {{SG 1.60}} |    madwar 64 mL |   madwar 640 mL | madwar 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Melħ Epsom, gomma CMC u bentonit
+### Find your own glaze's dry SG while you mix
 
-Il-**melħ Epsom** (sulfat tal-manjeżju) iġiegħel il-glejż jagħqad kemmxejn meta jkun wieqaf u jerġa’ jiġri meta tħawwdu. Dan jissejjaħ **flokkulazzjoni**{{en: flocculating}}, u glejż li jġib ruħu hekk huwa **tissotropiku**{{en: thixotropic}}: jitqiegħed b’mod aktar uniformi, iqattar inqas u jinżel inqas fil-qiegħ. Digitalfire jissuġġerixxi li tibda b’madwar 2 g kull gallun ladarba l-gravità speċifika tkun it-tajba (bejn wieħed u ieħor 0.5 g kull litru, skont il-konverżjoni tagħna) u li taġġusta l-ammont kull darba li tħallat, għax l-ebda riċetta m’għandha tiffissa d-doża. Nissuġġerixxu li l-ewwel tħollu fi ftit ilma sħun. F’eżempju ta’ Digitalfire, glejż b’{{SG 1.45}} kien iqattar, għalhekk l-ilma niżżlu għal {{SG 1.43}} u l-melħ Epsom reġa’ għaqqdu sakemm sar kremuż, u tqiegħed b’mod uniformi. Kontroll approssimattiv: ħawwad, ieqaf u osserva. Glejż ġellifikat jibqa’ jiċċaqlaq għal madwar 2 jew 3 sekondi, imbagħad jieqaf u jerġa’ lura ftit.
+The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
 
-Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwaħħal u jdum aktar biex jinxef, u tħalli saff aktar iebes li jeħel mal-biċċa. L-aktar hija importanti għall-glejżijiet għall-pinzell u għal dawk b’ħafna fritta{{en: frit}}. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g ta’ glejż likwidu, u trid tiżdied bil-blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
+1. Write down the weight of dry powder in the batch: the recipe's total.
+2. Weigh the empty bucket before you start, or mark its weight on it.
+3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
+4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
+5. Measure the SG.
 
-Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1% bentonit mill-piż tal-glejż niexef.
+Then:
+
+- **Water** = slurry weight − powder weight.
+- **Slurry volume** in mL = slurry weight in grams ÷ SG.
+- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
+- **Dry SG** = powder weight ÷ powder volume.
+
+For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+
+Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 3%. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+
+### Epsom salts, CMC gum and bentonite
+
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Test tiles and line blends {#testing lang=en}
 
@@ -258,23 +279,23 @@ The method needs careful arithmetic, well-mixed ends of even SG, and an accurate
 > [!NOTE]
 > When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
-## Kif iżżomm ir-reġistri {#records}
+## Keeping records {#records lang=en}
 
-Il-għan huwa mfisser tajjeb fi kliem Willers: “biżżejjed informazzjoni biex tkun tista’ tirrepeti, jew tevita, ir-riżultati li skoprejt”. Ikteb x’qed tippjana li tittestja qabel ma tibda, u r-riżultati meta tbattal il-forn. Potclays iżid it-tqegħid tal-glejż{{en: glaze}}, il-ħxuna, it-tafal tal-biċċa{{en: clay body}} u d-dettalji kollha tal-ħamja, inklużi r-rampi{{en: ramps}}, iż-żammiet{{en: holds}} u t-tkessiħ. **Rampa** hija rata ta’ tisħin jew ta’ tkessiħ, bħal {{60 °C; 108 °F}} fis-siegħa, u **żamma** iżżomm il-forn f’temperatura waħda għal ħin stabbilit. Niżżel in-numri tal-lott, l-ilma li użajt u kull sostituzzjoni: meta Clay Art Center biddel il-feldspar, kellu jaġġusta madwar nofs il-glejżijiet tiegħu.
+Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
 
-Table: X’għandek tirreġistra għal kull taħlita ta’ glejż (il-mudell tagħna)
-Label: Mudell tar-reġistru
+Table: What to record for each glaze batch (our template)
+Label: Record template
 
-| Parti             | X’għandek tikteb                                                                                                                                                                                                                                                       |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Riċetta           | Ir-riċetta u l-verżjoni tagħha; il-marki tal-materjali u n-numri tal-lott; kull sostituzzjoni                                                                                                                                                                          |
-| Taħlit            | Data; daqs tat-taħlita; l-ilma miżjud, u t-tip tiegħu (tal-vit, tal-osmożi inversa jew distillat); il-gravità speċifika{{en: SG}} wara t-taħlit u dik finali; il-melħ Epsom, is-CMC u l-bentonit miżjuda; il-mesh tal-għarbiel u kemm-il darba għaddejt il-glejż minnu |
-| Tqegħid tal-glejż | It-tafal; il-kon{{en: cone}} tal-bisque; għadis, pinzellar jew tferrigħ; ħin tal-għadis jew numru ta’ saffi; ħxuna meta jinxef                                                                                                                                         |
-| Ħami              | Il-forn u l-pożizzjoni fuq ix-xkaffa; il-programm tal-ħami, bir-rampi, iż-żammiet u t-tkessiħ tiegħu; l-atmosfera (ossidazzjoni{{en: oxidation}} jew riduzzjoni{{en: reduction}}); x’wera l-kon xhud{{en: witness cone}}, mhux biss għal xiex kien issettjat il-forn   |
-| Riżultat          | Il-wiċċ u l-kulur; kull nżul tal-glejż, xegħir{{en: crazing}} jew toqob tal-labra{{en: pinholes}}; ritratti tal-quddiem, tal-wara u tal-ġenb; il-kodiċi tal-maduma                                                                                                     |
+| Part        | What to write down                                                                                                                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
+| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
+| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
+| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
+| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
 
 > [!NOTE]
-> Fl-app Glazecalc, [riċetta](/recipe) issejvjata żżomm ir-riċetta nfisha. [Reġistru tal-ħami](/firing) jirreġistra kull ħamja: il-forn, id-data, il-ħinijiet, it-temperaturi, il-koni u n-noti. [In-noti](/notes) iżommu l-bqija kollu, bħar-reġistru tat-taħlita hawn fuq u x’wera kull maduma.
+> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
 
 ## Sorsi {#sources}
 
