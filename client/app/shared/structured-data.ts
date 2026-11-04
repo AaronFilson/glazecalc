@@ -67,8 +67,8 @@ export function article(
  * of the site (https://schema.org/WebPage) and its trail of pages (https://schema.org/BreadcrumbList),
  * which search results show in place of the address. `path` is the page's address without its language,
  * such as /materials/silica. In English, or for a page not translated, that is its one address for search
- * engines (lib/pages.js, ENGLISH_ONLY_PAGES); the list and the chart in a language they are translated
- * into (REFERENCE_LANGUAGES) are named at their own, in that `language`.
+ * engines (lib/pages.js, englishOnlyIn); the list, the chart and each material's page in a language they
+ * are translated into (REFERENCE_LANGUAGES) are named at their own, in that `language`.
  * `crumbs` is the trail from the home page to this page, each { name, path }.
  */
 export function referencePage(

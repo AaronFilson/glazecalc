@@ -32,7 +32,8 @@ jobs:
           - platform: linux/arm64
             runner: ubuntu-26.04-arm
     runs-on: ${{ matrix.runner }}
-    timeout-minutes: 20
+    # The image's build prerenders about 10,600 pages: a few minutes more than before.
+    timeout-minutes: 30
     permissions:
       contents: read
       packages: write

@@ -1,6 +1,7 @@
 // The public reference pages: the cone chart, the list of standard materials and a page for each material
 // (docs/seo-plan.md, item 17). In English until a language is in REFERENCE_LANGUAGES (lib/regions/languages.js),
-// prerendered like the other public pages: what a search engine reads is in the HTML as sent, before any script runs.
+// prerendered like the other public pages in each language they are in: what a search engine reads is in the HTML
+// as sent, before any script runs.
 const fs = require('node:fs');
 const path = require('node:path');
 const { test, expect } = require('@playwright/test');
@@ -40,7 +41,9 @@ test.describe('the page of a standard material', () => {
     expect(html).toContain('<title>Ferro Frit 3134: oxide analysis and hazards - Glazecalc</title>');
     expect(html).toMatch(canonical('/materials/ferro-frit-3134'));
     expect(html).not.toContain('noindex');
-    expect(html).not.toContain('hreflang');
+    // Each translated language's copy beside it (e2e/material-pages.spec.js has the German).
+    for (const code of REFERENCE_LANGUAGES.filter((c) => LIVE_LANGUAGES.includes(c)))
+      expect(html, code).toContain(`hreflang="${code}"`);
     expect(html).toMatch(/<meta name="description" content="Ferro Frit 3134 in Glazecalc's standard library/);
     expect(html).toContain('"@type":"BreadcrumbList"');
     // The analysis and the hazards are in the HTML itself.
@@ -226,15 +229,13 @@ test.describe('in English only, in a language they are not translated into', () 
     await expect(page.locator('#see-also')).toHaveCount(0);
   });
 
-  test('the sitemap lists each at its English address, once', async ({ request }) => {
-    const map = await (await request.get('/sitemap.xml')).text();
-    // A material's page is drawn in the browser in every language but English: its English address alone.
-    for (const address of ['/materials/ferro-frit-3134', '/materials/silica']) {
-      expect(map).toMatch(new RegExp(`<url><loc>[^<]*${address}</loc></url>`));
-      expect(map).not.toContain(`/${OTHER}${address}`);
-    }
-    // The chart and the list: at the English address, with alternates only for the languages they are translated into.
-    for (const address of ['/cones', '/materials']) {
+  test('the sitemaps list each at its English address, and not in that language', async ({ request }) => {
+    const map = await (await request.get('/sitemaps/en.xml')).text();
+    const other = await (await request.get(`/sitemaps/${OTHER}.xml`)).text();
+    // The chart, the list and each material: at the English address, with alternates only for the languages
+    // they are translated into.
+    for (const address of ['/cones', '/materials', '/materials/silica']) {
+      expect(other).not.toContain(`/${OTHER}${address}</loc>`);
       const entry = new RegExp(`<url><loc>[^<]*${address}</loc>(.*?)</url>`).exec(map)?.[1] ?? '';
       expect(map, address).toMatch(new RegExp(`<loc>[^<]*${address}</loc>`));
       for (const code of REFERENCE_LANGUAGES.filter((c) => c !== 'en'))

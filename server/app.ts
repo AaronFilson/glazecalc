@@ -38,6 +38,7 @@ import {
   pageHtml,
   prerenderedKey,
   sitemap,
+  sitemapIndex,
   withNonce,
   withoutSlash,
   type PageText
@@ -206,29 +207,38 @@ app.use((req, res, next) => {
 
 // A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
 // robots.txt turns every crawler away (server/lib/site.ts). The languages
-// and pages are fixed for the life of the process, so the sitemap (about
-// 1 MB) is built once for each site address.
+// and pages are fixed for the life of the process, so the sitemap index and
+// each language's sitemap (about 1 MB each) are built once for each site address.
 const sitemaps = new Map<string, string>();
-app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
-  const url = site.siteUrl();
-  let xml = sitemaps.get(url);
-  if (xml === undefined) {
-    xml = sitemap(url);
-    sitemaps.set(url, xml);
-  }
-  // Compressed once for each encoding too (server/lib/compress.ts), with an ETag for a 304.
-  res.type('application/xml').set('Cache-Control', 'public, max-age=3600');
-  sendCompressed(req, res, xml, { etag: true, cached: (encoding, make) => compressedSitemap(url, encoding, make) });
-});
 const compressedSitemaps = new Map<string, Buffer>();
-const compressedSitemap = (url: string, encoding: string, make: () => Buffer): Buffer => {
-  let body = compressedSitemaps.get(encoding + ' ' + url);
+const compressedSitemap = (key: string, encoding: string, make: () => Buffer): Buffer => {
+  let body = compressedSitemaps.get(encoding + ' ' + key);
   if (!body) {
     body = make();
-    compressedSitemaps.set(encoding + ' ' + url, body);
+    compressedSitemaps.set(encoding + ' ' + key, body);
   }
   return body;
 };
+const sendSitemap = (req: Request, res: Response, key: string, make: () => string) => {
+  let xml = sitemaps.get(key);
+  if (xml === undefined) {
+    xml = make();
+    sitemaps.set(key, xml);
+  }
+  // Compressed once for each encoding too (server/lib/compress.ts), with an ETag for a 304.
+  res.type('application/xml').set('Cache-Control', 'public, max-age=3600');
+  sendCompressed(req, res, xml, { etag: true, cached: (encoding, make) => compressedSitemap(key, encoding, make) });
+};
+app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
+  const url = site.siteUrl();
+  sendSitemap(req, res, url, () => sitemapIndex(url));
+});
+app.get('/sitemaps/:file', site.sitemapAllowed, (req, res, next) => {
+  const code = /^(.+)\.xml$/.exec(String(req.params.file))?.[1];
+  if (!code || !languages.LIVE_LANGUAGES.includes(code)) return next();
+  const url = site.siteUrl();
+  sendSitemap(req, res, url + ' ' + code, () => sitemap(url, undefined, undefined, undefined, code));
+});
 
 app.get('/robots.txt', site.robotsTxt);
 

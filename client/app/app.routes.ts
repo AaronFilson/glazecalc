@@ -9,7 +9,8 @@ import {
   knownMaterial,
   materialDescriptionKey,
   materialOf,
-  materialTitleParams
+  materialTitleParams,
+  materialWords
 } from './pages/materials/material-route';
 
 // Each title is the key of its message (i18n/titles.ts), and a public page's
@@ -121,9 +122,10 @@ export const routes: Routes = [
     path: 'materials/:slug',
     title: marker('titles.materialInfo'),
     canMatch: [knownMaterial],
-    providers: [provideTranslocoScope('reference', 'materials')],
+    providers: [provideTranslocoScope('reference')],
     resolve: {
       messages: scopeTranslations,
+      words: materialWords,
       material: materialOf,
       titleParams: materialTitleParams,
       description: materialDescriptionKey

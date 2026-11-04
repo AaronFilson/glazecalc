@@ -1,12 +1,14 @@
 import { toSignal } from '@angular/core/rxjs-interop';
-import { Component, computed, inject } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Component, computed, inject, signal } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
 import { OXIDE_GROUPS, formatFormula, materialWeights } from '../../../../lib/chemistry';
 import type { MaterialWeights } from '../../../../lib/chemistry';
+import { AuthService } from '../../core/auth.service';
 import { Material } from '../../core/models';
+import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { fixed, listOf, upTo } from '../../shared/format';
@@ -223,9 +225,31 @@ export const hasFlux = (material: Material): boolean =>
       <h2 id="use">{{ t('reference.material.useHeading') }}</h2>
       <p>{{ t('reference.material.use', { name: material().name }) }}</p>
       <p>
-        <a class="btn btn-primary" routerLink="/recipe">{{ t('reference.material.useLink') }}</a>
+        <a
+          id="material-try"
+          class="btn btn-primary"
+          routerLink="/recipe"
+          [attr.aria-busy]="starting() || null"
+          (click)="useInRecipe($event)"
+          >{{ t('reference.material.useLink') }}</a
+        >
         <a class="btn btn-light border all-link" routerLink="/materials">{{ t('reference.material.allLink') }}</a>
       </p>
+      @if (!auth.shownSession() || auth.shownTrial()) {
+        <p>
+          <a id="material-signup" class="btn btn-success" routerLink="/signup" [queryParams]="{ next: path() }">{{
+            t('nav.createAccount')
+          }}</a>
+        </p>
+      }
+      <ul class="guide-links">
+        <li>
+          <a routerLink="/guides/glazing-basics">{{ guideTitle(t('titles.glazingBasics')) }}</a>
+        </li>
+        <li>
+          <a routerLink="/guides/making-a-glaze">{{ guideTitle(t('titles.makingAGlaze')) }}</a>
+        </li>
+      </ul>
     </section>
   </ng-container>`,
   styles: `
@@ -237,6 +261,9 @@ export const hasFlux = (material: Material): boolean =>
     }
     .all-link {
       margin-inline-start: 0.5rem;
+    }
+    .guide-links {
+      margin: 0;
     }
   `
 })
@@ -285,6 +312,43 @@ export class MaterialInfoPage {
   protected readonly similar = computed(() => this.named(this.material().substitutes));
   protected readonly replaces = computed(() => this.named(this.material().replaces));
 
+  protected readonly auth = inject(AuthService);
+  private readonly router = inject(Router);
+  private readonly pending = inject(PendingRecipeService);
+  /** This page's address as the router writes it, for sign-up to come back to (?next=, auth-page.ts). */
+  protected readonly path = computed(() => materialPath(this.material()));
+  /** Whether the main button is starting a trial. */
+  protected readonly starting = signal(false);
+  /** A guide's name from its page title: "How to make a glaze - Glazecalc" is "How to make a glaze". */
+  protected readonly guideTitle = (title: string): string => title.replace(/ - Glazecalc$/, '');
+
+  /**
+   * The main button: a new recipe with this material in it, on the recipe page. A visitor
+   * not signed in gets a trial first, without being asked (POST /api/guest), so the first
+   * visit from a search ends in the calculator. A trial that cannot start leaves the recipe
+   * page to ask for a sign-in, with the recipe still waiting. A click that opens a new tab
+   * or window is the link's own.
+   */
+  protected async useInRecipe(event: MouseEvent): Promise<void> {
+    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    if (this.starting()) return;
+    this.starting.set(true);
+    try {
+      await this.auth.whenChecked();
+      if (!this.auth.hasSession()) await this.auth.startTrial();
+    } catch {
+      // The recipe page's guard sends the visitor to sign in.
+    }
+    const material = this.material();
+    this.pending.put({ title: material.name, materials: [{ ...material, amount: '' }] });
+    try {
+      await this.router.navigateByUrl('/recipe');
+    } finally {
+      this.starting.set(false);
+    }
+  }
+
   /** What search engines read about the page (shared/structured-data.ts). */
   protected readonly structured = computed(() => {
     const { name } = this.material();
@@ -294,10 +358,18 @@ export class MaterialInfoPage {
       params
     );
     const title = translate('titles.materialInfo', params).replace(/ - Glazecalc$/, '');
-    return referencePage(title, description, materialPath(this.material()), [
-      { name: 'Glazecalc', path: '/' },
-      { name: translate('reference.materials.crumb'), path: '/materials' },
-      { name, path: materialPath(this.material()) }
-    ]);
+    // At the page's own address in a language it is translated into (lib/pages.js); the English in any other.
+    return referencePage(
+      title,
+      description,
+      materialPath(this.material()),
+      [
+        { name: 'Glazecalc', path: '/' },
+        { name: translate('reference.materials.crumb'), path: '/materials' },
+        { name, path: materialPath(this.material()) }
+      ],
+      'WebPage',
+      this.translated() ? this.language : 'en'
+    );
   });
 }

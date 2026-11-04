@@ -342,12 +342,13 @@ export class AuthPage {
     let failed = false;
     try {
       if (this.signup()) {
-        // The confirmation email's link comes back to the page to go on to as well.
+        // The confirmation email's link comes back to the page to go on to as well, in this page's
+        // language (/de/materials/silica), which the email is then written in for a new account.
         await this.auth.signUp(
           this.email(),
           this.password(),
           this.keep(),
-          this.next === '/home' ? undefined : this.next
+          this.next === '/home' ? undefined : this.here
         );
       } else {
         const result = await this.auth.signIn(this.email(), this.password(), this.keep());

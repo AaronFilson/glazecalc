@@ -6,6 +6,10 @@ export const ENDPOINT: string;
 export function changesContent(files: string[]): boolean;
 /** The addresses of a sitemap, each <loc> once. */
 export function sitemapUrls(xml: string): string[];
+/** The addresses IndexNow takes in one request, at most. */
+export const MAX_URLS: number;
+/** Whether a sitemap is an index of other sitemaps (<sitemapindex>). */
+export function isSitemapIndex(xml: string): boolean;
 /** The request IndexNow takes: the host, the key, where the key is, and the addresses on that host. */
 export function payload(
   site: string,

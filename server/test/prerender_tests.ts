@@ -4,6 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {
   asciiDigits,
+  englishStandsIn,
   fontFaces,
   fontPreloads,
   inlineScripts,
@@ -18,7 +19,15 @@ import {
 import pages from '../../lib/pages.js';
 import languages from '../../lib/regions/languages.js';
 import { adviceFiles, adviceKeys } from '../../scripts/advice-i18n.mjs';
-import { coneFiles, coneKeys, materialFiles, materialKeys } from '../../scripts/material-i18n.mjs';
+import {
+  coneFiles,
+  coneKeys,
+  keysOf,
+  materialFiles,
+  materialKeys,
+  perMaterialFiles,
+  standardMaterials
+} from '../../scripts/material-i18n.mjs';
 import { readPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
 
@@ -104,9 +113,28 @@ describe('prerender checks', () => {
   it('renders the reference pages in the languages they are translated into, as the others would show the same English', () => {
     expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en'])).to.eql(['en']);
     expect(pages.prerenderLanguages('/cones', ['en', 'de'], ['en', 'de'])).to.eql(['en', 'de']);
-    // A material's page is drawn in the browser in every language but English.
-    expect(pages.prerenderLanguages('/materials/silica', ['en', 'de'], ['en', 'de'])).to.eql(['en']);
+    // A material's page too, in each language it is translated into.
+    expect(pages.prerenderLanguages('/materials/silica', ['en', 'de'], ['en', 'de'])).to.eql(['en', 'de']);
+    expect(pages.prerenderLanguages('/materials/silica', ['en', 'de'], ['en'])).to.eql(['en']);
     expect(pages.prerenderLanguages('/guides/firing', ['en', 'de'])).to.eql(['en', 'de']);
+  });
+
+  it("finds a material's page where English stands in, without failing the build: the notice, or an English note", () => {
+    const material = (body: string) => page(`<main><h1>Silica</h1>${body}${WORDS}</main>`);
+    expect(englishStandsIn(material('<p>Quarz, gemahlen.</p>'), '/materials/silica', 'de')).to.equal(null);
+    expect(
+      englishStandsIn(material('<p _ngcontent-ng-c1="" lang="en">Ground quartz.</p>'), '/materials/silica', 'de')
+    ).to.equal('a note is in English');
+    expect(englishStandsIn(material('<p class="guide-note">Not translated.</p>'), '/materials/silica', 'de')).to.equal(
+      'it carries the notice that it is not translated'
+    );
+    // English is English; other pages are not checked this way.
+    expect(englishStandsIn(material('<p lang="en">Ground quartz.</p>'), '/materials/silica', 'en')).to.equal(null);
+    expect(englishStandsIn(material('<p lang="en">x</p>'), '/guides/firing', 'de')).to.equal(null);
+    // The footer names each language in itself, English among them: that is no note.
+    expect(
+      englishStandsIn(material('') + '<footer><a lang="en">English</a></footer>', '/materials/silica', 'de')
+    ).to.equal(null);
   });
 
   it('fails a reference page that says it is not translated, in a language it is translated into', () => {
@@ -284,6 +312,16 @@ describe("the standard materials' and the cone charts' translations (scripts/mat
         }
       }
     }
+  });
+
+  it("give each material's page its own words alone, in each language but English", () => {
+    const files = perMaterialFiles();
+    expect(Object.keys(files)).not.to.include('en');
+    expect(Object.keys(files)).to.include('de');
+    const silica = JSON.parse(files['de']!['silica']!) as Record<string, string>;
+    const keys = [...keysOf(standardMaterials().find((m) => m.name === 'Silica')!)];
+    expect(Object.keys(silica).sort()).to.eql(keys.sort());
+    expect(Object.keys(files['de']!)).to.have.length(pages.MATERIAL_PAGES.length);
   });
 
   it('hold every key in English, and the cone notes (which carry the witness cone advice) in English too', () => {

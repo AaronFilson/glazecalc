@@ -39,7 +39,8 @@ jobs:
   build:
     name: Build the arm64 image
     runs-on: ubuntu-26.04-arm
-    timeout-minutes: 25
+    # The image's build prerenders about 10,600 pages.
+    timeout-minutes: 35
     permissions:
       contents: read
       packages: write

@@ -9,8 +9,10 @@
 // all (zh-Hans), which Google reads. A page in English only (ENGLISH_ONLY_PAGES) has one
 // address for search engines, the English: every language's copy names it as
 // canonical, the others are noindex, and none has hreflang. So has a reference
-// page (the cone chart, the materials) in a language not yet translated
-// (REFERENCE_LANGUAGES); in the others it has hreflang among those alone.
+// page (the cone chart, the materials, each material's page) in a language not
+// yet translated (REFERENCE_LANGUAGES), and a material's page in a language
+// that lacks a translation of its notes or hazards (englishOnlyIn); in the
+// others it has hreflang among those alone.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
 import {
@@ -54,7 +56,7 @@ const isIdPage = (page: string): boolean => Object.values(ID_PAGES).some((patter
 
 /**
  * Whether an address is a public page that search engines have in English only
- * (ENGLISH_ONLY_PAGES; a reference page in a language not yet translated):
+ * (englishOnlyIn: ENGLISH_ONLY_PAGES; a reference page in a language not yet translated):
  * /de/guides/learn-with-john-britt is. Its one address for search engines is
  * the English; the other languages' copies are noindex, with no hreflang, and
  * only the English is in the sitemap.
@@ -64,9 +66,13 @@ export const isEnglishOnlyPage = (
   reference: readonly string[] = languages.REFERENCE_LANGUAGES
 ): boolean => englishOnlyIn(languages.pagePath(pathname), languages.languageOfPath(pathname), reference);
 
-/** The languages a page is offered in, of the live ones: a reference page only in those translated. */
+/**
+ * The languages a page is offered in to search engines, of the live ones: a reference page and a
+ * material's only in those translated, a material's only where its notes and hazards are (englishOnlyIn).
+ * Not for ENGLISH_ONLY_PAGES, which have the English alone.
+ */
 const offeredIn = (page: string, live: readonly string[], reference: readonly string[]): readonly string[] =>
-  REFERENCE_PAGES.includes(page) ? live.filter((code) => reference.includes(code)) : live;
+  live.filter((code) => !englishOnlyIn(page, code, reference));
 
 /** Whether an address is one of PRIVATE_PAGES or ID_PAGES, in any language: /de/shared is. */
 export const isPrivatePage = (pathname: string): boolean => {
@@ -169,9 +175,8 @@ export function withoutSlash(pathname: string): string | null {
 /**
  * The file a page was prerendered to, from its address (de/guides/firing.html),
  * or null for an address that has none: not a public page, in a language not
- * offered yet, a material's page in a language other than English, or a
- * reference page (the cone chart, the materials) in a language not translated
- * yet, which the build does not render.
+ * offered yet, or a reference page (the cone chart, the materials, a
+ * material's page) in a language not translated yet, which the build does not render.
  */
 export function prerenderedKey(
   pathname: string,
@@ -317,47 +322,93 @@ export function pageHtml(
   return out;
 }
 
+/** A date as the sitemap writes it, or undefined for anything that is not one. */
+const sitemapDate = (date: string | undefined): string | undefined =>
+  date && /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : undefined;
+
 /**
- * The sitemap: each public page in each language offered, with its other
+ * Where a language's sitemap is served (sitemapIndex): /sitemaps/de.xml. The
+ * code is one of the live languages, as the server checks before it builds one.
+ */
+export const sitemapPath = (code: string): string => `/sitemaps/${code}.xml`;
+
+/**
+ * A sitemap: each public page in each language offered, with its other
  * languages beside it; a page in English only, at its English address alone.
- * A reference page is listed in the languages it is translated into
- * (`reference`) and no others. Each has its <lastmod> where `dates` has one
- * (lib/page-dates.js: the day what the page says last changed).
+ * A reference page or a material's is listed in the languages it is translated
+ * into (`reference`, englishOnlyIn) and no others. Each has its <lastmod> where
+ * `dates` has one (lib/page-dates.js: the day what the page says last changed).
+ * With `only`, the addresses in that language alone: the file sitemapIndex
+ * names for it. Each language's file is about 1 MB with its 187 addresses, far
+ * under the 50 MB and 50,000 addresses a sitemap may have
+ * (https://www.sitemaps.org/protocol.html); all of them in one would not be.
  */
 export function sitemap(
   site: string,
   live: readonly string[] = languages.LIVE_LANGUAGES,
   reference: readonly string[] = languages.REFERENCE_LANGUAGES,
-  dates: Readonly<Record<string, string>> = pageDates()
+  dates: Readonly<Record<string, string>> = pageDates(),
+  only?: string
 ): string {
   const lastmod = (code: string, page: string): string => {
-    const date = dates[dateKey(code, page)];
-    return date && /^\d{4}-\d{2}-\d{2}$/.test(date) ? `<lastmod>${date}</lastmod>` : '';
+    const date = sitemapDate(dates[dateKey(code, page)]);
+    return date ? `<lastmod>${date}</lastmod>` : '';
   };
   const entries = PUBLIC_PAGES.flatMap((page) => {
     if (ENGLISH_ONLY_PAGES.includes(page))
-      return [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc>${lastmod('en', page)}</url>`];
+      return only && only !== 'en'
+        ? []
+        : [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc>${lastmod('en', page)}</url>`];
     const offered = offeredIn(page, live, reference);
-    return offered.map((code) => {
-      const others =
-        offered.length > 1
-          ? offered
-              .map(
-                (other) =>
-                  `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
-              )
-              .join('') +
-            // As each page's own head has it (pageHtml).
-            `<xhtml:link rel="alternate" hreflang="x-default" href="${attribute(addressIn(site, 'en', page))}"/>`
-          : '';
-      return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${lastmod(code, page)}${others}</url>`;
-    });
+    return offered
+      .filter((code) => !only || code === only)
+      .map((code) => {
+        const others =
+          offered.length > 1
+            ? offered
+                .map(
+                  (other) =>
+                    `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
+                )
+                .join('') +
+              // As each page's own head has it (pageHtml).
+              `<xhtml:link rel="alternate" hreflang="x-default" href="${attribute(addressIn(site, 'en', page))}"/>`
+            : '';
+        return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${lastmod(code, page)}${others}</url>`;
+      });
   });
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...entries,
     '</urlset>',
+    ''
+  ].join('\n');
+}
+
+/**
+ * The sitemap index (/sitemap.xml, which robots.txt names): one sitemap per live
+ * language (sitemapPath), each with the newest <lastmod> of its pages where
+ * `dates` has any.
+ */
+export function sitemapIndex(
+  site: string,
+  live: readonly string[] = languages.LIVE_LANGUAGES,
+  dates: Readonly<Record<string, string>> = pageDates()
+): string {
+  const entries = live.map((code) => {
+    const newest = PUBLIC_PAGES.map((page) => sitemapDate(dates[dateKey(code, page)]))
+      .filter((date): date is string => !!date)
+      .sort()
+      .at(-1);
+    const lastmod = newest ? `<lastmod>${newest}</lastmod>` : '';
+    return `  <sitemap><loc>${attribute(site + sitemapPath(code))}</loc>${lastmod}</sitemap>`;
+  });
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...entries,
+    '</sitemapindex>',
     ''
   ].join('\n');
 }
