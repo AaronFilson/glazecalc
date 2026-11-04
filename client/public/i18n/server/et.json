@@ -121,6 +121,8 @@
   "trash-restored-already": "See on juba tagasi pandud.",
   "trash-emptied": "Prügikast on tühi.",
   "trash-full": "Prügikast on täis, seega ei saa juurdepääsuluba sinna enam midagi viia. Tühjendage esmalt osa sellest veebisaidil.",
+  "record-conflict": "See {label, select, additive {lisaaine} advice {nõuanne} firing {põletuspäevik} material {tooraine} note {märge} recipe {retsept} trash {prügikasti üksus} other {kirje}} muudeti mujal pärast koopiat, millega töötasite, seega teie muudatust ei salvestatud.",
+  "record-gone": "Seda {label, select, additive {lisaainet} advice {nõuannet} firing {põletuspäevikut} material {toorainet} note {märget} recipe {retsepti} trash {prügikasti üksust} other {kirjet}} enam ei ole: see eemaldati või viidi prügikasti.",
   "firing-links-full": "Retsepti saab siduda kõige rohkem {most} põletuspäevikuga. Eemaldage üks seos, et siduda teine.",
   "account-limit": "Kontol saab hoida kokku kuni {limit} kirjet: retseptid, toorained, märkmed, põletuspäevikud ja muu kokku. Rohkema salvestamiseks eemaldage mõned.",
   "import-not-export": "See ei ole Glazecalci andmefail. Valige JSON-fail jaotisest Minu andmete allalaadimine.",

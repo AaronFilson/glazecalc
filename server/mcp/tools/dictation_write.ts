@@ -23,6 +23,8 @@ import { changeFiringLink, linkFiring, linkOut, type Link } from '../../lib/firi
 import type { RecordModel } from '../../lib/guest_limits.ts';
 import { fieldChanges, registerPreview, type BaseRef, type Summary } from '../../lib/pending_changes.ts';
 import { logActivityBy, saveVersion, titleOf, type TokenActor } from '../../lib/record_history.ts';
+import { bump, revFilter, revOf } from '../../lib/record_rev.ts';
+import { conflictText } from '../stale.ts';
 import { named, type Reply } from '../../lib/rest_changes.ts';
 import type { Permission, Scope } from '../../lib/scopes.ts';
 import Firing from '../../models/firing.ts';
@@ -79,6 +81,14 @@ const firingLogInput = z.object({
 });
 const firingRowsInput = z.object({
   id: idArg.describe('The firing log, from list_firings.'),
+  rev: z
+    .number()
+    .int()
+    .min(0)
+    .optional()
+    .describe(
+      'The log’s rev as you last read it. When given, the rows are added only if the log has not changed since; otherwise nothing is changed. Left out, they are always added.'
+    ),
   rows: rowsArg
     .min(1)
     .describe('The new readings, in the log’s own columns (get_firing gives them), each row a cell for each column.')
@@ -162,7 +172,9 @@ export const dictationWork = ({ userId, tokenId, scopes, actor, mayChange, needR
       ...(notes && { notes: [notes] }),
       fieldsIncluded: columns,
       rows,
-      ownedBy: userId
+      ownedBy: userId,
+      rev: 0,
+      updatedAt: new Date()
     });
     await logActivityBy(actor, userId, 'create', 'firing', saved.toObject());
     return ok({
@@ -175,11 +187,12 @@ export const dictationWork = ({ userId, tokenId, scopes, actor, mayChange, needR
     });
   },
 
-  add_firing_rows: async ({ id, rows }: FiringRowsArgs) => {
+  add_firing_rows: async ({ id, rev, rows }: FiringRowsArgs) => {
     await mayChange('firing:write');
     const filter = mine(id, userId);
     const found = filter ? await Firing.findOne(filter).lean() : null;
     if (!filter || !found) throw new ToolProblem(noFiring(id));
+    if (rev !== undefined && revOf(found) !== rev) throw new ToolProblem(conflictText('firing log', found));
     const columns = found.fieldsIncluded;
     checkRows(rows, columns);
     if (found.rows.length + rows.length > FIRING_ROWS_MOST) {
@@ -190,8 +203,13 @@ export const dictationWork = ({ userId, tokenId, scopes, actor, mayChange, needR
     // Added in one step, only while its columns are those the rows were checked against and the log stays
     // within the limit, so the version kept is the log the rows were added to.
     const before = await Firing.findOneAndUpdate(
-      { ...filter, fieldsIncluded: columns, [`rows.${FIRING_ROWS_MOST - rows.length}`]: { $exists: false } },
-      { $push: { rows: { $each: rows } } },
+      {
+        ...filter,
+        fieldsIncluded: columns,
+        [`rows.${FIRING_ROWS_MOST - rows.length}`]: { $exists: false },
+        ...revFilter(rev)
+      },
+      { $push: { rows: { $each: rows } }, ...bump() },
       { returnDocument: 'before', lean: true }
     );
     if (!before) throw new ToolProblem('The log changed while the rows were added. Nothing was changed: try again.');
@@ -200,6 +218,7 @@ export const dictationWork = ({ userId, tokenId, scopes, actor, mayChange, needR
     return ok({
       id: String(before._id),
       title: before.title,
+      rev: revOf(before) + 1,
       added: rows.length,
       rows: before.rows.length + rows.length,
       undo: 'The log as it was is kept as an earlier version.'

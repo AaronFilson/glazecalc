@@ -121,6 +121,8 @@
   "trash-restored-already": "Ovo je već vraćeno.",
   "trash-emptied": "Koš za smeće je prazan.",
   "trash-full": "Koš za smeće je pun, pa pristupni token u njega ne može premjestiti ništa više. Prvo ispraznite dio Koša za smeće na web-stranici.",
+  "record-conflict": "{label, select, additive {Dodatak je promijenjen} advice {Savjet je promijenjen} firing {Zapisnik pečenja je promijenjen} material {Sirovina je promijenjena} note {Bilješka je promijenjena} recipe {Recept je promijenjen} trash {Stavka je promijenjena} other {Zapis je promijenjen}} negdje drugdje nakon kopije s kojom ste radili, pa vaša promjena nije spremljena.",
+  "record-gone": "{label, select, additive {Dodatak više ne postoji} advice {Savjet više ne postoji} firing {Zapisnik pečenja više ne postoji} material {Sirovina više ne postoji} note {Bilješka više ne postoji} recipe {Recept više ne postoji} trash {Stavka više ne postoji} other {Zapis više ne postoji}}: stavka je uklonjena ili premještena u Koš za smeće.",
   "firing-links-full": "Recept se može povezati s najviše {most} zapisnika pečenja. Prekinite vezu s jednim da biste povezali drugi.",
   "account-limit": "Jedan račun može ukupno čuvati najviše {limit} zapisa: recepte, sirovine, bilješke, zapisnike pečenja i ostalo zajedno. Uklonite neke da biste mogli spremiti više.",
   "import-not-export": "Ovo nije podatkovna datoteka Glazecalca. Odaberite JSON datoteku iz odjeljka Preuzimanje mojih podataka.",

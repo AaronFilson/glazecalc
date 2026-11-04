@@ -121,6 +121,8 @@
   "trash-restored-already": "Tan hore ayaa dib loo celiyay.",
   "trash-emptied": "Qashinku waa madhan yahay.",
   "trash-full": "Qashinku waa buuxaa, sidaa darteed access token wax kale uma rari karo. Fadlan marka hore qaar ka madhi website-ka.",
+  "record-conflict": "Diiwaankan ({label, select, additive {walax lagu daray} advice {talo} firing {gubid} material {walax} note {qoraal} recipe {habka} trash {qashin} other {diiwaan}}) meel kale ayaa laga beddelay nuqulkii aad ka shaqaynaysay kadib, sidaa darteed isbeddelkaaga lama kaydin.",
+  "record-gone": "Diiwaankan ({label, select, additive {walax lagu daray} advice {talo} firing {gubid} material {walax} note {qoraal} recipe {habka} trash {qashin} other {diiwaan}}) mar dambe ma jiro: waa la saaray ama waxaa loo raray Qashinka.",
   "firing-links-full": "Hab waxaa lagu xidhi karaa ugu badnaan {most} diiwaan gubid. Mid ka fur si aad mid kale u xidho.",
   "account-limit": "Akoon wuxuu hayn karaa ilaa {limit} diiwaan wadar ahaan: habab, walxo, qoraallo, diiwaanno gubid iyo inta kale oo wada jira. Fadlan qaar ka saar si aad u kaydiso wax ka badan.",
   "import-not-export": "Kani ma aha fayl xog Glazecalc ah. Fadlan dooro faylka JSON ee Soo deji xogtayda.",

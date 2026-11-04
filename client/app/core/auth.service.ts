@@ -33,6 +33,9 @@ const OLD_TOKEN_KEY = 'token';
 
 type SessionKind = 'account' | 'trial';
 
+/** Why a session ended: see AuthService.onSessionEnd. */
+export type SessionEndReason = 'signed-out' | 'expired' | 'trial-ended' | 'deleted';
+
 interface EmailResponse {
   email: string;
 }
@@ -160,7 +163,7 @@ export class AuthService {
   // The note is read at once, so guards and the API calls know; only what the page shows waits (shown*).
   private readonly session = signal<SessionKind | null>(readStoredSession());
   private checked: Promise<void> | null = null;
-  private readonly onEnd: Array<() => void> = [];
+  private readonly onEnd: Array<(reason: SessionEndReason) => void> = [];
   private readonly onStart: Array<() => void> = [];
   private readonly onDeleted: Array<() => void> = [];
 
@@ -548,7 +551,7 @@ export class AuthService {
   async confirmEmail(token: string): Promise<{ message: string; changed: boolean }> {
     const res = await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/email/confirm', { token }));
     const changed = res.code === 'email-changed';
-    if (changed && this.hasSession()) this.forget();
+    if (changed && this.hasSession()) this.forget('expired');
     else if (this.hasSession()) await this.refresh();
     return { message: said(res), changed };
   }
@@ -556,7 +559,7 @@ export class AuthService {
   /** Signs out on every device, this one included. */
   async signOutEverywhere(): Promise<void> {
     await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/signout-everywhere', {}));
-    this.forget();
+    this.forget('signed-out');
   }
 
   /**
@@ -580,7 +583,7 @@ export class AuthService {
 
   /** Signs out here at once, and asks the server to clear the cookie. */
   async signOut(): Promise<void> {
-    this.forget();
+    this.forget('signed-out');
     try {
       await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/signout', {}));
     } catch {
@@ -588,8 +591,12 @@ export class AuthService {
     }
   }
 
-  /** Calls `then` each time the session on this browser ends: signed out, run out, discarded or deleted. */
-  onSessionEnd(then: () => void): void {
+  /**
+   * Calls `then` each time the session on this browser ends, with why: the person signed out ('signed-out'), the
+   * server stopped accepting it ('expired'), a trial ran out ('trial-ended'), or the account or trial was deleted
+   * ('deleted'). What is kept on the device depends on it (core/offline-records.ts).
+   */
+  onSessionEnd(then: (reason: SessionEndReason) => void): void {
     this.onEnd.push(then);
   }
 
@@ -610,16 +617,16 @@ export class AuthService {
    */
   sessionEnded(): void {
     if (this.session() === 'trial') this.endTrial();
-    else this.forget();
+    else this.forget('expired');
   }
 
   private endTrial(): void {
-    this.forget();
+    this.forget('trial-ended');
     this.trialEnded.set(true);
   }
 
   private deleted(): void {
-    this.forget();
+    this.forget('deleted');
     for (const then of this.onDeleted) then();
   }
 
@@ -636,7 +643,7 @@ export class AuthService {
     this.setTrial(null);
   }
 
-  private forget(): void {
+  private forget(reason: SessionEndReason): void {
     this.setSession(null);
     this.email.set(null);
     this.unverified.set(false);
@@ -644,7 +651,7 @@ export class AuthService {
     this.methods.set(null);
     this.holdReauth(null);
     this.setTrial(null);
-    for (const then of this.onEnd) then();
+    for (const then of this.onEnd) then(reason);
   }
 
   private setSession(kind: SessionKind | null): void {

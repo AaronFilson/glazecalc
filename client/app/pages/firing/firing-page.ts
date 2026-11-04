@@ -18,6 +18,7 @@ import { OfflineRecords } from '../../core/offline-records';
 import { localDate, optional } from '../../shared/dates';
 import { FIRING_FIELDS, firingFieldLabel, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
+import { PendingBadge } from '../../shared/pending-badge';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 import { FiringLog } from './firing-log';
 
@@ -30,6 +31,7 @@ import { FiringLog } from './firing-log';
     IsolatedPipe,
     NoticesList,
     PageHeader,
+    PendingBadge,
     RemoveButton,
     RouterLink,
     TranslocoDirective
@@ -132,7 +134,7 @@ export class FiringPage implements OnInit {
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
-  /** Offline, showing the copy kept on this device: nothing can be saved (core/offline-records.ts). */
+  /** Offline, showing the copy kept on this device: recipe links need the network (core/offline-records.ts). */
   protected readonly offlineRecords = inject(OfflineRecords);
 
   protected readonly title = signal('');
@@ -257,10 +259,7 @@ export class FiringPage implements OnInit {
   }
 
   protected save(): Promise<void> {
-    if (this.offlineRecords.readOnly()) {
-      this.notices.error(this.offlineRecords.note() ?? '');
-      return Promise.resolve();
-    }
+    // Offline, a save is queued and sent later (core/outbox.ts).
     return this.saving.run(() => this.saveNow());
   }
 

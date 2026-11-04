@@ -45,6 +45,7 @@ import * as log from './log.ts';
 import { say } from './messages.ts';
 import { missing, RECORD_FIELDS, type RecordKind } from './record_fields.ts';
 import { saveVersion, titleOf } from './record_history.ts';
+import { revOf } from './record_rev.ts';
 import { setShelf } from './shelf.ts';
 import { standardSet } from './standard_library.ts';
 
@@ -490,13 +491,20 @@ const undoRun = async (run: RunRecord): Promise<void> => {
       { ...earlier, ownedBy },
       { returnDocument: 'before', lean: true }
     );
-    if (before) await saveVersion(kind, before as Row & { _id: Types.ObjectId }, 'session', { replacing: versionId });
+    if (before) {
+      // The undo is a change like another: the revision goes up from the record's own.
+      await Model.updateOne({ _id: recordId, ownedBy }, { $set: { rev: revOf(before) + 1, updatedAt: new Date() } });
+      await saveVersion(kind, before as Row & { _id: Types.ObjectId }, 'session', { replacing: versionId });
+    }
   }
   const { preferences, prices, shelf } = run.before;
   if (preferences || prices) {
     await User.updateOne(
       { _id: ownedBy },
-      { $set: { ...(preferences && { preferences }), ...(prices && { prices }) } }
+      {
+        $set: { ...(preferences && { preferences }), ...(prices && { prices }) },
+        $inc: { ...(preferences && { prefsRev: 1 }), ...(prices && { pricesRev: 1 }) }
+      }
     );
   }
   if (shelf) await setShelf(ownedBy, shelf);
@@ -593,7 +601,7 @@ const importLocked = async (user: UserDocument, request: ImportRequest, now: Dat
     for (const kind of IMPORT_KINDS) {
       const docs = plan.writes
         .filter(({ record, fate }) => record.kind === kind && fate.action === 'add')
-        .map(({ fate, doc }) => ({ ...doc, _id: fate.id, ownedBy: userId }));
+        .map(({ fate, doc }) => ({ ...doc, _id: fate.id, ownedBy: userId, rev: 0, updatedAt: now }));
       if (docs.length) await MODELS[kind].insertMany(docs, { ordered: true });
     }
     for (const { record, fate, doc } of plan.writes) {
@@ -602,7 +610,11 @@ const importLocked = async (user: UserDocument, request: ImportRequest, now: Dat
       const unset = RECORD_FIELDS[kind].fields.filter((field) => doc[field] === undefined);
       const replaced = await MODELS[kind].findOneAndUpdate(
         { _id: fate.id, ownedBy: userId },
-        { $set: doc, ...(unset.length && { $unset: Object.fromEntries(unset.map((field) => [field, 1])) }) },
+        {
+          $set: { ...doc, updatedAt: now },
+          $inc: { rev: 1 },
+          ...(unset.length && { $unset: Object.fromEntries(unset.map((field) => [field, 1])) })
+        },
         { runValidators: true, returnDocument: 'before', lean: true }
       );
       // Removed meanwhile: nothing to replace, and nothing to put back.
@@ -614,7 +626,15 @@ const importLocked = async (user: UserDocument, request: ImportRequest, now: Dat
         .lean();
       run.replaced.push({ kind, recordId: new mongoose.Types.ObjectId(fate.id), versionId: version?._id });
     }
-    if (Object.keys(changes).length) await User.updateOne({ _id: userId }, { $set: changes });
+    if (Object.keys(changes).length) {
+      await User.updateOne(
+        { _id: userId },
+        {
+          $set: changes,
+          $inc: { ...(changes.preferences ? { prefsRev: 1 } : {}), ...(changes.prices ? { pricesRev: 1 } : {}) }
+        }
+      );
+    }
     if (shelf) await setShelf(userId, shelf);
     await ImportRun.updateOne({ _id: run._id }, { $set: { replaced: run.replaced } });
   } catch (err) {

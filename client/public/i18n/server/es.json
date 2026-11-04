@@ -121,6 +121,8 @@
   "trash-restored-already": "Esto ya se había recuperado.",
   "trash-emptied": "La papelera está vacía.",
   "trash-full": "La papelera está llena, así que un token de acceso no puede mover nada más a ella. Vacíe antes una parte en el sitio web.",
+  "record-conflict": "Se ha cambiado {label, select, additive {el aditivo} advice {el consejo} firing {el registro de cocción} material {el material} note {la nota} recipe {la receta} trash {el elemento} other {el registro}} en otro lugar después de la copia con la que usted trabajaba, así que no se guardó su cambio.",
+  "record-gone": "Ya no existe {label, select, additive {el aditivo} advice {el consejo} firing {el registro de cocción} material {el material} note {la nota} recipe {la receta} trash {el elemento} other {el registro}}: se quitó o se movió a la papelera.",
   "firing-links-full": "Una receta se puede vincular como máximo a {most} registros de cocción. Desvincule uno para vincular otro.",
   "account-limit": "Una cuenta puede guardar hasta {limit} registros en total: recetas, materiales, notas, registros de cocción y el resto juntos. Para guardar más, quite antes una parte.",
   "import-not-export": "Este no es un archivo de datos de Glazecalc. Elija el archivo JSON de «Descargar mis datos».",

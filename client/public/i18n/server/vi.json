@@ -121,6 +121,8 @@
   "trash-restored-already": "Mục này đã được khôi phục rồi.",
   "trash-emptied": "Thùng rác đã trống.",
   "trash-full": "Thùng rác đã đầy, nên mã thông báo truy cập không thể chuyển thêm gì vào đó. Vui lòng dọn bớt thùng rác trên trang web trước.",
+  "record-conflict": "Bản ghi này ({label, select, additive {phụ gia} advice {lời khuyên} firing {nung} material {nguyên liệu} note {ghi chú} recipe {công thức men} trash {thùng rác} other {bản ghi}}) đã bị thay đổi ở nơi khác sau bản sao bạn đang làm việc, nên thay đổi của bạn chưa được lưu.",
+  "record-gone": "Bản ghi này ({label, select, additive {phụ gia} advice {lời khuyên} firing {nung} material {nguyên liệu} note {ghi chú} recipe {công thức men} trash {thùng rác} other {bản ghi}}) không còn nữa: đã bị xóa hoặc chuyển vào Thùng rác.",
   "firing-links-full": "Một công thức có thể liên kết với tối đa {most} nhật ký nung. Hãy hủy liên kết một nhật ký để liên kết nhật ký khác.",
   "account-limit": "Một tài khoản có thể giữ tối đa {limit} bản ghi tính chung: công thức men, nguyên liệu, ghi chú, nhật ký nung và những thứ còn lại gộp lại. Vui lòng xóa bớt để lưu thêm.",
   "import-not-export": "Đây không phải tệp dữ liệu Glazecalc. Vui lòng chọn tệp JSON từ Tải xuống dữ liệu của tôi.",

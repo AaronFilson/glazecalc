@@ -17,6 +17,13 @@
 //                        version, so a second undo undoes the first
 //   GET    /getStandard  the shared records from data/, for anyone (when `standard` is set)
 //
+// Every record has a rev (a count of its changes, 0 when made) and an updatedAt
+// (server/lib/record_rev.ts). A change, delete or undo that sends If-Match:
+// "<rev>" is made only while the record is still at that rev: otherwise 409
+// record-conflict with the record as it is now, or 404 record-gone when it is
+// no longer there. Without If-Match the last write wins, as it always has. The
+// change answers with the new rev and updatedAt.
+//
 // Each change keeps the record as it was (server/lib/record_history.ts), so it
 // can be undone; a removed record can be put back from the Trash
 // (server/routes/trash_routes.ts). The web session can use every route; an
@@ -35,6 +42,7 @@
 import express, { type Request } from 'express';
 import mongoose from 'mongoose';
 import RecordVersion from '../models/record_version.ts';
+import { idempotent } from './idempotent.ts';
 import { standardSet } from './standard_library.ts';
 import { giveBack, makeRoom, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
@@ -42,6 +50,7 @@ import * as log from './log.ts';
 import { say } from './messages.ts';
 import * as limits from './rate_limit.ts';
 import { byOf, logActivity, moveToTrash, saveVersion, titleOf, tokenIdOf, TRASH_FULL } from './record_history.ts';
+import { conflict, gone, revFilter, revOf, withBump } from './record_rev.ts';
 import requireScope from './require_scope.ts';
 import { fieldChanges, registerPreview } from './pending_changes.ts';
 import {
@@ -114,15 +123,32 @@ export default function recordRoutes(
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
 
-  const create: Op = async (who, { body }) => {
+  const create: Op = async (who, { body, idemKey }) => {
     const source = recordIn(body, wrapper.create) ?? {};
     if (required.some((field) => missing(source[field]))) return { status: 400, body: MISSING };
-    const saved = await Model.create({ ...pick(source, fields), ownedBy: String(who.user._id) });
+    const ownedBy = String(who.user._id);
+    let saved;
+    try {
+      saved = await Model.create({
+        ...pick(source, fields),
+        ownedBy,
+        rev: 0,
+        updatedAt: new Date(),
+        ...(idemKey && { idemKey })
+      });
+    } catch (err) {
+      // The same Idempotency-Key again (the app sent a create whose answer was lost): the record it made.
+      if (idemKey && (err as { code?: number }).code === 11000) {
+        const earlier = await Model.findOne({ ownedBy, idemKey });
+        if (earlier) return { status: 200, body: earlier };
+      }
+      throw err;
+    }
     await logActivity(who, 'create', area, saved.toObject());
     return { status: 200, body: saved };
   };
 
-  const change: Op = async (who, { params, body }) => {
+  const change: Op = idempotent(async (who, { params, body, rev }) => {
     if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
     const source = recordIn(body, wrapper.change);
     if (!source) return { status: 400, body: MISSING };
@@ -130,30 +156,41 @@ export default function recordRoutes(
     if (!Object.keys(changes).length) return { status: 400, body: say('nothing-to-update') };
     try {
       // The record as it was, found and changed in one step, so the version kept is the one changed.
+      const ownedBy = String(who.user._id);
+      const now = new Date();
+      // With a revision (If-Match), only a record still at it is changed (server/lib/record_rev.ts).
       const before = await Model.findOneAndUpdate(
-        { _id: params.id, ownedBy: String(who.user._id) },
-        { $set: changes },
+        { _id: params.id, ownedBy, ...revFilter(rev) },
+        withBump(changes, now),
         { runValidators: true, returnDocument: 'before', lean: true }
       );
-      if (!before) return { status: 404, body: notFound };
+      if (!before) {
+        if (rev === undefined) return { status: 404, body: notFound };
+        const current = await Model.findOne({ _id: params.id, ownedBy }).lean();
+        return current ? conflict(label, current) : gone(label);
+      }
       await saveVersion(area, before, byOf(who), { tokenId: tokenIdOf(who) });
       await logActivity(who, 'change', area, { ...before, ...changes });
-      return { status: 200, body: say('record-updated', { label }) };
+      return {
+        status: 200,
+        body: { ...say('record-updated', { label }), rev: revOf(before) + 1, updatedAt: now.toISOString() }
+      };
     } catch (err) {
       if (err instanceof Error && (err.name === 'ValidationError' || err.name === 'CastError')) {
         return { status: 400, body: say('record-invalid', { label }) };
       }
       throw err;
     }
-  };
+  });
 
-  const remove: Op = async (who, { params }) => {
+  const remove: Op = idempotent(async (who, { params, rev }) => {
     if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
     const id = params.id!;
     const user = who.user;
-    const trashed = await moveToTrash(Model, area, user, id, byOf(who), tokenIdOf(who));
-    if (!trashed) return { status: 404, body: notFound };
+    const trashed = await moveToTrash(Model, area, user, id, byOf(who), tokenIdOf(who), new Date(), rev);
+    if (!trashed) return rev === undefined ? { status: 404, body: notFound } : gone(label);
     if (trashed === TRASH_FULL) return { status: 409, body: say('trash-full') };
+    if ('conflict' in trashed) return conflict(label, trashed.conflict);
     // A failure here is logged and the delete still answers: the record is in the Trash already,
     // and putting it back stops anything it had (its share link) on its own.
     await onTrash?.(id, String(user._id)).catch((err: unknown) =>
@@ -163,9 +200,9 @@ export default function recordRoutes(
     // A trial gets the place back for another record; the Trash does not count.
     if (user.guest) await giveBack(user._id, Model);
     return { status: 200, body: { ...say('record-trashed', { label }), trashId: trashed.trashId } };
-  };
+  });
 
-  const undo: Op = async (who, { params }) => {
+  const undo: Op = async (who, { params, rev }) => {
     if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
     const ownedBy = String(who.user._id);
     const version = await RecordVersion.findOne({ ownedBy, fromCollection: area, recordId: params.id }).sort({
@@ -174,11 +211,23 @@ export default function recordRoutes(
     });
     if (!version) return { status: 404, body: say('nothing-to-undo') };
     const filter = { _id: params.id, ownedBy };
-    const replacement = { ...earlierOf(version.record as Body), ownedBy };
-    // The record as it was, found and replaced in one step, so the version kept is the one replaced.
-    const before = await Model.findOneAndReplace(filter, replacement, { returnDocument: 'before', lean: true });
-    // In the Trash, or gone: the version stays, for when it is put back.
-    if (!before) return { status: 404, body: notFound };
+    const earlier = { ...earlierOf(version.record as Body), ownedBy };
+    // The undo is a change like another: the revision goes up from the record's own, not the version's.
+    // It is replaced only while still at the revision it was read at, so the one it takes is the one replaced.
+    let replacement: Body = earlier;
+    let before: Awaited<ReturnType<typeof Model.findOneAndReplace>> = null;
+    for (let attempt = 0; attempt < 3 && !before; attempt++) {
+      const current = (await Model.findOne(filter).lean()) as Body | null;
+      // In the Trash, or gone: the version stays, for when it is put back.
+      if (!current) return rev === undefined ? { status: 404, body: notFound } : gone(label);
+      if (rev !== undefined && revOf(current) !== rev) return conflict(label, current);
+      replacement = { ...earlier, rev: revOf(current) + 1, updatedAt: new Date() };
+      before = await Model.findOneAndReplace({ ...filter, ...revFilter(revOf(current)) }, replacement, {
+        returnDocument: 'before',
+        lean: true
+      });
+    }
+    if (!before) return { status: 409, body: say('record-conflict', { label }) };
     // What the undo replaced is kept in place of the version it put back, so the undo can be undone.
     await saveVersion(area, before, byOf(who), { replacing: version._id, tokenId: tokenIdOf(who) });
     const restored = (await Model.findOne(filter).lean()) ?? { ...replacement, _id: before._id };

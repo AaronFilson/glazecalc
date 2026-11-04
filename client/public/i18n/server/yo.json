@@ -121,6 +121,8 @@
   "trash-restored-already": "A ti dá èyí padà tẹ́lẹ̀.",
   "trash-emptied": "Ààtàn ṣófo.",
   "trash-full": "Ààtàn ti kún, nítorí náà access token kò lè gbé ohunkóhun mìíràn lọ sí i. Ẹ jọ̀wọ́ ẹ kọ́kọ́ sọ díẹ̀ nínú rẹ̀ di òfo lórí ojú-ìwé ayélujára.",
+  "record-conflict": "Àkọsílẹ̀ yìí ({label, select, additive {ohun àfikún} advice {ìmọ̀ràn} firing {ìsun} material {ohun èlò} note {àkíyèsí} recipe {ìlànà} trash {ibi ìdọ̀tí} other {àkọsílẹ̀}}) ni a yí padà ní ibòmíràn lẹ́yìn ẹ̀dà tí ẹ ń ṣiṣẹ́ lé, nítorí náà a kò fi àyípadà yín pamọ́.",
+  "record-gone": "Àkọsílẹ̀ yìí ({label, select, additive {ohun àfikún} advice {ìmọ̀ràn} firing {ìsun} material {ohun èlò} note {àkíyèsí} recipe {ìlànà} trash {ibi ìdọ̀tí} other {àkọsílẹ̀}}) kò sí mọ́: a ti yọ ọ́ kúrò tàbí a ti gbé e lọ sí Ibi ìdọ̀tí.",
   "firing-links-full": "A lè so ìlànà kan mọ́ àkọsílẹ̀ ìsun tí kò ju {most} lọ. Ẹ tú ọ̀kan láti so òmíràn.",
   "account-limit": "Àkáǹtì kan lè tọ́jú àkọsílẹ̀ tí kò ju {limit} lọ lápapọ̀: ìlànà, ohun èlò, àkọsílẹ̀, àkọsílẹ̀ ìsun àti àwọn yòókù papọ̀. Ẹ jọ̀wọ́ ẹ yọ díẹ̀ kúrò láti fi púpọ̀ sí i pamọ́.",
   "import-not-export": "Èyí kì í ṣe fáìlì dátà Glazecalc. Ẹ jọ̀wọ́ ẹ yan fáìlì JSON láti Gba dátà mi sílẹ̀.",

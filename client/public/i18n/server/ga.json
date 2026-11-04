@@ -121,6 +121,8 @@
   "trash-restored-already": "Tá sé seo curtha ar ais cheana.",
   "trash-emptied": "Tá an bruscar folamh.",
   "trash-full": "Tá an bruscar lán, mar sin ní féidir le comhartha rochtana aon rud eile a bhogadh isteach ann. Folmhaigh cuid de ar an suíomh gréasáin ar dtús.",
+  "record-conflict": "Athraíodh {label, select, additive {an breiseán} advice {an chomhairle} firing {an bhácáil} material {an t-ábhar} note {an nóta} recipe {an t-oideas} trash {an bruscar} other {an taifead}} in áit eile tar éis na cóipe a raibh tú ag obair uirthi, mar sin níor sábháladh do chuid athruithe.",
+  "record-gone": "Níl {label, select, additive {an breiseán} advice {an chomhairle} firing {an bhácáil} material {an t-ábhar} note {an nóta} recipe {an t-oideas} trash {an bruscar} other {an taifead}} ann a thuilleadh: baineadh an rud sin nó bogadh go dtí an bruscar é.",
   "firing-links-full": "Is féidir oideas a cheangal le {most} taifead bácála ar a mhéad. Dícheangail ceann chun ceann eile a cheangal.",
   "account-limit": "Is féidir le cuntas suas le {limit} taifead a choinneáil ar fad: oidis, ábhair, nótaí, taifid bhácála agus an chuid eile le chéile. Bain cuid acu chun tuilleadh a shábháil.",
   "import-not-export": "Ní comhad sonraí Glazecalc é seo. Roghnaigh an comhad JSON ó ‘Mo shonraí a íoslódáil’.",

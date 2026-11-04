@@ -487,6 +487,7 @@ describe('the studio notes skill: the write tools', () => {
     expect(found.notes).to.eql([
       {
         id: about.id,
+        rev: 0,
         title: 'Whiting blend 3',
         content: 'Runs on the lower third.',
         about: { kind: 'recipes', id: recipeId }

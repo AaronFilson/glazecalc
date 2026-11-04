@@ -54,16 +54,25 @@ describe('user API', () => {
     });
   });
 
+  /** The response without the change counts (prefsRev, pricesRev: tested in record_rev_tests.ts). */
+  const bare = <T extends { body: Record<string, unknown> }>(res: T): T => {
+    delete res.body.prefsRev;
+    delete res.body.pricesRev;
+    return res;
+  };
+
   describe('preferences', () => {
     const get = (bearer: string) =>
       api()
         .get('/preferences')
-        .set('Authorization', 'Bearer ' + bearer);
+        .set('Authorization', 'Bearer ' + bearer)
+        .then(bare);
     const put = (bearer: string, body: object) =>
       api()
         .put('/preferences')
         .set('Authorization', 'Bearer ' + bearer)
-        .send(body);
+        .send(body)
+        .then(bare);
 
     const DEFAULTS = {
       weightUnit: 'g',
@@ -364,12 +373,14 @@ describe('user API', () => {
     const get = (bearer: string) =>
       api()
         .get('/prices')
-        .set('Authorization', 'Bearer ' + bearer);
+        .set('Authorization', 'Bearer ' + bearer)
+        .then(bare);
     const put = (bearer: string, body: object) =>
       api()
         .put('/prices')
         .set('Authorization', 'Bearer ' + bearer)
-        .send(body);
+        .send(body)
+        .then(bare);
 
     it('keeps a price per kilogram for each material, the last given for a key', async () => {
       expect((await get(token)).body).to.eql({ prices: [] });
@@ -396,7 +407,8 @@ describe('user API', () => {
         api()
           .patch('/prices')
           .set('Authorization', 'Bearer ' + token)
-          .send(body);
+          .send(body)
+          .then(bare);
       // Another device added Feldspar meanwhile; this one sets Silica and clears Whiting.
       await put(token, {
         prices: [

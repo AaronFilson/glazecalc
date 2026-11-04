@@ -121,6 +121,8 @@
   "trash-restored-already": "這已經放回了。",
   "trash-emptied": "垃圾桶已清空。",
   "trash-full": "垃圾桶已滿，所以存取權杖無法再把更多內容移到其中。請先在網站上清理一部分。",
+  "record-conflict": "這筆{label, select, additive {添加物} advice {建議} firing {燒窯紀錄} material {原料} note {筆記} recipe {釉方} trash {垃圾桶項目} other {紀錄}}在您所用的副本之後於別處被變更，因此您的變更未儲存。",
+  "record-gone": "這筆{label, select, additive {添加物} advice {建議} firing {燒窯紀錄} material {原料} note {筆記} recipe {釉方} trash {垃圾桶項目} other {紀錄}}已不存在：它已被移除或移到垃圾桶。",
   "firing-links-full": "一個釉方最多可以連結 {most} 筆燒窯紀錄。請先取消連結一筆，再連結另一筆。",
   "account-limit": "每個帳戶最多可保存 {limit} 筆紀錄，釉方、原料、筆記、燒窯紀錄和其他紀錄合計在內。請移除一些後再儲存更多。",
   "import-not-export": "這不是 Glazecalc 資料檔。請選擇「下載我的資料」取得的 JSON 檔案。",

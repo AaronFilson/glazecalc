@@ -55,13 +55,16 @@ export function shellOf(indexHtml) {
 
 /**
  * What the API sends for a standard record: the schema's lists (server/models/material.ts, additive.ts,
- * library_info.ts) are lists and are there when empty, as Mongoose reads a record, and the ObjectId is its text.
+ * library_info.ts) are lists and are there when empty, as Mongoose reads a record, a record has a rev, and the
+ * ObjectId is its text.
  */
 const LISTS = ['aliases', 'notes', 'region', 'relatedTo', 'replaces', 'substitutes'];
 export const asSent = (record) => {
   const sent = { ...record };
   // A lone value becomes a list of one, as Mongoose casts it.
   for (const list of LISTS) sent[list] = sent[list] === undefined ? [] : [sent[list]].flat();
+  // Every record the schema reads has a revision (server/lib/record_rev.ts); the standard ones are at 0.
+  sent.rev ??= 0;
   return JSON.parse(JSON.stringify(sent));
 };
 

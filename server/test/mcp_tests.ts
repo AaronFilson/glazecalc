@@ -39,6 +39,7 @@ import mongoose from 'mongoose';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
+import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
 import User from '../models/user.ts';
@@ -1843,6 +1844,62 @@ describe('MCP: the write tools', () => {
       expect(refused.isError).to.equal(true);
     }
     expect(await Recipe.countDocuments({ ownedBy })).to.equal(1);
+  });
+
+  it('update tools and move_to_trash refuse a stale rev, changing nothing, and count each change', async () => {
+    const { id } = await data('create_recipe', { title: 'Satin', lines: LINES }, headers);
+    expect((await Recipe.findById(id).lean())!.rev).to.equal(0);
+    // Without a rev the change is made, as always; with the rev it was read at, too.
+    const blind = await data('update_recipe', { id, title: 'Satin 2' }, headers);
+    expect(blind.rev).to.equal(1);
+    const matched = await data('update_recipe', { id, rev: 1, title: 'Satin 3' }, headers);
+    expect(matched.rev).to.equal(2);
+    const stale = await call('update_recipe', { id, rev: 1, title: 'Lost' }, headers);
+    expect(stale.isError).to.equal(true);
+    expect(stale.content[0]!.text).to.include('Nothing was changed').and.include('its rev is now 2');
+    expect(await Recipe.findById(id).lean()).to.include({ title: 'Satin 3', rev: 2 });
+    const kept = await call('move_to_trash', { kind: 'recipe', id, rev: 1 }, headers);
+    expect(kept.isError).to.equal(true);
+    expect(await Recipe.countDocuments({ _id: id })).to.equal(1);
+    expect(await Trash.countDocuments({ ownedBy })).to.equal(0);
+
+    const material = await data(
+      'add_my_material',
+      { name: 'Spar', analysis: { SiO2: 70, Al2O3: 18, K2O: 12 } },
+      headers
+    );
+    expect((await Material.findById(material.id).lean())!.rev).to.equal(0);
+    expect((await data('update_my_material', { id: material.id, rev: 0, notes: 'Mine' }, headers)).rev).to.equal(1);
+    const staleMaterial = await call('update_my_material', { id: material.id, rev: 0, notes: 'Lost' }, headers);
+    expect(staleMaterial.isError).to.equal(true);
+    expect((await Material.findById(material.id).lean())!.notes).to.eql(['Mine']);
+
+    const log = await data('create_firing_log', { title: 'Glaze', columns: ['Time'], rows: [['9:00']] }, headers);
+    expect((await Firing.findById(log.id).lean())!.rev).to.equal(0);
+    const rows = await data('add_firing_rows', { id: log.id, rev: 0, rows: [['9:30']] }, headers);
+    expect(rows.rev).to.equal(1);
+    const staleRows = await call('add_firing_rows', { id: log.id, rev: 0, rows: [['10:00']] }, headers);
+    expect(staleRows.isError).to.equal(true);
+    expect((await Firing.findById(log.id).lean())!.rows).to.have.length(2);
+
+    // The read tools give the rev to pass back.
+    expect((await data('get_recipe', { id }, headers)).rev).to.equal(2);
+    expect((await data('list_recipes', {}, headers)).recipes[0].rev).to.equal(2);
+    expect((await data('list_my_materials', {}, headers)).materials[0].rev).to.equal(1);
+    expect((await data('get_firing', { id: log.id }, headers)).rev).to.equal(1);
+    expect((await data('list_firings', {}, headers)).firings[0].rev).to.equal(1);
+    const entry = await data('add_notebook_entry', { content: 'Hello' }, headers);
+    expect((await data('list_notes', {}, headers)).notes.find((n: { id: string }) => n.id === entry.id).rev).to.equal(
+      0
+    );
+
+    // Linking a log to a recipe is a change to the recipe.
+    await data('link_firing', { recipeId: id, firingId: log.id }, headers);
+    expect((await Recipe.findById(id).lean())!.rev).to.equal(3);
+
+    // With the rev it has now, the removal goes through.
+    expect((await call('move_to_trash', { kind: 'recipe', id, rev: 3 }, headers)).isError).to.not.equal(true);
+    expect(await Trash.countDocuments({ ownedBy })).to.equal(1);
   });
 
   it('keep within the account’s limit on records', async () => {

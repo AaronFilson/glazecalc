@@ -121,6 +121,8 @@
   "trash-restored-already": "Ez már vissza lett helyezve.",
   "trash-emptied": "A Lomtár üres.",
   "trash-full": "A Lomtár megtelt, ezért egy hozzáférési token nem tud több elemet áthelyezni bele. Kérjük, előbb ürítsen ki belőle valamennyit a weboldalon.",
+  "record-conflict": "Ez a(z) {label, select, additive {adalék} advice {tanács} firing {égetési napló} material {nyersanyag} note {jegyzet} recipe {recept} trash {Lomtár-elem} other {bejegyzés}} máshol módosult azután, hogy az Ön által használt másolat készült, ezért a módosítása nem lett mentve.",
+  "record-gone": "Ez a(z) {label, select, additive {adalék} advice {tanács} firing {égetési napló} material {nyersanyag} note {jegyzet} recipe {recept} trash {Lomtár-elem} other {bejegyzés}} már nincs meg: eltávolították, vagy a Lomtárba került.",
   "firing-links-full": "Egy recept legfeljebb {most} égetési naplóhoz kapcsolható. Válasszon le egyet, hogy másikat kapcsolhasson.",
   "account-limit": "Egy fiókban legfeljebb {limit} bejegyzés tárolható összesen: receptek, nyersanyagok, jegyzetek, égetési naplók és a többi együtt. Ha többet szeretne menteni, kérjük, távolítson el néhányat.",
   "import-not-export": "Ez nem Glazecalc-adatfájl. Kérjük, válassza az Adataim letöltése részben kapott JSON-fájlt.",

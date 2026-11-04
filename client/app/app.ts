@@ -31,6 +31,9 @@ import { InstallService } from './core/install.service';
 import { LocaleService } from './core/locale.service';
 import { OfflineLanguages } from './core/offline-languages';
 import { OfflineRecords } from './core/offline-records';
+import { Outbox } from './core/outbox';
+import { OfflineAskDialog } from './core/offline-ask';
+import { OutboxConflictDialog, OutboxFailedList } from './core/outbox-conflict.dialog';
 import { UpdateService } from './core/update.service';
 import { sameSitePath } from './core/signed-in.guard';
 import { formatDate } from './shared/format';
@@ -62,6 +65,9 @@ const APP_PAGES = [
   imports: [
     LanguageLinks,
     NgTemplateOutlet,
+    OfflineAskDialog,
+    OutboxConflictDialog,
+    OutboxFailedList,
     RichText,
     RouterLink,
     RouterLinkActive,
@@ -252,6 +258,7 @@ const APP_PAGES = [
                 {{
                   t('offline.recordsBanner', { date: formatDate(savedAt, { dateStyle: 'medium', timeStyle: 'short' }) })
                 }}
+                {{ t('outbox.bannerEdit') }}
               </p>
             </div>
           </div>
@@ -263,7 +270,34 @@ const APP_PAGES = [
           </div>
         }
       </div>
+      <!-- Changes made offline wait here and are sent in order (core/outbox.ts). -->
+      <div role="status">
+        @if (auth.shownSession() && outbox.sendable() > 0) {
+          <div class="update-bar offline-records-bar outbox-count">
+            <div class="trial-bar-inner">
+              <p>{{ t('outbox.count', { count: outbox.sendable() }) }}</p>
+            </div>
+          </div>
+        }
+        @for (notice of outbox.notices(); track notice.id) {
+          <div class="update-bar offline-records-bar outbox-notice">
+            <div class="trial-bar-inner">
+              <p>{{ notice.text }}</p>
+              <div class="trial-actions">
+                <button type="button" class="btn btn-light btn-sm" (click)="outbox.dismissNotice(notice.id)">
+                  {{ t('outbox.dismiss') }}
+                </button>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+      <gc-outbox-failed />
     </header>
+    <!-- Asks what to do with a change made offline that met a newer version of the record on the server. -->
+    <gc-outbox-conflict />
+    <!-- Asks what happens to the copy and the changes kept on this device: signing out, clearing, turning off. -->
+    <gc-offline-ask />
 
     <!-- The account's round initial, or a person for a trial, which has no email. -->
     <ng-template #initial>
@@ -368,6 +402,7 @@ export class App implements OnInit {
   private readonly offlineLanguages = inject(OfflineLanguages);
   /** Injected at start, so a copy left behind is deleted and a session's end deletes it. */
   protected readonly offlineRecords = inject(OfflineRecords);
+  protected readonly outbox = inject(Outbox);
   protected readonly updates = inject(UpdateService);
   protected readonly install = inject(InstallService);
   /** A language was chosen with no network and its files are not on this phone: the footer says so. */
@@ -528,8 +563,12 @@ export class App implements OnInit {
 
   /** Signs out once the page has been left: the recipe page asks first about changes not saved. */
   protected async logout(): Promise<void> {
+    // With a copy or changes waiting on this device, the person decides first: keep them, delete them, or stay.
+    const choice = await this.offlineRecords.askSignOut();
+    if (choice === 'cancel') return;
     // 'reload': from the sign-in page itself too, which would otherwise count as not going anywhere.
     if (!(await this.router.navigateByUrl('/signin', { onSameUrlNavigation: 'reload' }))) return;
+    if (choice === 'delete') await this.offlineRecords.clear();
     await this.auth.signOut();
   }
 

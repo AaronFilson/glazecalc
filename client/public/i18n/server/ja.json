@@ -121,6 +121,8 @@
   "trash-restored-already": "すでに戻されています。",
   "trash-emptied": "ごみ箱を空にしました。",
   "trash-full": "ごみ箱がいっぱいのため、アクセストークンではこれ以上何も移せません。先にウェブサイトで、ごみ箱の中身の一部を削除してください。",
+  "record-conflict": "この{label, select, additive {添加物} advice {アドバイス} firing {焼成記録} material {原料} note {メモ} recipe {調合} trash {ごみ箱の項目} other {記録}}は、作業の元にしたコピーのあとに別の場所で変更されたため、変更は保存されませんでした。",
+  "record-gone": "この{label, select, additive {添加物} advice {アドバイス} firing {焼成記録} material {原料} note {メモ} recipe {調合} trash {ごみ箱の項目} other {記録}}はもうありません。削除されたか、ごみ箱に移動されました。",
   "firing-links-full": "調合に連携できる焼成記録は最大 {most} 件です。別の記録を連携するには、どれかの連携を解除してください。",
   "account-limit": "アカウントには、調合、原料、メモ、焼成記録などを合わせて、全部で{limit}件まで記録を保存できます。さらに保存するには、いくつか削除してください。",
   "import-not-export": "これは Glazecalc のデータファイルではありません。「データをダウンロード」の JSON ファイルを選んでください。",

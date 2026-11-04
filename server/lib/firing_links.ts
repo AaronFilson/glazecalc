@@ -35,6 +35,7 @@ import { userOf } from './jwt_auth.ts';
 import { say } from './messages.ts';
 import { fieldChanges, registerPreview } from './pending_changes.ts';
 import { logActivity, titleOf } from './record_history.ts';
+import { bump } from './record_rev.ts';
 import requireScope from './require_scope.ts';
 import {
   confirmFirst,
@@ -80,7 +81,7 @@ export async function pullFiringLinks(ownedBy: string, firingIds: string[]): Pro
   if (!firingIds.length) return;
   await Recipe.updateMany(
     { ownedBy, 'firings.firing': { $in: firingIds } },
-    { $pull: { firings: { firing: { $in: firingIds } } } }
+    { $pull: { firings: { firing: { $in: firingIds } } }, ...bump() }
   );
 }
 
@@ -176,7 +177,8 @@ const link: Op = async (who, input) => {
               firingLib.cleanFiring(recipe.firedAt as FiringBlock | undefined)
             )
           }
-        }
+        },
+        ...bump()
       }
     );
   }
@@ -197,7 +199,11 @@ const change: Op = async (who, input) => {
   if (Object.keys(set).length || Object.keys(unset).length) {
     await Recipe.updateOne(
       { _id: input.params.id, ownedBy: String(who.user._id), 'firings.firing': input.params.firing },
-      { ...(Object.keys(set).length && { $set: set }), ...(Object.keys(unset).length && { $unset: unset }) }
+      {
+        $set: { ...set, ...bump().$set },
+        $inc: bump().$inc,
+        ...(Object.keys(unset).length && { $unset: unset })
+      }
     );
   }
   return answer(who, input.params.id!);
@@ -207,7 +213,7 @@ const unlink: Op = async (who, input) => {
   if (!validIds(input)) return INVALID_ID;
   await Recipe.updateOne(
     { _id: input.params.id, ownedBy: String(who.user._id) },
-    { $pull: { firings: { firing: input.params.firing } } }
+    { $pull: { firings: { firing: input.params.firing } }, ...bump() }
   );
   return answer(who, input.params.id!);
 };
