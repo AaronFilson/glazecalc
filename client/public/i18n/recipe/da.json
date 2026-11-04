@@ -751,7 +751,6 @@
       "pint": "Den ønskede pintvægt, oz"
     },
     "drySg": "De tørre råvarers SG",
-    "drySgHelp": "Omkring 2,5 for de fleste glasurer; Glazy bruger 2,6.",
     "batch": "Tør glasur til en ny portion, {unit}",
     "contents": "Ved SG {sg} indeholder spanden {glaze} tør glasur og {water} vand.",
     "add": "For at nå SG {target}, tilsæt {water} vand. Den ender på omkring {volume}.",

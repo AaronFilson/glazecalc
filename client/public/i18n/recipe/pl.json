@@ -751,7 +751,6 @@
       "pint": "Wybrana masa pinty, oz"
     },
     "drySg": "SG suchych surowców",
-    "drySgHelp": "Około 2,5 dla większości szkliw; Glazy przyjmuje 2,6.",
     "batch": "Suche szkliwo na nową porcję, {unit}",
     "contents": "Przy SG {sg} wiadro zawiera {glaze} suchego szkliwa i {water} wody.",
     "add": "Aby osiągnąć SG {target}, należy dodać {water} wody. Końcowa objętość wyniesie ok. {volume}.",

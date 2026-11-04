@@ -751,7 +751,6 @@
       "pint": "Želena masa pinte, oz"
     },
     "drySg": "Rel. gostota suhih surovin",
-    "drySgHelp": "Okoli 2,5 pri večini glazur; Glazy uporablja 2,6.",
     "batch": "Suha glazura za novo mešanico, {unit}",
     "contents": "Pri rel. gostoti {sg} vedro vsebuje {glaze} suhe glazure in {water} vode.",
     "add": "Za rel. gostoto {target} dodajte {water} vode. Na koncu bo okoli {volume}.",

@@ -751,7 +751,6 @@
       "pint": "Uzito wa painti unaotaka, oz"
     },
     "drySg": "SG ya malighafi kavu",
-    "drySgHelp": "Takriban 2.5 kwa glaze nyingi; Glazy hutumia 2.6.",
     "batch": "Glaze kavu ya kundi jipya, {unit}",
     "contents": "Kwa SG {sg}, ndoo ina {glaze} ya glaze kavu na {water} ya maji.",
     "add": "Ili kufikia SG {target}, ongeza {water} ya maji. Itaishia takriban {volume}.",

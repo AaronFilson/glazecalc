@@ -751,7 +751,6 @@
       "pint": "Berat pint yang Anda inginkan, oz"
     },
     "drySg": "Berat jenis bahan kering",
-    "drySgHelp": "Sekitar 2,5 untuk kebanyakan glasir; Glazy memakai 2,6.",
     "batch": "Glasir kering untuk batch baru, {unit}",
     "contents": "Pada berat jenis {sg}, ember berisi {glaze} glasir kering dan {water} air.",
     "add": "Untuk mencapai berat jenis {target}, tambahkan {water} air. Hasil akhirnya sekitar {volume}.",

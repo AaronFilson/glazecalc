@@ -751,7 +751,6 @@
       "pint": "Ìwúwo pint tí ẹ fẹ́, oz"
     },
     "drySg": "SG àwọn ohun èlò gbígbẹ",
-    "drySgHelp": "Nǹkan bí 2.5 fún ọ̀pọ̀lọpọ̀ glaze; Glazy ń lo 2.6.",
     "batch": "Glaze gbígbẹ fún batch tuntun, {unit}",
     "contents": "Ní SG {sg}, garawa náà gba {glaze} glaze gbígbẹ àti {water} omi.",
     "add": "Láti dé SG {target}, ẹ fi {water} omi kún un. Yóò parí sí nǹkan bí {volume}.",

@@ -751,7 +751,6 @@
       "pint": "Požadovaná hmotnost pinty, oz"
     },
     "drySg": "Měrná hmotnost suchých surovin",
-    "drySgHelp": "Asi 2,5 u většiny glazur; Glazy používá 2,6.",
     "batch": "Suchá glazura pro novou dávku, {unit}",
     "contents": "Při měrné hmotnosti {sg} obsahuje kbelík {glaze} suché glazury a {water} vody.",
     "add": "Chcete-li dosáhnout měrné hmotnosti {target}, přidejte {water} vody. Výsledný objem bude asi {volume}.",

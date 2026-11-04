@@ -751,7 +751,6 @@
       "pint": "Vēlamā pintes masa, oz"
     },
     "drySg": "Sauso izejvielu rel. blīvums",
-    "drySgHelp": "Aptuveni 2,5 lielākajai daļai glazūru; Glazy izmanto 2,6.",
     "batch": "Sausa glazūra jaunai porcijai, {unit}",
     "contents": "Pie rel. blīvuma {sg} spainī ir {glaze} sausas glazūras un {water} ūdens.",
     "add": "Lai sasniegtu rel. blīvumu {target}, pievienojiet {water} ūdens. Galā būs aptuveni {volume}.",

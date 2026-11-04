@@ -751,7 +751,6 @@
       "pint": "Greutatea pe pintă dorită, oz"
     },
     "drySg": "Greutatea specifică a materiilor prime uscate",
-    "drySgHelp": "Cam 2,5 pentru majoritatea glazurilor; Glazy folosește 2,6.",
     "batch": "Glazură uscată pentru un amestec nou, {unit}",
     "contents": "La greutatea specifică {sg}, găleata conține {glaze} de glazură uscată și {water} de apă.",
     "add": "Ca să ajungeți la greutatea specifică {target}, adăugați {water} de apă. Ajunge la aproximativ {volume}.",

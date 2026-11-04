@@ -751,7 +751,6 @@
       "pint": "O peso por pinta que quer, oz"
     },
     "drySg": "Densidade das matérias-primas secas",
-    "drySgHelp": "Cerca de 2,5 para a maioria dos vidrados; o Glazy usa 2,6.",
     "batch": "Vidrado seco para um novo lote, {unit}",
     "contents": "À densidade {sg}, o balde contém {glaze} de vidrado seco e {water} de água.",
     "add": "Para chegar à densidade {target}, junte {water} de água. Fica com cerca de {volume}.",

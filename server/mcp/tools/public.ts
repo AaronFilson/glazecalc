@@ -207,6 +207,15 @@ export const checksOf = (
   };
 };
 
+/** How a recipe's dry SG was estimated, in words (lib/recipe/density.js). */
+const SG_BASIS_WORDS: Record<string, string> = {
+  mineral: "each material's mineral, as measured",
+  kind: '2.6 for feldspars and clays',
+  glass: "frits from their oxides, by Appen's glass factors",
+  mixed: "minerals as measured, 2.6 for feldspars and clays, frits from their oxides by Appen's glass factors",
+  none: 'none'
+};
+
 /** What the cone answers say of every figure. */
 const CONES_NOTE =
   'Cones measure heat work, not temperature alone: the figures are for the heating rate each chart states. Set a witness cone.';
@@ -488,7 +497,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Specific gravity and water',
       description:
-        "Works out a glaze slurry's specific gravity (SG) from the grams 100 mL of it weighs (or takes the SG), then, for a bucket of it and a target SG, the water to add, or to pour off after the glaze settles, as the recipe page's Specific gravity and water does. The water to add needs nothing else. Only if the dry materials' own SG is given, also the dry glaze per litre and the dry glaze and water the bucket holds (Brongniart's formula); nothing is assumed for it. Water is 1; many dipping glazes are mixed near 1.4 to 1.5, but the right SG is the one that gives the thickness you tested.",
+        "Works out a glaze slurry's specific gravity (SG) from the grams 100 mL of it weighs (or takes the SG), then, for a bucket of it and a target SG, the water to add, or to pour off after the glaze settles, as the recipe page's Specific gravity and water does. The water to add needs nothing else. The dry glaze per litre and the dry glaze and water the bucket holds (Brongniart's formula) need the dry materials' own SG: give drySg, or give the recipe's lines and it is estimated from each material (its mineral's measured density; 2.6 for commercial feldspars and clays; a frit from its oxides by Appen's glass factors), with drySgBasis saying how. Materials with no estimate (bentonite, stains, mixed borates, a potter's own) may be up to 5% of the weight and are left out; with more, there is no estimate. A drySg given wins over the estimate. Nothing is assumed otherwise. Water is 1; many dipping glazes are mixed near 1.4 to 1.5, but the right SG is the one that gives the thickness you tested.",
       inputSchema: z.object({
         gramsPer100ml: z.number().gt(100).max(250).optional().describe('What 100 mL of the slurry weighs, in grams.'),
         sg: z.number().gt(1).max(2.5).optional().describe('The SG, if already measured. Give this or gramsPer100ml.'),
@@ -499,19 +508,35 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .gt(1.5)
           .max(6)
           .optional()
-          .describe("The dry materials' own SG, if known. Only the dry weights need it.")
+          .describe("The dry materials' own SG, if known. Only the dry weights need it. Wins over an estimate."),
+        lines: linesArg
+          .optional()
+          .describe("The recipe's materials, to estimate the dry materials' SG when drySg is not given.")
       }),
       annotations: READ_ONLY
     },
-    async ({ gramsPer100ml, sg, litres, target, drySg }) =>
+    async ({ gramsPer100ml, sg, litres, target, drySg, lines }) =>
       guarded(() => {
         if (sg !== undefined && gramsPer100ml !== undefined)
           throw new ToolProblem('Give the SG or the grams 100 mL of the slurry weighs, not both.');
         const measured = sg ?? (gramsPer100ml !== undefined ? gramsPer100ml / 100 : undefined);
         if (measured === undefined) throw new ToolProblem('Give the SG, or the grams 100 mL of the slurry weighs.');
         // Nothing is assumed about the dry materials: the water to add does not depend on them, and the dry
-        // weight is worked out only when their SG is given.
-        const dry = drySg;
+        // weight is worked out only when their SG is given or can be estimated from the recipe.
+        const estimate = drySg === undefined && lines ? recipe.recipeDrySg(resolveLines(lines)) : null;
+        const dry = drySg ?? estimate?.sg ?? undefined;
+        const estimated = estimate && {
+          drySgBasis: estimate.sg === null ? 'none' : estimate.basis,
+          drySgNote:
+            estimate.sg === null
+              ? estimate.unknown.length
+                ? `No estimate: the materials with no known SG (${estimate.unknown.join(', ')}) are more than 5% of the weight. Give drySg for the dry weights.`
+                : 'No estimate: the lines have no amounts. Give drySg for the dry weights.'
+              : `Estimated from the materials (${SG_BASIS_WORDS[estimate.basis]}). An estimate: a measured figure is better.` +
+                (estimate.unknown.length
+                  ? ` Left out, with no known SG: ${estimate.unknown.join(', ')} (${rounded(estimate.unknownShare * 100, 1)}% of the weight).`
+                  : '')
+        };
         if (dry !== undefined && !(measured < dry))
           throw new ToolProblem(`An SG of ${measured} is not under the dry materials' ${dry}.`);
         if (dry !== undefined && target !== undefined && !(target < dry))
@@ -523,6 +548,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         const water = raw === null ? null : rounded(raw, 2) || 0;
         return ok({
           sg: rounded(measured, 3),
+          ...estimated,
           ...(dry !== undefined && { drySg: dry, dryGlazePerLitreKg: rounded(recipe.dryPerLitre(measured, dry)!, 3) }),
           ...(contents && {
             bucket: { litres, dryGlazeKg: rounded(contents.glaze, 2), waterKg: rounded(contents.water, 2) }

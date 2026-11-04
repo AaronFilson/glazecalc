@@ -751,7 +751,6 @@
       "pint": "Haluttu pinttipaino, unssia"
     },
     "drySg": "Kuivien raaka-aineiden ominaispaino",
-    "drySgHelp": "Noin 2,5 useimmille lasitteille; Glazy käyttää arvoa 2,6.",
     "batch": "Kuivaa lasitetta uuteen erään, {unit}",
     "contents": "Ominaispainolla {sg} sangossa on {glaze} kuivaa lasitetta ja {water} vettä.",
     "add": "Ominaispainon {target} saavuttamiseksi lisää {water} vettä. Lopputulos on noin {volume}.",

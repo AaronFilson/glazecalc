@@ -751,7 +751,6 @@
       "pint": "El peso por pinta que quieres, oz"
     },
     "drySg": "GE de los materiales secos",
-    "drySgHelp": "Alrededor de 2.5 para la mayoría de los esmaltes; Glazy usa 2.6.",
     "batch": "Esmalte seco para una tanda nueva, {unit}",
     "contents": "Con GE {sg}, la cubeta contiene {glaze} de esmalte seco y {water} de agua.",
     "add": "Para llegar a GE {target}, agrega {water} de agua. Queda en alrededor de {volume}.",

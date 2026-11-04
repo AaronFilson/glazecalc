@@ -751,7 +751,6 @@
       "pint": "Norima pintos masė, oz"
     },
     "drySg": "Sausų žaliavų santykinis tankis",
-    "drySgHelp": "Apie 2,5 daugumai glazūrų; Glazy naudoja 2,6.",
     "batch": "Sausa glazūra naujam užmaišui, {unit}",
     "contents": "Esant santykiniam tankiui {sg}, kibire yra {glaze} sausos glazūros ir {water} vandens.",
     "add": "Kad pasiektumėte santykinį tankį {target}, įpilkite {water} vandens. Galiausiai bus apie {volume}.",

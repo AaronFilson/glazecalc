@@ -751,7 +751,6 @@
       "pint": "A kívánt pint-súly, uncia"
     },
     "drySg": "A száraz nyersanyagok fajsúlya",
-    "drySgHelp": "A legtöbb mázhoz körülbelül 2,5; a Glazy 2,6-ot használ.",
     "batch": "Száraz máz új adaghoz, {unit}",
     "contents": "{sg} fajsúlynál a vödör {glaze} száraz mázat és {water} vizet tartalmaz.",
     "add": "A(z) {target} fajsúly eléréséhez adjon hozzá {water} vizet. A végén kb. {volume} lesz.",

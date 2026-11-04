@@ -751,7 +751,6 @@
       "pint": "Trọng lượng pint bạn muốn, oz"
     },
     "drySg": "Tỷ trọng của nguyên liệu khô",
-    "drySgHelp": "Khoảng 2,5 với hầu hết các loại men; Glazy dùng 2,6.",
     "batch": "Men khô cho một mẻ mới, {unit}",
     "contents": "Ở tỷ trọng {sg}, xô chứa {glaze} men khô và {water} nước.",
     "add": "Để đạt tỷ trọng {target}, hãy thêm {water} nước. Cuối cùng nó đạt khoảng {volume}.",

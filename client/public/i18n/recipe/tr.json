@@ -751,7 +751,6 @@
       "pint": "İstediğiniz pint ağırlığı, oz"
     },
     "drySg": "Kuru hammaddelerin özgül ağırlığı",
-    "drySgHelp": "Çoğu sır için yaklaşık 2,5; Glazy 2,6 kullanır.",
     "batch": "Yeni bir tartım için kuru sır, {unit}",
     "contents": "Özgül ağırlık {sg} iken kovada {glaze} kuru sır ve {water} su vardır.",
     "add": "Özgül ağırlık {target} değerine ulaşmak için {water} su ekleyin. Sonuçta yaklaşık {volume} olur.",

@@ -751,7 +751,6 @@
       "pint": "Le poids de la pinte voulu, oz"
     },
     "drySg": "Densité des matières sèches",
-    "drySgHelp": "Environ 2,5 pour la plupart des émaux ; Glazy utilise 2,6.",
     "batch": "Émail sec pour une nouvelle préparation, {unit}",
     "contents": "À la densité {sg}, le seau contient {glaze} d’émail sec et {water} d’eau.",
     "add": "Pour atteindre la densité {target}, ajoutez {water} d’eau. Vous obtenez environ {volume}.",

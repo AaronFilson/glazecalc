@@ -751,7 +751,6 @@
       "pint": "Soovitud pindi kaal, untsi"
     },
     "drySg": "Kuivade toorainete suhteline tihedus",
-    "drySgHelp": "Enamiku glasuuride puhul umbes 2,5; Glazy kasutab 2,6.",
     "batch": "Kuiv glasuur uue segu jaoks, {unit}",
     "contents": "Suhtelise tiheduse {sg} juures sisaldab ämber {glaze} kuiva glasuuri ja {water} vett.",
     "add": "Suhtelise tiheduse {target} saavutamiseks lisage {water} vett. Lõpuks on seda umbes {volume}.",

@@ -751,7 +751,6 @@
       "pint": "Het pintgewicht dat u wilt, oz"
     },
     "drySg": "SG van de droge grondstoffen",
-    "drySgHelp": "Ongeveer 2,5 voor de meeste glazuren; Glazy gebruikt 2,6.",
     "batch": "Droog glazuur voor een nieuw mengsel, {unit}",
     "contents": "Bij SG {sg} bevat de emmer {glaze} droog glazuur en {water} water.",
     "add": "Om SG {target} te bereiken, voegt u {water} water toe. Het komt uit op ongeveer {volume}.",

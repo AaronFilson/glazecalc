@@ -751,7 +751,6 @@
       "pint": "An meáchan pionta atá uait, oz"
     },
     "drySg": "Sainmheáchan na n-ábhar tirim",
-    "drySgHelp": "Thart ar 2.5 d’fhormhór na nglónraí; úsáideann Glazy 2.6.",
     "batch": "Glónra tirim do bhaisc nua, {unit}",
     "contents": "Ag sainmheáchan {sg}, tá {glaze} de ghlónra tirim agus {water} d’uisce sa bhuicéad.",
     "add": "Chun sainmheáchan {target} a bhaint amach, cuir {water} d’uisce leis. Tá thart ar {volume} ann ag an deireadh.",

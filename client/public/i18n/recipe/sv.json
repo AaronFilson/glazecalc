@@ -751,7 +751,6 @@
       "pint": "Önskad pintvikt, oz"
     },
     "drySg": "SG för de torra råvarorna",
-    "drySgHelp": "Omkring 2,5 för de flesta glasyrer; Glazy använder 2,6.",
     "batch": "Torr glasyr för en ny sats, {unit}",
     "contents": "Vid SG {sg} innehåller hinken {glaze} torr glasyr och {water} vatten.",
     "add": "För att nå SG {target}, tillsätt {water} vatten. Den hamnar på omkring {volume}.",

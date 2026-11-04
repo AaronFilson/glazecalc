@@ -751,7 +751,6 @@
       "pint": "El peso por pinta que quiere, oz"
     },
     "drySg": "Densidad de los materiales secos",
-    "drySgHelp": "Unos 2,5 para la mayoría de los esmaltes; Glazy usa 2,6.",
     "batch": "Esmalte seco para una tanda nueva, {unit}",
     "contents": "A densidad {sg}, el cubo contiene {glaze} de esmalte seco y {water} de agua.",
     "add": "Para llegar a densidad {target}, añada {water} de agua. Quedarán unos {volume}.",

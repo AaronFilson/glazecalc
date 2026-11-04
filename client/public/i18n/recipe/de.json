@@ -751,7 +751,6 @@
       "pint": "Das gewünschte Pint-Gewicht, oz"
     },
     "drySg": "SG der trockenen Rohstoffe",
-    "drySgHelp": "Etwa 2,5 für die meisten Glasuren; Glazy verwendet 2,6.",
     "batch": "Trockene Glasur für einen neuen Ansatz, {unit}",
     "contents": "Bei SG {sg} enthält der Eimer {glaze} trockene Glasur und {water} Wasser.",
     "add": "Um SG {target} zu erreichen, geben Sie {water} Wasser zu. Am Ende sind es etwa {volume}.",

@@ -751,7 +751,6 @@
       "pint": "원하는 파인트 무게, oz"
     },
     "drySg": "마른 원료의 비중",
-    "drySgHelp": "대부분의 유약은 약 2.5이며, Glazy는 2.6을 씁니다.",
     "batch": "새로 배합할 마른 유약, {unit}",
     "contents": "비중 {sg}에서 양동이에 든 양은 마른 유약 {glaze}, 물 {water}입니다.",
     "add": "비중 {target}에 맞추려면 물을 {water}만큼 더하세요. 최종 부피는 약 {volume}입니다.",

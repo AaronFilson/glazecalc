@@ -660,6 +660,33 @@ describe('MCP: the public tools', () => {
     expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
   });
 
+  it('specific_gravity_water estimates the dry SG from a recipe, saying how, and a drySg given wins', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 40 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const estimated = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.45, lines });
+    expect(estimated.drySg).to.be.closeTo(2.63, 0.01);
+    expect(estimated.drySgBasis).to.equal('mixed');
+    expect(estimated.drySgNote).to.match(/estimate/i);
+    expect(estimated).to.have.property('bucket');
+    const given = await data('specific_gravity_water', { sg: 1.5, litres: 10, drySg: 2.5, lines });
+    expect(given.drySg).to.equal(2.5);
+    expect(given).not.to.have.property('drySgBasis');
+    const unknown = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [...lines, { material: 'Gerstley Borate', amount: 30 }]
+    });
+    expect(unknown.drySgBasis).to.equal('none');
+    expect(unknown.drySgNote).to.match(/Gerstley Borate/);
+    expect(unknown).not.to.have.property('drySg');
+    expect(unknown.waterToAddLitres).to.equal(1.11);
+  });
+
   it('convert_cone_temperature reads the Orton and SK charts', async () => {
     const six = await data('convert_cone_temperature', { cone: '6' });
     expect(six).to.include({ celsius: 1222, fahrenheit: 2232 });

@@ -751,7 +751,6 @@
       "pint": "Die pintgewig wat jy wil hê, oz"
     },
     "drySg": "SG van die droë grondstowwe",
-    "drySgHelp": "Sowat 2,5 vir die meeste glasure; Glazy gebruik 2,6.",
     "batch": "Droë glasuur vir 'n nuwe mengsel, {unit}",
     "contents": "Teen SG {sg} bevat die emmer {glaze} droë glasuur en {water} water.",
     "add": "Om SG {target} te bereik, voeg {water} water by. Dit eindig op sowat {volume}.",

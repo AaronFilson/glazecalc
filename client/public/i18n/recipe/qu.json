@@ -751,7 +751,6 @@
       "pint": "Munasqayki pinta llasay, oz"
     },
     "drySg": "Ch'aki materialkunap SG-n",
-    "drySgHelp": "Aswan achka esmaltekunapaq yaqa 2.5; Glazyqa 2.6 llamk'achin.",
     "batch": "Musuq lotepaq ch'aki esmalte, {unit}",
     "contents": "SG {sg}-pi, baldeqa {glaze} ch'aki esmaltetam {water} unutawan hap'in.",
     "add": "SG {target}-man chayanapaq, {water} unuta yapay. Yaqa {volume}-pi tukukun.",

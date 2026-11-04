@@ -751,7 +751,6 @@
       "pint": "የሚፈልጉት የፒንት ክብደት፣ oz"
     },
     "drySg": "የደረቁ ጥሬ ዕቃዎች SG",
-    "drySgHelp": "ለአብዛኞቹ ግላዞች በግምት 2.5፤ Glazy 2.6 ይጠቀማል።",
     "batch": "ለአዲስ ባች ደረቅ ግላዝ፣ {unit}",
     "contents": "በSG {sg}፣ ባልዲው {glaze} ደረቅ ግላዝ እና {water} ውሃ ይይዛል።",
     "add": "SG {target} ለመድረስ {water} ውሃ ያክሉ። በግምት {volume} ይሆናል።",

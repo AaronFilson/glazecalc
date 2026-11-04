@@ -751,7 +751,6 @@
       "pint": "Il-piż tal-pinta li trid, oz"
     },
     "drySg": "Gravità speċifika tal-materjali niexfin",
-    "drySgHelp": "Madwar 2.5 għall-biċċa l-kbira tal-glejżijiet; Glazy juża 2.6.",
     "batch": "Glejż niexef għal taħlita ġdida, {unit}",
     "contents": "B’gravità speċifika {sg}, il-barmil fih {glaze} ta’ glejż niexef u {water} ta’ ilma.",
     "add": "Biex tilħaq gravità speċifika {target}, żid {water} ta’ ilma. Jispiċċa madwar {volume}.",

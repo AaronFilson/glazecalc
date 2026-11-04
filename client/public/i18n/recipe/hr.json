@@ -751,7 +751,6 @@
       "pint": "Masa pinte koju želite, oz"
     },
     "drySg": "SG suhih sirovina",
-    "drySgHelp": "Oko 2,5 za većinu glazura; Glazy koristi 2,6.",
     "batch": "Suha glazura za novu smjesu, {unit}",
     "contents": "Pri SG {sg} kanta sadrži {glaze} suhe glazure i {water} vode.",
     "add": "Da biste dosegli SG {target}, dodajte {water} vode. Na kraju bude oko {volume}.",

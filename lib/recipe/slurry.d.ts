@@ -11,8 +11,11 @@ export const LITRES: Readonly<{ usGallon: number; imperialGallon: number; imperi
 export function dryPerLitre(sg: number, dry?: number): number | null;
 /** The dry glaze and water (kg) in a volume of slurry. */
 export function slurryContents(litres: number, sg: number, dry?: number): { glaze: number; water: number } | null;
-/** Water (kg) to add to take a volume of slurry from one SG to another; negative is water to pour off. */
-export function waterToReach(litres: number, sg: number, target: number, dry?: number): number | null;
+/**
+ * Water (kg) to add to take a volume of slurry from one SG to another; negative is water to pour off.
+ * It does not depend on `dry`: given, the SGs must be under it; null, only over water's.
+ */
+export function waterToReach(litres: number, sg: number, target: number, dry?: number | null): number | null;
 /** For a weight of dry glaze (kg) at a target SG: the water to add (kg) and the slurry it makes (litres). */
 export function waterForBatch(glaze: number, target: number, dry?: number): { water: number; litres: number } | null;
 /** The dry glaze and water (kg) to mix a volume (litres) at a target SG. */

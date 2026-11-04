@@ -751,7 +751,6 @@
       "pint": "Isisindo se-pint osifunayo, oz"
     },
     "drySg": "I-SG yokokwakha okomile",
-    "drySgHelp": "Cishe u-2.5 kuma-glaze amaningi; i-Glazy isebenzisa u-2.6.",
     "batch": "I-glaze eyomile ye-batch entsha, {unit}",
     "contents": "Ku-SG {sg}, ibhakede liphethe u-{glaze} we-glaze eyomile no-{water} wamanzi.",
     "add": "Ukuze ufinyelele ku-SG {target}, engeza u-{water} wamanzi. Igcina icishe ibe ngu-{volume}.",

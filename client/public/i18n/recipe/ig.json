@@ -751,7 +751,6 @@
       "pint": "Ịdị arọ pint ị chọrọ, oz"
     },
     "drySg": "SG nke ihe kpọrọ nkụ",
-    "drySgHelp": "Ihe dị ka 2.5 maka ọtụtụ glaze; Glazy na-eji 2.6.",
     "batch": "Glaze kpọrọ nkụ maka batch ọhụrụ, {unit}",
     "contents": "Na SG {sg}, bọket ahụ jidere {glaze} nke glaze kpọrọ nkụ na {water} nke mmiri.",
     "add": "Iji ruo SG {target}, tinye {water} nke mmiri. Ọ ga-akwụsị n'ihe dị ka {volume}.",

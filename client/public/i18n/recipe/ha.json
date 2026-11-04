@@ -751,7 +751,6 @@
       "pint": "Nauyin pint da kuke so, oz"
     },
     "drySg": "SG na busassun kaya",
-    "drySgHelp": "Kusan 2.5 ga yawancin glaze; Glazy yana amfani da 2.6.",
     "batch": "Busasshen glaze don sabon batch, {unit}",
     "contents": "A SG {sg}, bokitin yana ɗauke da {glaze} na busasshen glaze da {water} na ruwa.",
     "add": "Don kaiwa SG {target}, ƙara {water} na ruwa. Zai ƙare a kusan {volume}.",

@@ -751,7 +751,6 @@
       "pint": "Il peso a pinta voluto, once"
     },
     "drySg": "Peso specifico dei materiali secchi",
-    "drySgHelp": "Circa 2,5 per la maggior parte degli smalti; Glazy usa 2,6.",
     "batch": "Smalto secco per una nuova pesata, {unit}",
     "contents": "Con peso specifico {sg}, il secchio contiene {glaze} di smalto secco e {water} di acqua.",
     "add": "Per arrivare al peso specifico {target}, aggiungere {water} di acqua. Si arriva a circa {volume}.",

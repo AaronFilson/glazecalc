@@ -752,7 +752,16 @@
       "pint": "The pint weight you want, oz"
     },
     "drySg": "SG of the dry materials",
-    "drySgHelp": "About 2.5 for most glazes; Glazy uses 2.6.",
+    "drySgEmpty": "Only the dry weights need it; the water to add does not. Type it if you know it.",
+    "drySgNeeded": "Type the SG of the dry materials to see the dry glaze in the bucket and the water for a new batch.",
+    "estimate": {
+      "mineral": "An estimate, {sg}, from what each material is made of: the measured density of its mineral. Change it if you know better.",
+      "kind": "An estimate, {sg}: feldspars and clays weigh about 2.6. Change it if you know better.",
+      "glass": "An estimate, {sg}, worked out from the frits' oxides (they are glass). Change it if you know better.",
+      "mixed": "An estimate, {sg}, from each material: the measured density of its mineral, about 2.6 for feldspars and clays, and frits worked out from their oxides. Change it if you know better.",
+      "leftOut": "Left out, as their SG is not known: {names}.",
+      "none": "No estimate for this recipe: the SG of {names} is not known. Type it if you know it."
+    },
     "batch": "Dry glaze for a new batch, {unit}",
     "contents": "At SG {sg}, the bucket holds {glaze} of dry glaze and {water} of water.",
     "add": "To reach SG {target}, add {water} of water. It ends at about {volume}.",
@@ -760,6 +769,7 @@
     "already": "It is already at SG {target}.",
     "mix": "Mix {glaze} of dry glaze with {water} of water for about {volume} at SG {target}.",
     "badSg": "An SG has to be more than 1 (water's) and less than the dry materials' {dry}.",
+    "badSgWater": "An SG has to be more than 1 (water's).",
     "badDry": "The dry materials' SG has to be more than 1.",
     "note": "The water is by weight: a litre weighs a kilogram, a US gallon about 8.3 lb. The arithmetic takes the volumes to add, which is close, not exact: add water a little at a time, stir, and measure again. Two glazes at the same SG can still flow differently.",
     "saveTarget": "Save SG {sg} as this recipe's target",

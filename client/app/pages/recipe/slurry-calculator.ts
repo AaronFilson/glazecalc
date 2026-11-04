@@ -1,7 +1,8 @@
-import { Component, computed, effect, inject, linkedSignal, model, signal } from '@angular/core';
+import { Component, computed, effect, inject, input, linkedSignal, model, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
+import type { RecipeSg } from '../../../../lib/recipe/density';
 import * as slurry from '../../../../lib/recipe/slurry';
 import { LocaleService } from '../../core/locale.service';
 import { Density, PreferencesService } from '../../core/preferences.service';
@@ -44,6 +45,13 @@ const TARGET: Record<Density, string> = {
   sg: marker('recipe.slurry.target.sg'),
   baume: marker('recipe.slurry.target.baume'),
   pint: marker('recipe.slurry.target.pint')
+};
+/** How the dry SG was estimated, by its basis. */
+const ESTIMATE: Record<Exclude<RecipeSg['basis'], 'none'>, string> = {
+  mineral: marker('recipe.slurry.estimate.mineral'),
+  kind: marker('recipe.slurry.estimate.kind'),
+  glass: marker('recipe.slurry.estimate.glass'),
+  mixed: marker('recipe.slurry.estimate.mixed')
 };
 /** A dipping glaze's usual SG (Digitalfire), as each density is read. */
 const TYPICAL: Record<Density, string> = { sg: '1.45', baume: '45', pint: '29' };
@@ -127,7 +135,11 @@ function sgOf(text: string, density: Density): number | null {
             [gcNumber]="dry()"
             (gcNumberChange)="dry.set($event)"
           />
-          <div id="slurry-dry-help" class="form-text">{{ t('recipe.slurry.drySgHelp') }}</div>
+          <div id="slurry-dry-help" class="form-text" data-testid="slurry-dry-help">
+            @for (line of dryHelp(); track $index) {
+              <span class="d-block">{{ line }}</span>
+            }
+          </div>
         </div>
         <div>
           <label for="slurry-batch" class="form-label">{{
@@ -233,8 +245,32 @@ export class SlurryCalculator {
     const kept = this.sgTarget();
     return kept !== null ? densityText(kept, this.locale.density()) : TYPICAL[this.locale.density()];
   });
-  protected readonly dry = signal(String(slurry.DRY_SG));
+  /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), or none. */
+  readonly estimate = input<RecipeSg | null>(null);
+  /** The estimate, until another is typed; empty when there is none, so no dry weight is guessed. */
+  protected readonly dry = linkedSignal(() => {
+    const sg = this.estimate()?.sg;
+    return sg != null ? String(sg) : '';
+  });
   protected readonly batch = signal('');
+
+  /** What the dry SG field says: how its estimate was got and what it left out, or that it can be left empty. */
+  protected readonly dryHelp = computed(() => {
+    this.language();
+    const estimate = this.estimate();
+    const typed = plainNumber(this.dry());
+    const names = (estimate?.unknown ?? []).map((name) => isolated(name)).join(', ');
+    if (estimate?.sg != null && typed === estimate.sg) {
+      const basis = estimate.basis === 'none' ? 'mixed' : estimate.basis;
+      const lines = [translate(ESTIMATE[basis], { sg: upTo(estimate.sg, 2) })];
+      if (names) lines.push(translate('recipe.slurry.estimate.leftOut', { names }));
+      return lines;
+    }
+    if (estimate && estimate.sg === null && names && typed === null) {
+      return [translate('recipe.slurry.estimate.none', { names })];
+    }
+    return [translate('recipe.slurry.drySgEmpty')];
+  });
 
   protected readonly measuredLabel = computed(() => MEASURED[this.locale.density()]);
   protected readonly targetLabel = computed(() => TARGET[this.locale.density()]);
@@ -246,7 +282,7 @@ export class SlurryCalculator {
       litres: volume === null ? null : volume * LITRES_IN[this.volumeUnit()],
       sg: sgOf(this.measured(), density),
       target: sgOf(this.target(), density),
-      dry: plainNumber(this.dry()) ?? slurry.DRY_SG,
+      dry: plainNumber(this.dry()),
       batchKg: ((plainNumber(this.batch()) ?? 0) * (this.pounds() ? GRAMS_PER_POUND : 1000)) / 1000
     };
   });
@@ -261,16 +297,20 @@ export class SlurryCalculator {
   protected readonly problem = computed(() => {
     this.language();
     const { sg, target, dry } = this.numbers();
-    const bad = (value: number | null) => value !== null && (value <= 1 || value >= dry);
-    if (!(dry > 1)) return translate('recipe.slurry.badDry');
-    return bad(sg) || bad(target) ? translate('recipe.slurry.badSg', { dry: upTo(dry, 2) }) : '';
+    if (dry !== null && !(dry > 1)) return translate('recipe.slurry.badDry');
+    const bad = (value: number | null) => value !== null && (value <= 1 || (dry !== null && value >= dry));
+    if (!bad(sg) && !bad(target)) return '';
+    return dry !== null
+      ? translate('recipe.slurry.badSg', { dry: upTo(dry, 2) })
+      : translate('recipe.slurry.badSgWater');
   });
 
   /** The target as an SG the recipe can keep: above water's, under the dry materials' and the bounds of sgTarget. */
   protected readonly targetSg = computed(() => {
     const { target, dry } = this.numbers();
     const { min, max } = slurry.SG_TARGET_RANGE;
-    if (target === null || !(dry > 1) || target <= min || target >= dry || target > max) return null;
+    if (target === null || target <= min || target > max) return null;
+    if (dry !== null && (!(dry > 1) || target >= dry)) return null;
     return Math.round(target * 1000) / 1000;
   });
 
@@ -290,8 +330,10 @@ export class SlurryCalculator {
     this.language();
     const { litres, sg, target, dry, batchKg } = this.numbers();
     const lines: string[] = [];
+    let wantsDry = false;
     if (litres !== null && sg !== null) {
-      const contents = slurry.slurryContents(litres, sg, dry);
+      const contents = dry !== null ? slurry.slurryContents(litres, sg, dry) : null;
+      wantsDry ||= dry === null;
       if (contents) {
         lines.push(
           translate('recipe.slurry.contents', {
@@ -317,7 +359,9 @@ export class SlurryCalculator {
         );
       }
     }
-    if (batchKg > 0 && target !== null) {
+    if (batchKg > 0 && target !== null && dry === null) wantsDry = true;
+    if (wantsDry) lines.push(translate('recipe.slurry.drySgNeeded'));
+    if (batchKg > 0 && target !== null && dry !== null) {
       const mix = slurry.waterForBatch(batchKg, target, dry);
       if (mix) {
         lines.push(

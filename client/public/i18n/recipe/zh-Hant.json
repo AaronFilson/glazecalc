@@ -751,7 +751,6 @@
       "pint": "您想要的品脫重，盎司"
     },
     "drySg": "乾原料的比重",
-    "drySgHelp": "多數釉約為 2.5；Glazy 用 2.6。",
     "batch": "新調一批的乾釉料，{unit}",
     "contents": "比重為 {sg} 時，桶裡有 {glaze} 乾釉料和 {water} 水。",
     "add": "要達到比重 {target}，請加 {water} 水。最後約為 {volume}。",

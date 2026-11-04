@@ -751,7 +751,6 @@
       "pint": "Miisaanka pint ee aad rabto, oz"
     },
     "drySg": "SG-da walxaha qalalan",
-    "drySgHelp": "Qiyaastii 2.5 inta badan glaze-yada; Glazy wuxuu isticmaalaa 2.6.",
     "batch": "Glaze qalalan oo batch cusub ah, {unit}",
     "contents": "SG {sg}, baaldigu wuxuu hayaa {glaze} glaze qalalan iyo {water} biyo.",
     "add": "Si loo gaaro SG {target}, ku dar {water} biyo. Wuxuu ku dhammaadaa qiyaastii {volume}.",
