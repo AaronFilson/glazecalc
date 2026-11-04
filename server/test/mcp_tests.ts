@@ -645,6 +645,10 @@ describe('MCP: the public tools', () => {
     const thin = await data('specific_gravity_water', { sg: 1.3, litres: 10, target: 1.45 });
     expect(thin.waterToAddLitres).to.be.below(0);
     expect(thin.note).to.match(/pour off/);
+    const same = await data('specific_gravity_water', { sg: 1.45, litres: 10, target: 1.45 });
+    expect(same.waterToAddLitres).to.equal(0);
+    expect(same.note).to.match(/already/);
+    expect((await call('specific_gravity_water', { sg: 1.4, gramsPer100ml: 140 })).isError).to.equal(true);
     expect((await call('specific_gravity_water', {})).isError).to.equal(true);
     expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
   });

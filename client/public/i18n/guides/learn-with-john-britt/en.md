@@ -5,7 +5,7 @@ lead: A companion to John Britt's free online Glaze Course on YouTube, unit by u
 
 ## About this companion {#about}
 
-John Britt is a potter and teacher who has made a free online Glaze Course: more than fifty videos on YouTube, from the unity formula to test tiles, clay and firing. **The videos are his.** They are free to watch on [his YouTube channel](https://www.youtube.com/@johnbrittpottery), in [the course's playlist](https://www.youtube.com/playlist?list=PL-Wllepy4jIbCxsXiQRG5GJzbKNUSUvPd). His website, [johnbrittpottery.com](http://johnbrittpottery.com/), has his books and glaze notes, including two books, first published by Lark Books and now published by Union Square & Co., part of Hachette Book Group: _The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_ and _The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_.
+John Britt is a potter and teacher who has made a free online Glaze Course: more than fifty videos on YouTube, from the unity formula to test tiles, clay and firing. **The videos are his.** They are free to watch on [his YouTube channel](https://www.youtube.com/@johnbrittpottery), in [the course's playlist](https://www.youtube.com/playlist?list=PL-Wllepy4jIbCxsXiQRG5GJzbKNUSUvPd). His website, [johnbrittpottery.com](http://johnbrittpottery.com/), has his books and glaze notes, including two books, now published by Union Square & Co., part of Hachette Book Group (both first came out under Lark imprints): _The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_ and _The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_.
 
 Glazecalc is not part of his course, and is not connected with him. This page only links to his videos, by the titles he gave them. It says nothing about what he says in them: watch them for that. What this page adds is what Glazecalc offers beside each unit: the sections of our guides that cover the same ground, and exercises to try with Glazecalc's calculator, or with an AI assistant connected to Glazecalc ([how to connect one](/assistants)).
 
@@ -82,6 +82,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 ### Read
 
+- [What a glaze is](/guides/glazing-basics#what-a-glaze-is): the three jobs oxides do.
 - [Frits and raw materials](/guides/glazing-basics#materials)
 - [Colorants and opacifiers](/guides/glazing-basics#color)
 
@@ -111,6 +112,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 - [Colorants and opacifiers](/guides/glazing-basics#color)
 - [Food safety](/guides/glazing-basics#food-safety): some colorants change how stable a glaze is.
+- [From recipe to unity formula](/guides/glazing-basics#unity-formula): additions on top of the 100.
 
 ### Try
 
@@ -124,7 +126,7 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 
 - Why can the same colorant give different colors in two base glazes?
 - What does "an addition on top of the 100" mean?
-- Why does a colorant change the unity formula a little?
+- In the colorants table, which colorant is also a flux, and what does a lot of it do?
 
 ## Unit 5: Blending and testing methods {#blending}
 
@@ -160,7 +162,7 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 ### Check
 
 - In a line blend, what changes from one tile to the next?
-- How many corners does a triaxial blend have, and what is in each corner?
+- How many glazes do you start from in a triaxial blend, and how are the tiles laid out?
 - Why do you write a code on every tile before it is fired?
 
 ## Unit 6: Test tiles and melt tests {#test-tiles-and-melt}
@@ -225,7 +227,7 @@ A record for each tile, to copy into a note:
 ### Check
 
 - 100 mL of a glaze weighs 145 g. What is its specific gravity?
-- Your glaze is too thin. Do you add water, or let it settle and pour water off?
+- Which dips a thicker coat in the same time: a glaze at SG 1.40 or at SG 1.50?
 - Why can two glazes at the same SG go on at different thicknesses?
 
 ## Unit 8: Where recipes come from, and substitutes {#recipes-and-substitutes}
@@ -283,7 +285,7 @@ A record for each tile, to copy into a note:
 
 ### Check
 
-- Which of these surfaces is a defect put to use?
+- Which defect do some potters want on purpose, and what is it called then?
 - Why is a surface made for sculpture not right for a mug?
 
 ## Unit 10: Raw materials and geology {#raw-materials}
@@ -300,6 +302,7 @@ A record for each tile, to copy into a note:
 ### Read
 
 - [Frits and raw materials](/guides/glazing-basics#materials)
+- [The main hazard: dust](/guides/safe-mixing#the-main-hazard) and [Respirators](/guides/safe-mixing#respirators)
 - [Materials that need most care](/guides/safe-mixing#materials)
 
 ### Try
@@ -317,7 +320,7 @@ A record for each tile, to copy into a note:
 These videos are about clay bodies and slips. Glazecalc works out glazes, not clay bodies, so there is little to calculate here. If you dig or mix clay yourself, read the warning first.
 
 > [!WARNING]
-> Digging, drying and sieving wild clay makes dust, and clay dust has silica in it. You do not know what else a wild clay holds. Read [The main hazard: dust](/guides/safe-mixing#the-main-hazard) and [Respirators](/guides/safe-mixing#respirators) first.
+> Digging, drying and sieving wild clay makes dust, and clay dust can have silica in it; how much depends on the clay. You do not know what else a wild clay holds. Read [The main hazard: dust](/guides/safe-mixing#the-main-hazard) and [Respirators](/guides/safe-mixing#respirators) first.
 
 ### Watch
 
@@ -346,7 +349,7 @@ These videos are about clay bodies and slips. Glazecalc works out glazes, not cl
 ## Unit 12: Firing {#firing}
 
 > [!WARNING]
-> A firing kiln gives off fumes, and a gas kiln or a reduction firing makes carbon monoxide. Vent the kiln and the room, and keep away from the hot kiln and its parts: they burn. Read [Venting the kiln](/guides/safe-mixing#kiln) first.
+> Every firing gives off fumes, and a kiln can make carbon monoxide. A gas kiln or a reduction firing makes more of it. Vent the kiln and the room, and keep away from the hot kiln and its parts: they burn. Read [Venting the kiln](/guides/safe-mixing#kiln) first.
 
 ### Watch
 
@@ -380,5 +383,5 @@ John Britt's course also has a video on a subject some potters come to for perso
 - [John Britt's Free Online Glaze Course, the playlist on YouTube](https://www.youtube.com/playlist?list=PL-Wllepy4jIbCxsXiQRG5GJzbKNUSUvPd)
 - [John Britt Pottery on YouTube](https://www.youtube.com/@johnbrittpottery)
 - [John Britt Pottery: johnbrittpottery.com](http://johnbrittpottery.com/)
-- John Britt, [_The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_](https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-high-fire-glazes/9781600592164), Union Square & Co. (first published by Lark Books)
-- John Britt, [_The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_](https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-mid-range-glazes/9781454707776/), Union Square & Co. (first published by Lark Books), 2014
+- John Britt, [_The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_](https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-high-fire-glazes/9781600592164), Union Square & Co. (first published by Lark Books, 2004)
+- John Britt, [_The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_](https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-mid-range-glazes/9781454707776/), Union Square & Co. (first published by Lark Ceramics), 2014

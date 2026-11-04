@@ -542,6 +542,16 @@ describe('MCP: the round 14 teaching fixes', () => {
       .filter((message: Json) => message.content.type === 'resource')
       .map((message: Json) => message.content.resource.uri as string);
 
+  it('a lesson whose warning names two safety sections attaches both and puts both first', async () => {
+    const got = await prompt('glaze_course_lesson', { unit: 'special-surfaces' });
+    const text: string = got.messages[0].content.text;
+    expect(text).to.include('safe-mixing#materials and safe-mixing#kiln');
+    expect(text).to.include('carbon monoxide').and.to.include('fitted respirator');
+    const uris = attachedUris(got);
+    expect(uris[1]).to.match(/\/safe-mixing\/materials$/);
+    expect(uris[2]).to.match(/\/safe-mixing\/kiln$/);
+  });
+
   it('the firing lesson is lab work and attaches the kiln section first', async () => {
     const got = await prompt('glaze_course_lesson', { unit: 'firing' });
     const text: string = got.messages[0].content.text;

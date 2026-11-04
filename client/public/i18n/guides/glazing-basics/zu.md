@@ -13,69 +13,69 @@ A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln,
 - **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
 - **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
 > One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
-## Ubumba, izembozo nokushisa okubili {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### Izinhlobo zobumba
+### Clay bodies
 
-**Umzimba wobumba** (clay body) wubumba imbiza eyenziwe ngalo. Kunezinhlobo ezintathu ezinkulu.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **I-earthenware**: umzimba wokushisa okuphansi, cishe i-cone 06–02, ohlala unezimbobo ezincane. Kaningi ubomvu noma umbala we-buff, futhi udinga i-glaze ukuze ubambe amanzi.
-- **I-stoneware**: umzimba wokushisa okuphakathi kuya kokuphezulu, cishe i-cone 5–10, oba yi-vitreous noma ucishe ube yiyo.
-- **I-porcelain**: umzimba omhlophe wokushisa okuphezulu ocebile nge-kaolin, kaningi okhanyisa ukukhanya.
+- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
 
-**I-vitreous** isho okufana nengilazi nokungenazo izimbobo ezincane; **i-vitrification** wumzimba uba njalo njengoba ushiswa. Ababumbi base-UK kaningi badweba umugqa ngezinga lokushisa esikhundleni salokho: i-stoneware ishiswa ngaphezu kuka-{{2192 °F; 1200 °C}}, i-earthenware ngaphansi kwalo. Ukushisa okuphakathi, i-cone 5–6, kuwela eduze ezinhlangothini zombili zalowo mugqa.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### Izembozo nokomisa
+### Coatings and drying
 
-**I-slip** wubumba oluxutshwe emanzini, olokuthela esikhunjeni, ukuhlanganisa noma ukuhlobisa. **I-engobe** yisembozo esifana ne-slip, kaningi esinombala, esinezinto eziningi ezingebona ubumba. **I-underglaze** yi-slip enombala noma umhlobiso we-oxide, ngokuvamile ombozwa nge-glaze ecacile.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-Izitsha ezingashisiwe zingama-**greenware** (imithombo ayivumelani ngokuthi leli gama lihlanganisa zonke izitsha ezingashisiwe noma ezomile kuphela). Njengoba zoma ziba **leather-hard** (lukhuni njengesikhumba), ziqinile kodwa zisamanzi kancane, isigaba sokuzicwecwa nokufaka izibambo; bese ziba **bone dry** (zomile nya), zingenawo amanzi akhululekile asele, zibuthaka kakhulu futhi zilungele ukushiswa.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### Ukushisa okubili
+### The two firings
 
-Ukushisa kokuqala, okuphansi, yi-**bisque** (UK: **biscuit**), ngokuvamile i-cone 08–04 (kaningi kakhulu 06–04), cishe {{1728–1945 °F; 942–1063 °C}}. Kushiya izitsha ziqinile kodwa zinezimbobo ezincane. I-Digitalfire, iwebhusayithi yolwazi nge-glaze, iphakamisa ngokuvamile izimbobo ezingaphezu kuka-15%, ukuze i-bisque idonse amanzi ku-glaze njengoba ifakwa. I-bisque ethambile (i-cone 08–06) inezimbobo eziningi; i-bisque eqinile (kaningi i-cone 04) inamandla kodwa yamukela i-glaze kancane.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: Ukuthi i-bisque iyiguqula kanjani indlela yokufaka i-glaze (Digitalfire)
-Label: Ukuthi i-bisque iyiguqula kanjani indlela yokufaka i-glaze
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| I-bisque                                               | Okwenzekayo                                                             |
-| ------------------------------------------------------ | ----------------------------------------------------------------------- |
-| Ishiswe kancane, imunca kakhulu                        | I-glaze ingena iwugqinsi kakhulu, bese iqhekeka futhi ihoxe (crawls)    |
-| Ishiswe ngokweqile, iminyene                           | Ukucwilisa nokomisa kuthatha isikhathi eside                            |
-| Ishiswe kakhulu, noma yagcinwa isikhathi eside phezulu | Igesi eningi ishe manje, ngakho amagwebu ambalwa adlula ku-glaze kamuva |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-I-Potclays, umhlinzeki wase-UK, ichaza ukushisa kwe-biscuit kuze kube cishe ku-{{1000 °C; 1832 °F}}, cishe i-cone 06. Uma sifunda le mithombo ndawonye, siphakamisa i-cone 06–04 ye-bisque yokuqala: {{1828–1945 °F; 998–1063 °C}} ngesivinini esiphakathi se-Orton.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-**Ukushisa kwe-glaze** (ababumbi baseBrithani bangathi ukushisa kwe-**glost**) kuncibilikisa i-glaze futhi, ku-stoneware, kuvuthisa nobumba. **Ukushisa kanye** (once-firing) kufaka i-glaze ezitsheni ezingashisiwe bese kuzishisa kanye kuphela. I-Digitalfire ibika isimo sokukhiqiza lapho izitsha ezifakwe i-glaze zingashisiwe zahoxa emaphethelweni azo kwaze kwaba ukushisa kwe-bisque kwakulungisa, ngakho qala ngokushisa okubili. [Ukushisa ku-kiln elula](/guides/firing) kunikeza amashejuli akho kokubili.
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
-## Ama-cone ne-heatwork {#cones}
+## Cones and heatwork {#cones lang=en}
 
-Ababumbi baqamba ukushisa nge-**cone**: iphiramidi encane yobumba olushisiwe egoba uma isithole inani elithile lokushisa. I-Orton, ewenzayo, ikubeka kanje: “Ama-cone awalinganisi izinga lokushisa lodwa. Alinganisa i-heatwork, umphumela ohlangene wesikhathi nezinga lokushisa.”
+Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
 
-**I-heatwork** yisizathu: i-glaze, ubumba ne-cone konke kusabela esikhathini okushisa ngaso kanye nokuthi kushisa kangakanani. Ukushisa okuhamba kancane kugoba i-cone ezingeni lokushisa eliphansi, okusheshayo ezingeni eliphezulu. Ishadi le-Orton libonisa i-cone 6 igoba ku-{{2165 °F; 1185 °C}} uma ukushisa kuphela kukhuphuka ngo-{{27 °F; 15 °C}} ngehora, ku-{{2232 °F; 1222 °C}} ngo-{{108 °F; 60 °C}} ngehora, naku-{{2269 °F; 1243 °C}} ngo-{{270 °F; 150 °C}} ngehora, isivinini silinganiswa ku-{{180 °F; 100 °C}} yokugcina. I-cone isiqedile uma isihloko sayo sesigobe ngo-90°, i-Orton ekubiza ngokuthi yindawo yehora lesi-5.
+**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
 
-Izinombolo zama-cone zisuka ku-022 kuya ku-42. U-zero ongaphambili ukhombisa uchungechunge olupholile, lapho inombolo enkulu ipholile khona: i-cone 06 ipholile kune-cone 04, ne-cone 01 ipholile kune-cone 1.
+Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
 
-Table: Amazinga okushisa: ama-cone e-Orton azimele ngo-{{108 °F; 60 °C}} ngehora
-Label: Amazinga okushisa
+Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
+Label: Firing ranges
 
-| Izinga               | Ama-cone |          °F |          °C | Okusetshenziselwa                 |
-| -------------------- | -------- | ----------: | ----------: | --------------------------------- |
-| Ukushisa okuphansi   | 06–04    | 1,828–1,945 |   998–1,063 | Ama-glaze e-earthenware; i-bisque |
-| Ukushisa okuphakathi | 5–6      | 2,167–2,232 | 1,186–1,222 | I-stoneware ne-porcelain          |
-| Ukushisa okuphezulu  | 9–10     | 2,300–2,345 | 1,260–1,285 | I-stoneware ne-porcelain          |
+| Range     | Cones |          °F |          °C | Used for                   |
+| --------- | ----- | ----------: | ----------: | -------------------------- |
+| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
+| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
+| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
 
 > [!NOTE]
-> Qamba futhi uhlele ukushisa kwakho nge-cone, futhi uthathe amazinga okushisa njengokulinganiselwa. **I-witness cone** eshalofini phakathi kwezimbiza, noma **i-cone pack** yama-cone amathathu (i-guide, i-firing ne-guard cone), ibonisa i-heatwork izimbiza zakho ezayithola ngempela.
+> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
 
-Amazinga okushisa ashicilelwe ayahlukahluka. I-Glazy inikeza ukushisa okuphezulu, i-cone 9–11, njengokucishe kube ngu-{{2336–2390 °F; 1280–1310 °C}}, okufana nekholamu esheshayo ye-Orton, futhi i-Digitalfire ibika ukuthi ama-kiln amaningi afinyelela i-cone 6 cishe ku-{{2200 °F; 1204 °C}}. Iseluleko sethu: sebenzisa izinombolo ze-Orton zesivinini esiphakathi, njengoba lo mhlahlandlela wenza, hlela nge-cone, bese uyekela i-witness cone inqume.
+Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
 
-Ngaphandle kweNyakatho Melika, abahlinzeki kaningi banikeza u-°C esikhundleni se-cone. U-Hermann Seger wathuthukisa i-cone yanamuhla, eyaqala ukusetshenziswa eBerlin ngo-1886, futhi i-UK ibinama-cone ayo e-Staffordshire; izinombolo zawo akufanele zicatshangwe ukuthi zifana nezama-Orton, futhi asitholanga thebula lokuziguqula. [Ukushisa ku-kiln elula](/guides/firing) kuchaza ama-cone ngokuningiliziwe.
+Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
 
 ## From recipe to unity formula {#unity-formula lang=en}
 
@@ -117,13 +117,13 @@ Label: Loss on ignition
 
 | Material                              | Typical LOI                                                                      |
 | ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
 | Lithium carbonate                     | About 60%                                                                        |
 | Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
 | Feldspars                             | Under 1%                                                                         |
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
 Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
@@ -135,7 +135,7 @@ A **Stull chart** is a map of glazes. It has two axes, both from the unity formu
 
 R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
 
 The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
@@ -147,7 +147,7 @@ The **crazed** region is where Stull's own tests crazed, on his clay. It does no
 
 A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
 
 ### The common raw materials
 
@@ -157,7 +157,7 @@ Label: Common glaze materials
 | Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
 | ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
 | Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
 | Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
 | Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
@@ -168,22 +168,22 @@ Label: Common glaze materials
 | Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
 | Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
 | Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
 
 > [!WARNING]
 > Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
 ### Regional names
 
-- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
 - **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
 - **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
+- **Whiting** is calcium carbonate, ground chalk or limestone.
 
 > [!NOTE]
 > Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
 ## Colorants and opacifiers {#color lang=en}
 
@@ -192,15 +192,15 @@ A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is
 Table: Common colorants, as a percent of the base
 Label: Common colorants
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
-| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
+| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
 
 Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
@@ -212,11 +212,11 @@ An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** gl
 
 Table: Opacifiers
 
-| Opacifier                                     | Usual amount              | Notes                                                                                                         |
-| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
-| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
-| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
+| Opacifier                           | Usual amount              | Notes                                                                                                              |
+| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
+| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
+| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
 
 ## Glaze fit and defects {#fit-and-defects lang=en}
 
@@ -268,213 +268,213 @@ The legal limits differ by country. The table shows those where you live, in the
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
 ### Testing
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
 > "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
-## I-specific gravity nokufaka {#application}
+## Specific gravity and application {#application lang=en}
 
-### I-specific gravity
+### Specific gravity
 
-Impuphu ye-glaze{{en: glaze}} exutshwe namanzi yi-**slurry**. **I-specific gravity** yayo (**i-SG**) yisisindo sayo uma siqhathaniswa nevolumu efanayo yamanzi, ane-SG engu-1.0: uma iphakeme, impuphu iningi ebhakedeni. Izincwadi ezindala zase-UK zithi **pint weight**. I-Glazy ithi u-1.4–1.5 “uyindawo enhle yokuqala kuma-glaze amaningi”. Ukuyilinganisa, kala ngqo u-100 mL we-slurry (i-Glazy iphakamisa isirinji) bese uhlukanisa ngo-100: u-145 g usho i-SG 1.45. Ama-hydrometer awathembeki kuma-glaze ajiyile, futhi amanzi ayahwamuka, ngakho hlola futhi ngaphambi kokufaka i-glaze.
+Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
 
-Ama-target ahlukahluka ngomthombo. I-Digitalfire ibeka ama-glaze okucwilisa ku-1.40–1.50 nama-glaze okuthengwa okubhulashwa ku-1.25–1.55, kanti i-Potclays inikeza u-1.71–1.81 wokubhulasha no-1.71 wokufafaza. Iseluleko sethu: cwilisa cishe ku-1.45 i-glaze ijiyile kancane, landela ilebula ye-glaze yokubhulasha, bese ubhala phansi okusebenzayo.
+Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
 
-**I-flocculant** (i-Epsom salts, uviniga noma i-calcium chloride) ijiyisa i-slurry kancane, iyenze ibe **thixotropic**: iyageleza uma igovuzwa futhi iyajiya uma ithule, ukuze “i-glaze imboze ngokulinganayo, ingaconsi”. **I-deflocculant** (i-sodium silicate noma i-Darvan) iyayihlambulula. [Indlela yokwenza i-glaze](/guides/making-a-glaze) ichaza ukuxuba nokulungisa.
+A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
 
-### Ukufaka i-glaze
+### Putting glaze on
 
-Qala ngokuhlanza uthuli namafutha ku-bisque ngesipontshi esimanzi kancane nje esikhundleni sokuyigeza, okuyimunca amanzi. Ungalushayi uthuli ngomoya ocindezelwe noma ulubhulashe lomile: lokho kufaka uthuli lwe-silica emoyeni ([Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing#cleaning)).
+Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
 
-- **Ukucwilisa** “ngokuvamile kunikeza ungqimba olunogqinsi olulinganayo” (Robin Hopper). Isikhathi sokucwilisa sinquma ugqinsi: i-Digitalfire iphawula ukuthi ama-glaze okuthengwa okucwilisa enziwa cishe ku-1.4 ukuze acwiliswe imizuzwana engu-5 naku-1.5 ukuze acwiliswe umzuzwana o-1.
-- I-glaze **yokuthela** kufanele ibe “mncane kancane kunalapho isetshenziselwa ukucwilisa”; lapho ukuthela kugqagqana khona, ungqimba luphindeka kabili futhi lungageleza.
-- Ama-glaze **okubhulasha** aqukethe i-gum efana ne-**CMC gum**, esiza i-glaze igeleze futhi inamathele, bese iyasha. Amaningi adinga izingqimba eziningana, kaningi ezimbili noma ezintathu; landela ilebula.
-- **Ukufafaza** kusebenzisa i-glaze encane kakhulu, efakwa “ngezingqimba eziningana ezincane, kancane kancane kwakhiwe ugqinsi”.
+- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
+- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
+- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
+- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
 
 > [!WARNING]
-> Fafaza kuphela endaweni yokufafaza enomoya ohlanzekile (spray booth), ugqoke i-respirator ekulingene kahle. Bheka [Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing).
+> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
 
-Ungqimba olugqinsi kakhulu lungahoxa, lube namabhamuza noma lugeleze. Imithetho yabahlinzeki isuka ogqinsini lwekhadi lesikweletu kuya kolwe-dime yase-US, ngokulinganisa kwethu cishe u-1 mm we-glaze eyomile; ama-test tile anogqinsi oluhlukahlukene kuyindlela ethembekile yokuhlola. **I-wax resist** onyaweni ixosha i-glaze, ukuze imbiza inganamatheli eshalofini, kanti **i-kiln wash**, isembozo esimelana nokushisa esivame ukwenziwa nge-kaolin ne-silica, ivikela amashalofu emaconsini.
+Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
 
-## I-oxidation ne-reduction {#atmosphere}
+## Oxidation and reduction {#atmosphere lang=en}
 
-Amagesi angaphakathi ku-kiln, **umoya** wayo (atmosphere), ashintsha ukuthi ama-glaze aphuma kanjani. **I-oxidation** isho i-oxygen eningi. “Ama-kiln kagesi afana ncamashi nokushisa kwe-oxidation,” kusho i-Digitalfire, futhi ama-glaze e-oxidation ngokuvamile akhanya kakhulu kunawe-reduction, ikakhulukazi emazingeni okushisa aphansi. Ku-oxidation, i-copper inikeza okuluhlaza ne-turquoise, kanti i-iron okunsundu, okunsundu ngokukhanyayo nokubomvu. I-kiln kagesi engaphumi kahle umoya egcwele izitsha ezikhipha amagesi ingaba phakathi nendawo kunalokho okuhlosiwe; ipayipi lomoya elixhunywe ngqo ku-kiln liyasiza.
+The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
 
-**I-reduction** inciphisa i-oxygen ngamabomu, ngokuvamile ku-kiln yegesi, yezinkuni noma ekhethekile. I-copper iba bomvu, kanti i-iron iba yi-flux enamandla kakhulu futhi inikeza **i-celadon** (okuluhlaza okwesibhakabhaka kuya kokuluhlaza okumpunga, kusukela ku-iron ecishe ibe ngu-½–2%) ne-**tenmoku** (temmoku: okunsundu okumnyama, i-iron ecishe ibe ngu-5–6%). I-Glazy ithi ama-celadon nama-copper red “ancike ku-reduction”. Nobumba buyashintsha: kokunye ukuqhathanisa kwe-Digitalfire, umzimba we-stoneware washa waba mpunga ku-reduction futhi waba phuzi kancane ku-oxidation. I-silicon carbide ku-glaze ingenza izindawo ezincane ze-reduction ngisho naku-kiln kagesi. Nge-reduction kusukela ku-cone 010 kuya ku-cone 3, i-Orton incoma ama-cone ayo angenayo i-iron.
+**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
 
 > [!NOTE]
-> Lindela ukuthi iresiphi ebhalelwe i-kiln yegesi ye-reduction iphume ngokuhlukile ku-kiln kagesi: i-celadon noma i-copper red encike ku-reduction ngeke ibukeke ngendlela efanayo ku-oxidation. Hlola ukuthi iresiphi yenzelwe muphi umoya, bese ubhala owakho, ne-cone, kumanothi eresiphi ku-Glazecalc.
+> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
 
-Yonke i-kiln, nezikagesi, ikhipha intuthu namagesi (fumes), ngakho yikhiphele umoya ngaphandle. [Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing) kuchaza ukuthi kanjani.
+Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
 
-## Uhlu lwamagama {#glossary}
+## Glossary {#glossary lang=en}
 
-Okokwengeza (additive)
-: Okokufaka umbala, i-opacifier noma okokumisa okwengezwa ngaphezu kuka-100 weresiphi.
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
 
-I-alumina (Al₂O₃)
-: Okusimamisayo okukhulu: kuvimba ukugeleza futhi kwengeza ubulukhuni. Kuvela ebumbeni nase-feldspar.
+Alumina (Al₂O₃)
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
-I-ball clay
-: Ubumba oluthambile olunensimbi (iron) eningi nezinto eziphilayo kune-kaolin.
+Ball clay
+: A plastic clay with more iron and organic matter than kaolin.
 
-Iresiphi ye-batch (batch recipe)
-: Okokwakha kwe-glaze ngesisindo, ngokuvamile kuhlangana kube ngu-100.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-I-bentonite
-: Ubumba oluyimpuphu kakhulu olwengezwa ngo-1–3% ukuvimba i-glaze ukuthi izike.
+Bentonite
+: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
 
-I-bisque (UK: biscuit)
-: Ukushisa kokuqala, okuphansi, ngokuvamile i-cone 08–04 (kaningi kakhulu 06–04), okushiya izitsha ziqinile kodwa zinezimbobo ezincane.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
-I-boron (B₂O₃)
-: Ngokusemthethweni iyakha ingilazi kodwa isetshenziswa njenge-flux; ibalulekile kusukela ku-cone 06 kuya ku-cone 6.
+Boron (B₂O₃)
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-I-CMC gum
-: I-gum ye-cellulose esiza i-glaze ibhulashwe futhi inamathele; iyasha.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-Okokufaka umbala ne-stain (colorant and stain)
-: I-oxide yensimbi noma i-carbonate enikeza i-glaze umbala; i-stain yisifaki-mbala esenziwe efektri, esizinzile.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-I-cone
-: Iphiramidi yobumba olushisiwe elinganisiwe egoba ku-heatwork ethile. I-witness cone ibonisa lokho izimbiza ezakuthola.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-Ukuhoxa (crawling)
-: I-glaze ihoxa ibe ngamaconsi lapho ishiswa, ishiye ubumba bungembozwe.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-I-crazing
-: Imifantu emincane ku-glaze encipha kakhulu kunomzimba wayo; i-crackle uma ifunwa.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-I-devitrification
-: Amakristalu akhula engilazini ekuqaleni kokuphola, lapho engafunwa khona.
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
-I-dunting
-: Imifantu embizeni ngenxa yengcindezi yokupholisa noma yokushisa, kaningi ku-quartz inversion, {{1063 °F; 573 °C}}.
+Dunting
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-I-earthenware
-: Umzimba wokushisa okuphansi (cishe i-cone 06–02) ohlala unezimbobo ezincane.
+Earthenware
+: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
 
-I-feldspar
-: Iminerali enikeza i-flux ye-alkali ne-alumina ne-silica: i-potash, i-soda noma i-nepheline syenite.
+Feldspar
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-I-flocculant ne-deflocculant
-: Okokwengeza okujiyisa i-slurry (i-Epsom salts, uviniga) noma okuyihlambululayo (i-sodium silicate, i-Darvan).
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-I-flux
-: I-oxide eyehlisa izinga lokushisa lokuncibilika kwe-silica.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-Iphephile ekudleni (food safe)
-: Emthethweni, ukukhipha umthofu (Pb) ne-cadmium okungaphansi kwemikhawulo ekuhlolweni nge-asidi. Akufani nokungabi namthofu.
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
 
-I-frit
-: Ingilazi eyenziwe efektri, encibilikisiwe, epholiswe ngokushesha futhi egayiwe, eyenza ama-oxide ancibilika emanzini noma anoshevu angancibiliki.
+Frit
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
 
-Okwakha ingilazi (glass former)
-: I-oxide eyakha ingilazi, ngokuvamile i-silica.
+Glass former
+: The oxide that builds the glass, usually silica.
 
-I-glaze
-: Ungqimba lwengilazi oluncibilika lapho kushiswa ukuze luvale futhi luhlobise imbiza.
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
 
-Ukushisa kwe-glaze (glaze firing; UK: glost firing)
-: Ukushisa okuncibilikisa i-glaze.
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
 
-Ukulingana kwe-glaze (glaze fit)
-: Indlela ukukhula kwe-glaze nokomzimba okufana ngayo; ukulingana okuhle kushiya i-glaze icindezelwe kancane.
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
 
-Okucwebezelayo, i-satin ne-matte (gloss, satin and matte)
-: Kuyakhanya futhi kushelelezi; ukukhanya okuthulile; akucwebezeli.
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
 
-I-greenware
-: Izitsha ezingashisiwe: i-leather-hard uma ziqinile kodwa zimanzi, i-bone dry uma kungasekho amanzi akhululekile.
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
 
-I-heatwork
-: Umphumela ohlangene wezinga lokushisa nesikhathi ku-kiln; lokho ama-cone akulinganisayo.
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
-I-kaolin (UK: china clay)
-: Ubumba olumhlophe olumsulwa olunikeza i-alumina ne-silica; igcina i-glaze ixubile emanzini. E-Australia: Eckalite.
+Kaolin (UK: china clay)
+: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
 
-I-kiln wash
-: Isembozo esimelana nokushisa esivikela amashalofu e-kiln emaconsini.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-Ukuvuza kwezinsimbi (leaching)
-: Izinsimbi ezincibilika ziphuma ku-glaze eshisiwe zingene ekudleni noma esiphuzweni.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-I-limit formula (target formula)
-: Amabanga avamile e-unity formula kuma-glaze azinzile ku-cone; umhlahlandlela, hhayi isiqinisekiso.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-I-line blend
-: Ukuhlola okushintsha into eyodwa phakathi kwamanani amabili. I-triaxial blend ishintsha ezintathu kugridi.
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-I-liner glaze
-: I-glaze ezinzile, ngokuvamile ecacile noma emhlophe, yezindawo ezithinta ukudla.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-I-LOI (loss on ignition)
-: Isisindo esilahleka lapho kushiswa njengamanzi, i-carbon dioxide, izinto eziphilayo noma i-sulfur.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-Ukushisa kanye (once-firing, single firing)
-: Ukufaka i-glaze ezitsheni ezingashisiwe nokuzishisa kanye kuphela.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-I-opacifier
-: Into, njenge-zircon, i-tin oxide noma i-titanium dioxide, eyenza i-glaze ingabonisi ngaphakathi.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-I-oxidation ne-reduction
-: Ukushisa nge-oxygen eningi (ama-kiln kagesi), noma nge-oxygen encishisiwe (ngokuvamile igesi noma izinkuni).
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-I-oxide
-: Inhlanganisela ye-element ne-oxygen; ukuhlaziywa kwama-oxide kuwabala ngephesenti lesisindo.
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-Izimbobo ezincane namabhamuza (pinholing and blistering)
-: Izimbobo ezincane, noma imigodi enemiphetho ebukhali, lapho igesi iphunyuke khona kokuncibilikile.
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-I-porcelain
-: Umzimba omhlophe, ocebile nge-kaolin, wokushisa okuphezulu, kaningi okhanyisa ukukhanya.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-R₂O ne-RO
-: Ama-flux e-alkali (Na₂O, K₂O, Li₂O) nama-flux e-alkaline earth (CaO, MgO, BaO, SrO, ne-ZnO).
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-I-shivering
-: I-glaze ixebuka emaphethelweni ngoba icindezelwe ngokweqile; iyingozi ezitsheni ezisetshenziswayo.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-I-silica (SiO₂)
-: Okwakha ingilazi; ibizwa nangokuthi i-flint noma i-quartz.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-Isilinganiso se-silica ne-alumina (silica to alumina ratio)
-: I-silica ihlukaniswe nge-alumina ku-unity formula: esiphezulu sivame ukuya ekucwebezeleni, esiphansi ku-matte.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-I-slip ne-engobe
-: Ubumba emanzini; i-engobe yisembozo esifana ne-slip esinezinto eziningi ezingebona ubumba.
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-I-specific gravity (SG)
-: Isisindo se-slurry uma siqhathaniswa nevolumu efanayo yamanzi. Izincwadi ezindala zase-UK: pint weight.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water.
 
-Okusimamisayo (stabilizer)
-: I-oxide, ikakhulu i-alumina, eqinisa okuncibilikile futhi yengeza ukuhlala isikhathi eside.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
-I-stoneware
-: Umzimba wokushisa okuphakathi kuya kokuphezulu (cishe i-cone 5–10) oba yi-vitreous noma ucishe ube yiyo.
+Stoneware
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-I-thixotropy
-: Ukugeleza uma kugovuzwa, ukujiya kube yi-gel ethambile uma kuthule.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
-I-underglaze
-: I-slip enombala noma umhlobiso we-oxide, ngokuvamile ngaphansi kwe-glaze ecacile.
+Underglaze
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-I-unity molecular formula (UMF, Seger formula)
-: Ama-oxide e-glaze njengezibalo zama-molecule, kulinganiswe ukuze ama-flux ahlangane abe ngu-1.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-I-vitrification
-: Umzimba uba njengengilazi futhi ungabi nazo izimbobo ezincane lapho ushiswa.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-I-wax resist
-: I-wax ependwa lapho i-glaze kungafanele iye khona, ngokuvamile onyaweni.
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
 
-I-whiting
-: I-calcium carbonate, i-flux enkulu ye-calcium; ilahlekelwa ngaphezu kuka-40% wesisindo sayo lapho ishiswa. NgesiJalimane: Kreide.
+Whiting
+: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
 
 ## Sources {#sources lang=en}
 
@@ -512,5 +512,21 @@ I-whiting
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

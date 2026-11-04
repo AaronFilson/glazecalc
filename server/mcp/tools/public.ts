@@ -488,7 +488,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Specific gravity and water',
       description:
-        "Works out a glaze slurry's specific gravity (SG) from the grams 100 mL of it weighs (or takes the SG), then, for a bucket of it and a target SG, the water to add, or to pour off after the glaze settles, as the recipe page's Specific gravity and water does. Also the dry glaze and water the bucket holds (Brongniart's formula, with the dry materials' SG taken as 2.5 unless given). Water is 1; many dipping glazes are mixed near 1.4 to 1.5, but the right SG is the one that gives the thickness you tested.",
+        "Works out a glaze slurry's specific gravity (SG) from the grams 100 mL of it weighs (or takes the SG), then, for a bucket of it and a target SG, the water to add, or to pour off after the glaze settles, as the recipe page's Specific gravity and water does. Also the dry glaze and water the bucket holds (Brongniart's formula, with the dry materials' SG taken as 2.5 unless given; many guides use 2.6, which changes the dry weight a little but not the water to add). Water is 1; many dipping glazes are mixed near 1.4 to 1.5, but the right SG is the one that gives the thickness you tested.",
       inputSchema: z.object({
         gramsPer100ml: z.number().gt(100).max(250).optional().describe('What 100 mL of the slurry weighs, in grams.'),
         sg: z.number().gt(1).max(2.5).optional().describe('The SG, if already measured. Give this or gramsPer100ml.'),
@@ -500,15 +500,19 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     },
     async ({ gramsPer100ml, sg, litres, target, drySg }) =>
       guarded(() => {
+        if (sg !== undefined && gramsPer100ml !== undefined)
+          throw new ToolProblem('Give the SG or the grams 100 mL of the slurry weighs, not both.');
         const measured = sg ?? (gramsPer100ml !== undefined ? gramsPer100ml / 100 : undefined);
         if (measured === undefined) throw new ToolProblem('Give the SG, or the grams 100 mL of the slurry weighs.');
         const dry = drySg ?? recipe.DRY_SG;
         if (!(measured < dry)) throw new ToolProblem(`An SG of ${measured} is not under the dry materials' ${dry}.`);
-        const contents = litres !== undefined ? recipe.slurryContents(litres, measured, dry) : null;
-        const water =
-          litres !== undefined && target !== undefined ? recipe.waterToReach(litres, measured, target, dry) : null;
         if (target !== undefined && !(target < dry))
           throw new ToolProblem(`A target SG of ${target} is not under the dry materials' ${dry}.`);
+        const contents = litres !== undefined ? recipe.slurryContents(litres, measured, dry) : null;
+        const raw =
+          litres !== undefined && target !== undefined ? recipe.waterToReach(litres, measured, target, dry) : null;
+        // Rounded first, so a tiny difference reads as none and never as -0.
+        const water = raw === null ? null : rounded(raw, 2) || 0;
         return ok({
           sg: rounded(measured, 3),
           drySg: dry,
@@ -518,11 +522,13 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           }),
           ...(water !== null && {
             target,
-            waterToAddLitres: rounded(water, 2),
+            waterToAddLitres: water,
             note:
-              water < 0
-                ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
-                : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
+              water === 0
+                ? 'The glaze is already at that SG.'
+                : water < 0
+                  ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
+                  : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
           }),
           ...(target !== undefined && litres === undefined && { note: 'Give litres for the water to add.' })
         });

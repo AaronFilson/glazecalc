@@ -724,7 +724,7 @@
     "keyBright": "Dotted line: where Stull's glazes were brightest.",
     "keyLimits": "Dashed lines and shading: the silica and alumina ranges of {name}.",
     "keyCrazed": "Hatching: where they crazed.",
-    "note": "A guide, not a prediction. R. T. Stull (Transactions of the American Ceramic Society, 1912) fired at cone 11 with the fluxes fixed at 0.3 K₂O and 0.7 CaO; other fluxes and firings move the regions, and an underfired matte can plot as bright. The regions are as Glazy draws them."
+    "note": "A guide, not a prediction. R. T. Stull (Transactions of the American Ceramic Society, 1912) fired at about cone 11 with the fluxes fixed at 0.3 K₂O and 0.7 CaO; other fluxes and firings move the regions, and a glaze that is matte only because it was underfired can land in the bright region. The regions are as Glazy draws them."
   },
   "slurry": {
     "heading": "Specific gravity and water",

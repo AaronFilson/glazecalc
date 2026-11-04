@@ -227,7 +227,7 @@ A glaze can look quite different on another clay or in another kiln: Clay Art Ce
 - one change at a time
 - a single dip and a double dip, to see the glaze thin and thick
 - every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil.
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
 We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 

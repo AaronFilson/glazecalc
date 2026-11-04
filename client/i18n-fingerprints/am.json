@@ -1127,7 +1127,17 @@
     "equivalents.noneClose": "5u7ppd",
     "equivalents.loading": "clu6vf",
     "equivalents.failed": "198tc18",
-    "equivalents.choosePrompt": "rwkfak"
+    "equivalents.choosePrompt": "rwkfak",
+    "stull.title": "11gywl7",
+    "stull.regions.unfused": "1qt6vmp",
+    "stull.regions.matte": "to0rbe",
+    "stull.regions.semi-matte": "jzeqqr",
+    "stull.regions.bright": "a9y1z9",
+    "stull.regions.underfired": "99qqvj",
+    "stull.regions.crazed": "1otcxhm",
+    "stull.keyBright": "1armci3",
+    "stull.keyCrazed": "18nf19t",
+    "stull.note": "izxjgn"
   },
   "library": {
     "common.formulaHelp": "khhj0y",
@@ -2848,12 +2858,7 @@
     "sources": "p194u5"
   },
   "guides/glazing-basics": {
-    "": "x429or",
-    "clay-and-firings": "1msjhud",
-    "cones": "1fzglep",
-    "application": "ylx2ai",
-    "atmosphere": "k0ltqo",
-    "glossary": "ywcc4k"
+    "": "x429or"
   },
   "guides/home-safety": {
     "": "q4eeld",

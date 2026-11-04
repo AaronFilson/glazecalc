@@ -13,69 +13,69 @@ A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln,
 - **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
 - **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
 > One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
-## Glina, premazi in dve žganji {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### Glinene mase
+### Clay bodies
 
-**Glinena masa**{{en: clay body}} je glina, iz katere je izdelek narejen. Poznamo tri glavne vrste.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **Lončenina**{{en: earthenware}}: masa za nizkotemperaturno žganje, približno stožec{{en: cone}} 06–02, ki ostane porozna. Pogosto je rdeča ali rumenkasta in potrebuje glazuro{{en: glaze}}, da drži vodo.
-- **Kamenina**{{en: stoneware}}: masa za srednje- do visokotemperaturno žganje, približno stožec 5–10, ki zastekli ali skoraj zastekli.
-- **Porcelan**: bela masa za visokotemperaturno žganje, bogata s kaolinom, pogosto prosojna.
+- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
 
-**Steklast** pomeni podoben steklu in neporozen; **vitrifikacija** (posteklitev) je proces, v katerem masa med žganjem postane taka. Britanski lončarji mejo pogosto raje postavijo po temperaturi: kamenina se žge nad {{2192 °F; 1200 °C}}, lončenina pod to temperaturo. Srednjetemperaturno žganje, stožec 5–6, leži tik ob tej meji, na obeh straneh.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### Premazi in sušenje
+### Coatings and drying
 
-**Glineni preliv** je glina, razmešana v vodi, za ulivanje, spajanje ali okraševanje. **Engoba** je premaz, podoben glinenemu prelivu, pogosto obarvan, z več neglinenih surovin. **Podglazurna barva** je obarvan glineni preliv ali okras z oksidi, ki ga običajno prekrije prozorna glazura.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-Nežgan izdelek je **surovec**{{en: greenware}} (viri se ne strinjajo, ali izraz zajema vse nežgane izdelke ali le suhe). Med sušenjem postane **usnjeno trd**, čvrst, a še rahlo vlažen, kar je čas za struženje in pritrjevanje ročajev; nato **popolnoma suh**, brez proste vode, zelo krhek in pripravljen za žganje.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### Dve žganji
+### The two firings
 
-Prvo, nižje žganje je **biskvitno žganje**{{en: bisque}} (v Združenem kraljestvu **biscuit**), običajno do stožca 08–04 (najpogosteje 06–04), približno {{1728–1945 °F; 942–1063 °C}}. Po njem so izdelki trdni, a porozni. Digitalfire, spletni priročnik o glazurah, priporoča poroznost na splošno več kot 15 %, da biskvit med nanašanjem glazure iz nje vleče vodo. Nizko biskvitno žgan izdelek (stožec 08–06) je bolj porozen; visoko biskvitno žgan (pogosto stožec 04) je trdnejši, a glazuro sprejema slabše.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: Kako biskvitno žganje vpliva na glaziranje (Digitalfire)
-Label: Kako biskvitno žganje vpliva na glaziranje
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| Biskvit                                                              | Kaj se zgodi                                                                     |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Premalo žgan, zelo vpojen                                            | Glazura se nanese predebelo, nato razpoka in se skrči{{en: crawling}}            |
-| Preveč žgan, gost                                                    | Namakanje in sušenje trajata dlje                                                |
-| Žgan pri višji temperaturi ali dlje zadržan pri najvišji temperaturi | Več plinov izgori že zdaj, zato jih pozneje manj uhaja skozi glazuro v mehurčkih |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-Potclays, britanski dobavitelj, opisuje biskvitno žganje do približno {{1000 °C; 1832 °F}}, kar je približno stožec 06. Ob upoštevanju vseh teh virov za prvo biskvitno žganje predlagamo stožec 06–04: {{1828–1945 °F; 998–1063 °C}} pri Ortonovi srednji hitrosti segrevanja.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-**Glazurno žganje**{{en: glaze firing}} (britanski lončarji mu lahko rečejo **glost** firing) stali glazuro, pri kamenini pa glina pri njem tudi dovolj zastekli. Pri **enkratnem žganju**{{en: once-firing}} se glazirajo nežgani izdelki, ki se nato žgejo samo enkrat. Digitalfire poroča o primeru iz proizvodnje, ko se je glazura na glaziranih nežganih izdelkih na robovih krčila, dokler težave ni odpravilo biskvitno žganje; zato začnite z dvema žganjema. Programe žganja za obe podaja vodnik [Žganje v preprosti peči](/guides/firing).
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
-## Stožci in toplotno delo {#cones}
+## Cones and heatwork {#cones lang=en}
 
-Lončarji žganje poimenujejo po **stožcu**{{en: cone}}: vitki keramični piramidi, ki se upogne, ko prejme določeno količino toplote. Orton, ki jih izdeluje, to pove takole: »Stožci ne merijo samo temperature. Merijo toplotno delo, skupni učinek časa in temperature.«
+Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
 
-Razlog je **toplotno delo**{{en: heatwork}}: glazura{{en: glaze}}, glina in stožec se odzivajo na to, kako dolgo so vroči, in ne le na to, kako vroči so. Pri počasnem žganju se stožec upogne pri nižji temperaturi, pri hitrem pri višji. Po Ortonovi preglednici stožcev se stožec 6 upogne pri {{2165 °F; 1185 °C}}, kadar se temperatura ob koncu žganja dviga za {{27 °F; 15 °C}} na uro, pri {{2232 °F; 1222 °C}} pri {{108 °F; 60 °C}} na uro in pri {{2269 °F; 1243 °C}} pri {{270 °F; 150 °C}} na uro, pri čemer se hitrost meri v zadnjih {{180 °F; 100 °C}}. Stožec je dosežen, ko se njegova konica upogne za 90°, kar Orton imenuje položaj ob 5.
+**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
 
-Številke stožcev segajo od 022 do 42. Ničla na začetku označuje hladnejšo vrsto, v kateri večja številka pomeni nižjo temperaturo: stožec 06 je hladnejši od stožca 04, stožec 01 pa hladnejši od stožca 1.
+Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
 
-Table: Temperaturna območja žganja: Ortonovi samostoječi stožci pri {{108 °F; 60 °C}} na uro
-Label: Temperaturna območja žganja
+Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
+Label: Firing ranges
 
-| Žganje              | Stožci |        °F |        °C | Uporaba                                |
-| ------------------- | ------ | --------: | --------: | -------------------------------------- |
-| Nizkotemperaturno   | 06–04  | 1828–1945 |  998–1063 | Glazure za lončenino; biskvitno žganje |
-| Srednjetemperaturno | 5–6    | 2167–2232 | 1186–1222 | Kamenina in porcelan                   |
-| Visokotemperaturno  | 9–10   | 2300–2345 | 1260–1285 | Kamenina in porcelan                   |
+| Range     | Cones |          °F |          °C | Used for                   |
+| --------- | ----- | ----------: | ----------: | -------------------------- |
+| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
+| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
+| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
 
 > [!NOTE]
-> Žganja poimenujte in programirajte po stožcih, temperature pa jemljite kot približne. **Kontrolni stožec**{{en: witness cone}} na šamotni plošči med izdelki ali **niz treh stožcev**{{en: cone pack}} (vodilni stožec za eno številko hladnejši, ciljni ter varovalni stožec za eno številko vročejši) pokaže, koliko toplotnega dela so izdelki dejansko prejeli.
+> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
 
-Objavljene temperature se razlikujejo. Glazy za visokotemperaturno žganje, stožec 9–11, navaja približno {{2336–2390 °F; 1280–1310 °C}}, kar se ujema z Ortonovim stolpcem za hitro segrevanje, Digitalfire pa poroča, da večina peči doseže stožec 6 pri približno {{2200 °F; 1204 °C}}. Naš nasvet: uporabljajte Ortonove vrednosti za srednjo hitrost segrevanja, kot jih uporablja ta vodnik, programirajte po stožcih in naj odloči kontrolni stožec.
+Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
 
-Zunaj Severne Amerike dobavitelji pogosto navajajo °C namesto stožca. Sodobni stožec je razvil Hermann Seger; prvič so ga uporabili v Berlinu leta 1886, Združeno kraljestvo pa je imelo svoje stožce Staffordshire. Ne bi smeli domnevati, da se številke teh stožcev ujemajo z Ortonovimi; preglednice za pretvorbo nismo našli. Stožce podrobneje opisuje vodnik [Žganje v preprosti peči](/guides/firing).
+Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
 
 ## From recipe to unity formula {#unity-formula lang=en}
 
@@ -117,13 +117,13 @@ Label: Loss on ignition
 
 | Material                              | Typical LOI                                                                      |
 | ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
 | Lithium carbonate                     | About 60%                                                                        |
 | Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
 | Feldspars                             | Under 1%                                                                         |
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
 Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
@@ -135,7 +135,7 @@ A **Stull chart** is a map of glazes. It has two axes, both from the unity formu
 
 R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
 
 The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
@@ -147,7 +147,7 @@ The **crazed** region is where Stull's own tests crazed, on his clay. It does no
 
 A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
 
 ### The common raw materials
 
@@ -157,7 +157,7 @@ Label: Common glaze materials
 | Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
 | ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
 | Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
 | Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
 | Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
@@ -168,22 +168,22 @@ Label: Common glaze materials
 | Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
 | Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
 | Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
 
 > [!WARNING]
 > Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
 ### Regional names
 
-- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
 - **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
 - **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
+- **Whiting** is calcium carbonate, ground chalk or limestone.
 
 > [!NOTE]
 > Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
 ## Colorants and opacifiers {#color lang=en}
 
@@ -192,15 +192,15 @@ A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is
 Table: Common colorants, as a percent of the base
 Label: Common colorants
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
-| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
+| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
 
 Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
@@ -212,11 +212,11 @@ An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** gl
 
 Table: Opacifiers
 
-| Opacifier                                     | Usual amount              | Notes                                                                                                         |
-| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
-| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
-| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
+| Opacifier                           | Usual amount              | Notes                                                                                                              |
+| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
+| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
+| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
 
 ## Glaze fit and defects {#fit-and-defects lang=en}
 
@@ -268,213 +268,213 @@ The legal limits differ by country. The table shows those where you live, in the
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
 ### Testing
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
 > "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
-## Relativna gostota in nanašanje {#application}
+## Specific gravity and application {#application lang=en}
 
-### Relativna gostota
+### Specific gravity
 
-Glazurni prah, zmešan z vodo, je **glazurna suspenzija**{{en: slurry}}. Njena **relativna gostota**{{en: specific gravity}} (v angleških virih **SG**) je njena masa v primerjavi z maso enake prostornine vode, ki ima relativno gostoto 1,0: višja kot je, več prahu je v vedru. Starejše britanske knjige namesto tega navajajo **maso pinte** (pint weight). Glazy pravi, da je 1,4–1,5 »dobro izhodišče za večino glazur«. Za meritev stehtajte natanko 100 mL suspenzije (Glazy predlaga brizgo) in delite s 100: 145 g pomeni relativno gostoto 1,45. Areometri so v zgoščenih glazurah nezanesljivi, voda pa izhlapeva, zato gostoto pred glaziranjem ponovno preverite.
+Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
 
-Priporočene vrednosti se od vira do vira razlikujejo. Digitalfire za glazure za namakanje navaja 1,40–1,50, za komercialne glazure za nanos s čopičem pa 1,25–1,55, Potclays pa navaja 1,71–1,81 za nanašanje s čopičem in 1,71 za brizganje. Naš nasvet: namakajte pri približno 1,45, z rahlo zgoščeno glazuro, pri glazuri za nanos s čopičem upoštevajte navodila na etiketi in si zapišite, kar se obnese.
+Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
 
-**Flokulant**{{en: flocculant}} (grenka sol, kis ali kalcijev klorid) suspenzijo rahlo zgosti in jo naredi **tiksotropno**{{en: thixotropic}}: ko jo mešate, teče, ko miruje, se zgosti, kar da »enakomeren nanos glazure brez kapljanja«. **Deflokulant**{{en: deflocculant}} (elektrolit, na primer natrijev silikat ali Darvan) jo razredči. Mešanje in prilagajanje opisuje vodnik [Kako pripraviti glazuro](/guides/making-a-glaze).
+A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
 
-### Nanašanje glazure
+### Putting glaze on
 
-Z biskvita najprej očistite prah in maščobo s komaj vlažno gobo, namesto da bi ga prali, saj se pri tem prepoji z vodo. Prahu ne odpihujte s stisnjenim zrakom in ga ne krtačite na suho: tako pride kremenov prah v zrak ([Varno mešanje in prezračevanje](/guides/safe-mixing#cleaning)).
+Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
 
-- **Namakanje** »na splošno da enakomerno debel nanos« (Robin Hopper). Debelino določa čas namakanja: Digitalfire navaja, da so komercialne glazure za namakanje pripravljene z relativno gostoto približno 1,4 za 5-sekundno namakanje in 1,5 za 1-sekundno namakanje.
-- Glazura za **polivanje** naj bo »nekoliko redkejša kot za namakanje«; kjer se polivi prekrivajo, je plast dvojna in lahko steče.
-- Glazure za **nanašanje s čopičem** vsebujejo vezivo, na primer **CMC** (karboksimetilcelulozo), ki pomaga, da glazura teče in se prime, nato pa izgori. Večina potrebuje več plasti, pogosto dve ali tri; upoštevajte navodila na etiketi.
-- Za **brizganje** se uporablja precej redkejša glazura, nanesena v »več tankih plasteh, s katerimi se debelina postopoma povečuje«.
+- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
+- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
+- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
+- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
 
 > [!WARNING]
-> Brizgajte samo v prezračevani komori za glaziranje in nosite pravilno prilegajočo se zaščitno dihalno masko. Glejte vodnik [Varno mešanje in prezračevanje](/guides/safe-mixing).
+> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
 
-Predebela plast se lahko skrči, naredi mehurje ali steče. Okvirna pravila dobaviteljev segajo od debeline kreditne kartice do debeline ameriškega desetcentnega kovanca, po naši oceni približno 1 mm suhe glazure; zanesljivo preverjanje so testne ploščice{{en: test tiles}} z nekaj različnimi debelinami nanosa. **Zaščitni vosek**{{en: wax resist}} na dnu odbija glazuro, tako da se izdelek ne more prilepiti na šamotno ploščo, **premaz za šamotne plošče**, ognjeodporen premaz, pogosto iz kaolina in kremena, pa ščiti plošče pred kapljami.
+Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
 
-## Oksidacija in redukcija {#atmosphere}
+## Oxidation and reduction {#atmosphere lang=en}
 
-Plini v peči, njena **atmosfera**, vplivajo na to, kakšne so glazure{{en: glazes}} po žganju. **Oksidacija**{{en: oxidation}} pomeni veliko kisika. »Električne peči so sinonim za oksidacijsko žganje,« pravi Digitalfire, in glazure, žgane v oksidaciji, so navadno živahnejših barv od tistih, žganih v redukciji, posebej pri nižjih temperaturah. V oksidaciji da baker zelene in turkizne odtenke, železo pa rjave, svetlo rjave in rdeče. Slabo prezračevana električna peč, polna izdelkov, ki oddajajo pline, lahko žge bolj nevtralno, kot je predvideno; pomaga odzračevanje, priključeno neposredno na peč.
+The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
 
-**Redukcija**{{en: reduction}} namerno omeji dovod kisika, običajno v plinski peči, peči na drva ali posebni peči. Baker se obarva rdeče, železo pa postane močnejše talilo{{en: flux}} in da **celadon** (modrozelen do sivozelen, z približno ½–2 % železa) in **tenmoku** (temmoku: rjavočrn, s približno 5–6 % železa). Glazy pravi, da celadoni in bakreno rdeče glazure »potrebujejo redukcijo«. Spremeni se tudi glina: v eni od primerjav, ki jih objavlja Digitalfire, je bila kamenina{{en: stoneware}} po redukcijskem žganju siva, po oksidacijskem pa rumenkasta. Silicijev karbid v glazuri lahko tudi v električni peči povzroči majhna območja redukcije. Za redukcijo od stožca{{en: cone}} 010 do stožca 3 Orton priporoča svoje stožce brez železa.
+**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
 
 > [!NOTE]
-> Računajte s tem, da bo recept, napisan za redukcijsko žganje v plinski peči, v električni peči dal drugačen rezultat: celadon ali bakreno rdeča glazura, ki potrebuje redukcijo, v oksidaciji ne bo videti enako. Preverite, za katero atmosfero je bil recept narejen, in svojo atmosfero skupaj s stožcem zapišite v opombe recepta v aplikaciji Glazecalc.
+> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
 
-Vsaka peč, tudi električna, oddaja pline in hlape, zato jo prezračujte. Kako, razloži vodnik [Varno mešanje in prezračevanje](/guides/safe-mixing).
+Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
 
-## Slovarček {#glossary}
+## Glossary {#glossary lang=en}
+
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
+
+Alumina (Al₂O₃)
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
 Ball clay
-: Plastična glina z več železa in organskih snovi kot kaolin.
+: A plastic clay with more iron and organic matter than kaolin.
 
-Barvilo in keramični pigment (colorant and stain)
-: Kovinski oksid ali karbonat, ki obarva glazuro; keramični pigment je barvilo, izdelano v tovarni, bolj stabilno.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-Bentonit (bentonite)
-: Zelo fina glina, dodana v količini 1–3 %, da se glazura ne poseda.
+Bentonite
+: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
 
-Biskvitno žganje, biskvit (bisque; v Združenem kraljestvu biscuit)
-: Prvo, nižje žganje, običajno do stožca 08–04 (najpogosteje 06–04); po njem so izdelki trdni, a porozni.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
-Bor, B₂O₃ (boron)
-: Formalno tvorec stekla, a se uporablja kot talilo; nujen od stožca 06 do stožca 6.
+Boron (B₂O₃)
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-Ciljna formula (limit formula, target formula)
-: Tipični razponi Segerjeve formule za stabilne glazure pri določenem stožcu; vodilo, ne jamstvo.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-CMC, karboksimetilceluloza (CMC gum)
-: Celulozno vezivo, s katerim se glazura laže nanaša s čopičem in bolje prime; pri žganju izgori.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-Devitrifikacija (devitrification)
-: Kristali, ki zgodaj med ohlajanjem zrastejo iz stekla tam, kjer niso zaželeni.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-Dodatek (additive)
-: Barvilo, sredstvo za motnost ali sredstvo proti posedanju, dodano poleg 100 delov recepta.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-Enkratno žganje (once-firing, single firing)
-: Glaziranje nežganih izdelkov, ki se nato žgejo samo enkrat.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-Flokulant in deflokulant (flocculant and deflocculant)
-: Dodatki, ki suspenzijo zgostijo (grenka sol, kis) ali razredčijo (natrijev silikat, Darvan).
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
-Frita (frit)
-: Steklo, izdelano v tovarni, staljeno, hitro ohlajeno in zmleto, ki naredi topne ali strupene okside netopne.
+Dunting
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-Glazura (glaze)
-: Plast stekla, ki se med žganjem stali ter izdelek zapre in okrasi.
+Earthenware
+: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
 
-Glazurno žganje (glaze firing; v Združenem kraljestvu glost firing)
-: Žganje, pri katerem se glazura stali.
+Feldspar
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-Glinenec (feldspar)
-: Mineral, ki daje alkalijsko talilo skupaj z glinico in kremenico: kalijev ali natrijev glinenec ali nefelin sienit.
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-Glineni preliv in engoba (slip and engobe)
-: Glina v vodi; engoba je premaz, podoben glinenemu prelivu, z več neglinenih surovin.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-Glinica, Al₂O₃ (alumina)
-: Glavni stabilizator: preprečuje odtekanje in doda trdoto. Prihaja iz glin in glinencev.
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
 
-Izguba pri žarenju, LOI (loss on ignition)
-: Masa, izgubljena med žganjem, ko izhajajo voda, ogljikov dioksid, organske snovi ali žveplo.
+Frit
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
 
-Kamenina (stoneware)
-: Masa za srednje- do visokotemperaturno žganje (približno stožec 5–10), ki zastekli ali skoraj zastekli.
+Glass former
+: The oxide that builds the glass, usually silica.
 
-Kaolin (v Združenem kraljestvu China clay)
-: Čista bela glina, ki daje glinico in kremenico; pomaga, da glazura ostane v suspenziji. V Avstraliji: Eckalite.
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
 
-Krčenje glazure (crawling)
-: Glazura se med žganjem skrči v otočke in pusti golo glino.
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
 
-Kreda (whiting)
-: Kalcijev karbonat, glavno kalcijevo talilo; med žganjem izgubi več kot 40 % svoje mase. V nemščini: Kreide.
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
 
-Kremenica, SiO₂ (silica)
-: Tvorec stekla; kot surovina se imenuje kremen ali kremenjak.
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
 
-Lasaste razpoke (crazing)
-: Drobne razpoke v glazuri, ki se skrči bolj kot črepinja; kadar so zaželene, krakle.
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
 
-Lončenina (earthenware)
-: Masa za nizkotemperaturno žganje (približno stožec 06–02), ki ostane porozna.
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
-Luknjice in mehurji (pinholing and blistering)
-: Drobne luknjice ali kraterji z ostrimi robovi, kjer je plin ušel skozi talino.
+Kaolin (UK: china clay)
+: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
 
-Luščenje glazure (shivering)
-: Glazura se lušči z robov, ker je pod preveliko tlačno napetostjo; nevarnost na uporabni keramiki.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-Notranja glazura (liner glaze)
-: Stabilna, običajno prozorna ali bela glazura za površine, ki so v stiku s hrano.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-Oksid (oxide)
-: Spojina elementa s kisikom; oksidna analiza jih navaja v masnih odstotkih.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-Oksidacija in redukcija (oxidation and reduction)
-: Žganje z veliko kisika (električne peči) ali z omejenim dovodom kisika (običajno na plin ali drva).
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-Podglazurna barva (underglaze)
-: Obarvan glineni preliv ali okras z oksidi, običajno pod prozorno glazuro.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-Porcelan (porcelain)
-: Bela masa za visokotemperaturno žganje, bogata s kaolinom, pogosto prosojna.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-Premaz za šamotne plošče (kiln wash)
-: Ognjeodporen premaz, ki ščiti šamotne plošče pred kapljami.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-Primerno za stik z živili (food safe)
-: Po zakonu: v kislinskem preskusu sprošča manj svinca in kadmija, kot dovoljujejo mejne vrednosti. Ni isto kot brez svinca.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-R₂O in RO
-: Alkalijska talila (Na₂O, K₂O, Li₂O) in zemeljskoalkalijska talila (CaO, MgO, BaO, SrO, z ZnO).
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-Razmerje kremenica : glinica (silica to alumina ratio)
-: Kremenica, deljena z glinico, v Segerjevi formuli: višje razmerje se nagiba k sijaju, nižje k mat površini.
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-Razpoke zaradi ohlajanja (dunting)
-: Razpoke v izdelku zaradi napetosti pri ohlajanju ali segrevanju, pogosto pri kremenovi pretvorbi, {{1063 °F; 573 °C}}.
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-Recept (batch recipe)
-: Surovine glazure po masi, ki se običajno seštejejo v 100.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-Relativna gostota (specific gravity, SG)
-: Masa suspenzije v primerjavi z maso enake prostornine vode. V starejših britanskih virih: masa pinte (pint weight).
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-Segerjeva formula, UMF (unity molecular formula, Seger formula)
-: Oksidi glazure kot število molekul, preračunani tako, da talila skupaj dajo 1.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-Sijajna, svilnato mat in mat površina (gloss, satin and matte)
-: Odbija svetlobo in je gladka; ima pridušen lesk; je brez leska.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-Sproščanje kovin (leaching)
-: Raztapljanje kovin iz žgane glazure v hrano ali pijačo.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-Sredstvo za motnost (opacifier)
-: Surovina, na primer cirkonijev silikat, kositrov oksid ali titanov dioksid, ki naredi glazuro prekrivno.
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-Stabilizator (stabilizer)
-: Oksid, predvsem glinica, ki naredi talino bolj viskozno in doda obstojnost.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water.
 
-Stožec (cone)
-: Umerjena keramična piramida, ki se upogne pri določenem toplotnem delu. Kontrolni stožec pokaže, koliko toplotnega dela so prejeli izdelki.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
-Surovec, nežgani izdelki (greenware)
-: Nežgan izdelek: usnjeno trd, ko je čvrst, a vlažen, popolnoma suh, ko v njem ni več proste vode.
+Stoneware
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-Talilo (flux)
-: Oksid, ki zniža temperaturo taljenja kremenice.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
-Testna serija (line blend)
-: Preizkusi, v katerih se količina ene sestavine postopno spreminja med dvema količinama. Triaksialna mešanica spreminja tri sestavine na mreži.
+Underglaze
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-Tiksotropija (thixotropy)
-: Lastnost, da snov teče, ko jo mešamo, v mirovanju pa se strdi v mehak gel.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-Toplotno delo (heatwork)
-: Skupni učinek temperature in časa v peči; to merijo stožci.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-Tvorec stekla (glass former)
-: Oksid, ki gradi steklo, običajno kremenica.
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
 
-Ujemanje glazure s črepinjo (glaze fit)
-: Kako dobro se ujemata raztezanje glazure in raztezanje črepinje; pri dobrem ujemanju je glazura rahlo stisnjena.
-
-Vitrifikacija, posteklitev (vitrification)
-: Proces, v katerem masa med žganjem postane steklasta in neporozna.
-
-Zaščitni vosek (wax resist)
-: Vosek, nanesen tja, kamor glazura ne sme, običajno na dno.
+Whiting
+: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
 
 ## Sources {#sources lang=en}
 
@@ -512,5 +512,21 @@ Zaščitni vosek (wax resist)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

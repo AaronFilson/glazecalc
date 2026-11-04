@@ -99,6 +99,15 @@ export const LEVELS = {
 /** The most guide sections teach_me attaches. */
 const MOST_TEACH_SECTIONS = 2;
 
+/** What to put first for lab work, from the safe mixing sections attached: the kiln, the dust, or both. */
+const safetyWords = (ids: readonly string[]): string => {
+  const parts = [
+    ...(ids.includes('kiln') ? ['kiln fumes, venting, carbon monoxide from gas and reduction kilns, burns'] : []),
+    ...(ids.some((id) => id !== 'kiln') ? ['dust, a fitted respirator, wet cleaning'] : [])
+  ];
+  return `(the attached sections ${ids.map((id) => 'safe-mixing#' + id).join(' and ')}): ${parts.join('; ')}.`;
+};
+
 /** One blank line at most between parts. */
 const lines = (parts: string[]): string =>
   parts.filter((line, i, all) => line !== '' || (i > 0 && all[i - 1] !== '')).join('\n');
@@ -323,10 +332,10 @@ export const registerPrompts = (server: McpServer): void => {
       }
       const course = sectionIn(COURSE_GUIDE, unit.id, language);
       // Lab work: the safe mixing section its warning points to comes first, whatever the unit lists.
-      const safetyId = unit.lab ? (unit.safety ?? 'habits') : undefined;
-      const safety = safetyId ? sectionIn('safe-mixing', safetyId, language) : null;
+      const safetyIds = unit.lab ? (unit.safety ?? ['habits']) : [];
+      const safety = safetyIds.map((id) => sectionIn('safe-mixing', id, language));
       const reads = unit.reads
-        .filter((read) => !(read.guide === 'safe-mixing' && read.section === safetyId))
+        .filter((read) => !(read.guide === 'safe-mixing' && safetyIds.includes(read.section)))
         .map((read) => sectionIn(read.guide, read.section, language));
       const next = courseUnits().find((u) => u.number === unit.number + 1);
       const nextVideo = next?.videos[0];
@@ -355,7 +364,7 @@ export const registerPrompts = (server: McpServer): void => {
               '',
               'Please:',
               unit.lab
-                ? `1. This unit is lab work. Before anything else, point me to the safe mixing guide (the attached section safe-mixing#${safetyId}, and search_guides for more)${safetyId === 'kiln' ? ': kiln fumes, venting, carbon monoxide from gas and reduction kilns, burns.' : ': dust, a fitted respirator, wet cleaning.'}`
+                ? `1. This unit is lab work. Before anything else, point me to the safe mixing guide, and search_guides for more ${safetyWords(safetyIds)}`
                 : '1. Say in a sentence what this unit covers, from its title and the attached guide sections.',
               '2. List his videos with their links and titles, credit John Britt (johnbrittpottery.com), and tell me to watch them on YouTube. Do not retell, summarise or quote what he says in them: you have not seen them, and they are his. Glazecalc is not connected with him.',
               '3. Explain the ideas I need from the attached Glazecalc guide sections, in plain words, and cite them by their addresses.',
@@ -376,7 +385,7 @@ export const registerPrompts = (server: McpServer): void => {
                   : '')
             ])
           ),
-          ...[course, safety, ...reads].filter((message) => message !== null)
+          ...[course, ...safety, ...reads].filter((message) => message !== null)
         ]
       };
     }
@@ -453,21 +462,24 @@ export const registerPrompts = (server: McpServer): void => {
     },
     ({ topic, level, recipe, cone, language }) => {
       const unit = matchTopic(topic);
-      // The guide sections: the best search hits first (not the companion guide itself, nor a list of
-      // sources), then the matched unit's own reads, each once.
+      const lab = unit?.lab === true;
+      const safetyIds = lab ? (unit?.safety ?? ['habits']) : [];
+      const safety = safetyIds.map((id) => sectionIn('safe-mixing', id, language));
+      // The guide sections: the best search hit first (not the companion guide itself, nor a list of
+      // sources), then the matched unit's first read, then the rest; each once, and none of the safety
+      // sections attached above.
       const hits = searchGuides(topic, { language, limit: 6 }).hits.filter(
         (hit) => hit.guide !== COURSE_GUIDE && hit.section !== 'sources'
       );
-      const picked = [...hits, ...(unit?.reads ?? [])]
+      const reads = unit?.reads ?? [];
+      const picked = [...hits.slice(0, 1), ...reads.slice(0, 1), ...hits.slice(1), ...reads.slice(1)]
         .map((hit) => ({ guide: hit.guide, section: hit.section }))
+        .filter((hit) => !(hit.guide === 'safe-mixing' && safetyIds.includes(hit.section)))
         .filter((hit, i, all) => all.findIndex((h) => h.guide === hit.guide && h.section === hit.section) === i);
       const sections = picked
         .map((hit) => sectionIn(hit.guide, hit.section, language))
         .filter((message) => message !== null)
         .slice(0, MOST_TEACH_SECTIONS);
-      const lab = unit?.lab === true;
-      const safetyId = unit?.safety ?? 'habits';
-      const safety = lab ? sectionIn('safe-mixing', safetyId, language) : null;
       const pace = LEVELS[level ?? 'new'];
       return {
         description: `Teach me: ${topic}`,
@@ -503,7 +515,7 @@ export const registerPrompts = (server: McpServer): void => {
               '6. Ask me one question to check I understood, then offer the next step up a level.',
               '',
               (lab
-                ? `This topic is lab work: before anything else, point me to the safe mixing guide (the attached section safe-mixing#${safetyId})${safetyId === 'kiln' ? ': kiln fumes, venting, carbon monoxide from gas and reduction kilns, burns. ' : ': dust, a fitted respirator, wet cleaning. '}`
+                ? `This topic is lab work: before anything else, point me to the safe mixing guide ${safetyWords(safetyIds)} `
                 : 'If the experiment leads to weighing and mixing dry materials, point me to the safe mixing guide first (dust, a fitted respirator, wet cleaning). ') +
                 'The numbers are a calculation from published figures, not a test: the fired tiles decide. ' +
                 SAFETY +
@@ -513,7 +525,7 @@ export const registerPrompts = (server: McpServer): void => {
                   : '')
             ])
           ),
-          ...[safety, ...sections].filter((message) => message !== null)
+          ...[...safety, ...sections].filter((message) => message !== null)
         ]
       };
     }

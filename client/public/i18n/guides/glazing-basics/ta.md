@@ -13,69 +13,69 @@ A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln,
 - **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
 - **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
 > One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
-## களிமண், பூச்சுகள், இரண்டு ஃபயரிங்குகள் {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### க்ளே பாடிகள்
+### Clay bodies
 
-**க்ளே பாடி (களிமண்)**{{en: clay body}} என்பது பாண்டம் செய்யப்பட்ட களிமண். முக்கிய வகைகள் மூன்று.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **எர்த்தன்வேர் (குறை வெப்ப மண்பாண்டம்)**{{en: earthenware}}: லோ-ஃபயர் க்ளே பாடி, ஏறத்தாழ கோன் (வெப்பநிலைக் கூம்பு){{en: cone}} 06–02, நுண்துளையுள்ளதாகவே இருக்கும். பெரும்பாலும் சிவப்பு அல்லது இளம் மஞ்சள்-பழுப்பு நிறம்; தண்ணீரை நிறுத்த இதற்கு கிளேஸ் தேவை.
-- **ஸ்டோன்வேர் (மாக்கல் பாண்டம்)**{{en: stoneware}}: மிட் முதல் ஹை ஃபயர் வரையிலான க்ளே பாடி, ஏறத்தாழ கோன் 5–10, விட்ரிஃபைடு அல்லது ஏறத்தாழ விட்ரிஃபைடு ஆகிறது.
-- **போர்சலீன்**: வெள்ளை நிறம், கயோலின் (சைனா க்ளே){{en: kaolin}} மிகுந்த ஹை-ஃபயர் க்ளே பாடி, பெரும்பாலும் பகுதி ஒளி ஊடுருவும்.
+- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
 
-**விட்ரிஃபைடு (கண்ணாடித் தன்மை)** என்றால் கண்ணாடி போன்றதும் நுண்துளையற்றதும் என்று பொருள்; **விட்ரிஃபிகேஷன்** என்பது ஃபயரிங்கின்போது க்ளே பாடி அப்படி ஆவது. பிரிட்டனின் மட்பாண்டக் கலைஞர்கள் பெரும்பாலும் அதற்குப் பதிலாக இந்தக் கோட்டை வெப்பநிலையால் வரைகிறார்கள்: ஸ்டோன்வேர் {{2192 °F; 1200 °C}} வெப்பநிலைக்கு மேல் சுடப்படுகிறது, எர்த்தன்வேர் அதற்குக் கீழே. மிட் ஃபயர், கோன் 5–6, அந்தக் கோட்டின் இருபுறமும் சற்று அருகில் வருகிறது.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### பூச்சுகளும் உலர்தலும்
+### Coatings and drying
 
-**ஸ்லிப் (களிமண் குழம்பு)** என்பது தண்ணீரில் கலந்த களிமண்; வார்ப்பதற்கும், இணைப்பதற்கும், அலங்கரிப்பதற்கும் பயன்படுகிறது. **எங்கோப்** என்பது ஸ்லிப் போன்ற பூச்சு, பெரும்பாலும் நிறமுள்ளது, களிமண் அல்லாத பொருட்கள் அதிகம் கொண்டது. **அண்டர்கிளேஸ்** என்பது நிறமுள்ள ஸ்லிப் அல்லது ஆக்சைடு அலங்காரம், பொதுவாக கிளியர் கிளேஸால் மூடப்படுவது.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-சுடாத பாண்டம் **கிரீன்வேர் (பச்சை மட்பாண்டம்)**{{en: greenware}} (இந்தச் சொல் சுடாத எல்லாப் பாண்டங்களையும் குறிக்கிறதா, உலர்ந்தவற்றை மட்டுமா என்பதில் ஆதாரங்களுக்குள் கருத்து வேறுபாடு உள்ளது). உலரும்போது அது **லெதர்-ஹார்டு (தோல்-வன்மை)** ஆகிறது: கெட்டியாக, ஆனால் சிறிது ஈரமாக; இது டிரிம் செய்யவும் கைப்பிடிகள் சேர்க்கவும் உரிய நிலை; பிறகு **போன்-டிரை (முழுதும் உலர்ந்த)** ஆகிறது: கட்டற்ற நீர் எதுவும் இல்லை, மிகவும் எளிதில் உடையக்கூடியது, ஃபயரிங்குக்குத் தயார்.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### இரண்டு ஃபயரிங்குகள்
+### The two firings
 
-முதல், குறைந்த வெப்ப ஃபயரிங் **பிஸ்க் (முதல் சுடுதல்)**{{en: bisque}} (பிரிட்டனில்: **biscuit**), பொதுவாக கோன் 08–04 (பெரும்பாலும் 06–04), ஏறத்தாழ {{1728–1945 °F; 942–1063 °C}}. இது பாண்டத்தை உறுதியாகவும் நுண்துளையுள்ளதாகவும் விட்டுவைக்கிறது. கிளேஸ் குறித்த ஒரு தகவல் தளமான Digitalfire, பொதுவாக 15%-க்கும் அதிகமான நுண்துளைத்தன்மையைப் பரிந்துரைக்கிறது, அதனால் கிளேஸ் பூசும்போது பிஸ்க் அதிலிருந்து தண்ணீரை உறிஞ்சுகிறது. சாஃப்ட் பிஸ்க் (கோன் 08–06) அதிக நுண்துளையுள்ளது; ஹார்டு பிஸ்க் (பெரும்பாலும் கோன் 04) அதிக உறுதியானது, ஆனால் கிளேஸை அவ்வளவு எளிதில் ஏற்காது.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: பிஸ்க் கிளேஸ் பூசுவதை எப்படி மாற்றுகிறது (Digitalfire)
-Label: பிஸ்க் கிளேஸ் பூசுவதை மாற்றுதல்
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| பிஸ்க்                                                                      | என்ன நடக்கிறது                                                                                      |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| குறைவாகச் சுட்டது, மிக அதிகமாக உறிஞ்சுவது                                   | கிளேஸ் மிகத் தடிமனாகப் படிகிறது, பிறகு விரிசலிட்டு க்ராலிங் ஆகிறது                                  |
-| அதிகமாகச் சுட்டது, அடர்த்தியானது                                            | முக்குவதும் உலர்வதும் அதிக நேரம் எடுக்கிறது                                                         |
-| இன்னும் அதிக வெப்பத்தில் சுட்டது, அல்லது உச்சத்தில் நீண்ட நேரம் நிறுத்தியது | அதிக வாயு இப்போதே எரிந்து வெளியேறுகிறது, அதனால் பின்னர் கிளேஸ் வழியாகக் குமிழ்கள் குறைவாக வருகின்றன |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-பிரிட்டன் விற்பனையாளரான Potclays, பிஸ்க் ஃபயரிங் ஏறத்தாழ {{1000 °C; 1832 °F}} வரை என விவரிக்கிறது, அது ஏறத்தாழ கோன் 06. இந்த ஆதாரங்களை ஒன்றாகப் படித்து, முதல் பிஸ்க்குக்கு கோன் 06–04 பரிந்துரைக்கிறோம்: Orton-இன் நடுத்தர வீதத்தில் {{1828–1945 °F; 998–1063 °C}}.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-**கிளேஸ் ஃபயரிங் (இரண்டாம் சுடுதல்)**{{en: glaze firing}} (பிரிட்டனின் மட்பாண்டக் கலைஞர்கள் **glost** ஃபயரிங் என்றும் சொல்லலாம்) கிளேஸை உருக்குகிறது; ஸ்டோன்வேரில் களிமண்ணையும் முழுதாக வேகச் செய்கிறது. **சிங்கிள் ஃபயரிங் (ஒரே முறை சுடுதல்)**{{en: once-firing}} என்பது சுடாத பாண்டத்தில் கிளேஸ் பூசி அதை ஒரே ஒரு முறை சுடுவது. சுடாத பாண்டத்தில் கிளேஸ் பூசிச் சுடப்பட்ட பாண்டங்களின் விளிம்புகளில் க்ராலிங் ஏற்பட்டது, பிஸ்க் ஃபயரிங் அதைச் சரிசெய்யும் வரை என்று ஒரு உற்பத்தி நிகழ்வை Digitalfire தெரிவிக்கிறது; எனவே இரண்டு ஃபயரிங்குகளுடன் தொடங்கவும். [எளிய கில்னில் சுடுதல்](/guides/firing) இரண்டுக்கும் அட்டவணைகளைத் தருகிறது.
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
-## கோன்களும் ஹீட்வொர்க்கும் {#cones}
+## Cones and heatwork {#cones lang=en}
 
-மட்பாண்டக் கலைஞர்கள் ஒரு ஃபயரிங்குக்கு **கோன் (வெப்பநிலைக் கூம்பு)**{{en: cone}} மூலம் பெயரிடுகிறார்கள்: குறிப்பிட்ட அளவு வெப்பம் கிடைத்ததும் வளையும் மெல்லிய செராமிக் பிரமிடு. அவற்றைத் தயாரிக்கும் Orton இப்படிச் சொல்கிறது: “கோன்கள் வெப்பநிலையை மட்டும் அளப்பதில்லை. அவை ஹீட்வொர்க்கை அளக்கின்றன, அதாவது நேரமும் வெப்பநிலையும் சேர்ந்த விளைவை.”
+Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
 
-இதற்குக் காரணம் **ஹீட்வொர்க் (வெப்பமும் நேரமும் சேர்ந்த விளைவு)**{{en: heatwork}}: கிளேஸ், களிமண், கோன் ஆகிய அனைத்தும் எவ்வளவு சூடாக இருந்தன என்பதற்கு மட்டுமல்ல, எவ்வளவு நேரம் சூடாக இருந்தன என்பதற்கும் எதிர்வினை புரிகின்றன. மெதுவான ஃபயரிங் ஒரு கோனைக் குறைந்த வெப்பநிலையில் வளைக்கிறது, வேகமானது அதிக வெப்பநிலையில். Orton-இன் அட்டவணைப்படி, ஃபயரிங்கின் இறுதியில் மணிநேரத்துக்கு {{27 °F; 15 °C}} வெப்பம் ஏறும்போது கோன் 6 {{2165 °F; 1185 °C}} வெப்பநிலையில் வளைகிறது; மணிநேரத்துக்கு {{108 °F; 60 °C}} ஏறும்போது {{2232 °F; 1222 °C}} வெப்பநிலையிலும், மணிநேரத்துக்கு {{270 °F; 150 °C}} ஏறும்போது {{2269 °F; 1243 °C}} வெப்பநிலையிலும் வளைகிறது; இந்த வீதம் கடைசி {{180 °F; 100 °C}} ஏற்றத்தில் கணக்கிடப்படுகிறது. கோனின் நுனி 90° வளைந்துவிட்டால் அந்தக் கோன் முடிந்தது; இதை Orton 5 மணி நிலை என்கிறது.
+**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
 
-கோன் எண்கள் 022 முதல் 42 வரை செல்கின்றன. முன்னால் உள்ள பூஜ்ஜியம் குறைந்த வெப்பமான தொடரைக் குறிக்கிறது; அதில் பெரிய எண் குறைந்த வெப்பத்தைக் குறிக்கிறது: கோன் 06, கோன் 04-ஐ விடக் குறைந்த வெப்பமானது, கோன் 01, கோன் 1-ஐ விடக் குறைந்த வெப்பமானது.
+Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
 
-Table: ஃபயரிங் வீச்சுகள்: மணிநேரத்துக்கு {{108 °F; 60 °C}} வீதத்தில் Orton-இன் செல்ஃப்-சப்போர்ட்டிங் கோன்கள்
-Label: ஃபயரிங் வீச்சுகள்
+Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
+Label: Firing ranges
 
-| வீச்சு     | கோன்கள் |          °F |          °C | எதற்குப் பயன்படுகிறது          |
-| ---------- | ------- | ----------: | ----------: | ------------------------------ |
-| லோ ஃபயர்   | 06–04   | 1,828–1,945 |   998–1,063 | எர்த்தன்வேர் கிளேஸ்கள்; பிஸ்க் |
-| மிட் ஃபயர் | 5–6     | 2,167–2,232 | 1,186–1,222 | ஸ்டோன்வேரும் போர்சலீனும்       |
-| ஹை ஃபயர்   | 9–10    | 2,300–2,345 | 1,260–1,285 | ஸ்டோன்வேரும் போர்சலீனும்       |
+| Range     | Cones |          °F |          °C | Used for                   |
+| --------- | ----- | ----------: | ----------: | -------------------------- |
+| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
+| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
+| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
 
 > [!NOTE]
-> உங்கள் ஃபயரிங்குகளுக்கு கோன் மூலம் பெயரிட்டு, புரோகிராம் செய்யவும்; வெப்பநிலைகளை ஏறத்தாழ மதிப்புகளாகக் கொள்ளவும். பாண்டங்களுக்கு நடுவே ஷெல்ஃபில் வைத்த **விட்னஸ் கோன் (சாட்சிக் கோன்)**{{en: witness cone}}, அல்லது மூன்று கோன்கள் கொண்ட **கோன் பேக்**{{en: cone pack}} (கைடு, ஃபயரிங், கார்டு கோன்கள்), உங்கள் பாண்டங்களுக்கு உண்மையில் கிடைத்த ஹீட்வொர்க்கைக் காட்டுகிறது.
+> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
 
-வெளியிடப்பட்ட வெப்பநிலைகள் மாறுபடுகின்றன. Glazy ஹை ஃபயரை, கோன் 9–11, ஏறத்தாழ {{2336–2390 °F; 1280–1310 °C}} எனத் தருகிறது, இது Orton-இன் வேகமான வீத நெடுவரிசையுடன் பொருந்துகிறது; பெரும்பாலான கில்ன்கள் ஏறத்தாழ {{2200 °F; 1204 °C}} வெப்பநிலையில் கோன் 6-ஐ எட்டுகின்றன என்று Digitalfire தெரிவிக்கிறது. எங்கள் ஆலோசனை: இந்த வழிகாட்டி செய்வது போல Orton-இன் நடுத்தர வீத எண்களைப் பயன்படுத்தவும், கோன் மூலம் புரோகிராம் செய்யவும், விட்னஸ் கோன் முடிவு செய்யட்டும்.
+Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
 
-வட அமெரிக்காவுக்கு வெளியே, விற்பனையாளர்கள் பெரும்பாலும் கோனுக்குப் பதிலாக °C தருகிறார்கள். நவீன கோனை Hermann Seger உருவாக்கினார், அது 1886-இல் பெர்லினில் முதலில் பயன்படுத்தப்பட்டது; பிரிட்டனுக்குத் தனக்கே உரிய Staffordshire கோன்கள் இருந்துள்ளன; அவற்றின் எண்கள் Orton-இன் எண்களுடன் பொருந்தும் என்று கருதுவதைத் தவிர்க்க வேண்டும், அவற்றை மாற்றும் அட்டவணை எதையும் நாங்கள் காணவில்லை. [எளிய கில்னில் சுடுதல்](/guides/firing) கோன்களை இன்னும் விரிவாகக் கூறுகிறது.
+Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
 
 ## From recipe to unity formula {#unity-formula lang=en}
 
@@ -117,13 +117,13 @@ Label: Loss on ignition
 
 | Material                              | Typical LOI                                                                      |
 | ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
 | Lithium carbonate                     | About 60%                                                                        |
 | Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
 | Feldspars                             | Under 1%                                                                         |
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
 Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
@@ -135,7 +135,7 @@ A **Stull chart** is a map of glazes. It has two axes, both from the unity formu
 
 R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
 
 The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
@@ -147,7 +147,7 @@ The **crazed** region is where Stull's own tests crazed, on his clay. It does no
 
 A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
 
 ### The common raw materials
 
@@ -157,7 +157,7 @@ Label: Common glaze materials
 | Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
 | ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
 | Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
 | Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
 | Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
@@ -168,22 +168,22 @@ Label: Common glaze materials
 | Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
 | Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
 | Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
 
 > [!WARNING]
 > Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
 ### Regional names
 
-- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
 - **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
 - **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
+- **Whiting** is calcium carbonate, ground chalk or limestone.
 
 > [!NOTE]
 > Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
 ## Colorants and opacifiers {#color lang=en}
 
@@ -192,15 +192,15 @@ A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is
 Table: Common colorants, as a percent of the base
 Label: Common colorants
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
-| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
+| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
 
 Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
@@ -212,11 +212,11 @@ An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** gl
 
 Table: Opacifiers
 
-| Opacifier                                     | Usual amount              | Notes                                                                                                         |
-| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
-| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
-| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
+| Opacifier                           | Usual amount              | Notes                                                                                                              |
+| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
+| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
+| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
 
 ## Glaze fit and defects {#fit-and-defects lang=en}
 
@@ -268,213 +268,213 @@ The legal limits differ by country. The table shows those where you live, in the
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
 ### Testing
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
 > "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
-## ஒப்படர்த்தியும் பூசுதலும் {#application}
+## Specific gravity and application {#application lang=en}
 
-### ஒப்படர்த்தி
+### Specific gravity
 
-தண்ணீருடன் கலந்த கிளேஸ் பவுடர் **ஸ்லரி (கிளேஸ் குழம்பு)**{{en: slurry}} எனப்படும். அதன் **ஒப்படர்த்தி**{{en: specific gravity}} (**SG**) என்பது அதே கனஅளவு நீருடன் ஒப்பிடும்போது அதன் எடை; நீரின் ஒப்படர்த்தி 1.0: இது எவ்வளவு அதிகமோ, வாளியில் அவ்வளவு அதிகப் பவுடர் இருக்கிறது. பழைய பிரிட்டன் நூல்கள் **பைண்ட் எடை** என்கின்றன. 1.4–1.5-ஐ “பெரும்பாலான கிளேஸ்களுக்கு நல்ல தொடக்கப் புள்ளி” என்கிறது Glazy. அளக்க, சரியாக 100 mL ஸ்லரியை எடைபோட்டு (Glazy சிரிஞ்சைப் பரிந்துரைக்கிறது) 100-ஆல் வகுக்கவும்: 145 g என்றால் ஒப்படர்த்தி 1.45. ஜெல் ஆன கிளேஸ்களில் ஹைட்ரோமீட்டர்கள் (திரவமானி) நம்பகமானவை அல்ல, தண்ணீர் ஆவியாகிறது; எனவே கிளேஸ் பூசுவதற்கு முன் மீண்டும் சரிபார்க்கவும்.
+Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
 
-இலக்குகள் ஆதாரத்தைப் பொறுத்து மாறுபடுகின்றன. முக்கும் கிளேஸ்களை 1.40–1.50-இலும், வணிக பிரஷிங் கிளேஸ்களை 1.25–1.55-இலும் Digitalfire வைக்கிறது, Potclays தூரிகையால் பூசுவதற்கு 1.71–1.81-ஐயும் ஸ்ப்ரே செய்வதற்கு 1.71-ஐயும் தருகிறது. எங்கள் ஆலோசனை: கிளேஸ் சிறிது ஜெல் ஆன நிலையில் ஏறத்தாழ 1.45-இல் முக்கவும், பிரஷிங் கிளேஸுக்கு லேபிளைப் பின்பற்றவும், வேலை செய்வதை எழுதி வைக்கவும்.
+Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
 
-**ஃப்ளோக்குலன்ட்**{{en: flocculant}} (எப்சம் உப்பு, வினிகர் அல்லது கால்சியம் குளோரைடு) ஸ்லரியைச் சிறிது ஜெல் ஆக்குகிறது, அதை **திக்ஸோட்ரோபிக்**{{en: thixotropic}} ஆக்குகிறது: கலக்கும்போது பாய்கிறது, அசையாமல் இருக்கும்போது கெட்டியாகிறது; அதனால் “சீரான, வழியாத கிளேஸ் மூடுதல்” கிடைக்கிறது. **டிஃப்ளோக்குலன்ட்**{{en: deflocculant}} (சோடியம் சிலிக்கேட் அல்லது Darvan) அதை நீர்க்கச் செய்கிறது. [கிளேஸ் தயாரிப்பது எப்படி](/guides/making-a-glaze) கலப்பதையும் சரிசெய்வதையும் விளக்குகிறது.
+A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
 
-### கிளேஸ் பூசுதல்
+### Putting glaze on
 
-முதலில் பிஸ்க்கிலிருந்து தூசையும் எண்ணெய்ப்பசையையும் மிக லேசாக ஈரமான ஸ்பாஞ்சால் துடைக்கவும்; கழுவ வேண்டாம், கழுவினால் அது நனைந்துவிடும். தூசை அழுத்தப்பட்ட காற்றால் ஊதக் கூடாது, உலர்ந்த நிலையில் பிரஷ் செய்யவும் கூடாது: அது சிலிக்கா தூசைக் காற்றில் பரப்புகிறது ([பாதுகாப்பான கலவையும் காற்றோட்டமும்](/guides/safe-mixing#cleaning)).
+Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
 
-- **முக்குதல்** “பொதுவாக ஒரே தடிமனுள்ள பூச்சைத் தருகிறது” (Robin Hopper). முக்கும் நேரம் தடிமனை நிர்ணயிக்கிறது: வணிக முக்கும் கிளேஸ்கள் 5 வினாடி முக்குதலுக்கு ஏறத்தாழ 1.4-இலும், 1 வினாடி முக்குதலுக்கு 1.5-இலும் தயாரிக்கப்படுகின்றன என்று Digitalfire குறிப்பிடுகிறது.
-- **ஊற்றுதலுக்கான** கிளேஸ் “முக்குவதற்குப் பயன்படுத்தும்போது இருப்பதை விடச் சிறிது மெல்லியதாக” இருக்க வேண்டும்; ஊற்றல்கள் ஒன்றின்மேல் ஒன்று படியும் இடத்தில் பூச்சு இரட்டிப்பாகி வழியக்கூடும்.
-- **தூரிகையால் பூசும்** கிளேஸ்களில் **CMC கோந்து** போன்ற கோந்து உள்ளது, அது கிளேஸ் பரவவும் ஒட்டவும் உதவி, பின்னர் எரிந்துவிடுகிறது. பெரும்பாலானவற்றுக்குப் பல பூச்சுகள் தேவை, பெரும்பாலும் இரண்டு அல்லது மூன்று; லேபிளைப் பின்பற்றவும்.
-- **ஸ்ப்ரே செய்தலுக்கு** மிக மெல்லிய கிளேஸ் பயன்படுகிறது, “படிப்படியாகத் தடிமனைக் கூட்டும் பல மெல்லிய பூச்சுகளாக” பூசப்படுகிறது.
+- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
+- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
+- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
+- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
 
 > [!WARNING]
-> காற்றோட்டமுள்ள ஸ்ப்ரே பூத்தில் மட்டுமே ஸ்ப்ரே செய்யவும், முறையாகப் பொருந்தும் ரெஸ்பிரேட்டர் அணிந்து. [பாதுகாப்பான கலவையும் காற்றோட்டமும்](/guides/safe-mixing) பார்க்கவும்.
+> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
 
-மிகத் தடிமனான பூச்சு க்ராலிங், பிளிஸ்டரிங் அல்லது வழிதலுக்குக் காரணமாகலாம். விற்பனையாளர்களின் அனுபவ விதிகள் கிரெடிட் கார்டின் தடிமன் முதல் அமெரிக்க டைம் நாணயத்தின் தடிமன் வரை உள்ளன; எங்கள் மதிப்பீட்டில் அது உலர்ந்த கிளேஸ் ஏறத்தாழ 1 mm; சில தடிமன்களில் டெஸ்ட் டைல்களே நம்பகமான சோதனை. அடிப்பகுதியில் உள்ள **வேக்ஸ் ரெசிஸ்ட்**{{en: wax resist}} கிளேஸை விலக்குகிறது, அதனால் பாண்டம் ஷெல்ஃபில் ஒட்டிக்கொள்ளாது; **கில்ன் (சூளை) வாஷ்**, வெப்பம் தாங்கும் பூச்சு, பெரும்பாலும் கயோலினும் சிலிக்காவும் கொண்டது, ஷெல்ஃப்களைச் சொட்டுகளிலிருந்து காக்கிறது.
+Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
 
-## ஆக்சிடேஷனும் ரிடக்ஷனும் {#atmosphere}
+## Oxidation and reduction {#atmosphere lang=en}
 
-கில்னில் (சூளை) உள்ள வாயுக்கள், அதாவது அதன் **சூழல்**, கிளேஸ்கள் எப்படி வெளிவருகின்றன என்பதை மாற்றுகின்றன. **ஆக்சிடேஷன் (ஆக்சிஜனேற்றம்)**{{en: oxidation}} என்றால் ஏராளமான ஆக்சிஜன். “எலக்ட்ரிக் கில்ன்கள் என்றாலே ஆக்சிடேஷன் ஃபயரிங் என்று பொருள்,” என்கிறது Digitalfire, ஆக்சிடேஷன் கிளேஸ்கள் பொதுவாக ரிடக்ஷன் கிளேஸ்களை விடப் பிரகாசமானவை, குறிப்பாகக் குறைந்த வெப்பநிலைகளில். ஆக்சிடேஷனில் காப்பர் பச்சையையும் டர்க்காய்ஸையும் தருகிறது, அயர்ன் பழுப்பு, இளம் பழுப்பு, சிவப்பைத் தருகிறது. வாயுக்களை வெளியிடும் பாண்டங்களால் நிரம்பிய, நன்கு வென்ட் செய்யப்படாத எலக்ட்ரிக் கில்ன் நோக்கத்தை விட நியூட்ரலாக இயங்கக்கூடும்; கில்னுடன் நேரடியாக இணைக்கப்பட்ட வென்ட் உதவுகிறது.
+The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
 
-**ரிடக்ஷன் (ஒடுக்கம்)**{{en: reduction}} ஆக்சிஜனை வேண்டுமென்றே கட்டுப்படுத்துகிறது, பொதுவாக கேஸ், விறகு அல்லது சிறப்புக் கில்னில். காப்பர் சிவப்பாக மாறுகிறது, அயர்ன் வலுவான ஃப்ளக்ஸ் ஆகி **செலடான்** (நீலப்பச்சை முதல் சாம்பல்பச்சை வரை, ஏறத்தாழ ½–2% அயர்னிலிருந்து), **டென்மோகு** (temmoku: பழுப்புக் கருப்பு, ஏறத்தாழ 5–6% அயர்ன்) ஆகியவற்றைத் தருகிறது. செலடான்களும் காப்பர் சிவப்புகளும் “ரிடக்ஷனைச் சார்ந்தவை” என்கிறது Glazy. களிமண்ணும் மாறுகிறது: Digitalfire-இன் ஒரு ஒப்பீட்டில், ஒரு ஸ்டோன்வேர் க்ளே பாடி ரிடக்ஷனில் சாம்பல் நிறமாகவும் ஆக்சிடேஷனில் மஞ்சள் கலந்த நிறமாகவும் சுடப்பட்டது. கிளேஸில் உள்ள சிலிக்கான் கார்பைடு எலக்ட்ரிக் கில்னிலும் சிறு பகுதிகளில் ரிடக்ஷனை உண்டாக்கக்கூடும். கோன் 010 முதல் கோன் 3 வரையிலான ரிடக்ஷனுக்கு, Orton தனது அயர்ன் இல்லாத கோன்களைப் பரிந்துரைக்கிறது.
+**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
 
 > [!NOTE]
-> கேஸ் ரிடக்ஷன் கில்னுக்காக எழுதப்பட்ட ரெசிபி எலக்ட்ரிக் கில்னில் வேறுவிதமாக வெளிவரும் என்று எதிர்பார்க்கவும்: ரிடக்ஷனைச் சார்ந்த செலடான் அல்லது காப்பர் சிவப்பு ஆக்சிடேஷனில் அதே போலத் தோன்றாது. ஒரு ரெசிபி எந்தச் சூழலுக்காக உருவாக்கப்பட்டது என்று பார்க்கவும், உங்கள் சூழலை, கோனுடன், Glazecalc-இல் ரெசிபியின் குறிப்புகளில் எழுதிவைக்கவும்.
+> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
 
-ஒவ்வொரு கில்னும், எலக்ட்ரிக் கில்ன்கள் உட்பட, புகையையும் வாயுக்களையும் வெளியிடுகிறது, எனவே அதை வென்ட் செய்யவும். [பாதுகாப்பான கலவையும் காற்றோட்டமும்](/guides/safe-mixing) எப்படி என்பதை விளக்குகிறது.
+Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
 
-## சொற்களஞ்சியம் {#glossary}
+## Glossary {#glossary lang=en}
 
-சேர்க்கைப் பொருள் (additive)
-: கலரன்ட், ஒபாசிஃபையர் அல்லது சஸ்பெண்டர், ரெசிபியின் 100-க்கு மேல் சேர்க்கப்படுவது.
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
 
-அலுமினா (Al₂O₃; alumina)
-: முக்கிய ஸ்டெபிலைசர்: வழிவதைத் தடுத்து, கடினத்தன்மையைக் கூட்டுகிறது. களிமண்ணிலிருந்தும் ஃபெல்ட்ஸ்பாரிலிருந்தும் வருகிறது.
+Alumina (Al₂O₃)
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
-பால் க்ளே (ball clay)
-: கயோலினை விட அயர்னும் கரிமப் பொருளும் அதிகமுள்ள நெகிழ்வான களிமண்.
+Ball clay
+: A plastic clay with more iron and organic matter than kaolin.
 
-பேட்ச் ரெசிபி (batch recipe)
-: ஒரு கிளேஸின் கச்சா மூலப்பொருட்கள் எடைப்படி, பொதுவாக கூட்டுத்தொகை 100.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-பென்டோனைட் (bentonite)
-: கிளேஸ் அடியில் படியாமல் இருக்க 1–3% சேர்க்கப்படும் மிக நுண்ணிய களிமண்.
+Bentonite
+: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
 
-பிஸ்க் (முதல் சுடுதல்; bisque, UK: biscuit)
-: முதல், குறைந்த வெப்ப ஃபயரிங், பொதுவாக கோன் 08–04 (பெரும்பாலும் 06–04), பாண்டத்தை உறுதியாகவும் நுண்துளையுள்ளதாகவும் விட்டுவைக்கிறது.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
-போரான் (B₂O₃; boron)
-: முறைப்படி கிளாஸ் ஃபார்மர், ஆனால் ஃப்ளக்ஸ் ஆகப் பயன்படுகிறது; கோன் 06 முதல் கோன் 6 வரை இன்றியமையாதது.
+Boron (B₂O₃)
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-CMC கோந்து (CMC gum)
-: கிளேஸ் தூரிகையில் பரவவும் ஒட்டவும் உதவும் செல்லுலோஸ் கோந்து; எரிந்துவிடுகிறது.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-கலரன்ட், ஸ்டெயின் (colorant, stain)
-: கிளேஸுக்கு நிறம் தரும் உலோக ஆக்சைடு அல்லது கார்பனேட்; ஸ்டெயின் என்பது தொழிற்சாலையில் தயாரிக்கப்பட்ட, அதிக நிலையான கலரன்ட்.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-கோன் (வெப்பநிலைக் கூம்பு; cone)
-: குறிப்பிட்ட ஹீட்வொர்க்கில் வளையும், அளவுத்திருத்தம் செய்யப்பட்ட செராமிக் பிரமிடு. விட்னஸ் கோன் பாண்டங்களுக்கு உண்மையில் கிடைத்ததைக் காட்டுகிறது.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-க்ராலிங் (crawling)
-: ஃபயரிங்கில் கிளேஸ் சுருண்டு மணிகளாகி, வெறும் களிமண்ணை விட்டுவிடுவது.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-கிரேசிங் (crazing)
-: தன் க்ளே பாடியை விட அதிகம் சுருங்கும் கிளேஸில் நுண்ணிய விரிசல்கள்; விரும்பப்பட்டால் கிராக்கிள்.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-டிவிட்ரிஃபிகேஷன் (devitrification)
-: குளிர்தலின் தொடக்கத்தில் கண்ணாடியிலிருந்து படிகங்கள் வளர்வது, அவை தேவையில்லாத இடத்தில்.
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
-டன்டிங் (dunting)
-: குளிர்தல் அல்லது சூடாதல் அழுத்தத்தால் பாண்டத்தில் விரிசல்கள், பெரும்பாலும் குவார்ட்ஸ் இன்வர்ஷனில், {{1063 °F; 573 °C}}.
+Dunting
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-எர்த்தன்வேர் (earthenware)
-: நுண்துளையுள்ளதாகவே இருக்கும் லோ-ஃபயர் க்ளே பாடி (ஏறத்தாழ கோன் 06–02).
+Earthenware
+: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
 
-ஃபெல்ட்ஸ்பார் (feldspar)
-: அலுமினாவுடனும் சிலிக்காவுடனும் கார ஃப்ளக்ஸ் தரும் கனிமம்: பொட்டாஷ், சோடா அல்லது நெஃபலின் சைனைட்.
+Feldspar
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-ஃப்ளோக்குலன்ட், டிஃப்ளோக்குலன்ட் (flocculant, deflocculant)
-: ஸ்லரியை ஜெல் ஆக்கும் (எப்சம் உப்பு, வினிகர்) அல்லது நீர்க்கச் செய்யும் (சோடியம் சிலிக்கேட், Darvan) சேர்க்கைப் பொருட்கள்.
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-ஃப்ளக்ஸ் (இளக்கி; flux)
-: சிலிக்காவின் உருகுநிலையைக் குறைக்கும் ஆக்சைடு.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-உணவுக்குப் பாதுகாப்பானது (food safe)
-: சட்டப்படி, அமிலச் சோதனையில் வரம்புகளை விடக் குறைவான ஈயமும் காட்மியமும் வெளியிடுவது. ஈயமற்றது என்பதற்குச் சமமல்ல.
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
 
-ஃபிரிட் (frit)
-: தொழிற்சாலையில் தயாரிக்கப்பட்ட கண்ணாடி, உருக்கி, உடனே குளிர்வித்து, அரைக்கப்பட்டது; கரையும் அல்லது நச்சுத்தன்மையுள்ள ஆக்சைடுகளைக் கரையாதவை ஆக்குகிறது.
+Frit
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
 
-கிளாஸ் ஃபார்மர் (glass former)
-: கண்ணாடியை உருவாக்கும் ஆக்சைடு, பொதுவாக சிலிக்கா.
+Glass former
+: The oxide that builds the glass, usually silica.
 
-கிளேஸ் (மெருகு; glaze)
-: ஃபயரிங்கில் உருகி பாண்டத்தை அடைத்து அலங்கரிக்கும் கண்ணாடிப் பூச்சு.
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
 
-கிளேஸ் ஃபயரிங் (இரண்டாம் சுடுதல்; glaze firing, UK: glost firing)
-: கிளேஸை உருக்கும் ஃபயரிங்.
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
 
-கிளேஸ் ஃபிட் (glaze fit)
-: கிளேஸும் க்ளே பாடியும் விரிவில் எவ்வளவு பொருந்துகின்றன; நல்ல ஃபிட்டில் கிளேஸ் சிறிது அழுத்தப்பட்டிருக்கும்.
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
 
-கிளாஸி (பளபளப்பான), சாட்டின், மேட் (gloss, satin, matte)
-: ஒளியைப் பிரதிபலிக்கும் வழவழப்பான; அடங்கிய பளபளப்பு; மந்தமான.
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
 
-கிரீன்வேர் (பச்சை மட்பாண்டம்; greenware)
-: சுடாத பாண்டம்: கெட்டியாகவும் ஈரமாகவும் இருந்தால் லெதர்-ஹார்டு, கட்டற்ற நீர் எதுவும் இல்லாவிட்டால் போன்-டிரை.
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
 
-ஹீட்வொர்க் (heatwork)
-: கில்னில் வெப்பநிலையும் நேரமும் சேர்ந்த விளைவு; கோன்கள் அளப்பது இதுவே.
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
-கயோலின் (kaolin; பிரிட்டன்: சைனா க்ளே)
-: அலுமினாவையும் சிலிக்காவையும் தரும் தூய வெள்ளைக் களிமண்; கிளேஸைத் தொங்கல் நிலையில் வைத்திருக்கிறது. ஆஸ்திரேலியா: Eckalite.
+Kaolin (UK: china clay)
+: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
 
-கில்ன் வாஷ் (kiln wash)
-: கில்ன் ஷெல்ஃப்களைச் சொட்டுகளிலிருந்து காக்கும், வெப்பம் தாங்கும் பூச்சு.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-லீச்சிங் (leaching)
-: சுட்ட கிளேஸிலிருந்து உலோகங்கள் கரைந்து உணவிலோ பானத்திலோ கலத்தல்.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-லிமிட் வாய்ப்பாடு (இலக்கு வாய்ப்பாடு; limit formula, target formula)
-: ஒரு கோனில் நிலைப்புத்தன்மையுள்ள கிளேஸ்களுக்கான வழக்கமான Seger வாய்ப்பாடு வீச்சுகள்; ஒரு குறிப்பு மட்டுமே, உத்தரவாதம் அல்ல.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-லைன் பிளெண்ட் (line blend)
-: ஒரு மூலப்பொருளை இரண்டு அளவுகளுக்கு இடையே படிப்படியாக மாற்றும் சோதனைகள். டிரையாக்சியல் பிளெண்ட் ஒரு கட்டத்தில் மூன்றை மாற்றுகிறது.
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-லைனர் கிளேஸ் (liner glaze)
-: உணவைத் தொடும் மேற்பரப்புகளுக்கான நிலைப்புத்தன்மையுள்ள, பொதுவாக கிளியர் அல்லது வெள்ளை கிளேஸ்.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-LOI (எரிப்பு இழப்பு; loss on ignition)
-: ஃபயரிங்கில் நீர், கார்பன் டைஆக்சைடு, கரிமப் பொருள் அல்லது சல்பர் வாயுவாக வெளியேறுவதால் இழக்கும் எடை.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-சிங்கிள் ஃபயரிங் (ஒரே முறை சுடுதல்; once-firing, single firing)
-: சுடாத பாண்டத்தில் கிளேஸ் பூசி அதை ஒரே ஒரு முறை மட்டும் சுடுவது.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-ஒபாசிஃபையர் (opacifier)
-: ஜிர்கான், வெள்ளீய ஆக்சைடு அல்லது டைட்டானியம் டைஆக்சைடு போன்ற, கிளேஸை ஒளிபுகாததாக்கும் மூலப்பொருள்.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-ஆக்சிடேஷன், ரிடக்ஷன் (oxidation, reduction)
-: ஏராளமான ஆக்சிஜனுடன் (எலக்ட்ரிக் கில்ன்கள்), அல்லது கட்டுப்படுத்தப்பட்ட ஆக்சிஜனுடன் (பொதுவாக கேஸ் அல்லது விறகு) ஃபயரிங்.
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-ஆக்சைடு (oxide)
-: ஒரு தனிமமும் ஆக்சிஜனும் சேர்ந்த சேர்மம்; ஆக்சைடு பகுப்பாய்வு அவற்றை எடை சதவீதத்தில் பட்டியலிடுகிறது.
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-பின்ஹோல், பிளிஸ்டரிங் (pinholing, blistering)
-: சிறிய துளைகள், அல்லது கூர்மையான விளிம்புள்ள பள்ளங்கள், உருகிய கிளேஸ் வழியாக வாயு வெளியேறிய இடங்களில்.
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-போர்சலீன் (porcelain)
-: வெள்ளை நிறம், கயோலின் மிகுந்த ஹை-ஃபயர் க்ளே பாடி, பெரும்பாலும் பகுதி ஒளி ஊடுருவும்.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-R₂O, RO (R₂O and RO)
-: கார ஃப்ளக்ஸ்கள் (Na₂O, K₂O, Li₂O), காரமண் ஃப்ளக்ஸ்கள் (CaO, MgO, BaO, SrO, உடன் ZnO).
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-ஷிவரிங் (shivering)
-: அளவுக்கு மீறி அழுத்தப்பட்டதால் விளிம்புகளில் கிளேஸ் செதில்களாக உதிர்வது; உணவுப் பாத்திரங்களில் ஆபத்து.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-சிலிக்கா (SiO₂; silica)
-: கிளாஸ் ஃபார்மர்; ஃபிளின்ட் அல்லது குவார்ட்ஸ் என்றும் அழைக்கப்படுகிறது.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-சிலிக்கா-அலுமினா விகிதம் (silica to alumina ratio)
-: Seger வாய்ப்பாட்டில் சிலிக்காவை அலுமினாவால் வகுத்தது: அதிகமானால் பளபளப்பை நோக்கி, குறைவானால் மேட்டை நோக்கி.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-ஸ்லிப், எங்கோப் (slip, engobe)
-: தண்ணீரில் களிமண்; எங்கோப் என்பது களிமண் அல்லாத பொருட்கள் அதிகமுள்ள, ஸ்லிப் போன்ற பூச்சு.
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-ஒப்படர்த்தி (specific gravity, SG)
-: அதே கனஅளவு நீருடன் ஒப்பிடும்போது ஸ்லரியின் எடை. பழைய பிரிட்டன் வழக்கு: பைண்ட் எடை.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water.
 
-ஸ்டெபிலைசர் (stabilizer)
-: உருகிய கிளேஸைக் கெட்டியாக்கி நீடித்து உழைக்கும் தன்மையைக் கூட்டும் ஆக்சைடு, முக்கியமாக அலுமினா.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
-ஸ்டோன்வேர் (stoneware)
-: மிட் முதல் ஹை ஃபயர் வரையிலான க்ளே பாடி (ஏறத்தாழ கோன் 5–10), விட்ரிஃபைடு அல்லது ஏறத்தாழ விட்ரிஃபைடு ஆகிறது.
+Stoneware
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-திக்ஸோட்ரோபி (thixotropy)
-: கலக்கும்போது பாய்வது, அசையாமல் இருக்கும்போது மென்மையான ஜெல்லாகக் கெட்டிப்படுவது.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
-அண்டர்கிளேஸ் (underglaze)
-: நிறமுள்ள ஸ்லிப் அல்லது ஆக்சைடு அலங்காரம், பொதுவாக கிளியர் கிளேஸின் கீழ்.
+Underglaze
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-Seger வாய்ப்பாடு (UMF; unity molecular formula, Seger formula)
-: ஒரு கிளேஸின் ஆக்சைடுகள் மூலக்கூறு எண்ணிக்கையாக, ஃப்ளக்ஸ்களின் கூட்டுத்தொகை 1 ஆகுமாறு அளவிடப்பட்டவை.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-விட்ரிஃபிகேஷன் (vitrification)
-: ஃபயரிங்கில் க்ளே பாடி கண்ணாடி போலவும் நுண்துளையற்றதாகவும் ஆவது.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-வேக்ஸ் ரெசிஸ்ட் (wax resist)
-: கிளேஸ் படக்கூடாத இடத்தில், பொதுவாக அடிப்பகுதியில், பூசப்படும் மெழுகு.
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
 
-வைட்டிங் (whiting)
-: கால்சியம் கார்பனேட், கால்சியத்தின் முக்கிய ஃப்ளக்ஸ்; ஃபயரிங்கில் தன் எடையில் 40%-க்கும் அதிகத்தை இழக்கிறது. ஜெர்மன்: Kreide.
+Whiting
+: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
 
 ## Sources {#sources lang=en}
 
@@ -512,5 +512,21 @@ Seger வாய்ப்பாடு (UMF; unity molecular formula, Seger formul
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

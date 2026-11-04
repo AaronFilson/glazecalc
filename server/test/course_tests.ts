@@ -265,13 +265,15 @@ describe("the companion to John Britt's course", () => {
       'clay',
       'firing'
     ]);
-    // A lab unit attaches the section its warning points to: firing the kiln section, not the habits.
+    // A lab unit attaches every section its warning points to: firing the kiln section, not the habits;
+    // special surfaces both the materials and the kiln.
     const byId = new Map(units.map((unit) => [unit.id, unit]));
-    expect(byId.get('firing')?.safety).to.equal('kiln');
-    expect(byId.get('blending')?.safety).to.equal('habits');
-    expect(byId.get('test-tiles-and-melt')?.safety).to.equal('habits');
-    expect(byId.get('recipes-and-substitutes')?.safety).to.equal('materials');
-    expect(byId.get('clay')?.safety).to.equal('the-main-hazard');
+    expect(byId.get('firing')?.safety).to.eql(['kiln']);
+    expect(byId.get('blending')?.safety).to.eql(['habits']);
+    expect(byId.get('test-tiles-and-melt')?.safety).to.eql(['habits']);
+    expect(byId.get('recipes-and-substitutes')?.safety).to.eql(['materials', 'habits']);
+    expect(byId.get('special-surfaces')?.safety).to.eql(['materials', 'kiln']);
+    expect(byId.get('clay')?.safety).to.eql(['the-main-hazard', 'respirators']);
     expect(findUnit('5')?.id).to.equal('blending');
     expect(findUnit('The unity formula')?.id).to.equal('unity-formula');
     expect(findUnit('the  UNITY formula')?.id).to.equal('unity-formula');
@@ -338,7 +340,7 @@ describe("the companion to John Britt's course", () => {
       'johnbrittpottery.com',
       'The Complete Guide to High-Fire Glazes',
       'The Complete Guide to Mid-Range Glazes',
-      'first published by Lark Books',
+      'first came out under Lark imprints',
       'Union Square & Co., part of Hachette Book Group',
       'not connected with him',
       '/guides/safe-mixing'

@@ -31,8 +31,8 @@ export interface CourseUnit {
   checks: string[];
   /** Weighing, mixing or firing: the safe mixing guide comes first. */
   lab: boolean;
-  /** For lab work, the safe mixing section its warning points to first ("habits" when it names none). */
-  safety?: string;
+  /** For lab work, the safe mixing sections its warning points to, in order ("habits" for a link to none). */
+  safety?: string[];
 }
 
 /** The text of a section's [!WARNING] blocks: their quoted lines. */
@@ -96,7 +96,7 @@ export const courseUnits = (): CourseUnit[] => {
         .map((line) => /^-\s+(.*)$/.exec(line.trim())?.[1])
         .filter((line): line is string => !!line),
       lab,
-      ...(lab ? { safety: mixing.find((link) => link.section)?.section ?? 'habits' } : {})
+      ...(lab ? { safety: [...new Set(mixing.map((link) => link.section || 'habits'))] } : {})
     });
   }
   return units;
