@@ -213,50 +213,50 @@ Label: Mmiri maka specific gravity a chọrọ
 
 **Bentonite**, ụrọ dị nnọọ nro, na-enyere aka ijide irighiri ihe ndị ọzọ n'ime mmiri. Glaze ịbanye na-adaberekarị na 15 ruo 25% ụrọ amụ maka nke a. Maka usoro glaze nwere ụrọ pere mpe, ihe dị ka 1 ruo 3% bentonite na-enyere aka; Digitalfire kwuru na glaze nwere ihe karịrị 15% ụrọ ekwesịghị ịchọ bentonite karịa 1% nke ịdị arọ glaze akọrọ.
 
-## Test tile na line blend {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Malite na obere
+### Start small
 
-Derek Au na-arịgo n'ụzọ atọ: nnwale 50 ma ọ bụ 100 g, nnwale 1 ruo 2 kg ma ọ rụọ ọrụ, mgbe ahụ batch studio 5 ruo 10 kg. Site n'atụmatụ anyị, nnwale 100 g na {{SG 1.45}} na-eme ihe dị ka 135 mL (ihe dị ka 4½ US fl oz) slurry, zuru iji banye obere tile ole na ole n'iko dị warara.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Nwalee n'ụrọ nke gị
+### Test on your own clay
 
-Glaze{{en: glaze}} nwere ike ịdị iche nke ukwuu n'ụrọ ọzọ ma ọ bụ na kiln ọzọ: Clay Art Center nwalere glaze ọ bụla o mezigharịrị n'ahụ ụrọ anọ, na cone 6 na cone 10. Nduzi Potclays maka ndị mbido na nnwale glaze na-atụ aro:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- **test tile** 6 ruo 10 (obere iberibe maka ịnwale glaze) nke ụrọ ị ga-eji n'ezie, na-edetu ma a gbara ha bisque ma ọ bụ ha bụ bone dry
-- otu mgbanwe n'otu oge
-- ịbanye otu ugboro na ịbanye ugboro abụọ, iji hụ glaze gịrịgịrị na ọkpụrụkpụ
-- tile ọ bụla n'otu ibu kiln ahụ
-- akara na tile ọ bụla tupu ịgba ọkụ, site na stamp, ịkpụ ma ọ bụ pensụl underglaze.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Anyị na-atụ aro tile na-eguzo ọtọ, ebe ọ bụ na tile dị larịị na-ezo otu glaze si asọ anya, nwere eriri nwere ụdị iji gosi otu glaze si agbaji n'ọnụ, na ụkwụ efu. Tinye nke ọ bụla n'elu obere efere ma ọ bụ iberibe bisque, ma ọ bụ n'elu shelf e tinyere kiln wash, iji jide ntapụ. Tinye **cone akaebe** (witness cone), obere cone ceramic na-ehulata mgbe ọ natara ọkụ zuru ezu, nso tile ndị ahụ iji gosi ihe ha natara; [Ịgba ọkụ na kiln dị mfe](/guides/firing) na-akọwa cone. Nye tile ọ bụla koodu dị mkpụmkpụ, ma dee ya n'akụkụ usoro glaze ahụ na ndekọ gị. Willers, na-ede maka Ceramic Arts Network, na-eji nọmba na mkpụrụ edemede, ma dee usoro ahụ n'onwe ya n'ihu akwụkwọ ndetu ahụ.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Line blend
+### Line blends
 
-**Line blend** bụ ahịrị nnwale na-aga nzọụkwụ nhata site n'otu ngwakọta gaa na nke ọzọ: site n'otu glaze gaa na nke abụọ, ma ọ bụ site na glaze ntọala gaa n'otu glaze ahụ nwere ihe na-enye agba karịa. Derek Au, dịka ọmụmaatụ, na-agbakwunye iron oxide na ntọala doro anya na nzọụkwụ 1%. Usoro olu a na-ejikọta na Ian Currie na-echekwa oge, n'ihi na ị na-agwakọta naanị nsọtụ abụọ ahụ:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Gwakọta glaze nsọtụ abụọ ahụ, A na B, dịka batch nke otu ịdị ukwuu, ma nyọọ ha abụọ.
-2. Gbakwunye mmiri na nke nwere olu pere mpe ruo mgbe ha abụọ nwere kpọmkwem otu olu mmiri.
-3. Kpalie ha abụọ, mgbe ahụ jiri sirinji dọta ngwakọta ọ bụla n'iko nke ya nwere nọmba.
-4. Kpalie iko ọ bụla ma banye otu tile.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-N'ihe atụ anyị rụpụtara, A bụ 100 g nke ntọala doro anya, B bụkwa otu ihe ahụ ya na 4 g red iron oxide a gbakwunyere (mgbakwunye 4%). Milliliter ọ bụla nke B nwere otu òkè ntọala dịka milliliter nke A, gbakwunyere iron ya, ya mere iko ndị ahụ na-aga site n'enweghị iron ruo 4% na nzọụkwụ 1%. Nsọtụ ọ bụla na-enye blend ahụ 100 mL, nke batch 100 g na-ekpuchi site n'atụmatụ anyị.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Line blend iron nzọụkwụ ise, 40 mL kwa iko (ihe atụ anyị rụpụtara)
-Label: Ihe atụ line blend
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Iko | Ntọala doro anya (A) | Ntọala nwere 4% iron (B) | Iron oxide, % nke ntọala |
-| --- | -------------------: | -----------------------: | -----------------------: |
-| 1   |                40 mL |                     0 mL |                        0 |
-| 2   |                30 mL |                    10 mL |                        1 |
-| 3   |                20 mL |                    20 mL |                        2 |
-| 4   |                10 mL |                    30 mL |                        3 |
-| 5   |                 0 mL |                    40 mL |                        4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Usoro a chọrọ mgbakọ nlezianya, nsọtụ e gwakọtara nke ọma nwere SG hà, na ihe ọtụtụ na-atụ nke ọma. Derek Au na-agwakọtakwa site n'ịdị arọ kama olu. **Triaxial blend** na-eme otu ihe ahụ na nsọtụ atọ, a haziri n'elu triangle.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Mgbe otu nzọụkwụ yiri ka ọ ga-adị mma, **Chekwaa dịka mbipụta** na [ibe usoro glaze](/recipe) na-edebe ya dịka usoro glaze nke ya ma hapụ nke mbụ ka ọ dị.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Idebe ndekọ {#records}
 

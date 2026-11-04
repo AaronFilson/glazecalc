@@ -213,50 +213,50 @@ Label: লক্ষ্য আপেক্ষিক গুরুত্বের �
 
 **বেন্টোনাইট**{{en: bentonite}}, একটি অতি সূক্ষ্ম কাদামাটি, অন্য কণাগুলোকে ভাসিয়ে ধরে রাখতে সাহায্য করে। ডোবানোর গ্লেজ এর জন্য সাধারণত 15 থেকে 25% কাঁচা কাদামাটির ওপর নির্ভর করে। যে রেসিপিতে কাদামাটি কম, তার জন্য প্রায় 1 থেকে 3% বেন্টোনাইট সাহায্য করে; Digitalfire বলে, যে গ্লেজে 15%-এর বেশি কাদামাটি আছে তাতে শুকনো গ্লেজের ওজনের 1%-এর বেশি বেন্টোনাইট লাগার কথা নয়।
 
-## টেস্ট টাইল ও লাইন ব্লেন্ড {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### ছোট দিয়ে শুরু করুন
+### Start small
 
-Derek Au তিন ধাপে এগোন: 50 বা 100 g-এর পরীক্ষা, কাজ করলে 1 থেকে 2 kg-এর ট্রায়াল, তারপর 5 থেকে 10 kg-এর স্টুডিও ব্যাচ। আমাদের অনুমানে {{SG 1.45}}-এ 100 g-এর পরীক্ষায় প্রায় 135 mL (প্রায় 4½ US fl oz) গোলা হয়, যা সরু কাপে কয়েকটি ছোট টাইল ডোবানোর জন্য যথেষ্ট।
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### নিজের কাদামাটিতে পরীক্ষা করুন
+### Test on your own clay
 
-অন্য কাদামাটিতে বা অন্য চুল্লিতে (কিলন) গ্লেজ বেশ আলাদা দেখাতে পারে: Clay Art Center তাদের প্রতিটি নতুন করে বানানো গ্লেজ চারটি ক্লে বডিতে পরীক্ষা করেছিল, শঙ্কু 6 ও শঙ্কু 10-এ। Potclays-এর গ্লেজ পরীক্ষার নবীনদের গাইড প্রস্তাব করে:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- আপনি যে কাদামাটি আসলে ব্যবহার করবেন তার 6 থেকে 10টি **টেস্ট টাইল** (গ্লেজ চেষ্টা করার ছোট টুকরো), সেগুলো বিস্ক করা না পুরোপুরি শুকনো তা লিখে রেখে
-- একবারে একটি পরিবর্তন
-- একবার ডোবানো ও দুবার ডোবানো, যাতে গ্লেজের পাতলা ও পুরু রূপ দেখা যায়
-- প্রতিটি টাইল একই চুল্লি-ভর্তিতে
-- পোড়ানোর আগে প্রতিটি টাইলে একটি চিহ্ন, স্ট্যাম্প, খোদাই বা আন্ডারগ্লেজ পেনসিল দিয়ে।
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-আমরা প্রস্তাব করি এমন টাইল, যা সোজা দাঁড়ায়, কারণ সমতল টাইল গ্লেজ কতদূর গড়ায় তা লুকিয়ে ফেলে; সঙ্গে থাকবে একটি খসখসে ফিতা, যা দেখাবে ধারের ওপর গ্লেজ কীভাবে ভাঙে, আর একটি খালি তলা। ফোঁটা ধরতে প্রতিটি টাইল একটি ছোট থালায়, বিস্কের টুকরোয় বা কিলন ওয়াশ দেওয়া তাকে বসান। টাইলগুলোর কাছে একটি **সাক্ষী শঙ্কু** রাখুন, একটি ছোট সিরামিক শঙ্কু, যা যথেষ্ট তাপ পেলে বেঁকে যায়, তাতে বোঝা যাবে টাইলগুলো কতটা তাপ পেয়েছে; শঙ্কু কী তা বোঝানো আছে [একটি সাধারণ চুল্লি পোড়ানো](/guides/firing) গাইডে। প্রতিটি টাইলকে একটি ছোট কোড দিন, আর রেকর্ডে রেসিপির পাশে তা লিখুন। Ceramic Arts Network-এর জন্য লেখা Willers সংখ্যা ও অক্ষর ব্যবহার করেন, আর ব্যবস্থাটি নিজেই খাতার সামনে লিখে রাখেন।
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### লাইন ব্লেন্ড
+### Line blends
 
-**লাইন ব্লেন্ড** হলো পরীক্ষার একটি সারি, যা সমান ধাপে এক মিশ্রণ থেকে অন্যটিতে যায়: একটি গ্লেজ থেকে দ্বিতীয়টিতে, অথবা একটি মূল গ্লেজ থেকে একই গ্লেজে আরও রঞ্জক উপাদানে। যেমন Derek Au একটি স্বচ্ছ মূল গ্লেজে আয়রন অক্সাইড 1%-এর ধাপে বাড়ান। Ian Currie-র সঙ্গে জড়িত একটি আয়তনভিত্তিক পদ্ধতি সময় বাঁচায়, কারণ আপনি শুধু দুই প্রান্ত মেশান:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. A ও B, দুটি প্রান্তের গ্লেজ একই আকারের ব্যাচে মেশান, এবং দুটিই ছেঁকে নিন।
-2. যেটির আয়তন কম, তাতে পানি যোগ করুন, যতক্ষণ না দুটির ভেজা আয়তন ঠিক সমান হয়।
-3. দুটিই নাড়ুন, তারপর সিরিঞ্জ দিয়ে প্রতিটি মিশ্রণ নিজের নম্বর দেওয়া কাপে নিন।
-4. প্রতিটি কাপ নেড়ে একটি টাইল ডোবান।
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-আমাদের কাজ করা উদাহরণে A হলো 100 g স্বচ্ছ মূল গ্লেজ, আর B হলো একই গ্লেজে 4 g লাল আয়রন অক্সাইড যোগ করা (4% সংযোজন)। B-র প্রতি মিলিলিটারে মূল গ্লেজের ভাগ A-এর প্রতি মিলিলিটারের সমান, সঙ্গে তার লোহা, তাই কাপগুলো লোহা ছাড়া থেকে 4% পর্যন্ত 1%-এর ধাপে এগোয়। প্রতিটি প্রান্ত ব্লেন্ডে 100 mL দেয়, যা আমাদের অনুমানে 100 g-এর ব্যাচে হয়ে যায়।
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: পাঁচ ধাপের লোহার লাইন ব্লেন্ড, প্রতি কাপে 40 mL (আমাদের কাজ করা উদাহরণ)
-Label: লাইন ব্লেন্ডের উদাহরণ
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| কাপ | স্বচ্ছ মূল গ্লেজ (A) | 4% লোহাসহ মূল গ্লেজ (B) | আয়রন অক্সাইড, মূল গ্লেজের % |
-| --- | -------------------: | ----------------------: | ---------------------------: |
-| 1   |                40 mL |                    0 mL |                            0 |
-| 2   |                30 mL |                   10 mL |                            1 |
-| 3   |                20 mL |                   20 mL |                            2 |
-| 4   |                10 mL |                   30 mL |                            3 |
-| 5   |                 0 mL |                   40 mL |                            4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-এই পদ্ধতিতে সতর্ক হিসাব, সমান আপেক্ষিক গুরুত্বের ভালোভাবে মেশানো প্রান্ত, আর একটি নির্ভুল স্কেল লাগে। Derek Au আয়তনের বদলে ওজন ধরেও ব্লেন্ড করেন। **ট্রাইঅ্যাক্সিয়াল ব্লেন্ড** তিন প্রান্ত নিয়ে একই কাজ করে, যা একটি ত্রিভুজে সাজানো হয়।
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> কোনো ধাপ আশাপ্রদ মনে হলে [রেসিপির পাতায়](/recipe) **কপি হিসেবে সংরক্ষণ করুন** সেটিকে নিজস্ব রেসিপি হিসেবে রেখে দেয় এবং মূলটি যেমন ছিল তেমনই রাখে।
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## রেকর্ড রাখা {#records}
 

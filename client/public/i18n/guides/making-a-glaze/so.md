@@ -213,50 +213,50 @@ Label: Biyaha SG la beegsado
 
 **Bentonite**, dhoobo aad u jilicsan, waxay caawisaa inay qaybaha kale biyaha ku dhex hayso. Glaze-yada quusinta badanaa waxay taas ugu tiirsan yihiin 15 ilaa 25% dhoobo ceeriin ah. Hab dhoobo ku yar, qiyaastii 1 ilaa 3% bentonite ah ayaa caawisa; Digitalfire waxay leedahay glaze leh in ka badan 15% dhoobo ah ma aha inuu u baahdo bentonite ka badan 1% miisaanka glaze-ka qalalan.
 
-## Test tile-yada iyo line blend-yada {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Ku bilow wax yar
+### Start small
 
-Derek Au wuxuu kor ugu kacaa saddex tallaabo: tijaabo 50 ama 100 g ah, tijaabo 1 ilaa 2 kg ah haddii ay shaqeyso, kadibna batch istuudiyo oo 5 ilaa 10 kg ah. Qiyaastayada, tijaabo 100 g ah oo {{SG 1.45}} ah waxay samaysaa qiyaastii 135 mL (qiyaastii 4½ US fl oz) slurry ah, oo ku filan in dhowr tile oo yaryar lagu quusiyo koob cidhiidhi ah.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Ku tijaabi dhoobadaada
+### Test on your own clay
 
-Glaze ayaa u ekaan kara si aad u kala duwan dhoobo kale ama kiln kale: Clay Art Center waxay glaze kasta oo ay dib u habaysay ku tijaabisay afar nooc oo dhoobo ah, cone 6 iyo cone 10. Hagaha bilowga ee tijaabada glaze-ka ee Potclays wuxuu soo jeedinayaa:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 ilaa 10 **test tile** (gabal yaryar oo glaze lagu tijaabiyo) oo ka samaysan dhoobada aad dhab ahaan isticmaali doonto, adigoo qoraya inay yihiin bisque ama bone dry (si buuxda u qallalan)
-- hal isbeddel markiiba
-- hal quusin iyo laba quusin, si aad u aragto glaze-ka khafiif iyo qaro weyn
-- tile kasta isla rarka kiln-ka
-- calaamad tile kasta inta aan la gubin, shaabad, xardho ama qalin underglaze ah.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Waxaan kuu soo jeedinaynaa tile-yo taagan, maadaama tile siman uu qariyo inta glaze-ku orodo, oo leh xarig qallafsan si loo arko sida glaze-ku ugu jabo geesaha, iyo cag qaawan. Mid kasta saar saxan yar ama gabal bisque ah, ama shelf kiln-wash la mariyay, si uu u qabto tiftiifka. Tile-yada agtooda dhig **cone markhaati ah** (witness cone), cone yar oo ceramics ah oo laaba marka uu helo kulayl ku filan, si uu u muujiyo waxa ay heleen; [hagaha gubidda](/guides/firing) ayaa sharxaya cone-yada. Tile kasta sii kood gaaban, oo ku qor habka agtiisa diiwaankaaga. Willers, oo u qora Ceramic Arts Network, wuxuu isticmaalaa lambaro iyo xarfo, nidaamka laftiisana wuxuu ku qoraa bogga hore ee buugga.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Line blend-yada
+### Line blends
 
-**Line blend** waa saf tijaabooyin ah oo si siman uga gudba hal isku-dar ilaa mid kale: hal glaze ilaa mid labaad, ama glaze aasaasi ah ilaa isla glaze-ka oo midabeeye badan leh. Derek Au, tusaale ahaan, wuxuu iron oxide ku dhex mariyaa glaze aasaasi hufan tallaabooyin 1% ah. Hab mug ku salaysan oo lala xiriiriyo Ian Currie ayaa waqti badbaadiya, sababtoo ah waxaad qastaa labada daraf oo keliya:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Qas labada glaze ee darafyada, A iyo B, batch-yo isku cabbir ah, oo shaandhee labadaba.
-2. Biyo ku dar midka mugga yar ilaa labaduba yeeshaan mug qoyan oo isku mid sax ah.
-3. Labadaba walaaq, kadibna isku-dar kasta irbad ku soo qaad oo ku shub koob u gaar ah oo lambar leh.
-4. Koob kasta walaaq oo tile ku quusi.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Tusaalahayaga xisaabsan, A waa 100 g glaze aasaasi hufan, B-na waa isla kaas oo lagu daray 4 g red iron oxide (ku-dar 4% ah). Milliliter kasta oo B ah wuxuu hayaa isla qaybta aasaasiga ee milliliter A ah, iyo iron-kiisa, sidaas darteed koobabku waxay ka gudbaan iron la'aan ilaa 4% tallaabooyin 1% ah. Daraf kastaa wuxuu blend-ka siiyaa 100 mL, oo batch 100 g ah daboolo qiyaastayada.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Line blend iron oo shan tallaabo ah, 40 mL koob kasta (tusaalahayaga xisaabsan)
-Label: Tusaale line blend
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Koob | Aasaas hufan (A) | Aasaas leh 4% iron (B) | Iron oxide, % aasaaska |
-| ---- | ---------------: | ---------------------: | ---------------------: |
-| 1    |            40 mL |                   0 mL |                      0 |
-| 2    |            30 mL |                  10 mL |                      1 |
-| 3    |            20 mL |                  20 mL |                      2 |
-| 4    |            10 mL |                  30 mL |                      3 |
-| 5    |             0 mL |                  40 mL |                      4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Habku wuxuu u baahan yahay xisaab taxaddar leh, darafyo si fiican loo qasay oo SG siman leh, iyo miisaan sax ah. Derek Au sidoo kale wuxuu isku daraa miisaan halkii mug. **Triaxial blend** isla sidaas ayuu sameeyaa saddex daraf, oo loo dhigay saddex-xagal.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Marka tallaabo u muuqato mid rajo leh, **Kaydi nuqul ahaan** ee [bogga habka](/recipe) ayaa u kaydiya hab u gaar ah, asalkana sidiisii ayuu uga tagaa.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Haynta diiwaannada {#records}
 

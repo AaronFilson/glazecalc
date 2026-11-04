@@ -213,50 +213,50 @@ Label: Vesimäärä tavoiteominaispainoon
 
 **Bentoniitti**, erittäin hienojakoinen savi, auttaa pitämään muut hiukkaset suspensiossa. Upotuslasitteissa tähän tarkoitukseen on yleensä 15–25 % polttamatonta savea. Jos reseptissä on vähän savea, noin 1–3 % bentoniittia auttaa; Digitalfiren mukaan lasite, jossa on yli 15 % savea, ei tarvitsisi bentoniittia yli 1 % kuivan lasitteen painosta.
 
-## Koepalat ja koesarjat {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Pienestä aloittaminen
+### Start small
 
-Derek Au etenee kolmessa vaiheessa: ensin 50 tai 100 g:n koe, sitten toimivasta lasitteesta 1–2 kg:n koe-erä ja lopuksi 5–10 kg:n pajaerä. Arviomme mukaan 100 g:n koe, jonka lukema on {{SG 1.45}}, tuottaa noin 135 mL (noin 4½ US fl oz) lasitelietettä{{en: slurry}}, mikä riittää muutaman pienen koepalan{{en: test tiles}} upottamiseen kapeassa mukissa.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Testaaminen omalla savella
+### Test on your own clay
 
-Lasite{{en: glaze}} voi näyttää aivan erilaiselta toisella savella tai toisessa uunissa: Clay Art Center testasi jokaisen muuttamansa lasitereseptin neljällä massalla{{en: clay bodies}}, keilassa{{en: cone}} 6 ja keilassa 10. Potclaysin aloittelijan opas lasitteiden testaamiseen ehdottaa:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **koepalaa** (pieniä paloja lasitteen kokeilemiseen) siitä savesta, jota todella käytetään, ja merkintä siitä, ovatko ne raakapoltettuja{{en: bisqued}} vai täysin kuivia
-- yksi muutos kerrallaan
-- yksi ja kaksi upotusta, jotta lasite nähdään ohuena ja paksuna
-- kaikki koepalat samaan uunilliseen
-- merkintä jokaiseen koepalaan ennen polttoa leimalla, kaivertamalla tai alilasitekynällä.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Suosittelemme pystyssä seisovia koepaloja, joissa on kuvioitu vyöhyke, josta näkee, miten lasite ohenee reunoilla ja vaihtaa sävyä, sekä lasitteeton pohja; tasainen koepala nimittäin peittää sen, kuinka pitkälle lasite valuu. Aseta kukin valumien varalta pienelle alustalle tai raakapoltetun saven palalle tai suoja-aineella käsitellylle uunilevylle. Aseta koepalojen lähelle **tarkkailukeila**{{en: witness cone}}, pieni keraaminen keila, joka taipuu, kun se on saanut tarpeeksi lämpöä, osoittamaan, kuinka paljon lämpöä koepalat saivat; opas [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing) selittää keilat. Anna jokaiselle koepalalle lyhyt koodi ja kirjaa se muistiinpanoihin reseptin kohdalle. Ceramic Arts Networkille kirjoittava Willers käyttää numeroita ja kirjaimia ja kirjoittaa itse järjestelmän muistikirjan alkuun.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Koesarjat
+### Line blends
 
-**Koesarja**{{en: line blend}} on rivi kokeita, jotka etenevät tasaisin askelin seoksesta toiseen: lasitteesta toiseen tai pohjalasitteesta samaan lasitteeseen, jossa on enemmän väriainetta{{en: colorant}}. Derek Au esimerkiksi lisää rautaoksidia läpinäkyvään pohjalasitteeseen 1 %:n askelin. Ian Currien nimeen liitetty tilavuusmenetelmä säästää aikaa, koska sekoitettavaksi tulee vain sarjan kaksi päätä:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Sekoita kaksi päätylasitetta, A ja B, samankokoisina erinä ja seulo molemmat.
-2. Lisää vettä siihen, jonka tilavuus on pienempi, kunnes molempien märkätilavuus on täsmälleen sama.
-3. Sekoita molemmat ja mittaa sitten kukin seos ruiskulla omaan numeroituun kuppiinsa.
-4. Sekoita jokainen kuppi ja upota siihen koepala.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Laskuesimerkissämme A on 100 g läpinäkyvää pohjalasitetta, ja B on samaa, johon on lisätty 4 g punaista rautaoksidia (4 %:n lisäys). B:n jokaisessa millilitrassa on pohjalasitetta saman verran kuin A:n millilitrassa ja lisäksi sen rauta, joten kupit etenevät raudattomasta 4 %:iin 1 %:n askelin. Kumpikin pää antaa sarjaan 100 mL, minkä 100 g:n erä arviomme mukaan kattaa.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Viisivaiheinen rautakoesarja, 40 mL kuppia kohden (laskuesimerkkimme)
-Label: Koesarjaesimerkki
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Kuppi | Läpinäkyvä pohjalasite (A) | Pohjalasite, jossa 4 % rautaa (B) | Rautaoksidi, % pohjalasitteesta |
-| ----- | -------------------------: | --------------------------------: | ------------------------------: |
-| 1     |                      40 mL |                              0 mL |                               0 |
-| 2     |                      30 mL |                             10 mL |                               1 |
-| 3     |                      20 mL |                             20 mL |                               2 |
-| 4     |                      10 mL |                             30 mL |                               3 |
-| 5     |                       0 mL |                             40 mL |                               4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Menetelmä vaatii huolellista laskemista, hyvin sekoitetut päät, joiden ominaispaino on tasainen, ja tarkan vaa’an. Derek Au tekee seokset myös punnitsemalla tilavuusmittauksen sijaan. **Kolmiokoe** tekee saman kolmella päätyseoksella, jotka asetetaan kolmion muotoon.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Kun jokin sarjan vaihe näyttää lupaavalta, [reseptisivun](/recipe) **Tallenna kopiona** -toiminto tallentaa sen omaksi reseptikseen ja jättää alkuperäisen ennalleen.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Muistiinpanojen pitäminen {#records}
 

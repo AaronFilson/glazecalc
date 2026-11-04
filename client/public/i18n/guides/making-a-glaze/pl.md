@@ -213,50 +213,50 @@ Label: Ilość wody dla docelowej gęstości względnej
 
 **Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze ze zbyt małą ilością gliny pomaga ok. 1–3 % bentonitu; według Digitalfire szkliwo z ponad 15 % gliny nie powinno potrzebować bentonitu w ilości większej niż 1 % masy suchego szkliwa.
 
-## Płytki testowe i próby liniowe {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Na początek małe ilości
+### Start small
 
-Derek Au zwiększa skalę w trzech krokach: test na 50 lub 100 g, potem, jeśli się powiedzie, próba na 1–2 kg, a na koniec pracowniana porcja 5–10 kg. Według naszych szacunków test na 100 g przy {{SG 1.45}} daje ok. 135 mL (ok. 4½ US fl oz) zawiesiny{{en: slurry}}, czyli tyle, by zanurzyć kilka małych płytek w wąskim kubku.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Testy na własnej glinie
+### Test on your own clay
 
-Szkliwo{{en: glaze}} może wyglądać zupełnie inaczej na innej glinie lub w innym piecu: w Clay Art Center sprawdzono każde z tamtejszych szkliw o zmienionej recepturze na czterech masach ceramicznych{{en: clay bodies}}, w wypale do stożka{{en: cone}} 6 i do stożka 10. Poradnik testowania szkliw dla początkujących firmy Potclays zaleca:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **płytek testowych**{{en: test tiles}} (małych kawałków do wypróbowania szkliwa) z gliny, która będzie faktycznie używana, z adnotacją, czy są wypalone na biskwit{{en: bisqued}}, czy całkowicie suche
-- jedną zmianę naraz
-- jednokrotne i dwukrotne zanurzenie, by zobaczyć szkliwo w cienkiej i grubej warstwie
-- wszystkie płytki w tym samym wsadzie pieca
-- oznaczenie każdej płytki przed wypałem stemplem, rytem lub kredką podszkliwną.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Proponujemy płytki stojące (płaska płytka ukrywa, jak daleko szkliwo spływa), z pasem faktury, który pokaże, jak szkliwo zmienia barwę na krawędziach, oraz z nieszkliwioną stopką. Każdą płytkę należy postawić na małej podstawce, kawałku biskwitu lub warstwie pobiałki, aby zebrać krople. Obok płytek należy umieścić **stożek kontrolny**{{en: witness cone}}, czyli mały ceramiczny stożek, który wygina się, gdy otrzyma dość ciepła, aby pokazać, ile ciepła otrzymały płytki; [poradnik o wypale](/guides/firing) wyjaśnia, jak działają stożki. Każda płytka powinna dostać krótki kod, który zapisuje się przy recepturze w notatkach. Willers w artykule dla Ceramic Arts Network używa liczb i liter, a sam system zapisuje na początku zeszytu.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Próby liniowe
+### Line blends
 
-**Próba liniowa**{{en: line blend}} to szereg testów, który równymi krokami przechodzi od jednej mieszanki do drugiej: od jednego szkliwa do drugiego albo od szkliwa bazowego do tego samego szkliwa z większą ilością barwnika{{en: colorant}}. Derek Au na przykład zwiększa ilość tlenku żelaza w bezbarwnej bazie co 1 %. Metoda objętościowa związana z nazwiskiem Iana Curriego oszczędza czas, bo rozrabia się tylko dwie skrajne mieszanki:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Rozrobić oba skrajne szkliwa, A i B, w porcjach tej samej wielkości i przesiać oba.
-2. Do tego, którego objętość jest mniejsza, dolać wody, aż oba będą miały dokładnie taką samą objętość.
-3. Zamieszać oba, a następnie odmierzyć strzykawką składniki każdej mieszanki do osobnego, ponumerowanego kubka.
-4. Zamieszać zawartość każdego kubka i zanurzyć w nim płytkę.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-W naszym przykładzie A to 100 g bezbarwnej bazy, a B to taka sama baza z dodatkiem 4 g tlenku żelaza czerwonego (dodatek 4 %). Każdy mililitr B zawiera tyle samo bazy co mililitr A, a do tego żelazo, więc kolejne kubki przechodzą od braku żelaza do 4 % co 1 %. Każda skrajna mieszanka daje do próby 100 mL, a według naszych szacunków porcja 100 g to pokrywa.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Pięciostopniowa próba liniowa z żelazem, 40 mL na kubek (nasz przykład)
-Label: Przykład próby liniowej
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Kubek | Bezbarwna baza (A) | Baza z 4 % żelaza (B) | Tlenek żelaza, % bazy |
-| ----- | -----------------: | --------------------: | --------------------: |
-| 1     |              40 mL |                  0 mL |                     0 |
-| 2     |              30 mL |                 10 mL |                     1 |
-| 3     |              20 mL |                 20 mL |                     2 |
-| 4     |              10 mL |                 30 mL |                     3 |
-| 5     |               0 mL |                 40 mL |                     4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metoda wymaga starannych obliczeń, dobrze wymieszanych skrajnych szkliw o jednakowej gęstości względnej{{en: specific gravity}} i dokładnej wagi. Derek Au miesza też według masy zamiast objętości. **Próba trójskładnikowa** robi to samo z trzema skrajnymi mieszankami, rozmieszczonymi na trójkącie.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Gdy któryś krok wygląda obiecująco, przycisk **Zapisz jako kopię** na [stronie receptury](/recipe) zachowa go jako osobną recepturę, a oryginał pozostawi bez zmian.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Prowadzenie dokumentacji {#records}
 

@@ -213,50 +213,50 @@ Label: Vand til en ønsket massefylde
 
 **Bentonit**, et meget fint ler, hjælper med at holde de andre partikler svævende. Dyppeglasurer klarer det som regel med 15 til 25 % rå ler. Til en opskrift med for lidt ler hjælper ca. 1 til 3 % bentonit; Digitalfire siger, at en glasur med mere end 15 % ler ikke bør have brug for bentonit i mere end 1 % af den tørre glasurs vægt.
 
-## Prøvebrikker og prøverækker {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Start i det små
+### Start small
 
-Derek Au arbejder sig op i tre trin: en test på 50 eller 100 g, en prøveportion på 1 til 2 kg, hvis det virker, og derefter en værkstedsportion på 5 til 10 kg. Efter vores skøn giver en test på 100 g med {{SG 1.45}} ca. 135 mL (ca. 4½ US fl oz) glasurvælling{{en: slurry}}, nok til at dyppe nogle få små prøvebrikker{{en: test tiles}} i et smalt bæger.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Test på eget ler
+### Test on your own clay
 
-En glasur{{en: glaze}} kan se ganske anderledes ud på et andet ler eller i en anden ovn: Clay Art Center testede hver af sine omarbejdede glasurer på fire lermasser{{en: clay bodies}} ved kegle{{en: cone}} 6 og ved kegle 10. Potclays’ begynderguide til glasurtest foreslår:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 til 10 **prøvebrikker** (små stykker til at prøve en glasur på) af det ler, der faktisk skal bruges, med en note om, hvorvidt de er forglødede{{en: bisqued}} eller knastørre
-- én ændring ad gangen
-- et enkelt dyp og et dobbeltdyp for at se glasuren tynd og tyk
-- alle brikker i samme ovnfyld
-- et mærke på hver brik før brændingen, med et stempel, en indridsning eller en underglasurblyant.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Vi foreslår brikker, der står op (en flad brik skjuler, hvor langt en glasur løber), med et bånd med struktur, der viser, hvordan glasuren skifter farve over kanter, og en fod uden glasur. Stil hver brik på en lille skål, et forglødet skår eller pladebeskyttelse, så dryp bliver fanget. Sæt en **kontrolkegle**{{en: witness cone}}, en lille keramisk kegle, der bøjer, når den har fået varme nok, ved siden af brikkerne for at vise, hvor meget varme de har fået; [vejledningen om brænding](/guides/firing) forklarer kegler. Giv hver brik en kort kode, og skriv den ud for opskriften i notaterne. Willers, der skriver for Ceramic Arts Network, bruger tal og bogstaver og skriver selve systemet forrest i notesbogen.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Prøverækker
+### Line blends
 
-En **prøverække**{{en: line blend}} er en række prøver, der går i lige store trin fra én blanding til en anden: fra én glasur til en anden eller fra en grundglasur til den samme glasur med mere farvestof{{en: colorant}}. Derek Au går fx i trin på 1 % med jernoxid i en transparent grundglasur. En rumfangsmetode, som forbindes med Ian Currie, sparer tid, fordi kun de to ender skal blandes:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Bland de to glasurer i hver ende, A og B, som lige store portioner, og sigt begge.
-2. Tilsæt vand til den med mindst rumfang, til begge har præcis det samme våde rumfang.
-3. Rør begge op, og træk derefter med en sprøjte hver blanding over i sit eget nummererede bæger.
-4. Rør i hvert bæger, og dyp en prøvebrik.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-I vores gennemregnede eksempel er A 100 g transparent grundglasur, og B er det samme med 4 g rødt jernoxid tilsat (en tilsætning på 4 %). Hver milliliter af B indeholder den samme andel grundglasur som en milliliter af A plus sit jern, så bægrene går fra intet jern til 4 % i trin på 1 %. Hver ende giver 100 mL til rækken, hvilket en portion på 100 g efter vores skøn rækker til.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: En prøverække med jern i fem trin, 40 mL pr. bæger (vores gennemregnede eksempel)
-Label: Eksempel på prøverække
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Bæger | Transparent grundglasur (A) | Grundglasur med 4 % jern (B) | Jernoxid, % af grundglasuren |
-| ----- | --------------------------: | ---------------------------: | ---------------------------: |
-| 1     |                       40 mL |                         0 mL |                            0 |
-| 2     |                       30 mL |                        10 mL |                            1 |
-| 3     |                       20 mL |                        20 mL |                            2 |
-| 4     |                       10 mL |                        30 mL |                            3 |
-| 5     |                        0 mL |                        40 mL |                            4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metoden kræver omhyggelig regning, velblandede ender med ens massefylde og en nøjagtig vægt. Derek Au blander også efter vægt i stedet for rumfang. Et **trekantsforsøg** gør det samme med tre ender, lagt ud i en trekant.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Når et trin ser lovende ud, gemmer **Gem som kopi** på [opskriftssiden](/recipe) det som en opskrift for sig og lader originalen være, som den var.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Notater {#records}
 

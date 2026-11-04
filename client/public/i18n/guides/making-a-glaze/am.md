@@ -213,50 +213,50 @@ Label: ለታለመ SG የሚያስፈልግ ውሃ
 
 በጣም ልም ሸክላ የሆነው **ቤንቶናይት** ሌሎቹ ቅንጣቶች ተንጠልጥለው እንዲቆዩ ይረዳል። የመንከሪያ ግላዞች ለዚህ ብዙ ጊዜ በ15 እስከ 25% ጥሬ ሸክላ ይተማመናሉ። ሸክላ ለጎደለው የግላዝ አዘገጃጀት 1 እስከ 3% ገደማ ቤንቶናይት ይረዳል፤ Digitalfire ከ15% በላይ ሸክላ ያለው ግላዝ ከደረቁ ግላዝ ክብደት ከ1% በላይ ቤንቶናይት ሊያስፈልገው አይገባም ይላል።
 
-## የሙከራ ንጣፎች እና line blends {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### በትንሹ ይጀምሩ
+### Start small
 
-Derek Au በሦስት ደረጃዎች ያድጋል፥ 50 ወይም 100 g ሙከራ፣ ከሠራ ከ1 እስከ 2 kg ሙከራ፣ ከዚያም ከ5 እስከ 10 kg የስቱዲዮ ባች። በእኛ ግምት፣ {{SG 1.45}} ያለው 100 g ሙከራ 135 mL ገደማ (4½ US fl oz ገደማ) ስለሪ ይሰጣል፣ ጥቂት ትንንሽ ንጣፎችን በጠባብ ኩባያ ውስጥ ለመንከር የሚበቃ።
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### በራስዎ ሸክላ ላይ ይሞክሩ
+### Test on your own clay
 
-ግላዝ በሌላ ሸክላ ላይ ወይም በሌላ እቶን ውስጥ በጣም የተለየ ሊመስል ይችላል፥ Clay Art Center እንደገና ያዘጋጃቸውን ግላዞች እያንዳንዳቸውን በአራት የሸክላ ዓይነቶች ላይ፣ በኮን 6 እና በኮን 10 ሞክሯል። የPotclays የጀማሪዎች የግላዝ ሙከራ መመሪያ እነዚህን ይመክራል፥
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- በእርግጥ ከሚጠቀሙበት ሸክላ የተሠሩ ከ6 እስከ 10 **የሙከራ ንጣፎች** (ግላዝ ለመሞከር ትንንሽ ቁርጥራጮች)፣ የመጀመሪያ ማቃጠል (bisque) የተደረገላቸው ወይም ሙሉ በሙሉ የደረቁ መሆናቸውን በመጻፍ
-- በአንድ ጊዜ አንድ ለውጥ
-- አንድ ጊዜ መንከር እና ሁለት ጊዜ መንከር፣ ግላዙን ቀጭን እና ወፍራም ሆኖ ለማየት
-- እያንዳንዱ ንጣፍ በተመሳሳይ የእቶን ጭነት ውስጥ
-- ከማቃጠል በፊት በእያንዳንዱ ንጣፍ ላይ ምልክት፣ በማኅተም፣ በመቅረጽ ወይም በunderglaze መጻፊያ (underglaze pencil)።
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-ቀጥ ብለው የሚቆሙ ንጣፎችን እንመክራለን፣ ምክንያቱም ጠፍጣፋ ንጣፍ ግላዝ ምን ያህል እንደሚፈስ ይደብቃል፤ ግላዙ በጠርዞች ላይ እንዴት እንደሚቀላ የሚያሳይ ሸካራ ገጽ ያለው ክፍል፣ እና ግላዝ ያልተቀባ እግር ይኑራቸው። ጠብታዎችን ለመያዝ እያንዳንዱን በትንሽ ሳህን ወይም በbisque ቁርጥራጭ ላይ፣ ወይም የእቶን ቅብ (kiln wash) በተቀባ መደርደሪያ ላይ ያድርጉ። ንጣፎቹ ምን እንደተቀበሉ ለማሳየት **ምስክር ኮን** (witness cone)፣ ማለትም በቂ ሙቀት ሲያገኝ የሚታጠፍ ትንሽ የሴራሚክ ኮን፣ ከንጣፎቹ አጠገብ ያድርጉ፤ [ቀላል እቶን ማቃጠል](/guides/firing) መመሪያ ኮኖችን ያብራራል። ለእያንዳንዱ ንጣፍ አጭር ኮድ ይስጡ፣ እና በመዝገብዎ ውስጥ ከግላዝ አዘገጃጀቱ አጠገብ ይጻፉት። ለCeramic Arts Network የሚጽፈው Willers ቁጥሮችን እና ፊደላትን ይጠቀማል፣ እና ሥርዓቱን ራሱ በማስታወሻ ደብተሩ መጀመሪያ ላይ ይጽፋል።
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
 ### Line blends
 
-**Line blend** ከአንድ ድብልቅ ወደ ሌላው በእኩል እርምጃዎች የሚሄድ የሙከራዎች ረድፍ ነው፥ ከአንድ ግላዝ ወደ ሁለተኛው፣ ወይም ከመሠረት ግላዝ ተጨማሪ ማቅለሚያ ወዳለው ተመሳሳይ ግላዝ። ለምሳሌ Derek Au የብረት ኦክሳይድን (iron oxide) በጥርት ያለ መሠረት ውስጥ በ1% እርምጃዎች ያሳድጋል። ከIan Currie ጋር የሚያያዝ በመጠን (volume) የሚሠራ ዘዴ ጊዜ ይቆጥባል፣ ምክንያቱም ሁለቱን ጫፎች ብቻ ነው የሚቀላቅሉት፥
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. ሁለቱን የጫፍ ግላዞች፣ A እና B፣ በተመሳሳይ መጠን ባቾች ይቀላቅሉ፣ እና ሁለቱንም በወንፊት ያጣሩ።
-2. ሁለቱም በትክክል ተመሳሳይ እርጥብ መጠን (volume) እስኪኖራቸው ድረስ መጠኑ ያነሰው ላይ ውሃ ያክሉ።
-3. ሁለቱንም ያማስሉ፣ ከዚያም እያንዳንዱን ድብልቅ በሲሪንጅ ወስደው ቁጥር ወዳለው የራሱ ኩባያ ያድርጉ።
-4. እያንዳንዱን ኩባያ ያማስሉ እና አንድ ንጣፍ ይንከሩ።
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-በእኛ የተሠራ ምሳሌ፣ A 100 g ጥርት ያለ መሠረት ነው፣ B ደግሞ 4 g ቀይ የብረት ኦክሳይድ የታከለበት ተመሳሳይ ነው (4% ተጨማሪ)። እያንዳንዱ ሚሊሊትር B እንደ አንድ ሚሊሊትር A ተመሳሳይ የመሠረት ድርሻ ይይዛል፣ እና ብረቱን በተጨማሪ፣ ስለዚህ ኩባያዎቹ ከምንም ብረት እስከ 4% በ1% እርምጃዎች ይሄዳሉ። እያንዳንዱ ጫፍ ለድብልቁ 100 mL ይሰጣል፣ ይህንንም በእኛ ግምት 100 g ባች ይሸፍናል።
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ባለ አምስት እርምጃ የብረት line blend፣ በኩባያ 40 mL (የእኛ የተሠራ ምሳሌ)
-Label: የline blend ምሳሌ
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| ኩባያ | ጥርት ያለ መሠረት (A) | 4% ብረት ያለው መሠረት (B) | የብረት ኦክሳይድ፣ ከመሠረቱ % |
-| --- | --------------: | ------------------: | ------------------: |
-| 1   |           40 mL |                0 mL |                   0 |
-| 2   |           30 mL |               10 mL |                   1 |
-| 3   |           20 mL |               20 mL |                   2 |
-| 4   |           10 mL |               30 mL |                   3 |
-| 5   |            0 mL |               40 mL |                   4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-ዘዴው ጥንቃቄ የተሞላበት ስሌት፣ በደንብ የተቀላቀሉ እኩል SG ያላቸው ጫፎች፣ እና ትክክለኛ ሚዛን ይፈልጋል። Derek Au በመጠን (volume) ፋንታ በክብደትም ይቀላቅላል። **Triaxial blend** በሦስት ጫፎች ተመሳሳዩን ይሠራል፣ በሦስት ማዕዘን ላይ ተደርድሮ።
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> አንድ እርምጃ ተስፋ ሰጪ ሲመስል፣ በ[የግላዝ አዘገጃጀት ገጽ](/recipe) ላይ **እንደ ቅጂ አስቀምጥ** እንደ የራሱ የግላዝ አዘገጃጀት ያስቀምጠዋል፣ ዋናውንም እንደነበረ ይተዋል።
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## መዝገብ መያዝ {#records}
 

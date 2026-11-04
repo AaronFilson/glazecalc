@@ -213,50 +213,50 @@ Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwa
 
 Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1% bentonit mill-piż tal-glejż niexef.
 
-## Madum tal-prova u sensiela ta’ provi {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Ibda b’ammont żgħir
+### Start small
 
-Derek Au jgħolli l-ammont fi tliet stadji: test ta’ 50 jew 100 g, prova ta’ 1 sa 2 kg jekk jaħdem, imbagħad taħlita tal-istudjo ta’ 5 sa 10 kg. Skont l-istima tagħna, test ta’ 100 g b’{{SG 1.45}} jagħmel madwar 135 mL (madwar 4½ US fl oz) ta’ glejż likwidu{{en: slurry}}, biżżejjed biex tgħaddas ftit madum żgħir f’tazza dejqa.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Ittestja fuq it-tafal tiegħek
+### Test on your own clay
 
-Glejż{{en: glaze}} jista’ jidher differenti ħafna fuq tafal ieħor jew f’forn ieħor: Clay Art Center ittestja kull wieħed mill-glejżijiet li fformula mill-ġdid fuq erba’ tipi ta’ tafal{{en: clay bodies}}, fil-kon{{en: cone}} 6 u fil-kon 10. Il-pubblikazzjoni ta’ Potclays dwar l-ittestjar tal-glejż, għal min għadu jibda, tissuġġerixxi:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 sa 10 **madmiet tal-prova**{{en: test tiles}} (biċċiet żgħar biex tipprova glejż) mit-tafal li se tuża verament, u tinnota jekk humiex moħmija darba{{en: bisqued}} jew nexfin għal kollox
-- bidla waħda kull darba
-- għadsa waħda u żewġ għadsiet, biex tara l-glejż irqiq u oħxon
-- il-madmiet kollha fl-istess ħamja
-- marka fuq kull maduma qabel il-ħami, b’timbru, b’inċiżjoni jew b’lapes tal-kulur taħt il-glejż.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Nissuġġerixxu madum li joqgħod wieqaf, għax maduma ċatta taħbi kemm jinżel il-glejż, bi strixxa b’testura biex turi kif il-kulur tal-glejż jinbidel fuq it-truf, u b’qiegħ bla glejż. Poġġi kull waħda fuq platt żgħir jew fuq biċċa bisque, jew fuq xkaffa tal-forn miksija, biex tiġbor il-qtar. Poġġi **kon xhud**{{en: witness cone}}, kon żgħir taċ-ċeramika li jitgħawweġ meta jkun ħa biżżejjed sħana, ħdejn il-madum biex juri x’irċevew; il-gwida [Il-ħami f’forn sempliċi](/guides/firing) tispjega l-koni. Agħti lil kull maduma kodiċi qasir, u ktbu ħdejn ir-riċetta fir-reġistri tiegħek. Fl-artiklu ta’ Willers għal Ceramic Arts Network, il-kodiċijiet huma numri u ittri, u s-sistema nfisha tinkiteb fil-bidu tal-pitazz.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Sensiela ta’ provi
+### Line blends
 
-**Sensiela ta’ provi**{{en: line blend}} hija ringiela ta’ testijiet li timxi b’passi ugwali minn taħlita għal oħra: minn glejż wieħed għal ieħor, jew minn glejż bażi għall-istess glejż b’aktar kulurant{{en: colorant}}. Derek Au, pereżempju, iżid l-ossidu tal-ħadid fi glejż bażi trasparenti b’passi ta’ 1%. Metodu bil-volum, assoċjat ma’ Ian Currie, jiffranka l-ħin, għax tħallat biss iż-żewġ truf:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Ħallat iż-żewġ glejżijiet tat-truf, A u B, f’taħlitiet tal-istess daqs, u għarbel it-tnejn.
-2. Żid l-ilma ma’ dak li għandu inqas volum sakemm it-tnejn ikollhom eżatt l-istess volum likwidu.
-3. Ħawwad it-tnejn, imbagħad b’siringa poġġi kull taħlita fit-tazza numerata tagħha.
-4. Ħawwad kull tazza u għaddas maduma.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Fl-eżempju li ħdimna aħna, A huwa 100 g ta’ glejż bażi trasparenti, u B huwa l-istess b’4 g ta’ ossidu tal-ħadid aħmar miżjud (żieda ta’ 4%). Kull millilitru ta’ B fih l-istess sehem ta’ bażi daqs millilitru ta’ A, flimkien mal-ħadid tiegħu, għalhekk it-tazzi jimxu minn bla ħadid sa 4% b’passi ta’ 1%. Kull tarf jagħti 100 mL lis-sensiela, u skont l-istima tagħna taħlita ta’ 100 g tkopri dan.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Sensiela ta’ provi tal-ħadid f’ħames passi, 40 mL kull tazza (l-eżempju tagħna)
-Label: Eżempju ta’ sensiela ta’ provi
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Tazza | Bażi trasparenti (A) | Bażi b’4% ħadid (B) | Ossidu tal-ħadid, % tal-bażi |
-| ----- | -------------------: | ------------------: | ---------------------------: |
-| 1     |                40 mL |                0 mL |                            0 |
-| 2     |                30 mL |               10 mL |                            1 |
-| 3     |                20 mL |               20 mL |                            2 |
-| 4     |                10 mL |               30 mL |                            3 |
-| 5     |                 0 mL |               40 mL |                            4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Il-metodu għandu bżonn kalkoli bir-reqqa, truf imħallta tajjeb b’gravità speċifika{{en: specific gravity}} uniformi, u miżien preċiż. Derek Au jħallat ukoll bil-piż minflok bil-volum. **Provi fi trijangolu** jagħmlu l-istess bi tliet truf, imqiegħda fuq trijangolu.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Meta pass jidher promettenti, il-buttuna **Issejvja bħala kopja** fil-[paġna tar-riċetta](/recipe) iżżommu bħala riċetta separata u tħalli l-oriġinal kif kien.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Kif iżżomm ir-reġistri {#records}
 

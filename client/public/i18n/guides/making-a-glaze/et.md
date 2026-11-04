@@ -213,50 +213,50 @@ Label: Vee kogus soovitud suhtelise tiheduse jaoks
 
 **Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–3% bentoniiti; Digitalfire’i sõnul ei peaks glasuur, milles on üle 15% savi, vajama bentoniiti rohkem kui 1% kuiva glasuuri massist.
 
-## Proovitükid ja katseread {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Väikestest kogustest alustamine
+### Start small
 
-Derek Au liigub edasi kolmes etapis: 50 või 100 g katse, kui see õnnestub, siis 1–2 kg proovisegu ja seejärel 5–10 kg töökojasegu. Selle juhendi hinnangul annab 100 g katsesegu, mille näit on {{SG 1.45}}, umbes 135 mL (umbes 4½ USA fl oz) glasuurilahust{{en: slurry}}, millest piisab mõne väikese proovitüki{{en: test tiles}} kastmiseks kitsas topsis.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Katsetamine oma savimassil
+### Test on your own clay
 
-Glasuur{{en: glaze}} võib teisel savimassil või teises ahjus välja näha hoopis teistsugune: Clay Art Center katsetas iga oma ümbertehtud glasuuri neljal savimassil{{en: clay bodies}}, koonuse{{en: cone}} 6 ja koonuse 10 juures. Potclaysi algajatele mõeldud õpetus glasuuride katsetamiseks soovitab:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **proovitükki** (väikesed tükid glasuuri proovimiseks) sellest savimassist, mida tegelikult kasutate, märkides, kas need on eelpõletatud{{en: bisqued}} või täiesti kuivad
-- üks muudatus korraga
-- ühekordne ja kahekordne kastmine, et näha glasuuri õhukese ja paksuna
-- kõik proovitükid samas ahjutäies
-- igale proovitükile enne põletamist tehtud märk, kas templiga, sisse kraapides või glasuurialuse pliiatsiga.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-See juhend soovitab kasutada püsti seisvaid proovitükke, millel on reljeefne vöönd, mis näitab, kuidas glasuur servadel õheneb ja tooni muudab, ning glasuurita põhi; lamedal proovitükil pole näha, kui kaugele glasuur voolab. Pange iga proovitükk tilkade püüdmiseks väikesele alustassile, eelpõletatud savikillule või kaitseainega kaetud ahjuplaadile. Pange proovitükkide lähedale **kontrollkoonus**{{en: witness cone}}, väike keraamiline koonus, mis paindub, kui on saanud piisavalt kuumust, et see näitaks, kui palju kuumust proovitükid said; koonuseid selgitab juhend [Põletamine lihtsas keraamikaahjus](/guides/firing). Andke igale proovitükile lühike kood ja kirjutage see oma märkmetes retsepti juurde. Willers, kes kirjutab väljaandele Ceramic Arts Network, kasutab numbreid ja tähti ning kirjutab süsteemi enda märkmiku algusesse.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Katseread
+### Line blends
 
-**Katserida**{{en: line blend}} on rida katseid, mis liigub ühtlaste sammudega ühest segust teise: ühest glasuurist teise või põhiglasuurist samasse glasuuri, milles on rohkem värvainet{{en: colorant}}. Derek Au näiteks suurendab läbipaistvas põhiglasuuris raudoksiidi 1% sammudega. Ian Currie nimega seostatav mahuline meetod säästab aega, sest segada tuleb ainult rea kaks otsa:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Segage kaks äärmist glasuuri, A ja B, ühesuuruste segudena ja sõeluge mõlemad.
-2. Lisage väiksema mahuga glasuurile vett, kuni mõlema glasuurilahuse maht on täpselt sama.
-3. Segage mõlemat, seejärel mõõtke süstlaga iga segu oma nummerdatud topsi.
-4. Segage iga topsi sisu ja kastke sellesse proovitükk.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Selle juhendi näites on A 100 g läbipaistvat põhiglasuuri ja B sama, millele on lisatud 4 g punast raudoksiidi (4% lisand). Iga milliliiter B-d sisaldab sama palju põhiglasuuri kui milliliiter A-d ning lisaks oma rauda, nii et topsides kasvab raua osa rauavabast kuni 4%-ni 1% sammudega. Kumbki äärmine glasuur annab katsereale 100 mL; selle juhendi hinnangul piisab selleks 100 g segust.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Viieastmeline raua katserida, 40 mL topsi kohta (selle juhendi näide)
-Label: Katserea näide
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Tops | Läbipaistev põhiglasuur (A) | Põhiglasuur 4% rauaga (B) | Raudoksiid, % põhiglasuurist |
-| ---- | --------------------------: | ------------------------: | ---------------------------: |
-| 1    |                       40 mL |                      0 mL |                            0 |
-| 2    |                       30 mL |                     10 mL |                            1 |
-| 3    |                       20 mL |                     20 mL |                            2 |
-| 4    |                       10 mL |                     30 mL |                            3 |
-| 5    |                        0 mL |                     40 mL |                            4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Meetod nõuab hoolikat arvutamist, hästi segatud äärmisi glasuure, millel on sama suhteline tihedus, ning täpset kaalu. Derek Au segab ka massi, mitte mahu järgi. **Kolmnurkkatse** teeb sama kolme äärmise glasuuriga, mis on paigutatud kolmnurga kujul.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Kui mõni samm tundub paljulubav, salvestab funktsioon **Salvesta koopiana** [retsepti lehel](/recipe) selle eraldi retseptina ja jätab originaali endiseks.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Märkmete pidamine {#records}
 

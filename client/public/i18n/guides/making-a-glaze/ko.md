@@ -213,50 +213,50 @@ Label: 목표 비중에 맞는 물의 양
 
 **벤토나이트**는 아주 고운 점토로, 다른 입자가 가라앉지 않고 떠 있도록 도와줍니다. 덤벙 시유 유약은 보통 이를 위해 15~25%의 하소하지 않은 점토에 의지합니다. 점토가 부족한 레시피에는 벤토나이트 약 1~3%가 도움이 됩니다. Digitalfire는 점토가 15%를 넘는 유약에는 마른 유약 무게의 1%를 넘는 벤토나이트가 필요하지 않을 것이라고 합니다.
 
-## 시편과 라인 블렌드 {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### 작게 시작하기
+### Start small
 
-Derek Au는 세 단계로 규모를 키웁니다. 50 또는 100 g 시험, 잘 되면 1~2 kg 시험 배합, 그다음 5~10 kg 작업실 배합입니다. 저희 추정으로는 {{SG 1.45}}인 100 g 시험에서 유약물 약 135 mL(약 4½ US fl oz)가 나오며, 좁은 컵에 작은 시편 몇 장을 담그기에 충분합니다.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### 사용하는 점토에서 시험하기
+### Test on your own clay
 
-유약은 다른 점토나 다른 가마에서 꽤 달라 보일 수 있습니다. Clay Art Center는 다시 배합한 유약마다 소지{{en: clay body}} 네 가지에서, 오튼 콘 6과 콘 10으로 시험했습니다. Potclays의 유약 시험 입문 안내는 다음을 제안합니다.
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 실제로 쓸 점토로 만든 **시편** 6~10장(유약을 시험해 볼 작은 조각). 초벌했는지 완전 건조했는지 적어 두세요
-- 한 번에 하나씩만 바꾸기
-- 얇은 유약층과 두꺼운 유약층을 보도록 한 번 담근 것과 두 번 담근 것
-- 모든 시편을 같은 가마 재임에 넣기
-- 소성하기 전에 각 시편에 도장, 새기기, 언더글레이즈 펜슬로 한 표시.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-저희는 똑바로 서는 시편을 권합니다. 납작한 시편은 유약이 얼마나 흐르는지 알 수 없기 때문입니다. 유약이 가장자리에서 어떻게 색이 변하는지 보여 주는 질감 있는 띠와, 유약을 바르지 않은 굽을 두세요. 각 시편은 흘러내리는 유약을 받도록 작은 접시나 초벌 조각 위에, 또는 내화판 코팅제를 바른 내화판 위에 놓으세요. 시편 가까이에 **확인용 콘**{{en: witness cone}}, 즉 충분히 열을 받으면 휘는 작은 도자 콘을 두어 시편이 받은 열을 확인하세요. 콘에 대해서는 《[기본 가마 소성](/guides/firing)》에서 설명합니다. 시편마다 짧은 코드를 붙이고, 기록의 레시피 옆에 적어 두세요. Ceramic Arts Network에 글을 쓴 Willers는 숫자와 글자를 쓰고, 그 체계 자체를 노트 맨 앞에 적어 둡니다.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### 라인 블렌드
+### Line blends
 
-**라인 블렌드**{{en: line blend}}는 한 배합에서 다른 배합으로 고르게 단계를 밟아 가는 일련의 시험입니다. 한 유약에서 두 번째 유약으로, 또는 기본 유약에서 발색제를 더 넣은 같은 유약으로 갑니다. 예를 들어 Derek Au는 투명 기본 유약에 산화철을 1%씩 늘려 가며 시험합니다. Ian Currie와 관련된 부피 측정 방식은 양쪽 끝만 섞으면 되므로 시간을 아낄 수 있습니다.
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. 양쪽 끝 유약 A와 B를 같은 크기의 배합으로 섞고, 둘 다 체에 거르세요.
-2. 부피가 더 적은 쪽에 물을 더해 둘의 젖은 부피가 정확히 같아지게 하세요.
-3. 둘 다 저은 뒤, 각 배합을 주사기로 뽑아 번호를 붙인 각자의 컵에 담으세요.
-4. 컵마다 저은 뒤 시편을 담그세요.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-저희가 든 예에서 A는 투명 기본 유약 100 g이고, B는 거기에 적색 산화철 4 g을 더한 것입니다(4% 추가). B의 밀리리터마다 A의 밀리리터와 같은 비율의 기본 유약이 들어 있고 거기에 철이 더해져 있으므로, 컵은 철이 없는 것에서 4%까지 1%씩 올라갑니다. 양쪽 끝은 각각 100 mL를 블렌드에 내놓는데, 저희 추정으로는 100 g 배합이면 충분합니다.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: 다섯 단계 철 라인 블렌드, 컵당 40 mL(저희의 예)
-Label: 라인 블렌드 예
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| 컵  | 투명 기본 유약(A) | 철 4%를 더한 기본 유약(B) | 산화철, 기본 대비 % |
-| --- | ----------------: | ------------------------: | ------------------: |
-| 1   |             40 mL |                      0 mL |                   0 |
-| 2   |             30 mL |                     10 mL |                   1 |
-| 3   |             20 mL |                     20 mL |                   2 |
-| 4   |             10 mL |                     30 mL |                   3 |
-| 5   |              0 mL |                     40 mL |                   4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-이 방법에는 꼼꼼한 계산, 비중이 고르고 잘 섞인 양쪽 끝, 정확한 저울이 필요합니다. Derek Au는 부피 대신 무게로도 블렌드합니다. **삼각 배합 시험**(삼성분계)은 삼각형 위에 배치한 세 끝으로 같은 일을 합니다.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> 가능성이 보이는 단계가 있으면 [레시피 페이지](/recipe)의 **사본으로 저장**이 그 단계를 별도의 레시피로 보관하고 원본은 그대로 둡니다.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## 기록 남기기 {#records}
 

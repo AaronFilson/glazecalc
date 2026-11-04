@@ -213,50 +213,50 @@ Label: Air untuk berat jenis target
 
 **Bentonit**, tanah liat sangat halus, membantu menahan partikel lain tetap tersuspensi. Glasir celup biasanya mengandalkan 15 sampai 25% tanah liat mentah untuk ini. Untuk resep yang kekurangan tanah liat, sekitar 1 sampai 3% bentonit membantu; Digitalfire mengatakan glasir dengan lebih dari 15% tanah liat seharusnya tidak membutuhkan bentonit lebih dari 1% dari berat glasir kering.
 
-## Ubin uji dan campuran garis {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Mulai kecil
+### Start small
 
-Derek Au bekerja naik dalam tiga langkah: uji 50 atau 100 g, uji coba 1 sampai 2 kg jika berhasil, lalu batch studio 5 sampai 10 kg. Menurut perkiraan kami, uji 100 g dengan {{SG 1.45}} menghasilkan sekitar 135 mL (sekitar 4½ US fl oz) cairan, cukup untuk mencelup beberapa ubin kecil dalam cangkir sempit.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Uji pada tanah liat Anda sendiri
+### Test on your own clay
 
-Glasir dapat tampak sangat berbeda pada tanah liat lain atau di tungku lain: Clay Art Center menguji setiap glasir yang diformulasikan ulang pada empat bodi tanah liat, pada kerucut 6 dan pada kerucut 10. Panduan pemula Potclays untuk pengujian glasir menyarankan:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 sampai 10 **ubin uji** (potongan kecil untuk mencoba glasir) dari tanah liat yang benar-benar akan Anda pakai, dengan mencatat apakah sudah dibiskuit atau kering total
-- satu perubahan pada satu waktu
-- satu kali celup dan dua kali celup, untuk melihat glasir tipis dan tebal
-- setiap ubin dalam muatan tungku yang sama
-- tanda pada setiap ubin sebelum pembakaran, dengan stempel, ukiran, atau pensil underglaze.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Kami menyarankan ubin yang berdiri tegak, karena ubin datar menyembunyikan seberapa jauh glasir mengalir, dengan pita bertekstur untuk menunjukkan bagaimana glasir berubah warna di tepi, dan kaki yang kosong. Taruh masing-masing di piring kecil atau serpihan biskuit, atau di rak yang diberi kiln wash, untuk menangkap tetesan. Taruh **kerucut saksi**{{en: witness cone}}, kerucut keramik kecil yang menekuk saat sudah menerima cukup panas, di dekat ubin untuk menunjukkan apa yang diterimanya; [panduan membakar](/guides/firing) menjelaskan kerucut. Beri setiap ubin kode singkat, dan tuliskan di samping resep dalam catatan Anda. Willers, menulis untuk Ceramic Arts Network, memakai angka dan huruf, dan menulis sistemnya sendiri di halaman depan buku catatan.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Campuran garis
+### Line blends
 
-**Campuran garis**{{en: line blend}} adalah sederet uji yang melangkah merata dari satu campuran ke campuran lain: dari satu glasir ke glasir kedua, atau dari glasir dasar ke glasir yang sama dengan lebih banyak pewarna. Derek Au, misalnya, menaikkan besi oksida melalui dasar bening dengan kenaikan 1%. Metode volumetrik yang dikaitkan dengan Ian Currie menghemat waktu, karena Anda hanya mencampur kedua ujungnya:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Campur kedua glasir ujung, A dan B, sebagai batch berukuran sama, dan ayak keduanya.
-2. Tambahkan air ke yang volumenya lebih kecil sampai keduanya memiliki volume basah yang persis sama.
-3. Aduk keduanya, lalu ambil setiap campuran dengan semprit ke cangkirnya sendiri yang bernomor.
-4. Aduk setiap cangkir dan celup sebuah ubin.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Dalam contoh kerja kami, A adalah 100 g dasar bening, dan B adalah yang sama dengan 4 g besi oksida merah ditambahkan (tambahan 4%). Setiap mililiter B memuat bagian dasar yang sama dengan mililiter A, ditambah besinya, jadi cangkirnya melangkah dari tanpa besi sampai 4% dalam langkah 1%. Setiap ujung memberi 100 mL ke campuran, yang dicakup batch 100 g menurut perkiraan kami.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Campuran garis besi lima langkah, 40 mL per cangkir (contoh kerja kami)
-Label: Contoh campuran garis
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Cangkir | Dasar bening (A) | Dasar dengan 4% besi (B) | Besi oksida, % dari dasar |
-| ------- | ---------------: | -----------------------: | ------------------------: |
-| 1       |            40 mL |                     0 mL |                         0 |
-| 2       |            30 mL |                    10 mL |                         1 |
-| 3       |            20 mL |                    20 mL |                         2 |
-| 4       |            10 mL |                    30 mL |                         3 |
-| 5       |             0 mL |                    40 mL |                         4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metode ini memerlukan hitungan yang cermat, ujung yang tercampur baik dengan berat jenis yang merata, dan timbangan yang akurat. Derek Au juga mencampur menurut berat dan bukan volume. **Campuran triaksial** melakukan hal yang sama dengan tiga ujung, ditata pada segitiga.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Bila sebuah langkah tampak menjanjikan, **Simpan sebagai salinan** di [halaman resep](/recipe) menyimpannya sebagai resep tersendiri dan membiarkan yang asli seperti semula.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Menyimpan catatan {#records}
 

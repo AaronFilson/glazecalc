@@ -213,50 +213,50 @@ Label: Water vir 'n teiken-soortlike gewig
 
 **Bentoniet**, 'n baie fyn klei, help om die ander deeltjies in suspensie te hou. Doopglasure steun gewoonlik hiervoor op 15 tot 25% rou klei. Vir 'n resep met te min klei help ongeveer 1 tot 3% bentoniet; Digitalfire sê 'n glasuur met meer as 15% klei behoort nie bentoniet teen meer as 1% van die droë glasuur se gewig nodig te hê nie.
 
-## Toetsteëls en lynmengings {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Begin klein
+### Start small
 
-Derek Au werk in drie stappe op: 'n toets van 50 of 100 g, 'n proef van 1 tot 2 kg as dit werk, dan 'n ateljeemengsel van 5 tot 10 kg. Volgens ons skatting maak 'n toets van 100 g teen {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) slurrie, genoeg om 'n paar klein teëls in 'n smal koppie te doop.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Toets op jou eie klei
+### Test on your own clay
 
-'n Glasuur kan heel anders lyk op 'n ander klei of in 'n ander keramiekoond: Clay Art Center het elk van sy herformuleerde glasure op vier kleiliggame getoets, by kegel 6 en by kegel 10. Potclays se beginnersgids tot glasuurtoetse stel voor:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 tot 10 **toetsteëls** (klein stukke om 'n glasuur op te probeer) van die klei wat jy werklik gaan gebruik, met 'n aantekening of hulle biskwiet gebak of beendroog is
-- een verandering op 'n slag
-- 'n enkele doop en 'n dubbele doop, om die glasuur dun en dik te sien
-- elke teël in dieselfde oondlading
-- 'n merk op elke teël voor die bak, met 'n stempel, 'n kerf of 'n onderglasuurpotlood.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Ons raai teëls aan wat regop staan, aangesien 'n plat teël wegsteek hoe ver 'n glasuur loop, met 'n getekstureerde strook om te wys hoe die glasuur oor rande breek, en 'n kaal voet. Sit elkeen op 'n klein skoteltjie of 'n stukkie biskwiet, of op 'n rak met rakdeklaag, om druppels op te vang. Sit 'n **getuiekegel**, 'n klein keramiekkegel wat buig wanneer dit genoeg hitte gehad het, naby die teëls om te wys wat hulle ontvang het; die [gids oor bak](/guides/firing) verduidelik kegels. Gee elke teël 'n kort kode, en skryf dit teenaan die resep in jou rekords neer. Willers, wat vir Ceramic Arts Network skryf, gebruik syfers en letters, en skryf die stelsel self voorin die notaboek.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Lynmengings
+### Line blends
 
-'n **Lynmenging** is 'n ry toetse wat eweredig van een mengsel na 'n ander gaan: van een glasuur na 'n tweede, of van 'n basisglasuur na dieselfde glasuur met meer kleurstof. Derek Au verhoog byvoorbeeld ysteroksied in 'n deurskynende basis in stappe van 1%. 'n Volumetriese metode wat met Ian Currie geassosieer word, spaar tyd, omdat jy net die twee ente meng:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Meng die twee eindglasure, A en B, as mengsels van dieselfde grootte, en sif albei.
-2. Voeg water by die een met minder volume totdat albei presies dieselfde nat volume het.
-3. Roer albei, trek dan elke mengsel met 'n spuit in sy eie genommerde koppie.
-4. Roer elke koppie en doop 'n teël.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-In ons uitgewerkte voorbeeld is A 100 g van 'n deurskynende basis, en B is dieselfde met 4 g rooi ysteroksied bygevoeg ('n byvoeging van 4%). Elke milliliter van B bevat dieselfde deel basis as 'n milliliter van A, plus sy yster, so die koppies gaan van geen yster tot 4% in stappe van 1%. Elke einde gee 100 mL aan die lynmenging, wat 'n mengsel van 100 g volgens ons skatting dek.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: 'n Lynmenging van vyf stappe met yster, 40 mL per koppie (ons uitgewerkte voorbeeld)
-Label: Voorbeeld van lynmenging
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Koppie | Deurskynende basis (A) | Basis met 4% yster (B) | Ysteroksied, % van basis |
-| ------ | ---------------------: | ---------------------: | -----------------------: |
-| 1      |                  40 mL |                   0 mL |                        0 |
-| 2      |                  30 mL |                  10 mL |                        1 |
-| 3      |                  20 mL |                  20 mL |                        2 |
-| 4      |                  10 mL |                  30 mL |                        3 |
-| 5      |                   0 mL |                  40 mL |                        4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Die metode vereis noukeurige rekenwerk, goed gemengde ente met eweredige SG, en 'n akkurate skaal. Derek Au meng ook volgens gewig in plaas van volume. 'n **Driehoekmenging** doen dieselfde met drie ente, uitgelê op 'n driehoek.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Wanneer 'n stap belowend lyk, hou **Stoor as afskrif** op die [resepbladsy](/recipe) dit as 'n resep van sy eie en laat die oorspronklike soos dit was.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Rekords hou {#records}
 

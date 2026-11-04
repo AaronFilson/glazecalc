@@ -213,50 +213,50 @@ Label: Voda za ciljno relativno gostoto
 
 **Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 3 % bentonita; po navedbah Digitalfire glazura z več kot 15 % gline ne bi smela potrebovati bentonita v več kot 1 % mase suhe glazure.
 
-## Testne ploščice in testne serije {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Začnite z malim
+### Start small
 
-Derek Au napreduje v treh korakih: preizkus s 50 ali 100 g, če uspe, poskusna mešanica z 1 do 2 kg, nato delavniška mešanica s 5 do 10 kg. Po naši oceni da preizkus s 100 g, pri katerem je {{SG 1.45}}, približno 135 mL (približno 4½ US fl oz) glazurne suspenzije{{en: slurry}}, kar zadostuje za namakanje nekaj majhnih ploščic v ozkem lončku.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Preizkušajte na svoji glini
+### Test on your own clay
 
-Glazura{{en: glaze}} je lahko na drugi glini ali v drugi peči videti povsem drugače: Clay Art Center je vsako od svojih prenovljenih glazur preizkusil na štirih glinenih masah{{en: clay bodies}}, pri stožcu{{en: cone}} 6 in pri stožcu 10. Vodnik za začetnike o preizkušanju glazur podjetja Potclays priporoča:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 do 10 **testnih ploščic**{{en: test tiles}} (majhnih kosov za preizkus glazure) iz gline, ki jo boste dejansko uporabljali, z zabeležko, ali so biskvitno žgane{{en: bisqued}} ali popolnoma suhe
-- po eno spremembo naenkrat
-- enkratno in dvakratno namakanje, da vidite glazuro v tanki in debeli plasti
-- vse ploščice v istem žganju
-- oznako na vsaki ploščici pred žganjem, z žigom, vrezom ali podglazurnim svinčnikom.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Priporočamo pokončne ploščice (ploska ploščica skrije, kako daleč glazura steče) s pasom teksture, ki pokaže, kako se barva glazure na robovih spremeni, in z neglaziranim dnom. Vsako postavite na majhen krožniček ali košček biskvita ali pa na šamotno ploščo z ločilnim premazom, da se kaplje ujamejo. Ob ploščice postavite **kontrolni stožec**{{en: witness cone}}, majhen keramični stožec, ki se upogne, ko je dobil dovolj toplote, da pokaže, koliko so je prejele ploščice; stožce pojasni vodnik [Žganje v preprosti peči](/guides/firing). Vsaki ploščici dajte kratko oznako in jo v zapiskih zapišite ob recept. Willers v članku za Ceramic Arts Network uporablja številke in črke, sam sistem pa zapiše na začetek zvezka.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Testne serije
+### Line blends
 
-**Testna serija**{{en: line blend}} je vrsta preizkusov, ki enakomerno prehaja od ene mešanice do druge: od ene glazure do druge ali od osnovne glazure do iste glazure z več barvila{{en: colorant}}. Derek Au na primer v prozorni osnovi povečuje delež železovega oksida v korakih po 1 %. Volumska metoda, povezana z Ianom Curriejem, prihrani čas, ker zmešate samo obe krajni mešanici:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Zmešajte obe krajni glazuri, A in B, v enako velikih mešanicah in obe presejte.
-2. Tisti z manjšo prostornino dodajte vodo, dokler obe nimata točno enake mokre prostornine.
-3. Obe premešajte, nato z brizgo odmerite vsako mešanico v njen oštevilčeni lonček.
-4. Premešajte vsak lonček in vanj pomočite ploščico.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-V našem izračunanem primeru je A 100 g prozorne osnove, B pa enaka osnova z dodanimi 4 g rdečega železovega oksida (dodatek 4 %). Vsak mililiter B vsebuje enak delež osnove kot mililiter A, poleg tega pa še železo, zato lončki prehajajo od mešanice brez železa do 4 % v korakih po 1 %. Vsaka krajna mešanica prispeva k seriji 100 mL, za kar po naši oceni zadostuje mešanica s 100 g.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Testna serija z železom v petih korakih, 40 mL na lonček (naš izračunani primer)
-Label: Primer testne serije
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Lonček | Prozorna osnova (A) | Osnova s 4 % železa (B) | Železov oksid, % osnove |
-| ------ | ------------------: | ----------------------: | ----------------------: |
-| 1      |               40 mL |                    0 mL |                       0 |
-| 2      |               30 mL |                   10 mL |                       1 |
-| 3      |               20 mL |                   20 mL |                       2 |
-| 4      |               10 mL |                   30 mL |                       3 |
-| 5      |                0 mL |                   40 mL |                       4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metoda zahteva skrbno računanje, dobro premešani krajni mešanici z enako relativno gostoto{{en: specific gravity}} in natančno tehtnico. Derek Au mešanice pripravlja tudi po masi namesto po prostornini. **Triaksialna mešanica** naredi isto s tremi krajnimi mešanicami, razporejenimi v trikotnik.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Ko je kateri od korakov obetaven, ga funkcija **Shrani kot kopijo** na [strani recepta](/recipe) ohrani kot samostojen recept, izvirnik pa pusti nespremenjen.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Vodenje zapiskov {#records}
 

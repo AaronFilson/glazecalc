@@ -213,50 +213,50 @@ Label: ඉලක්ක විශිෂ්ට ගුරුත්වයක් ස�
 
 **බෙන්ටොනයිට්**, ඉතා සියුම් මැටි වර්ගයක්, අනෙකුත් අංශු අවලම්බනයේ රඳවා ගැනීමට උපකාරී වේ. ගිල්වන ග්ලේස් සාමාන්‍යයෙන් මේ සඳහා 15 සිට 25% දක්වා අමු මැටි මත රඳා පවතී. මැටි අඩු වට්ටෝරුවකට, ආසන්න වශයෙන් 1 සිට 3% බෙන්ටොනයිට් උපකාරී වේ; Digitalfire පවසන්නේ 15% ට වඩා මැටි ඇති ග්ලේස් එකකට වියළි ග්ලේස් එකේ බරින් 1% ට වඩා බෙන්ටොනයිට් අවශ්‍ය නොවනු ඇතැයි අපේක්ෂා කළ හැකි බවයි.
 
-## පරීක්ෂණ ටයිල් සහ ලයින් බ්ලෙන්ඩ් {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### කුඩාවෙන් ආරම්භ කරන්න
+### Start small
 
-Derek Au පියවර තුනකින් ප්‍රමාණය වැඩි කරයි: 50 හෝ 100 g පරීක්ෂණයක්, එය සාර්ථක නම් 1 සිට 2 kg අත්හදා බැලීමක්, ඉන්පසු 5 සිට 10 kg ස්ටුඩියෝ බැච් එකක්. අපගේ ඇස්තමේන්තුව අනුව, {{SG 1.45}} වන 100 g පරීක්ෂණයකින් ස්ලරි ආසන්න වශයෙන් 135 mL (ආසන්න වශයෙන් 4½ US fl oz) ලැබේ, එය පටු කෝප්පයක කුඩා ටයිල් කිහිපයක් ගිල්වීමට ප්‍රමාණවත් වේ.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### ඔබේම මැටියෙන් පරීක්ෂා කරන්න
+### Test on your own clay
 
-ග්ලේස් (ඔපය){{en: glaze}} එකක් වෙනත් මැටියක හෝ වෙනත් කිල්න් (පෝරණුව) එකක දී බෙහෙවින් වෙනස් ලෙස පෙනිය හැකිය: Clay Art Center විසින් එහි නැවත සකස් කළ සෑම ග්ලේස් එකක්ම කෝන් (තාප මිනුම් කේතුව){{en: cone}} 6 හිදී සහ කෝන් 10 හිදී මැටි මිශ්‍රණ (ක්ලේ බොඩි){{en: clay body}} හතරක පරීක්ෂා කර ඇත. ග්ලේස් පරීක්ෂා කිරීම ගැන ආරම්භකයින් සඳහා Potclays සකස් කළ ලිපිය මෙසේ යෝජනා කරයි:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- ඔබ සැබවින්ම භාවිත කරන මැටියෙන් සාදන ලද **පරීක්ෂණ ටයිල් (ටෙස්ට් ටයිල්)**{{en: test tile}} (ග්ලේස් එකක් අත්හදා බැලීමට කුඩා කැබලි) 6 සිට 10 දක්වා, ඒවා බිස්ක් (පළමු පිළිස්සීම){{en: bisque}} කර ඇත්ද නැතහොත් සම්පූර්ණයෙන් වියළිද යන්න සටහන් කරමින්
-- එක් වරකට එක් වෙනසක්
-- ග්ලේස් එක තුනී සහ ඝන ලෙස දැකීමට, තනි ගිල්වීමක් සහ ද්විත්ව ගිල්වීමක්
-- සෑම ටයිල් එකක්ම එකම පිළිස්සුම් තොගයේ
-- පිළිස්සීමට පෙර සෑම ටයිල් එකකම ස්ටෑම්පයකින්, කැටයමකින් හෝ අන්ඩර්ග්ලේස් (යටි ඔපය) පැන්සලකින් කරන ලද ලකුණක්.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-සිරස්ව සිටින ටයිල්, දාරවලදී ග්ලේස් එකේ වර්ණය වෙනස් වන ආකාරය පෙන්වීමට ටෙක්ස්චර් කළ තීරුවක් සහ ග්ලේස් නොදැමූ පාදමක් සහිතව, අපි යෝජනා කරමු; මන්ද පැතලි ටයිල් එකක් ග්ලේස් එක කොතරම් දුරට ගලා යන්නේදැයි සඟවයි. බිංදු අල්ලා ගැනීමට සෑම ටයිල් එකක්ම කුඩා පිඟානක හෝ බිස්ක් කැබැල්ලක් මත, නැතහොත් කිල්න් වොෂ් කළ රාක්කයක තබන්න. ටයිල් ළඟ **සාක්ෂි කෝන් (විට්නස් කෝන්)**{{en: witness cone}} එකක්, එනම් ප්‍රමාණවත් තරම් රත් වූ විට නැමෙන කුඩා සෙරමික් කෝන් එකක්, තබන්න, ඒවාට ලැබුණු තාපය පෙන්වීමට; [සරල කිල්න් එකක් පිළිස්සීම](/guides/firing) මාර්ගෝපදේශය කෝන් ගැන විස්තර කරයි. සෑම ටයිල් එකකටම කෙටි කේතයක් දී, එය ඔබේ සටහන්වල වට්ටෝරුව ඉදිරියෙන් ලියන්න. Ceramic Arts Network සඳහා ලියන Willers අංක සහ අකුරු භාවිත කරන අතර, එම ක්‍රමයම සටහන් පොතේ මුල පිටුවේ ලියයි.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ලයින් බ්ලෙන්ඩ්
+### Line blends
 
-**ලයින් බ්ලෙන්ඩ් (පේළි මිශ්‍රණ පරීක්ෂාව)**{{en: line blend}} යනු එක් මිශ්‍රණයක සිට තවත් එකකට සමානව පියවර ගන්නා පරීක්ෂණ පේළියකි: එක් ග්ලේස් එකක සිට දෙවැන්නකට, නැතහොත් බේස් ග්ලේස් (මූලික ග්ලේස්) එකකින් එයම වැඩි කලරන්ට් ප්‍රමාණයක් සහිතව. උදාහරණයක් ලෙස Derek Au ක්ලියර් බේස් එකක යකඩ ඔක්සයිඩ් 1% බැගින් වැඩි කරයි. Ian Currie සමඟ බැඳුණු පරිමා ක්‍රමයක් ඔබ අග්‍ර දෙක පමණක් මිශ්‍ර කරන බැවින් කාලය ඉතිරි කරයි:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. A සහ B යන අග්‍ර ග්ලේස් දෙක එකම ප්‍රමාණයේ බැච් ලෙස මිශ්‍ර කර, දෙකම පෙරන්න.
-2. දෙකටම හරියටම එකම තෙත් පරිමාව ලැබෙන තෙක් අඩු පරිමාවක් ඇති එකට ජලය එක් කරන්න.
-3. දෙකම කලවම් කර, ඉන්පසු සිරින්ජයකින් සෑම මිශ්‍රණයකින්ම ගෙන අංක කළ කෝප්පවලට දමන්න.
-4. සෑම කෝප්පයක්ම කලවම් කර ටයිල් එකක් ගිල්වන්න.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-අපගේ සාදා දැක්වූ උදාහරණයේ, A යනු ක්ලියර් බේස් එකක 100 g කි, සහ B යනු එයම රතු යකඩ ඔක්සයිඩ් 4 g ක් එක් කළ එකකි (4%ක එකතු කිරීමක්). B ග්ලේස් එකේ සෑම මිලිලීටරයකම A ග්ලේස් එකේ මිලිලීටරයක ඇති බේස් කොටසම අඩංගු වන අතර ඊට අමතරව එහි යකඩ ද ඇත, එබැවින් කෝප්ප යකඩ නැතිව සිට 4% දක්වා 1% පියවරවලින් යයි. සෑම අග්‍රයක්ම මිශ්‍රණයට 100 mL ක් දෙන අතර, අපගේ ඇස්තමේන්තුව අනුව 100 g බැච් එකකින් එය ආවරණය වේ.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: පියවර පහක යකඩ ලයින් බ්ලෙන්ඩ් එකක්, කෝප්පයකට 40 mL (අපගේ සාදා දැක්වූ උදාහරණය)
-Label: ලයින් බ්ලෙන්ඩ් උදාහරණය
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| කෝප්පය | ක්ලියර් බේස් (A) | 4% යකඩ සහිත බේස් (B) | යකඩ ඔක්සයිඩ්, බේස් එකේ % |
-| ------ | ---------------: | -------------------: | -----------------------: |
-| 1      |            40 mL |                 0 mL |                        0 |
-| 2      |            30 mL |                10 mL |                        1 |
-| 3      |            20 mL |                20 mL |                        2 |
-| 4      |            10 mL |                30 mL |                        3 |
-| 5      |             0 mL |                40 mL |                        4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-මෙම ක්‍රමයට ප්‍රවේශම් සහගත ගණනයක්, සමාන SG එකක් සහිත හොඳින් මිශ්‍ර කළ අග්‍ර, සහ නිවැරදි තරාදියක් අවශ්‍ය වේ. Derek Au පරිමාව වෙනුවට බර අනුවද මිශ්‍ර කරයි. **ට්‍රයිඇක්සියල් බ්ලෙන්ඩ් (ත්‍රිකෝණ මිශ්‍රණ පරීක්ෂාව)**{{en: triaxial blend}} අග්‍ර තුනකින්, ත්‍රිකෝණයක් මත සකසා, එයම කරයි.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> පියවරක් පොරොන්දු වන සේ පෙනෙන විට, [වට්ටෝරු පිටුවේ](/recipe) **පිටපතක් ලෙස සුරකින්න** එය තමන්ගේම වට්ටෝරුවක් ලෙස තබා, මුල් එක පෙර පරිදිම ඉතිරි කරයි.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## සටහන් තබා ගැනීම {#records}
 

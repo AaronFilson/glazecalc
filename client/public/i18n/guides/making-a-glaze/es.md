@@ -213,50 +213,50 @@ La **goma CMC** (carboximetilcelulosa) hace la suspensión más pegajosa y más 
 
 La **bentonita**, una arcilla muy fina, ayuda a mantener en suspensión las demás partículas. Para ello, los esmaltes para inmersión suelen contar con un 15 a 25 % de arcilla cruda. En una receta con poca arcilla, ayuda alrededor de un 1 a 3 % de bentonita; según Digitalfire, un esmalte con más de un 15 % de arcilla no debería necesitar más de un 1 % de bentonita sobre el peso del esmalte seco.
 
-## Probetas y mezclas lineales {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Primero, pruebas pequeñas
+### Start small
 
-Derek Au va aumentando en tres pasos: una prueba de 50 o 100 g; si funciona, una tanda de ensayo de 1 a 2 kg; y después una tanda de taller de 5 a 10 kg. Según nuestra estimación, una prueba de 100 g con {{SG 1.45}} da unos 135 mL (unas 4½ fl oz estadounidenses) de suspensión{{en: slurry}}, suficiente para sumergir unas cuantas probetas{{en: test tiles}} pequeñas en un vaso estrecho.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Pruebas sobre su propia pasta
+### Test on your own clay
 
-Un esmalte{{en: glaze}} puede verse muy distinto sobre otra pasta o en otro horno: Clay Art Center probó cada uno de sus esmaltes reformulados sobre cuatro pastas{{en: clay bodies}}, a cono{{en: cone}} 6 y a cono 10. La guía de Potclays para principiantes sobre pruebas de esmaltes propone:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- de 6 a 10 **probetas** (piezas pequeñas para probar un esmalte) de la pasta que vaya a usar realmente, anotando si están bizcochadas{{en: bisqued}} o en crudo y totalmente secas
-- un solo cambio cada vez
-- una inmersión simple y una doble, para ver el esmalte en capa fina y en capa gruesa
-- todas las probetas en la misma carga del horno
-- una marca en cada probeta antes de cocerla, con un sello, una incisión o un lápiz cerámico.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Le recomendamos probetas que se sostengan de pie, porque una probeta plana oculta hasta dónde escurre un esmalte, con una franja con textura para ver cómo cambia de color el esmalte en los cantos, y con el pie sin esmaltar. Ponga cada una sobre un platito, un trozo de bizcocho o protector de placas, para recoger las gotas. Coloque cerca de las probetas un **cono testigo**{{en: witness cone}}, un pequeño cono cerámico que se dobla cuando ha recibido suficiente calor, para que indique cuánto calor han recibido; la [guía de cocción](/guides/firing) explica los conos. Dé a cada probeta un código corto y anótelo junto a la receta en sus registros. Willers, en un artículo para Ceramic Arts Network, usa números y letras, y escribe el propio sistema al principio del cuaderno.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Mezclas lineales
+### Line blends
 
-Una **mezcla lineal**{{en: line blend}} es una fila de pruebas que pasa en pasos iguales de una mezcla a otra: de un esmalte a otro, o de un esmalte base al mismo esmalte con más colorante{{en: colorant}}. Derek Au, por ejemplo, aumenta el óxido de hierro en una base transparente en pasos del 1 %. Un método volumétrico asociado a Ian Currie ahorra tiempo, porque solo se preparan los dos extremos:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Prepare los dos esmaltes de los extremos, A y B, en tandas del mismo tamaño, y tamice los dos.
-2. Añada agua al que tenga menos volumen hasta que los dos tengan exactamente el mismo volumen en húmedo.
-3. Remueva los dos y, con una jeringa, prepare cada mezcla en su propio vaso numerado.
-4. Remueva cada vaso y sumerja una probeta.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-En nuestro ejemplo práctico, A son 100 g de una base transparente, y B es lo mismo con 4 g de óxido de hierro rojo añadidos (una adición del 4 %). Cada mililitro de B contiene la misma proporción de base que un mililitro de A, más su hierro, así que los vasos van de nada de hierro al 4 % en pasos del 1 %. Cada extremo aporta 100 mL a la serie, cantidad que, según nuestra estimación, da una tanda de 100 g.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Una mezcla lineal de hierro en cinco pasos, 40 mL por vaso (nuestro ejemplo práctico)
-Label: Ejemplo de mezcla lineal
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Vaso | Base transparente (A) | Base con 4 % de hierro (B) | Óxido de hierro, % sobre la base |
-| ---- | --------------------: | -------------------------: | -------------------------------: |
-| 1    |                 40 mL |                       0 mL |                                0 |
-| 2    |                 30 mL |                      10 mL |                                1 |
-| 3    |                 20 mL |                      20 mL |                                2 |
-| 4    |                 10 mL |                      30 mL |                                3 |
-| 5    |                  0 mL |                      40 mL |                                4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-El método exige cálculos cuidadosos, extremos bien mezclados y de igual densidad{{en: SG}}, y una báscula precisa. Derek Au también mezcla por peso en lugar de por volumen. Una **mezcla triaxial** hace lo mismo con tres extremos, dispuestos en un triángulo.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Cuando un paso parezca prometedor, **Guardar como copia**, en la [página de la receta](/recipe), lo guarda como una receta propia y deja la original como estaba.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Cómo llevar un registro {#records}
 

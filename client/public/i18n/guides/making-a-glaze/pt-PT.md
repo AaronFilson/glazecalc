@@ -213,50 +213,50 @@ A **goma CMC** (carboximetilcelulose) torna a suspensão mais pegajosa e mais le
 
 A **bentonite**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os vidrados para imersão costumam contar com 15 a 25% de argila crua para isso. Numa receita com pouca argila, cerca de 1 a 3% de bentonite ajuda; segundo o Digitalfire, um vidrado com mais de 15% de argila não deve precisar de mais de 1% de bentonite sobre o peso do vidrado seco.
 
-## Peças de teste e testes em linha {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Começar em pequeno
+### Start small
 
-Derek Au avança em três passos: um teste de 50 ou 100 g, um ensaio de 1 a 2 kg se resultar, e depois um lote de atelier de 5 a 10 kg. Pela nossa estimativa, um teste de 100 g com {{SG 1.45}} dá cerca de 135 mL (cerca de 4½ US fl oz) de suspensão{{en: slurry}}, o suficiente para mergulhar algumas peças de teste{{en: test tiles}} pequenas num copo estreito.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Testar na sua própria pasta
+### Test on your own clay
 
-Um vidrado{{en: glaze}} pode ter um aspeto muito diferente noutra pasta ou noutro forno: a Clay Art Center testou cada um dos seus vidrados reformulados em quatro pastas{{en: clay bodies}}, ao cone 6 e ao cone 10. O guia da Potclays para quem começa a testar vidrados sugere:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 a 10 **peças de teste** (pequenas peças para experimentar um vidrado) da pasta que vai realmente usar, anotando se estão chacotadas{{en: bisqued}} ou completamente secas
-- uma alteração de cada vez
-- uma imersão e uma dupla imersão, para ver o vidrado em camada fina e grossa
-- todas as peças na mesma fornada
-- uma marca em cada peça antes da cozedura, com um carimbo, um entalhe ou um lápis cerâmico.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Sugerimos peças de teste que fiquem de pé, porque uma peça deitada esconde até onde um vidrado escorre, com uma faixa texturada para mostrar como o vidrado muda de cor nas arestas, e um pé sem vidrado. Assente cada uma num pratinho, num pedaço de chacota ou numa camada de protetor de placas, para apanhar o que escorrer. Ponha um **cone testemunho**{{en: witness cone}}, um pequeno cone cerâmico que dobra quando recebeu calor suficiente, perto das peças de teste para mostrar o que receberam; o [guia de cozedura](/guides/firing) explica os cones. Dê a cada peça um código curto e escreva-o ao lado da receita nos seus registos. Willers, num artigo para a Ceramic Arts Network, usa números e letras, e escreve o próprio sistema no início do caderno.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Testes em linha
+### Line blends
 
-Um **teste em linha**{{en: line blend}} é uma fila de testes que passa, em passos iguais, de uma mistura para outra: de um vidrado para um segundo, ou de um vidrado base para o mesmo vidrado com mais corante{{en: colorant}}. Derek Au, por exemplo, faz variar o óxido de ferro numa base transparente em incrementos de 1%. Um método volumétrico associado a Ian Currie poupa tempo, porque só se preparam os dois extremos:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Prepare os dois vidrados dos extremos, A e B, em lotes do mesmo tamanho, e peneire ambos.
-2. Acrescente água ao que tiver menos volume até ambos terem exatamente o mesmo volume de suspensão.
-3. Mexa ambos e depois, com uma seringa, tire cada mistura para o seu próprio copo numerado.
-4. Mexa cada copo e mergulhe uma peça de teste.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-No nosso exemplo, A são 100 g de uma base transparente, e B é a mesma base com 4 g de óxido de ferro vermelho acrescentados (uma adição de 4%). Cada mililitro de B tem a mesma proporção de base que um mililitro de A, mais o seu ferro, por isso os copos começam sem ferro e sobem até 4%, em passos de 1%. Cada extremo dá 100 mL ao teste, e um lote de 100 g chega para isso, pela nossa estimativa.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Um teste em linha de ferro em cinco passos, 40 mL por copo (o nosso exemplo)
-Label: Exemplo de teste em linha
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Copo | Base transparente (A) | Base com 4% de ferro (B) | Óxido de ferro, % da base |
-| ---- | --------------------: | -----------------------: | ------------------------: |
-| 1    |                 40 mL |                     0 mL |                         0 |
-| 2    |                 30 mL |                    10 mL |                         1 |
-| 3    |                 20 mL |                    20 mL |                         2 |
-| 4    |                 10 mL |                    30 mL |                         3 |
-| 5    |                  0 mL |                    40 mL |                         4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-O método exige contas cuidadosas, extremos bem misturados e com a mesma densidade, e uma balança exata. Derek Au também faz misturas por peso em vez de por volume. Um **teste triaxial** faz o mesmo com três extremos, dispostos num triângulo.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Quando um passo parecer promissor, **Guardar como cópia**, na [página da receita](/recipe), conserva-o como uma receita própria e deixa a original como estava.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Manter registos {#records}
 

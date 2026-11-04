@@ -1136,8 +1136,7 @@
     "stull.regions.underfired": "99qqvj",
     "stull.regions.crazed": "1otcxhm",
     "stull.keyBright": "1armci3",
-    "stull.keyCrazed": "18nf19t",
-    "stull.note": "izxjgn"
+    "stull.keyCrazed": "18nf19t"
   },
   "library": {
     "common.formulaHelp": "khhj0y",
@@ -1945,7 +1944,6 @@
     "stull.keyBright": "1armci3",
     "stull.keyLimits": "1p1wpg8",
     "stull.keyCrazed": "18nf19t",
-    "stull.note": "izxjgn",
     "slurry.heading": "myjba9",
     "slurry.intro": "1x0qwud",
     "slurry.volume": "14nefpu",
@@ -2880,7 +2878,6 @@
     "weighing": "6tc9of",
     "mixing": "o2f2yc",
     "specific-gravity": "vkk96h",
-    "testing": "10v9uq1",
     "records": "1jwvhfa",
     "sources": "1mqleb6"
   },

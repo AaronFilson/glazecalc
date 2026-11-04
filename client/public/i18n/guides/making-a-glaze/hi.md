@@ -213,50 +213,50 @@ Label: लक्ष्य विशिष्ट गुरुत्व के ल
 
 **बेंटोनाइट**, एक बहुत बारीक मिट्टी, बाकी कणों को घोल में तैरते रहने में मदद करता है. डिपिंग ग्लेज़ इसके लिए आमतौर पर 15 से 25% कच्ची मिट्टी पर निर्भर होते हैं. जिस रेसिपी में मिट्टी कम हो, उसमें लगभग 1 से 3% बेंटोनाइट मदद करता है; Digitalfire कहता है कि 15% से ज़्यादा मिट्टी वाले ग्लेज़ में सूखे ग्लेज़ के भार के 1% से ज़्यादा बेंटोनाइट की ज़रूरत नहीं होनी चाहिए.
 
-## टेस्ट टाइलें और लाइन ब्लेंड {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### छोटे से शुरू करें
+### Start small
 
-Derek Au तीन चरणों में आगे बढ़ते हैं: 50 या 100 g का टेस्ट, वह सफल हो तो 1 से 2 kg का ट्रायल, फिर 5 से 10 kg का स्टूडियो बैच. हमारे अनुमान से, {{SG 1.45}} पर 100 g का टेस्ट लगभग 135 mL (लगभग 4½ US fl oz) स्लरी (ग्लेज़ का घोल){{en: slurry}} बनाता है, जो एक संकरे कप में कुछ छोटी टाइलें डुबोने के लिए काफ़ी है.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### अपनी ही मिट्टी पर जाँचें
+### Test on your own clay
 
-कोई ग्लेज़{{en: glaze}} दूसरी मिट्टी पर या दूसरे किल्न (भट्ठी) में काफ़ी अलग दिख सकता है: Clay Art Center ने अपने नए सिरे से बनाए हर ग्लेज़ को चार क्ले बॉडी{{en: clay bodies}} पर, कोन (शंकु){{en: cone}} 6 और कोन 10 पर जाँचा. ग्लेज़ टेस्टिंग पर शुरुआती लोगों के लिए Potclays का लेख ये सुझाता है:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 से 10 **टेस्ट टाइलें**{{en: test tiles}} (ग्लेज़ आज़माने के लिए छोटे टुकड़े), उसी मिट्टी की जो आप सचमुच इस्तेमाल करेंगे, यह लिखते हुए कि वे बिस्क (पहली पकाई){{en: bisque}} की हुई हैं या बोन-ड्राई (पूरी तरह सूखी)
-- एक बार में एक ही बदलाव
-- एक बार डुबोना और दो बार डुबोना, ताकि ग्लेज़ पतला और मोटा दोनों दिखे
-- सारी टाइलें एक ही किल्न लोड में
-- पकाने से पहले हर टाइल पर एक निशान, मुहर, खुदाई या अंडरग्लेज़ पेंसिल से.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-हमारा सुझाव है ऐसी टाइलें जो सीधी खड़ी रहें, क्योंकि चपटी टाइल यह छिपा लेती है कि ग्लेज़ कितनी दूर बहता है, उन पर एक बनावट वाली पट्टी हो ताकि दिखे कि ग्लेज़ किनारों पर कैसे रंग बदलता है (ब्रेक), और नीचे बिना ग्लेज़ का पेंदा हो. टपकन पकड़ने के लिए हर टाइल को एक छोटी तश्तरी या बिस्क के टुकड़े पर, या किल्न वॉश लगी शेल्फ़ पर रखें. टाइलों के पास एक **विटनेस कोन**{{en: witness cone}} रखें, यानी एक छोटा सिरेमिक कोन जो पर्याप्त गर्मी मिलने पर झुक जाता है, ताकि पता चले कि टाइलों को कितनी गर्मी मिली; [साधारण किल्न की फ़ायरिंग](/guides/firing) गाइड कोन के बारे में समझाती है. हर टाइल को एक छोटा कोड दें, और उसे अपने रिकॉर्ड में रेसिपी के सामने लिखें. Ceramic Arts Network के लिए लिखते हुए Willers अंक और अक्षर इस्तेमाल करते हैं, और यह पूरी पद्धति नोटबुक के शुरू में लिख देते हैं.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### लाइन ब्लेंड
+### Line blends
 
-**लाइन ब्लेंड**{{en: line blend}} टेस्टों की एक कतार होती है जो एक मिश्रण से दूसरे तक बराबर कदमों में बढ़ती है: एक ग्लेज़ से दूसरे ग्लेज़ तक, या किसी बेस ग्लेज़ से उसी ग्लेज़ तक जिसमें कलरेंट (रंजक){{en: colorant}} ज़्यादा हो. उदाहरण के लिए, Derek Au एक क्लियर बेस में आयरन ऑक्साइड को 1% के कदमों में बढ़ाते हैं. Ian Currie से जुड़ा, आयतन से नापने वाला एक तरीका समय बचाता है, क्योंकि इसमें आप सिर्फ़ दोनों सिरे मिलाते हैं:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. दोनों सिरों के ग्लेज़, A और B, एक ही साइज़ के बैच में मिलाएँ, और दोनों को छानें.
-2. जिसका आयतन कम हो, उसमें तब तक पानी डालें जब तक दोनों का गीला आयतन ठीक बराबर न हो जाए.
-3. दोनों को हिलाएँ, फिर हर मिश्रण को सिरिंज से खींचकर उसके अपने नंबर वाले कप में डालें.
-4. हर कप को हिलाएँ और एक टाइल डुबोएँ.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-हमारे उदाहरण में A एक क्लियर बेस के 100 g है, और B वही है जिसमें 4 g रेड आयरन ऑक्साइड मिलाया गया है (4% की बढ़ोतरी). B के हर मिलीलीटर में बेस का उतना ही हिस्सा होता है जितना A के एक मिलीलीटर में, साथ में उसका आयरन, इसलिए कप बिना आयरन से 4% तक 1% के कदमों में बढ़ते हैं. हर सिरा ब्लेंड को 100 mL देता है, जो हमारे अनुमान से 100 g के बैच से निकल आता है.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: आयरन का पाँच चरणों वाला लाइन ब्लेंड, हर कप में 40 mL (हमारा उदाहरण)
-Label: लाइन ब्लेंड का उदाहरण
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| कप  | क्लियर बेस (A) | 4% आयरन वाला बेस (B) | आयरन ऑक्साइड, बेस का % |
-| --- | -------------: | -------------------: | ---------------------: |
-| 1   |          40 mL |                 0 mL |                      0 |
-| 2   |          30 mL |                10 mL |                      1 |
-| 3   |          20 mL |                20 mL |                      2 |
-| 4   |          10 mL |                30 mL |                      3 |
-| 5   |           0 mL |                40 mL |                      4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-इस तरीके के लिए सावधानी से हिसाब, एक जैसे विशिष्ट गुरुत्व वाले अच्छी तरह मिले सिरे, और सटीक तराज़ू चाहिए. Derek Au आयतन के बजाय भार से भी ब्लेंड करते हैं. **ट्राइएक्सियल ब्लेंड** यही काम तीन सिरों के साथ करता है, जिन्हें एक त्रिकोण पर रखा जाता है.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> जब कोई कदम अच्छा लगे, तो [रेसिपी पेज](/recipe) पर **कॉपी के रूप में सहेजें** उसे एक अलग रेसिपी के रूप में रख लेता है और मूल रेसिपी को जैसी थी वैसी छोड़ देता है.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## रिकॉर्ड रखना {#records}
 

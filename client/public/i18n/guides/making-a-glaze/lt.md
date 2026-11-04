@@ -213,50 +213,50 @@ Label: Vanduo norimam santykiniam tankiui
 
 **Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; pasak Digitalfire, glazūrai, kurioje yra daugiau kaip 15 % molio, neturėtų reikėti bentonito daugiau kaip 1 % sausos glazūros masės.
 
-## Bandiniai ir linijinės bandinių serijos {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Pradžia nuo mažų kiekių
+### Start small
 
-Derekas Au kiekį didina trimis žingsniais: 50 arba 100 g bandymas, jei jis pavyksta – 1–2 kg bandomasis užmaišas, tada 5–10 kg užmaišas dirbtuvėms. Mūsų įverčiu, 100 g bandymas, kai rodmuo {{SG 1.45}}, duoda apie 135 mL (apie 4½ JAV fl oz) glazūros suspensijos{{en: slurry}} – pakankamai, kad siaurame puodelyje būtų galima pamerkti kelis mažus bandinius.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Bandymas ant savo molio
+### Test on your own clay
 
-Ant kito molio ar kitoje krosnyje glazūra{{en: glaze}} gali atrodyti visai kitaip: bendrovė Clay Art Center kiekvieną savo pakeistą glazūrą išbandė ant keturių molio masių{{en: clay bodies}}, ties piroskopu{{en: cone}} 6 ir ties piroskopu 10. Potclays straipsnyje pradedantiesiems apie glazūrų bandymus siūloma:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **bandinių**{{en: test tiles}} (mažų plokštelių glazūrai išbandyti) iš to molio, kurį iš tikrųjų naudosite, pasižymint, ar jie išdegti (biskvitas{{en: bisque}}), ar visiškai išdžiūvę
-- vienu metu – tik vienas pakeitimas
-- vienas merkimas ir du merkimai, kad matytumėte ploną ir storą glazūros sluoksnį
-- visi bandiniai toje pačioje krosnies įkrovoje
-- žymė ant kiekvieno bandinio prieš degimą – spaudu, įrėžimu ar poglazūriniu pieštuku.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Siūlome stačius bandinius (ant plokščio bandinio nesimato, kiek glazūra nubėga) su reljefine juosta, kuri parodo, kaip glazūra keičia spalvą ant briaunų, ir su neglazūruotu dugnu. Kiekvieną pastatykite ant mažos lėkštelės ar biskvito gabalėlio arba ant apsauga padengtos krosnies plokštės, kad būtų surinkti lašai. Šalia bandinių pastatykite **kontrolinį piroskopą**{{en: witness cone}} – mažą keraminį kūgį, kuris sulinksta gavęs pakankamai šilumos, – kad matytumėte, kiek šilumos jie gavo; piroskopai paaiškinti vadove [Degimas paprastoje krosnyje](/guides/firing). Kiekvienam bandiniui suteikite trumpą kodą ir įrašuose užrašykite jį prie recepto. Willers Ceramic Arts Network straipsnyje naudoja skaičius ir raides, o pačią žymėjimo sistemą užrašo sąsiuvinio pradžioje.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Linijinės bandinių serijos
+### Line blends
 
-**Linijinė bandinių serija**{{en: line blend}} – tai bandinių eilė, kurioje vienas mišinys tolygiais žingsniais pereina į kitą: viena glazūra į kitą arba bazinė glazūra į tą pačią glazūrą su daugiau dažiklio{{en: colorant}}. Pavyzdžiui, Derekas Au skaidrioje bazinėje glazūroje geležies oksido kiekį didina kas 1 %. Laiko sutaupo tūrinis metodas, siejamas su Ianu Currie, nes sumaišote tik dvi kraštines glazūras:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Sumaišykite dvi kraštines glazūras A ir B vienodo dydžio užmaišais ir abi persijokite.
-2. Į tą, kurios tūris mažesnis, pilkite vandens, kol abiejų glazūrų tūris bus lygiai vienodas.
-3. Išmaišykite abi, tada švirkštu atmatuokite kiekvieną mišinį į jam skirtą sunumeruotą puodelį.
-4. Išmaišykite kiekvieno puodelio turinį ir pamerkite bandinį.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Mūsų pavyzdyje A – 100 g skaidrios bazinės glazūros, o B – tokia pati glazūra su 4 g raudonojo geležies oksido (4 % priedas). Kiekviename B mililitre yra tiek pat bazinės glazūros, kiek A mililitre, ir dar geležies, todėl puodeliai pereina nuo glazūros be geležies iki 4 % geležies kas 1 %. Kiekviena kraštinė glazūra serijai atiduoda 100 mL, o tiek, mūsų įverčiu, duoda 100 g užmaišas.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Penkių žingsnių geležies bandinių serija, 40 mL puodeliui (mūsų pavyzdys)
-Label: Bandinių serijos pavyzdys
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Puodelis | Skaidri bazinė glazūra (A) | Bazinė glazūra su 4 % geležies (B) | Geležies oksidas, % bazinės glazūros |
-| -------- | -------------------------: | ---------------------------------: | -----------------------------------: |
-| 1        |                      40 mL |                               0 mL |                                    0 |
-| 2        |                      30 mL |                              10 mL |                                    1 |
-| 3        |                      20 mL |                              20 mL |                                    2 |
-| 4        |                      10 mL |                              30 mL |                                    3 |
-| 5        |                       0 mL |                              40 mL |                                    4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Šiam metodui reikia kruopščių skaičiavimų, gerai išmaišytų vienodo santykinio tankio{{en: SG}} kraštinių glazūrų ir tikslių svarstyklių. Derekas Au taip pat maišo pagal masę, o ne pagal tūrį. **Trijų komponentų bandinių serija** daro tą patį su trimis kraštinėmis glazūromis, išdėstytomis trikampiu.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Kai kuris nors žingsnis atrodo daug žadantis, mygtukas **Įrašyti kaip kopiją** [recepto puslapyje](/recipe) įrašo jį kaip atskirą receptą, o originalą palieka nepakeistą.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Įrašų vedimas {#records}
 

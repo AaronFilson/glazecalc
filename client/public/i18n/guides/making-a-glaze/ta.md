@@ -213,50 +213,50 @@ Label: ஓர் இலக்கு ஒப்படர்த்திக்க�
 
 **பென்டோனைட்**, மிக நுண்ணிய களிமண், மற்ற துகள்களைத் தொங்கல் நிலையில் வைத்திருக்க உதவுகிறது. முக்கும் கிளேஸ்கள் இதற்காக வழக்கமாக 15 முதல் 25% கச்சாக் களிமண்ணை நம்பியிருக்கின்றன. களிமண் குறைவான ஒரு ரெசிபிக்கு, சுமார் 1 முதல் 3% பென்டோனைட் உதவும்; 15%-க்கு மேல் களிமண் உள்ள கிளேஸுக்கு, உலர் கிளேஸ் எடையின் 1%-க்கு மேல் பென்டோனைட் தேவைப்படாது என்று எதிர்பார்க்கலாம் என்று Digitalfire சொல்கிறது.
 
-## டெஸ்ட் டைல்களும் லைன் பிளெண்ட்களும் {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### சிறிதாகத் தொடங்கவும்
+### Start small
 
-Derek Au மூன்று படிகளில் முன்னேறுகிறார்: 50 அல்லது 100 g சோதனை, அது வேலை செய்தால் 1 முதல் 2 kg முயற்சி, பிறகு 5 முதல் 10 kg ஸ்டுடியோ பேட்ச். எங்கள் மதிப்பீட்டின்படி, {{SG 1.45}} கொண்ட 100 g சோதனை சுமார் 135 mL (சுமார் 4½ US fl oz) ஸ்லரியைத் தருகிறது; ஒரு குறுகிய கப்பில் சில சிறிய டைல்களை முக்குவதற்கு அது போதும்.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### உங்கள் சொந்த களிமண்ணில் சோதிக்கவும்
+### Test on your own clay
 
-ஒரு கிளேஸ் வேறொரு களிமண்ணிலோ வேறொரு கில்னிலோ மிகவும் வேறுபட்டுத் தெரியக்கூடும்: Clay Art Center தனது மறுவடிவமைத்த ஒவ்வொரு கிளேஸையும் நான்கு க்ளே பாடிகளில், கோன் 6-இலும் கோன் 10-இலும் சோதித்தது. தொடக்கநிலையாளர்களுக்கான கிளேஸ் சோதனை பற்றிய Potclays-இன் கட்டுரை பரிந்துரைப்பது:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- நீங்கள் உண்மையில் பயன்படுத்தப்போகும் களிமண்ணில் 6 முதல் 10 **டெஸ்ட் டைல்கள்** (ஒரு கிளேஸை முயன்று பார்க்கச் சிறிய துண்டுகள்), அவை பிஸ்க் (முதல் சுடுதல்){{en: bisque}} செய்யப்பட்டவையா அல்லது போன்-டிரை (முழுதும் உலர்ந்த) நிலையில் உள்ளவையா என்று குறித்துக்கொண்டு
-- ஒரு நேரத்தில் ஒரு மாற்றம்
-- கிளேஸ் மெல்லியதாகவும் தடிமனாகவும் எப்படி இருக்கிறது என்று பார்க்க, ஒரு முறை முக்குதலும் இரண்டு முறை முக்குதலும்
-- ஒவ்வொரு டைலும் ஒரே கில்ன் (சூளை) லோடில்
-- சுடுவதற்கு முன் ஒவ்வொரு டைலிலும், ஒரு ஸ்டாம்ப், செதுக்கல் அல்லது அண்டர்கிளேஸ் பென்சிலால் ஒரு குறி.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-நிமிர்ந்து நிற்கும் டைல்களைப் பரிந்துரைக்கிறோம், ஏனெனில் தட்டையான டைல் கிளேஸ் எவ்வளவு தூரம் வழிந்தது என்பதை மறைக்கிறது; விளிம்புகளில் கிளேஸ் எப்படி நிறம் மாறுகிறது என்பதைக் காட்ட ஒரு சொரசொரப்பான பட்டையும், பூசப்படாத ஓர் அடிப்பகுதியும் இருக்கட்டும். சொட்டுகளைப் பிடிக்க, ஒவ்வொன்றையும் ஒரு சிறிய தட்டிலோ பிஸ்க் துண்டிலோ, அல்லது கில்ன் வாஷ் பூசிய ஷெல்ஃபிலோ வைக்கவும். டைல்கள் பெற்ற வெப்பத்தைக் காட்ட, அவற்றின் அருகில் ஒரு **விட்னஸ் கோன்** (சாட்சிக் கோன்){{en: witness cone}}, அதாவது போதுமான வெப்பம் பெற்றதும் வளையும் ஒரு சிறிய செராமிக் கோன், வைக்கவும்; கோன்களை [எளிய கில்னில் சுடுதல்](/guides/firing) வழிகாட்டி விளக்குகிறது. ஒவ்வொரு டைலுக்கும் ஒரு குறுகிய குறியீடு கொடுத்து, உங்கள் பதிவுகளில் ரெசிபிக்கு எதிரே அதை எழுதவும். Ceramic Arts Network-க்காக எழுதிய Willers, எண்களையும் எழுத்துகளையும் பயன்படுத்தி, அந்த முறையையே நோட்டுப் புத்தகத்தின் முன்பகுதியில் எழுதி வைக்கிறார்.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### லைன் பிளெண்ட்கள்
+### Line blends
 
-**லைன் பிளெண்ட்**{{en: line blend}} என்பது ஒரு கலவையிலிருந்து இன்னொன்றுக்குச் சீராகப் படிப்படியாகச் செல்லும் சோதனைகளின் வரிசை: ஒரு கிளேஸிலிருந்து இரண்டாவதுக்கு, அல்லது ஒரு பேஸ் கிளேஸிலிருந்து அதே கிளேஸில் கூடுதல் கலரன்ட் சேர்த்ததற்கு. உதாரணமாக, Derek Au ஒரு கிளியர் பேஸ் வழியே அயர்ன் ஆக்சைடை (இரும்பு ஆக்சைடு) 1% அதிகரிப்புகளில் படிப்படியாகக் கொண்டு செல்கிறார். Ian Currie-யுடன் தொடர்புடைய ஒரு கன அளவு முறை நேரத்தை மிச்சப்படுத்துகிறது, ஏனெனில் நீங்கள் இரண்டு முனைகளை மட்டுமே கலக்கிறீர்கள்:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. A, B என்ற இரண்டு முனை கிளேஸ்களை ஒரே அளவு பேட்ச்களாகக் கலந்து, இரண்டையும் சலிக்கவும்.
-2. குறைவான கன அளவு உள்ளதில், இரண்டின் ஈர கன அளவும் சரியாக ஒன்றாகும் வரை தண்ணீர் சேர்க்கவும்.
-3. இரண்டையும் கிளறி, பிறகு ஒவ்வொரு கலவையையும் ஒரு சிரிஞ்சால் எடுத்து, அதற்கான எண்ணிட்ட கப்பில் ஊற்றவும்.
-4. ஒவ்வொரு கப்பையும் கிளறி, ஒரு டைலை முக்கவும்.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-எங்கள் செயல்முறை உதாரணத்தில், A என்பது 100 g கிளியர் பேஸ், B என்பது அதே பேஸில் 4 g ரெட் அயர்ன் ஆக்சைடு சேர்த்தது (4% சேர்க்கை). B-இன் ஒவ்வொரு மில்லிலிட்டரிலும் A-வின் ஒரு மில்லிலிட்டரில் உள்ள அதே பங்கு பேஸ் உள்ளது, கூடுதலாக அதன் அயர்னும்; ஆகவே கப்புகள் அயர்ன் இல்லாததிலிருந்து 4% வரை 1% படிகளில் செல்கின்றன. ஒவ்வொரு முனையும் பிளெண்டுக்கு 100 mL தருகிறது; எங்கள் மதிப்பீட்டின்படி 100 g பேட்ச் அதை ஈடுசெய்கிறது.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ஐந்து படி அயர்ன் லைன் பிளெண்ட், ஒரு கப்புக்கு 40 mL (எங்கள் செயல்முறை உதாரணம்)
-Label: லைன் பிளெண்ட் உதாரணம்
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| கப் | கிளியர் பேஸ் (A) | 4% அயர்னுடன் பேஸ் (B) | அயர்ன் ஆக்சைடு, பேஸின் % |
-| --- | ---------------: | --------------------: | -----------------------: |
-| 1   |            40 mL |                  0 mL |                        0 |
-| 2   |            30 mL |                 10 mL |                        1 |
-| 3   |            20 mL |                 20 mL |                        2 |
-| 4   |            10 mL |                 30 mL |                        3 |
-| 5   |             0 mL |                 40 mL |                        4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-இந்த முறைக்கு கவனமான கணக்கு, சமமான ஒப்படர்த்தி கொண்ட நன்கு கலந்த முனைகள், துல்லியமான தராசு ஆகியவை தேவை. Derek Au கன அளவுக்குப் பதிலாக எடையிலும் கலக்கிறார். **டிரையாக்சியல் பிளெண்ட்** இதையே மூன்று முனைகளுடன் செய்கிறது, ஒரு முக்கோணத்தில் அமைத்து.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> ஒரு படி நம்பிக்கை தருவதாகத் தெரிந்தால், [ரெசிபி பக்கத்தில்](/recipe) **நகலாகச் சேமி** அதைத் தனி ரெசிபியாக வைத்து, அசலை அப்படியே விட்டுவிடுகிறது.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## பதிவுகளை வைத்திருத்தல் {#records}
 

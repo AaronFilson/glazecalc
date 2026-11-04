@@ -213,50 +213,50 @@ Label: 达到目标比重所需的水
 
 **膨润土**是一种很细的黏土，有助于使其他颗粒悬浮。浸釉用的釉通常靠 15～25% 的生黏土来做到这一点。黏土不足的配方，加约 1～3% 的膨润土会有帮助；Digitalfire 指出，黏土含量超过 15% 的釉，膨润土应该不需要超过干釉重量的 1%。
 
-## 试片和线性梯度试验 {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### 从小量开始
+### Start small
 
-Derek Au 分三步逐级放大：先做 50 或 100 g 的试验，成功后做 1～2 kg 的试配，然后是 5～10 kg 的工作室批量。按我们的估计，100 g 的试验在 {{SG 1.45}} 时约得 135 mL（约 4½ US fl oz）釉浆，足够在窄杯里浸几片小试片。
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### 在自己的黏土上试验
+### Test on your own clay
 
-同一种釉在另一种黏土上或另一座窑里，看起来可能大不相同：Clay Art Center 把每一款重新调整配方的釉，都在四种坯体上、Orton 测温锥 6 号和 10 号下做了测试。Potclays 的釉料试验入门指南建议：
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6～10 片用您实际要用的黏土做的**试片**{{en: test tiles}}（用来试釉的小件），并注明它们是已素烧的还是干透的
-- 一次只改一处
-- 单次浸釉和两次浸釉各做一组，看釉薄时和厚时的样子
-- 所有试片放在同一窑里烧
-- 烧前在每片试片上做一个标记，用印章、刻划或釉下彩铅笔。
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-我们建议用能立起来的试片，因为平放的试片看不出釉流了多远；试片上带一条有纹理的带，用来显示釉在边缘处如何出筋，并留一个不挂釉的底足。每片放在小碟或一块素烧碎片上，或者放在刷过棚板隔离剂的棚板上，以接住流下的釉。在试片附近放一支**证据锥**{{en: witness cone}}，即受热足够时会弯倒的小陶瓷锥，以显示试片受到了多少热；[《简易窑炉烧成》](/guides/firing)讲解了测温锥。给每片试片一个简短的编号，并在记录里把它写在对应的配方旁边。Willers 为 Ceramic Arts Network 撰文，使用数字和字母，并把这套编号规则本身写在笔记本的前面。
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### 线性梯度试验
+### Line blends
 
-**线性梯度试验**{{en: line blend}}是一排试验，从一种配料均匀地过渡到另一种：从一种釉到另一种釉，或从基础釉到加了更多着色剂的同一种釉。例如，Derek Au 在透明基础釉中以 1% 为增量递增氧化铁。与 Ian Currie 相关的体积法可以省时间，因为只需调配两端：
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. 把两端的釉 A 和 B 调成同样大小的批量，并都过筛。
-2. 往体积较小的那份加水，直到两份的湿体积完全相同。
-3. 两份都搅拌，然后用注射器把每种配料抽入各自编号的杯中。
-4. 搅拌每只杯子，浸一片试片。
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-在我们的算例中，A 是 100 g 透明基础釉，B 是同样的釉再加 4 g 红色氧化铁（外加 4%）。B 每毫升含的基础釉份额与 A 每毫升相同，再加上它的铁，所以各杯从无铁到 4%，以 1% 递增。两端各为混合贡献 100 mL，按我们的估计，100 g 的批量可以满足。
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: 五步氧化铁线性梯度试验，每杯 40 mL（我们的算例）
-Label: 线性梯度试验示例
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| 杯  | 透明基础釉 (A) | 含 4% 铁的基础釉 (B) | 氧化铁，占基础釉的 % |
-| --- | -------------: | -------------------: | -------------------: |
-| 1   |          40 mL |                 0 mL |                    0 |
-| 2   |          30 mL |                10 mL |                    1 |
-| 3   |          20 mL |                20 mL |                    2 |
-| 4   |          10 mL |                30 mL |                    3 |
-| 5   |           0 mL |                40 mL |                    4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-这种方法需要仔细的计算、混合均匀且比重一致的两端，以及准确的秤。Derek Au 也按重量而不是体积来调配。**三角配釉试验**用三个端点做同样的事，排布在一个三角形上。
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> 某一步看起来有希望时，在[配方页](/recipe)上用**另存为副本**，把它存成独立的配方，原来的配方保持原样。
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## 做好记录 {#records}
 

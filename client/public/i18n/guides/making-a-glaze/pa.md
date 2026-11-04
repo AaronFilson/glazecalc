@@ -213,50 +213,50 @@ Label: ਟੀਚੇ ਵਾਲੀ ਸਪੈਸਿਫ਼ਿਕ ਗ੍ਰੈਵਿ�
 
 **ਬੈਂਟੋਨਾਈਟ**, ਇੱਕ ਬਹੁਤ ਬਰੀਕ ਮਿੱਟੀ, ਬਾਕੀ ਕਣਾਂ ਨੂੰ ਪਾਣੀ ਵਿੱਚ ਤੈਰਦਾ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ. ਡੁਬੋਣ ਵਾਲੇ ਗਲੇਜ਼ ਇਸ ਲਈ ਆਮ ਤੌਰ ਉੱਤੇ 15 ਤੋਂ 25% ਕੱਚੀ ਮਿੱਟੀ ਉੱਤੇ ਨਿਰਭਰ ਕਰਦੇ ਹਨ. ਜਿਸ ਰੈਸਿਪੀ ਵਿੱਚ ਮਿੱਟੀ ਘੱਟ ਹੋਵੇ, ਉਸ ਲਈ ਲਗਭਗ 1 ਤੋਂ 3% ਬੈਂਟੋਨਾਈਟ ਮਦਦ ਕਰਦਾ ਹੈ; Digitalfire ਕਹਿੰਦੀ ਹੈ ਕਿ 15% ਤੋਂ ਵੱਧ ਮਿੱਟੀ ਵਾਲੇ ਗਲੇਜ਼ ਨੂੰ ਸੁੱਕੇ ਗਲੇਜ਼ ਦੇ ਭਾਰ ਦੇ 1% ਤੋਂ ਵੱਧ ਬੈਂਟੋਨਾਈਟ ਦੀ ਲੋੜ ਨਹੀਂ ਪੈਣੀ ਚਾਹੀਦੀ.
 
-## ਟੈਸਟ ਟਾਈਲਾਂ ਅਤੇ ਲਾਈਨ ਬਲੈਂਡ {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### ਛੋਟੇ ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ
+### Start small
 
-Derek Au ਤਿੰਨ ਕਦਮਾਂ ਵਿੱਚ ਅੱਗੇ ਵਧਦੇ ਹਨ: 50 ਜਾਂ 100 g ਦਾ ਟੈਸਟ, ਜੇ ਉਹ ਕੰਮ ਕਰੇ ਤਾਂ 1 ਤੋਂ 2 kg ਦਾ ਟ੍ਰਾਇਲ, ਫਿਰ 5 ਤੋਂ 10 kg ਦਾ ਸਟੂਡੀਓ ਬੈਚ. ਸਾਡੇ ਅੰਦਾਜ਼ੇ ਮੁਤਾਬਕ {{SG 1.45}} ਉੱਤੇ 100 g ਦਾ ਟੈਸਟ ਲਗਭਗ 135 mL (ਲਗਭਗ 4½ US fl oz) ਸਲਰੀ (ਗਲੇਜ਼ ਦਾ ਪਾਣੀ ਵਾਲਾ ਘੋਲ){{en: slurry}} ਬਣਾਉਂਦਾ ਹੈ, ਜੋ ਇੱਕ ਤੰਗ ਕੱਪ ਵਿੱਚ ਕੁਝ ਛੋਟੀਆਂ ਟਾਈਲਾਂ ਡੁਬੋਣ ਲਈ ਕਾਫ਼ੀ ਹੈ.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### ਆਪਣੀ ਹੀ ਮਿੱਟੀ ਉੱਤੇ ਜਾਂਚੋ
+### Test on your own clay
 
-ਇੱਕ ਗਲੇਜ਼{{en: glaze}} ਕਿਸੇ ਹੋਰ ਮਿੱਟੀ ਉੱਤੇ ਜਾਂ ਕਿਸੇ ਹੋਰ ਕਿਲਨ (ਭੱਠੀ) ਵਿੱਚ ਕਾਫ਼ੀ ਵੱਖਰਾ ਦਿਸ ਸਕਦਾ ਹੈ: Clay Art Center ਨੇ ਆਪਣੇ ਹਰ ਨਵੇਂ ਸਿਰੇ ਤੋਂ ਬਣਾਏ ਗਏ ਗਲੇਜ਼ ਨੂੰ ਚਾਰ ਕਲੇ ਬਾਡੀਆਂ (ਮਿੱਟੀ ਦੇ ਮਿਸ਼ਰਣ){{en: clay bodies}} ਉੱਤੇ, ਕੋਨ (ਸ਼ੰਕੂ){{en: cone}} 6 ਅਤੇ ਕੋਨ 10 ਉੱਤੇ ਪਰਖਿਆ. Potclays ਦਾ ਗਲੇਜ਼ ਟੈਸਟਿੰਗ ਬਾਰੇ ਸ਼ੁਰੂਆਤ ਕਰਨ ਵਾਲਿਆਂ ਲਈ ਕਿਤਾਬਚਾ ਸੁਝਾਉਂਦਾ ਹੈ:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 ਤੋਂ 10 **ਟੈਸਟ ਟਾਈਲਾਂ**{{en: test tiles}} (ਗਲੇਜ਼ ਨੂੰ ਪਰਖਣ ਲਈ ਛੋਟੇ ਟੁਕੜੇ), ਉਸ ਮਿੱਟੀ ਦੀਆਂ ਜੋ ਤੁਸੀਂ ਅਸਲ ਵਿੱਚ ਵਰਤੋਗੇ, ਇਹ ਲਿਖਦੇ ਹੋਏ ਕਿ ਉਨ੍ਹਾਂ ਦੀ ਬਿਸਕ (ਪਹਿਲੀ ਪਕਾਈ){{en: bisque}} ਫਾਇਰਿੰਗ ਹੋਈ ਹੈ ਜਾਂ ਉਹ ਬੋਨ-ਡ੍ਰਾਈ ਹਨ
-- ਇੱਕ ਵਾਰ ਵਿੱਚ ਇੱਕ ਹੀ ਤਬਦੀਲੀ
-- ਇੱਕ ਵਾਰ ਡੁਬੋਣਾ ਅਤੇ ਦੋ ਵਾਰ ਡੁਬੋਣਾ, ਤਾਂ ਜੋ ਗਲੇਜ਼ ਪਤਲਾ ਅਤੇ ਮੋਟਾ ਦੋਵੇਂ ਵੇਖੇ ਜਾ ਸਕਣ
-- ਹਰ ਟਾਈਲ ਇੱਕੋ ਕਿਲਨ ਲੋਡ ਵਿੱਚ
-- ਪਕਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਟਾਈਲ ਉੱਤੇ ਇੱਕ ਨਿਸ਼ਾਨ, ਮੋਹਰ, ਉੱਕਰਾਈ ਜਾਂ ਅੰਡਰਗਲੇਜ਼ ਪੈਨਸਿਲ ਨਾਲ.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-ਸਾਡਾ ਸੁਝਾਅ ਹੈ ਕਿ ਟਾਈਲਾਂ ਖੜ੍ਹੀਆਂ ਹੋਣ (ਕਿਉਂਕਿ ਚਪਟੀ ਟਾਈਲ ਇਹ ਛੁਪਾ ਲੈਂਦੀ ਹੈ ਕਿ ਗਲੇਜ਼ ਕਿੰਨੀ ਦੂਰ ਤੱਕ ਵਗਦਾ ਹੈ), ਉਨ੍ਹਾਂ ਵਿੱਚ ਇੱਕ ਖੁਰਦਰੀ ਬਣਤਰ ਵਾਲੀ ਪੱਟੀ ਹੋਵੇ ਜੋ ਦਿਖਾਏ ਕਿ ਕਿਨਾਰਿਆਂ ਉੱਤੇ ਗਲੇਜ਼ ਦਾ ਰੰਗ ਕਿਵੇਂ ਬਦਲਦਾ ਹੈ, ਅਤੇ ਇੱਕ ਬਿਨਾਂ ਗਲੇਜ਼ ਵਾਲਾ ਥੱਲਾ ਹੋਵੇ. ਤੁਪਕੇ ਫੜਨ ਲਈ ਹਰ ਟਾਈਲ ਨੂੰ ਇੱਕ ਛੋਟੀ ਤਸ਼ਤਰੀ ਜਾਂ ਬਿਸਕ ਦੇ ਟੁਕੜੇ ਉੱਤੇ, ਜਾਂ ਕਿਲਨ ਵਾਸ਼ ਲੱਗੀ ਕਿਲਨ ਸ਼ੈਲਫ਼ ਉੱਤੇ ਰੱਖੋ. ਟਾਈਲਾਂ ਦੇ ਨੇੜੇ ਇੱਕ **ਵਿਟਨੈੱਸ ਕੋਨ**{{en: witness cone}} ਰੱਖੋ, ਯਾਨੀ ਇੱਕ ਛੋਟਾ ਸਿਰੇਮਿਕ ਕੋਨ ਜੋ ਕਾਫ਼ੀ ਤਾਪ ਮਿਲ ਜਾਣ ਉੱਤੇ ਝੁਕ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਜੋ ਇਹ ਪਤਾ ਲੱਗੇ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ ਕਿੰਨਾ ਤਾਪ ਮਿਲਿਆ; [ਸਾਦੇ ਕਿਲਨ ਦੀ ਫਾਇਰਿੰਗ](/guides/firing) ਗਾਈਡ ਕੋਨਾਂ ਬਾਰੇ ਸਮਝਾਉਂਦੀ ਹੈ. ਹਰ ਟਾਈਲ ਨੂੰ ਇੱਕ ਛੋਟਾ ਕੋਡ ਦਿਓ, ਅਤੇ ਆਪਣੇ ਰਿਕਾਰਡ ਵਿੱਚ ਉਸ ਨੂੰ ਰੈਸਿਪੀ ਦੇ ਸਾਹਮਣੇ ਲਿਖੋ. Ceramic Arts Network ਲਈ ਲਿਖਣ ਵਾਲੇ Willers ਨੰਬਰ ਅਤੇ ਅੱਖਰ ਵਰਤਦੇ ਹਨ, ਅਤੇ ਇਹ ਤਰੀਕਾ ਆਪ ਨੋਟਬੁੱਕ ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਲਿਖਦੇ ਹਨ.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ਲਾਈਨ ਬਲੈਂਡ
+### Line blends
 
-**ਲਾਈਨ ਬਲੈਂਡ**{{en: line blend}} ਟੈਸਟਾਂ ਦੀ ਇੱਕ ਕਤਾਰ ਹੁੰਦੀ ਹੈ ਜੋ ਇੱਕ ਮਿਸ਼ਰਣ ਤੋਂ ਦੂਜੇ ਤੱਕ ਇੱਕਸਾਰ ਕਦਮਾਂ ਵਿੱਚ ਜਾਂਦੀ ਹੈ: ਇੱਕ ਗਲੇਜ਼ ਤੋਂ ਦੂਜੇ ਤੱਕ, ਜਾਂ ਬੇਸ ਗਲੇਜ਼ ਤੋਂ ਉਸੇ ਗਲੇਜ਼ ਤੱਕ ਜਿਸ ਵਿੱਚ ਕਲਰੈਂਟ (ਰੰਗ-ਪਦਾਰਥ){{en: colorant}} ਵੱਧ ਹੋਵੇ. ਮਿਸਾਲ ਵਜੋਂ, Derek Au ਇੱਕ ਕਲੀਅਰ ਬੇਸ ਵਿੱਚ ਆਇਰਨ ਆਕਸਾਈਡ ਨੂੰ 1% ਦੇ ਵਾਧੇ ਨਾਲ ਵਧਾਉਂਦੇ ਹਨ. Ian Currie ਨਾਲ ਜੋੜੀ ਜਾਂਦੀ ਆਇਤਨ ਉੱਤੇ ਆਧਾਰਿਤ ਇੱਕ ਵਿਧੀ ਸਮਾਂ ਬਚਾਉਂਦੀ ਹੈ, ਕਿਉਂਕਿ ਤੁਸੀਂ ਸਿਰਫ਼ ਦੋ ਸਿਰੇ ਰਲਾਉਂਦੇ ਹੋ:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. ਦੋ ਸਿਰਿਆਂ ਵਾਲੇ ਗਲੇਜ਼, A ਅਤੇ B, ਇੱਕੋ ਆਕਾਰ ਦੇ ਬੈਚਾਂ ਵਜੋਂ ਰਲਾਓ, ਅਤੇ ਦੋਵਾਂ ਨੂੰ ਛਾਣੋ.
-2. ਜਿਸ ਦਾ ਆਇਤਨ ਘੱਟ ਹੋਵੇ ਉਸ ਵਿੱਚ ਪਾਣੀ ਪਾਓ ਜਦੋਂ ਤੱਕ ਦੋਵਾਂ ਦਾ ਗਿੱਲਾ ਆਇਤਨ ਠੀਕ-ਠੀਕ ਇੱਕੋ ਜਿਹਾ ਨਾ ਹੋ ਜਾਵੇ.
-3. ਦੋਵਾਂ ਨੂੰ ਹਿਲਾਓ, ਫਿਰ ਹਰ ਮਿਸ਼ਰਣ ਨੂੰ ਸਰਿੰਜ ਨਾਲ ਖਿੱਚ ਕੇ ਉਸ ਦੇ ਆਪਣੇ ਨੰਬਰ ਵਾਲੇ ਕੱਪ ਵਿੱਚ ਪਾਓ.
-4. ਹਰ ਕੱਪ ਨੂੰ ਹਿਲਾਓ ਅਤੇ ਇੱਕ ਟਾਈਲ ਡੁਬੋਓ.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-ਸਾਡੀ ਹੱਲ ਕੀਤੀ ਮਿਸਾਲ ਵਿੱਚ A ਇੱਕ ਕਲੀਅਰ ਬੇਸ ਦੇ 100 g ਹੈ, ਅਤੇ B ਉਹੀ ਹੈ ਜਿਸ ਵਿੱਚ 4 g ਰੈੱਡ ਆਇਰਨ ਆਕਸਾਈਡ ਪਾਇਆ ਗਿਆ ਹੈ (4% ਦਾ ਵਾਧਾ). B ਦਾ ਹਰ ਮਿਲੀਲੀਟਰ ਬੇਸ ਦਾ ਓਨਾ ਹੀ ਹਿੱਸਾ ਰੱਖਦਾ ਹੈ ਜਿੰਨਾ A ਦਾ ਇੱਕ ਮਿਲੀਲੀਟਰ, ਨਾਲ ਆਪਣਾ ਆਇਰਨ, ਇਸ ਲਈ ਕੱਪ ਬਿਨਾਂ ਆਇਰਨ ਤੋਂ ਲੈ ਕੇ 4% ਤੱਕ 1% ਦੇ ਕਦਮਾਂ ਵਿੱਚ ਵਧਦੇ ਹਨ. ਹਰ ਸਿਰਾ ਬਲੈਂਡ ਨੂੰ 100 mL ਦਿੰਦਾ ਹੈ, ਜਿਸ ਨੂੰ ਸਾਡੇ ਅੰਦਾਜ਼ੇ ਮੁਤਾਬਕ 100 g ਦਾ ਬੈਚ ਪੂਰਾ ਕਰ ਦਿੰਦਾ ਹੈ.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ਆਇਰਨ ਦਾ ਪੰਜ ਕਦਮਾਂ ਵਾਲਾ ਲਾਈਨ ਬਲੈਂਡ, ਹਰ ਕੱਪ ਵਿੱਚ 40 mL (ਸਾਡੀ ਹੱਲ ਕੀਤੀ ਮਿਸਾਲ)
-Label: ਲਾਈਨ ਬਲੈਂਡ ਦੀ ਮਿਸਾਲ
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| ਕੱਪ | ਕਲੀਅਰ ਬੇਸ (A) | 4% ਆਇਰਨ ਵਾਲਾ ਬੇਸ (B) | ਆਇਰਨ ਆਕਸਾਈਡ, ਬੇਸ ਦਾ % |
-| --- | ------------: | -------------------: | --------------------: |
-| 1   |         40 mL |                 0 mL |                     0 |
-| 2   |         30 mL |                10 mL |                     1 |
-| 3   |         20 mL |                20 mL |                     2 |
-| 4   |         10 mL |                30 mL |                     3 |
-| 5   |          0 mL |                40 mL |                     4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-ਇਸ ਵਿਧੀ ਲਈ ਧਿਆਨ ਨਾਲ ਕੀਤਾ ਹਿਸਾਬ, ਇੱਕਸਾਰ ਸਪੈਸਿਫ਼ਿਕ ਗ੍ਰੈਵਿਟੀ (ਸਾਪੇਖੀ ਘਣਤਾ){{en: specific gravity}} ਵਾਲੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਰਲਾਏ ਸਿਰੇ, ਅਤੇ ਇੱਕ ਸਟੀਕ ਤੱਕੜੀ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ. Derek Au ਆਇਤਨ ਦੀ ਥਾਂ ਭਾਰ ਨਾਲ ਵੀ ਬਲੈਂਡ ਕਰਦੇ ਹਨ. **ਟ੍ਰਾਈਐਕਸੀਅਲ ਬਲੈਂਡ** ਇਹੀ ਕੰਮ ਤਿੰਨ ਸਿਰਿਆਂ ਨਾਲ ਕਰਦਾ ਹੈ, ਜੋ ਇੱਕ ਤਿਕੋਣ ਉੱਤੇ ਵਿਛਾਏ ਜਾਂਦੇ ਹਨ.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> ਜਦੋਂ ਕੋਈ ਕਦਮ ਉਮੀਦ ਜਗਾਉਣ ਵਾਲਾ ਲੱਗੇ, ਤਾਂ [ਰੈਸਿਪੀ ਵਾਲੇ ਪੰਨੇ](/recipe) ਉੱਤੇ **ਕਾਪੀ ਵਜੋਂ ਸੇਵ ਕਰੋ** ਸਹੂਲਤ ਉਸ ਨੂੰ ਇੱਕ ਵੱਖਰੀ ਰੈਸਿਪੀ ਵਜੋਂ ਰੱਖ ਲੈਂਦੀ ਹੈ ਅਤੇ ਅਸਲੀ ਨੂੰ ਜਿਵੇਂ ਸੀ ਉਵੇਂ ਹੀ ਰਹਿਣ ਦਿੰਦੀ ਹੈ.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## ਰਿਕਾਰਡ ਰੱਖਣਾ {#records}
 

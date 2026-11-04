@@ -213,50 +213,50 @@ Label: น้ำสำหรับความถ่วงจำเพาะเ�
 
 **เบนโทไนต์** ดินละเอียดมาก ช่วยให้อนุภาคอื่นแขวนลอย เคลือบสำหรับชุบมักพึ่งดินดิบ 15 ถึง 25% สำหรับเรื่องนี้ สำหรับสูตรเคลือบที่ขาดดิน เบนโทไนต์ประมาณ 1 ถึง 3% ช่วยได้ Digitalfire ระบุว่าเคลือบที่มีดินมากกว่า 15% ไม่น่าจะต้องใช้เบนโทไนต์เกิน 1% ของน้ำหนักเคลือบแห้ง
 
-## แผ่นทดสอบและชุดทดสอบแบบเส้น {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### เริ่มเล็ก
+### Start small
 
-Derek Au ทำเป็นสามขั้น: ทดสอบ 50 หรือ 100 g ทดลอง 1 ถึง 2 kg หากได้ผล แล้วแบตช์สตูดิโอ 5 ถึง 10 kg ตามค่าประมาณของเรา การทดสอบ 100 g ที่ {{SG 1.45}} ได้น้ำเคลือบประมาณ 135 mL (ประมาณ 4½ US fl oz) พอชุบแผ่นทดสอบเล็กได้ไม่กี่แผ่นในถ้วยแคบ
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### ทดสอบบนดินของคุณเอง
+### Test on your own clay
 
-เคลือบอาจดูต่างกันมากบนดินอื่นหรือในเตาเผาอื่น: Clay Art Center ทดสอบเคลือบที่ปรับสูตรใหม่แต่ละสูตรบนเนื้อดินสี่ชนิด ที่โคน 6 และที่โคน 10 เอกสารสำหรับผู้เริ่มต้นของ Potclays สำหรับการทดสอบเคลือบแนะนำ:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- **แผ่นทดสอบ**{{en: test tile}} (ชิ้นเล็กสำหรับลองเคลือบ) 6 ถึง 10 แผ่นของดินที่คุณจะใช้จริง โดยจดว่าเผาดิบหรือแห้งสนิท
-- เปลี่ยนทีละอย่าง
-- ชุบครั้งเดียวและชุบสองครั้ง เพื่อดูเคลือบบางและหนา
-- ทุกแผ่นอยู่ในรอบเผาเดียวกัน
-- เครื่องหมายบนแต่ละแผ่นก่อนเผา ด้วยตราปั๊ม การแกะสลัก หรือดินสอสีใต้เคลือบ
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-เราแนะนำแผ่นทดสอบที่ตั้งตรงได้ เพราะแผ่นราบซ่อนว่าเคลือบไหลไปไกลเพียงใด พร้อมแถบมีลายนูนเพื่อแสดงว่าเคลือบเปลี่ยนสีตามขอบอย่างไร และฐานเปล่า วางแต่ละแผ่นบนจานเล็กหรือเศษชิ้นงานเผาดิบ หรือบนแผ่นรองเผาที่ทาสารเคลือบแผ่นรองเผา เพื่อรองเคลือบหยด วาง**โคนอ้างอิง**{{en: witness cone}} ซึ่งเป็นโคนเซรามิกเล็กที่โค้งเมื่อได้รับความร้อนเพียงพอ ไว้ใกล้แผ่นทดสอบเพื่อแสดงสิ่งที่แผ่นได้รับ [คำแนะนำการเผา](/guides/firing)อธิบายโคน ให้แต่ละแผ่นมีรหัสสั้น และจดไว้กับสูตรเคลือบในบันทึกของคุณ Willers เขียนให้ Ceramic Arts Network ใช้ตัวเลขและตัวอักษร และเขียนระบบเองไว้ในหน้าแรกของสมุดบันทึก
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ชุดทดสอบแบบเส้น
+### Line blends
 
-**ชุดทดสอบแบบเส้น**{{en: line blend}}คือแถวของการทดสอบที่เปลี่ยนอย่างสม่ำเสมอจากส่วนผสมหนึ่งไปอีกส่วนผสมหนึ่ง: จากเคลือบหนึ่งไปเคลือบที่สอง หรือจากเคลือบพื้นฐานไปเคลือบเดียวกันที่มีสารให้สีมากขึ้น Derek Au เช่น เพิ่มเหล็กออกไซด์ผ่านเคลือบพื้นฐานใสทีละ 1% วิธีตามปริมาตรที่เกี่ยวข้องกับ Ian Currie ประหยัดเวลา เพราะคุณผสมเพียงสองปลาย:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. ผสมเคลือบสองปลาย A และ B เป็นแบตช์ขนาดเท่ากัน และร่อนทั้งสอง
-2. เติมน้ำในอันที่มีปริมาตรน้อยกว่าจนทั้งสองมีปริมาตรเปียกเท่ากันพอดี
-3. คนทั้งสอง แล้วดูดแต่ละส่วนผสมด้วยกระบอกฉีดยาลงในถ้วยที่มีหมายเลขของตัวเอง
-4. คนแต่ละถ้วยและชุบแผ่นทดสอบ
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-ในตัวอย่างที่ทำจริงของเรา A คือเคลือบพื้นฐานใส 100 g และ B คืออย่างเดียวกันที่เพิ่มเหล็กออกไซด์แดง 4 g (เพิ่ม 4%) แต่ละมิลลิลิตรของ B มีสัดส่วนเคลือบพื้นฐานเท่ากับมิลลิลิตรของ A บวกเหล็กของมัน ถ้วยจึงไล่จากไม่มีเหล็กถึง 4% ทีละ 1% แต่ละปลายให้ 100 mL แก่ชุดทดสอบ ซึ่งแบตช์ 100 g ครอบคลุมตามค่าประมาณของเรา
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ชุดทดสอบเหล็กห้าขั้น ถ้วยละ 40 mL (ตัวอย่างที่ทำจริงของเรา)
-Label: ตัวอย่างชุดทดสอบแบบเส้น
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| ถ้วย | เคลือบพื้นฐานใส (A) | เคลือบพื้นฐานที่มีเหล็ก 4% (B) | เหล็กออกไซด์ เป็น % ของเคลือบพื้นฐาน |
-| ---- | ------------------: | -----------------------------: | -----------------------------------: |
-| 1    |               40 mL |                           0 mL |                                    0 |
-| 2    |               30 mL |                          10 mL |                                    1 |
-| 3    |               20 mL |                          20 mL |                                    2 |
-| 4    |               10 mL |                          30 mL |                                    3 |
-| 5    |                0 mL |                          40 mL |                                    4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-วิธีนี้ต้องใช้เลขคณิตที่ระมัดระวัง ปลายที่ผสมดีและ SG สม่ำเสมอ และเครื่องชั่งที่แม่นยำ Derek Au ยังผสมตามน้ำหนักแทนปริมาตร **ชุดทดสอบแบบสามเหลี่ยม**ทำแบบเดียวกันกับสามปลาย วางบนสามเหลี่ยม
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> เมื่อขั้นหนึ่งดูมีแนวโน้มดี **บันทึกเป็นสำเนา** บน[หน้าสูตรเคลือบ](/recipe)เก็บไว้เป็นสูตรเคลือบของตัวเองและคงต้นฉบับไว้ตามเดิม
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## การจดบันทึก {#records}
 

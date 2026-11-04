@@ -213,50 +213,50 @@ Label: Munasqa gravedad específicapaq unu
 
 **Bentonita**, ancha ñut'u mitu, huk ñut'ukunata unupi warkusqata hap'iyta yanapan. Challpuna esmaltekunaqa sapa kuti 15 manta 25% kama mitu crudopim kaypaq hap'ipakunku. Pisi mituyuq ruranapaq, yaqa 1 manta 3% kama bentonita yanapan; Digitalfire nin 15% manta aswan mituyuq esmalteqa ch'aki esmaltepa llasayninpa 1% manta aswan bentonitata mana munananchu.
 
-## Probetakuna mezcla lineal ima {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Huch'uymanta qallariy
+### Start small
 
-Derek Au kimsa patapi wicharin: 50 otaq 100 g prueba, allin kaqtin 1 manta 2 kg kama prueba, chaymantataq 5 manta 10 kg kama taller lote. Ñuqaykupa yupasqaykuman hina, {{SG 1.45}}-pi 100 g prueba yaqa 135 mL (yaqa 4½ US fl oz) barbotinata ruran, k'ullku vasopi wakin huch'uy probetakunata challpunapaq aypan.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Qampa mituykipi pruebay
+### Test on your own clay
 
-Esmalte{{en: glaze}}qa huk mitupi otaq huk hornopi ancha hukniraqtam rikch'akunman: Clay Art Center sapa yapamanta rurasqa esmaltenta tawa mitupi pruebarqan, cono 6-pi cono 10-pi ima. Potclays-pa qallariqkunapaq esmalte pruebay yachachiynin kaykunata yuyaychan:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- chiqaqpi llamk'achinayki mitumanta 6 manta 10 kama **probetakuna** (esmalte pruebanapaq huch'uy kaqkuna), bizcochosqachus otaq ch'aki tulluchus kasqanta qillqaspa
-- sapa kuti huk t'ikraylla
-- huk kuti challpuy iskay kuti challpuypas, esmalteta llañuta rakhuta ima rikunapaq
-- tukuy probetakuna kikin horno hunt'api
-- manaraq ruphachispa sapa probetapi marca, sellowan, llaqllaywan otaq engobe lápizwan.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Sayaq probetakunata yuyaychayku, pampa probetaqa esmalte hayk'a karuta purisqanta pakan, esmalte k'uchukunapi imayna p'akikusqanta rikuchinapaq texturayuq chumpiwan, q'ala chakiwanpas. Sapakamata huch'uy platopi otaq bizcocho p'akipi churay, otaq horno tablakunata amachaq llut'anawan (_kiln wash_) llusisqa horno tablapi, sut'uykunata hap'inapaq. **Testigo cono**ta, aypanan q'uñi chaskiqtin k'umuq huch'uy cerámica cono, probetakunapa qayllanpi churay imata chaskisqankuta rikuchinanpaq; [Huch'uy hornopi ruphachiy yachachiymi](/guides/firing) conokunata sut'inchan. Sapa probetaman huch'uy codigota quy, qillqasqaykikunapitaq ruranapa ladonpi qillqay. Willers, Ceramic Arts Network-paq qillqaspa, yupaykunata letrakunata ima llamk'achin, sistemataq cuadernopa ñawpaqninpi qillqan.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Mezcla lineal
+### Line blends
 
-**Mezcla lineal** nisqaqa huk chaqruymanta hukman kaqlla patakunapi puriq pruebakunapa siq'inmi: huk esmaltemanta iskay kaqman, otaq base esmaltemanta kikin esmalteman aswan llimp'iqwan. Derek Au, ejemplopaq, óxido de fierrota ch'uya basepi 1% patakunapi purichin. Ian Currie-wan tinkisqa volumen ruranaqa pachata waqaychan, iskay puntakunallata chaqrusqaykirayku:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Iskay punta esmaltekunata, A B-ta, kaqlla sayayniyuq lotekunata hina chaqruy, iskayninta suysuy.
-2. Aswan pisi volumenniyuq kaqman unuta yapay iskayninku chiqan kaqlla huq'u volumenniyuq kanankama.
-3. Iskayninta kuyuchiy, chaymantataq sapa chaqruyta jeringawan yupasqa vasonman hurquy.
-4. Sapa vasota kuyuchiy, huk probetatataq challpuy.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Ñuqaykupa rurasqa ejemploykupi, A ch'uya basepa 100 g-nmi, B-taq kikin, 4 g puka óxido de fierro yapasqawan (4% yapay). B-pa sapa mililitronpi A-pa sapa mililitronpi hina kaqlla base raki kan, fierronpas, chayrayku vasokunaqa mana fierroyuqmanta 4%-kama 1% patakunapi purinku. Sapa puntam mezclaman 100 mL-ta qun, ñuqaykupa yupasqaykuman hina 100 g lote chayta aypachin.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Fierropa pichqa pata mezcla lineal, sapa vasopi 40 mL (ñuqaykupa rurasqa ejemployku)
-Label: Mezcla lineal ejemplo
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Vaso | Ch'uya base (A) | 4% fierroyuq base (B) | Óxido de fierro, basepa %-nin |
-| ---- | --------------: | --------------------: | ----------------------------: |
-| 1    |           40 mL |                  0 mL |                             0 |
-| 2    |           30 mL |                 10 mL |                             1 |
-| 3    |           20 mL |                 20 mL |                             2 |
-| 4    |           10 mL |                 30 mL |                             3 |
-| 5    |            0 mL |                 40 mL |                             4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Kay ruranaqa allin yupayta, kaqlla SG-yuq allin chaqrusqa puntakunata, chiqan balanzatapas munan. Derek Au llasaywanpas chaqrun, mana volumenwanchu. **Mezcla triaxial** kikintam kimsa puntakunawan ruran, kimsa k'uchupi churasqa.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Huk pata allin rikch'akuqtin, [rurana p'anqapi](/recipe) **Copiata hina waqaychay** kikin ruranata hina waqaychan, ñawpaq kaqtataq kasqanta hina saqin.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Qillqakunata waqaychay {#records}
 

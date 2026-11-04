@@ -213,50 +213,50 @@ Label: Hedef özgül ağırlık için su
 
 **Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–3 bentonit yardımcı olur; Digitalfire, %15’ten fazla kil içeren bir sırın, kuru sır ağırlığının %1’inden fazla bentonite ihtiyaç duymaması gerektiğini söyler.
 
-## Test karoları ve doğrusal karışım testleri {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Küçük başlayın
+### Start small
 
-Derek Au üç adımda büyütüyor: 50 ya da 100 g’lık bir test, işe yararsa 1–2 kg’lık bir deneme, sonra 5–10 kg’lık bir atölye tartımı. Bizim tahminimize göre {{SG 1.45}} değerindeki 100 g’lık bir test yaklaşık 135 mL (yaklaşık 4½ US fl oz) sulu sır{{en: slurry}} verir; bu, dar bir bardakta birkaç küçük karoyu daldırmaya yeter.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Kendi çamurunuzda test edin
+### Test on your own clay
 
-Bir sır{{en: glaze}} başka bir çamurda ya da başka bir fırında oldukça farklı görünebilir: Clay Art Center, yeniden formüle ettiği sırların her birini dört çamur bünyesinde{{en: clay bodies}}, 6 ve 10 numaralı Orton piramitlerinde{{en: cone}} test etti. Potclays’in yeni başlayanlar için sır testi rehberi şunları öneriyor:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- gerçekten kullanacağınız çamurdan 6–10 **test karosu**{{en: test tiles}} (bir sırrı denemek için küçük parçalar); bisküvi pişirimi yapılmış mı yoksa tam kuru mu olduklarını not ederek
-- bir seferde tek bir değişiklik
-- sırrın ince ve kalın hâlini görmek için tek daldırma ve çift daldırma
-- tüm karolar aynı fırın yükünde
-- pişirimden önce her karoya damga, oyma ya da sır altı kalemiyle bir işaret.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Dik duran karolar öneririz, çünkü düz bir karo sırrın ne kadar aktığını gizler; sırrın kenarlarda nasıl açıldığını gösterecek dokulu bir şeridi ve sırsız bir dibi olsun. Damlaları tutmak için her birini küçük bir tabağa, bir bisküvi parçasına ya da raf koruyucu sürülmüş bir rafa koyun. Karoların ne kadar ısı aldığını göstermesi için yakınlarına bir **gözlem piramidi**{{en: witness cone}}, yani yeterli ısıyı aldığında eğilen küçük bir seramik piramit koyun; piramitler [Basit bir fırında pişirim](/guides/firing) rehberinde anlatılıyor. Her karoya kısa bir kod verin ve bunu kayıtlarınızda reçetenin karşısına yazın. Ceramic Arts Network için yazan Willers sayılar ve harfler kullanıyor ve sistemin kendisini defterin başına yazıyor.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Doğrusal karışım testleri
+### Line blends
 
-**Doğrusal karışım testi**{{en: line blend}}, bir karışımdan diğerine eşit adımlarla ilerleyen bir dizi testtir: bir sırdan ikinci bir sırra ya da bir temel sırdan aynı sırrın daha fazla renklendirici içeren hâline. Örneğin Derek Au demir oksidi şeffaf bir temel sırda %1’lik adımlarla artırıyor. Ian Currie’nin adıyla anılan hacimsel bir yöntem zaman kazandırır, çünkü yalnızca iki ucu karıştırırsınız:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. İki uç sırrı, A ve B’yi, aynı büyüklükte tartımlar olarak karıştırın ve ikisini de eleyin.
-2. Hacmi az olana, ikisinin ıslak hacmi tam olarak aynı olana kadar su ekleyin.
-3. İkisini de karıştırın, sonra her karışımı bir şırıngayla çekip numaralı kendi kabına koyun.
-4. Her kabı karıştırın ve bir karo daldırın.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Bizim örneğimizde A, 100 g şeffaf temel sırdır; B ise buna 4 g kırmızı demir oksit eklenmiş hâlidir (%4’lük bir ilave). B’nin her mililitresi, A’nın bir mililitresiyle aynı oranda temel sır içerir, artı demirini; bu yüzden kaplar demirsizden %4’e %1’lik adımlarla ilerler. Her uç karışıma 100 mL verir; tahminimize göre 100 g’lık bir tartım bunu karşılar.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Beş adımlı bir demir doğrusal karışım testi, kap başına 40 mL (bizim örneğimiz)
-Label: Doğrusal karışım örneği
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Kap | Şeffaf temel (A) | %4 demirli temel (B) | Demir oksit, temelin %’si |
-| --- | ---------------: | -------------------: | ------------------------: |
-| 1   |            40 mL |                 0 mL |                         0 |
-| 2   |            30 mL |                10 mL |                         1 |
-| 3   |            20 mL |                20 mL |                         2 |
-| 4   |            10 mL |                30 mL |                         3 |
-| 5   |             0 mL |                40 mL |                         4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Yöntem dikkatli hesap, iyi karıştırılmış ve özgül ağırlığı eşit uçlar ve doğru tartan bir terazi ister. Derek Au hacim yerine ağırlıkla da karışım yapıyor. **Üçgen karışım testi** aynısını üç uçla yapar ve bir üçgen üzerine dizilir.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Bir adım umut verici göründüğünde, [reçete sayfasındaki](/recipe) **Kopya olarak kaydet** düğmesi onu ayrı bir reçete olarak saklar ve aslını olduğu gibi bırakır.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Kayıt tutma {#records}
 

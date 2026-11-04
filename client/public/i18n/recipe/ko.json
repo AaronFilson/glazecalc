@@ -723,8 +723,7 @@
     "keyPoint": "점: 이 유약.",
     "keyBright": "점선: Stull의 유약이 가장 광택이 있었던 곳.",
     "keyLimits": "파선과 음영: {name}의 실리카와 알루미나 범위.",
-    "keyCrazed": "빗금: 빙렬이 생긴 곳.",
-    "note": "참고 자료이며 예측이 아닙니다. R. T. Stull(Transactions of the American Ceramic Society, 1912)은 융제를 0.3 K₂O와 0.7 CaO로 고정하고 오튼 콘 11에서 소성했습니다. 다른 융제와 소성에서는 영역이 움직이며, 소성이 덜 된 매트가 광택으로 찍힐 수도 있습니다. 영역은 Glazy가 그린 그대로입니다."
+    "keyCrazed": "빗금: 빙렬이 생긴 곳."
   },
   "slurry": {
     "heading": "비중과 물",

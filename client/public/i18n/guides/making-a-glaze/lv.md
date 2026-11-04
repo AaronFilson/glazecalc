@@ -213,50 +213,50 @@ Label: Ūdens daudzums mērķa relatīvajam blīvumam
 
 **Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai, kurā ir vairāk nekā 15% māla, nevajadzētu būt vajadzīgs vairāk bentonīta par 1% no sausās glazūras masas.
 
-## Proves un provju rindas {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Izmēģinājumi nelielā apjomā
+### Start small
 
-Dereks Au palielina daudzumu trīs soļos: 50 vai 100 g izmēģinājums, tad, ja tas izdodas, 1–2 kg izmēģinājuma porcija, un pēc tam 5–10 kg darbnīcas porcija. Pēc mūsu aplēses 100 g izmēģinājums ar rādījumu {{SG 1.45}} dod apmēram 135 mL (apmēram 4½ ASV fl oz) glazūras suspensijas{{en: slurry}}, ar ko pietiek, lai šaurā krūzē iemērktu dažas mazas proves{{en: test tiles}}.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Izmēģināšana uz sava māla
+### Test on your own clay
 
-Glazūra{{en: glaze}} uz cita māla vai citā krāsnī var izskatīties pavisam citāda: Clay Art Center katru savu pārveidoto glazūru izmēģināja uz četrām masām{{en: clay bodies}}, apdedzinot līdz konusam{{en: cone}} 6 un līdz konusam 10. Potclays ceļvedis iesācējiem par glazūru izmēģināšanu iesaka:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **provju plāksnītes** (nelielus gabalus glazūras izmēģināšanai) no tā māla, kuru tiešām izmantosiet, atzīmējot, vai tās ir biskvitētas{{en: bisqued}} vai pilnīgi izžuvušas
-- vienu izmaiņu vienlaikus
-- vienu iemērkšanu un divkāršu iemērkšanu, lai redzētu glazūru plānā un biezā kārtā
-- visas proves vienā apdedzināšanā
-- pirms apdedzināšanas atzīmi uz katras proves ar zīmogu, iegriezumu vai zemglazūras zīmuli.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Iesakām stāvus stāvošas proves (plakana prove neparāda, cik tālu glazūra notek) ar reljefu joslu, kas parāda, kā glazūra mainās uz malām, kur tā ir plānāka, un ar neglazētu pamatni. Novietojiet katru uz neliela šķīvīša, biskvīta lauskas vai plaukta, kas pārklāts ar atdalīšanas līdzekli, lai savāktu notecējumus. Blakus provēm novietojiet **kontrolkonusu**{{en: witness cone}} – mazu keramikas konusu, kas saliecas, kad saņēmis pietiekami daudz siltuma, – lai tas parādītu, cik daudz siltuma proves saņēmušas. Konusi izskaidroti ceļvedī [Apdedzināšana vienkāršā krāsnī](/guides/firing). Katrai provei piešķiriet īsu kodu un pierakstos ierakstiet to pie receptes. Villerss (Willers), rakstot vietnei Ceramic Arts Network, izmanto ciparus un burtus, un pašu sistēmu pieraksta burtnīcas sākumā.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Provju rindas
+### Line blends
 
-**Provju rinda**{{en: line blend}} ir izmēģinājumu virkne, kas vienmērīgiem soļiem pāriet no viena maisījuma uz citu: no vienas glazūras uz otru vai no pamatglazūras uz to pašu glazūru ar vairāk krāsvielas{{en: colorant}}. Dereks Au, piemēram, caurspīdīgā pamatglazūrā dzelzs oksīda daudzumu palielina ar 1% soli. Tilpuma metode, ko saista ar Īana Karija (Ian Currie) vārdu, ietaupa laiku, jo jāsajauc tikai abi galējie maisījumi:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Sajauciet abas galējās glazūras, A un B, vienāda lieluma porcijās un izkāsiet abas.
-2. Tai, kurai ir mazāks tilpums, pielejiet ūdeni, līdz abām ir tieši vienāds mitrais tilpums.
-3. Samaisiet abas, tad ar šļirci nomēriet katru maisījumu savā numurētā krūzītē.
-4. Samaisiet katras krūzītes saturu un iemērciet tajā provi.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Mūsu aprēķinātajā piemērā A ir 100 g caurspīdīgas pamatglazūras, bet B – tā pati glazūra ar pievienotiem 4 g sarkanā dzelzs oksīda (4% piedeva). Katrā B mililitrā ir tāda pati pamatglazūras daļa kā A mililitrā, un vēl dzelzs, tāpēc krūzītēs dzelzs daudzums pieaug no nulles līdz 4% ar 1% soli. Katrs galējais maisījums rindai dod 100 mL, un pēc mūsu aplēses ar 100 g porciju tam pietiek.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Piecu soļu dzelzs provju rinda, 40 mL katrā krūzītē (mūsu aprēķinātais piemērs)
-Label: Provju rindas piemērs
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Krūzīte | Caurspīdīgā pamatglazūra (A) | Pamatglazūra ar 4% dzelzs (B) | Dzelzs oksīds, % no pamatglazūras |
-| ------- | ---------------------------: | ----------------------------: | --------------------------------: |
-| 1       |                        40 mL |                          0 mL |                                 0 |
-| 2       |                        30 mL |                         10 mL |                                 1 |
-| 3       |                        20 mL |                         20 mL |                                 2 |
-| 4       |                        10 mL |                         30 mL |                                 3 |
-| 5       |                         0 mL |                         40 mL |                                 4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metodei vajag rūpīgus aprēķinus, labi samaisītus galējos maisījumus, kuru relatīvais blīvums ir vienāds, un precīzus svarus. Dereks Au jauc arī pēc svara, nevis pēc tilpuma. **Trīsstūra provju sērija** dara to pašu ar trim galējiem maisījumiem, kas izkārtoti trīsstūra virsotnēs.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Kad kāds solis izskatās daudzsološs, poga **Saglabāt kā kopiju** [receptes lapā](/recipe) saglabā to kā atsevišķu recepti, bet oriģinālu atstāj tādu, kāds tas bija.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Pieraksti {#records}
 

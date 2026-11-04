@@ -213,50 +213,50 @@ Label: Νερό για ειδικό βάρος-στόχο
 
 Ο **μπεντονίτης**, ένας πολύ λεπτόκοκκος πηλός, βοηθά να μένουν τα άλλα σωματίδια σε αιώρηση. Για τον σκοπό αυτό, τα υαλώματα για βύθιση στηρίζονται συνήθως σε 15 έως 25% ωμό πηλό. Σε συνταγή με λίγο πηλό, βοηθά περίπου 1 έως 3% μπεντονίτης· το Digitalfire λέει ότι ένα υάλωμα με πάνω από 15% πηλό δεν θα έπρεπε να χρειάζεται μπεντονίτη πάνω από 1% του βάρους του ξερού υαλώματος.
 
-## Δοκιμαστικά πλακίδια και σειρές δοκιμών {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Ξεκινήστε από μικρές ποσότητες
+### Start small
 
-Ο Derek Au προχωρά σε τρία βήματα: μια δοκιμή 50 ή 100 g, μια δοκιμαστική παρτίδα 1 έως 2 kg αν πετύχει, και μετά μια παρτίδα εργαστηρίου 5 έως 10 kg. Κατά την εκτίμησή μας, μια δοκιμή 100 g με {{SG 1.45}} δίνει περίπου 135 mL (περίπου 4½ US fl oz) υγρού υαλώματος{{en: slurry}}, αρκετό για να βυθίσετε μερικά μικρά πλακίδια σε ένα στενό ποτήρι.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Δοκιμάστε στον δικό σας πηλό
+### Test on your own clay
 
-Ένα υάλωμα{{en: glaze}} μπορεί να δείχνει αρκετά διαφορετικό σε άλλον πηλό ή σε άλλο καμίνι: το Clay Art Center δοκίμασε κάθε υάλωμά του με νέα σύνθεση σε τέσσερις πηλούς{{en: clay bodies}}, στον κώνο{{en: cone}} 6 και στον κώνο 10. Ο οδηγός της Potclays για αρχάριους στις δοκιμές υαλωμάτων προτείνει:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 έως 10 **δοκιμαστικά πλακίδια**{{en: test tiles}} (μικρά κομμάτια για να δοκιμάσετε ένα υάλωμα) από τον πηλό που θα χρησιμοποιήσετε στην πράξη, σημειώνοντας αν είναι ψημένα μπισκουί{{en: bisqued}} ή τελείως στεγνά
-- μία αλλαγή κάθε φορά
-- μία βύθιση και δύο βυθίσεις, για να δείτε το υάλωμα σε λεπτή και σε χοντρή στρώση
-- όλα τα πλακίδια στην ίδια φουρνιά
-- ένα σημάδι σε κάθε πλακίδιο πριν από το ψήσιμο, με σφραγίδα, χάραξη ή πυρομόλυβο.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Προτείνουμε πλακίδια που στέκονται όρθια, γιατί ένα επίπεδο πλακίδιο κρύβει πόσο τρέχει ένα υάλωμα, με μια ανάγλυφη λωρίδα για να φαίνεται πώς αλλάζει χρώμα το υάλωμα στις ακμές, και με βάση χωρίς υάλωμα. Τοποθετήστε το καθένα σε ένα μικρό πιατάκι, σε ένα κομμάτι μπισκουί ή σε στρώση προστατευτικού για πυρόπλακες, για να συγκρατεί ό,τι στάξει. Βάλτε έναν **κώνο-μάρτυρα**{{en: witness cone}}, δηλαδή έναν μικρό κεραμικό κώνο που λυγίζει όταν δεχτεί αρκετή θερμότητα, κοντά στα πλακίδια, για να δείχνει τι δέχτηκαν. Ο [οδηγός για το ψήσιμο](/guides/firing) εξηγεί τους κώνους. Δώστε σε κάθε πλακίδιο έναν σύντομο κωδικό και γράψτε τον δίπλα στη συνταγή στα αρχεία σας. Η Willers, σε άρθρο της για το Ceramic Arts Network, χρησιμοποιεί αριθμούς και γράμματα, και γράφει το ίδιο το σύστημα στην αρχή του σημειωματαρίου.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Σειρές δοκιμών
+### Line blends
 
-Η **σειρά δοκιμών**{{en: line blend}} είναι μια γραμμή από δοκιμές που περνά σε ίσα βήματα από ένα μείγμα σε ένα άλλο: από ένα υάλωμα σε ένα δεύτερο, ή από ένα υάλωμα βάσης στο ίδιο υάλωμα με περισσότερη χρωστική{{en: colorant}}. Ο Derek Au, για παράδειγμα, αυξάνει το οξείδιο του σιδήρου σε μια διάφανη βάση με βήματα του 1%. Μια ογκομετρική μέθοδος που συνδέεται με τον Ian Currie γλιτώνει χρόνο, γιατί αναμειγνύετε μόνο τα δύο άκρα:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Φτιάξτε τα δύο ακραία υαλώματα, A και B, σε παρτίδες του ίδιου μεγέθους, και κοσκινίστε και τα δύο.
-2. Προσθέστε νερό σε όποιο έχει μικρότερο όγκο, μέχρι να έχουν και τα δύο ακριβώς τον ίδιο υγρό όγκο.
-3. Ανακατέψτε και τα δύο, και μετά, με σύριγγα, βάλτε κάθε μείγμα στο δικό του αριθμημένο ποτήρι.
-4. Ανακατέψτε κάθε ποτήρι και βυθίστε ένα πλακίδιο.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Στο δικό μας παράδειγμα, το A είναι 100 g διάφανης βάσης και το B το ίδιο με 4 g κόκκινο οξείδιο του σιδήρου επιπλέον (προσθήκη 4%). Κάθε χιλιοστόλιτρο του B περιέχει το ίδιο ποσοστό βάσης με ένα χιλιοστόλιτρο του A, συν τον σίδηρό του, οπότε τα ποτήρια πηγαίνουν από καθόλου σίδηρο έως 4% με βήματα του 1%. Κάθε άκρο δίνει 100 mL στη σειρά, που κατά την εκτίμησή μας τα καλύπτει μια παρτίδα 100 g.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Σειρά δοκιμών σιδήρου σε πέντε βήματα, 40 mL ανά ποτήρι (δικό μας παράδειγμα)
-Label: Παράδειγμα σειράς δοκιμών
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Ποτήρι | Διάφανη βάση (A) | Βάση με 4% σίδηρο (B) | Οξείδιο του σιδήρου, % της βάσης |
-| ------ | ---------------: | --------------------: | -------------------------------: |
-| 1      |            40 mL |                  0 mL |                                0 |
-| 2      |            30 mL |                 10 mL |                                1 |
-| 3      |            20 mL |                 20 mL |                                2 |
-| 4      |            10 mL |                 30 mL |                                3 |
-| 5      |             0 mL |                 40 mL |                                4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Η μέθοδος χρειάζεται προσεκτικούς υπολογισμούς, καλά ανακατεμένα άκρα με ομοιόμορφο ειδικό βάρος{{en: SG}} και μια ακριβή ζυγαριά. Ο Derek Au αναμειγνύει επίσης κατά βάρος αντί για κατά όγκο. Η **τριαξονική δοκιμή** κάνει το ίδιο με τρία άκρα, τοποθετημένα σε τρίγωνο.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Όταν ένα βήμα φαίνεται πολλά υποσχόμενο, η **Αποθήκευση ως αντίγραφο** στη [σελίδα της συνταγής](/recipe) το κρατά ως ξεχωριστή συνταγή και αφήνει την αρχική όπως ήταν.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Τήρηση αρχείων {#records}
 

@@ -213,50 +213,50 @@ La **gomme CMC** (carboxyméthylcellulose) rend un bain plus collant et plus len
 
 La **bentonite**, une argile très fine, aide à maintenir les autres particules en suspension. Les émaux pour le trempé comptent en général pour cela sur 15 à 25 % d’argile crue. Pour une recette pauvre en argile, environ 1 à 3 % de bentonite aide ; selon Digitalfire, un émail contenant plus de 15 % d’argile ne devrait pas demander plus de 1 % de bentonite par rapport au poids de l’émail sec.
 
-## Tessons d’essai et essais en ligne {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Commencez petit
+### Start small
 
-Derek Au progresse en trois étapes : un essai de 50 ou 100 g, puis une préparation de 1 à 2 kg si cela fonctionne, puis une préparation d’atelier de 5 à 10 kg. Selon notre estimation, un essai de 100 g à {{SG 1.45}} donne environ 135 mL (environ 4½ fl oz US) de bain{{en: slurry}}, assez pour tremper quelques petits tessons dans un gobelet étroit.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Essayez sur votre propre terre
+### Test on your own clay
 
-Un émail{{en: glaze}} peut avoir un tout autre aspect sur une autre terre ou dans un autre four : Clay Art Center a essayé chacun de ses émaux reformulés sur quatre terres{{en: clay bodies}}, au cône 6 et au cône 10. Le guide de Potclays pour débuter dans les essais d’émaux conseille :
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 à 10 **tessons d’essai**{{en: test tiles}} (de petites pièces pour essayer un émail) dans la terre que vous utiliserez vraiment, en notant s’ils sont biscuités{{en: bisqued}} ou crus et complètement secs
-- un seul changement à la fois
-- un trempage simple et un double trempage, pour voir l’émail en couche fine et en couche épaisse
-- tous les tessons dans le même enfournement
-- une marque sur chaque tesson avant cuisson, au tampon, par gravure ou au crayon céramique.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Nous vous suggérons des tessons qui tiennent debout, car un tesson à plat cache jusqu’où un émail coule, avec une bande texturée pour montrer comment l’émail casse sur les arêtes, et un pied non émaillé. Posez chacun sur une petite coupelle, un morceau de biscuit ou de l’engobe pour plaques, pour recueillir les coulures. Placez un **cône témoin**{{en: witness cone}}, un petit cône en céramique qui se courbe quand il a reçu assez de chaleur, près des tessons pour montrer ce qu’ils ont reçu ; le guide [Cuire dans un four simple](/guides/firing) explique les cônes. Donnez à chaque tesson un code court, et notez-le en face de la recette dans vos notes. Willers, dans un article pour Ceramic Arts Network, utilise des chiffres et des lettres, et note le système lui-même au début du carnet.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Essais en ligne
+### Line blends
 
-Un **essai en ligne**{{en: line blend}} est une série d’essais qui va, par étapes égales, d’un mélange à un autre : d’un émail à un second, ou d’un émail de base au même émail avec plus de colorant{{en: colorant}}. Derek Au, par exemple, fait varier l’oxyde de fer dans une base transparente par incréments de 1 %. Une méthode volumétrique associée à Ian Currie fait gagner du temps, car vous ne préparez que les deux extrémités :
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Préparez les deux émaux d’extrémité, A et B, en préparations de même taille, et tamisez-les tous les deux.
-2. Ajoutez de l’eau à celui qui a le moins de volume, jusqu’à ce que les deux aient exactement le même volume humide.
-3. Remuez-les tous les deux, puis, à la seringue, prélevez chaque mélange dans son propre gobelet numéroté.
-4. Remuez chaque gobelet et trempez-y un tesson.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Dans notre exemple détaillé, A correspond à 100 g d’une base transparente, et B à la même base avec 4 g d’oxyde de fer rouge en plus (un ajout de 4 %). Chaque millilitre de B contient la même part de base qu’un millilitre de A, plus son fer : les gobelets passent donc de l’absence de fer à 4 %, par pas de 1 %. Chaque extrémité fournit 100 mL à l’essai, ce qu’une préparation de 100 g couvre selon notre estimation.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Un essai en ligne au fer en cinq étapes, 40 mL par gobelet (notre exemple détaillé)
-Label: Exemple d’essai en ligne
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Gobelet | Base transparente (A) | Base avec 4 % de fer (B) | Oxyde de fer, % de la base |
-| ------- | --------------------: | -----------------------: | -------------------------: |
-| 1       |                 40 mL |                     0 mL |                          0 |
-| 2       |                 30 mL |                    10 mL |                          1 |
-| 3       |                 20 mL |                    20 mL |                          2 |
-| 4       |                 10 mL |                    30 mL |                          3 |
-| 5       |                  0 mL |                    40 mL |                          4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-La méthode demande des calculs soigneux, des extrémités bien mélangées et de densité égale, et une balance précise. Derek Au fait aussi ses mélanges au poids plutôt qu’au volume. Un **essai triaxial** fait de même avec trois extrémités, disposées en triangle.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Quand une étape paraît prometteuse, **Enregistrer une copie** sur la [page de recette](/recipe) la garde comme une recette à part entière et laisse la recette d’origine telle quelle.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Prise de notes {#records}
 

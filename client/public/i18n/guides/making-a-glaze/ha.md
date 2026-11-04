@@ -213,50 +213,50 @@ Label: Ruwa don SG da ake nema
 
 **Bentonite**, yumɓu mai laushi sosai, yana taimakawa riƙe sauran ƙwayoyin a cikin ruwa. Glaze na tsomawa yawanci suna dogara da 15 zuwa 25% danyen yumɓu don wannan. Don tsarin glaze mai ƙarancin yumɓu, kusan 1 zuwa 3% bentonite yana taimakawa; Digitalfire ta ce glaze mai yumɓu fiye da 15% bai kamata ya buƙaci bentonite fiye da 1% na nauyin busasshen glaze ba.
 
-## Test tile da line blend {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Ku fara ƙanƙane
+### Start small
 
-Derek Au yana haurawa a matakai uku: gwajin 50 ko 100 g, gwajin 1 zuwa 2 kg idan ya yi aiki, sannan batch na ɗakin aiki na 5 zuwa 10 kg. Bisa kiyasinmu, gwajin 100 g a {{SG 1.45}} yana ba da kusan 135 mL (kusan 4½ US fl oz) na slurry, wanda ya isa tsoma ƙananan tayil kaɗan a cikin ƙunƙuntaccen kofi.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Ku gwada a kan yumɓunku
+### Test on your own clay
 
-Glaze zai iya yin kama da wani abu daban sosai a kan wani yumɓu ko a cikin wani kiln (murhun gasa tukwane): Clay Art Center ta gwada kowane glaze ɗinta da aka sake tsarawa a kan nau'o'in yumɓu huɗu, a cone 6 da cone 10. Jagorar Potclays ga masu farawa kan gwajin glaze tana ba da shawarar:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- **test tile** 6 zuwa 10 (ƙananan guda don gwada glaze) na yumɓun da za ku yi amfani da shi a zahiri, kuna lura ko an yi musu bisque (gasa ta farko) ko sun bushe ƙwarai
-- canji ɗaya a lokaci guda
-- tsomawa sau ɗaya da tsomawa sau biyu, don ganin glaze siriri da mai kauri
-- kowane tayil a cikin lodin kiln ɗaya
-- alama a kan kowane tayil kafin gasa, da tambari, sassaƙa ko fensirin underglaze.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Muna ba da shawarar tayil da ke tsaye a miƙe, tunda tayil a kwance yana ɓoye yadda glaze ke gudu, mai layi mai kaushi don nuna yadda glaze ke rabuwa a kan gefuna, da ƙafa marar glaze. Ku ɗora kowanne a kan ɗan faranti ko guntun bisque, ko a kan shiryayyen kiln da aka shafa wa kiln wash, don ya kama ɗigo. Ku sa **cone mai shaida** (witness cone), ƙaramin cone na yumɓu da ke lanƙwasa idan ya sami isasshen zafi, kusa da tayil ɗin don nuna abin da suka samu; [Gasa a cikin kiln mai sauƙi](/guides/firing) yana bayanin cone. Ku ba kowane tayil gajeriyar lamba, ku rubuta ta kusa da tsarin glaze a cikin bayananku. Willers, a rubutunta don Ceramic Arts Network, tana amfani da lambobi da haruffa, kuma tana rubuta tsarin kansa a farkon littafin rubutu.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Line blend
+### Line blends
 
-**Line blend** jeri ne na gwaje-gwaje da ke tafiya daidai-daidai daga wani haɗi zuwa wani: daga wani glaze zuwa na biyu, ko daga glaze na tushe zuwa glaze ɗin da mai launi fiye. Derek Au, misali, yana ƙara iron oxide a cikin glaze na tushe marar launi da 1% a kowane mataki. Wata hanya ta awon adadi (volume) da ake danganta ta da Ian Currie tana adana lokaci, saboda kuna haɗa ƙarshen biyu kawai:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Ku haɗa glaze biyu na ƙarshe, A da B, a matsayin batch masu girma iri ɗaya, ku tace dukansu.
-2. Ku ƙara ruwa a wanda adadinsa ya fi ƙanƙanta har dukansu su kasance da adadin ruwa-ruwa daidai ɗaya.
-3. Ku juya dukansu, sannan ku zuƙi kowane haɗi da sirinji cikin kofinsa mai lamba.
-4. Ku juya kowane kofi ku tsoma tayil.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-A misalinmu, A shi ne 100 g na glaze na tushe marar launi, kuma B iri ɗaya ne da 4 g na red iron oxide da aka ƙara (ƙarin 4%). Kowane mililita na B yana ɗauke da rabon tushe daidai da mililita na A, tare da ƙarfensa, don haka kofunan suna tafiya daga babu ƙarfe zuwa 4% a matakan 1%. Kowane ƙarshe yana ba da 100 mL ga blend ɗin, wanda batch na 100 g ya isa bisa kiyasinmu.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Line blend na ƙarfe mai matakai biyar, 40 mL a kowane kofi (misalinmu)
-Label: Misalin line blend
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Kofi | Tushe marar launi (A) | Tushe mai 4% ƙarfe (B) | Iron oxide, % na tushe |
-| ---- | --------------------: | ---------------------: | ---------------------: |
-| 1    |                 40 mL |                   0 mL |                      0 |
-| 2    |                 30 mL |                  10 mL |                      1 |
-| 3    |                 20 mL |                  20 mL |                      2 |
-| 4    |                 10 mL |                  30 mL |                      3 |
-| 5    |                  0 mL |                  40 mL |                      4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Hanyar tana buƙatar lissafi a hankali, ƙarshe da aka haɗa sosai masu SG daidai, da sikeli mai daidaito. Derek Au kuma yana blend bisa nauyi maimakon adadi. **Triaxial blend** yana yin haka da ƙarshe uku, an shimfiɗa su a kan alwatika.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Idan wani mataki ya yi kama da mai alheri, **Ajiye a matsayin kwafi** a [shafin tsarin glaze](/recipe) yana ajiye shi a matsayin tsarin glaze nasa kuma yana barin na asali yadda yake.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Ajiye bayanai {#records}
 

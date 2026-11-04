@@ -213,50 +213,50 @@ Label: లక్ష్య విశిష్ట గురుత్వం కో�
 
 **బెంటోనైట్**, చాలా సన్నని బంకమట్టి, ఇతర కణాలను నీటిలో తేలి ఉండేలా పట్టి ఉంచడానికి సహాయపడుతుంది. దీని కోసం ముంచే గ్లేజులు సాధారణంగా 15 నుండి 25% ముడి మట్టిపై ఆధారపడతాయి. మట్టి తక్కువగా ఉన్న రెసిపీకి సుమారు 1 నుండి 3% బెంటోనైట్ సహాయపడుతుంది; 15% కంటే ఎక్కువ మట్టి ఉన్న గ్లేజుకు పొడి గ్లేజ్ బరువులో 1% కంటే ఎక్కువ బెంటోనైట్ అవసరం ఉండకూడదని Digitalfire చెబుతుంది.
 
-## టెస్ట్ టైల్స్, లైన్ బ్లెండులు {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### చిన్నగా మొదలుపెట్టండి
+### Start small
 
-Derek Au మూడు దశలలో పెంచుకుంటూ వెళతారు: 50 లేదా 100 g పరీక్ష, అది బాగా వస్తే 1 నుండి 2 kg ట్రయల్, ఆపై 5 నుండి 10 kg స్టూడియో బ్యాచ్. మా అంచనా ప్రకారం, {{SG 1.45}} వద్ద 100 g పరీక్ష సుమారు 135 mL (సుమారు 4½ US fl oz) స్లర్రీ ఇస్తుంది, సన్నని కప్పులో కొన్ని చిన్న టైల్స్ ముంచడానికి సరిపోతుంది.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### మీ సొంత మట్టి మీద పరీక్షించండి
+### Test on your own clay
 
-ఒక గ్లేజ్ మరొక మట్టి మీద లేదా మరొక కిల్నులో (బట్టీలో) గణనీయంగా భిన్నంగా కనిపించవచ్చు: Clay Art Center తాను మళ్లీ రూపొందించిన ప్రతి గ్లేజును నాలుగు క్లే బాడీలపై (మట్టి మిశ్రమాలపై){{en: clay body}}, కోన్ (శంకువు){{en: cone}} 6 వద్ద, కోన్ 10 వద్ద పరీక్షించింది. గ్లేజ్ పరీక్షపై Potclays ప్రారంభకుల వ్యాసం ఇలా సూచిస్తుంది:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- మీరు నిజంగా వాడే మట్టితో 6 నుండి 10 **టెస్ట్ టైల్స్**{{en: test tile}} (గ్లేజ్ ప్రయత్నించడానికి చిన్న ముక్కలు), అవి బిస్క్ అయినవా (మొదటి కాల్పు పూర్తయినవా){{en: bisque}} లేక బోన్-డ్రై (పూర్తిగా ఆరినవా) అని గమనించి
-- ఒక సమయంలో ఒక మార్పు
-- గ్లేజ్ పలుచగా, మందంగా ఎలా ఉంటుందో చూడడానికి ఒకసారి ముంచినది, రెండుసార్లు ముంచినది
-- అన్ని టైల్స్ ఒకే కిల్న్ లోడులో
-- కాల్చే ముందు ప్రతి టైల్ మీద స్టాంప్, చెక్కడం లేదా అండర్గ్లేజ్ పెన్సిలుతో ఒక గుర్తు.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-నిలువుగా నిలబడే టైల్స్ వాడాలని మేము సూచిస్తాము, ఎందుకంటే చదునైన టైల్ గ్లేజ్ ఎంత దూరం కారిందో దాచేస్తుంది; వాటిపై అంచుల మీద గ్లేజ్ రంగు ఎలా మారుతుందో (బ్రేక్) చూపించడానికి గరుకు పట్టీ ఉండాలి, గ్లేజ్ లేని అడుగు భాగం కూడా ఉండాలి. కారే చుక్కలను పట్టుకోవడానికి ప్రతి టైల్ చిన్న పళ్లెం మీద, లేదా బిస్క్ ముక్క మీద, లేదా కిల్న్ వాష్ వేసిన షెల్ఫ్ మీద ఉండేలా పెట్టండి. టైల్స్ దగ్గర **విట్నెస్ కోన్**{{en: witness cone}} ఉంచండి: తగినంత వేడి అందాక వంగే చిన్న సిరామిక్ కోన్ అది, టైల్స్ ఎంత వేడి పొందాయో చూపిస్తుంది; కోనుల గురించి [సాధారణ కిల్నులో ఫైరింగ్](/guides/firing) మార్గదర్శి వివరిస్తుంది. ప్రతి టైల్ కోసం ఒక చిన్న కోడ్ ఇచ్చి, మీ రికార్డులలో రెసిపీ పక్కన రాయండి. Ceramic Arts Network కోసం రాసే Willers సంఖ్యలు, అక్షరాలు వాడతారు, ఆ పద్ధతినే నోట్బుక్ ముందు భాగంలో రాస్తారు.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### లైన్ బ్లెండులు
+### Line blends
 
-**లైన్ బ్లెండ్**{{en: line blend}} అంటే ఒక మిశ్రమం నుండి మరొక దానికి సమానంగా అడుగులు వేసే పరీక్షల వరుస: ఒక గ్లేజ్ నుండి రెండో గ్లేజ్ వరకు, లేదా ఒక బేస్ గ్లేజ్ నుండి అదే గ్లేజులో ఎక్కువ కలరెంట్ కలిపిన దాని వరకు. ఉదాహరణకు, Derek Au క్లియర్ బేసులో ఐరన్ ఆక్సైడును 1% పెరుగుదలలతో మారుస్తారు. Ian Currieతో ముడిపడిన ఘనపరిమాణ పద్ధతి సమయాన్ని ఆదా చేస్తుంది, ఎందుకంటే మీరు రెండు చివరలను మాత్రమే కలుపుతారు:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. A, B అనే రెండు చివరి గ్లేజులను ఒకే పరిమాణం గల బ్యాచులుగా కలిపి, రెండింటినీ జల్లెడ పట్టండి.
-2. రెండింటి తడి ఘనపరిమాణం సరిగ్గా ఒకటే అయ్యే వరకు తక్కువ ఘనపరిమాణం ఉన్న దానికి నీరు కలపండి.
-3. రెండింటినీ కలపండి, ఆపై ప్రతి మిశ్రమాన్ని సిరంజితో దాని సొంత నంబరు గల కప్పులోకి తీయండి.
-4. ప్రతి కప్పును కలిపి, ఒక టైల్ ముంచండి.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-మా ఉదాహరణలో, A అంటే 100 g క్లియర్ బేస్, B అంటే అదే దానిలో 4 g రెడ్ ఐరన్ ఆక్సైడ్ కలిపినది (4% అదనం). B లోని ప్రతి మిల్లీలీటరులో, A లోని ప్రతి మిల్లీలీటరులో ఉన్నంత బేస్ వాటా ఉంటుంది, దానికి తోడు దాని ఐరన్ కూడా ఉంటుంది, కాబట్టి కప్పులు ఐరన్ లేని స్థితి నుండి 4% వరకు 1% అడుగులతో మారతాయి. ప్రతి చివర మిశ్రమానికి 100 mL ఇస్తుంది, మా అంచనా ప్రకారం 100 g బ్యాచ్ దానికి సరిపోతుంది.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ఐదు దశల ఐరన్ లైన్ బ్లెండ్, ప్రతి కప్పుకు 40 mL (మా ఉదాహరణ)
-Label: లైన్ బ్లెండ్ ఉదాహరణ
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| కప్పు | క్లియర్ బేస్ (A) | 4% ఐరన్ ఉన్న బేస్ (B) | ఐరన్ ఆక్సైడ్, బేస్ యొక్క % |
-| ----- | ---------------: | --------------------: | -------------------------: |
-| 1     |            40 mL |                  0 mL |                          0 |
-| 2     |            30 mL |                 10 mL |                          1 |
-| 3     |            20 mL |                 20 mL |                          2 |
-| 4     |            10 mL |                 30 mL |                          3 |
-| 5     |             0 mL |                 40 mL |                          4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-ఈ పద్ధతికి జాగ్రత్తైన లెక్క, ఒకేలా ఉన్న విశిష్ట గురుత్వం గల బాగా కలిపిన చివరలు, కచ్చితమైన త్రాసు అవసరం. Derek Au ఘనపరిమాణానికి బదులు బరువు ప్రకారం కూడా బ్లెండ్ చేస్తారు. **ట్రైయాక్సియల్ బ్లెండ్** ఇదే పనిని మూడు చివరలతో చేస్తుంది, వాటిని ఒక త్రిభుజం మీద అమరుస్తారు.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> ఒక దశ ఆశాజనకంగా కనిపించినప్పుడు, [రెసిపీ పేజీ](/recipe)లో **కాపీగా సేవ్ చేయండి** దాన్ని సొంత రెసిపీగా ఉంచి, అసలు దాన్ని ఎలా ఉందో అలాగే వదులుతుంది.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## రికార్డులు ఉంచడం {#records}
 

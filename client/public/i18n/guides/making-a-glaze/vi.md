@@ -213,50 +213,50 @@ Label: Nước cho một tỷ trọng mục tiêu
 
 **Bentonit**, một loại đất sét rất mịn, giúp giữ các hạt khác lơ lửng. Men nhúng thường dựa vào 15 đến 25% đất sét thô cho việc này. Với một công thức men thiếu đất sét, khoảng 1 đến 3% bentonit sẽ giúp ích; Digitalfire cho biết một loại men có hơn 15% đất sét có lẽ không cần bentonit quá 1% trọng lượng men khô.
 
-## Mẫu thử men và thử nghiệm tuyến tính {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Bắt đầu nhỏ
+### Start small
 
-Derek Au làm lên theo ba bước: một mẻ thử 50 hoặc 100 g, một mẻ thử nghiệm 1 đến 2 kg nếu nó hiệu quả, rồi một mẻ xưởng 5 đến 10 kg. Theo ước tính của chúng tôi, một mẻ thử 100 g ở {{SG 1.45}} tạo ra khoảng 135 mL (khoảng 4½ US fl oz) nước men, đủ để nhúng vài mẫu thử nhỏ trong một cái cốc hẹp.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Thử trên đất của riêng bạn
+### Test on your own clay
 
-Một loại men có thể trông khá khác trên đất sét khác hoặc trong lò khác: Clay Art Center đã thử mỗi loại men được cải tiến công thức của họ trên bốn xương gốm, ở côn 6 và côn 10. Hướng dẫn cho người mới về thử men của Potclays gợi ý:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 đến 10 **mẫu thử men** (các mảnh nhỏ để thử một loại men) bằng đất sét bạn sẽ thực sự dùng, ghi chú chúng là gốm mộc hay khô hoàn toàn
-- mỗi lần chỉ một thay đổi
-- một lần nhúng đơn và một lần nhúng đôi, để thấy men mỏng và dày
-- mọi mẫu thử trong cùng một mẻ lò
-- một dấu trên mỗi mẫu trước khi nung, bằng một con dấu, đường khắc hoặc bút chì màu dưới men.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Chúng tôi gợi ý các mẫu thử đứng thẳng, vì một mẫu phẳng che giấu việc men chảy xa đến đâu, với một dải có kết cấu để cho thấy men đổi màu ở cạnh thế nào, và một chân đế trần. Đặt mỗi mẫu trên một cái đĩa nhỏ hoặc một mảnh gốm mộc vụn, hoặc trên một kệ có lớp phủ chống dính, để hứng giọt. Hãy đặt một **côn chứng**, một côn gốm nhỏ cong khi đã nhận đủ nhiệt, gần các mẫu thử để cho thấy chúng đã nhận gì; [cẩm nang nung](/guides/firing) giải thích về côn. Đặt cho mỗi mẫu một mã ngắn, và ghi nó cạnh công thức men trong các bản ghi của bạn. Willers, viết cho Ceramic Arts Network, dùng số và chữ cái, và ghi chính hệ thống đó ở trang đầu của cuốn sổ.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Thử nghiệm tuyến tính
+### Line blends
 
-Một **thử nghiệm tuyến tính** là một hàng các mẫu thử tăng đều từ một hỗn hợp sang hỗn hợp khác: từ một loại men sang loại thứ hai, hoặc từ một men nền sang chính men đó với nhiều chất tạo màu hơn. Chẳng hạn Derek Au tăng sắt oxit qua một men nền trong theo các bước 1%. Một phương pháp theo thể tích gắn với Ian Currie tiết kiệm thời gian, vì bạn chỉ pha hai đầu:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Pha hai loại men ở hai đầu, A và B, thành các mẻ cùng cỡ, và sàng cả hai.
-2. Thêm nước vào loại có thể tích ít hơn cho đến khi cả hai có đúng cùng thể tích ướt.
-3. Khuấy cả hai, rồi dùng ống tiêm hút mỗi hỗn hợp vào cốc có đánh số của nó.
-4. Khuấy mỗi cốc và nhúng một mẫu thử.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Trong ví dụ thực hành của chúng tôi, A là 100 g một men nền trong, và B là chính nó có thêm 4 g oxit sắt đỏ (phần thêm 4%). Mỗi mililít B chứa cùng phần men nền như một mililít A, cộng với sắt của nó, nên các cốc tăng từ không có sắt đến 4% theo các bước 1%. Mỗi đầu đưa 100 mL vào phép pha trộn, mà một mẻ 100 g đủ cho theo ước tính của chúng tôi.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Một thử nghiệm tuyến tính sắt năm bước, 40 mL mỗi cốc (ví dụ thực hành của chúng tôi)
-Label: Ví dụ thử nghiệm tuyến tính
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Cốc | Men nền trong (A) | Men nền có 4% sắt (B) | Sắt oxit, % men nền |
-| --- | ----------------: | --------------------: | ------------------: |
-| 1   |             40 mL |                  0 mL |                   0 |
-| 2   |             30 mL |                 10 mL |                   1 |
-| 3   |             20 mL |                 20 mL |                   2 |
-| 4   |             10 mL |                 30 mL |                   3 |
-| 5   |              0 mL |                 40 mL |                   4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Phương pháp này cần phép tính cẩn thận, các đầu được pha kỹ có tỷ trọng đều, và một chiếc cân chính xác. Derek Au cũng pha theo khối lượng thay vì thể tích. Một **thử nghiệm tam giác** làm điều tương tự với ba đầu, bố trí trên một hình tam giác.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Khi một bước trông đầy hứa hẹn, **Lưu bản sao** trên [trang công thức men](/recipe) giữ nó thành một công thức men riêng và để bản gốc như cũ.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Ghi chép {#records}
 

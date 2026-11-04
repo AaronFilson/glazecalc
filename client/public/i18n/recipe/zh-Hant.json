@@ -723,8 +723,7 @@
     "keyPoint": "圓點：這個釉。",
     "keyBright": "點線：Stull 的釉最亮的位置。",
     "keyLimits": "虛線與陰影：{name}的二氧化矽和氧化鋁範圍。",
-    "keyCrazed": "斜線填色：這些釉出現龜裂的位置。",
-    "note": "僅供參考，不是預測。R. T. Stull（Transactions of the American Ceramic Society，1912）在 Orton 11 號測溫錐下燒成，助熔劑固定為 0.3 K₂O 和 0.7 CaO；其他助熔劑和燒成條件會使各區域移動，欠燒的霧面釉也可能畫在亮面區。各區域依 Glazy 的畫法。"
+    "keyCrazed": "斜線填色：這些釉出現龜裂的位置。"
   },
   "slurry": {
     "heading": "比重與水",

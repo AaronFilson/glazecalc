@@ -213,50 +213,50 @@ Label: Amanzi e-specific gravity ehlosiwe
 
 **I-bentonite**, ubumba olucoleke kakhulu, isiza ukubamba ezinye izinhlayiya zintante emanzini. Ama-glaze okucwilisa avame ukuthembela ku-15 kuya ku-25% wobumba oluluhlaza kulokhu. Kuresiphi entula ubumba, cishe u-1 kuya ku-3% we-bentonite uyasiza; i-Digitalfire ithi i-glaze enobumba obungaphezu kuka-15% akufanele idinge i-bentonite engaphezu kuka-1% wesisindo se-glaze eyomile.
 
-## Ama-test tile nama-line blend {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Qala kancane
+### Start small
 
-UDerek Au usebenza ngezinyathelo ezintathu: ukuhlola kuka-50 noma 100 g, isivivinyo sika-1 kuya ku-2 kg uma kusebenza, bese kuba yi-batch yesitudiyo ka-5 kuya ku-10 kg. Ngesilinganiso sethu, ukuhlola kuka-100 g ku-{{SG 1.45}} kwenza cishe u-135 mL (cishe u-4½ US fl oz) we-slurry, okwanele ukucwilisa ama-tile amancane ambalwa enkomishini ewumngcingo.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Hlola ebumbeni lwakho
+### Test on your own clay
 
-I-glaze ingabukeka ihluke kakhulu kobunye ubumba noma kwenye i-kiln: i-Clay Art Center yahlola i-glaze ngayinye eyayilungisiwe ezinhlotsheni ezine zobumba, ku-cone 6 naku-cone 10. Umhlahlandlela wabaqalayo we-Potclays wokuhlola i-glaze uphakamisa:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- **Ama-test tile** angu-6 kuya ku-10 (izingcezu ezincane zokuzama i-glaze) obumba ozolusebenzisa ngempela, uphawule ukuthi ayi-bisque noma omile ngokuphelele
-- ushintsho olulodwa ngesikhathi
-- ukucwilisa kanye nokucwilisa kabili, ukuze ubone i-glaze ihlambulukile futhi ijiyile
-- wonke ama-tile emthwalweni ofanayo we-kiln
-- umaki ku-tile ngalinye ngaphambi kokushisa, ngesitembu, ngokubaza noma nge-underglaze pencil.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Siphakamisa ama-tile ama aqonde, ngoba i-tile eyisicaba ifihla ukuthi i-glaze igeleza kangakanani, anebhande elinokuthungwa ukukhombisa ukuthi i-glaze iphuka kanjani emaphethelweni, nonyawo olungenalutho. Beka ngalinye esitsheni esincane noma kucezu lwe-bisque, noma eshalofini elifakwe i-kiln wash, ukuze libambe amaconsi. Beka i-**witness cone**, i-cone encane ye-ceramic egoba lapho isithole ukushisa okwanele, eduze kwama-tile ukukhombisa ukuthi athola okungakanani; [umhlahlandlela we-Ukushisa ku-kiln elula](/guides/firing) uchaza ama-cone. Nika i-tile ngalinye ikhodi emfushane, uyibhale eduze kweresiphi emarekhodini akho. UWillers, ebhalela i-Ceramic Arts Network, usebenzisa izinombolo nezinhlamvu, futhi ubhala uhlelo ngokwalo ekuqaleni kwencwajana.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Ama-line blend
+### Line blends
 
-**I-line blend** ngumugqa wokuhlola ohamba ngezinyathelo ezilinganayo kusuka engxubeni eyodwa kuya kwenye: kusuka ku-glaze eyodwa kuya kwesibili, noma kusuka ku-base glaze kuya ku-glaze efanayo enokokufaka umbala okwengeziwe. UDerek Au, ngokwesibonelo, uhambisa i-iron oxide ku-base ecwebile ngezinyathelo zika-1%. Indlela yevolumu ehlotshaniswa no-Ian Currie yonga isikhathi, ngoba uxuba iziphetho ezimbili kuphela:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Xuba ama-glaze amabili asekugcineni, u-A no-B, njengama-batch obukhulu obufanayo, bese uwahlunga womabili.
-2. Engeza amanzi kulowo onevolumu encane kuze kube yilapho womabili enevolumu emanzi efanayo ncamashi.
-3. Govuza womabili, bese udonsa ingxube ngayinye ngesirinji uyifake enkomishini yayo enenombolo.
-4. Govuza inkomishi ngayinye bese ucwilisa i-tile.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Esibonelweni sethu esisebenzile, u-A ngu-100 g we-base ecwebile, kanti u-B uyafana kodwa kwengezwe u-4 g we-red iron oxide (ukwengeza okungu-4%). I-milliliter ngayinye ka-B iphethe isabelo esifanayo se-base njenge-milliliter ka-A, kanye nensimbi yayo, ngakho izinkomishi zihamba kusuka kungekho nsimbi kuya ku-4% ngezinyathelo zika-1%. Isiphetho ngasinye sinika u-100 mL ku-blend, okumbozwa yi-batch ka-100 g ngesilinganiso sethu.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: I-line blend yensimbi enezinyathelo ezinhlanu, 40 mL enkomishini ngayinye (isibonelo sethu esisebenzile)
-Label: Isibonelo se-line blend
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Inkomishi | I-base ecwebile (A) | I-base enensimbi engu-4% (B) | I-iron oxide, % we-base |
-| --------- | ------------------: | ---------------------------: | ----------------------: |
-| 1         |               40 mL |                         0 mL |                       0 |
-| 2         |               30 mL |                        10 mL |                       1 |
-| 3         |               20 mL |                        20 mL |                       2 |
-| 4         |               10 mL |                        30 mL |                       3 |
-| 5         |                0 mL |                        40 mL |                       4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Indlela idinga ukubala ngokucophelela, iziphetho ezixubeke kahle ze-SG elinganayo, nesikali esinembile. UDerek Au uphinde axube ngesisindo esikhundleni sevolumu. **I-triaxial blend** yenza okufanayo ngeziphetho ezintathu, zibekwe kunxantathu.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Uma isinyathelo sibukeka sithembisa, **Londoloza njengekhophi** [ekhasini leresiphi](/recipe) isigcina njengeresiphi yaso futhi ishiya eyokuqala injengoba yayinjalo.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Ukugcina amarekhodi {#records}
 

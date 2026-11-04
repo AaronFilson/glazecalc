@@ -723,8 +723,7 @@
     "keyPoint": "Točka: ova glazura.",
     "keyBright": "Točkasta crta: gdje su Stullove glazure bile najsjajnije.",
     "keyLimits": "Isprekidane crte i sjenčanje: rasponi silicijeva dioksida i glinice skupa {name}.",
-    "keyCrazed": "Šrafura: gdje su pucale.",
-    "note": "Vodič, a ne predviđanje. R. T. Stull (Transactions of the American Ceramic Society, 1912) pekao je na stošcu 11 s topiteljima zadanima na 0,3 K₂O i 0,7 CaO; drugi topitelji i pečenja pomiču područja, a nedovoljno pečen mat može se ucrtati kao sjajan. Područja su onakva kakva ih crta Glazy."
+    "keyCrazed": "Šrafura: gdje su pucale."
   },
   "slurry": {
     "heading": "Relativna gustoća i voda",

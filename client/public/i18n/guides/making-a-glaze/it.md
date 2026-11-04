@@ -213,50 +213,50 @@ La **CMC** (carbossimetilcellulosa) rende la sospensione più appiccicosa e più
 
 La **bentonite**, un’argilla finissima, aiuta a tenere in sospensione le altre particelle. Per questo gli smalti per immersione di solito contano su un 15–25% di argilla cruda. Per una ricetta con poca argilla aiuta circa l’1–3% di bentonite; secondo Digitalfire, uno smalto con più del 15% di argilla non dovrebbe aver bisogno di più dell’1% di bentonite sul peso dello smalto secco.
 
-## Provini e progressioni lineari {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Iniziare in piccolo
+### Start small
 
-Derek Au procede in tre passi: una prova da 50 o 100 g, una pesata di prova da 1–2 kg se funziona, poi una pesata da laboratorio da 5–10 kg. Secondo la nostra stima, una prova da 100 g con {{SG 1.45}} dà circa 135 mL (circa 4½ fl oz USA) di sospensione{{en: slurry}}, abbastanza per immergere qualche piccolo provino in un bicchiere stretto.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Provare sulla propria argilla
+### Test on your own clay
 
-Uno smalto{{en: glaze}} può avere un aspetto molto diverso su un’altra argilla o in un altro forno: Clay Art Center ha provato ognuno dei suoi smalti riformulati su quattro impasti{{en: clay bodies}}, a cono{{en: cone}} 6 e a cono 10. La guida per principianti di Potclays alle prove degli smalti suggerisce:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- da 6 a 10 **provini**{{en: test tiles}} (piccoli pezzi per provare uno smalto) dell’argilla che si userà davvero, annotando se sono biscottati{{en: bisqued}} o completamente secchi
-- una sola modifica alla volta
-- un’immersione singola e una doppia, per vedere lo smalto sottile e spesso
-- tutti i provini nella stessa infornata
-- un segno su ogni provino prima della cottura, con un timbro, un’incisione o una matita sottocristallina.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Suggeriamo provini che stiano in piedi, perché un provino piatto nasconde quanto cola lo smalto, con una fascia in rilievo per vedere come lo smalto schiarisce sugli spigoli e un piede senza smalto. Appoggiare ciascuno su un piattino, su un coccio di biscotto o sul protettivo per piastre, per raccogliere le colature. Mettere vicino ai provini un **cono testimone**{{en: witness cone}}, un piccolo cono di ceramica che si piega quando ha ricevuto abbastanza calore, per mostrare quanto ne hanno ricevuto i provini; la guida [Cuocere in un forno semplice](/guides/firing) spiega i coni. Dare a ogni provino un codice breve e scriverlo accanto alla ricetta nei propri appunti. Willers, in un articolo per Ceramic Arts Network, usa numeri e lettere, e scrive il sistema stesso all’inizio del quaderno.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Progressioni lineari
+### Line blends
 
-Una **progressione lineare**{{en: line blend}} è una fila di prove che passa a passi uguali da una miscela a un’altra: da uno smalto a un secondo, o da uno smalto base allo stesso smalto con più colorante{{en: colorant}}. Derek Au, per esempio, aggiunge ossido di ferro a una cristallina di base con incrementi dell’1%. Un metodo volumetrico associato a Ian Currie fa risparmiare tempo, perché si preparano solo i due estremi:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Preparare i due smalti estremi, A e B, in pesate della stessa dimensione e setacciarli entrambi.
-2. Aggiungere acqua a quello con meno volume finché i due hanno esattamente lo stesso volume di sospensione.
-3. Mescolarli entrambi, poi prelevare ogni miscela con una siringa e metterla nel suo bicchiere numerato.
-4. Mescolare ogni bicchiere e immergervi un provino.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Nel nostro esempio svolto, A è 100 g di una cristallina di base e B è lo stesso con l’aggiunta di 4 g di ossido di ferro rosso (un’aggiunta del 4%). Ogni millilitro di B contiene la stessa quantità di base di un millilitro di A, più il suo ferro, quindi i bicchieri vanno da nessun ferro al 4% a passi dell’1%. Ogni estremo fornisce 100 mL alla progressione: secondo la nostra stima, una pesata da 100 g basta.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Una progressione lineare del ferro in cinque passi, 40 mL per bicchiere (il nostro esempio svolto)
-Label: Esempio di progressione lineare
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Bicchiere | Cristallina di base (A) | Base con il 4% di ferro (B) | Ossido di ferro, % sulla base |
-| --------- | ----------------------: | --------------------------: | ----------------------------: |
-| 1         |                   40 mL |                        0 mL |                             0 |
-| 2         |                   30 mL |                       10 mL |                             1 |
-| 3         |                   20 mL |                       20 mL |                             2 |
-| 4         |                   10 mL |                       30 mL |                             3 |
-| 5         |                    0 mL |                       40 mL |                             4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Il metodo richiede calcoli accurati, estremi ben mescolati con lo stesso peso specifico{{en: SG}} e una bilancia precisa. Derek Au miscela anche in peso anziché in volume. Una **prova triassiale** fa lo stesso con tre estremi, disposti su un triangolo.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Quando un passo sembra promettente, **Salva come copia** nella [pagina della ricetta](/recipe) lo conserva come ricetta a sé e lascia l’originale com’era.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Tenere un registro {#records}
 

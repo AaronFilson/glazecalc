@@ -213,50 +213,50 @@ Label: ലക്ഷ്യമിടുന്ന ആപേക്ഷിക സാ�
 
 വളരെ നേർത്ത കളിമണ്ണായ **ബെന്റോണൈറ്റ്** മറ്റ് കണികകളെ സസ്പെൻഷനിൽ പിടിച്ചുനിർത്താൻ സഹായിക്കുന്നു. ഡിപ്പിങ് ഗ്ലേസുകൾ ഇതിന് സാധാരണയായി 15 മുതൽ 25% വരെ അസംസ്കൃത കളിമണ്ണിനെ ആശ്രയിക്കുന്നു. കളിമണ്ണ് കുറവുള്ള ഒരു റെസിപ്പിക്ക്, ഏകദേശം 1 മുതൽ 3% വരെ ബെന്റോണൈറ്റ് സഹായിക്കും; 15%-ൽ കൂടുതൽ കളിമണ്ണുള്ള ഒരു ഗ്ലേസിന് ഉണങ്ങിയ ഗ്ലേസിന്റെ ഭാരത്തിന്റെ 1%-ൽ കൂടുതൽ ബെന്റോണൈറ്റ് ആവശ്യമായി വരേണ്ടതില്ലെന്ന് Digitalfire പറയുന്നു.
 
-## ടെസ്റ്റ് ടൈലുകളും ലൈൻ ബ്ലെൻഡുകളും {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### ചെറുതായി തുടങ്ങുക
+### Start small
 
-Derek Au മൂന്ന് ഘട്ടങ്ങളായി മുന്നേറുന്നു: 50 അല്ലെങ്കിൽ 100 g ടെസ്റ്റ്, അത് വിജയിച്ചാൽ 1 മുതൽ 2 kg വരെയുള്ള ഒരു പരീക്ഷണം, പിന്നെ 5 മുതൽ 10 kg വരെയുള്ള ഒരു സ്റ്റുഡിയോ ബാച്ച്. ഞങ്ങളുടെ ഏകദേശ കണക്കനുസരിച്ച്, {{SG 1.45}} ഉള്ള 100 g ടെസ്റ്റ് ഏകദേശം 135 mL (ഏകദേശം 4½ US fl oz) സ്ലറി{{en: slurry}} ഉണ്ടാക്കുന്നു, ഒരു ഇടുങ്ങിയ കപ്പിൽ കുറച്ച് ചെറിയ ടൈലുകൾ മുക്കാൻ അത് മതി.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### നിങ്ങളുടെ സ്വന്തം കളിമണ്ണിൽ ടെസ്റ്റ് ചെയ്യുക
+### Test on your own clay
 
-ഒരു ഗ്ലേസ്{{en: glaze}} മറ്റൊരു കളിമണ്ണിൽ അല്ലെങ്കിൽ മറ്റൊരു കിൽനിൽ (ചൂളയിൽ) തികച്ചും വ്യത്യസ്തമായി കാണപ്പെടാം: Clay Art Center പുനർരൂപകൽപ്പന ചെയ്ത ഓരോ ഗ്ലേസും നാല് ക്ലേ ബോഡികളിൽ (പാത്രത്തിന്റെ കളിമണ്ണുകളിൽ){{en: clay body}}, കോൺ 6-ലും കോൺ 10-ലും ടെസ്റ്റ് ചെയ്തു. ഗ്ലേസ് ടെസ്റ്റിങ്ങിനുള്ള Potclays-ന്റെ തുടക്കക്കാർക്കുള്ള വഴികാട്ടി നിർദ്ദേശിക്കുന്നത്:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- നിങ്ങൾ യഥാർത്ഥത്തിൽ ഉപയോഗിക്കുന്ന കളിമണ്ണിന്റെ 6 മുതൽ 10 വരെ **ടെസ്റ്റ് ടൈലുകൾ** (ഒരു ഗ്ലേസ് പരീക്ഷിക്കാനുള്ള ചെറിയ കഷണങ്ങൾ), അവ ബിസ്ക് (ആദ്യ ചുടൽ) ചെയ്തവയാണോ{{en: bisqued}} ബോൺ ഡ്രൈ ആണോ എന്ന് കുറിച്ചുവച്ച്
-- ഒരു സമയത്ത് ഒരു മാറ്റം
-- ഒറ്റ മുക്കലും ഇരട്ട മുക്കലും, ഗ്ലേസ് നേർത്തും കട്ടിയായും എങ്ങനെയെന്ന് കാണാൻ
-- എല്ലാ ടൈലുകളും ഒരേ കിൽൻ ലോഡിൽ
-- ഫയർ ചെയ്യുന്നതിന് മുമ്പ് ഓരോ ടൈലിലും ഒരു അടയാളം, ഒരു സ്റ്റാമ്പ്, കൊത്തുപണി അല്ലെങ്കിൽ അണ്ടർഗ്ലേസ് പെൻസിൽ ഉപയോഗിച്ച്.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-ഞങ്ങൾ നേരെ നിൽക്കുന്ന ടൈലുകൾ നിർദ്ദേശിക്കുന്നു, കാരണം പരന്ന ടൈൽ ഗ്ലേസ് എത്ര ദൂരം ഒലിച്ചിറങ്ങുന്നുവെന്ന് മറയ്ക്കുന്നു; ഗ്ലേസ് അരികുകളിൽ എങ്ങനെ ബ്രേക്ക് ചെയ്യുന്നുവെന്ന് കാണിക്കാൻ ഘടനയുള്ള ഒരു ബാൻഡും, ഗ്ലേസില്ലാത്ത ഒരു ഫൂട്ടും (പാത്രത്തിന്റെ അടിഭാഗം) ഉണ്ടായിരിക്കണം. തുള്ളികൾ പിടിക്കാൻ ഓരോന്നും ഒരു ചെറിയ തട്ടിലോ ഒരു ബിസ്ക് കഷണത്തിലോ, അല്ലെങ്കിൽ കിൽൻ വാഷ് പുരട്ടിയ ഒരു ഷെൽഫിലോ വയ്ക്കുക. ടൈലുകൾക്ക് എത്ര ചൂട് കിട്ടിയെന്ന് കാണിക്കാൻ അവയ്ക്കരികിൽ ഒരു **വിറ്റ്നസ് കോൺ**{{en: witness cone}} വയ്ക്കുക, ആവശ്യത്തിന് ചൂട് കിട്ടുമ്പോൾ വളയുന്ന ഒരു ചെറിയ സെറാമിക് കോൺ; കോണുകളെക്കുറിച്ച് [ലളിതമായ ഒരു കിൽനിൽ ഫയറിങ്](/guides/firing) വഴികാട്ടി വിശദീകരിക്കുന്നു. ഓരോ ടൈലിനും ഒരു ചെറിയ കോഡ് നൽകുക, നിങ്ങളുടെ രേഖകളിൽ റെസിപ്പിക്ക് നേരെ അത് എഴുതുക. Ceramic Arts Network-ന് വേണ്ടി എഴുതുന്ന Willers അക്കങ്ങളും അക്ഷരങ്ങളും ഉപയോഗിക്കുന്നു, ആ സംവിധാനം തന്നെ നോട്ട്ബുക്കിന്റെ മുൻഭാഗത്ത് എഴുതിവയ്ക്കുന്നു.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ലൈൻ ബ്ലെൻഡുകൾ
+### Line blends
 
-ഒരു **ലൈൻ ബ്ലെൻഡ്**{{en: line blend}} എന്നത് ഒരു മിശ്രിതത്തിൽ നിന്ന് മറ്റൊന്നിലേക്ക് തുല്യമായി ഘട്ടം ഘട്ടമായി നീങ്ങുന്ന ഒരു നിര ടെസ്റ്റുകളാണ്: ഒരു ഗ്ലേസിൽ നിന്ന് രണ്ടാമത്തേതിലേക്ക്, അല്ലെങ്കിൽ ഒരു ബേസ് ഗ്ലേസിൽ നിന്ന് കൂടുതൽ കളറന്റ് ചേർത്ത അതേ ഗ്ലേസിലേക്ക്. ഉദാഹരണത്തിന് Derek Au ഒരു ക്ലിയർ ബേസിലൂടെ അയൺ ഓക്സൈഡിനെ 1% വീതം കൂട്ടിക്കൊണ്ട് പോകുന്നു. Ian Currie-യോട് ബന്ധപ്പെടുത്തി പറയപ്പെടുന്ന വ്യാപ്തം അടിസ്ഥാനമാക്കിയുള്ള ഒരു രീതി സമയം ലാഭിക്കുന്നു, കാരണം നിങ്ങൾ രണ്ട് അറ്റങ്ങൾ മാത്രമേ മിക്സ് ചെയ്യുന്നുള്ളൂ:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. രണ്ട് അറ്റത്തെ ഗ്ലേസുകളായ A-യും B-യും ഒരേ വലിപ്പമുള്ള ബാച്ചുകളായി മിക്സ് ചെയ്ത് രണ്ടും അരിക്കുക.
-2. രണ്ടിനും നനഞ്ഞ നിലയിൽ കൃത്യമായി ഒരേ വ്യാപ്തം ആകുന്നത് വരെ വ്യാപ്തം കുറവുള്ളതിലേക്ക് വെള്ളം ചേർക്കുക.
-3. രണ്ടും ഇളക്കുക, എന്നിട്ട് ഓരോ മിശ്രിതവും ഒരു സിറിഞ്ച് കൊണ്ട് വലിച്ചെടുത്ത് അതിന്റേതായ നമ്പറിട്ട കപ്പിൽ ഒഴിക്കുക.
-4. ഓരോ കപ്പും ഇളക്കി ഒരു ടൈൽ മുക്കുക.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-ഞങ്ങളുടെ പ്രവർത്തിച്ചു കാണിച്ച ഉദാഹരണത്തിൽ, A എന്നത് 100 g ക്ലിയർ ബേസ് ആണ്, B എന്നത് അതിൽ 4 g റെഡ് അയൺ ഓക്സൈഡ് ചേർത്തത് (4% ചേർക്കൽ). A-യുടെ ഓരോ മില്ലിലിറ്ററിലുമുള്ള അതേ അളവ് ബേസ് B-യുടെ ഓരോ മില്ലിലിറ്ററിലും ഉണ്ട്, കൂടാതെ അതിന്റെ അയണും, അതുകൊണ്ട് കപ്പുകൾ അയൺ ഇല്ലാത്തതിൽ നിന്ന് 4% വരെ 1% വീതം കൂടുന്നു. ഓരോ അറ്റവും ബ്ലെൻഡിലേക്ക് 100 mL നൽകുന്നു, ഞങ്ങളുടെ ഏകദേശ കണക്കനുസരിച്ച് ഒരു 100 g ബാച്ച് അത് നികത്തുന്നു.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ഒരു അഞ്ച് ഘട്ട അയൺ ലൈൻ ബ്ലെൻഡ്, ഒരു കപ്പിൽ 40 mL (ഞങ്ങളുടെ ഉദാഹരണം)
-Label: ലൈൻ ബ്ലെൻഡ് ഉദാഹരണം
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| കപ്പ് | ക്ലിയർ ബേസ് (A) | 4% അയൺ ഉള്ള ബേസ് (B) | അയൺ ഓക്സൈഡ്, ബേസിന്റെ % |
-| ----- | --------------: | -------------------: | ----------------------: |
-| 1     |           40 mL |                 0 mL |                       0 |
-| 2     |           30 mL |                10 mL |                       1 |
-| 3     |           20 mL |                20 mL |                       2 |
-| 4     |           10 mL |                30 mL |                       3 |
-| 5     |            0 mL |                40 mL |                       4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-ഈ രീതിക്ക് ശ്രദ്ധയോടെയുള്ള കണക്കുകൂട്ടൽ, നന്നായി മിക്സ് ചെയ്ത, ഒരേ ആപേക്ഷിക സാന്ദ്രതയുള്ള അറ്റങ്ങൾ, കൃത്യമായ ഒരു ത്രാസ് എന്നിവ വേണം. Derek Au വ്യാപ്തത്തിന് പകരം ഭാരം അനുസരിച്ചും ബ്ലെൻഡ് ചെയ്യുന്നു. ഒരു **ട്രൈആക്സിയൽ ബ്ലെൻഡ്** ഇതുതന്നെ മൂന്ന് അറ്റങ്ങൾ കൊണ്ട് ചെയ്യുന്നു, ഒരു ത്രികോണത്തിൽ ക്രമീകരിച്ച്.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> ഒരു ഘട്ടം പ്രതീക്ഷ നൽകുന്നതായി തോന്നുമ്പോൾ, [റെസിപ്പി പേജിലെ](/recipe) **പകർപ്പായി സംരക്ഷിക്കുക** അതിനെ സ്വന്തമായ ഒരു റെസിപ്പിയായി സൂക്ഷിക്കുകയും മൂലരൂപം പഴയതുപോലെ വിടുകയും ചെയ്യുന്നു.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## രേഖകൾ സൂക്ഷിക്കൽ {#records}
 

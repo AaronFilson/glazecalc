@@ -723,8 +723,7 @@
     "keyPoint": "Nokta: bu sır.",
     "keyBright": "Noktalı çizgi: Stull’un sırlarının en parlak olduğu yer.",
     "keyLimits": "Kesikli çizgiler ve gölge: {name} setinin silis ve alümina aralıkları.",
-    "keyCrazed": "Tarama: çatladıkları yer.",
-    "note": "Yol gösterici; tahmin değildir. R. T. Stull (Transactions of the American Ceramic Society, 1912) ergiticileri 0,3 K₂O ve 0,7 CaO’da sabit tutarak 11 numaralı piramitte pişirdi; diğer ergiticiler ve pişirimler bölgeleri kaydırır, az pişmiş bir mat sır diyagramda parlak olarak görünebilir. Bölgeler, Glazy’nin çizdiği gibidir."
+    "keyCrazed": "Tarama: çatladıkları yer."
   },
   "slurry": {
     "heading": "Özgül ağırlık ve su",

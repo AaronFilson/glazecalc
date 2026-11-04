@@ -213,50 +213,50 @@ Label: Вода за целево относително тегло
 
 **Бентонитът**, много фина глина, помага останалите частици да стоят в суспензия. Глазурите за потапяне обикновено разчитат за това на 15–25% некалцинирана глина. При рецепта с малко глина помагат около 1–3% бентонит; според Digitalfire глазура с над 15% глина не би трябвало да се нуждае от бентонит над 1% от теглото на сухата глазура.
 
-## Пробни плочки и серии проби {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Започнете с малко
+### Start small
 
-Дерек Ау увеличава количеството на три стъпки: проба от 50 или 100 g, ако се получи – опит с 1–2 kg, след това замес от 5–10 kg за ателието. По наша оценка проба от 100 g с {{SG 1.45}} дава около 135 mL (около 4½ US fl oz) глазурна суспензия{{en: slurry}} – достатъчно, за да потопите няколко малки плочки в тясна чаша.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Изпробвайте върху масата, с която работите
+### Test on your own clay
 
-Една глазура{{en: glaze}} може да изглежда съвсем различно върху друга глина или в друга пещ: Clay Art Center изпробва всяка от преработените си глазури върху четири керамични маси{{en: clay bodies}}, при изпичане до конус{{en: cone}} 6 и до конус 10. Наръчникът на Potclays за начинаещи за изпробване на глазури препоръчва:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **пробни плочки**{{en: test tiles}} (малки парчета за изпробване на глазура) от масата, която наистина ще използвате, като отбележите дали са изпечени на бисквит{{en: bisqued}} или напълно изсъхнали
-- само по една промяна наведнъж
-- еднократно и двукратно потапяне, за да видите глазурата в тънък и в дебел слой
-- всички плочки в едно и също зареждане на пещта
-- знак на всяка плочка преди изпичането – с печат, издълбаване или подглазурен молив.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Предлагаме плочки, които стоят изправени, защото плоската плочка скрива докъде се стича глазурата, с релефна ивица, която показва как глазурата изтънява и променя цвета си по ръбовете, и с неглазирано дъно. Поставете всяка върху малка чинийка или парче бисквит, или върху плоча, намазана с огнеупорна ангоба, за да се събират капките. Поставете близо до плочките **контролен конус**{{en: witness cone}} – малък керамичен конус, който се огъва, когато е получил достатъчно топлина – за да покаже какво са получили те; наръчникът „[Изпичане в обикновена пещ](/guides/firing)“ обяснява конусите. Дайте на всяка плочка кратък код и го запишете до рецептата в записките си. Уилърс (Willers) в статия за Ceramic Arts Network използва цифри и букви и записва самата система в началото на тетрадката.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Серии проби
+### Line blends
 
-**Серията проби**{{en: line blend}} е редица проби, която преминава на равни стъпки от една смес към друга: от една глазура към втора или от базисна глазура към същата глазура с повече оцветител{{en: colorant}}. Дерек Ау например увеличава железния оксид в прозрачна базисна глазура на стъпки от по 1%. Обемният метод, свързван с Иън Къри (Ian Currie), пести време, защото замесвате само двата края:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Замесете двете крайни глазури, A и B, като замеси с еднакъв размер и пресейте и двете.
-2. Добавете вода към тази с по-малък обем, докато двете имат точно еднакъв обем в мокро състояние.
-3. Разбъркайте и двете, след това със спринцовка отмерете всяка смес в отделна номерирана чаша.
-4. Разбъркайте всяка чаша и потопете в нея плочка.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-В нашия пример A е 100 g прозрачна базисна глазура, а B е същата с добавени 4 g червен железен оксид (добавка от 4%). Всеки милилитър от B съдържа същия дял базисна глазура като милилитър от A плюс желязото, така че чашите преминават от глазура без желязо до 4% на стъпки от 1%. Всеки край дава 100 mL за серията, което по наша оценка се покрива от замес от 100 g.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Серия от пет проби с желязо, по 40 mL в чаша (нашият пример)
-Label: Пример за серия проби
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Чаша | Прозрачна базисна глазура (A) | Базисна глазура с 4% желязо (B) | Железен оксид, % свръх базисната глазура |
-| ---- | ----------------------------: | ------------------------------: | ---------------------------------------: |
-| 1    |                         40 mL |                            0 mL |                                        0 |
-| 2    |                         30 mL |                           10 mL |                                        1 |
-| 3    |                         20 mL |                           20 mL |                                        2 |
-| 4    |                         10 mL |                           30 mL |                                        3 |
-| 5    |                          0 mL |                           40 mL |                                        4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Методът изисква внимателни сметки, добре разбъркани крайни глазури с еднакво относително тегло{{en: specific gravity}} и точна везна. Дерек Ау смесва и по тегло вместо по обем. **Триъгълната серия проби** прави същото с три крайни глазури, подредени в триъгълник.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Когато някоя стъпка изглежда обещаващо, **Запиши като копие** на [страницата на рецептата](/recipe) я запазва като отделна рецепта и оставя оригинала непроменен.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Водене на записки {#records}
 

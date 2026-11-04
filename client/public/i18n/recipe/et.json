@@ -723,8 +723,7 @@
     "keyPoint": "Punkt: see glasuur.",
     "keyBright": "Punktiirjoon: kus Stulli glasuurid olid kõige läikivamad.",
     "keyLimits": "Katkendjooned ja varjutus: komplekti {name} ränidioksiidi ja alumiiniumoksiidi vahemikud.",
-    "keyCrazed": "Viirutus: kus need juuspragunesid.",
-    "note": "Juhend, mitte ennustus. R. T. Stull (Transactions of the American Ceramic Society, 1912) põletas koonuseni 11, sulandajad fikseeritud kujul 0,3 K₂O ja 0,7 CaO; muud sulandajad ja põletused nihutavad alasid ja alapõletatud matt glasuur võib joonistuda läikivana. Alad on sellised, nagu Glazy need joonistab."
+    "keyCrazed": "Viirutus: kus need juuspragunesid."
   },
   "slurry": {
     "heading": "Suhteline tihedus ja vesi",

@@ -213,50 +213,50 @@ Label: 目標比重に必要な水
 
 **ベントナイト**はとても細かい粘土で、ほかの粒子を懸濁させておくのを助けます。浸し掛け用の釉薬は、ふつうこのために15〜25%の生の粘土に頼っています。粘土の少ない調合には、約1〜3%のベントナイトが役立ちます。Digitalfire は、粘土が15%を超える釉薬には乾いた釉薬の重量の1%を超えるベントナイトは必要ないはずだとしています。
 
-## テストピースとラインブレンド {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### 少量から始める
+### Start small
 
-Derek Au は三段階で量を増やします。50 または 100 g のテスト、うまくいけば 1〜2 kg の試作、そして 5〜10 kg の工房用の仕込みです。私たちの目安では、{{SG 1.45}} で 100 g のテストを作ると約 135 mL（約 4½ US fl oz）の釉液{{en: slurry}}ができます。細いカップで小さなテストピース{{en: test tiles}}を数枚浸せる量です。
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### お使いの粘土でテストする
+### Test on your own clay
 
-釉薬は、別の粘土や別の窯ではかなり違って見えることがあります。Clay Art Center は、配合を見直した釉薬を一つずつ、四種類の素地{{en: clay bodies}}に掛けて、オルトンコーン 6 とコーン 10 でテストしました。Potclays の初心者向けの釉薬テストのガイドは、次のことを勧めています。
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 実際に使う粘土で作った**テストピース**（釉薬を試すための小片）6〜10枚。素焼きしたものか、完全乾燥のものかを記録しておく
-- 変えるのは一度に一つだけ
-- 一度掛けと二度掛けで、釉薬が薄いときと厚いときを見る
-- すべてのテストピースを同じ窯詰めで焼く
-- 焼成前に、スタンプ、彫り、または下絵鉛筆で各テストピースに印を付ける。
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-立てて置けるテストピースをおすすめします。平らなテストピースでは、釉薬がどこまで流れるかがわからないからです。縁で釉薬が薄くなって色が変わる様子を見るための凹凸のある帯と、釉薬を掛けない高台も付けてください。垂れた釉薬を受けるため、それぞれ小皿か素焼きのかけらの上に置くか、棚板用アルミナ塗料を塗った棚板に置いてください。テストピースの近くに**確認用コーン**{{en: witness cone}}を置くと、テストピースが受けた熱がわかります。確認用コーンは、十分な熱を受けると曲がる小さな陶製のコーンです。コーンについては、「[基本の窯焚き](/guides/firing)」のガイドで説明しています。各テストピースに短いコードを付け、記録の中で調合の横に書いてください。Ceramic Arts Network に寄稿している Willers は数字と文字を使い、その付け方自体をノートの最初に書いています。
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ラインブレンド
+### Line blends
 
-**ラインブレンド**{{en: line blend}}は、ある配合から別の配合へ等間隔で変えていく一列のテストです。ある釉薬から別の釉薬へ、あるいは基礎釉から、着色剤を増やした同じ釉薬へと変えていきます。たとえば Derek Au は、透明な基礎釉の中で酸化鉄を1%刻みで変えていきます。Ian Currie の名で知られる体積による方法では、両端の二つだけを混ぜればよいので、時間を省けます。
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. 両端の釉薬 A と B を同じ仕込み量で混ぜ、両方ともふるいに通してください。
-2. 体積の少ないほうに水を足して、両方の液量をちょうど同じにしてください。
-3. 両方をかき混ぜ、配合ごとに注射器で取って、番号を付けたカップにそれぞれ入れてください。
-4. カップごとにかき混ぜ、テストピースを浸してください。
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-私たちの計算例では、A は透明な基礎釉 100 g、B は同じものに第二酸化鉄（弁柄）4 g を加えたもの（外割で4%）です。同じ体積で比べると、B には A と同じ割合の基礎釉と、それに加えて鉄が入っているので、カップは鉄なしから4%まで、1%刻みで変わります。両端の釉薬はそれぞれ 100 mL をブレンドに使い、私たちの目安では 100 g の仕込みで足ります。
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: 五段階の鉄のラインブレンド、カップあたり 40 mL（私たちの計算例）
-Label: ラインブレンドの例
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| カップ | 透明な基礎釉 (A) | 鉄 4% 入りの基礎釉 (B) | 酸化鉄（外割%） |
-| ------ | ---------------: | ---------------------: | --------------: |
-| 1      |            40 mL |                   0 mL |               0 |
-| 2      |            30 mL |                  10 mL |               1 |
-| 3      |            20 mL |                  20 mL |               2 |
-| 4      |            10 mL |                  30 mL |               3 |
-| 5      |             0 mL |                  40 mL |               4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-この方法には、慎重な計算と、よく混ぜて比重をそろえた両端の釉薬、そして正確なはかりが必要です。Derek Au は、体積ではなく重さでブレンドすることもあります。**三角座標による調合試験**は、三つの端の釉薬で同じことを行い、テストを三角形に並べます。
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> よさそうな段階があれば、[調合ページ](/recipe)の **[コピーとして保存]** で別の調合として保存できます。元の調合はそのまま残ります。
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## 記録の付け方 {#records}
 

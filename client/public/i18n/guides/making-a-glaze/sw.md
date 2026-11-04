@@ -213,50 +213,50 @@ Label: Maji kwa uzito linganishi lengwa
 
 **Bentoniti**, udongo laini sana, husaidia kushikilia chembe nyingine zikiwa zimeelea. Glaze za kuchovya kwa kawaida hutegemea udongo ghafi wa 15 hadi 25% kwa kusudi hili. Kwa kichocheo kinachopungukiwa udongo, takriban 1 hadi 3% ya bentoniti husaidia; Digitalfire inasema glaze yenye udongo zaidi ya 15% haipaswi kuhitaji bentoniti kwa zaidi ya 1% ya uzito wa glaze kavu.
 
-## Vigae vya majaribio na line blend {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Anza kidogo
+### Start small
 
-Derek Au hupanda kwa hatua tatu: jaribio la 50 au 100 g, jaribio la 1 hadi 2 kg likifaulu, kisha kundi la karakana la 5 hadi 10 kg. Kwa makadirio yetu, jaribio la 100 g lenye {{SG 1.45}} hutoa takriban 135 mL (takriban 4½ US fl oz) za tope, za kutosha kuchovya vigae vichache vidogo kwenye kikombe chembamba.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Jaribu kwenye udongo wako mwenyewe
+### Test on your own clay
 
-Glaze inaweza kuonekana tofauti kabisa kwenye udongo mwingine au tanuru nyingine: Clay Art Center ilijaribu kila glaze yake iliyorekebishwa kwenye mchanganyiko wa udongo minne, kwenye koni 6 na koni 10. Mwongozo wa Potclays wa mwanzoni wa kujaribu glaze unapendekeza:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- **vigae vya majaribio** 6 hadi 10 (vipande vidogo vya kujaribia glaze) vya udongo utakaoutumia kweli, ukibainisha kama vimechomwa bisque au vimekauka kabisa
-- badiliko moja kwa wakati
-- kuchovya mara moja na kuchovya mara mbili, ili kuona glaze nyembamba na nene
-- kila kigae kwenye mzigo uleule wa tanuru
-- alama kwenye kila kigae kabla ya kuchoma, kwa muhuri, kuchonga au penseli ya underglaze.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Tunapendekeza vigae vinavyosimama wima, kwa kuwa kigae bapa huficha glaze inakimbia umbali gani, vyenye ukanda wenye umbile ili kuonyesha glaze inavyokatika kwenye kingo, na mguu usio na glaze. Viweke kila kimoja juu ya sahani ndogo au kipande cha bisque, au juu ya rafu iliyopakwa kiln wash, ili kunasa matone. Weka **koni shahidi (witness cone)**, koni ndogo ya kauri inayopinda ikishapata joto la kutosha, karibu na vigae ili kuonyesha vilipata nini; [mwongozo wa Kuchoma katika tanuru rahisi](/guides/firing) unaeleza koni. Kipe kila kigae msimbo mfupi, na uuandike kando ya kichocheo kwenye kumbukumbu zako. Willers, akiandikia Ceramic Arts Network, hutumia nambari na herufi, na huandika mfumo wenyewe mwanzoni mwa daftari.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Line blend
+### Line blends
 
-**Line blend** ni safu ya majaribio inayopanda sawasawa kutoka mchanganyiko mmoja hadi mwingine: kutoka glaze moja hadi ya pili, au kutoka glaze ya msingi hadi glaze hiyohiyo yenye kitia rangi zaidi. Derek Au, kwa mfano, huongeza oksidi ya chuma kwa hatua za 1% ndani ya msingi safi. Njia ya ujazo inayohusishwa na Ian Currie huokoa muda, kwa kuwa unachanganya ncha mbili tu:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Changanya glaze mbili za ncha, A na B, kama makundi ya ukubwa mmoja, na uchuje zote mbili.
-2. Ongeza maji kwenye ile yenye ujazo mdogo hadi zote mbili ziwe na ujazo wa unyevu unaofanana kabisa.
-3. Koroga zote mbili, kisha vuta kila mchanganyiko kwa sirinji ndani ya kikombe chake chenye nambari.
-4. Koroga kila kikombe na uchovye kigae.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Katika mfano wetu uliofanyiwa kazi, A ni 100 g za msingi safi, na B ni ileile ikiwa na 4 g za oksidi nyekundu ya chuma zilizoongezwa (nyongeza ya 4%). Kila mililita ya B ina sehemu ileile ya msingi kama mililita ya A, pamoja na chuma chake, kwa hiyo vikombe vinapanda kutoka bila chuma hadi 4% kwa hatua za 1%. Kila ncha hutoa 100 mL kwa mchanganyiko, ambazo kundi la 100 g hufunika kwa makadirio yetu.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Line blend ya chuma ya hatua tano, 40 mL kwa kikombe (mfano wetu uliofanyiwa kazi)
-Label: Mfano wa line blend
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Kikombe | Msingi safi (A) | Msingi wenye chuma 4% (B) | Oksidi ya chuma, % ya msingi |
-| ------- | --------------: | ------------------------: | ---------------------------: |
-| 1       |           40 mL |                      0 mL |                            0 |
-| 2       |           30 mL |                     10 mL |                            1 |
-| 3       |           20 mL |                     20 mL |                            2 |
-| 4       |           10 mL |                     30 mL |                            3 |
-| 5       |            0 mL |                     40 mL |                            4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Njia hii inahitaji hesabu makini, ncha zilizochanganywa vizuri zenye SG sawa, na mizani sahihi. Derek Au pia huchanganya kwa uzito badala ya ujazo. **Triaxial blend** hufanya vivyo hivyo kwa ncha tatu, zilizopangwa kwenye pembetatu.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Hatua inapoonekana kuleta matumaini, **Hifadhi kama nakala** kwenye [ukurasa wa kichocheo](/recipe) huihifadhi kama kichocheo chake chenyewe na kuiacha ya awali kama ilivyokuwa.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Kuweka kumbukumbu {#records}
 

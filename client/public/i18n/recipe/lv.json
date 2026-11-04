@@ -723,8 +723,7 @@
     "keyPoint": "Punkts: šī glazūra.",
     "keyBright": "Punktēta līnija: kur Stala glazūras bija visspīdīgākās.",
     "keyLimits": "Raustītas līnijas un ēnojums: robežvērtību kopas {name} silīcija dioksīda un alumīnija oksīda diapazoni.",
-    "keyCrazed": "Svītrojums: kur tās ieguva matplaisas.",
-    "note": "Orientieris, nevis prognoze. R. T. Stals (R. T. Stull; Transactions of the American Ceramic Society, 1912) apdedzināja pie konusa 11, kušņus fiksējot pie 0,3 K₂O un 0,7 CaO; citi kušņi un apdedzināšanas režīmi apgabalus pārbīda, un nepietiekami apdedzināta matēta glazūra var tikt attēlota kā spīdīga. Apgabali ir tādi, kādus tos zīmē Glazy."
+    "keyCrazed": "Svītrojums: kur tās ieguva matplaisas."
   },
   "slurry": {
     "heading": "Relatīvais blīvums un ūdens",

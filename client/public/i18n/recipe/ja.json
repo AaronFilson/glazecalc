@@ -723,8 +723,7 @@
     "keyPoint": "点: この釉薬。",
     "keyBright": "点線: Stull の釉薬が最も光沢のあった所。",
     "keyLimits": "破線と影: {name} のシリカとアルミナの範囲。",
-    "keyCrazed": "斜線: 貫入が出た所。",
-    "note": "目安であり、予測ではありません。R. T. Stull（Transactions of the American Ceramic Society、1912年）は、媒溶剤を 0.3 K₂O と 0.7 CaO に固定して、オルトンコーン 11 で焼成しました。ほかの媒溶剤や焼成では領域が動き、焼成不足のマットが光沢のように表示されることもあります。領域は Glazy の描き方に従っています。"
+    "keyCrazed": "斜線: 貫入が出た所。"
   },
   "slurry": {
     "heading": "比重と水",

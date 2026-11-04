@@ -213,50 +213,50 @@ Label: ہدف کثافت اضافی کے لیے پانی
 
 **بینٹونائٹ**، ایک بہت باریک مٹی، دوسرے ذرات کو معلق رکھنے میں مدد دیتی ہے۔ ڈبونے والے گلیز عام طور پر اس کے لیے 15 سے 25% کچی مٹی پر انحصار کرتے ہیں۔ جس ریسیپی میں مٹی کم ہو، اس کے لیے تقریباً 1 سے 3% بینٹونائٹ مدد دیتا ہے؛ Digitalfire کہتا ہے کہ جس گلیز میں 15% سے زیادہ مٹی ہو اسے خشک گلیز کے وزن کے 1% سے زیادہ بینٹونائٹ کی ضرورت نہیں ہونی چاہیے۔
 
-## ٹیسٹ ٹائلیں اور لائن بلینڈ {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### چھوٹے سے شروع کریں
+### Start small
 
-Derek Au تین مرحلوں میں آگے بڑھتے ہیں: 50 یا 100 g کا ٹیسٹ، اگر کام کرے تو 1 سے 2 kg کی آزمائش، پھر 5 سے 10 kg کا اسٹوڈیو بیچ۔ ہمارے اندازے کے مطابق، {{SG 1.45}} پر 100 g کا ٹیسٹ تقریباً 135 mL (تقریباً 4½ US fl oz) گھول بناتا ہے، جو ایک تنگ پیالے میں چند چھوٹی ٹائلیں ڈبونے کے لیے کافی ہے۔
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### اپنی مٹی پر جانچیں
+### Test on your own clay
 
-ایک گلیز دوسری مٹی پر یا دوسری بھٹی میں کافی مختلف نظر آ سکتا ہے: Clay Art Center نے اپنے ہر دوبارہ بنائے گلیز کو چار مٹی کے مرکبوں پر، مخروط 6 اور مخروط 10 پر جانچا۔ Potclays کی گلیز ٹیسٹنگ کے لیے مبتدیوں کے لیے گائیڈ یہ مشورہ دیتا ہے:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- اس مٹی کی 6 سے 10 **ٹیسٹ ٹائلیں** (گلیز آزمانے کے لیے چھوٹے ٹکڑے) جو آپ واقعی استعمال کریں گے، یہ لکھتے ہوئے کہ وہ بسکٹ کی ہوئی ہیں یا بالکل خشک
-- ایک وقت میں ایک تبدیلی
-- ایک بار ڈبونا اور دو بار ڈبونا، تاکہ گلیز پتلا اور موٹا دیکھا جا سکے
-- ہر ٹائل ایک ہی بھٹی کے لوڈ میں
-- پکائی سے پہلے ہر ٹائل پر مہر، کھدائی یا انڈر گلیز پنسل سے ایک نشان۔
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-ہمارا مشورہ ہے کہ ٹائلیں کھڑی ہونے والی ہوں، کیونکہ چپٹی ٹائل چھپا دیتی ہے کہ گلیز کتنا بہا، اس کے ساتھ ایک کھردری پٹی ہو جو دکھائے کہ گلیز کناروں پر کیسے ٹوٹتا ہے، اور ایک ننگا پیندا۔ ہر ایک کو ایک چھوٹی طشتری یا بسکٹ کے ٹکڑے پر، یا بھٹی واش لگی شیلف پر رکھیں، تاکہ ٹپکنے والا گلیز اس میں گرے۔ ٹائلوں کے قریب ایک **گواہ مخروط**، ایک چھوٹا سرامک مخروط جو کافی حرارت ملنے پر جھک جاتا ہے، رکھیں تاکہ ان کو ملنے والی حرارت معلوم ہو؛ [ایک سادہ بھٹی کی پکائی](/guides/firing) گائیڈ مخروطوں کی وضاحت کرتا ہے۔ ہر ٹائل کو ایک مختصر کوڈ دیں، اور اپنے ریکارڈ میں اسے ریسیپی کے ساتھ لکھیں۔ Ceramic Arts Network کے لیے لکھتے ہوئے Willers نمبر اور حروف استعمال کرتے ہیں، اور نظام خود نوٹ بک کے شروع میں لکھتے ہیں۔
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### لائن بلینڈ
+### Line blends
 
-**لائن بلینڈ** ٹیسٹوں کی ایک قطار ہے جو ایک آمیزے سے دوسرے تک برابر قدموں میں بڑھتی ہے: ایک گلیز سے دوسرے تک، یا کسی بنیادی گلیز سے اسی گلیز تک جس میں رنگ دینے والا آکسائیڈ زیادہ ہو۔ مثال کے طور پر، Derek Au ایک شفاف بنیاد میں آئرن آکسائیڈ کو 1% کے اضافوں میں بڑھاتے ہیں۔ Ian Currie سے منسوب ایک حجمی طریقہ وقت بچاتا ہے، کیونکہ آپ صرف دونوں سرے ملاتے ہیں:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. دونوں سرے کے گلیز، A اور B، ایک ہی سائز کے بیچوں کے طور پر ملائیں، اور دونوں چھانیں۔
-2. جس کا حجم کم ہو اس میں پانی ڈالیں جب تک دونوں کا گیلا حجم بالکل ایک سا نہ ہو جائے۔
-3. دونوں کو ہلائیں، پھر ہر آمیزے کو سرنج سے اس کے اپنے نمبر والے پیالے میں کھینچیں۔
-4. ہر پیالے کو ہلائیں اور ایک ٹائل ڈبوئیں۔
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-ہماری حل شدہ مثال میں، A شفاف بنیاد کا 100 g ہے، اور B وہی ہے جس میں 4 g سرخ آئرن آکسائیڈ ملایا گیا ہے (4% کا اضافہ)۔ B کے ہر ملی لیٹر میں بنیاد کا وہی حصہ ہے جو A کے ایک ملی لیٹر میں ہے، اس کے ساتھ اس کا آئرن، اس لیے پیالے بغیر آئرن سے 4% تک 1% کے قدموں میں بڑھتے ہیں۔ ہر سرا بلینڈ کو 100 mL دیتا ہے، جسے ہمارے اندازے سے 100 g کا بیچ پورا کرتا ہے۔
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: پانچ مرحلوں کا آئرن لائن بلینڈ، ہر پیالے میں 40 mL (ہماری حل شدہ مثال)
-Label: لائن بلینڈ کی مثال
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| پیالہ | شفاف بنیاد (A) | 4% آئرن والی بنیاد (B) | آئرن آکسائیڈ، بنیاد کا % |
-| ----- | -------------: | ---------------------: | -----------------------: |
-| 1     |          40 mL |                   0 mL |                        0 |
-| 2     |          30 mL |                  10 mL |                        1 |
-| 3     |          20 mL |                  20 mL |                        2 |
-| 4     |          10 mL |                  30 mL |                        3 |
-| 5     |           0 mL |                  40 mL |                        4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-اس طریقے میں احتیاط سے حساب، اچھی طرح ملے ہوئے یکساں کثافت اضافی والے سرے، اور ایک درست ترازو چاہیے۔ Derek Au حجم کے بجائے وزن سے بھی بلینڈ کرتے ہیں۔ **تین محوری بلینڈ** یہی کام تین سروں کے ساتھ کرتا ہے، جو ایک تکون پر ترتیب دیے جاتے ہیں۔
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> جب کوئی مرحلہ امید افزا لگے، تو [ریسیپی کے صفحے](/recipe) پر “**کاپی کے طور پر محفوظ کریں**” اسے اپنی الگ ریسیپی کے طور پر رکھ لیتا ہے اور اصل کو جیسا تھا ویسا چھوڑ دیتا ہے۔
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## ریکارڈ رکھنا {#records}
 

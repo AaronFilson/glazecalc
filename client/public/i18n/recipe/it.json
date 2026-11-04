@@ -723,8 +723,7 @@
     "keyPoint": "Punto: questo smalto.",
     "keyBright": "Linea punteggiata: dove gli smalti di Stull erano più lucidi.",
     "keyLimits": "Linee tratteggiate e ombreggiatura: gli intervalli di silice e allumina di {name}.",
-    "keyCrazed": "Tratteggio incrociato: dove cavillavano.",
-    "note": "Una guida, non una previsione. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuoceva al cono 11 con i fondenti fissati a 0,3 K₂O e 0,7 CaO; altri fondenti e altre cotture spostano le regioni, e un opaco sottocotto può risultare lucido. Le regioni sono quelle che disegna Glazy."
+    "keyCrazed": "Tratteggio incrociato: dove cavillavano."
   },
   "slurry": {
     "heading": "Peso specifico e acqua",

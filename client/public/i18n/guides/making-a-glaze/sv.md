@@ -213,50 +213,50 @@ Label: Vatten för en viss specifik vikt
 
 **Bentonit**, en mycket finkornig lera, hjälper till att hålla de andra partiklarna svävande. Doppglasyrer brukar förlita sig på 15 till 25 % obränd lera för detta. För ett recept med för lite lera hjälper ungefär 1 till 3 % bentonit; Digitalfire säger att en glasyr med mer än 15 % lera inte bör behöva bentonit till mer än 1 % av den torra glasyrens vikt.
 
-## Provbitar och provserier {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Börja i liten skala
+### Start small
 
-Derek Au arbetar sig uppåt i tre steg: ett test på 50 eller 100 g, en provsats på 1 till 2 kg om det fungerar, och sedan en verkstadssats på 5 till 10 kg. Enligt vår uppskattning ger ett test på 100 g med {{SG 1.45}} ungefär 135 mL (ungefär 4½ US fl oz) glasyrslam{{en: slurry}}, nog för att doppa några små provbitar{{en: test tiles}} i en smal mugg.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Testa på den egna leran
+### Test on your own clay
 
-En glasyr{{en: glaze}} kan se helt annorlunda ut på en annan lera eller i en annan ugn: Clay Art Center testade var och en av sina omarbetade glasyrer på fyra lermassor{{en: clay bodies}}, vid kägla{{en: cone}} 6 och vid kägla 10. Potclays nybörjarguide till glasyrtester föreslår:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 till 10 **provbitar** (små bitar för att prova en glasyr) av den lera som faktiskt ska användas, med en anteckning om de är skröjade{{en: bisqued}} eller helt torra
-- en ändring i taget
-- doppning en gång och två gånger, för att se glasyren i tunt och tjockt lager
-- alla provbitar i samma ugnsfyllning
-- en markering på varje provbit före bränningen, med stämpel, ristning eller underglasyrpenna.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Vi föreslår provbitar som står upprätt, eftersom en platt provbit döljer hur långt en glasyr rinner, med ett band med struktur som visar hur glasyren tunnas ut och skiftar färg över kanter, och en oglaserad fot. Ställ varje provbit på ett litet fat, en skröjad lerbit eller plattengobe som fångar droppar. Ställ en **kontrollkägla**{{en: witness cone}}, en liten keramisk kägla som böjer sig när den har fått tillräckligt med värme, nära provbitarna för att visa hur mycket värme de har fått; [Bränna i en enkel keramikugn](/guides/firing) förklarar käglor. Ge varje provbit en kort kod och skriv den bredvid receptet i anteckningarna. Willers, som skriver för Ceramic Arts Network, använder siffror och bokstäver och skriver själva systemet längst fram i anteckningsboken.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Provserier
+### Line blends
 
-En **provserie**{{en: line blend}} är en rad tester som går i jämna steg från en blandning till en annan: från en glasyr till en annan, eller från en basglasyr till samma glasyr med mer färgmedel{{en: colorant}}. Derek Au låter till exempel järnoxid öka i en transparent bas i steg om 1 %. En volymmetod som förknippas med Ian Currie sparar tid, eftersom bara de två ändarna behöver blandas:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Blanda de två ändglasyrerna, A och B, som lika stora satser och sikta båda.
-2. Tillsätt vatten i den som har minst volym tills båda har exakt samma våta volym.
-3. Rör om i båda och mät sedan upp varje blandning med en spruta i en egen numrerad mugg.
-4. Rör om i varje mugg och doppa en provbit.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-I vårt räkneexempel är A 100 g av en transparent bas, och B är samma bas med 4 g röd järnoxid tillsatt (en tillsats på 4 %). Varje milliliter av B innehåller samma andel bas som en milliliter av A, plus sitt järn, så muggarna går från inget järn till 4 % i steg om 1 %. Varje ända bidrar med 100 mL till serien, vilket en sats på 100 g räcker till enligt vår uppskattning.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: En provserie med järn i fem steg, 40 mL per mugg (vårt räkneexempel)
-Label: Exempel på provserie
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Mugg | Transparent bas (A) | Bas med 4 % järn (B) | Järnoxid, % av basen |
-| ---- | ------------------: | -------------------: | -------------------: |
-| 1    |               40 mL |                 0 mL |                    0 |
-| 2    |               30 mL |                10 mL |                    1 |
-| 3    |               20 mL |                20 mL |                    2 |
-| 4    |               10 mL |                30 mL |                    3 |
-| 5    |                0 mL |                40 mL |                    4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metoden kräver noggranna uträkningar, välblandade ändar med jämn specifik vikt och en noggrann våg. Derek Au blandar också efter vikt i stället för volym. En **triaxialblandning** gör samma sak med tre ändar, utlagda i en triangel.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> När ett steg ser lovande ut sparar **Spara som kopia** på [receptsidan](/recipe) det som ett eget recept och lämnar originalet som det var.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Föra anteckningar {#records}
 

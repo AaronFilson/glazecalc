@@ -213,50 +213,50 @@ Label: الماء اللازم لكثافة نسبية مستهدفة
 
 يساعد **البنتونيت**، وهو طين ناعم جداً، على إبقاء الجسيمات الأخرى معلَّقة. وتعتمد طلاءات الغمس عادةً على 15 إلى 25% من الطين الخام لهذا الغرض. وللخلطة الفقيرة بالطين، يساعد نحو 1 إلى 3% من البنتونيت؛ ويقول Digitalfire إن الطلاء الذي فيه أكثر من 15% من الطين لا ينبغي أن يحتاج إلى بنتونيت بأكثر من 1% من وزن الطلاء الجاف.
 
-## بلاطات الاختبار وسلاسل الخلط الخطية {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### البدء صغيراً
+### Start small
 
-يتدرج ديريك آو في ثلاث خطوات: اختبار من 50 أو 100 g، ثم تجربة من 1 إلى 2 kg إن نجح، ثم دفعة للاستوديو من 5 إلى 10 kg. وبتقديرنا، يعطي اختبار من 100 g عند {{SG 1.45}} نحو 135 mL (نحو 4½ US fl oz) من الطلاء السائل، وهو ما يكفي لغمس بضع بلاطات صغيرة في كوب ضيق.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### الاختبار على الطين المستخدم
+### Test on your own clay
 
-قد يبدو الطلاء مختلفاً كثيراً على طين آخر أو في فرن آخر: فقد اختبر Clay Art Center كل طلاء أعاد صياغته على أربعة أجسام طينية{{en: clay body}}، عند المخروط{{en: cone}} 6 وعند المخروط 10. وتقترح إرشادات Potclays للمبتدئين في اختبار الطلاء:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- من 6 إلى 10 **بلاطات اختبار**{{en: test tile}} (قطع صغيرة لتجربة الطلاء) من الطين الذي سيُستخدم فعلاً، مع تدوين ما إذا كانت قطع بسكويت{{en: bisque}} أم جافة تماماً
-- تغيير واحد في كل مرة
-- غمسة مفردة وغمسة مزدوجة، لرؤية الطلاء رقيقاً وسميكاً
-- كل البلاطات في شحنة الفرن نفسها
-- علامة على كل بلاطة قبل الحرق، بختم أو حفر أو قلم ألوان تحت الطلاء.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-نقترح بلاطات تقف عمودية، لأن البلاطة المسطحة تخفي مدى سيلان الطلاء، مع شريط ذي ملمس بارز يبيّن تغيّر اللون عند الحواف (breaks)، وقاعدة غير مطلية. وتوضع كل بلاطة على صحن صغير أو قطعة بسكويت مكسورة، أو على رف مطلي بطلاء الأرفف الواقي (kiln wash)، لالتقاط القطرات. ويوضع **مخروط شاهد**{{en: witness cone}}، وهو مخروط خزفي صغير ينحني حين يتلقى ما يكفي من الحرارة، قرب البلاطات ليبيّن ما تلقته؛ ويشرح دليل [الحرق في فرن بسيط](/guides/firing) المخاريط. ويُعطى لكل بلاطة رمز قصير، ويُكتب أمام الخلطة في السجلات. ويستخدم ويلرز (Willers)، في مقال على موقع Ceramic Arts Network، أرقاماً وحروفاً، ويكتب النظام نفسه في مقدمة الدفتر.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### سلاسل الخلط الخطية
+### Line blends
 
-**سلسلة الخلط الخطية**{{en: line blend}} صف من الاختبارات يتدرج بانتظام من خليط إلى آخر: من طلاء إلى طلاء ثانٍ، أو من طلاء أساسي إلى الطلاء نفسه مع مزيد من الملوِّن. فديريك آو، مثلاً، يتدرج بأكسيد الحديد في أساس شفاف بخطوات قدرها 1%. وتوفر طريقة حجمية تُنسب إلى إيان كوري (Ian Currie) الوقت، لأنه لا يُخلط فيها إلا الطرفان:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. خلط طلاءي الطرفين، A و B، في دفعتين متساويتين، ونخلهما كليهما.
-2. إضافة الماء إلى الأقل حجماً منهما حتى يتساوى حجماهما الرطبان تماماً.
-3. تقليب كليهما، ثم سحب كل خليط بمحقنة إلى كوب مرقَّم خاص به.
-4. تقليب كل كوب وغمس بلاطة فيه.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-في مثالنا المحسوب، A هو 100 g من أساس شفاف، و B هو الشيء نفسه مع إضافة 4 g من أكسيد الحديد الأحمر (إضافة بنسبة 4%). وكل مليلتر من B يحمل الحصة نفسها من الأساس التي يحملها مليلتر من A، إضافة إلى حديده، فتتدرج الأكواب من دون حديد إلى 4% بخطوات قدرها 1%. ويعطي كل طرف 100 mL للسلسلة، وهو ما تكفيه دفعة من 100 g بتقديرنا.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: سلسلة خلط خطية للحديد من خمس خطوات، 40 mL لكل كوب (مثالنا المحسوب)
-Label: مثال سلسلة الخلط الخطية
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| الكوب | الأساس الشفاف (A) | الأساس مع 4% حديد (B) | أكسيد الحديد، % من الأساس |
-| ----- | ----------------: | --------------------: | ------------------------: |
-| 1     |             40 mL |                  0 mL |                         0 |
-| 2     |             30 mL |                 10 mL |                         1 |
-| 3     |             20 mL |                 20 mL |                         2 |
-| 4     |             10 mL |                 30 mL |                         3 |
-| 5     |              0 mL |                 40 mL |                         4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-تحتاج الطريقة إلى حساب دقيق، وطرفين جيدَي الخلط متساويين في الكثافة النسبية، وميزان دقيق. ويخلط ديريك آو أيضاً بالوزن بدلاً من الحجم. و**الخلط الثلاثي** (triaxial) يفعل الشيء نفسه بثلاثة أطراف، موزعة على مثلث.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> حين تبدو خطوة واعدة، تحفظها ميزة **«حفظ كنسخة»** في [صفحة الخلطة](/recipe) خلطةً مستقلة، وتُبقي الأصلية كما كانت.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## حفظ السجلات {#records}
 

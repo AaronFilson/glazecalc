@@ -213,50 +213,50 @@ Label: Apa pentru o greutate specifică țintă
 
 **Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–3 % bentonită; Digitalfire spune că o glazură cu peste 15 % argilă nu ar trebui să aibă nevoie de bentonită în proporție de peste 1 % din greutatea glazurii uscate.
 
-## Plăcuțe de test și serii de teste {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Începeți cu cantități mici
+### Start small
 
-Derek Au crește cantitatea în trei pași: un test de 50 sau 100 g, o probă de 1–2 kg dacă testul iese bine, apoi un amestec de atelier de 5–10 kg. După estimarea noastră, un test de 100 g cu {{SG 1.45}} dă aproximativ 135 mL (aproximativ 4½ US fl oz) de glazură preparată{{en: slurry}}, suficient pentru a scufunda câteva plăcuțe mici într-un pahar îngust.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Testați pe argila dumneavoastră
+### Test on your own clay
 
-O glazură{{en: glaze}} poate arăta destul de diferit pe altă argilă sau în alt cuptor: Clay Art Center a testat fiecare dintre glazurile sale reformulate pe patru paste ceramice{{en: clay bodies}}, la conul{{en: cone}} 6 și la conul 10. Ghidul pentru începători al Potclays despre testarea glazurilor sugerează:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **plăcuțe de test**{{en: test tiles}} (piese mici pe care se încearcă o glazură) din argila pe care o veți folosi efectiv, notând dacă sunt biscuitate{{en: bisqued}} sau complet uscate
-- o singură modificare o dată
-- o imersie și două imersii, ca să vedeți glazura în strat subțire și în strat gros
-- toate plăcuțele în aceeași încărcătură a cuptorului
-- un semn pe fiecare plăcuță înainte de ardere, cu o ștampilă, prin incizare sau cu un creion underglaze.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Vă sugerăm plăcuțe care stau în picioare, pentru că o plăcuță culcată ascunde cât de mult curge o glazură, cu o bandă texturată care să arate cum se deschide la culoare glazura pe muchii, și cu piciorul neglazurat. Așezați fiecare plăcuță pe o farfurioară sau pe o bucată de biscuit ori pe o placă de cuptor acoperită cu strat protector (kiln wash), ca să prindă picăturile. Puneți lângă plăcuțe un **con martor**{{en: witness cone}}, un con ceramic mic care se îndoaie când a primit destulă căldură, ca să arate cât au primit plăcuțele; ghidul [Arderea într-un cuptor simplu](/guides/firing) explică conurile. Dați fiecărei plăcuțe un cod scurt și notați-l lângă rețetă în evidența dumneavoastră. Willers, într-un articol pentru Ceramic Arts Network, folosește cifre și litere și notează sistemul însuși la începutul caietului.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Serii de teste
+### Line blends
 
-O **serie de teste**{{en: line blend}} este un șir de teste care trece în pași egali de la un amestec la altul: de la o glazură la alta sau de la o glazură de bază la aceeași glazură cu mai mult colorant{{en: colorant}}. Derek Au, de exemplu, crește oxidul de fier într-o glazură de bază transparentă în pași de 1 %. O metodă volumetrică asociată cu Ian Currie economisește timp, pentru că amestecați doar cele două capete:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Preparați cele două glazuri de la capete, A și B, în cantități egale, și cerneți-le pe amândouă.
-2. Adăugați apă în cea cu volumul mai mic până când amândouă au exact același volum în stare umedă.
-3. Amestecați-le pe amândouă, apoi trageți cu seringa fiecare amestec în paharul lui numerotat.
-4. Amestecați în fiecare pahar și scufundați câte o plăcuță.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-În exemplul nostru, A înseamnă 100 g de glazură de bază transparentă, iar B este aceeași, cu 4 g de oxid roșu de fier adăugat (un adaos de 4 %). Fiecare mililitru din B conține aceeași proporție de glazură de bază ca un mililitru din A, plus fierul, așa că paharele trec de la lipsa fierului la 4 %, în pași de 1 %. Fiecare capăt dă seriei 100 mL, cantitate pe care, după estimarea noastră, o asigură un amestec de 100 g.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: O serie de teste cu fier în cinci pași, 40 mL pe pahar (exemplul nostru)
-Label: Exemplu de serie de teste
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Pahar | Bază transparentă (A) | Bază cu 4 % fier (B) | Oxid de fier, % din glazura de bază |
-| ----- | --------------------: | -------------------: | ----------------------------------: |
-| 1     |                 40 mL |                 0 mL |                                   0 |
-| 2     |                 30 mL |                10 mL |                                   1 |
-| 3     |                 20 mL |                20 mL |                                   2 |
-| 4     |                 10 mL |                30 mL |                                   3 |
-| 5     |                  0 mL |                40 mL |                                   4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metoda cere calcule atente, capete bine amestecate, cu aceeași greutate specifică{{en: specific gravity}}, și un cântar precis. Derek Au amestecă și după masă, în loc de volum. Un **amestec triaxial** face același lucru cu trei capete, așezate pe un triunghi.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Când un pas pare promițător, **Salvați o copie** pe [pagina rețetei](/recipe) îl păstrează ca rețetă separată și lasă originalul neschimbat.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Ținerea evidenței {#records}
 

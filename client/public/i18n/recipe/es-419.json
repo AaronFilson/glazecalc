@@ -723,8 +723,7 @@
     "keyPoint": "Punto: este esmalte.",
     "keyBright": "Línea punteada: donde los esmaltes de Stull fueron más brillantes.",
     "keyLimits": "Líneas discontinuas y sombreado: los intervalos de sílice y alúmina de {name}.",
-    "keyCrazed": "Rayado: donde se cuartearon.",
-    "note": "Una guía, no una predicción. R. T. Stull (Transactions of the American Ceramic Society, 1912) coció a cono 11 con los fundentes fijos en 0.3 K₂O y 0.7 CaO; otros fundentes y otras cocciones desplazan las regiones, y un mate poco cocido puede aparecer como brillante. Las regiones son como las dibuja Glazy."
+    "keyCrazed": "Rayado: donde se cuartearon."
   },
   "slurry": {
     "heading": "Gravedad específica y agua",

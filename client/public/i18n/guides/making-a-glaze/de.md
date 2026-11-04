@@ -213,50 +213,50 @@ Label: Wasser für ein spezifisches Gewicht
 
 **Bentonit**, ein sehr feiner Ton, hilft, die übrigen Teilchen in der Schwebe zu halten. Tauchglasuren verlassen sich dafür meist auf 15 bis 25 % rohen Ton. Bei einem Rezept mit wenig Ton helfen etwa 1 bis 3 % Bentonit; laut Digitalfire sollte eine Glasur mit mehr als 15 % Ton nicht mehr als 1 % Bentonit vom Gewicht der trockenen Glasur brauchen.
 
-## Probeplättchen und Testreihen {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Klein anfangen
+### Start small
 
-Derek Au arbeitet sich in drei Schritten hoch: ein Test mit 50 oder 100 g, bei Erfolg ein Versuch mit 1 bis 2 kg, dann ein Werkstattansatz mit 5 bis 10 kg. Nach unserer Schätzung ergibt ein Test mit 100 g bei {{SG 1.45}} etwa 135 mL (etwa 4½ US fl oz) Glasurschlicker{{en: slurry}}, genug, um in einem schmalen Becher ein paar kleine Plättchen zu tauchen.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Auf der eigenen Tonmasse testen
+### Test on your own clay
 
-Eine Glasur{{en: glaze}} kann auf einem anderen Ton oder in einem anderen Ofen ganz anders aussehen: Clay Art Center testete jede seiner neu formulierten Glasuren auf vier Tonmassen{{en: clay bodies}}, auf Kegel{{en: cone}} 6 und auf Kegel 10 gebrannt. Der Einsteigerleitfaden von Potclays zum Testen von Glasuren empfiehlt:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 bis 10 **Probeplättchen**{{en: test tiles}} (kleine Stücke zum Ausprobieren einer Glasur) aus der Tonmasse, die Sie tatsächlich verwenden, mit dem Vermerk, ob sie geschrüht{{en: bisqued}} oder knochentrocken sind
-- jeweils nur eine Änderung
-- einmal und zweimal getaucht, um die Glasur dünn und dick zu sehen
-- alle Plättchen im selben Brand
-- eine Markierung auf jedem Plättchen vor dem Brand, mit Stempel, Ritzung oder Unterglasurstift.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Wir empfehlen stehende Plättchen (ein flaches Plättchen verbirgt, wie weit eine Glasur abläuft) mit einem strukturierten Streifen, der zeigt, wie kantenflüchtig die Glasur ist, und einem unglasierten Fuß. Stellen Sie jedes auf ein Schälchen, eine Scherbe Schrühware oder auf Trennmittel, damit Tropfen aufgefangen werden. Stellen Sie einen **Messkegel**{{en: witness cone}}, einen kleinen keramischen Kegel, der sich biegt, wenn er genug Hitze bekommen hat, neben die Plättchen, um zu zeigen, was sie abbekommen haben; die Anleitung [Brennen mit einem einfachen Ofen](/guides/firing) erklärt die Kegel. Geben Sie jedem Plättchen einen kurzen Code und notieren Sie ihn in Ihren Aufzeichnungen neben dem Rezept. Willers verwendet in einem Beitrag für Ceramic Arts Network Zahlen und Buchstaben und schreibt das System selbst vorne ins Notizbuch.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Testreihen
+### Line blends
 
-Eine **Testreihe**{{en: line blend}} ist eine Reihe von Tests, die gleichmäßig von einer Mischung zur anderen übergeht: von einer Glasur zu einer zweiten oder von einer Grundglasur zur selben Glasur mit mehr Färbemittel{{en: colorant}}. Derek Au zum Beispiel steigert Eisenoxid in einer transparenten Grundglasur in Schritten von 1 %. Eine Methode nach Volumen, die mit Ian Currie in Verbindung gebracht wird, spart Zeit, weil Sie nur die beiden Enden anrühren:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Rühren Sie die beiden Endglasuren A und B als gleich große Ansätze an und sieben Sie beide.
-2. Geben Sie zu der Glasur mit dem geringeren Volumen Wasser, bis beide genau dasselbe Nassvolumen haben.
-3. Rühren Sie beide um und füllen Sie dann jede Mischung mit einer Spritze in einen eigenen nummerierten Becher ab.
-4. Rühren Sie jeden Becher um und tauchen Sie ein Plättchen.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-In unserem Rechenbeispiel besteht A aus 100 g einer transparenten Grundglasur und B aus derselben mit 4 g Eisenoxid rot dazu (ein Zusatz von 4 %). Jeder Milliliter B enthält denselben Anteil Grundglasur wie ein Milliliter A, dazu sein Eisen; die Becher steigen also in Schritten von 1 % von keinem Eisen bis 4 %. Jedes Ende gibt 100 mL in die Reihe, was ein Ansatz von 100 g nach unserer Schätzung abdeckt.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Eine Eisen-Testreihe in fünf Schritten, 40 mL pro Becher (unser Rechenbeispiel)
-Label: Beispiel einer Testreihe
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Becher | Transparente Grundglasur (A) | Grundglasur mit 4 % Eisen (B) | Eisenoxid, % der Grundglasur |
-| ------ | ---------------------------: | ----------------------------: | ---------------------------: |
-| 1      |                        40 mL |                          0 mL |                            0 |
-| 2      |                        30 mL |                         10 mL |                            1 |
-| 3      |                        20 mL |                         20 mL |                            2 |
-| 4      |                        10 mL |                         30 mL |                            3 |
-| 5      |                         0 mL |                         40 mL |                            4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Die Methode erfordert sorgfältiges Rechnen, gut gemischte Enden mit gleichem spezifischem Gewicht{{en: specific gravity}} und eine genaue Waage. Derek Au mischt auch nach Gewicht statt nach Volumen. Eine **Dreistoffmischung** macht dasselbe mit drei Enden, angeordnet auf einem Dreieck.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Wenn ein Schritt vielversprechend aussieht, speichert **Als Kopie speichern** auf der [Rezeptseite](/recipe) ihn als eigenes Rezept und lässt das Original unverändert.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Aufzeichnungen führen {#records}
 

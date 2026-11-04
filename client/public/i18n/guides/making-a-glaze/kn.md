@@ -213,50 +213,50 @@ Label: ಗುರಿಯ ವಿಶಿಷ್ಟ ಗುರುತ್ವಕ್ಕೆ �
 
 **ಬೆಂಟೊನೈಟ್**, ಬಹಳ ನುಣುಪಾದ ಜೇಡಿಮಣ್ಣು, ಇತರ ಕಣಗಳನ್ನು ತೇಲಿಸಿಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಅದ್ದುವ ಗ್ಲೇಜುಗಳು ಇದಕ್ಕಾಗಿ ಸಾಮಾನ್ಯವಾಗಿ 15 ರಿಂದ 25% ಕಚ್ಚಾ ಜೇಡಿಮಣ್ಣನ್ನು ಅವಲಂಬಿಸುತ್ತವೆ. ಜೇಡಿಮಣ್ಣು ಕಡಿಮೆ ಇರುವ ರೆಸಿಪಿಗೆ ಸುಮಾರು 1 ರಿಂದ 3% ಬೆಂಟೊನೈಟ್ ಸಹಾಯ ಮಾಡುತ್ತದೆ; 15% ಕ್ಕಿಂತ ಹೆಚ್ಚು ಜೇಡಿಮಣ್ಣು ಇರುವ ಗ್ಲೇಜಿಗೆ ಒಣ ಗ್ಲೇಜಿನ ತೂಕದ 1% ಕ್ಕಿಂತ ಹೆಚ್ಚು ಬೆಂಟೊನೈಟ್ ಬೇಕಾಗಬಾರದು ಎಂದು Digitalfire ಹೇಳುತ್ತದೆ.
 
-## ಟೆಸ್ಟ್ ಟೈಲುಗಳು ಮತ್ತು ಲೈನ್ ಬ್ಲೆಂಡುಗಳು {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### ಸಣ್ಣದಾಗಿ ಆರಂಭಿಸಿ
+### Start small
 
-Derek Au ಮೂರು ಹಂತಗಳಲ್ಲಿ ಮೇಲೇರುತ್ತಾರೆ: 50 ಅಥವಾ 100 g ಪರೀಕ್ಷೆ, ಅದು ಕೆಲಸ ಮಾಡಿದರೆ 1 ರಿಂದ 2 kg ಟ್ರಯಲ್, ನಂತರ 5 ರಿಂದ 10 kg ಸ್ಟುಡಿಯೋ ಬ್ಯಾಚ್. ನಮ್ಮ ಅಂದಾಜಿನ ಪ್ರಕಾರ, {{SG 1.45}} ನಲ್ಲಿ 100 g ಪರೀಕ್ಷೆ ಸುಮಾರು 135 mL (ಸುಮಾರು 4½ US fl oz) ಸ್ಲರಿ ಮಾಡುತ್ತದೆ, ಇಕ್ಕಟ್ಟಾದ ಕಪ್ಪಿನಲ್ಲಿ ಕೆಲವು ಸಣ್ಣ ಟೈಲುಗಳನ್ನು ಅದ್ದಲು ಸಾಕು.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### ನಿಮ್ಮದೇ ಜೇಡಿಮಣ್ಣಿನ ಮೇಲೆ ಪರೀಕ್ಷಿಸಿ
+### Test on your own clay
 
-ಗ್ಲೇಜ್ ಇನ್ನೊಂದು ಜೇಡಿಮಣ್ಣಿನ ಮೇಲೆ ಅಥವಾ ಇನ್ನೊಂದು ಕಿಲ್ನಿನಲ್ಲಿ ಬಹಳ ಬೇರೆಯಾಗಿ ಕಾಣಬಹುದು: Clay Art Center ತನ್ನ ಪ್ರತಿ ಪುನರ್ರೂಪಿತ ಗ್ಲೇಜನ್ನು ನಾಲ್ಕು ಕ್ಲೇ ಬಾಡಿಗಳ ಮೇಲೆ, ಕೋನ್ 6 ಮತ್ತು ಕೋನ್ 10 ನಲ್ಲಿ ಪರೀಕ್ಷಿಸಿತು. ಆರಂಭಿಕರಿಗಾಗಿ ಗ್ಲೇಜ್ ಪರೀಕ್ಷೆಯ ಬಗ್ಗೆ Potclays ಬರೆದ ಲೇಖನ ಇವನ್ನು ಸೂಚಿಸುತ್ತದೆ:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- ನೀವು ನಿಜವಾಗಿ ಬಳಸುವ ಜೇಡಿಮಣ್ಣಿನ 6 ರಿಂದ 10 **ಟೆಸ್ಟ್ ಟೈಲುಗಳು** (ಗ್ಲೇಜ್ ಪ್ರಯತ್ನಿಸಲು ಸಣ್ಣ ತುಂಡುಗಳು), ಅವು ಬಿಸ್ಕ್ ಆಗಿವೆಯೇ ಅಥವಾ ಬೋನ್-ಡ್ರೈ ಆಗಿವೆಯೇ ಎಂದು ಗಮನಿಸಿ
-- ಒಂದು ಬಾರಿಗೆ ಒಂದೇ ಬದಲಾವಣೆ
-- ಗ್ಲೇಜ್ ತೆಳು ಮತ್ತು ದಪ್ಪ ಹೇಗೆ ಕಾಣುತ್ತದೆ ಎಂದು ನೋಡಲು ಒಂದು ಅದ್ದು ಮತ್ತು ಎರಡು ಅದ್ದು
-- ಪ್ರತಿ ಟೈಲ್ ಒಂದೇ ಕಿಲ್ನ್ ಲೋಡಿನಲ್ಲಿ
-- ಸುಡುವ ಮೊದಲು ಪ್ರತಿ ಟೈಲ್ ಮೇಲೆ ಸ್ಟ್ಯಾಂಪ್, ಕೆತ್ತನೆ ಅಥವಾ ಅಂಡರ್ಗ್ಲೇಜ್ ಪೆನ್ಸಿಲ್ಲಿನಿಂದ ಗುರುತು.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-ನೆಟ್ಟಗೆ ನಿಲ್ಲುವ ಟೈಲುಗಳನ್ನು ನಾವು ಸೂಚಿಸುತ್ತೇವೆ, ಏಕೆಂದರೆ ಚಪ್ಪಟೆ ಟೈಲ್ ಗ್ಲೇಜ್ ಎಷ್ಟು ದೂರ ಹರಿಯುತ್ತದೆ ಎಂಬುದನ್ನು ಮರೆಮಾಡುತ್ತದೆ; ಗ್ಲೇಜ್ ಅಂಚುಗಳ ಮೇಲೆ ಹೇಗೆ ಬಣ್ಣ ಬದಲಿಸುತ್ತದೆ ಎಂದು ತೋರಿಸಲು ಒರಟು ಪಟ್ಟಿ ಇರಲಿ, ಮತ್ತು ಗ್ಲೇಜ್ ಇಲ್ಲದ ತಳ. ತೊಟ್ಟಿಕ್ಕುವುದನ್ನು ಹಿಡಿಯಲು ಪ್ರತಿಯೊಂದನ್ನೂ ಸಣ್ಣ ತಟ್ಟೆ ಅಥವಾ ಬಿಸ್ಕ್ ತುಂಡಿನ ಮೇಲೆ, ಅಥವಾ ಕಿಲ್ನ್ ವಾಷ್ ಹಚ್ಚಿದ ಶೆಲ್ಫ್ ಮೇಲೆ ಇಡಿ. ಟೈಲುಗಳಿಗೆ ಎಷ್ಟು ತಾಪ ಸಿಕ್ಕಿತು ಎಂದು ತೋರಿಸಲು, ಟೈಲುಗಳ ಹತ್ತಿರ **ವಿಟ್ನೆಸ್ ಕೋನ್**{{en: witness cone}} ಇಡಿ; ಅದು ಸಾಕಷ್ಟು ತಾಪ ಸಿಕ್ಕಾಗ ಬಾಗುವ ಸಣ್ಣ ಸೆರಾಮಿಕ್ ಕೋನ್; ಕೋನುಗಳನ್ನು [ಸರಳ ಕಿಲ್ನಿನಲ್ಲಿ ಫೈರಿಂಗ್](/guides/firing) ಮಾರ್ಗದರ್ಶಿ ವಿವರಿಸುತ್ತದೆ. ಪ್ರತಿ ಟೈಲಿಗೆ ಒಂದು ಚಿಕ್ಕ ಕೋಡ್ ಕೊಡಿ, ಮತ್ತು ನಿಮ್ಮ ದಾಖಲೆಗಳಲ್ಲಿ ರೆಸಿಪಿಯ ಎದುರು ಅದನ್ನು ಬರೆಯಿರಿ. Ceramic Arts Network ಗಾಗಿ ಬರೆಯುವ Willers ಸಂಖ್ಯೆಗಳು ಮತ್ತು ಅಕ್ಷರಗಳನ್ನು ಬಳಸುತ್ತಾರೆ, ಮತ್ತು ವ್ಯವಸ್ಥೆಯನ್ನೇ ನೋಟ್ಬುಕ್ಕಿನ ಮುಂದೆ ಬರೆದಿಡುತ್ತಾರೆ.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ಲೈನ್ ಬ್ಲೆಂಡುಗಳು
+### Line blends
 
-**ಲೈನ್ ಬ್ಲೆಂಡ್**{{en: line blend}} ಎಂದರೆ ಒಂದು ಮಿಶ್ರಣದಿಂದ ಇನ್ನೊಂದಕ್ಕೆ ಸಮವಾಗಿ ಹಂತಹಂತವಾಗಿ ಸಾಗುವ ಪರೀಕ್ಷೆಗಳ ಸಾಲು: ಒಂದು ಗ್ಲೇಜಿನಿಂದ ಎರಡನೆಯದಕ್ಕೆ, ಅಥವಾ ಬೇಸ್ ಗ್ಲೇಜಿನಿಂದ ಹೆಚ್ಚು ಕಲರೆಂಟ್ ಇರುವ ಅದೇ ಗ್ಲೇಜಿಗೆ. ಉದಾಹರಣೆಗೆ, Derek Au ಕ್ಲಿಯರ್ ಬೇಸ್ ಮೂಲಕ ಐರನ್ ಆಕ್ಸೈಡನ್ನು 1% ಏರಿಕೆಗಳಲ್ಲಿ ಹೆಚ್ಚಿಸುತ್ತಾರೆ. Ian Currie ಯೊಂದಿಗೆ ಗುರುತಿಸಲಾಗುವ ಘನಪರಿಮಾಣ ವಿಧಾನ ಸಮಯ ಉಳಿಸುತ್ತದೆ, ಏಕೆಂದರೆ ನೀವು ಎರಡು ತುದಿಗಳನ್ನು ಮಾತ್ರ ಕಲಸುತ್ತೀರಿ:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. ಎರಡು ತುದಿ ಗ್ಲೇಜುಗಳಾದ A ಮತ್ತು B ಅನ್ನು ಒಂದೇ ಗಾತ್ರದ ಬ್ಯಾಚುಗಳಾಗಿ ಕಲಸಿ, ಎರಡನ್ನೂ ಜರಡಿಯಲ್ಲಿ ಸೋಸಿ.
-2. ಎರಡೂ ಸರಿಯಾಗಿ ಒಂದೇ ಒದ್ದೆ ಪರಿಮಾಣ ಹೊಂದುವವರೆಗೆ, ಕಡಿಮೆ ಪರಿಮಾಣ ಇರುವುದಕ್ಕೆ ನೀರು ಸೇರಿಸಿ.
-3. ಎರಡನ್ನೂ ಕಲಕಿ, ನಂತರ ಪ್ರತಿ ಮಿಶ್ರಣವನ್ನು ಸಿರಿಂಜಿನಿಂದ ಅದರದೇ ಸಂಖ್ಯೆಯ ಕಪ್ಪಿಗೆ ಎಳೆಯಿರಿ.
-4. ಪ್ರತಿ ಕಪ್ಪನ್ನು ಕಲಕಿ ಒಂದು ಟೈಲ್ ಅದ್ದಿ.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-ನಮ್ಮ ಉದಾಹರಣೆಯಲ್ಲಿ, A 100 g ಕ್ಲಿಯರ್ ಬೇಸ್, ಮತ್ತು B ಅದೇ ಬೇಸ್ಗೆ 4 g ರೆಡ್ ಐರನ್ ಆಕ್ಸೈಡ್ ಸೇರಿಸಿದ್ದು (4% ಸೇರ್ಪಡೆ). B ಯ ಪ್ರತಿ ಮಿಲಿಲೀಟರ್ A ಯ ಮಿಲಿಲೀಟರ್ನಷ್ಟೇ ಬೇಸ್ ಪಾಲನ್ನು ಹೊಂದಿದೆ, ಜೊತೆಗೆ ಅದರ ಐರನ್, ಆದ್ದರಿಂದ ಕಪ್ಗಳು ಐರನ್ ಇಲ್ಲದ ಸ್ಥಿತಿಯಿಂದ 1% ಹೆಜ್ಜೆಗಳಲ್ಲಿ 4% ವರೆಗೆ ಸಾಗುತ್ತವೆ. ಪ್ರತಿ ತುದಿಯೂ ಬ್ಲೆಂಡಿಗೆ 100 mL ಕೊಡುತ್ತದೆ, ಇದನ್ನು ನಮ್ಮ ಅಂದಾಜಿನ ಪ್ರಕಾರ 100 g ಬ್ಯಾಚ್ ಸಾಕಷ್ಟು ಒದಗಿಸುತ್ತದೆ.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ಐದು ಹಂತದ ಐರನ್ ಲೈನ್ ಬ್ಲೆಂಡ್, ಪ್ರತಿ ಕಪ್ಪಿಗೆ 40 mL (ನಮ್ಮ ಉದಾಹರಣೆ)
-Label: ಲೈನ್ ಬ್ಲೆಂಡ್ ಉದಾಹರಣೆ
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| ಕಪ್ | ಕ್ಲಿಯರ್ ಬೇಸ್ (A) | 4% ಐರನ್ ಇರುವ ಬೇಸ್ (B) | ಐರನ್ ಆಕ್ಸೈಡ್, ಬೇಸಿನ % |
-| --- | ---------------: | --------------------: | --------------------: |
-| 1   |            40 mL |                  0 mL |                     0 |
-| 2   |            30 mL |                 10 mL |                     1 |
-| 3   |            20 mL |                 20 mL |                     2 |
-| 4   |            10 mL |                 30 mL |                     3 |
-| 5   |             0 mL |                 40 mL |                     4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-ಈ ವಿಧಾನಕ್ಕೆ ಎಚ್ಚರಿಕೆಯ ಲೆಕ್ಕಾಚಾರ, ಸಮ ವಿಶಿಷ್ಟ ಗುರುತ್ವದ ಚೆನ್ನಾಗಿ ಕಲಸಿದ ತುದಿಗಳು, ಮತ್ತು ನಿಖರವಾದ ತಕ್ಕಡಿ ಬೇಕು. Derek Au ಪರಿಮಾಣದ ಬದಲಿಗೆ ತೂಕದಿಂದಲೂ ಬ್ಲೆಂಡ್ ಮಾಡುತ್ತಾರೆ. **ಟ್ರೈಆಕ್ಸಿಯಲ್ ಬ್ಲೆಂಡ್** ಇದನ್ನೇ ಮೂರು ತುದಿಗಳೊಂದಿಗೆ ಮಾಡುತ್ತದೆ, ತ್ರಿಕೋನದ ಮೇಲೆ ಜೋಡಿಸಿ.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> ಒಂದು ಹಂತ ಭರವಸೆ ನೀಡುವಂತೆ ಕಂಡಾಗ, [ರೆಸಿಪಿ ಪುಟ](/recipe)ದಲ್ಲಿ **ನಕಲಾಗಿ ಉಳಿಸಿ** ಅದನ್ನು ತನ್ನದೇ ರೆಸಿಪಿಯಾಗಿ ಇಟ್ಟುಕೊಳ್ಳುತ್ತದೆ ಮತ್ತು ಮೂಲವನ್ನು ಇದ್ದಂತೆಯೇ ಬಿಡುತ್ತದೆ.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## ದಾಖಲೆ ಇಟ್ಟುಕೊಳ್ಳುವುದು {#records}
 

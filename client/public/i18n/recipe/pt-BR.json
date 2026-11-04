@@ -723,8 +723,7 @@
     "keyPoint": "Ponto: este esmalte.",
     "keyBright": "Linha pontilhada: onde os esmaltes de Stull ficaram mais brilhantes.",
     "keyLimits": "Linhas tracejadas e sombreado: as faixas de sílica e alumina de {name}.",
-    "keyCrazed": "Hachura: onde eles gretaram.",
-    "note": "Uma orientação, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) queimou no cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e queimas deslocam as regiões, e um fosco subqueimado pode aparecer como brilhante. As regiões são como o Glazy as desenha."
+    "keyCrazed": "Hachura: onde eles gretaram."
   },
   "slurry": {
     "heading": "Densidade e água",

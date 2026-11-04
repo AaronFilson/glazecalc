@@ -213,50 +213,50 @@ Fágann **guma CMC** (ceallalós carbocsaimeitile) draoib níos greamaithí agus
 
 Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 3% beintiníte; deir Digitalfire nár cheart go mbeadh beintinít de dhíth ar ghlónra a bhfuil níos mó ná 15% cré ann ag níos mó ná 1% de mheáchan an ghlónra thirim.
 
-## Tíleanna tástála agus sraitheanna cumaisc {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Tosú go beag
+### Start small
 
-Oibríonn Derek Au aníos i dtrí chéim: tástáil 50 nó 100 g, baisc thrialach 1 go 2 kg má oibríonn sé, agus ansin baisc stiúideo 5 go 10 kg. De réir ár meastacháin, déanann tástáil 100 g ag {{SG 1.45}} thart ar 135 mL (thart ar 4½ US fl oz) draoibe{{en: slurry}}, a dhóthain chun cúpla tíl bheag a thumadh i gcupán caol.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Tástáil ar do chré féin
+### Test on your own clay
 
-Is féidir go mbeidh cuma an-difriúil ar ghlónra{{en: glaze}} ar chré eile nó in áith eile: thástáil Clay Art Center gach ceann dá ghlónraí athfhoirmlithe ar cheithre chré-ábhar{{en: clay bodies}}, ag cón{{en: cone}} 6 agus ag cón 10. Molann treoirleabhar Potclays do thosaitheoirí ar thástáil glónraí:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 go 10 **dtíl tástála**{{en: test tiles}} (píosaí beaga chun glónra a thriail) den chré a úsáidfidh tú i ndáiríre, ag breacadh síos cé acu atá siad brioscbhácáilte{{en: bisqued}} nó cnámhthirim
-- athrú amháin ag an am
-- tumadh aonair agus tumadh dúbailte, chun an glónra a fheiceáil tanaí agus tiubh
-- gach tíl sa lucht céanna san áith
-- marc ar gach tíl roimh bhácáil, le stampa, le snoí nó le peann luaidhe fo-ghlónra.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Molaimid tíleanna a sheasann suas díreach, mar folaíonn tíl chothrom an fad a ritheann glónra, le banda uigeach chun a thaispeáint conas a athraíonn dath an ghlónra ar na himill, agus bonn gan glónra. Cuir gach ceann ar mhias bheag nó ar phíosa brioscghréithe, nó ar sheilf a bhfuil brat seilfe uirthi, chun na braonta a cheapadh. Cuir **cón fianaise**{{en: witness cone}}, cón beag ceirmeach a lúbann nuair a fhaigheann sé a dhóthain teasa, in aice leis na tíleanna chun a thaispeáint cad a fuair siad; míníonn an treoirleabhar [Bácáil in áith shimplí](/guides/firing) na cóin. Tabhair cód gearr do gach tíl, agus scríobh é in aice leis an oideas i do thaifid. Úsáideann Willers, ag scríobh do Ceramic Arts Network, uimhreacha agus litreacha, agus scríobhann Willers an córas féin i dtosach an leabhair nótaí.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Sraitheanna cumaisc
+### Line blends
 
-Is éard is **sraith cumaisc**{{en: line blend}} ann ná sraith tástálacha a théann ar aghaidh i gcéimeanna cothroma ó mheascán amháin go meascán eile: ó ghlónra amháin go glónra eile, nó ó bhunghlónra go dtí an glónra céanna le níos mó ábhair datha{{en: colorant}}. Méadaíonn Derek Au, mar shampla, an ocsaíd iarainn i mbunghlónra glé 1% sa chéim. Sábhálann modh toirte a bhfuil baint aige le Ian Currie am, mar ní mheascann tú ach an dá fhoirceann:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Measc an dá ghlónra ag na foircinn, A agus B, mar bhaisceanna den mhéid chéanna, agus criathraigh iad araon.
-2. Cuir uisce leis an gceann is lú toirt go dtí go mbíonn an toirt fhliuch chéanna go díreach ag an dá cheann.
-3. Corraigh an dá cheann, ansin tarraing gach meascán le steallaire isteach ina chupán uimhrithe féin.
-4. Corraigh gach cupán agus tum tíl.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Inár sampla oibrithe, is é A 100 g de bhunghlónra glé, agus is é B an rud céanna le 4 g d’ocsaíd iarainn dhearg curtha leis (breis 4%). Tá an sciar céanna bunghlónra i ngach millilítear de B agus atá i millilítear de A, móide a chuid iarainn, mar sin téann na cupáin ó chupán gan iarann go cupán le 4%, i gcéimeanna 1%. Tugann gach foirceann 100 mL don chumasc, agus is leor baisc 100 g chuige sin de réir ár meastacháin.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Sraith cumaisc iarainn i gcúig chéim, 40 mL sa chupán (ár sampla oibrithe)
-Label: Sampla de shraith cumaisc
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Cupán | Bunghlónra glé (A) | Bunghlónra le 4% iarainn (B) | Ocsaíd iarainn, % den bhunghlónra |
-| ----- | -----------------: | ---------------------------: | --------------------------------: |
-| 1     |              40 mL |                         0 mL |                                 0 |
-| 2     |              30 mL |                        10 mL |                                 1 |
-| 3     |              20 mL |                        20 mL |                                 2 |
-| 4     |              10 mL |                        30 mL |                                 3 |
-| 5     |               0 mL |                        40 mL |                                 4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Tá uimhríocht chúramach ag teastáil ón modh, foircinn mheasctha go maith a bhfuil an sainmheáchan{{en: specific gravity}} céanna acu, agus meá chruinn. Déanann Derek Au cumasc de réir meáchain freisin seachas de réir toirte. Déanann **cumasc trí-aiseach** an rud céanna le trí fhoirceann, leagtha amach ar thriantán.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Nuair a bhíonn cuma gheallúnach ar chéim, coinníonn an cnaipe **Sábháil mar chóip** ar [leathanach an oidis](/recipe) í mar oideas ann féin agus fágann sé an bunoideas mar a bhí.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Taifid a choinneáil {#records}
 

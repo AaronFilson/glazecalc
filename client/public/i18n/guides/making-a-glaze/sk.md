@@ -213,50 +213,50 @@ Label: Voda pre cieľovú relatívnu hustotu
 
 **Bentonit**, veľmi jemná hlina, pomáha udržať ostatné čiastočky vo vznose. Glazúry na ponáranie sa v tom zvyčajne spoliehajú na 15 – 25 % surovej hliny. Receptu, v ktorom je málo hliny, pomôže asi 1 – 3 % bentonitu; podľa Digitalfire by glazúra s viac ako 15 % hliny nemala potrebovať bentonit v množstve väčšom ako 1 % hmotnosti suchej glazúry.
 
-## Skúšobné doštičky a skúšobné rady {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Začnite v malom
+### Start small
 
-Derek Au postupuje v troch krokoch: skúška s 50 alebo 100 g, ak sa osvedčí, skúšobná dávka 1 – 2 kg, a potom dielenská dávka 5 – 10 kg. Podľa nášho odhadu dá skúška zo 100 g, ak je {{SG 1.45}}, asi 135 mL (asi 4½ US fl oz) rozmiešanej glazúry{{en: slurry}}, čo stačí na ponorenie niekoľkých malých doštičiek v úzkom pohári.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Skúšajte na vlastnej hline
+### Test on your own clay
 
-Glazúra{{en: glaze}} môže na inej hline alebo v inej peci vyzerať úplne inak: v Clay Art Center vyskúšali každú zo svojich glazúr s upraveným zložením na štyroch keramických hmotách{{en: clay bodies}}, pri výpale na kužeľ{{en: cone}} 6 aj na kužeľ 10. Príručka pre začiatočníkov o skúšaní glazúr od Potclays odporúča:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 – 10 **skúšobných doštičiek**{{en: test tiles}} (malých kúskov na vyskúšanie glazúry) z hliny, ktorú skutočne použijete, s poznámkou, či sú prežahnuté{{en: bisqued}}, alebo úplne suché
-- vždy len jednu zmenu
-- jedno ponorenie a dve ponorenia, aby ste videli glazúru v tenkej aj hrubej vrstve
-- všetky doštičky v tej istej vsádzke pece
-- označenie každej doštičky pred výpalom pečiatkou, rytím alebo podglazúrnou ceruzkou.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Odporúčame doštičky, ktoré stoja zvisle, pretože na ležiacej doštičke nevidno, ako ďaleko glazúra steká, s pásom s reliéfom, ktorý ukáže, ako sa farba glazúry mení na hranách, a s dnom bez glazúry. Každú postavte na malú misku, kúsok prežahnutého črepu alebo ochranný náter, aby sa zachytili kvapky. Vedľa doštičiek položte **kontrolný kužeľ**{{en: witness cone}}, malý keramický kužeľ, ktorý sa ohne, keď dostane dosť tepla, aby ukázal, koľko tepla doštičky dostali; [návod na výpal](/guides/firing) vysvetľuje kužele. Každej doštičke dajte krátky kód a zapíšte ho k receptu do svojich záznamov. Willers v článku pre Ceramic Arts Network používa čísla a písmená a samotný systém si zapisuje na začiatok zošita.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Skúšobné rady
+### Line blends
 
-**Skúšobný rad**{{en: line blend}} je rad skúšok, ktorý v rovnakých krokoch prechádza od jednej zmesi k druhej: od jednej glazúry k druhej alebo od základnej glazúry k tej istej glazúre s väčším množstvom farbiva{{en: colorant}}. Derek Au napríklad zvyšuje obsah oxidu železa v transparentnej základnej glazúre po 1 %. Objemová metóda spájaná s menom Ian Currie šetrí čas, pretože namiešate len dve krajné glazúry:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Namiešajte obe krajné glazúry, A a B, v dávkach rovnakej veľkosti a obe preosejte.
-2. Do tej, ktorej objem je menší, pridajte vodu, kým obe nebudú mať presne rovnaký objem rozmiešanej glazúry.
-3. Obe premiešajte a potom striekačkou odoberte zložky každej zmesi do jej vlastného očíslovaného pohárika.
-4. Obsah každého pohárika premiešajte a ponorte doň doštičku.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-V našom príklade je A 100 g transparentnej základnej glazúry a B je to isté so 4 g pridaného červeného oxidu železa (prídavok 4 %). Každý mililiter B obsahuje rovnaký podiel základnej glazúry ako mililiter A a k tomu svoje železo, takže poháriky postupujú od glazúry bez železa po 4 % v krokoch po 1 %. Každá krajná glazúra dá do radu 100 mL, čo podľa nášho odhadu pokryje dávka 100 g.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Skúšobný rad so železom v piatich krokoch, 40 mL na pohárik (náš príklad)
-Label: Príklad skúšobného radu
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Pohárik | Transparentný základ (A) | Základ so 4 % železa (B) | Oxid železa, % základu |
-| ------- | -----------------------: | -----------------------: | ---------------------: |
-| 1       |                    40 mL |                     0 mL |                      0 |
-| 2       |                    30 mL |                    10 mL |                      1 |
-| 3       |                    20 mL |                    20 mL |                      2 |
-| 4       |                    10 mL |                    30 mL |                      3 |
-| 5       |                     0 mL |                    40 mL |                      4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-Metóda vyžaduje starostlivé počítanie, dobre premiešané krajné glazúry s rovnakou relatívnou hustotou{{en: specific gravity}} a presnú váhu. Derek Au robí rady aj podľa hmotnosti namiesto objemu. **Trojzložková skúška** robí to isté s tromi krajnými glazúrami rozloženými do trojuholníka.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Keď niektorý krok vyzerá sľubne, tlačidlo **Uložiť ako kópiu** na [stránke receptu](/recipe) ho uloží ako samostatný recept a pôvodný nechá bez zmeny.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Vedenie záznamov {#records}
 

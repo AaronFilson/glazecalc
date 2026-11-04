@@ -723,8 +723,7 @@
     "keyPoint": "Bodka: táto glazúra.",
     "keyBright": "Bodkovaná čiara: kde boli Stullove glazúry najlesklejšie.",
     "keyLimits": "Čiarkované čiary a tieňovanie: rozsahy oxidu kremičitého a oxidu hlinitého v sade {name}.",
-    "keyCrazed": "Šrafovanie: kde trhlinkovali.",
-    "note": "Orientačná pomôcka, nie predpoveď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaľoval na kužeľ 11 s tavivami pevne stanovenými na 0,3 K₂O a 0,7 CaO; iné tavivá a výpaly oblasti posúvajú a nedopálená matná glazúra sa môže v diagrame objaviť ako lesklá. Oblasti sú tak, ako ich kreslí Glazy."
+    "keyCrazed": "Šrafovanie: kde trhlinkovali."
   },
   "slurry": {
     "heading": "Relatívna hustota a voda",

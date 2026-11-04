@@ -213,50 +213,50 @@ Label: Water voor een gewenst soortelijk gewicht
 
 **Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer bentoniet nodig zou moeten hebben dan 1% van het gewicht van het droge glazuur.
 
-## Proefplaatjes en proevenreeksen {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Begin klein
+### Start small
 
-Derek Au bouwt het op in drie stappen: een proef van 50 of 100 g, als die bevalt een grotere proef van 1 tot 2 kg, en dan een hoeveelheid van 5 tot 10 kg voor het atelier. Volgens onze schatting geeft een proef van 100 g bij {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) aangemaakt glazuur{{en: slurry}}, genoeg om een paar kleine plaatjes in een smalle beker te dompelen.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Test op uw eigen klei
+### Test on your own clay
 
-Een glazuur{{en: glaze}} kan er op een andere klei of in een andere oven heel anders uitzien: Clay Art Center testte elk van zijn aangepaste glazuren op vier kleimassa’s{{en: clay bodies}}, gestookt tot kegel{{en: cone}} 6 en tot kegel 10. De beginnersgids voor glazuurproeven van Potclays raadt aan:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 tot 10 **proefplaatjes**{{en: test tiles}} (kleine stukjes om een glazuur op te proberen) van de klei die u echt gaat gebruiken, met de aantekening of ze biscuit gestookt{{en: bisqued}} of beendroog zijn
-- één verandering tegelijk
-- één keer en twee keer dompelen, om het glazuur dun en dik te zien
-- alle plaatjes in dezelfde ovenlading
-- een merkteken op elk plaatje vóór het stoken, met een stempel, door in te kerven of met een onderglazuurpotlood.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-We raden rechtopstaande plaatjes aan, omdat een plat plaatje verbergt hoe ver een glazuur loopt, met een band met reliëf om te laten zien hoe het glazuur op randen aftekent, en een voet zonder glazuur. Zet elk plaatje op een schaaltje of een stukje biscuit, of op een ovenplaat met ovenplaatbescherming, om druppels op te vangen. Zet een **controlekegel**{{en: witness cone}}, een kleine keramische kegel die buigt als hij genoeg warmte heeft gekregen, bij de plaatjes, om te laten zien wat ze hebben gekregen; de gids [Een eenvoudige oven stoken](/guides/firing) legt kegels uit. Geef elk plaatje een korte code, en schrijf die naast het recept in uw aantekeningen. Willers gebruikt in een artikel voor Ceramic Arts Network cijfers en letters, en schrijft het systeem zelf voorin het notitieboek.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Proevenreeksen
+### Line blends
 
-Een **proevenreeks**{{en: line blend}} is een rij proeven die in gelijke stappen van het ene mengsel naar het andere gaat: van het ene glazuur naar een tweede, of van een basisglazuur naar hetzelfde glazuur met meer kleurstof{{en: colorant}}. Derek Au voegt bijvoorbeeld ijzeroxide aan een transparant basisglazuur toe in stappen van 1%. Een methode op volume die met Ian Currie in verband wordt gebracht, bespaart tijd, omdat u alleen de twee uitersten mengt:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Meng de twee eindglazuren, A en B, in even grote hoeveelheden, en zeef ze allebei.
-2. Voeg water toe aan het glazuur met het kleinste volume tot beide precies hetzelfde natte volume hebben.
-3. Roer beide om, en breng dan met een spuit elk mengsel over in een eigen genummerd bekertje.
-4. Roer elk bekertje om en dompel er een plaatje in.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-In ons uitgewerkte voorbeeld is A 100 g van een transparant basisglazuur, en B hetzelfde met 4 g rood ijzeroxide erbij (een toevoeging van 4%). Elke milliliter van B bevat evenveel basisglazuur als een milliliter van A, plus het ijzer, dus de bekertjes gaan van geen ijzer naar 4% in stappen van 1%. Elk uiterste levert 100 mL aan de reeks, en een hoeveelheid van 100 g is daar volgens onze schatting genoeg voor.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Een proevenreeks met ijzer in vijf stappen, 40 mL per bekertje (ons uitgewerkte voorbeeld)
-Label: Voorbeeld proevenreeks
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Bekertje | Transparant basisglazuur (A) | Basisglazuur met 4% ijzer (B) | IJzeroxide, % van het basisglazuur |
-| -------- | ---------------------------: | ----------------------------: | ---------------------------------: |
-| 1        |                        40 mL |                          0 mL |                                  0 |
-| 2        |                        30 mL |                         10 mL |                                  1 |
-| 3        |                        20 mL |                         20 mL |                                  2 |
-| 4        |                        10 mL |                         30 mL |                                  3 |
-| 5        |                         0 mL |                         40 mL |                                  4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-De methode vraagt zorgvuldig rekenwerk, goed gemengde uitersten met hetzelfde soortelijk gewicht{{en: specific gravity}}, en een nauwkeurige weegschaal. Derek Au mengt ook op gewicht in plaats van op volume. Een **driehoeksmenging** doet hetzelfde met drie uitersten, uitgezet op een driehoek.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Als een stap veelbelovend lijkt, bewaart **Opslaan als kopie** op de [receptpagina](/recipe) die stap als een eigen recept, en blijft het origineel zoals het was.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Aantekeningen bijhouden {#records}
 

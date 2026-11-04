@@ -213,50 +213,50 @@ A **CMC** (karboxi-metil-cellulóz) mázragasztó ragacsosabbá és lassabban sz
 
 A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene a száraz máz tömegének 1%-ánál több bentonitnak lennie.
 
-## Próbalapok és próbasorok {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Kezdje kicsiben
+### Start small
 
-Derek Au három lépésben halad: 50 vagy 100 g-os próba, ha beválik, 1–2 kg-os kísérleti adag, végül 5–10 kg-os műhelyadag. Becslésünk szerint egy 100 g-os próba {{SG 1.45}} mellett kb. 135 mL (kb. 4½ US fl oz) máziszapot{{en: slurry}} ad, ami elég ahhoz, hogy egy keskeny pohárban néhány kis lapot belemártson.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Próbálja ki a saját masszáján
+### Test on your own clay
 
-Egy máz{{en: glaze}} egészen másképp nézhet ki egy másik masszán vagy egy másik kemencében: a Clay Art Center minden átdolgozott mázát négy masszán{{en: clay bodies}} próbálta ki, 6-os és 10-es gúlán{{en: cone}}. A Potclays kezdőknek szóló, a mázak kipróbálásáról írt útmutatója ezt javasolja:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6–10 **próbalap**{{en: test tiles}} (kis darab egy máz kipróbálásához) abból a masszából, amelyet ténylegesen használni fog, feljegyezve, hogy zsengélt{{en: bisqued}} vagy csontszáraz állapotúak-e
-- egyszerre csak egy változtatás
-- egyszeri és kétszeri mártás, hogy lássa a mázat vékonyan és vastagon
-- minden próbalap ugyanabban a rakatban
-- égetés előtt minden lapon jelölés, pecséttel, karcolással vagy mázalatti ceruzával.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Álló próbalapokat javaslunk, mert a fekvő lapon nem látszik, mennyire folyik le a máz; legyen rajtuk egy mintázott sáv, amely megmutatja, hogyan változik a máz az éleken, és egy mázatlan talp. Mindegyiket állítsa egy kis tálkára, egy zsengélt cserépdarabra vagy lapkencére, hogy felfogja a lecsepegő mázat. Tegyen a próbalapok mellé egy **ellenőrző gúlát**{{en: witness cone}}, vagyis egy kis kerámiagúlát, amely meghajlik, ha elég hőt kapott, hogy megmutassa, mennyi hő érte a lapokat; a gúlákat az [égetésről szóló útmutató](/guides/firing) magyarázza el. Adjon minden lapnak rövid kódot, és a feljegyzéseiben írja a recept mellé. Willers a Ceramic Arts Network számára írt cikkében számokat és betűket használ, és magát a rendszert a füzet elejére írja.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Próbasorok
+### Line blends
 
-A **próbasor**{{en: line blend}} olyan próbák sora, amely egyenletes lépésekben halad az egyik keveréktől a másikig: egyik máztól egy másikig, vagy egy alapmáztól ugyanahhoz a mázhoz több színezőanyaggal{{en: colorant}}. Derek Au például egy színtelen alapmázban 1%-os lépésekben növeli a vas-oxid mennyiségét. Egy Ian Currie nevéhez kötött, térfogat szerinti módszer időt takarít meg, mert csak a két végpontot kell bekeverni:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Keverje be a két végpont mázát, az A-t és a B-t, azonos méretű adagokban, és mindkettőt szitálja át.
-2. A kisebb térfogatúhoz adjon vizet, amíg mindkettőnek pontosan ugyanakkora nem lesz a nedves térfogata.
-3. Keverje fel mindkettőt, majd fecskendővel mérje ki az egyes keverékeket, mindegyiket a saját számozott poharába.
-4. Keverje meg mindegyik pohár tartalmát, és mártson bele egy próbalapot.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-Kidolgozott példánkban az A 100 g színtelen alapmáz, a B ugyanez 4 g vörös vas-oxiddal (4%-os adalék). A B minden millilitere ugyanannyi alapmázat tartalmaz, mint az A egy millilitere, és ezen felül a vasat, így a poharak 1%-os lépésekben haladnak a vas nélkülitől a 4%-ig. Mindkét végpontból 100 mL kerül a próbasorba, amit becslésünk szerint egy 100 g-os adag fedez.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Ötlépéses vas-próbasor, poharanként 40 mL (kidolgozott példánk)
-Label: Próbasor-példa
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Pohár | Színtelen alapmáz (A) | Alapmáz 4% vassal (B) | Vas-oxid, az alapmáz %-ában |
-| ----- | --------------------: | --------------------: | --------------------------: |
-| 1     |                 40 mL |                  0 mL |                           0 |
-| 2     |                 30 mL |                 10 mL |                           1 |
-| 3     |                 20 mL |                 20 mL |                           2 |
-| 4     |                 10 mL |                 30 mL |                           3 |
-| 5     |                  0 mL |                 40 mL |                           4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-A módszerhez gondos számolás, jól elkevert, egyforma fajsúlyú{{en: specific gravity}} végpontok és pontos mérleg kell. Derek Au térfogat helyett tömeg szerint is kever. A **háromszög-próba** ugyanezt három végponttal végzi, háromszögbe rendezve.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Ha egy lépés ígéretesnek tűnik, a [recept oldalán](/recipe) a **Mentés másolatként** gomb külön receptként menti, az eredetit pedig változatlanul hagyja.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Feljegyzések vezetése {#records}
 

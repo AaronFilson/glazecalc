@@ -723,8 +723,7 @@
     "keyPoint": "Tečka: tato glazura.",
     "keyBright": "Tečkovaná čára: kde byly Stullovy glazury nejlesklejší.",
     "keyLimits": "Čárkované čáry a stínování: rozsahy oxidu křemičitého a oxidu hlinitého v sadě {name}.",
-    "keyCrazed": "Šrafování: kde trhlinkovaly.",
-    "note": "Vodítko, ne předpověď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaloval na žároměrku 11 s tavivy pevně stanovenými na 0,3 K₂O a 0,7 CaO; jiná taviva a výpaly oblasti posouvají a nedopálená matná glazura se může v diagramu objevit jako lesklá. Oblasti jsou tak, jak je kreslí Glazy."
+    "keyCrazed": "Šrafování: kde trhlinkovaly."
   },
   "slurry": {
     "heading": "Měrná hmotnost a voda",

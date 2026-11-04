@@ -213,50 +213,50 @@ Label: ଲକ୍ଷ୍ୟ ଆପେକ୍ଷିକ ଘନତ୍ୱ ପାଇଁ 
 
 **ବେଣ୍ଟୋନାଇଟ୍**, ଏକ ଅତି ସରୁ କ୍ଲେ, ଅନ୍ୟ କଣିକାଗୁଡ଼ିକୁ ପାଣିରେ ଭାସମାନ ରଖିବାରେ ସାହାଯ୍ୟ କରେ. ବୁଡ଼ାଇବା ଗ୍ଲେଜ୍ ଏଥିପାଇଁ ସାଧାରଣତଃ 15ରୁ 25% କଞ୍ଚା କ୍ଲେ ଉପରେ ନିର୍ଭର କରେ. କ୍ଲେ କମ୍ ଥିବା ଏକ ରେସିପି ପାଇଁ ପ୍ରାୟ 1ରୁ 3% ବେଣ୍ଟୋନାଇଟ୍ ସାହାଯ୍ୟ କରେ; Digitalfire କହେ ଯେ 15%ରୁ ଅଧିକ କ୍ଲେ ଥିବା ଏକ ଗ୍ଲେଜକୁ ଶୁଖିଲା ଗ୍ଲେଜର ଓଜନର 1%ରୁ ଅଧିକ ବେଣ୍ଟୋନାଇଟ୍ ଦରକାର ହେବା ଉଚିତ ନୁହେଁ.
 
-## ଟେଷ୍ଟ ଟାଇଲ୍ ଓ ଲାଇନ୍ ବ୍ଲେଣ୍ଡ୍ {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### ଛୋଟରୁ ଆରମ୍ଭ କରନ୍ତୁ
+### Start small
 
-Derek Au ତିନିଟି ଧାପରେ ବଢ଼ନ୍ତି: ଏକ 50 ବା 100 g ପରୀକ୍ଷା, ତାହା କାମ କଲେ ଏକ 1ରୁ 2 kg ଟ୍ରାଏଲ୍, ତା’ପରେ ଏକ 5ରୁ 10 kg ଷ୍ଟୁଡିଓ ବ୍ୟାଚ୍. ଆମର ଅନୁମାନ ଅନୁସାରେ, {{SG 1.45}} ଥିବା ଏକ 100 g ପରୀକ୍ଷା ପ୍ରାୟ 135 mL (ପ୍ରାୟ 4½ US fl oz) ସ୍ଲରି ଦିଏ, ଏକ ସଂକୀର୍ଣ୍ଣ କପରେ କିଛି ଛୋଟ ଟାଇଲ୍ ବୁଡ଼ାଇବା ପାଇଁ ଯଥେଷ୍ଟ.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### ନିଜ ମାଟିରେ ପରୀକ୍ଷା କରନ୍ତୁ
+### Test on your own clay
 
-ଏକ ଗ୍ଲେଜ୍ (କାଚର ପ୍ରଲେପ){{en: glaze}} ଅନ୍ୟ ମାଟିରେ ବା ଅନ୍ୟ କିଲ୍ନ୍ (ଭାଟି) ଭିତରେ ଯଥେଷ୍ଟ ଭିନ୍ନ ଦେଖାଯାଇପାରେ: Clay Art Center ତା’ର ନୂଆ ଭାବେ ଠିକ୍ କରାଯାଇଥିବା ପ୍ରତ୍ୟେକ ଗ୍ଲେଜକୁ ଚାରିଟି କ୍ଲେ ବଡିରେ, କୋନ୍ 6 ଓ କୋନ୍ 10ରେ ପରୀକ୍ଷା କଲା. Potclays ପ୍ରକାଶିତ ଆରମ୍ଭକାରୀଙ୍କ ପାଇଁ ଗ୍ଲେଜ୍ ପରୀକ୍ଷା ପୁସ୍ତିକା ପରାମର୍ଶ ଦିଏ:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- ଆପଣ ପ୍ରକୃତରେ ବ୍ୟବହାର କରିବେ ସେହି ମାଟିର 6ରୁ 10 **ଟେଷ୍ଟ ଟାଇଲ୍**{{en: test tiles}} (ଗ୍ଲେଜ୍ ଚେଷ୍ଟା କରିବା ପାଇଁ ଛୋଟ ଖଣ୍ଡ), ସେଗୁଡ଼ିକ ବିସ୍କ୍ (ପ୍ରଥମ ପୋଡ଼ା){{en: bisque}} କରାଯାଇଛି ନା ବୋନ୍-ଡ୍ରାଇ (ପୂରା ଶୁଖିଲା) ତାହା ଲେଖି
-- ଥରକେ ଗୋଟିଏ ବଦଳ
-- ଥରେ ବୁଡ଼ାଇବା ଓ ଦୁଇଥର ବୁଡ଼ାଇବା, ଗ୍ଲେଜ୍ ପତଳା ଓ ମୋଟା ଦେଖିବା ପାଇଁ
-- ସମସ୍ତ ଟାଇଲ୍ ସମାନ କିଲ୍ନ୍ ଲୋଡରେ
-- ପୋଡ଼ିବା ପୂର୍ବରୁ ପ୍ରତ୍ୟେକ ଟାଇଲରେ ଏକ ଚିହ୍ନ, ଷ୍ଟାମ୍ପ୍, ଖୋଦେଇ ବା ଅଣ୍ଡରଗ୍ଲେଜ୍ ପେନ୍ସିଲ୍ ଦ୍ୱାରା.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-ଆମର ପରାମର୍ଶ ଏପରି ଟାଇଲ୍ ଯାହା ସିଧା ଛିଡ଼ା ହୁଏ, କାରଣ ଏକ ଚେପ୍ଟା ଟାଇଲ୍ ଗ୍ଲେଜ୍ କେତେ ଦୂର ବହିଲା ତାହା ଲୁଚାଏ, ଯେଉଁଥିରେ ଗ୍ଲେଜ୍ ଧାର ଉପରେ କିପରି ରଙ୍ଗ ବଦଳାଏ (ବ୍ରେକ୍) ଦେଖାଇବା ପାଇଁ ଏକ ଖରଖରା ପଟି ଥାଏ, ଏବଂ ଏକ ଖାଲି (ଗ୍ଲେଜ୍ ନଥିବା) ତଳ. ଝରୁଥିବା ଗ୍ଲେଜ୍ ଧରିବା ପାଇଁ ପ୍ରତ୍ୟେକକୁ ଏକ ଛୋଟ ଥାଳି ବା ବିସ୍କର ଏକ ଛୋଟ ଖଣ୍ଡ ଉପରେ, ବା କିଲ୍ନ୍ ୱାସ୍ ଲଗା ସେଲ୍ଫ ଉପରେ ରଖନ୍ତୁ. ଏକ **ୱିଟନେସ୍ କୋନ୍** (ସାକ୍ଷୀ କୋନ୍){{en: witness cone}}, ଏକ ଛୋଟ ସେରାମିକ୍ କୋନ୍ ଯାହା ଯଥେଷ୍ଟ ତାପ ପାଇଲେ ନଇଁଯାଏ, ଟାଇଲ ପାଖରେ ରଖନ୍ତୁ ଯେପରି ସେଗୁଡ଼ିକ କେତେ ତାପ ପାଇଲା ତାହା ଦେଖାଯିବ; [ସାଧାରଣ କିଲ୍ନ୍ ଫାୟାରିଂ](/guides/firing) ଗାଇଡ୍ କୋନ୍ ବିଷୟରେ ବୁଝାଏ. ପ୍ରତ୍ୟେକ ଟାଇଲକୁ ଏକ ଛୋଟ କୋଡ୍ ଦିଅନ୍ତୁ, ଏବଂ ଆପଣଙ୍କ ରେକର୍ଡରେ ରେସିପି ପାଖରେ ତାହା ଲେଖନ୍ତୁ. Ceramic Arts Network ପାଇଁ ଲେଖୁଥିବା Willers ସଂଖ୍ୟା ଓ ଅକ୍ଷର ବ୍ୟବହାର କରନ୍ତି, ଏବଂ ନୋଟବୁକର ଆରମ୍ଭରେ ସେହି ବ୍ୟବସ୍ଥା ନିଜେ ଲେଖନ୍ତି.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### ଲାଇନ୍ ବ୍ଲେଣ୍ଡ୍
+### Line blends
 
-ଏକ **ଲାଇନ୍ ବ୍ଲେଣ୍ଡ୍**{{en: line blend}} ହେଉଛି ପରୀକ୍ଷାର ଏକ ଧାଡ଼ି ଯାହା ଗୋଟିଏ ମିଶ୍ରଣରୁ ଅନ୍ୟଟିକୁ ସମାନ ଭାବେ ଧାପେ ଧାପେ ଯାଏ: ଗୋଟିଏ ଗ୍ଲେଜରୁ ଦ୍ୱିତୀୟକୁ, ବା ଏକ ବେସ୍ ଗ୍ଲେଜରୁ ଅଧିକ କଲରାଣ୍ଟ ଥିବା ସେହି ଗ୍ଲେଜକୁ. ଉଦାହରଣ ସ୍ୱରୂପ, Derek Au ଏକ କ୍ଲିୟର୍ ବେସ୍ ଦେଇ ଲୁହା ଅକ୍ସାଇଡକୁ 1% ବୃଦ୍ଧିରେ ଧାପେ ଧାପେ ବଢ଼ାନ୍ତି. Ian Currie ନାମ ସହିତ ଜଡ଼ିତ ଏକ ଆୟତନ ପଦ୍ଧତି ସମୟ ବଞ୍ଚାଏ, କାରଣ ଆପଣ କେବଳ ଦୁଇ ପ୍ରାନ୍ତ ମିଶାନ୍ତି:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. ଦୁଇ ଶେଷ ଗ୍ଲେଜ୍, A ଓ B, ସମାନ ଆକାରର ବ୍ୟାଚ୍ ଭାବେ ମିଶାନ୍ତୁ, ଏବଂ ଦୁଇଟିକୁ ଛାଣନ୍ତୁ.
-2. କମ୍ ଆୟତନ ଥିବାଟିରେ ପାଣି ମିଶାନ୍ତୁ ଯେପରି ଦୁଇଟିର ଓଦା ଆୟତନ ଠିକ୍ ସମାନ ହେବ.
-3. ଦୁଇଟିକୁ ଘାଣ୍ଟନ୍ତୁ, ତା’ପରେ ପ୍ରତ୍ୟେକ ମିଶ୍ରଣକୁ ସିରିଞ୍ଜରେ ଟାଣି ତା’ର ନିଜର ନମ୍ବର ଲେଖା କପରେ ଭରନ୍ତୁ.
-4. ପ୍ରତ୍ୟେକ କପ୍ ଘାଣ୍ଟି ଏକ ଟାଇଲ୍ ବୁଡ଼ାନ୍ତୁ.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-ଆମର ହିସାବ କରାଯାଇଥିବା ଉଦାହରଣରେ, A ହେଉଛି ଏକ କ୍ଲିୟର୍ ବେସର 100 g, ଏବଂ B ହେଉଛି ସେହି ଜିନିଷ ଯେଥିରେ 4 g ରେଡ୍ ଆଇରନ୍ ଅକ୍ସାଇଡ୍ ଯୋଗ କରାଯାଇଛି (4% ଯୋଗ). B ମିଶ୍ରଣର ପ୍ରତ୍ୟେକ ମିଲିଲିଟରରେ A ମିଶ୍ରଣର ଏକ ମିଲିଲିଟର ପରି ସମାନ ଭାଗ ବେସ୍ ଥାଏ, ସହିତ ଏହାର ଲୁହା, ତେଣୁ କପଗୁଡ଼ିକ ଲୁହା ବିନା ଆରମ୍ଭ କରି 4% ପର୍ଯ୍ୟନ୍ତ 1% ଧାପରେ ଯାଏ. ପ୍ରତ୍ୟେକ ପ୍ରାନ୍ତ ମିଶ୍ରଣକୁ 100 mL ଦିଏ, ଯାହାକୁ ଆମର ଅନୁମାନ ଅନୁସାରେ ଏକ 100 g ବ୍ୟାଚ୍ ପୂରଣ କରେ.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: ଏକ ପାଞ୍ଚ-ଧାପ ଲୁହା ଲାଇନ୍ ବ୍ଲେଣ୍ଡ୍, କପ୍ ପିଛା 40 mL (ଆମର ହିସାବ କରାଯାଇଥିବା ଉଦାହରଣ)
-Label: ଲାଇନ୍ ବ୍ଲେଣ୍ଡ୍ ଉଦାହରଣ
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| କପ୍ | କ୍ଲିୟର୍ ବେସ୍ (A) | 4% ଲୁହା ସହିତ ବେସ୍ (B) | ଲୁହା ଅକ୍ସାଇଡ୍, ବେସର % |
-| --- | ---------------: | --------------------: | --------------------: |
-| 1   |            40 mL |                  0 mL |                     0 |
-| 2   |            30 mL |                 10 mL |                     1 |
-| 3   |            20 mL |                 20 mL |                     2 |
-| 4   |            10 mL |                 30 mL |                     3 |
-| 5   |             0 mL |                 40 mL |                     4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-ଏହି ପଦ୍ଧତିରେ ସାବଧାନ ହିସାବ, ସମାନ ଆପେକ୍ଷିକ ଘନତ୍ୱର ଭଲ ଭାବେ ମିଶାଯାଇଥିବା ପ୍ରାନ୍ତ, ଏବଂ ଏକ ସଠିକ୍ ଓଜନ ଯନ୍ତ୍ର ଦରକାର. Derek Au ଆୟତନ ବଦଳରେ ଓଜନ ଅନୁସାରେ ମଧ୍ୟ ମିଶାନ୍ତି. ଏକ **ଟ୍ରାଇଆକ୍ସିଆଲ୍ ବ୍ଲେଣ୍ଡ୍** ତିନିଟି ପ୍ରାନ୍ତ ସହିତ ସେହି ଏକା କାମ କରେ, ଯାହା ଏକ ତ୍ରିଭୁଜ ଉପରେ ସଜାଯାଇଥାଏ.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> ଯେତେବେଳେ ଏକ ଧାପ ଆଶାଜନକ ଦେଖାଯାଏ, [ରେସିପି ପୃଷ୍ଠା](/recipe) ଉପରେ **କପି ଭାବେ ସଞ୍ଚୟ କରନ୍ତୁ** ଏହାକୁ ନିଜର ଏକ ରେସିପି ଭାବେ ରଖେ ଓ ମୂଳଟିକୁ ଯେପରି ଥିଲା ସେପରି ଛାଡ଼ିଦିଏ.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## ରେକର୍ଡ ରଖିବା {#records}
 

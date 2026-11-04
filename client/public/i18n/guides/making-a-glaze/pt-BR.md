@@ -213,50 +213,50 @@ A **goma CMC** (carboximetilcelulose) deixa o esmalte líquido mais pegajoso e m
 
 A **bentonita**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os esmaltes de imersão costumam contar com 15 a 25% de argila crua para isso. Para uma receita com pouca argila, cerca de 1 a 3% de bentonita ajuda; a Digitalfire diz que um esmalte com mais de 15% de argila não deve precisar de bentonita a mais de 1% do peso do esmalte seco.
 
-## Provas e misturas lineares {#testing}
+## Test tiles and line blends {#testing lang=en}
 
-### Comece pequeno
+### Start small
 
-Derek Au avança em três etapas: um teste de 50 ou 100 g, um ensaio de 1 a 2 kg se der certo e depois um lote de ateliê de 5 a 10 kg. Pela nossa estimativa, um teste de 100 g com {{SG 1.45}} rende cerca de 135 mL (cerca de 4½ US fl oz) de esmalte líquido, o bastante para mergulhar algumas provas pequenas em um copo estreito.
+Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
 
-### Teste na sua própria argila
+### Test on your own clay
 
-Um esmalte pode ficar bem diferente em outra argila ou em outro forno: o Clay Art Center testou cada um de seus esmaltes reformulados em quatro massas{{en: clay body}}, no cone 6 e no cone{{en: cone}} 10. O guia para iniciantes sobre teste de esmaltes da Potclays sugere:
+A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
 
-- 6 a 10 **provas** (pequenas peças para experimentar um esmalte) da argila que você realmente vai usar, anotando se estão queimadas em biscoito{{en: bisque}} ou em ponto de osso
-- uma mudança de cada vez
-- uma imersão simples e uma dupla, para ver o esmalte fino e grosso
-- todas as provas na mesma fornada
-- uma marca em cada prova antes da queima, com um carimbo, uma incisão ou um lápis para pintura sob esmalte.
+- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
+- one change at a time
+- a single dip and a double dip, to see the glaze thin and thick
+- every tile in the same kiln load
+- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
 
-Sugerimos provas que fiquem em pé, já que uma prova deitada esconde até onde o esmalte escorre, com uma faixa texturizada para mostrar como o esmalte se comporta nas bordas e um pé sem esmalte. Apoie cada uma em um pratinho ou em um pedaço de biscoito, ou em uma placa com protetor de placas, para aparar os pingos. Ponha um **cone testemunho**, um pequeno cone cerâmico que dobra quando recebeu calor suficiente, perto das provas para mostrar o que elas receberam; o [guia de queima](/guides/firing) explica os cones. Dê a cada prova um código curto e anote-o junto da receita nos seus registros. Willers, escrevendo para a Ceramic Arts Network, usa números e letras, e escreve o próprio sistema na frente do caderno.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
-### Misturas lineares
+### Line blends
 
-Uma **mistura linear** é uma fileira de testes que varia por igual de uma mistura para outra: de um esmalte para um segundo, ou de um esmalte-base para o mesmo esmalte com mais corante. Derek Au, por exemplo, varia o óxido de ferro em uma base transparente em passos de 1%. Um método volumétrico associado a Ian Currie poupa tempo, porque você mistura só as duas pontas:
+A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
 
-1. Misture os dois esmaltes das pontas, A e B, em lotes do mesmo tamanho, e peneire os dois.
-2. Acrescente água ao que tem menos volume até os dois terem exatamente o mesmo volume úmido.
-3. Mexa os dois, depois retire cada mistura com uma seringa para o seu próprio copo numerado.
-4. Mexa cada copo e mergulhe uma prova.
+1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
+2. Add water to the one with less volume until both have exactly the same wet volume.
+3. Stir both, then draw each mix with a syringe into its own numbered cup.
+4. Stir each cup and dip a tile.
 
-No nosso exemplo resolvido, A são 100 g de uma base transparente, e B é a mesma com 4 g de óxido de ferro vermelho acrescentados (um acréscimo de 4%). Cada mililitro de B tem a mesma parte de base que um mililitro de A, mais o seu ferro, então os copos vão de nenhum ferro a 4% em passos de 1%. Cada ponta dá 100 mL à mistura, que um lote de 100 g cobre pela nossa estimativa.
+In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
 
-Table: Uma mistura linear de ferro em cinco passos, 40 mL por copo (nosso exemplo resolvido)
-Label: Exemplo de mistura linear
+Table: A five-step iron line blend, 40 mL per cup (our worked example)
+Label: Line blend example
 
-| Copo | Base transparente (A) | Base com 4% de ferro (B) | Óxido de ferro, % da base |
-| ---- | --------------------: | -----------------------: | ------------------------: |
-| 1    |                 40 mL |                     0 mL |                         0 |
-| 2    |                 30 mL |                    10 mL |                         1 |
-| 3    |                 20 mL |                    20 mL |                         2 |
-| 4    |                 10 mL |                    30 mL |                         3 |
-| 5    |                  0 mL |                    40 mL |                         4 |
+| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
+| --- | -------------: | --------------------: | --------------------: |
+| 1   |          40 mL |                  0 mL |                     0 |
+| 2   |          30 mL |                 10 mL |                     1 |
+| 3   |          20 mL |                 20 mL |                     2 |
+| 4   |          10 mL |                 30 mL |                     3 |
+| 5   |           0 mL |                 40 mL |                     4 |
 
-O método pede contas cuidadosas, pontas bem misturadas e de densidade igual, e uma balança precisa. Derek Au também mistura por peso em vez de por volume. Uma **mistura triaxial** faz o mesmo com três pontas, dispostas em um triângulo.
+The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
 
 > [!NOTE]
-> Quando um passo parecer promissor, **Salvar como cópia** na [página de receita](/recipe) o guarda como uma receita própria e deixa a original como estava.
+> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
 
 ## Mantendo registros {#records}
 
