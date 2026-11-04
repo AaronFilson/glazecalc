@@ -243,5 +243,19 @@
     "loading": "Ag lódáil na leabharlainne…",
     "failed": "Níorbh fhéidir an leabharlann a lódáil. Bain triail eile as ar ball.",
     "choosePrompt": "Roghnaigh do thír nó do réigiún chun a fheiceáil cad a dhíoltar ansin."
+  },
+  "stull": {
+    "title": "Cairt Stull: silice i gcomparáid le halúmana san fhoirmle Seger",
+    "regions": {
+      "unfused": "neamhleáite",
+      "matte": "neamhlonrach",
+      "semi-matte": "leath-neamhlonrach",
+      "bright": "lonrach",
+      "underfired": "tearcbhácáilte",
+      "crazed": "snáithlíonraithe"
+    },
+    "keyBright": "Líne phoncáilte: san áit a raibh glónraí Stull ar an gceann is lonraí.",
+    "keyCrazed": "Línte caola: san áit ar shnáithlíonraigh siad.",
+    "note": "Treoir, ní tuar. Bhácáil R. T. Stull (Transactions of the American Ceramic Society, 1912) ag cón 11 le floscanna socraithe ag 0.3 K₂O agus 0.7 CaO; athraíonn floscanna agus bácálacha eile na limistéir, agus d’fhéadfadh neamhlonrach tearcbhácáilte a bheith ar an gcairt mar lonrach. Is iad na limistéir mar a tharraingíonn Glazy iad."
   }
 }

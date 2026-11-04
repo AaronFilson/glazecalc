@@ -3,20 +3,20 @@ title: Glazūravimas nuo pagrindų
 lead: Iš ko sudaryta glazūra, kaip krosnis ją paverčia stiklu, ir visų žodžių, kuriuos sutiksite recepte, ant žaliavos maišo ar piroskopų lentelėje, paaiškinimai.
 ---
 
-## Kas yra glazūra {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-**Glazūra**{{en: glaze}} – tai plona stiklo danga, prilydyta prie dirbinio. Glazy, atvira glazūrų receptų duomenų bazė, ją vadina „stiklo formule, pritaikyta tam tikroje temperatūroje išsilydyti ir prisilydyti prie molio“. Ji užnešama miltelių sluoksniu ir krosnyje išsilydo į stiklišką dangą, kuri sandariai padengia molį, todėl indas rečiau prateka, rečiau įgauna dėmių ir mažiau dėvisi. Pasiekus aukščiausią degimo temperatūrą, lydalas dar ir reaguoja su moliu, ir tarp jų dažnai susidaro tarpinis sluoksnis, kuris tvirtai sukabina glazūrą. Ant žemo degimo keramikos{{en: earthenware}} glazūra lieka paviršiuje kaip atskiras sluoksnis; ant akmens masės{{en: stoneware}} ji įsilydo į šukę{{en: body}}.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Recepte išvardytos žaliavos, pavyzdžiui, lauko špatas{{en: feldspar}}, kreida{{en: whiting}} ir kaolinas{{en: kaolin}}. Krosnyje dalis kiekvienos iš jų išeina dujomis (vanduo ar anglies dioksidas), o likusi dalis virsta **oksidais** – cheminių elementų junginiais su deguonimi, pavyzdžiui, silicio dioksidu{{en: silica}} (SiO₂) ar kalcio oksidu (CaO). Išdegtas stiklas sudarytas iš oksidų, todėl keramikai glazūrą apibūdina pagal juos. Kiekvienas oksidas atlieka vieną iš trijų darbų.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- **Silicio dioksidas** (SiO₂) yra **stiklą sudarantis oksidas**{{en: glass former}}: iš jo susidaro stiklas. Grynas silicio dioksidas lydosi aukštesnėje nei {{3100 °F; 1700 °C}} temperatūroje – kur kas karštesnėje, nei pasiekia keramikos krosnis, o glazūra, kurioje daug silicio dioksido, paprastai būna atsparesnė.
-- **Fliusai**{{en: fluxes}} sumažina lydymosi temperatūrą iki tokios, kurią krosnis gali pasiekti. **Šarmai**, žymimi **R₂O**, – tai natrio, kalio ir ličio oksidai (Na₂O, K₂O, Li₂O); jie veikia nuo piroskopo{{en: cone}} 06 ir toliau – vidutiniame ir aukštame degime. **Šarminių žemių metalų oksidai**, žymimi **RO**, – tai kalcio, magnio, bario ir stroncio oksidai (CaO, MgO, BaO, SrO), prie kurių priskiriamas ir cinko oksidas (ZnO); jie geriausiai veikia nuo piroskopo 5 iki piroskopo 10. R reiškia bet kurį tos grupės metalą.
-- **Aliuminio oksidas** (Al₂O₃) yra **stabilizatorius**{{en: stabilizer}}. Jis padaro lydalą klampesnį, kad glazūra laikytųsi ant stačių sienelių, ir suteikia kietumo bei atsparumo. Glazy įspėja: kai aliuminio oksido per mažai, „glazūra gali nubėgti; per didelis kiekis gali taip sutirštinti lydalą, kad glazūra taps matinė“. Aliuminio oksidas gaunamas daugiausia iš molio ir lauko špato.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boras** (B₂O₃) šią ribą sulieja. Chemikai jį priskiria stiklą sudarantiems oksidams, tačiau dirbtuvių krosnių temperatūrose jis veikia kaip fliusas, ir keramikai jį taip ir traktuoja. Jis labai svarbus ties piroskopais 5–6 ir nereikalingas aukštame degime. (Piroskopai, pagal kuriuos keramikai vadina degimą, paaiškinti toliau.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Vienas būdas tai įsiminti: silicio dioksidas yra stiklas, fliusai leidžia jam išsilydyti tokioje temperatūroje, kurią jūsų krosnis gali pasiekti, o aliuminio oksidas jį sutirština, kad jis liktų ten, kur jį užnešėte.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Molis, dangos ir du degimai {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Skelbiamos temperatūros skiriasi. Glazy nurodo, kad aukštas degimas, piroskopa
 
 Už Šiaurės Amerikos ribų tiekėjai dažnai nurodo °C, o ne piroskopą. Šiuolaikinį piroskopą sukūrė Hermannas Segeris – pirmą kartą jis panaudotas Berlyne 1886 m., o Jungtinė Karalystė turėjo savus Staffordshire piroskopus; nereikėtų manyti, kad jų numeriai atitinka Ortono numerius, o lentelės jiems perskaičiuoti neradome. Apie piroskopus išsamiau rašoma vadove [Degimas paprastoje krosnyje](/guides/firing).
 
-## Nuo recepto iki Segerio formulės {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**Receptas** – tai žaliavų sąrašas masės dalimis, paprastai perskaičiuotas taip, kad bazinės glazūros žaliavų suma būtų 100. **Priedai** (dažikliai{{en: colorants}}, drumstikliai ir nusėdimą stabdančios priemonės) dedami papildomai prie šių 100, paprastai kaip bazinės glazūros procentas. Norėdami pamatyti, kas iš tikrųjų yra glazūra{{en: glaze}}, keramikai receptą perskaičiuoja į **Segerio formulę**{{en: unity molecular formula}} (**UMF**), pavadintą Hermanno Segerio vardu – jis pirmasis panaudojo jos išdėstymą trimis stulpeliais.
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: Nuo recepto iki Segerio formulės: Glazy pavyzdys
-Label: Nuo recepto iki Segerio formulės
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Žingsnis           | Kas vyksta                                                                                                                           | Pavyzdyje                                                                                                                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Receptas        | Žaliavos masės dalimis, perskaičiuotos iki 100                                                                                       | Be kitų, lauko špatas{{en: feldspar}} 40 %                                                                                                      |
-| 2. Oksidų analizė  | Kaip maisto produkto maistingumo etiketė: visų žaliavų oksidai sudedami masės procentais, o dujos atmetamos                          | Lauko špate yra 64,8 % silicio dioksido, tad jo 40 % duoda 25,9 % SiO₂. Išdegtą glazūrą sudaro 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
-| 3. Moliai          | Masės paverčiamos **moliais (mol)**, t. y. molekulių skaičiumi, nes „gramai gali klaidinti, kadangi vieni oksidai sunkesni už kitus“ | 60,1 g SiO₂ yra 1 mol, tad 67,4 g – apie 1,12 mol                                                                                               |
-| 4. Segerio formulė | Viskas padalijama iš fliusų sumos, tad fliusų suma tampa lygi 1                                                                      | Fliusų suma 0,303; padalijus gaunama K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                  |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-Programos Glazecalc [recepto puslapis](/recipe) visus keturis žingsnius atlieka jums berašant ir rezultatą rodo trimis stulpeliais: fliusai{{en: fluxes}} (R₂O ir RO), kurių suma lygi 1; stabilizatoriai{{en: stabilizers}} (R₂O₃: aliuminio oksidas, prie jų dažnai priskiriamas ir boras); stiklą sudarantys oksidai{{en: glass formers}} (RO₂: silicio dioksidas{{en: silica}}). „Suvedimas į vienetą tėra mastelio keitimo įrankis“, – sako Glazy: du receptai iš skirtingų žaliavų, bet su ta pačia Segerio formule, „išdegti elgiasi beveik vienodai“. Taigi 1 yra bendras matas, o ne kiekis, kurį sveriate. Digitalfire priduria, kad metodas „ne taip gerai veikia žemesnėse temperatūrose“, kur boras nėra paprastas fliusas, ir kad Segerio formulės yra „lyginamosios ir geriausiai vertinamos kontekste“. Mygtukas **Palyginti** sugretina dviejų receptų formules oksidą po oksido.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Silicio dioksido ir aliuminio oksido santykis
+### The silica to alumina ratio
 
-Naudingiausias vienas skaičius – **silicio dioksido ir aliuminio oksido santykis**{{en: silica to alumina ratio}}: silicio dioksidas, padalytas iš aliuminio oksido. Pavyzdyje 3,70 ÷ 0,41 yra apie 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Ką rodo silicio dioksido ir aliuminio oksido santykis (Glazy)
-Label: SiO₂ : Al₂O₃ santykis
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-| Santykis | Kaip vertina Glazy                                                |
-| -------: | ----------------------------------------------------------------- |
-|   Apie 9 | Rodo blizgų lydalą, jei pakanka šilumos                           |
-|      5–7 | Būdingas daugeliui stabilių akmens masės{{en: stoneware}} glazūrų |
-|      3–5 | Glazūra gali būti matinė arba nepakankamai išdegta                |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Santykis 5–7 pats savaime nenusako nei blizgesio, nei matiškumo: ribą perstumia ir fliusai, ir boras, ir piroskopas{{en: cone}}. Glazy nurodo, kad stabilių glazūrų įprastas fliusų santykis yra nuo 0,2 R₂O ir 0,8 RO iki 0,3 R₂O ir 0,7 RO. Daugiau šarmų lydalą daro skystesnį ir padidina jo šiluminį plėtimąsi{{en: expansion}}, o kartu ir trūkinėjimo{{en: crazing}} riziką.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Degimo nuostoliai
+### Loss on ignition
 
-**Degimo nuostoliai**{{en: loss on ignition}} (**LOI**) – tai masė, kurios žaliava netenka krosnyje, kai vanduo, anglies dioksidas, organinės medžiagos ar siera išsiskiria dujomis. Išdegta glazūra jų neturi, todėl Segerio formulė jų neįtraukia.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: Įprasti degimo nuostoliai (Digitalfire)
-Label: Degimo nuostoliai
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Žaliava                                              | Įprasti degimo nuostoliai                                                                 |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Kreida{{en: whiting}} (kalcio karbonatas), dolomitas | Daugiau nei 40 %, daugiausia anglies dioksidas: 100 g kalcio karbonato išskiria apie 45 g |
-| Ličio karbonatas                                     | Apie 60 %                                                                                 |
-| Bario karbonatas, Gerstley Borate                    | Daugiau nei 20 %                                                                          |
-| Kaolinas                                             | Apie 12 %, daugiausia jo kristaluose surištas vanduo                                      |
-| Lauko špatai                                         | Mažiau nei 1 %                                                                            |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Dujos, kurios išsiskiria glazūrai jau pradėjus lydytis, turi prasiveržti pro ją ir, Digitalfire žodžiais, sukelia „burbuliukus, pūsleles, adatines skylutes{{en: pinholes}}, susitraukimą{{en: crawling}}“. Talkas dujas išskiria ilgai – iki maždaug {{1650 °F; 899 °C}}. Padeda fritai{{en: frits}}, **kalcinuotos** žaliavos (iš anksto įkaitintos, kad iš jų išeitų dujos) ir degimo pakeitimai.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-Senesnėse knygose šie skaičiavimai atliekami ranka, naudojant **molekulinę masę** (1 mol žaliavos ar oksido masę) ir **ekvivalentinę masę** (žaliavos masę, kuri duoda 1 mol oksido). Mūsų skaičiavimu, apie 100 g kreidos duoda 1 mol, t. y. 56 g, kalcio oksido. Skaičiuoklė susitvarko su abiem.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Fritai ir žaliavos {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Fritai
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-**Fritas**{{en: frit}} – tai gamykloje pagamintas stiklas: mineralai išlydomi, staigiai atvėsinami vandenyje ir sumalami. Frituojant tirpios žaliavos, pavyzdžiui, boraksas, tampa netirpios, toksiški oksidai, pavyzdžiui, švino ir bario, uždaromi stabiliame stikle, gaunama vienodesnės sudėties žaliava nei nefrituoti mineralai, be to, pašalinamos dujos, todėl glazūros{{en: glazes}} su fritais turi „kur kas mažiau defektų“ (Digitalfire). Fritai taip pat lydosi anksti: natrio fritas veikia jau ties piroskopu{{en: cone}} 06, o lauko špatas{{en: feldspar}} „ties piroskopu 6 tik pradeda minkštėti“. Jie kainuoja brangiau, jiems reikia molio, kad laikytųsi suspensijoje (Digitalfire pavyzdyje – 85 % frito ir 15 % molio), ir jie yra „teoriškai netirpūs, bet praktiškai – ne“.
+::stull-chart
 
-Šiaurės Amerikos fritai vadinami pagal gamintoją ir numerį: fritas Ferro 3134 (Ferro dabar vadinasi Vibrantz) naudojamas maždaug 22 % viešųjų Glazy receptų. Jungtinės Karalystės receptuose dažniau nurodomi bendriniai fritai, pavyzdžiui, standartinis boraksinis fritas.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### Įprastos žaliavos
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Įprastos glazūrų žaliavos ir ką jos duoda
-Label: Įprastos glazūrų žaliavos
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Žaliava (kiti pavadinimai)                                                          | Duoda                  | Pastabos                                                                                                                                                                                                        |
-| ----------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silicio dioksidas{{en: silica}} (kvarcas, titnagas{{en: flint}})                    | SiO₂                   | Glazūroms naudokite 325 mesh – labai smulkaus malimo                                                                                                                                                            |
-| Kaolinas{{en: kaolin}} (JK – china clay; Australija – Eckalite)                     | Al₂O₃, SiO₂            | Pagrindinis aliuminio oksido šaltinis; be to, padeda glazūrai laikytis suspensijoje                                                                                                                             |
-| Plastiškas molis{{en: ball clay}}                                                   | Al₂O₃, SiO₂            | Plastiškesnis už kaoliną, turi daugiau geležies ir organinių medžiagų                                                                                                                                           |
-| Kalio lauko špatas, natrio lauko špatas, nefelino sienitas{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Fliusai{{en: fluxes}} su savo aliuminio oksidu ir silicio dioksidu. Nefelino sienitas – stiprus žemo ir vidutinio degimo fliusas. Senajame recepte parašytas tiesiog „lauko špatas“ gali reikšti bet kurį iš jų |
-| Kreida{{en: whiting}} (kalcio karbonatas)                                           | CaO                    | Pagrindinis kalcio fliusas; išskiria anglies dioksidą                                                                                                                                                           |
-| Volastonitas                                                                        | CaO, SiO₂              | Kalcis be anglies dioksido                                                                                                                                                                                      |
-| Dolomitas, talkas                                                                   | MgO su CaO arba SiO₂   | Šilkiniai matiniai paviršiai; mažesnis plėtimasis                                                                                                                                                               |
-| Cinko oksidas                                                                       | ZnO                    | Blizgesys ir kristalai; per didelis kiekis gali sukelti glazūros susitraukimą{{en: crawling}}                                                                                                                   |
-| Boro fritai, Gerstley Borate, kolemanitas                                           | B₂O₃                   | Būtini nuo piroskopo 06 iki piroskopo 6; fritai yra „vienodesni ir mažiau tirpūs nei nefrituoti boratai“                                                                                                        |
-| Ličio karbonatas                                                                    | Li₂O                   | Mažo plėtimosi fliusas; brangus, todėl naudojamas taupiai                                                                                                                                                       |
-| Stroncio karbonatas                                                                 | SrO                    | Mažiau toksiškas bario pakaitalas                                                                                                                                                                               |
-| Bario karbonatas                                                                    | BaO                    | Nefrituotas – toksiškas; iš glazūrų, kuriose daug bario, gali išsiskirti metalų{{en: leach}}                                                                                                                    |
-| Bentonitas                                                                          | Suspensijos palaikymas | Labai smulkus molis, paprastai 1–3 %, kad glazūra nenusėstų                                                                                                                                                     |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Glazūrų žaliavos – smulkūs milteliai. Silicio dioksido dulkės kenkia plaučiams, iš pradžių nesukeldamos jokių simptomų, o kai kurios žaliavos, pavyzdžiui, bario karbonatas ir ličio karbonatas, yra nuodingos prarijus. Su milteliais elkitės atsargiai, valykite drėgnu būdu, o dirbdami su sausomis žaliavomis dėvėkite tinkamai priglundantį respiratorių. Kaip tai daryti, paaiškinta vadovuose [Saugus maišymas ir vėdinimas](/guides/safe-mixing) ir [Neapnuodykite savo šeimos](/guides/home-safety).
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Regioniniai pavadinimai
+### Regional names
 
-- **Kaolinas** Jungtinėje Karalystėje vadinamas **china clay**; Australijos tiekėjai jį parduoda pavadinimu Eckalite.
-- **Titnagas** (angl. flint) – senesnis Jungtinės Karalystės silicio dioksido pavadinimas. Jungtinės Karalystės tiekėjai iki šiol parduoda **kalcinuotą titnagą** kaip atskirą produktą, todėl „flint“ britų recepte greičiausiai reiškia kalcinuotą titnagą, o amerikiečių – greičiausiai kvarco miltelius. Abu parduodami kaip silicio dioksido šaltiniai; patikrinkite cheminę analizę.
-- **China stone** ir **Cornish stone** (Cornwall stone) yra ta pati žaliava – Kornvalio akmuo, giminiškas lauko špatui.
-- **Kreida** (angl. whiting) – tai kalcio karbonatas; Vokietijos tiekėjai ją vadina Kreide (kreida).
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Žaliavą vertinkite pagal oksidus, kuriuos ji duoda, o ne pagal pavadinimą. Taip veikia ir programa Glazecalc: [puslapyje Žaliavos](/material) galite įvesti tiekėjo pateiktą cheminę analizę, o funkcijos **Išbandyti šiuolaikines žaliavas ir palyginti**, **Pasiūlyti kiekius ir palyginti** ir **Sudaryti iš to, ką turiu** derina oksidus po degimo, o ne pavadinimus.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Keičiasi ir pačios žaliavos. Lauko špatas Custer nebegaminamas nuo 2023 m. Pirminė Gerstley Borate kasykla uždaryta apie 1999–2000 m.; Laguna iki šiol parduoda produktą tuo pačiu pavadinimu, o pagrindinis pakaitalas – Gillespie Borate. Šaltiniai nesutaria, ar Gillespie pakeičia Gerstley Borate svaras už svarą (jo gamintojas ir Potclays sako, kad taip, Digitalfire ir kiti – kad ne), todėl palyginkite abi žaliavas programoje Glazecalc, o paskui išbandykite nedidelį užmaišą.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Dažikliai ir drumstikliai {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**Dažiklis**{{en: colorant}} – tai metalo oksidas ar karbonatas, kuris nuspalvina glazūrą{{en: glaze}}; **keramikos pigmentas**{{en: stain}} – gamykloje pagamintas dažiklis, stabilesnis ir vienodesnis nei paprasti oksidai. Dažiklių paprastai būna mažiau nei 5 % bazinės glazūros, daugelio – mažiau nei 1 %, o karbonatas yra maždaug perpus silpnesnis už atitinkamą oksidą.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Įprasti dažikliai, procentais nuo bazinės glazūros
-Label: Įprasti dažikliai
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Dažiklis            | Įprastas pradinis kiekis                           | Spalvos ir pastabos                                                                                                                                                                                                                  |
-| ------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Kobaltas            | 0,1–2 % (šaltiniai nesutaria)                      | Mėlyna; labai stiprus; jei bazinėje glazūroje yra magnio, spalva krypsta į violetinę                                                                                                                                                 |
-| Geležis             | 0,5–10 %                                           | Oksidacinėje atmosferoje{{en: oxidation}} – rudos, gelsvai rudos ir raudonos; redukcinėje atmosferoje{{en: reduction}} ½–2 % duoda seladoną, o 5–6 % – temmoku. Geležis yra fliusas{{en: flux}}, todėl, kai jos daug, glazūra nubėga |
-| Varis               | 1–3 %                                              | Oksidacinėje atmosferoje – žalia arba turkio, redukcinėje – raudona. Dėl jo iš glazūros gali išsiskirti metalų{{en: leach}}                                                                                                          |
-| Chromas             | Nuo mažiau nei 0,5 % iki 2 % (šaltiniai nesutaria) | Žalia; ruda, jei bazinėje glazūroje yra cinko, rožinė – su alavu                                                                                                                                                                     |
-| Manganas            | 2–10 %                                             | Rudos ir violetinės                                                                                                                                                                                                                  |
-| Rutilas             | Apie 2–5 %                                         | Dėmėta, marga spalva; kai daugiau nei maždaug 5 %, paviršius šiurkštus ar matinis                                                                                                                                                    |
-| Keramikos pigmentai | 2–12 %                                             | 2–4 % – švelniems atspalviams, 5–8 % – vidutiniams tonams, 10–12 % – sodrioms spalvoms                                                                                                                                               |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-Dėl kobalto ir chromo kiekių iš tiesų ginčijamasi. Glazy teigia, kad mėlynai spalvai pakanka 0,1 % kobalto; Glendale Community College nurodo ½–2 % arba ½–3 %, priklausomai nuo atmosferos; Birdie Boone žurnale „Pottery Making Illustrated“ rašo: 3 % ar mažiau. Chromo, pasak Boone, reikia mažiau nei 0,5 %, o pasak Glendale – 2–3 %. Saugiausia pradėti nuo mažo kiekio ir pasidaryti **linijinę bandinių seriją**{{en: line blend}}: eilę bandinių{{en: test tiles}}, kuriuose vienos sudedamosios dalies kiekis žingsniais didinamas nuo mažo iki didelio.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Bazinė glazūra keičia spalvą. Blizgi, skaidri bazinė glazūra duoda ryškiausią spalvą; šilko blizgesio ir matinės bazinės glazūros, kuriose paprastai daugiau aliuminio oksido, ją prislopina. Magnis kobaltą pastumia violetinės link, cinkas chromą paverčia rudu, o chromas su alavu duoda rožinę.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Drumstikliai
+### Opacifiers
 
-**Drumstiklis** glazūrą padaro **nepermatomą** – ji uždengia molį; pro **skaidrią** glazūrą molis matyti.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Drumstikliai
+Table: Opacifiers
 
-| Drumstiklis                                               | Įprastas kiekis                | Pastabos                                                                                                          |
-| --------------------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Cirkonio silikatas (Zircopax, Superpax, Ultrox, Zircosil) | 8–12 % visiškam nepermatomumui | Pigesnis pasirinkimas; šie prekių ženklai – ta pati žaliava, sumalta skirtingu smulkumu                           |
-| Alavo oksidas                                             | Apie 5–7 % (mūsų įvertinimas)  | Brangus; redukcinėje atmosferoje drumsčia prastai                                                                 |
-| Titano dioksidas                                          | Daugiau nei 2 %                | Šilkinis, peršviečiamas drumstumas; esant 10 % ar daugiau – matinis, faktūriškas paviršius su matomais kristalais |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Glazūros ir šukės suderinamumas bei defektai {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-Ir molis, ir glazūra{{en: glaze}} kaistant plečiasi, o vėstant traukiasi, kiekvienas savo mastu: tai jų **šiluminis plėtimasis**{{en: thermal expansion}}. **Glazūros ir šukės suderinamumas**{{en: glaze fit}} rodo, kaip gerai šie dydžiai dera. Kai jie gerai suderinti, šukė glazūrą šiek tiek suspaudžia; Digitalfire teigia, kad nedidelis suspaudimas dirbinius sutvirtina, o per didelis gali juos susilpninti ir net suskaldyti.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Trūkinėjimas ir glazūros atšokimas
+### Crazing and shivering
 
-**Trūkinėjimas**{{en: crazing}} – tai smulkių įtrūkimų tinklas. Glazūros plėtimasis didesnis nei šukės{{en: body}}, todėl vėsdama ji susitraukia labiau, yra ištempiama ir sutrūkinėja – dažniausiai dėl per didelio natrio ir kalio (Na₂O, K₂O) kiekio. Trūkinėjimas gali atsirasti ir vėliau, naudojant dirbinį, po pakartotinio staigaus atvėsimo, pavyzdžiui, nuo sąlyčio su šaltais skysčiais. Kai jis norimas, kaip raku keramikoje, vadinamas **krakle**. Digitalfire teigia: „95 % atvejų sprendimas – pakoreguoti glazūros šiluminį plėtimąsi“; reguliuojamas aušinimas trūkinėjimą tik atitolina. Digitalfire siūlomas bandymas: įkaitinkite dirbinį iki maždaug {{300 °F; 149 °C}}, panardinkite į vandenį su ledu ir patrinkite flomasteriu, kad išryškėtų įtrūkimai.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Šaltiniai nesutaria, ką daryti pirmiausia. Glazy siūlo pridėti silicio dioksido ar aliuminio oksido; Digitalfire atsako, kad papildomas silicio dioksidas „tik praskiedžia KNaO“ (natrį ir kalį); Linda Bloomfield prideda boro arba sumažina lauko špato{{en: feldspar}} kiekį, keisdama po vieną žaliavą. Mūsų patarimas: [receptų skaičiuoklėje](/recipe) dalį natrio ir kalio pakeiskite mažesnio plėtimosi fliusais{{en: fluxes}} (boru, ličiu, magniu, kalciu), pokytį patikrinkite mygtuku **Palyginti** ir patvirtinkite bandymu vandeniu su ledu.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-**Glazūros atšokimas**{{en: shivering}} – priešingas reiškinys: glazūros plėtimasis daug mažesnis nei šukės, todėl ji būna per daug suspausta ir atšoka nuo kraštų ir briaunų. Digitalfire įspėja, kad skeveldros gali būti aštrios kaip skustuvas ir gali būti prarytos, o Glazy atšokimą vadina „dar pavojingesniu nei trūkinėjimas ant buitinių indų“. Sprendimas – didesnio plėtimosi glazūra arba mažesnio plėtimosi molio masė.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Nenaudokite dirbinių su sutrūkinėjusia ar atšokusia glazūra maistui ar gėrimams. Šaltiniai nesutaria, ar sutrūkinėjusios glazūros indus galima pakankamai gerai išplauti (vienas teigia, kad užtenka indaplovės; kitas sutrūkinėjusios glazūros buitinius indus laiko brokuotais), todėl mes laikomės atsargesnės nuomonės.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Blizgios ir matinės glazūros
+### Gloss and matte
 
-**Blizgus** paviršius atspindi šviesą ir yra lygus, **šilko blizgesio** paviršius švyti prislopintai, o **matinis** yra blankus. Blizgesiui reikia visiškai išsilydžiusio stiklo. Matiškumą gali lemti didelis aliuminio oksido kiekis (mažas silicio dioksido ir aliuminio oksido santykis{{en: silica to alumina ratio}}), fliusai, pavyzdžiui, kalcis, magnis, baris ar stroncis, glazūrai vėstant sudarantys smulkius kristalus, arba nepakankamas išdegimas.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Dažni defektai
+### Common defects
 
-Keiskite po vieną dalyką ir pasilikite bandinius{{en: test tiles}}.
+Change one thing at a time, and keep your test tiles.
 
-Table: Dažni glazūros defektai, įprastos jų priežastys ir ką daryti pirmiausia
-Label: Dažni glazūros defektai
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Defektas                               | Kaip atrodo                                                   | Dažnos priežastys                                                                                                                                         | Ką daryti pirmiausia                                                                                                             |
-| -------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Glazūros susitraukimas{{en: crawling}} | Glazūra susitraukia į lašelius, palikdama plikus molio plotus | Dulkėtas ar riebaluotas biskvitas{{en: bisque}}; storas, daug molio turintis sluoksnis, kuris džiūdamas suskilinėjo; cinkas, cirkonio silikatas ar alavas | Nuvalykite biskvitą; glazūruokite plonesniu sluoksniu; dalį molio kalcinuokite; įdėkite rišiklio, pavyzdžiui, glazūros klijų CMC |
-| Adatinės skylutės{{en: pinholing}}     | Mažos skylutės ar duobutės                                    | Dujos iš šukės ar glazūros, po kurių paviršius neužsilydė; nepakankamai išdegta ar klampi glazūra                                                         | Išlaikykite{{en: hold}} aukščiausioje temperatūroje apie pusvalandį; glazūruokite plonesniu sluoksniu; mažiau cinko ar rutilo    |
-| Pūslėjimas                             | Aštriabriauniai krateriai                                     | Dažniausiai perdegimas; labai stori sluoksniai; lakūs fliusai, kai temperatūra viršija maždaug {{2192 °F; 1200 °C}}                                       | Degkite žemesnėje temperatūroje; glazūruokite plonesniu sluoksniu. Dėl aštrių briaunų buitiniai indai tampa nesaugūs             |
-| Glazūros nubėgimas                     | Glazūra nuteka ant krosnies plokštės                          | Per mažai aliuminio oksido; per storas sluoksnis, pavyzdžiui, ten, kur užlieta du kartus; daug geležies                                                   | Glazūruokite plonesniu sluoksniu; pridėkite aliuminio oksido; glazūrą baikite gerokai virš dugno                                 |
-| Aušimo įtrūkimai{{en: dunting}}        | Dirbinio įtrūkimai aušinant ar kaitinant                      | Greitas aušinimas pro kvarco virsmą{{en: quartz inversion}}, {{1063 °F; 573 °C}}; nevienodo storio sienelės; prastas suderinamumas                        | Pro {{1063 °F; 573 °C}} kaitinkite ir aušinkite lėtai; vienodo storio sienelės                                                   |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Tinkamumas liestis su maistu {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Metalų išsiskyrimas**{{en: leaching}} – tai metalų tirpimas iš išdegtos glazūros{{en: glaze}} į maistą ar gėrimą; glazūra gali atrodyti nepriekaištingai, o metalai vis tiek išsiskirti. Teisės aktuose numatytuose bandymuose išdegtas dirbinys mirkomas rūgšties tirpale ir matuojama, kiek iš jo išsiskiria švino ir kadmio.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Bešvinė glazūra – dar ne tinkama liestis su maistu
+### Lead-free is not the same as food-safe
 
-JAV, ES, Jungtinės Karalystės ir Australijos taisyklės riboja, kiek švino ir kadmio išskiria išdegtas dirbinys, o ne tai, kas yra glazūros sudėtyje. „Bešvinis“ pašalina vieną pavojų; tai nėra tinkamumo liestis su maistu{{en: food safe}} įvertinimas. Išsiskiria ir kiti oksidai: Glazy įspėja, kad glazūros, kuriose daug bario, „gali išskirti metalų ir paprastai nėra tinkamos liestis su maistu“, Digitalfire teigia, kad varis „gali lemti metalų išsiskyrimą iš glazūros; ištirkite tai“, o Glazy nebepataria naudoti švino glazūrų buitiniams indams.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Vidinė glazūra**{{en: liner glaze}} – tai stabili, dažniausiai skaidri arba balta glazūra paviršiams, kurie liečiasi su maistu. Mūsų nuomone, mažiau rizikinga rinktis tokią, kurioje nėra dažiklių{{en: colorants}}, bario, švino ar ličio, kuri visiškai išsilydo, netrūkinėja{{en: craze}} ir yra atspari dėvėjimuisi. Mažesnė rizika nėra įrodymas.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Ribinės formulės**{{en: limit formulas}} (Digitalfire labiau mėgsta pavadinimą **tikslinės formulės**{{en: target formulas}}) nurodo įprastus stabilių glazūrų Segerio formulės{{en: unity formula}} intervalus tam tikram piroskopui{{en: cone}}: Digitalfire tikslinėse formulėse piroskopui 6 aliuminio oksido nurodyta 0,285–0,64, o silicio dioksido{{en: silica}} – 2,4–4,7. Jos padeda pasukti link patikimos chemijos, bet nieko neįrodo; Digitalfire vengia žodžio „riba“, nes jis leidžia manyti, kad glazūros, patenkančios į šiuos intervalus, „kažkaip yra saugios“. Programos Glazecalc recepto keitimo įrankiai praneša, kai naujasis receptas peržengia rekomenduojamą ribą, pavyzdžiui, kai ties piroskopu 6 yra daug boro, ir ką glazūra greičiausiai darys.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Teisės aktuose nustatytos ribos įvairiose šalyse skiriasi. Lentelėje rodomos jūsų gyvenamosios šalies ribos, tokiais vienetais, kokius nurodo teisės aktas; norėdami palyginti, pasirinkite kitą šalį ar regioną.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-JAV dekoratyvinis keramikos dirbinys, kuris atrodo tinkamas maistui, laikomas indu maistui, nebent jis turi priklijuojamą etiketę ir ant dugno išspaustą ar įdegtą nenusitrinantį užrašą, pavyzdžiui, „Not for Food Use. May Poison Food“ (netinka maistui; gali užnuodyti maistą), arba kiaurymę per paviršių, kuris liestųsi su maistu. ES švino ir kadmio ribas nustato Tarybos direktyva 84/500/EEB, o Jungtinė Karalystė tuos pačius skaičius išlaiko savo teisės aktuose. Nuo 2026 m. gegužės 29 d. Nyderlandai, Belgija ir Liuksemburgas leidžia maždaug 130–150 kartų mažiau švino ir maždaug 15 kartų mažiau kadmio. Australija nustato ribas importuojamiems dirbiniams; oficialios ribos Australijoje ar Naujojoje Zelandijoje pagamintiems dirbiniams neradome.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Tyrimai
+### Testing
 
-FDA teigia, kad buitiniai tyrimo rinkiniai su tamponėliais gali parodyti išsiskiriantį šviną, tačiau Ceramics New Zealand įspėja, kad testiniai pieštukai nėra skirti keramikai ir rodo klaidingai teigiamus rezultatus. Teigiamą rezultatą laikykite priežastimi nebenaudoti dirbinio, o neigiamą – nieko neįrodančiu. Tikrąjį atsakymą duoda išdegto dirbinio laboratorinis metalų išsiskyrimo tyrimas (JAV – ASTM C738; Europoje – EN 1388 arba ISO 6486).
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> „Tinkamas liestis su maistu“ reiškia, kad būtent ši glazūra, ant šios molio masės, išdegta iki šio piroskopo šioje krosnyje ir užnešta šiuo būdu, išskiria mažiau, nei leidžia teisės aktuose nustatytos ribos. Programa Glazecalc gali padėti sudaryti stabilią glazūrą, o funkcija **Pakeisti šviną** gali seną švino glazūros receptą perdaryti be švino, tačiau jokia skaičiuoklė negali dirbinio sertifikuoti. Tai gali tik išdegto dirbinio laboratorinis metalų išsiskyrimo tyrimas.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Santykinis tankis ir glazūros užnešimas {#application}
 
@@ -462,7 +476,7 @@ Vienkartinis degimas (once-firing, single firing)
 Žemo degimo keramika (earthenware)
 : Žemo degimo molio masė (maždaug piroskopai 06–02), kuri lieka akyta.
 
-## Šaltiniai {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +486,7 @@ Vienkartinis degimas (once-firing, single firing)
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (svetainėje The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -483,6 +497,14 @@ Vienkartinis degimas (once-firing, single firing)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Vienkartinis degimas (once-firing, single firing)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

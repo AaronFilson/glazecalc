@@ -3,20 +3,20 @@ title: Τα υαλώματα από τις βασικές αρχές
 lead: Από τι φτιάχνεται ένα υάλωμα, πώς το καμίνι το κάνει γυαλί, και όλοι οι όροι που θα συναντήσετε σε μια συνταγή, σε ένα σακί ή σε έναν πίνακα κώνων, με εξηγήσεις.
 ---
 
-## Τι είναι το υάλωμα {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-Το **υάλωμα**{{en: glaze}} είναι μια λεπτή στρώση γυαλιού που έχει λιώσει και έχει δεθεί με ένα κεραμικό κομμάτι. Το Glazy, η ανοιχτή βάση δεδομένων με συνταγές υαλωμάτων, το ορίζει ως «μια σύνθεση γυαλιού ρυθμισμένη ώστε να λιώνει και να δένεται με τον πηλό σε ορισμένες θερμοκρασίες». Περνιέται ως στρώση σκόνης και στο καμίνι λιώνει σε μια υαλώδη επίστρωση που σφραγίζει τον πηλό, ώστε να είναι λιγότερο πιθανό το κομμάτι να έχει διαρροές, να λεκιάζει ή να φθείρεται. Στην τελική θερμοκρασία του ψησίματος, το λιωμένο υάλωμα αντιδρά επίσης με τον πηλό και συχνά σχηματίζει ανάμεσά τους ένα ενδιάμεσο στρώμα που κλειδώνει το υάλωμα στη θέση του. Στα κεραμικά χαμηλής θερμοκρασίας{{en: earthenware}} το υάλωμα κάθεται από πάνω ως ξεχωριστή στρώση, ενώ στο stoneware λιώνει μέσα στη μάζα{{en: body}}.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Μια συνταγή αναφέρει πρώτες ύλες, όπως άστριο{{en: feldspar}}, ανθρακικό ασβέστιο{{en: whiting}} και καολίνη{{en: kaolin}}. Στο καμίνι, ένα μέρος από κάθε υλικό φεύγει ως αέριο (νερό ή διοξείδιο του άνθρακα) και το υπόλοιπο γίνεται **οξείδια**: ενώσεις ενός στοιχείου με οξυγόνο, όπως το πυριτικό{{en: silica}} (SiO₂) ή το οξείδιο του ασβεστίου (CaO). Το ψημένο γυαλί αποτελείται από οξείδια, οπότε οι κεραμίστες περιγράφουν ένα υάλωμα με βάση αυτά. Κάθε οξείδιο κάνει μία από τρεις δουλειές.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- Το **πυριτικό** (SiO₂) είναι ο **δημιουργός πλέγματος**{{en: glass former}}: φτιάχνει το γυαλί. Το καθαρό πυριτικό λιώνει πάνω από τους {{3100 °F; 1700 °C}}, πολύ πιο ψηλά από όσο φτάνει ένα καμίνι κεραμικής, και ένα υάλωμα πλούσιο σε πυριτικό είναι γενικά πιο ανθεκτικό.
-- Τα **εύτηκτα**{{en: fluxes}} κατεβάζουν το σημείο τήξης σε θερμοκρασία που μπορεί να φτάσει ένα καμίνι. Τα **αλκάλια**, που γράφονται **R₂O**, είναι τα οξείδια του νατρίου, του καλίου και του λιθίου (Na₂O, K₂O, Li₂O). Δρουν από τον κώνο{{en: cone}} Orton 06 και πάνω, έως τη μέση και την υψηλή θερμοκρασία. Οι **αλκαλικές γαίες**, που γράφονται **RO**, είναι τα οξείδια του ασβεστίου, του μαγνησίου, του βαρίου και του στροντίου (CaO, MgO, BaO, SrO), και μαζί τους κατατάσσεται και το οξείδιο του ψευδαργύρου (ZnO). Δρουν καλύτερα από τον κώνο 5 έως τον κώνο 10. Το R σημαίνει οποιοδήποτε μέταλλο της ομάδας.
-- Η **αλουμίνα** (Al₂O₃) είναι ο **σταθεροποιητής**{{en: stabilizer}}. Κάνει το λιωμένο υάλωμα πιο παχύρρευστο, ώστε να μένει στα κάθετα τοιχώματα, και προσθέτει σκληρότητα και ανθεκτικότητα. Η προειδοποίηση του Glazy: με πολύ λίγη αλουμίνα «το υάλωμά σας μπορεί να τρέξει, ενώ με πάρα πολλή το λιωμένο υάλωμα μπορεί να γίνει τόσο παχύρρευστο, που να βγει ματ». Η αλουμίνα προέρχεται κυρίως από τον πηλό και τον άστριο.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-Το **βόριο** (B₂O₃) θολώνει τα όρια. Οι χημικοί το κατατάσσουν στους δημιουργούς πλέγματος, αλλά στις θερμοκρασίες του εργαστηρίου δρα ως εύτηκτο, και οι κεραμίστες το αντιμετωπίζουν ως εύτηκτο. Είναι καθοριστικό στους κώνους 5–6 και δεν χρειάζεται σε υψηλή θερμοκρασία. (Οι κώνοι, ο τρόπος με τον οποίο οι κεραμίστες ονομάζουν ένα ψήσιμο, εξηγούνται παρακάτω.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Ένας τρόπος να το θυμάστε: το πυριτικό είναι το γυαλί, τα εύτηκτα το αφήνουν να λιώσει σε θερμοκρασία που φτάνει το καμίνι σας, και η αλουμίνα το κάνει πιο παχύρρευστο, ώστε να μένει εκεί όπου το βάλατε.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Πηλός, επιστρώσεις και τα δύο ψησίματα {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Label: Περιοχές ψησίματος
 
 Εκτός Βόρειας Αμερικής, οι προμηθευτές συχνά δίνουν τη θερμοκρασία σε °C αντί για κώνο. Ο Hermann Seger ανέπτυξε τον σύγχρονο κώνο, που χρησιμοποιήθηκε πρώτη φορά στο Βερολίνο το 1886, και η Βρετανία έχει τους δικούς της κώνους Staffordshire. Δεν πρέπει να θεωρείτε ότι οι αριθμοί τους αντιστοιχούν σε εκείνους των κώνων Orton, και δεν βρήκαμε πίνακα για τη μετατροπή τους. Ο οδηγός [Ψήσιμο σε ένα απλό καμίνι](/guides/firing) εξετάζει τους κώνους πιο αναλυτικά.
 
-## Από τη συνταγή στον μοριακό τύπο Seger {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-Μια **συνταγή**{{en: batch recipe}} δίνει τις πρώτες ύλες κατά βάρος, συνήθως σε τέτοια αναλογία ώστε η βάση να έχει άθροισμα 100. Τα **πρόσθετα** (χρωστικές{{en: colorants}}, καλυπτικά, και αντικαθιζητικά που κρατούν το υάλωμα σε αιώρηση) μπαίνουν επιπλέον του 100, συνήθως ως ποσοστό της βάσης. Για να δουν τι είναι στην ουσία το υάλωμα{{en: glaze}}, οι κεραμίστες μετατρέπουν τη συνταγή σε **μοριακό τύπο Seger**{{en: unity molecular formula}} (**UMF**, ή **φόρμουλα Seger**, από τον Hermann Seger, που πρώτος χρησιμοποίησε τη διάταξή του σε τρεις στήλες).
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: Από τη συνταγή στον μοριακό τύπο Seger: το λυμένο παράδειγμα του Glazy
-Label: Από τη συνταγή στον μοριακό τύπο Seger
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Βήμα                | Τι γίνεται                                                                                                                                                 | Στο παράδειγμα                                                                                                                                         |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1. Συνταγή          | Πρώτες ύλες κατά βάρος, με άθροισμα 100                                                                                                                    | Άστριος{{en: feldspar}} 40%, ανάμεσα σε άλλα                                                                                                           |
-| 2. Ανάλυση οξειδίων | Όπως σε μια ετικέτα διατροφικής αξίας: τα οξείδια κάθε υλικού αθροίζονται ως ποσοστά κατά βάρος, και τα αέρια αφαιρούνται                                  | Ο άστριος έχει 64,8% πυριτικό{{en: silica}}, άρα το 40% άστριου φέρνει 25,9% SiO₂. Το ψημένο υάλωμα είναι 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
-| 3. Γραμμομόρια      | Τα βάρη γίνονται **γραμμομόρια** (moles), δηλαδή αριθμοί μορίων, επειδή «τα γραμμάρια μπορεί να παραπλανούν, γιατί κάποια οξείδια είναι βαρύτερα από άλλα» | 60,1 g SiO₂ είναι ένα γραμμομόριο, άρα 67,4 g είναι περίπου 1,12 γραμμομόρια                                                                           |
-| 4. Στη μονάδα       | Όλα διαιρούνται με το άθροισμα των ευτήκτων{{en: fluxes}}, ώστε τα εύτηκτα να έχουν άθροισμα 1                                                             | Τα εύτηκτα έχουν άθροισμα 0,303. Με τη διαίρεση προκύπτουν K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                   |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-Η [σελίδα συνταγής](/recipe) του Glazecalc κάνει και τα τέσσερα βήματα καθώς πληκτρολογείτε, και δείχνει το αποτέλεσμα σε τρεις στήλες: τα εύτηκτα (R₂O και RO), με άθροισμα 1, τους σταθεροποιητές{{en: stabilizers}} (R₂O₃: αλουμίνα, όπου συχνά μπαίνει και το βόριο) και τους δημιουργούς πλέγματος{{en: glass formers}} (RO₂: πυριτικό). «Η μετατροπή στη μονάδα είναι απλώς ένα εργαλείο κλίμακας», λέει το Glazy: δύο συνταγές από διαφορετικά υλικά αλλά με τον ίδιο μοριακό τύπο Seger «συμπεριφέρονται σχεδόν πανομοιότυπα μετά το ψήσιμο». Άρα το 1 είναι ένα κοινό μέτρο σύγκρισης, όχι ποσότητα που ζυγίζετε. Το Digitalfire προσθέτει ότι η μέθοδος «δεν λειτουργεί τόσο καλά σε χαμηλότερες θερμοκρασίες», όπου το βόριο δεν είναι απλό εύτηκτο, και ότι οι μοριακοί τύποι Seger είναι «συγκριτικοί και διαβάζονται καλύτερα μέσα στο πλαίσιό τους». Η **Σύγκριση** βάζει δίπλα δίπλα τους τύπους δύο συνταγών, οξείδιο προς οξείδιο.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Η αναλογία πυριτικού προς αλουμίνα
+### The silica to alumina ratio
 
-Ο πιο χρήσιμος μεμονωμένος αριθμός είναι η **αναλογία πυριτικού προς αλουμίνα**{{en: silica to alumina ratio}}: το πυριτικό διαιρεμένο με την αλουμίνα. Στο παράδειγμα, 3,70 ÷ 0,41 κάνει περίπου 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Τι υποδηλώνει η αναλογία πυριτικού προς αλουμίνα (Glazy)
-Label: Αναλογία πυριτικού προς αλουμίνα
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-|  Αναλογία | Η ερμηνεία του Glazy                                      |
-| --------: | --------------------------------------------------------- |
-| Περίπου 9 | Υποδηλώνει γυαλιστερό υάλωμα, αν υπάρχει αρκετή θερμότητα |
-|       5–7 | Τυπική για πολλά σταθερά υαλώματα stoneware               |
-|       3–5 | Μπορεί να είναι ματ ή υποψημένο                           |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Μια αναλογία 5–7 δεν προβλέπει από μόνη της ούτε γυαλιστερό ούτε ματ αποτέλεσμα: τα εύτηκτα, το βόριο και ο κώνος μετακινούν όλα το όριο. Το Glazy δίνει ως τυπική αναλογία ευτήκτων για σταθερά υαλώματα 0,2 R₂O με 0,8 RO, έως 0,3 R₂O με 0,7 RO. Περισσότερα αλκάλια κάνουν το λιωμένο υάλωμα πιο λεπτόρρευστο και αυξάνουν τη διαστολή{{en: expansion}} του, άρα και τον κίνδυνο κρακελαρίσματος{{en: crazing}}.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Απώλεια πύρωσης
+### Loss on ignition
 
-Η **απώλεια πύρωσης**{{en: loss on ignition}} (**LOI**) είναι το βάρος που χάνει ένα υλικό στο καμίνι, καθώς νερό, διοξείδιο του άνθρακα, οργανικές ουσίες ή θείο φεύγουν ως αέρια. Ένα ψημένο υάλωμα δεν έχει καθόλου, οπότε ο μοριακός τύπος Seger δεν τη λαμβάνει υπόψη.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: Τυπική απώλεια πύρωσης (Digitalfire)
-Label: Απώλεια πύρωσης
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Υλικό                                        | Τυπική LOI                                                                                     |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Ανθρακικό ασβέστιο{{en: whiting}}, δολομίτης | Πάνω από 40%, κυρίως διοξείδιο του άνθρακα: 100 g ανθρακικού ασβεστίου αποβάλλουν περίπου 45 g |
-| Ανθρακικό λίθιο                              | Περίπου 60%                                                                                    |
-| Ανθρακικό βάριο, Gerstley Borate             | Πάνω από 20%                                                                                   |
-| Καολίνης                                     | Περίπου 12%, κυρίως νερό δεσμευμένο στους κρυστάλλους του                                      |
-| Άστριοι                                      | Κάτω από 1%                                                                                    |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Τα αέρια που φεύγουν αφού το υάλωμα έχει αρχίσει να λιώνει πρέπει να περάσουν μέσα από αυτό σαν φυσαλίδες και προκαλούν, κατά το Digitalfire, «φυσαλίδες, φουσκάλες, τρυπίτσες, τράβηγμα». Το ταλκ συνεχίζει να βγάζει αέρια μέχρι τους {{1650 °F; 899 °C}} περίπου. Βοηθούν οι φρίτες{{en: frits}}, τα **πυρωμένα** υλικά (ψημένα από πριν, ώστε να έχουν φύγει τα αέριά τους) και οι αλλαγές στο ψήσιμο.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-Τα παλαιότερα βιβλία κάνουν αυτούς τους υπολογισμούς με το χέρι, με το **μοριακό βάρος** (το βάρος ενός γραμμομορίου ενός υλικού ή οξειδίου) και το **ισοδύναμο βάρος** (το βάρος ενός υλικού που δίνει ένα γραμμομόριο ενός οξειδίου). Με τους δικούς μας υπολογισμούς, περίπου 100 g ανθρακικού ασβεστίου δίνουν ένα γραμμομόριο, 56 g, οξειδίου του ασβεστίου. Ένα πρόγραμμα υπολογισμού κάνει και τα δύο.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Φρίτες και πρώτες ύλες {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Φρίτες
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-Η **φρίτα**{{en: frit}} είναι γυαλί φτιαγμένο σε εργοστάσιο: ορυκτά που λιώνουν, κρυώνουν απότομα μέσα σε νερό και αλέθονται. Το φριτάρισμα κάνει αδιάλυτα τα διαλυτά υλικά, όπως τον βόρακα, κλειδώνει τοξικά οξείδια, όπως του μολύβδου και του βαρίου, μέσα σε σταθερό γυαλί, δίνει υλικό πιο σταθερής σύστασης από τα ωμά ορυκτά και διώχνει τα αέρια, οπότε τα φριταρισμένα υαλώματα{{en: glazes}} έχουν «πολύ λιγότερα ελαττώματα» (Digitalfire). Οι φρίτες λιώνουν επίσης νωρίς: μια φρίτα νατρίου{{en: soda frit}} δρα ήδη στον κώνο{{en: cone}} 06, ενώ ο άστριος{{en: feldspar}} «μόλις αρχίζει να μαλακώνει στον κώνο 6». Κοστίζουν περισσότερο, χρειάζονται πηλό για να μένουν σε αιώρηση (το παράδειγμα του Digitalfire είναι 85% φρίτα με 15% πηλό) και είναι «θεωρητικά αδιάλυτες, αλλά στην πράξη δεν είναι».
+::stull-chart
 
-Οι φρίτες της Βόρειας Αμερικής αναφέρονται με τον κατασκευαστή και έναν αριθμό: η Ferro Frit 3134 (η Ferro λέγεται πλέον Vibrantz) υπάρχει σε περίπου 22% των δημόσιων συνταγών του Glazy. Οι βρετανικές συνταγές αναφέρουν πιο συχνά γενικούς τύπους φρίτας, όπως η φρίτα βόρακα.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### Οι συνηθισμένες πρώτες ύλες
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Συνηθισμένα υλικά υαλωμάτων και τι δίνουν
-Label: Συνηθισμένα υλικά υαλωμάτων
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Υλικό (άλλες ονομασίες)                                                                                        | Δίνει                  | Σημειώσεις                                                                                                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Πυριτικό{{en: silica}} (πυριτόλιθος{{en: flint}}, χαλαζίας)                                                    | SiO₂                   | Στα υαλώματα χρησιμοποιήστε 325 mesh, πολύ λεπτό άλεσμα                                                                                                                                                                           |
-| Καολίνης{{en: kaolin}} (Βρετανία: China Clay, Αυστραλία: Eckalite)                                             | Al₂O₃, SiO₂            | Η κύρια πηγή αλουμίνας. Κρατά επίσης το υάλωμα σε αιώρηση                                                                                                                                                                         |
-| Ball clay                                                                                                      | Al₂O₃, SiO₂            | Πιο πλαστικός από τον καολίνη, με περισσότερο σίδηρο και οργανικές ουσίες                                                                                                                                                         |
-| Άστριος καλίου{{en: potash feldspar}}, άστριος νατρίου{{en: soda feldspar}}, νεφελίνα{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Εύτηκτα{{en: fluxes}} που φέρνουν τη δική τους αλουμίνα και το δικό τους πυριτικό. Η νεφελίνα είναι ισχυρό εύτηκτο για χαμηλή και μέση θερμοκρασία. Σε μια παλιά συνταγή, σκέτο «άστριος» μπορεί να σημαίνει οποιοδήποτε από αυτά |
-| Ανθρακικό ασβέστιο{{en: whiting}}                                                                              | CaO                    | Το κύριο εύτηκτο ασβεστίου. Βγάζει διοξείδιο του άνθρακα                                                                                                                                                                          |
-| Βολαστονίτης                                                                                                   | CaO, SiO₂              | Ασβέστιο χωρίς το διοξείδιο του άνθρακα                                                                                                                                                                                           |
-| Δολομίτης, ταλκ                                                                                                | MgO, με CaO ή SiO₂     | Μεταξένιες ματ επιφάνειες. Χαμηλότερη διαστολή{{en: expansion}}                                                                                                                                                                   |
-| Οξείδιο του ψευδαργύρου                                                                                        | ZnO                    | Γυαλάδα και κρύσταλλοι. Η υπερβολική ποσότητα μπορεί να προκαλέσει τράβηγμα{{en: crawling}}                                                                                                                                       |
-| Φρίτες βορίου, Gerstley Borate, κολεμανίτης                                                                    | B₂O₃                   | Απαραίτητα από τον κώνο 06 έως τον κώνο 6. Οι φρίτες είναι «πιο σταθερές και λιγότερο διαλυτές από τα ωμά βορικά»                                                                                                                 |
-| Ανθρακικό λίθιο                                                                                                | Li₂O                   | Εύτηκτο χαμηλής διαστολής. Ακριβό, οπότε χρησιμοποιείται με φειδώ                                                                                                                                                                 |
-| Ανθρακικό στρόντιο                                                                                             | SrO                    | Το λιγότερο τοξικό υποκατάστατο του βαρίου                                                                                                                                                                                        |
-| Ανθρακικό βάριο                                                                                                | BaO                    | Τοξικό σε ωμή μορφή. Τα υαλώματα με πολύ βάριο μπορεί να απελευθερώνουν μέταλλα{{en: leach}}                                                                                                                                      |
-| Μπεντονίτης                                                                                                    | Αιώρηση                | Πολύ λεπτόκοκκος πηλός, συνήθως 1–3%, για να μην καθιζάνει το υάλωμα                                                                                                                                                              |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Τα υλικά των υαλωμάτων είναι λεπτές σκόνες. Η σκόνη πυριτικού βλάπτει τους πνεύμονες χωρίς να δίνει συμπτώματα στην αρχή, και ορισμένα υλικά, όπως το ανθρακικό βάριο και το ανθρακικό λίθιο, είναι δηλητηριώδη αν τα καταπιείτε. Να χειρίζεστε τις σκόνες απαλά, να κάνετε υγρό καθαρισμό και να φοράτε μάσκα προστασίας της αναπνοής που σας εφαρμόζει σωστά όταν δουλεύετε με ξηρά υλικά. Οι οδηγοί [Ασφαλής ανάμειξη και εξαερισμός](/guides/safe-mixing) και [Μη δηλητηριάσετε την οικογένειά σας](/guides/home-safety) εξηγούν πώς.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Τοπικές ονομασίες
+### Regional names
 
-- Ο **καολίνης** λέγεται στη Βρετανία **China Clay**, και οι προμηθευτές στην Αυστραλία τον πουλούν ως Eckalite.
-- Το **flint** (πυριτόλιθος) είναι παλαιότερη βρετανική ονομασία για το πυριτικό. Οι Βρετανοί προμηθευτές πουλούν ακόμα τον **πυρωμένο πυριτόλιθο** (calcined flint) ως ξεχωριστό προϊόν, οπότε το «flint» σε μια βρετανική συνταγή πιθανότατα σημαίνει πυρωμένο πυριτόλιθο, ενώ σε μια αμερικανική πιθανότατα χαλαζία σε σκόνη. Και τα δύο πωλούνται ως πηγές πυριτικού. Ελέγξτε την ανάλυση.
-- Το **China stone** και το **Cornish Stone** (Cornwall stone) είναι το ίδιο υλικό, συγγενικό με τον άστριο.
-- Το **whiting** είναι το ανθρακικό ασβέστιο. Οι Γερμανοί προμηθευτές το λένε Kreide (κιμωλία).
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Κρίνετε ένα υλικό από τα οξείδια που δίνει, όχι από το όνομά του. Έτσι δουλεύει και το Glazecalc: μπορείτε να εισαγάγετε την ανάλυση του προμηθευτή σας στη [σελίδα Υλικά](/material), και οι λειτουργίες **Δοκιμή σύγχρονων υλικών και σύγκριση**, **Πρόταση ποσοτήτων και σύγκριση** και **Αντιστοίχιση με τα υλικά μου** αντιστοιχίζουν όλες τα οξείδια μετά το ψήσιμο, όχι τα ονόματα.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Και τα υλικά αλλάζουν. Ο Custer feldspar είναι εκτός παραγωγής από το 2023. Το αρχικό ορυχείο του Gerstley Borate έκλεισε γύρω στο 1999–2000. Η Laguna πουλά ακόμα ένα προϊόν με αυτό το όνομα, και το Gillespie Borate είναι το κύριο υποκατάστατο. Οι πηγές διαφωνούν για το αν το Gillespie αντικαθιστά το Gerstley Borate λίβρα προς λίβρα (ο παραγωγός του και η Potclays λένε ναι, το Digitalfire και άλλοι όχι), οπότε συγκρίνετε τα δύο στο Glazecalc και μετά δοκιμάστε μια μικρή παρτίδα.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Χρωστικές και καλυπτικά {#color}
+## Colorants and opacifiers {#color lang=en}
 
-Η **χρωστική**{{en: colorant}} είναι οξείδιο ή ανθρακικό άλας μετάλλου που χρωματίζει ένα υάλωμα{{en: glaze}}. Το **στέιν**{{en: stain}} είναι έτοιμη χρωστική, φτιαγμένη σε εργοστάσιο, πιο σταθερή και ομοιόμορφη από τα ωμά οξείδια. Οι χρωστικές είναι συνήθως κάτω από 5% της βάσης, πολλές κάτω από 1%, και ένα ανθρακικό έχει περίπου τη μισή δύναμη από το αντίστοιχο οξείδιο.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Συνηθισμένες χρωστικές, ως ποσοστό της βάσης
-Label: Συνηθισμένες χρωστικές
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Χρωστική           | Συνήθης αρχική ποσότητα                   | Χρώματα και σημειώσεις                                                                                                                                                                                            |
-| ------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Κοβάλτιο           | 0,1–2% (οι πηγές διαφωνούν)               | Μπλε, και πολύ ισχυρό. Γέρνει προς το μωβ όταν η βάση έχει μαγνήσιο                                                                                                                                               |
-| Σίδηρος            | 0,5–10%                                   | Καφέ, μπεζ και κόκκινα σε οξειδωτικό ψήσιμο{{en: oxidation}}. Σε αναγωγικό ψήσιμο{{en: reduction}}, ½–2% δίνει celadon και 5–6% tenmoku. Είναι εύτηκτο{{en: flux}}, οπότε πολύς σίδηρος κάνει το υάλωμα να τρέχει |
-| Χαλκός             | 1–3%                                      | Πράσινο ή τιρκουάζ σε οξειδωτικό ψήσιμο, κόκκινο σε αναγωγικό. Μπορεί να κάνει ένα υάλωμα να απελευθερώνει μέταλλα{{en: leach}}                                                                                   |
-| Χρώμιο             | Κάτω από 0,5% έως 2% (οι πηγές διαφωνούν) | Πράσινο. Καφέ αν η βάση έχει ψευδάργυρο, ροζ με κασσίτερο                                                                                                                                                         |
-| Μαγγάνιο           | 2–10%                                     | Καφέ και μωβ                                                                                                                                                                                                      |
-| Ρουτίλιο           | Περίπου 2–5%                              | Διάστικτο, ποικιλόχρωμο χρώμα. Τραχιά ή ματ επιφάνεια πάνω από περίπου 5%                                                                                                                                         |
-| Στέιν του εμπορίου | 2–12%                                     | 2–4% για απαλές αποχρώσεις, 5–8% για μεσαίους τόνους, 10–12% για έντονα χρώματα                                                                                                                                   |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-Οι ποσότητες κοβαλτίου και χρωμίου πράγματι αμφισβητούνται. Το Glazy λέει ότι 0,1% κοβάλτιο αρκεί για ένα μπλε. Το Glendale Community College δίνει ½–2% ή ½–3% ανάλογα με την ατμόσφαιρα. Η Birdie Boone, στο Pottery Making Illustrated, λέει 3% ή λιγότερο. Για το χρώμιο, η Boone λέει κάτω από 0,5% και το Glendale 2–3%. Η ασφαλής λύση είναι να ξεκινήσετε χαμηλά και να κάνετε μια **σειρά δοκιμών**{{en: line blend}}: μια γραμμή από δοκιμαστικά πλακίδια{{en: test tiles}} όπου ένα συστατικό αυξάνεται βήμα βήμα από λίγο σε πολύ.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Το υάλωμα βάσης αλλάζει το χρώμα. Μια γυαλιστερή, διάφανη βάση δίνει το πιο λαμπερό χρώμα, ενώ οι σατινέ και οι ματ βάσεις, συνήθως με περισσότερη αλουμίνα, το απαλύνουν. Το μαγνήσιο σπρώχνει το κοβάλτιο προς το μωβ, ο ψευδάργυρος κάνει το χρώμιο καφέ, και το χρώμιο με κασσίτερο δίνει ροζ.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Καλυπτικά
+### Opacifiers
 
-Ένα **καλυπτικό** υλικό κάνει το υάλωμα **αδιαφανές**, ώστε να κρύβει τον πηλό. Ένα **διάφανο** υάλωμα τον αφήνει να φαίνεται.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Καλυπτικά
+Table: Opacifiers
 
-| Καλυπτικό                                                | Συνήθης ποσότητα                 | Σημειώσεις                                                                                      |
-| -------------------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Πυριτικό ζιρκόνιο (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% για πλήρη κάλυψη           | Η φθηνότερη επιλογή. Οι μάρκες είναι το ίδιο υλικό, αλεσμένο σε διαφορετικό μέγεθος κόκκου      |
-| Οξείδιο του κασσιτέρου                                   | Περίπου 5–7% (δική μας εκτίμηση) | Ακριβό. Δεν καλύπτει καλά σε αναγωγικό ψήσιμο                                                   |
-| Διοξείδιο του τιτανίου                                   | Πάνω από 2%                      | Μεταξένια, ημιδιαφανής κάλυψη. Από 10% και πάνω, ματ, ανάγλυφη επιφάνεια με ορατούς κρυστάλλους |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Συμβατότητα υαλώματος και μάζας, και ελαττώματα {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-Ο πηλός και το υάλωμα{{en: glaze}} διαστέλλονται όταν ζεσταίνονται και συστέλλονται όταν κρυώνουν, το καθένα κατά το δικό του ποσό: τη **θερμική διαστολή**{{en: thermal expansion}} του. Η **συμβατότητα υαλώματος και μάζας**{{en: glaze fit}} είναι το πόσο καλά ταιριάζουν τα δύο. Με καλή συμβατότητα, το υάλωμα μένει υπό ελαφριά συμπίεση από τον πηλό. Το Digitalfire λέει ότι λίγη συμπίεση κάνει τα κομμάτια πιο γερά, ενώ πολλή μπορεί να τα αποδυναμώσει, ακόμα και να τα ραγίσει.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Κρακελάρισμα και ξεφλούδισμα
+### Crazing and shivering
 
-Το **κρακελάρισμα**{{en: crazing}} είναι ένα δίκτυο από λεπτές ρωγμές. Η διαστολή του υαλώματος είναι μεγαλύτερη από της μάζας{{en: body}}, οπότε στο κρύωμα συστέλλεται περισσότερο, τεντώνεται και ραγίζει, συνήθως επειδή έχει πάρα πολύ νάτριο και κάλιο (Na₂O, K₂O). Μπορεί επίσης να εμφανιστεί αργότερα, στη χρήση, μετά από επανειλημμένο απότομο κρύωμα, όπως η επαφή με κρύα υγρά. Όταν είναι επιθυμητό, όπως στο ρακού, λέγεται **κρακελέ**. Το Digitalfire λέει ότι «στο 95% των περιπτώσεων η λύση είναι να προσαρμόσετε τη θερμική διαστολή του υαλώματος». Το αργό κρύωμα απλώς καθυστερεί το κρακελάρισμα. Η δοκιμή του: ζεστάνετε το κομμάτι στους {{300 °F; 149 °C}} περίπου, βυθίστε το σε παγωμένο νερό και περάστε από πάνω με μαρκαδόρο για να φανούν οι ρωγμές.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Οι πηγές διαφωνούν για την πρώτη διόρθωση. Το Glazy προτείνει να προσθέσετε πυριτικό{{en: silica}} ή αλουμίνα. Το Digitalfire απαντά ότι το επιπλέον πυριτικό «απλώς αραιώνει το KNaO» (το νάτριο και το κάλιο). Η Linda Bloomfield προσθέτει βόριο ή μειώνει τον άστριο{{en: feldspar}}, ένα υλικό κάθε φορά. Η συμβουλή μας: στον [υπολογιστή συνταγών](/recipe), αντικαταστήστε λίγο νάτριο και κάλιο με εύτηκτα{{en: fluxes}} χαμηλότερης διαστολής (βόριο, λίθιο, μαγνήσιο, ασβέστιο), ελέγξτε την αλλαγή με τη **Σύγκριση** και επιβεβαιώστε με τη δοκιμή του παγωμένου νερού.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-Το **ξεφλούδισμα**{{en: shivering}} είναι το αντίθετο: η διαστολή του υαλώματος είναι πολύ μικρότερη από της μάζας, οπότε το υάλωμα είναι υπερβολικά συμπιεσμένο και ξεφλουδίζει από τα χείλη και τις ακμές. Το Digitalfire προειδοποιεί ότι τα λέπια μπορεί να είναι κοφτερά σαν ξυράφι και θα μπορούσαν να καταποθούν, και το Glazy χαρακτηρίζει το ξεφλούδισμα «ακόμα πιο επικίνδυνο από το κρακελάρισμα στα χρηστικά κεραμικά». Η λύση είναι ένα υάλωμα με μεγαλύτερη διαστολή ή μια μάζα με μικρότερη διαστολή.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Μη χρησιμοποιείτε για φαγητό ή ποτό κεραμικά με κρακελάρισμα ή ξεφλούδισμα. Οι πηγές διαφωνούν για το αν τα κομμάτια με κρακελάρισμα μπορούν να καθαριστούν αρκετά καλά (μία λέει ότι αρκεί το πλυντήριο πιάτων, μια άλλη θεωρεί ελαττωματικά τα χρηστικά κεραμικά με κρακελάρισμα), οπότε εμείς επιλέγουμε την προσεκτική πλευρά.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Γυαλιστερό και ματ
+### Gloss and matte
 
-Μια **γυαλιστερή** επιφάνεια αντανακλά το φως και είναι λεία, μια **σατινέ** έχει συγκρατημένη λάμψη, και μια **ματ** είναι θαμπή. Το γυαλιστερό χρειάζεται γυαλί που έχει λιώσει πλήρως. Το ματ μπορεί να οφείλεται σε πολλή αλουμίνα (χαμηλή αναλογία πυριτικού προς αλουμίνα{{en: silica to alumina ratio}}), σε εύτηκτα όπως το ασβέστιο, το μαγνήσιο, το βάριο ή το στρόντιο, που σχηματίζουν μικροσκοπικούς κρυστάλλους καθώς κρυώνει το υάλωμα, ή σε ανεπαρκές ψήσιμο.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Συνηθισμένα ελαττώματα
+### Common defects
 
-Να αλλάζετε ένα πράγμα κάθε φορά και να κρατάτε τα δοκιμαστικά σας πλακίδια{{en: test tiles}}.
+Change one thing at a time, and keep your test tiles.
 
-Table: Συνηθισμένα ελαττώματα υαλωμάτων, οι συνήθεις αιτίες τους και οι πρώτες διορθώσεις
-Label: Συνηθισμένα ελαττώματα υαλωμάτων
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Ελάττωμα                                | Πώς φαίνεται                                          | Συνήθεις αιτίες                                                                                                                                  | Πρώτες διορθώσεις                                                                                                                                                      |
-| --------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Τράβηγμα{{en: crawling}}                | Το υάλωμα μαζεύεται σε σταγόνες και αφήνει γυμνό πηλό | Μπισκουί με σκόνη ή λιπαρό. Χοντρή στρώση, πλούσια σε πηλό, που ράγισε στο στέγνωμα. Ψευδάργυρος, πυριτικό ζιρκόνιο ή κασσίτερος                 | Καθαρίστε το μπισκουί. Περάστε λεπτότερη στρώση. Πυρώστε ένα μέρος του πηλού. Προσθέστε συνδετικό, όπως κόλλα CMC                                                      |
-| Τρυπίτσες{{en: pinholing}}              | Μικρές τρύπες ή βαθουλώματα                           | Αέρια από τη μάζα ή το υάλωμα, με τρύπες που δεν έκλεισαν από πάνω. Υάλωμα υποψημένο ή παχύρρευστο                                               | Κάντε παραμονή{{en: hold}} στην τελική θερμοκρασία για περίπου μισή ώρα (το «σιδέρωμα» των κεραμιστών). Περάστε λεπτότερη στρώση. Βάλτε λιγότερο ψευδάργυρο ή ρουτίλιο |
-| Φουσκάλιασμα                            | Κρατήρες με κοφτερά χείλη                             | Συνήθως ψήσιμο σε πολύ υψηλή θερμοκρασία. Πολύ χοντρές στρώσεις. Πτητικά εύτηκτα πάνω από περίπου {{2192 °F; 1200 °C}}                           | Ψήστε πιο χαμηλά. Περάστε λεπτότερη στρώση. Τα κοφτερά χείλη κάνουν τα χρηστικά κεραμικά μη ασφαλή                                                                     |
-| Τρέξιμο                                 | Το υάλωμα κυλά πάνω στην πυρόπλακα                    | Πολύ λίγη αλουμίνα. Πολύ χοντρή στρώση, όπως εκεί όπου επικαλύπτονται τα χυσίματα. Πολύς σίδηρος                                                 | Περάστε λεπτότερη στρώση. Προσθέστε αλουμίνα. Κρατήστε το υάλωμα αρκετά πάνω από τη βάση                                                                               |
-| Ράγισμα από θερμική τάση{{en: dunting}} | Ρωγμές στο κομμάτι από το κρύωμα ή το ζέσταμα         | Γρήγορο κρύωμα κατά τη μετατροπή του χαλαζία{{en: quartz inversion}}, {{1063 °F; 573 °C}}. Άνισα τοιχώματα. Κακή συμβατότητα υαλώματος και μάζας | Ψήστε αργά γύρω από τους {{1063 °F; 573 °C}}, στο ανέβασμα και στο κατέβασμα. Ομοιόμορφα τοιχώματα                                                                     |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Ασφάλεια στην επαφή με τρόφιμα {#food-safety}
+## Food safety {#food-safety lang=en}
 
-Η **απελευθέρωση μετάλλων**{{en: leaching}} είναι η διάλυση μετάλλων από ένα ψημένο υάλωμα{{en: glaze}} μέσα σε φαγητό ή ποτό, και ένα υάλωμα μπορεί να φαίνεται τέλειο και όμως να απελευθερώνει μέταλλα. Οι δοκιμές που προβλέπει ο νόμος αφήνουν το ψημένο κομμάτι μέσα σε όξινο διάλυμα και μετρούν τον μόλυβδο και το κάδμιο που βγαίνουν.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Αμόλυβδο δεν σημαίνει κατάλληλο για επαφή με τρόφιμα
+### Lead-free is not the same as food-safe
 
-Οι κανόνες στις ΗΠΑ, στην ΕΕ, στο Ηνωμένο Βασίλειο και στην Αυστραλία περιορίζουν τον μόλυβδο και το κάδμιο που απελευθερώνει ένα ψημένο κομμάτι, όχι όσα περιέχει το υάλωμα. Το «αμόλυβδο» αφαιρεί έναν κίνδυνο, δεν είναι χαρακτηρισμός καταλληλότητας για επαφή με τρόφιμα{{en: food safety}}. Και άλλα οξείδια απελευθερώνονται: το Glazy προειδοποιεί ότι τα υαλώματα με πολύ βάριο «μπορεί να απελευθερώνουν μέταλλα και γενικά δεν είναι κατάλληλα για τρόφιμα», το Digitalfire λέει ότι ο χαλκός «μπορεί να κάνει ένα υάλωμα να απελευθερώνει μέταλλα, κάντε δοκιμή», και το Glazy δεν συνιστά πια μολυβδούχα υαλώματα για χρηστικά κεραμικά.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-Το **υάλωμα εσωτερικής επιφάνειας**{{en: liner glaze}} είναι ένα σταθερό, συνήθως διάφανο ή λευκό υάλωμα για τις επιφάνειες που αγγίζουν το φαγητό. Κατά τη γνώμη μας, ένα τέτοιο υάλωμα χωρίς χρωστική{{en: colorant}}, βάριο, μόλυβδο ή λίθιο, που λιώνει πλήρως, δεν κρακελάρει{{en: crazing}} και αντέχει στη φθορά, είναι η επιλογή με τον χαμηλότερο κίνδυνο. Ο χαμηλότερος κίνδυνος δεν είναι απόδειξη.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-Οι **πίνακες ορίων**{{en: limit formulas}} (το Digitalfire προτιμά τους **τύπους-στόχους**{{en: target formulas}}) δίνουν τυπικά εύρη του μοριακού τύπου Seger (UMF) για σταθερά υαλώματα σε έναν κώνο{{en: cone}}: οι στόχοι του Digitalfire για τον κώνο 6 βάζουν την αλουμίνα στο 0,285–0,64 και το πυριτικό{{en: silica}} στο 2,4–4,7. Σας κατευθύνουν προς μια σωστή χημεία, αλλά δεν αποδεικνύουν τίποτα. Το Digitalfire αποφεύγει τη λέξη «όριο» (limit), επειδή υπονοεί ότι τα υαλώματα μέσα στα εύρη «είναι κατά κάποιον τρόπο ασφαλή». Τα εργαλεία του Glazecalc για την αλλαγή μιας συνταγής σάς λένε πότε η νέα συνταγή ξεπερνά ένα συνιστώμενο όριο, όπως πολύ βόριο στον κώνο 6, και τι θα κάνει πιθανότατα το υάλωμα.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Οι νόμιμες οριακές τιμές διαφέρουν από χώρα σε χώρα. Ο πίνακας δείχνει εκείνες που ισχύουν εκεί όπου ζείτε, στις μονάδες του ίδιου του νόμου. Επιλέξτε άλλη χώρα ή περιοχή για σύγκριση.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-Στις ΗΠΑ, τα διακοσμητικά κεραμικά που φαίνονται κατάλληλα για τρόφιμα αντιμετωπίζονται ως σκεύη για τρόφιμα, εκτός αν φέρουν αυτοκόλλητη ετικέτα και μόνιμη ένδειξη χυτευμένη ή ψημένη στη βάση τους, όπως «Not for Food Use. May Poison Food» (όχι για χρήση με τρόφιμα, μπορεί να δηλητηριάσει τα τρόφιμα), ή έχουν μια τρύπα που διαπερνά την επιφάνεια επαφής με τα τρόφιμα. Η ΕΕ ορίζει οριακές τιμές για τον μόλυβδο και το κάδμιο στην οδηγία 84/500/ΕΟΚ του Συμβουλίου, και το Ηνωμένο Βασίλειο διατηρεί τις ίδιες τιμές στη δική του νομοθεσία. Από τις 29 Μαΐου 2026, οι Κάτω Χώρες, το Βέλγιο και το Λουξεμβούργο επιτρέπουν περίπου 130 έως 150 φορές λιγότερο μόλυβδο και περίπου 15 φορές λιγότερο κάδμιο. Η Αυστραλία ορίζει οριακές τιμές για τα εισαγόμενα κεραμικά. Δεν βρήκαμε επίσημη οριακή τιμή για κεραμικά που κατασκευάζονται στην Αυστραλία ή στη Νέα Ζηλανδία.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Δοκιμές
+### Testing
 
-Ο FDA λέει ότι τα κιτ με μπατονέτα για χρήση στο σπίτι μπορούν να δείξουν μόλυβδο που μπορεί να απελευθερωθεί, αλλά η Ceramics New Zealand προειδοποιεί ότι τα στυλό δοκιμής δεν είναι σχεδιασμένα για κεραμικά και δίνουν ψευδώς θετικά αποτελέσματα. Ένα θετικό αποτέλεσμα να το θεωρείτε λόγο να σταματήσετε να χρησιμοποιείτε το κομμάτι, και ένα αρνητικό ως κάτι που δεν αποδεικνύει τίποτα. Η πραγματική απάντηση είναι μια εργαστηριακή δοκιμή απελευθέρωσης μετάλλων{{en: leach test}} στο ψημένο κομμάτι (ASTM C738 στις ΗΠΑ, EN 1388 ή ISO 6486 στην Ευρώπη).
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> «Κατάλληλο για επαφή με τρόφιμα»{{en: food safe}} σημαίνει ότι αυτό το υάλωμα, σε αυτόν τον πηλό, ψημένο σε αυτόν τον κώνο, σε αυτό το καμίνι, και περασμένο με αυτόν τον τρόπο, απελευθερώνει λιγότερο από ό,τι επιτρέπουν οι νόμιμες οριακές τιμές. Το Glazecalc μπορεί να σας βοηθήσει να φτιάξετε ένα σταθερό υάλωμα, και η **Αντικατάσταση μολύβδου** μπορεί να ξαναφτιάξει χωρίς μόλυβδο μια παλιά μολυβδούχα συνταγή, αλλά κανένα πρόγραμμα υπολογισμού δεν μπορεί να πιστοποιήσει ένα κομμάτι. Μόνο μια δοκιμή του ψημένου κομματιού μπορεί.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Ειδικό βάρος και πέρασμα του υαλώματος {#application}
 
@@ -462,7 +476,7 @@ R₂O και RO
 Stoneware
 : Μάζα μέσης έως υψηλής θερμοκρασίας (περίπου κώνοι 5–10) που γίνεται υαλοποιημένη ή σχεδόν υαλοποιημένη.
 
-## Πηγές {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +486,7 @@ Stoneware
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (μέσω The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -483,6 +497,14 @@ Stoneware
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Stoneware
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

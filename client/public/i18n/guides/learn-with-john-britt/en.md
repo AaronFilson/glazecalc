@@ -15,7 +15,8 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 - The numbers are his. His list has no video 32 and no video 42, and he gave the number 49 to two videos. Two videos that are promotions (46 and 51) and a question and answer video are left out here.
 - Watch the videos first. They open on YouTube, and they are in English.
 - Then read the guide sections, and try the exercises. You need an account for the exercises that save a recipe, a blend or a firing log.
-- The exercises name the tools an assistant can use, such as `analyze_recipe`. In an assistant, the prompt **glaze_course_lesson** sets up a lesson for a unit.
+- Last, answer the questions under **Check** in your own words. The guide sections hold the answers.
+- The exercises say in plain words what to ask an assistant, with the name of the tool it uses in brackets, such as (`analyze_recipe`). In an assistant, the prompt **glaze_course_lesson** sets up a lesson for a unit.
 - Ask an assistant that is connected to your account to save a series of tiles as a notebook entry, or a tile you liked as a recipe. It shows what it will save and waits for your yes, and with **Confirm changes** on, nothing is saved until you approve it on the website.
 
 > [!WARNING]
@@ -38,7 +39,13 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. Start a [recipe](/recipe) with a simple glaze you have, and watch its unity formula change as you add each material.
 2. Open **How the unity formula is worked out** on the recipe page and follow each step with your recipe's numbers. Then work one material out by hand and compare.
-3. With an assistant: ask it to run `analyze_recipe` on the same recipe and explain each group of oxides in the answer. Then ask it to run `vary_material` with silica from 0 to 20 on top of the recipe, and say which unity formula numbers move and which do not.
+3. With an assistant: ask it to work out the unity formula of the same recipe (`analyze_recipe`) and explain each group of oxides. Then ask it to add silica from 0 to 20 on top of the recipe (`vary_material`), and say which numbers move and which do not.
+
+### Check
+
+- In a unity formula, which group of oxides adds up to 1?
+- Why do two recipes with different materials sometimes have almost the same unity formula?
+- When you add silica, why do the flux numbers stay the same?
 
 ## Unit 2: Limits and the Stull chart {#limits-and-stull}
 
@@ -58,7 +65,13 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. On the [recipe page](/recipe), set the recipe's firing, then look at the limits panel and the **Stull chart**. Where does your glaze sit, and does the line at the top say its chemistry fits its firing?
 2. Change the silica a little at a time and watch the point move on the Stull chart.
-3. With an assistant: ask it to run `check_limits` with the recipe and its cone, and explain each caution and the `coneFit` verdict. Its answer also says where the recipe sits on the Stull chart (`stull`). Then ask for `vary_material` with silica from 0 to 30, and which regions of the chart the glaze crosses.
+3. With an assistant: ask it to check the recipe against the limits for its cone (`check_limits`), and explain each caution, whether the chemistry fits the firing, and where the recipe sits on the Stull chart. Then ask it to add silica from 0 to 30 (`vary_material`), and which regions of the chart the glaze crosses.
+
+### Check
+
+- Stull fired his tests at about which cone, and why does that matter for a cone 6 glaze?
+- Does a point in the chart's "crazed" region mean the glaze will craze on your clay? What tells you that?
+- Can a glaze inside the limits still be unsafe for food? Why?
 
 ## Unit 3: The oxides and what they do {#oxides}
 
@@ -75,8 +88,14 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 ### Try
 
 1. Open three materials in the [library](/material), such as whiting, a feldspar and a kaolin, and note which oxides each brings to a glaze.
-2. With an assistant: ask it to run `get_material` for each and sort their oxides into fluxes, glass formers and stabilizers.
-3. Ask the assistant what one material does: `vary_material` with whiting from 0 to 20, then a frit, then talc from 0 to 10, each in the same base recipe. Compare how the unity formula and the Stull chart point move. (The prompt **what_does_this_material_do** sets this up.)
+2. With an assistant: ask it to look up each material (`get_material`) and sort their oxides into fluxes, glass formers and stabilizers.
+3. Ask the assistant what one material does: add whiting from 0 to 20, then a frit, then talc from 0 to 10, each to the same base recipe (`vary_material`). Compare how the unity formula and the Stull chart point move. (The prompt **what_does_this_material_do** sets this up.)
+
+### Check
+
+- Which oxide is the main glass former, which is the main stabilizer, and what are two fluxes?
+- Why is a frit used in place of a raw material that would give the same oxides?
+- What does an opacifier do to a glaze?
 
 ## Unit 4: Color in different base glazes {#color-in-bases}
 
@@ -97,9 +116,15 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. Save two base glazes as recipes, then copy each and add the same colorant to the copies, as an addition on top of the 100. Compare their unity formulas: what differs in the bases (boron, zinc, magnesium, alkali) that might change the color?
 2. On [Blends](/blends), make a line blend from a base to the same base with a colorant, and print what to weigh for each tile.
-3. With an assistant: ask it to run `compare_recipes` on the two bases only, without the colorant, and say what differs. Then add the colorant to each base as an addition on top of the 100.
+3. With an assistant: ask it to compare the two bases only, without the colorant (`compare_recipes`), and say what differs. Then add the colorant to each base as an addition on top of the 100.
 
 Colorant oxides count as fluxes in the unity formula. So a colorant changes the unity formula a little, too.
+
+### Check
+
+- Why can the same colorant give different colors in two base glazes?
+- What does "an addition on top of the 100" mean?
+- Why does a colorant change the unity formula a little?
 
 ## Unit 5: Blending and testing methods {#blending}
 
@@ -130,7 +155,13 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 
 1. On [Blends](/blends), set up a triaxial blend from three of your recipes, choose the number of rows, and print what to weigh for each tile.
 2. Fire the tiles, then save the ones you like as recipes from the drawing of the tiles.
-3. With an assistant: ask it to run `blend_recipes` with two or three recipes as the corners, or `vary_material` for an ingredient blend of one material, and to say which tiles pass `check_limits` and which look off for the firing. If your assistant is connected to your account, ask it to save the series as a notebook entry. It shows what it will save and waits for your yes.
+3. With an assistant: ask it to blend two or three recipes as the corners (`blend_recipes`), or to step one material up and down (`vary_material`), and to say which tiles stay inside the limits for the firing (`check_limits`) and which look off. If your assistant is connected to your account, ask it to save the series as a notebook entry. It shows what it will save and waits for your yes.
+
+### Check
+
+- In a line blend, what changes from one tile to the next?
+- How many corners does a triaxial blend have, and what is in each corner?
+- Why do you write a code on every tile before it is fired?
 
 ## Unit 6: Test tiles and melt tests {#test-tiles-and-melt}
 
@@ -149,9 +180,25 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 
 ### Try
 
-1. Give each tile a code, and write it in a [note](/notes) with the recipe, the clay body and the firing.
+1. Give each tile a code, and write it in a [note](/notes) with the record below: the recipe, the clay body and the firing.
 2. After the firing, write what each tile showed in the same note, and record the firing in a [firing log](/firing).
-3. With an assistant: ask it to run `search_guides` for "test tiles" and summarise what to write down for each tile.
+3. With an assistant: ask it to search the guides for "test tiles" (`search_guides`) and say what to write down for each tile.
+
+A record for each tile, to copy into a note:
+
+- **Tile code:**
+- **Recipe and version:**
+- **Clay body:**
+- **Thickness** (number of dips, or the SG):
+- **Kiln, cone, and where in the kiln:**
+- **Firing log:**
+- **What it looked like:**
+- **Next test:**
+
+### Check
+
+- Why is a melt test set on a dish or a scrap of bisque?
+- What are three things to write down for every tile?
 
 ## Unit 7: Glaze slurry and application {#slurry-and-application}
 
@@ -173,7 +220,13 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 
 1. Weigh 100 mL of a glaze you have, then use **Specific gravity and water** on its [recipe page](/recipe) to see how much water brings it to the SG you want.
 2. Save that SG as the recipe's target, so it is there the next time you mix it.
-3. With an assistant: ask it to run `search_guides` for "specific gravity" and explain the steps for your bucket.
+3. With an assistant: give it what 100 mL of your glaze weighs, the litres in the bucket and the SG you want, and ask how much water to add or pour off (`specific_gravity_water`).
+
+### Check
+
+- 100 mL of a glaze weighs 145 g. What is its specific gravity?
+- Your glaze is too thin. Do you add water, or let it settle and pour water off?
+- Why can two glazes at the same SG go on at different thicknesses?
 
 ## Unit 8: Where recipes come from, and substitutes {#recipes-and-substitutes}
 
@@ -197,7 +250,13 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 
 1. Enter a recipe that uses Gerstley Borate on the [recipe page](/recipe) and choose **Try modern materials and compare**. Compare the two unity formulas.
 2. Add the materials you have on hand, then use **Make it from what you have** to remake a recipe from only those.
-3. With an assistant: ask it to run `suggest_substitutes` on the recipe, then `match_from_materials` with the materials you have, and `compare_recipes` for the original against each. To aim for a unity formula you have chosen, `solve_target` makes a recipe from the materials you have.
+3. With an assistant: ask it for substitutes for the old materials in the recipe (`suggest_substitutes`), then to remake it from the materials you have (`match_from_materials`), and to compare the original with each (`compare_recipes`). To aim for a unity formula you have chosen, ask it to make a recipe for it from the materials you have (`solve_target`).
+
+### Check
+
+- Why can a recipe made with the same material names come out different in your studio?
+- What do you compare to tell whether a substitute is close: the recipes or the unity formulas?
+- Why must a substitute still be tested on a tile?
 
 ## Unit 9: Special surfaces {#special-surfaces}
 
@@ -220,7 +279,12 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 ### Try
 
 1. Enter a special-surface recipe on the [recipe page](/recipe) and read its limits panel. Which cautions are the point of the surface, and which still matter? A surface for sculpture is not one for a mug.
-2. With an assistant: ask it to run `check_limits` with the firing and explain why the `coneFit` check may say it cannot judge some of these glazes.
+2. With an assistant: ask it to check the recipe against the limits for its firing (`check_limits`), and explain why it may say it cannot judge whether some of these glazes fit the firing.
+
+### Check
+
+- Which of these surfaces is a defect put to use?
+- Why is a surface made for sculpture not right for a mug?
 
 ## Unit 10: Raw materials and geology {#raw-materials}
 
@@ -241,7 +305,12 @@ Colorant oxides count as fluxes in the unity formula. So a colorant changes the 
 ### Try
 
 1. If you have an analysis of a local rock or clay, add it as one of your own materials and use it in a test recipe.
-2. With an assistant: ask it to run `get_material` for a feldspar and a kaolin and compare their analyses with your own material's.
+2. With an assistant: ask it to look up a feldspar and a kaolin (`get_material`) and compare their analyses with your own material's.
+
+### Check
+
+- Why do you need an analysis before a local rock can go into a recipe?
+- What is the main hazard when you grind rocks, and what protects you from it?
 
 ## Unit 11: Clay and slip {#clay}
 
@@ -269,6 +338,11 @@ These videos are about clay bodies and slips. Glazecalc works out glazes, not cl
 
 1. Write down the clay bodies you use, with their firing range, in a [note](/notes), and test every glaze on each of them.
 
+### Check
+
+- Why must every glaze be tested on each clay body you use?
+- What two firings does most pottery go through, and what does each do?
+
 ## Unit 12: Firing {#firing}
 
 > [!WARNING]
@@ -288,7 +362,12 @@ These videos are about clay bodies and slips. Glazecalc works out glazes, not cl
 ### Try
 
 1. Start a [firing log](/firing) for your next firing, with columns for time, temperature and cones. A gas kiln's log can add columns such as Ox Probe, Damper and Primary Air.
-2. With an assistant: ask it to run `convert_cone_temperature` for the cones you fire to, in both scales.
+2. With an assistant: ask it for the temperature of the cones you fire to, in both scales (`convert_cone_temperature`).
+
+### Check
+
+- Does a cone measure temperature? What does it measure?
+- Why must a kiln and its room be vented during a firing?
 
 ## One more video {#more}
 

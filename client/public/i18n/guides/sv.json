@@ -243,5 +243,19 @@
     "loading": "Hämtar biblioteket…",
     "failed": "Biblioteket kunde inte hämtas. Försök igen senare.",
     "choosePrompt": "Välj land eller region för att se vad som säljs där."
+  },
+  "stull": {
+    "title": "Stull-diagram: kiseldioxid mot aluminiumoxid i Segerformeln",
+    "regions": {
+      "unfused": "osmält",
+      "matte": "matt",
+      "semi-matte": "halvmatt",
+      "bright": "blank",
+      "underfired": "underbränd",
+      "crazed": "krackelerad"
+    },
+    "keyBright": "Prickad linje: där Stulls glasyrer var som blankast.",
+    "keyCrazed": "Snedstreck: där de krackelerade.",
+    "note": "En vägledning, inte en förutsägelse. R. T. Stull (Transactions of the American Ceramic Society, 1912) brände vid kägla 11 med flussmedlen fasta vid 0,3 K₂O och 0,7 CaO; andra flussmedel och bränningar flyttar områdena, och en underbränd matt glasyr kan hamna som blank i diagrammet. Områdena är som Glazy ritar dem."
   }
 }

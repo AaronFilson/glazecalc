@@ -243,5 +243,19 @@
     "loading": "A könyvtár betöltése…",
     "failed": "A könyvtárat nem sikerült betölteni. Próbálja újra később.",
     "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa, mi kapható ott."
+  },
+  "stull": {
+    "title": "Stull-diagram: a szilícium-dioxid a timföld függvényében a Seger-képletben",
+    "regions": {
+      "unfused": "nem olvadt",
+      "matte": "matt",
+      "semi-matte": "félmatt",
+      "bright": "fényes",
+      "underfired": "alulégetett",
+      "crazed": "hajszálrepedezett"
+    },
+    "keyBright": "Pontozott vonal: ahol Stull mázai a legfényesebbek voltak.",
+    "keyCrazed": "Vonalkázás: ahol hajszálrepedeztek.",
+    "note": "Útmutató, nem előrejelzés. R. T. Stull (Transactions of the American Ceramic Society, 1912) 11-es gúlára égetett, az olvasztóanyagokat 0,3 K₂O-ban és 0,7 CaO-ban rögzítve; más olvasztóanyagok és égetések eltolják a tartományokat, és egy alulégetett matt máz fényesként is megjelenhet a diagramon. A tartományok úgy vannak, ahogy a Glazy rajzolja őket."
   }
 }

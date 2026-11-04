@@ -243,5 +243,19 @@
     "loading": "Ielādē bibliotēku…",
     "failed": "Bibliotēku neizdevās ielādēt. Mēģiniet vēlreiz vēlāk.",
     "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu, ko tur pārdod."
+  },
+  "stull": {
+    "title": "Stala diagramma: silīcija dioksīds pret alumīnija oksīdu Zēgera formulā",
+    "regions": {
+      "unfused": "nesakusis",
+      "matte": "matēta",
+      "semi-matte": "pusmatēta",
+      "bright": "spīdīga",
+      "underfired": "nepietiekami apdedzināta",
+      "crazed": "ar matplaisām"
+    },
+    "keyBright": "Punktēta līnija: kur Stala glazūras bija visspīdīgākās.",
+    "keyCrazed": "Svītrojums: kur tās ieguva matplaisas.",
+    "note": "Orientieris, nevis prognoze. R. T. Stals (R. T. Stull; Transactions of the American Ceramic Society, 1912) apdedzināja pie konusa 11, kušņus fiksējot pie 0,3 K₂O un 0,7 CaO; citi kušņi un apdedzināšanas režīmi apgabalus pārbīda, un nepietiekami apdedzināta matēta glazūra var tikt attēlota kā spīdīga. Apgabali ir tādi, kādus tos zīmē Glazy."
   }
 }

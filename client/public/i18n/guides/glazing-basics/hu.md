@@ -3,20 +3,20 @@ title: Mázazás az alapoktól
 lead: Miből áll a máz, hogyan lesz belőle üveg a kemencében, és minden szó magyarázata, amellyel egy recepten, egy zsákon vagy egy gúlatáblázaton találkozik.
 ---
 
-## Mi a máz? {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-A **máz**{{en: glaze}} vékony üvegréteg, amely összeolvad az edénnyel. A Glazy, a nyílt mázrecept-adatbázis, így határozza meg: „üvegképlet, amelyet úgy hangoltak be, hogy bizonyos hőmérsékleten megolvadjon és ráolvadjon az agyagra”. Porrétegként kerül fel, és a kemencében üveges bevonattá olvad, amely lezárja az agyagot, így az edény kevésbé hajlamos arra, hogy szivárogjon, elszíneződjön vagy kopjon. Az égetés csúcsán az olvadék az agyaggal is reakcióba lép, és gyakran köztes réteget képez közöttük, amely odarögzíti a mázat. Fazekasárun{{en: earthenware}} a máz külön rétegként a felületen marad; kőagyagon{{en: stoneware}} beleolvad a cserépbe{{en: body}}.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-A recept nyersanyagokat sorol fel, például földpátot{{en: feldspar}}, mészkőlisztet{{en: whiting}} és kaolint. A kemencében mindegyiknek egy része gázként távozik (víz vagy szén-dioxid formájában), a többiből **oxidok** lesznek: egy elem és az oxigén vegyületei, például a szilícium-dioxid{{en: silica}} (SiO₂) vagy a kalcium-oxid (CaO). Az égetett üveg oxidokból áll, ezért a fazekasok a mázat az oxidjaival írják le. Minden oxid a három feladat egyikét látja el.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- A **szilícium-dioxid** (SiO₂) az **üvegképző**{{en: glass former}}: ez építi fel az üveget. A tiszta szilícium-dioxid {{3100 °F; 1700 °C}} fölött olvad, jóval melegebben, mint amit egy kerámiaégető kemence elér, és a sok szilícium-dioxidot tartalmazó máz általában tartósabb.
-- Az **olvasztóanyagok**{{en: fluxes}} olyan hőmérsékletre csökkentik az olvadáspontot, amelyet egy kemence elér. Az **alkáli-oxidok**, jelük **R₂O**, a nátrium, a kálium és a lítium oxidjai (Na₂O, K₂O, Li₂O); a 06-os Orton-gúlától{{en: cone}} felfelé, a közepes és a magas tüzű égetésben is hatnak. A **földalkáli-oxidok**, jelük **RO**, a kalcium, a magnézium, a bárium és a stroncium oxidjai (CaO, MgO, BaO, SrO), melléjük sorolják a cink-oxidot (ZnO) is; ezek az 5-ös és a 10-es gúla között hatnak a legjobban. Az R a csoport bármelyik fémét jelöli.
-- A **timföld** (Al₂O₃) a **stabilizáló**{{en: stabilizer}}. Sűrűbbé teszi az olvadékot, hogy megmaradjon a függőleges falakon, és keménységet, tartósságot ad. A Glazy figyelmeztetése: ha túl kevés a timföld, „a máz lefolyhat; a túl sok viszont mattá sűrítheti az olvadékot”. A timföld főleg az agyagból és a földpátból származik.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-A **bór** (B₂O₃) elmossa a határt. A vegyészek az üvegképzők közé sorolják, de a műhelyi égetések hőmérsékletén olvasztóanyagként viselkedik, és a fazekasok is annak tekintik. Az 5–6-os gúlán kulcsfontosságú, magas tüzű égetésnél nincs rá szükség. (A gúlákat, amelyekről a fazekasok az égetéseket elnevezik, lejjebb magyarázzuk el.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Így könnyű fejben tartani: a szilícium-dioxid az üveg, az olvasztóanyagok teszik lehetővé, hogy olyan hőmérsékleten olvadjon meg, amelyet a kemencéje elér, a timföld pedig sűrűbbé teszi, hogy ott maradjon, ahová felvitte.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Agyag, bevonatok és a két égetés {#clay-and-firings}
 
@@ -77,191 +77,205 @@ A közölt hőmérsékletek eltérnek egymástól. A Glazy a magas tüzű éget�
 
 Észak-Amerikán kívül a forgalmazók gyakran °C-ban adják meg az égetést, nem gúlával. A modern gúlát Hermann Seger fejlesztette ki, először 1886-ban használták Berlinben, az Egyesült Királyságnak pedig saját Staffordshire-gúlái voltak; ezek számairól nem kellene feltételezni, hogy megegyeznek az Orton-gúlákéval, és átváltó táblázatot sem találtunk. Az [Égetés egyszerű kemencében](/guides/firing) útmutató részletesebben foglalkozik a gúlákkal.
 
-## A recepttől a Seger-képletig {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-A **recept**{{en: batch recipe}} tömeg szerint sorolja fel a nyersanyagokat, általában úgy átszámítva, hogy az alapmáz összege 100 legyen. Az **adalékok** (színezőanyagok{{en: colorants}}, zavarosítók és lebegtetők) a 100-on felül kerülnek bele, általában az alapmáz százalékában. Hogy lássák, valójában mi a máz, a fazekasok a receptet **Seger-képletre** (**UMF**){{en: unity molecular formula}} számítják át, amely Hermann Seger nevét viseli, mert ő használta elsőként a háromoszlopos elrendezését.
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: A recepttől a Seger-képletig: a Glazy kidolgozott példája
-Label: A recepttől a Seger-képletig
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Lépés                | Mi történik                                                                                                                                  | A példában                                                                                                                                                                      |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Recept            | Nyersanyagok tömeg szerint, 100-ra átszámítva                                                                                                | Többek között 40% földpát                                                                                                                                                       |
-| 2. Oxidos összetétel | Mint egy tápértéktáblázat: a nyersanyagok oxidjait tömegszázalékban összeadják, a gázokat elhagyják                                          | A földpát 64,8% szilícium-dioxidot{{en: silica}} tartalmaz, így a 40% földpátból 25,9% SiO₂ származik. Az égetett máz összetétele: 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
-| 3. Mól               | A tömegekből **mól** lesz, vagyis a molekulák száma, hiszen „a grammokban számolás félrevezető lehet, mert egyes oxidok nehezebbek másoknál” | 60,1 g SiO₂ egy mól, így 67,4 g nagyjából 1,12 mól                                                                                                                              |
-| 4. Egységre számítás | Mindent elosztanak az olvasztóanyagok összegével, így az olvasztóanyagok összege 1 lesz                                                      | Az olvasztóanyagok összege 0,303; az osztás után K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                                      |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-A Glazecalc [receptoldala](/recipe) gépelés közben mind a négy lépést elvégzi, és az eredményt három oszlopban mutatja: az olvasztóanyagok{{en: fluxes}} (R₂O és RO), amelyek összege 1; a stabilizálók{{en: stabilizers}} (R₂O₃: timföld, gyakran ide sorolva a bórt is); és az üvegképzők{{en: glass formers}} (RO₂: szilícium-dioxid). „Az egységre számítás csak egy átszámítási eszköz” – írja a Glazy: két recept, amely különböző nyersanyagokból készül, de azonos a Seger-képlete, „égetés után szinte azonosan viselkedik”. Az 1 tehát közös mérce, nem lemérendő mennyiség. A Digitalfire hozzáteszi, hogy a módszer „alacsonyabb hőmérsékleten kevésbé jól működik”, ahol a bór nem egyszerű olvasztóanyag, és hogy a Seger-képletek „összehasonlításra valók, és összefüggésükben érdemes nézni őket”. Az **Összehasonlítás** funkció két recept képletét oxidról oxidra egymás mellé állítja.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### A szilícium-dioxid és a timföld aránya
+### The silica to alumina ratio
 
-A leghasznosabb egyetlen szám a **szilícium-dioxid és a timföld aránya** (SiO₂ : Al₂O₃){{en: silica to alumina ratio}}: a szilícium-dioxid osztva a timfölddel. A példában 3,70 ÷ 0,41 nagyjából 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Mit jelez a SiO₂ : Al₂O₃ arány (Glazy)
-Label: SiO₂ : Al₂O₃ arány
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-|       Arány | A Glazy értelmezése                 |
-| ----------: | ----------------------------------- |
-| Nagyjából 9 | Fényes olvadékra utal, ha elég a hő |
-|         5–7 | Sok stabil kőagyagmázra jellemző    |
-|         3–5 | Matt vagy alulégetett lehet         |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Az 5–7-es arány önmagában sem fényes, sem matt felületet nem jelez előre: az olvasztóanyagok, a bór és a gúla is eltolja a határt. A Glazy szerint a stabil mázakban az olvasztóanyagok szokásos aránya 0,2 R₂O és 0,8 RO, legfeljebb 0,3 R₂O és 0,7 RO. Több alkália hígfolyósabbá teszi az olvadékot, és növeli a hőtágulását{{en: expansion}}, így a hajszálrepedés{{en: crazing}} kockázatát is.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Izzítási veszteség
+### Loss on ignition
 
-Az **izzítási veszteség** (**LOI**){{en: loss on ignition}} az a tömeg, amelyet egy nyersanyag a kemencében elveszít, amikor víz, szén-dioxid, szerves anyagok vagy kén gázként távoznak belőle. Az égetett mázban már nincs ilyen, ezért a Seger-képlet nem számol vele.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: Szokásos izzítási veszteség (Digitalfire)
-Label: Izzítási veszteség
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Nyersanyag                              | Szokásos LOI                                                                 |
-| --------------------------------------- | ---------------------------------------------------------------------------- |
-| Mészkőliszt (kalcium-karbonát), dolomit | Több mint 40%, főleg szén-dioxid: 100 g kalcium-karbonátból kb. 45 g távozik |
-| Lítium-karbonát                         | Kb. 60%                                                                      |
-| Bárium-karbonát, Gerstley Borate        | Több mint 20%                                                                |
-| Kaolin                                  | Kb. 12%, főleg a kristályaiban kötött víz                                    |
-| Földpátok                               | 1% alatt                                                                     |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Az a gáz, amely a máz olvadásának megkezdése után távozik, kénytelen átbuborékolni rajta, és a Digitalfire szavaival „buborékokat, hólyagokat, tűszúrásokat, összehúzódást” okoz. A talkum nagyjából {{1650 °F; 899 °C}} hőmérsékletig ad le gázt. Segítenek a frittek{{en: frits}}, a **kalcinált** nyersanyagok (amelyekből előzetes hevítéssel kiűzték a gázokat) és az égetés módosításai is.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-A régebbi könyvek ezt a számítást kézzel végzik, a **moláris tömeg** (egy nyersanyag vagy oxid egy móljának tömege) és az **egyenértéktömeg** (egy nyersanyagnak az a tömege, amely egy mól oxidot ad) segítségével. Számításunk szerint nagyjából 100 g mészkőliszt ad egy mól, azaz 56 g kalcium-oxidot. Egy kalkulátor mindkettőt elvégzi.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Frittek és nyersanyagok {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Frittek
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-A **fritt**{{en: frit}} gyárban készült üveg: ásványokat olvasztanak meg, vízben hirtelen lehűtik, majd megőrlik. A frittelés az oldható anyagokat, például a bóraxot, oldhatatlanná teszi, a mérgező oxidokat, például az ólmot és a báriumot, stabil üvegbe zárja, egyenletesebb anyagot ad, mint a nyers ásványok, és kiűzi a gázokat, így a frittelt mázak „sokkal hibamentesebbek” (Digitalfire). A frittek korán is olvadnak: egy nátriumos fritt már a 06-os gúlán aktív, míg a földpát{{en: feldspar}} „a 6-os gúlán még csak lágyulni kezd”. Drágábbak, agyag kell melléjük, hogy lebegésben maradjanak (a Digitalfire példájában 85% fritt és 15% agyag), és „elméletileg oldhatatlanok, a gyakorlatban azonban nem azok”.
+::stull-chart
 
-Az észak-amerikai frittek gyártó és szám szerint ismertek: a Ferro Frit 3134 (a Ferro ma Vibrantz néven működik) a Glazy nyilvános receptjeinek nagyjából 22%-ában szerepel. A brit receptek gyakrabban neveznek meg általános frittfajtákat, például a standard boraxfrittet.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### A gyakori nyersanyagok
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Gyakori máznyersanyagok és amit a mázba visznek
-Label: Gyakori máznyersanyagok
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Nyersanyag (más nevei)                                              | Mit ad                      | Megjegyzés                                                                                                                                                                                        |
-| ------------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarcliszt{{en: silica}} (kovakő{{en: flint}}, kvarc)               | SiO₂                        | Mázba 325 mesh-es, nagyon finom őrlésűt használjon                                                                                                                                                |
-| Kaolin (brit nevén: China clay; Ausztráliában: Eckalite)            | Al₂O₃, SiO₂                 | A fő timföldforrás; a mázat is lebegésben tartja                                                                                                                                                  |
-| Ball clay                                                           | Al₂O₃, SiO₂                 | Képlékenyebb, mint a kaolin, több benne a vas és a szerves anyag                                                                                                                                  |
-| Káliföldpát, nátronföldpát, nefelinszienit{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂      | Olvasztóanyagok, saját timfölddel és szilícium-dioxiddal. A nefelinszienit erős olvasztóanyag alacsony és közepes tüzű égetéshez. Egy régi receptben az egyszerű „földpát” bármelyiket jelentheti |
-| Mészkőliszt{{en: whiting}} (kalcium-karbonát)                       | CaO                         | A fő kalciumos olvasztóanyag; szén-dioxidot ad le                                                                                                                                                 |
-| Wollastonit                                                         | CaO, SiO₂                   | Kalcium, szén-dioxid nélkül                                                                                                                                                                       |
-| Dolomit, talkum                                                     | MgO, mellette CaO vagy SiO₂ | Selymes matt felület; kisebb hőtágulás                                                                                                                                                            |
-| Cink-oxid                                                           | ZnO                         | Fényes felület és kristályok; a túl sok összehúzódást{{en: crawling}} okozhat                                                                                                                     |
-| Bórfrittek, Gerstley Borate, kolemanit                              | B₂O₃                        | A 06-os és a 6-os gúla között nélkülözhetetlen; a frittek „egyenletesebbek és kevésbé oldódók, mint a nyers borátok”                                                                              |
-| Lítium-karbonát                                                     | Li₂O                        | Alacsony hőtágulású olvasztóanyag; drága, ezért takarékosan használják                                                                                                                            |
-| Stroncium-karbonát                                                  | SrO                         | A bárium kevésbé mérgező helyettesítője                                                                                                                                                           |
-| Bárium-karbonát                                                     | BaO                         | Nyers formában mérgező; a sok báriumot tartalmazó mázakból kioldódhat{{en: leach}}                                                                                                                |
-| Bentonit                                                            | Lebegtetés                  | Nagyon finom agyag, általában 1–3%-ban, hogy a máz ne ülepedjen le                                                                                                                                |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> A máznyersanyagok finom porok. A szilícium-dioxid pora eleinte tünetek nélkül károsítja a tüdőt, és egyes nyersanyagok, például a bárium-karbonát és a lítium-karbonát, lenyelve mérgezők. Óvatosan bánjon a porokkal, nedvesen takarítson, és száraz munkánál viseljen megfelelően illeszkedő légzésvédő maszkot. A [Biztonságos keverés és szellőzés](/guides/safe-mixing) és a [Ne mérgezze meg a családját](/guides/home-safety) útmutató elmagyarázza, hogyan.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Helyi elnevezések
+### Regional names
 
-- A **kaolin** az Egyesült Királyságban **China clay**; az ausztrál forgalmazók Eckalite néven árulják.
-- A **kovakő** (angolul flint) a szilícium-dioxid régebbi brit neve. A brit forgalmazók ma is külön termékként árulják a **kalcinált kovakövet**, így ha egy brit receptben „flint” szerepel, az valószínűleg kalcinált kovakő, egy amerikaiban pedig valószínűleg őrölt kvarc. Mindkettőt szilícium-dioxid-forrásként árulják; nézze meg a kémiai összetételüket.
-- A **China stone** és a **Cornish stone** (Cornwall stone) ugyanaz az anyag, egy földpáttal rokon cornwalli kőzet.
-- A **mészkőliszt** kalcium-karbonát; a német forgalmazók Kreide (kréta) néven árulják.
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Egy nyersanyagot az általa bevitt oxidok alapján ítéljen meg, ne a neve alapján. A Glazecalc is így működik: a forgalmazója által megadott összetételt beírhatja a [Nyersanyagok oldalon](/material), a **Mai nyersanyagok kipróbálása és összehasonlítás**, a **Mennyiségjavaslat és összehasonlítás** és az **Összeállítás a meglévő nyersanyagaimból** funkció pedig mind az égetés utáni oxidok alapján keres egyezést, nem a nevek alapján.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-A nyersanyagok is változnak. A Custer földpát gyártása 2023-ban megszűnt. Az eredeti Gerstley Borate bányát 1999–2000 körül bezárták; a Laguna ma is árul ezen a néven egy terméket, a fő helyettesítő pedig a Gillespie Borate. A források nem egységesek abban, hogy a Gillespie fontra azonos mennyiségben helyettesítheti-e a Gerstley Borate nevű terméket (a gyártója és a Potclays szerint igen, a Digitalfire és mások szerint nem), ezért hasonlítsa össze a kettőt a Glazecalc segítségével, aztán próbáljon ki egy kis adagot.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Színezőanyagok és zavarosítók {#color}
+## Colorants and opacifiers {#color lang=en}
 
-A **színezőanyag**{{en: colorant}} olyan fém-oxid vagy fém-karbonát, amely színezi a mázat; a **színtest**{{en: stain}} gyárilag készült színezőanyag, amely stabilabb és egyenletesebb, mint a nyers oxidok. A színezőanyagok általában az alapmáz 5%-ánál kevesebbet tesznek ki, sokuk 1%-nál is kevesebbet, és a karbonát nagyjából feleannyira erős, mint a megfelelő oxid.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Gyakori színezőanyagok, az alapmáz százalékában
-Label: Gyakori színezőanyagok
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Színezőanyag            | Szokásos kiinduló mennyiség              | Színek és megjegyzések                                                                                                                                  |
-| ----------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalt                  | 0,1–2% (a források eltérnek)             | Kék, nagyon erős; lila felé hajlik, ha az alapmázban magnézium van                                                                                      |
-| Vas                     | 0,5–10%                                  | Oxidáló égetésben barnák, sárgásbarnák és vörösek; redukcióban ½–2% szeladont, 5–6% tenmokut ad. Olvasztóanyag, ezért ha sok van belőle, a máz lefolyik |
-| Réz                     | 1–3%                                     | Oxidáló égetésben zöld vagy türkiz, redukcióban vörös. Kioldódást okozhat a mázból                                                                      |
-| Króm                    | 0,5% alattól 2%-ig (a források eltérnek) | Zöld; barna, ha az alapmázban cink van, ónnal rózsaszín                                                                                                 |
-| Mangán                  | 2–10%                                    | Barnák és lilák                                                                                                                                         |
-| Rutil                   | Kb. 2–5%                                 | Foltos, tarka szín; kb. 5% fölött érdes vagy matt                                                                                                       |
-| Kereskedelmi színtestek | 2–12%                                    | 2–4% halvány árnyalatokhoz, 5–8% közepes tónusokhoz, 10–12% erős színekhez                                                                              |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-A kobalt és a króm mennyiségéről valóban megoszlanak a vélemények. A Glazy szerint 0,1% kobalt elég egy kékhez; a Glendale Community College az atmoszférától függően ½–2%-ot vagy ½–3%-ot ad meg; Birdie Boone a Pottery Making Illustrated lapban 3%-ot vagy kevesebbet ír. Krómból Boone 0,5%-nál kevesebbet, a Glendale 2–3%-ot ír. A biztos út, ha alacsonyan kezdi, és **próbasort**{{en: line blend}} készít: próbalapok{{en: test tiles}} sorát, amelyeken egyetlen összetevő mennyisége lépésről lépésre nő a kevéstől a sokig.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Az alapmáz megváltoztatja a színt. A fényes, átlátszó alapmáz adja a legélénkebb színt; a selyemfényű és a matt alapmázak, amelyekben általában több a timföld, tompítják. A magnézium a kobaltot a lila felé tolja, a cink a krómot barnává teszi, a króm pedig ónnal rózsaszínt ad.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Zavarosítók
+### Opacifiers
 
-A **zavarosító** **fedővé** (opakká) teszi a mázat, így eltakarja az agyagot; az **átlátszó** máz alatt látszik az agyag.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Zavarosítók
+Table: Opacifiers
 
-| Zavarosító                                             | Szokásos mennyiség          | Megjegyzések                                                                              |
-| ------------------------------------------------------ | --------------------------- | ----------------------------------------------------------------------------------------- |
-| Cirkon-szilikát (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% a teljes fedéshez     | Az olcsóbb választás; a márkák ugyanazt az anyagot jelentik, különböző finomságúra őrölve |
-| Ón-oxid                                                | Kb. 5–7% (saját becslésünk) | Drága; redukcióban gyengén zavarosít                                                      |
-| Titán-dioxid                                           | 2% fölött                   | Selymes, áttetsző fedés; 10%-tól matt, texturált felület, látható kristályokkal           |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## A máz illeszkedése és a mázhibák {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-Az agyag és a máz is tágul melegítéskor és zsugorodik hűléskor, mindegyik a saját mértékében: ez a **hőtágulása**{{en: thermal expansion}}. A **máz illeszkedése**{{en: glaze fit}} azt mutatja, mennyire egyezik a kettő. Jó illeszkedésnél a cserép enyhe nyomófeszültség alatt tartja a mázat; a Digitalfire szerint egy kis nyomófeszültség erősíti az árut, a túl nagy viszont gyengítheti, sőt meg is repesztheti.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Hajszálrepedés és lepattogzás
+### Crazing and shivering
 
-A **hajszálrepedés**{{en: crazing}} finom repedések hálózata. A máz hőtágulása nagyobb, mint a cserépé, ezért hűléskor jobban zsugorodik, húzófeszültség alá kerül és megreped; ennek oka általában a túl sok nátrium és kálium (Na₂O, K₂O). Később, használat közben is megjelenhet, ismételt hirtelen lehűlés, például hideg folyadékkal való érintkezés után. Ha szándékos, mint a rakunál, **repedezett máznak** (krakelé) hívják. A Digitalfire szerint „az esetek 95%-ában a megoldás a máz hőtágulásának módosítása”; a lassú hűtés csak késlelteti a hajszálrepedést. A Digitalfire próbája: melegítse fel az árut nagyjából {{300 °F; 149 °C}} hőmérsékletre, merítse jeges vízbe, majd húzzon át rajta filctollal, hogy előtűnjenek a repedések.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Az első teendőről eltérnek a források. A Glazy szilícium-dioxid vagy timföld hozzáadását javasolja; a Digitalfire erre azt feleli, hogy a többlet szilícium-dioxid „csak felhígítja a KNaO-t” (a nátriumot és a káliumot); Linda Bloomfield bórt ad hozzá vagy csökkenti a földpátot, egyszerre csak egy nyersanyagon változtatva. Tanácsunk: a [receptkalkulátorban](/recipe) cserélje le a nátrium és a kálium egy részét kisebb hőtágulású olvasztóanyagokra (bór, lítium, magnézium, kalcium), ellenőrizze a változást az **Összehasonlítás** funkcióval, és erősítse meg a jeges vizes próbával.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-A **lepattogzás**{{en: shivering}} ennek a fordítottja: a máz hőtágulása jóval kisebb, mint a cserépé, ezért túl nagy nyomófeszültség alá kerül, és a peremekről, élekről lepattogzik. A Digitalfire figyelmeztet, hogy a szilánkok borotvaélesek lehetnek, és le is nyelhetik őket, a Glazy szerint pedig a lepattogzás „használati edényen még a hajszálrepedésnél is veszélyesebb”. A megoldás egy nagyobb hőtágulású máz vagy egy kisebb hőtágulású massza.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Ne használjon hajszálrepedéses vagy lepattogzott mázú edényt ételhez vagy italhoz. A források nem egységesek abban, hogy a hajszálrepedéses edények kellően tisztára moshatók-e (az egyik szerint a mosogatógép elég; egy másik hibásnak tartja a hajszálrepedéses használati edényt), ezért mi az óvatosabb álláspontot képviseljük.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Fényes és matt
+### Gloss and matte
 
-A **fényes** felület fényvisszaverő és sima, a **selyemfényű** visszafogott fényű, a **matt** pedig fénytelen. A fényes felülethez teljesen kiolvadt üveg kell. A matt felület származhat sok timföldből (alacsony SiO₂ : Al₂O₃ arányból), olyan olvasztóanyagokból, mint a kalcium, a magnézium, a bárium vagy a stroncium, amelyek a máz hűlésekor apró kristályokat képeznek, vagy alulégetésből.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Gyakori mázhibák
+### Common defects
 
-Egyszerre csak egy dolgon változtasson, és őrizze meg a próbalapjait{{en: test tiles}}.
+Change one thing at a time, and keep your test tiles.
 
-Table: Gyakori mázhibák, szokásos okaik és az első teendők
-Label: Gyakori mázhibák
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Hiba                          | Hogyan néz ki                                         | Gyakori okok                                                                                                                        | Első teendők                                                                                                                |
-| ----------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Összehúzódás{{en: crawling}}  | A máz cseppekké húzódik össze, csupasz agyagot hagyva | Poros vagy zsíros zsengélt áru; vastag, sok agyagot tartalmazó mázréteg, amely száradáskor megrepedt; cink, cirkon-szilikát vagy ón | Tisztítsa meg a zsengélt árut; mázazzon vékonyabban; kalcinálja az agyag egy részét; adjon hozzá kötőanyagot, például CMC-t |
-| Tűszúrás{{en: pinholing}}     | Apró lyukak vagy gödröcskék                           | A cserépből vagy a mázból távozó gáz, amelynek nyomát a máz nem folyta be; alulégetett vagy viszkózus máz                           | Tartsa a csúcshőmérsékleten kb. fél óráig; mázazzon vékonyabban; használjon kevesebb cinket vagy rutilt                     |
-| Hólyagosodás                  | Éles szélű kráterek                                   | Általában túlégetés; nagyon vastag mázréteg; illékony olvasztóanyagok kb. {{2192 °F; 1200 °C}} fölött                               | Égessen alacsonyabb hőfokon; mázazzon vékonyabban. Az éles szélek miatt a használati edény nem biztonságos                  |
-| Lefolyás                      | A máz lefolyik az égetőlapra                          | Túl kevés timföld; túl vastag réteg, például ahol a leöntések átfedik egymást; sok vas                                              | Mázazzon vékonyabban; adjon hozzá timföldet; a máz széle legyen jóval a talp fölött                                         |
-| Hűlési repedés{{en: dunting}} | Repedések az edényben hűlés vagy felfűtés miatt       | Gyors hűtés a kvarcátalakuláson{{en: quartz inversion}} át ({{1063 °F; 573 °C}}); egyenetlen falvastagság; rossz illeszkedés        | Égessen lassan {{1063 °F; 573 °C}} környékén, felfűtéskor és hűtéskor is; egyenletes falvastagság                           |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Élelmiszer-biztonság {#food-safety}
+## Food safety {#food-safety lang=en}
 
-A **kioldódás**{{en: leaching}} az, amikor az égetett mázból fém oldódik ki az ételbe vagy italba, és ez egy tökéletesnek látszó mázzal is megtörténhet. A jogszabályi vizsgálatok során az égetett darabot savas oldatban áztatják, és mérik a kioldódó ólom és kadmium mennyiségét.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Az ólommentes még nem élelmiszerrel érintkezésre alkalmas
+### Lead-free is not the same as food-safe
 
-Az Egyesült Államok, az EU, az Egyesült Királyság és Ausztrália szabályai azt korlátozzák, mennyi ólmot és kadmiumot ad le az égetett darab, nem azt, hogy mit tartalmaz a máz. Az „ólommentes” egy veszélyt kiküszöböl, de nem élelmiszer-biztonsági minősítés. Más oxidok is kioldódnak: a Glazy figyelmeztet, hogy a magas báriumtartalmú mázak „kioldódhatnak, és általában nem alkalmasak élelmiszerrel való érintkezésre”, a Digitalfire szerint a réz „kioldhatóvá teheti a mázat; tesztelje”, és a Glazy ma már nem ajánlja az ólmos mázakat használati edényekhez.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-A **belső máz**{{en: liner glaze}} stabil, általában színtelen vagy fehér máz az élelmiszerrel érintkező felületekre. Véleményünk szerint az a kisebb kockázatú választás, amelyben nincs színezőanyag, bárium, ólom vagy lítium, amely teljesen kiolvad, nem hajszálrepedezik és jól bírja a kopást. A kisebb kockázat nem bizonyíték.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-A **határképletek**{{en: limit formulas}} (a Digitalfire inkább a **célképlet**{{en: target formulas}} elnevezést használja) a stabil mázak Seger-képletének szokásos tartományait adják meg egy adott gúlára: a Digitalfire 6-os gúlára vonatkozó célértékei szerint a timföld 0,285–0,64, a szilícium-dioxid 2,4–4,7. A helyes kémia felé terelik, de semmit sem bizonyítanak; a Digitalfire azért kerüli a „határ” szót, mert azt sugallja, hogy a tartományokon belüli mázak „valahogy biztonságosak”. A Glazecalc receptmódosító eszközei jelzik, ha az új recept túllép egy ajánlott határt, például ha 6-os gúlán sok benne a bór, és azt is, mit fog a máz valószínűleg csinálni.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-A jogszabályi határértékek országonként eltérnek. A táblázat annak az országnak az értékeit mutatja, ahol él, a jogszabály saját mértékegységeiben; összehasonlításhoz válasszon másik országot vagy régiót.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-Az Egyesült Államokban az élelmiszerhez használhatónak látszó díszkerámiát élelmiszeres árunak tekintik, kivéve, ha rajta van egy ráragasztott címke, az alján pedig egy maradandó, beformázott vagy beégetett felirat, például „Not for Food Use. May Poison Food” (élelmiszerhez nem használható; megmérgezheti az ételt), vagy ha az élelmiszerrel érintkező felületen átmenő lyuk van. Az EU a 84/500/EGK irányelvben határozza meg az ólom és a kadmium határértékeit, az Egyesült Királyság pedig saját jogszabályában ugyanezeket az értékeket tartja meg. 2026. május 29-től Hollandia, Belgium és Luxemburg nagyjából 130–150-szer kevesebb ólmot és nagyjából 15-ször kevesebb kadmiumot enged meg. Ausztrália az importált árura határoz meg határértékeket; az Ausztráliában vagy Új-Zélandon készült árura nem találtunk hivatalos határértéket.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Vizsgálat
+### Testing
 
-Az FDA szerint az otthoni törlőpálcás tesztkészletek kimutathatják a kioldható ólmot, a Ceramics New Zealand viszont figyelmeztet, hogy a tesztceruzákat nem kerámiára tervezték, és álpozitív eredményt adnak. A pozitív eredményt tekintse oknak arra, hogy abbahagyja a darab használatát, a negatívat pedig olyannak, ami semmit sem bizonyít. Az égetett darab laboratóriumi kioldódási vizsgálata (az Egyesült Államokban ASTM C738, Európában EN 1388 – Magyarországon MSZ EN 1388 – vagy ISO 6486) adja a valódi választ.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> Az „élelmiszerrel érintkezésre alkalmas”{{en: food safe}} azt jelenti, hogy ez a máz, ezen az agyagon, erre a gúlára égetve, ebben a kemencében és így felhordva a jogszabályi határértékeknél kevesebbet ad le. A Glazecalc segíthet stabil mázat összeállítani, az **Ólom helyettesítése** funkció pedig egy régi ólmos receptet ólom nélkül újraépíthet, de egyetlen kalkulátor sem minősíthet alkalmasnak egy edényt. Erre csak az égetett darab vizsgálata képes.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Fajsúly és mázfelhordás {#application}
 
@@ -462,7 +476,7 @@ Zavarosító (opacifier)
 Zsengélés (bisque; brit angolul: biscuit)
 : Az első, alacsonyabb hőfokú égetés, általában 08–04-es gúlára (leggyakrabban 06–04-esre), amely után az áru erős, de porózus.
 
-## Források {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +486,7 @@ Zsengélés (bisque; brit angolul: biscuit)
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (a The Ceramic Shop oldalán)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -483,6 +497,14 @@ Zsengélés (bisque; brit angolul: biscuit)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Zsengélés (bisque; brit angolul: biscuit)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

@@ -243,5 +243,19 @@
     "loading": "正在載入原料庫…",
     "failed": "無法載入原料庫。請稍後再試。",
     "choosePrompt": "選擇您的國家或地區，即可查看當地販售的原料。"
+  },
+  "stull": {
+    "title": "Stull 圖：塞格式中二氧化矽對氧化鋁",
+    "regions": {
+      "unfused": "未熔",
+      "matte": "霧面",
+      "semi-matte": "半霧面",
+      "bright": "亮面",
+      "underfired": "欠燒",
+      "crazed": "龜裂"
+    },
+    "keyBright": "點線：Stull 的釉最亮的位置。",
+    "keyCrazed": "斜線填色：這些釉出現龜裂的位置。",
+    "note": "僅供參考，不是預測。R. T. Stull（Transactions of the American Ceramic Society，1912）在 Orton 11 號測溫錐下燒成，助熔劑固定為 0.3 K₂O 和 0.7 CaO；其他助熔劑和燒成條件會使各區域移動，欠燒的霧面釉也可能畫在亮面區。各區域依 Glazy 的畫法。"
   }
 }

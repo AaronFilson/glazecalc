@@ -415,6 +415,9 @@ describe('MCP: the companion prompts', () => {
       'save it only if I say yes',
       'Do not retell, summarise or quote',
       'not connected with him',
+      'questions to check what I learned',
+      'wait for my answer',
+      'specific_gravity_water',
       'leach test'
     ]) {
       expect(text).to.include(part);
@@ -519,7 +522,9 @@ describe('the teaching companion: matchTopic (server/mcp/course.ts)', () => {
   });
 
   it('takes the units it is given, so it can be checked without the guide', () => {
-    const units = [{ id: 'glazes', number: 1, title: 'Glazes', videos: [], reads: [], exercises: [], lab: false }];
+    const units = [
+      { id: 'glazes', number: 1, title: 'Glazes', videos: [], reads: [], exercises: [], checks: [], lab: false }
+    ];
     expect(matchTopic('glazes', units)?.id).to.equal('glazes');
     expect(matchTopic('line blends', units)).to.equal(undefined);
   });
@@ -849,7 +854,11 @@ describe('the companion guide and the server agree', () => {
   });
 
   it('the exercises keep to the limits the prompt and the page expect', () => {
-    for (const unit of courseUnits()) expect(unit.exercises.length, unit.id).to.be.within(1, 3);
+    for (const unit of courseUnits()) {
+      expect(unit.exercises.length, unit.id).to.be.within(1, 3);
+      expect(unit.checks.length, unit.id).to.be.within(2, 3);
+      for (const q of unit.checks) expect(q, unit.id).to.match(/\?$/);
+    }
     const file = readFileSync(
       path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'guides', COURSE_GUIDE, 'en.md'),
       'utf8'

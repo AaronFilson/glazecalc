@@ -243,5 +243,19 @@
     "loading": "Laai tans die biblioteek…",
     "failed": "Kon nie die biblioteek laai nie. Probeer later weer.",
     "choosePrompt": "Kies jou land of streek om te sien wat daar verkoop word."
+  },
+  "stull": {
+    "title": "Stull-grafiek: silika teen alumina in die Seger-formule",
+    "regions": {
+      "unfused": "ongesmelt",
+      "matte": "mat",
+      "semi-matte": "halfmat",
+      "bright": "helder",
+      "underfired": "onderbak",
+      "crazed": "met haarlynbarsies"
+    },
+    "keyBright": "Stippellyn: waar Stull se glasure die helderste was.",
+    "keyCrazed": "Arsering: waar hulle haarlynbarsies gekry het.",
+    "note": "'n Gids, nie 'n voorspelling nie. R. T. Stull (Transactions of the American Ceramic Society, 1912) het by kegel 11 gebak met die vloeimiddels vasgestel op 0,3 K₂O en 0,7 CaO; ander vloeimiddels en bakke skuif die streke, en 'n onderbakte mat kan as helder gestip word. Die streke is soos Glazy hulle teken."
   }
 }

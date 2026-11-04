@@ -464,6 +464,8 @@ Glaze
 
 ::local-equivalents
 
+::stull-chart
+
 ::not-a-block
 `;
 
@@ -497,6 +499,7 @@ Glaze
       'silica-limit',
       'food-limits',
       'local-equivalents',
+      'stull-chart',
       'paragraph'
     ]);
     expect((glossary[0] as Extract<(typeof glossary)[number], { kind: 'definitions' }>).items).toHaveLength(2);

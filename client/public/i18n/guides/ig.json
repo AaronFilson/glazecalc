@@ -243,5 +243,19 @@
     "loading": "Na-ebugo ọbá akwụkwọ…",
     "failed": "Enweghị ike ibugo ọbá akwụkwọ. Nwaa ọzọ mgbe e mesịrị.",
     "choosePrompt": "Họrọ obodo gị ma ọ bụ mpaghara gị iji hụ ihe a na-ere n'ebe ahụ."
+  },
+  "stull": {
+    "title": "Chaatị Stull: silica megide alumina na UMF",
+    "regions": {
+      "unfused": "agbazeghị",
+      "matte": "matte",
+      "semi-matte": "semi-matte",
+      "bright": "na-egbuke egbuke",
+      "underfired": "esighị ọkụ zuru ezu",
+      "crazed": "nwere crazing"
+    },
+    "keyBright": "Ahịrị ntụpọ ntụpọ: ebe glaze Stull kacha egbuke egbuke.",
+    "keyCrazed": "Ahịrị gafere agafe: ebe ha nwere crazing.",
+    "note": "Ntụziaka, ọ bụghị amụma. R. T. Stull (Transactions of the American Ceramic Society, 1912) gbara ọkụ na cone 11 ya na flux a kwụsịrị na 0.3 K₂O na 0.7 CaO; flux ndị ọzọ na ịgba ọkụ ndị ọzọ na-ebugharị mpaghara ndị ahụ, matte esighị ọkụ zuru ezu nwekwara ike ịdị ka nke na-egbuke egbuke. Mpaghara ndị ahụ dị ka Glazy si ese ha."
   }
 }

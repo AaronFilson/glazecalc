@@ -243,5 +243,19 @@
     "loading": "Il-librerija qed titgħabba…",
     "failed": "Il-librerija ma setgħetx titgħabba. Erġa’ pprova aktar tard.",
     "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara x’jinbiegħ hemmhekk."
+  },
+  "stull": {
+    "title": "Mappa ta’ Stull: silika kontra alumina fil-formula ta’ Seger",
+    "regions": {
+      "unfused": "mhux imdewweb",
+      "matte": "matt",
+      "semi-matte": "nofs matt",
+      "bright": "ileqq",
+      "underfired": "mhux moħmi biżżejjed",
+      "crazed": "bix-xegħir"
+    },
+    "keyBright": "Linja bit-tikek: fejn il-glejżijiet ta’ Stull kienu l-aktar jleqqu.",
+    "keyCrazed": "Linji dojoq: fejn għamlu x-xegħir.",
+    "note": "Gwida, mhux tbassir. R. T. Stull (Transactions of the American Ceramic Society, 1912) ħema fil-kon 11 bil-flussi fissi fuq 0.3 K₂O u 0.7 CaO; flussi u ħamjiet oħra jċaqilqu r-reġjuni, u matt mhux moħmi biżżejjed jista’ jidher bħala ileqq. Ir-reġjuni huma kif Glazy jirrappreżentahom."
   }
 }

@@ -243,5 +243,20 @@
     "loading": "Loading the library…",
     "failed": "The library could not be loaded. Try again later.",
     "choosePrompt": "Choose your country or region to see what is sold there."
+  },
+  "stull": {
+    "title": "Stull chart: silica against alumina in the unity formula",
+    "regions": {
+      "unfused": "unfused",
+      "matte": "matte",
+      "semi-matte": "semi-matte",
+      "bright": "bright",
+      "underfired": "underfired",
+      "crazed": "crazed"
+    },
+    "keyBright": "Dotted line: where Stull's glazes were brightest.",
+    "keyCrazed": "Hatching: where they crazed.",
+    "note": "A guide, not a prediction. R. T. Stull (Transactions of the American Ceramic Society, 1912) fired at cone 11 with the fluxes fixed at 0.3 K₂O and 0.7 CaO; other fluxes and firings move the regions, and an underfired matte can plot as bright. The regions are as Glazy draws them.",
+    "inGuide": "Silica (SiO₂) across, from 1 to 7, and alumina (Al₂O₃) up, from 0 to 1, both from the unity formula. Wedges fan out from the left: unfused at the top left, then matte, then semi-matte. The unshaded part to their right is bright, and the dotted line in it is where Stull's glazes were brightest. Underfired is at the bottom right, with little alumina and much silica. The hatching, low on the chart and at its left side, is where his tests crazed."
   }
 }

@@ -89,7 +89,11 @@ export const plainMarks = (text: string, address: string): string =>
     // {{SG 1.45}}: specific gravity.
     .replace(/\{\{([^}]+)\}\}/g, '$1')
     .replace(/^::([\w-]+)\s*$/gm, (line, name: string) =>
-      REGION_LINES[name] ? `(The guide on the website shows ${REGION_LINES[name]}: ${address})` : ''
+      REGION_LINES[name]
+        ? `(The guide on the website shows ${REGION_LINES[name]}: ${address})`
+        : name === 'stull-chart'
+          ? `(The guide on the website draws the Stull chart here: ${address})`
+          : ''
     )
     .replace(/\n{3,}/g, '\n\n')
     .trim();

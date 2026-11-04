@@ -154,6 +154,7 @@ const PUBLIC_TOOLS = [
   'search_guides',
   'search_materials',
   'solve_target',
+  'specific_gravity_water',
   'suggest_substitutes',
   'vary_material'
 ];
@@ -631,6 +632,21 @@ describe('MCP: the public tools', () => {
     const tool = tools.find((t) => t.name === 'check_limits')!;
     const described = tool.inputSchema.properties.limitSet.description as string;
     for (const id of Object.keys(recipe.LIMIT_SETS)) expect(described).to.include(`"${id}"`);
+  });
+
+  it('specific_gravity_water works out the SG, the water to add or pour off, and what a bucket holds', async () => {
+    const thick = await data('specific_gravity_water', { gramsPer100ml: 160, litres: 10, target: 1.45 });
+    expect(thick.sg).to.equal(1.6);
+    // 10 L × (1.6 − 1.45) ÷ 0.45 = 3.33 L of water to add.
+    expect(thick.waterToAddLitres).to.equal(3.33);
+    // Brongniart at dry SG 2.5: (1.6 − 1) × 2.5 ÷ 1.5 = 1 kg a litre.
+    expect(thick.dryGlazePerLitreKg).to.equal(1);
+    expect(thick.bucket).to.eql({ litres: 10, dryGlazeKg: 10, waterKg: 6 });
+    const thin = await data('specific_gravity_water', { sg: 1.3, litres: 10, target: 1.45 });
+    expect(thin.waterToAddLitres).to.be.below(0);
+    expect(thin.note).to.match(/pour off/);
+    expect((await call('specific_gravity_water', {})).isError).to.equal(true);
+    expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
   });
 
   it('convert_cone_temperature reads the Orton and SK charts', async () => {

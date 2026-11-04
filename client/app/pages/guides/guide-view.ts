@@ -22,6 +22,7 @@ import { LocalEquivalents } from './local-equivalents';
 import { PoisonLines } from './poison-lines';
 import { ShopList } from './shop-list';
 import { SilicaLimit } from './silica-limit';
+import { StullChart } from '../recipe/stull-chart';
 
 /**
  * A guide as the page draws it, from its Markdown (guide-document.ts): its
@@ -47,6 +48,7 @@ import { SilicaLimit } from './silica-limit';
     ShopList,
     SilicaLimit,
     StructuredData,
+    StullChart,
     TranslocoDirective
   ],
   templateUrl: './guide-view.html',

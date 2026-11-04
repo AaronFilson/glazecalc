@@ -346,6 +346,9 @@ export const registerPrompts = (server: McpServer): void => {
               "The companion's exercises:",
               ...unit.exercises.map((exercise, i) => `${i + 1}. ${exercise}`),
               '',
+              ...(unit.checks.length
+                ? ["The companion's questions to check what I learned:", ...unit.checks.map((q) => `- ${q}`), '']
+                : []),
               recipe ? 'My recipe:' : '',
               recipe ?? '',
               recipe ? firingLine(cone) : cone ? `I fire to ${cone}.` : '',
@@ -356,9 +359,11 @@ export const registerPrompts = (server: McpServer): void => {
                 : '1. Say in a sentence what this unit covers, from its title and the attached guide sections.',
               '2. List his videos with their links and titles, credit John Britt (johnbrittpottery.com), and tell me to watch them on YouTube. Do not retell, summarise or quote what he says in them: you have not seen them, and they are his. Glazecalc is not connected with him.',
               '3. Explain the ideas I need from the attached Glazecalc guide sections, in plain words, and cite them by their addresses.',
-              '4. Lead me through the exercises one at a time, using the tools they name (analyze_recipe, check_limits, suggest_substitutes, match_from_materials, solve_target, get_material, convert_cone_temperature, search_guides, blend_recipes, vary_material, compare_recipes)' +
+              '4. Lead me through the exercises one at a time, using the tools they name (analyze_recipe, check_limits, suggest_substitutes, match_from_materials, solve_target, get_material, convert_cone_temperature, specific_gravity_water, search_guides, blend_recipes, vary_material, compare_recipes)' +
                 (recipe ? ', with my recipe where it fits: find each material with search_materials first.' : '.'),
-              '5. End with what to test on a tile next, and what to write down.',
+              unit.checks.length
+                ? '5. Ask me the check questions one at a time and wait for my answer before you give yours, from the attached guide sections (not from his videos). Then say what to test on a tile next, and what to write down.'
+                : '5. End with what to test on a tile next, and what to write down.',
               '6. If Glazecalc is connected to my account, offer to save what we made: a notebook entry (add_notebook_entry) with the series of tiles, their codes and amounts, given about when it is about one of my recipes or firing logs; a recipe (create_recipe) for a tile I liked; a firing log of the test firing (create_firing_log) with the readings I gave; or what came of a recipe in a firing (link_firing). Read back exactly what you will save, and save it only if I say yes. Do not say anything was saved until it was, and do not fill in an amount, temperature or result I did not give.',
               next
                 ? `7. Close by naming the next unit: unit ${next.number}, ${next.title}${nextVideo ? `, which starts with his video "${nextVideo.title}" (${nextVideo.url})` : ''}.`

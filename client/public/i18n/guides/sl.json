@@ -243,5 +243,19 @@
     "loading": "Nalaganje knjižnice …",
     "failed": "Knjižnice ni bilo mogoče naložiti. Poskusite znova pozneje.",
     "choosePrompt": "Izberite državo ali regijo, da vidite, kaj se tam prodaja."
+  },
+  "stull": {
+    "title": "Stullov diagram: kremenica glede na glinico v Segerjevi formuli",
+    "regions": {
+      "unfused": "nestaljeno",
+      "matte": "mat",
+      "semi-matte": "polmat",
+      "bright": "sijajno",
+      "underfired": "premalo žgano",
+      "crazed": "z lasastimi razpokami"
+    },
+    "keyBright": "Pikčasta črta: kjer so bile Stullove glazure najsijajnejše.",
+    "keyCrazed": "Šrafura: kjer so dobile lasaste razpoke.",
+    "note": "Vodilo, ne napoved. R. T. Stull (Transactions of the American Ceramic Society, 1912) je žgal pri stožcu 11 s talili, določenimi na 0,3 K₂O in 0,7 CaO; druga talila in žganja območja premaknejo, premalo žgana mat glazura pa se lahko izriše kot sijajna. Območja so takšna, kot jih riše Glazy."
   }
 }

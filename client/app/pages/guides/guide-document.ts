@@ -39,6 +39,7 @@ import type { ConeSystem } from '../../core/preferences.service';
 //   ::food-limits             the limits for ceramic ware in contact with food,
 //   ::local-equivalents       and the materials sold there closest to those
 //                             sold elsewhere (lib/regions)
+//   ::stull-chart             the Stull chart, drawn by the app, with its regions
 
 export interface GuideSection {
   id: string;
@@ -188,12 +189,18 @@ export type Block =
   | { kind: 'callout'; tone: 'note' | 'warning'; blocks: Block[] }
   | { kind: 'definitions'; items: Array<{ term: Inline[]; definition: Inline[] }> }
   | { kind: RegionBlock }
+  | { kind: Drawing }
   | { kind: 'rule' };
 
 /** Parts of a guide drawn from data for the reader's region, each a line ::name of its own. */
 export const REGION_BLOCKS = ['poison-lines', 'shops', 'silica-limit', 'food-limits', 'local-equivalents'] as const;
 export type RegionBlock = (typeof REGION_BLOCKS)[number];
 const isRegionBlock = (name: string): name is RegionBlock => (REGION_BLOCKS as readonly string[]).includes(name);
+
+/** Drawings the app makes, each a line ::name of its own: the Stull chart, with no glaze on it. */
+export const DRAWINGS = ['stull-chart'] as const;
+export type Drawing = (typeof DRAWINGS)[number];
+const isDrawing = (name: string): name is Drawing => (DRAWINGS as readonly string[]).includes(name);
 
 const READING = /^\s*(\d[\d,.]*)(?:\s*[–-]\s*(\d[\d,.]*))?\s*(°[CF](?:\/h)?)\s*$/;
 const number = (text: string): number => Number(text.replace(/,/g, ''));
@@ -261,7 +268,7 @@ export function blocks(tokens: readonly Token[], sectionId = ''): Block[] {
       case 'paragraph': {
         const text = token.text.trim();
         const name = /^::([\w-]+)$/.exec(text)?.[1];
-        if (name && isRegionBlock(name)) {
+        if (name && (isRegionBlock(name) || isDrawing(name))) {
           out.push({ kind: name });
         } else if (text.startsWith('Table: ')) {
           const [line, labelLine] = text.split('\n');

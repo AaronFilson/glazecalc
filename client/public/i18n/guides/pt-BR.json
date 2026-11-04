@@ -243,5 +243,19 @@
     "loading": "Carregando a biblioteca…",
     "failed": "Não foi possível carregar a biblioteca. Tente novamente mais tarde.",
     "choosePrompt": "Escolha seu país ou região para ver o que se vende lá."
+  },
+  "stull": {
+    "title": "Gráfico de Stull: sílica contra alumina na fórmula de Seger",
+    "regions": {
+      "unfused": "não fundido",
+      "matte": "fosco",
+      "semi-matte": "semifosco",
+      "bright": "brilhante",
+      "underfired": "subqueimado",
+      "crazed": "gretado"
+    },
+    "keyBright": "Linha pontilhada: onde os esmaltes de Stull ficaram mais brilhantes.",
+    "keyCrazed": "Hachura: onde eles gretaram.",
+    "note": "Uma orientação, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) queimou no cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e queimas deslocam as regiões, e um fosco subqueimado pode aparecer como brilhante. As regiões são como o Glazy as desenha."
   }
 }

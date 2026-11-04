@@ -243,5 +243,19 @@
     "loading": "Įkeliama biblioteka…",
     "failed": "Bibliotekos įkelti nepavyko. Bandykite dar kartą vėliau.",
     "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte, kas ten parduodama."
+  },
+  "stull": {
+    "title": "Stullo diagrama: silicio dioksidas pagal aliuminio oksidą Segerio formulėje",
+    "regions": {
+      "unfused": "nesulydyta",
+      "matte": "matinė",
+      "semi-matte": "pusiau matinė",
+      "bright": "blizgi",
+      "underfired": "nepakankamai išdegta",
+      "crazed": "su įtrūkimais"
+    },
+    "keyBright": "Punktyrinė linija: kur Stullo glazūros buvo blizgiausios.",
+    "keyCrazed": "Brūkšniavimas: kur jos trūkinėjo.",
+    "note": "Orientyras, o ne prognozė. R. T. Stullas (Transactions of the American Ceramic Society, 1912) degė esant piroskopui 11, fliusus užfiksavęs ties 0,3 K₂O ir 0,7 CaO; kiti fliusai ir degimai sritis pakeičia, o nepakankamai išdegta matinė glazūra gali būti pažymėta kaip blizgi. Sritys nubrėžtos taip, kaip jas braižo Glazy."
   }
 }

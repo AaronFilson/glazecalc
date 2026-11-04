@@ -243,5 +243,19 @@
     "loading": "Učitavanje biblioteke…",
     "failed": "Biblioteku nije moguće učitati. Pokušajte ponovno kasnije.",
     "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli što se ondje prodaje."
+  },
+  "stull": {
+    "title": "Stullov dijagram: silicijev dioksid naspram glinice u Segerovoj formuli",
+    "regions": {
+      "unfused": "nestaljeno",
+      "matte": "mat",
+      "semi-matte": "polumat",
+      "bright": "sjajno",
+      "underfired": "nedovoljno pečeno",
+      "crazed": "napuknuto"
+    },
+    "keyBright": "Točkasta crta: gdje su Stullove glazure bile najsjajnije.",
+    "keyCrazed": "Šrafura: gdje su pucale.",
+    "note": "Vodič, a ne predviđanje. R. T. Stull (Transactions of the American Ceramic Society, 1912) pekao je na stošcu 11 s topiteljima zadanima na 0,3 K₂O i 0,7 CaO; drugi topitelji i pečenja pomiču područja, a nedovoljno pečen mat može se ucrtati kao sjajan. Područja su onakva kakva ih crta Glazy."
   }
 }

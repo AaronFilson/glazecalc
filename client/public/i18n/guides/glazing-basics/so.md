@@ -3,20 +3,20 @@ title: Aasaaska glaze-ka
 lead: Waxa glaze laga sameeyo, sida kiln-ku ugu beddelo dhalo, iyo eray kasta oo aad ku arki doonto hab, joonyad ama jaantuska cone-yada, oo la sharraxay.
 ---
 
-## Waa maxay glaze {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-**Glaze** waa lakab khafiif ah oo dhalo ah oo dheriga ku dhalaalay. Glazy, keydka furan ee hababka glaze-ka, wuxuu ku tilmaamaa "qaab dhalo ah oo loo habeeyay inuu dhalaalo oo ku dhego dhoobada heerkulyo gaar ah". Wuxuu ku dul fadhiyaa sida lakab budo ah, kiln-ka (foornada dhoobada lagu dubo) gudihiisana wuxuu ku dhalaalaa oo noqdaa lakab dhalo u eg oo dhoobada xira, sidaas darteed dheriga waxaa yaraanaya inuu biyo ka daadiyo, wasakhoobo ama daalo. Marka gubiddu ugu kulul tahay, waxa dhalaalay wuxuu sidoo kale la falgalaa dhoobada, inta badan wuxuuna samaystaa lakab u dhexeeya labadooda oo glaze-ka xaggiisa ku qabta. Earthenware-ka, glaze-ku wuxuu dusha ka fadhiyaa sida lakab gooni ah; stoneware-ka, wuxuu ku dhalaalaa jirka dhoobada.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Hab wuxuu taxaa walxo ceeriin ah, sida feldspar, whiting iyo kaolin. Kiln-ka gudihiisa, qayb ka mid ah walax kasta waxay u baxdaa gaas ahaan (biyo ama kaarboon laba-oksaydh), inta kalena waxay noqotaa **oksaydh** (oxides): isku-dhis ka kooban curiye iyo oksijiin, sida silica (SiO₂) ama kaalshiyam oksaydh (CaO). Dhalada la gubay waxay ka samaysan tahay oksaydhyo, sidaas darteed dhoobo-sameeyayaashu glaze-ka waxay ku sharraxaan iyaga. Oksaydh kastaa wuxuu qabtaa mid ka mid ah saddex shaqo.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- **Silica** (SiO₂) waa **dhise-dhalo** (glass former): waxay dhistaa dhalada. Silica saafi ah waxay dhalaashaa wixii ka kulul {{3100 °F; 1700 °C}}, aad uga kulul kiln dhoobo-samayn, glaze silica badanna guud ahaan wuu adkaysi badan yahay.
-- **Fluxes** waxay hoos u dhigaan heerka dhalaalka ilaa mid kiln-ku gaari karo. **Alkalis-ka**, oo loo qoro **R₂O**, waa oksaydhyada sodium, potassium iyo lithium (Na₂O, K₂O, Li₂O); waxay shaqeeyaan laga bilaabo cone 06 ilaa gubidda dhexe iyo tan sare. **Alkaline earths-ka**, oo loo qoro **RO**, waa oksaydhyada kaalshiyam, magnesium, barium iyo strontium (CaO, MgO, BaO, SrO), iyadoo zinc oksaydh (ZnO) lala kooxeeyo; waxay ugu fiican yihiin cone 5 ilaa cone 10. R-du waxay u taagan tahay bir kasta oo qoyskaas ka mid ah.
-- **Alumina** (Al₂O₃) waa **dejiye** (stabilizer). Waxay adkaysaa waxa dhalaalay si uu ugu sii jiro darbiyada taagan, waxayna ku dartaa adayg iyo adkaysi. Digniinta Glazy: alumina aad u yar "glaze-kaagu wuu qulquli karaa; mid aad u badanna waxa dhalaalay waxay ka dhigi kartaa matte". Alumina waxay inta badan ka timaadaa dhoobada iyo feldspar.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boron** (B₂O₃) xadka ayuu qarsadaa. Kiimikoyahannadu waxay ku tiriyaan dhise-dhalo, laakiin heerkulka istuudiyaha wuxuu u shaqeeyaa sida flux, dhoobo-sameeyayaashuna sidaas ayay ula dhaqmaan. Aad ayuu muhiim ugu yahay cone 5–6, gubidda sarena looma baahna. (Cone-yada, habka dhoobo-sameeyayaashu gubidda ugu magacaabaan, hoos ayaa lagu sharraxay.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Hal hab oo maskaxda loogu hayo: silica waa dhalada, fluxes-ku waxay u oggolaadaan inay ku dhalaasho heerkul kiln-kaagu gaari karo, alumina-na way adkaysaa si ay ugu sii jirto meesha aad dhigtay.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Dhoobada, lakabyada iyo labada gubid {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Heerkulyada la daabacay way kala duwan yihiin. Glazy wuxuu gubidda sare, cone 9�
 
 Waqooyiga Ameerika dibaddiisa, iibiyayaashu inta badan waxay bixiyaan °C halkii cone. Hermann Seger ayaa sameeyay cone-ka casriga ah, oo markii ugu horraysay laga isticmaalay Berlin 1886, UK-na waxay lahayd cone-yadeeda Staffordshire; lambarradooda looma malayn karo inay la mid yihiin kuwa Orton, mana helin jadwal lagu beddelo. [Gubidda kiln fudud](/guides/firing) ayaa cone-yada si faahfaahsan uga hadasha.
 
-## Laga bilaabo habka ilaa unity formula {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**Batch recipe** (habka batch-ka) wuxuu taxaa walxaha ceeriin miisaan ahaan, inta badan la qiyaasay si saldhiggu u wadarnaado 100. **Additives** (walxaha lagu daro: midabeeyayaal, opacifiers iyo suspenders) waxay ku dul kordhaan 100-ka, inta badan boqolley ahaan saldhigga. Si ay u arkaan waxa glaze-ku yahay, dhoobo-sameeyayaashu habka waxay u beddelaan **unity molecular formula** (**UMF**, ama **Seger formula**, Hermann Seger dartiis, oo markii ugu horraysay isticmaalay qaabkeeda saddexda tiir).
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: Laga bilaabo habka ilaa unity formula: tusaalaha Glazy
-Label: Laga bilaabo habka ilaa unity formula
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Tallaabo                 | Waxa dhaca                                                                                                                                                             | Tusaalaha                                                                                                                                          |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe          | Walxo ceeriin miisaan ahaan, la qiyaasay ilaa 100                                                                                                                      | Feldspar 40%, iyo kuwo kale                                                                                                                        |
-| 2. Falanqaynta oksaydhka | Sida summadda nafaqada: oksaydhyada walax kasta waxaa la isku daraa boqolley miisaan ahaan, gaasaskana waa laga saaraa                                                 | Feldspar-ku waa 64.8% silica, sidaas darteed 40%-kiisu wuxuu keenaa 25.9% SiO₂. Glaze-ka la gubay waa 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles                 | Miisaannadu waxay noqdaan **moles**, tirinta molecules-ka, maxaa yeelay "Garaamyadu way khaldi karaan maxaa yeelay oksaydhyada qaarkood way ka culus yihiin kuwa kale" | 60.1 g oo SiO₂ ah waa hal mole, sidaas darteed 67.4 g waa qiyaastii 1.12 moles                                                                     |
-| 4. Unity                 | Wax walba waxaa loo qaybiyaa wadarta fluxes-ka, si fluxes-ku u wadarnaadaan 1                                                                                          | Fluxes-ku waxay wadarnaadaan 0.303; qaybintu waxay bixisaa K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                               |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-[Bogga habka](/recipe) ee Glazecalc wuxuu sameeyaa afartaas tallaabo inta aad qorayso, natiijadana wuxuu ku muujiyaa saddex tiir: fluxes (R₂O iyo RO) oo wadarnaada 1; dejiyeyaal (R₂O₃: alumina, iyadoo boron inta badan halkan la dhigo); iyo dhise-dhalo (RO₂: silica). "Unification waa qalab qiyaaseed oo keliya," ayuu Glazy yiri: laba hab oo laga sameeyay walxo kala duwan laakiin leh unity formula isku mid ah "waxay u dhaqmaan ku dhawaad si isku mid ah marka la gubo". Sidaas darteed 1-ku waa cabbir la wadaago, ma aha qadar aad miisaamayso. Digitalfire wuxuu ku daraa in habku "uusan si fiican ugu shaqayn heerkulka hoose", halkaas oo boron uusan ahayn flux caadi ah, iyo in unity formulas ay yihiin "isbarbardhig, sida ugu fiicanna loo eego iyadoo xaaladda la tixgelinayo". **Isbarbardhig** wuxuu isbarbar dhigaa formulas-ka laba hab, oksaydh oksaydh.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Saamiga silica iyo alumina
+### The silica to alumina ratio
 
-Tirada keliya ee ugu faa'iidada badan waa **saamiga silica iyo alumina** (silica to alumina ratio): silica oo loo qaybiyay alumina. Tusaalaha, 3.70 ÷ 0.41 waa qiyaastii 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Waxa saamiga silica iyo alumina tilmaamo (Glazy)
-Label: Saamiga silica iyo alumina
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-|     Saamiga | Akhriska Glazy                                             |
-| ----------: | ---------------------------------------------------------- |
-| Qiyaastii 9 | Wuxuu tilmaamaa dhalaal ifaya, haddii kulayl ku filan jiro |
-|         5–7 | Caadi u ah glaze-yo badan oo stoneware ah oo deggan        |
-|         3–5 | Waxay noqon kartaa matte ama si yar loo gubay              |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Saami 5–7 ah keligiis ma saadaaliyo ifid ama matte: fluxes-ka, boron-ka iyo cone-ku dhammaantood xadka ayay dhaqaajiyaan. Glazy wuxuu glaze-yada deggan u bixiyaa isku-dheelitirka flux ee caadiga ah 0.2 R₂O iyo 0.8 RO, ilaa 0.3 R₂O iyo 0.7 RO. Alkali badan waxa dhalaalay wuxuu ka dhigaa mid aad u qulqula wuxuuna kordhiyaa ballaarintiisa, sidaas darteedna khatarta crazing-ka.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
 ### Loss on ignition
 
-**Loss on ignition** (**LOI**) waa miisaanka walax ku lumiso kiln-ka marka biyo, kaarboon laba-oksaydh, walxo noole ah ama sulfur ay gaas ahaan uga baxaan. Glaze la gubay midna kuma jiro, sidaas darteed unity formula-du way ka saartaa.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: LOI-ga caadiga ah (Digitalfire)
+Table: Typical loss on ignition (Digitalfire)
 Label: Loss on ignition
 
-| Walaxda                                    | LOI-ga caadiga ah                                                                                                     |
-| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| Whiting (kaalshiyam kaarboonayt), dolomite | In ka badan 40%, inta badan kaarboon laba-oksaydh: 100 g oo kaalshiyam kaarboonayt ah waxay sii daysaa qiyaastii 45 g |
-| Lithium carbonate                          | Qiyaastii 60%                                                                                                         |
-| Barium carbonate, Gerstley Borate          | In ka badan 20%                                                                                                       |
-| Kaolin                                     | Qiyaastii 12%, inta badan biyo ku xiran crystals-keeda                                                                |
-| Feldspars                                  | Ka yar 1%                                                                                                             |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Gaaska baxa kadib marka glaze-ku bilaabo dhalaalka waa inuu dhex maraa, isagoo keenaya, sida Digitalfire u dhigo, "xumbo, finan, daloolo yaryar, gurguurasho". Talc wuxuu sii daayaa gaas ilaa qiyaastii {{1650 °F; 899 °C}}. Frits, walxo **calcined** ah (horay loo kululeeyay si gaasaskooda looga saaro) iyo isbeddelada gubidda dhammaantood way caawiyaan.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-Buugaagta hore xisaabtan gacanta ayay ku sameeyaan, iyagoo isticmaalaya **molecular weight** (miisaanka hal mole oo walax ama oksaydh ah) iyo **equivalent weight** (miisaanka walax bixisa hal mole oo oksaydh ah). Sida xisaabtayadu sheegto, qiyaastii 100 g oo whiting ah waxay bixisaa hal mole, 56 g, oo kaalshiyam oksaydh ah. Calculator ayaa labadaba qabta.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Frits iyo walxaha ceeriin {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
+
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+
+::stull-chart
+
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
+
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
 
 ### Frits
 
-**Frit** waa dhalo warshad lagu sameeyay: macdano la dhalaaliyay, biyo lagu qaboojiyay oo la shiiday. Fritting-ku wuxuu walxaha milma sida borax ka dhigaa kuwo aan milmin, wuxuu oksaydhyada sunta ah sida rasaas (lead, Pb) iyo barium ku xiraa dhalo deggan, wuxuu bixiyaa walax ka joogto badan macdanaha ceeriin, gaasaskana wuu ka saaraa, sidaas darteed glaze-yada frit-ka leh waa "kuwo aad uga xor ah cilladaha" (Digitalfire). Frits sidoo kale goor hore ayay dhalaalaan: frit soda ah wuxuu shaqeeyaa cone 06, halka feldspar "uu cone 6 kaliya bilaabayo inuu jilco". Way qaali yihiin, waxay u baahan yihiin dhoobo si ay u sii sabbeeyaan (tusaalaha Digitalfire waa 85% frit iyo 15% dhoobo), waana "kuwo aragti ahaan aan milmin, laakiin dhab ahaan sidaas ma aha".
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
 
-Frits-ka Waqooyiga Ameerika waxaa lagu magacaabaa sameeyaha iyo lambar: Ferro Frit 3134 (Ferro hadda waa Vibrantz) wuxuu ku jiraa qiyaastii 22% hababka dadweynaha ee Glazy. Hababka UK inta badan waxay magacaabaan frits guud, sida standard borax frit.
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
 
-### Walxaha ceeriin ee caadiga ah
+### The common raw materials
 
-Table: Walxaha glaze ee caadiga ah iyo waxay bixiyaan
-Label: Walxaha glaze ee caadiga ah
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
 
-| Walaxda (magacyo kale)                            | Waxay bixisaa            | Xusuus                                                                                                                                                                     |
-| ------------------------------------------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                     | Glaze-yada ku isticmaal 325 mesh, shiid aad u fiican                                                                                                                       |
-| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂              | Isha ugu weyn ee alumina; sidoo kale glaze-ka way sabbeysaa                                                                                                                |
-| Ball clay                                         | Al₂O₃, SiO₂              | Ka jilicsan kaolin, bir iyo walxo noole ah oo badan                                                                                                                        |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂   | Fluxes leh alumina iyo silica u gaar ah. Nepheline syenite waa flux xoog leh oo gubid hoose iyo dhexe ah. "Feldspar" bannaan oo hab hore ku jira wuxuu noqon karaa midkood |
-| Whiting (kaalshiyam kaarboonayt)                  | CaO                      | Flux-ka kaalshiyamka ee ugu weyn; wuxuu sii daayaa kaarboon laba-oksaydh                                                                                                   |
-| Wollastonite                                      | CaO, SiO₂                | Kaalshiyam aan kaarboon laba-oksaydh lahayn                                                                                                                                |
-| Dolomite, talc                                    | MgO, oo leh CaO ama SiO₂ | Dusha matte xariir u eg; ballaarin hoose                                                                                                                                   |
-| Zinc oxide                                        | ZnO                      | Ifid iyo crystals; mid aad u badan wuxuu keeni karaa gurguurasho                                                                                                           |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                     | Lagama maarmaan laga bilaabo cone 06 ilaa cone 6; frits waa "kuwo ka joogto badan oo ka milmid yar borates-ka ceeriin"                                                     |
-| Lithium carbonate                                 | Li₂O                     | Flux ballaarin hoose leh; waa qaali, sidaas darteed si yar ayaa loo isticmaalaa                                                                                            |
-| Strontium carbonate                               | SrO                      | Beddelka barium-ka ee sunta ka yar                                                                                                                                         |
-| Barium carbonate                                  | BaO                      | Waa sun marka uu ceeriin yahay; glaze-yada barium-ku ku badan yahay biraha ayay sii dayn karaan (leaching)                                                                 |
-| Bentonite                                         | Sabbayn                  | Dhoobo aad u fiican, inta badan 1–3%, si ay u joojiso degitaanka                                                                                                           |
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Walxaha glaze-ku waa budo aad u fiican. Boodhka silica wuxuu waxyeeleeyaa sambabada iyadoo aan calaamado lahayn marka hore, walxaha qaarkood, sida barium carbonate iyo lithium carbonate, waa sun haddii la liqo. Budada si tartiib ah u qabo, ku nadiifi qoyaan, xiro respirator (maaskarada neefsashada) kugu habboon marka aad wax qallalan ka shaqaynayso. [Isku-darka ammaanka ah iyo hawo-wareejinta](/guides/safe-mixing) iyo [Ha sumayn qoyskaaga](/guides/home-safety) ayaa sharraxa sida.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Magacyada gobollada
+### Regional names
 
-- **Kaolin** waa **china clay** UK; iibiyayaasha Australia waxay u iibiyaan Eckalite.
-- **Flint** waa magac hore oo UK ah oo silica loo yaqaan. Iibiyayaasha UK weli waxay **calcined flint** u iibiyaan alaab gooni ah, sidaas darteed "flint" hab Ingiriis ah waxay u badan tahay calcined flint, mid Maraykan ahna quartz la shiiday. Labadaba waxaa loo iibiyaa ilo silica; hubi falanqaynta.
-- **China stone** iyo **Cornish stone** (Cornwall stone) waa walax isku mid ah, oo la xiriirta feldspar.
-- **Whiting** waa kaalshiyam kaarboonayt; iibiyayaasha Jarmalku waxay ugu yeeraan Kreide (chalk).
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Walax ku qiimee oksaydhyada ay bixiso, ha ku qiimayn magaceeda. Glazecalc sidaas ayuu u shaqeeyaa: falanqaynta iibiyahaaga waxaad gelin kartaa [bogga walxaha](/material), **Try modern materials and compare**, **Suggest amounts and compare** iyo **Match with what I have** dhammaantood waxay isku beegaan oksaydhyada la gubay, ma aha magacyada.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Walxuhu sidoo kale way isbeddelaan. Custer feldspar wuxuu dhammaaday 2023. Macdanta asalka ah ee Gerstley Borate waxay xirantay qiyaastii 1999–2000; Laguna weli wuxuu iibiyaa alaab magacaas leh, Gillespie Borate-na waa beddelka ugu weyn. Ilaha way isku khilaafsan yihiin in Gillespie uu Gerstley Borate u beddelo rodol rodol (sameeyahiisa iyo Potclays waxay yiraahdaan haa, Digitalfire iyo kuwo kale maya), sidaas darteed labada isbarbar dhig Glazecalc, kadibna tijaabi batch yar.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Midabeeyayaasha iyo opacifiers {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**Midabeeye** (colorant) waa bir oksaydh ama kaarboonayt ah oo glaze-ka midab siisa; **stain** waa midabeeye warshad lagu sameeyay, ka deggan oo ka joogto badan oksaydhyada ceeriin. Midabeeyayaashu inta badan waa ka yar 5% saldhigga, qaar badanna ka yar 1%, kaarboonaytna waa qiyaastii nuskii xoogga oksaydhka u dhigma.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Midabeeyayaasha caadiga ah, boqolley ahaan saldhigga
-Label: Midabeeyayaasha caadiga ah
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Midabeeye      | Qadarka bilowga caadiga ah                             | Midabada iyo xusuus                                                                                                                                       |
-| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt         | 0.1–2% (ilaha way isku khilaafsan yihiin)              | Buluug, aad u xoog badan; xagga guduudka marka saldhiggu leeyahay magnesium                                                                               |
-| Iron           | 0.5–10%                                                | Bunni, tan iyo casaan oxidation-ka; reduction-ka, ½–2% wuxuu bixiyaa celadon, 5–6%-na tenmoku. Waa flux, sidaas darteed mid badan glaze-ka wuu qulquliyaa |
-| Copper         | 1–3%                                                   | Cagaar ama turquoise oxidation-ka, casaan reduction-ka. Wuxuu glaze-ka ka dhigi karaa mid biraha sii daaya (leaching)                                     |
-| Chrome         | Ka yar 0.5% ilaa 2% (ilaha way isku khilaafsan yihiin) | Cagaar; bunni haddii saldhiggu leeyahay zinc, casaan khafiif ah (pink) haddii tin la socdo                                                                |
-| Manganese      | 2–10%                                                  | Bunni iyo guduud                                                                                                                                          |
-| Rutile         | Qiyaastii 2–5%                                         | Midab barbaro leh oo kala duwan; qallafsan ama matte wixii ka badan qiyaastii 5%                                                                          |
-| Stains ganacsi | 2–12%                                                  | 2–4% midab khafiif ah, 5–8% midab dhexe, 10–12% midab xoog leh                                                                                            |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-Qadarka cobalt iyo chrome runtii waa lagu muransan yahay. Glazy wuxuu yiri 0.1% cobalt ah ayaa ku filan buluug; Glendale Community College wuxuu bixiyaa ½–2% ama ½–3% iyadoo ku xiran jawiga; Birdie Boone, Pottery Making Illustrated, wuxuu yiri 3% ama ka yar. Chrome-ka, Boone wuxuu yiri ka yar 0.5%, Glendale-na 2–3%. Jidka ammaanka ahi waa inaad ku bilowdo wax yar oo aad samayso **line blend**: saf test tiles ah oo hal walax ka tallaabsada wax yar ilaa wax badan.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Glaze-ka saldhigga ah ayaa midabka beddela. Saldhig ifaya oo daah-furan wuxuu bixiyaa midabka ugu iftiinka badan; saldhigyada satin iyo matte, oo inta badan alumina ku badan tahay, way demiyaan. Magnesium-ku cobalt-ka wuxuu u riixaa xagga guduudka, zinc-ku chrome-ka wuxuu u beddelaa bunni, chrome iyo tin-na waxay bixiyaan pink.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
 ### Opacifiers
 
-**Opacifier** (walax iftiinka joojisa) glaze-ka wuxuu ka dhigaa mid **aan la dhex arkin** (opaque), isagoo qariya dhoobada; glaze **daah-furan** (transparent) wuu u oggolaadaa inay muuqato.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
 Table: Opacifiers
 
-| Opacifier                                     | Qadarka caadiga ah            | Xusuus                                                                                                        |
-| --------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% si buuxda loo qariyo    | Doorashada ka jaban; summadahaasi waa walax isku mid ah oo loo shiiday cabbirro kala duwan                    |
-| Tin oxide                                     | Qiyaastii 5–7% (qiyaastayada) | Qaali; si xun ayuu u qariyaa reduction-ka                                                                     |
-| Titanium dioxide                              | Ka badan 2%                   | Qarin xariir u eg oo iftiin yar gudbisa; 10% ama ka badan, dusha matte ah oo qallafsan oo crystals muuqda leh |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Ku habboonaanta glaze-ka iyo cilladaha {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-Dhoobada iyo glaze-ku labaduba way ballaartaan marka la kululeeyo wayna isku soo ururaan marka ay qaboobaan, mid kastaa qadarkiisa: **ballaarinta kulaylka** (thermal expansion). **Glaze fit** (ku habboonaanta glaze-ka) waa sida ay labadu isugu beegan yihiin. Ku habboonaan fiican waxay glaze-ka uga tagtaa mid dhoobadu wax yar cadaadiso; Digitalfire wuxuu yiri cadaadis yar alaabta wuu xoojiyaa, halka mid aad u badan uu daciifin karo oo xitaa dillaacin karo.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Crazing iyo shivering
+### Crazing and shivering
 
-**Crazing** (dillaac yaryar) waa shabakad dillaacyo khafiif ah. Ballaarinta glaze-ku way ka badan tahay tan jirka, sidaas darteed marka uu qaboobo wuu ka sii ururaa, wuu kala jiidmaa oo dillaacaa, inta badan sodium iyo potassium (Na₂O, K₂O) oo aad u badan dartood. Wuxuu sidoo kale soo bixi karaa goor dambe, isticmaalka, kadib qaboojin degdeg ah oo soo noqnoqota sida taabashada cabbitaan qabow. Marka la doonayo, sida raku, waxaa loo yaqaan **crackle**. Digitalfire wuxuu yiri "95% waqtiga xalku waa in la hagaajiyo ballaarinta kulaylka ee glaze-ka"; qaboojin gaabis ahi crazing-ka kaliya way dib u dhigtaa. Tijaabadiisa: alaabta kululee ilaa qiyaastii {{300 °F; 149 °C}}, ku quusi biyo baraf leh, dushana ku mari qalin felt ah si dillaacyadu u muuqdaan.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Ilaha way ku kala duwan yihiin hagaajinta koowaad. Glazy wuxuu soo jeediyaa in silica ama alumina lagu daro; Digitalfire wuxuu ku jawaabaa in silica dheeraad ahi "kaliya ay khafiifiso KNaO" (sodium iyo potassium); Linda Bloomfield waxay ku dartaa boron ama waxay yaraysaa feldspar, hal walax markiiba. Taladayadu: [calculator-ka habka](/recipe), sodium iyo potassium qaarkood ku beddel fluxes ballaarin hoose leh (boron, lithium, magnesium, kaalshiyam), isbeddelka ku hubi **Isbarbardhig**, kuna xaqiiji tijaabada biyaha barafka.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-**Shivering** waa lid: ballaarinta glaze-ku aad ayay uga hooseysaa tan jirka, sidaas darteed si xad-dhaaf ah ayaa loo cadaadiyaa wuxuuna ka jajabaa geesaha iyo afafka. Digitalfire wuxuu ka digayaa in jajabyadu noqon karaan kuwo mindi u af badan oo la liqi karo, Glazy-na wuxuu shivering ku tilmaamaa "xitaa ka khatar badan crazing alaabta shaqaynaysa". Xalku waa glaze ballaarin sare leh ama jir ballaarin hoose leh.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Alaab crazing ama shivering leh ha u isticmaalin cunto ama cabbitaan. Ilaha way isku khilaafsan yihiin in dheryaha crazing leh si ku filan loo nadiifin karo (mid wuxuu yiri mashiinka weelka dhaqa ayaa ku filan; mid kalena wuxuu alaabta shaqaynaysa ee crazing leh ku tilmaamaa mid cillad leh), sidaas darteed waxaan qaadanaynaa dhinaca taxaddarka.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Ifid iyo matte
+### Gloss and matte
 
-Dusha **ifaya** (gloss) waa mid iftiin celiya oo siman, **satin** wuxuu leeyahay ifid yar, **matte** (aan ifayn) waa mid aan ifid lahayn. Ifiddu waxay u baahan tahay dhalo si buuxda u dhalaashay. Matte wuxuu ka iman karaa alumina badan (saami silica iyo alumina oo hooseeya), fluxes sida kaalshiyam, magnesium, barium ama strontium oo samaysta crystals aad u yaryar marka glaze-ku qaboobo, ama gubid yar.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Cilladaha caadiga ah
+### Common defects
 
-Hal shay markiiba beddel, test tiles-kaagana hay.
+Change one thing at a time, and keep your test tiles.
 
-Table: Cilladaha glaze ee caadiga ah, sababahooda caadiga ah iyo hagaajinta koowaad
-Label: Cilladaha glaze ee caadiga ah
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Cilladda                   | Waxay u egtahay                                                      | Sababaha caadiga ah                                                                                                | Hagaajinta koowaad                                                                                                    |
-| -------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| Crawling (gurguurasho)     | Glaze-ku wuxuu isu ururaa kuul ahaan, isagoo ka tagaya dhoobo qaawan | Bisque boodh ama dufan leh; lakab qaro weyn oo dhoobo badan oo dillaacay markuu qallalayay; zinc, zircon ama tin   | Nadiifi bisque-ka; mari lakab khafiif ah; calcine dhoobada qaarkeed; ku dar xiriiriye sida CMC gum                    |
-| Pinholing (daloolo yaryar) | Daloolo ama godad yaryar                                             | Gaas ka yimid jirka ama glaze-ka oo aan bogsan; glaze si yar loo gubay ama adag                                    | Ku hay heerkulka sare qiyaastii nus saac; mari lakab khafiif ah; yaree zinc ama rutile                                |
-| Blistering (finan)         | Godad af badan                                                       | Inta badan gubid xad-dhaaf ah; lakabyo aad u qaro weyn; fluxes duula oo ka sarreeya qiyaastii {{2192 °F; 1200 °C}} | Ku gub heerkul hoose; mari lakab khafiif ah. Geesaha af badan alaabta shaqaynaysa way ka dhigaan mid aan ammaan ahayn |
-| Running (qulqul)           | Glaze-ku wuxuu ku qulqulaa khaanadda                                 | Alumina aad u yar; aad u qaro weyn, sida meesha shubiddu isku dul dhacaan; bir badan                               | Mari lakab khafiif ah; ku dar alumina; glaze-ka si fiican uga fogee lugta                                             |
-| Dunting                    | Dillaacyo dheriga ka yimid qaboojin ama kululayn                     | Qaboojin degdeg ah oo dhex marta quartz inversion, {{1063 °F; 573 °C}}; darbiyo aan sinnayn; ku habboonaan xun     | Si gaabis ah u dhex mar {{1063 °F; 573 °C}}, kor iyo hoos; darbiyo siman                                              |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Ammaanka cuntada {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Leaching** (biraha ka soo baxa) waa bir ka milanta glaze la gubay oo gasha cunto ama cabbitaan, glaze-kuna wuxuu u ekaan karaa mid dhammaystiran oo weli sidaas samayn karaa. Tijaabooyinka sharciga ah waxay alaabta la gubay ku qooyaan dareere aashito ah waxayna cabbiraan rasaas (lead, Pb) iyo cadmium-ka ka soo baxa.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Aan rasaas lahayn ma aha ammaan u ah cuntada
+### Lead-free is not the same as food-safe
 
-Xeerarka US, EU, UK iyo Australia waxay xaddidaan rasaasta (Pb) iyo cadmium-ka ay alaabta la gubay sii dayso, ma aha waxa glaze-ku ka kooban yahay. "Aan rasaas lahayn" (lead-free) wuxuu ka saaraa hal khatar; ma aha qiimayn ammaanka cuntada. Oksaydhyo kale sidoo kale way soo baxaan: Glazy wuxuu ka digayaa in glaze-yada barium-ku ku badan yahay "ay sii dayn karaan macdan, guud ahaanna aysan ammaan u ahayn cuntada", Digitalfire wuxuu yiri copper "wuxuu glaze-ka ka dhigi karaa mid macdan sii daaya; tijaabi", Glazy-na mar dambe kuma talinayo glaze-yada rasaasta (Pb) leh alaabta shaqaynaysa.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Liner glaze** waa glaze deggan, inta badan hufan ama cad, oo loogu talagalay dusha taabata cuntada. Aragtidayada, mid aan lahayn midabeeye, barium, rasaas (Pb) ama lithium, oo si buuxda u dhalaala, aan crazing samayn oo si fiican u adkaysta, ayaa ah doorashada khatarta yar. Khatar yar ma aha caddayn.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Limit formulas** (Digitalfire wuxuu door biday **target formulas**) waxay bixiyaan xadka caadiga ah ee unity formula glaze-yada deggan ee cone gaar ah: target-yada cone 6 ee Digitalfire alumina waxay dhigaan 0.285–0.64, silica-na 2.4–4.7. Waxay kugu hagaan kiimiko sax ah laakiin waxba ma caddeeyaan; Digitalfire wuxuu ka fogaadaa erayga "limit" maxaa yeelay wuxuu tilmaamayaa in glaze-yada xadkaas ku jira "ay si uun ammaan u yihiin". Qalabka Glazecalc ee habka beddela wuxuu sheegaa marka habka cusub uu dhaafo xad la soo jeediyay, sida boron badan cone 6, iyo waxa glaze-ku u badan tahay inuu sameeyo.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Xadadka sharciga ahi way ku kala duwan yihiin dal ahaan. Jadwalku wuxuu muujiyaa kuwa meesha aad ku nooshahay, cabbirka sharciga u gaarka ah; dooro dal ama gobol kale si aad isbarbar dhigto.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-US-da, alaabta dhoobada ee qurxinta ah ee u eg mid cuntada loo isticmaali karo waxaa loola dhaqmaa sida alaab cunto haddii aysan lahayn summad lagu dhejiyo iyo ogeysiis joogto ah oo salkeeda lagu shubay ama lagu gubay, sida "Not for Food Use. May Poison Food", ama aysan lahayn dalool dhex mara dusha cuntada. EU-du waxay xadadka rasaasta (Pb) iyo cadmium-ka ku dejisaa Directive 84/500/EEC, UK-na tirooyinkaas isku mid ah ayay ku haysaa sharcigeeda. Laga bilaabo 29 May 2026, Netherlands, Belgium iyo Luxembourg waxay oggolaanayaan qiyaastii 130 ilaa 150 jeer rasaas ka yar, iyo qiyaastii 15 jeer cadmium ka yar. Australia waxay xad u dejisaa alaabta la soo dejiyo; ma helin xad rasmi ah oo alaabta lagu sameeyo Australia ama New Zealand.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Tijaabinta
+### Testing
 
-FDA-du waxay tiri qalabka tijaabada guriga ee la masaxo wuxuu muujin karaa rasaas (Pb) soo bixi karta, laakiin Ceramics New Zealand waxay ka digaysaa in qalimaanta tijaabadu aan loogu talagalin dhoobada oo ay bixiyaan natiijooyin been ah oo togan. Natiijo togan u qaado sabab aad u joojiso isticmaalka alaabta, mid tabanna mid aan waxba caddayn. Tijaabada biraha ka soo baxa (leach test) ee shaybaarka ee alaabta la gubay (ASTM C738 US-da; EN 1388 ama ISO 6486 Yurub) ayaa ah jawaabta dhabta ah.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> "Ammaan u ah cuntada" macnaheedu waa glaze-kan, dhoobadan, oo lagu gubay cone-kan kiln-kan, oo sidan loo mariyay, wuxuu sii daayaa wax ka yar xadadka sharciga. Glazecalc wuxuu kaa caawin karaa inaad dhisto glaze deggan, **Replace lead**-na wuxuu dib u dhisi karaa hab hore oo rasaas (Pb) leh iyadoo aan rasaas lahayn, laakiin calculator-na ma shahaadayn karo dheri. Kaliya tijaabada alaabta la gubay ayaa awooda.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Culayska gaarka ah iyo marinta {#application}
 
@@ -462,7 +476,7 @@ Wax resist
 Whiting
 : Kaalshiyam kaarboonayt, flux-ka kaalshiyamka ee ugu weyn; wuxuu gubidda ku lumiyaa in ka badan 40% miisaankiisa. Jarmal: Kreide.
 
-## Ilaha {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -483,6 +497,14 @@ Whiting
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Whiting
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

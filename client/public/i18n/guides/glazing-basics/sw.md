@@ -3,20 +3,20 @@ title: Misingi ya glaze
 lead: Glaze imetengenezwa na nini, jinsi tanuru inavyoigeuza kuwa kioo, na kila neno utakalokutana nalo kwenye kichocheo, kwenye mfuko au kwenye chati ya koni, kwa maelezo.
 ---
 
-## Glaze ni nini {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-**Glaze**{{en: glaze}} (rangi ya kioo) ni tabaka nyembamba ya kioo iliyoungana na chungu. Glazy, hifadhidata huria ya vichocheo vya glaze, inaiita “fomula ya kioo iliyorekebishwa ili iyeyuke na kuungana na udongo kwenye joto fulani”. Hupakwa kama tabaka ya unga, kisha huyeyuka tanuruni na kuwa tabaka ya kioo inayoziba udongo, hivyo chungu kina uwezekano mdogo wa kuvuja, kuchafuka au kuchakaa. Kileleni mwa uchomaji, myeyuko pia huathiriana na udongo, mara nyingi ukitengeneza tabaka kati yao inayoshikilia glaze. Kwenye earthenware glaze hukaa juu kama tabaka tofauti; kwenye stoneware huyeyukia ndani ya udongo.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Kichocheo huorodhesha malighafi, kama feldspar, whiting na kaolini. Tanuruni, sehemu ya kila moja hutoka kama gesi (maji au kaboni dioksidi) na iliyobaki hugeuka **oksidi**: michanganyiko ya elementi na oksijeni, kama silika (SiO₂) au oksidi ya kalsiamu (CaO). Kioo kilichochomwa kimetengenezwa na oksidi, kwa hiyo wafinyanzi huelezea glaze kwa oksidi hizo. Kila oksidi ina moja ya kazi tatu.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- **Silika** (SiO₂) ni **kijenzi cha kioo**: hujenga kioo. Silika safi huyeyuka juu ya {{3100 °F; 1700 °C}}, joto kubwa mno kuliko tanuru ya ufinyanzi, na glaze yenye silika nyingi kwa kawaida hudumu zaidi.
-- **Flux** (viyeyushi) hushusha kiwango cha kuyeyuka hadi kile ambacho tanuru inaweza kufikia. **Alkali**, zinazoandikwa **R₂O**, ni oksidi za sodiamu, potasiamu na lithiamu (Na₂O, K₂O, Li₂O); hufanya kazi kuanzia koni 06 hadi moto wa kati na moto mkali. **Alkali-ardhi**, zinazoandikwa **RO**, ni oksidi za kalsiamu, magnesiamu, bariamu na strontiamu (CaO, MgO, BaO, SrO), pamoja na oksidi ya zinki (ZnO) iliyowekwa kando yake; hufanya kazi vizuri zaidi kuanzia koni 5 hadi koni 10. Herufi R inawakilisha metali yoyote ya familia hiyo.
-- **Alumina** (Al₂O₃) ni **kiimarisha**. Hufanya myeyuko uwe mzito ili ubaki kwenye kuta zilizosimama, na huongeza ugumu na uimara. Onyo la Glazy: ikiwa alumina ni ndogo mno “glaze yako inaweza kutiririka; ikiwa nyingi mno inaweza kufanya myeyuko uwe mzito hadi kuwa matte”. Alumina hutoka hasa kwenye udongo na feldspar.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boroni** (B₂O₃) haiko wazi upande mmoja. Wanakemia huiweka kati ya vijenzi vya kioo, lakini kwenye joto la karakana hufanya kazi kama flux, na wafinyanzi huichukulia hivyo. Ni muhimu sana kwenye koni 5–6 na haihitajiki kwenye moto mkali. (Koni, jina wanalotumia wafinyanzi kwa uchomaji, zinaelezwa hapa chini.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Njia moja ya kukumbuka: silika ndiyo kioo, flux huiruhusu iyeyuke kwenye joto ambalo tanuru yako inaweza kufikia, na alumina huifanya iwe nzito ili ibaki mahali ulipoiweka.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Udongo, vifuniko na uchomaji mara mbili {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Joto lililochapishwa hutofautiana. Glazy inatoa moto mkali, koni 9–11, kuwa ta
 
 Nje ya Amerika Kaskazini, wasambazaji mara nyingi hutoa °C badala ya koni. Hermann Seger alibuni koni za kisasa, zilizotumika kwa mara ya kwanza Berlin mwaka 1886, na Uingereza ina koni zake za Staffordshire; nambari zake zisichukuliwe kuwa zinalingana na za Orton, na hatukupata jedwali la kubadilisha. [Kuchoma katika tanuru rahisi](/guides/firing) inaeleza koni kwa undani zaidi.
 
-## Kutoka kichocheo hadi fomula ya umoja {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**Kichocheo cha kundi (batch recipe)** huorodhesha malighafi kwa uzito, kwa kawaida zikipimwa ili msingi ujumlishe 100. **Viongezo (additives)** (vitia rangi, viziba mwanga na visimamishi) huwekwa juu ya 100, kwa kawaida kama asilimia ya msingi. Ili kuona glaze ni nini, wafinyanzi hubadilisha kichocheo kuwa **fomula ya molekuli ya umoja** (**UMF**, au **fomula ya Seger**, kwa jina la Hermann Seger, aliyetumia kwanza mpangilio wake wa safu tatu).
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: Kutoka kichocheo hadi fomula ya umoja: mfano uliofanyiwa kazi wa Glazy
-Label: Kutoka kichocheo hadi fomula ya umoja
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Hatua                  | Kinachotokea                                                                                                                                     | Katika mfano                                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Kichocheo cha kundi | Malighafi kwa uzito, zimepimwa hadi 100                                                                                                          | Feldspar 40%, miongoni mwa nyingine                                                                                                |
-| 2. Uchambuzi wa oksidi | Kama lebo ya lishe: oksidi za kila malighafi hujumlishwa kama asilimia ya uzito, na gesi huachwa                                                 | Feldspar ina silika 64.8%, kwa hiyo 40% yake inaleta SiO₂ 25.9%. Glaze iliyochomwa ni SiO₂ 67.4%, Al₂O₃ 12.6%, K₂O 7.5%, CaO 12.5% |
-| 3. Moli                | Uzito hubadilishwa kuwa **moli**, hesabu ya molekuli, kwa sababu “Gramu zinaweza kupotosha kwa sababu baadhi ya oksidi ni nzito kuliko nyingine” | 60.1 g ya SiO₂ ni moli moja, kwa hiyo 67.4 g ni takriban moli 1.12                                                                 |
-| 4. Umoja               | Kila kitu hugawanywa kwa jumla ya flux, ili flux zijumlishe 1                                                                                    | Flux zinajumlisha 0.303; kugawanya kunatoa K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                               |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-[Ukurasa wa kichocheo](/recipe) wa Glazecalc hufanya hatua zote nne unapoandika, na huonyesha matokeo katika safu tatu: flux (R₂O na RO) zinazojumlisha 1; viimarisha (R₂O₃: alumina, na boroni mara nyingi huwekwa hapa); na vijenzi vya kioo (RO₂: silika). “Umoja ni zana ya kupima tu,” Glazy inasema: vichocheo viwili vilivyotengenezwa kwa malighafi tofauti lakini vyenye fomula ya umoja ileile “hufanya kazi karibu kufanana vikishachomwa”. Kwa hiyo 1 ni kipimo cha pamoja, si kiasi unachopima. Digitalfire inaongeza kuwa njia hii “haifanyi kazi vizuri kwenye joto la chini”, ambapo boroni si flux ya kawaida, na kwamba fomula za umoja ni “za kulinganisha na zinaeleweka vizuri zaidi katika muktadha”. **Linganisha** huweka fomula za vichocheo viwili kando kwa kando, oksidi kwa oksidi.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Uwiano wa silika na alumina
+### The silica to alumina ratio
 
-Nambari moja yenye manufaa zaidi ni **uwiano wa silika na alumina**: silika ikigawanywa kwa alumina. Katika mfano, 3.70 ÷ 0.41 ni takriban 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Uwiano wa silika na alumina unapendekeza nini (Glazy)
-Label: Uwiano wa silika na alumina
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-|     Uwiano | Tafsiri ya Glazy                                     |
-| ---------: | ---------------------------------------------------- |
-| Takriban 9 | Unapendekeza myeyuko unaong'aa, joto likitosha       |
-|        5–7 | Kawaida kwa glaze nyingi za stoneware zilizo thabiti |
-|        3–5 | Inaweza kuwa matte au haikuchomwa vya kutosha        |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Uwiano wa 5–7 haubashiri kung'aa wala matte peke yake: flux, boroni na koni zote husogeza mstari. Glazy inatoa usawa wa kawaida wa flux kwa glaze thabiti wa R₂O 0.2 na RO 0.8, hadi R₂O 0.3 na RO 0.7. Alkali zaidi hufanya myeyuko uwe majimaji zaidi na huongeza upanuzi wake, na hivyo hatari ya crazing.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Upotevu wa uzito kwa moto
+### Loss on ignition
 
-**Upotevu wa uzito kwa moto** (**LOI**) ni uzito ambao malighafi hupoteza tanuruni maji, kaboni dioksidi, vitu vya kikaboni au salfa vinapotoka kama gesi. Glaze iliyochomwa haina chochote kati ya hivyo, kwa hiyo fomula ya umoja huviacha.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: LOI ya kawaida (Digitalfire)
-Label: Upotevu wa uzito kwa moto
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Malighafi                             | LOI ya kawaida                                                                     |
-| ------------------------------------- | ---------------------------------------------------------------------------------- |
-| Whiting (kalsiamu kaboneti), dolomite | Zaidi ya 40%, hasa kaboni dioksidi: 100 g za kalsiamu kaboneti hutoa takriban 45 g |
-| Lithiamu kaboneti                     | Takriban 60%                                                                       |
-| Bariamu kaboneti, Gerstley Borate     | Zaidi ya 20%                                                                       |
-| Kaolini                               | Takriban 12%, hasa maji yaliyofungwa kwenye fuwele zake                            |
-| Feldspar                              | Chini ya 1%                                                                        |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Gesi inayotoka baada ya glaze kuanza kuyeyuka lazima ipenye kwa viputo, ikisababisha, kwa maneno ya Digitalfire, “viputo, malengelenge, pinholes, crawling”. Talc huendelea kutoa gesi hadi takriban {{1650 °F; 899 °C}}. Frit, malighafi **zilizochomwa awali (calcined)** (zilizopashwa joto kabla ili kutoa gesi zake) na mabadiliko ya uchomaji zote husaidia.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-Vitabu vya zamani hufanya hesabu hii kwa mkono, kwa **uzito wa molekuli** (uzito wa moli moja ya malighafi au oksidi) na **uzito sawia** (uzito wa malighafi inayotoa moli moja ya oksidi). Kwa hesabu yetu, takriban 100 g za whiting hutoa moli moja, 56 g, ya oksidi ya kalsiamu. Kikokotoo hushughulikia zote mbili.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Frit na malighafi {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Frit
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-**Frit** ni kioo kilichotengenezwa kiwandani: madini yaliyoyeyushwa, kupozwa haraka ndani ya maji na kusagwa. Kutengeneza frit hufanya malighafi zinazoyeyuka majini kama borax zisiyeyuke, hufungia oksidi zenye sumu kama za madini ya risasi (Pb) na bariamu ndani ya kioo thabiti, hutoa malighafi inayofanana zaidi kuliko madini ghafi, na hutoa gesi, kwa hiyo glaze za frit “zina kasoro chache zaidi” (Digitalfire). Frit pia huyeyuka mapema: frit ya soda hufanya kazi kwenye koni 06, wakati feldspar “inaanza tu kulainika kwenye koni 6”. Zinagharimu zaidi, zinahitaji udongo ili zibaki zimeelea (mfano wa Digitalfire ni frit 85% na udongo 15%), na “kinadharia haziyeyuki majini, lakini kwa vitendo, huyeyuka”.
+::stull-chart
 
-Frit za Amerika Kaskazini hutambulika kwa mtengenezaji na nambari: Ferro Frit 3134 (Ferro sasa ni Vibrantz) iko katika takriban 22% ya vichocheo vya umma vya Glazy. Vichocheo vya Uingereza mara nyingi hutaja frit za jumla, kama frit ya kawaida ya borax.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### Malighafi za kawaida
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Malighafi za kawaida za glaze na kinachotolewa nazo
-Label: Malighafi za kawaida za glaze
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Malighafi (majina mengine)                           | Inatoa                 | Maelezo                                                                                                                                                                          |
-| ---------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silika (flint, quartz)                               | SiO₂                   | Tumia mesh 325, usagaji laini sana, kwenye glaze                                                                                                                                 |
-| Kaolini (Uingereza: china clay; Australia: Eckalite) | Al₂O₃, SiO₂            | Chanzo kikuu cha alumina; pia huweka glaze ikielea                                                                                                                               |
-| Ball clay                                            | Al₂O₃, SiO₂            | Hulainika zaidi kuliko kaolini, ina chuma na vitu vya kikaboni zaidi                                                                                                             |
-| Potash feldspar, soda feldspar, nepheline syenite    | K₂O, Na₂O, Al₂O₃, SiO₂ | Flux zenye alumina na silika zake. Nepheline syenite ni flux kali ya moto mdogo na wa kati. “Feldspar” ya kawaida kwenye kichocheo cha zamani inaweza kumaanisha yoyote kati yao |
-| Whiting (kalsiamu kaboneti)                          | CaO                    | Flux kuu ya kalsiamu; hutoa kaboni dioksidi                                                                                                                                      |
-| Wollastonite                                         | CaO, SiO₂              | Kalsiamu bila kaboni dioksidi                                                                                                                                                    |
-| Dolomite, talc                                       | MgO, na CaO au SiO₂    | Nyuso laini za matte; upanuzi mdogo                                                                                                                                              |
-| Oksidi ya zinki                                      | ZnO                    | Ung'avu na fuwele; nyingi mno zinaweza kusababisha crawling                                                                                                                      |
-| Frit za boroni, Gerstley Borate, colemanite          | B₂O₃                   | Muhimu kuanzia koni 06 hadi koni 6; frit ni “thabiti zaidi na huyeyuka kidogo zaidi kuliko borate ghafi”                                                                         |
-| Lithiamu kaboneti                                    | Li₂O                   | Flux yenye upanuzi mdogo; ghali, kwa hiyo hutumika kwa kiasi kidogo                                                                                                              |
-| Strontiamu kaboneti                                  | SrO                    | Mbadala wenye sumu kidogo kuliko bariamu                                                                                                                                         |
-| Bariamu kaboneti                                     | BaO                    | Ina sumu ikiwa ghafi; glaze zenye bariamu nyingi zinaweza kuvuja madini                                                                                                          |
-| Bentonite                                            | Kuelea                 | Udongo laini sana, kwa kawaida 1–3%, ili kuzuia kutuama                                                                                                                          |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Malighafi za glaze ni unga laini. Vumbi la silika huumiza mapafu bila dalili mwanzoni, na baadhi ya malighafi, kama bariamu kaboneti na lithiamu kaboneti, zina sumu zikimezwa. Shika unga kwa upole, safisha kwa njia ya majimaji, na vaa barakoa ya kupumua (respirator) inayokaa vizuri unapofanya kazi kavu. [Kuchanganya kwa usalama na hewa safi](/guides/safe-mixing) na [Usiitie familia yako sumu](/guides/home-safety) zinaeleza jinsi.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Majina ya kikanda
+### Regional names
 
-- **Kaolini** ni **china clay** nchini Uingereza; wasambazaji wa Australia huiuza kama Eckalite.
-- **Flint** ni jina la zamani la Uingereza la silika. Wasambazaji wa Uingereza bado huuza **calcined flint** kama bidhaa yake yenyewe, kwa hiyo “flint” kwenye kichocheo cha Uingereza huenda ikamaanisha calcined flint, na kwenye kichocheo cha Marekani huenda ikamaanisha quartz iliyosagwa. Zote huuzwa kama vyanzo vya silika; angalia uchambuzi.
-- **China stone** na **Cornish stone** (jiwe la Cornwall) ni malighafi ileile, inayohusiana na feldspar.
-- **Whiting** ni kalsiamu kaboneti; wasambazaji wa Ujerumani huiita Kreide (chaki).
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Hukumu malighafi kwa oksidi inazotoa, si kwa jina lake. Glazecalc hufanya kazi hivyo: unaweza kuingiza uchambuzi wa msambazaji wako kwenye [ukurasa wa Malighafi](/material), na **Jaribu malighafi za kisasa na ulinganishe**, **Pendekeza viasi na ulinganishe** na **Linganisha na nilivyo navyo** zote hulinganisha oksidi zilizochomwa, si majina.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Malighafi hubadilika pia. Custer feldspar ilikoma mwaka 2023. Mgodi wa awali wa Gerstley Borate ulifungwa karibu 1999–2000; Laguna bado huuza bidhaa kwa jina hilo, na Gillespie Borate ndiyo mbadala mkuu. Vyanzo havikubaliani kama Gillespie inachukua nafasi ya Gerstley Borate kwa pauni moja kwa pauni moja (mtengenezaji wake na Potclays wanasema ndiyo, Digitalfire na wengine wanasema hapana), kwa hiyo linganisha hizo mbili ndani ya Glazecalc, kisha jaribu kundi dogo.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Vitia rangi na viziba mwanga {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**Kitia rangi (colorant)** ni oksidi ya metali au kaboneti inayotia glaze rangi; **stain** ni kitia rangi kilichotengenezwa kiwandani, thabiti zaidi na kinachofanana zaidi kuliko oksidi ghafi. Vitia rangi kwa kawaida ni chini ya 5% ya msingi, vingi chini ya 1%, na kaboneti ina nguvu ya takriban nusu ya oksidi inayolingana nayo.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Vitia rangi vya kawaida, kama asilimia ya msingi
-Label: Vitia rangi vya kawaida
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Kitia rangi         | Kiasi cha kawaida cha kuanzia                | Rangi na maelezo                                                                                                                                                      |
-| ------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalti             | 0.1–2% (vyanzo havikubaliani)                | Bluu, na yenye nguvu sana; kuelekea zambarau msingi ukiwa na magnesiamu                                                                                               |
-| Chuma               | 0.5–10%                                      | Kahawia, rangi ya ngozi na nyekundu kwenye oksidesheni; kwenye upunguzaji, ½–2% hutoa celadon na 5–6% hutoa tenmoku. Ni flux, kwa hiyo nyingi hufanya glaze itiririke |
-| Shaba               | 1–3%                                         | Kijani au samawati-kijani kwenye oksidesheni, nyekundu kwenye upunguzaji. Inaweza kufanya glaze ivuje madini                                                          |
-| Kromu               | Chini ya 0.5% hadi 2% (vyanzo havikubaliani) | Kijani; kahawia msingi ukiwa na zinki, waridi pamoja na bati                                                                                                          |
-| Manganizi           | 2–10%                                        | Kahawia na zambarau                                                                                                                                                   |
-| Rutile              | Takriban 2–5%                                | Rangi zenye madoa na mchanganyiko; mbaya au matte juu ya takriban 5%                                                                                                  |
-| Stain za kibiashara | 2–12%                                        | 2–4% kwa rangi hafifu, 5–8% kwa rangi za kati, 10–12% kwa rangi kali                                                                                                  |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-Kiasi cha kobalti na kromu kinabishaniwa kweli. Glazy inasema kobalti 0.1% inatosha kwa bluu; Glendale Community College inatoa ½–2% au ½–3% kutegemea angahewa; Birdie Boone, katika Pottery Making Illustrated, anasema 3% au chini. Kwa kromu, Boone anasema chini ya 0.5% na Glendale 2–3%. Njia salama ni kuanza chini na kufanya **line blend**: safu ya vigae vya majaribio inayopandisha kiungo kimoja kutoka kidogo hadi kingi.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Glaze ya msingi hubadilisha rangi. Msingi unaong'aa na wazi hutoa rangi angavu zaidi; msingi wa satin na matte, kwa kawaida wenye alumina zaidi, hupunguza rangi. Magnesiamu husukuma kobalti kuelekea zambarau, zinki hugeuza kromu kuwa kahawia, na kromu pamoja na bati hutoa waridi.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Viziba mwanga
+### Opacifiers
 
-**Kiziba mwanga (opacifier)** hufanya glaze kuwa **opaque** (isiyopitisha mwanga), ikificha udongo; glaze **transparent** (inayopitisha mwanga) huuacha uonekane.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Viziba mwanga
+Table: Opacifiers
 
-| Kiziba mwanga                                 | Kiasi cha kawaida              | Maelezo                                                                                                      |
-| --------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% kwa uzibaji kamili       | Chaguo la bei nafuu; chapa ni malighafi ileile iliyosagwa kwa ukubwa tofauti                                 |
-| Oksidi ya bati                                | Takriban 5–7% (makadirio yetu) | Ghali; huziba vibaya kwenye upunguzaji                                                                       |
-| Titani dioksidi                               | Zaidi ya 2%                    | Uzibaji laini unaopitisha mwanga kidogo; kwa 10% au zaidi, uso wa matte wenye umbile na fuwele zinazoonekana |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Mwafaka wa glaze na kasoro {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-Udongo na glaze vyote hukua vinapopata joto na kusinyaa vinapopoa, kila kimoja kwa kiasi chake: **upanuzi wa joto (thermal expansion)** wake. **Mwafaka wa glaze (glaze fit)** ni jinsi vyote viwili vinavyolingana. Mwafaka mzuri huacha glaze ikibanwa kidogo na udongo; Digitalfire inasema mbano kidogo huimarisha vyombo, lakini mwingi mno unaweza kuvidhoofisha na hata kuvipasua.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Crazing na shivering
+### Crazing and shivering
 
-**Crazing** ni mtandao wa nyufa ndogo. Upanuzi wa glaze ni mkubwa kuliko wa udongo, kwa hiyo inapopoa husinyaa zaidi, hunyooshwa na hupasuka, kwa kawaida kwa sababu ya sodiamu na potasiamu nyingi mno (Na₂O, K₂O). Inaweza pia kutokea baadaye, wakati wa matumizi, baada ya kupozwa ghafla mara kwa mara, kama kugusana na vimiminika baridi. Inapotakiwa, kama kwenye raku, huitwa **crackle**. Digitalfire inasema “95% ya wakati suluhisho ni kurekebisha upanuzi wa joto wa glaze”; kupoza polepole kunachelewesha crazing tu. Jaribio lake: pasha chombo hadi takriban {{300 °F; 149 °C}}, kitumbukize kwenye maji yenye barafu, kisha sugua kalamu ya felt juu yake ili nyufa zionekane.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Vyanzo hutofautiana kuhusu suluhisho la kwanza. Glazy inapendekeza kuongeza silika au alumina; Digitalfire inajibu kuwa silika ya ziada “hupunguza tu KNaO” (sodiamu na potasiamu); Linda Bloomfield anaongeza boroni au kupunguza feldspar, malighafi moja kwa wakati. Ushauri wetu: katika [kikokotoo cha glaze](/recipe), badilisha sehemu ya sodiamu na potasiamu kwa flux zenye upanuzi mdogo (boroni, lithiamu, magnesiamu, kalsiamu), thibitisha mabadiliko kwa **Linganisha**, na uthibitishe kwa jaribio la maji yenye barafu.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-**Shivering** ni kinyume chake: upanuzi wa glaze ni mdogo sana kuliko wa udongo, kwa hiyo inabanwa kupita kiasi na kuchubuka kwenye kingo na pembe. Digitalfire inaonya kuwa vipande vinaweza kuwa vikali kama wembe na vinaweza kumezwa, na Glazy inaita shivering “hatari zaidi kuliko crazing kwenye vyombo vya matumizi”. Suluhisho ni glaze yenye upanuzi mkubwa zaidi au udongo wenye upanuzi mdogo zaidi.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Usitumie vyombo vyenye crazing au shivering kwa chakula au kinywaji. Vyanzo havikubaliani kama vyungu vyenye crazing vinaweza kusafishwa vya kutosha (kimoja kinasema mashine ya kuosha vyombo inatosha; kingine kinaita vyombo vya matumizi vyenye crazing vyenye kasoro), kwa hiyo tunachukua upande wa tahadhari.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Ung'avu na matte
+### Gloss and matte
 
-Uso wa **ng'avu (gloss)** unaakisi na ni laini, **satin** una mng'ao hafifu, na **isiyong'aa (matte)** ni hafifu. Ung'avu unahitaji kioo kilichoyeyuka kabisa. Matte inaweza kutokana na alumina nyingi (uwiano mdogo wa silika na alumina), kutokana na flux kama kalsiamu, magnesiamu, bariamu au strontiamu zinazotengeneza fuwele ndogo sana glaze inapopoa, au kutokana na kuchoma pungufu.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Kasoro za kawaida
+### Common defects
 
-Badilisha kitu kimoja kwa wakati, na uhifadhi vigae vyako vya majaribio.
+Change one thing at a time, and keep your test tiles.
 
-Table: Kasoro za kawaida za glaze, sababu zake za kawaida na suluhisho la kwanza
-Label: Kasoro za kawaida za glaze
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Kasoro     | Inaonekanaje                                         | Sababu za kawaida                                                                                                  | Suluhisho la kwanza                                                                                      |
-| ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| Crawling   | Glaze hujivuta na kuwa shanga, ikiacha udongo wazi   | Bisque yenye vumbi au mafuta; tabaka nene yenye udongo mwingi iliyopasuka wakati wa kukauka; zinki, zircon au bati | Safisha bisque; paka nyembamba; choma kwanza (calcine) sehemu ya udongo; ongeza kiunganishi kama CMC gum |
-| Pinholing  | Matundu madogo au mashimo                            | Gesi kutoka kwenye udongo au glaze isiyoziba juu; glaze isiyochomwa vya kutosha au ngumu                           | Shikilia kwenye joto la juu kwa takriban nusu saa; paka nyembamba; punguza zinki au rutile               |
-| Blistering | Mashimo yenye kingo kali                             | Kwa kawaida kuchoma kupita kiasi; tabaka nene sana; flux zinazopeperuka juu ya takriban {{2192 °F; 1200 °C}}       | Choma kwa joto la chini; paka nyembamba. Kingo kali hufanya vyombo vya matumizi kutokuwa salama          |
-| Running    | Glaze hutiririka hadi kwenye rafu                    | Alumina ndogo mno; nene mno, kama pale mimiminiko inapoingiliana; chuma nyingi                                     | Paka nyembamba; ongeza alumina; weka glaze mbali juu ya mguu wa chungu                                   |
-| Dunting    | Nyufa kwenye chungu kutokana na kupoa au kupata joto | Kupoa haraka kupitia quartz inversion, {{1063 °F; 573 °C}}; kuta zisizosawa; mwafaka mbaya                         | Choma polepole kupitia {{1063 °F; 573 °C}}, kupanda na kushuka; kuta zilizosawa                          |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Usalama wa chakula {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Leaching** (kuvuja kwa madini) ni metali kuyeyuka kutoka kwenye glaze iliyochomwa na kuingia kwenye chakula au kinywaji, na glaze inaweza kuonekana kamilifu na bado ikafanya hivyo. Majaribio ya kisheria huloweka kipande kilichochomwa kwenye myeyusho wa asidi na kupima madini ya risasi (Pb) na kadimiamu (Cd) yanayotoka.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Bila madini ya risasi si sawa na salama kwa chakula
+### Lead-free is not the same as food-safe
 
-Kanuni za Marekani, Umoja wa Ulaya, Uingereza na Australia hupunguza madini ya risasi (Pb) na kadimiamu (Cd) ambayo kipande kilichochomwa hutoa, si kile ambacho glaze inacho. “Bila madini ya risasi (Pb)” huondoa hatari moja; si daraja la usalama wa chakula. Oksidi nyingine pia huvuja: Glazy inaonya kuwa glaze zenye bariamu nyingi “zinaweza kuvuja na kwa ujumla si salama kwa chakula”, Digitalfire inasema shaba “inaweza kufanya glaze ivuje; ijaribu”, na Glazy haishauri tena glaze za madini ya risasi (Pb) kwa vyombo vya matumizi.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Glaze ya ndani (liner glaze)** ni glaze thabiti, kwa kawaida safi au nyeupe, kwa nyuso zinazogusa chakula. Kwa maoni yetu, ile isiyo na kitia rangi, bariamu, madini ya risasi (Pb) wala lithiamu, inayoyeyuka kikamilifu, isiyopata crazing na inayodumu vizuri, ndiyo chaguo lenye hatari ndogo zaidi. Hatari ndogo si uthibitisho.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Fomula za kikomo (limit formulas)** (Digitalfire hupendelea **fomula lengwa (target formulas)**) hutoa viwango vya kawaida vya fomula ya umoja kwa glaze thabiti kwenye koni fulani: malengo ya Digitalfire ya koni 6 huweka alumina kwa 0.285–0.64 na silika kwa 2.4–4.7. Hukuongoza kuelekea kemia nzuri lakini hazithibitishi chochote; Digitalfire huepuka neno “kikomo” kwa sababu linapendekeza kuwa glaze zilizo ndani ya viwango “kwa namna fulani ni salama”. Zana za Glazecalc za kubadilisha kichocheo husema kichocheo kipya kinapovuka kikomo kinachopendekezwa, kama boroni nyingi kwenye koni 6, na glaze itafanya nini kwa uwezekano mkubwa.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Mipaka ya kisheria hutofautiana kwa nchi. Jedwali linaonyesha ile ya mahali ulipo, kwa vipimo vya sheria yenyewe; chagua nchi au eneo jingine ili kulinganisha.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-Marekani, vyombo vya mapambo vya kauri vinavyoonekana kutumika kwa chakula huchukuliwa kama vyombo vya chakula isipokuwa vina lebo ya kubandika na ilani ya kudumu iliyobuniwa au kuchomwa kwenye msingi wake, kama “Si kwa Matumizi ya Chakula. Inaweza Kutia Chakula Sumu”, au vina tundu linalopitia uso wa chakula. Umoja wa Ulaya unaweka mipaka ya madini ya risasi (Pb) na kadimiamu (Cd) katika Agizo la 84/500/EEC, na Uingereza inahifadhi viwango hivyo hivyo katika sheria yake yenyewe. Kuanzia 29 Mei 2026 Uholanzi, Ubelgiji na Luxembourg zinaruhusu madini ya risasi (Pb) chini mara 130 hadi 150 hivi, na kadimiamu (Cd) chini mara 15 hivi. Australia inaweka mipaka kwa vyombo vilivyoagizwa kutoka nje; hatukupata kikomo rasmi kwa vyombo vilivyotengenezwa Australia au New Zealand.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Kupima
+### Testing
 
-FDA inasema vifaa vya kupima kwa kusugua nyumbani vinaweza kuonyesha madini ya risasi (Pb) yanayoweza kuvuja, lakini Ceramics New Zealand inaonya kuwa kalamu za kupima hazikubuniwa kwa kauri na hutoa matokeo chanya ya uongo. Chukulia matokeo chanya kuwa sababu ya kuacha kutumia kipande, na matokeo hasi kuwa hayathibitishi chochote. Jaribio la maabara la kuvuja kwa madini kwenye kipande kilichochomwa (ASTM C738 nchini Marekani; EN 1388 au ISO 6486 Ulaya) ndilo jibu la kweli.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> “Salama kwa chakula” inamaanisha glaze hii, kwenye udongo huu, iliyochomwa hadi koni hii katika tanuru hii na kupakwa kwa njia hii, hutoa chini ya mipaka ya kisheria. Glazecalc inaweza kukusaidia kutengeneza glaze thabiti, na **Badilisha madini ya risasi (Pb)** inaweza kujenga upya kichocheo cha zamani chenye madini ya risasi (Pb) bila madini hayo, lakini hakuna kikokotoo kinachoweza kuthibitisha chungu. Jaribio la kipande kilichochomwa pekee ndilo linaloweza.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Uzito linganishi na upakaji {#application}
 
@@ -462,7 +476,7 @@ Wax resist
 Whiting
 : Kalsiamu kaboneti, flux kuu ya kalsiamu; hupoteza zaidi ya 40% ya uzito wake wakati wa uchomaji. Kijerumani: Kreide.
 
-## Vyanzo {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -483,6 +497,14 @@ Whiting
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Whiting
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

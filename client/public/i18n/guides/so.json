@@ -243,5 +243,19 @@
     "loading": "Maktabadda waa la soo rarayaa…",
     "failed": "Maktabadda lama soo rari karin. Mar dambe isku day.",
     "choosePrompt": "Dooro dalkaaga ama gobolkaaga si aad u aragto waxa halkaas lagu iibiyo."
+  },
+  "stull": {
+    "title": "Shaxda Stull: silica iyo alumina UMF-ta",
+    "regions": {
+      "unfused": "aan dhalaalin",
+      "matte": "aan ifayn (matte)",
+      "semi-matte": "badh-matte",
+      "bright": "ifaya",
+      "underfired": "aan si ku filan loo gubin",
+      "crazed": "crazing leh"
+    },
+    "keyBright": "Xariiq dhibcaha leh: meesha glaze-yada Stull ay ugu ifayeen.",
+    "keyCrazed": "Xariiqyo isdhaafsan: meesha ay crazing ku sameeyeen.",
+    "note": "Tilmaan, ma aha saadaal. R. T. Stull (Transactions of the American Ceramic Society, 1912) wuxuu ku gubay cone 11 iyadoo flux-yada lagu go'aamiyay 0.3 K₂O iyo 0.7 CaO; flux-yo iyo gubid kale ayaa gobollada dhaqaajiya, matte aan si ku filan loo gubinna wuxuu u muuqan karaa ifaya. Gobolladu waa sida Glazy u sawiro."
   }
 }

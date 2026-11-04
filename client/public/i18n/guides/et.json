@@ -243,5 +243,19 @@
     "loading": "Teegi laadimine…",
     "failed": "Teeki ei õnnestunud laadida. Proovige hiljem uuesti.",
     "choosePrompt": "Valige oma riik või piirkond, et näha, mida seal müüakse."
+  },
+  "stull": {
+    "title": "Stulli diagramm: ränidioksiid alumiiniumoksiidi suhtes Segeri valemis",
+    "regions": {
+      "unfused": "sulamata",
+      "matte": "matt",
+      "semi-matte": "poolmatt",
+      "bright": "läikiv",
+      "underfired": "alapõletatud",
+      "crazed": "juuspragunenud"
+    },
+    "keyBright": "Punktiirjoon: kus Stulli glasuurid olid kõige läikivamad.",
+    "keyCrazed": "Viirutus: kus need juuspragunesid.",
+    "note": "Juhend, mitte ennustus. R. T. Stull (Transactions of the American Ceramic Society, 1912) põletas koonuseni 11, sulandajad fikseeritud kujul 0,3 K₂O ja 0,7 CaO; muud sulandajad ja põletused nihutavad alasid ja alapõletatud matt glasuur võib joonistuda läikivana. Alad on sellised, nagu Glazy need joonistab."
   }
 }

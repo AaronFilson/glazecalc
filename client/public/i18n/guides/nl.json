@@ -243,5 +243,19 @@
     "loading": "De bibliotheek wordt geladen…",
     "failed": "De bibliotheek kon niet worden geladen. Probeer het later opnieuw.",
     "choosePrompt": "Kies uw land of regio om te zien wat daar verkrijgbaar is."
+  },
+  "stull": {
+    "title": "Stull-diagram: siliciumoxide tegen aluminiumoxide in de Segerformule",
+    "regions": {
+      "unfused": "ongesmolten",
+      "matte": "mat",
+      "semi-matte": "halfmat",
+      "bright": "glanzend",
+      "underfired": "te laag gestookt",
+      "crazed": "met haarscheuren"
+    },
+    "keyBright": "Stippellijn: waar de glazuren van Stull het glanzendst waren.",
+    "keyCrazed": "Arcering: waar ze haarscheuren kregen.",
+    "note": "Een richtlijn, geen voorspelling. R. T. Stull (Transactions of the American Ceramic Society, 1912) stookte bij kegel 11 met de smeltmiddelen vast op 0,3 K₂O en 0,7 CaO; andere smeltmiddelen en stookomstandigheden verschuiven de gebieden, en een te laag gestookt mat glazuur kan als glanzend worden uitgezet. De gebieden zijn zoals Glazy ze tekent."
   }
 }

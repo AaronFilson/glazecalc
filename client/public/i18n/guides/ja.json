@@ -243,5 +243,19 @@
     "loading": "ライブラリを読み込んでいます…",
     "failed": "ライブラリを読み込めませんでした。後でもう一度お試しください。",
     "choosePrompt": "国・地域を選ぶと、その国・地域で販売されているものが表示されます。"
+  },
+  "stull": {
+    "title": "Stull チャート: ゼーゲル式のシリカとアルミナ",
+    "regions": {
+      "unfused": "未溶融",
+      "matte": "マット",
+      "semi-matte": "半マット",
+      "bright": "光沢",
+      "underfired": "焼成不足",
+      "crazed": "貫入"
+    },
+    "keyBright": "点線: Stull の釉薬が最も光沢のあった所。",
+    "keyCrazed": "斜線: 貫入が出た所。",
+    "note": "目安であり、予測ではありません。R. T. Stull（Transactions of the American Ceramic Society、1912年）は、媒溶剤を 0.3 K₂O と 0.7 CaO に固定して、オルトンコーン 11 で焼成しました。ほかの媒溶剤や焼成では領域が動き、焼成不足のマットが光沢のように表示されることもあります。領域は Glazy の描き方に従っています。"
   }
 }

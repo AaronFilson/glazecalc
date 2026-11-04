@@ -3,20 +3,20 @@ title: Esmalte yachaypa qallariynin
 lead: Imawanmi esmalte rurasqa, imaynatam horno vidrioman tukuchin, hinaspa rurana qillqapi, bolsapi utaq conokunapa tablanpi tarinki llapa simikunata, sut'inchasqa.
 ---
 
-## Imataq esmalte {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-**Esmalteqa**{{en: glaze}} mankaman k'askachisqa ñañu vidrio p'achan. Glazy, kichasqa esmalte rurana qillqakunapa willay huñun, nin: "vidrio fórmula, wakin temperaturakunapi chullunanpaq, mitu hawaman k'askakunanpaq allichasqa". Ñut'u allpa p'achahina churakun, hornopitaq vidriohina p'achaman chullun, mitutataq wisq'an; chaymi manka mana hinatachu suruq, qhillichakuq, utaq mawk'ayaq. Ruphachiypa aswan q'uñi kaqninpi, chullusqaqa mituwanpas tinkun, sapa kutillanmi chawpinkupi huk p'achata ruran, chaytaq esmaltetaqa allinta hap'ichin. Loza de barropiqa esmalte hawallanpi t'aqasqa p'achahina tiyan; grespitaq ukhunman chullun.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Esmalte ruranaqa materialkunata qillqan, kaykunahina: feldespato, carbonato de calcio (whiting) hinaspa caolín. Hornopi, sapakaqmanta huk parten gashina lluqsin (unu utaq dióxido de carbono), puchuqninñataq **óxidokunaman** tukun: huk elementopa oxígenowan huñusqan, kaykunahina: sílice (SiO₂) utaq óxido de calcio (CaO). Ruphasqa vidrioqa óxidokunamanta rurasqa, chaymi saña ruraqkuna esmaltetaqa paykunawan willanku. Sapa óxidom kimsa llamk'aykunamanta hukta ruran.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- **Sílice** (SiO₂) **vidrio ruraqmi** (glass former): vidriota sayarichin. Ch'uya sílice {{3100 °F; 1700 °C}} hawanpi chullun, saña horno aypasqanmanta aswan q'uñi; sílice achkayuq esmaltetaq sapa kutillan aswan unaytam aguantan.
-- **Fundentekunaqa** (fluxes) chullunan temperaturata uraykachinku horno aypananpaq. **Álcalikuna**, **R₂O** nisqa qillqasqa, sodio, potasio hinaspa litio óxidokunam (Na₂O, K₂O, Li₂O); cono 06-manta pacha chawpi q'uñikama, hatun q'uñikama llamk'anku. **Alcalinotérreokuna**, **RO** nisqa qillqasqa, calcio, magnesio, bario hinaspa estroncio óxidokunam (CaO, MgO, BaO, SrO), óxido de zinc (ZnO) paykunawan kuska huñusqa; cono 5-manta cono 10-kama aswan allinta llamk'anku. R nisqaqa aylluchapi mayqin metalpas.
-- **Alúmina** (Al₂O₃) **estabilizantem** (stabilizer). Chullusqata sinchiyachin sayaq perqakunapi qhipakunanpaq, hinaspa ch'ilquyta, unay aguantaytawan yapan. Glazypa willakuynin: alúmina pisi kaqtinqa "esmaltekiqa phawanmanmi; ancha achkataq chullusqata mate kanankama sinchiyachinman". Alúmina aswanqa mitumanta, feldespatomantawan hamun.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Boro** (B₂O₃) siq'ita pichan. Químicokunaqa vidrio ruraqhina t'aqanku, ichaqa taller temperaturakunapi fundentehina llamk'an, saña ruraqkunataq chayhina qhawanku. Cono 5–6-pi ancha munasqam, hatun q'uñipitaq mana munasqachu. (Conokuna, saña ruraqkunapa ruphachiyta sutichanan, uraypi sut'inchasqa.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Huk yuyarina: sílice vidriom, fundentekuna hornoyki aypasqan temperaturapi chullunanpaq yanapan, alúminataq rakhuyachin churasqaykipi qhipakunanpaq.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Mitu, p'achakuna, iskay ruphachiykuna {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Willasqa temperaturakunaqa mana kikinchu. Glazy hatun q'uñita, cono 9–11, yaq
 
 Norteamérica hawanpiqa vendeqkuna sapa kutillan °C-ta qunku, mana conotachu. Hermann Seger kunan pacha conota ruraq, ñawpaqta Berlinpi 1886-pi llamk'achisqa, Reino Unidopitaq kikin Staffordshire conokuna karqan; yupayninkuqa mana Ortonpawan tupanantachu yuyanaykichu, mana ima t'ikrana tablatapas tarirqaykuchu. [Huch'uy hornopi ruphachiy](/guides/firing) conokunata aswan sut'inchan.
 
-## Ruranamanta fórmula unitariakama {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**Lote ruranaqa** (batch recipe) materialkunata llasayninwan qillqan, sapa kutillan base 100-man huñukunanpaq allichasqa. **Yapanakunaqa** (additives: llimp'iqkuna, opacificantekuna, suspensorkunapas) 100 hawanman yapakun, sapa kutillan basepa porcientonhina. Esmalte{{en: glaze}} imachus kasqanta rikunapaq, saña ruraqkuna ruranata **UMF-man** t'ikranku (fórmula unitaria, unity molecular formula; **Seger fórmula**pas, Hermann Seger sutinmanta, paymi kimsa columnayuq churayninta ñawpaqta llamk'achirqan).
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: Ruranamanta fórmula unitariakama: Glazypa llamk'asqa qhawarinan
-Label: Ruranamanta fórmula unitariakama
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Puriy             | Ima pasan                                                                                                                                                     | Qhawarinapi                                                                                                                      |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Lote rurana    | Materialkuna llasayninwan, 100-man allichasqa                                                                                                                 | Feldespato 40%, wakinkunapas                                                                                                     |
-| 2. Óxido análisis | Mikhuna etiquetahina: sapa materialpa óxidonkuna llasay porcientohina yapakun, gaskunataq qichusqa                                                            | Feldespatoqa 64.8% sílicem, chaymi 40%-nin 25.9% SiO₂-ta apamun. Ruphasqa esmalteqa 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Molkuna        | Llasaykuna **molkunaman** tukunku, moléculakunapa yupaynin, imaraykuchus "Gramokunaqa pantachinmanmi, wakin óxidokuna wakinkunamanta aswan llasa kasqanrayku" | 60.1 g SiO₂ huk molmi, chaymi 67.4 g yaqa 1.12 molkuna                                                                           |
-| 4. Unidad         | Llapan fundentekunapa huñunwan rakisqa, chhaynapi fundentekuna 1-man huñukunku                                                                                | Fundentekuna 0.303-man huñukunku; rakispa: K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                             |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-Glazecalcpa [rurana p'anqan](/recipe) tawantin puriyta qillqashaqtiyki ruran, kimsa columnapitaq rikuchin: fundentekuna (R₂O, RO) 1-man huñukuq; estabilizantekuna (R₂O₃: alúmina, sapa kutillan boropas kaypi churasqa); vidrio ruraqkuna (RO₂: sílice). "Unificaciónqa tupachina yanapakullanmi," Glazy nin: iskay rurana, mana kikin materialkunamanta, ichaqa kikin fórmula unitariayuq, "ruphachisqa kaspa yaqa kikillantam ruranku". Chaymi 1-qa rakinakusqa tupunam, mana llasanayki hayk'achu. Digitalfire yapan kay ruray "pisi temperaturakunapi mana chhayna allintachu llamk'an" nispa, chaypi boroqa mana ch'uya fundentechu, fórmula unitariakunataq "tupachinapaqmi, contextonpi aswan allin qhawasqa". **Tupachiy** iskay ruranapa fórmulankunata óxidomanta óxidokama churan.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Sílicepa alúminawan tupuynin
+### The silica to alumina ratio
 
-Huk sapalla yupay aswan allinqa **sílicepa alúminawan tupuyninmi**: sílice alúminawan rakisqa. Qhawarinapi, 3.70 ÷ 0.41 yaqa 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Sílicepa alúminawan tupuynin ima niyta munan (Glazy)
-Label: Sílicepa alúminawan tupuynin
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-|  Tupuy | Glazypa ñawirisqan                           |
-| -----: | -------------------------------------------- |
-| Yaqa 9 | Lliphiq chullusqata rikuchin, q'uñi aypaqtin |
-|    5–7 | Achka sinchi gres esmaltekunapi tarikuq      |
-|    3–5 | Mate utaq pisi ruphachisqa kanman            |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-5–7 tupuyqa sapallan mana lliphiqtachu, mana matetachu willan: fundentekuna, boro, conopas siq'ita kuyuchinku. Glazy sinchi esmaltekunapaq fundente tupuyta qun: 0.2 R₂O 0.8 ROwan, 0.3 R₂O 0.7 ROwan kama. Aswan álcali chullusqata aswan phawaqta ruran, expansionnintataq hatunyachin, chhaynapi cuarteadopa (crazing) peligrontapas.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Ruphaspa chinkasqa llasay
+### Loss on ignition
 
-**Ruphaspa chinkasqa llasayqa** (loss on ignition, **LOI**) hornopi huk material chinkachisqan llasaymi, unu, dióxido de carbono, materia orgánica utaq azufre gashina lluqsiqtin. Ruphasqa esmalteqa mana imatapas hap'inchu, chaymi fórmula unitaria mana qillqanchu.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: Sapa kutillan LOI (Digitalfire)
-Label: Ruphaspa chinkasqa llasay
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Material                                | Sapa kutillan LOI                                                                              |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Carbonato de calcio (whiting), dolomita | 40%-manta aswan, aswanqa dióxido de carbono: 100 g carbonato de calcio yaqa 45 g-ta lluqsichin |
-| Carbonato de litio                      | Yaqa 60%                                                                                       |
-| Carbonato de bario, Gerstley Borate     | 20%-manta aswan                                                                                |
-| Caolín                                  | Yaqa 12%, aswanqa cristalninkunapi watasqa unu                                                 |
-| Feldespatokuna                          | 1%-manta pisi                                                                                  |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Esmalte chulluyta qallarisqanmanta lluqsiq gasqa ukhunta pukyuspa pasananmi, Digitalfirepa siminkunapi "pukyukuna, phullchukuna, huch'uy t'uqukuna, ch'uqchikuy" nisqakunata ruraspa. Talcoqa yaqa {{1650 °F; 899 °C}}-kama gasta lluqsichishallan. Fritakuna, **calcinado** materialkuna (ñawpaqmanta q'uñichisqa gasninkuta lluqsichinapaq), ruphachiypi t'ikraykunapas yanapanku.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-Ñawpa libro kunaqa kay yupayta makillawan ruranku, **peso molecularwan** (huk material utaq óxidopa huk molninpa llasaynin) **peso equivalentewanpas** (huk óxidopa huk molninta quq materialpa llasaynin). Yupasqaykuman hina, yaqa 100 g carbonato de calcio huk mol óxido de calciota qun, 56 g. Calculadoraqa iskayninta ruran.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Fritakuna, materialkunapas {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Fritakuna
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-**Fritaqa** (frit) fábricapi rurasqa vidriom: mineralkuna chullusqa, unupi chirichisqa, kutasqa. Fritaspa bórax hina unupi chulluq materialkunata mana chulluqman tukuchin, titi (plomo, Pb), bario hina miyuyuq óxidokunata sinchi vidriopi wisq'an, mana ruphachisqa mineralkunamanta aswan kikin materialta qun, gaskunatataq lluqsichin, chaymi fritasqa esmaltekuna{{en: glaze}} "aswan mana pantayniyuq" (Digitalfire). Fritakunaqa ñawpaqta chullunku: soda fritaqa cono 06-pi llamk'anña, feldespatotaq "cono 6-pi llamp'uyayta qallarishallanmi". Aswan qullqim, suspendisqa qhipakunankupaq mitutam munanku (Digitalfirepa qhawarinan: 85% frita 15% mituwan), hinaspa "teoríapi mana chulluqmi, ichaqa chiqaqpi mana chhaynachu".
+::stull-chart
 
-Norteamérica fritakunaqa ruraqninwan yupayninwan sutichasqa: Ferro Frit 3134 (Ferro kunan Vibrantz) Glazypa yaqa 22% llapanpaq ruranankunapi tiyan. Reino Unido ruranakunaqa aswan sapa kutillan fritakunata laya sutinwan sutichanku, kayhina: standard borax frit.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### Sapa kutillan materialkuna
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Sapa kutillan esmalte materialkuna, ima qusqankupas
-Label: Sapa kutillan esmalte materialkuna
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Material (huk sutikuna)                                  | Qun                    | Willaykuna                                                                                                                                                                       |
-| -------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sílice (pedernal, cuarzo; flint, quartz)                 | SiO₂                   | Esmaltekunapi 325 malla llamk'achiy, ancha ñut'u kutasqa                                                                                                                         |
-| Caolín (Reino Unido: china clay; Australia: Eckalite)    | Al₂O₃, SiO₂            | Alúminapa hatun pukyun; esmaltetapas suspendisqa hap'in                                                                                                                          |
-| Arcilla de bola (ball clay)                              | Al₂O₃, SiO₂            | Caolínmanta aswan llamp'u, aswan fierroyuq, materia orgánicayuqpas                                                                                                               |
-| Feldespato potásico, feldespato sódico, nefelina sienita | K₂O, Na₂O, Al₂O₃, SiO₂ | Kikin alúminayuq, síliceyuq fundentekuna. Nefelina sienitaqa pisi q'uñipi chawpi q'uñipiwan sinchi fundentem. Ñawpa ruranapa "feldespato" nisqallanqa mayqintapas niyta munanman |
-| Carbonato de calcio (whiting)                            | CaO                    | Calciopa hatun fundenten; dióxido de carbonota lluqsichin                                                                                                                        |
-| Wollastonita                                             | CaO, SiO₂              | Calcio mana dióxido de carbonoyuq                                                                                                                                                |
-| Dolomita, talco                                          | MgO, CaO utaq SiO₂-wan | Seda hina mate hawakuna; aswan pisi expansión                                                                                                                                    |
-| Óxido de zinc                                            | ZnO                    | Lliphiy, cristalkunapas; ancha achka ch'uqchikuyta ruranman                                                                                                                      |
-| Boro fritakuna, Gerstley Borate, colemanita              | B₂O₃                   | Cono 06-manta cono 6-kama ancha munasqa; fritakunaqa "mana ruphachisqa boratokunamanta aswan kikin, aswan pisi chulluqmi"                                                        |
-| Carbonato de litio                                       | Li₂O                   | Pisi expansión fundente; qullqisapa, chaymi pisillata llamk'achikun                                                                                                              |
-| Carbonato de estroncio                                   | SrO                    | Bariopa rantin, aswan pisi miyuyuq                                                                                                                                               |
-| Carbonato de bario                                       | BaO                    | Mana ruphachisqa kaspa miyuyuq; achka barioyuq esmaltekuna metalkunata lluqsichinmanmi                                                                                           |
-| Bentonita                                                | Suspensión             | Ancha ñut'u mitu, sapa kutillan 1–3%, mana urayman tiyananpaq                                                                                                                    |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Esmalte materialkunaqa ñut'u polvokunam. Sílice ñut'u surq'ankunatam k'irin, qallariypi mana ima unquy rikhuriyniyuq; wakin materialkunataq, carbonato de bario, carbonato de litio hina, millp'usqa kaspa miyum. Polvokunata llamp'ullamanta hap'iy, hump'iwan pichay, ch'akipi llamk'aspataq allin tupachisqa respiradorta churakuy. [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing), [Ama ayllu-masiykita miyuwan wañuchiychu](/guides/home-safety) imaynata sut'inchanku.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Suyukunapa sutinkuna
+### Regional names
 
-- **Caolínqa** Reino Unidopi **china clay**; Australiapi vendeqkuna Eckalite sutiwan vendenku.
-- **Flintqa** (pedernal) Reino Unidopi sílicepa ñawpa sutinmi. Reino Unidopi vendeqkuna **calcined flint** (pedernal calcinado) sapallan productohina vendenkuraqmi, chaymi britaniko ruranapi "flint" yaqapaschá pedernal calcinadotam niyta munan, americano ruranapitaq yaqapaschá kutasqa cuarzota. Iskayninpas sílicepa pukyunhina vendesqa; análisisninta qhaway.
-- **China stone** **Cornish stone**pas (Cornwall stone) kikin materialmi, feldespatowan ayllu.
-- **Whitingqa** carbonato de calciom; Alemania vendeqkuna Kreide (tiza) ninku.
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Huk materialtaqa qusqan óxidokunawan taripay, mana sutinwanchu. Glazecalc chhaynatam llamk'an: vendeqniykipa análisisninta [Materialkuna p'anqapi](/material) churayta atinki, **Kunan materialkunawan pruebay, tupachiy**, **Hayk'akunata niy, tupachiy**, **Kapuqniywan tupachiy** nisqakunapas llapanku ruphasqa óxidokunata tupachinku, mana sutikunatachu.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Materialkunapas t'ikrakunkum. Custer feldespato 2023-pi tukukurqan. Ñawpa Gerstley Borate mina yaqa 1999–2000-pi wisq'akurqan; Laguna chay sutiwan huk productota vendeshanraqmi, Gillespie Borate-taq hatun rantinmi. Willaykunaqa mana kikinchu Gillespie Gerstley Boratetachu libramanta libra rantinman (ruraqnin Potclayspas arí ninku, Digitalfire wakinkunapas manam), chaymi iskayninta Glazecalcpi tupachiy, chaymanta huch'uy lotepi pruebay.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Llimp'iqkuna, opacificantekunapas {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**Llimp'iqqa** (colorant) esmalteta{{en: glaze}} llimp'iq metal óxido utaq carbonatom; **pigmentotaq** (stain) fábricapi rurasqa llimp'iq, mana ruphachisqa óxidokunamanta aswan sinchi, aswan kikin. Llimp'iqkunaqa sapa kutillan basepa 5%-manta pisi, achkataq 1%-manta pisi, carbonatotaq tupaq óxidopa yaqa kuskan kallpayuq.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Sapa kutillan llimp'iqkuna, basepa porcientonhina
-Label: Sapa kutillan llimp'iqkuna
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Llimp'iq               | Sapa kutillan qallarina hayk'a                     | Llimp'ikuna, willaykunapas                                                                                                                            |
-| ---------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cobalto                | 0.1–2% (willaykuna mana kikinchu)                  | Anqas, ancha kallpasapa; base magnesioyuq kaqtin kulli llimp'iman                                                                                     |
-| Fierro                 | 0.5–10%                                            | Oxidaciónpi ch'umpi, q'illu-ch'umpi, puka llimp'ikuna; reducciónpi ½–2% celadónta qun, 5–6% tenmokutataq. Fundentem, chaymi achka esmalteta phawachin |
-| Cobre                  | 1–3%                                               | Oxidaciónpi q'umir utaq turquesa, reducciónpi puka. Esmalteta metalkuna lluqsichiqman tukuchinmanmi                                                   |
-| Cromo                  | 0.5%-manta pisi 2%-kama (willaykuna mana kikinchu) | Q'umir; base zincyuq kaqtin ch'umpi, estañowan panti                                                                                                  |
-| Manganeso              | 2–10%                                              | Ch'umpi, kulli llimp'ikuna                                                                                                                            |
-| Rutilo                 | Yaqa 2–5%                                          | Allqa, chhiqchi llimp'i; yaqa 5% hawanpi qhaqa utaq mate                                                                                              |
-| Comercial pigmentokuna | 2–12%                                              | 2–4% llamp'u llimp'ikunapaq, 5–8% tonokunapaq, 10–12% kallpasapa llimp'ikunapaq                                                                       |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-Cobalto cromo hayk'akunaqa chiqaqpi rimanakusqam. Glazy nin 0.1% cobalto anqaspaq aypanmi; Glendale Community College ½–2% utaq ½–3% qun atmósferaman hina; Birdie Boone, Pottery Making Illustrated-pi, 3% utaq aswan pisi nin. Cromopaq, Boone 0.5%-manta pisi nin, Glendaletaq 2–3%. Mana manchay ñanqa pisillawan qallariy, **mezcla linealta** (line blend) rurayta: probetakunapa siq'in, huk ingredienteta pisimanta achkakama puriykachispa.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Base esmalte llimp'ita t'ikran. Lliphiq, k'anchay pasaq baseqa aswan k'anchaq llimp'ita qun; satinado mate basekunataq, sapa kutillan aswan alúminayuq, llimp'ita amuyachinku. Magnesio cobaltota kulli llimp'iman tanqan, zinc cromota ch'umpiman t'ikran, cromo estañowantaq pantita qun.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Opacificantekuna
+### Opacifiers
 
-**Opacificanteqa** (opacifier) esmalteta **opacoman** (opaque: k'anchay mana pasaq) tukuchin, mituta pakaspa; **transparente** (transparent: k'anchay pasaq) esmaltetaq mituta rikuchin.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Opacificantekuna
+Table: Opacifiers
 
-| Opacificante                                  | Sapa kutillan hayk'a     | Willaykuna                                                                                        |
-| --------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| Circón (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% llapan opacidadpaq | Aswan pisi qullqi; marcakunaqa kikin materialmi, mana kikin hatunniyuq kutasqa                    |
-| Óxido de estaño                               | Yaqa 5–7% (yuyasqayku)   | Qullqisapa; reducciónpi mana allintachu opacon                                                    |
-| Dióxido de titanio                            | 2%-manta aswan           | Seda hina, k'anchay pasaq opacidad; 10%-pi utaq aswanpi, mate, qhaqa hawa, rikukuq cristalkunawan |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Esmalte tupay, pantaykunapas {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-Mitupas esmaltepas{{en: glaze}} q'uñiyaspa wiñanku, chiriyaspataq k'iskiyanku, sapakama kikin hayk'anwan: **expansión térmica** (thermal expansion) nisqanwan. **Esmalte tupayqa** (glaze fit) iskaynin hayk'a allinta tupasqanmi. Allin tupayqa esmalteta mituwan as ñit'isqata saqin; Digitalfire nin as ñit'iyqa mankakunata kallpachinmi, ancha achkataq pisi kallpayuqman tukuchinman, p'akichinmanpas.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Cuarteado, descascarado ima
+### Crazing and shivering
 
-**Cuarteadoqa** (crazing) ñañu p'akisqakunapa llikanmi. Esmaltepa expansionnin masapamanta aswan hatunmi, chaymi chiriyaspa aswan k'iskiyan, chutakun, p'akikuntaq, sapa kutillan sodio potasio (Na₂O, K₂O) ancha achka kasqanrayku. Qhipamanpas rikhurinmanmi, llamk'achishaspa, kuti-kuti utqaylla chiriyasqa qhipa, chiri ukyanakunawan tupaspa hina. Munasqa kaqtin, raku hina, **craquelado** (crackle) nisqa. Digitalfire nin: "95% kutipi allichayqa esmaltepa expansión térmicanta allichaymi"; allillamanta chiriyachiyqa cuarteadota qhipachillanmi. Pruebanqa: mankata yaqa {{300 °F; 149 °C}}-kama q'uñichiy, hielo unuman challpuy, plumonwantaq qaquy p'akisqakunata rikuchinanpaq.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Willaykunaqa ñawpaq allichaypi mana kikinchu. Glazy sílice utaq alúmina yapayta yuyaychan; Digitalfire kutichin yapasqa sílice "KNaO-tallam ch'uyayachin" (sodio potasio); Linda Bloomfield boroto yapan utaq feldespatota pisiyachin, huk materialta huk kutipi. Yuyaychayniyku: [rurana calculadorapi](/recipe), wakin sodio potasiota pisi expansión fundentekunawan (boro, litio, magnesio, calcio) t'ikray, t'ikrayta **Tupachiywan** qhaway, hielo unu pruebawantaq takyachiy.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-**Descascaradoqa** (shivering) kutirisqanmi: esmaltepa expansionnin masapamanta ancha aswan pisim, chaymi ancha ñit'isqa, simikunamanta k'uchukunamantawan ch'illikun. Digitalfire willan ch'illikunakuna navaja hina filoyuq kanmanmi, millp'usqataq kanmanmi, Glazytaq descascaradota "llamk'anapaq mankakunapi cuarteadomantapas aswan peligrosom" nin. Allichayqa aswan hatun expansión esmalte utaq aswan pisi expansión masam.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Ama cuarteado utaq descascarado mankakunata mikhunapaq utaq ukyanapaq llamk'achiychu. Willaykunaqa mana kikinchu cuarteado mankakuna allinta mayllakunmanchus (hukqa nin lavavajilla aypanmi; hukñataq cuarteado llamk'ana mankakunata pantasqa nin), chaymi aswan cuidakuq ladota akllayku.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Lliphiq, mate ima
+### Gloss and matte
 
-**Lliphiq** (gloss) hawaqa k'anchaq, llamp'um; **satinadoqa** (satin) amuy k'anchayniyuq; **mateqa** (matte) mana lliphiq. Lliphiyqa llapanpi chullusqa vidriotam munan. Mateqa achka alúminamanta hamunman (pisi sílice alúmina tupuy), calcio, magnesio, bario utaq estroncio hina fundentekunamanta esmalte chiriyashaqtin huch'uy cristalkunata ruraspa, utaq pisi ruphachiymanta.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Sapa kutillan pantaykuna
+### Common defects
 
-Huk kutipi huk imallata t'ikray, probetaykikunatataq waqaychay.
+Change one thing at a time, and keep your test tiles.
 
-Table: Sapa kutillan esmalte pantaykuna, imaraykunku, ñawpaq allichaykunapas
-Label: Sapa kutillan esmalte pantaykuna
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Pantay                        | Imaynam rikukun                                       | Sapa kutillan imaraykunku                                                                                     | Ñawpaq allichaykuna                                                                                 |
-| ----------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Ch'uqchikuy (crawling)        | Esmalte rumichakunaman kutirin, q'ala mituta saqispa  | Polvoyuq utaq wirayuq bizcocho; rakhu, mitu achkayuq p'acha ch'akispa p'akikuq; zinc, circón utaq estaño      | Bizcochota pichay; ñañuta churay; wakin mituta calcinay; CMC goma hina k'askachiqta yapay           |
-| Huch'uy t'uqukuna (pinholing) | Huch'uy t'uqukuna utaq p'atakuna                      | Masamanta utaq esmaltemanta gas, t'uqun mana wisq'akuq; pisi ruphachisqa utaq sinchi esmalte                  | Ruphachiypa aswan q'uñi kaqninpi yaqa kuska hora hap'iy; ñañuta churay; aswan pisi zinc utaq rutilo |
-| Phullchukuna (blistering)     | Filo simiyuq t'uqukuna                                | Sapa kutillan ancha ruphachiy; ancha rakhu p'achakuna; yaqa {{2192 °F; 1200 °C}} hawanpi volátil fundentekuna | Aswan pisi ruphachiy; ñañuta churay. Filo simikuna llamk'ana mankakunata mana segurotachu ruranku   |
-| Phaway (running)              | Esmalte tablaman phawan                               | Pisi alúmina; ancha rakhu, hich'aykuna tupasqanpi hina; achka fierro                                          | Ñañuta churay; alúminata yapay; esmalteta chakinmanta karupi waqaychay                              |
-| Dunting (p'akiy)              | Mankapi p'akisqakuna chiriyaymanta utaq q'uñiyaymanta | Cuarzo inversiónpi utqaylla chiriyay, {{1063 °F; 573 °C}}; mana kikin perqakuna; mana allin tupay             | {{1063 °F; 573 °C}}-pi allillamanta ruphachiy, wichaspa uraykuspapas; kikin perqakuna               |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Mikhunapaq mana manchakuy {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Lixiviaciónqa** (leaching, metalkuna lluqsiynin) ruphasqa esmaltemanta{{en: glaze}} metalpa mikhunaman utaq ukyanaman chulluspa lluqsiyninmi; esmalteqa allinpuni rikukuspapas chaytaqa ruranmanmi. Ley pruebakunaqa ruphasqa mankata ácido unupi challpunku, lluqsiq titi (plomo, Pb) cadmiotawan tupunku.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Mana titiyuq kayqa mana mikhunapaq mana manchakuywan kikinchu
+### Lead-free is not the same as food-safe
 
-Estados Unidos, Unión Europea, Reino Unido, Australiapa kamachiyninkuqa ruphasqa manka lluqsichisqan titita (Pb) cadmiotawan kamachinku, mana esmalte hap'isqantachu. "Mana titiyuq" (sin plomo) huk peligrota qichun; mana mikhunapaq mana manchakuy tupuychu. Huk óxidokunapas lluqsinkum: Glazy willan achka barioyuq esmaltekuna "lluqsiyta atinkum, sapa kutillantaq mana mikhunapaq mana manchakuqchu", Digitalfire nin cobre "esmalteta metalkuna lluqsiqman tukuchinmanmi; pruebay", Glazy-taq manaña titiyuq esmaltekunata llamk'ana mankakunapaq yuyaychanchu.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Ukhu esmalteqa** (liner glaze) sinchi esmaltem, sapa kutillan ch'uya utaq yuraq, mikhunawan tupaq hawakunapaq. Yuyayniykupi, mana llimp'iqniyuq, mana barioyuq, mana titiyuq, mana litioyuq, llapanpi chulluq, mana cuarteakuq, allintataq aguantaq esmalteqa aswan pisi peligroyuqmi. Aswan pisi peligroqa mana pruebachu.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Límite fórmulakunaqa** (limit formulas; Digitalfire **objetivo fórmulakunata**, target formulas, aswan munan) huk conopi sinchi esmaltekunapaq sapa kutillan fórmula unitaria rangokunata qunku: Digitalfirepa cono 6 objetivonkunaqa alúminata 0.285–0.64-pi, sílicetataq 2.4–4.7-pi churanku. Allin químicaman pusasunki, ichaqa mana imatapas pruebanchu; Digitalfire "límite" simita mana llamk'achinchu, imaraykuchus rangokuna ukhupi esmaltekuna "imaynapas mana manchakuq" kasqanta yuyachin. Glazecalcpa ruranata t'ikrana yanapakunkunaqa willanku musuq rurana yuyaychasqa límiteta pasaqtin, cono 6-pi achka boro hina, esmaltetaq imatachus yaqapaschá ruranqa.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Ley límitekunaqa sapa suyupi mana kikinchu. Tablaqa tiyasqaykipi kaqkunata rikuchin, leypa kikin unidadninkunapi; huk suyuta utaq regionta akllay tupachinapaq.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-Estados Unidospiqa, sumaqchanapaq cerámica mankakuna mikhunapaq llamk'achinahina rikukuqqa mikhuna mankahinam qhawasqa, manachus k'askachisqa etiquetayuq, chakinpi moldeasqa utaq ruphachisqa wiñaypaq willakuyniyuqpas kanchu, kayhina: "Not for Food Use. May Poison Food", utaq manachus mikhuna hawanpi t'uquyuq kanchu. Unión Europea titipa cadmiopa límitenkunata Directiva 84/500/CEE-pi churan, Reino Unidotaq kikin yupaykunata kikin leyninpi waqaychan. 29 Mayo 2026-manta, Países Bajos, Bélgica, Luxemburgo yaqa 130-manta 150 kutikama aswan pisi titita, yaqa 15 kuti aswan pisi cadmiotawan saqinku. Australia hawamanta apamusqa mankakunapaq límitekunata churan; Australiapi utaq Nueva Zelandapi rurasqa mankakunapaq mana ima oficial límitetapas tarirqaykuchu.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Pruebay
+### Testing
 
-FDA nin wasipi swab kitkuna lluqsiq titita rikuchinmanmi, ichaqa Ceramics New Zealand willan prueba plumonkuna mana cerámicapaq rurasqachu kasqankuta, llulla positivokunatataq qusqankuta. Positivotaqa mankata manaña llamk'achinaykipaq imaraykuhina qhaway, negativotataq mana ima pruebaqhina. Ruphasqa mankapa laboratoriopi metalkuna lluqsiynin pruebanmi (leach test; Estados Unidospi ASTM C738; Europapi EN 1388 utaq ISO 6486) chiqaq kutichiy.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> "Mikhunapaq mana manchakuq" niyqa kaymi: kay esmalte, kay mitupi, kay conokama kay hornopi ruphachisqa, kayhinataq churasqa, ley límitekunamanta aswan pisitam lluqsichin. Glazecalc sinchi esmalteta ruraypi yanapasunkimanmi, **Titita rantichiy** ñawpa titiyuq ruranatapas mana titiyuqta musuqmanta ruranmanmi, ichaqa mana ima calculadorapas mankata certificayta atinchu. Ruphasqa mankapa pruebanllam atin.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Gravedad específica, churaypas {#application}
 
@@ -462,7 +476,7 @@ Cera resist (wax resist)
 Carbonato de calcio (whiting)
 : Calciopa hatun fundenten; ruphachiypi llasayninpa 40%-manta aswanta chinkachin. Alemán simipi: Kreide.
 
-## Pukyukuna {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -483,6 +497,14 @@ Carbonato de calcio (whiting)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Carbonato de calcio (whiting)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

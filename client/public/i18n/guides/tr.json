@@ -243,5 +243,19 @@
     "loading": "Kütüphane yükleniyor…",
     "failed": "Kütüphane yüklenemedi. Daha sonra yeniden deneyin.",
     "choosePrompt": "Orada neyin satıldığını görmek için ülkenizi veya bölgenizi seçin."
+  },
+  "stull": {
+    "title": "Stull diyagramı: Seger formülünde silis ve alümina",
+    "regions": {
+      "unfused": "ergimemiş",
+      "matte": "mat",
+      "semi-matte": "yarı mat",
+      "bright": "parlak",
+      "underfired": "az pişmiş",
+      "crazed": "sır çatlaklı"
+    },
+    "keyBright": "Noktalı çizgi: Stull’un sırlarının en parlak olduğu yer.",
+    "keyCrazed": "Tarama: çatladıkları yer.",
+    "note": "Yol gösterici; tahmin değildir. R. T. Stull (Transactions of the American Ceramic Society, 1912) ergiticileri 0,3 K₂O ve 0,7 CaO’da sabit tutarak 11 numaralı piramitte pişirdi; diğer ergiticiler ve pişirimler bölgeleri kaydırır, az pişmiş bir mat sır diyagramda parlak olarak görünebilir. Bölgeler, Glazy’nin çizdiği gibidir."
   }
 }

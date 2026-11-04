@@ -3,20 +3,20 @@ title: Il-glejż mill-bidu nett
 lead: Minn xiex isir il-glejż, kif il-forn jibdlu fi ħġieġ, u spjegazzjoni ta’ kull kelma li se tiltaqa’ magħha f’riċetta, fuq xkora jew fuq tabella tal-koni.
 ---
 
-## X’inhu l-glejż {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-Il-**glejż**{{en: glaze}} huwa saff irqiq ta’ ħġieġ imdewweb fuq biċċa taċ-ċeramika. Glazy, id-database miftuħa tar-riċetti tal-glejż, jiddeskrivih bħala “formula ta’ ħġieġ irranġata biex tidub u tingħaqad mat-tafal f’ċerti temperaturi”. Jitqiegħed bħala saff ta’ trab u fil-forn jdub f’kisja bħal ħġieġ li tissiġilla t-tafal, għalhekk ikun inqas probabbli li l-biċċa tnixxi, tittebba’ jew tintlibes. Meta l-ħamja tilħaq l-ogħla temperatura, il-glejż imdewweb jirreaġixxi wkoll mat-tafal, u spiss jifforma saff bejniethom li jorbot il-glejż sew mal-biċċa. Fuq il-fuħħar{{en: earthenware}} il-glejż jibqa’ fuq nett bħala saff separat; fuq l-istoneware jdub u jidħol fit-tafal{{en: body}}.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Riċetta telenka materji primi, bħall-feldspar, il-karbonat tal-kalċju{{en: whiting}} u l-kawlina{{en: kaolin}}. Fil-forn, parti minn kull wieħed toħroġ bħala gass (ilma jew diossidu tal-karbonju) u l-bqija ssir **ossidi**: komposti ta’ element mal-ossiġnu, bħas-silika{{en: silica}} (SiO₂) jew l-ossidu tal-kalċju (CaO). Il-ħġieġ moħmi huwa magħmul mill-ossidi, għalhekk il-fuħħarin jiddeskrivu glejż permezz tagħhom. Kull ossidu għandu wieħed minn tliet rwoli.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- Is-**silika** (SiO₂) hija l-**formatur tal-ħġieġ**{{en: glass former}}: hija tibni l-ħġieġ. Is-silika pura tdub ’il fuq minn {{3100 °F; 1700 °C}}, ferm aktar sħun milli jasal forn taċ-ċeramika, u glejż b’ħafna silika ġeneralment ikun aktar reżistenti.
-- Il-**flussi**{{en: fluxes}} ibaxxu l-punt tat-tidwib għal temperatura li forn jista’ jilħaq. L-**alkali**, miktuba **R₂O**, huma l-ossidi tas-sodju, tal-potassju u tal-litju (Na₂O, K₂O, Li₂O); jaħdmu mill-kon{{en: cone}} 06 u f’koni aktar sħan, sal-ħami medju u l-ħami għoli. L-**ossidi alkalini tal-art**, miktuba **RO**, huma l-ossidi tal-kalċju, tal-manjeżju, tal-barju u tal-istronzju (CaO, MgO, BaO, SrO), bl-ossidu taż-żingu (ZnO) miġbur magħhom; jaħdmu l-aħjar mill-kon 5 sal-kon 10. L-R tfisser kwalunkwe metall tal-familja.
-- L-**alumina** (Al₂O₃) hija **l-istabilizzatur**{{en: stabilizer}}. Tebbes il-glejż imdewweb biex jibqa’ fuq il-ġnub wieqfa, u żżid l-ebusija u r-reżistenza. It-twissija ta’ Glazy: b’alumina wisq ftit “il-glejż tiegħek jista’ jinżel; wisq tista’ tebbes il-glejż imdewweb sakemm isir matt”. L-alumina tiġi l-aktar mit-tafal u mill-feldspar.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-Il-**boron** (B₂O₃) iċajpar il-linja. Il-kimiċi jikklassifikawh bħala formatur tal-ħġieġ, iżda fit-temperaturi tal-istudjo jaġixxi bħala fluss, u l-fuħħarin jittrattawh bħala wieħed. Huwa kruċjali fil-koni 5–6 u m’hemmx bżonnu fil-ħami għoli. (Il-koni, il-mod kif il-fuħħarin isemmu ħamja, huma spjegati aktar ’l isfel.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Mod wieħed kif tiftakarha: is-silika hija l-ħġieġ, il-flussi jħalluha ddub f’temperatura li l-forn tiegħek jista’ jilħaq, u l-alumina tħaxxinha biex tibqa’ fejn tpoġġiha.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## It-tafal, il-kisjiet u ż-żewġ ħamjiet {#clay-and-firings}
 
@@ -77,191 +77,205 @@ It-temperaturi ppubblikati jvarjaw. Glazy jagħti l-ħami għoli, koni 9–11, b
 
 Barra mill-Amerika ta’ Fuq, il-fornituri spiss jagħtu °C minflok kon. Hermann Seger żviluppa l-kon modern, użat għall-ewwel darba f’Berlin fl-1886, u r-Renju Unit kellu l-koni ta’ Staffordshire tiegħu; m’għandekx tassumi li n-numri tagħhom jaqblu ma’ dawk ta’ Orton, u ma sibna l-ebda tabella biex tikkonvertihom. Il-gwida [Il-ħami f’forn sempliċi](/guides/firing) titkellem fuq il-koni f’aktar dettall.
 
-## Mir-riċetta għall-formula ta’ Seger {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**Riċetta** telenka l-materji primi skont il-piż, normalment skalati biex il-bażi flimkien tagħmel 100. L-**addittivi** (kuluranti{{en: colorants}}, opaċifikaturi u aġenti tas-sospensjoni) jiżdiedu fuq il-100, normalment bħala perċentwal tal-bażi. Biex jaraw x’inhu l-glejż{{en: glaze}}, il-fuħħarin jibdlu r-riċetta f’**formula ta’ Seger** (**UMF**, mill-isem Ingliż unity molecular formula; imsemmija għal Hermann Seger, li kien l-ewwel wieħed li uża t-tqassim tagħha fi tliet kolonni).
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: Mir-riċetta għall-formula ta’ Seger: l-eżempju maħdum ta’ Glazy
-Label: Mir-riċetta għall-formula ta’ Seger
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Pass                  | X’jiġri                                                                                                                                 | Fl-eżempju                                                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Riċetta            | Materji primi skont il-piż, skalati għal 100                                                                                            | Feldspar 40%, fost oħrajn                                                                                                                            |
-| 2. Analiżi tal-ossidi | Bħal tikketta nutrizzjonali: l-ossidi ta’ kull materjal jingħaddu flimkien bħala perċentwal skont il-piż, u l-gassijiet jitħallew barra | Il-feldspar huwa 64.8% silika{{en: silica}}, għalhekk l-40% tiegħu jġib 25.9% SiO₂. Il-glejż moħmi huwa 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Mol                | Il-piżijiet isiru **mol**, għadd ta’ molekuli, għax “il-grammi jistgħu jqarrqu, għax xi ossidi huma itqal minn oħrajn”                  | 60.1 g ta’ SiO₂ huma mol wieħed, għalhekk 67.4 g huma madwar 1.12 mol                                                                                |
-| 4. Imnaqqas għal 1    | Kollox jinqasam bit-total tal-flussi{{en: fluxes}}, biex il-flussi flimkien jagħmlu 1                                                   | Il-flussi flimkien jagħmlu 0.303; bid-diviżjoni joħroġ K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                                     |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-Il-[paġna tar-riċetta](/recipe) ta’ Glazecalc tagħmel l-erba’ passi kollha waqt li tittajpja, u turi r-riżultat fi tliet kolonni: il-flussi (R₂O u RO), li flimkien jagħmlu 1; l-istabilizzaturi (R₂O₃: l-alumina, u ħafna drabi l-boron jitqiegħed hawn); u l-formaturi tal-ħġieġ{{en: glass formers}} (RO₂: is-silika). “It-tnaqqis għal 1 huwa biss mod kif tbiddel id-daqs,” jgħid Glazy: żewġ riċetti magħmula minn materjali differenti iżda bl-istess formula ta’ Seger “iġibu ruħhom kważi l-istess ladarba jinħmew”. Għalhekk il-1 huwa kejl komuni, mhux ammont li tiżen. Digitalfire iżid li l-metodu “ma jaħdimx daqshekk tajjeb f’temperaturi aktar baxxi”, fejn il-boron mhuwiex fluss sempliċi, u li l-formuli ta’ Seger huma “għat-tqabbil u l-aħjar jinqraw fil-kuntest tagħhom”. Il-funzjoni **Qabbel** tpoġġi l-formuli ta’ żewġ riċetti ħdejn xulxin, ossidu b’ossidu.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Il-proporzjon bejn is-silika u l-alumina
+### The silica to alumina ratio
 
-L-aktar numru wieħed utli huwa l-**proporzjon bejn is-silika u l-alumina**{{en: silica to alumina ratio}}: is-silika maqsuma bl-alumina. Fl-eżempju, 3.70 ÷ 0.41 huwa madwar 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: X’jindika l-proporzjon bejn is-silika u l-alumina (Glazy)
-Label: Proporzjon bejn is-silika u l-alumina
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-| Proporzjon | Kif jaqrah Glazy                                             |
-| ---------: | ------------------------------------------------------------ |
-|   Madwar 9 | Jindika glejż imdewweb ileqq, jekk ikun hemm biżżejjed sħana |
-|        5–7 | Tipiku ta’ ħafna glejżijiet stabbli għal stoneware           |
-|        3–5 | Jista’ jkun matt jew moħmi wisq ftit                         |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Proporzjon ta’ 5–7 waħdu ma jbassar la glejż ileqq u lanqas glejż matt: il-flussi, il-boron u l-kon{{en: cone}} kollha jċaqalqu l-linja. Glazy jagħti bħala bilanċ tal-flussi tipiku għal glejżijiet stabbli 0.2 R₂O ma’ 0.8 RO, sa 0.3 R₂O ma’ 0.7 RO. Aktar alkali jagħmel il-glejż imdewweb aktar likwidu u jgħolli l-espansjoni{{en: expansion}} tiegħu, u b’hekk ir-riskju tax-xegħir{{en: crazing}}.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Telf mit-tqabbid bin-nar
+### Loss on ignition
 
-It-**telf mit-tqabbid bin-nar**{{en: loss on ignition}} (**LOI**) huwa l-piż li materjal jitlef fil-forn meta l-ilma, id-diossidu tal-karbonju, il-materja organika jew il-kubrit joħorġu bħala gass. Glejż moħmi m’għandu xejn minn dan it-telf, għalhekk il-formula ta’ Seger tħallih barra.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: Telf mit-tqabbid bin-nar tipiku (Digitalfire)
-Label: Telf mit-tqabbid bin-nar
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Materjal                                    | LOI tipiku                                                                                       |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Karbonat tal-kalċju{{en: whiting}}, dolomit | Aktar minn 40%, l-aktar diossidu tal-karbonju: 100 g ta’ karbonat tal-kalċju joħorġu madwar 45 g |
-| Karbonat tal-litju                          | Madwar 60%                                                                                       |
-| Karbonat tal-barju, Gerstley Borate         | Aktar minn 20%                                                                                   |
-| Kawlina{{en: kaolin}}                       | Madwar 12%, l-aktar ilma marbut fil-kristalli tagħha                                             |
-| Feldspars                                   | Inqas minn 1%                                                                                    |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Il-gass li joħroġ wara li l-glejż jibda jdub irid jgħaddi minnu f’bżieżaq, u dan iġib, kif jgħid Digitalfire, “bżieżaq, infafet, toqob tal-labra{{en: pinholes}}, ġbir tal-glejż{{en: crawling}}”. It-talk jibqa’ joħroġ il-gass sa madwar {{1650 °F; 899 °C}}. Il-fritti{{en: frits}}, il-materjali **kkalċinati** (imsaħħna minn qabel biex joħorġu l-gassijiet tagħhom) u bidliet fil-ħami kollha jgħinu.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-Kotba eqdem jagħmlu dan il-kalkolu bl-idejn, bil-**piż molekulari** (il-piż ta’ mol wieħed ta’ materjal jew ossidu) u bil-**piż ekwivalenti** (il-piż ta’ materjal li jagħti mol wieħed ta’ ossidu). Skont il-kalkolu tagħna, madwar 100 g ta’ karbonat tal-kalċju jagħtu mol wieħed, 56 g, ta’ ossidu tal-kalċju. Kalkulatur jieħu ħsieb it-tnejn.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Fritti u materji primi {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Fritti
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-**Fritta**{{en: frit}} hija ħġieġ magħmul f’fabbrika: minerali mdewbin, imkessħin f’daqqa fl-ilma u mitħunin. Meta materjal isir fritta, materjali solubbli bħall-burax isiru insolubbli, ossidi tossiċi bħaċ-ċomb u l-barju jingħalqu ġo ħġieġ stabbli, il-materjal ikun aktar konsistenti mill-minerali mhux f’fritta, u l-gassijiet joħorġu minn qabel, għalhekk il-glejżijiet{{en: glazes}} magħmula bil-fritti huma “ħafna aktar ħielsa mid-difetti” (Digitalfire). Il-fritti jdubu wkoll kmieni: fritta tas-sodju{{en: soda frit}} tkun attiva fil-kon{{en: cone}} 06, filwaqt li l-feldspar “għadu biss qed jibda jirtab fil-kon 6”. Jiswew aktar, għandhom bżonn tafal biex jibqgħu f’sospensjoni (l-eżempju ta’ Digitalfire huwa 85% fritta ma’ 15% tafal), u huma “teoretikament insolubbli, imma fil-prattika mhumiex”.
+::stull-chart
 
-Il-fritti tal-Amerika ta’ Fuq jissejħu bl-isem tal-manifattur u b’numru: Ferro Frit 3134 (Ferro issa jismu Vibrantz) tinsab f’madwar 22% tar-riċetti pubbliċi ta’ Glazy. Ir-riċetti tar-Renju Unit aktar spiss isemmu fritti ġeneriċi, bħall-fritta standard tal-burax.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### Il-materji primi komuni
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Materjali komuni tal-glejż u x’jagħtu
-Label: Materjali komuni tal-glejż
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Materjal (ismijiet oħra)                                                                                        | Jagħti                 | Noti                                                                                                                                                                                                  |
-| --------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silika{{en: silica}} (flint, kwarz)                                                                             | SiO₂                   | Fil-glejżijiet uża 325 mesh, tħin fin ħafna                                                                                                                                                           |
-| Kawlina{{en: kaolin}} (fir-Renju Unit: china clay; fl-Awstralja: Eckalite)                                      | Al₂O₃, SiO₂            | Is-sors ewlieni tal-alumina; iżżomm ukoll il-glejż f’sospensjoni                                                                                                                                      |
-| Ball clay                                                                                                       | Al₂O₃, SiO₂            | Aktar plastiku mill-kawlina, b’aktar ħadid u materja organika                                                                                                                                         |
-| Feldspar tal-potassju{{en: potash feldspar}}, feldspar tas-sodju, sijenit tan-nefelina{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Flussi{{en: fluxes}} bl-alumina u s-silika tagħhom stess. Is-sijenit tan-nefelina huwa fluss qawwi għall-ħami baxx u medju. “Feldspar” waħdu f’riċetta qadima jista’ jfisser kwalunkwe wieħed minnhom |
-| Karbonat tal-kalċju{{en: whiting}}                                                                              | CaO                    | Il-fluss ewlieni tal-kalċju; joħroġ diossidu tal-karbonju                                                                                                                                             |
-| Wollastonit                                                                                                     | CaO, SiO₂              | Kalċju mingħajr id-diossidu tal-karbonju                                                                                                                                                              |
-| Dolomit, talk                                                                                                   | MgO, ma’ CaO jew SiO₂  | Uċuħ matti u lixxi bħall-ħarir; espansjoni{{en: expansion}} aktar baxxa                                                                                                                               |
-| Ossidu taż-żingu                                                                                                | ZnO                    | Leqq u kristalli; wisq minnu jista’ jġib ġbir tal-glejż{{en: crawling}}                                                                                                                               |
-| Fritti tal-boron, Gerstley Borate, kolemanit                                                                    | B₂O₃                   | Essenzjali mill-kon 06 sal-kon 6; il-fritti huma “aktar konsistenti u inqas solubbli mill-borati mhux f’fritta”                                                                                       |
-| Karbonat tal-litju                                                                                              | Li₂O                   | Fluss b’espansjoni baxxa; jiswa ħafna, għalhekk jintuża bil-qies                                                                                                                                      |
-| Karbonat tal-istronzju                                                                                          | SrO                    | Is-sostitut inqas tossiku tal-barju                                                                                                                                                                   |
-| Karbonat tal-barju                                                                                              | BaO                    | Tossiku meta mhux f’fritta; glejżijiet b’ħafna barju jistgħu jirrilaxxaw metalli                                                                                                                      |
-| Bentonit                                                                                                        | Sospensjoni            | Tafal fin ħafna, normalment 1–3%, biex il-glejż ma jinżilx fil-qiegħ                                                                                                                                  |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Il-materjali tal-glejż huma trabijiet fini. It-trab tas-silika jagħmel ħsara lill-pulmun mingħajr sintomi għall-ewwel, u xi materjali, bħall-karbonat tal-barju u l-karbonat tal-litju, huma velenużi jekk jinbelgħu. Imxi bil-galbu mat-trabijiet, naddaf bl-ilma, u lbes respiratur li jaqbel sewwa ma’ wiċċek meta taħdem bil-materjali nexfin. Il-gwidi [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) u [Tavvelenax lill-familja tiegħek](/guides/home-safety) jispjegaw kif.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Ismijiet skont ir-reġjun
+### Regional names
 
-- Il-**kawlina** fir-Renju Unit tissejjaħ **china clay**; il-fornituri Awstraljani jbigħuha bħala Eckalite.
-- **Flint** huwa isem eqdem għas-silika fir-Renju Unit. Il-fornituri tar-Renju Unit għadhom ibigħu **flint ikkalċinat** bħala prodott separat, għalhekk “flint” f’riċetta Brittanika probabbilment ifisser flint ikkalċinat, u f’waħda Amerikana probabbilment kwarz mitħun. It-tnejn jinbigħu bħala sorsi tas-silika; iċċekkja l-analiżi.
-- **China stone** u **Cornish stone** (Cornwall stone) huma l-istess materjal, relatat mal-feldspar.
-- Il-**karbonat tal-kalċju** jissejjaħ **whiting** bl-Ingliż; il-fornituri Ġermaniżi jsejħulu Kreide (ġibs).
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Iġġudika materjal mill-ossidi li jagħti, mhux minn ismu. Glazecalc jaħdem hekk: tista’ ddaħħal l-analiżi tal-fornitur tiegħek fil-[paġna Materjali](/material), u l-funzjonijiet **Ipprova materjali tal-lum u qabbel**, **Issuġġerixxi ammonti u qabbel** u **Agħmilha b’dak li għandi** ilkoll iqabblu l-ossidi wara l-ħami, mhux l-ismijiet.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Il-materjali jinbidlu wkoll. Il-feldspar Custer ma baqax isir fl-2023. Il-minjiera oriġinali ta’ Gerstley Borate għalqet madwar is-snin 1999–2000; Laguna għadu jbigħ prodott b’dak l-isem, u Gillespie Borate huwa s-sostitut ewlieni. Is-sorsi ma jaqblux dwar jekk Gillespie jiħux post Gerstley Borate libra b’libra (il-manifattur tiegħu u Potclays jgħidu iva, Digitalfire u oħrajn le), għalhekk qabbel it-tnejn fl-app Glazecalc, imbagħad ittestja taħlita żgħira.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Kuluranti u opaċifikaturi {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**Kulurant**{{en: colorant}} huwa ossidu jew karbonat ta’ metall li jagħti l-kulur lil glejż{{en: glaze}}; **pigment**{{en: stain}} huwa kulurant magħmul f’fabbrika, aktar stabbli u konsistenti mill-ossidi mhux ipproċessati. Il-kuluranti normalment ikunu inqas minn 5% tal-bażi, ħafna minnhom inqas minn 1%, u karbonat għandu madwar nofs is-saħħa tal-ossidu korrispondenti.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Kuluranti komuni, bħala perċentwal tal-bażi
-Label: Kuluranti komuni
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Kulurant             | Ammont tas-soltu biex tibda                      | Kuluri u noti                                                                                                                                                          |
-| -------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalt               | 0.1–2% (is-sorsi ma jaqblux)                     | Blu, u qawwi ħafna; jagħti fil-vjola meta l-bażi jkollha l-manjeżju                                                                                                    |
-| Ħadid                | 0.5–10%                                          | Kannella, kannella ċar u ħomor f’ossidazzjoni; f’riduzzjoni, ½–2% jagħti seladon u 5–6% tenmoku. Huwa fluss{{en: flux}}, għalhekk ħafna minnu jġiegħel il-glejż jinżel |
-| Ram                  | 1–3%                                             | Aħdar jew turkważ f’ossidazzjoni, aħmar f’riduzzjoni. Jista’ jġiegħel glejż jirrilaxxa l-metalli                                                                       |
-| Kromju               | Minn inqas minn 0.5% sa 2% (is-sorsi ma jaqblux) | Aħdar; kannella jekk il-bażi jkollha ż-żingu, roża mal-landa                                                                                                           |
-| Manganiż             | 2–10%                                            | Kannella u vjola                                                                                                                                                       |
-| Rutil                | Madwar 2–5%                                      | Kulur imtebba’ u varjat; aħrax jew matt b’aktar minn madwar 5%                                                                                                         |
-| Pigmenti kummerċjali | 2–12%                                            | 2–4% għal kuluri ċari, 5–8% għal kuluri medji, 10–12% għal kuluri qawwija                                                                                              |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-L-ammonti tal-kobalt u tal-kromju verament huma kkontestati. Glazy jgħid li 0.1% kobalt huwa biżżejjed għal blu; Glendale Community College jagħti ½–2% jew ½–3% skont l-atmosfera; Birdie Boone, f’Pottery Making Illustrated, tgħid 3% jew inqas. Għall-kromju, Boone tgħid inqas minn 0.5% u Glendale 2–3%. It-triq sikura hija li tibda b’ammont baxx u tagħmel **sensiela ta’ provi**{{en: line blend}}: ringiela ta’ madum tal-prova{{en: test tiles}} fejn ingredjent wieħed jiżdied pass pass minn ftit għal ħafna.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Il-glejż bażi jbiddel il-kulur. Glejż bażi jleqq u trasparenti jagħti l-aktar kulur ħaj; bażijiet b’leqa ħafifa u matti, normalment b’aktar alumina, itaffuh. Il-manjeżju jagħti lill-kobalt fil-vjola, iż-żingu jagħmel il-kromju kannella, u l-kromju mal-landa jagħti roża.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Opaċifikaturi
+### Opacifiers
 
-**Opaċifikatur** jagħmel glejż **opak**, u jaħbi t-tafal; glejż **trasparenti** jħallih jidher.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Opaċifikaturi
+Table: Opacifiers
 
-| Opaċifikatur                                                | Ammont tas-soltu              | Noti                                                                                                   |
-| ----------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Silikat taż-żirkonju (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% għal opaċità sħiħa      | L-għażla l-irħas; il-marki huma l-istess materjal mitħun f’daqsijiet differenti                        |
-| Ossidu tal-landa                                            | Madwar 5–7% (l-istima tagħna) | Jiswa ħafna; ma jagħtix opaċità tajba f’riduzzjoni                                                     |
-| Diossidu tat-titanju                                        | Aktar minn 2%                 | Opaċità trasluċida u lixxa bħall-ħarir; b’10% jew aktar, wiċċ matt b’tessitura u b’kristalli li jidhru |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Il-qbil mat-tafal u d-difetti {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-It-tafal u l-glejż{{en: glaze}} it-tnejn jikbru meta jisħnu u jiċkienu meta jiksħu, kull wieħed b’ammont tiegħu: l-**espansjoni termali**{{en: thermal expansion}} tiegħu. Il-**qbil bejn il-glejż u t-tafal**{{en: glaze fit}} huwa kemm jaqblu sewwa t-tnejn. Qbil tajjeb iħalli l-glejż kemmxejn ikkompressat mit-tafal; Digitalfire jgħid li ftit kompressjoni ssaħħaħ l-oġġetti, filwaqt li wisq kompressjoni tista’ ddgħajjifhom u saħansitra xxaqqaqhom.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Xegħir u tqaxxir
+### Crazing and shivering
 
-Ix-**xegħir**{{en: crazing}} huwa xibka ta’ xquq fini. L-espansjoni tal-glejż hija ogħla minn dik tat-tafal, għalhekk meta jiksaħ il-glejż jiċkien aktar, jinġibed u jixxaqqaq, normalment minħabba wisq sodju u potassju (Na₂O, K₂O). Jista’ jidher ukoll aktar tard, waqt l-użu, wara tkessiħ f’daqqa ripetut, bħal meta l-biċċa tmiss likwidi kesħin. Meta jkun mixtieq, bħal fir-raku, jissejjaħ **xegħir dekorattiv**. Digitalfire jgħid li “95% tal-ħin is-soluzzjoni hija li taġġusta l-espansjoni termali tal-glejż”; it-tkessiħ bil-mod jittardja x-xegħir biss. It-test tiegħu: saħħan l-oġġett sa madwar {{300 °F; 149 °C}}, għaddsu f’ilma bis-silġ, u għaddi markatur fuqu biex jidhru x-xquq.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Is-sorsi ma jaqblux dwar l-ewwel rimedju. Glazy jissuġġerixxi li żżid is-silika{{en: silica}} jew l-alumina; Digitalfire iwieġeb li aktar silika “sempliċement iddilwixxi l-KNaO” (is-sodju u l-potassju); Linda Bloomfield iżżid il-boron jew tnaqqas il-feldspar, materjal wieħed kull darba. Il-parir tagħna: fil-[kalkulatur tar-riċetti](/recipe), ibdel parti mis-sodju u mill-potassju bi flussi{{en: fluxes}} b’espansjoni aktar baxxa (boron, litju, manjeżju, kalċju), iċċekkja l-bidla bil-funzjoni **Qabbel**, u kkonferma bit-test tal-ilma bis-silġ.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-It-**tqaxxir**{{en: shivering}} huwa l-oppost: l-espansjoni tal-glejż hija ħafna aktar baxxa minn dik tat-tafal, għalhekk il-glejż ikun ikkompressat żżejjed u jitqaxxar minn fuq ix-xfar u t-truf. Digitalfire iwissi li l-qxur jistgħu jkunu jaqtgħu daqs xafra u jistgħu jinbelgħu, u Glazy jgħid li t-tqaxxir huwa “saħansitra aktar perikoluż mix-xegħir fuq oġġetti għall-użu ta’ kuljum”. Ir-rimedju huwa glejż b’espansjoni ogħla jew tafal b’espansjoni aktar baxxa.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Tużax oġġetti bix-xegħir jew bit-tqaxxir għall-ikel jew għax-xorb. Is-sorsi ma jaqblux dwar jekk biċċiet bix-xegħir jistgħux jitnaddfu biżżejjed (wieħed jgħid li magna tal-ħasil tal-platti tagħmel ix-xogħol; ieħor jgħid li oġġetti għall-użu ta’ kuljum bix-xegħir huma difettużi), għalhekk aħna nżommu man-naħa tal-prudenza.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Leqq u matt
+### Gloss and matte
 
-Wiċċ **jleqq** jirrifletti d-dawl u huwa lixx, wiċċ **b’leqa ħafifa** għandu leqq imrażżan, u wiċċ **matt** huwa mitfi. Il-leqq għandu bżonn ħġieġ imdewweb għal kollox. Il-matt jista’ jiġi minn ħafna alumina (proporzjon baxx bejn is-silika u l-alumina), minn flussi bħall-kalċju, il-manjeżju, il-barju jew l-istronzju li jiffurmaw kristalli ċkejkna hekk kif il-glejż jiksaħ, jew minn ħami wisq ftit.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Difetti komuni
+### Common defects
 
-Ibdel ħaġa waħda kull darba, u żomm il-madum tal-prova{{en: test tiles}} tiegħek.
+Change one thing at a time, and keep your test tiles.
 
-Table: Difetti komuni tal-glejż, il-kawżi tas-soltu tagħhom u l-ewwel rimedji
-Label: Difetti komuni tal-glejż
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Difett                           | Kif jidher                                              | Kawżi komuni                                                                                                                      | L-ewwel rimedji                                                                                                          |
-| -------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Ġbir tal-glejż{{en: crawling}}   | Il-glejż jinġabar f’ċapep żgħar u jħalli t-tafal mikxuf | Bisque bit-trab jew bix-xaħam; saff oħxon b’ħafna tafal li xxaqqaq waqt li nixef; żingu, żirkon jew landa                         | Naddaf il-bisque; agħmel saff irqaq; ikkalċina parti mit-tafal; żid legant bħall-gomma CMC                               |
-| Toqob tal-labra{{en: pinholing}} | Toqob jew ħofor żgħar                                   | Gass mit-tafal jew mill-glejż u l-glejż ma ngħalaqx fuq it-toqba; glejż moħmi wisq ftit jew iebes                                 | Agħmel żamma{{en: hold}} fl-ogħla temperatura għal madwar nofs siegħa; agħmel saff irqaq; inqas żingu jew rutil          |
-| Infafet                          | Krateri bi truf jaqtgħu                                 | Normalment ħami żżejjed; saffi ħoxnin ħafna; flussi volatili ’il fuq minn madwar {{2192 °F; 1200 °C}}                             | Aħmi f’temperatura aktar baxxa; agħmel saff irqaq. It-truf li jaqtgħu jagħmlu l-oġġetti għall-użu ta’ kuljum mhux sikuri |
-| Nżul tal-glejż                   | Il-glejż jiġri u jinżel fuq ix-xkaffa                   | Alumina wisq ftit; saff oħxon wisq, bħal fejn it-tferrigħ jirkeb; ħafna ħadid                                                     | Agħmel saff irqaq; żid l-alumina; żomm il-glejż ferm ’il fuq mill-qiegħ                                                  |
-| Qsim mit-tkessiħ{{en: dunting}}  | Xquq fil-biċċa mit-tkessiħ jew mit-tisħin               | Tkessiħ mgħaġġel waqt l-inverżjoni tal-kwarz{{en: quartz inversion}}, {{1063 °F; 573 °C}}; ġnub ta’ ħxuna mhux indaqs; qbil ħażin | Għaddi bil-mod minn {{1063 °F; 573 °C}}, kemm fit-tisħin kif ukoll fit-tkessiħ; ġnub ta’ ħxuna indaqs                    |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Is-sigurtà tal-ikel {#food-safety}
+## Food safety {#food-safety lang=en}
 
-Ir-**rilaxx tal-metalli**{{en: leaching}} huwa meta l-metall jinħall minn glejż{{en: glaze}} moħmi u jgħaddi fl-ikel jew fix-xorb, u glejż jista’ jidher perfett u xorta jagħmel dan. It-testijiet legali jgħaddsu l-biċċa moħmija f’soluzzjoni ta’ aċidu u jkejlu ċ-ċomb u l-kadmju li joħorġu minnha.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Mingħajr ċomb ma jfissirx sikur għall-ikel
+### Lead-free is not the same as food-safe
 
-Ir-regoli fl-Istati Uniti, fl-UE, fir-Renju Unit u fl-Awstralja jillimitaw iċ-ċomb u l-kadmju li tirrilaxxa biċċa moħmija, mhux dak li fih il-glejż. “Mingħajr ċomb” ineħħi periklu wieħed; mhuwiex klassifikazzjoni tas-sigurtà għall-ikel. Ossidi oħra wkoll jirrilaxxaw: Glazy iwissi li l-glejżijiet b’ħafna barju “jistgħu jirrilaxxaw u ġeneralment mhumiex sikuri għall-ikel{{en: food-safe}}”, Digitalfire jgħid li r-ram “jista’ jagħmel glejż li jirrilaxxa metalli; ittestjah”, u Glazy ma għadux jirrakkomanda glejżijiet taċ-ċomb għal oġġetti għall-użu ta’ kuljum.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Glejż għal ġewwa**{{en: liner glaze}} huwa glejż stabbli, normalment trasparenti jew abjad, għall-uċuħ li jmissu l-ikel. Fil-fehma tagħna, glejż bħal dan mingħajr kulurant{{en: colorant}}, barju, ċomb jew litju, li jdub għal kollox, ma jagħmilx xegħir{{en: craze}} u jifflaħ għall-użu, huwa l-għażla b’inqas riskju. Inqas riskju mhux prova.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-Il-**formuli tal-limiti**{{en: limit formulas}} (Digitalfire jippreferi **formuli tal-mira**{{en: target formulas}}) jagħtu firxiet tipiċi tal-formula ta’ Seger{{en: unity formula}} għal glejżijiet stabbli f’kon{{en: cone}} partikolari: il-miri ta’ Digitalfire għall-kon 6 ipoġġu l-alumina f’0.285–0.64 u s-silika{{en: silica}} f’2.4–4.7. Jgħinuk tasal għal kimika tajba iżda ma jippruvaw xejn; Digitalfire jevita l-kelma “limitu” għax tagħti x’tifhem li l-glejżijiet ġewwa l-firxiet “b’xi mod huma sikuri”. L-għodod ta’ Glazecalc biex tibdel riċetta jgħidulek meta r-riċetta l-ġdida taqbeż limitu rakkomandat, bħal ħafna boron fil-kon 6, u x’inhu probabbli li jagħmel il-glejż.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Il-limiti legali jvarjaw minn pajjiż għal ieħor. It-tabella turi dawk ta’ fejn tgħix, fl-unitajiet tal-liġi stess; agħżel pajjiż jew reġjun ieħor biex tqabbel.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-Fl-Istati Uniti, oġġetti taċ-ċeramika dekorattivi li jidhru li jistgħu jintużaw mal-ikel jiġu ttrattati bħala oġġetti għall-ikel. Dan ma japplikax jekk ikollhom tikketta adeżiva u avviż permanenti ffurmat jew moħmi fuq il-qiegħ tagħhom, bħal “Not for Food Use. May Poison Food”, jew jekk ikollhom toqba li tgħaddi minn ġol-wiċċ li jmiss l-ikel. L-UE tistabbilixxi limiti għaċ-ċomb u għall-kadmju fid-Direttiva 84/500/KEE, u r-Renju Unit iżomm l-istess ċifri fil-liġi tiegħu stess. Mid-29 ta’ Mejju 2026, il-Pajjiżi l-Baxxi, il-Belġju u l-Lussemburgu jippermettu madwar 130 sa 150 darba inqas ċomb, u madwar 15-il darba inqas kadmju. L-Awstralja tistabbilixxi limiti għall-oġġetti importati; ma sibna l-ebda limitu uffiċjali għall-oġġetti magħmula fl-Awstralja jew fi New Zealand.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### L-ittestjar
+### Testing
 
-L-FDA tgħid li l-kits tal-ittestjar bi swab għall-użu fid-dar jistgħu juru ċomb li jista’ jiġi rilaxxat, iżda Ceramics New Zealand iwissi li l-pinen tat-test mhumiex magħmula għaċ-ċeramika u jagħtu riżultati pożittivi foloz. Ħu riżultat pożittiv bħala raġuni biex tieqaf tuża l-biċċa, u riżultat negattiv bħala li ma jipprova xejn. Test tal-laboratorju tar-rilaxx tal-metalli fuq il-biċċa moħmija (ASTM C738 fl-Istati Uniti; EN 1388 jew ISO 6486 fl-Ewropa) huwa t-tweġiba vera.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> “Sikur għall-ikel” ifisser li dan il-glejż, fuq dan it-tafal, moħmi sa dan il-kon f’dan il-forn u applikat b’dan il-mod, jirrilaxxa inqas mil-limiti legali. Glazecalc jista’ jgħinek tibni glejż stabbli, u l-funzjoni **Ibdel iċ-ċomb** tista’ terġa’ tibni riċetta antika taċ-ċomb mingħajr ċomb, iżda l-ebda kalkulatur ma jista’ jiċċertifika biċċa. Test tal-biċċa moħmija biss jista’ jagħmel dan.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Il-gravità speċifika u t-tqegħid tal-glejż {#application}
 
@@ -462,7 +476,7 @@ Xegħir (crazing)
 Xogħol tas-sħana (heatwork)
 : L-effett tat-temperatura u tal-ħin flimkien f’forn; dak li jkejlu l-koni.
 
-## Sorsi {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +486,7 @@ Xogħol tas-sħana (heatwork)
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (permezz ta’ The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -483,6 +497,14 @@ Xogħol tas-sħana (heatwork)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ Xogħol tas-sħana (heatwork)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

@@ -3,7 +3,7 @@
 // (client/public/i18n/guides/learn-with-john-britt/en.md): each section headed
 // "Unit N: ..." is a unit, with his videos (### Watch, links to YouTube by the
 // titles he gave them), the Glazecalc guide sections to read (### Read) and
-// the exercises (### Try). A unit whose warning points to the safe mixing
+// the exercises (### Try) and questions to check what was learned (### Check). A unit whose warning points to the safe mixing
 // guide is lab work. His videos are only ever linked, never copied or retold.
 import { BRITT_GUIDE, BRITT_RULE, readGuide } from './guides.ts';
 
@@ -27,6 +27,8 @@ export interface CourseUnit {
   /** The Glazecalc guide sections to read, by guide and section id. */
   reads: Array<{ guide: string; section: string; title: string }>;
   exercises: string[];
+  /** Questions to check what was learned (### Check), answered from the guide sections, not from his videos. */
+  checks: string[];
   /** Weighing, mixing or firing: the safe mixing guide comes first. */
   lab: boolean;
   /** For lab work, the safe mixing section its warning points to first ("habits" when it names none). */
@@ -88,6 +90,10 @@ export const courseUnits = (): CourseUnit[] => {
       exercises: part(section.text, 'Try')
         .split('\n')
         .map((line) => /^\d+\.\s+(.*)$/.exec(line.trim())?.[1])
+        .filter((line): line is string => !!line),
+      checks: part(section.text, 'Check')
+        .split('\n')
+        .map((line) => /^-\s+(.*)$/.exec(line.trim())?.[1])
         .filter((line): line is string => !!line),
       lab,
       ...(lab ? { safety: mixing.find((link) => link.section)?.section ?? 'habits' } : {})

@@ -3,20 +3,20 @@ title: Глазиране от основните принципи
 lead: От какво се състои глазурата, как пещта я превръща в стъкло и обяснение на всяка дума, която ще срещнете в рецепта, на торба със суровина или в таблица на конусите.
 ---
 
-## Какво е глазура {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-**Глазурата**{{en: glaze}} е тънък слой стъкло, сплавен със съда. Glazy, отворената база данни с рецепти за глазури, я определя като „стъклена формула, настроена да се стопи и да се слее с глината при определени температури“. Нанася се като слой прах и в пещта се стапя в стъкловидно покритие, което запечатва глината, така че е по-малко вероятно съдът да пропуска, да хваща петна или да се износва. При максималната температура на изпичането стопилката реагира и с глината, като често образува междинен слой, който здраво свързва глазурата с нея. При фаянса{{en: earthenware}} (нискотемпературна, пореста керамика) глазурата стои отгоре като отделен слой; при каменината{{en: stoneware}} тя се вплавя в черепа{{en: body}}.
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-Рецептата изброява суровини като фелдшпат{{en: feldspar}}, калциев карбонат{{en: whiting}} (креда) и каолин{{en: kaolin}}. В пещта част от всяка излиза като газ (вода или въглероден диоксид), а останалото се превръща в **оксиди**: съединения на химичен елемент с кислород, като силициев диоксид{{en: silica}} (SiO₂) или калциев оксид (CaO). Изпеченото стъкло се състои от оксиди, затова керамиците описват глазурата чрез тях. Всеки оксид изпълнява една от три роли.
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- **Силициевият диоксид** (SiO₂) е **стъклообразувателят**{{en: glass former}}: той изгражда стъклото. Чистият силициев диоксид се топи над {{3100 °F; 1700 °C}}, далеч над възможностите на керамичната пещ, а глазурата с много силициев диоксид като цяло е по-устойчива.
-- **Топителите**{{en: fluxes}} понижават температурата на топене до такава, каквато пещта може да достигне. **Алкалните оксиди**, означавани с **R₂O**, са оксидите на натрия, калия и лития (Na₂O, K₂O, Li₂O); те действат от конус{{en: cone}} 06 чак до средните и високите температури. **Алкалоземните оксиди**, означавани с **RO**, са оксидите на калция, магнезия, бария и стронция (CaO, MgO, BaO, SrO), като към тях се причислява и цинковият оксид (ZnO); те действат най-добре от конус 5 до конус 10. R означава кой да е метал от съответната група.
-- **Алуминиевият оксид** (Al₂O₃) е **стабилизаторът**{{en: stabilizer}}. Той прави стопилката по-вискозна, за да остава по вертикалните стени, и придава твърдост и устойчивост. Glazy предупреждава, че при твърде малко алуминиев оксид „глазурата Ви може да се стича; твърде много може да направи стопилката толкова вискозна, че тя да стане матова“. Алуминиевият оксид идва главно от глината и фелдшпата.
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**Борът** (B₂O₃) размива границата. Химиците го причисляват към стъклообразувателите, но при температурите в ателието той действа като топител и керамиците се отнасят към него като към топител. При конус 5–6 той е от решаващо значение, а при високотемпературно изпичане не е нужен. (Конусите, с които керамиците означават изпичането, са обяснени по-долу.)
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> Ето един начин да го запомните: силициевият диоксид е стъклото, топителите му позволяват да се стопи при температура, която пещта Ви може да достигне, а алуминиевият оксид го сгъстява, за да остане там, където сте го нанесли.
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## Глина, покрития и двете изпичания {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Label: Диапазони на изпичане
 
 Извън Северна Америка доставчиците често посочват °C вместо конус. Херман Зегер (Hermann Seger) е създал съвременния конус, използван за първи път в Берлин през 1886 г., а във Великобритания има и собствени конуси Staffordshire; не следва да приемате, че номерата им съвпадат с тези на Orton, а таблица за превръщането им не открихме. Конусите са разгледани по-подробно в „[Изпичане в обикновена пещ](/guides/firing)“.
 
-## От рецептата до формулата на Зегер {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**Рецептата** изброява суровините по тегло, обикновено преизчислени така, че базисната глазура{{en: glaze}} да дава общо 100. **Добавките** (оцветители, помътнители и суспендиращи добавки) се добавят свръх тези 100, обикновено като процент свръх базисната глазура. За да видят какво всъщност представлява глазурата, керамиците превръщат рецептата във **формула на Зегер**{{en: unity molecular formula}} (**UMF**, молекулна формула, приведена към единица), наречена на Херман Зегер, който пръв използва подредбата ѝ в три колони.
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: От рецептата до формулата на Зегер: примерът на Glazy стъпка по стъпка
-Label: От рецептата до формулата на Зегер
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| Стъпка                    | Какво се прави                                                                                                                           | В примера                                                                                                                                                                |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1. Рецепта                | Суровините по тегло, преизчислени към 100                                                                                                | Фелдшпат{{en: feldspar}} 40%, наред с други суровини                                                                                                                     |
-| 2. Оксиден състав         | Като етикета с хранителните стойности: оксидите на всяка суровина се сумират в тегловни проценти, а газовете отпадат                     | Фелдшпатът съдържа 64,8% силициев диоксид{{en: silica}}, така че неговите 40% внасят 25,9% SiO₂. Изпечената глазура съдържа 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
-| 3. Молове                 | Теглата се превръщат в **молове**, тоест брой молекули, защото „грамовете могат да подведат, тъй като някои оксиди са по-тежки от други“ | 60,1 g SiO₂ са един мол, така че 67,4 g са около 1,12 мола                                                                                                               |
-| 4. Привеждане към единица | Всичко се дели на сумата на топителите, така че топителите да дават общо 1                                                               | Топителите са общо 0,303; след делението се получава K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                           |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-[Страницата за рецепти](/recipe) в Glazecalc извършва и четирите стъпки, докато въвеждате, и показва резултата в три колони: топители{{en: fluxes}} (R₂O и RO), които дават общо 1; стабилизатори{{en: stabilizers}} (R₂O₃: алуминиев оксид, като борът често се поставя тук); и стъклообразуватели{{en: glass formers}} (RO₂: силициев диоксид). „Привеждането към единица е просто инструмент за мащабиране“, казва Glazy: две рецепти, направени от различни суровини, но с една и съща формула на Зегер, „се държат почти еднакво след изпичане“. Така че 1 е обща мярка за сравнение, а не количество, което претегляте. Digitalfire добавя, че методът „не работи толкова добре при по-ниски температури“, където борът не е обикновен топител, и че формулите на Зегер са „сравнителни и е най-добре да се разглеждат в контекст“. Функцията **Сравни** подрежда формулите на две рецепти една до друга, оксид по оксид.
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### Съотношение силициев диоксид към алуминиев оксид
+### The silica to alumina ratio
 
-Най-полезното отделно число е **съотношението силициев диоксид към алуминиев оксид**{{en: silica to alumina ratio}}: силициевият диоксид, разделен на алуминиевия оксид. В примера 3,70 ÷ 0,41 е около 9.
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: Какво подсказва съотношението силициев диоксид към алуминиев оксид (Glazy)
-Label: Съотношение SiO₂ към Al₂O₃
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-| Съотношение | Тълкуване на Glazy                                     |
-| ----------: | ------------------------------------------------------ |
-|     Около 9 | Подсказва лъскава стопилка, ако има достатъчно топлина |
-|         5–7 | Типично за много стабилни глазури за каменина          |
-|         3–5 | Глазурата може да е матова или недопечена              |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-Съотношение 5–7 само по себе си не предсказва нито лъскава, нито матова повърхност: топителите, борът и конусът изместват границата. Glazy дава типично съотношение на топителите за стабилни глазури от 0,2 R₂O с 0,8 RO до 0,3 R₂O с 0,7 RO. Повече алкални оксиди правят стопилката по-течлива и повишават термичното ѝ разширение{{en: expansion}}, а оттам и риска от напукване на глазурата{{en: crazing}}.
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### Загуба при накаляване
+### Loss on ignition
 
-**Загубата при накаляване**{{en: loss on ignition}} (**LOI**) е теглото, което суровината губи в пещта, когато вода, въглероден диоксид, органични вещества или сяра излизат като газ. Изпечената глазура няма такава загуба, затова формулата на Зегер не я включва.
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: Типична загуба при накаляване (Digitalfire)
-Label: Загуба при накаляване
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| Суровина                                         | Типична загуба                                                                  |
-| ------------------------------------------------ | ------------------------------------------------------------------------------- |
-| Калциев карбонат{{en: whiting}} (креда), доломит | Над 40%, предимно въглероден диоксид: 100 g калциев карбонат отделят около 45 g |
-| Литиев карбонат                                  | Около 60%                                                                       |
-| Бариев карбонат, Gerstley Borate                 | Над 20%                                                                         |
-| Каолин{{en: kaolin}}                             | Около 12%, главно вода, свързана в кристалите му                                |
-| Фелдшпати                                        | Под 1%                                                                          |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-Газът, който излиза, след като глазурата е започнала да се топи, трябва да премине през нея на мехурчета и причинява, по думите на Digitalfire, „мехурчета, мехури, иглен бод, събиране на глазурата“. Талкът продължава да отделя газове до около {{1650 °F; 899 °C}}. Помагат фритите{{en: frits}}, **калцинираните** суровини (предварително нагрети, за да се отделят газовете им) и промените в изпичането.
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-По-старите книги правят тези сметки на ръка, с **молекулна маса** (масата на един мол от суровина или оксид) и **еквивалентна маса** (масата на суровината, която внася един мол от даден оксид). По нашите сметки около 100 g калциев карбонат внасят един мол, 56 g, калциев оксид. Калкулаторът се справя и с двете.
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## Фрити и суровини {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### Фрити
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-**Фритата**{{en: frit}} е стъкло, произведено във фабрика: минерали, които са стопени, рязко охладени във вода и смлени. Фритоването прави разтворимите суровини, като боракса, неразтворими, затваря токсичните оксиди, като оловото и бария, в стабилно стъкло, дава по-еднородна суровина от нефритованите минерали и отделя газовете, затова фритованите глазури{{en: glazes}} са „с много по-малко дефекти“ (Digitalfire). Фритите освен това се топят рано: натриевата фрита действа още при конус{{en: cone}} 06, докато фелдшпатът{{en: feldspar}} „едва започва да омеква при конус 6“. Те са по-скъпи, имат нужда от глина, за да остават в суспензия (примерът на Digitalfire е 85% фрита с 15% глина), и са „теоретично неразтворими, но на практика не са“.
+::stull-chart
 
-Северноамериканските фрити се назовават по производител и номер: Ferro Frit 3134 (Ferro днес е Vibrantz) участва в около 22% от публичните рецепти в Glazy. Британските рецепти по-често посочват общи видове фрити, като стандартната бораксна фрита.
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### Често използвани суровини
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: Често използвани суровини за глазури и какво внасят
-Label: Често използвани суровини
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| Суровина (други имена)                                                       | Внася                  | Бележки                                                                                                                                                                                         |
-| ---------------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Силициев диоксид{{en: silica}} (кремък, кварц)                               | SiO₂                   | За глазури използвайте 325 меша, много фино смилане                                                                                                                                             |
-| Каолин{{en: kaolin}} (във Великобритания: china clay; в Австралия: Eckalite) | Al₂O₃, SiO₂            | Основният източник на алуминиев оксид; освен това поддържа глазурата в суспензия                                                                                                                |
-| Ball clay (пластична бяла глина)                                             | Al₂O₃, SiO₂            | По-пластична от каолина, с повече желязо и органични вещества                                                                                                                                   |
-| Калиев фелдшпат, натриев фелдшпат, нефелинов сиенит{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Топители със собствен алуминиев оксид и силициев диоксид. Нефелиновият сиенит е силен топител при ниски и средни температури. Простото „фелдшпат“ в стара рецепта може да означава всеки от тях |
-| Калциев карбонат{{en: whiting}} (креда)                                      | CaO                    | Основният калциев топител; отделя въглероден диоксид                                                                                                                                            |
-| Воластонит                                                                   | CaO, SiO₂              | Калций без въглеродния диоксид                                                                                                                                                                  |
-| Доломит, талк                                                                | MgO, с CaO или SiO₂    | Копринено матови повърхности; по-ниско термично разширение                                                                                                                                      |
-| Цинков оксид                                                                 | ZnO                    | Блясък и кристали; твърде много може да причини събиране на глазурата{{en: crawling}}                                                                                                           |
-| Борни фрити, Gerstley Borate, колеманит                                      | B₂O₃                   | Незаменими от конус 06 до конус 6; фритите са „по-еднородни и по-слабо разтворими от нефритованите борати“                                                                                      |
-| Литиев карбонат                                                              | Li₂O                   | Топител с ниско термично разширение; скъп, затова се използва пестеливо                                                                                                                         |
-| Стронциев карбонат                                                           | SrO                    | По-малко токсичният заместител на бария                                                                                                                                                         |
-| Бариев карбонат                                                              | BaO                    | Токсичен в суров вид; глазурите с много барий могат да отделят метали{{en: leach}}                                                                                                              |
-| Бентонит                                                                     | Задържане в суспензия  | Много фина глина, обикновено 1–3%, против утаяване                                                                                                                                              |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> Суровините за глазури са фини прахове. Прахът от силициев диоксид уврежда белите дробове, отначало без симптоми, а някои суровини, като бариевия карбонат и литиевия карбонат, са отровни при поглъщане. Работете с праховете внимателно, почиствайте мокро и носете добре прилягащ респиратор (филтрираща полумаска), когато работите със сухи материали. Как, обясняват „[Безопасно смесване и вентилация](/guides/safe-mixing)“ и „[Не тровете семейството си](/guides/home-safety)“.
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### Регионални наименования
+### Regional names
 
-- **Каолинът** във Великобритания се нарича **china clay**; австралийските доставчици го продават като Eckalite.
-- **Кремъкът** (flint) е по-старо британско наименование на силициевия диоксид. Британските доставчици още продават **калциниран кремък** (calcined flint) като отделен продукт, така че „flint“ в британска рецепта вероятно означава калциниран кремък, а в американска – вероятно кварцово брашно. И двете се продават като източници на силициев диоксид; проверете химичния анализ.
-- **China stone** и **Cornish stone** (Cornwall stone) са една и съща суровина, корнуолски камък, сродна на фелдшпата.
-- В английските рецепти **whiting** е калциев карбонат; германските доставчици го наричат Kreide (креда).
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> Преценявайте суровината по оксидите, които внася, а не по името ѝ. Glazecalc работи точно така: можете да въведете химичния анализ от доставчика си на [страницата за суровините](/material), а **Пробвай съвременни суровини и сравни**, **Предложи количества и сравни** и **Пресъздай от моя запас** сравняват оксидите след изпичане, а не имената.
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-Суровините също се променят. Производството на фелдшпата Custer спря през 2023 г. Оригиналната мина на Gerstley Borate е затворена около 1999–2000 г.; Laguna все още продава продукт с това име, а Gillespie Borate е основният заместител. Източниците се разминават дали Gillespie замества Gerstley Borate фунт за фунт (производителят му и Potclays казват „да“, Digitalfire и други – „не“), затова сравнете двете в Glazecalc и после изпробвайте малък замес.
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## Оцветители и помътнители {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**Оцветителят**{{en: colorant}} е метален оксид или карбонат, който оцветява глазурата{{en: glaze}}; **керамичният пигмент**{{en: stain}} е фабрично произведен оцветител, по-стабилен и еднороден от суровите оксиди. Оцветителите обикновено са под 5% от базисната глазура, много от тях под 1%, а карбонатът има около половината от силата на съответния оксид.
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: Често използвани оцветители, в % свръх базисната глазура
-Label: Често използвани оцветители
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| Оцветител                    | Обичайно начално количество                   | Цветове и бележки                                                                                                                                                                                                           |
-| ---------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Кобалт                       | 0,1–2% (източниците се разминават)            | Синьо, и то много силно; към виолетово, когато базисната глазура съдържа магнезий                                                                                                                                           |
-| Желязо                       | 0,5–10%                                       | Кафяви, светлокафяви и червеникави тонове при окислително изпичане{{en: oxidation}}; при редукционно{{en: reduction}} ½–2% дава селадон, а 5–6% – тенмоку. Топител е, затова в голямо количество кара глазурата да се стича |
-| Мед                          | 1–3%                                          | Зелено или тюркоазено при окислително изпичане, червено при редукционно. Може да накара глазурата да отделя метали{{en: leach}}                                                                                             |
-| Хром                         | От под 0,5% до 2% (източниците се разминават) | Зелено; кафяво, ако базисната глазура съдържа цинк, розово с калай                                                                                                                                                          |
-| Манган                       | 2–10%                                         | Кафяви и виолетови тонове                                                                                                                                                                                                   |
-| Рутил                        | Около 2–5%                                    | Петнист, преливащ се цвят; над около 5% – грапава или матова повърхност                                                                                                                                                     |
-| Търговски керамични пигменти | 2–12%                                         | 2–4% за светли нюанси, 5–8% за средни тонове, 10–12% за наситени цветове                                                                                                                                                    |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-Количествата кобалт и хром наистина са спорни. Glazy казва, че 0,1% кобалт стига за синьо; Glendale Community College дава ½–2% или ½–3% в зависимост от атмосферата в пещта; Бърди Бун (Birdie Boone) в Pottery Making Illustrated казва 3% или по-малко. За хрома Бун казва под 0,5%, а Glendale – 2–3%. Сигурният път е да започнете с малко и да направите **серия проби**{{en: line blend}}: ред пробни плочки{{en: test tiles}}, при които една съставка се увеличава стъпка по стъпка от малко до много.
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-Базисната глазура променя цвета. Лъскавата прозрачна базисна глазура дава най-ярък цвят; полуматовите и матовите, обикновено с повече алуминиев оксид, го приглушават. Магнезият измества кобалта към виолетово, цинкът прави хрома кафяв, а хромът с калай дава розово.
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### Помътнители
+### Opacifiers
 
-**Помътнителят** прави глазурата **покривна** (непрозрачна) и скрива глината; **прозрачната** глазура я оставя да се вижда.
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: Помътнители
+Table: Opacifiers
 
-| Помътнител                                               | Обичайно количество       | Бележки                                                                                               |
-| -------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Циркониев силикат (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% за пълна покривност | По-евтиният избор; марките са една и съща суровина, смляна до различна едрина                         |
-| Калаен оксид                                             | Около 5–7% (наша оценка)  | Скъп; помътнява слабо при редукционно изпичане                                                        |
-| Титанов диоксид                                          | Над 2%                    | Копринена, полупрозрачна помътненост; при 10% и повече – матова, релефна повърхност с видими кристали |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## Съвместимост на глазурата и дефекти {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-И глината, и глазурата{{en: glaze}} се разширяват при нагряване и се свиват при охлаждане, всяка в своя степен: това е нейното **термично разширение**{{en: thermal expansion}}. **Съвместимостта на глазурата с черепа**{{en: glaze fit}} показва доколко двете си съответстват. При добра съвместимост глазурата е под лек натиск от страна на черепа; според Digitalfire лекият натиск укрепва изделията, а твърде силният може да ги отслаби и дори да ги напука.
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### Напукване и отлюспване на глазурата
+### Crazing and shivering
 
-**Напукването на глазурата**{{en: crazing}} е мрежа от фини пукнатини. Термичното разширение на глазурата е по-голямо от това на черепа, затова при охлаждане тя се свива повече, опъва се и се напуква, обикновено заради твърде много натрий и калий (Na₂O, K₂O). То може да се появи и по-късно, при употреба, след многократно рязко охлаждане, например при контакт със студени течности. Когато е желано, както при раку, се нарича **кракле**. Digitalfire казва, че „в 95% от случаите решението е да се коригира термичното разширение на глазурата“; бавното охлаждане само отлага напукването. Тестът на Digitalfire: загрейте изделието до около {{300 °F; 149 °C}}, потопете го в ледена вода и натрийте повърхността с флумастер, за да проличат пукнатините.
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-Източниците се разминават за първата мярка. Glazy предлага да се добави силициев диоксид или алуминиев оксид; Digitalfire отговаря, че допълнителният силициев диоксид „само разрежда KNaO“ (натрия и калия); Линда Блумфийлд (Linda Bloomfield) добавя бор или намалява фелдшпата, като променя по една суровина. Нашият съвет: в [калкулатора за рецепти](/recipe) заменете част от натрия и калия с топители{{en: fluxes}} с по-ниско термично разширение (бор, литий, магнезий, калций), проверете промяната с функцията **Сравни** и потвърдете с теста с ледена вода.
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-**Отлюспването на глазурата**{{en: shivering}} е обратното: термичното разширение на глазурата е много по-ниско от това на черепа, затова тя е под твърде силен натиск и се отлюспва от устията и ръбовете. Digitalfire предупреждава, че люспите може да са остри като бръснач и може да бъдат погълнати, а Glazy нарича отлюспването „още по-опасно от напукването при съдовете за храна и напитки“. Решението е глазура с по-високо термично разширение или маса с по-ниско термично разширение.
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> Не използвайте за храна или напитки изделия с напукана или отлюспена глазура. Източниците се разминават дали съдовете с напукана глазура могат да се почистват достатъчно добре (според един източник съдомиялната машина е достатъчна; друг нарича напуканите съдове за храна и напитки дефектни), затова заставаме на предпазливата страна.
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### Лъскава и матова повърхност
+### Gloss and matte
 
-**Лъскавата** повърхност отразява светлината и е гладка, **полуматовата** (сатенена) има приглушен блясък, а **матовата** е без блясък. Лъскавата повърхност изисква напълно стопено стъкло. Матовата може да се дължи на много алуминиев оксид (ниско съотношение силициев диоксид към алуминиев оксид{{en: silica to alumina ratio}}), на топители като калций, магнезий, барий или стронций, които образуват малки кристали при охлаждането на глазурата, или на недопичане.
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### Чести дефекти
+### Common defects
 
-Променяйте по едно нещо наведнъж и пазете пробните си плочки{{en: test tiles}}.
+Change one thing at a time, and keep your test tiles.
 
-Table: Чести дефекти на глазурата, обичайните им причини и първи мерки
-Label: Чести дефекти на глазурата
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| Дефект                                            | Как изглежда                                        | Чести причини                                                                                                                         | Първи мерки                                                                                                                             |
-| ------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Събиране на глазурата{{en: crawling}}             | Глазурата се събира на капки и оставя оголена глина | Прашен или мазен бисквит{{en: bisque}}; дебел слой с много глина, който се е напукал при съхненето; цинк, циркониев силикат или калай | Почистете бисквита; нанесете по-тънък слой; калцинирайте част от глината; добавете свързващо вещество, например лепило за глазура (CMC) |
-| Иглен бод{{en: pinholing}}                        | Малки дупчици или вдлъбнатини                       | Газ от черепа или глазурата, след който повърхността не се е заляла; недопечена или вискозна глазура                                  | Задръжте на максималната температура около половин час; нанесете по-тънък слой; по-малко цинк или рутил                                 |
-| Мехури                                            | Кратери с остри ръбове                              | Обикновено препичане; много дебели слоеве; летливи топители над около {{2192 °F; 1200 °C}}                                            | Изпичайте при по-ниска температура; нанесете по-тънък слой. Острите ръбове правят съдовете за храна и напитки опасни                    |
-| Стичане                                           | Глазурата се стича върху плочата                    | Твърде малко алуминиев оксид; твърде дебел слой, например където обливанията се застъпват; много желязо                               | Нанесете по-тънък слой; добавете алуминиев оксид; спирайте глазурата доста над дъното                                                   |
-| Пукане при охлаждане или нагряване{{en: dunting}} | Пукнатини в съда от охлаждане или нагряване         | Бързо охлаждане през кварцовия преход{{en: quartz inversion}}, {{1063 °F; 573 °C}}; неравномерни стени; лоша съвместимост             | Минавайте бавно през {{1063 °F; 573 °C}} и при нагряване, и при охлаждане; равномерни стени                                             |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## Безопасност при контакт с храни {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Отделянето на метали**{{en: leaching}} е разтварянето на метали от изпечената глазура{{en: glaze}} в храната или напитката, и една глазура може да изглежда безупречно и пак да отделя метали. При законово установените изпитвания изпеченото изделие се накисва в киселинен разтвор и се измерват отделените количества олово и кадмий.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Безоловна не означава подходяща за контакт с храни
+### Lead-free is not the same as food-safe
 
-Правилата в САЩ, ЕС, Обединеното кралство и Австралия ограничават оловото и кадмия, които изпеченото изделие отделя, а не това, което съдържа глазурата. „Безоловна“ премахва една опасност; това не е оценка на безопасността при контакт с храни. И други оксиди се отделят: Glazy предупреждава, че глазурите с много барий „могат да отделят метали и като цяло не са подходящи за контакт с храни“, Digitalfire казва, че медта „може да направи глазурата склонна към отделяне на метали; изпитайте я“, а Glazy вече не препоръчва оловни глазури за съдове за храна и напитки.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Вътрешната глазура**{{en: liner glaze}} е стабилна, обикновено прозрачна или бяла глазура за повърхностите в контакт с храна. Според нас по-малко рискованият избор е глазура без оцветител, барий, олово или литий, която се стапя напълно, не се напуква и е износоустойчива. По-малкият риск не е доказателство.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Граничните формули**{{en: limit formulas}} (Digitalfire предпочита **целеви формули**, target formulas) дават типичните диапазони във формулата на Зегер за стабилни глазури при даден конус{{en: cone}}: целевите стойности на Digitalfire за конус 6 са 0,285–0,64 за алуминиевия оксид и 2,4–4,7 за силициевия диоксид. Те Ви насочват към добра химия, но не доказват нищо; Digitalfire избягва думата „limit“ (граница), защото тя внушава, че глазурите в тези диапазони „по някакъв начин са безопасни“. Инструментите на Glazecalc за промяна на рецепта показват кога новата рецепта надхвърля препоръчителна граница, например много бор при конус 6, и какво вероятно ще направи глазурата.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Законовите гранични стойности се различават в отделните държави. Таблицата показва тези, които важат там, където живеете, в мерните единици на самия закон; изберете друга държава или регион, за да сравните.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-В САЩ декоративните керамични изделия, които изглеждат годни за храна, се третират като съдове за храна, освен ако не носят залепен етикет и трайно предупреждение, релефно оформено или изпечено върху дъното им, например „Not for Food Use. May Poison Food“ (не е за храна, може да отрови храната), или имат дупка през повърхността, която влиза в контакт с храната. ЕС определя граничните стойности за олово и кадмий в Директива 84/500/ЕИО на Съвета, а Обединеното кралство запазва същите стойности в собственото си законодателство. От 29 май 2026 г. Нидерландия, Белгия и Люксембург допускат около 130 до 150 пъти по-малко олово и около 15 пъти по-малко кадмий. Австралия определя гранични стойности за вносните изделия; не открихме официална гранична стойност за изделията, произведени в Австралия или Нова Зеландия.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Изпитване
+### Testing
 
-FDA казва, че домашните тестове с тампон могат да покажат олово, което се отделя, но Ceramics New Zealand предупреждава, че тестовите писалки не са предназначени за керамика и дават фалшиво положителни резултати. Приемайте положителния резултат като причина да спрете да използвате изделието, а отрицателния – като нещо, което не доказва нищо. Истинският отговор дава лабораторното изпитване на изпеченото изделие за отделяне на метали (ASTM C738 в САЩ; EN 1388 или ISO 6486 в Европа).
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> „Подходяща за контакт с храни“{{en: food safe}} означава, че тази глазура, върху тази маса, изпечена до този конус в тази пещ и нанесена по този начин, отделя по-малко от законовите гранични стойности. Glazecalc може да Ви помогне да съставите стабилна глазура, а **Замени оловото** може да преработи стара оловна рецепта без олово, но никой калкулатор не може да удостовери, че съдът е безопасен. Това може само изпитване на изпеченото изделие.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Относително тегло и нанасяне {#application}
 
@@ -462,7 +476,7 @@ Ball clay (пластична бяла глина)
 R₂O и RO
 : Алкалните топители (Na₂O, K₂O, Li₂O) и алкалоземните топители (CaO, MgO, BaO, SrO, заедно с ZnO).
 
-## Източници {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +486,7 @@ R₂O и RO
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (в сайта на The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -483,6 +497,14 @@ R₂O и RO
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,5 @@ R₂O и RO
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

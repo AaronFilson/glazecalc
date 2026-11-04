@@ -243,5 +243,19 @@
     "loading": "Cargando la biblioteca…",
     "failed": "No se pudo cargar la biblioteca. Inténtalo de nuevo más tarde.",
     "choosePrompt": "Elige tu país o región para ver qué se vende allí."
+  },
+  "stull": {
+    "title": "Gráfico de Stull: sílice frente a alúmina en la fórmula unitaria",
+    "regions": {
+      "unfused": "sin fundir",
+      "matte": "mate",
+      "semi-matte": "semimate",
+      "bright": "brillante",
+      "underfired": "poco cocido",
+      "crazed": "cuarteado"
+    },
+    "keyBright": "Línea punteada: donde los esmaltes de Stull fueron más brillantes.",
+    "keyCrazed": "Rayado: donde se cuartearon.",
+    "note": "Una guía, no una predicción. R. T. Stull (Transactions of the American Ceramic Society, 1912) coció a cono 11 con los fundentes fijos en 0.3 K₂O y 0.7 CaO; otros fundentes y otras cocciones desplazan las regiones, y un mate poco cocido puede aparecer como brillante. Las regiones son como las dibuja Glazy."
   }
 }

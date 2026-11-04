@@ -3,20 +3,20 @@ title: 從基本原理認識釉藥
 lead: 釉藥由什麼組成、窯如何將其變成玻璃，以及您會在釉方、原料包裝袋或測溫錐對照表上遇到的每個詞，都有說明。
 ---
 
-## 釉藥是什麼 {#what-a-glaze-is}
+## What a glaze is {#what-a-glaze-is lang=en}
 
-**釉藥**{{en: glaze}}是熔合在陶器上的一層薄薄的玻璃。開放的釉方資料庫 Glazy 稱釉藥是「一種經過調整的玻璃配方，能在特定溫度下熔化並熔合到黏土上」。釉藥以粉末層的形式上到作品上，在窯中熔化成玻璃質的釉層，封住黏土，讓作品比較不容易滲漏、染色或磨損。燒到最高溫時，熔融的釉也會與黏土起反應，常在兩者之間形成一層，把釉牢牢固定住。在陶器{{en: earthenware}}上，釉是獨立的一層，蓋在表面；在炻器{{en: stoneware}}上，釉則熔入坯體{{en: body}}。
+A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
 
-釉方列出的是原料，例如長石{{en: feldspar}}、碳酸鈣{{en: whiting}}和高嶺土。在窯中，每種原料有一部分會以氣體（水或二氧化碳）的形式離開，其餘的變成**氧化物**：元素與氧的化合物，例如二氧化矽{{en: silica}}（SiO₂）或氧化鈣（CaO）。燒成後的玻璃由氧化物組成，所以陶藝家用氧化物來描述一種釉。每種氧化物擔任三種角色之一。
+A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
 
-- **二氧化矽**（SiO₂）是**玻璃形成劑**{{en: glass former}}：構成玻璃本身。純二氧化矽的熔化溫度超過 {{3100 °F; 1700 °C}}，遠比陶藝窯的溫度高，而二氧化矽含量高的釉一般比較耐久。
-- **助熔劑**{{en: flux}}把熔點降到窯能達到的溫度。**鹼金屬**（寫作 **R₂O**）指鈉、鉀、鋰的氧化物（Na₂O、K₂O、Li₂O）；從 Orton 06 號測溫錐起，一路到中溫和高溫都有作用。**鹼土金屬**（寫作 **RO**）指鈣、鎂、鋇、鍶的氧化物（CaO、MgO、BaO、SrO），氧化鋅（ZnO）也歸在同一類；這些氧化物在 5 號到 10 號測溫錐之間效果最好。R 代表同一族中的任何一種金屬。
-- **氧化鋁**（Al₂O₃）是**安定劑**{{en: stabilizer}}。氧化鋁讓熔融的釉變得更黏稠，所以能留在直立的器壁上，並增加硬度與耐久性。Glazy 提醒：氧化鋁太少時，「您的釉可能會往下流；太多則會使熔融的釉變得黏稠，變成霧面」。氧化鋁主要來自黏土和長石。
+- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
+- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
+- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
 
-**硼**（B₂O₃）的歸類並不明確。化學家把硼歸為玻璃形成劑，但在陶藝窯的溫度下硼是助熔劑，陶藝家也把硼當助熔劑。硼在 5–6 號測溫錐時很關鍵，高溫燒成則不需要。（測溫錐是陶藝家為燒窯命名的方式，下文會說明。）
+**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is critical at cone 5–6 and not needed at high fire. (Cones, the way potters name a firing, are explained below.)
 
 > [!NOTE]
-> 可以這樣記：二氧化矽是玻璃，助熔劑讓玻璃能在您的窯達得到的溫度熔化，氧化鋁使釉變稠，留在您上釉的位置。
+> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
 
 ## 黏土、塗層與兩次燒成 {#clay-and-firings}
 
@@ -77,191 +77,205 @@ Label: 燒成範圍
 
 在北美以外，供應商常給的是 °C，而不是測溫錐號。現代的測溫錐由 Hermann Seger 發展出來，1886 年首次在柏林使用；英國也曾有自己的 Staffordshire 測溫錐。其號數不應假定與 Orton 相同，我們也沒有找到可以換算的對照表。[基本燒窯](/guides/firing)對測溫錐有更詳細的說明。
 
-## 從釉方到塞格式 {#unity-formula}
+## From recipe to unity formula {#unity-formula lang=en}
 
-**釉方**列出各種原料的重量，通常調整到基礎部分合計為 100。**添加物**（呈色劑、乳濁劑和懸浮劑）加在 100 之外，通常以基礎的百分比表示。為了看出釉藥的組成，陶藝家會把釉方換算成**塞格式**{{en: unity molecular formula}}（**UMF**，英文又稱 **Seger formula**，得名自最早使用其三欄排列的 Hermann Seger）。
+A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
 
-Table: 從釉方到塞格式：Glazy 的計算範例
-Label: 從釉方到塞格式
+Table: From recipe to unity formula: Glazy's worked example
+Label: From recipe to unity formula
 
-| 步驟          | 發生什麼事                                                                         | 範例中                                                                                                                 |
-| ------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1. 釉方       | 各原料的重量，調整到合計為 100                                                     | 長石 40%，另有其他原料                                                                                                 |
-| 2. 氧化物分析 | 如同營養標示：把各原料的氧化物以重量百分比加總，並捨去氣體                         | 這種長石含 64.8% 的二氧化矽，所以其中的 40% 帶來 25.9% SiO₂。燒成後的釉是 67.4% SiO₂、12.6% Al₂O₃、7.5% K₂O、12.5% CaO |
-| 3. 莫耳數     | 重量換成**莫耳**，即分子的數量，因為「公克可能造成誤導，因為有些氧化物比其他的重」 | 60.1 g 的 SiO₂ 是一莫耳，所以 67.4 g 約是 1.12 莫耳                                                                    |
-| 4. 塞格式     | 全部除以助熔劑的合計，使助熔劑合計為 1                                             | 助熔劑合計 0.303；相除後得到 K₂O 0.26、CaO 0.74、Al₂O₃ 0.41、SiO₂ 3.70                                                 |
+| Step              | What happens                                                                                                                 | In the example                                                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
+| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
+| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
 
-Glazecalc 的[配方計算](/recipe)頁面在您輸入時就完成這四個步驟，並用三欄顯示結果：助熔劑（R₂O 與 RO）合計為 1；安定劑（R₂O₃：氧化鋁，硼常歸在這裡）；以及玻璃形成劑（RO₂：二氧化矽）。Glazy 說：「歸一化只是一種縮放工具」：用不同原料做成、但塞格式相同的兩個釉方，「燒成後的表現幾乎相同」。所以這個 1 是共同的衡量基準，不是要秤的用量。Digitalfire 補充說，這個方法「在較低溫度下效果較差」，因為在低溫，硼不是單純的助熔劑；而且塞格式「是用來比較的，最好放在整體脈絡中看」。**比較**功能把兩個釉方的塞格式逐個氧化物並排對照。
+Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
 
-### 矽鋁比
+### The silica to alumina ratio
 
-最有用的單一數字是**矽鋁比**{{en: silica to alumina ratio}}：二氧化矽除以氧化鋁。範例中，3.70 ÷ 0.41 約是 9。
+The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
 
-Table: 矽鋁比的意義（Glazy）
-Label: 矽鋁比
+Table: What the silica to alumina ratio suggests (Glazy)
+Label: Silica to alumina ratio
 
-| 比值 | Glazy 的解讀                       |
-| ---: | ---------------------------------- |
-| 約 9 | 在熱量足夠時，顯示熔融的釉會偏亮面 |
-|  5–7 | 許多穩定的炻器釉的典型值           |
-|  3–5 | 可能是霧面，或燒成不足             |
+|   Ratio | Glazy's reading                           |
+| ------: | ----------------------------------------- |
+| About 9 | Suggests a glossy melt, given enough heat |
+|     5–7 | Typical of many stable stoneware glazes   |
+|     3–5 | May be matte or underfired                |
 
-比值落在 5–7，本身既不能預測亮面，也不能預測霧面：助熔劑、硼和測溫錐號都會移動這條界線。Glazy 給穩定的釉的典型助熔劑比例，是 R₂O 0.2 配 RO 0.8，最高到 R₂O 0.3 配 RO 0.7。鹼愈多，熔融的釉愈容易流動，熱膨脹也愈高，因此開片的風險也愈高。
+Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
 
-### 燒失量
+### Loss on ignition
 
-**燒失量**{{en: loss on ignition}}（**LOI**）是原料在窯中因水、二氧化碳、有機物或硫以氣體形式離開而損失的重量。燒成後的釉已不含這些，所以塞格式不計入。
+**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
 
-Table: 典型的燒失量（Digitalfire）
-Label: 燒失量
+Table: Typical loss on ignition (Digitalfire)
+Label: Loss on ignition
 
-| 原料                          | 典型燒失量                                        |
-| ----------------------------- | ------------------------------------------------- |
-| 碳酸鈣{{en: whiting}}、白雲石 | 超過 40%，主要是二氧化碳：100 g 碳酸鈣約放出 45 g |
-| 碳酸鋰                        | 約 60%                                            |
-| 碳酸鋇、Gerstley Borate       | 超過 20%                                          |
-| 高嶺土                        | 約 12%，主要是結合在結晶中的水                    |
-| 長石                          | 不到 1%                                           |
+| Material                              | Typical LOI                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 45 g |
+| Lithium carbonate                     | About 60%                                                                        |
+| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
+| Kaolin                                | About 12%, mainly water bound in its crystals                                    |
+| Feldspars                             | Under 1%                                                                         |
 
-釉開始熔化之後才離開的氣體，必須從釉中冒出來，造成（用 Digitalfire 的話說）「氣泡、起泡、針孔、縮釉」。滑石要到約 {{1650 °F; 899 °C}} 才停止放出氣體。**熔塊**{{en: frit}}、**鍛燒**的原料（事先加熱把氣體趕走），以及調整燒成方式，都有幫助。
+Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". Talc keeps giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
 
-較舊的書用手算這些，會用到**分子量**（一莫耳原料或氧化物的重量）和**當量**（提供一莫耳某種氧化物的原料重量）。依我們的計算，約 100 g 的碳酸鈣可提供一莫耳（56 g）的氧化鈣。計算工具兩者都會處理。
+Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
 
-## 熔塊與原料 {#materials}
+## Limits and the Stull chart {#stull-chart lang=en}
 
-### 熔塊
+A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
 
-**熔塊**{{en: frit}}是工廠製造的玻璃：礦物熔化後在水中驟冷，再磨成粉。熔塊化可使硼砂等可溶的原料變得不溶，把鉛、鋇等有毒的氧化物鎖在穩定的玻璃中，比天然礦物原料成分更一致，並把氣體趕走，所以用熔塊的釉「缺陷少得多」（Digitalfire）。熔塊也熔得較早：鈉熔塊在 06 號測溫錐就有作用，而長石「在 6 號測溫錐才剛開始軟化」。熔塊價格較高，需要黏土才能保持懸浮（Digitalfire 的例子是 85% 熔塊配 15% 黏土），而且熔塊「理論上不溶，但實際上並非如此」。
+::stull-chart
 
-北美的熔塊以製造商加編號稱呼：Ferro Frit 3134（Ferro 現為 Vibrantz）出現在 Glazy 約 22% 的公開釉方中。英國的釉方較常使用通用熔塊的名稱，例如標準硼砂熔塊。
+R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
 
-### 常見原料
+Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article fired a cone 6 glaze with boron that plotted as crazed, matte and underfired; in fact it was fully melted, satin and not crazed. Its authors say the chart does not work for glazes with a lot of boron. So use the regions as a guide, not a prediction.
 
-Table: 常見的釉藥原料及其提供的成分
-Label: 常見的釉藥原料
+The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
 
-| 原料（別名）                                             | 提供                   | 說明                                                                                                                         |
-| -------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 石英粉（燧石、石英）                                     | SiO₂                   | 釉藥請用 325 目，這是很細的研磨度                                                                                            |
-| 高嶺土{{en: kaolin}}（英國：china clay；澳洲：Eckalite） | Al₂O₃, SiO₂            | 主要的氧化鋁來源；也能讓釉保持懸浮                                                                                           |
-| 球狀黏土{{en: ball clay}}                                | Al₂O₃, SiO₂            | 可塑性比高嶺土高，含較多鐵和有機物                                                                                           |
-| 鉀長石、鈉長石、霞石正長石{{en: nepheline syenite}}      | K₂O, Na₂O, Al₂O₃, SiO₂ | 自帶氧化鋁與二氧化矽的助熔劑。霞石正長石是強力的低溫和中溫助熔劑。舊釉方中只寫「長石」{{en: feldspar}}時，可能指其中任何一種 |
-| 碳酸鈣                                                   | CaO                    | 主要的鈣系助熔劑；會放出二氧化碳                                                                                             |
-| 矽灰石                                                   | CaO, SiO₂              | 有鈣而沒有二氧化碳                                                                                                           |
-| 白雲石、滑石                                             | MgO，另有 CaO 或 SiO₂  | 柔滑的霧面表面；熱膨脹較低                                                                                                   |
-| 氧化鋅                                                   | ZnO                    | 帶來亮面與結晶；太多會造成縮釉                                                                                               |
-| 含硼熔塊、Gerstley Borate、硬硼酸鈣                      | B₂O₃                   | 從 06 號到 6 號測溫錐不可或缺；熔塊「比天然硼酸鹽成分更一致，也較不易溶」                                                    |
-| 碳酸鋰                                                   | Li₂O                   | 低膨脹的助熔劑；價格昂貴，所以少量使用                                                                                       |
-| 碳酸鍶                                                   | SrO                    | 毒性較低的鋇替代品                                                                                                           |
-| 碳酸鋇                                                   | BaO                    | 以原料形態使用時有毒；含鋇量高的釉可能會溶出                                                                                 |
-| 皂土（膨潤土）                                           | 懸浮                   | 極細的黏土，通常用 1–3%，防止沉澱                                                                                            |
+**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+
+## Frits and raw materials {#materials lang=en}
+
+### Frits
+
+A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+
+North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is in about 22% of Glazy's public recipes. UK recipes more often name generic frits, such as standard borax frit.
+
+### The common raw materials
+
+Table: Common glaze materials and what they supply
+Label: Common glaze materials
+
+| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
+| Kaolin (UK: china clay; Australia: Eckalite)      | Al₂O₃, SiO₂            | The main alumina source; also keeps glaze suspended                                                                                                   |
+| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
+| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
+| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
+| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
+| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
+| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
+| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
+| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
+| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
+| Bentonite                                         | Suspension             | A very fine clay, usually 1–3%, to stop settling                                                                                                      |
 
 > [!WARNING]
-> 釉藥原料是細粉。二氧化矽粉塵會傷害肺部，而且一開始沒有症狀；有些原料，例如碳酸鋇和碳酸鋰，吞下去會中毒。處理粉末時動作要輕，用濕的方式清理，乾式作業時要戴上密合的呼吸防護具。[安全調配與通風](/guides/safe-mixing)和[別讓家人中毒](/guides/home-safety)說明了做法。
+> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
 
-### 各地的名稱
+### Regional names
 
-- **高嶺土**在英國稱為 **china clay**；澳洲的供應商以 Eckalite 的名稱販售。
-- **燧石**{{en: flint}}是二氧化矽在英國的舊稱。英國供應商仍把**鍛燒燧石**當作獨立的產品販售，所以英國釉方中的「燧石」很可能指鍛燒燧石，美國釉方中的則很可能指磨細的石英。兩者都是作為二氧化矽來源販售的；請查看成分分析。
-- **China stone** 與 **Cornish stone**（Cornwall stone）是同一種原料，中文稱康沃爾石，與長石有關。
-- **碳酸鈣**在英語中稱為 whiting；德國的供應商稱之為 Kreide（白堊）。
+- **Kaolin** is **china clay** in the UK; Australian suppliers sell it as Eckalite.
+- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
+- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
+- **Whiting** is calcium carbonate; German suppliers call it Kreide (chalk).
 
 > [!NOTE]
-> 評斷一種原料，要看其提供的氧化物，而不是名稱。Glazecalc 就是這樣運作的：您可以在[原料](/material)頁面輸入供應商的成分分析，而**改用現行原料並比較**、**建議用量並比較**和**用現有原料調配**，比對的都是燒成後的氧化物，不是名稱。
+> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
 
-原料也會改變。Custer 長石已在 2023 年停產。原本的 Gerstley Borate 礦場約在 1999–2000 年關閉；Laguna 仍以這個名稱販售產品，而 Gillespie Borate 是主要的替代品。各資料對 Gillespie 能否與 Gerstley Borate 等量替換說法不一（其製造商和 Potclays 說可以，Digitalfire 等則說不行），所以請在 Glazecalc 中比較兩者，再試調一小批。
+Materials change, too. The US Geological Survey reports that the mine and plant that made Custer feldspar, in South Dakota, stopped work in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
 
-## 呈色劑與乳濁劑 {#color}
+## Colorants and opacifiers {#color lang=en}
 
-**呈色劑**{{en: colorant}}是讓釉藥產生顏色的金屬氧化物或碳酸鹽；**色料**{{en: stain}}是工廠製造的呈色劑，比未加工的氧化物更穩定、成分更一致。呈色劑通常不到基礎的 5%，許多不到 1%，而碳酸鹽的呈色力約是對應氧化物的一半。
+A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
 
-Table: 常見的呈色劑，以基礎的百分比表示
-Label: 常見的呈色劑
+Table: Common colorants, as a percent of the base
+Label: Common colorants
 
-| 呈色劑   | 常見的起始用量                    | 顏色與說明                                                                                                 |
-| -------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| 鈷       | 0.1–2%（各資料說法不一）          | 藍色，呈色力很強；基礎釉含鎂時偏向紫色                                                                     |
-| 鐵       | 0.5–10%                           | 氧化燒成時呈褐色、淺棕色和紅色；還原燒成時，½–2% 產生青瓷，5–6% 產生天目。屬於助熔劑，所以用量多時容易流釉 |
-| 銅       | 1–3%                              | 氧化燒成時呈綠色或土耳其藍，還原燒成時呈紅色。可能會使釉溶出                                               |
-| 鉻       | 不到 0.5% 至 2%（各資料說法不一） | 綠色；基礎釉含鋅時呈褐色，與錫同用時呈粉紅色                                                               |
-| 錳       | 2–10%                             | 褐色與紫色                                                                                                 |
-| 金紅石   | 約 2–5%                           | 斑駁、多變的顏色；超過約 5% 時表面粗糙或呈霧面                                                             |
-| 市售色料 | 2–12%                             | 2–4% 得淡色，5–8% 得中等色調，10–12% 得濃色                                                                |
+| Colorant          | Usual starting amount               | Colors and notes                                                                                                          |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                          |
+| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–6% tenmoku. A flux, so a lot makes a glaze run |
+| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                              |
+| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                          |
+| Manganese         | 2–10%                               | Browns and purples                                                                                                        |
+| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                  |
+| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                  |
 
-鈷和鉻的用量確實有爭議。Glazy 說 0.1% 的鈷就足以呈藍色；Glendale Community College 依窯內氣氛不同，給 ½–2% 或 ½–3%；Pottery Making Illustrated 的 Birdie Boone 則說 3% 以下。至於鉻，Boone 說不到 0.5%，Glendale 說 2–3%。穩妥的做法是從低用量開始，做**直線配比試驗**{{en: line blend}}：一排**試片**{{en: test tile}}，把一種成分從少量逐步增加到大量。
+Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
 
-基礎釉會改變顏色。亮面、透明的基礎釉呈現最鮮豔的顏色；半霧面和霧面的基礎釉通常氧化鋁較高，會減弱顏色的鮮豔度。鎂使鈷偏向紫色，鋅使鉻變成褐色，鉻與錫同用則呈粉紅色。
+The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
 
-### 乳濁劑
+### Opacifiers
 
-**乳濁劑**使釉**不透明**，遮住黏土；**透明**的釉則讓黏土透出來。
+An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
 
-Table: 乳濁劑
+Table: Opacifiers
 
-| 乳濁劑                                         | 常見用量              | 說明                                                                  |
-| ---------------------------------------------- | --------------------- | --------------------------------------------------------------------- |
-| 矽酸鋯（Zircopax、Superpax、Ultrox、Zircosil） | 完全不透明需 8–12%    | 較便宜的選擇；這些品牌是同一種原料，只是磨成不同的細度                |
-| 氧化錫                                         | 約 5–7%（我們的估計） | 價格昂貴；在還原燒成中乳濁效果差                                      |
-| 氧化鈦                                         | 超過 2%               | 柔滑、半透明的乳濁效果；用到 10% 以上時，表面呈霧面、有質感，可見結晶 |
+| Opacifier                                     | Usual amount              | Notes                                                                                                         |
+| --------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% for full opacity    | The cheaper choice; the brands are the same material ground to different sizes                                |
+| Tin oxide                                     | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze |
+| Titanium dioxide                              | Above 2%                  | Silky, translucent opacity; at 10% or more, a matte, textured surface with visible crystals                   |
 
-## 坯釉適配與缺陷 {#fit-and-defects}
+## Glaze fit and defects {#fit-and-defects lang=en}
 
-黏土和釉受熱都會膨脹、冷卻都會收縮，各有自己的幅度：也就是各自的**熱膨脹**{{en: thermal expansion}}。**坯釉適配**{{en: glaze fit}}是兩者吻合的程度。適配良好時，釉層受到坯體輕微的壓縮；Digitalfire 說，輕微的壓縮能增強作品的強度，壓縮太大則可能使作品變弱，甚至開裂。
+Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
 
-### 開片與跳釉
+### Crazing and shivering
 
-**開片**{{en: crazing}}是布滿釉面的細小裂紋。釉的膨脹比坯體高，所以冷卻時收縮得比較多，被拉伸而裂開，通常是因為鈉和鉀（Na₂O、K₂O）太多。開片也可能稍後在使用中出現，例如反覆遇到冷的液體而急冷之後。刻意要的開片，例如樂燒，稱為**冰裂紋**。Digitalfire 說「95% 的情況，解決辦法是調整釉的熱膨脹」；緩慢降溫只是延後開片。測試方法：把作品加熱到約 {{300 °F; 149 °C}}，放進冰水中，再用氈頭筆在上面塗抹，讓裂紋顯現。
+**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
 
-各資料對第一步怎麼處理看法不同。Glazy 建議加入二氧化矽或氧化鋁；Digitalfire 回應說，多加二氧化矽「只是稀釋 KNaO」（鈉和鉀）；Linda Bloomfield 則建議加入硼或減少長石，一次只改一種原料。我們的建議：在[配方計算](/recipe)中，把一部分鈉和鉀換成熱膨脹較低的助熔劑（硼、鋰、鎂、鈣），用**比較**確認這項改動，再用冰水測試確認。
+Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
 
-**跳釉**{{en: shivering}}則相反：釉的膨脹遠低於坯體，所以被過度壓縮，從口緣和邊角剝落。Digitalfire 警告，剝落的碎片可能鋒利如刀片，還可能被吞下去；Glazy 則說，在實用器上，跳釉「比開片更加危險」。解決辦法是改用膨脹較高的釉，或膨脹較低的坯體。
+**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
 
 > [!WARNING]
-> 請勿將有開片或跳釉的作品用來盛裝食物或飲料。各資料對有開片的作品能否清洗乾淨看法不一（有一種說法是洗碗機就行；另一種則把有開片的實用器視為有缺陷），所以我們採取謹慎的一方。
+> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
 
-### 亮面與霧面
+### Gloss and matte
 
-**亮面**表面反光、平滑，**半霧面**帶有柔和的光澤，**霧面**則無光。亮面需要完全熔化的玻璃。霧面可能來自大量的氧化鋁（矽鋁比低）、來自鈣、鎂、鋇或鍶等助熔劑在釉冷卻時形成微小的結晶，或來自燒成不足。
+A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
 
-### 常見缺陷
+### Common defects
 
-一次只改一個條件，並保留您的試片。
+Change one thing at a time, and keep your test tiles.
 
-Table: 常見的釉藥缺陷、常見原因與第一步處理
-Label: 常見的釉藥缺陷
+Table: Common glaze defects, their usual causes and first fixes
+Label: Common glaze defects
 
-| 缺陷                  | 外觀                             | 常見原因                                                                                       | 第一步處理                                                  |
-| --------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| 縮釉{{en: crawling}}  | 釉向後縮成珠狀，露出沒有釉的黏土 | 素燒坯有灰塵或油脂；富含黏土的厚釉層在乾燥時開裂；鋅、矽酸鋯或錫                               | 清潔素燒坯；上薄一點；把一部分黏土鍛燒；加入 CMC 這類的黏劑 |
-| 針孔{{en: pinholing}} | 小孔或凹點                       | 來自坯體或釉的氣體，冒出後釉沒有癒合；燒成不足或過黏的釉                                       | 在最高溫持溫約半小時；上薄一點；減少鋅或金紅石              |
-| 起泡                  | 邊緣尖銳的坑洞                   | 通常是過燒；釉層很厚；溫度超過約 {{2192 °F; 1200 °C}} 時揮發的助熔劑                           | 降低燒成溫度；上薄一點。尖銳的邊緣使實用器不安全            |
-| 流釉                  | 釉流到棚板上                     | 氧化鋁太少；太厚，例如淋釉重疊處；鐵很多                                                       | 上薄一點；增加氧化鋁；釉面要離底足遠一些                    |
-| 冷裂{{en: dunting}}   | 作品因冷卻或加熱而裂開           | 快速降溫通過石英相變{{en: quartz inversion}}點 {{1063 °F; 573 °C}}；器壁厚薄不均；坯釉適配不良 | 升溫和降溫時都要緩慢通過 {{1063 °F; 573 °C}}；器壁厚薄均勻  |
+| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
+| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
+| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
+| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
+| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
 
-## 食品安全 {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**溶出**{{en: leaching}}是金屬從燒成的釉中溶解到食物或飲料裡，釉看起來再完美也可能發生。法定的試驗是把燒成的作品浸泡在酸性溶液中，測量溶出的鉛和鎘。
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### 無鉛不等於可安全盛裝食物
+### Lead-free is not the same as food-safe
 
-美國、歐盟、英國和澳洲的規定，限制的是燒成後的作品溶出的鉛和鎘，而不是釉裡含有什麼。「無鉛」去除了一項危害，但「無鉛」不是食品安全的評級。其他氧化物也會溶出：Glazy 警告，含鋇量高的釉「可能溶出，且一般不能安全盛裝食物」；Digitalfire 說銅「可能使釉容易溶出；請測試」；Glazy 也不再建議在實用器上使用含鉛的釉。
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**內層釉**{{en: liner glaze}}是用在接觸食物的表面、穩定的釉，通常是透明或白色。在我們看來，不含呈色劑、鋇、鉛或鋰，完全熔化、不開片且耐磨損的釉，是風險較低的選擇。風險較低不等於證明安全。
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**界限式**{{en: limit formula}}（Digitalfire 偏好稱為**目標式**）給出某個測溫錐號下穩定的釉的典型塞格式範圍：Digitalfire 的 Orton 6 號測溫錐目標式，把氧化鋁定在 0.285–0.64，二氧化矽定在 2.4–4.7。這些範圍引導您朝向合理的化學組成，但不能證明什麼；Digitalfire 避免使用「界限」一詞，因為這個詞暗示範圍內的釉「在某種程度上是安全的」。Glazecalc 用來修改配方的工具，會在新配方超出建議的界限時告訴您，例如在 6 號測溫錐時硼太多，以及釉可能出現什麼表現。
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-各國的法定限值不同。下表顯示您所在地區的限值，使用法律自己的單位；選擇其他國家或地區可以比較。
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 
-在美國，看起來可以盛裝食物的裝飾性陶瓷器物會被視為食品用器物，除非同時附有貼紙標籤，並在底部壓印或燒上永久標示，例如「Not for Food Use. May Poison Food」（非食品用，可能使食物有毒），或是在盛裝食物的表面開一個貫穿的洞。歐盟在歐盟指令 84/500/EEC（與食品接觸的陶瓷製品）中訂出鉛和鎘的限值，英國在自己的法律中保留相同的數值。從 2026年5月29日起，荷蘭、比利時和盧森堡的鉛限值約嚴格 130 到 150 倍，鎘限值約嚴格 15 倍。澳洲對進口的器物訂有限值；我們沒有找到澳洲或紐西蘭製造的器物的官方限值。
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 15 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. We did not confirm the dates for Belgium and Luxembourg. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### 檢測
+### Testing
 
-美國 FDA 說，家用的擦拭式檢測套組能顯示可溶出的鉛，但 Ceramics New Zealand 警告，檢測筆不是為陶瓷設計的，會出現偽陽性。檢測呈陽性，就當作停止使用該作品的理由；呈陰性，則什麼都不能證明。真正的答案是對燒成的作品做實驗室**溶出試驗**{{en: leach test}}（美國為 ASTM C738；歐洲為 EN 1388 或 ISO 6486）。
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> 「可安全盛裝食物」的意思是：這種釉，用在這種黏土上，以這種方式上釉，在這個窯裡燒到這個測溫錐號，溶出量低於法定限值。Glazecalc 能幫助您調出穩定的釉，而**取代鉛**可以把舊的含鉛釉方重新調成無鉛的，但沒有任何計算工具能為一件作品出具認證。只有對燒成後的作品進行試驗才能做到。
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## 比重與施釉 {#application}
 
@@ -462,7 +476,7 @@ R₂O 與 RO
 碳酸鈣（whiting）
 : 即碳酸鈣，主要的鈣系助熔劑；燒成時失去超過 40% 的重量。德文：Kreide。
 
-## 資料來源 {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -483,11 +497,20 @@ R₂O 與 RO
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex：1984 年 10 月 15 日的理事會指令 84/500/EEC，關於各會員國有關擬與食品接觸之陶瓷製品的法律趨同](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.pdf)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
