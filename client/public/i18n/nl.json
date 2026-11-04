@@ -169,7 +169,7 @@
     "notANumberPoint": "Voer een getal in, bijvoorbeeld {example}, met een punt als decimaalteken."
   },
   "meta": {
-    "description": "Voer een glazuurrecept in en zie de Segerformule (UMF), SiO₂ : Al₂O₃ en smeltmiddelverhouding. Gratis en open source: recepten, grondstoffen en stookverslagen.",
+    "description": "Voer een glazuurrecept voor keramiek in en zie de Segerformule (UMF), SiO₂ : Al₂O₃ en smeltmiddelverhouding. Gratis en open source, met stookverslagen.",
     "guides": "Gidsen in gewone taal voor beginnende pottenbakkers: wat een glazuur is, hoe u het veilig aanmaakt en mengt, uw gezin beschermt en een eenvoudige oven stookt.",
     "glazingBasics": "Waaruit een glazuur bestaat, hoe de oven het tot glas smelt, en wat kegels, fritten, de Segerformule (UMF) en glazuurfouten zijn. Voor beginnende pottenbakkers.",
     "makingAGlaze": "Hoe u glazuur koopt, bewaart, afweegt en aanmaakt, de dikte goed krijgt, het op uw eigen klei test en alles noteert, zodat u het opnieuw kunt maken.",
@@ -183,8 +183,8 @@
     "terms": "De voorwaarden voor het gebruik van Glazecalc: gratis voor uw eigen glazuren en werk, eerlijk tegenover de gedeelde server, en geleverd zoals het is.",
     "assistants": "Gebruik Glazecalc vanuit Claude, Copilot, Cursor of Gemini via MCP: glazuurchemie, controles op limieten, vervangers, de gidsen en uw eigen recepten.",
     "signup": "Bewaar uw glazuurrecepten, grondstoffen, notities en stookverslagen in een gratis Glazecalc-account. Geen advertenties, en uw gegevens worden nooit verkocht.",
-    "cones": "Pyrometrische Orton- en SK-kegels vanaf 022, met hun temperaturen in °C en °F, de stooksnelheid waarvoor elke tabel geldt en waar de cijfers vandaan komen.",
-    "materials": "De grondstoffen in de standaardbibliotheek van Glazecalc, van veldspaten en klei tot fritten en boorbronnen, elk met oxideanalyse, Segerformule en gevaren.",
+    "cones": "Ortonkegels en SK-kegels vanaf 022: een kegeltabel met temperaturen in °C en °F, de stooksnelheid waarvoor elke tabel geldt en waar de cijfers vandaan komen.",
+    "materials": "Glazuurgrondstoffen in de standaardbibliotheek van Glazecalc, van veldspaten en klei tot fritten en boorbronnen, elk met oxideanalyse, Segerformule en gevaren.",
     "materialInfo": "{name}: oxideanalyse, Segerformule, gloeiverlies en gevaren in de standaardbibliotheek van Glazecalc.",
     "materialInfoLong": "{name} in de standaardbibliotheek van glazuurgrondstoffen van Glazecalc: oxideanalyse, bijdrage aan de Segerformule, gloeiverlies en gevaren.",
     "imageAlt": "Het Glazecalc-logo en de kop, gratis glazuurchemie voor pottenbakkers, naast een foto van gestookte kegelrijen."

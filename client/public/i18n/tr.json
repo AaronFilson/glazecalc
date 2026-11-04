@@ -169,7 +169,7 @@
     "notANumberPoint": "Ondalık için nokta kullanarak {example} gibi bir sayı girin."
   },
   "meta": {
-    "description": "Seramik sır reçetesi girin; Seger formülünü (UMF), silis/alümina oranını, ergitici dengesini görün. Reçete, hammadde, pişirim kaydı için ücretsiz, açık kaynak.",
+    "description": "Seramik sır reçetesi girin; Seger formülü (UMF) hesaplama, silis/alümina oranı ve ergitici dengesi. Reçete, hammadde, pişirim kaydı için ücretsiz, açık kaynak.",
     "guides": "Yeni seramikçiler için sade rehberler: seramik sırı nedir, güvenle nasıl hazırlanıp karıştırılır, aileniz nasıl korunur, basit bir fırında nasıl pişirilir.",
     "glazingBasics": "Seramik sırı neyden yapılır, fırında nasıl cama dönüşür; piramit, frit, Seger formülü (UMF) ve sır kusurları ne demektir. Yeni seramikçiler için bir rehber.",
     "makingAGlaze": "Seramik sırı nasıl alınır, saklanır, tartılır, karıştırılır; yoğunluğu nasıl ayarlanır, kendi çamurunuzda nasıl denenir, tekrar yapmak için nasıl kayıt tutulur.",
@@ -183,8 +183,8 @@
     "terms": "Glazecalc’in kullanım koşulları: kendi sırlarınız ve çalışmanız için ücretsiz, ortak sunucuya karşı adil ve olduğu gibi sunulur.",
     "assistants": "Glazecalc’i MCP ile Claude, Copilot, Cursor veya Gemini’den kullanın: sır kimyası, sınır kontrolleri, yedek hammaddeler, rehberler ve kendi reçeteleriniz.",
     "signup": "Seramik sır reçetelerinizi, hammaddelerinizi, notlarınızı ve pişirim kayıtlarınızı ücretsiz Glazecalc hesabında saklayın. Reklam yok; verileriniz asla satılmaz.",
-    "cones": "022’den başlayan Orton ve SK pirometrik piramitleri; °C ve °F cinsinden sıcaklıkları, her tablonun hangi ısıtma hızı için olduğu ve rakamların nereden geldiği.",
-    "materials": "Glazecalc’in standart kütüphanesindeki hammaddeler: feldspatlardan ve killerden fritlere ve bor kaynaklarına kadar, her birinin oksit analizi, Seger formülü ve tehlikeleriyle.",
+    "cones": "022’den başlayan Orton (dükkânlarda “Seger piramidi”) ve SK pirometrik piramitleri: °C ve °F sıcaklıkları, her tablonun ısıtma hızı ve rakamların kaynağı.",
+    "materials": "Glazecalc’in standart kütüphanesindeki seramik sır hammaddeleri: feldspatlardan ve killerden fritlere ve bor kaynaklarına, oksit analizi, Seger formülü ve tehlikeleriyle.",
     "materialInfo": "{name}: Glazecalc’in standart kütüphanesinde oksit analizi, Seger formülü, kızdırma kaybı ve tehlikeler.",
     "materialInfoLong": "{name}, Glazecalc’in standart sır hammaddeleri kütüphanesinde: oksit analizi, Seger formülüne katkısı, kızdırma kaybı ve tehlikeler.",
     "imageAlt": "Glazecalc logosu ve başlığı, çömlekçiler için ücretsiz sır kimyası, pişmiş piramit gruplarının fotoğrafının yanında."

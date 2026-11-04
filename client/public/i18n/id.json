@@ -169,7 +169,7 @@
     "notANumberPoint": "Masukkan angka, misalnya {example}, dengan titik untuk desimal."
   },
   "meta": {
-    "description": "Masukkan resep glasir, lihat formula Seger (UMF), rasio silika-alumina, dan keseimbangan pelebur. Gratis, sumber terbuka, untuk resep, bahan, dan catatan bakar.",
+    "description": "Masukkan resep glasir keramik, lihat formula Seger (UMF), rasio silika-alumina, dan keseimbangan pelebur. Gratis, sumber terbuka, untuk resep dan catatan bakar.",
     "guides": "Panduan sederhana untuk pembuat keramik pemula: apa itu glasir, cara membuat dan mencampurnya dengan aman, menjaga keluarga tetap aman, dan membakar tungku.",
     "glazingBasics": "Glasir terbuat dari apa, bagaimana tungku mengubahnya jadi kaca, dan arti kerucut, frit, formula Seger, dan cacat glasir. Panduan untuk pembuat keramik pemula.",
     "makingAGlaze": "Cara membeli, menyimpan, menimbang, dan mencampur glasir, mengatur ketebalannya, mengujinya pada tanah liat Anda sendiri, dan mencatatnya agar bisa dibuat lagi.",
@@ -184,7 +184,7 @@
     "assistants": "Pakai Glazecalc dari Claude, Copilot, Cursor, atau Gemini lewat MCP: kimia glasir, pemeriksaan batas, pengganti, panduan, dan resep Anda sendiri.",
     "signup": "Buat akun Glazecalc gratis untuk menyimpan resep glasir, bahan, catatan, dan catatan pembakaran Anda. Tanpa iklan, dan data Anda tidak pernah dijual.",
     "cones": "Kerucut pirometrik Orton dan SK dari 022 ke atas, dengan suhunya dalam °C dan °F, laju pemanasan yang dimaksud tiap tabel, dan asal angkanya.",
-    "materials": "Bahan di pustaka standar Glazecalc, dari feldspar dan tanah liat hingga frit dan sumber boron, masing-masing dengan analisis oksida, formula Seger, dan bahaya.",
+    "materials": "Bahan glasir keramik di pustaka standar Glazecalc, dari feldspar dan tanah liat hingga frit dan sumber boron, dengan analisis oksida, formula Seger, dan bahaya.",
     "materialInfo": "{name}: analisis oksida, formula Seger, susut pijar, dan bahaya dalam pustaka standar Glazecalc.",
     "materialInfoLong": "{name} dalam pustaka standar bahan glasir Glazecalc: analisis oksida, kontribusi terhadap formula Seger, susut pijar, dan bahayanya.",
     "imageAlt": "Logo Glazecalc dan judulnya, kimia glasir gratis untuk pembuat keramik, di samping foto set kerucut yang sudah dibakar."
