@@ -639,9 +639,16 @@ describe('MCP: the public tools', () => {
     expect(thick.sg).to.equal(1.6);
     // 10 L × (1.6 − 1.45) ÷ 0.45 = 3.33 L of water to add.
     expect(thick.waterToAddLitres).to.equal(3.33);
+    // Nothing is assumed for the dry materials, so no dry weights without their SG.
+    expect(thick).not.to.have.property('drySg');
+    expect(thick).not.to.have.property('dryGlazePerLitreKg');
+    expect(thick).not.to.have.property('bucket');
+    const given = await data('specific_gravity_water', { gramsPer100ml: 160, litres: 10, target: 1.45, drySg: 2.5 });
+    // The same water to add whatever the dry SG.
+    expect(given.waterToAddLitres).to.equal(3.33);
     // Brongniart at dry SG 2.5: (1.6 − 1) × 2.5 ÷ 1.5 = 1 kg a litre.
-    expect(thick.dryGlazePerLitreKg).to.equal(1);
-    expect(thick.bucket).to.eql({ litres: 10, dryGlazeKg: 10, waterKg: 6 });
+    expect(given.dryGlazePerLitreKg).to.equal(1);
+    expect(given.bucket).to.eql({ litres: 10, dryGlazeKg: 10, waterKg: 6 });
     const thin = await data('specific_gravity_water', { sg: 1.3, litres: 10, target: 1.45 });
     expect(thin.waterToAddLitres).to.be.below(0);
     expect(thin.note).to.match(/pour off/);
