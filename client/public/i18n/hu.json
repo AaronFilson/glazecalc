@@ -169,7 +169,7 @@
     "notANumberPoint": "Adjon meg egy számot, például {example}, tizedesponttal."
   },
   "meta": {
-    "description": "Írja be a mázreceptet: látja a Seger-képletét (UMF), SiO₂ : Al₂O₃ és olvasztóanyag-arányát. Ingyenes, nyílt forráskódú; receptek, nyersanyagok, égetési naplók.",
+    "description": "Írja be a kerámia mázreceptet, és látja a Seger-képletét (UMF), SiO₂ : Al₂O₃ és olvasztóanyag-arányát. Ingyenes, nyílt forráskódú, égetési naplókkal.",
     "guides": "Közérthető útmutatók kezdő fazekasoknak: mi a kerámia máz, hogyan készítse és keverje biztonságosan, hogyan védje családját és égessen egyszerű kemencében.",
     "glazingBasics": "A máz összetétele, hogyan lesz belőle üveg a kemencében, és mit jelentenek a gúlák, a frittek, a Seger-képlet (UMF) és a mázhibák. Útmutató kezdő fazekasoknak.",
     "makingAGlaze": "Kerámia máz vásárlása, tárolása, bemérése és keverése, a sűrűség beállítása, próba a saját agyagon és feljegyzések, hogy újra elkészíthesse.",
@@ -184,7 +184,7 @@
     "assistants": "A Glazecalc MCP-n át a Claude, Copilot, Cursor vagy Gemini asszisztensből: mázkémia, határérték-ellenőrzés, helyettesítők, útmutatók és saját receptjei.",
     "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el.",
     "cones": "Orton- és SK-hőfokjelző gúlák 022-estől felfelé, hőfokaikkal °C-ban és °F-ban, az egyes táblázatok felfűtési sebességével és az értékek forrásával.",
-    "materials": "A Glazecalc beépített könyvtárának nyersanyagai a földpátoktól és agyagoktól a frittekig és bórforrásokig, mindegyik oxidos összetételével, Seger-képletével és veszélyeivel.",
+    "materials": "Kerámia mázak alapanyagai a Glazecalc beépített könyvtárában, a földpátoktól és agyagoktól a frittekig és bórforrásokig, oxidos összetétellel, Seger-képlettel és veszélyekkel.",
     "materialInfo": "{name}: oxidos összetétel, Seger-képlet, izzítási veszteség és veszélyek a Glazecalc beépített könyvtárában.",
     "materialInfoLong": "{name} a Glazecalc beépített mázanyag-könyvtárában: oxidos összetétele, hozzájárulása a Seger-képlethez, izzítási vesztesége és veszélyei.",
     "imageAlt": "A Glazecalc logója és címsora, ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."

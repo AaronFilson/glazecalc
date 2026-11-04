@@ -169,7 +169,7 @@
     "notANumberPoint": "Saisissez un nombre, par exemple {example}, avec un point pour les décimales."
   },
   "meta": {
-    "description": "Saisissez une recette d’émail : formule de Seger (UMF), rapport silice/alumine, fondants. Gratuit et open source, pour recettes, matières et cuissons.",
+    "description": "Saisissez une recette d’émail céramique : formule de Seger (UMF), rapport silice/alumine, fondants. Gratuit et open source, pour recettes, matières et cuissons.",
     "guides": "Guides simples pour céramistes débutants : ce qu’est un émail céramique, le préparer et le mélanger en sécurité, protéger votre famille, cuire un four simple.",
     "glazingBasics": "De quoi est fait un émail céramique, comment le four le vitrifie, et ce que sont cônes, frittes, formule de Seger (UMF) et défauts des émaux. Pour débutants.",
     "makingAGlaze": "Comment acheter, stocker, peser et mélanger un émail, lui donner la bonne consistance, l’essayer sur votre terre et noter la recette d’émail pour la refaire.",
@@ -183,7 +183,7 @@
     "terms": "Les conditions d’utilisation de Glazecalc : gratuit pour vos propres émaux et votre travail, équitable envers le serveur partagé, et fourni « en l’état ».",
     "assistants": "Utilisez Glazecalc depuis Claude, Copilot, Cursor ou Gemini via MCP : chimie des émaux, vérification des limites, substituts, guides et vos recettes.",
     "signup": "Créez un compte Glazecalc gratuit pour garder vos recettes d’émaux, matières, notes et relevés de cuisson. Sans publicité ; vos données ne sont jamais vendues.",
-    "cones": "Cônes pyrométriques Orton et SK à partir de 022, avec leurs températures en °C et en °F, la vitesse de montée en température de chaque tableau et l’origine des valeurs.",
+    "cones": "Cônes pyrométriques Orton et SK à partir de 022 : tableau des températures en °C et en °F, vitesse de montée en température de chaque tableau et origine des valeurs.",
     "materials": "Les matières de la bibliothèque standard de Glazecalc, des feldspaths et argiles aux frittes et aux sources de bore, chacune avec son analyse en oxydes, sa formule de Seger et ses dangers.",
     "materialInfo": "{name} : analyse en oxydes, formule de Seger, perte au feu et dangers dans la bibliothèque standard de Glazecalc.",
     "materialInfoLong": "{name} dans la bibliothèque standard de matières pour émaux de Glazecalc : analyse en oxydes, apport à la formule de Seger, perte au feu et dangers.",

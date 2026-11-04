@@ -169,7 +169,7 @@
     "notANumberPoint": "Escribe un número, como {example}, con punto para los decimales."
   },
   "meta": {
-    "description": "Escribe una receta y ve su fórmula unitaria (UMF), sílice:alúmina y fundentes. Gratis y de código abierto, para recetas, materiales y registros de cocción.",
+    "description": "Escribe una receta de esmalte cerámico y ve su fórmula unitaria (UMF), sílice:alúmina y fundentes. Gratis y de código abierto, para recetas y cocciones.",
     "guides": "Guías en lenguaje sencillo para ceramistas principiantes: qué es un esmalte, cómo prepararlo y mezclarlo con seguridad, cuidar a tu familia y cocer en un horno sencillo.",
     "glazingBasics": "De qué se compone un esmalte, cómo lo convierte en vidrio el horno y qué significan los conos, las fritas, las fórmulas unitarias y los defectos del esmalte. Una guía para principiantes.",
     "makingAGlaze": "Cómo comprar, guardar, pesar y mezclar un esmalte, darle el grosor correcto, probarlo en tu propia arcilla y llevar registros para poder repetirlo.",
@@ -183,7 +183,7 @@
     "terms": "Los términos para usar Glazecalc: gratis para tus propios esmaltes y trabajo, justos con el servidor compartido, y ofrecido tal cual.",
     "assistants": "Usa Glazecalc desde Claude, Copilot, Cursor o Gemini mediante MCP: química de esmaltes, revisión de límites, sustitutos y las guías, y tus propias recetas.",
     "signup": "Crea una cuenta gratuita de Glazecalc para guardar tus recetas de esmaltes, materiales, notas y registros de cocción. Sin anuncios, y tus datos nunca se venden.",
-    "cones": "Conos pirométricos Orton y SK desde el 022, con sus temperaturas en °C y °F, la velocidad de calentamiento de cada tabla y el origen de las cifras.",
+    "cones": "Conos pirométricos Orton y SK desde el 022: tabla de temperaturas en °C y °F, la velocidad de calentamiento de cada tabla y el origen de las cifras.",
     "materials": "Los materiales de la biblioteca estándar de Glazecalc, desde feldespatos y arcillas hasta fritas y fuentes de boro, cada uno con su análisis de óxidos, fórmula unitaria y riesgos.",
     "materialInfo": "{name}: análisis de óxidos, fórmula unitaria, pérdida al fuego y riesgos en la biblioteca estándar de Glazecalc.",
     "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aporte a la fórmula unitaria, su pérdida al fuego y sus riesgos.",

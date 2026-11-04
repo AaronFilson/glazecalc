@@ -169,7 +169,7 @@
     "notANumberPoint": "Sisestage arv kümnendpunktiga, näiteks {example}."
   },
   "meta": {
-    "description": "Sisestage retsept ja näete Segeri valemit (UMF), SiO₂ : Al₂O₃ suhet ja sulandajate tasakaalu. Tasuta, avatud lähtekood: retseptid, toorained, põletuspäevikud.",
+    "description": "Sisestage keraamilise glasuuri retsept ja näete Segeri valemit (UMF), SiO₂ : Al₂O₃ suhet ja sulandajate tasakaalu. Tasuta ja avatud lähtekoodiga.",
     "guides": "Lihtsas keeles juhendid algajatele keraamikutele: mis on keraamika glasuur, kuidas seda valmistada ja ohutult segada, kaitsta peret ja põletada lihtsas ahjus.",
     "glazingBasics": "Keraamika glasuuri koostis, kuidas ahi teeb sellest klaasi ja mida tähendavad koonused, fritid, Segeri valem (UMF) ja glasuurivead. Juhend algajale keraamikule.",
     "makingAGlaze": "Kuidas keraamika glasuuri osta, hoida, kaaluda ja segada, saada õige paksus, katsetada seda oma savil ja pidada märkmeid, et saaksite selle uuesti valmistada.",

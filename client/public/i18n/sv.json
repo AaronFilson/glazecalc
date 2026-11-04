@@ -169,7 +169,7 @@
     "notANumberPoint": "Ange ett tal, till exempel {example}, med punkt som decimaltecken."
   },
   "meta": {
-    "description": "Ange ett glasyrrecept och se Segerformeln (UMF), förhållandet SiO₂ : Al₂O₃ och flussmedelsbalansen. Gratis, öppen källkod, för recept, råvaror och brännloggar.",
+    "description": "Ange ett glasyrrecept för keramik och se Segerformeln (UMF), SiO₂ : Al₂O₃ och flussmedelsbalansen. Gratis och öppen källkod, för recept, råvaror och brännloggar.",
     "guides": "Lättlästa guider för nya keramiker: vad en keramikglasyr är, hur den görs och blandas säkert, hur familjen skyddas och hur en enkel keramikugn bränns.",
     "glazingBasics": "Vad en keramikglasyr består av, hur ugnen gör den till glas och vad käglor, frittor, Segerformeln (UMF) och glasyrfel betyder. En guide för nya keramiker.",
     "makingAGlaze": "Köpa, förvara, väga och blanda en glasyr, få rätt tjocklek, prova den på den egna leran och anteckna glasyrreceptet så att den går att göra igen.",
@@ -183,8 +183,8 @@
     "terms": "Villkoren för att använda Glazecalc: gratis för dina egna glasyrer och ditt eget arbete, rättvist mot den delade servern och tillhandahållet i befintligt skick.",
     "assistants": "Använd Glazecalc från Claude, Copilot, Cursor eller Gemini via MCP: glasyrkemi, gränskontroller, ersättare, guiderna och dina egna recept.",
     "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig.",
-    "cones": "Pyrometriska Orton- och SK-käglor från 022 och uppåt, med temperaturer i °C och °F, den uppvärmningshastighet varje tabell gäller för och var siffrorna kommer ifrån.",
-    "materials": "Råvarorna i Glazecalcs standardbibliotek, från fältspater och leror till fritter och borkällor, var och en med oxidanalys, Segerformel och faror.",
+    "cones": "Orton- och SK-käglor från 022 och uppåt: kägeltabell med temperaturer i °C och °F, uppvärmningshastigheten varje tabell gäller för och siffrornas källa.",
+    "materials": "Glasyrråvarorna i Glazecalcs standardbibliotek, från fältspater och leror till fritter och borkällor, var och en med oxidanalys, Segerformel och faror.",
     "materialInfo": "{name}: oxidanalys, Segerformel, glödförlust och faror i Glazecalcs standardbibliotek.",
     "materialInfoLong": "{name} i Glazecalcs standardbibliotek över glasyrråvaror: oxidanalys, bidrag till Segerformeln, glödförlust och faror.",
     "imageAlt": "Glazecalcs logotyp och rubrik, gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."

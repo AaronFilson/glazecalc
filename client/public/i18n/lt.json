@@ -169,7 +169,7 @@
     "notANumberPoint": "Įveskite skaičių su dešimtainiu tašku, pvz., {example}."
   },
   "meta": {
-    "description": "Įveskite glazūros receptą ir pamatykite Segerio formulę (UMF), SiO₂ : Al₂O₃ ir fliusų santykius. Nemokama, atvirojo kodo: receptai, žaliavos, degimo žurnalai.",
+    "description": "Įveskite keramikos glazūros receptą ir pamatykite Segerio formulę (UMF), SiO₂ : Al₂O₃ ir fliusų santykius. Nemokama ir atvirojo kodo.",
     "guides": "Paprasti vadovai pradedantiesiems keramikams: kas yra keramikos glazūra, kaip ją saugiai pasigaminti ir sumaišyti, apsaugoti šeimą ir degti paprastoje krosnyje.",
     "glazingBasics": "Iš ko sudaryta keramikos glazūra, kaip krosnis ją paverčia stiklu, ką reiškia piroskopai, fritai, Segerio formulė (UMF) ir defektai. Vadovas pradedantiesiems.",
     "makingAGlaze": "Kaip pirkti, laikyti, sverti ir maišyti keramikos glazūrą, nustatyti jos tirštumą, išbandyti ją ant savo molio ir užsirašyti tiek, kad pasigamintumėte ją vėl.",
@@ -184,7 +184,7 @@
     "assistants": "Naudokite Glazecalc per MCP iš Claude, Copilot, Cursor ar Gemini: glazūrų chemija, ribų patikros, pakaitalai, vadovai ir jūsų pačių receptai.",
     "signup": "Nemokama Glazecalc paskyra keramikos glazūrų receptams, žaliavoms, užrašams ir degimo žurnalams saugoti. Be reklamų, jūsų duomenys niekada neparduodami.",
     "cones": "Ortono ir SK piroskopai nuo 022, jų temperatūros °C ir °F, kaitinimo greitis, kuriam skirta kiekviena lentelė, ir kur imami skaičiai.",
-    "materials": "Glazecalc standartinės bibliotekos žaliavos: nuo lauko špatų ir molių iki fritų ir boro šaltinių, su oksidų analize, Segerio formule ir pavojais.",
+    "materials": "Glazecalc standartinės bibliotekos glazūros žaliavos: nuo lauko špatų ir molių iki fritų ir boro šaltinių, su oksidų analize, Segerio formule ir pavojais.",
     "materialInfo": "{name}: oksidų analizė, Segerio formulė, degimo nuostoliai ir pavojai Glazecalc standartinėje bibliotekoje.",
     "materialInfoLong": "{name} Glazecalc standartinėje glazūros žaliavų bibliotekoje: oksidų analizė, indėlis į Segerio formulę, degimo nuostoliai ir pavojai.",
     "imageAlt": "Glazecalc logotipas ir antraštė „nemokama glazūrų chemija keramikams“ šalia išdegtų kūgių nuotraukos."

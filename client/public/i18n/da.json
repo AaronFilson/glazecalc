@@ -169,7 +169,7 @@
     "notANumberPoint": "Angiv et tal, fx {example}, med punktum som decimaltegn."
   },
   "meta": {
-    "description": "Se en glasurs Seger-formel (UMF), forhold mellem silica og aluminiumoxid og flusmiddelfordeling. Gratis og open source, til opskrifter, råvarer og brændinger.",
+    "description": "Indtast en glasuropskrift til keramik og se Seger-formel (UMF), forholdet silica/aluminiumoxid og flusmidler. Gratis og open source, også til brændinger.",
     "guides": "Letforståelige vejledninger for nye keramikere: hvad en keramisk glasur er, at lave og blande den sikkert, familiens sikkerhed og brænding i en enkel ovn.",
     "glazingBasics": "Hvad en glasur til keramik består af, hvordan ovnen gør den til glas, og hvad kegler, fritter, Seger-formel (UMF) og glasurfejl er. Til nye keramikere.",
     "makingAGlaze": "Sådan købes, opbevares, afvejes og blandes en glasur. Få tykkelsen rigtig, test den på dit eget ler, og før notater, så glasuren kan laves igen.",
@@ -183,8 +183,8 @@
     "terms": "Vilkårene for brug af Glazecalc: gratis til dine egne glasurer og dit eget arbejde, rimeligt over for den delte server, og leveret, som det er og forefindes.",
     "assistants": "Brug Glazecalc fra Claude, Copilot, Cursor eller Gemini via MCP: glasurkemi, grænsekontroller, erstatninger, vejledningerne og dine egne opskrifter.",
     "signup": "Opret en gratis konto i Glazecalc, og gem dine glasuropskrifter, råvarer, noter og brændingsjournaler. Ingen reklamer, og dine data sælges aldrig.",
-    "cones": "Pyrometriske Orton- og SK-kegler fra 022 og opefter, med temperaturer i °C og °F, den opvarmningshastighed hvert skema gælder for, og hvor tallene stammer fra.",
-    "materials": "Råvarerne i Glazecalcs standardbibliotek, fra feldspater og ler til fritter og borkilder, hver med sin oxidanalyse, Seger-formel og farer.",
+    "cones": "Orton- og SK-kegler fra 022 og opefter: kegletabel med temperaturer i °C og °F, den opvarmningshastighed hvert skema gælder for, og hvor tallene stammer fra.",
+    "materials": "Glasurråvarerne i Glazecalcs standardbibliotek, fra feldspater og ler til fritter og borkilder, hver med sin oxidanalyse, Seger-formel og farer.",
     "materialInfo": "{name}: oxidanalyse, Seger-formel, glødetab og farer i Glazecalcs standardbibliotek.",
     "materialInfoLong": "{name} i Glazecalcs standardbibliotek over glasurråvarer: oxidanalyse, bidrag til Seger-formlen, glødetab og farer.",
     "imageAlt": "Glazecalcs logo og overskrift, gratis glasurkemi for keramikere, ved siden af et foto af brændte keglesæt."
