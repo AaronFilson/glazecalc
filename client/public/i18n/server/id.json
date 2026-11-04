@@ -121,6 +121,8 @@
   "trash-restored-already": "Ini sudah dikembalikan.",
   "trash-emptied": "Sampah kosong.",
   "trash-full": "Sampah penuh, sehingga token akses tidak dapat memindahkan apa pun lagi ke dalamnya. Silakan kosongkan sebagian di situs web dulu.",
+  "record-conflict": "{label, select, additive {Aditif} advice {Saran} firing {Catatan pembakaran} material {Bahan} note {Catatan} recipe {Resep} trash {Item di Sampah} other {Data}} ini diubah di tempat lain setelah salinan yang Anda gunakan dibuat, sehingga perubahan Anda tidak disimpan.",
+  "record-gone": "{label, select, additive {Aditif} advice {Saran} firing {Catatan pembakaran} material {Bahan} note {Catatan} recipe {Resep} trash {Item di Sampah} other {Data}} ini sudah tidak ada: dihapus atau dipindahkan ke Sampah.",
   "firing-links-full": "Satu resep dapat ditautkan ke paling banyak {most} catatan pembakaran. Putuskan satu tautan untuk menautkan yang lain.",
   "account-limit": "Satu akun dapat menyimpan paling banyak {limit} catatan secara keseluruhan: resep, bahan, catatan, catatan pembakaran, dan sisanya digabungkan. Silakan hapus sebagian untuk menyimpan lebih banyak.",
   "import-not-export": "Ini bukan berkas data Glazecalc. Silakan pilih berkas JSON dari Unduh data saya.",

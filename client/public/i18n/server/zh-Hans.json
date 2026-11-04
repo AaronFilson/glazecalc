@@ -121,6 +121,8 @@
   "trash-restored-already": "这已经放回了。",
   "trash-emptied": "回收站已清空。",
   "trash-full": "回收站已满，所以访问令牌无法再把更多内容移入其中。请先在网站上清理一部分。",
+  "record-conflict": "这条{label, select, additive {添加剂} advice {建议} firing {烧窑记录} material {原料} note {笔记} recipe {配方} trash {回收站项目} other {记录}}在你所用的副本之后于别处被更改，因此你的更改未保存。",
+  "record-gone": "这条{label, select, additive {添加剂} advice {建议} firing {烧窑记录} material {原料} note {笔记} recipe {配方} trash {回收站项目} other {记录}}已不存在：它已被移除或移入回收站。",
   "firing-links-full": "一个配方最多可以关联 {most} 条烧窑记录。请先取消关联一条，再关联另一条。",
   "account-limit": "每个账户最多可保存 {limit} 条记录，配方、原料、笔记、烧窑记录和其他记录合计在内。请移除一些后再保存更多。",
   "import-not-export": "这不是 Glazecalc 数据文件。请选择“下载我的数据”得到的 JSON 文件。",

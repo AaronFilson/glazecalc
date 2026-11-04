@@ -121,6 +121,8 @@
   "trash-restored-already": "Lokhu sekuvele kubuyiselwe.",
   "trash-emptied": "Udoti awunalutho.",
   "trash-full": "Udoti ugcwele, ngakho i-access token ayikwazi ukuhambisa okunye kuwo. Sicela uthulule okunye kwawo kuwebhusayithi kuqala.",
+  "record-conflict": "Leli rekhodi ({label, select, additive {isithasiselo} advice {iseluleko} firing {ukushisa} material {okokwakha} note {inothi} recipe {iresiphi} trash {udoti} other {rekhodi}}) liguqulwe kwenye indawo ngemva kwekhophi obusebenza kuyo, ngakho inguquko yakho ayilondolozwanga.",
+  "record-gone": "Leli rekhodi ({label, select, additive {isithasiselo} advice {iseluleko} firing {ukushisa} material {okokwakha} note {inothi} recipe {iresiphi} trash {udoti} other {rekhodi}}) alisekho: lisusiwe noma lidluliselwe kuDoti.",
   "firing-links-full": "Iresiphi ingaxhunywa kumarekhodi okushisa angeqile ku-{most}. Nqamula elilodwa ukuze uxhume elinye.",
   "account-limit": "I-akhawunti ingagcina amarekhodi afika ku-{limit} esewonke: amaresiphi, okokwakha, amanothi, amarekhodi okushisa nokunye ndawonye. Sicela ukhiphe amanye ukuze ulondoloze okwengeziwe.",
   "import-not-export": "Leli akulona ifayela lemininingwane ye-Glazecalc. Sicela ukhethe ifayela le-JSON elivela ku-Landa imininingwane yami.",

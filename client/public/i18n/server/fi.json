@@ -121,6 +121,8 @@
   "trash-restored-already": "Tämä on jo palautettu.",
   "trash-emptied": "Roskakori on tyhjä.",
   "trash-full": "Roskakori on täynnä, joten käyttöoikeustunnus ei voi siirtää sinne enempää. Tyhjennä osa siitä ensin verkkosivustolla.",
+  "record-conflict": "{label, select, additive {Lisäaine} advice {Neuvo} firing {Poltto} material {Raaka-aine} note {Muistiinpano} recipe {Resepti} trash {Roskakorin kohde} other {Tietue}} muutettiin muualla sen kopion jälkeen, jonka pohjalta työskentelit, joten muutostasi ei tallennettu.",
+  "record-gone": "{label, select, additive {Lisäainetta} advice {Neuvoa} firing {Polttoa} material {Raaka-ainetta} note {Muistiinpanoa} recipe {Reseptiä} trash {Roskakorin kohdetta} other {Tietuetta}} ei enää ole: se poistettiin tai siirrettiin roskakoriin.",
   "firing-links-full": "Reseptin voi liittää enintään {most} polttopäiväkirjaan. Irrota yksi, jotta voi liittää toisen.",
   "account-limit": "Tilillä voi säilyttää enintään {limit} tietuetta yhteensä: reseptit, raaka-aineet, muistiinpanot, polttopäiväkirjat ja muut yhdessä. Poista joitakin, jotta uusia voi tallentaa.",
   "import-not-export": "Tämä ei ole Glazecalcin tietotiedosto. Valitse JSON-tiedosto kohdasta Omien tietojen lataaminen.",

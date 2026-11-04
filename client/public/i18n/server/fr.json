@@ -121,6 +121,8 @@
   "trash-restored-already": "Cet élément a déjà été remis en place.",
   "trash-emptied": "La corbeille est vide.",
   "trash-full": "La corbeille est pleine : un jeton d’accès ne peut donc plus rien y mettre. Veuillez d’abord en vider une partie sur le site web.",
+  "record-conflict": "{label, select, additive {L’additif a été modifié} advice {Le conseil a été modifié} firing {Le relevé de cuisson a été modifié} material {La matière a été modifiée} note {La note a été modifiée} recipe {La recette a été modifiée} trash {L’élément a été modifié} other {L’enregistrement a été modifié}} ailleurs après la copie sur laquelle vous travailliez ; votre modification n’a donc pas été enregistrée.",
+  "record-gone": "{label, select, additive {L’additif n’existe plus} advice {Le conseil n’existe plus} firing {Le relevé de cuisson n’existe plus} material {La matière n’existe plus} note {La note n’existe plus} recipe {La recette n’existe plus} trash {L’élément n’existe plus} other {L’enregistrement n’existe plus}} : l’élément a été supprimé ou mis à la corbeille.",
   "firing-links-full": "Une recette peut être associée à {most} relevés de cuisson au plus. Dissociez-en un pour en associer un autre.",
   "account-limit": "Un compte peut garder jusqu’à {limit} enregistrements au total : recettes, matières, notes, relevés de cuisson et le reste ensemble. Retirez-en pour en enregistrer davantage.",
   "import-not-export": "Ce n’est pas un fichier de données Glazecalc. Veuillez choisir le fichier JSON de Télécharger mes données.",

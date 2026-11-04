@@ -121,6 +121,8 @@
   "trash-restored-already": "Bu zaten geri konulmuştu.",
   "trash-emptied": "Çöp kutusu boş.",
   "trash-full": "Çöp kutusu dolu; bu yüzden bir erişim belirteci ona başka bir şey taşıyamaz. Lütfen önce web sitesinde bir kısmını boşaltın.",
+  "record-conflict": "Bu {label, select, additive {katkı} advice {tavsiye} firing {pişirim kaydı} material {hammadde} note {not} recipe {reçete} trash {çöp kutusu öğesi} other {kayıt}} üzerinde çalıştığınız kopyadan sonra başka bir yerde değiştirildi, bu yüzden değişikliğiniz kaydedilmedi.",
+  "record-gone": "Bu {label, select, additive {katkı} advice {tavsiye} firing {pişirim kaydı} material {hammadde} note {not} recipe {reçete} trash {çöp kutusu öğesi} other {kayıt}} artık yok: kaldırılmış ya da Çöp kutusuna taşınmış.",
   "firing-links-full": "Bir reçeteye en fazla {most} pişirim kaydı bağlanabilir. Başkasını bağlamak için birinin bağlantısını kaldırın.",
   "account-limit": "Bir hesapta toplam en fazla {limit} kayıt saklanabilir: reçeteler, hammaddeler, notlar, pişirim kayıtları ve geri kalanı birlikte. Daha fazlasını kaydetmek için lütfen bazılarını kaldırın.",
   "import-not-export": "Bu bir Glazecalc veri dosyası değil. Lütfen Verilerimi indir ile alınan JSON dosyasını seçin.",

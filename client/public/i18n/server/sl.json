@@ -121,6 +121,8 @@
   "trash-restored-already": "To je bilo že vrnjeno.",
   "trash-emptied": "Koš je prazen.",
   "trash-full": "Koš je poln, zato dostopni žeton vanj ne more premakniti ničesar več. Najprej nekaj izpraznite na spletni strani.",
+  "record-conflict": "Ta zapis ({label, select, additive {dodatek} advice {nasvet} firing {žganje} material {surovina} note {zapisek} recipe {recept} trash {koš} other {zapis}}) je bil spremenjen drugje po kopiji, iz katere ste delali, zato vaša sprememba ni bila shranjena.",
+  "record-gone": "Ta zapis ({label, select, additive {dodatek} advice {nasvet} firing {žganje} material {surovina} note {zapisek} recipe {recept} trash {koš} other {zapis}}) ni več na voljo: je bil odstranjen ali premaknjen v koš.",
   "firing-links-full": "Recept je mogoče povezati z največ {most} dnevniki žganja. Prekinite povezavo z enim, da povežete drugega.",
   "account-limit": "Račun lahko hrani največ {limit} zapisov skupaj: recepte, surovine, zapiske, dnevnike žganja in drugo skupaj. Če želite shraniti več, nekaj odstranite.",
   "import-not-export": "To ni podatkovna datoteka Glazecalc. Izberite datoteko JSON iz Prenosa mojih podatkov.",

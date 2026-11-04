@@ -121,6 +121,8 @@
   "trash-restored-already": "Acest lucru a fost deja pus la loc.",
   "trash-emptied": "Coșul de reciclare este gol.",
   "trash-full": "Coșul de reciclare este plin, așa că un token de acces nu mai poate muta nimic în el. Goliți mai întâi o parte pe site.",
+  "record-conflict": "Această înregistrare ({label, select, additive {aditiv} advice {sfat} firing {ardere} material {materie primă} note {notiță} recipe {rețetă} trash {coș de reciclare} other {înregistrare}}) a fost modificată în altă parte după copia de la care lucrați, deci modificarea dumneavoastră nu a fost salvată.",
+  "record-gone": "Această înregistrare ({label, select, additive {aditiv} advice {sfat} firing {ardere} material {materie primă} note {notiță} recipe {rețetă} trash {coș de reciclare} other {înregistrare}}) nu mai există: a fost eliminată sau mutată în Coșul de reciclare.",
   "firing-links-full": "O rețetă poate fi asociată cu cel mult {most} de jurnale de ardere. Dezasociați unul pentru a-l asocia pe altul.",
   "account-limit": "Un cont poate păstra cel mult {limit} înregistrări în total: rețete, materii prime, notițe, jurnale de ardere și restul la un loc. Eliminați câteva ca să puteți salva mai multe.",
   "import-not-export": "Acesta nu este un fișier de date Glazecalc. Alegeți fișierul JSON de la Descărcați datele mele.",

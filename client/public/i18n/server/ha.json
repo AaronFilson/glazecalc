@@ -121,6 +121,8 @@
   "trash-restored-already": "An riga an mayar da wannan.",
   "trash-emptied": "Kwandon shara babu komai.",
   "trash-full": "Kwandon shara ya cika, don haka access token ba zai iya matsar da wani abu kuma zuwa gare shi ba. Da fatan a zubar da wani ɓangare nasa a shafin yanar gizo tukuna.",
+  "record-conflict": "An canza wannan {label, select, additive {ƙarin kaya} advice {shawara} firing {gasa} material {kaya} note {bayani} recipe {girke-girke} trash {shara} other {bayani}} a wani wuri bayan kwafin da kuke aiki da shi, don haka ba a adana canjinku ba.",
+  "record-gone": "Wannan {label, select, additive {ƙarin kaya} advice {shawara} firing {gasa} material {kaya} note {bayani} recipe {girke-girke} trash {shara} other {bayani}} ba ya nan kuma: an cire shi ko an matsar da shi zuwa Kwandon shara.",
   "firing-links-full": "Ana iya haɗa girke-girke da bayanan gasa da ba su wuce {most} ba. Raba ɗaya don haɗa wani.",
   "account-limit": "Asusu zai iya riƙe bayanai har {limit} gaba ɗaya: girke-girke, kaya, bayanai, bayanan gasa da sauran tare. Da fatan a cire wasu don ajiye ƙari.",
   "import-not-export": "Wannan ba fayil ɗin bayanan Glazecalc ba ne. Da fatan a zaɓi fayil ɗin JSON daga Sauke bayanaina.",

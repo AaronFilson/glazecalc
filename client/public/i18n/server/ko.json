@@ -121,6 +121,8 @@
   "trash-restored-already": "이미 복원되었습니다.",
   "trash-emptied": "휴지통을 비웠습니다.",
   "trash-full": "휴지통이 가득 차서 액세스 토큰으로는 더 이상 항목을 옮길 수 없습니다. 먼저 웹사이트에서 휴지통을 일부 비우세요.",
+  "record-conflict": "이 {label, select, additive {첨가제} advice {조언} firing {소성 기록} material {원료} note {메모} recipe {레시피} trash {휴지통 항목} other {기록}}은(는) 작업에 사용한 사본 이후 다른 곳에서 변경되어 변경 사항이 저장되지 않았습니다.",
+  "record-gone": "이 {label, select, additive {첨가제} advice {조언} firing {소성 기록} material {원료} note {메모} recipe {레시피} trash {휴지통 항목} other {기록}}은(는) 더 이상 없습니다. 삭제되었거나 휴지통으로 이동되었습니다.",
   "firing-links-full": "레시피 하나에는 소성 기록을 최대 {most}개까지 연결할 수 있습니다. 다른 기록을 연결하려면 하나를 연결 해제하세요.",
   "account-limit": "계정 하나에는 레시피, 원료, 메모, 소성 기록 등을 모두 합쳐 최대 {limit}건의 기록을 보관할 수 있습니다. 더 저장하려면 일부를 삭제하세요.",
   "import-not-export": "Glazecalc 데이터 파일이 아닙니다. 내 데이터 내려받기의 JSON 파일을 선택하세요.",

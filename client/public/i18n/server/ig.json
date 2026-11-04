@@ -121,6 +121,8 @@
   "trash-restored-already": "Eweghachilarị nke a.",
   "trash-emptied": "Ebe mkpofu tọgbọ chakoo.",
   "trash-full": "Ebe mkpofu ejupụtala, ya mere token nnweta enweghị ike ibuga ihe ọzọ n'ime ya. Biko buru ụzọ kpofuo ụfọdụ n'ime ya na weebụsaịtị.",
+  "record-conflict": "{label, select, additive {Ihe mgbakwunye} advice {Ndụmọdụ} firing {Ndekọ ọkụ} material {Ihe eji arụ ọrụ} note {Ndetu} recipe {Usoro glaze} trash {Ihe dị n’Ebe mkpofu} other {Ndekọ}} a, e gbanwere ya n’ebe ọzọ mgbe mbipụta ị na-arụ ọrụ na ya gasịrị, n’ihi ya echekwaghị mgbanwe gị.",
+  "record-gone": "{label, select, additive {Ihe mgbakwunye} advice {Ndụmọdụ} firing {Ndekọ ọkụ} material {Ihe eji arụ ọrụ} note {Ndetu} recipe {Usoro glaze} trash {Ihe dị n’Ebe mkpofu} other {Ndekọ}} a adịghịzi: e wepụrụ ya ma ọ bụ e bugara ya n’Ebe mkpofu.",
   "firing-links-full": "Enwere ike ijikọ usoro na ndekọ ọkụ agaghị karịa {most}. Kwụpụ njikọ otu iji jikọọ nke ọzọ.",
   "account-limit": "Akaụntụ nwere ike idebe ndekọ ruo {limit} n'ozuzu: usoro, ihe eji arụ ọrụ, ndetu, ndekọ ọkụ na ndị ọzọ niile ọnụ. Biko wepụ ụfọdụ iji chekwaa ndị ọzọ.",
   "import-not-export": "Nke a abụghị faịlụ data Glazecalc. Biko họrọ faịlụ JSON sitere na Budata data m.",

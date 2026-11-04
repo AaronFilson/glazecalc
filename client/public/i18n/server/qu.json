@@ -121,6 +121,8 @@
   "trash-restored-already": "Kayqa ñam kutichisqaña.",
   "trash-emptied": "Q'upaqa ch'usaqmi.",
   "trash-full": "Q'upaqa hunt'asqam, chayrayku yaykuna tokenqa manañam imatapas chayman astayta atinchu. Ñawpaqta web p'anqapi wakinta ch'usaqyachiy.",
+  "record-conflict": "Kay {label, select, additive {aditivo} advice {yuyaychay} firing {ruphachiy qillqa} material {material} note {apunte} recipe {esmalte rurana} trash {q'upa} other {qillqa}} huk chiqaspi tikrasqa karqa, qanpa llamk'asqayki copiamanta qhipa, chayrayku tikrayniykiqa manam waqaychasqachu.",
+  "record-gone": "Kay {label, select, additive {aditivo} advice {yuyaychay} firing {ruphachiy qillqa} material {material} note {apunte} recipe {esmalte rurana} trash {q'upa} other {qillqa}} manañam kanchu: qichusqa utaq Q'upaman apasqa.",
   "firing-links-full": "Esmalte ruranaqa aswanqa {most}-kama (como máximo) ruphachiy qillqakunaman tinkikunman. Hukta tinkinaykipaq hukpa tinkiyninta qichuy.",
   "account-limit": "Huk cuentaqa llapanpi {limit}-kama qillqakunata waqaychanman: esmalte ruranakuna, materialkuna, apuntekuna, ruphachiy qillqakuna, hukkunapas kuska. Astawan waqaychanaykipaq wakinta qichuy.",
   "import-not-export": "Kayqa manam Glazecalc willakuy archivochu. Willakuyniyta uraykachiy nisqamanta JSON archivota akllariykuy.",

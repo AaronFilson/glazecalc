@@ -121,6 +121,8 @@
   "trash-restored-already": "Toto už bylo vráceno zpět.",
   "trash-emptied": "Koš je prázdný.",
   "trash-full": "Koš je plný, proto do něj přístupový token nemůže přesunout nic dalšího. Nejdřív prosím část koše vyprázdněte na webu.",
+  "record-conflict": "{label, select, additive {Přísada byla změněna} advice {Rada byla změněna} firing {Záznam výpalu byl změněn} material {Surovina byla změněna} note {Poznámka byla změněna} recipe {Recept byl změněn} trash {Položka v koši byla změněna} other {Záznam byl změněn}} jinde po kopii, ze které jste vycházeli, takže vaše změna nebyla uložena.",
+  "record-gone": "{label, select, additive {Přísada už neexistuje} advice {Rada už neexistuje} firing {Záznam výpalu už neexistuje} material {Surovina už neexistuje} note {Poznámka už neexistuje} recipe {Recept už neexistuje} trash {Položka v koši už neexistuje} other {Záznam už neexistuje}}: položka byla odstraněna nebo přesunuta do koše.",
   "firing-links-full": "S receptem lze propojit nejvýše {most} záznamů výpalů. Chcete-li propojit další, zrušte propojení s jedním z nich.",
   "account-limit": "V účtu lze celkem uchovávat nejvýše {limit} záznamů: receptů, surovin, poznámek, záznamů výpalů a dalšího dohromady. Chcete-li uložit víc, některé prosím odeberte.",
   "import-not-export": "Toto není soubor dat Glazecalc. Vyberte prosím soubor JSON ze Stáhnout moje data.",

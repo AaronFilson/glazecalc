@@ -121,6 +121,8 @@
   "trash-restored-already": "Det er allerede sat tilbage.",
   "trash-emptied": "Papirkurven er tom.",
   "trash-full": "Papirkurven er fuld, så et adgangstoken kan ikke flytte mere til den. Tøm noget af den på webstedet først.",
+  "record-conflict": "{label, select, additive {Tilsætningen} advice {Rådet} firing {Brændingsjournalen} material {Råvaren} note {Noten} recipe {Opskriften} trash {Posten} other {Posten}} blev ændret et andet sted efter den kopi, du arbejdede ud fra, så din ændring blev ikke gemt.",
+  "record-gone": "{label, select, additive {Tilsætningen} advice {Rådet} firing {Brændingsjournalen} material {Råvaren} note {Noten} recipe {Opskriften} trash {Posten} other {Posten}} findes ikke længere. Posten blev fjernet eller flyttet til papirkurven.",
   "firing-links-full": "En opskrift kan tilknyttes højst {most} brændingsjournaler. Frakobl en for at tilknytte en anden.",
   "account-limit": "En konto kan have op til {limit} poster i alt: opskrifter, råvarer, noter, brændingsjournaler og resten tilsammen. Fjern nogle for at kunne gemme flere.",
   "import-not-export": "Dette er ikke en Glazecalc-datafil. Vælg JSON-filen fra Download mine data.",

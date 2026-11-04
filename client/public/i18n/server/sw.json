@@ -121,6 +121,8 @@
   "trash-restored-already": "Hii imerudishwa tayari.",
   "trash-emptied": "Tupio ni tupu.",
   "trash-full": "Tupio limejaa, kwa hiyo tokeni ya ufikiaji haiwezi kuhamishia kitu kingine humo. Tafadhali safisha sehemu yake kwenye tovuti kwanza.",
+  "record-conflict": "Rekodi hii ({label, select, additive {kiongezi} advice {ushauri} firing {uchomaji} material {malighafi} note {maelezo} recipe {kichocheo} trash {tupio} other {rekodi}}) ilibadilishwa mahali pengine baada ya nakala uliyokuwa unaifanyia kazi, kwa hiyo badiliko lako halikuhifadhiwa.",
+  "record-gone": "Rekodi hii ({label, select, additive {kiongezi} advice {ushauri} firing {uchomaji} material {malighafi} note {maelezo} recipe {kichocheo} trash {tupio} other {rekodi}}) haipo tena: iliondolewa au kuhamishiwa Tupioni.",
   "firing-links-full": "Kichocheo kinaweza kuunganishwa na kumbukumbu za kuchoma zisizozidi {most}. Ondoa kiungo cha moja ili kuunganisha nyingine.",
   "account-limit": "Akaunti inaweza kuhifadhi rekodi zisizozidi {limit} kwa jumla: vichocheo, malighafi, maelezo, kumbukumbu za kuchoma na vingine vyote kwa pamoja. Tafadhali ondoa baadhi ili kuhifadhi zaidi.",
   "import-not-export": "Hii si faili ya data ya Glazecalc. Tafadhali chagua faili ya JSON kutoka Pakua data yangu.",

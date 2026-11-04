@@ -121,6 +121,8 @@
   "trash-restored-already": "Det här har redan lagts tillbaka.",
   "trash-emptied": "Papperskorgen är tom.",
   "trash-full": "Papperskorgen är full, så en åtkomsttoken kan inte flytta något mer dit. Töm en del av den på webbplatsen först.",
+  "record-conflict": "Den här posten ({label, select, additive {tillsats} advice {råd} firing {bränning} material {råvara} note {anteckning} recipe {recept} trash {papperskorg} other {post}}) ändrades på ett annat ställe efter kopian du arbetade från, så din ändring sparades inte.",
+  "record-gone": "Den här posten ({label, select, additive {tillsats} advice {råd} firing {bränning} material {råvara} note {anteckning} recipe {recept} trash {papperskorg} other {post}}) finns inte kvar: den har tagits bort eller flyttats till papperskorgen.",
   "firing-links-full": "Ett recept kan kopplas till högst {most} brännloggar. Koppla bort en för att koppla en annan.",
   "account-limit": "Ett konto kan ha högst {limit} poster sammanlagt: recept, råvaror, anteckningar, brännloggar och resten tillsammans. Ta bort några för att kunna spara fler.",
   "import-not-export": "Det här är inte en Glazecalc-datafil. Välj JSON-filen från Ladda ner kontots uppgifter.",
