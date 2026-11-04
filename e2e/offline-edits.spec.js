@@ -53,11 +53,20 @@ const copied = (page, key, field = 'title') =>
             db.close();
             return resolve(null);
           }
-          const get = db.transaction('copies').objectStore('copies').get(name);
-          get.onsuccess = () => {
-            db.close();
-            const body = get.result?.body;
-            resolve(Array.isArray(body) ? body.map((r) => r[prop]) : null);
+          // Each account's copy is under '<userId>/<name>'; 'current' names the one shown.
+          const store = db.transaction('copies').objectStore('copies');
+          const current = store.get('current');
+          current.onsuccess = () => {
+            if (!current.result) {
+              db.close();
+              return resolve(null);
+            }
+            const get = store.get(current.result + '/' + name);
+            get.onsuccess = () => {
+              db.close();
+              const body = get.result?.body;
+              resolve(Array.isArray(body) ? body.map((r) => r[prop]) : null);
+            };
           };
         };
         opening.onerror = () => resolve(null);

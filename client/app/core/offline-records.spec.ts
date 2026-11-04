@@ -16,6 +16,7 @@ import {
   OfflineRecords,
   RECORDS_DB,
   RECORDS_FLAG,
+  RECORDS_LOCKED,
   RECORD_KEYS,
   iosEvictionRisk
 } from './offline-records';
@@ -464,15 +465,38 @@ describe('the records kept on this device', () => {
     expect((await records.read('recipe'))?.body).toEqual(RECIPES);
   });
 
-  it("a different user signing in replaces the copy and turns it off: the first user's copy is not shown to them", async () => {
+  it("a different user signing in locks the first user's copy away: not shown, counted, kept for their next sign-in", async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
     await turnOn(records);
-    await vi.waitFor(async () => expect(await databases()).toContain(RECORDS_DB));
+    await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
     await signInAs('b@b.c', 'u2');
     await vi.waitFor(() => expect(records.enabled()).toBe(false));
-    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe(RECORDS_LOCKED);
+    expect(await records.read('recipe')).toBeNull();
+    expect(await databases()).toContain(RECORDS_DB);
+
+    // The first user comes back: their copy is theirs again.
+    await signInAs('a@b.c', 'u1');
+    await vi.waitFor(() => expect(records.enabled()).toBe(true));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect((await records.read('recipe'))?.body).toEqual(RECIPES);
+  });
+
+  it("the new user turning their own copy on and off leaves the other account's locked copy", async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+    await signInAs('b@b.c', 'u2');
+    await vi.waitFor(() => expect(localStorage.getItem(RECORDS_FLAG)).toBe(RECORDS_LOCKED));
+    await records.clear();
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe(RECORDS_LOCKED);
+    expect(await databases()).toContain(RECORDS_DB);
+
+    await signInAs('a@b.c', 'u1');
+    await vi.waitFor(() => expect(records.enabled()).toBe(true));
+    expect((await records.read('recipe'))?.body).toEqual(RECIPES);
   });
 
   it("turned on where the browser won't keep anything, it switches back off and says so", async () => {

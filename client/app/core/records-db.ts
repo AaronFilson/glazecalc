@@ -5,14 +5,28 @@
 export const RECORDS_DB = 'gc-records';
 /**
  * The layout of the database; one of another layout is dropped and fetched again.
- * 2: a time saved per copy. 3: the outbox store. A later upgrade must keep the outbox store: it holds changes
- * the user made that exist nowhere else.
+ * 2: a time saved per copy. 3: the outbox store. 4: a copy per account (keys `<userId>/<name>`). A later upgrade
+ * must keep the outbox store: it holds changes the user made that exist nowhere else.
  */
-export const SCHEMA = 3;
-/** The store of copies, by name. */
+export const SCHEMA = 4;
+/** The store of copies, by `<userId>/<name>`: each account's copy is its own, and stays when another signs in. */
 export const STORE = 'copies';
-/** The key in STORE that holds who the copy is of and when it was saved. */
+/** The name, under an account's prefix, of the record that holds when its copy was saved. */
 export const META = 'meta';
+/** The key in STORE that names the account whose copy is shown when the app starts before /verify answers. */
+export const CURRENT = 'current';
+
+/** The key in STORE of one account's copy (or META). */
+export function copyKey(userId: string, name: string): string {
+  return userId + '/' + name;
+}
+
+/** The account a STORE key belongs to, or null for CURRENT. */
+export function accountOf(key: IDBValidKey): string | null {
+  const text = String(key);
+  const slash = text.indexOf('/');
+  return slash > 0 ? text.slice(0, slash) : null;
+}
 /** The store of waiting changes, keyed by a counter (the order they were made in). */
 export const OUTBOX = 'outbox';
 
@@ -22,8 +36,8 @@ export function openRecordsDb(onClosed: () => void): Promise<IDBDatabase> {
     const opening = indexedDB.open(RECORDS_DB, SCHEMA);
     opening.onupgradeneeded = (event) => {
       const db = opening.result;
-      // An older layout: its copies are dropped (the outbox did not exist before layout 3).
-      if (event.oldVersion < 3 && db.objectStoreNames.contains(STORE)) db.deleteObjectStore(STORE);
+      // An older layout: its copies are dropped and fetched again; the outbox is kept.
+      if (event.oldVersion < 4 && db.objectStoreNames.contains(STORE)) db.deleteObjectStore(STORE);
       if (!db.objectStoreNames.contains(STORE)) db.createObjectStore(STORE);
       if (!db.objectStoreNames.contains(OUTBOX)) db.createObjectStore(OUTBOX, { keyPath: 'seq', autoIncrement: true });
     };

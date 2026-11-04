@@ -9,13 +9,28 @@ import { API_BASE } from './api-base';
 import { AuthService, type SessionEndReason } from './auth.service';
 import { OfflineAsk } from './offline-ask';
 import { Outbox, applyEntry, type OutboxEntry } from './outbox';
-import { META, OUTBOX, RECORDS_DB, SCHEMA, STORE, deleteRecordsDb, done, openRecordsDb, request } from './records-db';
+import {
+  CURRENT,
+  META,
+  OUTBOX,
+  RECORDS_DB,
+  SCHEMA,
+  STORE,
+  accountOf,
+  copyKey,
+  deleteRecordsDb,
+  done,
+  openRecordsDb,
+  request
+} from './records-db';
 
 export { RECORDS_DB };
 /**
- * In this browser's storage: "1" while the user wants their records kept on this device.
+ * In this browser's storage: "1" while the account signed in last wants its records kept on this device;
+ * RECORDS_LOCKED while only other accounts' copies are kept here (locked, never shown).
  */
 export const RECORDS_FLAG = 'offlineRecords';
+export const RECORDS_LOCKED = 'locked';
 /** The collections a user owns, as the API names them (/api/<name>/getAll). */
 export const RECORD_COLLECTIONS = ['recipe', 'materials', 'additives', 'firing', 'notes'] as const;
 /** The user's settings, kept beside the records (/api/preferences, /api/prices). */
@@ -76,8 +91,10 @@ interface Kept {
  * The person's work is not deleted behind their back. Closing the browser, restarting the device, the sign-in
  * running out (offline or not), a session-only sign-in after the browser closed, and a failed /verify while
  * offline all leave the copy and the queue as they are. They go only when the person turns the copy off or clears
- * it (`clear`), or deletes their account. A different user signing in locks the previous user's queue away (never
- * shown, never sent, kept for their next sign-in) and replaces the copy. Not encrypted by the app: the browser
+ * it (`clear`), or deletes their account. Each account's copy is kept under its own id: a different user signing
+ * in locks the previous user's copy and queue away (never shown, never sent, kept for their next sign-in, deleted
+ * only by that user, or by clearing the browser's storage). The app never tells one account whether another has
+ * anything here, and never lets one delete another's. Not encrypted by the app: the browser
  * keeps each site's storage apart and the device encrypts its disk.
  */
 @Injectable({ providedIn: 'root' })
@@ -113,8 +130,6 @@ export class OfflineRecords {
   readonly notKept = signal(false);
   /** Turning the copy on in an iPhone or iPad browser: Safari may remove it after 7 days without use. */
   readonly iosNotice = signal(false);
-  /** How many changes of other accounts wait, locked, on this browser (count only; never their content). */
-  readonly otherCount = signal(0);
   /** Whether saving is off: the page shows the copy. */
   readonly readOnly = computed(() => this.showingCopy() !== null);
   /** Why saving is off, for the title of a disabled button; null while saving is on. */
@@ -131,13 +146,16 @@ export class OfflineRecords {
     // A new sign-in: the copy may be another person's until /verify names who signed in.
     this.auth.onSessionStart(() => this.sessionStarted());
     // A copy left behind that nothing needs (no flag, no waiting change): a clear another tab blocked.
-    if (!this.enabled() && !this.outbox().noted()) this.ready = this.drop();
+    if (!this.storesAnything()) this.ready = this.drop();
     // Changes waiting from before: counted at once, so a start with no network shows them (the user is the copy's).
     else if (this.outbox().noted()) queueMicrotask(() => void this.outbox().refreshCount());
     // Another tab turned the copy off, or the storage was cleared by the person.
     const onStorage = (event: StorageEvent) => {
       if (event.key === null) void this.clear();
-      else if (event.key === RECORDS_FLAG && event.newValue === null) this.forgetState();
+      else if (event.key === RECORDS_FLAG && event.newValue !== '1') {
+        this.enabled.set(false);
+        this.forgetState();
+      }
     };
     // The network is back: refresh the copies that were shown, offer to load the page again, and send the changes
     // made meanwhile. The page stays read-only until it is loaded again.
@@ -235,17 +253,6 @@ export class OfflineRecords {
     return this.outbox().count();
   }
 
-  /** Counts the changes other accounts left on this browser (count only). */
-  async refreshOthers(): Promise<void> {
-    if (!this.outbox().noted()) {
-      this.otherCount.set(0);
-      return;
-    }
-    const me = await this.ownerId();
-    const entries = await this.outbox().entries();
-    this.otherCount.set(entries.filter((entry) => entry.userId !== me).length);
-  }
-
   /** Asks to delete, naming how many unsent changes go with it; true when the person agrees. */
   private async confirmDelete(title: string, confirm: string, count: number): Promise<boolean> {
     const body = [translate(marker('offline.deleteBody'))];
@@ -267,32 +274,6 @@ export class OfflineRecords {
     const count = await this.unsentCount();
     if (!(await this.confirmDelete(marker('offline.clearTitle'), marker('offline.clearButton'), count))) return false;
     await this.clear();
-    return true;
-  }
-
-  /** "Delete the other account's offline data": asks (count only), then deletes the locked changes. */
-  async deleteOthers(): Promise<boolean> {
-    await this.refreshOthers();
-    const count = this.otherCount();
-    if (!count) return false;
-    const answer = await this.injector.get(OfflineAsk).ask({
-      title: translate(marker('offline.otherTitle')),
-      body: [translate(marker('offline.otherBody'), { count })],
-      choices: [
-        { id: 'cancel', label: translate(marker('offline.cancel')), primary: true },
-        { id: 'delete', label: translate(marker('offline.otherConfirm')), danger: true }
-      ],
-      cancel: 'cancel'
-    });
-    if (answer !== 'delete') return false;
-    const me = await this.ownerId();
-    const others = new Set((await this.outbox().entries()).map((entry) => entry.userId).filter((id) => id !== me));
-    if (others.size) {
-      const empty = await this.outbox().remove(others);
-      await this.outbox().refreshCount(me ?? undefined);
-      if (empty && !this.enabled()) await this.drop();
-    }
-    await this.refreshOthers();
     return true;
   }
 
@@ -337,7 +318,18 @@ export class OfflineRecords {
    */
   async ownerId(): Promise<string | null> {
     if (this.user) return this.user.id;
-    return (await this.meta())?.userId ?? null;
+    return this.currentId();
+  }
+
+  /** The account whose copy is the one shown (the last one kept), or null. */
+  private async currentId(): Promise<string | null> {
+    if (!this.storesAnything()) return null;
+    try {
+      const db = await this.openAny();
+      return (await request<string | undefined>(db.transaction(STORE).objectStore(STORE).get(CURRENT))) ?? null;
+    } catch {
+      return null;
+    }
   }
 
   /** Who is signed in, asking /verify if this tab does not know yet; null when nobody is, or it cannot be asked. */
@@ -385,20 +377,16 @@ export class OfflineRecords {
       const user = this.user;
       if (!user || !this.keeping()) return;
       const db = await this.open();
-      const meta = await request<Meta | undefined>(db.transaction(STORE).objectStore(STORE).get(META));
-      if (meta && (meta.schema !== SCHEMA || meta.userId !== user.id)) {
-        // Another person's copy (or an older layout): replaced. Their waiting changes stay, locked.
-        await this.wipe(false);
-        this.user = user;
-        return;
-      }
+      // Only into the copy of the account that kept it: another account's sign-in is sorted out by checkOwner.
+      const current = await request<string | undefined>(db.transaction(STORE).objectStore(STORE).get(CURRENT));
+      if (current !== user.id) return;
       const shown = await this.outbox().overlay(key, body, user.id);
       // A clear that came while the database opened wins.
       if (!this.keeping()) return;
       const now = Date.now();
       const tx = db.transaction(STORE, 'readwrite');
-      tx.objectStore(STORE).put({ body: shown, savedAt: now } satisfies Kept, key);
-      tx.objectStore(STORE).put(this.metaFor(user, now), META);
+      tx.objectStore(STORE).put({ body: shown, savedAt: now } satisfies Kept, copyKey(user.id, key));
+      tx.objectStore(STORE).put(this.metaFor(user, now), copyKey(user.id, META));
       await done(tx);
     } catch {
       // No room, or the database is gone: the copy stays as it was.
@@ -411,11 +399,12 @@ export class OfflineRecords {
     const user = this.user;
     try {
       const store = (await this.open()).transaction(STORE).objectStore(STORE);
-      const meta = await request<Meta | undefined>(store.get(META));
-      if (!meta || meta.schema !== SCHEMA) return null;
       // Offline at start the user is not known: the copy is then the last session's.
-      if (user && meta.userId !== user.id) return null;
-      const kept = await request<Kept | undefined>(store.get(key));
+      const current = await request<string | undefined>(store.get(CURRENT));
+      if (!current || (user && current !== user.id)) return null;
+      const meta = await request<Meta | undefined>(store.get(copyKey(current, META)));
+      if (!meta || meta.schema !== SCHEMA) return null;
+      const kept = await request<Kept | undefined>(store.get(copyKey(current, key)));
       return kept ? { body: kept.body, savedAt: new Date(kept.savedAt) } : null;
     } catch {
       return null;
@@ -431,8 +420,9 @@ export class OfflineRecords {
     try {
       const db = await this.open();
       const tx = db.transaction(STORE, 'readwrite');
-      const kept = await request<Kept | undefined>(tx.objectStore(STORE).get(entry.area));
-      if (kept) tx.objectStore(STORE).put({ ...kept, body: applyEntry(kept.body, entry) } satisfies Kept, entry.area);
+      const key = copyKey(entry.userId, entry.area);
+      const kept = await request<Kept | undefined>(tx.objectStore(STORE).get(key));
+      if (kept) tx.objectStore(STORE).put({ ...kept, body: applyEntry(kept.body, entry) } satisfies Kept, key);
       await done(tx);
     } catch {
       // The copy stays as it was; the change is still queued.
@@ -458,19 +448,11 @@ export class OfflineRecords {
   }
 
   /**
-   * Deletes the copy, its flag and the signed-in user's waiting changes: the person's own choice (turning the copy
-   * off, clearing offline data), or the account being deleted. Another user's locked changes stay.
+   * Deletes the signed-in user's copy, its flag and their waiting changes: the person's own choice (turning the copy
+   * off, clearing offline data), or the account being deleted. Other accounts' locked copies and changes stay.
    */
   clear(): Promise<void> {
-    return this.wipe(true);
-  }
-
-  /**
-   * Deletes the copy and its flag but keeps every waiting change, locked to its user: the sign-in ended by the
-   * person's own sign-out, or another person's sign-in.
-   */
-  private lockAway(): Promise<void> {
-    return this.wipe(false);
+    return this.wipe();
   }
 
   /** The session ended. Only the person's sign-out or deleting the account removes anything. */
@@ -488,18 +470,17 @@ export class OfflineRecords {
     this.user = null;
     this.held = this.enabled();
     this.learning = null;
-    if (this.enabled() || this.outbox().noted()) void this.verify();
+    if (this.storesAnything()) void this.verify();
   }
 
-  /** /verify named the user: another person's copy is locked away; the same person's queue is sent. */
+  /**
+   * /verify named the user: another person's copy is locked away (kept, not shown), and the user's own copy, if
+   * they kept one here before, is shown again; the same person's queue is sent.
+   */
   private async checkOwner(user: SignedInUser): Promise<void> {
     try {
-      const meta = await this.meta();
-      if (meta && meta.userId !== user.id && this.user === user) {
-        await this.lockAway();
-        // The person who signed in is still signed in.
-        this.user = user;
-      }
+      if (this.storesAnything() && this.user === user && (await this.currentId()) !== user.id)
+        await this.switchTo(user);
     } finally {
       if (this.user === user) this.held = false;
     }
@@ -507,6 +488,57 @@ export class OfflineRecords {
       void this.outbox().refreshCount(user.id);
       void this.outbox().flush();
     }
+  }
+
+  /** Makes `user`'s copy the one shown, or none when they keep none here; every other copy stays, locked. */
+  private async switchTo(user: SignedInUser): Promise<void> {
+    let mine = false;
+    try {
+      const db = await this.openAny();
+      const tx = db.transaction(STORE, 'readwrite');
+      const store = tx.objectStore(STORE);
+      const meta = await request<Meta | undefined>(store.get(copyKey(user.id, META)));
+      mine = meta?.schema === SCHEMA;
+      if (mine) store.put(user.id, CURRENT);
+      else store.delete(CURRENT);
+      await done(tx);
+    } catch {
+      // Could not look: nothing is shown, nothing is deleted.
+      mine = false;
+    }
+    if (this.user !== user) return;
+    this.forgetState();
+    this.user = user;
+    this.setFlag(mine ? '1' : RECORDS_LOCKED);
+    this.enabled.set(mine);
+    if (mine) void this.refresh();
+  }
+
+  /** Whether this browser may hold a copy (any account's) or waiting changes. */
+  private storesAnything(): boolean {
+    return this.browser && (this.rawFlag() !== null || this.outbox().noted());
+  }
+
+  private rawFlag(): string | null {
+    try {
+      return localStorage.getItem(RECORDS_FLAG);
+    } catch {
+      return null;
+    }
+  }
+
+  private setFlag(value: string | null): void {
+    try {
+      if (value === null) localStorage.removeItem(RECORDS_FLAG);
+      else localStorage.setItem(RECORDS_FLAG, value);
+    } catch {
+      // Storage unavailable.
+    }
+  }
+
+  /** Opens the database whether or not the signed-in user keeps a copy: only call it when storesAnything. */
+  private openAny(): Promise<IDBDatabase> {
+    return this.db ?? openRecordsDb(() => (this.db = null));
   }
 
   /** Resets what this tab knows and shows; storage is left as it is. */
@@ -564,8 +596,9 @@ export class OfflineRecords {
     try {
       const db = await this.open();
       const tx = db.transaction(STORE, 'readwrite');
-      const old = await request<Meta | undefined>(tx.objectStore(STORE).get(META));
-      tx.objectStore(STORE).put(this.metaFor(user, old?.userId === user.id ? old.savedAt : 0), META);
+      const old = await request<Meta | undefined>(tx.objectStore(STORE).get(copyKey(user.id, META)));
+      tx.objectStore(STORE).put(this.metaFor(user, old?.schema === SCHEMA ? old.savedAt : 0), copyKey(user.id, META));
+      tx.objectStore(STORE).put(user.id, CURRENT);
       await done(tx);
       return true;
     } catch {
@@ -588,9 +621,10 @@ export class OfflineRecords {
 
   private async meta(): Promise<Meta | null> {
     try {
-      return (
-        (await request<Meta | undefined>((await this.open()).transaction(STORE).objectStore(STORE).get(META))) ?? null
-      );
+      const store = (await this.open()).transaction(STORE).objectStore(STORE);
+      const current = this.user?.id ?? (await request<string | undefined>(store.get(CURRENT)));
+      if (!current) return null;
+      return (await request<Meta | undefined>(store.get(copyKey(current, META)))) ?? null;
     } catch {
       return null;
     }
@@ -609,46 +643,55 @@ export class OfflineRecords {
   }
 
   /**
-   * Deletes the copy and its flag, and with `ownChanges` the waiting changes of the user the copy is of. Other
-   * users' waiting changes always stay (locked). The database itself goes when nothing is left in it. Starts at
-   * once, so it runs before any page after a sign-out shows.
+   * Deletes the copy of the user it is of, the flag, and that user's waiting changes. Other accounts' locked copies
+   * and changes always stay. The database itself goes when nothing is left in it. Starts at once, so it runs before
+   * any page after a sign-out shows.
    */
-  private async wipe(ownChanges: boolean): Promise<void> {
+  private async wipe(): Promise<void> {
     const owner = this.user?.id ?? null;
-    for (const storage of [globalThis.localStorage, globalThis.sessionStorage]) {
-      try {
-        storage?.removeItem(RECORDS_FLAG);
-      } catch {
-        // Storage unavailable: there is no flag to remove.
-      }
+    const stored = this.storesAnything();
+    // At once: no page after a sign-out reads the copy. Set back to "locked" below if other accounts keep copies.
+    this.setFlag(null);
+    try {
+      globalThis.sessionStorage?.removeItem(RECORDS_FLAG);
+    } catch {
+      // Storage unavailable: there is no flag to remove.
     }
     this.enabled.set(false);
     this.forgetState();
     if (!this.browser || typeof indexedDB === 'undefined') return;
-    let left = 0;
-    if (this.outbox().noted()) {
+    let otherCopies = 0;
+    let otherChanges = 0;
+    if (stored) {
       try {
         const db = await (this.db ?? openRecordsDb(() => (this.db = null)));
         const tx = db.transaction([STORE, OUTBOX], 'readwrite');
-        const meta = await request<Meta | undefined>(tx.objectStore(STORE).get(META));
-        tx.objectStore(STORE).clear();
-        const mine = owner ?? meta?.userId ?? null;
+        const copies = tx.objectStore(STORE);
+        const current = await request<string | undefined>(copies.get(CURRENT));
+        const mine = owner ?? current ?? null;
+        copies.delete(CURRENT);
+        for (const key of await request<IDBValidKey[]>(copies.getAllKeys())) {
+          const account = accountOf(key);
+          if (account !== null && account === mine) copies.delete(key);
+          else if (account !== null) otherCopies++;
+        }
         const entries = await request<OutboxEntry[]>(tx.objectStore(OUTBOX).getAll());
         for (const entry of entries) {
-          if (ownChanges && mine !== null && entry.userId === mine) tx.objectStore(OUTBOX).delete(entry.seq!);
-          else left++;
+          if (mine !== null && entry.userId === mine) tx.objectStore(OUTBOX).delete(entry.seq!);
+          else otherChanges++;
         }
         await done(tx);
         if (!this.db) db.close();
       } catch {
-        // Could not look: nothing is deleted that could hold a change.
-        left = 1;
+        // Could not look: the database is not deleted, since it could hold a change.
+        otherChanges = 1;
       }
       await this.outbox()
         .refreshCount(owner ?? undefined)
         .catch(() => undefined);
     }
-    if (left > 0) return;
+    if (otherCopies > 0) this.setFlag(RECORDS_LOCKED);
+    if (otherCopies > 0 || otherChanges > 0) return;
     await this.drop();
   }
 

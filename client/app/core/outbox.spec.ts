@@ -485,13 +485,13 @@ describe('the outbox: changes made while offline', () => {
     await new Promise((resolve) => setTimeout(resolve, 50));
     httpMock().expectNone(() => true);
     expect(outbox.count()).toBe(0);
-    // Their copy is replaced, but the first user's change is still stored, for the first user.
+    // The first user's copy and change are kept, locked, for the first user.
     expect(await databases()).toContain(RECORDS_DB);
     const left = await outbox.entries();
     expect(left).toHaveLength(1);
     expect(left[0].userId).toBe('u1');
     expect(await outbox.mine('u2')).toEqual([]);
-    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('locked');
   });
 
   it("deletes the user's queue only when they turn the copy off or clear it, and not another user's", async () => {
@@ -601,7 +601,7 @@ describe('the outbox: changes made while offline', () => {
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 
-  it("counts another account's changes without showing them, and deletes them only when asked", async () => {
+  it("never touches another account's changes: the signed-in user clearing their own data leaves them", async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
     const outbox = TestBed.inject(Outbox);
@@ -614,20 +614,13 @@ describe('the outbox: changes made while offline', () => {
     await signIn;
     await answerNext(API + '/verify', { id: 'u2', email: 'b@b.c' });
     await vi.waitFor(() => expect(records.enabled()).toBe(false));
-    await records.refreshOthers();
-    expect(records.otherCount()).toBe(1);
+    expect(outbox.count()).toBe(0);
 
-    const deleting = records.deleteOthers();
-    await answerAsk('cancel');
-    expect(await deleting).toBe(false);
-    expect(await outbox.entries()).toHaveLength(1);
-
-    const again = records.deleteOthers();
-    await answerAsk('delete');
-    expect(await again).toBe(true);
-    expect(records.otherCount()).toBe(0);
-    expect(await outbox.entries()).toEqual([]);
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    await records.clear();
+    const left = await outbox.entries();
+    expect(left).toHaveLength(1);
+    expect(left[0].userId).toBe('u1');
+    expect(await databases()).toContain(RECORDS_DB);
   });
 });
 

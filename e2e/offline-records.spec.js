@@ -50,12 +50,21 @@ const copiedTitles = (page) =>
           db.close();
           return resolve(null);
         }
-        const get = db.transaction('copies').objectStore('copies').get('recipe');
-        get.onsuccess = () => {
-          db.close();
-          // Each copy is kept as { body, savedAt } (core/offline-records.ts).
-          const body = get.result?.body;
-          resolve(Array.isArray(body) ? body.map((r) => r.title) : null);
+        // Each account's copy is under '<userId>/recipe'; 'current' names the one shown.
+        const store = db.transaction('copies').objectStore('copies');
+        const current = store.get('current');
+        current.onsuccess = () => {
+          if (!current.result) {
+            db.close();
+            return resolve(null);
+          }
+          const get = store.get(current.result + '/recipe');
+          get.onsuccess = () => {
+            db.close();
+            // Each copy is kept as { body, savedAt } (core/offline-records.ts).
+            const body = get.result?.body;
+            resolve(Array.isArray(body) ? body.map((r) => r.title) : null);
+          };
         };
       };
       opening.onerror = () => resolve(null);
@@ -285,7 +294,10 @@ test('signing out offline and choosing Delete from this device deletes the copy;
   expect(await hasCopy(page)).toBe(false);
 });
 
-test('signing in as someone else without signing out first deletes the copy', async ({ page, request }) => {
+test("signing in as someone else without signing out first locks the first user's copy away", async ({
+  page,
+  request
+}) => {
   const first = await newAccount(request, 'first');
   const second = await newAccount(request, 'second');
   await installed(page, '/about');
@@ -295,8 +307,18 @@ test('signing in as someone else without signing out first deletes the copy', as
   await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Not For B']);
   // The sign-in page, opened while still signed in.
   await signInThroughPage(page, second);
-  await expect.poll(() => hasCopy(page)).toBe(false);
-  expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBeNull();
+  // Kept for the first user, but no longer the copy shown, and the switch is off for the second.
+  await expect.poll(() => copiedTitles(page)).toBeNull();
+  expect(await hasCopy(page)).toBe(true);
+  expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBe('locked');
+  await page.goto('/recipe');
+  await expect(page.locator('main h1').first()).toBeVisible();
+  await expect(page.getByText('Not For B')).toHaveCount(0);
+
+  // The first user comes back: their copy is shown again.
+  await signInThroughPage(page, first);
+  await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Not For B']);
+  expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBe('1');
 });
 
 test('signing out online and choosing Delete from this device deletes the copy before the sign-in page', async ({

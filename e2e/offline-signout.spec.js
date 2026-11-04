@@ -6,8 +6,8 @@ const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
 // Offline editing, phase 4 (core/offline-records.ts, core/offline-ask.ts): the copy and the changes waiting on the
 // device are deleted only by the person. Signing out asks (Keep on this device is the default); "Clear offline data"
-// and turning the copy off ask when changes are unsent; another account's waiting changes are locked away and shown
-// only as a count. The service worker is allowed, as in offline-records.spec.js.
+// and turning the copy off ask when changes are unsent; another account's copy and waiting changes are locked away,
+// and nothing tells the account signed in that they are there. The service worker is allowed, as in offline-records.spec.js.
 test.use({ serviceWorkers: 'allow', viewport: { width: 1280, height: 800 } });
 test.describe.configure({ timeout: 180_000 });
 
@@ -149,7 +149,7 @@ test('Delete from this device removes the copy and the unsent changes', async ({
   expect(await notes(page)).toEqual([]);
 });
 
-test("another account never sees the first one's data, sees a count-only line, and can delete it", async ({
+test("another account never sees the first one's data, nor learns that it is there", async ({
   page,
   context,
   request
@@ -168,17 +168,12 @@ test("another account never sees the first one's data, sees a count-only line, a
   await expect(page.getByText('Private Offline Note')).toHaveCount(0);
   expect(await notes(page)).toEqual([]);
 
+  // Nothing on the account page says another account has anything here.
   await page.goto('/account');
-  const line = page.locator('.offline-other');
-  await expect(line).toContainText('Another account left 1 change on this browser that was never sent.');
-  await expect(line).not.toContainText('Private Offline Note');
-  await line.getByRole('button', { name: "Delete the other account's offline data" }).click();
-  await expect(dialog(page)).toContainText('1 change made offline by another account');
-  const { violations } = await new AxeBuilder({ page }).include('[role="alertdialog"]').withTags(WCAG).analyze();
-  expect(violations.map((v) => v.id + ': ' + v.help)).toEqual([]);
-  await dialog(page).getByRole('button', { name: 'Delete', exact: true }).click();
-  await expect(line).toHaveCount(0);
-  await expect.poll(() => hasDatabase(page)).toBe(false);
+  await expect(page.locator('#offline-records')).toBeVisible();
+  await expect(page.locator('.offline-records')).not.toContainText('another account', { ignoreCase: true });
+  await expect(page.locator('main')).not.toContainText('Private Offline Note');
+  expect(await hasDatabase(page)).toBe(true);
 });
 
 test('Clear offline data and turning the copy off ask first when changes are unsent', async ({
