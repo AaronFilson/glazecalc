@@ -23,6 +23,7 @@ import {
   prerenderedFile
 } from '../../lib/pages.js';
 import { ogImageFile } from '../../lib/og-images.js';
+import { dateKey, pageDates } from '../../lib/page-dates.js';
 import { labelShown } from './site.ts';
 
 export { ENGLISH_ONLY_PAGES, MATERIAL_PAGES, PUBLIC_PAGES, REFERENCE_PAGES, prerenderLanguages };
@@ -320,15 +321,22 @@ export function pageHtml(
  * The sitemap: each public page in each language offered, with its other
  * languages beside it; a page in English only, at its English address alone.
  * A reference page is listed in the languages it is translated into
- * (`reference`) and no others.
+ * (`reference`) and no others. Each has its <lastmod> where `dates` has one
+ * (lib/page-dates.js: the day what the page says last changed).
  */
 export function sitemap(
   site: string,
   live: readonly string[] = languages.LIVE_LANGUAGES,
-  reference: readonly string[] = languages.REFERENCE_LANGUAGES
+  reference: readonly string[] = languages.REFERENCE_LANGUAGES,
+  dates: Readonly<Record<string, string>> = pageDates()
 ): string {
+  const lastmod = (code: string, page: string): string => {
+    const date = dates[dateKey(code, page)];
+    return date && /^\d{4}-\d{2}-\d{2}$/.test(date) ? `<lastmod>${date}</lastmod>` : '';
+  };
   const entries = PUBLIC_PAGES.flatMap((page) => {
-    if (ENGLISH_ONLY_PAGES.includes(page)) return [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc></url>`];
+    if (ENGLISH_ONLY_PAGES.includes(page))
+      return [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc>${lastmod('en', page)}</url>`];
     const offered = offeredIn(page, live, reference);
     return offered.map((code) => {
       const others =
@@ -340,7 +348,7 @@ export function sitemap(
               )
               .join('')
           : '';
-      return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
+      return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${lastmod(code, page)}${others}</url>`;
     });
   });
   return [

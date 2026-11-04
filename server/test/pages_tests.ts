@@ -23,6 +23,8 @@ import {
 import languages from '../../lib/regions/languages.js';
 import { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
+import { pageSources } from '../../lib/page-dates.js';
+import { allPageDates, newestDates, newestOf } from '../../scripts/page-dates.mjs';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -504,11 +506,11 @@ describe('pages in each language', () => {
   });
 
   it('lists each public page in each language offered', () => {
-    const one = sitemap(SITE, ['en']);
+    const one = sitemap(SITE, ['en'], ['en'], {});
     expect(one).to.include('<url><loc>https://glazecalcapp.com/guides/firing</loc></url>');
     expect(one).not.to.include('xhtml:link');
     // No language has the reference pages translated here, whichever are on in lib/regions/languages.js.
-    const two = sitemap(SITE, ['en', 'de'], ['en']);
+    const two = sitemap(SITE, ['en', 'de'], ['en'], {});
     expect(two).to.include(
       '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
     );
@@ -516,6 +518,53 @@ describe('pages in each language', () => {
     // reference page is while German is not among the languages it is translated into.
     const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length;
     expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - once) * 2 + once);
+  });
+
+  it("gives each page the day what it says last changed, in its own language, and no date it doesn't have", () => {
+    const dates = { 'en/guides/firing': '2026-10-01', 'de/guides/firing': '2026-11-04', 'en/terms': 'soon' };
+    const map = sitemap(SITE, ['en', 'de'], ['en'], dates);
+    expect(map).to.include('<loc>https://glazecalcapp.com/guides/firing</loc><lastmod>2026-10-01</lastmod><xhtml:link');
+    expect(map).to.include(
+      '<loc>https://glazecalcapp.com/de/guides/firing</loc><lastmod>2026-11-04</lastmod><xhtml:link'
+    );
+    // Not a date: left out, never written into the XML.
+    expect(map).to.include('<loc>https://glazecalcapp.com/terms</loc><xhtml:link');
+    expect(map).not.to.include('soon');
+    expect(map.match(/<lastmod>/g)).to.have.length(2);
+  });
+
+  it("dates a page from its own sources: a guide's text in that language, never the app's code", () => {
+    expect(pageSources('/guides/firing', 'de')).to.deep.equal([
+      'client/public/i18n/guides/firing/de.md',
+      'client/public/i18n/guides/de.json'
+    ]);
+    expect(pageSources('/materials/cornwall-stone', 'en')).to.include('data/materials.ndjson');
+    expect(pageSources('/terms', 'fr')).to.deep.equal(['client/public/i18n/site/fr.json']);
+    // Every source named is in the repository, so no page goes undated by a typo.
+    for (const page of PUBLIC_PAGES.filter((p) => !p.startsWith('/materials/'))) {
+      for (const source of pageSources(page, 'en')) {
+        expect(fs.existsSync(path.join(import.meta.dirname, '..', '..', source)), `${page}: ${source}`).to.equal(true);
+      }
+    }
+  });
+
+  it('works out the dates from git log: the newest commit of any file a page reads', () => {
+    const dates = newestDates(
+      [
+        '@2026-11-04',
+        'client/public/i18n/guides/firing/de.md',
+        '',
+        '@2026-10-01',
+        'client/public/i18n/guides/de.json',
+        'client/public/i18n/guides/firing/de.md',
+        'lib/cones/index.js'
+      ].join('\n')
+    );
+    expect(dates.get('client/public/i18n/guides/firing/de.md')).to.equal('2026-11-04');
+    expect(newestOf(pageSources('/guides/firing', 'de'), dates)).to.equal('2026-11-04');
+    expect(newestOf(['lib/cones/'], dates)).to.equal('2026-10-01');
+    expect(newestOf(['client/public/i18n/site/de.json'], dates)).to.equal(undefined);
+    expect(allPageDates(dates)['de/guides/firing']).to.equal('2026-11-04');
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
@@ -545,7 +594,7 @@ describe('pages in each language', () => {
     // Still prerendered in each language offered, for a quick first paint.
     expect(prerenderedKey('/de' + page, live)).to.equal('de/guides/learn-with-john-britt.html');
 
-    const map = sitemap(SITE, live);
+    const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {});
     expect(map).to.include('<url><loc>https://glazecalcapp.com/guides/learn-with-john-britt</loc></url>');
     expect(map).not.to.include('/de/guides/learn-with-john-britt');
     expect(map).not.to.match(/hreflang="[^"]*" href="[^"]*learn-with-john-britt"/);
@@ -614,7 +663,7 @@ describe('pages in each language', () => {
     });
 
     it('puts each in the sitemap once, at its English address, while no language has them translated', () => {
-      const map = sitemap(SITE, ['en', 'de'], ['en']);
+      const map = sitemap(SITE, ['en', 'de'], ['en'], {});
       for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
         expect(map, address).to.include(`<url><loc>https://glazecalcapp.com${address}</loc></url>`);
         expect(map, address).not.to.include(`/de${address}</loc>`);
@@ -665,7 +714,7 @@ describe('pages in each language', () => {
       });
 
       it('lists it in the sitemap in the translated languages, each with the others beside it', () => {
-        const map = sitemap(SITE, live, reference);
+        const map = sitemap(SITE, live, reference, {});
         expect(map).to.include(
           '<url><loc>https://glazecalcapp.com/de/cones</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/cones"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/cones"/></url>'
         );
