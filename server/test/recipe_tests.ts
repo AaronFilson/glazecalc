@@ -508,6 +508,11 @@ describe('Shared recipe tools', () => {
     expect(recipe.materialSg(named('Silica'))).to.deep.equal({ sg: 2.65, basis: 'mineral', source: 'quartz' });
     expect(recipe.materialSg(named('Whiting')).sg).to.equal(2.71);
     expect(recipe.materialSg(named('Zircon')).sg).to.equal(4.65);
+    // Checked against three sources each (docs/sources/dry-sg-sources.md).
+    expect(recipe.materialSg(named('Bone Ash')).sg).to.equal(3.16);
+    expect(recipe.materialSg(named('Copper oxide')).sg).to.equal(6.4);
+    expect(recipe.materialSg(named('Litharge')).sg).to.equal(9.35);
+    expect(recipe.materialSg(named('Pearl Ash')).sg).to.equal(2.29);
     // Kinds: commercial feldspars and clays.
     expect(recipe.materialSg(named('Custer Spar'))).to.include({ sg: 2.6, basis: 'kind', source: 'feldspar' });
     expect(recipe.materialSg(named('EPK Kaolin'))).to.include({ sg: 2.6, basis: 'kind', source: 'clay' });
