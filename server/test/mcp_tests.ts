@@ -687,6 +687,61 @@ describe('MCP: the public tools', () => {
     expect(unknown.waterToAddLitres).to.equal(1.11);
   });
 
+  it('specific_gravity_water reads additives and unknown names into the estimate and never loses the water', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 40 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const base = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.45, lines });
+    // Bentonite is an additive: found, left out (2%), and the estimate stands.
+    const bentonite = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [...lines, { material: 'Bentonite', amount: 2 }]
+    });
+    expect(bentonite.drySg).to.equal(base.drySg);
+    expect(bentonite.drySgNote).to.match(/Bentonite/);
+    expect(bentonite.waterToAddLitres).to.equal(1.11);
+    // A name in neither library is counted as unknown, not refused.
+    const mystery = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [...lines, { material: 'Grandad’s mystery ash', amount: 30 }]
+    });
+    expect(mystery.drySgBasis).to.equal('none');
+    expect(mystery.drySgNote).to.match(/mystery ash/);
+    expect(mystery.waterToAddLitres).to.equal(1.11);
+    // A line with its own analysis is not the standard Whiting: no SG by its name.
+    const own = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [{ material: 'Whiting', amount: 100, analysis: { CaO: 56, SiO2: 2 } }]
+    });
+    expect(own.drySgBasis).to.equal('none');
+    expect(own).not.to.have.property('drySg');
+    expect(own.waterToAddLitres).to.equal(1.11);
+  });
+
+  it('specific_gravity_water sets aside an estimate the slurry is not under, but refuses a drySg given', async () => {
+    // Borax alone estimates at 1.71: a slurry at 1.8 cannot be over its own dry materials.
+    const lines = [{ material: 'Borax', amount: 100 }];
+    const over = await data('specific_gravity_water', { sg: 1.8, litres: 10, target: 1.45, lines });
+    expect(over).not.to.have.property('drySg');
+    expect(over).not.to.have.property('bucket');
+    expect(over.drySgNote).to.match(/not under the estimated 1\.71/);
+    expect(over.waterToAddLitres).to.equal(7.78);
+    const targetOver = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.8, lines });
+    expect(targetOver).not.to.have.property('drySg');
+    expect(targetOver.drySgNote).to.match(/target SG is not under/);
+    expect(targetOver.waterToAddLitres).to.equal(-3.75);
+    expect((await call('specific_gravity_water', { sg: 1.8, litres: 10, drySg: 1.71, lines })).isError).to.equal(true);
+  });
+
   it('convert_cone_temperature reads the Orton and SK charts', async () => {
     const six = await data('convert_cone_temperature', { cone: '6' });
     expect(six).to.include({ celsius: 1222, fahrenheit: 2232 });

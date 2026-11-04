@@ -35,6 +35,8 @@ export interface SgMaterial {
   name?: string;
   category?: string;
   noChemistry?: boolean;
+  /** 'Standard' for a library record: only those are known by name. */
+  ownedBy?: string;
   fields?: ReadonlyArray<{ name: string; amount?: string | number }>;
 }
 export function materialSg(material: SgMaterial): MaterialSg;

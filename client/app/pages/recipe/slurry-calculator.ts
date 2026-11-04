@@ -133,7 +133,7 @@ function sgOf(text: string, density: Density): number | null {
             class="form-control form-control-sm"
             aria-describedby="slurry-dry-help"
             [gcNumber]="dry()"
-            (gcNumberChange)="dry.set($event)"
+            (gcNumberChange)="setDry($event)"
           />
           <div id="slurry-dry-help" class="form-text" data-testid="slurry-dry-help">
             @for (line of dryHelp(); track $index) {
@@ -247,12 +247,21 @@ export class SlurryCalculator {
   });
   /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), or none. */
   readonly estimate = input<RecipeSg | null>(null);
-  /** The estimate, until another is typed; empty when there is none, so no dry weight is guessed. */
-  protected readonly dry = linkedSignal(() => {
+  /** What the potter typed for the dry SG, kept over the estimate until the field is cleared; null for none. */
+  private readonly dryTyped = signal<string | null>(null);
+  /** The value typed, or else the estimate; empty when there is neither, so no dry weight is guessed. */
+  protected readonly dry = computed(() => {
+    const typed = this.dryTyped();
+    if (typed !== null) return typed;
     const sg = this.estimate()?.sg;
     return sg != null ? String(sg) : '';
   });
   protected readonly batch = signal('');
+
+  /** A dry SG typed is kept even when the estimate changes; clearing the field hands it back to the estimate. */
+  protected setDry(value: string): void {
+    this.dryTyped.set(value.trim() === '' ? null : value);
+  }
 
   /** What the dry SG field says: how its estimate was got and what it left out, or that it can be left empty. */
   protected readonly dryHelp = computed(() => {
@@ -265,6 +274,9 @@ export class SlurryCalculator {
       const lines = [translate(ESTIMATE[basis], { sg: upTo(estimate.sg, 2) })];
       if (names) lines.push(translate('recipe.slurry.estimate.leftOut', { names }));
       return lines;
+    }
+    if (estimate?.sg != null && typed !== null) {
+      return [translate('recipe.slurry.estimate.was', { sg: upTo(estimate.sg, 2) })];
     }
     if (estimate && estimate.sg === null && names && typed === null) {
       return [translate('recipe.slurry.estimate.none', { names })];

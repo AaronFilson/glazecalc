@@ -760,7 +760,8 @@
       "glass": "An estimate, {sg}, worked out from the frits' oxides (they are glass). Change it if you know better.",
       "mixed": "An estimate, {sg}, from each material: the measured density of its mineral, about 2.6 for feldspars and clays, and frits worked out from their oxides. Change it if you know better.",
       "leftOut": "Left out, as their SG is not known: {names}.",
-      "none": "No estimate for this recipe: the SG of {names} is not known. Type it if you know it."
+      "none": "No estimate for this recipe: the SG of {names} is not known. Type it if you know it.",
+      "was": "Your figure is used. The estimate was {sg}; clear the field to go back to it."
     },
     "batch": "Dry glaze for a new batch, {unit}",
     "contents": "At SG {sg}, the bucket holds {glaze} of dry glaze and {water} of water.",

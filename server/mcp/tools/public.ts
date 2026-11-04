@@ -24,6 +24,7 @@ import {
   type Firing,
   firingOf,
   guarded,
+  type Line,
   languageArg,
   languageOf,
   linesArg,
@@ -215,6 +216,20 @@ const SG_BASIS_WORDS: Record<string, string> = {
   mixed: "minerals as measured, 2.6 for feldspars and clays, frits from their oxides by Appen's glass factors",
   none: 'none'
 };
+
+/**
+ * The lines as the dry SG estimate reads them: a library material, then a
+ * library additive (bentonite, stains, zircon), marked standard so it is known
+ * by name. A line with its own analysis, or a name in neither, is kept by name
+ * only, so the estimate counts it with the materials it has no SG for and
+ * never refuses for it: the water to add needs none of this.
+ */
+const sgLinesOf = (lines: Line[]) =>
+  lines.map((line) => {
+    const amount = String(line.amount);
+    const found = line.analysis ? undefined : (findMaterial(line.material) ?? findAdditive(line.material));
+    return found ? { ...found, ownedBy: 'Standard', amount } : { name: line.material, amount };
+  });
 
 /** What the cone answers say of every figure. */
 const CONES_NOTE =
@@ -523,8 +538,13 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         if (measured === undefined) throw new ToolProblem('Give the SG, or the grams 100 mL of the slurry weighs.');
         // Nothing is assumed about the dry materials: the water to add does not depend on them, and the dry
         // weight is worked out only when their SG is given or can be estimated from the recipe.
-        const estimate = drySg === undefined && lines ? recipe.recipeDrySg(resolveLines(lines)) : null;
-        const dry = drySg ?? estimate?.sg ?? undefined;
+        const estimate = drySg === undefined && lines ? recipe.recipeDrySg(sgLinesOf(lines)) : null;
+        const guess = estimate?.sg ?? undefined;
+        // An estimate the slurry is not under is set aside (the dry weights left out, and said); a drySg
+        // given is the caller's, so an SG over it is refused.
+        const estimateTooLow =
+          guess !== undefined && (!(measured < guess) || (target !== undefined && !(target < guess)));
+        const dry = drySg ?? (estimateTooLow ? undefined : guess);
         const estimated = estimate && {
           drySgBasis: estimate.sg === null ? 'none' : estimate.basis,
           drySgNote:
@@ -535,6 +555,9 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
               : `Estimated from the materials (${SG_BASIS_WORDS[estimate.basis]}). An estimate: a measured figure is better.` +
                 (estimate.unknown.length
                   ? ` Left out, with no known SG: ${estimate.unknown.join(', ')} (${rounded(estimate.unknownShare * 100, 1)}% of the weight).`
+                  : '') +
+                (estimateTooLow
+                  ? ` The ${target !== undefined && measured < guess! ? 'target ' : ''}SG is not under the estimated ${guess}, so the estimate cannot be right for this glaze and the dry weights are left out. Give drySg, measured, for them.`
                   : '')
         };
         if (dry !== undefined && !(measured < dry))

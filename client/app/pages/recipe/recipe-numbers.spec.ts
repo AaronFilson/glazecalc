@@ -344,6 +344,31 @@ describe('SlurryCalculator', () => {
     expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('No estimate for this recipe');
   });
 
+  it('keeps a dry SG typed when the estimate changes, until the field is cleared', async () => {
+    const estimate = (sg: number) => ({ sg, basis: 'mixed' as const, parts: [], unknown: [], unknownShare: 0 });
+    const fixture = TestBed.createComponent(SlurryCalculator);
+    fixture.componentRef.setInput('estimate', estimate(2.63));
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const field = () => root.querySelector('#slurry-dry') as HTMLInputElement;
+    const type = async (value: string) => {
+      field().value = value;
+      field().dispatchEvent(new Event('input'));
+      await fixture.whenStable();
+    };
+    await type('2.4');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('The estimate was 2.63');
+    // A line added to the recipe changes the estimate; the figure typed stays.
+    fixture.componentRef.setInput('estimate', estimate(2.7));
+    await fixture.whenStable();
+    expect(field().value).toBe('2.4');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('The estimate was 2.7');
+    // Cleared, the field takes the estimate again.
+    await type('');
+    expect(field().value).toBe('2.7');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('An estimate, 2.7');
+  });
+
   it('reads densities and weights as Settings say: Baumé, pint weight, gallons and pounds', async () => {
     const preferences = TestBed.inject(PreferencesService);
     preferences.remember('density', 'baume');
