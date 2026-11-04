@@ -1,11 +1,14 @@
 import { Component, inject, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { OfflineRecords } from '../../core/offline-records';
+import { Outbox } from '../../core/outbox';
 
 /**
  * The switch on the account page that keeps the user's records on this device, so they open without a network
  * (core/offline-records.ts). Off by default, per device; not offered during a trial or where the browser has no
- * IndexedDB.
+ * IndexedDB. Beside it: "Clear offline data" (asks first, naming the changes not sent yet), a notice for iPhone and
+ * iPad browsers, where Safari may remove data after 7 days without use, and, when another account left changes
+ * on this browser, a count-only line with a button to delete them.
  */
 @Component({
   selector: 'gc-offline-records',
@@ -31,20 +34,76 @@ import { OfflineRecords } from '../../core/offline-records';
             <p class="text-danger offline-records-not-kept">{{ t('offline.recordsNotKept') }}</p>
           }
         </div>
+        @if (records.iosNotice() && records.enabled()) {
+          <div class="form-text offline-ios-notice" role="status">
+            <p>{{ t('offline.iosEviction') }}</p>
+            <button type="button" class="btn btn-light btn-sm border" (click)="records.iosNotice.set(false)">
+              {{ t('outbox.dismiss') }}
+            </button>
+          </div>
+        }
+        @if (records.enabled() || outbox.count() > 0) {
+          <p>
+            <button
+              type="button"
+              class="btn btn-light btn-sm border offline-clear"
+              [disabled]="busy()"
+              (click)="clear()"
+            >
+              {{ t('offline.clearButton') }}
+            </button>
+          </p>
+        }
+        @if (records.otherCount() > 0) {
+          <p class="offline-other">
+            {{ t('offline.otherLine', { count: records.otherCount() }) }}
+            <button
+              type="button"
+              class="btn btn-light btn-sm border offline-other-delete"
+              [disabled]="busy()"
+              (click)="deleteOthers()"
+            >
+              {{ t('offline.otherDelete') }}
+            </button>
+          </p>
+        }
       </section>
     }
   </ng-container>`
 })
 export class OfflineRecordsSection {
   protected readonly records = inject(OfflineRecords);
+  protected readonly outbox = inject(Outbox);
   protected readonly busy = signal(false);
+
+  constructor() {
+    void this.records.refreshOthers();
+  }
 
   protected async toggle(event: Event): Promise<void> {
     this.busy.set(true);
     const box = event.target as HTMLInputElement;
     try {
-      // The box shows what is so: unchecked again when this browser would not keep the copy.
+      // The box shows what is so: unchecked again when this browser would not keep the copy, or the person said no.
       box.checked = await this.records.setEnabled(box.checked);
+    } finally {
+      this.busy.set(false);
+    }
+  }
+
+  protected async clear(): Promise<void> {
+    this.busy.set(true);
+    try {
+      await this.records.clearWithConfirm();
+    } finally {
+      this.busy.set(false);
+    }
+  }
+
+  protected async deleteOthers(): Promise<void> {
+    this.busy.set(true);
+    try {
+      await this.records.deleteOthers();
     } finally {
       this.busy.set(false);
     }

@@ -1,6 +1,10 @@
 import { Component, ElementRef, computed, effect, inject, signal, viewChild } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { Outbox, fieldsOf, nameOfRecord, textOfEntry, type ConflictChoice, type OutboxEntry } from './outbox';
+
+// The keys manager does not look inside the @for of the failed list's template, so it finds these by the marker.
+marker(['outbox.failed', 'outbox.copyText', 'outbox.remove', 'outbox.dependsFailed']);
 
 /** What a queued change is about, for a message: the record's name or title. */
 export const entryName = (entry: OutboxEntry): string =>

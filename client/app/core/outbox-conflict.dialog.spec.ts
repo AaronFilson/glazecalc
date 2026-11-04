@@ -111,6 +111,7 @@ describe('OutboxFailedList', () => {
     await fixture.whenStable();
     const root: HTMLElement = fixture.nativeElement;
     expect(root.querySelector('[role="status"]')?.textContent).toContain('A change to Mine could not be saved');
+    expect(labels(root)).toEqual(['Copy text', 'Remove']);
     buttons(root)[0].click();
     expect(writeText).toHaveBeenCalledWith('Mine');
     buttons(root)[1].click();

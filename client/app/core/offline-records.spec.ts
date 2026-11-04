@@ -10,7 +10,15 @@ import { provideEnglish } from '../testing/i18n';
 import { API_BASE } from './api-base';
 import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
 import { FIRST_RENDER } from './first-render';
-import { COPY_REFRESH, OfflineRecords, RECORDS_DB, RECORDS_FLAG, RECORD_KEYS } from './offline-records';
+import { OfflineAsk } from './offline-ask';
+import {
+  COPY_REFRESH,
+  OfflineRecords,
+  RECORDS_DB,
+  RECORDS_FLAG,
+  RECORD_KEYS,
+  iosEvictionRisk
+} from './offline-records';
 import { changedBy, copyOf, offlineRecordsInterceptor } from './offline-records.interceptor';
 import { sessionExpiredInterceptor } from './session-expired.interceptor';
 
@@ -76,6 +84,13 @@ async function turnOn(records: OfflineRecords, session: Session = {}): Promise<b
   });
   for (const key of RECORD_KEYS) await answerNext(records.addressOf(key), key === 'recipe' ? RECIPES : []);
   return on;
+}
+
+/** Answers the question on screen (core/offline-ask.ts) once it is there. */
+async function answerAsk(id: string): Promise<void> {
+  const ask = TestBed.inject(OfflineAsk);
+  await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+  ask.open()!.answer(id);
 }
 
 function get(address: string, context?: HttpContext): Promise<unknown> {
@@ -523,27 +538,105 @@ describe('the records kept on this device', () => {
   });
 
   for (const end of ['signOut', 'signOutEverywhere'] as const) {
-    it(`deletes the copy and the flag when the person signs out (${end})`, async () => {
+    it(`keeps the copy and the flag when the person signs out and chose Keep on this device (${end})`, async () => {
       setUp();
       const records = TestBed.inject(OfflineRecords);
       await turnOn(records);
       await vi.waitFor(async () => expect(await databases()).toContain(RECORDS_DB));
+      const asking = records.askSignOut();
+      await answerAsk('keep');
+      expect(await asking).toBe('keep');
       const auth = TestBed.inject(AuthService);
-      const ending = end === 'signOutEverywhere' ? auth.signOutEverywhere() : Promise.resolve(auth[end]());
-      if (end === 'signOutEverywhere')
-        httpMock()
-          .expectOne(API + '/signout-everywhere')
-          .flush({});
-      else if (end === 'signOut')
-        httpMock()
-          .expectOne(API + '/signout')
-          .flush({});
+      const ending = end === 'signOutEverywhere' ? auth.signOutEverywhere() : auth.signOut();
+      httpMock()
+        .expectOne(API + (end === 'signOutEverywhere' ? '/signout-everywhere' : '/signout'))
+        .flush({});
       await ending;
-      expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
-      expect(records.enabled()).toBe(false);
-      await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+      await new Promise((resolve) => setTimeout(resolve, 50));
+      expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+      expect(await databases()).toContain(RECORDS_DB);
+      // Signed out, nothing is read; the same person signing in again has it.
+      expect(await records.read('recipe')).toBeNull();
+      await signInAs('a@b.c', 'u1');
+      await vi.waitFor(async () => expect((await records.read('recipe'))?.body).toEqual(RECIPES));
     });
   }
+
+  it('deletes the copy and the flag when the person chose Delete from this device', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await databases()).toContain(RECORDS_DB));
+    const asking = records.askSignOut();
+    await answerAsk('delete');
+    expect(await asking).toBe('delete');
+    await records.clear();
+    const out = TestBed.inject(AuthService).signOut();
+    httpMock()
+      .expectOne(API + '/signout')
+      .flush({});
+    await out;
+    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    expect(records.enabled()).toBe(false);
+    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+  });
+
+  it('Cancel at sign-out changes nothing and Escape counts as Cancel', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await databases()).toContain(RECORDS_DB));
+    const asking = records.askSignOut();
+    await answerAsk('cancel');
+    expect(await asking).toBe('cancel');
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(records.enabled()).toBe(true);
+    expect(await databases()).toContain(RECORDS_DB);
+  });
+
+  it('asks the browser to keep the storage when the copy is turned on', async () => {
+    setUp();
+    const persist = vi.fn(() => Promise.resolve(true));
+    Object.defineProperty(navigator, 'storage', { value: { persist }, configurable: true });
+    try {
+      const records = TestBed.inject(OfflineRecords);
+      await turnOn(records);
+      expect(persist).toHaveBeenCalledTimes(1);
+    } finally {
+      delete (navigator as unknown as Record<string, unknown>)['storage'];
+    }
+  });
+
+  it('notices an iPhone or iPad browser that is not the home-screen app', () => {
+    const iphone = { userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Safari/604.1' };
+    expect(iosEvictionRisk(iphone, false)).toBe(true);
+    expect(iosEvictionRisk({ ...iphone, standalone: true }, false)).toBe(false);
+    expect(iosEvictionRisk(iphone, true)).toBe(false);
+    // An iPad that says it is a Mac.
+    const ipad = {
+      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)',
+      platform: 'MacIntel',
+      maxTouchPoints: 5
+    };
+    expect(iosEvictionRisk(ipad, false)).toBe(true);
+    expect(iosEvictionRisk({ ...ipad, maxTouchPoints: 0 }, false)).toBe(false);
+    expect(iosEvictionRisk({ userAgent: 'Mozilla/5.0 (Windows NT 10.0) Chrome/120' }, false)).toBe(false);
+  });
+
+  it('shows the iOS notice when the copy is turned on there, and not on other browsers', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    expect(records.iosNotice()).toBe(false);
+
+    TestBed.resetTestingModule();
+    localStorage.clear();
+    setUp();
+    vi.spyOn(navigator, 'userAgent', 'get').mockReturnValue('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)');
+    const ios = TestBed.inject(OfflineRecords);
+    await turnOn(ios);
+    expect(ios.iosNotice()).toBe(true);
+  });
 
   it('deletes the copy when the account is deleted', async () => {
     setUp();

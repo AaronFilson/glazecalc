@@ -12,6 +12,7 @@ import { IdentityConfirm } from '../auth/identity-confirm';
 import { SectionLinks } from '../guides/guide-contents';
 import { ExportSection } from './export-section';
 import { ImportSection } from './import-section';
+import { OfflineRecords } from '../../core/offline-records';
 import { OfflineRecordsSection } from './offline-records-section';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -600,6 +601,11 @@ export class AccountPage {
     if (this.busy()) return;
     this.busy.set(true);
     try {
+      // The copy and changes waiting on this device: keep (the default) or delete them, as in the menu's Sign out.
+      const records = this.injector.get(OfflineRecords);
+      const choice = records.keepsAnything() ? await records.askSignOut() : 'keep';
+      if (choice === 'cancel') return;
+      if (choice === 'delete') await records.clear();
       await this.auth.signOutEverywhere();
       await this.router.navigateByUrl('/signin');
     } catch (err) {

@@ -2,10 +2,12 @@ import { isPlatformBrowser } from '@angular/common';
 import { HttpClient, HttpContext, HttpContextToken } from '@angular/common/http';
 import { DestroyRef, Injectable, Injector, PLATFORM_ID, computed, inject, signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { firstValueFrom } from 'rxjs';
 import { formatDate } from '../shared/format';
 import { API_BASE } from './api-base';
 import { AuthService, type SessionEndReason } from './auth.service';
+import { OfflineAsk } from './offline-ask';
 import { Outbox, applyEntry, type OutboxEntry } from './outbox';
 import { META, OUTBOX, RECORDS_DB, SCHEMA, STORE, deleteRecordsDb, done, openRecordsDb, request } from './records-db';
 
@@ -24,6 +26,21 @@ export const RECORD_KEYS: readonly string[] = [...RECORD_COLLECTIONS, ...RECORD_
 export const COPY_REFRESH = new HttpContextToken<boolean>(() => false);
 /** The copy is fetched again in full when it is this old (ms). */
 const REFRESH_AFTER_MS = 24 * 60 * 60 * 1000;
+
+/** What the sign-out question decided. */
+export type SignOutChoice = 'keep' | 'delete' | 'cancel';
+
+/**
+ * Whether this is an iPhone or iPad browser that is not the app on the home screen: Safari may remove what a site
+ * keeps there after 7 days without use. `standaloneMedia` is whether the display mode is "standalone".
+ */
+export function iosEvictionRisk(
+  nav: { userAgent: string; platform?: string; maxTouchPoints?: number; standalone?: boolean },
+  standaloneMedia: boolean
+): boolean {
+  const ios = /iPad|iPhone|iPod/.test(nav.userAgent) || (nav.platform === 'MacIntel' && (nav.maxTouchPoints ?? 0) > 1);
+  return ios && nav.standalone !== true && !standaloneMedia;
+}
 
 /** Who is signed in, and how long for, as /verify says. */
 export interface SignedInUser {
@@ -94,6 +111,10 @@ export class OfflineRecords {
   readonly backOnline = signal(false);
   /** Turning it on failed: this browser would not keep the copy (private browsing, no space). */
   readonly notKept = signal(false);
+  /** Turning the copy on in an iPhone or iPad browser: Safari may remove it after 7 days without use. */
+  readonly iosNotice = signal(false);
+  /** How many changes of other accounts wait, locked, on this browser (count only; never their content). */
+  readonly otherCount = signal(0);
   /** Whether saving is off: the page shows the copy. */
   readonly readOnly = computed(() => this.showingCopy() !== null);
   /** Why saving is off, for the title of a disabled button; null while saving is on. */
@@ -146,12 +167,20 @@ export class OfflineRecords {
 
   /**
    * Turns keeping the copy on (checks that this browser keeps it, then fetches it at once) or off (deletes it at
-   * once, and the user's waiting changes with it). Resolves with whether it is on.
-   * TODO(phase 4): turning it off with unsent changes asks first, listing their count.
+   * once, and the user's waiting changes with it, after asking when there are any). Resolves with whether it is on.
    */
   async setEnabled(on: boolean): Promise<boolean> {
     this.notKept.set(false);
     if (!on || !this.available()) {
+      if (on === false && this.enabled()) {
+        const count = await this.unsentCount();
+        if (
+          count > 0 &&
+          !(await this.confirmDelete(marker('offline.turnOffTitle'), marker('offline.turnOffConfirm'), count))
+        )
+          return this.enabled();
+      }
+      this.iosNotice.set(false);
       await this.clear();
       return false;
     }
@@ -168,8 +197,132 @@ export class OfflineRecords {
       this.notKept.set(true);
       return false;
     }
+    this.keepPersistent();
+    this.iosNotice.set(this.iosAtRisk());
     await this.refresh(true);
     return this.enabled();
+  }
+
+  /** Asks the browser not to remove the copy when it is short of space. Best effort: it may say no. */
+  private keepPersistent(): void {
+    try {
+      void navigator.storage?.persist?.().catch(() => undefined);
+    } catch {
+      // Not offered here.
+    }
+  }
+
+  private iosAtRisk(): boolean {
+    try {
+      const nav = navigator as Navigator & { standalone?: boolean };
+      return iosEvictionRisk(nav, !!window.matchMedia?.('(display-mode: standalone)').matches);
+    } catch {
+      return false;
+    }
+  }
+
+  /** Whether this browser may hold a copy or changes waiting (so a sign-out has something to ask about). */
+  keepsAnything(): boolean {
+    return this.browser && (this.enabled() || this.outbox().noted());
+  }
+
+  /** How many changes of the signed-in user have not been sent (any state), as the outbox counts them now. */
+  async unsentCount(): Promise<number> {
+    if (!this.outbox().noted()) return 0;
+    await this.outbox()
+      .refreshCount()
+      .catch(() => undefined);
+    return this.outbox().count();
+  }
+
+  /** Counts the changes other accounts left on this browser (count only). */
+  async refreshOthers(): Promise<void> {
+    if (!this.outbox().noted()) {
+      this.otherCount.set(0);
+      return;
+    }
+    const me = await this.ownerId();
+    const entries = await this.outbox().entries();
+    this.otherCount.set(entries.filter((entry) => entry.userId !== me).length);
+  }
+
+  /** Asks to delete, naming how many unsent changes go with it; true when the person agrees. */
+  private async confirmDelete(title: string, confirm: string, count: number): Promise<boolean> {
+    const body = [translate(marker('offline.deleteBody'))];
+    if (count > 0) body.push(translate(marker('offline.unsentLost'), { count }));
+    const answer = await this.injector.get(OfflineAsk).ask({
+      title: translate(title),
+      body,
+      choices: [
+        { id: 'cancel', label: translate(marker('offline.cancel')), primary: true },
+        { id: 'delete', label: translate(confirm), danger: true }
+      ],
+      cancel: 'cancel'
+    });
+    return answer === 'delete';
+  }
+
+  /** The "Clear offline data" button: asks, then deletes the copy and this user's waiting changes. */
+  async clearWithConfirm(): Promise<boolean> {
+    const count = await this.unsentCount();
+    if (!(await this.confirmDelete(marker('offline.clearTitle'), marker('offline.clearButton'), count))) return false;
+    await this.clear();
+    return true;
+  }
+
+  /** "Delete the other account's offline data": asks (count only), then deletes the locked changes. */
+  async deleteOthers(): Promise<boolean> {
+    await this.refreshOthers();
+    const count = this.otherCount();
+    if (!count) return false;
+    const answer = await this.injector.get(OfflineAsk).ask({
+      title: translate(marker('offline.otherTitle')),
+      body: [translate(marker('offline.otherBody'), { count })],
+      choices: [
+        { id: 'cancel', label: translate(marker('offline.cancel')), primary: true },
+        { id: 'delete', label: translate(marker('offline.otherConfirm')), danger: true }
+      ],
+      cancel: 'cancel'
+    });
+    if (answer !== 'delete') return false;
+    const me = await this.ownerId();
+    const others = new Set((await this.outbox().entries()).map((entry) => entry.userId).filter((id) => id !== me));
+    if (others.size) {
+      const empty = await this.outbox().remove(others);
+      await this.outbox().refreshCount(me ?? undefined);
+      if (empty && !this.enabled()) await this.drop();
+    }
+    await this.refreshOthers();
+    return true;
+  }
+
+  /**
+   * Before signing out: when this browser holds a copy or changes waiting, tries to send them (online), then asks
+   * whether to keep them on this device (the default) or delete them, naming how many changes are unsent. Nothing
+   * is deleted here: the caller deletes (`clear`) on 'delete' and does not sign out on 'cancel'.
+   */
+  async askSignOut(): Promise<SignOutChoice> {
+    if (!this.browser || this.auth.trial() !== null) return 'keep';
+    if (navigator.onLine !== false)
+      await this.outbox()
+        .flush()
+        .catch(() => undefined);
+    const count = await this.unsentCount();
+    if (!this.enabled() && count === 0) return 'keep';
+    const body = [translate(marker('offline.signOutBody'))];
+    if (count > 0) body.push(translate(marker('offline.signOutUnsent'), { count }));
+    body.push(translate(marker('offline.signOutHint')));
+    const answer = await this.injector.get(OfflineAsk).ask({
+      title: translate(marker('offline.signOutTitle')),
+      body,
+      choices: [
+        { id: 'keep', label: translate(marker('offline.keepOnDevice')), primary: true },
+        { id: 'delete', label: translate(marker('offline.deleteFromDevice')), danger: true },
+        { id: 'cancel', label: translate(marker('offline.cancel')) }
+      ],
+      cancel: 'cancel'
+    });
+    return answer === 'keep' || answer === 'delete' ? answer : 'cancel';
   }
 
   /** Who /verify says is signed in, and until when. */
@@ -324,10 +477,10 @@ export class OfflineRecords {
   private async sessionEnded(reason: SessionEndReason): Promise<void> {
     this.forgetState();
     if (reason === 'deleted') return this.clear();
-    // TODO(phase 4): a sign-out dialog (default "Keep on this device") decides here. Until then a sign-out deletes
-    // the copy as it always did, but never queued changes: they stay, locked to this user, until they sign in again.
-    if (reason === 'signed-out') return this.lockAway();
-    // The sign-in ran out, or a trial ended: nothing is deleted. The same user's next sign-in carries on.
+    // A sign-out, a sign-in that ran out or a trial that ended: nothing is deleted here. The person chose in the
+    // sign-out question (askSignOut: Keep on this device, or Delete, which the caller did with `clear` before). What
+    // is kept stays locked to this user: the same user's next sign-in shows the copy and sends the changes, and
+    // another account never sees them (checkOwner).
   }
 
   /** A sign-in starts: until /verify names the user, the copy may be another person's. */

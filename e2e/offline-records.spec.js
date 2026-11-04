@@ -255,7 +255,7 @@ test('off by default: with no network the records are not there, and the page sa
   await expect(page.locator('#recipe-name')).not.toHaveValue('Not Kept');
 });
 
-test('signing out, online or offline, deletes the copy; the next user never sees it', async ({
+test('signing out offline and choosing Delete from this device deletes the copy; the next user never sees it', async ({
   page,
   context,
   request
@@ -271,6 +271,7 @@ test('signing out, online or offline, deletes the copy; the next user never sees
   // Offline sign-out.
   await context.setOffline(true);
   await page.getByRole('button', { name: 'Sign out', exact: true }).click();
+  await page.getByRole('button', { name: 'Delete from this device' }).click();
   await expect.poll(() => hasCopy(page)).toBe(false);
   expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBeNull();
   await context.setOffline(false);
@@ -298,13 +299,17 @@ test('signing in as someone else without signing out first deletes the copy', as
   expect(await page.evaluate(() => globalThis.localStorage.getItem('offlineRecords'))).toBeNull();
 });
 
-test('signing out online deletes the copy before the sign-in page', async ({ page, context }) => {
+test('signing out online and choosing Delete from this device deletes the copy before the sign-in page', async ({
+  page,
+  context
+}) => {
   await signUpAndSignIn(page);
   await savedRecipe(page, 'Online Sign Out');
   await installed(page, '/recipe');
   await turnOn(page);
   await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Online Sign Out']);
   await page.getByRole('button', { name: 'Sign out', exact: true }).click();
+  await page.getByRole('button', { name: 'Delete from this device' }).click();
   await expect.poll(() => hasCopy(page)).toBe(false);
   await context.setOffline(true);
   await page.reload().catch(() => null);

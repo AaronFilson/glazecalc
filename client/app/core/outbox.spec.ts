@@ -10,6 +10,7 @@ import { provideEnglish } from '../testing/i18n';
 import { API_BASE } from './api-base';
 import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
 import { FIRST_RENDER } from './first-render';
+import { OfflineAsk } from './offline-ask';
 import { OfflineRecords, RECORDS_DB, RECORDS_FLAG, RECORD_KEYS } from './offline-records';
 import { offlineRecordsInterceptor } from './offline-records.interceptor';
 import {
@@ -94,6 +95,13 @@ async function turnOn(records: OfflineRecords, id = 'u1'): Promise<void> {
 /** The browser says it is offline (or back). */
 function offline(on: boolean): void {
   vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(!on);
+}
+
+/** Answers the question on screen (core/offline-ask.ts) once it is there. */
+async function answerAsk(id: string): Promise<void> {
+  const ask = TestBed.inject(OfflineAsk);
+  await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+  ask.open()!.answer(id);
 }
 
 function http(): HttpClient {
@@ -494,13 +502,106 @@ describe('the outbox: changes made while offline', () => {
     offline(true);
     await change('notes', 'n1', { content: 'x' });
     expect(await outbox.entries()).toHaveLength(1);
-    await records.setEnabled(false);
+    // Turning it off with a change not sent yet asks first: No keeps everything.
+    const kept = records.setEnabled(false);
+    await answerAsk('cancel');
+    expect(await kept).toBe(true);
+    expect(await outbox.entries()).toHaveLength(1);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    const off = records.setEnabled(false);
+    await answerAsk('delete');
+    await off;
     expect(await outbox.entries()).toEqual([]);
     expect(localStorage.getItem(OUTBOX_NOTE)).toBeNull();
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 
-  it('signing out deletes the copy but not the queued changes: they stay locked to the user', async () => {
+  it('signing out keeps the copy and the queued changes, locked to the user', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    const asking = records.askSignOut();
+    await answerAsk('keep');
+    expect(await asking).toBe('keep');
+    vi.restoreAllMocks();
+    const out = TestBed.inject(AuthService).signOut();
+    httpMock()
+      .expectOne(API + '/signout')
+      .flush({});
+    await out;
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(await outbox.entries()).toHaveLength(1);
+    expect(await databases()).toContain(RECORDS_DB);
+    expect(localStorage.getItem(OUTBOX_NOTE)).toBe('1');
+  });
+
+  it('names the unsent changes in the sign-out question; Delete removes them, Cancel changes nothing', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    const ask = TestBed.inject(OfflineAsk);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    await change('notes', 'n1', { content: 'y' });
+    await create('notes', { title: 'new' });
+
+    const first = records.askSignOut();
+    await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+    const question = ask.open()!.question;
+    expect(question.body.join(' ')).toContain('2 changes you made offline have not been sent yet.');
+    expect(question.choices.map((choice) => choice.id)).toEqual(['keep', 'delete', 'cancel']);
+    expect(question.choices[0].label).toBe('Keep on this device');
+    expect(question.choices[1].label).toBe('Delete from this device');
+    ask.open()!.answer('cancel');
+    expect(await first).toBe('cancel');
+    expect(await outbox.entries()).toHaveLength(2);
+
+    const second = records.askSignOut();
+    await answerAsk('delete');
+    expect(await second).toBe('delete');
+    // The caller deletes (app.ts): nothing has been deleted by the question itself.
+    expect(await outbox.entries()).toHaveLength(2);
+    await records.clear();
+    expect(await outbox.entries()).toEqual([]);
+  });
+
+  it('asks nothing at sign-out when nothing is kept and nothing waits', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    expect(await records.askSignOut()).toBe('keep');
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+  });
+
+  it('Clear offline data asks (with the unsent count), and deletes the copy and the queue on Delete', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    const ask = TestBed.inject(OfflineAsk);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    const clearing = records.clearWithConfirm();
+    await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+    expect(ask.open()!.question.body.join(' ')).toContain('1 change that has not been sent yet will be lost.');
+    ask.open()!.answer('cancel');
+    expect(await clearing).toBe(false);
+    expect(await outbox.entries()).toHaveLength(1);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+
+    const again = records.clearWithConfirm();
+    await answerAsk('delete');
+    expect(await again).toBe(true);
+    expect(await outbox.entries()).toEqual([]);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+  });
+
+  it("counts another account's changes without showing them, and deletes them only when asked", async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
     const outbox = TestBed.inject(Outbox);
@@ -508,15 +609,25 @@ describe('the outbox: changes made while offline', () => {
     offline(true);
     await change('notes', 'n1', { content: 'x' });
     vi.restoreAllMocks();
-    const out = TestBed.inject(AuthService).signOut();
-    httpMock()
-      .expectOne(API + '/signout')
-      .flush({});
-    await out;
-    await vi.waitFor(() => expect(localStorage.getItem(RECORDS_FLAG)).toBeNull());
-    await vi.waitFor(async () => expect(await outbox.entries()).toHaveLength(1));
-    expect(await databases()).toContain(RECORDS_DB);
-    expect(localStorage.getItem(OUTBOX_NOTE)).toBe('1');
+    const signIn = TestBed.inject(AuthService).signIn('b@b.c', 'password123');
+    await answerNext(API + '/signin', { msg: 'Signed in.', email: 'b@b.c', kept: 0 });
+    await signIn;
+    await answerNext(API + '/verify', { id: 'u2', email: 'b@b.c' });
+    await vi.waitFor(() => expect(records.enabled()).toBe(false));
+    await records.refreshOthers();
+    expect(records.otherCount()).toBe(1);
+
+    const deleting = records.deleteOthers();
+    await answerAsk('cancel');
+    expect(await deleting).toBe(false);
+    expect(await outbox.entries()).toHaveLength(1);
+
+    const again = records.deleteOthers();
+    await answerAsk('delete');
+    expect(await again).toBe(true);
+    expect(records.otherCount()).toBe(0);
+    expect(await outbox.entries()).toEqual([]);
+    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 });
 

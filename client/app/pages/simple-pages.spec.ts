@@ -178,7 +178,8 @@ describe('static pages', () => {
     expect(names).toEqual(expect.arrayContaining(['visitor.language', 'region', 'printBatch', 'reloadedFor']));
     expect(names).toEqual(expect.arrayContaining(['__Host-glazecalc_oauth', 'glazecalc_oauth']));
     expect(names).toEqual(expect.arrayContaining(['gc-records', 'offlineRecords', 'gc-i18n', 'offlineLanguage']));
-    expect(names.length).toBe(40);
+    expect(names).toContain('offlineOutbox');
+    expect(names.length).toBe(41);
     for (const row of rows) {
       const cells = [...row.querySelectorAll('td')].map((td) => td.textContent?.trim() ?? '');
       expect(cells.length).toBe(2);
