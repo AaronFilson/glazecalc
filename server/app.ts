@@ -43,6 +43,7 @@ import {
   type PageText
 } from './lib/pages.ts';
 import { readPrerendered } from './lib/prerendered.ts';
+import { sendCompressed } from './lib/compress.ts';
 import languages from '../lib/regions/languages.js';
 
 const app = express();
@@ -215,8 +216,19 @@ app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
     xml = sitemap(url);
     sitemaps.set(url, xml);
   }
-  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(xml);
+  // Compressed once for each encoding too (server/lib/compress.ts), with an ETag for a 304.
+  res.type('application/xml').set('Cache-Control', 'public, max-age=3600');
+  sendCompressed(req, res, xml, { etag: true, cached: (encoding, make) => compressedSitemap(url, encoding, make) });
 });
+const compressedSitemaps = new Map<string, Buffer>();
+const compressedSitemap = (url: string, encoding: string, make: () => Buffer): Buffer => {
+  let body = compressedSitemaps.get(encoding + ' ' + url);
+  if (!body) {
+    body = make();
+    compressedSitemaps.set(encoding + ' ' + url, body);
+  }
+  return body;
+};
 
 app.get('/robots.txt', site.robotsTxt);
 
@@ -328,15 +340,17 @@ app.use(async (req, res, next) => {
     .set('Content-Security-Policy', contentSecurityPolicy(nonce))
     .set('Content-Language', code);
   if (isPrivatePage(req.path)) privateHeaders(res);
-  return res
-    .status(isPage(req.path) ? 200 : 404)
-    .type('html')
-    .send(
-      withNonce(pageHtml(html, req.path, site.siteUrl(), text, undefined, rendered), nonce).replace(
-        '<gc-root>',
-        `<gc-root ngCspNonce="${nonce}">`
-      )
-    );
+  // Compressed here for each reply, as the nonce is new each time (server/lib/compress.ts); no ETag, as
+  // none would ever match.
+  res.status(isPage(req.path) ? 200 : 404).type('html');
+  return sendCompressed(
+    req,
+    res,
+    withNonce(pageHtml(html, req.path, site.siteUrl(), text, undefined, rendered), nonce).replace(
+      '<gc-root>',
+      `<gc-root ngCspNonce="${nonce}">`
+    )
+  );
 });
 
 interface HttpError extends Error {

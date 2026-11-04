@@ -132,4 +132,13 @@ describe('nginx compression', () => {
   it('is the same on staging', () => {
     expect(typesIn('glazecalc-staging.conf')).to.eql(typesIn('glazecalc-proxy.conf'));
   });
+
+  // Level 5 for what nginx compresses; pages come compressed from the app.
+  it('compresses at level 5 in production and on staging', () => {
+    for (const file of ['glazecalc-proxy.conf', 'glazecalc-staging.conf']) {
+      const text = fs.readFileSync(path.join(NGINX, file), 'utf8');
+      const levels = [...text.matchAll(/^\s*gzip_comp_level (\d+);/gm)].map((m) => m[1]);
+      expect(levels, file).to.eql(['5']);
+    }
+  });
 });
