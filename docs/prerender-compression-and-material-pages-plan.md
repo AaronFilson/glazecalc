@@ -18,6 +18,39 @@ The measuring scripts are in `scratch/round14/prerender-plan/`:
 
 ## Part A. Compressed prerendered pages
 
+### What was built (2026-11-04, branch `r14-compress`)
+
+Option 2, as the owner chose (fresh nonce per reply; no process nonce, no cache, no brotli 11 job):
+
+- `server/lib/compress.ts`: `chooseEncoding` (brotli if the client takes it, else gzip, else none; `q=0` and
+  `*` honoured, the client's order not followed) and `sendCompressed`, which sets `Vary: Accept-Encoding`,
+  `Content-Encoding` and `Content-Length`, and sends no body to a HEAD. Replies under 1 kB go plain.
+  Brotli quality 5 (text mode, size hint), gzip level 5.
+- `server/app.ts`: every page reply (prerendered or index.html, 200 or 404) is compressed after the nonce is
+  put in, with `Cache-Control: no-cache` as before and no ETag (it could never match). The sitemap is
+  compressed once per site address and encoding, kept in memory beside the plain one, and gets a strong
+  ETag (text hash plus encoding) so a 304 still works.
+- nginx: `gzip_comp_level 5` in both site configs (test in `server/test/nginx_policy_tests.ts`). nginx's gzip
+  skips a reply that already has `Content-Encoding`, so pages and the sitemap are not compressed twice; JS,
+  CSS, JSON and the rest are still gzipped by nginx, now at level 5.
+- Tests: `server/test/compress_tests.ts` (each encoding, Vary, Content-Length equal to the bytes sent, HEAD,
+  a 404, two replies with different nonces, the sitemap's ETag and 304).
+
+Measured per reply on this Windows machine (median of 15, `scratch/r14-compress/measure.mjs`):
+
+| Page (raw)                    | gzip 1 (nginx before) | gzip 5           | brotli 5 (now)   |
+| ----------------------------- | --------------------- | ---------------- | ---------------- |
+| en/index.html (110 kB)        | 38.6 kB, 1.2 ms       | 34.9 kB, 1.9 ms  | 32.7 kB, 3.2 ms  |
+| en/materials/silica.html (65) | 22.4 kB, 0.6 ms       | 21.0 kB, 1.0 ms  | 19.5 kB, 2.3 ms  |
+| de/cones.html (131)           | 42.4 kB, 1.1 ms       | 38.4 kB, 2.0 ms  | 35.2 kB, 3.4 ms  |
+| de/guides/firing.html (310)   | 90.5 kB, 2.5 ms       | 80.2 kB, 4.8 ms  | 66.1 kB, 6.2 ms  |
+| ta/guides/firing.html (574)   | 130.6 kB, 3.4 ms      | 100.6 kB, 7.8 ms | 82.1 kB, 10.0 ms |
+
+Brotli 6 saved 1 to 6% more for 15 to 35% more time, and gzip 6 under 1% more for 20 to 60% more, so 5 for
+both. On a t4g.micro expect 2 to 3 times these times (about 5 to 30 ms per page), in place of nginx's gzip 1.
+
+The sections below are the plan as written before the owner's decision.
+
 ### How it works today
 
 - The build writes each page to `dist/glazecalc/prerendered/<lang>/<page>.html`
