@@ -512,7 +512,10 @@ describe('Shared recipe tools', () => {
     expect(recipe.materialSg(named('Bone Ash')).sg).to.equal(3.16);
     expect(recipe.materialSg(named('Copper oxide')).sg).to.equal(6.4);
     expect(recipe.materialSg(named('Litharge')).sg).to.equal(9.35);
-    expect(recipe.materialSg(named('Pearl Ash')).sg).to.equal(2.29);
+    // Crystal-structure densities settle the disagreements: K2CO3 2.435, Co3O4 6.06, CeO2 7.22.
+    expect(recipe.materialSg(named('Pearl Ash')).sg).to.equal(2.43);
+    expect(recipe.materialSg(named('Cobalt Oxide')).sg).to.equal(6.07);
+    expect(recipe.materialSg(named('Cerium oxide')).sg).to.equal(7.22);
     // Kinds: commercial feldspars and clays.
     expect(recipe.materialSg(named('Custer Spar'))).to.include({ sg: 2.6, basis: 'kind', source: 'feldspar' });
     expect(recipe.materialSg(named('EPK Kaolin'))).to.include({ sg: 2.6, basis: 'kind', source: 'clay' });
@@ -538,6 +541,9 @@ describe('Shared recipe tools', () => {
     const glass = (wt: Record<string, number>) => density.glassDensity(wt).sg!;
     expect(glass({ SiO2: 72.5, Na2O: 13.5, CaO: 9, MgO: 3.5, Al2O3: 1.5 })).to.be.closeTo(2.5, 0.03);
     expect(glass({ SiO2: 80.6, B2O3: 12.6, Na2O: 4.2, Al2O3: 2.2 })).to.be.closeTo(2.23, 0.04);
+    // A tile frit with its analysis and density (Barba et al. 2016, frit FCP, 2.654): within 1%.
+    const fcp = { SiO2: 60, Al2O3: 6.5, B2O3: 1.74, CaO: 14.1, MgO: 1.75, Na2O: 0.34, K2O: 4.37, ZnO: 10.6 };
+    expect(glass(fcp)).to.be.closeTo(2.654, 0.03);
     expect(density.glassDensity({ SiO2: 90, Fe2O3: 10 }).sg).to.equal(null);
   });
 
