@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { idemKeyField, indexIdemKey } from './idempotency.ts';
 
 // A firing log: the columns kept (time, temperature, cone...) and their rows.
 const firingSchema = new mongoose.Schema({
@@ -10,6 +11,7 @@ const firingSchema = new mongoose.Schema({
   rows: { type: [mongoose.Schema.Types.Mixed], required: true },
   // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
   rev: { type: Number, default: 0 },
+  ...idemKeyField,
   title: { type: String, required: true },
   updatedAt: Date
 });
@@ -17,5 +19,6 @@ const firingSchema = new mongoose.Schema({
 // Each account's records in the order they were made: the lists, the
 // latest record, the quota count and the account's deletion look up by owner.
 firingSchema.index({ ownedBy: 1, _id: 1 });
+indexIdemKey(firingSchema);
 
 export default mongoose.model('Firing', firingSchema);

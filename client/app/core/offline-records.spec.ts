@@ -313,15 +313,17 @@ describe('the records kept on this device', () => {
     expect(records.backOnline()).toBe(false);
   });
 
-  it('does not answer a 401 from the copy, and the session it ends deletes the copy', async () => {
+  it('does not answer a 401 from the copy, and the session it ends deletes nothing', async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
     await turnOn(records);
+    await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
     const reply = get(API + '/recipe/getAll');
     await answerNext(API + '/recipe/getAll', null, { status: 401, statusText: 'Unauthorized' });
     expect(((await reply) as HttpErrorResponse).status).toBe(401);
-    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(records.enabled()).toBe(true);
+    expect(await databases()).toContain(RECORDS_DB);
   });
 
   it('writes through: a saved change has its collection fetched again', async () => {
@@ -329,9 +331,7 @@ describe('the records kept on this device', () => {
     const records = TestBed.inject(OfflineRecords);
     await turnOn(records);
     const saved = firstValueFrom(TestBed.inject(HttpClient).post(API + '/recipe/create', { title: 'Shino' }));
-    httpMock()
-      .expectOne(API + '/recipe/create')
-      .flush({ _id: 'r2', title: 'Shino' });
+    await answerNext(API + '/recipe/create', { _id: 'r2', title: 'Shino' });
     await saved;
     const both = [...RECIPES, { _id: 'r2', title: 'Shino' }];
     await answerNext(API + '/recipe/getAll', both);
@@ -374,51 +374,41 @@ describe('the records kept on this device', () => {
     });
     await verify;
     expect(spy).toHaveBeenCalledWith({ id: 'u1', endsAt: Date.parse('2099-01-01T00:00:00.000Z'), sessionOnly: true });
-    expect(sessionStorage.getItem(RECORDS_FLAG)).toBe('1');
   });
 
-  it('removes the copy once the sign-in has run out, even with no network, and at the next start', async () => {
+  it('keeps the copy when the sign-in has run out, offline, and at the next start', async () => {
     setUp();
     let records = TestBed.inject(OfflineRecords);
     await turnOn(records);
     await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
     vi.spyOn(Date, 'now').mockReturnValue(Date.now() + 8 * DAY);
-    expect(await records.read('recipe')).toBeNull();
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    expect((await records.read('recipe'))?.body).toEqual(RECIPES);
+    expect(await offlineGet(API + '/recipe/getAll')).toEqual(RECIPES);
 
-    // At start: a copy whose sign-in has run out goes before any page reads it.
-    vi.restoreAllMocks();
-    localStorage.setItem('session', 'account');
+    // At start, still offline: the copy is read as before.
     records = restart();
-    await turnOn(records);
-    await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
-    vi.spyOn(Date, 'now').mockReturnValue(Date.now() + 8 * DAY);
-    records = restart();
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
-    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    expect(await offlineGet(API + '/recipe/getAll')).toEqual(RECIPES);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(await databases()).toContain(RECORDS_DB);
   });
 
-  it('a sign-in without "keep me signed in": after the browser closed, the copy is never shown, and goes when /verify fails', async () => {
+  it('a sign-in without "keep me signed in": after the browser closed, offline, the copy is still read, and a failed /verify deletes nothing', async () => {
     setUp();
     let records = TestBed.inject(OfflineRecords);
     await turnOn(records, { sessionOnly: true });
     await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
-    expect(sessionStorage.getItem(RECORDS_FLAG)).toBe('1');
-
-    // The same browser session (a reload): shown as before.
-    records = restart();
-    expect(await offlineGet(API + '/recipe/getAll')).toEqual(RECIPES);
 
     // The browser was closed (sessionStorage is gone), and it starts again with no network.
     sessionStorage.clear();
     records = restart();
-    expect(await offlineGet(API + '/recipe/getAll')).toBeInstanceOf(HttpErrorResponse);
-    expect(records.readOnly()).toBe(false);
+    expect(await offlineGet(API + '/recipe/getAll')).toEqual(RECIPES);
     const verify = get(API + '/verify');
     await answerNext(API + '/verify', null, network);
     await verify;
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
-    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(await offlineGet(API + '/recipe/getAll')).toEqual(RECIPES);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(await databases()).toContain(RECORDS_DB);
   });
 
   it('a session-only sign-in in a new tab, online: /verify confirms it and the copy is used again', async () => {
@@ -439,15 +429,33 @@ describe('the records kept on this device', () => {
     expect(await offlineGet(API + '/recipe/getAll')).toEqual(RECIPES);
   });
 
-  it('a new sign-in deletes the copy and turns it off, even without a sign-out first', async () => {
+  /** Signs in as someone and answers the /verify that follows. */
+  async function signInAs(email: string, id: string): Promise<void> {
+    const signIn = TestBed.inject(AuthService).signIn(email, 'password123');
+    await answerNext(API + '/signin', { msg: 'Signed in.', email, kept: 0 });
+    await signIn;
+    await answerNext(API + '/verify', { id, email });
+  }
+
+  it('the same user signing in again keeps the copy', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+    await signInAs('a@b.c', 'u1');
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(records.enabled()).toBe(true);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect((await records.read('recipe'))?.body).toEqual(RECIPES);
+  });
+
+  it("a different user signing in replaces the copy and turns it off: the first user's copy is not shown to them", async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
     await turnOn(records);
     await vi.waitFor(async () => expect(await databases()).toContain(RECORDS_DB));
-    const signIn = TestBed.inject(AuthService).signIn('b@b.c', 'password123');
-    await answerNext(API + '/signin', { msg: 'Signed in.', email: 'b@b.c', kept: 0 });
-    await signIn;
-    expect(records.enabled()).toBe(false);
+    await signInAs('b@b.c', 'u2');
+    await vi.waitFor(() => expect(records.enabled()).toBe(false));
     expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
@@ -502,8 +510,20 @@ describe('the records kept on this device', () => {
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 
-  for (const end of ['signOut', 'sessionEnded', 'signOutEverywhere'] as const) {
-    it(`deletes the copy and the flag when the session ends (${end})`, async () => {
+  it('keeps the copy and the flag when the server ends the session (it ran out)', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect(await databases()).toContain(RECORDS_DB));
+    TestBed.inject(AuthService).sessionEnded();
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(records.enabled()).toBe(true);
+    expect(await databases()).toContain(RECORDS_DB);
+  });
+
+  for (const end of ['signOut', 'signOutEverywhere'] as const) {
+    it(`deletes the copy and the flag when the person signs out (${end})`, async () => {
       setUp();
       const records = TestBed.inject(OfflineRecords);
       await turnOn(records);
@@ -538,15 +558,25 @@ describe('the records kept on this device', () => {
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 
-  it('deletes a copy left behind when the app starts with no session', async () => {
+  it('keeps a copy when the app starts with no session (the sign-in ended): the same user signing in carries on', async () => {
     const opening = indexedDB.open(RECORDS_DB, 1);
     await new Promise((resolve) => (opening.onsuccess = resolve));
     opening.result.close();
     localStorage.setItem(RECORDS_FLAG, '1');
     setUp(null);
     const records = TestBed.inject(OfflineRecords);
-    expect(records.enabled()).toBe(false);
-    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(records.enabled()).toBe(true);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect(await databases()).toContain(RECORDS_DB);
+  });
+
+  it('deletes a database left behind when nothing asks for it (no flag, no waiting change)', async () => {
+    const opening = indexedDB.open(RECORDS_DB, 1);
+    await new Promise((resolve) => (opening.onsuccess = resolve));
+    opening.result.close();
+    setUp(null);
+    TestBed.inject(OfflineRecords);
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 

@@ -4,6 +4,7 @@ import type { FiringBlock } from '../../lib/cones/firing.js';
 import results from '../../lib/cones/results.js';
 import limits from '../../lib/recipe/limits.js';
 import slurry from '../../lib/recipe/slurry.js';
+import { idemKeyField, indexIdemKey } from './idempotency.ts';
 
 /**
  * How many firing logs a recipe can be linked to (logs that are there; links to logs in the Trash
@@ -91,6 +92,7 @@ const recipeSchema = new mongoose.Schema({
   ownedBy: { type: String, required: true },
   // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
   rev: { type: Number, default: 0 },
+  ...idemKeyField,
   title: { type: String, required: true },
   updatedAt: Date
 });
@@ -98,5 +100,6 @@ const recipeSchema = new mongoose.Schema({
 // Each account's records in the order they were made: the lists, the
 // latest record, the quota count and the account's deletion look up by owner.
 recipeSchema.index({ ownedBy: 1, _id: 1 });
+indexIdemKey(recipeSchema);
 
 export default mongoose.model('Recipe', recipeSchema);

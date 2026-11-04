@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { idemKeyField, indexIdemKey } from './idempotency.ts';
 import { libraryInfo } from './library_info.ts';
 
 // A raw material with its oxide analysis (fields) and molecular weights.
@@ -16,6 +17,7 @@ const materialSchema = new mongoose.Schema({
   rawformula: String,
   // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
   rev: { type: Number, default: 0 },
+  ...idemKeyField,
   updatedAt: Date,
   ...libraryInfo
 });
@@ -23,5 +25,6 @@ const materialSchema = new mongoose.Schema({
 // Each account's records in the order they were made: the lists, the
 // latest record, the quota count and the account's deletion look up by owner.
 materialSchema.index({ ownedBy: 1, _id: 1 });
+indexIdemKey(materialSchema);
 
 export default mongoose.model('Material', materialSchema);

@@ -7,7 +7,8 @@ const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const API = 'http://localhost:' + (process.env.E2E_PORT || '3100') + '/api';
 
 // Offline stage 3 (docs/adr/0028-service-worker.md, core/offline-records.ts): a signed-in user's records kept on
-// the device when they turn it on, read-only offline, and gone whenever the session ends. The service worker is
+// the device when they turn it on, read-only offline, and deleted only by the person (signing out, signing in as
+// someone else, turning it off); a sign-in that runs out or a closed browser deletes nothing. The service worker is
 // allowed, as in offline.spec.js, so a reload with no network has the app.
 test.use({ serviceWorkers: 'allow', viewport: { width: 1280, height: 800 } });
 test.describe.configure({ timeout: 120_000 });
@@ -213,7 +214,7 @@ test("read-only is the page's: back online the bar offers Reload, and the next p
   await expect(notesSave()).not.toHaveAttribute('aria-disabled', 'true');
 });
 
-test('a sign-in without "Keep me signed in": once the browser is closed, an offline start never shows the copy', async ({
+test('a sign-in without "Keep me signed in": once the browser is closed, an offline start still shows the copy', async ({
   page,
   context,
   request
@@ -221,18 +222,23 @@ test('a sign-in without "Keep me signed in": once the browser is closed, an offl
   const email = await newAccount(request, 'session-only');
   await installed(page, '/about');
   await signInThroughPage(page, email);
-  await savedRecipe(page, 'Session Only Recipe');
+  const id = await savedRecipe(page, 'Session Only Recipe');
   await turnOn(page);
   await expect.poll(() => copiedTitles(page), { timeout: 30_000 }).toEqual(['Session Only Recipe']);
+  // The recipe page once online, so its code and messages are on the device too.
+  await page.goto('/recipe?open=' + id);
+  await expect(page.locator('#recipe-name')).toHaveValue('Session Only Recipe');
 
   // Closing the browser ends the session cookie and this browser session's storage; the rest stays.
+  await context.setOffline(true);
   await context.clearCookies();
   await page.evaluate(() => globalThis.sessionStorage.clear());
-  await context.setOffline(true);
-  await page.goto('/recipe');
-  await expect(page.getByText('Session Only Recipe')).toHaveCount(0);
-  await expect(banner(page)).toHaveCount(0);
-  await expect.poll(() => hasCopy(page), { timeout: 30_000 }).toBe(false);
+  await page.goto('/recipe?open=' + id);
+  // The person's work is not deleted behind their back (owner decision 2026-11-03): the copy stays and is read.
+  await expect(page.locator('#recipe-name')).toHaveValue('Session Only Recipe');
+  await expect(banner(page)).toBeVisible();
+  expect(await hasCopy(page)).toBe(true);
+  expect(await copiedTitles(page)).toEqual(['Session Only Recipe']);
 });
 
 test('off by default: with no network the records are not there, and the page says so', async ({ page, context }) => {
@@ -304,7 +310,9 @@ test('signing out online deletes the copy before the sign-in page', async ({ pag
   expect(await hasCopy(page).catch(() => false)).toBe(false);
 });
 
-test('an account deleted elsewhere has its copy removed when this device next connects', async ({ page }) => {
+test('an account deleted elsewhere: the sign-in ends but the copy stays until the person clears it', async ({
+  page
+}) => {
   await signUpAndSignIn(page);
   await savedRecipe(page, 'Deleted Account');
   await installed(page, '/recipe');
@@ -314,7 +322,9 @@ test('an account deleted elsewhere has its copy removed when this device next co
   const gone = await page.request.delete(API + '/deleteuser/' + me.id, { data: { password: 'password123' } });
   expect(gone.ok()).toBe(true);
   await page.goto('/about');
-  await expect.poll(() => hasCopy(page), { timeout: 30_000 }).toBe(false);
+  await expect(page.getByRole('link', { name: 'Sign in' }).first()).toBeVisible();
+  expect(await hasCopy(page)).toBe(true);
+  expect(await copiedTitles(page)).toEqual(['Deleted Account']);
 });
 
 test('the banner shows in Arabic pages too, right to left', async ({ page, context }) => {

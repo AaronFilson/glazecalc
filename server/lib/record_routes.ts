@@ -42,6 +42,7 @@
 import express, { type Request } from 'express';
 import mongoose from 'mongoose';
 import RecordVersion from '../models/record_version.ts';
+import { idempotent } from './idempotent.ts';
 import { standardSet } from './standard_library.ts';
 import { giveBack, makeRoom, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
@@ -122,20 +123,32 @@ export default function recordRoutes(
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
 
-  const create: Op = async (who, { body }) => {
+  const create: Op = async (who, { body, idemKey }) => {
     const source = recordIn(body, wrapper.create) ?? {};
     if (required.some((field) => missing(source[field]))) return { status: 400, body: MISSING };
-    const saved = await Model.create({
-      ...pick(source, fields),
-      ownedBy: String(who.user._id),
-      rev: 0,
-      updatedAt: new Date()
-    });
+    const ownedBy = String(who.user._id);
+    let saved;
+    try {
+      saved = await Model.create({
+        ...pick(source, fields),
+        ownedBy,
+        rev: 0,
+        updatedAt: new Date(),
+        ...(idemKey && { idemKey })
+      });
+    } catch (err) {
+      // The same Idempotency-Key again (the app sent a create whose answer was lost): the record it made.
+      if (idemKey && (err as { code?: number }).code === 11000) {
+        const earlier = await Model.findOne({ ownedBy, idemKey });
+        if (earlier) return { status: 200, body: earlier };
+      }
+      throw err;
+    }
     await logActivity(who, 'create', area, saved.toObject());
     return { status: 200, body: saved };
   };
 
-  const change: Op = async (who, { params, body, rev }) => {
+  const change: Op = idempotent(async (who, { params, body, rev }) => {
     if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
     const source = recordIn(body, wrapper.change);
     if (!source) return { status: 400, body: MISSING };
@@ -168,9 +181,9 @@ export default function recordRoutes(
       }
       throw err;
     }
-  };
+  });
 
-  const remove: Op = async (who, { params, rev }) => {
+  const remove: Op = idempotent(async (who, { params, rev }) => {
     if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
     const id = params.id!;
     const user = who.user;
@@ -187,7 +200,7 @@ export default function recordRoutes(
     // A trial gets the place back for another record; the Trash does not count.
     if (user.guest) await giveBack(user._id, Model);
     return { status: 200, body: { ...say('record-trashed', { label }), trashId: trashed.trashId } };
-  };
+  });
 
   const undo: Op = async (who, { params, rev }) => {
     if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;

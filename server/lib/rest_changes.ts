@@ -51,7 +51,16 @@ export interface OpInput {
   body: unknown;
   /** The revision the request's If-Match names (server/lib/record_rev.ts); none asks for no check. */
   rev?: number;
+  /** The request's Idempotency-Key (server/models/idempotency.ts): a repeat of it gets the first answer. */
+  idemKey?: string;
 }
+
+/** A usable Idempotency-Key: a short token the app made (a uuid); anything else asks for no check. */
+const idemKeyOf = (req: Pick<Request, 'headers'>): string | undefined => {
+  const header = req.headers['idempotency-key'];
+  const text = Array.isArray(header) ? header[0] : header;
+  return typeof text === 'string' && /^[A-Za-z0-9_-]{8,100}$/.test(text) ? text : undefined;
+};
 
 /** What a route answers. */
 export interface Reply {
@@ -77,10 +86,12 @@ export const registerOp = (name: string, op: Op, { trashes = false }: { trashes?
 /** The route's input as a waiting change keeps it. */
 export const inputOf = (req: Request): OpInput => {
   const rev = ifMatchOf(req);
+  const idemKey = idemKeyOf(req);
   return {
     params: { ...(req.params as Record<string, string>) },
     body: req.body ?? null,
-    ...(rev !== undefined && { rev })
+    ...(rev !== undefined && { rev }),
+    ...(idemKey !== undefined && { idemKey })
   };
 };
 
