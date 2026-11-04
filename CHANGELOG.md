@@ -6,6 +6,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Each standard material's page in every live language** (docs/prerender-compression-and-material-pages-plan.md,
+  Part B). The 170 material pages are prerendered and offered to search engines in all 57 languages: canonical to
+  themselves, with hreflang and x-default, in each language's sitemap and with structured data in the language. A
+  material whose notes or hazards are not all translated in a language stays noindex there, canonical to the English
+  (none is today). `/sitemap.xml` is now a sitemap index of one sitemap per language (`/sitemaps/de.xml`), and IndexNow
+  reads them all, 10,000 addresses a request. On the page, the main button opens a new recipe with the material in it,
+  starting a trial without asking for a visitor not signed in; below it, "Create a free account" comes back to the page
+  after sign-up and after the confirmation email, which is now written in the language of the page the sign-up was
+  for; and the beginner guides are linked.
 - **The teaching companion, round 12** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
   short lesson on any glaze topic at the learner's level (new, some, experienced), with up to two guide sections
   attached, one small experiment with one tool, and John Britt's videos linked by his titles with credit only when the

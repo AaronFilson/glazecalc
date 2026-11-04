@@ -38,6 +38,7 @@ import {
   pageHtml,
   prerenderedKey,
   sitemap,
+  sitemapIndex,
   withNonce,
   withoutSlash,
   type PageText
@@ -205,17 +206,26 @@ app.use((req, res, next) => {
 
 // A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
 // robots.txt turns every crawler away (server/lib/site.ts). The languages
-// and pages are fixed for the life of the process, so the sitemap (about
-// 1 MB) is built once for each site address.
+// and pages are fixed for the life of the process, so the sitemap index and
+// each language's sitemap (about 1 MB each) are built once for each site address.
 const sitemaps = new Map<string, string>();
-app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
-  const url = site.siteUrl();
-  let xml = sitemaps.get(url);
+const sendSitemap = (res: Response, key: string, make: () => string) => {
+  let xml = sitemaps.get(key);
   if (xml === undefined) {
-    xml = sitemap(url);
-    sitemaps.set(url, xml);
+    xml = make();
+    sitemaps.set(key, xml);
   }
   res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(xml);
+};
+app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
+  const url = site.siteUrl();
+  sendSitemap(res, url, () => sitemapIndex(url));
+});
+app.get('/sitemaps/:file', site.sitemapAllowed, (req, res, next) => {
+  const code = /^(.+)\.xml$/.exec(req.params.file)?.[1];
+  if (!code || !languages.LIVE_LANGUAGES.includes(code)) return next();
+  const url = site.siteUrl();
+  sendSitemap(res, url + ' ' + code, () => sitemap(url, undefined, undefined, undefined, code));
 });
 
 app.get('/robots.txt', site.robotsTxt);

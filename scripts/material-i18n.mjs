@@ -2,6 +2,7 @@
 // and nothing more, picked out of each language's records/<language>.json:
 //
 //   dist/i18n-generated/materials/<language>.json   the materials' notes and hazards
+//   dist/i18n-generated/materials/<language>/<slug>.json   one material's, for its own page
 //   dist/i18n-generated/cones/<language>.json       the cone charts' notes
 //
 // which the build serves as /i18n/materials/<language>.json and /i18n/cones/<language>.json
@@ -34,16 +35,44 @@ export const standardMaterials = () =>
     .filter((line) => line.trim())
     .map((line) => JSON.parse(line));
 
-/** The keys of the materials' words in records/ (lib/regions/languages.js textKey), as the page looks them up. */
-export function materialKeys() {
+/** The keys of one material's words in records/ (lib/regions/languages.js textKey), as its page looks them up. */
+export function keysOf(material) {
   const { textKey } = require('../lib/regions/languages.js');
+  const notes = Array.isArray(material.notes) ? material.notes : material.notes ? [material.notes] : [];
+  const texts = [...notes, material.hazards];
+  if (material.source?.name === 'Theoretical formula') texts.push(material.source.name);
+  return new Set(texts.filter((text) => typeof text === 'string' && text.trim()).map(textKey));
+}
+
+/** The keys of the materials' words in records/, as the pages look them up. */
+export function materialKeys() {
   const keys = new Set();
-  for (const material of standardMaterials()) {
-    const texts = [...(material.notes ?? []), material.hazards];
-    if (material.source?.name === 'Theoretical formula') texts.push(material.source.name);
-    for (const text of texts) if (typeof text === 'string' && text.trim()) keys.add(textKey(text));
-  }
+  for (const material of standardMaterials()) for (const key of keysOf(material)) keys.add(key);
   return keys;
+}
+
+/**
+ * Each language's words for each material's page alone, by language and the page's slug
+ * ({ de: { silica: '{…}' } }), from records/: a material's page loads only its own
+ * (/i18n/materials/de/silica.json, pages/materials/material-route.ts), so the page
+ * prerendered in each language carries a few hundred bytes of them, not every material's.
+ */
+export function perMaterialFiles() {
+  const { materialSlug } = require('../lib/material-slug.js');
+  const materials = standardMaterials().map((material) => [materialSlug(material.name), keysOf(material)]);
+  const out = {};
+  for (const name of readdirSync(RECORDS)
+    .filter((file) => file.endsWith('.json') && file !== 'en.json')
+    .sort()) {
+    const records = JSON.parse(readFileSync(path.join(RECORDS, name), 'utf8'));
+    const files = (out[name.slice(0, -'.json'.length)] = {});
+    for (const [slug, keys] of materials) {
+      files[slug] = JSON.stringify(
+        Object.fromEntries([...keys].filter((key) => key in records).map((key) => [key, records[key]]))
+      );
+    }
+  }
+  return out;
 }
 
 /** The keys of the cone charts' notes in records/. */
@@ -81,6 +110,11 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
     mkdirSync(dir, { recursive: true });
     for (const [name, text] of Object.entries(files)) writeFileSync(path.join(dir, name), text + '\n');
     count = Object.keys(files).length;
+  }
+  for (const [language, files] of Object.entries(perMaterialFiles())) {
+    const dir = path.join(OUT, 'materials', language);
+    mkdirSync(dir, { recursive: true });
+    for (const [slug, text] of Object.entries(files)) writeFileSync(path.join(dir, slug + '.json'), text + '\n');
   }
   console.log(`Wrote the standard materials' and the cone charts' words for ${count} languages.`);
 }

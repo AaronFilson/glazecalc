@@ -174,7 +174,38 @@ response time) over 4 weeks.
 
 ## Part B. Material pages indexed in every language
 
-### How it works today
+### Built (2026-11-04, branch `r14-material-pages`)
+
+- `lib/pages.js`: material pages left `ENGLISH_ONLY_PAGES` (the Britt guide alone stays). `isReferencePage`;
+  `prerenderLanguages` gives material pages every reference language; `materialTranslatedIn(page, code)` checks
+  each note, hazard and "Theoretical formula" against `records/<code>.json`; `englishOnlyIn` also reads
+  `materialFallback()` (`dist/glazecalc/prerendered/material-fallback.json`), since the server's image has no
+  `records/` (there `materialTranslatedIn` answers yes and the build's list decides).
+- `server/lib/pages.ts`: `offeredIn` is "every live language where `englishOnlyIn` is false", so a material page
+  is canonical to itself with hreflang and x-default, or noindex with canonical to English where it falls back.
+  `sitemap(…, only)` makes one language's file; `sitemapIndex()` is `/sitemap.xml`; `/sitemaps/<lang>.xml` is
+  served in `server/app.ts` (the only change there). robots.txt already names `/sitemap.xml`, now the index.
+- `lib/page-dates.js`: a material page's sources are `<lang>.json`, `reference/<lang>.json`, `records/<lang>.json`
+  and `data/materials.ndjson` (the whole file, not the material's line).
+- `scripts/indexnow.mjs`: follows the index, sends in requests of at most 10,000 (10,602 addresses now: two).
+- `scripts/prerender.mjs`: `englishStandsIn` (the notice, or a `<p lang="en">` outside the footer) plus
+  `materialTranslatedIn`; such a page is written, not failed, and listed in `material-fallback.json` (empty today).
+  `PRERENDER_WORKERS` overrides the 4 workers.
+- Size: a German material page first carried all 170 materials' words in its transfer state (191 kB; dist 2.3 GB).
+  The page now loads only its own (`/i18n/materials/<lang>/<slug>.json`, written by `scripts/material-i18n.mjs`,
+  merged by the route's `materialWords` resolver): 120 kB (36 kB gzipped), 66 kB in English.
+- Page: the main button (`#material-try`, still a link to `/recipe`) starts a trial when not signed in and hands the
+  recipe page a new recipe titled with the material, holding it (`PendingRecipeService`); below it "Create a free
+  account" (`nav.createAccount`) links `/<lang>/signup?next=/materials/<slug>`. `next` is the router's path
+  without the language, as `sameSitePath` and `navigateByUrl` take it; the sign-up now sends the server the path
+  with its language, and `sendVerification` writes the email and link in that language when the account has none,
+  so the confirmation also ends on `/de/materials/<slug>`. Links to "Glazing basics" and "Making a glaze" use the
+  existing titles. No new strings. Structured data uses the page's language where translated.
+- Numbers on this Windows machine: 10,602 pages prerendered in 171 s (was 1,082 in about 37 s); the whole build
+  about 4 minutes. `dist/glazecalc/prerendered` 1.50 GB (was 233 MB), `dist/glazecalc` 1.56 GB. Two images
+  kept on the server: about 3 GB, against the 12 GB free.
+
+### How it worked before
 
 - `lib/pages.js:53`: every `/materials/<slug>` is in `ENGLISH_ONLY_PAGES`.
 - `lib/pages.js:86-89`: `prerenderLanguages` gives material pages English alone. The comment says

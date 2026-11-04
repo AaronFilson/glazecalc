@@ -54,6 +54,13 @@ describe('confirming an address at sign-up', () => {
       expect(await linkFor('/recipe?id=1#saved')).to.match(/&next=%2Frecipe$/);
     });
 
+    it("writes the link in the language of the page the sign-up was for, so it ends there: a German material's page", async () => {
+      const link = await linkFor('/de/materials/silica');
+      expect(link).to.match(/^https:\/\/glazecalc\.test\/de\/confirm-email#token=[\w-]+&next=%2Fmaterials%2Fsilica$/);
+      // An English page, or none, keeps the English.
+      expect(await linkFor('/materials/silica')).to.match(/^https:\/\/glazecalc\.test\/confirm-email#/);
+    });
+
     it('leaves out anything that is not a page of the app: another site, the sign-in pages, home, junk', async () => {
       for (const next of [
         '//evil.example/x',
