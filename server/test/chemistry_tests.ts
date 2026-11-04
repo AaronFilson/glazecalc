@@ -382,7 +382,8 @@ describe('glaze chemistry', () => {
           'digitalfire',
           'glazy',
           'theoretical',
-          'book'
+          'book',
+          'research'
         ]);
       }
     });
@@ -408,7 +409,9 @@ describe('glaze chemistry', () => {
       expect(japanese.map((record) => record.name)).to.eql([
         'Amakusa Pottery Stone (天草陶石)',
         'Fukushima Feldspar (福島長石)',
-        'Kamado Feldspar (釜戸長石)'
+        'Kamado Feldspar (釜戸長石)',
+        'Synthetic Wood Ash (合成土灰)',
+        'Synthetic Rice-Straw Ash (合成藁灰)'
       ]);
       for (const record of japanese) {
         expect(record.region, record.name).to.eql(['JP']);
@@ -421,8 +424,32 @@ describe('glaze chemistry', () => {
       expect(notes('Amakusa')).to.contain('graded by its iron').and.contain('not a feldspar');
       expect(notes('Fukushima')).to.contain('72.1% SiO₂');
       expect(notes('Kamado')).to.contain('aplite').and.contain('Do not swap it');
-      // Not added: Mikumo feldspar (only Digitalfire's analysis, of no stated origin) and natural ashes.
-      for (const record of all) expect(record.name, record.name).not.to.match(/Mikumo|三雲|土灰|柞灰|藁灰|松灰/);
+      // Not added: Mikumo feldspar (only Digitalfire's analysis, of no stated origin).
+      for (const record of all) expect(record.name, record.name).not.to.match(/Mikumo|三雲/);
+    });
+
+    // Ash differs from wood to wood and batch to batch, so one analysis is not "the" ash. A synthetic
+    // ash (合成) is a supplier's blend and may be current; a natural ash only as a historical record
+    // with a sourced analysis, a note saying how it was made and how much ash varies, and a substitute.
+    it('should keep natural ashes historical, sourced and labelled, and synthetic ones synthetic', () => {
+      const ashes = materials.filter(
+        (r) =>
+          /\bash\b|土灰|柞灰|藁灰|松灰|栗灰/i.test(r.name) && !['Bone Ash', 'Pearl Ash', 'Soda Ash'].includes(r.name)
+      );
+      expect(ashes.length).to.be.greaterThan(0);
+      for (const record of ashes) {
+        if (/^Synthetic /.test(record.name)) {
+          expect(record.name, record.name).to.contain('合成');
+          expect(record.source?.kind, record.name).to.equal('supplier');
+          continue;
+        }
+        expect(record.status, record.name).to.equal('historical');
+        expect(record.source?.url, record.name).to.match(/^https:\/\//);
+        expect(record.notes?.[0], record.name).to.match(/^Historical/);
+        expect(record.notes?.[0], record.name).to.match(/one sample|one of six samples|average of six/);
+        expect(record.notes?.[0], record.name).to.match(/burnt|burning/);
+        expect(record.hazards, record.name).to.contain('caustic');
+      }
     });
 
     it('should name a modern substitute for everything discontinued, scarce or historical', () => {
