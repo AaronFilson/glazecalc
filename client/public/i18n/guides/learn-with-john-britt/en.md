@@ -49,6 +49,8 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 ### Read
 
+- [Limits and the Stull chart](/guides/glazing-basics#stull-chart): what the chart shows, and what it does not.
+- [Food safety](/guides/glazing-basics#food-safety): what limit formulas are, and why they prove nothing.
 - [From recipe to unity formula](/guides/glazing-basics#unity-formula): the silica to alumina ratio.
 - [Cones and heatwork](/guides/glazing-basics#cones), for what a firing range means.
 
