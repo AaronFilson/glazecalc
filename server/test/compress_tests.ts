@@ -121,7 +121,8 @@ describe('compressed sitemap', () => {
     expect(String(res.headers.vary)).to.match(/Accept-Encoding/i);
     expect(Number(res.headers['content-length'])).to.equal(res.body.length);
     expect(res.headers['cache-control']).to.equal('public, max-age=3600');
-    expect(decoded(res)).to.include('<urlset');
+    // The index of the languages' sitemaps.
+    expect(decoded(res)).to.include('<sitemapindex');
     const etag = String(res.headers.etag);
     expect(etag).to.match(/-br"$/);
     const again = await raw('/sitemap.xml', { 'Accept-Encoding': 'br', 'If-None-Match': etag });
@@ -134,5 +135,12 @@ describe('compressed sitemap', () => {
     const head = await raw('/sitemap.xml', { 'Accept-Encoding': 'br' }, 'HEAD');
     expect(head.headers['content-length']).to.equal(res.headers['content-length']);
     expect(head.body.length).to.equal(0);
+    // A language's own sitemap is compressed the same way, with its own ETag.
+    const german = await raw('/sitemaps/de.xml', { 'Accept-Encoding': 'br' });
+    expect(german.status).to.equal(200);
+    expect(german.headers['content-encoding']).to.equal('br');
+    expect(decoded(german)).to.include('<urlset');
+    expect(german.headers.etag).to.match(/-br"$/);
+    expect(german.headers.etag).not.to.equal(etag);
   });
 });
