@@ -73,7 +73,9 @@ describe('compressed pages', function () {
         expect(res.headers['cache-control'], page).to.equal('no-cache');
         expect(res.headers.etag, page).to.equal(undefined);
         const html = decoded(res);
-        expect(html, page).to.include(`<gc-root ngCspNonce="${nonceOf(res)}">`);
+        // index.html writes ngCspNonce; a prerendered page, Angular's lower-case ngcspnonce and more attributes.
+        const written = /<gc-root ngcspnonce="([^"]+)"/i.exec(html)?.[1];
+        expect(written, page).to.equal(nonceOf(res));
         expect(html, page).not.to.include('__GC_NONCE__');
       }
     });
