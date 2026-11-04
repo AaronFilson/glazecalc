@@ -59,29 +59,31 @@ Label: Malighafi zinazoyeyuka
 
 Hatari kuu ya madini ya risasi ni tofauti: si kijiko kimoja, bali kiasi kidogo cha vumbi kinachomezwa kwa wiki au miezi, bila dalili za tahadhari (tazama Madini ya risasi na watoto, hapa chini).
 
-## Kuhifadhi malighafi nyumbani {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Hakuna mamlaka rasmi inayoweka sheria za kuhifadhi malighafi za glaze nyumbani, lakini kurasa za afya na usalama zinakubaliana: fanya kazi katika sehemu yake yenyewe, mbali na watoto. Idara ya afya ya Pennsylvania, ikiandika kuhusu shughuli za burudani zinazotumia madini ya risasi, inasema: “Tumia sehemu maalum ya kazi au gereji kwa shughuli yako na uwaweke watoto mbali na eneo hili.”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Orodha ya ukaguzi ya kuhifadhi
+### A storage checklist
 
-Hizi ni kanuni za jumla za kuzuia sumu zilizotumika kwa glaze. Hakuna kiwango cha ufinyanzi kinachoziweka, lakini tunapendekeza zote:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Fungia malighafi kavu: kabati, au chumba, gereji au kibanda kinachofungwa kwa kufuli. Rafu ya juu inasaidia, lakini watoto hupanda. Ikiwa unaweza kufungia vitu vichache tu mwanzoni, anza na malighafi zinazoyeyuka na vitia rangi.
-- Weka malighafi katika mifuko au vyombo vyake vya asili. Ukihamishia moja katika chombo kingine, kiwekee lebo yenye jina kama lilivyoandikwa hasa kwenye mfuko.
-- Kamwe usitumie vyombo vya chakula au vinywaji (vikopo vya mtindi, mitungi, chupa) kwa malighafi za glaze, hata vikiwa na lebo. Mtoto anajua kikopo cha mtindi huwa na nini.
-- Weka zana za karakana (vijiko vya kuchotea, vijiko, vipigio, chujio, mizani) katika karakana. Kamwe usitumie zana za jikoni kwa glaze, wala zana za glaze kwa chakula.
-- Weka glaze za majimaji katika ndoo zenye lebo na mifuniko imefungwa.
-- Weka karatasi ya data ya usalama ya kila malighafi pamoja nayo, kwenye karatasi au kwenye simu yako.
-- Usiweke kitu chochote cha karakana jikoni: hakuna mifuko, ndoo, zana wala vigae vya majaribio.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Kwa maelezo zaidi kuhusu kununua na kuhifadhi malighafi, tazama [Jinsi ya kutengeneza glaze](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Takataka za glaze na maji ya kuoshea
+### Glaze waste and rinse water
 
-Kamwe usimwage glaze, au maji uliyooshea zana za glaze, kwenye sinki au bustanini. Crafts Council ya Uingereza inapendekeza ndoo tofauti ya maji ya kunawa mikono na kuosha brashi, chujio na zana. Iache itulie usiku kucha, mwaga maji safi ya juu, kisha kausha glaze iliyotuama chini na uitupe kwenye takataka (inakwenda dampo), kamwe si kwenye mfereji.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Tunapendekeza mfuniko kwenye ndoo hiyo: tope hilo lina metali zilezile za glaze, na wanyama vipenzi hunywa maji yaliyotuama. Sheria za kutupa taka hutofautiana mahali na mahali, kwa hiyo angalia karatasi ya data ya usalama ya kila bidhaa, na uliza halmashauri ya eneo lako au kampuni ya maji ikiwa huna uhakika.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Kuweka vumbi ndani ya karakana {#keeping-dust-in-the-studio}
 

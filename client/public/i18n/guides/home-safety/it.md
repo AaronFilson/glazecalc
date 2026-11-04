@@ -59,29 +59,31 @@ I **coloranti** sono gli ossidi metallici e i pigmenti{{en: stain}} che danno co
 
 Il pericolo principale del piombo è diverso: non un singolo cucchiaio, ma piccole quantità di polvere ingerite nell’arco di settimane o mesi, senza segnali d’allarme (vedere Piombo e bambini, più avanti).
 
-## Conservare i materiali in casa {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Nessun ente ufficiale fissa regole per conservare i materiali per smalti{{en: glaze}} in casa, ma le pagine su salute e sicurezza concordano: tenere il lavoro in uno spazio a sé, lontano dai bambini. Il dipartimento della salute della Pennsylvania, a proposito degli hobby che usano il piombo, dice di «utilizzare uno spazio di lavoro dedicato o il garage per il proprio hobby e tenere i bambini lontani da quest’area».
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Una lista di controllo per la conservazione
+### A storage checklist
 
-Sono regole generali di prevenzione degli avvelenamenti, applicate agli smalti. Nessuna norma per la ceramica le prevede, ma le suggeriamo tutte:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Tenere i materiali secchi sotto chiave: in un armadietto, o in una stanza, un garage o un capanno che si chiudono a chiave. Uno scaffale alto aiuta, ma i bambini si arrampicano. Se all’inizio si possono chiudere a chiave solo poche cose, cominciare dai materiali solubili e dai coloranti{{en: colorant}}.
-- Tenere i materiali nei loro sacchi o barattoli originali. Se se ne travasa uno in un altro contenitore, etichettarlo con il nome esattamente come è scritto sul sacco.
-- Non usare mai contenitori per cibi o bevande (vasetti dello yogurt, barattoli, bottiglie) per i materiali per smalti, nemmeno se etichettati. Un bambino sa che cosa contiene un vasetto dello yogurt.
-- Tenere gli attrezzi del laboratorio (palette, cucchiai, fruste, setacci, bilance) nel laboratorio. Non usare mai utensili da cucina per gli smalti, né attrezzi per smalti per il cibo.
-- Tenere gli smalti stemperati in acqua in secchi etichettati, con il coperchio chiuso.
-- Tenere con ogni materiale la sua scheda di dati di sicurezza, su carta o sul telefono.
-- Non tenere in cucina nulla del laboratorio: niente sacchi, secchi, attrezzi o provini{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Per l’acquisto e la conservazione dei materiali più nel dettaglio, vedere [Come preparare uno smalto](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Scarti di smalto e acqua di risciacquo
+### Glaze waste and rinse water
 
-Non versare mai lo smalto, né l’acqua in cui si sono sciacquati gli attrezzi per smalti, nel lavandino o in giardino. Il Crafts Council britannico suggerisce un secchio d’acqua a parte per lavare mani, pennelli, setacci e attrezzi. Lasciarlo decantare per una notte, versare via l’acqua limpida, poi far seccare lo smalto depositato e gettarlo nella spazzatura (va in discarica), mai nello scarico.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Suggeriamo un coperchio su quel secchio: il fango sul fondo contiene gli stessi metalli dello smalto e gli animali domestici bevono l’acqua stagnante. Le regole di smaltimento cambiano da luogo a luogo, quindi controllare la scheda di dati di sicurezza di ogni prodotto e, in caso di dubbio, chiedere al proprio comune o al gestore del servizio idrico.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Tenere la polvere nel laboratorio {#keeping-dust-in-the-studio}
 

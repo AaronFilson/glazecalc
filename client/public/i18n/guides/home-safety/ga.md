@@ -59,29 +59,31 @@ Is iad **ábhair datha**{{en: colorants}} na hocsaídí miotail agus na líocha{
 
 Tá príomhchontúirt na luaidhe difriúil: ní spúnóg amháin, ach méideanna beaga deannaigh a shlogtar thar sheachtainí nó thar mhíonna, gan aon chomharthaí rabhaidh (féach ‘Luaidhe agus leanaí’, thíos).
 
-## Ábhair a stóráil sa bhaile {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Níl aon chomhlacht oifigiúil a leagann síos rialacha chun ábhair ghlónra{{en: glaze materials}} a stóráil sa bhaile, ach aontaíonn leathanaigh sláinte agus sábháilteachta: coinnigh an obair ina spás féin, amach ó leanaí. Deir Roinn Sláinte Pennsylvania, ag scríobh faoi chaithimh aimsire a úsáideann luaidhe: “Úsáid spás oibre nó garáiste ar leith do do chaitheamh aimsire agus coinnigh leanaí amach ón limistéar seo.”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Seicliosta stórála
+### A storage checklist
 
-Seo iad rialacha ginearálta chun nimhiú a chosc, curtha i bhfeidhm ar ghlónra. Ní leagann aon chaighdeán ceirmeachta síos iad, ach molaimid iad uile:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Coinnigh ábhair thirime faoi ghlas: i gcaibinéad, nó i seomra, i ngaráiste nó i seid is féidir a chur faoi ghlas. Cabhraíonn seilf ard, ach dreapann leanaí. Mura féidir leat ach cúpla rud a chur faoi ghlas ar dtús, tosaigh leis na hábhair intuaslagtha agus leis na hábhair datha{{en: colorants}}.
-- Coinnigh ábhair ina málaí nó ina dtobáin bhunaidh. Má aistríonn tú ceann acu go coimeádán eile, cuir lipéad air leis an ainm díreach mar atá sé scríofa ar an mála.
-- Ná húsáid riamh coimeádáin bia ná dí (tobáin iógairt, prócaí, buidéil) d’ábhair ghlónra, fiú le lipéad orthu. Tá a fhios ag leanbh cad a bhíonn i dtobán iógairt.
-- Coinnigh uirlisí an stiúideo (scúpanna, spúnóga, greadtóirí, criathair, meánna) sa stiúideo. Ná húsáid riamh uirlisí cistine do ghlónra, ná uirlisí glónra do bhia.
-- Coinnigh glónraí fliucha i mbuicéid lipéadaithe, agus na clúdaigh orthu.
-- Coinnigh bileog sonraí sábháilteachta gach ábhair in éineacht leis, ar pháipéar nó ar do ghuthán.
-- Ná coinnigh aon rud ón stiúideo sa chistin: ná málaí, ná buicéid, ná uirlisí, ná tíleanna tástála{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Chun níos mó a fhoghlaim faoi ábhair a cheannach agus a stóráil, féach an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Fuíoll glónra agus uisce sruthlaithe
+### Glaze waste and rinse water
 
-Ná doirt riamh glónra, ná uisce inar shruthlaigh tú uirlisí glónra, síos an doirteal ná ar an ngairdín. Molann Crafts Council na Ríochta Aontaithe buicéad uisce ar leith chun lámha, scuaba, criathair agus uirlisí a ní. Lig dó síothlú thar oíche, doirt an t-uisce glan de, ansin triomaigh an glónra a shíothlaigh agus cuir sa bhruscar é (téann sé go láithreán líonta talún); ná doirt síos an draein é choíche.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Molaimid clúdach a chur ar an mbuicéad sin: bíonn na miotail chéanna sa dríodar agus atá sa ghlónra, agus ólann peataí uisce a fhágtar ina sheasamh. Bíonn rialacha diúscartha éagsúil ó áit go háit, mar sin seiceáil bileog sonraí sábháilteachta gach táirge, agus cuir ceist ar do chomhairle áitiúil nó ar do chomhlacht uisce mura bhfuil tú cinnte.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Deannach a choinneáil sa stiúideo {#keeping-dust-in-the-studio}
 

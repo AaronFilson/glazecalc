@@ -59,29 +59,31 @@ Label: Lösliche Rohstoffe
 
 Die Hauptgefahr von Blei ist eine andere: nicht ein einzelner Löffel voll, sondern kleine Mengen Staub, die über Wochen oder Monate verschluckt werden, ohne Warnzeichen (siehe „Blei und Kinder“ unten).
 
-## Rohstoffe zu Hause aufbewahren {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Keine Behörde legt Regeln für die Aufbewahrung von Glasurrohstoffen{{en: glaze materials}} zu Hause fest, aber Seiten zu Gesundheit und Sicherheit sind sich einig: Die Arbeit gehört in einen eigenen Bereich, fern von Kindern. Das Gesundheitsministerium von Pennsylvania schreibt zu Hobbys, bei denen Blei verwendet wird: „Nutzen Sie für Ihr Hobby einen eigenen Arbeitsbereich oder die Garage, und halten Sie Kinder von diesem Bereich fern.“
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Checkliste für die Aufbewahrung
+### A storage checklist
 
-Dies sind allgemeine Regeln zur Vorbeugung von Vergiftungen, übertragen auf Glasuren. Keine Keramiknorm schreibt sie vor, aber wir schlagen sie alle vor:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Schließen Sie trockene Rohstoffe weg: in einem Schrank oder in einem Raum, einer Garage oder einem Schuppen, die sich abschließen lassen. Ein hohes Regal hilft, aber Kinder klettern. Wenn Sie anfangs nur wenige Dinge wegschließen können, beginnen Sie mit den löslichen Rohstoffen und den Färbemitteln{{en: colorants}}.
-- Bewahren Sie Rohstoffe in ihren Originalsäcken oder -dosen auf. Wenn Sie einen Rohstoff in ein anderes Gefäß umfüllen, beschriften Sie es mit dem Namen genau so, wie er auf dem Sack steht.
-- Verwenden Sie für Glasurrohstoffe nie Behälter für Lebensmittel oder Getränke (Joghurtbecher, Gläser, Flaschen), auch nicht beschriftet. Ein Kind weiß, was in einem Joghurtbecher ist.
-- Lassen Sie Werkstattwerkzeug (Schaufeln, Löffel, Schneebesen, Siebe, Waagen) in der Werkstatt. Verwenden Sie nie Küchengeräte für Glasur und nie Glasurwerkzeug für Lebensmittel.
-- Bewahren Sie angerührte Glasuren in beschrifteten Eimern mit geschlossenem Deckel auf.
-- Bewahren Sie bei jedem Rohstoff sein Sicherheitsdatenblatt auf, auf Papier oder auf dem Handy.
-- Bewahren Sie nichts aus der Werkstatt in der Küche auf: keine Säcke, Eimer, Werkzeuge oder Probeplättchen{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Mehr zum Kaufen und Aufbewahren von Rohstoffen finden Sie in [Eine Glasur ansetzen](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Glasurreste und Spülwasser
+### Glaze waste and rinse water
 
-Gießen Sie Glasur oder Wasser, in dem Sie Glasurwerkzeug ausgespült haben, nie in den Ausguss oder in den Garten. Der britische Crafts Council schlägt einen eigenen Eimer Wasser vor, um Hände, Pinsel, Siebe und Werkzeug zu waschen. Lassen Sie ihn über Nacht stehen, damit sich alles absetzt, gießen Sie das klare Wasser ab, trocknen Sie dann die abgesetzte Glasur und geben Sie sie in den Hausmüll (er kommt auf die Deponie), nie in den Abfluss.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Wir schlagen vor, diesen Eimer mit einem Deckel zu verschließen: Der Schlamm enthält dieselben Metalle wie die Glasur, und Haustiere trinken stehendes Wasser. Die Regeln zur Entsorgung sind von Ort zu Ort verschieden; prüfen Sie daher das Sicherheitsdatenblatt jedes Produkts, und fragen Sie im Zweifel bei Ihrer Gemeinde oder Ihrem Wasserversorger nach.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Staub in der Werkstatt halten {#keeping-dust-in-the-studio}
 

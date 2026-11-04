@@ -59,29 +59,31 @@ Label: วัตถุดิบที่ละลายได้
 
 อันตรายหลักของตะกั่วต่างออกไป: ไม่ใช่หนึ่งช้อน แต่เป็นฝุ่นปริมาณเล็กน้อยที่กลืนเข้าไปตลอดหลายสัปดาห์หรือหลายเดือนโดยไม่มีสัญญาณเตือน (ดูตะกั่วและเด็ก ด้านล่าง)
 
-## การเก็บวัตถุดิบที่บ้าน {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-ไม่มีหน่วยงานทางการกำหนดกฎการเก็บวัตถุดิบเคลือบที่บ้าน แต่หน้าสุขภาพและความปลอดภัยเห็นตรงกัน: ให้งานอยู่ในพื้นที่ของตัวเอง ห่างจากเด็ก กรมอนามัยของเพนซิลเวเนีย เมื่อเขียนถึงงานอดิเรกที่ใช้ตะกั่ว ระบุให้ “ใช้พื้นที่ทำงานหรือโรงรถที่กำหนดไว้สำหรับงานอดิเรกของคุณและให้เด็กอยู่ห่างจากบริเวณนี้”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### รายการตรวจสอบการเก็บ
+### A storage checklist
 
-นี่คือกฎป้องกันพิษทั่วไปที่ใช้กับเคลือบ ไม่มีมาตรฐานเซรามิกกำหนดกฎเหล่านี้ แต่เราแนะนำทุกข้อ:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- เก็บวัตถุดิบแห้งไว้ในที่ล็อก: ตู้ หรือห้อง โรงรถ หรือโรงเก็บของที่ล็อกได้ ชั้นสูงช่วยได้ แต่เด็กปีนได้ หากล็อกได้เพียงไม่กี่อย่างในตอนแรก ให้เริ่มจากวัตถุดิบที่ละลายได้และสารให้สี
-- เก็บวัตถุดิบในถุงหรือถังเดิม หากย้ายไปภาชนะอื่น ให้ติดฉลากชื่อตามที่เขียนบนถุงทุกประการ
-- ห้ามใช้ภาชนะใส่อาหารหรือเครื่องดื่ม (ถ้วยโยเกิร์ต โหล ขวด) ใส่วัตถุดิบเคลือบโดยเด็ดขาด แม้ติดฉลากแล้ว เด็กรู้ว่าถ้วยโยเกิร์ตใส่อะไร
-- เก็บเครื่องมือของสตูดิโอ (ที่ตัก ช้อน ที่ตี ตะแกรง เครื่องชั่ง) ไว้ในสตูดิโอ ห้ามใช้เครื่องมือในครัวกับเคลือบ หรือเครื่องมือเคลือบกับอาหารโดยเด็ดขาด
-- เก็บเคลือบเปียกในถังที่ติดฉลากพร้อมปิดฝา
-- เก็บเอกสารข้อมูลความปลอดภัยของวัตถุดิบแต่ละอย่างไว้กับวัตถุดิบนั้น บนกระดาษหรือบนโทรศัพท์
-- ไม่เอาอะไรจากสตูดิโอเข้าครัว: ไม่เอาถุง ถัง เครื่องมือ หรือแผ่นทดสอบ
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-สำหรับการซื้อและเก็บวัตถุดิบอย่างละเอียดยิ่งขึ้น ดู [วิธีทำเคลือบ](/guides/making-a-glaze)
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### กากเคลือบและน้ำล้าง
+### Glaze waste and rinse water
 
-ห้ามเทเคลือบ หรือน้ำที่คุณล้างเครื่องมือเคลือบ ลงอ่างล้างจานหรือในสวนโดยเด็ดขาด Crafts Council ของสหราชอาณาจักรแนะนำให้ใช้ถังน้ำแยกสำหรับล้างมือ แปรง ตะแกรง และเครื่องมือ ปล่อยให้ตกตะกอนข้ามคืน รินน้ำใสออก แล้วทำให้เคลือบที่ตกตะกอนแห้งและใส่ในถังขยะ (ไปที่หลุมฝังกลบ) ห้ามเททิ้งลงท่อโดยเด็ดขาด
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-เราแนะนำให้มีฝาปิดถังนั้น: กากตะกอนมีโลหะเดียวกับเคลือบ และสัตว์เลี้ยงดื่มน้ำขัง กฎการกำจัดต่างกันไปตามสถานที่ จึงให้ตรวจเอกสารข้อมูลความปลอดภัยของผลิตภัณฑ์แต่ละอย่าง และถามสภาท้องถิ่นหรือบริษัทน้ำประปาหากไม่แน่ใจ
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## เก็บฝุ่นไว้ในสตูดิโอ {#keeping-dust-in-the-studio}
 

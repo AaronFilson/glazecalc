@@ -59,29 +59,31 @@ Il-**kuluranti** huma l-ossidi tal-metalli u l-pigmenti{{en: stains}} li jagħtu
 
 Il-periklu ewlieni taċ-ċomb huwa differenti: mhux mgħarfa waħda, iżda ammonti żgħar ta’ trab li jinbelgħu matul ġimgħat jew xhur, mingħajr ebda sinjal ta’ twissija (ara t-taqsima dwar iċ-ċomb u t-tfal, aktar ’l isfel).
 
-## Il-ħażna tal-materjali fid-dar {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-L-ebda korp uffiċjali ma jistabbilixxi regoli għall-ħażna tal-materjali tal-glejż{{en: glaze}} fid-dar, iżda l-paġni dwar is-saħħa u s-sigurtà jaqblu: żomm ix-xogħol fi spazju għalih, ’il bogħod mit-tfal. Id-dipartiment tas-saħħa ta’ Pennsylvania, fejn jikteb dwar passatempi li jużaw iċ-ċomb, jgħid: “Uża spazju tax-xogħol apposta jew garaxx għall-passatemp tiegħek u żomm lit-tfal ’il bogħod minn din iż-żona.”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Lista ta’ kontroll għall-ħażna
+### A storage checklist
 
-Dawn huma regoli ġenerali għall-prevenzjoni tal-avvelenament, applikati għall-glejż. L-ebda standard taċ-ċeramika ma jistabbilixxihom, iżda aħna nissuġġerixxu kollha kemm huma:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Żomm il-materjali nexfin imsakkrin: f’armarju, jew f’kamra, garaxx jew barrakka li jissakkru. Xkaffa għolja tgħin, iżda t-tfal jitilgħu. Jekk għall-bidu tista’ tissakkar ftit affarijiet biss, ibda bil-materjali solubbli u bil-kuluranti{{en: colorants}}.
-- Żomm il-materjali fix-xkejjer jew fil-kontenituri oriġinali tagħhom. Jekk tittrasferixxi wieħed f’kontenitur ieħor, waħħal fuqu tikketta bl-isem eżatt kif miktub fuq ix-xkora.
-- Qatt ma tuża reċipjenti tal-ikel jew tax-xorb (kontenituri tal-jogurt, vażetti, fliexken) għall-materjali tal-glejż, anke jekk ikollhom tikketta. Tifel jaf x’ikun hemm f’kontenitur tal-jogurt.
-- Żomm l-għodda tal-istudjo (mgħaref ta’ kull tip, frosti, għarabel, mwiezen) fl-istudjo. Qatt ma tuża l-għodda tal-kċina għall-glejż, jew l-għodda tal-glejż għall-ikel.
-- Żomm il-glejżijiet imxarrbin fi bramel b’tikketta, magħluqin bl-għatu.
-- Żomm l-iskeda ta’ data ta’ sigurtà ta’ kull materjal miegħu, fuq karta jew fuq it-telefon tiegħek.
-- Iżżomm xejn mill-istudjo fil-kċina: la xkejjer, la bramel, la għodda u lanqas madum tal-prova{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Għal aktar dettall dwar ix-xiri u l-ħażna tal-materjali, ara l-gwida [Kif tagħmel glejż](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Il-fdal tal-glejż u l-ilma tat-tlaħliħ
+### Glaze waste and rinse water
 
-Qatt ma tferra’ glejż, jew ilma li laħlaħt fih l-għodda tal-glejż, fis-sink jew fil-ġnien. Il-Crafts Council tar-Renju Unit jissuġġerixxi barmil ilma separat biex taħsel fih idejk, il-pinzelli, l-għarabel u l-għodda. Ħalli l-glejż jinżel fil-qiegħ matul il-lejl, ferra’ l-ilma ċar minn fuq, imbagħad nixxef il-glejż li niżel fil-qiegħ u armih maż-żibel (jispiċċa fil-miżbla), qatt fid-drenaġġ.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Nissuġġerixxu għatu fuq dak il-barmil: fil-ħama hemm l-istess metalli tal-glejż, u l-annimali domestiċi jixorbu l-ilma wieqaf. Ir-regoli dwar ir-rimi jvarjaw minn post għal ieħor, għalhekk iċċekkja l-iskeda ta’ data ta’ sigurtà ta’ kull prodott, u staqsi lill-kunsill lokali jew lill-kumpanija tal-ilma jekk għandek xi dubju.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Żomm it-trab fl-istudjo {#keeping-dust-in-the-studio}
 

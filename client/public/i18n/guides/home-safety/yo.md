@@ -59,29 +59,31 @@ Label: Ohun èlò tí ń yọ́
 
 Ewu pàtàkì òjé yàtọ̀: kì í ṣe ṣíbí kan, bí kò ṣe eruku díẹ̀díẹ̀ tí a ń gbé mì fún ọ̀sẹ̀ tàbí oṣù, láìsí àmì ìkìlọ̀ kankan (ẹ wo Òjé àti àwọn ọmọdé, ní ìsàlẹ̀).
 
-## Pípa ohun èlò mọ́ nílé {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Kò sí àjọ ìjọba kankan tí ó ṣe òfin fún pípa ohun èlò glaze mọ́ nílé, ṣùgbọ́n àwọn ojú-ìwé ìlera àti ààbò fohùn ṣọ̀kan: ẹ ṣe iṣẹ́ náà ní ààyè tirẹ̀, kúrò lọ́dọ̀ àwọn ọmọdé. Ẹ̀ka ìlera Pennsylvania, nígbà tí ó ń kọ nípa iṣẹ́ àfipawọ́ tí ń lo òjé, sọ pé "Ẹ lo ibi iṣẹ́ tí a yà sọ́tọ̀ tàbí garéèjì fún iṣẹ́ àfipawọ́ yín, kí ẹ sì pa àwọn ọmọdé mọ́ kúrò ní ibẹ̀."
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Àkọsílẹ̀ àyẹ̀wò ìpamọ́
+### A storage checklist
 
-Àwọn wọ̀nyí ni òfin gbogbogbò fún ìdènà májèlé tí a lò fún glaze. Kò sí ìlànà iṣẹ́ amọ̀ kankan tí ó ṣe wọ́n, ṣùgbọ́n a dábàá gbogbo wọn:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Ẹ tì àwọn ohun èlò gbígbẹ pa mọ́: kọ́bọ́ọ̀dù kan, tàbí yàrá, garéèjì tàbí ilé kékeré tí a lè tì. Pẹpẹ gíga ń ṣèrànwọ́, ṣùgbọ́n àwọn ọmọdé máa ń gùn òkè. Bí ẹ bá lè tì nǹkan díẹ̀ péré pa ní ìbẹ̀rẹ̀, ẹ bẹ̀rẹ̀ pẹ̀lú àwọn ohun èlò tí ń yọ́ àti ohun àwọ̀.
-- Ẹ pa ohun èlò mọ́ sínú àpò tàbí agolo wọn àkọ́kọ́. Bí ẹ bá kó ọ̀kan sínú ohun ìkónǹkan mìíràn, ẹ kọ orúkọ rẹ̀ sí i gẹ́gẹ́ bí a ṣe kọ ọ́ gan-an sórí àpò náà.
-- Ẹ má ṣe lo ohun ìkónǹkan oúnjẹ tàbí ohun mímu láé (agolo yogurt, ìgò, gọ́ọ̀bù) fún ohun èlò glaze, kódà bí ẹ bá kọ orúkọ sí i. Ọmọdé mọ ohun tí agolo yogurt ń gbé.
-- Ẹ pa irinṣẹ́ ilé iṣẹ́ amọ̀ (ṣọ́bìrì kékeré, ṣíbí, ohun ìrú, asẹ́, òṣùwọ̀n) mọ́ sínú ilé iṣẹ́ amọ̀. Ẹ má ṣe lo irinṣẹ́ ilé ìdáná fún glaze láé, tàbí irinṣẹ́ glaze fún oúnjẹ.
-- Ẹ pa glaze olómi mọ́ sínú garawa tí a kọ orúkọ sí, tí ìdérí wọn wà lórí.
-- Ẹ pa ìwé ìsọfúnni ààbò ohun èlò kọ̀ọ̀kan mọ́ pẹ̀lú rẹ̀, lórí ìwé tàbí nínú fóònù yín.
-- Ẹ má ṣe pa ohunkóhun láti ilé iṣẹ́ amọ̀ mọ́ sínú ilé ìdáná: kò sí àpò, garawa, irinṣẹ́ tàbí test tile.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Fún rírà àti pípa ohun èlò mọ́ ní kíkún, ẹ wo [Bí a ṣe ń ṣe glaze](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Ìdọ̀tí glaze àti omi ìfọ̀
+### Glaze waste and rinse water
 
-Ẹ má ṣe da glaze, tàbí omi tí ẹ ti fi fọ irinṣẹ́ glaze, sínú sinki tàbí sórí ọgbà láé. Crafts Council ti UK dábàá garawa omi ọ̀tọ̀ fún fífọ ọwọ́, búrọ́ọ̀ṣì, asẹ́ àti irinṣẹ́. Ẹ jẹ́ kí ó silẹ̀ mọ́jú, ẹ da omi tí ó mọ́ kúrò, lẹ́yìn náà ẹ gbẹ glaze tí ó silẹ̀, kí ẹ sì sọ ọ́ sínú àpótí ìdọ̀tí (ó ń lọ sí ibi ìkódọ̀tísí), kì í ṣe sínú ihò omi ìdọ̀tí láé.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-A dábàá ìdérí lórí garawa náà: ẹrẹ̀ inú rẹ̀ ní àwọn irin kan náà bí glaze, àwọn ẹranko ilé sì máa ń mu omi tí ó dúró. Òfin ìdànù yàtọ̀ láti ibì kan sí ibòmíràn, nítorí náà ẹ wo ìwé ìsọfúnni ààbò ọjà kọ̀ọ̀kan, kí ẹ sì béèrè lọ́wọ́ ìjọba ìbílẹ̀ yín tàbí ilé iṣẹ́ omi bí ẹ kò bá dá yín lójú.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Pípa eruku mọ́ sínú ilé iṣẹ́ amọ̀ {#keeping-dust-in-the-studio}
 

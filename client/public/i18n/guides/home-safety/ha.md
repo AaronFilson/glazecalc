@@ -59,29 +59,31 @@ Label: Kaya masu narkewa
 
 Babban haɗarin darma daban ne: ba cokali ɗaya ba, sai dai ƙananan adadin ƙura da ake haɗiye cikin makonni ko watanni, ba tare da alamun gargaɗi ba (duba Darma da yara, a ƙasa).
 
-## Ajiye kaya a gida {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Babu wata hukuma da ta kafa dokoki kan ajiye kayan glaze a gida, amma shafukan lafiya da aminci sun yarda: ku ajiye aikin a wurinsa na musamman, nesa da yara. Ma'aikatar lafiya ta Pennsylvania, a rubutunta kan sha'awoyin da ke amfani da darma, ta ce "Ku yi amfani da wurin aiki na musamman ko garaji don sha'awarku, kuma ku nisanta yara daga wannan wuri."
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Jerin dubawa na ajiya
+### A storage checklist
 
-Waɗannan dokokin hana guba ne na gaba ɗaya da aka yi amfani da su ga glaze. Babu ma'aunin ginin tukwane da ya kafa su, amma muna ba da shawarar dukansu:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Ku ajiye busassun kaya a kulle: kabad, ko ɗaki, garaji ko rumfa da ake kullewa. Shiryayye mai tsayi yana taimakawa, amma yara suna hawa. Idan abubuwa kaɗan ne kawai za ku iya kullewa da farko, ku fara da kaya masu narkewa da masu launi.
-- Ku ajiye kaya a cikin buhunsu ko kwantenansu na asali. Idan kun mayar da ɗaya cikin wata kwantena, ku rubuta mata suna daidai yadda aka rubuta a kan buhun.
-- Kada ku taɓa amfani da kwantenonin abinci ko abin sha (kofunan yogurt, tuluna, kwalabe) don kayan glaze, ko da an rubuta musu suna. Yaro ya san abin da kofin yogurt ke ɗauke da shi.
-- Ku ajiye kayan aikin wurin aiki (ludayi, cokula, mai kaɗawa, rariya, sikeli) a wurin aiki. Kada ku taɓa amfani da kayan kicin don glaze, ko kayan glaze don abinci.
-- Ku ajiye glaze mai ruwa a cikin bokiti masu suna da murfinsu a rufe.
-- Ku ajiye takardar bayanan aminci ta kowane kaya tare da shi, a takarda ko a wayarku.
-- Kada ku ajiye komai daga wurin aiki a kicin: ba buhu, bokiti, kayan aiki ko test tile ba.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Don ƙarin bayani kan saye da ajiye kaya, duba [Yadda ake haɗa glaze](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Sharar glaze da ruwan wanki
+### Glaze waste and rinse water
 
-Kada ku taɓa zuba glaze, ko ruwan da kuka wanke kayan glaze a ciki, a cikin sink ko a gona. Crafts Council na UK yana ba da shawarar bokitin ruwa daban don wanke hannu, burushi, rariya da kayan aiki. Ku bar shi ya kwanta dare ɗaya, ku zubar da ruwan da ya fito fili, sannan ku busar da glaze ɗin da ya kwanta ku saka shi a cikin shara (yana zuwa wurin zubar da shara), kada ku taɓa zubar da shi a magudanar ruwa.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Muna ba da shawarar murfi a kan wannan bokitin: laka tana ɗauke da ƙarfe iri ɗaya da na glaze, kuma dabbobin gida suna shan ruwan da ke tsaye. Dokokin zubar da shara sun bambanta daga wuri zuwa wuri, don haka ku duba takardar bayanan aminci ta kowane kaya, kuma ku tambayi ƙaramar hukumarku ko kamfanin ruwa idan ba ku da tabbas.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Ajiye ƙura a wurin aiki {#keeping-dust-in-the-studio}
 

@@ -59,29 +59,31 @@ Label: Soluble materialkuna
 
 Titipa hatun manchakuyninqa hukmi: manan huk cucharachu, aswanpas huch'uy hayk'a ñut'u allpa semanakunapi utaq killakunapi millp'usqa, mana ima rikch'aywan (uraypi qhaway Titi, wawakuna).
 
-## Wasipi materialkunata waqaychay {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Manan ima kamachikuq wasipas wasipi esmalte materialkunata waqaychanapaq kamachiykunata churanchu, ichaqa qhali kay, mana manchakuy p'anqakunaqa kikinta ninku: llamk'ayta sapan kitipi hap'iy, wawakunamanta karupi. Pennsylvaniapa qhali kay ministerion, titiwan kusikuypaq llamk'aykunamanta qillqaspa, nin: "Kusikuypaq llamk'ayniykipaq huk sapan llamk'ana kitita utaq garajeta llamk'achiy, wawakunatataq chay kitimanta karupi hap'iy."
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Waqaychanapaq lista
+### A storage checklist
 
-Kaykunaqa miyu hark'anapaq tukuy kamachiykuna esmaltepi churasqa. Manan ima saña ruray kamachiypas churanchu, ichaqa llapanta yuyaychayku:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Ch'aki materialkunata llaveyuqpi waqaychay: huk armario, utaq llaveyuq cuarto, garaje utaq huch'uy wasi. Huk hanaq estante yanapanmi, ichaqa wawakunaqa siqanku. Ñawpaqta wakillanta llaveyuqpi waqaychayta atispaqa, soluble materialkunawan llimp'iqkunawan qallariy.
-- Materialkunata ñawpaq bolsankunapi utaq tinankunapi waqaychay. Hukman churaspaqa, bolsapi qillqasqa kasqanman hina sutinwan etiquetay.
-- Ama hayk'aqpas mikhuna utaq ukyana envasekunata (yogur tinakuna, frascokuna, botellakuna) esmalte materialkunapaq llamk'achiychu, etiquetasqa kaspapas. Wawaqa yachanmi yogur tinapi imachus kasqanta.
-- Taller llamk'anakunata (cucharónkuna, cucharakuna, batidorkuna, tamizkuna, balanzakuna) tallerpi hap'iy. Ama hayk'aqpas yanuna wasi llamk'anakunata esmaltepaq llamk'achiychu, nitaq esmalte llamk'anakunata mikhunapaq.
-- Unuyuq esmaltekunata etiquetasqa baldekunapi, tapankunawan, waqaychay.
-- Sapa materialpa seguridad datos p'anqanta paywan kuska hap'iy, papelpi utaq telefonoykipi.
-- Ama tallermanta imatapas yanuna wasipi hap'iychu: ni bolsakunata, ni baldekunata, ni llamk'anakunata, ni probetakunata.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Materialkunata rantinapaq, waqaychanapaq aswan yachanaykipaq, qhaway [Imaynatataq esmalteta ruranki](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Esmalte puchu, maylliy unu
+### Glaze waste and rinse water
 
-Ama hayk'aqpas esmalteta, nitaq esmalte llamk'anakunata maylliykusqayki unuta, lavaderoman utaq huertaman hich'aychu. UK Crafts Councilmi huk sapan unu baldeta yuyaychan makikunata, pinselkunata, tamizkunata, llamk'anakunata maylliykunapaq. Tutantin tiyachiy, ch'uya unuta hich'ay, chaymantataq tiyasqa esmalteta ch'akichiy, basuraman churaytaq (relleno sanitarioman rin), ama hayk'aqpas desagüeman.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Chay baldepi tapata yuyaychayku: qhunchuqa esmaltepa kikin metalninkunatan hap'in, uywakunataq sayasqa unuta ukyanku. Wikch'uy kamachiykunaqa sapa llaqtapi hukniraqmi, chayrayku sapa productopa seguridad datos p'anqanta qhaway, mana allinta yachaspataq llaqtaykipa municipalidadninta utaq unu empresata tapuy.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Ñut'u allpata tallerpi hap'iy {#keeping-dust-in-the-studio}
 

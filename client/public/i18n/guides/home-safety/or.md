@@ -59,29 +59,31 @@ Label: ଦ୍ରବଣୀୟ ଉପାଦାନ
 
 ସୀସାର ମୁଖ୍ୟ ବିପଦ ଅଲଗା: ଗୋଟିଏ ଚାମଚ ନୁହେଁ, ବରଂ ସପ୍ତାହ ବା ମାସ ଧରି ଗିଳାଯାଉଥିବା ଅଳ୍ପ ପରିମାଣର ଧୂଳି, କୌଣସି ଚେତାବନୀ ଲକ୍ଷଣ ବିନା (ତଳେ “ସୀସା ଓ ପିଲା” ଦେଖନ୍ତୁ).
 
-## ଘରେ ଉପାଦାନ ସଂରକ୍ଷଣ {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-କୌଣସି ସରକାରୀ ସଂସ୍ଥା ଘରେ ଗ୍ଲେଜ୍ (କାଚର ପ୍ରଲେପ) ଉପାଦାନ ରଖିବା ପାଇଁ ନିୟମ ସ୍ଥିର କରେ ନାହିଁ, କିନ୍ତୁ ସ୍ୱାସ୍ଥ୍ୟ ଓ ସୁରକ୍ଷା ପୃଷ୍ଠାଗୁଡ଼ିକ ଏକମତ: କାମକୁ ଏହାର ନିଜ ସ୍ଥାନରେ, ପିଲାଙ୍କଠାରୁ ଦୂରରେ ରଖନ୍ତୁ. ପେନସିଲଭାନିଆର ସ୍ୱାସ୍ଥ୍ୟ ବିଭାଗ, ସୀସା ବ୍ୟବହାର କରୁଥିବା ସଉକ ବିଷୟରେ ଲେଖି, କହେ: “ଆପଣଙ୍କ ସଉକ ପାଇଁ ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ କାମ ସ୍ଥାନ ବା ଗ୍ୟାରେଜ୍ ବ୍ୟବହାର କରନ୍ତୁ ଏବଂ ପିଲାଙ୍କୁ ଏହି ସ୍ଥାନଠାରୁ ଦୂରରେ ରଖନ୍ତୁ.”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### ସଂରକ୍ଷଣର ଏକ ଯାଞ୍ଚ ତାଲିକା
+### A storage checklist
 
-ଏଗୁଡ଼ିକ ବିଷକ୍ରିୟା ରୋକିବାର ସାଧାରଣ ନିୟମ, ଗ୍ଲେଜ୍ ପାଇଁ ପ୍ରୟୋଗ କରାଯାଇଛି. କୌଣସି ସେରାମିକ୍ ମାନକ ଏଗୁଡ଼ିକ ସ୍ଥିର କରେ ନାହିଁ, କିନ୍ତୁ ଆମେ ସବୁଗୁଡ଼ିକ ପରାମର୍ଶ ଦେଉ:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- ଶୁଖିଲା ଉପାଦାନ ତାଲା ଭିତରେ ରଖନ୍ତୁ: ଏକ ଆଲମାରି, ବା ତାଲା ପଡ଼ୁଥିବା ଏକ କୋଠରୀ, ଗ୍ୟାରେଜ୍ ବା ସେଡ୍. ଉଚ୍ଚ ତାକ ସାହାଯ୍ୟ କରେ, କିନ୍ତୁ ପିଲାମାନେ ଚଢ଼ନ୍ତି. ଯଦି ପ୍ରଥମେ କେବଳ କିଛି ଜିନିଷ ତାଲା ଭିତରେ ରଖିପାରିବେ, ଦ୍ରବଣୀୟ ଉପାଦାନ ଓ କଲରାଣ୍ଟରୁ ଆରମ୍ଭ କରନ୍ତୁ.
-- ଉପାଦାନକୁ ସେଗୁଡ଼ିକର ମୂଳ ବ୍ୟାଗ୍ ବା ଡବାରେ ରଖନ୍ତୁ. ଯଦି କୌଣସିଟିକୁ ଅନ୍ୟ ପାତ୍ରକୁ ବଦଳାନ୍ତି, ବ୍ୟାଗରେ ଯେପରି ଲେଖାଅଛି ଠିକ୍ ସେହି ନାମ ସହିତ ଲେବେଲ୍ ଲଗାନ୍ତୁ.
-- ଗ୍ଲେଜ୍ ଉପାଦାନ ପାଇଁ ଖାଦ୍ୟ ବା ପାନୀୟର ପାତ୍ର (ଦହି ଡବା, ଜାର୍, ବୋତଲ) କେବେ ବି ବ୍ୟବହାର କରନ୍ତୁ ନାହିଁ, ଲେବେଲ୍ ଲଗାଇଥିଲେ ମଧ୍ୟ. ଦହି ଡବାରେ କଣ ଥାଏ ପିଲା ଜାଣେ.
-- ଷ୍ଟୁଡିଓ ଉପକରଣ (ସ୍କୁପ୍, ଚାମଚ, ଫେଣ୍ଟିବା ଉପକରଣ, ଚାଲୁଣି, ଓଜନ ଯନ୍ତ୍ର) ଷ୍ଟୁଡିଓରେ ରଖନ୍ତୁ. ଗ୍ଲେଜ୍ ପାଇଁ ରୋଷେଇ ଘରର ଉପକରଣ, ବା ଖାଦ୍ୟ ପାଇଁ ଗ୍ଲେଜ୍ ଉପକରଣ କେବେ ବି ବ୍ୟବହାର କରନ୍ତୁ ନାହିଁ.
-- ଓଦା ଗ୍ଲେଜକୁ ଲେବେଲ୍ ଲଗା ବାଲ୍ଟିରେ ଢାଙ୍କୁଣି ଦେଇ ରଖନ୍ତୁ.
-- ପ୍ରତ୍ୟେକ ଉପାଦାନର ସେଫ୍ଟି ଡାଟା ସିଟ୍ ତା ସହିତ ରଖନ୍ତୁ, କାଗଜରେ ବା ଆପଣଙ୍କ ଫୋନରେ.
-- ଷ୍ଟୁଡିଓର କିଛି ବି ରୋଷେଇ ଘରେ ରଖନ୍ତୁ ନାହିଁ: ବ୍ୟାଗ୍, ବାଲ୍ଟି, ଉପକରଣ ବା ଟେଷ୍ଟ ଟାଇଲ୍ ନୁହେଁ.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-ଉପାଦାନ କିଣିବା ଓ ରଖିବା ବିଷୟରେ ଅଧିକ ପାଇଁ, [ଗ୍ଲେଜ୍ କିପରି ତିଆରି କରିବେ](/guides/making-a-glaze) ଦେଖନ୍ତୁ.
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### ଗ୍ଲେଜ୍ ଆବର୍ଜନା ଓ ଧୁଆ ପାଣି
+### Glaze waste and rinse water
 
-ଗ୍ଲେଜ୍, ବା ଗ୍ଲେଜ୍ ଉପକରଣ ଧୋଇଥିବା ପାଣି, ସିଙ୍କରେ ବା ବଗିଚାରେ କେବେ ବି ଢାଳନ୍ତୁ ନାହିଁ. ଯୁକ୍ତରାଜ୍ୟର Crafts Council ହାତ, ବ୍ରସ୍, ଚାଲୁଣି ଓ ଉପକରଣ ଧୋଇବା ପାଇଁ ପାଣିର ଏକ ଅଲଗା ବାଲ୍ଟି ପରାମର୍ଶ ଦିଏ. ଏହାକୁ ରାତିସାରା ଥିତେଇବାକୁ ଦିଅନ୍ତୁ, ଉପରର ସଫା ପାଣି ଢାଳି ଦିଅନ୍ତୁ, ତାପରେ ତଳେ ଜମିଥିବା ଗ୍ଲେଜକୁ ଶୁଖାଇ ଅଳିଆ ଡବାରେ ପକାନ୍ତୁ (ଏହା ଅଳିଆ ପକା ପଡ଼ିଆକୁ ଯାଏ), ନାଳରେ କେବେ ବି ନୁହେଁ.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-ଆମେ ସେହି ବାଲ୍ଟିରେ ଢାଙ୍କୁଣି ପରାମର୍ଶ ଦେଉ: ତଳେ ଜମିଥିବା କାଦୁଅରେ ଗ୍ଲେଜର ସେହି ଧାତୁ ଥାଏ, ଏବଂ ପୋଷା ପ୍ରାଣୀ ଜମା ପାଣି ପିଅନ୍ତି. ନିଷ୍କାସନ ନିୟମ ସ୍ଥାନ ଅନୁସାରେ ଭିନ୍ନ, ତେଣୁ ପ୍ରତ୍ୟେକ ଉତ୍ପାଦର ସେଫ୍ଟି ଡାଟା ସିଟ୍ ଦେଖନ୍ତୁ, ଏବଂ ନିଶ୍ଚିତ ନ ହେଲେ ଆପଣଙ୍କ ସ୍ଥାନୀୟ ପୌର ସଂସ୍ଥା ବା ଜଳ ଯୋଗାଣ ସଂସ୍ଥାକୁ ପଚାରନ୍ତୁ.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## ଧୂଳିକୁ ଷ୍ଟୁଡିଓରେ ରଖିବା {#keeping-dust-in-the-studio}
 

@@ -59,29 +59,31 @@ Label: የሚሟሟ ጥሬ ዕቃዎች
 
 የእርሳስ (Pb) ዋና አደጋ የተለየ ነው፥ አንድ ማንኪያ ሳይሆን፣ ለሳምንታት ወይም ለወራት የሚዋጡ ትናንሽ የአቧራ መጠኖች ናቸው፤ ምንም የማስጠንቀቂያ ምልክት የላቸውም (ከዚህ በታች «እርሳስ (Pb) እና ልጆች» የሚለውን ይመልከቱ)።
 
-## ጥሬ ዕቃዎችን በቤት ውስጥ ማስቀመጥ {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-የግላዝ ጥሬ ዕቃዎችን በቤት ውስጥ ስለማስቀመጥ ደንብ የሚያወጣ ይፋዊ አካል የለም፤ ነገር ግን የጤና እና ደህንነት ገጾች ይስማማሉ፥ ሥራውን በራሱ ቦታ፣ ከልጆች ርቆ ያድርጉት። የPennsylvania የጤና ክፍል እርሳስ ስለሚጠቀሙ የትርፍ ጊዜ ሥራዎች ሲጽፍ «ለትርፍ ጊዜ ሥራዎ የተለየ የሥራ ቦታ ወይም ጋራዥ ይጠቀሙ፣ ልጆችንም ከዚህ ቦታ ያርቁ» ይላል።
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### የማስቀመጫ ማረጋገጫ ዝርዝር
+### A storage checklist
 
-እነዚህ ለግላዝ የተተገበሩ አጠቃላይ የመርዝ መከላከያ ደንቦች ናቸው። የትኛውም የሸክላ ሥራ መስፈርት አያወጣቸውም፤ እኛ ግን ሁሉንም እንመክራለን፥
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- ደረቅ ጥሬ ዕቃዎችን ተቆልፈው ያስቀምጡ፥ በካቢኔ፣ ወይም በሚቆለፍ ክፍል፣ ጋራዥ ወይም ማከማቻ ቤት። ከፍ ያለ መደርደሪያ ይረዳል፣ ነገር ግን ልጆች ይንጠላጠላሉ። መጀመሪያ ጥቂት ነገሮችን ብቻ መቆለፍ ከቻሉ፣ በሚሟሟ ጥሬ ዕቃዎች እና በማቅለሚያዎች ይጀምሩ።
-- ጥሬ ዕቃዎችን በመጀመሪያ ከረጢታቸው ወይም ዕቃቸው ውስጥ ያስቀምጡ። አንዱን ወደ ሌላ ዕቃ ካዛወሩ፣ ስሙን በከረጢቱ ላይ በተጻፈበት መልኩ በትክክል ይለጥፉበት።
-- ለግላዝ ጥሬ ዕቃዎች የምግብ ወይም የመጠጥ ዕቃዎችን (የእርጎ ዕቃ፣ ማሰሮ፣ ጠርሙስ) በጭራሽ አይጠቀሙ፣ ምልክት ቢለጠፍባቸውም እንኳ። ልጅ የእርጎ ዕቃ ምን እንደሚይዝ ያውቃል።
-- የስቱዲዮ መሣሪያዎችን (ማውጫ፣ ማንኪያ፣ መምቻ፣ ወንፊት፣ ሚዛን) በስቱዲዮ ውስጥ ያስቀምጡ። የወጥ ቤት መሣሪያዎችን ለግላዝ፣ ወይም የግላዝ መሣሪያዎችን ለምግብ በጭራሽ አይጠቀሙ።
-- እርጥብ ግላዞችን ምልክት በተለጠፈባቸው፣ ክዳናቸው በተዘጋ ባልዲዎች ውስጥ ያስቀምጡ።
-- የእያንዳንዱን ጥሬ ዕቃ የደህንነት መረጃ ሉህ ከእሱ ጋር ያስቀምጡ፣ በወረቀት ወይም በስልክዎ ላይ።
-- ከስቱዲዮው ምንም ነገር በወጥ ቤት ውስጥ አያስቀምጡ፥ ከረጢት፣ ባልዲ፣ መሣሪያ ወይም የሙከራ ንጣፍ አይኑር።
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-ጥሬ ዕቃዎችን ስለመግዛት እና ስለማስቀመጥ በጥልቀት ለማወቅ [ግላዝ ማዘጋጀት](/guides/making-a-glaze) የሚለውን ይመልከቱ።
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### የግላዝ ቆሻሻ እና የማጠቢያ ውሃ
+### Glaze waste and rinse water
 
-ግላዝን፣ ወይም የግላዝ መሣሪያዎችን ያጠቡበትን ውሃ ወደ ማጠቢያ ገንዳ ወይም ወደ አትክልት ቦታ በጭራሽ አያፍሱ። የUK Crafts Council እጅን፣ ብሩሾችን፣ ወንፊቶችን እና መሣሪያዎችን ለማጠብ የተለየ የውሃ ባልዲ ይመክራል። ሌሊቱን ሙሉ እንዲረጋ ይተዉት፣ የጠራውን ውሃ ያፍሱ፣ ከዚያም የረጋውን ግላዝ አድርቀው ወደ ቆሻሻ መጣያ ይጣሉት (ወደ ቆሻሻ መጣያ ቦታ ይሄዳል)፤ ወደ ፍሳሽ ማስወገጃ በጭራሽ አይጣሉት።
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-በዚያ ባልዲ ላይ ክዳን እንዲኖር እንመክራለን፥ ዝቃጩ ግላዙ የያዛቸውን ያንኑ ብረቶች ይይዛል፣ የቤት እንስሳትም የቆመ ውሃ ይጠጣሉ። የማስወገጃ ደንቦች ከቦታ ቦታ ይለያያሉ፤ ስለዚህ የእያንዳንዱን ምርት የደህንነት መረጃ ሉህ ይመልከቱ፣ እርግጠኛ ካልሆኑም የአካባቢዎን አስተዳደር ወይም የውሃ አቅራቢ ድርጅት ይጠይቁ።
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## አቧራን በስቱዲዮ ውስጥ ማቆየት {#keeping-dust-in-the-studio}
 

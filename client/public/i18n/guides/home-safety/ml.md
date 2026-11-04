@@ -59,29 +59,31 @@ Label: ലയിക്കുന്ന മെറ്റീരിയലുകൾ
 
 ലെഡിന്റെ പ്രധാന അപകടം വ്യത്യസ്തമാണ്: ഒരു സ്പൂൺ അല്ല, ആഴ്ചകളോ മാസങ്ങളോ കൊണ്ട് വിഴുങ്ങുന്ന ചെറിയ അളവിലുള്ള പൊടി, മുന്നറിയിപ്പ് ലക്ഷണങ്ങളൊന്നുമില്ലാതെ (താഴെ ‘ലെഡും കുട്ടികളും’ കാണുക).
 
-## വീട്ടിൽ മെറ്റീരിയലുകൾ സൂക്ഷിക്കൽ {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-വീട്ടിൽ ഗ്ലേസ്{{en: glaze}} മെറ്റീരിയലുകൾ സൂക്ഷിക്കുന്നതിന് ഒരു ഔദ്യോഗിക സ്ഥാപനവും നിയമങ്ങൾ നിശ്ചയിക്കുന്നില്ല, പക്ഷേ ആരോഗ്യ, സുരക്ഷാ പേജുകൾ ഒരു കാര്യത്തിൽ യോജിക്കുന്നു: ജോലി അതിന്റേതായ സ്ഥലത്ത്, കുട്ടികളിൽ നിന്ന് അകലെ, ഒതുക്കുക. ലെഡ് (കറുത്തീയം) ഉപയോഗിക്കുന്ന ഹോബികളെക്കുറിച്ച് എഴുതുമ്പോൾ, പെൻസിൽവേനിയയിലെ (അമേരിക്ക) ആരോഗ്യ വകുപ്പ് പറയുന്നു: “നിങ്ങളുടെ ഹോബിക്കായി പ്രത്യേകം നിശ്ചയിച്ച ഒരു ജോലിസ്ഥലമോ ഗാരേജോ ഉപയോഗിക്കുക, കുട്ടികളെ ഈ സ്ഥലത്തു നിന്ന് അകറ്റി നിർത്തുക.”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### സൂക്ഷിക്കാനുള്ള ഒരു പരിശോധനാ പട്ടിക
+### A storage checklist
 
-ഇവ ഗ്ലേസിന് ബാധകമാക്കിയ, വിഷബാധ തടയാനുള്ള പൊതു നിയമങ്ങളാണ്. ഒരു സെറാമിക്സ് മാനദണ്ഡവും ഇവ നിശ്ചയിക്കുന്നില്ല, പക്ഷേ ഇവയെല്ലാം ഞങ്ങൾ നിർദ്ദേശിക്കുന്നു:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- ഉണങ്ങിയ മെറ്റീരിയലുകൾ പൂട്ടി സൂക്ഷിക്കുക: ഒരു അലമാരയിലോ, പൂട്ടാവുന്ന ഒരു മുറിയിലോ ഗാരേജിലോ ഷെഡിലോ. ഉയർന്ന ഒരു ഷെൽഫ് സഹായിക്കും, പക്ഷേ കുട്ടികൾ വലിഞ്ഞുകയറും. തുടക്കത്തിൽ കുറച്ച് സാധനങ്ങൾ മാത്രമേ പൂട്ടിവയ്ക്കാൻ കഴിയൂ എങ്കിൽ, ലയിക്കുന്ന മെറ്റീരിയലുകളും കളറന്റുകളും (നിറം നൽകുന്ന വസ്തുക്കൾ){{en: colorant}} കൊണ്ട് തുടങ്ങുക.
-- മെറ്റീരിയലുകൾ അവയുടെ യഥാർത്ഥ ബാഗുകളിലോ ടബ്ബുകളിലോ തന്നെ സൂക്ഷിക്കുക. ഒന്നിനെ മറ്റൊരു കണ്ടെയ്നറിലേക്ക് മാറ്റുന്നുണ്ടെങ്കിൽ, ബാഗിൽ എഴുതിയിരിക്കുന്നതുപോലെ തന്നെ പേര് എഴുതിയ ലേബൽ അതിൽ ഒട്ടിക്കുക.
-- ഗ്ലേസ് മെറ്റീരിയലുകൾക്കായി ഒരിക്കലും ഭക്ഷണത്തിന്റെയോ പാനീയങ്ങളുടെയോ കണ്ടെയ്നറുകൾ (തൈര് ടബ്ബുകൾ, ജാറുകൾ, കുപ്പികൾ) ഉപയോഗിക്കരുത്, ലേബൽ ഒട്ടിച്ചാലും. തൈര് ടബ്ബിൽ എന്താണെന്ന് ഒരു കുട്ടിക്ക് അറിയാം.
-- സ്റ്റുഡിയോയിലെ പണിയായുധങ്ങൾ (സ്കൂപ്പുകൾ, സ്പൂണുകൾ, വിസ്കുകൾ, അരിപ്പകൾ, ത്രാസുകൾ) സ്റ്റുഡിയോയിൽ തന്നെ വയ്ക്കുക. ഗ്ലേസിന് ഒരിക്കലും അടുക്കളയിലെ സാമഗ്രികളോ, ഭക്ഷണത്തിന് ഗ്ലേസ് പണിയായുധങ്ങളോ ഉപയോഗിക്കരുത്.
-- നനഞ്ഞ ഗ്ലേസുകൾ ലേബൽ ഒട്ടിച്ച, അടപ്പിട്ട ബക്കറ്റുകളിൽ സൂക്ഷിക്കുക.
-- ഓരോ മെറ്റീരിയലിന്റെയും സേഫ്റ്റി ഡേറ്റ ഷീറ്റ് അതിനൊപ്പം സൂക്ഷിക്കുക, കടലാസിലോ നിങ്ങളുടെ ഫോണിലോ.
-- സ്റ്റുഡിയോയിലെ ഒന്നും അടുക്കളയിൽ വയ്ക്കരുത്: ബാഗുകളോ ബക്കറ്റുകളോ പണിയായുധങ്ങളോ ടെസ്റ്റ് ടൈലുകളോ{{en: test tile}} ഒന്നും.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-മെറ്റീരിയലുകൾ വാങ്ങുന്നതിനെയും സൂക്ഷിക്കുന്നതിനെയും കുറിച്ച് കൂടുതൽ വിശദമായി അറിയാൻ [ഒരു ഗ്ലേസ് ഉണ്ടാക്കുന്ന വിധം](/guides/making-a-glaze) എന്ന വഴികാട്ടി കാണുക.
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### ഗ്ലേസ് മാലിന്യവും കഴുകിയ വെള്ളവും
+### Glaze waste and rinse water
 
-ഗ്ലേസോ, ഗ്ലേസ് പണിയായുധങ്ങൾ കഴുകിയ വെള്ളമോ ഒരിക്കലും സിങ്കിലേക്കോ തോട്ടത്തിലേക്കോ ഒഴിക്കരുത്. കൈകൾ, ബ്രഷുകൾ, അരിപ്പകൾ, പണിയായുധങ്ങൾ എന്നിവ കഴുകാൻ വെള്ളമുള്ള ഒരു പ്രത്യേക ബക്കറ്റ് ബ്രിട്ടനിലെ Crafts Council (കരകൗശല കൗൺസിൽ) നിർദ്ദേശിക്കുന്നു. അത് രാത്രി മുഴുവൻ അടിയാൻ വയ്ക്കുക, മുകളിലെ തെളിഞ്ഞ വെള്ളം ഊറ്റിക്കളയുക, എന്നിട്ട് അടിഞ്ഞ ഗ്ലേസ് ഉണക്കി മാലിന്യത്തിൽ ഇടുക (അത് മാലിന്യം നിക്ഷേപിക്കുന്ന സ്ഥലത്തേക്ക്, ലാൻഡ്ഫില്ലിലേക്ക്, പോകുന്നു), ഒരിക്കലും ഓടയിലേക്ക് ഒഴിക്കരുത്.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-ആ ബക്കറ്റിന് ഒരു അടപ്പ് വേണമെന്ന് ഞങ്ങൾ നിർദ്ദേശിക്കുന്നു: അടിയിലെ ചെളിയിൽ ഗ്ലേസിലുള്ള അതേ ലോഹങ്ങളുണ്ട്, വളർത്തുമൃഗങ്ങൾ കെട്ടിക്കിടക്കുന്ന വെള്ളം കുടിക്കാറുണ്ട്. മാലിന്യ നിർമാർജന നിയമങ്ങൾ ഓരോ സ്ഥലത്തും വ്യത്യസ്തമാണ്, അതിനാൽ ഓരോ ഉൽപ്പന്നത്തിന്റെയും സേഫ്റ്റി ഡേറ്റ ഷീറ്റ് പരിശോധിക്കുക, ഉറപ്പില്ലെങ്കിൽ നിങ്ങളുടെ തദ്ദേശ സ്ഥാപനത്തോടോ ജല വിതരണ സ്ഥാപനത്തോടോ ചോദിക്കുക.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## പൊടി സ്റ്റുഡിയോയിൽ തന്നെ ഒതുക്കൽ {#keeping-dust-in-the-studio}
 

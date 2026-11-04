@@ -59,29 +59,31 @@ Label: Opløselige råvarer
 
 Den største fare ved bly er en anden: ikke én skefuld, men små mængder støv, der sluges over uger eller måneder, uden advarselstegn (se »Bly og børn« nedenfor).
 
-## Opbevaring af råvarer derhjemme {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Ingen officiel myndighed fastsætter regler for opbevaring af glasurråvarer{{en: glaze materials}} i hjemmet, men sider om sundhed og sikkerhed er enige: Hold arbejdet på et sted for sig, væk fra børn. Pennsylvanias sundhedsmyndighed skriver om hobbyer, hvor der bruges bly: »Brug et særligt arbejdsområde eller en garage til din hobby, og hold børn væk fra dette område.«
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### En tjekliste til opbevaring
+### A storage checklist
 
-Dette er almindelige regler til forebyggelse af forgiftning, overført til glasur. Ingen standard for keramik fastsætter dem, men vi foreslår dem alle:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Hold tørre råvarer låst inde: i et skab eller i et rum, en garage eller et skur, der kan låses. En høj hylde hjælper, men børn klatrer. Hvis kun få ting kan låses inde i begyndelsen, så start med de opløselige råvarer og farvestofferne{{en: colorants}}.
-- Opbevar råvarerne i de originale poser eller bøtter. Hvis en råvare hældes over i en anden beholder, så mærk den med navnet, nøjagtigt som det står på posen.
-- Brug aldrig beholdere til mad eller drikke (yoghurtbægre, glas, flasker) til glasurråvarer, heller ikke med etiket på. Et barn ved, hvad der er i et yoghurtbæger.
-- Hold værkstedets redskaber (skovle, skeer, piskeris, sigter, vægte) i værkstedet. Brug aldrig køkkenredskaber til glasur eller glasurredskaber til mad.
-- Opbevar våde glasurer i spande med etiket og med låget på.
-- Opbevar hver råvares sikkerhedsdatablad sammen med råvaren, på papir eller på telefonen.
-- Hav intet fra værkstedet i køkkenet: ingen poser, spande, redskaber eller prøvebrikker{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Se [Sådan laver man en glasur](/guides/making-a-glaze) for mere om indkøb og opbevaring af råvarer.
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Glasuraffald og skyllevand
+### Glaze waste and rinse water
 
-Hæld aldrig glasur eller vand, som glasurredskaber er skyllet i, ud i vasken eller i haven. Det britiske Crafts Council foreslår en særskilt spand vand til at vaske hænder, pensler, sigter og redskaber i. Lad den stå natten over, så indholdet bundfælder sig, hæld det klare vand fra, tør derefter den bundfældede glasur, og smid den i skraldespanden (den ender på lossepladsen), aldrig i afløbet.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Vi foreslår et låg på den spand: Slammet indeholder de samme metaller som glasuren, og kæledyr drikker stillestående vand. Reglerne for bortskaffelse er forskellige fra sted til sted, så tjek hvert produkts sikkerhedsdatablad, og spørg kommunen eller vandforsyningen i tvivlstilfælde.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Sådan holdes støvet i værkstedet {#keeping-dust-in-the-studio}
 

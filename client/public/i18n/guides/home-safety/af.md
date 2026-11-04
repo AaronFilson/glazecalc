@@ -59,29 +59,31 @@ Label: Oplosbare grondstowwe
 
 Lood se grootste gevaar is anders: nie een lepel vol nie, maar klein hoeveelhede stof wat oor weke of maande ingesluk word, sonder enige waarskuwingstekens (sien "Lood en kinders" hieronder).
 
-## Grondstowwe tuis bêre {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Geen amptelike liggaam stel reëls vir die berging van glasuurgrondstowwe tuis nie, maar bladsye oor gesondheid en veiligheid stem saam: hou die werk in sy eie ruimte, weg van kinders. Pennsylvania se gesondheidsdepartement, wat skryf oor stokperdjies wat lood gebruik, sê: "Gebruik 'n aangewese werkruimte of motorhuis vir jou stokperdjie en hou kinders weg van hierdie area."
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### 'n Bergingskontrolelys
+### A storage checklist
 
-Dit is algemene reëls om vergiftiging te voorkom, toegepas op glasuur. Geen keramiekstandaard stel hulle nie, maar ons stel almal voor:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Hou droë grondstowwe toegesluit: 'n kas, of 'n kamer, motorhuis of skuur wat sluit. 'n Hoë rak help, maar kinders klim. As jy eers net 'n paar dinge kan toesluit, begin met die oplosbare grondstowwe en kleurstowwe.
-- Hou grondstowwe in hul oorspronklike sakke of bakke. As jy een na 'n ander houer oorskuif, plak 'n etiket op met die naam presies soos dit op die sak geskryf staan.
-- Moet nooit kos- of drankhouers (joghurtbakkies, flesse, bottels) vir glasuurgrondstowwe gebruik nie, selfs met 'n etiket. 'n Kind weet wat in 'n joghurtbakkie is.
-- Hou ateljeegereedskap (skeppe, lepels, klitsers, siwwe, skale) in die ateljee. Moet nooit kombuisgereedskap vir glasuur gebruik nie, of glasuurgereedskap vir kos.
-- Hou nat glasuur in emmers met etikette en met die deksels op.
-- Hou elke grondstof se veiligheidsdatablad daarby, op papier of op jou foon.
-- Hou niks uit die ateljee in die kombuis nie: geen sakke, emmers, gereedskap of toetsteëls nie.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Vir meer oor die koop en berging van grondstowwe, sien [Hoe om 'n glasuur te maak](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Glasuurafval en spoelwater
+### Glaze waste and rinse water
 
-Moet nooit glasuur, of water waarin jy glasuurgereedskap uitgespoel het, in die wasbak of op die tuin uitgooi nie. Die UK Crafts Council stel 'n aparte emmer water voor om hande, kwaste, siwwe en gereedskap in te was. Laat dit oornag uitsak, gooi die helder water af, droog dan die uitgesakte glasuur en gooi dit in die vullisblik (dit gaan na 'n stortingsterrein), nooit in die drein nie.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Ons stel 'n deksel op daardie emmer voor: die slyk bevat dieselfde metale as die glasuur, en troeteldiere drink staande water. Reëls vir wegdoening verskil van plek tot plek, so kyk na elke produk se veiligheidsdatablad, en vra jou plaaslike munisipaliteit of watermaatskappy as jy onseker is.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Stof in die ateljee hou {#keeping-dust-in-the-studio}
 

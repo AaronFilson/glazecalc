@@ -59,29 +59,31 @@ Label: Ihe na-agbaze
 
 Isi ihe ize ndụ lead (Pb) dị iche: ọ bụghị otu ngaji, kama obere uzuzu a na-elodata n'ime izu ma ọ bụ ọnwa, na-enweghị ihe ịrịba ama (lee Lead na ụmụaka, n'okpuru).
 
-## Ichekwa ihe n'ụlọ {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Ọ dịghị otu ụlọ ọrụ gọọmentị na-edobe iwu maka ichekwa ihe glaze n'ụlọ, mana ibe ahụike na nchekwa kwekọrịtara: debe ọrụ ahụ n'ebe nke ya, n'ebe ụmụaka na-anọghị. Ngalaba ahụike Pennsylvania, na-ede banyere omume ntụrụndụ ndị na-eji lead, kwuru: "Jiri ebe ọrụ a kara aka ma ọ bụ garaji maka omume ntụrụndụ gị, ma mee ka ụmụaka ghara ịbịaru ebe a nso."
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Ndepụta nlele maka nchekwa
+### A storage checklist
 
-Ndị a bụ iwu mgbochi nsí n'ozuzu etinyere na glaze. Ọ dịghị ụkpụrụ seramiiki na-edobe ha, mana anyị na-atụ aro ha niile:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Kpọchie ihe akọrọ: n'kọbọd, ma ọ bụ n'ime ụlọ, garaji ma ọ bụ ụlọ obere a na-akpọchi akpọchi. Shelf dị elu na-enye aka, mana ụmụaka na-arị elu. Ọ bụrụ na ị nwere ike ịkpọchi naanị ihe ole na ole na mbụ, malite n'ihe ndị na-agbaze na ihe na-enye agba.
-- Debe ihe n'akpa ma ọ bụ n'ite mbụ ha. Ọ bụrụ na i bufee otu n'ihe ọzọ, dee aha ya na ya dịka e dere ya n'akpa ahụ.
-- Ejila ihe nri ma ọ bụ ihe ọṅụṅụ (ite yogurt, ite iko, karama) maka ihe glaze, ọ bụrụgodị na e dere aha na ya. Nwatakịrị maara ihe dị n'ite yogurt.
-- Debe ngwa ebe ọrụ (ihe ọkpụkpụ, ngaji, ihe ọkụkụ, ihe nyọ, ihe ọtụtụ) n'ebe ọrụ. Ejila ngwa kichin maka glaze, ma ọ bụ ngwa glaze maka nri.
-- Debe glaze mmiri mmiri na bọket e dere aha na ha, mkpuchi ha dị na ha.
-- Debe mpempe data nchekwa nke ihe ọ bụla na ya, n'akwụkwọ ma ọ bụ na ekwentị gị.
-- Edobela ihe ọ bụla si n'ebe ọrụ na kichin: enweghị akpa, bọket, ngwa ma ọ bụ test tile.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Maka ịzụ na ichekwa ihe n'ụzọ miri emi, lee [Otu esi eme glaze](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Ihe fọdụrụ na glaze na mmiri ịsa
+### Glaze waste and rinse water
 
-Awụsala glaze, ma ọ bụ mmiri i ji saa ngwa glaze, n'ime sink ma ọ bụ n'ubi. UK Crafts Council na-atụ aro bọket mmiri dị iche maka ịsa aka, brọshị, ihe nyọ na ngwa. Hapụ ya ka ọ dọdaa n'abalị niile, wụpụ mmiri doro anya, mgbe ahụ mee ka glaze dọdara akọrọ ma tụba ya n'ihe nkpofu (ọ na-aga n'ebe a na-ekpofu ahịhịa), ọ dịghị mgbe n'ime ọwa mmiri.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Anyị na-atụ aro mkpuchi n'elu bọket ahụ: apịtị ahụ nwere otu metal ahụ dị na glaze, anụ ụlọ na-aṅụkwa mmiri tọrọ atọ. Iwu nkpofu dị iche site n'otu ebe ruo ebe ọzọ, ya mere lelee mpempe data nchekwa nke ngwaahịa ọ bụla, jụọkwa kansụl obodo gị ma ọ bụ ụlọ ọrụ mmiri ma ọ bụrụ na ị maghị nke ọma.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Idobe uzuzu n'ebe ọrụ {#keeping-dust-in-the-studio}
 

@@ -59,29 +59,31 @@ Les **colorants** sont les oxydes métalliques et les pigments{{en: stains}} qui
 
 Le principal danger du plomb est différent : non pas une cuillerée, mais de petites quantités de poussière avalées pendant des semaines ou des mois, sans aucun signe d’alerte (voir Le plomb et les enfants, plus bas).
 
-## Ranger les matières à la maison {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Aucun organisme officiel ne fixe de règles pour ranger les matières pour émaux{{en: glaze materials}} à la maison, mais les pages consacrées à la santé et à la sécurité s’accordent : faites ce travail dans un espace à part, loin des enfants. Le département de la Santé de Pennsylvanie, à propos des loisirs qui utilisent du plomb, dit : « Utilisez un espace de travail réservé ou un garage pour votre loisir et tenez les enfants à l’écart de cette zone. »
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Liste de contrôle pour le rangement
+### A storage checklist
 
-Ce sont des règles générales de prévention des intoxications, appliquées à l’émail. Aucune norme céramique ne les fixe, mais nous les suggérons toutes :
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Gardez les matières sèches sous clé : dans une armoire, ou dans une pièce, un garage ou un abri de jardin qui ferme à clé. Une étagère haute aide, mais les enfants grimpent. Si vous ne pouvez mettre que quelques produits sous clé au début, commencez par les matières solubles et les colorants.
-- Gardez les matières dans leurs sacs ou pots d’origine. Si vous en transvasez une dans un autre récipient, étiquetez-le avec le nom exactement tel qu’il est écrit sur le sac.
-- N’utilisez jamais de récipients d’aliments ou de boissons (pots de yaourt, bocaux, bouteilles) pour les matières pour émaux, même étiquetés. Un enfant sait ce que contient un pot de yaourt.
-- Gardez les outils de l’atelier (pelles doseuses, cuillères, fouets, tamis, balances) dans l’atelier. N’utilisez jamais d’ustensiles de cuisine pour l’émail, ni d’outils d’émaillage pour la nourriture.
-- Gardez les bains d’émail dans des seaux étiquetés, couvercle fermé.
-- Gardez la fiche de données de sécurité de chaque matière avec elle, sur papier ou sur votre téléphone.
-- Ne gardez rien de l’atelier dans la cuisine : ni sacs, ni seaux, ni outils, ni tessons d’essai{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Pour en savoir plus sur l’achat et le rangement des matières, voir [Comment préparer un émail](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Déchets d’émail et eau de rinçage
+### Glaze waste and rinse water
 
-Ne versez jamais d’émail, ni l’eau dans laquelle vous avez rincé des outils d’émaillage, dans l’évier ou dans le jardin. Le Crafts Council britannique suggère un seau d’eau à part pour laver les mains, les pinceaux, les tamis et les outils. Laissez-le décanter une nuit, videz l’eau claire, puis faites sécher l’émail déposé et jetez-le à la poubelle (il part en décharge), jamais dans les canalisations.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Nous suggérons de mettre un couvercle sur ce seau : la boue contient les mêmes métaux que l’émail, et les animaux boivent l’eau stagnante. Les règles d’élimination varient d’un endroit à l’autre : consultez donc la fiche de données de sécurité de chaque produit, et renseignez-vous auprès de votre mairie ou de votre service des eaux en cas de doute.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Garder la poussière dans l’atelier {#keeping-dust-in-the-studio}
 

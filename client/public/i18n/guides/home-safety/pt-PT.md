@@ -59,29 +59,31 @@ Os **corantes**{{en: colorants}} são os óxidos metálicos e os pigmentos cerâ
 
 O principal perigo do chumbo é outro: não uma colherada, mas pequenas quantidades de pó engolidas ao longo de semanas ou meses, sem sinais de alerta (ver «O chumbo e as crianças», mais abaixo).
 
-## Guardar as matérias-primas em casa {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Nenhum organismo oficial define regras para guardar matérias-primas para vidrados{{en: glaze materials}} em casa, mas as páginas de saúde e segurança concordam: faça este trabalho num espaço próprio, longe das crianças. O Departamento de Saúde da Pensilvânia, a propósito de passatempos que usam chumbo, diz: «Utilize um espaço de trabalho reservado ou uma garagem para o seu passatempo e mantenha as crianças afastadas desta área.»
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Lista de verificação para guardar as matérias-primas
+### A storage checklist
 
-Estas são regras gerais de prevenção de intoxicações, aplicadas aos vidrados. Nenhuma norma de cerâmica as define, mas sugerimos todas:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Guarde as matérias-primas secas à chave: num armário, ou numa divisão, garagem ou arrecadação que feche à chave. Uma prateleira alta ajuda, mas as crianças trepam. Se no início só puder fechar à chave algumas coisas, comece pelas matérias-primas solúveis e pelos corantes.
-- Mantenha as matérias-primas nos sacos ou potes de origem. Se passar uma para outro recipiente, rotule-o com o nome exatamente como está escrito no saco.
-- Nunca use recipientes de comida ou bebida (copos de iogurte, frascos, garrafas) para matérias-primas de vidrado, mesmo que estejam rotulados. Uma criança sabe o que há dentro de um copo de iogurte.
-- Mantenha as ferramentas do atelier (pás doseadoras, colheres, batedores, peneiros, balanças) no atelier. Nunca use utensílios de cozinha para o vidrado, nem ferramentas de vidrar para a comida.
-- Guarde os vidrados em suspensão em baldes rotulados e com a tampa posta.
-- Guarde a ficha de dados de segurança de cada matéria-prima junto dela, em papel ou no telemóvel.
-- Não guarde nada do atelier na cozinha: nem sacos, nem baldes, nem ferramentas, nem peças de teste{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Para saber mais sobre como comprar e guardar matérias-primas, veja [Como fazer um vidrado](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Restos de vidrado e água de lavagem
+### Glaze waste and rinse water
 
-Nunca deite vidrado, nem a água em que lavou ferramentas de vidrar, no lava-loiça ou no jardim. O Crafts Council do Reino Unido sugere um balde de água à parte para lavar as mãos, os pincéis, os peneiros e as ferramentas. Deixe-o assentar durante a noite, deite fora a água límpida de cima, depois seque o vidrado que assentou e ponha-o no lixo (vai para aterro), nunca no esgoto.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Sugerimos uma tampa nesse balde: a lama tem os mesmos metais que o vidrado, e os animais de estimação bebem água parada. As regras de eliminação de resíduos variam de lugar para lugar, por isso consulte a ficha de dados de segurança de cada produto e, em caso de dúvida, pergunte à câmara municipal ou à empresa de águas da sua zona.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Manter o pó no atelier {#keeping-dust-in-the-studio}
 

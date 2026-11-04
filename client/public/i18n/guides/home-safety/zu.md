@@ -59,29 +59,31 @@ Label: Okokwakha okuncibilikayo
 
 Ingozi enkulu yomthofu (Pb) ihlukile: akusona isipuni esisodwa, kodwa inani elincane lothuli eligwinywa emasontweni noma ezinyangeni, ngaphandle kwezimpawu zokuxwayisa (bheka Umthofu nezingane, ngezansi).
 
-## Ukugcina okokwakha ekhaya {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Ayikho inhlangano esemthethweni ebeka imithetho yokugcina okokwakha kwe-glaze{{en: glaze}} ekhaya, kodwa amakhasi ezempilo nokuphepha ayavumelana: gcina umsebenzi endaweni yawo, kude nezingane. Umnyango wezempilo wase-Pennsylvania, ubhala ngemisebenzi yokuzilibazisa esebenzisa umthofu (lead, Pb), uthi "Sebenzisa indawo yokusebenza ekhethiwe noma igaraji ngomsebenzi wakho wokuzilibazisa futhi ugcine izingane kude nale ndawo."
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Uhlu lokuhlola lokugcina
+### A storage checklist
 
-Le yimithetho evamile yokuvimbela ushevu esetshenziswa ku-glaze. Alikho izinga lokubumba elibeka yona, kodwa sikweluleka ukuthi uyilandele yonke:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Gcina okokwakha okomile kukhiyiwe: ekhabetheni, noma egumbini, egaraji noma eshede elikhiywayo. Ishalofu eliphezulu liyasiza, kodwa izingane ziyagibela. Uma ungakwazi ukukhiya izinto ezimbalwa kuphela ekuqaleni, qala ngokokwakha okuncibilikayo nokokufaka umbala.
-- Gcina okokwakha ezikhwameni noma emathini akho okuqala. Uma usisa okukodwa kwesinye isitsha, sibhale ilebula ngegama njengoba libhalwe kanjalo esikhwameni.
-- Ungalokothi usebenzise izitsha zokudla noma zeziphuzo (amathini e-yogurt, izimbiza zengilazi, amabhodlela) zokokwakha kwe-glaze, ngisho noma zinelebula. Ingane iyazi ukuthi ithini le-yogurt liqukethe ini.
-- Gcina amathuluzi e-studio (izikopo, izipuni, ama-whisk, izihlungo, izikali) e-studio. Ungalokothi usebenzise amathuluzi asekhishini ku-glaze, noma amathuluzi e-glaze ekudleni.
-- Gcina ama-glaze amanzi emabhakedeni anelebula avalwe ngeziciko.
-- Gcina ishidi lemininingwane yokuphepha lokokwakha ngakunye nakho, ephepheni noma efonini yakho.
-- Ungagcini lutho lwase-studio ekhishini: azikho izikhwama, amabhakede, amathuluzi noma ama-test tile.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-Ukuze uthole okwengeziwe ngokuthenga nokugcina okokwakha, bheka [Indlela yokwenza i-glaze](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Imfucuza ye-glaze namanzi okugeza
+### Glaze waste and rinse water
 
-Ungalokothi uthele i-glaze{{en: glaze}}, noma amanzi ogeze kuwo amathuluzi e-glaze, osinkini noma engadini. I-Crafts Council yase-UK iphakamisa ibhakede lamanzi elihlukile lokugeza izandla, amabhulashi, izihlungo namathuluzi. Liyeke lizinze ubusuku bonke, uthele amanzi acwebile, bese womisa i-glaze ezinzile uyifake kudoti (iya endaweni yokulahla udoti), ungalokothi uyithele emseleni.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Sikweluleka ukuthi lelo bhakede libe nesiciko: udaka luqukethe izinsimbi ezifanayo ne-glaze, futhi izilwane zasekhaya ziphuza amanzi ame ndawonye. Imithetho yokulahla iyahlukahluka ngezindawo, ngakho hlola ishidi lemininingwane yokuphepha lomkhiqizo ngamunye, futhi ubuze umasipala wakho noma inkampani yamanzi uma ungaqiniseki.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Ukugcina uthuli e-studio {#keeping-dust-in-the-studio}
 

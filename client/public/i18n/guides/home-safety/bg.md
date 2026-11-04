@@ -59,29 +59,31 @@ Label: Разтворими суровини
 
 Главната опасност от оловото е друга: не една лъжица, а малки количества прах, поглъщани седмици или месеци, без предупредителни признаци (вижте „Олово и деца“ по-долу).
 
-## Съхранение на суровините у дома {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-Никой официален орган не определя правила за съхранение на суровини за глазури у дома, но страниците за здраве и безопасност са единодушни: дръжте работата в отделно пространство, далеч от децата. Министерството на здравеопазването на Пенсилвания, пишейки за хобита, при които се използва олово, казва: „Използвайте определено работно място или гараж за хобито си и дръжте децата далеч от това място.“
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### Контролен списък за съхранение
+### A storage checklist
 
-Това са общи правила за предпазване от отравяния, приложени към глазурите{{en: glaze}}. Не ги определя никой стандарт за керамика, но предлагаме да спазвате всички тях:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- Дръжте сухите суровини под ключ: в шкаф или в стая, гараж или барака, които се заключват. Висок рафт помага, но децата се катерят. Ако отначало можете да заключите само няколко неща, започнете с разтворимите суровини и оцветителите{{en: colorants}}.
-- Дръжте суровините в оригиналните им торби или кутии. Ако преместите някоя в друг съд, надпишете го с името точно както е написано на торбата.
-- Никога не използвайте опаковки от храни или напитки (кофички от кисело мляко, буркани, бутилки) за суровини за глазури, дори надписани. Детето знае какво има в кофичката от кисело мляко.
-- Дръжте инструментите за ателието (лопатки, лъжици, бъркалки, сита, везни) в ателието. Никога не използвайте кухненски прибори за глазура, нито инструментите за глазура за храна.
-- Дръжте мокрите глазури в надписани кофи със затворени капаци.
-- Пазете информационния лист за безопасност на всяка суровина заедно с нея, на хартия или в телефона си.
-- Не дръжте нищо от ателието в кухнята: никакви торби, кофи, инструменти или пробни плочки{{en: test tiles}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-За покупката и съхранението на суровините по-подробно вижте наръчника [Как се приготвя глазура](/guides/making-a-glaze).
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### Отпадъци от глазура и вода от изплакване
+### Glaze waste and rinse water
 
-Никога не изливайте глазура или вода, в която сте изплаквали инструментите за глазура, в мивката или в градината. Британският Crafts Council предлага отделна кофа с вода за измиване на ръцете, четките, ситата и инструментите. Оставете съдържанието ѝ да се утаи през нощта, отлейте бистрата вода, после изсушете утаената глазура и я изхвърлете с битовите отпадъци (те отиват на сметище), никога в канализацията.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-Предлагаме тази кофа да има капак: утайката съдържа същите метали като глазурата, а домашните любимци пият застояла вода. Правилата за изхвърляне се различават според мястото, затова проверете информационния лист за безопасност на всеки продукт, а ако се съмнявате, попитайте общината или ВиК дружеството.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## Задържане на праха в ателието {#keeping-dust-in-the-studio}
 

@@ -59,29 +59,31 @@ Label: घुलनशील सामग्रियाँ
 
 सीसे का मुख्य खतरा अलग है: एक चम्मच नहीं, बल्कि हफ़्तों या महीनों में निगली गई धूल की छोटी-छोटी मात्राएँ, बिना किसी चेतावनी के संकेत के (नीचे ‘सीसा और बच्चे’ देखें).
 
-## घर पर सामग्री रखना {#storing-materials}
+## Storing materials at home {#storing-materials lang=en}
 
-घर पर ग्लेज़{{en: glaze}} की सामग्री रखने के नियम कोई आधिकारिक संस्था तय नहीं करती, लेकिन स्वास्थ्य और सुरक्षा के पेज एक बात पर सहमत हैं: काम को उसकी अपनी अलग जगह पर रखें, बच्चों से दूर. पेन्सिलवेनिया (अमेरिका) का स्वास्थ्य विभाग, सीसे का इस्तेमाल करने वाले शौकों के बारे में लिखते हुए, कहता है: “अपने शौक के लिए एक तय कार्यस्थल या गैराज इस्तेमाल करें और बच्चों को इस जगह से दूर रखें.”
+No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
 
-### सामग्री रखने की चेकलिस्ट
+### A storage checklist
 
-ये ज़हर से बचाव के सामान्य नियम हैं, जो ग्लेज़ पर लागू किए गए हैं. कोई सिरेमिक मानक इन्हें तय नहीं करता, लेकिन हम इन सबका सुझाव देते हैं:
+These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
 
-- सूखी सामग्री ताले में रखें: एक अलमारी में, या ऐसे कमरे, गैराज या शेड में जिस पर ताला लगता हो. ऊँची शेल्फ़ से मदद मिलती है, लेकिन बच्चे चढ़ जाते हैं. अगर शुरू में आप कुछ ही चीज़ें ताले में रख सकते हैं, तो घुलनशील सामग्रियों और कलरेंट (रंजक){{en: colorant}} से शुरू करें.
-- सामग्रियाँ उनके मूल बोरों या टबों में रखें. अगर किसी को दूसरे डिब्बे में डालें, तो उस पर नाम ठीक वैसा ही लिखें जैसा बोरे पर लिखा है.
-- ग्लेज़ की सामग्री के लिए खाने-पीने की चीज़ों के डिब्बे (दही के डिब्बे, जार, बोतलें) कभी इस्तेमाल न करें, लेबल लगाकर भी नहीं. बच्चा जानता है कि दही के डिब्बे में क्या होता है.
-- स्टूडियो के औज़ार (स्कूप, चम्मच, व्हिस्क, छलनियाँ, तराज़ू) स्टूडियो में रखें. ग्लेज़ के लिए रसोई के औज़ार कभी इस्तेमाल न करें, और खाने के लिए ग्लेज़ के औज़ार भी कभी नहीं.
-- गीले ग्लेज़ को लेबल लगी बाल्टियों में, ढक्कन लगाकर रखें.
-- हर सामग्री की सेफ़्टी डेटा शीट उसके साथ रखें, कागज़ पर या अपने फ़ोन में.
-- स्टूडियो की कोई भी चीज़ रसोई में न रखें: न बोरे, न बाल्टियाँ, न औज़ार, न टेस्ट टाइलें{{en: test tile}}.
+- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
+- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
+- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
+- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
+- Keep wet glazes in labeled buckets with the lids on.
+- Keep each material's safety data sheet with it, on paper or on your phone.
+- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
 
-सामग्री खरीदने और रखने के बारे में ज़्यादा जानकारी के लिए [ग्लेज़ कैसे बनाएँ](/guides/making-a-glaze) देखें.
+For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
 
-### ग्लेज़ का कचरा और धोने का पानी
+### Glaze waste and rinse water
 
-ग्लेज़, या वह पानी जिसमें आपने ग्लेज़ के औज़ार धोए हैं, सिंक में या बगीचे में कभी न डालें. ब्रिटेन की Crafts Council (शिल्प परिषद) हाथ, ब्रश, छलनियाँ और औज़ार धोने के लिए पानी की एक अलग बाल्टी का सुझाव देती है. उसे रात भर बैठने दें, ऊपर का साफ़ पानी निकाल दें, फिर नीचे बैठा ग्लेज़ सुखाकर कचरे में डालें (वह लैंडफ़िल यानी कूड़े के ढेर में जाता है), नाली में कभी नहीं.
+Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
 
-हमारा सुझाव है कि उस बाल्टी पर ढक्कन रखें: नीचे जमी गाद में वही धातुएँ होती हैं जो ग्लेज़ में होती हैं, और पालतू जानवर खड़ा पानी पी लेते हैं. कचरे के निपटान के नियम जगह-जगह अलग होते हैं, इसलिए हर उत्पाद की सेफ़्टी डेटा शीट देखें, और अगर पक्का न हो तो अपने स्थानीय नगर निकाय या पानी की आपूर्ति करने वाली कंपनी से पूछें.
+We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+
+Some studios fire the dried sludge before they throw it away. They put it in an old bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
 
 ## धूल को स्टूडियो में ही रखना {#keeping-dust-in-the-studio}
 
