@@ -512,7 +512,7 @@ describe('pages in each language', () => {
     // No language has the reference pages translated here, whichever are on in lib/regions/languages.js.
     const two = sitemap(SITE, ['en', 'de'], ['en'], {});
     expect(two).to.include(
-      '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
+      '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/><xhtml:link rel="alternate" hreflang="x-default" href="https://glazecalcapp.com/guides"/></url>'
     );
     // Each public page once in each of the two languages, and a page in English only once, as a
     // reference page is while German is not among the languages it is translated into.
@@ -534,12 +534,21 @@ describe('pages in each language', () => {
   });
 
   it("dates a page from its own sources: a guide's text in that language, never the app's code", () => {
+    // The language's own messages too: every page's title and description are there.
     expect(pageSources('/guides/firing', 'de')).to.deep.equal([
+      'client/public/i18n/de.json',
       'client/public/i18n/guides/firing/de.md',
       'client/public/i18n/guides/de.json'
     ]);
-    expect(pageSources('/materials/cornwall-stone', 'en')).to.include('data/materials.ndjson');
-    expect(pageSources('/terms', 'fr')).to.deep.equal(['client/public/i18n/site/fr.json']);
+    expect(pageSources('/materials/cornwall-stone', 'de')).to.include('data/materials.ndjson');
+    expect(pageSources('/materials/cornwall-stone', 'de')).to.include('client/public/i18n/en.json');
+    expect(pageSources('/terms', 'fr')).to.deep.equal([
+      'client/public/i18n/fr.json',
+      'client/public/i18n/site/fr.json'
+    ]);
+    // The cone chart's figures, not the code beside them.
+    expect(pageSources('/cones', 'de')).to.include('lib/cones/index.js');
+    expect(pageSources('/cones', 'de')).not.to.include('lib/cones/');
     // Every source named is in the repository, so no page goes undated by a typo.
     for (const page of PUBLIC_PAGES.filter((p) => !p.startsWith('/materials/'))) {
       for (const source of pageSources(page, 'en')) {
@@ -564,6 +573,12 @@ describe('pages in each language', () => {
     expect(newestOf(pageSources('/guides/firing', 'de'), dates)).to.equal('2026-11-04');
     expect(newestOf(['lib/cones/'], dates)).to.equal('2026-10-01');
     expect(newestOf(['client/public/i18n/site/de.json'], dates)).to.equal(undefined);
+    // A German description changed alone moves the German page's date.
+    const titles = newestDates(
+      ['@2026-12-01', 'client/public/i18n/de.json', '@2026-10-01', 'client/public/i18n/guides/firing/de.md'].join('\n')
+    );
+    expect(allPageDates(titles)['de/guides/firing']).to.equal('2026-12-01');
+    expect(allPageDates(titles)['en/guides/firing']).to.equal(undefined);
     expect(allPageDates(dates)['de/guides/firing']).to.equal('2026-11-04');
   });
 
@@ -716,7 +731,7 @@ describe('pages in each language', () => {
       it('lists it in the sitemap in the translated languages, each with the others beside it', () => {
         const map = sitemap(SITE, live, reference, {});
         expect(map).to.include(
-          '<url><loc>https://glazecalcapp.com/de/cones</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/cones"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/cones"/></url>'
+          '<url><loc>https://glazecalcapp.com/de/cones</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/cones"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/cones"/><xhtml:link rel="alternate" hreflang="x-default" href="https://glazecalcapp.com/cones"/></url>'
         );
         expect(map).not.to.include('/ja/cones');
         expect(map).not.to.include('/de/materials/');

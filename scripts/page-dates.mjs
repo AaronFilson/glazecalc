@@ -65,7 +65,7 @@ export function allPageDates(dates) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const log = execFileSync(
     'git',
-    ['log', '--format=@%cs', '--name-only', '--', 'client/public/i18n', 'data', 'lib/cones'],
+    ['log', '--format=@%cs', '--name-only', '--', 'client/public/i18n', 'data', 'lib/cones/index.js'],
     { encoding: 'utf8', maxBuffer: 1 << 28 }
   );
   const out = allPageDates(newestDates(log));

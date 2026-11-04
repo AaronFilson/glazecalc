@@ -346,7 +346,9 @@ export function sitemap(
                 (other) =>
                   `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
               )
-              .join('')
+              .join('') +
+            // As each page's own head has it (pageHtml).
+            `<xhtml:link rel="alternate" hreflang="x-default" href="${attribute(addressIn(site, 'en', page))}"/>`
           : '';
       return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${lastmod(code, page)}${others}</url>`;
     });
