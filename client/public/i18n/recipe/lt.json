@@ -752,19 +752,6 @@
       "pint": "Norima pintos masė, oz"
     },
     "drySg": "Sausų žaliavų santykinis tankis",
-    "batch": "Sausa glazūra naujam užmaišui, {unit}",
-    "contents": "Esant santykiniam tankiui {sg}, kibire yra {glaze} sausos glazūros ir {water} vandens.",
-    "add": "Kad pasiektumėte santykinį tankį {target}, įpilkite {water} vandens. Galiausiai bus apie {volume}.",
-    "pourOff": "Kad pasiektumėte santykinį tankį {target}, leiskite nusėsti ir nupilkite {water} skaidraus vandens. Galiausiai bus apie {volume}.",
-    "already": "Jau yra santykinis tankis {target}.",
-    "mix": "Sumaišykite {glaze} sausos glazūros su {water} vandens – gausite apie {volume}, kurio santykinis tankis {target}.",
-    "badSg": "Santykinis tankis turi būti didesnis už 1 (vandens) ir mažesnis už sausų žaliavų {dry}.",
-    "badDry": "Sausų žaliavų santykinis tankis turi būti didesnis už 1.",
-    "note": "Vanduo skaičiuojamas pagal masę: litras sveria kilogramą, JAV galonas – apie 8,3 lb. Skaičiuojant tūriai sudedami, o tai artima, bet netiksli: pilkite vandenį po truputį, maišykite ir matuokite iš naujo. Dvi glazūros su tuo pačiu santykiniu tankiu vis tiek gali tekėti skirtingai.",
-    "saveTarget": "Įrašyti santykinį tankį {sg} kaip šio recepto tikslą",
-    "targetSaved": "Santykinis tankis {sg} yra šio recepto tikslas. Jis įrašomas su receptu, kai įrašote receptą.",
-    "targetKept": "Recepto tikslas – santykinis tankis {sg}.",
-    "clearTarget": "Išvalyti tikslą",
     "drySgEmpty": "Jo reikia tik sausoms masėms; pilamam vandeniui – ne. Įveskite, jei žinote.",
     "drySgNeeded": "Įveskite sausųjų žaliavų santykinį tankį, kad pamatytumėte sausą glazūrą kibire ir vandenį naujam užmaišui.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Šiam receptui įverčio nėra: nežinomas šių žaliavų santykinis tankis: {names}. Įveskite, jei žinote.",
       "was": "Naudojamas jūsų skaičius. Įvertis buvo {sg}; norėdami grįžti prie jo, išvalykite lauką."
     },
-    "badSgWater": "Santykinis tankis turi būti didesnis nei 1 (vandens)."
+    "batch": "Sausa glazūra naujam užmaišui, {unit}",
+    "contents": "Esant santykiniam tankiui {sg}, kibire yra {glaze} sausos glazūros ir {water} vandens.",
+    "add": "Kad pasiektumėte santykinį tankį {target}, įpilkite {water} vandens. Galiausiai bus apie {volume}.",
+    "pourOff": "Kad pasiektumėte santykinį tankį {target}, leiskite nusėsti ir nupilkite {water} skaidraus vandens. Galiausiai bus apie {volume}.",
+    "already": "Jau yra santykinis tankis {target}.",
+    "mix": "Sumaišykite {glaze} sausos glazūros su {water} vandens – gausite apie {volume}, kurio santykinis tankis {target}.",
+    "badSg": "Santykinis tankis turi būti didesnis už 1 (vandens) ir mažesnis už sausų žaliavų {dry}.",
+    "badSgWater": "Santykinis tankis turi būti didesnis nei 1 (vandens).",
+    "badDry": "Sausų žaliavų santykinis tankis turi būti didesnis už 1.",
+    "note": "Vanduo skaičiuojamas pagal masę: litras sveria kilogramą, JAV galonas – apie 8,3 lb. Skaičiuojant tūriai sudedami, o tai artima, bet netiksli: pilkite vandenį po truputį, maišykite ir matuokite iš naujo. Dvi glazūros su tuo pačiu santykiniu tankiu vis tiek gali tekėti skirtingai.",
+    "saveTarget": "Įrašyti santykinį tankį {sg} kaip šio recepto tikslą",
+    "targetSaved": "Santykinis tankis {sg} yra šio recepto tikslas. Jis įrašomas su receptu, kai įrašote receptą.",
+    "targetKept": "Recepto tikslas – santykinis tankis {sg}.",
+    "clearTarget": "Išvalyti tikslą"
   },
   "import": {
     "title": "Receptų įklijavimas",

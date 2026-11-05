@@ -752,19 +752,6 @@
       "pint": "A kívánt pint-súly, uncia"
     },
     "drySg": "A száraz nyersanyagok fajsúlya",
-    "batch": "Száraz máz új adaghoz, {unit}",
-    "contents": "{sg} fajsúlynál a vödör {glaze} száraz mázat és {water} vizet tartalmaz.",
-    "add": "A(z) {target} fajsúly eléréséhez adjon hozzá {water} vizet. A végén kb. {volume} lesz.",
-    "pourOff": "A(z) {target} fajsúly eléréséhez hagyja leülepedni, és öntsön le {water} tiszta vizet. A végén kb. {volume} lesz.",
-    "already": "A fajsúlya már {target}.",
-    "mix": "Keverjen össze {glaze} száraz mázat {water} vízzel, hogy kb. {volume} legyen {target} fajsúlyon.",
-    "badSg": "A fajsúlynak nagyobbnak kell lennie 1-nél (a víz fajsúlyánál), és kisebbnek a száraz nyersanyagok {dry} értékénél.",
-    "badDry": "A száraz nyersanyagok fajsúlyának nagyobbnak kell lennie 1-nél.",
-    "note": "A víz tömeg szerint értendő: egy liter egy kilogramm, egy amerikai gallon körülbelül 8,3 lb. A számítás úgy veszi, hogy a térfogatok összeadódnak, ami közel van, de nem pontos: adja hozzá a vizet kis adagokban, keverje, és mérjen újra. Két, azonos fajsúlyú máz is folyhat másként.",
-    "saveTarget": "A(z) {sg} fajsúly mentése a recept célértékeként",
-    "targetSaved": "A(z) {sg} fajsúly a recept célértéke. A recepttel együtt őrződik meg, amikor menti.",
-    "targetKept": "A recept célfajsúlya: {sg}.",
-    "clearTarget": "A célérték törlése",
     "drySgEmpty": "Csak a száraz tömegekhez kell; a hozzáadandó vízhez nem. Írja be, ha ismeri.",
     "drySgNeeded": "Írja be a száraz nyersanyagok fajsúlyát, és megmutatjuk a vödörben lévő száraz mázat és egy új adag vizét.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Ehhez a recepthez nincs becslés, mert nem ismert a következők fajsúlya: {names}. Írja be, ha ismeri.",
       "was": "Az Ön értékével számolunk. A becslés {sg} volt; ha vissza szeretne térni hozzá, ürítse ki a mezőt."
     },
-    "badSgWater": "A fajsúlynak nagyobbnak kell lennie 1-nél (a víz fajsúlyánál)."
+    "batch": "Száraz máz új adaghoz, {unit}",
+    "contents": "{sg} fajsúlynál a vödör {glaze} száraz mázat és {water} vizet tartalmaz.",
+    "add": "A(z) {target} fajsúly eléréséhez adjon hozzá {water} vizet. A végén kb. {volume} lesz.",
+    "pourOff": "A(z) {target} fajsúly eléréséhez hagyja leülepedni, és öntsön le {water} tiszta vizet. A végén kb. {volume} lesz.",
+    "already": "A fajsúlya már {target}.",
+    "mix": "Keverjen össze {glaze} száraz mázat {water} vízzel, hogy kb. {volume} legyen {target} fajsúlyon.",
+    "badSg": "A fajsúlynak nagyobbnak kell lennie 1-nél (a víz fajsúlyánál), és kisebbnek a száraz nyersanyagok {dry} értékénél.",
+    "badSgWater": "A fajsúlynak nagyobbnak kell lennie 1-nél (a víz fajsúlyánál).",
+    "badDry": "A száraz nyersanyagok fajsúlyának nagyobbnak kell lennie 1-nél.",
+    "note": "A víz tömeg szerint értendő: egy liter egy kilogramm, egy amerikai gallon körülbelül 8,3 lb. A számítás úgy veszi, hogy a térfogatok összeadódnak, ami közel van, de nem pontos: adja hozzá a vizet kis adagokban, keverje, és mérjen újra. Két, azonos fajsúlyú máz is folyhat másként.",
+    "saveTarget": "A(z) {sg} fajsúly mentése a recept célértékeként",
+    "targetSaved": "A(z) {sg} fajsúly a recept célértéke. A recepttel együtt őrződik meg, amikor menti.",
+    "targetKept": "A recept célfajsúlya: {sg}.",
+    "clearTarget": "A célérték törlése"
   },
   "import": {
     "title": "Receptek beillesztése",
