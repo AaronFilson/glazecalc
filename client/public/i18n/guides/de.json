@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Lernen mit John Britts kostenlosem Glasurkurs",
       "text": "Sein kostenloser Videokurs auf YouTube, Einheit für Einheit, mit unseren Anleitungen zum Lesen und Übungen zum Ausprobieren in Glazecalc. Auf Englisch."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Glasurberechnung unterrichten",
+      "text": "6 Einheiten für eine Klasse oder Lerngruppe, von Dreistoffmischungen bis zur Segerformel in beide Richtungen, mit Arbeitsblättern zum Ausdrucken."
     }
   },
   "more": "Weitere Anleitungen",
@@ -255,6 +259,8 @@
       "crazed": "Haarrisse"
     },
     "keyBright": "Gepunktete Linie: wo Stulls Glasuren am glänzendsten waren.",
-    "keyCrazed": "Schraffur: wo sie Haarrisse bekamen."
+    "keyCrazed": "Schraffur: wo sie Haarrisse bekamen.",
+    "note": "Eine Richtschnur, keine Vorhersage. R. T. Stull (Transactions of the American Ceramic Society, 1912) brannte auf etwa Kegel 11, mit festen Flussmitteln von 0,3 K₂O und 0,7 CaO; andere Flussmittel und Brände verschieben die Bereiche, und eine Glasur, die nur matt ist, weil sie zu schwach gebrannt wurde, kann trotzdem im glänzenden Bereich liegen. Die Bereiche sind so gezeichnet wie bei Glazy.",
+    "inGuide": "Kieselsäure (SiO₂) waagerecht, von etwa 1 bis 7, und Tonerde (Al₂O₃) senkrecht, von 0 bis 1, beide aus der Segerformel. Von links fächern Keile auf: oben links ungeschmolzen, dann matt, dann seidenmatt. Der unschattierte Teil rechts davon ist glänzend, und die gepunktete Linie darin zeigt, wo Stulls Glasuren am stärksten glänzten. Zu schwach gebrannt liegt unten rechts, mit wenig Tonerde und viel Kieselsäure. Die Schraffur, tief im Diagramm und an seinem linken Rand, zeigt, wo seine Proben Haarrisse bekamen."
   }
 }

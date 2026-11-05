@@ -3,480 +3,480 @@ title: Glazuren vanaf de basis
 lead: Waaruit een glazuur bestaat, hoe de oven er glas van maakt, en uitleg bij elk woord dat u op een recept, een zak of een kegeltabel tegenkomt.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Wat een glazuur is {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+Een **glazuur**{{en: glaze}} is een dunne laag glas die op een pot is vastgesmolten. Glazy, de open database met glazuurrecepten, noemt het “een glasformule die is afgestemd om bij bepaalde temperaturen te smelten en op klei vast te smelten”. Het wordt aangebracht als een laag poeder en smelt in de oven tot een glasachtige laag die de klei afsluit, zodat de pot minder snel lekt, vlekken krijgt of slijt. Op het hoogtepunt van de stook reageert het gesmolten glazuur ook met de klei en vormt het vaak een tussenlaag die het glazuur vastzet. Op aardewerk{{en: earthenware}}, dat koeler wordt gestookt, is die laag dun en blijft het glazuur grotendeels bovenop liggen. Op steengoed{{en: stoneware}} en porselein, die heter worden gestookt, is de laag dikker en hecht het glazuur steviger aan de klei. Het glazuur blijft wel glas: het wordt geen deel van de klei.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Een recept noemt grondstoffen, zoals veldspaat{{en: feldspar}}, krijt{{en: whiting}} en kaolien{{en: kaolin}}. In de oven ontwijkt een deel van elke grondstof als gas (water of koolstofdioxide) en wordt de rest **oxiden**: verbindingen van een element met zuurstof, zoals siliciumoxide{{en: silica}} (SiO₂) of calciumoxide (CaO). Na het stoken bestaat het glas uit oxiden, daarom beschrijven pottenbakkers een glazuur aan de hand van zijn oxiden. Elk oxide heeft een van drie taken.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **Siliciumoxide** (SiO₂) is de **glasvormer**{{en: glass former}}: het vormt het glas. Zuiver siliciumoxide smelt pas boven {{3100 °F; 1700 °C}}, veel heter dan een keramiekoven wordt, en een glazuur met veel siliciumoxide is over het algemeen bestendiger.
+- **Smeltmiddelen**{{en: fluxes}} verlagen het smeltpunt tot een temperatuur die een oven kan halen. De **alkaliën**, geschreven als **R₂O**, zijn de oxiden van natrium, kalium en lithium (Na₂O, K₂O, Li₂O); ze werken vanaf Ortonkegel 06 tot en met middentemperatuur en hoge temperatuur. De **aardalkaliën**, geschreven als **RO**, zijn de oxiden van calcium, magnesium, barium en strontium (CaO, MgO, BaO, SrO), en zinkoxide (ZnO) wordt erbij gerekend; ze werken het best van kegel 5 tot kegel 10. De R staat voor een willekeurig metaal uit die groep.
+- **Aluminiumoxide** (Al₂O₃) is de **stabilisator**{{en: stabilizer}}. Het maakt het gesmolten glazuur taaier, zodat het op staande wanden blijft zitten, en geeft hardheid en bestendigheid. Glazy waarschuwt: met te weinig aluminiumoxide “kan uw glazuur gaan lopen; te veel kan het gesmolten glazuur zo taai maken dat het mat wordt”. Aluminiumoxide komt vooral uit klei en veldspaat.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**Boor** (B₂O₃) maakt de grens vaag. Chemici rekenen het tot de glasvormers, maar bij de temperaturen van een atelier werkt het als smeltmiddel, en pottenbakkers behandelen het ook zo. Het is een belangrijk smeltmiddel op lage temperatuur en middentemperatuur: hoe koeler de stook, hoe meer boor een glazuur nodig heeft. Op kegel 10 is het meestal niet nodig. (Kegels{{en: cones}}, waarmee pottenbakkers een stook benoemen, worden hieronder uitgelegd.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Zo kunt u het onthouden: siliciumoxide is het glas, de smeltmiddelen laten het smelten bij een temperatuur die uw oven kan halen, en aluminiumoxide maakt het dikker, zodat het blijft waar u het hebt aangebracht.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## Klei, deklagen en de twee stoken {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Kleimassa’s
 
-## From recipe to unity formula {#unity-formula lang=en}
+De **kleimassa**{{en: clay body}} is de klei waarvan een pot is gemaakt. Er zijn drie hoofdsoorten.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Aardewerk**{{en: earthenware}}: een kleimassa voor lage temperatuur, rond kegel 06–02, die bij lage kegels poreus is en dichter wordt naarmate ze heter wordt gestookt. Vaak rood of zandkleurig; het heeft een glazuur nodig om waterdicht te zijn.
+- **Steengoed**{{en: stoneware}}: een kleimassa voor middentemperatuur tot hoge temperatuur, rond kegel 5–10, die geheel of bijna dichtsintert.
+- **Porselein**: een witte kleimassa, rijk aan kaolien, vaak doorschijnend. Het meeste porselein is voor hoge temperatuur, maar er bestaat ook porselein voor kegel 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Dichtgesinterd** (verglaasd) betekent glasachtig en niet poreus; bij het **dichtsinteren** (de verglazing) wordt een kleimassa tijdens het stoken zo. Britse pottenbakkers trekken de grens vaak in plaats daarvan bij een temperatuur: steengoed wordt boven {{2192 °F; 1200 °C}} gestookt, aardewerk daaronder. Middentemperatuur, kegel 5–6, ligt net aan weerszijden van die grens.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Deklagen en drogen
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**Slib** is klei vermengd met water, om mee te gieten, te verbinden of te decoreren. Een **engobe** is een laag die op slib lijkt, vaak gekleurd, met meer grondstoffen die geen klei zijn. Een **onderglazuur** is gekleurd slib of een decoratie met oxiden, meestal bedekt met een transparant glazuur.
 
-### The silica to alumina ratio
+Werk dat nog niet gestookt is, is **ongebakken werk**{{en: greenware}} (bronnen zijn het oneens over de vraag of het Engelse woord greenware al het ongebakken werk omvat of alleen droog werk). Bij het drogen wordt het eerst **leerhard**: stevig maar nog wat vochtig, het moment om af te draaien en oren aan te zetten; daarna **beendroog**: zonder vrij water, heel breekbaar en klaar om te stoken.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### De twee stoken
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+De eerste, lagere stook is de **biscuitstook**{{en: bisque}} (in Britse bronnen **biscuit**), meestal kegel 08–04 (het vaakst 06–04), rond {{1728–1945 °F; 942–1063 °C}}. Daarna is het werk stevig maar poreus. Digitalfire, een naslagsite over glazuren, raadt over het algemeen meer dan 15% poreusheid aan, zodat het biscuit bij het glazuren water uit het glazuur opzuigt. Laag gestookt biscuit (kegel 08–06) is poreuzer; hoog gestookt biscuit (vaak kegel 04) is steviger, maar neemt glazuur minder makkelijk aan.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Hoe het biscuit het glazuren beïnvloedt (Digitalfire)
+Label: Hoe het biscuit het glazuren beïnvloedt
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Biscuit                                                  | Wat er gebeurt                                                          |
+| -------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Te laag gestookt, sterk zuigend                          | Het glazuur komt er te dik op, scheurt dan en trekt samen               |
+| Te hoog gestookt, dicht                                  | Dompelen en drogen duren langer                                         |
+| Heter gestookt, of langer op de eindtemperatuur gehouden | Nu brandt er meer gas weg, dus later borrelt er minder door het glazuur |
 
-### Loss on ignition
+Potclays, een Britse leverancier, beschrijft een biscuitstook tot ongeveer {{1000 °C; 1832 °F}}, rond kegel 06. Op grond van deze bronnen samen raden we voor een eerste biscuitstook kegel 06–04 aan: {{1828–1945 °F; 998–1063 °C}} bij de gemiddelde stooksnelheid van Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+De **glazuurstook**{{en: glaze firing}} (Britse pottenbakkers zeggen soms **glost** firing) smelt het glazuur en sintert bij steengoed ook de klei dicht. Bij **rauw glazuren**{{en: once-firing}} wordt ongebakken werk geglazuurd en maar één keer gestookt. Digitalfire beschrijft een geval uit de productie waarin rauw geglazuurd werk aan de randen samentrok, tot een biscuitstook dat verhielp; begin dus met twee stoken. De gids [Een eenvoudige oven stoken](/guides/firing) geeft stookschema’s voor allebei.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Kegels en heatwork {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Pottenbakkers benoemen een stook naar een **kegel**{{en: cone}}: een slanke keramische piramide die ombuigt als hij een bepaalde hoeveelheid warmte heeft gekregen. Orton, de fabrikant, noemt kegels indicatoren van tijd en temperatuur (heatwork): ze laten het gecombineerde effect van tijd en temperatuur zien, niet alleen de temperatuur.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**Heatwork** is de reden: glazuur, klei en kegel reageren allemaal niet alleen op hoe heet ze worden, maar ook op hoe lang ze heet zijn. Bij een langzame stook buigt een kegel om bij een lagere temperatuur, bij een snelle bij een hogere. Volgens de kegeltabel van Orton buigt kegel 6 om bij {{2165 °F; 1185 °C}} als de oven aan het eind van de stook {{27 °F; 15 °C}} per uur stijgt, bij {{2232 °F; 1222 °C}} bij {{108 °F; 60 °C}} per uur, en bij {{2269 °F; 1243 °C}} bij {{270 °F; 150 °C}} per uur, de stijging gemeten over de laatste {{180 °F; 100 °C}}. Een kegel is klaar als zijn punt 90° is omgebogen. Pottenbakkers noemen dat vaak de stand van 5 uur.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Kegelnummers lopen van 022 tot 42. Een nul vooraan geeft de koelere reeks aan, waarin een hoger nummer koeler is: kegel 06 is koeler dan kegel 04, en kegel 01 koeler dan kegel 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Temperatuurgebieden: zelfstaande Ortonkegels bij {{108 °F; 60 °C}} per uur
+Label: Temperatuurgebieden
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Gebied            | Kegels |        °F |        °C | Gebruikt voor                         |
+| ----------------- | ------ | --------: | --------: | ------------------------------------- |
+| Lage temperatuur  | 06–04  | 1828–1945 |  998–1063 | Glazuren voor aardewerk; biscuitstook |
+| Middentemperatuur | 5–6    | 2167–2232 | 1186–1222 | Steengoed en porselein                |
+| Hoge temperatuur  | 9–10   | 2300–2345 | 1260–1285 | Steengoed en porselein                |
+
+> [!NOTE]
+> Benoem en programmeer elke stook naar de kegel, en beschouw de temperaturen als benaderingen. Een **controlekegel**{{en: witness cone}} op een ovenplaat tussen de potten, of een **kegeldrietal**{{en: cone pack}} (een waarschuwingskegel, een doelkegel en een veiligheidskegel), laat zien hoeveel heatwork uw potten echt hebben gekregen.
+
+Gepubliceerde temperaturen lopen uiteen. Glazy geeft voor hoge temperatuur, kegel 9–11, ongeveer {{2336–2390 °F; 1280–1310 °C}}, wat overeenkomt met de kolom Snel in de tabel van Orton, en Digitalfire geeft voor kegel 6 ongeveer {{2200 °F; 1204 °C}}. Ons advies: gebruik de cijfers van Orton voor een gemiddelde stooksnelheid, zoals deze gids doet, programmeer op kegel en laat een controlekegel de doorslag geven.
+
+Buiten Noord-Amerika geven leveranciers vaak °C op in plaats van een kegel. Hermann Seger ontwikkelde de moderne kegel, die in 1886 voor het eerst in Berlijn werd gebruikt, en het Verenigd Koninkrijk had zijn eigen Staffordshire-kegels; u zou er niet van uit moeten gaan dat hun nummers overeenkomen met die van Orton, en we hebben geen tabel gevonden om ze om te rekenen. De gids [Een eenvoudige oven stoken](/guides/firing) gaat dieper in op kegels.
+
+## Van recept naar Segerformule {#unity-formula}
+
+Een **glazuurrecept** noemt de grondstoffen naar gewicht, meestal zo omgerekend dat de grondstoffen van het basisglazuur samen 100 zijn. **Toevoegingen** (kleurstoffen{{en: colorants}}, opaakmakers en zweefmiddelen) komen boven op die 100, meestal als percentage van het basisglazuur. Om te zien wat het glazuur is, rekenen pottenbakkers het recept om naar een **Segerformule**{{en: unity molecular formula}} (**UMF**), genoemd naar Hermann Seger, die de indeling in drie kolommen als eerste gebruikte.
+
+Table: Van recept naar Segerformule: het uitgewerkte voorbeeld van Glazy
+Label: Van recept naar Segerformule
+
+| Stap             | Wat er gebeurt                                                                                                                                      | In het voorbeeld                                                                                                                                                      |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Glazuurrecept | Grondstoffen naar gewicht, omgerekend naar 100                                                                                                      | Onder meer veldspaat 40%                                                                                                                                              |
+| 2. Oxideanalyse  | Zoals een voedingswaardetabel: de oxiden van alle grondstoffen worden opgeteld in gewichtsprocent, en de gassen vallen weg                          | De veldspaat bestaat voor 64,8% uit siliciumoxide, dus 40% veldspaat levert 25,9% SiO₂. Het gebakken glazuur bestaat uit 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
+| 3. Mol           | Gewichten worden omgerekend naar **mol**, aantallen moleculen, want “grammen kunnen misleidend zijn, omdat sommige oxiden zwaarder zijn dan andere” | 60,1 g SiO₂ is één mol, dus 67,4 g is ongeveer 1,12 mol                                                                                                               |
+| 4. Op 1 brengen  | Alles wordt gedeeld door het totaal van de smeltmiddelen, zodat de smeltmiddelen samen 1 zijn                                                       | De smeltmiddelen zijn samen 0,303; na het delen: K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                            |
+
+De [receptpagina](/recipe) van Glazecalc doet alle vier de stappen terwijl u typt, en toont het resultaat in drie kolommen: smeltmiddelen{{en: fluxes}} (R₂O en RO), samen 1; stabilisatoren{{en: stabilizers}} (R₂O₃: aluminiumoxide, waar boor vaak ook wordt ingedeeld); en glasvormers{{en: glass formers}} (RO₂: siliciumoxide{{en: silica}}). “Op 1 brengen is gewoon een manier van omrekenen”, zegt Glazy: twee recepten van verschillende grondstoffen maar met dezelfde Segerformule “gedragen zich na het stoken vrijwel hetzelfde”. De 1 is dus een gemeenschappelijke maatstaf, geen hoeveelheid die u afweegt. Digitalfire voegt eraan toe dat de methode “bij lagere temperaturen minder goed werkt”, waar boor geen gewoon smeltmiddel is, en dat Segerformules “vergelijkend zijn en het best in hun context kunnen worden bekeken”. De functie **Vergelijken** zet de formules van twee recepten oxide voor oxide naast elkaar.
+
+### De verhouding siliciumoxide tot aluminiumoxide
+
+Het nuttigste losse getal is de **verhouding siliciumoxide tot aluminiumoxide**{{en: silica to alumina ratio}}: siliciumoxide gedeeld door aluminiumoxide. In het voorbeeld is 3,70 ÷ 0,41 ongeveer 9.
+
+Table: Wat de verhouding siliciumoxide tot aluminiumoxide doet verwachten (Glazy)
+Label: Verhouding SiO₂ : Al₂O₃
+
+| Verhouding | Uitleg van Glazy                                         |
+| ---------: | -------------------------------------------------------- |
+| Ongeveer 9 | Wijst op een glanzend glazuur, als het heet genoeg wordt |
+|        5–7 | Typisch voor veel stabiele steengoedglazuren             |
+|        3–5 | Kan mat of te laag gestookt zijn                         |
+
+Glazy zegt niet voor welke kegel deze getallen gelden. Lees ze als een ruwe richtlijn voor steengoedglazuren, rond kegel 6–10. Volgens Digitalfire is een verhouding boven ongeveer 8 waarschijnlijk glanzend, maar een glazuur met boor kan bij 8 of lager glanzend zijn, en een glazuur voor lage temperatuur zelfs bij 6. Een verhouding van 5–7 voorspelt op zichzelf glans noch mat: de smeltmiddelen, het boor en de kegel verschuiven allemaal de grens. Glazy geeft als typische verhouding van de smeltmiddelen voor stabiele glazuren 0,2 R₂O met 0,8 RO, tot 0,3 R₂O met 0,7 RO. Meer alkaliën maken het gesmolten glazuur vloeibaarder en verhogen de uitzetting{{en: expansion}}, en daarmee het risico op haarscheuren{{en: crazing}}.
+
+### Gloeiverlies
+
+Het **gloeiverlies**{{en: loss on ignition}} (**LOI**) is het gewicht dat een grondstof in de oven verliest doordat water, koolstofdioxide, organische stof of zwavel als gas ontwijken. Een gebakken glazuur heeft geen gloeiverlies meer, dus laat de Segerformule het weg.
+
+Table: Typisch gloeiverlies (Digitalfire)
+Label: Gloeiverlies
+
+| Grondstof                          | Typisch gloeiverlies                                                                |
+| ---------------------------------- | ----------------------------------------------------------------------------------- |
+| Krijt (calciumcarbonaat), dolomiet | Meer dan 40%, vooral koolstofdioxide: 100 g calciumcarbonaat geeft ongeveer 44 g af |
+| Lithiumcarbonaat                   | Ongeveer 60%                                                                        |
+| Bariumcarbonaat, Gerstley Borate   | Meer dan 20%                                                                        |
+| Kaolien                            | Ongeveer 12–14%, vooral water dat in de kristallen gebonden is                      |
+| Veldspaten                         | Minder dan 1%                                                                       |
+
+Gas dat ontwijkt nadat het glazuur begint te smelten, moet erdoorheen borrelen en veroorzaakt, in de woorden van Digitalfire, “belletjes, blazen, speldenprikken, samentrekken”. In een proef van Digitalfire bleef talk gas afgeven tot ongeveer {{1650 °F; 899 °C}}. Fritten{{en: frits}}, **gecalcineerde** grondstoffen (vooraf verhit om hun gassen te verdrijven) en aanpassingen aan de stook helpen allemaal.
+
+Oudere boeken maken deze berekening met de hand, met het **molgewicht** (het gewicht van één mol van een grondstof of oxide) en het **equivalentgewicht** (het gewicht van een grondstof dat één mol van een oxide levert). Volgens onze berekening levert ongeveer 100 g krijt{{en: whiting}} één mol calciumoxide, 56 g. Een calculator rekent beide voor u uit.
+
+## Grenzen en het Stull-diagram {#stull-chart}
+
+Een **Stull-diagram**{{en: Stull chart}} is een kaart van glazuren. Het heeft twee assen, allebei uit de Segerformule: siliciumoxide (SiO₂) horizontaal onderaan en aluminiumoxide (Al₂O₃) verticaal langs de zijkant. Elk glazuur is één punt. De kaart is verdeeld in gebieden, zoals mat, glanzend, te laag gestookt en met haarscheuren. De [receptpagina](/recipe) van Glazecalc tekent uw glazuur erop.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull maakte het diagram uit proeven die hij in 1912 publiceerde. Hij stookte ze tot ongeveer kegel 11, en elke proef had dezelfde smeltmiddelen: 0,3 kalium (K₂O) en 0,7 calciumoxide (CaO). Alleen het siliciumoxide en het aluminiumoxide veranderden. Het diagram klopt dus voor die glazuren bij die temperatuur.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Uw glazuur is waarschijnlijk anders. Boor, andere smeltmiddelen en lagere kegels verschuiven allemaal de gebieden. In 2025 testte een artikel in Ceramics Monthly een glazuur voor kegel 6 met boraten als smeltmiddel en met veel ijzer. Het diagram plaatste het als met haarscheuren, mat en te laag gestookt. In werkelijkheid was het volledig uitgesmolten, satijnmat en zonder haarscheuren. De auteurs zeggen dat glazuren met boraten niet goed in het diagram passen. Gebruik de gebieden dus als richtlijn, niet als voorspelling.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+Het gebied **met haarscheuren** is waar de eigen proeven van Stull haarscheuren kregen, op zijn klei. Het zegt niet hoe uw glazuur op uw kleimassa past. Haarscheuren hangen af van de thermische uitzetting van zowel glazuur als klei. Het uitzettingsgetal van Glazecalc helpt u glazuren te vergelijken, en een echte proef beslist: de ijswatertest in [Passing en glazuurfouten](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**Limietformules**{{en: limit formulas}} zijn een ander hulpmiddel voor dezelfde vraag: bereiken van siliciumoxide, aluminiumoxide en de smeltmiddelen voor stabiele glazuren bij een bepaalde kegel. [Voedselveiligheid](/guides/glazing-basics#food-safety) legt ze uit, en waarom ze op zichzelf niets bewijzen.
 
-## Frits and raw materials {#materials lang=en}
+## Fritten en grondstoffen {#materials}
 
-### Frits
+### Fritten
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+Een **fritte**{{en: frit}} is glas dat in een fabriek is gemaakt: mineralen die zijn gesmolten, in water afgeschrikt en gemalen. Het fritten maakt oplosbare grondstoffen zoals borax onoplosbaar, sluit giftige oxiden zoals lood en barium op in een stabiel glas, geeft een grondstof die constanter is dan onbewerkte mineralen, en verdrijft gassen, zodat glazuren met fritten “veel vrijer van fouten” zijn (Digitalfire). Fritten smelten ook vroeg: een natriumfritte is actief bij kegel 06, terwijl veldspaat{{en: feldspar}} “bij kegel 6 pas begint te verweken”. Ze zijn duurder, ze hebben klei nodig om in suspensie te blijven (het voorbeeld van Digitalfire is 85% fritte met 15% klei), en ze zijn “in theorie onoplosbaar, maar in de praktijk niet”.
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Noord-Amerikaanse fritten heten naar fabrikant en nummer: Ferro Frit 3134 (Ferro heet nu Vibrantz) is een van de meestgebruikte fritten in Noord-Amerika. Britse recepten noemen vaker algemene fritten, zoals een standaard boraxfritte.
 
-### The common raw materials
+### De gangbare grondstoffen
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Gangbare glazuurgrondstoffen en wat ze leveren
+Label: Gangbare glazuurgrondstoffen
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Grondstof (andere namen)                          | Levert                 | Opmerkingen                                                                                                                                                                                                                |
+| ------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kwarts{{en: silica}} (siliciumoxide, flint)       | SiO₂                   | Gebruik in glazuren 325 mesh, een heel fijne maling                                                                                                                                                                        |
+| Kaolien{{en: kaolin}} (VK: china clay)            | Al₂O₃, SiO₂            | De belangrijkste bron van aluminiumoxide; helpt ook voorkomen dat het glazuur bezinkt                                                                                                                                      |
+| Ball clay                                         | Al₂O₃, SiO₂            | Plastischer dan kaolien, met meer ijzer en organische stof                                                                                                                                                                 |
+| Kaliveldspaat, natronveldspaat, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Smeltmiddelen met hun eigen aluminiumoxide en siliciumoxide. Nepheline syenite is een sterk smeltmiddel voor lage temperatuur en middentemperatuur. Met gewoon “veldspaat” kan in een oud recept elk van deze bedoeld zijn |
+| Krijt{{en: whiting}} (calciumcarbonaat)           | CaO                    | Het belangrijkste calciumhoudende smeltmiddel; geeft koolstofdioxide af                                                                                                                                                    |
+| Wollastoniet                                      | CaO, SiO₂              | Calcium zonder het koolstofdioxide                                                                                                                                                                                         |
+| Dolomiet, talk                                    | MgO, met CaO of SiO₂   | Zijdeachtige matte oppervlakken; lagere uitzetting                                                                                                                                                                         |
+| Zinkoxide                                         | ZnO                    | Glans en kristallen; te veel kan samentrekken veroorzaken                                                                                                                                                                  |
+| Boorfritten, Gerstley Borate, colemaniet          | B₂O₃                   | Onmisbaar van kegel 06 tot kegel 6; fritten zijn “constanter en minder oplosbaar dan natuurlijke boraten”                                                                                                                  |
+| Lithiumcarbonaat                                  | Li₂O                   | Smeltmiddel met lage uitzetting; duur, dus spaarzaam gebruikt                                                                                                                                                              |
+| Strontiumcarbonaat                                | SrO                    | De minder giftige vervanger van barium                                                                                                                                                                                     |
+| Bariumcarbonaat                                   | BaO                    | Giftig als rauwe grondstof; glazuren met veel barium kunnen metalen afgeven                                                                                                                                                |
+| Bentoniet                                         | Suspensie              | Een heel fijne klei, meestal 1–2%, tegen bezinken. Meer dan 3% kan het glazuur bij het drogen laten scheuren                                                                                                               |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Glazuurgrondstoffen zijn fijne poeders. Kwartsstof beschadigt de longen, eerst zonder klachten, en sommige grondstoffen, zoals bariumcarbonaat en lithiumcarbonaat, zijn giftig bij inslikken. Ga voorzichtig met poeders om, maak nat schoon en draag een goed passend stofmasker als u droog werkt. De gidsen [Veilig mengen en ventileren](/guides/safe-mixing) en [Vergiftig uw gezin niet](/guides/home-safety) leggen uit hoe.
 
-### Regional names
+### Regionale namen
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **Kaolien** heet in het Verenigd Koninkrijk **china clay**. In Australië is Eckalite een merk van kaolien.
+- **Flint** (vuursteen) is een oudere Britse naam voor siliciumoxide. Britse leveranciers verkopen **gecalcineerde flint** nog als apart product, dus met “flint” is in een Brits recept waarschijnlijk gecalcineerde flint bedoeld, en in een Amerikaans recept waarschijnlijk gemalen kwarts. Beide worden verkocht als bron van siliciumoxide; controleer de analyse.
+- **China stone** en **cornish stone** (Cornwall stone) zijn dezelfde grondstof, verwant aan veldspaat.
+- **Krijt**, in Engelse recepten **whiting**, is calciumcarbonaat: gemalen krijt of kalksteen.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Beoordeel een grondstof op de oxiden die ze levert, niet op de naam. Glazecalc werkt ook zo: u kunt de analyse van uw leverancier invoeren op de [pagina Grondstoffen](/material), en de functies **Huidige grondstoffen proberen en vergelijken**, **Hoeveelheden voorstellen en vergelijken** en **Maken met wat ik heb** zoeken allemaal overeenkomst in de oxiden na het stoken, niet in de namen.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Ook grondstoffen veranderen. De US Geological Survey meldt dat de mijnen en de fabriek die Custer-veldspaat maakten, in South Dakota, in november 2023 hun bedrijf hebben stilgelegd. De oorspronkelijke mijn van Gerstley Borate sloot rond 1999–2000; Laguna verkoopt nog een product onder die naam, en Gillespie Borate is de belangrijkste vervanger. Bronnen zijn het oneens over de vraag of Gillespie Gerstley Borate gewicht voor gewicht vervangt (de fabrikant en Potclays zeggen ja, Digitalfire en anderen nee); vergelijk de twee dus in Glazecalc en test daarna een kleine hoeveelheid.
 
-## Colorants and opacifiers {#color lang=en}
+## Kleurstoffen en opaakmakers {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+Een **kleurstof**{{en: colorant}} is een metaaloxide of -carbonaat dat een glazuur kleurt; een **pigment**{{en: stain}} is een kleurstof die in een fabriek is gemaakt, stabieler en constanter dan ruwe oxiden. Kleurstoffen zijn meestal minder dan 5% van het basisglazuur, veel ervan minder dan 1%, en een carbonaat is zwakker dan het overeenkomstige oxide, omdat een deel ervan als gas ontwijkt. Volgens onze berekening geeft 100 g kobaltcarbonaat ongeveer 63 g kobaltoxide, en 100 g van het kopercarbonaat dat pottenbakkers kopen (basisch kopercarbonaat) ongeveer 72 g koperoxide. Gebruik dus ongeveer 1,4 tot 1,6 keer zoveel carbonaat als oxide.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Gangbare kleurstoffen, als percentage van het basisglazuur
+Label: Gangbare kleurstoffen
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Kleurstof               | Gebruikelijke beginhoeveelheid          | Kleuren en opmerkingen                                                                                                                                                                              |
+| ----------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalt                  | 0,1–2% (bronnen verschillen)            | Blauw, en heel sterk; naar paars als het basisglazuur magnesium bevat                                                                                                                               |
+| IJzer                   | 0,5–10%                                 | Bruin, lichtbruin en rood bij oxiderend stoken{{en: oxidation}}; bij reducerend stoken{{en: reduction}} geeft ½–2% celadon en 5–10% tenmoku. Een smeltmiddel, dus veel ijzer laat een glazuur lopen |
+| Koper                   | 1–3%                                    | Groen of turkoois bij oxiderend stoken, rood bij reducerend stoken. Het kan een glazuur metalen laten afgeven                                                                                       |
+| Chroom                  | Onder 0,5% tot 2% (bronnen verschillen) | Groen; bruin als het basisglazuur zink bevat, roze met tin                                                                                                                                          |
+| Mangaan                 | 2–10%                                   | Bruin- en paarstinten                                                                                                                                                                               |
+| Rutiel                  | Ongeveer 2–5%                           | Gevlekte, gevarieerde kleur; ruw of mat boven ongeveer 5%                                                                                                                                           |
+| Pigmenten uit de handel | 2–12%                                   | 2–4% voor lichte tinten, 5–8% voor middentonen, 10–12% voor sterke kleuren                                                                                                                          |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Over de hoeveelheden kobalt en chroom zijn de bronnen het echt oneens. Volgens Glazy is 0,1% kobalt genoeg voor blauw; Glendale Community College geeft ½–2% of ½–3%, afhankelijk van de ovenatmosfeer; Birdie Boone schrijft in Pottery Making Illustrated 3% of minder. Voor chroom noemt Boone minder dan 0,5% en Glendale 2–3%. Het veiligst is laag te beginnen en een **proevenreeks**{{en: line blend}} te maken: een rij proefplaatjes{{en: test tiles}} waarin één grondstof stap voor stap van weinig naar veel gaat.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+Het basisglazuur verandert de kleur. Een glanzend, transparant basisglazuur geeft de helderste kleur; satijnmatte en matte basisglazuren, meestal met meer aluminiumoxide, dempen die. Magnesium trekt kobalt naar paars, zink maakt chroom bruin, en chroom met tin geeft roze.
 
-### Opacifiers
+### Opaakmakers
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+Een **opaakmaker** maakt een glazuur **dekkend** (opaak), zodat de klei niet meer te zien is; door een **transparant** glazuur blijft de klei zichtbaar.
 
-Table: Opacifiers
+Table: Opaakmakers
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Opaakmaker                                   | Gebruikelijke hoeveelheid      | Opmerkingen                                                                                                                                  |
+| -------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zirkoonsilicaat (Zircopax, Superpax, Ultrox) | 10–15% voor volledige dekking  | De goedkopere keuze; de merken zijn zirkoonsilicaat dat verschillend fijn is gemalen, en fijnere kwaliteiten zijn sterker                    |
+| Tinoxide                                     | Ongeveer 5–7% (onze schatting) | Duur; zwakker op hoge temperatuur, en volgens Digitalfire gaf 4% geen dekking in een transparant reductieglazuur voor kegel 10               |
+| Titaandioxide                                | Ongeveer 5% (onze schatting)   | Zijdeachtige, doorschijnende dekking; ongeveer 5% kan het oppervlak laten variëren, en veel meer geeft vaak een mat oppervlak met kristallen |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Passing en glazuurfouten {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+Klei en glazuur zetten allebei uit als ze warm worden en krimpen als ze afkoelen, elk in een eigen mate: hun **thermische uitzetting**{{en: thermal expansion}}. De **passing van glazuur en scherf**{{en: glaze fit}} is hoe goed die twee overeenkomen. Bij een goede passing staat het glazuur onder lichte drukspanning van de klei; volgens Digitalfire maakt een beetje drukspanning het werk sterker, terwijl te veel het kan verzwakken en zelfs laten barsten.
 
-### Crazing and shivering
+### Haarscheuren en afspringen
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**Haarscheuren**{{en: crazing}} vormen een netwerk van fijne scheurtjes. De uitzetting van het glazuur is groter dan die van de scherf{{en: body}}, dus bij het afkoelen krimpt het meer, komt het onder trekspanning te staan en scheurt het, meestal door te veel natrium en kalium (Na₂O, K₂O). Haarscheuren kunnen ook later ontstaan, bij gebruik, na herhaald plotseling afkoelen, zoals door contact met koude vloeistoffen. Als ze gewenst zijn, zoals bij raku, heet het **craquelé**. Digitalfire zegt: “In 95% van de gevallen is de oplossing de thermische uitzetting van het glazuur aan te passen”; langzaam afkoelen stelt haarscheuren alleen uit. De test van Digitalfire: verwarm het werk tot ongeveer {{300 °F; 149 °C}}, dompel het in ijswater en wrijf er met een viltstift over om de scheurtjes zichtbaar te maken.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Bronnen verschillen over de eerste oplossing. Glazy stelt voor siliciumoxide{{en: silica}} of aluminiumoxide toe te voegen; Digitalfire antwoordt dat extra siliciumoxide “alleen het KNaO verdunt” (het natrium en kalium); Linda Bloomfield voegt boor toe of gebruikt minder veldspaat, één grondstof tegelijk. Ons advies: vervang in de [receptcalculator](/recipe) een deel van het natrium en kalium door smeltmiddelen{{en: fluxes}} met een lagere uitzetting (boor, lithium, magnesium, calcium), controleer de verandering met de functie **Vergelijken** en bevestig het resultaat met de ijswatertest.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**Afspringen**{{en: shivering}} is het omgekeerde: de uitzetting van het glazuur is veel lager dan die van de scherf, dus het staat onder te hoge drukspanning en springt in schilfers van randen en kanten af. Digitalfire waarschuwt dat de schilfers vlijmscherp kunnen zijn en ingeslikt zouden kunnen worden, en Glazy noemt afspringen “op gebruiksgoed nog gevaarlijker dan haarscheuren”. De oplossing is een glazuur met een hogere uitzetting of een kleimassa met een lagere uitzetting.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> Gebruik werk met haarscheuren of afgesprongen glazuur niet voor eten of drinken. Bronnen zijn het oneens over de vraag of potten met haarscheuren goed genoeg schoon te krijgen zijn (de ene zegt dat een vaatwasser volstaat; een andere noemt gebruiksgoed met haarscheuren ondeugdelijk), dus kiezen wij het zekere voor het onzekere.
 
-### Gloss and matte
+### Glanzend en mat
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Een **glanzend** oppervlak weerspiegelt en is glad, **satijnmat** heeft een gedempte glans, en **mat** is dof. Voor glans is volledig gesmolten glas nodig. Mat kan komen door veel aluminiumoxide (een lage verhouding siliciumoxide tot aluminiumoxide), door smeltmiddelen zoals calcium, magnesium, barium of strontium die bij het afkoelen van het glazuur piepkleine kristallen vormen, of doordat er te laag is gestookt.
 
-### Common defects
+### Gangbare glazuurfouten
 
-Change one thing at a time, and keep your test tiles.
+Verander één ding tegelijk, en bewaar uw proefplaatjes{{en: test tiles}}.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Gangbare glazuurfouten, hun gebruikelijke oorzaken en eerste oplossingen
+Label: Gangbare glazuurfouten
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Fout                            | Hoe het eruitziet                                                 | Gangbare oorzaken                                                                                                                                                            | Eerste oplossingen                                                                                                          |
+| ------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Samentrekken{{en: crawling}}    | Het glazuur trekt zich terug in druppels en laat kale klei achter | Stoffig of vettig biscuit; een dikke laag met veel klei die bij het drogen scheurde; zink, zirkoonsilicaat of tin                                                            | Maak het biscuit schoon; breng dunner aan; calcineer een deel van de klei; voeg een bindmiddel toe, zoals CMC (glazuurlijm) |
+| Speldenprikken{{en: pinholing}} | Kleine gaatjes of putjes                                          | Gas uit scherf of glazuur waarvan de gaatjes niet zijn dichtgevloeid; een te laag gestookt of te taai glazuur                                                                | Houd de eindtemperatuur ongeveer een half uur aan; breng dunner aan; minder zink of rutiel                                  |
+| Blazen                          | Kraters met scherpe randen                                        | Meestal te hoog gestookt; heel dikke lagen; vluchtige smeltmiddelen boven ongeveer {{2192 °F; 1200 °C}}                                                                      | Stook lager; breng dunner aan. Scherpe randen maken gebruiksgoed onveilig                                                   |
+| Aflopen                         | Het glazuur loopt op de ovenplaat                                 | Te weinig aluminiumoxide; te dik, zoals waar overgoten lagen elkaar overlappen; veel ijzer                                                                                   | Breng dunner aan; voeg aluminiumoxide toe; houd het glazuur ruim boven de voet                                              |
+| Koelbreuk{{en: dunting}}        | Scheuren in de pot door afkoelen of opwarmen                      | Snel afkoelen door de kwartssprong{{en: quartz inversion}}, {{1063 °F; 573 °C}}, of de cristobalietsprong, ongeveer {{428 °F; 220 °C}}; ongelijke wanddikte; slechte passing | Stook langzaam door beide heen, bij het opstoken en bij het afkoelen; gelijkmatige wanddikte                                |
 
-## Food safety {#food-safety lang=en}
+## Voedselveiligheid {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+Bij **afgifte van metalen**{{en: leaching}} lost metaal uit een gebakken glazuur op in eten of drinken; een glazuur kan er perfect uitzien en toch metaal afgeven. Bij de wettelijke tests wordt het gebakken stuk in een zure oplossing gelegd en wordt gemeten hoeveel lood en cadmium eruit komt.
 
-### Lead-free is not the same as food-safe
+### Loodvrij is niet hetzelfde als voedselveilig
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+De regels in de VS, de EU, het VK en Australië begrenzen hoeveel lood en cadmium een gebakken stuk afgeeft, niet wat het glazuur bevat. “Loodvrij” neemt één gevaar weg; het is geen beoordeling van de voedselveiligheid{{en: food safety}}. Ook andere oxiden komen vrij: Glazy waarschuwt dat glazuren met veel barium “metalen kunnen afgeven en over het algemeen niet voedselveilig zijn”, Digitalfire zegt dat koper “een glazuur metalen kan laten afgeven; test het”, en Glazy raadt loodglazuren voor gebruiksgoed niet langer aan.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+Een **binnenglazuur**{{en: liner glaze}} is een stabiel, meestal transparant of wit glazuur voor vlakken die met voedsel in aanraking komen. Wij vinden een binnenglazuur zonder kleurstof, barium, lood of lithium, dat goed uitsmelt, geen haarscheuren krijgt en slijtvast is, de keuze met minder risico. Minder risico is geen bewijs.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Limietformules**{{en: limit formulas}} (Digitalfire spreekt liever van **streefformules**{{en: target formulas}}) geven typische bereiken in de Segerformule (UMF) voor stabiele glazuren bij een bepaalde kegel: de streefwaarden van Digitalfire voor kegel 6 leggen aluminiumoxide op 0,285–0,64 en siliciumoxide op 2,4–4,7. Ze helpen u op weg naar een evenwichtige samenstelling, maar bewijzen niets; Digitalfire vermijdt het woord “limiet” omdat het suggereert dat glazuren binnen de bereiken “op de een of andere manier veilig zijn”. De hulpmiddelen in Glazecalc om een recept te wijzigen melden wanneer het nieuwe recept een aanbevolen grens overschrijdt, zoals veel boor bij kegel 6, en wat het glazuur dan waarschijnlijk doet.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+De wettelijke grenswaarden verschillen per land. De tabel toont die van het land waar u woont, in de eenheden van de wet zelf; kies een ander land of een andere regio om te vergelijken.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+In de VS wordt decoratief keramiek dat bruikbaar voor voedsel lijkt, als werk voor voedsel behandeld, tenzij het een sticker en een blijvende vermelding draagt die in de bodem is gevormd of erop is ingebakken, zoals “Not for Food Use. May Poison Food” (niet voor gebruik met voedsel; kan voedsel vergiftigen), of een gat heeft door het oppervlak dat met voedsel in aanraking komt. De EU legt grenswaarden voor lood en cadmium in keramiek vast in Richtlijn 84/500/EEG, en het VK hanteert dezelfde waarden in een eigen wet. Een besluit van de Benelux-landen uit 2024 legt veel lagere grenswaarden voor keramiek vast. Nederland past ze toe vanaf 29 mei 2026: ongeveer 130 tot 150 keer minder lood en ongeveer 14 tot 18 keer minder cadmium dan de EU-waarden. Werk dat aan de oude regels voldeed en vóór 1 december 2026 voor het eerst werd verkocht, mag worden verkocht tot de voorraad op is. Testlaboratoria melden dat Luxemburg dezelfde grenswaarden toepast vanaf 29 mei 2026, en dat België ze heeft overgenomen in een koninklijk besluit van 19 juli 2026; die teksten hebben we zelf niet gelezen. Australië stelt grenswaarden voor geïmporteerd werk; voor werk dat in Australië of Nieuw-Zeeland is gemaakt, vonden we geen officiële grenswaarde.
 
-### Testing
+### Testen
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+Volgens de FDA kunnen thuistests met wattenstaafjes lood aantonen dat kan vrijkomen, maar onderzoeken laten zien dat deze tests op geglazuurd werk vaak verkeerd zijn: ze kunnen lood aangeven dat er niet is, en ze kunnen lood missen dat wel vrijkomt. Zie een positieve uitslag als reden om het stuk niet meer te gebruiken, en een negatieve uitslag als iets wat niets bewijst. Een migratietest van het gebakken stuk in een laboratorium (ASTM C738 in de VS; EN 1388 of ISO 6486 in Europa) geeft het echte antwoord.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> “Voedselveilig”{{en: food safe}} betekent: dit glazuur, op deze klei, gestookt tot deze kegel in deze oven en op deze manier aangebracht, geeft minder af dan de wettelijke grenswaarden. Glazecalc kan u helpen een stabiel glazuur op te bouwen, en de functie **Lood vervangen** kan een oud loodrecept zonder lood opnieuw opbouwen, maar geen enkele calculator kan een pot certificeren. Alleen een test van het gebakken stuk kan dat.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Soortelijk gewicht en aanbrengen {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### Soortelijk gewicht
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+Glazuurpoeder gemengd met water heet **aangemaakt glazuur**{{en: slurry}}. Het **soortelijk gewicht**{{en: specific gravity, SG}} (**SG**) ervan is het gewicht vergeleken met hetzelfde volume water, dat een soortelijk gewicht van 1,0 heeft: hoe hoger het is, hoe meer poeder er in de emmer zit. Glazy noemt 1,4–1,5 “een goed beginpunt voor de meeste glazuren”. Om het te meten weegt u precies 100 mL aangemaakt glazuur af (Glazy raadt een injectiespuit aan) en deelt u door 100: 145 g betekent een soortelijk gewicht van 1,45. Areometers zijn onbetrouwbaar in opgestijfd glazuur, en water verdampt, dus meet opnieuw voordat u glazuurt.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+De streefwaarden verschillen per bron. Digitalfire noemt 1,40–1,50 voor dompelglazuren en 1,25–1,55 voor kant-en-klare kwastglazuren, terwijl Potclays 1,71–1,81 geeft voor aanbrengen met de kwast en 1,71 voor spuiten. Ons advies: dompel bij ongeveer 1,45 met het glazuur licht opgestijfd, volg voor een kwastglazuur het etiket, en schrijf op wat werkt.
+
+Een **vlokmiddel**{{en: flocculant}} (bitterzout, azijn of calciumchloride) laat aangemaakt glazuur licht opstijven en maakt het **thixotroop**{{en: thixotropic}}: het vloeit als u roert en wordt vaster als het stilstaat, voor “een gelijkmatige glazuurlaag zonder druppels”. Een **ontvlokkingsmiddel**{{en: deflocculant}} (waterglas of Darvan) maakt het dunner. De gids [Een glazuur aanmaken](/guides/making-a-glaze) behandelt het aanmaken en bijstellen.
+
+### Glazuur aanbrengen
+
+Maak het biscuit eerst vrij van stof en vet met een nauwelijks vochtige spons in plaats van het af te wassen, waardoor het zich volzuigt. Blaas het stof er niet af met perslucht en borstel het niet droog af: dat brengt kwartsstof in de lucht ([Veilig mengen en ventileren](/guides/safe-mixing#cleaning)).
+
+- **Dompelen** “geeft over het algemeen een laag van gelijkmatige dikte” (Robin Hopper). De dompeltijd bepaalt de dikte: Digitalfire merkt op dat kant-en-klare dompelglazuren worden aangemaakt op een soortelijk gewicht van ongeveer 1,4 voor 5 seconden dompelen en 1,5 voor 1 seconde dompelen.
+- Glazuur om te **overgieten** zou “iets dunner dan bij het dompelen” moeten zijn; waar overgoten lagen elkaar overlappen, wordt de laag dubbel en kan het glazuur gaan lopen.
+- **Kwastglazuren** bevatten een lijm zoals **CMC** (glazuurlijm), die het glazuur helpt vloeien en hechten en daarna wegbrandt. De meeste hebben meerdere lagen nodig, vaak twee of drie; volg het etiket.
+- Bij **spuiten** gebruikt u een veel dunner glazuur, aangebracht in “meerdere dunne lagen, waarbij de dikte geleidelijk wordt opgebouwd”.
+
+> [!WARNING]
+> Spuit alleen in een spuitcabine met afzuiging, met een goed passend stofmasker op. Zie [Veilig mengen en ventileren](/guides/safe-mixing).
+
+Een te dikke laag kan samentrekken, blazen vormen of aflopen. De vuistregels van leveranciers lopen van de dikte van een creditcard tot die van een Amerikaans dubbeltje (dime), volgens onze schatting ongeveer 1 mm droog glazuur; proefplaatjes{{en: test tiles}} in een paar diktes zijn de betrouwbare controle. **Afdekwas**{{en: wax resist}} op de voet stoot glazuur af, zodat de pot niet aan de ovenplaat kan vastkleven, en **ovenplaatbescherming**, een hittebestendige laag, vaak van kaolien en kwarts, beschermt ovenplaten tegen druppels.
+
+## Oxidatie en reductie {#atmosphere}
+
+De gassen in de oven, de **ovenatmosfeer**, veranderen hoe glazuren uit de oven komen. Bij een **oxidatiestook**{{en: oxidation}} is er volop zuurstof. “Elektrische ovens zijn synoniem met oxiderend stoken”, zegt Digitalfire, en glazuren voor oxidatie zijn doorgaans helderder van kleur dan glazuren voor reductie, vooral bij lagere temperaturen. Bij oxiderend stoken geeft koper groen en turkoois, en ijzer bruin, lichtbruin en rood. Een elektrische oven met slechte afzuiging, vol werk dat gassen afgeeft, kan neutraler stoken dan bedoeld; een ovenafzuiging die direct op de oven is aangesloten, helpt.
+
+Bij een **reductiestook**{{en: reduction}} wordt de zuurstof bewust beperkt, meestal in een gasoven, een houtoven of een speciale oven. Koper wordt rood, en ijzer wordt een sterker smeltmiddel en geeft **celadon** (blauwgroen tot grijsgroen, met ongeveer ½–2% ijzer) en **tenmoku** (temmoku: bruinzwart, ongeveer 5–10% ijzer). Glazy zegt dat celadons en koperrood “op reductie steunen”. Ook de klei verandert: in een vergelijking van Digitalfire werd een steengoedmassa grijs bij reductie en geelachtig bij oxidatie. Siliciumcarbide in een glazuur kan zelfs in een elektrische oven kleine plekken met reductie geven. Voor reductie van kegel 010 tot kegel 3 raadt Orton zijn ijzervrije kegels aan.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Reken erop dat een recept voor een gasoven met reductie er in een elektrische oven anders uitkomt: een celadon of koperrood dat op reductie steunt, ziet er bij oxidatie niet hetzelfde uit. Kijk voor welke ovenatmosfeer een recept is gemaakt, en noteer uw eigen atmosfeer, met de kegel, in de notities van het recept in Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Elke oven, ook een elektrische, geeft dampen af, dus zorg voor afzuiging. De gids [Veilig mengen en ventileren](/guides/safe-mixing) legt uit hoe.
 
-## Glossary {#glossary lang=en}
+## Woordenlijst {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Aardewerk (earthenware)
+: Een kleimassa voor lage temperatuur (rond kegel 06–02), poreus bij lage kegels en dichter als ze heter wordt gestookt.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Afdekwas (wax resist)
+: Was die wordt aangebracht waar geen glazuur mag komen, meestal op de voet.
+
+Afgifte van metalen (leaching)
+: Metalen die uit een gebakken glazuur oplossen in eten of drinken.
+
+Afspringen (shivering)
+: Glazuur dat van randen afschilfert doordat het onder te hoge drukspanning staat; een gevaar op gebruiksgoed.
+
+Aluminiumoxide (Al₂O₃; alumina)
+: De belangrijkste stabilisator: voorkomt aflopen en maakt harder. Komt uit kleien en veldspaten.
 
 Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+: Een plastische klei met meer ijzer en organische stof dan kaolien.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Bentoniet (bentonite)
+: Een heel fijne klei die in een hoeveelheid van ongeveer 1–2% wordt toegevoegd om te voorkomen dat het glazuur bezinkt. Meer dan 3% kan het glazuur bij het drogen laten scheuren.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+Binnenglazuur (liner glaze)
+: Een stabiel, meestal transparant of wit glazuur voor vlakken die met voedsel in aanraking komen.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Biscuitstook (bisque; VK: biscuit)
+: De eerste, lagere stook, meestal kegel 08–04 (het vaakst 06–04), waarna het werk stevig maar poreus is.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Boor (B₂O₃; boron)
+: Formeel een glasvormer, maar gebruikt als smeltmiddel; onmisbaar van kegel 06 tot kegel 6.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+CMC, glazuurlijm (CMC gum)
+: Een lijm van cellulose die helpt om glazuur met de kwast aan te brengen en te laten hechten; hij brandt weg.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Dichtsinteren, verglazing (vitrification)
+: Een kleimassa die bij het stoken glasachtig en niet poreus wordt.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Fritte (frit)
+: Glas uit de fabriek, gesmolten, afgeschrikt en gemalen, dat oplosbare of giftige oxiden onoplosbaar maakt.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Glanzend, satijnmat en mat (gloss, satin and matte)
+: Weerspiegelend en glad; een gedempte glans; dof.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Glasvormer (glass former)
+: Het oxide dat het glas vormt, meestal siliciumoxide.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Glazuur (glaze)
+: Een laag glas die bij het stoken smelt om een pot af te sluiten en te versieren.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Glazuurrecept (batch recipe)
+: De grondstoffen van een glazuur naar gewicht, meestal samen 100.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+Glazuurstook (glaze firing; VK: glost firing)
+: De stook waarin het glazuur smelt.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Gloeiverlies (LOI, loss on ignition)
+: Gewicht dat bij het stoken verloren gaat als water, koolstofdioxide, organische stof of zwavel.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
-
-Flux
-: An oxide that lowers the melting temperature of silica.
-
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
-
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
-
-Glass former
-: The oxide that builds the glass, usually silica.
-
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
-
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
-
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
-
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
-
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Haarscheuren (crazing)
+: Fijne scheurtjes in een glazuur dat meer krimpt dan zijn scherf; craquelé als ze gewenst zijn.
 
 Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+: Het gecombineerde effect van temperatuur en tijd in een oven; wat kegels meten.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+Kaolien (kaolin; VK: china clay)
+: Een zuivere witte klei die aluminiumoxide en siliciumoxide levert; helpt voorkomen dat het glazuur bezinkt. In Australië is Eckalite een van de merken.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Kegel (cone)
+: Een gekalibreerde keramische piramide die bij een bepaalde hoeveelheid heatwork ombuigt. Een controlekegel laat zien wat de potten hebben gekregen.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Kleurstof en pigment (colorant and stain)
+: Een metaaloxide of -carbonaat dat glazuur kleurt; een pigment is een kleurstof die in een fabriek is gemaakt en stabieler is.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Koelbreuk (dunting)
+: Scheuren in een pot door spanning bij afkoelen of opwarmen, vaak bij de kwartssprong, {{1063 °F; 573 °C}}.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Krijt (whiting)
+: Calciumcarbonaat, het belangrijkste calciumhoudende smeltmiddel; verliest bij het stoken ongeveer 44% van zijn gewicht, als koolstofdioxide.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Limietformule, streefformule (limit formula, target formula)
+: Typische bereiken in de Segerformule voor stabiele glazuren bij een bepaalde kegel; een richtlijn, geen garantie.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Onderglazuur (underglaze)
+: Gekleurd slib of decoratie met oxiden, meestal onder een transparant glazuur.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Ongebakken werk (greenware)
+: Werk dat nog niet gestookt is: leerhard als het stevig maar vochtig is, beendroog als er geen vrij water meer in zit.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Ontglazing (devitrification)
+: Kristallen die vroeg tijdens het afkoelen uit het glas groeien, waar ze niet gewenst zijn.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Opaakmaker (opacifier)
+: Een grondstof, zoals zirkoonsilicaat, tinoxide of titaandioxide, die glazuur dekkend maakt.
+
+Ovenplaatbescherming (kiln wash)
+: Een hittebestendige laag die ovenplaten tegen druppels beschermt.
+
+Oxidatie en reductie (oxidation and reduction)
+: Stoken met volop zuurstof (elektrische ovens), of met beperkte zuurstof (meestal gas of hout).
 
 Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+: Een verbinding van een element met zuurstof; een oxideanalyse noemt ze in gewichtsprocent.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Passing van glazuur en scherf (glaze fit)
+: Hoe goed de uitzetting van glazuur en scherf overeenkomt; bij een goede passing staat het glazuur onder lichte drukspanning.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Porselein (porcelain)
+: Een witte kleimassa voor hoge temperatuur, rijk aan kaolien, vaak doorschijnend.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Proevenreeks (line blend)
+: Proeven waarin één grondstof stap voor stap tussen twee hoeveelheden verandert. Bij een driehoeksmenging variëren er drie, in een raster.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+R₂O en RO
+: De alkalische smeltmiddelen (Na₂O, K₂O, Li₂O) en de aardalkalische smeltmiddelen (CaO, MgO, BaO, SrO, met ZnO).
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Rauw glazuren (once-firing, single firing)
+: Ongebakken werk glazuren en maar één keer stoken.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Samentrekken (crawling)
+: Glazuur dat zich tijdens het stoken terugtrekt in druppels en kale klei achterlaat.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Segerformule (UMF; unity molecular formula, Seger formula)
+: De oxiden van een glazuur als aantallen moleculen, zo omgerekend dat de smeltmiddelen samen 1 zijn.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Siliciumoxide (SiO₂; silica)
+: De glasvormer; ook flint of kwarts genoemd.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Slib en engobe (slip and engobe)
+: Klei in water; een engobe is een laag die op slib lijkt, met meer grondstoffen die geen klei zijn.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Smeltmiddel (flux)
+: Een oxide dat de smelttemperatuur van siliciumoxide verlaagt.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Soortelijk gewicht (specific gravity, SG)
+: Het gewicht van aangemaakt glazuur vergeleken met hetzelfde volume water.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Speldenprikken en blazen (pinholing and blistering)
+: Kleine gaatjes, of kraters met scherpe randen, waar gas door het gesmolten glazuur is ontsnapt.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Stabilisator (stabilizer)
+: Een oxide, vooral aluminiumoxide, dat het gesmolten glazuur taaier maakt en bestendigheid geeft.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Steengoed (stoneware)
+: Een kleimassa voor middentemperatuur tot hoge temperatuur (rond kegel 5–10) die geheel of bijna dichtsintert.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Thixotropie (thixotropy)
+: Vloeien als het wordt geroerd, en opstijven tot een zachte gel als het stilstaat.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+Toevoeging (additive)
+: Een kleurstof, opaakmaker of zweefmiddel die boven op de 100 van een recept wordt toegevoegd.
 
-## Sources {#sources lang=en}
+Veldspaat (feldspar)
+: Een mineraal dat een alkalisch smeltmiddel levert, samen met aluminiumoxide en siliciumoxide: kaliveldspaat, natronveldspaat of nepheline syenite.
+
+Verhouding siliciumoxide tot aluminiumoxide (silica to alumina ratio)
+: Siliciumoxide gedeeld door aluminiumoxide in de Segerformule: hoger neigt naar glanzend, lager naar mat.
+
+Vlokmiddel en ontvlokkingsmiddel (flocculant and deflocculant)
+: Toevoegingen die aangemaakt glazuur laten opstijven (bitterzout, azijn) of dunner maken (waterglas, Darvan).
+
+Voedselveilig (food safe)
+: Volgens de wet: geeft in een test met zuur minder lood en cadmium af dan de grenswaarden. Niet hetzelfde als loodvrij.
+
+## Bronnen {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

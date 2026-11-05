@@ -9,6 +9,7 @@
     "homeSafety": "No envenene a su familia - Glazecalc",
     "firing": "La cocción en un horno sencillo - Glazecalc",
     "learnWithJohnBritt": "Aprenda con el curso gratuito de esmaltes de John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Enseñar el cálculo de esmaltes - Glazecalc",
     "about": "Acerca de - Glazecalc",
     "privacy": "Privacidad - Glazecalc",
     "terms": "Condiciones de uso - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Aprobar un cambio - Glazecalc",
     "cones": "Tabla de conos: temperaturas de los conos Orton y SK - Glazecalc",
     "materials": "Materiales estándar para esmaltes: análisis y peligros - Glazecalc",
-    "materialInfo": "{name}: análisis de óxidos y peligros - Glazecalc"
+    "materialInfo": "{name}: análisis de óxidos y peligros - Glazecalc",
+    "famousGlazes": "Esmaltes famosos - Glazecalc",
+    "famousGlaze": "Esmalte {name} - Glazecalc"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -177,6 +180,7 @@
     "homeSafety": "Qué hacer si un niño o una mascota traga un material de esmalte, y cómo tener los materiales, el polvo, el horno y las piezas caseras seguros para su familia.",
     "firing": "Cómo cocer en un horno eléctrico: elegir, colocar y leer los conos, y seguir curvas publicadas para bizcocho y esmalte, con una tabla de conos.",
     "learnWithJohnBritt": "Complemento del curso gratuito de esmaltes de John Britt: sus vídeos unidad a unidad, con guías de Glazecalc y ejercicios para probar en la calculadora.",
+    "teachingGlazeCalculation": "6 sesiones para enseñar la fórmula Seger: materiales y probetas triaxiales, moles, de la receta a la fórmula y vuelta, y defectos del esmalte, con ejemplos resueltos y fichas de trabajo para imprimir.",
     "advice": "Consejos prácticos para preparar, aplicar y cocer esmaltes cerámicos, de Glazecalc, y los consejos que usted añada. Gratuito para alfareros y ceramistas.",
     "about": "Glazecalc: calculadora y cuaderno de química de esmaltes cerámicos, gratuitos y de código abierto. Vea cómo calcula la fórmula Seger (UMF) y cómo está hecho.",
     "privacy": "Cómo trata Glazecalc sus datos: sin anuncios, sin analítica y sin seguimiento, y nada se vende. Qué se conserva, por qué y cómo ejercer sus derechos.",
@@ -187,6 +191,8 @@
     "materials": "Los materiales de la biblioteca estándar de Glazecalc, desde feldespatos y arcillas hasta fritas y fuentes de boro, cada uno con su análisis de óxidos, su fórmula Seger y sus peligros.",
     "materialInfo": "{name}: análisis de óxidos, fórmula Seger, pérdida al fuego y peligros en la biblioteca estándar de Glazecalc.",
     "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aportación a la fórmula Seger, su pérdida al fuego y sus peligros.",
+    "famousGlazes": "Esmaltes famosos de todo el mundo: la receta tradicional o el análisis histórico de cada esmalte, su fórmula Seger y una versión con los materiales que se venden donde usted compra.",
+    "famousGlaze": "Esmalte {name} ({native}): su receta tradicional o su análisis histórico, la cocción, la fórmula Seger y las fuentes, y una versión con los materiales que se venden donde usted compra.",
     "imageAlt": "El logotipo de Glazecalc y su título, química de esmaltes gratuita para ceramistas, junto a una foto de tríos de conos tras la cocción."
   },
   "notices": {

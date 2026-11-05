@@ -119,183 +119,183 @@ Os conselhos divergem sobre o quão precisa a balança precisa ser. Derek Au ach
 
 Derek Au pesa em uma só tigela, em montinhos separados, para que um erro possa ser retirado com a colher. Se você pesar em um único balde sem zerar a balança entre as matérias-primas, o total corrente do Glazecalc diz o que a balança deve marcar depois de cada uma.
 
-## Mixing and sieving {#mixing lang=en}
+## Misturando e peneirando {#mixing}
 
-### How much water
+### Quanta água
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+As fontes divergem. Derek Au começa grosso, com 50 mL de água para cada 100 g de pó, e acrescenta mais depois. A Potterycrafts dá 65 mL por 100 g para um esmalte em pó. A UT Austin usa pesos iguais de água e de pó, e quando a Digitalfire pôs 20 kg de pó em 20 kg de água, mediu uma densidade de 1,46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+A água é rápida de acrescentar e lenta de tirar, então comece com pouca. Nossa estimativa: comece com **cerca de 70 a 80 mL por 100 g** (700 a 800 mL por quilo, ou cerca de 11 a 12 US fl oz por libra). Hidrate, misture e peneire nessa espessura, depois acrescente água aos poucos até a densidade ficar certa. 1 mL de água pesa 1 g, então você pode pesá-la. Se passar do ponto, deixe o esmalte decantar e depois retire a água limpa de cima com uma esponja ou despejando.
 
-### Tools and water
+### Ferramentas e água
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Misturador de hélice.** A Digitalfire chama um bom de “essencial”. Uma furadeira com fio e haste misturadora dá conta do serviço em um balde. A UT Austin a deixa ligada por pelo menos 4 a 5 minutos depois que o esmalte parece misturado, e mantém a pá longe do balde, de onde ela pode raspar plástico.
+- **Liquidificador.** Ele “funciona extremamente bem para lotes pequenos” (Digitalfire). Use-o só para esmalte: ele nunca deve voltar para a cozinha.
+- **Batedor de arame ou vareta.** A escolha de Zakin quando não há misturador.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+A água também varia, e a Digitalfire observa que ela muda o comportamento de um esmalte líquido. Derek Au usa água de osmose reversa porque a água da torneira dele é dura. Seja qual for a que você usar, anote.
 
-### Step by step
+### Passo a passo
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Coloque a máscara de proteção respiratória e, se as mãos forem entrar, luvas de borracha. Zakin usa máscara desde o começo da pesagem até o esmalte ficar úmido.
+2. Meça cerca de 70 a 80 mL de água por 100 g de pó e ponha no balde.
+3. Acrescente o pó pesado com delicadeza, de uma altura baixa. A UT Austin acrescenta o pó à água morna; Zakin e Au acrescentam a água ao pó. Sugerimos o pó na água, que levanta menos poeira, exceto em uma receita com muita bentonita: misture primeiro os pós secos dela.
+4. **Hidrate** o esmalte: deixe o pó de molho sem mexer. A Digitalfire espera cerca de 20 minutos. Pós com goma ou aglutinante precisam repousar de um dia para o outro.
+5. Misture até não haver bolsas secas nem grumos.
+6. Peneire duas vezes (veja abaixo).
+7. Cubra e deixe descansar de um dia para o outro, depois misture de novo e confira o fundo para ver se há uma camada dura.
+8. Meça a densidade e acrescente água aos poucos até chegar à sua meta. Para saber a densidade seca do seu próprio esmalte, pese também o esmalte líquido pronto (veja abaixo).
+9. Identifique o balde com uma etiqueta e anote o que você fez.
+10. Limpe a úmido: passe o esfregão no chão e limpe todas as superfícies, inclusive o lado de fora dos recipientes das matérias-primas.
 
-### Sieving
+### Peneirando
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+Uma **peneira** é uma tela de malha em uma moldura. Passar o esmalte por ela com um pincel desfaz os grumos que a mistura deixa e retém partículas que queimariam como pintas. Quanto maior o número de **mesh**, mais fina a tela: 80 mesh tem aberturas de cerca de 0,18 mm, e 100 mesh, de cerca de 0,15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+As fontes recomendam malhas diferentes. Zakin peneira duas vezes em 50 ou 80 mesh. Derek Au usa 120 mesh para a maioria dos esmaltes, sobretudo os com cobalto ou ferro: três passadas em 80 mesh ainda deixaram pintas de ferro em um celadon, e uma passada em 120 mesh resolveu. Ele reserva 60 a 80 mesh para esmaltes de cinzas e outros com materiais grossos. A Potterycrafts, no Reino Unido, sugere 60 a 80 mesh. Uma regra segura:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Qual peneira usar
+Label: Malha da peneira
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Esmalte                                           | Peneira                  |
+| ------------------------------------------------- | ------------------------ |
+| A maioria dos esmaltes                            | Duas passadas em 80 mesh |
+| Esmaltes com corantes como cobalto ou ferro       | 100 a 120 mesh           |
+| Esmaltes de cinzas e outros com materiais grossos | 60 a 80 mesh             |
 
-## Specific gravity {#specific-gravity lang=en}
+## Densidade {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+A **densidade**{{en: specific gravity}} (SG) diz quanto pó há no seu esmalte líquido. É o peso de um volume de esmalte dividido pelo peso do mesmo volume de água. A água é 1,00, e um esmalte com {{SG 1.45}} pesa 145 g a cada 100 mL. Misturar até uma densidade medida é como você obtém a mesma espessura, e a mesma camada, toda vez. Ela não tem unidade, então vale igual em gramas ou em onças.
 
-### Measure it by weighing 100 mL
+### Meça pesando 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Mexa o esmalte para que nada tenha decantado.
+2. Ponha na balança uma **proveta graduada** de 100 mL (um tubo de medir alto e marcado) ou uma seringa de 100 mL, e zere a balança.
+3. Encha-a de esmalte até exatamente 100 mL, lendo a marca na altura dos olhos.
+4. Pese e divida os gramas por 100: 145 g dá densidade 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+A Digitalfire também marca um copo na altura de 500 g de água, enche até a marca com esmalte e divide o peso por 500; uma medida maior e mais cheia é mais precisa. Um **densímetro**, um flutuador lido no ponto em que fica no esmalte, é rápido, mas pode errar a leitura em esmaltes grossos ou gelificados. Os densímetros do Reino Unido, como o da Potclays, leem em graus Baumé (°Bé). Pela nossa conta, densidade = 145 ÷ (145 − °Bé), então 46 °Bé dá cerca de 1,46. Os livros antigos do Reino Unido dão o **peso por pinta**, as onças em uma pinta imperial de esmalte: divida por 20, então 29 oz dão uma densidade de cerca de 1,45 (também conta nossa).
 
-### What to aim for
+### Qual meta buscar
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+As fontes divergem, sobretudo para pincel e pistola, onde a fornecedora do Reino Unido Potclays dá valores muito mais altos (os dela são “apenas para orientação”). Trate cada número como um ponto de partida. O principal conselho da Digitalfire é achar a densidade e a gelificação que funcionam para cada esmalte, depois repeti-las e anotá-las.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Metas de densidade, onde as fontes divergem
+Label: Metas de densidade
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Uso     | Digitalfire e Glazy                                                                                                                                                   | Potclays (Reino Unido)                              | Ponto de partida seguro                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------- |
+| Imersão | {{SG 1.40}} (para uma imersão de 5 segundos) a {{SG 1.50}} (para uma imersão de 1 segundo); esmaltes misturados em casa e gelificados vão melhor com {{SG 1.43–1.45}} | Transparente {{SG 1.46–1.48}}; colorido {{SG 1.61}} | {{SG 1.45}}; afine até {{SG 1.43}} e gelifique se escorrer            |
+| Pincel  | {{SG 1.25}} (transparente fino) a {{SG 1.55}} (detalhe escuro)                                                                                                        | {{SG 1.71–1.81}}                                    | Siga o produto; use goma CMC ou um meio para pincel                   |
+| Pistola | Sem valor; Hopper, escrevendo para a Ceramic Arts Network, diz muito mais ralo, com um defloculante (um aditivo que deixa o esmalte líquido mais fluido)              | {{SG 1.71}}                                         | Sem número confiável; aplique com pistola só em uma cabine de pintura |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Para conferir a olho um esmalte de imersão, a AMACO mergulha por 5 segundos e procura uma camada da espessura de uma moeda americana de dez centavos (dime). A Digitalfire queima provas mergulhadas por 5 segundos para conferir.
 
-### Water for a target SG: our estimate
+### Água para uma densidade desejada: nossa estimativa
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+A tabela abaixo é conta nossa, não de uma fonte. Ela supõe que as partículas do pó têm uma densidade de 2,6 g por cm³, o que é uma suposição, não uma medição. A argila, os materiais solúveis e a gelificação mudam um esmalte de verdade, então use-a para começar e depois meça. Como verificação, ela prevê {{SG 1.44}} para pesos iguais de pó e de água, perto do valor medido pela Digitalfire, {{SG 1.46}}. Ela também mostra que 70 a 80 mL por 100 g fazem você começar acima de {{SG 1.50}}, mais grosso do que o necessário.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Água para uma densidade desejada (nossa estimativa)
+Label: Água para uma densidade desejada
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Meta        | Por 100 g de pó |         Por quilo |            Por libra |
+| ----------- | --------------: | ----------------: | -------------------: |
+| {{SG 1.40}} | cerca de 115 mL | cerca de 1.150 mL | cerca de 18 US fl oz |
+| {{SG 1.45}} |  cerca de 98 mL |   cerca de 980 mL | cerca de 15 US fl oz |
+| {{SG 1.50}} |  cerca de 85 mL |   cerca de 850 mL | cerca de 13 US fl oz |
+| {{SG 1.60}} |  cerca de 64 mL |   cerca de 640 mL | cerca de 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Ache a densidade seca do seu próprio esmalte enquanto mistura
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+O 2,6 acima é um palpite. O valor do seu próprio esmalte, a densidade do seu pó seco, pode ser calculado a partir de três números que você pode tomar enquanto mistura. Com ele, você pode calcular, a partir da densidade, quanto pó há em qualquer balde desse esmalte mais tarde, e a água para o próximo lote. Conta nossa, não de uma fonte:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Anote o peso do pó seco no lote: o total da receita.
+2. Pese o balde vazio antes de começar, ou marque o peso dele no próprio balde.
+3. Misture, peneire e leve o esmalte à densidade como de costume. Passe tudo pela peneira e enxágue para dentro do balde, para que nenhum pó fique de fora.
+4. Pese o balde cheio e desconte o peso do balde. Esse é o peso do esmalte líquido.
+5. Meça a densidade.
 
-Then:
+Depois:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Água** = peso do esmalte líquido − peso do pó.
+- **Volume do esmalte líquido** em mL = peso do esmalte líquido em gramas ÷ densidade.
+- **Volume do pó** = volume do esmalte líquido − água (1 g de água é 1 mL).
+- **Densidade seca** = peso do pó ÷ volume do pó.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Por exemplo: 1000 g de pó dão 1980 g de esmalte líquido com {{SG 1.45}}. A água é 980 g, o esmalte líquido ocupa 1980 ÷ 1,45 = cerca de 1366 mL, o pó ocupa 1366 − 980 = 386 mL, e a densidade seca é 1000 ÷ 386 = cerca de 2,59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Pese o esmalte líquido inteiro no fim, não a água enquanto a despeja, para que a água que evapora ou respinga para fora não conte. Aqui, erros pequenos crescem: uma leitura de densidade errada em 0,01 muda o resultado em cerca de 2 a 4%, mais em um esmalte mais ralo. Use um lote de 1 kg ou mais, uma balança precisa e, para a densidade, o método do copo de 500 g descrito acima. A maioria das matérias-primas comuns fica entre cerca de 2,5 e 2,9, então um valor muito fora disso, em um esmalte sem muito silicato de zircônio ou chumbo, provavelmente indica um erro de medição. Anote o valor na receita.
 
-### Epsom salts, CMC gum and bentonite
+### Sais de Epsom, goma CMC e bentonita
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+Os **sais de Epsom** fazem um esmalte gelificar levemente quando parado e voltar a fluir quando mexido. Isso se chama **flocular** o esmalte, e um esmalte que se comporta assim é **tixotrópico**: ele se aplica de modo mais uniforme, escorre menos e decanta menos. A Digitalfire sugere começar com cerca de 2 g por galão assim que a densidade estiver certa (cerca de 0,5 g por litro, conversão nossa) e ajustar a quantidade a cada vez que você mistura, já que nenhuma receita deve fixar a dose. Sugerimos dissolvê-los antes em um pouco de água quente. Em um exemplo da Digitalfire, um esmalte com {{SG 1.45}} escorria, então a água o levou a {{SG 1.43}} e os sais de Epsom o gelificaram de volta até ficar cremoso, e ele foi aplicado de modo uniforme. Uma verificação aproximada: mexa, pare e observe. Um esmalte gelificado continua se movendo por cerca de 2 ou 3 segundos, depois para e volta um pouco.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+A **goma CMC** (carboximetilcelulose) deixa o esmalte líquido mais pegajoso e mais lento para secar, e deixa uma camada mais dura que adere à peça. Importa mais para esmaltes de pincel e esmaltes ricos em frita. O exemplo da Digitalfire mistura 3,75 g em 1000 g de esmalte líquido, e a goma tem que ser incorporada com um liquidificador. Um esmalte com CMC não vai gelificar com sais de Epsom e, como os micróbios se alimentam da goma, ele pode mudar no balde e começar a cheirar.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+A **bentonita**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os esmaltes de imersão costumam contar com 15 a 25% de argila crua para isso. Para uma receita com pouca argila, cerca de 1 a 3% de bentonita ajuda; a Digitalfire diz que um esmalte com mais de 15% de argila não deve precisar de bentonita a mais de 1% do peso do esmalte seco.
 
-## Test tiles and line blends {#testing lang=en}
+## Provas e misturas lineares {#testing}
 
-### Start small
+### Comece pequeno
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au avança em três etapas: um teste de 50 ou 100 g, um ensaio de 1 a 2 kg se der certo e depois um lote de ateliê de 5 a 10 kg. Pela nossa estimativa, um teste de 100 g com {{SG 1.45}} rende cerca de 135 mL (cerca de 4½ US fl oz) de esmalte líquido, o bastante para mergulhar algumas provas pequenas em um copo estreito.
 
-### Test on your own clay
+### Teste na sua própria argila
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Um esmalte pode ficar bem diferente em outra argila ou em outro forno: o Clay Art Center testou cada um de seus esmaltes reformulados em quatro massas{{en: clay body}}, no cone 6 e no cone{{en: cone}} 10. O guia para iniciantes sobre teste de esmaltes da Potclays sugere:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 a 10 **provas** (pequenas peças para experimentar um esmalte) da argila que você realmente vai usar, anotando se estão queimadas em biscoito{{en: bisque}} ou em ponto de osso
+- uma mudança de cada vez
+- uma imersão simples e uma dupla, para ver o esmalte fino e grosso
+- todas as provas na mesma fornada
+- uma marca em cada prova antes da queima, com um carimbo, uma incisão ou um lápis para pintura sob esmalte. As provas queimadas são parecidas, e uma marca feita antes da queima resiste ao forno, então você sempre sabe qual receita é cada prova.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Sugerimos provas que fiquem em pé, já que uma prova deitada esconde até onde o esmalte escorre, com uma faixa texturizada para mostrar como o esmalte se comporta nas bordas e um pé sem esmalte. Apoie cada uma em um pratinho ou em um pedaço de biscoito, ou em uma placa com protetor de placas, para aparar os pingos. Ponha um **cone testemunho**, um pequeno cone cerâmico que dobra quando recebeu calor suficiente, perto das provas para mostrar o que elas receberam; o [guia de queima](/guides/firing) explica os cones. Dê a cada prova um código curto e anote-o junto da receita nos seus registros. Willers, escrevendo para a Ceramic Arts Network, usa números e letras, e escreve o próprio sistema na frente do caderno.
 
-### Line blends
+### Misturas lineares
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+Uma **mistura linear** é uma fileira de testes que varia por igual de uma mistura para outra: de um esmalte para um segundo, ou de um esmalte-base para o mesmo esmalte com mais corante. Derek Au, por exemplo, varia o óxido de ferro em uma base transparente em passos de 1%. Um método volumétrico associado a Ian Currie poupa tempo, porque você mistura só as duas pontas:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Misture os dois esmaltes das pontas, A e B, em lotes do mesmo tamanho, e peneire os dois.
+2. Acrescente água ao que tem menos volume até os dois terem exatamente o mesmo volume úmido.
+3. Mexa os dois, depois retire cada mistura com uma seringa para o seu próprio copo numerado.
+4. Mexa cada copo e mergulhe uma prova.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+No nosso exemplo resolvido, A são 100 g de uma base transparente, e B é a mesma com 4 g de óxido de ferro vermelho acrescentados (um acréscimo de 4%). Cada mililitro de B tem a mesma parte de base que um mililitro de A, mais o seu ferro, então os copos vão de nenhum ferro a 4% em passos de 1%. Cada ponta dá 100 mL à mistura, que um lote de 100 g cobre pela nossa estimativa.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Uma mistura linear de ferro em cinco passos, 40 mL por copo (nosso exemplo resolvido)
+Label: Exemplo de mistura linear
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Copo | Base transparente (A) | Base com 4% de ferro (B) | Óxido de ferro, % da base |
+| ---- | --------------------: | -----------------------: | ------------------------: |
+| 1    |                 40 mL |                     0 mL |                         0 |
+| 2    |                 30 mL |                    10 mL |                         1 |
+| 3    |                 20 mL |                    20 mL |                         2 |
+| 4    |                 10 mL |                    30 mL |                         3 |
+| 5    |                  0 mL |                    40 mL |                         4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+O método pede contas cuidadosas, pontas bem misturadas e de densidade igual, e uma balança precisa. Derek Au também mistura por peso em vez de por volume. Uma **mistura triaxial** faz o mesmo com três pontas, dispostas em um triângulo.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Quando um passo parecer promissor, **Salvar como cópia** na [página de receita](/recipe) o guarda como uma receita própria e deixa a original como estava.
+
+## Mantendo registros {#records}
+
+Willers resume bem o objetivo: “informação suficiente para poder repetir, ou evitar, os resultados que você descobriu”. Anote o que você pretende testar antes de começar e os resultados quando descarregar o forno. A Potclays acrescenta a aplicação, a espessura, a massa e a queima completa, com rampas, patamares e resfriamento. Uma **rampa** é uma taxa de aquecimento ou de resfriamento, como {{60 °C; 108 °F}} por hora, e um **patamar** mantém o forno em uma só temperatura por um tempo definido. Anote os números de lote, a água que você usou e qualquer substituição: a troca de feldspato do Clay Art Center obrigou a ajustar cerca de metade dos seus esmaltes.
+
+Table: O que anotar para cada lote de esmalte (nosso modelo)
+Label: Modelo de registro
+
+| Parte     | O que anotar                                                                                                                                                                                                                                                                               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Receita   | A receita e sua versão; marcas e números de lote das matérias-primas; quaisquer substituições                                                                                                                                                                                              |
+| Mistura   | Data; tamanho do lote; água acrescentada e seu tipo (da torneira, de osmose reversa ou destilada); densidade após misturar e densidade final; o peso do esmalte líquido pronto, para a densidade seca; sais de Epsom, CMC e bentonita acrescentados; malha da peneira e número de passadas |
+| Aplicação | Massa; cone do biscoito; imersão, pincel ou derramamento; tempo de imersão ou número de camadas; espessura seca                                                                                                                                                                            |
+| Queima    | Forno e posição na placa; a curva de queima, com suas rampas, patamares e resfriamento; atmosfera (oxidação ou redução); o que o cone testemunho mostrou, não só para que o forno foi programado                                                                                           |
+| Resultado | Superfície e cor; qualquer escorrimento, gretamento{{en: crazing}} ou furinhos; fotos da frente, do verso e do lado; o código da prova                                                                                                                                                     |
+
+> [!NOTE]
+> No Glazecalc, uma [receita](/recipe) salva guarda a própria receita. Um [registro de queima](/firing) anota cada queima: o forno, a data, os horários, as temperaturas, os cones e as observações. As [anotações](/notes) guardam todo o resto, como o registro do lote acima e o que cada prova mostrou.
 
 ## Fontes {#sources}
 

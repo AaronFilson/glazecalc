@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Una parte di questa pagina non è ancora tradotta, quindi è mostrata in inglese.",
+  "index": {
+    "crumb": "Smalti famosi",
+    "title": "Smalti famosi",
+    "lead": "Smalti conosciuti in tutto il mondo, ciascuno dai suoi materiali locali tradizionali, con la formula di Seger e una versione con i materiali in vendita dove si trova.",
+    "listHeading": "Gli smalti",
+    "more": "Arriveranno altri smalti: ciascuno si aggiunge quando la ricetta e i materiali poggiano su almeno tre fonti lette."
+  },
+  "glaze": {
+    "lead": "Uno smalto famoso ({native}): la ricetta o l’analisi tradizionale, la cottura e una versione con i materiali in vendita dove si trova.",
+    "aboutHeading": "Lo smalto {name}",
+    "nativeName": "Nome originale",
+    "origin": "Dove",
+    "period": "Quando",
+    "firing": "Cottura",
+    "cone": "cono {cone}",
+    "historyOnly": "Solo storia: questo smalto era fatto con il piombo. La sua analisi è mostrata come storia, non come una ricetta da preparare. La versione qui sotto è uno smalto diverso, senza piombo.",
+    "recipeHeading": "La ricetta tradizionale",
+    "material": "Materiale",
+    "amount": "Quantità",
+    "unityHeading": "Formula di Seger",
+    "analysisHeading": "Analisi storica",
+    "oxide": "Ossido",
+    "percent": "% in peso",
+    "useHeading": "Provarlo",
+    "open": "Apri questa ricetta",
+    "openLeadFree": "Apri la versione senza piombo",
+    "leadFreeTitle": "Stile {name}, senza piombo",
+    "allLink": "Tutti gli smalti famosi",
+    "safetyHeading": "Sicurezza",
+    "safeMixing": "Miscelazione sicura e ventilazione",
+    "firingGuide": "Cuocere in un forno",
+    "makingGuide": "Come preparare uno smalto",
+    "sourcesHeading": "Fonti",
+    "link": "Apri",
+    "opened": "letto il {date}"
+  },
+  "local": {
+    "heading": "Con i materiali locali",
+    "leadFreeHeading": "Versione senza piombo",
+    "intro": "La formula di Seger della ricetta tradizionale, ottenuta con i materiali standard in vendita dove si acquista. Scegliere dove si acquista per vederla.",
+    "region": "Dove si acquistano i materiali",
+    "proposal": "I materiali propri della proposta",
+    "pick": "Scegliere…",
+    "untested": "Calcolata, non ancora provata in cottura.",
+    "testFirst": "Cuocere dei provini prima di usarla su qualsiasi pezzo, e provare la cessione di una superficie a contatto con il cibo.",
+    "untestedNote": "Calcolata, non ancora provata in cottura: cuocere dei provini prima di usarla.",
+    "close": "Si avvicina alla formula voluta.",
+    "fair": "Si avvicina abbastanza alla formula voluta.",
+    "poor": "Questi materiali non possono avvicinarsi alla formula voluta.",
+    "none": "I materiali in vendita lì non permettono di ottenerla.",
+    "choose": "Scegliere dove si acquistano i materiali per vederla ottenuta con quelli in vendita lì."
+  },
+  "atmospheres": {
+    "oxidation": "ossidazione",
+    "reduction": "riduzione",
+    "neutral": "neutra",
+    "wood": "cottura a legna",
+    "salt": "cottura a sale",
+    "soda": "cottura a soda"
+  }
+}

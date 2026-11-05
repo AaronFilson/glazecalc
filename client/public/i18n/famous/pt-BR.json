@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Parte desta página ainda não foi traduzida, por isso aparece em inglês.",
+  "index": {
+    "crumb": "Esmaltes famosos",
+    "title": "Esmaltes famosos",
+    "lead": "Esmaltes conhecidos no mundo todo, cada um feito com suas matérias-primas locais tradicionais, com a fórmula de Seger e uma versão com as matérias-primas vendidas onde você está.",
+    "listHeading": "Os esmaltes",
+    "more": "Mais esmaltes estão a caminho: cada um entra quando sua receita e suas matérias-primas se apoiam em pelo menos três fontes que foram lidas."
+  },
+  "glaze": {
+    "lead": "Um esmalte famoso ({native}): sua receita ou análise tradicional, a queima e uma versão com as matérias-primas vendidas onde você está.",
+    "aboutHeading": "Sobre o {name}",
+    "nativeName": "Nome original",
+    "origin": "Onde",
+    "period": "Quando",
+    "firing": "Queima",
+    "cone": "cone {cone}",
+    "historyOnly": "Só como história: este esmalte era feito com chumbo. Sua análise aparece como história, não como uma receita para misturar. A versão abaixo é um esmalte diferente, sem chumbo.",
+    "recipeHeading": "A receita tradicional",
+    "material": "Matéria-prima",
+    "amount": "Quantidade",
+    "unityHeading": "Fórmula de Seger",
+    "analysisHeading": "Análise histórica",
+    "oxide": "Óxido",
+    "percent": "% em peso",
+    "useHeading": "Experimente",
+    "open": "Abrir esta receita",
+    "openLeadFree": "Abrir a versão sem chumbo",
+    "leadFreeTitle": "Estilo {name}, sem chumbo",
+    "allLink": "Todos os esmaltes famosos",
+    "safetyHeading": "Segurança",
+    "safeMixing": "Mistura segura e ventilação",
+    "firingGuide": "Queima em um forno",
+    "makingGuide": "Como fazer um esmalte",
+    "sourcesHeading": "Fontes",
+    "link": "Abrir",
+    "opened": "lido em {date}"
+  },
+  "local": {
+    "heading": "Com as suas matérias-primas locais",
+    "leadFreeHeading": "Versão sem chumbo",
+    "intro": "A fórmula de Seger da receita tradicional, feita com as matérias-primas padrão vendidas onde você compra. Escolha onde você compra para ver.",
+    "region": "Onde você compra matérias-primas",
+    "proposal": "As matérias-primas da própria proposta",
+    "pick": "Escolha…",
+    "untested": "Calculado, ainda não testado em queima.",
+    "testFirst": "Queime provas antes de usá-lo em qualquer peça, e faça um ensaio de liberação de metais em uma superfície que vai tocar alimentos.",
+    "untestedNote": "Calculado, ainda não testado em queima: queime provas antes de usar.",
+    "close": "Chega perto da fórmula desejada.",
+    "fair": "Chega razoavelmente perto da fórmula desejada.",
+    "poor": "Estas matérias-primas não conseguem chegar perto da fórmula desejada.",
+    "none": "As matérias-primas vendidas lá não conseguem fazê-lo.",
+    "choose": "Escolha onde você compra matérias-primas para vê-lo feito com as que são vendidas lá."
+  },
+  "atmospheres": {
+    "oxidation": "oxidação",
+    "reduction": "redução",
+    "neutral": "neutra",
+    "wood": "queima a lenha",
+    "salt": "queima com sal",
+    "soda": "queima com soda"
+  }
+}

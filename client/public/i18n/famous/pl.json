@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Część tej strony nie została jeszcze przetłumaczona, dlatego jest wyświetlana po angielsku.",
+  "index": {
+    "crumb": "Słynne szkliwa",
+    "title": "Słynne szkliwa",
+    "lead": "Szkliwa znane na całym świecie, każde z tradycyjnych miejscowych surowców, z wzorem Segera i wersją z surowców dostępnych w miejscu zakupu.",
+    "listHeading": "Szkliwa",
+    "more": "Kolejne szkliwa są w przygotowaniu: każde zostaje dodane, gdy jego receptura i surowce opierają się na co najmniej trzech przeczytanych źródłach."
+  },
+  "glaze": {
+    "lead": "Słynne szkliwo ({native}): tradycyjna receptura lub skład chemiczny, wypał i wersja z surowców dostępnych w miejscu zakupu.",
+    "aboutHeading": "O szkliwie {name}",
+    "nativeName": "Nazwa oryginalna",
+    "origin": "Gdzie",
+    "period": "Kiedy",
+    "firing": "Wypał",
+    "cone": "stożek {cone}",
+    "historyOnly": "Tylko jako historia: to szkliwo wytwarzano z ołowiem. Jego skład chemiczny jest pokazany jako historia, a nie jako receptura do rozrobienia. Wersja poniżej to inne szkliwo, bez ołowiu.",
+    "recipeHeading": "Tradycyjna receptura",
+    "material": "Surowiec",
+    "amount": "Ilość",
+    "unityHeading": "Wzór Segera",
+    "analysisHeading": "Historyczny skład chemiczny",
+    "oxide": "Tlenek",
+    "percent": "% masowy",
+    "useHeading": "Do wypróbowania",
+    "open": "Otwórz tę recepturę",
+    "openLeadFree": "Otwórz wersję bezołowiową",
+    "leadFreeTitle": "W stylu {name}, bezołowiowe",
+    "allLink": "Wszystkie słynne szkliwa",
+    "safetyHeading": "Bezpieczeństwo",
+    "safeMixing": "Bezpieczne rozrabianie szkliw i wentylacja",
+    "firingGuide": "Wypał w prostym piecu",
+    "makingGuide": "Jak przygotować szkliwo",
+    "sourcesHeading": "Źródła",
+    "link": "Otwórz",
+    "opened": "przeczytano {date}"
+  },
+  "local": {
+    "heading": "Z miejscowych surowców",
+    "leadFreeHeading": "Wersja bezołowiowa",
+    "intro": "Wzór Segera tradycyjnej receptury, zbudowany ze standardowych surowców dostępnych w miejscu zakupu. Aby go zobaczyć, należy wybrać miejsce zakupu.",
+    "region": "Miejsce zakupu surowców",
+    "proposal": "Surowce z samej propozycji",
+    "pick": "Wybierz…",
+    "untested": "Obliczone, jeszcze niewypalone na próbę.",
+    "testFirst": "Przed użyciem na jakichkolwiek wyrobach należy wypalić płytki testowe, a powierzchnię mającą kontakt z żywnością zbadać pod kątem uwalniania metali.",
+    "untestedNote": "Obliczone, jeszcze niewypalone na próbę: przed użyciem należy wypalić płytki testowe.",
+    "close": "Jest bliskie wzoru docelowego.",
+    "fair": "Jest dość bliskie wzoru docelowego.",
+    "poor": "Z tych surowców nie da się zbliżyć do wzoru docelowego.",
+    "none": "Z surowców dostępnych w tym miejscu nie da się go wykonać.",
+    "choose": "Należy wybrać miejsce zakupu surowców, aby zobaczyć to szkliwo z surowców tam dostępnych."
+  },
+  "atmospheres": {
+    "oxidation": "atmosfera utleniająca",
+    "reduction": "redukcja",
+    "neutral": "atmosfera obojętna",
+    "wood": "wypał drewnem",
+    "salt": "wypał solny",
+    "soda": "wypał sodowy"
+  }
+}

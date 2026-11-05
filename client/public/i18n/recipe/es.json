@@ -723,7 +723,8 @@
     "keyPoint": "Punto: este esmalte.",
     "keyBright": "Línea de puntos: donde los esmaltes de Stull eran más brillantes.",
     "keyLimits": "Líneas discontinuas y sombreado: los intervalos de sílice y alúmina de {name}.",
-    "keyCrazed": "Trama: donde se cuartearon."
+    "keyCrazed": "Trama: donde se cuartearon.",
+    "note": "Una guía, no una predicción. R. T. Stull (Transactions of the American Ceramic Society, 1912) cocía a cono 11 aproximadamente, con los fundentes fijados en 0,3 de K₂O y 0,7 de CaO; otros fundentes y otras cocciones desplazan las regiones, y un esmalte que es mate solo porque está poco cocido puede caer igualmente en la región brillante. Las regiones son las que dibuja Glazy."
   },
   "slurry": {
     "heading": "Densidad y agua",
@@ -751,6 +752,17 @@
       "pint": "El peso por pinta que quiere, oz"
     },
     "drySg": "Densidad de los materiales secos",
+    "drySgEmpty": "Solo la necesitan los pesos en seco; el agua que hay que añadir, no. Escríbala si la conoce.",
+    "drySgNeeded": "Escriba la densidad de los materiales secos para ver el esmalte seco que hay en el cubo y el agua para una tanda nueva.",
+    "estimate": {
+      "mineral": "Una estimación, {sg}, a partir de lo que compone cada material: la densidad medida de su mineral. Cámbiela si conoce un valor mejor.",
+      "kind": "Una estimación, {sg}: los feldespatos y las arcillas tienen una densidad de unos 2,6. Cámbiela si conoce un valor mejor.",
+      "glass": "Una estimación, {sg}, calculada a partir de los óxidos de las fritas (son vidrio). Cámbiela si conoce un valor mejor.",
+      "mixed": "Una estimación, {sg}, a partir de cada material: la densidad medida de su mineral, unos 2,6 para los feldespatos y las arcillas, y para las fritas un cálculo a partir de sus óxidos. Cámbiela si conoce un valor mejor.",
+      "leftOut": "No se incluyen, porque no se conoce su densidad: {names}.",
+      "none": "No hay estimación para esta receta: no se conoce la densidad de {names}. Escríbala si la conoce.",
+      "was": "Se usa su cifra. La estimación era {sg}; vacíe el campo para volver a ella."
+    },
     "batch": "Esmalte seco para una tanda nueva, {unit}",
     "contents": "A densidad {sg}, el cubo contiene {glaze} de esmalte seco y {water} de agua.",
     "add": "Para llegar a densidad {target}, añada {water} de agua. Quedarán unos {volume}.",
@@ -758,6 +770,7 @@
     "already": "Ya está a densidad {target}.",
     "mix": "Mezcle {glaze} de esmalte seco con {water} de agua para obtener unos {volume} a densidad {target}.",
     "badSg": "Una densidad tiene que ser mayor que 1 (la del agua) y menor que la de los materiales secos, {dry}.",
+    "badSgWater": "Una densidad tiene que ser mayor que 1 (la del agua).",
     "badDry": "La densidad de los materiales secos tiene que ser mayor que 1.",
     "note": "El agua se mide en peso: un litro pesa un kilogramo, un galón estadounidense unos 8,3 lb. El cálculo suma los volúmenes, lo cual se acerca, pero no es exacto: añada el agua poco a poco, remueva y vuelva a medir. Dos esmaltes con la misma densidad pueden fluir de forma distinta.",
     "saveTarget": "Guardar la densidad {sg} como objetivo de esta receta",

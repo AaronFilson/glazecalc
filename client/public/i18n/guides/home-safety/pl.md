@@ -59,31 +59,31 @@ Label: Surowce rozpuszczalne
 
 Główne zagrożenie ze strony ołowiu jest inne: nie jedna łyżka, lecz małe ilości pyłu połykane przez tygodnie lub miesiące, bez żadnych sygnałów ostrzegawczych (zob. niżej: Ołów a dzieci).
 
-## Storing materials at home {#storing-materials lang=en}
+## Przechowywanie surowców w domu {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Żadna oficjalna instytucja nie ustala zasad przechowywania surowców do szkliw{{en: glaze materials}} w domu, ale strony poświęcone zdrowiu i bezpieczeństwu są zgodne: pracę należy prowadzić w osobnym miejscu, z dala od dzieci. Departament zdrowia stanu Pensylwania, pisząc o hobby, w których używa się ołowiu, zaleca: „Do swojego hobby należy używać wydzielonego miejsca pracy lub garażu i trzymać dzieci z dala od tego miejsca”.
 
-### A storage checklist
+### Lista kontrolna: przechowywanie
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+To ogólne zasady zapobiegania zatruciom zastosowane do szkliw. Nie ustala ich żadna norma ceramiczna, ale proponujemy stosować je wszystkie:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Suche surowce trzymać pod kluczem: w szafce albo w pomieszczeniu, garażu czy szopie zamykanych na klucz. Wysoka półka pomaga, ale dzieci się wspinają. Jeśli na początku da się zamknąć na klucz tylko kilka rzeczy, należy zacząć od surowców rozpuszczalnych i barwników.
+- Surowce trzymać w oryginalnych workach lub pojemnikach. Po przesypaniu surowca do innego pojemnika opisać go nazwą dokładnie w takim brzmieniu, jak na worku.
+- Nigdy nie używać pojemników po żywności lub napojach (kubków po jogurcie, słoików, butelek) na surowce do szkliw, nawet opisanych. Dziecko wie, co jest w kubku po jogurcie.
+- Narzędzia z pracowni (szufelki, łyżki, trzepaczki, sita, wagi) trzymać w pracowni. Nigdy nie używać narzędzi kuchennych do szkliwa ani narzędzi do szkliwa do żywności.
+- Mokre szkliwa trzymać w opisanych wiadrach z założonymi pokrywami.
+- Kartę charakterystyki każdego surowca trzymać razem z nim, na papierze lub w telefonie.
+- W kuchni nie trzymać niczego z pracowni: żadnych worków, wiader, narzędzi ani płytek testowych{{en: test tiles}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Więcej o kupowaniu i przechowywaniu surowców – w poradniku [Jak przygotować szkliwo](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Odpady szkliwa i woda z płukania
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Nigdy nie należy wylewać szkliwa ani wody, w której płukano narzędzia do szkliwa, do zlewu ani do ogrodu. Brytyjska organizacja Crafts Council proponuje osobne wiadro z wodą do mycia rąk, pędzli, sit i narzędzi. Należy zostawić je na noc, żeby osad opadł, zlać czystą wodę, a potem wysuszyć osad szkliwa i wyrzucić go do śmieci (trafi na składowisko), nigdy do kanalizacji.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Proponujemy przykrywać to wiadro pokrywą: osad zawiera te same metale co szkliwo, a zwierzęta piją stojącą wodę. Zasady pozbywania się odpadów różnią się w zależności od miejsca, dlatego należy sprawdzić kartę charakterystyki każdego produktu, a w razie wątpliwości zapytać w urzędzie gminy lub w lokalnym przedsiębiorstwie wodociągowym.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Niektóre pracownie wypalają wysuszony osad, zanim go wyrzucą. Wkładają go do niepotrzebnej miski, którą się poświęca: po wypale miski nie można już używać. Miskę należy napełnić tylko do jednej czwartej, bo osad pieni się i bulgocze, gdy się topi, i przykryć ją talerzem. Należy ją postawić na płycie pokrytej pobiałką albo na niepotrzebnej płytce, na wypadek gdyby osad się przelał. Wypał zamienia osad w szkło, które wiąże metale znacznie mocniej niż luźny proszek, więc na składowisku jest bezpieczniejsze. Z suchym osadem należy obchodzić się tak jak z suchym szkliwem: w półmasce filtrującej i bez wzbijania pyłu.
 
 ## Zatrzymywanie pyłu w pracowni {#keeping-dust-in-the-studio}
 

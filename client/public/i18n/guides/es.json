@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Aprenda con el curso gratuito de esmaltes de John Britt",
       "text": "Su curso gratuito en vídeo en YouTube, unidad a unidad, con nuestras guías para leer y ejercicios para probar en Glazecalc. En inglés."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Enseñar el cálculo de esmaltes",
+      "text": "6 sesiones para una clase o un grupo de estudio, de las probetas triaxiales a la fórmula Seger en los dos sentidos, con fichas de trabajo para imprimir."
     }
   },
   "more": "Más guías",
@@ -255,6 +259,8 @@
       "crazed": "cuarteado"
     },
     "keyBright": "Línea de puntos: donde los esmaltes de Stull eran más brillantes.",
-    "keyCrazed": "Trama: donde se cuartearon."
+    "keyCrazed": "Trama: donde se cuartearon.",
+    "note": "Una guía, no una predicción. R. T. Stull (Transactions of the American Ceramic Society, 1912) cocía a cono 11 aproximadamente, con los fundentes fijados en 0,3 de K₂O y 0,7 de CaO; otros fundentes y otras cocciones desplazan las regiones, y un esmalte que es mate solo porque está poco cocido puede caer igualmente en la región brillante. Las regiones son las que dibuja Glazy.",
+    "inGuide": "La sílice (SiO₂) en horizontal, de 1 a 7 aproximadamente, y la alúmina (Al₂O₃) en vertical, de 0 a 1, ambas de la fórmula Seger. Desde la izquierda se abren unas cuñas en abanico: sin fundir arriba a la izquierda, luego mate y luego semimate. La parte sin sombrear a su derecha es brillante, y la línea de puntos dentro de ella marca donde los esmaltes de Stull eran más brillantes. Poco cocido está abajo a la derecha, con poca alúmina y mucha sílice. La trama, en la parte baja del gráfico y en su lado izquierdo, marca donde se cuartearon sus pruebas."
   }
 }

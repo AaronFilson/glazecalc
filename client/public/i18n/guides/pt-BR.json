@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Aprenda com o curso gratuito de esmaltes de John Britt",
       "text": "O curso gratuito em vídeo dele no YouTube, unidade por unidade, com nossos guias para ler e exercícios para fazer no Glazecalc. Em inglês."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Ensinar o cálculo de esmaltes",
+      "text": "6 aulas para uma turma ou um grupo de estudo, das provas triaxiais à fórmula de Seger feita nos dois sentidos, com fichas para imprimir."
     }
   },
   "more": "Mais guias",
@@ -255,6 +259,8 @@
       "crazed": "gretado"
     },
     "keyBright": "Linha pontilhada: onde os esmaltes de Stull ficaram mais brilhantes.",
-    "keyCrazed": "Hachura: onde eles gretaram."
+    "keyCrazed": "Hachura: onde eles gretaram.",
+    "note": "Uma orientação, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) queimou a cerca do cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e outras queimas deslocam as regiões, e um esmalte que é fosco só porque foi subqueimado ainda pode cair na região brilhante. As regiões são as que o Glazy desenha.",
+    "inGuide": "A sílica (SiO₂) na horizontal, de cerca de 1 a 7, e a alumina (Al₂O₃) na vertical, de 0 a 1, ambas da fórmula de Seger. Cunhas se abrem em leque a partir da esquerda: não fundido no alto à esquerda, depois fosco, depois semifosco. A parte sem sombreado à direita delas é brilhante, e a linha pontilhada nela é onde os esmaltes de Stull ficaram mais brilhantes. Subqueimado fica embaixo à direita, com pouca alumina e muita sílica. A hachura, na parte baixa do gráfico e no seu lado esquerdo, é onde os testes dele gretaram."
   }
 }

@@ -2,36 +2,130 @@
   "slug": "iznik",
   "published": true,
   "history": true,
-  "names": { "en": "İznik", "tr": "İznik" },
-  "native": { "name": "İznik çinisi", "lang": "tr" },
-  "origin": { "en": "İznik (Nicaea), Bursa Province, Türkiye" },
-  "period": { "en": "Ottoman, about 1480–1600" },
+  "names": {
+    "en": "İznik",
+    "tr": "İznik"
+  },
+  "native": {
+    "name": "İznik çinisi",
+    "lang": "tr"
+  },
+  "origin": {
+    "en": "İznik (Nicaea), Bursa Province, Türkiye",
+    "de": "İznik (Nikaia), Provinz Bursa, Türkei",
+    "fr": "İznik (Nicée), province de Bursa, Turquie",
+    "es": "İznik (Nicea), provincia de Bursa, Turquía",
+    "es-419": "İznik (Nicea), provincia de Bursa, Turquía",
+    "it": "İznik (Nicea), provincia di Bursa, Turchia",
+    "pt-PT": "İznik (Niceia), província de Bursa, Turquia",
+    "pt-BR": "İznik (Niceia), província de Bursa, Turquia",
+    "nl": "İznik (Nicaea), provincie Bursa, Turkije",
+    "pl": "İznik (Nicea), prowincja Bursa, Turcja",
+    "ro": "İznik (Niceea), provincia Bursa, Turcia"
+  },
+  "period": {
+    "en": "Ottoman, about 1480–1600",
+    "de": "Osmanisch, etwa 1480–1600",
+    "fr": "Ottomane, vers 1480–1600",
+    "es": "Otomano, hacia 1480–1600",
+    "es-419": "Otomano, alrededor de 1480–1600",
+    "it": "Età ottomana, circa 1480–1600",
+    "pt-PT": "Otomano, cerca de 1480–1600",
+    "pt-BR": "Otomano, cerca de 1480–1600",
+    "nl": "Ottomaans, ongeveer 1480–1600",
+    "pl": "Okres osmański, około 1480–1600",
+    "ro": "Perioada otomană, aproximativ 1480–1600"
+  },
   "summary": {
-    "en": "The clear, brilliant glaze of Ottoman İznik ware, laid over a white quartz-frit body and slip painted in cobalt blue, turquoise, green and a raised bole red. Analyses of sherds agree that it was a lead-alkali glaze, rich in silica and soda, with a quarter to a half of its weight lead oxide and some tin oxide. It is shown here as history: its analysis, not a recipe to mix."
+    "en": "The clear, brilliant glaze of Ottoman İznik ware, laid over a white quartz-frit body and slip painted in cobalt blue, turquoise, green and a raised bole red. Analyses of sherds agree that it was a lead-alkali glaze, rich in silica and soda, with a quarter to a half of its weight lead oxide and some tin oxide. It is shown here as history: its analysis, not a recipe to mix.",
+    "de": "Die klare, leuchtende Glasur der osmanischen İznik-Ware, aufgetragen über einem weißen Quarzfrittescherben und einer Bemalung auf Engobe in Kobaltblau, Türkis, Grün und einem erhabenen Bolusrot. Analysen von Scherben stimmen darin überein, dass sie eine Blei-Alkali-Glasur war, reich an Kieselsäure und Natrium, mit einem Viertel bis zur Hälfte ihres Gewichts an Bleioxid und etwas Zinnoxid. Sie wird hier als Geschichte gezeigt: ihre Analyse, kein Rezept zum Anmischen.",
+    "fr": "L’émail transparent et brillant des céramiques ottomanes d’İznik, posé sur une pâte blanche de quartz et de fritte et sur un engobe, peint en bleu de cobalt, turquoise, vert et en un rouge de bol en relief. Les analyses de tessons concordent : c’était un émail plombo-alcalin, riche en silice et en soude, dont le quart à la moitié du poids était de l’oxyde de plomb, avec un peu d’oxyde d’étain. Il est montré ici comme histoire : son analyse, pas une recette à préparer.",
+    "es": "El esmalte transparente y brillante de la cerámica otomana de İznik, aplicado sobre una pasta blanca de frita de cuarzo y un engobe pintado en azul cobalto, turquesa, verde y un rojo de bol en relieve. Los análisis de fragmentos coinciden en que era un esmalte de plomo y álcalis, rico en sílice y sodio, con entre una cuarta parte y la mitad de su peso de óxido de plomo y algo de óxido de estaño. Aquí se muestra como historia: su análisis, no una receta para preparar.",
+    "es-419": "El esmalte transparente y brillante de la cerámica otomana de İznik, aplicado sobre una pasta blanca de frita de cuarzo y un engobe pintado en azul cobalto, turquesa, verde y un rojo de bol en relieve. Los análisis de fragmentos coinciden en que era un esmalte de plomo y álcalis, rico en sílice y en soda, con entre un cuarto y la mitad de su peso de óxido de plomo y algo de óxido de estaño. Aquí se muestra como historia: su análisis, no una receta para mezclar.",
+    "it": "Lo smalto trasparente e brillante della ceramica ottomana di İznik, steso su un impasto bianco di quarzo e fritta e su un ingobbio dipinto in blu cobalto, turchese, verde e un rosso bolo in rilievo. Le analisi dei cocci concordano che era uno smalto piombico-alcalino, ricco di silice e sodio, con da un quarto a metà del suo peso di ossido di piombo e un po’ di ossido di stagno. È mostrato qui come storia: la sua analisi, non una ricetta da preparare.",
+    "pt-PT": "O vidrado transparente e brilhante da cerâmica otomana de İznik, aplicado sobre uma pasta branca de frita e quartzo e sobre barbotina pintada a azul-cobalto, turquesa, verde e um vermelho de bolo em relevo. As análises de cacos concordam que era um vidrado alcalino de chumbo, rico em sílica e sódio, com um quarto a metade do seu peso em óxido de chumbo e algum óxido de estanho. É mostrado aqui como história: a sua análise, não uma receita para preparar.",
+    "pt-BR": "O esmalte transparente e brilhante da cerâmica otomana de İznik, aplicado sobre uma massa branca de quartzo e frita e um engobe, pintado em azul de cobalto, turquesa, verde e um vermelho de bolo em relevo. As análises de cacos concordam que era um esmalte alcalino de chumbo, rico em sílica e sódio, com um quarto a metade do seu peso em óxido de chumbo e um pouco de óxido de estanho. Aparece aqui como história: sua análise, não uma receita para misturar.",
+    "nl": "Het heldere, stralende glazuur van Ottomaans İznik-aardewerk, aangebracht over een witte scherf van kwarts en fritte en over slib dat beschilderd is in kobaltblauw, turkoois, groen en een opliggend bolusrood. Analyses van scherven zijn het erover eens dat het een lood-alkaliglazuur was, rijk aan siliciumoxide en natrium, met een kwart tot de helft van zijn gewicht aan loodoxide en wat tinoxide. Het wordt hier als geschiedenis getoond: de analyse, geen recept om te mengen.",
+    "pl": "Przezroczyste, lśniące szkliwo osmańskiej ceramiki z İzniku, nakładane na białą masę kwarcowo-frytową i angobę, malowane błękitem kobaltowym, turkusem, zielenią i wypukłą czerwienią bolusową. Analizy skorup są zgodne, że było to szkliwo ołowiowo-alkaliczne, bogate w krzemionkę i sód, w którym tlenek ołowiu stanowił od ćwierci do połowy masy, z pewną ilością tlenku cyny. Jest pokazane jako historia: jego skład chemiczny, a nie receptura do rozrobienia.",
+    "ro": "Glazura transparentă și strălucitoare a ceramicii otomane de İznik, aplicată peste o pastă albă de cuarț și frită și peste angobă pictată cu albastru de cobalt, turcoaz, verde și un roșu de bol în relief. Analizele cioburilor arată toate că era o glazură alcalină cu plumb, bogată în silice și sodiu, cu un sfert până la jumătate din masă oxid de plumb și ceva oxid de staniu. Este prezentată aici ca istorie: analiza ei, nu o rețetă de preparat."
   },
   "safety": {
-    "en": "The historic glaze holds 25–50% lead oxide. Glazecalc shows its analysis as history only and offers no lead material or recipe for it. Lead glazes can leach lead into food and drink, and raw lead compounds are poisonous to handle, breathe or fire."
+    "en": "The historic glaze holds 25–50% lead oxide. Glazecalc shows its analysis as history only and offers no lead material or recipe for it. Lead glazes can leach lead into food and drink, and raw lead compounds are poisonous to handle, breathe or fire.",
+    "de": "Die historische Glasur enthält 25–50 % Bleioxid. Glazecalc zeigt ihre Analyse nur als Geschichte und bietet dafür keinen Bleirohstoff und kein Rezept an. Bleiglasuren können Blei an Speisen und Getränke abgeben, und ungefrittete Bleiverbindungen sind giftig, wenn man mit ihnen umgeht, sie einatmet oder brennt.",
+    "fr": "L’émail historique contient 25–50 % d’oxyde de plomb. Glazecalc montre son analyse pour l’histoire seulement et ne propose pour lui aucune matière au plomb ni aucune recette. Les émaux au plomb peuvent relarguer du plomb dans les aliments et les boissons, et les composés de plomb crus sont toxiques à manipuler, à respirer ou à cuire.",
+    "es": "El esmalte histórico contiene un 25–50 % de óxido de plomo. Glazecalc muestra su análisis solo como historia y no ofrece ningún material ni receta con plomo para hacerlo. Los esmaltes de plomo pueden ceder plomo a la comida y la bebida, y los compuestos de plomo sin fritar son venenosos al manipularlos, respirarlos o cocerlos.",
+    "es-419": "El esmalte histórico contiene 25–50 % de óxido de plomo. Glazecalc muestra su análisis solo como historia y no ofrece ningún material ni receta de plomo para él. Los esmaltes de plomo pueden liberar plomo en la comida y la bebida, y los compuestos de plomo crudos son tóxicos al manipularlos, respirarlos o cocerlos.",
+    "it": "Lo smalto storico contiene il 25–50% di ossido di piombo. Glazecalc mostra la sua analisi solo come storia e non offre alcun materiale al piombo né alcuna ricetta per esso. Gli smalti al piombo possono cedere piombo a cibi e bevande, e i composti di piombo non frittati sono velenosi da maneggiare, respirare o cuocere.",
+    "pt-PT": "O vidrado histórico contém 25–50% de óxido de chumbo. O Glazecalc mostra a sua análise apenas como história e não oferece nenhuma matéria-prima de chumbo nem receita para ele. Os vidrados de chumbo podem libertar chumbo para a comida e a bebida, e os compostos de chumbo não fritados são venenosos ao manusear, ao respirar ou ao cozer.",
+    "pt-BR": "O esmalte histórico contém 25–50% de óxido de chumbo. O Glazecalc mostra sua análise só como história e não oferece nenhuma matéria-prima de chumbo nem receita para ele. Esmaltes com chumbo podem liberar chumbo na comida e na bebida, e os compostos de chumbo crus são venenosos ao manusear, respirar ou queimar.",
+    "nl": "Het historische glazuur bevat 25–50% loodoxide. Glazecalc toont de analyse alleen als geschiedenis en biedt er geen loodgrondstof of recept voor aan. Loodglazuren kunnen lood afgeven aan eten en drinken, en ongefritte loodverbindingen zijn giftig om aan te raken, in te ademen of te stoken.",
+    "pl": "Historyczne szkliwo zawiera 25–50 % tlenku ołowiu. Glazecalc pokazuje jego skład chemiczny wyłącznie jako historię i nie oferuje do niego żadnego surowca ołowiowego ani receptury. Szkliwa ołowiowe mogą uwalniać ołów do żywności i napojów, a surowe związki ołowiu są trujące przy dotykaniu, wdychaniu i wypalaniu.",
+    "ro": "Glazura istorică conține 25–50 % oxid de plumb. Glazecalc arată analiza ei doar ca istorie și nu oferă nicio materie primă cu plumb sau rețetă pentru ea. Glazurile cu plumb pot ceda plumb în alimente și băuturi, iar compușii de plumb nefritați sunt otrăvitori când sunt manipulați, inspirați sau arși."
   },
   "firing": {
     "celsius": [950, 1050],
     "atmosphere": "oxidation",
-    "note": { "en": "Whitebodied wares were fired at about 950–1050 °C; the glaze matured below about 1000 °C." },
+    "note": {
+      "en": "Whitebodied wares were fired at about 950–1050 °C; the glaze matured below about 1000 °C.",
+      "de": "Ware mit weißem Scherben wurde bei etwa 950–1050 °C gebrannt; die Glasur schmolz unter etwa 1000 °C aus.",
+      "fr": "Les pièces à pâte blanche étaient cuites vers 950–1050 °C ; l’émail arrivait à maturité en dessous d’environ 1000 °C.",
+      "es": "Las piezas de pasta blanca se cocían a unos 950–1050 °C; el esmalte maduraba por debajo de unos 1000 °C.",
+      "es-419": "Las piezas de pasta blanca se cocían a unos 950–1050 °C; el esmalte maduraba por debajo de unos 1000 °C.",
+      "it": "I pezzi a impasto bianco erano cotti a circa 950–1050 °C; lo smalto maturava sotto circa 1000 °C.",
+      "pt-PT": "As peças de pasta branca eram cozidas a cerca de 950–1050 °C; o vidrado atingia a maturação abaixo de cerca de 1000 °C.",
+      "pt-BR": "As peças de massa branca eram queimadas a cerca de 950–1050 °C; o esmalte amadurecia abaixo de cerca de 1000 °C.",
+      "nl": "Werk met een witte scherf werd gestookt op ongeveer 950–1050 °C; het glazuur smolt uit onder ongeveer 1000 °C.",
+      "pl": "Wyroby z białym czerepem wypalano w około 950–1050 °C; szkliwo dojrzewało poniżej około 1000 °C.",
+      "ro": "Piesele cu pastă albă erau arse la aproximativ 950–1050 °C; glazura ajungea la maturare sub aproximativ 1000 °C."
+    },
     "sources": ["I3", "I2"]
   },
   "analysis": {
-    "oxides": { "SiO2": 46, "Na2O": 11, "K2O": 1, "CaO": 1, "PbO": 27.5, "SnO2": 5.5 },
+    "oxides": {
+      "SiO2": 46,
+      "Na2O": 11,
+      "K2O": 1,
+      "CaO": 1,
+      "PbO": 27.5,
+      "SnO2": 5.5
+    },
     "note": {
-      "en": "Weight percent, the middle of the ranges Colomban and colleagues give (SiO2 45–47, Na2O 8–14, K2O and CaO about 1, PbO 25–30, SnO2 4–7). Okyar found 30–40% lead oxide and 2–12% tin oxide, mostly dissolved, and one group of about 50% lead oxide with no tin."
+      "en": "Weight percent, the middle of the ranges Colomban and colleagues give (SiO2 45–47, Na2O 8–14, K2O and CaO about 1, PbO 25–30, SnO2 4–7). Okyar found 30–40% lead oxide and 2–12% tin oxide, mostly dissolved, and one group of about 50% lead oxide with no tin.",
+      "de": "Gewichtsprozent, die Mitte der Bereiche, die Colomban und Kollegen angeben (SiO2 45–47, Na2O 8–14, K2O und CaO etwa 1, PbO 25–30, SnO2 4–7). Okyar fand 30–40 % Bleioxid und 2–12 % Zinnoxid, größtenteils gelöst, und eine Gruppe mit etwa 50 % Bleioxid ohne Zinn.",
+      "fr": "Pourcentages en poids, le milieu des fourchettes que donnent Colomban et ses collègues (SiO2 45–47, Na2O 8–14, K2O et CaO environ 1, PbO 25–30, SnO2 4–7). Okyar a trouvé 30–40 % d’oxyde de plomb et 2–12 % d’oxyde d’étain, surtout dissous, et un groupe à environ 50 % d’oxyde de plomb, sans étain.",
+      "es": "Porcentaje en peso, el centro de los intervalos que dan Colomban y sus colegas (SiO2 45–47, Na2O 8–14, K2O y CaO alrededor de 1, PbO 25–30, SnO2 4–7). Okyar encontró un 30–40 % de óxido de plomo y un 2–12 % de óxido de estaño, en su mayor parte disuelto, y un grupo con alrededor de un 50 % de óxido de plomo y sin estaño.",
+      "es-419": "Porcentaje en peso, el punto medio de los intervalos que dan Colomban y sus colegas (SiO2 45–47, Na2O 8–14, K2O y CaO alrededor de 1, PbO 25–30, SnO2 4–7). Okyar encontró 30–40 % de óxido de plomo y 2–12 % de óxido de estaño, casi todo disuelto, y un grupo con alrededor de 50 % de óxido de plomo y sin estaño.",
+      "it": "Percentuale in peso, il centro degli intervalli indicati da Colomban e colleghi (SiO2 45–47, Na2O 8–14, K2O e CaO circa 1, PbO 25–30, SnO2 4–7). Okyar ha trovato il 30–40% di ossido di piombo e il 2–12% di ossido di stagno, per lo più disciolto, e un gruppo con circa il 50% di ossido di piombo e niente stagno.",
+      "pt-PT": "Percentagem em peso, o meio das gamas que Colomban e colegas indicam (SiO2 45–47, Na2O 8–14, K2O e CaO cerca de 1, PbO 25–30, SnO2 4–7). Okyar encontrou 30–40% de óxido de chumbo e 2–12% de óxido de estanho, sobretudo dissolvido, e um grupo com cerca de 50% de óxido de chumbo e sem estanho.",
+      "pt-BR": "Porcentagem em peso, o meio das faixas que Colomban e colegas dão (SiO2 45–47, Na2O 8–14, K2O e CaO cerca de 1, PbO 25–30, SnO2 4–7). Okyar encontrou 30–40% de óxido de chumbo e 2–12% de óxido de estanho, a maior parte dissolvida, e um grupo com cerca de 50% de óxido de chumbo e sem estanho.",
+      "nl": "Gewichtsprocent, het midden van de bereiken die Colomban en collega’s geven (SiO2 45–47, Na2O 8–14, K2O en CaO ongeveer 1, PbO 25–30, SnO2 4–7). Okyar vond 30–40% loodoxide en 2–12% tinoxide, grotendeels opgelost, en één groep met ongeveer 50% loodoxide zonder tin.",
+      "pl": "Procent masowy, środek zakresów podanych przez Colombana i współpracowników (SiO2 45–47, Na2O 8–14, K2O i CaO około 1, PbO 25–30, SnO2 4–7). Okyar stwierdził 30–40 % tlenku ołowiu i 2–12 % tlenku cyny, w większości rozpuszczonego, oraz jedną grupę z około 50 % tlenku ołowiu i bez cyny.",
+      "ro": "Procente de masă, mijlocul intervalelor date de Colomban și colegii săi (SiO2 45–47, Na2O 8–14, K2O și CaO aproximativ 1, PbO 25–30, SnO2 4–7). Okyar a găsit 30–40 % oxid de plumb și 2–12 % oxid de staniu, în mare parte dizolvat, și un grup cu aproximativ 50 % oxid de plumb, fără staniu."
     },
     "sources": ["I1", "I2", "I3"]
   },
   "leadFree": {
     "tested": false,
     "note": {
-      "en": "A different, lead-free glaze in the İznik style: the analysis above with its lead's share of the fluxes handed to soda, lime and boron, for cone 04–02 (about 1060–1120 °C) in oxidation, over a white body or a quartz-rich slip, with 6% tin oxide. It is a calculation, not a copy of the old glaze, and the bole red cannot be matched."
+      "en": "A different, lead-free glaze in the İznik style: the analysis above with its lead's share of the fluxes handed to soda, lime and boron, for cone 04–02 (about 1060–1120 °C) in oxidation, over a white body or a quartz-rich slip, with 6% tin oxide. It is a calculation, not a copy of the old glaze, and the bole red cannot be matched.",
+      "de": "Eine andere, bleifreie Glasur im Stil von İznik: die Analyse oben, deren Bleianteil an den Flussmitteln an Natrium, Kalk und Bor übergeben wird, für Kegel 04–02 (etwa 1060–1120 °C) in Oxidation, über einer weißen Masse oder einer quarzreichen Engobe, mit 6 % Zinnoxid. Sie ist eine Berechnung, keine Kopie der alten Glasur, und das Bolusrot lässt sich nicht nachbilden.",
+      "fr": "Un autre émail, sans plomb, dans le style d’İznik : l’analyse ci-dessus, la part des fondants qui revenait au plomb étant confiée à la soude, à la chaux et au bore, pour les cônes 04–02 (environ 1060–1120 °C) en oxydation, sur une pâte blanche ou un engobe riche en quartz, avec 6 % d’oxyde d’étain. C’est un calcul, pas une copie de l’émail ancien, et le rouge de bol ne peut pas être reproduit.",
+      "es": "Un esmalte distinto, sin plomo, al estilo de İznik: el análisis de arriba, con la parte de los fundentes que correspondía al plomo pasada al sodio, la cal y el boro, para cono 04–02 (unos 1060–1120 °C) en oxidación, sobre una pasta blanca o un engobe rico en cuarzo, con un 6 % de óxido de estaño. Es un cálculo, no una copia del esmalte antiguo, y el rojo de bol no se puede reproducir.",
+      "es-419": "Un esmalte distinto, sin plomo, al estilo de İznik: el análisis de arriba con la parte de los fundentes que tenía el plomo pasada a la soda, la cal y el boro, para cono 04–02 (unos 1060–1120 °C) en oxidación, sobre una pasta blanca o un engobe rico en cuarzo, con 6 % de óxido de estaño. Es un cálculo, no una copia del esmalte antiguo, y el rojo de bol no se puede igualar.",
+      "it": "Uno smalto diverso, senza piombo, nello stile di İznik: l’analisi qui sopra con la quota dei fondenti del piombo passata a sodio, calcio e boro, per cono 04–02 (circa 1060–1120 °C) in ossidazione, su un impasto bianco o un ingobbio ricco di quarzo, con il 6% di ossido di stagno. È un calcolo, non una copia dello smalto antico, e il rosso bolo non si può riprodurre.",
+      "pt-PT": "Um vidrado diferente, sem chumbo, ao estilo de İznik: a análise acima, com a parte dos fundentes que cabia ao chumbo passada para o sódio, o cálcio e o boro, para os cones 04–02 (cerca de 1060–1120 °C) em oxidação, sobre uma pasta branca ou uma barbotina rica em quartzo, com 6% de óxido de estanho. É um cálculo, não uma cópia do vidrado antigo, e o vermelho de bolo não pode ser igualado.",
+      "pt-BR": "Um esmalte diferente, sem chumbo, no estilo de İznik: a análise acima, com a parte do chumbo nos fundentes passada para o sódio, o cálcio e o boro, para cone 04–02 (cerca de 1060–1120 °C) em oxidação, sobre uma massa branca ou um engobe rico em quartzo, com 6% de óxido de estanho. É um cálculo, não uma cópia do esmalte antigo, e o vermelho de bolo não pode ser reproduzido.",
+      "nl": "Een ander, loodvrij glazuur in de stijl van İznik: de analyse hierboven, waarbij het aandeel van het lood in de smeltmiddelen is overgedragen aan natrium, kalk en boor, voor kegel 04–02 (ongeveer 1060–1120 °C) bij oxiderend stoken, over een witte scherf of een kwartsrijk slib, met 6% tinoxide. Het is een berekening, geen kopie van het oude glazuur, en het bolusrood is niet na te maken.",
+      "pl": "Inne, bezołowiowe szkliwo w stylu İzniku: powyższy skład chemiczny, w którym udział ołowiu wśród topników przejęły sód, wapń i bor, na stożek 04–02 (około 1060–1120 °C) w atmosferze utleniającej, na białą masę lub bogatą w kwarc angobę, z 6 % tlenku cyny. To obliczenie, a nie kopia dawnego szkliwa, a czerwieni bolusowej nie da się odtworzyć.",
+      "ro": "O altă glazură, fără plumb, în stilul İznik: analiza de mai sus, cu partea plumbului din fondanți dată sodiului, calciului și borului, pentru conul 04–02 (aproximativ 1060–1120 °C) în ardere oxidantă, peste o pastă albă sau o angobă bogată în cuarț, cu 6 % oxid de staniu. Este un calcul, nu o copie a glazurii vechi, iar roșul de bol nu poate fi reprodus."
     },
     "celsius": 1090,
-    "additives": [{ "material": "Tin oxide", "amount": 6 }],
+    "additives": [
+      {
+        "material": "Tin oxide",
+        "amount": 6
+      }
+    ],
     "prefer": ["Ferro Frit 3110", "Ferro Frit 3124", "Silica", "EPK Kaolin"]
   },
   "sources": [

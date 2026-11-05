@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Parte de esta página aún no está traducida, así que se muestra en inglés.",
+  "index": {
+    "crumb": "Esmaltes famosos",
+    "title": "Esmaltes famosos",
+    "lead": "Esmaltes conocidos en todo el mundo, cada uno con sus materiales locales tradicionales, su fórmula Seger y una versión con los materiales que se venden donde usted compra.",
+    "listHeading": "Los esmaltes",
+    "more": "Llegarán más esmaltes: cada uno se añade cuando su receta y sus materiales se apoyan en al menos tres fuentes que se han leído."
+  },
+  "glaze": {
+    "lead": "Un esmalte famoso ({native}): su receta o su análisis tradicional, su cocción y una versión con los materiales que se venden donde usted compra.",
+    "aboutHeading": "Sobre {name}",
+    "nativeName": "Nombre original",
+    "origin": "Dónde",
+    "period": "Cuándo",
+    "firing": "Cocción",
+    "cone": "cono {cone}",
+    "historyOnly": "Solo como historia: este esmalte se hacía con plomo. Su análisis se muestra como historia, no como una receta para preparar. La versión de abajo es un esmalte distinto, sin plomo.",
+    "recipeHeading": "La receta tradicional",
+    "material": "Material",
+    "amount": "Cantidad",
+    "unityHeading": "Fórmula Seger",
+    "analysisHeading": "Análisis histórico",
+    "oxide": "Óxido",
+    "percent": "% en peso",
+    "useHeading": "Pruébelo",
+    "open": "Abrir esta receta",
+    "openLeadFree": "Abrir la versión sin plomo",
+    "leadFreeTitle": "Estilo {name}, sin plomo",
+    "allLink": "Todos los esmaltes famosos",
+    "safetyHeading": "Seguridad",
+    "safeMixing": "Preparación segura y ventilación",
+    "firingGuide": "La cocción en un horno sencillo",
+    "makingGuide": "Cómo preparar un esmalte",
+    "sourcesHeading": "Fuentes",
+    "link": "Abrir",
+    "opened": "leído el {date}"
+  },
+  "local": {
+    "heading": "Con sus materiales locales",
+    "leadFreeHeading": "Versión sin plomo",
+    "intro": "La fórmula Seger de la receta tradicional, hecha con los materiales estándar que se venden donde usted compra. Elija dónde compra para verla.",
+    "region": "Dónde compra los materiales",
+    "proposal": "Los materiales propios de la propuesta",
+    "pick": "Elija…",
+    "untested": "Calculado, aún sin cocer en pruebas.",
+    "testFirst": "Cueza probetas antes de usarlo en cualquier pieza, y haga un ensayo de cesión de las superficies para alimentos.",
+    "untestedNote": "Calculado, aún sin cocer en pruebas: cueza probetas antes de usarlo.",
+    "close": "Se acerca a la fórmula objetivo.",
+    "fair": "Se acerca bastante a la fórmula objetivo.",
+    "poor": "Estos materiales no pueden acercarse a la fórmula objetivo.",
+    "none": "Los materiales que se venden allí no permiten hacerlo.",
+    "choose": "Elija dónde compra los materiales para verlo hecho con los que se venden allí."
+  },
+  "atmospheres": {
+    "oxidation": "oxidación",
+    "reduction": "reducción",
+    "neutral": "neutra",
+    "wood": "cocción con leña",
+    "salt": "cocción con sal",
+    "soda": "cocción con sosa"
+  }
+}

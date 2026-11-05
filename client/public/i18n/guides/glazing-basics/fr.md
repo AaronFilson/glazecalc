@@ -3,530 +3,530 @@ title: Les principes de base de l’émaillage
 lead: De quoi est fait un émail, comment le four le transforme en verre, et l’explication de chaque mot que vous rencontrerez sur une recette, un sac ou un tableau des cônes.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Ce qu’est un émail {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+Un **émail**{{en: glaze}} est une fine couche de verre fondue sur une pièce. Glazy, la base de données ouverte de recettes d’émaux, le décrit comme « une formule de verre réglée pour fondre et se lier à la terre à certaines températures ». Il est posé sous forme d’une couche de poudre et fond dans le four en un revêtement vitreux qui ferme la terre : la pièce risque donc moins de fuir, de se tacher ou de s’user. Au sommet de la cuisson, l’émail en fusion réagit aussi avec la terre, et forme souvent entre eux une couche qui accroche l’émail. Sur la faïence, cuite moins chaud, cette couche est mince et l’émail reste surtout en surface. Sur le grès et la porcelaine, cuits plus chaud, la couche est plus épaisse et l’émail tient plus fermement à la terre. L’émail reste pourtant du verre : il ne devient pas une partie de la terre.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Une recette donne des matières premières, comme le feldspath, le carbonate de calcium et le kaolin. Dans le four, une partie de chacune s’en va sous forme de gaz (eau ou dioxyde de carbone) et le reste devient des **oxydes** : des composés d’un élément et d’oxygène, comme la silice (SiO₂) ou l’oxyde de calcium (CaO). Le verre cuit est fait d’oxydes : c’est pourquoi les céramistes décrivent un émail par eux. Chaque oxyde remplit l’un de trois rôles.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- La **silice**{{en: silica}} (SiO₂) est le **vitrifiant**{{en: glass former}} : elle construit le verre. La silice pure fond au-dessus de {{3100 °F; 1700 °C}}, bien plus chaud qu’un four de céramiste, et un émail riche en silice est en général plus résistant.
+- Les **fondants**{{en: fluxes}} abaissent le point de fusion jusqu’à une température que le four peut atteindre. Les **alcalins**, notés **R₂O**, sont les oxydes de sodium, de potassium et de lithium (Na₂O, K₂O, Li₂O) ; ils agissent du cône 06 jusqu’à la moyenne et la haute température. Les **alcalino-terreux**, notés **RO**, sont les oxydes de calcium, de magnésium, de baryum et de strontium (CaO, MgO, BaO, SrO), auxquels on joint l’oxyde de zinc (ZnO) ; ils agissent le mieux du cône 5 au cône 10. Le R désigne n’importe quel métal de la famille.
+- L’**alumine** (Al₂O₃) est le **stabilisant**{{en: stabilizer}}. Elle rend l’émail en fusion plus visqueux, pour qu’il tienne sur les parois verticales, et apporte dureté et résistance. La mise en garde de Glazy : avec trop peu d’alumine, « votre émail peut couler ; trop d’alumine peut rendre l’émail en fusion assez visqueux pour qu’il devienne mat ». L’alumine vient surtout de l’argile et du feldspath.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+Le **bore** (B₂O₃) brouille la frontière. Les chimistes le classent parmi les vitrifiants, mais aux températures de l’atelier il agit comme un fondant, et les céramistes le traitent comme tel. C’est un fondant principal en basse et en moyenne température : plus la cuisson est froide, plus un émail a besoin de bore. Au cône 10, il n’est en général pas nécessaire. (Les cônes, la façon dont les céramistes désignent une cuisson, sont expliqués plus bas.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Une façon de le retenir : la silice est le verre, les fondants le font fondre à une température que votre four peut atteindre, et l’alumine l’épaissit pour qu’il reste là où vous l’avez posé.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## La terre, les revêtements et les deux cuissons {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Les terres
 
-## From recipe to unity formula {#unity-formula lang=en}
+La **terre**{{en: clay body}} est l’argile dont une pièce est faite. Il en existe trois grandes sortes.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- La **faïence**{{en: earthenware}} : une terre basse température, vers les cônes 06–02, poreuse aux cônes bas et plus dense quand elle est cuite plus chaud. Souvent rouge ou chamois, elle a besoin d’un émail pour retenir l’eau.
+- Le **grès**{{en: stoneware}} : une terre moyenne ou haute température, vers les cônes 5–10, qui devient vitrifiée ou presque.
+- La **porcelaine** : une pâte blanche riche en kaolin, souvent translucide. La plupart des porcelaines sont haute température, mais il existe aussi des porcelaines pour le cône 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Vitrifié** signifie vitreux et non poreux ; la **vitrification** est le passage d’une terre à cet état pendant la cuisson. Les céramistes britanniques tracent souvent la limite par la température : le grès est cuit au-dessus de {{2192 °F; 1200 °C}}, la faïence en dessous. La moyenne température, cônes 5–6, se situe juste de part et d’autre de cette limite.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Revêtements et séchage
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+La **barbotine** est de l’argile en suspension dans l’eau, pour le coulage, le collage ou le décor. Un **engobe** est un revêtement proche de la barbotine, souvent coloré, avec plus de matières non argileuses. Une **couleur sous émail** est un décor de barbotine colorée ou d’oxydes, en général recouvert d’un émail transparent.
 
-### The silica to alumina ratio
+Les pièces non cuites forment le **cru**{{en: greenware}} (les sources ne s’accordent pas sur le fait que le mot couvre toutes les pièces non cuites ou seulement les pièces sèches). En séchant, elles arrivent **à consistance cuir**, fermes mais encore un peu humides, le stade du tournassage et des anses ; puis elles deviennent **complètement sèches**, sans eau libre, très fragiles et prêtes à cuire.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### Les deux cuissons
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+La première cuisson, à plus basse température, est le **biscuit**{{en: bisque}} (les Britanniques disent aussi biscuit), en général aux cônes 08–04 (le plus souvent 06–04), vers {{1728–1945 °F; 942–1063 °C}}. Elle rend les pièces solides mais poreuses. Digitalfire, un site de référence sur les émaux, conseille en général plus de 15 % de porosité, pour que le biscuit absorbe l’eau de l’émail quand on le pose. Un biscuit tendre (cônes 08–06) est plus poreux ; un biscuit dur (souvent cône 04) est plus solide mais prend l’émail moins facilement.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Comment le biscuit change l’émaillage (Digitalfire)
+Label: Comment le biscuit change l’émaillage
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Biscuit                                             | Ce qui se passe                                                             |
+| --------------------------------------------------- | --------------------------------------------------------------------------- |
+| Sous-cuit, très absorbant                           | L’émail se pose trop épais, puis se fendille et se rétracte                 |
+| Surcuit, dense                                      | Le trempage et le séchage prennent plus de temps                            |
+| Cuit plus chaud, ou maintenu plus longtemps en haut | Plus de gaz s’échappent maintenant, donc moins traversent l’émail plus tard |
 
-### Loss on ignition
+Potclays, un fournisseur britannique, décrit une cuisson de biscuit vers {{1000 °C; 1832 °F}}, environ le cône 06. En lisant ces sources ensemble, nous vous suggérons les cônes 06–04 pour un premier biscuit : {{1828–1945 °F; 998–1063 °C}} à la vitesse moyenne d’Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+La **cuisson d’émail**{{en: glaze firing}} (les céramistes britanniques disent parfois glost firing) fond l’émail et, pour le grès, amène aussi la terre à maturité. La **monocuisson**{{en: once-firing}} consiste à émailler des pièces crues et à ne les cuire qu’une fois. Digitalfire rapporte un cas de production où des pièces émaillées sur cru présentaient un retirement de l’émail sur leurs bords jusqu’à ce qu’une cuisson de biscuit règle le problème : commencez donc par deux cuissons. [Cuire dans un four simple](/guides/firing) donne des courbes pour les deux.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Cônes et travail thermique {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Les céramistes désignent une cuisson par un **cône**{{en: cone}} : une fine pyramide de céramique qui se courbe quand elle a reçu une quantité de chaleur donnée. Orton, qui les fabrique, présente les cônes comme des indicateurs de temps et de température (de travail thermique) : ils montrent l’effet combiné du temps et de la température, pas la température seule.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+Le **travail thermique**{{en: heatwork}} en est la raison : l’émail, la terre et le cône réagissent à la durée pendant laquelle ils sont chauds autant qu’à la température. Une cuisson lente courbe un cône à une température plus basse, une cuisson rapide à une température plus haute. Dans le tableau d’Orton, le cône 6 se courbe à {{2165 °F; 1185 °C}} quand la cuisson finit en montant de {{27 °F; 15 °C}} par heure, à {{2232 °F; 1222 °C}} à {{108 °F; 60 °C}} par heure, et à {{2269 °F; 1243 °C}} à {{270 °F; 150 °C}} par heure, la vitesse étant prise sur les derniers {{180 °F; 100 °C}}. Un cône est tombé quand sa pointe s’est courbée de 90°. Les céramistes appellent souvent cela la position de 5 heures.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Les numéros de cône vont de 022 à 42. Un zéro en tête marque la série la moins chaude, où un numéro plus grand est moins chaud : le cône 06 est moins chaud que le cône 04, et le cône 01 moins chaud que le cône 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Plages de cuisson : cônes Orton autoportants à {{108 °F; 60 °C}} par heure
+Label: Plages de cuisson
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Plage               | Cônes |        °F |        °C | Usage                      |
+| ------------------- | ----- | --------: | --------: | -------------------------- |
+| Basse température   | 06–04 | 1828–1945 |  998–1063 | Émaux de faïence ; biscuit |
+| Moyenne température | 5–6   | 2167–2232 | 1186–1222 | Grès et porcelaine         |
+| Haute température   | 9–10  | 2300–2345 | 1260–1285 | Grès et porcelaine         |
+
+> [!NOTE]
+> Nommez et programmez vos cuissons par cône, et considérez les températures comme approximatives. Un **cône témoin**{{en: witness cone}} posé sur une plaque parmi les pièces, ou un **jeu de cônes**{{en: cone pack}} de trois (cône guide, cône cible et cône de garde), montre le travail thermique que vos pièces ont réellement reçu.
+
+Les températures publiées varient. Glazy donne la haute température, cônes 9–11, vers {{2336–2390 °F; 1280–1310 °C}}, ce qui correspond à la colonne rapide d’Orton, et Digitalfire donne le cône 6 vers {{2200 °F; 1204 °C}}. Notre conseil : utilisez les valeurs d’Orton à vitesse moyenne, comme ce guide, programmez par cône, et laissez un cône témoin trancher.
+
+Hors d’Amérique du Nord, les fournisseurs donnent souvent des °C plutôt qu’un cône. Hermann Seger a mis au point le cône moderne, utilisé pour la première fois à Berlin en 1886, et le Royaume-Uni a eu ses propres cônes Staffordshire ; il ne faut pas supposer que leurs numéros correspondent à ceux d’Orton, et nous n’avons trouvé aucun tableau pour les convertir. [Cuire dans un four simple](/guides/firing) traite les cônes plus en détail.
+
+## De la recette à la formule de Seger {#unity-formula}
+
+Une **recette**{{en: batch recipe}} donne les matières premières en poids, en général ramenées pour que la base totalise 100. Les **additifs** (colorants, opacifiants et agents de suspension) s’ajoutent en plus des 100, en général en pourcentage de la base. Pour voir ce qu’est l’émail, les céramistes transforment la recette en **formule de Seger (UMF)**{{en: unity molecular formula}}, ou formule moléculaire unitaire, d’après Hermann Seger, qui a le premier utilisé sa présentation en trois colonnes.
+
+Table: De la recette à la formule de Seger : l’exemple calculé de Glazy
+Label: De la recette à la formule de Seger
+
+| Étape                | Ce qui se passe                                                                                                                                            | Dans l’exemple                                                                                                                                                     |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1. Recette           | Les matières premières en poids, ramenées à 100                                                                                                            | Feldspath 40 %, entre autres                                                                                                                                       |
+| 2. Analyse en oxydes | Comme une étiquette nutritionnelle : les oxydes de chaque matière sont additionnés en pourcentage en poids, et les gaz retirés                             | Le feldspath contient 64,8 % de silice : ses 40 % apportent donc 25,9 % de SiO₂. L’émail cuit contient 67,4 % de SiO₂, 12,6 % d’Al₂O₃, 7,5 % de K₂O, 12,5 % de CaO |
+| 3. Moles             | Les poids deviennent des **moles**, des nombres de molécules, car « les grammes peuvent tromper, parce que certains oxydes sont plus lourds que d’autres » | 60,1 g de SiO₂ font une mole : 67,4 g font donc environ 1,12 mole                                                                                                  |
+| 4. Ramené à 1        | Tout est divisé par le total des fondants, pour que les fondants totalisent 1                                                                              | Les fondants totalisent 0,303 ; la division donne K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                        |
+
+La [page de recette](/recipe) de Glazecalc fait les quatre étapes pendant que vous saisissez, et montre le résultat en trois colonnes : les fondants (R₂O et RO), qui totalisent 1 ; les stabilisants (R₂O₃ : l’alumine, le bore étant souvent placé ici) ; et les vitrifiants (RO₂ : la silice). « Ramener à 1 n’est qu’un outil de mise à l’échelle », dit Glazy : deux recettes faites de matières différentes mais avec la même formule de Seger « se comportent presque de la même façon une fois cuites ». Le 1 est donc une mesure commune, pas une quantité à peser. Digitalfire ajoute que la méthode « fonctionne moins bien aux basses températures », où le bore n’est pas un simple fondant, et que les formules de Seger sont « comparatives et à lire dans leur contexte ». La fonction **Comparer** aligne les formules de deux recettes, oxyde par oxyde.
+
+### Le rapport silice/alumine
+
+Le chiffre isolé le plus utile est le **rapport silice/alumine**{{en: silica to alumina ratio}} : la silice divisée par l’alumine. Dans l’exemple, 3,70 ÷ 0,41 donne environ 9.
+
+Table: Ce que suggère le rapport silice/alumine (Glazy)
+Label: Rapport silice/alumine
+
+|   Rapport | Lecture de Glazy                                 |
+| --------: | ------------------------------------------------ |
+| Environ 9 | Suggère un émail brillant, avec assez de chaleur |
+|       5–7 | Typique de nombreux émaux de grès stables        |
+|       3–5 | Peut être mat ou sous-cuit                       |
+
+Glazy ne dit pas à quel cône ces chiffres s’appliquent. Lisez-les comme un repère approximatif pour les émaux de grès, vers les cônes 6–10. Digitalfire dit qu’un rapport supérieur à environ 8 donne probablement un émail brillant, mais qu’un émail au bore peut être brillant à 8 ou moins, et un émail basse température même à 6. Un rapport de 5–7 ne prédit à lui seul ni brillant ni mat : les fondants, le bore et le cône déplacent tous la limite. Glazy donne comme équilibre des fondants typique des émaux stables 0,2 R₂O pour 0,8 RO, jusqu’à 0,3 R₂O pour 0,7 RO. Plus d’alcalins rendent l’émail en fusion plus fluide et augmentent sa dilatation, et donc le risque de tressaillage.
+
+### La perte au feu
+
+La **perte au feu (PAF)**{{en: loss on ignition}} est le poids qu’une matière perd dans le four quand l’eau, le dioxyde de carbone, les matières organiques ou le soufre s’en vont sous forme de gaz. Un émail cuit n’en a plus : la formule de Seger n’en tient donc pas compte.
+
+Table: Perte au feu typique (Digitalfire)
+Label: Perte au feu
+
+| Matière                              | Perte au feu typique                                                                              |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| Carbonate de calcium, dolomie        | Plus de 40 %, surtout du dioxyde de carbone : 100 g de carbonate de calcium dégagent environ 44 g |
+| Carbonate de lithium                 | Environ 60 %                                                                                      |
+| Carbonate de baryum, Gerstley Borate | Plus de 20 %                                                                                      |
+| Kaolin                               | Environ 12–14 %, surtout de l’eau liée dans ses cristaux                                          |
+| Feldspaths                           | Moins de 1 %                                                                                      |
+
+Le gaz qui s’échappe après que l’émail a commencé à fondre doit le traverser en bulles, ce qui cause, selon Digitalfire, « des bulles, des cloques, des trous d’épingle, un retirement ». Dans un essai de Digitalfire, le talc a continué à dégager du gaz jusque vers {{1650 °F; 899 °C}}. Les frittes, les matières **calcinées** (chauffées à l’avance pour chasser leurs gaz) et les changements de cuisson aident tous.
+
+Les livres plus anciens font ce calcul à la main, avec la **masse molaire** (le poids d’une mole d’une matière ou d’un oxyde) et la **masse équivalente** (le poids d’une matière qui apporte une mole d’un oxyde). D’après notre calcul, environ 100 g de carbonate de calcium apportent une mole, 56 g, d’oxyde de calcium. Un calculateur fait les deux.
+
+## Les limites et le diagramme de Stull {#stull-chart}
+
+Un **diagramme de Stull** est une carte des émaux. Il a deux axes, tous deux tirés de la formule de Seger : la silice (SiO₂) le long du bas et l’alumine (Al₂O₃) le long du côté. Chaque émail est un point. La carte est divisée en régions, comme mat, brillant, sous-cuit et tressaillé. La [page de recette](/recipe) de Glazecalc y place votre émail.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull a établi le diagramme à partir d’essais qu’il a publiés en 1912. Il les a cuits vers le cône 11, et tous les essais avaient les mêmes fondants : 0,3 de potasse (K₂O) et 0,7 d’oxyde de calcium (CaO). Seules la silice et l’alumine changeaient. Le diagramme vaut donc pour ces émaux, à cette température.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Votre émail est probablement différent. Le bore, d’autres fondants et des cônes plus bas déplacent tous les régions. En 2025, un article de Ceramics Monthly a testé un émail pour le cône 6, avec des borates comme fondants et beaucoup de fer. Le diagramme le plaçait dans les régions tressaillé, mat et sous-cuit. En réalité, il était complètement fondu, satiné et sans tressaillage. Les auteurs disent que les émaux aux borates se placent mal sur le diagramme. Utilisez donc les régions comme un repère, pas comme une prédiction.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+La région **tressaillé** est celle où les propres essais de Stull tressaillaient, sur sa terre. Elle ne vous dit pas comment votre émail s’accorde à votre terre. Le tressaillage{{en: crazing}} dépend de la dilatation thermique{{en: thermal expansion}} de l’émail et de la terre. Le chiffre de dilatation de Glazecalc vous aide à comparer des émaux, et un vrai essai tranche : le test à l’eau glacée, dans [L’accord terre-émail et les défauts](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+Les **formules limites**{{en: limit formulas}} sont un autre outil pour la même question : des plages de silice, d’alumine et de fondants pour des émaux stables à un cône donné. [Contact alimentaire](/guides/glazing-basics#food-safety) les explique, et dit pourquoi elles ne prouvent rien à elles seules.
 
-## Frits and raw materials {#materials lang=en}
+## Les frittes et les matières premières {#materials}
 
-### Frits
+### Les frittes
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+Une **fritte**{{en: frit}} est un verre fait en usine : des minéraux fondus, trempés dans l’eau et broyés. La fusion en fritte rend insolubles des matières solubles comme le borax, enferme des oxydes toxiques comme le plomb et le baryum dans un verre stable, donne une matière plus régulière que les minéraux bruts, et chasse les gaz : les émaux à base de fritte sont donc « beaucoup plus exempts de défauts » (Digitalfire). Les frittes fondent aussi tôt : une fritte sodique agit dès le cône 06, alors que le feldspath « commence à peine à se ramollir au cône 6 ». Elles coûtent plus cher, elles ont besoin d’argile pour rester en suspension (l’exemple de Digitalfire est 85 % de fritte avec 15 % d’argile), et elles sont « théoriquement insolubles, mais en pratique, elles ne le sont pas ».
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Les frittes nord-américaines sont désignées par leur fabricant et leur numéro : la fritte Ferro 3134 (Ferro s’appelle aujourd’hui Vibrantz) est l’une des frittes les plus utilisées en Amérique du Nord. Les recettes britanniques nomment plus souvent des frittes génériques, comme la fritte au borax standard.
 
-### The common raw materials
+### Les matières premières courantes
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Matières courantes pour émaux et ce qu’elles apportent
+Label: Matières courantes pour émaux
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Matière (autres noms)                                      | Apporte                | Notes                                                                                                                                                                                                                                             |
+| ---------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silice (silex, quartz)                                     | SiO₂                   | Utilisez du 325 mesh, une mouture très fine, dans les émaux                                                                                                                                                                                       |
+| Kaolin (Royaume-Uni : china clay)                          | Al₂O₃, SiO₂            | La principale source d’alumine ; aide aussi à empêcher l’émail de se déposer                                                                                                                                                                      |
+| Argile ball clay                                           | Al₂O₃, SiO₂            | Plus plastique que le kaolin, avec plus de fer et de matières organiques                                                                                                                                                                          |
+| Feldspath potassique, feldspath sodique, néphéline syénite | K₂O, Na₂O, Al₂O₃, SiO₂ | Des fondants qui apportent leur propre alumine et leur propre silice. La néphéline syénite est un fondant énergique en basse et en moyenne température. Le simple « feldspath » d’une ancienne recette peut désigner n’importe lequel d’entre eux |
+| Carbonate de calcium (carbonate de chaux)                  | CaO                    | Le principal fondant calcique ; dégage du dioxyde de carbone                                                                                                                                                                                      |
+| Wollastonite                                               | CaO, SiO₂              | Du calcium sans le dioxyde de carbone                                                                                                                                                                                                             |
+| Dolomie, talc                                              | MgO, avec CaO ou SiO₂  | Surfaces mates soyeuses ; dilatation plus faible                                                                                                                                                                                                  |
+| Oxyde de zinc                                              | ZnO                    | Brillance et cristaux ; trop peut causer un retirement                                                                                                                                                                                            |
+| Frittes au bore, Gerstley Borate, colémanite               | B₂O₃                   | Indispensables du cône 06 au cône 6 ; les frittes sont « plus régulières et moins solubles que les borates naturels »                                                                                                                             |
+| Carbonate de lithium                                       | Li₂O                   | Fondant à faible dilatation ; cher, donc utilisé avec modération                                                                                                                                                                                  |
+| Carbonate de strontium                                     | SrO                    | Le substitut moins toxique du baryum                                                                                                                                                                                                              |
+| Carbonate de baryum                                        | BaO                    | Toxique à l’état cru ; les émaux riches en baryum peuvent relarguer                                                                                                                                                                               |
+| Bentonite                                                  | Suspension             | Une argile très fine, en général 1–2 %, pour empêcher le dépôt. Au-delà de 3 %, elle peut faire fendre l’émail en séchant                                                                                                                         |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Les matières pour émaux sont des poudres fines. La poussière de silice abîme les poumons sans symptômes au début, et certaines matières, comme le carbonate de baryum et le carbonate de lithium, sont toxiques si on les avale. Manipulez les poudres doucement, nettoyez à l’humide, et portez un masque de protection respiratoire bien ajusté quand vous travaillez à sec. [Préparation en sécurité et ventilation](/guides/safe-mixing) et [N’empoisonnez pas votre famille](/guides/home-safety) expliquent comment.
 
-### Regional names
+### Les noms selon les régions
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- Le **kaolin**{{en: kaolin}} s’appelle **china clay** au Royaume-Uni. En Australie, Eckalite est une marque de kaolin.
+- **Flint** (silex) est un ancien nom britannique de la silice. Les fournisseurs britanniques vendent encore du **silex calciné** comme produit à part : « flint » dans une recette britannique désigne donc probablement le silex calciné, et dans une recette américaine probablement du quartz broyé. Les deux sont vendus comme sources de silice ; vérifiez l’analyse.
+- La **china stone** et la **Cornish stone** (Cornwall stone, pierre de Cornouailles) sont la même matière, apparentée au feldspath.
+- Le **carbonate de calcium**{{en: whiting}} est de la craie ou du calcaire broyé.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Jugez une matière par les oxydes qu’elle apporte, pas par son nom. Glazecalc fonctionne ainsi : vous pouvez saisir l’analyse de votre fournisseur sur la [page Matières](/material), et les fonctions **Essayer des matières actuelles et comparer**, **Proposer des quantités et comparer** et **Adapter à mes matières** comparent toutes les oxydes après cuisson, pas les noms.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Les matières changent aussi. L’US Geological Survey indique que les mines et l’usine qui produisaient le feldspath Custer, dans le Dakota du Sud, ont suspendu leur activité en novembre 2023. La mine d’origine du Gerstley Borate a fermé vers 1999–2000 ; Laguna vend encore un produit sous ce nom, et le Gillespie Borate est le principal substitut. Les sources ne s’accordent pas sur le fait que le Gillespie remplace le Gerstley Borate poids pour poids (son fabricant et Potclays disent oui, Digitalfire et d’autres non) : comparez donc les deux dans Glazecalc, puis testez une petite préparation.
 
-## Colorants and opacifiers {#color lang=en}
+## Colorants et opacifiants {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+Un **colorant**{{en: colorant}} est un oxyde ou un carbonate métallique qui colore un émail ; un **pigment**{{en: stain}} est un colorant fait en usine, plus stable et plus régulier que les oxydes bruts. Les colorants font en général moins de 5 % de la base, beaucoup moins de 1 %, et un carbonate est plus faible que l’oxyde correspondant, car une partie s’en va sous forme de gaz. D’après notre calcul, 100 g de carbonate de cobalt donnent environ 63 g d’oxyde de cobalt, et 100 g du carbonate de cuivre que les céramistes achètent (le carbonate de cuivre basique) environ 72 g d’oxyde de cuivre. Utilisez donc environ 1,4 à 1,6 fois plus de carbonate que d’oxyde.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Colorants courants, en pourcentage de la base
+Label: Colorants courants
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Colorant             | Quantité de départ habituelle                | Couleurs et notes                                                                                                                                         |
+| -------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt               | 0,1–2 % (les sources divergent)              | Bleu, et très fort ; tire vers le violet quand la base contient du magnésium                                                                              |
+| Fer                  | 0,5–10 %                                     | Bruns, beiges et rouges en oxydation ; en réduction, ½–2 % donne un céladon et 5–10 % un tenmoku. C’est un fondant : beaucoup de fer fait couler un émail |
+| Cuivre               | 1–3 %                                        | Vert ou turquoise en oxydation, rouge en réduction. Il peut rendre un émail susceptible de relarguer                                                      |
+| Chrome               | Moins de 0,5 % à 2 % (les sources divergent) | Vert ; brun si la base contient du zinc, rose avec l’étain                                                                                                |
+| Manganèse            | 2–10 %                                       | Bruns et violets                                                                                                                                          |
+| Rutile               | Environ 2–5 %                                | Couleur marbrée, nuancée ; rugueux ou mat au-delà d’environ 5 %                                                                                           |
+| Pigments du commerce | 2–12 %                                       | 2–4 % pour des teintes claires, 5–8 % pour des tons moyens, 10–12 % pour des couleurs fortes                                                              |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Les quantités de cobalt et de chrome sont vraiment discutées. Glazy dit que 0,1 % de cobalt suffit pour un bleu ; le Glendale Community College donne ½–2 % ou ½–3 % selon l’atmosphère ; Birdie Boone, dans Pottery Making Illustrated, dit 3 % ou moins. Pour le chrome, Boone dit moins de 0,5 % et Glendale 2–3 %. La voie sûre est de commencer bas et de faire un **essai en ligne**{{en: line blend}} : une rangée de tessons d’essai où un ingrédient passe par étapes d’un peu à beaucoup.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+L’émail de base change la couleur. Une base brillante et transparente donne la couleur la plus vive ; les bases satinées et mates, en général plus riches en alumine, l’atténuent. Le magnésium pousse le cobalt vers le violet, le zinc rend le chrome brun, et le chrome avec l’étain donne du rose.
 
-### Opacifiers
+### Les opacifiants
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+Un **opacifiant** rend un émail **opaque**, et cache la terre ; un émail **transparent** la laisse voir.
 
-Table: Opacifiers
+Table: Opacifiants
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Opacifiant                                         | Quantité habituelle               | Notes                                                                                                                                                    |
+| -------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silicate de zirconium (Zircopax, Superpax, Ultrox) | 10–15 % pour une opacité complète | Le choix le moins cher ; les marques sont du silicate de zirconium broyé à différentes finesses, et les qualités plus fines sont plus fortes             |
+| Oxyde d’étain                                      | Environ 5–7 % (notre estimation)  | Cher ; moins efficace en haute température, et Digitalfire rapporte que 4 % n’ont donné aucune opacité dans un émail transparent de réduction au cône 10 |
+| Dioxyde de titane                                  | Environ 5 % (notre estimation)    | Opacité soyeuse et translucide ; environ 5 % peuvent faire varier la surface, et beaucoup plus donne souvent une surface mate avec des cristaux          |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## L’accord terre-émail et les défauts {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+La terre et l’émail se dilatent tous deux en chauffant et se contractent en refroidissant, chacun selon sa propre valeur : sa **dilatation thermique**{{en: thermal expansion}}. L’**accord terre-émail**{{en: glaze fit}} dit à quel point les deux concordent. Un bon accord laisse l’émail légèrement comprimé par la terre ; Digitalfire dit qu’un peu de compression renforce les pièces, alors que trop peut les affaiblir et même les fendre.
 
-### Crazing and shivering
+### Tressaillage et écaillage
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+Le **tressaillage**{{en: crazing}} est un réseau de fines craquelures. La dilatation de l’émail est plus forte que celle de la terre : en refroidissant, il se contracte donc plus, est étiré et se fend, en général à cause d’un excès de sodium et de potassium (Na₂O, K₂O). Il peut aussi apparaître plus tard, à l’usage, après des refroidissements brusques répétés, comme le contact avec des liquides froids. Quand on le recherche, comme en raku, on l’appelle **craquelé**. Digitalfire dit que « dans 95 % des cas, la solution est d’ajuster la dilatation thermique de l’émail » ; le refroidissement lent ne fait que retarder le tressaillage. Son test : chauffez la pièce vers {{300 °F; 149 °C}}, plongez-la dans l’eau glacée, et passez un feutre dessus pour faire apparaître les craquelures.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Les sources diffèrent sur le premier remède. Glazy conseille d’ajouter de la silice ou de l’alumine ; Digitalfire répond qu’un ajout de silice « ne fait que diluer le KNaO » (le sodium et le potassium) ; Linda Bloomfield ajoute du bore ou réduit le feldspath, une matière à la fois. Notre conseil : dans le [calculateur de recettes](/recipe), remplacez une partie du sodium et du potassium par des fondants à plus faible dilatation (bore, lithium, magnésium, calcium), vérifiez le changement avec la fonction **Comparer**, et confirmez avec le test à l’eau glacée.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+L’**écaillage**{{en: shivering}} est l’inverse : la dilatation de l’émail est bien plus faible que celle de la terre ; il est donc trop comprimé et s’écaille sur les bords et les arêtes. Digitalfire avertit que les éclats peuvent être tranchants comme des lames de rasoir et pourraient être avalés, et Glazy juge l’écaillage « encore plus dangereux que le tressaillage sur les pièces utilitaires ». Le remède est un émail à plus forte dilatation ou une terre à plus faible dilatation.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> N’utilisez pas de pièces tressaillées ou écaillées pour la nourriture ou les boissons. Les sources ne s’accordent pas sur la possibilité de bien nettoyer des pièces tressaillées (l’une dit qu’un lave-vaisselle suffit ; une autre juge défectueuse toute pièce utilitaire tressaillée) : nous choisissons donc la prudence.
 
-### Gloss and matte
+### Brillant et mat
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Une surface **brillante** est réfléchissante et lisse, une surface **satinée** a un éclat atténué, et une surface **mate** est terne. Le brillant demande un verre complètement fondu. Le mat peut venir de beaucoup d’alumine (un rapport silice/alumine bas), de fondants comme le calcium, le magnésium, le baryum ou le strontium qui forment de minuscules cristaux pendant que l’émail refroidit, ou d’une cuisson insuffisante.
 
-### Common defects
+### Les défauts courants
 
-Change one thing at a time, and keep your test tiles.
+Changez une seule chose à la fois, et gardez vos tessons d’essai.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Défauts courants des émaux, leurs causes habituelles et les premiers remèdes
+Label: Défauts courants des émaux
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Défaut          | Aspect                                                   | Causes courantes                                                                                                                                                | Premiers remèdes                                                                                                             |
+| --------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Retirement      | L’émail se rétracte en perles et laisse la terre à nu    | Biscuit poussiéreux ou gras ; couche épaisse et riche en argile qui s’est fendillée en séchant ; zinc, silicate de zirconium ou étain                           | Nettoyer le biscuit ; poser une couche plus fine ; calciner une partie de l’argile ; ajouter un liant comme la CMC           |
+| Trous d’épingle | Petits trous ou piqûres                                  | Gaz de la terre ou de l’émail qui ne s’est pas refermé ; émail sous-cuit ou visqueux                                                                            | Faire un palier d’environ une demi-heure à la température maximale ; poser une couche plus fine ; moins de zinc ou de rutile |
+| Cloques         | Cratères à bords tranchants                              | En général une surcuisson ; couches très épaisses ; fondants volatils au-dessus d’environ {{2192 °F; 1200 °C}}                                                  | Cuire moins chaud ; poser une couche plus fine. Les bords tranchants rendent les pièces utilitaires dangereuses              |
+| Coulures        | L’émail coule sur la plaque                              | Trop peu d’alumine ; couche trop épaisse, comme là où des arrosages se chevauchent ; beaucoup de fer                                                            | Poser une couche plus fine ; ajouter de l’alumine ; arrêter l’émail bien au-dessus du pied                                   |
+| Fêlures         | Fentes dans la pièce, au refroidissement ou à la chauffe | Refroidissement rapide au point de quartz, {{1063 °F; 573 °C}}, ou à l’inversion de la cristobalite, vers {{428 °F; 220 °C}} ; parois inégales ; mauvais accord | Cuire lentement à ces deux points, à la montée et à la descente ; parois régulières                                          |
 
-## Food safety {#food-safety lang=en}
+## Contact alimentaire {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+Le **relargage**{{en: leaching}} est le passage de métaux d’un émail cuit dans les aliments ou les boissons, et un émail peut avoir l’air parfait et relarguer quand même. Les tests légaux font tremper la pièce cuite dans une solution acide et mesurent le plomb et le cadmium qui en sortent.
 
-### Lead-free is not the same as food-safe
+### Sans plomb ne veut pas dire alimentaire
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Les règles des États-Unis, de l’UE, du Royaume-Uni et de l’Australie limitent le plomb et le cadmium qu’une pièce cuite libère, pas ce que contient l’émail. « Sans plomb » retire un danger ; ce n’est pas une garantie de contact alimentaire. D’autres oxydes relarguent aussi : Glazy avertit que les émaux riches en baryum « peuvent relarguer et ne sont en général pas alimentaires », Digitalfire dit que le cuivre « peut rendre un émail susceptible de relarguer ; testez-le », et Glazy ne conseille plus les émaux au plomb pour les pièces utilitaires.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+Un **émail intérieur**{{en: liner glaze}} est un émail stable, en général transparent ou blanc, pour les surfaces en contact avec les aliments. À notre avis, un émail sans colorant, sans baryum, sans plomb et sans lithium, qui fond complètement, ne tressaille pas et résiste bien à l’usure, est le choix le moins risqué. Moins risqué n’est pas une preuve.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+Les **formules limites**{{en: limit formulas}} (Digitalfire préfère **formules cibles**) donnent des plages typiques de formule de Seger pour des émaux stables à un cône donné : les cibles de Digitalfire pour le cône 6 placent l’alumine à 0,285–0,64 et la silice à 2,4–4,7. Elles vous guident vers une chimie saine mais ne prouvent rien ; Digitalfire évite le mot « limite », parce qu’il laisse croire que les émaux situés dans les plages « sont d’une certaine façon sûrs ». Les outils de Glazecalc qui modifient une recette signalent quand la nouvelle dépasse une limite conseillée, comme beaucoup de bore au cône 6, et ce que l’émail fera probablement.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+Les limites légales diffèrent selon les pays. Le tableau montre celles de votre lieu de résidence, dans les unités de la loi elle-même ; choisissez un autre pays ou une autre région pour comparer.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+Aux États-Unis, une pièce céramique décorative qui semble utilisable pour les aliments est traitée comme une pièce alimentaire, sauf si elle porte une étiquette collée et une mention permanente moulée ou cuite sous sa base, comme « Not for Food Use. May Poison Food » (Pas pour un usage alimentaire. Peut empoisonner les aliments), ou si elle a un trou qui traverse la surface en contact avec les aliments. L’UE fixe les limites de plomb et de cadmium des objets céramiques dans la directive 84/500/CEE, et le Royaume-Uni garde les mêmes valeurs dans sa propre loi. Une décision des pays du Benelux de 2024 fixe des limites bien plus basses pour les objets céramiques. Les Pays-Bas les appliquent depuis le 29 mai 2026 : environ 130 à 150 fois moins de plomb et environ 14 à 18 fois moins de cadmium que les valeurs de l’UE. Les objets conformes aux anciennes règles et mis en vente pour la première fois avant le 1er décembre 2026 peuvent être vendus jusqu’à épuisement des stocks. Des laboratoires d’essai indiquent que le Luxembourg applique les mêmes limites depuis le 29 mai 2026, et que la Belgique les a adoptées par un arrêté royal du 19 juillet 2026 ; nous n’avons pas lu ces textes nous-mêmes. L’Australie fixe des limites pour les objets importés ; nous n’avons trouvé aucune limite officielle pour les objets fabriqués en Australie ou en Nouvelle-Zélande.
 
-### Testing
+### Les tests
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+La FDA dit que les kits de test à domicile par écouvillon peuvent révéler du plomb susceptible de relarguer, mais des études montrent que ces kits se trompent souvent sur les pièces émaillées : ils peuvent montrer du plomb qui n’est pas là, et ils peuvent manquer du plomb qui relargue. Considérez un résultat positif comme une raison d’arrêter d’utiliser la pièce, et un résultat négatif comme ne prouvant rien. Un test de relargage en laboratoire sur la pièce cuite (ASTM C738 aux États-Unis ; EN 1388 ou ISO 6486 en Europe) est la vraie réponse.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> « Alimentaire » signifie que cet émail, sur cette terre, cuit à ce cône dans ce four et posé de cette façon, libère moins que les limites légales. Glazecalc peut vous aider à construire un émail stable, et la fonction **Remplacer le plomb** peut refaire une ancienne recette au plomb sans plomb, mais aucun calculateur ne peut certifier une pièce. Seul un test de la pièce cuite le peut.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Densité et pose de l’émail {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### La densité
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+La poudre d’émail mélangée à l’eau forme un **bain**{{en: slurry}}. Sa **densité**{{en: specific gravity}} est son poids comparé à celui du même volume d’eau, dont la densité est 1,0 : plus elle est haute, plus il y a de poudre dans le seau. Glazy juge 1,4–1,5 « un bon point de départ pour la plupart des émaux ». Pour la mesurer, pesez exactement 100 mL de bain (Glazy conseille une seringue) et divisez par 100 : 145 g donnent une densité de 1,45. Les densimètres ne sont pas fiables dans les émaux gélifiés, et l’eau s’évapore : vérifiez donc de nouveau avant d’émailler.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Les cibles diffèrent selon les sources. Digitalfire place les émaux pour le trempé à 1,40–1,50 et les émaux du commerce pour le pinceau à 1,25–1,55, alors que Potclays donne 1,71–1,81 pour le pinceau et 1,71 pour le pistolet. Notre conseil : trempez vers 1,45, l’émail légèrement gélifié, suivez l’étiquette pour un émail au pinceau, et notez ce qui fonctionne.
+
+Un **floculant**{{en: flocculant}} (sel d’Epsom, vinaigre ou chlorure de calcium) gélifie légèrement un bain et le rend **thixotrope** : il coule quand on le remue et prend quand il est au repos, pour « une couche d’émail régulière et sans coulures ». Un **défloculant**{{en: deflocculant}} (silicate de sodium ou Darvan) le fluidifie. [Comment préparer un émail](/guides/making-a-glaze) traite la préparation et les réglages.
+
+### Poser l’émail
+
+Enlevez d’abord la poussière et la graisse du biscuit avec une éponge à peine humide plutôt qu’en le lavant, ce qui le détremperait. Ne soufflez pas la poussière à l’air comprimé et ne la brossez pas à sec : cela met de la poussière de silice dans l’air ([Préparation en sécurité et ventilation](/guides/safe-mixing#cleaning)).
+
+- Le **trempage** « donne en général une couche d’épaisseur régulière » (Robin Hopper). Le temps de trempage fixe l’épaisseur : Digitalfire note que les émaux du commerce pour le trempé sont préparés vers 1,4 pour un trempage de 5 secondes et 1,5 pour un trempage de 1 seconde.
+- L’émail posé **par arrosage** doit être « un peu plus fluide que pour le trempage » ; là où les arrosages se chevauchent, la couche double et peut couler.
+- Les émaux **au pinceau** contiennent une gomme comme la **CMC**, qui aide l’émail à couler et à adhérer, puis brûle. La plupart demandent plusieurs couches, souvent deux ou trois ; suivez l’étiquette.
+- L’émaillage **au pistolet** utilise un émail beaucoup plus fluide, posé en « plusieurs couches fines, qui augmentent peu à peu l’épaisseur ».
+
+> [!WARNING]
+> N’émaillez au pistolet que dans une cabine d’émaillage ventilée, avec un masque de protection respiratoire bien ajusté. Voyez [Préparation en sécurité et ventilation](/guides/safe-mixing).
+
+Une couche trop épaisse peut se rétracter, cloquer ou couler. Les règles empiriques des fournisseurs vont de l’épaisseur d’une carte bancaire à celle d’une pièce de dix cents américaine, soit, selon notre estimation, environ 1 mm d’émail sec ; des tessons d’essai à plusieurs épaisseurs sont la vérification fiable. La **cire de réserve**{{en: wax resist}} posée sur le pied repousse l’émail, pour que la pièce ne colle pas à la plaque, et l’**engobe pour plaques**, un revêtement résistant à la chaleur, souvent fait de kaolin et de silice, protège les plaques des coulures.
+
+## Oxydation et réduction {#atmosphere}
+
+Les gaz du four, son **atmosphère**, changent le résultat des émaux. L’**oxydation**{{en: oxidation}} signifie beaucoup d’oxygène. « Les fours électriques sont synonymes de cuisson oxydante », dit Digitalfire, et les émaux d’oxydation sont en général plus vifs que ceux de réduction, surtout aux températures plus basses. En oxydation, le cuivre donne des verts et des turquoises, et le fer des bruns, des beiges et des rouges. Un four électrique mal ventilé, plein de pièces qui dégagent des gaz, peut cuire de façon plus neutre que prévu ; un extracteur relié directement au four aide.
+
+La **réduction**{{en: reduction}} limite volontairement l’oxygène, en général dans un four à gaz, à bois ou spécialisé. Le cuivre devient rouge, et le fer devient un fondant plus fort et donne le **céladon** (bleu-vert à gris-vert, avec environ ½–2 % de fer) et le **tenmoku** (temmoku : brun-noir, environ 5–10 % de fer). Glazy dit que les céladons et les rouges de cuivre « dépendent de la réduction ». La terre change aussi : dans une comparaison de Digitalfire, une terre à grès a cuit grise en réduction et jaunâtre en oxydation. Du carbure de silicium dans un émail peut créer de petites zones de réduction, même dans un four électrique. Pour la réduction du cône 010 au cône 3, Orton recommande ses cônes sans fer.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Attendez-vous à ce qu’une recette écrite pour un four à gaz en réduction donne un autre résultat dans un four électrique : un céladon ou un rouge de cuivre qui dépend de la réduction n’aura pas le même aspect en oxydation. Vérifiez pour quelle atmosphère une recette a été faite, et notez la vôtre, avec le cône, dans les notes de la recette dans Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Tous les fours, électriques compris, dégagent des fumées : ventilez-les donc. [Préparation en sécurité et ventilation](/guides/safe-mixing) explique comment.
 
-## Glossary {#glossary lang=en}
+## Glossaire {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Additif
+: Un colorant, un opacifiant ou un agent de suspension ajouté en plus des 100 d’une recette.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Alumine (Al₂O₃)
+: Le principal stabilisant : empêche les coulures et apporte de la dureté. Vient des argiles et des feldspaths.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Argile ball clay
+: Une argile plastique, avec plus de fer et de matières organiques que le kaolin.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Recette
+: Les matières premières d’un émail en poids, totalisant en général 100.
 
 Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+: Une argile très fine ajoutée à environ 1–2 % pour empêcher l’émail de se déposer. Au-delà de 3 %, elle peut faire fendre l’émail en séchant.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Biscuit (Royaume-Uni : biscuit)
+: La première cuisson, à plus basse température, en général aux cônes 08–04 (le plus souvent 06–04), qui rend les pièces solides mais poreuses.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Bore (B₂O₃)
+: Officiellement un vitrifiant, mais utilisé comme fondant ; indispensable du cône 06 au cône 6.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+CMC
+: Une gomme de cellulose qui aide l’émail à se poser au pinceau et à adhérer ; elle brûle à la cuisson.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Colorant et pigment
+: Un oxyde ou un carbonate métallique qui colore l’émail ; un pigment est un colorant fait en usine, plus stable.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Cône
+: Une pyramide de céramique étalonnée qui se courbe à un travail thermique donné. Un cône témoin montre ce que les pièces ont reçu.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Retirement
+: L’émail qui se rétracte en perles pendant la cuisson, en laissant la terre à nu.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Tressaillage
+: De fines craquelures dans un émail qui se contracte plus que sa terre ; craquelé quand on le recherche.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Dévitrification
+: Des cristaux qui se forment dans le verre au début du refroidissement, là où on ne les veut pas.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Fêlure
+: Des fentes dans une pièce, dues aux contraintes du refroidissement ou de la chauffe, souvent au point de quartz, {{1063 °F; 573 °C}}.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+Faïence
+: Une terre basse température (vers les cônes 06–02), poreuse aux cônes bas et plus dense quand elle est cuite plus chaud.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Feldspath
+: Un minéral qui apporte un fondant alcalin avec de l’alumine et de la silice : potassique, sodique ou néphéline syénite.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Floculant et défloculant
+: Des additifs qui gélifient un bain (sel d’Epsom, vinaigre) ou le fluidifient (silicate de sodium, Darvan).
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Fondant
+: Un oxyde qui abaisse la température de fusion de la silice.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Alimentaire
+: Au sens de la loi, qui libère moins de plomb et de cadmium que les limites lors d’un test à l’acide. Ce n’est pas la même chose que sans plomb.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Fritte
+: Un verre fait en usine, fondu, trempé et broyé, qui rend insolubles des oxydes solubles ou toxiques.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Vitrifiant
+: L’oxyde qui construit le verre, en général la silice.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Émail
+: Une couche de verre qui fond à la cuisson pour fermer et décorer une pièce.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Cuisson d’émail (Royaume-Uni : glost firing)
+: La cuisson qui fond l’émail.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Accord terre-émail
+: À quel point la dilatation de l’émail et celle de la terre concordent ; un bon accord laisse l’émail légèrement comprimé.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Brillant, satiné et mat
+: Réfléchissant et lisse ; un éclat atténué ; terne.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Cru
+: Les pièces non cuites : à consistance cuir quand elles sont fermes mais humides, complètement sèches quand il ne reste plus d’eau libre.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Travail thermique
+: L’effet combiné de la température et du temps dans un four ; ce que mesurent les cônes.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+Kaolin (Royaume-Uni : china clay)
+: Une argile blanche pure qui apporte de l’alumine et de la silice ; aide à empêcher l’émail de se déposer. En Australie, Eckalite est une marque.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Engobe pour plaques
+: Un revêtement résistant à la chaleur qui protège les plaques du four des coulures.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Relargage
+: Le passage de métaux d’un émail cuit dans les aliments ou les boissons.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Formule limite (formule cible)
+: Des plages typiques de formule de Seger pour des émaux stables à un cône donné ; un repère, pas une garantie.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Essai en ligne
+: Des essais où un ingrédient passe par étapes d’une quantité à une autre. Un essai triaxial en fait varier trois sur une grille.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Émail intérieur
+: Un émail stable, en général transparent ou blanc, pour les surfaces en contact avec les aliments.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Perte au feu (PAF)
+: Le poids perdu à la cuisson sous forme d’eau, de dioxyde de carbone, de matières organiques ou de soufre.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Monocuisson
+: Émailler des pièces crues et ne les cuire qu’une fois.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Opacifiant
+: Une matière, comme le silicate de zirconium, l’oxyde d’étain ou le dioxyde de titane, qui rend l’émail opaque.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Oxydation et réduction
+: Cuire avec beaucoup d’oxygène (fours électriques), ou avec un oxygène limité (en général au gaz ou au bois).
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Oxyde
+: Un composé d’un élément et d’oxygène ; une analyse en oxydes les donne en pourcentage en poids.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Trous d’épingle et cloques
+: De petits trous, ou des cratères à bords tranchants, là où du gaz s’est échappé de l’émail en fusion.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Porcelaine
+: Une pâte blanche, riche en kaolin, haute température, souvent translucide.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O et RO
+: Les fondants alcalins (Na₂O, K₂O, Li₂O) et les fondants alcalino-terreux (CaO, MgO, BaO, SrO, avec ZnO).
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Écaillage
+: L’émail qui s’écaille sur les bords parce qu’il est trop comprimé ; un danger sur les pièces utilitaires.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Silice (SiO₂)
+: Le vitrifiant ; appelée aussi silex ou quartz.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Rapport silice/alumine
+: La silice divisée par l’alumine dans la formule de Seger : plus il est haut, plus l’émail tend vers le brillant ; plus il est bas, vers le mat.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Barbotine et engobe
+: De l’argile dans l’eau ; un engobe est un revêtement proche de la barbotine, avec plus de matières non argileuses.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Densité
+: Le poids d’un bain comparé à celui du même volume d’eau.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Stabilisant
+: Un oxyde, surtout l’alumine, qui rend l’émail en fusion plus visqueux et apporte de la résistance.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Grès
+: Une terre moyenne ou haute température (vers les cônes 5–10) qui devient vitrifiée ou presque.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Thixotropie
+: Couler quand on remue, prendre en un gel mou au repos.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Couleur sous émail
+: Un décor de barbotine colorée ou d’oxydes, en général sous un émail transparent.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Formule de Seger (UMF, formule moléculaire unitaire)
+: Les oxydes d’un émail en nombres de molécules, ramenés pour que les fondants totalisent 1.
 
 Vitrification
-: A body becoming glassy and non-porous in firing.
+: Le passage d’une terre à l’état vitreux et non poreux pendant la cuisson.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Cire de réserve
+: De la cire posée là où l’émail ne doit pas aller, en général le pied.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+Carbonate de calcium
+: Le principal fondant calcique ; perd environ 44 % de son poids à la cuisson, sous forme de dioxyde de carbone.
 
-## Sources {#sources lang=en}
+## Sources {#sources}
 
-- [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
-- [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
-- [Glazy Help: Raw materials](https://help.glazy.org/concepts/materials)
-- [Glazy Help: Glossary](https://help.glazy.org/concepts/glossary)
-- [Glazy Help: Analyses](https://help.glazy.org/concepts/analyses)
-- [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
-- [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
-- [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
-- [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
-- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
-- [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
-- [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
-- [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
-- [Digitalfire: Limit formula](https://digitalfire.com/glossary/limit+formula)
-- [Digitalfire: Glaze crazing](https://digitalfire.com/glossary/glaze+crazing)
-- [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
-- [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
-- [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
-- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
-- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
-- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
-- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
-- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
-- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
-- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
-- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
-- [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
-- [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
-- [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
-- [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
-- [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
-- [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
-- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
-- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
-- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
-- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
-- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
-- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
-- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
-- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
-- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
-- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
-- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
-- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
-- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
-- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
-- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
-- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [Glazy Help : Glaze](https://help.glazy.org/concepts/glaze)
+- [Glazy Help : Oxides](https://help.glazy.org/concepts/oxides)
+- [Glazy Help : Raw materials](https://help.glazy.org/concepts/materials)
+- [Glazy Help : Glossary](https://help.glazy.org/concepts/glossary)
+- [Glazy Help : Analyses](https://help.glazy.org/concepts/analyses)
+- [Glazy Help : Firing](https://help.glazy.org/concepts/firing)
+- [Glazy Help : Defects](https://help.glazy.org/concepts/defects)
+- [Glazy Help : Specific gravity](https://help.glazy.org/testing/specific-gravity)
+- [Orton Ceramic Foundation : Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Digitalfire : Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire : Bentonite](https://digitalfire.com/material/bentonite)
+- [Digitalfire : Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
+- [Digitalfire : LOI](https://digitalfire.com/glossary/loi)
+- [Digitalfire : Frit](https://digitalfire.com/glossary/frit)
+- [Digitalfire : Limit formula](https://digitalfire.com/glossary/limit+formula)
+- [Digitalfire : Glaze crazing](https://digitalfire.com/glossary/glaze+crazing)
+- [Digitalfire : Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
+- [Digitalfire : Specific gravity](https://digitalfire.com/glossary/specific+gravity)
+- [Digitalfire : Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire : Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire : Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire : Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire : Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire : Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, « Influences of variable silica and alumina on porcelain glazes of constant RO », Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network : Techno File: Breaking the Stull chart (Marzano, McComb et Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey : US producers of feldspar and nepheline syenite in 2023 (tableau du Minerals Yearbook, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
+- [Ceramic Arts Network : Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
+- [Ceramic Arts Network : An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
+- [Ceramic Arts Network : 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
+- [Glendale Community College : Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
+- [Potclays : The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
+- [US FDA : Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
+- [EUR-Lex : Directive 84/500/CEE du Conseil, du 15 octobre 1984, relative au rapprochement des législations des États membres en ce qui concerne les objets céramiques destinés à entrer en contact avec les denrées alimentaires](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308 : règlement néerlandais du 23 avril 2026 appliquant la décision Benelux sur les objets céramiques en contact avec les denrées alimentaires](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
+- [eCFR : 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 janvier 1994 : Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS : The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS : Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS : Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University : Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC : Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation : Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays : How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire : B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network : Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network : Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network : Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center : The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire : Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire : Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
 - [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

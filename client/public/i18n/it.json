@@ -9,6 +9,7 @@
     "homeSafety": "Non avvelenare la propria famiglia - Glazecalc",
     "firing": "Cuocere in un forno semplice - Glazecalc",
     "learnWithJohnBritt": "Imparare con il corso gratuito sugli smalti di John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Insegnare il calcolo degli smalti - Glazecalc",
     "about": "Informazioni - Glazecalc",
     "privacy": "Privacy - Glazecalc",
     "terms": "Condizioni d’uso - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Approvare una modifica - Glazecalc",
     "cones": "Tabella dei coni: temperature dei coni Orton e SK - Glazecalc",
     "materials": "Materiali standard per smalti: analisi e pericoli - Glazecalc",
-    "materialInfo": "{name}: analisi degli ossidi e pericoli - Glazecalc"
+    "materialInfo": "{name}: analisi degli ossidi e pericoli - Glazecalc",
+    "famousGlazes": "Smalti famosi - Glazecalc",
+    "famousGlaze": "Smalto {name} - Glazecalc"
   },
   "nav": {
     "skip": "Vai al contenuto",
@@ -177,6 +180,7 @@
     "homeSafety": "Cosa fare se un bambino o animale ingerisce un materiale per smalti, e come rendere sicuri per la famiglia materiali, polvere, forno e ceramiche fatte a mano.",
     "firing": "Come cuocere in un forno elettrico: scegliere, posizionare e leggere i coni, e seguire curve di cottura pubblicate per biscotto e smalto, con tabella dei coni.",
     "learnWithJohnBritt": "Una guida al corso online gratuito sugli smalti di John Britt: i suoi video unità per unità, con le guide di Glazecalc ed esercizi nel calcolatore.",
+    "teachingGlazeCalculation": "6 lezioni per insegnare la formula di Seger (UMF): materiali e provini triassiali, moli, dalla ricetta alla formula e ritorno, e difetti degli smalti, con esempi svolti e schede da stampare.",
     "advice": "Consigli pratici per miscelare, smaltare e cuocere, da Glazecalc, più i propri consigli. Gratuito per chi fa ceramica.",
     "about": "Glazecalc: calcolatore di chimica degli smalti ceramici e quaderno di laboratorio, gratuito e open source. Come calcola la formula di Seger (UMF) e com’è fatto.",
     "privacy": "Come Glazecalc tratta i dati: niente pubblicità, statistiche o tracciamento, e nulla viene venduto. Cosa si conserva, perché e come esercitare i propri diritti.",
@@ -187,6 +191,8 @@
     "materials": "I materiali dell’elenco standard di Glazecalc, da feldspati e argille a fritte e fonti di boro, con analisi degli ossidi, formula di Seger e pericoli.",
     "materialInfo": "{name}: analisi degli ossidi, formula di Seger, perdita al fuoco e pericoli nell’elenco standard di Glazecalc.",
     "materialInfoLong": "{name} nell’elenco standard di materiali per smalti di Glazecalc: analisi degli ossidi, contributo alla formula di Seger, perdita al fuoco e pericoli.",
+    "famousGlazes": "Smalti ceramici famosi di tutto il mondo: per ciascuno la ricetta tradizionale o l’analisi storica, la formula di Seger e una versione con i materiali in vendita dove si trova.",
+    "famousGlaze": "Smalto {name} ({native}): la ricetta tradizionale o l’analisi storica, la cottura, la formula di Seger e le fonti, e una versione con i materiali in vendita dove si trova.",
     "imageAlt": "Il logo di Glazecalc e il suo titolo, chimica degli smalti gratuita per ceramisti, accanto alla foto di coni pirometrici cotti."
   },
   "notices": {

@@ -9,6 +9,7 @@
     "homeSafety": "Vergiften Sie Ihre Familie nicht - Glazecalc",
     "firing": "Brennen mit einem einfachen Ofen - Glazecalc",
     "learnWithJohnBritt": "Lernen mit John Britts kostenlosem Glasurkurs - Glazecalc",
+    "teachingGlazeCalculation": "Glasurberechnung unterrichten - Glazecalc",
     "about": "Über Glazecalc",
     "privacy": "Datenschutz - Glazecalc",
     "terms": "Nutzungsbedingungen - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Eine Änderung genehmigen - Glazecalc",
     "cones": "Kegeltabelle: Temperaturen der Orton- und SK-Kegel - Glazecalc",
     "materials": "Standard-Glasurrohstoffe: Analyse und Gefahren - Glazecalc",
-    "materialInfo": "{name}: Oxidanalyse und Gefahren - Glazecalc"
+    "materialInfo": "{name}: Oxidanalyse und Gefahren - Glazecalc",
+    "famousGlazes": "Berühmte Glasuren - Glazecalc",
+    "famousGlaze": "Glasur {name} - Glazecalc"
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -177,6 +180,7 @@
     "homeSafety": "Was tun, wenn ein Kind oder Haustier einen Glasurrohstoff verschluckt, und wie Rohstoffe, Staub, Ofen und handgemachte Keramik für Ihre Familie sicher bleiben.",
     "firing": "Wie Sie einen Elektroofen brennen: Kegel wählen, aufstellen und ablesen und veröffentlichten Brennkurven für Schrüh- und Glasurbrand folgen, mit Kegeltabelle.",
     "learnWithJohnBritt": "Begleiter zu John Britts kostenlosem Online-Glasurkurs: seine Videos Einheit für Einheit, mit Anleitungen von Glazecalc und Übungen im Glasurrechner.",
+    "teachingGlazeCalculation": "6 Einheiten, um die Segerformel (UMF) zu unterrichten: Rohstoffe und Dreistoffmischungen, Mol, vom Rezept zur Formel und zurück und Glasurfehler, mit Rechenbeispielen und Arbeitsblättern zum Ausdrucken.",
     "advice": "Praktische Tipps von Glazecalc zum Anmischen, Glasieren und Brennen, dazu Ihre eigenen Tipps. Kostenlos für Töpferei und Keramik.",
     "about": "Glazecalc ist ein kostenloser Open-Source-Rechner für Glasurchemie, mit Notizbuch. Sehen Sie, wie er die Segerformel (UMF) berechnet und wie er aufgebaut ist.",
     "privacy": "Wie Glazecalc mit Ihren Daten umgeht: keine Werbung, keine Analyse, kein Tracking, kein Verkauf. Was gespeichert wird, warum und wie Sie Ihre Rechte nutzen.",
@@ -187,6 +191,8 @@
     "materials": "Glasurrohstoffe aus der Standardbibliothek von Glazecalc, von Feldspäten und Tonen bis zu Fritten und Borquellen, jeweils mit Oxidanalyse, Segerformel und Gefahren.",
     "materialInfo": "{name}: Oxidanalyse, Segerformel, Glühverlust und Gefahren des Glasurrohstoffs in der Standardbibliothek von Glazecalc.",
     "materialInfoLong": "{name} in der Standardbibliothek der Glasurrohstoffe von Glazecalc: Oxidanalyse, Beitrag zur Segerformel, Glühverlust und Gefahren.",
+    "famousGlazes": "Berühmte Glasuren aus aller Welt: das traditionelle Rezept oder die historische Analyse jeder Glasur, ihre Segerformel und eine Fassung aus den Rohstoffen, die es dort gibt, wo Sie einkaufen.",
+    "famousGlaze": "Glasur {name} ({native}): ihr traditionelles Rezept oder ihre historische Analyse, Brand, Segerformel und Quellen und eine Fassung aus den Rohstoffen, die es dort gibt, wo Sie einkaufen.",
     "imageAlt": "Das Glazecalc-Logo und seine Überschrift, kostenlose Glasurchemie für die Töpferei, neben einem Foto gebrannter Kegelsätze."
   },
   "notices": {

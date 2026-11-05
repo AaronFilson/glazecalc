@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Une partie de cette page n’est pas encore traduite : elle s’affiche donc en anglais.",
+  "index": {
+    "crumb": "Émaux célèbres",
+    "title": "Émaux célèbres",
+    "lead": "Des émaux connus dans le monde entier, chacun fait de ses matières locales traditionnelles, avec sa formule de Seger et une version faite avec les matières vendues là où vous êtes.",
+    "listHeading": "Les émaux",
+    "more": "D’autres émaux vont venir : chacun est ajouté quand sa recette et ses matières reposent sur au moins trois sources lues."
+  },
+  "glaze": {
+    "lead": "Un émail célèbre ({native}) : sa recette ou son analyse traditionnelle, sa cuisson, et une version faite avec les matières vendues là où vous êtes.",
+    "aboutHeading": "À propos de l’émail {name}",
+    "nativeName": "Nom d’origine",
+    "origin": "Où",
+    "period": "Quand",
+    "firing": "Cuisson",
+    "cone": "cône {cone}",
+    "historyOnly": "Pour l’histoire seulement : cet émail était fait avec du plomb. Son analyse est montrée comme histoire, pas comme une recette à préparer. La version ci-dessous est un autre émail, sans plomb.",
+    "recipeHeading": "La recette traditionnelle",
+    "material": "Matière",
+    "amount": "Quantité",
+    "unityHeading": "Formule de Seger",
+    "analysisHeading": "Analyse historique",
+    "oxide": "Oxyde",
+    "percent": "% en poids",
+    "useHeading": "Essayer",
+    "open": "Ouvrir cette recette",
+    "openLeadFree": "Ouvrir la version sans plomb",
+    "leadFreeTitle": "Style {name}, sans plomb",
+    "allLink": "Tous les émaux célèbres",
+    "safetyHeading": "Sécurité",
+    "safeMixing": "Préparation en sécurité et ventilation",
+    "firingGuide": "Cuire dans un four simple",
+    "makingGuide": "Comment préparer un émail",
+    "sourcesHeading": "Sources",
+    "link": "Ouvrir",
+    "opened": "lu le {date}"
+  },
+  "local": {
+    "heading": "Avec vos matières locales",
+    "leadFreeHeading": "Version sans plomb",
+    "intro": "La formule de Seger de la recette traditionnelle, faite avec les matières standard vendues là où vous achetez. Choisissez votre lieu d’achat pour la voir.",
+    "region": "Lieu d’achat des matières",
+    "proposal": "Les matières propres à la proposition",
+    "pick": "Choisir…",
+    "untested": "Calculé, pas encore testé en cuisson.",
+    "testFirst": "Cuisez des tessons d’essai avant de l’utiliser sur une pièce, quelle qu’elle soit, et testez le relargage d’une surface en contact avec les aliments.",
+    "untestedNote": "Calculé, pas encore testé en cuisson : cuisez des tessons d’essai avant de l’utiliser.",
+    "close": "Le résultat est proche de la formule visée.",
+    "fair": "Le résultat est assez proche de la formule visée.",
+    "poor": "Ces matières ne permettent pas d’approcher la formule visée.",
+    "none": "Les matières vendues à cet endroit ne permettent pas de le faire.",
+    "choose": "Choisissez votre lieu d’achat pour le voir fait avec les matières vendues sur place."
+  },
+  "atmospheres": {
+    "oxidation": "oxydation",
+    "reduction": "réduction",
+    "neutral": "neutre",
+    "wood": "cuisson au bois",
+    "salt": "cuisson au sel",
+    "soda": "cuisson à la soude"
+  }
+}

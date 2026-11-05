@@ -9,6 +9,7 @@
     "homeSafety": "Não envenene sua família - Glazecalc",
     "firing": "Queima em um forno simples - Glazecalc",
     "learnWithJohnBritt": "Aprenda com o curso gratuito de esmaltes de John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Ensinar o cálculo de esmaltes - Glazecalc",
     "about": "Sobre - Glazecalc",
     "privacy": "Privacidade - Glazecalc",
     "terms": "Termos de uso - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Aprovar uma alteração - Glazecalc",
     "cones": "Tabela de cones: temperaturas dos cones Orton e SK - Glazecalc",
     "materials": "Matérias-primas padrão para esmaltes: análise e riscos - Glazecalc",
-    "materialInfo": "{name}: análise de óxidos e riscos - Glazecalc"
+    "materialInfo": "{name}: análise de óxidos e riscos - Glazecalc",
+    "famousGlazes": "Esmaltes famosos - Glazecalc",
+    "famousGlaze": "Esmalte {name} - Glazecalc"
   },
   "nav": {
     "skip": "Ir para o conteúdo",
@@ -177,6 +180,7 @@
     "homeSafety": "O que fazer se uma criança ou animal engolir matéria-prima de esmalte, e como manter matérias-primas, poeira, forno e peças artesanais seguros perto da família.",
     "firing": "Como queimar um forno elétrico: escolher, colocar e ler cones e seguir curvas de queima publicadas para biscoito e esmalte, com uma tabela de cones.",
     "learnWithJohnBritt": "Complemento ao curso gratuito de esmaltes de John Britt: os vídeos, unidade a unidade, com guias do Glazecalc para ler e exercícios para a calculadora.",
+    "teachingGlazeCalculation": "6 aulas para ensinar a fórmula de Seger: matérias-primas e provas triaxiais, mols, da receita à fórmula e de volta, e defeitos de esmalte, com exemplos resolvidos e fichas para imprimir.",
     "advice": "Dicas práticas sobre mistura, esmaltação e queima, do Glazecalc, e as suas próprias dicas. Gratuito para ceramistas.",
     "about": "O Glazecalc é uma calculadora de química de esmaltes e caderno, gratuito e de código aberto. Veja como ele calcula a fórmula de Seger e como é feito.",
     "privacy": "Como o Glazecalc trata seus dados: sem anúncios, sem análises e sem rastreamento, e nada é vendido. O que é mantido, por quê e como usar seus direitos.",
@@ -187,6 +191,8 @@
     "materials": "As matérias-primas da biblioteca padrão do Glazecalc, de feldspatos e argilas a fritas e fontes de boro, com análise de óxidos, fórmula de Seger e riscos.",
     "materialInfo": "{name}: análise de óxidos, fórmula de Seger, perda ao fogo e riscos na biblioteca padrão do Glazecalc.",
     "materialInfoLong": "{name} na biblioteca padrão de matérias-primas para esmaltes do Glazecalc: análise de óxidos, contribuição para a fórmula de Seger, perda ao fogo e riscos.",
+    "famousGlazes": "Esmaltes famosos do mundo todo: a receita tradicional ou a análise histórica de cada esmalte, sua fórmula de Seger e uma versão com as matérias-primas vendidas onde você está.",
+    "famousGlaze": "Esmalte {name} ({native}): sua receita tradicional ou análise histórica, a queima, a fórmula de Seger e as fontes, e uma versão com as matérias-primas vendidas onde você está.",
     "imageAlt": "O logotipo do Glazecalc e seu título, química de esmaltes gratuita para ceramistas, ao lado de uma foto de conjuntos de cones queimados."
   },
   "notices": {

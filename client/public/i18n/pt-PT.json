@@ -9,6 +9,7 @@
     "homeSafety": "Não envenene a sua família - Glazecalc",
     "firing": "Cozer num forno simples - Glazecalc",
     "learnWithJohnBritt": "Aprender com o curso gratuito de vidrados de John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Ensinar o cálculo de vidrados - Glazecalc",
     "about": "Sobre - Glazecalc",
     "privacy": "Privacidade - Glazecalc",
     "terms": "Termos de utilização - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Aprovar uma alteração - Glazecalc",
     "cones": "Tabela de cones: temperaturas dos cones Orton e SK - Glazecalc",
     "materials": "Matérias-primas padrão para vidrados: análise e perigos - Glazecalc",
-    "materialInfo": "{name}: análise de óxidos e perigos - Glazecalc"
+    "materialInfo": "{name}: análise de óxidos e perigos - Glazecalc",
+    "famousGlazes": "Vidrados famosos - Glazecalc",
+    "famousGlaze": "Vidrado {name} - Glazecalc"
   },
   "nav": {
     "skip": "Saltar para o conteúdo",
@@ -177,6 +180,7 @@
     "homeSafety": "O que fazer se uma criança ou um animal engolir matéria-prima de vidrado, e como manter seguros em casa as matérias-primas, o pó, o forno e as peças artesanais.",
     "firing": "Como cozer num forno elétrico: escolher, colocar e ler cones, e seguir curvas de cozedura publicadas para chacota e vidrado, com uma tabela de cones.",
     "learnWithJohnBritt": "Um complemento ao curso online gratuito de vidrados de John Britt: os vídeos unidade a unidade, com guias do Glazecalc e exercícios na calculadora.",
+    "teachingGlazeCalculation": "6 sessões para ensinar a fórmula de Seger (UMF): matérias-primas e testes triaxiais, moles, da receita à fórmula e de volta, e defeitos dos vidrados, com exemplos resolvidos e fichas para imprimir.",
     "advice": "Conselhos práticos para misturar, vidrar e cozer, do Glazecalc, e também os seus próprios conselhos. Gratuito, para ceramistas.",
     "about": "Calculadora de química de vidrados cerâmicos e caderno, gratuitos e de código aberto. Veja como o Glazecalc calcula a fórmula de Seger (UMF) e como é feito.",
     "privacy": "Como o Glazecalc trata os dados: sem anúncios, análises de utilização nem rastreio, e nada é vendido. O que é guardado, porquê e como exercer os seus direitos.",
@@ -187,6 +191,8 @@
     "materials": "As matérias-primas da biblioteca padrão do Glazecalc, de feldspatos e argilas a fritas e fontes de boro, com análise de óxidos, fórmula de Seger e perigos.",
     "materialInfo": "{name}: análise de óxidos, fórmula de Seger, perda ao fogo e perigos na biblioteca padrão do Glazecalc.",
     "materialInfoLong": "{name} na biblioteca padrão de matérias-primas para vidrados do Glazecalc: análise de óxidos, contribuição para a fórmula de Seger, perda ao fogo e perigos.",
+    "famousGlazes": "Vidrados famosos de todo o mundo: a receita tradicional ou a análise histórica de cada vidrado, a sua fórmula de Seger e uma versão com as matérias-primas vendidas onde está.",
+    "famousGlaze": "Vidrado {name} ({native}): a receita tradicional ou a análise histórica, a cozedura, a fórmula de Seger e as fontes, e uma versão com as matérias-primas vendidas onde está.",
     "imageAlt": "O logótipo do Glazecalc e o seu título, química de vidrados gratuita para ceramistas, ao lado de uma fotografia de conjuntos de cones depois da cozedura."
   },
   "notices": {

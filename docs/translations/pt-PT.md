@@ -547,19 +547,27 @@ cerâmicos". Descriptions stay at about 160 characters and add nothing the Engli
 
 ## 5. Terms added in the catch-up (2026-10-14)
 
-| English                                      | European Portuguese                       | Notes                                                                                          |
-| -------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| SK cones (JIS R 8101)                        | cones SK                                  | Always "SK" before the number; never converted to Orton, never "Seger".                        |
-| Kyoto cones                                  | cones de Quioto                           | 京都ゼーゲル; a different series from SK to JIS.                                               |
-| control concentration (管理濃度)             | concentração de controlo                  | Japan's yardstick for a work area's air, not a personal exposure limit.                        |
-| link (in an email)                           | ligação                                   | As in the password-reset messages.                                                             |
-| Sign out everywhere                          | Terminar sessão em todos os dispositivos  | "Keep me signed in on this device" → "Manter a sessão iniciada neste dispositivo".             |
-| Download my data                             | Transferir os meus dados                  |                                                                                                |
-| controller (GDPR)                            | responsável pelo tratamento               | The RGPD's Portuguese term; "Article 6(1)(b)" → "artigo 6.º, n.º 1, alínea b), do RGPD".       |
-| Standard Contractual Clauses                 | cláusulas contratuais-tipo                | EU-US Data Privacy Framework → Quadro de Privacidade de Dados UE–EUA.                          |
-| logs (server)                                | registos (logs)                           | Kept apart from firing logs by the "(logs)".                                                   |
-| trial                                        | período de experiência                    | In the privacy page, where _experiência_ alone could mislead.                                  |
-| prefecture (Japan)                           | prefeitura                                |                                                                                                |
-| sake warmer                                  | aquecedor de saqué                        | pt-PT _saqué_.                                                                                 |
-| Japan Poison Information Center              | Centro de Informação Antivenenos do Japão | The native name stays in brackets: "…, Osaca (大阪中毒110番)", "…, Tsukuba (つくば中毒110番)". |
-| National Poison Information Centre (Türkiye) | Centro Nacional de Informação Antivenenos | "(Ulusal Zehir Danışma Merkezi, UZEM)" stays as written.                                       |
+| English                                      | European Portuguese                                 | Notes                                                                                              |
+| -------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)                        | cones SK                                            | Always "SK" before the number; never converted to Orton, never "Seger".                            |
+| Kyoto cones                                  | cones de Quioto                                     | 京都ゼーゲル; a different series from SK to JIS.                                                   |
+| control concentration (管理濃度)             | concentração de controlo                            | Japan's yardstick for a work area's air, not a personal exposure limit.                            |
+| link (in an email)                           | ligação                                             | As in the password-reset messages.                                                                 |
+| Sign out everywhere                          | Terminar sessão em todos os dispositivos            | "Keep me signed in on this device" → "Manter a sessão iniciada neste dispositivo".                 |
+| Download my data                             | Transferir os meus dados                            |                                                                                                    |
+| controller (GDPR)                            | responsável pelo tratamento                         | The RGPD's Portuguese term; "Article 6(1)(b)" → "artigo 6.º, n.º 1, alínea b), do RGPD".           |
+| Standard Contractual Clauses                 | cláusulas contratuais-tipo                          | EU-US Data Privacy Framework → Quadro de Privacidade de Dados UE–EUA.                              |
+| logs (server)                                | registos (logs)                                     | Kept apart from firing logs by the "(logs)".                                                       |
+| trial                                        | período de experiência                              | In the privacy page, where _experiência_ alone could mislead.                                      |
+| prefecture (Japan)                           | prefeitura                                          |                                                                                                    |
+| sake warmer                                  | aquecedor de saqué                                  | pt-PT _saqué_.                                                                                     |
+| Japan Poison Information Center              | Centro de Informação Antivenenos do Japão           | The native name stays in brackets: "…, Osaca (大阪中毒110番)", "…, Tsukuba (つくば中毒110番)".     |
+| National Poison Information Centre (Türkiye) | Centro Nacional de Informação Antivenenos           | "(Ulusal Zehir Danışma Merkezi, UZEM)" stays as written.                                           |
+| synthetic ash (合成土灰), synthetic stand-in | cinza sintética; substituto sintético               | Round 14. Descriptive, after _cinza de madeira_ (CS); no Portuguese product found. Reviewer check. |
+| rice-straw ash (藁灰)                        | cinza de palha de arroz                             | Descriptive; no Portuguese source found.                                                           |
+| isu ash (柞灰)                               | cinza de isu                                        | The Japanese name kept; no Portuguese source found.                                                |
+| porcelain stone (瓷石)                       | pedra de porcelana                                  | Descriptive, beside _pedra da Cornualha_ (CS, R2W). Reviewer check.                                |
+| product specification (Eti Maden colemanite) | especificação do produto                            | "limits, not a typical analysis" → limites, não uma análise típica.                                |
+| Stull chart (unfused, semi-matte, bright)    | gráfico de Stull (não fundido, semimate, brilhante) | As already in recipe/pt-PT.json (stull.*).                                                         |
+| Famous glazes                                | Vidrados famosos                                    | New scope (famous/pt-PT.json).                                                                     |
+| bole red (İznik)                             | vermelho de bolo                                    | _bolo arménio_ is the pigment's Portuguese name (Priberam _bolo_). Reviewer check.                 |

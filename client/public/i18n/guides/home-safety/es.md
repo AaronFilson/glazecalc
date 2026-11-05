@@ -59,31 +59,31 @@ Los **colorantes** son los óxidos metálicos y los pigmentos{{en: stains}} que 
 
 El principal peligro del plomo es distinto: no una cucharada, sino pequeñas cantidades de polvo tragadas durante semanas o meses, sin ninguna señal de alarma (vea «El plomo y los niños», más abajo).
 
-## Storing materials at home {#storing-materials lang=en}
+## Cómo guardar los materiales en casa {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Ningún organismo oficial fija normas para guardar materiales para esmaltes{{en: glaze materials}} en casa, pero las páginas de salud y seguridad coinciden: mantenga el trabajo en su propio espacio, lejos de los niños. El Departamento de Salud de Pensilvania, al hablar de las aficiones que usan plomo, dice: «Utilice un espacio de trabajo o un garaje destinado a su afición y mantenga a los niños alejados de esta zona».
 
-### A storage checklist
+### Lista de comprobación para el almacenamiento
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Son reglas generales de prevención de intoxicaciones, aplicadas a los esmaltes. Ninguna norma de cerámica las establece, pero le recomendamos todas:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Guarde los materiales secos bajo llave: en un armario, o en una habitación, un garaje o un cobertizo que se cierre con llave. Un estante alto ayuda, pero los niños trepan. Si al principio solo puede guardar bajo llave unas pocas cosas, empiece por los materiales solubles y los colorantes{{en: colorants}}.
+- Conserve los materiales en sus sacos o botes originales. Si pasa alguno a otro recipiente, etiquételo con el nombre exactamente como figura en el saco.
+- No use nunca envases de comida o bebida (tarrinas de yogur, tarros, botellas) para materiales para esmaltes, aunque estén etiquetados. Un niño sabe lo que contiene una tarrina de yogur.
+- Deje las herramientas del taller (cazos, cucharas, batidores, tamices, básculas) en el taller. No use nunca utensilios de cocina para el esmalte, ni herramientas de esmaltar para la comida.
+- Guarde los esmaltes en suspensión en cubos etiquetados y con la tapa puesta.
+- Tenga la ficha de datos de seguridad de cada material junto a él, en papel o en el teléfono.
+- No tenga en la cocina nada del taller: ni sacos, ni cubos, ni herramientas, ni probetas{{en: test tiles}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Para más detalles sobre cómo comprar y guardar los materiales, vea [Cómo preparar un esmalte](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Residuos de esmalte y agua de enjuague
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+No vierta nunca esmalte, ni el agua en la que haya enjuagado herramientas de esmaltar, por el fregadero ni en el jardín. El Crafts Council del Reino Unido sugiere un cubo de agua aparte para lavarse las manos y lavar pinceles, tamices y herramientas. Déjelo reposar toda la noche, retire el agua clara de encima, luego seque el esmalte que se ha posado en el fondo y tírelo a la basura (acaba en un vertedero), nunca por el desagüe.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Le recomendamos tapar ese cubo: el lodo contiene los mismos metales que el esmalte, y las mascotas beben agua estancada. Las normas sobre cómo deshacerse de los residuos varían de un lugar a otro, así que consulte la ficha de datos de seguridad de cada producto y, si tiene dudas, pregunte a su ayuntamiento o a la compañía de aguas.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Algunos talleres cuecen el lodo seco antes de tirarlo. Lo ponen en un cuenco de sobra que se va a sacrificar: después de la cocción, el cuenco no se puede volver a usar. Llene el cuenco solo hasta una cuarta parte, porque el lodo hace espuma y burbujea al fundirse, y tápelo con un plato. Colóquelo sobre una placa con protector de placas o sobre una placa de sobra, por si se desborda. La cocción convierte el lodo en vidrio, que retiene los metales con mucha más fuerza que el polvo suelto, así que es más seguro en un vertedero. Manipule el lodo seco como manipularía el esmalte seco: con una mascarilla autofiltrante y sin levantar polvo.
 
 ## Cómo mantener el polvo dentro del taller {#keeping-dust-in-the-studio}
 
