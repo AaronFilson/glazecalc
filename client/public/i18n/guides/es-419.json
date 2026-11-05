@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Aprende con el curso gratuito de esmaltes de John Britt",
       "text": "Su curso gratuito en video en YouTube, unidad por unidad, con nuestras guías para leer y ejercicios para probar en Glazecalc. En inglés."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Enseñar el cálculo de esmaltes",
+      "text": "6 sesiones para una clase o un grupo de estudio, de las probetas triaxiales a la fórmula unitaria trabajada en los dos sentidos, con hojas de trabajo para imprimir."
     }
   },
   "more": "Más guías",
@@ -255,6 +259,8 @@
       "crazed": "cuarteado"
     },
     "keyBright": "Línea punteada: donde los esmaltes de Stull fueron más brillantes.",
-    "keyCrazed": "Rayado: donde se cuartearon."
+    "keyCrazed": "Rayado: donde se cuartearon.",
+    "note": "Una guía, no una predicción. R. T. Stull (Transactions of the American Ceramic Society, 1912) coció a cono 11 aproximadamente, con los fundentes fijos en 0.3 K₂O y 0.7 CaO; otros fundentes y otras cocciones mueven las regiones, y un esmalte que es mate solo porque quedó poco cocido puede aparecer igual como brillante. Las regiones son las que dibuja Glazy.",
+    "inGuide": "La sílice (SiO₂) en horizontal, de 1 a 7 aproximadamente, y la alúmina (Al₂O₃) en vertical, de 0 a 1, las dos de la fórmula unitaria. Unas cuñas se abren en abanico desde la izquierda: sin fundir arriba a la izquierda, luego mate, luego semimate. La parte sin sombrear a su derecha es brillante, y la línea punteada en ella es donde los esmaltes de Stull fueron más brillantes. Poco cocido está abajo a la derecha, con poca alúmina y mucha sílice. El rayado, en la parte baja del gráfico y en su lado izquierdo, es donde se cuartearon sus pruebas."
   }
 }

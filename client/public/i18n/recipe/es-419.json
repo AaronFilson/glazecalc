@@ -723,7 +723,8 @@
     "keyPoint": "Punto: este esmalte.",
     "keyBright": "Línea punteada: donde los esmaltes de Stull fueron más brillantes.",
     "keyLimits": "Líneas discontinuas y sombreado: los intervalos de sílice y alúmina de {name}.",
-    "keyCrazed": "Rayado: donde se cuartearon."
+    "keyCrazed": "Rayado: donde se cuartearon.",
+    "note": "Una guía, no una predicción. R. T. Stull (Transactions of the American Ceramic Society, 1912) coció a cono 11 aproximadamente, con los fundentes fijos en 0.3 K₂O y 0.7 CaO; otros fundentes y otras cocciones mueven las regiones, y un esmalte que es mate solo porque quedó poco cocido puede aparecer igual como brillante. Las regiones son las que dibuja Glazy."
   },
   "slurry": {
     "heading": "Gravedad específica y agua",
@@ -751,6 +752,17 @@
       "pint": "El peso por pinta que quieres, oz"
     },
     "drySg": "GE de los materiales secos",
+    "drySgEmpty": "Solo la necesitan los pesos en seco; el agua que hay que agregar no. Escríbela si la conoces.",
+    "drySgNeeded": "Escribe la GE de los materiales secos para ver el esmalte seco que hay en la cubeta y el agua para una tanda nueva.",
+    "estimate": {
+      "mineral": "Una estimación, {sg}, según de qué está hecho cada material: la densidad medida de su mineral. Cámbiala si sabes un valor mejor.",
+      "kind": "Una estimación, {sg}: los feldespatos y las arcillas pesan alrededor de 2.6. Cámbiala si sabes un valor mejor.",
+      "glass": "Una estimación, {sg}, calculada a partir de los óxidos de las fritas (son vidrio). Cámbiala si sabes un valor mejor.",
+      "mixed": "Una estimación, {sg}, a partir de cada material: la densidad medida de su mineral, alrededor de 2.6 para feldespatos y arcillas, y las fritas calculadas a partir de sus óxidos. Cámbiala si sabes un valor mejor.",
+      "leftOut": "Se dejaron fuera, porque no se conoce su GE: {names}.",
+      "none": "No hay estimación para esta receta: no se conoce la GE de {names}. Escríbela si la conoces.",
+      "was": "Se usa tu cifra. La estimación era {sg}; borra el campo para volver a ella."
+    },
     "batch": "Esmalte seco para una tanda nueva, {unit}",
     "contents": "Con GE {sg}, la cubeta contiene {glaze} de esmalte seco y {water} de agua.",
     "add": "Para llegar a GE {target}, agrega {water} de agua. Queda en alrededor de {volume}.",
@@ -758,6 +770,7 @@
     "already": "Ya está en GE {target}.",
     "mix": "Mezcla {glaze} de esmalte seco con {water} de agua para obtener alrededor de {volume} con GE {target}.",
     "badSg": "Una GE tiene que ser mayor que 1 (la del agua) y menor que la de los materiales secos, {dry}.",
+    "badSgWater": "Una GE tiene que ser mayor que 1 (la del agua).",
     "badDry": "La GE de los materiales secos tiene que ser mayor que 1.",
     "note": "El agua va en peso: un litro pesa un kilogramo, un galón estadounidense alrededor de 8.3 lb. El cálculo supone que los volúmenes se suman, lo cual es aproximado, no exacto: agrega el agua poco a poco, revuelve y vuelve a medir. Dos esmaltes con la misma GE pueden fluir de forma distinta.",
     "saveTarget": "Guardar GE {sg} como objetivo de esta receta",
