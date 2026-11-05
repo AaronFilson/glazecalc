@@ -721,7 +721,8 @@ describe('Sri Lanka and Nepal, as added', () => {
 
 // Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30; refrozen on 2026-10-31,
 // when Mexico, Argentina and Chile took Latin American Spanish (wave L1); refrozen on 2026-11-01, when Brazil took
-// Brazilian Portuguese (wave L1, the owner approved its standard sign-up notice).
+// Brazilian Portuguese (wave L1, the owner approved its standard sign-up notice); refrozen on 2026-11-05, when South
+// Africa got its first two shops.
 const LATAM_AFRICA_L0 = ['MX', 'BR', 'AR', 'CL', 'ZA', 'KE', 'GH'];
 
 describe('Latin America and Africa, as added', () => {
@@ -736,7 +737,7 @@ describe('Latin America and Africa, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('dfcab15109a1ed334d89fb61ac6922bf592483881fa2967695eb2e6645b2c087');
+    expect(hash).to.equal('2b451388b45e5d17ea21c99eb0c2c96f30d35585bc4da66e7139fd5275c2228b');
   });
 
   it('are, with the earlier snapshots, every region', () => {
