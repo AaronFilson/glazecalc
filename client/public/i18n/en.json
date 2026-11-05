@@ -36,7 +36,9 @@
     "confirm": "Approve a change - Glazecalc",
     "cones": "Cone chart: Orton and SK cone temperatures - Glazecalc",
     "materials": "Standard glaze materials: analysis and hazards - Glazecalc",
-    "materialInfo": "{name}: oxide analysis and hazards - Glazecalc"
+    "materialInfo": "{name}: oxide analysis and hazards - Glazecalc",
+    "famousGlazes": "Famous glazes - Glazecalc",
+    "famousGlaze": "{name} glaze - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",
@@ -187,6 +189,8 @@
     "materials": "The materials in Glazecalc's standard library, from feldspars and clays to frits and boron sources, each with its oxide analysis, unity formula and hazards.",
     "materialInfo": "{name}: oxide analysis, unity formula, loss on ignition and hazards in Glazecalc's standard library.",
     "materialInfoLong": "{name} in Glazecalc's standard library of glaze materials: its oxide analysis, unity formula contribution, loss on ignition and hazards.",
+    "famousGlazes": "Famous glazes from around the world: each glaze's traditional recipe or historic analysis, its unity formula, and a version from the materials sold where you are.",
+    "famousGlaze": "{name} ({native}) glaze: its traditional recipe or historic analysis, firing, unity formula and sources, and a version from the materials sold where you are.",
     "imageAlt": "The Glazecalc logo and its heading, free glaze chemistry for potters, beside a photo of fired cone packs."
   },
   "notices": {

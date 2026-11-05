@@ -1,0 +1,28 @@
+{
+  "slug": "fixture-celadon",
+  "fixture": true,
+  "published": true,
+  "names": { "en": "Fixture celadon", "de": "Test-Seladon" },
+  "native": { "name": "試験青磁", "lang": "ja" },
+  "origin": { "en": "The tests (never on the site)", "de": "Die Tests (nie auf der Website)" },
+  "period": { "en": "Today", "de": "Heute" },
+  "summary": { "en": "A test glaze that meets the publish bar.", "de": "Eine Testglasur." },
+  "safety": { "en": "Test safety note.", "de": "Testhinweis." },
+  "firing": { "cone": "10", "celsius": [1280, 1300], "atmosphere": "reduction", "sources": ["T1"] },
+  "recipe": {
+    "lines": [
+      { "material": "Custer Spar", "amount": 25 },
+      { "material": "Silica", "amount": 30 },
+      { "material": "Whiting", "amount": 20 },
+      { "material": "EPK Kaolin", "amount": 25 }
+    ],
+    "additives": [{ "material": "Red iron oxide", "amount": 1.5 }],
+    "sources": ["T2"]
+  },
+  "sources": [
+    { "id": "T1", "citation": "Test source one.", "url": "https://example.com/1", "opened": "2026-11-04" },
+    { "id": "T2", "citation": "Test source two.", "url": "https://example.com/2", "opened": "2026-11-04" },
+    { "id": "T3", "citation": "Test source three.", "isbn": "978-0-00-000000-0", "opened": "2026-11-04" }
+  ],
+  "guides": ["/guides/firing"]
+}
