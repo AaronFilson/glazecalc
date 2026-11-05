@@ -567,8 +567,9 @@ describe('regions before Turkey', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: the verification pass of 2026-10-19 changed Japan's #8000 note (who answers,
-    // what it costs), its food note (the 2025 revision's dates) and JSOH's check date; nothing else here.
-    expect(hash).to.equal('f6f6dcdea2cad5e8dfbfaa3865aea8f80bd5465ef06a087fcb9e7abea03a6150');
+    // what it costs), its food note (the 2025 revision's dates) and JSOH's check date. Again on 2026-11-05:
+    // Croatia lists Tapiker (the owner's browsing export, round 15).
+    expect(hash).to.equal('2fb19f3500e9e61387c615494f23982fbea54e5e55e3621b772c32829a4525d5');
   });
 });
 
@@ -591,8 +592,8 @@ describe('regions before Korea', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose (2026-10-19): Japan's, as above, and Türkiye's UZEM (free, for the public),
-    // its silica and mask check dates.
-    expect(hash).to.equal('6e08ef4ca5228633c811d5ff9a29e0656ccc8396ac2173f9c464ebcc92c66bb2');
+    // its silica and mask check dates. Again on 2026-11-05: Croatia lists Tapiker (round 15).
+    expect(hash).to.equal('3c56a61618dcedc97055e32169659a9a3b3a3ab9ffd68dfe675e97af640786e9');
   });
 });
 
@@ -618,7 +619,8 @@ describe('regions before China', () => {
     // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16). Again on
     // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
     // Again on 2026-10-20: Taiwan's 112 note says plainly what 112 does when a mobile has no signal.
-    expect(hash).to.equal('f0949b6b3e0b10dec5056af83dbb7d1857ea0953899336072d9b9aca0c5279c8');
+    // Again on 2026-11-05: Croatia lists Tapiker (round 15).
+    expect(hash).to.equal('35a96385c4d001dfabc376792ab1c7a3494b1b4fbd848ee67989e598b0d294d7');
   });
 });
 
@@ -644,8 +646,9 @@ describe('regions before Vietnam', () => {
     // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
     // Again on 2026-10-19, the verification pass: as above, and China's poison line, masks and food rules,
     // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
-    // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note.
-    expect(hash).to.equal('890ce072179d317b8c8d15cbff30f12ffe2e3238b7faa5818259f6a5cf04425e');
+    // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note. Again on 2026-11-05:
+    // Croatia lists Tapiker (round 15).
+    expect(hash).to.equal('df2401fe56368c89d1dddb6a1b96a0248ebe484c645166312359b60741214b0e');
   });
 });
 
@@ -669,8 +672,8 @@ describe('regions after the verification pass of 2026-10-19', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded.
-    expect(hash).to.equal('51953f47255b994f4303527c34134ce8378999ab5de09d975e15e064f4693185');
+    // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded. Again on 2026-11-05: Croatia lists Tapiker (round 15).
+    expect(hash).to.equal('b2c71a61cc102041155e693160e7fb445cfcda2d17d5b3c5007c2d733fbcc425');
   });
 });
 
@@ -722,7 +725,8 @@ describe('Sri Lanka and Nepal, as added', () => {
 // Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30; refrozen on 2026-10-31,
 // when Mexico, Argentina and Chile took Latin American Spanish (wave L1); refrozen on 2026-11-01, when Brazil took
 // Brazilian Portuguese (wave L1, the owner approved its standard sign-up notice); refrozen on 2026-11-05, when South
-// Africa got its first two shops.
+// Africa got its first two shops; refrozen again on 2026-11-05, when Mexico got CeramiColor and Materiales Lodosos
+// (the owner's browsing export, round 15).
 const LATAM_AFRICA_L0 = ['MX', 'BR', 'AR', 'CL', 'ZA', 'KE', 'GH'];
 
 describe('Latin America and Africa, as added', () => {
@@ -737,7 +741,7 @@ describe('Latin America and Africa, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('2b451388b45e5d17ea21c99eb0c2c96f30d35585bc4da66e7139fd5275c2228b');
+    expect(hash).to.equal('c43a758254420af4bed407380966be325d68452074e70a8f877fc6b2c37df21d');
   });
 
   it('are, with the earlier snapshots, every region', () => {
