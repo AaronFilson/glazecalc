@@ -22,7 +22,7 @@ export const libraryInfo = {
   manufacturer: String,
   // Hazard classification from a current safety data sheet, in a sentence or two.
   hazards: String,
-  // { name, url, date, kind }: kind is manufacturer, supplier, sds, digitalfire, glazy, book or theoretical.
+  // { name, url, date, kind }: kind is manufacturer, supplier, sds, digitalfire, glazy, book, research (a paper or test centre's report) or theoretical.
   source: { type: mongoose.Schema.Types.Mixed },
   // Stains, gums and silicon carbide add nothing to the unity formula.
   noChemistry: Boolean,
