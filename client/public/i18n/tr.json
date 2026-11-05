@@ -9,6 +9,7 @@
     "homeSafety": "Ailenizi zehirlemeyin - Glazecalc",
     "firing": "Basit bir fırında pişirim - Glazecalc",
     "learnWithJohnBritt": "John Britt’in ücretsiz sır kursuyla öğrenin - Glazecalc",
+    "teachingGlazeCalculation": "Sır hesabı öğretmek - Glazecalc",
     "about": "Hakkında - Glazecalc",
     "privacy": "Gizlilik - Glazecalc",
     "terms": "Kullanım koşulları - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Değişikliği onaylama - Glazecalc",
     "cones": "Piramit tablosu: Orton ve SK piramit sıcaklıkları - Glazecalc",
     "materials": "Standart sır hammaddeleri: analiz ve tehlikeler - Glazecalc",
-    "materialInfo": "{name}: oksit analizi ve tehlikeler - Glazecalc"
+    "materialInfo": "{name}: oksit analizi ve tehlikeler - Glazecalc",
+    "famousGlazes": "Ünlü sırlar - Glazecalc",
+    "famousGlaze": "{name} sırrı - Glazecalc"
   },
   "nav": {
     "skip": "İçeriğe geç",
@@ -177,6 +180,7 @@
     "homeSafety": "Çocuk veya evcil hayvan bir seramik sırı hammaddesini yutarsa ne yapmalı; hammaddeler, toz, fırın ve el yapımı ürünler aile çevresinde nasıl güvende tutulur.",
     "firing": "Elektrikli seramik fırınında pişirim: piramitleri seçin, yerleştirin, okuyun; bisküvi ve sırlı pişirim için yayımlanmış programları izleyin. Piramit tablosuyla.",
     "learnWithJohnBritt": "John Britt’in ücretsiz çevrim içi Glaze Course’una eşlik eder: videoları ünite ünite, Glazecalc rehberleri ve hesaplayıcıda denenecek alıştırmalarla.",
+    "teachingGlazeCalculation": "Seger formülünü (UMF) öğretmek için 6 ders: hammaddeler ve üçlü karışım karoları, mol, reçeteden formüle ve geri, sır kusurları; çözümlü örnekler ve yazdırılacak çalışma kâğıtları.",
     "advice": "Seramik sırı karıştırma, sırlama ve pişirim üzerine Glazecalc’tan pratik ipuçları ve kendi tavsiyeleriniz. Seramikçiler ve seramik sanatçıları için ücretsiz.",
     "about": "Glazecalc, ücretsiz ve açık kaynaklı bir seramik sır kimyası hesaplayıcısı ve defteridir. Seger formülünü (UMF) nasıl hesapladığını ve nasıl yapıldığını görün.",
     "privacy": "Glazecalc verilerinizi nasıl işler: reklam yok, analiz yok, izleme yok ve hiçbir şey satılmaz. Neler saklanır, neden ve haklarınızı nasıl kullanırsınız.",
@@ -187,6 +191,8 @@
     "materials": "Glazecalc’in standart kütüphanesindeki seramik sır hammaddeleri: feldspatlardan ve killerden fritlere ve bor kaynaklarına, oksit analizi, Seger formülü ve tehlikeleriyle.",
     "materialInfo": "{name}: Glazecalc’in standart kütüphanesinde oksit analizi, Seger formülü, kızdırma kaybı ve tehlikeler.",
     "materialInfoLong": "{name}, Glazecalc’in standart sır hammaddeleri kütüphanesinde: oksit analizi, Seger formülüne katkısı, kızdırma kaybı ve tehlikeler.",
+    "famousGlazes": "Dünyanın ünlü sırları: her sırrın geleneksel reçetesi ya da tarihî analizi, Seger formülü ve bulunduğunuz yerde satılan hammaddelerle bir sürümü.",
+    "famousGlaze": "{name} ({native}) sırrı: geleneksel reçetesi ya da tarihî analizi, pişirimi, Seger formülü ve kaynakları, ve bulunduğunuz yerde satılan hammaddelerle bir sürümü.",
     "imageAlt": "Glazecalc logosu ve başlığı, çömlekçiler için ücretsiz sır kimyası, pişmiş piramit gruplarının fotoğrafının yanında."
   },
   "notices": {

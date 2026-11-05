@@ -458,73 +458,73 @@ L&L と Bartlett のコントローラーは、オルトンコーン 04 に {{19
 
 手動の窯でも、同じ計画を手で行います。蓋を少し開けて支え、のぞき穴を開けたままゆっくり乾かし、スイッチを弱から中、強へと段階的に上げ、キルンシッターで焼成を終えます。公開されている手順は、下の「手動の窯の詳細」にあります。
 
-## Glaze firing {#glaze lang=en}
+## 本焼き {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+**本焼き**{{en: glaze firing}}では、素焼きの上で釉薬を溶かしてガラスにします。市販の低火度の釉薬の多くはオルトンコーン 06 か 05 用につくられていて（低火度の範囲はコーン 06〜04）、中火度の釉薬の多くはコーン 5〜6 用です。釉薬と粘土のラベルにあるコーンまで焼き、その番号を中心にした三本組のコーンを置いてください。釉薬が溶けるときに中で何が起きているかは、「[基礎から学ぶ釉薬](/guides/glazing-basics)」を参照してください。
 
-### Loading for a glaze firing
+### 本焼きの窯詰め
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- 施釉した作品は、互いにも壁にも触れてはいけません。約 ½ インチ（13 mm）あけてください。
+- 高台に釉を掛けないでおく（**高台の釉を拭き取る**）か、低火度の器なら、先のとがった小さな台である**トチン**の上に置いてください。炻器と磁器はトチンに載せるべきではありません。その温度ではトチンが食い込むからです。代わりに高火度用の棚板用アルミナ塗料か珪砂を使ってください。
+- 棚板の縁と、壁やキルンシッターとの間は、少なくとも 1 インチ（25 mm）あけてください。
 
-### Controller schedules
+### コントローラーのスケジュール
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L と Bartlett の本焼きのプリセット
+Label: 本焼きのプリセット
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| セグメント         |                         到達温度 |             Slow Glaze |             Fast Glaze |
+| ------------------ | -------------------------------: | ---------------------: | ---------------------: |
+| 1                  |               {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   独立したステップなし |
+| 2                  | 最高温度の {{250 °F; 139 °C}} 下 | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                  |                         最高温度 |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| 昇温時間（空の窯） |                                  |           約6½〜7½時間 |             約3〜4時間 |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: セグメント2の終了温度と最高温度（コーン別、L&L と Bartlett）
+Label: プリセットの目標温度
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| オルトンコーン | セグメント2の終了温度 |             最高温度 |
+| -------------- | --------------------: | -------------------: |
+| 06             |   {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04             |   {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6              |  {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+L&L が速い焼成について注意していることから、標準には Slow Glaze のほうが安全です。最高温度で 5〜10分を超える保持を加えるなら、その分だけ目標温度かコーンオフセットを下げるよう L&L は述べ、「高温での保持は、ヒーターと熱電対の消耗を早める」とも記しています。
 
-### Cone 6: drop-and-hold
+### オルトンコーン 6: ドロップ・アンド・ホールド
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+中火度の釉薬には、溶けた釉から泡となって抜けるガスによって、**ピンホール**{{en: pinholes}}（表面の小さな穴）やブク（泡）が残ることがあります。**ドロップ・アンド・ホールド**{{en: drop-and-hold}}のスケジュールでは、最高温度まで焼いたあと、約 {{100 °F; 56 °C}} 急に下げて、そこで保持します。Digitalfire の言葉では、「100°F 下げて保持すると、溶けた釉は泡をはじけさせるだけの粘性を持ちながら、その跡をふさぐこともできる」のです。
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS、オルトンコーン 6 のドロップ・アンド・ホールド
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| ステップ |                          速度 |             目標温度 | 保持                             |
+| -------- | ----------------------------: | -------------------: | -------------------------------- |
+| 1        |         {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60分                             |
+| 2        |        {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 任意で30分（泡の曇りを消すため） |
+| 3        |         {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10分。大きな窯では長めに         |
+| 4        | {{900 °F/h; 500 °C/h}} で降温 | {{2100 °F; 1148 °C}} | 30分                             |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS の所要時間は約9時間36分です。流れやすい釉薬では、Digitalfire は代わりに約 {{200 °F; 111 °C}} 下げます。下げすぎると「保持中に結晶ができるおそれがある」からです。最高温度の {{2200 °F; 1204 °C}} は、温度表のオルトンコーン 6 の {{2232 °F; 1222 °C}} より低い値です。Digitalfire によれば、ほとんどの窯は約 {{2200 °F; 1204 °C}} でコーン 6 に達します。お使いの窯で、三本組のコーンを使って確かめてください。
 
-### Slow cooling
+### 徐冷
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**徐冷**とは、温度が自然に下がるのに任せず、コントローラーで決まった速度で冷ますことです。Digitalfire の C6DHSC は、PLC6DS のあと {{2100 °F; 1148 °C}} から {{1400 °F; 760 °C}} まで {{150 °F/h; 83 °C/h}} で冷まし、そこで電源を切ります。これは「光沢と表面の質を高め」、ルチルの青を助けますが、徐冷は「マット感を強めることがある」うえ（あるマット釉はかさついた肌になりました）、窯のリレーの寿命を縮めることがあります。L&L も、オルトンコーン 6 用の徐冷プログラムを付けて窯を出荷しています。
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L「User 6」: オルトンコーン 6 の釉薬の徐冷
+Label: L&L の徐冷
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| ステップ |                         速度 |             目標温度 |
+| -------- | ---------------------------: | -------------------: |
+| 1        |                   全速で昇温 | {{2232 °F; 1222 °C}} |
+| 2        |                   全速で降温 | {{1900 °F; 1038 °C}} |
+| 3        | {{150 °F/h; 83 °C/h}} で降温 |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutt のコントローラーにも、同じように予熱と、一段階の冷却のオプションがあります。
 
-### On a manual kiln
+### 手動の窯の場合
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+手動の窯では、これらのスケジュールどおりには焼けませんが、計画は同じです。初めは穏やかに、中盤は一定に、終盤は見守りながら焼きます。Bracker's の低火度の本焼きスケジュールは、下の「手動の窯の詳細」にあります。それより高温のコーンでは、「コーン番号一つにつき平均15〜30分」を加えます。温度計（パイロメーター）と練習と記録があれば、Digitalfire がすすめるように、手でスイッチを下げて、ドロップ・アンド・ホールドや徐冷をおおよそまねることができます。
 
 ## 手動の窯の詳細 {#manual-kilns}
 

@@ -119,183 +119,183 @@ Label: 基本の原料セット
 
 Derek Au は一つのボウルに原料ごとに山を分けて量り入れるので、間違えてもすくって戻せます。原料ごとに風袋引きをせずに一つのバケツに量り入れる場合は、Glazecalc の累計が、各原料を入れたあとにはかりが示すべき値を教えてくれます。
 
-## Mixing and sieving {#mixing lang=en}
+## 混ぜ方とふるい {#mixing}
 
-### How much water
+### 水の量
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+情報源によって意見が分かれます。Derek Au は粉末 100 g あたり水 50 mL と濃い状態から始め、あとで水を足します。Potterycrafts は、ある粉末釉薬について 100 g あたり 65 mL としています。UT Austin は水と粉末を同じ重さにしており、Digitalfire が 20 kg の粉末を 20 kg の水に入れたときの比重は 1.46 でした。
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+水は足すのはすぐでも、抜くのには時間がかかるので、少なめから始めてください。私たちの目安は、**100 g あたり約 70〜80 mL** から始めることです（キログラムあたり 700〜800 mL、ポンドあたり約 11〜12 US fl oz）。その濃さで水になじませ、混ぜ、ふるいに通してから、比重がちょうどよくなるまで少しずつ水を足してください。水 1 mL の重さは 1 g なので、水は重さで量れます。入れすぎたら、釉薬を沈殿させてから、上の澄んだ水をスポンジで吸い取るか流して捨ててください。
 
-### Tools and water
+### 道具と水
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **プロペラミキサー**。Digitalfire は良いものを「欠かせない」としています。バケツでは、撹拌パドルを付けたコード式のドリルで十分です。UT Austin は釉薬が混ざったように見えてから少なくとも4〜5分回し、刃をバケツに当てないようにしています。刃がバケツのプラスチックを削り取ることがあるからです。
+- **ミキサー**。「少量の仕込みにとてもよく働く」（Digitalfire）。釉薬専用にしてください。絶対に台所用に戻してはいけません。
+- **泡立て器か棒**。撹拌機がないときの Zakin の選択です。
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+水もさまざまで、Digitalfire は水によって釉液のふるまいが変わると述べています。Derek Au は水道水が硬水なので、逆浸透膜でろ過した水を使っています。何を使う場合でも、記録しておいてください。
 
-### Step by step
+### 手順
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. 防じんマスクを着用し、手を入れるならゴム手袋もはめてください。Zakin は、計量を始めてから釉薬が湿るまでマスクを着けています。
+2. 粉末 100 g あたり約 70〜80 mL の水を量ってバケツに入れてください。
+3. 量った粉末を、低い位置からそっと加えてください。UT Austin は温かい水に粉末を加え、Zakin と Au は粉末に水を加えます。私たちは、粉じんが舞い上がりにくい「水に粉末」をおすすめします。ただし、ベントナイトの多い調合は例外です。乾いた粉末どうしを先に混ぜ合わせてください。
+4. **水になじませてください**。かき混ぜずに、粉末を水に浸しておきます。Digitalfire は約20分待ちます。糊剤や結合剤を含む粉末は、一晩置く必要があります。
+5. 乾いた塊やダマがなくなるまで混ぜてください。
+6. 二回ふるいに通してください（下記参照）。
+7. ふたをして一晩置き、もう一度混ぜて、底に固い層がないか確認してください。
+8. 比重を測り、目標に達するまで少しずつ水を足してください。お使いの釉薬の乾燥比重を知るには、仕上がった釉液の重さも量ってください（下記参照）。
+9. バケツにラベルを付け、行ったことを記録してください。
+10. 湿式で掃除してください。床をモップで拭き、原料容器の外側も含めて、すべての面を拭いてください。
 
-### Sieving
+### ふるい
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**ふるい**は、枠に網を張ったものです。釉薬を刷毛でふるいに押し通すと、混ぜても残ったダマがほぐれ、焼成で斑点になる粒子が取り除かれます。**メッシュ**の番号が大きいほど、網は細かくなります。80 メッシュの目開きは約 0.18 mm、100 メッシュは約 0.15 mm です。
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+推奨されるメッシュは、情報源によって違います。Zakin は 50 または 80 メッシュで二回ふるいます。Derek Au はほとんどの釉薬、特にコバルトや鉄を含むものに 120 メッシュを使います。ある青磁では 80 メッシュに三回通しても鉄の斑点が残りましたが、120 メッシュに一回通すと直りました。灰釉など粗い原料を含む釉薬には、60〜80 メッシュを使っています。英国の Potterycrafts は 60〜80 メッシュを勧めています。無難な標準は次のとおりです。
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: どのふるいを使うか
+Label: ふるいのメッシュ
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| 釉薬                                                | ふるい                |
+| --------------------------------------------------- | --------------------- |
+| ほとんどの釉薬                                      | 80 メッシュに二回通す |
+| コバルトや鉄などの着色剤{{en: colorants}}を含む釉薬 | 100〜120 メッシュ     |
+| 灰釉、そのほか粗い原料を含む釉薬                    | 60〜80 メッシュ       |
 
-## Specific gravity {#specific-gravity lang=en}
+## 比重 {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**比重**{{en: specific gravity, SG}}は、釉液{{en: slurry}}にどれだけ粉末が入っているかを示します。ある体積の釉薬の重さを、同じ体積の水の重さで割った値です。水は 1.00 で、{{SG 1.45}} の釉薬は 100 mL あたり 145 g です。測った比重に合わせて混ぜれば、毎回同じ濃さ、同じ釉層になります。比重には単位がないので、グラムでもオンスでも同じです。
 
-### Measure it by weighing 100 mL
+### 100 mL を量って測る
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. 沈殿がないように、釉薬をかき混ぜてください。
+2. 100 mL の**メスシリンダー**（目盛りの付いた細長い計量用の筒）か 100 mL の注射器をはかりに載せ、風袋引きをしてください。
+3. 釉薬をちょうど 100 mL まで入れてください。目盛りは目の高さで読みます。
+4. 重さを量り、グラム数を100で割ってください。145 g なら比重 1.45 です。
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire は、カップに 500 g の水の水位で印を付け、釉薬を印まで入れて、その重さを500で割る方法も使っています。大きく、たっぷり入る容器ほど正確です。**比重計**は、釉薬に浮かべて止まった位置で読む浮きで、手早く測れますが、濃い釉薬やゲル状になった釉薬では読み違えることがあります。Potclays のものなど英国の比重計は、ボーメ度（°Bé）で表示します。私たちの計算では、比重 = 145 ÷ (145 − °Bé) なので、46 °Bé は約 1.46 です。英国の古い本は**パイント重量**、つまり英パイントあたりの釉薬のオンス数を示しています。これを20で割ってください。29 oz なら比重は約 1.45 です（これも私たちの計算です）。
 
-### What to aim for
+### 目標値
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+情報源によって意見が分かれ、特に筆塗りと吹き掛けで大きく違います。英国の販売店 Potclays はずっと高い数値を示しています（Potclays 自身、その数値は「あくまで目安」としています）。どの数値も出発点として扱ってください。Digitalfire の基本的な助言は、釉薬ごとにうまくいく比重とゲル化の具合を見つけ、それを毎回再現し、書き留めることです。
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: 比重の目標値（情報源で意見が分かれるもの）
+Label: 比重の目標値
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| 用途     | Digitalfire と Glazy                                                                                                                                | Potclays（英国）                          | 無難な出発点                                               |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------- |
+| 浸し掛け | {{SG 1.40}}（5秒浸す場合）から {{SG 1.50}}（1秒浸す場合）まで。自家調合でゲル状にした釉薬は {{SG 1.43–1.45}} が最適                                 | 透明釉 {{SG 1.46–1.48}}、色釉 {{SG 1.61}} | {{SG 1.45}}。垂れるなら {{SG 1.43}} まで薄めてゲル状にする |
+| 筆塗り   | {{SG 1.25}}（薄い透明釉）から {{SG 1.55}}（濃い色の細部）まで                                                                                       | {{SG 1.71–1.81}}                          | 製品の指示に従う。CMC か筆塗り用の糊剤を使う               |
+| 吹き掛け | 数値なし。Ceramic Arts Network に寄稿している Hopper は、解膠剤{{en: deflocculant}}（釉液を流れやすくする添加剤）を加えて、ずっと薄くするとしている | {{SG 1.71}}                               | 信頼できる数値はない。吹き掛けは吹付けブースの中でだけ行う |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+浸し掛け用の釉薬を目で確かめるために、AMACO は5秒浸して、米国のダイム硬貨ほどの厚さの釉層になっているかを見ます。Digitalfire は、5秒浸したテストピース{{en: test tiles}}を焼成して確かめます。
 
-### Water for a target SG: our estimate
+### 目標比重に必要な水: 私たちの目安
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+下の表は情報源のものではなく、私たち自身の計算です。粉末の粒子の密度を cm³ あたり 2.6 g と仮定していますが、これは仮定であり、測定値ではありません。粘土、水溶性の原料、ゲル化はどれも実際の釉薬を変えるので、出発点として使い、そのあと測ってください。検算として、この計算では粉末と水が同じ重さのとき {{SG 1.44}} になり、Digitalfire の実測値 {{SG 1.46}} に近い値です。また、100 g あたり 70〜80 mL で始めると {{SG 1.50}} を超える、必要より濃い状態から始まることもわかります。
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: 目標比重に必要な水（私たちの目安）
+Label: 目標比重に必要な水
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| 目標        | 粉末 100 g あたり | キログラムあたり |   ポンドあたり |
+| ----------- | ----------------: | ---------------: | -------------: |
+| {{SG 1.40}} |         約 115 mL |       約 1150 mL | 約 18 US fl oz |
+| {{SG 1.45}} |          約 98 mL |        約 980 mL | 約 15 US fl oz |
+| {{SG 1.50}} |          約 85 mL |        約 850 mL | 約 13 US fl oz |
+| {{SG 1.60}} |          約 64 mL |        約 640 mL | 約 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### 調合しながら、お使いの釉薬の乾燥比重を求める
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+上の2.6は推測です。お使いの釉薬自身の数値、つまり乾いた粉の密度は、調合しながら量れる三つの数値から計算できます。この値があれば、後でその釉薬のどのバケツについても、比重から粉がどれだけ入っているかと、次の仕込みに必要な水を計算できます。資料によるものではなく、私たちの計算です。
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. 仕込みの乾いた粉の重さ、つまり調合の合計を書き留めます。
+2. 始める前に空のバケツの重さを量るか、バケツにその重さを書いておきます。
+3. いつものように混ぜ、ふるいに通し、目標の比重にします。粉が残らないように、すべてをふるいに通し、すすいでバケツに入れます。
+4. 満たしたバケツの重さを量り、バケツの重さを引きます。これが釉液の重さです。
+5. 比重を測ります。
 
-Then:
+次に計算します。
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **水** = 釉液の重さ − 粉の重さ。
+- **釉液の体積**（mL）= 釉液の重さ（グラム）÷ 比重。
+- **粉の体積** = 釉液の体積 − 水（水1 g は1 mL）。
+- **乾燥比重** = 粉の重さ ÷ 粉の体積。
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+例: 粉1000 g から {{SG 1.45}} の釉液が1980 g できたとします。水は980 g、釉液は1980 ÷ 1.45 = 約1366 mL、粉が占めるのは1366 − 980 = 386 mL で、乾燥比重は1000 ÷ 386 = 約2.59です。
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+注ぐときの水ではなく、最後に釉液全体の重さを量ってください。そうすれば、蒸発したり飛び散ったりした水は数に入りません。ここでは小さな誤差が大きくなります。比重の読みが0.01ずれると、答えはおよそ2〜4%動き、薄い釉薬ほど大きく動きます。1 kg 以上の仕込み、正確なはかり、そして比重には上の500 g のカップを使う方法を使ってください。一般的な原料の多くはおよそ2.5から2.9の間なので、ジルコンや鉛をあまり含まない釉薬でそこから大きく外れた数値が出たら、おそらく測り間違いです。この数値は調合に書き留めてください。
 
-### Epsom salts, CMC gum and bentonite
+### エプソムソルト、CMC、ベントナイト
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**エプソムソルト**（硫酸マグネシウム）を加えると、釉薬は静かに置いておくと軽くゲル状になり、かき混ぜるとまた流れるようになります。これを**凝集させる**{{en: flocculating}}といい、このようにふるまう釉薬は**チキソ性**{{en: thixotropic}}がある、といいます。ムラなく掛かり、垂れにくく、沈殿しにくくなります。Digitalfire は、比重が合ったらガロンあたり約 2 g から始め（私たちの換算では、リットルあたりおよそ 0.5 g）、混ぜるたびに量を調整することを勧めています。量は調合で固定するべきものではないからです。私たちは、先に少量のお湯に溶かすことをおすすめします。Digitalfire の例では、{{SG 1.45}} の釉薬が垂れたので、水で {{SG 1.43}} まで下げ、エプソムソルトでクリーム状に戻したところ、ムラなく掛かりました。簡単な確かめ方: かき混ぜて、止めて、観察します。ゲル状になった釉薬は約2、3秒動き続けてから止まり、少し戻ります。
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC**（カルボキシメチルセルロースの糊剤）は、釉液をねばりのある乾きにくいものにし、器にしっかり付く硬い釉層を残します。筆塗り用の釉薬と、フリット{{en: frit}}の多い釉薬で特に重要です。Digitalfire の例では釉液 1000 g に 3.75 g を混ぜており、ミキサーで混ぜ込む必要があります。CMC を含む釉薬は、エプソムソルトではゲル状になりません。また、微生物が糊剤を餌にするので、バケツの中で変化して、においが出てくることがあります。
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**ベントナイト**はとても細かい粘土で、ほかの粒子を懸濁させておくのを助けます。浸し掛け用の釉薬は、ふつうこのために15〜25%の生の粘土に頼っています。粘土の少ない調合には、約1〜3%のベントナイトが役立ちます。Digitalfire は、粘土が15%を超える釉薬には乾いた釉薬の重量の1%を超えるベントナイトは必要ないはずだとしています。
 
-## Test tiles and line blends {#testing lang=en}
+## テストピースとラインブレンド {#testing}
 
-### Start small
+### 少量から始める
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au は三段階で量を増やします。50 または 100 g のテスト、うまくいけば 1〜2 kg の試作、そして 5〜10 kg の工房用の仕込みです。私たちの目安では、{{SG 1.45}} で 100 g のテストを作ると約 135 mL（約 4½ US fl oz）の釉液{{en: slurry}}ができます。細いカップで小さなテストピース{{en: test tiles}}を数枚浸せる量です。
 
-### Test on your own clay
+### お使いの粘土でテストする
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+釉薬は、別の粘土や別の窯ではかなり違って見えることがあります。Clay Art Center は、配合を見直した釉薬を一つずつ、四種類の素地{{en: clay bodies}}に掛けて、オルトンコーン 6 とコーン 10 でテストしました。Potclays の初心者向けの釉薬テストのガイドは、次のことを勧めています。
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 実際に使う粘土で作った**テストピース**（釉薬を試すための小片）6〜10枚。素焼きしたものか、完全乾燥のものかを記録しておく
+- 変えるのは一度に一つだけ
+- 一度掛けと二度掛けで、釉薬が薄いときと厚いときを見る
+- すべてのテストピースを同じ窯詰めで焼く
+- 焼成前に、スタンプ、彫り、または下絵鉛筆で各テストピースに印を付ける。焼いたテストピースはどれも似て見えますが、焼成前に付けた印は窯を通っても残るので、どのテストピースがどの調合かいつでもわかります。
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+立てて置けるテストピースをおすすめします。平らなテストピースでは、釉薬がどこまで流れるかがわからないからです。縁で釉薬が薄くなって色が変わる様子を見るための凹凸のある帯と、釉薬を掛けない高台も付けてください。垂れた釉薬を受けるため、それぞれ小皿か素焼きのかけらの上に置くか、棚板用アルミナ塗料を塗った棚板に置いてください。テストピースの近くに**確認用コーン**{{en: witness cone}}を置くと、テストピースが受けた熱がわかります。確認用コーンは、十分な熱を受けると曲がる小さな陶製のコーンです。コーンについては、「[基本の窯焚き](/guides/firing)」のガイドで説明しています。各テストピースに短いコードを付け、記録の中で調合の横に書いてください。Ceramic Arts Network に寄稿している Willers は数字と文字を使い、その付け方自体をノートの最初に書いています。
 
-### Line blends
+### ラインブレンド
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**ラインブレンド**{{en: line blend}}は、ある配合から別の配合へ等間隔で変えていく一列のテストです。ある釉薬から別の釉薬へ、あるいは基礎釉から、着色剤を増やした同じ釉薬へと変えていきます。たとえば Derek Au は、透明な基礎釉の中で酸化鉄を1%刻みで変えていきます。Ian Currie の名で知られる体積による方法では、両端の二つだけを混ぜればよいので、時間を省けます。
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. 両端の釉薬 A と B を同じ仕込み量で混ぜ、両方ともふるいに通してください。
+2. 体積の少ないほうに水を足して、両方の液量をちょうど同じにしてください。
+3. 両方をかき混ぜ、配合ごとに注射器で取って、番号を付けたカップにそれぞれ入れてください。
+4. カップごとにかき混ぜ、テストピースを浸してください。
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+私たちの計算例では、A は透明な基礎釉 100 g、B は同じものに第二酸化鉄（弁柄）4 g を加えたもの（外割で4%）です。同じ体積で比べると、B には A と同じ割合の基礎釉と、それに加えて鉄が入っているので、カップは鉄なしから4%まで、1%刻みで変わります。両端の釉薬はそれぞれ 100 mL をブレンドに使い、私たちの目安では 100 g の仕込みで足ります。
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: 五段階の鉄のラインブレンド、カップあたり 40 mL（私たちの計算例）
+Label: ラインブレンドの例
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| カップ | 透明な基礎釉 (A) | 鉄 4% 入りの基礎釉 (B) | 酸化鉄（外割%） |
+| ------ | ---------------: | ---------------------: | --------------: |
+| 1      |            40 mL |                   0 mL |               0 |
+| 2      |            30 mL |                  10 mL |               1 |
+| 3      |            20 mL |                  20 mL |               2 |
+| 4      |            10 mL |                  30 mL |               3 |
+| 5      |             0 mL |                  40 mL |               4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+この方法には、慎重な計算と、よく混ぜて比重をそろえた両端の釉薬、そして正確なはかりが必要です。Derek Au は、体積ではなく重さでブレンドすることもあります。**三角座標による調合試験**は、三つの端の釉薬で同じことを行い、テストを三角形に並べます。
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> よさそうな段階があれば、[調合ページ](/recipe)の **[コピーとして保存]** で別の調合として保存できます。元の調合はそのまま残ります。
+
+## 記録の付け方 {#records}
+
+Willers は目的をうまく言い表しています。「見つけた結果を繰り返す、あるいは避けることができるだけの十分な情報」です。テストを始める前に何を試すつもりかを書き、窯出しのときに結果を書いてください。Potclays はさらに、施釉方法、厚さ、素地{{en: clay body}}、そして昇温・降温、保持、冷却を含む焼成の全体を記録するよう勧めています。**ランプ**{{en: ramp}}とは、毎時 {{60 °C; 108 °F}} のような加熱または冷却の速さで、**保持**{{en: hold}}とは、窯を一定の時間、一つの温度に保つことです。ロット番号、使った水、置き換えた原料も記録してください。Clay Art Center では、長石を置き換えたことで、釉薬の約半分を調整することになりました。
+
+Table: 釉薬の仕込みごとに記録すること（私たちのテンプレート）
+Label: 記録のテンプレート
+
+| 項目   | 書き留めること                                                                                                                                                                                                      |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 調合   | 調合とその版、原料の銘柄とロット番号、置き換えた原料                                                                                                                                                                |
+| 仕込み | 日付、仕込み量、加えた水とその種類（水道水、逆浸透膜水、蒸留水）、混ぜた直後の比重と最終的な比重、乾燥比重を求めるための仕上がった釉液の重さ、加えたエプソムソルト・CMC・ベントナイト、ふるいのメッシュと通した回数 |
+| 施釉   | 素地、素焼きのコーン、浸し掛け・筆塗り・流し掛けの別、浸す時間または重ね掛けの回数、乾燥時の厚さ                                                                                                                    |
+| 焼成   | 窯と棚の位置、昇温・降温、保持、冷却を含む焼成スケジュール、雰囲気（酸化焼成か還元焼成か）、窯の設定だけでなく、確認用コーンが示したこと                                                                            |
+| 結果   | 表面と色、釉流れ・貫入・ピンホールの有無、正面・裏・側面の写真、テストピースのコード                                                                                                                                |
+
+> [!NOTE]
+> Glazecalc では、保存した[調合](/recipe)に調合そのものが入ります。[焼成記録](/firing)には焼成ごとに、窯、日付、時刻、温度、コーン、メモを記録します。[工房ノート](/notes)には、上の仕込みの記録や各テストピースの結果など、それ以外のすべてを残せます。
 
 ## 出典 {#sources}
 
