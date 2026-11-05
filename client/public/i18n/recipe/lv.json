@@ -723,7 +723,8 @@
     "keyPoint": "Punkts: šī glazūra.",
     "keyBright": "Punktēta līnija: kur Stala glazūras bija visspīdīgākās.",
     "keyLimits": "Raustītas līnijas un ēnojums: robežvērtību kopas {name} silīcija dioksīda un alumīnija oksīda diapazoni.",
-    "keyCrazed": "Svītrojums: kur tās ieguva matplaisas."
+    "keyCrazed": "Svītrojums: kur tās ieguva matplaisas.",
+    "note": "Orientieris, nevis prognoze. R. T. Stals (R. T. Stull; Transactions of the American Ceramic Society, 1912) apdedzināja līdz apmēram konusam 11 ar nemainīgiem kušņiem 0,3 K₂O un 0,7 CaO; citi kušņi un apdedzināšanas pārbīda apgabalus, un glazūra, kas ir matēta tikai tāpēc, ka nepietiekami apdedzināta, diagrammā tomēr var atrasties spīdīgajā apgabalā. Apgabali ir tādi, kā tos zīmē Glazy."
   },
   "slurry": {
     "heading": "Relatīvais blīvums un ūdens",
@@ -763,7 +764,19 @@
     "saveTarget": "Saglabāt rel. blīvumu {sg} kā šīs receptes mērķi",
     "targetSaved": "Rel. blīvums {sg} ir šīs receptes mērķis. Tas tiek saglabāts kopā ar recepti, kad to saglabājat.",
     "targetKept": "Receptes mērķis ir rel. blīvums {sg}.",
-    "clearTarget": "Notīrīt mērķi"
+    "clearTarget": "Notīrīt mērķi",
+    "drySgEmpty": "Tas vajadzīgs tikai sausajiem daudzumiem, pievienojamajam ūdenim ne. Ievadiet to, ja to zināt.",
+    "drySgNeeded": "Ievadiet sauso izejvielu rel. blīvumu, lai redzētu sauso glazūru spainī un ūdeni jaunai porcijai.",
+    "estimate": {
+      "mineral": "Aplēse, {sg}, pēc tā, no kā sastāv katra izejviela: tās minerāla izmērītā blīvuma. Mainiet to, ja zināt precīzāk.",
+      "kind": "Aplēse, {sg}: laukšpatu un mālu rel. blīvums ir apmēram 2,6. Mainiet to, ja zināt precīzāk.",
+      "glass": "Aplēse, {sg}, aprēķināta no frišu oksīdiem (frites ir stikls). Mainiet to, ja zināt precīzāk.",
+      "mixed": "Aplēse, {sg}, pēc katras izejvielas: tās minerāla izmērītā blīvuma, apmēram 2,6 laukšpatiem un māliem, un frites aprēķinātas no to oksīdiem. Mainiet to, ja zināt precīzāk.",
+      "leftOut": "Neiekļautas, jo to rel. blīvums nav zināms: {names}.",
+      "none": "Šai receptei aplēses nav: nav zināms rel. blīvums šīm izejvielām: {names}. Ievadiet to, ja to zināt.",
+      "was": "Tiek izmantots jūsu skaitlis. Aplēse bija {sg}; notīriet lauku, lai atgrieztos pie tās."
+    },
+    "badSgWater": "Relatīvajam blīvumam jābūt lielākam par 1 (ūdens)."
   },
   "import": {
     "title": "Recepšu ielīmēšana",

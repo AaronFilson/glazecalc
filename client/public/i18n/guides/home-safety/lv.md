@@ -59,31 +59,31 @@ Label: Šķīstošās izejvielas
 
 Svina galvenās briesmas ir citādas: nevis viena karote, bet nelieli putekļu daudzumi, kas norīti nedēļu vai mēnešu laikā bez jebkādām brīdinājuma pazīmēm (skatiet tālāk sadaļu “Svins un bērni”).
 
-## Storing materials at home {#storing-materials lang=en}
+## Izejvielu uzglabāšana mājās {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Neviena oficiāla iestāde nenosaka noteikumus glazūru izejvielu uzglabāšanai mājās, bet veselības un drošības lapas ir vienisprātis: strādājiet atsevišķā telpā, bērniem nepieejamā vietā. Pensilvānijas veselības departaments, rakstot par vaļaspriekiem, kuros izmanto svinu, iesaka: “Savam vaļaspriekam izmantojiet atsevišķu darba vietu vai garāžu un neļaujiet bērniem tai tuvoties.”
 
-### A storage checklist
+### Uzglabāšanas kontrolsaraksts
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Tie ir vispārīgi saindēšanās novēršanas noteikumi, attiecināti uz glazūru. Neviens keramikas standarts tos nenosaka, bet iesakām ievērot tos visus:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Glabājiet sausās izejvielas aizslēgtas: skapī vai telpā, garāžā vai šķūnī, ko var aizslēgt. Augsts plaukts palīdz, bet bērni rāpjas. Ja sākumā varat aizslēgt tikai dažas lietas, sāciet ar šķīstošajām izejvielām un krāsvielām.
+- Glabājiet izejvielas to oriģinālajos maisos vai traukos. Ja pārberat kādu citā traukā, uzlīmējiet uz tā nosaukumu tieši tā, kā tas rakstīts uz maisa.
+- Nekad neizmantojiet pārtikas vai dzērienu traukus (jogurta trauciņus, burkas, pudeles) glazūru izejvielām, pat ar etiķeti. Bērns zina, kas ir jogurta trauciņā.
+- Glabājiet darbnīcas rīkus (lāpstiņas, karotes, slotiņas, sietus, svarus) darbnīcā. Nekad neizmantojiet virtuves rīkus glazūrai vai glazūras rīkus pārtikai.
+- Glabājiet šķidrās glazūras spaiņos ar etiķetēm un uzliktiem vākiem.
+- Glabājiet katras izejvielas drošības datu lapu kopā ar to, uz papīra vai tālrunī.
+- Neglabājiet virtuvē neko no darbnīcas: ne maisus, ne spaiņus, ne rīkus, ne provju plāksnītes.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Par izejvielu iegādi un uzglabāšanu sīkāk skatiet ceļvedi [Kā sagatavot glazūru](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Glazūras atkritumi un skalošanas ūdens
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Nekad nelejiet glazūru vai ūdeni, kurā skalojāt glazūras rīkus, izlietnē vai dārzā. Apvienotās Karalistes Amatniecības padome (Crafts Council) iesaka atsevišķu ūdens spaini roku, otu, sietu un rīku mazgāšanai. Ļaujiet tam nostāties pa nakti, nolejiet dzidro ūdeni, tad izžāvējiet nosēdušos glazūru un izmetiet to atkritumos (tā nonāk poligonā), nekad kanalizācijā.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Iesakām šim spainim vāku: nogulsnes satur tos pašus metālus, ko glazūra, un mājdzīvnieki dzer stāvošu ūdeni. Atkritumu noteikumi dažādās vietās atšķiras, tāpēc pārbaudiet katra produkta drošības datu lapu un, ja neesat pārliecināti, jautājiet savai pašvaldībai vai ūdensapgādes uzņēmumam.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Dažas darbnīcas izžuvušās nogulsnes pirms izmešanas apdedzina. Tās ieliek liekā bļodā, kuru nav žēl izlietot: pēc apdedzināšanas bļodu vairs nevar lietot. Piepildiet bļodu tikai līdz ceturtdaļai, jo nogulsnes kūstot putojas un burbuļo, un pārklājiet to ar šķīvi. Novietojiet to uz plaukta, pārklāta ar atdalīšanas līdzekli, vai uz lieka paliktņa, ja nu tās pārtek pāri malām. Apdedzināšana pārvērš nogulsnes stiklā, kas metālus notur daudz ciešāk nekā vaļīgs pulveris, tāpēc poligonā tas ir drošāk. Ar sausajām nogulsnēm rīkojieties tāpat kā ar sausu glazūru: ar respiratoru un neradot putekļus.
 
 ## Kā noturēt putekļus darbnīcā {#keeping-dust-in-the-studio}
 

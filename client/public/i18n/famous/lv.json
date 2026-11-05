@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Daļa šīs lapas vēl nav iztulkota, tāpēc tā ir parādīta angļu valodā.",
+  "index": {
+    "crumb": "Slavenas glazūras",
+    "title": "Slavenas glazūras",
+    "lead": "Visā pasaulē pazīstamas glazūras, katra no savām tradicionālajām vietējām izejvielām, ar tās Zēgera formulu un variantu no izejvielām, ko pārdod jūsu reģionā.",
+    "listHeading": "Glazūras",
+    "more": "Drīzumā būs vēl glazūras: katru pievieno, tiklīdz tās recepte un izejvielas balstās uz vismaz trim izlasītiem avotiem."
+  },
+  "glaze": {
+    "lead": "Slavena glazūra ({native}): tās tradicionālā recepte vai analīze, apdedzināšana un variants no izejvielām, ko pārdod jūsu reģionā.",
+    "aboutHeading": "Par glazūru {name}",
+    "nativeName": "Nosaukums oriģinālvalodā",
+    "origin": "Kur",
+    "period": "Kad",
+    "firing": "Apdedzināšana",
+    "cone": "konuss {cone}",
+    "historyOnly": "Tikai vēsturei: šo glazūru gatavoja ar svinu. Tās analīze ir parādīta kā vēsture, nevis kā recepte, ko jaukt. Zemāk dotais variants ir cita glazūra, bez svina.",
+    "recipeHeading": "Tradicionālā recepte",
+    "material": "Izejviela",
+    "amount": "Daudzums",
+    "unityHeading": "Zēgera formula",
+    "analysisHeading": "Vēsturiskā analīze",
+    "oxide": "Oksīds",
+    "percent": "Masas %",
+    "useHeading": "Izmēģiniet",
+    "open": "Atvērt šo recepti",
+    "openLeadFree": "Atvērt bezsvina variantu",
+    "leadFreeTitle": "{name} stilā, bezsvina",
+    "allLink": "Visas slavenās glazūras",
+    "safetyHeading": "Drošība",
+    "safeMixing": "Droša jaukšana un ventilācija",
+    "firingGuide": "Apdedzināšana vienkāršā krāsnī",
+    "makingGuide": "Kā sagatavot glazūru",
+    "sourcesHeading": "Avoti",
+    "link": "Atvērt",
+    "opened": "izlasīts: {date}"
+  },
+  "local": {
+    "heading": "No jūsu vietējām izejvielām",
+    "leadFreeHeading": "Bezsvina variants",
+    "intro": "Tradicionālās receptes Zēgera formula, sastādīta no standarta izejvielām, ko pārdod tur, kur iepērkaties. Izvēlieties, kur iepērkaties, lai to redzētu.",
+    "region": "Kur iegādājaties izejvielas",
+    "proposal": "Priekšlikuma paša izejvielas",
+    "pick": "Izvēlēties…",
+    "untested": "Aprēķināta, vēl nav izmēģināta apdedzinot.",
+    "testFirst": "Pirms to lietojat jebkādiem izstrādājumiem, apdedziniet provju plāksnītes, un virsmai, kas saskarsies ar pārtiku, pārbaudiet metālu izskalošanos.",
+    "untestedNote": "Aprēķināta, vēl nav izmēģināta apdedzinot: pirms lietošanas apdedziniet provju plāksnītes.",
+    "close": "Tā ir tuvu mērķa formulai.",
+    "fair": "Tā ir samērā tuvu mērķa formulai.",
+    "poor": "Ar šīm izejvielām nevar pietuvoties mērķa formulai.",
+    "none": "Ar tur pārdotajām izejvielām to nevar sastādīt.",
+    "choose": "Izvēlieties, kur iegādājaties izejvielas, lai redzētu to sastādītu no tur pārdotajām."
+  },
+  "atmospheres": {
+    "oxidation": "oksidējošā apdedzināšana",
+    "reduction": "reducējošā apdedzināšana",
+    "neutral": "neitrāla vide",
+    "wood": "apdedzināšana ar malku",
+    "salt": "sāls apdedzināšana",
+    "soda": "sodas apdedzināšana"
+  }
+}
