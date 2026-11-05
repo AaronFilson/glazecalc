@@ -60,7 +60,7 @@ jobs:
   server:
     name: Server, mail forwarder and MCP tests
     runs-on: ubuntu-24.04
-    # The build prerenders about 10,600 pages (every material in every language): a few minutes.
+    # The build prerenders about 11,500 pages (every material in every language): a few minutes.
     timeout-minutes: 30
 
     services:
@@ -133,7 +133,7 @@ jobs:
   e2e:
     name: Browser tests (${{ matrix.shard }}/3)
     runs-on: ubuntu-24.04
-    # Each shard builds, with its prerender of about 10,600 pages, before its tests.
+    # Each shard builds, with its prerender of about 11,500 pages, before its tests.
     timeout-minutes: 35
     strategy:
       fail-fast: false
