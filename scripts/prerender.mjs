@@ -49,11 +49,15 @@ const SHOWN = 12;
 export const MIN_TEXT = 300;
 
 /**
- * A page larger than this, gzipped, carries more than it shows: the largest, a
- * Greek guide, is about 83 kB; the advice page was 121 kB while it carried
- * every standard record's words (scripts/advice-i18n.mjs).
+ * A page larger than this, gzipped, carries more than it shows. The advice page
+ * was 121 kB while it carried every standard record's words
+ * (scripts/advice-i18n.mjs). Raised from 100 kB in round 14 (owner's decision,
+ * 2026-11-04): the fully translated glazing-basics guide in the Indic scripts
+ * (3 bytes a character) came to just over 100 kB, its own text being 22–25 kB
+ * of it; replies are sent brotli-compressed, smaller than gzip. Making guide
+ * pages lighter (the guide's text carried twice) is for a later round.
  */
-export const MAX_GZIPPED = 100 * 1024;
+export const MAX_GZIPPED = 120 * 1024;
 
 /** The standard advice's titles, which the advice page must show (data/advice.ndjson). */
 const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf8')
