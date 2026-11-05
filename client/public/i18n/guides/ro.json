@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Învățați cu cursul gratuit de glazuri al lui John Britt",
       "text": "Cursul lui video gratuit de pe YouTube, lecție cu lecție, cu ghidurile noastre de citit și exerciții de încercat în Glazecalc. În limba engleză."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Predarea calculului glazurilor",
+      "text": "6 lecții pentru o clasă sau un grup de studiu, de la plăcuțele triaxiale la formula Seger calculată în ambele sensuri, cu fișe de lucru de imprimat."
     }
   },
   "more": "Mai multe ghiduri",
@@ -255,6 +259,8 @@
       "crazed": "fisurat"
     },
     "keyBright": "Linie punctată: unde glazurile lui Stull erau cele mai lucioase.",
-    "keyCrazed": "Hașură: unde s-au fisurat."
+    "keyCrazed": "Hașură: unde s-au fisurat.",
+    "note": "Un ghid, nu o predicție. R. T. Stull (Transactions of the American Ceramic Society, 1912) a ars la aproximativ conul 11, cu fondanții ficși, 0,3 K₂O și 0,7 CaO; alți fondanți și alte arderi mută regiunile, iar o glazură mată doar pentru că a fost arsă insuficient poate apărea totuși în zona lucioasă. Regiunile sunt cele desenate de Glazy.",
+    "inGuide": "Silicea (SiO₂) pe orizontală, de la aproximativ 1 la 7, și alumina (Al₂O₃) pe verticală, de la 0 la 1, ambele din formula Seger. Din stânga pornesc în evantai mai multe pene: netopit în stânga sus, apoi mat, apoi semimat. Partea nehașurată din dreapta lor este lucioasă, iar linia punctată din ea arată unde glazurile lui Stull au fost cele mai lucioase. Ars insuficient este în dreapta jos, cu puțină alumină și multă silice. Hașurile, jos pe diagramă și pe latura ei din stânga, arată unde s-au fisurat testele lui."
   }
 }

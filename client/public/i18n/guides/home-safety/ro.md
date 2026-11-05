@@ -59,31 +59,31 @@ Label: Materii prime solubile
 
 Principalul pericol al plumbului este altul: nu o singură lingură, ci cantități mici de praf înghițite de-a lungul săptămânilor sau lunilor, fără semne de avertizare (vedeți „Plumbul și copiii”, mai jos).
 
-## Storing materials at home {#storing-materials lang=en}
+## Depozitarea materiilor prime acasă {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Niciun organism oficial nu stabilește reguli pentru depozitarea acasă a materiilor prime pentru glazuri{{en: glaze materials}}, dar paginile despre sănătate și siguranță sunt de acord: lucrați într-un spațiu separat, departe de copii. Departamentul de sănătate din Pennsylvania, scriind despre hobby-urile în care se folosește plumb, spune: „Folosiți pentru hobby-ul dumneavoastră un spațiu de lucru special destinat sau un garaj și țineți copiii departe de această zonă.”
 
-### A storage checklist
+### Listă de verificare pentru depozitare
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Acestea sunt reguli generale de prevenire a intoxicațiilor, aplicate glazurilor. Niciun standard din ceramică nu le prevede, dar vi le sugerăm pe toate:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Țineți materiile prime uscate sub cheie: într-un dulap sau într-o cameră, un garaj ori o magazie care se încuie. Un raft înalt ajută, dar copiii se cațără. Dacă la început puteți încuia doar câteva lucruri, începeți cu materiile prime solubile și cu coloranții.
+- Păstrați materiile prime în sacii sau în cutiile lor originale. Dacă mutați una într-un alt recipient, etichetați-l cu denumirea exact cum este scrisă pe sac.
+- Nu păstrați niciodată materii prime pentru glazuri în recipiente de alimente sau de băuturi (cutii de iaurt, borcane, sticle), nici chiar dacă sunt etichetate. Un copil știe ce conține o cutie de iaurt.
+- Țineți uneltele de atelier (căușe, linguri, tele, site, cântare) în atelier. Nu folosiți niciodată ustensile de bucătărie pentru glazură și nici unelte de glazură pentru mâncare.
+- Păstrați glazurile preparate în găleți etichetate, cu capacul pus.
+- Păstrați fișa cu date de securitate a fiecărei materii prime lângă ea, pe hârtie sau în telefon.
+- Nu țineți nimic din atelier în bucătărie: nici saci, nici găleți, nici unelte, nici plăcuțe de test{{en: test tiles}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Pentru mai multe despre cumpărarea și depozitarea materiilor prime, vedeți ghidul [Cum se prepară o glazură](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Deșeurile de glazură și apa de clătire
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Nu turnați niciodată în chiuvetă sau în grădină glazură ori apa în care ați clătit uneltele de glazură. Crafts Council din Regatul Unit sugerează o găleată separată cu apă pentru spălatul mâinilor, al pensulelor, al sitelor și al uneltelor. Lăsați conținutul găleții să se depună peste noapte, turnați apa limpede de deasupra, apoi uscați glazura depusă și aruncați-o la gunoi (ajunge la groapa de gunoi), niciodată în canalizare.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Vă sugerăm să puneți un capac pe această găleată: sedimentul conține aceleași metale ca glazura, iar animalele de companie beau apă stătătoare. Regulile de eliminare a deșeurilor diferă de la un loc la altul, așa că verificați fișa cu date de securitate a fiecărui produs și, dacă aveți îndoieli, întrebați la primărie sau la compania de apă.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Unele ateliere ard sedimentul uscat înainte de a-l arunca. Îl pun într-un bol de rezervă, care va fi sacrificat: după ardere, bolul nu mai poate fi folosit. Umpleți bolul doar un sfert, pentru că sedimentul face spumă și bule când se topește, și acoperiți-l cu o farfurie. Așezați-l pe o placă acoperită cu strat protector (kiln wash) sau pe o placă de rezervă, în caz că se revarsă. Arderea transformă sedimentul în sticlă, care reține metalele mult mai strâns decât pulberea liberă, așa că este mai sigur la groapa de gunoi. Manipulați sedimentul uscat ca pe glazura uscată, cu mască de protecție respiratorie și fără să faceți praf.
 
 ## Păstrarea prafului în atelier {#keeping-dust-in-the-studio}
 
