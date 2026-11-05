@@ -3,480 +3,480 @@ title: Tráng men từ những nguyên lý đầu tiên
 lead: Men được làm từ gì, lò nung biến nó thành thủy tinh thế nào, và giải thích mọi từ bạn sẽ gặp trên một công thức men, một túi nguyên liệu hay một bảng côn.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Men là gì {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**Men**{{en: glaze}} là một lớp thủy tinh mỏng được nung chảy dính vào sản phẩm gốm. Glazy, cơ sở dữ liệu công thức men mở, gọi nó là “một công thức thủy tinh được điều chỉnh để nóng chảy và dính vào đất sét ở những nhiệt độ nhất định”. Nó được phủ lên dưới dạng một lớp bột và nóng chảy trong lò nung thành một lớp thủy tinh bịt kín đất sét, nên sản phẩm ít bị rỉ nước, ố hay mòn hơn. Ở đỉnh của lần nung, khối nóng chảy còn phản ứng với đất sét, thường tạo ra một lớp giữa chúng giữ men dính chặt. Trên gốm đất nung, nung ở nhiệt độ thấp hơn, lớp này mỏng và men chủ yếu nằm bên trên. Trên gốm sành và sứ, nung ở nhiệt độ cao hơn, lớp này dày hơn và men bám chặt vào đất sét hơn. Dù vậy men vẫn là thủy tinh: nó không trở thành một phần của đất sét.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Một công thức men liệt kê các nguyên liệu thô, như trường thạch, canxi cacbonat và cao lanh. Trong lò nung, một phần của mỗi nguyên liệu bay đi dưới dạng khí (nước hoặc cacbon đioxit) và phần còn lại trở thành **oxit**: các hợp chất của một nguyên tố với oxy, như silica (SiO₂) hay canxi oxit (CaO). Thủy tinh đã nung được làm từ các oxit, nên thợ gốm mô tả một loại men qua chúng. Mỗi oxit làm một trong ba việc.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **Silica**{{en: silica}} (SiO₂) là **chất tạo thủy tinh**{{en: glass former}}: nó dựng nên thủy tinh. Silica tinh khiết nóng chảy trên {{3100 °F; 1700 °C}}, nóng hơn nhiều so với lò nung gốm, và một loại men nhiều silica thường bền hơn.
+- **Chất trợ chảy**{{en: flux}} hạ điểm nóng chảy xuống mức một lò nung có thể đạt. **Kiềm**, viết là **R₂O**, là các oxit của natri, kali và liti (Na₂O, K₂O, Li₂O); chúng hoạt động từ côn 06 trở lên qua nhiệt độ trung bình và cao. **Kiềm thổ**, viết là **RO**, là các oxit của canxi, magie, bari và stronti (CaO, MgO, BaO, SrO), với kẽm oxit (ZnO) được xếp cùng; chúng hoạt động tốt nhất từ côn 5 đến côn 10. Chữ R đại diện cho bất kỳ kim loại nào trong họ đó.
+- **Alumina** (Al₂O₃) là **chất ổn định**{{en: stabilizer}}. Nó làm khối nóng chảy quánh lại để nó ở lại trên thành đứng, và thêm độ cứng và độ bền. Lời cảnh báo của Glazy: quá ít alumina thì “men của bạn có thể chảy; quá nhiều có thể làm khối nóng chảy quánh lại thành men mờ”. Alumina chủ yếu đến từ đất sét và trường thạch.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**Bo** (B₂O₃) làm mờ ranh giới. Các nhà hóa học xếp nó vào chất tạo thủy tinh, nhưng ở nhiệt độ của xưởng gốm nó hoạt động như một chất trợ chảy, và thợ gốm coi nó như vậy. Nó là một chất trợ chảy chính ở nhiệt độ thấp và trung bình: lần nung càng nguội, men càng cần nhiều bo. Ở côn 10 thường không cần đến nó. (Côn, cách thợ gốm gọi tên một lần nung, được giải thích bên dưới.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Một cách để ghi nhớ: silica là thủy tinh, các chất trợ chảy cho nó nóng chảy ở nhiệt độ lò của bạn đạt được, và alumina làm nó đặc lại để nó ở đúng nơi bạn đặt.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## Đất sét, lớp phủ và hai lần nung {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Xương gốm
 
-## From recipe to unity formula {#unity-formula lang=en}
+**Xương gốm**{{en: clay body}} là đất sét mà một sản phẩm được làm từ đó. Có ba loại chính.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Gốm đất nung**{{en: earthenware}}: xương gốm nhiệt độ thấp, khoảng côn 06–02, xốp ở các côn thấp và đặc hơn khi được nung nóng hơn. Thường màu đỏ hoặc vàng da bò, nó cần men để giữ nước.
+- **Gốm sành**{{en: stoneware}}: xương gốm nhiệt độ trung bình đến cao, khoảng côn 5–10, trở nên thiêu kết hoặc gần như vậy.
+- **Sứ**: xương gốm màu trắng, giàu cao lanh, thường trong mờ. Hầu hết sứ là nhiệt độ cao, nhưng cũng có sứ côn 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Hóa thủy tinh** nghĩa là như thủy tinh và không xốp; **sự thiêu kết** là việc một xương gốm trở nên như vậy khi nung. Thợ gốm Anh thường vạch ranh giới theo nhiệt độ: gốm sành được nung trên {{2192 °F; 1200 °C}}, gốm đất nung dưới. Nhiệt độ trung bình, côn 5–6, nằm ngay hai bên của ranh giới đó.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Lớp phủ và sự khô
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**Hồ đất**{{en: slip}} là đất sét lơ lửng trong nước, dùng để đúc, nối hoặc trang trí. **Engobe** là lớp phủ giống hồ đất, thường có màu, với nhiều vật liệu không phải đất sét hơn. **Màu dưới men** là hồ đất màu hoặc trang trí bằng oxit, thường được phủ bằng men trong.
 
-### The silica to alumina ratio
+Sản phẩm chưa nung là **phôi chưa nung**{{en: greenware}} (các nguồn không thống nhất liệu từ này gồm mọi sản phẩm chưa nung hay chỉ sản phẩm khô). Khi khô, nó thành **phôi se**{{en: leather-hard}}, cứng nhưng hơi ẩm, giai đoạn để gọt và làm quai; rồi **phôi khô hoàn toàn**, không còn nước tự do, rất dễ vỡ và sẵn sàng để nung.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### Hai lần nung
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+Lần nung đầu tiên, thấp hơn, là **nung mộc**{{en: bisque}} (Anh: **biscuit**), thường côn 08–04 (thường nhất là 06–04), khoảng {{1728–1945 °F; 942–1063 °C}}. Nó để lại sản phẩm chắc nhưng xốp. Digitalfire, một trang tham khảo về men, gợi ý độ xốp thường trên 15%, để gốm mộc hút nước ra khỏi men khi tráng. Gốm mộc mềm (côn 08–06) xốp hơn; gốm mộc cứng (thường côn 04) chắc hơn nhưng nhận men kém dễ dàng hơn.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Gốm mộc thay đổi việc tráng men như thế nào (Digitalfire)
+Label: Gốm mộc thay đổi việc tráng men như thế nào
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Gốm mộc                                | Điều gì xảy ra                                        |
+| -------------------------------------- | ----------------------------------------------------- |
+| Non lửa, hút nước rất mạnh             | Men bám quá dày, rồi nứt và cuốn men                  |
+| Quá lửa, đặc                           | Nhúng và làm khô lâu hơn                              |
+| Nung nóng hơn, hoặc giữ lâu hơn ở đỉnh | Nhiều khí cháy hết lúc này, nên ít sủi qua men về sau |
 
-### Loss on ignition
+Potclays, một nhà cung cấp ở Anh, mô tả nung biscuit đến khoảng {{1000 °C; 1832 °F}}, khoảng côn 06. Đọc các nguồn này cùng nhau, chúng tôi gợi ý côn 06–04 cho lần nung mộc đầu tiên: {{1828–1945 °F; 998–1063 °C}} ở tốc độ trung bình của Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**Nung men**{{en: glaze firing}} (thợ gốm Anh có thể nói nung **glost**) làm men nóng chảy và, với gốm sành, cũng làm đất sét chín. **Nung một lửa**{{en: once-firing}} là tráng men lên sản phẩm chưa nung và nung chỉ một lần. Digitalfire báo cáo một trường hợp sản xuất trong đó sản phẩm tráng men thô bị cuốn men ở mép cho đến khi một lần nung mộc chữa được, nên hãy bắt đầu với hai lần nung. [Nung một lò gốm cơ bản](/guides/firing) nêu các đường cong nung cho cả hai.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Côn và công nhiệt {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Thợ gốm gọi tên một lần nung bằng một **côn**{{en: cone}}: một hình chóp gốm thon cong xuống khi đã nhận một lượng nhiệt nhất định. Orton, hãng làm ra chúng, gọi côn là chất chỉ thị thời gian và nhiệt độ (công nhiệt): chúng cho thấy tác động kết hợp của thời gian và nhiệt độ, không chỉ riêng nhiệt độ.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**Công nhiệt**{{en: heatwork}} là lý do: men, đất sét và côn đều phản ứng với việc chúng nóng bao lâu cũng như nóng đến mức nào. Một lần nung chậm làm côn cong ở nhiệt độ thấp hơn, một lần nung nhanh ở nhiệt độ cao hơn. Bảng của Orton cho côn 6 cong ở {{2165 °F; 1185 °C}} khi lần nung kết thúc với tốc độ tăng {{27 °F; 15 °C}} mỗi giờ, ở {{2232 °F; 1222 °C}} với {{108 °F; 60 °C}} mỗi giờ, và ở {{2269 °F; 1243 °C}} với {{270 °F; 150 °C}} mỗi giờ, tốc độ được lấy trong {{180 °F; 100 °C}} cuối. Một côn xong khi đỉnh của nó đã cong qua 90°. Thợ gốm thường gọi đây là vị trí 5 giờ.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Số côn chạy từ 022 đến 42. Chữ số không đứng đầu đánh dấu dãy nguội hơn, nơi số lớn hơn thì nguội hơn: côn 06 nguội hơn côn 04, và côn 01 nguội hơn côn 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Các khoảng nung: côn tự đứng của Orton ở {{108 °F; 60 °C}} mỗi giờ
+Label: Các khoảng nung
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Khoảng              | Côn   |          °F |          °C | Dùng cho                   |
+| ------------------- | ----- | ----------: | ----------: | -------------------------- |
+| Nhiệt độ thấp       | 06–04 | 1.828–1.945 |   998–1.063 | Men gốm đất nung; nung mộc |
+| Nhiệt độ trung bình | 5–6   | 2.167–2.232 | 1.186–1.222 | Gốm sành và sứ             |
+| Nhiệt độ cao        | 9–10  | 2.300–2.345 | 1.260–1.285 | Gốm sành và sứ             |
+
+> [!NOTE]
+> Hãy gọi tên và lập chương trình các lần nung theo côn, và coi các nhiệt độ là gần đúng. Một **côn chứng**{{en: witness cone}} trên kệ giữa các sản phẩm, hoặc một **bộ côn**{{en: cone pack}} gồm ba côn (côn dẫn, côn nung và côn bảo vệ), cho thấy công nhiệt mà sản phẩm của bạn thực sự đã nhận.
+
+Các nhiệt độ đã công bố khác nhau. Glazy nêu nhiệt độ cao, côn 9–11, là khoảng {{2336–2390 °F; 1280–1310 °C}}, khớp với cột nhanh của Orton, và Digitalfire nêu côn 6 là khoảng {{2200 °F; 1204 °C}}. Lời khuyên của chúng tôi: dùng các số liệu tốc độ trung bình của Orton, như cẩm nang này làm, lập chương trình theo côn, và để một côn chứng quyết định.
+
+Ngoài Bắc Mỹ, các nhà cung cấp thường nêu °C thay vì côn. Hermann Seger đã phát triển côn hiện đại, lần đầu được dùng ở Berlin năm 1886, và Anh có các côn Staffordshire riêng; các số của chúng không nên được cho là khớp với số của Orton, và chúng tôi không tìm thấy bảng nào để quy đổi chúng. [Nung một lò gốm cơ bản](/guides/firing) đề cập đến côn chi tiết hơn.
+
+## Từ công thức men đến công thức Seger {#unity-formula}
+
+Một **công thức men**{{en: batch recipe}} liệt kê các nguyên liệu thô theo khối lượng, thường được quy đổi sao cho men nền cộng lại bằng 100. **Phụ gia** (chất tạo màu, chất làm đục và chất chống lắng) được thêm lên trên 100, thường theo phần trăm của men nền. Để thấy men là gì, thợ gốm biến công thức men thành **công thức phân tử chuẩn hóa về một**{{en: unity molecular formula}} (**UMF**, hay **công thức Seger**, theo Hermann Seger, người đầu tiên dùng bố cục ba cột của nó).
+
+Table: Từ công thức men đến công thức Seger: ví dụ thực hành của Glazy
+Label: Từ công thức men đến công thức Seger
+
+| Bước                | Điều gì xảy ra                                                                                                     | Trong ví dụ                                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| 1. Công thức men    | Nguyên liệu thô theo khối lượng, quy đổi về 100                                                                    | Trường thạch 40%, cùng các nguyên liệu khác                                                                                  |
+| 2. Phân tích oxit   | Như một nhãn dinh dưỡng: các oxit của mỗi nguyên liệu được cộng lại theo phần trăm khối lượng, và các khí bị bỏ đi | Trường thạch có 64,8% silica, nên 40% của nó đem lại 25,9% SiO₂. Men đã nung có 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
+| 3. Mol              | Khối lượng trở thành **mol**, số đếm phân tử, vì “Gam có thể gây hiểu lầm vì một số oxit nặng hơn những oxit khác” | 60,1 g SiO₂ là một mol, nên 67,4 g là khoảng 1,12 mol                                                                        |
+| 4. Chuẩn hóa về một | Mọi thứ được chia cho tổng của các chất trợ chảy, để các chất trợ chảy cộng lại bằng 1                             | Các chất trợ chảy tổng cộng 0,303; chia ra được K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                    |
+
+[Trang công thức men](/recipe) của Glazecalc thực hiện cả bốn bước khi bạn gõ, và hiển thị kết quả trong ba cột: chất trợ chảy (R₂O và RO) cộng lại bằng 1; chất ổn định (R₂O₃: alumina, với bo thường được đặt ở đây); và chất tạo thủy tinh (RO₂: silica). “Chuẩn hóa chỉ là một công cụ quy đổi,” Glazy nói: hai công thức men làm từ các nguyên liệu khác nhau nhưng có cùng công thức Seger “hoạt động gần như giống hệt nhau sau khi nung”. Vì vậy số 1 là một thước đo chung, không phải một lượng bạn cân. Digitalfire nói thêm rằng phương pháp này “không hiệu quả bằng ở nhiệt độ thấp hơn”, nơi bo không phải một chất trợ chảy thuần túy, và rằng các công thức Seger là “mang tính so sánh và tốt nhất nên xem trong bối cảnh”. **So sánh** xếp công thức của hai công thức men thẳng hàng theo từng oxit.
+
+### Tỷ lệ silica trên alumina
+
+Con số đơn lẻ hữu ích nhất là **tỷ lệ silica trên alumina**: silica chia cho alumina. Trong ví dụ, 3,70 ÷ 0,41 là khoảng 9.
+
+Table: Tỷ lệ silica trên alumina gợi ý điều gì (Glazy)
+Label: Tỷ lệ silica trên alumina
+
+|    Tỷ lệ | Cách đọc của Glazy                            |
+| -------: | --------------------------------------------- |
+| Khoảng 9 | Gợi ý một khối nóng chảy bóng, khi đủ nhiệt   |
+|      5–7 | Điển hình của nhiều loại men gốm sành ổn định |
+|      3–5 | Có thể mờ hoặc non lửa                        |
+
+Glazy không nói các số liệu này dành cho côn nào. Hãy đọc chúng như một hướng dẫn sơ bộ cho men gốm sành, khoảng côn 6–10. Digitalfire nói một tỷ lệ trên khoảng 8 nhiều khả năng là bóng, nhưng một loại men có bo có thể bóng ở 8 hoặc thấp hơn, và một loại men nhiệt độ thấp thậm chí ở 6. Tỷ lệ 5–7 tự nó không dự đoán bóng hay mờ: chất trợ chảy, bo và côn đều làm dịch chuyển ranh giới. Glazy nêu cân bằng chất trợ chảy điển hình cho men ổn định là 0,2 R₂O với 0,8 RO, đến 0,3 R₂O với 0,7 RO. Nhiều kiềm hơn làm khối nóng chảy lỏng hơn và tăng độ giãn nở của nó, và do đó tăng nguy cơ rạn nứt men.
+
+### Lượng mất khi nung
+
+**Lượng mất khi nung**{{en: loss on ignition}} (**LOI**) là khối lượng một nguyên liệu mất đi trong lò nung khi nước, cacbon đioxit, chất hữu cơ hoặc lưu huỳnh thoát ra dưới dạng khí. Men đã nung không có gì như vậy, nên công thức Seger bỏ nó ra.
+
+Table: Lượng mất khi nung điển hình (Digitalfire)
+Label: Lượng mất khi nung
+
+| Nguyên liệu                       | LOI điển hình                                                                |
+| --------------------------------- | ---------------------------------------------------------------------------- |
+| Canxi cacbonat (whiting), đôlômít | Trên 40%, chủ yếu là cacbon đioxit: 100 g canxi cacbonat thải ra khoảng 44 g |
+| Liti cacbonat                     | Khoảng 60%                                                                   |
+| Bari cacbonat, Gerstley Borate    | Trên 20%                                                                     |
+| Cao lanh                          | Khoảng 12–14%, chủ yếu là nước liên kết trong tinh thể của nó                |
+| Trường thạch                      | Dưới 1%                                                                      |
+
+Khí thoát ra sau khi men bắt đầu nóng chảy phải sủi qua nó, gây ra, theo lời của Digitalfire, “bọt, phồng rộp, lỗ chân kim, cuốn men”. Trong một thử nghiệm của Digitalfire, talc tiếp tục thải khí cho đến khoảng {{1650 °F; 899 °C}}. Frit, các nguyên liệu **đã nung sơ bộ** (được nung nóng trước để đuổi khí của chúng đi) và các thay đổi trong lần nung đều giúp ích.
+
+Các sách cũ làm phép tính này bằng tay, với **khối lượng phân tử** (khối lượng của một mol nguyên liệu hoặc oxit) và **khối lượng đương lượng** (khối lượng của một nguyên liệu cung cấp một mol của một oxit). Theo phép tính của chúng tôi, khoảng 100 g canxi cacbonat cung cấp một mol, 56 g, canxi oxit. Một công cụ tính xử lý cả hai.
+
+## Giới hạn và biểu đồ Stull {#stull-chart}
+
+**Biểu đồ Stull**{{en: Stull chart}} là một bản đồ các loại men. Nó có hai trục, cả hai đều từ công thức Seger: silica (SiO₂) theo chiều ngang ở dưới và alumina (Al₂O₃) theo chiều dọc ở bên cạnh. Mỗi loại men là một điểm. Bản đồ được chia thành các vùng, như mờ, sáng bóng (bóng), non lửa và rạn nứt men. [Trang công thức](/recipe) của Glazecalc vẽ men của bạn lên đó.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull lập biểu đồ từ các thử nghiệm ông công bố năm 1912. Ông nung chúng ở khoảng côn 11, và mọi thử nghiệm đều có cùng chất trợ chảy: 0,3 kali (K₂O) và 0,7 canxi oxit (CaO). Chỉ silica và alumina thay đổi. Vì vậy biểu đồ đúng cho những loại men đó ở nhiệt độ đó.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Men của bạn có lẽ khác. Bo, các chất trợ chảy khác và các côn thấp hơn đều làm dịch chuyển các vùng. Năm 2025, một bài báo của Ceramics Monthly đã thử một loại men côn 6 có chất trợ chảy là borat và nhiều sắt. Biểu đồ đặt nó vào vùng rạn nứt men, mờ và non lửa. Thực tế nó đã chảy hoàn toàn, bán bóng và không rạn. Các tác giả nói men có borat không nằm đúng chỗ trên biểu đồ. Vì vậy hãy dùng các vùng như một hướng dẫn, không phải một dự đoán.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+Vùng **rạn nứt men** là nơi các thử nghiệm của chính Stull bị rạn, trên đất sét của ông. Nó không cho bạn biết men của bạn khớp với xương gốm của bạn thế nào. Rạn nứt men phụ thuộc vào độ giãn nở nhiệt của cả men và đất sét. Con số độ giãn nở của Glazecalc giúp bạn so sánh các loại men, và một thử nghiệm thực tế mới quyết định: thử nghiệm nước đá trong [Độ khớp men và khuyết tật](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**Công thức giới hạn**{{en: limit formula}} là một công cụ khác cho cùng câu hỏi: các khoảng silica, alumina và chất trợ chảy cho men ổn định ở một côn. [An toàn khi tiếp xúc thực phẩm](/guides/glazing-basics#food-safety) giải thích chúng, và vì sao tự chúng không chứng minh được gì.
 
-## Frits and raw materials {#materials lang=en}
+## Frit và nguyên liệu thô {#materials}
 
-### Frits
+### Frit
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**Frit**{{en: frit}} là thủy tinh được làm trong nhà máy: khoáng vật được nấu chảy, làm nguội nhanh trong nước và nghiền. Việc làm frit khiến các nguyên liệu tan như borax thành không tan, khóa các oxit độc như chì và bari vào một loại thủy tinh ổn định, cho một nguyên liệu nhất quán hơn khoáng vật thô, và đuổi khí đi, nên các loại men làm từ frit “ít khuyết tật hơn nhiều” (Digitalfire). Frit cũng nóng chảy sớm: một frit natri hoạt động ở côn 06, trong khi trường thạch “chỉ mới bắt đầu mềm ở côn 6”. Chúng đắt hơn, cần đất sét để lơ lửng (ví dụ của Digitalfire là 85% frit với 15% đất sét), và chúng “về lý thuyết là không tan, nhưng trên thực tế thì không phải vậy”.
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Frit Bắc Mỹ được gọi theo nhà sản xuất và số: Ferro Frit 3134 (Ferro nay là Vibrantz) là một trong những frit được dùng nhiều nhất ở Bắc Mỹ. Các công thức men của Anh thường nêu các frit chung hơn, như frit borax tiêu chuẩn.
 
-### The common raw materials
+### Các nguyên liệu thô thông thường
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Các nguyên liệu men thông thường và chúng cung cấp gì
+Label: Các nguyên liệu men thông thường
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Nguyên liệu (tên khác)                                 | Cung cấp               | Ghi chú                                                                                                                                                                                                    |
+| ------------------------------------------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silica (flint, thạch anh)                              | SiO₂                   | Dùng 325 mesh, độ nghiền rất mịn, trong men                                                                                                                                                                |
+| Cao lanh (Anh: china clay)                             | Al₂O₃, SiO₂            | Nguồn alumina chính; cũng giúp men không bị lắng                                                                                                                                                           |
+| Ball clay                                              | Al₂O₃, SiO₂            | Dẻo hơn cao lanh, với nhiều sắt và chất hữu cơ hơn                                                                                                                                                         |
+| Trường thạch kali, trường thạch natri, nephelin xienit | K₂O, Na₂O, Al₂O₃, SiO₂ | Các chất trợ chảy có alumina và silica riêng. Nephelin xienit là chất trợ chảy mạnh ở nhiệt độ thấp và trung bình. “Trường thạch” trơn trong một công thức men cũ có thể là bất kỳ loại nào trong số chúng |
+| Canxi cacbonat (whiting)                               | CaO                    | Chất trợ chảy canxi chính; thải cacbon đioxit                                                                                                                                                              |
+| Wollastonit                                            | CaO, SiO₂              | Canxi không có cacbon đioxit                                                                                                                                                                               |
+| Đôlômít, talc                                          | MgO, với CaO hoặc SiO₂ | Bề mặt mờ mịn như lụa; độ giãn nở thấp hơn                                                                                                                                                                 |
+| Kẽm oxit                                               | ZnO                    | Độ bóng và tinh thể; quá nhiều có thể gây cuốn men                                                                                                                                                         |
+| Frit bo, Gerstley Borate, colemanit                    | B₂O₃                   | Thiết yếu từ côn 06 đến côn 6; frit “nhất quán hơn và ít tan hơn borat thô”                                                                                                                                |
+| Liti cacbonat                                          | Li₂O                   | Chất trợ chảy giãn nở thấp; đắt, nên dùng tiết kiệm                                                                                                                                                        |
+| Stronti cacbonat                                       | SrO                    | Vật liệu thay thế ít độc hơn cho bari                                                                                                                                                                      |
+| Bari cacbonat                                          | BaO                    | Độc ở dạng thô; men nhiều bari có thể thôi nhiễm                                                                                                                                                           |
+| Bentonit                                               | Chống lắng             | Một loại đất sét rất mịn, thường 1–2%, để ngăn lắng. Trên 3% có thể làm nứt men khi men khô                                                                                                                |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Nguyên liệu làm men là các loại bột mịn. Bụi silica gây hại cho phổi mà lúc đầu không có triệu chứng, và một số nguyên liệu, như bari cacbonat và liti cacbonat, là chất độc nếu nuốt phải. Hãy xử lý bột nhẹ nhàng, lau dọn ướt, và đeo khẩu trang lọc bụi đạt chuẩn vừa khít khi làm việc khô. [Pha trộn an toàn và thông gió](/guides/safe-mixing) và [Không gây ngộ độc cho gia đình bạn](/guides/home-safety) giải thích cách làm.
 
-### Regional names
+### Tên theo khu vực
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **Cao lanh** là **china clay** ở Anh. Ở Úc, Eckalite là một nhãn hiệu cao lanh.
+- **Flint** là tên cũ của Anh cho silica. Các nhà cung cấp Anh vẫn bán **flint nung** như một sản phẩm riêng, nên “flint” trong một công thức men của Anh có thể có nghĩa là flint nung, và trong một công thức của Mỹ có thể có nghĩa là thạch anh nghiền. Cả hai đều được bán làm nguồn silica; hãy kiểm tra phân tích.
+- **China stone** và **Cornish stone** (đá Cornwall) là cùng một vật liệu, liên quan đến trường thạch.
+- **Whiting** là canxi cacbonat, phấn hoặc đá vôi nghiền.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Hãy đánh giá một nguyên liệu theo các oxit nó cung cấp, không theo tên của nó. Glazecalc làm việc theo cách đó: bạn có thể nhập phân tích của nhà cung cấp trên [trang Nguyên liệu](/material), và **Thử nguyên liệu hiện đại và so sánh**, **Gợi ý lượng và so sánh** và **Khớp với nguyên liệu tôi có** đều khớp các oxit đã nung, không phải tên.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Nguyên liệu cũng thay đổi. Cơ quan Khảo sát Địa chất Hoa Kỳ báo cáo rằng các mỏ và nhà máy sản xuất trường thạch Custer, ở South Dakota, đã ngừng hoạt động vào tháng 11 năm 2023. Mỏ Gerstley Borate gốc đóng cửa vào khoảng 1999–2000; Laguna vẫn bán một sản phẩm dưới tên đó, và Gillespie Borate là vật liệu thay thế chính. Các nguồn không thống nhất liệu Gillespie có thay Gerstley Borate theo kiểu pound đổi pound hay không (nhà sản xuất của nó và Potclays nói có, Digitalfire và những nơi khác nói không), nên hãy so sánh hai loại trong Glazecalc, rồi thử một mẻ nhỏ.
 
-## Colorants and opacifiers {#color lang=en}
+## Chất tạo màu và chất làm đục {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**Chất tạo màu**{{en: colorant}} là một oxit hoặc cacbonat kim loại tạo màu cho men; **bột màu**{{en: stain}} là chất tạo màu làm trong nhà máy, ổn định và nhất quán hơn các oxit thô. Chất tạo màu thường dưới 5% của men nền, nhiều loại dưới 1%, và một cacbonat yếu hơn oxit tương ứng, vì một phần của nó thoát ra dưới dạng khí. Theo tính toán của chúng tôi, 100 g coban cacbonat cho khoảng 63 g coban oxit, và 100 g đồng cacbonat mà thợ gốm mua (đồng cacbonat bazơ) cho khoảng 72 g đồng oxit. Vì vậy hãy dùng lượng cacbonat khoảng 1,4 đến 1,6 lần lượng oxit.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Các chất tạo màu thông thường, theo phần trăm của men nền
+Label: Các chất tạo màu thông thường
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Chất tạo màu       | Lượng khởi đầu thường dùng                    | Màu sắc và ghi chú                                                                                                                 |
+| ------------------ | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Coban              | 0,1–2% (các nguồn không thống nhất)           | Xanh lam, và rất mạnh; hướng về tím khi men nền có magie                                                                           |
+| Sắt                | 0,5–10%                                       | Nâu, nâu vàng và đỏ trong oxy hóa; trong khử, ½–2% cho celadon và 5–10% cho tenmoku. Một chất trợ chảy, nên nhiều sắt làm men chảy |
+| Đồng               | 1–3%                                          | Xanh lục hoặc xanh ngọc trong oxy hóa, đỏ trong khử. Nó có thể làm men thôi nhiễm                                                  |
+| Crom               | Dưới 0,5% đến 2% (các nguồn không thống nhất) | Xanh lục; nâu nếu men nền có kẽm, hồng với thiếc                                                                                   |
+| Mangan             | 2–10%                                         | Nâu và tím                                                                                                                         |
+| Rutil              | Khoảng 2–5%                                   | Màu đốm, loang; thô hoặc mờ trên khoảng 5%                                                                                         |
+| Bột màu thương mại | 2–12%                                         | 2–4% cho sắc nhạt, 5–8% cho tông màu, 10–12% cho màu đậm                                                                           |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Lượng coban và crom thực sự đang bị tranh cãi. Glazy nói 0,1% coban là đủ cho màu xanh lam; Glendale Community College nêu ½–2% hoặc ½–3% tùy môi trường nung; Birdie Boone, trong Pottery Making Illustrated, nói 3% hoặc ít hơn. Với crom, Boone nói dưới 0,5% và Glendale 2–3%. Cách an toàn là bắt đầu thấp và làm một **thử nghiệm tuyến tính**{{en: line blend}}: một hàng mẫu thử men tăng dần một thành phần từ ít đến nhiều.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+Men nền làm thay đổi màu. Một men nền bóng, trong suốt cho màu tươi nhất; men nền bán mờ và mờ, thường nhiều alumina hơn, làm màu dịu đi. Magie đẩy coban về phía tím, kẽm làm crom chuyển nâu, và crom với thiếc cho màu hồng.
 
-### Opacifiers
+### Chất làm đục
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+Một **chất làm đục**{{en: opacifier}} làm một loại men **đục**, che đất sét; một loại men **trong suốt** để đất sét lộ ra.
 
-Table: Opacifiers
+Table: Chất làm đục
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Chất làm đục                        | Lượng thường dùng                    | Ghi chú                                                                                                                     |
+| ----------------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox) | 10–15% cho độ đục hoàn toàn          | Lựa chọn rẻ hơn; các nhãn hiệu là zirconi silicat nghiền thành các cỡ khác nhau, và các loại mịn hơn thì mạnh hơn           |
+| Thiếc oxit                          | Khoảng 5–7% (ước tính của chúng tôi) | Đắt; yếu hơn ở nhiệt độ cao, và Digitalfire báo cáo 4% không tạo độ đục nào trong một loại men trong côn 10 nung khử        |
+| Titan đioxit                        | Khoảng 5% (ước tính của chúng tôi)   | Độ đục mịn như lụa, trong mờ; khoảng 5% có thể làm bề mặt biến đổi, và nhiều hơn thế nhiều thường cho bề mặt mờ có tinh thể |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Độ khớp men và khuyết tật {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+Đất sét và men đều nở ra khi nóng lên và co lại khi nguội đi, mỗi thứ theo mức riêng của nó: **giãn nở nhiệt**{{en: thermal expansion}} của nó. **Độ khớp men**{{en: glaze fit}} là mức độ hai thứ khớp nhau. Một độ khớp tốt để men bị đất sét nén nhẹ; Digitalfire nói một chút lực nén làm sản phẩm bền hơn, trong khi quá nhiều có thể làm yếu và thậm chí làm nứt nó.
 
-### Crazing and shivering
+### Rạn nứt men và bong tróc men
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**Rạn nứt men**{{en: crazing}} là một mạng lưới các vết nứt nhỏ. Độ giãn nở của men cao hơn của xương gốm, nên khi nguội nó co nhiều hơn, bị kéo căng và nứt, thường do quá nhiều natri và kali (Na₂O, K₂O). Nó cũng có thể xuất hiện về sau, khi sử dụng, sau những lần làm nguội đột ngột lặp lại như tiếp xúc với chất lỏng lạnh. Khi nó được mong muốn, như trong raku, nó được gọi là **rạn men**. Digitalfire nói “95% trường hợp, giải pháp là điều chỉnh độ giãn nở nhiệt của men”; làm nguội chậm chỉ trì hoãn rạn nứt men. Phép thử của nó: nung nóng sản phẩm đến khoảng {{300 °F; 149 °C}}, nhúng vào nước đá, và chà bút lông dạ lên để thấy các vết nứt.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Các nguồn khác nhau về cách sửa đầu tiên. Glazy gợi ý thêm silica hoặc alumina; Digitalfire đáp rằng silica thêm vào “chỉ làm loãng KNaO” (natri và kali); Linda Bloomfield thêm bo hoặc giảm trường thạch, mỗi lần một nguyên liệu. Lời khuyên của chúng tôi: trong [công cụ tính công thức men](/recipe), hãy đổi bớt một phần natri và kali sang các chất trợ chảy giãn nở thấp hơn (bo, liti, magie, canxi), kiểm tra thay đổi bằng **So sánh**, và xác nhận bằng phép thử nước đá.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**Bong tróc men**{{en: shivering}} là ngược lại: độ giãn nở của men thấp hơn nhiều so với xương gốm, nên nó bị nén quá mức và bong ra khỏi mép và cạnh. Digitalfire cảnh báo rằng các mảnh bong có thể sắc như dao cạo và có thể bị nuốt phải, và Glazy gọi bong tróc men là “còn nguy hiểm hơn cả rạn nứt men trên đồ gốm dùng với thực phẩm”. Cách sửa là dùng men giãn nở cao hơn hoặc xương gốm giãn nở thấp hơn.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> Không dùng đồ gốm bị rạn nứt men hoặc bong tróc men cho thức ăn hay đồ uống. Các nguồn không thống nhất liệu sản phẩm rạn nứt men có thể được làm sạch đủ kỹ hay không (một nguồn nói máy rửa bát là được; một nguồn khác gọi đồ gốm dùng với thực phẩm bị rạn nứt men là có khuyết tật), nên chúng tôi chọn phía thận trọng.
 
-### Gloss and matte
+### Bóng và mờ
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Bề mặt **bóng** phản chiếu và nhẵn, **bán mờ** có ánh dịu, và **mờ** thì xỉn. Độ bóng cần thủy tinh nóng chảy hoàn toàn. Độ mờ có thể đến từ nhiều alumina (tỷ lệ silica trên alumina thấp), từ các chất trợ chảy như canxi, magie, bari hoặc stronti tạo các tinh thể nhỏ khi men nguội, hoặc từ việc non lửa.
 
-### Common defects
+### Các khuyết tật thông thường
 
-Change one thing at a time, and keep your test tiles.
+Hãy thay đổi một thứ mỗi lần, và giữ các mẫu thử men của bạn.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Các khuyết tật men thông thường, nguyên nhân thường gặp và cách sửa đầu tiên
+Label: Các khuyết tật men thông thường
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Khuyết tật   | Trông như                                              | Nguyên nhân thường gặp                                                                                                                              | Cách sửa đầu tiên                                                                        |
+| ------------ | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Cuốn men     | Men co lại thành hạt, để lộ đất trần                   | Gốm mộc bụi hoặc có dầu mỡ; lớp phủ dày, nhiều đất sét bị nứt khi khô; kẽm, zircon hoặc thiếc                                                       | Làm sạch gốm mộc; tráng mỏng hơn; nung sơ bộ bớt đất sét; thêm chất kết dính như keo CMC |
+| Lỗ chân kim  | Các lỗ nhỏ hoặc hố                                     | Khí từ xương gốm hoặc men chưa lành lại; men non lửa hoặc quánh                                                                                     | Giữ nhiệt ở nhiệt độ đỉnh khoảng nửa giờ; tráng mỏng hơn; bớt kẽm hoặc rutil             |
+| Phồng rộp    | Các hố có cạnh sắc                                     | Thường là nung quá lửa; lớp phủ rất dày; chất trợ chảy dễ bay hơi trên khoảng {{2192 °F; 1200 °C}}                                                  | Nung thấp hơn; tráng mỏng hơn. Cạnh sắc khiến đồ gốm dùng với thực phẩm không an toàn    |
+| Chảy men     | Men chảy xuống kệ                                      | Quá ít alumina; quá dày, như chỗ các lần rót chồng lên nhau; nhiều sắt                                                                              | Tráng mỏng hơn; thêm alumina; giữ men cao hơn chân đế nhiều                              |
+| Nứt do nhiệt | Các vết nứt trong sản phẩm do làm nguội hoặc nung nóng | Làm nguội nhanh qua chuyển pha thạch anh, {{1063 °F; 573 °C}}, hoặc chuyển pha cristobalit, khoảng {{428 °F; 220 °C}}; thành không đều; độ khớp kém | Nung chậm qua cả hai, lên và xuống; thành đều                                            |
 
-## Food safety {#food-safety lang=en}
+## An toàn khi tiếp xúc thực phẩm {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Thôi nhiễm**{{en: leaching}} là kim loại hòa tan ra khỏi men đã nung vào thức ăn hoặc đồ uống, và một loại men có thể trông hoàn hảo mà vẫn làm vậy. Các thử nghiệm theo luật ngâm sản phẩm đã nung trong một dung dịch axit và đo lượng chì và cadimi thôi ra.
 
-### Lead-free is not the same as food-safe
+### Không chì không đồng nghĩa với an toàn khi tiếp xúc thực phẩm
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Các quy định ở Mỹ, EU, Anh và Úc giới hạn lượng chì và cadimi mà một sản phẩm đã nung thôi ra, không phải những gì men chứa. “Không chì” loại bỏ một nguy cơ; nó không phải là một xếp hạng an toàn thực phẩm. Các oxit khác cũng thôi nhiễm: Glazy cảnh báo rằng men nhiều bari “có thể thôi nhiễm và nhìn chung không an toàn khi tiếp xúc thực phẩm”, Digitalfire nói đồng “có thể làm men thôi nhiễm được; hãy thử nó”, và Glazy không còn khuyên dùng men chì cho đồ gốm dùng với thực phẩm.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Men phủ mặt trong**{{en: liner glaze}} là một loại men ổn định, thường trong hoặc trắng, cho các bề mặt chạm vào thực phẩm. Theo quan điểm của chúng tôi, men không có chất tạo màu, bari, chì hay liti, nóng chảy hoàn toàn, không rạn nứt men và bền khi dùng, là lựa chọn ít rủi ro hơn. Ít rủi ro hơn không phải là bằng chứng.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Công thức giới hạn**{{en: limit formula}} (Digitalfire ưa dùng **công thức mục tiêu**) nêu các khoảng điển hình của công thức Seger cho men ổn định ở một côn: các mục tiêu côn 6 của Digitalfire đặt alumina ở 0,285–0,64 và silica ở 2,4–4,7. Chúng hướng bạn đến một hóa học vững chắc nhưng không chứng minh gì; Digitalfire tránh từ “giới hạn” vì nó gợi ý rằng các loại men nằm trong các khoảng đó “bằng cách nào đó là an toàn”. Các công cụ thay đổi công thức men của Glazecalc cho biết khi công thức mới vượt quá một giới hạn khuyến nghị, như nhiều bo ở côn 6, và men nhiều khả năng sẽ làm gì.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+Các giới hạn theo luật khác nhau theo từng quốc gia. Bảng cho thấy các giới hạn nơi bạn sống, theo đơn vị riêng của luật; hãy chọn một quốc gia hoặc khu vực khác để so sánh.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+Ở Mỹ, đồ gốm trang trí trông có vẻ dùng được cho thực phẩm bị coi là đồ gốm dùng cho thực phẩm, trừ khi nó có nhãn dán và một thông báo cố định được đúc nổi hoặc nung dính vào đáy, chẳng hạn “Not for Food Use. May Poison Food” (Không dùng cho thực phẩm. Có thể làm nhiễm độc thực phẩm), hoặc có một lỗ xuyên qua bề mặt chạm thực phẩm. EU đặt giới hạn chì và cadimi cho đồ gốm trong Chỉ thị EU 84/500/EEC, và Anh giữ cùng các số liệu trong luật riêng của mình. Một quyết định năm 2024 của các nước Benelux đặt giới hạn thấp hơn nhiều cho đồ gốm. Hà Lan áp dụng chúng từ ngày 29 tháng 5 năm 2026: ít chì hơn khoảng 130 đến 150 lần và ít cadimi hơn khoảng 14 đến 18 lần so với số liệu của EU. Đồ gốm đáp ứng các quy định cũ và được bán lần đầu trước ngày 1 tháng 12 năm 2026 có thể được bán cho đến khi hết hàng. Các phòng thí nghiệm kiểm định báo cáo rằng Luxembourg áp dụng cùng các giới hạn từ ngày 29 tháng 5 năm 2026, và Bỉ đã thông qua chúng trong một sắc lệnh hoàng gia ngày 19 tháng 7 năm 2026; chúng tôi chưa tự đọc các văn bản đó. Úc đặt giới hạn cho đồ gốm nhập khẩu; chúng tôi không tìm thấy giới hạn chính thức nào cho đồ gốm làm ở Úc hoặc New Zealand.
 
-### Testing
+### Thử nghiệm
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+FDA nói các bộ que thử tại nhà có thể cho thấy chì thôi nhiễm được, nhưng các nghiên cứu cho thấy những bộ thử này thường sai trên đồ gốm có men: chúng có thể báo có chì khi không có, và có thể bỏ sót chì bị thôi nhiễm. Hãy coi kết quả dương tính là lý do để ngừng dùng sản phẩm, và kết quả âm tính là không chứng minh được gì. Một thử nghiệm thôi nhiễm trong phòng thí nghiệm trên sản phẩm đã nung (ASTM C738 ở Mỹ; EN 1388 hoặc ISO 6486 ở châu Âu) là câu trả lời thực sự.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> “An toàn khi tiếp xúc thực phẩm” có nghĩa là loại men này, trên loại đất sét này, nung đến côn này trong lò này và được phủ theo cách này, thôi ra ít hơn các giới hạn theo luật. Glazecalc có thể giúp bạn dựng một loại men ổn định, và **Thay chì** có thể dựng lại một công thức men chì cũ mà không có chì, nhưng không công cụ tính nào có thể chứng nhận một sản phẩm gốm. Chỉ một thử nghiệm trên sản phẩm đã nung mới làm được.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Tỷ trọng và việc tráng men {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### Tỷ trọng
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+Bột men trộn với nước là **nước men**{{en: slurry}}. **Tỷ trọng**{{en: specific gravity}} của nó là khối lượng của nó so với cùng thể tích nước, vốn có tỷ trọng 1,0: càng cao thì càng nhiều bột trong xô. Glazy gọi 1,4–1,5 là “điểm khởi đầu tốt cho hầu hết các loại men”. Để đo nó, hãy cân đúng 100 mL nước men (Glazy gợi ý dùng ống tiêm) và chia cho 100: 145 g nghĩa là tỷ trọng 1,45. Tỷ trọng kế không đáng tin trong các loại men bị keo hóa, và nước bay hơi, nên hãy kiểm tra lại trước khi tráng men.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Các mục tiêu khác nhau theo nguồn. Digitalfire đặt men nhúng ở 1,40–1,50 và men quét thương mại ở 1,25–1,55, trong khi Potclays nêu 1,71–1,81 cho quét và 1,71 cho phun. Lời khuyên của chúng tôi: nhúng ở khoảng 1,45 với men hơi keo hóa, làm theo nhãn với men quét, và ghi lại những gì hiệu quả.
+
+Một **chất keo tụ**{{en: flocculant}} (muối Epsom, giấm hoặc canxi clorua) làm nước men keo hóa nhẹ, khiến nó thành **xúc biến**{{en: thixotropic}}: chảy khi khuấy và đông lại khi yên, để có “độ phủ men đều, không chảy giọt”. Một **chất khử keo tụ**{{en: deflocculant}} (natri silicat hoặc Darvan) làm nó loãng ra. [Cách làm men gốm](/guides/making-a-glaze) đề cập đến việc pha và điều chỉnh.
+
+### Tráng men
+
+Trước hết hãy làm sạch bụi và dầu mỡ khỏi gốm mộc bằng một miếng bọt biển chỉ hơi ẩm thay vì rửa, vì rửa làm nó ngấm nước. Không dùng khí nén để thổi bụi hay quét khô: việc đó làm bụi silica bay vào không khí ([Pha trộn an toàn và thông gió](/guides/safe-mixing#cleaning)).
+
+- **Nhúng** “thường cho một lớp phủ có độ dày đều” (Robin Hopper). Thời gian nhúng quyết định độ dày: Digitalfire ghi chú rằng men nhúng thương mại được làm ở khoảng 1,4 cho lần nhúng 5 giây và 1,5 cho lần nhúng 1 giây.
+- **Rót** men nên “loãng hơn một chút so với khi dùng để nhúng”; ở chỗ các lần rót chồng lên nhau, lớp men dày gấp đôi và có thể chảy.
+- Men **quét** có chứa một loại keo như **keo CMC**, giúp men chảy và bám, rồi cháy hết. Hầu hết cần nhiều lớp, thường hai hoặc ba; hãy làm theo nhãn.
+- **Phun** dùng men loãng hơn nhiều, phủ trong “nhiều lớp mỏng, dần dần tăng độ dày”.
+
+> [!WARNING]
+> Chỉ phun trong buồng phun có thông gió, và đeo khẩu trang lọc bụi đạt chuẩn vừa khít đúng cách. Xem [Pha trộn an toàn và thông gió](/guides/safe-mixing).
+
+Lớp phủ quá dày có thể cuốn men, phồng rộp hoặc chảy. Các quy tắc ngón tay cái của nhà cung cấp dao động từ độ dày của một thẻ tín dụng đến độ dày của một đồng dime của Mỹ, theo ước tính của chúng tôi khoảng 1 mm men khô; các mẫu thử men ở vài độ dày là cách kiểm tra đáng tin cậy. **Sáp chống men**{{en: wax resist}} trên chân đế đẩy men đi, nên sản phẩm không thể dính vào kệ, và **lớp phủ chống dính tấm kê**, một lớp phủ chịu nhiệt thường làm từ cao lanh và silica, bảo vệ kệ khỏi men nhỏ giọt.
+
+## Oxy hóa và khử {#atmosphere}
+
+Các khí trong lò nung, **môi trường nung**, làm thay đổi kết quả của men. **Oxy hóa**{{en: oxidation}} nghĩa là có nhiều oxy. “Lò điện đồng nghĩa với nung oxy hóa,” Digitalfire nói, và men oxy hóa thường tươi hơn men khử, đặc biệt ở nhiệt độ thấp hơn. Trong oxy hóa, đồng cho màu xanh lục và xanh ngọc, và sắt cho nâu, nâu vàng và đỏ. Một lò điện thông gió kém, đầy sản phẩm thải khí, có thể chạy trung tính hơn dự định; một quạt thông gió nối trực tiếp với lò sẽ giúp ích.
+
+**Khử**{{en: reduction}} cố ý hạn chế oxy, thường trong lò gas, lò củi hoặc lò chuyên dụng. Đồng chuyển sang đỏ, và sắt trở thành chất trợ chảy mạnh hơn và cho **men ngọc** (celadon: xanh lam-lục đến xanh lục-xám, từ khoảng ½–2% sắt) và **tenmoku** (thiên mục: nâu-đen, khoảng 5–10% sắt). Glazy nói men ngọc và men đỏ đồng “dựa vào khử”. Đất sét cũng thay đổi: trong một so sánh của Digitalfire, một xương gốm sành nung ra màu xám khi khử và hơi vàng khi oxy hóa. Silic cacbua trong men có thể tạo các vùng khử nhỏ ngay cả trong lò điện. Với khử từ côn 010 đến côn 3, Orton khuyên dùng các côn không có sắt của họ.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Hãy dự kiến một công thức men viết cho lò khử bằng gas sẽ ra khác trong lò điện: một men ngọc hoặc đỏ đồng dựa vào khử sẽ không trông giống nhau khi oxy hóa. Hãy kiểm tra công thức men được làm cho môi trường nung nào, và ghi lại môi trường của riêng bạn, cùng với côn, trong ghi chú của công thức men trong Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Mọi lò nung, kể cả lò điện, đều thải khói, nên hãy thông gió. [Pha trộn an toàn và thông gió](/guides/safe-mixing) giải thích cách làm.
 
-## Glossary {#glossary lang=en}
+## Bảng thuật ngữ {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Phụ gia (additive)
+: Một chất tạo màu, chất làm đục hoặc chất chống lắng được thêm lên trên 100 của một công thức men.
 
 Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+: Chất ổn định chính: ngăn chảy men và thêm độ cứng. Đến từ đất sét và trường thạch.
 
 Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+: Một loại đất sét dẻo với nhiều sắt và chất hữu cơ hơn cao lanh.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Công thức men (batch recipe)
+: Các nguyên liệu thô của một loại men theo khối lượng, thường cộng lại bằng 100.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+Bentonit (bentonite)
+: Một loại đất sét rất mịn thêm vào khoảng 1–2% để giữ men không lắng. Trên 3% có thể làm nứt men khi men khô.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Gốm mộc (bisque; Anh: biscuit)
+: Lần nung đầu tiên, thấp hơn, thường côn 08–04 (thường nhất là 06–04), để lại sản phẩm chắc nhưng xốp.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Bo (boron, B₂O₃)
+: Về mặt chính thức là chất tạo thủy tinh nhưng được dùng như chất trợ chảy; thiết yếu từ côn 06 đến côn 6.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Keo CMC (CMC gum)
+: Một loại keo cellulose giúp men dễ quét và bám; nó cháy hết.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Chất tạo màu và bột màu (colorant, stain)
+: Một oxit hoặc cacbonat kim loại tạo màu cho men; bột màu là chất tạo màu làm trong nhà máy, ổn định hơn.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Côn (cone)
+: Một hình chóp gốm đã hiệu chuẩn cong ở một công nhiệt nhất định. Một côn chứng cho thấy sản phẩm đã nhận gì.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Cuốn men (crawling)
+: Men co lại thành hạt khi nung, để lộ đất trần.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Rạn nứt men (crazing)
+: Các vết nứt nhỏ trong một loại men co nhiều hơn xương gốm của nó; rạn men khi được mong muốn.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Mất tính thủy tinh (devitrification)
+: Tinh thể mọc ra từ thủy tinh sớm trong lúc nguội, nơi chúng không được mong muốn.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Nứt do nhiệt (dunting)
+: Các vết nứt trong một sản phẩm do ứng suất làm nguội hoặc nung nóng, thường ở chuyển pha thạch anh, {{1063 °F; 573 °C}}.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+Gốm đất nung (earthenware)
+: Một xương gốm nhiệt độ thấp (khoảng côn 06–02), xốp ở các côn thấp và đặc hơn khi nung nóng hơn.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Trường thạch (feldspar)
+: Một khoáng vật cung cấp chất trợ chảy kiềm cùng alumina và silica: kali, natri hoặc nephelin xienit.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Chất keo tụ và chất khử keo tụ (flocculant, deflocculant)
+: Các phụ gia làm nước men keo hóa (muối Epsom, giấm) hoặc làm loãng nó (natri silicat, Darvan).
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Chất trợ chảy (flux)
+: Một oxit hạ nhiệt độ nóng chảy của silica.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+An toàn khi tiếp xúc thực phẩm (food safe)
+: Theo luật, thôi ra ít chì và cadimi hơn các giới hạn trong một thử nghiệm bằng axit. Không giống với không chì.
 
 Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+: Thủy tinh làm trong nhà máy, nấu chảy, làm nguội nhanh và nghiền, khiến các oxit tan hoặc độc thành không tan.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Chất tạo thủy tinh (glass former)
+: Oxit dựng nên thủy tinh, thường là silica.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Men (glaze)
+: Một lớp thủy tinh nóng chảy khi nung để bịt kín và trang trí một sản phẩm.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Nung men (glaze firing; Anh: glost firing)
+: Lần nung làm men nóng chảy.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Độ khớp men (glaze fit)
+: Mức độ độ giãn nở của men và xương gốm khớp nhau; một độ khớp tốt để men bị nén nhẹ.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Bóng, bán mờ và mờ (gloss, satin, matte)
+: Phản chiếu và nhẵn; một ánh dịu; xỉn.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Phôi chưa nung (greenware)
+: Sản phẩm chưa nung: phôi se khi cứng nhưng ẩm, phôi khô hoàn toàn khi không còn nước tự do.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Công nhiệt (heatwork)
+: Tác động kết hợp của nhiệt độ và thời gian trong lò nung; thứ côn đo.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+Cao lanh (kaolin; Anh: china clay)
+: Một loại đất sét trắng tinh khiết cung cấp alumina và silica; giúp men không bị lắng. Ở Úc, Eckalite là một nhãn hiệu.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Lớp phủ chống dính tấm kê (kiln wash)
+: Một lớp phủ chịu nhiệt bảo vệ kệ lò khỏi men nhỏ giọt.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Thôi nhiễm (leaching)
+: Kim loại hòa tan ra khỏi men đã nung vào thức ăn hoặc đồ uống.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Công thức giới hạn (limit formula; công thức mục tiêu)
+: Các khoảng điển hình của công thức Seger cho men ổn định ở một côn; một chỉ dẫn, không phải một bảo đảm.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Thử nghiệm tuyến tính (line blend)
+: Các thử nghiệm tăng dần một thành phần giữa hai lượng. Một thử nghiệm tam giác thay đổi ba thành phần trên một lưới.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Men phủ mặt trong (liner glaze)
+: Một loại men ổn định, thường trong hoặc trắng, cho các bề mặt chạm vào thực phẩm.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+LOI (lượng mất khi nung)
+: Khối lượng mất đi khi nung dưới dạng nước, cacbon đioxit, chất hữu cơ hoặc lưu huỳnh.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Nung một lửa (once-firing; nung một lần)
+: Tráng men sản phẩm chưa nung và chỉ nung một lần.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Chất làm đục (opacifier)
+: Một nguyên liệu, như zircon, thiếc oxit hoặc titan đioxit, làm men đục.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Oxy hóa và khử (oxidation, reduction)
+: Nung với nhiều oxy (lò điện), hoặc với oxy bị hạn chế (thường là gas hoặc củi).
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Oxit (oxide)
+: Một hợp chất của một nguyên tố với oxy; một phân tích oxit liệt kê chúng theo phần trăm khối lượng.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Lỗ chân kim và phồng rộp (pinholing, blistering)
+: Các lỗ nhỏ, hoặc các hố có cạnh sắc, nơi khí thoát qua khối nóng chảy.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Sứ (porcelain)
+: Một xương gốm màu trắng, giàu cao lanh, nhiệt độ cao, thường trong mờ.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O và RO
+: Các chất trợ chảy kiềm (Na₂O, K₂O, Li₂O) và các chất trợ chảy kiềm thổ (CaO, MgO, BaO, SrO, kèm ZnO).
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Bong tróc men (shivering)
+: Men bong ra khỏi cạnh vì bị nén quá mức; một nguy cơ trên đồ gốm dùng với thực phẩm.
 
 Silica (SiO₂)
-: The glass former; also called flint or quartz.
+: Chất tạo thủy tinh; còn gọi là flint hay thạch anh.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Tỷ lệ silica trên alumina (silica to alumina ratio)
+: Silica chia cho alumina trong công thức Seger: cao hơn thường bóng, thấp hơn thường mờ.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Hồ đất và engobe (slip, engobe)
+: Đất sét trong nước; engobe là lớp phủ giống hồ đất với nhiều vật liệu không phải đất sét hơn.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Tỷ trọng (specific gravity)
+: Khối lượng của nước men so với cùng thể tích nước.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Chất ổn định (stabilizer)
+: Một oxit, chủ yếu là alumina, làm khối nóng chảy quánh lại và thêm độ bền.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Gốm sành (stoneware)
+: Một xương gốm nhiệt độ trung bình đến cao (khoảng côn 5–10) trở nên thiêu kết hoặc gần như vậy.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Tính xúc biến (thixotropy)
+: Chảy khi khuấy, đông thành gel mềm khi yên.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Màu dưới men (underglaze)
+: Hồ đất màu hoặc trang trí bằng oxit, thường nằm dưới một lớp men trong.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Công thức Seger (unity molecular formula, UMF)
+: Các oxit của một loại men dưới dạng số đếm phân tử, được quy đổi sao cho các chất trợ chảy cộng lại bằng 1.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Sự thiêu kết (vitrification)
+: Một xương gốm trở nên như thủy tinh và không xốp khi nung.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Sáp chống men (wax resist)
+: Sáp được quét ở nơi men không được tới, thường là chân đế.
 
 Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+: Canxi cacbonat, chất trợ chảy canxi chính; mất khoảng 44% khối lượng khi nung, dưới dạng cacbon đioxit.
 
-## Sources {#sources lang=en}
+## Nguồn {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -511,10 +511,10 @@ Whiting
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
+- [EUR-Lex: Chỉ thị 84/500/EEC của Hội đồng ngày 15 tháng 10 năm 1984 về việc xích gần luật pháp của các quốc gia thành viên liên quan đến đồ gốm sứ dự định tiếp xúc với thực phẩm](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation (ngày 23 tháng 4 năm 2026) applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
-- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [Federal Register, ngày 12 tháng 1 năm 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
 - [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
 - [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
 - [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)

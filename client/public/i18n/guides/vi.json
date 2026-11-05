@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Học với khóa học men miễn phí của John Britt",
       "text": "Khóa học video miễn phí của ông trên YouTube, theo từng bài, kèm cẩm nang của chúng tôi để đọc và bài tập để thử trong Glazecalc. Bằng tiếng Anh."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Dạy tính toán men",
+      "text": "6 buổi học cho một lớp hay nhóm học, từ mẫu thử tam giác đến công thức Seger tính theo cả hai chiều, kèm phiếu bài tập để in."
     }
   },
   "more": "Thêm cẩm nang",
@@ -255,6 +259,8 @@
       "crazed": "rạn nứt men"
     },
     "keyBright": "Đường chấm chấm: nơi các loại men của Stull sáng bóng nhất.",
-    "keyCrazed": "Gạch chéo: nơi chúng bị rạn nứt men."
+    "keyCrazed": "Gạch chéo: nơi chúng bị rạn nứt men.",
+    "note": "Đây là hướng dẫn, không phải dự đoán. R. T. Stull (Transactions of the American Ceramic Society, 1912) nung ở khoảng côn 11 với chất trợ chảy cố định ở 0,3 K₂O và 0,7 CaO; các chất trợ chảy và cách nung khác làm dịch chuyển các vùng, và một loại men mờ chỉ vì non lửa vẫn có thể rơi vào vùng sáng bóng. Các vùng được vẽ như Glazy vẽ.",
+    "inGuide": "Silica (SiO₂) theo chiều ngang, từ khoảng 1 đến 7, và alumina (Al₂O₃) theo chiều dọc, từ 0 đến 1, cả hai đều từ công thức Seger. Các vùng hình nêm xòe ra từ bên trái: chưa nóng chảy ở góc trên bên trái, rồi mờ, rồi bán mờ. Phần không tô bóng ở bên phải chúng là sáng bóng, và đường chấm trong đó là nơi men của Stull bóng nhất. Non lửa ở góc dưới bên phải, với ít alumina và nhiều silica. Vùng gạch chéo, ở phía dưới biểu đồ và ở cạnh trái, là nơi các mẫu thử của ông bị rạn nứt men."
   }
 }

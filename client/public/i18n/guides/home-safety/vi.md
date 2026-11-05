@@ -59,31 +59,31 @@ Label: Các nguyên liệu tan
 
 Nguy hiểm chính của chì thì khác: không phải một thìa, mà là những lượng nhỏ bụi nuốt phải qua nhiều tuần hoặc nhiều tháng, không có dấu hiệu cảnh báo (xem Chì và trẻ em, bên dưới).
 
-## Storing materials at home {#storing-materials lang=en}
+## Cất giữ nguyên liệu tại nhà {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Không cơ quan chính thức nào đặt ra quy tắc cất giữ nguyên liệu làm men tại nhà, nhưng các trang về sức khỏe và an toàn đều đồng ý: hãy giữ việc làm gốm trong một không gian riêng, tránh xa trẻ em. Sở y tế Pennsylvania, khi viết về các sở thích dùng chì, nói hãy “Dùng một không gian làm việc hoặc nhà để xe riêng cho sở thích của bạn và giữ trẻ em tránh xa khu vực này.”
 
-### A storage checklist
+### Danh sách kiểm tra cất giữ
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Đây là các quy tắc phòng ngừa ngộ độc chung được áp dụng cho men. Không tiêu chuẩn gốm nào đặt ra chúng, nhưng chúng tôi gợi ý tất cả:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Giữ nguyên liệu khô được khóa lại: một tủ, hoặc một phòng, nhà để xe hay nhà kho có khóa. Một kệ cao có ích, nhưng trẻ em biết trèo. Nếu lúc đầu bạn chỉ khóa được vài thứ, hãy bắt đầu với các nguyên liệu tan và chất tạo màu.
+- Giữ nguyên liệu trong túi hoặc hộp gốc của chúng. Nếu bạn chuyển một loại sang đồ đựng khác, hãy dán nhãn với tên đúng như được viết trên túi.
+- Tuyệt đối không dùng đồ đựng thức ăn hay đồ uống (hộp sữa chua, lọ, chai) cho nguyên liệu làm men, ngay cả khi đã dán nhãn. Một đứa trẻ biết một hộp sữa chua chứa gì.
+- Giữ các dụng cụ của xưởng (muỗng xúc, thìa, cái đánh trứng, sàng, cân) trong xưởng. Tuyệt đối không dùng dụng cụ nhà bếp cho men, hay dụng cụ làm men cho thức ăn.
+- Giữ men ướt trong các xô có dán nhãn, đậy nắp.
+- Giữ phiếu an toàn hóa chất của mỗi nguyên liệu cùng với nó, trên giấy hoặc trong điện thoại của bạn.
+- Không để gì từ xưởng trong nhà bếp: không túi, xô, dụng cụ hay mẫu thử men.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Để biết thêm chi tiết về mua và cất giữ nguyên liệu, xem [Cách làm men gốm](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Chất thải men và nước rửa
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Tuyệt đối không đổ men, hay nước bạn đã rửa dụng cụ làm men, xuống bồn rửa hoặc ra vườn. Hội đồng Thủ công Anh (Crafts Council) gợi ý dùng một xô nước riêng để rửa tay, cọ, sàng và dụng cụ. Hãy để nó lắng qua đêm, đổ bớt nước trong, rồi làm khô men đã lắng và bỏ vào thùng rác (nó đi đến bãi chôn lấp), tuyệt đối không đổ xuống cống.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Chúng tôi gợi ý đậy nắp xô đó: cặn bùn chứa cùng các kim loại như men, và thú cưng uống nước đọng. Các quy định xử lý khác nhau tùy nơi, nên hãy kiểm tra phiếu an toàn hóa chất của từng sản phẩm, và hỏi hội đồng địa phương hoặc công ty nước nếu bạn không chắc.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Một số xưởng nung cặn khô trước khi vứt bỏ. Họ cho nó vào một cái bát dự phòng sẽ bỏ đi: sau lần nung, bát không thể dùng lại. Chỉ đổ đầy bát một phần tư, vì cặn sủi bọt và phồng lên khi nóng chảy, và đậy nó bằng một cái đĩa. Đặt nó trên một tấm kê đã phủ lớp chống dính hoặc một tấm dự phòng, phòng khi nó tràn ra. Lần nung biến cặn thành thủy tinh, giữ kim loại chặt hơn nhiều so với bột rời, nên an toàn hơn ở bãi chôn lấp. Hãy xử lý cặn khô như men khô, với khẩu trang lọc bụi đạt chuẩn và không làm bụi bay lên.
 
 ## Giữ bụi trong xưởng {#keeping-dust-in-the-studio}
 

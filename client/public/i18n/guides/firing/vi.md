@@ -458,73 +458,73 @@ Bộ điều khiển L&L và Bartlett dùng {{1926 °F; 1052 °C}} cho côn 04 v
 
 Một lò thủ công theo cùng kế hoạch bằng tay: sấy chậm với nắp kê hở và các lỗ quan sát mở, nâng các công tắc từ Thấp lên Vừa rồi Cao, và để Kiln-Sitter kết thúc lần nung. Các quy trình đã công bố nằm trong Lò thủ công chi tiết, bên dưới.
 
-## Glaze firing {#glaze lang=en}
+## Nung men {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Lần nung men làm men nóng chảy thành thủy tinh trên gốm mộc. Hầu hết men nhiệt độ thấp trên thị trường được làm cho côn 06 hoặc 05 (dải nhiệt độ thấp là côn 06–04), và hầu hết men nhiệt độ trung bình cho côn 5–6. Hãy nung đến côn ghi trên nhãn men và đất của bạn, với một bộ côn quanh số đó. Để biết điều gì xảy ra bên trong men khi nó nóng chảy, xem [Tráng men từ những nguyên lý đầu tiên](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Xếp lò cho lần nung men
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Các sản phẩm đã tráng men không được chạm nhau hay chạm thành lò: hãy chừa khoảng ½ inch (13 mm).
+- Giữ men tránh khỏi chân đế (**chừa chân đế không men**{{en: dry-footing}}), hoặc đặt đồ gốm nhiệt độ thấp trên **chân kê**{{en: stilt}}, các giá đỡ nhỏ có mũi nhọn. Gốm sành và sứ không nên đứng trên chân kê, vì chúng dính chặt ở các nhiệt độ đó; hãy dùng lớp phủ chống dính tấm kê nhiệt độ cao hoặc cát silica thay vào đó.
+- Chừa ít nhất 1 inch (25 mm) giữa mép kệ và thành lò hoặc Kiln-Sitter.
 
-### Controller schedules
+### Đường cong nung của bộ điều khiển
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Cài đặt sẵn nung men của L&L và Bartlett
+Label: Cài đặt sẵn nung men
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Phân đoạn                    |                     Tăng đến |             Slow Glaze |             Fast Glaze |
+| ---------------------------- | ---------------------------: | ---------------------: | ---------------------: |
+| 1                            |           {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |    Không có bước riêng |
+| 2                            | {{250 °F; 139 °C}} dưới đỉnh | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                            |                Nhiệt độ đỉnh |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Thời gian nung nóng, lò rỗng |                              |       Khoảng 6½–7½ giờ |         Khoảng 3–4 giờ |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Nơi các phân đoạn 2 và 3 kết thúc, theo côn (L&L và Bartlett)
+Label: Mục tiêu cài đặt sẵn
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Côn | Phân đoạn 2 kết thúc |        Nhiệt độ đỉnh |
+| --- | -------------------: | -------------------: |
+| 06  |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze là mặc định an toàn hơn, xét theo cảnh báo của L&L về nung nhanh. Nếu bạn thêm một lần giữ nhiệt hơn 5–10 phút ở nhiệt độ đỉnh, L&L nói hãy hạ mục tiêu hoặc độ lệch côn cho tương xứng, và ghi chú rằng “Ngâm nhiệt ở nhiệt độ cao làm dây điện trở và cặp nhiệt điện mòn nhanh hơn.”
 
-### Cone 6: drop-and-hold
+### Côn 6: hạ nhanh rồi giữ
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Men nhiệt độ trung bình đôi khi ra với **lỗ chân kim**{{en: pinholing}} (các lỗ nhỏ xíu trên bề mặt) hoặc phồng rộp, do khí sủi bọt ra khỏi khối nóng chảy. Một đường cong nung **hạ nhanh rồi giữ**{{en: drop-and-hold}} nung đến đỉnh, làm nguội nhanh khoảng {{100 °F; 56 °C}} và giữ ở đó. Theo lời của Digitalfire, “Hạ 100°F và giữ cho khối nóng chảy đủ độ nhớt để làm vỡ bọt mà vẫn cho chúng lành lại.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, côn 6 hạ nhanh rồi giữ
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Bước |                      Tốc độ |             Mục tiêu | Giữ nhiệt                                |
+| ---- | --------------------------: | -------------------: | ---------------------------------------- |
+| 1    |       {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 phút                                  |
+| 2    |      {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Tùy chọn 30 phút, để làm hết các đám bọt |
+| 3    |       {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 phút; lâu hơn trong lò lớn            |
+| 4    | Hạ ở {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 phút                                  |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS mất khoảng 9 giờ 36 phút. Với các loại men lỏng hơn, Digitalfire hạ khoảng {{200 °F; 111 °C}} thay vào đó; hạ quá xa “có nguy cơ kết tinh trong lúc giữ nhiệt”. Nhiệt độ đỉnh {{2200 °F; 1204 °C}} của nó thấp hơn {{2232 °F; 1222 °C}} của bảng cho côn 6; Digitalfire báo cáo rằng hầu hết các lò đạt côn 6 ở khoảng {{2200 °F; 1204 °C}}. Hãy kiểm tra nó bằng một bộ côn trong lò của riêng bạn.
 
-### Slow cooling
+### Làm nguội chậm
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Làm nguội chậm**{{en: slow cooling}} nghĩa là bộ điều khiển làm nguội lò với một tốc độ đã đặt thay vì để nó tự giảm. C6DHSC của Digitalfire là PLC6DS theo sau bởi việc làm nguội ở {{150 °F/h; 83 °C/h}} từ {{2100 °F; 1148 °C}} xuống {{1400 °F; 760 °C}}, rồi tắt. Nó “cải thiện độ rực rỡ và chất lượng bề mặt” và giúp màu xanh rutil, nhưng làm nguội chậm “có thể tăng độ mờ” (một loại men mờ đã bị khô) và có thể rút ngắn tuổi thọ của các rơ le của lò. L&L cũng kèm một chương trình làm nguội chậm cho côn 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L “User 6”: làm nguội chậm cho men côn 6
+Label: L và L làm nguội chậm
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Bước |                     Tốc độ |             Mục tiêu |
+| ---- | -------------------------: | -------------------: |
+| 1    |          Hết tốc độ để lên | {{2232 °F; 1222 °C}} |
+| 2    |        Hết tốc độ để xuống | {{1900 °F; 1038 °C}} |
+| 3    | Hạ ở {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Bộ điều khiển của Skutt cũng có tùy chọn sấy nóng trước và tùy chọn làm nguội một bước.
 
-### On a manual kiln
+### Với lò thủ công
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Một lò thủ công không thể theo các đường cong nung này một cách chính xác, nhưng kế hoạch thì như nhau: nhẹ nhàng lúc đầu, đều đặn ở giữa, và phần kết thúc được theo dõi. Đường cong nung men nhiệt độ thấp của Bracker's nằm trong Lò thủ công chi tiết, bên dưới; với các côn nóng hơn nó thêm “trung bình 15–30 phút cho mỗi số côn”. Với hỏa kế, luyện tập và một nhật ký, bạn có thể gần như sao chép một lần hạ nhanh rồi giữ hoặc làm nguội chậm bằng cách vặn các công tắc xuống bằng tay, như Digitalfire gợi ý.
 
 ## Lò thủ công chi tiết {#manual-kilns}
 
