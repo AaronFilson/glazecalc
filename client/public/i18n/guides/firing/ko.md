@@ -458,73 +458,73 @@ L&L과 Bartlett 컨트롤러는 오튼 콘 04에 {{1926 °F; 1052 °C}}, 오튼 
 
 수동 가마도 같은 계획을 손으로 따릅니다. 뚜껑을 살짝 열고 불구멍을 연 채로 천천히 말리고, 스위치를 약에서 중, 강으로 단계적으로 올리고, 소성의 끝은 킬른 시터에 맡깁니다. 공개된 순서는 아래의 “수동 가마 자세히”에 있습니다.
 
-## Glaze firing {#glaze lang=en}
+## 재벌 소성 {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+재벌 소성은 초벌한 기물 위에서 유약을 녹여 유리로 만듭니다. 시중의 저화도 유약은 대부분 오튼 콘 06이나 05용으로 만들어지며(저화도 범위는 콘 06~04), 중화도 유약은 대부분 콘 5~6용입니다. 유약과 점토의 라벨에 적힌 콘으로 소성하고, 그 번호 둘레에 콘 세트를 놓으세요. 유약이 녹으면서 안에서 일어나는 일은 《[기초부터 배우는 유약](/guides/glazing-basics)》을 보세요.
 
-### Loading for a glaze firing
+### 재벌 소성을 위한 재임
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- 시유한 기물은 서로 또는 벽에 닿으면 안 됩니다. 약 ½인치(13 mm)를 띄우세요.
+- 굽에 유약이 묻지 않게 하거나(**굽의 유약 닦아내기**), 저화도 기물은 뾰족한 점이 있는 작은 받침인 **삼발이**에 올리세요. 석기{{en: stoneware}}와 자기는 그 온도에서 삼발이가 파고들므로 삼발이에 올리면 안 됩니다. 고화도용 내화판 코팅제나 규사를 쓰세요.
+- 내화판 가장자리와 벽 또는 킬른 시터 사이를 1인치(25 mm) 이상 띄우세요.
 
-### Controller schedules
+### 컨트롤러 스케줄
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L과 Bartlett의 재벌 프리셋
+Label: 재벌 프리셋
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| 세그먼트           |                                  올릴 온도 |             Slow Glaze |             Fast Glaze |
+| ------------------ | -----------------------------------------: | ---------------------: | ---------------------: |
+| 1                  |                         {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |         별도 단계 없음 |
+| 2                  | 최고 온도보다 {{250 °F; 139 °C}} 낮은 온도 | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                  |                                  최고 온도 |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| 가열 시간(빈 가마) |                                            |           약 6½~7½시간 |             약 3~4시간 |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: 콘별로 세그먼트 2와 3이 끝나는 온도(L&L과 Bartlett)
+Label: 프리셋 목표 온도
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| 오튼 콘 |      세그먼트 2의 끝 |            최고 온도 |
+| ------- | -------------------: | -------------------: |
+| 06      |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04      |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6       | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+빠른 소성에 대한 L&L의 경고를 생각하면 Slow Glaze가 더 안전한 기본값입니다. 최고 온도에서 5~10분을 넘는 유지를 추가한다면, L&L은 그에 맞게 목표 온도나 콘 오프셋을 낮추라고 하며 “고온에서 유지하면 열선과 열전대의 마모가 빨라진다”고 덧붙입니다.
 
-### Cone 6: drop-and-hold
+### 오튼 콘 6: 드롭 앤드 홀드
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+중화도 유약에는 녹은 유약에서 가스가 거품으로 빠져나오며 남기는 **핀홀**{{en: pinholes}}(표면의 아주 작은 구멍)이나 블리스터가 생기기도 합니다. **드롭 앤드 홀드**{{en: drop-and-hold}} 스케줄은 최고 온도까지 소성한 뒤 약 {{100 °F; 56 °C}}만큼 빠르게 식히고 그 온도에서 유지합니다. Digitalfire의 말로는 “100°F를 낮추어 유지하면, 녹은 유약이 거품을 터뜨릴 만큼의 점성을 가지면서도 터진 자국이 아물 수 있습니다.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, 오튼 콘 6 드롭 앤드 홀드
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| 단계 |                            승온 속도 |            목표 온도 | 유지                                        |
+| ---- | -----------------------------------: | -------------------: | ------------------------------------------- |
+| 1    |                {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60분                                        |
+| 2    |               {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 선택 사항으로 30분, 거품 무리를 없애기 위함 |
+| 3    |                {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10분, 큰 가마에서는 더 길게                 |
+| 4    | {{900 °F/h; 500 °C/h}}의 속도로 내림 | {{2100 °F; 1148 °C}} | 30분                                        |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS는 약 9시간 36분이 걸립니다. 더 유동성이 큰 유약에는 Digitalfire가 약 {{200 °F; 111 °C}}를 대신 낮추며, 너무 많이 낮추면 “유지하는 동안 결정이 생길 위험이 있습니다”. 최고 온도 {{2200 °F; 1204 °C}}는 온도표의 오튼 콘 6 값인 {{2232 °F; 1222 °C}}보다 낮습니다. Digitalfire는 대부분의 가마가 약 {{2200 °F; 1204 °C}}에서 콘 6에 도달한다고 보고합니다. 사용하는 가마에서 콘 세트로 확인하세요.
 
-### Slow cooling
+### 서냉
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**서냉**{{en: slow cooling}}은 가마가 저절로 식게 두지 않고 컨트롤러가 정해 둔 속도로 식히는 것입니다. Digitalfire의 C6DHSC는 PLC6DS 다음에 {{2100 °F; 1148 °C}}에서 {{1400 °F; 760 °C}}까지 {{150 °F/h; 83 °C/h}}의 속도로 식히고 끄는 것입니다. 이는 “광택과 표면 품질을 높이고” 루타일 청색 유약에 도움이 되지만, 서냉은 “무광 정도를 높일 수 있고”(한 무광 유약은 거칠어졌습니다) 가마 릴레이의 수명을 줄일 수도 있습니다. L&L도 오튼 콘 6용 서냉 프로그램을 함께 제공합니다.
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L “User 6”: 오튼 콘 6 유약의 서냉
+Label: L&L 서냉
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| 단계 |                           승온 속도 |            목표 온도 |
+| ---- | ----------------------------------: | -------------------: |
+| 1    |                    최대 속도로 올림 | {{2232 °F; 1222 °C}} |
+| 2    |                    최대 속도로 내림 | {{1900 °F; 1038 °C}} |
+| 3    | {{150 °F/h; 83 °C/h}}의 속도로 내림 |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutt의 컨트롤러도 예열과 한 단계 냉각 옵션을 제공합니다.
 
-### On a manual kiln
+### 수동 가마의 경우
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+수동 가마는 이 스케줄을 정확히 따를 수 없지만 계획은 같습니다. 처음에는 부드럽게, 중간에는 꾸준히, 마무리는 지켜보면서 소성합니다. Bracker's의 저화도 재벌 스케줄은 아래의 “수동 가마 자세히”에 있으며, 더 고온의 콘에는 “콘 번호마다 평균 15~30분”을 더합니다. 온도계를 쓰고 연습하고 기록을 남기면, Digitalfire가 제안하듯 스위치를 손으로 낮추어 드롭 앤드 홀드나 서냉을 대략 흉내 낼 수 있습니다.
 
 ## 수동 가마 자세히 {#manual-kilns}
 

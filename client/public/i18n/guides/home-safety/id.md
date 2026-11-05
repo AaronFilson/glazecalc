@@ -59,31 +59,31 @@ Label: Bahan larut
 
 Bahaya utama timbal berbeda: bukan satu sendok, melainkan debu dalam jumlah kecil yang tertelan selama berminggu-minggu atau berbulan-bulan, tanpa tanda peringatan (lihat Timbal dan anak-anak, di bawah).
 
-## Storing materials at home {#storing-materials lang=en}
+## Menyimpan bahan di rumah {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Tidak ada badan resmi yang menetapkan aturan penyimpanan bahan glasir di rumah, tetapi halaman kesehatan dan keselamatan sepakat: pisahkan pekerjaan di ruangnya sendiri, jauh dari anak-anak. Departemen kesehatan Pennsylvania, menulis tentang hobi yang memakai timbal, menyatakan untuk "Gunakan ruang kerja atau garasi khusus untuk hobi Anda dan jauhkan anak-anak dari area ini."
 
-### A storage checklist
+### Daftar periksa penyimpanan
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Ini adalah aturan umum pencegahan keracunan yang diterapkan pada glasir. Tidak ada standar keramik yang menetapkannya, tetapi kami menyarankan semuanya:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Simpan bahan kering terkunci: lemari, atau ruangan, garasi, atau gudang yang dapat dikunci. Rak tinggi membantu, tetapi anak-anak memanjat. Jika Anda hanya dapat mengunci beberapa hal pada awalnya, mulailah dengan bahan larut dan pewarna.
+- Simpan bahan dalam kantong atau wadah aslinya. Jika Anda memindahkannya ke wadah lain, beri label dengan nama persis seperti tertulis pada kantong.
+- Jangan pernah memakai wadah makanan atau minuman (wadah yoghurt, toples, botol) untuk bahan glasir, bahkan yang berlabel. Anak tahu apa isi wadah yoghurt.
+- Simpan perkakas studio (skop, sendok, pengocok, ayakan, timbangan) di studio. Jangan pernah memakai perkakas dapur untuk glasir, atau perkakas glasir untuk makanan.
+- Simpan glasir basah dalam ember berlabel dengan tutup terpasang.
+- Simpan lembar data keselamatan setiap bahan bersamanya, di kertas atau di ponsel Anda.
+- Jangan simpan apa pun dari studio di dapur: tidak ada kantong, ember, perkakas, atau ubin uji.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Untuk membeli dan menyimpan bahan secara lebih mendalam, lihat [Cara membuat glasir](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Limbah glasir dan air bilasan
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Jangan pernah menuang glasir, atau air tempat Anda membilas perkakas glasir, ke wastafel atau ke kebun. Crafts Council Inggris menyarankan ember air terpisah untuk mencuci tangan, kuas, ayakan, dan perkakas. Biarkan mengendap semalam, tuang air beningnya, lalu keringkan glasir yang mengendap dan buang ke tempat sampah (masuk ke tempat pembuangan akhir), jangan pernah ke saluran pembuangan.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Kami menyarankan tutup pada ember itu: lumpurnya memuat logam yang sama dengan glasir, dan hewan peliharaan minum air yang menggenang. Aturan pembuangan berbeda dari tempat ke tempat, jadi periksa lembar data keselamatan setiap produk, dan tanya pemerintah daerah atau perusahaan air Anda jika ragu.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Sebagian studio membakar endapan yang sudah kering sebelum membuangnya. Mereka menaruhnya di mangkuk cadangan yang boleh dikorbankan: setelah pembakaran, mangkuk itu tidak dapat dipakai lagi. Isi mangkuk hanya seperempat penuh, karena endapan berbuih dan menggelembung saat meleleh, dan tutup dengan piring. Letakkan di atas rak yang sudah diberi pelapis rak tungku atau di atas lempeng cadangan, berjaga-jaga bila meluap. Pembakaran mengubah endapan menjadi kaca, yang mengikat logam jauh lebih erat daripada bubuk lepas, sehingga lebih aman di tempat pembuangan akhir. Tangani endapan kering seperti glasir kering, dengan masker respirator dan tanpa menimbulkan debu.
 
 ## Menjaga debu tetap di studio {#keeping-dust-in-the-studio}
 

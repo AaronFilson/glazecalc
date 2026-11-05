@@ -860,6 +860,25 @@ The words Google, Apple and Microsoft use on their Korean help pages, and the ch
 | password                                  | 비밀번호         | Google ("비밀번호"); Apple and Microsoft write 암호, which also means a cipher: 비밀번호 is the everyday word (Naver, Kakao) and is used in every file. "password manager" → "비밀번호 관리자".                                                                                                                                                                                                                                                                       |
 | trusted device                            | 신뢰하는 기기    | Apple ("신뢰하는 기기"), where the English says it.                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026. The new materials' notes quote their Japanese and Chinese names in Chinese characters, as the English does; those runs are listed here so that the hanja check accepts them, and only there: the Korean around them is Hangul.
+
+| English                                         | Korean                     | Notes                                                                                                                  |
+| ----------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | Stull 차트                 | **show English**. As the recipe page already writes it. Regions as there: 미용융, 매트, 반매트, 광택, 소성 부족, 빙렬. |
+| dry SG (of a glaze's powder)                    | 마른 비중                  | No source. The app's "SG of the dry materials" is "마른 원료의 비중".                                                  |
+| cristobalite inversion                          | 크리스토발라이트 전이      | Beside 석영 전이. Usage.                                                                                               |
+| colemanite                                      | 콜레마나이트               | Usage.                                                                                                                 |
+| porcelain stone                                 | 도석                       | Usage; quoted name 瓷石 kept as the English gives it.                                                                  |
+| synthetic ash (synthetic 土灰), 合成土灰        | 합성 원료(土灰를 대신하는) | No source. Quoted names 土灰, 合成土灰 kept.                                                                           |
+| rice-straw ash, 藁灰, 合成藁灰                  | 볏짚 재                    | No source.                                                                                                             |
+| isu ash, 柞灰                                   | 이스 재                    | No source; quoted name 柞灰 kept.                                                                                      |
+| iron-rich local clay 紫金土                     | 철분이 많은 지역 점토      | Quoted name 紫金土 kept.                                                                                               |
+| a supplier's grade 益田長石 F-1                 | 益田長石 F-1               | A product name, kept as the English gives it.                                                                          |
+| sludge (dried glaze sludge from a rinse bucket) | 침전물                     | As the earlier paragraphs of home-safety write it.                                                                     |
+| Famous glazes                                   | 유명한 유약                | No source. Page and menu name.                                                                                         |
+
 ## 3. Never translated
 
 From terms.md, unchanged:

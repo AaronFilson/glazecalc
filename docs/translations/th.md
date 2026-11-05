@@ -330,6 +330,23 @@ eyebrow, text kept unjustified, `white-space: nowrap` on labels) is in docs/asia
 - **ดินเหนียว:** clay in general is **ดิน** or **ดินเหนียว**; ball clay is **บอลเคลย์**, so "ดินเหนียว" never names it alone.
 - **Placeholders:** see Placeholders and names.
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | Thai                                           | Notes                                                                                                                           |
+| ----------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | แผนภูมิสตัลล์                                  | **show English**. As the recipe page already writes it. Regions as there: ไม่หลอมรวม, ด้าน, กึ่งด้าน, เงา, เผาไม่สุก, แตกลายงา. |
+| dry SG (of a glaze's powder)                    | ความถ่วงจำเพาะแห้ง                             | No source. The app's "SG of the dry materials" is "ความถ่วงจำเพาะของวัตถุดิบแห้ง".                                              |
+| cristobalite inversion                          | การเปลี่ยนรูปของคริสโตบาไลต์                   | Beside การเปลี่ยนรูปของควอตซ์. No source.                                                                                       |
+| colemanite                                      | โคลีมาไนต์                                     | No source (transliteration).                                                                                                    |
+| porcelain stone                                 | หินพอร์ซเลน                                    | No source; the Chinese 瓷石 kept as the English gives it.                                                                       |
+| synthetic ash                                   | วัตถุดิบสังเคราะห์ที่ใช้แทน (土灰, 藁灰, 柞灰) | No source; the Japanese names kept as the English gives them.                                                                   |
+| rice-straw ash                                  | ขี้เถ้าฟางข้าว                                 | Usage.                                                                                                                          |
+| wood ash                                        | ขี้เถ้าไม้                                     | Usage.                                                                                                                          |
+| sludge (dried glaze sludge from a rinse bucket) | ตะกอน                                          | No source.                                                                                                                      |
+| Famous glazes                                   | เคลือบที่มีชื่อเสียง                           | No source. Page and menu name.                                                                                                  |
+
 ### Search terms (docs/seo-plan.md, item 9)
 
 Google suggest for Thailand (16 October 2026) completes **สูตรเคลือบเซรามิก**, **สูตรเคลือบใสเซรามิก**, **สูตรเคลือบด้านเซรามิก**, **รวมสูตรเคลือบเซรามิกส์**, **สูตรเคลือบเซรามิก 1200** and **น้ำเคลือบเซรามิก**; bare เคลือบ and เคลือบเซรามิก are dental, nail and car coatings. The Seger formula is not searched. **Proposed title** (51 characters, 41 letters wide): "Glazecalc: คำนวณสูตรเคลือบเซรามิกฟรี สำหรับช่างปั้น" (shorter: "Glazecalc: เครื่องคำนวณสูตรเคลือบเซรามิกฟรี", 43). **Description terms:** สูตรเคลือบเซรามิก, เคลือบใส and เคลือบด้าน, น้ำเคลือบ, วัตถุดิบเคลือบ, หินฟันม้า, 1200 °C, and สูตรเซเกอร์ (UMF) in brackets. Every Thai title and description that says เคลือบ carries เซรามิก or สูตร with it.

@@ -458,73 +458,73 @@ L&L ve Bartlett kontrol üniteleri 04 numaralı piramit için {{1926 °F; 1052 �
 
 Manuel bir fırın aynı planı elle uygular: kapak aralık ve gözetleme delikleri açıkken yavaşça kurutun, anahtarları sırayla Düşük, Orta ve Yüksek konumlarına çıkarın ve pişirimi kiln sitter’ın bitirmesine bırakın. Yayımlanmış yöntemler aşağıda Manuel fırınlar ayrıntılı olarak bölümündedir.
 
-## Glaze firing {#glaze lang=en}
+## Sırlı pişirim {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Sırlı pişirim{{en: glaze firing}}, sırrı{{en: glaze}} bisküvinin üzerinde eritip cama dönüştürür. Piyasadaki düşük ısı sırlarının çoğu 06 ya da 05 numaralı Orton piramitleri{{en: cone}} için yapılır (düşük ısı aralığı 06–04 numaralı piramitlerdir), orta ısı sırlarının çoğu ise 5–6 numaralı piramitler için. Sırrınızın ve çamurunuzun etiketindeki piramide kadar, o numaranın çevresinde bir piramit grubuyla{{en: cone pack}} pişirin. Sır erirken içinde neler olduğu için [Sırlamanın temel ilkeleri](/guides/glazing-basics) rehberine bakın.
 
-### Loading for a glaze firing
+### Sırlı pişirim için fırının doldurulması
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Sırlı parçalar birbirine ya da fırın duvarlarına değmemelidir: yaklaşık ½ inç (13 mm) boşluk bırakın.
+- Sırrı dipten uzak tutun (**dibi sırsız bırakma**) ya da düşük ısı ürünlerini **üçayaklara**, yani sivri uçlu küçük sehpalara koyun. Stoneware{{en: stoneware}} ve porselen üçayaklar üzerinde durmamalıdır, çünkü bu sıcaklıklarda üçayaklar ürüne gömülür; bunun yerine yüksek ısıya dayanıklı raf koruyucu ya da silis kumu kullanın.
+- Raf kenarları ile fırın duvarı ya da kiln sitter arasında en az 1 inç (25 mm) bırakın.
 
-### Controller schedules
+### Kontrol ünitesi programları
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L ve Bartlett sır hazır programları
+Label: Sır hazır programları
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segment                  |                           Çıkılacak sıcaklık |             Slow Glaze |             Fast Glaze |
+| ------------------------ | -------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                           {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Ayrı bir adım yok |
+| 2                        | En yüksek sıcaklığın {{250 °F; 139 °C}} altı | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                           En yüksek sıcaklık |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Isıtma süresi, boş fırın |                                              |    Yaklaşık 6½–7½ saat |      Yaklaşık 3–4 saat |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: 2. ve 3. segmentlerin bittiği sıcaklık, piramide göre (L&L ve Bartlett)
+Label: Hazır program hedefleri
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Piramit |    2. segmentin sonu |   En yüksek sıcaklık |
+| ------- | -------------------: | -------------------: |
+| 06      |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04      |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6       | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+L&L’nin hızlı pişirim konusundaki uyarısı göz önüne alındığında, Slow Glaze daha güvenli varsayılan seçimdir. En yüksek sıcaklıkta 5–10 dakikadan uzun bir bekletme{{en: hold}} eklerseniz, L&L hedef sıcaklığı ya da piramit düzeltmesini buna göre düşürmenizi söyler ve “Yüksek sıcaklıklarda bekletme, rezistansların ve termokuplun aşınmasını hızlandırır” diye belirtir.
 
-### Cone 6: drop-and-hold
+### 6 numaralı piramit: düşürüp bekletme
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Orta ısı sırları bazen ergiyikten kabaran gazın bıraktığı **iğne delikleri**{{en: pinholes}} (yüzeyde minik delikler) ya da kabarcıklarla çıkar. **Düşürüp bekletme**{{en: drop-and-hold}} programı en yüksek sıcaklığa kadar pişirir, sonra hızla yaklaşık {{100 °F; 56 °C}} soğutur ve orada bekletir. Digitalfire’ın sözleriyle: “100°F düşürüp bekletmek, ergiyiğe kabarcıkları patlatacak kadar viskozite verir ve yine de onların kapanmasına izin verir.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, 6 numaralı piramit için düşürüp bekletme
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Adım |                                Hız |                Hedef | Bekletme                                                   |
+| ---- | ---------------------------------: | -------------------: | ---------------------------------------------------------- |
+| 1    |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 dakika                                                  |
+| 2    |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | İsteğe bağlı 30 dakika, kabarcık bulutlarını gidermek için |
+| 3    |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 dakika; büyük fırınlarda daha uzun                      |
+| 4    | {{900 °F/h; 500 °C/h}} hızla aşağı | {{2100 °F; 1148 °C}} | 30 dakika                                                  |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS yaklaşık 9 saat 36 dakika sürer. Daha akışkan sırlar için Digitalfire bunun yerine yaklaşık {{200 °F; 111 °C}} düşürür; fazla düşürmek “bekletme sırasında kristalleşme riski taşır”. Programın {{2200 °F; 1204 °C}} olan en yüksek sıcaklığı, tablonun 6 numaralı piramit için verdiği {{2232 °F; 1222 °C}} değerinin altındadır; Digitalfire çoğu fırının 6 numaralı piramide yaklaşık {{2200 °F; 1204 °C}} sıcaklıkta ulaştığını bildirir. Bunu kendi fırınınızda bir piramit grubuyla kontrol edin.
 
-### Slow cooling
+### Yavaş soğutma
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Yavaş soğutma**, kontrol ünitesinin fırını kendi hâlinde soğumaya bırakmak yerine belirli bir hızla soğutması demektir. Digitalfire’ın C6DHSC programı, PLC6DS programının ardından {{2100 °F; 1148 °C}} sıcaklıktan {{1400 °F; 760 °C}} sıcaklığa kadar {{150 °F/h; 83 °C/h}} hızla soğutma ve ardından kapatmadır. Bu, “parlaklığı ve yüzey kalitesini artırır” ve rutil mavilerine yardımcı olur, ama yavaş soğutma “matlığı artırabilir” (mat bir sır kuru çıktı) ve fırının rölelerinin ömrünü kısaltabilir. L&L de 6 numaralı piramit için bir yavaş soğutma programı sunar:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L “User 6”: 6 numaralı piramit sırları için yavaş soğutma
+Label: L ve L yavaş soğutma
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Adım |                               Hız |                Hedef |
+| ---- | --------------------------------: | -------------------: |
+| 1    |                  Tam hızla yukarı | {{2232 °F; 1222 °C}} |
+| 2    |                   Tam hızla aşağı | {{1900 °F; 1038 °C}} |
+| 3    | {{150 °F/h; 83 °C/h}} hızla aşağı |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutt’ın kontrol üniteleri de benzer şekilde bir ön ısıtma ve tek adımlı bir soğutma seçeneği sunar.
 
-### On a manual kiln
+### Manuel bir fırında
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Manuel bir fırın bu programları tam olarak izleyemez, ama plan aynıdır: başta yumuşak, ortada istikrarlı ve izlenerek biten bir pişirim. Bracker's firmasının düşük ısı sır programı aşağıda Manuel fırınlar ayrıntılı olarak bölümündedir; daha sıcak piramitler için programa “her piramit numarası için ortalama 15–30 dakika” ekler. Bir pirometre, pratik ve pişirim kayıtlarıyla, Digitalfire’ın önerdiği gibi anahtarları elle kısarak bir düşürüp bekletmeyi ya da yavaş soğutmayı kabaca taklit edebilirsiniz.
 
 ## Manuel fırınlar ayrıntılı olarak {#manual-kilns}
 

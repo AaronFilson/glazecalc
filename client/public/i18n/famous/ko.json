@@ -1,0 +1,63 @@
+{
+  "notTranslated": "이 페이지의 일부는 아직 번역되지 않아 영어로 표시됩니다.",
+  "index": {
+    "crumb": "유명한 유약",
+    "title": "유명한 유약",
+    "lead": "세계에 알려진 유약을 각각 그 지역의 전통 원료로 소개하며, 제게르식과 사는 곳에서 파는 원료로 만든 버전을 함께 보여 줍니다.",
+    "listHeading": "유약 목록",
+    "more": "유약은 더 추가됩니다. 레시피와 원료가 직접 읽은 자료 세 곳 이상으로 뒷받침되면 하나씩 추가합니다."
+  },
+  "glaze": {
+    "lead": "유명한 유약({native}): 전통 레시피나 분석값, 소성, 그리고 사는 곳에서 파는 원료로 만든 버전.",
+    "aboutHeading": "{name} 소개",
+    "nativeName": "현지 이름",
+    "origin": "지역",
+    "period": "시대",
+    "firing": "소성",
+    "cone": "오튼 콘 {cone}",
+    "historyOnly": "역사 자료로만 제공: 이 유약은 납으로 만들었습니다. 분석값은 섞어 쓸 레시피가 아니라 역사로서 보여 드립니다. 아래 버전은 납이 없는 다른 유약입니다.",
+    "recipeHeading": "전통 레시피",
+    "material": "원료",
+    "amount": "양",
+    "unityHeading": "제게르식",
+    "analysisHeading": "역사적 분석값",
+    "oxide": "산화물",
+    "percent": "중량 %",
+    "useHeading": "직접 해 보기",
+    "open": "이 레시피 열기",
+    "openLeadFree": "무연 버전 열기",
+    "leadFreeTitle": "{name} 스타일, 무연",
+    "allLink": "유명한 유약 전체",
+    "safetyHeading": "안전",
+    "safeMixing": "안전한 유약 배합과 환기",
+    "firingGuide": "기본 가마 소성",
+    "makingGuide": "유약 만드는 법",
+    "sourcesHeading": "출처",
+    "link": "열기",
+    "opened": "{date} 열람"
+  },
+  "local": {
+    "heading": "사는 곳의 원료로",
+    "leadFreeHeading": "무연 버전",
+    "intro": "전통 레시피의 제게르식을, 원료를 사는 곳에서 파는 표준 원료로 만듭니다. 원료를 사는 곳을 고르면 표시됩니다.",
+    "region": "원료를 사는 곳",
+    "proposal": "제안된 원료",
+    "pick": "선택…",
+    "untested": "계산만 했으며, 아직 시험 소성하지 않았습니다.",
+    "testFirst": "어떤 기물에 쓰기 전에 시편을 소성하고, 음식이 닿는 면은 용출시험을 하세요.",
+    "untestedNote": "계산만 했으며, 아직 시험 소성하지 않았습니다. 쓰기 전에 시편을 소성하세요.",
+    "close": "목표 식에 가깝게 만들 수 있습니다.",
+    "fair": "목표 식에 꽤 가깝게 만들 수 있습니다.",
+    "poor": "이 원료로는 목표 식에 가깝게 만들 수 없습니다.",
+    "none": "그곳에서 파는 원료로는 만들 수 없습니다.",
+    "choose": "원료를 사는 곳을 고르면 그곳에서 파는 원료로 만든 레시피가 표시됩니다."
+  },
+  "atmospheres": {
+    "oxidation": "산화 소성",
+    "reduction": "환원 소성",
+    "neutral": "중성 소성",
+    "wood": "장작 소성",
+    "salt": "소금 소성",
+    "soda": "소다 소성"
+  }
+}

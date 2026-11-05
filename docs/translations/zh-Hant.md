@@ -822,6 +822,22 @@ Where the three differ, this page follows Google, whose words most Taiwanese pho
 | account                                   | 帳戶                | Google 「Google 帳戶」, Microsoft 「Microsoft 帳戶」; Apple writes 帳號. 帳戶 throughout ("Delete my account" → 「刪除我的帳戶」).                                                                                                              |
 | password                                  | 密碼                | All three.                                                                                                                                                                                                                                      |
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | 繁體中文                         | Notes                                                                                                           |
+| ----------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | Stull 圖                         | **show English**. As the recipe page already writes it. Regions as there: 未熔, 霧面, 半霧面, 亮面, 欠燒, 龜裂. |
+| dry SG (of a glaze's powder)                    | 乾比重                           | No source. The app's "SG of the dry materials" is 「乾原料的比重」.                                             |
+| cristobalite inversion                          | 白矽石相變                       | Beside 石英相變. 白矽石 is the Taiwan mineral name for cristobalite (Usage; mainland 方石英).                   |
+| colemanite                                      | 硬硼鈣石                         | The mineral's Chinese name (Usage).                                                                             |
+| porcelain stone                                 | 瓷石                             | The Jingdezhen term, as the English quotes it.                                                                  |
+| synthetic ash                                   | 合成代用品 (of 土灰, 藁灰, 柞灰) | No source; the Japanese names kept as the English gives them.                                                   |
+| rice-straw ash                                  | 稻草灰                           | Usage.                                                                                                          |
+| sludge (dried glaze sludge from a rinse bucket) | 沉渣                             | No source.                                                                                                      |
+| Famous glazes                                   | 名釉                             | Usage.                                                                                                          |
+
 ## 3. Never translated
 
 From terms.md, unchanged:

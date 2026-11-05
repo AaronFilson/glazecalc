@@ -37,7 +37,9 @@
     "confirm": "変更の承認 - Glazecalc",
     "cones": "コーンの温度表: オルトンコーンと SK コーンの温度 - Glazecalc",
     "materials": "標準の釉薬原料: 分析値と危険性 - Glazecalc",
-    "materialInfo": "{name}: 酸化物分析と危険性 - Glazecalc"
+    "materialInfo": "{name}: 酸化物分析と危険性 - Glazecalc",
+    "famousGlazes": "有名な釉薬 - Glazecalc",
+    "famousGlaze": "{name}の釉薬 - Glazecalc"
   },
   "nav": {
     "skip": "本文へスキップ",
@@ -189,6 +191,8 @@
     "materials": "Glazecalc の標準ライブラリにある釉薬原料を、長石や粘土からフリットやホウ素源まで掲載し、それぞれの酸化物分析、ゼーゲル式、危険性を示します。",
     "materialInfo": "{name}: Glazecalc の標準ライブラリにある釉薬原料としての酸化物分析、ゼーゲル式、強熱減量、危険性。",
     "materialInfoLong": "Glazecalc の釉薬原料の標準ライブラリにある {name}: 酸化物分析、ゼーゲル式への寄与、強熱減量、危険性。",
+    "famousGlazes": "世界の有名な釉薬。それぞれの伝統的な調合または歴史的な分析値、ゼーゲル式、そしてお住まいの地域で売られている原料でつくる調合を紹介します。",
+    "famousGlaze": "{name}（{native}）の釉薬。伝統的な調合または歴史的な分析値、焼成、ゼーゲル式と出典、そしてお住まいの地域で売られている原料でつくる調合。",
     "imageAlt": "Glazecalc のロゴと見出し「陶芸家のための無料の釉薬化学」、その横に焼成済みのゼーゲルコーンの写真。"
   },
   "notices": {

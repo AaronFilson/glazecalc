@@ -723,7 +723,8 @@
     "keyPoint": "Titik: glasir ini.",
     "keyBright": "Garis titik-titik: tempat glasir Stull paling cerah.",
     "keyLimits": "Garis putus-putus dan area berwarna: rentang silika dan alumina {name}.",
-    "keyCrazed": "Arsiran: tempat glasir itu retak halus."
+    "keyCrazed": "Arsiran: tempat glasir itu retak halus.",
+    "note": "Panduan, bukan ramalan. R. T. Stull (Transactions of the American Ceramic Society, 1912) membakar pada sekitar kerucut 11 dengan pelebur tetap 0,3 K₂O dan 0,7 CaO; pelebur dan pembakaran lain menggeser wilayahnya, dan glasir yang doff hanya karena kurang bakar tetap dapat jatuh di wilayah cerah. Wilayahnya mengikuti gambar Glazy."
   },
   "slurry": {
     "heading": "Berat jenis dan air",
@@ -751,6 +752,17 @@
       "pint": "Berat pint yang Anda inginkan, oz"
     },
     "drySg": "Berat jenis bahan kering",
+    "drySgEmpty": "Hanya berat kering yang memerlukannya; air yang perlu ditambahkan tidak. Ketikkan jika Anda mengetahuinya.",
+    "drySgNeeded": "Ketikkan berat jenis bahan kering untuk melihat glasir kering di dalam ember dan air untuk batch baru.",
+    "estimate": {
+      "mineral": "Perkiraan, {sg}, dari bahan penyusun setiap bahan: massa jenis mineralnya yang terukur. Ubah jika Anda tahu angka yang lebih tepat.",
+      "kind": "Perkiraan, {sg}: feldspar dan tanah liat sekitar 2,6. Ubah jika Anda tahu angka yang lebih tepat.",
+      "glass": "Perkiraan, {sg}, dihitung dari oksida frit (frit adalah kaca). Ubah jika Anda tahu angka yang lebih tepat.",
+      "mixed": "Perkiraan, {sg}, dari setiap bahan: massa jenis mineralnya yang terukur, sekitar 2,6 untuk feldspar dan tanah liat, dan frit dihitung dari oksidanya. Ubah jika Anda tahu angka yang lebih tepat.",
+      "leftOut": "Tidak dihitung, karena berat jenisnya tidak diketahui: {names}.",
+      "none": "Tidak ada perkiraan untuk resep ini: berat jenis {names} tidak diketahui. Ketikkan jika Anda mengetahuinya.",
+      "was": "Angka Anda yang dipakai. Perkiraannya {sg}; kosongkan kolom untuk kembali ke perkiraan."
+    },
     "batch": "Glasir kering untuk batch baru, {unit}",
     "contents": "Pada berat jenis {sg}, ember berisi {glaze} glasir kering dan {water} air.",
     "add": "Untuk mencapai berat jenis {target}, tambahkan {water} air. Hasil akhirnya sekitar {volume}.",
@@ -758,6 +770,7 @@
     "already": "Sudah pada berat jenis {target}.",
     "mix": "Campur {glaze} glasir kering dengan {water} air untuk mendapatkan sekitar {volume} pada berat jenis {target}.",
     "badSg": "Berat jenis harus lebih dari 1 (milik air) dan kurang dari {dry} milik bahan kering.",
+    "badSgWater": "Berat jenis harus lebih dari 1 (berat jenis air).",
     "badDry": "Berat jenis bahan kering harus lebih dari 1.",
     "note": "Air dihitung menurut berat: satu liter berbobot satu kilogram, satu galon AS sekitar 8,3 lb. Hitungan ini menjumlahkan volume, yang mendekati, bukan tepat: tambahkan air sedikit demi sedikit, aduk, dan ukur lagi. Dua glasir pada berat jenis yang sama masih dapat mengalir berbeda.",
     "saveTarget": "Simpan berat jenis {sg} sebagai target resep ini",

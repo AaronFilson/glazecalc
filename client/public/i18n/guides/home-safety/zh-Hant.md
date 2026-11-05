@@ -59,31 +59,31 @@ Label: 可溶性原料
 
 鉛的主要危險則不同：不是一次吞下一匙，而是在數週或數月間吞下少量粉塵，而且沒有任何警訊（見下方「鉛與兒童」）。
 
-## Storing materials at home {#storing-materials lang=en}
+## 在家中存放原料 {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+沒有任何官方機構訂定在家中存放釉藥原料{{en: glaze materials}}的規則，但各健康與安全頁面的看法一致：在專屬的空間工作，並讓兒童遠離。美國賓州衛生部在談到使用鉛的嗜好時表示：「為您的嗜好使用指定的工作空間或車庫，並讓兒童遠離這個區域。」
 
-### A storage checklist
+### 存放檢查清單
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+這些是應用在釉藥上的一般防毒規則。沒有任何陶瓷標準訂定這些規則，但我們建議全部做到：
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- 將乾的原料上鎖存放：放在櫃子裡，或可上鎖的房間、車庫或儲藏小屋。放在高架上有幫助，但孩子會攀爬。如果一開始只能把少數東西上鎖，請先從可溶性原料和呈色劑{{en: colorants}}開始。
+- 原料請保存在原本的袋子或桶子裡。如果改裝到其他容器，請標上與袋子上寫的完全相同的名稱。
+- 切勿用食物或飲料容器（優格盒、罐子、瓶子）裝釉藥原料，即使貼了標籤也不行。孩子知道優格盒裡裝的是什麼。
+- 工作室的工具（勺子、湯匙、打蛋器、篩網、秤）請留在工作室。切勿把廚房用具用於釉藥，也切勿把釉藥工具用於食物。
+- 濕的釉藥請裝在貼有標籤、蓋好蓋子的桶子裡。
+- 每種原料的安全資料表請與原料放在一起，紙本或存在手機裡皆可。
+- 廚房裡不放任何工作室的東西：袋子、桶子、工具或試片{{en: test tiles}}都不行。
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+關於購買和存放原料的更多細節，請參閱[如何調配釉藥](/guides/making-a-glaze)。
 
-### Glaze waste and rinse water
+### 廢釉與沖洗水
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+切勿把釉藥，或沖洗過釉藥工具的水，倒進水槽或花園。英國工藝協會（Crafts Council）建議另外準備一桶水，用來洗手、刷子、篩網和工具。讓水靜置一夜，倒掉上層的清水，再把沉澱的釉藥晾乾，丟進垃圾（會送往掩埋場），切勿倒進排水管。
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+我們建議那個桶子加蓋：底部的釉泥含有與釉藥相同的金屬，而寵物會喝積水。各地的廢棄物處理規定不同，因此請查看每項產品的安全資料表；如果不確定，請詢問當地政府或自來水公司。
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+有些工作室會在丟掉乾掉的沉渣之前先把它燒過。他們把沉渣放進一個可以報廢的備用碗：燒過之後，這個碗就不能再用了。沉渣熔化時會起泡膨脹，所以碗只裝到四分之一，並用盤子蓋住。把它放在塗過棚板塗料的棚板或一塊備用墊板上，以防溢出。燒成會把沉渣變成玻璃，玻璃封住金屬的效果比鬆散的粉末牢固得多，所以送進掩埋場比較安全。處理乾沉渣要像處理乾釉一樣：戴呼吸防護具，不要揚起粉塵。
 
 ## 讓粉塵留在工作室 {#keeping-dust-in-the-studio}
 

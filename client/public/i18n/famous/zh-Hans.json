@@ -1,0 +1,63 @@
+{
+  "notTranslated": "本页部分内容尚未翻译，因此以英文显示。",
+  "index": {
+    "crumb": "名釉",
+    "title": "名釉",
+    "lead": "世界闻名的釉，每种都来自当地的传统原料，并附上釉式和用你所在地出售的原料做出的版本。",
+    "listHeading": "釉的列表",
+    "more": "更多的釉即将加入：每种釉的配方和原料都要有至少三个读过的资料来源支持，才会加入。"
+  },
+  "glaze": {
+    "lead": "一种名釉（{native}）：它的传统配方或分析、烧成，以及用你所在地出售的原料做出的版本。",
+    "aboutHeading": "关于{name}",
+    "nativeName": "当地名称",
+    "origin": "产地",
+    "period": "年代",
+    "firing": "烧成",
+    "cone": "Orton 测温锥 {cone} 号",
+    "historyOnly": "仅作历史介绍：这种釉含铅。它的分析结果作为历史展示，不是供调配的配方。下面的版本是另一种不含铅的釉。",
+    "recipeHeading": "传统配方",
+    "material": "原料",
+    "amount": "用量",
+    "unityHeading": "釉式",
+    "analysisHeading": "历史分析",
+    "oxide": "氧化物",
+    "percent": "质量 %",
+    "useHeading": "试一试",
+    "open": "打开这个配方",
+    "openLeadFree": "打开无铅版本",
+    "leadFreeTitle": "{name}风格，无铅",
+    "allLink": "全部名釉",
+    "safetyHeading": "安全",
+    "safeMixing": "安全配料与通风",
+    "firingGuide": "简易窑炉烧成",
+    "makingGuide": "如何调配釉料",
+    "sourcesHeading": "资料来源",
+    "link": "打开",
+    "opened": "{date}阅读"
+  },
+  "local": {
+    "heading": "用你当地的原料",
+    "leadFreeHeading": "无铅版本",
+    "intro": "用你购买原料的地方出售的标准原料，做出传统配方的釉式。选择你购买原料的地方即可看到。",
+    "region": "购买原料的地方",
+    "proposal": "方案自带的原料",
+    "pick": "请选择…",
+    "untested": "已计算，尚未试烧。",
+    "testFirst": "用在任何器物上之前先烧试片，并对接触食物的表面做溶出试验。",
+    "untestedNote": "已计算，尚未试烧：使用前请先烧试片。",
+    "close": "与目标釉式很接近。",
+    "fair": "与目标釉式比较接近。",
+    "poor": "这些原料无法接近目标釉式。",
+    "none": "用那里出售的原料做不出来。",
+    "choose": "选择你购买原料的地方，即可看到用那里出售的原料做出的版本。"
+  },
+  "atmospheres": {
+    "oxidation": "氧化",
+    "reduction": "还原",
+    "neutral": "中性",
+    "wood": "柴烧",
+    "salt": "盐烧",
+    "soda": "苏打烧"
+  }
+}

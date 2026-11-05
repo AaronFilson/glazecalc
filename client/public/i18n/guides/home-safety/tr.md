@@ -59,31 +59,31 @@ Label: Çözünür hammaddeler
 
 Kurşunun asıl tehlikesi farklıdır: bir kaşık dolusu değil, haftalar ya da aylar boyunca yutulan küçük miktarlarda toz, hem de hiçbir uyarı işareti vermeden (aşağıda Kurşun ve çocuklar bölümüne bakın).
 
-## Storing materials at home {#storing-materials lang=en}
+## Hammaddelerin evde saklanması {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Hiçbir resmî kurum sır hammaddelerinin evde saklanması için kural koymaz, ama sağlık ve güvenlik sayfaları aynı şeyi söyler: işi kendi alanında, çocuklardan uzakta tutun. ABD’deki Pennsylvania eyaletinin sağlık dairesi, kurşun kullanılan hobiler hakkında şöyle yazar: “Hobiniz için ayrılmış bir çalışma alanı veya garaj kullanın ve çocukları bu alandan uzak tutun.”
 
-### A storage checklist
+### Saklama için kontrol listesi
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Bunlar, sırra uyarlanmış genel zehirlenmeyi önleme kurallarıdır. Hiçbir seramik standardı bunları koymaz, ama hepsini öneririz:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Kuru hammaddeleri kilit altında tutun: bir dolapta ya da kilitlenen bir oda, garaj veya kulübede. Yüksek bir raf yardımcı olur ama çocuklar tırmanır. Başta yalnızca birkaç şeyi kilitleyebiliyorsanız çözünür hammaddeler ve renklendiricilerle başlayın.
+- Hammaddeleri kendi orijinal torbalarında veya kaplarında tutun. Birini başka bir kaba aktarırsanız, üzerine adını torbada yazdığı gibi yazın.
+- Sır hammaddeleri için asla yiyecek veya içecek kapları (yoğurt kapları, kavanozlar, şişeler) kullanmayın, etiketli olsa bile. Bir çocuk yoğurt kabında ne olduğunu bilir.
+- Atölye aletlerini (kepçeler, kaşıklar, çırpıcılar, elekler, teraziler) atölyede tutun. Sır için asla mutfak aletlerini, yemek için de asla sır aletlerini kullanmayın.
+- Islak sırları, kapakları kapalı ve etiketli kovalarda tutun.
+- Her hammaddenin güvenlik bilgi formunu, kâğıtta ya da telefonunuzda, hammaddeyle birlikte bulundurun.
+- Atölyeden hiçbir şeyi mutfakta tutmayın: ne torba, ne kova, ne alet, ne de test karosu{{en: test tiles}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Hammaddelerin satın alınması ve saklanması hakkında daha ayrıntılı bilgi için [Sır nasıl hazırlanır](/guides/making-a-glaze) rehberine bakın.
 
-### Glaze waste and rinse water
+### Sır atığı ve durulama suyu
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Sırrı da, sır aletlerini duruladığınız suyu da asla lavaboya veya bahçeye dökmeyin. Birleşik Krallık’taki Crafts Council, elleri, fırçaları, elekleri ve aletleri yıkamak için ayrı bir kova su önerir. Suyu bir gece çökmeye bırakın, üstteki berrak suyu dökün, sonra dibe çöken sırrı kurutup çöpe atın (çöp depolama alanına gider), asla gidere dökmeyin.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+O kovaya bir kapak öneririz: dipteki çamur sırdaki metallerin aynısını taşır ve evcil hayvanlar durgun su içer. Atma kuralları yerden yere değişir; bu yüzden her ürünün güvenlik bilgi formuna bakın ve emin değilseniz belediyenize veya su idarenize sorun.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Bazı atölyeler kurumuş dip çamurunu (tortuyu) atmadan önce pişirir. Onu gözden çıkarılabilecek yedek bir kaseye koyarlar: pişirimden sonra kase bir daha kullanılamaz. Tortu eridikçe köpürüp kabardığı için kaseyi yalnızca dörtte bir doldurun ve üstünü bir tabakla kapatın. Taşarsa diye onu raf koruyucu sürülmüş bir rafa ya da yedek bir plakaya koyun. Pişirim tortuyu cama dönüştürür; cam metalleri dökme tozdan çok daha sıkı tutar, bu yüzden çöp sahasında daha güvenlidir. Kuru tortuya kuru sırra davrandığınız gibi davranın: solunum koruyucu maske takın ve toz çıkarmayın.
 
 ## Tozun atölyede tutulması {#keeping-dust-in-the-studio}
 

@@ -9,6 +9,7 @@
     "homeSafety": "가족을 중독에서 지키세요 - Glazecalc",
     "firing": "기본 가마 소성 - Glazecalc",
     "learnWithJohnBritt": "John Britt의 무료 유약 강좌로 배우기 - Glazecalc",
+    "teachingGlazeCalculation": "유약 계산 가르치기 - Glazecalc",
     "about": "소개 - Glazecalc",
     "privacy": "개인정보 - Glazecalc",
     "terms": "이용약관 - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "변경 승인 - Glazecalc",
     "cones": "콘 온도표: 오튼 콘과 SK 콘의 온도 - Glazecalc",
     "materials": "표준 유약 원료: 분석값과 위험성 - Glazecalc",
-    "materialInfo": "{name}: 산화물 분석과 위험성 - Glazecalc"
+    "materialInfo": "{name}: 산화물 분석과 위험성 - Glazecalc",
+    "famousGlazes": "유명한 유약 - Glazecalc",
+    "famousGlaze": "{name} 유약 - Glazecalc"
   },
   "nav": {
     "skip": "본문으로 건너뛰기",
@@ -177,6 +180,7 @@
     "homeSafety": "아이나 반려동물이 유약 원료를 삼켰을 때 할 일과, 원료, 분진, 가마, 수제 기물을 가족 곁에서 안전하게 다루는 법을 설명합니다.",
     "firing": "전기가마를 소성하는 법: 콘을 고르고 놓고 읽는 법, 초벌과 재벌의 공개된 소성 스케줄, 콘 온도표를 담았습니다.",
     "learnWithJohnBritt": "John Britt의 무료 온라인 Glaze Course와 함께 보는 안내서: 그의 영상을 단원별로, 읽을 Glazecalc 가이드와 계산기에서 해 볼 연습과 함께 소개합니다.",
+    "teachingGlazeCalculation": "제게르식을 가르치기 위한 6회 수업: 원료와 삼각 배합 시편, 몰, 레시피에서 식으로 그리고 다시 레시피로, 유약 결함까지. 풀이 예시와 인쇄용 학습지 포함.",
     "advice": "Glazecalc 앱이 알려 드리는 배합, 시유, 소성에 관한 실용적인 조언과 직접 적은 조언을 볼 수 있습니다. 도예가를 위한 무료 서비스입니다.",
     "about": "Glazecalc 앱은 무료 오픈 소스 유약 화학 계산기이자 노트입니다. 제게르식을 계산하는 방법과 만들어진 방식을 소개합니다.",
     "privacy": "Glazecalc 앱이 데이터를 다루는 방법: 광고, 분석, 추적이 없고 판매하지 않습니다. 보관하는 정보와 이유, 권리를 행사하는 방법을 안내합니다.",
@@ -187,6 +191,8 @@
     "materials": "Glazecalc 표준 라이브러리의 원료를 장석과 점토부터 프릿, 붕소 원료까지 모아, 각각의 산화물 분석, 제게르식, 위험성을 보여 줍니다.",
     "materialInfo": "{name}: Glazecalc 표준 라이브러리의 산화물 분석, 제게르식, 강열감량, 위험성.",
     "materialInfoLong": "Glazecalc 유약 원료 표준 라이브러리의 {name}: 산화물 분석, 제게르식 기여값, 강열감량, 위험성.",
+    "famousGlazes": "세계의 유명한 유약: 각 유약의 전통 레시피나 역사적 분석값, 제게르식, 그리고 사는 곳에서 파는 원료로 만든 버전.",
+    "famousGlaze": "{name}({native}) 유약: 전통 레시피나 역사적 분석값, 소성, 제게르식과 출처, 그리고 사는 곳에서 파는 원료로 만든 버전.",
     "imageAlt": "Glazecalc 로고와 제목 '도예가를 위한 무료 유약 화학', 그 옆에 소성한 콘 팩 사진."
   },
   "notices": {

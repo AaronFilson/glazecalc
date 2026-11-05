@@ -59,31 +59,31 @@ Label: 水溶性の原料
 
 鉛の主な危険は別のところにあります。スプーン一杯を飲み込むことではなく、少量の粉じんを何週間も何か月もかけて飲み込むことで、その間に警告となる症状はありません（下の「鉛と子ども」を参照）。
 
-## Storing materials at home {#storing-materials lang=en}
+## 家での原料の保管 {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+家庭での釉薬原料{{en: glaze materials}}の保管について規則を定めている公的機関はありませんが、健康と安全に関するページの意見は一致しています。作業は専用の場所で行い、子どもを近づけないことです。米国ペンシルベニア州の保健局は、鉛を使う趣味について「趣味には専用の作業場所かガレージを使い、子どもをその場所に近づけないでください」と書いています。
 
-### A storage checklist
+### 保管のチェックリスト
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+一般的な誤飲防止の決まりを、釉薬に当てはめたものです。陶芸の規格で定められたものではありませんが、すべて実行することをおすすめします。
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- 乾いた原料は鍵をかけてしまってください。戸棚、または鍵のかかる部屋、ガレージ、物置に入れます。高い棚も役立ちますが、子どもはよじ登ります。初めは少しのものしか鍵をかけてしまえないなら、水溶性の原料と着色剤{{en: colorants}}から始めてください。
+- 原料は買ったときの袋や容器のまま保管してください。別の容器に移すときは、袋に書かれているとおりの名前をラベルに書いてください。
+- 食べ物や飲み物の容器（ヨーグルトの容器、瓶、ペットボトル）は、ラベルを貼っても、釉薬原料には絶対に使わないでください。子どもはヨーグルトの容器に何が入っているかを知っています。
+- 工房の道具（スコップ、スプーン、泡立て器、ふるい、はかり）は工房に置いておいてください。台所の道具を釉薬に使うことも、釉薬の道具を食べ物に使うことも、絶対にしないでください。
+- 液状の釉薬は、ラベルを貼ったバケツに入れ、ふたをしておいてください。
+- それぞれの原料の安全データシートを、紙か携帯電話で、原料と一緒に保管してください。
+- 工房のものは何も台所に置かないでください。袋も、バケツも、道具も、テストピース{{en: test tiles}}もです。
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+原料の購入と保管について詳しくは、「[釉薬の作り方](/guides/making-a-glaze)」を参照してください。
 
-### Glaze waste and rinse water
+### 釉薬の廃棄物とすすぎ水
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+釉薬や、釉薬の道具をすすいだ水を、流しや庭に絶対に流さないでください。英国の Crafts Council は、手、筆、ふるい、道具を洗うための水を入れたバケツを別に用意することを勧めています。一晩置いて沈殿させ、上澄みの水を捨て、沈んだ釉薬を乾かしてごみとして出してください（埋め立て処分されます）。排水口には絶対に流さないでください。
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+そのバケツにはふたをすることをおすすめします。沈殿物には釉薬と同じ金属が含まれていますし、ペットはたまった水を飲みます。廃棄の規則は場所によって異なるため、各製品の安全データシートを確認し、わからないときはお住まいの市区町村や水道局に問い合わせてください。
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+乾いた沈殿物を、捨てる前に焼成する工房もあります。使いつぶしてよい予備の鉢に入れます。焼成後、その鉢はもう使えません。沈殿物は溶けるときに泡立ってふくらむので、鉢には四分の一までしか入れず、皿でふたをしてください。あふれたときのために、アルミナ塗料を塗った棚板か予備の板の上に置いてください。焼成で沈殿物はガラスになり、ガラスはばらばらの粉よりずっと強く金属を閉じ込めるので、埋め立てに出すにはより安全です。乾いた沈殿物は乾いた釉薬と同じように、防じんマスクを着用し、粉じんを立てないように扱ってください。
 
 ## 粉じんを工房の外に出さない {#keeping-dust-in-the-studio}
 

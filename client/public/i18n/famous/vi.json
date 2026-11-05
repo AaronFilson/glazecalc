@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Một phần của trang này chưa được dịch, nên được hiển thị bằng tiếng Anh.",
+  "index": {
+    "crumb": "Men nổi tiếng",
+    "title": "Các loại men nổi tiếng",
+    "lead": "Các loại men được biết đến trên khắp thế giới, mỗi loại từ nguyên liệu truyền thống của địa phương, kèm công thức Seger và một phiên bản làm từ nguyên liệu bán ở nơi bạn sống.",
+    "listHeading": "Các loại men",
+    "more": "Sẽ có thêm các loại men: mỗi loại được thêm vào khi công thức và nguyên liệu của nó dựa trên ít nhất ba nguồn đã được đọc."
+  },
+  "glaze": {
+    "lead": "Một loại men nổi tiếng ({native}): công thức truyền thống hoặc phân tích, cách nung, và một phiên bản làm từ nguyên liệu bán ở nơi bạn sống.",
+    "aboutHeading": "Về {name}",
+    "nativeName": "Tên bản địa",
+    "origin": "Ở đâu",
+    "period": "Khi nào",
+    "firing": "Nung",
+    "cone": "côn {cone}",
+    "historyOnly": "Chỉ mang tính lịch sử: men này được làm bằng chì. Phân tích của nó được hiển thị như lịch sử, không phải là công thức để pha. Phiên bản bên dưới là một loại men khác, không có chì.",
+    "recipeHeading": "Công thức truyền thống",
+    "material": "Nguyên liệu",
+    "amount": "Lượng",
+    "unityHeading": "Công thức Seger",
+    "analysisHeading": "Phân tích lịch sử",
+    "oxide": "Oxit",
+    "percent": "% khối lượng",
+    "useHeading": "Thử làm",
+    "open": "Mở công thức này",
+    "openLeadFree": "Mở phiên bản không chì",
+    "leadFreeTitle": "Kiểu {name}, không chì",
+    "allLink": "Tất cả các loại men nổi tiếng",
+    "safetyHeading": "An toàn",
+    "safeMixing": "Pha trộn an toàn và thông gió",
+    "firingGuide": "Nung một lò gốm cơ bản",
+    "makingGuide": "Cách làm men gốm",
+    "sourcesHeading": "Nguồn",
+    "link": "Mở",
+    "opened": "đọc ngày {date}"
+  },
+  "local": {
+    "heading": "Với nguyên liệu địa phương của bạn",
+    "leadFreeHeading": "Phiên bản không chì",
+    "intro": "Công thức Seger của công thức truyền thống, làm từ các nguyên liệu tiêu chuẩn bán ở nơi bạn mua. Hãy chọn nơi bạn mua để xem.",
+    "region": "Nơi bạn mua nguyên liệu",
+    "proposal": "Nguyên liệu riêng của đề xuất",
+    "pick": "Chọn…",
+    "untested": "Đã tính toán, chưa nung thử.",
+    "testFirst": "Hãy nung mẫu thử men trước khi dùng trên bất kỳ sản phẩm nào, và thử thôi nhiễm bề mặt tiếp xúc thực phẩm.",
+    "untestedNote": "Đã tính toán, chưa nung thử: hãy nung mẫu thử men trước khi dùng.",
+    "close": "Nó đạt gần với công thức mục tiêu.",
+    "fair": "Nó đạt khá gần với công thức mục tiêu.",
+    "poor": "Các nguyên liệu này không thể đạt gần công thức mục tiêu.",
+    "none": "Các nguyên liệu bán ở đó không thể làm ra nó.",
+    "choose": "Hãy chọn nơi bạn mua nguyên liệu để xem nó được làm từ các nguyên liệu bán ở đó."
+  },
+  "atmospheres": {
+    "oxidation": "oxy hóa",
+    "reduction": "khử",
+    "neutral": "trung tính",
+    "wood": "nung củi",
+    "salt": "nung muối",
+    "soda": "nung soda"
+  }
+}
