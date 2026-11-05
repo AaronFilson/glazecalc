@@ -694,8 +694,9 @@ describe('the subcontinent and the Arab world, as added', () => {
     // Changed on purpose on 2026-10-21 (scratch/round8/india-data/report.md): India's state poison centres
     // (CMC Vellore, JSS Mysuru, Karamsad) and the states' silica limits under its no-limit note; and India
     // lists Tamil, Marathi and Kannada after Hindi and English. Changed on purpose on 2026-10-21 again (waves I2
-    // and I3's groundwork): India lists Telugu, Gujarati, Malayalam, Punjabi and Odia after Kannada.
-    expect(hash).to.equal('f92e073f82afbd4150758e2690fc38ee6422b215a77af8584e114abdcb9ef7b3');
+    // and I3's groundwork): India lists Telugu, Gujarati, Malayalam, Punjabi and Odia after Kannada. Changed on
+    // purpose on 2026-11-04 (round 14): Egypt lists Clay Supply, checked on its own site.
+    expect(hash).to.equal('cc938263d07fab08f9a97bb35b4d2669a5bb6d499565d24132df9870e199a802');
   });
 });
 
@@ -1530,7 +1531,7 @@ describe('the subcontinent and the Arab world', () => {
     expect(suppliers.shopsFor('BD')).to.eql({ shops: [], nearby: [] });
   });
 
-  it('Egypt: 123 for an ambulance, with 122 and 180, and not 112 or 911; no poison line, the ministry', () => {
+  it('Egypt: 123 for an ambulance, with 122 and 180, and not 112 or 911; no poison line, the ministry; one shop', () => {
     const shown = safety.shownFor('EG')!;
     expect(shown.emergency.map((line) => line.number)).to.eql(['123']);
     expect(shown.emergency[0]!.note).to.include('122').and.include('180');
@@ -1539,7 +1540,14 @@ describe('the subcontinent and the Arab world', () => {
     expect(safety.ministryFor('EG')).to.include({ url: 'https://www.mohp.gov.eg/' });
     expect(workplace.workplaceFor('EG')).to.eql(NONE);
     expect(food.foodRulesFor('EG')).to.equal(null);
-    expect(suppliers.shopsFor('EG')).to.eql({ shops: [], nearby: [] });
+    // Clay Supply's own site, read on 2026-11-04 (scratch/round14/suppliers-africa/report.md).
+    const { shops, nearby } = suppliers.shopsFor('EG')!;
+    expect(shops.map((shop) => [shop.name, shop.place, shop.url])).to.eql([
+      ['Clay Supply', 'Fustat (Old Cairo)', 'https://www.clay-supply.com/clay-ar/raw-materials-ar']
+    ]);
+    expect(shops[0]!.packs).to.equal(undefined);
+    expect(shops[0]!.checked).to.equal('2026-11-04');
+    expect(nearby).to.eql([]);
   });
 
   it("the UAE: 998, and not Abu Dhabi's poison line; no ministry read; two shops in Abu Dhabi", () => {
