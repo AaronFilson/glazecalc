@@ -3,480 +3,480 @@ title: El esmaltado desde sus fundamentos
 lead: De qué está hecho un esmalte, cómo lo convierte el horno en vidrio y qué significan todas las palabras que encontrará en una receta, en un saco o en una tabla de conos.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Qué es un esmalte {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+Un **esmalte**{{en: glaze}} es una fina capa de vidrio fundida sobre una pieza. Glazy, la base de datos abierta de recetas de esmaltes, lo define como «una fórmula de vidrio ajustada para fundirse y adherirse a la arcilla a determinadas temperaturas». Se aplica como una capa de polvo y en el horno se funde en una capa vítrea que sella la arcilla, de modo que es menos probable que la pieza pierda líquido, se manche o se desgaste. A la temperatura máxima de la cocción, el fundido también reacciona con la arcilla y a menudo forma entre ambos una capa que fija el esmalte. Sobre la loza{{en: earthenware}}, que se cuece a menos temperatura, esa capa es fina y el esmalte queda sobre todo encima. Sobre el gres{{en: stoneware}} y la porcelana, que se cuecen a más temperatura, la capa es más gruesa y el esmalte se agarra con más fuerza a la arcilla. Aun así, el esmalte sigue siendo vidrio: no pasa a formar parte de la arcilla.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Una receta enumera materias primas, como el feldespato{{en: feldspar}}, el carbonato cálcico{{en: whiting}} y el caolín{{en: kaolin}}. En el horno, una parte de cada una se desprende como gas (agua o dióxido de carbono) y el resto se convierte en **óxidos**: compuestos de un elemento con oxígeno, como la sílice{{en: silica}} (SiO₂) o el óxido de calcio (CaO). El vidrio cocido está hecho de óxidos, por eso los ceramistas describen un esmalte por sus óxidos. Cada óxido cumple una de tres funciones.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- La **sílice** (SiO₂) es el **formador de vidrio**{{en: glass former}}: construye el vidrio. La sílice pura funde por encima de {{3100 °F; 1700 °C}}, una temperatura mucho más alta que la de un horno de cerámica, y un esmalte rico en sílice suele ser más duradero.
+- Los **fundentes**{{en: fluxes}} bajan el punto de fusión hasta uno que un horno puede alcanzar. Los **álcalis**, que se escriben **R₂O**, son los óxidos de sodio, potasio y litio (Na₂O, K₂O, Li₂O); actúan desde el cono 06 hasta la media y la alta temperatura. Los **alcalinotérreos**, que se escriben **RO**, son los óxidos de calcio, magnesio, bario y estroncio (CaO, MgO, BaO, SrO), con el óxido de zinc (ZnO) agrupado junto a ellos; actúan mejor del cono 5 al cono 10. La R representa cualquier metal de la familia.
+- La **alúmina** (Al₂O₃) es el **estabilizante**{{en: stabilizer}}. Hace más viscoso el fundido, para que se mantenga en las paredes verticales, y aporta dureza y durabilidad. La advertencia de Glazy: con muy poca alúmina «su esmalte puede escurrir; demasiada puede espesar el fundido hasta dejarlo mate». La alúmina procede sobre todo de la arcilla y del feldespato.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+El **boro** (B₂O₃) difumina la frontera. Los químicos lo clasifican como formador de vidrio, pero a las temperaturas de un taller actúa como fundente, y los ceramistas lo tratan como tal. Es un fundente principal en baja y media temperatura: cuanto más baja es la cocción, más boro necesita un esmalte. A cono 10 no suele hacer falta. (Los conos, la forma en que los ceramistas designan una cocción, se explican más abajo.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Una forma de recordarlo: la sílice es el vidrio, los fundentes le permiten fundirse a una temperatura que su horno puede alcanzar, y la alúmina lo espesa para que se quede donde usted lo puso.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## La arcilla, los recubrimientos y las dos cocciones {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Las pastas
 
-## From recipe to unity formula {#unity-formula lang=en}
+La **pasta**{{en: clay body}} es la arcilla de la que está hecha una pieza. Hay tres tipos principales.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Loza**{{en: earthenware}}: una pasta de baja temperatura, de cono 06–02 aproximadamente, que es porosa a conos bajos y más densa cuanto más alta es la temperatura de cocción. A menudo roja o beige, necesita un esmalte{{en: glaze}} para retener el agua.
+- **Gres**{{en: stoneware}}: una pasta de media a alta temperatura, de cono 5–10 aproximadamente, que vitrifica, o casi.
+- **Porcelana**: una pasta blanca rica en caolín{{en: kaolin}}, a menudo translúcida. La mayor parte de la porcelana es de alta temperatura, pero también hay porcelanas de cono 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Vítreo** significa parecido al vidrio y no poroso; la **vitrificación** es el proceso por el que una pasta llega a serlo durante la cocción. En el Reino Unido, los ceramistas suelen trazar la línea por la temperatura: el gres se cuece por encima de {{2192 °F; 1200 °C}} y la loza, por debajo. La media temperatura, cono 5–6, queda justo a uno y otro lado de esa línea.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Recubrimientos y secado
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+La **barbotina** es arcilla en suspensión en agua, para colar, unir o decorar. Un **engobe** es un recubrimiento parecido a la barbotina, a menudo coloreado, con más materiales que no son arcilla. Un **color bajo cubierta** es una decoración de barbotina coloreada o de óxidos, normalmente cubierta con un esmalte transparente.
 
-### The silica to alumina ratio
+Las piezas sin cocer son **piezas en crudo**{{en: greenware}} (las fuentes no coinciden en si la palabra inglesa, greenware, abarca todas las piezas sin cocer o solo las secas). Al secarse llegan a la **dureza de cuero**, firmes pero algo húmedas, el momento de retornear y poner las asas; luego quedan **totalmente secas**, sin agua libre, muy frágiles y listas para cocer.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### Las dos cocciones
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+La primera cocción, a menor temperatura, es la **cocción de bizcocho**{{en: bisque}} (en el Reino Unido, **biscuit**), normalmente a cono 08–04 (lo más habitual, 06–04), unos {{1728–1945 °F; 942–1063 °C}}. Deja las piezas resistentes pero porosas. Digitalfire, un sitio web de referencia sobre esmaltes, aconseja en general más de un 15 % de porosidad, para que el bizcocho absorba el agua del esmalte al aplicarlo. Un bizcocho blando (cono 08–06) es más poroso; un bizcocho duro (a menudo cono 04) es más resistente, pero absorbe el esmalte con menos facilidad.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Cómo cambia el esmaltado según el bizcocho (Digitalfire)
+Label: Cómo cambia el esmaltado según el bizcocho
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Bizcocho                                                                           | Qué ocurre                                                                          |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Poco cocido, muy absorbente                                                        | El esmalte se deposita demasiado grueso, y luego se agrieta y se recoge             |
+| Sobrecocido, denso                                                                 | La inmersión y el secado tardan más                                                 |
+| Cocido a más temperatura, o con un mantenimiento más largo a la temperatura máxima | Ahora se quema más gas, así que después pasa menos en burbujas a través del esmalte |
 
-### Loss on ignition
+Potclays, un proveedor británico, describe la cocción de bizcocho a unos {{1000 °C; 1832 °F}}, aproximadamente cono 06. Leyendo estas fuentes en conjunto, le recomendamos cono 06–04 para un primer bizcocho: {{1828–1945 °F; 998–1063 °C}} a la velocidad media de Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+La **cocción de esmalte**{{en: glaze firing}} (los ceramistas británicos pueden llamarla **glost** firing) funde el esmalte y, en el gres, también hace madurar la pasta. La **monococción**{{en: once-firing}} consiste en esmaltar piezas sin cocer y cocerlas una sola vez. Digitalfire cuenta un caso de producción en el que el esmalte de las piezas esmaltadas en crudo se recogía en los bordes hasta que una cocción de bizcocho lo solucionó, así que empiece con dos cocciones. [La cocción en un horno sencillo](/guides/firing) da programas de cocción para las dos.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Conos y trabajo térmico {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Los ceramistas designan una cocción por un **cono**{{en: cone}}: una esbelta pirámide cerámica que se dobla cuando ha recibido una cantidad determinada de calor. Orton, que los fabrica, llama a los conos indicadores de tiempo y temperatura (de trabajo térmico): muestran el efecto conjunto del tiempo y la temperatura, no solo la temperatura.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+El **trabajo térmico**{{en: heatwork}} es la razón: el esmalte, la arcilla y el cono responden tanto al tiempo que pasan calientes como a la temperatura. En una cocción lenta, el cono se dobla a menor temperatura; en una rápida, a mayor. Según la tabla de Orton, el cono 6 se dobla a {{2165 °F; 1185 °C}} cuando la cocción termina subiendo {{27 °F; 15 °C}} por hora, a {{2232 °F; 1222 °C}} a {{108 °F; 60 °C}} por hora y a {{2269 °F; 1243 °C}} a {{270 °F; 150 °C}} por hora, con la velocidad medida en los últimos {{180 °F; 100 °C}}. Un cono se da por caído cuando su punta se ha doblado 90°. Los ceramistas suelen llamarlo la posición de las 5 en punto.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Los números de cono van del 022 al 42. Un cero delante indica la serie de menor temperatura, en la que un número mayor es más frío: el cono 06 es más frío que el cono 04, y el cono 01, más frío que el cono 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Intervalos de cocción: conos Orton con pie a {{108 °F; 60 °C}} por hora
+Label: Intervalos de cocción
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Intervalo         | Conos |        °F |        °C | Para                         |
+| ----------------- | ----- | --------: | --------: | ---------------------------- |
+| Baja temperatura  | 06–04 | 1828–1945 |  998–1063 | Esmaltes para loza; bizcocho |
+| Media temperatura | 5–6   | 2167–2232 | 1186–1222 | Gres y porcelana             |
+| Alta temperatura  | 9–10  | 2300–2345 | 1260–1285 | Gres y porcelana             |
+
+> [!NOTE]
+> Designe y programe sus cocciones por conos, y tome las temperaturas como aproximadas. Un **cono testigo**{{en: witness cone}} en una placa entre las piezas, o un **trío de conos**{{en: cone pack}} (cono de aviso, cono de cocción y cono de control), muestra el trabajo térmico que de verdad recibieron sus piezas.
+
+Las temperaturas publicadas varían. Glazy da para la alta temperatura, cono 9–11, unos {{2336–2390 °F; 1280–1310 °C}}, lo que coincide con la columna rápida de Orton, y Digitalfire da para el cono 6 unos {{2200 °F; 1204 °C}}. Nuestro consejo: use las cifras de velocidad media de Orton, como hace esta guía, programe por conos y deje que un cono testigo lo decida.
+
+Fuera de Norteamérica, los proveedores suelen dar °C en lugar de un cono. Hermann Seger desarrolló el cono moderno, usado por primera vez en Berlín en 1886, y el Reino Unido ha tenido sus propios conos Staffordshire; no debe suponerse que sus números coinciden con los de Orton, y no hemos encontrado ninguna tabla para convertirlos. [La cocción en un horno sencillo](/guides/firing) trata los conos con más detalle.
+
+## De la receta a la fórmula Seger {#unity-formula}
+
+Una **receta**{{en: batch recipe}} enumera las materias primas en peso, normalmente ajustada para que la base sume 100. Los **aditivos** (colorantes{{en: colorants}}, opacificantes y suspensivos) se añaden por encima de ese 100, normalmente como porcentaje sobre la base. Para ver qué es el esmalte{{en: glaze}}, los ceramistas convierten la receta en la **fórmula Seger**{{en: unity molecular formula}} (**UMF**), o fórmula molecular unitaria, llamada así por Hermann Seger, que fue el primero en usar su disposición en tres columnas.
+
+Table: De la receta a la fórmula Seger: el ejemplo resuelto de Glazy
+Label: De la receta a la fórmula Seger
+
+| Paso                  | Qué ocurre                                                                                                                                          | En el ejemplo                                                                                                                                                                                      |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Receta             | Materias primas en peso, ajustadas a 100                                                                                                            | Feldespato{{en: feldspar}} 40 %, entre otros                                                                                                                                                       |
+| 2. Análisis de óxidos | Como una etiqueta nutricional: se suman los óxidos de cada material en porcentaje en peso y se descartan los gases                                  | El feldespato tiene un 64,8 % de sílice{{en: silica}}, así que su 40 % aporta un 25,9 % de SiO₂. El esmalte cocido tiene un 67,4 % de SiO₂, un 12,6 % de Al₂O₃, un 7,5 % de K₂O y un 12,5 % de CaO |
+| 3. Moles              | Los pesos se convierten en **moles**, recuentos de moléculas, porque «los gramos pueden inducir a error, ya que algunos óxidos pesan más que otros» | 60,1 g de SiO₂ son un mol, así que 67,4 g son unos 1,12 moles                                                                                                                                      |
+| 4. Unidad             | Todo se divide por el total de los fundentes{{en: fluxes}}, para que los fundentes sumen 1                                                          | Los fundentes suman 0,303; al dividir se obtiene K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                                                         |
+
+La [página de recetas](/recipe) de Glazecalc hace los cuatro pasos mientras usted escribe y muestra el resultado en tres columnas: los fundentes (R₂O y RO), que suman 1; los estabilizantes{{en: stabilizers}} (R₂O₃: la alúmina, y a menudo también el boro); y los formadores de vidrio{{en: glass formers}} (RO₂: la sílice). «La unificación no es más que una herramienta de escala», dice Glazy: dos recetas hechas con materiales distintos pero con la misma fórmula Seger «se comportan de forma casi idéntica una vez cocidas». Así que el 1 es una vara de medir común, no una cantidad que se pesa. Digitalfire añade que el método «no funciona tan bien a temperaturas más bajas», donde el boro no es un simple fundente, y que las fórmulas Seger son «comparativas y se entienden mejor en su contexto». **Comparar** pone frente a frente las fórmulas de dos recetas, óxido por óxido.
+
+### La relación sílice/alúmina
+
+El número más útil por sí solo es la **relación sílice/alúmina**{{en: silica to alumina ratio}}: la sílice dividida por la alúmina. En el ejemplo, 3,70 ÷ 0,41 da aproximadamente 9.
+
+Table: Lo que sugiere la relación sílice/alúmina (Glazy)
+Label: Relación sílice/alúmina
+
+| Relación | Interpretación de Glazy                                  |
+| -------: | -------------------------------------------------------- |
+|   Unos 9 | Sugiere un fundido brillante, si recibe suficiente calor |
+|      5–7 | Típica de muchos esmaltes de gres estables               |
+|      3–5 | Puede ser mate o estar poco cocido                       |
+
+Glazy no dice para qué cono son estas cifras. Tómelas como una guía aproximada para esmaltes de gres, de cono 6–10 más o menos. Digitalfire dice que una relación por encima de 8 aproximadamente probablemente dé brillo, pero un esmalte con boro puede ser brillante a 8 o menos, y uno de baja temperatura, incluso a 6. Una relación de 5–7 no predice por sí sola ni brillo ni mate: los fundentes, el boro y el cono desplazan la frontera. Glazy da como equilibrio de fundentes típico de los esmaltes estables 0,2 de R₂O con 0,8 de RO, hasta 0,3 de R₂O con 0,7 de RO. Más álcali hace el fundido más fluido y aumenta su dilatación{{en: expansion}} y, con ella, el riesgo de cuarteado{{en: crazing}}.
+
+### Pérdida al fuego
+
+La **pérdida al fuego**{{en: loss on ignition, LOI}} (**PF**) es el peso que pierde un material en el horno cuando el agua, el dióxido de carbono, la materia orgánica o el azufre se desprenden como gas. Un esmalte cocido no tiene ninguna, así que la fórmula Seger no la incluye.
+
+Table: Pérdida al fuego típica (Digitalfire)
+Label: Pérdida al fuego
+
+| Material                                   | PF típica                                                                                    |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Carbonato cálcico{{en: whiting}}, dolomita | Más del 40 %, sobre todo dióxido de carbono: 100 g de carbonato cálcico desprenden unos 44 g |
+| Carbonato de litio                         | Alrededor del 60 %                                                                           |
+| Carbonato de bario, Gerstley Borate        | Más del 20 %                                                                                 |
+| Caolín                                     | Alrededor del 12–14 %, sobre todo agua ligada en sus cristales                               |
+| Feldespatos                                | Menos del 1 %                                                                                |
+
+El gas que sale después de que el esmalte empiece a fundirse tiene que atravesarlo en burbujas y causa, en palabras de Digitalfire, «burbujas, ampollas, pinchados, recogido». En una prueba de Digitalfire, el talco siguió desprendiendo gas hasta unos {{1650 °F; 899 °C}}. Las fritas{{en: frits}}, los materiales **calcinados** (calentados previamente para expulsar sus gases) y los cambios en la cocción ayudan.
+
+Los libros antiguos hacen estas cuentas a mano, con el **peso molecular** (el peso de un mol de un material o de un óxido) y el **peso equivalente** (el peso de un material que aporta un mol de un óxido). Según nuestros cálculos, unos 100 g de carbonato cálcico aportan un mol, 56 g, de óxido de calcio. Una calculadora se ocupa de las dos cosas.
+
+## Los límites y el gráfico de Stull {#stull-chart}
+
+Un **gráfico de Stull**{{en: Stull chart}} es un mapa de esmaltes. Tiene dos ejes, ambos de la fórmula Seger: la sílice (SiO₂) en la parte de abajo y la alúmina (Al₂O₃) en el lateral. Cada esmalte es un punto. El mapa se divide en regiones, como mate, brillante, poco cocido y cuarteado. La [página de recetas](/recipe) de Glazecalc dibuja en él su esmalte.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull hizo el gráfico a partir de pruebas que publicó en 1912. Las coció a cono 11 aproximadamente, y todas las pruebas tenían los mismos fundentes: 0,3 de potasio (K₂O) y 0,7 de óxido de calcio (CaO). Solo cambiaban la sílice y la alúmina. Así que el gráfico vale para esos esmaltes a esa temperatura.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Su esmalte probablemente es distinto. El boro, otros fundentes y los conos más bajos desplazan las regiones. En 2025, un artículo de Ceramics Monthly probó un esmalte de cono 6 con boratos como fundente y con mucho hierro. El gráfico lo situaba como cuarteado, mate y poco cocido. En realidad estaba totalmente fundido, era satinado y no se cuarteaba. Los autores dicen que los esmaltes con boratos no se representan bien en el gráfico. Así que use las regiones como una guía, no como una predicción.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+La región **cuarteada** es donde se cuartearon las propias pruebas de Stull, sobre su arcilla. No le dice cómo se acopla su esmalte a su pasta. El cuarteado depende de la dilatación térmica del esmalte y de la arcilla. La cifra de dilatación de Glazecalc le ayuda a comparar esmaltes, y una prueba real es la que decide: la prueba del agua con hielo de [Acoplamiento esmalte-pasta y defectos](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+Las **fórmulas límite**{{en: limit formulas}} son otra herramienta para la misma pregunta: intervalos de sílice, alúmina y fundentes para esmaltes estables a un cono. [Seguridad alimentaria](/guides/glazing-basics#food-safety) las explica, y explica por qué por sí solas no demuestran nada.
 
-## Frits and raw materials {#materials lang=en}
+## Fritas y materias primas {#materials}
 
-### Frits
+### Las fritas
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+Una **frita**{{en: frit}} es vidrio hecho en fábrica: minerales fundidos, enfriados bruscamente en agua y molidos. El fritado vuelve insolubles materiales solubles como el bórax, encierra óxidos tóxicos como los de plomo y bario en un vidrio estable, da un material más regular que los minerales en bruto y expulsa los gases, de modo que los esmaltes{{en: glazes}} fritados quedan «mucho más libres de defectos» (Digitalfire). Las fritas también funden pronto: una frita de sodio actúa ya a cono 06, mientras que el feldespato{{en: feldspar}} «apenas empieza a reblandecerse a cono 6». Cuestan más, necesitan arcilla para mantenerse en suspensión (el ejemplo de Digitalfire es un 85 % de frita con un 15 % de arcilla) y son «teóricamente insolubles, pero en la práctica no lo son».
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Las fritas norteamericanas se identifican por fabricante y número: la Ferro Frit 3134 (Ferro se llama ahora Vibrantz) es una de las fritas más usadas en Norteamérica. Las recetas del Reino Unido nombran más a menudo fritas genéricas, como la frita de bórax estándar.
 
-### The common raw materials
+### Las materias primas habituales
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Materiales habituales para esmaltes y lo que aportan
+Label: Materiales habituales para esmaltes
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Material (otros nombres)                                                                                                      | Aporta                 | Notas                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sílice{{en: silica}} (sílex{{en: flint}}, cuarzo)                                                                             | SiO₂                   | Use en los esmaltes la de 325 mallas, una molienda muy fina                                                                                                                                   |
+| Caolín{{en: kaolin}} (en el Reino Unido, china clay)                                                                          | Al₂O₃, SiO₂            | La principal fuente de alúmina; también ayuda a que el esmalte no sedimente                                                                                                                   |
+| Ball clay                                                                                                                     | Al₂O₃, SiO₂            | Más plástica que el caolín, con más hierro y materia orgánica                                                                                                                                 |
+| Feldespato potásico{{en: potash feldspar}}, feldespato sódico{{en: soda feldspar}}, nefelina sienita{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Fundentes con su propia alúmina y sílice. La nefelina sienita es un fundente enérgico en baja y media temperatura. El simple «feldespato» de una receta antigua puede ser cualquiera de ellos |
+| Carbonato cálcico{{en: whiting}} (carbonato de calcio)                                                                        | CaO                    | El principal fundente de calcio; desprende dióxido de carbono                                                                                                                                 |
+| Wollastonita                                                                                                                  | CaO, SiO₂              | Calcio sin el dióxido de carbono                                                                                                                                                              |
+| Dolomita, talco                                                                                                               | MgO, con CaO o SiO₂    | Superficies mates y sedosas; menor dilatación                                                                                                                                                 |
+| Óxido de zinc                                                                                                                 | ZnO                    | Brillo y cristales; en exceso puede provocar recogido{{en: crawling}}                                                                                                                         |
+| Fritas de boro, Gerstley Borate, colemanita                                                                                   | B₂O₃                   | Imprescindibles del cono 06 al cono 6; las fritas son «más regulares y menos solubles que los boratos naturales»                                                                              |
+| Carbonato de litio                                                                                                            | Li₂O                   | Fundente de baja dilatación; caro, así que se usa con moderación                                                                                                                              |
+| Carbonato de estroncio                                                                                                        | SrO                    | El sustituto menos tóxico del bario                                                                                                                                                           |
+| Carbonato de bario                                                                                                            | BaO                    | Tóxico sin fritar; los esmaltes con mucho bario pueden ceder metales{{en: leach}}                                                                                                             |
+| Bentonita                                                                                                                     | Suspensión             | Una arcilla muy fina, normalmente al 1–2 %, para evitar que el esmalte sedimente. Más de un 3 % puede agrietar el esmalte al secarse                                                          |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Los materiales para esmaltes son polvos finos. El polvo de sílice daña los pulmones sin dar síntomas al principio, y algunos materiales, como el carbonato de bario y el carbonato de litio, son venenosos si se tragan. Manipule los polvos con cuidado, limpie en húmedo y lleve un equipo de protección respiratoria bien ajustado cuando trabaje en seco. [Preparación segura y ventilación](/guides/safe-mixing) y [No envenene a su familia](/guides/home-safety) explican cómo.
 
-### Regional names
+### Nombres según la región
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- El **caolín** se llama **china clay** en el Reino Unido. En Australia, Eckalite es una marca de caolín.
+- **Flint** (sílex) es un nombre británico antiguo de la sílice. Los proveedores del Reino Unido aún venden el **sílex calcinado** (calcined flint) como un producto aparte, así que «flint» en una receta británica probablemente significa sílex calcinado, y en una estadounidense, probablemente cuarzo molido. Ambos se venden como fuentes de sílice; compruebe el análisis.
+- La **china stone** y la **Cornish stone** (Cornwall stone, piedra de Cornualles) son el mismo material, emparentado con el feldespato.
+- El **whiting**, en inglés, es el carbonato cálcico: creta o caliza molida.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Juzgue un material por los óxidos que aporta, no por su nombre. Glazecalc funciona así: puede introducir el análisis de su proveedor en la [página Materiales](/material), y **Probar materiales actuales y comparar**, **Sugerir cantidades y comparar** y **Rehacer con lo que tengo** comparan los óxidos cocidos, no los nombres.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Los materiales también cambian. El Servicio Geológico de EE. UU. (USGS) informa de que las minas y la planta que producían el feldespato Custer, en Dakota del Sur, suspendieron su actividad en noviembre de 2023. La mina original de Gerstley Borate cerró hacia 1999–2000; Laguna sigue vendiendo un producto con ese nombre, y el Gillespie Borate es el principal sustituto. Las fuentes no coinciden en si el Gillespie sustituye al Gerstley Borate en la misma cantidad (su fabricante y Potclays dicen que sí; Digitalfire y otros, que no), así que compare los dos en Glazecalc y luego pruebe una tanda pequeña.
 
-## Colorants and opacifiers {#color lang=en}
+## Colorantes y opacificantes {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+Un **colorante**{{en: colorant}} es un óxido o carbonato metálico que colorea un esmalte{{en: glaze}}; un **pigmento**{{en: stain}} es un colorante fabricado industrialmente, más estable y regular que los óxidos sin procesar. Los colorantes suelen ser menos del 5 % de la base, muchos menos del 1 %, y un carbonato es más débil que el óxido correspondiente, porque una parte se desprende como gas. Según nuestros cálculos, 100 g de carbonato de cobalto dan unos 63 g de óxido de cobalto, y 100 g del carbonato de cobre que compran los ceramistas (carbonato básico de cobre), unos 72 g de óxido de cobre. Así que use entre 1,4 y 1,6 veces más carbonato que óxido, aproximadamente.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Colorantes habituales, en porcentaje sobre la base
+Label: Colorantes habituales
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Colorante             | Cantidad inicial habitual                            | Colores y notas                                                                                                                                                                                           |
+| --------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cobalto               | 0,1–2 % (las fuentes no coinciden)                   | Azul, y muy potente; tira a morado cuando la base tiene magnesio                                                                                                                                          |
+| Hierro                | 0,5–10 %                                             | Marrones, tostados y rojos en oxidación{{en: oxidation}}; en reducción{{en: reduction}}, ½–2 % da celadón y 5–10 %, tenmoku. Es un fundente{{en: flux}}, así que mucho hierro hace que el esmalte escurra |
+| Cobre                 | 1–3 %                                                | Verde o turquesa en oxidación, rojo en reducción. Puede hacer que el esmalte ceda metales{{en: leach}}                                                                                                    |
+| Cromo                 | De menos del 0,5 % al 2 % (las fuentes no coinciden) | Verde; marrón si la base tiene zinc, rosa con estaño                                                                                                                                                      |
+| Manganeso             | 2–10 %                                               | Marrones y morados                                                                                                                                                                                        |
+| Rutilo                | Unos 2–5 %                                           | Color moteado y jaspeado; rugoso o mate por encima de un 5 % aproximadamente                                                                                                                              |
+| Pigmentos comerciales | 2–12 %                                               | 2–4 % para matices claros, 5–8 % para tonos medios, 10–12 % para colores intensos                                                                                                                         |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Sobre las cantidades de cobalto y cromo hay un desacuerdo real. Glazy dice que un 0,1 % de cobalto basta para un azul; el Glendale Community College da ½–2 % o ½–3 % según la atmósfera; Birdie Boone, en Pottery Making Illustrated, dice un 3 % o menos. Para el cromo, Boone dice menos del 0,5 % y Glendale, 2–3 %. Lo más seguro es empezar con poco y hacer una **mezcla lineal**{{en: line blend}}: una fila de probetas{{en: test tiles}} en la que un ingrediente aumenta por pasos de poco a mucho.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+El esmalte base cambia el color. Una base brillante y transparente da el color más vivo; las bases satinadas y mates, que suelen tener más alúmina, lo apagan. El magnesio lleva el cobalto hacia el morado, el zinc vuelve marrón el cromo y el cromo con estaño da rosa.
 
-### Opacifiers
+### Opacificantes
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+Un **opacificante** hace que un esmalte sea **opaco** y oculte la arcilla; un esmalte **transparente** la deja ver.
 
-Table: Opacifiers
+Table: Opacificantes
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Opacificante                                      | Cantidad habitual               | Notas                                                                                                                                               |
+| ------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silicato de zirconio (Zircopax, Superpax, Ultrox) | 10–15 % para una opacidad total | La opción más barata; las marcas son silicato de zirconio molido a distintos tamaños, y las calidades más finas opacifican más                      |
+| Óxido de estaño                                   | Unos 5–7 % (estimación nuestra) | Caro; más débil en alta temperatura, y Digitalfire informa de que un 4 % no dio ninguna opacidad en un esmalte transparente de cono 10 en reducción |
+| Dióxido de titanio                                | Un 5 % (estimación nuestra)     | Opacidad sedosa y translúcida; alrededor de un 5 % puede hacer variar la superficie, y bastante más suele dar una superficie mate con cristales     |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Acoplamiento esmalte-pasta y defectos {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+La arcilla y el esmalte se dilatan al calentarse y se contraen al enfriarse, cada uno en su propia medida: su **dilatación térmica**{{en: thermal expansion}}. El **acoplamiento esmalte-pasta**{{en: glaze fit}} es lo bien que coinciden ambos. Un buen acoplamiento deja el esmalte ligeramente comprimido por la arcilla; Digitalfire dice que un poco de compresión refuerza las piezas, mientras que demasiada puede debilitarlas e incluso agrietarlas.
 
-### Crazing and shivering
+### Cuarteado y desconchado
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+El **cuarteado**{{en: crazing}} es una red de grietas finas. La dilatación del esmalte es mayor que la de la pasta{{en: body}}, así que al enfriarse se contrae más, queda estirado y se agrieta, normalmente por exceso de sodio y potasio (Na₂O, K₂O). También puede aparecer más tarde, con el uso, tras repetidos enfriamientos bruscos, como el contacto con líquidos fríos. Cuando se busca a propósito, como en el raku, se llama **craquelado**. Digitalfire dice que «el 95 % de las veces la solución es ajustar la dilatación térmica del esmalte»; el enfriamiento lento solo retrasa el cuarteado. Su prueba: caliente la pieza a unos {{300 °F; 149 °C}}, sumérjala en agua con hielo y frote un rotulador por encima para que se vean las grietas.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Las fuentes difieren sobre el primer remedio. Glazy propone añadir sílice o alúmina; Digitalfire responde que la sílice adicional «solo diluye el KNaO» (el sodio y el potasio); Linda Bloomfield opta por añadir boro o reducir el feldespato, un material cada vez. Nuestro consejo: en la [calculadora de recetas](/recipe), cambie parte del sodio y el potasio por fundentes de menor dilatación (boro, litio, magnesio, calcio), compruebe el cambio con **Comparar** y confírmelo con la prueba del agua con hielo.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+El **desconchado**{{en: shivering}} es lo contrario: la dilatación del esmalte es mucho menor que la de la pasta, así que queda con exceso de compresión y salta en escamas de los bordes y las aristas. Digitalfire advierte que las escamas pueden ser cortantes como una cuchilla y podrían tragarse, y Glazy califica el desconchado de «aún más peligroso que el cuarteado en la cerámica funcional». La solución es un esmalte de mayor dilatación o una pasta de menor dilatación.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> No use piezas cuarteadas ni desconchadas para comida ni bebida. Las fuentes no coinciden en si las piezas cuarteadas pueden limpiarse lo bastante bien (una dice que basta con el lavavajillas; otra considera defectuosa la cerámica funcional cuarteada), así que optamos por la prudencia.
 
-### Gloss and matte
+### Brillante y mate
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Una superficie **brillante** es reflectante y lisa, una **satinada** tiene un brillo apagado y una **mate** no tiene brillo. El brillo necesita un vidrio totalmente fundido. El mate puede deberse a mucha alúmina (una relación sílice/alúmina{{en: silica to alumina ratio}} baja), a fundentes como el calcio, el magnesio, el bario o el estroncio, que forman cristales diminutos al enfriarse el esmalte, o a una cocción insuficiente.
 
-### Common defects
+### Defectos frecuentes
 
-Change one thing at a time, and keep your test tiles.
+Cambie una sola cosa cada vez y guarde sus probetas{{en: test tiles}}.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Defectos frecuentes del esmalte, sus causas habituales y los primeros remedios
+Label: Defectos frecuentes del esmalte
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Defecto                                                | Aspecto                                                              | Causas frecuentes                                                                                                                                                                                                      | Primeros remedios                                                                                                  |
+| ------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Recogido{{en: crawling}}                               | El esmalte se retira formando gotas y deja la arcilla al descubierto | Bizcocho con polvo o grasa; una capa gruesa y rica en arcilla que se agrietó al secarse; zinc, silicato de zirconio o estaño                                                                                           | Limpie el bizcocho; dé una capa más fina; calcine parte de la arcilla; añada un aglutinante como la CMC            |
+| Pinchado{{en: pinholing}}                              | Agujeritos o poros                                                   | Gas de la pasta o del esmalte que dejó huecos sin cerrar; un esmalte poco cocido o demasiado viscoso                                                                                                                   | Mantenga la temperatura máxima durante una media hora; dé una capa más fina; menos zinc o rutilo                   |
+| Ampollas                                               | Cráteres de bordes afilados                                          | Normalmente, sobrecocción; capas muy gruesas; fundentes volátiles por encima de unos {{2192 °F; 1200 °C}}                                                                                                              | Cueza a menor temperatura; dé una capa más fina. Los bordes afilados hacen que la cerámica funcional no sea segura |
+| Escurrido                                              | El esmalte cae sobre la placa                                        | Muy poca alúmina; capa demasiado gruesa, como donde se solapan los vertidos; mucho hierro                                                                                                                              | Dé una capa más fina; añada alúmina; deje el esmalte bien por encima del pie                                       |
+| Grietas de enfriamiento o calentamiento{{en: dunting}} | Grietas en la pieza por el enfriamiento o el calentamiento           | Enfriamiento rápido al pasar por la inversión del cuarzo{{en: quartz inversion}}, {{1063 °F; 573 °C}}, o por la inversión de la cristobalita, a unos {{428 °F; 220 °C}}; paredes de grosor irregular; mal acoplamiento | Cueza despacio al pasar por las dos, al subir y al bajar; haga paredes uniformes                                   |
 
-## Food safety {#food-safety lang=en}
+## Seguridad alimentaria {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+La **cesión**{{en: leaching}} es la disolución de metales de un esmalte cocido en la comida o la bebida, y un esmalte puede tener un aspecto perfecto y aun así ceder metales. Los ensayos legales sumergen la pieza cocida en una solución ácida y miden el plomo y el cadmio que se liberan.
 
-### Lead-free is not the same as food-safe
+### Sin plomo no es lo mismo que apto para uso alimentario
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Las normas de EE. UU., la UE, el Reino Unido y Australia limitan el plomo y el cadmio que libera una pieza cocida, no lo que contiene el esmalte. «Sin plomo» elimina un peligro; no es una calificación de seguridad alimentaria. También se ceden otros óxidos: Glazy advierte que los esmaltes con mucho bario «pueden ceder metales y en general no son aptos para uso alimentario»{{en: food-safe}}, Digitalfire dice que el cobre «puede hacer que un esmalte ceda metales; analícelo», y Glazy ya no recomienda esmaltes de plomo para la cerámica funcional.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+Un **esmalte de interior**{{en: liner glaze}} es un esmalte estable, normalmente transparente o blanco, para las superficies que tocan los alimentos. En nuestra opinión, uno sin colorantes, bario, plomo ni litio, que funda por completo, no se cuartee y resista bien el desgaste es la opción de menor riesgo. Que el riesgo sea menor no demuestra que sea seguro.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+Las **fórmulas límite**{{en: limit formulas}} (Digitalfire prefiere **fórmulas objetivo**{{en: target formulas}}) dan intervalos típicos de la fórmula Seger{{en: unity formula}} para esmaltes estables a un cono: los objetivos de Digitalfire para cono 6 sitúan la alúmina en 0,285–0,64 y la sílice en 2,4–4,7. Le orientan hacia una química sólida, pero no demuestran nada; Digitalfire evita la palabra «límite» porque sugiere que los esmaltes dentro de los intervalos «son de algún modo seguros». Las herramientas de Glazecalc para modificar una receta avisan cuando la nueva supera un límite recomendado, como mucho boro a cono 6, y dicen qué hará probablemente el esmalte.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+Los límites legales varían de un país a otro. La tabla muestra los del lugar donde usted vive, en las unidades de la propia norma; elija otro país o región para compararlos.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+En EE. UU., la cerámica decorativa que parece utilizable para alimentos se trata como cerámica para uso alimentario, a menos que lleve una etiqueta adhesiva y un aviso permanente moldeado o cocido en su base, como «Not for Food Use. May Poison Food» (no apto para alimentos; puede envenenar los alimentos), o tenga un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio para la cerámica en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. Una decisión de 2024 de los países del Benelux fija límites mucho más bajos para la cerámica. Los Países Bajos los aplican desde el 29 de mayo de 2026: unas 130 a 150 veces menos plomo y unas 14 a 18 veces menos cadmio que las cifras de la UE. Las piezas que cumplían las normas anteriores y se pusieron a la venta por primera vez antes del 1 de diciembre de 2026 pueden venderse hasta que se agoten las existencias. Los laboratorios de ensayo informan de que Luxemburgo aplica los mismos límites desde el 29 de mayo de 2026, y de que Bélgica los adoptó en un real decreto del 19 de julio de 2026; no hemos leído esos textos nosotros mismos. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
 
-### Testing
+### Ensayos
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+La FDA dice que los kits caseros de hisopo pueden detectar plomo que puede cederse, pero los estudios muestran que estos kits se equivocan a menudo con la cerámica esmaltada: pueden indicar plomo que no hay, y pueden pasar por alto plomo que sí se cede. Tome un positivo como motivo para dejar de usar la pieza, y un negativo, como algo que no demuestra nada. Un ensayo de cesión en laboratorio de la pieza cocida (ASTM C738 en EE. UU.; EN 1388 o ISO 6486 en Europa) es la respuesta de verdad.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> «Apto para uso alimentario»{{en: food safe}} significa que este esmalte, sobre esta pasta, cocido a este cono en este horno y aplicado de esta manera, libera menos de lo que fijan los límites legales. Glazecalc puede ayudarle a crear un esmalte estable, y **Sustituir el plomo** puede rehacer sin plomo una receta antigua con plomo, pero ninguna calculadora puede certificar una pieza. Solo un ensayo de la pieza cocida puede hacerlo.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Densidad y aplicación {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### Densidad
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+El polvo de esmalte{{en: glaze}} mezclado con agua es una **suspensión**{{en: slurry}}. Su **densidad**{{en: specific gravity}} (**SG** en los textos en inglés) es su peso comparado con el de un mismo volumen de agua, cuya densidad es 1,0: cuanto más alta, más polvo hay en el cubo. Glazy considera que 1,4–1,5 es «un buen punto de partida para la mayoría de los esmaltes». Para medirla, pese exactamente 100 mL de suspensión (Glazy sugiere una jeringa) y divida por 100: 145 g significan una densidad de 1,45. Los densímetros no son fiables en esmaltes gelificados, y el agua se evapora, así que vuelva a comprobarla antes de esmaltar.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Los valores recomendados varían según la fuente. Digitalfire sitúa los esmaltes para inmersión en 1,40–1,50 y los esmaltes comerciales para pincel en 1,25–1,55, mientras que Potclays da 1,71–1,81 para pincel y 1,71 para pistola. Nuestro consejo: aplique por inmersión a unos 1,45 con el esmalte ligeramente gelificado, siga la etiqueta en un esmalte para pincel y anote lo que le funcione.
+
+Un **floculante**{{en: flocculant}} (sales de Epsom, vinagre o cloruro cálcico) gelifica ligeramente una suspensión y la vuelve **tixotrópica**{{en: thixotropic}}: fluye al removerla y se espesa en reposo, para lograr «una cobertura de esmalte uniforme y sin goteos». Un **defloculante**{{en: deflocculant}} (silicato sódico o Darvan) la hace más fluida. [Cómo preparar un esmalte](/guides/making-a-glaze) explica cómo mezclarlo y ajustarlo.
+
+### Cómo aplicar el esmalte
+
+Limpie primero el polvo y la grasa del bizcocho{{en: bisque}} con una esponja apenas húmeda en lugar de lavarlo, porque así se empapa. No quite el polvo con aire comprimido ni lo cepille en seco: eso pone polvo de sílice en el aire ([Preparación segura y ventilación](/guides/safe-mixing#cleaning)).
+
+- La **inmersión** «generalmente da una capa de grosor uniforme» (Robin Hopper). El tiempo de inmersión fija el grosor: Digitalfire señala que los esmaltes comerciales para inmersión se preparan a unos 1,4 para una inmersión de 5 segundos y a 1,5 para una inmersión de 1 segundo.
+- El esmalte para **vertido** debe estar «un poco más diluido que cuando se usa para inmersión»; donde se solapan los vertidos, la capa se duplica y puede escurrir.
+- Los esmaltes para **pincel** contienen una goma como la **CMC**{{en: CMC gum}}, que ayuda a que el esmalte se extienda y se adhiera, y luego se quema. La mayoría necesitan varias capas, a menudo dos o tres; siga la etiqueta.
+- La aplicación a **pistola** usa un esmalte mucho más diluido, aplicado en «varias capas finas, aumentando poco a poco el grosor».
+
+> [!WARNING]
+> Aplique a pistola solo en una cabina de pulverización ventilada y con un equipo de protección respiratoria correctamente ajustado. Consulte [Preparación segura y ventilación](/guides/safe-mixing).
+
+Una capa demasiado gruesa puede recogerse, formar ampollas o escurrir. Las reglas prácticas de los proveedores van del grosor de una tarjeta de crédito al de una moneda estadounidense de diez centavos, que según nuestra estimación equivalen a cerca de 1 mm de esmalte seco; las probetas{{en: test tiles}} con varios grosores son la comprobación fiable. La **cera de reserva**{{en: wax resist}} en el pie repele el esmalte, para que la pieza no se pegue a la placa, y el **protector de placas**{{en: kiln wash}}, un recubrimiento resistente al calor hecho a menudo de caolín y sílice, protege las placas de los goteos.
+
+## Oxidación y reducción {#atmosphere}
+
+Los gases del horno, su **atmósfera**, cambian el resultado de los esmaltes{{en: glazes}}. La **oxidación**{{en: oxidation}} supone abundancia de oxígeno. «Los hornos eléctricos son sinónimo de cocción en oxidación», dice Digitalfire, y los esmaltes de oxidación suelen ser más vivos que los de reducción, sobre todo a temperaturas más bajas. En oxidación, el cobre da verdes y turquesas, y el hierro, marrones, tostados y rojos. Un horno eléctrico mal ventilado y lleno de piezas que desprenden gases puede tener una atmósfera más neutra de lo previsto; un extractor conectado directamente al horno ayuda.
+
+La **reducción**{{en: reduction}} restringe a propósito el oxígeno, normalmente en un horno de gas, de leña o especial. El cobre se vuelve rojo, y el hierro se convierte en un fundente{{en: flux}} más enérgico y da el **celadón** (de verde azulado a verde grisáceo, con aproximadamente ½–2 % de hierro) y el **tenmoku** (temmoku: pardo negruzco, con un 5–10 % de hierro aproximadamente). Glazy dice que los celadones y los rojos de cobre «dependen de la reducción». La pasta{{en: clay body}} también cambia: en una comparación de Digitalfire, una pasta de gres{{en: stoneware}} salió gris en reducción y amarillenta en oxidación. El carburo de silicio en un esmalte puede crear pequeñas zonas de reducción incluso en un horno eléctrico. Para la reducción del cono 010 al cono 3, Orton recomienda sus conos{{en: cones}} sin hierro.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Cuente con que una receta pensada para un horno de gas en reducción salga distinta en un horno eléctrico: un celadón o un rojo de cobre que depende de la reducción no tendrá el mismo aspecto en oxidación. Compruebe para qué atmósfera se hizo una receta y anote la suya, con el cono, en las notas de la receta en Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Todo horno, también los eléctricos, desprende humos, así que ventílelo. [Preparación segura y ventilación](/guides/safe-mixing) explica cómo.
 
-## Glossary {#glossary lang=en}
+## Glosario {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Acoplamiento esmalte-pasta (glaze fit)
+: Lo bien que coinciden la dilatación del esmalte y la de la pasta; un buen acoplamiento deja el esmalte ligeramente comprimido.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Aditivo (additive)
+: Un colorante, opacificante o suspensivo que se añade por encima del 100 de una receta.
+
+Alúmina (alumina, Al₂O₃)
+: El principal estabilizante: evita que el esmalte escurra y aporta dureza. Procede de las arcillas y los feldespatos.
+
+Apto para uso alimentario (food safe)
+: En sentido legal: que libera, en un ensayo con ácido, menos plomo y cadmio que los límites. No es lo mismo que sin plomo.
 
 Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+: Una arcilla plástica con más hierro y materia orgánica que el caolín.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Barbotina y engobe (slip and engobe)
+: Arcilla en agua; un engobe es un recubrimiento parecido a la barbotina, con más material que no es arcilla.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+Bentonita (bentonite)
+: Una arcilla muy fina que se añade al 1–2 % aproximadamente para evitar que el esmalte sedimente. Más de un 3 % puede agrietar el esmalte al secarse.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Bizcocho, cocción de bizcocho (bisque; en el Reino Unido, biscuit)
+: La primera cocción, a menor temperatura, normalmente a cono 08–04 (lo más habitual, 06–04), que deja las piezas resistentes pero porosas.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Boro (boron, B₂O₃)
+: Formalmente un formador de vidrio, pero se usa como fundente; imprescindible del cono 06 al cono 6.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Brillante, satinado y mate (gloss, satin and matte)
+: Reflectante y liso; un brillo apagado; sin brillo.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Caolín (kaolin; en el Reino Unido, china clay)
+: Una arcilla blanca y pura que aporta alúmina y sílice; ayuda a que el esmalte no sedimente. En Australia, Eckalite es una de sus marcas.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Carbonato cálcico (whiting)
+: El principal fundente de calcio; pierde en la cocción alrededor del 44 % de su peso, en forma de dióxido de carbono.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Cera de reserva (wax resist)
+: Cera que se aplica a pincel donde no debe ir el esmalte, normalmente en el pie.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Cesión (leaching)
+: La disolución de metales de un esmalte cocido en la comida o la bebida.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+CMC (CMC gum)
+: Una goma de celulosa que ayuda a aplicar el esmalte a pincel y a que se adhiera; desaparece al quemarse.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Cocción de esmalte (glaze firing; en el Reino Unido, glost firing)
+: La cocción que funde el esmalte.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+Color bajo cubierta (underglaze)
+: Decoración de barbotina coloreada o de óxidos, normalmente bajo un esmalte transparente.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Colorante y pigmento (colorant and stain)
+: Un óxido o carbonato metálico que colorea el esmalte; un pigmento es un colorante fabricado industrialmente, más estable.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Cono (cone)
+: Una pirámide cerámica calibrada que se dobla al recibir un trabajo térmico determinado. Un cono testigo muestra lo que recibieron las piezas.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Cuarteado (crazing)
+: Grietas finas en un esmalte que se contrae más que su pasta; craquelado cuando se busca a propósito.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Densidad (specific gravity, SG)
+: El peso de una suspensión comparado con el de un mismo volumen de agua.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Desconchado (shivering)
+: El esmalte salta en escamas de los bordes porque está demasiado comprimido; un peligro en la cerámica funcional.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Desvitrificación (devitrification)
+: Cristales que crecen en el vidrio al principio del enfriamiento, donde no se quieren.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Esmalte (glaze)
+: Una capa de vidrio que se funde en la cocción para sellar y decorar una pieza.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Esmalte de interior (liner glaze)
+: Un esmalte estable, normalmente transparente o blanco, para las superficies que tocan los alimentos.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Estabilizante (stabilizer)
+: Un óxido, sobre todo la alúmina, que hace más viscoso el fundido y aporta durabilidad.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Feldespato (feldspar)
+: Un mineral que aporta un fundente alcalino junto con alúmina y sílice: potásico, sódico o nefelina sienita.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Floculante y defloculante (flocculant and deflocculant)
+: Aditivos que gelifican una suspensión (sales de Epsom, vinagre) o la hacen más fluida (silicato sódico, Darvan).
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Formador de vidrio (glass former)
+: El óxido que construye el vidrio, normalmente la sílice.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+Fórmula límite o fórmula objetivo (limit formula, target formula)
+: Intervalos típicos de la fórmula Seger para esmaltes estables a un cono; una guía, no una garantía.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Fórmula Seger, UMF (unity molecular formula, Seger formula)
+: Los óxidos de un esmalte expresados como número de moléculas, ajustados para que los fundentes sumen 1.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Frita (frit)
+: Vidrio hecho en fábrica, fundido, enfriado bruscamente y molido, que vuelve insolubles los óxidos solubles o tóxicos.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Fundente (flux)
+: Un óxido que baja la temperatura de fusión de la sílice.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Gres (stoneware)
+: Una pasta de media a alta temperatura (de cono 5–10 aproximadamente) que vitrifica, o casi.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Grieta de enfriamiento o de calentamiento (dunting)
+: Grietas en una pieza por las tensiones del enfriamiento o del calentamiento, a menudo en la inversión del cuarzo, {{1063 °F; 573 °C}}.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Loza (earthenware)
+: Una pasta de baja temperatura (de cono 06–02 aproximadamente), porosa a conos bajos y más densa cuando se cuece a más temperatura.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Mezcla lineal (line blend)
+: Pruebas en las que un ingrediente varía por pasos entre dos cantidades. Una mezcla triaxial (triaxial blend) hace variar tres en una cuadrícula.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Monococción (once-firing, single firing)
+: Esmaltar piezas sin cocer y cocerlas una sola vez.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Opacificante (opacifier)
+: Un material, como el silicato de zirconio, el óxido de estaño o el dióxido de titanio, que vuelve opaco el esmalte.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Oxidación y reducción (oxidation and reduction)
+: Cocción con abundante oxígeno (hornos eléctricos) o con el oxígeno restringido (normalmente, gas o leña).
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Óxido (oxide)
+: Un compuesto de un elemento con oxígeno; un análisis de óxidos los enumera en porcentaje en peso.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Pérdida al fuego, PF (loss on ignition, LOI)
+: El peso que se pierde en la cocción en forma de agua, dióxido de carbono, materia orgánica o azufre.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Piezas en crudo (greenware)
+: Piezas sin cocer: a dureza de cuero cuando están firmes pero húmedas; totalmente secas cuando no les queda agua libre.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Pinchado y ampollas (pinholing and blistering)
+: Agujeritos, o cráteres de bordes afilados, por donde el gas escapó a través del fundido.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Porcelana (porcelain)
+: Una pasta blanca de alta temperatura, rica en caolín, a menudo translúcida.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Protector de placas (kiln wash)
+: Un recubrimiento resistente al calor que protege las placas del horno de los goteos.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+R₂O y RO
+: Los fundentes alcalinos (Na₂O, K₂O, Li₂O) y los alcalinotérreos (CaO, MgO, BaO, SrO, con ZnO).
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Receta (batch recipe)
+: Las materias primas de un esmalte en peso, que normalmente suman 100.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Recogido (crawling)
+: El esmalte se retira formando gotas durante la cocción y deja la arcilla al descubierto.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Relación sílice/alúmina (silica to alumina ratio)
+: La sílice dividida por la alúmina en la fórmula Seger: cuanto más alta, más tiende al brillo; cuanto más baja, al mate.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Sílice (silica, SiO₂)
+: El formador de vidrio; también se llama sílex o cuarzo.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Tixotropía (thixotropy)
+: Fluir al removerse y cuajar en un gel blando en reposo.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Trabajo térmico (heatwork)
+: El efecto conjunto de la temperatura y el tiempo en un horno; lo que miden los conos.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Vitrificación (vitrification)
+: El proceso por el que una pasta se vuelve vítrea y no porosa en la cocción.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
-
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
-
-## Sources {#sources lang=en}
+## Fuentes {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -486,7 +486,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (vía The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -504,7 +504,7 @@ Whiting
 - [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
 - R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
 - [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
-- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, vía Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
