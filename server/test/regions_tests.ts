@@ -569,7 +569,7 @@ describe('regions before Turkey', () => {
     // Changed once on purpose: the verification pass of 2026-10-19 changed Japan's #8000 note (who answers,
     // what it costs), its food note (the 2025 revision's dates) and JSOH's check date. Again on 2026-11-05:
     // Croatia lists Tapiker (the owner's browsing export, round 15).
-    expect(hash).to.equal('2fb19f3500e9e61387c615494f23982fbea54e5e55e3621b772c32829a4525d5');
+    expect(hash).to.equal('3f5cf4fc7af10c7c49154cf316be2822948fe3a07cbb279ab488e9a18590fc43');
   });
 });
 
@@ -593,7 +593,7 @@ describe('regions before Korea', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose (2026-10-19): Japan's, as above, and Türkiye's UZEM (free, for the public),
     // its silica and mask check dates. Again on 2026-11-05: Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('3c56a61618dcedc97055e32169659a9a3b3a3ab9ffd68dfe675e97af640786e9');
+    expect(hash).to.equal('02b549c7320f5e8f898fb6226da657714d67e8810742e4b6f345ad7dc5b300ac');
   });
 });
 
@@ -620,7 +620,7 @@ describe('regions before China', () => {
     // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
     // Again on 2026-10-20: Taiwan's 112 note says plainly what 112 does when a mobile has no signal.
     // Again on 2026-11-05: Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('35a96385c4d001dfabc376792ab1c7a3494b1b4fbd848ee67989e598b0d294d7');
+    expect(hash).to.equal('508b5c0f1161eeb1c4eccad88ab29dde65a2fad71c9997729a833d8530809df3');
   });
 });
 
@@ -648,7 +648,7 @@ describe('regions before Vietnam', () => {
     // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
     // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note. Again on 2026-11-05:
     // Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('df2401fe56368c89d1dddb6a1b96a0248ebe484c645166312359b60741214b0e');
+    expect(hash).to.equal('d1f8085c451128ccdf8d71489c94025dc19d926404bb0b06ffc7acada1b23665');
   });
 });
 
@@ -673,7 +673,7 @@ describe('regions after the verification pass of 2026-10-19', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded. Again on 2026-11-05: Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('b2c71a61cc102041155e693160e7fb445cfcda2d17d5b3c5007c2d733fbcc425');
+    expect(hash).to.equal('20e487e37d5b887b37e3eee4a718412ee1b29bf6ccc72dfcf5d9d61daff8b0b0');
   });
 });
 
@@ -741,7 +741,7 @@ describe('Latin America and Africa, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('c43a758254420af4bed407380966be325d68452074e70a8f877fc6b2c37df21d');
+    expect(hash).to.equal('544332c05fb989945a40f449d6b452f508af6c7b293b098d66815cf82d01e7b0');
   });
 
   it('are, with the earlier snapshots, every region', () => {

@@ -23,7 +23,7 @@ const SELLS: Record<Sells, string> = {
  * Where to buy raw glaze materials, for the reader's region
  * (lib/regions/suppliers.js): a few shops, each checked on its own site, with
  * what it sells, the packs seen, and some materials as the shop names them.
- * Where none was found, shops elsewhere that say they deliver there.
+ * Then shops elsewhere that say they deliver there, after the region's own or in their place.
  */
 @Component({
   selector: 'gc-shops',
@@ -35,9 +35,9 @@ const SELLS: Record<Sells, string> = {
         <ng-container *ngTemplateOutlet="table; context: { $implicit: entry.shops, nearby: false }" />
       } @else {
         <p>{{ t('guides.shops.none', { region: regionName() }) }}</p>
-        @if (entry.nearby.length) {
-          <ng-container *ngTemplateOutlet="table; context: { $implicit: entry.nearby, nearby: true }" />
-        }
+      }
+      @if (entry.nearby.length) {
+        <ng-container *ngTemplateOutlet="table; context: { $implicit: entry.nearby, nearby: true }" />
       }
       @if (sources().length) {
         <gc-source-links [label]="t('guides.poison.checkedOn')" [urls]="sources()" />
@@ -133,7 +133,7 @@ export class ShopList {
   protected readonly entry = computed(() => (this.region() ? shopsFor(this.region()) : null));
   private readonly shown = computed(() => {
     const entry = this.entry();
-    return entry ? [...entry.shops, ...(entry.shops.length ? [] : entry.nearby)] : [];
+    return entry ? [...entry.shops, ...entry.nearby] : [];
   });
   protected readonly checked = computed(() => earliest(this.shown().map((shop) => shop.checked)));
   /** Each shop's page, and for a shop elsewhere the page that says it delivers here. */
