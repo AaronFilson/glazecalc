@@ -119,183 +119,183 @@ Saran berbeda tentang seberapa halus timbangan yang diperlukan. Derek Au menemuk
 
 Derek Au menimbang ke satu mangkuk dalam tumpukan terpisah, sehingga kesalahan dapat disendok kembali. Jika Anda menimbang ke satu ember tanpa menekan tara di antara bahan, total berjalan Glazecalc memberi tahu apa yang seharusnya dibaca timbangan setelah masing-masing.
 
-## Mixing and sieving {#mixing lang=en}
+## Mencampur dan mengayak {#mixing}
 
-### How much water
+### Berapa banyak air
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Sumber berbeda pendapat. Derek Au mulai kental, pada 50 mL air per 100 g bubuk, dan menambah lebih banyak kemudian. Potterycrafts memberikan 65 mL per 100 g untuk satu glasir bubuk. UT Austin memakai berat air dan bubuk yang sama, dan ketika Digitalfire memasukkan 20 kg bubuk ke 20 kg air, berat jenis yang terukur 1,46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Air cepat ditambahkan dan lambat dikeluarkan, jadi mulailah sedikit. Perkiraan kami: mulai dengan **sekitar 70 sampai 80 mL per 100 g** (700 sampai 800 mL per kilogram, atau sekitar 11 sampai 12 US fl oz per pon). Rendam, campur, dan ayak pada kekentalan itu, lalu tambahkan air sedikit demi sedikit sampai berat jenisnya tepat. 1 mL air beratnya 1 g, jadi Anda dapat menimbangnya. Jika kelewatan, biarkan glasir mengendap, lalu serap dengan spons atau tuang air bening dari atas.
 
-### Tools and water
+### Alat dan air
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Pengaduk baling-baling.** Digitalfire menyebut yang bagus "esensial". Bor berkabel dengan dayung pengaduk bekerja baik di ember. UT Austin menjalankannya paling sedikit 4 sampai 5 menit setelah glasir tampak tercampur, dan menjaga bilah agar tidak menyentuh ember, yang dapat mengikis plastiknya.
+- **Blender.** "Bekerja sangat baik untuk batch kecil" (Digitalfire). Simpan khusus untuk glasir: jangan pernah dikembalikan ke dapur.
+- **Pengocok atau tongkat.** Pilihan Zakin bila tidak ada pengaduk.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Air juga bervariasi, dan Digitalfire mencatat bahwa air mengubah perilaku cairan glasir. Derek Au memakai air osmosis balik karena air keran miliknya sadah. Apa pun yang Anda pakai, catatlah.
 
-### Step by step
+### Langkah demi langkah
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Pakai respirator, dan sarung tangan karet jika tangan Anda akan masuk. Zakin memakai masker dari mulai menimbang sampai glasir basah.
+2. Ukur sekitar 70 sampai 80 mL air per 100 g bubuk ke dalam ember.
+3. Tambahkan bubuk yang sudah ditimbang perlahan, dari ketinggian rendah. UT Austin menambahkan bubuk ke air hangat; Zakin dan Au menambahkan air ke bubuk. Kami menyarankan bubuk ke dalam air, yang menerbangkan lebih sedikit debu, kecuali untuk resep dengan banyak bentonit: aduk bubuk keringnya bersama dulu.
+4. **Rendam** (slake): biarkan bubuk terendam tanpa diaduk. Digitalfire menunggu sekitar 20 menit. Bubuk dengan gom atau pengikat perlu didiamkan semalam.
+5. Campur sampai tidak ada kantong kering atau gumpalan.
+6. Ayak dua kali (lihat di bawah).
+7. Tutup dan biarkan semalam, lalu campur lagi dan periksa dasarnya untuk lapisan keras.
+8. Ukur berat jenisnya, dan tambahkan air sedikit demi sedikit untuk mencapai target Anda. Untuk mengetahui berat jenis kering glasir Anda sendiri, timbang juga cairan glasir yang sudah jadi (lihat di bawah).
+9. Beri label pada ember, dan catat apa yang Anda lakukan.
+10. Bersihkan dengan cara basah: pel lantai dan lap setiap permukaan, termasuk bagian luar wadah bahan.
 
-### Sieving
+### Mengayak
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Ayakan** adalah saringan mesh dalam bingkai. Mendorong glasir melaluinya dengan kuas memecah gumpalan yang tersisa setelah pencampuran dan menangkap partikel yang akan terbakar menjadi bintik. Semakin tinggi nomor **mesh**, semakin halus saringannya: 80 mesh memiliki bukaan sekitar 0,18 mm, dan 100 mesh sekitar 0,15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Sumber merekomendasikan mesh yang berbeda. Zakin mengayak dua kali melalui 50 atau 80 mesh. Derek Au memakai 120 mesh untuk sebagian besar glasir, terutama yang mengandung kobalt atau besi: tiga kali lewat 80 mesh masih menyisakan bintik besi pada satu seladon, dan satu kali lewat 120 mesh menyembuhkannya. Ia memakai 60 sampai 80 mesh untuk glasir abu dan lainnya dengan bahan kasar. Potterycrafts, di Inggris, menyarankan 60 sampai 80 mesh. Patokan yang aman:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Ayakan mana yang dipakai
+Label: Mesh ayakan
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glasir                                         | Ayakan                 |
+| ---------------------------------------------- | ---------------------- |
+| Sebagian besar glasir                          | Dua kali lewat 80 mesh |
+| Glasir dengan pewarna seperti kobalt atau besi | 100 sampai 120 mesh    |
+| Glasir abu, dan lainnya dengan bahan kasar     | 60 sampai 80 mesh      |
 
-## Specific gravity {#specific-gravity lang=en}
+## Berat jenis {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Berat jenis**{{en: specific gravity}} memberi tahu seberapa banyak bubuk dalam cairan glasir Anda. Ini adalah berat sejumlah volume glasir dibagi berat volume air yang sama. Air adalah 1,00, dan glasir dengan {{SG 1.45}} beratnya 145 g per 100 mL. Mencampur sampai berat jenis yang terukur adalah cara Anda mendapatkan kekentalan yang sama, dan lapisan yang sama, setiap kali. Berat jenis tidak memiliki satuan, jadi sama dalam gram atau ons.
 
-### Measure it by weighing 100 mL
+### Ukur dengan menimbang 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Aduk glasir agar tidak ada yang mengendap.
+2. Taruh **gelas ukur** 100 mL (tabung ukur tinggi bertanda) atau semprit 100 mL di timbangan, dan tara.
+3. Isi dengan glasir sampai tepat 100 mL, membaca tanda setinggi mata.
+4. Timbang dan bagi gramnya dengan 100: 145 g adalah berat jenis 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire juga menandai cangkir pada tingkat 500 g air, mengisinya sampai tanda dengan glasir, dan membagi beratnya dengan 500; ukuran yang lebih besar dan lebih penuh lebih akurat. **Hidrometer**, pelampung yang dibaca pada tempat ia berada di glasir, cepat tetapi dapat salah membaca glasir kental atau menggel. Hidrometer Inggris, seperti milik Potclays, membaca dalam derajat Baumé (°Bé). Menurut hitungan kami, berat jenis = 145 ÷ (145 − °Bé), jadi 46 °Bé sekitar 1,46. Buku Inggris lama memberikan **berat pint**, ons dalam satu pint imperial glasir: bagi dengan 20, jadi 29 oz sekitar berat jenis 1,45 (juga hitungan kami).
 
-### What to aim for
+### Apa yang dituju
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Sumber berbeda pendapat, terutama pada pengkuasan dan penyemprotan, di mana pemasok Inggris Potclays memberikan angka yang jauh lebih tinggi (angkanya sendiri "hanya sebagai panduan"). Perlakukan setiap angka sebagai titik awal. Saran inti Digitalfire adalah menemukan berat jenis dan penggelan yang cocok untuk setiap glasir, lalu mengulanginya dan mencatatnya.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Target berat jenis, di tempat sumber berbeda pendapat
+Label: Target berat jenis
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Penggunaan   | Digitalfire dan Glazy                                                                                                                                        | Potclays (Inggris)                            | Titik awal yang aman                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- | ------------------------------------------------------------ |
+| Pencelupan   | {{SG 1.40}} (untuk celup 5 detik) sampai {{SG 1.50}} (untuk celup 1 detik); glasir campuran rumahan yang menggel paling baik pada {{SG 1.43–1.45}}           | Bening {{SG 1.46–1.48}}; berwarna {{SG 1.61}} | {{SG 1.45}}; encerkan ke {{SG 1.43}} dan gelkan bila menetes |
+| Pengkuasan   | {{SG 1.25}} (bening tipis) sampai {{SG 1.55}} (detail gelap)                                                                                                 | {{SG 1.71–1.81}}                              | Ikuti produk; pakai gom CMC atau medium kuas                 |
+| Penyemprotan | Tidak ada angka; Hopper, menulis untuk Ceramic Arts Network, menyatakan jauh lebih encer, dengan deflokulan (bahan tambahan yang membuat cairan lebih encer) | {{SG 1.71}}                                   | Tidak ada angka yang andal; semprot hanya di bilik semprot   |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Untuk memeriksa glasir celup dengan mata, AMACO mencelup selama 5 detik dan mencari lapisan setebal koin dime AS. Digitalfire membakar ubin yang dicelup 5 detik untuk memeriksa.
 
-### Water for a target SG: our estimate
+### Air untuk berat jenis target: perkiraan kami
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Tabel di bawah adalah hitungan kami sendiri, bukan milik sumber. Tabel mengasumsikan partikel bubuk memiliki kerapatan 2,6 g per cm³, yang merupakan asumsi, bukan pengukuran. Tanah liat, bahan larut, dan penggelan semuanya mengubah glasir nyata, jadi pakai untuk memulai, lalu ukur. Sebagai pemeriksaan, tabel memprediksi {{SG 1.44}} untuk berat bubuk dan air yang sama, mendekati {{SG 1.46}} terukur Digitalfire. Tabel juga menunjukkan bahwa 70 sampai 80 mL per 100 g membuat Anda mulai di atas {{SG 1.50}}, lebih kental daripada yang Anda perlukan.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Air untuk berat jenis target (perkiraan kami)
+Label: Air untuk berat jenis target
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Target      | Per 100 g bubuk |    Per kilogram |             Per pon |
+| ----------- | --------------: | --------------: | ------------------: |
+| {{SG 1.40}} |  sekitar 115 mL | sekitar 1150 mL | sekitar 18 US fl oz |
+| {{SG 1.45}} |   sekitar 98 mL |  sekitar 980 mL | sekitar 15 US fl oz |
+| {{SG 1.50}} |   sekitar 85 mL |  sekitar 850 mL | sekitar 13 US fl oz |
+| {{SG 1.60}} |   sekitar 64 mL |  sekitar 640 mL | sekitar 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Cari berat jenis kering glasir Anda sendiri saat mencampur
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+Angka 2,6 di atas adalah tebakan. Angka glasir Anda sendiri, yaitu massa jenis bubuk keringnya, dapat dihitung dari tiga angka yang dapat Anda ambil saat mencampur. Dengan angka itu, kelak Anda dapat menghitung dari berat jenis berapa banyak bubuk dalam ember mana pun berisi glasir itu, dan air untuk batch berikutnya. Ini hitungan kami, bukan dari sumber:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Catat berat bubuk kering dalam batch: jumlah total resep.
+2. Timbang ember kosong sebelum Anda mulai, atau tandai beratnya pada ember.
+3. Campur, ayak, dan bawa glasir ke berat jenisnya seperti biasa. Dorong semuanya melalui ayakan dan bilas ke dalam ember, supaya tidak ada bubuk yang tertinggal.
+4. Timbang ember yang penuh dan kurangi berat ember. Itulah berat cairan glasir.
+5. Ukur berat jenisnya.
 
-Then:
+Lalu:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Air** = berat cairan glasir − berat bubuk.
+- **Volume cairan glasir** dalam mL = berat cairan glasir dalam gram ÷ berat jenis.
+- **Volume bubuk** = volume cairan glasir − air (1 g air adalah 1 mL).
+- **Berat jenis kering** = berat bubuk ÷ volume bubuk.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Contohnya: 1000 g bubuk menjadi 1980 g cairan glasir pada {{SG 1.45}}. Airnya 980 g, cairan glasirnya 1980 ÷ 1,45 = sekitar 1366 mL, bubuk menempati 1366 − 980 = 386 mL, dan berat jenis keringnya 1000 ÷ 386 = sekitar 2,59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Timbang seluruh cairan glasir di akhir, bukan air saat Anda menuangnya, supaya air yang menguap atau terpercik tidak terhitung. Kesalahan kecil membesar di sini: pembacaan berat jenis yang meleset 0,01 menggeser hasilnya sekitar 2 sampai 4%, lebih banyak untuk glasir yang lebih encer. Pakai batch 1 kg atau lebih, timbangan yang akurat, dan cara cangkir 500 g di atas untuk berat jenis. Sebagian besar bahan umum berada di antara sekitar 2,5 dan 2,9, jadi angka yang jauh di luar itu, pada glasir tanpa banyak zirkon atau timbal, kemungkinan berarti kesalahan pengukuran. Tulis angkanya pada resep.
 
-### Epsom salts, CMC gum and bentonite
+### Garam Epsom, gom CMC, dan bentonit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Garam Epsom** membuat glasir menggel sedikit saat diam dan mengalir lagi saat diaduk. Ini disebut **memflokulasi**nya, dan glasir yang berperilaku demikian **tiksotropik**: dioleskan lebih merata, lebih sedikit menetes dan lebih sedikit mengendap. Digitalfire menyarankan mulai dari sekitar 2 g per galon setelah berat jenis tepat (kira-kira 0,5 g per liter, konversi kami) dan menyetel jumlahnya setiap kali Anda mencampur, karena tidak ada resep yang sebaiknya menetapkan dosisnya. Kami menyarankan melarutkannya dalam sedikit air panas lebih dulu. Dalam contoh Digitalfire, glasir dengan {{SG 1.45}} menetes, jadi air menurunkannya ke {{SG 1.43}} dan garam Epsom menggelkannya kembali menjadi seperti krim, dan glasir terpakai merata. Pemeriksaan kasar: aduk, berhenti, dan amati. Glasir yang menggel terus bergerak sekitar 2 atau 3 detik, lalu berhenti dan sedikit memantul kembali.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Gom CMC** (karboksimetil selulosa) membuat cairan lebih lengket dan lebih lambat kering, dan meninggalkan lapisan lebih keras yang melekat pada benda. Gom ini paling penting untuk glasir kuas dan glasir tinggi frit. Contoh Digitalfire mencampur 3,75 g ke dalam 1000 g cairan, dan harus dimasukkan dengan blender. Glasir dengan CMC tidak akan menggel dengan garam Epsom, dan karena mikroba memakan gom, glasir dapat berubah di ember dan mulai berbau.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonit**, tanah liat sangat halus, membantu menahan partikel lain tetap tersuspensi. Glasir celup biasanya mengandalkan 15 sampai 25% tanah liat mentah untuk ini. Untuk resep yang kekurangan tanah liat, sekitar 1 sampai 3% bentonit membantu; Digitalfire mengatakan glasir dengan lebih dari 15% tanah liat seharusnya tidak membutuhkan bentonit lebih dari 1% dari berat glasir kering.
 
-## Test tiles and line blends {#testing lang=en}
+## Ubin uji dan campuran garis {#testing}
 
-### Start small
+### Mulai kecil
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au bekerja naik dalam tiga langkah: uji 50 atau 100 g, uji coba 1 sampai 2 kg jika berhasil, lalu batch studio 5 sampai 10 kg. Menurut perkiraan kami, uji 100 g dengan {{SG 1.45}} menghasilkan sekitar 135 mL (sekitar 4½ US fl oz) cairan, cukup untuk mencelup beberapa ubin kecil dalam cangkir sempit.
 
-### Test on your own clay
+### Uji pada tanah liat Anda sendiri
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Glasir dapat tampak sangat berbeda pada tanah liat lain atau di tungku lain: Clay Art Center menguji setiap glasir yang diformulasikan ulang pada empat bodi tanah liat, pada kerucut 6 dan pada kerucut 10. Panduan pemula Potclays untuk pengujian glasir menyarankan:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 sampai 10 **ubin uji** (potongan kecil untuk mencoba glasir) dari tanah liat yang benar-benar akan Anda pakai, dengan mencatat apakah sudah dibiskuit atau kering total
+- satu perubahan pada satu waktu
+- satu kali celup dan dua kali celup, untuk melihat glasir tipis dan tebal
+- setiap ubin dalam muatan tungku yang sama
+- tanda pada setiap ubin sebelum pembakaran, dengan stempel, ukiran, atau pensil underglaze. Ubin yang sudah dibakar tampak mirip, dan tanda yang dibuat sebelum pembakaran bertahan melewati tungku, jadi Anda selalu dapat tahu resep mana setiap ubin.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Kami menyarankan ubin yang berdiri tegak, karena ubin datar menyembunyikan seberapa jauh glasir mengalir, dengan pita bertekstur untuk menunjukkan bagaimana glasir berubah warna di tepi, dan kaki yang kosong. Taruh masing-masing di piring kecil atau serpihan biskuit, atau di rak yang diberi kiln wash, untuk menangkap tetesan. Taruh **kerucut saksi**{{en: witness cone}}, kerucut keramik kecil yang menekuk saat sudah menerima cukup panas, di dekat ubin untuk menunjukkan apa yang diterimanya; [panduan membakar](/guides/firing) menjelaskan kerucut. Beri setiap ubin kode singkat, dan tuliskan di samping resep dalam catatan Anda. Willers, menulis untuk Ceramic Arts Network, memakai angka dan huruf, dan menulis sistemnya sendiri di halaman depan buku catatan.
 
-### Line blends
+### Campuran garis
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Campuran garis**{{en: line blend}} adalah sederet uji yang melangkah merata dari satu campuran ke campuran lain: dari satu glasir ke glasir kedua, atau dari glasir dasar ke glasir yang sama dengan lebih banyak pewarna. Derek Au, misalnya, menaikkan besi oksida melalui dasar bening dengan kenaikan 1%. Metode volumetrik yang dikaitkan dengan Ian Currie menghemat waktu, karena Anda hanya mencampur kedua ujungnya:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Campur kedua glasir ujung, A dan B, sebagai batch berukuran sama, dan ayak keduanya.
+2. Tambahkan air ke yang volumenya lebih kecil sampai keduanya memiliki volume basah yang persis sama.
+3. Aduk keduanya, lalu ambil setiap campuran dengan semprit ke cangkirnya sendiri yang bernomor.
+4. Aduk setiap cangkir dan celup sebuah ubin.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Dalam contoh kerja kami, A adalah 100 g dasar bening, dan B adalah yang sama dengan 4 g besi oksida merah ditambahkan (tambahan 4%). Setiap mililiter B memuat bagian dasar yang sama dengan mililiter A, ditambah besinya, jadi cangkirnya melangkah dari tanpa besi sampai 4% dalam langkah 1%. Setiap ujung memberi 100 mL ke campuran, yang dicakup batch 100 g menurut perkiraan kami.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Campuran garis besi lima langkah, 40 mL per cangkir (contoh kerja kami)
+Label: Contoh campuran garis
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Cangkir | Dasar bening (A) | Dasar dengan 4% besi (B) | Besi oksida, % dari dasar |
+| ------- | ---------------: | -----------------------: | ------------------------: |
+| 1       |            40 mL |                     0 mL |                         0 |
+| 2       |            30 mL |                    10 mL |                         1 |
+| 3       |            20 mL |                    20 mL |                         2 |
+| 4       |            10 mL |                    30 mL |                         3 |
+| 5       |             0 mL |                    40 mL |                         4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Metode ini memerlukan hitungan yang cermat, ujung yang tercampur baik dengan berat jenis yang merata, dan timbangan yang akurat. Derek Au juga mencampur menurut berat dan bukan volume. **Campuran triaksial** melakukan hal yang sama dengan tiga ujung, ditata pada segitiga.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Bila sebuah langkah tampak menjanjikan, **Simpan sebagai salinan** di [halaman resep](/recipe) menyimpannya sebagai resep tersendiri dan membiarkan yang asli seperti semula.
+
+## Menyimpan catatan {#records}
+
+Willers merumuskan tujuannya dengan baik: "informasi yang cukup untuk dapat mengulang, atau menghindari, hasil yang Anda temukan". Tuliskan apa yang akan Anda uji sebelum mulai, dan hasilnya saat Anda membongkar tungku. Potclays menambahkan penerapan, ketebalan, bodi tanah liat, dan pembakaran lengkap, termasuk ramp, penahanan, dan pendinginan. **Ramp**{{en: ramp}} adalah laju pemanasan atau pendinginan, seperti {{60 °C; 108 °F}} per jam, dan **penahanan suhu**{{en: hold}} menjaga tungku pada satu suhu selama waktu yang ditetapkan. Catat nomor lot, air yang Anda pakai, dan penggantian apa pun: pergantian feldspar Clay Art Center berarti menyesuaikan sekitar separuh glasirnya.
+
+Table: Apa yang dicatat untuk setiap batch glasir (templat kami)
+Label: Templat catatan
+
+| Bagian       | Yang dituliskan                                                                                                                                                                                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resep        | Resep dan versinya; merek bahan dan nomor lot; penggantian apa pun                                                                                                                                                                                                                                         |
+| Pencampuran  | Tanggal; ukuran batch; air yang ditambahkan, dan jenisnya (keran, osmosis balik, atau suling); berat jenis setelah pencampuran dan berat jenis akhir; berat cairan glasir yang sudah jadi, untuk berat jenis keringnya; garam Epsom, CMC, dan bentonit yang ditambahkan; mesh ayakan dan jumlah kali lewat |
+| Pengglasiran | Bodi tanah liat; kerucut biskuit; pencelupan, pengkuasan, atau penuangan; waktu celup atau jumlah lapis; ketebalan kering                                                                                                                                                                                  |
+| Pembakaran   | Tungku dan posisi rak; jadwal pembakaran, dengan ramp, penahanan, dan pendinginannya; atmosfer (oksidasi atau reduksi); apa yang ditunjukkan kerucut saksi, bukan hanya apa yang diatur pada tungku                                                                                                        |
+| Hasil        | Permukaan dan warna; pengaliran, retak halus, atau lubang jarum apa pun; foto bagian depan, belakang, dan samping; kode ubin                                                                                                                                                                               |
+
+> [!NOTE]
+> Di Glazecalc, [resep](/recipe) yang tersimpan memuat resepnya sendiri. [Catatan pembakaran](/firing) mencatat setiap pembakaran: tungku, tanggal, waktu, suhu, kerucut, dan catatan. [Catatan](/notes) memuat semua hal lain, seperti catatan batch di atas dan apa yang ditunjukkan setiap ubin.
 
 ## Sumber {#sources}
 

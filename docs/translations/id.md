@@ -326,6 +326,23 @@ As the law writes it, never paraphrased: the words below are fixed, and the regi
 - **pelindian:** leaching is **pelindian**; the leach test is **uji pelindian**, not narrowed to lead and cadmium.
 - **Placeholders:** see Placeholders and names.
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | Indonesian                                  | Notes                                                                                                                                       |
+| ----------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | bagan Stull                                 | **show English**. As the recipe page already writes it. Regions as there: tidak menyatu, doff, semi-doff, cerah, kurang bakar, retak halus. |
+| dry SG (of a glaze's powder)                    | berat jenis kering                          | No source. The app's "SG of the dry materials" is "berat jenis bahan kering".                                                               |
+| cristobalite inversion                          | inversi kristobalit                         | Beside inversi kuarsa. No source.                                                                                                           |
+| colemanite                                      | kolemanit                                   | KBBI-style spelling of the mineral (Usage).                                                                                                 |
+| porcelain stone                                 | batu porselen                               | No source; the Chinese 瓷石 kept as the English gives it.                                                                                   |
+| synthetic ash                                   | pengganti sintetis (untuk 土灰, 藁灰, 柞灰) | No source; the Japanese names kept as the English gives them.                                                                               |
+| rice-straw ash                                  | abu jerami padi                             | Usage.                                                                                                                                      |
+| wood ash                                        | abu kayu                                    | Usage.                                                                                                                                      |
+| sludge (dried glaze sludge from a rinse bucket) | endapan                                     | No source.                                                                                                                                  |
+| Famous glazes                                   | Glasir terkenal                             | No source. Page and menu name.                                                                                                              |
+
 ### Search terms (docs/seo-plan.md, item 9)
 
 Google suggest for Indonesia (16 October 2026) completes **glasir keramik**, **bahan glasir keramik**, **resep glasir keramik**, **cara membuat glasir keramik**, **teknik glasir keramik** and **glasir keramik food grade**; bare "glasir" is also a food icing, and "kalkulator keramik" is a floor-tile calculator. The Seger formula is not searched. **Proposed title** (43 characters): "Glazecalc: kalkulator glasir keramik gratis" (alternative: "... untuk perajin", 57). **Description terms:** resep glasir keramik, bahan glasir keramik, cara membuat glasir keramik, glasir stoneware, suhu bakar, aman untuk pangan, and formula Seger (UMF) in brackets. "glasir" is always paired with keramik.
