@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Del te strani še ni preveden, zato je prikazan v angleščini.",
+  "index": {
+    "crumb": "Znane glazure",
+    "title": "Znane glazure",
+    "lead": "Glazure, znane po vsem svetu, vsaka iz svojih tradicionalnih lokalnih surovin, s Segerjevo formulo in različico iz surovin, ki se prodajajo tam, kjer ste.",
+    "listHeading": "Glazure",
+    "more": "Dodajali bomo še druge glazure: vsako, ko bosta njen recept in surovine oprta na vsaj tri prebrane vire."
+  },
+  "glaze": {
+    "lead": "Znana glazura ({native}): njen tradicionalni recept ali analiza, žganje in različica iz surovin, ki se prodajajo tam, kjer ste.",
+    "aboutHeading": "O glazuri {name}",
+    "nativeName": "Izvirno ime",
+    "origin": "Kje",
+    "period": "Kdaj",
+    "firing": "Žganje",
+    "cone": "stožec {cone}",
+    "historyOnly": "Samo zgodovina: ta glazura je bila narejena s svincem. Njena analiza je prikazana kot zgodovina, ne kot recept za mešanje. Različica spodaj je druga glazura, brez svinca.",
+    "recipeHeading": "Tradicionalni recept",
+    "material": "Surovina",
+    "amount": "Količina",
+    "unityHeading": "Segerjeva formula",
+    "analysisHeading": "Zgodovinska analiza",
+    "oxide": "Oksid",
+    "percent": "Masni %",
+    "useHeading": "Preizkusite",
+    "open": "Odpri ta recept",
+    "openLeadFree": "Odpri različico brez svinca",
+    "leadFreeTitle": "V slogu {name}, brez svinca",
+    "allLink": "Vse znane glazure",
+    "safetyHeading": "Varnost",
+    "safeMixing": "Varno mešanje in prezračevanje",
+    "firingGuide": "Žganje v peči",
+    "makingGuide": "Kako pripraviti glazuro",
+    "sourcesHeading": "Viri",
+    "link": "Odpri",
+    "opened": "prebrano: {date}"
+  },
+  "local": {
+    "heading": "Iz vaših lokalnih surovin",
+    "leadFreeHeading": "Različica brez svinca",
+    "intro": "Segerjeva formula tradicionalnega recepta, sestavljena iz standardnih surovin, ki se prodajajo tam, kjer kupujete. Izberite, kje kupujete, da jo vidite.",
+    "region": "Kje kupujete surovine",
+    "proposal": "Surovine iz predloga",
+    "pick": "Izberite …",
+    "untested": "Izračunano, še ne preizkušeno v peči.",
+    "testFirst": "Preden jo uporabite na katerem koli izdelku, žgite testne ploščice, površino za stik z živili pa preskusite glede sproščanja kovin.",
+    "untestedNote": "Izračunano, še ne preizkušeno v peči: pred uporabo žgite testne ploščice.",
+    "close": "Ciljni formuli se približa.",
+    "fair": "Ciljni formuli se kar dobro približa.",
+    "poor": "S temi surovinami se ciljni formuli ni mogoče približati.",
+    "none": "Iz surovin, ki se prodajajo tam, je ni mogoče sestaviti.",
+    "choose": "Izberite, kje kupujete surovine, da jo vidite sestavljeno iz tamkajšnjih surovin."
+  },
+  "atmospheres": {
+    "oxidation": "oksidacija",
+    "reduction": "redukcija",
+    "neutral": "nevtralna",
+    "wood": "žganje z lesom",
+    "salt": "solno žganje",
+    "soda": "žganje s sodo"
+  }
+}

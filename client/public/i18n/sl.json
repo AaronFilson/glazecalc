@@ -36,7 +36,10 @@
     "confirm": "Odobritev spremembe – Glazecalc",
     "cones": "Preglednica stožcev: temperature Ortonovih stožcev in stožcev SK – Glazecalc",
     "materials": "Standardne glazurne surovine: analiza in nevarnosti – Glazecalc",
-    "materialInfo": "{name}: oksidna analiza in nevarnosti – Glazecalc"
+    "materialInfo": "{name}: oksidna analiza in nevarnosti – Glazecalc",
+    "teachingGlazeCalculation": "Poučevanje izračuna glazur - Glazecalc",
+    "famousGlazes": "Znane glazure - Glazecalc",
+    "famousGlaze": "Glazura {name} - Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na vsebino",
@@ -187,7 +190,10 @@
     "materials": "Surovine v standardni knjižnici Glazecalc, od glinencev in glin do frit in virov bora, vsaka z oksidno analizo, Segerjevo formulo in nevarnostmi.",
     "materialInfo": "{name}: oksidna analiza, Segerjeva formula, izguba pri žarenju in nevarnosti v standardni knjižnici Glazecalc.",
     "materialInfoLong": "{name} v standardni knjižnici glazurnih surovin Glazecalc: oksidna analiza, prispevek k Segerjevi formuli, izguba pri žarenju in nevarnosti.",
-    "imageAlt": "Logotip Glazecalc in njegov naslov, brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
+    "imageAlt": "Logotip Glazecalc in njegov naslov, brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev.",
+    "teachingGlazeCalculation": "6 srečanj za poučevanje Segerjeve formule (UMF): surovine in triaksialne ploščice, moli, od recepta do formule in nazaj ter napake glazure, s preračunanimi primeri in delovnimi listi za tiskanje.",
+    "famousGlazes": "Znane glazure z vsega sveta: tradicionalni recept ali zgodovinska analiza vsake glazure, njena Segerjeva formula in različica iz surovin, ki se prodajajo tam, kjer ste.",
+    "famousGlaze": "Glazura {name} ({native}): tradicionalni recept ali zgodovinska analiza, žganje, Segerjeva formula in viri ter različica iz surovin, ki se prodajajo tam, kjer ste."
   },
   "notices": {
     "dismiss": "Opusti",
