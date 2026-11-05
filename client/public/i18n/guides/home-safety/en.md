@@ -83,6 +83,8 @@ Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto
 
 We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
 
+Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+
 ## Keeping dust in the studio {#keeping-dust-in-the-studio}
 
 Pennsylvania's health department puts the problem plainly: "Lead-contaminated dust from your hobby can attach to your clothes, shoes, hair, skin, and personal items, and readily transfer into your vehicle and onto surfaces in your home." The CDC adds that adults "may bring lead home with them and expose their families to lead without knowing." The Pennsylvania guidance gives the remedy:

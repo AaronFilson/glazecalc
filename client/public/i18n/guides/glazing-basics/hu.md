@@ -3,20 +3,20 @@ title: Mázazás az alapoktól
 lead: Miből áll a máz, hogyan lesz belőle üveg a kemencében, és minden szó magyarázata, amellyel egy recepten, egy zsákon vagy egy gúlatáblázaton találkozik.
 ---
 
-## Mi a máz? {#what-a-glaze-is}
+## Mi a máz {#what-a-glaze-is}
 
-A **máz**{{en: glaze}} vékony üvegréteg, amely összeolvad az edénnyel. A Glazy, a nyílt mázrecept-adatbázis, így határozza meg: „üvegképlet, amelyet úgy hangoltak be, hogy bizonyos hőmérsékleten megolvadjon és ráolvadjon az agyagra”. Porrétegként kerül fel, és a kemencében üveges bevonattá olvad, amely lezárja az agyagot, így az edény kevésbé hajlamos arra, hogy szivárogjon, elszíneződjön vagy kopjon. Az égetés csúcsán az olvadék az agyaggal is reakcióba lép, és gyakran köztes réteget képez közöttük, amely odarögzíti a mázat. Fazekasárun{{en: earthenware}} a máz külön rétegként a felületen marad; kőagyagon{{en: stoneware}} beleolvad a cserépbe{{en: body}}.
+A **máz**{{en: glaze}} vékony üvegréteg, amely az edényre olvad. A Glazy, a nyílt mázrecept-adatbázis szerint „olyan üvegösszetétel, amelyet úgy hangoltak, hogy bizonyos hőmérsékleten megolvadjon és ráolvadjon az agyagra”. Porréteg formájában kerül fel, és a kemencében üveges bevonattá olvad, amely lezárja az agyagot, így az edény kevésbé ereszt, foltosodik vagy kopik. Az égetés csúcsán az olvadék az agyaggal is reakcióba lép, és gyakran köztes réteget képez, amely rögzíti a mázat. A hűvösebben égetett fazekasárun ez a réteg vékony, és a máz nagyrészt a felszínen marad. A melegebben égetett kőagyagon és porcelánon a réteg vastagabb, és a máz erősebben tapad az agyaghoz. A máz azonban üveg marad: nem válik az agyag részévé.
 
-A recept nyersanyagokat sorol fel, például földpátot{{en: feldspar}}, mészkőlisztet{{en: whiting}} és kaolint. A kemencében mindegyiknek egy része gázként távozik (víz vagy szén-dioxid formájában), a többiből **oxidok** lesznek: egy elem és az oxigén vegyületei, például a szilícium-dioxid{{en: silica}} (SiO₂) vagy a kalcium-oxid (CaO). Az égetett üveg oxidokból áll, ezért a fazekasok a mázat az oxidjaival írják le. Minden oxid a három feladat egyikét látja el.
+A recept nyersanyagokat sorol fel, például földpátot, mészkőlisztet és kaolint. A kemencében mindegyiknek egy része gázként távozik (víz vagy szén-dioxid), a többiből **oxidok**{{en: oxides}} lesznek: egy elem és az oxigén vegyületei, például a szilícium-dioxid (SiO₂) vagy a kalcium-oxid (CaO). A kiégetett üveg oxidokból áll, ezért a fazekasok oxidokkal írják le a mázat. Minden oxid a három feladat egyikét látja el.
 
-- A **szilícium-dioxid** (SiO₂) az **üvegképző**{{en: glass former}}: ez építi fel az üveget. A tiszta szilícium-dioxid {{3100 °F; 1700 °C}} fölött olvad, jóval melegebben, mint amit egy kerámiaégető kemence elér, és a sok szilícium-dioxidot tartalmazó máz általában tartósabb.
-- Az **olvasztóanyagok**{{en: fluxes}} olyan hőmérsékletre csökkentik az olvadáspontot, amelyet egy kemence elér. Az **alkáli-oxidok**, jelük **R₂O**, a nátrium, a kálium és a lítium oxidjai (Na₂O, K₂O, Li₂O); a 06-os Orton-gúlától{{en: cone}} felfelé, a közepes és a magas tüzű égetésben is hatnak. A **földalkáli-oxidok**, jelük **RO**, a kalcium, a magnézium, a bárium és a stroncium oxidjai (CaO, MgO, BaO, SrO), melléjük sorolják a cink-oxidot (ZnO) is; ezek az 5-ös és a 10-es gúla között hatnak a legjobban. Az R a csoport bármelyik fémét jelöli.
-- A **timföld** (Al₂O₃) a **stabilizáló**{{en: stabilizer}}. Sűrűbbé teszi az olvadékot, hogy megmaradjon a függőleges falakon, és keménységet, tartósságot ad. A Glazy figyelmeztetése: ha túl kevés a timföld, „a máz lefolyhat; a túl sok viszont mattá sűrítheti az olvadékot”. A timföld főleg az agyagból és a földpátból származik.
+- A **szilícium-dioxid** (SiO₂) az **üvegképző**{{en: glass former}}: ez építi fel az üveget. A tiszta szilícium-dioxid {{3100 °F; 1700 °C}} felett olvad, jóval magasabb hőmérsékleten, mint amit egy kerámiaégető kemence elér, és a sok szilícium-dioxidot tartalmazó máz általában tartósabb.
+- Az **olvasztóanyagok**{{en: fluxes}} olyan szintre csökkentik az olvadáspontot, amelyet a kemence elér. Az **alkáliák**, jelük **R₂O**, a nátrium, a kálium és a lítium oxidjai (Na₂O, K₂O, Li₂O); a 06-os gúlától a közepes és a magas tüzű égetésig hatnak. A **földalkáliák**, jelük **RO**, a kalcium, a magnézium, a bárium és a stroncium oxidjai (CaO, MgO, BaO, SrO), melléjük sorolják a cink-oxidot (ZnO) is; az 5-ös és a 10-es gúla között hatnak a legjobban. Az R a család bármelyik fémét jelöli.
+- A **timföld** (Al₂O₃) a **stabilizáló**{{en: stabilizer}}. Sűrűbbé teszi az olvadékot, hogy a függőleges falakon is a helyén maradjon, és keménységet, tartósságot ad. A Glazy figyelmeztetése: túl kevés timfölddel „a máz lefolyhat; a túl sok mattá sűrítheti az olvadékot”. A timföld főként az agyagból és a földpátból származik.
 
-A **bór** (B₂O₃) elmossa a határt. A vegyészek az üvegképzők közé sorolják, de a műhelyi égetések hőmérsékletén olvasztóanyagként viselkedik, és a fazekasok is annak tekintik. Az 5–6-os gúlán kulcsfontosságú, magas tüzű égetésnél nincs rá szükség. (A gúlákat, amelyekről a fazekasok az égetéseket elnevezik, lejjebb magyarázzuk el.)
+A **bór** (B₂O₃) elmossa a határt. A vegyészek üvegképzőnek sorolják, de a műhelyben használt hőmérsékleten olvasztóanyagként hat, és a fazekasok annak is tekintik. Alacsony és közepes tüzű égetésnél fő olvasztóanyag: minél hűvösebb az égetés, annál több bórra van szüksége a máznak. A 10-es gúlán általában nincs rá szükség. (A gúlákról, amelyekkel a fazekasok az égetést megnevezik, lent lesz szó.)
 
 > [!NOTE]
-> Így könnyű fejben tartani: a szilícium-dioxid az üveg, az olvasztóanyagok teszik lehetővé, hogy olyan hőmérsékleten olvadjon meg, amelyet a kemencéje elér, a timföld pedig sűrűbbé teszi, hogy ott maradjon, ahová felvitte.
+> Egy módja, hogy megjegyezze: a szilícium-dioxid az üveg, az olvasztóanyagok engedik, hogy olyan hőmérsékleten olvadjon meg, amelyet a kemencéje elér, a timföld pedig sűrűbbé teszi, hogy ott maradjon, ahová tette.
 
 ## Agyag, bevonatok és a két égetés {#clay-and-firings}
 
@@ -24,443 +24,457 @@ A **bór** (B₂O₃) elmossa a határt. A vegyészek az üvegképzők közé so
 
 A **massza**{{en: clay body}} az az agyag, amelyből az edény készül. Három fő fajtája van.
 
-- **Fazekasáru**{{en: earthenware}}: alacsony tüzű massza (nagyjából 06–02-es gúla), amely porózus marad. Gyakran vörös vagy drapp színű, és máz kell rá, hogy megtartsa a vizet.
-- **Kőagyag**{{en: stoneware}}: közepes vagy magas tüzű massza (nagyjából 5–10-es gúla), amely teljesen vagy majdnem teljesen tömörre ég.
-- **Porcelán**: fehér, magas tüzű, sok kaolint tartalmazó massza, gyakran áttetsző.
+- **Fazekasáru**{{en: earthenware}}: alacsony tüzű massza, körülbelül 06–02-es gúlára, amely alacsony gúlán porózus, és melegebben égetve tömörebb. Gyakran vörös vagy drapp, és máz kell ahhoz, hogy a vizet megtartsa.
+- **Kőagyag**{{en: stoneware}}: közepes vagy magas tüzű massza, körülbelül 5–10-es gúlára, amely tömörre vagy majdnem tömörre ég.
+- **Porcelán**: kaolinban gazdag fehér massza, gyakran áttetsző. A legtöbb porcelán magas tüzű, de vannak 6-os gúlás porcelánok is.
 
-A **tömörre égett** cserép üveges és nem porózus; a **tömörödés** az, ahogy a massza égetés közben ilyenné válik. A brit fazekasok a határt gyakran inkább a hőmérséklet szerint húzzák meg: a kőagyagot {{2192 °F; 1200 °C}} fölött égetik, a fazekasárut ez alatt. A közepes tüzű égetés, az 5–6-os gúla, éppen e határ két oldalára esik.
+A **tömör**{{en: vitreous}} üveges és nem porózus; a **tömörödés**{{en: vitrification}} az, ahogy a massza égetés közben ilyenné válik. Az Egyesült Királyság fazekasai gyakran inkább hőmérséklet szerint húzzák meg a határt: a kőagyagot {{2192 °F; 1200 °C}} felett, a fazekasárut alatta égetik. A közepes tüzű égetés, az 5–6-os gúla, éppen e határ két oldalára esik.
 
-### Bevonatok és száradás
+### Bevonatok és szárítás
 
-Az **agyagiszap** vízben lebegő agyag, öntéshez, ragasztáshoz vagy díszítéshez. Az **engób** iszapszerű, gyakran színes bevonat, amelyben több a nem agyag nyersanyag. A **mázalatti festék** színes agyagiszap vagy oxidos díszítés, amelyet általában színtelen máz takar.
+Az **agyagiszap**{{en: slip}} vízben eloszlatott agyag, öntéshez, ragasztáshoz vagy díszítéshez. Az **engób**{{en: engobe}} agyagiszapszerű, gyakran színezett bevonat, több nem agyag nyersanyaggal. A **mázalatti festék**{{en: underglaze}} színes agyagiszap vagy oxidos díszítés, amelyet általában színtelen máz fed.
 
-Az égetetlen áru a **nyers áru**{{en: greenware}} (a források nem egységesek abban, hogy a kifejezés minden égetetlen árura vonatkozik-e, vagy csak a száraz árura). Száradás közben először **bőrkemény** lesz: merev, de még kissé nedves, ekkor lehet esztergálni és fület rakni rá; aztán **csontszáraz**: már nincs benne szabad víz, nagyon törékeny, és kész az égetésre.
+Az égetetlen áru a **nyers áru**{{en: greenware}} (a források nem egyeznek abban, hogy a szó minden égetetlen árut jelent-e, vagy csak a száraz árut). Száradás közben **bőrkemény** lesz, merev, de még kissé nedves: ez a fázis az esztergálásra és a fülek felrakására; aztán **csontszáraz**, szabad víz nélkül, nagyon törékeny és égetésre kész.
 
 ### A két égetés
 
-Az első, alacsonyabb hőfokú égetés a **zsengélés**{{en: bisque}} (brit angolul: **biscuit**), általában 08–04-es gúlára (leggyakrabban 06–04-esre), nagyjából {{1728–1945 °F; 942–1063 °C}} hőmérsékleten. Utána az áru erős, de porózus. A Digitalfire, egy mázakkal foglalkozó szakmai oldal, általában 15%-nál nagyobb porozitást javasol, hogy a zsengélt áru felhordáskor kiszívja a vizet a mázból. Az alacsonyabb hőfokon zsengélt áru (08–06-os gúla) porózusabb; a magasabb hőfokon zsengélt (gyakran 04-es gúla) erősebb, de nehezebben veszi fel a mázat.
+Az első, alacsonyabb hőmérsékletű égetés a **zsengélés**{{en: bisque}} (az Egyesült Királyságban **biscuit**), általában 08–04-es gúlára (leggyakrabban 06–04-re), körülbelül {{1728–1945 °F; 942–1063 °C}} hőmérsékleten. Az áru erős, de porózus lesz tőle. A Digitalfire, egy mázakkal foglalkozó szakoldal, általában 15%-nál nagyobb porozitást javasol, hogy a zsengélt áru felszívja a vizet a mázból, amikor az felkerül. Az alacsonyabb hőfokon zsengélt áru (08–06-os gúla) porózusabb; a magasabb hőfokon zsengélt (gyakran 04-es gúla) erősebb, de nehezebben veszi fel a mázat.
 
-Table: A zsengélés hatása a mázazásra (Digitalfire)
-Label: A zsengélés hatása a mázazásra
+Table: Hogyan változtatja meg a zsengélés a mázazást (Digitalfire)
+Label: Hogyan változtatja meg a zsengélés a mázazást
 
-| Zsengélés                                                     | Mi történik                                                                |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Alulégetett, nagyon nedvszívó                                 | A máz túl vastagon kerül fel, aztán megreped és összehúzódik{{en: crawls}} |
-| Túlégetett, tömör                                             | A mártás és a száradás tovább tart                                         |
-| Magasabb hőfokon égetve, vagy hosszabb hőntartással a csúcson | Most több gáz ég ki, így később kevesebb buborékol át a mázon              |
+| Zsengélés                                         | Mi történik                                                  |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| Alulégetett, nagyon nedvszívó                     | A máz túl vastagon kerül fel, aztán megreped és összehúzódik |
+| Túlégetett, tömör                                 | A mártás és a száradás tovább tart                           |
+| Melegebben égetett, vagy tovább tartott a csúcson | Most több gáz ég ki, így később kevesebb bugyog át a mázon   |
 
-A Potclays, egy brit forgalmazó, nagyjából {{1000 °C; 1832 °F}} hőmérsékletű zsengélést ír le, ami körülbelül a 06-os gúlának felel meg. E források együttes figyelembevételével első zsengéléshez a 06–04-es gúlát javasoljuk: {{1828–1945 °F; 998–1063 °C}} az Orton-féle közepes felfűtési sebességnél.
+A Potclays, egy brit forgalmazó, körülbelül {{1000 °C; 1832 °F}}, nagyjából 06-os gúla hőmérsékletű zsengélést ír le. E forrásokat együtt olvasva az első zsengéléshez 06–04-es gúlát javaslunk: {{1828–1945 °F; 998–1063 °C}} az Orton közepes sebességénél.
 
-A **mázas égetés**{{en: glaze firing}} (brit fazekasoknál **glost** firing is lehet a neve) megolvasztja a mázat, kőagyagnál pedig a masszát is tömörre égeti. Az **egyszeri égetés**{{en: once-firing}} során az égetetlen árut mázazzák, és csak egyszer égetik ki. A Digitalfire beszámol egy üzemi esetről, ahol a nyersen mázazott áru peremén összehúzódott a máz, amíg egy zsengélés meg nem oldotta a gondot; ezért kezdje két égetéssel. Az [Égetés egyszerű kemencében](/guides/firing) útmutató mindkettőhöz ad égetési programokat.
+A **mázas égetés**{{en: glaze firing}} (a brit fazekasok **glost** égetésnek is mondják) megolvasztja a mázat, kőagyagnál pedig a masszát is tömörre égeti. Az **egyszeri égetésnél**{{en: once-firing}} az égetetlen árut mázazzák, és csak egyszer égetik. A Digitalfire beszámol egy gyártási esetről, amelyben a nyersen mázazott áru máza a pereméken összehúzódott, amíg egy zsengélés meg nem oldotta, ezért kezdje két égetéssel. Az [Égetés egyszerű kemencében](/guides/firing) című útmutató mindkettőhöz ad égetési programot.
 
 ## Gúlák és felvett hőmennyiség {#cones}
 
-A fazekasok az égetést egy **gúláról**{{en: cone}} nevezik el: ez egy karcsú kerámiapiramis, amely meghajlik, ha meghatározott mennyiségű hőt kapott. Gyártójuk, az Orton, így fogalmaz: „A gúlák nem pusztán a hőmérsékletet mérik. A felvett hőmennyiséget mérik, vagyis az idő és a hőmérséklet együttes hatását.”
+A fazekasok az égetést **gúlával**{{en: cone}} nevezik meg: ez egy karcsú kerámiapiramis, amely meghajlik, amikor bizonyos mennyiségű hőt kapott. Az Orton, amely gyártja őket, idő- és hőmérséklet- (felvett hőmennyiség-) jelzőnek nevezi a gúlákat: az idő és a hőmérséklet együttes hatását mutatják, nem csak a hőmérsékletet.
 
-Ennek oka a **felvett hőmennyiség**{{en: heatwork}}: a máz, az agyag és a gúla is nemcsak arra reagál, mennyire forró, hanem arra is, mennyi ideig az. Lassú égetésnél a gúla alacsonyabb hőmérsékleten hajlik meg, gyors égetésnél magasabbon. Az Orton táblázata szerint a 6-os gúla {{2165 °F; 1185 °C}} hőmérsékleten hajlik meg, ha az égetés végén a hőmérséklet óránként {{27 °F; 15 °C}} értékkel emelkedik, {{2232 °F; 1222 °C}} hőmérsékleten óránként {{108 °F; 60 °C}} emelkedésnél, és {{2269 °F; 1243 °C}} hőmérsékleten óránként {{270 °F; 150 °C}} emelkedésnél; a sebességet az utolsó {{180 °F; 100 °C}} szakaszra számítják. A gúla akkor tekinthető lehajlottnak, ha a csúcsa 90°-kal elhajlott; az Orton ezt 5 órás állásnak nevezi.
+Ennek oka a **felvett hőmennyiség**{{en: heatwork}}: a máz, az agyag és a gúla nemcsak arra reagál, hogy milyen forró, hanem arra is, hogy mennyi ideig forró. Lassú égetésnél a gúla alacsonyabb hőmérsékleten hajlik meg, gyorsnál magasabbon. Az Orton táblázata szerint a 6-os gúla {{2165 °F; 1185 °C}} hőmérsékleten hajlik meg, ha az égetés végén óránként {{27 °F; 15 °C}} az emelkedés, {{2232 °F; 1222 °C}} hőmérsékleten óránként {{108 °F; 60 °C}} mellett, és {{2269 °F; 1243 °C}} hőmérsékleten óránként {{270 °F; 150 °C}} mellett; a sebességet az utolsó {{180 °F; 100 °C}} szakaszon mérik. A gúla akkor van kész, amikor a csúcsa 90°-ot hajlott. A fazekasok ezt gyakran 5 órás állásnak nevezik.
 
-A gúlaszámok 022-től 42-ig terjednek. Az elöl álló nulla az alacsonyabb hőfokú sorozatot jelöli, ahol a nagyobb szám alacsonyabb hőfokot jelent: a 06-os gúla alacsonyabb hőfokú, mint a 04-es, a 01-es pedig alacsonyabb hőfokú, mint az 1-es.
+A gúlaszámok 022-től 42-ig terjednek. A kezdő nulla a hűvösebb sorozatot jelöli, amelyben a nagyobb szám hűvösebb: a 06-os gúla hűvösebb, mint a 04-es, és a 01-es hűvösebb, mint az 1-es.
 
-Table: Égetési tartományok: önálló (állvány nélkül álló) Orton-gúlák, óránként {{108 °F; 60 °C}} felfűtési sebességnél
+Table: Égetési tartományok: önálló Orton-gúlák óránként {{108 °F; 60 °C}} mellett
 Label: Égetési tartományok
 
-| Tartomány     | Gúlák |        °F |        °C | Felhasználás                |
+| Tartomány     | Gúlák |        °F |        °C | Mire használják             |
 | ------------- | ----- | --------: | --------: | --------------------------- |
 | Alacsony tüzű | 06–04 | 1828–1945 |  998–1063 | Fazekasáru mázai; zsengélés |
 | Közepes tüzű  | 5–6   | 2167–2232 | 1186–1222 | Kőagyag és porcelán         |
 | Magas tüzű    | 9–10  | 2300–2345 | 1260–1285 | Kőagyag és porcelán         |
 
 > [!NOTE]
-> Égetéseit gúla szerint nevezze el és programozza, a hőmérsékleteket pedig tekintse közelítő értéknek. Egy **ellenőrző gúla**{{en: witness cone}} az égetőlapon, az edények között, vagy egy háromtagú **gúlasor**{{en: cone pack}} (a célnál eggyel alacsonyabb hőfokú előjelző gúla, a célgúla és a célnál eggyel magasabb hőfokú őrgúla) megmutatja, mennyi hőt vettek fel valójában az edényei.
+> Az égetéseit gúla szerint nevezze meg és programozza, a hőmérsékleteket pedig tekintse közelítőnek. Egy **ellenőrző gúla**{{en: witness cone}} a polcon, az áru mellett, vagy egy három gúlából (előjelző gúla, célgúla és őrgúla) álló **gúlasor**{{en: cone pack}} megmutatja, mennyi hőt kapott valójában az áru.
 
-A közölt hőmérsékletek eltérnek egymástól. A Glazy a magas tüzű égetést, a 9–11-es gúlát nagyjából {{2336–2390 °F; 1280–1310 °C}} tartományra teszi, ami az Orton-táblázat gyors oszlopának felel meg, a Digitalfire pedig azt írja, hogy a legtöbb kemence nagyjából {{2200 °F; 1204 °C}} hőmérsékleten éri el a 6-os gúlát. Tanácsunk: használja az Orton közepes felfűtési sebességhez tartozó értékeit, ahogy ez az útmutató is teszi, gúla szerint programozzon, és a döntő szót bízza egy ellenőrző gúlára.
+A közzétett hőmérsékletek eltérnek. A Glazy a magas tüzű égetést, a 9–11-es gúlát, körülbelül {{2336–2390 °F; 1280–1310 °C}} értékkel adja meg, ami az Orton gyors oszlopának felel meg, a Digitalfire pedig a 6-os gúlát körülbelül {{2200 °F; 1204 °C}} értékkel. A mi tanácsunk: használja az Orton közepes sebességhez tartozó értékeit, ahogy ez az útmutató is, programozzon gúla szerint, és döntsön az ellenőrző gúla.
 
-Észak-Amerikán kívül a forgalmazók gyakran °C-ban adják meg az égetést, nem gúlával. A modern gúlát Hermann Seger fejlesztette ki, először 1886-ban használták Berlinben, az Egyesült Királyságnak pedig saját Staffordshire-gúlái voltak; ezek számairól nem kellene feltételezni, hogy megegyeznek az Orton-gúlákéval, és átváltó táblázatot sem találtunk. Az [Égetés egyszerű kemencében](/guides/firing) útmutató részletesebben foglalkozik a gúlákkal.
+Észak-Amerikán kívül a forgalmazók gyakran °C-ot adnak meg gúla helyett. A mai gúlát Hermann Seger fejlesztette ki, először 1886-ban használták Berlinben, és az Egyesült Királyságnak saját Staffordshire-gúlái voltak; nem kellene feltételezni, hogy a számaik megegyeznek az Ortonéival, és nem találtunk táblázatot az átszámításukra. Az [Égetés egyszerű kemencében](/guides/firing) című útmutató részletesebben foglalkozik a gúlákkal.
 
 ## A recepttől a Seger-képletig {#unity-formula}
 
-A **recept**{{en: batch recipe}} tömeg szerint sorolja fel a nyersanyagokat, általában úgy átszámítva, hogy az alapmáz összege 100 legyen. Az **adalékok** (színezőanyagok{{en: colorants}}, zavarosítók és lebegtetők) a 100-on felül kerülnek bele, általában az alapmáz százalékában. Hogy lássák, valójában mi a máz, a fazekasok a receptet **Seger-képletre** (**UMF**){{en: unity molecular formula}} számítják át, amely Hermann Seger nevét viseli, mert ő használta elsőként a háromoszlopos elrendezését.
+A **recept**{{en: batch recipe}} a nyersanyagokat tömeg szerint sorolja fel, általában úgy átszámítva, hogy az alapmáz összege 100 legyen. Az **adalékok**{{en: additives}} (színezőanyagok, zavarosítók és lebegtetők) a 100-on felül kerülnek bele, általában az alapmáz százalékában. Hogy lássák, mi a máz, a fazekasok a receptet **Seger-képletté**{{en: unity molecular formula}} (**UMF**, Hermann Seger nevéről, aki először használta a három oszlopos elrendezését) alakítják.
 
 Table: A recepttől a Seger-képletig: a Glazy kidolgozott példája
 Label: A recepttől a Seger-képletig
 
-| Lépés                | Mi történik                                                                                                                                  | A példában                                                                                                                                                                      |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Recept            | Nyersanyagok tömeg szerint, 100-ra átszámítva                                                                                                | Többek között 40% földpát                                                                                                                                                       |
-| 2. Oxidos összetétel | Mint egy tápértéktáblázat: a nyersanyagok oxidjait tömegszázalékban összeadják, a gázokat elhagyják                                          | A földpát 64,8% szilícium-dioxidot{{en: silica}} tartalmaz, így a 40% földpátból 25,9% SiO₂ származik. Az égetett máz összetétele: 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
-| 3. Mól               | A tömegekből **mól** lesz, vagyis a molekulák száma, hiszen „a grammokban számolás félrevezető lehet, mert egyes oxidok nehezebbek másoknál” | 60,1 g SiO₂ egy mól, így 67,4 g nagyjából 1,12 mól                                                                                                                              |
-| 4. Egységre számítás | Mindent elosztanak az olvasztóanyagok összegével, így az olvasztóanyagok összege 1 lesz                                                      | Az olvasztóanyagok összege 0,303; az osztás után K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                                      |
+| Lépés                | Mi történik                                                                                                                              | A példában                                                                                                                      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Recept            | Nyersanyagok tömeg szerint, 100-ra átszámítva                                                                                            | Többek között 40% földpát                                                                                                       |
+| 2. Oxidos összetétel | Mint egy tápértékcímke: az egyes nyersanyagok oxidjait tömegszázalékban összeadják, a gázokat elhagyják                                  | A földpát 64,8%-a szilícium-dioxid, így a 40%-a 25,9% SiO₂-ot hoz. A kiégetett máz 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
+| 3. Mólok             | A tömegekből **mólok**, vagyis molekulaszámok lesznek, mert „a grammok félrevezetők lehetnek, hiszen egyes oxidok nehezebbek a többinél” | 60,1 g SiO₂ egy mól, így 67,4 g körülbelül 1,12 mól                                                                             |
+| 4. Egységre számítás | Mindent elosztanak az olvasztóanyagok összegével, így az olvasztóanyagok összege 1                                                       | Az olvasztóanyagok összege 0,303; az osztás után K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                      |
 
-A Glazecalc [receptoldala](/recipe) gépelés közben mind a négy lépést elvégzi, és az eredményt három oszlopban mutatja: az olvasztóanyagok{{en: fluxes}} (R₂O és RO), amelyek összege 1; a stabilizálók{{en: stabilizers}} (R₂O₃: timföld, gyakran ide sorolva a bórt is); és az üvegképzők{{en: glass formers}} (RO₂: szilícium-dioxid). „Az egységre számítás csak egy átszámítási eszköz” – írja a Glazy: két recept, amely különböző nyersanyagokból készül, de azonos a Seger-képlete, „égetés után szinte azonosan viselkedik”. Az 1 tehát közös mérce, nem lemérendő mennyiség. A Digitalfire hozzáteszi, hogy a módszer „alacsonyabb hőmérsékleten kevésbé jól működik”, ahol a bór nem egyszerű olvasztóanyag, és hogy a Seger-képletek „összehasonlításra valók, és összefüggésükben érdemes nézni őket”. Az **Összehasonlítás** funkció két recept képletét oxidról oxidra egymás mellé állítja.
+A Glazecalc [receptoldala](/recipe) gépelés közben elvégzi mind a négy lépést, és az eredményt három oszlopban mutatja: az olvasztóanyagok (R₂O és RO), amelyek összege 1; a stabilizálók (R₂O₃: timföld, és gyakran ide sorolják a bórt is); és az üvegképzők (RO₂: szilícium-dioxid). „Az egységre számítás csak egy léptékező eszköz” – írja a Glazy: két recept, amely más nyersanyagokból készül, de azonos a Seger-képlete, „kiégetve szinte azonosan viselkedik”. Az 1 tehát közös mérce, nem lemérendő mennyiség. A Digitalfire hozzáteszi, hogy a módszer „alacsonyabb hőmérsékleten nem működik olyan jól”, ahol a bór nem egyszerű olvasztóanyag, és hogy a Seger-képletek „összehasonlító jellegűek, és összefüggésükben érdemes őket nézni”. Az **Összehasonlítás** két recept képletét oxidról oxidra egymás mellé állítja.
 
-### A szilícium-dioxid és a timföld aránya
+### A SiO₂ : Al₂O₃ arány
 
-A leghasznosabb egyetlen szám a **szilícium-dioxid és a timföld aránya** (SiO₂ : Al₂O₃){{en: silica to alumina ratio}}: a szilícium-dioxid osztva a timfölddel. A példában 3,70 ÷ 0,41 nagyjából 9.
+A leghasznosabb egyetlen szám a **SiO₂ : Al₂O₃ arány**{{en: silica to alumina ratio}}: a szilícium-dioxid osztva a timfölddel. A példában 3,70 ÷ 0,41 körülbelül 9.
 
-Table: Mit jelez a SiO₂ : Al₂O₃ arány (Glazy)
+Table: Mire utal a SiO₂ : Al₂O₃ arány (Glazy)
 Label: SiO₂ : Al₂O₃ arány
 
-|       Arány | A Glazy értelmezése                 |
-| ----------: | ----------------------------------- |
-| Nagyjából 9 | Fényes olvadékra utal, ha elég a hő |
-|         5–7 | Sok stabil kőagyagmázra jellemző    |
-|         3–5 | Matt vagy alulégetett lehet         |
+|        Arány | A Glazy értelmezése                 |
+| -----------: | ----------------------------------- |
+| Körülbelül 9 | Fényes olvadékra utal, ha elég a hő |
+|          5–7 | Sok stabil kőagyagmázra jellemző    |
+|          3–5 | Lehet matt vagy alulégetett         |
 
-Az 5–7-es arány önmagában sem fényes, sem matt felületet nem jelez előre: az olvasztóanyagok, a bór és a gúla is eltolja a határt. A Glazy szerint a stabil mázakban az olvasztóanyagok szokásos aránya 0,2 R₂O és 0,8 RO, legfeljebb 0,3 R₂O és 0,7 RO. Több alkália hígfolyósabbá teszi az olvadékot, és növeli a hőtágulását{{en: expansion}}, így a hajszálrepedés{{en: crazing}} kockázatát is.
+A Glazy nem mondja meg, melyik gúlára vonatkoznak ezek a számok. Tekintse őket durva útmutatásnak kőagyagmázakhoz, körülbelül 6–10-es gúlára. A Digitalfire szerint a körülbelül 8 feletti arány valószínűleg fényes, de egy bórtartalmú máz 8-nál vagy kevesebbnél is lehet fényes, egy alacsony tüzű pedig akár 6-nál is. Az 5–7-es arány önmagában sem fényességet, sem mattságot nem jelez előre: az olvasztóanyagok, a bór és a gúla mind eltolják a határt. A Glazy a stabil mázak olvasztóanyag-arányára tipikusan 0,2 R₂O és 0,8 RO, legfeljebb 0,3 R₂O és 0,7 RO értéket ad meg. A több alkália hígfolyósabbá teszi az olvadékot, és növeli a hőtágulását, így a hajszálrepedés kockázatát is.
 
 ### Izzítási veszteség
 
-Az **izzítási veszteség** (**LOI**){{en: loss on ignition}} az a tömeg, amelyet egy nyersanyag a kemencében elveszít, amikor víz, szén-dioxid, szerves anyagok vagy kén gázként távoznak belőle. Az égetett mázban már nincs ilyen, ezért a Seger-képlet nem számol vele.
+Az **izzítási veszteség**{{en: loss on ignition}} (**LOI**) az a tömeg, amelyet egy nyersanyag a kemencében elveszít, amikor víz, szén-dioxid, szerves anyag vagy kén gázként távozik belőle. A kiégetett mázban ilyen nincs, ezért a Seger-képlet nem számol vele.
 
-Table: Szokásos izzítási veszteség (Digitalfire)
+Table: Tipikus izzítási veszteség (Digitalfire)
 Label: Izzítási veszteség
 
-| Nyersanyag                              | Szokásos LOI                                                                 |
-| --------------------------------------- | ---------------------------------------------------------------------------- |
-| Mészkőliszt (kalcium-karbonát), dolomit | Több mint 40%, főleg szén-dioxid: 100 g kalcium-karbonátból kb. 45 g távozik |
-| Lítium-karbonát                         | Kb. 60%                                                                      |
-| Bárium-karbonát, Gerstley Borate        | Több mint 20%                                                                |
-| Kaolin                                  | Kb. 12%, főleg a kristályaiban kötött víz                                    |
-| Földpátok                               | 1% alatt                                                                     |
+| Nyersanyag                              | Tipikus LOI                                                                     |
+| --------------------------------------- | ------------------------------------------------------------------------------- |
+| Mészkőliszt (kalcium-karbonát), dolomit | 40% felett, főként szén-dioxid: 100 g kalcium-karbonát körülbelül 44 g-ot ad le |
+| Lítium-karbonát                         | Körülbelül 60%                                                                  |
+| Bárium-karbonát, Gerstley Borate        | 20% felett                                                                      |
+| Kaolin                                  | Körülbelül 12–14%, főként a kristályaiban kötött víz                            |
+| Földpátok                               | 1% alatt                                                                        |
 
-Az a gáz, amely a máz olvadásának megkezdése után távozik, kénytelen átbuborékolni rajta, és a Digitalfire szavaival „buborékokat, hólyagokat, tűszúrásokat, összehúzódást” okoz. A talkum nagyjából {{1650 °F; 899 °C}} hőmérsékletig ad le gázt. Segítenek a frittek{{en: frits}}, a **kalcinált** nyersanyagok (amelyekből előzetes hevítéssel kiűzték a gázokat) és az égetés módosításai is.
+A gáznak, amely azután távozik, hogy a máz olvadni kezdett, át kell bugyognia rajta, és a Digitalfire szavaival „buborékokat, hólyagokat, tűszúrásokat, összehúzódást” okoz. Egy Digitalfire-kísérletben a talkum körülbelül {{1650 °F; 899 °C}} hőmérsékletig adott le gázt. A frittek, a **kalcinált**{{en: calcined}} nyersanyagok (amelyekből előzetes hevítéssel kiűzték a gázokat) és az égetés módosítása mind segít.
 
-A régebbi könyvek ezt a számítást kézzel végzik, a **moláris tömeg** (egy nyersanyag vagy oxid egy móljának tömege) és az **egyenértéktömeg** (egy nyersanyagnak az a tömege, amely egy mól oxidot ad) segítségével. Számításunk szerint nagyjából 100 g mészkőliszt ad egy mól, azaz 56 g kalcium-oxidot. Egy kalkulátor mindkettőt elvégzi.
+A régebbi könyvek ezt a számítást kézzel végzik, a **moláris tömeggel**{{en: molecular weight}} (egy nyersanyag vagy oxid egy móljának tömege) és az **egyenértéktömeggel**{{en: equivalent weight}} (a nyersanyagnak az a tömege, amely egy mól oxidot ad). A mi számításunk szerint körülbelül 100 g mészkőliszt ad egy mól, azaz 56 g kalcium-oxidot. A kalkulátor mindkettőt elvégzi.
+
+## Határok és a Stull-diagram {#stull-chart}
+
+A **Stull-diagram**{{en: Stull chart}} a mázak térképe. Két tengelye van, mindkettő a Seger-képletből: alul vízszintesen a szilícium-dioxid (SiO₂), oldalt függőlegesen a timföld (Al₂O₃). Minden máz egy pont. A térkép tartományokra oszlik, például matt, fényes, alulégetett és hajszálrepedezett. A Glazecalc [receptoldala](/recipe) berajzolja rá az Ön mázát.
+
+::stull-chart
+
+R. T. Stull 1912-ben közzétett kísérleteiből készítette a diagramot. Körülbelül 11-es gúlán égette őket, és minden próbában ugyanazok voltak az olvasztóanyagok: 0,3 kálium-oxid (K₂O) és 0,7 kalcium-oxid (CaO). Csak a szilícium-dioxid és a timföld változott. A diagram tehát ezekre a mázakra és erre a hőfokra igaz.
+
+Az Ön máza valószínűleg más. A bór, más olvasztóanyagok és az alacsonyabb gúlák mind eltolják a tartományokat. 2025-ben a Ceramics Monthly egyik cikke egy borátokkal olvasztott, sok vasat tartalmazó, 6-os gúlás mázat vizsgált. A diagram hajszálrepedezettnek, mattnak és alulégetettnek mutatta. Valójában teljesen kiolvadt, selyemfényű volt, és nem hajszálrepedezett. A szerzők szerint a borátos mázak nem helyezhetők el jól a diagramon. Ezért a tartományokat útmutatásnak tekintse, ne előrejelzésnek.
+
+A **hajszálrepedezett** tartomány ott van, ahol Stull saját próbái hajszálrepedeztek, az ő masszáján. Nem mondja meg, hogyan illeszkedik az Ön máza az Ön masszájához. A hajszálrepedés a máz és a massza hőtágulásától egyaránt függ. A Glazecalc hőtágulási értéke segít összehasonlítani a mázakat, a döntést pedig egy valódi próba hozza meg: a jeges vizes próba a [Máz illeszkedése és mázhibák](/guides/glazing-basics#fit-and-defects) részben.
+
+A **határképletek**{{en: limit formulas}} más eszközt kínálnak ugyanarra a kérdésre: a szilícium-dioxid, a timföld és az olvasztóanyagok tartományait a stabil mázakban egy adott gúlán. Az [Élelmiszer-biztonság](/guides/glazing-basics#food-safety) rész elmagyarázza őket, és azt is, miért nem bizonyítanak önmagukban semmit.
 
 ## Frittek és nyersanyagok {#materials}
 
 ### Frittek
 
-A **fritt**{{en: frit}} gyárban készült üveg: ásványokat olvasztanak meg, vízben hirtelen lehűtik, majd megőrlik. A frittelés az oldható anyagokat, például a bóraxot, oldhatatlanná teszi, a mérgező oxidokat, például az ólmot és a báriumot, stabil üvegbe zárja, egyenletesebb anyagot ad, mint a nyers ásványok, és kiűzi a gázokat, így a frittelt mázak „sokkal hibamentesebbek” (Digitalfire). A frittek korán is olvadnak: egy nátriumos fritt már a 06-os gúlán aktív, míg a földpát{{en: feldspar}} „a 6-os gúlán még csak lágyulni kezd”. Drágábbak, agyag kell melléjük, hogy lebegésben maradjanak (a Digitalfire példájában 85% fritt és 15% agyag), és „elméletileg oldhatatlanok, a gyakorlatban azonban nem azok”.
+A **fritt**{{en: frit}} gyárban készült üveg: megolvasztott, vízben lehűtött és megőrölt ásványok. A frittelés oldhatatlanná teszi az olyan vízben oldódó nyersanyagokat, mint a bórax, stabil üvegbe zárja az olyan mérgező oxidokat, mint az ólom és a bárium, a nyers ásványoknál egyenletesebb nyersanyagot ad, és kiűzi a gázokat, így a frittelt mázak „sokkal kevésbé hibásak” (Digitalfire). A frittek korán is olvadnak: egy nátriumfritt már a 06-os gúlán hat, míg a földpát „a 6-os gúlán még csak kezd lágyulni”. Drágábbak, agyag kell nekik ahhoz, hogy lebegésben maradjanak (a Digitalfire példájában 85% fritt és 15% agyag), és „elméletben oldhatatlanok, a gyakorlatban azonban nem”.
 
-Az észak-amerikai frittek gyártó és szám szerint ismertek: a Ferro Frit 3134 (a Ferro ma Vibrantz néven működik) a Glazy nyilvános receptjeinek nagyjából 22%-ában szerepel. A brit receptek gyakrabban neveznek meg általános frittfajtákat, például a standard boraxfrittet.
+Az észak-amerikai fritteket gyártó és szám szerint nevezik meg: a Ferro Frit 3134 (a Ferro ma Vibrantz) Észak-Amerika egyik leggyakrabban használt frittje. A brit receptek gyakrabban neveznek meg általános fritteket, például a szokásos boraxfrittet.
 
-### A gyakori nyersanyagok
+### A szokásos nyersanyagok
 
-Table: Gyakori máznyersanyagok és amit a mázba visznek
-Label: Gyakori máznyersanyagok
+Table: Szokásos máznyersanyagok, és amit adnak
+Label: Szokásos máznyersanyagok
 
-| Nyersanyag (más nevei)                                              | Mit ad                      | Megjegyzés                                                                                                                                                                                        |
-| ------------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarcliszt{{en: silica}} (kovakő{{en: flint}}, kvarc)               | SiO₂                        | Mázba 325 mesh-es, nagyon finom őrlésűt használjon                                                                                                                                                |
-| Kaolin (brit nevén: China clay; Ausztráliában: Eckalite)            | Al₂O₃, SiO₂                 | A fő timföldforrás; a mázat is lebegésben tartja                                                                                                                                                  |
-| Ball clay                                                           | Al₂O₃, SiO₂                 | Képlékenyebb, mint a kaolin, több benne a vas és a szerves anyag                                                                                                                                  |
-| Káliföldpát, nátronföldpát, nefelinszienit{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂      | Olvasztóanyagok, saját timfölddel és szilícium-dioxiddal. A nefelinszienit erős olvasztóanyag alacsony és közepes tüzű égetéshez. Egy régi receptben az egyszerű „földpát” bármelyiket jelentheti |
-| Mészkőliszt{{en: whiting}} (kalcium-karbonát)                       | CaO                         | A fő kalciumos olvasztóanyag; szén-dioxidot ad le                                                                                                                                                 |
-| Wollastonit                                                         | CaO, SiO₂                   | Kalcium, szén-dioxid nélkül                                                                                                                                                                       |
-| Dolomit, talkum                                                     | MgO, mellette CaO vagy SiO₂ | Selymes matt felület; kisebb hőtágulás                                                                                                                                                            |
-| Cink-oxid                                                           | ZnO                         | Fényes felület és kristályok; a túl sok összehúzódást{{en: crawling}} okozhat                                                                                                                     |
-| Bórfrittek, Gerstley Borate, kolemanit                              | B₂O₃                        | A 06-os és a 6-os gúla között nélkülözhetetlen; a frittek „egyenletesebbek és kevésbé oldódók, mint a nyers borátok”                                                                              |
-| Lítium-karbonát                                                     | Li₂O                        | Alacsony hőtágulású olvasztóanyag; drága, ezért takarékosan használják                                                                                                                            |
-| Stroncium-karbonát                                                  | SrO                         | A bárium kevésbé mérgező helyettesítője                                                                                                                                                           |
-| Bárium-karbonát                                                     | BaO                         | Nyers formában mérgező; a sok báriumot tartalmazó mázakból kioldódhat{{en: leach}}                                                                                                                |
-| Bentonit                                                            | Lebegtetés                  | Nagyon finom agyag, általában 1–3%-ban, hogy a máz ne ülepedjen le                                                                                                                                |
+| Nyersanyag (más nevei)                       | Amit ad                    | Megjegyzés                                                                                                                                                                            |
+| -------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kvarc (flint, kvarcliszt)                    | SiO₂                       | Mázakhoz 325 mesh-es, nagyon finom őrlést használjon                                                                                                                                  |
+| Kaolin (az Egyesült Királyságban China clay) | Al₂O₃, SiO₂                | A fő timföldforrás; abban is segít, hogy a máz ne ülepedjen le                                                                                                                        |
+| Ball clay                                    | Al₂O₃, SiO₂                | Képlékenyebb a kaolinnál, több vassal és szerves anyaggal                                                                                                                             |
+| Káliföldpát, nátronföldpát, nefelinszienit   | K₂O, Na₂O, Al₂O₃, SiO₂     | Olvasztóanyagok saját timfölddel és szilícium-dioxiddal. A nefelinszienit erős alacsony és közepes tüzű olvasztóanyag. Egy régi recept puszta „feldspar” szava bármelyiket jelentheti |
+| Mészkőliszt (kalcium-karbonát)               | CaO                        | A fő kalciumos olvasztóanyag; szén-dioxidot ad le                                                                                                                                     |
+| Wollastonit                                  | CaO, SiO₂                  | Kalcium szén-dioxid nélkül                                                                                                                                                            |
+| Dolomit, talkum                              | MgO, CaO-dal vagy SiO₂-dal | Selymes matt felületek; kisebb hőtágulás                                                                                                                                              |
+| Cink-oxid                                    | ZnO                        | Fényesség és kristályok; túl sok összehúzódást okozhat                                                                                                                                |
+| Bórfrittek, Gerstley Borate, kolemanit       | B₂O₃                       | A 06-os gúlától a 6-osig nélkülözhetetlen; a frittek „egyenletesebb minőségűek, és kevésbé oldódnak, mint a nyers borátok”                                                            |
+| Lítium-karbonát                              | Li₂O                       | Kis hőtágulású olvasztóanyag; drága, ezért takarékosan használják                                                                                                                     |
+| Stroncium-karbonát                           | SrO                        | A báriumnál kevésbé mérgező helyettesítője                                                                                                                                            |
+| Bárium-karbonát                              | BaO                        | Nyers formájában mérgező; a sok báriumot tartalmazó mázakból kioldódhat                                                                                                               |
+| Bentonit                                     | Lebegtetés                 | Nagyon finom agyag, általában 1–2%, hogy ne ülepedjen le. 3% felett száradáskor megrepesztheti a mázat                                                                                |
 
 > [!WARNING]
-> A máznyersanyagok finom porok. A szilícium-dioxid pora eleinte tünetek nélkül károsítja a tüdőt, és egyes nyersanyagok, például a bárium-karbonát és a lítium-karbonát, lenyelve mérgezők. Óvatosan bánjon a porokkal, nedvesen takarítson, és száraz munkánál viseljen megfelelően illeszkedő légzésvédő maszkot. A [Biztonságos keverés és szellőzés](/guides/safe-mixing) és a [Ne mérgezze meg a családját](/guides/home-safety) útmutató elmagyarázza, hogyan.
+> A máznyersanyagok finom porok. A kvarcpor eleinte tünetek nélkül károsítja a tüdőt, és egyes nyersanyagok, például a bárium-karbonát és a lítium-karbonát, lenyelve mérgezők. A porokkal bánjon óvatosan, nedvesen takarítson, és száraz munkánál viseljen jól illeszkedő légzésvédő maszkot. A [Biztonságos keverés és szellőzés](/guides/safe-mixing) és a [Ne mérgezze meg a családját](/guides/home-safety) című útmutató elmondja, hogyan.
 
 ### Helyi elnevezések
 
-- A **kaolin** az Egyesült Királyságban **China clay**; az ausztrál forgalmazók Eckalite néven árulják.
-- A **kovakő** (angolul flint) a szilícium-dioxid régebbi brit neve. A brit forgalmazók ma is külön termékként árulják a **kalcinált kovakövet**, így ha egy brit receptben „flint” szerepel, az valószínűleg kalcinált kovakő, egy amerikaiban pedig valószínűleg őrölt kvarc. Mindkettőt szilícium-dioxid-forrásként árulják; nézze meg a kémiai összetételüket.
-- A **China stone** és a **Cornish stone** (Cornwall stone) ugyanaz az anyag, egy földpáttal rokon cornwalli kőzet.
-- A **mészkőliszt** kalcium-karbonát; a német forgalmazók Kreide (kréta) néven árulják.
+- A **kaolin** az Egyesült Királyságban **China clay**. Ausztráliában az Eckalite a kaolin egyik márkája.
+- A **flint** (kovakő) a kvarc régebbi brit neve. A brit forgalmazók a **kalcinált kovakövet** ma is külön termékként árulják, így egy brit recept „flint” szava valószínűleg kalcinált kovakövet jelent, egy amerikaié pedig valószínűleg kvarclisztet. Mindkettőt szilícium-dioxid-forrásként árulják; nézze meg az összetételét.
+- A **China stone** és a **Cornish stone** (Cornwall stone) ugyanaz a nyersanyag, egy földpáttal rokon cornwalli kőzet.
+- A **mészkőliszt**{{en: whiting}} kalcium-karbonát, őrölt kréta vagy mészkő.
 
 > [!NOTE]
-> Egy nyersanyagot az általa bevitt oxidok alapján ítéljen meg, ne a neve alapján. A Glazecalc is így működik: a forgalmazója által megadott összetételt beírhatja a [Nyersanyagok oldalon](/material), a **Mai nyersanyagok kipróbálása és összehasonlítás**, a **Mennyiségjavaslat és összehasonlítás** és az **Összeállítás a meglévő nyersanyagaimból** funkció pedig mind az égetés utáni oxidok alapján keres egyezést, nem a nevek alapján.
+> Egy nyersanyagot az általa adott oxidok szerint ítéljen meg, ne a neve szerint. A Glazecalc is így működik: a [Nyersanyagok oldalon](/material) megadhatja a forgalmazója összetételét, és a **Próba mai nyersanyagokkal és összehasonlítás**, a **Mennyiségjavaslat és összehasonlítás**, valamint az **Összeállítás a meglévő nyersanyagaimból** mind a kiégetett oxidokat illeszti, nem a neveket.
 
-A nyersanyagok is változnak. A Custer földpát gyártása 2023-ban megszűnt. Az eredeti Gerstley Borate bányát 1999–2000 körül bezárták; a Laguna ma is árul ezen a néven egy terméket, a fő helyettesítő pedig a Gillespie Borate. A források nem egységesek abban, hogy a Gillespie fontra azonos mennyiségben helyettesítheti-e a Gerstley Borate nevű terméket (a gyártója és a Potclays szerint igen, a Digitalfire és mások szerint nem), ezért hasonlítsa össze a kettőt a Glazecalc segítségével, aztán próbáljon ki egy kis adagot.
+A nyersanyagok változnak is. Az Egyesült Államok Földtani Intézete (USGS) szerint a dél-dakotai Custer földpátot előállító bányák és üzem 2023 novemberében felfüggesztették a működésüket. Az eredeti Gerstley Borate bánya 1999–2000 körül bezárt; a Laguna ma is árul ilyen nevű terméket, a fő helyettesítő pedig a Gillespie Borate. A források nem értenek egyet abban, hogy a Gillespie azonos tömegben helyettesíti-e a Gerstley Borate-ot (a gyártója és a Potclays szerint igen, a Digitalfire és mások szerint nem), ezért hasonlítsa össze a kettőt a Glazecalcban, aztán próbáljon ki egy kis adagot.
 
 ## Színezőanyagok és zavarosítók {#color}
 
-A **színezőanyag**{{en: colorant}} olyan fém-oxid vagy fém-karbonát, amely színezi a mázat; a **színtest**{{en: stain}} gyárilag készült színezőanyag, amely stabilabb és egyenletesebb, mint a nyers oxidok. A színezőanyagok általában az alapmáz 5%-ánál kevesebbet tesznek ki, sokuk 1%-nál is kevesebbet, és a karbonát nagyjából feleannyira erős, mint a megfelelő oxid.
+A **színezőanyag**{{en: colorant}} fém-oxid vagy fém-karbonát, amely a mázat színezi; a **színtest**{{en: stain}} gyárban készült színezőanyag, stabilabb és egyenletesebb a nyers oxidoknál. A színezőanyagok általában az alapmáz 5%-a alatt maradnak, sokuk 1% alatt, és a karbonát gyengébb a megfelelő oxidnál, mert egy része gázként távozik. A mi számításunk szerint 100 g kobalt-karbonát körülbelül 63 g kobalt-oxidot ad, és 100 g abból a réz-karbonátból, amelyet a fazekasok vásárolnak (bázisos réz-karbonát), körülbelül 72 g réz-oxidot. Ezért az oxidnál körülbelül 1,4–1,6-szor több karbonátot használjon.
 
-Table: Gyakori színezőanyagok, az alapmáz százalékában
-Label: Gyakori színezőanyagok
+Table: Szokásos színezőanyagok, az alapmáz százalékában
+Label: Szokásos színezőanyagok
 
-| Színezőanyag            | Szokásos kiinduló mennyiség              | Színek és megjegyzések                                                                                                                                  |
-| ----------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalt                  | 0,1–2% (a források eltérnek)             | Kék, nagyon erős; lila felé hajlik, ha az alapmázban magnézium van                                                                                      |
-| Vas                     | 0,5–10%                                  | Oxidáló égetésben barnák, sárgásbarnák és vörösek; redukcióban ½–2% szeladont, 5–6% tenmokut ad. Olvasztóanyag, ezért ha sok van belőle, a máz lefolyik |
-| Réz                     | 1–3%                                     | Oxidáló égetésben zöld vagy türkiz, redukcióban vörös. Kioldódást okozhat a mázból                                                                      |
-| Króm                    | 0,5% alattól 2%-ig (a források eltérnek) | Zöld; barna, ha az alapmázban cink van, ónnal rózsaszín                                                                                                 |
-| Mangán                  | 2–10%                                    | Barnák és lilák                                                                                                                                         |
-| Rutil                   | Kb. 2–5%                                 | Foltos, tarka szín; kb. 5% fölött érdes vagy matt                                                                                                       |
-| Kereskedelmi színtestek | 2–12%                                    | 2–4% halvány árnyalatokhoz, 5–8% közepes tónusokhoz, 10–12% erős színekhez                                                                              |
+| Színezőanyag            | Szokásos kiinduló mennyiség         | Színek és megjegyzések                                                                                                                  |
+| ----------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalt                  | 0,1–2% (a források eltérnek)        | Kék, és nagyon erős; magnéziumos alapmázban a lila felé hajlik                                                                          |
+| Vas                     | 0,5–10%                             | Oxidáló égetésnél barnák, drappok és vörösek; redukciónál ½–2% szeladont, 5–10% tenmokut ad. Olvasztóanyag, ezért sokból a máz lefolyik |
+| Réz                     | 1–3%                                | Oxidáló égetésnél zöld vagy türkiz, redukciónál vörös. Kioldhatóvá teheti a mázat                                                       |
+| Króm                    | 0,5% alatt–2% (a források eltérnek) | Zöld; barna, ha az alapmázban cink van, rózsaszín ónnal                                                                                 |
+| Mangán                  | 2–10%                               | Barnák és lilák                                                                                                                         |
+| Rutil                   | Körülbelül 2–5%                     | Foltos, tarka szín; körülbelül 5% felett érdes vagy matt                                                                                |
+| Kereskedelmi színtestek | 2–12%                               | 2–4% árnyalatokhoz, 5–8% tónusokhoz, 10–12% erős színekhez                                                                              |
 
-A kobalt és a króm mennyiségéről valóban megoszlanak a vélemények. A Glazy szerint 0,1% kobalt elég egy kékhez; a Glendale Community College az atmoszférától függően ½–2%-ot vagy ½–3%-ot ad meg; Birdie Boone a Pottery Making Illustrated lapban 3%-ot vagy kevesebbet ír. Krómból Boone 0,5%-nál kevesebbet, a Glendale 2–3%-ot ír. A biztos út, ha alacsonyan kezdi, és **próbasort**{{en: line blend}} készít: próbalapok{{en: test tiles}} sorát, amelyeken egyetlen összetevő mennyisége lépésről lépésre nő a kevéstől a sokig.
+A kobalt és a króm mennyiségéről valóban vita van. A Glazy szerint 0,1% kobalt elég egy kékhez; a Glendale Community College az atmoszférától függően ½–2%-ot vagy ½–3%-ot ad meg; Birdie Boone a Pottery Making Illustrated lapban 3%-ot vagy kevesebbet mond. A krómra Boone 0,5% alatti, a Glendale 2–3%-os mennyiséget ad meg. A biztonságos út az, ha kevéssel kezd, és **próbasort**{{en: line blend}} készít: próbalapok sorát, amelyen egy összetevő kevéstől sokig lépésenként nő.
 
-Az alapmáz megváltoztatja a színt. A fényes, átlátszó alapmáz adja a legélénkebb színt; a selyemfényű és a matt alapmázak, amelyekben általában több a timföld, tompítják. A magnézium a kobaltot a lila felé tolja, a cink a krómot barnává teszi, a króm pedig ónnal rózsaszínt ad.
+Az alapmáz megváltoztatja a színt. A fényes, átlátszó alapmáz adja a legélénkebb színt; a selyemfényű és a matt alapmázak, amelyekben általában több a timföld, tompítják. A magnézium a kobaltot a lila felé tolja, a cink a krómot barnává teszi, a króm ónnal pedig rózsaszínt ad.
 
 ### Zavarosítók
 
-A **zavarosító** **fedővé** (opakká) teszi a mázat, így eltakarja az agyagot; az **átlátszó** máz alatt látszik az agyag.
+A **zavarosító**{{en: opacifier}} **fedővé**{{en: opaque}} teszi a mázat, eltakarva az agyagot; az **átlátszó**{{en: transparent}} máz láttatni engedi.
 
 Table: Zavarosítók
 
-| Zavarosító                                             | Szokásos mennyiség          | Megjegyzések                                                                              |
-| ------------------------------------------------------ | --------------------------- | ----------------------------------------------------------------------------------------- |
-| Cirkon-szilikát (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% a teljes fedéshez     | Az olcsóbb választás; a márkák ugyanazt az anyagot jelentik, különböző finomságúra őrölve |
-| Ón-oxid                                                | Kb. 5–7% (saját becslésünk) | Drága; redukcióban gyengén zavarosít                                                      |
-| Titán-dioxid                                           | 2% fölött                   | Selymes, áttetsző fedés; 10%-tól matt, texturált felület, látható kristályokkal           |
+| Zavarosító                                   | Szokásos mennyiség                | Megjegyzés                                                                                                                                |
+| -------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Cirkon-szilikát (Zircopax, Superpax, Ultrox) | 10–15% a teljes fedéshez          | Az olcsóbb választás; a márkák különböző finomságúra őrölt cirkon-szilikátok, és a finomabb minőségek erősebbek                           |
+| Ón-oxid                                      | Körülbelül 5–7% (a mi becslésünk) | Drága; magas tüzű égetésnél gyengébb, és a Digitalfire szerint 4% egy színtelen, 10-es gúlás redukciós mázban egyáltalán nem adott fedést |
+| Titán-dioxid                                 | Körülbelül 5% (a mi becslésünk)   | Selymes, áttetsző fedés; körülbelül 5% változatossá teheti a felületet, a jóval több pedig gyakran kristályos, matt felületet ad          |
 
-## A máz illeszkedése és a mázhibák {#fit-and-defects}
+## A máz illeszkedése és mázhibák {#fit-and-defects}
 
-Az agyag és a máz is tágul melegítéskor és zsugorodik hűléskor, mindegyik a saját mértékében: ez a **hőtágulása**{{en: thermal expansion}}. A **máz illeszkedése**{{en: glaze fit}} azt mutatja, mennyire egyezik a kettő. Jó illeszkedésnél a cserép enyhe nyomófeszültség alatt tartja a mázat; a Digitalfire szerint egy kis nyomófeszültség erősíti az árut, a túl nagy viszont gyengítheti, sőt meg is repesztheti.
+Az agyag és a máz is tágul melegítéskor és zsugorodik hűléskor, mindegyik a maga mértékében: ez a **hőtágulása**{{en: thermal expansion}}. **A máz illeszkedése**{{en: glaze fit}} azt jelenti, mennyire egyezik a kettő. A jó illeszkedésnél a máz enyhe nyomófeszültség alatt marad a masszán; a Digitalfire szerint egy kis nyomófeszültség erősíti az árut, a túl sok viszont gyengítheti, sőt meg is repesztheti.
 
 ### Hajszálrepedés és lepattogzás
 
-A **hajszálrepedés**{{en: crazing}} finom repedések hálózata. A máz hőtágulása nagyobb, mint a cserépé, ezért hűléskor jobban zsugorodik, húzófeszültség alá kerül és megreped; ennek oka általában a túl sok nátrium és kálium (Na₂O, K₂O). Később, használat közben is megjelenhet, ismételt hirtelen lehűlés, például hideg folyadékkal való érintkezés után. Ha szándékos, mint a rakunál, **repedezett máznak** (krakelé) hívják. A Digitalfire szerint „az esetek 95%-ában a megoldás a máz hőtágulásának módosítása”; a lassú hűtés csak késlelteti a hajszálrepedést. A Digitalfire próbája: melegítse fel az árut nagyjából {{300 °F; 149 °C}} hőmérsékletre, merítse jeges vízbe, majd húzzon át rajta filctollal, hogy előtűnjenek a repedések.
+A **hajszálrepedés**{{en: crazing}} finom repedések hálózata. A máz hőtágulása nagyobb a masszáénál, ezért hűléskor jobban zsugorodik, megfeszül és megreped, általában a túl sok nátrium és kálium (Na₂O, K₂O) miatt. Később, használat közben is megjelenhet, ismételt hirtelen lehűlés után, például hideg folyadékkal érintkezve. Ha szándékos, mint a rakunál, **repedezett máznak**{{en: crackle}} nevezik. A Digitalfire szerint „az esetek 95%-ában a megoldás a máz hőtágulásának módosítása”; a lassú hűtés csak késlelteti a hajszálrepedést. A próbája: melegítse az árut körülbelül {{300 °F; 149 °C}} hőmérsékletre, merítse jeges vízbe, és dörzsölje át filctollal, hogy a repedések láthatók legyenek.
 
-Az első teendőről eltérnek a források. A Glazy szilícium-dioxid vagy timföld hozzáadását javasolja; a Digitalfire erre azt feleli, hogy a többlet szilícium-dioxid „csak felhígítja a KNaO-t” (a nátriumot és a káliumot); Linda Bloomfield bórt ad hozzá vagy csökkenti a földpátot, egyszerre csak egy nyersanyagon változtatva. Tanácsunk: a [receptkalkulátorban](/recipe) cserélje le a nátrium és a kálium egy részét kisebb hőtágulású olvasztóanyagokra (bór, lítium, magnézium, kalcium), ellenőrizze a változást az **Összehasonlítás** funkcióval, és erősítse meg a jeges vizes próbával.
+Az első megoldásban a források eltérnek. A Glazy szilícium-dioxid vagy timföld hozzáadását javasolja; a Digitalfire azt feleli, hogy a többlet szilícium-dioxid „csak felhígítja a KNaO-t” (a nátriumot és a káliumot); Linda Bloomfield bórt ad hozzá vagy földpátot vesz el, egyszerre egy nyersanyagot. A mi tanácsunk: a [receptkalkulátorban](/recipe) cserélje a nátrium és a kálium egy részét kisebb hőtágulású olvasztóanyagokra (bór, lítium, magnézium, kalcium), ellenőrizze a változást az **Összehasonlítás** gombbal, és erősítse meg a jeges vizes próbával.
 
-A **lepattogzás**{{en: shivering}} ennek a fordítottja: a máz hőtágulása jóval kisebb, mint a cserépé, ezért túl nagy nyomófeszültség alá kerül, és a peremekről, élekről lepattogzik. A Digitalfire figyelmeztet, hogy a szilánkok borotvaélesek lehetnek, és le is nyelhetik őket, a Glazy szerint pedig a lepattogzás „használati edényen még a hajszálrepedésnél is veszélyesebb”. A megoldás egy nagyobb hőtágulású máz vagy egy kisebb hőtágulású massza.
+A **lepattogzás**{{en: shivering}} ennek a fordítottja: a máz hőtágulása jóval kisebb a masszáénál, ezért túl nagy nyomófeszültség alatt van, és a peremekről, élekről lepattogzik. A Digitalfire figyelmeztet, hogy a szilánkok borotvaélesek lehetnek, és le is nyelhetik őket, a Glazy pedig a lepattogzást „a használati edényen még a hajszálrepedésnél is veszélyesebbnek” nevezi. A megoldás egy nagyobb hőtágulású máz vagy egy kisebb hőtágulású massza.
 
 > [!WARNING]
-> Ne használjon hajszálrepedéses vagy lepattogzott mázú edényt ételhez vagy italhoz. A források nem egységesek abban, hogy a hajszálrepedéses edények kellően tisztára moshatók-e (az egyik szerint a mosogatógép elég; egy másik hibásnak tartja a hajszálrepedéses használati edényt), ezért mi az óvatosabb álláspontot képviseljük.
+> Ne használjon hajszálrepedezett vagy lepattogzott árut ételhez vagy italhoz. A források nem értenek egyet abban, hogy a hajszálrepedezett edények elég jól tisztíthatók-e (az egyik szerint a mosogatógép megteszi; egy másik hibásnak nevezi a hajszálrepedezett használati edényt), ezért mi az óvatosabb oldalt választjuk.
 
 ### Fényes és matt
 
-A **fényes** felület fényvisszaverő és sima, a **selyemfényű** visszafogott fényű, a **matt** pedig fénytelen. A fényes felülethez teljesen kiolvadt üveg kell. A matt felület származhat sok timföldből (alacsony SiO₂ : Al₂O₃ arányból), olyan olvasztóanyagokból, mint a kalcium, a magnézium, a bárium vagy a stroncium, amelyek a máz hűlésekor apró kristályokat képeznek, vagy alulégetésből.
+A **fényes**{{en: gloss}} felület tükröző és sima, a **selyemfényű**{{en: satin}} visszafogottan csillog, a **matt**{{en: matte}} pedig fénytelen. A fényességhez teljesen kiolvadt üveg kell. A mattság eredhet sok timföldből (alacsony SiO₂ : Al₂O₃ arányból), az olyan olvasztóanyagokból, mint a kalcium, a magnézium, a bárium vagy a stroncium, amelyek a máz hűlésekor apró kristályokat képeznek, vagy alulégetésből.
 
 ### Gyakori mázhibák
 
-Egyszerre csak egy dolgon változtasson, és őrizze meg a próbalapjait{{en: test tiles}}.
+Egyszerre csak egy dolgot változtasson, és tartsa meg a próbalapjait.
 
-Table: Gyakori mázhibák, szokásos okaik és az első teendők
+Table: Gyakori mázhibák, szokásos okaik és az első megoldások
 Label: Gyakori mázhibák
 
-| Hiba                          | Hogyan néz ki                                         | Gyakori okok                                                                                                                        | Első teendők                                                                                                                |
-| ----------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Összehúzódás{{en: crawling}}  | A máz cseppekké húzódik össze, csupasz agyagot hagyva | Poros vagy zsíros zsengélt áru; vastag, sok agyagot tartalmazó mázréteg, amely száradáskor megrepedt; cink, cirkon-szilikát vagy ón | Tisztítsa meg a zsengélt árut; mázazzon vékonyabban; kalcinálja az agyag egy részét; adjon hozzá kötőanyagot, például CMC-t |
-| Tűszúrás{{en: pinholing}}     | Apró lyukak vagy gödröcskék                           | A cserépből vagy a mázból távozó gáz, amelynek nyomát a máz nem folyta be; alulégetett vagy viszkózus máz                           | Tartsa a csúcshőmérsékleten kb. fél óráig; mázazzon vékonyabban; használjon kevesebb cinket vagy rutilt                     |
-| Hólyagosodás                  | Éles szélű kráterek                                   | Általában túlégetés; nagyon vastag mázréteg; illékony olvasztóanyagok kb. {{2192 °F; 1200 °C}} fölött                               | Égessen alacsonyabb hőfokon; mázazzon vékonyabban. Az éles szélek miatt a használati edény nem biztonságos                  |
-| Lefolyás                      | A máz lefolyik az égetőlapra                          | Túl kevés timföld; túl vastag réteg, például ahol a leöntések átfedik egymást; sok vas                                              | Mázazzon vékonyabban; adjon hozzá timföldet; a máz széle legyen jóval a talp fölött                                         |
-| Hűlési repedés{{en: dunting}} | Repedések az edényben hűlés vagy felfűtés miatt       | Gyors hűtés a kvarcátalakuláson{{en: quartz inversion}} át ({{1063 °F; 573 °C}}); egyenetlen falvastagság; rossz illeszkedés        | Égessen lassan {{1063 °F; 573 °C}} környékén, felfűtéskor és hűtéskor is; egyenletes falvastagság                           |
+| Hiba           | Hogyan néz ki                                         | Gyakori okok                                                                                                                                                          | Első megoldások                                                                                                              |
+| -------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Összehúzódás   | A máz cseppekké húzódik össze, csupasz agyagot hagyva | Poros vagy zsíros zsengélt áru; vastag, sok agyagot tartalmazó réteg, amely száradáskor megrepedt; cink, cirkon-szilikát vagy ón                                      | Tisztítsa meg a zsengélt árut; vékonyabban vigye fel; kalcinálja az agyag egy részét; adjon hozzá kötőanyagot, például CMC-t |
+| Tűszúrás       | Apró lyukak vagy gödrök                               | A masszából vagy a mázból távozó gáz, amelynek a helye nem gyógyult be; alulégetett vagy viszkózus máz                                                                | Tartsa körülbelül fél órán át a csúcshőmérsékleten; vékonyabban vigye fel; kevesebb cink vagy rutil                          |
+| Hólyagosodás   | Éles szélű kráterek                                   | Általában túlégetés; nagyon vastag rétegek; illékony olvasztóanyagok körülbelül {{2192 °F; 1200 °C}} felett                                                           | Égessen alacsonyabban; vékonyabban vigye fel. Az éles szélek miatt a használati edény nem biztonságos                        |
+| Lefolyás       | A máz lefolyik az égetőlapra                          | Túl kevés timföld; túl vastag réteg, például ahol a leöntések átfedik egymást; sok vas                                                                                | Vékonyabban vigye fel; adjon hozzá timföldet; tartsa a mázat jóval a talp felett                                             |
+| Hűlési repedés | Repedések az edényen hűlés vagy melegítés miatt       | Gyors hűtés a kvarcátalakulás ({{1063 °F; 573 °C}}) vagy a krisztobalit-átalakulás (körülbelül {{428 °F; 220 °C}}) hőmérsékletén; egyenetlen falak; rossz illeszkedés | Mindkettőn lassan égessen át, felfelé és lefelé is; egyenletes falak                                                         |
 
 ## Élelmiszer-biztonság {#food-safety}
 
-A **kioldódás**{{en: leaching}} az, amikor az égetett mázból fém oldódik ki az ételbe vagy italba, és ez egy tökéletesnek látszó mázzal is megtörténhet. A jogszabályi vizsgálatok során az égetett darabot savas oldatban áztatják, és mérik a kioldódó ólom és kadmium mennyiségét.
+A **kioldódás**{{en: leaching}} az, amikor fém oldódik ki a kiégetett mázból az ételbe vagy az italba, és egy máz tökéletesen nézhet ki, mégis kioldódhat belőle fém. A jogszabályi vizsgálatok a kiégetett darabot savas oldatban áztatják, és megmérik a belőle távozó ólom és kadmium mennyiségét.
 
-### Az ólommentes még nem élelmiszerrel érintkezésre alkalmas
+### Az ólommentes nem ugyanaz, mint az élelmiszerrel érintkezésre alkalmas
 
-Az Egyesült Államok, az EU, az Egyesült Királyság és Ausztrália szabályai azt korlátozzák, mennyi ólmot és kadmiumot ad le az égetett darab, nem azt, hogy mit tartalmaz a máz. Az „ólommentes” egy veszélyt kiküszöböl, de nem élelmiszer-biztonsági minősítés. Más oxidok is kioldódnak: a Glazy figyelmeztet, hogy a magas báriumtartalmú mázak „kioldódhatnak, és általában nem alkalmasak élelmiszerrel való érintkezésre”, a Digitalfire szerint a réz „kioldhatóvá teheti a mázat; tesztelje”, és a Glazy ma már nem ajánlja az ólmos mázakat használati edényekhez.
+Az Egyesült Államok, az EU, az Egyesült Királyság és Ausztrália szabályai a kiégetett darabból távozó ólmot és kadmiumot korlátozzák, nem azt, amit a máz tartalmaz. Az „ólommentes” egy veszélyt szüntet meg; nem élelmiszer-biztonsági minősítés. Más oxidok is kioldódnak: a Glazy figyelmeztet, hogy a sok báriumot tartalmazó mázak „kioldódhatnak, és általában nem alkalmasak élelmiszerrel való érintkezésre”, a Digitalfire szerint a réz „kioldhatóvá teheti a mázat; vizsgáltassa meg”, és a Glazy használati edényekhez már nem javasol ólommázakat.
 
-A **belső máz**{{en: liner glaze}} stabil, általában színtelen vagy fehér máz az élelmiszerrel érintkező felületekre. Véleményünk szerint az a kisebb kockázatú választás, amelyben nincs színezőanyag, bárium, ólom vagy lítium, amely teljesen kiolvad, nem hajszálrepedezik és jól bírja a kopást. A kisebb kockázat nem bizonyíték.
+A **belső máz**{{en: liner glaze}} stabil, általában színtelen vagy fehér máz az élelmiszerrel érintkező felületekre. Véleményünk szerint az a kisebb kockázatú választás, amelyben nincs színezőanyag, bárium, ólom vagy lítium, teljesen kiolvad, nem hajszálrepedezik, és jól bírja a kopást. A kisebb kockázat nem bizonyíték.
 
-A **határképletek**{{en: limit formulas}} (a Digitalfire inkább a **célképlet**{{en: target formulas}} elnevezést használja) a stabil mázak Seger-képletének szokásos tartományait adják meg egy adott gúlára: a Digitalfire 6-os gúlára vonatkozó célértékei szerint a timföld 0,285–0,64, a szilícium-dioxid 2,4–4,7. A helyes kémia felé terelik, de semmit sem bizonyítanak; a Digitalfire azért kerüli a „határ” szót, mert azt sugallja, hogy a tartományokon belüli mázak „valahogy biztonságosak”. A Glazecalc receptmódosító eszközei jelzik, ha az új recept túllép egy ajánlott határt, például ha 6-os gúlán sok benne a bór, és azt is, mit fog a máz valószínűleg csinálni.
+A **határképletek**{{en: limit formulas}} (a Digitalfire inkább **célképleteknek**{{en: target formulas}} nevezi őket) a stabil mázak Seger-képletének tipikus tartományait adják meg egy adott gúlán: a Digitalfire 6-os gúlás célértékei szerint a timföld 0,285–0,64, a szilícium-dioxid 2,4–4,7. A helyes kémia felé terelnek, de semmit sem bizonyítanak; a Digitalfire kerüli a „határ” szót, mert azt sugallja, hogy a tartományokon belüli mázak „valahogy biztonságosak”. A Glazecalc receptmódosító eszközei jelzik, ha az új recept túllép egy ajánlott határt, például sok bórral 6-os gúlán, és hogy a máz valószínűleg hogyan fog viselkedni.
 
-A jogszabályi határértékek országonként eltérnek. A táblázat annak az országnak az értékeit mutatja, ahol él, a jogszabály saját mértékegységeiben; összehasonlításhoz válasszon másik országot vagy régiót.
+A jogszabályi határértékek országonként eltérnek. A táblázat az Ön lakóhelyén érvényeseket mutatja, a jogszabály saját mértékegységeiben; az összehasonlításhoz válasszon másik országot vagy régiót.
 
 ::food-limits
 
-Az Egyesült Államokban az élelmiszerhez használhatónak látszó díszkerámiát élelmiszeres árunak tekintik, kivéve, ha rajta van egy ráragasztott címke, az alján pedig egy maradandó, beformázott vagy beégetett felirat, például „Not for Food Use. May Poison Food” (élelmiszerhez nem használható; megmérgezheti az ételt), vagy ha az élelmiszerrel érintkező felületen átmenő lyuk van. Az EU a 84/500/EGK irányelvben határozza meg az ólom és a kadmium határértékeit, az Egyesült Királyság pedig saját jogszabályában ugyanezeket az értékeket tartja meg. 2026. május 29-től Hollandia, Belgium és Luxemburg nagyjából 130–150-szer kevesebb ólmot és nagyjából 15-ször kevesebb kadmiumot enged meg. Ausztrália az importált árura határoz meg határértékeket; az Ausztráliában vagy Új-Zélandon készült árura nem találtunk hivatalos határértéket.
+Az Egyesült Államokban az élelmiszerhez használhatónak látszó dekoratív kerámiát élelmiszerrel érintkező edénynek tekintik, kivéve, ha öntapadós címke és a talpába formázott vagy égetett tartós felirat van rajta, például „Not for Food Use. May Poison Food” („Élelmiszerhez nem használható. Megmérgezheti az ételt.”), vagy ha az élelmiszerrel érintkező felületén átmenő lyuk van. Az EU a 84/500/EGK irányelvben határozza meg a kerámiatárgyak ólom- és kadmium-határértékeit, az Egyesült Királyság pedig saját jogszabályában ugyanezeket az értékeket tartja meg. A Benelux-államok 2024-es határozata jóval alacsonyabb határértékeket ír elő a kerámiatárgyakra. Hollandia 2026. május 29-től alkalmazza őket: az uniós értékeknél körülbelül 130–150-szer kevesebb ólmot és körülbelül 14–18-szor kevesebb kadmiumot engednek. A régi szabályoknak megfelelő, 2026. december 1. előtt először forgalomba hozott tárgyak a készlet kifogyásáig árusíthatók. A vizsgálólaboratóriumok szerint Luxemburg 2026. május 29-től ugyanezeket a határértékeket alkalmazza, Belgium pedig egy 2026. július 19-i királyi rendeletben vezette be őket; ezeket a szövegeket mi magunk nem olvastuk. Ausztrália az importált tárgyakra állapít meg határértékeket; Ausztráliában vagy Új-Zélandon készült tárgyakra nem találtunk hivatalos határértéket.
 
 ### Vizsgálat
 
-Az FDA szerint az otthoni törlőpálcás tesztkészletek kimutathatják a kioldható ólmot, a Ceramics New Zealand viszont figyelmeztet, hogy a tesztceruzákat nem kerámiára tervezték, és álpozitív eredményt adnak. A pozitív eredményt tekintse oknak arra, hogy abbahagyja a darab használatát, a negatívat pedig olyannak, ami semmit sem bizonyít. Az égetett darab laboratóriumi kioldódási vizsgálata (az Egyesült Államokban ASTM C738, Európában EN 1388 – Magyarországon MSZ EN 1388 – vagy ISO 6486) adja a valódi választ.
+Az FDA szerint az otthoni tamponos tesztek kimutathatják a kioldható ólmot, de vizsgálatok szerint ezek a tesztek mázas árun gyakran tévednek: mutathatnak olyan ólmot, amely nincs ott, és nem vehetik észre a kioldódó ólmot. A pozitív eredményt tekintse oknak arra, hogy abbahagyja a darab használatát, a negatívat pedig olyannak, amely semmit sem bizonyít. A valódi választ a kiégetett darab laboratóriumi kioldódási vizsgálata adja meg (az Egyesült Államokban ASTM C738, Európában MSZ EN 1388 vagy ISO 6486).
 
 > [!WARNING]
-> Az „élelmiszerrel érintkezésre alkalmas”{{en: food safe}} azt jelenti, hogy ez a máz, ezen az agyagon, erre a gúlára égetve, ebben a kemencében és így felhordva a jogszabályi határértékeknél kevesebbet ad le. A Glazecalc segíthet stabil mázat összeállítani, az **Ólom helyettesítése** funkció pedig egy régi ólmos receptet ólom nélkül újraépíthet, de egyetlen kalkulátor sem minősíthet alkalmasnak egy edényt. Erre csak az égetett darab vizsgálata képes.
+> Az „élelmiszerrel érintkezésre alkalmas” azt jelenti, hogy ez a máz, ezen az agyagon, erre a gúlára égetve, ebben a kemencében és így felvive a jogszabályi határértékeknél kevesebbet ad le. A Glazecalc segíthet stabil mázat összeállítani, és az **Ólom helyettesítése** funkció egy régi ólmos receptet ólom nélkül újra fel tud építeni, de egyetlen kalkulátor sem tanúsíthat egy edényt. Csak a kiégetett darab vizsgálata.
 
-## Fajsúly és mázfelhordás {#application}
+## Fajsúly és felvitel {#application}
 
 ### Fajsúly
 
-A vízzel kevert mázpor a **máziszap**{{en: slurry}}. A **fajsúlya**{{en: specific gravity}} (**SG**) az azonos térfogatú víz tömegéhez viszonyított tömege; a víz fajsúlya 1,0: minél nagyobb, annál több por van a vödörben. A régebbi brit könyvek **pint-súlyt** (pint weight) használnak. A Glazy szerint az 1,4–1,5 „a legtöbb máznál jó kiindulópont”. A méréshez mérjen le pontosan 100 mL máziszapot (a Glazy fecskendőt javasol), és ossza el 100-zal: 145 g 1,45-ös fajsúlyt jelent. Bedermedt mázban az areométer megbízhatatlan, és a víz párolog, ezért mázazás előtt ellenőrizze újra.
+A vízzel kevert mázpor a **máziszap**{{en: slurry}}. A **fajsúlya**{{en: specific gravity}} (**SG**) a tömege az ugyanakkora térfogatú víz tömegéhez viszonyítva, amelynek fajsúlya 1,0: minél nagyobb, annál több por van a vödörben. A Glazy szerint 1,4–1,5 „jó kiindulópont a legtöbb mázhoz”. A méréshez mérjen le pontosan 100 mL máziszapot (a Glazy fecskendőt javasol), és ossza el 100-zal: 145 g 1,45-ös fajsúlyt jelent. A sűrűségmérők (areométerek) bedermedt mázakban megbízhatatlanok, a víz pedig elpárolog, ezért mázazás előtt mérje meg újra.
 
-A célértékek forrásonként eltérnek. A Digitalfire a mártómázakat 1,40–1,50, a kereskedelmi ecsetelhető mázakat 1,25–1,55 közé teszi, a Potclays viszont ecseteléshez 1,71–1,81-et, szóráshoz 1,71-et ad meg. Tanácsunk: mártáshoz nagyjából 1,45-ös fajsúlyt használjon, enyhén bedermedt mázzal, ecsetelhető máznál kövesse a címkét, és jegyezze fel, mi válik be.
+A célértékek forrásonként eltérnek. A Digitalfire a mártómázakat 1,40–1,50-re, a kereskedelmi ecsetelhető mázakat 1,25–1,55-re teszi, a Potclays pedig ecseteléshez 1,71–1,81-et, szóráshoz 1,71-et ad meg. A mi tanácsunk: mártson körülbelül 1,45-ön, enyhén bedermesztett mázzal, ecsetelhető máznál kövesse a címkét, és írja le, mi válik be.
 
-A **flokkuláló szer**{{en: flocculant}} (keserűsó, ecet vagy kalcium-klorid) kissé bedermeszti a máziszapot, és **tixotróppá**{{en: thixotropic}} teszi: keveréskor folyik, állás közben megdermed, ami „egyenletes, csepegésmentes mázborítást” ad. A **folyósítószer**{{en: deflocculant}} (vízüveg vagy Darvan) hígítja. A keverést és a beállítást a [Mázkészítés](/guides/making-a-glaze) útmutató ismerteti.
+A **flokkuláló szer**{{en: flocculant}} (keserűsó, ecet vagy kalcium-klorid) enyhén bedermeszti a máziszapot, és **tixotróppá**{{en: thixotropic}} teszi: keveréskor folyik, nyugalomban megdermed, így „egyenletes, csepegésmentes mázréteget” ad. A **folyósítószer**{{en: deflocculant}} (vízüveg vagy Darvan) hígítja. A [Mázkészítés](/guides/making-a-glaze) című útmutató a keverést és a beállítást tárgyalja.
 
-### A máz felhordása
+### A máz felvitele
 
-Előbb tisztítsa le a port és a zsírt a zsengélt áruról alig nedves szivaccsal, és ne mossa le, mert attól átázik. Ne fújja le a port sűrített levegővel, és ne kefélje szárazon: így szilícium-dioxid por kerül a levegőbe ([Biztonságos keverés és szellőzés](/guides/safe-mixing#cleaning)).
+Előbb tisztítsa le a port és a zsírt a zsengélt áruról egy alig nedves szivaccsal, ne mossa le, mert attól átázik. Ne fújja le a port sűrített levegővel, és ne kefélje le szárazon: ettől kvarcpor kerül a levegőbe ([Biztonságos keverés és szellőzés](/guides/safe-mixing#cleaning)).
 
-- A **mártás** „általában egyenletes vastagságú bevonatot ad” (Robin Hopper). A vastagságot a mártási idő határozza meg: a Digitalfire megjegyzi, hogy a kereskedelmi mártómázakat nagyjából 1,4-es fajsúlyúra készítik 5 másodperces mártáshoz, és 1,5-esre 1 másodperceshez.
-- A **leöntéshez** használt máz legyen „kicsit hígabb, mint amikor mártáshoz használják”; ahol a leöntések átfedik egymást, a réteg megduplázódik, és lefolyhat.
-- Az **ecseteléshez** való mázak mázragasztót tartalmaznak, például **CMC-t** (karboxi-metil-cellulózt), amely segíti a máz terülését és tapadását, majd kiég. A legtöbbhöz több réteg kell, gyakran kettő vagy három; kövesse a címkét.
-- A **szórás** sokkal hígabb mázzal történik, amelyet „több vékony rétegben, a vastagságot fokozatosan felépítve” hordanak fel.
+- A **mártás** „általában egyenletes vastagságú réteget ad” (Robin Hopper). A rétegvastagságot a mártási idő szabja meg: a Digitalfire megjegyzi, hogy a kereskedelmi mártómázakat 5 másodperces mártáshoz körülbelül 1,4-re, 1 másodperceshez 1,5-re készítik.
+- A leöntéshez a máz legyen „kicsit hígabb, mint mártáskor”; ahol a leöntések átfedik egymást, a réteg kétszeres lesz, és lefolyhat.
+- Az **ecsetelhető** mázak mázragasztót, például **CMC**-t tartalmaznak, amely segít a máznak folyni és tapadni, aztán kiég. A legtöbbhöz több réteg kell, gyakran kettő vagy három; kövesse a címkét.
+- A **szóráshoz** jóval hígabb máz kell, amelyet „több vékony rétegben, a vastagságot fokozatosan növelve” visznek fel.
 
 > [!WARNING]
-> Csak elszívással ellátott szórófülkében szórjon, megfelelően illeszkedő légzésvédő maszkban. Lásd: [Biztonságos keverés és szellőzés](/guides/safe-mixing).
+> Csak szellőztetett szórófülkében szórjon, jól illeszkedő légzésvédő maszkban. Lásd: [Biztonságos keverés és szellőzés](/guides/safe-mixing).
 
-A túl vastag mázréteg összehúzódhat{{en: crawl}}, hólyagosodhat vagy lefolyhat. A forgalmazók ökölszabályai a bankkártya vastagságától egy amerikai tízcentes érme vastagságáig terjednek, ami becslésünk szerint nagyjából 1 mm száraz máznak felel meg; néhány különböző vastagságú próbalap{{en: test tiles}} a megbízható ellenőrzés. A talpon a **viaszos takarás**{{en: wax resist}} taszítja a mázat, így az edény nem ragadhat az égetőlapra, a **lapkence**, egy gyakran kaolinból és szilícium-dioxidból álló hőálló bevonat, pedig megvédi az égetőlapokat a lecsöppenő máztól.
+A túl vastag réteg összehúzódhat, hólyagosodhat vagy lefolyhat. A forgalmazók ökölszabályai egy bankkártya vastagságától egy amerikai tízcentes érme vastagságáig terjednek, a mi becslésünk szerint ez körülbelül 1 mm száraz máz; a megbízható ellenőrzés néhány különböző vastagságú próbalap. A talpon a **viaszos takarás**{{en: wax resist}} taszítja a mázat, így az edény nem ragadhat az égetőlaphoz, a **lapkence**{{en: kiln wash}}, egy gyakran kaolinból és kvarcból álló hőálló bevonat, pedig megvédi az égetőlapokat a lecsöpögő máztól.
 
 ## Oxidáló és redukciós égetés {#atmosphere}
 
-A kemencében lévő gázok, vagyis a kemence **atmoszférája**, befolyásolják, milyen lesz a máz. Az **oxidáló égetés**{{en: oxidation}} bőséges oxigént jelent. „Az elektromos kemencék egyet jelentenek az oxidáló égetéssel” – írja a Digitalfire, és az oxidáló égetésű mázak jellemzően élénkebbek a redukciós égetésűeknél, különösen alacsonyabb hőmérsékleten. Oxidáló égetésben a réz zöldet és türkizt ad, a vas barnát, sárgásbarnát és vöröset. Egy rosszul szellőztetett, gázt kibocsátó áruval teli elektromos kemencében az atmoszféra a szándékoltnál semlegesebb lehet; ezen segít egy közvetlenül a kemencéhez csatlakozó elszívó.
+A kemencében lévő gázok, vagyis a **kemenceatmoszféra**{{en: atmosphere}}, megváltoztatják, milyenek lesznek a mázak. Az **oxidáló égetés**{{en: oxidation}} bőséges oxigént jelent. „Az elektromos kemence egyet jelent az oxidáló égetéssel” – írja a Digitalfire, és az oxidáló égetésű mázak általában élénkebbek a redukciósaknál, főleg alacsonyabb hőmérsékleten. Oxidáló égetésnél a réz zöldeket és türkizt, a vas barnákat, drappokat és vöröseket ad. A rosszul szellőző, gázokat kibocsátó áruval teli elektromos kemence a szándékosnál semlegesebb lehet; a közvetlenül a kemencére kötött elszívó segít.
 
-A **redukciós égetés**{{en: reduction}} szándékosan korlátozza az oxigént, általában gáz-, fatüzelésű vagy speciális kemencében. A réz vörössé válik, a vas erősebb olvasztóanyaggá lesz, és **szeladont** (kékeszöldtől szürkészöldig, kb. ½–2% vasból) és **tenmokut** (temmoku: barnásfekete, kb. 5–6% vas) ad. A Glazy szerint a szeladonok és a rézvörös mázak „redukcióra épülnek”. Az agyag is változik: a Digitalfire egyik összehasonlításában egy kőagyagmassza{{en: stoneware}} redukcióban szürkére, oxidálóban sárgásra égett. A mázban lévő szilícium-karbid még elektromos kemencében is okozhat kisebb redukált foltokat. A 010-es és a 3-as gúla közötti redukciós égetéshez az Orton a vasmentes gúláit ajánlja.
+A **redukciós égetés**{{en: reduction}} szándékosan korlátozza az oxigént, általában gáz-, fatüzelésű vagy speciális kemencében. A réz vörös lesz, a vas pedig erősebb olvasztóanyaggá válik, és **szeladont** (kékeszöldtől szürkészöldig, körülbelül ½–2% vasból) és **tenmokut** (temmoku: barnásfekete, körülbelül 5–10% vas) ad. A Glazy szerint a szeladonok és a rézvörösök „a redukcióra támaszkodnak”. Az agyag is változik: a Digitalfire egyik összehasonlításában egy kőagyagmassza redukcióban szürkére, oxidáló égetésben sárgásra égett. A mázban lévő szilícium-karbid még elektromos kemencében is okozhat kis redukált foltokat. A 010-es és a 3-as gúla közötti redukcióhoz az Orton a vasmentes gúláit ajánlja.
 
 > [!NOTE]
-> Számítson rá, hogy egy gázkemencés redukciós égetésre írt recept elektromos kemencében másképp sikerül: egy redukcióra épülő szeladon vagy rézvörös máz oxidáló égetésben nem fog ugyanúgy kinézni. Nézze meg, milyen atmoszférára készült a recept, és a sajátját a gúlával együtt jegyezze fel a recept megjegyzéseibe a Glazecalc alkalmazásban.
+> Számítson arra, hogy egy gázüzemű redukciós kemencére írt recept elektromos kemencében másképp sikerül: egy redukcióra támaszkodó szeladon vagy rézvörös oxidáló égetésben nem fog ugyanúgy kinézni. Nézze meg, milyen atmoszférára készült a recept, és jegyezze fel a sajátját a gúlával együtt a recept megjegyzéseibe a Glazecalcban.
 
-Minden kemence, az elektromosokat is beleértve, bocsát ki égetési gázokat, ezért szellőztesse. A [Biztonságos keverés és szellőzés](/guides/safe-mixing) útmutató elmagyarázza, hogyan.
+Minden kemence, az elektromos is, bocsát ki gázokat, ezért szellőztesse. A [Biztonságos keverés és szellőzés](/guides/safe-mixing) című útmutató elmondja, hogyan.
 
 ## Szójegyzék {#glossary}
 
-Adalék (additive)
-: Színezőanyag, zavarosító vagy lebegtető, amelyet a recept 100-as összegén felül adnak hozzá.
+Adalék
+: Színezőanyag, zavarosító vagy lebegtető, amelyet a recept 100-án felül adnak hozzá.
 
-Agyagiszap és engób (slip and engobe)
-: Vízben lebegő agyag; az engób iszapszerű bevonat, több nem agyag nyersanyaggal.
+Timföld (Al₂O₃)
+: A fő stabilizáló: megakadályozza a lefolyást, és keménységet ad. Az agyagokból és a földpátokból származik.
 
 Ball clay
-: Képlékeny agyag, amelyben több a vas és a szerves anyag, mint a kaolinban.
+: Képlékeny agyag, több vassal és szerves anyaggal, mint a kaolin.
 
-Belső máz (liner glaze)
-: Stabil, általában színtelen vagy fehér máz az élelmiszerrel érintkező felületekre.
+Recept
+: Egy máz nyersanyagai tömeg szerint, általában 100-ra összegezve.
 
-Bentonit (bentonite)
-: Nagyon finom agyag, amelyet 1–3%-ban adnak a mázhoz, hogy ne ülepedjen le.
+Bentonit
+: Nagyon finom agyag, amelyet körülbelül 1–2%-ban adnak a mázhoz, hogy ne ülepedjen le. 3% felett száradáskor megrepesztheti a mázat.
 
-Bór (B₂O₃; boron)
-: Formálisan üvegképző, de olvasztóanyagként használják; a 06-os és a 6-os gúla között nélkülözhetetlen.
+Zsengélés (az Egyesült Királyságban biscuit)
+: Az első, alacsonyabb hőmérsékletű égetés, általában 08–04-es gúlára (leggyakrabban 06–04-re), amelytől az áru erős, de porózus lesz.
 
-CMC, karboxi-metil-cellulóz (CMC gum)
-: Cellulózalapú mázragasztó, amely segíti a máz ecsetelését és tapadását; kiég.
+Bór (B₂O₃)
+: Formálisan üvegképző, de olvasztóanyagként használják; a 06-os gúlától a 6-osig nélkülözhetetlen.
 
-Egyszeri égetés (once-firing, single firing)
-: Az égetetlen áru mázazása, majd egyetlen kiégetése.
+CMC
+: Cellulózalapú mázragasztó, amely segít a máznak ecsetelhetőnek lenni és tapadni; kiég.
 
-Élelmiszerrel érintkezésre alkalmas (food safe)
-: Jogi értelemben: savas vizsgálatban a határértékeknél kevesebb ólmot és kadmiumot ad le. Nem azonos az ólommentessel.
+Színezőanyag és színtest
+: Fém-oxid vagy fém-karbonát, amely a mázat színezi; a színtest gyárban készült, stabilabb színezőanyag.
 
-Elüvegtelenedés (devitrification)
-: Kristályok kiválása az üvegből a hűlés elején, ott, ahol nem kívánatosak.
+Gúla
+: Kalibrált kerámiapiramis, amely bizonyos felvett hőmennyiségnél meghajlik. Az ellenőrző gúla megmutatja, mennyi hőt kapott az áru.
 
-Fajsúly, SG (specific gravity)
-: A máziszap tömege az azonos térfogatú víz tömegéhez viszonyítva. Régebbi brit megfelelője: pint-súly (pint weight).
-
-Fazekasáru (earthenware)
-: Alacsony tüzű massza (nagyjából 06–02-es gúla), amely porózus marad.
-
-Felvett hőmennyiség (heatwork)
-: A hőmérséklet és az idő együttes hatása a kemencében; ezt mérik a gúlák.
-
-Fényes, selyemfényű és matt (gloss, satin and matte)
-: Fényvisszaverő és sima; visszafogott fényű; fénytelen.
-
-Flokkuláló szer és folyósítószer (flocculant and deflocculant)
-: Adalékok, amelyek bedermesztik (keserűsó, ecet) vagy hígítják (vízüveg, Darvan) a máziszapot.
-
-Földpát (feldspar)
-: Ásvány, amely alkáli olvasztóanyagot ad, timfölddel és szilícium-dioxiddal együtt: káliföldpát, nátronföldpát vagy nefelinszienit.
-
-Fritt (frit)
-: Gyárilag készült üveg: megolvasztják, hirtelen lehűtik és megőrlik; az oldható vagy mérgező oxidokat oldhatatlanná teszi.
-
-Gúla (cone)
-: Kalibrált kerámiapiramis, amely meghatározott felvett hőmennyiségnél meghajlik. Az ellenőrző gúla megmutatja, mennyi hőt kaptak az edények.
-
-Hajszálrepedés (crazing)
-: Finom repedések egy olyan mázban, amely jobban zsugorodik, mint a cserép; ha szándékos, repedezett máz.
-
-Határképlet, célképlet (limit formula, target formula)
-: A stabil mázak Seger-képletének szokásos tartományai egy adott gúlára; iránymutatás, nem garancia.
-
-Hűlési repedés (dunting)
-: Repedések az edényben a hűlés vagy a felfűtés okozta feszültségtől, gyakran a kvarcátalakulásnál ({{1063 °F; 573 °C}}).
-
-Izzítási veszteség, LOI (loss on ignition)
-: Az égetés során víz, szén-dioxid, szerves anyag vagy kén formájában elvesztett tömeg.
-
-Kaolin (brit angolul: China clay)
-: Tiszta fehér agyag, amely timföldet és szilícium-dioxidot ad; lebegésben tartja a mázat. Ausztráliában: Eckalite.
-
-Kioldódás (leaching)
-: Fémek kioldódása az égetett mázból az ételbe vagy italba.
-
-Kőagyag (stoneware)
-: Közepes vagy magas tüzű massza (nagyjából 5–10-es gúla), amely teljesen vagy majdnem teljesen tömörre ég.
-
-Lapkence (kiln wash)
-: Hőálló bevonat, amely megvédi az égetőlapokat a lecsöppenő máztól.
-
-Lepattogzás (shivering)
-: A máz lepattogzik az élekről, mert túl nagy nyomófeszültség alatt van; használati edényen veszélyes.
-
-Máz (glaze)
-: Üvegbevonat, amely égetéskor megolvad, hogy lezárja és díszítse az edényt.
-
-Mázalatti festék (underglaze)
-: Színes agyagiszap vagy oxidos díszítés, általában színtelen máz alatt.
-
-Mázas égetés (glaze firing; brit angolul: glost firing)
-: Az az égetés, amely megolvasztja a mázat.
-
-Máz illeszkedése (glaze fit)
-: Mennyire egyezik a máz és a cserép hőtágulása; jó illeszkedésnél a máz enyhe nyomófeszültség alatt van.
-
-Mészkőliszt (whiting)
-: Kalcium-karbonát, a fő kalciumos olvasztóanyag; égetéskor tömegének több mint 40%-át elveszíti. Németül: Kreide.
-
-Nyers áru (greenware)
-: Égetetlen áru: bőrkemény, amikor merev, de nedves, csontszáraz, amikor már nincs benne szabad víz.
-
-Olvasztóanyag (flux)
-: Oxid, amely csökkenti a szilícium-dioxid olvadási hőmérsékletét.
-
-Oxid (oxide)
-: Egy elem és az oxigén vegyülete; az oxidos összetétel tömegszázalékban sorolja fel őket.
-
-Oxidáló és redukciós égetés (oxidation and reduction)
-: Égetés bőséges oxigénnel (elektromos kemencék), illetve korlátozott oxigénnel (általában gáz- vagy fatüzelés).
-
-Összehúzódás (crawling)
+Összehúzódás
 : A máz égetés közben cseppekké húzódik össze, csupasz agyagot hagyva.
 
-Porcelán (porcelain)
-: Fehér, sok kaolint tartalmazó, magas tüzű massza, gyakran áttetsző.
+Hajszálrepedés
+: Finom repedések egy olyan mázban, amely jobban zsugorodik a masszájánál; ha szándékos, repedezett máz.
 
-Próbasor (line blend)
-: Próbák, amelyekben egy összetevő mennyisége lépésenként változik két érték között. A háromszög-próba hármat változtat egy rácson.
+Elüvegtelenedés
+: Az üvegből a hűlés elején nem kívánt kristályok válnak ki.
 
-R₂O és RO
-: Az alkáli olvasztóanyagok (Na₂O, K₂O, Li₂O) és a földalkáli olvasztóanyagok (CaO, MgO, BaO, SrO, valamint ZnO).
+Hűlési repedés
+: Repedések az edényen a hűlés vagy a melegítés okozta feszültségtől, gyakran a kvarcátalakulásnál, {{1063 °F; 573 °C}} hőmérsékleten.
 
-Recept (batch recipe)
-: A máz nyersanyagai tömeg szerint, összegük általában 100.
+Fazekasáru
+: Alacsony tüzű massza (körülbelül 06–02-es gúlára), alacsony gúlán porózus, melegebben égetve tömörebb.
 
-Seger-képlet (UMF; unity molecular formula, Seger formula)
-: A máz oxidjai molekulaszámként, úgy átszámítva, hogy az olvasztóanyagok összege 1 legyen.
+Földpát
+: Ásvány, amely alkáli olvasztóanyagot ad timfölddel és szilícium-dioxiddal: káliföldpát, nátronföldpát vagy nefelinszienit.
 
-Stabilizáló (stabilizer)
-: Oxid, főleg a timföld, amely sűrűbbé teszi az olvadékot, és tartósságot ad.
+Flokkuláló szer és folyósítószer
+: Adalékok, amelyek bedermesztik (keserűsó, ecet) vagy hígítják (vízüveg, Darvan) a máziszapot.
 
-Szilícium-dioxid (SiO₂; silica)
-: Az üvegképző; más néven kovakő vagy kvarc.
+Olvasztóanyag
+: Oxid, amely csökkenti a szilícium-dioxid olvadási hőmérsékletét.
 
-Szilícium-dioxid és timföld aránya (silica to alumina ratio)
-: A szilícium-dioxid osztva a timfölddel a Seger-képletben: a magasabb érték inkább fényes, az alacsonyabb inkább matt felület felé mutat.
+Élelmiszerrel érintkezésre alkalmas
+: Jogi értelemben: savas vizsgálatban a határértékeknél kevesebb ólmot és kadmiumot ad le. Nem ugyanaz, mint az ólommentes.
 
-Színezőanyag és színtest (colorant and stain)
-: Fém-oxid vagy fém-karbonát, amely színezi a mázat; a színtest gyárilag készült, stabilabb színezőanyag.
+Fritt
+: Gyárban készült üveg, megolvasztva, lehűtve és megőrölve, amely oldhatatlanná teszi a vízben oldódó vagy mérgező oxidokat.
 
-Timföld (Al₂O₃; alumina)
-: A fő stabilizáló: megakadályozza a lefolyást, és keménységet ad. Agyagokból és földpátokból származik.
-
-Tixotrópia (thixotropy)
-: Keveréskor folyik, állás közben lágy géllé dermed.
-
-Tömörödés (vitrification)
-: Az a folyamat, amelyben a massza égetés közben üvegessé és nem porózussá válik.
-
-Tűszúrás és hólyagosodás (pinholing and blistering)
-: Apró lyukak, illetve éles szélű kráterek ott, ahol gáz távozott az olvadékon át.
-
-Üvegképző (glass former)
+Üvegképző
 : Az az oxid, amely az üveget felépíti, általában a szilícium-dioxid.
 
-Viaszos takarás (wax resist)
-: Viasz, amelyet oda visznek fel, ahová nem kerülhet máz, általában a talpra.
+Máz
+: Üvegréteg, amely égetés közben megolvad, és lezárja és díszíti az edényt.
 
-Zavarosító (opacifier)
+Mázas égetés (az Egyesült Királyságban glost firing)
+: Az az égetés, amely megolvasztja a mázat.
+
+A máz illeszkedése
+: Mennyire egyezik a máz és a massza hőtágulása; jó illeszkedésnél a máz enyhe nyomófeszültség alatt marad.
+
+Fényes, selyemfényű és matt
+: Tükröző és sima; visszafogottan csillogó; fénytelen.
+
+Nyers áru
+: Égetetlen áru: bőrkemény, amikor merev, de nedves, csontszáraz, amikor már nincs benne szabad víz.
+
+Felvett hőmennyiség
+: A hőmérséklet és az idő együttes hatása a kemencében; ezt mérik a gúlák.
+
+Kaolin (az Egyesült Királyságban China clay)
+: Tiszta fehér agyag, amely timföldet és szilícium-dioxidot ad; segít, hogy a máz ne ülepedjen le. Ausztráliában az Eckalite az egyik márkája.
+
+Lapkence
+: Hőálló bevonat, amely megvédi az égetőlapokat a lecsöpögő máztól.
+
+Kioldódás
+: Fémek kioldódása a kiégetett mázból az ételbe vagy az italba.
+
+Határképlet (célképlet)
+: A stabil mázak Seger-képletének tipikus tartományai egy adott gúlán; útmutatás, nem garancia.
+
+Próbasor
+: Próbák, amelyeken egy összetevő két mennyiség között lépésenként változik. A háromszög-próba hármat változtat egy rácson.
+
+Belső máz
+: Stabil, általában színtelen vagy fehér máz az élelmiszerrel érintkező felületekre.
+
+LOI (izzítási veszteség)
+: Az égetés közben víz, szén-dioxid, szerves anyag vagy kén formájában elvesztett tömeg.
+
+Egyszeri égetés
+: Az égetetlen áru mázazása, és csak egyszeri kiégetése.
+
+Zavarosító
 : Nyersanyag, például cirkon-szilikát, ón-oxid vagy titán-dioxid, amely fedővé teszi a mázat.
 
-Zsengélés (bisque; brit angolul: biscuit)
-: Az első, alacsonyabb hőfokú égetés, általában 08–04-es gúlára (leggyakrabban 06–04-esre), amely után az áru erős, de porózus.
+Oxidáló és redukciós égetés
+: Égetés bőséges oxigénnel (elektromos kemencék), vagy korlátozott oxigénnel (általában gáz vagy fa).
+
+Oxid
+: Egy elem és az oxigén vegyülete; az oxidos összetétel tömegszázalékban sorolja fel őket.
+
+Tűszúrás és hólyagosodás
+: Apró lyukak vagy éles szélű kráterek ott, ahol gáz távozott az olvadékon át.
+
+Porcelán
+: Fehér, kaolinban gazdag, magas tüzű massza, gyakran áttetsző.
+
+R₂O és RO
+: Az alkáli olvasztóanyagok (Na₂O, K₂O, Li₂O) és a földalkáli olvasztóanyagok (CaO, MgO, BaO, SrO, a ZnO-dal együtt).
+
+Lepattogzás
+: A máz lepattogzik az élekről, mert túl nagy nyomófeszültség alatt van; veszélyes a használati edényen.
+
+Szilícium-dioxid (SiO₂)
+: Az üvegképző; kvarcnak vagy (angolul) flintnek is nevezik.
+
+SiO₂ : Al₂O₃ arány
+: A szilícium-dioxid osztva a timfölddel a Seger-képletben: a nagyobb a fényes, a kisebb a matt felé hajlik.
+
+Agyagiszap és engób
+: Agyag vízben; az engób agyagiszapszerű bevonat, több nem agyag nyersanyaggal.
+
+Fajsúly (SG)
+: A máziszap tömege az ugyanakkora térfogatú víz tömegéhez viszonyítva.
+
+Stabilizáló
+: Oxid, főként timföld, amely sűrűbbé teszi az olvadékot, és tartósságot ad.
+
+Kőagyag
+: Közepes vagy magas tüzű massza (körülbelül 5–10-es gúlára), amely tömörre vagy majdnem tömörre ég.
+
+Tixotrópia
+: Keveréskor folyik, nyugalomban lágy géllé dermed.
+
+Mázalatti festék
+: Színes agyagiszap vagy oxidos díszítés, általában színtelen máz alatt.
+
+Seger-képlet (UMF)
+: Egy máz oxidjai molekulaszámként, úgy átszámítva, hogy az olvasztóanyagok összege 1 legyen.
+
+Tömörödés
+: A massza égetés közben üvegessé és nem porózussá válik.
+
+Viaszos takarás
+: Viasz, amelyet oda festenek, ahová nem kerülhet máz, általában a talpra.
+
+Mészkőliszt
+: Kalcium-karbonát, a fő kalciumos olvasztóanyag; égetéskor tömegének körülbelül 44%-át elveszíti szén-dioxid formájában.
 
 ## Források {#sources}
 
@@ -483,11 +497,36 @@ Zsengélés (bisque; brit angolul: biscuit)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, „Influences of variable silica and alumina on porcelain glazes of constant RO”, Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb és Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (a Minerals Yearbook táblázata, az Index Mundi oldalán)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [EUR-Lex: A Tanács 84/500/EGK irányelve (1984. október 15.) az élelmiszerekkel rendeltetésszerűen érintkezésbe kerülő kerámiatárgyakra vonatkozó tagállami jogszabályok közelítéséről](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: a 2026. április 23-i holland rendelet a kerámia élelmiszer-érintkező tárgyakról szóló Benelux-határozat alkalmazásáról](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 1994. január 12.: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

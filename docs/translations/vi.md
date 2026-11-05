@@ -315,6 +315,23 @@ read (see above): confirm each word against the regulation when the region data 
   mặt trong**.
 - **Placeholders:** see Placeholders and names.
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | Vietnamese                                    | Notes                                                                                                                                  |
+| ----------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | biểu đồ Stull                                 | **show English**. As the recipe page already writes it. Regions as there: chưa nóng chảy, mờ, bán mờ, sáng bóng, non lửa, rạn nứt men. |
+| dry SG (of a glaze's powder)                    | tỷ trọng khô                                  | No source. The app's "SG of the dry materials" is "tỷ trọng của nguyên liệu khô".                                                      |
+| cristobalite inversion                          | chuyển pha cristobalit                        | Beside chuyển pha thạch anh. No source.                                                                                                |
+| colemanite                                      | colemanit                                     | No source (mineral name).                                                                                                              |
+| porcelain stone                                 | đá sứ                                         | No source; the Chinese 瓷石 kept as the English gives it.                                                                              |
+| synthetic ash                                   | chất thay thế tổng hợp (cho 土灰, 藁灰, 柞灰) | No source; the Japanese names kept as the English gives them.                                                                          |
+| rice-straw ash                                  | tro rơm rạ                                    | Usage.                                                                                                                                 |
+| wood ash                                        | tro gỗ                                        | Usage.                                                                                                                                 |
+| sludge (dried glaze sludge from a rinse bucket) | cặn                                           | No source.                                                                                                                             |
+| Famous glazes                                   | Các loại men nổi tiếng                        | No source. Page name; breadcrumb "Men nổi tiếng".                                                                                      |
+
 ### Search terms (docs/seo-plan.md, item 9)
 
 Google suggest for Vietnam (16 October 2026) completes **công thức men gốm**, **công thức pha men gốm**, **cách pha men gốm**, **cách làm men gốm**, **nguyên liệu làm men gốm**, **men rạn** and **men gốm Bát Tràng**; bare "men" is yeast and enzymes. The Seger formula is not searched. **Proposed title** (50 characters): "Glazecalc: công cụ tính công thức men gốm miễn phí" (alternative: "Glazecalc: công cụ tính men gốm miễn phí cho thợ gốm", 52). **Description terms:** công thức men gốm, cách pha men gốm, nguyên liệu làm men gốm, men rạn, men bóng and men mờ, and công thức Seger (UMF) in brackets. "men" is always paired with gốm.

@@ -123,7 +123,7 @@ Derek Au pesa tudo numa só tigela, em montes separados, para que um erro possa 
 
 ### Quanta água
 
-As fontes não concordam. Derek Au começa com uma mistura espessa, com 50 mL de água por 100 g de pó, e acrescenta mais depois. A Potterycrafts indica 65 mL por 100 g para um dos seus vidrados{{en: glazes}} em pó. A UT Austin usa pesos iguais de água e de pó e, quando o Digitalfire juntou 20 kg de pó a 20 kg de água, mediu uma densidade{{en: specific gravity}} de 1,46.
+As fontes não concordam. Derek Au começa com uma mistura espessa, com 50 mL de água por 100 g de pó, e acrescenta mais depois. A Potterycrafts indica 65 mL por 100 g para um vidrado{{en: glaze}} em pó. A UT Austin usa pesos iguais de água e de pó e, quando o Digitalfire juntou 20 kg de pó a 20 kg de água, mediu uma densidade{{en: specific gravity}} de 1,46.
 
 A água acrescenta-se depressa e tira-se devagar, por isso comece com pouca. A nossa estimativa: comece com **cerca de 70 a 80 mL por 100 g** (700 a 800 mL por quilograma, ou cerca de 11 a 12 US fl oz por libra). Deixe hidratar, misture e peneire com essa consistência, e depois acrescente água aos poucos até a densidade estar certa. 1 mL de água pesa 1 g, por isso pode pesá-la. Se passar do ponto, deixe o vidrado assentar e depois retire com uma esponja a água limpa que ficar por cima, ou deite-a fora.
 
@@ -144,7 +144,7 @@ A água também varia, e o Digitalfire observa que isso muda o comportamento da 
 5. Misture até não haver bolsas secas nem grumos.
 6. Peneire duas vezes (ver abaixo).
 7. Tape o balde e deixe repousar durante a noite; depois, misture de novo e veja se há uma camada dura no fundo.
-8. Meça a densidade e acrescente água aos poucos até chegar ao valor pretendido.
+8. Meça a densidade e acrescente água aos poucos até chegar ao valor pretendido. Para saber a densidade seca do seu próprio vidrado, pese também a suspensão pronta (ver abaixo).
 9. Etiquete o balde e anote o que fez.
 10. Limpe a húmido: passe a esfregona no chão e limpe todas as superfícies, incluindo o exterior dos recipientes das matérias-primas.
 
@@ -205,6 +205,27 @@ Label: Água para uma densidade pretendida
 | {{SG 1.50}}          |  cerca de 85 mL |  cerca de 850 mL | cerca de 13 US fl oz |
 | {{SG 1.60}}          |  cerca de 64 mL |  cerca de 640 mL | cerca de 10 US fl oz |
 
+### Saber a densidade seca do seu próprio vidrado enquanto o mistura
+
+O 2,6 acima é um palpite. O valor do seu próprio vidrado, a massa volúmica do seu pó seco, pode ser calculado a partir de três números que pode tirar enquanto mistura. Com ele, pode calcular mais tarde, a partir da densidade, quanto pó há em qualquer balde desse vidrado, e a água para o lote seguinte. Contas nossas, não de uma fonte:
+
+1. Anote o peso de pó seco do lote: o total da receita.
+2. Pese o balde vazio antes de começar, ou marque nele o seu peso.
+3. Misture, peneire e leve o vidrado à sua densidade como de costume. Passe tudo pelo peneiro e enxague-o para dentro do balde, para que nenhum pó fique de fora.
+4. Pese o balde cheio e tire o peso do balde. Esse é o peso da suspensão.
+5. Meça a densidade.
+
+Depois:
+
+- **Água** = peso da suspensão − peso do pó.
+- **Volume da suspensão** em mL = peso da suspensão em gramas ÷ densidade.
+- **Volume do pó** = volume da suspensão − água (1 g de água é 1 mL).
+- **Densidade seca** = peso do pó ÷ volume do pó.
+
+Por exemplo: 1000 g de pó dão 1980 g de suspensão com {{SG 1.45}}. A água são 980 g, a suspensão tem 1980 ÷ 1,45 = cerca de 1366 mL, o pó ocupa 1366 − 980 = 386 mL, e a densidade seca é 1000 ÷ 386 = cerca de 2,59.
+
+Pese a suspensão inteira no fim, e não a água à medida que a deita, para que a água que se evapora ou salpica não conte. Aqui, os pequenos erros crescem: uma leitura de densidade errada em 0,01 altera o resultado em cerca de 2 a 4%, mais num vidrado mais diluído. Use um lote de 1 kg ou mais, uma balança exata e, para a densidade, o método do copo de 500 g acima. A maioria das matérias-primas comuns fica entre cerca de 2,5 e 2,9, por isso um valor muito fora disso, num vidrado sem muito silicato de zircónio nem chumbo, quer provavelmente dizer um erro de medição. Escreva o valor na receita.
+
 ### Sal de Epsom, goma CMC e bentonite
 
 O **sal de Epsom** faz um vidrado gelificar ligeiramente quando está parado e voltar a fluir quando é mexido. A isto chama-se **flocular**{{en: flocculating}} o vidrado, e um vidrado que se comporta assim é **tixotrópico**{{en: thixotropic}}: aplica-se de forma mais uniforme, pinga menos e assenta menos. O Digitalfire sugere começar com cerca de 2 g por galão quando a densidade estiver certa (aproximadamente 0,5 g por litro, conversão nossa) e afinar a quantidade de cada vez que misturar, porque nenhuma receita deve fixar a dose. Sugerimos que o dissolva primeiro num pouco de água quente. Num exemplo do Digitalfire, um vidrado com {{SG 1.45}} pingava; a água baixou-o para {{SG 1.43}}, o sal de Epsom gelificou-o até voltar a ficar cremoso, e aplicou-se de forma uniforme. Uma verificação aproximada: mexa, pare e observe. Um vidrado gelificado continua a mover-se durante cerca de 2 ou 3 segundos, depois para e recua um pouco.
@@ -227,9 +248,9 @@ Um vidrado{{en: glaze}} pode ter um aspeto muito diferente noutra pasta ou noutr
 - uma alteração de cada vez
 - uma imersão e uma dupla imersão, para ver o vidrado em camada fina e grossa
 - todas as peças na mesma fornada
-- uma marca em cada peça antes da cozedura, com um carimbo, um entalhe ou um lápis cerâmico.
+- uma marca em cada peça antes da cozedura, com um carimbo, um entalhe ou um lápis cerâmico. As peças cozidas parecem-se umas com as outras, e uma marca feita antes da cozedura resiste ao forno, por isso consegue sempre saber que receita é cada peça.
 
-Sugerimos peças de teste que fiquem de pé, porque uma peça deitada esconde até onde um vidrado escorre, com uma faixa texturada para mostrar como o vidrado muda de cor nas arestas, e um pé sem vidrado. Assente cada uma num pratinho, num pedaço de chacota ou numa camada de protetor de placas, para apanhar o que escorrer. Ponha um **cone testemunho**{{en: witness cone}}, um pequeno cone cerâmico que dobra quando recebeu calor suficiente, perto das peças de teste para mostrar o que receberam; o [guia de cozedura](/guides/firing) explica os cones. Dê a cada peça um código curto e escreva-o ao lado da receita nos seus registos. Willers, num artigo para a Ceramic Arts Network, usa números e letras, e escreve o próprio sistema no início do caderno.
+Sugerimos peças de teste que fiquem de pé, porque uma peça deitada esconde até onde um vidrado escorre, com uma faixa texturada para mostrar como o vidrado muda de cor nas arestas, e um pé sem vidrado. Assente cada uma num pratinho, num pedaço de chacota ou numa placa com protetor de placas, para apanhar o que escorrer. Ponha um **cone testemunho**{{en: witness cone}}, um pequeno cone cerâmico que dobra quando recebeu calor suficiente, perto das peças de teste para mostrar o que receberam; o [guia de cozedura](/guides/firing) explica os cones. Dê a cada peça um código curto e escreva-o ao lado da receita nos seus registos. Willers, num artigo para a Ceramic Arts Network, usa números e letras, e escreve o próprio sistema no início do caderno.
 
 ### Testes em linha
 
@@ -265,13 +286,13 @@ Willers resume bem o objetivo: «informação suficiente para poder repetir, ou 
 Table: O que registar para cada lote de vidrado (o nosso modelo)
 Label: Modelo de registo
 
-| Parte     | O que anotar                                                                                                                                                                                                                                                      |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Receita   | A receita e a sua versão; marcas e números de lote das matérias-primas; quaisquer substituições                                                                                                                                                                   |
-| Mistura   | Data; tamanho do lote; água adicionada, e o seu tipo (da torneira, de osmose inversa ou destilada); densidade{{en: specific gravity}} depois de misturar e densidade final; sal de Epsom, CMC e bentonite adicionados; malha do peneiro e número de passagens     |
-| Aplicação | Pasta; cone da chacota{{en: bisque}}; imersão, pincel ou derrame; tempo de imersão ou número de demãos; espessura em seco                                                                                                                                         |
-| Cozedura  | Forno e posição nas placas; a curva de cozedura, com as rampas, os patamares e o arrefecimento; atmosfera (oxidação{{en: oxidation}} ou redução{{en: reduction}}); o que o cone testemunho{{en: witness cone}} mostrou, e não só o que estava programado no forno |
-| Resultado | Superfície e cor; eventuais escorrimentos, fendilhamento{{en: crazing}} ou picadas{{en: pinholes}}; fotografias da frente, de trás e de lado; o código da peça de teste{{en: test tile}}                                                                          |
+| Parte     | O que anotar                                                                                                                                                                                                                                                                                                         |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Receita   | A receita e a sua versão; marcas e números de lote das matérias-primas; quaisquer substituições                                                                                                                                                                                                                      |
+| Mistura   | Data; tamanho do lote; água adicionada, e o seu tipo (da torneira, de osmose inversa ou destilada); densidade{{en: specific gravity}} depois de misturar e densidade final; o peso da suspensão pronta, para a sua densidade seca; sal de Epsom, CMC e bentonite adicionados; malha do peneiro e número de passagens |
+| Aplicação | Pasta; cone da chacota{{en: bisque}}; imersão, pincel ou derrame; tempo de imersão ou número de demãos; espessura em seco                                                                                                                                                                                            |
+| Cozedura  | Forno e posição nas placas; a curva de cozedura, com as rampas, os patamares e o arrefecimento; atmosfera (oxidação{{en: oxidation}} ou redução{{en: reduction}}); o que o cone testemunho{{en: witness cone}} mostrou, e não só o que estava programado no forno                                                    |
+| Resultado | Superfície e cor; eventuais escorrimentos, fendilhamento{{en: crazing}} ou picadas{{en: pinholes}}; fotografias da frente, de trás e de lado; o código da peça de teste{{en: test tile}}                                                                                                                             |
 
 > [!NOTE]
 > No Glazecalc, uma [receita](/recipe) guardada contém a própria receita. Um [registo de cozedura](/firing) regista cada cozedura: o forno, a data, as horas, as temperaturas, os cones e as notas. As [notas](/notes) guardam tudo o resto, como o registo do lote acima e o que cada peça de teste mostrou.

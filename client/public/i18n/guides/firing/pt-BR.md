@@ -89,16 +89,16 @@ Label: Tabela de cones da Orton
 | Cone | Lenta, {{27 °F/h; 15 °C/h}} | Média, {{108 °F/h; 60 °C/h}} | Rápida, {{270 °F/h; 150 °C/h}} |
 | ---- | --------------------------: | ---------------------------: | -----------------------------: |
 | 022  |                           – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018  |                           – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015  |                           – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018  |         {{1267 °F; 686 °C}} |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015  |         {{1382 °F; 750 °C}} |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010  |         {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08   |         {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07   |                           – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07   |         {{1764 °F; 962 °C}} |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06   |         {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05   |        {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04   |        {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03   |        {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02   |                           – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02   |        {{1972 °F; 1078 °C}} |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01   |        {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1    |        {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4    |        {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,12 +460,12 @@ Um forno manual segue o mesmo plano à mão: seque devagar com a tampa entreaber
 
 ## Queima de esmalte {#glaze}
 
-A queima de esmalte{{en: glaze firing}} derrete o esmalte até virar vidro sobre o biscoito. A maioria dos iniciantes queima esmaltes de baixa temperatura nos cones 06–04 ou esmaltes de média temperatura nos cones 5–6. Queime até o cone indicado nos rótulos da sua massa e do seu esmalte, com um conjunto de cones em torno desse número. Para saber o que acontece dentro do esmalte enquanto ele derrete, veja [Esmaltes desde o básico](/guides/glazing-basics).
+A queima de esmalte{{en: glaze firing}} derrete o esmalte até virar vidro sobre o biscoito. A maioria dos esmaltes de baixa temperatura à venda é feita para o cone 06 ou 05 (a faixa de baixa temperatura vai dos cones 06–04), e a maioria dos de média temperatura para os cones 5–6. Queime até o cone indicado nos rótulos do seu esmalte e da sua massa, com um conjunto de cones em torno desse número. Para saber o que acontece dentro do esmalte enquanto ele derrete, veja [Esmaltes desde o básico](/guides/glazing-basics).
 
 ### Enfornando para uma queima de esmalte
 
 - As peças esmaltadas não devem tocar umas nas outras nem nas paredes: deixe cerca de ½ polegada (13 mm).
-- Mantenha o esmalte longe do pé (**pé seco**), ou ponha as peças de baixa temperatura sobre **trempes**, pequenos suportes com pontas. O grés e a porcelana não devem ficar sobre trempes, que se cravam nessas temperaturas; use protetor de placas de alta temperatura ou areia de sílica.
+- Mantenha o esmalte longe do pé (**pé seco**), ou ponha as peças de baixa temperatura sobre **trempes**, pequenos suportes com pontas. O grês e a porcelana não devem ficar sobre trempes, que se cravam nessas temperaturas; use protetor de placas de alta temperatura ou areia de sílica.
 - Deixe pelo menos 1 polegada (25 mm) entre as bordas das placas e a parede ou o sitter.
 
 ### Curvas de queima do controlador

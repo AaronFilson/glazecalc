@@ -9,6 +9,7 @@
     "homeSafety": "Neotrávte svoju rodinu – Glazecalc",
     "firing": "Výpal v jednoduchej peci – Glazecalc",
     "learnWithJohnBritt": "Učte sa s bezplatným kurzom glazúr Johna Britta – Glazecalc",
+    "teachingGlazeCalculation": "Výučba výpočtu glazúr - Glazecalc",
     "about": "O aplikácii – Glazecalc",
     "privacy": "Ochrana súkromia – Glazecalc",
     "terms": "Podmienky používania – Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Schválenie zmeny – Glazecalc",
     "cones": "Tabuľka kužeľov: teploty Ortonových kužeľov a kužeľov SK – Glazecalc",
     "materials": "Štandardné suroviny na glazúry: rozbor a riziká – Glazecalc",
-    "materialInfo": "{name}: oxidový rozbor a riziká – Glazecalc"
+    "materialInfo": "{name}: oxidový rozbor a riziká – Glazecalc",
+    "famousGlazes": "Slávne glazúry - Glazecalc",
+    "famousGlaze": "Glazúra {name} - Glazecalc"
   },
   "nav": {
     "skip": "Preskočiť na obsah",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Zadajte číslo, napríklad {example}, s desatinnou bodkou."
   },
   "meta": {
-    "description": "Zadajte recept na glazúru a uvidíte Segerov vzorec (UMF), pomer SiO₂ : Al₂O₃ a pomer tavív. Zadarmo, s otvoreným kódom, na recepty, suroviny a záznamy výpalov.",
+    "description": "Zadajte recept na keramickú glazúru a uvidíte Segerov vzorec (UMF), pomer SiO₂ : Al₂O₃ a pomer tavív. Zadarmo, s otvoreným kódom, na recepty, suroviny a výpaly.",
     "guides": "Zrozumiteľné návody pre začínajúcich keramikárov: čo je glazúra na keramiku, ako ju pripraviť a bezpečne namiešať, chrániť rodinu a vypáliť jednoduchú pec.",
     "glazingBasics": "Z čoho je glazúra na keramiku, ako ju pec premení na sklo a čo sú kužele, frity, Segerov vzorec (UMF) a chyby glazúr. Návod pre začínajúcich keramikárov.",
     "makingAGlaze": "Ako kúpiť, skladovať, navážiť a namiešať glazúru, nastaviť jej hustotu, vyskúšať ju na vlastnej hline a viesť si záznamy, aby ste ju vedeli pripraviť znova.",
@@ -177,6 +180,7 @@
     "homeSafety": "Čo robiť, ak dieťa alebo zviera prehltne surovinu na glazúru, a ako pri surovinách, prachu, peci a ručne robenej keramike chrániť rodinu.",
     "firing": "Ako vypaľovať v elektrickej peci: vybrať, umiestniť a čítať kužele a dodržať zverejnené krivky prežahu a ostrého výpalu, s tabuľkou kužeľov.",
     "learnWithJohnBritt": "Sprievodca k bezplatnému online kurzu glazúr Johna Britta: jeho videá lekciu po lekcii, s návodmi Glazecalc na čítanie a cvičeniami v kalkulačke.",
+    "teachingGlazeCalculation": "6 lekcií na výučbu Segerovho vzorca (UMF): suroviny a trojzložkové skúšky, móly, prepočet receptu na vzorec a späť a chyby glazúry, s riešenými príkladmi a pracovnými listami na tlač.",
     "advice": "Praktické rady k miešaniu, glazovaniu a výpalu od Glazecalc a k tomu vaše vlastné rady. Zadarmo pre hrnčiarov a keramikárov.",
     "about": "Glazecalc je bezplatná kalkulačka chémie glazúr a zápisník s otvoreným zdrojovým kódom. Pozrite sa, ako počíta Segerov vzorec (UMF) a ako je vytvorený.",
     "privacy": "Ako Glazecalc zaobchádza s vašimi údajmi: žiadne reklamy, analytika ani sledovanie a nič sa nepredáva. Čo sa uchováva, prečo a ako uplatniť svoje práva.",
@@ -187,6 +191,8 @@
     "materials": "Suroviny zo štandardnej knižnice Glazecalc, od živcov a ílov po frity a zdroje bóru, každá s oxidovým rozborom, Segerovým vzorcom a rizikami.",
     "materialInfo": "{name}: oxidový rozbor, Segerov vzorec, strata žíhaním a riziká v štandardnej knižnici Glazecalc.",
     "materialInfoLong": "{name} v štandardnej knižnici surovín na glazúry Glazecalc: oxidový rozbor, príspevok k Segerovmu vzorcu, strata žíhaním a riziká.",
+    "famousGlazes": "Slávne glazúry z celého sveta: tradičný recept alebo historická analýza každej glazúry, jej Segerov vzorec a verzia zo surovín, ktoré sa predávajú tam, kde ste.",
+    "famousGlaze": "Glazúra {name} ({native}): tradičný recept alebo historická analýza, výpal, Segerov vzorec a zdroje a verzia zo surovín, ktoré sa predávajú tam, kde ste.",
     "imageAlt": "Logo Glazecalc a jeho nadpis, bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov."
   },
   "notices": {

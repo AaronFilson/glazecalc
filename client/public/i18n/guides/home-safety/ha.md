@@ -61,27 +61,29 @@ Babban haɗarin darma daban ne: ba cokali ɗaya ba, sai dai ƙananan adadin ƙur
 
 ## Ajiye kaya a gida {#storing-materials}
 
-Babu wata hukuma da ta kafa dokoki kan ajiye kayan glaze a gida, amma shafukan lafiya da aminci sun yarda: ku ajiye aikin a wurinsa na musamman, nesa da yara. Ma'aikatar lafiya ta Pennsylvania, a rubutunta kan sha'awoyin da ke amfani da darma, ta ce "Ku yi amfani da wurin aiki na musamman ko garaji don sha'awarku, kuma ku nisanta yara daga wannan wuri."
+Babu wata hukuma da ke kafa dokoki kan ajiye kayan glaze a gida, amma shafukan lafiya da aminci sun yarda: ku ajiye aikin a wurinsa na daban, nesa da yara. Ma'aikatar lafiya ta Pennsylvania, tana rubutu game da sana'o'in sha'awa da ke amfani da darma (lead, Pb), ta ce "Ku yi amfani da keɓaɓɓen wurin aiki ko gareji don sana'arku kuma ku nisanta yara daga wannan wuri."
 
-### Jerin dubawa na ajiya
+### Jerin binciken ajiya
 
-Waɗannan dokokin hana guba ne na gaba ɗaya da aka yi amfani da su ga glaze. Babu ma'aunin ginin tukwane da ya kafa su, amma muna ba da shawarar dukansu:
+Waɗannan dokoki ne na gama gari na hana guba da aka yi amfani da su ga glaze. Babu wani ma'auni na tukwane da ya kafa su, amma muna ba da shawarar su duka:
 
-- Ku ajiye busassun kaya a kulle: kabad, ko ɗaki, garaji ko rumfa da ake kullewa. Shiryayye mai tsayi yana taimakawa, amma yara suna hawa. Idan abubuwa kaɗan ne kawai za ku iya kullewa da farko, ku fara da kaya masu narkewa da masu launi.
-- Ku ajiye kaya a cikin buhunsu ko kwantenansu na asali. Idan kun mayar da ɗaya cikin wata kwantena, ku rubuta mata suna daidai yadda aka rubuta a kan buhun.
-- Kada ku taɓa amfani da kwantenonin abinci ko abin sha (kofunan yogurt, tuluna, kwalabe) don kayan glaze, ko da an rubuta musu suna. Yaro ya san abin da kofin yogurt ke ɗauke da shi.
-- Ku ajiye kayan aikin wurin aiki (ludayi, cokula, mai kaɗawa, rariya, sikeli) a wurin aiki. Kada ku taɓa amfani da kayan kicin don glaze, ko kayan glaze don abinci.
-- Ku ajiye glaze mai ruwa a cikin bokiti masu suna da murfinsu a rufe.
-- Ku ajiye takardar bayanan aminci ta kowane kaya tare da shi, a takarda ko a wayarku.
-- Kada ku ajiye komai daga wurin aiki a kicin: ba buhu, bokiti, kayan aiki ko test tile ba.
+- Ku ajiye busassun kaya a kulle: kabad, ko ɗaki, gareji ko rumfa mai kulli. Babban shiryayye yana taimakawa, amma yara suna hawa. Idan za ku iya kulle 'yan abubuwa kaɗan ne kawai a farko, ku fara da kayan da ke narkewa a ruwa da masu launi.
+- Ku ajiye kaya a cikin buhunansu ko kwanoninsu na asali. Idan kun mayar da ɗaya cikin wani akwati, ku manna masa lakabi da sunan daidai yadda aka rubuta a kan buhu.
+- Kada ku taɓa amfani da kwanonin abinci ko abin sha (kofunan yogurt, tuluna, kwalabe) don kayan glaze, ko da suna da lakabi. Yaro ya san abin da kofin yogurt ke ɗauke da shi.
+- Ku ajiye kayan aikin wurin aiki (cokulan ɗiba, cokula, abin kaɗawa, rariya, sikeli) a wurin aiki. Kada ku taɓa amfani da kayan girki don glaze, ko kayan glaze don abinci.
+- Ku ajiye glaze masu ruwa a cikin bokiti masu lakabi da murfi a rufe.
+- Ku ajiye takardar bayanan aminci (SDS) na kowane kaya tare da shi, a takarda ko a wayarku.
+- Kada ku ajiye komai na wurin aiki a kicin: babu buhu, bokiti, kayan aiki ko test tile.
 
-Don ƙarin bayani kan saye da ajiye kaya, duba [Yadda ake haɗa glaze](/guides/making-a-glaze).
+Don sayen da ajiye kaya dalla-dalla, duba [Yadda ake haɗa glaze](/guides/making-a-glaze).
 
-### Sharar glaze da ruwan wanki
+### Sharar glaze da ruwan kurkura
 
-Kada ku taɓa zuba glaze, ko ruwan da kuka wanke kayan glaze a ciki, a cikin sink ko a gona. Crafts Council na UK yana ba da shawarar bokitin ruwa daban don wanke hannu, burushi, rariya da kayan aiki. Ku bar shi ya kwanta dare ɗaya, ku zubar da ruwan da ya fito fili, sannan ku busar da glaze ɗin da ya kwanta ku saka shi a cikin shara (yana zuwa wurin zubar da shara), kada ku taɓa zubar da shi a magudanar ruwa.
+Kada ku taɓa zuba glaze, ko ruwan da kuka kurkura kayan glaze a ciki, a cikin sinki ko a lambu. Crafts Council ta UK tana ba da shawarar bokitin ruwa na daban don wanke hannu, burushi, rariya da kayan aiki. Ku bar shi ya lafa dare ɗaya, ku zubar da ruwan da ya fito fili, sannan ku busar da glaze ɗin da ya lafa ku saka shi a kwandon shara (yana zuwa juji), kada ku taɓa zuba shi a magudanar ruwa.
 
-Muna ba da shawarar murfi a kan wannan bokitin: laka tana ɗauke da ƙarfe iri ɗaya da na glaze, kuma dabbobin gida suna shan ruwan da ke tsaye. Dokokin zubar da shara sun bambanta daga wuri zuwa wuri, don haka ku duba takardar bayanan aminci ta kowane kaya, kuma ku tambayi ƙaramar hukumarku ko kamfanin ruwa idan ba ku da tabbas.
+Muna ba da shawarar murfi a kan wannan bokiti: laka tana ɗauke da ƙarfe iri ɗaya da glaze, kuma dabbobin gida suna shan ruwan da ke tsaye. Dokokin zubar da shara sun bambanta daga wuri zuwa wuri, don haka ku duba takardar bayanan aminci ta kowane samfur, kuma ku tambayi ƙaramar hukumarku ko kamfanin ruwa idan ba ku da tabbas.
+
+Wasu wuraren aiki suna gasa busasshiyar laka kafin su zubar da ita. Suna saka ta a cikin ƙarin kwano da za a sadaukar da shi: bayan gasa ba za a iya sake amfani da kwanon ba. Ku cika kwanon kashi ɗaya cikin huɗu kawai, saboda laka tana kumfa da tafasa yayin da take narkewa, kuma ku rufe shi da faranti. Ku ɗora shi a kan shiryayye mai kiln wash ko ƙarin faranti, idan ya zuba. Gasa tana mayar da laka gilashi, wanda ke riƙe ƙarfe sosai fiye da gari maras ɗauri, don haka ya fi aminci a juji. Ku riƙe busasshiyar laka kamar yadda za ku riƙe busasshen glaze, da respirator kuma ba tare da tayar da ƙura ba.
 
 ## Ajiye ƙura a wurin aiki {#keeping-dust-in-the-studio}
 

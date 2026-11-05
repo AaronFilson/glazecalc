@@ -10,17 +10,18 @@ text read [translating.md](../translating.md) instead.
 For a language with the code `<code>` (`de`, `fr`, `es`, `it`, `pl`, `pt-PT`), each English file has a translation
 beside it with the same name but the code:
 
-| English                                   | What it is                                                                             |
-| ----------------------------------------- | -------------------------------------------------------------------------------------- |
-| `client/public/i18n/en.json`              | The menu, page titles and the parts every page shares                                  |
-| `client/public/i18n/<scope>/en.json`      | One part of the app each: `site`, `account`, `library`, `notebook`, `recipe`, `guides` |
-| `client/public/i18n/server/en.json`       | The server's messages (errors, field checks), shown as plain text                      |
-| `client/public/i18n/chemistry/en.json`    | The chemistry's errors and warnings, shown as plain text                               |
-| `client/public/i18n/safety/en.json`       | The words of who to call in an emergency, shown as plain text                          |
-| `client/public/i18n/regions/en.json`      | Notes in the region data (silica limits, food-contact rules, shops), as plain text     |
-| `client/public/i18n/records/en.json`      | The standard materials' notes and hazards, and the advice page, shown as plain text    |
-| `client/public/i18n/guides/<guide>/en.md` | The five guides, whole documents in Markdown                                           |
-| `server/lib/account_mail.ts`              | The emails about a password, and the one after an account is deleted, in code          |
+| English                                   | What it is                                                                                                                                                  |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `client/public/i18n/en.json`              | The menu, page titles and the parts every page shares                                                                                                       |
+| `client/public/i18n/<scope>/en.json`      | One part of the app each: `site`, `account`, `library`, `notebook`, `recipe`, `guides`, `reference`, `famous`                                               |
+| `client/public/i18n/server/en.json`       | The server's messages (errors, field checks), shown as plain text                                                                                           |
+| `client/public/i18n/chemistry/en.json`    | The chemistry's errors and warnings, shown as plain text                                                                                                    |
+| `client/public/i18n/safety/en.json`       | The words of who to call in an emergency, shown as plain text                                                                                               |
+| `client/public/i18n/regions/en.json`      | Notes in the region data (silica limits, food-contact rules, shops), as plain text                                                                          |
+| `client/public/i18n/records/en.json`      | The standard materials' notes and hazards, and the advice page, shown as plain text                                                                         |
+| `client/public/i18n/guides/<guide>/en.md` | The guides, whole documents in Markdown (five in every language; the John Britt companion stays English, the teaching guide is English and Japanese so far) |
+| `data/famous-glazes/<slug>.json`          | Each famous glaze's names and prose, per language inside the one file (docs/famous-glazes.md)                                                               |
+| `server/lib/account_mail.ts`              | The emails about a password, and the one after an account is deleted, in code                                                                               |
 
 A translation file has the same keys as the English, nothing more. A message left out shows in English, so a file
 can be translated in parts.
@@ -28,6 +29,11 @@ can be translated in parts.
 Each language has a style sheet and glossary in `docs/translations/<code>.md`. **Use its terms every time**: a potter
 should meet one word for one thing across the app and the guides. The glossary was built from suppliers' catalogues and
 potters' sources in the language, and records the false friends.
+
+**Round 14 catch-up (2026-11-04):** all 56 languages were brought up to the round's English (famous glazes, the dry
+SG estimate, the Stull chart, the teaching guide's card, the new materials) in five language groups, each language
+back-translated blind and the differences fixed. See
+[process/README.md](process/README.md#round-14-catch-up-all-56-languages).
 
 ## Rules for every message
 

@@ -61,27 +61,29 @@ Hlavné nebezpečenstvo olova je iné: nie jedna lyžica, ale malé množstvá p
 
 ## Skladovanie surovín doma {#storing-materials}
 
-Pravidlá skladovania surovín na glazúry{{en: glaze materials}} doma nestanovuje žiadny úradný orgán, ale stránky o ochrane zdravia a bezpečnosti sa zhodujú: pracujte vo vlastnom priestore, ďalej od detí. Ministerstvo zdravotníctva štátu Pensylvánia v texte o záľubách, pri ktorých sa používa olovo, radí: „Na svoju záľubu používajte vyhradený pracovný priestor alebo garáž a deti držte od tohto miesta ďalej.“
+Žiadny úradný orgán nestanovuje pravidlá pre skladovanie surovín na glazúry doma, ale stránky o zdraví a bezpečnosti sa zhodujú: prácu majte v samostatnom priestore, mimo dosahu detí. Ministerstvo zdravotníctva Pensylvánie v texte o záľubách, pri ktorých sa používa olovo, radí: „Na svoju záľubu používajte vyhradený pracovný priestor alebo garáž a deti držte mimo tohto priestoru.“
 
 ### Kontrolný zoznam na skladovanie
 
-Sú to všeobecné pravidlá prevencie otráv, použité na glazúry. Nestanovuje ich žiadna keramická norma, ale navrhujeme dodržiavať všetky:
+Toto sú všeobecné pravidlá prevencie otráv, použité na glazúry. Žiadna keramická norma ich nestanovuje, ale odporúčame všetky:
 
-- Suché suroviny majte zamknuté: v skrinke alebo v miestnosti, garáži či kôlni, ktorá sa zamyká. Vysoká polica pomôže, ale deti šplhajú. Ak môžete spočiatku zamknúť len niekoľko vecí, začnite rozpustnými surovinami a farbivami.
-- Suroviny majte v pôvodných vreciach alebo vedierkach. Ak niektorú presypete do inej nádoby, označte ju názvom presne tak, ako je napísaný na vreci.
-- Na suroviny na glazúry nikdy nepoužívajte obaly od jedla alebo nápojov (kelímky od jogurtu, poháre, fľaše), ani keď sú označené. Dieťa vie, čo je v kelímku od jogurtu.
-- Pomôcky z dielne (lopatky, lyžice, metličky, sitá, váhy) majte v dielni. Kuchynské pomôcky nikdy nepoužívajte na glazúru ani pomôcky na glazúru na jedlo.
-- Mokré glazúry majte v označených vedrách s nasadenými vekami.
-- Kartu bezpečnostných údajov každej suroviny majte pri nej, na papieri alebo v telefóne.
-- V kuchyni nemajte nič z dielne: žiadne vrecia, vedrá, pomôcky ani skúšobné doštičky{{en: test tiles}}.
+- Suché suroviny majte zamknuté: v skrinke alebo v miestnosti, garáži či kôlni, ktorá sa zamyká. Vysoká polica pomôže, ale deti lezú. Ak môžete spočiatku zamknúť len niekoľko vecí, začnite rozpustnými surovinami a farbivami.
+- Suroviny uchovávajte v pôvodných vreciach alebo nádobách. Ak niektorú presypete do inej nádoby, označte ju názvom presne tak, ako je napísaný na vreci.
+- Nikdy nepoužívajte na suroviny na glazúry nádoby od jedla alebo nápojov (kelímky od jogurtu, poháre, fľaše), ani označené. Dieťa vie, čo býva v kelímku od jogurtu.
+- Náradie z dielne (naberačky, lyžice, metličky, sitá, váhy) nechávajte v dielni. Nikdy nepoužívajte kuchynské náradie na glazúru ani náradie na glazúru na jedlo.
+- Namiešané glazúry uchovávajte v označených vedrách so zatvorenými vekami.
+- Kartu bezpečnostných údajov každej suroviny majte uloženú pri nej, na papieri alebo v telefóne.
+- V kuchyni nemajte nič z dielne: žiadne vrecia, vedrá, náradie ani skúšobné doštičky.
 
-Podrobnejšie o nákupe a skladovaní surovín sa dočítate v návode [Ako pripraviť glazúru](/guides/making-a-glaze).
+Podrobnejšie o nákupe a skladovaní surovín píše návod [Ako pripraviť glazúru](/guides/making-a-glaze).
 
 ### Odpad z glazúry a voda z oplachovania
 
-Glazúru ani vodu, v ktorej ste oplachovali pomôcky od glazúry, nikdy nevylievajte do umývadla ani na záhradu. Britská organizácia Crafts Council navrhuje mať na umývanie rúk, štetcov, sít a pomôcok samostatné vedro s vodou. Nechajte ho cez noc odstáť, číru vodu zlejte, potom usadenú glazúru vysušte a vyhoďte do smetí (skončí na skládke), nikdy nie do odtoku.
+Nikdy nevylievajte glazúru ani vodu, v ktorej ste oplachovali náradie od glazúry, do umývadla ani do záhrady. Britská rada pre remeslá (Crafts Council) odporúča samostatné vedro s vodou na umývanie rúk, štetcov, sít a náradia. Nechajte ho cez noc usadiť, zlejte čistú vodu, potom usadenú glazúru vysušte a vyhoďte do odpadu (skončí na skládke), nikdy nie do odtoku.
 
-Navrhujeme toto vedro prikryť vekom: kal obsahuje rovnaké kovy ako glazúra a zvieratá pijú stojatú vodu. Pravidlá likvidácie sa na rôznych miestach líšia, preto si pozrite kartu bezpečnostných údajov každého výrobku, a ak máte pochybnosti, opýtajte sa na miestnom obecnom úrade alebo vo vodárenskej spoločnosti.
+Odporúčame na toto vedro veko: kal obsahuje tie isté kovy ako glazúra a domáce zvieratá pijú stojatú vodu. Pravidlá likvidácie sa na rôznych miestach líšia, preto si pozrite kartu bezpečnostných údajov každého výrobku, a ak si nie ste istí, opýtajte sa na miestnom úrade alebo vo vodárenskej spoločnosti.
+
+Niektoré dielne vysušený kal pred vyhodením vypália. Dajú ho do starej misky, ktorú obetujú: po výpale sa miska už nedá znova použiť. Misku naplňte len do štvrtiny, pretože kal sa pri tavení spení a bublá, a prikryte ju tanierom. Postavte ju na dosku s ochranným náterom alebo na starú platňu pre prípad, že pretečie. Výpal premení kal na sklo, ktoré drží kovy oveľa pevnejšie ako sypký prášok, takže je na skládke bezpečnejší. So suchým kalom zaobchádzajte ako so suchou glazúrou: s respirátorom a bez vytvárania prachu.
 
 ## Ako udržať prach v dielni {#keeping-dust-in-the-studio}
 

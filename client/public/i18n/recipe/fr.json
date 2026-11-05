@@ -724,7 +724,7 @@
     "keyBright": "Ligne pointillée : là où les émaux de Stull étaient les plus brillants.",
     "keyLimits": "Lignes en tirets et zone grisée : les plages de silice et d’alumine de {name}.",
     "keyCrazed": "Hachures : là où ils tressaillaient.",
-    "note": "Un repère, pas une prédiction. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuisait au cône 11 avec des fondants fixés à 0,3 K₂O et 0,7 CaO ; d’autres fondants et d’autres cuissons déplacent les régions, et un mat sous-cuit peut se placer comme brillant. Les régions sont telles que Glazy les dessine."
+    "note": "Un repère, pas une prédiction. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuisait vers le cône 11, avec des fondants fixés à 0,3 K₂O et 0,7 CaO ; d’autres fondants et d’autres cuissons déplacent les régions, et un émail qui n’est mat que parce qu’il est sous-cuit peut quand même se placer dans la région brillante. Les régions sont tracées comme sur Glazy."
   },
   "slurry": {
     "heading": "Densité et eau",
@@ -752,7 +752,17 @@
       "pint": "Le poids de la pinte voulu, oz"
     },
     "drySg": "Densité des matières sèches",
-    "drySgHelp": "Environ 2,5 pour la plupart des émaux ; Glazy utilise 2,6.",
+    "drySgEmpty": "Seuls les poids secs en ont besoin, pas l’eau à ajouter. Saisissez-la si vous la connaissez.",
+    "drySgNeeded": "Saisissez la densité des matières sèches pour voir l’émail sec contenu dans le seau et l’eau pour une nouvelle préparation.",
+    "estimate": {
+      "mineral": "Une estimation, {sg}, tirée de la composition de chaque matière : la densité mesurée de son minéral. Modifiez-la si vous savez mieux.",
+      "kind": "Une estimation, {sg} : les feldspaths et les argiles ont une densité d’environ 2,6. Modifiez-la si vous savez mieux.",
+      "glass": "Une estimation, {sg}, calculée à partir des oxydes des frittes (ce sont des verres). Modifiez-la si vous savez mieux.",
+      "mixed": "Une estimation, {sg}, tirée de chaque matière : la densité mesurée de son minéral, environ 2,6 pour les feldspaths et les argiles, et pour les frittes un calcul à partir de leurs oxydes. Modifiez-la si vous savez mieux.",
+      "leftOut": "Non comptées, car leur densité est inconnue : {names}.",
+      "none": "Pas d’estimation pour cette recette, faute de densité connue pour : {names}. Saisissez-la si vous la connaissez.",
+      "was": "Votre valeur est utilisée. L’estimation était de {sg} ; videz le champ pour y revenir."
+    },
     "batch": "Émail sec pour une nouvelle préparation, {unit}",
     "contents": "À la densité {sg}, le seau contient {glaze} d’émail sec et {water} d’eau.",
     "add": "Pour atteindre la densité {target}, ajoutez {water} d’eau. Vous obtenez environ {volume}.",
@@ -760,6 +770,7 @@
     "already": "Il est déjà à la densité {target}.",
     "mix": "Mélangez {glaze} d’émail sec avec {water} d’eau pour obtenir environ {volume} à la densité {target}.",
     "badSg": "Une densité doit être supérieure à 1 (celle de l’eau) et inférieure à celle des matières sèches, {dry}.",
+    "badSgWater": "Une densité doit être supérieure à 1 (celle de l’eau).",
     "badDry": "La densité des matières sèches doit être supérieure à 1.",
     "note": "L’eau est comptée en poids : un litre pèse un kilogramme, un gallon US environ 8,3 lb. Le calcul additionne les volumes, ce qui est proche, mais pas exact : ajoutez l’eau peu à peu, remuez et mesurez de nouveau. Deux émaux de même densité peuvent quand même s’écouler différemment.",
     "saveTarget": "Enregistrer la densité {sg} comme cible de cette recette",

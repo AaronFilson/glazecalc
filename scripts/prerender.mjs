@@ -18,7 +18,8 @@
 // The build fails if a page logs an error, is the not-found page, has little text,
 // has a script the browser build's policy does not know, is over MAX_GZIPPED, or
 // (the advice page) lacks any of the standard advice, (the materials list) lacks
-// a link to a material's page, or (the cone chart) lacks its figures.
+// a link to a material's page, or (the cone chart) lacks its figures. A material's page with English standing
+// in (englishStandsIn) does not fail it: it is written and listed in material-fallback.json beside the pages.
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
@@ -37,19 +38,26 @@ const BROWSER = path.join(OUT, 'browser');
 const PRERENDERED = path.join(OUT, 'prerendered');
 const BUNDLE = path.join(ROOT, 'dist', 'prerender', 'server', 'main.server.mjs');
 
-/** Workers rendering at the same time, at most. */
-const WORKERS = 4;
+/**
+ * Workers rendering at the same time, at most: PRERENDER_WORKERS where set (a larger CI runner), or 4, which
+ * a 4-core runner fills. Each render is one thread's work, and about 11,000 pages take a few minutes.
+ */
+const WORKERS = Number(process.env.PRERENDER_WORKERS) || 4;
 /** Failed pages named in the error; the rest are counted. */
 const SHOWN = 12;
 /** A page with less text than this did not render its content. */
 export const MIN_TEXT = 300;
 
 /**
- * A page larger than this, gzipped, carries more than it shows: the largest, a
- * Greek guide, is about 83 kB; the advice page was 121 kB while it carried
- * every standard record's words (scripts/advice-i18n.mjs).
+ * A page larger than this, gzipped, carries more than it shows. The advice page
+ * was 121 kB while it carried every standard record's words
+ * (scripts/advice-i18n.mjs). Raised from 100 kB in round 14 (owner's decision,
+ * 2026-11-04): the fully translated glazing-basics guide in the Indic scripts
+ * (3 bytes a character) came to just over 100 kB, its own text being 22–25 kB
+ * of it; replies are sent brotli-compressed, smaller than gzip. Making guide
+ * pages lighter (the guide's text carried twice) is for a later round.
  */
-export const MAX_GZIPPED = 100 * 1024;
+export const MAX_GZIPPED = 120 * 1024;
 
 /** The standard advice's titles, which the advice page must show (data/advice.ndjson). */
 const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf8')
@@ -110,6 +118,21 @@ export function pageProblems(html, page, code = 'en') {
     }
   }
   return found;
+}
+
+/**
+ * Why a material's page in a language other than English has English standing in, or null when it has none:
+ * the notice that the page is not translated, or a note in English (material-info-page.ts marks one lang="en").
+ * Such a page does not fail the build: it is written for readers and listed in material-fallback.json, and the
+ * server keeps it out of that language's index (lib/pages.js englishOnlyIn).
+ */
+export function englishStandsIn(html, page, code) {
+  if (code === 'en' || !pages.MATERIAL_PAGES.includes(page)) return null;
+  const root = /<gc-root\b[\s\S]*<\/gc-root>/.exec(html)?.[0] ?? html;
+  const main = root.replace(/<footer\b[\s\S]*?<\/footer>/g, ' ');
+  if (/<p\b[^>]*class="guide-note"/.test(main)) return 'it carries the notice that it is not translated';
+  if (/<p\b[^>]*\blang="en"/.test(main)) return 'a note is in English';
+  return null;
 }
 
 /** Stands for the nonce in a page (client/app/app.config.server.ts); the server swaps it. */
@@ -255,7 +278,13 @@ async function renderAll({ jobs, start, faces }) {
       const file = pages.prerenderedFile(code, page);
       await mkdir(path.dirname(path.join(PRERENDERED, file)), { recursive: true });
       await writeFile(path.join(PRERENDERED, ...file.split('/')), html);
-      results.push({ url, file, size: Buffer.byteLength(html) });
+      // A material's page with English in it, as drawn or as records/ has it (a hazard is not marked lang="en").
+      const fallback =
+        englishStandsIn(html, page, code) ??
+        (pages.MATERIAL_PAGES.includes(page) && !pages.materialTranslatedIn(page, code)
+          ? 'records/ lacks a translation of a note or hazard'
+          : null);
+      results.push({ url, file, size: Buffer.byteLength(html), ...(fallback && { code, page, fallback }) });
     } catch (error) {
       results.push({ url, problems: [error instanceof Error ? error.message : String(error)] });
     }
@@ -294,8 +323,8 @@ export async function prerender({ build = true, codes = languages.LIVE_LANGUAGES
   if (!faces.length) throw new Error("The stylesheet's text fonts were not found.");
   await rm(PRERENDERED, { recursive: true, force: true });
 
-  // The cone chart and the list of materials are rendered in the languages they are translated into
-  // (REFERENCE_LANGUAGES), a material's page in English alone (lib/pages.js).
+  // The cone chart, the list of materials and each material's page are rendered in the languages they are
+  // translated into (REFERENCE_LANGUAGES, lib/pages.js).
   const jobs = codes.flatMap((code) =>
     only
       .filter((page) => pages.prerenderLanguages(page, [code]).length)
@@ -317,9 +346,20 @@ export async function prerender({ build = true, codes = languages.LIVE_LANGUAGES
   }
   const sizes = new Map(results.map((result) => [result.file, result.size]));
   const largest = [...sizes].sort((a, b) => b[1] - a[1])[0];
+  // The material pages with English standing in, by language, for the server (lib/pages.js materialFallback).
+  const fallback = {};
+  for (const result of results.filter((r) => r.fallback).sort((a, b) => a.url.localeCompare(b.url))) {
+    (fallback[result.code] ??= []).push(result.page);
+  }
+  await writeFile(pages.MATERIAL_FALLBACK_FILE, JSON.stringify(fallback, null, 2) + '\n');
+  const fallbacks = results.filter((r) => r.fallback);
   console.log(
     `Prerendered ${sizes.size} pages in ${((Date.now() - started) / 1000).toFixed(1)} s; ` +
-      `the largest is ${largest[0]} at ${(largest[1] / 1024).toFixed(1)} kB.`
+      `the largest is ${largest[0]} at ${(largest[1] / 1024).toFixed(1)} kB. ` +
+      (fallbacks.length
+        ? `${fallbacks.length} material page(s) have English standing in and stay out of their language's index, ` +
+          `such as ${fallbacks[0].url} (${fallbacks[0].fallback}).`
+        : 'No material page has English standing in.')
   );
   return sizes;
 }

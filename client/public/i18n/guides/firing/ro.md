@@ -89,16 +89,16 @@ Label: Tabelul conurilor Orton
 | Con | Lentă, {{27 °F/h; 15 °C/h}} | Medie, {{108 °F/h; 60 °C/h}} | Rapidă, {{270 °F/h; 150 °C/h}} |
 | --- | --------------------------: | ---------------------------: | -----------------------------: |
 | 022 |                           – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018 |                           – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015 |                           – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018 |         {{1267 °F; 686 °C}} |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015 |         {{1382 °F; 750 °C}} |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010 |         {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08  |         {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07  |                           – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07  |         {{1764 °F; 962 °C}} |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06  |         {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05  |        {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04  |        {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03  |        {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02  |                           – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02  |        {{1972 °F; 1078 °C}} |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01  |        {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1   |        {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4   |        {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,12 +460,12 @@ Un cuptor cu comandă manuală urmează același plan, de mână: uscați încet
 
 ## Arderea de glazură {#glaze}
 
-**Arderea de glazură**{{en: glaze firing}} topește glazura{{en: glaze}} și o transformă în sticlă pe biscuit{{en: bisque}}. Majoritatea începătorilor ard glazuri de temperatură joasă la conul{{en: cone}} 06–04 sau glazuri de temperatură medie la conul 5–6. Ardeți la conul indicat pe etichetele argilei și ale glazurii, cu un set de conuri{{en: cone pack}} în jurul acelui număr. Pentru ce se întâmplă în glazură când se topește, vedeți ghidul [Bazele glazurării](/guides/glazing-basics).
+**Arderea de glazură**{{en: glaze firing}} topește glazura{{en: glaze}} și o transformă în sticlă pe biscuit{{en: bisque}}. Majoritatea glazurilor de temperatură joasă din comerț sunt făcute pentru conul{{en: cone}} 06 sau 05 (intervalul de temperatură joasă este conul 06–04), iar majoritatea glazurilor de temperatură medie pentru conul 5–6. Ardeți la conul indicat pe etichetele glazurii și ale argilei, cu un set de conuri{{en: cone pack}} în jurul acelui număr. Pentru ce se întâmplă în glazură când se topește, vedeți ghidul [Bazele glazurării](/guides/glazing-basics).
 
 ### Încărcarea pentru arderea de glazură
 
 - Piesele glazurate nu trebuie să se atingă între ele sau de pereți: lăsați aproximativ ½ țol (13 mm).
-- Nu lăsați glazură pe piciorul piesei (**picior neglazurat**) sau așezați piesele de temperatură joasă pe **trepiede**, suporturi mici cu vârfuri. Gresia{{en: stoneware}} și porțelanul nu ar trebui așezate pe trepiede, care la aceste temperaturi se înfig în piese; folosiți în schimb strat protector (kiln wash) pentru temperatură înaltă sau nisip cuarțos.
+- Lăsați piciorul piesei fără glazură (**picior neglazurat**) sau așezați piesele de temperatură joasă pe **trepiede**, suporturi mici cu vârfuri. Gresia{{en: stoneware}} și porțelanul nu ar trebui așezate pe trepiede, care la aceste temperaturi se înfig în piese; folosiți în schimb strat protector (kiln wash) pentru temperatură înaltă sau nisip cuarțos.
 - Lăsați cel puțin 1 țol (25 mm) între marginile plăcilor și perete sau Kiln-Sitter.
 
 ### Programele controlerului
@@ -493,7 +493,7 @@ Slow Glaze este alegerea implicită mai sigură, având în vedere avertismentul
 
 ### Conul 6: răcire și menținere (drop-and-hold)
 
-Glazurile de temperatură medie ies uneori cu **înțepături**{{en: pinholes}} (găuri minuscule în suprafață) sau cu bule sparte, lăsate de gazele care ies din topitură. Un program de **răcire și menținere (drop-and-hold)** urcă până la temperatura maximă, răcește repede cu aproximativ {{100 °F; 56 °C}} și menține acolo. După cum spune Digitalfire, „Coborârea cu 100°F și menținerea dau topiturii destulă vâscozitate pentru a sparge bulele, lăsându-le totuși să se închidă.”
+Glazurile de temperatură medie ies uneori cu **înțepături**{{en: pinholes}} (găuri minuscule în suprafață) sau cu bășici, lăsate de gazele care ies din topitură. Un program de **răcire și menținere (drop-and-hold)** urcă până la temperatura maximă, răcește repede cu aproximativ {{100 °F; 56 °C}} și menține acolo. După cum spune Digitalfire, „Coborârea cu 100°F și menținerea dau topiturii destulă vâscozitate pentru a sparge bulele, lăsându-le totuși să se închidă.”
 
 Table: Digitalfire PLC6DS, conul 6, răcire și menținere
 Label: Digitalfire PLC6DS

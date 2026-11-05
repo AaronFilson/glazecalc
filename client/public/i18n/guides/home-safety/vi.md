@@ -79,9 +79,11 @@ Không cơ quan chính thức nào đặt ra quy tắc cất giữ nguyên liệ
 
 ### Chất thải men và nước rửa
 
-Tuyệt đối không đổ men, hay nước bạn đã rửa dụng cụ làm men, xuống bồn rửa hoặc ra vườn. Hội đồng Thủ công Anh (Crafts Council) gợi ý dùng một xô nước riêng để rửa tay, cọ, sàng và dụng cụ. Hãy để nó lắng qua đêm, đổ bớt nước trong, rồi làm khô men đã lắng và bỏ vào thùng rác (nó đi đến bãi chôn lấp), tuyệt đối không đổ xuống cống.
+Tuyệt đối không đổ men, hay nước bạn đã rửa dụng cụ làm men, xuống bồn rửa hoặc ra vườn. Hội đồng Thủ công Anh (Crafts Council) gợi ý dùng một xô nước riêng để rửa tay, cọ, sàng và dụng cụ. Hãy để nó lắng qua đêm, chắt hết phần nước trong ở trên, rồi làm khô men đã lắng và bỏ vào thùng rác (nó đi đến bãi chôn lấp), tuyệt đối không đổ xuống cống.
 
 Chúng tôi gợi ý đậy nắp xô đó: cặn bùn chứa cùng các kim loại như men, và thú cưng uống nước đọng. Các quy định xử lý khác nhau tùy nơi, nên hãy kiểm tra phiếu an toàn hóa chất của từng sản phẩm, và hỏi hội đồng địa phương hoặc công ty nước nếu bạn không chắc.
+
+Một số xưởng nung cặn khô trước khi vứt bỏ. Họ cho nó vào một cái bát dự phòng sẽ bỏ đi: sau lần nung, bát không thể dùng lại. Chỉ đổ đầy bát một phần tư, vì cặn sủi bọt và phồng lên khi nóng chảy, và đậy nó bằng một cái đĩa. Đặt nó trên một tấm kê đã phủ lớp chống dính hoặc một tấm dự phòng, phòng khi nó tràn ra. Lần nung biến cặn thành thủy tinh, giữ kim loại chặt hơn nhiều so với bột rời, nên an toàn hơn ở bãi chôn lấp. Hãy xử lý cặn khô như men khô, với khẩu trang lọc bụi đạt chuẩn và không làm bụi bay lên.
 
 ## Giữ bụi trong xưởng {#keeping-dust-in-the-studio}
 

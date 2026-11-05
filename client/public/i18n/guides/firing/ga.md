@@ -89,16 +89,16 @@ Label: Tábla cón Orton
 | Cón | Mall, {{27 °F/h; 15 °C/h}} | Meánach, {{108 °F/h; 60 °C/h}} | Tapa, {{270 °F/h; 150 °C/h}} |
 | --- | -------------------------: | -----------------------------: | ---------------------------: |
 | 022 |                          – |            {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018 |                          – |            {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015 |                          – |            {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 018 |        {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015 |        {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
 | 010 |        {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
 | 08  |        {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07  |                          – |            {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 07  |        {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
 | 06  |        {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
 | 05  |       {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
 | 04  |       {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
 | 03  |       {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02  |                          – |           {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 02  |       {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
 | 01  |       {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
 | 1   |       {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
 | 4   |       {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
@@ -460,12 +460,12 @@ Leanann áith láimhe an plean céanna de láimh: triomaigh go mall agus an clú
 
 ## Bácáil glónra {#glaze}
 
-Leánn an bhácáil glónra{{en: glaze firing}} an glónra{{en: glaze}} ina ghloine ar na brioscghréithe{{en: bisque}}. Bácálann formhór na dtosaitheoirí glónraí ísealbhácála ag cón{{en: cone}} 06–04 nó glónraí meánbhácála ag cón 5–6. Bácáil go dtí an cón atá ar lipéid do chré agus do ghlónra, le paca cón{{en: cone pack}} thart ar an uimhir sin. Chun a fháil amach cad a tharlaíonn taobh istigh den ghlónra agus é ag leá, féach an treoirleabhar [Glónrú ó bhunphrionsabail](/guides/glazing-basics).
+Leánn an bhácáil glónra{{en: glaze firing}} an glónra{{en: glaze}} ina ghloine ar na brioscghréithe. Déantar formhór na nglónraí ísealbhácála atá ar an margadh do chón{{en: cone}} 06 nó 05 (téann an raon ísealbhácála ó chón 06 go 04), agus formhór na nglónraí meánbhácála do chón 5–6. Bácáil go dtí an cón atá ar lipéid do ghlónra agus do chré, le paca cón{{en: cone pack}} thart ar an uimhir sin. Le haghaidh a dtarlaíonn taobh istigh den ghlónra agus é ag leá, féach an treoirleabhar [Glónrú ó bhunphrionsabail](/guides/glazing-basics).
 
-### An áith a lódáil do bhácáil glónra
+### Lódáil do bhácáil glónra
 
-- Ní mór gan píosaí glónraithe teagmháil a dhéanamh lena chéile ná leis na ballaí: fág thart ar ½ orlach (13 mm) eatarthu.
-- Coinnigh glónra den bhonn (**an bonn a fhágáil gan glónra**), nó cuir gréithe ísealbhácála ar **chosa taca**, seastáin bheaga a bhfuil rinn orthu. Níor cheart d’earraí cruachré{{en: stoneware}} ná do phoirceallán seasamh ar chosa taca, mar go dtéann na cosa taca isteach sna píosaí ag na teochtaí sin; úsáid brat seilfe ardbhácála nó gaineamh silice{{en: silica}} ina n-áit.
+- Ní mór gan píosaí glónraithe teagmháil a dhéanamh lena chéile ná leis na ballaí: fág thart ar ½ orlach (13 mm).
+- Coinnigh an glónra den bhonn (**an bonn a fhágáil gan glónra**), nó cuir gréithe ísealbhácála ar **chosa taca**{{en: stilts}}, seastáin bheaga le rinn orthu. Níor cheart d’earraí cruachré ná do phoirceallán seasamh ar chosa taca, a théann isteach iontu ag na teochtaí sin; úsáid brat seilfe{{en: kiln wash}} ardbhácála nó gaineamh silice ina n-áit.
 - Fág 1 orlach (25 mm) ar a laghad idir imill na seilfeanna agus an balla nó an Kiln-Sitter.
 
 ### Cláir bhácála don rialaitheoir
@@ -480,22 +480,22 @@ Label: Réamhshocruithe glónra
 | 3                      |                              An bhuaicteocht |         {{120 °F/h; 67 °C/h}} |        {{200 °F/h; 111 °C/h}} |
 | Am téimh, áith fholamh |                                              | Thart ar 6½–7½ uair an chloig | Thart ar 3–4 huaire an chloig |
 
-Table: An áit a gcríochnaíonn deighleoga 2 agus 3, de réir cóin (L&L agus Bartlett)
+Table: Cá gcríochnaíonn deighleoga 2 agus 3, de réir cóin (L&L agus Bartlett)
 Label: Spriocanna na réamhshocruithe
 
-| Cón | Críoch deighleoige 2 |          Buaicteocht |
-| --- | -------------------: | -------------------: |
-| 06  |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04  |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6   | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cón | Críochnaíonn deighleog 2 |      An bhuaicteocht |
+| --- | -----------------------: | -------------------: |
+| 06  |      {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |      {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   |     {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Is é Slow Glaze an ghnáthrogha is sábháilte, i bhfianaise rabhadh L&L faoi bhácáil thapa. Má chuireann tú coinneáil{{en: hold}} níos faide ná 5–10 nóiméad leis ag an mbuaicteocht, deir L&L an sprioc nó an ceartú cóin a ísliú dá réir, agus tugann sé faoi deara: “Brostaíonn coinneáil ag teochtaí arda caitheamh na n-eilimintí agus an teirmeachúpla.”
+Is é Slow Glaze an rogha réamhshocraithe is sábháilte, i bhfianaise rabhadh L&L faoi bhácáil thapa. Má chuireann tú coinneáil{{en: hold}} níos faide ná 5–10 nóiméad leis ag an mbuaicteocht, deir L&L an sprioc nó an ceartú cóin a ísliú dá réir, agus tugann sé faoi deara go “luathaíonn coinneáil ag teochtaí arda caitheamh na n-eilimintí agus an teirmeachúpla”.
 
 ### Cón 6: titim agus coinneáil
 
-Uaireanta tagann glónraí meánbhácála amach le **poill bhioráin**{{en: pinholes}} (poill bhídeacha sa dromchla) nó le cloig, a d’fhág gás ag boilgearnach as an leátán. Bácálann clár **titim agus coinneáil**{{en: drop-and-hold}} go dtí an bhuaicteocht, fuaraíonn sé go tapa thart ar {{100 °F; 56 °C}} agus coinníonn sé an teocht ansin. Mar a deir Digitalfire: “Má ísltear an teocht 100°F agus má choinnítear ansin í, bíonn dóthain slaodachta sa leátán chun boilgeoga a phléascadh agus fós ligean dóibh cneasú.”
+Uaireanta tagann glónraí meánbhácála amach le **poill bhioráin**{{en: pinholes}} (poill bheaga bídeacha sa dromchla) nó le cloig, a fhágann gás ag boilgearnach as an leátán. Bácálann clár **titim agus coinneáil**{{en: drop-and-hold}} go dtí an barr, fuaraíonn sé go tapa thart ar {{100 °F; 56 °C}} agus coinníonn sé ansin é. I bhfocail Digitalfire, “Nuair a thiteann an teocht 100°F agus nuair a choinnítear ansin í, bíonn an leátán slaodach go leor chun boilgeoga a phléascadh agus fós ligean dóibh cneasú.”
 
-Table: PLC6DS ó Digitalfire, titim agus coinneáil do chón 6
+Table: PLC6DS Digitalfire, titim agus coinneáil do chón 6
 Label: PLC6DS Digitalfire
 
 | Céim |                           Ráta |               Sprioc | Coinneáil                                                    |
@@ -505,26 +505,26 @@ Label: PLC6DS Digitalfire
 | 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 nóiméad; níos faide in áitheanna móra                     |
 | 4    | Síos ag {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 nóiméad                                                   |
 
-Tógann PLC6DS thart ar 9 n-uaire an chloig agus 36 nóiméad. Do ghlónraí níos sreabhaí, ísleann Digitalfire an teocht thart ar {{200 °F; 111 °C}} ina áit sin; má ísltear rófhada í, “bíonn baol criostalaithe ann le linn na coinneála”. Tá a bhuaicteocht, {{2200 °F; 1204 °C}}, faoi bhun {{2232 °F; 1222 °C}} an tábla do chón 6; tuairiscíonn Digitalfire go sroicheann formhór na n-áitheanna cón 6 ag thart ar {{2200 °F; 1204 °C}}. Seiceáil é le paca cón i d’áith féin.
+Tógann PLC6DS thart ar 9 n-uaire an chloig agus 36 nóiméad. Do ghlónraí níos sreabhaí, ligeann Digitalfire don teocht titim thart ar {{200 °F; 111 °C}} ina áit sin; má thiteann sí rófhada “tá baol criostalaithe le linn na coinneála”. Tá a bhuaicteocht, {{2200 °F; 1204 °C}}, faoi bhun {{2232 °F; 1222 °C}} an tábla do chón 6; tuairiscíonn Digitalfire go sroicheann formhór na n-áitheanna cón 6 ag thart ar {{2200 °F; 1204 °C}}. Seiceáil é le paca cón i d’áith féin.
 
 ### Fuarú mall
 
-Ciallaíonn **fuarú mall** go bhfuaraíonn an rialaitheoir an áith ag ráta socraithe in ionad ligean don teocht titim go saor. Is éard atá sa chlár C6DHSC ó Digitalfire ná PLC6DS agus ina dhiaidh sin fuarú ag {{150 °F/h; 83 °C/h}} ó {{2100 °F; 1148 °C}} síos go {{1400 °F; 760 °C}}, agus ansin múchadh. “Feabhsaíonn sé gléigile agus cáilíocht an dromchla” agus cabhraíonn sé le goirm rúitíle, ach féadann fuarú mall “an neamhlonracht a mhéadú” (d’éirigh glónra neamhlonrach amháin tirim) agus féadann sé saol athsheachadán na háithe a ghiorrú. Cuireann L&L clár fuaraithe mhoill do chón 6 ar fáil freisin:
+Is éard is **fuarú mall**{{en: slow cooling}} ann ná go bhfuaraíonn an rialaitheoir an áith ag ráta socraithe seachas ligean di titim go saor. Is ionann C6DHSC Digitalfire agus PLC6DS agus fuarú ina dhiaidh ag {{150 °F/h; 83 °C/h}} ó {{2100 °F; 1148 °C}} síos go {{1400 °F; 760 °C}}, agus ansin múchadh. “Feabhsaíonn sé an loinnir agus cáilíocht an dromchla” agus cabhraíonn sé le goirm rúitíle, ach “is féidir le fuarú mall an dromchla a dhéanamh níos neamhlonraí” (d’éirigh glónra neamhlonrach amháin tirim) agus is féidir leis saol athsheachadán na háithe a ghiorrú. Cuireann L&L clár fuaraithe mhall do chón 6 ar fáil freisin:
 
-Table: L&L “User 6”: fuarú mall do ghlónraí cón 6
+Table: “User 6” L&L: fuarú mall do ghlónraí chón 6
 Label: Fuarú mall L agus L
 
 | Céim |                          Ráta |               Sprioc |
 | ---- | ----------------------------: | -------------------: |
-| 1    |             Suas faoi lánluas | {{2232 °F; 1222 °C}} |
-| 2    |             Síos faoi lánluas | {{1900 °F; 1038 °C}} |
+| 1    |                 Suas, lánluas | {{2232 °F; 1222 °C}} |
+| 2    |                 Síos, lánluas | {{1900 °F; 1038 °C}} |
 | 3    | Síos ag {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Ar an gcaoi chéanna, tugann rialaitheoirí Skutt rogha réamhthéimh agus rogha fuaraithe aonchéime.
+Ar an gcaoi chéanna, tá réamhthéamh agus rogha fuaraithe aonchéime ar rialaitheoirí Skutt.
 
 ### Ar áith láimhe
 
-Ní féidir le háith láimhe na cláir bhácála seo a leanúint go beacht, ach is é an plean céanna é: go réidh ar dtús, go seasta tríd an lár, agus deireadh a mbítear ag faire air. Tá clár bácála Bracker's do ghlónraí ísealbhácála faoi ‘Áitheanna láimhe go mion’, thíos; do chóin níos teo, cuireann sé leis “15–30 nóiméad ar an meán do gach uimhir chóin”. Le piriméadar, cleachtadh agus taifead bácála, is féidir leat titim agus coinneáil nó fuarú mall a dhéanamh go garbh trí na lasca a chasadh síos de láimh, mar a mholann Digitalfire.
+Ní féidir le háith láimhe na cláir seo a leanúint go beacht, ach is é an plean céanna é: go réidh ar dtús, go seasta tríd an lár, agus deireadh faoi fhaire. Tá clár glónra ísealbhácála Bracker’s faoi ‘Áitheanna láimhe go mion’, thíos; do chóin níos teo cuireann sé leis “15–30 nóiméad ar an meán do gach uimhir chóin”. Le piriméadar, cleachtadh agus taifead, is féidir leat titim agus coinneáil nó fuarú mall a aithris go garbh trí na lasca a chasadh síos de láimh, mar a mholann Digitalfire.
 
 ## Áitheanna láimhe go mion {#manual-kilns}
 

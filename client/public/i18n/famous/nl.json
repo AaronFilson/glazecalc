@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Een deel van deze pagina is nog niet vertaald en wordt daarom in het Engels getoond.",
+  "index": {
+    "crumb": "Beroemde glazuren",
+    "title": "Beroemde glazuren",
+    "lead": "Glazuren die over de hele wereld bekend zijn, elk van zijn traditionele plaatselijke grondstoffen, met de Segerformule en een versie met de grondstoffen die verkocht worden waar u bent.",
+    "listHeading": "De glazuren",
+    "more": "Er komen meer glazuren: elk wordt toegevoegd zodra het recept en de grondstoffen steunen op minstens drie bronnen die zijn gelezen."
+  },
+  "glaze": {
+    "lead": "Een beroemd glazuur ({native}): het traditionele recept of de analyse, de stook, en een versie met de grondstoffen die verkocht worden waar u bent.",
+    "aboutHeading": "Over {name}",
+    "nativeName": "Oorspronkelijke naam",
+    "origin": "Waar",
+    "period": "Wanneer",
+    "firing": "Stook",
+    "cone": "kegel {cone}",
+    "historyOnly": "Alleen als geschiedenis: dit glazuur werd met lood gemaakt. De analyse wordt getoond als geschiedenis, niet als een recept om te mengen. De versie hieronder is een ander glazuur, zonder lood.",
+    "recipeHeading": "Het traditionele recept",
+    "material": "Grondstof",
+    "amount": "Hoeveelheid",
+    "unityHeading": "Segerformule",
+    "analysisHeading": "Historische analyse",
+    "oxide": "Oxide",
+    "percent": "Gewichtsprocent",
+    "useHeading": "Proberen",
+    "open": "Dit recept openen",
+    "openLeadFree": "De loodvrije versie openen",
+    "leadFreeTitle": "In de stijl van {name}, loodvrij",
+    "allLink": "Alle beroemde glazuren",
+    "safetyHeading": "Veiligheid",
+    "safeMixing": "Veilig mengen en ventileren",
+    "firingGuide": "Een eenvoudige oven stoken",
+    "makingGuide": "Een glazuur aanmaken",
+    "sourcesHeading": "Bronnen",
+    "link": "Openen",
+    "opened": "gelezen op {date}"
+  },
+  "local": {
+    "heading": "Met uw plaatselijke grondstoffen",
+    "leadFreeHeading": "Loodvrije versie",
+    "intro": "De Segerformule van het traditionele recept, gemaakt van de standaardgrondstoffen die verkocht worden waar u inkoopt. Kies waar u inkoopt om het te zien.",
+    "region": "Waar u grondstoffen inkoopt",
+    "proposal": "De eigen grondstoffen van het voorstel",
+    "pick": "Kiezen…",
+    "untested": "Berekend, nog niet proefgestookt.",
+    "testFirst": "Stook proefplaatjes voordat u het op enig werk gebruikt, en test een vlak dat met voedsel in aanraking komt op de afgifte van metalen.",
+    "untestedNote": "Berekend, nog niet proefgestookt: stook proefplaatjes vóór gebruik.",
+    "close": "Het komt dicht bij de streefformule.",
+    "fair": "Het komt redelijk dicht bij de streefformule.",
+    "poor": "Met deze grondstoffen komt u niet dicht bij de streefformule.",
+    "none": "Met de grondstoffen die daar verkocht worden, is het niet te maken.",
+    "choose": "Kies waar u grondstoffen inkoopt om het te zien, gemaakt van de grondstoffen die daar verkocht worden."
+  },
+  "atmospheres": {
+    "oxidation": "oxiderend",
+    "reduction": "reducerend",
+    "neutral": "neutraal",
+    "wood": "houtstook",
+    "salt": "zoutstook",
+    "soda": "sodastook"
+  }
+}

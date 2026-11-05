@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Parte desta página ainda não está traduzida, por isso aparece em inglês.",
+  "index": {
+    "crumb": "Vidrados famosos",
+    "title": "Vidrados famosos",
+    "lead": "Vidrados conhecidos em todo o mundo, cada um com as suas matérias-primas locais tradicionais, a sua fórmula de Seger e uma versão com as matérias-primas vendidas onde está.",
+    "listHeading": "Os vidrados",
+    "more": "Vêm aí mais vidrados: cada um é acrescentado quando a sua receita e as suas matérias-primas assentam em pelo menos três fontes que foram lidas."
+  },
+  "glaze": {
+    "lead": "Um vidrado famoso ({native}): a sua receita tradicional ou análise, a sua cozedura e uma versão com as matérias-primas vendidas onde está.",
+    "aboutHeading": "Sobre o vidrado {name}",
+    "nativeName": "Nome original",
+    "origin": "Onde",
+    "period": "Quando",
+    "firing": "Cozedura",
+    "cone": "cone {cone}",
+    "historyOnly": "Apenas história: este vidrado era feito com chumbo. A sua análise é mostrada como história, não como uma receita para preparar. A versão abaixo é um vidrado diferente, sem chumbo.",
+    "recipeHeading": "A receita tradicional",
+    "material": "Matéria-prima",
+    "amount": "Quantidade",
+    "unityHeading": "Fórmula de Seger",
+    "analysisHeading": "Análise histórica",
+    "oxide": "Óxido",
+    "percent": "% em peso",
+    "useHeading": "Experimentar",
+    "open": "Abrir esta receita",
+    "openLeadFree": "Abrir a versão sem chumbo",
+    "leadFreeTitle": "Estilo {name}, sem chumbo",
+    "allLink": "Todos os vidrados famosos",
+    "safetyHeading": "Segurança",
+    "safeMixing": "Mistura segura e ventilação",
+    "firingGuide": "Cozer num forno",
+    "makingGuide": "Como fazer um vidrado",
+    "sourcesHeading": "Fontes",
+    "link": "Abrir",
+    "opened": "lido em {date}"
+  },
+  "local": {
+    "heading": "Com as suas matérias-primas locais",
+    "leadFreeHeading": "Versão sem chumbo",
+    "intro": "A fórmula de Seger da receita tradicional, feita com as matérias-primas padrão vendidas onde compra. Escolha onde compra para a ver.",
+    "region": "Onde compra as matérias-primas",
+    "proposal": "As matérias-primas da própria proposta",
+    "pick": "Escolher…",
+    "untested": "Calculado, ainda não testado em cozedura.",
+    "testFirst": "Coza peças de teste antes de o usar em qualquer peça, e teste a libertação de metais numa superfície para alimentos.",
+    "untestedNote": "Calculado, ainda não testado em cozedura: coza peças de teste antes de o usar.",
+    "close": "Fica perto da fórmula pretendida.",
+    "fair": "Fica razoavelmente perto da fórmula pretendida.",
+    "poor": "Estas matérias-primas não conseguem chegar perto da fórmula pretendida.",
+    "none": "As matérias-primas vendidas aí não o conseguem fazer.",
+    "choose": "Escolha onde compra as matérias-primas para o ver feito com as que aí se vendem."
+  },
+  "atmospheres": {
+    "oxidation": "oxidação",
+    "reduction": "redução",
+    "neutral": "neutra",
+    "wood": "cozedura a lenha",
+    "salt": "cozedura com sal",
+    "soda": "cozedura com sódio"
+  }
+}

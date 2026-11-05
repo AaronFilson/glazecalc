@@ -9,6 +9,7 @@
     "homeSafety": "別讓家人中毒 - Glazecalc",
     "firing": "基本燒窯 - Glazecalc",
     "learnWithJohnBritt": "跟著 John Britt 的免費釉藥課程學習 - Glazecalc",
+    "teachingGlazeCalculation": "釉藥計算教學 - Glazecalc",
     "about": "關於 - Glazecalc",
     "privacy": "隱私權 - Glazecalc",
     "terms": "使用條款 - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "核准變更 - Glazecalc",
     "cones": "測溫錐溫度表：Orton 與 SK 測溫錐溫度 - Glazecalc",
     "materials": "標準釉藥原料：分析值與危害 - Glazecalc",
-    "materialInfo": "{name}：氧化物分析值與危害 - Glazecalc"
+    "materialInfo": "{name}：氧化物分析值與危害 - Glazecalc",
+    "famousGlazes": "名釉 - Glazecalc",
+    "famousGlaze": "{name}釉 - Glazecalc"
   },
   "nav": {
     "skip": "跳到主要內容",
@@ -169,7 +172,7 @@
     "notANumberPoint": "請輸入數字，例如 {example}，小數點用句點。"
   },
   "meta": {
-    "description": "輸入釉方，即可看到其塞格式（UMF）、矽鋁比與助熔劑比例。免費且開放原始碼，可記錄釉方、原料與燒窯紀錄。",
+    "description": "輸入陶瓷釉藥配方（釉方），即可計算塞格式（UMF）、矽鋁比與助熔劑比例。免費且開放原始碼的釉藥計算工具，可記錄釉方、原料與燒窯紀錄。",
     "guides": "寫給新手陶藝家的淺白指南：釉藥是什麼、如何安全調配、如何保護家人安全，以及如何燒基本的窯。",
     "glazingBasics": "釉藥由什麼組成、窯如何將其變成玻璃，以及測溫錐、熔塊、塞格式與釉面缺陷的意思。寫給新手陶藝家的指南。",
     "makingAGlaze": "如何購買、保存、秤量與調配釉藥，調出適當的釉層厚度，在自己的坯土上試燒，並做好紀錄，日後才能重做。",
@@ -177,16 +180,19 @@
     "homeSafety": "孩子或寵物吞下釉藥原料時該怎麼辦，以及如何讓原料、粉塵、窯與手作陶器對家人保持安全。",
     "firing": "如何燒電窯：選擇、擺放與判讀測溫錐，並依已發表的素燒與釉燒燒成曲線操作，附測溫錐對照表。",
     "learnWithJohnBritt": "John Britt 免費線上 Glaze Course 的配套指南：依單元列出他的影片，搭配可閱讀的 Glazecalc 指南，以及可在計算工具中嘗試的練習。",
+    "teachingGlazeCalculation": "6 堂課教塞格式：原料與三角配比試片、莫耳、從釉方算到塞格式再算回來，以及釉藥缺陷，附計算範例和可列印的學習單。",
     "advice": "關於調配、施釉與燒窯的實用訣竅，來自 Glazecalc，另有您自己的建議。免費提供給陶藝家使用。",
     "about": "Glazecalc 是免費、開放原始碼的釉藥化學計算工具與筆記本。了解 Glazecalc 如何算出塞格式，以及如何建置。",
     "privacy": "Glazecalc 如何處理您的資料：沒有廣告、沒有分析、沒有追蹤，也不出售任何資料。保存什麼、為什麼，以及如何行使您的權利。",
     "terms": "使用 Glazecalc 的條款：您自己的釉藥和工作可免費使用，對共用的伺服器保持公平，並依現狀提供。",
     "assistants": "透過 MCP 在 Claude、Copilot、Cursor 或 Gemini 中使用 Glazecalc：釉料化學、限值檢查、替代原料、指南，以及您自己的釉方。",
     "signup": "建立免費的 Glazecalc 帳戶，保存您的釉方、原料、筆記與燒窯紀錄。沒有廣告，也絕不出售您的資料。",
-    "cones": "022 號以上的 Orton 與 SK 測溫錐，列出以 °C 和 °F 表示的溫度、每張圖表對應的升溫速率，以及數值的出處。",
-    "materials": "Glazecalc 標準原料庫中的原料，從長石、黏土到熔塊和含硼原料，每種都附有氧化物分析值、塞格式和危害資訊。",
+    "cones": "022 號以上的 Orton 與 SK 測溫錐溫度對照表，列出以 °C 和 °F 表示的溫度、每張圖表對應的升溫速率，以及數值的出處。",
+    "materials": "Glazecalc 標準原料庫中的釉藥原料，從長石、黏土到熔塊和含硼原料，每種都附有氧化物分析值、塞格式和危害資訊。",
     "materialInfo": "{name}：Glazecalc 標準原料庫中的氧化物分析值、塞格式、燒失量和危害資訊。",
     "materialInfoLong": "{name}在 Glazecalc 釉藥原料標準庫中的資料：氧化物分析值、對塞格式的貢獻值、燒失量和危害資訊。",
+    "famousGlazes": "世界各地的名釉：每種釉的傳統釉方或歷史分析、塞格式，以及用您所在地販售的原料調出的版本。",
+    "famousGlaze": "{name}（{native}）釉：傳統釉方或歷史分析、燒成、塞格式與資料來源，以及用您所在地販售的原料調出的版本。",
     "imageAlt": "Glazecalc 的標誌和標題「給陶藝家的免費釉藥化學工具」，旁邊是一張燒過的測溫錐組的照片。"
   },
   "notices": {

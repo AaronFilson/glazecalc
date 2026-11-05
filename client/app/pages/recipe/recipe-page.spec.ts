@@ -250,6 +250,23 @@ describe('RecipePage', () => {
     expect(localStorage.getItem('includeAdditives')).toBe('yes');
   });
 
+  it("estimates the dry SG with a colorant in percent at its weight in the batch, and the standard records' minerals", async () => {
+    const { page } = await create();
+    const standard = (m: Material): Material => ({ ...m, ownedBy: 'Standard' });
+    fill(page, [
+      [standard(WHITING), '100'],
+      [standard(SILICA), '100']
+    ]);
+    page['addAdditive']({ ...BENTONITE, ownedBy: 'Standard' });
+    page['setAdditiveAmount'](0, '2');
+    const estimate = page['drySgEstimate']();
+    // 2% of a 200 g base is 4 g of bentonite: left out, 4 of 204 g.
+    expect(estimate.parts.find((part: { name: string }) => part.name === 'Bentonite').grams).toBeCloseTo(4, 9);
+    expect(estimate.unknownShare).toBeCloseTo(4 / 204, 9);
+    expect(estimate.unknown).toEqual(['Bentonite']);
+    expect(estimate.sg).toBe(Math.round((200 / (100 / 2.71 + 100 / 2.65)) * 100) / 100);
+  });
+
   it('leaves out additives it cannot count, and borrows chemistry where one says to', () => {
     TestBed.inject(TranslocoService);
     const base = [

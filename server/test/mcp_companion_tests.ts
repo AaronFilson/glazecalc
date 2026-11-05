@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
-import { COURSE_GUIDE, courseUnits, matchTopic, UNIT_KEYWORDS } from '../mcp/course.ts';
+import { BRITT_RULE, COURSE_GUIDE, courseUnits, matchTopic, UNIT_KEYWORDS } from '../mcp/course.ts';
 import { EXPANSION_FIT_FLAG, fluxRatioOf } from '../mcp/tools/companion.ts';
 import { base, expect } from './support/app.ts';
 
@@ -415,6 +415,9 @@ describe('MCP: the companion prompts', () => {
       'save it only if I say yes',
       'Do not retell, summarise or quote',
       'not connected with him',
+      'questions to check what I learned',
+      'wait for my answer',
+      'specific_gravity_water',
       'leach test'
     ]) {
       expect(text).to.include(part);
@@ -511,10 +514,112 @@ describe('the teaching companion: matchTopic (server/mcp/course.ts)', () => {
     expect(Object.keys(UNIT_KEYWORDS).sort()).to.eql([...ids].sort());
   });
 
+  it('does not send a topic to a unit by a word it only shares a part of', () => {
+    expect(matchTopic('why does my glaze crawl')?.id).to.not.equal('special-surfaces');
+    expect(matchTopic('refiring a pot')?.id).to.not.equal('firing');
+    expect(matchTopic('fireclay')?.id).to.not.equal('firing');
+    expect(matchTopic('Firing')?.id).to.equal('firing');
+  });
+
   it('takes the units it is given, so it can be checked without the guide', () => {
-    const units = [{ id: 'glazes', number: 1, title: 'Glazes', videos: [], reads: [], exercises: [], lab: false }];
+    const units = [
+      { id: 'glazes', number: 1, title: 'Glazes', videos: [], reads: [], exercises: [], checks: [], lab: false }
+    ];
     expect(matchTopic('glazes', units)?.id).to.equal('glazes');
     expect(matchTopic('line blends', units)).to.equal(undefined);
+  });
+});
+
+describe('MCP: the round 14 teaching fixes', () => {
+  const prompt = async (name: string, args: object): Promise<Json> => {
+    const answer = await rpc('prompts/get', { name, arguments: args });
+    expect(answer.body.error, JSON.stringify(answer.body.error)).to.equal(undefined);
+    return answer.body.result as Json;
+  };
+  /** The addresses of the resources a prompt attaches, in order. */
+  const attachedUris = (got: Json): string[] =>
+    got.messages
+      .filter((message: Json) => message.content.type === 'resource')
+      .map((message: Json) => message.content.resource.uri as string);
+
+  it('a lesson whose warning names two safety sections attaches both and puts both first', async () => {
+    const got = await prompt('glaze_course_lesson', { unit: 'special-surfaces' });
+    const text: string = got.messages[0].content.text;
+    expect(text).to.include('safe-mixing#materials and safe-mixing#kiln');
+    expect(text).to.include('carbon monoxide').and.to.include('fitted respirator');
+    const uris = attachedUris(got);
+    expect(uris[1]).to.match(/\/safe-mixing\/materials$/);
+    expect(uris[2]).to.match(/\/safe-mixing\/kiln$/);
+  });
+
+  it('the firing lesson is lab work and attaches the kiln section first', async () => {
+    const got = await prompt('glaze_course_lesson', { unit: 'firing' });
+    const text: string = got.messages[0].content.text;
+    expect(text).to.include('lab work').and.to.include('safe-mixing#kiln').and.to.include('carbon monoxide');
+    const uris = attachedUris(got);
+    expect(uris[1]).to.match(/\/safe-mixing\/kiln$/);
+    expect(uris.filter((uri) => uri.endsWith('/safe-mixing/kiln'))).to.have.length(1);
+    expect(uris.some((uri) => uri.endsWith('/safe-mixing/habits'))).to.equal(false);
+  });
+
+  it('the lesson names the next unit and its first video, and the last unit ends the course', async () => {
+    const units = courseUnits();
+    const first = await prompt('glaze_course_lesson', { unit: 'The unity formula' });
+    const text: string = first.messages[0].content.text;
+    expect(first.description).to.equal('Unit 1: The unity formula');
+    expect(text).to.include(`unit 2, ${units[1]!.title}`);
+    expect(text).to.include(units[1]!.videos[0]!.title).and.to.include(units[1]!.videos[0]!.url);
+    const last = await prompt('glaze_course_lesson', { unit: '12' });
+    expect(last.messages[0].content.text).to.include('the course is done');
+  });
+
+  it('teach_me attaches the sections the topic is about first', async () => {
+    const crazing = attachedUris(await prompt('teach_me', { topic: 'crazing' }));
+    expect(
+      crazing.some((uri) => uri.endsWith('/glazing-basics/fit-and-defects')),
+      crazing.join()
+    ).to.equal(true);
+    const reduction = attachedUris(await prompt('teach_me', { topic: 'reduction' }));
+    expect(
+      reduction.some((uri) => uri.endsWith('/glazing-basics/atmosphere')),
+      reduction.join()
+    ).to.equal(true);
+  });
+
+  it('the recipe and material prompts point to the safe mixing guide and to the hazards get_material lists', async () => {
+    const got = await Promise.all([
+      prompt('what_does_this_material_do', { material: 'Whiting' }),
+      prompt('explain_recipe', { recipe: 'Custer Spar 40, Silica 30, Whiting 20, EPK 10' }),
+      prompt('diagnose_glaze_fault', { recipe: 'Custer Spar 40, Silica 30, Whiting 20, EPK 10', fault: 'crazing' })
+    ]);
+    for (const answer of got) {
+      const text: string = answer.messages[0].content.text;
+      expect(text).to.include('safe mixing guide first').and.to.include('/guides/safe-mixing#materials');
+    }
+  });
+
+  it('everything that names John Britt says to link his videos by title only and never retell them', async () => {
+    const tools = (await rpc('tools/list')).body.result.tools as Json[];
+    const prompts = (await rpc('prompts/list')).body.result.prompts as Json[];
+    const named = [...tools, ...prompts].filter((item) => /John Britt/.test(item.description ?? ''));
+    expect(named.map((item) => item.name)).to.include.members(['search_guides', 'glaze_course_lesson', 'teach_me']);
+    for (const item of named) expect(item.description, item.name).to.include(BRITT_RULE);
+    const init = await rpc('initialize', {
+      protocolVersion: '2025-06-18',
+      capabilities: {},
+      clientInfo: { name: 'test', version: '1' }
+    });
+    expect(init.body.result.instructions).to.include(BRITT_RULE);
+  });
+
+  it('a section of the companion read alone, or found by search, carries the rule', async () => {
+    const read = await rpc('resources/read', { uri: `glazecalc://guides/en/${COURSE_GUIDE}/blending` });
+    expect(read.body.result.contents[0].text).to.include(BRITT_RULE);
+    const found = await data('search_guides', { query: 'triaxial blend', guide: COURSE_GUIDE });
+    expect(found.results.length).to.be.above(0);
+    for (const hit of found.results) expect(hit.note).to.equal(BRITT_RULE);
+    const other = await data('search_guides', { query: 'respirator', guide: 'safe-mixing' });
+    for (const hit of other.results) expect(hit).not.to.have.property('note');
   });
 });
 
@@ -696,10 +801,10 @@ describe('MCP: teach_me', () => {
       expect(text).to.include(part);
     }
     expect(got.description).to.equal('Teach me: line blends');
-    // Lab work: the safe mixing habits come attached, with the unit's guide sections (two at most).
+    // Lab work: the safe mixing habits come attached, with the unit's guide sections (three at most).
     const resources = got.messages.slice(1).map((m: Json) => m.content.resource.uri as string);
     expect(resources[0]).to.include('safe-mixing/habits');
-    expect(resources.length).to.be.within(2, 3);
+    expect(resources.length).to.be.within(2, 4);
   });
 
   it('with no matching unit: no video at all, the guide sections attached instead', async () => {
@@ -709,7 +814,7 @@ describe('MCP: teach_me', () => {
     expect(text).to.include('do not guess one');
     expect(text).to.not.include('His videos');
     const resources = got.messages.slice(1);
-    expect(resources.length).to.be.within(1, 2);
+    expect(resources.length).to.be.within(1, 3);
     for (const message of resources) expect(message.content.resource.uri).to.not.include(COURSE_GUIDE);
   });
 
@@ -759,7 +864,11 @@ describe('the companion guide and the server agree', () => {
   });
 
   it('the exercises keep to the limits the prompt and the page expect', () => {
-    for (const unit of courseUnits()) expect(unit.exercises.length, unit.id).to.be.within(1, 3);
+    for (const unit of courseUnits()) {
+      expect(unit.exercises.length, unit.id).to.be.within(1, 3);
+      expect(unit.checks.length, unit.id).to.be.within(2, 3);
+      for (const q of unit.checks) expect(q, unit.id).to.match(/\?$/);
+    }
     const file = readFileSync(
       path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'guides', COURSE_GUIDE, 'en.md'),
       'utf8'

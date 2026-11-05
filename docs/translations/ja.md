@@ -724,6 +724,23 @@ best choice with no Japanese source.
 The law's word for a piece is 試料 (a test piece) and 器具又は容器包装; the guides use the plainer 器 and もの. "per 100 g"
 keeps the symbol (「100 g あたり」), so the check finds the same figure and unit.
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | Japanese             | Notes                                                                                                                                                             |
+| ----------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | Stull チャート       | **show English**. As the recipe page already writes it (`recipe` stull.heading). Regions as there: 未溶融, マット, 半マット, 光沢, 焼成不足, 貫入.                |
+| dry SG (of a glaze's powder)                    | 乾燥比重             | No source. The app's "SG of the dry materials" is 「乾燥した原料の比重」 (`recipe` slurry.drySg); the guide's short form is 乾燥比重. Not 真比重 (a lab measure). |
+| cristobalite inversion                          | クリストバライト転移 | Beside 石英転移. Usage.                                                                                                                                           |
+| synthetic ash (synthetic 土灰)                  | 合成土灰             | 陶芸百貨店 lists 合成土灰 under 灰系材料（天然・合成）; ヤマニ's category 合成灰.                                                                                 |
+| rice-straw ash                                  | 藁灰（わら灰）       | 合成藁灰 as the English quotes it; ヤマニ's 天然灰 category. Usage.                                                                                               |
+| isu ash                                         | 柞灰（いすばい）     | The English gives 柞灰. Usage.                                                                                                                                    |
+| porcelain stone (瓷石)                          | 陶石（瓷石）         | ヤマニ's category 陶石, 陶芸百貨店 天草陶石. The Chinese 瓷石 kept in brackets as the English gives it.                                                           |
+| colemanite                                      | コレマナイト         | Usage (the mineral's name in Japanese mineralogy).                                                                                                                |
+| Famous glazes                                   | 有名な釉薬           | No source. Page and menu name.                                                                                                                                    |
+| sludge (dried glaze sludge from a rinse bucket) | 沈殿物               | No source.                                                                                                                                                        |
+
 ### Search terms
 
 From research_notes/search-terms-2026-10-14.md (Japanese search suggestions, Toki City, Saga): searchers type 「ゼーゲル式 計算」, 「釉薬 調合 計算」,

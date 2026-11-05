@@ -144,7 +144,7 @@ Nước cũng khác nhau, và Digitalfire ghi chú rằng nó làm thay đổi c
 5. Trộn cho đến khi không còn chỗ khô hay cục.
 6. Sàng hai lần (xem bên dưới).
 7. Đậy lại và để nghỉ qua đêm, rồi trộn lại và kiểm tra đáy xem có lớp cứng không.
-8. Đo tỷ trọng, và thêm nước từng chút một để đạt mục tiêu của bạn.
+8. Đo tỷ trọng, và thêm nước từng chút một để đạt mục tiêu của bạn. Để biết tỷ trọng khô của chính loại men của bạn, hãy cân cả nước men đã pha xong (xem bên dưới).
 9. Dán nhãn xô, và ghi lại những gì bạn đã làm.
 10. Lau dọn ướt: lau sàn và lau mọi bề mặt, kể cả bên ngoài các đồ đựng nguyên liệu.
 
@@ -205,6 +205,27 @@ Label: Nước cho một tỷ trọng mục tiêu
 | {{SG 1.50}} |   khoảng 85 mL |  khoảng 850 mL | khoảng 13 US fl oz |
 | {{SG 1.60}} |   khoảng 64 mL |  khoảng 640 mL | khoảng 10 US fl oz |
 
+### Tìm tỷ trọng khô của chính loại men của bạn khi pha
+
+Con số 2,6 ở trên là một phỏng đoán. Con số của chính loại men của bạn, khối lượng riêng của bột khô, có thể tính ra từ ba con số bạn đo được khi pha. Với nó, sau này bạn có thể tính từ tỷ trọng xem trong bất kỳ xô nào của loại men đó có bao nhiêu bột, và lượng nước cho mẻ tiếp theo. Đây là tính toán của chúng tôi, không phải của một nguồn:
+
+1. Ghi lại khối lượng bột khô trong mẻ: tổng của công thức.
+2. Cân xô rỗng trước khi bắt đầu, hoặc ghi khối lượng của nó lên xô.
+3. Trộn, sàng và đưa men về tỷ trọng của nó như thường lệ. Đẩy hết mọi thứ qua sàng và tráng vào xô, để không còn sót bột.
+4. Cân xô đầy và trừ khối lượng của xô. Đó là khối lượng của nước men.
+5. Đo tỷ trọng.
+
+Sau đó:
+
+- **Nước** = khối lượng nước men − khối lượng bột.
+- **Thể tích nước men** tính bằng mL = khối lượng nước men tính bằng gam ÷ tỷ trọng.
+- **Thể tích bột** = thể tích nước men − nước (1 g nước là 1 mL).
+- **Tỷ trọng khô** = khối lượng bột ÷ thể tích bột.
+
+Ví dụ: 1000 g bột làm ra 1980 g nước men ở {{SG 1.45}}. Nước là 980 g, nước men là 1980 ÷ 1,45 = khoảng 1366 mL, bột chiếm 1366 − 980 = 386 mL, và tỷ trọng khô là 1000 ÷ 386 = khoảng 2,59.
+
+Hãy cân toàn bộ nước men ở cuối, không phải cân nước khi bạn đổ, để nước bay hơi hay bắn ra ngoài không được tính. Ở đây sai số nhỏ sẽ lớn lên: một lần đọc tỷ trọng lệch 0,01 làm kết quả thay đổi khoảng 2 đến 4%, nhiều hơn với men loãng hơn. Hãy dùng mẻ từ 1 kg trở lên, một chiếc cân chính xác, và cách dùng cốc 500 g ở trên để đo tỷ trọng. Hầu hết các nguyên liệu thông dụng nằm trong khoảng 2,5 đến 2,9, nên một con số nằm xa ngoài khoảng đó, ở men không có nhiều zircon hay chì, có lẽ là do đo sai. Hãy ghi con số này lên công thức.
+
 ### Muối Epsom, keo CMC và bentonit
 
 **Muối Epsom** làm men keo hóa nhẹ khi đứng yên và chảy lại khi được khuấy. Việc này gọi là **keo tụ** nó, và một loại men hoạt động như vậy là **xúc biến**: nó phủ đều hơn, ít chảy giọt hơn và ít lắng hơn. Digitalfire gợi ý bắt đầu ở khoảng 2 g trên mỗi gallon khi tỷ trọng đã đúng (xấp xỉ 0,5 g trên mỗi lít, phép quy đổi của chúng tôi) và tinh chỉnh lượng mỗi lần bạn pha, vì không công thức men nào nên cố định liều. Chúng tôi gợi ý hòa tan nó trong một ít nước nóng trước. Trong một ví dụ của Digitalfire, một loại men ở {{SG 1.45}} chảy giọt, nên nước đưa nó xuống {{SG 1.43}} và muối Epsom làm nó keo hóa lại thành dạng kem, và nó phủ đều. Một cách kiểm tra sơ bộ: khuấy, dừng và quan sát. Một loại men keo hóa tiếp tục chuyển động khoảng 2 hoặc 3 giây, rồi dừng và nảy lại một chút.
@@ -227,7 +248,7 @@ Một loại men có thể trông khá khác trên đất sét khác hoặc tron
 - mỗi lần chỉ một thay đổi
 - một lần nhúng đơn và một lần nhúng đôi, để thấy men mỏng và dày
 - mọi mẫu thử trong cùng một mẻ lò
-- một dấu trên mỗi mẫu trước khi nung, bằng một con dấu, đường khắc hoặc bút chì màu dưới men.
+- một dấu trên mỗi mẫu trước khi nung, bằng một con dấu, đường khắc hoặc bút chì màu dưới men. Các mẫu đã nung trông giống nhau, và một dấu làm trước khi nung vẫn còn sau lò, nên bạn luôn biết mỗi mẫu là công thức nào.
 
 Chúng tôi gợi ý các mẫu thử đứng thẳng, vì một mẫu phẳng che giấu việc men chảy xa đến đâu, với một dải có kết cấu để cho thấy men đổi màu ở cạnh thế nào, và một chân đế trần. Đặt mỗi mẫu trên một cái đĩa nhỏ hoặc một mảnh gốm mộc vụn, hoặc trên một kệ có lớp phủ chống dính, để hứng giọt. Hãy đặt một **côn chứng**, một côn gốm nhỏ cong khi đã nhận đủ nhiệt, gần các mẫu thử để cho thấy chúng đã nhận gì; [cẩm nang nung](/guides/firing) giải thích về côn. Đặt cho mỗi mẫu một mã ngắn, và ghi nó cạnh công thức men trong các bản ghi của bạn. Willers, viết cho Ceramic Arts Network, dùng số và chữ cái, và ghi chính hệ thống đó ở trang đầu của cuốn sổ.
 
@@ -265,13 +286,13 @@ Willers nêu mục tiêu rất hay: “đủ thông tin để có thể lặp l�
 Table: Cần ghi gì cho mỗi mẻ men (mẫu của chúng tôi)
 Label: Mẫu ghi chép
 
-| Phần          | Cần ghi gì                                                                                                                                                                              |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Công thức men | Công thức men và phiên bản của nó; nhãn hiệu nguyên liệu và số lô; mọi sự thay thế                                                                                                      |
-| Pha trộn      | Ngày; cỡ mẻ; nước đã thêm, và loại của nó (nước máy, thẩm thấu ngược hay cất); tỷ trọng sau khi pha và tỷ trọng cuối; muối Epsom, CMC và bentonit đã thêm; mesh của sàng và số lần sàng |
-| Cách phủ men  | Xương gốm; côn nung mộc; nhúng, quét hay rót; thời gian nhúng hoặc số lớp; độ dày khô                                                                                                   |
-| Nung          | Lò và vị trí kệ; đường cong nung, với các giai đoạn tăng nhiệt, giữ nhiệt và làm nguội; môi trường nung (oxy hóa hay khử); những gì côn chứng cho thấy, không chỉ những gì lò được đặt  |
-| Kết quả       | Bề mặt và màu sắc; mọi hiện tượng chảy men, rạn nứt men hay lỗ chân kim; ảnh mặt trước, mặt sau và mặt bên; mã mẫu thử                                                                  |
+| Phần          | Cần ghi gì                                                                                                                                                                                                                                     |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Công thức men | Công thức men và phiên bản của nó; nhãn hiệu nguyên liệu và số lô; mọi sự thay thế                                                                                                                                                             |
+| Pha trộn      | Ngày; cỡ mẻ; nước đã thêm, và loại của nó (nước máy, thẩm thấu ngược hay cất); tỷ trọng sau khi pha và tỷ trọng cuối; khối lượng nước men đã pha xong, để tính tỷ trọng khô; muối Epsom, CMC và bentonit đã thêm; mesh của sàng và số lần sàng |
+| Cách phủ men  | Xương gốm; côn nung mộc; nhúng, quét hay rót; thời gian nhúng hoặc số lớp; độ dày khô                                                                                                                                                          |
+| Nung          | Lò và vị trí kệ; đường cong nung, với các giai đoạn tăng nhiệt, giữ nhiệt và làm nguội; môi trường nung (oxy hóa hay khử); những gì côn chứng cho thấy, không chỉ những gì lò được đặt                                                         |
+| Kết quả       | Bề mặt và màu sắc; mọi hiện tượng chảy men, rạn nứt men hay lỗ chân kim; ảnh mặt trước, mặt sau và mặt bên; mã mẫu thử                                                                                                                         |
 
 > [!NOTE]
 > Trong Glazecalc, một [công thức men](/recipe) đã lưu chứa chính công thức men. Một [nhật ký nung](/firing) ghi lại mỗi lần nung: lò, ngày, thời gian, nhiệt độ, côn và ghi chú. [Ghi chú](/notes) chứa mọi thứ khác, như bản ghi mẻ ở trên và những gì mỗi mẫu thử cho thấy.

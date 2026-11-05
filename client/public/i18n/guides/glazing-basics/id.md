@@ -5,7 +5,7 @@ lead: Glasir terbuat dari apa, bagaimana tungku mengubahnya menjadi kaca, dan se
 
 ## Apa itu glasir {#what-a-glaze-is}
 
-**Glasir**{{en: glaze}} adalah lapisan tipis kaca yang melebur menempel pada benda keramik. Glazy, basis data resep glasir terbuka, menyebutnya "formula kaca yang disetel untuk meleleh dan melebur pada tanah liat pada suhu tertentu". Glasir dioleskan sebagai lapisan bubuk dan meleleh di tungku menjadi lapisan seperti kaca yang menyegel tanah liat, sehingga benda lebih kecil kemungkinannya bocor, bernoda, atau aus. Pada puncak pembakaran, lelehan juga bereaksi dengan tanah liat, sering membentuk lapisan di antara keduanya yang mengunci glasir. Pada gerabah, glasir berada di atas sebagai lapisan terpisah; pada stoneware, glasir meleleh ke dalam bodi.
+**Glasir**{{en: glaze}} adalah lapisan tipis kaca yang melebur menempel pada benda keramik. Glazy, basis data resep glasir terbuka, menyebutnya "formula kaca yang disetel untuk meleleh dan melebur pada tanah liat pada suhu tertentu". Glasir dioleskan sebagai lapisan bubuk dan meleleh di tungku menjadi lapisan seperti kaca yang menyegel tanah liat, sehingga benda lebih kecil kemungkinannya bocor, bernoda, atau aus. Pada puncak pembakaran, lelehan juga bereaksi dengan tanah liat, sering membentuk lapisan di antara keduanya yang mengunci glasir. Pada gerabah, yang dibakar lebih dingin, lapisan ini tipis dan glasir sebagian besar tetap di atas. Pada stoneware dan porselen, yang dibakar lebih panas, lapisan ini lebih tebal dan glasir mencengkeram tanah liat lebih kuat. Namun glasir tetap kaca: glasir tidak menjadi bagian dari tanah liat.
 
 Resep mencantumkan bahan baku, seperti feldspar{{en: feldspar}}, whiting, dan kaolin. Di tungku, sebagian dari masing-masing pergi sebagai gas (air atau karbon dioksida) dan sisanya menjadi **oksida**: senyawa suatu unsur dengan oksigen, seperti silika (SiO₂) atau kalsium oksida (CaO). Kaca yang sudah dibakar terbuat dari oksida, sehingga pembuat keramik menggambarkan glasir dengan oksida. Setiap oksida mengerjakan satu dari tiga tugas.
 
@@ -13,7 +13,7 @@ Resep mencantumkan bahan baku, seperti feldspar{{en: feldspar}}, whiting, dan ka
 - **Pelebur**{{en: flux}} menurunkan titik leleh ke titik yang dapat dicapai tungku. **Alkali**, ditulis **R₂O**, adalah oksida natrium, kalium, dan litium (Na₂O, K₂O, Li₂O); bekerja dari kerucut 06 dan yang lebih panas, melewati suhu menengah dan tinggi. **Alkali tanah**, ditulis **RO**, adalah oksida kalsium, magnesium, barium, dan stronsium (CaO, MgO, BaO, SrO), dengan seng oksida (ZnO) dikelompokkan bersamanya; bekerja paling baik dari kerucut 5 sampai kerucut 10. R mewakili logam apa pun dalam keluarga itu.
 - **Alumina** (Al₂O₃) adalah **penstabil**{{en: stabilizer}}. Alumina mengentalkan lelehan agar tetap di dinding tegak, dan menambah kekerasan dan daya tahan. Peringatan Glazy: dengan terlalu sedikit alumina "glasir Anda dapat mengalir; terlalu banyak dapat mengentalkan lelehan menjadi doff". Alumina sebagian besar berasal dari tanah liat dan feldspar.
 
-**Boron** (B₂O₃) mengaburkan batasnya. Ahli kimia menggolongkannya sebagai pembentuk kaca, tetapi pada suhu studio boron bekerja sebagai pelebur, dan pembuat keramik memperlakukannya demikian. Boron sangat penting pada kerucut 5–6 dan tidak diperlukan pada suhu tinggi. (Kerucut, cara pembuat keramik menamai suatu pembakaran, dijelaskan di bawah.)
+**Boron** (B₂O₃) mengaburkan batasnya. Ahli kimia menggolongkannya sebagai pembentuk kaca, tetapi pada suhu studio boron bekerja sebagai pelebur, dan pembuat keramik memperlakukannya demikian. Boron adalah pelebur utama pada suhu rendah dan menengah: makin dingin pembakaran, makin banyak boron yang diperlukan glasir. Pada kerucut 10 boron biasanya tidak diperlukan. (Kerucut, cara pembuat keramik menamai suatu pembakaran, dijelaskan di bawah.)
 
 > [!NOTE]
 > Satu cara untuk mengingatnya: silika adalah kaca, pelebur membuatnya meleleh pada suhu yang dapat dicapai tungku Anda, dan alumina mengentalkannya agar tetap di tempat Anda menaruhnya.
@@ -24,9 +24,9 @@ Resep mencantumkan bahan baku, seperti feldspar{{en: feldspar}}, whiting, dan ka
 
 **Bodi tanah liat**{{en: clay body}} adalah tanah liat tempat benda dibuat. Ada tiga jenis utama.
 
-- **Gerabah**{{en: earthenware}}: bodi suhu rendah, sekitar kerucut 06–02, yang tetap berpori. Sering berwarna merah atau krem, memerlukan glasir agar dapat menahan air.
+- **Gerabah**{{en: earthenware}}: bodi suhu rendah, sekitar kerucut 06–02, yang berpori pada kerucut rendah dan makin padat bila dibakar lebih panas. Sering berwarna merah atau krem, memerlukan glasir agar dapat menahan air.
 - **Stoneware**{{en: stoneware}}: bodi suhu menengah sampai tinggi, sekitar kerucut 5–10, yang menjadi bersifat gelas atau hampir demikian.
-- **Porselen**: bodi putih suhu tinggi yang kaya kaolin, sering tembus cahaya.
+- **Porselen**: bodi putih yang kaya kaolin, sering tembus cahaya. Sebagian besar porselen adalah suhu tinggi, tetapi ada juga porselen kerucut 6.
 
 **Bersifat gelas** (vitreous) berarti seperti kaca dan tidak berpori; **vitrifikasi** adalah bodi menjadi demikian saat dibakar. Pembuat keramik Inggris sering menarik garis berdasarkan suhu: stoneware dibakar di atas {{2192 °F; 1200 °C}}, gerabah di bawahnya. Suhu menengah, kerucut 5–6, jatuh tepat di kedua sisi garis itu.
 
@@ -55,9 +55,9 @@ Potclays, pemasok Inggris, menjelaskan pembakaran biskuit sampai sekitar {{1000 
 
 ## Kerucut dan kerja panas {#cones}
 
-Pembuat keramik menamai suatu pembakaran dengan **kerucut**{{en: cone}}: piramida keramik ramping yang menekuk setelah menerima sejumlah panas tertentu. Orton, yang membuatnya, mengatakannya begini: "Kerucut tidak mengukur suhu saja. Kerucut mengukur kerja panas, efek gabungan waktu dan suhu."
+Pembuat keramik menamai suatu pembakaran dengan **kerucut**{{en: cone}}: piramida keramik ramping yang menekuk setelah menerima sejumlah panas tertentu. Orton, yang membuatnya, menyebut kerucut sebagai penunjuk waktu dan suhu (kerja panas): kerucut menunjukkan efek gabungan waktu dan suhu, bukan suhu saja.
 
-**Kerja panas**{{en: heatwork}} adalah alasannya: glasir, tanah liat, dan kerucut semuanya bereaksi terhadap berapa lama mereka panas serta seberapa panas. Pembakaran lambat menekuk kerucut pada suhu lebih rendah, pembakaran cepat pada suhu lebih tinggi. Tabel Orton menunjukkan kerucut 6 menekuk pada {{2165 °F; 1185 °C}} bila pembakaran berakhir dengan kenaikan {{27 °F; 15 °C}} per jam, pada {{2232 °F; 1222 °C}} pada {{108 °F; 60 °C}} per jam, dan pada {{2269 °F; 1243 °C}} pada {{270 °F; 150 °C}} per jam, laju yang diambil selama {{180 °F; 100 °C}} terakhir. Kerucut dianggap selesai bila ujungnya telah menekuk 90°, yang disebut Orton posisi arah jam 5.
+**Kerja panas**{{en: heatwork}} adalah alasannya: glasir, tanah liat, dan kerucut semuanya bereaksi terhadap berapa lama mereka panas serta seberapa panas. Pembakaran lambat menekuk kerucut pada suhu lebih rendah, pembakaran cepat pada suhu lebih tinggi. Tabel Orton menunjukkan kerucut 6 menekuk pada {{2165 °F; 1185 °C}} bila pembakaran berakhir dengan kenaikan {{27 °F; 15 °C}} per jam, pada {{2232 °F; 1222 °C}} pada {{108 °F; 60 °C}} per jam, dan pada {{2269 °F; 1243 °C}} pada {{270 °F; 150 °C}} per jam, laju yang diambil selama {{180 °F; 100 °C}} terakhir. Kerucut dianggap selesai bila ujungnya telah menekuk 90°. Pembuat keramik sering menyebutnya posisi arah jam 5.
 
 Nomor kerucut berjalan dari 022 sampai 42. Angka nol di depan menandai seri yang lebih dingin, di mana nomor yang lebih besar lebih dingin: kerucut 06 lebih dingin daripada kerucut 04, dan kerucut 01 lebih dingin daripada kerucut 1.
 
@@ -73,7 +73,7 @@ Label: Rentang pembakaran
 > [!NOTE]
 > Namai dan program pembakaran Anda menurut kerucut, dan perlakukan suhunya sebagai perkiraan. **Kerucut saksi**{{en: witness cone}} di rak di antara benda, atau **set kerucut**{{en: cone pack}} berisi tiga (kerucut pemandu, kerucut bakar, dan kerucut pengaman), menunjukkan kerja panas yang benar-benar diterima benda Anda.
 
-Suhu yang dipublikasikan berbeda-beda. Glazy memberikan suhu tinggi, kerucut 9–11, sekitar {{2336–2390 °F; 1280–1310 °C}}, yang cocok dengan kolom cepat Orton, dan Digitalfire melaporkan bahwa sebagian besar tungku mencapai kerucut 6 pada sekitar {{2200 °F; 1204 °C}}. Saran kami: pakai angka laju sedang Orton, seperti panduan ini, programlah menurut kerucut, dan biarkan kerucut saksi yang memutuskan.
+Suhu yang dipublikasikan berbeda-beda. Glazy memberikan suhu tinggi, kerucut 9–11, sekitar {{2336–2390 °F; 1280–1310 °C}}, yang cocok dengan kolom cepat Orton, dan Digitalfire memberikan kerucut 6 sekitar {{2200 °F; 1204 °C}}. Saran kami: pakai angka laju sedang Orton, seperti panduan ini, programlah menurut kerucut, dan biarkan kerucut saksi yang memutuskan.
 
 Di luar Amerika Utara, pemasok sering memberikan °C daripada kerucut. Hermann Seger mengembangkan kerucut modern, pertama kali dipakai di Berlin pada 1886, dan Inggris memiliki kerucut Staffordshire sendiri; nomornya sebaiknya tidak diasumsikan sama dengan nomor Orton, dan kami tidak menemukan tabel untuk mengonversinya. [Membakar di tungku sederhana](/guides/firing) membahas kerucut lebih rinci.
 
@@ -106,7 +106,7 @@ Label: Rasio silika terhadap alumina
 |       5–7 | Tipikal banyak glasir stoneware yang stabil           |
 |       3–5 | Dapat doff atau kurang bakar                          |
 
-Rasio 5–7 sendiri tidak meramalkan kilap maupun doff: pelebur, boron, dan kerucut semuanya menggeser garisnya. Glazy memberikan keseimbangan pelebur tipikal untuk glasir stabil sebesar 0,2 R₂O dengan 0,8 RO, sampai 0,3 R₂O dengan 0,7 RO. Lebih banyak alkali membuat lelehan lebih encer dan menaikkan pemuaiannya, dan karenanya risiko retak halus.
+Glazy tidak menyebutkan untuk kerucut berapa angka-angka ini. Bacalah sebagai panduan kasar untuk glasir stoneware, sekitar kerucut 6–10. Digitalfire mengatakan rasio di atas sekitar 8 kemungkinan besar mengilap, tetapi glasir dengan boron dapat mengilap pada 8 atau lebih rendah, dan glasir suhu rendah bahkan pada 6. Rasio 5–7 sendiri tidak meramalkan kilap maupun doff: pelebur, boron, dan kerucut semuanya menggeser garisnya. Glazy memberikan keseimbangan pelebur tipikal untuk glasir stabil sebesar 0,2 R₂O dengan 0,8 RO, sampai 0,3 R₂O dengan 0,7 RO. Lebih banyak alkali membuat lelehan lebih encer dan menaikkan pemuaiannya, dan karenanya risiko retak halus.
 
 ### Susut pijar
 
@@ -117,15 +117,29 @@ Label: Susut pijar
 
 | Bahan                               | LOI tipikal                                                                                    |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Whiting (kalsium karbonat), dolomit | Lebih dari 40%, sebagian besar karbon dioksida: 100 g kalsium karbonat melepaskan sekitar 45 g |
+| Whiting (kalsium karbonat), dolomit | Lebih dari 40%, sebagian besar karbon dioksida: 100 g kalsium karbonat melepaskan sekitar 44 g |
 | Litium karbonat                     | Sekitar 60%                                                                                    |
 | Barium karbonat, Gerstley Borate    | Lebih dari 20%                                                                                 |
-| Kaolin                              | Sekitar 12%, terutama air yang terikat dalam kristalnya                                        |
+| Kaolin                              | Sekitar 12–14%, terutama air yang terikat dalam kristalnya                                     |
 | Feldspar                            | Di bawah 1%                                                                                    |
 
-Gas yang pergi setelah glasir mulai meleleh harus menggelembung melaluinya, menyebabkan, dalam kata-kata Digitalfire, "gelembung, lepuh, lubang jarum, menggumpal". Talek terus melepaskan gas sampai sekitar {{1650 °F; 899 °C}}. Frit, bahan **terkalsinasi** (dipanaskan lebih dulu untuk mengusir gasnya), dan perubahan pada pembakaran semuanya membantu.
+Gas yang pergi setelah glasir mulai meleleh harus menggelembung melaluinya, menyebabkan, dalam kata-kata Digitalfire, "gelembung, lepuh, lubang jarum, menggumpal". Dalam satu uji Digitalfire, talek terus melepaskan gas sampai sekitar {{1650 °F; 899 °C}}. Frit, bahan **terkalsinasi** (dipanaskan lebih dulu untuk mengusir gasnya), dan perubahan pada pembakaran semuanya membantu.
 
 Buku lama menghitung ini dengan tangan, dengan **berat molekul** (berat satu mol suatu bahan atau oksida) dan **berat ekuivalen** (berat bahan yang menyediakan satu mol suatu oksida). Menurut hitungan kami, sekitar 100 g whiting menyediakan satu mol, 56 g, kalsium oksida. Kalkulator menangani keduanya.
+
+## Batas dan bagan Stull {#stull-chart}
+
+**Bagan Stull**{{en: Stull chart}} adalah peta glasir. Bagan ini punya dua sumbu, keduanya dari formula Seger: silika (SiO₂) mendatar di bawah dan alumina (Al₂O₃) tegak di samping. Setiap glasir adalah satu titik. Peta dibagi menjadi wilayah, seperti doff, cerah (mengilap), kurang bakar, dan retak halus. [Halaman resep](/recipe) Glazecalc menggambar glasir Anda di atasnya.
+
+::stull-chart
+
+R. T. Stull membuat bagan ini dari uji-uji yang ia terbitkan pada 1912. Ia membakarnya pada sekitar kerucut 11, dan setiap uji memiliki pelebur yang sama: 0,3 kalium (K₂O) dan 0,7 kalsium oksida (CaO). Hanya silika dan alumina yang berubah. Jadi bagan ini benar untuk glasir-glasir itu pada panas itu.
+
+Glasir Anda mungkin berbeda. Boron, pelebur lain, dan kerucut yang lebih rendah semuanya menggeser wilayahnya. Pada 2025 sebuah artikel Ceramics Monthly menguji glasir kerucut 6 yang dileburkan dengan borat dan mengandung banyak besi. Bagan menempatkannya sebagai retak halus, doff, dan kurang bakar. Kenyataannya glasir itu meleleh sempurna, satin, dan tidak retak halus. Para penulis mengatakan glasir dengan borat tidak terpetakan dengan baik pada bagan ini. Jadi gunakan wilayahnya sebagai panduan, bukan ramalan.
+
+Wilayah **retak halus** adalah tempat uji-uji Stull sendiri retak halus, pada tanah liatnya. Wilayah ini tidak memberi tahu Anda bagaimana glasir Anda cocok dengan bodi tanah liat Anda. Retak halus bergantung pada pemuaian termal glasir dan tanah liat sekaligus. Angka pemuaian Glazecalc membantu Anda membandingkan glasir, dan uji nyata yang memutuskan: uji air es di [Kecocokan glasir dan cacat](/guides/glazing-basics#fit-and-defects).
+
+**Formula batas**{{en: limit formula}} adalah alat lain untuk pertanyaan yang sama: rentang silika, alumina, dan pelebur untuk glasir stabil pada satu kerucut. [Keamanan pangan](/guides/glazing-basics#food-safety) menjelaskannya, dan mengapa formula batas sendiri tidak membuktikan apa pun.
 
 ## Frit dan bahan baku {#materials}
 
@@ -133,7 +147,7 @@ Buku lama menghitung ini dengan tangan, dengan **berat molekul** (berat satu mol
 
 **Frit**{{en: frit}} adalah kaca buatan pabrik: mineral dilelehkan, didinginkan mendadak dalam air, dan digiling. Proses frit membuat bahan larut seperti boraks menjadi tidak larut, mengunci oksida beracun seperti timbal dan barium ke dalam kaca yang stabil, memberi bahan yang lebih konsisten daripada mineral mentah, dan mengusir gas, sehingga glasir berfrit "jauh lebih bebas cacat" (Digitalfire). Frit juga meleleh lebih awal: frit natrium aktif pada kerucut 06, sedangkan feldspar "baru mulai melunak pada kerucut 6". Harganya lebih mahal, memerlukan tanah liat agar tetap tersuspensi (contoh Digitalfire adalah 85% frit dengan 15% tanah liat), dan "secara teori tidak larut, tetapi dalam praktik tidak begitu".
 
-Frit Amerika Utara dikenal menurut pembuat dan nomor: Ferro Frit 3134 (Ferro kini Vibrantz) ada dalam sekitar 22% resep publik Glazy. Resep Inggris lebih sering menyebut frit generik, seperti frit boraks standar.
+Frit Amerika Utara dikenal menurut pembuat dan nomor: Ferro Frit 3134 (Ferro kini Vibrantz) termasuk frit yang paling banyak dipakai di Amerika Utara. Resep Inggris lebih sering menyebut frit generik, seperti frit boraks standar.
 
 ### Bahan baku umum
 
@@ -143,7 +157,7 @@ Label: Bahan glasir umum
 | Bahan (nama lain)                                 | Menyediakan               | Catatan                                                                                                                                                                           |
 | ------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Silika (flint, kuarsa)                            | SiO₂                      | Pakai 325 mesh, gilingan sangat halus, dalam glasir                                                                                                                               |
-| Kaolin (Inggris: china clay; Australia: Eckalite) | Al₂O₃, SiO₂               | Sumber alumina utama; juga menjaga glasir tetap tersuspensi                                                                                                                       |
+| Kaolin (Inggris: china clay)                      | Al₂O₃, SiO₂               | Sumber alumina utama; juga membantu mencegah glasir mengendap                                                                                                                     |
 | Ball clay                                         | Al₂O₃, SiO₂               | Lebih plastis daripada kaolin, dengan lebih banyak besi dan bahan organik                                                                                                         |
 | Feldspar kalium, feldspar natrium, nefelin sienit | K₂O, Na₂O, Al₂O₃, SiO₂    | Pelebur dengan alumina dan silika sendiri. Nefelin sienit adalah pelebur kuat suhu rendah dan menengah. "Feldspar" biasa dalam resep lama dapat berarti salah satu dari ketiganya |
 | Whiting (kalsium karbonat)                        | CaO                       | Pelebur kalsium utama; melepaskan karbon dioksida                                                                                                                                 |
@@ -154,39 +168,39 @@ Label: Bahan glasir umum
 | Litium karbonat                                   | Li₂O                      | Pelebur berpemuaian rendah; mahal, jadi dipakai hemat                                                                                                                             |
 | Stronsium karbonat                                | SrO                       | Pengganti barium yang kurang beracun                                                                                                                                              |
 | Barium karbonat                                   | BaO                       | Beracun dalam bentuk mentah; glasir barium tinggi dapat mengalami pelindian                                                                                                       |
-| Bentonit                                          | Suspensi                  | Tanah liat sangat halus, biasanya 1–3%, untuk mencegah pengendapan                                                                                                                |
+| Bentonit                                          | Suspensi                  | Tanah liat sangat halus, biasanya 1–2%, untuk mencegah pengendapan. Lebih dari 3% dapat membuat glasir retak saat mengering                                                       |
 
 > [!WARNING]
 > Bahan glasir adalah bubuk halus. Debu silika merusak paru-paru tanpa gejala pada awalnya, dan sebagian bahan, seperti barium karbonat dan litium karbonat, beracun jika tertelan. Tangani bubuk dengan lembut, bersihkan dengan cara basah, dan pakai respirator yang pas saat bekerja kering. [Mencampur dengan aman dan ventilasi](/guides/safe-mixing) dan [Jangan meracuni keluarga Anda](/guides/home-safety) menjelaskan caranya.
 
 ### Nama regional
 
-- **Kaolin** adalah **china clay** di Inggris; pemasok Australia menjualnya sebagai Eckalite.
+- **Kaolin** adalah **china clay** di Inggris. Di Australia, Eckalite adalah salah satu merek kaolin.
 - **Flint** adalah nama Inggris lama untuk silika. Pemasok Inggris masih menjual **flint terkalsinasi** sebagai produk tersendiri, jadi "flint" dalam resep Inggris mungkin berarti flint terkalsinasi, dan dalam resep Amerika mungkin kuarsa giling. Keduanya dijual sebagai sumber silika; periksa analisisnya.
 - **China stone** dan **Cornish stone** (Cornwall stone) adalah bahan yang sama, terkait dengan feldspar.
-- **Whiting** adalah kalsium karbonat; pemasok Jerman menyebutnya Kreide (kapur tulis).
+- **Whiting** adalah kalsium karbonat, kapur tulis atau batu kapur giling.
 
 > [!NOTE]
 > Nilai bahan dari oksida yang disediakannya, bukan dari namanya. Glazecalc bekerja begitu: Anda dapat memasukkan analisis pemasok Anda di [halaman Bahan](/material), dan **Coba bahan modern dan bandingkan**, **Sarankan jumlah dan bandingkan**, dan **Cocokkan dengan bahan saya** semuanya mencocokkan oksida setelah dibakar, bukan nama.
 
-Bahan juga berubah. Custer feldspar berakhir pada 2023. Tambang Gerstley Borate yang asli ditutup sekitar 1999–2000; Laguna masih menjual produk dengan nama itu, dan Gillespie Borate adalah penggantinya yang utama. Sumber berbeda pendapat apakah Gillespie menggantikan Gerstley Borate pon untuk pon (pembuatnya dan Potclays mengatakan ya, Digitalfire dan lainnya tidak), jadi bandingkan keduanya di Glazecalc, lalu uji satu batch kecil.
+Bahan juga berubah. Survei Geologi AS melaporkan bahwa tambang dan pabrik yang membuat Custer feldspar, di South Dakota, menghentikan operasinya pada November 2023. Tambang Gerstley Borate yang asli ditutup sekitar 1999–2000; Laguna masih menjual produk dengan nama itu, dan Gillespie Borate adalah penggantinya yang utama. Sumber berbeda pendapat apakah Gillespie menggantikan Gerstley Borate pon untuk pon (pembuatnya dan Potclays mengatakan ya, Digitalfire dan lainnya tidak), jadi bandingkan keduanya di Glazecalc, lalu uji satu batch kecil.
 
 ## Pewarna dan pengopak {#color}
 
-**Pewarna**{{en: colorant}} adalah oksida atau karbonat logam yang mewarnai glasir; **stain**{{en: stain}} adalah pewarna buatan pabrik, lebih stabil dan konsisten daripada oksida mentah. Pewarna biasanya di bawah 5% dari dasar, banyak di bawah 1%, dan karbonat sekitar setengah kekuatan oksida yang sepadan.
+**Pewarna**{{en: colorant}} adalah oksida atau karbonat logam yang mewarnai glasir; **stain**{{en: stain}} adalah pewarna buatan pabrik, lebih stabil dan konsisten daripada oksida mentah. Pewarna biasanya di bawah 5% dari dasar, banyak di bawah 1%, dan karbonat lebih lemah daripada oksida yang sepadan, karena sebagiannya pergi sebagai gas. Menurut hitungan kami, 100 g kobalt karbonat menghasilkan sekitar 63 g kobalt oksida, dan 100 g tembaga karbonat yang dibeli pembuat keramik (tembaga karbonat basa) sekitar 72 g tembaga oksida. Jadi pakai karbonat sekitar 1,4 sampai 1,6 kali jumlah oksidanya.
 
 Table: Pewarna umum, sebagai persen dari dasar
 Label: Pewarna umum
 
-| Pewarna         | Jumlah awal yang biasa                            | Warna dan catatan                                                                                                                                          |
-| --------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalt          | 0,1–2% (sumber berbeda pendapat)                  | Biru, dan sangat kuat; ke arah ungu bila dasar mengandung magnesium                                                                                        |
-| Besi            | 0,5–10%                                           | Cokelat, cokelat muda, dan merah dalam oksidasi; dalam reduksi, ½–2% memberi seladon dan 5–6% tenmoku. Pelebur, jadi jumlah banyak membuat glasir mengalir |
-| Tembaga         | 1–3%                                              | Hijau atau pirus dalam oksidasi, merah dalam reduksi. Dapat membuat glasir mengalami pelindian                                                             |
-| Krom            | Di bawah 0,5% sampai 2% (sumber berbeda pendapat) | Hijau; cokelat bila dasar mengandung seng, merah muda dengan timah                                                                                         |
-| Mangan          | 2–10%                                             | Cokelat dan ungu                                                                                                                                           |
-| Rutil           | Sekitar 2–5%                                      | Warna berbintik, bervariasi; kasar atau doff di atas sekitar 5%                                                                                            |
-| Stain komersial | 2–12%                                             | 2–4% untuk warna muda, 5–8% untuk warna sedang, 10–12% untuk warna kuat                                                                                    |
+| Pewarna         | Jumlah awal yang biasa                            | Warna dan catatan                                                                                                                                           |
+| --------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalt          | 0,1–2% (sumber berbeda pendapat)                  | Biru, dan sangat kuat; ke arah ungu bila dasar mengandung magnesium                                                                                         |
+| Besi            | 0,5–10%                                           | Cokelat, cokelat muda, dan merah dalam oksidasi; dalam reduksi, ½–2% memberi seladon dan 5–10% tenmoku. Pelebur, jadi jumlah banyak membuat glasir mengalir |
+| Tembaga         | 1–3%                                              | Hijau atau pirus dalam oksidasi, merah dalam reduksi. Dapat membuat glasir mengalami pelindian                                                              |
+| Krom            | Di bawah 0,5% sampai 2% (sumber berbeda pendapat) | Hijau; cokelat bila dasar mengandung seng, merah muda dengan timah                                                                                          |
+| Mangan          | 2–10%                                             | Cokelat dan ungu                                                                                                                                            |
+| Rutil           | Sekitar 2–5%                                      | Warna berbintik, bervariasi; kasar atau doff di atas sekitar 5%                                                                                             |
+| Stain komersial | 2–12%                                             | 2–4% untuk warna muda, 5–8% untuk warna sedang, 10–12% untuk warna kuat                                                                                     |
 
 Jumlah kobalt dan krom benar-benar diperdebatkan. Glazy mengatakan 0,1% kobalt cukup untuk biru; Glendale Community College memberikan ½–2% atau ½–3% tergantung atmosfer; Birdie Boone, dalam Pottery Making Illustrated, mengatakan 3% atau kurang. Untuk krom, Boone mengatakan di bawah 0,5% dan Glendale 2–3%. Jalan aman adalah mulai dari rendah dan membuat **campuran garis**{{en: line blend}}: sederet ubin uji yang menaikkan satu bahan dari sedikit ke banyak.
 
@@ -198,11 +212,11 @@ Glasir dasar mengubah warna. Dasar yang mengilap dan transparan memberi warna pa
 
 Table: Pengopak
 
-| Pengopak                                      | Jumlah yang biasa             | Catatan                                                                                                          |
-| --------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Zirkon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% untuk opasitas penuh    | Pilihan yang lebih murah; merek-mereknya adalah bahan yang sama yang digiling pada ukuran berbeda                |
-| Timah oksida                                  | Sekitar 5–7% (perkiraan kami) | Mahal; daya opaknya buruk dalam reduksi                                                                          |
-| Titanium dioksida                             | Di atas 2%                    | Opasitas seperti sutra dan tembus cahaya; pada 10% atau lebih, permukaan doff bertekstur dengan kristal terlihat |
+| Pengopak                            | Jumlah yang biasa             | Catatan                                                                                                                                                     |
+| ----------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zirkon (Zircopax, Superpax, Ultrox) | 10–15% untuk opasitas penuh   | Pilihan yang lebih murah; merek-mereknya adalah zirkonium silikat yang digiling pada ukuran berbeda, dan mutu yang lebih halus lebih kuat                   |
+| Timah oksida                        | Sekitar 5–7% (perkiraan kami) | Mahal; lebih lemah pada suhu tinggi, dan Digitalfire melaporkan 4% sama sekali tidak memberi opasitas dalam glasir bening reduksi kerucut 10                |
+| Titanium dioksida                   | Sekitar 5% (perkiraan kami)   | Opasitas seperti sutra dan tembus cahaya; sekitar 5% dapat membuat permukaan bervariasi, dan jauh lebih banyak sering memberi permukaan doff dengan kristal |
 
 ## Kecocokan glasir dan cacat {#fit-and-defects}
 
@@ -230,13 +244,13 @@ Ubah satu hal pada satu waktu, dan simpan ubin uji Anda.
 Table: Cacat glasir umum, penyebab biasa, dan perbaikan pertamanya
 Label: Cacat glasir umum
 
-| Cacat                         | Tampilannya                                                       | Penyebab umum                                                                                                     | Perbaikan pertama                                                                                        |
-| ----------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Menggumpal{{en: crawling}}    | Glasir menarik diri menjadi butiran, menyisakan tanah liat kosong | Biskuit berdebu atau berminyak; lapisan tebal kaya tanah liat yang retak saat mengering; seng, zirkon, atau timah | Bersihkan biskuit; lapisi lebih tipis; kalsinasi sebagian tanah liat; tambahkan pengikat seperti gom CMC |
-| Lubang jarum{{en: pinholing}} | Lubang kecil atau cekungan                                        | Gas dari bodi atau glasir yang tidak menutup kembali; glasir yang kurang bakar atau kental                        | Tahan pada suhu puncak sekitar setengah jam; lapisi lebih tipis; kurangi seng atau rutil                 |
-| Melepuh                       | Kawah bertepi tajam                                               | Biasanya terlalu bakar; lapisan sangat tebal; pelebur mudah menguap di atas sekitar {{2192 °F; 1200 °C}}          | Bakar pada suhu lebih rendah; lapisi lebih tipis. Tepi tajam membuat benda fungsional tidak aman         |
-| Mengalir                      | Glasir mengalir ke rak                                            | Alumina terlalu sedikit; terlalu tebal, seperti di tempat tuangan bertumpuk; banyak besi                          | Lapisi lebih tipis; tambahkan alumina; jaga glasir tetap jauh di atas kaki                               |
-| Dunting{{en: dunting}}        | Retakan pada benda akibat pendinginan atau pemanasan              | Pendinginan cepat melewati inversi kuarsa, {{1063 °F; 573 °C}}; dinding tidak rata; kecocokan buruk               | Bakar perlahan melewati {{1063 °F; 573 °C}}, naik dan turun; dinding rata                                |
+| Cacat                         | Tampilannya                                                       | Penyebab umum                                                                                                                                             | Perbaikan pertama                                                                                        |
+| ----------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Menggumpal{{en: crawling}}    | Glasir menarik diri menjadi butiran, menyisakan tanah liat kosong | Biskuit berdebu atau berminyak; lapisan tebal kaya tanah liat yang retak saat mengering; seng, zirkon, atau timah                                         | Bersihkan biskuit; lapisi lebih tipis; kalsinasi sebagian tanah liat; tambahkan pengikat seperti gom CMC |
+| Lubang jarum{{en: pinholing}} | Lubang kecil atau cekungan                                        | Gas dari bodi atau glasir yang tidak menutup kembali; glasir yang kurang bakar atau kental                                                                | Tahan pada suhu puncak sekitar setengah jam; lapisi lebih tipis; kurangi seng atau rutil                 |
+| Melepuh                       | Kawah bertepi tajam                                               | Biasanya terlalu bakar; lapisan sangat tebal; pelebur mudah menguap di atas sekitar {{2192 °F; 1200 °C}}                                                  | Bakar pada suhu lebih rendah; lapisi lebih tipis. Tepi tajam membuat benda fungsional tidak aman         |
+| Mengalir                      | Glasir mengalir ke rak                                            | Alumina terlalu sedikit; terlalu tebal, seperti di tempat tuangan bertumpuk; banyak besi                                                                  | Lapisi lebih tipis; tambahkan alumina; jaga glasir tetap jauh di atas kaki                               |
+| Dunting{{en: dunting}}        | Retakan pada benda akibat pendinginan atau pemanasan              | Pendinginan cepat melewati inversi kuarsa, {{1063 °F; 573 °C}}, atau inversi kristobalit, sekitar {{428 °F; 220 °C}}; dinding tidak rata; kecocokan buruk | Bakar perlahan melewati keduanya, naik dan turun; dinding rata                                           |
 
 ## Keamanan pangan {#food-safety}
 
@@ -254,11 +268,11 @@ Batas menurut hukum berbeda menurut negara. Tabel menunjukkan yang berlaku di te
 
 ::food-limits
 
-Di AS, keramik dekoratif yang tampak dapat dipakai untuk makanan diperlakukan sebagai peralatan makan kecuali jika membawa label tempel dan pemberitahuan permanen yang dicetak timbul atau dibakar pada dasarnya, seperti "Not for Food Use. May Poison Food" (Bukan untuk makanan. Dapat meracuni makanan), atau memiliki lubang menembus permukaan makanan. UE menetapkan batas timbal dan kadmium dalam Direktif UE 84/500/EEC, dan Inggris mempertahankan angka yang sama dalam hukumnya sendiri. Mulai 29 Mei 2026 Belanda, Belgia, dan Luksemburg mengizinkan timbal sekitar 130 sampai 150 kali lebih sedikit, dan kadmium sekitar 15 kali lebih sedikit. Australia menetapkan batas untuk benda impor; kami tidak menemukan batas resmi untuk benda yang dibuat di Australia atau Selandia Baru.
+Di AS, keramik dekoratif yang tampak dapat dipakai untuk makanan diperlakukan sebagai peralatan makan kecuali jika membawa label tempel dan pemberitahuan permanen yang dicetak timbul atau dibakar pada dasarnya, seperti "Not for Food Use. May Poison Food" (Bukan untuk makanan. Dapat meracuni makanan), atau memiliki lubang menembus permukaan makanan. UE menetapkan batas timbal dan kadmium untuk keramik dalam Direktif UE 84/500/EEC, dan Inggris mempertahankan angka yang sama dalam hukumnya sendiri. Sebuah keputusan negara-negara Benelux tahun 2024 menetapkan batas yang jauh lebih rendah untuk keramik. Belanda menerapkannya mulai 29 Mei 2026: timbal sekitar 130 sampai 150 kali lebih sedikit dan kadmium sekitar 14 sampai 18 kali lebih sedikit daripada angka UE. Benda yang memenuhi aturan lama dan pertama kali dijual sebelum 1 Desember 2026 boleh dijual sampai stoknya habis. Laboratorium pengujian melaporkan bahwa Luksemburg menerapkan batas yang sama mulai 29 Mei 2026, dan bahwa Belgia mengadopsinya dalam dekret kerajaan tanggal 19 Juli 2026; kami belum membaca teks-teks itu sendiri. Australia menetapkan batas untuk benda impor; kami tidak menemukan batas resmi untuk benda yang dibuat di Australia atau Selandia Baru.
 
 ### Pengujian
 
-FDA (badan pangan dan obat AS) menyatakan alat usap rumahan dapat menunjukkan timbal yang dapat terlindi, tetapi Ceramics New Zealand memperingatkan bahwa pena uji tidak dirancang untuk keramik dan memberi hasil positif palsu. Perlakukan hasil positif sebagai alasan berhenti memakai benda itu, dan hasil negatif sebagai tidak membuktikan apa pun. Uji pelindian laboratorium terhadap benda yang sudah dibakar (ASTM C738 di AS; EN 1388 atau ISO 6486 di Eropa) adalah jawaban yang sebenarnya.
+FDA (badan pangan dan obat AS) menyatakan alat usap rumahan dapat menunjukkan timbal yang dapat terlindi, tetapi penelitian menunjukkan alat ini sering keliru pada benda berglasir: alat ini dapat menunjukkan timbal yang tidak ada, dan dapat melewatkan timbal yang terlindi. Perlakukan hasil positif sebagai alasan berhenti memakai benda itu, dan hasil negatif sebagai tidak membuktikan apa pun. Uji pelindian laboratorium terhadap benda yang sudah dibakar (ASTM C738 di AS; EN 1388 atau ISO 6486 di Eropa) adalah jawaban yang sebenarnya.
 
 > [!WARNING]
 > "Aman untuk pangan"{{en: food safe}} berarti glasir ini, pada tanah liat ini, dibakar sampai kerucut ini di tungku ini dan dioleskan dengan cara ini, melepaskan kurang dari batas hukum. Glazecalc dapat membantu Anda membuat glasir yang stabil, dan **Ganti timbal** dapat menyusun ulang resep timbal lama tanpa timbal, tetapi tidak ada kalkulator yang dapat mensertifikasi sebuah benda. Hanya uji terhadap benda yang sudah dibakar yang dapat.
@@ -267,7 +281,7 @@ FDA (badan pangan dan obat AS) menyatakan alat usap rumahan dapat menunjukkan ti
 
 ### Berat jenis
 
-Bubuk glasir yang dicampur dengan air adalah **cairan glasir**{{en: slurry}}. **Berat jenis**{{en: specific gravity}} cairan itu adalah beratnya dibandingkan dengan volume air yang sama, yang berat jenisnya 1,0: semakin tinggi, semakin banyak bubuk di dalam ember. Buku Inggris lama menyebutnya **berat pint**. Glazy menyebut 1,4–1,5 "titik awal yang baik untuk sebagian besar glasir". Untuk mengukurnya, timbang tepat 100 mL cairan (Glazy menyarankan semprit) lalu bagi dengan 100: 145 g berarti berat jenis 1,45. Hidrometer tidak andal pada glasir yang menggel, dan air menguap, jadi periksa lagi sebelum Anda mengglasir.
+Bubuk glasir yang dicampur dengan air adalah **cairan glasir**{{en: slurry}}. **Berat jenis**{{en: specific gravity}} cairan itu adalah beratnya dibandingkan dengan volume air yang sama, yang berat jenisnya 1,0: semakin tinggi, semakin banyak bubuk di dalam ember. Glazy menyebut 1,4–1,5 "titik awal yang baik untuk sebagian besar glasir". Untuk mengukurnya, timbang tepat 100 mL cairan (Glazy menyarankan semprit) lalu bagi dengan 100: 145 g berarti berat jenis 1,45. Hidrometer tidak andal pada glasir yang menggel, dan air menguap, jadi periksa lagi sebelum Anda mengglasir.
 
 Target berbeda menurut sumber. Digitalfire menempatkan glasir celup pada 1,40–1,50 dan glasir kuas komersial pada 1,25–1,55, sedangkan Potclays memberikan 1,71–1,81 untuk pengkuasan dan 1,71 untuk penyemprotan. Saran kami: celup pada sekitar 1,45 dengan glasir sedikit menggel, ikuti label untuk glasir kuas, dan catat apa yang berhasil.
 
@@ -291,7 +305,7 @@ Lapisan yang terlalu tebal dapat menggumpal, melepuh, atau mengalir. Patokan pem
 
 Gas di dalam tungku, **atmosfer**nya, mengubah hasil glasir. **Oksidasi**{{en: oxidation}} berarti oksigen yang banyak. "Tungku listrik identik dengan pembakaran oksidasi," kata Digitalfire, dan glasir oksidasi biasanya lebih cerah daripada glasir reduksi, terutama pada suhu lebih rendah. Dalam oksidasi, tembaga memberi hijau dan pirus, dan besi cokelat, cokelat muda, dan merah. Tungku listrik berventilasi buruk yang penuh benda yang melepaskan gas dapat berjalan lebih netral daripada yang dimaksudkan; ventilasi yang tersambung langsung ke tungku membantu.
 
-**Reduksi**{{en: reduction}} sengaja membatasi oksigen, biasanya dalam tungku gas, kayu, atau khusus. Tembaga menjadi merah, dan besi menjadi pelebur yang lebih kuat dan menghasilkan **seladon** (biru-hijau sampai hijau-abu-abu, dari sekitar ½–2% besi) dan **tenmoku** (temmoku: cokelat-hitam, sekitar 5–6% besi). Glazy mengatakan seladon dan merah tembaga "bergantung pada reduksi". Tanah liat juga berubah: dalam satu perbandingan Digitalfire, bodi stoneware terbakar abu-abu dalam reduksi dan kekuningan dalam oksidasi. Silikon karbida dalam glasir dapat membuat area kecil reduksi bahkan di tungku listrik. Untuk reduksi dari kerucut 010 sampai kerucut 3, Orton merekomendasikan kerucutnya yang bebas besi.
+**Reduksi**{{en: reduction}} sengaja membatasi oksigen, biasanya dalam tungku gas, kayu, atau khusus. Tembaga menjadi merah, dan besi menjadi pelebur yang lebih kuat dan menghasilkan **seladon** (biru-hijau sampai hijau-abu-abu, dari sekitar ½–2% besi) dan **tenmoku** (temmoku: cokelat-hitam, sekitar 5–10% besi). Glazy mengatakan seladon dan merah tembaga "bergantung pada reduksi". Tanah liat juga berubah: dalam satu perbandingan Digitalfire, bodi stoneware terbakar abu-abu dalam reduksi dan kekuningan dalam oksidasi. Silikon karbida dalam glasir dapat membuat area kecil reduksi bahkan di tungku listrik. Untuk reduksi dari kerucut 010 sampai kerucut 3, Orton merekomendasikan kerucutnya yang bebas besi.
 
 > [!NOTE]
 > Perkirakan bahwa resep yang ditulis untuk tungku reduksi gas akan memberi hasil berbeda di tungku listrik: seladon atau merah tembaga yang bergantung pada reduksi tidak akan tampak sama dalam oksidasi. Periksa atmosfer apa yang dipakai resep itu, dan catat atmosfer Anda sendiri, bersama kerucut, di catatan resep di Glazecalc.
@@ -313,7 +327,7 @@ Resep batch
 : Bahan baku glasir menurut berat, biasanya berjumlah 100.
 
 Bentonit
-: Tanah liat sangat halus yang ditambahkan 1–3% agar glasir tidak mengendap.
+: Tanah liat sangat halus yang ditambahkan sekitar 1–2% untuk mencegah glasir mengendap. Lebih dari 3% dapat membuat glasir retak saat mengering.
 
 Biskuit (Inggris: biscuit)
 : Pembakaran pertama yang lebih rendah, biasanya kerucut 08–04 (paling sering 06–04), menyisakan benda yang kuat tetapi berpori.
@@ -343,7 +357,7 @@ Dunting
 : Retakan pada benda akibat tegangan pendinginan atau pemanasan, sering pada inversi kuarsa, {{1063 °F; 573 °C}}.
 
 Gerabah
-: Bodi suhu rendah (sekitar kerucut 06–02) yang tetap berpori.
+: Bodi suhu rendah (sekitar kerucut 06–02), berpori pada kerucut rendah dan makin padat bila dibakar lebih panas.
 
 Feldspar
 : Mineral yang menyediakan pelebur alkali dengan alumina dan silika: kalium, natrium, atau nefelin sienit.
@@ -382,7 +396,7 @@ Kerja panas
 : Efek gabungan suhu dan waktu di tungku; apa yang diukur kerucut.
 
 Kaolin (Inggris: china clay)
-: Tanah liat putih murni yang menyediakan alumina dan silika; menjaga glasir tetap tersuspensi. Australia: Eckalite.
+: Tanah liat putih murni yang memasok alumina dan silika; membantu mencegah glasir mengendap. Di Australia, Eckalite adalah salah satu mereknya.
 
 Pelapis rak tungku (kiln wash)
 : Lapisan tahan panas yang melindungi rak tungku dari tetesan.
@@ -436,7 +450,7 @@ Slip dan engobe
 : Tanah liat dalam air; engobe adalah lapisan mirip slip dengan lebih banyak bahan bukan tanah liat.
 
 Berat jenis
-: Berat cairan dibandingkan dengan volume air yang sama. Inggris lama: berat pint.
+: Berat cairan glasir dibandingkan dengan volume air yang sama.
 
 Penstabil
 : Oksida, terutama alumina, yang mengentalkan lelehan dan menambah daya tahan.
@@ -460,7 +474,7 @@ Lilin penahan
 : Lilin yang dioleskan di tempat glasir tidak boleh masuk, biasanya kaki.
 
 Whiting
-: Kalsium karbonat, pelebur kalsium utama; kehilangan lebih dari 40% beratnya saat pembakaran. Jerman: Kreide.
+: Kalsium karbonat, pelebur kalsium utama; kehilangan sekitar 44% beratnya saat pembakaran, sebagai karbon dioksida.
 
 ## Sumber {#sources}
 
@@ -483,6 +497,14 @@ Whiting
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,21 @@ Whiting
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Direktif Dewan 84/500/EEC tanggal 15 Oktober 1984 tentang penyelarasan undang-undang negara anggota mengenai barang keramik yang dimaksudkan untuk bersentuhan dengan bahan pangan](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

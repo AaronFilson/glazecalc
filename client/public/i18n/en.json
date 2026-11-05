@@ -9,6 +9,7 @@
     "homeSafety": "Don't poison your family - Glazecalc",
     "firing": "Firing a basic kiln - Glazecalc",
     "learnWithJohnBritt": "Learn with John Britt's free glaze course - Glazecalc",
+    "teachingGlazeCalculation": "Teaching glaze calculation - Glazecalc",
     "about": "About - Glazecalc",
     "privacy": "Privacy - Glazecalc",
     "terms": "Terms of use - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Approve a change - Glazecalc",
     "cones": "Cone chart: Orton and SK cone temperatures - Glazecalc",
     "materials": "Standard glaze materials: analysis and hazards - Glazecalc",
-    "materialInfo": "{name}: oxide analysis and hazards - Glazecalc"
+    "materialInfo": "{name}: oxide analysis and hazards - Glazecalc",
+    "famousGlazes": "Famous glazes - Glazecalc",
+    "famousGlaze": "{name} glaze - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",
@@ -177,6 +180,7 @@
     "homeSafety": "What to do if a child or pet swallows a glaze material, and how to keep materials, dust, the kiln and handmade ware safe around your family.",
     "firing": "How to fire an electric kiln: choose, place and read cones, and follow published schedules for bisque and glaze firings, with a cone chart.",
     "learnWithJohnBritt": "A companion to John Britt's free online Glaze Course: his videos unit by unit, with Glazecalc's guides to read and exercises to try in the calculator.",
+    "teachingGlazeCalculation": "6 sessions for teaching the unity (Seger) formula: materials and triaxial tiles, moles, recipe to formula and back, and glaze defects, with worked examples and worksheets to print.",
     "advice": "Practical tips on mixing, glazing and firing, from Glazecalc, plus any advice of your own. Free for potters and ceramicists.",
     "about": "Glazecalc is a free, open-source glaze chemistry calculator and notebook. See how it works out a unity formula and how it is built.",
     "privacy": "How Glazecalc handles your data: no ads, no analytics and no tracking, and nothing is sold. What is kept, why, and how to use your rights.",
@@ -187,6 +191,8 @@
     "materials": "The materials in Glazecalc's standard library, from feldspars and clays to frits and boron sources, each with its oxide analysis, unity formula and hazards.",
     "materialInfo": "{name}: oxide analysis, unity formula, loss on ignition and hazards in Glazecalc's standard library.",
     "materialInfoLong": "{name} in Glazecalc's standard library of glaze materials: its oxide analysis, unity formula contribution, loss on ignition and hazards.",
+    "famousGlazes": "Famous glazes from around the world: each glaze's traditional recipe or historic analysis, its unity formula, and a version from the materials sold where you are.",
+    "famousGlaze": "{name} ({native}) glaze: its traditional recipe or historic analysis, firing, unity formula and sources, and a version from the materials sold where you are.",
     "imageAlt": "The Glazecalc logo and its heading, free glaze chemistry for potters, beside a photo of fired cone packs."
   },
   "notices": {

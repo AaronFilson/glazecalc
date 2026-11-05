@@ -144,7 +144,7 @@ A água também varia, e a Digitalfire observa que ela muda o comportamento de u
 5. Misture até não haver bolsas secas nem grumos.
 6. Peneire duas vezes (veja abaixo).
 7. Cubra e deixe descansar de um dia para o outro, depois misture de novo e confira o fundo para ver se há uma camada dura.
-8. Meça a densidade e acrescente água aos poucos até chegar à sua meta.
+8. Meça a densidade e acrescente água aos poucos até chegar à sua meta. Para saber a densidade seca do seu próprio esmalte, pese também o esmalte líquido pronto (veja abaixo).
 9. Identifique o balde com uma etiqueta e anote o que você fez.
 10. Limpe a úmido: passe o esfregão no chão e limpe todas as superfícies, inclusive o lado de fora dos recipientes das matérias-primas.
 
@@ -205,11 +205,32 @@ Label: Água para uma densidade desejada
 | {{SG 1.50}} |  cerca de 85 mL |   cerca de 850 mL | cerca de 13 US fl oz |
 | {{SG 1.60}} |  cerca de 64 mL |   cerca de 640 mL | cerca de 10 US fl oz |
 
+### Ache a densidade seca do seu próprio esmalte enquanto mistura
+
+O 2,6 acima é um palpite. O valor do seu próprio esmalte, a densidade do seu pó seco, pode ser calculado a partir de três números que você pode tomar enquanto mistura. Com ele, você pode calcular, a partir da densidade, quanto pó há em qualquer balde desse esmalte mais tarde, e a água para o próximo lote. Conta nossa, não de uma fonte:
+
+1. Anote o peso do pó seco no lote: o total da receita.
+2. Pese o balde vazio antes de começar, ou marque o peso dele no próprio balde.
+3. Misture, peneire e leve o esmalte à densidade como de costume. Passe tudo pela peneira e enxágue para dentro do balde, para que nenhum pó fique de fora.
+4. Pese o balde cheio e desconte o peso do balde. Esse é o peso do esmalte líquido.
+5. Meça a densidade.
+
+Depois:
+
+- **Água** = peso do esmalte líquido − peso do pó.
+- **Volume do esmalte líquido** em mL = peso do esmalte líquido em gramas ÷ densidade.
+- **Volume do pó** = volume do esmalte líquido − água (1 g de água é 1 mL).
+- **Densidade seca** = peso do pó ÷ volume do pó.
+
+Por exemplo: 1000 g de pó dão 1980 g de esmalte líquido com {{SG 1.45}}. A água é 980 g, o esmalte líquido ocupa 1980 ÷ 1,45 = cerca de 1366 mL, o pó ocupa 1366 − 980 = 386 mL, e a densidade seca é 1000 ÷ 386 = cerca de 2,59.
+
+Pese o esmalte líquido inteiro no fim, não a água enquanto a despeja, para que a água que evapora ou respinga para fora não conte. Aqui, erros pequenos crescem: uma leitura de densidade errada em 0,01 muda o resultado em cerca de 2 a 4%, mais em um esmalte mais ralo. Use um lote de 1 kg ou mais, uma balança precisa e, para a densidade, o método do copo de 500 g descrito acima. A maioria das matérias-primas comuns fica entre cerca de 2,5 e 2,9, então um valor muito fora disso, em um esmalte sem muito silicato de zircônio ou chumbo, provavelmente indica um erro de medição. Anote o valor na receita.
+
 ### Sais de Epsom, goma CMC e bentonita
 
 Os **sais de Epsom** fazem um esmalte gelificar levemente quando parado e voltar a fluir quando mexido. Isso se chama **flocular** o esmalte, e um esmalte que se comporta assim é **tixotrópico**: ele se aplica de modo mais uniforme, escorre menos e decanta menos. A Digitalfire sugere começar com cerca de 2 g por galão assim que a densidade estiver certa (cerca de 0,5 g por litro, conversão nossa) e ajustar a quantidade a cada vez que você mistura, já que nenhuma receita deve fixar a dose. Sugerimos dissolvê-los antes em um pouco de água quente. Em um exemplo da Digitalfire, um esmalte com {{SG 1.45}} escorria, então a água o levou a {{SG 1.43}} e os sais de Epsom o gelificaram de volta até ficar cremoso, e ele foi aplicado de modo uniforme. Uma verificação aproximada: mexa, pare e observe. Um esmalte gelificado continua se movendo por cerca de 2 ou 3 segundos, depois para e volta um pouco.
 
-A **goma CMC** (carboximetilcelulose) deixa o esmalte líquido mais pegajoso e mais lento para secar, e deixa uma camada mais dura que adere à peça. Importa mais para esmaltes de pincel e esmaltes ricos em frita. O exemplo da Digitalfire mistura 3,75 g em 1.000 g de esmalte líquido, e a goma tem que ser incorporada com um liquidificador. Um esmalte com CMC não vai gelificar com sais de Epsom e, como os micróbios se alimentam da goma, ele pode mudar no balde e começar a cheirar.
+A **goma CMC** (carboximetilcelulose) deixa o esmalte líquido mais pegajoso e mais lento para secar, e deixa uma camada mais dura que adere à peça. Importa mais para esmaltes de pincel e esmaltes ricos em frita. O exemplo da Digitalfire mistura 3,75 g em 1000 g de esmalte líquido, e a goma tem que ser incorporada com um liquidificador. Um esmalte com CMC não vai gelificar com sais de Epsom e, como os micróbios se alimentam da goma, ele pode mudar no balde e começar a cheirar.
 
 A **bentonita**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os esmaltes de imersão costumam contar com 15 a 25% de argila crua para isso. Para uma receita com pouca argila, cerca de 1 a 3% de bentonita ajuda; a Digitalfire diz que um esmalte com mais de 15% de argila não deve precisar de bentonita a mais de 1% do peso do esmalte seco.
 
@@ -227,7 +248,7 @@ Um esmalte pode ficar bem diferente em outra argila ou em outro forno: o Clay Ar
 - uma mudança de cada vez
 - uma imersão simples e uma dupla, para ver o esmalte fino e grosso
 - todas as provas na mesma fornada
-- uma marca em cada prova antes da queima, com um carimbo, uma incisão ou um lápis para pintura sob esmalte.
+- uma marca em cada prova antes da queima, com um carimbo, uma incisão ou um lápis para pintura sob esmalte. As provas queimadas são parecidas, e uma marca feita antes da queima resiste ao forno, então você sempre sabe qual receita é cada prova.
 
 Sugerimos provas que fiquem em pé, já que uma prova deitada esconde até onde o esmalte escorre, com uma faixa texturizada para mostrar como o esmalte se comporta nas bordas e um pé sem esmalte. Apoie cada uma em um pratinho ou em um pedaço de biscoito, ou em uma placa com protetor de placas, para aparar os pingos. Ponha um **cone testemunho**, um pequeno cone cerâmico que dobra quando recebeu calor suficiente, perto das provas para mostrar o que elas receberam; o [guia de queima](/guides/firing) explica os cones. Dê a cada prova um código curto e anote-o junto da receita nos seus registros. Willers, escrevendo para a Ceramic Arts Network, usa números e letras, e escreve o próprio sistema na frente do caderno.
 
@@ -265,13 +286,13 @@ Willers resume bem o objetivo: “informação suficiente para poder repetir, ou
 Table: O que anotar para cada lote de esmalte (nosso modelo)
 Label: Modelo de registro
 
-| Parte     | O que anotar                                                                                                                                                                                                                      |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Receita   | A receita e sua versão; marcas e números de lote das matérias-primas; quaisquer substituições                                                                                                                                     |
-| Mistura   | Data; tamanho do lote; água acrescentada e seu tipo (da torneira, de osmose reversa ou destilada); densidade após misturar e densidade final; sais de Epsom, CMC e bentonita acrescentados; malha da peneira e número de passadas |
-| Aplicação | Massa; cone do biscoito; imersão, pincel ou derramamento; tempo de imersão ou número de camadas; espessura seca                                                                                                                   |
-| Queima    | Forno e posição na placa; a curva de queima, com suas rampas, patamares e resfriamento; atmosfera (oxidação ou redução); o que o cone testemunho mostrou, não só para que o forno foi programado                                  |
-| Resultado | Superfície e cor; qualquer escorrimento, gretamento{{en: crazing}} ou furinhos; fotos da frente, do verso e do lado; o código da prova                                                                                            |
+| Parte     | O que anotar                                                                                                                                                                                                                                                                               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Receita   | A receita e sua versão; marcas e números de lote das matérias-primas; quaisquer substituições                                                                                                                                                                                              |
+| Mistura   | Data; tamanho do lote; água acrescentada e seu tipo (da torneira, de osmose reversa ou destilada); densidade após misturar e densidade final; o peso do esmalte líquido pronto, para a densidade seca; sais de Epsom, CMC e bentonita acrescentados; malha da peneira e número de passadas |
+| Aplicação | Massa; cone do biscoito; imersão, pincel ou derramamento; tempo de imersão ou número de camadas; espessura seca                                                                                                                                                                            |
+| Queima    | Forno e posição na placa; a curva de queima, com suas rampas, patamares e resfriamento; atmosfera (oxidação ou redução); o que o cone testemunho mostrou, não só para que o forno foi programado                                                                                           |
+| Resultado | Superfície e cor; qualquer escorrimento, gretamento{{en: crazing}} ou furinhos; fotos da frente, do verso e do lado; o código da prova                                                                                                                                                     |
 
 > [!NOTE]
 > No Glazecalc, uma [receita](/recipe) salva guarda a própria receita. Um [registro de queima](/firing) anota cada queima: o forno, a data, os horários, as temperaturas, os cones e as observações. As [anotações](/notes) guardam todo o resto, como o registro do lote acima e o que cada prova mostrou.

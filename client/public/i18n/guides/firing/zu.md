@@ -89,16 +89,16 @@ Label: Ishadi lama-cone lika-Orton
 | I-cone | Kancane, {{27 °F/h; 15 °C/h}} | Phakathi, {{108 °F/h; 60 °C/h}} | Ngokushesha, {{270 °F/h; 150 °C/h}} |
 | ------ | ----------------------------: | ------------------------------: | ----------------------------------: |
 | 022    |                             – |             {{1087 °F; 586 °C}} |                 {{1094 °F; 590 °C}} |
-| 018    |                             – |             {{1319 °F; 715 °C}} |                 {{1353 °F; 734 °C}} |
-| 015    |                             – |             {{1456 °F; 791 °C}} |                 {{1504 °F; 818 °C}} |
+| 018    |           {{1267 °F; 686 °C}} |             {{1319 °F; 715 °C}} |                 {{1353 °F; 734 °C}} |
+| 015    |           {{1382 °F; 750 °C}} |             {{1456 °F; 791 °C}} |                 {{1504 °F; 818 °C}} |
 | 010    |           {{1636 °F; 891 °C}} |             {{1657 °F; 903 °C}} |                 {{1679 °F; 915 °C}} |
 | 08     |           {{1692 °F; 922 °C}} |             {{1728 °F; 942 °C}} |                 {{1753 °F; 956 °C}} |
-| 07     |                             – |             {{1789 °F; 976 °C}} |                 {{1809 °F; 987 °C}} |
+| 07     |           {{1764 °F; 962 °C}} |             {{1789 °F; 976 °C}} |                 {{1809 °F; 987 °C}} |
 | 06     |           {{1798 °F; 981 °C}} |             {{1828 °F; 998 °C}} |                {{1855 °F; 1013 °C}} |
 | 05     |          {{1870 °F; 1021 °C}} |            {{1888 °F; 1031 °C}} |                {{1911 °F; 1044 °C}} |
 | 04     |          {{1915 °F; 1046 °C}} |            {{1945 °F; 1063 °C}} |                {{1971 °F; 1077 °C}} |
 | 03     |          {{1960 °F; 1071 °C}} |            {{1987 °F; 1086 °C}} |                {{2019 °F; 1104 °C}} |
-| 02     |                             – |            {{2016 °F; 1102 °C}} |                {{2052 °F; 1122 °C}} |
+| 02     |          {{1972 °F; 1078 °C}} |            {{2016 °F; 1102 °C}} |                {{2052 °F; 1122 °C}} |
 | 01     |          {{1999 °F; 1093 °C}} |            {{2046 °F; 1119 °C}} |                {{2080 °F; 1138 °C}} |
 | 1      |          {{2028 °F; 1109 °C}} |            {{2079 °F; 1137 °C}} |                {{2109 °F; 1154 °C}} |
 | 4      |          {{2086 °F; 1141 °C}} |            {{2124 °F; 1162 °C}} |                {{2161 °F; 1183 °C}} |
@@ -460,71 +460,71 @@ I-kiln yesandla ilandela uhlelo olufanayo ngesandla: omisa kancane isivalo sivul
 
 ## Ukushisa i-glaze {#glaze}
 
-Ukushisa i-glaze kuncibilikisa i-glaze ibe yingilazi phezu kwe-bisque. Abaqalayo abaningi bashisa ama-glaze okushisa okuphansi ku-cone 06–04 noma ama-glaze okushisa okuphakathi ku-cone 5–6. Shisa ku-cone ebhalwe kumalebula obumba nawe-glaze yakho, ne-cone pack ezungeze leyo nombolo. Ngokwenzekayo ngaphakathi kwe-glaze njengoba incibilika, bona [Izisekelo ze-glaze](/guides/glazing-basics).
+Ukushisa i-glaze kuncibilikisa i-glaze ibe yingilazi phezu kwe-bisque. Iningi lama-glaze okushisa okuphansi asemakethe enzelwe i-cone 06 noma 05 (ibanga lokushisa okuphansi lisuka ku-cone 06–04), futhi iningi lama-glaze okushisa okuphakathi enzelwe i-cone 5–6. Shisa kuze kube yi-cone ebhalwe kumalebula e-glaze nobumba lwakho, ne-cone pack ezungeze leyo nombolo. Ukuze wazi okwenzekayo ngaphakathi kwe-glaze lapho incibilika, bheka [Izisekelo ze-glaze](/guides/glazing-basics).
 
-### Ukulayisha ukushisa i-glaze
+### Ukufaka izitsha ukuze kushiswe i-glaze
 
-- Izingcezu ezine-glaze akumele zithintane noma zithinte izindonga: shiya cishe iyintshi engu-½ (13 mm).
-- Gcina i-glaze ingekho onyaweni (**dry-footing**), noma ubeke izitsha zokushisa okuphansi phezu kwama-**stilt**, izitendi ezincane ezinezihloko. I-stoneware ne-porcelain akufanele kume phezu kwama-stilt, angena kuzo kulawo mazinga okushisa; sebenzisa i-kiln wash yokushisa okuphezulu noma isihlabathi se-silica esikhundleni salokho.
-- Shiya okungenani iyintshi engu-1 (25 mm) phakathi konqenqema lwamashalofu nodonga noma i-sitter.
+- Izingcezu ezinama-glaze akumele zithintane noma zithinte izindonga: shiya cishe u-½ weyintshi (13 mm).
+- Ungafaki i-glaze onyaweni lwesitsha (**dry-footing**), noma ubeke izitsha zokushisa okuphansi phezu kwama-**stilts**, izitendi ezincane ezinamaphoyinti. I-stoneware ne-porcelain akufanele zime phezu kwama-stilts, angena kuzo kulawo mazinga okushisa; sebenzisa i-kiln wash yokushisa okuphezulu noma isihlabathi se-silica esikhundleni salokho.
+- Shiya okungenani iyintshi engu-1 (25 mm) phakathi kwemiphetho yamashalofu nodonga noma i-kiln sitter.
 
-### Izinhlelo ze-controller
+### Amashejuli e-controller
 
-Table: Izinhlelo ze-glaze ezisethwe ngaphambili ze-L&L ne-Bartlett
-Label: Izinhlelo ze-glaze ezisethiwe
+Table: Amashejuli e-glaze asethwe ngaphambili e-L&L ne-Bartlett
+Label: Amashejuli e-glaze asethiwe
 
-| I-segment                               |                          Khuphukela ku- |               Slow Glaze |                    Fast Glaze |
-| --------------------------------------- | --------------------------------------: | -----------------------: | ----------------------------: |
-| 1                                       |                      {{250 °F; 121 °C}} |    {{150 °F/h; 83 °C/h}} | Asikho isinyathelo esihlukile |
-| 2                                       | {{250 °F; 139 °C}} ngaphansi kwesiqongo |   {{400 °F/h; 222 °C/h}} |        {{570 °F/h; 317 °C/h}} |
-| 3                                       |                                Isiqongo |    {{120 °F/h; 67 °C/h}} |        {{200 °F/h; 111 °C/h}} |
-| Isikhathi sokushisa, i-kiln engenalutho |                                         | Cishe amahora angu-6½–7½ |        Cishe amahora angu-3–4 |
+| Ingxenye                                  |                          Khuphukela ku- |               Slow Glaze |                    Fast Glaze |
+| ----------------------------------------- | --------------------------------------: | -----------------------: | ----------------------------: |
+| 1                                         |                      {{250 °F; 121 °C}} |    {{150 °F/h; 83 °C/h}} | Asikho isinyathelo esihlukile |
+| 2                                         | {{250 °F; 139 °C}} ngaphansi kweqophelo |   {{400 °F/h; 222 °C/h}} |        {{570 °F/h; 317 °C/h}} |
+| 3                                         |                     Iqophelo eliphezulu |    {{120 °F/h; 67 °C/h}} |        {{200 °F/h; 111 °C/h}} |
+| Isikhathi sokushisisa, i-kiln engenalutho |                                         | Cishe amahora angu-6½–7½ |        Cishe amahora angu-3–4 |
 
-Table: Lapho ama-segment 2 no-3 aphela khona, nge-cone (L&L ne-Bartlett)
-Label: Okuhlosiwe kwezinhlelo ezisethiwe
+Table: Lapho izingxenye 2 no-3 ziphela khona, nge-cone (L&L ne-Bartlett)
+Label: Okuhloswe amashejuli
 
-| I-cone |   I-segment 2 iphela |             Isiqongo |
+| I-cone |    Ingxenye 2 iphela |             Iqophelo |
 | ------ | -------------------: | -------------------: |
 | 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-I-Slow Glaze iyinketho ephephe kakhulu, uma kubhekwa isixwayiso se-L&L ngokushisa ngokushesha. Uma wengeza ukubamba okungaphezu kwemizuzu engu-5–10 esiqongweni, i-L&L ithi yehlisa okuhlosiwe noma i-cone offset ukuze kulingane, futhi iphawula ukuthi "Ukubamba emazingeni okushisa aphezulu kusheshisa ukuguga kwama-element ne-thermocouple."
+I-Slow Glaze iyona ekhethwa ngokuphepha kakhulu, ngenxa yesixwayiso se-L&L mayelana nokushisa ngokushesha. Uma wengeza ukulinda (hold) okungaphezu kwemizuzu engu-5–10 eqophelweni, i-L&L ithi wehlise okuhlosiwe noma i-cone offset ukuze kulingane, futhi iphawula ukuthi "Ukulinda emazingeni okushisa aphezulu kusheshisa ukuguga kwama-element ne-thermocouple."
 
-### I-cone 6: drop-and-hold
+### I-cone 6: ukwehlisa nokulinda
 
-Ama-glaze okushisa okuphakathi kwesinye isikhathi aphuma ane-**pinholes** (izimbotshana ezincane ebusweni) noma amabhamuza, ashiywe yigesi ephuma ngamagwebu ekuncibilikeni. Uhlelo lwe-**drop-and-hold** (yehlisa ubambe) lushisa luze lufike phezulu, lupholise ngokushesha cishe ngo-{{100 °F; 56 °C}} bese lubamba lapho. Ngamazwi e-Digitalfire, "Ukwehla ngo-100°F nokubamba kunika okuncibilikile ubukhuni obanele ukuqhumisa amagwebu kodwa kusabavumela ukuthi aphole."
+Ama-glaze okushisa okuphakathi kwesinye isikhathi aphuma enama-**pinhole** (izimbobo ezincane kakhulu ebusweni) noma amabhamuza, ashiywe yigesi ebhudlayo iphuma ku-glaze encibilikile. Ishejuli **yokwehlisa nokulinda** (drop-and-hold) ishisa kuze kube phezulu, ipholise ngokushesha cishe ngo-{{100 °F; 56 °C}} bese ilinda lapho. Ngamazwi e-Digitalfire, "Ukwehlisa u-100°F nokulinda kunika i-glaze encibilikile ukujiya okwanele ukuqhumisa amabhamuza kuyilapho isawavumela ukuthi aphole."
 
-Table: I-Digitalfire PLC6DS, i-cone 6 drop-and-hold
+Table: I-Digitalfire PLC6DS, i-cone 6 ukwehlisa nokulinda
 Label: I-Digitalfire PLC6DS
 
-| Isinyathelo |                        Isivinini |           Okuhlosiwe | Ukubamba                                            |
-| ----------- | -------------------------------: | -------------------: | --------------------------------------------------- |
-| 1           |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Imizuzu engu-60                                     |
-| 2           |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Imizuzu engu-30 uma uthanda, ukususa amafu amagwebu |
-| 3           |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Imizuzu engu-10; isikhathi eside kuma-kiln amakhulu |
-| 4           | Yehla ngo-{{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Imizuzu engu-30                                     |
+| Isinyathelo |                         Isivinini |           Okuhlosiwe | Ukulinda                                                  |
+| ----------- | --------------------------------: | -------------------: | --------------------------------------------------------- |
+| 1           |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Imizuzu engu-60                                           |
+| 2           |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Ngokuzikhethela imizuzu engu-30, ukususa amafu amabhamuza |
+| 3           |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Imizuzu engu-10; isikhathi eside kuma-kiln amakhulu       |
+| 4           | Phansi ngo-{{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Imizuzu engu-30                                           |
 
-I-PLC6DS ithatha cishe amahora angu-9 nemizuzu engu-36. Kuma-glaze agobhoza kakhulu, i-Digitalfire yehlisa cishe ngo-{{200 °F; 111 °C}} esikhundleni salokho; ukwehlisa kakhulu "kuba sengozini yokwakheka kwamakristalu ngesikhathi sokubamba". Isiqongo sayo esingu-{{2200 °F; 1204 °C}} singaphansi kwesishadi esingu-{{2232 °F; 1222 °C}} se-cone 6; i-Digitalfire ibika ukuthi ama-kiln amaningi afinyelela ku-cone 6 cishe ku-{{2200 °F; 1204 °C}}. Kuhlole nge-cone pack ku-kiln yakho.
+I-PLC6DS ithatha cishe amahora angu-9 nemizuzu engu-36. Kuma-glaze ageleza kakhulu, i-Digitalfire yehlisa cishe ngo-{{200 °F; 111 °C}} esikhundleni salokho; ukwehlisa kakhulu "kubeka engozini ukwakheka kwamakristalu ngesikhathi sokulinda". Iqophelo layo elingu-{{2200 °F; 1204 °C}} lingaphansi kuka-{{2232 °F; 1222 °C}} weshadi we-cone 6; i-Digitalfire ibika ukuthi iningi lama-kiln lifinyelela i-cone 6 cishe ku-{{2200 °F; 1204 °C}}. Kuhlole nge-cone pack ku-kiln yakho.
 
 ### Ukupholisa kancane
 
-**Ukupholisa kancane** kusho ukuthi i-controller ipholisa i-kiln ngesivinini esisethiwe esikhundleni sokuyiyeka yehle ngokukhululekile. I-C6DHSC ye-Digitalfire yi-PLC6DS elandelwa ukupholisa ngo-{{150 °F/h; 83 °C/h}} kusukela ku-{{2100 °F; 1148 °C}} kuze kufike ku-{{1400 °F; 760 °C}}, bese icishwa. "Ithuthukisa ukucwebezela nekhwalithi yobuso" futhi isiza ama-rutile blue, kodwa ukupholisa kancane "kungandisa ukungacwebezeli (matteness)" (enye i-glaze engacwebezeli yaba yomile) futhi kungafinyeza impilo yama-relay e-kiln. I-L&L nayo ithumela uhlelo lokupholisa kancane lwe-cone 6:
+**Ukupholisa kancane** kusho ukuthi i-controller ipholisa i-kiln ngesivinini esisethiwe esikhundleni sokuyiyeka yehle ngokwayo. I-C6DHSC ye-Digitalfire yi-PLC6DS ilandelwa ukupholisa ngo-{{150 °F/h; 83 °C/h}} kusuka ku-{{2100 °F; 1148 °C}} kuya ku-{{1400 °F; 760 °C}}, bese kucishwa. "Ithuthukisa ukucwebezela nekhwalithi yobuso" futhi isiza ama-blue e-rutile, kodwa ukupholisa kancane "kungandisa ukungacwebezeli" (i-glaze eyodwa engacwebezeli yaba yomile) futhi kunganciphisa impilo yama-relay e-kiln. I-L&L nayo inikeza uhlelo lokupholisa kancane lwe-cone 6:
 
 Table: I-L&L "User 6": ukupholisa kancane kwama-glaze e-cone 6
-Label: Ukupholisa kancane kwe-L and L
+Label: Ukupholisa kancane kwe-L ne-L
 
-| Isinyathelo |                       Isivinini |           Okuhlosiwe |
-| ----------- | ------------------------------: | -------------------: |
-| 1           |       Ijubane eligcwele phezulu | {{2232 °F; 1222 °C}} |
-| 2           |        Ijubane eligcwele phansi | {{1900 °F; 1038 °C}} |
-| 3           | Yehla ngo-{{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Isinyathelo |                        Isivinini |           Okuhlosiwe |
+| ----------- | -------------------------------: | -------------------: |
+| 1           |      Isivinini esigcwele phezulu | {{2232 °F; 1222 °C}} |
+| 2           |       Isivinini esigcwele phansi | {{1900 °F; 1038 °C}} |
+| 3           | Phansi ngo-{{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Ama-controller e-Skutt nawo anikeza i-preheat nenketho yokupholisa yesinyathelo esisodwa.
+Ama-controller e-Skutt nawo anikeza ukushisisa kuqala nenketho yokupholisa ngesinyathelo esisodwa.
 
-### Ku-kiln yesandla
+### Ku-kiln esebenza ngesandla
 
-I-kiln yesandla ayikwazi ukulandela lezi zinhlelo ncamashi, kodwa uhlelo luyafana: ngobumnene ekuqaleni, kuzinzile phakathi, nokuphela okubhekiwe. Uhlelo lwe-glaze lokushisa okuphansi lwe-Bracker's lungaphansi kwesithi Ama-kiln esandla ngokuningiliziwe, ngezansi; kuma-cone ashisa kakhulu lwengeza "isilinganiso semizuzu engu-15–30 ngenombolo ye-cone ngayinye". Nge-pyrometer, ukuzijwayeza nencwadi yokubhala, ungakopisha cishe i-drop-and-hold noma ukupholisa kancane ngokwehlisa amaswishi ngesandla, njengoba i-Digitalfire iphakamisa.
+I-kiln esebenza ngesandla ayikwazi ukulandela la mashejuli ngqo, kodwa uhlelo luyafana: kancane ekuqaleni, ngokuzinzile phakathi, nokuphela okubhekwayo. Ishejuli ye-Bracker ye-glaze yokushisa okuphansi ingaphansi kuka-Ama-kiln asebenza ngesandla ngokuningiliziwe, ngezansi; kuma-cone ashisa kakhulu yengeza "isilinganiso semizuzu engu-15–30 ngenombolo ye-cone ngayinye". Nge-pyrometer, ukuzijwayeza nencwadi yokubhala, ungalingisa cishe ukwehlisa nokulinda noma ukupholisa kancane ngokwehlisa izinkinobho ngesandla, njengoba i-Digitalfire iphakamisa.
 
 ## Ama-kiln esandla ngokuningiliziwe {#manual-kilns}
 

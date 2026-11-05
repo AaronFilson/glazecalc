@@ -2,17 +2,35 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { expect } from 'chai';
 import { INDEXNOW_KEY } from '../../lib/indexnow.js';
-import { ENDPOINT, changesContent, payload, ping, sitemapUrls } from '../../scripts/indexnow.mjs';
-import { sitemap } from '../lib/pages.ts';
+import languages from '../../lib/regions/languages.js';
+import {
+  ENDPOINT,
+  MAX_URLS,
+  changesContent,
+  isSitemapIndex,
+  payload,
+  ping,
+  sitemapUrls
+} from '../../scripts/indexnow.mjs';
+import { sitemap, sitemapIndex, sitemapPath } from '../lib/pages.ts';
 
 // Telling search engines about changed pages after a production deploy (scripts/indexnow.mjs).
 const SITE = 'https://glazecalcapp.com';
 
-/** A fetch that answers the sitemap with the app's own, and IndexNow with `status`, keeping what was posted. */
+/** Every address in the app's sitemaps, as the site serves them: one per language. */
+const allUrls = () =>
+  languages.LIVE_LANGUAGES.flatMap((code) => sitemapUrls(sitemap(SITE, undefined, undefined, undefined, code)));
+
+/**
+ * A fetch that answers the sitemap index and each language's sitemap with the app's own, and IndexNow
+ * with `status`, keeping what was posted.
+ */
 function fakeFetch(status: number | Error) {
   const posted: Array<Record<string, unknown>> = [];
   const get = (async (url: string, init?: RequestInit) => {
-    if (url === SITE + '/sitemap.xml') return new Response(sitemap(SITE), { status: 200 });
+    if (url === SITE + '/sitemap.xml') return new Response(sitemapIndex(SITE), { status: 200 });
+    const code = languages.LIVE_LANGUAGES.find((live) => url === SITE + sitemapPath(live));
+    if (code) return new Response(sitemap(SITE, undefined, undefined, undefined, code), { status: 200 });
     expect(url).to.equal(ENDPOINT);
     posted.push(JSON.parse(String(init?.body)) as Record<string, unknown>);
     if (status instanceof Error) throw status;
@@ -46,11 +64,18 @@ describe('IndexNow', () => {
     expect(urls).to.include(SITE + '/de/guides/firing');
     expect(urls).to.include(SITE + '/guides/learn-with-john-britt');
     expect(urls).not.to.include(SITE + '/de/guides/learn-with-john-britt');
-    expect(urls.some((url) => url.startsWith(SITE + '/materials/'))).to.equal(true);
-    expect(urls.some((url) => url.startsWith(SITE + '/de/materials/'))).to.equal(false);
+    expect(urls).to.include(SITE + '/materials/silica');
+    expect(urls).to.include(SITE + '/de/materials/silica');
     expect(new Set(urls).size).to.equal(urls.length);
     // Signs in and the pages once signed in are noindex and never sent.
     expect(urls).not.to.include(SITE + '/recipe');
+  });
+
+  it('reads the sitemap index, and each sitemap it names', () => {
+    const index = sitemapIndex(SITE, ['en', 'de'], {});
+    expect(isSitemapIndex(index)).to.equal(true);
+    expect(isSitemapIndex(sitemap(SITE, ['en', 'de']))).to.equal(false);
+    expect(sitemapUrls(index)).to.deep.equal([SITE + '/sitemaps/en.xml', SITE + '/sitemaps/de.xml']);
   });
 
   it('sends the key, where it is, and only addresses on the host', () => {
@@ -62,12 +87,14 @@ describe('IndexNow', () => {
     });
   });
 
-  it('sends every address once when there is no last commit, and says what IndexNow answered', async () => {
+  it('sends every address once when there is no last commit, in requests of at most 10,000, and says what IndexNow answered', async () => {
     const { get, posted } = fakeFetch(202);
     const line = await ping({ site: SITE + '/', to: 'b', fetch: get });
-    expect(posted).to.have.length(1);
-    expect(posted[0]!['urlList']).to.deep.equal(sitemapUrls(sitemap(SITE)));
-    expect(line).to.match(/^Sent \d+ addresses: IndexNow answered 202/);
+    const all = allUrls();
+    expect(posted).to.have.length(Math.ceil(all.length / MAX_URLS));
+    for (const body of posted) expect((body['urlList'] as string[]).length).to.be.at.most(MAX_URLS);
+    expect(posted.flatMap((body) => body['urlList'] as string[])).to.deep.equal(all);
+    expect(line).to.match(/^Sent \d+ addresses( in \d+ requests)?: IndexNow answered 202/);
   });
 
   it('sends nothing when nothing a page shows changed, and everything when something did', async () => {
@@ -84,14 +111,14 @@ describe('IndexNow', () => {
       changedFiles: () => ['client/public/i18n/de.json'],
       fetch: changed.get
     });
-    expect(changed.posted).to.have.length(1);
+    expect(changed.posted.length).to.be.at.least(1);
     // A last commit git does not know (history rewritten): everything.
     const unknown = fakeFetch(200);
     const failing = () => {
       throw new Error('bad revision');
     };
     await ping({ site: SITE, from: 'gone', to: 'b', changedFiles: failing, fetch: unknown.get });
-    expect(unknown.posted).to.have.length(1);
+    expect(unknown.posted.length).to.be.at.least(1);
   });
 
   it('refuses any site but production, staging first', async () => {

@@ -89,16 +89,16 @@ Label: Ortons kegletabel
 | Kegle | Langsom, {{27 °F/h; 15 °C/h}} | Middel, {{108 °F/h; 60 °C/h}} | Hurtig, {{270 °F/h; 150 °C/h}} |
 | ----- | ----------------------------: | ----------------------------: | -----------------------------: |
 | 022   |                             – |           {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018   |                             – |           {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015   |                             – |           {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018   |           {{1267 °F; 686 °C}} |           {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015   |           {{1382 °F; 750 °C}} |           {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010   |           {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08    |           {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07    |                             – |           {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07    |           {{1764 °F; 962 °C}} |           {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06    |           {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05    |          {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04    |          {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03    |          {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02    |                             – |          {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02    |          {{1972 °F; 1078 °C}} |          {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01    |          {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1     |          {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4     |          {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,13 +460,13 @@ En manuelt styret ovn følger den samme plan med hånden: Tør langsomt med låg
 
 ## Glasurbrænding {#glaze}
 
-Glasurbrændingen{{en: glaze firing}} smelter glasuren{{en: glaze}} til glas på det forglødede gods{{en: bisque}}. De fleste begyndere brænder glasurer til lav temperatur ved kegle{{en: cone}} 06–04 eller glasurer til mellemtemperatur ved kegle 5–6. Brænd til den kegle, der står på etiketterne på leret og glasuren, med et keglesæt{{en: cone pack}} omkring det nummer. Hvad der sker inde i glasuren, mens den smelter, kan læses i [Glasering fra grunden](/guides/glazing-basics).
+Glasurbrændingen{{en: glaze firing}} smelter glasuren til glas på det forglødede gods. De fleste glasurer til lav temperatur i handlen er lavet til kegle 06 eller 05 (lav temperatur går fra kegle 06 til 04), og de fleste glasurer til mellemtemperatur til kegle 5–6. Brænd til den kegle, der står på glasurens og lerets etiketter, med et keglesæt omkring det nummer. Hvad der sker inde i glasuren, når den smelter, står i [Glasering fra grunden](/guides/glazing-basics).
 
-### Påfyldning til glasurbrænding
+### Påfyldning til en glasurbrænding
 
-- Glaserede emner må ikke røre hinanden eller væggene: Lad der være ca. ½ tomme (13 mm) imellem.
-- Hold **foden fri for glasur**, eller sæt gods til lav temperatur på **trefødder**, små stativer med spidser. Stentøj{{en: stoneware}} og porcelæn bør ikke stå på trefødder, som brænder fast i godset ved de temperaturer; brug i stedet pladebeskyttelse til høj temperatur eller kvartssand.
-- Lad der være mindst 1 tomme (25 mm) mellem ovnpladernes kanter og væggen eller Kiln-Sitteren.
+- Glaserede emner må ikke røre hinanden eller ovnens vægge: Lad ca. ½ tomme (13 mm) være fri.
+- Hold foden fri for glasur (**tør fod**), eller sæt gods til lav temperatur på **trefødder**{{en: stilts}}, små stativer med spidser. Stentøj og porcelæn bør ikke stå på trefødder, som brænder fast i godset ved de temperaturer; brug i stedet pladebeskyttelse til høj temperatur eller kvartssand.
+- Lad mindst 1 tomme (25 mm) være fri mellem ovnpladernes kanter og væggen eller Kiln-Sitteren.
 
 ### Brændekurver til styringer
 
@@ -475,7 +475,7 @@ Label: Glasurprogrammer
 
 | Segment                 |                                  Stig til |             Slow Glaze |             Fast Glaze |
 | ----------------------- | ----------------------------------------: | ---------------------: | ---------------------: |
-| 1                       |                        {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Intet separat trin |
+| 1                       |                        {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |        Intet eget trin |
 | 2                       | {{250 °F; 139 °C}} under sluttemperaturen | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
 | 3                       |                          Sluttemperaturen |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
 | Opvarmningstid, tom ovn |                                           |        Ca. 6½–7½ timer |          Ca. 3–4 timer |
@@ -489,13 +489,13 @@ Label: Programmernes mål
 | 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze er det sikrere standardvalg i lyset af L&L’s advarsel mod hurtig brænding. Lægges der en holdetid{{en: hold}} på mere end 5–10 minutter ind ved sluttemperaturen, siger L&L, at måltemperaturen eller kegleoffset skal sænkes tilsvarende, og bemærker, at »holdetid ved høje temperaturer fremskynder slid på varmelegemer og termoelement«.
+Slow Glaze er det sikreste standardvalg, i lyset af L&L’s advarsel mod hurtig brænding. Lægges der en holdetid på mere end 5–10 minutter ved sluttemperaturen, siger L&L, at måltemperaturen eller kegleoffset skal sænkes tilsvarende, og bemærker, at »holdetid ved høje temperaturer fremskynder slid på varmelegemer og termoelement«.
 
 ### Kegle 6: sænk og hold
 
-Glasurer til mellemtemperatur får nogle gange **nålestik**{{en: pinholes}} (bittesmå huller i overfladen) eller blærer, efterladt af gas, der bobler ud af smelten. En brændekurve med **sænk og hold**{{en: drop-and-hold}} brænder til toppen, køler hurtigt ca. {{100 °F; 56 °C}} ned og holder temperaturen der. Med Digitalfires ord: »Et fald på 100°F og en holdetid giver smelten nok viskositet til at sprænge boblerne og samtidig lade dem hele.«
+Glasurer til mellemtemperatur får undertiden **nålestik**{{en: pinholes}} (små huller i overfladen) eller blærer, som gas, der bobler ud af smelten, efterlader. En brændekurve med **sænk og hold**{{en: drop-and-hold}} brænder til toppen, køler hurtigt ca. {{100 °F; 56 °C}} ned og holder temperaturen der. Med Digitalfires ord: »At sænke 100°F og holde giver smelten viskositet nok til at sprænge boblerne og samtidig lade dem hele.«
 
-Table: Digitalfire PLC6DS, kegle 6 med sænk og hold
+Table: Digitalfire PLC6DS, sænk og hold til kegle 6
 Label: Digitalfire PLC6DS
 
 | Trin |                      Hastighed |                  Mål | Holdetid                                            |
@@ -505,26 +505,26 @@ Label: Digitalfire PLC6DS
 | 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutter; længere i store ovne                   |
 | 4    | Ned med {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutter                                         |
 
-PLC6DS tager ca. 9 timer og 36 minutter. Til mere letflydende glasurer sænker Digitalfire i stedet ca. {{200 °F; 111 °C}}; at sænke for meget »risikerer krystallisering under holdetiden«. Sluttemperaturen på {{2200 °F; 1204 °C}} ligger under tabellens {{2232 °F; 1222 °C}} for kegle 6; Digitalfire oplyser, at de fleste ovne når kegle 6 ved ca. {{2200 °F; 1204 °C}}. Tjek det med et keglesæt i egen ovn.
+PLC6DS tager ca. 9 timer og 36 minutter. Til mere letflydende glasurer sænker Digitalfire i stedet ca. {{200 °F; 111 °C}}; at sænke for meget »risikerer krystallisering under holdetiden«. Sluttemperaturen på {{2200 °F; 1204 °C}} ligger under tabellens {{2232 °F; 1222 °C}} for kegle 6; Digitalfire oplyser, at de fleste ovne når kegle 6 ved ca. {{2200 °F; 1204 °C}}. Kontrollér det med et keglesæt i egen ovn.
 
 ### Styret afkøling
 
-**Styret afkøling** betyder, at styringen køler ovnen med en indstillet hastighed i stedet for at lade temperaturen falde frit. Digitalfires C6DHSC er PLC6DS efterfulgt af afkøling med {{150 °F/h; 83 °C/h}} fra {{2100 °F; 1148 °C}} ned til {{1400 °F; 760 °C}}, hvorefter ovnen slukkes. Den »forbedrer glansen og overfladekvaliteten« og hjælper rutilblå glasurer, men styret afkøling »kan øge matheden« (en mat glasur blev tør) og kan forkorte levetiden for ovnens relæer. L&L leverer også et program med styret afkøling til kegle 6:
+**Styret afkøling**{{en: slow cooling}} betyder, at styringen køler ovnen med en fastsat hastighed i stedet for at lade den falde frit. Digitalfires C6DHSC er PLC6DS efterfulgt af afkøling med {{150 °F/h; 83 °C/h}} fra {{2100 °F; 1148 °C}} ned til {{1400 °F; 760 °C}} og derefter slukket. Den »forbedrer glans og overfladekvalitet« og hjælper rutilblå glasurer, men styret afkøling »kan øge matheden« (én mat glasur blev tør) og kan forkorte levetiden for ovnens relæer. L&L leverer også et program med styret afkøling til kegle 6:
 
 Table: L&L »User 6«: styret afkøling til glasurer til kegle 6
-Label: L og L, styret afkøling
+Label: L&L styret afkøling
 
 | Trin |                     Hastighed |                  Mål |
 | ---- | ----------------------------: | -------------------: |
-| 1    |             Fuld hastighed op | {{2232 °F; 1222 °C}} |
-| 2    |            Fuld hastighed ned | {{1900 °F; 1038 °C}} |
+| 1    |                  Fuld fart op | {{2232 °F; 1222 °C}} |
+| 2    |                 Fuld fart ned | {{1900 °F; 1038 °C}} |
 | 3    | Ned med {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutts styringer har ligeledes en forvarmning og en mulighed for afkøling i ét trin.
+Skutts styringer har på samme måde en forvarmning og en mulighed for afkøling i ét trin.
 
 ### På en manuelt styret ovn
 
-En manuelt styret ovn kan ikke følge disse brændekurver præcist, men planen er den samme: blidt i starten, jævnt gennem midten og en afslutning under opsyn. Brændekurven fra Bracker’s for glasur til lav temperatur står under »Manuelt styrede ovne i detaljer« nedenfor; for varmere kegler lægger den »i gennemsnit 15–30 minutter pr. keglenummer« til. Med et pyrometer, øvelse og en brændingsjournal kan man nogenlunde efterligne sænk og hold eller styret afkøling ved at skrue ned for kontakterne med hånden, som Digitalfire foreslår.
+En manuelt styret ovn kan ikke følge disse brændekurver nøjagtigt, men planen er den samme: blidt i begyndelsen, jævnt gennem midten og en afslutning under opsyn. Bracker’s brændekurve for glasur ved lav temperatur står under »Manuelt styrede ovne i detaljer« nedenfor; til varmere kegler lægger den »i gennemsnit 15–30 minutter pr. keglenummer« til. Med et pyrometer, øvelse og en journal kan man groft efterligne sænk og hold eller styret afkøling ved at skrue ned for kontakterne med hånden, som Digitalfire foreslår.
 
 ## Manuelt styrede ovne i detaljer {#manual-kilns}
 

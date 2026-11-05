@@ -4,12 +4,20 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { askBeforeLeaving } from './core/leave.guard';
 import { signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
+import {
+  anyFamousGlaze,
+  famousGlazeList,
+  famousGlazeOf,
+  famousGlazeTitleParams,
+  knownFamousGlaze
+} from './pages/famous-glazes/famous-route';
 import { guideText } from './pages/guides/guide-text';
 import {
   knownMaterial,
   materialDescriptionKey,
   materialOf,
-  materialTitleParams
+  materialTitleParams,
+  materialWords
 } from './pages/materials/material-route';
 
 // Each title is the key of its message (i18n/titles.ts), and a public page's
@@ -94,6 +102,19 @@ export const routes: Routes = [
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
+  {
+    // Translated into some languages only (lib/pages.js, PARTLY_TRANSLATED_PAGES): the others show the English.
+    path: 'guides/teaching-glaze-calculation',
+    title: marker('titles.teachingGlazeCalculation'),
+    providers: [provideTranslocoScope('guides', 'regions')],
+    data: {
+      description: marker('meta.teachingGlazeCalculation'),
+      guide: 'teaching-glaze-calculation',
+      related: ['materials']
+    },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
+  },
   // The cone chart, the list of materials and a page for each standard material: translated into the
   // languages in REFERENCE_LANGUAGES (lib/regions/languages.js), in English with a notice in the others.
   // The chart's notes are in cones/ and a material's notes and hazards in materials/, each the words of
@@ -121,14 +142,36 @@ export const routes: Routes = [
     path: 'materials/:slug',
     title: marker('titles.materialInfo'),
     canMatch: [knownMaterial],
-    providers: [provideTranslocoScope('reference', 'materials')],
+    providers: [provideTranslocoScope('reference')],
     resolve: {
       messages: scopeTranslations,
+      words: materialWords,
       material: materialOf,
       titleParams: materialTitleParams,
       description: materialDescriptionKey
     },
     loadComponent: () => import('./pages/materials/material-info-page').then((m) => m.MaterialInfoPage)
+  },
+  // Famous glazes (docs/famous-glazes.md): a page for each published glaze, and their index once there
+  // is one; any other address under /famous-glazes is the not-found page, as the server has it.
+  {
+    path: 'famous-glazes',
+    pathMatch: 'full',
+    title: marker('titles.famousGlazes'),
+    canMatch: [anyFamousGlaze],
+    data: { description: marker('meta.famousGlazes') },
+    providers: [provideTranslocoScope('famous')],
+    resolve: { messages: scopeTranslations, glazes: famousGlazeList },
+    loadComponent: () => import('./pages/famous-glazes/famous-glazes-page').then((m) => m.FamousGlazesPage)
+  },
+  {
+    path: 'famous-glazes/:slug',
+    title: marker('titles.famousGlaze'),
+    canMatch: [knownFamousGlaze],
+    data: { description: marker('meta.famousGlaze') },
+    providers: [provideTranslocoScope('famous', 'recipe')],
+    resolve: { messages: scopeTranslations, glaze: famousGlazeOf, titleParams: famousGlazeTitleParams },
+    loadComponent: () => import('./pages/famous-glazes/famous-glaze-page').then((m) => m.FamousGlazePage)
   },
   {
     path: 'about',

@@ -137,14 +137,14 @@ Myös vesi vaihtelee, ja Digitalfire huomauttaa, että se muuttaa lasitelietteen
 
 ### Vaihe vaiheelta
 
-1. Laita hengityksensuojain kasvoille ja kumikäsineet käsiin, jos kädet joutuvat lasitteeseen. Zakin pitää maskia punnitsemisen alusta siihen asti, kun lasite on märkää.
+1. Laita hengityksensuojain kasvoille. Jos kädet joutuvat lasitteeseen, laita myös kumikäsineet käsiin. Zakin pitää maskia punnitsemisen alusta siihen asti, kun lasite on märkää.
 2. Mittaa ämpäriin noin 70–80 mL vettä 100 g:aa jauhetta kohden.
 3. Lisää punnittu jauhe varovasti ja matalalta. UT Austin lisää jauheen lämpimään veteen; Zakin ja Au lisäävät veden jauheeseen. Suosittelemme jauheen lisäämistä veteen, koska se nostaa vähemmän pölyä, paitsi jos reseptissä on paljon bentoniittia: sekoita silloin sen kuivat jauheet ensin keskenään.
 4. **Liota**: anna jauheen liota sekoittamatta. Digitalfire odottaa noin 20 minuuttia. Liima- tai sideainetta sisältävien jauheiden on annettava seistä yön yli.
 5. Sekoita, kunnes kuivia kohtia tai paakkuja ei ole.
 6. Seulo kahdesti (ks. alla).
 7. Peitä ämpäri ja anna sen seistä yön yli, sitten sekoita uudelleen ja tarkista, onko pohjalle muodostunut kova kerros.
-8. Mittaa ominaispaino ja lisää vettä vähän kerrallaan, kunnes tavoite saavutetaan.
+8. Mittaa ominaispaino ja lisää vettä vähän kerrallaan, kunnes tavoite saavutetaan. Jos haluat selvittää oman lasitteen kuivan ominaispainon, punnitse myös valmis lasiteliete (ks. alla).
 9. Merkitse ämpäri ja kirjaa tehdyt vaiheet muistiin.
 10. Siivoa märkäpuhdistuksella: moppaa lattia ja pyyhi kaikki pinnat, myös raaka-aineastioiden ulkopinnat.
 
@@ -205,6 +205,27 @@ Label: Vesimäärä tavoiteominaispainoon
 | {{SG 1.50}} |               noin 85 mL |        noin 850 mL | noin 13 US fl oz |
 | {{SG 1.60}} |               noin 64 mL |        noin 640 mL | noin 10 US fl oz |
 
+### Oman lasitteen kuivan ominaispainon selvittäminen sekoittaessa
+
+Yllä oleva 2,6 on arvaus. Oman lasitteen luvun, sen kuivan jauheen tiheyden, voi laskea kolmesta luvusta, jotka saa sekoittaessa. Sen avulla ominaispainosta voi myöhemmin laskea, kuinka paljon jauhetta saman lasitteen missä tahansa ämpärissä on, ja seuraavan erän vesimäärän. Omaa laskelmaamme, ei lähteen:
+
+1. Kirjaa erän kuivan jauheen paino: reseptin kokonaismäärä.
+2. Punnitse tyhjä ämpäri ennen aloittamista tai merkitse sen paino siihen.
+3. Sekoita, seulo ja tuo lasite ominaispainoonsa tavalliseen tapaan. Paina kaikki seulan läpi ja huuhtele seula ämpäriin, jotta jauhetta ei jää pois.
+4. Punnitse täysi ämpäri ja vähennä ämpärin paino. Tulos on lasitelietteen paino.
+5. Mittaa ominaispaino.
+
+Sitten:
+
+- **Vesi** = lasitelietteen paino − jauheen paino.
+- **Lasitelietteen tilavuus** millilitroina = lasitelietteen paino grammoina ÷ ominaispaino.
+- **Jauheen tilavuus** = lasitelietteen tilavuus − vesi (1 g vettä on 1 mL).
+- **Kuiva ominaispaino** = jauheen paino ÷ jauheen tilavuus.
+
+Esimerkki: 1000 g jauhetta tekee 1980 g lasitelietettä, jonka lukema on {{SG 1.45}}. Vettä on 980 g, lasitelietettä 1980 ÷ 1,45 = noin 1366 mL, jauhe vie tilaa 1366 − 980 = 386 mL, ja kuiva ominaispaino on 1000 ÷ 386 = noin 2,59.
+
+Punnitse koko lasiteliete lopuksi, älä vettä sitä kaadettaessa, jotta haihtunut tai roiskunut vesi ei vaikuta tulokseen. Pienet virheet kasvavat tässä: 0,01:n virhe ominaispainon lukemassa muuttaa tulosta noin 2–4 %, ohuemmalla lasitteella enemmän. Käytä vähintään 1 kg:n erää, tarkkaa vaakaa ja ominaispainon mittaamiseen yllä kuvattua 500 g:n mukimenetelmää. Useimpien tavallisten raaka-aineiden luku on noin 2,5–2,9, joten luku, joka on kaukana tästä, viittaa luultavasti mittausvirheeseen, ellei lasitteessa ole paljon sirkoonisilikaattia tai lyijyä. Kirjoita luku reseptiin.
+
 ### Epsom-suola, CMC ja bentoniitti
 
 **Epsom-suola** saa lasitteen jähmettymään hieman, kun se seisoo paikallaan, ja juoksemaan taas, kun sitä sekoitetaan. Tätä kutsutaan lasitteen **flokkuloinniksi**{{en: flocculating}}, ja näin käyttäytyvä lasite on **tiksotrooppinen**{{en: thixotropic}}: se levittyy tasaisemmin, tippuu vähemmän ja laskeutuu vähemmän. Digitalfire ehdottaa aloittamaan noin 2 g:lla gallonaa kohden, kun ominaispaino on kohdallaan (karkeasti 0,5 g litraa kohden, oma muunnoksemme), ja säätämään määrää joka sekoituskerralla, koska annosta ei pitäisi lyödä lukkoon missään reseptissä. Suosittelemme liuottamaan suolan ensin pieneen määrään kuumaa vettä. Digitalfiren esimerkissä lasite, jonka lukema oli {{SG 1.45}}, tippui, joten vettä lisättiin, kunnes lukema oli {{SG 1.43}}, ja Epsom-suola jähmetti sen taas kermamaiseksi, ja se levittyi tasaisesti. Karkea tarkistus: sekoita, lopeta ja katso. Lepojäykkä lasite liikkuu vielä noin 2 tai 3 sekuntia, pysähtyy sitten ja palaa hieman takaisin.
@@ -227,7 +248,7 @@ Lasite{{en: glaze}} voi näyttää aivan erilaiselta toisella savella tai toises
 - yksi muutos kerrallaan
 - yksi ja kaksi upotusta, jotta lasite nähdään ohuena ja paksuna
 - kaikki koepalat samaan uunilliseen
-- merkintä jokaiseen koepalaan ennen polttoa leimalla, kaivertamalla tai alilasitekynällä.
+- merkintä jokaiseen koepalaan ennen polttoa leimalla, kaivertamalla tai alilasitekynällä. Poltetut koepalat näyttävät samanlaisilta, ja ennen polttoa tehty merkintä kestää uunin läpi, joten aina tietää, mikä resepti kussakin koepalassa on.
 
 Suosittelemme pystyssä seisovia koepaloja, joissa on kuvioitu vyöhyke, josta näkee, miten lasite ohenee reunoilla ja vaihtaa sävyä, sekä lasitteeton pohja; tasainen koepala nimittäin peittää sen, kuinka pitkälle lasite valuu. Aseta kukin valumien varalta pienelle alustalle tai raakapoltetun saven palalle tai suoja-aineella käsitellylle uunilevylle. Aseta koepalojen lähelle **tarkkailukeila**{{en: witness cone}}, pieni keraaminen keila, joka taipuu, kun se on saanut tarpeeksi lämpöä, osoittamaan, kuinka paljon lämpöä koepalat saivat; opas [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing) selittää keilat. Anna jokaiselle koepalalle lyhyt koodi ja kirjaa se muistiinpanoihin reseptin kohdalle. Ceramic Arts Networkille kirjoittava Willers käyttää numeroita ja kirjaimia ja kirjoittaa itse järjestelmän muistikirjan alkuun.
 
@@ -265,13 +286,13 @@ Willers kuvaa tavoitteen hyvin: ”tarpeeksi tietoa, jotta löydetyt tulokset vo
 Table: Mitä kustakin lasite-erästä kirjataan (meidän mallimme)
 Label: Muistiinpanomalli
 
-| Osa           | Mitä kirjataan                                                                                                                                                                                                                                                       |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resepti       | Resepti ja sen versio; raaka-aineiden merkit ja eränumerot; mahdolliset korvaukset                                                                                                                                                                                   |
-| Sekoittaminen | Päivämäärä; eräkoko; lisätty vesi ja sen laatu (vesijohtovesi, käänteisosmoosivesi tai tislattu vesi); ominaispaino{{en: SG}} sekoittamisen jälkeen ja lopullinen ominaispaino; lisätty Epsom-suola, CMC ja bentoniitti; seulan mesh-luku ja seulontakertojen määrä  |
-| Lasittaminen  | Massa; raakapolton keila{{en: bisque cone}}; upottaminen, siveltäminen tai kaataminen; upotusaika tai kerrosten määrä; kuivan kerroksen paksuus                                                                                                                      |
-| Poltto        | Uuni ja sijainti uunilevyillä; polttokäyrä ramppeineen, haudutuksineen ja jäähdytyksineen; polttoatmosfääri (hapettava{{en: oxidation}} tai pelkistävä{{en: reduction}} poltto); mitä tarkkailukeila{{en: witness cone}} näytti, ei vain se, mihin uuni oli asetettu |
-| Tulos         | Pinta ja väri; mahdollinen valuminen, säröily{{en: crazing}} tai neulanreiät{{en: pinholes}}; valokuvat edestä, takaa ja sivulta; koepalan koodi                                                                                                                     |
+| Osa           | Mitä kirjataan                                                                                                                                                                                                                                                                                                                |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resepti       | Resepti ja sen versio; raaka-aineiden merkit ja eränumerot; mahdolliset korvaukset                                                                                                                                                                                                                                            |
+| Sekoittaminen | Päivämäärä; eräkoko; lisätty vesi ja sen laatu (vesijohtovesi, käänteisosmoosivesi tai tislattu vesi); ominaispaino{{en: SG}} sekoittamisen jälkeen ja lopullinen ominaispaino; valmiin lasitelietteen paino kuivaa ominaispainoa varten; lisätty Epsom-suola, CMC ja bentoniitti; seulan mesh-luku ja seulontakertojen määrä |
+| Lasittaminen  | Massa; raakapolton keila{{en: bisque cone}}; upottaminen, siveltäminen tai kaataminen; upotusaika tai kerrosten määrä; kuivan kerroksen paksuus                                                                                                                                                                               |
+| Poltto        | Uuni ja sijainti uunilevyillä; polttokäyrä ramppeineen, haudutuksineen ja jäähdytyksineen; polttoatmosfääri (hapettava{{en: oxidation}} tai pelkistävä{{en: reduction}} poltto); mitä tarkkailukeila{{en: witness cone}} näytti, ei vain se, mihin uuni oli asetettu                                                          |
+| Tulos         | Pinta ja väri; mahdollinen valuminen, säröily{{en: crazing}} tai neulanreiät{{en: pinholes}}; valokuvat edestä, takaa ja sivulta; koepalan koodi                                                                                                                                                                              |
 
 > [!NOTE]
 > Glazecalcissa tallennettu [resepti](/recipe) sisältää itse reseptin. [Polttopäiväkirjaan](/firing) kirjataan jokainen poltto: uuni, päivämäärä, ajat, lämpötilat, keilat ja huomautukset. [Muistiinpanoihin](/notes) mahtuu kaikki muu, kuten yllä oleva erän muistiinpano ja se, mitä kukin koepala näytti.

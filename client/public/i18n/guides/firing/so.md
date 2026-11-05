@@ -89,16 +89,16 @@ Label: Jaantuska cone-yada Orton
 | Cone | Tartiib, {{27 °F/h; 15 °C/h}} | Dhexdhexaad, {{108 °F/h; 60 °C/h}} | Dhakhso, {{270 °F/h; 150 °C/h}} |
 | ---- | ----------------------------: | ---------------------------------: | ------------------------------: |
 | 022  |                             – |                {{1087 °F; 586 °C}} |             {{1094 °F; 590 °C}} |
-| 018  |                             – |                {{1319 °F; 715 °C}} |             {{1353 °F; 734 °C}} |
-| 015  |                             – |                {{1456 °F; 791 °C}} |             {{1504 °F; 818 °C}} |
+| 018  |           {{1267 °F; 686 °C}} |                {{1319 °F; 715 °C}} |             {{1353 °F; 734 °C}} |
+| 015  |           {{1382 °F; 750 °C}} |                {{1456 °F; 791 °C}} |             {{1504 °F; 818 °C}} |
 | 010  |           {{1636 °F; 891 °C}} |                {{1657 °F; 903 °C}} |             {{1679 °F; 915 °C}} |
 | 08   |           {{1692 °F; 922 °C}} |                {{1728 °F; 942 °C}} |             {{1753 °F; 956 °C}} |
-| 07   |                             – |                {{1789 °F; 976 °C}} |             {{1809 °F; 987 °C}} |
+| 07   |           {{1764 °F; 962 °C}} |                {{1789 °F; 976 °C}} |             {{1809 °F; 987 °C}} |
 | 06   |           {{1798 °F; 981 °C}} |                {{1828 °F; 998 °C}} |            {{1855 °F; 1013 °C}} |
 | 05   |          {{1870 °F; 1021 °C}} |               {{1888 °F; 1031 °C}} |            {{1911 °F; 1044 °C}} |
 | 04   |          {{1915 °F; 1046 °C}} |               {{1945 °F; 1063 °C}} |            {{1971 °F; 1077 °C}} |
 | 03   |          {{1960 °F; 1071 °C}} |               {{1987 °F; 1086 °C}} |            {{2019 °F; 1104 °C}} |
-| 02   |                             – |               {{2016 °F; 1102 °C}} |            {{2052 °F; 1122 °C}} |
+| 02   |          {{1972 °F; 1078 °C}} |               {{2016 °F; 1102 °C}} |            {{2052 °F; 1122 °C}} |
 | 01   |          {{1999 °F; 1093 °C}} |               {{2046 °F; 1119 °C}} |            {{2080 °F; 1138 °C}} |
 | 1    |          {{2028 °F; 1109 °C}} |               {{2079 °F; 1137 °C}} |            {{2109 °F; 1154 °C}} |
 | 4    |          {{2086 °F; 1141 °C}} |               {{2124 °F; 1162 °C}} |            {{2161 °F; 1183 °C}} |
@@ -460,71 +460,71 @@ Kiln gacmeed wuxuu isla qorshahaas gacanta ku raacaa: si tartiib ah u qalaji adi
 
 ## Gubidda glaze-ka {#glaze}
 
-Gubidda glaze-ku waxay glaze-ka u dhalaalisaa muraayad bisque-ka dul saaran. Bilowyaasha intooda badan waxay glaze-yada gubidda hoose ku gubaan cone 06–04 ama glaze-yada gubidda dhexe cone 5–6. Ku gub cone-ka ku qoran calaamadaha dhoobadaada iyo glaze-kaaga, adigoo isticmaalaya xidhmo cone ah oo lambarkaas ku wareegsan. Waxa gudaha glaze-ka ka dhaca marka uu dhalaalayo, eeg [Aasaaska glaze-ka](/guides/glazing-basics).
+Gubidda glaze-ka waxay glaze-ka u dhalaalisaa muraayad dusha bisque-ka. Inta badan glaze-yada kulaylka hooseeya ee suuqa waxaa loo sameeyey cone 06 ama 05 (xadka kulaylka hooseeya waa cone 06–04), inta badan glaze-yada kulaylka dhexe-na cone 5–6. Gub ilaa cone-ka ku qoran calaamadaha glaze-kaaga iyo dhoobadaada, adigoo cone pack ku wareejinaya lambarkaas. Waxa glaze-ka gudihiisa ka dhaca marka uu dhalaalayo, eeg [Aasaaska glaze-ka](/guides/glazing-basics).
 
-### Raridda gubidda glaze-ka
+### Dhigista weelasha gubidda glaze-ka
 
-- Xabbadaha glaze-ka leh waa inaanay isa taaban ama derbiyada taaban: u daa qiyaastii ½ inji (13 mm).
-- Glaze-ka ka ilaali cagta (**dry-footing**), ama alaabta gubidda hoose dul dhig **stilts**, taageerooyin yaryar oo caarooyin leh. Stoneware iyo porcelain waa inaanay stilts dul istaagin, kuwaas oo heerkulkaas ku dhex gala; isticmaal kiln wash gubid sare ah ama ciid silica ah.
-- U daa ugu yaraan 1 inji (25 mm) cidhifyada rafaha iyo derbiga ama sitter-ka dhexdooda.
+- Weelasha glaze-ka la mariyey waa inaysan isku taaban ama taaban derbiyada: ka tag qiyaastii ½ inji (13 mm).
+- Glaze-ka ka fogee cagta weelka (**dry-footing**), ama weelasha kulaylka hooseeya saar **stilts**, istaagyo yaryar oo caarado leh. Stoneware iyo porcelain waa inaysan istaagin stilts, kuwaas oo kulaylkaas ku dhex gala; isticmaal kiln wash kulayl sare ama ciid silica halkii.
+- Ka tag ugu yaraan 1 inji (25 mm) inta u dhaxaysa cidhifyada rafaha iyo derbiga ama kiln sitter-ka.
 
-### Jadwallada controller-ka
+### Jadwalada controller-ka
 
-Table: Jadwallada glaze ee diyaarsan ee L&L iyo Bartlett
-Label: Jadwallada glaze ee diyaarsan
+Table: Jadwalada glaze ee horay loo dejiyey ee L&L iyo Bartlett
+Label: Jadwalada glaze ee la dejiyey
 
-| Qaybta                          |                                           Ku kac ilaa |                Slow Glaze |              Fast Glaze |
-| ------------------------------- | ----------------------------------------------------: | ------------------------: | ----------------------: |
-| 1                               |                                    {{250 °F; 121 °C}} |     {{150 °F/h; 83 °C/h}} | Tallaabo gaar ah ma leh |
-| 2                               | {{250 °F; 139 °C}} ka hooseeya heerkulka ugu sarreeya |    {{400 °F/h; 222 °C/h}} |  {{570 °F/h; 317 °C/h}} |
-| 3                               |                                Heerkulka ugu sarreeya |     {{120 °F/h; 67 °C/h}} |  {{200 °F/h; 111 °C/h}} |
-| Waqtiga kululaynta, kiln madhan |                                                       | Qiyaastii 6½–7½ saacadood | Qiyaastii 3–4 saacadood |
+| Qayb                            |                                     Kor u kac ilaa |                Slow Glaze |                Fast Glaze |
+| ------------------------------- | -------------------------------------------------: | ------------------------: | ------------------------: |
+| 1                               |                                 {{250 °F; 121 °C}} |     {{150 °F/h; 83 °C/h}} | Ma jiro tallaabo gooni ah |
+| 2                               | {{250 °F; 139 °C}} ka hooseeya heerka ugu sarreeya |    {{400 °F/h; 222 °C/h}} |    {{570 °F/h; 317 °C/h}} |
+| 3                               |                                Heerka ugu sarreeya |     {{120 °F/h; 67 °C/h}} |    {{200 °F/h; 111 °C/h}} |
+| Waqtiga kululaynta, kiln madhan |                                                    | Qiyaastii 6½–7½ saacadood |   Qiyaastii 3–4 saacadood |
 
-Table: Meesha qaybaha 2 iyo 3 ku dhammaadaan, cone ahaan (L&L iyo Bartlett)
-Label: Bartilmaameedyada jadwallada diyaarsan
+Table: Halka qaybaha 2 iyo 3 ku dhammaadaan, cone ahaan (L&L iyo Bartlett)
+Label: Bartilmaameedka jadwalka
 
-| Cone | Qaybta 2 waxay ku dhammaataa | Heerkulka ugu sarreeya |
-| ---- | ---------------------------: | ---------------------: |
-| 06   |          {{1569 °F; 854 °C}} |    {{1819 °F; 993 °C}} |
-| 04   |          {{1676 °F; 913 °C}} |   {{1926 °F; 1052 °C}} |
-| 6    |         {{1982 °F; 1083 °C}} |   {{2232 °F; 1222 °C}} |
+| Cone | Qaybta 2 waxay ku dhammaataa |  Heerka ugu sarreeya |
+| ---- | ---------------------------: | -------------------: |
+| 06   |          {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |          {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    |         {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze waa doorashada caadiga ah ee ammaanka badan, marka la eego digniinta L&L ee gubidda dhakhsaha ah. Haddii aad ku darto joogsi ka badan 5–10 daqiiqo heerkulka ugu sarreeya, L&L wuxuu leeyahay hoos u dhig bartilmaameedka ama cone offset-ka si ay isugu dheelitirmaan, wuxuuna xusaa in "Joogsiga heerkulka sare uu dedejiyo duugoobidda element-yada iyo thermocouple-ka."
+Slow Glaze waa doorashada ugu ammaansan, marka la eego digniinta L&L ee ku saabsan gubidda degdegga ah. Haddii aad ku darto sugid (hold) ka badan 5–10 daqiiqo heerka ugu sarreeya, L&L waxay leedahay hoos u dhig bartilmaameedka ama cone offset-ka si ay u waafaqaan, waxayna xustaa in "Ku sugidda kulaylka sare ay dedejiso daalka element-yada iyo thermocouple-ka."
 
-### Cone 6: drop-and-hold
+### Cone 6: hoos u dhig oo sug
 
-Glaze-yada gubidda dhexe mararka qaarkood waxay ka soo baxaan **pinholes** (daloolo aad u yaryar oo dusha ah) ama finan, oo ay ka tageen gaas ka xumbaynaya walaxda dhalaalaysa. Jadwalka **drop-and-hold** wuxuu ku gubaa ilaa xagga sare, si dhakhso ah ayuu u qaboojiyaa qiyaastii {{100 °F; 56 °C}}, halkaasna wuu ku joogaa. Erayada Digitalfire: "Hoos u dhigista 100°F iyo joogsigu waxay walaxda dhalaalaysa siisaa cufnaan (viscosity) ku filan si ay u dillaacsato xumbada iyadoo weli u oggolaanaysa inay bogsadaan."
+Glaze-yada kulaylka dhexe mararka qaarkood waxay la soo baxaan **pinholes** (godad aad u yaryar oo dusha ah) ama finan, oo ay ka tageen gaas ka soo butaacaya glaze-ka dhalaalay. Jadwalka **hoos u dhig oo sug** (drop-and-hold) wuxuu gubaa ilaa sare, si degdeg ah ayuu u qaboojiyaa qiyaastii {{100 °F; 56 °C}} kadibna halkaas ayuu ku sugaa. Erayada Digitalfire, "Hoos u dhigidda 100°F iyo sugiddu waxay glaze-ka dhalaalay siisaa adkaan ku filan oo uu ku jebiyo xumbada iyadoo weli u oggolaanaysa inay bogsadaan."
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, cone 6 hoos u dhig oo sug
 Label: Digitalfire PLC6DS
 
-| Tallaabo |                         Xawaaraha |      Bartilmaameedka | Joogsi                                                       |
-| -------- | --------------------------------: | -------------------: | ------------------------------------------------------------ |
-| 1        |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 daqiiqo                                                   |
-| 2        |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 daqiiqo ikhtiyaari ah, si loo nadiifiyo daruuraha xumbada |
-| 3        |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 daqiiqo; ka dheer kiln-yada waaweyn                       |
-| 4        | Hoos u deg {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 daqiiqo                                                   |
+| Tallaabo |                           Xawaare |        Bartilmaameed | Sugid                                                       |
+| -------- | --------------------------------: | -------------------: | ----------------------------------------------------------- |
+| 1        |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 daqiiqo                                                  |
+| 2        |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Ikhtiyaari 30 daqiiqo, si looga nadiifiyo daruuraha xumbada |
+| 3        |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 daqiiqo; ka badan kiln-yada waaweyn                      |
+| 4        | Hoos u deg {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 daqiiqo                                                  |
 
-PLC6DS wuxuu qaataa qiyaastii 9 saacadood iyo 36 daqiiqo. Glaze-yada ka socodka badan, Digitalfire wuxuu hoos u dhigaa qiyaastii {{200 °F; 111 °C}} halkii; hoos u dhigis aad u fog "waxay khatar galisaa crystallization inta joogsigu socdo". Heerkulkiisa ugu sarreeya ee {{2200 °F; 1204 °C}} wuu ka hooseeyaa {{2232 °F; 1222 °C}} ee jaantuska ee cone 6; Digitalfire wuxuu sheegaa in kiln-yada intooda badani ay cone 6 gaadhaan qiyaastii {{2200 °F; 1204 °C}}. Ku hubi xidhmo cone ah kiln-kaaga.
+PLC6DS wuxuu qaataa qiyaastii 9 saacadood iyo 36 daqiiqo. Glaze-yada aadka u qulqula, Digitalfire waxay hoos u dhigtaa qiyaastii {{200 °F; 111 °C}} halkii; hoos u dhigid aad u badan "waxay khatar gelisaa samaysanka kiristaalka inta lagu jiro sugidda". Heerkiisa ugu sarreeya ee {{2200 °F; 1204 °C}} wuu ka hooseeyaa {{2232 °F; 1222 °C}} ee shaxda ee cone 6; Digitalfire waxay sheegtay in kiln-yada badankoodu gaaraan cone 6 qiyaastii {{2200 °F; 1204 °C}}. Ku hubi cone pack kiln-kaaga.
 
-### Qaboojinta tartiibka ah
+### Qaboojin tartiib ah
 
-**Qaboojinta tartiibka ah** (slow cooling) waxay ka dhigan tahay in controller-ku kiln-ka ku qaboojiyo xawaare la dejiyay halkii uu si xor ah u dhici lahaa. C6DHSC ee Digitalfire waa PLC6DS oo ay ku xigto qaboojin {{150 °F/h; 83 °C/h}} ah oo ka bilaabanta {{2100 °F; 1148 °C}} ilaa {{1400 °F; 760 °C}}, kadibna la damiyo. Waxay "hagaajisaa ifidda iyo tayada dusha", waxayna caawisaa buluugga rutile, laakiin qaboojinta tartiibka ahi "waxay kordhin kartaa matte-nimada" (glaze matte ah ayaa qallalay), waxayna gaabin kartaa cimriga relay-yada kiln-ka. L&L sidoo kale wuxuu la keenaa barnaamij qaboojin tartiib ah oo cone 6 ah:
+**Qaboojin tartiib ah** waxay ka dhigan tahay in controller-ku kiln-ka ku qaboojiyo xawaare la dejiyey halkii uu iska dhici lahaa. C6DHSC ee Digitalfire waa PLC6DS oo ay ku xigto qaboojin {{150 °F/h; 83 °C/h}} laga bilaabo {{2100 °F; 1148 °C}} ilaa {{1400 °F; 760 °C}}, kadibna la damiyo. Waxay "hagaajisaa ifidda iyo tayada dusha" waxayna caawisaa buluugga rutile, laakiin qaboojinta tartiibka ah "waxay kordhin kartaa aan-ifidda" (hal glaze oo aan ifayn ayaa qallalay) waxayna gaabin kartaa cimriga relay-yada kiln-ka. L&L sidoo kale waxay bixisaa barnaamij qaboojin tartiib ah oo cone 6 ah:
 
 Table: L&L "User 6": qaboojin tartiib ah oo glaze-yada cone 6
-Label: L iyo L qaboojin tartiib ah
+Label: Qaboojinta tartiibka ah ee L iyo L
 
-| Tallaabo |                        Xawaaraha |      Bartilmaameedka |
+| Tallaabo |                          Xawaare |        Bartilmaameed |
 | -------- | -------------------------------: | -------------------: |
 | 1        |                Xawaare buuxa kor | {{2232 °F; 1222 °C}} |
 | 2        |               Xawaare buuxa hoos | {{1900 °F; 1038 °C}} |
 | 3        | Hoos u deg {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Controller-yada Skutt sidoo kale waxay bixiyaan preheat iyo doorasho qaboojin hal tallaabo ah.
+Controller-yada Skutt sidoo kale waxay bixiyaan kululayn hore iyo doorasho qaboojin hal tallaabo ah.
 
-### Kiln gacmeed
+### Kiln gacan
 
-Kiln gacmeed ma raaci karo jadwalladan si sax ah, laakiin qorshuhu waa isku mid: marka hore si deggan, bartamaha si joogto ah, dhammaadkana adigoo daawanaya. Jadwalka glaze-ka gubidda hoose ee Bracker's wuxuu ku jiraa Kiln-yada gacmeed oo faahfaahsan, hoos; cone-yada ka kulul wuxuu ku daraa "celcelis ahaan 15–30 daqiiqo lambar cone kasta". Pyrometer, tababar iyo diiwaan, waxaad qiyaas ahaan u koobiyeyn kartaa drop-and-hold ama qaboojin tartiib ah adigoo gacanta ku yaraynaya furayaasha, sida Digitalfire soo jeediyo.
+Kiln gacanta ah ma raaci karo jadwaladan si sax ah, laakiin qorshuhu waa isku mid: tartiib bilowga, si joogto ah dhexda, iyo dhammaad la ilaaliyo. Jadwalka glaze-ka kulaylka hooseeya ee Bracker wuxuu ku hoos jiraa Kiln-yada gacanta si faahfaahsan, hoos; cone-yada kulul wuxuu ku daraa "celcelis ahaan 15–30 daqiiqo lambar cone kasta". Pyrometer, tababar iyo buug diiwaan, waxaad si qiyaas ah u ku dayan kartaa hoos u dhig oo sug ama qaboojin tartiib ah adigoo furayaasha gacanta ku dhimaya, sida Digitalfire soo jeedisay.
 
 ## Kiln-yada gacmeed oo faahfaahsan {#manual-kilns}
 

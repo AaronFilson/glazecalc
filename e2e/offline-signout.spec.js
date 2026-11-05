@@ -191,15 +191,18 @@ test('Clear offline data and turning the copy off ask first when changes are uns
   await box.uncheck();
   await expect(dialog(page)).toContainText('1 change that has not been sent yet will be lost.');
   await dialog(page).getByRole('button', { name: 'Cancel' }).click();
+  await expect(dialog(page)).toHaveCount(0);
   await expect(box).toBeChecked();
 
-  await page.getByRole('button', { name: 'Clear offline data' }).click();
+  await page.locator('#main').getByRole('button', { name: 'Clear offline data' }).click();
   await expect(dialog(page)).toContainText('1 change that has not been sent yet will be lost.');
   await expect(dialog(page).getByRole('button', { name: 'Cancel' })).toBeFocused();
   await dialog(page).getByRole('button', { name: 'Cancel' }).click();
+  // Wait until the dialog has gone: while it closes, its own "Clear offline data" button is still there.
+  await expect(dialog(page)).toHaveCount(0);
   expect(await flag(page)).toBe('1');
 
-  await page.getByRole('button', { name: 'Clear offline data' }).click();
+  await page.locator('#main').getByRole('button', { name: 'Clear offline data' }).click();
   await dialog(page).getByRole('button', { name: 'Clear offline data' }).click();
   await expect(box).not.toBeChecked();
   await expect.poll(() => hasDatabase(page)).toBe(false);

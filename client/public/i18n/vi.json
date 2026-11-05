@@ -9,6 +9,7 @@
     "homeSafety": "Không gây ngộ độc cho gia đình bạn - Glazecalc",
     "firing": "Nung một lò gốm cơ bản - Glazecalc",
     "learnWithJohnBritt": "Học với khóa học men miễn phí của John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Dạy tính toán men - Glazecalc",
     "about": "Giới thiệu - Glazecalc",
     "privacy": "Quyền riêng tư - Glazecalc",
     "terms": "Điều khoản sử dụng - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Chấp thuận một thay đổi - Glazecalc",
     "cones": "Bảng côn: nhiệt độ côn Orton và SK - Glazecalc",
     "materials": "Nguyên liệu men có sẵn: phân tích và mối nguy - Glazecalc",
-    "materialInfo": "{name}: phân tích oxit và mối nguy - Glazecalc"
+    "materialInfo": "{name}: phân tích oxit và mối nguy - Glazecalc",
+    "famousGlazes": "Các loại men nổi tiếng - Glazecalc",
+    "famousGlaze": "Men {name} - Glazecalc"
   },
   "nav": {
     "skip": "Chuyển đến nội dung",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Nhập một số, chẳng hạn {example}, dùng dấu chấm cho phần thập phân."
   },
   "meta": {
-    "description": "Nhập công thức men gốm, xem công thức Seger (UMF), tỷ lệ silica/alumina, cân bằng chất trợ chảy. Miễn phí, nguồn mở, cho công thức, nguyên liệu, nhật ký nung.",
+    "description": "Nhập công thức men gốm để tính công thức Seger (UMF), tỷ lệ silica/alumina, cân bằng chất trợ chảy. Miễn phí, nguồn mở, cho công thức và nhật ký nung.",
     "guides": "Các cẩm nang dễ hiểu cho thợ gốm mới: men là gì, cách làm và pha men an toàn, giữ an toàn cho gia đình bạn, và nung một lò gốm cơ bản.",
     "glazingBasics": "Men làm từ gì, lò nung biến men thành thủy tinh thế nào, và côn, frit, công thức Seger cùng các khuyết tật men nghĩa là gì. Cẩm nang cho thợ gốm mới.",
     "makingAGlaze": "Cách mua, bảo quản, cân và pha men, làm cho lớp men có độ dày đúng, thử men trên đất của bạn và ghi chép lại để có thể làm lại.",
@@ -177,6 +180,7 @@
     "homeSafety": "Phải làm gì nếu trẻ em hoặc thú cưng nuốt phải nguyên liệu làm men, và cách giữ an toàn cho nguyên liệu, bụi, lò nung và đồ gốm thủ công quanh gia đình bạn.",
     "firing": "Cách nung lò nung điện: chọn, đặt và đọc côn, và làm theo các đường cong nung đã công bố cho nung mộc và nung men, kèm bảng côn.",
     "learnWithJohnBritt": "Đồng hành cùng Glaze Course trực tuyến miễn phí của John Britt: video theo từng bài, kèm cẩm nang Glazecalc để đọc và bài tập để thử trong công cụ tính men.",
+    "teachingGlazeCalculation": "6 buổi dạy công thức Seger (UMF): nguyên liệu, mẫu thử tam giác, mol, công thức men sang Seger và ngược lại, khuyết tật men; có ví dụ và phiếu bài tập để in.",
     "advice": "Mẹo thực tế về pha men, tráng men và nung, từ Glazecalc, cùng lời khuyên của riêng bạn. Miễn phí cho thợ gốm và nghệ nhân gốm sứ.",
     "about": "Glazecalc là công cụ tính men và sổ tay hóa học men miễn phí, mã nguồn mở. Xem cách nó tính công thức Seger và cách nó được xây dựng.",
     "privacy": "Cách Glazecalc xử lý dữ liệu của bạn: không quảng cáo, phân tích hay theo dõi, không bán gì cả. Những gì được lưu, vì sao, và cách thực hiện quyền của bạn.",
@@ -184,9 +188,11 @@
     "assistants": "Dùng Glazecalc từ Claude, Copilot, Cursor hoặc Gemini qua MCP: hóa học men, kiểm tra giới hạn, vật liệu thay thế, cẩm nang và công thức men của riêng bạn.",
     "signup": "Tạo tài khoản Glazecalc miễn phí để lưu công thức men, nguyên liệu, ghi chú và nhật ký nung. Không quảng cáo, và dữ liệu của bạn không bao giờ bị bán.",
     "cones": "Côn nhiệt Orton và SK từ 022 trở lên, kèm nhiệt độ theo °C và °F, tốc độ gia nhiệt của từng bảng và nguồn gốc các số liệu.",
-    "materials": "Các nguyên liệu trong thư viện có sẵn của Glazecalc, từ trường thạch, đất sét đến frit và nguồn bo, kèm phân tích oxit, công thức Seger và mối nguy.",
+    "materials": "Nguyên liệu men gốm trong thư viện có sẵn của Glazecalc, từ trường thạch, đất sét đến frit và nguồn bo, kèm phân tích oxit, công thức Seger và mối nguy.",
     "materialInfo": "{name}: phân tích oxit, công thức Seger, lượng mất khi nung và mối nguy trong thư viện có sẵn của Glazecalc.",
     "materialInfoLong": "{name} trong thư viện nguyên liệu men có sẵn của Glazecalc: phân tích oxit, đóng góp vào công thức Seger, lượng mất khi nung và mối nguy.",
+    "famousGlazes": "Men nổi tiếng thế giới: công thức truyền thống hoặc phân tích lịch sử của từng loại, công thức Seger, và bản làm từ nguyên liệu bán nơi bạn sống.",
+    "famousGlaze": "Men {name} ({native}): công thức truyền thống hoặc phân tích lịch sử, cách nung, công thức Seger, nguồn, và bản làm từ nguyên liệu bán nơi bạn sống.",
     "imageAlt": "Logo Glazecalc và tiêu đề, hóa học men miễn phí cho thợ gốm, bên cạnh ảnh các bộ côn đã nung."
   },
   "notices": {

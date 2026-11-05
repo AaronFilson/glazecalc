@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Kay p'anqap wakin t'aqanqa manaraqmi t'ikrasqachu, chayrayku inglés simipi rikhurin.",
+  "index": {
+    "crumb": "Riqsisqa esmaltekuna",
+    "title": "Riqsisqa esmaltekuna",
+    "lead": "Tukuy pachapi riqsisqa esmaltekuna, sapankanku llaqtanpa ñawpa materialninkunamanta, UMF-ninwan, maypichus kanki chaypi rantikuq materialkunawan rurasqa hukniraqwanpas.",
+    "listHeading": "Esmaltekuna",
+    "more": "Aswan esmaltekunam hamuchkan: sapankanmi yapakun ruranan materialninkunapas pisimanta pisi kimsa ñawinchasqa qillqakunapi takyaptin."
+  },
+  "glaze": {
+    "lead": "Riqsisqa esmalte ({native}): ñawpa runakunap ruranan utaq análisisnin, ruphachiynin, maypichus kanki chaypi rantikuq materialkunawan rurasqa hukniraqpas.",
+    "aboutHeading": "{name} nisqamanta",
+    "nativeName": "Llaqtanpa sutin",
+    "origin": "Maypi",
+    "period": "Haykap",
+    "firing": "Ruphachiy",
+    "cone": "cono {cone}",
+    "historyOnly": "Ñawpa willakuylla: kay esmaltetaqa titiwan (plomo, Pb) rurarqanku. Análisisninqa ñawpa willakuy hinam rikuchikun, manam chaqrunapaq rurana hinachu. Uraypi kaq esmalteqa huk esmaltem, mana titiyuq.",
+    "recipeHeading": "Ñawpa rurana",
+    "material": "Material",
+    "amount": "Hayk'a",
+    "unityHeading": "UMF (fórmula unitaria)",
+    "analysisHeading": "Ñawpa análisis",
+    "oxide": "Óxido",
+    "percent": "Llasaypa %",
+    "useHeading": "Ruraykuy",
+    "open": "Kay rurana kichay",
+    "openLeadFree": "Mana titiyuq esmalte kichay",
+    "leadFreeTitle": "{name} hina, mana titiyuq",
+    "allLink": "Tukuy riqsisqa esmaltekuna",
+    "safetyHeading": "Mana manchakuy",
+    "safeMixing": "Mana manchakuspa chaqruy, wayra puriynin",
+    "firingGuide": "Huch'uy hornopi ruphachiy",
+    "makingGuide": "Imaynatataq esmalteta ruranki",
+    "sourcesHeading": "Maymanta yachasqa",
+    "link": "Kichay",
+    "opened": "ñawinchasqa {date}"
+  },
+  "local": {
+    "heading": "Llaqtaykipi kaq materialkunawan",
+    "leadFreeHeading": "Mana titiyuq esmalte",
+    "intro": "Ñawpa ruranap UMF-nin, maypichus rantinki chaypi rantikuq sapa p'unchaw materialkunawan rurasqa. Rikunaykipaq maypi rantisqaykita akllay.",
+    "region": "Maypi materialkunata rantinki",
+    "proposal": "Kay yuyaychaypa kikin materialninkuna",
+    "pick": "Akllay…",
+    "untested": "Yupasqam, manaraqmi pruebapaq ruphachisqachu.",
+    "testFirst": "Mayqin manka ruraypipas manaraq llamk'achispa probetakunata ruphachiy, mikhuna llamiq uyatapas metalkuna lluqsiyninpaq (lixiviación) pruebay.",
+    "untestedNote": "Yupasqam, manaraqmi pruebapaq ruphachisqachu: manaraq llamk'achispa probetakunata ruphachiy.",
+    "close": "Maskasqa fórmulaman ancha qayllanmi.",
+    "fair": "Maskasqa fórmulaman allintaqa qayllanmi.",
+    "poor": "Kay materialkunaqa manam maskasqa fórmulaman qayllayta atinkuchu.",
+    "none": "Chaypi rantikuq materialkunaqa manam chayta ruray atinkuchu.",
+    "choose": "Chaypi rantikuqkunawan rurasqata rikunaykipaq maypi materialkunata rantisqaykita akllay."
+  },
+  "atmospheres": {
+    "oxidation": "oxidación",
+    "reduction": "reducción",
+    "neutral": "chawpi",
+    "wood": "k'aspiwan ruphachiy",
+    "salt": "kachiwan ruphachiy",
+    "soda": "sodawan ruphachiy"
+  }
+}

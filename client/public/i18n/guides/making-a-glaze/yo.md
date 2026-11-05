@@ -123,158 +123,179 @@ Derek Au ń wọ̀n sínú àwo kan ní òkìtì ọ̀tọ̀ọ̀tọ̀, kí a l
 
 ### Omi mélòó
 
-Àwọn orísun kò fohùn ṣọ̀kan. Derek Au ń bẹ̀rẹ̀ ní nípọn, ní 50 mL omi fún 100 g lúúlúú, ó sì ń fi kún un lẹ́yìn náà. Potterycrafts fún glaze lúúlúú kan ní 65 mL fún 100 g. UT Austin ń lo omi àti lúúlúú tí ìwọ̀n wọn dọ́gba, nígbà tí Digitalfire sì fi 20 kg lúúlúú sínú 20 kg omi, ó wọ̀n specific gravity 1.46.
+Àwọn orísun kò fohùnṣọ̀kan. Derek Au ń bẹ̀rẹ̀ ní kíki, pẹ̀lú 50 mL omi fún 100 g lẹ́búlẹ́bú, ó sì ń fi kún un lẹ́yìn náà. Potterycrafts ń fún 65 mL fún 100 g fún glaze lẹ́búlẹ́bú kan. UT Austin ń lo ìwúwo omi àti lẹ́búlẹ́bú tí ó dọ́gba, nígbà tí Digitalfire sì fi 20 kg lẹ́búlẹ́bú sínú 20 kg omi, ó wọn SG ti 1.46.
 
-Omi yára láti fi kún, ó sì lọ́ra láti yọ kúrò, nítorí náà ẹ bẹ̀rẹ̀ ní kékeré. Ìṣirò tiwa: ẹ bẹ̀rẹ̀ pẹ̀lú **nǹkan bí 70 sí 80 mL fún 100 g** (700 sí 800 mL fún kìlógíráàmù kan, tàbí nǹkan bí 11 sí 12 US fl oz fún pọ́ọ̀nù kan). Ẹ rẹ ẹ́, ẹ pò ó kí ẹ sì sẹ́ ẹ ní ìnípọn yẹn, lẹ́yìn náà ẹ máa fi omi kún un díẹ̀díẹ̀ títí specific gravity yóò fi tọ́. 1 mL omi wọ̀n 1 g, nítorí náà ẹ lè wọ̀n ọ́n. Bí ẹ bá fi kọjá, ẹ jẹ́ kí glaze náà silẹ̀, lẹ́yìn náà ẹ fi kànìnkànìn mu omi tí ó mọ́ kúrò lókè tàbí kí ẹ dà á nù.
+Omi rọrùn láti fi kún, ó sì ṣòro láti yọ kúrò, nítorí náà ẹ bẹ̀rẹ̀ ní kékeré. Ìfojúdíwọ̀n wa: ẹ bẹ̀rẹ̀ pẹ̀lú **nǹkan bí 70 sí 80 mL fún 100 g** (700 sí 800 mL fún kìlógíráàmù, tàbí nǹkan bí 11 sí 12 US fl oz fún pọ́ọ̀nù). Ẹ rì í, ẹ pò ó, kí ẹ sì sẹ́ ẹ ní kíki yẹn, lẹ́yìn náà ẹ fi omi kún un díẹ̀díẹ̀ títí SG yóò fi tọ̀nà. 1 mL omi wúwo 1 g, nítorí náà ẹ lè wọ̀n ọ́n. Bí ẹ bá kọjá ààlà, ẹ jẹ́ kí glaze rọlẹ̀, lẹ́yìn náà ẹ fi kàn-ìnkàn-ìn mú omi mímọ́ lókè kúrò tàbí kí ẹ da á nù.
 
 ### Irinṣẹ́ àti omi
 
-- **Ẹ̀rọ ìpò propeller.** Digitalfire pe èyí tí ó dára ní "essential" (dandan). Drill oníwáyà pẹ̀lú abẹ ìpò ń ṣe iṣẹ́ náà nínú garawa. UT Austin ń lò ó fún ó kéré tán ìṣẹ́jú 4 sí 5 lẹ́yìn tí glaze bá ti dà bí èyí tí a ti pò, ó sì ń pa abẹ náà mọ́ kúrò lára garawa, tí ó lè ha ike kúrò lára rẹ̀.
-- **Blender.** Ó "works extremely well for small batches" (ó ń ṣiṣẹ́ dáadáa gan-an fún batch kékeré) (Digitalfire). Ẹ fi pamọ́ fún glaze nìkan: kò gbọdọ̀ padà sí ilé ìdáná láéláé.
-- **Ìjàbọ̀ tàbí igi.** Ohun tí Zakin ń yàn nígbà tí kò sí ẹ̀rọ ìpò.
+- **Ẹ̀rọ ìpò propeller.** Digitalfire pe èyí tí ó dára ní "kò ṣeé má ní". Drill olókùn pẹ̀lú abẹ̀bẹ̀ ìpò ń ṣe iṣẹ́ náà nínú garawa. UT Austin ń lò ó ó kéré tán ìṣẹ́jú 4 sí 5 lẹ́yìn tí glaze bá dàbí ẹni pé a ti pò ó, ó sì ń pa abẹ náà mọ́ kúrò lára garawa, tí ó lè ha ike kúrò lára rẹ̀.
+- **Blender.** Ó "ń ṣiṣẹ́ dáadáa gan-an fún batch kékeré" (Digitalfire). Ẹ fi í pamọ́ fún glaze nìkan: kò gbọ́dọ̀ padà sí ilé ìdáná láé.
+- **Ohun ìrú tàbí igi.** Yíyàn Zakin nígbà tí kò bá sí ẹ̀rọ ìpò.
 
-Omi náà yàtọ̀ síra, Digitalfire sì ṣàkíyèsí pé ó ń yí bí slurry ṣe ń hùwà padà. Derek Au ń lo omi reverse-osmosis nítorí pé omi ẹ̀rọ rẹ̀ le. Èyíkéyìí tí ẹ bá lò, ẹ kọ ọ́ sílẹ̀.
+Omi náà yàtọ̀, Digitalfire sì ṣàkíyèsí pé ó ń yí bí slurry (lẹ́búlẹ́bú glaze àti omi) ṣe ń ṣe padà. Derek Au ń lo omi reverse osmosis nítorí omi ẹ̀rọ rẹ̀ le (hard water). Ohunkóhun tí ẹ bá lò, ẹ kọ ọ́ sílẹ̀.
 
-### Ìgbésẹ̀ kọ̀ọ̀kan
+### Ìgbésẹ̀ lẹ́sẹẹsẹ
 
-1. Ẹ wọ respirator yín, àti ìbọwọ́ rọ́bà bí ọwọ́ yín bá máa wọlé. Zakin ń wọ ìbòjú láti ìbẹ̀rẹ̀ wíwọ̀n títí glaze yóò fi rin.
-2. Ẹ wọ̀n nǹkan bí 70 sí 80 mL omi fún 100 g lúúlúú sínú garawa.
-3. Ẹ fi lúúlúú tí ẹ ti wọ̀n sí i jẹ́jẹ́, láti ibi tí kò ga. UT Austin ń fi lúúlúú sínú omi lílọ́wọ́rọ́; Zakin àti Au ń fi omi sínú lúúlúú. A dábàá lúúlúú sínú omi, tí eruku rẹ̀ kì í ru sókè tó, àyàfi fún ìlànà tí ó ní bentonite púpọ̀: ẹ kọ́kọ́ rú lúúlúú gbígbẹ rẹ̀ pọ̀.
-4. Ẹ **rẹ ẹ́ (slake)**: ẹ jẹ́ kí lúúlúú náà rin láìrú u. Digitalfire ń dúró fún nǹkan bí ìṣẹ́jú 20. Lúúlúú tí ó ní gọ́ọ̀mù tàbí ohun ìsopọ̀ nílò láti dúró mọ́jú.
-5. Ẹ pò ó títí kò fi ní sí ibi gbígbẹ tàbí kókó kankan mọ́.
-6. Ẹ sẹ́ ẹ lẹ́ẹ̀mejì (wo ìsàlẹ̀).
-7. Ẹ bò ó kí ẹ sì jẹ́ kí ó sinmi mọ́jú, lẹ́yìn náà ẹ tún un pò kí ẹ sì yẹ ìsàlẹ̀ wò fún ìpele líle.
-8. Ẹ wọ̀n specific gravity, kí ẹ sì máa fi omi kún un díẹ̀díẹ̀ láti dé ibi tí ẹ ń fojú sí.
-9. Ẹ kọ orúkọ sí garawa, kí ẹ sì kọ ohun tí ẹ ṣe sílẹ̀.
-10. Ẹ fi omi palẹ̀ mọ́: ẹ fi mọ́ọ̀bù nu ilẹ̀ kí ẹ sì nu gbogbo ojú, pẹ̀lú ìta àwọn àpótí ohun èlò.
+1. Ẹ wọ respirator yín, àti ìbọ̀wọ́ rọ́bà bí ọwọ́ yín yóò bá wọ inú rẹ̀. Zakin ń wọ ìbòjú láti ìbẹ̀rẹ̀ wíwọ̀n títí glaze yóò fi rin.
+2. Ẹ wọn nǹkan bí 70 sí 80 mL omi fún 100 g lẹ́búlẹ́bú kọ̀ọ̀kan sínú garawa.
+3. Ẹ fi lẹ́búlẹ́bú tí ẹ ti wọ̀n kún un jẹ́jẹ́, láti ibi tí kò ga. UT Austin ń fi lẹ́búlẹ́bú sínú omi tí ó lọ́wọ́ọ́rọ́; Zakin àti Au ń fi omi sínú lẹ́búlẹ́bú. A dábàá lẹ́búlẹ́bú sínú omi, tí ó ń ru eruku díẹ̀, àyàfi fún ìlànà tí ó ní bentonite púpọ̀: ẹ ru lẹ́búlẹ́bú gbígbẹ rẹ̀ papọ̀ kọ́kọ́.
+4. **Ẹ rì í**: ẹ jẹ́ kí lẹ́búlẹ́bú náà rin láìrú u. Digitalfire ń dúró nǹkan bí ìṣẹ́jú 20. Lẹ́búlẹ́bú tí ó ní gum tàbí ohun ìsopọ̀ nílò láti sùn mọ́jú.
+5. Ẹ pò ó títí kò fi ní sí ibi gbígbẹ tàbí kókó.
+6. Ẹ sẹ́ ẹ lẹ́ẹ̀mejì (ẹ wo nísàlẹ̀).
+7. Ẹ bò ó kí ẹ sì jẹ́ kí ó sinmi mọ́jú, lẹ́yìn náà ẹ tún pò ó kí ẹ sì wo ìsàlẹ̀ bóyá ìpele líle kan wà.
+8. Ẹ wọn SG, kí ẹ sì fi omi kún un díẹ̀díẹ̀ láti dé ohun tí ẹ ń wá. Láti mọ SG gbígbẹ glaze yín, ẹ tún wọn slurry tí ẹ ti parí (ẹ wo nísàlẹ̀).
+9. Ẹ lẹ àmì sí garawa, kí ẹ sì kọ ohun tí ẹ ṣe sílẹ̀.
+10. Ẹ fi omi nù ún: ẹ fi mọ́ọ̀bù nu ilẹ̀ kí ẹ sì nu gbogbo ojú, títí kan ìta àwọn ohun ìkó ohun èlò.
 
 ### Sísẹ́
 
-**Asẹ́** jẹ́ àwọ̀n nínú férémù. Títì glaze gbà á kọjá pẹ̀lú búrọ́ọ̀ṣì ń fọ́ kókó tí pípò fi sílẹ̀, ó sì ń mú àwọn hóró tí yóò di àbàwọ́n kékeré lẹ́yìn ìsun. Bí nọ́ńbà **mesh** bá ṣe ga tó, bẹ́ẹ̀ ni àwọ̀n náà ṣe kúnná tó: 80 mesh ní ihò tí ó tó nǹkan bí 0.18 mm, 100 mesh sì tó nǹkan bí 0.15 mm.
+**Asẹ́** jẹ́ àwọ̀n nínú férémù. Títì glaze gbà á kọjá pẹ̀lú búrọ́ọ̀ṣì ń fọ́ àwọn kókó tí pípò fi sílẹ̀, ó sì ń mú àwọn hóró tí ìbá sun di àmì. Bí nọ́mbà **mesh** bá ṣe ga tó, bẹ́ẹ̀ ni àwọ̀n náà ṣe kúnná tó: mesh 80 ní ihò tí ó tó nǹkan bí 0.18 mm, mesh 100 sì tó nǹkan bí 0.15 mm.
 
-Àwọn orísun dábàá mesh ọ̀tọ̀ọ̀tọ̀. Zakin ń sẹ́ lẹ́ẹ̀mejì gba 50 tàbí 80 mesh. Derek Au ń lo 120 mesh fún èyí tó pọ̀ jù nínú glaze, pàápàá àwọn tí ó ní cobalt tàbí irin: sísẹ́ ẹ̀ẹ̀mẹ́ta gba 80 mesh ṣì fi àbàwọ́n irin sílẹ̀ nínú celadon kan, sísẹ́ ẹ̀ẹ̀kan gba 120 mesh sì wò ó sàn. Ó ń lo 60 sí 80 mesh fún glaze eérú àti àwọn mìíràn tí ó ní ohun èlò tí kò kúnná. Potterycrafts, ní UK, dábàá 60 sí 80 mesh. Àṣàyàn tí ó láìléwu:
+Àwọn orísun dábàá mesh ọ̀tọ̀ọ̀tọ̀. Zakin ń sẹ́ lẹ́ẹ̀mejì gba mesh 50 tàbí 80. Derek Au ń lo mesh 120 fún ọ̀pọ̀ glaze, pàápàá àwọn tí ó ní cobalt tàbí irin: gbígbà mesh 80 kọjá lẹ́ẹ̀mẹ́ta ṣì fi àmì irin sílẹ̀ nínú celadon kan, gbígbà mesh 120 kọjá lẹ́ẹ̀kan sì ṣe àtúnṣe rẹ̀. Ó ń pa mesh 60 sí 80 mọ́ fún glaze eérú àti àwọn mìíràn tí ó ní ohun èlò tí kò kúnná. Potterycrafts, ní UK, dábàá mesh 60 sí 80. Yíyàn tí ó láàbò:
 
-Table: Asẹ́ wo ni ẹ ó lò
+Table: Asẹ́ wo ni kí a lò
 Label: Mesh asẹ́
 
-| Glaze                                                    | Asẹ́                   |
-| -------------------------------------------------------- | --------------------- |
-| Èyí tó pọ̀ jù nínú glaze                                  | Ìgbà méjì gba 80 mesh |
-| Glaze tí ó ní ohun àwọ̀ bíi cobalt tàbí irin              | 100 sí 120 mesh       |
-| Glaze eérú, àti àwọn mìíràn tí ó ní ohun èlò tí kò kúnná | 60 sí 80 mesh         |
+| Glaze                                                    | Asẹ́                         |
+| -------------------------------------------------------- | --------------------------- |
+| Ọ̀pọ̀ jùlọ glaze                                           | Gbígbà mesh 80 kọjá lẹ́ẹ̀mejì |
+| Glaze tí ó ní ohun àwọ̀ bí cobalt tàbí irin               | Mesh 100 sí 120             |
+| Glaze eérú, àti àwọn mìíràn tí ó ní ohun èlò tí kò kúnná | Mesh 60 sí 80               |
 
-## Specific gravity {#specific-gravity}
+## SG (specific gravity) {#specific-gravity}
 
-**Specific gravity** (SG) ń sọ fún yín bí lúúlúú ṣe pọ̀ tó nínú slurry yín. Òun ni ìwọ̀n iye glaze kan tí a pín sí ìwọ̀n iye omi kan náà. Omi jẹ́ 1.00, glaze tí ó jẹ́ {{SG 1.45}} sì wọ̀n 145 g fún 100 mL. Pípò sí SG tí a wọ̀n ni bí ẹ ṣe ń rí ìnípọn kan náà, àti ìbora kan náà, nígbà gbogbo. Kò ní ẹ̀yà ìwọ̀n, nítorí náà ó jẹ́ kan náà ní gíráàmù tàbí áúnsì.
+**SG** (specific gravity) ń sọ fún yín iye lẹ́búlẹ́bú tí ó wà nínú slurry yín. Òun ni ìwúwo ìwọ̀n glaze kan tí a pín sí ìwúwo ìwọ̀n omi kan náà. Omi jẹ́ 1.00, glaze tí ó wà ní {{SG 1.45}} sì wúwo 145 g fún 100 mL. Pípò dé SG tí a wọ̀n ni ọ̀nà láti rí kíki kan náà, àti ìbora kan náà, ní gbogbo ìgbà. Kò ní ẹ̀yọ ìwọ̀n, nítorí náà ó jẹ́ kan náà ní gíráàmù tàbí ounce.
 
-### Ẹ wọ̀n ọ́n nípa wíwọ̀n 100 mL
+### Ẹ wọ̀n ọ́n nípa wíwọn 100 mL
 
-1. Ẹ rú glaze náà kí ohunkóhun má ṣe silẹ̀.
-2. Ẹ gbé **graduated cylinder** 100 mL (ọ̀pá ìwọ̀n gígùn tí ó ní àmì) tàbí syringe 100 mL sórí òṣùwọ̀n, kí ẹ sì ṣe tare rẹ̀.
-3. Ẹ fi glaze kún un dé 100 mL gẹ́lẹ́, kí ẹ máa ka àmì náà ní ìdọ́gba ojú.
-4. Ẹ wọ̀n ọ́n kí ẹ sì pín àwọn gíráàmù sí 100: 145 g jẹ́ SG 1.45.
+1. Ẹ ru glaze kí ohunkóhun má bàa rọlẹ̀.
+2. Ẹ gbé **graduated cylinder** 100 mL (ọ̀pá ìwọ̀n gígùn tí ó ní àmì) tàbí sirinji 100 mL ka orí òṣùwọ̀n, kí ẹ sì sọ ọ́ di òdo (tare).
+3. Ẹ kún un pẹ̀lú glaze dé 100 mL gẹ́lẹ́, kí ẹ ka àmì náà ní ìdọ́gba ojú.
+4. Ẹ wọ̀n ọ́n kí ẹ sì pín gíráàmù sí 100: 145 g jẹ́ SG 1.45.
 
-Digitalfire tún ń sàmì sí ife kan ní ibi tí 500 g omi dé, ó ń fi glaze kún un dé àmì náà, ó sì ń pín ìwọ̀n náà sí 500; ìwọ̀n tí ó tóbi jù, tí ó kún jù, péye jù. **Hydrometer**, ohun tí ń léfòó tí a ń kà níbi tí ó dúró sí nínú glaze, yára ṣùgbọ́n ó lè ṣìkà glaze tí ó nípọn tàbí tí ó ti dì bí jẹ́lì. Hydrometer UK, bíi ti Potclays, ń kà ní degrees Baumé (°Bé). Nípa ìṣirò tiwa, SG = 145 ÷ (145 − °Bé), nítorí náà 46 °Bé jẹ́ nǹkan bí 1.46. Àwọn ìwé UK àtijọ́ ń fúnni ní **pint weight**, àwọn áúnsì nínú pint imperial glaze kan: ẹ pín in sí 20, nítorí náà 29 oz jẹ́ nǹkan bí SG 1.45 (ìṣirò tiwa pẹ̀lú).
+Digitalfire tún ń sàmì sí ife kan ní ìpele 500 g omi, ó ń kún un pẹ̀lú glaze dé àmì náà, ó sì ń pín ìwúwo náà sí 500; ìwọ̀n tí ó tóbi jù, tí ó kún jù ń péye jù. **Hydrometer**, ohun tí ń léfòó tí a ń kà níbi tí ó dúró sí nínú glaze, yára ṣùgbọ́n ó lè ṣì àwọn glaze tí ó ki tàbí tí ó dì kà. Àwọn hydrometer UK, bí ti Potclays, ń kà ní ìwọ̀n Baumé (°Bé). Nínú ìṣirò wa, SG = 145 ÷ (145 − °Bé), nítorí náà 46 °Bé jẹ́ nǹkan bí 1.46. Àwọn ìwé UK àtijọ́ ń fún **pint weight**, iye ounce nínú pint imperial kan ti glaze: ẹ pín in sí 20, nítorí náà 29 oz jẹ́ nǹkan bí SG 1.45 (ìṣirò wa náà ni).
 
-### Ohun tí ẹ ó fojú sí
+### Ohun tí a ó fojú sí
 
-Àwọn orísun kò fohùn ṣọ̀kan, jù gbogbo rẹ̀ lọ lórí fífi búrọ́ọ̀ṣì kùn àti fífọ́n, níbi tí olùtajà UK Potclays ti fúnni ní nọ́ńbà tí ó ga jù bẹ́ẹ̀ lọ fíìfíì (tirẹ̀ jẹ́ "for guidance only", fún ìtọ́sọ́nà nìkan). Ẹ ka gbogbo nọ́ńbà sí ibi ìbẹ̀rẹ̀. Ìmọ̀ràn pàtàkì Digitalfire ni láti wá SG àti dídì bí jẹ́lì tí ó ń ṣiṣẹ́ fún glaze kọ̀ọ̀kan, lẹ́yìn náà kí ẹ máa tún wọn ṣe kí ẹ sì kọ wọ́n sílẹ̀.
+Àwọn orísun kò fohùnṣọ̀kan, pàápàá lórí fífi búrọ́ọ̀ṣì kun àti fífọ́n, níbi tí olùtajà UK Potclays ti ń fún iye tí ó ga jù gan-an (tirẹ̀ jẹ́ "fún ìtọ́sọ́nà nìkan"). Ẹ ka gbogbo nọ́mbà sí ibi ìbẹ̀rẹ̀. Ìmọ̀ràn pàtàkì Digitalfire ni láti rí SG àti dídì tí ó ń ṣiṣẹ́ fún glaze kọ̀ọ̀kan, lẹ́yìn náà kí a tún wọn ṣe kí a sì kọ wọ́n sílẹ̀.
 
-Table: Specific gravity tí a ń fojú sí, níbi tí àwọn orísun kò ti fohùn ṣọ̀kan
-Label: Specific gravity tí a ń fojú sí
+Table: SG tí a ń wá, níbi tí àwọn orísun kò ti fohùnṣọ̀kan
+Label: SG tí a ń wá
 
-| Lílò             | Digitalfire àti Glazy                                                                                                                           | Potclays (UK)                                | Ibi ìbẹ̀rẹ̀ tí ó láìléwu                                                  |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------- |
-| Ìtẹ̀bọ̀            | {{SG 1.40}} (fún ìtẹ̀bọ̀ ìṣẹ́jú-àáyá 5) sí {{SG 1.50}} (fún ìtẹ̀bọ̀ ìṣẹ́jú-àáyá 1); glaze tí a pò nílé tí a mú dì bí jẹ́lì dára jù ní {{SG 1.43–1.45}} | Aláìláwọ̀ {{SG 1.46–1.48}}; aláwọ̀ {{SG 1.61}} | {{SG 1.45}}; ẹ mú un fẹ́lẹ́ sí {{SG 1.43}} kí ẹ sì mú un dì bí ó bá ń kán |
-| Fífi búrọ́ọ̀ṣì kùn | {{SG 1.25}} (aláìláwọ̀ fẹ́lẹ́) sí {{SG 1.55}} (àwòrán kékeré aláwọ̀ dúdú)                                                                           | {{SG 1.71–1.81}}                             | Ẹ tẹ̀lé ọjà náà; ẹ lo gọ́ọ̀mù CMC tàbí brushing medium                     |
-| Fífọ́n            | Kò sí nọ́ńbà; Hopper, tí ń kọ̀wé fún Ceramic Arts Network, sọ pé ó fẹ́lẹ́ púpọ̀ jù, pẹ̀lú deflocculant (ohun àfikún tí ń mú slurry ṣàn ju bẹ́ẹ̀ lọ)     | {{SG 1.71}}                                  | Kò sí nọ́ńbà tí ó ṣeé gbẹ́kẹ̀lé; ẹ fọ́n nínú spray booth nìkan              |
+| Ìlò     | Digitalfire àti Glazy                                                                                                                          | Potclays (UK)                                   | Ibi ìbẹ̀rẹ̀ tí ó láàbò                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------- |
+| Rírì    | {{SG 1.40}} (fún rírì ìṣẹ́jú-àáyá 5) sí {{SG 1.50}} (fún rírì ìṣẹ́jú-àáyá 1); àwọn glaze tí a pò nílé tí ó dì ń ṣe dáadáa jù ní {{SG 1.43–1.45}} | Mímọ́ kedere {{SG 1.46–1.48}}; aláwọ̀ {{SG 1.61}} | {{SG 1.45}}; ẹ mú un fẹ́lẹ́ dé {{SG 1.43}} kí ẹ sì mú un dì bí ó bá ń kán |
+| Búrọ́ọ̀ṣì | {{SG 1.25}} (mímọ́ kedere fẹ́lẹ́) sí {{SG 1.55}} (àlàyé dúdú)                                                                                     | {{SG 1.71–1.81}}                                | Ẹ tẹ̀lé ọjà náà; ẹ lo CMC gum tàbí brushing medium                       |
+| Fífọ́n   | Kò sí iye; Hopper, tí ń kọ̀wé fún Ceramic Arts Network, sọ pé ó fẹ́lẹ́ jù gan-an, pẹ̀lú deflocculant (àfikún tí ń mú slurry ṣàn jù)                | {{SG 1.71}}                                     | Kò sí nọ́mbà tí a lè gbẹ́kẹ̀lé; ẹ fọ́n nínú spray booth nìkan               |
 
-Láti fi ojú yẹ glaze ìtẹ̀bọ̀ wò, AMACO ń tẹ̀ ẹ́ bọ̀ fún ìṣẹ́jú-àáyá 5, ó sì ń wá ìbora tí ó nípọn tó nǹkan bí owó dime US kan. Digitalfire ń sun táílì tí a tẹ̀ bọ̀ fún ìṣẹ́jú-àáyá 5 láti yẹ̀ ẹ́ wò.
+Láti fi ojú ṣàyẹ̀wò glaze rírì, AMACO ń rì í fún ìṣẹ́jú-àáyá 5, ó sì ń wá ìbora tí ó nípọn tó nǹkan bí dime Amẹ́ríkà. Digitalfire ń sun táílì tí a rì fún ìṣẹ́jú-àáyá 5 láti ṣàyẹ̀wò.
 
-### Omi fún SG tí a ń fojú sí: ìṣirò tiwa
+### Omi fún SG tí a ń wá: ìfojúdíwọ̀n wa
 
-Tábìlì ìsàlẹ̀ yìí jẹ́ ìṣirò tiwa fúnra wa, kì í ṣe ti orísun kan. Ó gbà pé àwọn hóró lúúlúú náà ní density 2.6 g fún cm³, èyí tí ó jẹ́ àròsọ, kì í ṣe ìwọ̀n. Amọ̀, àwọn ohun èlò tí ń yọ́ nínú omi àti dídì bí jẹ́lì ń yí glaze gidi padà, nítorí náà ẹ lò ó láti bẹ̀rẹ̀, lẹ́yìn náà ẹ wọ̀n ọ́n. Gẹ́gẹ́ bí àyẹ̀wò, ó sọ tẹ́lẹ̀ {{SG 1.44}} fún lúúlúú àti omi tí ìwọ̀n wọn dọ́gba, tí ó súnmọ́ {{SG 1.46}} tí Digitalfire wọ̀n. Ó tún fi hàn pé 70 sí 80 mL fún 100 g ń mú yín bẹ̀rẹ̀ lókè {{SG 1.50}}, ó nípọn ju ohun tí ẹ nílò lọ.
+Tábìlì tó wà nísàlẹ̀ jẹ́ ìṣirò tiwa, kì í ṣe ti orísun kan. Ó gbà pé àwọn hóró lẹ́búlẹ́bú ní ìkìmọ́lẹ̀ 2.6 g fún cm³, èyí tí ó jẹ́ àròsọ, kì í ṣe ìwọ̀n. Amọ̀, ohun èlò tí ń yọ́ nínú omi àti dídì gbogbo wọn ń yí glaze gidi padà, nítorí náà ẹ lò ó láti bẹ̀rẹ̀, lẹ́yìn náà ẹ wọ̀n. Gẹ́gẹ́ bí àyẹ̀wò, ó sọtẹ́lẹ̀ {{SG 1.44}} fún ìwúwo lẹ́búlẹ́bú àti omi tí ó dọ́gba, nítòsí {{SG 1.46}} tí Digitalfire wọ̀n. Ó tún fi hàn pé 70 sí 80 mL fún 100 g ń mú yín bẹ̀rẹ̀ lókè {{SG 1.50}}, ó ki ju bí ẹ ṣe nílò lọ.
 
-Table: Omi fún specific gravity tí a ń fojú sí (ìṣirò tiwa)
-Label: Omi fún specific gravity tí a ń fojú sí
+Table: Omi fún SG tí a ń wá (ìfojúdíwọ̀n wa)
+Label: Omi fún SG tí a ń wá
 
-| Ibi tí a ń fojú sí | Fún 100 g lúúlúú | Fún kìlógíráàmù kan |        Fún pọ́ọ̀nù kan |
-| ------------------ | ---------------: | ------------------: | -------------------: |
-| {{SG 1.40}}        |  nǹkan bí 115 mL |    nǹkan bí 1150 mL | nǹkan bí 18 US fl oz |
-| {{SG 1.45}}        |   nǹkan bí 98 mL |     nǹkan bí 980 mL | nǹkan bí 15 US fl oz |
-| {{SG 1.50}}        |   nǹkan bí 85 mL |     nǹkan bí 850 mL | nǹkan bí 13 US fl oz |
-| {{SG 1.60}}        |   nǹkan bí 64 mL |     nǹkan bí 640 mL | nǹkan bí 10 US fl oz |
+| Ohun tí a ń wá | Fún 100 g lẹ́búlẹ́bú |  Fún kìlógíráàmù |            Fún pọ́ọ̀nù |
+| -------------- | -----------------: | ---------------: | -------------------: |
+| {{SG 1.40}}    |    nǹkan bí 115 mL | nǹkan bí 1150 mL | nǹkan bí 18 US fl oz |
+| {{SG 1.45}}    |     nǹkan bí 98 mL |  nǹkan bí 980 mL | nǹkan bí 15 US fl oz |
+| {{SG 1.50}}    |     nǹkan bí 85 mL |  nǹkan bí 850 mL | nǹkan bí 13 US fl oz |
+| {{SG 1.60}}    |     nǹkan bí 64 mL |  nǹkan bí 640 mL | nǹkan bí 10 US fl oz |
 
-### Epsom salts, gọ́ọ̀mù CMC àti bentonite
+### Ẹ wá SG gbígbẹ glaze yín bí ẹ ti ń pò ó
 
-**Epsom salts** ń mú glaze dì díẹ̀ bí jẹ́lì nígbà tí ó bá dúró jẹ́ẹ́, kí ó sì tún ṣàn nígbà tí a bá rú u. A ń pe èyí ní **flocculating** rẹ̀, glaze tí ó bá sì ń hùwà báyìí jẹ́ **thixotropic**: ó ń lọ ní déédé jù, kì í kán tó, kì í sì silẹ̀ tó. Digitalfire dábàá bíbẹ̀rẹ̀ ní nǹkan bí 2 g fún gallon kan nígbà tí SG bá ti tọ́ (nǹkan bí 0.5 g fún lítà kan, ìyípadà tiwa) àti títún iye náà ṣe nígbàkúùgbà tí ẹ bá pò ó, nítorí pé kò yẹ kí ìlànà kankan fi iye náà lélẹ̀. A dábàá pé kí ẹ kọ́kọ́ yọ́ ọ nínú omi gbígbóná díẹ̀. Nínú àpẹẹrẹ Digitalfire kan, glaze tí ó jẹ́ {{SG 1.45}} ń kán, nítorí náà omi mú un wálẹ̀ sí {{SG 1.43}}, Epsom salts sì mú un dì padà di bí ọ̀rá, ó sì lọ ní déédé. Àyẹ̀wò ráńpẹ́: ẹ rú u, ẹ dúró kí ẹ sì wò ó. Glaze tí ó ti dì bí jẹ́lì ń bá a lọ fún nǹkan bí ìṣẹ́jú-àáyá 2 tàbí 3, lẹ́yìn náà ó dúró, ó sì fà sẹ́yìn díẹ̀.
+2.6 tó wà lókè jẹ́ àfojúdá. Iye glaze yín, ìkìmọ́lẹ̀ lẹ́búlẹ́bú gbígbẹ rẹ̀, ni a lè ṣírò láti inú nọ́mbà mẹ́ta tí ẹ lè gbà bí ẹ ti ń pò ó. Pẹ̀lú rẹ̀, ẹ lè ṣírò láti inú SG lẹ́yìn náà iye lẹ́búlẹ́bú tí ó wà nínú garawa èyíkéyìí ti glaze yẹn, àti omi fún batch tí ó kàn. Ìṣirò wa, kì í ṣe ti orísun kan:
 
-**Gọ́ọ̀mù CMC** (carboxymethyl cellulose) ń mú slurry lẹ̀ mọ́ni jù, kí ó sì lọ́ra láti gbẹ, ó sì ń fi ìbora tí ó le jù tí ó di ìkòkò mú sílẹ̀. Ó ṣe pàtàkì jù fún glaze fífi búrọ́ọ̀ṣì kùn àti glaze tí frit pọ̀ nínú rẹ̀. Àpẹẹrẹ Digitalfire pò 3.75 g sínú 1000 g slurry, a sì gbọdọ̀ fi blender pò ó. Glaze tí ó ní CMC kò ní dì bí jẹ́lì pẹ̀lú Epsom salts, àti nítorí pé kòkòrò àìfojúrí ń jẹ gọ́ọ̀mù náà, ó lè yí padà nínú garawa kí ó sì bẹ̀rẹ̀ sí í rùn.
+1. Ẹ kọ ìwúwo lẹ́búlẹ́bú gbígbẹ inú batch sílẹ̀: àpapọ̀ ìlànà náà.
+2. Ẹ wọn garawa òfìfo kí ẹ tó bẹ̀rẹ̀, tàbí kí ẹ kọ ìwúwo rẹ̀ sí i lára.
+3. Ẹ pò, ẹ sẹ́, kí ẹ sì mú glaze dé SG rẹ̀ bí ẹ ṣe máa ń ṣe. Ẹ ti gbogbo rẹ̀ gba asẹ́ kọjá kí ẹ sì ṣàn án sínú garawa, kí lẹ́búlẹ́bú kankan má bàa kù sílẹ̀ níta.
+4. Ẹ wọn garawa tí ó kún kí ẹ sì yọ ìwúwo garawa kúrò. Ìyẹn ni ìwúwo slurry.
+5. Ẹ wọn SG.
 
-**Bentonite**, amọ̀ tí ó kúnná gan-an, ń ṣèrànwọ́ láti mú àwọn hóró yòókù léfòó nínú omi. Glaze ìtẹ̀bọ̀ sábà máa ń gbára lé 15 sí 25% amọ̀ àìṣe fún èyí. Fún ìlànà tí amọ̀ kò tó nínú rẹ̀, nǹkan bí 1 sí 3% bentonite ń ṣèrànwọ́; Digitalfire sọ pé glaze tí ó ní amọ̀ tí ó ju 15% lọ kò yẹ kí ó nílò bentonite tí ó ju 1% ìwọ̀n glaze gbígbẹ lọ.
+Lẹ́yìn náà:
 
-## Test tile àti line blend {#testing}
+- **Omi** = ìwúwo slurry − ìwúwo lẹ́búlẹ́bú.
+- **Ìwọ̀n slurry** ní mL = ìwúwo slurry ní gíráàmù ÷ SG.
+- **Ìwọ̀n lẹ́búlẹ́bú** = ìwọ̀n slurry − omi (1 g omi jẹ́ 1 mL).
+- **SG gbígbẹ** = ìwúwo lẹ́búlẹ́bú ÷ ìwọ̀n lẹ́búlẹ́bú.
+
+Fún àpẹẹrẹ: 1000 g lẹ́búlẹ́bú ń ṣe 1980 g slurry ní {{SG 1.45}}. Omi náà jẹ́ 980 g, slurry náà jẹ́ 1980 ÷ 1.45 = nǹkan bí 1366 mL, lẹ́búlẹ́bú náà gba 1366 − 980 = 386 mL, SG gbígbẹ sì jẹ́ 1000 ÷ 386 = nǹkan bí 2.59.
+
+Ẹ wọn gbogbo slurry ní òpin, kì í ṣe omi bí ẹ ti ń dà á, kí omi tí ó gbẹ lọ tàbí tí ó tú dà má bàa kà. Àṣìṣe kékeré ń pọ̀ sí i níbí: kíka SG tí ó yàtọ̀ ní 0.01 ń sún ìdáhùn ní nǹkan bí 2 sí 4%, ó pọ̀ jù fún glaze tí ó fẹ́lẹ́. Ẹ lo batch ti 1 kg tàbí jù bẹ́ẹ̀ lọ, òṣùwọ̀n tí ó péye, àti ọ̀nà ife 500 g tó wà lókè fún SG. Ọ̀pọ̀ jùlọ àwọn ohun èlò àṣà wà láàrin nǹkan bí 2.5 àti 2.9, nítorí náà iye tí ó jìnnà gan-an sí ìyẹn, nínú glaze tí kò ní zircon tàbí òjé púpọ̀, ṣeé ṣe kí ó túmọ̀ sí àṣìṣe wíwọ̀n. Ẹ kọ iye náà sórí ìlànà.
+
+### Iyọ̀ Epsom, CMC gum àti bentonite
+
+**Iyọ̀ Epsom** ń mú kí glaze dì díẹ̀ nígbà tí ó bá dúró jẹ́ẹ́, kí ó sì tún ṣàn nígbà tí a bá rú u. Èyí ni a ń pè ní **flocculating**, glaze tí ó ń ṣe bẹ́ẹ̀ sì jẹ́ **thixotropic**: ó ń lọ sí ara déédéé jù, ó ń kán díẹ̀, ó sì ń rọlẹ̀ díẹ̀. Digitalfire dábàá bíbẹ̀rẹ̀ ní nǹkan bí 2 g fún gálọ́ọ̀nù nígbà tí SG bá ti tọ̀nà (nǹkan bí 0.5 g fún lítà, ìyípadà wa) àti títún iye náà ṣe ní gbogbo ìgbà tí ẹ bá pò, nítorí kò sí ìlànà tí ó yẹ kí ó fi iye náà lélẹ̀. A dábàá kí ẹ kọ́kọ́ yọ́ ọ nínú omi gbígbóná díẹ̀. Nínú àpẹẹrẹ Digitalfire kan, glaze ní {{SG 1.45}} ń kán, nítorí náà omi mú un sọ̀kalẹ̀ dé {{SG 1.43}}, iyọ̀ Epsom sì tún mú un dì padà di bí ìpara, ó sì lọ sí ara déédéé. Àyẹ̀wò kíákíá: ẹ rú u, ẹ dúró, kí ẹ sì wò ó. Glaze tí ó dì ń tẹ̀síwájú láti rìn fún nǹkan bí ìṣẹ́jú-àáyá 2 tàbí 3, lẹ́yìn náà ó dúró, ó sì padà sẹ́yìn díẹ̀.
+
+**CMC gum** (carboxymethyl cellulose) ń mú kí slurry lẹ̀ mọ́ra jù kí ó sì pẹ́ gbẹ, ó sì ń fi ìbora líle tí ó ń di ìkòkò mú sílẹ̀. Ó ṣe pàtàkì jùlọ fún glaze búrọ́ọ̀ṣì àti glaze tí ó ní frit púpọ̀. Àpẹẹrẹ Digitalfire ń pò 3.75 g sínú 1000 g slurry, ó sì gbọ́dọ̀ wọlé pẹ̀lú blender. Glaze tí ó ní CMC kò ní dì pẹ̀lú iyọ̀ Epsom, níwọ̀n bí kòkòrò àìfojúrí sì ti ń jẹ gum náà, ó lè yí padà nínú garawa kí ó sì bẹ̀rẹ̀ sí í rùn.
+
+**Bentonite**, amọ̀ tí ó kúnná gan-an, ń ṣèrànwọ́ láti mú àwọn hóró mìíràn léfòó. Àwọn glaze rírì sábà máa ń gbára lé amọ̀ tútù 15 sí 25% fún èyí. Fún ìlànà tí amọ̀ rẹ̀ kò tó, nǹkan bí 1 sí 3% bentonite ń ṣèrànwọ́; Digitalfire sọ pé glaze tí ó ní amọ̀ tí ó ju 15% lọ kò gbọ́dọ̀ nílò bentonite tí ó ju 1% ìwúwo glaze gbígbẹ lọ.
+
+## Táílì ìdánwò àti line blend {#testing}
 
 ### Ẹ bẹ̀rẹ̀ ní kékeré
 
-Derek Au ń gòkè ní ìgbésẹ̀ mẹ́ta: ìdánwò 50 tàbí 100 g, ìgbìdánwò 1 sí 2 kg bí ó bá ṣiṣẹ́, lẹ́yìn náà batch ilé iṣẹ́ 5 sí 10 kg. Nípa ìṣirò tiwa, ìdánwò 100 g ní {{SG 1.45}} ń ṣe nǹkan bí 135 mL (nǹkan bí 4½ US fl oz) slurry, tí ó tó láti tẹ táílì kékeré díẹ̀ bọ inú ife tóóró kan.
+Derek Au ń gòkè ní ìgbésẹ̀ mẹ́ta: ìdánwò 50 tàbí 100 g, ìdánwò 1 sí 2 kg bí ó bá ṣiṣẹ́, lẹ́yìn náà batch ibi iṣẹ́ ti 5 sí 10 kg. Nínú ìfojúdíwọ̀n wa, ìdánwò 100 g ní {{SG 1.45}} ń ṣe nǹkan bí 135 mL (nǹkan bí 4½ US fl oz) slurry, tí ó tó láti rì táílì kékeré díẹ̀ nínú ife tóóró.
 
 ### Ẹ dán an wò lórí amọ̀ tiyín
 
-Glaze lè yàtọ̀ gan-an lórí amọ̀ mìíràn tàbí nínú kiln (iná ìsun amọ̀) mìíràn: Clay Art Center dán glaze kọ̀ọ̀kan tí ó tún ṣe wò lórí amọ̀ mẹ́rin, ní cone 6 àti ní cone 10. Ìtọ́sọ́nà Potclays fún àwọn olùbẹ̀rẹ̀ lórí ìdánwò glaze dábàá:
+Glaze lè rí yàtọ̀ gan-an lórí amọ̀ mìíràn tàbí nínú kiln mìíràn: Clay Art Center dán ọ̀kọ̀ọ̀kan àwọn glaze rẹ̀ tí a tún ṣe wò lórí oríṣi amọ̀ mẹ́rin, ní cone 6 àti ní cone 10. Ìtọ́sọ́nà Potclays fún àwọn olùbẹ̀rẹ̀ lórí ìdánwò glaze dábàá:
 
-- **test tile (táílì ìdánwò)** 6 sí 10 (àwọn ègé kékeré fún dídán glaze wò) ti amọ̀ tí ẹ ó lò gan-an, kí ẹ kọ bóyá wọ́n ti di bisque tàbí wọ́n gbẹ pátápátá
-- ìyípadà kan ṣoṣo lẹ́ẹ̀kan
-- ìtẹ̀bọ̀ ẹ̀ẹ̀kan àti ìtẹ̀bọ̀ ẹ̀ẹ̀mejì, láti rí glaze náà ní fẹ́lẹ́ àti ní nípọn
+- **táílì ìdánwò** 6 sí 10 (ègé kékeré fún dídán glaze wò) ti amọ̀ tí ẹ ó lò gan-an, kí ẹ kọ bóyá a ti sun wọ́n ní bisque tàbí wọ́n gbẹ pátápátá
+- ìyípadà kan ní ìgbà kan
+- rírì lẹ́ẹ̀kan àti rírì lẹ́ẹ̀mejì, láti rí glaze ní fẹ́lẹ́ àti ní kíki
 - gbogbo táílì nínú ẹrù kiln kan náà
-- àmì lórí táílì kọ̀ọ̀kan kí a tó sun ún, pẹ̀lú ontẹ̀, fínfín tàbí kálámù underglaze.
+- àmì lórí táílì kọ̀ọ̀kan kí a tó sun ún, pẹ̀lú èdìdì, gbígbẹ́ tàbí pẹ́ńsù underglaze. Àwọn táílì tí a ti sun jọra, àmì tí a ṣe kí a tó sun ún sì ń wà títí lẹ́yìn kiln, nítorí náà ẹ lè mọ̀ nígbà gbogbo ìlànà tí táílì kọ̀ọ̀kan jẹ́.
 
-A dábàá táílì tí ó dúró ṣánṣán, nítorí pé táílì pẹlẹbẹ ń fi bí glaze ṣe ń ṣàn jìnnà tó pamọ́, pẹ̀lú ìlà oníhóró láti fi bí glaze ṣe ń ya lórí etí hàn, àti ẹsẹ̀ tí kò ní glaze. Ẹ gbé ọ̀kọ̀ọ̀kan sórí àwo kékeré tàbí ègé bisque, tàbí sórí pẹpẹ tí a ti fi kiln wash kùn, láti gba ohun tí ń kán. Ẹ gbé **witness cone**, cone seramiki kékeré tí ń tẹ̀ nígbà tí ó bá ti gba ooru tó, sún mọ́ àwọn táílì láti fi ohun tí wọ́n gbà hàn; [ìtọ́sọ́nà ìsun](/guides/firing) ṣàlàyé cone. Ẹ fún táílì kọ̀ọ̀kan ní kóòdù kúkúrú, kí ẹ sì kọ ọ́ sí ẹ̀gbẹ́ ìlànà náà nínú àkọsílẹ̀ yín. Willers, tí ń kọ̀wé fún Ceramic Arts Network, ń lo nọ́ńbà àti lẹ́tà, ó sì ń kọ ètò náà fúnra rẹ̀ sí iwájú ìwé àkọsílẹ̀.
+A dábàá táílì tí ó ń dúró ní òró, nítorí táílì pẹlẹbẹ ń fi bí glaze ṣe ń ṣàn jìnnà tó pamọ́, pẹ̀lú ìlà tí ó ní ìrísí láti fi bí glaze ṣe ń fọ́ lórí etí hàn, àti ẹsẹ̀ tí kò ní glaze. Ẹ gbé ọ̀kọ̀ọ̀kan ka orí àwo kékeré tàbí ègé bisque, tàbí orí pẹpẹ tí ó ní kiln wash, láti gba àwọn ìkán. Ẹ gbé **cone ẹlẹ́rìí** (witness cone) kalẹ̀, cone amọ̀ kékeré tí ó ń tẹ̀ nígbà tí ó bá ti gba ìgbóná tó, nítòsí àwọn táílì láti fi ohun tí wọ́n gbà hàn; [ìtọ́sọ́nà ìsun](/guides/firing) ṣàlàyé cone. Ẹ fún táílì kọ̀ọ̀kan ní kóòdù kúkúrú, kí ẹ sì kọ ọ́ sí ẹ̀gbẹ́ ìlànà nínú àkọsílẹ̀ yín. Willers, tí ń kọ̀wé fún Ceramic Arts Network, ń lo nọ́mbà àti lẹ́tà, ó sì ń kọ ètò náà fúnra rẹ̀ sí iwájú ìwé àkọsílẹ̀.
 
 ### Line blend
 
-**Line blend** jẹ́ ìlà àwọn ìdánwò tí ó ń lọ ní ìgbésẹ̀ déédé láti àdàlú kan sí òmíràn: láti glaze kan sí èkejì, tàbí láti glaze ìpìlẹ̀ sí glaze kan náà pẹ̀lú ohun àwọ̀ púpọ̀ sí i. Derek Au, fún àpẹẹrẹ, ń fi iron oxide kún glaze ìpìlẹ̀ aláìláwọ̀ ní ìgbésẹ̀ 1%. Ọ̀nà ìwọ̀n-ààyè kan tí a so mọ́ Ian Currie ń fi àkókò pamọ́, nítorí pé àwọn òpin méjèèjì nìkan ni ẹ ó pò:
+**Line blend** jẹ́ ọ̀wọ́ ìdánwò tí ó ń gbésẹ̀ déédéé láti àdàlù kan sí òmíràn: láti glaze kan sí ìkejì, tàbí láti glaze ìpìlẹ̀ sí glaze kan náà pẹ̀lú ohun àwọ̀ púpọ̀ sí i. Derek Au, fún àpẹẹrẹ, ń mú iron oxide gòkè nínú ìpìlẹ̀ tí ó mọ́ kedere ní ìgbésẹ̀ 1%. Ọ̀nà ìwọ̀n tí a so mọ́ Ian Currie ń fi àkókò pamọ́, nítorí òpin méjì nìkan ni ẹ ó pò:
 
-1. Ẹ pò glaze òpin méjèèjì, A àti B, gẹ́gẹ́ bí batch tí ìwọ̀n wọn dọ́gba, kí ẹ sì sẹ́ méjèèjì.
-2. Ẹ fi omi kún èyí tí ààyè rẹ̀ kéré jù títí àwọn méjèèjì yóò fi ní ààyè omi kan náà gẹ́lẹ́.
-3. Ẹ rú méjèèjì, lẹ́yìn náà ẹ fi syringe fa àdàlú kọ̀ọ̀kan sínú ife tirẹ̀ tí ó ní nọ́ńbà.
-4. Ẹ rú ife kọ̀ọ̀kan kí ẹ sì tẹ táílì kan bọ̀ ọ́.
+1. Ẹ pò glaze òpin méjèèjì, A àti B, gẹ́gẹ́ bí batch tí ó tóbi bákan náà, kí ẹ sì sẹ́ méjèèjì.
+2. Ẹ fi omi kún èyí tí ìwọ̀n rẹ̀ kéré títí méjèèjì yóò fi ní ìwọ̀n olómi kan náà gẹ́lẹ́.
+3. Ẹ rú méjèèjì, lẹ́yìn náà ẹ fi sirinji fa àdàlù kọ̀ọ̀kan sínú ife rẹ̀ tí ó ní nọ́mbà.
+4. Ẹ rú ife kọ̀ọ̀kan kí ẹ sì rì táílì kan.
 
-Nínú àpẹẹrẹ tí a ṣiṣẹ́ rẹ̀, A jẹ́ 100 g glaze ìpìlẹ̀ aláìláwọ̀, B sì jẹ́ ọ̀kan náà pẹ̀lú 4 g red iron oxide tí a fi kún un (àfikún 4%). Mílílítà B kọ̀ọ̀kan ní ìpín ìpìlẹ̀ kan náà bí mílílítà A kan, pẹ̀lú irin rẹ̀, nítorí náà àwọn ife ń lọ láti àìsí irin dé 4% ní ìgbésẹ̀ 1%. Òpin kọ̀ọ̀kan ń fi 100 mL sínú blend náà, èyí tí batch 100 g tó fún nípa ìṣirò tiwa.
+Nínú àpẹẹrẹ wa tí a ti ṣe, A jẹ́ 100 g ìpìlẹ̀ tí ó mọ́ kedere, B sì jẹ́ bákan náà pẹ̀lú 4 g red iron oxide tí a fi kún un (àfikún 4%). Mìlílítà kọ̀ọ̀kan ti B ní ìpín ìpìlẹ̀ kan náà bí mìlílítà kan ti A, pẹ̀lú irin rẹ̀, nítorí náà àwọn ife ń gbésẹ̀ láti àìní irin dé 4% ní ìgbésẹ̀ 1%. Òpin kọ̀ọ̀kan ń fún blend ní 100 mL, èyí tí batch 100 g bò nínú ìfojúdíwọ̀n wa.
 
-Table: Line blend irin ìgbésẹ̀ márùn-ún, 40 mL fún ife kan (àpẹẹrẹ tí a ṣiṣẹ́ rẹ̀)
+Table: Line blend irin ìgbésẹ̀ márùn-ún, 40 mL fún ife kọ̀ọ̀kan (àpẹẹrẹ wa tí a ti ṣe)
 Label: Àpẹẹrẹ line blend
 
-| Ife | Ìpìlẹ̀ aláìláwọ̀ (A) | Ìpìlẹ̀ pẹ̀lú irin 4% (B) | Iron oxide, % ìpìlẹ̀ |
-| --- | -----------------: | ---------------------: | ------------------: |
-| 1   |              40 mL |                   0 mL |                   0 |
-| 2   |              30 mL |                  10 mL |                   1 |
-| 3   |              20 mL |                  20 mL |                   2 |
-| 4   |              10 mL |                  30 mL |                   3 |
-| 5   |               0 mL |                  40 mL |                   4 |
+| Ife | Ìpìlẹ̀ tí ó mọ́ kedere (A) | Ìpìlẹ̀ pẹ̀lú irin 4% (B) | Iron oxide, % ìpìlẹ̀ |
+| --- | -----------------------: | ---------------------: | ------------------: |
+| 1   |                    40 mL |                   0 mL |                   0 |
+| 2   |                    30 mL |                  10 mL |                   1 |
+| 3   |                    20 mL |                  20 mL |                   2 |
+| 4   |                    10 mL |                  30 mL |                   3 |
+| 5   |                     0 mL |                  40 mL |                   4 |
 
-Ọ̀nà náà nílò ìṣirò tí a ṣe pẹ̀lú ìṣọ́ra, òpin tí a pò dáadáa tí SG wọn dọ́gba, àti òṣùwọ̀n tí ó péye. Derek Au tún ń da wọ́n pọ̀ nípa ìwọ̀n dípò ààyè. **Triaxial blend** ń ṣe ohun kan náà pẹ̀lú òpin mẹ́ta, tí a tò sórí onígun mẹ́ta.
+Ọ̀nà náà nílò ìṣirò tí ó fara balẹ̀, òpin tí a pò dáadáa tí SG wọn dọ́gba, àti òṣùwọ̀n tí ó péye. Derek Au tún ń pò ní ìwúwo dípò ìwọ̀n. **Triaxial blend** ń ṣe bákan náà pẹ̀lú òpin mẹ́ta, tí a tò sórí onígun mẹ́ta.
 
 > [!NOTE]
-> Nígbà tí ìgbésẹ̀ kan bá dà bí èyí tí ó ní ìrètí, **Fi pamọ́ bí ẹ̀dà** lórí [ojú-ìwé ìlànà](/recipe) ń tọ́jú rẹ̀ gẹ́gẹ́ bí ìlànà tirẹ̀, ó sì ń fi èyí àkọ́kọ́ sílẹ̀ bí ó ṣe wà.
+> Nígbà tí ìgbésẹ̀ kan bá dàbí èyí tí ó dára, **Fi pamọ́ bí ẹ̀dà** lórí [ojú-ìwé ìlànà](/recipe) ń pa á mọ́ gẹ́gẹ́ bí ìlànà tirẹ̀, ó sì ń fi ti ìpilẹ̀ṣẹ̀ sílẹ̀ bí ó ti wà.
 
-## Kíkọ àkọsílẹ̀ {#records}
+## Pípa àkọsílẹ̀ mọ́ {#records}
 
-Willers sọ èrò náà dáadáa: "enough information to be able to repeat, or avoid, the results you discovered" (ìsọfúnni tí ó tó láti tún èsì tí ẹ rí ṣe, tàbí láti yẹra fún un). Ẹ kọ ohun tí ẹ fẹ́ dán wò sílẹ̀ kí ẹ tó bẹ̀rẹ̀, àti èsì nígbà tí ẹ bá kó o jáde. Potclays fi kún un: bí a ṣe fi glaze sí i, ìnípọn, amọ̀ àti gbogbo ìsun, pẹ̀lú ramp, hold àti títutù. **Ramp** jẹ́ ìyára mímú gbóná tàbí títutù, bíi {{60 °C; 108 °F}} ní wákàtí kan, **hold** sì ń pa kiln mọ́ ní ìwọ̀n ooru kan fún àkókò kan. Ẹ kọ lot number, omi tí ẹ lò àti ìrọ́pò èyíkéyìí sílẹ̀: pípààrọ̀ feldspar Clay Art Center túmọ̀ sí títún nǹkan bí ìdajì àwọn glaze rẹ̀ ṣe.
+Willers sọ èròǹgbà náà dáadáa: "ìsọfúnni tí ó tó láti lè tún ṣe, tàbí yẹra fún, àbájáde tí ẹ ṣàwárí". Ẹ kọ ohun tí ẹ ń gbèrò láti dán wò sílẹ̀ kí ẹ tó bẹ̀rẹ̀, àti àbájáde nígbà tí ẹ bá ń kó o jáde. Potclays fi ọ̀nà ìfisí, kíki, oríṣi amọ̀ àti gbogbo ìsun kún un, títí kan ramp, ìdúró àti títutù. **Ramp** jẹ́ ìyára ìmúgbóná tàbí títutù, bí {{60 °C; 108 °F}} fún wákàtí kan, **ìdúró** (hold) sì ń pa kiln mọ́ ní ìgbóná kan fún àkókò tí a ṣètò. Ẹ kọ nọ́mbà lot, omi tí ẹ lò àti ìrọ́pò èyíkéyìí sílẹ̀: ìrọ́pò feldspar ti Clay Art Center túmọ̀ sí àtúnṣe nǹkan bí ìdajì àwọn glaze rẹ̀.
 
-Table: Ohun tí ẹ ó kọ sílẹ̀ fún batch glaze kọ̀ọ̀kan (àwòṣe tiwa)
+Table: Ohun tí a ó kọ sílẹ̀ fún batch glaze kọ̀ọ̀kan (àwòṣe wa)
 Label: Àwòṣe àkọsílẹ̀
 
-| Apá             | Ohun tí ẹ ó kọ sílẹ̀                                                                                                                                                                                    |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Ìlànà           | Ìlànà náà àti ẹ̀yà rẹ̀; orúkọ ọjà ohun èlò àti lot number; ìrọ́pò èyíkéyìí                                                                                                                                |
-| Pípò            | Ọjọ́; ìwọ̀n batch; omi tí a fi kún un, àti irú rẹ̀ (omi ẹ̀rọ, reverse osmosis tàbí distilled); SG lẹ́yìn pípò àti SG ìkẹyìn; Epsom salts, CMC àti bentonite tí a fi kún un; mesh asẹ́ àti iye ìgbà tí a sẹ́ ẹ |
-| Fífi glaze sí i | Amọ̀; cone bisque; ìtẹ̀bọ̀, fífi búrọ́ọ̀ṣì kùn tàbí dídà; àkókò ìtẹ̀bọ̀ tàbí iye ìbora; ìnípọn nígbà tí ó gbẹ                                                                                                 |
-| Ìsun            | Kiln àti ipò lórí pẹpẹ; ètò ìsun, pẹ̀lú ramp, hold àti títutù rẹ̀; atmosphere (oxidation tàbí reduction); ohun tí witness cone fi hàn, kì í ṣe ohun tí a ṣètò kiln sí nìkan                              |
-| Èsì             | Ojú àti àwọ̀; ṣíṣàn, crazing tàbí pinhole èyíkéyìí; fọ́tò iwájú, ẹ̀yìn àti ẹ̀gbẹ́; kóòdù táílì                                                                                                              |
+| Apá     | Ohun tí a ó kọ sílẹ̀                                                                                                                                                                                                                                    |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Ìlànà   | Ìlànà náà àti ẹ̀yà rẹ̀; orúkọ ọjà ohun èlò àti nọ́mbà lot; ìrọ́pò èyíkéyìí                                                                                                                                                                                 |
+| Pípò    | Ọjọ́; ìtóbi batch; omi tí a fi kún un, àti oríṣi rẹ̀ (ti ẹ̀rọ, reverse osmosis tàbí distilled); SG lẹ́yìn pípò àti SG ìkẹyìn; ìwúwo slurry tí a parí, fún SG gbígbẹ rẹ̀; iyọ̀ Epsom, CMC àti bentonite tí a fi kún un; mesh asẹ́ àti iye ìgbà tí a gbà á kọjá |
+| Ìfisí   | Oríṣi amọ̀; cone bisque; rírì, búrọ́ọ̀ṣì tàbí dídà; àkókò rírì tàbí iye ìbora; kíki gbígbẹ                                                                                                                                                                |
+| Ìsun    | Kiln àti ipò lórí pẹpẹ; ètò ìsun, pẹ̀lú ramp, ìdúró àti títutù rẹ̀; ojú-ọjọ́ kiln (oxidation tàbí reduction); ohun tí cone ẹlẹ́rìí fi hàn, kì í ṣe ohun tí a ṣètò kiln sí nìkan                                                                            |
+| Àbájáde | Ojú àti àwọ̀; ìṣàn, crazing tàbí pinholes èyíkéyìí; fọ́tò iwájú, ẹ̀yìn àti ẹ̀gbẹ́; kóòdù táílì                                                                                                                                                              |
 
 > [!NOTE]
-> Nínú Glazecalc, [ìlànà](/recipe) tí a ti fi pamọ́ ń mú ìlànà náà fúnra rẹ̀. [Àkọsílẹ̀ ìsun](/firing) ń kọ ìsun kọ̀ọ̀kan sílẹ̀: kiln, ọjọ́, àkókò, ìwọ̀n ooru, cone àti àkọsílẹ̀. [Àkọsílẹ̀](/notes) ń mú gbogbo nǹkan yòókù, bíi àkọsílẹ̀ batch òkè yìí àti ohun tí táílì kọ̀ọ̀kan fi hàn.
+> Nínú Glazecalc, [ìlànà](/recipe) tí a fi pamọ́ ń di ìlànà náà fúnra rẹ̀ mú. [Àkọsílẹ̀ ìsun](/firing) ń kọ ìsun kọ̀ọ̀kan sílẹ̀: kiln, ọjọ́, àkókò, ìgbóná, cone àti àkíyèsí. [Àkíyèsí](/notes) ń di gbogbo ohun mìíràn mú, bí àkọsílẹ̀ batch tó wà lókè àti ohun tí táílì kọ̀ọ̀kan fi hàn.
 
 ## Àwọn orísun {#sources}
 

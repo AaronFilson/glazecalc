@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Mācieties ar Džona Brita (John Britt) bezmaksas glazūru kursu",
       "text": "Viņa bezmaksas video kurss pakalpojumā YouTube pa nodaļām ar mūsu ceļvežiem lasīšanai un vingrinājumiem, ko izmēģināt Glazecalc. Angļu valodā."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Glazūru aprēķinu mācīšana",
+      "text": "6 nodarbības grupai vai mācību pulciņam, no trīsstūra provju sērijām līdz Zēgera formulai abos virzienos, ar drukājamām darba lapām."
     }
   },
   "more": "Citi ceļveži",
@@ -243,5 +247,20 @@
     "loading": "Ielādē bibliotēku…",
     "failed": "Bibliotēku neizdevās ielādēt. Mēģiniet vēlreiz vēlāk.",
     "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu, ko tur pārdod."
+  },
+  "stull": {
+    "title": "Stala diagramma: silīcija dioksīds pret alumīnija oksīdu Zēgera formulā",
+    "regions": {
+      "unfused": "nesakusis",
+      "matte": "matēta",
+      "semi-matte": "pusmatēta",
+      "bright": "spīdīga",
+      "underfired": "nepietiekami apdedzināta",
+      "crazed": "ar matplaisām"
+    },
+    "keyBright": "Punktēta līnija: kur Stala glazūras bija visspīdīgākās.",
+    "keyCrazed": "Svītrojums: kur tās ieguva matplaisas.",
+    "note": "Orientieris, nevis prognoze. R. T. Stals (R. T. Stull; Transactions of the American Ceramic Society, 1912) apdedzināja līdz apmēram konusam 11 ar nemainīgiem kušņiem 0,3 K₂O un 0,7 CaO; citi kušņi un apdedzināšanas pārbīda apgabalus, un glazūra, kas ir matēta tikai tāpēc, ka nepietiekami apdedzināta, diagrammā tomēr var atrasties spīdīgajā apgabalā. Apgabali ir tādi, kā tos zīmē Glazy.",
+    "inGuide": "Silīcija dioksīds (SiO₂) pa horizontāli, no apmēram 1 līdz 7, un alumīnija oksīds (Al₂O₃) pa vertikāli, no 0 līdz 1, abi no Zēgera formulas. No kreisās puses vēdeklī izplešas ķīļi: augšā pa kreisi nesakusis, tad matēta, tad pusmatēta. Neēnotā daļa pa labi no tiem ir spīdīga, un punktētā līnija tajā rāda, kur Stala glazūras bija visspīdīgākās. Nepietiekami apdedzināta ir apakšā pa labi, ar maz alumīnija oksīda un daudz silīcija dioksīda. Svītrojums diagrammas apakšā un tās kreisajā malā rāda, kur viņa provēm radās matplaisas."
   }
 }

@@ -89,16 +89,16 @@ Label: Ortoni koonuste tabel
 | Koonus | Aeglane, {{27 °F/h; 15 °C/h}} | Keskmine, {{108 °F/h; 60 °C/h}} | Kiire, {{270 °F/h; 150 °C/h}} |
 | ------ | ----------------------------: | ------------------------------: | ----------------------------: |
 | 022    |                             – |             {{1087 °F; 586 °C}} |           {{1094 °F; 590 °C}} |
-| 018    |                             – |             {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
-| 015    |                             – |             {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
+| 018    |           {{1267 °F; 686 °C}} |             {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
+| 015    |           {{1382 °F; 750 °C}} |             {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
 | 010    |           {{1636 °F; 891 °C}} |             {{1657 °F; 903 °C}} |           {{1679 °F; 915 °C}} |
 | 08     |           {{1692 °F; 922 °C}} |             {{1728 °F; 942 °C}} |           {{1753 °F; 956 °C}} |
-| 07     |                             – |             {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
+| 07     |           {{1764 °F; 962 °C}} |             {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
 | 06     |           {{1798 °F; 981 °C}} |             {{1828 °F; 998 °C}} |          {{1855 °F; 1013 °C}} |
 | 05     |          {{1870 °F; 1021 °C}} |            {{1888 °F; 1031 °C}} |          {{1911 °F; 1044 °C}} |
 | 04     |          {{1915 °F; 1046 °C}} |            {{1945 °F; 1063 °C}} |          {{1971 °F; 1077 °C}} |
 | 03     |          {{1960 °F; 1071 °C}} |            {{1987 °F; 1086 °C}} |          {{2019 °F; 1104 °C}} |
-| 02     |                             – |            {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
+| 02     |          {{1972 °F; 1078 °C}} |            {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
 | 01     |          {{1999 °F; 1093 °C}} |            {{2046 °F; 1119 °C}} |          {{2080 °F; 1138 °C}} |
 | 1      |          {{2028 °F; 1109 °C}} |            {{2079 °F; 1137 °C}} |          {{2109 °F; 1154 °C}} |
 | 4      |          {{2086 °F; 1141 °C}} |            {{2124 °F; 1162 °C}} |          {{2161 °F; 1183 °C}} |
@@ -460,12 +460,12 @@ Käsijuhtimisega ahi järgib sama plaani käsitsi: kuivatage aeglaselt, kaas pra
 
 ## Glasuuripõletus {#glaze}
 
-**Glasuuripõletus**{{en: glaze firing}} sulatab glasuuri{{en: glaze}} eelpõletatud esemel klaasiks. Enamik algajaid põletab madalkuumusglasuure koonusteni 06–04 või keskkuumusglasuure koonusteni 5–6. Põletage koonuseni, mis on märgitud teie savimassi ja glasuuri siltidel, ja pange ahju selle numbri ümber koostatud koonusekomplekt. Mis glasuuris sulamise ajal toimub, vaadake juhendist [Glasuurimise alused](/guides/glazing-basics).
+Glasuuripõletus{{en: glaze firing}} sulatab glasuuri eelpõletatud esemel klaasiks. Enamik müügil olevaid madalkuumusglasuure on mõeldud koonusele 06 või 05 (madalkuumuse vahemik on koonused 06–04) ja enamik keskkuumusglasuure koonustele 5–6. Põletage koonuseni, mis on märgitud glasuuri ja savi siltidel, ning pange selle numbri ümber koonusekomplekt. Mis toimub glasuuris selle sulamise ajal, vt juhendit [Glasuurimise alused](/guides/glazing-basics).
 
 ### Ahju pakkimine glasuuripõletuseks
 
-- Glasuuritud esemed ei tohi puudutada üksteist ega seinu: jätke umbes ½ tolli (13 mm) vahet.
-- Hoidke põhi glasuurist puhas (**põhja glasuurivabaks jätmine**) või asetage madalkuumusesemed **kolmjalgadele**, väikestele teravate otstega alustele. Kivikeraamika{{en: stoneware}} ja portselan ei peaks seisma kolmjalgadel, mis neil temperatuuridel esemesse kinni vajuvad; kasutage selle asemel kõrgkuumusele sobivat ahjuplaatide kaitseainet või kvartsliiva.
+- Glasuuritud esemed ei tohi puudutada üksteist ega ahju seinu: jätke vahet umbes ½ tolli (13 mm).
+- Hoidke põhi glasuurivaba (**põhja glasuurivabaks jätmine**) või asetage madalkuumusesemed **kolmjalgadele**{{en: stilts}}, väikestele teravate otstega alustele. Kivikeraamikat ja portselani ei peaks panema kolmjalgadele, sest need tungivad neil temperatuuridel eseme sisse; kasutage selle asemel kõrgkuumusele sobivat ahjuplaatide kaitseainet või kvartsliiva.
 - Jätke ahjuplaatide servade ja seina või Kiln-Sitteri vahele vähemalt 1 toll (25 mm).
 
 ### Kontrolleri programmid
@@ -480,7 +480,7 @@ Label: Glasuuripõletuse valmisprogrammid
 | 3                     |                          Lõpptemperatuur |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
 | Kuumutusaeg, tühi ahi |                                          |      Umbes 6½–7½ tundi |        Umbes 3–4 tundi |
 
-Table: Kus segmendid 2 ja 3 lõpevad, koonuse järgi (L&L ja Bartlett)
+Table: Kus lõpevad segmendid 2 ja 3, koonuste kaupa (L&L ja Bartlett)
 Label: Valmisprogrammide sihttemperatuurid
 
 | Koonus |      Segment 2 lõpeb |      Lõpptemperatuur |
@@ -489,42 +489,42 @@ Label: Valmisprogrammide sihttemperatuurid
 | 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Arvestades L&L-i hoiatust kiire põletamise kohta, on Slow Glaze turvalisem vaikevalik. Kui lisate lõpptemperatuuril hoiu, mis on pikem kui 5–10 minutit, tuleb L&L-i sõnul vastavalt langetada sihttemperatuuri või koonuse nihet; L&L märgib ka, et „Hoid kõrgel temperatuuril kiirendab küttekehade ja termopaari kulumist.“
+Slow Glaze on kindlam vaikevalik, arvestades L&L-i hoiatust kiire põletamise eest. Kui lisate lõpptemperatuuril üle 5–10 minuti pikkuse hoiu, ütleb L&L, et sihttemperatuuri või koonuse nihet tuleb vastavalt langetada, ja märgib, et „Hoid kõrgel temperatuuril kiirendab küttekehade ja termopaari kulumist.“
 
 ### Koonus 6: langetus ja hoid
 
-Keskkuumusglasuuridesse jäävad mõnikord **nõelaaugud**{{en: pinholes}} (pisikesed augud pinnal) või kupud, mille jätab sulatisest mullitav gaas. **Langetuse ja hoiuga**{{en: drop-and-hold}} programm põletab tipuni, jahutab kiiresti umbes {{100 °F; 56 °C}} võrra ja hoiab seal. Digitalfire’i sõnul: „Langetamine 100°F võrra ja hoidmine annab sulatisele piisava viskoossuse, et mullid lõhkeksid, kuid nende jäljed jõuaksid siiski siluneda.“
+Keskkuumusglasuuridesse tekivad mõnikord **nõelaaugud**{{en: pinholes}} (pisikesed augud pinnal) või kupud, mille jätab sulatisest mullitav gaas. **Langetuse ja hoiu**{{en: drop-and-hold}} programm põletab tipuni, jahutab kiiresti umbes {{100 °F; 56 °C}} võrra ja hoiab seal. Digitalfire’i sõnul: „100 °F langetamine ja hoidmine annab sulatisele piisava viskoossuse, et mullid lõhkeksid, lastes neil samal ajal siiski kinni sulada.“
 
-Table: Digitalfire PLC6DS, koonus 6, langetus ja hoid
+Table: Digitalfire PLC6DS, koonuse 6 langetus ja hoid
 Label: Digitalfire PLC6DS
 
-| Samm |                                Kiirus |                 Siht | Hoid                                              |
-| ---- | ------------------------------------: | -------------------: | ------------------------------------------------- |
-| 1    |                 {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutit                                        |
-| 2    |                {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Soovi korral 30 minutit, mullipilvede kaotamiseks |
-| 3    |                 {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutit; suurtes ahjudes kauem                 |
-| 4    | Alla kiirusega {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutit                                        |
+| Samm |                                 Kiirus |                 Siht | Hoid                                            |
+| ---- | -------------------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |                  {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutit                                      |
+| 2    |                 {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Soovi korral 30 minutit, et mullipilved kaoksid |
+| 3    |                  {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutit; suurtes ahjudes kauem               |
+| 4    | Langus kiirusel {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutit                                      |
 
-PLC6DS kestab umbes 9 tundi 36 minutit. Voolavamate glasuuride puhul langetab Digitalfire selle asemel umbes {{200 °F; 111 °C}} võrra; liiga suur langetus „tekitab hoiu ajal kristallumise ohu“. Selle lõpptemperatuur {{2200 °F; 1204 °C}} on madalam kui koonuse 6 temperatuur tabelis, {{2232 °F; 1222 °C}}; Digitalfire teatab, et enamik ahje jõuab koonuseni 6 umbes temperatuuril {{2200 °F; 1204 °C}}. Kontrollige seda oma ahjus koonusekomplektiga.
+PLC6DS kestab umbes 9 tundi 36 minutit. Voolavamate glasuuride puhul langetab Digitalfire selle asemel umbes {{200 °F; 111 °C}} võrra; liiga suur langetus „võib hoiu ajal põhjustada kristallumist“. Selle lõpptemperatuur {{2200 °F; 1204 °C}} on madalam kui tabeli {{2232 °F; 1222 °C}} koonuse 6 jaoks; Digitalfire teatab, et enamik ahje jõuab koonuseni 6 umbes {{2200 °F; 1204 °C}} juures. Kontrollige seda oma ahjus koonusekomplektiga.
 
 ### Kontrollitud jahutus
 
-**Kontrollitud jahutus** tähendab, et kontroller jahutab ahju kindla kiirusega, selle asemel et lasta temperatuuril vabalt langeda. Digitalfire’i C6DHSC on PLC6DS, millele järgneb jahutus kiirusega {{150 °F/h; 83 °C/h}} temperatuurilt {{2100 °F; 1148 °C}} kuni {{1400 °F; 760 °C}} ja seejärel väljalülitus. See „parandab läiget ja pinna kvaliteeti“ ning tuleb kasuks rutiilisinistele glasuuridele, kuid kontrollitud jahutus „võib suurendada mattsust“ (üks mattglasuur muutus kuivaks) ja võib lühendada ahju releede eluiga. Ka L&L tarnib koonuse 6 jaoks kontrollitud jahutuse programmi:
+**Kontrollitud jahutus**{{en: slow cooling}} tähendab, et kontroller jahutab ahju kindla kiirusega, selle asemel et lasta temperatuuril vabalt langeda. Digitalfire’i C6DHSC on PLC6DS, millele järgneb jahutamine kiirusel {{150 °F/h; 83 °C/h}} temperatuurilt {{2100 °F; 1148 °C}} kuni {{1400 °F; 760 °C}}, seejärel välja. See „parandab läiget ja pinna kvaliteeti“ ning aitab rutiilisinistel glasuuridel, kuid kontrollitud jahutus „võib suurendada mattsust“ (üks mattglasuur muutus kuivaks) ja võib lühendada ahju releede eluiga. Ka L&L tarnib koonuse 6 jaoks kontrollitud jahutuse programmi:
 
 Table: L&L „User 6“: kontrollitud jahutus koonuse 6 glasuuridele
 Label: L ja L kontrollitud jahutus
 
-| Samm |                               Kiirus |                 Siht |
-| ---- | -----------------------------------: | -------------------: |
-| 1    |                    Täiskiirusel üles | {{2232 °F; 1222 °C}} |
-| 2    |                    Täiskiirusel alla | {{1900 °F; 1038 °C}} |
-| 3    | Alla kiirusega {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Samm |                                Kiirus |                 Siht |
+| ---- | ------------------------------------: | -------------------: |
+| 1    |                     Täiskiirusel üles | {{2232 °F; 1222 °C}} |
+| 2    |                     Täiskiirusel alla | {{1900 °F; 1038 °C}} |
+| 3    | Langus kiirusel {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Ka Skutti kontrollerid pakuvad eelkuivatust ja üheastmelist jahutusvõimalust.
+Ka Skutti kontrolleritel on eelkuumutus ja üheastmelise jahutuse võimalus.
 
 ### Käsijuhtimisega ahjus
 
-Käsijuhtimisega ahi ei saa neid programme täpselt järgida, kuid plaan on sama: algul õrnalt, keskel ühtlaselt ja lõpp jälgimise all. Bracker’si madalkuumusglasuuri programm on allpool, osas „Käsijuhtimisega ahjud lähemalt“; kuumemate koonuste jaoks lisab see „keskmiselt 15–30 minutit iga koonuse numbri kohta“. Püromeetri, harjutamise ja päevikuga saate langetuse ja hoiu või kontrollitud jahutuse ligikaudu järele teha, keerates lüliteid käsitsi madalamale, nagu Digitalfire soovitab.
+Käsijuhtimisega ahi ei suuda neid programme täpselt järgida, kuid plaan on sama: alguses ettevaatlikult, keskel ühtlaselt ja lõpp jälgides. Bracker’si madalkuumusglasuuri programm on allpool, osas „Käsijuhtimisega ahjud lähemalt“; kuumemate koonuste jaoks lisab see „keskmiselt 15–30 minutit koonuse numbri kohta“. Püromeetri, harjutamise ja põletuspäevikuga saate langetust ja hoidu või kontrollitud jahutust ligikaudu järele teha, keerates lüliteid käsitsi madalamale, nagu Digitalfire soovitab.
 
 ## Käsijuhtimisega ahjud lähemalt {#manual-kilns}
 

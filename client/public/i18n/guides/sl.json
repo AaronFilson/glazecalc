@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Učite se z brezplačnim tečajem glazur Johna Britta",
       "text": "Njegov brezplačni video tečaj na YouTubu, po enotah, z našimi vodniki za branje in vajami, ki jih preizkusite v Glazecalc. V angleščini."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Poučevanje izračuna glazur",
+      "text": "6 srečanj za razred ali študijsko skupino, od triaksialnih ploščic do Segerjeve formule, preračunane v obe smeri, z delovnimi listi za tiskanje."
     }
   },
   "more": "Več vodnikov",
@@ -243,5 +247,20 @@
     "loading": "Nalaganje knjižnice …",
     "failed": "Knjižnice ni bilo mogoče naložiti. Poskusite znova pozneje.",
     "choosePrompt": "Izberite državo ali regijo, da vidite, kaj se tam prodaja."
+  },
+  "stull": {
+    "title": "Stullov diagram: kremenica glede na glinico v Segerjevi formuli",
+    "regions": {
+      "unfused": "nestaljeno",
+      "matte": "mat",
+      "semi-matte": "polmat",
+      "bright": "sijajno",
+      "underfired": "premalo žgano",
+      "crazed": "z lasastimi razpokami"
+    },
+    "keyBright": "Pikčasta črta: kjer so bile Stullove glazure najsijajnejše.",
+    "keyCrazed": "Šrafura: kjer so dobile lasaste razpoke.",
+    "note": "Vodilo, ne napoved. R. T. Stull (Transactions of the American Ceramic Society, 1912) je žgal do približno stožca 11, s stalnimi talili 0,3 K₂O in 0,7 CaO; druga talila in drugačna žganja območja premaknejo, glazura, ki je mat le zato, ker je bila premalo žgana, pa se lahko na diagramu vseeno pokaže kot sijajna. Območja so takšna, kot jih riše Glazy.",
+    "inGuide": "Kremenica (SiO₂) vodoravno, od približno 1 do 7, in glinica (Al₂O₃) navpično, od 0 do 1, obe iz Segerjeve formule. Klini se pahljačasto širijo z leve: zgoraj levo nestaljeno, nato mat, nato polmat. Neosenčeni del desno od njih je sijajen, pikčasta črta v njem pa kaže, kje so bile Stullove glazure najbolj sijajne. Premalo žgano je spodaj desno, z malo glinice in veliko kremenice. Šrafura, nizko na diagramu in ob njegovi levi strani, kaže, kje so njegovi preizkusi razpokali."
   }
 }

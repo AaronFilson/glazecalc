@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Tgħallem mal-kors b’xejn tal-glejż ta’ John Britt",
       "text": "Il-kors bil-vidjows b’xejn tiegħu fuq YouTube, unità b’unità, bil-gwidi tagħna x’taqra u eżerċizzji x’tipprova f’Glazecalc. Bl-Ingliż."
+    },
+    "teachingGlazeCalculation": {
+      "title": "It-tagħlim tal-kalkolu tal-glejż",
+      "text": "6 sessjonijiet għal klassi jew grupp ta’ studju, mill-provi fi trijangolu sal-formula ta’ Seger maħduma fiż-żewġ direzzjonijiet, b’folji tax-xogħol biex tipprintja."
     }
   },
   "more": "Aktar gwidi",
@@ -243,5 +247,20 @@
     "loading": "Il-librerija qed titgħabba…",
     "failed": "Il-librerija ma setgħetx titgħabba. Erġa’ pprova aktar tard.",
     "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara x’jinbiegħ hemmhekk."
+  },
+  "stull": {
+    "title": "Mappa ta’ Stull: silika kontra alumina fil-formula ta’ Seger",
+    "regions": {
+      "unfused": "mhux imdewweb",
+      "matte": "matt",
+      "semi-matte": "nofs matt",
+      "bright": "ileqq",
+      "underfired": "mhux moħmi biżżejjed",
+      "crazed": "bix-xegħir"
+    },
+    "keyBright": "Linja bit-tikek: fejn il-glejżijiet ta’ Stull kienu l-aktar jleqqu.",
+    "keyCrazed": "Linji dojoq: fejn għamlu x-xegħir.",
+    "note": "Gwida, mhux tbassir. R. T. Stull (Transactions of the American Ceramic Society, 1912) ħema madwar il-kon 11 bil-flussi fissi f’0.3 K₂O u 0.7 CaO; flussi u ħamjiet oħra jċaqalqu r-reġjuni, u glejż li huwa matt biss għax ma nħemiex biżżejjed xorta jista’ jidher fir-reġjun ileqq. Ir-reġjuni huma kif jiġbidhom Glazy.",
+    "inGuide": "Is-silika (SiO₂) mal-wisa’, minn madwar 1 sa 7, u l-alumina (Al₂O₃) ’il fuq, minn 0 sa 1, it-tnejn mill-formula ta’ Seger. Kunjardi jinfirxu mix-xellug: mhux imdewweb fuq ix-xellug, imbagħad matt, imbagħad nofs matt. Il-parti mingħajr dell fuq il-lemin tagħhom hija ileqq, u l-linja bit-tikek fiha hija fejn il-glejżijiet ta’ Stull kienu l-aktar jleqqu. Mhux moħmi biżżejjed jinsab isfel fuq il-lemin, b’ftit alumina u ħafna silika. Il-linji dojoq, baxxi fil-mappa u fuq in-naħa tax-xellug tagħha, huma fejn it-testijiet tiegħu għamlu x-xegħir."
   }
 }

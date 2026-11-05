@@ -144,7 +144,7 @@ El agua también varía, y Digitalfire señala que cambia el comportamiento de l
 5. Mezcle hasta que no queden bolsas de polvo seco ni grumos.
 6. Tamícelo dos veces (véase más abajo).
 7. Tápelo y déjelo reposar toda la noche; después, vuelva a mezclarlo y compruebe si se ha formado una capa dura en el fondo.
-8. Mida la densidad y añada agua poco a poco hasta llegar a su objetivo.
+8. Mida la densidad y añada agua poco a poco hasta llegar a su objetivo. Para conocer la densidad en seco de su propio esmalte, pese también la suspensión terminada (véase más abajo).
 9. Etiquete el cubo y anote lo que ha hecho.
 10. Limpie en húmedo: friegue el suelo y pase un paño por todas las superficies, incluido el exterior de los recipientes de los materiales.
 
@@ -205,6 +205,27 @@ Label: Agua para una densidad objetivo
 | {{SG 1.50}} |         unos 85 mL |   unos 850 mL | unas 13 fl oz estadounidenses |
 | {{SG 1.60}} |         unos 64 mL |   unos 640 mL | unas 10 fl oz estadounidenses |
 
+### Cómo hallar la densidad en seco de su propio esmalte mientras lo prepara
+
+El 2,6 de arriba es una suposición. La cifra de su propio esmalte, la densidad de su polvo seco, se puede calcular a partir de tres números que puede tomar mientras lo prepara. Con ella podrá calcular más adelante, a partir de la densidad, cuánto polvo hay en cualquier cubo de ese esmalte, y el agua para la tanda siguiente. Es un cálculo nuestro, no de una fuente:
+
+1. Anote el peso del polvo seco de la tanda: el total de la receta.
+2. Pese el cubo vacío antes de empezar, o escriba su peso en él.
+3. Mezcle, tamice y lleve el esmalte a su densidad como de costumbre. Pase todo por el tamiz y aclárelo dentro del cubo, para que no quede polvo fuera.
+4. Pese el cubo lleno y reste el peso del cubo. Ese es el peso de la suspensión.
+5. Mida la densidad.
+
+Después:
+
+- **Agua** = peso de la suspensión − peso del polvo.
+- **Volumen de la suspensión** en mL = peso de la suspensión en gramos ÷ densidad.
+- **Volumen del polvo** = volumen de la suspensión − agua (1 g de agua es 1 mL).
+- **Densidad en seco** = peso del polvo ÷ volumen del polvo.
+
+Por ejemplo: 1000 g de polvo dan 1980 g de suspensión a {{SG 1.45}}. El agua son 980 g, la suspensión ocupa 1980 ÷ 1,45 = unos 1366 mL, el polvo ocupa 1366 − 980 = 386 mL, y la densidad en seco es 1000 ÷ 386 = unos 2,59.
+
+Pese toda la suspensión al final, no el agua a medida que la vierte, para que no cuente el agua que se evapora o salpica. Aquí los errores pequeños crecen: una lectura de densidad desviada en 0,01 mueve el resultado entre un 2 y un 4 % aproximadamente, y más en un esmalte más diluido. Use una tanda de 1 kg o más, una báscula precisa y, para la densidad, el método del vaso de 500 g de arriba. La mayoría de los materiales habituales están entre 2,5 y 2,9 aproximadamente, así que una cifra muy fuera de ese intervalo, en un esmalte sin mucho silicato de zirconio ni plomo, probablemente indica un error de medida. Escriba la cifra en la receta.
+
 ### Sales de Epsom, goma CMC y bentonita
 
 Las **sales de Epsom** (sulfato de magnesio) hacen que un esmalte gelifique ligeramente cuando está en reposo y vuelva a fluir cuando se remueve. Esto se llama **flocular**{{en: flocculating}} el esmalte, y un esmalte que se comporta así es **tixotrópico**{{en: thixotropic}}: se aplica de forma más uniforme, gotea menos y sedimenta menos. Digitalfire propone empezar con unos 2 g por galón una vez que la densidad sea la correcta (más o menos 0,5 g por litro, según nuestra conversión) y ajustar la cantidad cada vez que prepare el esmalte, ya que ninguna receta debería fijar la dosis. Le recomendamos disolverlas antes en un poco de agua caliente. En un ejemplo de Digitalfire, un esmalte de {{SG 1.45}} goteaba, así que se le añadió agua hasta bajarlo a {{SG 1.43}}, las sales de Epsom lo gelificaron hasta volver a dejarlo cremoso, y se aplicó de forma uniforme. Una comprobación aproximada: remueva, pare y observe. Un esmalte gelificado sigue moviéndose unos 2 o 3 segundos; luego se detiene y retrocede un poco.
@@ -227,9 +248,9 @@ Un esmalte{{en: glaze}} puede verse muy distinto sobre otra pasta o en otro horn
 - un solo cambio cada vez
 - una inmersión simple y una doble, para ver el esmalte en capa fina y en capa gruesa
 - todas las probetas en la misma carga del horno
-- una marca en cada probeta antes de cocerla, con un sello, una incisión o un lápiz cerámico.
+- una marca en cada probeta antes de cocerla, con un sello, una incisión o un lápiz cerámico. Las probetas cocidas se parecen, y una marca hecha antes de cocer resiste el horno, así que siempre sabrá qué receta es cada probeta.
 
-Le recomendamos probetas que se sostengan de pie, porque una probeta plana oculta hasta dónde escurre un esmalte, con una franja con textura para ver cómo cambia de color el esmalte en los cantos, y con el pie sin esmaltar. Ponga cada una sobre un platito, un trozo de bizcocho o protector de placas, para recoger las gotas. Coloque cerca de las probetas un **cono testigo**{{en: witness cone}}, un pequeño cono cerámico que se dobla cuando ha recibido suficiente calor, para que indique cuánto calor han recibido; la [guía de cocción](/guides/firing) explica los conos. Dé a cada probeta un código corto y anótelo junto a la receta en sus registros. Willers, en un artículo para Ceramic Arts Network, usa números y letras, y escribe el propio sistema al principio del cuaderno.
+Le recomendamos probetas que se sostengan de pie, porque una probeta plana oculta hasta dónde escurre un esmalte, con una franja con textura para ver cómo cambia de color el esmalte en los cantos, y con el pie sin esmaltar. Ponga cada una sobre un platito o un trozo de bizcocho, o sobre una placa con protector de placas, para recoger las gotas. Coloque cerca de las probetas un **cono testigo**{{en: witness cone}}, un pequeño cono cerámico que se dobla cuando ha recibido suficiente calor, para que indique cuánto calor han recibido; la [guía de cocción](/guides/firing) explica los conos. Dé a cada probeta un código corto y anótelo junto a la receta en sus registros. Willers, en un artículo para Ceramic Arts Network, usa números y letras, y escribe el propio sistema al principio del cuaderno.
 
 ### Mezclas lineales
 
@@ -265,13 +286,13 @@ Willers resume bien el objetivo: «información suficiente para poder repetir, o
 Table: Qué anotar en cada tanda de esmalte (nuestra plantilla)
 Label: Plantilla de registro
 
-| Apartado   | Qué anotar                                                                                                                                                                                                                                                            |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Receta     | La receta y su versión; marcas y números de lote de los materiales; cualquier sustitución                                                                                                                                                                             |
-| Mezcla     | Fecha; tamaño de la tanda; agua añadida y de qué tipo (del grifo, de ósmosis inversa o destilada); densidad{{en: SG}} tras la mezcla y densidad final; sales de Epsom, CMC y bentonita añadidas; malla del tamiz y número de pasadas                                  |
-| Aplicación | Pasta; cono de bizcocho{{en: bisque cone}}; por inmersión, a pincel o por vertido; tiempo de inmersión o número de capas; grosor en seco                                                                                                                              |
-| Cocción    | Horno y posición en las placas; el programa de cocción, con sus rampas, mantenimientos y enfriamiento; atmósfera (oxidación{{en: oxidation}} o reducción{{en: reduction}}); lo que mostró el cono testigo{{en: witness cone}}, no solo lo que se programó en el horno |
-| Resultado  | Superficie y color; cualquier escurrido, cuarteado{{en: crazing}} o pinchado{{en: pinholes}}; fotos de la cara, el dorso y el lateral; el código de la probeta{{en: test tile}}                                                                                       |
+| Apartado   | Qué anotar                                                                                                                                                                                                                                                                                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Receta     | La receta y su versión; marcas y números de lote de los materiales; cualquier sustitución                                                                                                                                                                                                          |
+| Mezcla     | Fecha; tamaño de la tanda; agua añadida y de qué tipo (del grifo, de ósmosis inversa o destilada); densidad{{en: SG}} tras la mezcla y densidad final; el peso de la suspensión terminada, para su densidad en seco; sales de Epsom, CMC y bentonita añadidas; malla del tamiz y número de pasadas |
+| Aplicación | Pasta; cono de bizcocho{{en: bisque cone}}; por inmersión, a pincel o por vertido; tiempo de inmersión o número de capas; grosor en seco                                                                                                                                                           |
+| Cocción    | Horno y posición en las placas; el programa de cocción, con sus rampas, mantenimientos y enfriamiento; atmósfera (oxidación{{en: oxidation}} o reducción{{en: reduction}}); lo que mostró el cono testigo{{en: witness cone}}, no solo lo que se programó en el horno                              |
+| Resultado  | Superficie y color; cualquier escurrido, cuarteado{{en: crazing}} o pinchado{{en: pinholes}}; fotos de la cara, el dorso y el lateral; el código de la probeta{{en: test tile}}                                                                                                                    |
 
 > [!NOTE]
 > En Glazecalc, una [receta](/recipe) guardada contiene la receta en sí. Un [registro de cocción](/firing) recoge cada cocción: el horno, la fecha, las horas, las temperaturas, los conos y las notas. Las [notas](/notes) guardan todo lo demás, como el registro de la tanda de arriba y lo que mostró cada probeta.

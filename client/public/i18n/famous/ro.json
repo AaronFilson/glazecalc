@@ -1,0 +1,63 @@
+{
+  "notTranslated": "O parte din această pagină nu este încă tradusă, așa că apare în engleză.",
+  "index": {
+    "crumb": "Glazuri celebre",
+    "title": "Glazuri celebre",
+    "lead": "Glazuri cunoscute în întreaga lume, fiecare din materiile prime locale tradiționale, cu formula ei Seger și o variantă din materiile prime care se vând acolo unde vă aflați.",
+    "listHeading": "Glazurile",
+    "more": "Vor urma și alte glazuri: fiecare se adaugă după ce rețeta și materiile ei prime se sprijină pe cel puțin trei surse citite."
+  },
+  "glaze": {
+    "lead": "O glazură celebră ({native}): rețeta sau analiza ei tradițională, arderea ei și o variantă din materiile prime care se vând acolo unde vă aflați.",
+    "aboutHeading": "Despre {name}",
+    "nativeName": "Denumirea originală",
+    "origin": "Unde",
+    "period": "Când",
+    "firing": "Ardere",
+    "cone": "con {cone}",
+    "historyOnly": "Doar ca istorie: această glazură se făcea cu plumb. Analiza ei este prezentată ca istorie, nu ca rețetă de preparat. Varianta de mai jos este o altă glazură, fără plumb.",
+    "recipeHeading": "Rețeta tradițională",
+    "material": "Materie primă",
+    "amount": "Cantitate",
+    "unityHeading": "Formula Seger",
+    "analysisHeading": "Analiza istorică",
+    "oxide": "Oxid",
+    "percent": "% de masă",
+    "useHeading": "Încercați-o",
+    "open": "Deschideți această rețetă",
+    "openLeadFree": "Deschideți varianta fără plumb",
+    "leadFreeTitle": "În stilul {name}, fără plumb",
+    "allLink": "Toate glazurile celebre",
+    "safetyHeading": "Siguranță",
+    "safeMixing": "Prepararea în siguranță și ventilația",
+    "firingGuide": "Arderea într-un cuptor simplu",
+    "makingGuide": "Cum se prepară o glazură",
+    "sourcesHeading": "Surse",
+    "link": "Deschideți",
+    "opened": "citită la {date}"
+  },
+  "local": {
+    "heading": "Cu materiile prime locale",
+    "leadFreeHeading": "Varianta fără plumb",
+    "intro": "Formula Seger a rețetei tradiționale, refăcută din materiile prime standard care se vând acolo unde cumpărați. Alegeți de unde cumpărați ca s-o vedeți.",
+    "region": "De unde cumpărați materiile prime",
+    "proposal": "Materiile prime ale propunerii",
+    "pick": "Alegeți…",
+    "untested": "Calculată, încă nearsă de probă.",
+    "testFirst": "Ardeți plăcuțe de test înainte de a o folosi pe orice piesă și testați migrarea metalelor de pe o suprafață care atinge alimentele.",
+    "untestedNote": "Calculată, încă nearsă de probă: ardeți plăcuțe de test înainte de folosire.",
+    "close": "Se apropie de formula țintă.",
+    "fair": "Se apropie destul de mult de formula țintă.",
+    "poor": "Aceste materii prime nu se pot apropia de formula țintă.",
+    "none": "Materiile prime care se vând acolo nu o pot reface.",
+    "choose": "Alegeți de unde cumpărați materiile prime ca s-o vedeți refăcută din cele care se vând acolo."
+  },
+  "atmospheres": {
+    "oxidation": "ardere oxidantă",
+    "reduction": "ardere reducătoare",
+    "neutral": "atmosferă neutră",
+    "wood": "ardere cu lemne",
+    "salt": "ardere cu sare",
+    "soda": "ardere cu sodă"
+  }
+}

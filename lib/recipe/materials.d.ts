@@ -5,6 +5,8 @@ import type { FritRole, MaterialRecord } from './library';
 
 export const LIKE_FOR_LIKE_GRAMS: number;
 export function oxidePercent(material: MaterialInput, oxide: string): number;
+/** Fired oxides per gram of the raw material, or null when it has no chemistry the app can read. */
+export function oxidesPerGram(material: MaterialInput): Record<string, number> | null;
 export function gramsApart(a: MaterialInput, b: MaterialInput): number | null;
 export function likeForLike(a: MaterialInput, b: MaterialInput): boolean;
 export function roleOf(frit: MaterialRecord): FritRole | undefined;

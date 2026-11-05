@@ -59,29 +59,31 @@ Label: Opløselige råvarer
 
 Den største fare ved bly er en anden: ikke én skefuld, men små mængder støv, der sluges over uger eller måneder, uden advarselstegn (se »Bly og børn« nedenfor).
 
-## Opbevaring af råvarer derhjemme {#storing-materials}
+## Opbevaring af råvarer i hjemmet {#storing-materials}
 
-Ingen officiel myndighed fastsætter regler for opbevaring af glasurråvarer{{en: glaze materials}} i hjemmet, men sider om sundhed og sikkerhed er enige: Hold arbejdet på et sted for sig, væk fra børn. Pennsylvanias sundhedsmyndighed skriver om hobbyer, hvor der bruges bly: »Brug et særligt arbejdsområde eller en garage til din hobby, og hold børn væk fra dette område.«
+Ingen officiel myndighed fastsætter regler for opbevaring af glasurråvarer i hjemmet, men sider om sundhed og sikkerhed er enige: Hold arbejdet i et rum for sig, væk fra børn. Sundhedsmyndigheden i Pennsylvania skriver om hobbyer, hvor der bruges bly: »Brug et særligt arbejdsrum eller en garage til hobbyen, og hold børn væk fra dette område.«
 
 ### En tjekliste til opbevaring
 
-Dette er almindelige regler til forebyggelse af forgiftning, overført til glasur. Ingen standard for keramik fastsætter dem, men vi foreslår dem alle:
+Dette er almindelige regler til forebyggelse af forgiftning, anvendt på glasur. Ingen keramisk standard fastsætter dem, men vi foreslår dem alle:
 
-- Hold tørre råvarer låst inde: i et skab eller i et rum, en garage eller et skur, der kan låses. En høj hylde hjælper, men børn klatrer. Hvis kun få ting kan låses inde i begyndelsen, så start med de opløselige råvarer og farvestofferne{{en: colorants}}.
-- Opbevar råvarerne i de originale poser eller bøtter. Hvis en råvare hældes over i en anden beholder, så mærk den med navnet, nøjagtigt som det står på posen.
-- Brug aldrig beholdere til mad eller drikke (yoghurtbægre, glas, flasker) til glasurråvarer, heller ikke med etiket på. Et barn ved, hvad der er i et yoghurtbæger.
-- Hold værkstedets redskaber (skovle, skeer, piskeris, sigter, vægte) i værkstedet. Brug aldrig køkkenredskaber til glasur eller glasurredskaber til mad.
+- Hold tørre råvarer låst inde: et skab eller et rum, en garage eller et skur, der kan låses. En høj hylde hjælper, men børn klatrer. Kan der i begyndelsen kun låses nogle få ting inde, så start med de opløselige råvarer og farvestofferne.
+- Opbevar råvarer i deres oprindelige sække eller bøtter. Flyttes en over i en anden beholder, så mærk den med navnet nøjagtig som det står på sækken.
+- Brug aldrig beholdere til mad eller drikke (yoghurtbægre, glas, flasker) til glasurråvarer, heller ikke med etiket. Et barn ved, hvad et yoghurtbæger indeholder.
+- Hold værkstedets redskaber (skeer, måleskeer, piskeris, sigter, vægte) i værkstedet. Brug aldrig køkkenredskaber til glasur eller glasurredskaber til mad.
 - Opbevar våde glasurer i spande med etiket og med låget på.
-- Opbevar hver råvares sikkerhedsdatablad sammen med råvaren, på papir eller på telefonen.
-- Hav intet fra værkstedet i køkkenet: ingen poser, spande, redskaber eller prøvebrikker{{en: test tiles}}.
+- Opbevar hver råvares sikkerhedsdatablad sammen med den, på papir eller på telefonen.
+- Hav intet fra værkstedet i køkkenet: ingen sække, spande, redskaber eller prøvebrikker.
 
-Se [Sådan laver man en glasur](/guides/making-a-glaze) for mere om indkøb og opbevaring af råvarer.
+Mere om køb og opbevaring af råvarer står i [Sådan laver man en glasur](/guides/making-a-glaze).
 
 ### Glasuraffald og skyllevand
 
-Hæld aldrig glasur eller vand, som glasurredskaber er skyllet i, ud i vasken eller i haven. Det britiske Crafts Council foreslår en særskilt spand vand til at vaske hænder, pensler, sigter og redskaber i. Lad den stå natten over, så indholdet bundfælder sig, hæld det klare vand fra, tør derefter den bundfældede glasur, og smid den i skraldespanden (den ender på lossepladsen), aldrig i afløbet.
+Hæld aldrig glasur eller vand, som glasurredskaber er skyllet i, ud i vasken eller i haven. Det britiske Crafts Council foreslår en særskilt spand vand til at vaske hænder, pensler, sigter og redskaber i. Lad den bundfælde sig natten over, hæld det klare vand fra, tør derefter den bundfældede glasur, og læg den i skraldespanden (den går til deponi), aldrig i afløbet.
 
-Vi foreslår et låg på den spand: Slammet indeholder de samme metaller som glasuren, og kæledyr drikker stillestående vand. Reglerne for bortskaffelse er forskellige fra sted til sted, så tjek hvert produkts sikkerhedsdatablad, og spørg kommunen eller vandforsyningen i tvivlstilfælde.
+Vi foreslår et låg på den spand: Slammet indeholder de samme metaller som glasuren, og kæledyr drikker stillestående vand. Reglerne for bortskaffelse varierer fra sted til sted, så tjek hvert produkts sikkerhedsdatablad, og spørg kommunen eller vandselskabet, ved tvivl.
+
+Nogle værksteder brænder det tørrede slam, før de smider det ud. De lægger det i en ekstra skål, der må ofres: Efter brændingen kan skålen ikke bruges igen. Fyld kun skålen en fjerdedel op, fordi slammet skummer og bobler, når det smelter, og dæk den med en tallerken. Sæt den på en ovnplade med pladebeskyttelse eller på en ekstra plade, hvis det skulle løbe over. Brændingen gør slammet til glas, som holder langt bedre på metallerne end løst pulver, så det er mere sikkert på et deponi. Håndtér det tørre slam som tør glasur, med åndedrætsværn og uden at lave støv.
 
 ## Sådan holdes støvet i værkstedet {#keeping-dust-in-the-studio}
 

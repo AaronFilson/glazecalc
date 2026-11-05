@@ -123,158 +123,179 @@ Dereks Au sver vienā bļodā atsevišķās kaudzītēs, lai kļūdas gadījumā
 
 ### Cik daudz ūdens
 
-Avoti nav vienisprātis. Dereks Au sāk ar biezu maisījumu – 50 mL ūdens uz 100 g pulvera – un vēlāk pielej vairāk. Potterycrafts vienai pulverveida glazūrai{{en: glaze}} norāda 65 mL uz 100 g. UT Austin ņem vienādu ūdens un pulvera svaru, un, kad Digitalfire iebēra 20 kg pulvera 20 kg ūdens, izmērītais relatīvais blīvums{{en: specific gravity}} bija 1,46.
+Avoti nav vienisprātis. Dereks Au sāk ar biezu maisījumu, 50 mL ūdens uz 100 g pulvera, un vēlāk pielej vairāk. Potterycrafts kādai pulvera glazūrai norāda 65 mL uz 100 g. UT Austin izmanto vienādu ūdens un pulvera masu, un kad Digitalfire iejauca 20 kg pulvera 20 kg ūdens, tā izmērītais relatīvais blīvums bija 1,46.
 
-Ūdeni pieliet ir ātri, bet atdalīt – lēni, tāpēc sāciet ar mazāku daudzumu. Mūsu aplēse: sāciet ar **apmēram 70–80 mL uz 100 g** (700–800 mL uz kilogramu jeb apmēram 11–12 ASV fl oz uz mārciņu). Ļaujiet pulverim izmirkt, samaisiet un izkāsiet šādā biezumā, pēc tam pamazām pielejiet ūdeni, līdz relatīvais blīvums ir pareizs. 1 mL ūdens sver 1 g, tāpēc ūdeni var nosvērt. Ja ūdens sanācis par daudz, ļaujiet glazūrai nosēsties un pēc tam savāciet dzidro ūdeni no virsmas ar sūkli vai nolejiet to.
+Ūdeni pievienot ir ātri, bet izvadīt lēni, tāpēc sāciet ar mazāk. Mūsu aplēse: sāciet ar **apmēram 70–80 mL uz 100 g** (700–800 mL uz kilogramu jeb apmēram 11–12 ASV šķidruma unces uz mārciņu). Ļaujiet izmirkt, samaisiet un izkāsiet šādā biezumā, tad pamazām pievienojiet ūdeni, līdz relatīvais blīvums ir pareizs. 1 mL ūdens sver 1 g, tāpēc ūdeni varat nosvērt. Ja ūdens sanācis par daudz, ļaujiet glazūrai nosēsties un tad nosmeliet ar sūkli vai nolejiet dzidro ūdeni no virsas.
 
 ### Rīki un ūdens
 
-- **Propellera maisītājs.** Digitalfire labu maisītāju sauc par “neaizstājamu”. Spainī darbu paveic urbjmašīna ar vadu un maisīšanas uzgali. UT Austin to darbina vismaz 4–5 minūtes pēc tam, kad glazūra izskatās samaisīta, un tur asmeni nost no spaiņa, jo tas var nokasīt no tā plastmasu.
-- **Blenderis.** Tas “lieliski darbojas nelielām porcijām” (Digitalfire). Lietojiet to tikai glazūrai: tas nekad nedrīkst atgriezties virtuvē.
-- **Virtuves slotiņa vai nūjiņa.** To izvēlas Zakins, ja nav maisītāja.
+- **Propellera maisītājs.** Digitalfire labu maisītāju sauc par “neaizstājamu”. Spainī darbu paveic urbjmašīna ar vadu un maisīšanas uzgali. UT Austin to darbina vēl vismaz 4–5 minūtes pēc tam, kad glazūra izskatās samaisīta, un tur lāpstiņu tālāk no spaiņa sienām, no kurām tā var nokasīt plastmasu.
+- **Blenderis.** Tas “ļoti labi der nelielām porcijām” (Digitalfire). Lietojiet to tikai glazūrai: tas nekad nedrīkst atgriezties virtuvē.
+- **Slotiņa vai koka nūja.** Zakina (Zakin) izvēle, ja maisītāja nav.
 
-Arī ūdens mēdz atšķirties, un Digitalfire norāda, ka tas maina to, kā uzvedas glazūras suspensija{{en: slurry}}. Dereks Au izmanto reversās osmozes ūdeni, jo viņa krāna ūdens ir ciets. Lai kādu ūdeni lietotu, pierakstiet to.
+Arī ūdens atšķiras, un Digitalfire atzīmē, ka tas maina glazūras suspensijas īpašības. Dereks Au izmanto reversās osmozes ūdeni, jo viņa krāna ūdens ir ciets. Lai ko izmantojat, pierakstiet to.
 
 ### Soli pa solim
 
-1. Uzlieciet respiratoru un, ja rokas nonāks glazūrā, arī gumijas cimdus. Zakins valkā masku no svēršanas sākuma līdz brīdim, kad glazūra ir mitra.
-2. Ielejiet spainī apmēram 70–80 mL ūdens uz 100 g pulvera.
-3. Saudzīgi un no neliela augstuma pievienojiet nosvērto pulveri. UT Austin ber pulveri siltā ūdenī, bet Zakins un Au pielej ūdeni pulverim. Mēs iesakām bērt pulveri ūdenī, jo tā paceļas mazāk putekļu, izņemot recepti ar daudz bentonīta: tās sausos pulverus vispirms samaisiet savā starpā.
-4. **Ļaujiet pulverim izmirkt**: lai tas mirkst, to nemaisot. Digitalfire gaida apmēram 20 minūtes. Pulveriem, kuros ir līmviela vai saistviela, jānostāv pa nakti.
-5. Maisiet, līdz vairs nav sausu vietu vai kunkuļu.
-6. Izkāsiet to divreiz (skatiet zemāk).
-7. Apsedziet un ļaujiet nostāvēties pa nakti, tad samaisiet vēlreiz un pārbaudiet, vai dibenā nav izveidojies ciets slānis.
-8. Izmēriet relatīvo blīvumu un pamazām pielejiet ūdeni, līdz sasniedzat mērķa vērtību.
-9. Marķējiet spaini un pierakstiet, ko darījāt.
+1. Uzlieciet respiratoru un, ja rokas nonāks glazūrā, gumijas cimdus. Zakins valkā masku no svēršanas sākuma, līdz glazūra ir samitrināta.
+2. Iemēriet spainī apmēram 70–80 mL ūdens uz 100 g pulvera.
+3. Saudzīgi, no neliela augstuma, pievienojiet nosvērto pulveri. UT Austin ber pulveri siltā ūdenī; Zakins un Au lej ūdeni pulverī. Iesakām bērt pulveri ūdenī, jo tā paceļas mazāk putekļu, izņemot recepti ar daudz bentonīta: tās sausos pulverus vispirms samaisiet savā starpā.
+4. **Ļaujiet izmirkt**{{en: slake}}: ļaujiet pulverim uzsūkt ūdeni, nemaisot. Digitalfire gaida apmēram 20 minūtes. Pulveriem ar līmvielu vai saistvielu jāstāv pa nakti.
+5. Maisiet, līdz nav palikušu sausu vietu vai kunkuļu.
+6. Izkāsiet divreiz (skatiet zemāk).
+7. Pārklājiet un ļaujiet nostāvēt pa nakti, tad samaisiet vēlreiz un pārbaudiet, vai dibenā nav sacietējis slānis.
+8. Izmēriet relatīvo blīvumu un pamazām pievienojiet ūdeni, lai sasniegtu vēlamo. Lai uzzinātu savas glazūras sausā pulvera relatīvo blīvumu, nosveriet arī gatavo glazūras suspensiju (skatiet zemāk).
+9. Uzlīmējiet spainim etiķeti un pierakstiet, ko darījāt.
 10. Uzkopiet mitri: izmazgājiet grīdu un noslaukiet visas virsmas, arī izejvielu trauku ārpusi.
 
 ### Izkāšana
 
-**Siets** ir rāmī nostiprināts smalks tīkls. Spiežot glazūru caur to ar otu, sadalās kunkuļi, kas paliek pēc maisīšanas, un siets aiztur daļiņas, kas pēc apdedzināšanas būtu redzamas kā tumši punktiņi. Jo lielāks **mesh** skaitlis, jo smalkāks siets: 80 mesh sietam atveres ir apmēram 0,18 mm, bet 100 mesh sietam – apmēram 0,15 mm.
+**Siets**{{en: sieve}} ir rāmī iestiprināts tīkls. Spiežot glazūru caur to ar otu, tiek sadalīti kunkuļi, kas paliek pēc maisīšanas, un aizturētas daļiņas, kas pēc apdedzināšanas parādītos kā punktiņi. Jo lielāks **mesh** numurs, jo smalkāks tīkls: 80 mesh atveres ir apmēram 0,18 mm, 100 mesh – apmēram 0,15 mm.
 
-Avoti iesaka dažādus sietus. Zakins izkāš divreiz caur 50 vai 80 mesh sietu. Dereks Au lielākajai daļai glazūru izmanto 120 mesh, īpaši tām, kurās ir kobalts vai dzelzs: vienā seladona glazūrā pēc trīs izkāšanām caur 80 mesh joprojām palika dzelzs punktiņi, bet viena izkāšana caur 120 mesh tos novērsa. 60–80 mesh viņš izmanto pelnu glazūrām un citām glazūrām ar rupjām izejvielām. Potterycrafts Apvienotajā Karalistē iesaka 60–80 mesh. Droša pamata izvēle:
+Avoti iesaka dažādus sietus. Zakins izkāš divreiz caur 50 vai 80 mesh. Dereks Au lielākajai daļai glazūru izmanto 120 mesh, īpaši tām, kurās ir kobalts vai dzelzs: vienā seladonā pēc trim reizēm caur 80 mesh joprojām palika dzelzs punktiņi, un viena reize caur 120 mesh tos novērsa. 60–80 mesh viņš patur pelnu glazūrām un citām ar rupjām izejvielām. Potterycrafts Apvienotajā Karalistē iesaka 60–80 mesh. Droša izvēle:
 
-Table: Kādu sietu izmantot
+Table: Kuru sietu izmantot
 Label: Sieta mesh
 
-| Glazūra                                                               | Siets                        |
-| --------------------------------------------------------------------- | ---------------------------- |
-| Lielākā daļa glazūru                                                  | Divas izkāšanas caur 80 mesh |
-| Glazūras ar krāsvielām{{en: colorants}}, piemēram, kobaltu vai dzelzi | 100–120 mesh                 |
-| Pelnu glazūras un citas glazūras ar rupjām izejvielām                 | 60–80 mesh                   |
+| Glazūra                                              | Siets                |
+| ---------------------------------------------------- | -------------------- |
+| Lielākā daļa glazūru                                 | Divreiz caur 80 mesh |
+| Glazūras ar krāsvielām, piemēram, kobaltu vai dzelzi | 100–120 mesh         |
+| Pelnu glazūras un citas ar rupjām izejvielām         | 60–80 mesh           |
 
 ## Relatīvais blīvums {#specific-gravity}
 
-**Relatīvais blīvums**{{en: specific gravity, SG}} (rel. blīvums) parāda, cik daudz pulvera ir jūsu glazūras suspensijā{{en: slurry}}. Tas ir noteikta glazūras{{en: glaze}} tilpuma svars, dalīts ar tāda paša ūdens tilpuma svaru. Ūdenim tas ir 1,00, un glazūra, kuras rādījums ir {{SG 1.45}}, sver 145 g uz 100 mL. Sajaucot līdz izmērītam relatīvajam blīvumam, jūs katru reizi iegūstat tādu pašu biezumu un tādu pašu glazūras kārtu. Tam nav mērvienības, tāpēc tas ir vienāds gan gramos, gan uncēs.
+**Relatīvais blīvums**{{en: specific gravity}} (rel. blīvums) parāda, cik daudz pulvera ir jūsu glazūras suspensijā. Tā ir glazūras tilpuma masa, dalīta ar tāda paša ūdens tilpuma masu. Ūdenim tas ir 1,00, un glazūra, kuras rādījums ir {{SG 1.45}}, sver 145 g uz 100 mL. Jaucot līdz izmērītam relatīvajam blīvumam, katru reizi iegūstat vienādu biezumu un vienādu kārtu. Tam nav mērvienības, tāpēc tas ir vienāds gan gramos, gan uncēs.
 
 ### Mērīšana, nosverot 100 mL
 
 1. Samaisiet glazūru, lai nekas nebūtu nosēdies.
-2. Novietojiet uz svariem 100 mL **mērcilindru** (augstu mērtrauku ar iedaļām) vai 100 mL šļirci un notarējiet svarus.
-3. Piepildiet to ar glazūru tieši līdz 100 mL atzīmei, nolasot atzīmi acu augstumā.
-4. Nosveriet un gramus daliet ar 100: 145 g nozīmē rel. blīvumu 1,45.
+2. Novietojiet uz svariem 100 mL **mērcilindru**{{en: graduated cylinder}} (augstu mērtrauku ar iedaļām) vai 100 mL šļirci un tarējiet svarus.
+3. Piepildiet to ar glazūru tieši līdz 100 mL, nolasot atzīmi acu augstumā.
+4. Nosveriet un daliet gramus ar 100: 145 g ir rel. blīvums 1,45.
 
-Digitalfire arī atzīmē uz krūzes 500 g ūdens līmeni, piepilda krūzi līdz atzīmei ar glazūru un svaru dala ar 500. Lielāks, pilnāks mērtrauks ir precīzāks. **Areometrs** – pludiņš, kura rādījumu nolasa tur, kur tas iegrimst glazūrā, – ir ātrs, bet bieza vai sabiezējusi glazūra var dot kļūdainu rādījumu. Britu areometri, piemēram, tie, ko pārdod Potclays, rāda Bomē grādos (°Bé). Pēc mūsu aprēķina rel. blīvums = 145 ÷ (145 − °Bé), tātad 46 °Bé atbilst apmēram 1,46. Vecākās britu grāmatās norādīts **pintes svars** – cik unču sver britu pinte glazūras: daliet to ar 20, tātad 29 oz atbilst apmēram rel. blīvumam 1,45 (arī mūsu aprēķins).
+Digitalfire arī atzīmē uz krūzes 500 g ūdens līmeni, piepilda to līdz atzīmei ar glazūru un dala masu ar 500; lielāks, pilnāks mērtrauks ir precīzāks. **Areometrs**{{en: hydrometer}} – pludiņš, ko nolasa pēc tā, cik dziļi tas iegrimst glazūrā, – ir ātrs, bet biezās vai sabiezējušās glazūrās var rādīt nepareizi. Apvienotās Karalistes areometri, piemēram, Potclays, rāda Bomē grādos (°Bé). Pēc mūsu aprēķina rel. blīvums = 145 ÷ (145 − °Bé), tātad 46 °Bé ir apmēram 1,46. Vecākās britu grāmatās dots **pintes svars**{{en: pint weight}} – glazūras unces britu pintē: daliet to ar 20, tātad 29 oz ir apmēram rel. blīvums 1,45 (arī mūsu aprēķins).
 
-### Mērķa vērtības
+### Uz ko tiekties
 
-Avoti nav vienisprātis, visvairāk par uzklāšanu ar otu un uzsmidzināšanu, kur britu piegādātājs Potclays norāda daudz augstākas vērtības (pēc paša teiktā, “tikai orientējošas”). Uzskatiet katru skaitli par sākumpunktu. Digitalfire galvenais ieteikums ir atrast katrai glazūrai piemērotu relatīvo blīvumu un sabiezēšanas pakāpi, tad tos atkārtot un pierakstīt.
+Avoti nav vienisprātis, visvairāk par uzklāšanu ar otu un uzsmidzināšanu, kur Apvienotās Karalistes piegādātājs Potclays dod daudz augstākus skaitļus (tā paša skaitļi ir “tikai orientējoši”). Uzskatiet katru skaitli par sākumpunktu. Digitalfire galvenais padoms ir atrast katrai glazūrai piemērotu relatīvo blīvumu un sabiezējumu, tad tos atkārtot un pierakstīt.
 
-Table: Relatīvā blīvuma mērķa vērtības, kur avoti nav vienisprātis
-Label: Relatīvā blīvuma mērķa vērtības
+Table: Vēlamais relatīvais blīvums, kur avoti atšķiras
+Label: Vēlamais relatīvais blīvums
 
-| Lietojums        | Digitalfire un Glazy                                                                                                                                                                  | Potclays (Apvienotā Karaliste)                       | Drošs sākumpunkts                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------- |
-| Iemērkšana       | No {{SG 1.40}} (5 sekunžu iemērkšanai) līdz {{SG 1.50}} (1 sekundes iemērkšanai); mājās sajauktām sabiezinātām glazūrām vislabāk der {{SG 1.43–1.45}}                                 | Caurspīdīgai {{SG 1.46–1.48}}; krāsainai {{SG 1.61}} | {{SG 1.45}}; ja glazūra pil, atšķaidiet līdz {{SG 1.43}} un sabieziniet |
-| Uzklāšana ar otu | No {{SG 1.25}} (plāna caurspīdīga glazūra) līdz {{SG 1.55}} (tumšas detaļas)                                                                                                          | {{SG 1.71–1.81}}                                     | Ievērojiet produkta norādījumus; lietojiet CMC vai otas mediju          |
-| Uzsmidzināšana   | Skaitlis nav dots; Hopers (Hopper), rakstot vietnei Ceramic Arts Network, iesaka daudz šķidrāku glazūru ar deflokulantu{{en: deflocculant}} (piedevu, kas padara suspensiju šķidrāku) | {{SG 1.71}}                                          | Uzticama skaitļa nav; smidziniet tikai smidzināšanas kabīnē             |
+| Lietojums        | Digitalfire un Glazy                                                                                                                         | Potclays (Apvienotā Karaliste)                       | Drošs sākumpunkts                                               |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| Iemērkšana       | {{SG 1.40}} (5 sekunžu iemērkšanai) līdz {{SG 1.50}} (1 sekundes iemērkšanai); mājās jauktām sabiezējušām glazūrām vislabāk {{SG 1.43–1.45}} | Caurspīdīgām {{SG 1.46–1.48}}; krāsainām {{SG 1.61}} | {{SG 1.45}}; ja tek, atšķaidiet līdz {{SG 1.43}} un sabiezējiet |
+| Uzklāšana ar otu | {{SG 1.25}} (plāna caurspīdīga) līdz {{SG 1.55}} (tumšas detaļas)                                                                            | {{SG 1.71–1.81}}                                     | Ievērojiet produkta norādījumus; lietojiet CMC vai otas mediju  |
+| Uzsmidzināšana   | Skaitļa nav; Hopers, rakstot Ceramic Arts Network, iesaka daudz šķidrāku, ar deflokulantu (piedevu, kas padara suspensiju šķidrāku)          | {{SG 1.71}}                                          | Uzticama skaitļa nav; smidziniet tikai smidzināšanas kabīnē     |
 
-Lai iemērkšanas glazūru pārbaudītu ar aci, AMACO iemērc uz 5 sekundēm un skatās, vai kārta ir apmēram tik bieza kā ASV desmit centu monēta (dime). Digitalfire pārbaudei apdedzina proves{{en: test tiles}}, kas iemērktas uz 5 sekundēm.
+Lai iemērkšanai paredzētu glazūru pārbaudītu ar aci, AMACO iemērc uz 5 sekundēm un meklē kārtu, kas ir apmēram ASV desmit centu monētas biezumā. Digitalfire pārbaudei apdedzina plāksnītes, kas iemērktas uz 5 sekundēm.
 
-### Ūdens daudzums mērķa relatīvajam blīvumam: mūsu aplēse
+### Ūdens vēlamajam relatīvajam blīvumam: mūsu aplēse
 
-Zemāk dotā tabula ir mūsu pašu aprēķins, nevis kāda avota dati. Tajā pieņemts, ka pulvera daļiņu blīvums ir 2,6 g uz cm³, un tas ir pieņēmums, nevis mērījums. Māls, šķīstošas izejvielas un sabiezēšana – tas viss maina īstu glazūru, tāpēc izmantojiet tabulu sākumam un pēc tam mēriet. Pārbaudei: vienādam pulvera un ūdens svaram tā paredz rādījumu {{SG 1.44}}, kas ir tuvu Digitalfire izmērītajam rādījumam {{SG 1.46}}. Tā arī parāda, ka ar 70–80 mL uz 100 g jūs sākat virs rādījuma {{SG 1.50}}, tātad biezāk, nekā vajag.
+Zemāk dotā tabula ir mūsu pašu aprēķins, nevis kāda avota. Tā pieņem, ka pulvera daļiņu blīvums ir 2,6 g/cm³, un tas ir pieņēmums, nevis mērījums. Māls, šķīstošas izejvielas un sabiezēšana īstu glazūru maina, tāpēc izmantojiet to sākumam, tad mēriet. Kā pārbaude: vienādām pulvera un ūdens masām tā paredz {{SG 1.44}}, tuvu Digitalfire izmērītajam {{SG 1.46}}. Tā arī parāda, ka ar 70–80 mL uz 100 g sākat virs {{SG 1.50}}, biezāk, nekā vajag.
 
-Table: Ūdens daudzums mērķa relatīvajam blīvumam (mūsu aplēse)
-Label: Ūdens daudzums mērķa relatīvajam blīvumam
+Table: Ūdens vēlamajam relatīvajam blīvumam (mūsu aplēse)
+Label: Ūdens vēlamajam relatīvajam blīvumam
 
-| Mērķis      | Uz 100 g pulvera |    Uz kilogramu |           Uz mārciņu |
-| ----------- | ---------------: | --------------: | -------------------: |
-| {{SG 1.40}} |   apmēram 115 mL | apmēram 1150 mL | apmēram 18 ASV fl oz |
-| {{SG 1.45}} |    apmēram 98 mL |  apmēram 980 mL | apmēram 15 ASV fl oz |
-| {{SG 1.50}} |    apmēram 85 mL |  apmēram 850 mL | apmēram 13 ASV fl oz |
-| {{SG 1.60}} |    apmēram 64 mL |  apmēram 640 mL | apmēram 10 ASV fl oz |
+| Mērķis      | Uz 100 g pulvera |    Uz kilogramu |                    Uz mārciņu |
+| ----------- | ---------------: | --------------: | ----------------------------: |
+| {{SG 1.40}} |   apmēram 115 mL | apmēram 1150 mL | apmēram 18 ASV šķidruma unces |
+| {{SG 1.45}} |    apmēram 98 mL |  apmēram 980 mL | apmēram 15 ASV šķidruma unces |
+| {{SG 1.50}} |    apmēram 85 mL |  apmēram 850 mL | apmēram 13 ASV šķidruma unces |
+| {{SG 1.60}} |    apmēram 64 mL |  apmēram 640 mL | apmēram 10 ASV šķidruma unces |
+
+### Savas glazūras sausā relatīvā blīvuma noteikšana jaukšanas laikā
+
+Iepriekš minētais 2,6 ir minējums. Jūsu glazūras skaitli – tās sausā pulvera blīvumu – var aprēķināt no trim skaitļiem, ko varat iegūt jaukšanas laikā. Ar to vēlāk no relatīvā blīvuma varat aprēķināt, cik pulvera ir jebkurā šīs glazūras spainī, un ūdeni nākamajai porcijai. Mūsu aprēķins, nevis kāda avota:
+
+1. Pierakstiet sausā pulvera masu porcijā: receptes kopsummu.
+2. Pirms sākat, nosveriet tukšo spaini vai atzīmējiet uz tā tā masu.
+3. Samaisiet, izkāsiet un panāciet glazūras relatīvo blīvumu kā parasti. Izspiediet visu caur sietu un noskalojiet to spainī, lai neviens pulveris nepaliktu ārpusē.
+4. Nosveriet pilno spaini un atņemiet spaiņa masu. Tā ir suspensijas masa.
+5. Izmēriet relatīvo blīvumu.
+
+Tad:
+
+- **Ūdens** = suspensijas masa − pulvera masa.
+- **Suspensijas tilpums** mL = suspensijas masa gramos ÷ rel. blīvums.
+- **Pulvera tilpums** = suspensijas tilpums − ūdens (1 g ūdens ir 1 mL).
+- **Sausais rel. blīvums** = pulvera masa ÷ pulvera tilpums.
+
+Piemēram: no 1000 g pulvera iegūst 1980 g suspensijas, kuras rādījums ir {{SG 1.45}}. Ūdens ir 980 g, suspensija ir 1980 ÷ 1,45 = apmēram 1366 mL, pulveris aizņem 1366 − 980 = 386 mL, un sausais rel. blīvums ir 1000 ÷ 386 = apmēram 2,59.
+
+Nosveriet visu suspensiju beigās, nevis ūdeni, to lejot, lai neskaitītos ūdens, kas iztvaiko vai izšļakstās. Nelielas kļūdas šeit pieaug: ja rel. blīvuma rādījums atšķiras par 0,01, rezultāts mainās par apmēram 2–4%, šķidrākai glazūrai vairāk. Izmantojiet vismaz 1 kg lielu porciju, precīzus svarus un iepriekš aprakstīto 500 g krūzes metodi relatīvajam blīvumam. Lielākajai daļai parasto izejvielu tas ir apmēram 2,5–2,9, tāpēc skaitlis, kas ir tālu ārpus šīm robežām, glazūrā bez liela cirkona vai svina daudzuma, visticamāk, nozīmē mērīšanas kļūdu. Pierakstiet skaitli pie receptes.
 
 ### Epsoma sāls, CMC un bentonīts
 
-**Epsoma sāls** liek glazūrai nedaudz sabiezēt, kad tā stāv mierā, un atkal plūst, kad to samaisa. To sauc par glazūras **flokulēšanu**{{en: flocculating}}, un glazūra, kas šādi uzvedas, ir **tiksotropa**{{en: thixotropic}}: tā uzklājas vienmērīgāk, mazāk pil un mazāk nosēžas. Digitalfire iesaka, kad relatīvais blīvums ir pareizs, sākt ar apmēram 2 g uz galonu (aptuveni 0,5 g uz litru, mūsu pārrēķins) un daudzumu pielāgot katru reizi, kad jaucat, jo devu nevajadzētu noteikt receptē. Iesakām to vispirms izšķīdināt nelielā daudzumā karsta ūdens. Kādā Digitalfire piemērā glazūra, kuras rādījums bija {{SG 1.45}}, pilēja, tāpēc ar ūdeni to atšķaidīja līdz {{SG 1.43}}, bet Epsoma sāls to atkal sabiezināja līdz krēmīgai konsistencei, un tā uzklājās vienmērīgi. Aptuvena pārbaude: samaisiet, apstājieties un vērojiet. Sabiezējusi glazūra vēl apmēram 2 vai 3 sekundes turpina kustēties, tad apstājas un nedaudz atvirzās atpakaļ.
+**Epsoma sāls**{{en: Epsom salts}} liek glazūrai nedaudz sabiezēt, kad tā stāv, un atkal plūst, kad to maisa. To sauc par **flokulēšanu**{{en: flocculating}}, un glazūra, kas tā uzvedas, ir **tiksotropa**{{en: thixotropic}}: tā uzklājas vienmērīgāk, mazāk tek un mazāk nosēžas. Digitalfire iesaka sākt ar apmēram 2 g uz galonu, kad relatīvais blīvums ir pareizs (aptuveni 0,5 g uz litru, mūsu pārrēķins), un katru reizi, jaucot, daudzumu pielāgot, jo neviena recepte nevar noteikt devu. Iesakām to vispirms izšķīdināt nelielā daudzumā karsta ūdens. Kādā Digitalfire piemērā glazūra, kuras rādījums bija {{SG 1.45}}, tecēja, tāpēc ar ūdeni to atšķaidīja līdz {{SG 1.43}}, un Epsoma sāls to atkal sabiezēja līdz krēmīgai konsistencei, un tā uzklājās vienmērīgi. Aptuvena pārbaude: samaisiet, apstājieties un vērojiet. Sabiezējusi glazūra vēl apmēram 2 vai 3 sekundes kustas, tad apstājas un nedaudz atsperas atpakaļ.
 
-**CMC** (karboksimetilceluloze) padara glazūras suspensiju lipīgāku un lēnāk žūstošu un atstāj cietāku kārtu, kas labi turas uz izstrādājuma. Vislielākā nozīme tai ir glazūrām uzklāšanai ar otu un glazūrām ar daudz frites{{en: frit}}. Digitalfire piemērā 3,75 g iejauc 1000 g suspensijas, un CMC jāiejauc ar blenderi. Glazūra ar CMC ar Epsoma sāli nesabiezē, un, tā kā mikrobi barojas ar šo saistvielu, glazūra spainī var mainīties un sākt smirdēt.
+**CMC**{{en: CMC gum}} (karboksimetilceluloze) padara suspensiju lipīgāku un lēnāk žūstošu un atstāj cietāku kārtu, kas turas pie izstrādājuma. Tā ir vissvarīgākā glazūrām uzklāšanai ar otu un glazūrām ar daudz frites. Digitalfire piemērā 1000 g suspensijas iejauc 3,75 g, un tas jādara ar blenderi. Glazūra ar CMC nesabiezē ar Epsoma sāli, un, tā kā mikrobi barojas ar šo saistvielu, tā spainī var mainīties un sākt smirdēt.
 
-**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai, kurā ir vairāk nekā 15% māla, nevajadzētu būt vajadzīgs vairāk bentonīta par 1% no sausās glazūras masas.
+**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Glazūras iemērkšanai šim nolūkam parasti paļaujas uz 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai ar vairāk nekā 15% māla nevajadzētu vairāk bentonīta par 1% no sausās glazūras masas.
 
-## Proves un provju rindas {#testing}
+## Provju plāksnītes un provju rindas {#testing}
 
-### Izmēģinājumi nelielā apjomā
+### Sāciet ar mazumu
 
-Dereks Au palielina daudzumu trīs soļos: 50 vai 100 g izmēģinājums, tad, ja tas izdodas, 1–2 kg izmēģinājuma porcija, un pēc tam 5–10 kg darbnīcas porcija. Pēc mūsu aplēses 100 g izmēģinājums ar rādījumu {{SG 1.45}} dod apmēram 135 mL (apmēram 4½ ASV fl oz) glazūras suspensijas{{en: slurry}}, ar ko pietiek, lai šaurā krūzē iemērktu dažas mazas proves{{en: test tiles}}.
+Dereks Au strādā trīs soļos: 50 vai 100 g izmēģinājums, ja tas izdodas, 1–2 kg mēģinājuma porcija, tad 5–10 kg darbnīcas porcija. Pēc mūsu aplēses 100 g izmēģinājums, kura rādījums ir {{SG 1.45}}, dod apmēram 135 mL (apmēram 4½ ASV šķidruma unces) suspensijas, ar ko pietiek, lai šaurā krūzē iemērktu dažas nelielas plāksnītes.
 
-### Izmēģināšana uz sava māla
+### Izmēģiniet uz sava māla
 
-Glazūra{{en: glaze}} uz cita māla vai citā krāsnī var izskatīties pavisam citāda: Clay Art Center katru savu pārveidoto glazūru izmēģināja uz četrām masām{{en: clay bodies}}, apdedzinot līdz konusam{{en: cone}} 6 un līdz konusam 10. Potclays ceļvedis iesācējiem par glazūru izmēģināšanu iesaka:
+Uz cita māla vai citā krāsnī glazūra var izskatīties pavisam citāda: Clay Art Center katru savu pārveidoto glazūru izmēģināja uz četrām masām, apdedzinot līdz konusam 6 un līdz konusam 10. Potclays iesācēju ceļvedis glazūru izmēģināšanai iesaka:
 
-- 6–10 **provju plāksnītes** (nelielus gabalus glazūras izmēģināšanai) no tā māla, kuru tiešām izmantosiet, atzīmējot, vai tās ir biskvitētas{{en: bisqued}} vai pilnīgi izžuvušas
-- vienu izmaiņu vienlaikus
+- 6–10 **provju plāksnītes**{{en: test tiles}} (nelielus gabaliņus glazūras izmēģināšanai) no tā māla, ko patiešām izmantosiet, atzīmējot, vai tās ir biskvitētas vai pilnīgi izžuvušas
+- vienu izmaiņu vienā reizē
 - vienu iemērkšanu un divkāršu iemērkšanu, lai redzētu glazūru plānā un biezā kārtā
-- visas proves vienā apdedzināšanā
-- pirms apdedzināšanas atzīmi uz katras proves ar zīmogu, iegriezumu vai zemglazūras zīmuli.
+- visas plāksnītes vienā krāsns piekrāvumā
+- zīmi uz katras plāksnītes pirms apdedzināšanas, ar zīmogu, iegriezumu vai zemglazūras zīmuli. Apdedzinātas plāksnītes izskatās līdzīgas, un pirms apdedzināšanas izdarīta zīme saglabājas arī pēc krāsns, tāpēc vienmēr varat noteikt, kurai receptei pieder katra plāksnīte.
 
-Iesakām stāvus stāvošas proves (plakana prove neparāda, cik tālu glazūra notek) ar reljefu joslu, kas parāda, kā glazūra mainās uz malām, kur tā ir plānāka, un ar neglazētu pamatni. Novietojiet katru uz neliela šķīvīša, biskvīta lauskas vai plaukta, kas pārklāts ar atdalīšanas līdzekli, lai savāktu notecējumus. Blakus provēm novietojiet **kontrolkonusu**{{en: witness cone}} – mazu keramikas konusu, kas saliecas, kad saņēmis pietiekami daudz siltuma, – lai tas parādītu, cik daudz siltuma proves saņēmušas. Konusi izskaidroti ceļvedī [Apdedzināšana vienkāršā krāsnī](/guides/firing). Katrai provei piešķiriet īsu kodu un pierakstos ierakstiet to pie receptes. Villerss (Willers), rakstot vietnei Ceramic Arts Network, izmanto ciparus un burtus, un pašu sistēmu pieraksta burtnīcas sākumā.
+Iesakām plāksnītes, kas stāv vertikāli, jo plakana plāksnīte noslēpj, cik tālu glazūra notek, ar reljefu joslu, lai redzētu, kā glazūra mainās uz malām, un ar neglazētu pamatni. Novietojiet katru uz nelielas apakštasītes vai biskvīta lauskas vai uz plaukta, pārklāta ar atdalīšanas līdzekli, lai savāktu pilienus. Blakus plāksnītēm novietojiet **kontrolkonusu**{{en: witness cone}} – nelielu keramikas konusu, kas saliecas, kad saņēmis pietiekami daudz siltuma, – lai redzētu, ko tās saņēma; ceļvedī [Apdedzināšana vienkāršā krāsnī](/guides/firing) skaidroti konusi. Piešķiriet katrai plāksnītei īsu kodu un pierakstiet to pie receptes savos pierakstos. Villerss (Willers), rakstot Ceramic Arts Network, izmanto ciparus un burtus un pašu sistēmu pieraksta burtnīcas sākumā.
 
 ### Provju rindas
 
-**Provju rinda**{{en: line blend}} ir izmēģinājumu virkne, kas vienmērīgiem soļiem pāriet no viena maisījuma uz citu: no vienas glazūras uz otru vai no pamatglazūras uz to pašu glazūru ar vairāk krāsvielas{{en: colorant}}. Dereks Au, piemēram, caurspīdīgā pamatglazūrā dzelzs oksīda daudzumu palielina ar 1% soli. Tilpuma metode, ko saista ar Īana Karija (Ian Currie) vārdu, ietaupa laiku, jo jāsajauc tikai abi galējie maisījumi:
+**Provju rinda**{{en: line blend}} ir izmēģinājumu rinda, kas vienmērīgi pāriet no viena maisījuma uz citu: no vienas glazūras uz otru vai no pamatglazūras uz to pašu glazūru ar vairāk krāsvielas. Dereks Au, piemēram, maina dzelzs oksīda daudzumu caurspīdīgā pamatglazūrā ar 1% soli. Tilpuma metode, ko saista ar Īanu Kariju (Ian Currie), ietaupa laiku, jo jāsajauc tikai abi gali:
 
-1. Sajauciet abas galējās glazūras, A un B, vienāda lieluma porcijās un izkāsiet abas.
-2. Tai, kurai ir mazāks tilpums, pielejiet ūdeni, līdz abām ir tieši vienāds mitrais tilpums.
-3. Samaisiet abas, tad ar šļirci nomēriet katru maisījumu savā numurētā krūzītē.
-4. Samaisiet katras krūzītes saturu un iemērciet tajā provi.
+1. Sajauciet abas gala glazūras, A un B, vienāda lieluma porcijās un izkāsiet abas.
+2. Pievienojiet ūdeni tai, kurai tilpums ir mazāks, līdz abām ir tieši vienāds šķidrais tilpums.
+3. Samaisiet abas, tad ar šļirci ievelciet katru maisījumu savā numurētā krūzē.
+4. Samaisiet katru krūzi un iemērciet plāksnīti.
 
-Mūsu aprēķinātajā piemērā A ir 100 g caurspīdīgas pamatglazūras, bet B – tā pati glazūra ar pievienotiem 4 g sarkanā dzelzs oksīda (4% piedeva). Katrā B mililitrā ir tāda pati pamatglazūras daļa kā A mililitrā, un vēl dzelzs, tāpēc krūzītēs dzelzs daudzums pieaug no nulles līdz 4% ar 1% soli. Katrs galējais maisījums rindai dod 100 mL, un pēc mūsu aplēses ar 100 g porciju tam pietiek.
+Mūsu izstrādātajā piemērā A ir 100 g caurspīdīgas pamatglazūras, bet B – tā pati ar 4 g pievienota sarkanā dzelzs oksīda (4% piedeva). Katrā B mililitrā ir tikpat daudz pamatglazūras kā A mililitrā, plus tā dzelzs, tāpēc krūzes pāriet no 0 dzelzs līdz 4% ar 1% soli. Katrs gals provju rindai dod 100 mL, ko pēc mūsu aplēses nodrošina 100 g porcija.
 
-Table: Piecu soļu dzelzs provju rinda, 40 mL katrā krūzītē (mūsu aprēķinātais piemērs)
+Table: Piecu soļu dzelzs provju rinda, 40 mL katrā krūzē (mūsu izstrādātais piemērs)
 Label: Provju rindas piemērs
 
-| Krūzīte | Caurspīdīgā pamatglazūra (A) | Pamatglazūra ar 4% dzelzs (B) | Dzelzs oksīds, % no pamatglazūras |
-| ------- | ---------------------------: | ----------------------------: | --------------------------------: |
-| 1       |                        40 mL |                          0 mL |                                 0 |
-| 2       |                        30 mL |                         10 mL |                                 1 |
-| 3       |                        20 mL |                         20 mL |                                 2 |
-| 4       |                        10 mL |                         30 mL |                                 3 |
-| 5       |                         0 mL |                         40 mL |                                 4 |
+| Krūze | Caurspīdīga pamatglazūra (A) | Pamatglazūra ar 4% dzelzs (B) | Dzelzs oksīds, % no pamatglazūras |
+| ----- | ---------------------------: | ----------------------------: | --------------------------------: |
+| 1     |                        40 mL |                          0 mL |                                 0 |
+| 2     |                        30 mL |                         10 mL |                                 1 |
+| 3     |                        20 mL |                         20 mL |                                 2 |
+| 4     |                        10 mL |                         30 mL |                                 3 |
+| 5     |                         0 mL |                         40 mL |                                 4 |
 
-Metodei vajag rūpīgus aprēķinus, labi samaisītus galējos maisījumus, kuru relatīvais blīvums ir vienāds, un precīzus svarus. Dereks Au jauc arī pēc svara, nevis pēc tilpuma. **Trīsstūra provju sērija** dara to pašu ar trim galējiem maisījumiem, kas izkārtoti trīsstūra virsotnēs.
+Metodei vajag rūpīgus aprēķinus, labi samaisītus galus ar vienādu relatīvo blīvumu un precīzus svarus. Dereks Au jauc arī pēc masas, nevis pēc tilpuma. **Trīsstūra provju sērija**{{en: triaxial blend}} dara to pašu ar trim galiem, kas izvietoti trīsstūrī.
 
 > [!NOTE]
-> Kad kāds solis izskatās daudzsološs, poga **Saglabāt kā kopiju** [receptes lapā](/recipe) saglabā to kā atsevišķu recepti, bet oriģinālu atstāj tādu, kāds tas bija.
+> Ja kāds solis izskatās daudzsološs, poga **Saglabāt kā kopiju** [receptes lapā](/recipe) saglabā to kā atsevišķu recepti un atstāj oriģinālu nemainītu.
 
-## Pieraksti {#records}
+## Pierakstu veikšana {#records}
 
-Villerss mērķi formulē labi: “pietiekami daudz informācijas, lai varētu atkārtot iegūtos rezultātus vai no tiem izvairīties”. Pierakstiet, ko plānojat izmēģināt, pirms sākat, un rezultātus, kad izkraujat krāsni. Potclays sarakstam pievieno uzklāšanas veidu, biezumu, masu{{en: clay body}} un visu apdedzināšanu, ieskaitot rampas{{en: ramps}}, noturēšanu{{en: holds}} un dzesēšanu. **Rampa** ir sildīšanas vai dzesēšanas ātrums, piemēram, {{60 °C; 108 °F}} stundā, bet **noturēšana** uztur krāsnī vienu temperatūru noteiktu laiku. Pierakstiet partijas numurus, izmantoto ūdeni un jebkuru aizstāšanu: kad Clay Art Center nomainīja laukšpatu{{en: feldspar}}, apmēram puse tā glazūru{{en: glazes}} bija jākoriģē.
+Villerss mērķi formulē labi: “pietiekami daudz informācijas, lai varētu atkārtot vai novērst atklātos rezultātus”. Pirms sākat, pierakstiet, ko plānojat izmēģināt, un rezultātus, kad izkraujat krāsni. Potclays piebilst: uzklāšanas veidu, biezumu, masu un visu apdedzināšanu, arī rampas, noturēšanas un dzesēšanu. **Rampa**{{en: ramp}} ir sildīšanas vai dzesēšanas ātrums, piemēram, {{60 °C; 108 °F}} stundā, un **noturēšana**{{en: hold}} notur krāsni vienā temperatūrā noteiktu laiku. Pierakstiet partijas numurus, izmantoto ūdeni un jebkuru aizstāšanu: Clay Art Center laukšpata nomaiņas dēļ bija jāpielāgo apmēram puse tā glazūru.
 
 Table: Ko pierakstīt par katru glazūras porciju (mūsu veidne)
 Label: Pierakstu veidne
 
-| Daļa          | Ko pierakstīt                                                                                                                                                                                                                                            |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recepte       | Recepte un tās versija; izejvielu zīmoli un partijas numuri; visas aizstāšanas                                                                                                                                                                           |
-| Jaukšana      | Datums; porcijas lielums; pievienotais ūdens un tā veids (krāna, reversās osmozes vai destilēts); relatīvais blīvums pēc sajaukšanas un galīgais relatīvais blīvums; Epsoma sāls, CMC un bentonīta pievienotais daudzums; sieta mesh un izkāšanu skaits  |
-| Uzklāšana     | Masa; biskvīta apdedzināšanas konuss; iemērkšana, uzklāšana ar otu vai apliešana; iemērkšanas laiks vai kārtu skaits; sausās kārtas biezums                                                                                                              |
-| Apdedzināšana | Krāsns un vieta uz plaukta; apdedzināšanas programma ar rampām, noturēšanu un dzesēšanu; atmosfēra (oksidējoša{{en: oxidation}} vai reducējoša{{en: reduction}}); ko parādīja kontrolkonuss{{en: witness cone}}, ne tikai tas, kas bija iestatīts krāsnī |
-| Rezultāts     | Virsma un krāsa; notecējumi, matplaisas{{en: crazing}} vai adatas dūrieni{{en: pinholes}}; priekšpuses, aizmugures un sāna fotogrāfijas; proves{{en: test tile}} kods                                                                                    |
+| Daļa          | Ko pierakstīt                                                                                                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recepte       | Recepte un tās versija; izejvielu zīmoli un partijas numuri; jebkura aizstāšana                                                                                                                                                                                                             |
+| Jaukšana      | Datums; porcijas lielums; pievienotais ūdens un tā veids (krāna, reversās osmozes vai destilēts); rel. blīvums pēc jaukšanas un galīgais rel. blīvums; gatavās suspensijas masa, tās sausajam rel. blīvumam; pievienotā Epsoma sāls, CMC un bentonīts; sieta mesh un izkāšanas reižu skaits |
+| Uzklāšana     | Masa; biskvīta konuss; iemērkšana, uzklāšana ar otu vai apliešana; iemērkšanas laiks vai kārtu skaits; sausās kārtas biezums                                                                                                                                                                |
+| Apdedzināšana | Krāsns un vieta uz plaukta; apdedzināšanas programma ar rampām, noturēšanām un dzesēšanu; atmosfēra (oksidējošā vai reducējošā); ko parādīja kontrolkonuss, ne tikai to, kas bija iestatīts krāsnij                                                                                         |
+| Rezultāts     | Virsma un krāsa; notecēšana, matplaisas vai adatas dūrieni; fotogrāfijas no priekšpuses, aizmugures un sāniem; plāksnītes kods                                                                                                                                                              |
 
 > [!NOTE]
-> Lietotnē Glazecalc saglabātā [recepte](/recipe) glabā pašu recepti. [Apdedzināšanas žurnāls](/firing) reģistrē katru apdedzināšanu: krāsni, datumu, laikus, temperatūras, konusus un piezīmes. [Piezīmēs](/notes) glabājas viss pārējais, piemēram, iepriekš aprakstītais porcijas pieraksts un tas, ko parādīja katra prove.
+> Lietotnē Glazecalc saglabātā [recepte](/recipe) satur pašu recepti. [Apdedzināšanas žurnāls](/firing) pieraksta katru apdedzināšanu: krāsni, datumu, laikus, temperatūras, konusus un piezīmes. [Piezīmēs](/notes) glabājas viss pārējais, piemēram, iepriekš dotais porcijas pieraksts un tas, ko parādīja katra plāksnīte.
 
 ## Avoti {#sources}
 

@@ -15,6 +15,8 @@ import recipe from '../../../lib/recipe/index.js';
 import languages from '../../../lib/regions/languages.js';
 import { guarded, languageArg, ok } from '../common.ts';
 import {
+  BRITT_GUIDE,
+  BRITT_RULE,
   CONE_SYSTEMS,
   GUIDE_IDS,
   guideMarkdown,
@@ -88,7 +90,8 @@ export const registerGuides = (server: McpServer): void => {
     {
       title: 'Search the guides',
       description:
-        "Searches Glazecalc's plain-language guides for potters (glazing from first principles, making a glaze, safe mixing, safety at home with children and pets, firing a kiln, and a companion to John Britt's free glaze course, in English only) in the language asked for, or in English where that language has no match. Returns each matching section's title, anchor, a short excerpt, its address on the website and its resource URI, which resources/read returns in full. Use it for glaze defects, safety, firing and terms, and cite the address.",
+        "Searches Glazecalc's plain-language guides for potters (glazing from first principles, making a glaze, safe mixing, safety at home with children and pets, firing a kiln, and a companion to John Britt's free glaze course, in English only) in the language asked for, or in English where that language has no match. Returns each matching section's title, anchor, a short excerpt, its address on the website and its resource URI, which resources/read returns in full. Use it for glaze defects, safety, firing and terms, and cite the address. " +
+        BRITT_RULE,
       inputSchema: z.object({
         query: z
           .string()
@@ -127,6 +130,7 @@ export const registerGuides = (server: McpServer): void => {
             heading: hit.heading,
             language: hit.language,
             excerpt: hit.excerpt,
+            ...(hit.guide === BRITT_GUIDE && { note: BRITT_RULE }),
             url: hit.url,
             resource: hit.resource
           }))

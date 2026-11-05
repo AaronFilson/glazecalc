@@ -724,7 +724,7 @@
     "keyBright": "Umugqa wamachashazi: lapho ama-glaze ka-Stull ayekhanya kakhulu khona.",
     "keyLimits": "Imigqa edeshiwe nemithunzi: amabanga e-silica ne-alumina eqoqo {name}.",
     "keyCrazed": "Imigqa ewelanayo: lapho aba ne-crazing khona.",
-    "note": "Umhlahlandlela, hhayi ukubikezela. U-R. T. Stull (Transactions of the American Ceramic Society, 1912) washisa ku-cone 11 ama-flux emisiwe ku-0.3 K₂O no-0.7 CaO; amanye ama-flux nokunye ukushisa kuhambisa izifunda, futhi i-glaze engacwebezeli engashiswanga ngokwanele ingabekwa njengekhanyayo. Izifunda zinjengoba i-Glazy izidweba."
+    "note": "Kungumhlahlandlela, hhayi isibikezelo. U-R. T. Stull (Transactions of the American Ceramic Society, 1912) washisa cishe ku-cone 11 ama-flux engaguquki ku-0.3 K₂O no-0.7 CaO; amanye ama-flux nokunye ukushisa kuhambisa izindawo, futhi i-glaze engacwebezeli (matte) ngoba nje ingashiswanga ngokwanele isengabonakala njengecwebezelayo eshadini. Izindawo zinjengoba i-Glazy izidweba."
   },
   "slurry": {
     "heading": "I-specific gravity namanzi",
@@ -752,7 +752,17 @@
       "pint": "Isisindo se-pint osifunayo, oz"
     },
     "drySg": "I-SG yokokwakha okomile",
-    "drySgHelp": "Cishe u-2.5 kuma-glaze amaningi; i-Glazy isebenzisa u-2.6.",
+    "drySgEmpty": "Izisindo ezomile kuphela ezidinga lokhu; amanzi okufaka awakudingi. Kuthayiphe uma ukwazi.",
+    "drySgNeeded": "Thayipha i-SG yokokwakha okomile ukuze ubone i-glaze eyomile esebhakedeni namanzi e-batch entsha.",
+    "estimate": {
+      "mineral": "Isilinganiso, {sg}, ngokwalokho okwenza okokwakha ngakunye: ukuminyana okukaliwe kwe-mineral yakho. Kuguqule uma wazi kangcono.",
+      "kind": "Isilinganiso, {sg}: ama-feldspar nobumba kunesisindo esicishe sibe ngu-2.6. Kuguqule uma wazi kangcono.",
+      "glass": "Isilinganiso, {sg}, esibalwe kuma-oxide ama-frit (ayingilazi). Kuguqule uma wazi kangcono.",
+      "mixed": "Isilinganiso, {sg}, esivela kokokwakha ngakunye: ukuminyana okukaliwe kwe-mineral yakho, cishe u-2.6 kuma-feldspar nobumba, nama-frit abalwe kuma-oxide awo. Kuguqule uma wazi kangcono.",
+      "leftOut": "Kushiywe ngaphandle, ngoba i-SG yakho ayaziwa: {names}.",
+      "none": "Asikho isilinganiso sale resiphi: i-SG ye-{names} ayaziwa. Kuthayiphe uma ukwazi.",
+      "was": "Inani lakho liyasetshenziswa. Isilinganiso besingu-{sg}; sula inkambu ukuze ubuyele kuso."
+    },
     "batch": "I-glaze eyomile ye-batch entsha, {unit}",
     "contents": "Ku-SG {sg}, ibhakede liphethe u-{glaze} we-glaze eyomile no-{water} wamanzi.",
     "add": "Ukuze ufinyelele ku-SG {target}, engeza u-{water} wamanzi. Igcina icishe ibe ngu-{volume}.",
@@ -760,6 +770,7 @@
     "already": "Isivele iku-SG {target}.",
     "mix": "Xuba u-{glaze} we-glaze eyomile no-{water} wamanzi ukuze uthole cishe u-{volume} ku-SG {target}.",
     "badSg": "I-SG kumele ibe ngaphezu kuka-1 (eyamanzi) futhi ibe ngaphansi kwe-{dry} yokokwakha okomile.",
+    "badSgWater": "I-SG kufanele ibe ngaphezu kuka-1 (eyamanzi).",
     "badDry": "I-SG yokokwakha okomile kumele ibe ngaphezu kuka-1.",
     "note": "Amanzi abalwa ngesisindo: ilitha linesisindo sekhilogremu, igaloni lase-US cishe lingu-8.3 lb. Ukubala kuthatha ukuthi amavolumu ayahlangana, okuseduze, hhayi okuqondile: engeza amanzi kancane kancane, uvuse, bese ulinganisa futhi. Ama-glaze amabili ku-SG efanayo asengageleza ngendlela ehlukile.",
     "saveTarget": "Londoloza i-SG {sg} njengokuhlosiwe kwale resiphi",

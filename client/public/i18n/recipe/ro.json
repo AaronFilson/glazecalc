@@ -724,7 +724,7 @@
     "keyBright": "Linie punctată: unde glazurile lui Stull erau cele mai lucioase.",
     "keyLimits": "Linii întrerupte și umbrire: intervalele de silice și alumină ale {name}.",
     "keyCrazed": "Hașură: unde s-au fisurat.",
-    "note": "Un ghid, nu o prezicere. R. T. Stull (Transactions of the American Ceramic Society, 1912) a ars la conul 11 cu fondanții fixați la 0,3 K₂O și 0,7 CaO; alți fondanți și alte arderi mută regiunile, iar un mat ars insuficient poate apărea ca lucios. Regiunile sunt așa cum le desenează Glazy."
+    "note": "Un ghid, nu o predicție. R. T. Stull (Transactions of the American Ceramic Society, 1912) a ars la aproximativ conul 11, cu fondanții ficși, 0,3 K₂O și 0,7 CaO; alți fondanți și alte arderi mută regiunile, iar o glazură mată doar pentru că a fost arsă insuficient poate apărea totuși în zona lucioasă. Regiunile sunt cele desenate de Glazy."
   },
   "slurry": {
     "heading": "Greutatea specifică și apa",
@@ -752,7 +752,17 @@
       "pint": "Greutatea pe pintă dorită, oz"
     },
     "drySg": "Greutatea specifică a materiilor prime uscate",
-    "drySgHelp": "Cam 2,5 pentru majoritatea glazurilor; Glazy folosește 2,6.",
+    "drySgEmpty": "Este necesară doar pentru masele uscate; apa de adăugat nu depinde de ea. Introduceți-o dacă o cunoașteți.",
+    "drySgNeeded": "Introduceți greutatea specifică a materiilor prime uscate ca să vedeți glazura uscată din găleată și apa pentru un amestec nou.",
+    "estimate": {
+      "mineral": "O estimare, {sg}, după ce conține fiecare materie primă: densitatea măsurată a mineralului ei. Modificați-o dacă știți mai bine.",
+      "kind": "O estimare, {sg}: feldspații și argilele au aproximativ 2,6. Modificați-o dacă știți mai bine.",
+      "glass": "O estimare, {sg}, calculată din oxizii fritelor (fritele sunt sticlă). Modificați-o dacă știți mai bine.",
+      "mixed": "O estimare, {sg}, din fiecare materie primă: densitatea măsurată a mineralului ei, aproximativ 2,6 pentru feldspați și argile, iar pentru frite, calculată din oxizii lor. Modificați-o dacă știți mai bine.",
+      "leftOut": "Lăsate deoparte, pentru că greutatea lor specifică nu se cunoaște: {names}.",
+      "none": "Nicio estimare pentru această rețetă: greutatea specifică pentru {names} nu se cunoaște. Introduceți-o dacă o cunoașteți.",
+      "was": "Se folosește valoarea dumneavoastră. Estimarea era {sg}; goliți câmpul ca să reveniți la ea."
+    },
     "batch": "Glazură uscată pentru un amestec nou, {unit}",
     "contents": "La greutatea specifică {sg}, găleata conține {glaze} de glazură uscată și {water} de apă.",
     "add": "Ca să ajungeți la greutatea specifică {target}, adăugați {water} de apă. Ajunge la aproximativ {volume}.",
@@ -760,6 +770,7 @@
     "already": "Este deja la greutatea specifică {target}.",
     "mix": "Amestecați {glaze} de glazură uscată cu {water} de apă pentru aproximativ {volume} la greutatea specifică {target}.",
     "badSg": "O greutate specifică trebuie să fie mai mare de 1 (cea a apei) și mai mică decât cea a materiilor prime uscate, {dry}.",
+    "badSgWater": "O greutate specifică trebuie să fie mai mare de 1 (cea a apei).",
     "badDry": "Greutatea specifică a materiilor prime uscate trebuie să fie mai mare de 1.",
     "note": "Apa se măsoară în greutate: un litru cântărește un kilogram, un galon american cam 8,3 lb. Calculul adună volumele, ceea ce este aproape, dar nu exact: adăugați apa puțin câte puțin, amestecați și măsurați din nou. Două glazuri cu aceeași greutate specifică pot totuși curge diferit.",
     "saveTarget": "Salvați greutatea specifică {sg} ca țintă a acestei rețete",

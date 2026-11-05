@@ -61,27 +61,29 @@ Khatarta ugu weyn ee rasaasta (Pb) way ka duwan tahay: ma aha hal qaaddo, ee waa
 
 ## Kaydinta walxaha guriga {#storing-materials}
 
-Ma jiro hay'ad rasmi ah oo dejisa xeerar lagu kaydiyo walxaha glaze guriga, laakiin bogagga caafimaadka iyo badbaadada way isku raacsan yihiin: shaqada ku hay meel u gaar ah, carruurta ka fog. Waaxda caafimaadka Pennsylvania, oo ka qoraysa hiwaayadaha rasaasta isticmaala, waxay leedahay "Hiwaayaddaada u isticmaal meel shaqo oo loo qoondeeyay ama garaash, carruurtana ka fogee meeshan."
+Ma jirto hay'ad rasmi ah oo dejisa xeerar kaydinta walxaha glaze-ka guriga, laakiin bogagga caafimaadka iyo badbaadada way isku raacsan yihiin: shaqada ku hay meel u gaar ah, carruurta ka fog. Waaxda caafimaadka Pennsylvania, oo ka qoraysa hiwaayadaha isticmaala rasaas (lead, Pb), waxay leedahay "Isticmaal meel shaqo oo loo qoondeeyey ama garaash hiwaayaddaada oo carruurta ka fogee meeshan."
 
 ### Liiska hubinta kaydinta
 
-Kuwani waa xeerar guud oo ka hortagga sunta ah oo glaze lagu dabaqay. Heerka dhoobo-samaynta midna ma dejiyo, laakiin dhammaantood waan kuu soo jeedinaynaa:
+Kuwani waa xeerar guud oo ka hortagga sunta ah oo lagu dabaqay glaze-ka. Ma jiro heer dhoobo-samayn oo dejiya, laakiin dhammaantood waan soo jeedinaynaa:
 
-- Walxaha engegan meel la quful ku hay: armaajo, ama qol, garaash ama aqal yar oo la quful karo. Khaanad sare way caawisaa, laakiin carruurtu way fuulaan. Haddii aad marka hore wax yar oo kaliya quful karto, ka bilow walxaha milma iyo midabeeyayaasha.
-- Walxaha ku hay kiishashkooda ama weelashooda asalka ah. Haddii aad mid weel kale u wareejiso, ku qor magaca sida saxda ah ee loogu qoray kiishka.
-- Marnaba ha u isticmaalin weelasha cuntada ama cabitaanka (weelasha caanaha fadhiisay, dhalooyin, quraarado) walxaha glaze, xataa haddii la calaamadeeyo. Ilmuhu wuu og yahay waxa weelka caanaha fadhiisay ku jira.
-- Qalabka istuudiyaha (macaaliiqda, qaaddooyinka, qalabka walaaqa, shaandhooyinka, miisaannada) ku hay istuudiyaha. Marnaba ha u isticmaalin qalabka jikada glaze, ama qalabka glaze cunto.
-- Glaze-yada qoyan ku hay baaldiyo calaamadaysan oo daboolkoodu saaran yahay.
-- Walax kasta warqaddeeda xogta badbaadada la hay, warqad ahaan ama taleefankaaga.
-- Jikada waxba ha ku hayn oo istuudiyaha ka yimid: kiishash, baaldiyo, qalab ama test tile midna.
+- Walxaha qalalan ku hay meel la xiray: armaajo, ama qol, garaash ama aqal la xiri karo. Raf sare way caawisaa, laakiin carruurtu way fuulaan. Haddii aad bilowga xiri karto keliya dhowr shay, ka bilow walxaha biyaha ku milma iyo midabeeyayaasha.
+- Walxaha ku hay boorsooyinkooda ama weelashooda asalka ah. Haddii aad mid u wareejiso weel kale, ku dheji calaamad magaca sida saxda ah ugu qoran boorsada.
+- Weligaa ha u isticmaalin weelasha cuntada ama cabitaanka (koobabka yogurt-ka, dhalooyinka, quraaradaha) walxaha glaze-ka, xitaa haddii ay calaamad leeyihiin. Ilmuhu wuu og yahay waxa koobka yogurt-ku ku jiro.
+- Qalabka istuudiyaha (macalqadaha wax lagu qaado, macalqado, kuwa wax lagu garaaco, shaandhooyin, miisaanno) ku hay istuudiyaha. Weligaa ha u isticmaalin qalabka jikada glaze-ka, ama qalabka glaze-ka cuntada.
+- Glaze-yada qoyan ku hay baaldiyo calaamad leh oo daboolkoodu saaran yahay.
+- Warqadda xogta badbaadada (SDS) ee walax kasta la hay, warqad ahaan ama taleefankaaga.
+- Waxba oo istuudiyaha ka yimid ha dhigin jikada: boorsooyin, baaldiyo, qalab ama test tile toona.
 
 Iibsashada iyo kaydinta walxaha si qoto dheer, eeg [Sida loo sameeyo glaze](/guides/making-a-glaze).
 
-### Qashinka glaze-ka iyo biyaha lagu maydho
+### Qashinka glaze-ka iyo biyaha la luqluqo
 
-Marnaba ha ku shubin glaze{{en: glaze}}, ama biyo aad ku maydhay qalabka glaze, saxanka dhaqidda ama beerta. Golaha Farshaxanka UK (Crafts Council) wuxuu soo jeedinayaa baaldi biyo ah oo gaar ah oo lagu dhaqo gacmaha, burushyada, shaandhooyinka iyo qalabka. Habeenkii ha degto, biyaha saafiga ah ka shub, ka dibna qalaji glaze-ka degay oo ku rid qashinka (wuxuu aadaa meesha qashinka lagu aaso), marnaba ha ku shubin bullaacadda.
+Weligaa ha ku shubin glaze, ama biyo aad ku luqluqday qalabka glaze-ka, sinkiga ama beerta. Crafts Council-ka UK wuxuu soo jeedinayaa baaldi biyo gooni ah oo lagu dhaqo gacmaha, burushyada, shaandhooyinka iyo qalabka. U daa inuu habeenkii oo dhan dego, daadi biyaha saafiga ah ee sare, kadibna qallaji glaze-ka degay oo ku rid qashinka (wuxuu aadaa goobta qashinka lagu aaso), weligaa ha ku shubin bullaacadda.
 
-Waxaan soo jeedinaynaa dabool baaldigaas: dhoobada hoos fadhida waxay haysaa isla biraha glaze-ka, xayawaankuna waxay cabbaan biyaha taagan. Xeerarka qashin-tuurku way kala duwan yihiin meel ilaa meel, sidaa darteed hubi warqadda xogta badbaadada ee alaab kasta, weydiina dawladda hoose ama shirkadda biyaha haddii aadan hubin.
+Waxaan soo jeedinaynaa dabool baaldigaas: wasakhda glaze-ka ee qoyani waxay haysaa isla biraha glaze-ka, xayawaanka gurigana waxay cabbaan biyo taagan. Xeerarka tuurista way kala duwan yihiin meel ilaa meel, sidaa darteed eeg warqadda xogta badbaadada ee alaab kasta, oo weydii golaha deegaankaaga ama shirkadda biyaha haddii aadan hubin.
+
+Istuudiyaha qaarkood waxay gubaan wasakhda glaze-ka ee qallalan ka hor intaysan tuurin. Waxay ku ridaan baaquli dheeraad ah oo la isticmaali doono ilaa uu dhammaado: gubidda kadib baaqulka dib looma isticmaali karo. Baaquli ka buuxi rubuc keliya, sababtoo ah wasakhdu way xumbaysaa oo way butaacdaa marka ay dhalaalayso, kuna dabool saxan. Saar raf kiln wash leh ama sallax dheeraad ah, haddii ay ka soo daadato. Gubiddu waxay wasakhda u beddeshaa muraayad, taas oo biraha si aad uga adag u haysa budo dabacsan, sidaa darteed waa ka ammaan badan tahay marka la geeyo goobta qashinka. Wasakhda glaze-ka ee qallalan u qabo sida aad u qaban lahayd glaze qallalan, adigoo xiran respirator oo aan boodh kicin.
 
 ## Boodhka istuudiyaha ku hay {#keeping-dust-in-the-studio}
 

@@ -1,189 +1,69 @@
-# Search: feature list
+# Search: what is built and what is left
 
-This plan makes the public pages easy for search engines to find and read in all 24 live languages. It was planned on 13 October 2026 against branch `mfa-plan`, after a check of the live site. Effort: S = under a day, M = one to three days, L = a week or more. Translation into 23 languages is not counted. Paths are from the repo root.
+This plan makes the public pages easy for search engines to find and read in every live language (57 on 4 November 2026). It was first planned on 13 October 2026 and built from 14 October on; this version, of 4 November 2026 (branch `r14-teach`), says what is built and keeps only the work left. [ADR 16](adr/0016-prerendered-public-pages.md) records the choice of prerendering; the page weights and Lighthouse timings measured when it was built are there and in the history of this file (commit `5e4b8fe0`). Effort: S = under a day, M = one to three days, L = a week or more. Paths are from the repo root.
 
-## Status: built (14 October 2026, branch `seo-prerender`)
+## The approach
 
-Items 1 to 8, 10, 11 and 13 (tests) are built; 9 (search terms), 12 (the owner's tasks) and the Later items are not. [ADR 16](adr/0016-prerendered-public-pages.md) records the decision. (The number is 16: the MFA plan reserves 14 and the OAuth plan 15.)
+The app stays a single-page app. At build time `scripts/prerender.mjs` renders each public page in each language it is offered in to plain HTML, and the server sends that file. Angular then hydrates it: it adopts the DOM already there and draws nothing again. Only what depends on the browser's own settings (signed in, °C/°F, region) changes afterwards. There is no rendering per request.
 
-**Where it differs from the plan:**
+## Built
 
-- **A separate build configuration for the render** (`prerender` in `angular.json`, to `dist/prerender`), because `autoCsp` forbids a server bundle in the browser build. `npm run build` is now `ng build && node scripts/prerender.mjs`.
-- **Worker threads** (four at a time), because Transloco's `translate()` keeps the last service made in a variable of its module, so two renders in one thread read each other's language.
-- **File reading as an `HttpBackend`** (`server-files.interceptor.ts`) rather than an interceptor, so the transfer cache sees the answers as ordinary HTTP responses and puts them in the page.
-- **Initial bundle budget 700 kB** (warning), up from 650 kB.
-- **A ready marker:** the app sets `data-app-ready` on `<html>` after its first draw, and the browser tests wait for it. It is later than `gc-root[ng-version]`, which is set before hydration finishes.
-- The prerendered files live in `dist/glazecalc/prerendered`, outside `browser/`.
+| Item                                     | Where                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | When                                 |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| 1. SSR packages and the render entry     | `client/main.server.ts`, `client/app/app.config.server.ts`, `provideClientHydration` in `client/app/app.config.ts`; a separate `prerender` build configuration in `angular.json`                                                                                                                                                                                                                                                                                                | 14 Oct (`seo-prerender`)             |
+| 2. Our own prerender script              | `scripts/prerender.mjs`: worker threads, four at a time; fails a page that logs an error, is the not-found page, has under `MIN_TEXT` (300) characters, loses the CSP meta or nonce, is over `MAX_GZIPPED` (120 kB gzipped since 4 Nov; was 100), or (since 30 Oct) a reference page showing the not-translated notice. Output in `dist/glazecalc/prerendered`: about 11,457 pages, about 4 minutes                                                                             | 14 Oct; checks to 4 Nov              |
+| One list of pages                        | `lib/pages.js`: `PUBLIC_PAGES`, `ENGLISH_ONLY_PAGES`, `REFERENCE_PAGES`, `MATERIAL_PAGES`, `prerenderLanguages`                                                                                                                                                                                                                                                                                                                                                                 | 14 Oct; 20 and 30 Oct                |
+| 3. Language from the render              | `client/app/i18n/provide-i18n.ts` reads `DOCUMENT`                                                                                                                                                                                                                                                                                                                                                                                                                              | 14 Oct                               |
+| 4. Files during the render               | `client/app/i18n/server-files.interceptor.ts` (an `HttpBackend`), transfer cache in the page                                                                                                                                                                                                                                                                                                                                                                                    | 14 Oct                               |
+| 5. Same first render                     | `client/app/core/first-render.ts` and the services it holds back                                                                                                                                                                                                                                                                                                                                                                                                                | 14 Oct                               |
+| 6. Before the app starts                 | the inline script in `client/index.html` (saved language, `data-session`)                                                                                                                                                                                                                                                                                                                                                                                                       | 14 Oct                               |
+| 7. The server sends the prerendered page | `server/app.ts`, `prerenderedKey` and `withNonce` in `server/lib/pages.ts`; read per reply, not kept in memory. Since 4 Nov each page reply is compressed in Node after its fresh nonce goes in (`server/lib/compress.ts`: brotli 5, else gzip 5), and nginx passes it through; nginx's own gzip is level 5                                                                                                                                                                     | 14 Oct; 15 Oct (`3ab174eb`); 4 Nov   |
+| 8. Each page's own title and description | `data.description` on each public route (`client/app/app.routes.ts`), `meta.*` messages, translated in every live language                                                                                                                                                                                                                                                                                                                                                      | 14 Oct; translations later           |
+| Head: canonical, hreflang, noindex       | `pageHtml` in `server/lib/pages.ts`: canonical, hreflang among the languages offered plus `x-default`, `noindex` for unlaunched languages and for the signed-in pages (`isAppOnlyPage`, no canonical or hreflang), `noindex, nofollow` and `no-referrer` for share links and id pages                                                                                                                                                                                           | 14 Oct; 18 Oct (`192213fb`)          |
+| 10. Structured data                      | `client/app/shared/structured-data.ts`: `WebApplication` on each home page, with `WebSite` in an `@graph` on the English root (site name); `Article` on each guide; `WebPage`/`CollectionPage` with a `BreadcrumbList` on the reference pages and each material's page                                                                                                                                                                                                          | 14 Oct; 18 Oct; 20 and 30 Oct        |
+| 11. Head fixes                           | `og:locale`, `og:locale:alternate`, `Content-Language`                                                                                                                                                                                                                                                                                                                                                                                                                          | 14 Oct                               |
+| Preview image per language (was 15)      | `scripts/og-images.mjs`, `lib/og-images.js`; `og:image` and `twitter:image` in `pageHtml`                                                                                                                                                                                                                                                                                                                                                                                       | 2 Nov (`b5d775b8`)                   |
+| IndexNow (was 14)                        | `scripts/indexnow.mjs`, `lib/indexnow.js`, the `indexnow` job in `.github/workflows/deploy.yml`, after Live checks: every sitemap the index names when anything a page shows changed, 10,000 addresses a request                                                                                                                                                                                                                                                                | 2 Nov (`b5d775b8`)                   |
+| Sitemap and robots.txt                   | `/sitemap.xml` is a sitemap index (`sitemapIndex()` in `server/lib/pages.ts`) naming `/sitemaps/<lang>.xml`, one per live language (`sitemap(…, code)`: about 200 addresses and 1 MB each), every page in each language offered, with alternates; English-only pages at their English address alone. `robots.txt` names the index and blocks only `/api/`. Staging (`NOINDEX=1`, `server/lib/site.ts`) has a refusing robots.txt, no sitemaps and `X-Robots-Tag` on every reply | 14 Oct; 18 Oct; 4 Nov (index)        |
+| Sitemap `<lastmod>`                      | `lib/page-dates.js` (each page's source files), `scripts/page-dates.mjs` (from git, in `.github/workflows/publish.yml` with `fetch-depth: 0`), into `lib/page-dates.json`, not committed. A page's sources are the language's own messages (titles and descriptions), its scope's, its guide and its data; code moves no date. The sitemap's alternates carry `x-default`, as each head does                                                                                    | 4 Nov (`2f212987`), not yet deployed |
+| 17. More public pages                    | `/cones` (Orton and SK), `/materials`, and `/materials/<slug>` for each of the 182 standard materials (170 before round 14's additions) (`lib/material-slug.js`). The cone chart, the materials list and each material's page are translated in all 57 live languages (`reference: true` in `lib/regions/languages.js`), prerendered, in the sitemaps and in hreflang (material pages since 4 Nov)                                                                              | 20 Oct (`383fc561`); 30 Oct; 4 Nov   |
+| Also public since                        | `/guides/learn-with-john-britt` (English only), `/terms`, `/assistants`                                                                                                                                                                                                                                                                                                                                                                                                         | 18 to 19 Oct                         |
+| Famous glazes                            | `/famous-glazes` and `/famous-glazes/<slug>` for each published glaze (İznik so far; `docs/famous-glazes.md`), indexed in a language only when its scope and the glaze's prose are translated (`famousTranslatedIn`)                                                                                                                                                                                                                                                            | 4 Nov                                |
+| Partly translated guide                  | `/guides/teaching-glaze-calculation` in English and Japanese only (`PARTLY_TRANSLATED_PAGES` in `lib/pages.js`); other languages show the English, noindex                                                                                                                                                                                                                                                                                                                      | 4 Nov                                |
+| Descriptions with search terms           | the `meta.*` descriptions carry the words people search for; the titles do not (owner's rule)                                                                                                                                                                                                                                                                                                                                                                                   | 4 Nov                                |
+| 12. Google Search Console                | done by the owner in the first round                                                                                                                                                                                                                                                                                                                                                                                                                                            | October                              |
+| 13. Tests                                | `server/test/pages_tests.ts`, `server/test/site_tests.ts`, `server/test/client_routes_tests.ts`, `e2e/prerender.spec.js`, and the prerender's own checks                                                                                                                                                                                                                                                                                                                        | 14 Oct on                            |
 
-**Page weight (item 13, size).** The largest page is the Greek advice page at 339 kB. A guide's text is drawn by the `gcInline` and `gcRow` directives (`guide-inline.ts`), not by nested `ngTemplateOutlet` views, so its hydration data (`__nghData__`) describes only the blocks: 32 kB for the German firing guide, down from 178 kB, and 1,541 view anchors where there were 11,503. The rest of `ng-state` is the transfer cache, one copy of each response: the guide's Markdown (43 to 68 kB) and, for a language other than English, the English translation files Transloco loads as the fallback (about 9 kB gzipped). The fallback stays: every language still has some 125 messages in English (`npm run check:i18n`), and leaving it out of the page would make the browser fetch it before the app is ready. A German page would still not fit the first 14 kB a connection sends. German firing guide: 233 kB raw (451 kB before), 60 kB gzipped. English glazing-basics: 162 kB, 45 kB gzipped.
+Where the build differs from the first plan: a separate build configuration for the render (`autoCsp` forbids a server bundle in the browser build); worker threads, because Transloco keeps the last service in a module variable; file reading as an `HttpBackend`; an initial bundle budget of 700 kB; and a `data-app-ready` marker on `<html>` that the browser tests wait for.
 
-**Timing (Lighthouse 13, mobile, simulated slow 4G, median of ten runs, five for the branch's home page, through a gzip proxy standing in for nginx; master e489b21 against this branch; "before" is the first integration, median of three):**
+## Decisions
 
-| Page              | FCP master / before / now | LCP master / before / now | TBT master / before / now | CLS master / before / now |
-| ----------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- |
-| /                 | 1.67 / 2.70 / 1.53 s      | 3.91 / 3.56 / 3.18 s      | 180 / 184 / 47 ms         | 0 / 0.02 / 0              |
-| /de/guides        | 1.75 / 2.57 / 1.60 s      | 2.62 / 3.17 / 2.57 s      | 169 / 128 / 126 ms        | 0.01 / 0.16 / 0           |
-| /de/guides/firing | 1.82 / 2.72 / 1.76 s      | 3.96 / 3.18 / 2.73 s      | 576 / 1311 / 575 ms       | 0.01 / 0.15 / 0           |
+Taken on 13 October 2026, and still in force:
 
-Why the first build was slower, from the traces and Lighthouse's own simulation (lantern): its first contentful paint counts every request that ended before the paint seen in the trace. (1) The footer's language list, each name in its own script, made the first layout fetch Lora's Cyrillic, Latin Extended and math files and Noto Serif's Greek (about 100 kB) before the first paint; the subscripts of SiO₂ fetched Lora's math file for nothing (it has their range, not their shapes) and then Noto's 65 kB math file. (2) Laying out a whole prerendered page before its first paint took 100 to 130 ms on the test machine (four times that in the model), and the first frame reached the screen only after the app had started hydrating, so the hydration task and the scripts it loaded counted toward the paint too. (3) The contents list moved by 0.15 when Lora replaced the fallback font. (4) Hydrating about 11,500 nested template views, and in an en-US browser reading the German guide again for Orton cones in the same long task, tripled the blocking time.
+1. Our own prerender script, not the CLI's `outputMode: "static"`.
+2. Prerendered pages show the page language's default region; English shows °C and Orton cones with °F beside them.
+3. No event replay for now: links are real `<a href>`s and work before hydration.
+4. The prerender runs in every build, so the e2e tests cover the real pages.
 
-What was changed: the footer's language names are set in the device's serif, subscripts go straight to Noto Serif's math file, each page preloads the font files the opening of its text is set in, and a fallback face scaled to Lora's width stands in until Lora arrives; the landing page's lower panels are laid out only when near the window (`content-visibility`); on a prerendered page without a form the app starts after the first contentful paint and in two tasks; the guide's text and table cells are drawn by directives; and the other way of firing, found after the first render, is drawn in its own task, keeping the sections that did not change. The firing guide's blocking time varies by about ±200 ms between runs on both builds; with a German browser (no switch of the guide's version) it is lower on both. These numbers are Lighthouse's model, not a phone.
+Taken by the owner since:
 
-**What is already right (checked on glazecalcapp.com):**
+- **Page titles stay short.** They are not rewritten for search terms. The old item 9 (titles with the words people search for) is dropped.
+- **A material's page is indexed in every live language where it is translated** (4 Nov, replacing "English only"; `docs/prerender-compression-and-material-pages-plan.md`, Part B). Each is prerendered, canonical to itself, with hreflang and `x-default`, and in that language's sitemap. A material whose notes or hazards lack a translation in a language (`materialTranslatedIn` in `lib/pages.js`), or that the prerender found English in (`material-fallback.json`), stays `noindex` there with canonical to the English. None does today. No pilot, no region limit.
+- **The cone chart and the materials list are translated** in every live language, so they are offered in all of them.
+- Google Search Console is set up.
 
-- Each language has its own address (`/de/guides`).
-- The server writes `<html lang dir>`, the canonical address, hreflang for all 24 languages plus `x-default`, and the language's title, description and preview text before any script runs (`server/lib/pages.ts`).
-- The sitemap lists all 264 pages (11 public pages × 24 languages) with their alternates, and `robots.txt` points to it and blocks only `/api/`.
-- Unknown addresses return 404, trailing slashes 301, unlaunched languages are `noindex`, and the home page loads in about 80 ms at 10 kB.
+## Left to do
 
-**What holds it back:**
+Ranked by what it is worth.
 
-1. Every page in a language has the home page's title and description in its HTML (`server/app.ts`, `pageText` reads only `titles.landing` and `meta.description`). The app fixes the title once it runs; nothing ever fixes the description.
-2. The body is an empty `<gc-root>` until the JavaScript runs and fetches the translations and the guide's Markdown. Google indexes it later and less reliably; Bing, DuckDuckGo, Yandex and Baidu do worse. Link previews never see the page's content.
-3. The titles may not use the words people type ("Glasurrechner", not "Glasurchemie-Rechner").
-4. The site may not be submitted to Google Search Console or Bing Webmaster Tools, and few sites link to it.
+1. **Bing Webmaster Tools** (owner, an hour). Verify the domain (a DNS TXT record in Route 53, or import from Search Console) and submit `https://glazecalcapp.com/sitemap.xml`. Bing's index also feeds DuckDuckGo, Ecosia and Yahoo. IndexNow already tells Bing of changes, but the reports are only here.
+2. **Read Search Console** (owner, ongoing). The "Pages" report per language, hreflang problems, and whether the 182 material pages are indexed.
+3. **Links from potters' sites** (owner, ongoing). This matters more than anything in the code: Ceramic Arts Daily's forum, Glazy, Reddit's pottery forums, and in each country its ceramics association or suppliers. A guide in the reader's own language is the thing worth linking to.
+4. **The guides' `dateModified`** (S). `article()` takes the date from a `modified:` line in a guide's front matter, and no guide has one, so the `Article` never carries a date. Take it from `lib/page-dates.json` in the prerender instead, as the sitemap does, or drop the field.
+5. **Live checks for search** (S). `scripts/live-check.mjs` checks only `X-Robots-Tag`. After each deploy it could also fetch `robots.txt`, the sitemap (it answers, parses, counts about what is expected) and one prerendered page per kind (canonical, hreflang count, no `noindex`, one `ld+json` block).
+6. **Event replay** (S), only if people are seen tapping before hydration finishes on slow phones (decision 3).
 
-**The approach: prerender at build, then hydrate.** The app stays a single-page app. At build time, a script renders each public page in each live language to plain HTML, with the real text in the real places. The server sends that HTML, so the reader (and a search engine) sees the page at once. The JavaScript then loads and Angular **hydrates** it: it adopts the DOM that is already there, attaches listeners and signals, and draws nothing again. There is no blank page and no flash. Only the parts that depend on this browser's own settings (signed in or not, °C/°F, region) change afterwards, and only where they differ.
+## Test plan (for the work left)
 
-This is what Angular's own SSR package does. It is not a crazy idea; it is the usual answer for a SPA that must be found in searches. We run it at build time only, so there is no Node rendering per request and no new server load.
-
-## Must do
-
-1. **Packages and the render entry (do this first, alone).**
-   - Add `@angular/ssr` and `@angular/platform-server` at the same version as `@angular/core` (22.2.x), pinned.
-   - New `client/main.server.ts`: `bootstrap(context) = bootstrapApplication(App, appServerConfig, context)`.
-   - New `client/app/app.config.server.ts`: `mergeApplicationConfig(appConfig, { providers: [provideServerRendering(), …] })` with the server-only providers from items 3 to 5.
-   - In `client/app/app.config.ts`, add `provideClientHydration(withHttpTransferCacheOptions({ includeHeaders: [] }))`. Event replay is left out (decision 3).
-   - Effort S. Files: `package.json`, `angular.json`, new `client/main.server.ts`, new `client/app/app.config.server.ts`, `client/app/app.config.ts`.
-
-2. **Our own prerender script, not the CLI's route prerender.** The CLI's `outputMode: "static"` prerenders route paths with one base href. Our languages are path prefixes chosen at runtime (`APP_BASE_HREF` from `provideI18n`), with Transloco rather than one build per locale (ADR 0013). A short script is clearer than bending the CLI:
-   - New `scripts/prerender.mjs` runs after `ng build`. The `build` script becomes `ng build && node scripts/prerender.mjs`.
-   - It builds the server bundle (`ng build` with a `server` entry and `outputMode: "server"`, or a second esbuild step; pick whichever keeps `dist/glazecalc/browser` as it is).
-   - For each page in `PUBLIC_PAGES` and each code in `LIVE_LANGUAGES`, it calls `renderApplication(bootstrap, { document: indexHtml, url: '/de/guides' })` and writes `dist/glazecalc/prerendered/<code>/<page>.html` (`/` becomes `index.html`).
-   - **Outside `browser/`**, so `express.static` never serves a raw prerendered file without its head and nonce. The `Dockerfile` copies the new folder too.
-   - It runs the pages in parallel, a few at a time. 264 renders should take well under a minute.
-   - It fails the build if a page renders an error, the not-found page, or text under a set length.
-   - `PUBLIC_PAGES` moves from `server/lib/pages.ts` to `lib/pages.js`, so the script, the server and the sitemap read one list.
-   - Effort M. Files: new `scripts/prerender.mjs`, `package.json`, `angular.json`, `Dockerfile`, new `lib/pages.js`, `server/lib/pages.ts`.
-
-3. **The page's language from the render, not from `location`.**
-   - `provideI18n` (`client/app/i18n/provide-i18n.ts:28`) reads `location.pathname`. It changes to `inject(DOCUMENT).location.pathname`, which is the browser's address in the browser and the render URL on the server.
-   - The initializer that sets `lang`, `dir` and the meta tags goes through `DOCUMENT` and the `Meta` service, not `document.querySelector`.
-   - `redirectLegacyHashUrl` runs only in the browser (`isPlatformBrowser`).
-   - Effort S. Files: `client/app/i18n/provide-i18n.ts`, `client/app/core/legacy-hash-url.ts`.
-
-4. **Translations and guides during the render, and no fetch before hydration.**
-   - On the server, a `HttpInterceptor` answers `GET /i18n/**` by reading the file from `dist/glazecalc/browser/i18n/`. The Transloco loader and the `guideText` resolver stay unchanged.
-   - Hydration's **HTTP transfer cache** stores those replies in the page (`<script id="ng-state" type="application/json">`). On load, the same `GET`s are answered from it, so the browser hydrates without waiting on the network for the translations or the Markdown. This is the "timing" the owner asked about.
-   - Cost: each page carries its own scopes' messages and, on a guide, its Markdown. Measure the HTML size per page (item 13). If it is too large, cache only the guide and the page's scope, and let the shared `<lang>.json` load as today.
-   - Effort S. Files: new `client/app/i18n/server-files.interceptor.ts`, `client/app/app.config.server.ts`.
-
-5. **The same first render on both sides (no hydration mismatch).** Angular checks that the browser's first render matches the prerendered DOM. Anything that reads this browser's own state must render the **prerender defaults** first and switch after hydration.
-   - **Prerender defaults:** signed out, no stored preferences, and the language's default region for units, cones and the region blocks in the guides (decision 2).
-   - A small `firstRender` signal (new `client/app/core/first-render.ts`): true until `afterNextRender` on the root, then false. While true:
-     - `AuthService` reports no session (the constructor still reads storage; the signal it exposes waits);
-     - `PreferencesService` and `LocaleService` return the defaults, not localStorage or `navigator.languages`;
-     - `library-info.ts` and `translation-notice.ts` hold back.
-   - After hydration they switch, and signals update only the text that differs (°F instead of °C, the nav for a signed-in user, the user's own region block).
-   - Browser globals (`location`, `sessionStorage`, `navigator`, `window.scrollTo`) are only read inside `afterNextRender` or behind `isPlatformBrowser`. The list to fix: `core/auth.service.ts`, `core/preferences.service.ts`, `core/locale.service.ts`, `shared/library-info.ts`, `i18n/translation-notice.ts`, `app.ts` (`pageIn()`), `pages/guides/guide-contents.ts`.
-   - `region-select.ts` sorts with `Intl.DisplayNames` and `localeCompare`. Node and the browsers share ICU closely enough, but item 13's mismatch check will show it if not.
-   - Effort M. Files: those listed.
-
-6. **Before the app starts: language choice and signed-in visitors.**
-   - `client/main.ts` sends a reader with a saved language from `/guides` to `/de/guides` before bootstrapping. With prerendering, that reader would first see the English page. Move this check into the inline script in `client/index.html`, so it runs before the first paint. autoCsp hashes that script at build, as it does the theme script today.
-   - A signed-in reader on `/` goes to `/home` (`visitorsOnlyGuard`). The same inline script sets `data-session` on `<html>` when a session is stored, and a CSS rule hides the landing page's content under it, so it does not flash before the redirect.
-   - Effort S. Files: `client/index.html`, `client/main.ts`, `client/styles.scss`.
-
-7. **The server sends the prerendered page.**
-   - `server/app.ts` reads the page's file from `dist/glazecalc/prerendered/**` for each reply. (It first kept them all in memory: about 100 MB of heap by 2026-10, not the few MB expected, so now the kernel's file cache keeps them.)
-   - For a `GET` of a public page in a live language, it uses that file in place of `index.html`. Every other address (signed-in pages, `/signin`, unlaunched languages, 404s) keeps today's `index.html`.
-   - `pageHtml()` still writes the canonical address, hreflang, `noindex` and `og:url`. It no longer overwrites the title and description when the file already has the page's own.
-   - **CSP nonce:** the prerender renders with `CSP_NONCE` set to a fixed placeholder (`__GC_NONCE__`). The server replaces each occurrence with the reply's nonce, as it now replaces `<gc-root>`. Angular puts the nonce on its inline `<style>` tags too, so they pass `style-src 'nonce-…'`.
-   - A missing prerendered file falls back to `index.html` and logs once. The page still works; it is only slower to show.
-   - Effort S. Files: `server/app.ts`, `server/lib/pages.ts`, `server/test/client_routes_tests.ts`, `server/test/pages_tests.ts`.
-
-8. **Each page's own title and description.**
-   - Add a description for each public page: new keys `meta.guides`, `meta.glazingBasics`, `meta.makingAGlaze`, `meta.safeMixing`, `meta.homeSafety`, `meta.firing`, `meta.advice`, `meta.about`, `meta.privacy`, `meta.signup` (10 new English messages; `/` keeps `meta.description`).
-   - Routes get `data: { description: marker('meta.x') }`. `TranslatedTitles` also sets the description, `og:title` and `og:description` through the `Meta` service, so the prerender writes them and in-app navigation keeps them right.
-   - The server's `pageText` stays as the fallback for the pages that are not prerendered.
-   - Effort S. Files: `client/app/app.routes.ts`, `client/app/i18n/titles.ts`, `client/public/i18n/en.json`.
-
-9. **Titles that use the words people search for.**
-   - For each live language, check the usual search term for "glaze calculator", and for "glaze recipe" and "UMF / Seger formula": Google Trends, the autocomplete in each country's Google, and the words used by that country's ceramics suppliers and forums.
-   - Rewrite `titles.landing` and `meta.description` where the usual term is missing, keeping the full term in the description. For example, German "Glasurrechner" in the title and "Glasurchemie" in the description.
-   - This is a translation task. It goes through the review steps in `docs/translations/process`, and the new text is checked back to English (blind) like the other text.
-   - Effort M (research), then the translation run. Files: `client/public/i18n/<code>.json`, `docs/translations/<code>.md` (glossary: the search terms).
-
-10. **Structured data.**
-    - The home page gets a JSON-LD `WebApplication`: name, description, `applicationCategory: "DesignApplication"`, `operatingSystem: "Any"`, `isAccessibleForFree: true`, `offers.price: 0`, `inLanguage`.
-    - Each guide gets an `Article`: headline, description, `inLanguage`, `dateModified` (from the guide's front matter, if it has one).
-    - Write it in the prerender (a `<script type="application/ld+json">` from a component on those pages). A JSON data block does not run, so no CSP change is needed.
-    - Effort S. Files: new `client/app/shared/structured-data.ts`, `client/app/pages/landing/*`, `client/app/pages/guides/guide-view.ts`.
-
-11. **Small head fixes.**
-    - Merge `og:locale` and `Content-Language` from `asia-groundwork-locales` (already built and tested there).
-    - `og:locale:alternate` for the other live languages.
-    - The `og:image` stays the English image for now; a per-language image is "Later". (Done in round 12:
-      `og:image` and `twitter:image` per language from `scripts/og-images.mjs`, and IndexNow after each
-      production deploy, `scripts/indexnow.mjs`.)
-    - Effort S. Files: `server/lib/pages.ts`.
-
-12. **Owner's tasks (outside the code).**
-    - Verify the domain in **Google Search Console** and **Bing Webmaster Tools** (a DNS TXT record each, in Route 53). Submit `https://glazecalcapp.com/sitemap.xml` in both. Bing's index also feeds DuckDuckGo, Ecosia and Yahoo.
-    - After a month, read Search Console's "Pages" report per language and the "International targeting" hreflang errors.
-    - **Links from potters' sites** matter more than anything here: the Ceramic Arts Daily forum, Glazy's links page, Reddit's pottery forums, and in each country its ceramics association or supplier forums. A guide in the reader's own language is the thing worth linking to.
-    - Effort: an hour to set up, then ongoing.
-
-13. **Tests.** See the test plan. Effort M.
-
-## Later
-
-14. **IndexNow** (Bing, Yandex, Seznam, Naver): tell them about changed pages after each deploy. Effort S.
-15. **A preview image per language,** with the tagline translated. Effort S.
-16. **Event replay,** if the timing check in item 13 shows people tapping before hydration finishes (decision 3). Effort S.
-17. **More public pages worth finding:** each Standard material (`/materials/<name>`: what it is, its oxides, its safety notes) and a cone chart. These are what potters search for; each would be prerendered the same way. Effort L (mostly content and translation).
-    **Built in English (2026-10-20):** `/materials` (the list), `/materials/<slug>` (one for each of the 170 standard materials, the slug made from the name by `lib/material-slug.js`) and `/cones` (Orton and SK). The addresses are plural to keep them apart from the signed-in `/material`. The page of a material says only what `data/materials.ndjson` holds and works the unity contribution out with `materialWeights`, as the recipe page does. All three are in `ENGLISH_ONLY_PAGES`, so the other languages' addresses show the English with a notice, are `noindex` with the English as canonical, and the build renders them in English alone (`prerenderLanguages` in `lib/pages.js`): 170 pages in each of 31 languages would only fill the disk. Their words are in `client/public/i18n/reference/en.json`; translating them, and taking them out of `ENGLISH_ONLY_PAGES`, is the later wave.
-
-## Decisions for the owner
-
-**Decided on 13 October 2026: all five as recommended.**
-
-1. **Our own prerender script, or the Angular CLI's `outputMode: "static"`?** Recommend **our script** (item 2). The CLI's prerender expects one base href per build, and our 24 languages are prefixes chosen at runtime. The script is about 100 lines and uses the same `renderApplication` the CLI calls.
-2. **Which units the prerendered guides show.** Recommend **the page language's default region** (`/de/` in Germany's units and cones, `/fr/` in France's). For English, recommend **°C and Orton cones with °F beside them**: the guides already show both. A reader whose settings differ sees the numbers change once, right after the page loads. The alternative is to hide those numbers until hydration, which shows a gap instead.
-3. **Event replay?** Recommend **not now.** It puts an inline script in each page, which autoCsp cannot hash at build because the prerender adds it later. The public pages are mostly text and links, and links work before hydration (they are real `<a href>`s; a click before hydration loads the next page whole). Revisit if item 13 finds hydration takes over a second on a slow phone.
-4. **Per-page descriptions: translate now or with the next catch-up?** Recommend **with the title changes from item 9**, as one translation run. Until then the other languages keep the home page's description on every page, as today.
-5. **Build time in CI.** The prerender adds under a minute to each build. Recommend **running it in every build**, so the e2e tests always cover the real pages.
-
-## Test plan
-
-- **Unit (mocha):**
-  - `pages_tests.ts`: the prerendered file is used for a public page in a live language and not for `/signin`, `/recipe` or an unlaunched language; its own title and description are kept; the canonical address and hreflang are still written; `__GC_NONCE__` is replaced everywhere; a missing file falls back to `index.html`.
-  - `client_routes_tests.ts`: `/de/guides/firing` answers 200 with German guide text in the body; the nonce differs per reply.
-- **Prerender script:** fails on a not-found page, an error, or a page under the length limit. All 264 files exist after `npm run build`.
-- **Client (vitest):** the `firstRender` switch in `AuthService`, `PreferencesService` and `LocaleService`; `TranslatedTitles` sets the description.
-- **e2e (Playwright, Chromium, Windows and Linux CI):** new `e2e/prerender.spec.js`.
-  - **JavaScript off** (`javaScriptEnabled: false`): `/de/guides/firing` shows its German heading and text, its own `<title>` and description; `/` shows the landing text; links have real `href`s.
-  - **Adopted in place:** hold back the main script with `page.route`, mark a guide paragraph (`data-test-mark`), let the script load, wait for the app to be ready, and check the marked element is still the one in the document. A re-render would replace it.
-  - **No mismatch:** the console has no `NG0500`–`NG0507` messages on any public page in en, de, el and ga.
-  - **No fetch before hydration:** no request to `/i18n/` before the app is ready on a guide page.
-  - **Settings after hydration:** a reader with °F stored sees °F after load; a stored session on `/` goes to `/home` without the landing text showing.
-  - `csp.spec.js` stays green on the public pages, prerendered now.
-  - `accessibility.spec.js` (axe) runs on the prerendered pages as well.
-- **Timing:** Lighthouse (mobile, slow 4G) on `/`, `/de/guides` and `/de/guides/firing`, before and after. Record First Contentful Paint, Largest Contentful Paint and Total Blocking Time in the PR. Expect FCP and LCP to fall to about the HTML's download time.
-- **Size:** report each prerendered page's size, and check the initial bundle stays under its budget (hydration adds a few kB).
-
-## Build order
-
-**Step 0 (one agent, half a day):** items 1 and 3, and moving `PUBLIC_PAGES` to `lib/pages.js`. Merge it before anything else. After it, the app still behaves exactly as now.
-
-Then three parallel worktrees:
-
-| Stream                            | Items               | Files it alone edits                                                                                                                                                                                                                                                       |
-| --------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **A: render and serve**           | 2, 4, 7             | `scripts/prerender.mjs`, `angular.json`, `Dockerfile`, `client/app/app.config.server.ts`, `client/app/i18n/server-files.interceptor.ts`, `server/app.ts`, `server/lib/pages.ts`, `server/test/{pages,client_routes}_tests.ts`                                              |
-| **B: same first render**          | 5, 6                | `client/app/core/{first-render,auth.service,preferences.service,locale.service}.ts`, `client/app/shared/library-info.ts`, `client/app/i18n/translation-notice.ts`, `client/app/app.ts`, `client/app/pages/guides/guide-contents.ts`, `client/index.html`, `client/main.ts` |
-| **C: head content and the tests** | 8, 10, 11, 13 (e2e) | `client/app/app.routes.ts`, `client/app/i18n/titles.ts`, `client/public/i18n/en.json`, `client/app/shared/structured-data.ts`, landing and guide-view components, `e2e/prerender.spec.js`                                                                                  |
-
-Item 9 (search terms) is research, then a translation run with item 8's new messages (decision 4). Item 12 is the owner's, and can start today: it does not need any of this.
-
-**Merge order:** A, then B (A's prerender shows B's mismatches), then C. Then run `npm run i18n:sources`, `npm run check:i18n`, `npm test`, `npm run test:client`, `npm run test:e2e` on Windows, `npm run test:e2e:linux`, and the Lighthouse check.
+- The prerender: a guide's `Article` has `dateModified` when the dates file has the page.
+- `npm test`, `npm run test:client`, `npm run test:e2e` and `npm run test:e2e:linux` before it is done.

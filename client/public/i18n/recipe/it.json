@@ -724,7 +724,7 @@
     "keyBright": "Linea punteggiata: dove gli smalti di Stull erano più lucidi.",
     "keyLimits": "Linee tratteggiate e ombreggiatura: gli intervalli di silice e allumina di {name}.",
     "keyCrazed": "Tratteggio incrociato: dove cavillavano.",
-    "note": "Una guida, non una previsione. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuoceva al cono 11 con i fondenti fissati a 0,3 K₂O e 0,7 CaO; altri fondenti e altre cotture spostano le regioni, e un opaco sottocotto può risultare lucido. Le regioni sono quelle che disegna Glazy."
+    "note": "Una guida, non una previsione. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuoceva a circa cono 11 con i fondenti fissati a 0,3 K₂O e 0,7 CaO; altri fondenti e altre cotture spostano le regioni, e uno smalto opaco solo perché sottocotto può comunque cadere tra i lucidi. Le regioni sono quelle disegnate da Glazy."
   },
   "slurry": {
     "heading": "Peso specifico e acqua",
@@ -752,7 +752,17 @@
       "pint": "Il peso a pinta voluto, once"
     },
     "drySg": "Peso specifico dei materiali secchi",
-    "drySgHelp": "Circa 2,5 per la maggior parte degli smalti; Glazy usa 2,6.",
+    "drySgEmpty": "Serve solo per i pesi a secco; l’acqua da aggiungere no. Inserirlo se lo si conosce.",
+    "drySgNeeded": "Inserire il peso specifico dei materiali secchi per vedere lo smalto secco nel secchio e l’acqua per una nuova pesata.",
+    "estimate": {
+      "mineral": "Una stima, {sg}, in base a ciò di cui è fatto ogni materiale: la densità misurata del suo minerale. Modificarla se si conosce un valore migliore.",
+      "kind": "Una stima, {sg}: feldspati e argille hanno un peso specifico di circa 2,6. Modificarla se si conosce un valore migliore.",
+      "glass": "Una stima, {sg}, calcolata dagli ossidi delle fritte (sono vetro). Modificarla se si conosce un valore migliore.",
+      "mixed": "Una stima, {sg}, in base a ogni materiale: la densità misurata del suo minerale, circa 2,6 per feldspati e argille, e le fritte calcolate dai loro ossidi. Modificarla se si conosce un valore migliore.",
+      "leftOut": "Esclusi, perché il loro peso specifico non è noto: {names}.",
+      "none": "Nessuna stima per questa ricetta: il peso specifico di {names} non è noto. Inserirlo se lo si conosce.",
+      "was": "Si usa il Suo valore. La stima era {sg}; svuotare il campo per tornare alla stima."
+    },
     "batch": "Smalto secco per una nuova pesata, {unit}",
     "contents": "Con peso specifico {sg}, il secchio contiene {glaze} di smalto secco e {water} di acqua.",
     "add": "Per arrivare al peso specifico {target}, aggiungere {water} di acqua. Si arriva a circa {volume}.",
@@ -760,6 +770,7 @@
     "already": "È già al peso specifico {target}.",
     "mix": "Miscelare {glaze} di smalto secco con {water} di acqua per ottenere circa {volume} al peso specifico {target}.",
     "badSg": "Un peso specifico deve essere maggiore di 1 (quello dell’acqua) e minore di quello dei materiali secchi, {dry}.",
+    "badSgWater": "Il peso specifico deve essere maggiore di 1 (quello dell’acqua).",
     "badDry": "Il peso specifico dei materiali secchi deve essere maggiore di 1.",
     "note": "L’acqua è in peso: un litro pesa un chilogrammo, un gallone USA circa 8,3 lb. Il calcolo somma i volumi, che è vicino al vero ma non esatto: aggiungere l’acqua un po’ alla volta, mescolare e misurare di nuovo. Due smalti con lo stesso peso specifico possono comunque scorrere in modo diverso.",
     "saveTarget": "Salva il peso specifico {sg} come valore voluto di questa ricetta",

@@ -9,6 +9,7 @@
     "homeSafety": "Ne mérgezze meg a családját - Glazecalc",
     "firing": "Égetés egyszerű kemencében - Glazecalc",
     "learnWithJohnBritt": "Tanuljon John Britt ingyenes mázkurzusával - Glazecalc",
+    "teachingGlazeCalculation": "A mázszámítás tanítása - Glazecalc",
     "about": "Névjegy - Glazecalc",
     "privacy": "Adatvédelem - Glazecalc",
     "terms": "Felhasználási feltételek - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Módosítás jóváhagyása - Glazecalc",
     "cones": "Gúlatáblázat: az Orton- és SK-gúlák hőfokai - Glazecalc",
     "materials": "Beépített mázanyagok: összetétel és veszélyek - Glazecalc",
-    "materialInfo": "{name}: oxidos összetétel és veszélyek - Glazecalc"
+    "materialInfo": "{name}: oxidos összetétel és veszélyek - Glazecalc",
+    "famousGlazes": "Híres mázak - Glazecalc",
+    "famousGlaze": "{name} máz - Glazecalc"
   },
   "nav": {
     "skip": "Ugrás a tartalomhoz",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Adjon meg egy számot, például {example}, tizedesponttal."
   },
   "meta": {
-    "description": "Írja be a mázreceptet: látja a Seger-képletét (UMF), SiO₂ : Al₂O₃ és olvasztóanyag-arányát. Ingyenes, nyílt forráskódú; receptek, nyersanyagok, égetési naplók.",
+    "description": "Írja be a kerámia mázreceptet, és látja a Seger-képletét (UMF), SiO₂ : Al₂O₃ és olvasztóanyag-arányát. Ingyenes, nyílt forráskódú, égetési naplókkal.",
     "guides": "Közérthető útmutatók kezdő fazekasoknak: mi a kerámia máz, hogyan készítse és keverje biztonságosan, hogyan védje családját és égessen egyszerű kemencében.",
     "glazingBasics": "A máz összetétele, hogyan lesz belőle üveg a kemencében, és mit jelentenek a gúlák, a frittek, a Seger-képlet (UMF) és a mázhibák. Útmutató kezdő fazekasoknak.",
     "makingAGlaze": "Kerámia máz vásárlása, tárolása, bemérése és keverése, a sűrűség beállítása, próba a saját agyagon és feljegyzések, hogy újra elkészíthesse.",
@@ -177,6 +180,7 @@
     "homeSafety": "Teendők, ha gyermek vagy háziállat máznyersanyagot nyel le; a nyersanyagok, a por, a kemence és a kézműves edények biztonságos kezelése a család körül.",
     "firing": "Elektromos kemence égetése: a gúlák kiválasztása, elhelyezése és leolvasása, közzétett égetési programok zsengéléshez és mázas égetéshez, gúlatáblázattal.",
     "learnWithJohnBritt": "Kísérő John Britt ingyenes online mázkurzusához: videói egységenként, a Glazecalc olvasnivaló útmutatóival és a kalkulátorban kipróbálható feladatokkal.",
+    "teachingGlazeCalculation": "6 foglalkozás a Seger-képlet tanításához: nyersanyagok és háromszög-próbák, mólok, receptből képlet és vissza, valamint mázhibák, kidolgozott példákkal és nyomtatható munkalapokkal.",
     "advice": "A Glazecalc gyakorlati tanácsai a keveréshez, a mázazáshoz és az égetéshez, mellettük saját tanácsaival. Ingyenes fazekasoknak és keramikusoknak.",
     "about": "A Glazecalc ingyenes, nyílt forráskódú mázkémiai kalkulátor és műhelyfüzet. Nézze meg, hogyan számítja ki a Seger-képletet (UMF), és hogyan épül fel.",
     "privacy": "Hogyan kezeli a Glazecalc az adatait: nincs reklám, nincs analitika, nincs követés, és semmit nem ad el. Mit őriz meg, miért, és hogyan élhet a jogaival.",
@@ -184,9 +188,11 @@
     "assistants": "A Glazecalc MCP-n át a Claude, Copilot, Cursor vagy Gemini asszisztensből: mázkémia, határérték-ellenőrzés, helyettesítők, útmutatók és saját receptjei.",
     "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el.",
     "cones": "Orton- és SK-hőfokjelző gúlák 022-estől felfelé, hőfokaikkal °C-ban és °F-ban, az egyes táblázatok felfűtési sebességével és az értékek forrásával.",
-    "materials": "A Glazecalc beépített könyvtárának nyersanyagai a földpátoktól és agyagoktól a frittekig és bórforrásokig, mindegyik oxidos összetételével, Seger-képletével és veszélyeivel.",
+    "materials": "Kerámia mázak alapanyagai a Glazecalc beépített könyvtárában, a földpátoktól és agyagoktól a frittekig és bórforrásokig, oxidos összetétellel, Seger-képlettel és veszélyekkel.",
     "materialInfo": "{name}: oxidos összetétel, Seger-képlet, izzítási veszteség és veszélyek a Glazecalc beépített könyvtárában.",
     "materialInfoLong": "{name} a Glazecalc beépített mázanyag-könyvtárában: oxidos összetétele, hozzájárulása a Seger-képlethez, izzítási vesztesége és veszélyei.",
+    "famousGlazes": "Híres mázak a világ minden tájáról: mindegyik hagyományos receptje vagy történeti összetétele, Seger-képlete, és egy változata azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él.",
+    "famousGlaze": "{name} ({native}) máz: hagyományos receptje vagy történeti összetétele, égetése, Seger-képlete és forrásai, valamint egy változata azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él.",
     "imageAlt": "A Glazecalc logója és címsora, ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."
   },
   "notices": {

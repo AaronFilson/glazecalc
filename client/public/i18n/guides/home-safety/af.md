@@ -61,27 +61,29 @@ Lood se grootste gevaar is anders: nie een lepel vol nie, maar klein hoeveelhede
 
 ## Grondstowwe tuis bêre {#storing-materials}
 
-Geen amptelike liggaam stel reëls vir die berging van glasuurgrondstowwe tuis nie, maar bladsye oor gesondheid en veiligheid stem saam: hou die werk in sy eie ruimte, weg van kinders. Pennsylvania se gesondheidsdepartement, wat skryf oor stokperdjies wat lood gebruik, sê: "Gebruik 'n aangewese werkruimte of motorhuis vir jou stokperdjie en hou kinders weg van hierdie area."
+Geen amptelike liggaam stel reëls vir die tuisberging van glasuurgrondstowwe nie, maar gesondheids- en veiligheidsbladsye stem saam: hou die werk in sy eie ruimte, weg van kinders. Pennsylvania se gesondheidsdepartement, wat oor stokperdjies skryf wat lood gebruik, sê: "Gebruik 'n aangewese werkruimte of motorhuis vir jou stokperdjie en hou kinders weg van hierdie area."
 
 ### 'n Bergingskontrolelys
 
-Dit is algemene reëls om vergiftiging te voorkom, toegepas op glasuur. Geen keramiekstandaard stel hulle nie, maar ons stel almal voor:
+Dit is algemene gifvoorkomingsreëls wat op glasuur toegepas word. Geen keramiekstandaard stel dit nie, maar ons stel almal voor:
 
 - Hou droë grondstowwe toegesluit: 'n kas, of 'n kamer, motorhuis of skuur wat sluit. 'n Hoë rak help, maar kinders klim. As jy eers net 'n paar dinge kan toesluit, begin met die oplosbare grondstowwe en kleurstowwe.
-- Hou grondstowwe in hul oorspronklike sakke of bakke. As jy een na 'n ander houer oorskuif, plak 'n etiket op met die naam presies soos dit op die sak geskryf staan.
-- Moet nooit kos- of drankhouers (joghurtbakkies, flesse, bottels) vir glasuurgrondstowwe gebruik nie, selfs met 'n etiket. 'n Kind weet wat in 'n joghurtbakkie is.
-- Hou ateljeegereedskap (skeppe, lepels, klitsers, siwwe, skale) in die ateljee. Moet nooit kombuisgereedskap vir glasuur gebruik nie, of glasuurgereedskap vir kos.
-- Hou nat glasuur in emmers met etikette en met die deksels op.
-- Hou elke grondstof se veiligheidsdatablad daarby, op papier of op jou foon.
-- Hou niks uit die ateljee in die kombuis nie: geen sakke, emmers, gereedskap of toetsteëls nie.
+- Hou grondstowwe in hul oorspronklike sakke of bakke. As jy een in 'n ander houer oorskep, merk dit met die naam presies soos op die sak geskryf.
+- Gebruik nooit kos- of drankhouers (joghurtbakkies, flesse, bottels) vir glasuurgrondstowwe nie, selfs al is hulle gemerk. 'n Kind weet wat in 'n joghurtbakkie is.
+- Hou ateljeegereedskap (skeppe, lepels, klitsers, siwwe, skale) in die ateljee. Gebruik nooit kombuisgereedskap vir glasuur nie, of glasuurgereedskap vir kos.
+- Hou nat glasure in gemerkte emmers met die deksels op.
+- Hou elke grondstof se veiligheidsdatablad (SDS) daarby, op papier of op jou foon.
+- Hou niks van die ateljee in die kombuis nie: geen sakke, emmers, gereedskap of toetsteëls nie.
 
-Vir meer oor die koop en berging van grondstowwe, sien [Hoe om 'n glasuur te maak](/guides/making-a-glaze).
+Vir die koop en berging van grondstowwe in meer diepte, sien [Hoe om 'n glasuur te maak](/guides/making-a-glaze).
 
 ### Glasuurafval en spoelwater
 
-Moet nooit glasuur, of water waarin jy glasuurgereedskap uitgespoel het, in die wasbak of op die tuin uitgooi nie. Die UK Crafts Council stel 'n aparte emmer water voor om hande, kwaste, siwwe en gereedskap in te was. Laat dit oornag uitsak, gooi die helder water af, droog dan die uitgesakte glasuur en gooi dit in die vullisblik (dit gaan na 'n stortingsterrein), nooit in die drein nie.
+Gooi nooit glasuur, of water waarin jy glasuurgereedskap gespoel het, in die wasbak of op die tuin nie. Die Britse Crafts Council stel 'n aparte emmer water voor vir die was van hande, kwaste, siwwe en gereedskap. Laat dit oornag sak, gooi die helder water af, droog dan die gesakte glasuur en sit dit in die vullisdrom (dit gaan na die stortingsterrein), nooit in die drein nie.
 
-Ons stel 'n deksel op daardie emmer voor: die slyk bevat dieselfde metale as die glasuur, en troeteldiere drink staande water. Reëls vir wegdoening verskil van plek tot plek, so kyk na elke produk se veiligheidsdatablad, en vra jou plaaslike munisipaliteit of watermaatskappy as jy onseker is.
+Ons stel 'n deksel op daardie emmer voor: die slyk bevat dieselfde metale as die glasuur, en troeteldiere drink staande water. Wegdoeningsreëls verskil van plek tot plek, so kyk na elke produk se veiligheidsdatablad, en vra jou plaaslike munisipaliteit of waterverskaffer as jy onseker is.
+
+Sommige ateljees stook die gedroogde slyk voordat hulle dit weggooi. Hulle sit dit in 'n ekstra bak wat opgeoffer sal word: ná die stook kan die bak nie weer gebruik word nie. Maak die bak net 'n kwart vol, want die slyk skuim en borrel terwyl dit smelt, en bedek dit met 'n bord. Sit dit op 'n rak met rakdeklaag of 'n ekstra plaat, ingeval dit oorloop. Die stook verander die slyk in glas, wat die metale baie stywer vashou as los poeier, dus is dit veiliger op 'n stortingsterrein. Hanteer die droë slyk soos jy droë glasuur sou hanteer, met 'n respirator en sonder om stof te maak.
 
 ## Stof in die ateljee hou {#keeping-dust-in-the-studio}
 

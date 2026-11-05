@@ -83,6 +83,8 @@ Nunca despeje esmalte, nem a água em que você enxaguou ferramentas de esmalte,
 
 Sugerimos uma tampa nesse balde: o lodo contém os mesmos metais que o esmalte, e animais bebem água parada. As regras de descarte variam de um lugar para outro, então consulte a ficha com dados de segurança de cada produto e pergunte à prefeitura ou à companhia de água e esgoto se tiver dúvida.
 
+Alguns ateliês queimam o lodo seco antes de jogá-lo fora. Eles o colocam em uma tigela de sobra que pode ser sacrificada: depois da queima, a tigela não pode ser usada de novo. Encha a tigela só até um quarto, porque o lodo espuma e borbulha ao derreter, e cubra-a com um prato. Apoie-a em uma placa com protetor de placas ou em uma placa de sobra, caso transborde. A queima transforma o lodo em vidro, que prende os metais com muito mais força que o pó solto, então ele fica mais seguro em um aterro. Manuseie o lodo seco como você manusearia esmalte seco, com máscara de proteção respiratória e sem levantar poeira.
+
 ## Mantenha a poeira no ateliê {#keeping-dust-in-the-studio}
 
 O departamento de saúde da Pensilvânia descreve o problema sem rodeios: “A poeira contaminada com chumbo do seu hobby pode grudar nas suas roupas, sapatos, cabelo, pele e objetos pessoais, e passar facilmente para o seu veículo e para as superfícies da sua casa.” O CDC acrescenta que adultos “podem levar chumbo para casa e expor suas famílias ao chumbo sem saber”. A orientação da Pensilvânia dá a solução:

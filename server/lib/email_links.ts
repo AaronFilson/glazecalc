@@ -5,7 +5,8 @@ import EmailToken, { cancelEmailLinks } from '../models/email_token.ts';
 import type { UserDocument } from '../models/user.ts';
 import * as accountMail from './account_mail.ts';
 import * as log from './log.ts';
-import { returnPage } from './pages.ts';
+import languages from '../../lib/regions/languages.js';
+import { nextPage, returnPage } from './pages.ts';
 
 /** How long a link works. */
 export const LINK_HOURS = 24;
@@ -41,11 +42,15 @@ export async function makeLink(user: UserDocument, kind: 'verify' | 'change', ad
  * Emails a new account the link that confirms its address. Mail never delays
  * or fails the request that asked. `next`, as the sign-up sent it: the page
  * the link goes on to once the address is confirmed, when it is one of the
- * app's pages (returnPage); anything else is left out.
+ * app's pages (returnPage); anything else is left out. An account with no
+ * language of its own yet gets the email, and the link, in the language of
+ * that page (/de/materials/silica: German), where the sign-up was made.
  */
 export const sendVerification = (user: UserDocument, next?: unknown): void => {
   const back = returnPage(next);
+  const pageLanguage = back ? languages.languageOfPath(nextPage(next)) : 'en';
+  const language = user.preferences?.language || (pageLanguage === 'en' ? undefined : pageLanguage);
   makeLink(user, 'verify', user.email)
-    .then((token) => accountMail.sendVerify(user.email, token, LINK_HOURS, user.preferences?.language, back))
+    .then((token) => accountMail.sendVerify(user.email, token, LINK_HOURS, language, back))
     .catch((err: unknown) => log.error('Could not send the email confirmation', { code: log.codeOf(err) }));
 };

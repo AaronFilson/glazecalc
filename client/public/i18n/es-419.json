@@ -9,6 +9,7 @@
     "homeSafety": "No envenenes a tu familia - Glazecalc",
     "firing": "La cocción en un horno sencillo - Glazecalc",
     "learnWithJohnBritt": "Aprende con el curso gratuito de esmaltes de John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Enseñar el cálculo de esmaltes - Glazecalc",
     "about": "Acerca de - Glazecalc",
     "privacy": "Privacidad - Glazecalc",
     "terms": "Términos de uso - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Aprobar un cambio - Glazecalc",
     "cones": "Tabla de conos: temperaturas de los conos Orton y SK - Glazecalc",
     "materials": "Materiales estándar para esmaltes: análisis y riesgos - Glazecalc",
-    "materialInfo": "{name}: análisis de óxidos y riesgos - Glazecalc"
+    "materialInfo": "{name}: análisis de óxidos y riesgos - Glazecalc",
+    "famousGlazes": "Esmaltes famosos - Glazecalc",
+    "famousGlaze": "Esmalte {name} - Glazecalc"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Escribe un número, como {example}, con punto para los decimales."
   },
   "meta": {
-    "description": "Escribe una receta y ve su fórmula unitaria (UMF), sílice:alúmina y fundentes. Gratis y de código abierto, para recetas, materiales y registros de cocción.",
+    "description": "Escribe una receta de esmalte cerámico y ve su fórmula unitaria (UMF), sílice:alúmina y fundentes. Gratis y de código abierto, para recetas y cocciones.",
     "guides": "Guías en lenguaje sencillo para ceramistas principiantes: qué es un esmalte, cómo prepararlo y mezclarlo con seguridad, cuidar a tu familia y cocer en un horno sencillo.",
     "glazingBasics": "De qué se compone un esmalte, cómo lo convierte en vidrio el horno y qué significan los conos, las fritas, las fórmulas unitarias y los defectos del esmalte. Una guía para principiantes.",
     "makingAGlaze": "Cómo comprar, guardar, pesar y mezclar un esmalte, darle el grosor correcto, probarlo en tu propia arcilla y llevar registros para poder repetirlo.",
@@ -177,16 +180,19 @@
     "homeSafety": "Qué hacer si un niño o una mascota traga un material para esmaltes, y cómo mantener seguros a tu familia los materiales, el polvo, el horno y las piezas hechas a mano.",
     "firing": "Cómo cocer en un horno eléctrico: elegir, colocar y leer los conos, y seguir curvas de cocción publicadas para bizcocho y esmalte, con una tabla de conos.",
     "learnWithJohnBritt": "Un complemento del curso de esmaltes gratuito en línea de John Britt: sus videos unidad por unidad, con las guías de Glazecalc para leer y ejercicios para probar en la calculadora.",
+    "teachingGlazeCalculation": "6 sesiones para enseñar la fórmula unitaria (fórmula Seger): materiales y probetas triaxiales, moles, de la receta a la fórmula y de vuelta, y defectos del esmalte, con ejemplos resueltos y hojas de trabajo para imprimir.",
     "advice": "Consejos prácticos de Glazecalc sobre mezclar, esmaltar y cocer, más los tuyos. Gratis para ceramistas.",
     "about": "Glazecalc es una calculadora y cuaderno de química de esmaltes, gratuito y de código abierto. Mira cómo calcula una fórmula unitaria y cómo está hecho.",
     "privacy": "Cómo trata Glazecalc tus datos: sin anuncios, sin analítica y sin rastreo, y nada se vende. Qué se guarda, por qué y cómo ejercer tus derechos.",
     "terms": "Los términos para usar Glazecalc: gratis para tus propios esmaltes y trabajo, justos con el servidor compartido, y ofrecido tal cual.",
     "assistants": "Usa Glazecalc desde Claude, Copilot, Cursor o Gemini mediante MCP: química de esmaltes, revisión de límites, sustitutos y las guías, y tus propias recetas.",
     "signup": "Crea una cuenta gratuita de Glazecalc para guardar tus recetas de esmaltes, materiales, notas y registros de cocción. Sin anuncios, y tus datos nunca se venden.",
-    "cones": "Conos pirométricos Orton y SK desde el 022, con sus temperaturas en °C y °F, la velocidad de calentamiento de cada tabla y el origen de las cifras.",
+    "cones": "Conos pirométricos Orton y SK desde el 022: tabla de temperaturas en °C y °F, la velocidad de calentamiento de cada tabla y el origen de las cifras.",
     "materials": "Los materiales de la biblioteca estándar de Glazecalc, desde feldespatos y arcillas hasta fritas y fuentes de boro, cada uno con su análisis de óxidos, fórmula unitaria y riesgos.",
     "materialInfo": "{name}: análisis de óxidos, fórmula unitaria, pérdida al fuego y riesgos en la biblioteca estándar de Glazecalc.",
     "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aporte a la fórmula unitaria, su pérdida al fuego y sus riesgos.",
+    "famousGlazes": "Esmaltes famosos de todo el mundo: la receta tradicional o el análisis histórico de cada esmalte, su fórmula unitaria y una versión con los materiales que se venden donde vives.",
+    "famousGlaze": "Esmalte {name} ({native}): su receta tradicional o su análisis histórico, la cocción, la fórmula unitaria y las fuentes, y una versión con los materiales que se venden donde vives.",
     "imageAlt": "El logotipo de Glazecalc y su título, química de esmaltes gratuita para ceramistas, junto a una foto de paquetes de conos cocidos."
   },
   "notices": {

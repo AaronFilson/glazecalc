@@ -724,7 +724,7 @@
     "keyBright": "Líne phoncáilte: san áit a raibh glónraí Stull ar an gceann is lonraí.",
     "keyLimits": "Línte stríocacha agus scáthú: raonta silice agus alúmana na sraithe {name}.",
     "keyCrazed": "Línte caola: san áit ar shnáithlíonraigh siad.",
-    "note": "Treoir, ní tuar. Bhácáil R. T. Stull (Transactions of the American Ceramic Society, 1912) ag cón 11 le floscanna socraithe ag 0.3 K₂O agus 0.7 CaO; athraíonn floscanna agus bácálacha eile na limistéir, agus d’fhéadfadh neamhlonrach tearcbhácáilte a bheith ar an gcairt mar lonrach. Is iad na limistéir mar a tharraingíonn Glazy iad."
+    "note": "Treoir, ní tuar. Bhácáil R. T. Stull (Transactions of the American Ceramic Society, 1912) ag thart ar chón 11, agus na floscanna socraithe ag 0.3 K₂O agus 0.7 CaO; bogann floscanna agus bácálacha eile na limistéir, agus is féidir le glónra nach bhfuil neamhlonrach ach toisc gur tearcbhácáladh é a bheith sa limistéar lonrach ar an gcairt fós. Tá na limistéir mar a tharraingíonn Glazy iad."
   },
   "slurry": {
     "heading": "Sainmheáchan agus uisce",
@@ -752,7 +752,17 @@
       "pint": "An meáchan pionta atá uait, oz"
     },
     "drySg": "Sainmheáchan na n-ábhar tirim",
-    "drySgHelp": "Thart ar 2.5 d’fhormhór na nglónraí; úsáideann Glazy 2.6.",
+    "drySgEmpty": "Ní theastaíonn sé ach do na meáchain thirime; ní theastaíonn sé don uisce le cur leis. Clóscríobh é más eol duit é.",
+    "drySgNeeded": "Clóscríobh sainmheáchan na n-ábhar tirim chun an glónra tirim sa bhuicéad agus an t-uisce do bhaisc nua a fheiceáil.",
+    "estimate": {
+      "mineral": "Meastachán, {sg}, ón rud as a ndéantar gach ábhar: dlús tomhaiste a mhianra. Athraigh é más fearr is eol duit.",
+      "kind": "Meastachán, {sg}: meánn iathchlocha agus créanna thart ar 2.6. Athraigh é más fearr is eol duit.",
+      "glass": "Meastachán, {sg}, oibrithe amach ó ocsaídí na bhfriotanna (is gloine iad). Athraigh é más fearr is eol duit.",
+      "mixed": "Meastachán, {sg}, ó gach ábhar: dlús tomhaiste a mhianra, thart ar 2.6 d’iathchlocha agus do chréanna, agus friotanna oibrithe amach óna n-ocsaídí. Athraigh é más fearr is eol duit.",
+      "leftOut": "Fágtha ar lár, mar nach eol a sainmheáchan: {names}.",
+      "none": "Gan meastachán don oideas seo: ní eol sainmheáchan na n-ábhar seo: {names}. Clóscríobh é más eol duit é.",
+      "was": "Úsáidtear d’fhigiúr féin. Ba é {sg} an meastachán; glan an réimse chun filleadh air."
+    },
     "batch": "Glónra tirim do bhaisc nua, {unit}",
     "contents": "Ag sainmheáchan {sg}, tá {glaze} de ghlónra tirim agus {water} d’uisce sa bhuicéad.",
     "add": "Chun sainmheáchan {target} a bhaint amach, cuir {water} d’uisce leis. Tá thart ar {volume} ann ag an deireadh.",
@@ -760,6 +770,7 @@
     "already": "Tá sé ag sainmheáchan {target} cheana.",
     "mix": "Measc {glaze} de ghlónra tirim le {water} d’uisce chun thart ar {volume} a fháil ag sainmheáchan {target}.",
     "badSg": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce) agus níos lú ná {dry} na n-ábhar tirim.",
+    "badSgWater": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce).",
     "badDry": "Ní mór sainmheáchan na n-ábhar tirim a bheith níos mó ná 1.",
     "note": "Tá an t-uisce de réir meáchain: meáíonn lítear cileagram, agus meáíonn galún SAM thart ar 8.3 lb. Glacann an uimhríocht leis go gcuireann na toirteanna le chéile, rud atá gar, ach nach bhfuil beacht: cuir uisce leis beagán ag an am, corraigh, agus tomhais arís. D’fhéadfadh dhá ghlónra ag an sainmheáchan céanna sreabhadh ar bhealach difriúil fós.",
     "saveTarget": "Sábháil sainmheáchan {sg} mar sprioc an oidis seo",

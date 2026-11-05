@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Ku baro koorsada glaze ee bilaashka ah ee John Britt",
       "text": "Koorsadiisa muuqaalka ah ee bilaashka ah ee YouTube, cutub cutub, oo leh hagayaashayada la akhriyo iyo layliyo lagu tijaabiyo Glazecalc. Ingiriisi ku qoran."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Barashada xisaabta glaze",
+      "text": "6 casharro oo loogu talagalay fasal ama koox waxbarasho, laga bilaabo tile-yada triaxial ilaa UMF labada dhinac loo xalliyey, oo leh warqado shaqo oo la daabaco."
     }
   },
   "more": "Hagayaal kale",
@@ -243,5 +247,20 @@
     "loading": "Maktabadda waa la soo rarayaa…",
     "failed": "Maktabadda lama soo rari karin. Mar dambe isku day.",
     "choosePrompt": "Dooro dalkaaga ama gobolkaaga si aad u aragto waxa halkaas lagu iibiyo."
+  },
+  "stull": {
+    "title": "Shaxda Stull: silica iyo alumina UMF-ta",
+    "regions": {
+      "unfused": "aan dhalaalin",
+      "matte": "aan ifayn (matte)",
+      "semi-matte": "badh-matte",
+      "bright": "ifaya",
+      "underfired": "aan si ku filan loo gubin",
+      "crazed": "crazing leh"
+    },
+    "keyBright": "Xariiq dhibcaha leh: meesha glaze-yada Stull ay ugu ifayeen.",
+    "keyCrazed": "Xariiqyo isdhaafsan: meesha ay crazing ku sameeyeen.",
+    "note": "Waa hage, ma aha saadaal. R. T. Stull (Transactions of the American Ceramic Society, 1912) wuxuu ku gubay qiyaastii cone 11 isagoo flux-yada ku dhejiyey 0.3 K₂O iyo 0.7 CaO; flux kale iyo gubid kale ayaa dhaqaajiya gobollada, oo glaze aan ifayn (matte) sababtoo ah keliya in aan si fiican loo gubin ayaa weli shaxda ku muuqan kara mid ifaya. Gobolladu waa sida Glazy u sawirto.",
+    "inGuide": "Silica (SiO₂) dhinac ahaan, qiyaastii 1 ilaa 7, iyo alumina (Al₂O₃) kor u kac, 0 ilaa 1, labaduba waxay ka yimaadeen UMF-ta. Qaybo qaab-gees ah ayaa bidix ka fidsan: kan aan dhalaalin kor bidix, kadibna aan ifayn, kadibna qayb ahaan aan ifayn. Qaybta aan hooska lahayn ee midigtooda ah way ifaysaa, xariiqda dhibcaha ah ee dhexdeeda ahna waa halka glaze-yada Stull ugu ifayeen. Kan aan si fiican loo gubin waa hoos midig, alumina yar iyo silica badan. Xariiqyada iskutallaabta ah, hoos shaxda iyo dhinaceeda bidix, waa halka tijaabooyinkiisu ay crazing ku yeesheen."
   }
 }

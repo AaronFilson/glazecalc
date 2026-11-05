@@ -123,158 +123,179 @@ Derek Au tehta v eno skledo v ločenih kupčkih, tako da lahko napako zajame naz
 
 ### Koliko vode
 
-Viri se ne strinjajo. Derek Au začne gosto, s 50 mL vode na 100 g prahu, in pozneje doda več. Potterycrafts za neko svojo glazuro{{en: glaze}} v prahu navaja 65 mL na 100 g. Na UT Austin uporabljajo enako maso vode in prahu; ko je Digitalfire 20 kg prahu stresel v 20 kg vode, je izmeril relativno gostoto{{en: specific gravity}} 1,46.
+Viri se ne ujemajo. Derek Au začne gosto, s 50 mL vode na 100 g prahu, in vodo doda pozneje. Potterycrafts za eno glazuro v prahu navaja 65 mL na 100 g. UT Austin uporablja enaki masi vode in prahu, in ko je Digitalfire 20 kg prahu dal v 20 kg vode, je izmeril relativno gostoto 1,46.
 
-Vodo je hitro dodati in počasi odstraniti, zato začnite z malo. Naša ocena: začnite s **približno 70 do 80 mL na 100 g** (700 do 800 mL na kilogram ali približno 11 do 12 US fl oz na funt). Pri tej gostoti pustite prah, da se namoči, nato glazuro zmešajte in presejte, potem pa postopoma dodajajte vodo, dokler relativna gostota ni prava. 1 mL vode tehta 1 g, zato jo lahko stehtate. Če je dodate preveč, pustite, da se glazura poseda, nato pa bistro vodo z vrha poberite z gobo ali jo odlijte.
+Vodo je hitro dodati in počasi odvzeti, zato začnite z malo. Naša ocena: začnite s **približno 70 do 80 mL na 100 g** (700 do 800 mL na kilogram ali približno 11 do 12 ameriških fl oz na funt). Pri tej gostoti pustite prah namočiti, premešajte in presejte, nato vodo dodajajte po malem, dokler relativna gostota ni prava. 1 mL vode tehta 1 g, zato jo lahko stehtate. Če je dodate preveč, pustite, da se glazura usede, nato bistro vodo z vrha poberite z gobo ali jo odlijte.
 
 ### Orodje in voda
 
-- **Propelerski mešalnik.** Digitalfire dobrega imenuje »nujnega«. V vedru delo opravi vrtalnik na kabel z mešalnim nastavkom. Na UT Austin mešajo še vsaj 4 do 5 minut po tem, ko je glazura videti zmešana, in pazijo, da se nastavek ne dotika vedra, saj lahko z njega postrga plastiko.
-- **Blender.** »Za majhne mešanice deluje izjemno dobro« (Digitalfire). Uporabljajte ga samo za glazuro: nikoli se ne sme vrniti v kuhinjo.
+- **Propelerski mešalnik.** Digitalfire dober mešalnik imenuje »nujen«. V vedru opravi delo vrtalnik s kablom in mešalnim nastavkom. UT Austin ga pusti delovati vsaj 4 do 5 minut potem, ko je glazura videti premešana, in pazi, da se nastavek ne dotika vedra, s katerega lahko postrga plastiko.
+- **Mešalnik (blender).** »Izjemno dobro deluje pri majhnih mešanicah« (Digitalfire). Uporabljajte ga samo za glazuro: nikoli se ne sme vrniti v kuhinjo.
 - **Metlica ali palica.** Zakinova izbira, kadar ni mešalnika.
 
-Tudi voda je različna in Digitalfire ugotavlja, da vpliva na to, kako se obnaša glazurna suspenzija{{en: slurry}}. Derek Au uporablja vodo iz reverzne osmoze, ker je njegova voda iz pipe trda. Karkoli uporabljate, si to zapišite.
+Tudi voda se razlikuje in Digitalfire navaja, da spremeni, kako se glazurna suspenzija{{en: slurry}} obnaša. Derek Au uporablja vodo iz reverzne osmoze, ker je njegova voda iz pipe trda. Kar koli uporabljate, si zapišite.
 
 ### Korak za korakom
 
-1. Nadenite si zaščitno dihalno masko in gumijaste rokavice, če boste z rokami segli v glazuro. Zakin nosi masko od začetka tehtanja, dokler glazura ni mokra.
+1. Nadenite si zaščitno dihalno masko. Če boste z rokami segli v glazuro, nadenite tudi gumijaste rokavice. Zakin nosi masko od začetka tehtanja, dokler glazura ni mokra.
 2. V vedro odmerite približno 70 do 80 mL vode na 100 g prahu.
-3. Stehtani prah dodajte nežno, z majhne višine. Na UT Austin dodajajo prah v toplo vodo; Zakin in Au dodajata vodo prahu. Priporočamo prah v vodo, ker se pri tem dvigne manj prahu, razen pri receptu z veliko bentonita: pri njem najprej med seboj premešajte suhe prahove.
-4. Pustite, da se prah **namoči**: naj vpija vodo, ne da bi ga mešali. Digitalfire počaka približno 20 minut. Prahovi, ki vsebujejo CMC ali drugo vezivo, morajo stati čez noč.
-5. Mešajte, dokler ni več suhih gnezd ali grudic.
-6. Glazuro dvakrat presejte (glejte spodaj).
-7. Pokrijte jo in pustite stati čez noč, nato jo znova premešajte in preverite, ali je na dnu trda plast.
-8. Izmerite relativno gostoto in postopoma dodajajte vodo, da dosežete ciljno vrednost.
-9. Označite vedro in si zapišite, kaj ste naredili.
-10. Počistite mokro: tla pobrišite z mokrim mopom in obrišite vse površine, tudi zunanjost posod s surovinami.
+3. Stehtani prah dodajte nežno, z majhne višine. UT Austin dodaja prah v toplo vodo; Zakin in Au dodajata vodo v prah. Predlagamo prah v vodo, kar dvigne manj prahu, razen pri receptu z veliko bentonita: tam najprej skupaj premešajte suhe prahove.
+4. **Pustite, da se prah namoči**{{en: slake}}, brez mešanja. Digitalfire počaka približno 20 minut. Prahovi z vezivom morajo stati čez noč.
+5. Mešajte, dokler ni suhih žepov ali grudic.
+6. Presejte dvakrat (glejte spodaj).
+7. Pokrijte in pustite počivati čez noč, nato znova premešajte in preverite, ali je na dnu trda plast.
+8. Izmerite relativno gostoto in vodo dodajajte po malem, dokler ne dosežete cilja. Da spoznate relativno gostoto suhe glazure, stehtajte tudi končno glazurno suspenzijo (glejte spodaj).
+9. Vedro označite in zapišite, kaj ste naredili.
+10. Počistite mokro: pobrišite tla in obrišite vse površine, tudi zunanjost posod s surovinami.
 
 ### Sejanje
 
-**Sito** je mrežica v okvirju. Ko glazuro s čopičem potiskate skozenj, razbijete grudice, ki ostanejo po mešanju, in ujamete delce, ki bi se po žganju pokazali kot pike. Višja ko je številka **mesh**, finejša je mrežica: 80 mesh ima odprtine velikosti približno 0,18 mm, 100 mesh pa približno 0,15 mm.
+**Sito**{{en: sieve}} je mrežica v okvirju. Ko glazuro s čopičem potiskate skozi, razbije grudice, ki jih mešanje pusti, in zadrži delce, ki bi se po žganju pokazali kot pike. Večja ko je številka **mesh**{{en: mesh}}, finejša je mrežica: 80 mesh ima odprtine približno 0,18 mm, 100 mesh pa približno 0,15 mm.
 
-Viri priporočajo različna sita. Zakin preseje dvakrat skozi sito 50 ali 80 mesh. Derek Au za večino glazur uporablja 120 mesh, zlasti za tiste s kobaltom ali železom: pri neki celadonski glazuri so po treh prehodih skozi 80 mesh še ostale železove pike, en prehod skozi 120 mesh pa jih je odpravil. Sita 60 do 80 mesh uporablja za pepelne glazure in druge z grobimi surovinami. Potterycrafts v Združenem kraljestvu priporoča 60 do 80 mesh. Varna izhodiščna izbira:
+Viri priporočajo različne mrežice. Zakin seje dvakrat skozi 50 ali 80 mesh. Derek Au za večino glazur uporablja 120 mesh, zlasti za tiste s kobaltom ali železom: trikratno sejanje skozi 80 mesh je v enem celadonu še pustilo železove pike, enkratno sejanje skozi 120 mesh pa je to odpravilo. Za pepelne glazure in druge z grobimi surovinami uporablja 60 do 80 mesh. Potterycrafts iz Združenega kraljestva predlaga 60 do 80 mesh. Varna privzeta izbira:
 
 Table: Katero sito uporabiti
-Label: Sito
+Label: Mrežica sita
 
-| Glazura                                                       | Sito                      |
-| ------------------------------------------------------------- | ------------------------- |
-| Večina glazur                                                 | Dva prehoda skozi 80 mesh |
-| Glazure z barvili{{en: colorants}}, kot sta kobalt ali železo | 100 do 120 mesh           |
-| Pepelne glazure in druge z grobimi surovinami                 | 60 do 80 mesh             |
+| Glazura                                       | Sito                  |
+| --------------------------------------------- | --------------------- |
+| Večina glazur                                 | Dvakrat skozi 80 mesh |
+| Glazure z barvili, kot sta kobalt ali železo  | 100 do 120 mesh       |
+| Pepelne glazure in druge z grobimi surovinami | 60 do 80 mesh         |
 
 ## Relativna gostota {#specific-gravity}
 
-**Relativna gostota**{{en: specific gravity, SG}} (okrajšano rel. gostota) pove, koliko prahu je v glazurni suspenziji{{en: slurry}}. To je masa določene prostornine glazure{{en: glaze}}, deljena z maso enake prostornine vode. Voda ima vrednost 1,00, glazura, pri kateri je {{SG 1.45}}, pa tehta 145 g na 100 mL. Če mešate do izmerjene relativne gostote, dobite vsakič enako gostoto in enako debel nanos. Nima enote, zato je enaka v gramih ali unčah.
+**Relativna gostota**{{en: specific gravity}} vam pove, koliko prahu je v glazurni suspenziji. To je masa določene prostornine glazure, deljena z maso enake prostornine vode. Voda ima 1,00, glazura z {{SG 1.45}} pa tehta 145 g na 100 mL. Z mešanjem do izmerjene relativne gostote vsakič dobite enako gostoto in enako plast. Nima enot, zato je enaka v gramih ali unčah.
 
 ### Merjenje s tehtanjem 100 mL
 
-1. Premešajte glazuro, da na dnu ni nič posedenega.
-2. Na tehtnico postavite **merilni valj** (visoko cev z merilnimi oznakami) za 100 mL ali brizgo za 100 mL in tarirajte.
-3. Natočite glazuro točno do 100 mL; oznako odčitajte v višini oči.
+1. Glazuro premešajte, da se nič ne usede.
+2. Na tehtnico postavite 100-mililitrski **merilni valj**{{en: graduated cylinder}} (visoko, označeno merilno cev) ali 100-mililitrsko brizgo in tarirajte tehtnico.
+3. Napolnite ga z glazuro natanko do 100 mL, oznako pa odčitajte v višini oči.
 4. Stehtajte in grame delite s 100: 145 g pomeni relativno gostoto 1,45.
 
-Digitalfire tudi označi gladino 500 g vode na lončku, ga do oznake napolni z glazuro in maso deli s 500; večja, polnejša mera je natančnejša. **Areometer**, plovec, ki ga odčitate tam, kjer obstane v glazuri, je hiter, a pri gostih ali zgoščenih glazurah lahko kaže napačno. Britanski areometri, na primer tisti podjetja Potclays, kažejo v stopinjah Baumé (°Bé). Po našem izračunu je relativna gostota = 145 ÷ (145 − °Bé), tako da je 46 °Bé približno 1,46. Starejše britanske knjige navajajo **maso pinte**, unče v britanski pinti glazure: delite jo z 20, tako da 29 oz pomeni relativno gostoto približno 1,45 (tudi to je naš izračun).
+Digitalfire označi tudi skodelico pri gladini 500 g vode, jo do oznake napolni z glazuro in maso deli s 500; večja, polnejša mera je natančnejša. **Areometer**{{en: hydrometer}}, plovec, ki ga odčitate tam, kjer obstane v glazuri, je hiter, a lahko pri gostih ali zgoščenih glazurah kaže napačno. Britanski areometri, na primer Potclaysov, kažejo stopinje Baumé (°Bé). Po našem izračunu je relativna gostota = 145 ÷ (145 − °Bé), zato je 46 °Bé približno 1,46. Starejše britanske knjige navajajo **maso pinte**{{en: pint weight}}, unče v britanski pinti glazure: delite jo z 20, tako da je 29 oz približno relativna gostota 1,45 (tudi naš izračun).
 
-### Ciljne vrednosti
+### Kaj je cilj
 
-Viri se ne strinjajo, najbolj pri nanašanju s čopičem in brizganju, kjer britanski dobavitelj Potclays navaja precej višje vrednosti (njegove so »le za orientacijo«). Vsako število jemljite kot izhodišče. Osnovni nasvet spletnega mesta Digitalfire je, da za vsako glazuro poiščete relativno gostoto in zgoščenost, ki delujeta, nato pa ju ponavljate in zapišete.
+Viri se ne ujemajo, najbolj pri nanosu s čopičem in brizganju, kjer britanski dobavitelj Potclays navaja veliko višje vrednosti (njegove so »le za orientacijo«). Vsako število jemljite kot izhodišče. Digitalfirov temeljni nasvet je, da za vsako glazuro najdete relativno gostoto in zgostitev, ki delujeta, ju nato ponavljate in zapišete.
 
-Table: Ciljne relativne gostote, pri katerih se viri razhajajo
+Table: Ciljne relativne gostote, kjer se viri ne ujemajo
 Label: Ciljne relativne gostote
 
-| Uporaba             | Digitalfire in Glazy                                                                                                                                                                    | Potclays (Združeno kraljestvo)                  | Varno izhodišče                                                              |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
-| Namakanje           | {{SG 1.40}} (pri namakanju 5 sekund) – {{SG 1.50}} (pri namakanju 1 sekundo); doma zmešanim zgoščenim glazuram najbolj ustreza {{SG 1.43–1.45}}                                         | Prozorne: {{SG 1.46–1.48}}; barvne: {{SG 1.61}} | {{SG 1.45}}; če kaplja, jo razredčite, da bo {{SG 1.43}}, in zgostite        |
-| Nanašanje s čopičem | {{SG 1.25}} (redka prozorna) – {{SG 1.55}} (temne podrobnosti)                                                                                                                          | {{SG 1.71–1.81}}                                | Upoštevajte navodila izdelka; uporabite CMC ali medij za nanašanje s čopičem |
-| Brizganje           | Brez vrednosti; Hopper v članku za Ceramic Arts Network svetuje precej redkejšo glazuro, z deflokulantom{{en: deflocculant}} (elektrolitom, dodatkom, ki naredi suspenzijo bolj tekočo) | {{SG 1.71}}                                     | Ni zanesljive vrednosti; brizgajte samo v komori za glaziranje               |
+| Uporaba         | Digitalfire in Glazy                                                                                                                                   | Potclays (Združeno kraljestvo)                | Varno izhodišče                                                 |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- | --------------------------------------------------------------- |
+| Namakanje       | {{SG 1.40}} (za 5-sekundno namakanje) do {{SG 1.50}} (za 1-sekundno namakanje); doma mešane glazure, ki so zgoščene, so najboljše pri {{SG 1.43–1.45}} | Prozorne {{SG 1.46–1.48}}; barvne {{SG 1.61}} | {{SG 1.45}}; razredčite na {{SG 1.43}} in zgostite, če kaplja   |
+| Nanos s čopičem | {{SG 1.25}} (redka prozorna) do {{SG 1.55}} (temni detajli)                                                                                            | {{SG 1.71–1.81}}                              | Sledite izdelku; uporabite CMC ali medij za nanašanje s čopičem |
+| Brizganje       | Brez vrednosti; Hopper, ki piše za Ceramic Arts Network, pravi veliko redkejša, z deflokulantom (dodatkom, ki naredi glazurno suspenzijo bolj tekočo)  | {{SG 1.71}}                                   | Ni zanesljivega števila; brizgajte samo v komori za glaziranje  |
 
-Da bi glazuro za namakanje preverili na oko, AMACO namaka 5 sekund in preveri, ali je nanos debel približno toliko kot ameriški kovanec za deset centov (dime). Digitalfire za preverjanje žge ploščice, namočene 5 sekund.
+Za preverjanje glazure za namakanje na oko AMACO namaka 5 sekund in išče plast, debelo približno kot ameriški kovanec dime. Digitalfire za preverbo žge ploščice, namočene 5 sekund.
 
 ### Voda za ciljno relativno gostoto: naša ocena
 
-Spodnja preglednica je naš lasten izračun, ne podatek iz vira. Predpostavlja, da imajo delci prahu gostoto 2,6 g na cm³, kar je predpostavka, ne meritev. Glina, topne surovine in zgoščanje spremenijo resnično glazuro, zato preglednico uporabite za začetek, nato pa merite. Za preverbo: pri enaki masi prahu in vode preglednica napove, da bo {{SG 1.44}}, kar je blizu vrednosti, ki jo je izmeril Digitalfire ({{SG 1.46}}). Pokaže tudi, da s 70 do 80 mL na 100 g začnete višje, kot je {{SG 1.50}}, torej pri večji gostoti, kot jo potrebujete.
+Spodnja preglednica je naš izračun, ne izračun vira. Predpostavlja, da imajo delci prahu gostoto 2,6 g na cm³, kar je predpostavka, ne meritev. Glina, topne surovine in zgostitev pravo glazuro spremenijo, zato jo uporabite za začetek in nato izmerite. Za preverbo: za enaki masi prahu in vode napove {{SG 1.44}}, blizu Digitalfirovi izmerjeni {{SG 1.46}}. Pokaže tudi, da vas 70 do 80 mL na 100 g postavi nad {{SG 1.50}}, gosteje, kot potrebujete.
 
 Table: Voda za ciljno relativno gostoto (naša ocena)
 Label: Voda za ciljno relativno gostoto
 
-| Cilj        |   Na 100 g prahu |       Na kilogram |               Na funt |
-| ----------- | ---------------: | ----------------: | --------------------: |
-| {{SG 1.40}} | približno 115 mL | približno 1150 mL | približno 18 US fl oz |
-| {{SG 1.45}} |  približno 98 mL |  približno 980 mL | približno 15 US fl oz |
-| {{SG 1.50}} |  približno 85 mL |  približno 850 mL | približno 13 US fl oz |
-| {{SG 1.60}} |  približno 64 mL |  približno 640 mL | približno 10 US fl oz |
+| Cilj        |   Na 100 g prahu |       Na kilogram |                      Na funt |
+| ----------- | ---------------: | ----------------: | ---------------------------: |
+| {{SG 1.40}} | približno 115 mL | približno 1150 mL | približno 18 ameriških fl oz |
+| {{SG 1.45}} |  približno 98 mL |  približno 980 mL | približno 15 ameriških fl oz |
+| {{SG 1.50}} |  približno 85 mL |  približno 850 mL | približno 13 ameriških fl oz |
+| {{SG 1.60}} |  približno 64 mL |  približno 640 mL | približno 10 ameriških fl oz |
+
+### Relativna gostota vaše suhe glazure med mešanjem
+
+Zgornja vrednost 2,6 je ugibanje. Vrednost za vašo glazuro, gostoto njenega suhega prahu, lahko izračunate iz treh števil, ki jih dobite med mešanjem. Z njo lahko pozneje iz relativne gostote izračunate, koliko prahu je v katerem koli vedru te glazure, in vodo za naslednjo mešanico. Naš izračun, ne izračun vira:
+
+1. Zapišite maso suhega prahu v mešanici: skupno maso iz recepta.
+2. Pred začetkom stehtajte prazno vedro ali nanj napišite njegovo maso.
+3. Glazuro kot običajno zmešajte, presejte in pripravite do njene relativne gostote. Vse potisnite skozi sito in ga sperite v vedro, da noben prah ne ostane zunaj.
+4. Stehtajte polno vedro in odštejte maso vedra. To je masa glazurne suspenzije.
+5. Izmerite relativno gostoto.
+
+Nato:
+
+- **Voda** = masa suspenzije − masa prahu.
+- **Prostornina suspenzije** v mL = masa suspenzije v gramih ÷ relativna gostota.
+- **Prostornina prahu** = prostornina suspenzije − voda (1 g vode je 1 mL).
+- **Relativna gostota suhe glazure** = masa prahu ÷ prostornina prahu.
+
+Na primer: iz 1000 g prahu nastane 1980 g suspenzije z {{SG 1.45}}. Vode je 980 g, suspenzije je 1980 ÷ 1,45 = približno 1366 mL, prah zavzame 1366 − 980 = 386 mL, relativna gostota suhe glazure pa je 1000 ÷ 386 = približno 2,59.
+
+Na koncu stehtajte celotno suspenzijo, ne vode, ko jo zlivate, da voda, ki izhlapi ali se razlije, ne šteje. Majhne napake tu narastejo: odčitek relativne gostote, ki se zmoti za 0,01, premakne rezultat za približno 2 do 4 %, pri redkejši glazuri še več. Uporabite mešanico 1 kg ali več, natančno tehtnico in za relativno gostoto zgornjo metodo s skodelico za 500 g. Večina pogostih surovin ima med približno 2,5 in 2,9, zato vrednost daleč zunaj tega območja pri glazuri brez veliko cirkonijevega silikata ali svinca verjetno pomeni napako pri merjenju. Vrednost zapišite na recept.
 
 ### Grenka sol, CMC in bentonit
 
-**Grenka sol** (magnezijev sulfat) povzroči, da se glazura v mirovanju rahlo zgosti, ko jo premešate, pa spet teče. Temu pravimo **flokulacija**{{en: flocculating}}, glazura, ki se tako obnaša, pa je **tiksotropna**{{en: thixotropic}}: nanaša se bolj enakomerno, manj kaplja in se manj poseda. Digitalfire predlaga, da začnete s približno 2 g na galono, ko je relativna gostota prava (grobo 0,5 g na liter, naš preračun), in količino prilagodite ob vsakem mešanju, saj noben recept ne bi smel določati odmerka. Priporočamo, da grenko sol najprej raztopite v malo vroče vode. V enem od primerov spletnega mesta Digitalfire je glazura ({{SG 1.45}}) kapljala, zato so jo z vodo razredčili, da je bila {{SG 1.43}}, z grenko soljo pa znova zgostili do kremaste gostote; nato se je nanesla enakomerno. Groba preverba: premešajte, nehajte in opazujte. Zgoščena glazura se giblje še približno 2 ali 3 sekunde, nato se ustavi in se malo vrne nazaj.
+**Grenka sol**{{en: Epsom salts}} povzroči, da se glazura, ko miruje, rahlo zgosti, ko jo premešate, pa spet teče. Temu rečemo **flokulacija**{{en: flocculating}}, glazura, ki se tako obnaša, pa je **tiksotropna**{{en: thixotropic}}: nanese se bolj enakomerno, manj kaplja in se manj poseda. Digitalfire predlaga, da začnete s približno 2 g na galono, ko je relativna gostota prava (približno 0,5 g na liter, naša pretvorba), in količino prilagodite pri vsakem mešanju, saj noben recept ne bi smel določati odmerka. Predlagamo, da jo najprej raztopite v malo vroče vode. V Digitalfirovem primeru je glazura s {{SG 1.45}} kapljala, zato so jo z vodo razredčili na {{SG 1.43}} in z grenko soljo spet zgostili do kremaste, in nanesla se je enakomerno. Groba preverba: premešajte, nehajte in opazujte. Zgoščena glazura se premika še približno 2 ali 3 sekunde, nato se ustavi in malo odskoči nazaj.
 
-**CMC** (karboksimetilceluloza) naredi suspenzijo bolj lepljivo in počasneje sušečo ter pusti trši nanos, ki se drži izdelka. Najbolj je pomembna pri glazurah za nanos s čopičem in glazurah z veliko frite{{en: frit}}. V primeru spletnega mesta Digitalfire v 1000 g suspenzije vmešajo 3,75 g, vmešati pa jo je treba z blenderjem. Glazura s CMC se z grenko soljo ne zgosti, in ker se mikrobi hranijo z vezivom, se lahko v vedru spremeni in začne smrdeti.
+**CMC**{{en: CMC gum}} (karboksimetilceluloza) naredi glazurno suspenzijo bolj lepljivo in počasnejšo pri sušenju ter pusti trdnejšo plast, ki se drži izdelka. Najpomembnejša je pri glazurah za nanos s čopičem in glazurah z veliko frite. Digitalfirov primer v 1000 g suspenzije vmeša 3,75 g, in to je treba vmešati z mešalnikom (blenderjem). Glazura s CMC se z grenko soljo ne zgosti, in ker se z vezivom hranijo mikrobi, se lahko v vedru spremeni in začne smrdeti.
 
-**Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 3 % bentonita; po navedbah Digitalfire glazura z več kot 15 % gline ne bi smela potrebovati bentonita v več kot 1 % mase suhe glazure.
+**Bentonit**, zelo fina glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se za to navadno zanašajo na 15 do 25 % surove gline. Pri receptu z malo gline pomaga približno 1 do 3 % bentonita; Digitalfire pravi, da glazura z več kot 15 % gline ne bi smela potrebovati več kot 1 % bentonita glede na maso suhe glazure.
 
 ## Testne ploščice in testne serije {#testing}
 
 ### Začnite z malim
 
-Derek Au napreduje v treh korakih: preizkus s 50 ali 100 g, če uspe, poskusna mešanica z 1 do 2 kg, nato delavniška mešanica s 5 do 10 kg. Po naši oceni da preizkus s 100 g, pri katerem je {{SG 1.45}}, približno 135 mL (približno 4½ US fl oz) glazurne suspenzije{{en: slurry}}, kar zadostuje za namakanje nekaj majhnih ploščic v ozkem lončku.
+Derek Au napreduje v treh korakih: preizkus s 50 ali 100 g, preizkus z 1 do 2 kg, če deluje, nato mešanica 5 do 10 kg za delavnico. Po naši oceni da preizkus s 100 g pri {{SG 1.45}} približno 135 mL (približno 4½ ameriške fl oz) glazurne suspenzije, kar zadostuje za namakanje nekaj majhnih ploščic v ozki skodelici.
 
 ### Preizkušajte na svoji glini
 
-Glazura{{en: glaze}} je lahko na drugi glini ali v drugi peči videti povsem drugače: Clay Art Center je vsako od svojih prenovljenih glazur preizkusil na štirih glinenih masah{{en: clay bodies}}, pri stožcu{{en: cone}} 6 in pri stožcu 10. Vodnik za začetnike o preizkušanju glazur podjetja Potclays priporoča:
+Glazura je lahko na drugi glini ali v drugi peči videti precej drugače: Clay Art Center je vsako od svojih preoblikovanih glazur preizkusil na štirih glinenih masah, pri stožcu 6 in pri stožcu 10. Potclaysov vodnik za začetnike o preizkušanju glazur predlaga:
 
-- 6 do 10 **testnih ploščic**{{en: test tiles}} (majhnih kosov za preizkus glazure) iz gline, ki jo boste dejansko uporabljali, z zabeležko, ali so biskvitno žgane{{en: bisqued}} ali popolnoma suhe
-- po eno spremembo naenkrat
-- enkratno in dvakratno namakanje, da vidite glazuro v tanki in debeli plasti
+- 6 do 10 **testnih ploščic**{{en: test tiles}} (majhnih kosov za preizkus glazure) iz gline, ki jo boste res uporabljali, z zapisom, ali so biskvitno žgane ali popolnoma suhe
+- eno spremembo naenkrat
+- enkratno in dvakratno namakanje, da vidite glazuro tanko in debelo
 - vse ploščice v istem žganju
-- oznako na vsaki ploščici pred žganjem, z žigom, vrezom ali podglazurnim svinčnikom.
+- oznako na vsaki ploščici pred žganjem, z žigom, vrezom ali podglazurnim svinčnikom. Žgane ploščice so si podobne, oznaka, narejena pred žganjem, pa peč preživi, tako da vedno veste, kateri recept je na kateri ploščici.
 
-Priporočamo pokončne ploščice (ploska ploščica skrije, kako daleč glazura steče) s pasom teksture, ki pokaže, kako se barva glazure na robovih spremeni, in z neglaziranim dnom. Vsako postavite na majhen krožniček ali košček biskvita ali pa na šamotno ploščo z ločilnim premazom, da se kaplje ujamejo. Ob ploščice postavite **kontrolni stožec**{{en: witness cone}}, majhen keramični stožec, ki se upogne, ko je dobil dovolj toplote, da pokaže, koliko so je prejele ploščice; stožce pojasni vodnik [Žganje v preprosti peči](/guides/firing). Vsaki ploščici dajte kratko oznako in jo v zapiskih zapišite ob recept. Willers v članku za Ceramic Arts Network uporablja številke in črke, sam sistem pa zapiše na začetek zvezka.
+Predlagamo pokončne ploščice, saj ploska ploščica skrije, koliko glazura steče, s teksturiranim pasom, ki pokaže, kako se barva na robovih spremeni, in z golim dnom. Vsako postavite na majhen krožniček ali kos biskvita ali na šamotno ploščo s premazom, da ujame kaplje. Ob ploščice postavite **kontrolni stožec**{{en: witness cone}}, majhen keramični stožec, ki se upogne, ko prejme dovolj toplote, da pokaže, kaj so ploščice prejele; [vodnik o žganju](/guides/firing) razloži stožce. Vsaki ploščici dajte kratko oznako in jo v zapiskih zapišite ob recept. Willers, ki piše za Ceramic Arts Network, uporablja številke in črke, sam sistem pa zapiše na začetek beležnice.
 
 ### Testne serije
 
-**Testna serija**{{en: line blend}} je vrsta preizkusov, ki enakomerno prehaja od ene mešanice do druge: od ene glazure do druge ali od osnovne glazure do iste glazure z več barvila{{en: colorant}}. Derek Au na primer v prozorni osnovi povečuje delež železovega oksida v korakih po 1 %. Volumska metoda, povezana z Ianom Curriejem, prihrani čas, ker zmešate samo obe krajni mešanici:
+**Testna serija**{{en: line blend}} je vrsta preizkusov, ki enakomerno prehaja od ene mešanice do druge: od ene glazure do druge ali od osnovne glazure do iste glazure z več barvila. Derek Au na primer železov oksid v prozorni osnovi spreminja v korakih po 1 %. Prostorninska metoda, povezana z imenom Iana Curriea, prihrani čas, ker zmešate le obe skrajni mešanici:
 
-1. Zmešajte obe krajni glazuri, A in B, v enako velikih mešanicah in obe presejte.
-2. Tisti z manjšo prostornino dodajte vodo, dokler obe nimata točno enake mokre prostornine.
-3. Obe premešajte, nato z brizgo odmerite vsako mešanico v njen oštevilčeni lonček.
-4. Premešajte vsak lonček in vanj pomočite ploščico.
+1. Zmešajte skrajni glazuri, A in B, kot mešanici enake velikosti, in obe presejte.
+2. Tisti z manjšo prostornino dodajte vodo, dokler nimata obe natanko enake mokre prostornine.
+3. Obe premešajte, nato vsako mešanico z brizgo odmerite v svojo oštevilčeno skodelico.
+4. Vsako skodelico premešajte in vanjo pomočite ploščico.
 
-V našem izračunanem primeru je A 100 g prozorne osnove, B pa enaka osnova z dodanimi 4 g rdečega železovega oksida (dodatek 4 %). Vsak mililiter B vsebuje enak delež osnove kot mililiter A, poleg tega pa še železo, zato lončki prehajajo od mešanice brez železa do 4 % v korakih po 1 %. Vsaka krajna mešanica prispeva k seriji 100 mL, za kar po naši oceni zadostuje mešanica s 100 g.
+V našem preračunanem primeru je A 100 g prozorne osnove, B pa enaka osnova z dodanimi 4 g rdečega železovega oksida (4-odstotni dodatek). Vsak mililiter B vsebuje enak delež osnove kot mililiter A, in še železo, zato skodelice napredujejo od nič železa do 4 % v korakih po 1 %. Vsaka skrajna mešanica da v serijo 100 mL, kar po naši oceni pokrije mešanica s 100 g.
 
-Table: Testna serija z železom v petih korakih, 40 mL na lonček (naš izračunani primer)
+Table: Testna serija z železom v petih korakih, 40 mL na skodelico (naš preračunani primer)
 Label: Primer testne serije
 
-| Lonček | Prozorna osnova (A) | Osnova s 4 % železa (B) | Železov oksid, % osnove |
-| ------ | ------------------: | ----------------------: | ----------------------: |
-| 1      |               40 mL |                    0 mL |                       0 |
-| 2      |               30 mL |                   10 mL |                       1 |
-| 3      |               20 mL |                   20 mL |                       2 |
-| 4      |               10 mL |                   30 mL |                       3 |
-| 5      |                0 mL |                   40 mL |                       4 |
+| Skodelica | Prozorna osnova (A) | Osnova s 4 % železa (B) | Železov oksid, % osnove |
+| --------- | ------------------: | ----------------------: | ----------------------: |
+| 1         |               40 mL |                    0 mL |                       0 |
+| 2         |               30 mL |                   10 mL |                       1 |
+| 3         |               20 mL |                   20 mL |                       2 |
+| 4         |               10 mL |                   30 mL |                       3 |
+| 5         |                0 mL |                   40 mL |                       4 |
 
-Metoda zahteva skrbno računanje, dobro premešani krajni mešanici z enako relativno gostoto{{en: specific gravity}} in natančno tehtnico. Derek Au mešanice pripravlja tudi po masi namesto po prostornini. **Triaksialna mešanica** naredi isto s tremi krajnimi mešanicami, razporejenimi v trikotnik.
+Metoda zahteva skrbno računanje, dobro premešani skrajni mešanici z enakomerno relativno gostoto in natančno tehtnico. Derek Au mešanice meša tudi po masi namesto po prostornini. **Triaksialna mešanica**{{en: triaxial blend}} naredi enako s tremi skrajnimi mešanicami, razporejenimi v trikotnik.
 
 > [!NOTE]
-> Ko je kateri od korakov obetaven, ga funkcija **Shrani kot kopijo** na [strani recepta](/recipe) ohrani kot samostojen recept, izvirnik pa pusti nespremenjen.
+> Ko je korak obetaven, ga **Shrani kot kopijo** na [strani z receptom](/recipe) ohrani kot samostojen recept, izvirnik pa pusti nespremenjen.
 
 ## Vodenje zapiskov {#records}
 
-Willers cilj dobro povzame: »dovolj podatkov, da lahko ugotovljene rezultate ponovite ali se jim izognete«. Pred začetkom zapišite, kaj nameravate preizkusiti, ob praznjenju peči pa rezultate. Potclays dodaja še način nanosa, debelino, glineno maso{{en: clay body}} in celotno žganje, vključno z rampami{{en: ramps}}, zadržanji{{en: holds}} in hlajenjem. **Rampa** je hitrost segrevanja ali hlajenja, na primer {{60 °C; 108 °F}} na uro, **zadržanje** pa peč za določen čas obdrži pri eni temperaturi. Zapišite številke šarž, uporabljeno vodo in vsako zamenjavo: zaradi zamenjave glinenca{{en: feldspar}} je moral Clay Art Center prilagoditi približno polovico svojih glazur{{en: glazes}}.
+Willers cilj dobro opiše: »dovolj podatkov, da lahko rezultate, ki ste jih odkrili, ponovite ali se jim izognete«. Pred začetkom zapišite, kaj nameravate preizkusiti, ob praznjenju peči pa rezultate. Potclays doda nanašanje, debelino, glineno maso in celotno žganje, vključno z rampami, zadržanji in hlajenjem. **Rampa**{{en: ramp}} je hitrost segrevanja ali ohlajanja, na primer {{60 °C; 108 °F}} na uro, **zadržanje**{{en: hold}} pa peč za nastavljeni čas drži pri eni temperaturi. Zapišite številke šarž, vodo, ki ste jo uporabili, in vsako zamenjavo: zaradi zamenjave glinenca je moral Clay Art Center prilagoditi približno polovico svojih glazur.
 
 Table: Kaj zapisati za vsako mešanico glazure (naša predloga)
 Label: Predloga zapiska
 
-| Del      | Kaj zapisati                                                                                                                                                                                                                                                       |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Recept   | Recept in njegova različica; blagovne znamke surovin in številke šarž; morebitne zamenjave                                                                                                                                                                         |
-| Mešanje  | Datum; velikost mešanice; dodana voda in njena vrsta (iz pipe, iz reverzne osmoze ali destilirana); relativna gostota{{en: specific gravity}} po mešanju in končna relativna gostota; dodana grenka sol, CMC in bentonit; velikost sita (mesh) in število prehodov |
-| Nanos    | Glinena masa; stožec{{en: cone}} biskvitnega žganja{{en: bisque}}; namakanje, nanašanje s čopičem ali polivanje; čas namakanja ali število nanosov; debelina suhega nanosa                                                                                         |
-| Žganje   | Peč in položaj na šamotni plošči; program žganja z rampami, zadržanji in hlajenjem; atmosfera v peči (oksidacijska{{en: oxidation}} ali redukcijska{{en: reduction}}); kaj je pokazal kontrolni stožec{{en: witness cone}}, ne le, kaj je bilo nastavljeno na peči |
-| Rezultat | Površina in barva; morebitno odtekanje, lasaste razpoke{{en: crazing}} ali luknjice{{en: pinholes}}; fotografije s sprednje, zadnje in stranske strani; oznaka ploščice                                                                                            |
+| Del       | Kaj zapisati                                                                                                                                                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept    | Recept in njegova različica; blagovne znamke surovin in številke šarž; morebitne zamenjave                                                                                                                                                                                         |
+| Mešanje   | Datum; velikost mešanice; dodana voda in njena vrsta (iz pipe, iz reverzne osmoze ali destilirana); relativna gostota po mešanju in končna; masa končne glazurne suspenzije, za relativno gostoto suhe glazure; dodana grenka sol, CMC in bentonit; mrežica sita in število sejanj |
+| Nanašanje | Glinena masa; stožec biskvitnega žganja; namakanje, nanos s čopičem ali polivanje; čas namakanja ali število plasti; debelina suhe plasti                                                                                                                                          |
+| Žganje    | Peč in položaj na šamotni plošči; program žganja z rampami, zadržanji in hlajenjem; atmosfera (oksidacija ali redukcija); kaj je pokazal kontrolni stožec, ne le, na kaj je bila nastavljena peč                                                                                   |
+| Rezultat  | Površina in barva; morebitno odtekanje, lasaste razpoke ali luknjice; fotografije spredaj, zadaj in s strani; oznaka ploščice                                                                                                                                                      |
 
 > [!NOTE]
-> V aplikaciji Glazecalc shranjen [recept](/recipe) vsebuje sam recept. [Dnevnik žganja](/firing) beleži vsako žganje: peč, datum, čase, temperature, stožce in opombe. V [zapiskih](/notes) je vse drugo, na primer zgornji zapis o mešanici in kaj je pokazala vsaka ploščica.
+> V aplikaciji Glazecalc shranjen [recept](/recipe) hrani sam recept. [Dnevnik žganja](/firing) zapiše vsako žganje: peč, datum, čase, temperature, stožce in opombe. [Opombe](/notes) hranijo vse drugo, na primer zgornji zapisek o mešanici in to, kar je pokazala vsaka ploščica.
 
 ## Viri {#sources}
 

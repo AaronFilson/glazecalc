@@ -123,158 +123,179 @@ Derek Au navažuje do jedné misky v oddělených hromádkách, takže chybu lze
 
 ### Kolik vody
 
-Zdroje se neshodují. Derek Au začíná hustě, s 50 mL vody na 100 g prášku, a další vodu přidává později. Potterycrafts uvádí u jedné práškové glazury{{en: glaze}} 65 mL na 100 g. UT Austin používá stejnou hmotnost vody a prášku. Když Digitalfire vsypal 20 kg prášku do 20 kg vody, naměřil měrnou hmotnost{{en: specific gravity}} 1,46.
+Zdroje se neshodují. Derek Au začíná hustě, s 50 mL vody na 100 g prášku, a vodu přidává později. Potterycrafts uvádí u jedné práškové glazury 65 mL na 100 g. UT Austin používá stejnou hmotnost vody a prášku, a když Digitalfire nasypal 20 kg prášku do 20 kg vody, naměřil měrnou hmotnost 1,46.
 
-Vodu přidáte rychle, ale ubrat ji trvá dlouho, proto začněte s menším množstvím. Náš odhad: začněte s **asi 70–80 mL na 100 g** (700–800 mL na kilogram, neboli asi 11–12 US fl oz na libru). Při této hustotě nechte prášek nasáknout, rozmíchejte ho a prosejte, pak přidávejte vodu po troškách, dokud nebude měrná hmotnost správná. 1 mL vody váží 1 g, takže vodu můžete navážit. Pokud jí přidáte příliš, nechte glazuru usadit a pak čirou vodu z hladiny odeberte houbou nebo ji slijte.
+Vodu přidáte rychle, ale odebírá se pomalu, proto začněte s menším množstvím. Náš odhad: začněte s **asi 70 až 80 mL na 100 g** (700 až 800 mL na kilogram neboli asi 11 až 12 amerických fl oz na libru). Při této hustotě nechte prášek nasáknout, rozmíchejte a prosejte a pak přidávejte vodu po troškách, dokud nebude měrná hmotnost správná. 1 mL vody váží 1 g, takže ji můžete navážit. Pokud vody přidáte moc, nechte glazuru usadit a čirou vodu shora odeberte houbou nebo slijte.
 
 ### Nástroje a voda
 
-- **Vrtulové míchadlo.** Digitalfire označuje dobré míchadlo za „nezbytné“. V kbelíku poslouží síťová vrtačka s míchacím nástavcem. UT Austin ji nechává běžet ještě alespoň 4–5 minut poté, co glazura vypadá promíchaná, a dbá, aby se nástavec nedotýkal stěn kbelíku, ze kterých by mohl seškrabávat plast.
-- **Mixér.** „Funguje mimořádně dobře u malých dávek“ (Digitalfire). Používejte ho jen na glazuru: už nikdy se nesmí vrátit do kuchyně.
-- **Metla nebo tyčka.** Tu volí Zakin, když nemá míchadlo.
+- **Vrtulové míchadlo.** Digitalfire označuje dobré míchadlo za „nezbytné“. V kbelíku poslouží vrtačka na kabel s míchacím nástavcem. UT Austin míchá ještě nejméně 4 až 5 minut poté, co glazura vypadá rozmíchaná, a nástavec drží mimo stěny kbelíku, ze kterých by mohl seškrabávat plast.
+- **Mixér.** „U malých dávek funguje mimořádně dobře“ (Digitalfire). Mějte ho jen na glazuru: do kuchyně se už nikdy nesmí vrátit.
+- **Metla nebo míchací tyč.** Volba, kterou Zakin používá, když nemá míchadlo.
 
-Liší se i voda a Digitalfire upozorňuje, že ovlivňuje chování glazurové suspenze{{en: slurry}}. Derek Au používá vodu z reverzní osmózy, protože má tvrdou vodu z vodovodu. Ať použijete jakoukoli, zapište si ji.
+Voda se také liší a Digitalfire upozorňuje, že mění chování glazurové suspenze. Derek Au používá vodu z reverzní osmózy, protože jeho voda z vodovodu je tvrdá. Ať používáte jakoukoli, zapište si ji.
 
 ### Krok za krokem
 
-1. Nasaďte si respirátor. Pokud budete mít ruce v glazuře, vezměte si i gumové rukavice. Zakin nosí masku od začátku vážení, dokud glazura není mokrá.
-2. Do kbelíku odměřte asi 70–80 mL vody na 100 g prášku.
-3. Navážený prášek přidávejte opatrně, z malé výšky. UT Austin přidává prášek do teplé vody; Zakin a Au přidávají vodu k prášku. Doporučujeme sypat prášek do vody, protože se při tom zvíří méně prachu. Výjimkou je recept s velkým množstvím bentonitu: u něj nejprve promíchejte suché prášky dohromady.
-4. **Nechte ho nasáknout**: prášek nechte rozmočit ve vodě bez míchání. Digitalfire čeká asi 20 minut. Prášky s pojivem je třeba nechat stát přes noc.
-5. Míchejte, dokud v glazuře nejsou žádná suchá místa ani hrudky.
-6. Glazuru dvakrát prosejte (viz níže).
-7. Přikryjte ji a nechte přes noc odstát, pak ji znovu promíchejte a zkontrolujte, zda se na dně neusadila tvrdá vrstva.
-8. Změřte měrnou hmotnost a po troškách přidávejte vodu, dokud nedosáhnete cílové hodnoty.
-9. Kbelík označte štítkem a postup si zapište.
-10. Ukliďte namokro: vytřete podlahu a otřete všechny povrchy, včetně vnější strany nádob se surovinami.
+1. Nasaďte si respirátor, a pokud budete mít ruce v glazuře, i gumové rukavice. Zakin nosí masku od začátku navažování, dokud glazura není mokrá.
+2. Do kbelíku odměřte asi 70 až 80 mL vody na 100 g prášku.
+3. Navážený prášek přidávejte opatrně, z malé výšky. UT Austin sype prášek do teplé vody; Zakin a Au lijí vodu na prášek. Doporučujeme sypat prášek do vody, protože se tak víří méně prachu, s výjimkou receptu s velkým množstvím bentonitu: u něj nejdřív promíchejte suché prášky dohromady.
+4. Nechte prášek **nasáknout bez míchání**{{en: slake}}. Digitalfire čeká asi 20 minut. Prášky s pojivem musí stát přes noc.
+5. Míchejte, dokud nezmizí suchá místa a hrudky.
+6. Dvakrát ji prosejte (viz níže).
+7. Přikryjte ji a nechte přes noc odstát, pak ji znovu rozmíchejte a zkontrolujte, jestli se na dně neusadila tvrdá vrstva.
+8. Změřte měrnou hmotnost a po troškách přidávejte vodu, dokud nedosáhnete cílové hodnoty. Abyste zjistili měrnou hmotnost suchých surovin své glazury, zvažte i hotovou suspenzi (viz níže).
+9. Kbelík označte a zapište si, co jste udělali.
+10. Uklízejte namokro: vytřete podlahu a otřete všechny povrchy, včetně vnější strany nádob se surovinami.
 
 ### Prosévání
 
-**Síto** je síťka napnutá v rámu. Když glazuru protlačujete sítem štětcem, rozbijete hrudky, které po míchání zůstanou, a zachytíte částice, které by po výpalu vytvořily tmavé tečky. Čím vyšší je číslo **mesh**, tím je síto jemnější: 80 mesh má velikost oka asi 0,18 mm a 100 mesh asi 0,15 mm.
+**Síto**{{en: sieve}} je síťka v rámu. Protlačování glazury sítem štětcem rozbije hrudky, které po míchání zůstanou, a zachytí částice, které by se vypálily jako tmavé tečky. Čím vyšší číslo **mesh**{{en: mesh}}, tím jemnější síto: 80 mesh má oka asi 0,18 mm a 100 mesh asi 0,15 mm.
 
-Zdroje doporučují různé velikosti ok. Zakin prosévá dvakrát sítem 50 nebo 80 mesh. Derek Au používá u většiny glazur 120 mesh, hlavně u glazur s kobaltem nebo železem: v jednom seladonu zůstaly tmavé tečky železa i po třech průchodech sítem 80 mesh a jeden průchod sítem 120 mesh to napravil. Síta 60–80 mesh používá u popelových glazur a dalších glazur s hrubými surovinami. Potterycrafts ve Velké Británii doporučuje 60–80 mesh. Bezpečná výchozí volba:
+Zdroje doporučují různá síta. Zakin prosévá dvakrát sítem 50 nebo 80 mesh. Derek Au používá pro většinu glazur 120 mesh, hlavně pro ty s kobaltem nebo železem: po třech průchodech sítem 80 mesh zůstaly v jednom seladonu tečky železa a jeden průchod sítem 120 mesh to vyřešil. Síta 60 až 80 mesh používá pro popelové glazury a další glazury s hrubými surovinami. Potterycrafts ve Spojeném království doporučuje 60 až 80 mesh. Bezpečná výchozí volba:
 
-Table: Které síto použít
-Label: Velikost oka síta
+Table: Jaké síto použít
+Label: Síto podle mesh
 
-| Glazura                                                        | Síto                       |
-| -------------------------------------------------------------- | -------------------------- |
-| Většina glazur                                                 | Dva průchody sítem 80 mesh |
-| Glazury s barvivy{{en: colorants}}, jako je kobalt nebo železo | 100–120 mesh               |
-| Popelové glazury a další glazury s hrubými surovinami          | 60–80 mesh                 |
+| Glazura                                       | Síto                       |
+| --------------------------------------------- | -------------------------- |
+| Většina glazur                                | Dva průchody sítem 80 mesh |
+| Glazury s barvivy, jako je kobalt nebo železo | 100 až 120 mesh            |
+| Popelové glazury a další s hrubými surovinami | 60 až 80 mesh              |
 
 ## Měrná hmotnost {#specific-gravity}
 
-**Měrná hmotnost**{{en: specific gravity}} (SG) ukazuje, kolik prášku je ve vaší glazurové suspenzi{{en: slurry}}. Je to hmotnost určitého objemu glazury{{en: glaze}} dělená hmotností stejného objemu vody. Voda má 1,00 a když je {{SG 1.45}}, váží glazura 145 g na 100 mL. Mícháním na změřenou měrnou hmotnost dosáhnete pokaždé stejné hustoty a stejné vrstvy. Měrná hmotnost nemá jednotky, takže vychází stejně v gramech i v uncích.
+**Měrná hmotnost**{{en: specific gravity}} vám říká, kolik prášku je ve vaší glazurové suspenzi. Je to hmotnost určitého objemu glazury vydělená hmotností stejného objemu vody. Voda má 1,00 a glazura s hodnotou {{SG 1.45}} váží 145 g na 100 mL. Míchání na změřenou měrnou hmotnost je způsob, jak dosáhnout pokaždé stejné hustoty a stejné vrstvy. Nemá jednotky, takže je stejná v gramech i v uncích.
 
-### Měření vážením 100 mL
+### Měření vážením 100 mL
 
-1. Rozmíchejte glazuru, aby nic nezůstalo usazené.
-2. Postavte na váhu **odměrný válec** na 100 mL (vysokou odměrnou trubici se stupnicí) nebo injekční stříkačku na 100 mL a váhu vytárujte.
-3. Naplňte válec nebo stříkačku glazurou přesně po značku 100 mL; značku odečítejte v úrovni očí.
-4. Glazuru zvažte a gramy vydělte 100: 145 g znamená měrnou hmotnost 1,45.
+1. Glazuru rozmíchejte, aby nic nezůstalo usazené.
+2. Postavte na váhu 100mL **odměrný válec** (vysokou trubici se stupnicí) nebo 100mL injekční stříkačku a vytárujte ji.
+3. Naplňte ji glazurou přesně po 100 mL; rysku odečítejte v úrovni očí.
+4. Zvažte ji a gramy vydělte 100: 145 g odpovídá měrné hmotnosti 1,45.
 
-Digitalfire si také označí na kelímku hladinu 500 g vody, naplní ho glazurou po značku a hmotnost vydělí 500; větší a plnější odměrka je přesnější. **Hustoměr**, plovák, ze kterého se hodnota odečte podle toho, jak hluboko se v glazuře ponoří, je rychlý, ale u hustých nebo zgelovatělých glazur může ukazovat špatně. Britské hustoměry, jako ten od Potclays, ukazují stupně Baumé (°Bé). Podle našeho výpočtu je SG = 145 ÷ (145 − °Bé), takže 46 °Bé odpovídá asi 1,46. Starší britské knihy uvádějí **hmotnost pinty**, tedy počet uncí v britské pintě glazury: vydělte ji 20, takže 29 oz odpovídá měrné hmotnosti asi 1,45 (také náš výpočet).
+Digitalfire si také označí na hrnku úroveň 500 g vody, naplní ho glazurou po tuto značku a hmotnost vydělí 500; větší a plnější odměrka je přesnější. **Hustoměr**{{en: hydrometer}}, plovák, který se odečítá podle toho, jak hluboko v glazuře sedí, je rychlý, ale v hustých nebo zgelovatělých glazurách může ukazovat špatně. Britské hustoměry, jako ten od Potclays, ukazují stupně Baumé (°Bé). Podle našeho výpočtu je měrná hmotnost = 145 ÷ (145 − °Bé), takže 46 °Bé je asi 1,46. Starší britské knihy uvádějí **hmotnost pinty**{{en: pint weight}}, počet uncí v britské pintě glazury: vydělte ji 20, takže 29 oz odpovídá asi měrné hmotnosti 1,45 (také náš výpočet).
 
-### Jaké hodnoty zvolit
+### Na co mířit
 
-Zdroje se neshodují, nejvíc u nanášení štětcem a stříkání, kde britský dodavatel Potclays uvádí mnohem vyšší hodnoty (o svých vlastních píše, že jsou „pouze orientační“). Každé číslo berte jako výchozí bod. Hlavní rada Digitalfire zní: najděte pro každou glazuru měrnou hmotnost a míru zgelovatění, které fungují, pak je opakujte a zapisujte si je.
+Zdroje se neshodují, nejvíc u nanášení štětcem a stříkání, kde britský dodavatel Potclays uvádí mnohem vyšší hodnoty (své vlastní hodnoty uvádí „jen pro orientaci“). Každé číslo berte jako výchozí bod. Hlavní radou Digitalfire je najít pro každou glazuru měrnou hmotnost a míru zgelování, které fungují, pak je opakovat a zapsat si je.
 
-Table: Cílová měrná hmotnost, kde se zdroje neshodují
-Label: Cílová měrná hmotnost
+Table: Cílové hodnoty měrné hmotnosti, ve kterých se zdroje neshodují
+Label: Cílové hodnoty měrné hmotnosti
 
-| Použití          | Digitalfire a Glazy                                                                                                                                                               | Potclays (Velká Británie)                             | Bezpečný výchozí bod                                                                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Namáčení         | {{SG 1.40}} (pro namáčení na 5 sekund) až {{SG 1.50}} (pro namáčení na 1 sekundu); doma míchaným zgelovatělým glazurám se nejlépe daří, když je {{SG 1.43–1.45}}                  | Transparentní: {{SG 1.46–1.48}}; barevné: {{SG 1.61}} | {{SG 1.45}}; pokud kape, zřeďte ji, dokud nebude {{SG 1.43}}, a nechte ji zgelovatět |
-| Nanášení štětcem | {{SG 1.25}} (řídká transparentní) až {{SG 1.55}} (tmavé detaily)                                                                                                                  | {{SG 1.71–1.81}}                                      | Podle pokynů výrobce; použijte CMC nebo glazovací médium                             |
-| Stříkání         | Hodnota neuvedena; Hopper v článku pro Ceramic Arts Network radí mnohem řidší glazuru se ztekucovadlem{{en: deflocculant}} (přísadou, díky které je glazurová suspenze tekutější) | {{SG 1.71}}                                           | Spolehlivá hodnota není; stříkejte jen ve stříkací kabině s odsáváním                |
+| Použití          | Digitalfire a Glazy                                                                                                                                         | Potclays (UK)                                       | Bezpečný výchozí bod                                         |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| Namáčení         | {{SG 1.40}} (pro namočení na 5 sekund) až {{SG 1.50}} (pro namočení na 1 sekundu); doma míchaným zgelovatělým glazurám se nejlépe daří při {{SG 1.43–1.45}} | Transparentní {{SG 1.46–1.48}}; barevné {{SG 1.61}} | {{SG 1.45}}; pokud kape, zřeďte na {{SG 1.43}} a zgelujte ji |
+| Nanášení štětcem | {{SG 1.25}} (řídká transparentní) až {{SG 1.55}} (tmavé detaily)                                                                                            | {{SG 1.71–1.81}}                                    | Řiďte se výrobkem; použijte CMC nebo glazovací médium        |
+| Stříkání         | Bez hodnoty; Hopper v článku pro Ceramic Arts Network píše o mnohem řidší glazuře se ztekucovadlem (přísadou, která suspenzi zředí)                         | {{SG 1.71}}                                         | Spolehlivé číslo není; stříkejte jen ve stříkací kabině      |
 
-Při kontrole glazury na namáčení od oka namáčí AMACO na 5 sekund a hledá vrstvu zhruba tak silnou jako americká deseticentová mince (dime). Digitalfire pro kontrolu vypaluje zkušební střípky{{en: test tiles}} namáčené na 5 sekund.
+Aby AMACO zkontrolovala glazuru na namáčení od oka, namáčí 5 sekund a hledá vrstvu přibližně tak silnou jako americká deseticentová mince (dime). Digitalfire pro kontrolu vypaluje střípky namáčené 5 sekund.
 
 ### Voda pro cílovou měrnou hmotnost: náš odhad
 
-Tabulka níže je náš vlastní výpočet, ne údaj ze zdroje. Předpokládá, že částice prášku mají hustotu 2,6 g na cm³, což je předpoklad, ne měření. Jíl, rozpustné suroviny i gelovatění skutečnou glazuru mění, proto tabulku použijte jako výchozí bod a pak měřte. Pro kontrolu: pro stejnou hmotnost prášku a vody z ní vychází {{SG 1.44}}, blízko hodnoty, kterou naměřil Digitalfire ({{SG 1.46}}). Ukazuje také, že při 70–80 mL na 100 g vychází na začátku víc než {{SG 1.50}}, tedy hustší glazura, než potřebujete.
+Tabulka níže je náš vlastní výpočet, ne údaj ze zdroje. Předpokládá, že částice prášku mají hustotu 2,6 g na cm³, což je předpoklad, ne měření. Hlína, rozpustné suroviny a zgelování skutečnou glazuru mění, proto ji použijte na začátek a pak měřte. Pro kontrolu: pro stejnou hmotnost prášku a vody předpovídá {{SG 1.44}}, blízko naměřené hodnotě {{SG 1.46}} od Digitalfire. Ukazuje také, že se 70 až 80 mL na 100 g začínáte nad {{SG 1.50}}, hustěji, než potřebujete.
 
 Table: Voda pro cílovou měrnou hmotnost (náš odhad)
 Label: Voda pro cílovou měrnou hmotnost
 
-| Cíl         | Na 100 g prášku | Na kilogram |        Na libru |
-| ----------- | --------------: | ----------: | --------------: |
-| {{SG 1.40}} |      asi 115 mL | asi 1150 mL | asi 18 US fl oz |
-| {{SG 1.45}} |       asi 98 mL |  asi 980 mL | asi 15 US fl oz |
-| {{SG 1.50}} |       asi 85 mL |  asi 850 mL | asi 13 US fl oz |
-| {{SG 1.60}} |       asi 64 mL |  asi 640 mL | asi 10 US fl oz |
+| Cíl         | Na 100 g prášku | Na kilogram |                Na libru |
+| ----------- | --------------: | ----------: | ----------------------: |
+| {{SG 1.40}} |      asi 115 mL | asi 1150 mL | asi 18 amerických fl oz |
+| {{SG 1.45}} |       asi 98 mL |  asi 980 mL | asi 15 amerických fl oz |
+| {{SG 1.50}} |       asi 85 mL |  asi 850 mL | asi 13 amerických fl oz |
+| {{SG 1.60}} |       asi 64 mL |  asi 640 mL | asi 10 amerických fl oz |
+
+### Měrná hmotnost suchých surovin vaší glazury, zjištěná při míchání
+
+Hodnota 2,6 výše je odhad. Hodnotu pro vaši vlastní glazuru, hustotu jejího suchého prášku, lze vypočítat ze tří čísel, která můžete zjistit při míchání. S ní pak z měrné hmotnosti vypočtete, kolik prášku je v kterémkoli kbelíku této glazury, i vodu pro další dávku. Náš výpočet, ne údaj ze zdroje:
+
+1. Zapište si hmotnost suchého prášku v dávce: součet receptu.
+2. Než začnete, zvažte prázdný kbelík, nebo si na něj jeho hmotnost napište.
+3. Glazuru jako obvykle rozmíchejte, prosejte a upravte na její měrnou hmotnost. Sítem protlačte všechno a síto opláchněte do kbelíku, aby žádný prášek nezůstal mimo.
+4. Zvažte plný kbelík a odečtěte hmotnost kbelíku. To je hmotnost suspenze.
+5. Změřte měrnou hmotnost.
+
+Pak:
+
+- **Voda** = hmotnost suspenze − hmotnost prášku.
+- **Objem suspenze** v mL = hmotnost suspenze v gramech ÷ měrná hmotnost.
+- **Objem prášku** = objem suspenze − voda (1 g vody je 1 mL).
+- **Měrná hmotnost suchých surovin** = hmotnost prášku ÷ objem prášku.
+
+Příklad: z 1000 g prášku vznikne 1980 g suspenze s hodnotou {{SG 1.45}}. Vody je 980 g, suspenze má 1980 ÷ 1,45 = asi 1366 mL, prášek zabírá 1366 − 980 = 386 mL a měrná hmotnost suchých surovin je 1000 ÷ 386 = asi 2,59.
+
+Celou suspenzi zvažte na konci, ne vodu při nalévání, aby se nezapočítala voda, která se odpaří nebo vystříkne. Malé chyby se tu zvětšují: odchylka měrné hmotnosti o 0,01 posune výsledek asi o 2 až 4 %, u řidší glazury víc. Použijte dávku 1 kg nebo větší, přesnou váhu a pro měrnou hmotnost výše popsanou metodu s hrnkem na 500 g. Většina běžných surovin má přibližně 2,5 až 2,9, takže hodnota daleko mimo tento rozsah, u glazury bez většího množství zirkonsilikátu nebo olova, pravděpodobně znamená chybu v měření. Hodnotu si zapište k receptu.
 
 ### Hořká sůl, CMC a bentonit
 
-**Hořká sůl** (síran hořečnatý) způsobí, že glazura v klidu mírně zgelovatí a po rozmíchání zase teče. Tomu se říká **flokulace**{{en: flocculating}} a glazura, která se takto chová, je **tixotropní**{{en: thixotropic}}: nanáší se rovnoměrněji, méně kape a méně se usazuje. Digitalfire doporučuje začít s asi 2 g na galon, jakmile je měrná hmotnost správná (zhruba 0,5 g na litr, náš přepočet), a množství ladit při každém míchání, protože žádný recept by neměl dávku pevně určovat. Doporučujeme hořkou sůl nejprve rozpustit v troše horké vody. V jednom příkladu od Digitalfire glazura kapala, když byla {{SG 1.45}}, a tak ji voda zředila, až byla {{SG 1.43}}, hořká sůl ji znovu zahustila do krémové konzistence a glazura se pak nanášela rovnoměrně. Hrubá kontrola: zamíchejte, přestaňte a pozorujte. Zgelovatělá glazura se pohybuje ještě asi 2 nebo 3 sekundy, pak se zastaví a trochu se vrátí zpět.
+**Hořká sůl**{{en: Epsom salts}} způsobí, že glazura v klidu mírně zgeluje a při míchání zase teče. Tomu se říká **flokulace**{{en: flocculating}} a glazura, která se takto chová, je **tixotropní**{{en: thixotropic}}: nanáší se rovnoměrněji, méně kape a méně sedá. Digitalfire doporučuje začít s asi 2 g na galon, jakmile je měrná hmotnost správná (zhruba 0,5 g na litr, náš převod), a množství ladit při každém míchání, protože žádný recept by dávku neměl pevně určovat. Doporučujeme ji nejdřív rozpustit v trošce horké vody. V jednom příkladu Digitalfire glazura s hodnotou {{SG 1.45}} kapala, takže ji voda snížila na {{SG 1.43}} a hořká sůl ji zgelovala zpět na krémovou konzistenci, a nanášela se rovnoměrně. Hrubá kontrola: zamíchejte, přestaňte a pozorujte. Zgelovatělá glazura se ještě asi 2 nebo 3 sekundy pohybuje, pak se zastaví a trochu se vrátí zpět.
 
-**CMC** (karboxymethylcelulóza) dělá glazurovou suspenzi lepivější a pomaleji schnoucí a zanechává tvrdší vrstvu, která na výrobku drží. Nejdůležitější je u glazur na nanášení štětcem a u glazur s vysokým podílem frity{{en: frit}}. V příkladu od Digitalfire se 3,75 g zamíchá do 1000 g suspenze a musí se přidat mixérem. Glazura s CMC se hořkou solí nezgelovatí a protože se tímto pojivem živí mikroby, může se v kbelíku měnit a začít zapáchat.
+**CMC**{{en: CMC gum}} (karboxymethylcelulóza) dělá suspenzi lepivější a pomaleji schnoucí a zanechá tvrdší vrstvu, která na výrobku drží. Nejvíc záleží na ní u glazur na nanášení štětcem a glazur s vysokým podílem frity. V příkladu Digitalfire se 3,75 g vmíchá do 1000 g suspenze, a musí se to udělat mixérem. Glazura s CMC se hořkou solí nezgeluje, a protože se pojivem živí mikroby, může se v kbelíku měnit a začít zapáchat.
 
-**Bentonit**, velmi jemný jíl, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15–25 % syrové hlíny. U receptu s nedostatkem hlíny pomůže asi 1–3 % bentonitu; podle Digitalfire by glazura s více než 15 % hlíny neměla potřebovat bentonit v množství větším než 1 % hmotnosti suché glazury.
+**Bentonit**, velmi jemná hlína, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15 až 25 % surové hlíny. U receptu s malým podílem hlíny pomůže asi 1 až 3 % bentonitu; Digitalfire uvádí, že glazura s více než 15 % hlíny by neměla potřebovat bentonit ve větším množství než 1 % hmotnosti suché glazury.
 
 ## Zkušební střípky a zkušební řady {#testing}
 
 ### Začněte v malém
 
-Derek Au postupuje ve třech krocích: zkouška na 50 nebo 100 g, pak ověřovací dávka 1–2 kg, pokud se zkouška osvědčí, a nakonec dílenská dávka 5–10 kg. Podle našeho odhadu dá zkouška ze 100 g, když je {{SG 1.45}}, asi 135 mL (asi 4½ US fl oz) glazurové suspenze{{en: slurry}}, což stačí na namočení několika malých střípků v úzkém kelímku.
+Derek Au postupuje ve třech krocích: zkouška o 50 nebo 100 g, zkušební dávka o 1 až 2 kg, pokud se osvědčí, a pak dílenská dávka o 5 až 10 kg. Podle našeho odhadu dá zkouška o 100 g s hodnotou {{SG 1.45}} asi 135 mL (asi 4½ americké fl oz) suspenze, dost na namočení několika malých střípků v úzkém kelímku.
 
 ### Zkoušejte na vlastní hlíně
 
-Glazura{{en: glaze}} může na jiné hlíně nebo v jiné peci vypadat dost jinak: obchod Clay Art Center vyzkoušel každou ze svých přepracovaných glazur na čtyřech keramických hmotách{{en: clay bodies}}, při výpalu na žároměrku{{en: cone}} 6 i na žároměrku 10. Příručka Potclays pro začátečníky o zkoušení glazur doporučuje:
+Glazura může na jiné hlíně nebo v jiné peci vypadat docela jinak: Clay Art Center vyzkoušelo každou ze svých upravených glazur na čtyřech hmotách, při žároměrce 6 a při žároměrce 10. Příručka Potclays pro začátečníky o zkoušení glazur doporučuje:
 
-- 6–10 **zkušebních střípků**{{en: test tiles}} (malých kousků na vyzkoušení glazury) z hlíny, kterou skutečně budete používat, s poznámkou, zda jsou přežahnuté{{en: bisqued}}, nebo zcela suché
-- jednu změnu najednou
+- 6 až 10 **zkušebních střípků**{{en: test tiles}} (malých kousků na vyzkoušení glazury) z hlíny, se kterou skutečně budete pracovat, s poznámkou, zda jsou přežahnuté, nebo zcela suché
+- vždy jen jednu změnu
 - jedno a dvojí namočení, abyste viděli glazuru v tenké i silné vrstvě
-- všechny střípky ve stejné vsázce pece
-- označení každého střípku před výpalem razítkem, rytím nebo podglazurní tužkou.
+- všechny střípky ve stejné vsázce
+- označení každého střípku před výpalem razítkem, rytím nebo podglazurní tužkou. Vypálené střípky vypadají podobně a značka udělaná před výpalem pecí projde, takže vždy poznáte, který recept je na kterém střípku.
 
-Doporučujeme střípky, které stojí svisle (na plochém střípku není vidět, jak daleko glazura steče), s pruhem s reliéfem, který ukáže, jak glazura na hranách mění barvu, a s neglazovaným dnem. Každý postavte na malou misku, kousek přežahnutého střepu nebo na nátěr na pláty, aby se zachytily stékající kapky. Vedle střípků postavte **kontrolní žároměrku**{{en: witness cone}}, malý keramický pyrometrický kužel, který se ohne, když dostane dost tepla. Ukáže, kolik tepla střípky dostaly; [návod k výpalu](/guides/firing) žároměrky vysvětluje. Každému střípku dejte krátký kód a zapište ho do záznamů k receptu. Willers v článku pro Ceramic Arts Network používá čísla a písmena a samotný systém zapisuje na začátek zápisníku.
+Doporučujeme střípky, které stojí svisle, protože plochý střípek skryje, jak daleko glazura steče, s pruhem se strukturou, který ukáže, jak glazura na hranách mění barvu, a s neglazovaným dnem. Každý postavte na malou misku nebo kousek přežahnuté hlíny, nebo na plát s nátěrem, aby zachytil kapky. K střípkům dejte **kontrolní žároměrku**{{en: witness cone}}, malou keramickou žároměrku, která se ohne, když dostane dost tepla, aby ukázala, co střípky dostaly; žároměrky vysvětluje [návod k výpalu](/guides/firing). Každému střípku dejte krátký kód a zapište si ho k receptu do svých záznamů. Willers v článku pro Ceramic Arts Network používá čísla a písmena a samotný systém si zapisuje na začátek zápisníku.
 
 ### Zkušební řady
 
-**Zkušební řada**{{en: line blend}} je řada zkoušek, která v pravidelných krocích přechází od jedné směsi k druhé: od jedné glazury ke druhé nebo od základní glazury ke stejné glazuře s větším množstvím barviva{{en: colorant}}. Derek Au například zvyšuje obsah oxidu železa v transparentní základní glazuře po 1 %. Objemová metoda spojovaná s Ianem Curriem šetří čas, protože míchat stačí jen dvě krajní směsi:
+**Zkušební řada**{{en: line blend}} je řada zkoušek, která rovnoměrně přechází od jedné směsi k druhé: od jedné glazury ke druhé, nebo od základní glazury ke stejné glazuře s větším množstvím barviva. Derek Au například přidává oxid železa do transparentního základu po krocích 1 %. Objemová metoda spojovaná s Ianem Curriem šetří čas, protože se míchají jen dva krajní body:
 
-1. Namíchejte obě krajní glazury, A a B, jako stejně velké dávky a obě prosejte.
-2. Do té s menším objemem přidávejte vodu, dokud nebudou mít obě přesně stejný objem suspenze.
-3. Obě rozmíchejte a pak do každého očíslovaného kelímku odměřte injekční stříkačkou jeho směs.
+1. Namíchejte dvě krajní glazury, A a B, jako stejně velké dávky a obě prosejte.
+2. Do té, která má menší objem, přidejte vodu, až budou mít obě přesně stejný mokrý objem.
+3. Obě rozmíchejte a pak každou směs natáhněte injekční stříkačkou do vlastního očíslovaného kelímku.
 4. Každý kelímek rozmíchejte a namočte do něj střípek.
 
-V našem vzorovém příkladu je A 100 g transparentní základní glazury a B totéž s přidanými 4 g červeného oxidu železitého (přídavek 4 %). Každý mililitr B obsahuje stejný podíl základu jako mililitr A, a k tomu železo, takže kelímky postupují od glazury bez železa až po 4 % v krocích po 1 %. Každá krajní směs dá do řady 100 mL, což podle našeho odhadu dávka ze 100 g pokryje.
+V našem řešeném příkladu je A 100 g transparentního základu a B totéž s přidanými 4 g červeného oxidu železa (přídavek 4 %). Každý mililitr B obsahuje stejný podíl základu jako mililitr A, a k tomu své železo, takže kelímky postupují od nulového obsahu železa ke 4 % po krocích 1 %. Každý krajní bod dá do řady 100 mL, což podle našeho odhadu dávka 100 g pokryje.
 
-Table: Pětistupňová zkušební řada se železem, 40 mL na kelímek (náš vzorový příklad)
+Table: Pětistupňová zkušební řada s železem, 40 mL na kelímek (náš řešený příklad)
 Label: Příklad zkušební řady
 
-| Kelímek | Transparentní základ (A) | Základ se 4 % železa (B) | Oxid železitý, % základu |
-| ------- | -----------------------: | -----------------------: | -----------------------: |
-| 1       |                    40 mL |                     0 mL |                        0 |
-| 2       |                    30 mL |                    10 mL |                        1 |
-| 3       |                    20 mL |                    20 mL |                        2 |
-| 4       |                    10 mL |                    30 mL |                        3 |
-| 5       |                     0 mL |                    40 mL |                        4 |
+| Kelímek | Transparentní základ (A) | Základ se 4 % železa (B) | Oxid železa, % základu |
+| ------- | -----------------------: | -----------------------: | ---------------------: |
+| 1       |                    40 mL |                     0 mL |                      0 |
+| 2       |                    30 mL |                    10 mL |                      1 |
+| 3       |                    20 mL |                    20 mL |                      2 |
+| 4       |                    10 mL |                    30 mL |                      3 |
+| 5       |                     0 mL |                    40 mL |                      4 |
 
-Metoda vyžaduje pečlivé počítání, dobře promíchané krajní směsi se stejnou měrnou hmotností{{en: specific gravity}} a přesnou váhu. Derek Au míchá řady také podle hmotnosti místo objemu. **Trojúhelníková zkušební řada** dělá totéž se třemi krajními směsmi, rozloženými do trojúhelníku.
+Metoda vyžaduje pečlivé počítání, dobře rozmíchané krajní glazury se stejnou měrnou hmotností a přesnou váhu. Derek Au míchá zkušební řady také podle hmotnosti místo objemu. **Trojúhelníková zkušební řada**{{en: triaxial blend}} dělá totéž se třemi krajními body, rozloženými do trojúhelníku.
 
 > [!NOTE]
-> Když některý krok vypadá slibně, tlačítko **Uložit jako kopii** na [stránce receptu](/recipe) ho uloží jako samostatný recept a původní recept ponechá beze změny.
+> Když některý krok vypadá slibně, tlačítko **Uložit jako kopii** na [stránce receptu](/recipe) ho uloží jako samostatný recept a původní nechá beze změny.
 
-## Vedení záznamů {#records}
+## Záznamy {#records}
 
-Willers vystihuje cíl dobře: „dost informací na to, abyste mohli zjištěné výsledky zopakovat, nebo se jim vyhnout“. Než začnete, zapište si, co chcete vyzkoušet, a při vykládání pece výsledky. Potclays přidává způsob nanášení, tloušťku vrstvy, keramickou hmotu{{en: clay body}} a celý průběh výpalu včetně ramp{{en: ramps}}, výdrží{{en: holds}} a chlazení. **Rampa** je rychlost ohřevu nebo chlazení, například {{60 °C; 108 °F}} za hodinu, a **výdrž** udržuje pec po stanovenou dobu na jedné teplotě. Zapisujte si čísla šarží, použitou vodu a jakoukoli záměnu: záměna živce{{en: feldspar}} v obchodě Clay Art Center znamenala úpravu asi poloviny jeho glazur{{en: glazes}}.
+Willers cíl vystihuje dobře: „dost informací, abyste mohli výsledky, které jste objevili, zopakovat, nebo se jim vyhnout“. Před začátkem si zapište, co chcete vyzkoušet, a při vykládání pece výsledky. Potclays přidává způsob nanášení, tloušťku, hmotu a celý výpal, včetně ramp, výdrží a chlazení. **Rampa**{{en: ramp}} je rychlost ohřevu nebo chlazení, například {{60 °C; 108 °F}} za hodinu, a **výdrž**{{en: hold}} drží pec po nastavenou dobu na jedné teplotě. Zapisujte si čísla šarží, použitou vodu a každou záměnu: kvůli záměně živce muselo Clay Art Center upravit asi polovinu svých glazur.
 
-Table: Co zaznamenat u každé dávky glazury (naše šablona)
+Table: Co zapisovat u každé dávky glazury (naše šablona)
 Label: Šablona záznamu
 
-| Část     | Co si zapsat                                                                                                                                                                                                                                          |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept   | Recept a jeho verze; značky surovin a čísla šarží; případné záměny                                                                                                                                                                                    |
-| Míchání  | Datum; velikost dávky; přidaná voda a její druh (z vodovodu, z reverzní osmózy nebo destilovaná); měrná hmotnost{{en: specific gravity}} po namíchání a konečná měrná hmotnost; přidaná hořká sůl, CMC a bentonit; velikost oka síta a počet průchodů |
-| Nanášení | Keramická hmota; žároměrka přežahu{{en: bisque}}; namáčení, nanášení štětcem nebo polévání; doba namáčení nebo počet vrstev; tloušťka suché vrstvy                                                                                                    |
-| Výpal    | Pec a umístění na plátu; vypalovací křivka s rampami, výdržemi a chlazením; atmosféra (oxidační{{en: oxidation}} nebo redukční{{en: reduction}}); co ukázala kontrolní žároměrka{{en: witness cone}}, nejen na co byla pec nastavená                  |
-| Výsledek | Povrch a barva; případné stékání, trhlinkování{{en: crazing}} nebo vpichy{{en: pinholes}}; fotografie zepředu, zezadu a z boku; kód střípku                                                                                                           |
+| Část     | Co si zapsat                                                                                                                                                                                                                                                                           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept   | Recept a jeho verze; značky surovin a čísla šarží; případné záměny                                                                                                                                                                                                                     |
+| Míchání  | Datum; velikost dávky; přidaná voda a její druh (z vodovodu, z reverzní osmózy nebo destilovaná); měrná hmotnost po namíchání a konečná měrná hmotnost; hmotnost hotové suspenze, pro měrnou hmotnost suchých surovin; přidaná hořká sůl, CMC a bentonit; síto (mesh) a počet průchodů |
+| Nanášení | Hmota; žároměrka přežahu; namáčení, nanášení štětcem nebo polévání; doba namáčení nebo počet vrstev; tloušťka za sucha                                                                                                                                                                 |
+| Výpal    | Pec a poloha na plátě; vypalovací křivka s rampami, výdržemi a chlazením; atmosféra (oxidační nebo redukční); co ukázala kontrolní žároměrka, nejen na co byla pec nastavená                                                                                                           |
+| Výsledek | Povrch a barva; případné stékání, trhlinkování nebo vpichy; fotografie zepředu, zezadu a z boku; kód střípku                                                                                                                                                                           |
 
 > [!NOTE]
-> V aplikaci Glazecalc uchovává uložený [recept](/recipe) samotný recept. Do [záznamu výpalu](/firing) se zapisuje každý výpal: pec, datum, časy, teploty, žároměrky a poznámky. [Poznámky](/notes) uchovávají vše ostatní, například výše uvedený záznam dávky a to, co ukázal každý střípek.
+> V aplikaci Glazecalc uchovává uložený [recept](/recipe) samotný recept. [Záznam výpalu](/firing) zaznamenává každý výpal: pec, datum, časy, teploty, žároměrky a poznámky. [Poznámky](/notes) uchovávají všechno ostatní, například výše uvedený záznam o dávce a co ukázal každý střípek.
 
 ## Zdroje {#sources}
 

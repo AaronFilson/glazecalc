@@ -89,16 +89,16 @@ Label: Tabela stożków Ortona
 | Stożek | Wolno, {{27 °F/h; 15 °C/h}} | Średnio, {{108 °F/h; 60 °C/h}} | Szybko, {{270 °F/h; 150 °C/h}} |
 | ------ | --------------------------: | -----------------------------: | -----------------------------: |
 | 022    |                           – |            {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018    |                           – |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015    |                           – |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018    |         {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015    |         {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010    |         {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08     |         {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07     |                           – |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07     |         {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06     |         {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05     |        {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04     |        {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03     |        {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02     |                           – |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02     |        {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01     |        {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1      |        {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4      |        {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,13 +460,13 @@ Piec sterowany ręcznie prowadzi się według tego samego planu, tylko ręcznie:
 
 ## Wypał szkliwa {#glaze}
 
-Wypał szkliwa{{en: glaze firing}} stapia szkliwo{{en: glaze}} w szkło na biskwicie{{en: bisque}}. Większość początkujących wypala szkliwa niskotopliwe na stożek 06–04 albo szkliwa średniotopliwe na stożek 5–6. Należy wypalać do stożka podanego na etykietach gliny i szkliwa, z zestawem stożków{{en: cone pack}} wokół tego numeru. O tym, co dzieje się wewnątrz topiącego się szkliwa, mówi poradnik [Szkliwienie od podstaw](/guides/glazing-basics).
+Wypał szkliwa{{en: glaze firing}} stapia szkliwo{{en: glaze}} w szkło na biskwicie{{en: bisque}}. Większość szkliw niskotopliwych dostępnych w sprzedaży jest przeznaczona na stożek 06 lub 05 (zakres niskiego wypału obejmuje stożki 06–04), a większość szkliw średniotopliwych na stożek 5–6. Należy wypalać do stożka podanego na etykietach szkliwa i gliny, z zestawem stożków{{en: cone pack}} wokół tego numeru. O tym, co dzieje się wewnątrz topiącego się szkliwa, mówi poradnik [Szkliwienie od podstaw](/guides/glazing-basics).
 
 ### Załadunek do wypału szkliwa
 
-- Szkliwione wyroby nie mogą dotykać siebie nawzajem ani ścian: należy zostawić około ½ cala (13 mm) odstępu.
-- Stopkę należy zostawić bez szkliwa (**czysta stopka**) albo wyroby niskotopliwe ustawić na **trójnogach**, małych podpórkach z ostrymi końcami. Kamionka{{en: stoneware}} i porcelana nie powinny stać na trójnogach, które w tych temperaturach wtapiają się w czerep; zamiast nich należy użyć wysokotemperaturowej pobiałki lub piasku kwarcowego.
-- Między krawędziami płyt a ścianą lub wyłącznikiem stożkowym zostawić co najmniej 1 cal (25 mm).
+- Szkliwione wyroby nie mogą dotykać siebie nawzajem ani ścian: należy zostawić około ½ cala (13 mm) odstępu.
+- Stopkę należy zostawić bez szkliwa (**czysta stopka**) albo wyroby niskotopliwe ustawić na **trójnogach**, małych podpórkach z ostrymi końcami. Kamionka{{en: stoneware}} i porcelana nie powinny stać na trójnogach, które w tych temperaturach wtapiają się w czerep; zamiast nich należy użyć pobiałki do wysokich temperatur lub piasku kwarcowego.
+- Między krawędziami płyt a ścianą lub wyłącznikiem stożkowym należy zostawić co najmniej 1 cal (25 mm).
 
 ### Programy sterownika
 

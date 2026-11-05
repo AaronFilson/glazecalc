@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Akụkụ ụfọdụ nke ibe a asụgharịbeghị, ya mere o gosiri n'asụsụ Bekee.",
+  "index": {
+    "crumb": "Glaze ndị a ma ama",
+    "title": "Glaze ndị a ma ama",
+    "lead": "Glaze ndị a maara n'ụwa niile, nke ọ bụla site n'ihe ọdịnala obodo ya, ya na UMF ya na ụdị e ji ihe a na-ere ebe ị nọ mee.",
+    "listHeading": "Glaze ndị ahụ",
+    "more": "Glaze ndị ọzọ na-abịa: a na-agbakwunye nke ọ bụla ozugbo usoro ya na ihe ya dabere opekata mpe n'isi mmalite atọ a gụrụ agụ."
+  },
+  "glaze": {
+    "lead": "Glaze a ma ama ({native}): usoro ọdịnala ya ma ọ bụ nyocha, ịgba ọkụ ya, na ụdị e ji ihe a na-ere ebe ị nọ mee.",
+    "aboutHeading": "Banyere {name}",
+    "nativeName": "Aha obodo",
+    "origin": "Ebee",
+    "period": "Mgbe ole",
+    "firing": "Ịgba ọkụ",
+    "cone": "cone {cone}",
+    "historyOnly": "Akụkọ ihe mere eme naanị: e ji lead (Pb) mee glaze a. A na-egosi nyocha ya dịka akụkọ ihe mere eme, ọ bụghị dịka usoro a ga-agwakọta. Ụdị dị n'okpuru bụ glaze ọzọ, na-enweghị lead.",
+    "recipeHeading": "Usoro ọdịnala",
+    "material": "Ihe",
+    "amount": "Ọnụ ọgụgụ",
+    "unityHeading": "UMF (unity molecular formula)",
+    "analysisHeading": "Nyocha akụkọ ihe mere eme",
+    "oxide": "Oxide",
+    "percent": "% ịdị arọ",
+    "useHeading": "Nwalee ya",
+    "open": "Mepee usoro a",
+    "openLeadFree": "Mepee ụdị na-enweghị lead",
+    "leadFreeTitle": "Ụdị {name}, enweghị lead",
+    "allLink": "Glaze niile a ma ama",
+    "safetyHeading": "Nchekwa",
+    "safeMixing": "Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha",
+    "firingGuide": "Ịgba ọkụ na kiln dị mfe",
+    "makingGuide": "Otu esi eme glaze",
+    "sourcesHeading": "Isi mmalite",
+    "link": "Mepee",
+    "opened": "a gụrụ ya {date}"
+  },
+  "local": {
+    "heading": "Site n'ihe dị n'obodo gị",
+    "leadFreeHeading": "Ụdị na-enweghị lead",
+    "intro": "UMF nke usoro ọdịnala ahụ, e ji ihe nkịtị a na-ere ebe ị na-azụ ahịa mee. Họrọ ebe ị na-azụ ahịa ka ị hụ ya.",
+    "region": "Ebe ị na-azụ ihe",
+    "proposal": "Ihe nke atụmatụ ahụ n'onwe ya",
+    "pick": "Họrọ…",
+    "untested": "Agụkọtala ya, a gbabeghị ya ọkụ maka nnwale.",
+    "testFirst": "Gbaa test tile ọkụ tupu ị jiri ya mee ihe n'ite ọ bụla, ma nwalee elu ebe nri na-emetụ maka ịhapụ metal (leaching).",
+    "untestedNote": "Agụkọtala ya, a gbabeghị ya ọkụ maka nnwale: gbaa test tile ọkụ tupu ị jiri ya.",
+    "close": "Ọ na-abịaru formula a na-achọ nso nke ukwuu.",
+    "fair": "Ọ na-abịaru formula a na-achọ nso nke ọma.",
+    "poor": "Ihe ndị a enweghị ike ịbịaru formula a na-achọ nso.",
+    "none": "Ihe a na-ere n'ebe ahụ enweghị ike ime ya.",
+    "choose": "Họrọ ebe ị na-azụ ihe ka ị hụ ka e si n'ihe a na-ere n'ebe ahụ mee ya."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduction",
+    "neutral": "etiti",
+    "wood": "ịgba ọkụ n'osisi",
+    "salt": "ịgba ọkụ na nnu",
+    "soda": "ịgba ọkụ na soda"
+  }
+}

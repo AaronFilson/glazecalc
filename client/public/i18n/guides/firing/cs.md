@@ -89,16 +89,16 @@ Label: Tabulka Ortonových žároměrek
 | Žároměrka | Pomalý, {{27 °F/h; 15 °C/h}} | Střední, {{108 °F/h; 60 °C/h}} | Rychlý, {{270 °F/h; 150 °C/h}} |
 | --------- | ---------------------------: | -----------------------------: | -----------------------------: |
 | 022       |                            – |            {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018       |                            – |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015       |                            – |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018       |          {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015       |          {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010       |          {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08        |          {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07        |                            – |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07        |          {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06        |          {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05        |         {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04        |         {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03        |         {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02        |                            – |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02        |         {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01        |         {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1         |         {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4         |         {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,13 +460,13 @@ Ručně ovládaná pec (bez regulátoru) postupuje podle stejného plánu, jen r
 
 ## Glazurový výpal {#glaze}
 
-Glazurový výpal{{en: glaze firing}} roztaví glazuru{{en: glaze}} na přežahnutém střepu{{en: bisque}} ve sklo. Většina začátečníků vypaluje nízkoteplotní glazury na žároměrku{{en: cone}} 06–04 nebo středněteplotní glazury na žároměrku 5–6. Vypalujte na žároměrku uvedenou na obalu vaší hlíny a glazury, se sadou tří žároměrek{{en: cone pack}} kolem tohoto čísla. Co se v glazuře při tavení děje, se dočtete v návodu [Glazování od základů](/guides/glazing-basics).
+Glazurový výpal{{en: glaze firing}} roztaví glazuru na přežahnutém střepu ve sklo. Většina nízkoteplotních glazur na trhu je určena pro žároměrku 06 nebo 05 (nízkoteplotní pásmo sahá od žároměrky 06 do 04) a většina středněteplotních glazur pro žároměrku 5–6. Vypalujte na žároměrku uvedenou na štítku glazury a hlíny, se sadou tří žároměrek kolem tohoto čísla. Co se v glazuře děje, když se taví, popisuje návod [Glazování od základů](/guides/glazing-basics).
 
 ### Zakládání pece pro glazurový výpal
 
-- Glazované kusy se nesmějí dotýkat navzájem ani stěn: nechte mezi nimi asi ½ palce (13 mm).
-- Dno nechte bez glazury (**setřete glazuru ze dna**), nebo nízkoteplotní výrobky postavte na **trojnožky**, malé stojánky s hroty. Kamenina{{en: stoneware}} a porcelán by na trojnožkách stát neměly, protože se při těchto teplotách do výrobku zaboří; použijte místo toho vysokoteplotní nátěr na pláty nebo křemenný písek.
-- Mezi okraji plátů a stěnou nebo vypínačem Kiln-Sitter{{en: kiln sitter}} nechte alespoň 1 palec (25 mm).
+- Glazované kusy se nesmějí dotýkat jeden druhého ani stěn: nechte mezi nimi asi ½ palce (13 mm).
+- Dno nechte bez glazury (**setřít glazuru ze dna**), nebo nízkoteplotní výrobky postavte na **trojnožky**{{en: stilts}}, malé podstavce s hroty. Kamenina a porcelán by na trojnožkách stát neměly, protože se do nich při těchto teplotách zatlačí; použijte místo toho vysokoteplotní nátěr na pláty nebo křemenný písek.
+- Mezi okraji plátů a stěnou nebo vypínačem Kiln-Sitter nechte nejméně 1 palec (25 mm).
 
 ### Vypalovací křivky pro regulátor
 
@@ -475,12 +475,12 @@ Label: Programy pro glazurový výpal
 
 | Segment                  |                                Nárůst na |             Slow Glaze |             Fast Glaze |
 | ------------------------ | ---------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Bez samostatného kroku |
+| 1                        |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Bez zvláštního kroku |
 | 2                        | {{250 °F; 139 °C}} pod konečnou teplotou | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
 | 3                        |                          Konečná teplota |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
 | Doba ohřevu, prázdná pec |                                          |       Asi 6½–7½ hodiny |         Asi 3–4 hodiny |
 
-Table: Kde končí segmenty 2 a 3, podle žároměrky (L&L a Bartlett)
+Table: Kde končí segmenty 2 a 3 podle žároměrky (L&L a Bartlett)
 Label: Cílové teploty programů
 
 | Žároměrka |     Konec segmentu 2 |      Konečná teplota |
@@ -489,42 +489,42 @@ Label: Cílové teploty programů
 | 04        |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6         | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Vzhledem k varování L&L před rychlým výpalem je Slow Glaze bezpečnější výchozí volbou. Pokud na konečné teplotě přidáte výdrž{{en: hold}} delší než 5–10 minut, L&L radí odpovídajícím způsobem snížit cílovou teplotu nebo offset pro žároměrku a upozorňuje, že „výdrž při vysokých teplotách urychluje opotřebení topných spirál a termočlánku“.
+Slow Glaze je bezpečnější výchozí volba, protože L&L varuje před rychlým výpalem. Pokud přidáte na konečné teplotě výdrž delší než 5–10 minut, L&L radí odpovídajícím způsobem snížit cílovou teplotu nebo offset pro žároměrku a upozorňuje, že „výdrž při vysokých teplotách urychluje opotřebení topných spirál a termočlánku“.
 
 ### Žároměrka 6: pokles a výdrž
 
-Středněteplotní glazury někdy vyjdou s **vpichy**{{en: pinholing}} (drobnými dírkami v povrchu) nebo puchýři, které zanechá plyn probublávající z taveniny. Vypalovací křivka **pokles a výdrž**{{en: drop-and-hold}} vypaluje na nejvyšší teplotu, pak pec rychle zchladí asi o {{100 °F; 56 °C}} a na této teplotě ji drží. Slovy webu Digitalfire: „Pokles o 100°F a výdrž dodají tavenině dost viskozity, aby bubliny praskly, a přitom se ještě mohly zacelit.“
+Středněteplotní glazury někdy vyjdou s **vpichy**{{en: pinholes}} (drobnými dírkami v povrchu) nebo puchýři, které zanechají plyny probublávající taveninou. Vypalovací křivka **pokles a výdrž**{{en: drop-and-hold}} vypálí pec na nejvyšší teplotu, rychle ji ochladí asi o {{100 °F; 56 °C}} a na této teplotě ji drží. Slovy Digitalfire: „Pokles o 100 °F a výdrž dají tavenině dost viskozity, aby bubliny praskly, a přitom jí ještě dovolí se zacelit.“
 
-Table: PLC6DS od Digitalfire, pokles a výdrž pro žároměrku 6
+Table: Digitalfire PLC6DS, žároměrka 6, pokles a výdrž
 Label: Digitalfire PLC6DS
 
-| Krok |                              Rychlost |       Cílová teplota | Výdrž                                            |
-| ---- | ------------------------------------: | -------------------: | ------------------------------------------------ |
-| 1    |                 {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                         |
-| 2    |                {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Volitelně 30 minut, k odstranění mračen bublinek |
-| 3    |                 {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; ve velkých pecích déle                 |
-| 4    | Dolů rychlostí {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                         |
+| Krok |                                Rychlost |       Cílová teplota | Výdrž                                           |
+| ---- | --------------------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |                   {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                        |
+| 2    |                  {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Volitelně 30 minut, aby zmizela mračna bublinek |
+| 3    |                   {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; ve velkých pecích déle                |
+| 4    | Pokles rychlostí {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                        |
 
-PLC6DS trvá asi 9 hodin 36 minut. U tekutějších glazur Digitalfire místo toho snižuje teplotu asi o {{200 °F; 111 °C}}; příliš velký pokles „hrozí krystalizací během výdrže“. Jeho konečná teplota {{2200 °F; 1204 °C}} je pod hodnotou {{2232 °F; 1222 °C}}, kterou tabulka uvádí pro žároměrku 6; podle webu Digitalfire většina pecí dosáhne žároměrky 6 přibližně při {{2200 °F; 1204 °C}}. Ověřte si to sadou tří žároměrek ve vlastní peci.
+PLC6DS trvá asi 9 hodin 36 minut. U tekutějších glazur Digitalfire snižuje teplotu místo toho asi o {{200 °F; 111 °C}}; příliš velký pokles „hrozí krystalizací během výdrže“. Jeho konečná teplota {{2200 °F; 1204 °C}} je nižší než {{2232 °F; 1222 °C}} pro žároměrku 6 v tabulce; Digitalfire uvádí, že většina pecí dosáhne žároměrky 6 přibližně při {{2200 °F; 1204 °C}}. Ověřte si to sadou tří žároměrek ve vlastní peci.
 
 ### Regulované chlazení
 
-**Regulované chlazení** znamená, že regulátor chladí pec nastavenou rychlostí, místo aby ji nechal volně chladnout. C6DHSC od Digitalfire je PLC6DS, po kterém následuje chlazení rychlostí {{150 °F/h; 83 °C/h}} z {{2100 °F; 1148 °C}} na {{1400 °F; 760 °C}} a pak vypnutí. „Zlepšuje lesk a kvalitu povrchu“ a pomáhá rutilovým modrým glazurám, ale regulované chlazení „může zvýšit matnost“ (jedna matná glazura vyšla suchá) a může zkrátit životnost relé pece. L&L dodává program pro regulované chlazení také pro žároměrku 6:
+**Regulované chlazení**{{en: slow cooling}} znamená, že regulátor pec chladí nastavenou rychlostí, místo aby ji nechal volně chladnout. Křivka C6DHSC od Digitalfire je PLC6DS, po které následuje chlazení rychlostí {{150 °F/h; 83 °C/h}} z {{2100 °F; 1148 °C}} na {{1400 °F; 760 °C}} a pak vypnutí. „Zlepšuje lesk a kvalitu povrchu“ a pomáhá rutilovým modrým glazurám, ale regulované chlazení „může zvýšit matnost“ (jedna matná glazura vyšla suchá) a může zkrátit životnost relé pece. L&L dodává i program regulovaného chlazení pro žároměrku 6:
 
 Table: L&L „User 6“: regulované chlazení pro glazury na žároměrku 6
-Label: Regulované chlazení od L a L
+Label: Regulované chlazení L&L
 
-| Krok |                             Rychlost |       Cílová teplota |
-| ---- | -----------------------------------: | -------------------: |
-| 1    |               Nahoru plnou rychlostí | {{2232 °F; 1222 °C}} |
-| 2    |                 Dolů plnou rychlostí | {{1900 °F; 1038 °C}} |
-| 3    | Dolů rychlostí {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Krok |                               Rychlost |       Cílová teplota |
+| ---- | -------------------------------------: | -------------------: |
+| 1    |                  Ohřev plnou rychlostí | {{2232 °F; 1222 °C}} |
+| 2    |               Chlazení plnou rychlostí | {{1900 °F; 1038 °C}} |
+| 3    | Pokles rychlostí {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Regulátory Skutt rovněž nabízejí dosoušení a možnost jednokrokového chlazení.
+Regulátory Skutt rovněž nabízejí předehřev a jednokrokové chlazení.
 
 ### V ručně ovládané peci
 
-Ručně ovládaná pec nemůže tyto křivky přesně dodržet, ale plán je stejný: zpočátku zlehka, uprostřed rovnoměrně a konec pod dohledem. Křivka firmy Bracker's pro nízkoteplotní glazury je níže v oddíle Podrobně o ručně ovládaných pecích; pro teplejší žároměrky přidává „v průměru 15–30 minut na každé číslo žároměrky“. S pyrometrem, praxí a záznamy výpalů můžete pokles a výdrž nebo regulované chlazení zhruba napodobit tak, že budete přepínače ručně stahovat níž, jak navrhuje Digitalfire.
+Ručně ovládaná pec nemůže tyto vypalovací křivky přesně dodržet, ale plán je stejný: na začátku zvolna, uprostřed rovnoměrně a konec pod dohledem. Nízkoteplotní glazurový postup firmy Bracker's najdete níže v oddíle Podrobně o ručně ovládaných pecích; pro vyšší žároměrky přidává „v průměru 15–30 minut na každé číslo žároměrky“. S pyrometrem, praxí a záznamy výpalů můžete pokles a výdrž nebo regulované chlazení zhruba napodobit tak, že přepínače stáhnete ručně, jak navrhuje Digitalfire.
 
 ## Podrobně o ručně ovládaných pecích {#manual-kilns}
 

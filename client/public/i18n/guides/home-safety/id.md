@@ -83,6 +83,8 @@ Jangan pernah menuang glasir, atau air tempat Anda membilas perkakas glasir, ke 
 
 Kami menyarankan tutup pada ember itu: lumpurnya memuat logam yang sama dengan glasir, dan hewan peliharaan minum air yang menggenang. Aturan pembuangan berbeda dari tempat ke tempat, jadi periksa lembar data keselamatan setiap produk, dan tanya pemerintah daerah atau perusahaan air Anda jika ragu.
 
+Sebagian studio membakar endapan yang sudah kering sebelum membuangnya. Mereka menaruhnya di mangkuk cadangan yang boleh dikorbankan: setelah pembakaran, mangkuk itu tidak dapat dipakai lagi. Isi mangkuk hanya seperempat penuh, karena endapan berbuih dan menggelembung saat meleleh, dan tutup dengan piring. Letakkan di atas rak yang sudah diberi pelapis rak tungku atau di atas lempeng cadangan, berjaga-jaga bila meluap. Pembakaran mengubah endapan menjadi kaca, yang mengikat logam jauh lebih erat daripada bubuk lepas, sehingga lebih aman di tempat pembuangan akhir. Tangani endapan kering seperti glasir kering, dengan masker respirator dan tanpa menimbulkan debu.
+
 ## Menjaga debu tetap di studio {#keeping-dust-in-the-studio}
 
 Departemen kesehatan Pennsylvania menyatakan masalahnya dengan jelas: "Debu yang terkontaminasi timbal dari hobi Anda dapat menempel pada pakaian, sepatu, rambut, kulit, dan barang pribadi Anda, dan dengan mudah berpindah ke kendaraan Anda dan ke permukaan di rumah Anda." CDC, badan pengendalian dan pencegahan penyakit AS, menambahkan bahwa orang dewasa "dapat membawa pulang timbal dan memaparkan keluarganya pada timbal tanpa menyadarinya." Panduan Pennsylvania memberikan penangkalnya:

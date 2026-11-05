@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Belajar dengan kursus glasir gratis John Britt",
       "text": "Kursus videonya yang gratis di YouTube, unit demi unit, dengan panduan kami untuk dibaca dan latihan untuk dicoba di Glazecalc. Dalam bahasa Inggris."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Mengajarkan perhitungan glasir",
+      "text": "6 sesi untuk kelas atau kelompok belajar, dari ubin uji triaksial sampai formula Seger yang dihitung ke dua arah, dengan lembar kerja untuk dicetak."
     }
   },
   "more": "Panduan lainnya",
@@ -243,5 +247,20 @@
     "loading": "Memuat pustaka…",
     "failed": "Pustaka tidak dapat dimuat. Coba lagi nanti.",
     "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat apa yang dijual di sana."
+  },
+  "stull": {
+    "title": "Bagan Stull: silika terhadap alumina dalam formula Seger",
+    "regions": {
+      "unfused": "tidak menyatu",
+      "matte": "doff",
+      "semi-matte": "semi-doff",
+      "bright": "cerah",
+      "underfired": "kurang bakar",
+      "crazed": "retak halus"
+    },
+    "keyBright": "Garis titik-titik: tempat glasir Stull paling cerah.",
+    "keyCrazed": "Arsiran: tempat glasir itu retak halus.",
+    "note": "Panduan, bukan ramalan. R. T. Stull (Transactions of the American Ceramic Society, 1912) membakar pada sekitar kerucut 11 dengan pelebur tetap 0,3 K₂O dan 0,7 CaO; pelebur dan pembakaran lain menggeser wilayahnya, dan glasir yang doff hanya karena kurang bakar tetap dapat jatuh di wilayah cerah. Wilayahnya mengikuti gambar Glazy.",
+    "inGuide": "Silika (SiO₂) mendatar, dari sekitar 1 sampai 7, dan alumina (Al₂O₃) tegak, dari 0 sampai 1, keduanya dari formula Seger. Wilayah berbentuk baji menyebar seperti kipas dari kiri: tidak menyatu di kiri atas, lalu doff, lalu semi-doff. Bagian tanpa arsiran di sebelah kanannya adalah cerah, dan garis titik-titik di dalamnya adalah tempat glasir Stull paling cerah. Kurang bakar ada di kanan bawah, dengan sedikit alumina dan banyak silika. Arsiran, di bagian bawah bagan dan di sisi kirinya, adalah tempat uji-ujinya retak halus."
   }
 }

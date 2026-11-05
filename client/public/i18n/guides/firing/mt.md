@@ -89,16 +89,16 @@ Label: It-tabella tal-koni ta’ Orton
 | Kon | Bil-mod, {{27 °F/h; 15 °C/h}} | Medja, {{108 °F/h; 60 °C/h}} | Malajr, {{270 °F/h; 150 °C/h}} |
 | --- | ----------------------------: | ---------------------------: | -----------------------------: |
 | 022 |                             – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018 |                             – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015 |                             – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018 |           {{1267 °F; 686 °C}} |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015 |           {{1382 °F; 750 °C}} |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010 |           {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08  |           {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07  |                             – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07  |           {{1764 °F; 962 °C}} |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06  |           {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05  |          {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04  |          {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03  |          {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02  |                             – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02  |          {{1972 °F; 1078 °C}} |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01  |          {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1   |          {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4   |          {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,71 +460,71 @@ Forn mingħajr kontrollur isegwi l-istess pjan, imma bl-idejn: nixxef bil-mod bl
 
 ## Il-ħamja tal-glejż {#glaze}
 
-Il-ħamja tal-glejż{{en: glaze firing}} iddewweb il-glejż u tagħmlu ħġieġ fuq il-bisque. Il-biċċa l-kbira ta’ dawk li għadhom jibdew jaħmu glejżijiet għal ħami baxx fil-koni{{en: cone}} 06–04 jew glejżijiet għal ħami medju fil-koni 5–6. Aħmi sal-kon li hemm fuq it-tikketti tat-tafal u tal-glejż tiegħek, b’sett ta’ koni{{en: cone pack}} madwar dak in-numru. Għal dak li jiġri ġewwa l-glejż hekk kif jdub, ara l-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics).
+Il-ħamja tal-glejż{{en: glaze firing}} ddewweb il-glejż{{en: glaze}} u tagħmlu ħġieġ fuq il-bisque. Il-biċċa l-kbira tal-glejżijiet għal ħami baxx fis-suq huma magħmulin għall-kon{{en: cone}} 06 jew 05 (il-medda tal-ħami baxx hija koni 06–04), u l-biċċa l-kbira tal-glejżijiet għal ħami medju għall-koni 5–6. Aħmi sal-kon li hemm fuq it-tikketti tal-glejż u tat-tafal tiegħek, b’sett ta’ koni{{en: cone pack}} madwar dak in-numru. Għal dak li jiġri ġewwa l-glejż meta jdub, ara l-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics).
 
-### Il-mili tal-forn għall-ħamja tal-glejż
+### Il-mili tal-forn għal ħamja tal-glejż
 
-- Il-biċċiet igglejżjati ma jistgħux imissu ma’ xulxin jew mal-ħitan tal-forn: ħalli madwar ½ pulzier (13 mm).
-- Żomm il-glejż ’il bogħod mill-qiegħ (**il-qiegħ jibqa’ bla glejż**), jew poġġi l-oġġetti għal ħami baxx fuq **trippiedi**, sostenji żgħar bil-ponot. L-istoneware u l-porċellana m’għandhomx joqogħdu fuq trippiedi, li f’dawk it-temperaturi jidħlu fihom; minflok uża kisja tax-xkafef għal ħami għoli jew ramel tas-silika{{en: silica sand}}.
+- Il-biċċiet igglejżjati ma jistgħux imissu ma’ xulxin jew mal-ħitan: ħalli madwar ½ pulzier (13 mm).
+- Żomm il-glejż ’il bogħod mill-qiegħ (**il-qiegħ jibqa’ bla glejż**, dry-footing), jew poġġi l-oġġetti għal ħami baxx fuq **trippiedi**{{en: stilts}}, sapporti żgħar bil-ponot. L-istoneware u l-porċellana m’għandhomx jitqiegħdu fuq trippiedi, li jidħlu fihom f’dawk it-temperaturi; uża minflok kisja tax-xkafef{{en: kiln wash}} għal ħami għoli jew ramel tas-silika.
 - Ħalli mill-inqas 1 pulzier (25 mm) bejn it-truf tax-xkafef u l-ħajt jew is-sitter.
 
 ### Programmi tal-kontrollur
 
-Table: Programmi lesti tal-glejż ta’ L&L u Bartlett
-Label: Programmi lesti tal-glejż
+Table: Il-programmi tal-glejż ta’ L&L u Bartlett
+Label: Programmi tal-glejż
 
-| Segment                   |                                   Tisħin sa |             Slow Glaze |             Fast Glaze |
+| Segment                   |                                    Itla’ sa |             Slow Glaze |             Fast Glaze |
 | ------------------------- | ------------------------------------------: | ---------------------: | ---------------------: |
 | 1                         |                          {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |    L-ebda pass separat |
 | 2                         | {{250 °F; 139 °C}} taħt l-ogħla temperatura | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
 | 3                         |                         L-ogħla temperatura |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Ħin tat-tisħin, forn vojt |                                             |    Madwar 6½–7½ siegħa |      Madwar 3–4 sigħat |
+| Ħin tat-tisħin, forn vojt |                                             |    Madwar 6½–7½ sigħat |      Madwar 3–4 sigħat |
 
 Table: Fejn jispiċċaw is-segmenti 2 u 3, skont il-kon (L&L u Bartlett)
-Label: Il-miri tal-programmi lesti
+Label: Il-miri tal-programmi
 
-| Kon |   Tmiem is-segment 2 |  L-ogħla temperatura |
-| --- | -------------------: | -------------------: |
-| 06  |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04  |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6   | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Kon | Is-segment 2 jispiċċa |  L-ogħla temperatura |
+| --- | --------------------: | -------------------: |
+| 06  |   {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |   {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   |  {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze huwa l-għażla bażika l-aktar sikura, minħabba t-twissija ta’ L&L dwar il-ħami mgħaġġel. Jekk iżżid żamma{{en: hold}} ta’ aktar minn 5–10 minuti fl-ogħla temperatura, L&L jgħid li tnaqqas it-temperatura fil-mira jew l-aġġustament tal-kon biex tpatti, u jinnota li “Iż-żamma f’temperaturi għoljin tħaffef l-użura tal-elementi tat-tisħin u tat-termokoppja.”
+Slow Glaze hija l-għażla awtomatika l-aktar sikura, minħabba t-twissija ta’ L&L dwar il-ħami mgħaġġel. Jekk iżżid żamma{{en: hold}} ta’ aktar minn 5–10 minuti fl-ogħla temperatura, L&L jgħid li tniżżel il-mira jew l-aġġustament tal-kon biex taqbel magħha, u jinnota li “iż-żamma f’temperaturi għoljin tħaffef l-użu tal-elementi u tat-termokoppja.”
 
 ### Kon 6: drop-and-hold
 
-Il-glejżijiet għal ħami medju xi drabi joħorġu bi **toqob tal-labra**{{en: pinholes}} (toqob ċkejknin fil-wiċċ) jew infafet, li jħallihom il-gass li joħroġ mill-glejż imdewweb. Programm **drop-and-hold** jaħmi sal-ogħla temperatura, ikessaħ malajr b’madwar {{100 °F; 56 °C}} u jżomm it-temperatura hemm. Kif jgħid Digitalfire, “Meta tniżżel 100°F u żżomm, il-glejż imdewweb ikollu viskożità biżżejjed biex il-bżieżaq jinfaqgħu, filwaqt li xorta jħallihom jitfejqu.”
+Il-glejżijiet għal ħami medju xi drabi joħorġu b’**toqob tal-labra**{{en: pinholes}} (toqob ċkejknin fil-wiċċ) jew b’infafet, li jħalli l-gass li joħroġ mill-glejż imdewweb. Programm **drop-and-hold** jaħmi sal-quċċata, ikessaħ malajr b’madwar {{100 °F; 56 °C}} u jżomm hemm. Bi kliem Digitalfire, “Meta tniżżel 100°F u żżomm, il-glejż imdewweb ikollu biżżejjed viskożità biex ifaqqa’ l-bżieżaq u xorta jħallihom jfiequ.”
 
-Table: PLC6DS ta’ Digitalfire, drop-and-hold għall-kon 6
+Table: Digitalfire PLC6DS, drop-and-hold għall-kon 6
 Label: Digitalfire PLC6DS
 
-| Pass |                                     Rata |                 Mira | Żamma                                                      |
-| ---- | ---------------------------------------: | -------------------: | ---------------------------------------------------------- |
-| 1    |                    {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                                  |
-| 2    |                   {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta, jekk tridha, biex jitneħħew is-sħab tal-bżieżaq |
-| 3    |                    {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuti; aktar fil-fran kbar                             |
-| 4    | Tinżel b’rata ta’ {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                                  |
+| Pass |                              Rata |                 Mira | Żamma                                                            |
+| ---- | --------------------------------: | -------------------: | ---------------------------------------------------------------- |
+| 1    |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                                        |
+| 2    |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Mhux obbligatorja, 30 minuta, biex jitneħħew is-sħab tal-bżieżaq |
+| 3    |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuti; aktar fil-fran kbar                                   |
+| 4    | ’L isfel b’{{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                                        |
 
-PLC6DS jieħu madwar 9 sigħat u 36 minuta. Għal glejżijiet aktar likwidi, Digitalfire minflok iniżżel madwar {{200 °F; 111 °C}}; jekk tniżżel wisq, “hemm ir-riskju ta’ kristallizzazzjoni waqt iż-żamma”. L-ogħla temperatura tiegħu, {{2200 °F; 1204 °C}}, hija taħt dik tat-tabella għall-kon 6, {{2232 °F; 1222 °C}}; Digitalfire jirrapporta li l-biċċa l-kbira tal-fran jaslu għall-kon 6 f’madwar {{2200 °F; 1204 °C}}. Iċċekkja dan b’sett ta’ koni fil-forn tiegħek.
+PLC6DS jieħu madwar 9 sigħat u 36 minuta. Għal glejżijiet aktar likwidi, Digitalfire iniżżel minflok madwar {{200 °F; 111 °C}}; jekk tniżżel wisq “tirriskja kristallizzazzjoni waqt iż-żamma”. L-ogħla temperatura tiegħu, {{2200 °F; 1204 °C}}, hija taħt il-{{2232 °F; 1222 °C}} tat-tabella għall-kon 6; Digitalfire jirrapporta li l-biċċa l-kbira tal-fran jilħqu l-kon 6 f’madwar {{2200 °F; 1204 °C}}. Iċċekkjaha b’sett ta’ koni fil-forn tiegħek.
 
-### Tkessiħ bil-mod
+### It-tkessiħ bil-mod
 
-It-**tkessiħ bil-mod** ifisser li l-kontrollur ikessaħ il-forn b’rata stabbilita minflok iħalli t-temperatura tinżel waħedha. C6DHSC ta’ Digitalfire huwa PLC6DS segwit minn tkessiħ b’rata ta’ {{150 °F/h; 83 °C/h}} minn {{2100 °F; 1148 °C}} sa {{1400 °F; 760 °C}}, imbagħad jintefa. “Itejjeb il-leqa u l-kwalità tal-wiċċ” u jgħin lill-glejżijiet blu tar-rutil, imma t-tkessiħ bil-mod “jista’ jżid l-effett matt” (glejż matt wieħed sar niexef) u jista’ jqassar il-ħajja tar-relè tal-forn. L&L jipprovdi wkoll programm ta’ tkessiħ bil-mod għall-kon 6:
+**Tkessiħ bil-mod** ifisser li l-kontrollur ikessaħ il-forn b’rata stabbilita minflok ma jħallih jiksaħ waħdu. C6DHSC ta’ Digitalfire huwa PLC6DS segwit minn tkessiħ b’{{150 °F/h; 83 °C/h}} minn {{2100 °F; 1148 °C}} sa {{1400 °F; 760 °C}}, imbagħad jintefa. “Itejjeb il-leqa u l-kwalità tal-wiċċ” u jgħin il-blu tar-rutil, iżda t-tkessiħ bil-mod “jista’ jżid l-effett matt” (glejż matt wieħed sar niexef) u jista’ jqassar il-ħajja tar-relays tal-forn. L&L jibgħat ukoll programm ta’ tkessiħ bil-mod għall-kon 6:
 
-Table: “User 6” ta’ L&L: tkessiħ bil-mod għal glejżijiet għall-kon 6
+Table: L&L “User 6”: tkessiħ bil-mod għall-glejżijiet tal-kon 6
 Label: Tkessiħ bil-mod ta’ L u L
 
-| Pass |                                    Rata |                 Mira |
-| ---- | --------------------------------------: | -------------------: |
-| 1    |                Titla’ bl-akbar veloċità | {{2232 °F; 1222 °C}} |
-| 2    |                Tinżel bl-akbar veloċità | {{1900 °F; 1038 °C}} |
-| 3    | Tinżel b’rata ta’ {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Pass |                             Rata |                 Mira |
+| ---- | -------------------------------: | -------------------: |
+| 1    |         Bl-ogħla veloċità ’l fuq | {{2232 °F; 1222 °C}} |
+| 2    |       Bl-ogħla veloċità ’l isfel | {{1900 °F; 1038 °C}} |
+| 3    | ’L isfel b’{{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Il-kontrolluri ta’ Skutt ukoll joffru tnixxif fil-forn (preheat) u għażla ta’ tkessiħ f’pass wieħed.
+Il-kontrolluri ta’ Skutt joffru wkoll tisħin minn qabel u għażla ta’ tkessiħ f’pass wieħed.
 
 ### F’forn mingħajr kontrollur
 
-Forn mingħajr kontrollur ma jistax isegwi dawn il-programmi eżatt, imma l-pjan huwa l-istess: bil-mod fil-bidu, kostanti fin-nofs, u tmiem li ssegwih mill-qrib. Il-programm ta’ Bracker’s għall-glejż għal ħami baxx jinsab fit-taqsima Fran mingħajr kontrollur, fid-dettall, aktar ’l isfel; għal koni aktar sħan iżid “medja ta’ 15–30 minuta għal kull numru tal-kon”. B’pirometru, bil-prattika u b’reġistru tal-ħami, tista’ tikkopja bejn wieħed u ieħor drop-and-hold jew tkessiħ bil-mod billi tbaxxi s-swiċċijiet bl-idejn, kif jissuġġerixxi Digitalfire.
+Forn mingħajr kontrollur ma jistax isegwi dawn il-programmi eżatt, iżda l-pjan huwa l-istess: bil-mod fil-bidu, kostanti f’nofs il-ħamja, u tmiem li tosservah. Il-programm tal-glejż għal ħami baxx ta’ Bracker jinsab taħt Fran mingħajr kontrollur, fid-dettall, aktar ’l isfel; għal koni aktar sħan iżid “medja ta’ 15–30 minuta għal kull numru tal-kon”. B’pirometru, bil-prattika u b’reġistru, tista’ bejn wieħed u ieħor tikkopja drop-and-hold jew tkessiħ bil-mod billi tniżżel is-swiċċijiet bl-idejn, kif jissuġġerixxi Digitalfire.
 
 ## Fran mingħajr kontrollur, fid-dettall {#manual-kilns}
 

@@ -123,80 +123,80 @@ Derek Au weeg in een bak in aparte hope, sodat 'n fout weer uitgeskep kan word. 
 
 ### Hoeveel water
 
-Bronne verskil. Derek Au begin dik, teen 50 mL water per 100 g poeier, en voeg later meer by. Potterycrafts gee 65 mL per 100 g vir een poeierglasuur. UT Austin gebruik gelyke gewigte water en poeier, en toe Digitalfire 20 kg poeier in 20 kg water gesit het, het dit 'n soortlike gewig van 1,46 gemeet.
+Bronne verskil. Derek Au begin dik, met 50 mL water per 100 g poeier, en voeg later meer by. Potterycrafts gee 65 mL per 100 g vir een poeierglasuur. UT Austin gebruik gelyke gewigte water en poeier, en toe Digitalfire 20 kg poeier in 20 kg water gegooi het, het dit 'n soortlike gewig van 1,46 gemeet.
 
-Water is vinnig bygevoeg en stadig verwyder, so begin laag. Ons skatting: begin met **ongeveer 70 tot 80 mL per 100 g** (700 tot 800 mL per kilogram, of ongeveer 11 tot 12 US fl oz per pond). Week, meng en sif teen daardie dikte, voeg dan water bietjie vir bietjie by totdat die soortlike gewig reg is. 1 mL water weeg 1 g, so jy kan dit afweeg. As jy te veel byvoeg, laat die glasuur sak, spons dan of giet helder water van bo af.
+Water is vinnig om by te voeg en stadig om uit te haal, so begin laag. Ons skatting: begin met **ongeveer 70 tot 80 mL per 100 g** (700 tot 800 mL per kilogram, of ongeveer 11 tot 12 US fl oz per pond). Laat dit week, meng en sif dit op daardie dikte, en voeg dan bietjie vir bietjie water by tot die soortlike gewig reg is. 1 mL water weeg 1 g, so jy kan dit weeg. As jy te ver gaan, laat die glasuur sak en spons of gooi dan helder water van bo af.
 
 ### Gereedskap en water
 
-- **Propellermenger.** Digitalfire noem 'n goeie een "noodsaaklik". 'n Boormasjien met 'n kabel en 'n mengpaddel doen die werk in 'n emmer. UT Austin laat dit ten minste 4 tot 5 minute loop nadat die glasuur gemeng lyk, en hou die lem weg van die emmer, waarvan dit plastiek kan afskaaf.
-- **Menger.** Dit "werk uiters goed vir klein mengsels" (Digitalfire). Hou dit net vir glasuur: dit mag nooit terug kombuis toe gaan nie.
-- **Klopper of stok.** Zakin se keuse as daar geen menger is nie.
+- **Skroefmenger.** Digitalfire noem 'n goeie een "noodsaaklik". 'n Boor met 'n koord en 'n mengspaan doen die werk in 'n emmer. UT Austin laat dit ten minste 4 tot 5 minute loop nadat die glasuur gemeng lyk, en hou die lem van die emmer af, waarvan dit plastiek kan afskraap.
+- **Menger (blender).** Dit "werk uiters goed vir klein mengsels" (Digitalfire). Hou dit net vir glasuur: dit mag nooit terug kombuis toe gaan nie.
+- **Klitser of stok.** Zakin se keuse wanneer daar geen menger is nie.
 
-Water verskil ook, en Digitalfire merk op dat dit verander hoe 'n slurrie hom gedra. Derek Au gebruik truosmose-water omdat sy kraanwater hard is. Watter ook al jy gebruik, skryf dit neer.
+Water verskil ook, en Digitalfire merk op dat dit verander hoe 'n flodder optree. Derek Au gebruik tru-osmose-water omdat sy kraanwater hard is. Wat jy ook al gebruik, skryf dit neer.
 
 ### Stap vir stap
 
-1. Sit jou respirator aan, en rubberhandskoene as jou hande ingaan. Zakin dra 'n masker van die begin van afweeg totdat die glasuur nat is.
-2. Meet ongeveer 70 tot 80 mL water per 100 g poeier in die emmer.
-3. Voeg die afgeweegde poeier saggies by, van 'n lae hoogte. UT Austin voeg poeier by warm water; Zakin en Au voeg water by poeier. Ons raai poeier in water aan, wat minder stof opstoot, behalwe vir 'n resep met baie bentoniet: roer sy droë poeiers eers saam.
-4. **Week** dit: laat die poeier week sonder om te roer. Digitalfire wag ongeveer 20 minute. Poeiers met 'n gom of bindmiddel moet oornag staan.
-5. Meng totdat daar geen droë kolle of klonte is nie.
+1. Sit jou respirator op, en rubberhandskoene as jou hande daarin gaan. Zakin dra 'n masker van die begin van weeg totdat die glasuur nat is.
+2. Meet ongeveer 70 tot 80 mL water per 100 g poeier in die emmer af.
+3. Voeg die geweegde poeier saggies by, van 'n lae hoogte af. UT Austin voeg poeier by warm water; Zakin en Au voeg water by poeier. Ons stel poeier in water voor, wat minder stof opblaas, behalwe vir 'n resep met baie bentoniet: roer sy droë poeiers eers saam.
+4. **Laat dit week**: laat die poeier sonder roer deurweek. Digitalfire wag ongeveer 20 minute. Poeiers met 'n gom of bindmiddel moet oornag staan.
+5. Meng tot daar geen droë kolle of klonte is nie.
 6. Sif dit twee keer (sien hieronder).
-7. Bedek dit en laat dit oornag rus, meng dan weer en kyk of die bodem 'n harde laag het.
-8. Meet die soortlike gewig, en voeg water bietjie vir bietjie by om jou teiken te bereik.
-9. Etiketteer die emmer, en skryf neer wat jy gedoen het.
-10. Maak nat skoon: dweil die vloer en vee elke oppervlak af, insluitend die buitekant van die grondstofhouers.
+7. Bedek dit en laat dit oornag rus, meng dan weer en kyk of daar 'n harde laag onder is.
+8. Meet die soortlike gewig, en voeg bietjie vir bietjie water by om jou teiken te bereik. Om jou glasuur se eie droë SG te leer ken, weeg ook die klaar flodder (sien hieronder).
+9. Merk die emmer, en skryf neer wat jy gedoen het.
+10. Maak nat skoon: mop die vloer en vee elke oppervlak af, ook die buitekant van die grondstofhouers.
 
 ### Sif
 
-'n **Sif** is 'n maaskerm in 'n raam. Om glasuur met 'n kwas daardeur te druk breek klonte wat meng laat bly, en vang deeltjies wat as spikkels sou bak. Hoe hoër die **mesh**-getal, hoe fyner die skerm: 80 mesh het openinge van ongeveer 0,18 mm, en 100 mesh ongeveer 0,15 mm.
+'n **Sif** is 'n gaasskerm in 'n raam. Om glasuur met 'n kwas daardeur te druk, breek klonte op wat meng laat en vang deeltjies wat as spikkels sou uitbak. Hoe hoër die **maas**getal, hoe fyner die skerm: 80-maas het openinge van ongeveer 0,18 mm, en 100-maas ongeveer 0,15 mm.
 
-Bronne beveel verskillende mesh aan. Zakin sif twee keer deur 50 of 80 mesh. Derek Au gebruik 120 mesh vir die meeste glasure, veral dié met kobalt of yster: drie deurgange deur 80 mesh het nog ysterspikkels in een seladon gelaat, en een deurgang deur 120 mesh het dit genees. Hy hou 60 tot 80 mesh vir asglasure en ander met growwe grondstowwe. Potterycrafts, in die VK, stel 60 tot 80 mesh voor. 'n Veilige verstek:
+Bronne beveel verskillende mase aan. Zakin sif twee keer deur 50- of 80-maas. Derek Au gebruik 120-maas vir die meeste glasure, veral dié met kobalt of yster: drie keer deur 80-maas het steeds ysterspikkels in een seladon gelaat, en een keer deur 120-maas het dit reggestel. Hy hou 60- tot 80-maas vir asglasure en ander met growwe grondstowwe. Potterycrafts, in die VK, stel 60 tot 80 maas voor. 'n Veilige verstek:
 
 Table: Watter sif om te gebruik
-Label: Sif-mesh
+Label: Sifmaas
 
-| Glasuur                                      | Sif                         |
-| -------------------------------------------- | --------------------------- |
-| Die meeste glasure                           | Twee deurgange deur 80 mesh |
-| Glasure met kleurstowwe soos kobalt of yster | 100 tot 120 mesh            |
-| Asglasure, en ander met growwe grondstowwe   | 60 tot 80 mesh              |
+| Glasuur                                      | Sif                    |
+| -------------------------------------------- | ---------------------- |
+| Die meeste glasure                           | Twee keer deur 80-maas |
+| Glasure met kleurstowwe soos kobalt of yster | 100 tot 120 maas       |
+| Asglasure, en ander met growwe grondstowwe   | 60 tot 80 maas         |
 
 ## Soortlike gewig {#specific-gravity}
 
-**Soortlike gewig** (SG) sê vir jou hoeveel poeier in jou slurrie is. Dit is die gewig van 'n volume glasuur gedeel deur die gewig van dieselfde volume water. Water is 1,00, en 'n glasuur teen {{SG 1.45}} weeg 145 g per 100 mL. Om tot 'n gemete SG te meng is hoe jy elke keer dieselfde dikte, en dieselfde laag, kry. Dit het geen eenhede nie, so dit is dieselfde in gram of onse.
+**Soortlike gewig** (SG) sê vir jou hoeveel poeier in jou flodder is. Dit is die gewig van 'n volume glasuur gedeel deur die gewig van dieselfde volume water. Water is 1,00, en 'n glasuur by {{SG 1.45}} weeg 145 g per 100 mL. Om tot 'n gemete SG te meng, is hoe jy elke keer dieselfde dikte, en dieselfde laag, kry. Dit het geen eenhede nie, so dit is dieselfde in gram of onse.
 
-### Meet dit deur 100 mL af te weeg
+### Meet dit deur 100 mL te weeg
 
-1. Roer die glasuur sodat niks gesak het nie.
-2. Sit 'n **maatsilinder** van 100 mL ('n lang, gemerkte meetbuis) of 'n spuit van 100 mL op die skaal, en tarreer dit.
-3. Vul dit met glasuur tot presies 100 mL, en lees die merk op oogvlak.
+1. Roer die glasuur sodat niks gesak is nie.
+2. Sit 'n 100 mL-**maatsilinder** ('n hoë, gemerkte maatbuis) of 'n 100 mL-spuit op die skaal, en tarreer dit.
+3. Vul dit met glasuur tot presies 100 mL, en lees die merk op ooghoogte.
 4. Weeg dit en deel die gram deur 100: 145 g is SG 1,45.
 
-Digitalfire merk ook 'n koppie by die vlak van 500 g water, vul dit tot by die merk met glasuur, en deel die gewig deur 500; 'n groter, voller maat is akkurater. 'n **Hidrometer**, 'n dryfstok wat gelees word waar dit in die glasuur sit, is vinnig maar kan dik of gegelleerde glasure verkeerd lees. Hidrometers uit die VK, soos Potclays s'n, lees in grade Baumé (°Bé). Volgens ons rekenwerk is SG = 145 ÷ (145 − °Bé), so 46 °Bé is ongeveer 1,46. Ouer boeke uit die VK gee 'n **pintgewig**, die onse in 'n imperiale pint glasuur: deel dit deur 20, so 29 oz is ongeveer SG 1,45 (ook ons rekenwerk).
+Digitalfire merk ook 'n beker by die vlak van 500 g water, vul dit tot by die merk met glasuur, en deel die gewig deur 500; 'n groter, voller maat is akkurater. 'n **Hidrometer**, 'n dobber wat gelees word waar dit in die glasuur sit, is vinnig, maar kan dik of gejelde glasure verkeerd lees. Britse hidrometers, soos Potclays s'n, lees in grade Baumé (°Bé). Volgens ons berekening is SG = 145 ÷ (145 − °Bé), dus is 46 °Bé ongeveer 1,46. Ouer Britse boeke gee 'n **pint weight**, die onse in 'n imperiale pint glasuur: deel dit deur 20, dus is 29 oz ongeveer SG 1,45 (ook ons berekening).
 
 ### Waarna om te mik
 
-Bronne verskil, veral oor kwas en spuit, waar die verskaffer Potclays uit die VK baie hoër syfers gee (sy eie is "slegs ter oriëntering"). Beskou elke getal as 'n beginpunt. Digitalfire se kernraad is om die SG en gelering te vind wat vir elke glasuur werk, dan dit te herhaal en neer te skryf.
+Bronne verskil, die meeste oor kwas en spuit, waar die Britse verskaffer Potclays baie hoër syfers gee (sy eie is "net as riglyn"). Behandel elke getal as 'n beginpunt. Digitalfire se kernraad is om die SG en jelering te vind wat vir elke glasuur werk, en dit dan te herhaal en neer te skryf.
 
-Table: Soortlike gewig-teikens, waar bronne verskil
-Label: Soortlike gewig-teikens
+Table: SG-teikens, waar bronne verskil
+Label: SG-teikens
 
-| Gebruik | Digitalfire en Glazy                                                                                                                                              | Potclays (VK)                                     | Veilige beginpunt                                           |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- |
-| Doop    | {{SG 1.40}} (vir 'n doop van 5 sekondes) tot {{SG 1.50}} (vir 'n doop van 1 sekonde); tuisgemengde glasure wat gegelleer is, werk die beste teen {{SG 1.43–1.45}} | Deurskynend {{SG 1.46–1.48}}; gekleur {{SG 1.61}} | {{SG 1.45}}; verdun tot {{SG 1.43}} en laat gel as dit drup |
-| Kwas    | {{SG 1.25}} (dun deurskynend) tot {{SG 1.55}} (donker detail)                                                                                                     | {{SG 1.71–1.81}}                                  | Volg die produk; gebruik CMC-gom of 'n kwasmedium           |
-| Spuit   | Geen syfer nie; Hopper, wat vir Ceramic Arts Network skryf, sê baie dunner, met 'n ontvlokkingsmiddel ('n bymiddel wat 'n slurrie vloeibaarder maak)              | {{SG 1.71}}                                       | Geen betroubare getal nie; spuit net in 'n spuitkamer       |
+| Gebruik | Digitalfire en Glazy                                                                                                                                        | Potclays (VK)                                    | Veilige beginpunt                                          |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------- |
+| Doop    | {{SG 1.40}} (vir 'n doop van 5 sekondes) tot {{SG 1.50}} (vir 'n doop van 1 sekonde); tuisgemengde glasure wat gejel is, doen die beste by {{SG 1.43–1.45}} | Deursigtig {{SG 1.46–1.48}}; gekleur {{SG 1.61}} | {{SG 1.45}}; verdun tot {{SG 1.43}} en jel dit as dit drup |
+| Kwas    | {{SG 1.25}} (dun deursigtig) tot {{SG 1.55}} (donker detail)                                                                                                | {{SG 1.71–1.81}}                                 | Volg die produk; gebruik CMC-gom of 'n kwasmedium          |
+| Spuit   | Geen syfer nie; Hopper, wat vir Ceramic Arts Network skryf, sê baie dunner, met 'n deflokkuleermiddel ('n bymiddel wat 'n flodder vloeibaarder maak)        | {{SG 1.71}}                                      | Geen betroubare getal nie; spuit net in 'n spuithokkie     |
 
-Om 'n doopglasuur met die oog na te gaan, doop AMACO 5 sekondes en soek 'n laag ongeveer so dik soos 'n Amerikaanse dime. Digitalfire bak teëls wat 5 sekondes gedoop is om na te gaan.
+Om 'n doopglasuur met die oog te kontroleer, doop AMACO vir 5 sekondes en soek na 'n laag ongeveer so dik soos 'n Amerikaanse dime. Digitalfire bak teëls wat vir 5 sekondes gedoop is om te kontroleer.
 
 ### Water vir 'n teiken-SG: ons skatting
 
-Die tabel hieronder is ons eie rekenwerk, nie 'n bron s'n nie. Dit neem aan dat die poeier se deeltjies 'n digtheid van 2,6 g per cm³ het, wat 'n aanname is, nie 'n meting nie. Klei, oplosbare grondstowwe en gelering verander almal 'n werklike glasuur, so gebruik dit om te begin, en meet dan. As kontrole voorspel dit {{SG 1.44}} vir gelyke gewigte poeier en water, naby aan Digitalfire se gemete {{SG 1.46}}. Dit wys ook dat 70 tot 80 mL per 100 g jou bo {{SG 1.50}} laat begin, dikker as wat jy nodig het.
+Die tabel hieronder is ons eie berekening, nie 'n bron s'n nie. Dit aanvaar dat die poeier se deeltjies 'n digtheid van 2,6 g per cm³ het, wat 'n aanname is, nie 'n meting nie. Klei, oplosbare grondstowwe en jelering verander almal 'n werklike glasuur, so gebruik dit om te begin, en meet dan. As kontrole voorspel dit {{SG 1.44}} vir gelyke gewigte poeier en water, naby Digitalfire se gemete {{SG 1.46}}. Dit wys ook dat 70 tot 80 mL per 100 g jou bo {{SG 1.50}} laat begin, dikker as wat jy nodig het.
 
-Table: Water vir 'n teiken-soortlike gewig (ons skatting)
-Label: Water vir 'n teiken-soortlike gewig
+Table: Water vir 'n teiken-SG (ons skatting)
+Label: Water vir 'n teiken-SG
 
 | Teiken      | Per 100 g poeier |     Per kilogram |             Per pond |
 | ----------- | ---------------: | ---------------: | -------------------: |
@@ -205,76 +205,97 @@ Label: Water vir 'n teiken-soortlike gewig
 | {{SG 1.50}} |   ongeveer 85 mL |  ongeveer 850 mL | ongeveer 13 US fl oz |
 | {{SG 1.60}} |   ongeveer 64 mL |  ongeveer 640 mL | ongeveer 10 US fl oz |
 
-### Epsom-soute, CMC-gom en bentoniet
+### Vind jou eie glasuur se droë SG terwyl jy meng
 
-**Epsom-soute** laat 'n glasuur effens gel wanneer dit stilstaan en weer vloei wanneer dit geroer word. Dit word **flokkulering** genoem, en 'n glasuur wat so optree is **tiksotropies**: dit gaan egaliger aan, drup minder en sak minder. Digitalfire stel voor dat jy begin teen ongeveer 2 g per gelling sodra die SG reg is (ongeveer 0,5 g per liter, ons omskakeling) en die hoeveelheid by elke meng fynstel, aangesien geen resep die dosis moet vasstel nie. Ons raai aan dat jy dit eers in 'n bietjie warm water oplos. In 'n voorbeeld van Digitalfire het 'n glasuur teen {{SG 1.45}} gedrup, so water het dit tot {{SG 1.43}} gebring en Epsom-soute het dit weer tot romerig laat gel, en dit het egalig aangegaan. 'n Growwe toets: roer, hou op en kyk. 'n Gegelleerde glasuur beweeg nog ongeveer 2 of 3 sekondes, hou dan op en veer effens terug.
+Die 2,6 hierbo is 'n raaiskoot. Jou eie glasuur se syfer, die digtheid van sy droë poeier, kan uitgewerk word uit drie getalle wat jy kan neem terwyl jy meng. Daarmee kan jy later uit die SG uitwerk hoeveel poeier in enige emmer van daardie glasuur is, en die water vir die volgende mengsel. Ons berekening, nie 'n bron s'n nie:
 
-**CMC-gom** (karboksimetielsellulose) maak 'n slurrie klewer en stadiger om te droog, en laat 'n harder laag wat aan die pot vashou. Dit maak die meeste saak vir kwasglasure en glasure ryk aan frit. Digitalfire se voorbeeld meng 3,75 g in 1000 g slurrie, en dit moet met 'n menger ingaan. 'n Glasuur met CMC sal nie met Epsom-soute gel nie, en aangesien mikrobes op die gom voed, kan dit in die emmer verander en begin ruik.
+1. Skryf die gewig van droë poeier in die mengsel neer: die resep se totaal.
+2. Weeg die leë emmer voordat jy begin, of merk sy gewig daarop.
+3. Meng, sif en bring die glasuur soos gewoonlik op sy SG. Druk alles deur die sif en spoel dit in die emmer, sodat geen poeier uitgelaat word nie.
+4. Weeg die vol emmer en trek die emmer se gewig af. Dit is die flodder se gewig.
+5. Meet die SG.
 
-**Bentoniet**, 'n baie fyn klei, help om die ander deeltjies in suspensie te hou. Doopglasure steun gewoonlik hiervoor op 15 tot 25% rou klei. Vir 'n resep met te min klei help ongeveer 1 tot 3% bentoniet; Digitalfire sê 'n glasuur met meer as 15% klei behoort nie bentoniet teen meer as 1% van die droë glasuur se gewig nodig te hê nie.
+Dan:
 
-## Toetsteëls en lynmengings {#testing}
+- **Water** = floddergewig − poeiergewig.
+- **Floddervolume** in mL = floddergewig in gram ÷ SG.
+- **Poeiervolume** = floddervolume − water (1 g water is 1 mL).
+- **Droë SG** = poeiergewig ÷ poeiervolume.
+
+Byvoorbeeld: 1000 g poeier maak 1980 g flodder by {{SG 1.45}}. Die water is 980 g, die flodder is 1980 ÷ 1,45 = ongeveer 1366 mL, die poeier neem 1366 − 980 = 386 mL op, en die droë SG is 1000 ÷ 386 = ongeveer 2,59.
+
+Weeg die hele flodder aan die einde, nie die water terwyl jy dit ingooi nie, sodat water wat verdamp of uitspat nie tel nie. Klein foute groei hier: 'n SG-lesing wat 0,01 af is, skuif die antwoord met ongeveer 2 tot 4%, meer vir 'n dunner glasuur. Gebruik 'n mengsel van 1 kg of meer, 'n akkurate skaal, en die 500 g-bekermetode hierbo vir die SG. Die meeste van die algemene grondstowwe is tussen ongeveer 2,5 en 2,9, dus beteken 'n syfer ver buite dit, in 'n glasuur sonder veel sirkoon of lood, waarskynlik 'n meetfout. Skryf die syfer op die resep.
+
+### Epsom-sout, CMC-gom en bentoniet
+
+**Epsom-sout** laat 'n glasuur effens jel wanneer dit stilstaan en weer vloei wanneer dit geroer word. Dit word **flokkuleer** genoem, en 'n glasuur wat so optree, is **tiksotroop**: dit gaan gelykmatiger op, drup minder en sak minder. Digitalfire stel voor om by ongeveer 2 g per gelling te begin sodra die SG reg is (rofweg 0,5 g per liter, ons omskakeling) en die hoeveelheid elke keer as jy meng in te stel, aangesien geen resep die dosis behoort vas te stel nie. Ons stel voor dat jy dit eers in 'n bietjie warm water oplos. In 'n Digitalfire-voorbeeld het 'n glasuur by {{SG 1.45}} gedrup, toe het water dit tot {{SG 1.43}} afgebring en Epsom-sout het dit terug tot romerig gejel, en dit het gelykmatig opgegaan. 'n Rowwe toets: roer, stop en kyk. 'n Gejelde glasuur beweeg vir ongeveer 2 of 3 sekondes aan, stop dan en spring effens terug.
+
+**CMC-gom** (karboksiemetielsellulose) maak 'n flodder klewer en stadiger om te droog, en laat 'n harder laag wat aan die pot vashou. Dit maak die meeste saak vir kwasglasure en glasure met baie frit. Digitalfire se voorbeeld meng 3,75 g in 1000 g flodder, en dit moet met 'n menger ingaan. 'n Glasuur met CMC sal nie met Epsom-sout jel nie, en aangesien mikrobes van die gom leef, kan dit in die emmer verander en begin ruik.
+
+**Bentoniet**, 'n baie fyn klei, help om die ander deeltjies in suspensie te hou. Doopglasure maak gewoonlik hiervoor staat op 15 tot 25% rou klei. Vir 'n resep met te min klei help ongeveer 1 tot 3% bentoniet; Digitalfire sê 'n glasuur met meer as 15% klei behoort nie bentoniet van meer as 1% van die droë glasuur se gewig nodig te hê nie.
+
+## Toetsteëls en lynmengsels {#testing}
 
 ### Begin klein
 
-Derek Au werk in drie stappe op: 'n toets van 50 of 100 g, 'n proef van 1 tot 2 kg as dit werk, dan 'n ateljeemengsel van 5 tot 10 kg. Volgens ons skatting maak 'n toets van 100 g teen {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) slurrie, genoeg om 'n paar klein teëls in 'n smal koppie te doop.
+Derek Au werk in drie stappe op: 'n toets van 50 of 100 g, 'n proef van 1 tot 2 kg as dit werk, en dan 'n ateljeemengsel van 5 tot 10 kg. Volgens ons skatting maak 'n toets van 100 g by {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) flodder, genoeg om 'n paar klein teëls in 'n smal beker te doop.
 
 ### Toets op jou eie klei
 
-'n Glasuur kan heel anders lyk op 'n ander klei of in 'n ander keramiekoond: Clay Art Center het elk van sy herformuleerde glasure op vier kleiliggame getoets, by kegel 6 en by kegel 10. Potclays se beginnersgids tot glasuurtoetse stel voor:
+'n Glasuur kan heel anders lyk op 'n ander klei of in 'n ander oond: Clay Art Center het elkeen van sy hergeformuleerde glasure op vier kleiliggame getoets, by kegel 6 en by kegel 10. Potclays se beginnersgids vir glasuurtoetse stel voor:
 
-- 6 tot 10 **toetsteëls** (klein stukke om 'n glasuur op te probeer) van die klei wat jy werklik gaan gebruik, met 'n aantekening of hulle biskwiet gebak of beendroog is
+- 6 tot 10 **toetsteëls** (klein stukke om 'n glasuur op te probeer) van die klei wat jy werklik sal gebruik, met 'n nota of hulle gebiskwiet of beendroog is
 - een verandering op 'n slag
 - 'n enkele doop en 'n dubbele doop, om die glasuur dun en dik te sien
 - elke teël in dieselfde oondlading
-- 'n merk op elke teël voor die bak, met 'n stempel, 'n kerf of 'n onderglasuurpotlood.
+- 'n merk op elke teël voor die bak, met 'n stempel, kerf of onderglasuurpotlood. Gebakte teëls lyk eenders, en 'n merk wat voor die bak gemaak is, hou deur die oond, sodat jy altyd kan sê watter resep elke teël is.
 
-Ons raai teëls aan wat regop staan, aangesien 'n plat teël wegsteek hoe ver 'n glasuur loop, met 'n getekstureerde strook om te wys hoe die glasuur oor rande breek, en 'n kaal voet. Sit elkeen op 'n klein skoteltjie of 'n stukkie biskwiet, of op 'n rak met rakdeklaag, om druppels op te vang. Sit 'n **getuiekegel**, 'n klein keramiekkegel wat buig wanneer dit genoeg hitte gehad het, naby die teëls om te wys wat hulle ontvang het; die [gids oor bak](/guides/firing) verduidelik kegels. Gee elke teël 'n kort kode, en skryf dit teenaan die resep in jou rekords neer. Willers, wat vir Ceramic Arts Network skryf, gebruik syfers en letters, en skryf die stelsel self voorin die notaboek.
+Ons stel teëls voor wat regop staan, aangesien 'n plat teël wegsteek hoe ver 'n glasuur loop, met 'n getekstureerde band om te wys hoe die glasuur oor rande breek, en 'n kaal voet. Sit elkeen op 'n klein bakkie of 'n stukkie biskwiet, of op 'n rak met rakdeklaag, om drupe op te vang. Sit 'n **getuiekegel**, 'n klein keramiekkegel wat buig wanneer dit genoeg hitte gehad het, naby die teëls om te wys wat hulle ontvang het; die [bakgids](/guides/firing) verduidelik kegels. Gee elke teël 'n kort kode, en skryf dit teenoor die resep in jou rekords. Willers, wat vir Ceramic Arts Network skryf, gebruik getalle en letters, en skryf die stelsel self voor in die notaboek.
 
-### Lynmengings
+### Lynmengsels
 
-'n **Lynmenging** is 'n ry toetse wat eweredig van een mengsel na 'n ander gaan: van een glasuur na 'n tweede, of van 'n basisglasuur na dieselfde glasuur met meer kleurstof. Derek Au verhoog byvoorbeeld ysteroksied in 'n deurskynende basis in stappe van 1%. 'n Volumetriese metode wat met Ian Currie geassosieer word, spaar tyd, omdat jy net die twee ente meng:
+'n **Lynmengsel** (line blend) is 'n ry toetse wat eweredig van een mengsel na 'n ander stap: van een glasuur na 'n tweede, of van 'n basisglasuur na dieselfde glasuur met meer kleurstof. Derek Au, byvoorbeeld, stap ysteroksied deur 'n deursigtige basis in stappe van 1%. 'n Volumetriese metode wat met Ian Currie geassosieer word, spaar tyd, omdat jy net die twee ente meng:
 
-1. Meng die twee eindglasure, A en B, as mengsels van dieselfde grootte, en sif albei.
-2. Voeg water by die een met minder volume totdat albei presies dieselfde nat volume het.
-3. Roer albei, trek dan elke mengsel met 'n spuit in sy eie genommerde koppie.
-4. Roer elke koppie en doop 'n teël.
+1. Meng die twee endglasure, A en B, as mengsels van dieselfde grootte, en sif albei.
+2. Voeg water by die een met minder volume tot albei presies dieselfde nat volume het.
+3. Roer albei, en trek dan elke mengsel met 'n spuit in sy eie genommerde beker.
+4. Roer elke beker en doop 'n teël.
 
-In ons uitgewerkte voorbeeld is A 100 g van 'n deurskynende basis, en B is dieselfde met 4 g rooi ysteroksied bygevoeg ('n byvoeging van 4%). Elke milliliter van B bevat dieselfde deel basis as 'n milliliter van A, plus sy yster, so die koppies gaan van geen yster tot 4% in stappe van 1%. Elke einde gee 100 mL aan die lynmenging, wat 'n mengsel van 100 g volgens ons skatting dek.
+In ons uitgewerkte voorbeeld is A 100 g van 'n deursigtige basis, en B dieselfde met 4 g rooi ysteroksied bygevoeg ('n byvoeging van 4%). Elke milliliter van B bevat dieselfde deel basis as 'n milliliter van A, plus sy yster, dus stap die bekers van geen yster tot 4% in stappe van 1%. Elke ent gee 100 mL aan die mengsel, wat 'n mengsel van 100 g volgens ons skatting dek.
 
-Table: 'n Lynmenging van vyf stappe met yster, 40 mL per koppie (ons uitgewerkte voorbeeld)
-Label: Voorbeeld van lynmenging
+Table: 'n Vyfstap-ysterlynmengsel, 40 mL per beker (ons uitgewerkte voorbeeld)
+Label: Lynmengselvoorbeeld
 
-| Koppie | Deurskynende basis (A) | Basis met 4% yster (B) | Ysteroksied, % van basis |
-| ------ | ---------------------: | ---------------------: | -----------------------: |
-| 1      |                  40 mL |                   0 mL |                        0 |
-| 2      |                  30 mL |                  10 mL |                        1 |
-| 3      |                  20 mL |                  20 mL |                        2 |
-| 4      |                  10 mL |                  30 mL |                        3 |
-| 5      |                   0 mL |                  40 mL |                        4 |
+| Beker | Deursigtige basis (A) | Basis met 4% yster (B) | Ysteroksied, % van basis |
+| ----- | --------------------: | ---------------------: | -----------------------: |
+| 1     |                 40 mL |                   0 mL |                        0 |
+| 2     |                 30 mL |                  10 mL |                        1 |
+| 3     |                 20 mL |                  20 mL |                        2 |
+| 4     |                 10 mL |                  30 mL |                        3 |
+| 5     |                  0 mL |                  40 mL |                        4 |
 
-Die metode vereis noukeurige rekenwerk, goed gemengde ente met eweredige SG, en 'n akkurate skaal. Derek Au meng ook volgens gewig in plaas van volume. 'n **Driehoekmenging** doen dieselfde met drie ente, uitgelê op 'n driehoek.
+Die metode verg noukeurige berekening, goed gemengde ente met gelyke SG, en 'n akkurate skaal. Derek Au meng ook volgens gewig in plaas van volume. 'n **Triaksiale mengsel** doen dieselfde met drie ente, uitgelê op 'n driehoek.
 
 > [!NOTE]
-> Wanneer 'n stap belowend lyk, hou **Stoor as afskrif** op die [resepbladsy](/recipe) dit as 'n resep van sy eie en laat die oorspronklike soos dit was.
+> Wanneer 'n stap belowend lyk, hou **Stoor as afskrif** op die [resepbladsy](/recipe) dit as 'n eie resep en laat die oorspronklike soos dit was.
 
 ## Rekords hou {#records}
 
-Willers stel die doel goed: "genoeg inligting om die resultate wat jy ontdek het te kan herhaal, of te vermy". Skryf neer wat jy beplan om te toets voor jy begin, en die resultate wanneer jy uitpak. Potclays voeg die aanwending, dikte, kleiliggaam en volle bak by, insluitend tempo's, houtye en afkoeling. 'n **Tempo** (ramp) is die spoed van verhitting of afkoeling, soos {{60 °C; 108 °F}} per uur, en 'n **houtyd** hou die oond vir 'n vasgestelde tyd op een temperatuur. Skryf lotnommers, die water wat jy gebruik het en enige plaasvervanging neer: Clay Art Center se veldspaatruil het beteken dat ongeveer die helfte van sy glasure aangepas moes word.
+Willers stel die doel goed: "genoeg inligting om die resultate wat jy ontdek het te kan herhaal, of te vermy". Skryf neer wat jy beplan om te toets voordat jy begin, en die resultate wanneer jy uitpak. Potclays voeg die aanwending, dikte, kleiliggaam en volle bak by, insluitend tempo's, houtye en afkoeling. 'n **Tempo** (ramp) is 'n spoed van verhitting of afkoeling, soos {{60 °C; 108 °F}} per uur, en 'n **houtyd** (hold) hou die oond vir 'n vasgestelde tyd op een temperatuur. Skryf lotnommers, die water wat jy gebruik het en enige vervanging neer: Clay Art Center se veldspaatruil het beteken dat ongeveer die helfte van sy glasure aangepas moes word.
 
 Table: Wat om vir elke glasuurmengsel aan te teken (ons sjabloon)
 Label: Rekordsjabloon
 
-| Deel       | Wat om neer te skryf                                                                                                                                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resep      | Die resep en sy weergawe; handelsmerke en lotnommers van grondstowwe; enige plaasvervangings                                                                                       |
-| Meng       | Datum; mengselgrootte; water bygevoeg, en sy tipe (kraan, truosmose of gedistilleer); SG na meng en finale SG; Epsom-soute, CMC en bentoniet bygevoeg; sif-mesh en getal deurgange |
-| Aanwending | Kleiliggaam; biskwietkegel; doop, kwas of giet; dooptyd of getal lae; droë dikte                                                                                                   |
-| Bak        | Oond en rakposisie; die bakskedule, met sy tempo's, houtye en afkoeling; atmosfeer (oksidasie of reduksie); wat die getuiekegel gewys het, nie net waarop die oond gestel was nie  |
-| Resultaat  | Oppervlak en kleur; enige loop, haarlynbarsies of speldeprikgaatjies; foto's van die voorkant, agterkant en kant; die teëlkode                                                     |
+| Deel       | Wat om neer te skryf                                                                                                                                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resep      | Die resep en sy weergawe; grondstofhandelsname en lotnommers; enige vervangings                                                                                                                                                       |
+| Meng       | Datum; mengselgrootte; water bygevoeg, en die soort (kraan, tru-osmose of gedistilleer); SG ná meng en finale SG; die gewig van die klaar flodder, vir sy droë SG; Epsom-sout, CMC en bentoniet bygevoeg; sifmaas en aantal keer deur |
+| Aanwending | Kleiliggaam; biskwietkegel; doop, kwas of giet; dooptyd of aantal lae; droë dikte                                                                                                                                                     |
+| Bak        | Oond en rakposisie; die bakskedule, met sy tempo's, houtye en afkoeling; atmosfeer (oksidasie of reduksie); wat die getuiekegel gewys het, nie net waarop die oond gestel was nie                                                     |
+| Resultaat  | Oppervlak en kleur; enige loop, haarlynbarsies of speldeprikgaatjies; foto's van voor, agter en sy; die teëlkode                                                                                                                      |
 
 > [!NOTE]
-> In Glazecalc hou 'n gestoorde [resep](/recipe) die resep self. 'n [Bakrekord](/firing) teken elke bak aan: die oond, die datum, tye, temperature, kegels en notas. [Notas](/notes) hou al die res, soos die mengselrekord hierbo en wat elke teël gewys het.
+> In Glazecalc hou 'n gestoorde [resep](/recipe) die resep self. 'n [Baklogboek](/firing) teken elke bak aan: die oond, die datum, tye, temperature, kegels en notas. [Notas](/notes) hou alles anders, soos die mengselrekord hierbo en wat elke teël gewys het.
 
 ## Bronne {#sources}
 

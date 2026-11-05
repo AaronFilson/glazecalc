@@ -83,6 +83,8 @@ Raaka-aineiden ostamisesta ja säilyttämisestä kerrotaan tarkemmin oppaassa [L
 
 Suosittelemme ämpäriin kantta: sakka sisältää samoja metalleja kuin lasite, ja lemmikit juovat seisovaa vettä. Jätemääräykset vaihtelevat paikkakunnittain, joten tarkista jokaisen tuotteen käyttöturvallisuustiedote ja kysy epäselvissä tapauksissa omalta kunnalta tai vesilaitokselta.
 
+Jotkin pajat polttavat kuivatun sakan ennen kuin heittävät sen pois. Sakka laitetaan ylimääräiseen kulhoon, joka saa mennä käyttökelvottomaksi: polton jälkeen kulhoa ei voi enää käyttää. Täytä kulho vain neljäsosaan asti, koska sakka vaahtoaa ja kuplii sulaessaan, ja peitä se lautasella. Aseta kulho suoja-aineella käsitellylle uunilevylle tai ylimääräiselle levylle siltä varalta, että sakka valuu yli. Poltto muuttaa sakan lasiksi, joka sitoo metallit paljon tiukemmin kuin irtonainen jauhe, joten se on turvallisempaa kaatopaikalla. Käsittele kuivaa sakkaa kuten kuivaa lasitetta: käytä hengityksensuojainta äläkä nostata pölyä.
+
 ## Pölyn pitäminen pajassa {#keeping-dust-in-the-studio}
 
 Pennsylvanian terveysviranomainen sanoo ongelman suoraan: ”Harrastuksesta peräisin oleva lyijypitoinen pöly voi tarttua vaatteisiin, kenkiin, hiuksiin, ihoon ja henkilökohtaisiin tavaroihin ja siirtyä helposti autoon ja kodin pinnoille.” CDC lisää, että aikuiset ”voivat tuoda lyijyä kotiin mukanaan ja altistaa perheensä lyijylle tietämättään.” Pennsylvanian ohje antaa ratkaisun:

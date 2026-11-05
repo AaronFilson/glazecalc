@@ -724,7 +724,7 @@
     "keyBright": "Linha pontilhada: onde os esmaltes de Stull ficaram mais brilhantes.",
     "keyLimits": "Linhas tracejadas e sombreado: as faixas de sílica e alumina de {name}.",
     "keyCrazed": "Hachura: onde eles gretaram.",
-    "note": "Uma orientação, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) queimou no cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e queimas deslocam as regiões, e um fosco subqueimado pode aparecer como brilhante. As regiões são como o Glazy as desenha."
+    "note": "Uma orientação, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) queimou a cerca do cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e outras queimas deslocam as regiões, e um esmalte que é fosco só porque foi subqueimado ainda pode cair na região brilhante. As regiões são as que o Glazy desenha."
   },
   "slurry": {
     "heading": "Densidade e água",
@@ -752,7 +752,17 @@
       "pint": "O peso por pinta que você quer, oz"
     },
     "drySg": "Densidade das matérias-primas secas",
-    "drySgHelp": "Cerca de 2,5 para a maioria dos esmaltes; o Glazy usa 2,6.",
+    "drySgEmpty": "Só os pesos secos precisam dela; a água a acrescentar, não. Digite-a se você souber.",
+    "drySgNeeded": "Digite a densidade das matérias-primas secas para ver o esmalte seco no balde e a água para um novo lote.",
+    "estimate": {
+      "mineral": "Uma estimativa, {sg}, a partir do que cada matéria-prima é feita: a densidade medida do seu mineral. Mude se você souber um valor melhor.",
+      "kind": "Uma estimativa, {sg}: feldspatos e argilas pesam cerca de 2,6. Mude se você souber um valor melhor.",
+      "glass": "Uma estimativa, {sg}, calculada a partir dos óxidos das fritas (elas são vidro). Mude se você souber um valor melhor.",
+      "mixed": "Uma estimativa, {sg}, a partir de cada matéria-prima: a densidade medida do seu mineral, cerca de 2,6 para feldspatos e argilas, e as fritas calculadas a partir dos seus óxidos. Mude se você souber um valor melhor.",
+      "leftOut": "Deixadas de fora, porque a densidade delas não é conhecida: {names}.",
+      "none": "Não há estimativa para esta receita: a densidade de {names} não é conhecida. Digite-a se você souber.",
+      "was": "O seu valor é usado. A estimativa era {sg}; limpe o campo para voltar a ela."
+    },
     "batch": "Esmalte seco para um novo lote, {unit}",
     "contents": "Com densidade {sg}, o balde contém {glaze} de esmalte seco e {water} de água.",
     "add": "Para chegar à densidade {target}, adicione {water} de água. O volume final fica em cerca de {volume}.",
@@ -760,6 +770,7 @@
     "already": "Já está com densidade {target}.",
     "mix": "Misture {glaze} de esmalte seco com {water} de água para cerca de {volume} com densidade {target}.",
     "badSg": "Uma densidade tem que ser maior que 1 (a da água) e menor que a das matérias-primas secas, {dry}.",
+    "badSgWater": "Uma densidade tem que ser maior que 1 (a da água).",
     "badDry": "A densidade das matérias-primas secas tem que ser maior que 1.",
     "note": "A água é em peso: um litro pesa um quilograma, um galão americano cerca de 8,3 lb. O cálculo considera que os volumes se somam, o que é próximo, não exato: adicione a água aos poucos, mexa e meça de novo. Dois esmaltes com a mesma densidade ainda podem escorrer de forma diferente.",
     "saveTarget": "Salvar a densidade {sg} como alvo desta receita",

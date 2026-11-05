@@ -83,6 +83,8 @@ Gießen Sie Glasur oder Wasser, in dem Sie Glasurwerkzeug ausgespült haben, nie
 
 Wir schlagen vor, diesen Eimer mit einem Deckel zu verschließen: Der Schlamm enthält dieselben Metalle wie die Glasur, und Haustiere trinken stehendes Wasser. Die Regeln zur Entsorgung sind von Ort zu Ort verschieden; prüfen Sie daher das Sicherheitsdatenblatt jedes Produkts, und fragen Sie im Zweifel bei Ihrer Gemeinde oder Ihrem Wasserversorger nach.
 
+Manche Werkstätten brennen den getrockneten Schlamm, bevor sie ihn wegwerfen. Sie geben ihn in eine übrige Schale, die dafür verbraucht wird: Nach dem Brand lässt sich die Schale nicht mehr verwenden. Füllen Sie die Schale nur zu einem Viertel, weil der Schlamm beim Schmelzen schäumt und Blasen wirft, und decken Sie sie mit einem Teller ab. Stellen Sie sie auf eine mit Trennmittel gestrichene Ofenplatte oder eine übrige Platte, falls sie überläuft. Der Brand macht aus dem Schlamm Glas, das die Metalle viel fester bindet als loses Pulver; auf der Deponie ist er so sicherer. Gehen Sie mit dem trockenen Schlamm um wie mit trockener Glasur: mit Atemschutzmaske und ohne Staub aufzuwirbeln.
+
 ## Staub in der Werkstatt halten {#keeping-dust-in-the-studio}
 
 Das Gesundheitsministerium von Pennsylvania beschreibt das Problem deutlich: „Bleihaltiger Staub aus Ihrem Hobby kann an Ihrer Kleidung, Ihren Schuhen, Haaren, Ihrer Haut und Ihren persönlichen Gegenständen haften und leicht in Ihr Fahrzeug und auf Oberflächen in Ihrem Zuhause gelangen.“ Die CDC fügt hinzu, dass Erwachsene „Blei mit nach Hause bringen und ihre Familien Blei aussetzen können, ohne es zu wissen“. Die Empfehlungen aus Pennsylvania nennen die Abhilfe:

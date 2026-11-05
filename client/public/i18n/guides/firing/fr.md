@@ -89,16 +89,16 @@ Label: Tableau des cônes Orton
 | Cône | Lente, {{27 °F/h; 15 °C/h}} | Moyenne, {{108 °F/h; 60 °C/h}} | Rapide, {{270 °F/h; 150 °C/h}} |
 | ---- | --------------------------: | -----------------------------: | -----------------------------: |
 | 022  |                           – |            {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018  |                           – |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015  |                           – |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018  |         {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015  |         {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010  |         {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08   |         {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07   |                           – |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07   |         {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06   |         {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05   |        {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04   |        {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03   |        {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02   |                           – |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02   |        {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01   |        {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1    |        {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4    |        {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,13 +460,13 @@ Un four à commande manuelle suit le même plan, à la main : séchez lentement
 
 ## Cuisson d’émail {#glaze}
 
-La cuisson d’émail{{en: glaze firing}} fait fondre l’émail en verre sur le biscuit{{en: bisque}}. La plupart des débutants cuisent des émaux basse température aux cônes{{en: cones}} 06–04 ou des émaux moyenne température aux cônes 5–6. Cuisez au cône indiqué sur les étiquettes de votre terre et de votre émail, avec un jeu de cônes{{en: cone pack}} autour de ce numéro. Pour ce qui se passe dans l’émail pendant qu’il fond, voir [Les principes de base de l’émaillage](/guides/glazing-basics).
+La cuisson d’émail{{en: glaze firing}} fond l’émail en verre sur le biscuit. La plupart des émaux basse température du commerce sont faits pour le cône 06 ou 05 (la basse température va des cônes 06–04), et la plupart des émaux moyenne température pour les cônes 5–6. Cuisez au cône indiqué sur les étiquettes de votre émail et de votre terre, avec un jeu de cônes{{en: cone pack}} autour de ce numéro. Pour ce qui se passe dans l’émail pendant qu’il fond, voyez [Les principes de base de l’émaillage](/guides/glazing-basics).
 
-### L’enfournement pour une cuisson d’émail
+### Enfourner pour une cuisson d’émail
 
-- Les pièces émaillées ne doivent toucher ni les autres pièces ni les parois : laissez environ ½ pouce (13 mm).
-- Ne mettez pas d’émail sur le pied (on dit **désémailler le pied**), ou posez les pièces basse température sur des **pernettes**, de petits supports à pointes. Le grès{{en: stoneware}} et la porcelaine ne doivent pas reposer sur des pernettes, qui s’incrustent dans les pièces à ces températures ; utilisez plutôt de l’engobe pour plaques haute température ou du sable de silice{{en: silica sand}}.
-- Laissez au moins 1 pouce (25 mm) entre le bord des plaques et la paroi ou le Kiln-Sitter.
+- Les pièces émaillées ne doivent toucher ni les autres pièces ni les parois : laissez environ ½ pouce (13 mm).
+- Ne laissez pas d’émail sur le pied (**désémailler le pied**), ou posez les pièces basse température sur des **pernettes**, de petits supports à pointes. Le grès et la porcelaine ne doivent pas reposer sur des pernettes, qui s’y incrustent à ces températures : utilisez plutôt un engobe pour plaques haute température ou du sable de silice.
+- Laissez au moins 1 pouce (25 mm) entre le bord des plaques et la paroi ou le Kiln-Sitter.
 
 ### Courbes pour programmateur
 
@@ -475,9 +475,9 @@ Label: Programmes d’émail
 
 | Segment                     |                                                  Jusqu’à |             Slow Glaze |             Fast Glaze |
 | --------------------------- | -------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                           |                                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |    Pas d’étape séparée |
-| 2                           | {{250 °F; 139 °C}} en dessous de la température maximale | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                           |                                  La température maximale |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| 1                           |                                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |    Pas d’étape séparée |
+| 2                           | {{250 °F; 139 °C}} en dessous de la température maximale | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                           |                                  La température maximale |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
 | Durée de chauffe, four vide |                                                          |   Environ 6½–7½ heures |     Environ 3–4 heures |
 
 Table: Fin des segments 2 et 3, par cône (L&L et Bartlett)
@@ -485,46 +485,46 @@ Label: Cibles des programmes
 
 | Cône |     Fin du segment 2 | Température maximale |
 | ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze est le choix par défaut le plus sûr, vu l’avertissement de L&L sur la cuisson rapide. Si vous ajoutez un palier{{en: hold}} de plus de 5–10 minutes à la température maximale, L&L dit d’abaisser en conséquence la cible ou le décalage de cône, et note que « les paliers à haute température accélèrent l’usure des résistances et du thermocouple ».
+Slow Glaze est le choix par défaut le plus sûr, vu la mise en garde de L&L contre la cuisson rapide. Si vous ajoutez un palier{{en: hold}} de plus de 5–10 minutes à la température maximale, L&L conseille de baisser d’autant la cible ou le décalage de cône, et note que « les paliers à haute température accélèrent l’usure des résistances et du thermocouple ».
 
-### Cône 6 : descente avec palier
+### Cône 6 : la descente avec palier
 
-Les émaux moyenne température présentent parfois des **trous d’épingle**{{en: pinholes}} (de minuscules trous à la surface) ou des cloques, laissés par les gaz qui s’échappent en bulles de l’émail en fusion. Une courbe de **descente avec palier**{{en: drop-and-hold}} monte jusqu’à la température maximale, refroidit rapidement d’environ {{100 °F; 56 °C}} et fait un palier à ce niveau. Selon Digitalfire : « Descendre de 100°F et faire un palier donne à l’émail en fusion assez de viscosité pour faire éclater les bulles tout en les laissant se refermer. »
+Les émaux moyenne température présentent parfois des **trous d’épingle**{{en: pinholes}} (de minuscules trous dans la surface) ou des cloques, laissés par les gaz qui s’échappent de l’émail en fusion. Une courbe de **descente avec palier**{{en: drop-and-hold}} monte jusqu’en haut, refroidit vite d’environ {{100 °F; 56 °C}} et maintient cette température. Selon Digitalfire, « descendre de 100°F et faire un palier donne à l’émail en fusion assez de viscosité pour crever les bulles tout en les laissant se refermer ».
 
 Table: Digitalfire PLC6DS, descente avec palier au cône 6
 Label: Digitalfire PLC6DS
 
-| Étape |                           Vitesse |                Cible | Palier                                                     |
-| ----- | --------------------------------: | -------------------: | ---------------------------------------------------------- |
-| 1     |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                                 |
-| 2     |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes, facultatif, pour dissiper les nuages de bulles |
-| 3     |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes ; plus long dans les grands fours               |
-| 4     | Descente à {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                                 |
+| Étape |                           Vitesse |                Cible | Palier                                                      |
+| ----- | --------------------------------: | -------------------: | ----------------------------------------------------------- |
+| 1     |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                                  |
+| 2     |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes facultatives, pour éliminer les nuages de bulles |
+| 3     |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes ; plus dans les grands fours                     |
+| 4     | Descente à {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                                  |
 
-La courbe PLC6DS dure environ 9 heures 36 minutes. Pour les émaux plus fluides, Digitalfire descend plutôt d’environ {{200 °F; 111 °C}} ; descendre trop bas « fait courir un risque de cristallisation pendant le palier ». Sa température maximale de {{2200 °F; 1204 °C}} est inférieure aux {{2232 °F; 1222 °C}} que donne le tableau pour le cône 6 ; Digitalfire indique que la plupart des fours atteignent le cône 6 vers {{2200 °F; 1204 °C}}. Vérifiez-le avec un jeu de cônes dans votre propre four.
+PLC6DS dure environ 9 heures 36 minutes. Pour les émaux plus fluides, Digitalfire descend plutôt d’environ {{200 °F; 111 °C}} ; descendre trop bas « risque une cristallisation pendant le palier ». Sa température maximale de {{2200 °F; 1204 °C}} est inférieure aux {{2232 °F; 1222 °C}} du tableau pour le cône 6 ; Digitalfire indique que la plupart des fours atteignent le cône 6 vers {{2200 °F; 1204 °C}}. Vérifiez-le avec un jeu de cônes dans votre propre four.
 
 ### Refroidissement lent
 
-Le **refroidissement lent** signifie que le programmateur refroidit le four à une vitesse fixée au lieu de le laisser refroidir librement. La courbe C6DHSC de Digitalfire reprend PLC6DS, suivie d’un refroidissement à {{150 °F/h; 83 °C/h}} de {{2100 °F; 1148 °C}} jusqu’à {{1400 °F; 760 °C}}, puis arrêt. Ce refroidissement « améliore la brillance et la qualité de surface » et favorise les bleus de rutile, mais le refroidissement lent « peut accentuer la matité » (un émail mat est devenu sec) et peut raccourcir la vie des relais du four. L&L fournit aussi un programme de refroidissement lent pour le cône 6 :
+Le **refroidissement lent** signifie que le programmateur refroidit le four à une vitesse fixée au lieu de le laisser descendre librement. La courbe C6DHSC de Digitalfire est PLC6DS suivie d’un refroidissement à {{150 °F/h; 83 °C/h}} de {{2100 °F; 1148 °C}} jusqu’à {{1400 °F; 760 °C}}, puis arrêt. Elle « améliore la brillance et la qualité de surface » et aide les bleus au rutile, mais le refroidissement lent « peut augmenter la matité » (un émail mat est devenu sec) et peut raccourcir la vie des relais du four. L&L livre aussi un programme de refroidissement lent pour le cône 6 :
 
-Table: L&L « User 6 » : refroidissement lent des émaux pour le cône 6
-Label: Refroidissement lent L and L
+Table: L&L « User 6 » : refroidissement lent pour les émaux du cône 6
+Label: Refroidissement lent L et L
 
 | Étape |                          Vitesse |                Cible |
 | ----- | -------------------------------: | -------------------: |
-| 1     |          Montée à pleine vitesse | {{2232 °F; 1222 °C}} |
-| 2     |        Descente à pleine vitesse | {{1900 °F; 1038 °C}} |
-| 3     | Descente à {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| 1     |          Montée à pleine vitesse | {{2232 °F; 1222 °C}} |
+| 2     |        Descente à pleine vitesse | {{1900 °F; 1038 °C}} |
+| 3     | Descente à {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Les programmateurs Skutt proposent eux aussi un préchauffage et une option de refroidissement en une étape.
+Les programmateurs Skutt proposent de même un préchauffage et une option de refroidissement en une étape.
 
 ### Sur un four à commande manuelle
 
-Un four à commande manuelle ne peut pas suivre exactement ces courbes, mais le plan est le même : en douceur au début, régulier au milieu, et une fin sous surveillance. La courbe d’émail basse température de Bracker’s se trouve plus bas, dans Les fours à commande manuelle en détail ; pour des cônes plus chauds, elle ajoute « en moyenne 15–30 minutes par numéro de cône ». Avec un pyromètre, de la pratique et un relevé de cuisson, vous pouvez imiter à peu près une descente avec palier ou un refroidissement lent en baissant les commutateurs à la main, comme le suggère Digitalfire.
+Un four à commande manuelle ne peut pas suivre exactement ces courbes, mais le plan est le même : en douceur au début, régulier au milieu, et une fin surveillée. La courbe d’émail basse température de Bracker’s se trouve plus bas, dans Les fours à commande manuelle en détail ; pour les cônes plus chauds, elle ajoute « en moyenne 15–30 minutes par numéro de cône ». Avec un pyromètre, de la pratique et un carnet, vous pouvez imiter à peu près une descente avec palier ou un refroidissement lent en baissant les commutateurs à la main, comme le suggère Digitalfire.
 
 ## Les fours à commande manuelle en détail {#manual-kilns}
 

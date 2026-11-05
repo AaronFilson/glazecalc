@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Qayb ka mid ah boggan weli lama turjumin, sidaa darteed waxaa lagu muujiyey Ingiriisi.",
+  "index": {
+    "crumb": "Glaze caan ah",
+    "title": "Glaze caan ah",
+    "lead": "Glaze adduunka oo dhan laga yaqaan, mid kasta oo laga sameeyey walxihiisa dhaqameed ee deegaanka, oo leh UMF-tiisa iyo nooc laga sameeyey walxaha laga iibiyo meesha aad joogto.",
+    "listHeading": "Glaze-yada",
+    "more": "Glaze kale ayaa imanaya: mid kasta waxaa lagu daraa marka habkiisa iyo walxihiisu ku saleysan yihiin ugu yaraan saddex ilood oo la akhriyey."
+  },
+  "glaze": {
+    "lead": "Glaze caan ah ({native}): habkiisa dhaqameed ama falanqayn, gubiddiisa, iyo nooc laga sameeyey walxaha laga iibiyo meesha aad joogto.",
+    "aboutHeading": "Ku saabsan {name}",
+    "nativeName": "Magaca asalka ah",
+    "origin": "Halkee",
+    "period": "Goorma",
+    "firing": "Gubid",
+    "cone": "cone {cone}",
+    "historyOnly": "Taariikh keliya: glaze-kan waxaa lagu sameeyey rasaas (lead, Pb). Falanqayntiisa waxaa loo muujiyey taariikh ahaan, ma aha hab la isku daro. Nooca hoose waa glaze kale, aan rasaas lahayn.",
+    "recipeHeading": "Habka dhaqameed",
+    "material": "Walax",
+    "amount": "Qaddar",
+    "unityHeading": "UMF (unity molecular formula)",
+    "analysisHeading": "Falanqayn taariikhi ah",
+    "oxide": "Oksaydh",
+    "percent": "% miisaan",
+    "useHeading": "Isku day",
+    "open": "Fur habkan",
+    "openLeadFree": "Fur nooca aan rasaas lahayn",
+    "leadFreeTitle": "Qaabka {name}, aan rasaas lahayn",
+    "allLink": "Dhammaan glaze-yada caanka ah",
+    "safetyHeading": "Badbaado",
+    "safeMixing": "Isku-darka ammaanka ah iyo hawo-wareejinta",
+    "firingGuide": "Gubidda kiln fudud",
+    "makingGuide": "Sida loo sameeyo glaze",
+    "sourcesHeading": "Ilaha",
+    "link": "Fur",
+    "opened": "la akhriyey {date}"
+  },
+  "local": {
+    "heading": "Walxaha deegaankaaga",
+    "leadFreeHeading": "Nooca aan rasaas lahayn",
+    "intro": "UMF-ta habka dhaqameed, oo laga sameeyey walxaha caadiga ah ee laga iibiyo meesha aad wax ka iibsato. Dooro meesha aad wax ka iibsato si aad u aragto.",
+    "region": "Meesha aad walxaha ka iibsato",
+    "proposal": "Walxaha soo-jeedinta lafteeda",
+    "pick": "Dooro…",
+    "untested": "Waa la xisaabiyey, weli tijaabo ahaan looma gubin.",
+    "testFirst": "Gub test tile ka hor intaadan u isticmaalin weel kasta, oo tijaabi dusha cuntadu taabato in biraha ka soo baxaan (leaching).",
+    "untestedNote": "Waa la xisaabiyey, weli tijaabo ahaan looma gubin: gub test tile ka hor isticmaalka.",
+    "close": "Aad buu ugu dhow yahay qaacidada la beegsanayo.",
+    "fair": "Si dhexdhexaad ah ayuu ugu dhow yahay qaacidada la beegsanayo.",
+    "poor": "Walxahan uma dhowaan karaan qaacidada la beegsanayo.",
+    "none": "Walxaha halkaas laga iibiyo ma sameyn karaan.",
+    "choose": "Dooro meesha aad walxaha ka iibsato si aad u aragto isagoo laga sameeyey kuwa halkaas laga iibiyo."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduction",
+    "neutral": "dhexdhexaad",
+    "wood": "gubid qoryo",
+    "salt": "gubid cusbo",
+    "soda": "gubid soda"
+  }
+}

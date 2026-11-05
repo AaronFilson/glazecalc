@@ -9,6 +9,7 @@
     "homeSafety": "Ne zastrupite svoje družine – Glazecalc",
     "firing": "Žganje v preprosti peči – Glazecalc",
     "learnWithJohnBritt": "Učite se z brezplačnim tečajem glazur Johna Britta – Glazecalc",
+    "teachingGlazeCalculation": "Poučevanje izračuna glazur - Glazecalc",
     "about": "O aplikaciji – Glazecalc",
     "privacy": "Zasebnost – Glazecalc",
     "terms": "Pogoji uporabe – Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Odobritev spremembe – Glazecalc",
     "cones": "Preglednica stožcev: temperature Ortonovih stožcev in stožcev SK – Glazecalc",
     "materials": "Standardne glazurne surovine: analiza in nevarnosti – Glazecalc",
-    "materialInfo": "{name}: oksidna analiza in nevarnosti – Glazecalc"
+    "materialInfo": "{name}: oksidna analiza in nevarnosti – Glazecalc",
+    "famousGlazes": "Znane glazure - Glazecalc",
+    "famousGlaze": "Glazura {name} - Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na vsebino",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Vnesite število z decimalno piko, na primer {example}."
   },
   "meta": {
-    "description": "Vnesite recept glazure: Segerjeva formula (UMF), razmerje kremenica : glinica in razmerje talil. Brezplačno in odprtokodno: recepti, surovine, dnevniki žganja.",
+    "description": "Vnesite recept glazure za keramiko: Segerjeva formula (UMF), razmerje kremenica : glinica in razmerje talil. Brezplačno in odprtokodno: recepti, surovine, žganja.",
     "guides": "Preprosti vodniki za lončarje začetnike: kaj je glazura za keramiko, kako jo pripraviti in varno zmešati, zaščititi družino in žgati v preprosti peči.",
     "glazingBasics": "Iz česa je glazura za keramiko, kako jo peč spremeni v steklo ter kaj pomenijo stožci, frite, Segerjeva formula (UMF) in napake glazure. Vodnik za začetnike.",
     "makingAGlaze": "Kako kupiti, hraniti, tehtati in zmešati glazuro, doseči pravo gostoto, jo preizkusiti na svoji glini in voditi zapiske, da jo lahko pripravite znova.",
@@ -177,6 +180,7 @@
     "homeSafety": "Kaj storiti, če otrok ali žival pogoltne surovino za glazure, in kako poskrbeti, da so surovine, prah, peč in ročno izdelana keramika varni za družino.",
     "firing": "Kako žgati v električni peči: izbira, postavitev in odčitavanje stožcev ter objavljeni programi za biskvitno in glazurno žganje, s preglednico stožcev.",
     "learnWithJohnBritt": "Spremljevalec brezplačnega spletnega tečaja glazur Johna Britta: njegovi videi po enotah, z vodniki Glazecalc za branje in vajami v kalkulatorju.",
+    "teachingGlazeCalculation": "6 srečanj za poučevanje Segerjeve formule (UMF): surovine in triaksialne ploščice, moli, od recepta do formule in nazaj ter napake glazure, s preračunanimi primeri in delovnimi listi za tiskanje.",
     "advice": "Praktični nasveti za mešanje, glaziranje in žganje iz aplikacije Glazecalc ter vaši lastni nasveti. Brezplačno za lončarje in keramike.",
     "about": "Glazecalc je brezplačen odprtokoden kalkulator kemije glazur za keramiko in beležnica. Oglejte si, kako izračuna Segerjevo formulo (UMF) in kako je narejen.",
     "privacy": "Kako Glazecalc ravna z vašimi podatki: brez oglasov, analitike in sledenja, nič se ne prodaja. Kaj se hrani, zakaj in kako uveljavljate svoje pravice.",
@@ -187,6 +191,8 @@
     "materials": "Surovine v standardni knjižnici Glazecalc, od glinencev in glin do frit in virov bora, vsaka z oksidno analizo, Segerjevo formulo in nevarnostmi.",
     "materialInfo": "{name}: oksidna analiza, Segerjeva formula, izguba pri žarenju in nevarnosti v standardni knjižnici Glazecalc.",
     "materialInfoLong": "{name} v standardni knjižnici glazurnih surovin Glazecalc: oksidna analiza, prispevek k Segerjevi formuli, izguba pri žarenju in nevarnosti.",
+    "famousGlazes": "Znane glazure z vsega sveta: tradicionalni recept ali zgodovinska analiza vsake glazure, njena Segerjeva formula in različica iz surovin, ki se prodajajo tam, kjer ste.",
+    "famousGlaze": "Glazura {name} ({native}): tradicionalni recept ali zgodovinska analiza, žganje, Segerjeva formula in viri ter različica iz surovin, ki se prodajajo tam, kjer ste.",
     "imageAlt": "Logotip Glazecalc in njegov naslov, brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
   },
   "notices": {

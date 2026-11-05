@@ -133,7 +133,7 @@ Vatten går snabbt att tillsätta men tar lång tid att få bort, så börja i u
 - **Mixer.** Den ”fungerar extremt bra för små satser” (Digitalfire). Använd den bara till glasyr: den får aldrig gå tillbaka till köket.
 - **Visp eller pinne.** Zakins val när det inte finns någon blandare.
 
-Vatten varierar också, och Digitalfire påpekar att det påverkar hur ett glasyrslam{{en: slurry}} beter sig. Derek Au använder vatten renat med omvänd osmos eftersom hans kranvatten är hårt. Anteckna alltid vilket vatten som används.
+Vatten varierar också, och Digitalfire påpekar att det påverkar hur ett glasyrslam{{en: slurry}} beter sig. Derek Au använder vatten renat med omvänd osmos eftersom hans kranvatten är hårt. Anteckna vilket vatten som än används.
 
 ### Steg för steg
 
@@ -144,7 +144,7 @@ Vatten varierar också, och Digitalfire påpekar att det påverkar hur ett glasy
 5. Blanda tills det inte finns några torra fickor eller klumpar kvar.
 6. Sikta glasyren två gånger (se nedan).
 7. Täck över den och låt den stå över natten, blanda sedan igen och känn efter om det har bildats ett hårt lager i botten.
-8. Mät den specifika vikten och tillsätt vatten lite i taget tills målvärdet är nått.
+8. Mät den specifika vikten och tillsätt vatten lite i taget tills målvärdet är nått. För att ta reda på den egna glasyrens torra specifika vikt, väg också det färdiga glasyrslammet (se nedan).
 9. Märk hinken och skriv upp vad som gjordes.
 10. Städa vått: moppa golvet och torka av alla ytor, även utsidan av råvarornas burkar.
 
@@ -205,6 +205,27 @@ Label: Vatten för en viss specifik vikt
 | {{SG 1.50}} |         ca 85 mL |  ca 850 mL | ca 13 US fl oz |
 | {{SG 1.60}} |         ca 64 mL |  ca 640 mL | ca 10 US fl oz |
 
+### Ta fram den egna glasyrens torra specifika vikt vid blandningen
+
+Värdet 2,6 ovan är en gissning. Den egna glasyrens värde, densiteten för dess torra pulver, kan räknas ut från tre tal som går att ta fram under blandningen. Med det går det senare att räkna ut från den specifika vikten hur mycket pulver som finns i en hink av samma glasyr, och vattnet för nästa sats. Vår uträkning, inte en källas:
+
+1. Skriv upp vikten av torrt pulver i satsen: receptets totalvikt.
+2. Väg den tomma hinken innan arbetet börjar, eller skriv dess vikt på den.
+3. Blanda, sikta och för glasyren till dess specifika vikt som vanligt. Tryck allt genom sikten och skölj ned det i hinken, så att inget pulver blir kvar utanför.
+4. Väg den fulla hinken och dra av hinkens vikt. Det är glasyrslammets vikt.
+5. Mät den specifika vikten.
+
+Sedan:
+
+- **Vatten** = glasyrslammets vikt − pulvrets vikt.
+- **Glasyrslammets volym** i mL = glasyrslammets vikt i gram ÷ specifik vikt.
+- **Pulvrets volym** = glasyrslammets volym − vattnet (1 g vatten är 1 mL).
+- **Torr specifik vikt** = pulvrets vikt ÷ pulvrets volym.
+
+Ett exempel: 1000 g pulver ger 1980 g glasyrslam med {{SG 1.45}}. Vattnet är 980 g, glasyrslammet är 1980 ÷ 1,45 = ungefär 1366 mL, pulvret tar upp 1366 − 980 = 386 mL, och den torra specifika vikten är 1000 ÷ 386 = ungefär 2,59.
+
+Väg hela glasyrslammet på slutet, inte vattnet medan det hälls i, så att vatten som avdunstar eller skvätter ut inte räknas. Små fel växer här: en avläsning av den specifika vikten som är 0,01 fel flyttar svaret med ungefär 2 till 4 %, mer för en tunnare glasyr. Använd en sats på 1 kg eller mer, en noggrann våg, och muggmetoden med 500 g ovan för den specifika vikten. De flesta vanliga råvaror ligger mellan ungefär 2,5 och 2,9, så ett värde långt utanför det, i en glasyr utan mycket zirkonsilikat eller bly, beror troligen på ett mätfel. Skriv värdet på receptet.
+
 ### Epsomsalt, glasyrlim (CMC) och bentonit
 
 **Epsomsalt** (magnesiumsulfat) får en glasyr att stelna lite, som en gelé, när den står still och att flyta igen när den rörs om. Det kallas att **flocka**{{en: flocculate}} glasyren, och en glasyr som beter sig så är **tixotrop**{{en: thixotropic}}: den läggs på jämnare, droppar mindre och sjunker mindre till botten. Digitalfire föreslår att börja med ungefär 2 g per gallon när den specifika vikten är rätt (ungefär 0,5 g per liter, vår omräkning) och att justera mängden varje gång glasyren blandas, eftersom inget recept bör låsa fast doseringen. Vi föreslår att saltet först löses i lite hett vatten. I ett exempel från Digitalfire droppade en glasyr med {{SG 1.45}}, så vatten fick ner den till {{SG 1.43}} och epsomsalt flockade den tillbaka till krämig konsistens, och den lade sig jämnt. En enkel kontroll: rör om, sluta och titta. En flockad glasyr rör sig vidare i ungefär 2 eller 3 sekunder, stannar sedan och fjädrar tillbaka lite.
@@ -217,32 +238,32 @@ Label: Vatten för en viss specifik vikt
 
 ### Börja i liten skala
 
-Derek Au arbetar sig uppåt i tre steg: ett test på 50 eller 100 g, en provsats på 1 till 2 kg om det fungerar, och sedan en verkstadssats på 5 till 10 kg. Enligt vår uppskattning ger ett test på 100 g med {{SG 1.45}} ungefär 135 mL (ungefär 4½ US fl oz) glasyrslam{{en: slurry}}, nog för att doppa några små provbitar{{en: test tiles}} i en smal mugg.
+Derek Au arbetar sig uppåt i tre steg: ett prov på 50 eller 100 g, en provsats på 1 till 2 kg om det fungerar, och sedan en verkstadssats på 5 till 10 kg. Enligt vår uppskattning ger ett prov på 100 g med {{SG 1.45}} ungefär 135 mL (ungefär 4½ US fl oz) glasyrslam, nog för att doppa några små provbitar i en smal mugg.
 
 ### Testa på den egna leran
 
-En glasyr{{en: glaze}} kan se helt annorlunda ut på en annan lera eller i en annan ugn: Clay Art Center testade var och en av sina omarbetade glasyrer på fyra lermassor{{en: clay bodies}}, vid kägla{{en: cone}} 6 och vid kägla 10. Potclays nybörjarguide till glasyrtester föreslår:
+En glasyr kan se helt annorlunda ut på en annan lera eller i en annan ugn: Clay Art Center testade var och en av sina omarbetade glasyrer på fyra lermassor, vid kägla 6 och vid kägla 10. Potclays nybörjarguide till glasyrprov föreslår:
 
-- 6 till 10 **provbitar** (små bitar för att prova en glasyr) av den lera som faktiskt ska användas, med en anteckning om de är skröjade{{en: bisqued}} eller helt torra
+- 6 till 10 **provbitar**{{en: test tiles}} (små bitar för att prova en glasyr) av den lera som faktiskt ska användas, med en anteckning om de är skröjade eller helt torra
 - en ändring i taget
-- doppning en gång och två gånger, för att se glasyren i tunt och tjockt lager
+- en enkel och en dubbel doppning, för att se glasyren tunn och tjock
 - alla provbitar i samma ugnsfyllning
-- en markering på varje provbit före bränningen, med stämpel, ristning eller underglasyrpenna.
+- en märkning på varje provbit före bränningen, med en stämpel, ristning eller underglasyrpenna. Brända provbitar ser likadana ut, och en märkning som görs före bränningen klarar ugnen, så det går alltid att se vilket recept varje provbit har.
 
-Vi föreslår provbitar som står upprätt, eftersom en platt provbit döljer hur långt en glasyr rinner, med ett band med struktur som visar hur glasyren tunnas ut och skiftar färg över kanter, och en oglaserad fot. Ställ varje provbit på ett litet fat, en skröjad lerbit eller plattengobe som fångar droppar. Ställ en **kontrollkägla**{{en: witness cone}}, en liten keramisk kägla som böjer sig när den har fått tillräckligt med värme, nära provbitarna för att visa hur mycket värme de har fått; [Bränna i en enkel keramikugn](/guides/firing) förklarar käglor. Ge varje provbit en kort kod och skriv den bredvid receptet i anteckningarna. Willers, som skriver för Ceramic Arts Network, använder siffror och bokstäver och skriver själva systemet längst fram i anteckningsboken.
+Vi föreslår provbitar som står upprätt, eftersom en platt provbit döljer hur långt en glasyr rinner, med ett band med struktur som visar hur glasyren tunnas ut och skiftar färg över kanter, och en oglaserad fot. Ställ varje provbit på en liten skål eller en skröjad lerbit, eller på en ugnsplatta med plattengobe, för att fånga droppar. Ställ en **kontrollkägla**{{en: witness cone}}, en liten keramisk kägla som böjer sig när den har fått tillräckligt med värme, nära provbitarna för att visa vad de fick; [brännguiden](/guides/firing) förklarar käglor. Ge varje provbit en kort kod, och skriv den vid receptet i anteckningarna. Willers, som skriver för Ceramic Arts Network, använder siffror och bokstäver, och skriver själva systemet längst fram i anteckningsboken.
 
 ### Provserier
 
-En **provserie**{{en: line blend}} är en rad tester som går i jämna steg från en blandning till en annan: från en glasyr till en annan, eller från en basglasyr till samma glasyr med mer färgmedel{{en: colorant}}. Derek Au låter till exempel järnoxid öka i en transparent bas i steg om 1 %. En volymmetod som förknippas med Ian Currie sparar tid, eftersom bara de två ändarna behöver blandas:
+En **provserie**{{en: line blend}} är en rad prov som går i jämna steg från en blandning till en annan: från en glasyr till en annan, eller från en basglasyr till samma glasyr med mer färgmedel. Derek Au låter till exempel järnoxid öka i en transparent bas i steg om 1 %. En volymmetod som förknippas med Ian Currie sparar tid, eftersom bara de två ändarna blandas:
 
-1. Blanda de två ändglasyrerna, A och B, som lika stora satser och sikta båda.
-2. Tillsätt vatten i den som har minst volym tills båda har exakt samma våta volym.
-3. Rör om i båda och mät sedan upp varje blandning med en spruta i en egen numrerad mugg.
+1. Blanda de två ändglasyrerna, A och B, som satser av samma storlek, och sikta båda.
+2. Tillsätt vatten till den som har minst volym tills båda har exakt samma våta volym.
+3. Rör om i båda, och dra sedan upp varje blandning med en spruta i en egen numrerad mugg.
 4. Rör om i varje mugg och doppa en provbit.
 
-I vårt räkneexempel är A 100 g av en transparent bas, och B är samma bas med 4 g röd järnoxid tillsatt (en tillsats på 4 %). Varje milliliter av B innehåller samma andel bas som en milliliter av A, plus sitt järn, så muggarna går från inget järn till 4 % i steg om 1 %. Varje ända bidrar med 100 mL till serien, vilket en sats på 100 g räcker till enligt vår uppskattning.
+I vårt räkneexempel är A 100 g av en transparent bas, och B samma bas med 4 g röd järnoxid tillsatt (en tillsats på 4 %). Varje milliliter av B innehåller lika stor andel bas som en milliliter av A, plus sitt järn, så muggarna går från inget järn till 4 % i steg om 1 %. Varje ände ger 100 mL till provserien, vilket en sats på 100 g räcker till enligt vår uppskattning.
 
-Table: En provserie med järn i fem steg, 40 mL per mugg (vårt räkneexempel)
+Table: En järnprovserie i fem steg, 40 mL per mugg (vårt räkneexempel)
 Label: Exempel på provserie
 
 | Mugg | Transparent bas (A) | Bas med 4 % järn (B) | Järnoxid, % av basen |
@@ -253,7 +274,7 @@ Label: Exempel på provserie
 | 4    |               10 mL |                30 mL |                    3 |
 | 5    |                0 mL |                40 mL |                    4 |
 
-Metoden kräver noggranna uträkningar, välblandade ändar med jämn specifik vikt och en noggrann våg. Derek Au blandar också efter vikt i stället för volym. En **triaxialblandning** gör samma sak med tre ändar, utlagda i en triangel.
+Metoden kräver noggrann räkning, välblandade ändar med jämn specifik vikt och en noggrann våg. Derek Au blandar också efter vikt i stället för volym. En **triaxialblandning** gör samma sak med tre ändar, uppställda i en triangel.
 
 > [!NOTE]
 > När ett steg ser lovande ut sparar **Spara som kopia** på [receptsidan](/recipe) det som ett eget recept och lämnar originalet som det var.
@@ -265,13 +286,13 @@ Willers formulerar målet väl: ”tillräckligt med information för att kunna 
 Table: Vad som ska antecknas för varje glasyrsats (vår mall)
 Label: Mall för anteckningar
 
-| Del       | Vad som ska skrivas upp                                                                                                                                                                                                                                      |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Recept    | Receptet och dess version; råvarornas märken och batchnummer; eventuella byten                                                                                                                                                                               |
-| Blandning | Datum; satsstorlek; tillsatt vatten och dess typ (kranvatten, omvänd osmos eller destillerat); specifik vikt efter blandning och slutlig specifik vikt; tillsatt epsomsalt, CMC och bentonit; siktens maskvidd och antal omgångar                            |
-| Glasering | Lermassa; kägla för skröjbränningen; doppning, penselglasering eller hällning; dopptid eller antal lager; tjocklek i torrt tillstånd                                                                                                                         |
-| Bränning  | Ugn och placering (vilken ugnsplatta); brännprogrammet, med ramper, hålltider och kylning; ugnsatmosfär (oxiderande{{en: oxidation}} eller reducerande{{en: reduction}}); vad kontrollkäglan{{en: witness cone}} visade, inte bara vad ugnen var inställd på |
-| Resultat  | Yta och färg; om glasyren har runnit, krackelerat{{en: crazing}} eller fått nålstick{{en: pinholes}}; foton framifrån, bakifrån och från sidan; provbitens kod                                                                                               |
+| Del       | Vad som ska skrivas upp                                                                                                                                                                                                                                                                           |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept    | Receptet och dess version; råvarornas märken och batchnummer; eventuella byten                                                                                                                                                                                                                    |
+| Blandning | Datum; satsstorlek; tillsatt vatten och dess typ (kranvatten, omvänd osmos eller destillerat); specifik vikt efter blandning och slutlig specifik vikt; det färdiga glasyrslammets vikt, för dess torra specifika vikt; tillsatt epsomsalt, CMC och bentonit; siktens maskvidd och antal omgångar |
+| Glasering | Lermassa; kägla för skröjbränningen; doppning, penselglasering eller hällning; dopptid eller antal lager; tjocklek i torrt tillstånd                                                                                                                                                              |
+| Bränning  | Ugn och placering (vilken ugnsplatta); brännprogrammet, med ramper, hålltider och kylning; ugnsatmosfär (oxiderande{{en: oxidation}} eller reducerande{{en: reduction}}); vad kontrollkäglan{{en: witness cone}} visade, inte bara vad ugnen var inställd på                                      |
+| Resultat  | Yta och färg; om glasyren har runnit, krackelerat{{en: crazing}} eller fått nålstick{{en: pinholes}}; foton framifrån, bakifrån och från sidan; provbitens kod                                                                                                                                    |
 
 > [!NOTE]
 > I Glazecalc innehåller ett sparat [recept](/recipe) själva receptet. En [brännlogg](/firing) registrerar varje bränning: ugnen, datum, tider, temperaturer, käglor och anteckningar. [Anteckningar](/notes) rymmer allt annat, till exempel satsanteckningarna ovan och vad varje provbit visade.

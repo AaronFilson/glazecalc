@@ -724,7 +724,7 @@
     "keyBright": "Tečkovaná čára: kde byly Stullovy glazury nejlesklejší.",
     "keyLimits": "Čárkované čáry a stínování: rozsahy oxidu křemičitého a oxidu hlinitého v sadě {name}.",
     "keyCrazed": "Šrafování: kde trhlinkovaly.",
-    "note": "Vodítko, ne předpověď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaloval na žároměrku 11 s tavivy pevně stanovenými na 0,3 K₂O a 0,7 CaO; jiná taviva a výpaly oblasti posouvají a nedopálená matná glazura se může v diagramu objevit jako lesklá. Oblasti jsou tak, jak je kreslí Glazy."
+    "note": "Vodítko, ne předpověď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaloval přibližně na žároměrku 11 s pevně danými tavivy 0,3 K₂O a 0,7 CaO; jiná taviva a jiné výpaly oblasti posouvají a glazura, která je matná jen proto, že je nedopálená, se v diagramu může přesto ukázat jako lesklá. Oblasti jsou zakreslené tak, jak je kreslí Glazy."
   },
   "slurry": {
     "heading": "Měrná hmotnost a voda",
@@ -752,7 +752,17 @@
       "pint": "Požadovaná hmotnost pinty, oz"
     },
     "drySg": "Měrná hmotnost suchých surovin",
-    "drySgHelp": "Asi 2,5 u většiny glazur; Glazy používá 2,6.",
+    "drySgEmpty": "Potřebují ji jen suché hmotnosti, voda k přidání ne. Zadejte ji, pokud ji znáte.",
+    "drySgNeeded": "Zadejte měrnou hmotnost suchých surovin a uvidíte suchou glazuru v kbelíku a vodu pro novou dávku.",
+    "estimate": {
+      "mineral": "Odhad, {sg}, podle toho, z čeho se každá surovina skládá: podle naměřené hustoty jejího minerálu. Pokud znáte přesnější hodnotu, změňte ji.",
+      "kind": "Odhad, {sg}: živce a jíly mají asi 2,6. Pokud znáte přesnější hodnotu, změňte ji.",
+      "glass": "Odhad, {sg}, vypočtený z oxidů frit (frity jsou sklo). Pokud znáte přesnější hodnotu, změňte ji.",
+      "mixed": "Odhad, {sg}, podle každé suroviny: naměřená hustota jejího minerálu, asi 2,6 u živců a jílů a u frit výpočet z jejich oxidů. Pokud znáte přesnější hodnotu, změňte ji.",
+      "leftOut": "Vynecháno, protože jejich měrná hmotnost není známá: {names}.",
+      "none": "Pro tento recept odhad není, protože není známá měrná hmotnost těchto surovin: {names}. Zadejte ji, pokud ji znáte.",
+      "was": "Používá se vaše hodnota. Odhad byl {sg}; když pole vymažete, vrátíte se k němu."
+    },
     "batch": "Suchá glazura pro novou dávku, {unit}",
     "contents": "Při měrné hmotnosti {sg} obsahuje kbelík {glaze} suché glazury a {water} vody.",
     "add": "Chcete-li dosáhnout měrné hmotnosti {target}, přidejte {water} vody. Výsledný objem bude asi {volume}.",
@@ -760,6 +770,7 @@
     "already": "Už má měrnou hmotnost {target}.",
     "mix": "Smíchejte {glaze} suché glazury s {water} vody, vznikne asi {volume} s měrnou hmotností {target}.",
     "badSg": "Měrná hmotnost musí být větší než 1 (měrná hmotnost vody) a menší než {dry} u suchých surovin.",
+    "badSgWater": "Měrná hmotnost musí být větší než 1 (měrná hmotnost vody).",
     "badDry": "Měrná hmotnost suchých surovin musí být větší než 1.",
     "note": "Voda se udává podle hmotnosti: litr váží kilogram, americký galon asi 8,3 lb. Výpočet sčítá objemy, což platí přibližně, ne přesně: přidávejte vodu po troškách, míchejte a měřte znovu. Dvě glazury se stejnou měrnou hmotností mohou přesto téct jinak.",
     "saveTarget": "Uložit měrnou hmotnost {sg} jako cíl tohoto receptu",

@@ -44,7 +44,7 @@ const stopAll = (code) => {
 
 // The advice page's, the materials' and the cone chart's translations, which the dev server serves as built
 // files (scripts/advice-i18n.mjs, scripts/material-i18n.mjs).
-for (const script of ['scripts/advice-i18n.mjs', 'scripts/material-i18n.mjs']) {
+for (const script of ['scripts/advice-i18n.mjs', 'scripts/material-i18n.mjs', 'scripts/famous-glazes.mjs']) {
   const made = spawnSync(process.execPath, [script], { cwd: root, stdio: 'inherit' });
   if (made.status !== 0) process.exit(made.status ?? 1);
 }

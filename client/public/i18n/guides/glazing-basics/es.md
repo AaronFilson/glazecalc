@@ -5,7 +5,7 @@ lead: De qué está hecho un esmalte, cómo lo convierte el horno en vidrio y qu
 
 ## Qué es un esmalte {#what-a-glaze-is}
 
-Un **esmalte**{{en: glaze}} es una fina capa de vidrio fundida sobre una pieza. Glazy, la base de datos abierta de recetas de esmaltes, lo define como «una fórmula de vidrio ajustada para fundirse y adherirse a la arcilla a determinadas temperaturas». Se aplica como una capa de polvo y en el horno se funde en una capa vítrea que sella la arcilla, de modo que es menos probable que la pieza pierda líquido, se manche o se desgaste. A la temperatura máxima de la cocción, el fundido también reacciona con la arcilla y a menudo forma entre ambos una capa que fija el esmalte. Sobre la loza{{en: earthenware}}, el esmalte queda encima como una capa aparte; sobre el gres{{en: stoneware}}, se funde con la pasta{{en: clay body}}.
+Un **esmalte**{{en: glaze}} es una fina capa de vidrio fundida sobre una pieza. Glazy, la base de datos abierta de recetas de esmaltes, lo define como «una fórmula de vidrio ajustada para fundirse y adherirse a la arcilla a determinadas temperaturas». Se aplica como una capa de polvo y en el horno se funde en una capa vítrea que sella la arcilla, de modo que es menos probable que la pieza pierda líquido, se manche o se desgaste. A la temperatura máxima de la cocción, el fundido también reacciona con la arcilla y a menudo forma entre ambos una capa que fija el esmalte. Sobre la loza{{en: earthenware}}, que se cuece a menos temperatura, esa capa es fina y el esmalte queda sobre todo encima. Sobre el gres{{en: stoneware}} y la porcelana, que se cuecen a más temperatura, la capa es más gruesa y el esmalte se agarra con más fuerza a la arcilla. Aun así, el esmalte sigue siendo vidrio: no pasa a formar parte de la arcilla.
 
 Una receta enumera materias primas, como el feldespato{{en: feldspar}}, el carbonato cálcico{{en: whiting}} y el caolín{{en: kaolin}}. En el horno, una parte de cada una se desprende como gas (agua o dióxido de carbono) y el resto se convierte en **óxidos**: compuestos de un elemento con oxígeno, como la sílice{{en: silica}} (SiO₂) o el óxido de calcio (CaO). El vidrio cocido está hecho de óxidos, por eso los ceramistas describen un esmalte por sus óxidos. Cada óxido cumple una de tres funciones.
 
@@ -13,7 +13,7 @@ Una receta enumera materias primas, como el feldespato{{en: feldspar}}, el carbo
 - Los **fundentes**{{en: fluxes}} bajan el punto de fusión hasta uno que un horno puede alcanzar. Los **álcalis**, que se escriben **R₂O**, son los óxidos de sodio, potasio y litio (Na₂O, K₂O, Li₂O); actúan desde el cono 06 hasta la media y la alta temperatura. Los **alcalinotérreos**, que se escriben **RO**, son los óxidos de calcio, magnesio, bario y estroncio (CaO, MgO, BaO, SrO), con el óxido de zinc (ZnO) agrupado junto a ellos; actúan mejor del cono 5 al cono 10. La R representa cualquier metal de la familia.
 - La **alúmina** (Al₂O₃) es el **estabilizante**{{en: stabilizer}}. Hace más viscoso el fundido, para que se mantenga en las paredes verticales, y aporta dureza y durabilidad. La advertencia de Glazy: con muy poca alúmina «su esmalte puede escurrir; demasiada puede espesar el fundido hasta dejarlo mate». La alúmina procede sobre todo de la arcilla y del feldespato.
 
-El **boro** (B₂O₃) difumina la frontera. Los químicos lo clasifican como formador de vidrio, pero a las temperaturas de un taller actúa como fundente, y los ceramistas lo tratan como tal. Es fundamental a cono 5–6 y no hace falta en alta temperatura. (Los conos, la forma en que los ceramistas designan una cocción, se explican más abajo.)
+El **boro** (B₂O₃) difumina la frontera. Los químicos lo clasifican como formador de vidrio, pero a las temperaturas de un taller actúa como fundente, y los ceramistas lo tratan como tal. Es un fundente principal en baja y media temperatura: cuanto más baja es la cocción, más boro necesita un esmalte. A cono 10 no suele hacer falta. (Los conos, la forma en que los ceramistas designan una cocción, se explican más abajo.)
 
 > [!NOTE]
 > Una forma de recordarlo: la sílice es el vidrio, los fundentes le permiten fundirse a una temperatura que su horno puede alcanzar, y la alúmina lo espesa para que se quede donde usted lo puso.
@@ -24,9 +24,9 @@ El **boro** (B₂O₃) difumina la frontera. Los químicos lo clasifican como fo
 
 La **pasta**{{en: clay body}} es la arcilla de la que está hecha una pieza. Hay tres tipos principales.
 
-- **Loza**{{en: earthenware}}: una pasta de baja temperatura, de cono 06–02 aproximadamente, que sigue siendo porosa. A menudo roja o beige, necesita un esmalte{{en: glaze}} para retener el agua.
+- **Loza**{{en: earthenware}}: una pasta de baja temperatura, de cono 06–02 aproximadamente, que es porosa a conos bajos y más densa cuanto más alta es la temperatura de cocción. A menudo roja o beige, necesita un esmalte{{en: glaze}} para retener el agua.
 - **Gres**{{en: stoneware}}: una pasta de media a alta temperatura, de cono 5–10 aproximadamente, que vitrifica, o casi.
-- **Porcelana**: una pasta blanca de alta temperatura, rica en caolín{{en: kaolin}}, a menudo translúcida.
+- **Porcelana**: una pasta blanca rica en caolín{{en: kaolin}}, a menudo translúcida. La mayor parte de la porcelana es de alta temperatura, pero también hay porcelanas de cono 6.
 
 **Vítreo** significa parecido al vidrio y no poroso; la **vitrificación** es el proceso por el que una pasta llega a serlo durante la cocción. En el Reino Unido, los ceramistas suelen trazar la línea por la temperatura: el gres se cuece por encima de {{2192 °F; 1200 °C}} y la loza, por debajo. La media temperatura, cono 5–6, queda justo a uno y otro lado de esa línea.
 
@@ -55,9 +55,9 @@ La **cocción de esmalte**{{en: glaze firing}} (los ceramistas británicos puede
 
 ## Conos y trabajo térmico {#cones}
 
-Los ceramistas designan una cocción por un **cono**{{en: cone}}: una esbelta pirámide cerámica que se dobla cuando ha recibido una cantidad determinada de calor. Orton, que los fabrica, lo explica así: «Los conos no miden solo la temperatura. Miden el trabajo térmico, el efecto conjunto del tiempo y la temperatura».
+Los ceramistas designan una cocción por un **cono**{{en: cone}}: una esbelta pirámide cerámica que se dobla cuando ha recibido una cantidad determinada de calor. Orton, que los fabrica, llama a los conos indicadores de tiempo y temperatura (de trabajo térmico): muestran el efecto conjunto del tiempo y la temperatura, no solo la temperatura.
 
-El **trabajo térmico**{{en: heatwork}} es la razón: el esmalte, la arcilla y el cono responden tanto al tiempo que pasan calientes como a la temperatura. En una cocción lenta, el cono se dobla a menor temperatura; en una rápida, a mayor. Según la tabla de Orton, el cono 6 se dobla a {{2165 °F; 1185 °C}} cuando la cocción termina subiendo {{27 °F; 15 °C}} por hora, a {{2232 °F; 1222 °C}} a {{108 °F; 60 °C}} por hora y a {{2269 °F; 1243 °C}} a {{270 °F; 150 °C}} por hora, con la velocidad medida en los últimos {{180 °F; 100 °C}}. Un cono se da por caído cuando su punta se ha doblado 90°, lo que Orton llama la posición de las 5 en punto.
+El **trabajo térmico**{{en: heatwork}} es la razón: el esmalte, la arcilla y el cono responden tanto al tiempo que pasan calientes como a la temperatura. En una cocción lenta, el cono se dobla a menor temperatura; en una rápida, a mayor. Según la tabla de Orton, el cono 6 se dobla a {{2165 °F; 1185 °C}} cuando la cocción termina subiendo {{27 °F; 15 °C}} por hora, a {{2232 °F; 1222 °C}} a {{108 °F; 60 °C}} por hora y a {{2269 °F; 1243 °C}} a {{270 °F; 150 °C}} por hora, con la velocidad medida en los últimos {{180 °F; 100 °C}}. Un cono se da por caído cuando su punta se ha doblado 90°. Los ceramistas suelen llamarlo la posición de las 5 en punto.
 
 Los números de cono van del 022 al 42. Un cero delante indica la serie de menor temperatura, en la que un número mayor es más frío: el cono 06 es más frío que el cono 04, y el cono 01, más frío que el cono 1.
 
@@ -73,13 +73,13 @@ Label: Intervalos de cocción
 > [!NOTE]
 > Designe y programe sus cocciones por conos, y tome las temperaturas como aproximadas. Un **cono testigo**{{en: witness cone}} en una placa entre las piezas, o un **trío de conos**{{en: cone pack}} (cono de aviso, cono de cocción y cono de control), muestra el trabajo térmico que de verdad recibieron sus piezas.
 
-Las temperaturas publicadas varían. Glazy da para la alta temperatura, cono 9–11, unos {{2336–2390 °F; 1280–1310 °C}}, lo que coincide con la columna rápida de Orton, y Digitalfire indica que la mayoría de los hornos alcanzan el cono 6 a unos {{2200 °F; 1204 °C}}. Nuestro consejo: use las cifras de velocidad media de Orton, como hace esta guía, programe por conos y deje que un cono testigo lo decida.
+Las temperaturas publicadas varían. Glazy da para la alta temperatura, cono 9–11, unos {{2336–2390 °F; 1280–1310 °C}}, lo que coincide con la columna rápida de Orton, y Digitalfire da para el cono 6 unos {{2200 °F; 1204 °C}}. Nuestro consejo: use las cifras de velocidad media de Orton, como hace esta guía, programe por conos y deje que un cono testigo lo decida.
 
 Fuera de Norteamérica, los proveedores suelen dar °C en lugar de un cono. Hermann Seger desarrolló el cono moderno, usado por primera vez en Berlín en 1886, y el Reino Unido ha tenido sus propios conos Staffordshire; no debe suponerse que sus números coinciden con los de Orton, y no hemos encontrado ninguna tabla para convertirlos. [La cocción en un horno sencillo](/guides/firing) trata los conos con más detalle.
 
 ## De la receta a la fórmula Seger {#unity-formula}
 
-Una **receta** enumera las materias primas en peso, normalmente ajustada para que la base sume 100. Los **aditivos** (colorantes{{en: colorants}}, opacificantes y suspensivos) se añaden por encima de ese 100, normalmente como porcentaje sobre la base. Para ver qué es el esmalte{{en: glaze}}, los ceramistas convierten la receta en la **fórmula Seger**{{en: unity molecular formula}} (**UMF**), o fórmula molecular unitaria, llamada así por Hermann Seger, que fue el primero en usar su disposición en tres columnas.
+Una **receta**{{en: batch recipe}} enumera las materias primas en peso, normalmente ajustada para que la base sume 100. Los **aditivos** (colorantes{{en: colorants}}, opacificantes y suspensivos) se añaden por encima de ese 100, normalmente como porcentaje sobre la base. Para ver qué es el esmalte{{en: glaze}}, los ceramistas convierten la receta en la **fórmula Seger**{{en: unity molecular formula}} (**UMF**), o fórmula molecular unitaria, llamada así por Hermann Seger, que fue el primero en usar su disposición en tres columnas.
 
 Table: De la receta a la fórmula Seger: el ejemplo resuelto de Glazy
 Label: De la receta a la fórmula Seger
@@ -106,7 +106,7 @@ Label: Relación sílice/alúmina
 |      5–7 | Típica de muchos esmaltes de gres estables               |
 |      3–5 | Puede ser mate o estar poco cocido                       |
 
-Una relación de 5–7 no predice por sí sola ni brillo ni mate: los fundentes, el boro y el cono desplazan la frontera. Glazy da como equilibrio de fundentes típico de los esmaltes estables 0,2 de R₂O con 0,8 de RO, hasta 0,3 de R₂O con 0,7 de RO. Más álcali hace el fundido más fluido y aumenta su dilatación{{en: expansion}} y, con ella, el riesgo de cuarteado{{en: crazing}}.
+Glazy no dice para qué cono son estas cifras. Tómelas como una guía aproximada para esmaltes de gres, de cono 6–10 más o menos. Digitalfire dice que una relación por encima de 8 aproximadamente probablemente dé brillo, pero un esmalte con boro puede ser brillante a 8 o menos, y uno de baja temperatura, incluso a 6. Una relación de 5–7 no predice por sí sola ni brillo ni mate: los fundentes, el boro y el cono desplazan la frontera. Glazy da como equilibrio de fundentes típico de los esmaltes estables 0,2 de R₂O con 0,8 de RO, hasta 0,3 de R₂O con 0,7 de RO. Más álcali hace el fundido más fluido y aumenta su dilatación{{en: expansion}} y, con ella, el riesgo de cuarteado{{en: crazing}}.
 
 ### Pérdida al fuego
 
@@ -117,15 +117,29 @@ Label: Pérdida al fuego
 
 | Material                                   | PF típica                                                                                    |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| Carbonato cálcico{{en: whiting}}, dolomita | Más del 40 %, sobre todo dióxido de carbono: 100 g de carbonato cálcico desprenden unos 45 g |
+| Carbonato cálcico{{en: whiting}}, dolomita | Más del 40 %, sobre todo dióxido de carbono: 100 g de carbonato cálcico desprenden unos 44 g |
 | Carbonato de litio                         | Alrededor del 60 %                                                                           |
 | Carbonato de bario, Gerstley Borate        | Más del 20 %                                                                                 |
-| Caolín                                     | Alrededor del 12 %, sobre todo agua ligada en sus cristales                                  |
+| Caolín                                     | Alrededor del 12–14 %, sobre todo agua ligada en sus cristales                               |
 | Feldespatos                                | Menos del 1 %                                                                                |
 
-El gas que sale después de que el esmalte empiece a fundirse tiene que atravesarlo en burbujas y causa, en palabras de Digitalfire, «burbujas, ampollas, pinchados, recogido». El talco sigue desprendiendo gas hasta unos {{1650 °F; 899 °C}}. Las fritas{{en: frits}}, los materiales **calcinados** (calentados previamente para expulsar sus gases) y los cambios en la cocción ayudan.
+El gas que sale después de que el esmalte empiece a fundirse tiene que atravesarlo en burbujas y causa, en palabras de Digitalfire, «burbujas, ampollas, pinchados, recogido». En una prueba de Digitalfire, el talco siguió desprendiendo gas hasta unos {{1650 °F; 899 °C}}. Las fritas{{en: frits}}, los materiales **calcinados** (calentados previamente para expulsar sus gases) y los cambios en la cocción ayudan.
 
 Los libros antiguos hacen estas cuentas a mano, con el **peso molecular** (el peso de un mol de un material o de un óxido) y el **peso equivalente** (el peso de un material que aporta un mol de un óxido). Según nuestros cálculos, unos 100 g de carbonato cálcico aportan un mol, 56 g, de óxido de calcio. Una calculadora se ocupa de las dos cosas.
+
+## Los límites y el gráfico de Stull {#stull-chart}
+
+Un **gráfico de Stull**{{en: Stull chart}} es un mapa de esmaltes. Tiene dos ejes, ambos de la fórmula Seger: la sílice (SiO₂) en la parte de abajo y la alúmina (Al₂O₃) en el lateral. Cada esmalte es un punto. El mapa se divide en regiones, como mate, brillante, poco cocido y cuarteado. La [página de recetas](/recipe) de Glazecalc dibuja en él su esmalte.
+
+::stull-chart
+
+R. T. Stull hizo el gráfico a partir de pruebas que publicó en 1912. Las coció a cono 11 aproximadamente, y todas las pruebas tenían los mismos fundentes: 0,3 de potasio (K₂O) y 0,7 de óxido de calcio (CaO). Solo cambiaban la sílice y la alúmina. Así que el gráfico vale para esos esmaltes a esa temperatura.
+
+Su esmalte probablemente es distinto. El boro, otros fundentes y los conos más bajos desplazan las regiones. En 2025, un artículo de Ceramics Monthly probó un esmalte de cono 6 con boratos como fundente y con mucho hierro. El gráfico lo situaba como cuarteado, mate y poco cocido. En realidad estaba totalmente fundido, era satinado y no se cuarteaba. Los autores dicen que los esmaltes con boratos no se representan bien en el gráfico. Así que use las regiones como una guía, no como una predicción.
+
+La región **cuarteada** es donde se cuartearon las propias pruebas de Stull, sobre su arcilla. No le dice cómo se acopla su esmalte a su pasta. El cuarteado depende de la dilatación térmica del esmalte y de la arcilla. La cifra de dilatación de Glazecalc le ayuda a comparar esmaltes, y una prueba real es la que decide: la prueba del agua con hielo de [Acoplamiento esmalte-pasta y defectos](/guides/glazing-basics#fit-and-defects).
+
+Las **fórmulas límite**{{en: limit formulas}} son otra herramienta para la misma pregunta: intervalos de sílice, alúmina y fundentes para esmaltes estables a un cono. [Seguridad alimentaria](/guides/glazing-basics#food-safety) las explica, y explica por qué por sí solas no demuestran nada.
 
 ## Fritas y materias primas {#materials}
 
@@ -133,7 +147,7 @@ Los libros antiguos hacen estas cuentas a mano, con el **peso molecular** (el pe
 
 Una **frita**{{en: frit}} es vidrio hecho en fábrica: minerales fundidos, enfriados bruscamente en agua y molidos. El fritado vuelve insolubles materiales solubles como el bórax, encierra óxidos tóxicos como los de plomo y bario en un vidrio estable, da un material más regular que los minerales en bruto y expulsa los gases, de modo que los esmaltes{{en: glazes}} fritados quedan «mucho más libres de defectos» (Digitalfire). Las fritas también funden pronto: una frita de sodio actúa ya a cono 06, mientras que el feldespato{{en: feldspar}} «apenas empieza a reblandecerse a cono 6». Cuestan más, necesitan arcilla para mantenerse en suspensión (el ejemplo de Digitalfire es un 85 % de frita con un 15 % de arcilla) y son «teóricamente insolubles, pero en la práctica no lo son».
 
-Las fritas norteamericanas se identifican por fabricante y número: la Ferro Frit 3134 (Ferro se llama ahora Vibrantz) aparece en cerca del 22 % de las recetas públicas de Glazy. Las recetas del Reino Unido nombran más a menudo fritas genéricas, como la frita de bórax estándar.
+Las fritas norteamericanas se identifican por fabricante y número: la Ferro Frit 3134 (Ferro se llama ahora Vibrantz) es una de las fritas más usadas en Norteamérica. Las recetas del Reino Unido nombran más a menudo fritas genéricas, como la frita de bórax estándar.
 
 ### Las materias primas habituales
 
@@ -143,7 +157,7 @@ Label: Materiales habituales para esmaltes
 | Material (otros nombres)                                                                                                      | Aporta                 | Notas                                                                                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Sílice{{en: silica}} (sílex{{en: flint}}, cuarzo)                                                                             | SiO₂                   | Use en los esmaltes la de 325 mallas, una molienda muy fina                                                                                                                                   |
-| Caolín{{en: kaolin}} (en el Reino Unido, china clay; en Australia, Eckalite)                                                  | Al₂O₃, SiO₂            | La principal fuente de alúmina; también mantiene el esmalte en suspensión                                                                                                                     |
+| Caolín{{en: kaolin}} (en el Reino Unido, china clay)                                                                          | Al₂O₃, SiO₂            | La principal fuente de alúmina; también ayuda a que el esmalte no sedimente                                                                                                                   |
 | Ball clay                                                                                                                     | Al₂O₃, SiO₂            | Más plástica que el caolín, con más hierro y materia orgánica                                                                                                                                 |
 | Feldespato potásico{{en: potash feldspar}}, feldespato sódico{{en: soda feldspar}}, nefelina sienita{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Fundentes con su propia alúmina y sílice. La nefelina sienita es un fundente enérgico en baja y media temperatura. El simple «feldespato» de una receta antigua puede ser cualquiera de ellos |
 | Carbonato cálcico{{en: whiting}} (carbonato de calcio)                                                                        | CaO                    | El principal fundente de calcio; desprende dióxido de carbono                                                                                                                                 |
@@ -154,39 +168,39 @@ Label: Materiales habituales para esmaltes
 | Carbonato de litio                                                                                                            | Li₂O                   | Fundente de baja dilatación; caro, así que se usa con moderación                                                                                                                              |
 | Carbonato de estroncio                                                                                                        | SrO                    | El sustituto menos tóxico del bario                                                                                                                                                           |
 | Carbonato de bario                                                                                                            | BaO                    | Tóxico sin fritar; los esmaltes con mucho bario pueden ceder metales{{en: leach}}                                                                                                             |
-| Bentonita                                                                                                                     | Suspensión             | Una arcilla muy fina, normalmente al 1–3 %, para evitar que el esmalte sedimente                                                                                                              |
+| Bentonita                                                                                                                     | Suspensión             | Una arcilla muy fina, normalmente al 1–2 %, para evitar que el esmalte sedimente. Más de un 3 % puede agrietar el esmalte al secarse                                                          |
 
 > [!WARNING]
 > Los materiales para esmaltes son polvos finos. El polvo de sílice daña los pulmones sin dar síntomas al principio, y algunos materiales, como el carbonato de bario y el carbonato de litio, son venenosos si se tragan. Manipule los polvos con cuidado, limpie en húmedo y lleve un equipo de protección respiratoria bien ajustado cuando trabaje en seco. [Preparación segura y ventilación](/guides/safe-mixing) y [No envenene a su familia](/guides/home-safety) explican cómo.
 
 ### Nombres según la región
 
-- El **caolín** se llama **china clay** en el Reino Unido; los proveedores australianos lo venden como Eckalite.
+- El **caolín** se llama **china clay** en el Reino Unido. En Australia, Eckalite es una marca de caolín.
 - **Flint** (sílex) es un nombre británico antiguo de la sílice. Los proveedores del Reino Unido aún venden el **sílex calcinado** (calcined flint) como un producto aparte, así que «flint» en una receta británica probablemente significa sílex calcinado, y en una estadounidense, probablemente cuarzo molido. Ambos se venden como fuentes de sílice; compruebe el análisis.
 - La **china stone** y la **Cornish stone** (Cornwall stone, piedra de Cornualles) son el mismo material, emparentado con el feldespato.
-- El **whiting**, en inglés, es el carbonato cálcico; los proveedores alemanes lo llaman Kreide (creta).
+- El **whiting**, en inglés, es el carbonato cálcico: creta o caliza molida.
 
 > [!NOTE]
 > Juzgue un material por los óxidos que aporta, no por su nombre. Glazecalc funciona así: puede introducir el análisis de su proveedor en la [página Materiales](/material), y **Probar materiales actuales y comparar**, **Sugerir cantidades y comparar** y **Rehacer con lo que tengo** comparan los óxidos cocidos, no los nombres.
 
-Los materiales también cambian. El feldespato Custer dejó de producirse en 2023. La mina original de Gerstley Borate cerró hacia 1999–2000; Laguna sigue vendiendo un producto con ese nombre, y el Gillespie Borate es el principal sustituto. Las fuentes no coinciden en si el Gillespie sustituye al Gerstley Borate en la misma cantidad (su fabricante y Potclays dicen que sí; Digitalfire y otros, que no), así que compare los dos en Glazecalc y luego pruebe una tanda pequeña.
+Los materiales también cambian. El Servicio Geológico de EE. UU. (USGS) informa de que las minas y la planta que producían el feldespato Custer, en Dakota del Sur, suspendieron su actividad en noviembre de 2023. La mina original de Gerstley Borate cerró hacia 1999–2000; Laguna sigue vendiendo un producto con ese nombre, y el Gillespie Borate es el principal sustituto. Las fuentes no coinciden en si el Gillespie sustituye al Gerstley Borate en la misma cantidad (su fabricante y Potclays dicen que sí; Digitalfire y otros, que no), así que compare los dos en Glazecalc y luego pruebe una tanda pequeña.
 
 ## Colorantes y opacificantes {#color}
 
-Un **colorante**{{en: colorant}} es un óxido o carbonato metálico que colorea un esmalte{{en: glaze}}; un **pigmento**{{en: stain}} es un colorante fabricado industrialmente, más estable y regular que los óxidos sin procesar. Los colorantes suelen ser menos del 5 % de la base, muchos menos del 1 %, y un carbonato tiene más o menos la mitad de fuerza que el óxido correspondiente.
+Un **colorante**{{en: colorant}} es un óxido o carbonato metálico que colorea un esmalte{{en: glaze}}; un **pigmento**{{en: stain}} es un colorante fabricado industrialmente, más estable y regular que los óxidos sin procesar. Los colorantes suelen ser menos del 5 % de la base, muchos menos del 1 %, y un carbonato es más débil que el óxido correspondiente, porque una parte se desprende como gas. Según nuestros cálculos, 100 g de carbonato de cobalto dan unos 63 g de óxido de cobalto, y 100 g del carbonato de cobre que compran los ceramistas (carbonato básico de cobre), unos 72 g de óxido de cobre. Así que use entre 1,4 y 1,6 veces más carbonato que óxido, aproximadamente.
 
 Table: Colorantes habituales, en porcentaje sobre la base
 Label: Colorantes habituales
 
-| Colorante             | Cantidad inicial habitual                            | Colores y notas                                                                                                                                                                                          |
-| --------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cobalto               | 0,1–2 % (las fuentes no coinciden)                   | Azul, y muy potente; tira a morado cuando la base tiene magnesio                                                                                                                                         |
-| Hierro                | 0,5–10 %                                             | Marrones, tostados y rojos en oxidación{{en: oxidation}}; en reducción{{en: reduction}}, ½–2 % da celadón y 5–6 %, tenmoku. Es un fundente{{en: flux}}, así que mucho hierro hace que el esmalte escurra |
-| Cobre                 | 1–3 %                                                | Verde o turquesa en oxidación, rojo en reducción. Puede hacer que el esmalte ceda metales{{en: leach}}                                                                                                   |
-| Cromo                 | De menos del 0,5 % al 2 % (las fuentes no coinciden) | Verde; marrón si la base tiene zinc, rosa con estaño                                                                                                                                                     |
-| Manganeso             | 2–10 %                                               | Marrones y morados                                                                                                                                                                                       |
-| Rutilo                | Unos 2–5 %                                           | Color moteado y jaspeado; rugoso o mate por encima de un 5 % aproximadamente                                                                                                                             |
-| Pigmentos comerciales | 2–12 %                                               | 2–4 % para matices claros, 5–8 % para tonos medios, 10–12 % para colores intensos                                                                                                                        |
+| Colorante             | Cantidad inicial habitual                            | Colores y notas                                                                                                                                                                                           |
+| --------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cobalto               | 0,1–2 % (las fuentes no coinciden)                   | Azul, y muy potente; tira a morado cuando la base tiene magnesio                                                                                                                                          |
+| Hierro                | 0,5–10 %                                             | Marrones, tostados y rojos en oxidación{{en: oxidation}}; en reducción{{en: reduction}}, ½–2 % da celadón y 5–10 %, tenmoku. Es un fundente{{en: flux}}, así que mucho hierro hace que el esmalte escurra |
+| Cobre                 | 1–3 %                                                | Verde o turquesa en oxidación, rojo en reducción. Puede hacer que el esmalte ceda metales{{en: leach}}                                                                                                    |
+| Cromo                 | De menos del 0,5 % al 2 % (las fuentes no coinciden) | Verde; marrón si la base tiene zinc, rosa con estaño                                                                                                                                                      |
+| Manganeso             | 2–10 %                                               | Marrones y morados                                                                                                                                                                                        |
+| Rutilo                | Unos 2–5 %                                           | Color moteado y jaspeado; rugoso o mate por encima de un 5 % aproximadamente                                                                                                                              |
+| Pigmentos comerciales | 2–12 %                                               | 2–4 % para matices claros, 5–8 % para tonos medios, 10–12 % para colores intensos                                                                                                                         |
 
 Sobre las cantidades de cobalto y cromo hay un desacuerdo real. Glazy dice que un 0,1 % de cobalto basta para un azul; el Glendale Community College da ½–2 % o ½–3 % según la atmósfera; Birdie Boone, en Pottery Making Illustrated, dice un 3 % o menos. Para el cromo, Boone dice menos del 0,5 % y Glendale, 2–3 %. Lo más seguro es empezar con poco y hacer una **mezcla lineal**{{en: line blend}}: una fila de probetas{{en: test tiles}} en la que un ingrediente aumenta por pasos de poco a mucho.
 
@@ -198,11 +212,11 @@ Un **opacificante** hace que un esmalte sea **opaco** y oculte la arcilla; un es
 
 Table: Opacificantes
 
-| Opacificante                                                | Cantidad habitual               | Notas                                                                                                |
-| ----------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Silicato de zirconio (Zircopax, Superpax, Ultrox, Zircosil) | 8–12 % para una opacidad total  | La opción más barata; las marcas son el mismo material molido a distintos tamaños                    |
-| Óxido de estaño                                             | Unos 5–7 % (estimación nuestra) | Caro; opacifica mal en reducción                                                                     |
-| Dióxido de titanio                                          | Más del 2 %                     | Opacidad sedosa y translúcida; al 10 % o más, una superficie mate y texturada con cristales visibles |
+| Opacificante                                      | Cantidad habitual               | Notas                                                                                                                                               |
+| ------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silicato de zirconio (Zircopax, Superpax, Ultrox) | 10–15 % para una opacidad total | La opción más barata; las marcas son silicato de zirconio molido a distintos tamaños, y las calidades más finas opacifican más                      |
+| Óxido de estaño                                   | Unos 5–7 % (estimación nuestra) | Caro; más débil en alta temperatura, y Digitalfire informa de que un 4 % no dio ninguna opacidad en un esmalte transparente de cono 10 en reducción |
+| Dióxido de titanio                                | Un 5 % (estimación nuestra)     | Opacidad sedosa y translúcida; alrededor de un 5 % puede hacer variar la superficie, y bastante más suele dar una superficie mate con cristales     |
 
 ## Acoplamiento esmalte-pasta y defectos {#fit-and-defects}
 
@@ -230,13 +244,13 @@ Cambie una sola cosa cada vez y guarde sus probetas{{en: test tiles}}.
 Table: Defectos frecuentes del esmalte, sus causas habituales y los primeros remedios
 Label: Defectos frecuentes del esmalte
 
-| Defecto                                                | Aspecto                                                              | Causas frecuentes                                                                                                                                    | Primeros remedios                                                                                                  |
-| ------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Recogido{{en: crawling}}                               | El esmalte se retira formando gotas y deja la arcilla al descubierto | Bizcocho con polvo o grasa; una capa gruesa y rica en arcilla que se agrietó al secarse; zinc, silicato de zirconio o estaño                         | Limpie el bizcocho; dé una capa más fina; calcine parte de la arcilla; añada un aglutinante como la CMC            |
-| Pinchado{{en: pinholing}}                              | Agujeritos o poros                                                   | Gas de la pasta o del esmalte que dejó huecos sin cerrar; un esmalte poco cocido o demasiado viscoso                                                 | Mantenga la temperatura máxima durante una media hora; dé una capa más fina; menos zinc o rutilo                   |
-| Ampollas                                               | Cráteres de bordes afilados                                          | Normalmente, sobrecocción; capas muy gruesas; fundentes volátiles por encima de unos {{2192 °F; 1200 °C}}                                            | Cueza a menor temperatura; dé una capa más fina. Los bordes afilados hacen que la cerámica funcional no sea segura |
-| Escurrido                                              | El esmalte cae sobre la placa                                        | Muy poca alúmina; capa demasiado gruesa, como donde se solapan los vertidos; mucho hierro                                                            | Dé una capa más fina; añada alúmina; deje el esmalte bien por encima del pie                                       |
-| Grietas de enfriamiento o calentamiento{{en: dunting}} | Grietas en la pieza por el enfriamiento o el calentamiento           | Enfriamiento rápido al pasar por la inversión del cuarzo{{en: quartz inversion}}, {{1063 °F; 573 °C}}; paredes de grosor irregular; mal acoplamiento | Cueza despacio al pasar por {{1063 °F; 573 °C}}, al subir y al bajar; haga paredes uniformes                       |
+| Defecto                                                | Aspecto                                                              | Causas frecuentes                                                                                                                                                                                                      | Primeros remedios                                                                                                  |
+| ------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Recogido{{en: crawling}}                               | El esmalte se retira formando gotas y deja la arcilla al descubierto | Bizcocho con polvo o grasa; una capa gruesa y rica en arcilla que se agrietó al secarse; zinc, silicato de zirconio o estaño                                                                                           | Limpie el bizcocho; dé una capa más fina; calcine parte de la arcilla; añada un aglutinante como la CMC            |
+| Pinchado{{en: pinholing}}                              | Agujeritos o poros                                                   | Gas de la pasta o del esmalte que dejó huecos sin cerrar; un esmalte poco cocido o demasiado viscoso                                                                                                                   | Mantenga la temperatura máxima durante una media hora; dé una capa más fina; menos zinc o rutilo                   |
+| Ampollas                                               | Cráteres de bordes afilados                                          | Normalmente, sobrecocción; capas muy gruesas; fundentes volátiles por encima de unos {{2192 °F; 1200 °C}}                                                                                                              | Cueza a menor temperatura; dé una capa más fina. Los bordes afilados hacen que la cerámica funcional no sea segura |
+| Escurrido                                              | El esmalte cae sobre la placa                                        | Muy poca alúmina; capa demasiado gruesa, como donde se solapan los vertidos; mucho hierro                                                                                                                              | Dé una capa más fina; añada alúmina; deje el esmalte bien por encima del pie                                       |
+| Grietas de enfriamiento o calentamiento{{en: dunting}} | Grietas en la pieza por el enfriamiento o el calentamiento           | Enfriamiento rápido al pasar por la inversión del cuarzo{{en: quartz inversion}}, {{1063 °F; 573 °C}}, o por la inversión de la cristobalita, a unos {{428 °F; 220 °C}}; paredes de grosor irregular; mal acoplamiento | Cueza despacio al pasar por las dos, al subir y al bajar; haga paredes uniformes                                   |
 
 ## Seguridad alimentaria {#food-safety}
 
@@ -254,11 +268,11 @@ Los límites legales varían de un país a otro. La tabla muestra los del lugar 
 
 ::food-limits
 
-En EE. UU., la cerámica decorativa que parece utilizable para alimentos se trata como cerámica para uso alimentario, a menos que lleve una etiqueta adhesiva y un aviso permanente moldeado o cocido en su base, como «Not for Food Use. May Poison Food» (no apto para alimentos; puede envenenar los alimentos), o tenga un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. A partir del 29 de mayo de 2026, los Países Bajos, Bélgica y Luxemburgo permiten unas 130 a 150 veces menos plomo, y unas 15 veces menos cadmio. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
+En EE. UU., la cerámica decorativa que parece utilizable para alimentos se trata como cerámica para uso alimentario, a menos que lleve una etiqueta adhesiva y un aviso permanente moldeado o cocido en su base, como «Not for Food Use. May Poison Food» (no apto para alimentos; puede envenenar los alimentos), o tenga un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio para la cerámica en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. Una decisión de 2024 de los países del Benelux fija límites mucho más bajos para la cerámica. Los Países Bajos los aplican desde el 29 de mayo de 2026: unas 130 a 150 veces menos plomo y unas 14 a 18 veces menos cadmio que las cifras de la UE. Las piezas que cumplían las normas anteriores y se pusieron a la venta por primera vez antes del 1 de diciembre de 2026 pueden venderse hasta que se agoten las existencias. Los laboratorios de ensayo informan de que Luxemburgo aplica los mismos límites desde el 29 de mayo de 2026, y de que Bélgica los adoptó en un real decreto del 19 de julio de 2026; no hemos leído esos textos nosotros mismos. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
 
 ### Ensayos
 
-La FDA dice que los kits caseros de hisopo pueden detectar plomo que puede cederse, pero Ceramics New Zealand advierte que los rotuladores de prueba no están pensados para la cerámica y dan falsos positivos. Tome un positivo como motivo para dejar de usar la pieza, y un negativo, como algo que no demuestra nada. Un ensayo de cesión en laboratorio de la pieza cocida (ASTM C738 en EE. UU.; EN 1388 o ISO 6486 en Europa) es la respuesta de verdad.
+La FDA dice que los kits caseros de hisopo pueden detectar plomo que puede cederse, pero los estudios muestran que estos kits se equivocan a menudo con la cerámica esmaltada: pueden indicar plomo que no hay, y pueden pasar por alto plomo que sí se cede. Tome un positivo como motivo para dejar de usar la pieza, y un negativo, como algo que no demuestra nada. Un ensayo de cesión en laboratorio de la pieza cocida (ASTM C738 en EE. UU.; EN 1388 o ISO 6486 en Europa) es la respuesta de verdad.
 
 > [!WARNING]
 > «Apto para uso alimentario»{{en: food safe}} significa que este esmalte, sobre esta pasta, cocido a este cono en este horno y aplicado de esta manera, libera menos de lo que fijan los límites legales. Glazecalc puede ayudarle a crear un esmalte estable, y **Sustituir el plomo** puede rehacer sin plomo una receta antigua con plomo, pero ninguna calculadora puede certificar una pieza. Solo un ensayo de la pieza cocida puede hacerlo.
@@ -267,7 +281,7 @@ La FDA dice que los kits caseros de hisopo pueden detectar plomo que puede ceder
 
 ### Densidad
 
-El polvo de esmalte{{en: glaze}} mezclado con agua es una **suspensión**{{en: slurry}}. Su **densidad**{{en: specific gravity}} (**SG** en los textos en inglés) es su peso comparado con el de un mismo volumen de agua, cuya densidad es 1,0: cuanto más alta, más polvo hay en el cubo. Los libros británicos antiguos hablan de **peso por pinta**. Glazy considera que 1,4–1,5 es «un buen punto de partida para la mayoría de los esmaltes». Para medirla, pese exactamente 100 mL de suspensión (Glazy sugiere una jeringa) y divida por 100: 145 g significan una densidad de 1,45. Los densímetros no son fiables en esmaltes gelificados, y el agua se evapora, así que vuelva a comprobarla antes de esmaltar.
+El polvo de esmalte{{en: glaze}} mezclado con agua es una **suspensión**{{en: slurry}}. Su **densidad**{{en: specific gravity}} (**SG** en los textos en inglés) es su peso comparado con el de un mismo volumen de agua, cuya densidad es 1,0: cuanto más alta, más polvo hay en el cubo. Glazy considera que 1,4–1,5 es «un buen punto de partida para la mayoría de los esmaltes». Para medirla, pese exactamente 100 mL de suspensión (Glazy sugiere una jeringa) y divida por 100: 145 g significan una densidad de 1,45. Los densímetros no son fiables en esmaltes gelificados, y el agua se evapora, así que vuelva a comprobarla antes de esmaltar.
 
 Los valores recomendados varían según la fuente. Digitalfire sitúa los esmaltes para inmersión en 1,40–1,50 y los esmaltes comerciales para pincel en 1,25–1,55, mientras que Potclays da 1,71–1,81 para pincel y 1,71 para pistola. Nuestro consejo: aplique por inmersión a unos 1,45 con el esmalte ligeramente gelificado, siga la etiqueta en un esmalte para pincel y anote lo que le funcione.
 
@@ -279,19 +293,19 @@ Limpie primero el polvo y la grasa del bizcocho{{en: bisque}} con una esponja ap
 
 - La **inmersión** «generalmente da una capa de grosor uniforme» (Robin Hopper). El tiempo de inmersión fija el grosor: Digitalfire señala que los esmaltes comerciales para inmersión se preparan a unos 1,4 para una inmersión de 5 segundos y a 1,5 para una inmersión de 1 segundo.
 - El esmalte para **vertido** debe estar «un poco más diluido que cuando se usa para inmersión»; donde se solapan los vertidos, la capa se duplica y puede escurrir.
-- Los esmaltes para **pincel** contienen una goma como la **CMC**, que ayuda a que el esmalte se extienda y se adhiera, y luego se quema. La mayoría necesitan varias capas, a menudo dos o tres; siga la etiqueta.
+- Los esmaltes para **pincel** contienen una goma como la **CMC**{{en: CMC gum}}, que ayuda a que el esmalte se extienda y se adhiera, y luego se quema. La mayoría necesitan varias capas, a menudo dos o tres; siga la etiqueta.
 - La aplicación a **pistola** usa un esmalte mucho más diluido, aplicado en «varias capas finas, aumentando poco a poco el grosor».
 
 > [!WARNING]
 > Aplique a pistola solo en una cabina de pulverización ventilada y con un equipo de protección respiratoria correctamente ajustado. Consulte [Preparación segura y ventilación](/guides/safe-mixing).
 
-Una capa demasiado gruesa puede recogerse, formar ampollas o escurrir. Las reglas prácticas de los proveedores van del grosor de una tarjeta de crédito al de una moneda estadounidense de diez centavos, que según nuestra estimación equivalen a cerca de 1 mm de esmalte seco; las probetas{{en: test tiles}} con varios grosores son la comprobación fiable. La **cera de reserva**{{en: wax resist}} en el pie repele el esmalte, para que la pieza no se pegue a la placa, y el **protector de placas**, un recubrimiento resistente al calor hecho a menudo de caolín y sílice, protege las placas de los goteos.
+Una capa demasiado gruesa puede recogerse, formar ampollas o escurrir. Las reglas prácticas de los proveedores van del grosor de una tarjeta de crédito al de una moneda estadounidense de diez centavos, que según nuestra estimación equivalen a cerca de 1 mm de esmalte seco; las probetas{{en: test tiles}} con varios grosores son la comprobación fiable. La **cera de reserva**{{en: wax resist}} en el pie repele el esmalte, para que la pieza no se pegue a la placa, y el **protector de placas**{{en: kiln wash}}, un recubrimiento resistente al calor hecho a menudo de caolín y sílice, protege las placas de los goteos.
 
 ## Oxidación y reducción {#atmosphere}
 
 Los gases del horno, su **atmósfera**, cambian el resultado de los esmaltes{{en: glazes}}. La **oxidación**{{en: oxidation}} supone abundancia de oxígeno. «Los hornos eléctricos son sinónimo de cocción en oxidación», dice Digitalfire, y los esmaltes de oxidación suelen ser más vivos que los de reducción, sobre todo a temperaturas más bajas. En oxidación, el cobre da verdes y turquesas, y el hierro, marrones, tostados y rojos. Un horno eléctrico mal ventilado y lleno de piezas que desprenden gases puede tener una atmósfera más neutra de lo previsto; un extractor conectado directamente al horno ayuda.
 
-La **reducción**{{en: reduction}} restringe a propósito el oxígeno, normalmente en un horno de gas, de leña o especial. El cobre se vuelve rojo, y el hierro se convierte en un fundente{{en: flux}} más enérgico y da el **celadón** (de verde azulado a verde grisáceo, con aproximadamente ½–2 % de hierro) y el **tenmoku** (temmoku: pardo negruzco, con un 5–6 % de hierro aproximadamente). Glazy dice que los celadones y los rojos de cobre «dependen de la reducción». La pasta{{en: clay body}} también cambia: en una comparación de Digitalfire, una pasta de gres{{en: stoneware}} salió gris en reducción y amarillenta en oxidación. El carburo de silicio en un esmalte puede crear pequeñas zonas de reducción incluso en un horno eléctrico. Para la reducción del cono 010 al cono 3, Orton recomienda sus conos{{en: cones}} sin hierro.
+La **reducción**{{en: reduction}} restringe a propósito el oxígeno, normalmente en un horno de gas, de leña o especial. El cobre se vuelve rojo, y el hierro se convierte en un fundente{{en: flux}} más enérgico y da el **celadón** (de verde azulado a verde grisáceo, con aproximadamente ½–2 % de hierro) y el **tenmoku** (temmoku: pardo negruzco, con un 5–10 % de hierro aproximadamente). Glazy dice que los celadones y los rojos de cobre «dependen de la reducción». La pasta{{en: clay body}} también cambia: en una comparación de Digitalfire, una pasta de gres{{en: stoneware}} salió gris en reducción y amarillenta en oxidación. El carburo de silicio en un esmalte puede crear pequeñas zonas de reducción incluso en un horno eléctrico. Para la reducción del cono 010 al cono 3, Orton recomienda sus conos{{en: cones}} sin hierro.
 
 > [!NOTE]
 > Cuente con que una receta pensada para un horno de gas en reducción salga distinta en un horno eléctrico: un celadón o un rojo de cobre que depende de la reducción no tendrá el mismo aspecto en oxidación. Compruebe para qué atmósfera se hizo una receta y anote la suya, con el cono, en las notas de la receta en Glazecalc.
@@ -319,7 +333,7 @@ Barbotina y engobe (slip and engobe)
 : Arcilla en agua; un engobe es un recubrimiento parecido a la barbotina, con más material que no es arcilla.
 
 Bentonita (bentonite)
-: Una arcilla muy fina que se añade al 1–3 % para evitar que el esmalte sedimente.
+: Una arcilla muy fina que se añade al 1–2 % aproximadamente para evitar que el esmalte sedimente. Más de un 3 % puede agrietar el esmalte al secarse.
 
 Bizcocho, cocción de bizcocho (bisque; en el Reino Unido, biscuit)
 : La primera cocción, a menor temperatura, normalmente a cono 08–04 (lo más habitual, 06–04), que deja las piezas resistentes pero porosas.
@@ -331,10 +345,10 @@ Brillante, satinado y mate (gloss, satin and matte)
 : Reflectante y liso; un brillo apagado; sin brillo.
 
 Caolín (kaolin; en el Reino Unido, china clay)
-: Una arcilla blanca y pura que aporta alúmina y sílice; mantiene el esmalte en suspensión. En Australia: Eckalite.
+: Una arcilla blanca y pura que aporta alúmina y sílice; ayuda a que el esmalte no sedimente. En Australia, Eckalite es una de sus marcas.
 
 Carbonato cálcico (whiting)
-: El principal fundente de calcio; pierde más del 40 % de su peso en la cocción. En alemán: Kreide.
+: El principal fundente de calcio; pierde en la cocción alrededor del 44 % de su peso, en forma de dióxido de carbono.
 
 Cera de reserva (wax resist)
 : Cera que se aplica a pincel donde no debe ir el esmalte, normalmente en el pie.
@@ -361,7 +375,7 @@ Cuarteado (crazing)
 : Grietas finas en un esmalte que se contrae más que su pasta; craquelado cuando se busca a propósito.
 
 Densidad (specific gravity, SG)
-: El peso de una suspensión comparado con el de un mismo volumen de agua. En los libros británicos antiguos: pint weight (peso por pinta).
+: El peso de una suspensión comparado con el de un mismo volumen de agua.
 
 Desconchado (shivering)
 : El esmalte salta en escamas de los bordes porque está demasiado comprimido; un peligro en la cerámica funcional.
@@ -406,7 +420,7 @@ Grieta de enfriamiento o de calentamiento (dunting)
 : Grietas en una pieza por las tensiones del enfriamiento o del calentamiento, a menudo en la inversión del cuarzo, {{1063 °F; 573 °C}}.
 
 Loza (earthenware)
-: Una pasta de baja temperatura (de cono 06–02 aproximadamente) que sigue siendo porosa.
+: Una pasta de baja temperatura (de cono 06–02 aproximadamente), porosa a conos bajos y más densa cuando se cuece a más temperatura.
 
 Mezcla lineal (line blend)
 : Pruebas en las que un ingrediente varía por pasos entre dos cantidades. Una mezcla triaxial (triaxial blend) hace variar tres en una cuadrícula.
@@ -483,6 +497,14 @@ Vitrificación (vitrification)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, vía Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,21 @@ Vitrificación (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

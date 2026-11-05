@@ -645,6 +645,15 @@ controller (GDPR) → ”rekisterinpitäjä”; legal basis → ”oikeusperuste
 ”vakiosopimuslausekkeet”; sign out everywhere → ”Kirjaudu ulos kaikkialta”; Keep me signed in → ”Pysy kirjautuneena
 tällä laitteella”; Download my data → ”Omien tietojen lataaminen”.
 
+Added in round 14 (the new Japanese and Chinese materials, famous glazes, teaching guide). No Finnish ceramics source
+was found for any of these (a web search for ”posliinikivi” with Jingdezhen found none, November 2026): coinages for a
+Finnish potter to check, with the CJK name kept beside them as the English gives it. synthetic ash (合成土灰) →
+”synteettinen korvike tuhkalle 土灰” (土灰 → ”sekapuutuhka”); rice-straw ash (藁灰) → ”riisinolkituhka”; isu ash (柞灰) →
+”isu-tuhka”; porcelain stone (瓷石) → ”posliinikivi”; 紫金土 → ”rautapitoinen paikallinen savi (紫金土)”; product
+specification (Eti Maden's colemanite: limits, not a typical analysis) → ”tuotemäärittely … raja-arvoja, ei tyypillinen
+analyysi”; Stull chart → ”Stullin kaavio”; famous glazes → ”kuuluisat lasitteet”; worksheet → ”tehtävämoniste”;
+session (a class meeting) → ”opetuskerta”; Teaching glaze calculation → ”Lasitelaskennan opettaminen”.
+
 ## 3. Never translated
 
 From terms.md, unchanged:

@@ -61,27 +61,29 @@ Glavna opasnost od olova je drukčija: nije riječ o jednoj žlici, nego o malim
 
 ## Čuvanje sirovina kod kuće {#storing-materials}
 
-Nijedno službeno tijelo ne propisuje pravila za čuvanje sirovina za glazuru{{en: glaze materials}} kod kuće, ali stranice o zdravlju i sigurnosti slažu se: neka se rad odvija u zasebnom prostoru, podalje od djece. Ministarstvo zdravstva Pennsylvanije, pišući o hobijima u kojima se koristi olovo, savjetuje: „Za svoj hobi koristite poseban radni prostor ili garažu i držite djecu podalje od tog prostora.”
+Nijedno službeno tijelo ne propisuje pravila za čuvanje sirovina za glazure kod kuće, ali stranice o zdravlju i sigurnosti slažu se: radite u zasebnom prostoru, daleko od djece. Zdravstveni odjel savezne države Pennsylvanije, pišući o hobijima u kojima se koristi olovo, savjetuje: „Za svoj hobi koristite zaseban radni prostor ili garažu i držite djecu podalje od tog prostora.”
 
-### Kontrolni popis za čuvanje
+### Popis za čuvanje
 
-Ovo su opća pravila za sprječavanje otrovanja, primijenjena na glazuru. Ne propisuje ih nijedna norma za keramiku, ali predlažemo ih sve:
+Ovo su opća pravila za sprječavanje otrovanja primijenjena na glazure. Ne propisuje ih nijedna norma za keramiku, ali predlažemo sva:
 
-- Suhe sirovine držite pod ključem: u ormaru ili u prostoriji, garaži ili šupi koja se zaključava. Visoka polica pomaže, ali djeca se penju. Ako isprva možete zaključati samo nekoliko stvari, počnite s topljivim sirovinama i bojilima{{en: colorants}}.
-- Sirovine držite u originalnim vrećama ili kanticama. Ako neku presipate u drugu posudu, označite je nazivom točno kako piše na vreći.
-- Nikad ne koristite posude za hranu ili piće (čašice od jogurta, staklenke, boce) za sirovine za glazuru, čak ni označene. Dijete zna što je u čašici od jogurta.
+- Suhe sirovine držite pod ključem: u ormariću ili u prostoriji, garaži ili šupi koja se zaključava. Visoka polica pomaže, ali djeca se penju. Ako isprva možete zaključati samo nekoliko stvari, počnite s topljivim sirovinama i bojilima{{en: colorants}}.
+- Sirovine držite u izvornim vrećama ili posudama. Ako neku premjestite u drugu posudu, označite je nazivom točno onako kako piše na vreći.
+- Nikad ne koristite posude za hranu ili piće (čašice od jogurta, staklenke, boce) za sirovine za glazure, čak ni označene. Dijete zna što je u čašici od jogurta.
 - Pribor iz radionice (lopatice, žlice, pjenjače, sita, vage) držite u radionici. Nikad ne koristite kuhinjski pribor za glazuru ni pribor za glazuru za hranu.
-- Tekuće glazure držite u označenim kantama zatvorenima poklopcem.
-- Uz svaku sirovinu držite njezin sigurnosno-tehnički list, na papiru ili u telefonu.
-- U kuhinji ne držite ništa iz radionice: ni vreće, ni kante, ni pribor, ni probne pločice{{en: test tiles}}.
+- Tekuće glazure držite u označenim kantama sa zatvorenim poklopcima.
+- Uz svaku sirovinu držite njezin sigurnosno-tehnički list (STL), na papiru ili u mobitelu.
+- U kuhinji ne držite ništa iz radionice: ni vreće, ni kante, ni pribor, ni probne pločice.
 
-Više o kupnji i čuvanju sirovina pogledajte u vodiču [Kako napraviti glazuru](/guides/making-a-glaze).
+Podrobnije o kupnji i čuvanju sirovina pogledajte u vodiču [Kako napraviti glazuru](/guides/making-a-glaze).
 
 ### Otpad od glazure i voda od ispiranja
 
-Nikad ne izlijevajte u sudoper ili po vrtu glazuru ni vodu u kojoj ste ispirali pribor za glazuru. Britanski Crafts Council predlaže zasebnu kantu vode za pranje ruku, kistova, sita i pribora. Ostavite je preko noći da se slegne, odlijte bistru vodu, a zatim osušite slegnutu glazuru i bacite je u smeće (završava na odlagalištu otpada), nikad u odvod.
+Nikad ne izlijevajte glazuru, ni vodu u kojoj ste ispirali pribor za glazuru, u sudoper ili u vrt. Britanski Crafts Council predlaže zasebnu kantu vode za pranje ruku, kistova, sita i pribora. Ostavite je da se slegne preko noći, odlijte bistru vodu, zatim osušite slegnutu glazuru i bacite je u smeće (završava na odlagalištu), nikad u odvod.
 
-Predlažemo da ta kanta ima poklopac: mulj sadrži iste metale kao glazura, a kućni ljubimci piju stajaću vodu. Pravila o zbrinjavanju razlikuju se od mjesta do mjesta, pa provjerite sigurnosno-tehnički list svakog proizvoda, a ako niste sigurni, pitajte lokalnu upravu ili vodovod.
+Predlažemo da ta kanta ima poklopac: talog sadrži iste metale kao glazura, a kućni ljubimci piju stajaću vodu. Pravila o zbrinjavanju razlikuju se od mjesta do mjesta, zato provjerite sigurnosno-tehnički list svakog proizvoda i, ako niste sigurni, pitajte lokalnu upravu ili vodovod.
+
+Neke radionice osušeni talog ispeku prije nego što ga bace. Stave ga u neku suvišnu zdjelu koja će se potrošiti: nakon pečenja zdjela se više ne može koristiti. Napunite zdjelu samo do četvrtine, jer se talog dok se tali pjeni i stvara mjehure, i pokrijte je tanjurom. Postavite je na ploču premazanu premazom za zaštitu ploča ili na suvišnu pločicu, za slučaj da se prelije. Pečenje pretvara talog u staklo, koje drži metale mnogo čvršće od rastresitog praha, pa je na odlagalištu sigurnije. Sa suhim talogom postupajte kao sa suhom glazurom: sa zaštitnom maskom i bez stvaranja prašine.
 
 ## Kako prašinu zadržati u radionici {#keeping-dust-in-the-studio}
 

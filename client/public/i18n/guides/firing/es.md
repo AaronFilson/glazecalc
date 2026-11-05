@@ -89,16 +89,16 @@ Label: Tabla de conos Orton
 | Cono | Lenta, {{27 °F/h; 15 °C/h}} | Media, {{108 °F/h; 60 °C/h}} | Rápida, {{270 °F/h; 150 °C/h}} |
 | ---- | --------------------------: | ---------------------------: | -----------------------------: |
 | 022  |                           – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018  |                           – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015  |                           – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018  |         {{1267 °F; 686 °C}} |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015  |         {{1382 °F; 750 °C}} |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010  |         {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08   |         {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07   |                           – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07   |         {{1764 °F; 962 °C}} |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06   |         {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05   |        {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04   |        {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03   |        {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02   |                           – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02   |        {{1972 °F; 1078 °C}} |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01   |        {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1    |        {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4    |        {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,7 +460,7 @@ Un horno manual sigue el mismo plan a mano: secar despacio con la tapa entreabie
 
 ## Cocción de esmalte {#glaze}
 
-La cocción de esmalte{{en: glaze firing}} funde el esmalte y lo convierte en vidrio sobre el bizcocho{{en: bisque}}. La mayoría de quienes empiezan cuecen esmaltes de baja temperatura a cono 06–04 o esmaltes de media temperatura a cono 5–6. Cueza al cono que indiquen las etiquetas de su arcilla y de su esmalte, con un trío de conos{{en: cone pack}} en torno a ese número. Para saber qué pasa dentro del esmalte mientras se funde, vea [El esmaltado desde sus fundamentos](/guides/glazing-basics).
+La cocción de esmalte{{en: glaze firing}} funde el esmalte y lo convierte en vidrio sobre el bizcocho{{en: bisque}}. La mayoría de los esmaltes de baja temperatura que hay en el mercado están hechos para cono 06 o 05 (la baja temperatura abarca los conos 06–04), y la mayoría de los de media temperatura, para cono 5–6. Cueza al cono que indiquen las etiquetas de su esmalte y de su arcilla, con un trío de conos{{en: cone pack}} en torno a ese número. Para saber qué pasa dentro del esmalte mientras se funde, vea [El esmaltado desde sus fundamentos](/guides/glazing-basics).
 
 ### Carga para una cocción de esmalte
 
@@ -524,7 +524,7 @@ Los programadores de Skutt ofrecen igualmente un precalentamiento y una opción 
 
 ### En un horno manual
 
-Un horno manual no puede seguir estas curvas con exactitud, pero el plan es el mismo: suave al principio, constante en la parte central y un final vigilado. La curva de Bracker’s para esmaltes de baja temperatura está en «Hornos manuales en detalle», más abajo; para conos más calientes añade «una media de 15–30 minutos por número de cono». Con un pirómetro, práctica y un registro, puede imitar aproximadamente una bajada con mantenimiento o un enfriamiento lento bajando los reguladores a mano, como sugiere Digitalfire.
+Un horno manual no puede seguir estas curvas con exactitud, pero el plan es el mismo: suave al principio, constante en la parte central y un final vigilado. La curva de Bracker para esmaltes de baja temperatura está en «Hornos manuales en detalle», más abajo; para conos más calientes añade «una media de 15–30 minutos por número de cono». Con un pirómetro, práctica y un registro, puede imitar aproximadamente una bajada con mantenimiento o un enfriamiento lento bajando los reguladores a mano, como sugiere Digitalfire.
 
 ## Hornos manuales en detalle {#manual-kilns}
 

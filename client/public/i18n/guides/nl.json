@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Leren met de gratis glazuurcursus van John Britt",
       "text": "Zijn gratis videocursus op YouTube, les voor les, met onze gidsen om te lezen en oefeningen om in Glazecalc te doen. In het Engels."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Glazuurberekening onderwijzen",
+      "text": "6 lessen voor een klas of studiegroep, van driehoeksproeven tot de Segerformule in beide richtingen uitgewerkt, met werkbladen om af te drukken."
     }
   },
   "more": "Meer gidsen",
@@ -243,5 +247,20 @@
     "loading": "De bibliotheek wordt geladen…",
     "failed": "De bibliotheek kon niet worden geladen. Probeer het later opnieuw.",
     "choosePrompt": "Kies uw land of regio om te zien wat daar verkrijgbaar is."
+  },
+  "stull": {
+    "title": "Stull-diagram: siliciumoxide tegen aluminiumoxide in de Segerformule",
+    "regions": {
+      "unfused": "ongesmolten",
+      "matte": "mat",
+      "semi-matte": "halfmat",
+      "bright": "glanzend",
+      "underfired": "te laag gestookt",
+      "crazed": "met haarscheuren"
+    },
+    "keyBright": "Stippellijn: waar de glazuren van Stull het glanzendst waren.",
+    "keyCrazed": "Arcering: waar ze haarscheuren kregen.",
+    "note": "Een richtlijn, geen voorspelling. R. T. Stull (Transactions of the American Ceramic Society, 1912) stookte tot ongeveer kegel 11, met de smeltmiddelen vast op 0,3 K₂O en 0,7 CaO; andere smeltmiddelen en andere stoken verschuiven de gebieden, en een glazuur dat alleen mat is omdat het te laag is gestookt, kan toch als glanzend uitkomen. De gebieden zijn zoals Glazy ze tekent.",
+    "inGuide": "Siliciumoxide (SiO₂) horizontaal, van ongeveer 1 tot 7, en aluminiumoxide (Al₂O₃) verticaal, van 0 tot 1, allebei uit de Segerformule. Vanaf links waaieren wiggen uit: ongesmolten linksboven, dan mat, dan halfmat. Het ongearceerde deel rechts daarvan is glanzend, en de stippellijn erin is waar de glazuren van Stull het glanzendst waren. Te laag gestookt ligt rechtsonder, met weinig aluminiumoxide en veel siliciumoxide. De arcering, laag in het diagram en aan de linkerkant, is waar zijn proeven haarscheuren kregen."
   }
 }

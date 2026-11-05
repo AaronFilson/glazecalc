@@ -61,27 +61,29 @@ Le principal danger du plomb est différent : non pas une cuillerée, mais de p
 
 ## Ranger les matières à la maison {#storing-materials}
 
-Aucun organisme officiel ne fixe de règles pour ranger les matières pour émaux{{en: glaze materials}} à la maison, mais les pages consacrées à la santé et à la sécurité s’accordent : faites ce travail dans un espace à part, loin des enfants. Le département de la Santé de Pennsylvanie, à propos des loisirs qui utilisent du plomb, dit : « Utilisez un espace de travail réservé ou un garage pour votre loisir et tenez les enfants à l’écart de cette zone. »
+Aucun organisme officiel ne fixe de règles pour ranger les matières pour émaux à la maison, mais les pages sur la santé et la sécurité s’accordent : gardez ce travail dans son propre espace, loin des enfants. Le département de la santé de Pennsylvanie, à propos des loisirs qui utilisent du plomb, conseille d’« utiliser un espace de travail ou un garage réservé à votre loisir, et d’en tenir les enfants éloignés ».
 
-### Liste de contrôle pour le rangement
+### Une liste de contrôle pour le rangement
 
-Ce sont des règles générales de prévention des intoxications, appliquées à l’émail. Aucune norme céramique ne les fixe, mais nous les suggérons toutes :
+Ce sont des règles générales de prévention des intoxications, appliquées aux émaux. Aucune norme céramique ne les fixe, mais nous vous les suggérons toutes :
 
-- Gardez les matières sèches sous clé : dans une armoire, ou dans une pièce, un garage ou un abri de jardin qui ferme à clé. Une étagère haute aide, mais les enfants grimpent. Si vous ne pouvez mettre que quelques produits sous clé au début, commencez par les matières solubles et les colorants.
-- Gardez les matières dans leurs sacs ou pots d’origine. Si vous en transvasez une dans un autre récipient, étiquetez-le avec le nom exactement tel qu’il est écrit sur le sac.
-- N’utilisez jamais de récipients d’aliments ou de boissons (pots de yaourt, bocaux, bouteilles) pour les matières pour émaux, même étiquetés. Un enfant sait ce que contient un pot de yaourt.
-- Gardez les outils de l’atelier (pelles doseuses, cuillères, fouets, tamis, balances) dans l’atelier. N’utilisez jamais d’ustensiles de cuisine pour l’émail, ni d’outils d’émaillage pour la nourriture.
-- Gardez les bains d’émail dans des seaux étiquetés, couvercle fermé.
+- Gardez les matières sèches sous clé : une armoire, ou une pièce, un garage ou un abri qui ferme à clé. Une étagère haute aide, mais les enfants grimpent. Si vous ne pouvez d’abord mettre sous clé que quelques produits, commencez par les matières solubles et les colorants.
+- Gardez les matières dans leurs sacs ou leurs pots d’origine. Si vous en transvasez une dans un autre récipient, étiquetez-le avec le nom exactement tel qu’il est écrit sur le sac.
+- N’utilisez jamais de récipients alimentaires (pots de yaourt, bocaux, bouteilles) pour les matières pour émaux, même étiquetés. Un enfant sait ce que contient un pot de yaourt.
+- Gardez les outils de l’atelier (cuillères doseuses, cuillères, fouets, tamis, balances) dans l’atelier. N’utilisez jamais d’ustensiles de cuisine pour l’émail, ni d’outils d’émaillage pour la nourriture.
+- Gardez les émaux préparés dans des seaux étiquetés, couvercle fermé.
 - Gardez la fiche de données de sécurité de chaque matière avec elle, sur papier ou sur votre téléphone.
-- Ne gardez rien de l’atelier dans la cuisine : ni sacs, ni seaux, ni outils, ni tessons d’essai{{en: test tiles}}.
+- Ne gardez rien de l’atelier dans la cuisine : ni sacs, ni seaux, ni outils, ni tessons d’essai.
 
-Pour en savoir plus sur l’achat et le rangement des matières, voir [Comment préparer un émail](/guides/making-a-glaze).
+Pour acheter et ranger les matières plus en détail, voyez [Comment préparer un émail](/guides/making-a-glaze).
 
 ### Déchets d’émail et eau de rinçage
 
-Ne versez jamais d’émail, ni l’eau dans laquelle vous avez rincé des outils d’émaillage, dans l’évier ou dans le jardin. Le Crafts Council britannique suggère un seau d’eau à part pour laver les mains, les pinceaux, les tamis et les outils. Laissez-le décanter une nuit, videz l’eau claire, puis faites sécher l’émail déposé et jetez-le à la poubelle (il part en décharge), jamais dans les canalisations.
+Ne versez jamais d’émail, ni l’eau dans laquelle vous avez rincé vos outils d’émaillage, dans l’évier ou dans le jardin. Le Crafts Council britannique conseille un seau d’eau à part pour laver les mains, les pinceaux, les tamis et les outils. Laissez-le reposer une nuit, videz l’eau claire, puis faites sécher l’émail déposé et mettez-le à la poubelle (il part en décharge), jamais dans les canalisations.
 
-Nous suggérons de mettre un couvercle sur ce seau : la boue contient les mêmes métaux que l’émail, et les animaux boivent l’eau stagnante. Les règles d’élimination varient d’un endroit à l’autre : consultez donc la fiche de données de sécurité de chaque produit, et renseignez-vous auprès de votre mairie ou de votre service des eaux en cas de doute.
+Nous vous suggérons un couvercle sur ce seau : la boue contient les mêmes métaux que l’émail, et les animaux boivent l’eau qui stagne. Les règles d’élimination varient d’un endroit à l’autre : vérifiez donc la fiche de données de sécurité de chaque produit, et demandez à votre mairie ou à votre service des eaux en cas de doute.
+
+Certains ateliers cuisent la boue séchée avant de la jeter. Ils la mettent dans un bol sacrifié : après la cuisson, le bol ne peut plus servir. Ne remplissez le bol qu’au quart, car la boue mousse et bouillonne en fondant, et couvrez-le d’une assiette. Posez-le sur une plaque enduite d’engobe pour plaques ou sur une plaque de rebut, au cas où il déborderait. La cuisson transforme la boue en verre, qui retient les métaux bien plus fermement qu’une poudre libre : elle est donc plus sûre en décharge. Manipulez la boue sèche comme de l’émail sec, avec un masque de protection respiratoire et sans faire de poussière.
 
 ## Garder la poussière dans l’atelier {#keeping-dust-in-the-studio}
 

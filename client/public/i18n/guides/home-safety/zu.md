@@ -61,27 +61,29 @@ Ingozi enkulu yomthofu (Pb) ihlukile: akusona isipuni esisodwa, kodwa inani elin
 
 ## Ukugcina okokwakha ekhaya {#storing-materials}
 
-Ayikho inhlangano esemthethweni ebeka imithetho yokugcina okokwakha kwe-glaze{{en: glaze}} ekhaya, kodwa amakhasi ezempilo nokuphepha ayavumelana: gcina umsebenzi endaweni yawo, kude nezingane. Umnyango wezempilo wase-Pennsylvania, ubhala ngemisebenzi yokuzilibazisa esebenzisa umthofu (lead, Pb), uthi "Sebenzisa indawo yokusebenza ekhethiwe noma igaraji ngomsebenzi wakho wokuzilibazisa futhi ugcine izingane kude nale ndawo."
+Ayikho inhlangano esemthethweni ebeka imithetho yokugcina okokwakha kwe-glaze ekhaya, kodwa amakhasi ezempilo nokuphepha ayavumelana: gcina umsebenzi endaweni yawo, kude nezingane. Umnyango wezempilo wase-Pennsylvania, ubhala ngemisebenzi yokuzilibazisa esebenzisa umthofu (lead, Pb), uthi "Sebenzisa indawo yokusebenza ekhethiwe noma igalaji ngomsebenzi wakho wokuzilibazisa futhi ugcine izingane kude nale ndawo."
 
 ### Uhlu lokuhlola lokugcina
 
-Le yimithetho evamile yokuvimbela ushevu esetshenziswa ku-glaze. Alikho izinga lokubumba elibeka yona, kodwa sikweluleka ukuthi uyilandele yonke:
+Le yimithetho evamile yokuvimbela ushevu esetshenziswa ku-glaze. Alikho izinga lobumba elibeka yona, kodwa siphakamisa yonke:
 
-- Gcina okokwakha okomile kukhiyiwe: ekhabetheni, noma egumbini, egaraji noma eshede elikhiywayo. Ishalofu eliphezulu liyasiza, kodwa izingane ziyagibela. Uma ungakwazi ukukhiya izinto ezimbalwa kuphela ekuqaleni, qala ngokokwakha okuncibilikayo nokokufaka umbala.
-- Gcina okokwakha ezikhwameni noma emathini akho okuqala. Uma usisa okukodwa kwesinye isitsha, sibhale ilebula ngegama njengoba libhalwe kanjalo esikhwameni.
-- Ungalokothi usebenzise izitsha zokudla noma zeziphuzo (amathini e-yogurt, izimbiza zengilazi, amabhodlela) zokokwakha kwe-glaze, ngisho noma zinelebula. Ingane iyazi ukuthi ithini le-yogurt liqukethe ini.
-- Gcina amathuluzi e-studio (izikopo, izipuni, ama-whisk, izihlungo, izikali) e-studio. Ungalokothi usebenzise amathuluzi asekhishini ku-glaze, noma amathuluzi e-glaze ekudleni.
-- Gcina ama-glaze amanzi emabhakedeni anelebula avalwe ngeziciko.
-- Gcina ishidi lemininingwane yokuphepha lokokwakha ngakunye nakho, ephepheni noma efonini yakho.
-- Ungagcini lutho lwase-studio ekhishini: azikho izikhwama, amabhakede, amathuluzi noma ama-test tile.
+- Gcina okokwakha okomile kukhiyelwe: ikhabethe, noma igumbi, igalaji noma ishede elikhiywayo. Ishalofu eliphezulu liyasiza, kodwa izingane ziyagibela. Uma ungakhiyela izinto ezimbalwa kuphela ekuqaleni, qala ngokokwakha okuncibilika emanzini nokokufaka umbala.
+- Gcina okokwakha ezikhwameni noma ezitsheni zakho zokuqala. Uma uthutha okukodwa ukufaka kwesinye isitsha, sinamathisele ilebula enegama njengoba libhalwe esikhwameni.
+- Ungalokothi usebenzise izitsha zokudla noma zeziphuzo (izitsha ze-yogathi, izimbiza zengilazi, amabhodlela) zokokwakha kwe-glaze, ngisho noma zinamalebula. Ingane iyazi ukuthi isitsha se-yogathi siqukethe ini.
+- Gcina amathuluzi e-studio (izinkezo zokukha, izinkezo, ama-whisk, izihlungo, izikali) e-studio. Ungalokothi usebenzise amathuluzi asekhishini ku-glaze, noma amathuluzi e-glaze ekudleni.
+- Gcina ama-glaze amanzi emabhakedeni anamalebula, izivalo zivaliwe.
+- Gcina ishidi ledatha yokuphepha (SDS) lokokwakha ngakunye kanye nakho, ephepheni noma efonini yakho.
+- Ungagcini lutho lwe-studio ekhishini: azikho izikhwama, amabhakede, amathuluzi noma ama-test tile.
 
 Ukuze uthole okwengeziwe ngokuthenga nokugcina okokwakha, bheka [Indlela yokwenza i-glaze](/guides/making-a-glaze).
 
-### Imfucuza ye-glaze namanzi okugeza
+### Imfucuza ye-glaze namanzi okuhlambulula
 
-Ungalokothi uthele i-glaze{{en: glaze}}, noma amanzi ogeze kuwo amathuluzi e-glaze, osinkini noma engadini. I-Crafts Council yase-UK iphakamisa ibhakede lamanzi elihlukile lokugeza izandla, amabhulashi, izihlungo namathuluzi. Liyeke lizinze ubusuku bonke, uthele amanzi acwebile, bese womisa i-glaze ezinzile uyifake kudoti (iya endaweni yokulahla udoti), ungalokothi uyithele emseleni.
+Ungalokothi uthele i-glaze, noma amanzi ohlambulule kuwo amathuluzi e-glaze, osinkini noma engadini. I-Crafts Council yase-UK iphakamisa ibhakede elihlukile lamanzi okugeza izandla, amabhulashi, izihlungo namathuluzi. Liyeke lizinze ubusuku bonke, uthele amanzi acwebile angaphezulu, bese womisa i-glaze ezinzile uyifake emgqonyeni kadoti (iya endaweni yokulahla udoti), ungalokothi uyithele emseleni.
 
-Sikweluleka ukuthi lelo bhakede libe nesiciko: udaka luqukethe izinsimbi ezifanayo ne-glaze, futhi izilwane zasekhaya ziphuza amanzi ame ndawonye. Imithetho yokulahla iyahlukahluka ngezindawo, ngakho hlola ishidi lemininingwane yokuphepha lomkhiqizo ngamunye, futhi ubuze umasipala wakho noma inkampani yamanzi uma ungaqiniseki.
+Siphakamisa isivalo kulelo bhakede: udaka luqukethe izinsimbi ezifanayo ne-glaze, futhi izilwane ezifuywayo ziphuza amanzi amile. Imithetho yokulahla iyahluka ngezindawo, ngakho bheka ishidi ledatha yokuphepha lomkhiqizo ngamunye, futhi ubuze umasipala wakho noma inkampani yamanzi uma ungaqiniseki.
+
+Ama-studio athile ashisa udaka olomisiwe ngaphambi kokuthi aluphonse. Alufaka endishini eyengeziwe ezosetshenziswa kuze kuphele: ngemuva kokushiswa leyo ndishi ayisakwazi ukusetshenziswa futhi. Gcwalisa indishi ngekota kuphela, ngoba udaka luyagwebuka futhi luyabhudla lapho luncibilika, futhi uyimboze ngepuleti. Yibeke eshalofini elinokufakwe i-kiln wash noma esicucwini esiyisipele, uma kwenzeka ichichima. Ukushisa kuguqula udaka lube yingilazi, ebamba izinsimbi ngokuqinile kakhulu kunempushana exegayo, ngakho luphephe kakhulu endaweni yokulahla udoti. Phatha udaka olomile njengoba ubungaphatha i-glaze eyomile, ngokugqoka i-respirator nangaphandle kokwenza uthuli.
 
 ## Ukugcina uthuli e-studio {#keeping-dust-in-the-studio}
 

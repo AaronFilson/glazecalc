@@ -83,6 +83,8 @@ Sırrı da, sır aletlerini duruladığınız suyu da asla lavaboya veya bahçey
 
 O kovaya bir kapak öneririz: dipteki çamur sırdaki metallerin aynısını taşır ve evcil hayvanlar durgun su içer. Atma kuralları yerden yere değişir; bu yüzden her ürünün güvenlik bilgi formuna bakın ve emin değilseniz belediyenize veya su idarenize sorun.
 
+Bazı atölyeler kurumuş dip çamurunu (tortuyu) atmadan önce pişirir. Onu gözden çıkarılabilecek yedek bir kaseye koyarlar: pişirimden sonra kase bir daha kullanılamaz. Tortu eridikçe köpürüp kabardığı için kaseyi yalnızca dörtte bir doldurun ve üstünü bir tabakla kapatın. Taşarsa diye onu raf koruyucu sürülmüş bir rafa ya da yedek bir plakaya koyun. Pişirim tortuyu cama dönüştürür; cam metalleri dökme tozdan çok daha sıkı tutar, bu yüzden çöp sahasında daha güvenlidir. Kuru tortuya kuru sırra davrandığınız gibi davranın: solunum koruyucu maske takın ve toz çıkarmayın.
+
 ## Tozun atölyede tutulması {#keeping-dust-in-the-studio}
 
 Pennsylvania’nın sağlık dairesi sorunu açıkça ortaya koyar: “Hobinizden gelen kurşunlu toz giysilerinize, ayakkabılarınıza, saçınıza, cildinize ve kişisel eşyalarınıza yapışabilir ve kolayca aracınıza ve evinizdeki yüzeylere geçer.” ABD Hastalık Kontrol ve Önleme Merkezleri (CDC) de yetişkinlerin “kurşunu farkında olmadan eve getirip ailelerini kurşuna maruz bırakabileceğini” ekler. Pennsylvania’nın kılavuzu çareyi verir:

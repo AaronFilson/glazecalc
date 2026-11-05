@@ -89,16 +89,16 @@ Label: Orton-gúlatáblázat
 | Gúla | Lassú, {{27 °F/h; 15 °C/h}} | Közepes, {{108 °F/h; 60 °C/h}} | Gyors, {{270 °F/h; 150 °C/h}} |
 | ---- | --------------------------: | -----------------------------: | ----------------------------: |
 | 022  |                           – |            {{1087 °F; 586 °C}} |           {{1094 °F; 590 °C}} |
-| 018  |                           – |            {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
-| 015  |                           – |            {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
+| 018  |         {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
+| 015  |         {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
 | 010  |         {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |           {{1679 °F; 915 °C}} |
 | 08   |         {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |           {{1753 °F; 956 °C}} |
-| 07   |                           – |            {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
+| 07   |         {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
 | 06   |         {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |          {{1855 °F; 1013 °C}} |
 | 05   |        {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |          {{1911 °F; 1044 °C}} |
 | 04   |        {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |          {{1971 °F; 1077 °C}} |
 | 03   |        {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |          {{2019 °F; 1104 °C}} |
-| 02   |                           – |           {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
+| 02   |        {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
 | 01   |        {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |          {{2080 °F; 1138 °C}} |
 | 1    |        {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |          {{2109 °F; 1154 °C}} |
 | 4    |        {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |          {{2161 °F; 1183 °C}} |
@@ -460,13 +460,13 @@ A kézi kapcsolású kemencében ugyanezt a tervet kézzel kell követni: lassan
 
 ## Mázas égetés {#glaze}
 
-A mázas égetés{{en: glaze firing}} üveggé olvasztja a mázat{{en: glaze}} a zsengélt árun{{en: bisque}}. A legtöbb kezdő alacsony tüzű mázakat éget 06–04-es gúlára, vagy közepes tüzű mázakat 5–6-os gúlára. Arra a gúlára égessen, amely az agyag és a máz címkéjén szerepel, és használjon e szám köré épített gúlasort{{en: cone pack}}. Arról, hogy mi történik a mázban olvadás közben, a [Mázazás az alapoktól](/guides/glazing-basics) című útmutatóban olvashat.
+A mázas égetés{{en: glaze firing}} üveggé olvasztja a mázat a zsengélt árun. A kereskedelemben kapható alacsony tüzű mázak többsége 06-os vagy 05-ös gúlára készül (az alacsony tüzű sáv a 06–04-es gúla), a közepes tüzű mázak többsége pedig 5–6-os gúlára. Arra a gúlára égessen, amely a máza és a masszája címkéjén szerepel, egy e szám köré összeállított gúlasorral. Hogy mi történik a mázban olvadás közben, azt a [Mázazás az alapoktól](/guides/glazing-basics) című útmutató írja le.
 
 ### Berakás mázas égetéshez
 
-- A mázas darabok nem érhetnek egymáshoz és a kemence falához: hagyjon körülbelül ½ hüvelyk (13 mm) távolságot.
-- A talp maradjon mázatlan (**a talp máztalanítása**), vagy az alacsony tüzű árut állítsa **háromlábakra**, kis, hegyes végű tartókra. A kőagyag{{en: stoneware}} és a porcelán ne álljon háromlábon, mert az ilyen hőmérsékleten belenyomódik az áruba; helyette használjon magas tüzű lapkencét vagy kvarchomokot.
-- Az égetőlapok széle és a kemence fala vagy a Kiln-Sitter között hagyjon legalább 1 hüvelyk (25 mm) helyet.
+- A mázas darabok nem érhetnek egymáshoz és a falhoz: hagyjon körülbelül ½ in (13 mm) helyet.
+- Tartsa mázmentesen a talpat (**a talp máztalanítása**{{en: dry-footing}}), vagy az alacsony tüzű árut tegye **háromlábakra**{{en: stilts}}, vagyis kis, hegyes tartókra. A kőagyagot és a porcelánt nem kellene háromlábakra állítani, mert azok ezen a hőmérsékleten belenyomódnak; használjon helyettük magas tüzű lapkencét vagy kvarchomokot.
+- Hagyjon legalább 1 in (25 mm) helyet az égetőlapok széle és a fal vagy a Kiln-Sitter között.
 
 ### Vezérlős égetési programok
 
@@ -480,8 +480,8 @@ Label: Gyári mázégető programok
 | 3                           |                                   A csúcs |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
 | Felfűtési idő, üres kemence |                                           |   Körülbelül 6½–7½ óra |     Körülbelül 3–4 óra |
 
-Table: Hol ér véget a 2. és a 3. szegmens, gúlánként (L&L és Bartlett)
-Label: Gyári célértékek
+Table: A 2. és a 3. szegmens végpontja gúlánként (L&L és Bartlett)
+Label: A gyári programok célértékei
 
 | Gúla |   A 2. szegmens vége |                Csúcs |
 | ---- | -------------------: | -------------------: |
@@ -489,42 +489,42 @@ Label: Gyári célértékek
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Az L&L gyors égetésre vonatkozó figyelmeztetése miatt a Slow Glaze a biztonságosabb alapválasztás. Ha a csúcson 5–10 percnél hosszabb hőntartást{{en: hold}} iktat be, az L&L azt tanácsolja, hogy ennek megfelelően csökkentse a célhőmérsékletet vagy a gúlakorrekciót, és megjegyzi: „A magas hőmérsékleten végzett hőntartás gyorsítja a fűtőszálak és a hőelem kopását.”
+A Slow Glaze a biztonságosabb alapbeállítás, tekintve, hogy az L&L óv a gyors égetéstől. Ha a csúcson 5–10 percnél hosszabb hőntartást iktat be, az L&L szerint ennek megfelelően csökkenteni kell a célhőmérsékletet vagy a gúlakorrekciót, és megjegyzi: „A magas hőmérsékleten tartott hőntartás felgyorsítja a fűtőszálak és a hőelem kopását.”
 
 ### 6-os gúla: visszahűtés és hőntartás
 
-A közepes tüzű mázakon néha **tűszúrások**{{en: pinholes}} (apró lyukak a felületen) vagy hólyagok maradnak, amelyeket az olvadékból kibuborékoló gáz hagy maga után. A **visszahűtés és hőntartás**{{en: drop-and-hold}} típusú program felfűt a csúcsig, gyorsan visszahűt körülbelül {{100 °F; 56 °C}} értékkel, és ott tart. A Digitalfire szavaival: „A 100°F-os visszahűtés és a hőntartás elég viszkozitást ad az olvadéknak ahhoz, hogy a buborékok kipukkadjanak, és közben mégis begyógyulhassanak.”
+A közepes tüzű mázakon néha **tűszúrások**{{en: pinholes}} (apró lyukak a felületen) vagy hólyagok maradnak, amelyeket az olvadékból kibugyogó gáz hagy. A **visszahűtés és hőntartás**{{en: drop-and-hold}} programja a csúcsig fűt, gyorsan körülbelül {{100 °F; 56 °C}} értékkel visszahűt, és ott hőn tart. A Digitalfire szavaival: „A 100 °F-os visszahűtés és a hőntartás elég viszkózussá teszi az olvadékot ahhoz, hogy a buborékok kipukkadjanak, de még hagyja, hogy a helyük begyógyuljon.”
 
-Table: Digitalfire PLC6DS, visszahűtés és hőntartás 6-os gúlán
+Table: Digitalfire PLC6DS, 6-os gúla, visszahűtés és hőntartás
 Label: Digitalfire PLC6DS
 
-| Lépés |                                 Sebesség |                  Cél | Hőntartás                                          |
-| ----- | ---------------------------------------: | -------------------: | -------------------------------------------------- |
-| 1     |                    {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 perc                                            |
-| 2     |                   {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Választható 30 perc, a buborékfelhők eltüntetésére |
-| 3     |                    {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 perc; nagy kemencékben hosszabb                 |
-| 4     | Hűtés {{900 °F/h; 500 °C/h}} sebességgel | {{2100 °F; 1148 °C}} | 30 perc                                            |
+| Lépés |                                   Sebesség |                  Cél | Hőntartás                                            |
+| ----- | -----------------------------------------: | -------------------: | ---------------------------------------------------- |
+| 1     |                      {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 perc                                              |
+| 2     |                     {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Választhatóan 30 perc, a buborékfelhők eltüntetésére |
+| 3     |                      {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 perc; nagy kemencékben hosszabb                   |
+| 4     | Lefelé, {{900 °F/h; 500 °C/h}} sebességgel | {{2100 °F; 1148 °C}} | 30 perc                                              |
 
-A PLC6DS körülbelül 9 óra 36 percig tart. Hígfolyósabb mázaknál a Digitalfire ehelyett körülbelül {{200 °F; 111 °C}} értékkel hűt vissza; a túl nagy visszahűtés „a hőntartás alatt kristályosodás kockázatával jár”. A program {{2200 °F; 1204 °C}} csúcshőmérséklete alacsonyabb, mint a táblázatban a 6-os gúlához tartozó {{2232 °F; 1222 °C}}; a Digitalfire beszámolója szerint a legtöbb kemence körülbelül {{2200 °F; 1204 °C}} hőmérsékleten éri el a 6-os gúlát. Ellenőrizze egy gúlasorral a saját kemencéjében.
+A PLC6DS körülbelül 9 óra 36 percig tart. Hígfolyósabb mázaknál a Digitalfire inkább körülbelül {{200 °F; 111 °C}} értékkel hűt vissza; a túl nagy visszahűtés „a hőntartás alatt kristályosodás veszélyével jár”. A {{2200 °F; 1204 °C}} csúcsa alacsonyabb, mint a táblázat {{2232 °F; 1222 °C}} értéke a 6-os gúlához; a Digitalfire szerint a legtöbb kemence körülbelül {{2200 °F; 1204 °C}} hőmérsékleten éri el a 6-os gúlát. Ellenőrizze gúlasorral a saját kemencéjében.
 
-### Lassú hűtés
+### Szabályozott hűtés
 
-A **szabályozott hűtés** (lassú hűtés) azt jelenti, hogy a vezérlő beállított sebességgel hűti a kemencét, ahelyett, hogy hagyná szabadon hűlni. A Digitalfire C6DHSC programja a PLC6DS, amelyet {{150 °F/h; 83 °C/h}} sebességű hűtés követ {{2100 °F; 1148 °C}} hőmérsékletről {{1400 °F; 760 °C}} hőmérsékletig, majd kikapcsolás. „Javítja a fényességet és a felület minőségét”, és jót tesz a rutilos kék mázaknak, a lassú hűtés azonban „növelheti a mattságot” (egy matt máz felülete száraz lett tőle), és megrövidítheti a kemence reléinek élettartamát. Az L&L is szállít lassú hűtési programot a 6-os gúlához:
+A **szabályozott hűtés**{{en: slow cooling}} azt jelenti, hogy a vezérlő beállított sebességgel hűti a kemencét, ahelyett hogy szabadon hagyná hűlni. A Digitalfire C6DHSC programja a PLC6DS, amelyet {{150 °F/h; 83 °C/h}} sebességű hűtés követ {{2100 °F; 1148 °C}} értéktől {{1400 °F; 760 °C}} értékig, majd kikapcsolás. „Javítja a fényességet és a felület minőségét”, és segít a rutilkékeknél, de a lassú hűtés „fokozhatja a mattságot” (egy matt máz száraz lett), és megrövidítheti a kemence reléinek élettartamát. Az L&L is ad egy szabályozott hűtésű programot a 6-os gúlához:
 
-Table: L&L „User 6”: lassú hűtés 6-os gúlás mázakhoz
-Label: L és L lassú hűtés
+Table: Az L&L „User 6” programja: szabályozott hűtés 6-os gúlás mázakhoz
+Label: L&L szabályozott hűtés
 
-| Lépés |                                Sebesség |                  Cél |
-| ----- | --------------------------------------: | -------------------: |
-| 1     |             Felfűtés teljes sebességgel | {{2232 °F; 1222 °C}} |
-| 2     |                Hűtés teljes sebességgel | {{1900 °F; 1038 °C}} |
-| 3     | Hűtés {{150 °F/h; 83 °C/h}} sebességgel |  {{1500 °F; 816 °C}} |
+| Lépés |                                  Sebesség |                  Cél |
+| ----- | ----------------------------------------: | -------------------: |
+| 1     |                    Teljes sebességgel fel | {{2232 °F; 1222 °C}} |
+| 2     |                     Teljes sebességgel le | {{1900 °F; 1038 °C}} |
+| 3     | Lefelé, {{150 °F/h; 83 °C/h}} sebességgel |  {{1500 °F; 816 °C}} |
 
-A Skutt vezérlői szintén kínálnak előmelegítést és egylépéses hűtési lehetőséget.
+A Skutt vezérlői ugyanígy kínálnak előmelegítést és egylépéses hűtési lehetőséget.
 
 ### Kézi kapcsolású kemencében
 
-Kézi kapcsolású kemencével ezeket a programokat nem lehet pontosan követni, de a terv ugyanaz: eleinte óvatosan, középen egyenletesen, a végén pedig figyelve. A Bracker’s alacsony tüzű mázégető programja lent, a Kézi kapcsolású kemencék részletesen című részben található; magasabb hőfokú gúlákhoz „gúlaszámonként átlagosan 15–30 percet” tesz hozzá. Pirométerrel, gyakorlattal és égetési naplóval a visszahűtést és hőntartást vagy a lassú hűtést is nagyjából utánozhatja, ha a kapcsolókat kézzel állítja lejjebb, ahogy a Digitalfire javasolja.
+A kézi kapcsolású kemence nem tudja pontosan követni ezeket a programokat, de a terv ugyanaz: eleinte óvatosan, középen egyenletesen, a végén figyelve. A Bracker’s alacsony tüzű mázégető programja lent, a Kézi kapcsolású kemencék részletesen című részben található; magasabb gúlákhoz „gúlaszámonként átlagosan 15–30 percet” tesz hozzá. Pirométerrel, gyakorlattal és naplóval a visszahűtést és hőntartást vagy a szabályozott hűtést nagyjából utánozhatja a kapcsolók kézi visszaállításával, ahogy a Digitalfire javasolja.
 
 ## Kézi kapcsolású kemencék részletesen {#manual-kilns}
 

@@ -1,15 +1,23 @@
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, ActivatedRouteSnapshot, convertToParamMap, provideRouter } from '@angular/router';
+import { ActivatedRoute, ActivatedRouteSnapshot, Router, convertToParamMap, provideRouter } from '@angular/router';
 import { TranslocoService } from '@jsverse/transloco';
 import { of } from 'rxjs';
 import { textKey } from '../../../../lib/regions/languages';
 import { ORTON, SK } from '../../../../lib/cones';
+import { AuthService } from '../../core/auth.service';
+import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { useCodedMessages } from '../../i18n/coded';
 import { PAGE_LANGUAGE } from '../../i18n/language';
-import { skippedHeadings, testProviders } from '../../testing/test-providers';
+import { httpMock, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { ConesPage } from './cones-page';
 import { MaterialInfoPage, analysisOf, hasFlux } from './material-info-page';
-import { knownMaterial, materialDescriptionKey, materialOf, materialTitleParams } from './material-route';
+import {
+  knownMaterial,
+  materialDescriptionKey,
+  materialOf,
+  materialTitleParams,
+  materialWords
+} from './material-route';
 import { MaterialsPage } from './materials-page';
 import { REFERENCE_LANGUAGE_LIST } from './reference-text';
 import { STANDARD_MATERIALS, materialBySlug, materialNamed, materialPath, materialSlug } from './standard-materials';
@@ -70,6 +78,27 @@ describe("a standard material's route", () => {
     expect(await matches([{ path: 'materials' }, { path: 'silica' }])).toBe(true);
     expect(await matches([{ path: 'materials' }, { path: 'nope' }])).toBe(false);
     expect(await matches([{ path: 'materials' }])).toBe(false);
+  });
+
+  it("loads only this material's words in a translated language, as materials.<key>, and none in English", async () => {
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: REFERENCE_LANGUAGE_LIST, useValue: ['en', 'de'] }]
+    });
+    const transloco = TestBed.inject(TranslocoService);
+    const run = () =>
+      TestBed.runInInjectionContext(() =>
+        (materialWords as (r: ActivatedRouteSnapshot, s: never) => Promise<boolean>)(route('silica'), {} as never)
+      );
+    expect(await run()).toBe(true);
+    httpMock().expectNone(() => true);
+    transloco.setActiveLang('de');
+    const done = run();
+    await Promise.resolve();
+    httpMock().expectOne('/i18n/materials/de/silica.json').flush({ 'silica-abc': 'Quarzmehl' });
+    expect(await done).toBe(true);
+    expect(transloco.getTranslation('de')['materials.silica-abc']).toBe('Quarzmehl');
+    transloco.setActiveLang('en');
   });
 
   it("gives the title and description the material's name, the longer description to a short name", async () => {
@@ -240,6 +269,86 @@ describe('the page of a standard material', () => {
       expect(page.querySelector('#hazards')?.closest('section')?.textContent).toContain(frit.hazards!);
       expect(page.querySelector('[lang="en"]')).toBeNull();
     });
+  });
+
+  describe('its buttons, for a visitor who comes from a search', () => {
+    /** The page with the visitor signed in or not; the trial and the move to the recipe page are watched. */
+    const opened = async (session: boolean, trialFails = false) => {
+      const { fixture, page } = await render('Silica');
+      const auth = TestBed.inject(AuthService);
+      vi.spyOn(auth, 'whenChecked').mockResolvedValue(undefined as never);
+      vi.spyOn(auth, 'hasSession').mockReturnValue(session);
+      const startTrial = vi
+        .spyOn(auth, 'startTrial')
+        .mockImplementation(() => (trialFails ? Promise.reject(new Error('down')) : Promise.resolve()));
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      return { fixture, page, startTrial, navigate };
+    };
+    const click = async (page: HTMLElement, init: MouseEventInit = {}) => {
+      const event = new MouseEvent('click', { bubbles: true, cancelable: true, button: 0, ...init });
+      page.querySelector<HTMLAnchorElement>('#material-try')!.dispatchEvent(event);
+      await new Promise((resolve) => setTimeout(resolve));
+      return event;
+    };
+
+    it('opens a new recipe with the material in it, starting a trial without asking when not signed in', async () => {
+      const { page, startTrial, navigate } = await opened(false);
+      expect(page.querySelector('#material-try')?.getAttribute('href')).toBe('/recipe');
+      const event = await click(page);
+      expect(event.defaultPrevented).toBe(true);
+      expect(startTrial).toHaveBeenCalledTimes(1);
+      expect(navigate).toHaveBeenCalledWith('/recipe');
+      const recipe = TestBed.inject(PendingRecipeService).take()!;
+      expect(recipe.title).toBe('Silica');
+      expect(recipe.materials).toEqual([expect.objectContaining({ name: 'Silica', amount: '', ownedBy: 'Standard' })]);
+    });
+
+    it('starts no trial for someone signed in, and still opens the recipe when a trial cannot start', async () => {
+      const signedIn = await opened(true);
+      await click(signedIn.page);
+      expect(signedIn.startTrial).not.toHaveBeenCalled();
+      expect(signedIn.navigate).toHaveBeenCalledWith('/recipe');
+      const failing = await opened(false, true);
+      await click(failing.page);
+      // The recipe page's guard asks for a sign-in, with the recipe waiting.
+      expect(failing.navigate).toHaveBeenCalledWith('/recipe');
+      expect(TestBed.inject(PendingRecipeService).take()?.materials?.[0]?.name).toBe('Silica');
+    });
+
+    it('leaves a click for a new tab to the link', async () => {
+      const { page, startTrial, navigate } = await opened(false);
+      const event = await click(page, { ctrlKey: true });
+      expect(event.defaultPrevented).toBe(false);
+      expect(startTrial).not.toHaveBeenCalled();
+      expect(navigate).not.toHaveBeenCalled();
+    });
+
+    it('offers to sign up below it, coming back to this page, and links the guides for a beginner', async () => {
+      const { page } = await render('Silica');
+      const signup = page.querySelector<HTMLAnchorElement>('#material-signup')!;
+      expect(signup.textContent?.trim()).toBe('Create a free account');
+      expect(signup.getAttribute('href')).toBe('/signup?next=%2Fmaterials%2Fsilica');
+      const use = page.querySelector('#use')!.closest('section')!;
+      expect(
+        [...use.querySelectorAll('.guide-links a')].map((a) => [a.getAttribute('href'), a.textContent?.trim()])
+      ).toEqual([
+        ['/guides/glazing-basics', 'Glazing from first principles'],
+        ['/guides/making-a-glaze', 'How to make a glaze']
+      ]);
+    });
+  });
+
+  it('writes its data for search engines in its own language where translated: a web page and its trail', async () => {
+    await render('Silica', 'de', ['en', 'de']);
+    const german = JSON.parse(document.head.querySelector('script[type="application/ld+json"]')!.textContent!);
+    expect(german['@graph'][0]).toMatchObject({
+      inLanguage: 'de',
+      url: 'https://glazecalcapp.com/de/materials/silica'
+    });
+    expect(german['@graph'][1].itemListElement[0].item).toBe('https://glazecalcapp.com/de/');
+    await render('Silica', 'de', ['en']);
+    const english = JSON.parse(document.head.querySelector('script[type="application/ld+json"]')!.textContent!);
+    expect(english['@graph'][0]).toMatchObject({ inLanguage: 'en', url: 'https://glazecalcapp.com/materials/silica' });
   });
 
   it('writes its data for search engines: a web page and its trail', async () => {

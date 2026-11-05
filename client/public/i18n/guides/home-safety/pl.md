@@ -83,6 +83,8 @@ Nigdy nie należy wylewać szkliwa ani wody, w której płukano narzędzia do sz
 
 Proponujemy przykrywać to wiadro pokrywą: osad zawiera te same metale co szkliwo, a zwierzęta piją stojącą wodę. Zasady pozbywania się odpadów różnią się w zależności od miejsca, dlatego należy sprawdzić kartę charakterystyki każdego produktu, a w razie wątpliwości zapytać w urzędzie gminy lub w lokalnym przedsiębiorstwie wodociągowym.
 
+Niektóre pracownie wypalają wysuszony osad, zanim go wyrzucą. Wkładają go do niepotrzebnej miski, którą się poświęca: po wypale miski nie można już używać. Miskę należy napełnić tylko do jednej czwartej, bo osad pieni się i bulgocze, gdy się topi, i przykryć ją talerzem. Należy ją postawić na płycie pokrytej pobiałką albo na niepotrzebnej płytce, na wypadek gdyby osad się przelał. Wypał zamienia osad w szkło, które wiąże metale znacznie mocniej niż luźny proszek, więc na składowisku jest bezpieczniejsze. Z suchym osadem należy obchodzić się tak jak z suchym szkliwem: w półmasce filtrującej i bez wzbijania pyłu.
+
 ## Zatrzymywanie pyłu w pracowni {#keeping-dust-in-the-studio}
 
 Departament zdrowia stanu Pensylwania opisuje problem wprost: „Pył zanieczyszczony ołowiem z hobby może przyczepiać się do ubrań, butów, włosów, skóry i rzeczy osobistych, a następnie łatwo przenosić się do samochodu i na powierzchnie w domu”. CDC dodaje, że dorośli „mogą przynosić ołów do domu i nieświadomie narażać na niego swoje rodziny”. Wytyczne z Pensylwanii podają, jak temu zaradzić:

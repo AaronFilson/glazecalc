@@ -83,6 +83,8 @@ Non versare mai lo smalto, né l’acqua in cui si sono sciacquati gli attrezzi 
 
 Suggeriamo un coperchio su quel secchio: il fango sul fondo contiene gli stessi metalli dello smalto e gli animali domestici bevono l’acqua stagnante. Le regole di smaltimento cambiano da luogo a luogo, quindi controllare la scheda di dati di sicurezza di ogni prodotto e, in caso di dubbio, chiedere al proprio comune o al gestore del servizio idrico.
 
+Alcuni laboratori cuociono il fango secco prima di buttarlo via. Lo mettono in una ciotola di scarto destinata a essere sacrificata: dopo la cottura la ciotola non si può più usare. Riempire la ciotola solo per un quarto, perché il fango schiuma e fa bolle mentre fonde, e coprirla con un piatto. Appoggiarla su una piastra trattata con il protettivo per piastre o su una lastra di scarto, nel caso trabocchi. La cottura trasforma il fango in vetro, che trattiene i metalli molto più saldamente della polvere sciolta, quindi è più sicuro in discarica. Maneggiare il fango secco come lo smalto secco, con una maschera filtrante e senza sollevare polvere.
+
 ## Tenere la polvere nel laboratorio {#keeping-dust-in-the-studio}
 
 Il dipartimento della salute della Pennsylvania descrive il problema senza giri di parole: «La polvere contaminata dal piombo prodotta dall’hobby può attaccarsi a vestiti, scarpe, capelli, pelle e oggetti personali e passare facilmente nell’auto e sulle superfici di casa». Il CDC aggiunge che gli adulti «possono portare a casa il piombo ed esporre al piombo le loro famiglie senza saperlo». Le indicazioni della Pennsylvania danno il rimedio:

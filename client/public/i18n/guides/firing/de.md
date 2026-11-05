@@ -89,16 +89,16 @@ Label: Orton-Kegeltabelle
 | Kegel | Langsam, {{27 °F/h; 15 °C/h}} | Mittel, {{108 °F/h; 60 °C/h}} | Schnell, {{270 °F/h; 150 °C/h}} |
 | ----- | ----------------------------: | ----------------------------: | ------------------------------: |
 | 022   |                             – |           {{1087 °F; 586 °C}} |             {{1094 °F; 590 °C}} |
-| 018   |                             – |           {{1319 °F; 715 °C}} |             {{1353 °F; 734 °C}} |
-| 015   |                             – |           {{1456 °F; 791 °C}} |             {{1504 °F; 818 °C}} |
+| 018   |           {{1267 °F; 686 °C}} |           {{1319 °F; 715 °C}} |             {{1353 °F; 734 °C}} |
+| 015   |           {{1382 °F; 750 °C}} |           {{1456 °F; 791 °C}} |             {{1504 °F; 818 °C}} |
 | 010   |           {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |             {{1679 °F; 915 °C}} |
 | 08    |           {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |             {{1753 °F; 956 °C}} |
-| 07    |                             – |           {{1789 °F; 976 °C}} |             {{1809 °F; 987 °C}} |
+| 07    |           {{1764 °F; 962 °C}} |           {{1789 °F; 976 °C}} |             {{1809 °F; 987 °C}} |
 | 06    |           {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |            {{1855 °F; 1013 °C}} |
 | 05    |          {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |            {{1911 °F; 1044 °C}} |
 | 04    |          {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |            {{1971 °F; 1077 °C}} |
 | 03    |          {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |            {{2019 °F; 1104 °C}} |
-| 02    |                             – |          {{2016 °F; 1102 °C}} |            {{2052 °F; 1122 °C}} |
+| 02    |          {{1972 °F; 1078 °C}} |          {{2016 °F; 1102 °C}} |            {{2052 °F; 1122 °C}} |
 | 01    |          {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |            {{2080 °F; 1138 °C}} |
 | 1     |          {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |            {{2109 °F; 1154 °C}} |
 | 4     |          {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |            {{2161 °F; 1183 °C}} |
@@ -460,7 +460,7 @@ Ein handgeschalteter Ofen folgt demselben Plan von Hand: Sie trocknen langsam be
 
 ## Glasurbrand {#glaze}
 
-Der Glasurbrand{{en: glaze firing}} schmilzt die Glasur{{en: glaze}} auf dem geschrühten Scherben zu Glas. Wer anfängt, brennt meist niedrig brennende Glasuren auf Kegel{{en: cone}} 06–04 oder Glasuren für den mittleren Brennbereich auf Kegel 5–6. Brennen Sie auf den Kegel, der auf den Etiketten Ihrer Tonmasse und Ihrer Glasur steht, mit einem Kegelsatz{{en: cone pack}} rund um diese Nummer. Was in der Glasur beim Schmelzen geschieht, lesen Sie in [Glasieren von Grund auf](/guides/glazing-basics).
+Der Glasurbrand{{en: glaze firing}} schmilzt die Glasur{{en: glaze}} auf dem geschrühten Scherben zu Glas. Die meisten niedrig brennenden Glasuren im Handel sind für Kegel{{en: cone}} 06 oder 05 gemacht (der niedrige Brennbereich reicht von Kegel 06 bis 04), die meisten Glasuren für den mittleren Brennbereich für Kegel 5–6. Brennen Sie auf den Kegel, der auf den Etiketten Ihrer Glasur und Ihrer Tonmasse steht, mit einem Kegelsatz{{en: cone pack}} rund um diese Nummer. Was in der Glasur beim Schmelzen geschieht, lesen Sie in [Glasieren von Grund auf](/guides/glazing-basics).
 
 ### Einräumen für den Glasurbrand
 

@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "John Brittpa mana qullqiyuq esmalte yachachiyninwan yachay",
       "text": "Paypa mana qullqiyuq video yachachiynin YouTube-pi, unidadmanta unidadkama, ñawinchanapaq yachachiyniykuwan, Glazecalc-pi pruebanapaq ejerciciokunawan. Inglés simipi."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Esmalte yupay yachachiy",
+      "text": "6 yachachiykuna huk aulapaq utaq yachaq huñupaq, triaxial probetakunamanta UMF-kama iskaynin ñanpi rurasqa, imprimina llamk'ana p'anqakunawan."
     }
   },
   "more": "Astawan yachachiykuna",
@@ -243,5 +247,20 @@
     "loading": "Qillqa wasita cargachkhan…",
     "failed": "Qillqa wasiqa mana apamuyta atikurqanchu. Qhipaman yapamanta pruebay.",
     "choosePrompt": "Suyuykita utaq regiónniykita akllay, chaypi ima rantikusqanta qhawanaykipaq."
+  },
+  "stull": {
+    "title": "Stull gráfico: fórmula unitariapi sílice alúminawan",
+    "regions": {
+      "unfused": "mana chullusqa",
+      "matte": "mate",
+      "semi-matte": "kuskan mate",
+      "bright": "k'anchaq",
+      "underfired": "mana chayanankama ruphachisqa",
+      "crazed": "cuarteado"
+    },
+    "keyBright": "Puntukunayuq siq'i: Stullpa esmaltenkuna aswan k'anchaq kasqanku.",
+    "keyCrazed": "Chimpasqa siq'ikuna: cuarteadota rurasqanku.",
+    "note": "Pusaqmi, manam ñawpaqmanta willaychu. R. T. Stull (Transactions of the American Ceramic Society, 1912) yaqa cono 11-pi ruphachirqan fundentekunata 0.3 K₂O, 0.7 CaO-pi takyachispa; huk fundentekuna huk ruphachiykunapas suyukunata kuyuchinku, mana allin ruphachisqa kaspalla mana lliphiq (mate) esmalteqa lliphiq hinam chay gráficopi rikhuriyta atin. Suyukunaqa Glazy siq'isqan hinam.",
+    "inGuide": "Sílice (SiO₂) kinrayninpi, yaqa 1-manta 7-kama, alúmina (Al₂O₃) hanaqman, 0-manta 1-kama, iskayninku UMF-manta. Lluq'imanta k'uchu hina t'aqakuna kicharikun: mana chullusqa hanaq lluq'ipi, chaymanta mana lliphiq, chaymanta kuskan mana lliphiq. Paña ladonkupi mana llanthuyuq t'aqaqa lliphiqmi, chaypi ch'iqchi siq'itaq Stullpa esmaltenkuna aswan lliphisqanmi. Mana allin ruphachisqaqa uray pañapim, pisi alúminayuq achka sílicewan. Chakanasqa siq'ikuna, gráficop uraynin lluq'i ladonpipas, Stullpa pruebankuna cuarteado (huch'uy p'akisqakuna) kasqanmi."
   }
 }

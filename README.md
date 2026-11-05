@@ -62,7 +62,13 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
 - **Guides for new potters,** sourced: glazing from first principles with a glossary, how to make
   a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
   basic kiln with cones, kiln sitters and manual switches; and, in English, a companion to John
-  Britt's free online Glaze Course that links his videos unit by unit with exercises to try.
+  Britt's free online Glaze Course that links his videos unit by unit with exercises to try; and,
+  in English and Japanese, a six-session pack for teaching glaze calculation.
+- **Famous glazes,** each a public page with its traditional recipe or historic analysis and a
+  version from the materials sold where you live (İznik first, as history, with a lead-free
+  version not yet test-fired).
+- **Specific gravity and water,** with the dry materials' SG estimated from the recipe (or typed,
+  or measured as the making-a-glaze guide shows).
 - **Lead off unless you choose it,** and old lead glazes rebuilt without it: Replace lead keeps
   the glaze's silica and alumina and gives lead's work to boron and other fluxes, on a lead-free
   base frit sold in your region with up to four other materials chosen for it, or keeps the
@@ -84,8 +90,8 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
 
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
-- **A standard library of 167 materials and 37 colorants and additives,** from manufacturers'
-  data sheets, for the US, UK, EU, Australia and New Zealand, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
+- **A standard library of 182 materials and 37 colorants and additives,** from manufacturers'
+  data sheets (and, for ashes and historical native materials, published research), for the US, UK, EU, Australia, New Zealand and the other regions, each with its source and other names, and hazards where the data sheet gives them, each with its own public page in every language. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
   formula or leave them out, to compare with other calculators.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and
@@ -142,7 +148,8 @@ For anyone reading the code:
 - **Works offline once visited:** Angular's service worker keeps the app, and the app keeps the
   reader's language and the guides in Cache Storage ([ADR 28](docs/adr/0028-service-worker.md)).
 - **Public pages prerendered** in every language at build and hydrated in place, with hreflang and
-  a sitemap per language ([ADR 16](docs/adr/0016-prerendered-public-pages.md)).
+  a sitemap per language under one index, about 11,457 pages, each reply compressed in Node with a
+  fresh nonce ([ADR 16](docs/adr/0016-prerendered-public-pages.md)).
 - **Trials as real accounts:** a generated name, a placeholder email on the reserved `.invalid`
   domain so every email stays unique, conversion to an account in place (or into an existing
   account at sign-in), limits against abuse,

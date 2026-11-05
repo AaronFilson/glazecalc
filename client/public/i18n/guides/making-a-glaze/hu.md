@@ -121,129 +121,150 @@ Derek Au egyetlen tálba mér, külön kupacokba, így egy tévedést ki lehet m
 
 ## Keverés és szitálás {#mixing}
 
-### Mennyi víz kell?
+### Mennyi víz kell
 
-A források eltérnek. Derek Au sűrűn kezdi, 100 g porhoz 50 mL vízzel, és később ad hozzá többet. A Potterycrafts az egyik pormázához 100 g-onként 65 mL vizet ad meg. Az UT Austin azonos tömegű vizet és port használ, és amikor a Digitalfire 20 kg port tett 20 kg vízbe, 1,46-os fajsúlyt{{en: specific gravity}} mért.
+A források eltérnek. Derek Au sűrűn kezd, 100 g porhoz 50 mL vízzel, és később ad hozzá még. A Potterycrafts egy pormázhoz 100 g-onként 65 mL-t ad meg. A UT Austin azonos tömegű vizet és port használ, és amikor a Digitalfire 20 kg port tett 20 kg vízbe, 1,46-os fajsúlyt mért.
 
-Vizet gyorsan lehet hozzáadni, elvonni viszont lassú, ezért kevesebbel kezdje. A mi becslésünk: kezdje **100 g-onként kb. 70–80 mL vízzel** (kilogrammonként 700–800 mL, vagyis fontonként kb. 11–12 US fl oz). Ennél a sűrűségnél áztassa be, keverje ki és szitálja át, majd apránként adjon hozzá vizet, amíg a fajsúly megfelelő nem lesz. 1 mL víz tömege 1 g, így a vizet le is mérheti. Ha túl sokat adott hozzá, hagyja leülepedni a mázat{{en: glaze}}, majd szivaccsal szedje le vagy öntse le a tetejéről a tiszta vizet.
+A vizet gyorsan hozzá lehet adni, de lassan lehet kivenni, ezért kevéssel kezdjen. A mi becslésünk: kezdjen **100 g-onként körülbelül 70–80 mL vízzel** (kilogrammonként 700–800 mL, vagy fontonként körülbelül 11–12 amerikai folyadékuncia). Ebben a sűrűségben áztassa be, keverje és szitálja, aztán apránként adjon hozzá vizet, amíg a fajsúly megfelelő nem lesz. 1 mL víz 1 g, így a vizet le is mérheti. Ha túllő a célon, hagyja leülepedni a mázat, aztán szivaccsal itassa fel vagy öntse le a tetejéről a tiszta vizet.
 
 ### Eszközök és víz
 
-- **Propelleres keverő.** A Digitalfire szerint egy jó propelleres keverő „nélkülözhetetlen”. Vödörben egy vezetékes fúrógép keverőszárral elvégzi a munkát. Az UT Austin legalább 4–5 percig járatja még azután is, hogy a máz már elkevertnek látszik, és ügyel rá, hogy a lapát ne érjen a vödörhöz, mert műanyagot kaparhat le róla.
-- **Turmixgép.** A Digitalfire szerint „kis adagokhoz rendkívül jól működik”. Csak mázhoz használja: soha nem kerülhet vissza a konyhába.
-- **Habverő vagy bot.** Zakin ezt használja, ha nincs keverőgép.
+- **Propelleres keverő.** A Digitalfire egy jót „nélkülözhetetlennek” nevez. Egy vezetékes fúrógép keverőszárral elvégzi a munkát a vödörben. A UT Austin legalább 4–5 percig járatja azután is, hogy a máz összekevertnek látszik, és a keverőlapátot távol tartja a vödör falától, mert lekaparhatja róla a műanyagot.
+- **Turmixgép.** „Kis adagokhoz rendkívül jól működik” (Digitalfire). Csak mázhoz használja: soha nem kerülhet vissza a konyhába.
+- **Habverő vagy keverőbot.** Zakin választása, ha nincs keverő.
 
-A víz is változó, és a Digitalfire megjegyzi, hogy befolyásolja a máziszap{{en: slurry}} viselkedését. Derek Au fordított ozmózissal tisztított vizet használ, mert kemény a csapvize. Bármit használ, jegyezze fel.
+A víz is változó, és a Digitalfire megjegyzi, hogy megváltoztatja a máziszap viselkedését. Derek Au fordított ozmózissal tisztított vizet használ, mert a csapvize kemény. Bármit használ is, jegyezze fel.
 
 ### Lépésről lépésre
 
-1. Vegye fel a légzésvédő maszkot, és gumikesztyűt is, ha a keze belekerül a mázba. Zakin a bemérés kezdetétől addig visel maszkot, amíg a máz nedves nem lesz.
-2. Mérjen a vödörbe 100 g poronként kb. 70–80 mL vizet.
-3. A lemért port óvatosan, kis magasságból adja hozzá. Az UT Austin a port meleg vízbe szórja; Zakin és Au a porhoz önti a vizet. Mi azt javasoljuk, hogy a port szórja a vízbe, mert így kevesebb por száll fel, kivéve, ha a recept sok bentonitot tartalmaz: ilyenkor előbb keverje össze a száraz porokat.
-4. **Áztassa be**: hagyja, hogy a por keverés nélkül beázzon. A Digitalfire kb. 20 percet vár. A mázragasztót vagy kötőanyagot tartalmazó porokat egy éjszakára állni kell hagyni.
-5. Keverje addig, amíg nem marad benne száraz rész vagy csomó.
+1. Vegye fel a légzésvédő maszkot, és gumikesztyűt is, ha a keze a mázba kerül. Zakin a méréstől kezdve maszkot visel, amíg a máz nedves nem lesz.
+2. Mérjen a vödörbe 100 g porhoz körülbelül 70–80 mL vizet.
+3. A lemért port óvatosan, alacsonyról adja hozzá. A UT Austin a port meleg vízbe szórja; Zakin és Au a vizet önti a porra. Mi azt javasoljuk, hogy a port szórja a vízbe, mert így kevesebb por száll fel, kivéve a sok bentonitot tartalmazó recepteknél: azok száraz porait előbb keverje össze.
+4. **Áztassa be**{{en: slake}}: hagyja a port keverés nélkül beázni. A Digitalfire körülbelül 20 percet vár. A mázragasztót vagy kötőanyagot tartalmazó poroknak egy éjszakán át kell állniuk.
+5. Keverje, amíg nem marad száraz zseb vagy csomó.
 6. Szitálja át kétszer (lásd lent).
-7. Fedje le, és hagyja egy éjszakán át pihenni, majd keverje fel újra, és nézze meg, nem képződött-e kemény réteg az alján.
-8. Mérje meg a fajsúlyt, és apránként adjon hozzá vizet, amíg el nem éri a célértéket.
+7. Fedje le, és hagyja egy éjszakán át pihenni, aztán keverje újra, és nézze meg, nincs-e kemény réteg az alján.
+8. Mérje meg a fajsúlyt, és apránként adjon hozzá vizet, amíg el nem éri a célértéket. Ha meg szeretné tudni a máza saját száraz fajsúlyát, mérje le a kész máziszapot is (lásd lent).
 9. Címkézze fel a vödröt, és írja le, mit csinált.
-10. Takarítson nedvesen: mossa fel a padlót, és töröljön át minden felületet, a nyersanyagos edények külsejét is.
+10. Takarítson nedvesen: mossa fel a padlót, és töröljön le minden felületet, a nyersanyagos edények külsejét is.
 
 ### Szitálás
 
-A **szita** keretbe feszített szitaszövet. Ha a mázat ecsettel átnyomja rajta, szétoszlatja a keverés után maradt csomókat, és felfogja azokat a szemcséket, amelyek égetés után pöttyökként jelennének meg. Minél nagyobb a **mesh**-szám, annál finomabb a szita: a 80 mesh-es szita lyukbősége kb. 0,18 mm, a 100 mesh-esé kb. 0,15 mm.
+A **szita**{{en: sieve}} keretbe feszített hálószövet. Ha ecsettel átnyomja rajta a mázat, szétoszlatja a keverés után maradt csomókat, és felfogja azokat a szemcséket, amelyek égetés után pöttyökként jelennének meg. Minél nagyobb a **mesh**{{en: mesh}} szám, annál finomabb a szita: a 80 mesh-es szita lyukbősége körülbelül 0,18 mm, a 100 mesh-esé körülbelül 0,15 mm.
 
-A források eltérő szitákat ajánlanak. Zakin kétszer szitál át 50 vagy 80 mesh-es szitán. Derek Au a legtöbb mázhoz 120 mesh-es szitát használ, különösen a kobaltot vagy vasat tartalmazókhoz: egy szeladonban a 80 mesh-es szitán háromszor átszitálva is maradtak vaspöttyök, a 120 mesh-es szitán egyszer átszitálva viszont eltűntek. A 60–80 mesh-es szitát a hamumázakhoz és más, durva nyersanyagot tartalmazó mázakhoz tartja. A brit Potterycrafts 60–80 mesh-et javasol. Biztonságos kiindulás:
+A források más-más szitát ajánlanak. Zakin kétszer szitál 50 vagy 80 mesh-es szitán. Derek Au a legtöbb mázhoz 120 mesh-es szitát használ, főleg a kobaltot vagy vasat tartalmazókhoz: egy szeladonban háromszori átszitálás 80 mesh-es szitán után is maradtak vaspöttyök, és egyszeri átszitálás 120 mesh-esen megoldotta. A 60–80 mesh-es szitát a hamumázakhoz és más, durva nyersanyagot tartalmazó mázakhoz tartja meg. A brit Potterycrafts 60–80 mesh-et javasol. Biztonságos alapbeállítás:
 
 Table: Melyik szitát használja
 Label: Szitaméret
 
-| Máz                                                                           | Szita                     |
-| ----------------------------------------------------------------------------- | ------------------------- |
-| A legtöbb máz                                                                 | Kétszer 80 mesh-es szitán |
-| Színezőanyagot{{en: colorants}}, például kobaltot vagy vasat tartalmazó mázak | 100–120 mesh              |
-| Hamumázak és más, durva nyersanyagot tartalmazó mázak                         | 60–80 mesh                |
+| Máz                                                          | Szita                        |
+| ------------------------------------------------------------ | ---------------------------- |
+| A legtöbb máz                                                | Kétszer át 80 mesh-es szitán |
+| Színezőanyagot, például kobaltot vagy vasat tartalmazó mázak | 100–120 mesh                 |
+| Hamumázak és más, durva nyersanyagot tartalmazó mázak        | 60–80 mesh                   |
 
 ## Fajsúly {#specific-gravity}
 
-A **fajsúly**{{en: specific gravity}} (angolul: SG) megmutatja, mennyi por van a máziszapban{{en: slurry}}. Egy adott térfogatú máz{{en: glaze}} tömegének és ugyanakkora térfogatú víz tömegének a hányadosa. A víz értéke 1,00, egy máz pedig {{SG 1.45}} mellett 100 mL-enként 145 g. Ha mért fajsúlyra keveri, minden alkalommal ugyanazt a sűrűséget és ugyanolyan mázréteget kapja. Nincs mértékegysége, így grammban és unciában számolva is ugyanannyi.
+A **fajsúly**{{en: specific gravity}} (SG) megmutatja, mennyi por van a máziszapban. Egy adott térfogatú máz tömege osztva az ugyanakkora térfogatú víz tömegével. A víz 1,00, és egy máz {{SG 1.45}} mellett 100 mL-enként 145 g. Ha mért fajsúlyra keveri a mázat, mindig ugyanazt a sűrűséget és ugyanazt a réteget kapja. Nincs mértékegysége, így grammban és unciában is ugyanaz.
 
-### Mérés 100 mL lemérésével
+### Mérje meg 100 mL lemérésével
 
-1. Keverje fel a mázat, hogy semmi ne maradjon leülepedve.
-2. Tegyen a mérlegre egy 100 mL-es **mérőhengert** (magas, beosztásos mérőedényt) vagy egy 100 mL-es fecskendőt, és nullázza le a mérleget.
-3. Töltse meg mázzal pontosan 100 mL-ig, a jelet szemmagasságból leolvasva.
-4. Mérje le, és ossza el a grammokat 100-zal: 145 g esetén a fajsúly 1,45.
+1. Keverje fel a mázat, hogy semmi ne legyen leülepedve.
+2. Tegyen egy 100 mL-es **mérőhengert**{{en: graduated cylinder}} (magas, beosztásos mérőcsövet) vagy egy 100 mL-es fecskendőt a mérlegre, és tárázza le.
+3. Töltse meg mázzal pontosan 100 mL-ig, a jelet szemmagasságban olvasva le.
+4. Mérje le, és a grammokat ossza el 100-zal: 145 g 1,45-ös fajsúlyt jelent.
 
-A Digitalfire egy poharon bejelöli 500 g víz szintjét, a jelig tölti mázzal, és a tömeget elosztja 500-zal; a nagyobb, teltebb mérőedény pontosabb. Az **areométer** (sűrűségmérő), egy úszótest, amelyről ott kell leolvasni az értéket, ahol a mázban megáll, gyors, de sűrű vagy bedermedt mázaknál tévesen mérhet. A brit areométerek, például a Potclays areométere, Baumé-fokban (°Bé) mérnek. Saját számításunk szerint fajsúly = 145 ÷ (145 − °Bé), így 46 °Bé kb. 1,46-nak felel meg. Régebbi brit könyvek **pint-súlyt** adnak meg, vagyis azt, hogy hány uncia egy angol pint máz: ezt ossza el 20-szal, így 29 oz kb. 1,45-ös fajsúlynak felel meg (ez is saját számításunk).
+A Digitalfire egy poharat is megjelöl 500 g víz szintjén, a jelig mázzal tölti, és a tömeget elosztja 500-zal; a nagyobb, teltebb mérőedény pontosabb. Az **areométer**{{en: hydrometer}} (sűrűségmérő), egy úszó, amelyet ott olvasnak le, ahol a mázban megáll, gyors, de sűrű vagy bedermedt mázban tévesen mérhet. A brit areométerek, például a Potclaysé, Baumé-fokban (°Bé) mérnek. A mi számításunk szerint SG = 145 ÷ (145 − °Bé), így 46 °Bé körülbelül 1,46. A régebbi brit könyvek **pint-súlyt**{{en: pint weight}} adnak meg, vagyis hány uncia egy angol pint máz: ossza el 20-szal, így 29 oz körülbelül 1,45-ös fajsúly (ez is a mi számításunk).
 
-### Célértékek
+### Mire törekedjen
 
-A források eltérnek, leginkább az ecsetelésnél és a szórásnál, ahol a brit Potclays forgalmazó jóval magasabb értékeket ad meg (saját közlése szerint értékei „csak tájékoztató jellegűek”). Minden számot kiindulópontnak tekintsen. A Digitalfire fő tanácsa az, hogy minden mázhoz keresse meg a jól működő fajsúlyt és bedermesztést, majd ezeket ismételje meg és jegyezze fel.
+A források eltérnek, leginkább az ecsetelésnél és a szórásnál, ahol a brit Potclays forgalmazó jóval nagyobb értékeket ad meg (a sajátjai „csak tájékoztató jellegűek”). Minden számot kiindulópontnak tekintsen. A Digitalfire fő tanácsa az, hogy minden mázhoz keresse meg a beváló fajsúlyt és bedermedést, aztán ismételje meg őket, és írja le.
 
 Table: Fajsúly-célértékek, ahol a források eltérnek
 Label: Fajsúly-célértékek
 
-| Felhordás | Digitalfire és Glazy                                                                                                                                                                   | Potclays (Egyesült Királyság)                    | Biztonságos kiindulópont                                                        |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------- |
-| Mártás    | {{SG 1.40}} (5 másodperces mártáshoz) és {{SG 1.50}} (1 másodperces mártáshoz) között; a házilag kevert, bedermesztett mázak {{SG 1.43–1.45}} mellett a legjobbak                      | Színtelen: {{SG 1.46–1.48}}; színes: {{SG 1.61}} | {{SG 1.45}}; ha csepeg, hígítsa {{SG 1.43}} értékre, és dermessze be            |
-| Ecsetelés | {{SG 1.25}} (híg, színtelen máz) és {{SG 1.55}} (sötét részletek) között                                                                                                               | {{SG 1.71–1.81}}                                 | Kövesse a termék előírásait; használjon CMC mázragasztót vagy ecsetelő médiumot |
-| Szórás    | Nincs érték; Hopper a Ceramic Arts Network számára írt cikkében jóval hígabbat javasol, folyósítószerrel{{en: deflocculant}} (olyan adalékkal, amely hígfolyósabbá teszi a máziszapot) | {{SG 1.71}}                                      | Nincs megbízható szám; csak szórófülkében szórjon                               |
+| Felhasználás | Digitalfire és Glazy                                                                                                                                              | Potclays (Egyesült Királyság)                  | Biztonságos kiindulópont                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------- |
+| Mártás       | {{SG 1.40}} (5 másodperces mártáshoz) és {{SG 1.50}} (1 másodperces mártáshoz) között; az otthon kevert, bedermesztett mázak {{SG 1.43–1.45}} mellett a legjobbak | Színtelen {{SG 1.46–1.48}}; színes {{SG 1.61}} | {{SG 1.45}}; ha csepeg, hígítsa {{SG 1.43}} értékre, és dermessze be |
+| Ecsetelés    | {{SG 1.25}} (híg színtelen) és {{SG 1.55}} (sötét részletek) között                                                                                               | {{SG 1.71–1.81}}                               | Kövesse a terméket; használjon CMC-t vagy ecsetelő médiumot          |
+| Szórás       | Nincs érték; Hopper a Ceramic Arts Network számára írva jóval hígabbat mond, folyósítószerrel (olyan adalékkal, amely a máziszapot hígabban folyóvá teszi)        | {{SG 1.71}}                                    | Nincs megbízható szám; csak szórófülkében szórjon                    |
 
-A mártómáz szemre történő ellenőrzéséhez az AMACO 5 másodpercig márt, és kb. egy amerikai tízcentes érme (dime) vastagságú mázréteget keres. A Digitalfire ellenőrzésképpen 5 másodpercig mártott próbalapokat{{en: test tiles}} éget ki.
+Hogy szemmel ellenőrizze egy mártómázat, az AMACO 5 másodpercig márt, és körülbelül egy amerikai tízcentes érme vastagságú réteget keres. A Digitalfire 5 másodpercig mártott próbalapokat éget ki az ellenőrzéshez.
 
-### Víz a kívánt fajsúlyhoz: saját becslésünk
+### Víz egy adott fajsúlyhoz: a mi becslésünk
 
-Az alábbi táblázat a saját számításunk, nem egy forrásé. Azzal számol, hogy a por szemcséinek sűrűsége 2,6 g/cm³, ami feltételezés, nem mérési eredmény. Az agyag, az oldódó nyersanyagok és a bedermesztés mind módosítják a valódi mázat, ezért kiindulásnak használja, aztán mérjen. Ellenőrzésképpen: azonos tömegű por és víz esetén {{SG 1.44}} értéket ad, ami közel van a Digitalfire által mért {{SG 1.46}} értékhez. Azt is mutatja, hogy 100 g-onként 70–80 mL vízzel {{SG 1.50}} fölött kezd, vagyis sűrűbben, mint amire szükség van.
+Az alábbi táblázat a saját számításunk, nem egy forrásé. Azt feltételezi, hogy a por szemcséinek sűrűsége 2,6 g/cm³, ami feltevés, nem mérés. Az agyag, a vízben oldódó nyersanyagok és a bedermedés mind megváltoztatják a valódi mázat, ezért kiindulásnak használja, aztán mérjen. Ellenőrzésképpen azonos tömegű porra és vízre {{SG 1.44}} értéket ad, közel a Digitalfire által mért {{SG 1.46}} értékhez. Azt is megmutatja, hogy a 100 g-onkénti 70–80 mL víz {{SG 1.50}} fölött indítja, sűrűbben, mint amire szüksége van.
 
-Table: Víz a kívánt fajsúlyhoz (saját becslésünk)
-Label: Víz a kívánt fajsúlyhoz
+Table: Víz egy adott fajsúlyhoz (a mi becslésünk)
+Label: Víz egy adott fajsúlyhoz
 
-| Cél         | 100 g porhoz | Kilogrammonként |      Fontonként |
-| ----------- | -----------: | --------------: | --------------: |
-| {{SG 1.40}} |   kb. 115 mL |     kb. 1150 mL | kb. 18 US fl oz |
-| {{SG 1.45}} |    kb. 98 mL |      kb. 980 mL | kb. 15 US fl oz |
-| {{SG 1.50}} |    kb. 85 mL |      kb. 850 mL | kb. 13 US fl oz |
-| {{SG 1.60}} |    kb. 64 mL |      kb. 640 mL | kb. 10 US fl oz |
+| Cél         |      100 g porhoz |    Kilogrammonként |                           Fontonként |
+| ----------- | ----------------: | -----------------: | -----------------------------------: |
+| {{SG 1.40}} | körülbelül 115 mL | körülbelül 1150 mL | körülbelül 18 amerikai folyadékuncia |
+| {{SG 1.45}} |  körülbelül 98 mL |  körülbelül 980 mL | körülbelül 15 amerikai folyadékuncia |
+| {{SG 1.50}} |  körülbelül 85 mL |  körülbelül 850 mL | körülbelül 13 amerikai folyadékuncia |
+| {{SG 1.60}} |  körülbelül 64 mL |  körülbelül 640 mL | körülbelül 10 amerikai folyadékuncia |
+
+### A máza saját száraz fajsúlyának meghatározása keverés közben
+
+A fenti 2,6 csak feltevés. A saját máza értékét, a száraz pora sűrűségét, három számból kiszámíthatja, amelyet keverés közben lemérhet. Ezzel később a fajsúlyból kiszámíthatja, mennyi por van ennek a máznak bármelyik vödrében, és mennyi víz kell a következő adaghoz. A mi számításunk, nem egy forrásé:
+
+1. Írja fel az adag száraz porának tömegét: a recept összegét.
+2. Kezdés előtt mérje le az üres vödröt, vagy írja rá a tömegét.
+3. Keverje, szitálja, és állítsa be a máz fajsúlyát a szokásos módon. Mindent nyomjon át a szitán, és öblítse a vödörbe, hogy ne maradjon ki por.
+4. Mérje le a teli vödröt, és vonja le a vödör tömegét. Ez a máziszap tömege.
+5. Mérje meg a fajsúlyt.
+
+Ezután:
+
+- **Víz** = a máziszap tömege − a por tömege.
+- **A máziszap térfogata** mL-ben = a máziszap tömege grammban ÷ fajsúly.
+- **A por térfogata** = a máziszap térfogata − víz (1 g víz 1 mL).
+- **Száraz fajsúly** = a por tömege ÷ a por térfogata.
+
+Például: 1000 g porból 1980 g máziszap lesz {{SG 1.45}} mellett. A víz 980 g, a máziszap 1980 ÷ 1,45 = körülbelül 1366 mL, a por 1366 − 980 = 386 mL-t foglal el, a száraz fajsúly pedig 1000 ÷ 386 = körülbelül 2,59.
+
+A végén az egész máziszapot mérje le, ne a vizet öntés közben, hogy az elpárolgó vagy kifröccsenő víz ne számítson bele. A kis hibák itt felnagyobbodnak: a fajsúly 0,01-es mérési hibája körülbelül 2–4%-kal mozdítja el az eredményt, hígabb máznál többel. Használjon legalább 1 kg-os adagot, pontos mérleget, és a fajsúlyhoz a fenti 500 g-os poharas módszert. A legtöbb szokásos nyersanyag körülbelül 2,5 és 2,9 között van, így egy ettől messze eső érték, olyan mázban, amelyben nincs sok cirkon-szilikát vagy ólom, valószínűleg mérési hibát jelent. Írja fel az értéket a receptre.
 
 ### Keserűsó, CMC és bentonit
 
-A **keserűsó** (magnézium-szulfát) hatására a máz állás közben kissé bedermed, keveréskor pedig újra folyóssá válik. Ezt **flokkulálásnak**{{en: flocculating}} nevezik, az így viselkedő máz pedig **tixotróp**{{en: thixotropic}}: egyenletesebben hordható fel, kevésbé csepeg, és kevésbé ülepedik le. A Digitalfire azt javasolja, hogy ha a fajsúly már megfelelő, gallononként kb. 2 g-mal kezdje (saját átszámításunk szerint ez durván 0,5 g literenként), és a mennyiséget minden keverésnél állítsa be újra, mert az adagot egyetlen receptnek sem kellene rögzítenie. Azt javasoljuk, hogy előbb oldja fel kevés forró vízben. A Digitalfire egyik példájában egy máz {{SG 1.45}} mellett csepegett, ezért vízzel {{SG 1.43}} értékre hígították, keserűsóval pedig újra krémes állagúra dermesztették, és így egyenletesen felhordható lett. Egy durva próba: keverje meg, hagyja abba, és figyelje. A bedermesztett máz még kb. 2 vagy 3 másodpercig mozog, aztán megáll, és kicsit visszalendül.
+A **keserűsó**{{en: Epsom salts}} hatására a máz nyugalomban enyhén bedermed, keverésre pedig újra folyik. Ezt **flokkulálásnak**{{en: flocculating}} nevezik, és az így viselkedő máz **tixotróp**{{en: thixotropic}}: egyenletesebben kerül fel, kevésbé csepeg, és kevésbé ülepedik le. A Digitalfire azt javasolja, hogy amikor a fajsúly már megfelelő, gallononként körülbelül 2 g-mal kezdjen (literenként nagyjából 0,5 g, a mi átszámításunk), és minden keveréskor hangolja a mennyiséget, mert az adagot egyetlen receptnek sem kellene rögzítenie. Azt javasoljuk, hogy előbb oldja fel egy kevés forró vízben. Egy Digitalfire-példában egy {{SG 1.45}} mellett levő máz csepegett, ezért vízzel {{SG 1.43}} értékre hígították, keserűsóval pedig visszadermesztették krémesre, és egyenletesen került fel. Gyors ellenőrzés: keverje meg, álljon meg, és figyelje. A bedermesztett máz még körülbelül 2–3 másodpercig mozog, aztán megáll, és kissé visszaugrik.
 
-A **CMC** (karboxi-metil-cellulóz) mázragasztó ragacsosabbá és lassabban száradóvá teszi a máziszapot, és keményebb mázréteget hagy, amely jól tapad az edényre. Leginkább az ecsetelhető mázaknál és a sok frittet{{en: frit}} tartalmazó mázaknál fontos. A Digitalfire példájában 3,75 g-ot kevernek 1000 g máziszapba, és ezt turmixgéppel kell bekeverni. A CMC-t tartalmazó máz keserűsóval nem dermeszthető be, és mivel a ragasztóval mikrobák táplálkoznak, a vödörben megváltozhat, és szagossá válhat.
+A **CMC**{{en: CMC gum}} (karboxi-metil-cellulóz) ragadósabbá és lassabban száradóvá teszi a máziszapot, és keményebb, az edényen jobban tapadó réteget hagy. Leginkább az ecsetelhető és a sok frittet tartalmazó mázaknál számít. A Digitalfire példájában 3,75 g-ot kevernek 1000 g máziszapba, és turmixgéppel kell bevinni. A CMC-t tartalmazó máz nem dermed be keserűsóval, és mivel a mikrobák táplálkoznak a mázragasztóval, a vödörben megváltozhat, és szagossá válhat.
 
-A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene a száraz máz tömegének 1%-ánál több bentonitnak lennie.
+A **bentonit**{{en: bentonite}}, egy nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél körülbelül 1–3% bentonit segít; a Digitalfire szerint egy 15%-nál több agyagot tartalmazó máznak nem kellene a száraz máz tömegének 1%-ánál több bentonit.
 
 ## Próbalapok és próbasorok {#testing}
 
 ### Kezdje kicsiben
 
-Derek Au három lépésben halad: 50 vagy 100 g-os próba, ha beválik, 1–2 kg-os kísérleti adag, végül 5–10 kg-os műhelyadag. Becslésünk szerint egy 100 g-os próba {{SG 1.45}} mellett kb. 135 mL (kb. 4½ US fl oz) máziszapot{{en: slurry}} ad, ami elég ahhoz, hogy egy keskeny pohárban néhány kis lapot belemártson.
+Derek Au három lépésben halad: egy 50 vagy 100 g-os próba, ha beválik, egy 1–2 kg-os kísérleti adag, aztán egy 5–10 kg-os műhelyadag. A mi becslésünk szerint egy 100 g-os próba {{SG 1.45}} mellett körülbelül 135 mL (körülbelül 4½ amerikai folyadékuncia) máziszapot ad, ami elég ahhoz, hogy egy keskeny pohárban néhány kis próbalapot bemártson.
 
 ### Próbálja ki a saját masszáján
 
-Egy máz{{en: glaze}} egészen másképp nézhet ki egy másik masszán vagy egy másik kemencében: a Clay Art Center minden átdolgozott mázát négy masszán{{en: clay bodies}} próbálta ki, 6-os és 10-es gúlán{{en: cone}}. A Potclays kezdőknek szóló, a mázak kipróbálásáról írt útmutatója ezt javasolja:
+Egy máz egészen másképp nézhet ki egy másik agyagon vagy egy másik kemencében: a Clay Art Center minden átdolgozott mázát négy masszán próbálta ki, 6-os és 10-es gúlán. A Potclays kezdőknek szóló mázpróba-útmutatója ezt javasolja:
 
-- 6–10 **próbalap**{{en: test tiles}} (kis darab egy máz kipróbálásához) abból a masszából, amelyet ténylegesen használni fog, feljegyezve, hogy zsengélt{{en: bisqued}} vagy csontszáraz állapotúak-e
-- egyszerre csak egy változtatás
+- 6–10 **próbalap**{{en: test tiles}} (kis darabok egy máz kipróbálására) abból a masszából, amelyet valóban használni fog, feljegyezve, hogy zsengéltek vagy csontszárazak
+- egyszerre egy változtatás
 - egyszeri és kétszeri mártás, hogy lássa a mázat vékonyan és vastagon
 - minden próbalap ugyanabban a rakatban
-- égetés előtt minden lapon jelölés, pecséttel, karcolással vagy mázalatti ceruzával.
+- égetés előtt jel minden próbalapon, pecséttel, bekarcolva vagy mázalatti ceruzával. A kiégetett próbalapok egyformának látszanak, és az égetés előtt tett jel kibírja a kemencét, így mindig tudni fogja, melyik próbalap melyik recept.
 
-Álló próbalapokat javaslunk, mert a fekvő lapon nem látszik, mennyire folyik le a máz; legyen rajtuk egy mintázott sáv, amely megmutatja, hogyan változik a máz az éleken, és egy mázatlan talp. Mindegyiket állítsa egy kis tálkára, egy zsengélt cserépdarabra vagy lapkencére, hogy felfogja a lecsepegő mázat. Tegyen a próbalapok mellé egy **ellenőrző gúlát**{{en: witness cone}}, vagyis egy kis kerámiagúlát, amely meghajlik, ha elég hőt kapott, hogy megmutassa, mennyi hő érte a lapokat; a gúlákat az [égetésről szóló útmutató](/guides/firing) magyarázza el. Adjon minden lapnak rövid kódot, és a feljegyzéseiben írja a recept mellé. Willers a Ceramic Arts Network számára írt cikkében számokat és betűket használ, és magát a rendszert a füzet elejére írja.
+Olyan próbalapokat javaslunk, amelyek függőlegesen állnak, mert a fekvő próbalap elrejti, mennyire folyik le a máz, egy mintás sávval, amely megmutatja, hogyan változik a máz színe az éleken, és egy mázatlan talppal. Mindegyiket tegye egy kis tálkára vagy egy zsengélt cserépdarabra, vagy egy lapkencével bevont égetőlapra, hogy felfogja a csöppeket. Tegyen a próbalapok közelébe egy **ellenőrző gúlát**{{en: witness cone}}, egy kis kerámiagúlát, amely meghajlik, amikor elég hőt kapott, hogy megmutassa, mennyit kaptak; az [égetésről szóló útmutató](/guides/firing) elmagyarázza a gúlákat. Adjon minden próbalapnak egy rövid kódot, és írja fel a recept mellé a feljegyzéseiben. Willers, a Ceramic Arts Network számára írva, számokat és betűket használ, és magát a rendszert a füzet elejére írja.
 
 ### Próbasorok
 
-A **próbasor**{{en: line blend}} olyan próbák sora, amely egyenletes lépésekben halad az egyik keveréktől a másikig: egyik máztól egy másikig, vagy egy alapmáztól ugyanahhoz a mázhoz több színezőanyaggal{{en: colorant}}. Derek Au például egy színtelen alapmázban 1%-os lépésekben növeli a vas-oxid mennyiségét. Egy Ian Currie nevéhez kötött, térfogat szerinti módszer időt takarít meg, mert csak a két végpontot kell bekeverni:
+A **próbasor**{{en: line blend}} olyan próbák sora, amely egyenletes lépésekben halad az egyik keveréktől a másikig: egyik máztól egy másodikig, vagy egy alapmáztól ugyanahhoz a mázhoz több színezőanyaggal. Derek Au például 1%-os lépésekben adagol vas-oxidot egy színtelen alapmázhoz. Egy Ian Currie nevéhez kötött térfogatos módszer időt takarít meg, mert csak a két végét kell kikeverni:
 
-1. Keverje be a két végpont mázát, az A-t és a B-t, azonos méretű adagokban, és mindkettőt szitálja át.
-2. A kisebb térfogatúhoz adjon vizet, amíg mindkettőnek pontosan ugyanakkora nem lesz a nedves térfogata.
-3. Keverje fel mindkettőt, majd fecskendővel mérje ki az egyes keverékeket, mindegyiket a saját számozott poharába.
-4. Keverje meg mindegyik pohár tartalmát, és mártson bele egy próbalapot.
+1. Keverje ki a két végső mázat, az A-t és a B-t, azonos méretű adagokban, és szitálja át mindkettőt.
+2. A kisebb térfogatúhoz adjon vizet, amíg mindkettő nedves térfogata pontosan azonos nem lesz.
+3. Keverje fel mindkettőt, aztán fecskendővel szívja fel az egyes keverékeket a saját számozott poharukba.
+4. Keverje fel mindegyik poharat, és mártson bele egy próbalapot.
 
-Kidolgozott példánkban az A 100 g színtelen alapmáz, a B ugyanez 4 g vörös vas-oxiddal (4%-os adalék). A B minden millilitere ugyanannyi alapmázat tartalmaz, mint az A egy millilitere, és ezen felül a vasat, így a poharak 1%-os lépésekben haladnak a vas nélkülitől a 4%-ig. Mindkét végpontból 100 mL kerül a próbasorba, amit becslésünk szerint egy 100 g-os adag fedez.
+A kidolgozott példánkban az A 100 g színtelen alapmáz, a B ugyanez 4 g vörös vas-oxiddal (4%-os adalék). A B minden millilitere ugyanannyi alapmázat tartalmaz, mint az A egy millilitere, plusz a vasát, így a poharak vas nélkültől 4%-ig 1%-os lépésekben haladnak. Mindkét vég 100 mL-t ad a próbasorhoz, amit a mi becslésünk szerint egy 100 g-os adag fedez.
 
-Table: Ötlépéses vas-próbasor, poharanként 40 mL (kidolgozott példánk)
-Label: Próbasor-példa
+Table: Ötlépéses vasas próbasor, poharanként 40 mL (a mi kidolgozott példánk)
+Label: Példa próbasorra
 
 | Pohár | Színtelen alapmáz (A) | Alapmáz 4% vassal (B) | Vas-oxid, az alapmáz %-ában |
 | ----- | --------------------: | --------------------: | --------------------------: |
@@ -253,28 +274,28 @@ Label: Próbasor-példa
 | 4     |                 10 mL |                 30 mL |                           3 |
 | 5     |                  0 mL |                 40 mL |                           4 |
 
-A módszerhez gondos számolás, jól elkevert, egyforma fajsúlyú{{en: specific gravity}} végpontok és pontos mérleg kell. Derek Au térfogat helyett tömeg szerint is kever. A **háromszög-próba** ugyanezt három végponttal végzi, háromszögbe rendezve.
+A módszer gondos számolást, jól elkevert, azonos fajsúlyú végeket és pontos mérleget igényel. Derek Au térfogat helyett tömeg szerint is keverget. A **háromszög-próba**{{en: triaxial blend}} ugyanezt teszi három véggel, háromszögbe rendezve.
 
 > [!NOTE]
-> Ha egy lépés ígéretesnek tűnik, a [recept oldalán](/recipe) a **Mentés másolatként** gomb külön receptként menti, az eredetit pedig változatlanul hagyja.
+> Ha egy lépés ígéretesnek látszik, a [receptoldalon](/recipe) a **Mentés másolatként** külön receptként őrzi meg, az eredetit pedig változatlanul hagyja.
 
-## Feljegyzések vezetése {#records}
+## Feljegyzések {#records}
 
-Willers jól megfogalmazza a célt: „elég információ ahhoz, hogy megismételhesse vagy elkerülhesse a felfedezett eredményeket”. Kezdés előtt írja le, mit tervez kipróbálni, a kemence kirakásakor pedig az eredményeket. A Potclays ehhez hozzáveszi a felhordás módját, a vastagságot, a masszát{{en: clay body}} és a teljes égetést, a rámpákkal{{en: ramps}}, a hőntartásokkal{{en: holds}} és a hűtéssel együtt. A **rámpa** a felfűtés vagy a hűtés sebessége, például óránként {{60 °C; 108 °F}}, a **hőntartás** pedig adott ideig egy hőmérsékleten tartja a kemencét. Jegyezze fel a gyártási tételszámokat, a használt vizet és minden helyettesítést: a Clay Art Center földpátcseréje miatt a mázai{{en: glazes}} kb. felét kellett módosítani.
+Willers jól megfogalmazza a célt: „elég információ ahhoz, hogy meg tudja ismételni, vagy el tudja kerülni a felfedezett eredményeket”. Kezdés előtt írja le, mit akar kipróbálni, kirakáskor pedig az eredményeket. A Potclays hozzáteszi a felvitelt, a rétegvastagságot, a masszát és a teljes égetést, a rámpákkal, hőntartásokkal és a hűtéssel együtt. A **rámpa**{{en: ramp}} a felfűtés vagy a hűtés sebessége, például óránként {{60 °C; 108 °F}}, a **hőntartás**{{en: hold}} pedig meghatározott ideig egy hőmérsékleten tartja a kemencét. Jegyezze fel a gyártási tételszámokat, a használt vizet és minden helyettesítést: a Clay Art Centernél a földpátcsere miatt a mázaik körülbelül felét kellett módosítani.
 
-Table: Mit jegyezzen fel minden mázadagról (saját sablonunk)
+Table: Mit jegyezzen fel minden mázadagról (a mi sablonunk)
 Label: Feljegyzéssablon
 
-| Rész      | Mit írjon fel                                                                                                                                                                                                                                                              |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept    | A recept és a változata; a nyersanyagok márkája és gyártási tételszáma; minden helyettesítés                                                                                                                                                                               |
-| Keverés   | Dátum; adagméret; a hozzáadott víz és fajtája (csapvíz, fordított ozmózissal tisztított vagy desztillált víz); fajsúly{{en: specific gravity}} keverés után és a végső fajsúly; hozzáadott keserűsó, CMC és bentonit; a szita mesh-száma és az átszitálások száma          |
-| Felhordás | Massza; a zsengélés gúlája{{en: bisque cone}}; mártás, ecsetelés vagy leöntés; mártási idő vagy a rétegek száma; száraz rétegvastagság                                                                                                                                     |
-| Égetés    | A kemence és az égetőlap helye; az égetési program a rámpákkal, a hőntartásokkal és a hűtéssel; atmoszféra (oxidáló{{en: oxidation}} vagy redukciós{{en: reduction}}); mit mutatott az ellenőrző gúla{{en: witness cone}}, nem csak az, hogy mire volt beállítva a kemence |
-| Eredmény  | Felület és szín; lefolyás, hajszálrepedés{{en: crazing}} vagy tűszúrások{{en: pinholes}}; fényképek elölről, hátulról és oldalról; a próbalap{{en: test tile}} kódja                                                                                                       |
+| Rész     | Mit írjon le                                                                                                                                                                                                                                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept   | A recept és a változata; a nyersanyagok márkája és gyártási tételszáma; minden helyettesítés                                                                                                                                                                                          |
+| Keverés  | Dátum; adagméret; a hozzáadott víz és fajtája (csapvíz, fordított ozmózissal tisztított vagy desztillált); a fajsúly keverés után és a végső fajsúly; a kész máziszap tömege a száraz fajsúlyhoz; a hozzáadott keserűsó, CMC és bentonit; a szita mesh-száma és az átszitálások száma |
+| Felvitel | Massza; a zsengélés gúlája; mártás, ecsetelés vagy leöntés; mártási idő vagy a rétegek száma; száraz rétegvastagság                                                                                                                                                                   |
+| Égetés   | Kemence és a polc helye; az égetési program a rámpáival, hőntartásaival és a hűtéssel; atmoszféra (oxidáló vagy redukciós); mit mutatott az ellenőrző gúla, nem csak azt, amire a kemencét beállították                                                                               |
+| Eredmény | Felület és szín; bármilyen lefolyás, hajszálrepedés vagy tűszúrás; fényképek elölről, hátulról és oldalról; a próbalap kódja                                                                                                                                                          |
 
 > [!NOTE]
-> A Glazecalc alkalmazásban egy mentett [recept](/recipe) magát a receptet tartalmazza. Az [égetési napló](/firing) minden égetést rögzít: a kemencét, a dátumot, az időpontokat, a hőmérsékleteket, a gúlákat és a megjegyzéseket. Minden más a [jegyzetekbe](/notes) kerül, például a fenti adagfeljegyzés és az, hogy mit mutatott az egyes próbalap.
+> A Glazecalcban egy mentett [recept](/recipe) magát a receptet tartalmazza. Az [égetési napló](/firing) minden égetést rögzít: a kemencét, a dátumot, az időpontokat, a hőmérsékleteket, a gúlákat és a megjegyzéseket. A [jegyzetekben](/notes) minden más elfér, például a fenti adagfeljegyzés, és hogy mit mutatott az egyes próbalap.
 
 ## Források {#sources}
 

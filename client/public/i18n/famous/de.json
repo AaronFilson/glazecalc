@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Ein Teil dieser Seite ist noch nicht übersetzt und wird deshalb auf Englisch angezeigt.",
+  "index": {
+    "crumb": "Berühmte Glasuren",
+    "title": "Berühmte Glasuren",
+    "lead": "Weltweit bekannte Glasuren, jede aus ihren traditionellen örtlichen Rohstoffen, mit ihrer Segerformel und einer Fassung aus den Rohstoffen, die es dort gibt, wo Sie einkaufen.",
+    "listHeading": "Die Glasuren",
+    "more": "Weitere Glasuren folgen: Jede kommt hinzu, sobald ihr Rezept und ihre Rohstoffe auf mindestens drei gelesenen Quellen beruhen."
+  },
+  "glaze": {
+    "lead": "Eine berühmte Glasur ({native}): ihr traditionelles Rezept oder ihre Analyse, ihr Brand und eine Fassung aus den Rohstoffen, die es dort gibt, wo Sie einkaufen.",
+    "aboutHeading": "Über {name}",
+    "nativeName": "Name in der Landessprache",
+    "origin": "Wo",
+    "period": "Wann",
+    "firing": "Brand",
+    "cone": "Kegel {cone}",
+    "historyOnly": "Nur als Geschichte: Diese Glasur wurde mit Blei hergestellt. Ihre Analyse wird als Geschichte gezeigt, nicht als Rezept zum Anmischen. Die Fassung unten ist eine andere Glasur, ohne Blei.",
+    "recipeHeading": "Das traditionelle Rezept",
+    "material": "Rohstoff",
+    "amount": "Menge",
+    "unityHeading": "Segerformel",
+    "analysisHeading": "Historische Analyse",
+    "oxide": "Oxid",
+    "percent": "Gewichts-%",
+    "useHeading": "Ausprobieren",
+    "open": "Dieses Rezept öffnen",
+    "openLeadFree": "Die bleifreie Fassung öffnen",
+    "leadFreeTitle": "Im Stil von {name}, bleifrei",
+    "allLink": "Alle berühmten Glasuren",
+    "safetyHeading": "Sicherheit",
+    "safeMixing": "Sicheres Anmischen und Lüften",
+    "firingGuide": "Brennen mit einem einfachen Ofen",
+    "makingGuide": "Eine Glasur ansetzen",
+    "sourcesHeading": "Quellen",
+    "link": "Öffnen",
+    "opened": "gelesen am {date}"
+  },
+  "local": {
+    "heading": "Mit Ihren örtlichen Rohstoffen",
+    "leadFreeHeading": "Bleifreie Fassung",
+    "intro": "Die Segerformel des traditionellen Rezepts, aus den Standardrohstoffen, die es dort gibt, wo Sie einkaufen. Wählen Sie, wo Sie einkaufen, um sie zu sehen.",
+    "region": "Wo Sie Rohstoffe kaufen",
+    "proposal": "Die eigenen Rohstoffe des Vorschlags",
+    "pick": "Auswählen…",
+    "untested": "Berechnet, noch nicht im Testbrand geprüft.",
+    "testFirst": "Brennen Sie Probeplättchen, bevor Sie sie auf irgendeiner Ware verwenden, und prüfen Sie eine Fläche für Lebensmittel auf die Abgabe von Metallen.",
+    "untestedNote": "Berechnet, noch nicht im Testbrand geprüft: Brennen Sie vor der Verwendung Probeplättchen.",
+    "close": "Sie kommt der Zielformel nahe.",
+    "fair": "Sie kommt der Zielformel recht nahe.",
+    "poor": "Mit diesen Rohstoffen lässt sich die Zielformel nicht annähernd erreichen.",
+    "none": "Mit den dort verkauften Rohstoffen lässt sie sich nicht herstellen.",
+    "choose": "Wählen Sie, wo Sie Rohstoffe kaufen, um sie aus den dort verkauften zu sehen."
+  },
+  "atmospheres": {
+    "oxidation": "Oxidation",
+    "reduction": "Reduktion",
+    "neutral": "neutral",
+    "wood": "Holzbrand",
+    "salt": "Salzbrand",
+    "soda": "Sodabrand"
+  }
+}

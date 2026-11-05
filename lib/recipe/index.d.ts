@@ -10,6 +10,8 @@ export * from './checks';
 export * from './cone-fit';
 export * from './compare';
 export * from './cost';
+export { materialSg, recipeDrySg } from './density';
+export type { MaterialSg, RecipeSg, SgBasis } from './density';
 export * from './hazards';
 export * from './lead';
 export * from './library';

@@ -89,16 +89,16 @@ Label: Àtẹ cone Orton
 | Cone | Díẹ̀díẹ̀, {{27 °F/h; 15 °C/h}} | Àárín, {{108 °F/h; 60 °C/h}} | Yíyára, {{270 °F/h; 150 °C/h}} |
 | ---- | ---------------------------: | ---------------------------: | -----------------------------: |
 | 022  |                            – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018  |                            – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015  |                            – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018  |          {{1267 °F; 686 °C}} |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015  |          {{1382 °F; 750 °C}} |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010  |          {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08   |          {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07   |                            – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07   |          {{1764 °F; 962 °C}} |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06   |          {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05   |         {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04   |         {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03   |         {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02   |                            – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02   |         {{1972 °F; 1078 °C}} |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01   |         {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1    |         {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4    |         {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,71 +460,71 @@ Kiln ọwọ́ ń tẹ̀lé ètò kan náà pẹ̀lú ọwọ́: ẹ gbẹ ẹ́
 
 ## Ìsun glaze {#glaze}
 
-Ìsun glaze ń yọ́ glaze di gíláàsì lórí bisque. Ọ̀pọ̀ jùlọ àwọn olùbẹ̀rẹ̀ ń sun glaze ìsun kékeré ní cone 06–04 tàbí glaze ìsun àárín ní cone 5–6. Ẹ sun dé cone tí ó wà lórí àmì amọ̀ àti glaze yín, pẹ̀lú cone pack yí nọ́ńbà yẹn ká. Fún ohun tí ń ṣẹlẹ̀ nínú glaze bí ó ṣe ń yọ́, ẹ wo [Ìpìlẹ̀ glaze](/guides/glazing-basics).
+Ìsun glaze ń yọ́ glaze di gíláàsì lórí bisque. Ọ̀pọ̀ jùlọ àwọn glaze iná kékeré ní ọjà ni a ṣe fún cone 06 tàbí 05 (ìpele iná kékeré jẹ́ cone 06–04), ọ̀pọ̀ jùlọ àwọn glaze iná àárín sì wà fún cone 5–6. Ẹ sun dé cone tí ó wà lórí àmì glaze àti amọ̀ yín, pẹ̀lú cone pack yí nọ́mbà náà ká. Fún ohun tí ń ṣẹlẹ̀ nínú glaze bí ó ti ń yọ́, ẹ wo [Ìpìlẹ̀ glaze](/guides/glazing-basics).
 
-### Kíkó ẹrù fún ìsun glaze
+### Kíkó ohun èlò sínú kiln fún ìsun glaze
 
-- Àwọn iṣẹ́ amọ̀ tí a fi glaze sí kò gbọdọ̀ kan ara wọn tàbí ògiri: ẹ fi bí ½ íǹṣì (13 mm) sílẹ̀.
-- Ẹ má ṣe jẹ́ kí glaze dé ẹsẹ̀ (**dry-footing**), tàbí kí ẹ gbé iṣẹ́ amọ̀ ìsun kékeré sórí **stilts**, ìdúró kékeré tí ó ní ṣóńṣó. Kò yẹ kí stoneware àti porcelain dúró lórí stilts, èyí tí ń wọ inú wọn ní ìwọ̀n ooru bẹ́ẹ̀; ẹ lo kiln wash fún ìsun gíga tàbí iyanrìn silica dípò bẹ́ẹ̀.
-- Ẹ fi ó kéré tán 1 íǹṣì (25 mm) sílẹ̀ láàárín etí pẹpẹ àti ògiri tàbí sitter.
+- Àwọn ohun tí a fi glaze sí kò gbọ́dọ̀ kan ara wọn tàbí ògiri: ẹ fi nǹkan bí íǹṣì ½ (13 mm) sílẹ̀.
+- Ẹ má jẹ́ kí glaze dé ẹsẹ̀ ohun èlò (**dry-footing**), tàbí kí ẹ gbé ohun èlò iná kékeré ka orí **stilts**, àwọn ìdúró kékeré tí ó ní ṣóńṣó. Stoneware àti porcelain kò gbọ́dọ̀ dúró lórí stilts, tí ó ń wọlé sínú wọn ní ìgbóná yẹn; ẹ lo kiln wash iná ńlá tàbí iyanrìn silica dípò rẹ̀.
+- Ẹ fi ó kéré tán íǹṣì 1 (25 mm) sílẹ̀ láàrin etí pẹpẹ àti ògiri tàbí kiln sitter.
 
-### Ètò ìsun controller
+### Ètò controller
 
-Table: Ètò glaze tí L&L àti Bartlett ti ṣètò sílẹ̀
-Label: Ètò glaze tí a ti ṣètò sílẹ̀
+Table: Ètò glaze tí a ti ṣètò sílẹ̀ ti L&L àti Bartlett
+Label: Ètò glaze tí a ti ṣètò
 
-| Segment                  |                       Gòkè dé |             Slow Glaze |             Fast Glaze |
-| ------------------------ | ----------------------------: | ---------------------: | ---------------------: |
-| 1                        |            {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       Kò sí ìgbésẹ̀ ọ̀tọ̀ |
-| 2                        | {{250 °F; 139 °C}} nísàlẹ̀ òkè | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                           Òkè |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Àkókò ìgbóná, kiln òfìfo |                               |        Bí wákàtí 6½–7½ |          Bí wákàtí 3–4 |
+| Apá                        |                       Gòkè dé |             Slow Glaze |             Fast Glaze |
+| -------------------------- | ----------------------------: | ---------------------: | ---------------------: |
+| 1                          |            {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       Kò sí ìgbésẹ̀ ọ̀tọ̀ |
+| 2                          | {{250 °F; 139 °C}} nísàlẹ̀ òkè | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                          |                           Òkè |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Àkókò ìmúgbóná, kiln òfìfo |                               |  Nǹkan bí wákàtí 6½–7½ |    Nǹkan bí wákàtí 3–4 |
 
-Table: Ibi tí segment 2 àti 3 ti parí, nípa cone (L&L àti Bartlett)
-Label: Ibi tí a fojú sí nínú ètò
+Table: Ibi tí apá 2 àti 3 ti parí, ní cone (L&L àti Bartlett)
+Label: Ohun tí ètò ń wá
 
-| Cone |       Segment 2 parí |                  Òkè |
+| Cone |           Apá 2 parí |                  Òkè |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze ni yíyàn tí ó láàbò jù, nítorí ìkìlọ̀ L&L nípa sísun yíyára. Bí ẹ bá fi ìdádúró tí ó ju ìṣẹ́jú 5–10 lọ kún un ní òkè, L&L sọ pé kí ẹ dín ibi tí a fojú sí tàbí cone offset kù láti bá a mu, ó sì ṣàkíyèsí pé "Soak ní ìwọ̀n ooru gíga ń mú kí element àti thermocouple gbó kíákíá."
+Slow Glaze ni yíyàn tí ó láàbò jùlọ, nítorí ìkìlọ̀ L&L nípa ìsun kíákíá. Bí ẹ bá fi ìdúró (hold) tí ó ju ìṣẹ́jú 5–10 lọ kún un ní òkè, L&L sọ pé kí ẹ dín ohun tí a ń wá tàbí cone offset kù láti bá a mu, ó sì ṣàkíyèsí pé "Dídúró ní ìgbóná gíga ń mú kí element àti thermocouple tètè bàjẹ́."
 
-### Cone 6: drop-and-hold
+### Cone 6: ìsọ̀kalẹ̀ àti ìdúró
 
-Glaze ìsun àárín máa ń jáde nígbà mìíràn pẹ̀lú **pinholes** (ihò kéékèèké lójú rẹ̀) tàbí ìwú, tí gáàsì tí ń ru jáde láti inú ohun yíyọ́ fi sílẹ̀. Ètò **drop-and-hold** ń sun dé òkè, ó ń tutù kíákíá ní bí {{100 °F; 56 °C}}, ó sì ń dúró níbẹ̀. Nínú ọ̀rọ̀ Digitalfire, "Jíjá 100°F sílẹ̀ àti dídúró ń fún ohun yíyọ́ ní ìnípọn tó láti bẹ́ ìhó, nígbà tí ó ṣì ń jẹ́ kí wọ́n san."
+Àwọn glaze iná àárín máa ń jáde nígbà mìíràn pẹ̀lú **pinholes** (ihò kékeré gan-an lójú) tàbí ìwú, tí afẹ́fẹ́ tí ń ru jáde láti inú glaze yíyọ́ fi sílẹ̀. Ètò **ìsọ̀kalẹ̀ àti ìdúró** (drop-and-hold) ń sun dé òkè, ó ń tutù kíákíá ní nǹkan bí {{100 °F; 56 °C}}, ó sì ń dúró níbẹ̀. Ní ọ̀rọ̀ Digitalfire, "Ìsọ̀kalẹ̀ 100°F àti ìdúró ń fún glaze yíyọ́ ní ìkíki tó láti bẹ́ àwọn ìhó nígbà tí ó ṣì ń jẹ́ kí wọ́n san."
 
-Table: PLC6DS ti Digitalfire, drop-and-hold cone 6
+Table: Digitalfire PLC6DS, cone 6 ìsọ̀kalẹ̀ àti ìdúró
 Label: Digitalfire PLC6DS
 
-| Ìgbésẹ̀ |                            Ìyára |     Ibi tí a fojú sí | Ìdádúró                                              |
-| ------ | -------------------------------: | -------------------: | ---------------------------------------------------- |
-| 1      |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Ìṣẹ́jú 60                                             |
-| 2      |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Ìṣẹ́jú 30 tí a lè fi kún un, láti mú ìkùukùu ìhó kúrò |
-| 3      |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Ìṣẹ́jú 10; gùn jù nínú kiln ńlá                       |
-| 4      | Sọ̀kalẹ̀ ní {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Ìṣẹ́jú 30                                             |
+| Ìgbésẹ̀ |                            Ìyára |       Ohun tí a ń wá | Ìdúró                                         |
+| ------ | -------------------------------: | -------------------: | --------------------------------------------- |
+| 1      |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Ìṣẹ́jú 60                                      |
+| 2      |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Ìṣẹ́jú 30 bí ẹ bá fẹ́, láti mú ìkùukùu ìhó kúrò |
+| 3      |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Ìṣẹ́jú 10; ó gùn jù nínú kiln ńlá              |
+| 4      | Sísàlẹ̀ ní {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Ìṣẹ́jú 30                                      |
 
-PLC6DS ń gba bí wákàtí 9 àti ìṣẹ́jú 36. Fún glaze tí ó ń ṣàn jù, Digitalfire ń já bí {{200 °F; 111 °C}} sílẹ̀ dípò bẹ́ẹ̀; jíjá sílẹ̀ jìnnà jù "ń fi ewu crystallization sílẹ̀ nígbà ìdádúró". Òkè rẹ̀ ti {{2200 °F; 1204 °C}} wà nísàlẹ̀ {{2232 °F; 1222 °C}} ti àtẹ fún cone 6; Digitalfire ròyìn pé ọ̀pọ̀ jùlọ kiln ń dé cone 6 ní bí {{2200 °F; 1204 °C}}. Ẹ fi cone pack ṣàyẹ̀wò rẹ̀ nínú kiln tiyín.
+PLC6DS ń gba nǹkan bí wákàtí 9 àti ìṣẹ́jú 36. Fún àwọn glaze tí ń ṣàn jù, Digitalfire ń sọ̀kalẹ̀ ní nǹkan bí {{200 °F; 111 °C}} dípò rẹ̀; sísọ̀kalẹ̀ jù "ń fa ewu kí crystal dìde nígbà ìdúró". Òkè rẹ̀ ti {{2200 °F; 1204 °C}} wà nísàlẹ̀ {{2232 °F; 1222 °C}} ti àtẹ fún cone 6; Digitalfire ròyìn pé ọ̀pọ̀ kiln ń dé cone 6 ní nǹkan bí {{2200 °F; 1204 °C}}. Ẹ fi cone pack ṣàyẹ̀wò rẹ̀ nínú kiln yín.
 
 ### Títutù díẹ̀díẹ̀
 
-**Títutù díẹ̀díẹ̀** (slow cooling) túmọ̀ sí pé controller ń tu kiln ní ìyára kan tí a ṣètò dípò kí ó jẹ́ kí ó wálẹ̀ fúnra rẹ̀. C6DHSC ti Digitalfire ni PLC6DS tí títutù ní {{150 °F/h; 83 °C/h}} tẹ̀lé, láti {{2100 °F; 1148 °C}} sọ̀kalẹ̀ dé {{1400 °F; 760 °C}}, lẹ́yìn náà a pa á. Ó "ń mú dídán àti ojú rẹ̀ dára sí i" ó sì ń ran rutile blue lọ́wọ́, ṣùgbọ́n títutù díẹ̀díẹ̀ "lè mú kí láìdán (matte) pọ̀ sí i" (glaze matte kan di gbígbẹ) ó sì lè dín ẹ̀mí relay kiln kù. L&L náà ń fi ètò títutù díẹ̀díẹ̀ fún cone 6 ránṣẹ́:
+**Títutù díẹ̀díẹ̀** túmọ̀ sí pé controller ń mú kiln tutù ní ìyára tí a ṣètò dípò kí ó jẹ́ kí ó sọ̀kalẹ̀ fúnra rẹ̀. C6DHSC ti Digitalfire jẹ́ PLC6DS tí a tẹ̀lé pẹ̀lú títutù ní {{150 °F/h; 83 °C/h}} láti {{2100 °F; 1148 °C}} dé {{1400 °F; 760 °C}}, lẹ́yìn náà a pa á. Ó "ń mú ìdán àti dídára ojú pọ̀ sí i", ó sì ń ran blue rutile lọ́wọ́, ṣùgbọ́n títutù díẹ̀díẹ̀ "lè mú àìdán pọ̀ sí i" (glaze kan tí kò dán di gbígbẹ), ó sì lè dín ẹ̀mí relay kiln kù. L&L náà ń pèsè ètò títutù díẹ̀díẹ̀ fún cone 6:
 
-Table: "User 6" ti L&L: títutù díẹ̀díẹ̀ fún glaze cone 6
-Label: Títutù díẹ̀díẹ̀ L and L
+Table: L&L "User 6": títutù díẹ̀díẹ̀ fún àwọn glaze cone 6
+Label: Títutù díẹ̀díẹ̀ ti L àti L
 
-| Ìgbésẹ̀ |                           Ìyára |     Ibi tí a fojú sí |
+| Ìgbésẹ̀ |                           Ìyára |       Ohun tí a ń wá |
 | ------ | ------------------------------: | -------------------: |
-| 1      |             Gòkè ní ìyára kíkún | {{2232 °F; 1222 °C}} |
-| 2      |           Sọ̀kalẹ̀ ní ìyára kíkún | {{1900 °F; 1038 °C}} |
-| 3      | Sọ̀kalẹ̀ ní {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| 1      |                Ìyára kíkún sókè | {{2232 °F; 1222 °C}} |
+| 2      |              Ìyára kíkún sísàlẹ̀ | {{1900 °F; 1038 °C}} |
+| 3      | Sísàlẹ̀ ní {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Àwọn controller Skutt bákan náà ń fún ni ní preheat àti àṣàyàn títutù ìgbésẹ̀ kan.
+Àwọn controller Skutt náà ń pèsè ìmúgbóná ṣáájú àti àṣàyàn títutù ní ìgbésẹ̀ kan.
 
 ### Lórí kiln ọwọ́
 
-Kiln ọwọ́ kò lè tẹ̀lé àwọn ètò wọ̀nyí gẹ́lẹ́, ṣùgbọ́n ètò náà jẹ́ bákan náà: jẹ́jẹ́ ní àkọ́kọ́, déédé ní àárín, àti òpin tí a ń ṣọ́. Ètò glaze ìsun kékeré ti Bracker's wà lábẹ́ Kiln ọwọ́ ní kíkún, nísàlẹ̀; fún cone tí ó gbóná jù, ó fi "ìwọ̀n ìṣẹ́jú 15–30 fún nọ́ńbà cone kọ̀ọ̀kan" kún un. Pẹ̀lú pyrometer, ìdánrawò àti àkọsílẹ̀, ẹ lè fara wé drop-and-hold tàbí títutù díẹ̀díẹ̀ ní ìsúnmọ́ nípa yíyí switch sílẹ̀ pẹ̀lú ọwọ́, bí Digitalfire ṣe dábàá.
+Kiln ọwọ́ kò lè tẹ̀lé àwọn ètò wọ̀nyí ní pàtó, ṣùgbọ́n ètò náà kan náà ni: jẹ́jẹ́ ní ìbẹ̀rẹ̀, déédéé ní àárín, àti òpin tí a ń ṣọ́. Ètò glaze iná kékeré ti Bracker wà lábẹ́ Àwọn kiln ọwọ́ ní kíkún, nísàlẹ̀; fún àwọn cone tí ó gbóná jù ó ń fi kún "ìpíndọ́gba ìṣẹ́jú 15–30 fún nọ́mbà cone kọ̀ọ̀kan". Pẹ̀lú pyrometer, ìdánrawò àti ìwé àkọsílẹ̀, ẹ lè fara wé ìsọ̀kalẹ̀ àti ìdúró tàbí títutù díẹ̀díẹ̀ ní ìwọ̀nba nípa yíyí àwọn bọ́tìnnì sílẹ̀ pẹ̀lú ọwọ́, bí Digitalfire ṣe dábàá.
 
 ## Kiln ọwọ́ ní kíkún {#manual-kilns}
 

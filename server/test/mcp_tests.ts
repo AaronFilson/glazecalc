@@ -154,6 +154,7 @@ const PUBLIC_TOOLS = [
   'search_guides',
   'search_materials',
   'solve_target',
+  'specific_gravity_water',
   'suggest_substitutes',
   'vary_material'
 ];
@@ -633,6 +634,114 @@ describe('MCP: the public tools', () => {
     for (const id of Object.keys(recipe.LIMIT_SETS)) expect(described).to.include(`"${id}"`);
   });
 
+  it('specific_gravity_water works out the SG, the water to add or pour off, and what a bucket holds', async () => {
+    const thick = await data('specific_gravity_water', { gramsPer100ml: 160, litres: 10, target: 1.45 });
+    expect(thick.sg).to.equal(1.6);
+    // 10 L × (1.6 − 1.45) ÷ 0.45 = 3.33 L of water to add.
+    expect(thick.waterToAddLitres).to.equal(3.33);
+    // Nothing is assumed for the dry materials, so no dry weights without their SG.
+    expect(thick).not.to.have.property('drySg');
+    expect(thick).not.to.have.property('dryGlazePerLitreKg');
+    expect(thick).not.to.have.property('bucket');
+    const given = await data('specific_gravity_water', { gramsPer100ml: 160, litres: 10, target: 1.45, drySg: 2.5 });
+    // The same water to add whatever the dry SG.
+    expect(given.waterToAddLitres).to.equal(3.33);
+    // Brongniart at dry SG 2.5: (1.6 − 1) × 2.5 ÷ 1.5 = 1 kg a litre.
+    expect(given.dryGlazePerLitreKg).to.equal(1);
+    expect(given.bucket).to.eql({ litres: 10, dryGlazeKg: 10, waterKg: 6 });
+    const thin = await data('specific_gravity_water', { sg: 1.3, litres: 10, target: 1.45 });
+    expect(thin.waterToAddLitres).to.be.below(0);
+    expect(thin.note).to.match(/pour off/);
+    const same = await data('specific_gravity_water', { sg: 1.45, litres: 10, target: 1.45 });
+    expect(same.waterToAddLitres).to.equal(0);
+    expect(same.note).to.match(/already/);
+    expect((await call('specific_gravity_water', { sg: 1.4, gramsPer100ml: 140 })).isError).to.equal(true);
+    expect((await call('specific_gravity_water', {})).isError).to.equal(true);
+    expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
+  });
+
+  it('specific_gravity_water estimates the dry SG from a recipe, saying how, and a drySg given wins', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 40 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const estimated = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.45, lines });
+    expect(estimated.drySg).to.be.closeTo(2.63, 0.01);
+    expect(estimated.drySgBasis).to.equal('mixed');
+    expect(estimated.drySgNote).to.match(/estimate/i);
+    expect(estimated).to.have.property('bucket');
+    const given = await data('specific_gravity_water', { sg: 1.5, litres: 10, drySg: 2.5, lines });
+    expect(given.drySg).to.equal(2.5);
+    expect(given).not.to.have.property('drySgBasis');
+    const unknown = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [...lines, { material: 'Gerstley Borate', amount: 30 }]
+    });
+    expect(unknown.drySgBasis).to.equal('none');
+    expect(unknown.drySgNote).to.match(/Gerstley Borate/);
+    expect(unknown).not.to.have.property('drySg');
+    expect(unknown.waterToAddLitres).to.equal(1.11);
+  });
+
+  it('specific_gravity_water reads additives and unknown names into the estimate and never loses the water', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 40 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const base = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.45, lines });
+    // Bentonite is an additive: found, left out (2%), and the estimate stands.
+    const bentonite = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [...lines, { material: 'Bentonite', amount: 2 }]
+    });
+    expect(bentonite.drySg).to.equal(base.drySg);
+    expect(bentonite.drySgNote).to.match(/Bentonite/);
+    expect(bentonite.waterToAddLitres).to.equal(1.11);
+    // A name in neither library is counted as unknown, not refused.
+    const mystery = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [...lines, { material: 'Grandad’s mystery ash', amount: 30 }]
+    });
+    expect(mystery.drySgBasis).to.equal('none');
+    expect(mystery.drySgNote).to.match(/mystery ash/);
+    expect(mystery.waterToAddLitres).to.equal(1.11);
+    // A line with its own analysis is not the standard Whiting: no SG by its name.
+    const own = await data('specific_gravity_water', {
+      sg: 1.5,
+      litres: 10,
+      target: 1.45,
+      lines: [{ material: 'Whiting', amount: 100, analysis: { CaO: 56, SiO2: 2 } }]
+    });
+    expect(own.drySgBasis).to.equal('none');
+    expect(own).not.to.have.property('drySg');
+    expect(own.waterToAddLitres).to.equal(1.11);
+  });
+
+  it('specific_gravity_water sets aside an estimate the slurry is not under, but refuses a drySg given', async () => {
+    // Borax alone estimates at 1.71: a slurry at 1.8 cannot be over its own dry materials.
+    const lines = [{ material: 'Borax', amount: 100 }];
+    const over = await data('specific_gravity_water', { sg: 1.8, litres: 10, target: 1.45, lines });
+    expect(over).not.to.have.property('drySg');
+    expect(over).not.to.have.property('bucket');
+    expect(over.drySgNote).to.match(/not under the estimated 1\.71/);
+    expect(over.waterToAddLitres).to.equal(7.78);
+    const targetOver = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.8, lines });
+    expect(targetOver).not.to.have.property('drySg');
+    expect(targetOver.drySgNote).to.match(/target SG is not under/);
+    expect(targetOver.waterToAddLitres).to.equal(-3.75);
+    expect((await call('specific_gravity_water', { sg: 1.8, litres: 10, drySg: 1.71, lines })).isError).to.equal(true);
+  });
+
   it('convert_cone_temperature reads the Orton and SK charts', async () => {
     const six = await data('convert_cone_temperature', { cone: '6' });
     expect(six).to.include({ celsius: 1222, fahrenheit: 2232 });
@@ -1100,6 +1209,7 @@ describe('MCP: the guides, resources and prompts', () => {
       'glazecalc://guides/en/learn-with-john-britt',
       'glazecalc://guides/en/making-a-glaze',
       'glazecalc://guides/en/safe-mixing',
+      'glazecalc://guides/en/teaching-glaze-calculation',
       'glazecalc://skills/glazecalc-dictation'
     ]);
     for (const resource of resources) {
@@ -1263,8 +1373,8 @@ describe('MCP: the guides, resources and prompts', () => {
     ]) {
       expect(text).to.include(part);
     }
-    // Twelve of his videos for this unit, and no embedding.
-    expect(text.match(/https:\/\/www\.youtube\.com\/watch\?v=/g)).to.have.length(12);
+    // Twelve of his videos for this unit, the first of the next unit's, and no embedding.
+    expect(text.match(/https:\/\/www\.youtube\.com\/watch\?v=/g)).to.have.length(13);
     expect(text).not.to.match(/embed|iframe/i);
     // The unit itself, the safe mixing habits first, then the sections it points to, in the language asked.
     expect(attached.map((m: Json) => m.content.resource.uri)).to.eql([

@@ -83,6 +83,8 @@ Häll aldrig glasyr, eller vatten som glasyrredskap har sköljts i, i vasken ell
 
 Vi föreslår ett lock på den hinken: bottenslammet innehåller samma metaller som glasyren, och husdjur dricker stillastående vatten. Reglerna för avfall skiljer sig från plats till plats, så läs varje produkts säkerhetsdatablad och fråga kommunen eller vattenbolaget vid osäkerhet.
 
+Vissa verkstäder bränner det torkade bottenslammet innan de slänger det. De lägger det i en extra skål som får gå åt: efter bränningen kan skålen inte användas igen. Fyll skålen bara till en fjärdedel, eftersom slammet skummar och bubblar när det smälter, och täck den med en tallrik. Ställ den på en ugnsplatta med plattengobe eller på en extra platta, ifall det rinner över. Bränningen gör om slammet till glas, som binder metallerna mycket hårdare än löst pulver, så det är säkrare på en deponi. Hantera det torra slammet som torr glasyr, med andningsskydd och utan att damma.
+
 ## Hålla dammet kvar i verkstaden {#keeping-dust-in-the-studio}
 
 Pennsylvanias hälsodepartement beskriver problemet rakt på sak: ”Blyförorenat damm från din hobby kan fastna på dina kläder, skor, hår, hud och personliga tillhörigheter och lätt föras över till din bil och till ytor i ditt hem.” CDC tillägger att vuxna ”kan ta med sig bly hem och utsätta sina familjer för bly utan att veta om det”. Råden från Pennsylvania anger lösningen:

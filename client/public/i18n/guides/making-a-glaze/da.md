@@ -123,126 +123,147 @@ Derek Au vejer op i én skål i separate bunker, så en fejl kan øses op igen. 
 
 ### Hvor meget vand
 
-Kilderne er uenige. Derek Au starter tykt med 50 mL vand pr. 100 g pulver og tilsætter mere senere. Potterycrafts angiver 65 mL pr. 100 g for en af sine pulverglasurer. UT Austin bruger lige vægtdele vand og pulver, og da Digitalfire hældte 20 kg pulver i 20 kg vand, blev massefylden{{en: specific gravity}} målt til 1,46.
+Kilderne er uenige. Derek Au starter tykt, med 50 mL vand pr. 100 g pulver, og tilsætter mere senere. Potterycrafts angiver 65 mL pr. 100 g for én pulverglasur. UT Austin bruger lige store vægtmængder vand og pulver, og da Digitalfire hældte 20 kg pulver i 20 kg vand, målte det en massefylde på 1,46.
 
-Vand er hurtigt at tilsætte og langsomt at fjerne, så start med lidt. Vores skøn: Begynd med **ca. 70 til 80 mL pr. 100 g** (700 til 800 mL pr. kilo eller ca. 11 til 12 US fl oz pr. pund). Lad pulveret udbløde, bland og sigt ved den tykkelse, og tilsæt derefter vand lidt ad gangen, til massefylden er rigtig. 1 mL vand vejer 1 g, så vandet kan vejes. Kommer der for meget i, så lad glasuren bundfælde sig, og tag derefter det klare vand ovenpå af med en svamp, eller hæld det fra.
+Vand er hurtigt at tilsætte og langsomt at fjerne, så start lavt. Vores skøn: Begynd med **ca. 70 til 80 mL pr. 100 g** (700 til 800 mL pr. kilo eller ca. 11 til 12 US fl oz pr. pund). Lad det udbløde, bland og sigt ved den tykkelse, og tilsæt derefter vand lidt ad gangen, til massefylden passer. 1 mL vand vejer 1 g, så det kan vejes. Kommer der for meget i, så lad glasuren bundfælde sig, og fjern det klare vand fra toppen med en svamp eller ved at hælde det fra.
 
 ### Redskaber og vand
 
-- **Propelomrører.** Digitalfire kalder en god af slagsen »uundværlig«. En boremaskine med ledning og en omrører klarer opgaven i en spand. UT Austin lader den køre mindst 4 til 5 minutter, efter at glasuren ser blandet ud, og holder propellen fri af spanden, som den kan skrabe plastik af.
-- **Blender.** Den »fungerer særdeles godt til små portioner« (Digitalfire). Brug den kun til glasur: Den må aldrig komme tilbage i køkkenet.
-- **Piskeris eller pind.** Zakins valg, når der ikke er nogen omrører.
+- **Propelomrører.** Digitalfire kalder en god en »uundværlig«. En boremaskine med ledning og en omrører klarer opgaven i en spand. UT Austin lader den køre mindst 4 til 5 minutter, efter at glasuren ser blandet ud, og holder bladet fri af spanden, som det ellers kan skrabe plast af.
+- **Blender.** Den »virker særdeles godt til små portioner« (Digitalfire). Brug den kun til glasur: Den må aldrig komme tilbage i køkkenet.
+- **Piskeris eller pind.** Zakins valg, når der ikke er en omrører.
 
-Vand er også forskelligt, og Digitalfire bemærker, at det ændrer, hvordan en glasurvælling{{en: slurry}} opfører sig. Derek Au bruger vand renset ved omvendt osmose, fordi hans postevand er hårdt. Skriv ned, hvilket vand der bruges, uanset hvad det er.
+Vand varierer også, og Digitalfire bemærker, at det ændrer, hvordan en glasurvælling opfører sig. Derek Au bruger vand renset ved omvendt osmose, fordi hans vandhanevand er hårdt. Uanset hvad der bruges, så notér det.
 
 ### Trin for trin
 
-1. Tag åndedrætsværnet på og også gummihandsker, hvis hænderne skal ned i glasuren. Zakin bærer maske, fra afvejningen begynder, til glasuren er våd.
+1. Tag åndedrætsværnet på, og gummihandsker, hvis hænderne skal ned i glasuren. Zakin bærer maske, fra afvejningen begynder, til glasuren er våd.
 2. Mål ca. 70 til 80 mL vand pr. 100 g pulver op i spanden.
-3. Kom det afvejede pulver forsigtigt i fra lav højde. UT Austin kommer pulver i varmt vand; Zakin og Au hælder vand på pulver. Vi foreslår pulver i vand, hvilket hvirvler mindre støv op, undtagen ved en opskrift med meget bentonit: Rør først dens tørre pulvere sammen.
-4. **Lad det udbløde**: Lad pulveret suge vand uden at røre i det. Digitalfire venter ca. 20 minutter. Pulvere med gummi eller bindemiddel skal stå natten over.
-5. Bland, til der ikke er flere tørre lommer eller klumper.
-6. Sigt glasuren to gange (se nedenfor).
-7. Læg låg på, og lad den hvile natten over. Bland derefter igen, og undersøg, om der er et hårdt lag i bunden.
-8. Mål massefylden, og tilsæt vand lidt ad gangen, til den ønskede værdi er nået.
+3. Tilsæt det afvejede pulver forsigtigt, fra lav højde. UT Austin hælder pulver i lunkent vand; Zakin og Au hælder vand på pulver. Vi foreslår pulver i vand, som hvirvler mindre støv op, undtagen for en opskrift med meget bentonit: Rør dens tørre pulvere sammen først.
+4. **Lad det udbløde**{{en: slake}}: Lad pulveret trække uden omrøring. Digitalfire venter ca. 20 minutter. Pulvere med gummi eller bindemiddel skal stå natten over.
+5. Bland, til der ikke er tørre lommer eller klumper.
+6. Sigt den to gange (se nedenfor).
+7. Dæk den til, og lad den hvile natten over; bland så igen, og tjek bunden for et hårdt lag.
+8. Mål massefylden, og tilsæt vand lidt ad gangen for at nå målet. For at finde glasurens egen tørre massefylde vejes også den færdige glasurvælling (se nedenfor).
 9. Sæt etiket på spanden, og skriv ned, hvad der blev gjort.
-10. Rengør vådt: Mop gulvet, og tør alle flader af, også ydersiden af råvarebeholderne.
+10. Gør rent vådt: Mop gulvet, og tør alle flader af, også ydersiden af råvarebeholderne.
 
 ### Sigtning
 
-En **sigte** er et net, der er spændt ud i en ramme. Når glasuren presses igennem med en pensel, brydes de klumper, som blandingen efterlader, og partikler, der ville blive til mørke prikker i brændingen, bliver fanget. Jo højere **mesh**-tallet er, desto finere er nettet: 80 mesh har åbninger på ca. 0,18 mm og 100 mesh ca. 0,15 mm.
+En **sigte**{{en: sieve}} er et net i en ramme. Når glasuren presses igennem den med en pensel, brydes de klumper, som blandingen efterlader, og den fanger partikler, der ville brænde ud som mørke prikker. Jo højere **mesh**-tallet er, desto finere er nettet: 80 mesh har åbninger på ca. 0,18 mm og 100 mesh ca. 0,15 mm.
 
-Kilderne anbefaler forskellige maskefinheder. Zakin sigter to gange gennem 50 eller 80 mesh. Derek Au bruger 120 mesh til de fleste glasurer, især dem med kobolt eller jern: Tre gange gennem 80 mesh efterlod stadig mørke prikker af jern i en seladon, og én gang gennem 120 mesh løste problemet. Han bruger 60 til 80 mesh til askeglasurer og andre med grove råvarer. Potterycrafts i Storbritannien foreslår 60 til 80 mesh. Et sikkert udgangspunkt:
+Kilderne anbefaler forskellige mesh. Zakin sigter to gange gennem 50 eller 80 mesh. Derek Au bruger 120 mesh til de fleste glasurer, især dem med kobolt eller jern: Tre gange gennem 80 mesh efterlod stadig jernprikker i en seladon, og én gang gennem 120 mesh løste det. Han bruger 60 til 80 mesh til askeglasurer og andre med grove råvarer. Potterycrafts i Storbritannien foreslår 60 til 80 mesh. Et sikkert standardvalg:
 
 Table: Hvilken sigte der skal bruges
-Label: Sigtens maskefinhed
+Label: Sigtens mesh
 
-| Glasur                                                           | Sigte                   |
-| ---------------------------------------------------------------- | ----------------------- |
-| De fleste glasurer                                               | To gange gennem 80 mesh |
-| Glasurer med farvestoffer{{en: colorants}} som kobolt eller jern | 100 til 120 mesh        |
-| Askeglasurer og andre med grove råvarer                          | 60 til 80 mesh          |
+| Glasur                                          | Sigte                   |
+| ----------------------------------------------- | ----------------------- |
+| De fleste glasurer                              | To gange gennem 80 mesh |
+| Glasurer med farvestoffer som kobolt eller jern | 100 til 120 mesh        |
+| Askeglasurer og andre med grove råvarer         | 60 til 80 mesh          |
 
 ## Massefylde {#specific-gravity}
 
-**Massefylden**{{en: specific gravity, SG}} viser, hvor meget pulver der er i glasurvællingen{{en: slurry}}. Den er vægten af et rumfang glasur divideret med vægten af det samme rumfang vand. Vand har 1,00, og en glasur{{en: glaze}} med {{SG 1.45}} vejer 145 g pr. 100 mL. Ved at blande til en målt massefylde får man den samme tykkelse og det samme glasurlag hver gang. Massefylden har ingen enhed, så den er den samme i gram og i unser.
+**Massefylde**{{en: specific gravity}} fortæller, hvor meget pulver der er i glasurvællingen. Det er vægten af et rumfang glasur divideret med vægten af samme rumfang vand. Vand er 1,00, og en glasur ved {{SG 1.45}} vejer 145 g pr. 100 mL. At blande til en målt massefylde er måden at få samme tykkelse, og samme lag, hver gang. Den har ingen enhed, så den er den samme i gram og i unser.
 
 ### Mål den ved at veje 100 mL
 
-1. Rør glasuren op, så intet ligger bundfældet.
-2. Stil en **målecylinder** på 100 mL (et højt rør med målestreger) eller en sprøjte på 100 mL på vægten, og tarér vægten.
+1. Rør glasuren, så intet har bundfældet sig.
+2. Sæt en **målecylinder** på 100 mL (et højt måleglas med streger) eller en sprøjte på 100 mL på vægten, og tarér den.
 3. Fyld den med glasur til præcis 100 mL, og aflæs stregen i øjenhøjde.
-4. Vej den, og divider antallet af gram med 100: 145 g giver massefylde 1,45.
+4. Vej den, og divider grammene med 100: 145 g er massefylde 1,45.
 
-Digitalfire sætter også et mærke på et krus ud for 500 g vand, fylder det med glasur op til mærket og dividerer vægten med 500; et større og fyldigere mål er mere nøjagtigt. En **flydevægt**, et flydelegeme, der aflæses dér, hvor det ligger i glasuren, er hurtig, men kan vise forkert i tykke eller geléagtige glasurer. Britiske flydevægte, fx fra Potclays, viser flydetal i grader Baumé (°Bé). Efter vores udregning er massefylden = 145 ÷ (145 − °Bé), så 46 °Bé svarer til ca. 1,46. Ældre britiske bøger angiver en **pintvægt**, antallet af unser i en britisk pint glasur: Divider den med 20, så 29 oz svarer til ca. massefylde 1,45 (også vores udregning).
+Digitalfire markerer også et bæger ved niveauet for 500 g vand, fylder det med glasur til stregen og dividerer vægten med 500; et større, fuldere mål er mere nøjagtigt. En **flydevægt**{{en: hydrometer}}, en flyder, der aflæses der, hvor den ligger i glasuren, er hurtig, men kan vise forkert i tykke eller geléagtige glasurer. Britiske flydevægte, fx Potclays’, viser grader Baumé (°Bé). Efter vores regning er massefylden = 145 ÷ (145 − °Bé), så 46 °Bé er ca. 1,46. Ældre britiske bøger angiver en **pintvægt**, unserne i en britisk pint glasur: Divider den med 20, så 29 oz er ca. massefylde 1,45 (også vores regning).
 
-### Målværdier
+### Hvad der skal sigtes efter
 
-Kilderne er uenige, mest om pensling og sprøjtning, hvor den britiske forhandler Potclays angiver meget højere tal (dens egne er »kun vejledende«). Betragt alle tal som et udgangspunkt. Digitalfires vigtigste råd er at finde den massefylde og den gelering, der virker for hver glasur, og så gentage dem og skrive dem ned.
+Kilderne er uenige, mest om pensling og sprøjtning, hvor den britiske forhandler Potclays angiver langt højere tal (dens egne er »kun vejledende«). Betragt hvert tal som et udgangspunkt. Digitalfires vigtigste råd er at finde den massefylde og den geléagtighed, der virker for hver glasur, og så gentage dem og skrive dem ned.
 
-Table: Målværdier for massefylde, hvor kilderne er uenige
-Label: Målværdier for massefylde
+Table: Mål for massefylde, hvor kilderne er uenige
+Label: Mål for massefylde
 
-| Brug       | Digitalfire og Glazy                                                                                                                                                                      | Potclays (Storbritannien)                          | Sikkert udgangspunkt                                                         |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Dypning    | Fra {{SG 1.40}} (til et dyp på 5 sekunder) til {{SG 1.50}} (til et dyp på 1 sekund); hjemmeblandede glasurer, der er geléagtige, fungerer bedst ved {{SG 1.43–1.45}}                      | Transparent: {{SG 1.46–1.48}}; farvet: {{SG 1.61}} | {{SG 1.45}}; fortynd til {{SG 1.43}}, og gør den geléagtig, hvis den drypper |
-| Pensling   | Fra {{SG 1.25}} (tynd transparent) til {{SG 1.55}} (mørke detaljer)                                                                                                                       | {{SG 1.71–1.81}}                                   | Følg produktets anvisning; brug CMC-gummi eller et malemedie                 |
-| Sprøjtning | Intet tal; Hopper, der skriver for Ceramic Arts Network, siger meget tyndere, med et deflokkuleringsmiddel{{en: deflocculant}} (en tilsætning, der gør en glasurvælling mere letflydende) | {{SG 1.71}}                                        | Intet pålideligt tal; sprøjt kun i en sprøjtekabine                          |
+| Brug       | Digitalfire og Glazy                                                                                                                                                     | Potclays (Storbritannien)                        | Sikkert udgangspunkt                                                         |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Dypning    | {{SG 1.40}} (til et dyp på 5 sekunder) til {{SG 1.50}} (til et dyp på 1 sekund); hjemmeblandede glasurer, der er geléagtige, er bedst ved {{SG 1.43–1.45}}               | Transparent {{SG 1.46–1.48}}; farvet {{SG 1.61}} | {{SG 1.45}}; fortynd til {{SG 1.43}}, og gør den geléagtig, hvis den drypper |
+| Pensling   | {{SG 1.25}} (tynd transparent) til {{SG 1.55}} (mørke detaljer)                                                                                                          | {{SG 1.71–1.81}}                                 | Følg produktet; brug CMC eller et malemedie                                  |
+| Sprøjtning | Intet tal; Hopper skriver for Ceramic Arts Network, at den skal være meget tyndere, med et deflokkuleringsmiddel (en tilsætning, der gør en glasurvælling mere flydende) | {{SG 1.71}}                                      | Intet pålideligt tal; sprøjt kun i en sprøjtekabine                          |
 
-For at bedømme en dyppeglasur med øjet dypper AMACO i 5 sekunder og ser efter et lag, der er omtrent så tykt som en amerikansk dime (en lille, tynd mønt). Digitalfire brænder prøvebrikker{{en: test tiles}}, der er dyppet i 5 sekunder, for at kontrollere det.
+For at bedømme en dyppeglasur med øjet dypper AMACO i 5 sekunder og ser efter et lag på tykkelse med en amerikansk dime (en lille mønt). Digitalfire brænder brikker, der er dyppet i 5 sekunder, for at kontrollere det.
 
 ### Vand til en ønsket massefylde: vores skøn
 
-Tabellen nedenfor er vores egen udregning, ikke en kildes. Den antager, at pulverets partikler har en densitet på 2,6 g pr. cm³, hvilket er en antagelse, ikke en måling. Ler, opløselige råvarer og gelering ændrer alle en rigtig glasur, så brug den som udgangspunkt, og mål derefter. Som kontrol forudsiger den {{SG 1.44}} for lige vægtdele pulver og vand, tæt på Digitalfires målte {{SG 1.46}}. Den viser også, at 70 til 80 mL pr. 100 g giver en glasur, der til at begynde med ligger over {{SG 1.50}}, altså tykkere end nødvendigt.
+Tabellen nedenfor er vores egen regning, ikke en kildes. Den forudsætter, at pulverets partikler har en massefylde på 2,6 g pr. cm³, hvilket er en antagelse, ikke en måling. Ler, opløselige råvarer og geléagtighed ændrer alle en rigtig glasur, så brug den til at starte med, og mål derefter. Som kontrol forudsiger den {{SG 1.44}} for lige store vægtmængder pulver og vand, tæt på Digitalfires målte {{SG 1.46}}. Den viser også, at 70 til 80 mL pr. 100 g giver en start over {{SG 1.50}}, tykkere end nødvendigt.
 
 Table: Vand til en ønsket massefylde (vores skøn)
 Label: Vand til en ønsket massefylde
 
-| Målværdi    | Pr. 100 g pulver |    Pr. kilo |        Pr. pund |
+| Mål         | Pr. 100 g pulver |    Pr. kilo |        Pr. pund |
 | ----------- | ---------------: | ----------: | --------------: |
 | {{SG 1.40}} |       ca. 115 mL | ca. 1150 mL | ca. 18 US fl oz |
 | {{SG 1.45}} |        ca. 98 mL |  ca. 980 mL | ca. 15 US fl oz |
 | {{SG 1.50}} |        ca. 85 mL |  ca. 850 mL | ca. 13 US fl oz |
 | {{SG 1.60}} |        ca. 64 mL |  ca. 640 mL | ca. 10 US fl oz |
 
-### Bittersalt, CMC-gummi og bentonit
+### Find glasurens egen tørre massefylde under blandingen
 
-**Bittersalt** får en glasur til at blive let geléagtig, når den står stille, og til at flyde igen, når der røres i den. Det kaldes at **flokkulere**{{en: flocculating}} den, og en glasur, der opfører sig sådan, er **tixotrop**{{en: thixotropic}}: Den lægger sig mere jævnt, drypper mindre og bundfælder sig mindre. Digitalfire foreslår at starte med ca. 2 g pr. gallon, når massefylden er rigtig (omtrent 0,5 g pr. liter, vores omregning), og at justere mængden, hver gang der blandes, da ingen opskrift bør fastlægge dosis. Vi foreslår først at opløse det i lidt varmt vand. I et eksempel fra Digitalfire dryppede en glasur med {{SG 1.45}}, så den blev fortyndet med vand til {{SG 1.43}}, og bittersalt gjorde den geléagtig og cremet igen, hvorefter den lagde sig jævnt. Et groft tjek: Rør, stop, og se efter. En geléagtig glasur bevæger sig videre i ca. 2 eller 3 sekunder, stopper så og fjedrer lidt tilbage.
+Tallet 2,6 ovenfor er et gæt. Glasurens eget tal, massefylden af dens tørre pulver, kan beregnes ud fra tre tal, der kan tages under blandingen. Med det kan man senere ud fra massefylden beregne, hvor meget pulver der er i en hvilken som helst spand af den glasur, og vandet til næste portion. Vores regning, ikke en kildes:
 
-**CMC-gummi** (carboxymethylcellulose) gør en glasurvælling mere klæbrig og langsommere at tørre og giver et hårdere lag, der hænger fast på emnet. Det betyder mest for penselglasurer og glasurer med meget fritte{{en: frit}}. I Digitalfires eksempel blendes 3,75 g i 1000 g glasurvælling, og det skal i med en blender. En glasur med CMC vil ikke gelere med bittersalt, og da mikrober lever af gummiet, kan den ændre sig i spanden og begynde at lugte.
+1. Skriv vægten af det tørre pulver i portionen ned: opskriftens samlede vægt.
+2. Vej den tomme spand, før der begyndes, eller skriv dens vægt på den.
+3. Bland, sigt, og bring glasuren til dens massefylde som sædvanlig. Pres alt gennem sigten, og skyl den ned i spanden, så intet pulver går tabt.
+4. Vej den fulde spand, og træk spandens vægt fra. Det er glasurvællingens vægt.
+5. Mål massefylden.
 
-**Bentonit**, et meget fint ler, hjælper med at holde de andre partikler svævende. Dyppeglasurer klarer det som regel med 15 til 25 % rå ler. Til en opskrift med for lidt ler hjælper ca. 1 til 3 % bentonit; Digitalfire siger, at en glasur med mere end 15 % ler ikke bør have brug for bentonit i mere end 1 % af den tørre glasurs vægt.
+Derefter:
+
+- **Vand** = glasurvællingens vægt − pulverets vægt.
+- **Glasurvællingens rumfang** i mL = glasurvællingens vægt i gram ÷ massefylde.
+- **Pulverets rumfang** = glasurvællingens rumfang − vand (1 g vand er 1 mL).
+- **Tør massefylde** = pulverets vægt ÷ pulverets rumfang.
+
+Et eksempel: 1000 g pulver giver 1980 g glasurvælling ved {{SG 1.45}}. Vandet er 980 g, glasurvællingen er 1980 ÷ 1,45 = ca. 1366 mL, pulveret fylder 1366 − 980 = 386 mL, og den tørre massefylde er 1000 ÷ 386 = ca. 2,59.
+
+Vej hele glasurvællingen til sidst, ikke vandet, mens det hældes i, så vand, der fordamper eller sprøjter ud, ikke tæller med. Små fejl vokser her: En aflæsning af massefylden, der er 0,01 forkert, flytter resultatet ca. 2 til 4 %, mere for en tyndere glasur. Brug en portion på 1 kg eller mere, en nøjagtig vægt og metoden med bægeret på 500 g ovenfor til massefylden. De fleste almindelige råvarer ligger mellem ca. 2,5 og 2,9, så et tal langt uden for det, i en glasur uden meget zirkonsilikat eller bly, betyder sandsynligvis en målefejl. Skriv tallet på opskriften.
+
+### Bittersalt, CMC og bentonit
+
+**Bittersalt**{{en: Epsom salts}} får en glasur til at blive let geléagtig, når den står stille, og flyde igen, når den røres. Det kaldes at **flokkulere** den, og en glasur, der opfører sig sådan, er **tixotrop**{{en: thixotropic}}: Den lægger sig mere jævnt, drypper mindre og bundfælder sig mindre. Digitalfire foreslår at starte med ca. 2 g pr. gallon, når massefylden passer (ca. 0,5 g pr. liter, vores omregning), og justere mængden hver gang, der blandes, da ingen opskrift bør fastlægge doseringen. Vi foreslår at opløse det i lidt varmt vand først. I et eksempel hos Digitalfire dryppede en glasur ved {{SG 1.45}}, så vand bragte den ned på {{SG 1.43}}, og bittersalt gjorde den cremet igen, og den lagde sig jævnt. En grov kontrol: Rør, stop, og se efter. En geléagtig glasur bevæger sig videre i ca. 2 eller 3 sekunder, stopper så og fjedrer lidt tilbage.
+
+**CMC**{{en: CMC gum}} (carboxymethylcellulose) gør en glasurvælling mere klæbrig og langsommere til at tørre og giver et hårdere lag, der sidder fast på emnet. Det betyder mest for penselglasurer og glasurer med meget fritte. Digitalfires eksempel blander 3,75 g i 1000 g glasurvælling, og det skal i med en blender. En glasur med CMC bliver ikke geléagtig med bittersalt, og da mikrober lever af gummiet, kan den ændre sig i spanden og begynde at lugte.
+
+**Bentonit**, et meget fint ler, hjælper med at holde de andre partikler svævende. Dyppeglasurer bygger som regel på 15 til 25 % råt ler til det. Til en opskrift med for lidt ler hjælper ca. 1 til 3 % bentonit; Digitalfire siger, at en glasur med mere end 15 % ler ikke bør have brug for bentonit ud over 1 % af den tørre glasurs vægt.
 
 ## Prøvebrikker og prøverækker {#testing}
 
 ### Start i det små
 
-Derek Au arbejder sig op i tre trin: en test på 50 eller 100 g, en prøveportion på 1 til 2 kg, hvis det virker, og derefter en værkstedsportion på 5 til 10 kg. Efter vores skøn giver en test på 100 g med {{SG 1.45}} ca. 135 mL (ca. 4½ US fl oz) glasurvælling{{en: slurry}}, nok til at dyppe nogle få små prøvebrikker{{en: test tiles}} i et smalt bæger.
+Derek Au arbejder sig op i tre trin: en test på 50 eller 100 g, en prøve på 1 til 2 kg, hvis den virker, og derefter en værkstedsportion på 5 til 10 kg. Efter vores skøn giver en test på 100 g ved {{SG 1.45}} ca. 135 mL (ca. 4½ US fl oz) glasurvælling, nok til at dyppe nogle få små brikker i et smalt bæger.
 
 ### Test på eget ler
 
-En glasur{{en: glaze}} kan se ganske anderledes ud på et andet ler eller i en anden ovn: Clay Art Center testede hver af sine omarbejdede glasurer på fire lermasser{{en: clay bodies}} ved kegle{{en: cone}} 6 og ved kegle 10. Potclays’ begynderguide til glasurtest foreslår:
+En glasur kan se helt anderledes ud på et andet ler eller i en anden ovn: Clay Art Center testede hver af sine omformulerede glasurer på fire lermasser, ved kegle 6 og ved kegle 10. Potclays’ begyndervejledning i glasurtest foreslår:
 
-- 6 til 10 **prøvebrikker** (små stykker til at prøve en glasur på) af det ler, der faktisk skal bruges, med en note om, hvorvidt de er forglødede{{en: bisqued}} eller knastørre
+- 6 til 10 **prøvebrikker**{{en: test tiles}} (små stykker til at prøve en glasur på) af det ler, der faktisk skal bruges, med notat om, hvorvidt de er forglødede eller knastørre
 - én ændring ad gangen
-- et enkelt dyp og et dobbeltdyp for at se glasuren tynd og tyk
+- et enkelt dyp og et dobbeltdyp, for at se glasuren tynd og tyk
 - alle brikker i samme ovnfyld
-- et mærke på hver brik før brændingen, med et stempel, en indridsning eller en underglasurblyant.
+- et mærke på hver brik før brændingen, med et stempel, en indridsning eller en underglasurblyant. Brændte brikker ligner hinanden, og et mærke lavet før brændingen holder gennem ovnen, så det altid kan ses, hvilken opskrift hver brik er.
 
-Vi foreslår brikker, der står op (en flad brik skjuler, hvor langt en glasur løber), med et bånd med struktur, der viser, hvordan glasuren skifter farve over kanter, og en fod uden glasur. Stil hver brik på en lille skål, et forglødet skår eller pladebeskyttelse, så dryp bliver fanget. Sæt en **kontrolkegle**{{en: witness cone}}, en lille keramisk kegle, der bøjer, når den har fået varme nok, ved siden af brikkerne for at vise, hvor meget varme de har fået; [vejledningen om brænding](/guides/firing) forklarer kegler. Giv hver brik en kort kode, og skriv den ud for opskriften i notaterne. Willers, der skriver for Ceramic Arts Network, bruger tal og bogstaver og skriver selve systemet forrest i notesbogen.
+Vi foreslår brikker, der står op, da en flad brik skjuler, hvor langt en glasur løber, med et bånd med struktur, der viser, hvordan glasuren skifter over kanter, og en bar fod. Sæt hver på en lille skål eller et stykke forglødet ler eller på en ovnplade med pladebeskyttelse, så dryp fanges. Sæt en **kontrolkegle**{{en: witness cone}}, en lille keramisk kegle, der bøjer, når den har fået varme nok, ved brikkerne for at vise, hvad de fik; [vejledningen om brænding](/guides/firing) forklarer kegler. Giv hver brik en kort kode, og skriv den ud for opskriften i notaterne. Willers, der skriver for Ceramic Arts Network, bruger tal og bogstaver og skriver selve systemet forrest i notesbogen.
 
 ### Prøverækker
 
-En **prøverække**{{en: line blend}} er en række prøver, der går i lige store trin fra én blanding til en anden: fra én glasur til en anden eller fra en grundglasur til den samme glasur med mere farvestof{{en: colorant}}. Derek Au går fx i trin på 1 % med jernoxid i en transparent grundglasur. En rumfangsmetode, som forbindes med Ian Currie, sparer tid, fordi kun de to ender skal blandes:
+En **prøverække**{{en: line blend}} er en række prøver, der går jævnt trinvis fra én blanding til en anden: fra én glasur til en anden eller fra en grundglasur til den samme glasur med mere farvestof. Derek Au øger fx jernoxid i en transparent grundglasur i trin på 1 %. En volumetrisk metode, der forbindes med Ian Currie, sparer tid, fordi kun de to ender blandes:
 
-1. Bland de to glasurer i hver ende, A og B, som lige store portioner, og sigt begge.
-2. Tilsæt vand til den med mindst rumfang, til begge har præcis det samme våde rumfang.
-3. Rør begge op, og træk derefter med en sprøjte hver blanding over i sit eget nummererede bæger.
-4. Rør i hvert bæger, og dyp en prøvebrik.
+1. Bland de to endeglasurer, A og B, som portioner af samme størrelse, og sigt begge.
+2. Tilsæt vand til den med mindst rumfang, til begge har nøjagtig samme våde rumfang.
+3. Rør begge, og træk så hver blanding op med en sprøjte i sit eget nummererede bæger.
+4. Rør i hvert bæger, og dyp en brik.
 
-I vores gennemregnede eksempel er A 100 g transparent grundglasur, og B er det samme med 4 g rødt jernoxid tilsat (en tilsætning på 4 %). Hver milliliter af B indeholder den samme andel grundglasur som en milliliter af A plus sit jern, så bægrene går fra intet jern til 4 % i trin på 1 %. Hver ende giver 100 mL til rækken, hvilket en portion på 100 g efter vores skøn rækker til.
+I vores gennemregnede eksempel er A 100 g af en transparent grundglasur, og B er den samme med 4 g rødt jernoxid tilsat (en tilsætning på 4 %). Hver milliliter B indeholder den samme andel grundglasur som en milliliter A plus sit jern, så bægrene går fra intet jern til 4 % i trin på 1 %. Hver ende giver 100 mL til rækken, hvilket en portion på 100 g dækker efter vores skøn.
 
-Table: En prøverække med jern i fem trin, 40 mL pr. bæger (vores gennemregnede eksempel)
+Table: En jernprøverække i fem trin, 40 mL pr. bæger (vores gennemregnede eksempel)
 Label: Eksempel på prøverække
 
 | Bæger | Transparent grundglasur (A) | Grundglasur med 4 % jern (B) | Jernoxid, % af grundglasuren |
@@ -253,28 +274,28 @@ Label: Eksempel på prøverække
 | 4     |                       10 mL |                        30 mL |                            3 |
 | 5     |                        0 mL |                        40 mL |                            4 |
 
-Metoden kræver omhyggelig regning, velblandede ender med ens massefylde og en nøjagtig vægt. Derek Au blander også efter vægt i stedet for rumfang. Et **trekantsforsøg** gør det samme med tre ender, lagt ud i en trekant.
+Metoden kræver omhyggelig regning, velblandede ender med ens massefylde og en nøjagtig vægt. Derek Au blander også efter vægt i stedet for rumfang. Et **trekantsforsøg**{{en: triaxial blend}} gør det samme med tre ender, stillet op i en trekant.
 
 > [!NOTE]
 > Når et trin ser lovende ud, gemmer **Gem som kopi** på [opskriftssiden](/recipe) det som en opskrift for sig og lader originalen være, som den var.
 
 ## Notater {#records}
 
-Willers sætter godt ord på målet: »nok oplysninger til at kunne gentage eller undgå de resultater, man har fundet frem til«. Skriv ned, hvad der skal testes, før der startes, og resultaterne, når ovnen tømmes. Potclays tilføjer påføringen, tykkelsen, lermassen{{en: clay body}} og hele brændingen, inklusive ramper{{en: ramps}}, holdetider{{en: holds}} og afkøling. En **rampe** er en hastighed for opvarmning eller afkøling, fx {{60 °C; 108 °F}} i timen, og en **holdetid** holder ovnen ved én temperatur i en fastsat tid. Notér partinumre, det vand, der blev brugt, og enhver erstatning: Clay Art Centers skift af feldspat{{en: feldspar}} betød, at omkring halvdelen af dets glasurer{{en: glazes}} skulle justeres.
+Willers udtrykker målet godt: »oplysninger nok til at kunne gentage, eller undgå, de resultater, man fandt frem til«. Skriv ned, hvad der skal testes, før der begyndes, og resultaterne, når ovnen tømmes. Potclays tilføjer påføringen, tykkelsen, lermassen og hele brændingen, inklusive ramper, holdetider og afkøling. En **rampe**{{en: ramp}} er en hastighed for opvarmning eller afkøling, fx {{60 °C; 108 °F}} i timen, og en **holdetid**{{en: hold}} holder ovnen ved én temperatur i en fastsat tid. Notér partinumre, det brugte vand og enhver udskiftning: Clay Art Centers skift af feldspat betød, at omkring halvdelen af dets glasurer skulle justeres.
 
 Table: Hvad der skal noteres for hver glasurportion (vores skabelon)
 Label: Skabelon til notater
 
-| Del      | Hvad der skal skrives ned                                                                                                                                                                                                         |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Opskrift | Opskriften og dens version; råvarernes mærker og partinumre; eventuelle erstatninger                                                                                                                                              |
-| Blanding | Dato; portionsstørrelse; tilsat vand og dets type (postevand, omvendt osmose eller destilleret); massefylde efter blanding og endelig massefylde; tilsat bittersalt, CMC og bentonit; sigtens maskefinhed og antal gennemløb      |
-| Påføring | Lermasse; kegle for forglødningen{{en: bisque}}; dypning, pensling eller overhældning; dyppetid eller antal lag; tykkelse i tør tilstand                                                                                          |
-| Brænding | Ovn og placering på ovnpladerne; brændekurven med ramper, holdetider og afkøling; ovnatmosfære (oxidation eller reduktion{{en: reduction}}); hvad kontrolkeglen{{en: witness cone}} viste, ikke kun hvad ovnen var indstillet til |
-| Resultat | Overflade og farve; eventuelt løb, krakelering{{en: crazing}} eller nålestik{{en: pinholes}}; fotos af forside, bagside og side; brikkens kode                                                                                    |
+| Del      | Hvad der skal skrives ned                                                                                                                                                                                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Opskrift | Opskriften og dens version; råvarernes mærker og partinumre; eventuelle udskiftninger                                                                                                                                                                                            |
+| Blanding | Dato; portionsstørrelse; tilsat vand og dets type (vandhanevand, omvendt osmose eller destilleret); massefylde efter blanding og endelig massefylde; den færdige glasurvællings vægt, til dens tørre massefylde; tilsat bittersalt, CMC og bentonit; sigtens mesh og antal gange |
+| Påføring | Lermasse; forglødningens kegle; dypning, pensling eller overhældning; dyppetid eller antal lag; tør tykkelse                                                                                                                                                                     |
+| Brænding | Ovn og placering på ovnpladen; brændekurven med ramper, holdetider og afkøling; ovnatmosfære (oxidation eller reduktion); hvad kontrolkeglen viste, ikke kun hvad ovnen var indstillet til                                                                                       |
+| Resultat | Overflade og farve; eventuelt løb, krakelering eller nålestik; fotos af forside, bagside og side; brikkens kode                                                                                                                                                                  |
 
 > [!NOTE]
-> I Glazecalc rummer en gemt [opskrift](/recipe) selve opskriften. En [brændingsjournal](/firing) registrerer hver brænding: ovnen, datoen, tider, temperaturer, kegler og bemærkninger. [Noter](/notes) rummer alt andet, fx notaterne om portionen ovenfor og hvad hver brik viste.
+> I Glazecalc rummer en gemt [opskrift](/recipe) selve opskriften. En [brændingsjournal](/firing) registrerer hver brænding: ovnen, datoen, tider, temperaturer, kegler og noter. [Noterne](/notes) rummer alt andet, fx portionsnotatet ovenfor og hvad hver brik viste.
 
 ## Kilder {#sources}
 

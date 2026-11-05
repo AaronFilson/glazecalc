@@ -24,6 +24,7 @@ import {
   type Firing,
   firingOf,
   guarded,
+  type Line,
   languageArg,
   languageOf,
   linesArg,
@@ -206,6 +207,29 @@ export const checksOf = (
     cautions: cautions.map((caution) => cautionOut(caution, language))
   };
 };
+
+/** How a recipe's dry SG was estimated, in words (lib/recipe/density.js). */
+const SG_BASIS_WORDS: Record<string, string> = {
+  mineral: "each material's mineral, as measured",
+  kind: '2.6 for feldspars and clays',
+  glass: "frits from their oxides, by Appen's glass factors",
+  mixed: "minerals as measured, 2.6 for feldspars and clays, frits from their oxides by Appen's glass factors",
+  none: 'none'
+};
+
+/**
+ * The lines as the dry SG estimate reads them: a library material, then a
+ * library additive (bentonite, stains, zircon), marked standard so it is known
+ * by name. A line with its own analysis, or a name in neither, is kept by name
+ * only, so the estimate counts it with the materials it has no SG for and
+ * never refuses for it: the water to add needs none of this.
+ */
+const sgLinesOf = (lines: Line[]) =>
+  lines.map((line) => {
+    const amount = String(line.amount);
+    const found = line.analysis ? undefined : (findMaterial(line.material) ?? findAdditive(line.material));
+    return found ? { ...found, ownedBy: 'Standard', amount } : { name: line.material, amount };
+  });
 
 /** What the cone answers say of every figure. */
 const CONES_NOTE =
@@ -397,7 +421,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Unity formula of a recipe',
       description:
-        "Works out a glaze recipe's unity (Seger) formula, oxide groups, silica to alumina ratio, fired analysis, loss on ignition and calculated thermal expansion, as the Glazecalc app does. stull says where the recipe sits on Stull's chart (1912, as the recipe page draws it): silica and alumina in moles, the region (unfused, matte, semi-matte, bright or underfired) and whether it falls in the crazed area; a guide to the surface, not a promise.",
+        "Works out a glaze recipe's unity (Seger) formula, oxide groups, silica to alumina ratio, fired analysis, loss on ignition and calculated thermal expansion, as the Glazecalc app does. stull says where the recipe sits on Stull's chart (1912, as the recipe page draws it): silica and alumina in moles, the region (unfused, matte, semi-matte, bright or underfired) and whether it falls in the crazed area; a guide to the surface, not a promise. Stull fired his tests at about cone 11 with fixed fluxes, so at other cones, with boron or with other fluxes the regions move, and the crazed area is not a test of fit on your clay.",
       inputSchema: z.object({ lines: linesArg, language: languageArg }),
       annotations: READ_ONLY
     },
@@ -412,7 +436,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Check a recipe against limits',
       description:
-        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. A cone is checked in the band the recipe page gives it (low cone 06-02, mid 1-7, high 8-11); from cone 12 up (band 'top') no published limits reach, so the band's limits are not checked and limitsNote says so. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3, cooler than cone 06 or hotter than cone 10...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). stull says where the recipe sits on Stull's chart, as analyze_recipe gives it. These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
+        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. A cone is checked in the band the recipe page gives it (low cone 06-02, mid 1-7, high 8-11); from cone 12 up (band 'top') no published limits reach, so the band's limits are not checked and limitsNote says so. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3, cooler than cone 06 or hotter than cone 10...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). stull says where the recipe sits on Stull's chart, as analyze_recipe gives it; Stull fired his tests at about cone 11 with fixed fluxes, so at other cones, with boron or with other fluxes the regions move. These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
       inputSchema: z.object({
         lines: linesArg,
         firing: firingArg,
@@ -479,6 +503,90 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           nearestSk: nearest(cones.SK.cones),
           skBasis: SK_BASIS,
           note: CONES_NOTE
+        });
+      })
+  );
+
+  server.registerTool(
+    'specific_gravity_water',
+    {
+      title: 'Specific gravity and water',
+      description:
+        "Works out a glaze slurry's specific gravity (SG) from the grams 100 mL of it weighs (or takes the SG), then, for a bucket of it and a target SG, the water to add, or to pour off after the glaze settles, as the recipe page's Specific gravity and water does. The water to add needs nothing else. The dry glaze per litre and the dry glaze and water the bucket holds (Brongniart's formula) need the dry materials' own SG: give drySg, or give the recipe's lines and it is estimated from each material (its mineral's measured density; 2.6 for commercial feldspars and clays; a frit from its oxides by Appen's glass factors), with drySgBasis saying how. Materials with no estimate (bentonite, stains, mixed borates, a potter's own) may be up to 5% of the weight and are left out; with more, there is no estimate. A drySg given wins over the estimate. Nothing is assumed otherwise. Water is 1; many dipping glazes are mixed near 1.4 to 1.5, but the right SG is the one that gives the thickness you tested.",
+      inputSchema: z.object({
+        gramsPer100ml: z.number().gt(100).max(250).optional().describe('What 100 mL of the slurry weighs, in grams.'),
+        sg: z.number().gt(1).max(2.5).optional().describe('The SG, if already measured. Give this or gramsPer100ml.'),
+        litres: z.number().gt(0).max(1000).optional().describe('How much slurry is in the bucket, in litres.'),
+        target: z.number().gt(1).max(2.5).optional().describe('The SG wanted.'),
+        drySg: z
+          .number()
+          .gt(1.5)
+          .max(6)
+          .optional()
+          .describe("The dry materials' own SG, if known. Only the dry weights need it. Wins over an estimate."),
+        lines: linesArg
+          .optional()
+          .describe("The recipe's materials, to estimate the dry materials' SG when drySg is not given.")
+      }),
+      annotations: READ_ONLY
+    },
+    async ({ gramsPer100ml, sg, litres, target, drySg, lines }) =>
+      guarded(() => {
+        if (sg !== undefined && gramsPer100ml !== undefined)
+          throw new ToolProblem('Give the SG or the grams 100 mL of the slurry weighs, not both.');
+        const measured = sg ?? (gramsPer100ml !== undefined ? gramsPer100ml / 100 : undefined);
+        if (measured === undefined) throw new ToolProblem('Give the SG, or the grams 100 mL of the slurry weighs.');
+        // Nothing is assumed about the dry materials: the water to add does not depend on them, and the dry
+        // weight is worked out only when their SG is given or can be estimated from the recipe.
+        const estimate = drySg === undefined && lines ? recipe.recipeDrySg(sgLinesOf(lines)) : null;
+        const guess = estimate?.sg ?? undefined;
+        // An estimate the slurry is not under is set aside (the dry weights left out, and said); a drySg
+        // given is the caller's, so an SG over it is refused.
+        const estimateTooLow =
+          guess !== undefined && (!(measured < guess) || (target !== undefined && !(target < guess)));
+        const dry = drySg ?? (estimateTooLow ? undefined : guess);
+        const estimated = estimate && {
+          drySgBasis: estimate.sg === null ? 'none' : estimate.basis,
+          drySgNote:
+            estimate.sg === null
+              ? estimate.unknown.length
+                ? `No estimate: the materials with no known SG (${estimate.unknown.join(', ')}) are more than 5% of the weight. Give drySg for the dry weights.`
+                : 'No estimate: the lines have no amounts. Give drySg for the dry weights.'
+              : `Estimated from the materials (${SG_BASIS_WORDS[estimate.basis]}). An estimate: a measured figure is better.` +
+                (estimate.unknown.length
+                  ? ` Left out, with no known SG: ${estimate.unknown.join(', ')} (${rounded(estimate.unknownShare * 100, 1)}% of the weight).`
+                  : '') +
+                (estimateTooLow
+                  ? ` The ${target !== undefined && measured < guess! ? 'target ' : ''}SG is not under the estimated ${guess}, so the estimate cannot be right for this glaze and the dry weights are left out. Give drySg, measured, for them.`
+                  : '')
+        };
+        if (dry !== undefined && !(measured < dry))
+          throw new ToolProblem(`An SG of ${measured} is not under the dry materials' ${dry}.`);
+        if (dry !== undefined && target !== undefined && !(target < dry))
+          throw new ToolProblem(`A target SG of ${target} is not under the dry materials' ${dry}.`);
+        const contents =
+          litres !== undefined && dry !== undefined ? recipe.slurryContents(litres, measured, dry) : null;
+        const raw = litres !== undefined && target !== undefined ? (litres * (measured - target)) / (target - 1) : null;
+        // Rounded first, so a tiny difference reads as none and never as -0.
+        const water = raw === null ? null : rounded(raw, 2) || 0;
+        return ok({
+          sg: rounded(measured, 3),
+          ...estimated,
+          ...(dry !== undefined && { drySg: dry, dryGlazePerLitreKg: rounded(recipe.dryPerLitre(measured, dry)!, 3) }),
+          ...(contents && {
+            bucket: { litres, dryGlazeKg: rounded(contents.glaze, 2), waterKg: rounded(contents.water, 2) }
+          }),
+          ...(water !== null && {
+            target,
+            waterToAddLitres: water,
+            note:
+              water === 0
+                ? 'The glaze is already at that SG.'
+                : water < 0
+                  ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
+                  : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
+          }),
+          ...(target !== undefined && litres === undefined && { note: 'Give litres for the water to add.' })
         });
       })
   );

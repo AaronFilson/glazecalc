@@ -724,7 +724,7 @@
     "keyBright": "Đường chấm chấm: nơi các loại men của Stull sáng bóng nhất.",
     "keyLimits": "Đường nét đứt và vùng tô bóng: các khoảng silica và alumina của {name}.",
     "keyCrazed": "Gạch chéo: nơi chúng bị rạn nứt men.",
-    "note": "Một chỉ dẫn, không phải một dự đoán. R. T. Stull (Transactions of the American Ceramic Society, 1912) nung ở côn 11 với các chất trợ chảy cố định ở 0,3 K₂O và 0,7 CaO; các chất trợ chảy và lần nung khác làm các vùng dịch chuyển, và một men mờ non lửa có thể được vẽ như sáng bóng. Các vùng được vẽ như Glazy vẽ."
+    "note": "Đây là hướng dẫn, không phải dự đoán. R. T. Stull (Transactions of the American Ceramic Society, 1912) nung ở khoảng côn 11 với chất trợ chảy cố định ở 0,3 K₂O và 0,7 CaO; các chất trợ chảy và cách nung khác làm dịch chuyển các vùng, và một loại men mờ chỉ vì non lửa vẫn có thể rơi vào vùng sáng bóng. Các vùng được vẽ như Glazy vẽ."
   },
   "slurry": {
     "heading": "Tỷ trọng và nước",
@@ -752,7 +752,17 @@
       "pint": "Trọng lượng pint bạn muốn, oz"
     },
     "drySg": "Tỷ trọng của nguyên liệu khô",
-    "drySgHelp": "Khoảng 2,5 với hầu hết các loại men; Glazy dùng 2,6.",
+    "drySgEmpty": "Chỉ khối lượng khô cần nó; lượng nước cần thêm thì không. Hãy nhập nếu bạn biết.",
+    "drySgNeeded": "Hãy nhập tỷ trọng của nguyên liệu khô để xem men khô trong xô và lượng nước cho một mẻ mới.",
+    "estimate": {
+      "mineral": "Một ước tính, {sg}, từ thành phần của từng nguyên liệu: khối lượng riêng đo được của khoáng vật của nó. Hãy thay đổi nếu bạn biết số tốt hơn.",
+      "kind": "Một ước tính, {sg}: trường thạch và đất sét nặng khoảng 2,6. Hãy thay đổi nếu bạn biết số tốt hơn.",
+      "glass": "Một ước tính, {sg}, tính từ các oxit của frit (frit là thủy tinh). Hãy thay đổi nếu bạn biết số tốt hơn.",
+      "mixed": "Một ước tính, {sg}, từ từng nguyên liệu: khối lượng riêng đo được của khoáng vật, khoảng 2,6 cho trường thạch và đất sét, và frit tính từ các oxit của chúng. Hãy thay đổi nếu bạn biết số tốt hơn.",
+      "leftOut": "Không tính vào, vì chưa biết tỷ trọng: {names}.",
+      "none": "Không có ước tính cho công thức này: chưa biết tỷ trọng của {names}. Hãy nhập nếu bạn biết.",
+      "was": "Số của bạn đang được dùng. Ước tính là {sg}; xóa ô này để quay lại ước tính."
+    },
     "batch": "Men khô cho một mẻ mới, {unit}",
     "contents": "Ở tỷ trọng {sg}, xô chứa {glaze} men khô và {water} nước.",
     "add": "Để đạt tỷ trọng {target}, hãy thêm {water} nước. Cuối cùng nó đạt khoảng {volume}.",
@@ -760,6 +770,7 @@
     "already": "Nó đã ở tỷ trọng {target}.",
     "mix": "Trộn {glaze} men khô với {water} nước để có khoảng {volume} ở tỷ trọng {target}.",
     "badSg": "Tỷ trọng phải lớn hơn 1 (của nước) và nhỏ hơn {dry} của các nguyên liệu khô.",
+    "badSgWater": "Tỷ trọng phải lớn hơn 1 (của nước).",
     "badDry": "Tỷ trọng của nguyên liệu khô phải lớn hơn 1.",
     "note": "Nước tính theo khối lượng: một lít nặng một kilôgam, một gallon Mỹ nặng khoảng 8,3 lb. Phép tính lấy các thể tích cộng lại, gần đúng chứ không chính xác: hãy thêm nước từng chút một, khuấy, và đo lại. Hai loại men có cùng tỷ trọng vẫn có thể chảy khác nhau.",
     "saveTarget": "Lưu tỷ trọng {sg} làm mục tiêu của công thức men này",

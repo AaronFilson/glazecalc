@@ -61,27 +61,29 @@ Isi ihe ize ndụ lead (Pb) dị iche: ọ bụghị otu ngaji, kama obere uzuzu
 
 ## Ichekwa ihe n'ụlọ {#storing-materials}
 
-Ọ dịghị otu ụlọ ọrụ gọọmentị na-edobe iwu maka ichekwa ihe glaze n'ụlọ, mana ibe ahụike na nchekwa kwekọrịtara: debe ọrụ ahụ n'ebe nke ya, n'ebe ụmụaka na-anọghị. Ngalaba ahụike Pennsylvania, na-ede banyere omume ntụrụndụ ndị na-eji lead, kwuru: "Jiri ebe ọrụ a kara aka ma ọ bụ garaji maka omume ntụrụndụ gị, ma mee ka ụmụaka ghara ịbịaru ebe a nso."
+Ọ dịghị ụlọ ọrụ gọọmentị na-edebe iwu maka ichekwa ihe glaze n'ụlọ, mana ibe ahụike na nchekwa kwenyere: debe ọrụ ahụ n'ebe nke ya, tere aka na ụmụaka. Ngalaba ahụike Pennsylvania, na-ede banyere ọrụ ntụrụndụ na-eji lead (Pb), kwuru, "Jiri ebe ọrụ akapịrị ma ọ bụ garaji maka ọrụ ntụrụndụ gị ma mee ka ụmụaka nọrọ n'ebe dị anya site n'ebe a."
 
 ### Ndepụta nlele maka nchekwa
 
-Ndị a bụ iwu mgbochi nsí n'ozuzu etinyere na glaze. Ọ dịghị ụkpụrụ seramiiki na-edobe ha, mana anyị na-atụ aro ha niile:
+Ndị a bụ iwu izugbe maka igbochi nsí etinyere na glaze. Ọ dịghị ụkpụrụ ịkpụ ite na-edebe ha, mana anyị na-atụ aro ha niile:
 
-- Kpọchie ihe akọrọ: n'kọbọd, ma ọ bụ n'ime ụlọ, garaji ma ọ bụ ụlọ obere a na-akpọchi akpọchi. Shelf dị elu na-enye aka, mana ụmụaka na-arị elu. Ọ bụrụ na ị nwere ike ịkpọchi naanị ihe ole na ole na mbụ, malite n'ihe ndị na-agbaze na ihe na-enye agba.
-- Debe ihe n'akpa ma ọ bụ n'ite mbụ ha. Ọ bụrụ na i bufee otu n'ihe ọzọ, dee aha ya na ya dịka e dere ya n'akpa ahụ.
-- Ejila ihe nri ma ọ bụ ihe ọṅụṅụ (ite yogurt, ite iko, karama) maka ihe glaze, ọ bụrụgodị na e dere aha na ya. Nwatakịrị maara ihe dị n'ite yogurt.
-- Debe ngwa ebe ọrụ (ihe ọkpụkpụ, ngaji, ihe ọkụkụ, ihe nyọ, ihe ọtụtụ) n'ebe ọrụ. Ejila ngwa kichin maka glaze, ma ọ bụ ngwa glaze maka nri.
-- Debe glaze mmiri mmiri na bọket e dere aha na ha, mkpuchi ha dị na ha.
-- Debe mpempe data nchekwa nke ihe ọ bụla na ya, n'akwụkwọ ma ọ bụ na ekwentị gị.
-- Edobela ihe ọ bụla si n'ebe ọrụ na kichin: enweghị akpa, bọket, ngwa ma ọ bụ test tile.
+- Kpọchie ihe akọrọ: kọbọọdụ, ma ọ bụ ọnụ ụlọ, garaji ma ọ bụ ụlọ nta a na-akpọchi. Shelf dị elu na-enyere aka, mana ụmụaka na-arị elu. Ọ bụrụ na ị nwere ike ịkpọchi naanị ihe ole na ole na mbụ, malite n'ihe na-agbaze na mmiri na ihe na-enye agba.
+- Debe ihe n'akpa ma ọ bụ igbe mbụ ha. Ọ bụrụ na ị bufee otu n'ime ihe ọzọ, tinye ya akara nwere aha ahụ kpọmkwem dịka e dere ya n'akpa.
+- Ejila ihe nri ma ọ bụ ihe ọṅụṅụ (iko yogurt, ite iko, karama) maka ihe glaze ọ dịla mgbe, ọbụlagodi na ha nwere akara. Nwatakịrị maara ihe dị n'iko yogurt.
+- Debe ngwa ọrụ ebe ọrụ (ngaji ịkụ, ngaji, ihe ịkụ, ihe nyọ, ihe ọtụtụ) n'ebe ọrụ. Ejila ngwa kichin maka glaze ọ dịla mgbe, ma ọ bụ ngwa glaze maka nri.
+- Debe glaze mmiri na bọket nwere akara, mkpuchi ha kpuchiri.
+- Debe mpempe data nchekwa (SDS) nke ihe ọ bụla n'akụkụ ya, n'akwụkwọ ma ọ bụ na ekwentị gị.
+- Edebela ihe ọ bụla si n'ebe ọrụ na kichin: enweghị akpa, bọket, ngwa ọrụ ma ọ bụ test tile.
 
-Maka ịzụ na ichekwa ihe n'ụzọ miri emi, lee [Otu esi eme glaze](/guides/making-a-glaze).
+Maka ịzụta na ichekwa ihe n'ụzọ zuru ezu, lee [Otu esi eme glaze](/guides/making-a-glaze).
 
-### Ihe fọdụrụ na glaze na mmiri ịsa
+### Ihe mkpofu glaze na mmiri nsacha
 
-Awụsala glaze, ma ọ bụ mmiri i ji saa ngwa glaze, n'ime sink ma ọ bụ n'ubi. UK Crafts Council na-atụ aro bọket mmiri dị iche maka ịsa aka, brọshị, ihe nyọ na ngwa. Hapụ ya ka ọ dọdaa n'abalị niile, wụpụ mmiri doro anya, mgbe ahụ mee ka glaze dọdara akọrọ ma tụba ya n'ihe nkpofu (ọ na-aga n'ebe a na-ekpofu ahịhịa), ọ dịghị mgbe n'ime ọwa mmiri.
+Awụsala glaze, ma ọ bụ mmiri i ji sachaa ngwa glaze, na sink ma ọ bụ n'ubi ọ dịla mgbe. Crafts Council nke UK na-atụ aro bọket mmiri dị iche maka ịsa aka, brọsh, ihe nyọ na ngwa ọrụ. Hapụ ya ka o dosie abalị niile, wụpụ mmiri doro anya dị n'elu, emesịa mee ka glaze dosiri akpọọ nkụ ma tinye ya n'ihe mkpofu (ọ na-aga ebe a na-akpofu ahịhịa), ọ dịla mgbe ị ga-awụnye ya na ọwa mmiri.
 
-Anyị na-atụ aro mkpuchi n'elu bọket ahụ: apịtị ahụ nwere otu metal ahụ dị na glaze, anụ ụlọ na-aṅụkwa mmiri tọrọ atọ. Iwu nkpofu dị iche site n'otu ebe ruo ebe ọzọ, ya mere lelee mpempe data nchekwa nke ngwaahịa ọ bụla, jụọkwa kansụl obodo gị ma ọ bụ ụlọ ọrụ mmiri ma ọ bụrụ na ị maghị nke ọma.
+Anyị na-atụ aro mkpuchi n'elu bọket ahụ: apịtị ahụ nwere otu metal ahụ dị na glaze, anụ ụlọ na-aṅụkwa mmiri kwụ ọtọ. Iwu mkpofu na-adịgasị iche site n'otu ebe ruo ebe ọzọ, ya mere lelee mpempe data nchekwa nke ngwaahịa ọ bụla, ma jụọ kansụl obodo gị ma ọ bụ ụlọ ọrụ mmiri ma ọ bụrụ na o doghị gị anya.
+
+Ụfọdụ ebe ọrụ na-agba apịtị kpọrọ nkụ ọkụ tupu ha atụfuo ya. Ha na-etinye ya n'efere ọzọ a ga-eji mechaa: mgbe a gbachara ọkụ, a gaghị eji efere ahụ ọzọ. Jupụta efere ahụ naanị otu ụzọ n'ụzọ anọ, n'ihi na apịtị ahụ na-agba ụfụfụ ma na-esu ka ọ na-agbaze, ma were efere kpuchie ya. Dobe ya n'elu shelf nwere kiln wash ma ọ bụ mpempe ọzọ, ma ọ bụrụ na ọ jupụta. Ịgba ọkụ na-eme ka apịtị ahụ ghọọ iko, nke na-ejide metal ndị ahụ nke ọma karịa ntụ na-adịghị njikọ, ya mere ọ dị nchekwa karịa n'ebe a na-akpofu ahịhịa. Jide apịtị kpọrọ nkụ dịka ị ga-esi jide glaze akọrọ, ya na respirator na n'emeghị uzuzu.
 
 ## Idobe uzuzu n'ebe ọrụ {#keeping-dust-in-the-studio}
 

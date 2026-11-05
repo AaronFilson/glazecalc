@@ -724,7 +724,7 @@
     "keyBright": "Stippellijn: waar de glazuren van Stull het glanzendst waren.",
     "keyLimits": "Streeplijnen en arcering: de bereiken voor siliciumoxide en aluminiumoxide van {name}.",
     "keyCrazed": "Arcering: waar ze haarscheuren kregen.",
-    "note": "Een richtlijn, geen voorspelling. R. T. Stull (Transactions of the American Ceramic Society, 1912) stookte bij kegel 11 met de smeltmiddelen vast op 0,3 K₂O en 0,7 CaO; andere smeltmiddelen en stookomstandigheden verschuiven de gebieden, en een te laag gestookt mat glazuur kan als glanzend worden uitgezet. De gebieden zijn zoals Glazy ze tekent."
+    "note": "Een richtlijn, geen voorspelling. R. T. Stull (Transactions of the American Ceramic Society, 1912) stookte tot ongeveer kegel 11, met de smeltmiddelen vast op 0,3 K₂O en 0,7 CaO; andere smeltmiddelen en andere stoken verschuiven de gebieden, en een glazuur dat alleen mat is omdat het te laag is gestookt, kan toch als glanzend uitkomen. De gebieden zijn zoals Glazy ze tekent."
   },
   "slurry": {
     "heading": "Soortelijk gewicht en water",
@@ -752,7 +752,17 @@
       "pint": "Het pintgewicht dat u wilt, oz"
     },
     "drySg": "SG van de droge grondstoffen",
-    "drySgHelp": "Ongeveer 2,5 voor de meeste glazuren; Glazy gebruikt 2,6.",
+    "drySgEmpty": "Alleen de droge gewichten hebben het nodig; het water om toe te voegen niet. Vul het in als u het weet.",
+    "drySgNeeded": "Vul het SG van de droge grondstoffen in om het droge glazuur in de emmer en het water voor een nieuw mengsel te zien.",
+    "estimate": {
+      "mineral": "Een schatting, {sg}, op grond van waaruit elke grondstof bestaat: de gemeten dichtheid van haar mineraal. Pas het aan als u het beter weet.",
+      "kind": "Een schatting, {sg}: veldspaten en kleien wegen ongeveer 2,6. Pas het aan als u het beter weet.",
+      "glass": "Een schatting, {sg}, berekend uit de oxiden van de fritten (die glas zijn). Pas het aan als u het beter weet.",
+      "mixed": "Een schatting, {sg}, per grondstof: de gemeten dichtheid van haar mineraal, ongeveer 2,6 voor veldspaten en kleien, en voor fritten berekend uit hun oxiden. Pas het aan als u het beter weet.",
+      "leftOut": "Weggelaten, omdat hun SG niet bekend is: {names}.",
+      "none": "Geen schatting voor dit recept: het SG van {names} is niet bekend. Vul het in als u het weet.",
+      "was": "Uw waarde wordt gebruikt. De schatting was {sg}; maak het veld leeg om ernaar terug te gaan."
+    },
     "batch": "Droog glazuur voor een nieuw mengsel, {unit}",
     "contents": "Bij SG {sg} bevat de emmer {glaze} droog glazuur en {water} water.",
     "add": "Om SG {target} te bereiken, voegt u {water} water toe. Het komt uit op ongeveer {volume}.",
@@ -760,6 +770,7 @@
     "already": "Het zit al op SG {target}.",
     "mix": "Meng {glaze} droog glazuur met {water} water voor ongeveer {volume} op SG {target}.",
     "badSg": "Een SG moet hoger zijn dan 1 (dat van water) en lager dan {dry}, dat van de droge grondstoffen.",
+    "badSgWater": "Een SG moet hoger zijn dan 1 (dat van water).",
     "badDry": "Het SG van de droge grondstoffen moet hoger zijn dan 1.",
     "note": "Het water is naar gewicht: een liter weegt een kilo, een Amerikaanse gallon ongeveer 8,3 lb. De berekening telt de volumes bij elkaar op, wat dichtbij komt maar niet exact is: voeg het water beetje bij beetje toe, roer, en meet opnieuw. Twee glazuren met hetzelfde SG kunnen nog steeds anders vloeien.",
     "saveTarget": "SG {sg} opslaan als streefwaarde van dit recept",

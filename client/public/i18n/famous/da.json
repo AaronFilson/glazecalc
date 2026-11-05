@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Dele af denne side er endnu ikke oversat og vises derfor på engelsk.",
+  "index": {
+    "crumb": "Berømte glasurer",
+    "title": "Berømte glasurer",
+    "lead": "Glasurer, der er kendt over hele verden, hver lavet af sine traditionelle lokale råvarer, med Seger-formlen og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger.",
+    "listHeading": "Glasurerne",
+    "more": "Flere glasurer er på vej: Hver tilføjes, når dens opskrift og råvarer bygger på mindst tre kilder, der er blevet læst."
+  },
+  "glaze": {
+    "lead": "En berømt glasur ({native}): dens traditionelle opskrift eller analyse, dens brænding og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger.",
+    "aboutHeading": "Om {name}",
+    "nativeName": "Navn på originalsproget",
+    "origin": "Hvor",
+    "period": "Hvornår",
+    "firing": "Brænding",
+    "cone": "kegle {cone}",
+    "historyOnly": "Kun historie: Denne glasur blev lavet med bly. Dens analyse vises som historie, ikke som en opskrift, der skal blandes. Udgaven nedenfor er en anden glasur, uden bly.",
+    "recipeHeading": "Den traditionelle opskrift",
+    "material": "Råvare",
+    "amount": "Mængde",
+    "unityHeading": "Seger-formel",
+    "analysisHeading": "Historisk analyse",
+    "oxide": "Oxid",
+    "percent": "Vægtprocent",
+    "useHeading": "Prøv den",
+    "open": "Åbn denne opskrift",
+    "openLeadFree": "Åbn den blyfri udgave",
+    "leadFreeTitle": "I stil med {name}, blyfri",
+    "allLink": "Alle berømte glasurer",
+    "safetyHeading": "Sikkerhed",
+    "safeMixing": "Sikker blanding og ventilation",
+    "firingGuide": "Brænding i en enkel ovn",
+    "makingGuide": "Sådan laver man en glasur",
+    "sourcesHeading": "Kilder",
+    "link": "Åbn",
+    "opened": "læst {date}"
+  },
+  "local": {
+    "heading": "Med lokale råvarer",
+    "leadFreeHeading": "Blyfri udgave",
+    "intro": "Den traditionelle opskrifts Seger-formel, lavet af de standardråvarer, der sælges der, hvor der købes ind. Vælg, hvor der købes ind, for at se den.",
+    "region": "Hvor råvarerne købes",
+    "proposal": "Forslagets egne råvarer",
+    "pick": "Vælg…",
+    "untested": "Beregnet, endnu ikke prøvebrændt.",
+    "testFirst": "Brænd prøvebrikker, før den bruges på noget emne, og test en flade med fødevarekontakt for afgivelse af metaller.",
+    "untestedNote": "Beregnet, endnu ikke prøvebrændt: Brænd prøvebrikker før brug.",
+    "close": "Den kommer tæt på målformlen.",
+    "fair": "Den kommer nogenlunde tæt på målformlen.",
+    "poor": "Disse råvarer kan ikke komme tæt på målformlen.",
+    "none": "De råvarer, der sælges der, kan ikke lave den.",
+    "choose": "Vælg, hvor råvarerne købes, for at se den lavet af dem, der sælges der."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduktion",
+    "neutral": "neutral",
+    "wood": "brænding med træ",
+    "salt": "saltbrænding",
+    "soda": "sodabrænding"
+  }
+}

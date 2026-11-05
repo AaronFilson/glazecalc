@@ -144,7 +144,7 @@ Su da değişkendir; Digitalfire suyun, sulu sırrın{{en: slurry}} davranışı
 5. Kuru cep ya da topak kalmayana kadar karıştırın.
 6. İki kez elekten geçirin (aşağıya bakın).
 7. Üstünü örtüp bir gece dinlendirin, sonra yeniden karıştırın ve dipte sert bir tabaka olup olmadığını kontrol edin.
-8. Özgül ağırlığı ölçün ve hedefinize ulaşmak için suyu azar azar ekleyin.
+8. Özgül ağırlığı ölçün ve hedefinize ulaşmak için suyu azar azar ekleyin. Sırrınızın kendi kuru özgül ağırlığını öğrenmek için bitmiş sulu sırrı da tartın (aşağıya bakın).
 9. Kovayı etiketleyin ve ne yaptığınızı yazın.
 10. Temizliği ıslak yapın: zemini paspaslayın ve hammadde kaplarının dışı dahil her yüzeyi silin.
 
@@ -205,6 +205,27 @@ Label: Hedef özgül ağırlık için su
 | {{SG 1.50}} |   yaklaşık 85 mL |  yaklaşık 850 mL | yaklaşık 13 US fl oz |
 | {{SG 1.60}} |   yaklaşık 64 mL |  yaklaşık 640 mL | yaklaşık 10 US fl oz |
 
+### Karıştırırken sırrınızın kuru özgül ağırlığını bulun
+
+Yukarıdaki 2,6 bir tahmindir. Kendi sırrınızın değeri, yani kuru tozunun yoğunluğu, karıştırırken alabileceğiniz üç sayıdan hesaplanabilir. Bu değerle, ileride o sırrın herhangi bir kovasında ne kadar toz olduğunu ve bir sonraki karışım için gereken suyu özgül ağırlıktan hesaplayabilirsiniz. Bizim hesabımız, bir kaynağın değil:
+
+1. Karışımdaki kuru tozun ağırlığını yazın: reçetenin toplamı.
+2. Başlamadan önce boş kovayı tartın ya da ağırlığını kovanın üzerine yazın.
+3. Her zamanki gibi karıştırın, eleyin ve sırrı özgül ağırlığına getirin. Hiç toz dışarıda kalmasın diye her şeyi elekten geçirin ve kovaya durulayın.
+4. Dolu kovayı tartın ve kovanın ağırlığını çıkarın. Bu, sulu sırrın ağırlığıdır.
+5. Özgül ağırlığı ölçün.
+
+Sonra:
+
+- **Su** = sulu sırrın ağırlığı − tozun ağırlığı.
+- mL olarak **sulu sırrın hacmi** = gram olarak sulu sırrın ağırlığı ÷ özgül ağırlık.
+- **Tozun hacmi** = sulu sırrın hacmi − su (1 g su 1 mL’dir).
+- **Kuru özgül ağırlık** = tozun ağırlığı ÷ tozun hacmi.
+
+Örneğin: 1000 g toz, {{SG 1.45}} değerinde 1980 g sulu sır verir. Su 980 g’dır, sulu sır 1980 ÷ 1,45 = yaklaşık 1366 mL’dir, toz 1366 − 980 = 386 mL yer kaplar ve kuru özgül ağırlık 1000 ÷ 386 = yaklaşık 2,59’dur.
+
+Suyu dökerken değil, sonunda bütün sulu sırrı tartın; böylece buharlaşan ya da sıçrayan su hesaba girmez. Burada küçük hatalar büyür: 0,01 şaşan bir özgül ağırlık okuması sonucu yaklaşık 2 ila %4 kaydırır, daha sulu bir sırda daha fazla. 1 kg ya da daha büyük bir karışım, hassas bir terazi ve özgül ağırlık için yukarıdaki 500 g’lık kap yöntemini kullanın. Yaygın hammaddelerin çoğu yaklaşık 2,5 ile 2,9 arasındadır; bu yüzden fazla zirkon ya da kurşun içermeyen bir sırda bunun çok dışında bir değer büyük olasılıkla bir ölçüm hatasıdır. Değeri reçetenin üzerine yazın.
+
 ### Epsom tuzu, CMC ve bentonit
 
 **Epsom tuzu**, sırrın dururken hafifçe jelleşmesini ve karıştırılınca yeniden akmasını sağlar. Buna sırrın **flokülasyonu**{{en: flocculating}} denir ve bu şekilde davranan bir sır **tiksotropiktir**{{en: thixotropic}}: daha düzgün sürülür, daha az damlar ve daha az çöker. Digitalfire, özgül ağırlık doğru olduktan sonra galon başına yaklaşık 2 g ile başlamayı (kabaca litre başına 0,5 g; bu bizim çevirimiz) ve miktarı her karıştırmada ayarlamayı öneriyor, çünkü dozu hiçbir reçete sabitlememelidir. Önce biraz sıcak suda çözmenizi öneririz. Digitalfire’ın bir örneğinde {{SG 1.45}} olan bir sır damlıyordu; su ile {{SG 1.43}} değerine indirildi, Epsom tuzu da onu yeniden krem kıvamına jelleştirdi ve sır düzgün sürüldü. Kabaca bir kontrol: karıştırın, durun ve izleyin. Jelleşmiş bir sır yaklaşık 2 ya da 3 saniye daha hareket eder, sonra durur ve biraz geri esner.
@@ -227,7 +248,7 @@ Bir sır{{en: glaze}} başka bir çamurda ya da başka bir fırında oldukça fa
 - bir seferde tek bir değişiklik
 - sırrın ince ve kalın hâlini görmek için tek daldırma ve çift daldırma
 - tüm karolar aynı fırın yükünde
-- pişirimden önce her karoya damga, oyma ya da sır altı kalemiyle bir işaret.
+- pişirimden önce her karoya damga, oyma ya da sır altı kalemiyle bir işaret. Pişmiş karolar birbirine benzer, pişirimden önce yapılan bir işaret ise fırından sağ çıkar; böylece hangi karonun hangi reçete olduğunu her zaman anlarsınız.
 
 Dik duran karolar öneririz, çünkü düz bir karo sırrın ne kadar aktığını gizler; sırrın kenarlarda nasıl açıldığını gösterecek dokulu bir şeridi ve sırsız bir dibi olsun. Damlaları tutmak için her birini küçük bir tabağa, bir bisküvi parçasına ya da raf koruyucu sürülmüş bir rafa koyun. Karoların ne kadar ısı aldığını göstermesi için yakınlarına bir **gözlem piramidi**{{en: witness cone}}, yani yeterli ısıyı aldığında eğilen küçük bir seramik piramit koyun; piramitler [Basit bir fırında pişirim](/guides/firing) rehberinde anlatılıyor. Her karoya kısa bir kod verin ve bunu kayıtlarınızda reçetenin karşısına yazın. Ceramic Arts Network için yazan Willers sayılar ve harfler kullanıyor ve sistemin kendisini defterin başına yazıyor.
 
@@ -265,13 +286,13 @@ Willers amacı iyi özetliyor: “bulduğunuz sonuçları tekrarlayabilmek ya da
 Table: Her sır tartımı için neler kaydedilmeli (bizim şablonumuz)
 Label: Kayıt şablonu
 
-| Bölüm      | Ne yazılmalı                                                                                                                                                                                              |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Reçete     | Reçete ve sürümü; hammadde markaları ve parti numaraları; varsa ikameler                                                                                                                                  |
-| Karıştırma | Tarih; tartım miktarı; eklenen su ve türü (musluk suyu, ters ozmoz suyu ya da damıtılmış su); karıştırmadan sonraki ve son özgül ağırlık; eklenen Epsom tuzu, CMC ve bentonit; elek meshi ve geçiş sayısı |
-| Sırlama    | Çamur bünyesi; bisküvi piramidi; daldırma, fırçayla sürme ya da dökme; daldırma süresi ya da kat sayısı; kuru kalınlık                                                                                    |
-| Pişirim    | Fırın ve raftaki yer; rampaları, bekletmeleri ve soğutmasıyla pişirim programı; atmosfer (oksidasyon ya da redüksiyon); yalnızca fırının neye ayarlandığı değil, gözlem piramidinin ne gösterdiği         |
-| Sonuç      | Yüzey ve renk; varsa akma, sır çatlağı ya da iğne delikleri; önden, arkadan ve yandan fotoğraflar; karo kodu                                                                                              |
+| Bölüm      | Ne yazılmalı                                                                                                                                                                                                                                                    |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reçete     | Reçete ve sürümü; hammadde markaları ve parti numaraları; varsa ikameler                                                                                                                                                                                        |
+| Karıştırma | Tarih; tartım miktarı; eklenen su ve türü (musluk suyu, ters ozmoz suyu ya da damıtılmış su); karıştırmadan sonraki ve son özgül ağırlık; kuru özgül ağırlığı için bitmiş sulu sırrın ağırlığı; eklenen Epsom tuzu, CMC ve bentonit; elek meshi ve geçiş sayısı |
+| Sırlama    | Çamur bünyesi; bisküvi piramidi; daldırma, fırçayla sürme ya da dökme; daldırma süresi ya da kat sayısı; kuru kalınlık                                                                                                                                          |
+| Pişirim    | Fırın ve raftaki yer; rampaları, bekletmeleri ve soğutmasıyla pişirim programı; atmosfer (oksidasyon ya da redüksiyon); yalnızca fırının neye ayarlandığı değil, gözlem piramidinin ne gösterdiği                                                               |
+| Sonuç      | Yüzey ve renk; varsa akma, sır çatlağı ya da iğne delikleri; önden, arkadan ve yandan fotoğraflar; karo kodu                                                                                                                                                    |
 
 > [!NOTE]
 > Glazecalc uygulamasında kayıtlı bir [reçete](/recipe) reçetenin kendisini tutar. Bir [pişirim kaydı](/firing) her pişirimi kaydeder: fırın, tarih, saatler, sıcaklıklar, piramitler ve notlar. [Notlar](/notes) geri kalan her şeyi tutar; örneğin yukarıdaki tartım kaydını ve her karonun ne gösterdiğini.

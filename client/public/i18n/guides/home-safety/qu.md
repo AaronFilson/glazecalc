@@ -59,29 +59,31 @@ Label: Soluble materialkuna
 
 Titipa hatun manchakuyninqa hukmi: manan huk cucharachu, aswanpas huch'uy hayk'a ñut'u allpa semanakunapi utaq killakunapi millp'usqa, mana ima rikch'aywan (uraypi qhaway Titi, wawakuna).
 
-## Wasipi materialkunata waqaychay {#storing-materials}
+## Materialkunata wasipi waqaychay {#storing-materials}
 
-Manan ima kamachikuq wasipas wasipi esmalte materialkunata waqaychanapaq kamachiykunata churanchu, ichaqa qhali kay, mana manchakuy p'anqakunaqa kikinta ninku: llamk'ayta sapan kitipi hap'iy, wawakunamanta karupi. Pennsylvaniapa qhali kay ministerion, titiwan kusikuypaq llamk'aykunamanta qillqaspa, nin: "Kusikuypaq llamk'ayniykipaq huk sapan llamk'ana kitita utaq garajeta llamk'achiy, wawakunatataq chay kitimanta karupi hap'iy."
+Manam huk kamachiq wasi esmalte materialkunata wasipi waqaychanapaq kamachiykunata churanchu, ichaqa qhali kaymanta mana manchakuymanta p'anqakunaqa huk yuyayllam: llamk'ayta kikin maypinpi waqaychay, wawakunamanta karupi. Pennsylvaniap qhali kay wasin, titiwan (plomo, Pb) llamk'aq kusikuy llamk'aykunamanta qillqaspa, nin: "Kusikuy llamk'ayniykipaq sapan llamk'ana k'itita utaq garajeta llamk'achiy, wawakunatataq kay k'itimanta karunchay."
 
-### Waqaychanapaq lista
+### Waqaychanapaq qhawana sutichakuna
 
-Kaykunaqa miyu hark'anapaq tukuy kamachiykuna esmaltepi churasqa. Manan ima saña ruray kamachiypas churanchu, ichaqa llapanta yuyaychayku:
+Kaykunaqa miyu harkanapaq llapan kamachiykunam esmalteman churasqa. Manam mayqen ceramica kamachiypas (estándar) kaykunata churanchu, ichaqa llapantam yuyaychayku:
 
-- Ch'aki materialkunata llaveyuqpi waqaychay: huk armario, utaq llaveyuq cuarto, garaje utaq huch'uy wasi. Huk hanaq estante yanapanmi, ichaqa wawakunaqa siqanku. Ñawpaqta wakillanta llaveyuqpi waqaychayta atispaqa, soluble materialkunawan llimp'iqkunawan qallariy.
-- Materialkunata ñawpaq bolsankunapi utaq tinankunapi waqaychay. Hukman churaspaqa, bolsapi qillqasqa kasqanman hina sutinwan etiquetay.
-- Ama hayk'aqpas mikhuna utaq ukyana envasekunata (yogur tinakuna, frascokuna, botellakuna) esmalte materialkunapaq llamk'achiychu, etiquetasqa kaspapas. Wawaqa yachanmi yogur tinapi imachus kasqanta.
-- Taller llamk'anakunata (cucharónkuna, cucharakuna, batidorkuna, tamizkuna, balanzakuna) tallerpi hap'iy. Ama hayk'aqpas yanuna wasi llamk'anakunata esmaltepaq llamk'achiychu, nitaq esmalte llamk'anakunata mikhunapaq.
-- Unuyuq esmaltekunata etiquetasqa baldekunapi, tapankunawan, waqaychay.
-- Sapa materialpa seguridad datos p'anqanta paywan kuska hap'iy, papelpi utaq telefonoykipi.
-- Ama tallermanta imatapas yanuna wasipi hap'iychu: ni bolsakunata, ni baldekunata, ni llamk'anakunata, ni probetakunata.
+- Ch'aki materialkunata wichqasqapi waqaychay: armario, utaq wichqakuq cuarto, garaje utaq huch'uy wasi. Hanaq tablaqa yanapanmi, ichaqa wawakunaqa wichanku. Qallariypi pisi kaqllata wichqayta atispaqa, unupi chulluq materialkunawan llimp'iqkunawan qallariy.
+- Materialkunata ñawpaq bolsankupi utaq mankankupi waqaychay. Hukninta huk mankaman churaspaqa, bolsapi qillqasqa sutinta chiqanta etiquetapi qillqay.
+- Ama hayk'appas mikhuna utaq ukyana mankakunata (yogurt vaso, frasco, botella) esmalte materialkunapaq llamk'achiychu, etiquetayuq kaptinpas. Wawaqa yogurt vasopi ima kasqanta yachanmi.
+- Llamk'ana wasip herramientankunata (huqariqkuna, cucharakuna, batiqkuna, tamizkuna, balanzakuna) llamk'ana wasillapi waqaychay. Ama hayk'appas yanuna wasip herramientankunata esmaltepaq, nitaq esmalte herramientakunata mikhunapaq llamk'achiychu.
+- Hump'i esmaltekunata etiquetayuq baldekunapi tapasqa waqaychay.
+- Sapa materialpa seguridad datos p'anqanta (SDS) paywan kuska waqaychay, p'anqapi utaq celularniykipi.
+- Llamk'ana wasimanta ama imatapas yanuna wasipi waqaychaychu: ama bolsakunata, baldekunata, herramientakunata nitaq probetakunata.
 
-Materialkunata rantinapaq, waqaychanapaq aswan yachanaykipaq, qhaway [Imaynatataq esmalteta ruranki](/guides/making-a-glaze).
+Materialkunata rantiymanta waqaychaymanta aswan yachanaykipaq, qhaway [Imaynatataq esmalteta ruranki](/guides/making-a-glaze).
 
-### Esmalte puchu, maylliy unu
+### Esmalte q'upa, mayllana unupas
 
-Ama hayk'aqpas esmalteta, nitaq esmalte llamk'anakunata maylliykusqayki unuta, lavaderoman utaq huertaman hich'aychu. UK Crafts Councilmi huk sapan unu baldeta yuyaychan makikunata, pinselkunata, tamizkunata, llamk'anakunata maylliykunapaq. Tutantin tiyachiy, ch'uya unuta hich'ay, chaymantataq tiyasqa esmalteta ch'akichiy, basuraman churaytaq (relleno sanitarioman rin), ama hayk'aqpas desagüeman.
+Ama hayk'appas esmalteta, utaq esmalte herramientakunata mayllasqayki unuta, lavaderoman utaq huertaman hich'aychu. UK Crafts Councilmi makikunata, brochakunata, tamizkunata herramientakunata mayllanapaq sapan unu baldeta yuyaychan. Tukuy tuta tiyaykunanpaq saqiy, hanaqpi ch'uya unuta hich'ay, chaymanta tiyaykusqa esmalteta ch'akichiy q'upaman churay (q'upa pampanaman rin), ama hayk'appas desagüeman hich'aychu.
 
-Chay baldepi tapata yuyaychayku: qhunchuqa esmaltepa kikin metalninkunatan hap'in, uywakunataq sayasqa unuta ukyanku. Wikch'uy kamachiykunaqa sapa llaqtapi hukniraqmi, chayrayku sapa productopa seguridad datos p'anqanta qhaway, mana allinta yachaspataq llaqtaykipa municipalidadninta utaq unu empresata tapuy.
+Chay baldepaq tapatam yuyaychayku: chay t'uruqa esmalte hina kaq metalkunatam hap'in, uywakunataq sayasqa unuta ukyanku. Q'upa wikch'uy kamachiykunaqa maypipas hukniraqmi, chayrayku sapa productop seguridad datos p'anqanta qhaway, mana yachaspataq llaqtaykip municipionta utaq unu empresata tapukuy.
+
+Wakin llamk'ana wasikunaqa ch'akisqa t'uruta manaraq wikch'uspa ruphachinku. Tukunankama llamk'achikunqa chay yapa platopim churanku: ruphachisqa qhipaman chay platoqa manañam llamk'achikuyta atinchu. Platota tawa t'aqamanta hukllata hunt'achiy, t'uruqa chulluspa phuqchun phuqchuchakuntaq, hinaspa huk platowan tapay. Kiln washyuq tablaman utaq yapa p'allqaman churay, phuqchispa hich'akunman chayrayku. Ruphachiyqa t'urutam vidrioman tukuchin, chaytaq metalkunata k'ullu ñut'u allpamanta aswan sinchita hap'in, chayrayku q'upa pampanapi aswan mana manchakuypaqmi. Ch'aki t'uruta ch'aki esmalteta hap'iq hina hap'iy, respiradorwan, mana ñut'u allpa huqarispa.
 
 ## Ñut'u allpata tallerpi hap'iy {#keeping-dust-in-the-studio}
 

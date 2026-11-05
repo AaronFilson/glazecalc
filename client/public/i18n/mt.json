@@ -9,6 +9,7 @@
     "homeSafety": "Tavvelenax lill-familja tiegħek - Glazecalc",
     "firing": "Il-ħami f’forn sempliċi - Glazecalc",
     "learnWithJohnBritt": "Tgħallem mal-kors b’xejn tal-glejż ta’ John Britt - Glazecalc",
+    "teachingGlazeCalculation": "It-tagħlim tal-kalkolu tal-glejż - Glazecalc",
     "about": "Dwar - Glazecalc",
     "privacy": "Privatezza - Glazecalc",
     "terms": "Termini tal-użu - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Approva bidla - Glazecalc",
     "cones": "Tabella tal-koni: temperaturi tal-koni Orton u SK - Glazecalc",
     "materials": "Materjali standard tal-glejż: analiżi u perikli - Glazecalc",
-    "materialInfo": "{name}: analiżi tal-ossidi u perikli - Glazecalc"
+    "materialInfo": "{name}: analiżi tal-ossidi u perikli - Glazecalc",
+    "famousGlazes": "Glejżijiet famużi - Glazecalc",
+    "famousGlaze": "Glejż {name} - Glazecalc"
   },
   "nav": {
     "skip": "Aqbeż għall-kontenut",
@@ -177,6 +180,7 @@
     "homeSafety": "X’għandek tagħmel jekk tifel jew annimal domestiku jibla’ materjal tal-glejż, u kif iżżomm il-materjali, it-trab, il-forn u l-oġġetti sikuri għall-familja.",
     "firing": "Kif taħmi f’forn elettriku: agħżel, qiegħed u aqra l-koni, u segwi programmi ppubblikati għall-ħamjiet tal-bisque u tal-glejż, b’tabella tal-koni.",
     "learnWithJohnBritt": "Sieħeb għall-Glaze Course b’xejn ta’ John Britt online: il-vidjows tiegħu unità b’unità, bil-gwidi ta’ Glazecalc u eżerċizzji fil-kalkulatur.",
+    "teachingGlazeCalculation": "6 sessjonijiet biex tgħallem il-formula ta’ Seger (UMF): il-materjali u l-provi fi trijangolu, il-mol, mir-riċetta għall-formula u lura, u d-difetti tal-glejż, b’eżempji maħdumin u folji tax-xogħol biex tipprintja.",
     "advice": "Suġġerimenti prattiċi dwar it-taħlit, it-tqegħid tal-glejż u l-ħami, minn Glazecalc, u l-pariri tiegħek. B’xejn għall-fuħħarin u għal min jaħdem iċ-ċeramika.",
     "about": "Glazecalc huwa kalkulatur tal-kimika tal-glejż u pitazz, b’xejn u b’sors miftuħ. Ara kif jikkalkula l-formula ta’ Seger (UMF) u kif inhu mibni.",
     "privacy": "Kif Glazecalc jittratta d-data tiegħek: l-ebda reklam, analitika jew traċċar, u xejn ma jinbiegħ. X’jinżamm, għaliex, u kif tuża d-drittijiet tiegħek.",
@@ -187,6 +191,8 @@
     "materials": "Il-materjali tal-librerija standard ta’ Glazecalc, mill-feldspati u t-tafal sal-frits u s-sorsi tal-boron, bl-analiżi tal-ossidi, il-formula ta’ Seger u l-perikli.",
     "materialInfo": "{name}: analiżi tal-ossidi, formula ta’ Seger, telf mit-tqabbid bin-nar u perikli fil-librerija standard ta’ Glazecalc.",
     "materialInfoLong": "{name} fil-librerija standard ta’ Glazecalc tal-materjali tal-glejż: l-analiżi tal-ossidi, il-kontribut fil-formula ta’ Seger, it-telf mit-tqabbid bin-nar u l-perikli.",
+    "famousGlazes": "Glejżijiet famużi minn madwar id-dinja: ir-riċetta tradizzjonali jew l-analiżi storika ta’ kull glejż, il-formula ta’ Seger tiegħu, u verżjoni bil-materjali li jinbiegħu fejn tinsab int.",
+    "famousGlaze": "Il-glejż {name} ({native}): ir-riċetta tradizzjonali jew l-analiżi storika tiegħu, il-ħami, il-formula ta’ Seger u s-sorsi, u verżjoni bil-materjali li jinbiegħu fejn tinsab int.",
     "imageAlt": "Il-logo ta’ Glazecalc u l-intestatura tiegħu, kimika tal-glazes b’xejn għall-fuħħara, ħdejn ritratt ta’ pakketti ta’ koni maħmija."
   },
   "notices": {

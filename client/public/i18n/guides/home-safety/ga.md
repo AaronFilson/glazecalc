@@ -61,27 +61,29 @@ Tá príomhchontúirt na luaidhe difriúil: ní spúnóg amháin, ach méideanna
 
 ## Ábhair a stóráil sa bhaile {#storing-materials}
 
-Níl aon chomhlacht oifigiúil a leagann síos rialacha chun ábhair ghlónra{{en: glaze materials}} a stóráil sa bhaile, ach aontaíonn leathanaigh sláinte agus sábháilteachta: coinnigh an obair ina spás féin, amach ó leanaí. Deir Roinn Sláinte Pennsylvania, ag scríobh faoi chaithimh aimsire a úsáideann luaidhe: “Úsáid spás oibre nó garáiste ar leith do do chaitheamh aimsire agus coinnigh leanaí amach ón limistéar seo.”
+Níl aon chomhlacht oifigiúil a leagann síos rialacha chun ábhair ghlónra a stóráil sa bhaile, ach aontaíonn leathanaigh sláinte agus sábháilteachta: coinnigh an obair ina spás féin, i bhfad ó leanaí. Deir roinn sláinte Pennsylvania, agus í ag scríobh faoi chaitheamh aimsire a úsáideann luaidhe: “Úsáid spás oibre ar leith nó garáiste don chaitheamh aimsire, agus coinnigh leanaí amach ón limistéar seo.”
 
 ### Seicliosta stórála
 
-Seo iad rialacha ginearálta chun nimhiú a chosc, curtha i bhfeidhm ar ghlónra. Ní leagann aon chaighdeán ceirmeachta síos iad, ach molaimid iad uile:
+Is rialacha ginearálta iad seo chun nimhiú a chosc, curtha i bhfeidhm ar ghlónra. Ní leagann aon chaighdeán ceirmeachta síos iad, ach molaimid iad go léir:
 
-- Coinnigh ábhair thirime faoi ghlas: i gcaibinéad, nó i seomra, i ngaráiste nó i seid is féidir a chur faoi ghlas. Cabhraíonn seilf ard, ach dreapann leanaí. Mura féidir leat ach cúpla rud a chur faoi ghlas ar dtús, tosaigh leis na hábhair intuaslagtha agus leis na hábhair datha{{en: colorants}}.
-- Coinnigh ábhair ina málaí nó ina dtobáin bhunaidh. Má aistríonn tú ceann acu go coimeádán eile, cuir lipéad air leis an ainm díreach mar atá sé scríofa ar an mála.
-- Ná húsáid riamh coimeádáin bia ná dí (tobáin iógairt, prócaí, buidéil) d’ábhair ghlónra, fiú le lipéad orthu. Tá a fhios ag leanbh cad a bhíonn i dtobán iógairt.
-- Coinnigh uirlisí an stiúideo (scúpanna, spúnóga, greadtóirí, criathair, meánna) sa stiúideo. Ná húsáid riamh uirlisí cistine do ghlónra, ná uirlisí glónra do bhia.
-- Coinnigh glónraí fliucha i mbuicéid lipéadaithe, agus na clúdaigh orthu.
-- Coinnigh bileog sonraí sábháilteachta gach ábhair in éineacht leis, ar pháipéar nó ar do ghuthán.
-- Ná coinnigh aon rud ón stiúideo sa chistin: ná málaí, ná buicéid, ná uirlisí, ná tíleanna tástála{{en: test tiles}}.
+- Coinnigh ábhair thirime faoi ghlas: i gcófra, nó i seomra, i ngaráiste nó i mbothán a chuirtear faoi ghlas. Cabhraíonn seilf ard, ach dreapann leanaí. Mura féidir leat ach cúpla rud a chur faoi ghlas ar dtús, tosaigh leis na hábhair intuaslagtha agus leis na hábhair datha{{en: colorants}}.
+- Coinnigh na hábhair ina málaí nó ina dtobáin bhunaidh. Má aistríonn tú ceann acu go coimeádán eile, cuir lipéad air leis an ainm díreach mar atá sé scríofa ar an mála.
+- Ná húsáid coimeádáin bhia ná dí riamh (tobáin iógairt, prócaí, buidéil) d’ábhair ghlónra, fiú le lipéad orthu. Tá a fhios ag leanbh cad a bhíonn i dtobán iógairt.
+- Coinnigh uirlisí an stiúideo (scúpanna, spúnóga, greadtóirí, criathair, meánna) sa stiúideo. Ná húsáid uirlisí cistine riamh do ghlónra, ná uirlisí glónra do bhia.
+- Coinnigh glónraí fliucha i mbuicéid a bhfuil lipéid orthu agus na clúdaigh orthu.
+- Coinnigh bileog sonraí sábháilteachta gach ábhair in éineacht leis, ar pháipéar nó ar d’fhón.
+- Ná coinnigh aon rud ón stiúideo sa chistin: gan málaí, buicéid, uirlisí ná tíleanna tástála.
 
-Chun níos mó a fhoghlaim faoi ábhair a cheannach agus a stóráil, féach an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze).
+Le haghaidh tuilleadh faoi ábhair a cheannach agus a stóráil, féach an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze).
 
-### Fuíoll glónra agus uisce sruthlaithe
+### Dramhaíl ghlónra agus uisce sruthlaithe
 
-Ná doirt riamh glónra, ná uisce inar shruthlaigh tú uirlisí glónra, síos an doirteal ná ar an ngairdín. Molann Crafts Council na Ríochta Aontaithe buicéad uisce ar leith chun lámha, scuaba, criathair agus uirlisí a ní. Lig dó síothlú thar oíche, doirt an t-uisce glan de, ansin triomaigh an glónra a shíothlaigh agus cuir sa bhruscar é (téann sé go láithreán líonta talún); ná doirt síos an draein é choíche.
+Ná doirt riamh glónra, ná uisce inar shruthlaigh tú uirlisí glónra, síos an doirteal ná ar an ngairdín. Molann Crafts Council na Ríochta Aontaithe buicéad uisce ar leith chun lámha, scuaba, criathair agus uirlisí a ní. Lig dó síothlú thar oíche, doirt an t-uisce glé as, ansin triomaigh an glónra síothlaithe agus cuir sa bhruscar é (téann sé go dtí an láithreán líonta talún), ach ná cuir síos an draein é riamh.
 
-Molaimid clúdach a chur ar an mbuicéad sin: bíonn na miotail chéanna sa dríodar agus atá sa ghlónra, agus ólann peataí uisce a fhágtar ina sheasamh. Bíonn rialacha diúscartha éagsúil ó áit go háit, mar sin seiceáil bileog sonraí sábháilteachta gach táirge, agus cuir ceist ar do chomhairle áitiúil nó ar do chomhlacht uisce mura bhfuil tú cinnte.
+Molaimid clúdach ar an mbuicéad sin: tá na miotail chéanna sa sloda agus atá sa ghlónra, agus ólann peataí uisce a bhíonn ina sheasamh. Bíonn rialacha diúscartha difriúil ó áit go háit, mar sin seiceáil bileog sonraí sábháilteachta gach táirge, agus cuir ceist ar do chomhairle áitiúil nó ar do sholáthraí uisce mura bhfuil tú cinnte.
+
+Bácálann roinnt stiúideonna an sloda triomaithe sula gcaitheann siad uathu é. Cuireann siad i mbabhla spártha é a mbeidh deireadh leis: tar éis na bácála ní féidir an babhla a úsáid arís. Ná líon an babhla ach go dtí an ceathrú cuid, mar go gcúrann an sloda agus go mbolgann sé agus é ag leá, agus clúdaigh é le pláta. Cuir ar sheilf a bhfuil brat seilfe{{en: kiln wash}} uirthi nó ar leac spártha é, ar eagla go gcuirfidh sé thar maoil. Iompaíonn an bhácáil an sloda ina ghloine, a choinníonn na miotail i bhfad níos daingne ná púdar scaoilte, mar sin is sábháilte é i láithreán líonta talún. Láimhseáil an sloda tirim mar a láimhseálfá glónra tirim, le masc análaitheora{{en: respirator}} agus gan deannach a dhéanamh.
 
 ## Deannach a choinneáil sa stiúideo {#keeping-dust-in-the-studio}
 

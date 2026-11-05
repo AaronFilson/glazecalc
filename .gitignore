@@ -3,6 +3,9 @@ node_modules/
 dist/
 .angular/
 
+# The sitemap's page dates, worked out from git when the image is built (scripts/page-dates.mjs)
+lib/page-dates.json
+
 # Local MongoDB data (mongod --dbpath ./db)
 db/
 

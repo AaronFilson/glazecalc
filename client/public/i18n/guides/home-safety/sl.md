@@ -61,27 +61,29 @@ Glavna nevarnost svinca je drugačna: ne ena žlica, temveč majhne količine pr
 
 ## Shranjevanje surovin doma {#storing-materials}
 
-Nobeno uradno telo ne določa pravil za shranjevanje surovin za glazure{{en: glaze materials}} doma, vendar se strani o zdravju in varnosti strinjajo: delo naj ima svoj prostor, stran od otrok. Ministrstvo za zdravje Pensilvanije v besedilu o konjičkih, pri katerih se uporablja svinec, svetuje: »Za svoj konjiček uporabljajte namenski delovni prostor ali garažo in otroke držite stran od tega prostora.«
+Noben uradni organ ne določa pravil za shranjevanje surovin za glazure doma, strani o zdravju in varnosti pa se strinjajo: delo naj ima svoj prostor, stran od otrok. Zdravstveno ministrstvo Pensilvanije v besedilu o konjičkih, pri katerih se uporablja svinec, pravi: »Za svoj konjiček uporabljajte namenski delovni prostor ali garažo in otroke držite stran od tega prostora.«
 
 ### Kontrolni seznam za shranjevanje
 
-To so splošna pravila za preprečevanje zastrupitev, uporabljena pri glazurah. Ne določa jih noben standard za keramiko, vendar predlagamo vsa:
+To so splošna pravila za preprečevanje zastrupitev, uporabljena pri glazurah. Noben keramični standard jih ne določa, vendar predlagamo vsa:
 
-- Suhe surovine hranite zaklenjene: v omari ali v prostoru, garaži ali lopi, ki jih je mogoče zakleniti. Visoka polica pomaga, vendar otroci plezajo. Če lahko sprva zaklenete le nekaj stvari, začnite s topnimi surovinami in barvili.
-- Surovine hranite v originalnih vrečah ali dozah. Če katero preložite v drugo posodo, jo označite z imenom natanko tako, kot je napisano na vreči.
-- Za surovine za glazure nikoli ne uporabljajte posod za hrano ali pijačo (lončkov za jogurt, kozarcev, steklenic), tudi če so označene. Otrok ve, kaj je v lončku za jogurt.
-- Pripomočke iz delavnice (zajemalke, žlice, metlice, sita, tehtnice) imejte v delavnici. Kuhinjskih pripomočkov nikoli ne uporabljajte za glazure in pripomočkov za glazure nikoli za hrano.
-- Mokre glazure hranite v označenih vedrih, zaprtih s pokrovi.
-- Varnostni list vsake surovine imejte pri njej, na papirju ali v telefonu.
-- V kuhinji naj ne bo ničesar iz delavnice: nobenih vreč, veder, pripomočkov ali testnih ploščic{{en: test tiles}}.
+- Suhe surovine imejte zaklenjene: v omari ali v prostoru, garaži ali lopi, ki se zaklene. Visoka polica pomaga, vendar otroci plezajo. Če lahko na začetku zaklenete le nekaj stvari, začnite s topnimi surovinami in barvili.
+- Surovine hranite v izvirnih vrečah ali posodah. Če katero preložite v drugo posodo, jo označite z imenom, natanko kot je napisano na vreči.
+- Za surovine za glazure nikoli ne uporabljajte posod za hrano ali pijačo (lončkov za jogurt, kozarcev, steklenic), niti označenih. Otrok ve, kaj je v lončku za jogurt.
+- Orodje iz delavnice (zajemalke, žlice, metlice, sita, tehtnice) naj ostane v delavnici. Nikoli ne uporabljajte kuhinjskega orodja za glazuro ali orodja za glazuro za hrano.
+- Mokre glazure hranite v označenih vedrih s pokrovi.
+- Varnostni list vsake surovine imejte ob njej, na papirju ali v telefonu.
+- V kuhinji naj ne bo ničesar iz delavnice: ne vreč, veder, orodja ne testnih ploščic.
 
 Več o nakupu in shranjevanju surovin preberite v vodniku [Kako pripraviti glazuro](/guides/making-a-glaze).
 
-### Ostanki glazure in voda od izpiranja
+### Odpadna glazura in voda za izpiranje
 
-Glazure ali vode, v kateri ste izpirali pripomočke za glazure, nikoli ne zlivajte v umivalnik ali na vrt. Britanski Crafts Council predlaga ločeno vedro vode za umivanje rok, čopičev, sit in pripomočkov. Pustite, da se čez noč usede, odlijte bistro vodo, nato usedlo glazuro posušite in jo vrzite med odpadke (konča na odlagališču), nikoli v odtok.
+Glazure ali vode, v kateri ste izpirali orodje za glazuro, nikoli ne zlijte v odtok ali na vrt. Britanski Crafts Council predlaga ločeno vedro vode za umivanje rok, čopičev, sit in orodja. Pustite ga čez noč, da se usede, odlijte bistro vodo, nato usedlo glazuro posušite in jo vrzite med odpadke (gre na odlagališče), nikoli v odtok.
 
-Predlagamo, da ima to vedro pokrov: usedlina vsebuje iste kovine kot glazura, hišni ljubljenčki pa pijejo stoječo vodo. Pravila za odstranjevanje se razlikujejo od kraja do kraja, zato preverite varnostni list vsakega izdelka in, če niste prepričani, vprašajte svojo občino ali komunalno podjetje.
+Predlagamo, da ima to vedro pokrov: usedlina vsebuje enake kovine kot glazura, hišni ljubljenčki pa pijejo stoječo vodo. Pravila za odstranjevanje se od kraja do kraja razlikujejo, zato preverite varnostni list vsakega izdelka in se, če niste prepričani, posvetujte z občino ali komunalnim podjetjem.
+
+Nekatere delavnice posušeno usedlino pred odstranitvijo žgejo. Dajo jo v odvečno skledo, ki jo bodo žrtvovali: po žganju sklede ni več mogoče uporabiti. Skledo napolnite le do četrtine, ker se usedlina med taljenjem peni in mehuri, in jo pokrijte s krožnikom. Postavite jo na šamotno ploščo, premazano s premazom za šamotne plošče, ali na odvečno ploščo, za primer, če se prelije. Žganje usedlino spremeni v steklo, ki kovine zadrži veliko trdneje kot sipek prah, zato je na odlagališču varnejša. S suho usedlino ravnajte kot s suho glazuro, z zaščitno dihalno masko in brez dviganja prahu.
 
 ## Prah naj ostane v delavnici {#keeping-dust-in-the-studio}
 

@@ -724,7 +724,7 @@
     "keyBright": "Bodkovaná čiara: kde boli Stullove glazúry najlesklejšie.",
     "keyLimits": "Čiarkované čiary a tieňovanie: rozsahy oxidu kremičitého a oxidu hlinitého v sade {name}.",
     "keyCrazed": "Šrafovanie: kde trhlinkovali.",
-    "note": "Orientačná pomôcka, nie predpoveď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaľoval na kužeľ 11 s tavivami pevne stanovenými na 0,3 K₂O a 0,7 CaO; iné tavivá a výpaly oblasti posúvajú a nedopálená matná glazúra sa môže v diagrame objaviť ako lesklá. Oblasti sú tak, ako ich kreslí Glazy."
+    "note": "Orientácia, nie predpoveď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaľoval asi na kužeľ 11 s pevnými tavivami 0,3 K₂O a 0,7 CaO; iné tavivá a výpaly oblasti posúvajú a glazúra, ktorá je matná len preto, že je nedopálená, môže v diagrame aj tak padnúť medzi lesklé. Oblasti sú zakreslené tak, ako ich kreslí Glazy."
   },
   "slurry": {
     "heading": "Relatívna hustota a voda",
@@ -752,7 +752,17 @@
       "pint": "Požadovaná hmotnosť pinty, oz"
     },
     "drySg": "Hustota suchých surovín",
-    "drySgHelp": "Asi 2,5 pri väčšine glazúr; Glazy používa 2,6.",
+    "drySgEmpty": "Potrebujú ju len suché hmotnosti; voda na pridanie nie. Ak ju poznáte, zadajte ju.",
+    "drySgNeeded": "Zadajte hustotu suchých surovín a uvidíte suchú glazúru vo vedre a vodu pre novú dávku.",
+    "estimate": {
+      "mineral": "Odhad, {sg}, podľa toho, z čoho sa každá surovina skladá: nameranej hustoty jej minerálu. Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "kind": "Odhad, {sg}: živce a íly majú hustotu asi 2,6. Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "glass": "Odhad, {sg}, vypočítaný z oxidov frít (sú to sklá). Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "mixed": "Odhad, {sg}, podľa každej suroviny: nameraná hustota jej minerálu, asi 2,6 pre živce a íly a pri fritách výpočet z ich oxidov. Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "leftOut": "Vynechané, lebo ich hustota nie je známa: {names}.",
+      "none": "Pre tento recept nie je odhad: hustota surovín {names} nie je známa. Ak ju poznáte, zadajte ju.",
+      "was": "Použije sa vaša hodnota. Odhad bol {sg}; ak sa k nemu chcete vrátiť, vymažte pole."
+    },
     "batch": "Suchá glazúra na novú dávku, {unit}",
     "contents": "Pri hustote {sg} obsahuje vedro {glaze} suchej glazúry a {water} vody.",
     "add": "Ak chcete dosiahnuť hustotu {target}, pridajte {water} vody. Výsledný objem bude asi {volume}.",
@@ -760,6 +770,7 @@
     "already": "Už má hustotu {target}.",
     "mix": "Zmiešajte {glaze} suchej glazúry s {water} vody, vznikne asi {volume} s hustotou {target}.",
     "badSg": "Hustota musí byť väčšia ako 1 (hustota vody) a menšia ako {dry} pri suchých surovinách.",
+    "badSgWater": "Hustota musí byť väčšia ako 1 (hustota vody).",
     "badDry": "Hustota suchých surovín musí byť väčšia ako 1.",
     "note": "Voda sa udáva podľa hmotnosti: liter váži kilogram, americký galón asi 8,3 lb. Výpočet sčítava objemy, čo platí približne, nie presne: pridávajte vodu po troškách, miešajte a merajte znova. Dve glazúry s rovnakou hustotou môžu napriek tomu tiecť inak.",
     "saveTarget": "Uložiť hustotu {sg} ako cieľ tohto receptu",

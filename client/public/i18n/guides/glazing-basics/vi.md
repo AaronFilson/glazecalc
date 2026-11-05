@@ -5,7 +5,7 @@ lead: Men được làm từ gì, lò nung biến nó thành thủy tinh thế n
 
 ## Men là gì {#what-a-glaze-is}
 
-**Men**{{en: glaze}} là một lớp thủy tinh mỏng được nung chảy dính vào sản phẩm gốm. Glazy, cơ sở dữ liệu công thức men mở, gọi nó là “một công thức thủy tinh được điều chỉnh để nóng chảy và dính vào đất sét ở những nhiệt độ nhất định”. Nó được phủ lên dưới dạng một lớp bột và nóng chảy trong lò nung thành một lớp thủy tinh bịt kín đất sét, nên sản phẩm ít bị rỉ nước, ố hay mòn hơn. Ở đỉnh của lần nung, khối nóng chảy còn phản ứng với đất sét, thường tạo ra một lớp giữa chúng giữ men dính chặt. Trên gốm đất nung, men nằm bên trên như một lớp riêng; trên gốm sành, men nóng chảy vào xương gốm.
+**Men**{{en: glaze}} là một lớp thủy tinh mỏng được nung chảy dính vào sản phẩm gốm. Glazy, cơ sở dữ liệu công thức men mở, gọi nó là “một công thức thủy tinh được điều chỉnh để nóng chảy và dính vào đất sét ở những nhiệt độ nhất định”. Nó được phủ lên dưới dạng một lớp bột và nóng chảy trong lò nung thành một lớp thủy tinh bịt kín đất sét, nên sản phẩm ít bị rỉ nước, ố hay mòn hơn. Ở đỉnh của lần nung, khối nóng chảy còn phản ứng với đất sét, thường tạo ra một lớp giữa chúng giữ men dính chặt. Trên gốm đất nung, nung ở nhiệt độ thấp hơn, lớp này mỏng và men chủ yếu nằm bên trên. Trên gốm sành và sứ, nung ở nhiệt độ cao hơn, lớp này dày hơn và men bám chặt vào đất sét hơn. Dù vậy men vẫn là thủy tinh: nó không trở thành một phần của đất sét.
 
 Một công thức men liệt kê các nguyên liệu thô, như trường thạch, canxi cacbonat và cao lanh. Trong lò nung, một phần của mỗi nguyên liệu bay đi dưới dạng khí (nước hoặc cacbon đioxit) và phần còn lại trở thành **oxit**: các hợp chất của một nguyên tố với oxy, như silica (SiO₂) hay canxi oxit (CaO). Thủy tinh đã nung được làm từ các oxit, nên thợ gốm mô tả một loại men qua chúng. Mỗi oxit làm một trong ba việc.
 
@@ -13,7 +13,7 @@ Một công thức men liệt kê các nguyên liệu thô, như trường thạ
 - **Chất trợ chảy**{{en: flux}} hạ điểm nóng chảy xuống mức một lò nung có thể đạt. **Kiềm**, viết là **R₂O**, là các oxit của natri, kali và liti (Na₂O, K₂O, Li₂O); chúng hoạt động từ côn 06 trở lên qua nhiệt độ trung bình và cao. **Kiềm thổ**, viết là **RO**, là các oxit của canxi, magie, bari và stronti (CaO, MgO, BaO, SrO), với kẽm oxit (ZnO) được xếp cùng; chúng hoạt động tốt nhất từ côn 5 đến côn 10. Chữ R đại diện cho bất kỳ kim loại nào trong họ đó.
 - **Alumina** (Al₂O₃) là **chất ổn định**{{en: stabilizer}}. Nó làm khối nóng chảy quánh lại để nó ở lại trên thành đứng, và thêm độ cứng và độ bền. Lời cảnh báo của Glazy: quá ít alumina thì “men của bạn có thể chảy; quá nhiều có thể làm khối nóng chảy quánh lại thành men mờ”. Alumina chủ yếu đến từ đất sét và trường thạch.
 
-**Bo** (B₂O₃) làm mờ ranh giới. Các nhà hóa học xếp nó vào chất tạo thủy tinh, nhưng ở nhiệt độ của xưởng gốm nó hoạt động như một chất trợ chảy, và thợ gốm coi nó như vậy. Nó rất quan trọng ở côn 5–6 và không cần ở nhiệt độ cao. (Côn, cách thợ gốm gọi tên một lần nung, được giải thích bên dưới.)
+**Bo** (B₂O₃) làm mờ ranh giới. Các nhà hóa học xếp nó vào chất tạo thủy tinh, nhưng ở nhiệt độ của xưởng gốm nó hoạt động như một chất trợ chảy, và thợ gốm coi nó như vậy. Nó là một chất trợ chảy chính ở nhiệt độ thấp và trung bình: lần nung càng nguội, men càng cần nhiều bo. Ở côn 10 thường không cần đến nó. (Côn, cách thợ gốm gọi tên một lần nung, được giải thích bên dưới.)
 
 > [!NOTE]
 > Một cách để ghi nhớ: silica là thủy tinh, các chất trợ chảy cho nó nóng chảy ở nhiệt độ lò của bạn đạt được, và alumina làm nó đặc lại để nó ở đúng nơi bạn đặt.
@@ -24,9 +24,9 @@ Một công thức men liệt kê các nguyên liệu thô, như trường thạ
 
 **Xương gốm**{{en: clay body}} là đất sét mà một sản phẩm được làm từ đó. Có ba loại chính.
 
-- **Gốm đất nung**{{en: earthenware}}: xương gốm nhiệt độ thấp, khoảng côn 06–02, vẫn xốp. Thường màu đỏ hoặc vàng da bò, nó cần men để giữ nước.
+- **Gốm đất nung**{{en: earthenware}}: xương gốm nhiệt độ thấp, khoảng côn 06–02, xốp ở các côn thấp và đặc hơn khi được nung nóng hơn. Thường màu đỏ hoặc vàng da bò, nó cần men để giữ nước.
 - **Gốm sành**{{en: stoneware}}: xương gốm nhiệt độ trung bình đến cao, khoảng côn 5–10, trở nên thiêu kết hoặc gần như vậy.
-- **Sứ**: xương gốm màu trắng, nhiệt độ cao, giàu cao lanh, thường trong mờ.
+- **Sứ**: xương gốm màu trắng, giàu cao lanh, thường trong mờ. Hầu hết sứ là nhiệt độ cao, nhưng cũng có sứ côn 6.
 
 **Hóa thủy tinh** nghĩa là như thủy tinh và không xốp; **sự thiêu kết** là việc một xương gốm trở nên như vậy khi nung. Thợ gốm Anh thường vạch ranh giới theo nhiệt độ: gốm sành được nung trên {{2192 °F; 1200 °C}}, gốm đất nung dưới. Nhiệt độ trung bình, côn 5–6, nằm ngay hai bên của ranh giới đó.
 
@@ -55,9 +55,9 @@ Potclays, một nhà cung cấp ở Anh, mô tả nung biscuit đến khoảng {
 
 ## Côn và công nhiệt {#cones}
 
-Thợ gốm gọi tên một lần nung bằng một **côn**{{en: cone}}: một hình chóp gốm thon cong xuống khi đã nhận một lượng nhiệt nhất định. Orton, hãng làm ra chúng, nói như sau: “Côn không chỉ đo nhiệt độ. Chúng đo công nhiệt, tác động kết hợp của thời gian và nhiệt độ.”
+Thợ gốm gọi tên một lần nung bằng một **côn**{{en: cone}}: một hình chóp gốm thon cong xuống khi đã nhận một lượng nhiệt nhất định. Orton, hãng làm ra chúng, gọi côn là chất chỉ thị thời gian và nhiệt độ (công nhiệt): chúng cho thấy tác động kết hợp của thời gian và nhiệt độ, không chỉ riêng nhiệt độ.
 
-**Công nhiệt**{{en: heatwork}} là lý do: men, đất sét và côn đều phản ứng với việc chúng nóng bao lâu cũng như nóng đến mức nào. Một lần nung chậm làm côn cong ở nhiệt độ thấp hơn, một lần nung nhanh ở nhiệt độ cao hơn. Bảng của Orton cho côn 6 cong ở {{2165 °F; 1185 °C}} khi lần nung kết thúc với tốc độ tăng {{27 °F; 15 °C}} mỗi giờ, ở {{2232 °F; 1222 °C}} với {{108 °F; 60 °C}} mỗi giờ, và ở {{2269 °F; 1243 °C}} với {{270 °F; 150 °C}} mỗi giờ, tốc độ được lấy trong {{180 °F; 100 °C}} cuối. Một côn xong khi đỉnh của nó đã cong qua 90°, mà Orton gọi là vị trí 5 giờ.
+**Công nhiệt**{{en: heatwork}} là lý do: men, đất sét và côn đều phản ứng với việc chúng nóng bao lâu cũng như nóng đến mức nào. Một lần nung chậm làm côn cong ở nhiệt độ thấp hơn, một lần nung nhanh ở nhiệt độ cao hơn. Bảng của Orton cho côn 6 cong ở {{2165 °F; 1185 °C}} khi lần nung kết thúc với tốc độ tăng {{27 °F; 15 °C}} mỗi giờ, ở {{2232 °F; 1222 °C}} với {{108 °F; 60 °C}} mỗi giờ, và ở {{2269 °F; 1243 °C}} với {{270 °F; 150 °C}} mỗi giờ, tốc độ được lấy trong {{180 °F; 100 °C}} cuối. Một côn xong khi đỉnh của nó đã cong qua 90°. Thợ gốm thường gọi đây là vị trí 5 giờ.
 
 Số côn chạy từ 022 đến 42. Chữ số không đứng đầu đánh dấu dãy nguội hơn, nơi số lớn hơn thì nguội hơn: côn 06 nguội hơn côn 04, và côn 01 nguội hơn côn 1.
 
@@ -73,7 +73,7 @@ Label: Các khoảng nung
 > [!NOTE]
 > Hãy gọi tên và lập chương trình các lần nung theo côn, và coi các nhiệt độ là gần đúng. Một **côn chứng**{{en: witness cone}} trên kệ giữa các sản phẩm, hoặc một **bộ côn**{{en: cone pack}} gồm ba côn (côn dẫn, côn nung và côn bảo vệ), cho thấy công nhiệt mà sản phẩm của bạn thực sự đã nhận.
 
-Các nhiệt độ đã công bố khác nhau. Glazy nêu nhiệt độ cao, côn 9–11, là khoảng {{2336–2390 °F; 1280–1310 °C}}, khớp với cột nhanh của Orton, và Digitalfire báo cáo rằng hầu hết các lò đạt côn 6 ở khoảng {{2200 °F; 1204 °C}}. Lời khuyên của chúng tôi: dùng các số liệu tốc độ trung bình của Orton, như cẩm nang này làm, lập chương trình theo côn, và để một côn chứng quyết định.
+Các nhiệt độ đã công bố khác nhau. Glazy nêu nhiệt độ cao, côn 9–11, là khoảng {{2336–2390 °F; 1280–1310 °C}}, khớp với cột nhanh của Orton, và Digitalfire nêu côn 6 là khoảng {{2200 °F; 1204 °C}}. Lời khuyên của chúng tôi: dùng các số liệu tốc độ trung bình của Orton, như cẩm nang này làm, lập chương trình theo côn, và để một côn chứng quyết định.
 
 Ngoài Bắc Mỹ, các nhà cung cấp thường nêu °C thay vì côn. Hermann Seger đã phát triển côn hiện đại, lần đầu được dùng ở Berlin năm 1886, và Anh có các côn Staffordshire riêng; các số của chúng không nên được cho là khớp với số của Orton, và chúng tôi không tìm thấy bảng nào để quy đổi chúng. [Nung một lò gốm cơ bản](/guides/firing) đề cập đến côn chi tiết hơn.
 
@@ -106,7 +106,7 @@ Label: Tỷ lệ silica trên alumina
 |      5–7 | Điển hình của nhiều loại men gốm sành ổn định |
 |      3–5 | Có thể mờ hoặc non lửa                        |
 
-Tỷ lệ 5–7 tự nó không dự đoán bóng hay mờ: chất trợ chảy, bo và côn đều làm dịch chuyển ranh giới. Glazy nêu cân bằng chất trợ chảy điển hình cho men ổn định là 0,2 R₂O với 0,8 RO, đến 0,3 R₂O với 0,7 RO. Nhiều kiềm hơn làm khối nóng chảy lỏng hơn và tăng độ giãn nở của nó, và do đó tăng nguy cơ rạn nứt men.
+Glazy không nói các số liệu này dành cho côn nào. Hãy đọc chúng như một hướng dẫn sơ bộ cho men gốm sành, khoảng côn 6–10. Digitalfire nói một tỷ lệ trên khoảng 8 nhiều khả năng là bóng, nhưng một loại men có bo có thể bóng ở 8 hoặc thấp hơn, và một loại men nhiệt độ thấp thậm chí ở 6. Tỷ lệ 5–7 tự nó không dự đoán bóng hay mờ: chất trợ chảy, bo và côn đều làm dịch chuyển ranh giới. Glazy nêu cân bằng chất trợ chảy điển hình cho men ổn định là 0,2 R₂O với 0,8 RO, đến 0,3 R₂O với 0,7 RO. Nhiều kiềm hơn làm khối nóng chảy lỏng hơn và tăng độ giãn nở của nó, và do đó tăng nguy cơ rạn nứt men.
 
 ### Lượng mất khi nung
 
@@ -117,15 +117,29 @@ Label: Lượng mất khi nung
 
 | Nguyên liệu                       | LOI điển hình                                                                |
 | --------------------------------- | ---------------------------------------------------------------------------- |
-| Canxi cacbonat (whiting), đôlômít | Trên 40%, chủ yếu là cacbon đioxit: 100 g canxi cacbonat thải ra khoảng 45 g |
+| Canxi cacbonat (whiting), đôlômít | Trên 40%, chủ yếu là cacbon đioxit: 100 g canxi cacbonat thải ra khoảng 44 g |
 | Liti cacbonat                     | Khoảng 60%                                                                   |
 | Bari cacbonat, Gerstley Borate    | Trên 20%                                                                     |
-| Cao lanh                          | Khoảng 12%, chủ yếu là nước liên kết trong tinh thể của nó                   |
+| Cao lanh                          | Khoảng 12–14%, chủ yếu là nước liên kết trong tinh thể của nó                |
 | Trường thạch                      | Dưới 1%                                                                      |
 
-Khí thoát ra sau khi men bắt đầu nóng chảy phải sủi qua nó, gây ra, theo lời của Digitalfire, “bọt, phồng rộp, lỗ chân kim, cuốn men”. Talc tiếp tục thải khí cho đến khoảng {{1650 °F; 899 °C}}. Frit, các nguyên liệu **đã nung sơ bộ** (được nung nóng trước để đuổi khí của chúng đi) và các thay đổi trong lần nung đều giúp ích.
+Khí thoát ra sau khi men bắt đầu nóng chảy phải sủi qua nó, gây ra, theo lời của Digitalfire, “bọt, phồng rộp, lỗ chân kim, cuốn men”. Trong một thử nghiệm của Digitalfire, talc tiếp tục thải khí cho đến khoảng {{1650 °F; 899 °C}}. Frit, các nguyên liệu **đã nung sơ bộ** (được nung nóng trước để đuổi khí của chúng đi) và các thay đổi trong lần nung đều giúp ích.
 
 Các sách cũ làm phép tính này bằng tay, với **khối lượng phân tử** (khối lượng của một mol nguyên liệu hoặc oxit) và **khối lượng đương lượng** (khối lượng của một nguyên liệu cung cấp một mol của một oxit). Theo phép tính của chúng tôi, khoảng 100 g canxi cacbonat cung cấp một mol, 56 g, canxi oxit. Một công cụ tính xử lý cả hai.
+
+## Giới hạn và biểu đồ Stull {#stull-chart}
+
+**Biểu đồ Stull**{{en: Stull chart}} là một bản đồ các loại men. Nó có hai trục, cả hai đều từ công thức Seger: silica (SiO₂) theo chiều ngang ở dưới và alumina (Al₂O₃) theo chiều dọc ở bên cạnh. Mỗi loại men là một điểm. Bản đồ được chia thành các vùng, như mờ, sáng bóng (bóng), non lửa và rạn nứt men. [Trang công thức](/recipe) của Glazecalc vẽ men của bạn lên đó.
+
+::stull-chart
+
+R. T. Stull lập biểu đồ từ các thử nghiệm ông công bố năm 1912. Ông nung chúng ở khoảng côn 11, và mọi thử nghiệm đều có cùng chất trợ chảy: 0,3 kali (K₂O) và 0,7 canxi oxit (CaO). Chỉ silica và alumina thay đổi. Vì vậy biểu đồ đúng cho những loại men đó ở nhiệt độ đó.
+
+Men của bạn có lẽ khác. Bo, các chất trợ chảy khác và các côn thấp hơn đều làm dịch chuyển các vùng. Năm 2025, một bài báo của Ceramics Monthly đã thử một loại men côn 6 có chất trợ chảy là borat và nhiều sắt. Biểu đồ đặt nó vào vùng rạn nứt men, mờ và non lửa. Thực tế nó đã chảy hoàn toàn, bán bóng và không rạn. Các tác giả nói men có borat không nằm đúng chỗ trên biểu đồ. Vì vậy hãy dùng các vùng như một hướng dẫn, không phải một dự đoán.
+
+Vùng **rạn nứt men** là nơi các thử nghiệm của chính Stull bị rạn, trên đất sét của ông. Nó không cho bạn biết men của bạn khớp với xương gốm của bạn thế nào. Rạn nứt men phụ thuộc vào độ giãn nở nhiệt của cả men và đất sét. Con số độ giãn nở của Glazecalc giúp bạn so sánh các loại men, và một thử nghiệm thực tế mới quyết định: thử nghiệm nước đá trong [Độ khớp men và khuyết tật](/guides/glazing-basics#fit-and-defects).
+
+**Công thức giới hạn**{{en: limit formula}} là một công cụ khác cho cùng câu hỏi: các khoảng silica, alumina và chất trợ chảy cho men ổn định ở một côn. [An toàn khi tiếp xúc thực phẩm](/guides/glazing-basics#food-safety) giải thích chúng, và vì sao tự chúng không chứng minh được gì.
 
 ## Frit và nguyên liệu thô {#materials}
 
@@ -133,7 +147,7 @@ Các sách cũ làm phép tính này bằng tay, với **khối lượng phân t
 
 **Frit**{{en: frit}} là thủy tinh được làm trong nhà máy: khoáng vật được nấu chảy, làm nguội nhanh trong nước và nghiền. Việc làm frit khiến các nguyên liệu tan như borax thành không tan, khóa các oxit độc như chì và bari vào một loại thủy tinh ổn định, cho một nguyên liệu nhất quán hơn khoáng vật thô, và đuổi khí đi, nên các loại men làm từ frit “ít khuyết tật hơn nhiều” (Digitalfire). Frit cũng nóng chảy sớm: một frit natri hoạt động ở côn 06, trong khi trường thạch “chỉ mới bắt đầu mềm ở côn 6”. Chúng đắt hơn, cần đất sét để lơ lửng (ví dụ của Digitalfire là 85% frit với 15% đất sét), và chúng “về lý thuyết là không tan, nhưng trên thực tế thì không phải vậy”.
 
-Frit Bắc Mỹ được gọi theo nhà sản xuất và số: Ferro Frit 3134 (Ferro nay là Vibrantz) có trong khoảng 22% công thức men công khai của Glazy. Các công thức men của Anh thường nêu các frit chung hơn, như frit borax tiêu chuẩn.
+Frit Bắc Mỹ được gọi theo nhà sản xuất và số: Ferro Frit 3134 (Ferro nay là Vibrantz) là một trong những frit được dùng nhiều nhất ở Bắc Mỹ. Các công thức men của Anh thường nêu các frit chung hơn, như frit borax tiêu chuẩn.
 
 ### Các nguyên liệu thô thông thường
 
@@ -143,7 +157,7 @@ Label: Các nguyên liệu men thông thường
 | Nguyên liệu (tên khác)                                 | Cung cấp               | Ghi chú                                                                                                                                                                                                    |
 | ------------------------------------------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Silica (flint, thạch anh)                              | SiO₂                   | Dùng 325 mesh, độ nghiền rất mịn, trong men                                                                                                                                                                |
-| Cao lanh (Anh: china clay; Úc: Eckalite)               | Al₂O₃, SiO₂            | Nguồn alumina chính; cũng giữ men lơ lửng                                                                                                                                                                  |
+| Cao lanh (Anh: china clay)                             | Al₂O₃, SiO₂            | Nguồn alumina chính; cũng giúp men không bị lắng                                                                                                                                                           |
 | Ball clay                                              | Al₂O₃, SiO₂            | Dẻo hơn cao lanh, với nhiều sắt và chất hữu cơ hơn                                                                                                                                                         |
 | Trường thạch kali, trường thạch natri, nephelin xienit | K₂O, Na₂O, Al₂O₃, SiO₂ | Các chất trợ chảy có alumina và silica riêng. Nephelin xienit là chất trợ chảy mạnh ở nhiệt độ thấp và trung bình. “Trường thạch” trơn trong một công thức men cũ có thể là bất kỳ loại nào trong số chúng |
 | Canxi cacbonat (whiting)                               | CaO                    | Chất trợ chảy canxi chính; thải cacbon đioxit                                                                                                                                                              |
@@ -154,39 +168,39 @@ Label: Các nguyên liệu men thông thường
 | Liti cacbonat                                          | Li₂O                   | Chất trợ chảy giãn nở thấp; đắt, nên dùng tiết kiệm                                                                                                                                                        |
 | Stronti cacbonat                                       | SrO                    | Vật liệu thay thế ít độc hơn cho bari                                                                                                                                                                      |
 | Bari cacbonat                                          | BaO                    | Độc ở dạng thô; men nhiều bari có thể thôi nhiễm                                                                                                                                                           |
-| Bentonit                                               | Chống lắng             | Một loại đất sét rất mịn, thường 1–3%, để ngăn lắng                                                                                                                                                        |
+| Bentonit                                               | Chống lắng             | Một loại đất sét rất mịn, thường 1–2%, để ngăn lắng. Trên 3% có thể làm nứt men khi men khô                                                                                                                |
 
 > [!WARNING]
 > Nguyên liệu làm men là các loại bột mịn. Bụi silica gây hại cho phổi mà lúc đầu không có triệu chứng, và một số nguyên liệu, như bari cacbonat và liti cacbonat, là chất độc nếu nuốt phải. Hãy xử lý bột nhẹ nhàng, lau dọn ướt, và đeo khẩu trang lọc bụi đạt chuẩn vừa khít khi làm việc khô. [Pha trộn an toàn và thông gió](/guides/safe-mixing) và [Không gây ngộ độc cho gia đình bạn](/guides/home-safety) giải thích cách làm.
 
 ### Tên theo khu vực
 
-- **Cao lanh** là **china clay** ở Anh; các nhà cung cấp Úc bán nó với tên Eckalite.
+- **Cao lanh** là **china clay** ở Anh. Ở Úc, Eckalite là một nhãn hiệu cao lanh.
 - **Flint** là tên cũ của Anh cho silica. Các nhà cung cấp Anh vẫn bán **flint nung** như một sản phẩm riêng, nên “flint” trong một công thức men của Anh có thể có nghĩa là flint nung, và trong một công thức của Mỹ có thể có nghĩa là thạch anh nghiền. Cả hai đều được bán làm nguồn silica; hãy kiểm tra phân tích.
 - **China stone** và **Cornish stone** (đá Cornwall) là cùng một vật liệu, liên quan đến trường thạch.
-- **Whiting** là canxi cacbonat; các nhà cung cấp Đức gọi nó là Kreide (phấn).
+- **Whiting** là canxi cacbonat, phấn hoặc đá vôi nghiền.
 
 > [!NOTE]
 > Hãy đánh giá một nguyên liệu theo các oxit nó cung cấp, không theo tên của nó. Glazecalc làm việc theo cách đó: bạn có thể nhập phân tích của nhà cung cấp trên [trang Nguyên liệu](/material), và **Thử nguyên liệu hiện đại và so sánh**, **Gợi ý lượng và so sánh** và **Khớp với nguyên liệu tôi có** đều khớp các oxit đã nung, không phải tên.
 
-Nguyên liệu cũng thay đổi. Trường thạch Custer đã chấm dứt năm 2023. Mỏ Gerstley Borate gốc đóng cửa vào khoảng 1999–2000; Laguna vẫn bán một sản phẩm dưới tên đó, và Gillespie Borate là vật liệu thay thế chính. Các nguồn không thống nhất liệu Gillespie có thay Gerstley Borate theo kiểu pound đổi pound hay không (nhà sản xuất của nó và Potclays nói có, Digitalfire và những nơi khác nói không), nên hãy so sánh hai loại trong Glazecalc, rồi thử một mẻ nhỏ.
+Nguyên liệu cũng thay đổi. Cơ quan Khảo sát Địa chất Hoa Kỳ báo cáo rằng các mỏ và nhà máy sản xuất trường thạch Custer, ở South Dakota, đã ngừng hoạt động vào tháng 11 năm 2023. Mỏ Gerstley Borate gốc đóng cửa vào khoảng 1999–2000; Laguna vẫn bán một sản phẩm dưới tên đó, và Gillespie Borate là vật liệu thay thế chính. Các nguồn không thống nhất liệu Gillespie có thay Gerstley Borate theo kiểu pound đổi pound hay không (nhà sản xuất của nó và Potclays nói có, Digitalfire và những nơi khác nói không), nên hãy so sánh hai loại trong Glazecalc, rồi thử một mẻ nhỏ.
 
 ## Chất tạo màu và chất làm đục {#color}
 
-**Chất tạo màu**{{en: colorant}} là một oxit hoặc cacbonat kim loại tạo màu cho men; **bột màu**{{en: stain}} là chất tạo màu làm trong nhà máy, ổn định và nhất quán hơn các oxit thô. Chất tạo màu thường dưới 5% của men nền, nhiều loại dưới 1%, và một cacbonat có độ mạnh bằng khoảng một nửa oxit tương ứng.
+**Chất tạo màu**{{en: colorant}} là một oxit hoặc cacbonat kim loại tạo màu cho men; **bột màu**{{en: stain}} là chất tạo màu làm trong nhà máy, ổn định và nhất quán hơn các oxit thô. Chất tạo màu thường dưới 5% của men nền, nhiều loại dưới 1%, và một cacbonat yếu hơn oxit tương ứng, vì một phần của nó thoát ra dưới dạng khí. Theo tính toán của chúng tôi, 100 g coban cacbonat cho khoảng 63 g coban oxit, và 100 g đồng cacbonat mà thợ gốm mua (đồng cacbonat bazơ) cho khoảng 72 g đồng oxit. Vì vậy hãy dùng lượng cacbonat khoảng 1,4 đến 1,6 lần lượng oxit.
 
 Table: Các chất tạo màu thông thường, theo phần trăm của men nền
 Label: Các chất tạo màu thông thường
 
-| Chất tạo màu       | Lượng khởi đầu thường dùng                    | Màu sắc và ghi chú                                                                                                                |
-| ------------------ | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Coban              | 0,1–2% (các nguồn không thống nhất)           | Xanh lam, và rất mạnh; hướng về tím khi men nền có magie                                                                          |
-| Sắt                | 0,5–10%                                       | Nâu, nâu vàng và đỏ trong oxy hóa; trong khử, ½–2% cho celadon và 5–6% cho tenmoku. Một chất trợ chảy, nên nhiều sắt làm men chảy |
-| Đồng               | 1–3%                                          | Xanh lục hoặc xanh ngọc trong oxy hóa, đỏ trong khử. Nó có thể làm men thôi nhiễm                                                 |
-| Crom               | Dưới 0,5% đến 2% (các nguồn không thống nhất) | Xanh lục; nâu nếu men nền có kẽm, hồng với thiếc                                                                                  |
-| Mangan             | 2–10%                                         | Nâu và tím                                                                                                                        |
-| Rutil              | Khoảng 2–5%                                   | Màu đốm, loang; thô hoặc mờ trên khoảng 5%                                                                                        |
-| Bột màu thương mại | 2–12%                                         | 2–4% cho sắc nhạt, 5–8% cho tông màu, 10–12% cho màu đậm                                                                          |
+| Chất tạo màu       | Lượng khởi đầu thường dùng                    | Màu sắc và ghi chú                                                                                                                 |
+| ------------------ | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Coban              | 0,1–2% (các nguồn không thống nhất)           | Xanh lam, và rất mạnh; hướng về tím khi men nền có magie                                                                           |
+| Sắt                | 0,5–10%                                       | Nâu, nâu vàng và đỏ trong oxy hóa; trong khử, ½–2% cho celadon và 5–10% cho tenmoku. Một chất trợ chảy, nên nhiều sắt làm men chảy |
+| Đồng               | 1–3%                                          | Xanh lục hoặc xanh ngọc trong oxy hóa, đỏ trong khử. Nó có thể làm men thôi nhiễm                                                  |
+| Crom               | Dưới 0,5% đến 2% (các nguồn không thống nhất) | Xanh lục; nâu nếu men nền có kẽm, hồng với thiếc                                                                                   |
+| Mangan             | 2–10%                                         | Nâu và tím                                                                                                                         |
+| Rutil              | Khoảng 2–5%                                   | Màu đốm, loang; thô hoặc mờ trên khoảng 5%                                                                                         |
+| Bột màu thương mại | 2–12%                                         | 2–4% cho sắc nhạt, 5–8% cho tông màu, 10–12% cho màu đậm                                                                           |
 
 Lượng coban và crom thực sự đang bị tranh cãi. Glazy nói 0,1% coban là đủ cho màu xanh lam; Glendale Community College nêu ½–2% hoặc ½–3% tùy môi trường nung; Birdie Boone, trong Pottery Making Illustrated, nói 3% hoặc ít hơn. Với crom, Boone nói dưới 0,5% và Glendale 2–3%. Cách an toàn là bắt đầu thấp và làm một **thử nghiệm tuyến tính**{{en: line blend}}: một hàng mẫu thử men tăng dần một thành phần từ ít đến nhiều.
 
@@ -198,11 +212,11 @@ Một **chất làm đục**{{en: opacifier}} làm một loại men **đục**, 
 
 Table: Chất làm đục
 
-| Chất làm đục                                  | Lượng thường dùng                    | Ghi chú                                                                                        |
-| --------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| Zircon (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% cho độ đục hoàn toàn           | Lựa chọn rẻ hơn; các nhãn hiệu là cùng một vật liệu nghiền thành các cỡ khác nhau              |
-| Thiếc oxit                                    | Khoảng 5–7% (ước tính của chúng tôi) | Đắt; làm đục kém trong môi trường khử                                                          |
-| Titan đioxit                                  | Trên 2%                              | Độ đục mịn như lụa, trong mờ; ở 10% trở lên, bề mặt mờ, có kết cấu với tinh thể nhìn thấy được |
+| Chất làm đục                        | Lượng thường dùng                    | Ghi chú                                                                                                                     |
+| ----------------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox) | 10–15% cho độ đục hoàn toàn          | Lựa chọn rẻ hơn; các nhãn hiệu là zirconi silicat nghiền thành các cỡ khác nhau, và các loại mịn hơn thì mạnh hơn           |
+| Thiếc oxit                          | Khoảng 5–7% (ước tính của chúng tôi) | Đắt; yếu hơn ở nhiệt độ cao, và Digitalfire báo cáo 4% không tạo độ đục nào trong một loại men trong côn 10 nung khử        |
+| Titan đioxit                        | Khoảng 5% (ước tính của chúng tôi)   | Độ đục mịn như lụa, trong mờ; khoảng 5% có thể làm bề mặt biến đổi, và nhiều hơn thế nhiều thường cho bề mặt mờ có tinh thể |
 
 ## Độ khớp men và khuyết tật {#fit-and-defects}
 
@@ -230,13 +244,13 @@ Hãy thay đổi một thứ mỗi lần, và giữ các mẫu thử men của b
 Table: Các khuyết tật men thông thường, nguyên nhân thường gặp và cách sửa đầu tiên
 Label: Các khuyết tật men thông thường
 
-| Khuyết tật   | Trông như                                              | Nguyên nhân thường gặp                                                                             | Cách sửa đầu tiên                                                                        |
-| ------------ | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Cuốn men     | Men co lại thành hạt, để lộ đất trần                   | Gốm mộc bụi hoặc có dầu mỡ; lớp phủ dày, nhiều đất sét bị nứt khi khô; kẽm, zircon hoặc thiếc      | Làm sạch gốm mộc; tráng mỏng hơn; nung sơ bộ bớt đất sét; thêm chất kết dính như keo CMC |
-| Lỗ chân kim  | Các lỗ nhỏ hoặc hố                                     | Khí từ xương gốm hoặc men chưa lành lại; men non lửa hoặc quánh                                    | Giữ nhiệt ở nhiệt độ đỉnh khoảng nửa giờ; tráng mỏng hơn; bớt kẽm hoặc rutil             |
-| Phồng rộp    | Các hố có cạnh sắc                                     | Thường là nung quá lửa; lớp phủ rất dày; chất trợ chảy dễ bay hơi trên khoảng {{2192 °F; 1200 °C}} | Nung thấp hơn; tráng mỏng hơn. Cạnh sắc khiến đồ gốm dùng với thực phẩm không an toàn    |
-| Chảy men     | Men chảy xuống kệ                                      | Quá ít alumina; quá dày, như chỗ các lần rót chồng lên nhau; nhiều sắt                             | Tráng mỏng hơn; thêm alumina; giữ men cao hơn chân đế nhiều                              |
-| Nứt do nhiệt | Các vết nứt trong sản phẩm do làm nguội hoặc nung nóng | Làm nguội nhanh qua chuyển pha thạch anh, {{1063 °F; 573 °C}}; thành không đều; độ khớp kém        | Nung chậm qua {{1063 °F; 573 °C}}, lên và xuống; thành đều                               |
+| Khuyết tật   | Trông như                                              | Nguyên nhân thường gặp                                                                                                                              | Cách sửa đầu tiên                                                                        |
+| ------------ | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Cuốn men     | Men co lại thành hạt, để lộ đất trần                   | Gốm mộc bụi hoặc có dầu mỡ; lớp phủ dày, nhiều đất sét bị nứt khi khô; kẽm, zircon hoặc thiếc                                                       | Làm sạch gốm mộc; tráng mỏng hơn; nung sơ bộ bớt đất sét; thêm chất kết dính như keo CMC |
+| Lỗ chân kim  | Các lỗ nhỏ hoặc hố                                     | Khí từ xương gốm hoặc men chưa lành lại; men non lửa hoặc quánh                                                                                     | Giữ nhiệt ở nhiệt độ đỉnh khoảng nửa giờ; tráng mỏng hơn; bớt kẽm hoặc rutil             |
+| Phồng rộp    | Các hố có cạnh sắc                                     | Thường là nung quá lửa; lớp phủ rất dày; chất trợ chảy dễ bay hơi trên khoảng {{2192 °F; 1200 °C}}                                                  | Nung thấp hơn; tráng mỏng hơn. Cạnh sắc khiến đồ gốm dùng với thực phẩm không an toàn    |
+| Chảy men     | Men chảy xuống kệ                                      | Quá ít alumina; quá dày, như chỗ các lần rót chồng lên nhau; nhiều sắt                                                                              | Tráng mỏng hơn; thêm alumina; giữ men cao hơn chân đế nhiều                              |
+| Nứt do nhiệt | Các vết nứt trong sản phẩm do làm nguội hoặc nung nóng | Làm nguội nhanh qua chuyển pha thạch anh, {{1063 °F; 573 °C}}, hoặc chuyển pha cristobalit, khoảng {{428 °F; 220 °C}}; thành không đều; độ khớp kém | Nung chậm qua cả hai, lên và xuống; thành đều                                            |
 
 ## An toàn khi tiếp xúc thực phẩm {#food-safety}
 
@@ -254,11 +268,11 @@ Các giới hạn theo luật khác nhau theo từng quốc gia. Bảng cho th�
 
 ::food-limits
 
-Ở Mỹ, đồ gốm trang trí trông có vẻ dùng được cho thực phẩm bị coi là đồ gốm dùng cho thực phẩm, trừ khi nó có nhãn dán và một thông báo cố định được đúc nổi hoặc nung dính vào đáy, chẳng hạn “Not for Food Use. May Poison Food” (Không dùng cho thực phẩm. Có thể làm nhiễm độc thực phẩm), hoặc có một lỗ xuyên qua bề mặt chạm thực phẩm. EU đặt giới hạn chì và cadimi trong Chỉ thị EU 84/500/EEC, và Anh giữ cùng các số liệu trong luật riêng của mình. Từ ngày 29 tháng 5 năm 2026, Hà Lan, Bỉ và Luxembourg cho phép ít chì hơn khoảng 130 đến 150 lần, và ít cadimi hơn khoảng 15 lần. Úc đặt giới hạn cho đồ gốm nhập khẩu; chúng tôi không tìm thấy giới hạn chính thức nào cho đồ gốm làm ở Úc hoặc New Zealand.
+Ở Mỹ, đồ gốm trang trí trông có vẻ dùng được cho thực phẩm bị coi là đồ gốm dùng cho thực phẩm, trừ khi nó có nhãn dán và một thông báo cố định được đúc nổi hoặc nung dính vào đáy, chẳng hạn “Not for Food Use. May Poison Food” (Không dùng cho thực phẩm. Có thể làm nhiễm độc thực phẩm), hoặc có một lỗ xuyên qua bề mặt chạm thực phẩm. EU đặt giới hạn chì và cadimi cho đồ gốm trong Chỉ thị EU 84/500/EEC, và Anh giữ cùng các số liệu trong luật riêng của mình. Một quyết định năm 2024 của các nước Benelux đặt giới hạn thấp hơn nhiều cho đồ gốm. Hà Lan áp dụng chúng từ ngày 29 tháng 5 năm 2026: ít chì hơn khoảng 130 đến 150 lần và ít cadimi hơn khoảng 14 đến 18 lần so với số liệu của EU. Đồ gốm đáp ứng các quy định cũ và được bán lần đầu trước ngày 1 tháng 12 năm 2026 có thể được bán cho đến khi hết hàng. Các phòng thí nghiệm kiểm định báo cáo rằng Luxembourg áp dụng cùng các giới hạn từ ngày 29 tháng 5 năm 2026, và Bỉ đã thông qua chúng trong một sắc lệnh hoàng gia ngày 19 tháng 7 năm 2026; chúng tôi chưa tự đọc các văn bản đó. Úc đặt giới hạn cho đồ gốm nhập khẩu; chúng tôi không tìm thấy giới hạn chính thức nào cho đồ gốm làm ở Úc hoặc New Zealand.
 
 ### Thử nghiệm
 
-FDA nói các bộ que thử tại nhà có thể cho thấy chì thôi nhiễm được, nhưng Ceramics New Zealand cảnh báo rằng bút thử không được thiết kế cho đồ gốm và cho kết quả dương tính giả. Hãy coi kết quả dương tính là lý do để ngừng dùng sản phẩm, và kết quả âm tính là không chứng minh được gì. Một thử nghiệm thôi nhiễm trong phòng thí nghiệm trên sản phẩm đã nung (ASTM C738 ở Mỹ; EN 1388 hoặc ISO 6486 ở châu Âu) là câu trả lời thực sự.
+FDA nói các bộ que thử tại nhà có thể cho thấy chì thôi nhiễm được, nhưng các nghiên cứu cho thấy những bộ thử này thường sai trên đồ gốm có men: chúng có thể báo có chì khi không có, và có thể bỏ sót chì bị thôi nhiễm. Hãy coi kết quả dương tính là lý do để ngừng dùng sản phẩm, và kết quả âm tính là không chứng minh được gì. Một thử nghiệm thôi nhiễm trong phòng thí nghiệm trên sản phẩm đã nung (ASTM C738 ở Mỹ; EN 1388 hoặc ISO 6486 ở châu Âu) là câu trả lời thực sự.
 
 > [!WARNING]
 > “An toàn khi tiếp xúc thực phẩm” có nghĩa là loại men này, trên loại đất sét này, nung đến côn này trong lò này và được phủ theo cách này, thôi ra ít hơn các giới hạn theo luật. Glazecalc có thể giúp bạn dựng một loại men ổn định, và **Thay chì** có thể dựng lại một công thức men chì cũ mà không có chì, nhưng không công cụ tính nào có thể chứng nhận một sản phẩm gốm. Chỉ một thử nghiệm trên sản phẩm đã nung mới làm được.
@@ -267,7 +281,7 @@ FDA nói các bộ que thử tại nhà có thể cho thấy chì thôi nhiễm 
 
 ### Tỷ trọng
 
-Bột men trộn với nước là **nước men**{{en: slurry}}. **Tỷ trọng**{{en: specific gravity}} của nó là khối lượng của nó so với cùng thể tích nước, vốn có tỷ trọng 1,0: càng cao thì càng nhiều bột trong xô. Các sách cũ của Anh nói **trọng lượng pint**. Glazy gọi 1,4–1,5 là “điểm khởi đầu tốt cho hầu hết các loại men”. Để đo nó, hãy cân đúng 100 mL nước men (Glazy gợi ý dùng ống tiêm) và chia cho 100: 145 g nghĩa là tỷ trọng 1,45. Tỷ trọng kế không đáng tin trong các loại men bị keo hóa, và nước bay hơi, nên hãy kiểm tra lại trước khi tráng men.
+Bột men trộn với nước là **nước men**{{en: slurry}}. **Tỷ trọng**{{en: specific gravity}} của nó là khối lượng của nó so với cùng thể tích nước, vốn có tỷ trọng 1,0: càng cao thì càng nhiều bột trong xô. Glazy gọi 1,4–1,5 là “điểm khởi đầu tốt cho hầu hết các loại men”. Để đo nó, hãy cân đúng 100 mL nước men (Glazy gợi ý dùng ống tiêm) và chia cho 100: 145 g nghĩa là tỷ trọng 1,45. Tỷ trọng kế không đáng tin trong các loại men bị keo hóa, và nước bay hơi, nên hãy kiểm tra lại trước khi tráng men.
 
 Các mục tiêu khác nhau theo nguồn. Digitalfire đặt men nhúng ở 1,40–1,50 và men quét thương mại ở 1,25–1,55, trong khi Potclays nêu 1,71–1,81 cho quét và 1,71 cho phun. Lời khuyên của chúng tôi: nhúng ở khoảng 1,45 với men hơi keo hóa, làm theo nhãn với men quét, và ghi lại những gì hiệu quả.
 
@@ -291,7 +305,7 @@ Lớp phủ quá dày có thể cuốn men, phồng rộp hoặc chảy. Các qu
 
 Các khí trong lò nung, **môi trường nung**, làm thay đổi kết quả của men. **Oxy hóa**{{en: oxidation}} nghĩa là có nhiều oxy. “Lò điện đồng nghĩa với nung oxy hóa,” Digitalfire nói, và men oxy hóa thường tươi hơn men khử, đặc biệt ở nhiệt độ thấp hơn. Trong oxy hóa, đồng cho màu xanh lục và xanh ngọc, và sắt cho nâu, nâu vàng và đỏ. Một lò điện thông gió kém, đầy sản phẩm thải khí, có thể chạy trung tính hơn dự định; một quạt thông gió nối trực tiếp với lò sẽ giúp ích.
 
-**Khử**{{en: reduction}} cố ý hạn chế oxy, thường trong lò gas, lò củi hoặc lò chuyên dụng. Đồng chuyển sang đỏ, và sắt trở thành chất trợ chảy mạnh hơn và cho **men ngọc** (celadon: xanh lam-lục đến xanh lục-xám, từ khoảng ½–2% sắt) và **tenmoku** (thiên mục: nâu-đen, khoảng 5–6% sắt). Glazy nói men ngọc và men đỏ đồng “dựa vào khử”. Đất sét cũng thay đổi: trong một so sánh của Digitalfire, một xương gốm sành nung ra màu xám khi khử và hơi vàng khi oxy hóa. Silic cacbua trong men có thể tạo các vùng khử nhỏ ngay cả trong lò điện. Với khử từ côn 010 đến côn 3, Orton khuyên dùng các côn không có sắt của họ.
+**Khử**{{en: reduction}} cố ý hạn chế oxy, thường trong lò gas, lò củi hoặc lò chuyên dụng. Đồng chuyển sang đỏ, và sắt trở thành chất trợ chảy mạnh hơn và cho **men ngọc** (celadon: xanh lam-lục đến xanh lục-xám, từ khoảng ½–2% sắt) và **tenmoku** (thiên mục: nâu-đen, khoảng 5–10% sắt). Glazy nói men ngọc và men đỏ đồng “dựa vào khử”. Đất sét cũng thay đổi: trong một so sánh của Digitalfire, một xương gốm sành nung ra màu xám khi khử và hơi vàng khi oxy hóa. Silic cacbua trong men có thể tạo các vùng khử nhỏ ngay cả trong lò điện. Với khử từ côn 010 đến côn 3, Orton khuyên dùng các côn không có sắt của họ.
 
 > [!NOTE]
 > Hãy dự kiến một công thức men viết cho lò khử bằng gas sẽ ra khác trong lò điện: một men ngọc hoặc đỏ đồng dựa vào khử sẽ không trông giống nhau khi oxy hóa. Hãy kiểm tra công thức men được làm cho môi trường nung nào, và ghi lại môi trường của riêng bạn, cùng với côn, trong ghi chú của công thức men trong Glazecalc.
@@ -313,7 +327,7 @@ Công thức men (batch recipe)
 : Các nguyên liệu thô của một loại men theo khối lượng, thường cộng lại bằng 100.
 
 Bentonit (bentonite)
-: Một loại đất sét rất mịn được thêm ở 1–3% để giữ men không lắng.
+: Một loại đất sét rất mịn thêm vào khoảng 1–2% để giữ men không lắng. Trên 3% có thể làm nứt men khi men khô.
 
 Gốm mộc (bisque; Anh: biscuit)
 : Lần nung đầu tiên, thấp hơn, thường côn 08–04 (thường nhất là 06–04), để lại sản phẩm chắc nhưng xốp.
@@ -343,7 +357,7 @@ Nứt do nhiệt (dunting)
 : Các vết nứt trong một sản phẩm do ứng suất làm nguội hoặc nung nóng, thường ở chuyển pha thạch anh, {{1063 °F; 573 °C}}.
 
 Gốm đất nung (earthenware)
-: Một xương gốm nhiệt độ thấp (khoảng côn 06–02) vẫn xốp.
+: Một xương gốm nhiệt độ thấp (khoảng côn 06–02), xốp ở các côn thấp và đặc hơn khi nung nóng hơn.
 
 Trường thạch (feldspar)
 : Một khoáng vật cung cấp chất trợ chảy kiềm cùng alumina và silica: kali, natri hoặc nephelin xienit.
@@ -382,7 +396,7 @@ Công nhiệt (heatwork)
 : Tác động kết hợp của nhiệt độ và thời gian trong lò nung; thứ côn đo.
 
 Cao lanh (kaolin; Anh: china clay)
-: Một loại đất sét trắng tinh khiết cung cấp alumina và silica; giữ men lơ lửng. Úc: Eckalite.
+: Một loại đất sét trắng tinh khiết cung cấp alumina và silica; giúp men không bị lắng. Ở Úc, Eckalite là một nhãn hiệu.
 
 Lớp phủ chống dính tấm kê (kiln wash)
 : Một lớp phủ chịu nhiệt bảo vệ kệ lò khỏi men nhỏ giọt.
@@ -436,7 +450,7 @@ Hồ đất và engobe (slip, engobe)
 : Đất sét trong nước; engobe là lớp phủ giống hồ đất với nhiều vật liệu không phải đất sét hơn.
 
 Tỷ trọng (specific gravity)
-: Khối lượng của nước men so với cùng thể tích nước. Sách cũ của Anh: trọng lượng pint.
+: Khối lượng của nước men so với cùng thể tích nước.
 
 Chất ổn định (stabilizer)
 : Một oxit, chủ yếu là alumina, làm khối nóng chảy quánh lại và thêm độ bền.
@@ -460,7 +474,7 @@ Sáp chống men (wax resist)
 : Sáp được quét ở nơi men không được tới, thường là chân đế.
 
 Whiting
-: Canxi cacbonat, chất trợ chảy canxi chính; mất hơn 40% khối lượng khi nung. Tiếng Đức: Kreide.
+: Canxi cacbonat, chất trợ chảy canxi chính; mất khoảng 44% khối lượng khi nung, dưới dạng cacbon đioxit.
 
 ## Nguồn {#sources}
 
@@ -483,6 +497,14 @@ Whiting
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,21 @@ Whiting
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Chỉ thị 84/500/EEC của Hội đồng ngày 15 tháng 10 năm 1984 về việc xích gần luật pháp của các quốc gia thành viên liên quan đến đồ gốm sứ dự định tiếp xúc với thực phẩm](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation (ngày 23 tháng 4 năm 2026) applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, ngày 12 tháng 1 năm 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

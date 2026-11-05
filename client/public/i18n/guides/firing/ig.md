@@ -89,16 +89,16 @@ Label: Chaatị cone Orton
 | Cone | Nwayọọ, {{27 °F/h; 15 °C/h}} | Etiti, {{108 °F/h; 60 °C/h}} | Ngwa ngwa, {{270 °F/h; 150 °C/h}} |
 | ---- | ---------------------------: | ---------------------------: | --------------------------------: |
 | 022  |                            – |          {{1087 °F; 586 °C}} |               {{1094 °F; 590 °C}} |
-| 018  |                            – |          {{1319 °F; 715 °C}} |               {{1353 °F; 734 °C}} |
-| 015  |                            – |          {{1456 °F; 791 °C}} |               {{1504 °F; 818 °C}} |
+| 018  |          {{1267 °F; 686 °C}} |          {{1319 °F; 715 °C}} |               {{1353 °F; 734 °C}} |
+| 015  |          {{1382 °F; 750 °C}} |          {{1456 °F; 791 °C}} |               {{1504 °F; 818 °C}} |
 | 010  |          {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |               {{1679 °F; 915 °C}} |
 | 08   |          {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |               {{1753 °F; 956 °C}} |
-| 07   |                            – |          {{1789 °F; 976 °C}} |               {{1809 °F; 987 °C}} |
+| 07   |          {{1764 °F; 962 °C}} |          {{1789 °F; 976 °C}} |               {{1809 °F; 987 °C}} |
 | 06   |          {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |              {{1855 °F; 1013 °C}} |
 | 05   |         {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |              {{1911 °F; 1044 °C}} |
 | 04   |         {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |              {{1971 °F; 1077 °C}} |
 | 03   |         {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |              {{2019 °F; 1104 °C}} |
-| 02   |                            – |         {{2016 °F; 1102 °C}} |              {{2052 °F; 1122 °C}} |
+| 02   |         {{1972 °F; 1078 °C}} |         {{2016 °F; 1102 °C}} |              {{2052 °F; 1122 °C}} |
 | 01   |         {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |              {{2080 °F; 1138 °C}} |
 | 1    |         {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |              {{2109 °F; 1154 °C}} |
 | 4    |         {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |              {{2161 °F; 1183 °C}} |
@@ -458,73 +458,73 @@ Controller L&L na Bartlett na-eji {{1926 °F; 1052 °C}} maka cone 04 na {{1819 
 
 Kiln aka na-eso otu atụmatụ ahụ site n'aka: mee ka ite kpọọ nkụ nwayọọ ya na mkpuchi e weliri na peephole meghere emeghe, bulie switch site na Low (ọkụ dị ala) gaa na Medium (ọkụ etiti) gaa na High (ọkụ dị elu), ma hapụ sitter ka o mechie ịgba ọkụ. Usoro e bipụtara dị n'okpuru Kiln aka n'uju, n'okpuru.
 
-## Ịgba glaze {#glaze}
+## Ịgba glaze ọkụ {#glaze}
 
-Ịgba glaze na-agbaze glaze ka ọ ghọọ iko n'elu bisque. Ọtụtụ ndị mbido na-agba glaze ọkụ dị ala na cone 06–04 ma ọ bụ glaze ọkụ etiti na cone 5–6. Gbaa ọkụ ruo cone dị na akara ụrọ na glaze gị, ya na cone pack gburugburu nọmba ahụ. Maka ihe na-eme n'ime glaze ka ọ na-agbaze, lee [Ntọala glaze](/guides/glazing-basics).
+Ịgba glaze ọkụ na-agbaze glaze ka ọ ghọọ iko n'elu bisque. Ọtụtụ glaze ọkụ dị ala n'ahịa ka e mere maka cone 06 ma ọ bụ 05 (oke ọkụ dị ala bụ cone 06–04), ọtụtụ glaze ọkụ etiti bụkwa maka cone 5–6. Gbaa ọkụ ruo cone dị na akara glaze na ụrọ gị, ya na cone pack gburugburu nọmba ahụ. Maka ihe na-eme n'ime glaze ka ọ na-agbaze, lee [Ntọala glaze](/guides/glazing-basics).
 
-### Ibu maka ịgba glaze
+### Itinye ihe maka ịgba glaze ọkụ
 
-- Iberibe e tinyere glaze agaghị emetụ ibe ha ma ọ bụ mgbidi: hapụ ihe dị ka ½ inch (13 mm).
-- Debe glaze n'ebe dị anya site n'ụkwụ ite (**dry-footing**), ma ọ bụ dowe ite ọkụ dị ala n'elu **stilt**, obere ihe nkwado nwere ọnụ dị nkọ. Stoneware na porcelain ekwesịghị iguzo n'elu stilt, nke na-abanye n'ime ha n'ọkụ ndị ahụ; jiri kiln wash nke ọkụ dị elu ma ọ bụ ájá silica kama.
-- Hapụ opekata mpe 1 inch (25 mm) n'etiti ọnụ shelf na mgbidi ma ọ bụ sitter.
+- Ihe ndị e tinyere glaze ekwesịghị imetụ ibe ha ma ọ bụ mgbidi: hapụ ihe dị ka ½ inch (13 mm).
+- Ewepụ glaze n'ụkwụ ite (**dry-footing**), ma ọ bụ dobe ihe ọkụ dị ala n'elu **stilts**, obere ihe nkwado nwere isi dị nkọ. Stoneware na porcelain ekwesịghị iguzo n'elu stilts, nke na-abanye n'ime ha n'ọkụ ahụ; jiri kiln wash ọkụ dị elu ma ọ bụ ájá silica kama.
+- Hapụ opekata mpe 1 inch (25 mm) n'etiti ọnụ shelf na mgbidi ma ọ bụ kiln sitter.
 
 ### Usoro controller
 
-Table: Usoro glaze e debere nke L&L na Bartlett
-Label: Usoro glaze e debere
+Table: Usoro glaze edoziri edozi nke L&L na Bartlett
+Label: Usoro glaze edoziri edozi
 
-| Segment                           |                        Rịgoo ruo |             Slow Glaze |             Fast Glaze |
-| --------------------------------- | -------------------------------: | ---------------------: | ---------------------: |
-| 1                                 |               {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Enweghị nzọụkwụ nke ya |
-| 2                                 | {{250 °F; 139 °C}} n'okpuru peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                 |                             Peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Oge ikpo ọkụ, kiln tọgbọrọ chakoo |                                  |    Ihe dị ka awa 6½–7½ |      Ihe dị ka awa 3–4 |
+| Akụkụ                           |                           Rịgoo ruo |             Slow Glaze |              Fast Glaze |
+| ------------------------------- | ----------------------------------: | ---------------------: | ----------------------: |
+| 1                               |                  {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Enweghị nzọụkwụ dị iche |
+| 2                               | {{250 °F; 139 °C}} n'okpuru ọnụ ọnụ | {{400 °F/h; 222 °C/h}} |  {{570 °F/h; 317 °C/h}} |
+| 3                               |                             Ọnụ ọnụ |  {{120 °F/h; 67 °C/h}} |  {{200 °F/h; 111 °C/h}} |
+| Oge ikpo ọkụ, kiln tọgbọ chakoo |                                     |    Ihe dị ka awa 6½–7½ |       Ihe dị ka awa 3–4 |
 
-Table: Ebe segment 2 na 3 na-akwụsị, site na cone (L&L na Bartlett)
-Label: Ọkụ usoro e debere
+Table: Ebe akụkụ 2 na 3 na-akwụsị, site na cone (L&L na Bartlett)
+Label: Ihe usoro na-achọ
 
-| Cone |  Segment 2 na-akwụsị |                 Peak |
+| Cone |    Akụkụ 2 na-akwụsị |              Ọnụ ọnụ |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze bụ nhọrọ ka nchekwa, n'ihi ịdọ aka na ntị L&L gbasara ịgba ọkụ ngwa ngwa. Ọ bụrụ na ị tinye hold karịrị nkeji 5–10 na peak, L&L kwuru ka i wedata ọkụ a chọrọ ma ọ bụ cone offset ka o kwekọọ, ma kwuo na "Soaking n'ọkụ dị elu na-eme ka element na thermocouple mebie ngwa ngwa."
+Slow Glaze bụ nhọrọ kacha enwe nchekwa, n'ihi ịdọ aka na ntị L&L banyere ịgba ọkụ ngwa ngwa. Ọ bụrụ na ị tinye nchere (hold) karịrị nkeji 5–10 n'ọnụ ọnụ, L&L kwuru ka ị belata ihe a na-achọ ma ọ bụ cone offset ka ha kwekọọ, ma kwuo na "Ichere n'ọkụ dị elu na-eme ka element na thermocouple mebie ngwa ngwa."
 
-### Cone 6: drop-and-hold
+### Cone 6: ibelata na ichere
 
-Glaze ọkụ etiti na-apụta mgbe ụfọdụ nwere **pinhole** (obere oghere n'elu ya) ma ọ bụ ọkpụkpụ, nke gas na-esi n'ihe gbazere apụta hapụrụ. Usoro **drop-and-hold** na-agba ọkụ ruo n'elu, na-eme ka ọ jụọ ngwa ngwa ihe dị ka {{100 °F; 56 °C}} ma jide ya ebe ahụ. Dịka Digitalfire si kwuo: "Ịdaba 100°F na ijide na-enye ihe gbazere oke ọ ga-eji gbawaa ọkpụkpụ ma ka na-ahapụ ha ka ha gwọọ."
+Glaze ọkụ etiti na-apụta mgbe ụfọdụ na **pinholes** (obere oghere n'elu) ma ọ bụ afụ, nke gas na-esi na glaze gbazere apụta hapụrụ. Usoro **ibelata na ichere** (drop-and-hold) na-agba ọkụ ruo n'elu, na-eme ka ọ jụọ oyi ngwa ngwa ihe dị ka {{100 °F; 56 °C}} ma chere n'ebe ahụ. N'okwu Digitalfire, "Ibelata 100°F na ichere na-enye glaze gbazere ike ọ ga-eji gbawaa afụ ma ka na-ekwe ka ha gwụọ."
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, cone 6 ibelata na ichere
 Label: Digitalfire PLC6DS
 
-| Nzọụkwụ |                              Ọsọ |          Ọkụ a chọrọ | Hold                                                    |
-| ------- | -------------------------------: | -------------------: | ------------------------------------------------------- |
-| 1       |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Nkeji 60                                                |
-| 2       |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Nkeji 30 a na-amanyeghị, iji kpochapụ igwe ojii ọkpụkpụ |
-| 3       |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Nkeji 10; ogologo karịa na kiln buru ibu                |
-| 4       | Gbadaa na {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Nkeji 30                                                |
+| Nzọụkwụ |                              Ọsọ |        Ihe a na-achọ | Nchere                                             |
+| ------- | -------------------------------: | -------------------: | -------------------------------------------------- |
+| 1       |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Nkeji 60                                           |
+| 2       |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Ọ bụrụ na ị chọrọ, nkeji 30, iji kpochapụ igwe afụ |
+| 3       |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Nkeji 10; karịa na kiln buru ibu                   |
+| 4       | Gbadaa na {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Nkeji 30                                           |
 
-PLC6DS na-ewe ihe dị ka awa 9 na nkeji 36. Maka glaze na-asọ nke ukwuu, Digitalfire na-ada ihe dị ka {{200 °F; 111 °C}} kama; ịda nke ukwuu "na-etinye ihe ize ndụ nke crystal ịpụta n'oge hold". Peak ya nke {{2200 °F; 1204 °C}} dị n'okpuru {{2232 °F; 1222 °C}} nke chaatị maka cone 6; Digitalfire kọrọ na ọtụtụ kiln na-eru cone 6 na ihe dị ka {{2200 °F; 1204 °C}}. Jiri cone pack lelee ya na kiln nke gị.
+PLC6DS na-ewe ihe dị ka awa 9 na nkeji 36. Maka glaze na-asọ nke ọma, Digitalfire na-ebelata ihe dị ka {{200 °F; 111 °C}} kama; ibelata nke ukwuu "na-etinye n'ihe ize ndụ nke crystal ịpụta n'oge nchere". Ọnụ ọnụ ya nke {{2200 °F; 1204 °C}} dị n'okpuru {{2232 °F; 1222 °C}} nke chaatị maka cone 6; Digitalfire kọrọ na ọtụtụ kiln na-eru cone 6 n'ihe dị ka {{2200 °F; 1204 °C}}. Jiri cone pack lelee ya na kiln gị.
 
-### Ịjụ oyi nwayọọ
+### Ime ka ọ jụọ oyi nwayọọ nwayọọ
 
-**Ịjụ oyi nwayọọ** pụtara na controller na-eme ka kiln jụọ oyi n'ọsọ e dozigoro kama ịhapụ ya ka ọ daa n'efu. C6DHSC nke Digitalfire bụ PLC6DS sochiri ịjụ oyi na {{150 °F/h; 83 °C/h}} site na {{2100 °F; 1148 °C}} ruo {{1400 °F; 760 °C}}, mgbe ahụ gbanyụọ. Ọ "na-eme ka nchapụta na ọdịdị elu ka mma" ma na-enyere rutile blue aka, mana ịjụ oyi nwayọọ "nwere ike ime ka matte bawanye" (otu glaze matte kpọrọ nkụ) ma nwee ike ime ka relay kiln ahụ ghara ịdị ogologo ndụ. L&L na-ezitekwa usoro ịjụ oyi nwayọọ maka cone 6:
+**Ime ka ọ jụọ oyi nwayọọ nwayọọ** pụtara na controller na-eme ka kiln jụọ oyi n'ọsọ edobere kama ịhapụ ya ka ọ daa n'onwe ya. C6DHSC nke Digitalfire bụ PLC6DS sochiri ime ka ọ jụọ oyi na {{150 °F/h; 83 °C/h}} site na {{2100 °F; 1148 °C}} ruo {{1400 °F; 760 °C}}, emesịa gbanyụọ ya. Ọ "na-eme ka nchapụta na ịma mma elu ka mma" ma na-enyere blue rutile aka, mana ime ka ọ jụọ oyi nwayọọ nwayọọ "nwere ike ịbawanye enweghị nchapụta" (otu glaze anaghị egbuke ghọrọ nke kpọrọ nkụ) ma nwee ike ibelata ndụ relay nke kiln. L&L na-enyekwa mmemme ime ka ọ jụọ oyi nwayọọ nwayọọ maka cone 6:
 
-Table: L&L "User 6": ịjụ oyi nwayọọ maka glaze cone 6
-Label: Ịjụ oyi nwayọọ L na L
+Table: L&L "User 6": ime ka ọ jụọ oyi nwayọọ nwayọọ maka glaze cone 6
+Label: Ime ka ọ jụọ oyi nwayọọ nke L na L
 
-| Nzọụkwụ |                             Ọsọ |          Ọkụ a chọrọ |
+| Nzọụkwụ |                             Ọsọ |        Ihe a na-achọ |
 | ------- | ------------------------------: | -------------------: |
 | 1       |                Ọsọ zuru ezu elu | {{2232 °F; 1222 °C}} |
 | 2       |                Ọsọ zuru ezu ala | {{1900 °F; 1038 °C}} |
 | 3       | Gbadaa na {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Controller Skutt na-enyekwa preheat na nhọrọ ịjụ oyi otu nzọụkwụ.
+Controller nke Skutt na-enyekwa ikpo ọkụ tupu mmalite na nhọrọ ime ka ọ jụọ oyi n'otu nzọụkwụ.
 
-### Na kiln aka
+### Na kiln a na-eji aka arụ
 
-Kiln aka apụghị iso usoro ndị a kpọmkwem, mana atụmatụ ahụ bụ otu: nwayọọ na mbụ, kwụsie ike n'etiti, na njedebe a na-ele anya. Usoro glaze ọkụ dị ala nke Bracker's dị n'okpuru Kiln aka n'uju, n'okpuru; maka cone dị ọkụ karịa, ọ na-agbakwunye "nkezi nkeji 15–30 maka nọmba cone ọ bụla". Site na pyrometer, omume na ndekọ, ị nwere ike iṅomi drop-and-hold ma ọ bụ ịjụ oyi nwayọọ n'ihe dị ka site n'iji aka wedata switch, dịka Digitalfire na-atụ aro.
+Kiln a na-eji aka arụ enweghị ike ịgbaso usoro ndị a kpọmkwem, mana atụmatụ ahụ bụ otu: nwayọọ na mmalite, n'otu ọsọ n'etiti, na njedebe a na-ele anya. Usoro glaze ọkụ dị ala nke Bracker dị n'okpuru Kiln a na-eji aka arụ n'ụzọ zuru ezu, n'okpuru; maka cone dị ọkụ karịa ọ na-agbakwunye "nkezi nkeji 15–30 maka nọmba cone ọ bụla". Ya na pyrometer, mmega ahụ na akwụkwọ ndekọ, ị nwere ike iṅomi ibelata na ichere ma ọ bụ ime ka ọ jụọ oyi nwayọọ nwayọọ n'ụzọ dị nso site n'iji aka ebelata switch, dịka Digitalfire tụrụ aro.
 
 ## Kiln aka n'uju {#manual-kilns}
 

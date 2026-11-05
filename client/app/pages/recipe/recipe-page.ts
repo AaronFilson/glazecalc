@@ -94,6 +94,7 @@ import { RecipeFirings } from './recipe-firings';
 import { RecipeConeCards, type ConePlace } from './recipe-cone-cards';
 import { recipeText } from './recipe-messages';
 import { coneFit } from '../../../../lib/recipe/cone-fit';
+import { recipeDrySg } from '../../../../lib/recipe/density';
 import { ATMOSPHERE_NAMES, Reader, coneText, firingLine, firingSummary } from './firing-text';
 
 const INCLUDE_KEY = 'includeAdditives';
@@ -769,6 +770,15 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     })
   );
   protected readonly total = computed(() => totalOf(this.lines().map((l) => l.amount)));
+  /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), for the SG calculator. */
+  protected readonly drySgEstimate = computed(() => {
+    const base = this.total();
+    const additives = this.additiveLines().map((line) => ({
+      ...line,
+      amount: String(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
+    }));
+    return recipeDrySg([...this.lines(), ...additives]);
+  });
   /** The unity formula on one line: K₂O 0.264 · CaO 0.736 · Al₂O₃ 0.407 · SiO₂ 3.710 · Si:Al 9.11. */
   protected readonly inlineSummary = computed(() => {
     const analysis = this.evaluation().analysis;

@@ -9,6 +9,7 @@
     "homeSafety": "Moenie jou gesin vergiftig nie - Glazecalc",
     "firing": "'n Eenvoudige oond bak - Glazecalc",
     "learnWithJohnBritt": "Leer met John Britt se gratis glasuurkursus - Glazecalc",
+    "teachingGlazeCalculation": "Glasuurberekening onderrig - Glazecalc",
     "about": "Oor - Glazecalc",
     "privacy": "Privaatheid - Glazecalc",
     "terms": "Gebruiksvoorwaardes - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Keur 'n verandering goed - Glazecalc",
     "cones": "Kegelkaart: temperature van Orton- en SK-kegels - Glazecalc",
     "materials": "Standaard-glasuurgrondstowwe: ontleding en gevare - Glazecalc",
-    "materialInfo": "{name}: oksiedontleding en gevare - Glazecalc"
+    "materialInfo": "{name}: oksiedontleding en gevare - Glazecalc",
+    "famousGlazes": "Bekende glasure - Glazecalc",
+    "famousGlaze": "{name}-glasuur - Glazecalc"
   },
   "nav": {
     "skip": "Spring na die inhoud",
@@ -177,6 +180,7 @@
     "homeSafety": "Wat om te doen as 'n kind of troeteldier 'n glasuurgrondstof insluk, en hoe om grondstowwe, stof, die oond en handgemaakte ware om jou gesin veilig te hou.",
     "firing": "Hoe om 'n elektriese oond te bak: kies, plaas en lees kegels, en volg gepubliseerde skedules vir biskwiet- en glasuurbakke, met 'n kegelkaart.",
     "learnWithJohnBritt": "'n Metgesel by John Britt se gratis aanlyn-glasuurkursus: sy video's eenheid vir eenheid, met Glazecalc se gidse om te lees en oefeninge om in die sakrekenaar te probeer.",
+    "teachingGlazeCalculation": "6 sessies om die Seger-formule (UMF) te onderrig: grondstowwe en triaksiale teëls, mol, van resep na formule en terug, en glasuurfoute, met uitgewerkte voorbeelde en werkblaaie om te druk.",
     "advice": "Praktiese wenke oor meng, glasuur en bak, van Glazecalc, plus enige advies van jou eie. Gratis vir pottebakkers en keramiekwerkers.",
     "about": "Glazecalc is 'n gratis, oopbron-glasuurchemie-sakrekenaar en -notaboek. Sien hoe dit 'n Seger-formule uitwerk en hoe dit gebou is.",
     "privacy": "Hoe Glazecalc met jou data omgaan: geen advertensies, geen analise en geen opsporing nie, en niks word verkoop nie. Wat bewaar word, hoekom, en hoe om jou regte te gebruik.",
@@ -187,6 +191,8 @@
     "materials": "Die grondstowwe in Glazecalc se standaardbiblioteek, van veldspate en klei tot frits en boorbronne, elk met sy oksiedontleding, Seger-formule en gevare.",
     "materialInfo": "{name}: oksiedontleding, Seger-formule, gloeiverlies en gevare in Glazecalc se standaardbiblioteek.",
     "materialInfoLong": "{name} in Glazecalc se standaardbiblioteek van glasuurgrondstowwe: sy oksiedontleding, bydrae tot die Seger-formule, gloeiverlies en gevare.",
+    "famousGlazes": "Bekende glasure van oor die hele wêreld: elke glasuur se tradisionele resep of historiese analise, sy Seger-formule (UMF), en 'n weergawe uit die grondstowwe wat waar jy is verkoop word.",
+    "famousGlaze": "{name}-glasuur ({native}): sy tradisionele resep of historiese analise, bak, Seger-formule (UMF) en bronne, en 'n weergawe uit die grondstowwe wat waar jy is verkoop word.",
     "imageAlt": "Die Glazecalc-logo en sy opskrif, gratis glasuurchemie vir pottebakkers, langs 'n foto van gebakte kegelpakkies."
   },
   "notices": {

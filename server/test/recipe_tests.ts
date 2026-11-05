@@ -3,6 +3,7 @@ import { expect } from 'chai';
 import { IntlMessageFormat } from 'intl-messageformat';
 import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
+import density from '../../lib/recipe/density.js';
 import type { Caution, LimitSet, MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
 import standardData from '../../data/index.js';
 
@@ -467,32 +468,169 @@ describe('Shared recipe tools', () => {
 
   it('works out a slurry by Brongniart’s formula: dry glaze, water to reach an SG, and a batch', () => {
     // A litre at SG 1.5 with dry materials at 2.5: 0.5 × 2.5 ÷ 1.5 kg of glaze, the rest water.
-    expect(recipe.dryPerLitre(1.5)).to.be.closeTo(0.8333, 1e-4);
-    const contents = recipe.slurryContents(10, 1.5)!;
+    expect(recipe.dryPerLitre(1.5, 2.5)).to.be.closeTo(0.8333, 1e-4);
+    const contents = recipe.slurryContents(10, 1.5, 2.5)!;
     expect(contents.glaze).to.be.closeTo(8.333, 1e-3);
     expect(contents.water).to.be.closeTo(6.667, 1e-3);
     // Thinning 10 L from 1.5 to 1.45: water = 10 × 0.05 ÷ 0.45 kg, whatever the materials.
-    expect(recipe.waterToReach(10, 1.5, 1.45)).to.be.closeTo(1.111, 1e-3);
+    expect(recipe.waterToReach(10, 1.5, 1.45, 2.5)).to.be.closeTo(1.111, 1e-3);
     expect(recipe.waterToReach(10, 1.5, 1.45, 2.6)).to.be.closeTo(1.111, 1e-3);
     // Thickening is water to pour off; the glaze stays the same.
-    const off = recipe.waterToReach(10, 1.4, 1.5)!;
+    const off = recipe.waterToReach(10, 1.4, 1.5, 2.5)!;
     expect(off).to.be.closeTo(-2, 1e-9);
-    expect(recipe.slurryContents(10 + off, 1.5)!.glaze).to.be.closeTo(recipe.slurryContents(10, 1.4)!.glaze, 1e-9);
+    expect(recipe.slurryContents(10 + off, 1.5, 2.5)!.glaze).to.be.closeTo(
+      recipe.slurryContents(10, 1.4, 2.5)!.glaze,
+      1e-9
+    );
     // A batch: 5 kg of dry glaze at 1.45, and back again.
-    const batch = recipe.waterForBatch(5, 1.45)!;
-    expect(recipe.slurryContents(batch.litres, 1.45)!.glaze).to.be.closeTo(5, 1e-9);
+    const batch = recipe.waterForBatch(5, 1.45, 2.5)!;
+    expect(recipe.slurryContents(batch.litres, 1.45, 2.5)!.glaze).to.be.closeTo(5, 1e-9);
     expect(batch.water).to.be.closeTo(batch.litres * 1.45 - 5, 1e-9);
-    expect(recipe.batchForVolume(10, 1.5)).to.deep.equal(contents);
-    // What it cannot take: water, a slurry heavier than its materials, no volume.
-    expect(recipe.dryPerLitre(1)).to.equal(null);
-    expect(recipe.dryPerLitre(2.6)).to.equal(null);
-    expect(recipe.slurryContents(0, 1.5)).to.equal(null);
-    expect(recipe.waterToReach(10, 1.5, 0.9)).to.equal(null);
+    expect(recipe.batchForVolume(10, 1.5, 2.5)).to.deep.equal(contents);
+    // What it cannot take: water, a slurry heavier than its materials, no volume, no dry SG.
+    expect(recipe.dryPerLitre(1, 2.5)).to.equal(null);
+    expect(recipe.dryPerLitre(2.6, 2.5)).to.equal(null);
+    expect(recipe.slurryContents(0, 1.5, 2.5)).to.equal(null);
+    expect(recipe.waterToReach(10, 1.5, 0.9, 2.5)).to.equal(null);
+    expect((recipe.dryPerLitre as (sg: number) => number | null)(1.5)).to.equal(null);
     // Densities as potters read them.
     expect(recipe.sgFromBaume(recipe.baumeFromSg(1.45))).to.be.closeTo(1.45, 1e-12);
     expect(recipe.sgFromPint(29)).to.equal(1.45);
     expect(recipe.pintFromSg(1.5)).to.equal(30);
     expect(recipe.LITRES.usGallon).to.be.closeTo(3.785, 1e-3);
+    // The water to add needs no dry SG at all.
+    expect(recipe.waterToReach(10, 1.5, 1.45, null)).to.be.closeTo(1.111, 1e-3);
+    expect(recipe.waterToReach(10, 2.7, 1.45, null)).to.be.closeTo(27.778, 1e-3);
+    expect(recipe.waterToReach(10, 1.5, 1, null)).to.equal(null);
+  });
+
+  it('estimates a material’s dry SG from its mineral, its kind or, for a frit, its oxides', () => {
+    const library = standardData.load<MaterialRecord>('materials');
+    const additives = standardData.load<MaterialRecord>('additives');
+    // Standard records, as the app has them (the data files carry no owner).
+    const named = (name: string) => ({
+      ...[...library, ...additives].find((m) => m.name === name)!,
+      ownedBy: 'Standard'
+    });
+    // Minerals: quartz, calcite, zircon.
+    expect(recipe.materialSg(named('Silica'))).to.deep.equal({ sg: 2.65, basis: 'mineral', source: 'quartz' });
+    expect(recipe.materialSg(named('Whiting')).sg).to.equal(2.71);
+    expect(recipe.materialSg(named('Zircon')).sg).to.equal(4.65);
+    // Checked against three sources each (docs/sources/dry-sg-sources.md).
+    expect(recipe.materialSg(named('Bone Ash')).sg).to.equal(3.16);
+    expect(recipe.materialSg(named('Copper oxide')).sg).to.equal(6.4);
+    expect(recipe.materialSg(named('Litharge')).sg).to.equal(9.35);
+    // Crystal-structure densities settle the disagreements: K2CO3 2.435, Co3O4 6.06, CeO2 7.22.
+    expect(recipe.materialSg(named('Pearl Ash')).sg).to.equal(2.43);
+    expect(recipe.materialSg(named('Cobalt Oxide')).sg).to.equal(6.07);
+    expect(recipe.materialSg(named('Cerium oxide')).sg).to.equal(7.22);
+    // Kinds: commercial feldspars and clays.
+    expect(recipe.materialSg(named('Custer Spar'))).to.include({ sg: 2.6, basis: 'kind', source: 'feldspar' });
+    expect(recipe.materialSg(named('EPK Kaolin'))).to.include({ sg: 2.6, basis: 'kind', source: 'clay' });
+    // Frits from Appen's factors: a lead bisilicate near the 4.5 to 4.7 published, Ferro 3110 near 2.5.
+    expect(recipe.materialSg(named('Ferro Frit 4064 (lead bisilicate)'))).to.include({ basis: 'glass' });
+    expect(recipe.materialSg(named('Ferro Frit 4064 (lead bisilicate)')).sg).to.be.within(4.45, 4.7);
+    expect(recipe.materialSg(named('Ferro Frit 3110')).sg).to.be.within(2.4, 2.6);
+    // Silica as a mineral or a glass: the crystal matters, so calcined flint has none.
+    expect(recipe.materialSg(named('Flint (UK calcined)'))).to.include({ sg: null, reason: 'crystal-form-unknown' });
+    expect(recipe.materialSg(named('Gerstley Borate'))).to.include({ sg: null, reason: 'mixture-unknown' });
+    // A potter's own material with no kind: no guess.
+    expect(recipe.materialSg({ name: 'Creek clay', fields: [{ name: 'SiO2', amount: '60' }] })).to.include({
+      sg: null,
+      basis: 'none',
+      reason: 'not-classified'
+    });
+    // Every standard material has a number or a reason.
+    for (const material of [...library, ...additives]) {
+      const estimate = recipe.materialSg({ ...material, ownedBy: 'Standard' });
+      expect(estimate.sg !== null || Boolean(estimate.reason), material.name).to.equal(true);
+    }
+    // Known glasses: soda-lime float about 2.50, borosilicate 3.3 about 2.23.
+    const glass = (wt: Record<string, number>) => density.glassDensity(wt).sg!;
+    expect(glass({ SiO2: 72.5, Na2O: 13.5, CaO: 9, MgO: 3.5, Al2O3: 1.5 })).to.be.closeTo(2.5, 0.03);
+    expect(glass({ SiO2: 80.6, B2O3: 12.6, Na2O: 4.2, Al2O3: 2.2 })).to.be.closeTo(2.23, 0.04);
+    // A tile frit with its analysis and density (Barba et al. 2016, frit FCP, 2.654): within 1%.
+    const fcp = { SiO2: 60, Al2O3: 6.5, B2O3: 1.74, CaO: 14.1, MgO: 1.75, Na2O: 0.34, K2O: 4.37, ZnO: 10.6 };
+    expect(glass(fcp)).to.be.closeTo(2.654, 0.03);
+    expect(density.glassDensity({ SiO2: 90, Fe2O3: 10 }).sg).to.equal(null);
+    // A frit with more than 1% of an oxide outside Appen's table has no estimate, and says which.
+    const ironFrit = {
+      name: 'Iron frit',
+      category: 'frit',
+      percentmole: 'percent',
+      fields: [
+        { name: 'SiO2', amount: '60' },
+        { name: 'B2O3', amount: '20' },
+        { name: 'Na2O', amount: '15' },
+        { name: 'Fe2O3', amount: '5' }
+      ]
+    };
+    expect(recipe.materialSg(ironFrit)).to.deep.include({ sg: null, reason: 'oxides-not-in-factors' });
+    expect(recipe.materialSg(ironFrit).oxides).to.include('Fe2O3');
+  });
+
+  it('knows a material by its name only when it is a standard record', () => {
+    const library = standardData.load<MaterialRecord>('materials');
+    const whiting = library.find((m) => m.name === 'Whiting')!;
+    // A potter's own "Whiting" or "Silica" may be anything: no mineral by its name.
+    expect(recipe.materialSg({ ...whiting, ownedBy: 'someone' }).basis).to.not.equal('mineral');
+    expect(recipe.materialSg({ name: 'Silica', fields: [{ name: 'SiO2', amount: '100' }] })).to.include({
+      sg: null,
+      reason: 'not-classified'
+    });
+    // Their own clay still goes by its kind, and the standard one by its mineral.
+    expect(recipe.materialSg({ name: 'Whiting', category: 'clay', ownedBy: 'someone' })).to.include({
+      sg: 2.6,
+      basis: 'kind'
+    });
+    expect(recipe.materialSg({ ...whiting, ownedBy: 'Standard' })).to.include({ sg: 2.71, source: 'calcite' });
+  });
+
+  it('estimates a recipe’s dry SG as its weight over the sum of each weight over its SG', () => {
+    const library = standardData.load<MaterialRecord>('materials');
+    const additives = standardData.load<MaterialRecord>('additives');
+    const named = (name: string, amount: number) => ({
+      ...[...library, ...additives].find((m) => m.name === name)!,
+      ownedBy: 'Standard',
+      amount: String(amount)
+    });
+    const lines = [named('Custer Spar', 40), named('Whiting', 20), named('EPK Kaolin', 20), named('Silica', 20)];
+    const sg = recipe.recipeDrySg(lines);
+    expect(sg.sg).to.equal(Math.round((100 / (40 / 2.6 + 20 / 2.71 + 20 / 2.6 + 20 / 2.65)) * 100) / 100);
+    expect(sg.basis).to.equal('mixed');
+    expect(sg.unknownShare).to.equal(0);
+    // A little bentonite (2%) is left out and said; much Gerstley Borate is not.
+    const some = recipe.recipeDrySg([...lines, named('Bentonite', 2)]);
+    expect(some.sg).to.equal(sg.sg);
+    expect(some.unknown).to.deep.equal(['Bentonite']);
+    const much = recipe.recipeDrySg([...lines, named('Gerstley Borate', 20)]);
+    expect(much).to.include({ sg: null, basis: 'none', reason: 'too-much-unknown' });
+    expect(recipe.recipeDrySg([])).to.include({ sg: null, reason: 'no-amounts' });
+    expect(recipe.recipeDrySg([named('Silica', 10)]).basis).to.equal('mineral');
+    // Exactly 5% unknown still gives an estimate, in whatever amounts make it up; a little more does not.
+    for (const [known, unknown] of [
+      [95, 5],
+      [19, 1],
+      [0.95, 0.05],
+      [57, 3]
+    ]) {
+      const edge = recipe.recipeDrySg([named('Silica', known), named('Bentonite', unknown)]);
+      expect(edge.sg, `${known} + ${unknown}`).to.equal(2.65);
+      expect(edge.unknownShare).to.be.closeTo(0.05, 1e-12);
+    }
+    expect(recipe.recipeDrySg([named('Silica', 94.9), named('Bentonite', 5.1)])).to.include({
+      sg: null,
+      reason: 'too-much-unknown'
+    });
+    // Every line unknown: no estimate, and every name said.
+    const none = recipe.recipeDrySg([named('Bentonite', 50), named('Gerstley Borate', 50)]);
+    expect(none).to.include({ sg: null, reason: 'too-much-unknown', unknownShare: 1 });
+    expect(none.unknown).to.deep.equal(['Bentonite', 'Gerstley Borate']);
+    // Zero amounts count for nothing: not as unknown, and alone they are no amounts.
+    const zero = recipe.recipeDrySg([named('Silica', 10), named('Gerstley Borate', 0)]);
+    expect(zero).to.include({ sg: 2.65, unknownShare: 0 });
+    expect(zero.unknown).to.deep.equal([]);
+    expect(recipe.recipeDrySg([named('Silica', 0)])).to.include({ sg: null, reason: 'no-amounts' });
   });
 
   it('matches a recipe from the materials on hand, saying what changed as codes', () => {

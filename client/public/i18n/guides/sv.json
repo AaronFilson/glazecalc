@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Lär dig med John Britts kostnadsfria glasyrkurs",
       "text": "Hans kostnadsfria videokurs på YouTube, del för del, med våra guider att läsa och övningar att prova i Glazecalc. På engelska."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Lära ut glasyrberäkning",
+      "text": "6 lektioner för en kurs eller studiecirkel, från triaxialprover till Segerformeln räknad åt båda hållen, med arbetsblad att skriva ut."
     }
   },
   "more": "Fler guider",
@@ -243,5 +247,20 @@
     "loading": "Hämtar biblioteket…",
     "failed": "Biblioteket kunde inte hämtas. Försök igen senare.",
     "choosePrompt": "Välj land eller region för att se vad som säljs där."
+  },
+  "stull": {
+    "title": "Stull-diagram: kiseldioxid mot aluminiumoxid i Segerformeln",
+    "regions": {
+      "unfused": "osmält",
+      "matte": "matt",
+      "semi-matte": "halvmatt",
+      "bright": "blank",
+      "underfired": "underbränd",
+      "crazed": "krackelerad"
+    },
+    "keyBright": "Prickad linje: där Stulls glasyrer var som blankast.",
+    "keyCrazed": "Snedstreck: där de krackelerade.",
+    "note": "En vägledning, inte en förutsägelse. R. T. Stull (Transactions of the American Ceramic Society, 1912) brände vid ungefär kägla 11 med flussmedlen fasta på 0,3 K₂O och 0,7 CaO; andra flussmedel och bränningar flyttar områdena, och en glasyr som är matt bara för att den var underbränd kan ändå hamna i det blanka området. Områdena är ritade som Glazy ritar dem.",
+    "inGuide": "Kiseldioxid (SiO₂) vågrätt, från ungefär 1 till 7, och aluminiumoxid (Al₂O₃) lodrätt, från 0 till 1, båda från Segerformeln. Kilformade områden breder ut sig från vänster: osmält längst upp till vänster, sedan matt, sedan halvmatt. Den oskuggade delen till höger om dem är blank, och den prickade linjen i den visar var Stulls glasyrer var som blankast. Underbränt ligger längst ned till höger, med lite aluminiumoxid och mycket kiseldioxid. Snedstrecken, lågt i diagrammet och längs dess vänstra sida, visar var hans prov krackelerade."
   }
 }

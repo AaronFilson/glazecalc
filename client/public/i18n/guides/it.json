@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Imparare con il corso gratuito sugli smalti di John Britt",
       "text": "Il suo corso gratuito in video su YouTube, unità per unità, con le nostre guide da leggere ed esercizi da provare in Glazecalc. In inglese."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Insegnare il calcolo degli smalti",
+      "text": "6 lezioni per una classe o un gruppo di studio, dai provini triassiali alla formula di Seger calcolata nei due sensi, con schede da stampare."
     }
   },
   "more": "Altre guide",
@@ -243,5 +247,20 @@
     "loading": "Caricamento dell’elenco standard…",
     "failed": "Impossibile caricare l’elenco standard. Riprovare più tardi.",
     "choosePrompt": "Scegliere il paese o l’area per vedere cosa è in vendita lì."
+  },
+  "stull": {
+    "title": "Diagramma di Stull: silice rispetto ad allumina nella formula di Seger",
+    "regions": {
+      "unfused": "non fuso",
+      "matte": "opaco",
+      "semi-matte": "semiopaco",
+      "bright": "lucido",
+      "underfired": "sottocotto",
+      "crazed": "cavillato"
+    },
+    "keyBright": "Linea punteggiata: dove gli smalti di Stull erano più lucidi.",
+    "keyCrazed": "Tratteggio incrociato: dove cavillavano.",
+    "note": "Una guida, non una previsione. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuoceva a circa cono 11 con i fondenti fissati a 0,3 K₂O e 0,7 CaO; altri fondenti e altre cotture spostano le regioni, e uno smalto opaco solo perché sottocotto può comunque cadere tra i lucidi. Le regioni sono quelle disegnate da Glazy.",
+    "inGuide": "La silice (SiO₂) in orizzontale, da circa 1 a 7, e l’allumina (Al₂O₃) in verticale, da 0 a 1, entrambe dalla formula di Seger. Dei settori si aprono a ventaglio da sinistra: non fuso in alto a sinistra, poi opaco, poi semiopaco. La parte non ombreggiata alla loro destra è lucida, e la linea punteggiata al suo interno indica dove gli smalti di Stull erano più lucidi. Sottocotto è in basso a destra, con poca allumina e molta silice. Il tratteggio, in basso nel diagramma e sul suo lato sinistro, indica dove le sue prove cavillavano."
   }
 }

@@ -89,16 +89,16 @@ Label: Ortono piroskopų lentelė
 | Piroskopas | Lėtai, {{27 °F/h; 15 °C/h}} | Vidutiniškai, {{108 °F/h; 60 °C/h}} | Greitai, {{270 °F/h; 150 °C/h}} |
 | ---------- | --------------------------: | ----------------------------------: | ------------------------------: |
 | 022        |                           – |                 {{1087 °F; 586 °C}} |             {{1094 °F; 590 °C}} |
-| 018        |                           – |                 {{1319 °F; 715 °C}} |             {{1353 °F; 734 °C}} |
-| 015        |                           – |                 {{1456 °F; 791 °C}} |             {{1504 °F; 818 °C}} |
+| 018        |         {{1267 °F; 686 °C}} |                 {{1319 °F; 715 °C}} |             {{1353 °F; 734 °C}} |
+| 015        |         {{1382 °F; 750 °C}} |                 {{1456 °F; 791 °C}} |             {{1504 °F; 818 °C}} |
 | 010        |         {{1636 °F; 891 °C}} |                 {{1657 °F; 903 °C}} |             {{1679 °F; 915 °C}} |
 | 08         |         {{1692 °F; 922 °C}} |                 {{1728 °F; 942 °C}} |             {{1753 °F; 956 °C}} |
-| 07         |                           – |                 {{1789 °F; 976 °C}} |             {{1809 °F; 987 °C}} |
+| 07         |         {{1764 °F; 962 °C}} |                 {{1789 °F; 976 °C}} |             {{1809 °F; 987 °C}} |
 | 06         |         {{1798 °F; 981 °C}} |                 {{1828 °F; 998 °C}} |            {{1855 °F; 1013 °C}} |
 | 05         |        {{1870 °F; 1021 °C}} |                {{1888 °F; 1031 °C}} |            {{1911 °F; 1044 °C}} |
 | 04         |        {{1915 °F; 1046 °C}} |                {{1945 °F; 1063 °C}} |            {{1971 °F; 1077 °C}} |
 | 03         |        {{1960 °F; 1071 °C}} |                {{1987 °F; 1086 °C}} |            {{2019 °F; 1104 °C}} |
-| 02         |                           – |                {{2016 °F; 1102 °C}} |            {{2052 °F; 1122 °C}} |
+| 02         |        {{1972 °F; 1078 °C}} |                {{2016 °F; 1102 °C}} |            {{2052 °F; 1122 °C}} |
 | 01         |        {{1999 °F; 1093 °C}} |                {{2046 °F; 1119 °C}} |            {{2080 °F; 1138 °C}} |
 | 1          |        {{2028 °F; 1109 °C}} |                {{2079 °F; 1137 °C}} |            {{2109 °F; 1154 °C}} |
 | 4          |        {{2086 °F; 1141 °C}} |                {{2124 °F; 1162 °C}} |            {{2161 °F; 1183 °C}} |
@@ -460,25 +460,25 @@ Rankinio valdymo krosnis laikosi to paties plano, tik ranka: lėtai džiovinkite
 
 ## Glazūros degimas {#glaze}
 
-**Glazūros degimo**{{en: glaze firing}} metu glazūra{{en: glaze}} ant biskvito{{en: bisque}} išsilydo į stiklą. Dauguma pradedančiųjų žemo degimo glazūras dega iki piroskopų{{en: cone}} 06–04, o vidutinio degimo glazūras – iki piroskopų 5–6. Dekite iki piroskopo, nurodyto ant jūsų molio masės ir glazūros etikečių, pastatę piroskopų rinkinį{{en: cone pack}} aplink tą numerį. Kas vyksta glazūroje jai lydantis, skaitykite vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
+Glazūros degimo{{en: glaze firing}} metu glazūra ant biskvito išsilydo į stiklą. Dauguma rinkoje parduodamų žemo degimo glazūrų yra skirtos piroskopui 06 arba 05 (žemo degimo ruožas – piroskopai 06–04), o dauguma vidutinio degimo glazūrų – piroskopams 5–6. Degkite iki piroskopo, nurodyto ant glazūros ir molio masės etikečių, aplink tą numerį pastatę piroskopų rinkinį{{en: cone pack}}. Kas vyksta glazūroje jai lydantis, rasite vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
 
 ### Krosnies pakrovimas glazūros degimui
 
-- Glazūruoti dirbiniai neturi liestis vienas su kitu ar su sienelėmis: palikite apie ½ colio (13 mm).
-- Ant dugno glazūros nepalikite (vadinamasis **neglazūruotas dugnas**) arba žemo degimo dirbinius statykite ant **trikojų** – mažų atramėlių su smaigaliais. Akmens masės dirbinių{{en: stoneware}} ir porceliano nereikėtų statyti ant trikojų, nes tokioje temperatūroje jie įsminga į dirbinį; vietoj jų naudokite aukšto degimo krosnies plokščių apsaugą arba kvarco smėlį.
-- Tarp plokščių kraštų ir sienelės ar išjungiklio palikite bent 1 colį (25 mm).
+- Glazūruoti dirbiniai negali liesti vienas kito ir krosnies sienelių: palikite maždaug ½ colio (13 mm).
+- Dugną palikite be glazūros (**neglazūruotas dugnas**) arba žemo degimo dirbinius statykite ant **trikojų**{{en: stilts}} – mažų atramėlių su smaigaliais. Akmens masės ir porceliano dirbinių nereikėtų statyti ant trikojų, nes tokioje temperatūroje jie įsminga į šukę; vietoj jų naudokite aukštam degimui tinkamą krosnies plokščių apsaugą arba kvarcinį smėlį.
+- Tarp krosnies plokščių kraštų ir sienelės ar Kiln-Sitter išjungiklio palikite ne mažiau kaip 1 colį (25 mm).
 
 ### Valdiklio degimo programos
 
 Table: L&L ir Bartlett glazūros degimo programos
 Label: Glazūros degimo programos
 
-| Segmentas                          |                                        Kaitinti iki |             Slow Glaze |             Fast Glaze |
-| ---------------------------------- | --------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                                  |                                  {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |  Atskiro žingsnio nėra |
-| 2                                  | {{250 °F; 139 °C}} žemiau aukščiausios temperatūros | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                  |                             Aukščiausia temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Kaitinimo trukmė tuščioje krosnyje |                                                     |        Apie 6½–7½ val. |          Apie 3–4 val. |
+| Segmentas                        |                                        Kaitinti iki |             Slow Glaze |             Fast Glaze |
+| -------------------------------- | --------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                                |                                  {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |  Atskiro žingsnio nėra |
+| 2                                | {{250 °F; 139 °C}} žemiau aukščiausios temperatūros | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                                |                             Aukščiausia temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Kaitinimo laikas, tuščia krosnis |                                                     |    Apie 6½–7½ valandos |      Apie 3–4 valandas |
 
 Table: Kur baigiasi 2 ir 3 segmentai, pagal piroskopą (L&L ir Bartlett)
 Label: Programų tikslinės temperatūros
@@ -489,42 +489,42 @@ Label: Programų tikslinės temperatūros
 | 04         |  {{1676 °F; 913 °C}} |    {{1926 °F; 1052 °C}} |
 | 6          | {{1982 °F; 1083 °C}} |    {{2232 °F; 1222 °C}} |
 
-Atsižvelgiant į L&L įspėjimą dėl greito degimo, programa Slow Glaze yra saugesnis numatytasis pasirinkimas. Jei ties aukščiausia temperatūra pridedate ilgesnį nei 5–10 minučių išlaikymą{{en: hold}}, L&L nurodo atitinkamai sumažinti tikslinę temperatūrą arba temperatūros korekciją ir pažymi, kad „išlaikymas aukštoje temperatūroje greitina kaitinimo elementų ir termoporos dėvėjimąsi“.
+Atsižvelgiant į L&L įspėjimą dėl greito degimo, saugesnis numatytasis pasirinkimas yra Slow Glaze. Jei aukščiausioje temperatūroje pridedate ilgesnį nei 5–10 minučių išlaikymą{{en: hold}}, L&L pataria atitinkamai sumažinti tikslinę temperatūrą arba temperatūros korekciją ir pažymi, kad „išlaikymas aukštoje temperatūroje greitina kaitinimo elementų ir termoporos dėvėjimąsi“.
 
 ### Piroskopas 6: atvėsinimas ir išlaikymas
 
-Vidutinio degimo glazūrose kartais atsiranda **adatinių skylučių**{{en: pinholing}} (smulkių skylučių paviršiuje) arba pūslelių, kurias palieka iš lydalo besiveržiančios dujos. Degimo programa su **atvėsinimu ir išlaikymu**{{en: drop-and-hold}} pasiekia aukščiausią temperatūrą, greitai atvėsina krosnį maždaug {{100 °F; 56 °C}} ir toje temperatūroje išlaiko. Digitalfire žodžiais, „atvėsinus 100°F ir išlaikant, lydalas tampa pakankamai klampus, kad burbulai sprogtų, bet jų vietos dar užsilygintų“.
+Vidutinio degimo glazūrose kartais lieka **adatinių skylučių**{{en: pinholes}} (smulkių skylučių paviršiuje) arba pūslelių, kurias palieka iš lydalo besiveržiančios dujos. Degant pagal **atvėsinimo ir išlaikymo**{{en: drop-and-hold}} programą, krosnis įkaitinama iki aukščiausios temperatūros, greitai atvėsinama maždaug {{100 °F; 56 °C}} ir toje temperatūroje išlaikoma. Digitalfire žodžiais, „atvėsinus 100 °F ir išlaikius, lydalas tampa pakankamai klampus, kad burbulai sprogtų, bet dar gali užsilydyti“.
 
-Table: Digitalfire PLC6DS, piroskopas 6, atvėsinimas ir išlaikymas
+Table: Digitalfire PLC6DS, atvėsinimas ir išlaikymas piroskopui 6
 Label: Digitalfire PLC6DS
 
-| Žingsnis |                                Sparta | Tikslinė temperatūra | Išlaikymas                                       |
-| -------- | ------------------------------------: | -------------------: | ------------------------------------------------ |
-| 1        |                 {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 min.                                          |
-| 2        |                {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Nebūtinas, 30 min., burbulų debesims išsklaidyti |
-| 3        |                 {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 min.; didelėse krosnyse ilgiau                |
-| 4        | Aušinti {{900 °F/h; 500 °C/h}} sparta | {{2100 °F; 1148 °C}} | 30 min.                                          |
+| Žingsnis |                         Sparta | Tikslinė temperatūra | Išlaikymas                                                  |
+| -------- | -----------------------------: | -------------------: | ----------------------------------------------------------- |
+| 1        |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minučių                                                  |
+| 2        |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pasirinktinai 30 minučių, kad išsisklaidytų burbulų debesys |
+| 3        |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minučių; didelėse krosnyse ilgiau                        |
+| 4        | Aušinti {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minučių                                                  |
 
-Programa PLC6DS trunka apie 9 valandas 36 minutes. Skystesnėms glazūroms Digitalfire vietoj to atvėsina maždaug {{200 °F; 111 °C}}; atvėsinus per daug, „išlaikymo metu gresia kristalizacija“. Jos aukščiausia temperatūra {{2200 °F; 1204 °C}} yra žemesnė už lentelėje piroskopui 6 nurodytą {{2232 °F; 1222 °C}}; Digitalfire duomenimis, dauguma krosnių piroskopą 6 pasiekia ties maždaug {{2200 °F; 1204 °C}}. Patikrinkite tai piroskopų rinkiniu savo krosnyje.
+PLC6DS trunka apie 9 valandas 36 minutes. Skystesnėms glazūroms Digitalfire atvėsina maždaug {{200 °F; 111 °C}}; atvėsinus per daug, „išlaikymo metu kyla kristalizacijos pavojus“. Jos aukščiausia temperatūra {{2200 °F; 1204 °C}} yra žemesnė už lentelėje piroskopui 6 nurodytą {{2232 °F; 1222 °C}}; Digitalfire teigia, kad dauguma krosnių piroskopą 6 pasiekia maždaug ties {{2200 °F; 1204 °C}}. Patikrinkite tai piroskopų rinkiniu savo krosnyje.
 
 ### Reguliuojamas aušinimas
 
-**Reguliuojamas aušinimas** reiškia, kad valdiklis krosnį aušina nustatyta sparta, o ne leidžia jai laisvai vėsti. Digitalfire programa C6DHSC – tai PLC6DS, po kurios krosnis aušinama {{150 °F/h; 83 °C/h}} sparta nuo {{2100 °F; 1148 °C}} iki {{1400 °F; 760 °C}}, o tada išjungiama. Ji „pagerina blizgesį ir paviršiaus kokybę“ ir padeda rutilo mėlynoms glazūroms, tačiau reguliuojamas aušinimas „gali padidinti matiškumą“ (viena matinė glazūra tapo sausa) ir gali sutrumpinti krosnies relių tarnavimo laiką. L&L taip pat tiekia reguliuojamo aušinimo programą piroskopui 6:
+**Reguliuojamas aušinimas**{{en: slow cooling}} reiškia, kad valdiklis aušina krosnį nustatyta sparta, užuot leidęs jai vėsti savaime. Digitalfire programa C6DHSC – tai PLC6DS, po kurios krosnis aušinama {{150 °F/h; 83 °C/h}} sparta nuo {{2100 °F; 1148 °C}} iki {{1400 °F; 760 °C}}, o tada išjungiama. Ji „pagerina blizgesį ir paviršiaus kokybę“ ir padeda rutilo mėlynoms glazūroms, tačiau reguliuojamas aušinimas „gali padidinti matiškumą“ (viena matinė glazūra tapo sausa) ir gali sutrumpinti krosnies relių tarnavimo laiką. L&L taip pat pateikia reguliuojamo aušinimo programą piroskopui 6:
 
 Table: L&L „User 6“: reguliuojamas aušinimas glazūroms piroskopui 6
-Label: L ir L reguliuojamas aušinimas
+Label: L&L reguliuojamas aušinimas
 
-| Žingsnis |                               Sparta | Tikslinė temperatūra |
-| -------- | -----------------------------------: | -------------------: |
-| 1        |                Kaitinti visu greičiu | {{2232 °F; 1222 °C}} |
-| 2        |                 Aušinti visu greičiu | {{1900 °F; 1038 °C}} |
-| 3        | Aušinti {{150 °F/h; 83 °C/h}} sparta |  {{1500 °F; 816 °C}} |
+| Žingsnis |                        Sparta | Tikslinė temperatūra |
+| -------- | ----------------------------: | -------------------: |
+| 1        |         Kaitinti visu greičiu | {{2232 °F; 1222 °C}} |
+| 2        |          Aušinti visu greičiu | {{1900 °F; 1038 °C}} |
+| 3        | Aušinti {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt valdikliai taip pat siūlo pradinį džiovinimą ir vieno žingsnio aušinimo parinktį.
+Skutt valdikliai taip pat siūlo pradinį kaitinimą ir vieno žingsnio aušinimą.
 
 ### Rankinio valdymo krosnyje
 
-Rankinio valdymo krosnis negali tiksliai laikytis šių programų, bet planas tas pats: pradžioje švelniai, viduryje tolygiai, o pabaigoje – stebint. Bracker's žemo degimo glazūros programa pateikta toliau, skyriuje Rankinio valdymo krosnys išsamiau; karštesniems piroskopams ji prideda „vidutiniškai 15–30 minučių kiekvienam piroskopo numeriui“. Turėdami pirometrą, patirties ir žurnalą, galite apytiksliai atkartoti atvėsinimą ir išlaikymą ar reguliuojamą aušinimą, ranka perjungdami jungiklius į žemesnes padėtis, kaip siūlo Digitalfire.
+Rankinio valdymo krosnis negali tiksliai vykdyti šių programų, tačiau planas tas pats: iš pradžių švelniai, per vidurį tolygiai, o pabaigą stebint. Bracker's žemo degimo glazūros programa pateikta toliau, skyriuje Rankinio valdymo krosnys išsamiau; karštesniems piroskopams ji prideda „vidutiniškai 15–30 minučių kiekvienam piroskopo numeriui“. Turėdami pirometrą, patirties ir degimo žurnalą, galite apytiksliai atkartoti atvėsinimą ir išlaikymą arba reguliuojamą aušinimą, rankomis sukdami jungiklius žemyn, kaip siūlo Digitalfire.
 
 ## Rankinio valdymo krosnys išsamiau {#manual-kilns}
 

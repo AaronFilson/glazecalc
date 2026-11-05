@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Funda ngesifundo samahhala se-glaze sikaJohn Britt",
       "text": "Isifundo sakhe samahhala samavidiyo ku-YouTube, iyunithi ngeyunithi, nemihlahlandlela yethu okufanele uyifunde nezivivinyo okufanele uzizame ku-Glazecalc. NgesiNgisi."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Ukufundisa ukubala i-glaze",
+      "text": "Izifundo ezi-6 zekilasi noma iqembu lokufunda, kusukela kuma-tile e-triaxial kuya ku-UMF ixazululwa ngazo zombili izindlela, namashidi okusebenza okuphrinta."
     }
   },
   "more": "Eminye imihlahlandlela",
@@ -243,5 +247,20 @@
     "loading": "Iyalayisha umtapo…",
     "failed": "Umtapo awukwazanga ukulayishwa. Zama futhi emuva kwesikhathi.",
     "choosePrompt": "Khetha izwe lakho noma isifunda sakho ukuze ubone okudayiswa lapho."
+  },
+  "stull": {
+    "title": "Ishadi le-Stull: i-silica ngokumelene ne-alumina ku-UMF",
+    "regions": {
+      "unfused": "engancibilikile",
+      "matte": "engacwebezeli",
+      "semi-matte": "engacwebezeli kancane",
+      "bright": "ekhanyayo",
+      "underfired": "engashiswanga ngokwanele",
+      "crazed": "ene-crazing"
+    },
+    "keyBright": "Umugqa wamachashazi: lapho ama-glaze ka-Stull ayekhanya kakhulu khona.",
+    "keyCrazed": "Imigqa ewelanayo: lapho aba ne-crazing khona.",
+    "note": "Kungumhlahlandlela, hhayi isibikezelo. U-R. T. Stull (Transactions of the American Ceramic Society, 1912) washisa cishe ku-cone 11 ama-flux engaguquki ku-0.3 K₂O no-0.7 CaO; amanye ama-flux nokunye ukushisa kuhambisa izindawo, futhi i-glaze engacwebezeli (matte) ngoba nje ingashiswanga ngokwanele isengabonakala njengecwebezelayo eshadini. Izindawo zinjengoba i-Glazy izidweba.",
+    "inGuide": "I-silica (SiO₂) ngokuvundla, kusukela cishe ku-1 kuya ku-7, ne-alumina (Al₂O₃) ngokuphakama, kusukela ku-0 kuya ku-1, zombili ziphuma ku-UMF. Izingxenye ezimise okwesigaxa zivuleka zisuka kwesobunxele: engancibilikanga phezulu kwesobunxele, bese kuba yi-matte, bese kuba yi-matte encane. Ingxenye engafakwanga umthunzi ngakwesokudla sazo icwebezela, futhi umugqa wamachashazi kuyo ukhombisa lapho ama-glaze ka-Stull ayecwebezela kakhulu. Engashiswanga ngokwanele ingezansi kwesokudla, ine-alumina encane ne-silica eningi. Imigqa ewelanayo, ezansi eshadini nangakwesobunxele salo, ikhombisa lapho izivivinyo zakhe zathola i-crazing."
   }
 }

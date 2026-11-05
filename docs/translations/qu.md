@@ -214,6 +214,26 @@ number for them has been read on an official page yet (the region work will); no
 
 **Native check** on the whole table.
 
+### 2.6 Round 14 terms (2026-11-04)
+
+No Quechua ceramics source read; built from AMLQ everyday words (_uchpa_ ash, _ichhu_ straw, _rumi_ stone, _t'uru_
+mud) and es-419 loans. **Native check** on all; the safety lines need the owner's extra review.
+
+| English                  | qu                                        | Notes                              |
+| ------------------------ | ----------------------------------------- | ---------------------------------- |
+| wood ash                 | k'aspi uchpa                              |                                    |
+| synthetic ash (合成土灰) | 土灰 nisqapa ruranasqa (sintético) rantin | Japanese name kept.                |
+| rice-straw ash (藁灰)    | arroz ichhu uchpa                         |                                    |
+| isu ash (柞灰)           | isu uchpa                                 |                                    |
+| porcelain stone (瓷石)   | porcelana rumi                            |                                    |
+| caustic                  | qarata ruphachin (cáustico)               | Spanish kept for the safety text.  |
+| avoid (breathing)        | (samaykuymanta) karunchakuy               | Not _ama munaychu_ ("don't want"). |
+| powder; sludge           | ñut'u; t'uru                              |                                    |
+| supplier                 | qhatuq                                    | As 2.4.                            |
+| drop-and-hold; hold      | urayachiy suyay; suyay                    |                                    |
+| glass former; stabilizer | vidrio ruraq; takyachiq                   |                                    |
+| flux                     | fundente                                  | es-419 loan.                       |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG, Orton, Seger,

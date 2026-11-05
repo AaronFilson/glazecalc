@@ -9,6 +9,7 @@
     "homeSafety": "Ẹ má ṣe fi májèlé pa ìdílé yín - Glazecalc",
     "firing": "Sísun nínú kiln tí kò díjú - Glazecalc",
     "learnWithJohnBritt": "Ẹ kọ́ pẹ̀lú ẹ̀kọ́ glaze ọ̀fẹ́ ti John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Kíkọ́ni ní ìṣirò glaze - Glazecalc",
     "about": "Nípa Glazecalc - Glazecalc",
     "privacy": "Àṣírí - Glazecalc",
     "terms": "Òfin ìlò - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Fọwọ́ sí àyípadà kan - Glazecalc",
     "cones": "Àtẹ cone: ìgbóná cone Orton àti SK - Glazecalc",
     "materials": "Àwọn ohun èlò glaze àjùmọ̀lò: oxide wọn àti ewu wọn - Glazecalc",
-    "materialInfo": "{name}: oxide àti ewu - Glazecalc"
+    "materialInfo": "{name}: oxide àti ewu - Glazecalc",
+    "famousGlazes": "Àwọn glaze olókìkí - Glazecalc",
+    "famousGlaze": "Glaze {name} - Glazecalc"
   },
   "nav": {
     "skip": "Lọ sí ohun tó wà nínú ojú-ìwé",
@@ -177,6 +180,7 @@
     "homeSafety": "Ohun tí a ó ṣe bí ọmọdé tàbí ẹranko ilé bá gbé ohun èlò glaze mì, àti bí a ṣe ń pa ohun èlò, eruku, kiln àti ìkòkò ọwọ́ mọ́ láìléwu fún ìdílé.",
     "firing": "Bí a ṣe ń sun kiln oníná mànàmáná: yan cone, gbé e sí ipò, kà á, kí ẹ sì tẹ̀lé ètò tí a tẹ̀ jáde fún ìsun bisque àti glaze, pẹ̀lú àtẹ cone.",
     "learnWithJohnBritt": "Alábàárìn fún Glaze Course ọ̀fẹ́ John Britt lórí íńtánẹ́ẹ̀tì: fídíò rẹ̀ ní ẹ̀ka-ẹ̀ka, pẹ̀lú ìtọ́sọ́nà Glazecalc láti kà àti iṣẹ́ láti ṣe nínú ẹ̀rọ ìṣirò.",
+    "teachingGlazeCalculation": "Ìpàdé ẹ̀kọ́ 6 fún kíkọ́ni ní UMF (unity molecular formula, ìlànà Seger): ohun èlò àti táílì triaxial, mole, láti ìlànà glaze sí formula àti padà, àti àbùkù glaze, pẹ̀lú àpẹẹrẹ tí a ti ṣe àti ìwé iṣẹ́ láti tẹ̀ jáde.",
     "advice": "Ìmọ̀ràn tó wúlò lórí pípò, fífi glaze sí àti sísun, láti ọ̀dọ̀ Glazecalc, pẹ̀lú ìmọ̀ràn tiyín. Ọ̀fẹ́ fún àwọn amọ̀kòkò.",
     "about": "Glazecalc jẹ́ ẹ̀rọ ìṣirò kẹ́mísírì glaze àti ìwé àkọsílẹ̀ ọ̀fẹ́, orísun ṣíṣí. Ẹ wo bí ó ṣe ń ṣírò UMF àti bí a ṣe kọ́ ọ.",
     "privacy": "Bí Glazecalc ṣe ń bójú tó dátà yín: kò sí ìpolówó, kò sí ìtọpa, a kò sì ta nǹkan kan. Ohun tí a ń pa mọ́, ìdí rẹ̀, àti ẹ̀tọ́ yín.",
@@ -187,6 +191,8 @@
     "materials": "Àwọn ohun èlò inú ibi ìkówèésí àjùmọ̀lò Glazecalc, láti feldspar àti amọ̀ dé frit àti orísun boron, pẹ̀lú oxide, UMF àti ewu ọ̀kọ̀ọ̀kan.",
     "materialInfo": "{name}: oxide, UMF, LOI àti ewu nínú ibi ìkówèésí àjùmọ̀lò Glazecalc.",
     "materialInfoLong": "{name} nínú ibi ìkówèésí àjùmọ̀lò Glazecalc: oxide rẹ̀, ìpín rẹ̀ nínú UMF, LOI rẹ̀ àti ewu rẹ̀.",
+    "famousGlazes": "Àwọn glaze olókìkí láti gbogbo àgbáyé: ìlànà ìbílẹ̀ tàbí ìtúpalẹ̀ ìtàn glaze kọ̀ọ̀kan, UMF rẹ̀, àti ẹ̀yà tí a fi ohun èlò tí wọ́n ń tà níbi tí ẹ wà ṣe.",
+    "famousGlaze": "Glaze {name} ({native}): ìlànà ìbílẹ̀ rẹ̀ tàbí ìtúpalẹ̀ ìtàn, ìsun, UMF àti orísun, àti ẹ̀yà tí a fi ohun èlò tí wọ́n ń tà níbi tí ẹ wà ṣe.",
     "imageAlt": "Àmì Glazecalc àti àkọlé rẹ̀, kẹ́mísírì glaze ọ̀fẹ́ fún amọ̀kòkò, lẹ́gbẹ̀ẹ́ fọ́tò àwọn àkójọ cone tí a ti sun."
   },
   "notices": {

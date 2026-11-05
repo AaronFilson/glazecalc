@@ -61,27 +61,29 @@ Hatari kuu ya madini ya risasi ni tofauti: si kijiko kimoja, bali kiasi kidogo c
 
 ## Kuhifadhi malighafi nyumbani {#storing-materials}
 
-Hakuna mamlaka rasmi inayoweka sheria za kuhifadhi malighafi za glaze nyumbani, lakini kurasa za afya na usalama zinakubaliana: fanya kazi katika sehemu yake yenyewe, mbali na watoto. Idara ya afya ya Pennsylvania, ikiandika kuhusu shughuli za burudani zinazotumia madini ya risasi, inasema: “Tumia sehemu maalum ya kazi au gereji kwa shughuli yako na uwaweke watoto mbali na eneo hili.”
+Hakuna chombo rasmi kinachoweka sheria za kuhifadhi malighafi za glaze nyumbani, lakini kurasa za afya na usalama zinakubaliana: fanya kazi katika nafasi yake yenyewe, mbali na watoto. Idara ya afya ya Pennsylvania, ikiandika kuhusu shughuli za burudani zinazotumia madini ya risasi (lead), inasema "Tumia nafasi maalum ya kazi au gereji kwa shughuli yako na uwaweke watoto mbali na eneo hili."
 
-### Orodha ya ukaguzi ya kuhifadhi
+### Orodha ya kuhifadhi
 
-Hizi ni kanuni za jumla za kuzuia sumu zilizotumika kwa glaze. Hakuna kiwango cha ufinyanzi kinachoziweka, lakini tunapendekeza zote:
+Hizi ni sheria za jumla za kuzuia sumu zilizotumika kwa glaze. Hakuna kiwango cha ufinyanzi kinachoziweka, lakini tunapendekeza zote:
 
-- Fungia malighafi kavu: kabati, au chumba, gereji au kibanda kinachofungwa kwa kufuli. Rafu ya juu inasaidia, lakini watoto hupanda. Ikiwa unaweza kufungia vitu vichache tu mwanzoni, anza na malighafi zinazoyeyuka na vitia rangi.
-- Weka malighafi katika mifuko au vyombo vyake vya asili. Ukihamishia moja katika chombo kingine, kiwekee lebo yenye jina kama lilivyoandikwa hasa kwenye mfuko.
-- Kamwe usitumie vyombo vya chakula au vinywaji (vikopo vya mtindi, mitungi, chupa) kwa malighafi za glaze, hata vikiwa na lebo. Mtoto anajua kikopo cha mtindi huwa na nini.
-- Weka zana za karakana (vijiko vya kuchotea, vijiko, vipigio, chujio, mizani) katika karakana. Kamwe usitumie zana za jikoni kwa glaze, wala zana za glaze kwa chakula.
-- Weka glaze za majimaji katika ndoo zenye lebo na mifuniko imefungwa.
+- Funga malighafi kavu mahali pa kufungwa: kabati, au chumba, gereji au banda linalofungwa. Rafu ya juu husaidia, lakini watoto hupanda. Ukiweza kufungia vitu vichache tu mwanzoni, anza na malighafi zinazoyeyuka majini na vitia rangi.
+- Weka malighafi katika mifuko au vyombo vyake vya asili. Ukihamisha moja kwenye chombo kingine, kiwekee lebo yenye jina kama lilivyoandikwa kwenye mfuko.
+- Usitumie kamwe vyombo vya chakula au vinywaji (vikombe vya mtindi, mitungi, chupa) kwa malighafi za glaze, hata vikiwa na lebo. Mtoto anajua kikombe cha mtindi huwa na nini.
+- Weka vifaa vya karakana (vijiko vya kuchotea, vijiko, vichanganyio, vichujio, mizani) ndani ya karakana. Usitumie kamwe vifaa vya jikoni kwa glaze, wala vifaa vya glaze kwa chakula.
+- Weka glaze za majimaji katika ndoo zenye lebo, vifuniko vikiwa vimefungwa.
 - Weka karatasi ya data ya usalama ya kila malighafi pamoja nayo, kwenye karatasi au kwenye simu yako.
-- Usiweke kitu chochote cha karakana jikoni: hakuna mifuko, ndoo, zana wala vigae vya majaribio.
+- Usiweke chochote cha karakana jikoni: hakuna mifuko, ndoo, vifaa wala vigae vya majaribio.
 
-Kwa maelezo zaidi kuhusu kununua na kuhifadhi malighafi, tazama [Jinsi ya kutengeneza glaze](/guides/making-a-glaze).
+Kwa kununua na kuhifadhi malighafi kwa kina zaidi, tazama [Jinsi ya kutengeneza glaze](/guides/making-a-glaze).
 
-### Takataka za glaze na maji ya kuoshea
+### Takataka za glaze na maji ya kusuuza
 
-Kamwe usimwage glaze, au maji uliyooshea zana za glaze, kwenye sinki au bustanini. Crafts Council ya Uingereza inapendekeza ndoo tofauti ya maji ya kunawa mikono na kuosha brashi, chujio na zana. Iache itulie usiku kucha, mwaga maji safi ya juu, kisha kausha glaze iliyotuama chini na uitupe kwenye takataka (inakwenda dampo), kamwe si kwenye mfereji.
+Usimwage kamwe glaze, au maji uliyosuuzia vifaa vya glaze, kwenye sinki au bustanini. Crafts Council ya Uingereza inapendekeza ndoo tofauti ya maji ya kunawa mikono, brashi, vichujio na vifaa. Iache itulie usiku mzima, mwaga maji safi ya juu, kisha kausha glaze iliyotulia na uiweke kwenye takataka (inaenda jalalani), kamwe isiende kwenye bomba la maji machafu.
 
-Tunapendekeza mfuniko kwenye ndoo hiyo: tope hilo lina metali zilezile za glaze, na wanyama vipenzi hunywa maji yaliyotuama. Sheria za kutupa taka hutofautiana mahali na mahali, kwa hiyo angalia karatasi ya data ya usalama ya kila bidhaa, na uliza halmashauri ya eneo lako au kampuni ya maji ikiwa huna uhakika.
+Tunapendekeza kifuniko kwenye ndoo hiyo: tope hilo lina madini yale yale yaliyo kwenye glaze, na wanyama vipenzi hunywa maji yaliyosimama. Sheria za kutupa hutofautiana mahali na mahali, kwa hiyo angalia karatasi ya data ya usalama ya kila bidhaa, na uliza halmashauri ya eneo lako au kampuni ya maji kama huna uhakika.
+
+Baadhi ya karakana huchoma tope lililokaushwa kabla ya kulitupa. Huliweka katika bakuli la ziada litakalotumika kabisa: baada ya kuchoma, bakuli hilo haliwezi kutumika tena. Jaza bakuli robo tu, kwa sababu tope hutoa povu na kububujika linapoyeyuka, na ulifunike kwa sahani. Liweke juu ya rafu iliyopakwa kiln wash au kipande cha ziada, endapo litafurika. Kuchoma hugeuza tope kuwa kioo, ambacho hushika madini kwa nguvu zaidi sana kuliko unga uliolegea, kwa hiyo ni salama zaidi jalalani. Shika tope kavu kama ungeshika glaze kavu, ukiwa na barakoa ya kupumua (respirator) na bila kutimua vumbi.
 
 ## Kuweka vumbi ndani ya karakana {#keeping-dust-in-the-studio}
 

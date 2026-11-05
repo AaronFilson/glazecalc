@@ -724,7 +724,7 @@
     "keyBright": "Noktalı çizgi: Stull’un sırlarının en parlak olduğu yer.",
     "keyLimits": "Kesikli çizgiler ve gölge: {name} setinin silis ve alümina aralıkları.",
     "keyCrazed": "Tarama: çatladıkları yer.",
-    "note": "Yol gösterici; tahmin değildir. R. T. Stull (Transactions of the American Ceramic Society, 1912) ergiticileri 0,3 K₂O ve 0,7 CaO’da sabit tutarak 11 numaralı piramitte pişirdi; diğer ergiticiler ve pişirimler bölgeleri kaydırır, az pişmiş bir mat sır diyagramda parlak olarak görünebilir. Bölgeler, Glazy’nin çizdiği gibidir."
+    "note": "Bir kılavuzdur, bir öngörü değil. R. T. Stull (Transactions of the American Ceramic Society, 1912), ergiticileri 0,3 K₂O ve 0,7 CaO’da sabit tutarak yaklaşık 11 numaralı Orton piramidinde pişirdi; başka ergiticiler ve pişirimler bölgeleri kaydırır ve yalnızca az pişmiş olduğu için mat olan bir sır yine parlak bölgeye düşebilir. Bölgeler Glazy’nin çizdiği gibidir."
   },
   "slurry": {
     "heading": "Özgül ağırlık ve su",
@@ -752,7 +752,17 @@
       "pint": "İstediğiniz pint ağırlığı, oz"
     },
     "drySg": "Kuru hammaddelerin özgül ağırlığı",
-    "drySgHelp": "Çoğu sır için yaklaşık 2,5; Glazy 2,6 kullanır.",
+    "drySgEmpty": "Yalnızca kuru ağırlıklar için gerekir; eklenecek su için gerekmez. Biliyorsanız yazın.",
+    "drySgNeeded": "Kovadaki kuru sırrı ve yeni bir karışım için gereken suyu görmek için kuru hammaddelerin özgül ağırlığını yazın.",
+    "estimate": {
+      "mineral": "Bir tahmin, {sg}: her hammaddenin neyden yapıldığına, yani mineralinin ölçülmüş yoğunluğuna göre. Daha iyisini biliyorsanız değiştirin.",
+      "kind": "Bir tahmin, {sg}: feldspatlar ve killer yaklaşık 2,6 gelir. Daha iyisini biliyorsanız değiştirin.",
+      "glass": "Bir tahmin, {sg}: fritlerin oksitlerinden hesaplandı (fritler camdır). Daha iyisini biliyorsanız değiştirin.",
+      "mixed": "Bir tahmin, {sg}: her hammaddeden; mineralinin ölçülmüş yoğunluğu, feldspatlar ve killer için yaklaşık 2,6, fritler için oksitlerinden hesaplanan değer. Daha iyisini biliyorsanız değiştirin.",
+      "leftOut": "Özgül ağırlıkları bilinmediği için dışarıda bırakıldı: {names}.",
+      "none": "Bu reçete için tahmin yok: {names} için özgül ağırlık bilinmiyor. Biliyorsanız yazın.",
+      "was": "Sizin değeriniz kullanılıyor. Tahmin {sg} idi; ona dönmek için alanı boşaltın."
+    },
     "batch": "Yeni bir tartım için kuru sır, {unit}",
     "contents": "Özgül ağırlık {sg} iken kovada {glaze} kuru sır ve {water} su vardır.",
     "add": "Özgül ağırlık {target} değerine ulaşmak için {water} su ekleyin. Sonuçta yaklaşık {volume} olur.",
@@ -760,6 +770,7 @@
     "already": "Zaten özgül ağırlık {target} değerinde.",
     "mix": "Özgül ağırlık {target} iken yaklaşık {volume} elde etmek için {glaze} kuru sırı {water} su ile karıştırın.",
     "badSg": "Özgül ağırlık 1’den (suyun değeri) büyük ve kuru hammaddelerin {dry} değerinden küçük olmalıdır.",
+    "badSgWater": "Özgül ağırlık 1’den (suyunkinden) büyük olmalıdır.",
     "badDry": "Kuru hammaddelerin özgül ağırlığı 1’den büyük olmalıdır.",
     "note": "Su ağırlıkça hesaplanır: bir litre bir kilogram, bir ABD galonu yaklaşık 8,3 lb gelir. Hesap, hacimlerin toplandığını varsayar; bu yaklaşık doğrudur, tam değildir: suyu azar azar ekleyin, karıştırın ve yeniden ölçün. Aynı özgül ağırlıktaki iki sır yine de farklı akabilir.",
     "saveTarget": "{sg} özgül ağırlığını bu reçetenin hedefi olarak kaydet",

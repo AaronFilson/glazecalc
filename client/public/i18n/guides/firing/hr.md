@@ -89,16 +89,16 @@ Label: Ortonova tablica stožaca
 | Stožac | Sporo, {{27 °F/h; 15 °C/h}} | Srednje, {{108 °F/h; 60 °C/h}} | Brzo, {{270 °F/h; 150 °C/h}} |
 | ------ | --------------------------: | -----------------------------: | ---------------------------: |
 | 022    |                           – |            {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018    |                           – |            {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015    |                           – |            {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 018    |         {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015    |         {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
 | 010    |         {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
 | 08     |         {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07     |                           – |            {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 07     |         {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
 | 06     |         {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
 | 05     |        {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
 | 04     |        {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
 | 03     |        {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02     |                           – |           {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 02     |        {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
 | 01     |        {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
 | 1      |        {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
 | 4      |        {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
@@ -460,17 +460,17 @@ Na peći s ručnim upravljanjem isti se plan provodi rukom: sušite polako, s od
 
 ## Glazurno pečenje {#glaze}
 
-Glazurno pečenje{{en: glaze firing}} tali glazuru{{en: glaze}} u staklo na biskvitu{{en: bisque}}. Većina početnika peče glazure za niske temperature na stožac{{en: cone}} 06 – 04 ili glazure za srednje temperature na stožac 5 – 6. Pecite na stožac naveden na pakiranju vaše gline i glazure, sa skupom od tri kontrolna stošca{{en: cone pack}} oko tog broja. Što se događa u glazuri dok se tali, pogledajte u vodiču [Glaziranje od samih osnova](/guides/glazing-basics).
+**Glazurno pečenje**{{en: glaze firing}} rastali glazuru{{en: glaze}} u staklo na biskvitu. Većina glazura za niske temperature na tržištu napravljena je za stožac{{en: cone}} 06 ili 05 (područje niskih temperatura obuhvaća stožac 06 – 04), a većina glazura za srednje temperature za stožac 5 – 6. Pecite na stožac naveden na naljepnicama glazure i gline, sa skupom od tri kontrolna stošca{{en: cone pack}} oko tog broja. Što se u glazuri događa dok se tali, objašnjava vodič [Glaziranje od samih osnova](/guides/glazing-basics).
 
 ### Slaganje peći za glazurno pečenje
 
-- Glazirani predmeti ne smiju dodirivati jedni druge ni stijenke peći: ostavite razmak od oko ½ inča (13 mm).
-- Dno ostavite **bez glazure** ili predmete za niske temperature postavite na **tronošce**, male podloške sa šiljcima. Kamenina{{en: stoneware}} i porculan ne bi trebali stajati na tronošcima, koji se na tim temperaturama utisnu u njih; umjesto toga koristite premaz za zaštitu ploča za visoke temperature ili kvarcni pijesak.
-- Između rubova ploča i stijenke peći ili Kiln-Sittera ostavite najmanje 1 inč (25 mm).
+- Glazirani predmeti ne smiju dodirivati jedan drugoga ni stijenke: ostavite oko ½ inča (13 mm).
+- Dno ostavite bez glazure (**ostaviti dno bez glazure**{{en: dry-footing}}) ili predmete za niske temperature postavite na **tronošce**{{en: stilts}}, male podloške sa šiljcima. Kamenina i porculan ne bi trebali stajati na tronošcima, koji se na tim temperaturama utisnu u njih; umjesto toga upotrijebite premaz za zaštitu ploča za visoke temperature ili kvarcni pijesak.
+- Između rubova ploča i stijenke ili Kiln-Sittera ostavite najmanje 1 inč (25 mm).
 
 ### Programi regulatora
 
-Table: Tvornički programi za glazurno pečenje (L&L i Bartlett)
+Table: Tvornički programi L&L i Bartlett za glazurno pečenje
 Label: Programi za glazurno pečenje
 
 | Segment                          |                              Zagrijavanje do |             Slow Glaze |             Fast Glaze |
@@ -481,7 +481,7 @@ Label: Programi za glazurno pečenje
 | Vrijeme zagrijavanja, prazna peć |                                              |       Oko 6½ – 7½ sati |         Oko 3 – 4 sata |
 
 Table: Gdje završavaju segmenti 2 i 3, prema stošcu (L&L i Bartlett)
-Label: Ciljevi tvorničkih programa
+Label: Ciljne temperature programa
 
 | Stožac |      Kraj segmenta 2 |  Završna temperatura |
 | ------ | -------------------: | -------------------: |
@@ -489,42 +489,42 @@ Label: Ciljevi tvorničkih programa
 | 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-S obzirom na upozorenje tvrtke L&L o brzom pečenju, Slow Glaze je sigurniji zadani izbor. Ako na završnoj temperaturi dodate zadržavanje{{en: hold}} dulje od 5 – 10 minuta, L&L kaže da u skladu s tim snizite ciljnu temperaturu ili korekciju za stožac i napominje da „zadržavanje na visokim temperaturama ubrzava trošenje grijača i termoelementa”.
+Slow Glaze je sigurniji izbor, s obzirom na upozorenje tvrtke L&L o brzom pečenju. Ako na završnoj temperaturi dodate zadržavanje{{en: hold}} dulje od 5 – 10 minuta, L&L savjetuje da tomu prilagodite ciljnu temperaturu ili korekciju za stožac, i napominje da „zadržavanje na visokim temperaturama ubrzava trošenje grijača i termoelementa”.
 
 ### Stožac 6: spuštanje i zadržavanje
 
-Glazure za srednje temperature ponekad izađu s **rupičavošću**{{en: pinholes}} (sitnim rupicama na površini) ili mjehurima, koje ostavlja plin koji izlazi iz taline. Program **spuštanja i zadržavanja** (drop-and-hold) peče do najviše temperature, brzo ohladi peć za oko {{100 °F; 56 °C}} i ondje zadrži temperaturu. Kako kaže Digitalfire: „Spuštanje za 100°F i zadržavanje daju talini dovoljnu viskoznost da mjehurići prsnu, a da se tragovi ipak još mogu zagladiti.”
+Glazure za srednje temperature ponekad izađu sa **sitnim rupicama**{{en: pinholes}} (malenim rupicama na površini) ili mjehurima, koje ostavlja plin koji izlazi iz taline. Program **spuštanja i zadržavanja**{{en: drop-and-hold}} peče do vrha, brzo ohladi peć za oko {{100 °F; 56 °C}} i ondje zadrži temperaturu. Riječima baze Digitalfire: „Spuštanje za 100°F i zadržavanje daje talini dovoljno viskoznosti da mjehuri prsnu, a da se rupice ipak još mogu zatvoriti.”
 
 Table: Digitalfire PLC6DS, spuštanje i zadržavanje za stožac 6
 Label: Digitalfire PLC6DS
 
-| Korak |                                  Brzina |                 Cilj | Zadržavanje                                         |
-| ----- | --------------------------------------: | -------------------: | --------------------------------------------------- |
-| 1     |                   {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                           |
-| 2     |                  {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Po želji 30 minuta, da se raščiste oblaci mjehurića |
-| 3     |                   {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuta; u velikim pećima dulje                   |
-| 4     | Hlađenje brzinom {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                           |
+| Korak |                          Brzina |                 Cilj | Zadržavanje                                         |
+| ----- | ------------------------------: | -------------------: | --------------------------------------------------- |
+| 1     |           {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                           |
+| 2     |          {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Po želji 30 minuta, da se raščiste oblaci mjehurića |
+| 3     |           {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuta; u velikim pećima dulje                   |
+| 4     | Hlađenje {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                           |
 
-PLC6DS traje oko 9 sati i 36 minuta. Za tekućije glazure Digitalfire umjesto toga spušta temperaturu za oko {{200 °F; 111 °C}}; prevelik pad „donosi opasnost od kristalizacije tijekom zadržavanja”. Njegova završna temperatura od {{2200 °F; 1204 °C}} niža je od {{2232 °F; 1222 °C}} koje tablica daje za stožac 6; Digitalfire javlja da većina peći dosegne stožac 6 na oko {{2200 °F; 1204 °C}}. Provjerite to skupom stožaca u vlastitoj peći.
+PLC6DS traje oko 9 sati i 36 minuta. Za tekućije glazure Digitalfire temperaturu spušta za oko {{200 °F; 111 °C}}; prejako spuštanje „donosi opasnost od kristalizacije tijekom zadržavanja”. Njegova završna temperatura od {{2200 °F; 1204 °C}} niža je od {{2232 °F; 1222 °C}} koje tablica daje za stožac 6; Digitalfire navodi da većina peći stožac 6 postiže na oko {{2200 °F; 1204 °C}}. Provjerite to skupom od tri kontrolna stošca u vlastitoj peći.
 
 ### Kontrolirano hlađenje
 
-**Kontrolirano hlađenje** znači da regulator hladi peć zadanom brzinom umjesto da je pusti da se slobodno hladi. Digitalfireov program C6DHSC sastoji se od programa PLC6DS nakon kojeg slijedi hlađenje brzinom {{150 °F/h; 83 °C/h}} od {{2100 °F; 1148 °C}} do {{1400 °F; 760 °C}}, a zatim isključivanje. To „poboljšava sjaj i kvalitetu površine” i pomaže plavim rutilnim glazurama, ali kontrolirano hlađenje „može pojačati matiranost” (jedna je mat glazura postala suha) i može skratiti vijek trajanja releja u peći. L&L isporučuje i program kontroliranog hlađenja za stožac 6:
+**Kontrolirano hlađenje**{{en: slow cooling}} znači da regulator hladi peć zadanom brzinom umjesto da je pusti da se slobodno hladi. Program C6DHSC baze Digitalfire jest PLC6DS nakon kojega slijedi hlađenje brzinom {{150 °F/h; 83 °C/h}} od {{2100 °F; 1148 °C}} do {{1400 °F; 760 °C}}, a zatim isključenje. On „poboljšava sjaj i kvalitetu površine” i pomaže plavim tonovima od rutila, ali kontrolirano hlađenje „može pojačati mat izgled” (jedna mat glazura postala je suha) i može skratiti vijek releja peći. L&L i za stožac 6 isporučuje program kontroliranog hlađenja:
 
 Table: L&L „User 6”: kontrolirano hlađenje za glazure za stožac 6
-Label: L i L, kontrolirano hlađenje
+Label: Kontrolirano hlađenje L i L
 
-| Korak |                                 Brzina |                 Cilj |
-| ----- | -------------------------------------: | -------------------: |
-| 1     |             Zagrijavanje punom brzinom | {{2232 °F; 1222 °C}} |
-| 2     |                 Hlađenje punom brzinom | {{1900 °F; 1038 °C}} |
-| 3     | Hlađenje brzinom {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Korak |                         Brzina |                 Cilj |
+| ----- | -----------------------------: | -------------------: |
+| 1     |     Zagrijavanje punom brzinom | {{2232 °F; 1222 °C}} |
+| 2     |         Hlađenje punom brzinom | {{1900 °F; 1038 °C}} |
+| 3     | Hlađenje {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Regulatori tvrtke Skutt također nude predgrijavanje i mogućnost hlađenja u jednom koraku.
 
 ### Na peći s ručnim upravljanjem
 
-Peć s ručnim upravljanjem ne može točno slijediti ove programe, ali plan je isti: blago na početku, ujednačeno u sredini i završetak pod nadzorom. Program tvrtke Bracker's za glazure za niske temperature nalazi se niže, u odjeljku Podrobnije o pećima s ručnim upravljanjem; za toplije stošce dodaje „u prosjeku 15 – 30 minuta po broju stošca”. S pirometrom, uz vježbu i zapisnik, spuštanje i zadržavanje ili kontrolirano hlađenje možete otprilike oponašati tako da rukom prebacujete sklopke na niže položaje, kako predlaže Digitalfire.
+Peć s ručnim upravljanjem ne može točno slijediti ove programe, ali plan je isti: na početku blago, u sredini ravnomjerno, a kraj pod nadzorom. Brackerov program glazurnog pečenja za niske temperature nalazi se niže, u odjeljku Podrobnije o pećima s ručnim upravljanjem; za toplije stošce dodaje „u prosjeku 15 – 30 minuta po broju stošca”. S pirometrom, iskustvom i zapisnikom možete otprilike oponašati spuštanje i zadržavanje ili kontrolirano hlađenje tako da sklopke rukom prebacujete na niži položaj, kako predlaže Digitalfire.
 
 ## Podrobnije o pećima s ručnim upravljanjem {#manual-kilns}
 

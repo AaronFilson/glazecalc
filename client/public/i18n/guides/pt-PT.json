@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Aprender com o curso gratuito de vidrados de John Britt",
       "text": "O curso gratuito em vídeo dele no YouTube, unidade a unidade, com os nossos guias para ler e exercícios para fazer no Glazecalc. Em inglês."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Ensinar o cálculo de vidrados",
+      "text": "6 sessões para uma turma ou um grupo de estudo, dos testes triaxiais à fórmula de Seger calculada nos dois sentidos, com fichas para imprimir."
     }
   },
   "more": "Mais guias",
@@ -243,5 +247,20 @@
     "loading": "A carregar a biblioteca…",
     "failed": "Não foi possível carregar a biblioteca. Tente novamente mais tarde.",
     "choosePrompt": "Escolha o seu país ou região para ver o que lá se vende."
+  },
+  "stull": {
+    "title": "Gráfico de Stull: sílica em relação à alumina na fórmula de Seger",
+    "regions": {
+      "unfused": "não fundido",
+      "matte": "mate",
+      "semi-matte": "semimate",
+      "bright": "brilhante",
+      "underfired": "insuficientemente cozido",
+      "crazed": "fendilhado"
+    },
+    "keyBright": "Linha ponteada: onde os vidrados de Stull eram mais brilhantes.",
+    "keyCrazed": "Hachuras: onde fendilharam.",
+    "note": "Um guia, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) cozeu a cerca do cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e outras cozeduras deslocam as regiões, e um vidrado que só é mate por estar subcozido pode mesmo assim cair na região brilhante. As regiões são as que o Glazy desenha.",
+    "inGuide": "A sílica (SiO₂) na horizontal, de cerca de 1 a 7, e a alumina (Al₂O₃) na vertical, de 0 a 1, ambas da fórmula de Seger. Cunhas abrem-se em leque a partir da esquerda: não fundido em cima à esquerda, depois mate, depois semimate. A parte sem sombreado à direita delas é brilhante, e a linha ponteada nela é onde os vidrados de Stull eram mais brilhantes. Insuficientemente cozido fica em baixo à direita, com pouca alumina e muita sílica. As hachuras, em baixo no gráfico e do lado esquerdo, são onde os seus testes fendilharam."
   }
 }

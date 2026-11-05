@@ -61,27 +61,29 @@ Plii peamine oht on teistsugune: mitte üks lusikatäis, vaid väikesed kogused 
 
 ## Toorainete hoiustamine kodus {#storing-materials}
 
-Glasuuri toorainete{{en: glaze materials}} kodus hoiustamise kohta ei ole ükski ametlik asutus reegleid kehtestanud, kuid tervise- ja ohutusalased veebilehed on ühel meelel: hoidke töö omaette ruumis, lastest eemal. Pennsylvania osariigi terviseministeerium kirjutab pliid kasutavate hobide kohta: „Kasutage oma hobi jaoks selleks ette nähtud tööruumi või garaaži ja hoidke lapsed sellest alast eemal.“
+Ükski ametiasutus ei kehtesta reegleid glasuuri toorainete hoiustamiseks kodus, kuid tervise- ja ohutusalased lehed on ühel meelel: hoidke töö omaette ruumis, lastest eemal. Pennsylvania terviseamet kirjutab pliid kasutavate hobide kohta: „Kasutage oma hobi jaoks selleks ette nähtud tööruumi või garaaži ja hoidke lapsed sellest alast eemal.“
 
 ### Hoiustamise kontrollnimekiri
 
-Need on üldised mürgistuste ennetamise reeglid, mida on rakendatud glasuurile. Ükski keraamikastandard neid ette ei kirjuta, kuid see juhend soovitab järgida neid kõiki:
+Need on üldised mürgistuste ennetamise reeglid, mida on rakendatud glasuurile. Ükski keraamikastandard neid ei kehtesta, kuid see juhend soovitab neid kõiki:
 
-- Hoidke kuivad toorained luku taga: lukustatavas kapis, toas, garaažis või kuuris. Kõrge riiul aitab, kuid lapsed ronivad. Kui saate alguses lukustada vaid mõned asjad, alustage lahustuvatest toorainetest ja värvainetest{{en: colorants}}.
-- Hoidke tooraineid nende originaalkottides või -karpides. Kui tõstate mõne neist teise anumasse, märgistage see nimega täpselt nii, nagu see on kotil kirjas.
-- Ärge kunagi kasutage glasuuri toorainete jaoks toidu- või joogianumaid (jogurtitopse, purke, pudeleid), isegi kui need on märgistatud. Laps teab, mis jogurtitopsis on.
-- Hoidke töökoja töövahendid (kulbid, lusikad, visplid, sõelad, kaalud) töökojas. Ärge kunagi kasutage köögitarbeid glasuuri jaoks ega glasuuritööriistu toidu jaoks.
+- Hoidke kuivad toorained lukustatult: kapis või toas, garaažis või kuuris, mida saab lukustada. Kõrge riiul aitab, kuid lapsed ronivad. Kui saate alguses lukustada ainult mõne asja, alustage lahustuvatest toorainetest ja värvainetest.
+- Hoidke tooraineid nende originaalkottides või -karpides. Kui tõstate mõne teise anumasse, märgistage see nimega täpselt nii, nagu see on kotile kirjutatud.
+- Ärge kunagi kasutage glasuuri toorainete jaoks toidu- või joogianumaid (jogurtitopse, purke, pudeleid), isegi mitte märgistatuna. Laps teab, mis on jogurtitopsis.
+- Hoidke töökoja tööriistad (kühvlid, lusikad, visplid, sõelad, kaalud) töökojas. Ärge kunagi kasutage köögitarbeid glasuuri jaoks ega glasuuritööriistu toidu jaoks.
 - Hoidke märgi glasuure märgistatud ämbrites, kaaned peal.
 - Hoidke iga tooraine ohutuskaart selle juures, paberil või telefonis.
-- Ärge hoidke köögis midagi töökojast: ei kotte, ämbreid, tööriistu ega proovitükke{{en: test tiles}}.
+- Ärge hoidke köögis midagi töökojast: ei kotte, ämbreid, tööriistu ega proovitükke.
 
-Toorainete ostmise ja hoiustamise kohta lähemalt vaadake juhendit [Glasuuri valmistamine](/guides/making-a-glaze).
+Toorainete ostmisest ja hoiustamisest lähemalt vt juhendit [Glasuuri valmistamine](/guides/making-a-glaze).
 
 ### Glasuurijäätmed ja loputusvesi
 
-Ärge kunagi valage glasuuri ega vett, milles olete glasuuritööriistu loputanud, kraanikaussi ega aeda. Ühendkuningriigi Crafts Council soovitab hoida käte, pintslite, sõelte ja tööriistade pesemiseks eraldi veeämbrit. Laske sel üle öö settida, valage selge vesi pealt ära, seejärel kuivatage settinud glasuur ja visake see prügikasti (see läheb prügilasse), mitte kunagi kanalisatsiooni.
+Ärge kunagi valage glasuuri ega vett, milles olete glasuuritööriistu loputanud, kraanikaussi ega aeda. Ühendkuningriigi Crafts Council soovitab käte, pintslite, sõelte ja tööriistade pesemiseks eraldi veeämbrit. Laske sellel üleöö settida, valage selge vesi ära, seejärel kuivatage settinud glasuur ja pange see prügikasti (see läheb prügilasse), mitte kunagi kanalisatsiooni.
 
-See juhend soovitab panna sellele ämbrile kaane: sete sisaldab samu metalle kui glasuur ja lemmikloomad joovad seisvat vett. Jäätmete kõrvaldamise reeglid on paiguti erinevad, seega kontrollige iga toote ohutuskaarti ja kui kahtlete, küsige nõu kohalikult omavalitsuselt või vee-ettevõttelt.
+See juhend soovitab sellele ämbrile kaant: setted sisaldavad samu metalle mis glasuur ja lemmikloomad joovad seisvat vett. Jäätmete kõrvaldamise reeglid on eri kohtades erinevad, seega kontrollige iga toote ohutuskaarti ja kui te pole kindel, küsige kohalikult omavalitsuselt või veeettevõttelt.
+
+Mõned töökojad põletavad kuivanud setted enne äraviskamist. Need pannakse varukaussi, mis läheb kasutusse: pärast põletust ei saa kaussi enam kasutada. Täitke kauss ainult veerandini, sest setted vahutavad ja mullitavad sulades, ning katke see taldrikuga. Asetage see kaitseainega kaetud ahjuplaadile või varuplaadile juhuks, kui see üle voolab. Põletus muudab setted klaasiks, mis hoiab metalle palju tugevamalt kinni kui lahtine pulber, nii et see on prügilas ohutum. Käsitsege kuivi setteid nagu kuiva glasuuri: respiraatoriga ja tolmu tekitamata.
 
 ## Tolmu hoidmine töökojas {#keeping-dust-in-the-studio}
 

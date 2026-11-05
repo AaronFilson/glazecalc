@@ -144,7 +144,7 @@ Auch Wasser ist unterschiedlich, und Digitalfire weist darauf hin, dass es das V
 5. Rühren Sie, bis keine trockenen Stellen oder Klumpen mehr da sind.
 6. Sieben Sie die Glasur zweimal (siehe unten).
 7. Decken Sie sie ab und lassen Sie sie über Nacht ruhen; rühren Sie dann noch einmal um und prüfen Sie den Boden auf eine harte Schicht.
-8. Messen Sie das spezifische Gewicht und geben Sie nach und nach Wasser dazu, bis Sie Ihren Zielwert erreichen.
+8. Messen Sie das spezifische Gewicht und geben Sie nach und nach Wasser dazu, bis Sie Ihren Zielwert erreichen. Um das Trocken-SG Ihrer eigenen Glasur zu ermitteln, wiegen Sie auch den fertigen Glasurschlicker (siehe unten).
 9. Beschriften Sie den Eimer und schreiben Sie auf, was Sie gemacht haben.
 10. Reinigen Sie feucht: Wischen Sie den Boden und alle Flächen ab, auch die Außenseiten der Rohstoffbehälter.
 
@@ -205,6 +205,27 @@ Label: Wasser für ein spezifisches Gewicht
 | {{SG 1.50}} |       etwa 85 mL |   etwa 850 mL | etwa 13 US fl oz |
 | {{SG 1.60}} |       etwa 64 mL |   etwa 640 mL | etwa 10 US fl oz |
 
+### Das Trocken-SG Ihrer eigenen Glasur beim Anrühren ermitteln
+
+Die 2,6 oben sind eine Vermutung. Den Wert Ihrer eigenen Glasur, die Dichte ihres trockenen Pulvers, können Sie aus drei Zahlen berechnen, die Sie beim Anrühren erheben können. Damit können Sie später aus dem spezifischen Gewicht berechnen, wie viel Pulver in einem beliebigen Eimer dieser Glasur steckt, und das Wasser für den nächsten Ansatz. Unsere Rechnung, nicht die einer Quelle:
+
+1. Notieren Sie das Gewicht des trockenen Pulvers im Ansatz: die Summe des Rezepts.
+2. Wiegen Sie den leeren Eimer, bevor Sie anfangen, oder schreiben Sie sein Gewicht darauf.
+3. Rühren Sie die Glasur an, sieben Sie sie und bringen Sie sie wie gewohnt auf ihr spezifisches Gewicht. Drücken Sie alles durch das Sieb und spülen Sie es in den Eimer, damit kein Pulver fehlt.
+4. Wiegen Sie den vollen Eimer und ziehen Sie das Gewicht des Eimers ab. Das ist das Gewicht des Glasurschlickers.
+5. Messen Sie das spezifische Gewicht.
+
+Dann gilt:
+
+- **Wasser** = Gewicht des Glasurschlickers − Gewicht des Pulvers.
+- **Volumen des Glasurschlickers** in mL = Gewicht des Glasurschlickers in Gramm ÷ spez. Gewicht.
+- **Volumen des Pulvers** = Volumen des Glasurschlickers − Wasser (1 g Wasser sind 1 mL).
+- **Trocken-SG** = Gewicht des Pulvers ÷ Volumen des Pulvers.
+
+Zum Beispiel: 1000 g Pulver ergeben 1980 g Glasurschlicker mit {{SG 1.45}}. Das Wasser sind 980 g, der Glasurschlicker hat 1980 ÷ 1,45 = etwa 1366 mL, das Pulver nimmt 1366 − 980 = 386 mL ein, und das Trocken-SG ist 1000 ÷ 386 = etwa 2,59.
+
+Wiegen Sie am Ende den ganzen Glasurschlicker, nicht das Wasser beim Eingießen, damit Wasser, das verdunstet oder herausspritzt, nicht mitzählt. Kleine Fehler wachsen hier: Ein spezifisches Gewicht, das um 0,01 falsch abgelesen ist, verschiebt das Ergebnis um etwa 2 bis 4 %, bei einer dünneren Glasur mehr. Nehmen Sie einen Ansatz von 1 kg oder mehr, eine genaue Waage und für das spezifische Gewicht die Methode mit dem 500-g-Becher oben. Die meisten gängigen Rohstoffe liegen zwischen etwa 2,5 und 2,9; ein Wert weit außerhalb davon, bei einer Glasur ohne viel Zirkonsilikat oder Blei, bedeutet also wahrscheinlich einen Messfehler. Schreiben Sie den Wert auf das Rezept.
+
 ### Bittersalz, Glasurkleber CMC und Bentonit
 
 **Bittersalz** (Magnesiumsulfat) lässt eine Glasur leicht gelieren, wenn sie ruht, und wieder fließen, wenn sie umgerührt wird. Das nennt man **Ausflocken**{{en: flocculating}}, und eine Glasur, die sich so verhält, ist **thixotrop**{{en: thixotropic}}: Sie lässt sich gleichmäßiger auftragen, tropft weniger und setzt sich weniger ab. Digitalfire schlägt vor, mit etwa 2 g pro Gallone zu beginnen, sobald das spezifische Gewicht stimmt (grob 0,5 g pro Liter, unsere Umrechnung), und die Menge bei jedem Anrühren neu abzustimmen, da kein Rezept die Dosis festlegen sollte. Wir empfehlen, das Bittersalz zuerst in etwas heißem Wasser aufzulösen. In einem Beispiel von Digitalfire tropfte eine Glasur mit {{SG 1.45}}; Wasser brachte sie auf {{SG 1.43}}, Bittersalz dickte sie wieder zu einer sahnigen Konsistenz an, und sie ließ sich gleichmäßig auftragen. Eine grobe Probe: Rühren Sie, halten Sie an und schauen Sie hin. Eine angedickte Glasur fließt noch etwa 2 oder 3 Sekunden weiter, bleibt dann stehen und federt ein wenig zurück.
@@ -227,9 +248,9 @@ Eine Glasur{{en: glaze}} kann auf einem anderen Ton oder in einem anderen Ofen g
 - jeweils nur eine Änderung
 - einmal und zweimal getaucht, um die Glasur dünn und dick zu sehen
 - alle Plättchen im selben Brand
-- eine Markierung auf jedem Plättchen vor dem Brand, mit Stempel, Ritzung oder Unterglasurstift.
+- eine Markierung auf jedem Plättchen vor dem Brand, mit Stempel, Ritzung oder Unterglasurstift. Gebrannte Plättchen sehen sich ähnlich, und eine vor dem Brand angebrachte Markierung übersteht den Ofen, sodass Sie immer erkennen, welches Rezept zu welchem Plättchen gehört.
 
-Wir empfehlen stehende Plättchen (ein flaches Plättchen verbirgt, wie weit eine Glasur abläuft) mit einem strukturierten Streifen, der zeigt, wie kantenflüchtig die Glasur ist, und einem unglasierten Fuß. Stellen Sie jedes auf ein Schälchen, eine Scherbe Schrühware oder auf Trennmittel, damit Tropfen aufgefangen werden. Stellen Sie einen **Messkegel**{{en: witness cone}}, einen kleinen keramischen Kegel, der sich biegt, wenn er genug Hitze bekommen hat, neben die Plättchen, um zu zeigen, was sie abbekommen haben; die Anleitung [Brennen mit einem einfachen Ofen](/guides/firing) erklärt die Kegel. Geben Sie jedem Plättchen einen kurzen Code und notieren Sie ihn in Ihren Aufzeichnungen neben dem Rezept. Willers verwendet in einem Beitrag für Ceramic Arts Network Zahlen und Buchstaben und schreibt das System selbst vorne ins Notizbuch.
+Wir empfehlen stehende Plättchen (ein flaches Plättchen verbirgt, wie weit eine Glasur abläuft) mit einem strukturierten Streifen, der zeigt, wie kantenflüchtig die Glasur ist, und einem unglasierten Fuß. Stellen Sie jedes auf ein Schälchen, eine Scherbe Schrühware oder auf eine mit Trennmittel gestrichene Ofenplatte, damit Tropfen aufgefangen werden. Stellen Sie einen **Messkegel**{{en: witness cone}}, einen kleinen keramischen Kegel, der sich biegt, wenn er genug Hitze bekommen hat, neben die Plättchen, um zu zeigen, was sie abbekommen haben; die Anleitung [Brennen mit einem einfachen Ofen](/guides/firing) erklärt die Kegel. Geben Sie jedem Plättchen einen kurzen Code und notieren Sie ihn in Ihren Aufzeichnungen neben dem Rezept. Willers verwendet in einem Beitrag für Ceramic Arts Network Zahlen und Buchstaben und schreibt das System selbst vorne ins Notizbuch.
 
 ### Testreihen
 
@@ -265,13 +286,13 @@ Willers bringt das Ziel gut auf den Punkt: „genug Informationen, um die gefund
 Table: Was Sie für jeden Glasuransatz notieren sollten (unsere Vorlage)
 Label: Vorlage für Aufzeichnungen
 
-| Teil     | Was Sie aufschreiben                                                                                                                                                                                                                                             |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Rezept   | Das Rezept und seine Version; Marken und Chargennummern der Rohstoffe; jeder Ersatz                                                                                                                                                                              |
-| Anrühren | Datum; Ansatzgröße; zugegebenes Wasser und seine Art (Leitungswasser, Umkehrosmose oder destilliert); spez. Gewicht nach dem Anrühren und am Ende; zugegebenes Bittersalz, CMC und Bentonit; Sieb (mesh) und Zahl der Durchgänge                                 |
-| Auftrag  | Tonmasse; Kegel des Schrühbrands; Tauchen, Streichen oder Übergießen; Tauchzeit oder Zahl der Schichten; Schichtdicke im trockenen Zustand                                                                                                                       |
-| Brand    | Ofen und Position auf der Ofenplatte; die Brennkurve mit Rampen, Haltezeiten und Abkühlung; Ofenatmosphäre (oxidierend{{en: oxidation}} oder reduzierend{{en: reduction}}); was der Messkegel{{en: witness cone}} zeigte, nicht nur, was am Ofen eingestellt war |
-| Ergebnis | Oberfläche und Farbe; Ablaufen, Haarrisse{{en: crazing}} oder Nadelstiche{{en: pinholes}}; Fotos von vorne, hinten und von der Seite; der Code des Plättchens                                                                                                    |
+| Teil     | Was Sie aufschreiben                                                                                                                                                                                                                                                                             |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Rezept   | Das Rezept und seine Version; Marken und Chargennummern der Rohstoffe; jeder Ersatz                                                                                                                                                                                                              |
+| Anrühren | Datum; Ansatzgröße; zugegebenes Wasser und seine Art (Leitungswasser, Umkehrosmose oder destilliert); spez. Gewicht nach dem Anrühren und am Ende; das Gewicht des fertigen Glasurschlickers, für sein Trocken-SG; zugegebenes Bittersalz, CMC und Bentonit; Sieb (mesh) und Zahl der Durchgänge |
+| Auftrag  | Tonmasse; Kegel des Schrühbrands; Tauchen, Streichen oder Übergießen; Tauchzeit oder Zahl der Schichten; Schichtdicke im trockenen Zustand                                                                                                                                                       |
+| Brand    | Ofen und Position auf der Ofenplatte; die Brennkurve mit Rampen, Haltezeiten und Abkühlung; Ofenatmosphäre (oxidierend{{en: oxidation}} oder reduzierend{{en: reduction}}); was der Messkegel{{en: witness cone}} zeigte, nicht nur, was am Ofen eingestellt war                                 |
+| Ergebnis | Oberfläche und Farbe; Ablaufen, Haarrisse{{en: crazing}} oder Nadelstiche{{en: pinholes}}; Fotos von vorne, hinten und von der Seite; der Code des Plättchens                                                                                                                                    |
 
 > [!NOTE]
 > In Glazecalc enthält ein gespeichertes [Rezept](/recipe) das Rezept selbst. Ein [Brennprotokoll](/firing) hält jeden Brand fest: den Ofen, das Datum, Zeiten, Temperaturen, Kegel und Notizen. [Notizen](/notes) nehmen alles andere auf, etwa die Aufzeichnung zum Ansatz oben und was jedes Plättchen gezeigt hat.

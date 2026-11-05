@@ -89,16 +89,16 @@ Label: Orton-kegeltabel
 | Kegel | Stadig, {{27 °F/h; 15 °C/h}} | Gemiddeld, {{108 °F/h; 60 °C/h}} | Vinnig, {{270 °F/h; 150 °C/h}} |
 | ----- | ---------------------------: | -------------------------------: | -----------------------------: |
 | 022   |                            – |              {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018   |                            – |              {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015   |                            – |              {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018   |          {{1267 °F; 686 °C}} |              {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015   |          {{1382 °F; 750 °C}} |              {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010   |          {{1636 °F; 891 °C}} |              {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08    |          {{1692 °F; 922 °C}} |              {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07    |                            – |              {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07    |          {{1764 °F; 962 °C}} |              {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06    |          {{1798 °F; 981 °C}} |              {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05    |         {{1870 °F; 1021 °C}} |             {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04    |         {{1915 °F; 1046 °C}} |             {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03    |         {{1960 °F; 1071 °C}} |             {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02    |                            – |             {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02    |         {{1972 °F; 1078 °C}} |             {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01    |         {{1999 °F; 1093 °C}} |             {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1     |         {{2028 °F; 1109 °C}} |             {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4     |         {{2086 °F; 1141 °C}} |             {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,28 +460,28 @@ L&L- en Bartlett-beheereenhede gebruik {{1926 °F; 1052 °C}} vir kegel 04 en {{
 
 ## Glasuurbak {#glaze}
 
-Die glasuurbak smelt die glasuur{{en: glaze}} tot glas op die biskwiet. Die meeste beginners bak laagbakglasure by kegel 06–04 of middelbakglasure by kegel 5–6. Bak tot die kegel op jou klei- en glasuuretikette, met 'n kegelstel rondom daardie nommer. Vir wat binne die glasuur gebeur soos dit smelt, sien [Glasuur: die basiese beginsels](/guides/glazing-basics).
+Die glasuurbak smelt die glasuur tot glas op die biskwiet. Die meeste laebrandglasure op die mark is vir kegel 06 of 05 gemaak (die laebrandband strek oor kegel 06–04), en die meeste mediumbrandglasure vir kegel 5–6. Bak tot die kegel op jou glasuur- en kleietikette, met 'n kegelpak rondom daardie nommer. Vir wat binne die glasuur gebeur terwyl dit smelt, sien [Glasuur: die basiese beginsels](/guides/glazing-basics).
 
-### Inpak vir 'n glasuurbak
+### Pak vir 'n glasuurbak
 
-- Geglasuurde stukke mag nie mekaar of die mure raak nie: laat omtrent ½ duim (13 mm).
-- Hou glasuur van die voet af (**voet glasuurvry hou**), of sit laagbakware op **stutte**, klein staanders met punte. Steengoed en porselein moet nie op stutte staan nie, wat by daardie temperature insink; gebruik eerder hoëtemperatuur-rakdeklaag of silikasand.
-- Laat minstens 1 duim (25 mm) tussen die rakkante en die muur of kiln sitter.
+- Geglasuurde stukke mag nie aan mekaar of aan die wande raak nie: laat ongeveer ½ duim (13 mm).
+- Hou glasuur van die voet af (**dry-footing**), of sit laebrandware op **stilts**, klein staanders met punte. Steengoed en porselein moet nie op stilts staan nie, wat by daardie temperature invreet; gebruik eerder hoëbrand-rakdeklaag of silikasand.
+- Laat ten minste 1 duim (25 mm) tussen die rakrande en die wand of die kiln sitter.
 
-### Skedules vir die beheereenheid
+### Beheerderskedules
 
-Table: L&L- en Bartlett-glasuurvoorafinstellings
-Label: Glasuurvoorafinstellings
+Table: L&L- en Bartlett-glasuurvoorinstellings
+Label: Glasuurvoorinstellings
 
-| Segment                  |                          Styg tot |             Slow Glaze |             Fast Glaze |
+| Segment                  |                          Klim tot |             Slow Glaze |             Fast Glaze |
 | ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       Geen aparte stap |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Geen aparte stap nie |
 | 2                        | {{250 °F; 139 °C}} onder die piek | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
 | 3                        |                          Die piek |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Verhittingstyd, leë oond |                                   |      Omtrent 6½–7½ uur |        Omtrent 3–4 uur |
+| Verhittingstyd, leë oond |                                   |     Ongeveer 6½–7½ uur |       Ongeveer 3–4 uur |
 
-Table: Waar segmente 2 en 3 eindig, volgens kegel (L&L en Bartlett)
-Label: Voorafinstellingsteikens
+Table: Waar segmente 2 en 3 eindig, per kegel (L&L en Bartlett)
+Label: Voorinstellingteikens
 
 | Kegel |     Segment 2 eindig |                 Piek |
 | ----- | -------------------: | -------------------: |
@@ -489,29 +489,29 @@ Label: Voorafinstellingsteikens
 | 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is die veiliger verstek, gegewe L&L se waarskuwing oor vinnig bak. As jy 'n houtyd van meer as 5–10 minute by die piek byvoeg, sê L&L verlaag die teiken of die kegelafwyking dienooreenkomstig, en merk op dat “Aanhou by hoë temperature die slytasie van element en termokoppel versnel.”
+Slow Glaze is die veiliger verstek, gegewe L&L se waarskuwing oor vinnige bak. As jy 'n houtyd van meer as 5–10 minute by die piek byvoeg, sê L&L jy moet die teiken of die kegelverskuiwing (cone offset) ooreenkomstig verlaag, en merk op dat "Week by hoë temperature verhaas slytasie van elemente en termokoppel."
 
-### Kegel 6: daal-en-hou
+### Kegel 6: laat sak en hou
 
-Middelbakglasure kom soms uit met **speldeprikgaatjies** (klein gaatjies in die oppervlak) of blasies, nagelaat deur gas wat uit die smelt borrel. 'n **Daal-en-hou**-skedule bak tot by die top, koel vinnig met omtrent {{100 °F; 56 °C}} af en hou daar. In Digitalfire se woorde: “Om 100°F te daal en te hou gee die smelt genoeg viskositeit om borrels te laat bars terwyl dit hulle steeds laat heel.”
+Mediumbrandglasure kom soms uit met **speldeprikgaatjies** (piepklein gaatjies in die oppervlak) of blase, gelaat deur gas wat uit die smelt borrel. 'n **Laat-sak-en-hou**-skedule (drop-and-hold) bak tot bo, koel vinnig met ongeveer {{100 °F; 56 °C}} af en hou daar. In Digitalfire se woorde: "Om 100°F te laat sak en te hou, gee die smelt genoeg viskositeit om borrels te laat bars terwyl hulle steeds kan genees."
 
-Table: Digitalfire PLC6DS, kegel 6 daal-en-hou
+Table: Digitalfire PLC6DS, kegel 6 laat sak en hou
 Label: Digitalfire PLC6DS
 
-| Stap |                          Tempo |               Teiken | Houtyd                                            |
+| Stap |                          Tempo |               Teiken | Hou                                               |
 | ---- | -----------------------------: | -------------------: | ------------------------------------------------- |
 | 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minute                                         |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opsioneel 30 minute, om wolke borrels te verwyder |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opsioneel 30 minute, om wolke borrels op te klaar |
 | 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minute; langer in groot oonde                  |
 | 4    | Af teen {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minute                                         |
 
-PLC6DS neem omtrent 9 uur 36 minute. Vir vloeibaarder glasure daal Digitalfire eerder omtrent {{200 °F; 111 °C}}; om te ver te daal “loop die risiko van kristallisasie tydens die houtyd”. Sy piek van {{2200 °F; 1204 °C}} is onder die tabel se {{2232 °F; 1222 °C}} vir kegel 6; Digitalfire meld dat die meeste oonde kegel 6 by omtrent {{2200 °F; 1204 °C}} bereik. Toets dit met 'n kegelstel in jou eie oond.
+PLC6DS neem ongeveer 9 uur 36 minute. Vir meer vloeibare glasure laat Digitalfire eerder ongeveer {{200 °F; 111 °C}} sak; om te ver te laat sak "waag kristallisasie tydens die hou". Sy piek van {{2200 °F; 1204 °C}} is onder die grafiek se {{2232 °F; 1222 °C}} vir kegel 6; Digitalfire meld dat die meeste oonde kegel 6 by ongeveer {{2200 °F; 1204 °C}} bereik. Kontroleer dit met 'n kegelpak in jou eie oond.
 
 ### Stadige afkoeling
 
-**Stadige afkoeling** beteken die beheereenheid koel die oond teen 'n gestelde tempo af in plaas daarvan om dit vrylik te laat daal. Digitalfire se C6DHSC is PLC6DS gevolg deur afkoeling teen {{150 °F/h; 83 °C/h}} vanaf {{2100 °F; 1148 °C}} tot {{1400 °F; 760 °C}}, dan af. Dit “verbeter glans en oppervlakgehalte” en help rutielblouers, maar stadige afkoeling “kan matheid verhoog” (een matte glasuur het dof geword) en kan die oond se relais se lewe verkort. L&L lewer ook 'n stadige-afkoelprogram vir kegel 6:
+**Stadige afkoeling** beteken die beheerder koel die oond teen 'n vasgestelde tempo af in plaas daarvan om dit vrylik te laat daal. Digitalfire se C6DHSC is PLC6DS gevolg deur afkoeling teen {{150 °F/h; 83 °C/h}} van {{2100 °F; 1148 °C}} af tot {{1400 °F; 760 °C}}, dan af. Dit "verbeter glans en oppervlakgehalte" en help rutielblou, maar stadige afkoeling "kan matheid verhoog" (een mat glasuur het droog geword) en kan die lewe van die oond se relais verkort. L&L lewer ook 'n stadigeafkoelingsprogram vir kegel 6:
 
-Table: L&L “User 6”: stadige afkoeling vir kegel 6-glasure
+Table: L&L "User 6": stadige afkoeling vir kegel 6-glasure
 Label: L en L stadige afkoeling
 
 | Stap |                         Tempo |               Teiken |
@@ -520,11 +520,11 @@ Label: L en L stadige afkoeling
 | 2    |                   Volspoed af | {{1900 °F; 1038 °C}} |
 | 3    | Af teen {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt se beheereenhede bied eweneens 'n voorverhitting en 'n eenstap-afkoelopsie.
+Skutt se beheerders bied eweneens 'n voorverhitting en 'n eenstap-afkoelopsie.
 
-### By 'n handbediende oond
+### Op 'n handoond
 
-'n Handbediende oond kan nie hierdie skedules presies volg nie, maar die plan is dieselfde: sag eers, bestendig deur die middel, en 'n dopgehoue einde. Bracker's se laagbakglasuurskedule is onder Handbediende oonde in besonderhede, hieronder; vir warmer kegels voeg dit “gemiddeld 15–30 minute per kegelnommer” by. Met 'n pirometer, oefening en 'n logboek kan jy 'n daal-en-hou of 'n stadige afkoeling ongeveer namaak deur die skakelaars met die hand laer te draai, soos Digitalfire voorstel.
+'n Handoond kan hierdie skedules nie presies volg nie, maar die plan is dieselfde: saggies aan die begin, bestendig deur die middel, en 'n dopgehoude einde. Bracker se laebrand-glasuurskedule is onder Handoonde in detail, hieronder; vir warmer kegels voeg dit "gemiddeld 15–30 minute per kegelnommer" by. Met 'n pirometer, oefening en 'n logboek kan jy 'n laat-sak-en-hou of 'n stadige afkoeling rofweg naboots deur die skakelaars met die hand af te draai, soos Digitalfire voorstel.
 
 ## Handbediende oonde in besonderhede {#manual-kilns}
 

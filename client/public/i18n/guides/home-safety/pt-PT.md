@@ -83,6 +83,8 @@ Nunca deite vidrado, nem a água em que lavou ferramentas de vidrar, no lava-loi
 
 Sugerimos uma tampa nesse balde: a lama tem os mesmos metais que o vidrado, e os animais de estimação bebem água parada. As regras de eliminação de resíduos variam de lugar para lugar, por isso consulte a ficha de dados de segurança de cada produto e, em caso de dúvida, pergunte à câmara municipal ou à empresa de águas da sua zona.
 
+Alguns ateliers cozem a lama seca antes de a deitar fora. Põem-na numa taça velha que vai ser sacrificada: depois da cozedura, a taça não pode voltar a ser usada. Encha a taça só até um quarto, porque a lama faz espuma e borbulha ao fundir, e tape-a com um prato. Assente-a numa placa com protetor de placas ou numa placa velha, para o caso de transbordar. A cozedura transforma a lama em vidro, que prende os metais com muito mais firmeza do que o pó solto, por isso fica mais segura num aterro. Manuseie a lama seca como manusearia o vidrado seco, com uma máscara de proteção respiratória e sem levantar poeira.
+
 ## Manter o pó no atelier {#keeping-dust-in-the-studio}
 
 O Departamento de Saúde da Pensilvânia descreve o problema sem rodeios: «O pó contaminado com chumbo do seu passatempo pode agarrar-se à sua roupa, sapatos, cabelo, pele e objetos pessoais, e passar facilmente para o seu veículo e para as superfícies da sua casa.» O CDC acrescenta que os adultos «podem levar chumbo para casa e expor as suas famílias ao chumbo sem o saberem». As orientações da Pensilvânia dão a solução:

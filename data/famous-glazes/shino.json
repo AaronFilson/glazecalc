@@ -1,0 +1,46 @@
+{
+  "slug": "shino",
+  "published": false,
+  "names": { "en": "Shino", "ja": "志野" },
+  "native": { "name": "志野", "lang": "ja" },
+  "origin": { "en": "Mino, Gifu Prefecture, Japan (kilns at Ōgaya, Mutabora, Kamashita and Kujiri Motoyashiki)" },
+  "period": { "en": "Momoyama to early Edo, about 1573–1623" },
+  "summary": {
+    "en": "A thick, white, semi-translucent glaze of feldspar alone, the first white glaze of Japan, often over iron painting that shows through as soft brown."
+  },
+  "safety": { "en": "No colorant; feldspar dust holds free silica: mix it wet and wear a respirator for dry powder." },
+  "recipe": {
+    "lines": [{ "material": "Fukushima feldspar (福島長石)", "amount": 100 }],
+    "note": {
+      "en": "Feldspar alone (長石単味). Fukushima feldspar stands in for a Mino feldspar until a Kamado (釜戸) data sheet is found."
+    },
+    "sources": ["J4", "J1"]
+  },
+  "sources": [
+    {
+      "id": "J4",
+      "citation": "Kotobank, 志野焼 (Daijisen, Nihon Kokugo Daijiten, Nipponica, Mypedia, Britannica, Yamakawa).",
+      "url": "https://kotobank.jp/word/%E5%BF%97%E9%87%8E%E7%84%BC-74661",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "J1",
+      "citation": "吉田博和, 尾上彩, 常世田茂, 佐藤剛「笠間焼の新素地・新釉薬の開発」, 茨城県工業技術センター研究報告 第43号 (2014), Table 6.",
+      "url": "https://www.itic.pref.ibaraki.jp/publication/doc/research/h26/vol43_12.pdf",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "J2",
+      "citation": "Digitalfire, \"Mikawa Feldspar\".",
+      "url": "https://digitalfire.com/material/mikawa+feldspar",
+      "opened": "2026-11-04"
+    }
+  ],
+  "gaps": [
+    "No source for the firing (long reduction firing around cone 9–10 is unverified).",
+    "No Mino (釜戸) feldspar data sheet; Fukushima feldspar stands in.",
+    "Fukushima feldspar is not in the standard library yet (branch r14-native-materials).",
+    "The J1 table was reassembled from pdftotext columns and must be checked against the PDF."
+  ],
+  "guides": ["/guides/firing", "/guides/glazing-basics"]
+}

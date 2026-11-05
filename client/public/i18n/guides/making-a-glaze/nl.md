@@ -123,9 +123,9 @@ Derek Au weegt af in één kom, in aparte hoopjes, zodat een vergissing er weer 
 
 ### Hoeveel water
 
-Bronnen zijn het oneens. Derek Au begint dik, met 50 mL water per 100 g poeder, en voegt later meer toe. Potterycrafts geeft 65 mL per 100 g voor een van zijn poederglazuren. UT Austin weegt evenveel water als poeder af, en toen Digitalfire 20 kg poeder in 20 kg water deed, mat het een soortelijk gewicht{{en: specific gravity}} van 1,46.
+Bronnen zijn het oneens. Derek Au begint dik, met 50 mL water per 100 g poeder, en voegt later meer toe. Potterycrafts geeft 65 mL per 100 g voor een van zijn poederglazuren. UT Austin weegt evenveel water als poeder af, en toen Digitalfire 20 kg poeder in 20 kg water deed, mat het een soortelijk gewicht{{en: specific gravity}} van 1,46.
 
-Water is snel toegevoegd en traag weer verwijderd, dus begin met weinig. Onze schatting: begin met **ongeveer 70 tot 80 mL per 100 g** (700 tot 800 mL per kilogram, of ongeveer 11 tot 12 US fl oz per Engels pond). Laat inweken, meng en zeef bij die dikte, en voeg dan beetje bij beetje water toe tot het soortelijk gewicht klopt. 1 mL water weegt 1 g, dus u kunt het afwegen. Schiet u door, laat het glazuur{{en: glaze}} dan bezinken en haal het heldere water bovenaan eraf met een spons, of giet het af.
+Water is snel toegevoegd en traag weer verwijderd, dus begin met weinig. Onze schatting: begin met **ongeveer 70 tot 80 mL per 100 g** (700 tot 800 mL per kilogram, of ongeveer 11 tot 12 US fl oz per Engels pond). Laat inweken, meng en zeef bij die dikte, en voeg dan beetje bij beetje water toe tot het soortelijk gewicht klopt. 1 mL water weegt 1 g, dus u kunt het afwegen. Schiet u door, laat het glazuur{{en: glaze}} dan bezinken en haal het heldere water bovenaan eraf met een spons, of giet het af.
 
 ### Gereedschap en water
 
@@ -138,19 +138,19 @@ Ook water verschilt, en Digitalfire merkt op dat het verandert hoe aangemaakt gl
 ### Stap voor stap
 
 1. Zet uw stofmasker op, en trek rubberen handschoenen aan als uw handen erin gaan. Zakin draagt een stofmasker vanaf het begin van het afwegen tot het glazuur nat is.
-2. Meet ongeveer 70 tot 80 mL water per 100 g poeder af in de emmer.
+2. Meet ongeveer 70 tot 80 mL water per 100 g poeder af in de emmer.
 3. Voeg het afgewogen poeder voorzichtig toe, van geringe hoogte. UT Austin doet poeder in warm water; Zakin en Au doen water bij het poeder. We raden poeder in water aan, wat minder stof doet opwaaien, behalve bij een recept met veel bentoniet: roer daarvan eerst de droge poeders door elkaar.
 4. **Laat het inweken**: laat het poeder in het water weken zonder te roeren. Digitalfire wacht ongeveer 20 minuten. Poeders met glazuurlijm of een bindmiddel moeten een nacht blijven staan.
 5. Meng tot er geen droge plekken of klonten meer zijn.
 6. Zeef het twee keer (zie hieronder).
 7. Dek het af en laat het een nacht rusten, meng dan opnieuw en controleer de bodem op een harde laag.
-8. Meet het soortelijk gewicht, en voeg beetje bij beetje water toe tot u uw streefwaarde bereikt.
+8. Meet het soortelijk gewicht, en voeg beetje bij beetje water toe tot u uw streefwaarde bereikt. Weeg ook het afgewerkte aangemaakte glazuur als u het droge soortelijk gewicht van uw eigen glazuur wilt weten (zie hieronder).
 9. Zet een etiket op de emmer, en schrijf op wat u hebt gedaan.
 10. Maak nat schoon: dweil de vloer en neem elk oppervlak vochtig af, ook de buitenkant van de bakken met grondstoffen.
 
 ### Zeven
 
-Een **zeef** is gaas in een rand. Als u glazuur er met een kwast doorheen duwt, breekt u de klonten die het mengen achterlaat, en houdt u deeltjes tegen die na het stoken spikkels zouden geven. Hoe hoger het **mesh**-getal, hoe fijner het gaas: 80 mesh heeft een maaswijdte van ongeveer 0,18 mm, en 100 mesh van ongeveer 0,15 mm.
+Een **zeef** is gaas in een rand. Als u glazuur er met een kwast doorheen duwt, breekt u de klonten die het mengen achterlaat, en houdt u deeltjes tegen die na het stoken spikkels zouden geven. Hoe hoger het **mesh**-getal, hoe fijner het gaas: 80 mesh heeft een maaswijdte van ongeveer 0,18 mm, en 100 mesh van ongeveer 0,15 mm.
 
 Bronnen raden verschillende maaswijdtes aan. Zakin zeeft twee keer door 50 of 80 mesh. Derek Au gebruikt 120 mesh voor de meeste glazuren, vooral die met kobalt of ijzer: drie keer zeven door 80 mesh liet in een celadon nog ijzerspikkels achter, en één keer door 120 mesh loste dat op. Voor asglazuren en andere glazuren met grove grondstoffen houdt hij het bij 60 tot 80 mesh. Potterycrafts, in het Verenigd Koninkrijk, raadt 60 tot 80 mesh aan. Een veilige standaardkeuze:
 
@@ -165,16 +165,16 @@ Label: Maaswijdte van de zeef
 
 ## Soortelijk gewicht {#specific-gravity}
 
-Het **soortelijk gewicht**{{en: specific gravity, SG}} zegt hoeveel poeder er in uw aangemaakte glazuur{{en: slurry}} zit. Het is het gewicht van een volume glazuur{{en: glaze}} gedeeld door het gewicht van hetzelfde volume water. Water is 1,00, en een glazuur met {{SG 1.45}} weegt 145 g per 100 mL. Door te mengen tot een gemeten soortelijk gewicht krijgt u elke keer dezelfde dikte, en dezelfde laag. Het heeft geen eenheid, dus het is hetzelfde in grammen of in ounces.
+Het **soortelijk gewicht**{{en: specific gravity, SG}} (SG) zegt hoeveel poeder er in uw aangemaakte glazuur{{en: slurry}} zit. Het is het gewicht van een volume glazuur{{en: glaze}} gedeeld door het gewicht van hetzelfde volume water. Water is 1,00, en een glazuur met {{SG 1.45}} weegt 145 g per 100 mL. Door te mengen tot een gemeten soortelijk gewicht krijgt u elke keer dezelfde dikte, en dezelfde laag. Het heeft geen eenheid, dus het is hetzelfde in grammen of in ounces.
 
-### Meten door 100 mL te wegen
+### Meten door 100 mL te wegen
 
 1. Roer het glazuur om, zodat er niets bezonken is.
-2. Zet een **maatcilinder** van 100 mL (een hoge buis met maatstreepjes) of een spuit van 100 mL op de weegschaal, en tarreer.
-3. Vul hem met glazuur tot precies 100 mL, en lees de streep op ooghoogte af.
-4. Weeg hem en deel het aantal gram door 100: 145 g is een soortelijk gewicht van 1,45.
+2. Zet een **maatcilinder** van 100 mL (een hoge buis met maatstreepjes) of een spuit van 100 mL op de weegschaal, en tarreer.
+3. Vul hem met glazuur tot precies 100 mL, en lees de streep op ooghoogte af.
+4. Weeg hem en deel het aantal gram door 100: 145 g is een soortelijk gewicht van 1,45.
 
-Digitalfire markeert ook een beker op de hoogte van 500 g water, vult die tot de streep met glazuur en deelt het gewicht door 500; een grotere, vollere maat is nauwkeuriger. Een **areometer**, een drijver die u afleest op de hoogte waarop hij in het glazuur drijft, is snel, maar kan bij dikke of opgestijfde glazuren verkeerd aangeven. Britse areometers, zoals die van Potclays, geven graden Baumé (°Bé) aan. Volgens onze berekening is het soortelijk gewicht = 145 ÷ (145 − °Bé), dus 46 °Bé is ongeveer 1,46. Oudere Britse boeken geven een **pintgewicht**, het aantal ounces in een Engelse pint glazuur: deel het door 20, dus 29 oz is ongeveer een soortelijk gewicht van 1,45 (ook onze berekening).
+Digitalfire markeert ook een beker op de hoogte van 500 g water, vult die tot de streep met glazuur en deelt het gewicht door 500; een grotere, vollere maat is nauwkeuriger. Een **areometer**, een drijver die u afleest op de hoogte waarop hij in het glazuur drijft, is snel, maar kan bij dikke of opgestijfde glazuren verkeerd aangeven. Britse areometers, zoals die van Potclays, geven graden Baumé (°Bé) aan. Volgens onze berekening is het soortelijk gewicht = 145 ÷ (145 − °Bé), dus 46 °Bé is ongeveer 1,46. Oudere Britse boeken geven een **pintgewicht**, het aantal ounces in een Engelse pint glazuur: deel het door 20, dus 29 oz is ongeveer een soortelijk gewicht van 1,45 (ook onze berekening).
 
 ### Waar u naar streeft
 
@@ -193,23 +193,44 @@ Om een dompelglazuur op het oog te controleren, dompelt AMACO 5 seconden en kijk
 
 ### Water voor een gewenst soortelijk gewicht: onze schatting
 
-De tabel hieronder is ons eigen rekenwerk, niet dat van een bron. Hij gaat ervan uit dat de deeltjes van het poeder een dichtheid van 2,6 g per cm³ hebben, wat een aanname is, geen meting. Klei, oplosbare grondstoffen en opstijven veranderen allemaal een echt glazuur, dus gebruik hem om te beginnen, en meet daarna. Ter controle: hij voorspelt {{SG 1.44}} bij evenveel poeder als water in gewicht, dicht bij wat Digitalfire mat: {{SG 1.46}}. Hij laat ook zien dat u met 70 tot 80 mL per 100 g boven {{SG 1.50}} begint, dikker dan nodig.
+De tabel hieronder is ons eigen rekenwerk, niet dat van een bron. Hij gaat ervan uit dat de deeltjes van het poeder een dichtheid van 2,6 g per cm³ hebben, wat een aanname is, geen meting. Klei, oplosbare grondstoffen en opstijven veranderen allemaal een echt glazuur, dus gebruik hem om te beginnen, en meet daarna. Ter controle: hij voorspelt {{SG 1.44}} bij evenveel poeder als water in gewicht, dicht bij wat Digitalfire mat: {{SG 1.46}}. Hij laat ook zien dat u met 70 tot 80 mL per 100 g boven {{SG 1.50}} begint, dikker dan nodig.
 
 Table: Water voor een gewenst soortelijk gewicht (onze schatting)
 Label: Water voor een gewenst soortelijk gewicht
 
-| Streefwaarde | Per 100 g poeder |     Per kilogram |      Per Engels pond |
+| Streefwaarde | Per 100 g poeder |     Per kilogram |      Per Engels pond |
 | ------------ | ---------------: | ---------------: | -------------------: |
-| {{SG 1.40}}  |  ongeveer 115 mL | ongeveer 1150 mL | ongeveer 18 US fl oz |
-| {{SG 1.45}}  |   ongeveer 98 mL |  ongeveer 980 mL | ongeveer 15 US fl oz |
-| {{SG 1.50}}  |   ongeveer 85 mL |  ongeveer 850 mL | ongeveer 13 US fl oz |
-| {{SG 1.60}}  |   ongeveer 64 mL |  ongeveer 640 mL | ongeveer 10 US fl oz |
+| {{SG 1.40}}  |  ongeveer 115 mL | ongeveer 1150 mL | ongeveer 18 US fl oz |
+| {{SG 1.45}}  |   ongeveer 98 mL |  ongeveer 980 mL | ongeveer 15 US fl oz |
+| {{SG 1.50}}  |   ongeveer 85 mL |  ongeveer 850 mL | ongeveer 13 US fl oz |
+| {{SG 1.60}}  |   ongeveer 64 mL |  ongeveer 640 mL | ongeveer 10 US fl oz |
+
+### Het droge soortelijk gewicht van uw eigen glazuur vinden tijdens het mengen
+
+De 2,6 hierboven is een gok. Het getal van uw eigen glazuur, de dichtheid van het droge poeder, kunt u berekenen uit drie getallen die u tijdens het mengen kunt opnemen. Daarmee kunt u later uit het soortelijk gewicht berekenen hoeveel poeder er in een emmer van dat glazuur zit, en hoeveel water het volgende mengsel nodig heeft. Ons rekenwerk, niet dat van een bron:
+
+1. Schrijf het gewicht van het droge poeder in het mengsel op: het totaal van het recept.
+2. Weeg de lege emmer voordat u begint, of zet het gewicht erop.
+3. Meng, zeef en breng het glazuur zoals gewoonlijk op zijn soortelijk gewicht. Duw alles door de zeef en spoel het in de emmer, zodat er geen poeder achterblijft.
+4. Weeg de volle emmer en trek het gewicht van de emmer eraf. Dat is het gewicht van het aangemaakte glazuur.
+5. Meet het soortelijk gewicht.
+
+Dan:
+
+- **Water** = gewicht van het aangemaakte glazuur − gewicht van het poeder.
+- **Volume van het aangemaakte glazuur** in mL = gewicht van het aangemaakte glazuur in gram ÷ soortelijk gewicht.
+- **Volume van het poeder** = volume van het aangemaakte glazuur − water (1 g water is 1 mL).
+- **Droog soortelijk gewicht** = gewicht van het poeder ÷ volume van het poeder.
+
+Een voorbeeld: 1000 g poeder geeft 1980 g aangemaakt glazuur met {{SG 1.45}}. Het water is 980 g, het aangemaakte glazuur is 1980 ÷ 1,45 = ongeveer 1366 mL, het poeder neemt 1366 − 980 = 386 mL in, en het droge soortelijk gewicht is 1000 ÷ 386 = ongeveer 2,59.
+
+Weeg aan het eind het hele aangemaakte glazuur, niet het water terwijl u het toevoegt, zodat water dat verdampt of wegspat niet meetelt. Kleine fouten worden hier groot: een soortelijk gewicht dat 0,01 afwijkt, verschuift de uitkomst met ongeveer 2 tot 4%, meer bij een dunner glazuur. Gebruik een mengsel van 1 kg of meer, een nauwkeurige weegschaal en voor het soortelijk gewicht de methode met de beker van 500 g hierboven. De meeste gangbare grondstoffen liggen tussen ongeveer 2,5 en 2,9, dus een getal ver daarbuiten, in een glazuur zonder veel zirkoonsilicaat of lood, wijst waarschijnlijk op een meetfout. Schrijf het getal op het recept.
 
 ### Bitterzout, CMC en bentoniet
 
-**Bitterzout** (magnesiumsulfaat) laat een glazuur een beetje opstijven als het stilstaat, en weer vloeien als het wordt geroerd. Dit heet **uitvlokken**{{en: flocculating}}, en een glazuur dat zich zo gedraagt, is **thixotroop**{{en: thixotropic}}: het gaat gelijkmatiger op, druipt minder en bezinkt minder. Digitalfire raadt aan te beginnen met ongeveer 2 g per gallon zodra het soortelijk gewicht klopt (grofweg 0,5 g per liter, onze omrekening), en de hoeveelheid bij elke keer mengen bij te stellen, omdat geen recept de dosis zou moeten vastleggen. We raden aan het eerst in een beetje heet water op te lossen. In een voorbeeld van Digitalfire droop een glazuur met {{SG 1.45}}, dus bracht water het terug naar {{SG 1.43}} en liet bitterzout het weer romig opstijven, en het ging gelijkmatig op. Een ruwe controle: roer, stop en kijk. Een opgestijfd glazuur beweegt nog ongeveer 2 of 3 seconden door, stopt dan en veert een beetje terug.
+**Bitterzout** (magnesiumsulfaat) laat een glazuur een beetje opstijven als het stilstaat, en weer vloeien als het wordt geroerd. Dit heet **uitvlokken**{{en: flocculating}}, en een glazuur dat zich zo gedraagt, is **thixotroop**{{en: thixotropic}}: het gaat gelijkmatiger op, druipt minder en bezinkt minder. Digitalfire raadt aan te beginnen met ongeveer 2 g per gallon zodra het soortelijk gewicht klopt (grofweg 0,5 g per liter, onze omrekening), en de hoeveelheid bij elke keer mengen bij te stellen, omdat geen recept de dosis zou moeten vastleggen. We raden aan het eerst in een beetje heet water op te lossen. In een voorbeeld van Digitalfire droop een glazuur met {{SG 1.45}}, dus bracht water het terug naar {{SG 1.43}} en liet bitterzout het weer romig opstijven, en het ging gelijkmatig op. Een ruwe controle: roer, stop en kijk. Een opgestijfd glazuur beweegt nog ongeveer 2 of 3 seconden door, stopt dan en veert een beetje terug.
 
-**CMC** (carboxymethylcellulose, ook verkocht als glazuurlijm) maakt aangemaakt glazuur kleveriger en laat het langzamer drogen, en geeft een hardere laag die aan de pot hecht. Het is het belangrijkst voor kwastglazuren en glazuren met veel fritte{{en: frit}}. In het voorbeeld van Digitalfire wordt 3,75 g door 1000 g aangemaakt glazuur gemengd, en dat moet met een blender. Een glazuur met CMC stijft niet op met bitterzout, en omdat microben zich met de CMC voeden, kan het in de emmer veranderen en gaan stinken.
+**CMC** (carboxymethylcellulose, ook verkocht als glazuurlijm) maakt aangemaakt glazuur kleveriger en laat het langzamer drogen, en geeft een hardere laag die aan de pot hecht. Het is het belangrijkst voor kwastglazuren en glazuren met veel fritte{{en: frit}}. In het voorbeeld van Digitalfire wordt 3,75 g door 1000 g aangemaakt glazuur gemengd, en dat moet met een blender. Een glazuur met CMC stijft niet op met bitterzout, en omdat microben zich met de CMC voeden, kan het in de emmer veranderen en gaan stinken.
 
 **Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer bentoniet nodig zou moeten hebben dan 1% van het gewicht van het droge glazuur.
 
@@ -217,7 +238,7 @@ Label: Water voor een gewenst soortelijk gewicht
 
 ### Begin klein
 
-Derek Au bouwt het op in drie stappen: een proef van 50 of 100 g, als die bevalt een grotere proef van 1 tot 2 kg, en dan een hoeveelheid van 5 tot 10 kg voor het atelier. Volgens onze schatting geeft een proef van 100 g bij {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) aangemaakt glazuur{{en: slurry}}, genoeg om een paar kleine plaatjes in een smalle beker te dompelen.
+Derek Au bouwt het op in drie stappen: een proef van 50 of 100 g, als die bevalt een grotere proef van 1 tot 2 kg, en dan een hoeveelheid van 5 tot 10 kg voor het atelier. Volgens onze schatting geeft een proef van 100 g bij {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) aangemaakt glazuur{{en: slurry}}, genoeg om een paar kleine plaatjes in een smalle beker te dompelen.
 
 ### Test op uw eigen klei
 
@@ -227,7 +248,7 @@ Een glazuur{{en: glaze}} kan er op een andere klei of in een andere oven heel an
 - één verandering tegelijk
 - één keer en twee keer dompelen, om het glazuur dun en dik te zien
 - alle plaatjes in dezelfde ovenlading
-- een merkteken op elk plaatje vóór het stoken, met een stempel, door in te kerven of met een onderglazuurpotlood.
+- een merkteken op elk plaatje vóór het stoken, met een stempel, door in te kerven of met een onderglazuurpotlood. Gebakken plaatjes lijken op elkaar, en een merkteken dat vóór het stoken is aangebracht, overleeft de oven, zodat u altijd kunt zien bij welk recept elk plaatje hoort.
 
 We raden rechtopstaande plaatjes aan, omdat een plat plaatje verbergt hoe ver een glazuur loopt, met een band met reliëf om te laten zien hoe het glazuur op randen aftekent, en een voet zonder glazuur. Zet elk plaatje op een schaaltje of een stukje biscuit, of op een ovenplaat met ovenplaatbescherming, om druppels op te vangen. Zet een **controlekegel**{{en: witness cone}}, een kleine keramische kegel die buigt als hij genoeg warmte heeft gekregen, bij de plaatjes, om te laten zien wat ze hebben gekregen; de gids [Een eenvoudige oven stoken](/guides/firing) legt kegels uit. Geef elk plaatje een korte code, en schrijf die naast het recept in uw aantekeningen. Willers gebruikt in een artikel voor Ceramic Arts Network cijfers en letters, en schrijft het systeem zelf voorin het notitieboek.
 
@@ -240,18 +261,18 @@ Een **proevenreeks**{{en: line blend}} is een rij proeven die in gelijke stappen
 3. Roer beide om, en breng dan met een spuit elk mengsel over in een eigen genummerd bekertje.
 4. Roer elk bekertje om en dompel er een plaatje in.
 
-In ons uitgewerkte voorbeeld is A 100 g van een transparant basisglazuur, en B hetzelfde met 4 g rood ijzeroxide erbij (een toevoeging van 4%). Elke milliliter van B bevat evenveel basisglazuur als een milliliter van A, plus het ijzer, dus de bekertjes gaan van geen ijzer naar 4% in stappen van 1%. Elk uiterste levert 100 mL aan de reeks, en een hoeveelheid van 100 g is daar volgens onze schatting genoeg voor.
+In ons uitgewerkte voorbeeld is A 100 g van een transparant basisglazuur, en B hetzelfde met 4 g rood ijzeroxide erbij (een toevoeging van 4%). Elke milliliter van B bevat evenveel basisglazuur als een milliliter van A, plus het ijzer, dus de bekertjes gaan van geen ijzer naar 4% in stappen van 1%. Elk uiterste levert 100 mL aan de reeks, en een hoeveelheid van 100 g is daar volgens onze schatting genoeg voor.
 
-Table: Een proevenreeks met ijzer in vijf stappen, 40 mL per bekertje (ons uitgewerkte voorbeeld)
+Table: Een proevenreeks met ijzer in vijf stappen, 40 mL per bekertje (ons uitgewerkte voorbeeld)
 Label: Voorbeeld proevenreeks
 
 | Bekertje | Transparant basisglazuur (A) | Basisglazuur met 4% ijzer (B) | IJzeroxide, % van het basisglazuur |
 | -------- | ---------------------------: | ----------------------------: | ---------------------------------: |
-| 1        |                        40 mL |                          0 mL |                                  0 |
-| 2        |                        30 mL |                         10 mL |                                  1 |
-| 3        |                        20 mL |                         20 mL |                                  2 |
-| 4        |                        10 mL |                         30 mL |                                  3 |
-| 5        |                         0 mL |                         40 mL |                                  4 |
+| 1        |                        40 mL |                          0 mL |                                  0 |
+| 2        |                        30 mL |                         10 mL |                                  1 |
+| 3        |                        20 mL |                         20 mL |                                  2 |
+| 4        |                        10 mL |                         30 mL |                                  3 |
+| 5        |                         0 mL |                         40 mL |                                  4 |
 
 De methode vraagt zorgvuldig rekenwerk, goed gemengde uitersten met hetzelfde soortelijk gewicht{{en: specific gravity}}, en een nauwkeurige weegschaal. Derek Au mengt ook op gewicht in plaats van op volume. Een **driehoeksmenging** doet hetzelfde met drie uitersten, uitgezet op een driehoek.
 
@@ -265,13 +286,13 @@ Willers verwoordt het doel goed: “genoeg informatie om de resultaten die u ont
 Table: Wat u voor elke hoeveelheid glazuur noteert (ons sjabloon)
 Label: Sjabloon voor aantekeningen
 
-| Onderdeel  | Wat u opschrijft                                                                                                                                                                                                                                                |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept     | Het recept en de versie ervan; merken en partijnummers van de grondstoffen; eventuele vervangingen                                                                                                                                                              |
-| Mengen     | Datum; hoeveelheid; toegevoegd water, en de soort (kraanwater, osmosewater of gedestilleerd water); soortelijk gewicht na het mengen en uiteindelijk soortelijk gewicht; toegevoegd bitterzout, CMC en bentoniet; maaswijdte van de zeef en aantal keer gezeefd |
-| Aanbrengen | Kleimassa; kegel van de biscuitstook{{en: bisque}}; dompelen, kwasten of overgieten; dompeltijd of aantal lagen; droge laagdikte                                                                                                                                |
-| Stoken     | Oven en plaats in de oven; het stookschema, met stijgingen, houdtijden en afkoeling; ovenatmosfeer (oxiderend{{en: oxidation}} of reducerend{{en: reduction}}); wat de controlekegel{{en: witness cone}} liet zien, niet alleen waarop de oven was ingesteld    |
-| Resultaat  | Oppervlak en kleur; eventueel aflopen, haarscheuren{{en: crazing}} of speldenprikken{{en: pinholes}}; foto’s van voorkant, achterkant en zijkant; de code van het plaatje                                                                                       |
+| Onderdeel  | Wat u opschrijft                                                                                                                                                                                                                                                                                                                                       |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Recept     | Het recept en de versie ervan; merken en partijnummers van de grondstoffen; eventuele vervangingen                                                                                                                                                                                                                                                     |
+| Mengen     | Datum; hoeveelheid; toegevoegd water, en de soort (kraanwater, osmosewater of gedestilleerd water); soortelijk gewicht na het mengen en uiteindelijk soortelijk gewicht; het gewicht van het afgewerkte aangemaakte glazuur, voor het droge soortelijk gewicht; toegevoegd bitterzout, CMC en bentoniet; maaswijdte van de zeef en aantal keer gezeefd |
+| Aanbrengen | Kleimassa; kegel van de biscuitstook{{en: bisque}}; dompelen, kwasten of overgieten; dompeltijd of aantal lagen; droge laagdikte                                                                                                                                                                                                                       |
+| Stoken     | Oven en plaats in de oven; het stookschema, met stijgingen, houdtijden en afkoeling; ovenatmosfeer (oxiderend{{en: oxidation}} of reducerend{{en: reduction}}); wat de controlekegel{{en: witness cone}} liet zien, niet alleen waarop de oven was ingesteld                                                                                           |
+| Resultaat  | Oppervlak en kleur; eventueel aflopen, haarscheuren{{en: crazing}} of speldenprikken{{en: pinholes}}; foto’s van voorkant, achterkant en zijkant; de code van het plaatje                                                                                                                                                                              |
 
 > [!NOTE]
 > In Glazecalc bevat een opgeslagen [recept](/recipe) het recept zelf. Een [stookverslag](/firing) legt elke stook vast: de oven, de datum, tijden, temperaturen, kegels en opmerkingen. In [notities](/notes) bewaart u al het andere, zoals de aantekeningen per hoeveelheid hierboven en wat elk plaatje liet zien.

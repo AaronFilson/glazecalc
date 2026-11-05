@@ -83,6 +83,8 @@ No vierta nunca esmalte, ni el agua en la que haya enjuagado herramientas de esm
 
 Le recomendamos tapar ese cubo: el lodo contiene los mismos metales que el esmalte, y las mascotas beben agua estancada. Las normas sobre cómo deshacerse de los residuos varían de un lugar a otro, así que consulte la ficha de datos de seguridad de cada producto y, si tiene dudas, pregunte a su ayuntamiento o a la compañía de aguas.
 
+Algunos talleres cuecen el lodo seco antes de tirarlo. Lo ponen en un cuenco de sobra que se va a sacrificar: después de la cocción, el cuenco no se puede volver a usar. Llene el cuenco solo hasta una cuarta parte, porque el lodo hace espuma y burbujea al fundirse, y tápelo con un plato. Colóquelo sobre una placa con protector de placas o sobre una placa de sobra, por si se desborda. La cocción convierte el lodo en vidrio, que retiene los metales con mucha más fuerza que el polvo suelto, así que es más seguro en un vertedero. Manipule el lodo seco como manipularía el esmalte seco: con una mascarilla autofiltrante y sin levantar polvo.
+
 ## Cómo mantener el polvo dentro del taller {#keeping-dust-in-the-studio}
 
 El Departamento de Salud de Pensilvania expone el problema con claridad: «El polvo contaminado con plomo de su afición puede adherirse a su ropa, calzado, pelo, piel y objetos personales, y pasar fácilmente a su vehículo y a las superficies de su casa». Los CDC añaden que los adultos «pueden llevarse el plomo a casa y exponer a sus familias al plomo sin saberlo». Las recomendaciones de Pensilvania dan el remedio:

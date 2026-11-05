@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Ingxenye yaleli khasi ayikahunyushwa, ngakho iboniswa ngesiNgisi.",
+  "index": {
+    "crumb": "Ama-glaze adumile",
+    "title": "Ama-glaze adumile",
+    "lead": "Ama-glaze aziwa emhlabeni wonke, ngalinye lenziwe ngokokwakha kwendabuko kwendawo yalo, ne-UMF yalo nohlobo olwenziwe ngokokwakha okuthengiswa lapho ukhona.",
+    "listHeading": "Ama-glaze",
+    "more": "Ama-glaze amaningi ayeza: ngalinye lingezwa uma iresiphi yalo nokokwakha kwalo kusekelwe okungenani yimithombo emithathu efundiwe."
+  },
+  "glaze": {
+    "lead": "I-glaze edumile ({native}): iresiphi yayo yendabuko noma ukuhlaziywa, ukushisa kwayo, nohlobo olwenziwe ngokokwakha okuthengiswa lapho ukhona.",
+    "aboutHeading": "Mayelana ne-{name}",
+    "nativeName": "Igama lendabuko",
+    "origin": "Kuphi",
+    "period": "Nini",
+    "firing": "Ukushisa",
+    "cone": "i-cone {cone}",
+    "historyOnly": "Umlando kuphela: le glaze yayenziwe ngomthofu (lead, Pb). Ukuhlaziywa kwayo kuboniswa njengomlando, hhayi njengeresiphi yokuxuba. Uhlobo olungezansi luyi-glaze ehlukile, engenamthofu.",
+    "recipeHeading": "Iresiphi yendabuko",
+    "material": "Okokwakha",
+    "amount": "Inani",
+    "unityHeading": "I-UMF (unity molecular formula)",
+    "analysisHeading": "Ukuhlaziywa komlando",
+    "oxide": "I-oxide",
+    "percent": "% yesisindo",
+    "useHeading": "Yizame",
+    "open": "Vula le resiphi",
+    "openLeadFree": "Vula uhlobo olungenamthofu",
+    "leadFreeTitle": "Isitayela se-{name}, engenamthofu",
+    "allLink": "Wonke ama-glaze adumile",
+    "safetyHeading": "Ukuphepha",
+    "safeMixing": "Ukuxuba ngokuphepha nomoya ohlanzekile",
+    "firingGuide": "Ukushisa ku-kiln elula",
+    "makingGuide": "Indlela yokwenza i-glaze",
+    "sourcesHeading": "Imithombo",
+    "link": "Vula",
+    "opened": "kufundwe ngo-{date}"
+  },
+  "local": {
+    "heading": "Ngokokwakha kwendawo yakho",
+    "leadFreeHeading": "Uhlobo olungenamthofu",
+    "intro": "I-UMF yeresiphi yendabuko, yenziwe ngokokwakha okujwayelekile okuthengiswa lapho uthenga khona. Khetha lapho uthenga khona ukuze uyibone.",
+    "region": "Lapho uthenga khona okokwakha",
+    "proposal": "Okokwakha kwesiphakamiso uqobo",
+    "pick": "Khetha…",
+    "untested": "Kubaliwe, akukashiswa ukuhlolwa.",
+    "testFirst": "Shisa ama-test tile ngaphambi kokuthi uyisebenzise kunoma yisiphi isitsha, futhi uhlole indawo ethinta ukudla ukuthi ayiphumi yini izinsimbi (leaching).",
+    "untestedNote": "Kubaliwe, akukashiswa ukuhlolwa: shisa ama-test tile ngaphambi kokuyisebenzisa.",
+    "close": "Isondela kakhulu kufomula okuhloswe yona.",
+    "fair": "Isondela ngokwanele kufomula okuhloswe yona.",
+    "poor": "Lokhu okokwakha akukwazi ukusondela kufomula okuhloswe yona.",
+    "none": "Okokwakha okuthengiswa lapho akukwazi ukuyenza.",
+    "choose": "Khetha lapho uthenga khona okokwakha ukuze uyibone yenziwe ngalokho okuthengiswa lapho."
+  },
+  "atmospheres": {
+    "oxidation": "i-oxidation",
+    "reduction": "i-reduction",
+    "neutral": "phakathi nendawo (neutral)",
+    "wood": "ukushisa ngezinkuni",
+    "salt": "ukushisa ngosawoti",
+    "soda": "ukushisa nge-soda"
+  }
+}

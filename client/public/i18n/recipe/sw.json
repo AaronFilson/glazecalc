@@ -724,7 +724,7 @@
     "keyBright": "Mstari wa vitone: mahali glaze za Stull zilipong'aa zaidi.",
     "keyLimits": "Mistari ya vistari na kivuli: masafa ya silika na alumina ya {name}.",
     "keyCrazed": "Mistari ya mshazari: mahali zilipopata nyufa ndogo.",
-    "note": "Mwongozo, si utabiri. R. T. Stull (Transactions of the American Ceramic Society, 1912) alichoma katika koni 11 flux zikiwa zimewekwa 0.3 K₂O na 0.7 CaO; flux na uchomaji mwingine husogeza maeneo, na glaze isiyong'aa ambayo haijachomwa vya kutosha inaweza kuonekana kama ng'avu kwenye chati. Maeneo ni kama Glazy inavyoyachora."
+    "note": "Mwongozo, si utabiri. R. T. Stull (Transactions of the American Ceramic Society, 1912) alichoma kwa takriban koni 11, flux zikiwa zimewekwa 0.3 K₂O na 0.7 CaO; flux nyingine na uchomaji mwingine husogeza maeneo, na glaze iliyo matte kwa sababu tu haikuchomwa vya kutosha bado inaweza kuonekana kama ng'avu kwenye chati. Maeneo ni kama Glazy inavyoyachora."
   },
   "slurry": {
     "heading": "Uzito linganishi na maji",
@@ -752,7 +752,17 @@
       "pint": "Uzito wa painti unaotaka, oz"
     },
     "drySg": "SG ya malighafi kavu",
-    "drySgHelp": "Takriban 2.5 kwa glaze nyingi; Glazy hutumia 2.6.",
+    "drySgEmpty": "Ni uzito mkavu tu unaouhitaji; maji ya kuongeza hayauhitaji. Uandike ukiujua.",
+    "drySgNeeded": "Andika SG ya malighafi kavu ili uone glaze kavu iliyo ndani ya ndoo na maji ya kundi jipya.",
+    "estimate": {
+      "mineral": "Makadirio, {sg}, kutokana na kile kila malighafi imetengenezwa nacho: msongamano uliopimwa wa madini yake. Ibadilishe ukijua vizuri zaidi.",
+      "kind": "Makadirio, {sg}: feldspar na udongo wa mfinyanzi huwa na takriban 2.6. Ibadilishe ukijua vizuri zaidi.",
+      "glass": "Makadirio, {sg}, yaliyokokotolewa kutoka kwa oksidi za frit (ni kioo). Ibadilishe ukijua vizuri zaidi.",
+      "mixed": "Makadirio, {sg}, kutoka kwa kila malighafi: msongamano uliopimwa wa madini yake, takriban 2.6 kwa feldspar na udongo wa mfinyanzi, na frit zikikokotolewa kutoka kwa oksidi zake. Ibadilishe ukijua vizuri zaidi.",
+      "leftOut": "Zimeachwa nje, kwa kuwa SG yake haijulikani: {names}.",
+      "none": "Hakuna makadirio kwa kichocheo hiki: SG ya {names} haijulikani. Uandike ukiujua.",
+      "was": "Takwimu yako inatumika. Makadirio yalikuwa {sg}; futa sehemu hii ili urudi kwayo."
+    },
     "batch": "Glaze kavu ya kundi jipya, {unit}",
     "contents": "Kwa SG {sg}, ndoo ina {glaze} ya glaze kavu na {water} ya maji.",
     "add": "Ili kufikia SG {target}, ongeza {water} ya maji. Itaishia takriban {volume}.",
@@ -760,6 +770,7 @@
     "already": "Tayari iko kwenye SG {target}.",
     "mix": "Changanya {glaze} ya glaze kavu na {water} ya maji kupata takriban {volume} kwa SG {target}.",
     "badSg": "SG lazima iwe zaidi ya 1 (ya maji) na chini ya {dry} ya malighafi kavu.",
+    "badSgWater": "SG lazima iwe zaidi ya 1 (ya maji).",
     "badDry": "SG ya malighafi kavu lazima iwe zaidi ya 1.",
     "note": "Maji ni kwa uzito: lita moja ina uzito wa kilogramu moja, galoni ya Marekani takriban 8.3 lb. Hesabu inachukulia kwamba ujazo hujumlishana, jambo lililo karibu, si kamili: ongeza maji kidogo kidogo, koroga, na upime tena. Glaze mbili zenye SG ile ile bado zinaweza kutiririka tofauti.",
     "saveTarget": "Hifadhi SG {sg} kama lengo la kichocheo hiki",

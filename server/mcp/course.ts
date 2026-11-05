@@ -3,12 +3,14 @@
 // (client/public/i18n/guides/learn-with-john-britt/en.md): each section headed
 // "Unit N: ..." is a unit, with his videos (### Watch, links to YouTube by the
 // titles he gave them), the Glazecalc guide sections to read (### Read) and
-// the exercises (### Try). A unit whose warning points to the safe mixing
+// the exercises (### Try) and questions to check what was learned (### Check). A unit whose warning points to the safe mixing
 // guide is lab work. His videos are only ever linked, never copied or retold.
-import { readGuide } from './guides.ts';
+import { BRITT_GUIDE, BRITT_RULE, readGuide } from './guides.ts';
+
+export { BRITT_RULE };
 
 /** The guide's id, in its address (/guides/learn-with-john-britt). */
-export const COURSE_GUIDE = 'learn-with-john-britt';
+export const COURSE_GUIDE = BRITT_GUIDE;
 
 export interface CourseVideo {
   /** His title, as he wrote it. */
@@ -25,9 +27,32 @@ export interface CourseUnit {
   /** The Glazecalc guide sections to read, by guide and section id. */
   reads: Array<{ guide: string; section: string; title: string }>;
   exercises: string[];
+  /** Questions to check what was learned (### Check), answered from the guide sections, not from his videos. */
+  checks: string[];
   /** Weighing, mixing or firing: the safe mixing guide comes first. */
   lab: boolean;
+  /** For lab work, the safe mixing sections its warning points to, in order ("habits" for a link to none). */
+  safety?: string[];
 }
+
+/** The text of a section's [!WARNING] blocks: their quoted lines. */
+export const warningText = (text: string): string => {
+  const out: string[] = [];
+  let inside = false;
+  for (const line of text.split('\n')) {
+    if (/^>\s*\[!WARNING\]/.test(line)) inside = true;
+    else if (!line.startsWith('>')) inside = false;
+    else if (inside) out.push(line.replace(/^>\s?/, ''));
+  }
+  return out.join('\n');
+};
+
+/** The guide links inside a warning, by guide and section id (section empty when the link has none). */
+export const warningLinks = (text: string): Array<{ guide: string; section: string }> =>
+  [...warningText(text).matchAll(/\]\(\/guides\/([\w-]+)(?:#([\w-]+))?\)/g)].map(([, guide, section]) => ({
+    guide: guide!,
+    section: section ?? ''
+  }));
 
 const UNIT = /^Unit (\d+): (.+)$/;
 const VIDEO = /\[([^\]]+)\]\((https:\/\/www\.youtube\.com\/watch\?v=[\w-]+)\)/g;
@@ -50,6 +75,8 @@ export const courseUnits = (): CourseUnit[] => {
   for (const section of guide.sections) {
     const unit = UNIT.exec(section.heading);
     if (!unit) continue;
+    const mixing = warningLinks(section.text).filter((link) => link.guide === 'safe-mixing');
+    const lab = mixing.length > 0;
     units.push({
       id: section.id,
       number: Number(unit[1]),
@@ -64,7 +91,12 @@ export const courseUnits = (): CourseUnit[] => {
         .split('\n')
         .map((line) => /^\d+\.\s+(.*)$/.exec(line.trim())?.[1])
         .filter((line): line is string => !!line),
-      lab: /\[!WARNING\][\s\S]*?\/guides\/safe-mixing/.test(section.text)
+      checks: part(section.text, 'Check')
+        .split('\n')
+        .map((line) => /^-\s+(.*)$/.exec(line.trim())?.[1])
+        .filter((line): line is string => !!line),
+      lab,
+      ...(lab ? { safety: [...new Set(mixing.map((link) => link.section || 'habits'))] } : {})
     });
   }
   return units;
@@ -93,14 +125,29 @@ export const UNIT_KEYWORDS: Readonly<Record<string, readonly string[]>> = {
   'test-tiles-and-melt': ['test tile', 'melt test', 'melt fluidity', 'extrud'],
   'slurry-and-application': ['slurry', 'specific gravity', 'thickness', 'applica', 'floccul', 'deflocc', 'dipping'],
   'recipes-and-substitutes': ['substitut', 'gerstley', 'discontinu', 'hansen', '5x20', '5 x 20', 'recipe origin'],
-  'special-surfaces': ['shino', 'crater', 'oil spot', 'oilspot', 'rust', 'sculptural', 'crawl'],
+  'special-surfaces': ['shino', 'crater', 'oil spot', 'oilspot', 'rust', 'sculptural'],
   'raw-materials': ['geology', 'rock', 'mineral', 'raw material', 'feldspar'],
   clay: ['clay', 'slip', 'clay body', 'nerikomi', 'neriage'],
-  firing: ['firing', 'kiln', 'reduction', 'oxidation', 'cone', 'fire']
+  firing: ['firing', 'kiln', 'reduction', 'oxidation']
 };
 
 const plainTopic = (text: string): string =>
   text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/\s+/g, ' ').trim();
+
+const escaped = (text: string): string => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/** Whether the words appear in the text as whole words, not inside a longer one. */
+const hasWords = (text: string, words: string): boolean =>
+  new RegExp(`(^|[^\\p{L}\\p{N}])${escaped(words)}($|[^\\p{L}\\p{N}])`, 'u').test(text);
+
+/** A unit by its id, its title or its number ("5", "unit 5"), with accents and case ignored. */
+const exactUnit = (asked: string, units: CourseUnit[]): CourseUnit | undefined => {
+  const number = /^(?:unit\s*)?(\d+)$/.exec(asked)?.[1];
+  return units.find(
+    (unit) =>
+      unit.id === asked || plainTopic(unit.title) === asked || (number !== undefined && unit.number === Number(number))
+  );
+};
 
 /**
  * The course unit a free topic ("why does my glaze craze?", "line blends", "unit 3") is about, or undefined
@@ -111,19 +158,15 @@ const plainTopic = (text: string): string =>
 export const matchTopic = (topic: string, units: CourseUnit[] = courseUnits()): CourseUnit | undefined => {
   const asked = plainTopic(topic);
   if (!asked) return undefined;
-  const number = /^(?:unit\s*)?(\d+)$/.exec(asked)?.[1];
-  const exact = units.find(
-    (unit) =>
-      unit.id === asked || plainTopic(unit.title) === asked || (number !== undefined && unit.number === Number(number))
-  );
+  const exact = exactUnit(asked, units);
   if (exact) return exact;
-  const titled = units.find((unit) => asked.includes(plainTopic(unit.title)));
+  const titled = units.find((unit) => hasWords(asked, plainTopic(unit.title)));
   if (titled) return titled;
   let best: CourseUnit | undefined;
   let bestScore = 0;
   for (const unit of units) {
     const score = (UNIT_KEYWORDS[unit.id] ?? []).filter((word) =>
-      new RegExp(`(^|[^\\p{L}\\p{N}])${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'u').test(asked)
+      new RegExp(`(^|[^\\p{L}\\p{N}])${escaped(word)}`, 'u').test(asked)
     ).length;
     if (score > bestScore) {
       best = unit;
@@ -133,9 +176,6 @@ export const matchTopic = (topic: string, units: CourseUnit[] = courseUnits()): 
   return best;
 };
 
-/** A unit by its id ("blending") or number ("5", "unit 5"); undefined for any other. */
-export const findUnit = (asked: string): CourseUnit | undefined => {
-  const wanted = asked.trim().toLowerCase();
-  const number = /^(?:unit\s*)?(\d+)$/.exec(wanted)?.[1];
-  return courseUnits().find((unit) => unit.id === wanted || (number !== undefined && unit.number === Number(number)));
-};
+/** A unit by its id ("blending"), title ("The unity formula") or number ("5", "unit 5"); undefined for any other. */
+export const findUnit = (asked: string, units: CourseUnit[] = courseUnits()): CourseUnit | undefined =>
+  exactUnit(plainTopic(asked), units);

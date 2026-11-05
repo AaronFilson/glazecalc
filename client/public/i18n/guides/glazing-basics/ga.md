@@ -5,18 +5,18 @@ lead: Cad as a ndéantar glónra, conas a iompaíonn an áith ina ghloine é, ag
 
 ## Cad is glónra ann {#what-a-glaze-is}
 
-Brat tanaí gloine atá táite le pota is ea **glónra**{{en: glaze}}. Tugann Glazy, an bunachar oscailte d’oidis ghlónra, “foirmle gloine atá tiúnta le leá agus le táthú ar chré ag teochtaí áirithe” air. Cuirtear ar an bpota é mar shraith púdair, agus leánn sé san áith ina bhrat gloiní a shéalaíonn an chré, sa chaoi gur lú an seans go sceithfidh an pota, go smálóidh sé nó go gcaithfear é. Ag buaicteocht na bácála, imoibríonn an leátán leis an gcré freisin, agus is minic a chruthaíonn sé sraith eatarthu a ghreamaíonn an glónra go daingean. Ar chré-earraí{{en: earthenware}}, suíonn an glónra ar an mbarr mar shraith ar leith; ar earraí cruachré{{en: stoneware}}, leánn sé isteach sa chré-ábhar{{en: body}}.
+Is éard is **glónra**{{en: glaze}} ann ná brat tanaí gloine atá comhleáite le pota. Tugann Glazy, an bunachar oscailte d’oidis ghlónra, “foirmle gloine atá tiúnta chun leá agus comhleá ar chré ag teochtaí áirithe” air. Cuirtear air é mar shraith púdair agus leánn sé san áith ina bhrat gloiniúil a shéalaíonn an chré, ionas gur lú an seans go ligfidh an pota uisce tríd, go smálfaidh sé nó go gcaithfear é. Ag barr na bácála imoibríonn an leátán leis an gcré freisin, agus is minic a dhéanann sé sraith eatarthu a ghreamaíonn an glónra go daingean. Ar chré-earraí{{en: earthenware}}, a bhácáiltear níos fuaire, bíonn an tsraith seo tanaí agus fanann an glónra ar barr den chuid is mó. Ar earraí cruachré{{en: stoneware}} agus ar phoirceallán, a bhácáiltear níos teo, bíonn an tsraith níos tiubha agus beireann an glónra greim níos daingne ar an gcré. Fanann an glónra ina ghloine, áfach: ní éiríonn sé ina chuid den chré.
 
-Liostaíonn oideas amhábhair, mar shampla iathchloch{{en: feldspar}}, bánlí{{en: whiting}} agus caoilín{{en: kaolin}}. San áith, imíonn cuid de gach ceann acu mar ghás (uisce nó dé-ocsaíd charbóin) agus déantar **ocsaídí** den chuid eile: comhdhúile ina bhfuil dúil agus ocsaigin, mar shampla silice{{en: silica}} (SiO₂) nó ocsaíd chailciam (CaO). Is as ocsaídí atá an ghloine bhácáilte déanta, agus mar sin is de réir a n-ocsaídí a dhéanann potadóirí cur síos ar ghlónra. Bíonn ceann de thrí ról ag gach ocsaíd.
+Liostaíonn oideas amhábhair, mar iathchloch{{en: feldspar}}, bánlí{{en: whiting}} agus caoilín{{en: kaolin}}. San áith, imíonn cuid de gach ceann mar ghás (uisce nó dé-ocsaíd charbóin) agus déantar **ocsaídí** den chuid eile: comhdhúile d’eilimint le hocsaigin, mar shilice (SiO₂) nó ocsaíd chailciam (CaO). Is as ocsaídí atá an ghloine bhácáilte déanta, mar sin is leo a chuireann potadóirí síos ar ghlónra. Déanann gach ocsaíd ceann de thrí jab.
 
-- Is í an **tsilice** (SiO₂) an **foirmeoir gloine**{{en: glass former}}: tógann sí an ghloine. Leánn silice ghlan os cionn {{3100 °F; 1700 °C}}, i bhfad níos teo ná mar a théann áith photaireachta, agus de ghnáth bíonn glónra a bhfuil mórán silice ann níos buanfasaí.
-- Íslíonn **floscanna**{{en: fluxes}} an leáphointe go teocht is féidir le háith a bhaint amach. Is iad na **hocsaídí alcaileacha**, a scríobhtar mar **R₂O**, ocsaídí sóidiam, potaisiam agus litiam (Na₂O, K₂O, Li₂O); oibríonn siad ag cón{{en: cone}} 06 agus ag cóin níos teo, sa mheánbhácáil agus san ardbhácáil freisin. Is iad na **hocsaídí cré-alcaileacha**, a scríobhtar mar **RO**, ocsaídí cailciam, maignéisiam, bairiam agus strointiam (CaO, MgO, BaO, SrO), agus cuirtear ocsaíd since (ZnO) sa ghrúpa céanna leo; is fearr a oibríonn siad ó chón 5 go cón 10. Seasann an R d’aon mhiotal sa ghrúpa.
-- Is é an **t-alúmana** (Al₂O₃) an **cobhsaitheoir**{{en: stabilizer}}. Déanann sé an leátán níos righne sa chaoi go bhfanann sé ar bhallaí ingearacha, agus déanann sé an glónra níos crua agus níos buanfasaí. Rabhadh Glazy: le róbheagán alúmana “seans go rithfidh do ghlónra; is féidir leis an iomarca an leátán a dhéanamh chomh righin go mbeidh sé neamhlonrach”. Is ón gcré agus ón iathchloch a thagann an chuid is mó den alúmana.
+- Is í an **tsilice**{{en: silica}} (SiO₂) an **foirmeoir gloine**{{en: glass former}}: tógann sí an ghloine. Leánn silice ghlan os cionn {{3100 °F; 1700 °C}}, i bhfad níos teo ná áith photaireachta, agus de ghnáth is buanfasaí glónra a bhfuil mórán silice ann.
+- Íslíonn na **floscanna**{{en: fluxes}} an leáphointe go teocht is féidir le háith a bhaint amach. Is iad na **halcailí**, scríofa **R₂O**, ocsaídí sóidiam, photaisiam agus litiam (Na₂O, K₂O, Li₂O); oibríonn siad ó chón{{en: cone}} 06 suas trí mheánbhácáil agus ardbhácáil. Is iad na **hocsaídí cré-alcaileacha**, scríofa **RO**, ocsaídí cailciam, maignéisiam, bairiam agus strointiam (CaO, MgO, BaO, SrO), agus ocsaíd since (ZnO) curtha leo sa ghrúpa; is fearr a oibríonn siad ó chón 5 go cón 10. Seasann an R d’aon mhiotal sa teaghlach.
+- Is é an **t-alúmana** (Al₂O₃) an **cobhsaitheoir**{{en: stabilizer}}. Déanann sé an leátán níos righne ionas go bhfanann sé ar bhallaí ingearacha, agus cuireann sé cruas agus buanfas leis. Rabhadh Glazy: le ró-bheagán alúmana “d’fhéadfadh do ghlónra rith; is féidir le barraíocht an leátán a dhéanamh righin agus neamhlonrach”. Is ó chré agus ó iathchloch is mó a thagann alúmana.
 
-Doiléiríonn an **bórón** (B₂O₃) an teorainn. Rangaíonn ceimiceoirí é mar fhoirmeoir gloine, ach ag teochtaí stiúideo gníomhaíonn sé mar fhlosc, agus caitheann potadóirí leis mar fhlosc. Tá sé ríthábhachtach ag cón 5–6 agus níl gá leis san ardbhácáil. (Mínítear na cóin thíos: is leo a ainmníonn potadóirí bácáil.)
+Déanann an **bórón** (B₂O₃) an líne doiléir. Aicmíonn ceimiceoirí é mar fhoirmeoir gloine, ach ag teochtaí stiúideo gníomhaíonn sé mar fhlosc, agus caitheann potadóirí leis mar fhlosc. Is príomhfhlosc é ag ísealbhácáil agus ag meánbhácáil: dá fhuaire an bhácáil, is ea is mó bóróin a theastaíonn ó ghlónra. Ag cón 10 de ghnáth ní theastaíonn sé. (Mínítear na cóin, an bealach a ainmníonn potadóirí bácáil, thíos.)
 
 > [!NOTE]
-> Bealach amháin le cuimhneamh air: is í an tsilice an ghloine, ligeann na floscanna di leá ag teocht is féidir le d’áith a bhaint amach, agus déanann an t-alúmana níos tiubha í sa chaoi go bhfanann sí san áit ar chuir tú í.
+> Bealach amháin chun é a choinneáil i gcuimhne: is í an tsilice an ghloine, ligeann na floscanna di leá ag teocht is féidir le d’áith a bhaint amach, agus déanann an t-alúmana níos tiubha í ionas go bhfanann sí san áit a gcuireann tú í.
 
 ## Cré, bratanna agus an dá bhácáil {#clay-and-firings}
 
@@ -24,344 +24,361 @@ Doiléiríonn an **bórón** (B₂O₃) an teorainn. Rangaíonn ceimiceoirí é 
 
 Is é an **cré-ábhar**{{en: clay body}} an chré as a ndéantar pota. Tá trí phríomhchineál ann.
 
-- **Cré-earraí**{{en: earthenware}}: cré-ábhar ísealbhácála, thart ar chón{{en: cone}} 06–02, a fhanann póiriúil. Is minic dearg nó buídhonn é, agus bíonn glónra{{en: glaze}} ag teastáil uaidh chun uisce a choinneáil.
-- **Cruachré**{{en: stoneware}}: cré-ábhar meánbhácála nó ardbhácála, thart ar chón 5–10, a éiríonn gloiní, nó beagnach gloiní.
-- **Poirceallán**: cré-ábhar bán ardbhácála, saibhir i gcaoilín{{en: kaolin}}, tréshoilseach go minic.
+- **Cré-earraí**{{en: earthenware}}: cré-ábhar ísealbhácála, thart ar chón{{en: cone}} 06–02, atá póiriúil ag cóin ísle agus níos dlúithe de réir mar a bhácáiltear níos teo é. Is minic é dearg nó buí-donn, agus teastaíonn glónra{{en: glaze}} uaidh chun uisce a choinneáil.
+- **Earraí cruachré**{{en: stoneware}}: cré-ábhar meánbhácála nó ardbhácála, thart ar chón 5–10, a éiríonn gloiní nó beagnach gloiní.
+- **Poirceallán**: cré-ábhar bán atá saibhir i gcaoilín, tréshoilseach go minic. Ardbhácáil a bhíonn i bhformhór an phoircealláin, ach tá poircealláin do chón 6 ann freisin.
 
-Ciallaíonn **gloiní** cosúil le gloine agus neamhphóiriúil; is éard is **gloiniú** ann cré-ábhar ag éirí amhlaidh le linn na bácála. Is minic a tharraingíonn potadóirí sa Ríocht Aontaithe an líne de réir teochta ina ionad sin: bácáiltear cruachré os cionn {{2192 °F; 1200 °C}}, agus cré-earraí faoi bhun na teochta sin. Titeann an mheánbhácáil, cón 5–6, díreach ar an dá thaobh den líne sin.
+Ciallaíonn **gloiní**{{en: vitreous}} cosúil le gloine agus neamhphóiriúil; is é **gloiniú**{{en: vitrification}} an cré-ábhar ag éirí mar sin le linn bácála. Is minic a tharraingíonn potadóirí sa Ríocht Aontaithe an líne de réir teochta ina ionad sin: bácáiltear earraí cruachré os cionn {{2192 °F; 1200 °C}}, cré-earraí faoina bhun. Titeann meánbhácáil, cón 5–6, díreach ar an dá thaobh den líne sin.
 
 ### Bratanna agus triomú
 
-Is éard is **sliopa** ann cré ar fuaidreán in uisce, a úsáidtear le haghaidh teilgin, ceangail nó maisithe. Brat cosúil le sliopa is ea **engobe**, daite go minic, ina bhfuil níos mó ábhar nach cré iad. Is éard is **fo-ghlónra** ann sliopa daite nó maisiú ocsaíde, clúdaithe le glónra glé de ghnáth.
+Is éard is **sliopa** ann ná cré ar fuaidreán in uisce, le haghaidh teilgin, ceangail nó maisiúcháin. Is éard is **engobe** ann ná brat cosúil le sliopa, daite go minic, ina bhfuil níos mó ábhar nach cré iad. Is éard is **fo-ghlónra** ann ná sliopa daite nó maisiú ocsaíde, clúdaithe le glónra glé de ghnáth.
 
-**Amh-earraí**{{en: greenware}} a thugtar ar earraí neamhbhácáilte (ní réitíonn na foinsí le chéile faoi cé acu a chlúdaíonn an focal gach earra neamhbhácáilte nó earraí tirime amháin). De réir mar a thriomaíonn siad, éiríonn siad **leatharchrua**, righin ach beagán tais, an chéim chun iad a bhearradh agus lámha a chur orthu; ansin **cnámhthirim**, gan aon uisce saor fágtha iontu, an-sobhriste agus réidh le bácáil.
+Is **amh-earraí**{{en: greenware}} iad gréithe neamhbhácáilte (ní réitíonn na foinsí faoi cé acu a chlúdaíonn an focal gach gréithe neamhbhácáilte nó gréithe tirime amháin). De réir mar a thriomaíonn siad éiríonn siad **leatharchrua**, righin ach beagán tais, an chéim le haghaidh bearrtha agus cluas; ansin **cnámhthirim**, gan aon uisce saor fágtha iontu, an-leochaileach agus réidh le bácáil.
 
 ### An dá bhácáil
 
-Is í an **bhrioscbhácáil**{{en: bisque}} (sa Ríocht Aontaithe: **biscuit**) an chéad bhácáil, agus an ceann is fuaire den dá cheann, cón 08–04 de ghnáth (cón 06–04 is minice), thart ar {{1728–1945 °F; 942–1063 °C}}. Fágann sí na hearraí láidir ach póiriúil. Molann Digitalfire, suíomh tagartha faoi ghlónraí, póiriúlacht os cionn 15% go ginearálta, sa chaoi go dtarraingíonn na brioscghréithe uisce as an nglónra agus é á chur orthu. Fágann brioscbhácáil bhog (cón 08–06) na hearraí níos póiriúla; fágann brioscbhácáil chrua (cón 04 go minic) níos láidre iad, ach ní ghlacann siad an glónra chomh héasca.
+Is í an chéad bhácáil, níos ísle, an **bhrioscbhácáil**{{en: bisque}} (sa Ríocht Aontaithe: **biscuit**), cón 08–04 de ghnáth (06–04 is minice), thart ar {{1728–1945 °F; 942–1063 °C}}. Fágann sí gréithe láidir ach póiriúil. Molann Digitalfire, suíomh tagartha glónraí, níos mó ná 15% póiriúlachta go ginearálta, ionas go dtarraingíonn na brioscghréithe an t-uisce as an nglónra de réir mar a chuirtear air é. Bíonn brioscbhácáil bhog (cón 08–06) níos póiriúla; bíonn brioscbhácáil chrua (cón 04 go minic) níos láidre ach glacann sí glónra níos deacra.
 
 Table: Conas a athraíonn an bhrioscbhácáil an glónrú (Digitalfire)
 Label: Conas a athraíonn an bhrioscbhácáil an glónrú
 
-| Brioscghréithe                                                | Cad a tharlaíonn                                                                                    |
-| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Tearcbhácáilte, an-ionsúiteach                                | Téann an glónra air róthiubh, ansin scoilteann sé agus snámhann{{en: crawls}} sé                    |
-| Róbhácáilte, dlúth                                            | Tógann an tumadh agus an triomú níos mó ama                                                         |
-| Bácáilte níos teo, nó coinnithe níos faide ag an mbuaicteocht | Dóitear níos mó gáis anois, mar sin is lú gáis a bhíonn ag boilgearnach tríd an nglónra níos déanaí |
+| Brioscbhácáil                                          | Cad a tharlaíonn                                                                      |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Tearcbhácáilte, an-súiteach                            | Téann an glónra air róthiubh, ansin scoilteann sé agus snámhann sé                    |
+| Róbhácáilte, dlúth                                     | Tógann an tumadh agus an triomú níos faide                                            |
+| Bácáilte níos teo, nó coinnithe níos faide ag an mbarr | Dónn níos mó gáis amach anois, mar sin is lú a bhoilgeann tríd an nglónra níos déanaí |
 
-Déanann Potclays, soláthraí sa Ríocht Aontaithe, cur síos ar bhrioscbhácáil go dtí thart ar {{1000 °C; 1832 °F}}, thart ar chón 06. Ag léamh na bhfoinsí seo le chéile, molaimid cón 06–04 don chéad bhrioscbhácáil: {{1828–1945 °F; 998–1063 °C}} ag ráta meánach Orton.
+Cuireann Potclays, soláthraí sa Ríocht Aontaithe, síos ar bhrioscbhácáil go dtí thart ar {{1000 °C; 1832 °F}}, thart ar chón 06. Ag léamh na bhfoinsí seo le chéile, molaimid cón 06–04 don chéad bhrioscbhácáil: {{1828–1945 °F; 998–1063 °C}} ag ráta meánach Orton.
 
-Leánn an **bhácáil glónra**{{en: glaze firing}} (d’fhéadfadh potadóirí sa Bhreatain **glost** firing a rá) an glónra agus, i gcás cruachré, lánbhácálann sí an chré freisin. San **aonbhácáil**{{en: once-firing}}, glónraítear earraí neamhbhácáilte agus ní bhácáiltear iad ach uair amháin. Tuairiscíonn Digitalfire cás ó líne táirgthe inar shnámh an glónra ar bhéil amh-earraí glónraithe go dtí gur leigheas brioscbhácáil é, mar sin tosaigh le dhá bhácáil. Tugann an treoirleabhar [Bácáil in áith shimplí](/guides/firing) cláir bhácála don dá cheann.
+Leánn an **bhácáil glónra**{{en: glaze firing}} (féadfaidh potadóirí sa Bhreatain **glost** firing a rá) an glónra agus, i gcás earraí cruachré, lánbhácálann sí an chré freisin. San **aonbhácáil**{{en: once-firing}} glónraítear gréithe neamhbhácáilte agus bácáiltear iad uair amháin. Tuairiscíonn Digitalfire cás táirgthe inar shnámh glónra ar bhéil amh-earraí glónraithe go dtí gur leigheas brioscbhácáil é, mar sin tosaigh le dhá bhácáil. Tugann an treoirleabhar [Bácáil in áith shimplí](/guides/firing) cláir bhácála don dá cheann.
 
 ## Cóin agus obair teasa {#cones}
 
-Ainmníonn potadóirí bácáil de réir **cóin**{{en: cone}}: pirimid chaol cheirmeach a lúbann nuair a fhaigheann sí méid áirithe teasa. Seo mar a deir Orton, a dhéanann iad: “Ní teocht amháin a thomhaiseann cóin. Tomhaiseann siad obair teasa, éifeacht an ama agus na teochta le chéile.”
+Ainmníonn potadóirí bácáil de réir **cóin**{{en: cone}}: piriméad caol ceirmeach a lúbann nuair a fhaigheann sé méid socraithe teasa. Tugann Orton, a dhéanann iad, táscairí ama agus teochta (obair teasa) ar chóin: léiríonn siad éifeacht an ama agus na teochta le chéile, ní an teocht amháin.
 
-Is í an **obair teasa**{{en: heatwork}} is cúis leis seo: freagraíonn an glónra{{en: glaze}}, an chré agus an cón go léir don fhad a bhíonn siad te chomh maith le cé chomh te is atá siad. Lúbann bácáil mhall cón ag teocht níos ísle, agus bácáil thapa ag teocht níos airde. I dtábla Orton, lúbann cón 6 ag {{2165 °F; 1185 °C}} nuair a bhíonn an bhácáil ag ardú {{27 °F; 15 °C}} san uair ag a deireadh, ag {{2232 °F; 1222 °C}} ag {{108 °F; 60 °C}} san uair, agus ag {{2269 °F; 1243 °C}} ag {{270 °F; 150 °C}} san uair; is é sin an ráta thar an {{180 °F; 100 °C}} deiridh. Tá cón críochnaithe nuair atá a bharr lúbtha trí 90°, rud ar a dtugann Orton suíomh 5 a chlog.
+Is í an **obair teasa**{{en: heatwork}} an chúis: freagraíonn glónra, cré agus cón araon don fhad a bhíonn siad te chomh maith le cé chomh te. Lúbann bácáil mhall cón ag teocht níos ísle, bácáil thapa ag teocht níos airde. Ar thábla Orton lúbann cón 6 ag {{2165 °F; 1185 °C}} nuair a chríochnaíonn an bhácáil ag ardú {{27 °F; 15 °C}} san uair, ag {{2232 °F; 1222 °C}} ag {{108 °F; 60 °C}} san uair, agus ag {{2269 °F; 1243 °C}} ag {{270 °F; 150 °C}} san uair, an ráta á thomhas thar an {{180 °F; 100 °C}} deireanach. Bíonn cón críochnaithe nuair a bhíonn a bharr lúbtha trí 90°. Is minic a thugann potadóirí suíomh 5 a chlog air seo.
 
-Téann uimhreacha na gcón ó 022 go 42. Léiríonn nialas chun tosaigh an tsraith is fuaire, ina mbíonn uimhir níos mó níos fuaire: tá cón 06 níos fuaire ná cón 04, agus cón 01 níos fuaire ná cón 1.
+Téann uimhreacha na gcón ó 022 go 42. Marcálann nialas chun tosaigh an tsraith níos fuaire, ina bhfuil uimhir níos mó níos fuaire: tá cón 06 níos fuaire ná cón 04, agus cón 01 níos fuaire ná cón 1.
 
 Table: Raonta bácála: cóin fhéintacaithe Orton ag {{108 °F; 60 °C}} san uair
 Label: Raonta bácála
 
-| Raon         | Cóin  |        °F |        °C | Úsáid                                                              |
-| ------------ | ----- | --------: | --------: | ------------------------------------------------------------------ |
-| Ísealbhácáil | 06–04 | 1828–1945 |  998–1063 | Glónraí cré-earraí{{en: earthenware}}; brioscbhácáil{{en: bisque}} |
-| Meánbhácáil  | 5–6   | 2167–2232 | 1186–1222 | Cruachré{{en: stoneware}} agus poirceallán                         |
-| Ardbhácáil   | 9–10  | 2300–2345 | 1260–1285 | Cruachré agus poirceallán                                          |
+| Raon         | Cóin  |          °F |          °C | Úsáid                             |
+| ------------ | ----- | ----------: | ----------: | --------------------------------- |
+| Ísealbhácáil | 06–04 | 1,828–1,945 |   998–1,063 | Glónraí cré-earraí; brioscbhácáil |
+| Meánbhácáil  | 5–6   | 2,167–2,232 | 1,186–1,222 | Earraí cruachré agus poirceallán  |
+| Ardbhácáil   | 9–10  | 2,300–2,345 | 1,260–1,285 | Earraí cruachré agus poirceallán  |
 
 > [!NOTE]
-> Ainmnigh agus cláraigh do bhácálacha de réir cóin, agus glac leis nach bhfuil sna teochtaí ach meastacháin. Taispeánann **cón fianaise**{{en: witness cone}} ar sheilf i measc na bpotaí, nó **paca cón**{{en: cone pack}} de thrí chón (cón treorach, cón bácála agus cón cosanta), an obair teasa a fuair do photaí i ndáiríre.
+> Ainmnigh agus ríomhchláraigh do bhácálacha de réir cóin, agus glac leis na teochtaí mar mheastacháin. Léiríonn **cón fianaise**{{en: witness cone}} ar sheilf i measc na bpotaí, nó **paca cón**{{en: cone pack}} de thrí cinn (cón treorach, cón bácála agus cón cosanta), an obair teasa a fuair do photaí i ndáiríre.
 
-Ní hionann na teochtaí a fhoilsítear i ngach áit. Tugann Glazy thart ar {{2336–2390 °F; 1280–1310 °C}} don ardbhácáil, cón 9–11, rud a fhreagraíonn do cholún tapa Orton, agus tuairiscíonn Digitalfire go sroicheann formhór na n-áitheanna cón 6 ag thart ar {{2200 °F; 1204 °C}}. Ár gcomhairle: úsáid figiúirí an ráta mheánaigh ó Orton, mar a dhéanann an treoirleabhar seo, cláraigh de réir cóin, agus lig do chón fianaise an cheist a réiteach.
+Bíonn teochtaí foilsithe éagsúil. Tugann Glazy ardbhácáil, cón 9–11, mar thart ar {{2336–2390 °F; 1280–1310 °C}}, a réitíonn le colún tapa Orton, agus tugann Digitalfire cón 6 mar thart ar {{2200 °F; 1204 °C}}. Ár gcomhairle: úsáid figiúirí ráta mheánaigh Orton, mar a dhéanann an treoirleabhar seo, ríomhchláraigh de réir cóin, agus lig do chón fianaise an cheist a shocrú.
 
-Lasmuigh de Mheiriceá Thuaidh, is minic a thugann soláthraithe °C seachas cón. D’fhorbair Hermann Seger an cón nua-aimseartha, a úsáideadh den chéad uair i mBeirlín sa bhliain 1886, agus bhí cóin dá cuid féin ag an Ríocht Aontaithe, cóin Staffordshire; níor cheart glacadh leis go bhfreagraíonn a n-uimhreacha d’uimhreacha Orton, agus níor aimsíomar aon tábla chun iad a thiontú. Tugann an treoirleabhar [Bácáil in áith shimplí](/guides/firing) tuilleadh sonraí faoi na cóin.
+Lasmuigh de Mheiriceá Thuaidh, is minic a thugann soláthraithe °C seachas cón. D’fhorbair Hermann Seger an cón nua-aimseartha, a úsáideadh den chéad uair i mBeirlín in 1886, agus bhí a cóin Staffordshire féin ag an Ríocht Aontaithe; níor cheart glacadh leis go réitíonn a n-uimhreacha le huimhreacha Orton, agus níor aimsíomar aon tábla chun iad a aistriú. Pléann an treoirleabhar [Bácáil in áith shimplí](/guides/firing) na cóin níos mine.
 
 ## Ó oideas go foirmle Seger {#unity-formula}
 
-Liostaíonn **oideas baisce** amhábhair de réir meáchain, scálaithe de ghnáth sa chaoi gurb é 100 iomlán an bhunghlónra. Cuirtear **breiseáin** (ábhair datha{{en: colorants}}, teimhneoirí agus oibreáin fhuaidreáin) anuas ar an 100, mar chéatadán den bhunghlónra de ghnáth. Chun a fheiceáil cad é an glónra{{en: glaze}} i ndáiríre, iompaíonn potadóirí an t-oideas ina **fhoirmle Seger**{{en: unity molecular formula}} (**UMF**), a ainmníodh as Hermann Seger, an chéad duine a d’úsáid a leagan amach i dtrí cholún.
+Liostaíonn **oideas baisce**{{en: batch recipe}} amhábhair de réir meáchain, scálaithe de ghnáth ionas go mbíonn an bunghlónra 100 san iomlán. Téann **breiseáin**{{en: additives}} (ábhair datha, teimhneoirí agus oibreáin fhuaidreáin) anuas ar an 100, mar chéatadán den bhunghlónra de ghnáth. Chun a fheiceáil cad é an glónra, iompaíonn potadóirí an t-oideas ina **fhoirmle Seger**{{en: unity molecular formula}} (**UMF**, a ainmníodh as Hermann Seger, a d’úsáid a leagan amach trí cholún den chéad uair).
 
 Table: Ó oideas go foirmle Seger: sampla oibrithe Glazy
 Label: Ó oideas go foirmle Seger
 
-| Céim               | Cad a tharlaíonn                                                                                                                                               | Sa sampla                                                                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1. Oideas baisce   | Amhábhair de réir meáchain, scálaithe go 100                                                                                                                   | Iathchloch{{en: feldspar}} 40%, i measc ábhar eile                                                                                                     |
-| 2. Anailís ocsaíde | Cosúil le lipéad cothaithe: suimítear ocsaídí gach ábhair mar chéatadán meáchain, agus fágtar na gáis as                                                       | Is silice 64.8% den iathchloch, mar sin tugann an 40% iathchloiche 25.9% SiO₂. Tá 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O agus 12.5% CaO sa ghlónra bácáilte |
-| 3. Mólanna         | Déantar **mólanna** de na meáchain, comhaireamh móilíní, mar “is féidir le graim a bheith míthreorach, mar go bhfuil ocsaídí áirithe níos troime ná cinn eile” | Is mól amháin é 60.1 g de SiO₂, mar sin is thart ar 1.12 mól é 67.4 g                                                                                  |
-| 4. Foirmle Seger   | Roinntear gach rud ar iomlán na bhfloscanna, sa chaoi gurb ionann iomlán na bhfloscanna agus 1                                                                 | Is é 0.303 iomlán na bhfloscanna; tar éis na roinnte, faightear K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                              |
+| Céim               | Cad a tharlaíonn                                                                                                                                              | Sa sampla                                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Oideas baisce   | Amhábhair de réir meáchain, scálaithe go 100                                                                                                                  | Iathchloch 40%, i measc ábhar eile                                                                                                  |
+| 2. Anailís ocsaíde | Cosúil le lipéad cothaithe: suimítear ocsaídí gach ábhair mar chéatadán meáchain, agus fágtar na gáis ar lár                                                  | Is silice 64.8% den iathchloch, mar sin tugann a 40% 25.9% SiO₂. Tá an glónra bácáilte 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Mólanna         | Iompaítear meáchain ina **mólanna**, comhaireamh móilíní, mar “Is féidir le graim a bheith míthreorach mar go bhfuil ocsaídí áirithe níos troime ná a chéile” | Is mól amháin é 60.1 g SiO₂, mar sin is ionann 67.4 g agus thart ar 1.12 mól                                                        |
+| 4. Foirmle Seger   | Roinntear gach rud ar iomlán na bhfloscanna, ionas gurb ionann iomlán na bhfloscanna agus 1                                                                   | Is é 0.303 iomlán na bhfloscanna; tugann an roinnt K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                        |
 
-Déanann [leathanach an oidis](/recipe) san aip Glazecalc na ceithre chéim ar fad agus tú ag clóscríobh, agus taispeánann sé an toradh i dtrí cholún: floscanna{{en: fluxes}} (R₂O agus RO) arb ionann a n-iomlán agus 1; cobhsaitheoirí{{en: stabilizers}} (R₂O₃: alúmana, agus is minic a chuirtear bórón anseo); agus foirmeoirí gloine{{en: glass formers}} (RO₂: silice{{en: silica}}). “Níl san aontú ach uirlis scálaithe,” a deir Glazy: dhá oideas a dhéantar as ábhair éagsúla ach a bhfuil an fhoirmle Seger chéanna acu, “iompraíonn siad iad féin beagnach mar an gcéanna nuair a bhíonn siad bácáilte”. Mar sin is slat tomhais choiteann é an 1, ní méid a mheánn tú. Deir Digitalfire freisin nach n-oibríonn an modh “chomh maith ag teochtaí níos ísle”, áit nach flosc simplí é an bórón, agus go bhfuil foirmlí Seger “comparáideach, agus gur fearr breathnú orthu i gcomhthéacs”. Cuireann an cnaipe **Cuir i gcomparáid** foirmlí dhá oideas taobh le taobh, ocsaíd ar ocsaíd.
+Déanann [leathanach oidis](/recipe) Glazecalc na ceithre chéim de réir mar a chlóscríobhann tú, agus taispeánann sé an toradh i dtrí cholún: floscanna{{en: fluxes}} (R₂O agus RO) arb ionann a n-iomlán agus 1; cobhsaitheoirí (R₂O₃: alúmana, agus bórón curtha anseo go minic); agus foirmeoirí gloine (RO₂: silice). “Níl san aontú ach uirlis scálaithe,” a deir Glazy: “iompraíonn” dhá oideas déanta as ábhair dhifriúla ach leis an bhfoirmle Seger chéanna iad féin “beagnach mar an gcéanna tar éis bácála”. Mar sin is slat tomhais choiteann é an 1, ní méid a mheánn tú. Cuireann Digitalfire leis “nach n-oibríonn” an modh “chomh maith ag teochtaí níos ísle”, áit nach gnáthfhlosc é an bórón, agus go bhfuil foirmlí Seger “comparáideach agus gur fearr breathnú orthu i gcomhthéacs”. Cuireann an ghné **Cuir i gcomparáid** foirmlí dhá oideas taobh le taobh, ocsaíd ar ocsaíd.
 
 ### An cóimheas silice le halúmana
 
-Is é an **cóimheas silice le halúmana**{{en: silica to alumina ratio}} an uimhir aonair is úsáidí: an tsilice roinnte ar an alúmana. Sa sampla, is thart ar 9 é 3.70 ÷ 0.41.
+Is é an **cóimheas silice le halúmana**{{en: silica to alumina ratio}} an uimhir aonair is úsáidí: an tsilice roinnte ar an alúmana. Sa sampla, is ionann 3.70 ÷ 0.41 agus thart ar 9.
 
-Table: Cad a thugann an cóimheas silice le halúmana le tuiscint (Glazy)
+Table: Cad a thugann an cóimheas silice le halúmana le fios (Glazy)
 Label: Cóimheas silice le halúmana
 
-|   Cóimheas | Léamh Glazy                                                       |
-| ---------: | ----------------------------------------------------------------- |
-| Thart ar 9 | Tugann sé leátán lonrach le tuiscint, má bhíonn dóthain teasa ann |
-|        5–7 | Tipiciúil do mhórán glónraí cobhsaí cruachré{{en: stoneware}}     |
-|        3–5 | D’fhéadfadh sé a bheith neamhlonrach nó tearcbhácáilte            |
+|   Cóimheas | Léamh Glazy                                            |
+| ---------: | ------------------------------------------------------ |
+| Thart ar 9 | Tugann sé leátán lonrach le fios, le dóthain teasa     |
+|        5–7 | Tipiciúil de go leor glónraí cobhsaí cruachré          |
+|        3–5 | D’fhéadfadh sé a bheith neamhlonrach nó tearcbhácáilte |
 
-Ní thuarann cóimheas 5–7 ina aonar loinnir ná dromchla neamhlonrach: bogann na floscanna, an bórón agus an cón{{en: cone}} an líne. Tugann Glazy 0.2 R₂O le 0.8 RO, go dtí 0.3 R₂O le 0.7 RO, mar chothromaíocht thipiciúil na bhfloscanna i nglónraí cobhsaí. Déanann níos mó alcaile an leátán níos sreabhaí agus ardaíonn sé a fhorbairt theirmeach{{en: expansion}}, agus mar sin an baol snáithlíonraithe{{en: crazing}}.
+Ní deir Glazy cén cón lena mbaineann na figiúirí seo. Léigh iad mar threoir gharbh do ghlónraí cruachré, thart ar chón 6–10. Deir Digitalfire gur dócha go mbeidh cóimheas os cionn thart ar 8 lonrach, ach gur féidir le glónra ina bhfuil bórón a bheith lonrach ag 8 nó níos ísle, agus glónra ísealbhácála fiú ag 6. Ní thuarann cóimheas 5–7 lonrach ná neamhlonrach as féin: bogann na floscanna, an bórón agus an cón an líne. Tugann Glazy cothromaíocht tipiciúil na bhfloscanna do ghlónraí cobhsaí mar 0.2 R₂O le 0.8 RO, suas go 0.3 R₂O le 0.7 RO. Déanann níos mó alcaile an leátán níos sreabhaí agus ardaíonn sé a fhorbairt theirmeach, agus mar sin an baol snáithlíonraithe.
 
 ### Cailliúint ar adhaint
 
-Is í an **chailliúint ar adhaint**{{en: loss on ignition}} (**LOI**) an meáchan a chailleann ábhar san áith nuair a imíonn uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar as mar ghás. Níl aon LOI ag glónra bácáilte, mar sin fágann an fhoirmle Seger as an áireamh í.
+Is í **cailliúint ar adhaint**{{en: loss on ignition}} (**LOI**) an meáchan a chailleann ábhar san áith de réir mar a imíonn uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar mar ghás. Níl aon LOI ag glónra bácáilte, mar sin fágann an fhoirmle Seger ar lár é.
 
-Table: Cailliúint ar adhaint thipiciúil (Digitalfire)
+Table: Cailliúint thipiciúil ar adhaint (Digitalfire)
 Label: Cailliúint ar adhaint
 
 | Ábhar                                 | LOI tipiciúil                                                                                            |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Bánlí (carbónáit chailciam), dolaimít | Os cionn 40%, dé-ocsaíd charbóin den chuid is mó: scaoileann 100 g de charbónáit chailciam thart ar 45 g |
+| Bánlí (carbónáit chailciam), dolaimít | Os cionn 40%, dé-ocsaíd charbóin den chuid is mó: scaoileann 100 g de charbónáit chailciam thart ar 44 g |
 | Carbónáit litiam                      | Thart ar 60%                                                                                             |
 | Carbónáit bhairiam, Gerstley Borate   | Os cionn 20%                                                                                             |
-| Caoilín{{en: kaolin}}                 | Thart ar 12%, uisce atá ceangailte ina chriostail den chuid is mó                                        |
+| Caoilín                               | Thart ar 12–14%, uisce atá ceangailte ina chriostail den chuid is mó                                     |
 | Iathchlocha                           | Faoi bhun 1%                                                                                             |
 
-Gás a imíonn tar éis don ghlónra tosú ag leá, caithfidh sé boilgearnach tríd, agus cruthaíonn sé, i bhfocail Digitalfire, “boilgeoga, cloig, poill bhioráin, snámh”. Coinníonn talc air ag tabhairt gáis uaidh go dtí thart ar {{1650 °F; 899 °C}}. Cabhraíonn friotanna{{en: frits}}, ábhair **chailcínithe** (a téadh roimh ré chun a ngáis a ruaigeadh) agus athruithe ar an mbácáil go léir.
+Ní mór do ghás a imíonn tar éis don ghlónra tosú ag leá boilgearnach tríd, rud a chruthaíonn, i bhfocail Digitalfire, “boilgeoga, cloig, poill bhioráin, snámh”. I dtástáil de chuid Digitalfire, lean talc ag scaoileadh gáis go dtí thart ar {{1650 °F; 899 °C}}. Cabhraíonn friotanna, ábhair **chailcínithe**{{en: calcined}} (a téadh roimh ré chun a ngáis a dhíbirt) agus athruithe ar an mbácáil.
 
-Déanann leabhair níos sine an uimhríocht seo de láimh, le **meáchan móilíneach** (meáchan móil amháin d’ábhar nó d’ocsaíd) agus **meáchan coibhéiseach** (meáchan ábhair a thugann mól amháin d’ocsaíd). De réir ár n-uimhríochta féin, tugann thart ar 100 g de bhánlí{{en: whiting}} mól amháin, 56 g, d’ocsaíd chailciam. Láimhseálann áireamhán an dá rud.
+Déanann seanleabhair an uimhríocht seo de láimh, le **meáchan móilíneach**{{en: molecular weight}} (meáchan mól amháin d’ábhar nó d’ocsaíd) agus **meáchan coibhéiseach**{{en: equivalent weight}} (meáchan ábhair a sholáthraíonn mól amháin d’ocsaíd). De réir ár n-uimhríochta, soláthraíonn thart ar 100 g bánlí mól amháin, 56 g, d’ocsaíd chailciam. Láimhseálann áireamhán an dá cheann.
+
+## Teorainneacha agus cairt Stull {#stull-chart}
+
+Is éard is **cairt Stull** ann ná léarscáil de ghlónraí. Tá dhá ais aici, iad araon ón bhfoirmle Seger: silice (SiO₂) trasna an bhuin agus alúmana (Al₂O₃) suas an taobh. Is pointe amháin gach glónra. Tá an léarscáil roinnte ina limistéir, mar neamhlonrach, lonrach (glé), tearcbhácáilte agus snáithlíonraithe. Tarraingíonn [leathanach oidis](/recipe) Glazecalc do ghlónra{{en: glaze}} uirthi.
+
+::stull-chart
+
+Rinne R. T. Stull an chairt as tástálacha a d’fhoilsigh sé in 1912. Bhácáil sé iad ag thart ar chón{{en: cone}} 11, agus bhí na floscanna céanna i ngach tástáil: 0.3 potais (K₂O) agus 0.7 ocsaíd chailciam (CaO). Níor athraigh ach an tsilice agus an t-alúmana. Mar sin tá an chairt fíor do na glónraí sin ag an teas sin.
+
+Is dócha go bhfuil do ghlónra difriúil. Bogann bórón, floscanna eile agus cóin níos ísle na limistéir. In 2025 thástáil alt in Ceramics Monthly glónra do chón 6 a raibh bóráití mar fhlosc ann agus mórán iarainn. Chuir an chairt sna limistéir snáithlíonraithe, neamhlonrach agus tearcbhácáilte é. Déanta na fírinne bhí sé leáite go hiomlán, leathlonrach agus gan snáithlíonrú. Deir na húdair nach suíonn glónraí ina bhfuil bóráití go maith ar an gcairt. Mar sin úsáid na limistéir mar threoir, ní mar thuar.
+
+Is é limistéar **snáithlíonraithe**{{en: crazed}} an áit ar shnáithlíonraigh tástálacha Stull féin, ar a chré féin. Ní insíonn sé duit conas a oireann do ghlónra do do chré-ábhar. Braitheann an snáithlíonrú ar fhorbairt theirmeach{{en: thermal expansion}} an ghlónra agus na cré araon. Cabhraíonn figiúr forbartha Glazecalc leat glónraí a chur i gcomparáid, agus socraíonn fíorthástáil é: tástáil an uisce oighir sa roinn [Oiriúint ghlónra agus máchaillí](/guides/glazing-basics#fit-and-defects).
+
+Is uirlis dhifriúil iad **foirmlí teorann**{{en: limit formulas}} don cheist chéanna: raonta silice, alúmana agus floscanna do ghlónraí cobhsaí ag cón áirithe. Míníonn [Sábháilteacht bia](/guides/glazing-basics#food-safety) iad, agus cén fáth nach gcruthaíonn siad aon rud as féin.
 
 ## Friotanna agus amhábhair {#materials}
 
 ### Friotanna
 
-Gloine a dhéantar i monarcha is ea **friot**{{en: frit}}: mianraí a leáitear, a fhuaraítear go tobann in uisce agus a mheiltear. Nuair a dhéantar friot díobh, éiríonn ábhair intuaslagtha ar nós bóráis dothuaslagtha, cuirtear ocsaídí tocsaineacha ar nós luaidhe agus bairiam faoi ghlas i ngloine chobhsaí, faightear ábhar níos comhsheasmhaí ná mianraí nach ndearnadh friot díobh, agus ruaigtear gáis, mar sin bíonn glónraí{{en: glazes}} ina bhfuil friotanna “i bhfad níos saoire ó mháchailí” (Digitalfire). Leánn friotanna go luath freisin: bíonn friot sóide gníomhach ag cón{{en: cone}} 06, ach níl an iathchloch{{en: feldspar}} “ach ag tosú ag éirí bog ag cón 6”. Bíonn siad níos daoire, bíonn cré ag teastáil uathu chun fanacht ar fuaidreán (is é sampla Digitalfire 85% friot le 15% cré), agus bíonn siad “dothuaslagtha go teoiriciúil, ach i ndáiríre, ní bhíonn”.
+Is éard is **friot**{{en: frit}} ann ná gloine a dhéantar i monarcha: mianraí a leádh, a múchadh in uisce agus a meileadh. Déanann friochadh friotanna ábhair intuaslagtha mar bhórás dothuaslagtha, cuireann sé ocsaídí tocsaineacha mar luaidhe agus bairiam faoi ghlas i ngloine chobhsaí, tugann sé ábhar níos comhsheasmhaí ná mianraí amha, agus díbríonn sé gáis, mar sin bíonn glónraí a ndearnadh friot díobh “i bhfad níos saoire ó mháchaillí” (Digitalfire). Leánn friotanna go luath freisin: bíonn friot sóide gníomhach ag cón{{en: cone}} 06, cé nach mbíonn iathchloch “ach ag tosú ag bogadh ag cón 6”. Cosnaíonn siad níos mó, teastaíonn cré uathu chun fanacht ar fuaidreán (is é sampla Digitalfire 85% friot le 15% cré), agus bíonn siad “dothuaslagtha go teoiriciúil, ach i gcleachtas, níl”.
 
-I Meiriceá Thuaidh, ainmnítear friotanna de réir déantóra agus uimhreach: tá Ferro Frit 3134 (Vibrantz an t-ainm atá ar an gcomhlacht Ferro anois) i dtimpeall 22% d’oidis phoiblí Glazy. Is minicí a ainmníonn oidis ón Ríocht Aontaithe friotanna ginearálta, mar shampla friot bóráis caighdeánach.
+Ainmnítear friotanna Mheiriceá Thuaidh de réir déantóra agus uimhreach: tá Ferro Frit 3134 (Vibrantz is ainm do Ferro anois) ar cheann de na friotanna is mó a úsáidtear i Meiriceá Thuaidh. Is minice a ainmníonn oidis na Ríochta Aontaithe friotanna ginearálta, mar fhriot bóráis caighdeánach.
 
-### Na gnáthamhábhair
+### Na hamhábhair choitianta
 
-Table: Gnáthábhair ghlónra agus a dtugann siad
-Label: Gnáthábhair ghlónra
+Table: Ábhair choitianta ghlónra agus a soláthraíonn siad
+Label: Ábhair choitianta ghlónra
 
-| Ábhar (ainmneacha eile)                                                           | Tugann sé              | Nótaí                                                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silice{{en: silica}} (breochloch, grianchloch)                                    | SiO₂                   | Úsáid 325 mesh, meilt an-mhín, i nglónraí                                                                                                                                                                                                    |
-| Caoilín{{en: kaolin}} (sa Ríocht Aontaithe: cré shíneach; san Astráil: Eckalite)  | Al₂O₃, SiO₂            | An phríomhfhoinse alúmana; coinníonn sé an glónra ar fuaidreán freisin                                                                                                                                                                       |
-| Meallchré{{en: ball clay}}                                                        | Al₂O₃, SiO₂            | Níos plaistí ná caoilín, le níos mó iarainn agus ábhar orgánach                                                                                                                                                                              |
-| Iathchloch photaise, iathchloch shóide, siainít neifilín{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Floscanna{{en: fluxes}} a bhfuil a n-alúmana agus a silice féin iontu. Is flosc láidir í siainít neifilín don ísealbhácáil agus don mheánbhácáil. Má scríobhann seanoideas “iathchloch” amháin, d’fhéadfadh aon cheann acu a bheith i gceist |
-| Bánlí{{en: whiting}} (carbónáit chailciam)                                        | CaO                    | An príomhfhlosc cailciam; scaoileann sí dé-ocsaíd charbóin                                                                                                                                                                                   |
-| Vollastainít                                                                      | CaO, SiO₂              | Cailciam gan an dé-ocsaíd charbóin                                                                                                                                                                                                           |
-| Dolaimít, talc                                                                    | MgO, le CaO nó SiO₂    | Dromchlaí síodúla neamhlonracha; forbairt theirmeach{{en: thermal expansion}} níos ísle                                                                                                                                                      |
-| Ocsaíd since                                                                      | ZnO                    | Loinnir agus criostail; is féidir leis an iomarca snámh{{en: crawling}} a chruthú                                                                                                                                                            |
-| Friotanna bóróin, Gerstley Borate, cólmainít                                      | B₂O₃                   | Riachtanach ó chón 06 go cón 6; bíonn friotanna “níos comhsheasmhaí agus níos lú intuaslagtha ná bóráití nach ndearnadh friot díobh”                                                                                                         |
-| Carbónáit litiam                                                                  | Li₂O                   | Flosc ísealfhorbartha; daor, mar sin úsáidtear go spárálach í                                                                                                                                                                                |
-| Carbónáit strointiam                                                              | SrO                    | An t-ionadach ar bhairiam: níl sí chomh tocsaineach le bairiam                                                                                                                                                                               |
-| Carbónáit bhairiam                                                                | BaO                    | Tocsaineach nuair atá sí neamhbhácáilte; is féidir le glónraí atá saibhir i mbairiam láisteadh{{en: leach}}                                                                                                                                  |
-| Beintinít                                                                         | Fuaidreán              | Cré an-mhín, 1–3% de ghnáth, chun síothlú a chosc                                                                                                                                                                                            |
+| Ábhar (ainmneacha eile)                                  | Soláthraíonn           | Nótaí                                                                                                                                                                                   |
+| -------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silice (breochloch, grianchloch)                         | SiO₂                   | Úsáid 325 mesh, meilt an-mhín, i nglónraí                                                                                                                                               |
+| Caoilín (sa Ríocht Aontaithe: cré shíneach)              | Al₂O₃, SiO₂            | An phríomhfhoinse alúmana; cabhraíonn sé freisin leis an nglónra gan síothlú                                                                                                            |
+| Meallchré                                                | Al₂O₃, SiO₂            | Níos plaistí ná caoilín, le níos mó iarainn agus ábhair orgánaigh                                                                                                                       |
+| Iathchloch photaise, iathchloch shóide, siainít neifilín | K₂O, Na₂O, Al₂O₃, SiO₂ | Floscanna lena n-alúmana agus lena silice féin. Is flosc láidir ísealbhácála agus meánbhácála í siainít neifilín. D’fhéadfadh “iathchloch” amháin i seanoideas aon cheann acu a chiallú |
+| Bánlí (carbónáit chailciam)                              | CaO                    | An príomhfhlosc cailciam; scaoileann sé dé-ocsaíd charbóin                                                                                                                              |
+| Vollastainít                                             | CaO, SiO₂              | Cailciam gan an dé-ocsaíd charbóin                                                                                                                                                      |
+| Dolaimít, talc                                           | MgO, le CaO nó SiO₂    | Dromchlaí síodúla neamhlonracha; forbairt theirmeach níos ísle                                                                                                                          |
+| Ocsaíd since                                             | ZnO                    | Loinnir agus criostail; is féidir le barraíocht snámh a chruthú                                                                                                                         |
+| Friotanna bóróin, Gerstley Borate, cólmainít             | B₂O₃                   | Riachtanach ó chón 06 go cón 6; tá friotanna “níos comhsheasmhaí agus níos lú intuaslagtha ná bóráití amha”                                                                             |
+| Carbónáit litiam                                         | Li₂O                   | Flosc ísealfhorbartha; costasach, mar sin úsáidtear go spárálach é                                                                                                                      |
+| Carbónáit strointiam                                     | SrO                    | An t-ionadach ar bhairiam: níl sé chomh tocsaineach le bairiam                                                                                                                          |
+| Carbónáit bhairiam                                       | BaO                    | Tocsaineach san fhoirm amh; is féidir le glónraí ard-bhairiam láisteadh                                                                                                                 |
+| Beintinít                                                | Fuaidreán              | Cré an-mhín, 1–2% de ghnáth, chun síothlú a stopadh. Is féidir le níos mó ná 3% an glónra a scoilteadh de réir mar a thriomaíonn sé                                                     |
 
 > [!WARNING]
-> Púdair mhíne is ea ábhair ghlónra. Déanann deannach silice dochar do na scamhóga gan aon siomptóim ar dtús, agus tá roinnt ábhar, mar shampla carbónáit bhairiam agus carbónáit litiam, nimhiúil má shlogtar iad. Láimhseáil púdair go réidh, glan suas go fliuch, agus caith masc análaitheora a oireann duit nuair a bhíonn tú ag obair le hábhair thirime. Míníonn na treoirleabhair [Meascadh sábháilte agus aeráil](/guides/safe-mixing) agus [Ná nimhigh do theaghlach](/guides/home-safety) conas é sin a dhéanamh.
+> Púdair mhíne is ea ábhair ghlónra. Déanann deannach silice dochar do na scamhóga gan aon siomptóim ar dtús, agus bíonn ábhair áirithe, mar charbónáit bhairiam agus carbónáit litiam, nimhiúil má shlogtar iad. Láimhseáil púdair go réidh, glan fliuch, agus caith masc análaitheora a oireann duit nuair a bhíonn tú ag obair tirim. Míníonn na treoirleabhair [Meascadh sábháilte agus aeráil](/guides/safe-mixing) agus [Ná nimhigh do theaghlach](/guides/home-safety) conas.
 
 ### Ainmneacha réigiúnacha
 
-- Tugtar **cré shíneach**{{en: china clay}} ar **chaoilín**{{en: kaolin}} sa Ríocht Aontaithe; díolann soláthraithe san Astráil é mar Eckalite.
-- Ainm níos sine ar shilice sa Ríocht Aontaithe is ea **breochloch**{{en: flint}}. Díolann soláthraithe sa Ríocht Aontaithe **breochloch chailcínithe** mar tháirge ar leith fós, mar sin is dócha gur breochloch chailcínithe atá i gceist le “breochloch” in oideas Briotanach, agus grianchloch mheilte in oideas Meiriceánach. Díoltar an dá cheann mar fhoinsí silice; seiceáil an anailís.
-- Is é an t-ábhar céanna iad **cloch shíneach** agus **Cornish stone** (Cornwall stone, cloch ó Chorn na Breataine), ábhar atá gaolmhar le hiathchloch.
-- Carbónáit chailciam is ea **bánlí**{{en: whiting}}; tugann soláthraithe sa Ghearmáin Kreide (cailc) uirthi.
+- **Cré shíneach** (china clay) a thugtar ar **chaoilín** sa Ríocht Aontaithe. San Astráil, is branda amháin caoilín é Eckalite.
+- Is seanainm de chuid na Ríochta Aontaithe ar shilice í **breochloch** (flint). Díolann soláthraithe sa Ríocht Aontaithe **breochloch chailcínithe** mar tháirge ar leith fós, mar sin is dócha go gciallaíonn “flint” in oideas Briotanach breochloch chailcínithe, agus in oideas Meiriceánach grianchloch mheilte. Díoltar an dá cheann mar fhoinsí silice; seiceáil an anailís.
+- Is ionann an t-ábhar **cloch shíneach** (china stone) agus **Cornish stone** (Cornwall stone, cloch ó Chorn na Breataine), atá gaolmhar le hiathchloch.
+- Is é **bánlí** carbónáit chailciam, cailc nó aolchloch mheilte.
 
 > [!NOTE]
-> Meas ábhar de réir na n-ocsaídí a thugann sé, ní de réir a ainm. Oibríonn an aip Glazecalc ar an mbealach sin: is féidir leat anailís do sholáthraí a chur isteach ar an [leathanach ‘Ábhair’](/material), agus meaitseálann na gnéithe **Bain triail as ábhair an lae inniu agus cuir i gcomparáid**, **Mol méideanna agus cuir i gcomparáid** agus **Meaitseáil leis a bhfuil agam** go léir ocsaídí bácáilte, ní ainmneacha.
+> Meas ábhar de réir na n-ocsaídí a sholáthraíonn sé, ní de réir a ainm. Oibríonn Glazecalc mar sin: is féidir leat anailís do sholáthraí a chur isteach ar an [leathanach ‘Ábhair’](/material), agus meaitseálann na gnéithe **Bain triail as ábhair an lae inniu agus cuir i gcomparáid**, **Mol méideanna agus cuir i gcomparáid** agus **Meaitseáil leis a bhfuil agam** ocsaídí bácáilte, ní ainmneacha.
 
-Athraíonn ábhair freisin. Tháinig deireadh leis an iathchloch Custer sa bhliain 2023. Dúnadh an mianach as a dtagadh an Gerstley Borate bunaidh timpeall 1999–2000; díolann Laguna táirge faoin ainm sin fós, agus is é Gillespie Borate an príomh-ionadach. Ní réitíonn na foinsí faoi cé acu a thagann Gillespie in áit Gerstley Borate punt ar phunt nó nach dtagann (deir a dhéantóir agus Potclays go dtagann, deir Digitalfire agus foinsí eile nach dtagann), mar sin cuir an dá cheann i gcomparáid san aip Glazecalc, agus ansin tástáil baisc bheag.
+Athraíonn ábhair freisin. Tuairiscíonn Suirbhéireacht Gheolaíochta SAM gur chuir na mianaigh agus an gléasra a rinne iathchloch Custer, i nDakota Theas, stop leis an obair i mí na Samhna 2023. Dúnadh an bunmhianach Gerstley Borate thart ar 1999–2000; díolann Laguna táirge faoin ainm sin fós, agus is é Gillespie Borate an príomhionadach. Ní réitíonn na foinsí faoi cé acu a thagann Gillespie in áit Gerstley Borate punt ar phunt (deir a dhéantóir agus Potclays go dtagann, deir Digitalfire agus foinsí eile nach dtagann), mar sin cuir an dá cheann i gcomparáid san aip Glazecalc, ansin tástáil baisc bheag.
 
 ## Ábhair datha agus teimhneoirí {#color}
 
-Is éard is **ábhar datha**{{en: colorant}} ann ocsaíd nó carbónáit mhiotail a thugann dath do ghlónra{{en: glaze}}; ábhar datha a dhéantar i monarcha is ea **lí**{{en: stain}}, níos cobhsaí agus níos comhsheasmhaí ná na hocsaídí féin. De ghnáth bíonn ábhair datha faoi bhun 5% den bhunghlónra, go leor acu faoi bhun 1%, agus tá carbónáit thart ar leath chomh láidir leis an ocsaíd a fhreagraíonn di.
+Is éard is **ábhar datha**{{en: colorant}} ann ná ocsaíd nó carbónáit mhiotail a chuireann dath ar ghlónra; is éard is **lí**{{en: stain}} ann ná ábhar datha a dhéantar i monarcha, níos cobhsaí agus níos comhsheasmhaí ná ocsaídí amha. Bíonn ábhair datha faoi bhun 5% den bhunghlónra de ghnáth, cuid mhaith acu faoi bhun 1%, agus bíonn carbónáit níos laige ná an ocsaíd a fhreagraíonn di, mar go n-imíonn cuid di mar ghás. De réir ár n-uimhríochta, tugann 100 g de charbónáit chóbailt thart ar 63 g d’ocsaíd chóbailt, agus tugann 100 g den charbónáit chopair a cheannaíonn potadóirí (carbónáit chopair bhunata) thart ar 72 g d’ocsaíd chopair. Mar sin úsáid thart ar 1.4 go 1.6 oiread carbónáite agus a d’úsáidfeá d’ocsaíd.
 
-Table: Gnáthábhair datha, mar chéatadán den bhunghlónra
-Label: Gnáthábhair datha
+Table: Ábhair datha choitianta, mar chéatadán den bhunghlónra
+Label: Ábhair datha choitianta
 
-| Ábhar datha      | Gnáthmhéid tosaigh                           | Dathanna agus nótaí                                                                                                                                                                                                   |
-| ---------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cóbalt           | 0.1–2% (ní réitíonn na foinsí)               | Gorm, agus an-láidir; i dtreo corcra nuair a bhíonn maignéisiam sa bhunghlónra                                                                                                                                        |
-| Iarann           | 0.5–10%                                      | Dathanna donna, cróna agus dearga faoi ocsaídiú{{en: oxidation}}; faoi dhí-ocsaídiú{{en: reduction}}, tugann ½–2% ceileadón agus 5–6% tenmoku. Is flosc{{en: flux}} é, mar sin ritheann glónra má bhíonn mórán de ann |
-| Copar            | 1–3%                                         | Glas nó turcaide faoi ocsaídiú, dearg faoi dhí-ocsaídiú. Is féidir leis a chur faoi deara go láistfidh{{en: leach}} glónra                                                                                            |
-| Cróm             | Faoi bhun 0.5% go 2% (ní réitíonn na foinsí) | Glas; donn má bhíonn sinc sa bhunghlónra, bándearg le stán                                                                                                                                                            |
-| Mangainéis       | 2–10%                                        | Dathanna donna agus corcra                                                                                                                                                                                            |
-| Rúitíl           | Thart ar 2–5%                                | Dath breac, breachnaithe; garbh nó neamhlonrach os cionn thart ar 5%                                                                                                                                                  |
-| Líocha tráchtála | 2–12%                                        | 2–4% le haghaidh imirí éadroma, 5–8% le haghaidh dathanna meánacha, 10–12% le haghaidh dathanna láidre                                                                                                                |
+| Ábhar datha      | Gnáthmhéid tosaigh                           | Dathanna agus nótaí                                                                                                                                     |
+| ---------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cóbalt           | 0.1–2% (ní réitíonn na foinsí)               | Gorm, agus an-láidir; i dtreo corcra nuair a bhíonn maignéisiam sa bhunghlónra                                                                          |
+| Iarann           | 0.5–10%                                      | Donn, buídhonn agus dearg faoi ocsaídiú; faoi dhí-ocsaídiú, tugann ½–2% ceileadón agus 5–10% tenmoku. Flosc é, mar sin cuireann mórán de glónra ag rith |
+| Copar            | 1–3%                                         | Glas nó turcaidh faoi ocsaídiú, dearg faoi dhí-ocsaídiú. Is féidir leis glónra a chur ag láisteadh                                                      |
+| Cróm             | Faoi bhun 0.5% go 2% (ní réitíonn na foinsí) | Glas; donn má bhíonn sinc sa bhunghlónra, bándearg le stán                                                                                              |
+| Mangainéis       | 2–10%                                        | Donn agus corcra                                                                                                                                        |
+| Rúitíl           | Thart ar 2–5%                                | Dath breac, ilchineálach; garbh nó neamhlonrach os cionn thart ar 5%                                                                                    |
+| Líocha tráchtála | 2–12%                                        | 2–4% do shnáithe, 5–8% do thoin, 10–12% do dhathanna láidre                                                                                             |
 
-Tá fíordhíospóid ann faoi mhéideanna an chóbailt agus an chróim. Deir Glazy gur leor 0.1% cóbailt le haghaidh gorm; tugann Glendale Community College ½–2% nó ½–3%, ag brath ar an atmaisféar; deir Birdie Boone, in Pottery Making Illustrated, 3% nó níos lú. Maidir le cróm, deir Boone faoi bhun 0.5% agus Glendale 2–3%. Is é an cúrsa sábháilte tosú le méid beag agus **sraith cumaisc**{{en: line blend}} a dhéanamh: sraith tíleanna tástála{{en: test tiles}} ina méadaítear comhábhar amháin céim ar chéim ó bheagán go mórán.
+Tá fíorchonspóid faoi mhéideanna cóbailt agus cróim. Deir Glazy gur leor 0.1% cóbailt do ghorm; tugann Glendale Community College ½–2% nó ½–3% de réir an atmaisféir; deir Birdie Boone, in Pottery Making Illustrated, 3% nó níos lú. Do chróm, deir Boone faoi bhun 0.5% agus Glendale 2–3%. Is é an cúrsa sábháilte tosú íseal agus **sraith cumaisc**{{en: line blend}} a dhéanamh: ró tíleanna tástála a mhéadaíonn comhábhar amháin céim ar chéim ó bheagán go mórán.
 
-Athraíonn an bunghlónra an dath. Tugann bunghlónra lonrach trédhearcach an dath is gile; maolaíonn bunghlónraí leathlonracha agus neamhlonracha, a mbíonn níos mó alúmana iontu de ghnáth, é. Brúnn maignéisiam an cóbalt i dtreo corcra, déanann sinc donn den chróm, agus tugann cróm le stán bándearg.
+Athraíonn an bunghlónra an dath. Tugann bunghlónra lonrach trédhearcach an dath is gile; maolaíonn bunghlónraí leathlonracha agus neamhlonracha, a mbíonn níos mó alúmana iontu de ghnáth, é. Brúnn maignéisiam cóbalt i dtreo corcra, iompaíonn sinc cróm donn, agus tugann cróm le stán bándearg.
 
 ### Teimhneoirí
 
-Déanann **teimhneoir** glónra **teimhneach**, sa chaoi go bhfolaíonn sé an chré; ligeann glónra **trédhearcach** di a bheith le feiceáil.
+Déanann **teimhneoir**{{en: opacifier}} glónra **teimhneach**, ag ceilt na cré; ligeann glónra **trédhearcach** di a bheith le feiceáil.
 
 Table: Teimhneoirí
 
-| Teimhneoir                                     | Gnáthmhéid                              | Nótaí                                                                                                         |
-| ---------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Siorcón (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% le haghaidh teimhneachta iomláine | An rogha is saoire; is é an t-ábhar céanna atá sna brandaí, meilte go méideanna éagsúla                       |
-| Ocsaíd stáin                                   | Thart ar 5–7% (ár meastachán féin)      | Daor; ní dhéanann sí glónra teimhneach go maith faoi dhí-ocsaídiú                                             |
-| Dé-ocsaíd tíotáiniam                           | Os cionn 2%                             | Teimhneacht shíodúil thréshoilseach; ag 10% nó níos mó, dromchla neamhlonrach uigeach le criostail infheicthe |
+| Teimhneoir                           | Gnáthmhéid                               | Nótaí                                                                                                                                                         |
+| ------------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Siorcón (Zircopax, Superpax, Ultrox) | 10–15% le haghaidh teimhneachta iomláine | An rogha is saoire; is sileacáit siorcóiniam iad na brandaí, meilte go méideanna éagsúla, agus is láidre na gráid is míne                                     |
+| Ocsaíd stáin                         | Thart ar 5–7% (ár meastachán)            | Costasach; níos laige ag ardbhácáil, agus tuairiscíonn Digitalfire nár thug 4% aon teimhneacht i nglónra glé do chón 10 faoi dhí-ocsaídiú                     |
+| Dé-ocsaíd tíotáiniam                 | Thart ar 5% (ár meastachán)              | Teimhneacht shíodúil thréshoilseach; is féidir le thart ar 5% an dromchla a athrú, agus is minic a thugann i bhfad níos mó dromchla neamhlonrach le criostail |
 
 ## Oiriúint ghlónra agus máchaillí {#fit-and-defects}
 
-Leathnaíonn an chré agus an glónra{{en: glaze}} araon nuair a théitear iad agus crapann siad nuair a fhuaraíonn siad, gach ceann acu de réir a mhéid féin: a **fhorbairt theirmeach**{{en: thermal expansion}}. Is éard is **oiriúint ghlónra**{{en: glaze fit}} ann a mhéad a oireann an dá cheann dá chéile. Fágann oiriúint mhaith an glónra faoi bheagán comhbhrú ag an gcré; deir Digitalfire go neartaíonn beagán comhbhrú na hearraí, ach gur féidir leis an iomarca iad a lagú agus fiú iad a scoilteadh.
+Fásann cré agus glónra araon de réir mar a théann siad agus crapann siad de réir mar a fhuaraíonn siad, gach ceann acu de réir a mhéide féin: a **fhorbairt theirmeach**{{en: thermal expansion}}. Is í **oiriúint ghlónra**{{en: glaze fit}} cé chomh maith is a réitíonn an dá cheann. Fágann oiriúint mhaith an glónra faoi bheagán comhbhrú ag an gcré; deir Digitalfire go neartaíonn beagán comhbhrú na gréithe, ach gur féidir le barraíocht iad a lagú agus fiú a scoilteadh.
 
 ### Snáithlíonrú agus spallú glónra
 
-Is éard is **snáithlíonrú**{{en: crazing}} ann gréasán de scoilteanna míne. Tá forbairt theirmeach an ghlónra níos airde ná forbairt theirmeach an chré-ábhair{{en: clay body}}, mar sin crapann sé níos mó agus é ag fuarú, sínítear é agus scoilteann sé; is é an chúis de ghnáth an iomarca sóidiam agus potaisiam (Na₂O, K₂O). Is féidir leis teacht chun cinn níos déanaí freisin, le linn úsáide, tar éis fuarú tobann arís is arís eile, mar shampla nuair a théann leachtanna fuara i dteagmháil leis. Nuair is d’aon ghnó é, mar a bhíonn i raku, tugtar **gréasán scoilteanna** air. Deir Digitalfire: “95% den am, is é an réiteach forbairt theirmeach an ghlónra a choigeartú”; ní dhéanann fuarú mall ach moill a chur ar an snáithlíonrú. Tástáil Digitalfire: téigh na hearraí go dtí thart ar {{300 °F; 149 °C}}, sáigh in uisce oighrithe iad, agus cuimil peann feiltbhiorach orthu chun na scoilteanna a thaispeáint.
+Is éard is **snáithlíonrú**{{en: crazing}} ann ná gréasán de scoilteanna míne. Tá forbairt theirmeach an ghlónra níos airde ná forbairt an chré-ábhair, mar sin crapann sé níos mó agus é ag fuarú, sínítear é agus scoilteann sé, de ghnáth de bharr barraíocht sóidiam agus potaisiam (Na₂O, K₂O). Is féidir leis teacht chun solais níos déanaí freisin, le linn úsáide, tar éis fuarú tobann arís agus arís eile, mar theagmháil le leachtanna fuara. Nuair a bhíonn sé ag teastáil, mar i raku, **gréasán scoilteanna maisiúil** (crackle) a thugtar air. Deir Digitalfire “95% den am is é an réiteach forbairt theirmeach an ghlónra a choigeartú”; ní dhéanann fuarú mall ach an snáithlíonrú a mhoilliú. A thástáil: téigh na gréithe go dtí thart ar {{300 °F; 149 °C}}, tum in uisce oighir iad, agus cuimil peann feilte orthu chun na scoilteanna a thaispeáint.
 
-Ní réitíonn na foinsí faoin gcéad leigheas. Molann Glazy silice{{en: silica}} nó alúmana a chur leis; freagraíonn Digitalfire nach ndéanann silice bhreise “ach an KNaO a chaolú” (an sóidiam agus an potaisiam); cuireann Linda Bloomfield bórón leis nó laghdaíonn sí an iathchloch{{en: feldspar}}, ábhar amháin ag an am. Ár gcomhairle: san [áireamhán oidis](/recipe), malartaigh cuid den sóidiam agus den photaisiam ar fhloscanna{{en: fluxes}} a bhfuil forbairt theirmeach níos ísle acu (bórón, litiam, maignéisiam, cailciam), seiceáil an t-athrú leis an gcnaipe **Cuir i gcomparáid**, agus deimhnigh é leis an tástáil uisce oighrithe.
+Ní réitíonn na foinsí faoin gcéad leigheas. Molann Glazy silice nó alúmana a chur leis; freagraíonn Digitalfire nach ndéanann silice bhreise “ach an KNaO a chaolú” (an sóidiam agus an potaisiam); cuireann Linda Bloomfield bórón leis nó laghdaíonn sí an iathchloch, ábhar amháin ag an am. Ár gcomhairle: san [áireamhán oidis](/recipe), cuir floscanna ísealfhorbartha (bórón, litiam, maignéisiam, cailciam) in ionad cuid den sóidiam agus den photaisiam, seiceáil an t-athrú leis an ngné **Cuir i gcomparáid**, agus deimhnigh é le tástáil an uisce oighir.
 
-Is é **spallú glónra**{{en: shivering}} a mhalairt: tá forbairt theirmeach an ghlónra i bhfad níos ísle ná forbairt theirmeach an chré-ábhair, mar sin tá sé róchomhbhrúite agus scealpann sé de na béil agus de na himill. Tugann Digitalfire rabhadh gur féidir leis na scealpóga a bheith chomh géar le rásúr agus go bhféadfaí iad a shlogadh, agus deir Glazy go bhfuil spallú glónra “níos contúirtí fós ná snáithlíonrú ar ghréithe úsáide”. Is é an leigheas glónra a bhfuil forbairt theirmeach níos airde aige, nó cré-ábhar a bhfuil forbairt theirmeach níos ísle aige.
+Is é **spallú glónra**{{en: shivering}} a mhalairt: tá forbairt theirmeach an ghlónra i bhfad níos ísle ná forbairt an chré-ábhair, mar sin tá sé róchomhbhrúite agus scealpann sé de na béil agus de na himill. Tugann Digitalfire rabhadh go bhféadfadh na slisní a bheith chomh géar le rásúr agus go bhféadfaí iad a shlogadh, agus deir Glazy go bhfuil spallú glónra “níos contúirtí fós ná snáithlíonrú ar ghréithe úsáide”. Is é an leigheas glónra ardfhorbartha nó cré-ábhar ísealfhorbartha.
 
 > [!WARNING]
-> Ná húsáid earraí snáithlíonraithe ná earraí a bhfuil spallú glónra orthu le haghaidh bia ná dí. Ní réitíonn na foinsí faoi cé acu is féidir potaí snáithlíonraithe a ghlanadh sách maith nó nach féidir (deir foinse amháin gur leor miasniteoir; deir foinse eile go bhfuil gréithe úsáide snáithlíonraithe lochtach), mar sin glacaimid an taobh is cúramaí.
+> Ná húsáid gréithe snáithlíonraithe ná gréithe a bhfuil spallú glónra orthu do bhia ná do dheoch. Ní réitíonn na foinsí faoi cé acu is féidir potaí snáithlíonraithe a ghlanadh go maith go leor (deir ceann amháin go ndéanfaidh miasniteoir é; deir ceann eile go bhfuil gréithe úsáide snáithlíonraithe lochtach), mar sin glacaimid an taobh cúramach.
 
 ### Lonrach agus neamhlonrach
 
-Bíonn dromchla **lonrach** frithchaiteach agus mín, bíonn loinnir mhaolaithe ar dhromchla **leathlonrach**, agus bíonn dromchla **neamhlonrach** gan loinnir. Teastaíonn gloine atá leáite go hiomlán ó dhromchla lonrach. Is féidir le dromchla neamhlonrach teacht ó mhórán alúmana (cóimheas íseal silice le halúmana), ó fhloscanna ar nós cailciam, maignéisiam, bairiam nó strointiam a chruthaíonn criostail bhídeacha agus an glónra ag fuarú, nó ón nglónra a bheith tearcbhácáilte.
+Bíonn dromchla **lonrach**{{en: gloss}} frithchaiteach agus mín, bíonn loinnir mhaolaithe ar dhromchla **leathlonrach**{{en: satin}}, agus bíonn dromchla **neamhlonrach**{{en: matte}} dubhghnéitheach. Teastaíonn gloine leáite go hiomlán do dhromchla lonrach. Is féidir le dromchla neamhlonrach teacht ó mhórán alúmana (cóimheas íseal silice le halúmana), ó fhloscanna mar chailciam, maignéisiam, bairiam nó strointiam a dhéanann criostail bheaga bídeacha de réir mar a fhuaraíonn an glónra, nó ó thearcbhácáil.
 
 ### Máchaillí coitianta
 
-Athraigh rud amháin ag an am, agus coinnigh do thíleanna tástála{{en: test tiles}}.
+Athraigh rud amháin ag an am, agus coinnigh do thíleanna tástála.
 
-Table: Gnáthmháchaillí glónra, a ngnáthchúiseanna agus na chéad leigheasanna
-Label: Gnáthmháchaillí glónra
+Table: Máchaillí coitianta glónra, a ngnáthchúiseanna agus na chéad leigheasanna
+Label: Máchaillí coitianta glónra
 
-| Máchail                         | Cuma                                                       | Gnáthchúiseanna                                                                                                                            | Na chéad leigheasanna                                                                                                 |
-| ------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| Snámh{{en: crawling}}           | Tarraingíonn an glónra siar ina mhónóga, ag fágáil cré lom | Deannach nó gréisc ar na brioscghréithe{{en: bisque}}; brat tiubh atá saibhir i gcré agus a scoilt agus é ag triomú; sinc, siorcón nó stán | Glan na brioscghréithe; cuir brat níos tanaí air; cailcínigh cuid den chré; cuir ceanglóir leis, mar shampla guma CMC |
-| Poill bhioráin{{en: pinholing}} | Poill bheaga nó logaill                                    | Gás ón gcré-ábhar nó ón nglónra, agus níor dhún an glónra arís ina dhiaidh; glónra tearcbhácáilte nó righin                                | Coinnigh ag an mbuaicteocht ar feadh thart ar leathuair an chloig; cuir brat níos tanaí air; níos lú since nó rúitíle |
-| Clogadh                         | Cráitéir le himill ghéara                                  | Bácáil rótheo de ghnáth; bratanna an-tiubha; floscanna so-ghalaithe os cionn thart ar {{2192 °F; 1200 °C}}                                 | Bácáil ag teocht níos ísle; cuir brat níos tanaí air. Má tá imill ghéara orthu, níl gréithe úsáide sábháilte          |
-| Rith                            | Sreabhann an glónra anuas ar an tseilf                     | Róbheagán alúmana; róthiubh, mar a bhíonn san áit a dtéann dhá dhoirteadh thar a chéile; mórán iarainn                                     | Cuir brat níos tanaí air; cuir alúmana leis; coinnigh an glónra i bhfad os cionn an bhoinn                            |
-| Scáineadh{{en: dunting}}        | Scoilteanna sa phota de bharr fuaraithe nó téimh           | Fuarú tapa tríd an aisiompú grianchloiche{{en: quartz inversion}}, {{1063 °F; 573 °C}}; ballaí míchothroma; drochoiriúint ghlónra          | Bácáil go mall trí {{1063 °F; 573 °C}}, ag téamh agus ag fuarú; ballaí cothroma                                       |
+| Máchail        | Cuma                                                        | Cúiseanna coitianta                                                                                                                                               | Na chéad leigheasanna                                                                                       |
+| -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Snámh          | Tarraingíonn an glónra siar ina bhraonta, ag fágáil cré lom | Brioscghréithe deannachúla nó bealaithe; brat tiubh saibhir i gcré a scoilt agus é ag triomú; sinc, siorcón nó stán                                               | Glan na brioscghréithe; cuir brat níos tanaí air; cailcínigh cuid den chré; cuir ceanglóir mar CMC leis     |
+| Poill bhioráin | Poill bheaga nó claiseanna                                  | Gás ón gcré-ábhar nó ón nglónra nár chneasaigh; glónra tearcbhácáilte nó righin                                                                                   | Coinnigh ag an mbuaicteocht ar feadh thart ar leathuair; cuir brat níos tanaí air; níos lú since nó rúitíle |
+| Clogadh        | Cráitéir le himill ghéara                                   | Róbhácáil de ghnáth; bratanna an-tiubha; floscanna so-ghalaithe os cionn thart ar {{2192 °F; 1200 °C}}                                                            | Bácáil níos ísle; cuir brat níos tanaí air. Fágann imill ghéara gréithe úsáide neamhshábháilte              |
+| Rith           | Sreabhann an glónra anuas ar an tseilf                      | Ró-bheagán alúmana; róthiubh, mar a mbíonn doirteadh ag forluí; mórán iarainn                                                                                     | Cuir brat níos tanaí air; cuir alúmana leis; coinnigh an glónra i bhfad os cionn an bhoinn                  |
+| Scáineadh      | Scoilteanna sa phota ó fhuarú nó ó théamh                   | Fuarú tapa tríd an aisiompú grianchloiche, {{1063 °F; 573 °C}}, nó trí aisiompú na críostabailíte, thart ar {{428 °F; 220 °C}}; ballaí míchothroma; drochoiriúint | Bácáil go mall tríd an dá cheann, suas agus síos; ballaí cothroma                                           |
 
 ## Sábháilteacht bia {#food-safety}
 
-Is éard is **láisteadh**{{en: leaching}} ann miotal ag tuaslagadh as glónra{{en: glaze}} bácáilte isteach i mbia nó i ndeoch, agus is féidir le glónra cuma fhoirfe a bheith air agus é sin a dhéanamh mar sin féin. Sna tástálacha dlíthiúla, cuirtear an píosa bácáilte ar maos i dtuaslagán aigéadach agus tomhaistear an luaidhe agus an caidmiam a thagann amach.
+Is éard is **láisteadh**{{en: leaching}} ann ná miotal ag tuaslagadh as glónra bácáilte isteach i mbia nó i ndeoch, agus is féidir le glónra cuma fhoirfe a bheith air agus é sin a dhéanamh fós. Maothaíonn na tástálacha dlíthiúla an píosa bácáilte i dtuaslagán aigéadach agus tomhaiseann siad an luaidhe agus an caidmiam a thagann amach.
 
 ### Ní hionann gan luaidhe agus slán i gcomhair bia
 
-Cuireann na rialacha i SAM, san AE, sa Ríocht Aontaithe agus san Astráil teorainn leis an luaidhe agus leis an gcaidmiam a scaoileann píosa bácáilte, ní leis an méid atá sa ghlónra. Cuireann “gan luaidhe” deireadh le guais amháin; ní rátáil sábháilteachta bia é. Láistíonn ocsaídí eile freisin: tugann Glazy rabhadh gur féidir le glónraí atá saibhir i mbairiam “láisteadh, agus de ghnáth níl siad slán i gcomhair bia”, deir Digitalfire gur féidir le copar “a chur faoi deara go láistfidh glónra; tástáil é”, agus ní mholann Glazy glónraí luaidhe le haghaidh gréithe úsáide a thuilleadh.
+Cuireann na rialacha i SAM, san AE, sa Ríocht Aontaithe agus san Astráil teorainn leis an luaidhe agus leis an gcaidmiam a scaoileann píosa bácáilte, ní leis an méid atá sa ghlónra{{en: glaze}}. Baineann “gan luaidhe” guais amháin; ní rátáil sábháilteachta bia é. Láistíonn ocsaídí eile freisin: tugann Glazy rabhadh “gur féidir le glónraí ard-bhairiam láisteadh agus nach mbíonn siad slán i gcomhair bia de ghnáth”, deir Digitalfire “gur féidir le copar glónra a chur ag láisteadh; tástáil é”, agus ní mholann Glazy glónraí luaidhe do ghréithe úsáide a thuilleadh.
 
-Is éard is **glónra líneála**{{en: liner glaze}} ann glónra cobhsaí, glé nó bán de ghnáth, do dhromchlaí a dtéann bia i dteagmháil leo. Dar linn, is é glónra gan ábhar datha{{en: colorant}}, bairiam, luaidhe ná litiam, a leánn go hiomlán, nach snáithlíonraíonn agus a sheasann go maith in aghaidh caithimh, an rogha is lú riosca. Ní cruthúnas é riosca níos lú.
+Is éard is **glónra líneála**{{en: liner glaze}} ann ná glónra cobhsaí, glé nó bán de ghnáth, do dhromchlaí a mbíonn bia orthu. Dar linne, is é glónra gan ábhar datha, bairiam, luaidhe ná litiam, a leánn go hiomlán, nach snáithlíonraíonn agus a sheasann go maith le caitheamh, an rogha is lú riosca. Ní cruthúnas é riosca níos lú.
 
-Tugann **foirmlí teorann**{{en: limit formulas}} (is fearr le Digitalfire **spriocfhoirmlí**{{en: target formulas}}) raonta tipiciúla foirmle Seger{{en: unity molecular formula}} do ghlónraí cobhsaí ag cón{{en: cone}} áirithe: cuireann spriocanna Digitalfire do chón 6 an t-alúmana ag 0.285–0.64 agus an tsilice{{en: silica}} ag 2.4–4.7. Treoraíonn siad i dtreo ceimice fónta thú ach ní chruthaíonn siad aon rud; seachnaíonn Digitalfire an focal “limit” (teorainn) mar go dtugann sé le tuiscint go bhfuil glónraí laistigh de na raonta “sábháilte ar bhealach éigin”. Insíonn uirlisí na haipe Glazecalc chun oideas a athrú duit nuair a théann an t-oideas nua thar theorainn mholta, mar shampla mórán bóróin ag cón 6, agus cad is dócha a dhéanfaidh an glónra.
+Tugann **foirmlí teorann**{{en: limit formulas}} (is fearr le Digitalfire **spriocfhoirmlí**) raonta tipiciúla san fhoirmle Seger do ghlónraí cobhsaí ag cón áirithe: cuireann spriocanna Digitalfire do chón{{en: cone}} 6 alúmana ag 0.285–0.64 agus silice ag 2.4–4.7. Treoraíonn siad thú i dtreo ceimice fhónta ach ní chruthaíonn siad aon rud; seachnaíonn Digitalfire an focal “teorainn” mar go dtugann sé le fios go bhfuil glónraí laistigh de na raonta “slán ar bhealach éigin”. Insíonn uirlisí Glazecalc chun oideas a athrú nuair a théann an t-oideas nua thar theorainn mholta, mar mhórán bóróin ag cón 6, agus cad is dócha a dhéanfaidh an glónra.
 
-Ní hionann na teorainneacha dlíthiúla ó thír go tír. Taispeánann an tábla na teorainneacha san áit a bhfuil cónaí ort, in aonaid an dlí féin; roghnaigh tír nó réigiún eile chun comparáid a dhéanamh.
+Bíonn na teorainneacha dlíthiúla difriúil ó thír go tír. Taispeánann an tábla na teorainneacha san áit a bhfuil tú, in aonaid an dlí féin; roghnaigh tír nó réigiún eile chun comparáid a dhéanamh.
 
 ::food-limits
 
-I SAM, má tá cuma ar earra ceirmeach maisiúil go bhféadfaí é a úsáid le haghaidh bia, déileáiltear leis mar earra bia. Ní dhéantar amhlaidh má tá lipéad greamaitheach air agus fógra buan múnlaithe nó bácáilte ar a bhonn, ar nós “Not for Food Use. May Poison Food”, nó má tá poll tríd an dromchla a mbíonn bia air. Leagann an AE síos teorainneacha luaidhe agus caidmiam i dTreoir 84/500/CEE ón gComhairle, agus coinníonn an Ríocht Aontaithe na figiúirí céanna ina dlí féin. Ó 29 Bealtaine 2026, ceadaíonn an Ísiltír, an Bheilg agus Lucsamburg thart ar 130 go 150 uair níos lú luaidhe, agus thart ar 15 huaire níos lú caidmiam. Leagann an Astráil síos teorainneacha d’earraí allmhairithe; níor aimsíomar aon teorainn oifigiúil d’earraí a dhéantar san Astráil ná sa Nua-Shéalainn.
+I SAM, caitear le gréithe ceirmeacha maisiúla a bhfuil cuma inúsáidte do bhia orthu mar ghréithe bia mura bhfuil lipéad greamaithe orthu agus fógra buan múnlaithe nó bácáilte ar a mbonn, mar “Not for Food Use. May Poison Food” (“Ní le haghaidh bia. D’fhéadfadh sé bia a nimhiú”), nó poll trí dhromchla an bhia. Leagann an AE teorainneacha luaidhe agus caidmiam síos do ghréithe ceirmeacha i dTreoir 84/500/CEE ón gComhairle, agus coinníonn an Ríocht Aontaithe na figiúirí céanna ina dlí féin. Leagann cinneadh a rinne tíortha Benelux in 2024 teorainneacha i bhfad níos ísle síos do ghréithe ceirmeacha. Chuir an Ísiltír i bhfeidhm iad ón 29 Bealtaine 2026: thart ar 130 go 150 oiread níos lú luaidhe agus thart ar 14 go 18 n-oiread níos lú caidmiam ná figiúirí an AE. Is féidir gréithe a chomhlíon na seanrialacha agus a díoladh den chéad uair roimh an 1 Nollaig 2026 a dhíol go dtí go mbíonn an stoc ídithe. Tuairiscíonn saotharlanna tástála go gcuireann Lucsamburg na teorainneacha céanna i bhfeidhm ón 29 Bealtaine 2026, agus gur ghlac an Bheilg leo i bhforas ríoga an 19 Iúil 2026; níor léamar na téacsanna sin féin. Leagann an Astráil teorainneacha síos do ghréithe allmhairithe; níor aimsíomar aon teorainn oifigiúil do ghréithe a dhéantar san Astráil nó sa Nua-Shéalainn.
 
 ### Tástáil
 
-Deir an FDA gur féidir le trealaimh tástála baile le maipín luaidhe a d’fhéadfadh láisteadh a léiriú, ach tugann Ceramics New Zealand rabhadh nach bhfuil pinn tástála deartha le haghaidh ceirmeachta agus go dtugann siad torthaí bréagdheimhneacha. Má bhíonn toradh deimhneach ann, is cúis é le stop a chur le húsáid an phíosa; má bhíonn toradh diúltach ann, ní chruthaíonn sé aon rud. Is í tástáil saotharlainne láistithe miotal ar an bpíosa bácáilte (ASTM C738 i SAM; EN 1388 nó ISO 6486 san Eoraip) an fíorfhreagra.
+Deir an FDA gur féidir le trealamh swaib baile luaidhe in-láiste a thaispeáint, ach léiríonn staidéir gur minic a bhíonn an trealamh seo mícheart ar ghréithe glónraithe: is féidir leo luaidhe a thaispeáint nach bhfuil ann, agus is féidir leo luaidhe a láistíonn a chailleadh. Glac le toradh dearfach mar chúis le stop a chur le húsáid an phíosa, agus le toradh diúltach mar rud nach gcruthaíonn aon rud. Is é tástáil saotharlainne láistithe miotal ar an bpíosa bácáilte (ASTM C738 i SAM; EN 1388 nó ISO 6486 san Eoraip) an fíorfhreagra.
 
 > [!WARNING]
-> Ciallaíonn “slán i gcomhair bia”{{en: food safe}} go scaoileann an glónra seo, ar an gcré seo, bácáilte go dtí an cón seo san áith seo agus curtha air ar an mbealach seo, níos lú ná na teorainneacha dlíthiúla. Is féidir leis an aip Glazecalc cabhrú leat glónra cobhsaí a thógáil, agus is féidir leis an ngné **Ionadaigh an luaidhe** seanoideas luaidhe a atógáil gan luaidhe, ach ní féidir le haon áireamhán pota a dheimhniú. Ní féidir é sin a dhéanamh ach le tástáil ar an bpíosa bácáilte.
+> Ciallaíonn “slán i gcomhair bia” go scaoileann an glónra seo, ar an gcré seo, bácáilte go dtí an cón seo san áith seo agus curtha air ar an mbealach seo, níos lú ná na teorainneacha dlíthiúla. Is féidir leis an aip Glazecalc cabhrú leat glónra cobhsaí a thógáil, agus is féidir leis an ngné **Ionadaigh an luaidhe** sean-oideas luaidhe a atógáil gan luaidhe, ach ní féidir le haon áireamhán pota a dheimhniú. Ní féidir é sin a dhéanamh ach le tástáil ar an bpíosa bácáilte.
 
-## Sainmheáchan agus cur an ghlónra {#application}
+## Sainmheáchan agus cur i bhfeidhm {#application}
 
 ### Sainmheáchan
 
-**Draoib**{{en: slurry}} a thugtar ar phúdar glónra{{en: glaze}} measctha le huisce. Is é a **sainmheáchan**{{en: specific gravity}} (**SM**) a meáchan i gcomparáid le meáchan na toirte céanna uisce, a bhfuil sainmheáchan 1.0 aige: dá airde é, is ea is mó púdair atá sa bhuicéad. Deir leabhair níos sine ón Ríocht Aontaithe **meáchan pionta**. Deir Glazy gur “pointe tosaigh maith don chuid is mó de ghlónraí” é 1.4–1.5. Chun é a thomhas, meáigh 100 mL de dhraoib go beacht (molann Glazy steallaire) agus roinn ar 100 é: ciallaíonn 145 g sainmheáchan 1.45. Ní bhíonn hidriméadair iontaofa i nglónraí glóthaithe, agus galaíonn uisce, mar sin seiceáil arís sula nglónraíonn tú.
+Is **draoib**{{en: slurry}} é púdar glónra measctha le huisce. Is é a **sainmheáchan**{{en: specific gravity}} (**SM**) a mheáchan i gcomparáid le meáchan na toirte céanna uisce, a bhfuil sainmheáchan 1.0 aige: dá airde é, is ea is mó púdair sa bhuicéad. Deir Glazy gur “pointe tosaigh maith d’fhormhór na nglónraí” é 1.4–1.5. Chun é a thomhas, meáigh 100 mL de dhraoib go díreach (molann Glazy steallaire) agus roinn ar 100: ciallaíonn 145 g sainmheáchan 1.45. Ní bhíonn hidriméadair iontaofa i nglónraí glóthaithe, agus galaíonn uisce, mar sin seiceáil arís sula nglónraíonn tú.
 
-Ní hionann na spriocanna ó fhoinse go foinse. Cuireann Digitalfire glónraí tumtha ag 1.40–1.50 agus glónraí scuabtha tráchtála ag 1.25–1.55, agus tugann Potclays 1.71–1.81 le haghaidh scuabtha agus 1.71 le haghaidh spraeála. Ár gcomhairle: tum ag thart ar 1.45 agus an glónra beagán glóthaithe, lean an lipéad i gcás glónra scuabtha, agus scríobh síos an rud a oibríonn.
+Bíonn spriocanna difriúil ó fhoinse go foinse. Cuireann Digitalfire glónraí tumtha ag 1.40–1.50 agus glónraí scuabtha tráchtála ag 1.25–1.55, agus tugann Potclays 1.71–1.81 do scuabadh agus 1.71 do spraeáil. Ár gcomhairle: tum ag thart ar 1.45 agus an glónra beagán glóthaithe, lean an lipéad do ghlónra scuabtha, agus scríobh síos a n-oibríonn.
 
-Glóthaíonn **flocasach**{{en: flocculant}} (salann Epsom, fínéagar nó clóiríd chailciam) draoib beagán, agus déanann sé **ticseatrópach**{{en: thixotropic}} í: sreabhann sí nuair a chorraítear í agus téachtann sí nuair a fhágtar socair í, le haghaidh “brat glónra cothrom gan sileadh”. Tanaíonn **dífhlocasach**{{en: deflocculant}} (sileacáit sóidiam nó Darvan) í. Pléann an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze) an meascadh agus an coigeartú.
+Glóthaíonn **flocasach**{{en: flocculant}} (salann Epsom, fínéagar nó clóiríd chailciam) draoib beagán, rud a fhágann **ticseatrópach**{{en: thixotropic}} í: sreabhann sí nuair a chorraítear í agus téachtann sí nuair a bhíonn sí socair, le haghaidh “clúdach glónra cothrom gan sileadh”. Tanaíonn **dífhlocasach**{{en: deflocculant}} (sileacáit sóidiam nó Darvan) í. Pléann an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze) meascadh agus coigeartú.
 
-### An glónra a chur air
+### Glónra a chur air
 
-Glan deannach agus gréisc de na brioscghréithe{{en: bisque}} ar dtús le spúinse atá ar éigean tais seachas iad a ní, rud a fhágann ar maos iad. Ná séid an deannach díobh le haer comhbhrúite agus ná scuab tirim é: cuireann sé sin deannach silice san aer ([Meascadh sábháilte agus aeráil](/guides/safe-mixing#cleaning)).
+Glan deannach agus bealadh de na brioscghréithe ar dtús le spúinse ar éigean tais seachas iad a ní, rud a dhéanann maothán díobh. Ná séid an deannach díobh le haer comhbhrúite agus ná scuab tirim iad: cuireann sé sin deannach silice san aer ([Meascadh sábháilte agus aeráil](/guides/safe-mixing#cleaning)).
 
-- Le **tumadh**, “faightear brat ar comhthiús de ghnáth” (Robin Hopper). Is é an t-am tumtha a shocraíonn an tiús: tugann Digitalfire faoi deara go ndéantar glónraí tumtha tráchtála ag thart ar 1.4 do thumadh 5 shoicind agus ag 1.5 do thumadh 1 soicind.
-- Le **doirteadh**, ba cheart go mbeadh an glónra “beagán níos tanaí ná nuair a úsáidtear é le haghaidh tumtha”; san áit a dtéann dhá dhoirteadh thar a chéile, bíonn an brat dúbailte agus seans go rithfidh sé.
-- Bíonn guma, mar shampla **guma CMC**, i nglónraí **scuabtha**; cabhraíonn sé leis an nglónra sreabhadh agus greamú, agus dóitear ansin é. Bíonn roinnt bratanna ag teastáil ón gcuid is mó acu, dhá nó trí bhrat go minic; lean an lipéad.
-- Le **spraeáil**, úsáidtear glónra i bhfad níos tanaí, a chuirtear air i “roinnt bratanna tanaí, ag méadú an tiúis de réir a chéile”.
+- “Tugann **tumadh** brat atá cothrom ó thaobh tiús de go ginearálta” (Robin Hopper). Socraíonn an t-am tumtha an tiús: tugann Digitalfire faoi deara go ndéantar glónraí tumtha tráchtála ag thart ar 1.4 do thumadh 5 soicind agus 1.5 do thumadh 1 soicind.
+- Ba cheart glónra **doirte** a bheith “beagán níos tanaí ná nuair a úsáidtear é le haghaidh tumtha”; san áit a bhforluíonn doirteadh, dúblaítear an brat agus d’fhéadfadh sé rith.
+- Bíonn guma mar **CMC**{{en: CMC gum}} i nglónraí **scuabtha**, a chabhraíonn leis an nglónra sreabhadh agus greamú, agus a dhónn ansin. Teastaíonn roinnt brat ó fhormhór acu, dhá nó trí bhrat go minic; lean an lipéad.
+- Úsáideann **spraeáil** glónra i bhfad níos tanaí, curtha air i “roinnt brat tanaí, ag méadú an tiús de réir a chéile”.
 
 > [!WARNING]
 > Ná spraeáil ach i mboth spraeála aeráilte, agus masc análaitheora a oireann i gceart duit á chaitheamh agat. Féach an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing).
 
-Is féidir le brat atá róthiubh snámh{{en: crawling}}, cloig a dhéanamh nó rith. Téann slata tomhais na soláthraithe ó bhrat chomh tiubh le cárta creidmheasa go brat chomh tiubh le dím, bonn deich gcent SAM, thart ar 1 mm de ghlónra tirim de réir ár meastacháin; is iad tíleanna tástála{{en: test tiles}} ag cúpla tiús éagsúil an tseiceáil iontaofa. Coinníonn **céirdhíonadh**{{en: wax resist}} ar an mbonn an glónra amach, sa chaoi nach féidir leis an bpota greamú den tseilf, agus cosnaíonn **brat seilfe**, brat teasfhulangach a dhéantar go minic as caoilín{{en: kaolin}} agus silice{{en: silica}}, na seilfeanna ar shileadh.
+Is féidir le brat róthiubh snámh, clogadh nó rith. Téann rialacha ordóige na soláthraithe ó thiús cárta creidmheasa go tiús dím, bonn deich gcent SAM, thart ar 1 mm de ghlónra tirim de réir ár meastacháin; is iad tíleanna tástála ag roinnt tiúis an tseiceáil iontaofa. Coinníonn **céirdhíonadh**{{en: wax resist}} ar an mbonn an glónra amach, ionas nach féidir leis an bpota greamú den tseilf, agus cosnaíonn **brat seilfe**{{en: kiln wash}}, brat teasfhulangach de chaoilín agus silice go minic, na seilfeanna ar bhraonta.
 
 ## Ocsaídiú agus dí-ocsaídiú {#atmosphere}
 
-Athraíonn na gáis san áith, a **hatmaisféar**, an chuma a bhíonn ar ghlónraí{{en: glazes}} ag an deireadh. Ciallaíonn **ocsaídiú**{{en: oxidation}} neart ocsaigine. “Is ionann áitheanna leictreacha agus bácáil ocsaídithe,” a deir Digitalfire, agus de ghnáth bíonn glónraí ocsaídithe níos gile ná glónraí dí-ocsaídithe, go háirithe ag teochtaí níos ísle. Faoi ocsaídiú, tugann copar dathanna glasa agus turcaide, agus tugann iarann dathanna donna, cróna agus dearga. Is féidir leis an atmaisféar a bheith níos neodraí ná mar a bhí beartaithe in áith leictreach atá lán d’earraí a thugann gáis uathu agus nach bhfuil aeráil mhaith aici; cabhraíonn gaothaire atá ceangailte go díreach leis an áith.
+Athraíonn na gáis san áith, a **hatmaisféar**, an chaoi a dtagann glónraí amach. Ciallaíonn **ocsaídiú**{{en: oxidation}} neart ocsaigine. “Is ionann áitheanna leictreacha agus bácáil ocsaídithe,” a deir Digitalfire, agus de ghnáth bíonn glónraí ocsaídithe níos gile ná glónraí dí-ocsaídithe, go háirithe ag teochtaí níos ísle. Faoi ocsaídiú, tugann copar glas agus turcaidh, agus iarann donn, buídhonn agus dearg. Is féidir le háith leictreach a bhfuil drochaeráil uirthi, agus í lán de ghréithe a scaoileann gáis, a bheith níos neodraí ná mar a bhí beartaithe; cabhraíonn gaothaire atá ceangailte go díreach leis an áith.
 
-Cuireann **dí-ocsaídiú**{{en: reduction}} srian leis an ocsaigin d’aon ghnó, in áith gháis, in áith adhmaid nó in áith speisialta de ghnáth. Éiríonn copar dearg, agus éiríonn iarann ina fhlosc{{en: flux}} níos láidre agus tugann sé **ceileadón** (gormghlas go liathghlas, ó thart ar ½–2% iarainn) agus **tenmoku** (temmoku: donndubh, thart ar 5–6% iarainn). Deir Glazy go bhfuil ceileadóin agus glónraí dearga copair “ag brath ar dhí-ocsaídiú”. Athraíonn an chré freisin: i gcomparáid amháin de chuid Digitalfire, tháinig cré-ábhar cruachré{{en: stoneware}} amach liath faoi dhí-ocsaídiú agus buíúil faoi ocsaídiú. Is féidir le cairbíd sileacain i nglónra limistéir bheaga dí-ocsaídithe a chruthú, fiú in áith leictreach. Le haghaidh dí-ocsaídithe ó chón{{en: cone}} 010 go cón 3, molann Orton a chóin féin nach bhfuil iarann iontu.
+Srianann **dí-ocsaídiú**{{en: reduction}} an ocsaigin d’aon ghnó, in áith gháis, in áith adhmaid nó in áith speisialaithe de ghnáth. Iompaíonn copar dearg, agus éiríonn iarann ina fhlosc níos láidre agus tugann sé **ceileadón** (gormghlas go liathghlas, ó thart ar ½–2% iarainn) agus **tenmoku** (temmoku: donn-dubh, thart ar 5–10% iarainn). Deir Glazy go “mbraitheann” ceileadóin agus dearga copair “ar dhí-ocsaídiú”. Athraíonn an chré freisin: i gcomparáid amháin de chuid Digitalfire, tháinig cré-ábhar cruachré amach liath faoi dhí-ocsaídiú agus buíghnéitheach faoi ocsaídiú. Is féidir le carbaíd sileacain i nglónra limistéir bheaga dí-ocsaídithe a dhéanamh fiú in áith leictreach. Do dhí-ocsaídiú ó chón{{en: cone}} 010 go cón 3, molann Orton a chóin gan iarann.
 
 > [!NOTE]
-> Bí ag súil go dtiocfaidh oideas a scríobhadh d’áith gháis dí-ocsaídithe amach difriúil in áith leictreach: ní bheidh an chuma chéanna faoi ocsaídiú ar cheileadón ná ar ghlónra dearg copair atá ag brath ar dhí-ocsaídiú. Seiceáil cén t-atmaisféar ar ceapadh an t-oideas dó, agus breac síos d’atmaisféar féin, mar aon leis an gcón, i nótaí an oidis san aip Glazecalc.
+> Bí ag súil go dtiocfaidh oideas a scríobhadh d’áith gháis dí-ocsaídithe amach difriúil in áith leictreach: ní bheidh an chuma chéanna faoi ocsaídiú ar cheileadón nó ar dhearg copair a bhraitheann ar dhí-ocsaídiú. Seiceáil cén t-atmaisféar dar scríobhadh oideas, agus nótáil d’atmaisféar féin, leis an gcón, i nótaí an oidis san aip Glazecalc.
 
-Tugann gach áith múch uaithi, áitheanna leictreacha san áireamh, mar sin aeráil í. Míníonn an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing) conas é sin a dhéanamh.
+Scaoileann gach áith múch, áitheanna leictreacha san áireamh, mar sin aeráil í. Míníonn an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing) conas.
 
 ## Gluais {#glossary}
 
 Ábhar datha agus lí (colorant and stain)
-: Ocsaíd nó carbónáit mhiotail a thugann dath do ghlónra; ábhar datha monarchan, níos cobhsaí, is ea lí.
-
-Alúmana (Al₂O₃; alumina)
-: An príomhchobhsaitheoir: coisceann sé rith agus déanann sé an glónra níos crua. Ó chréanna agus ó iathchlocha.
-
-Amh-earraí (greenware)
-: Earraí neamhbhácáilte: leatharchrua nuair atá siad righin ach tais, cnámhthirim nuair nach bhfuil aon uisce saor fágtha iontu.
+: Ocsaíd nó carbónáit mhiotail a chuireann dath ar ghlónra; is ábhar datha níos cobhsaí é lí, a dhéantar i monarcha.
 
 Aonbhácáil (once-firing, single firing)
-: Earraí neamhbhácáilte a ghlónrú agus gan iad a bhácáil ach uair amháin.
+: Gréithe neamhbhácáilte a ghlónrú agus iad a bhácáil uair amháin.
 
-Bácáil glónra (glaze firing; sa Ríocht Aontaithe: glost firing)
+Alúmana (alumina, Al₂O₃)
+: An príomhchobhsaitheoir: stopann sé rith agus cuireann sé cruas leis. Ó chréanna agus ó iathchlocha.
+
+Amh-earraí (greenware)
+: Gréithe neamhbhácáilte: leatharchrua nuair a bhíonn siad righin ach tais, cnámhthirim nuair nach mbíonn aon uisce saor fágtha.
+
+Bácáil glónra (glaze firing; UK: glost firing)
 : An bhácáil a leánn an glónra.
 
 Bánlí (whiting)
-: Carbónáit chailciam, an príomhfhlosc cailciam; cailleann sí os cionn 40% dá meáchan le linn na bácála. Sa Ghearmáinis: Kreide.
+: Carbónáit chailciam, an príomhfhlosc cailciam; cailleann sé thart ar 44% dá mheáchan le linn bácála, mar dhé-ocsaíd charbóin.
 
 Beintinít (bentonite)
-: Cré an-mhín a chuirtear leis ag 1–3% chun an glónra a choinneáil ó shíothlú.
+: Cré an-mhín a chuirtear leis ag thart ar 1–2% chun an glónra a choinneáil gan síothlú. Is féidir le níos mó ná 3% an glónra a scoilteadh de réir mar a thriomaíonn sé.
 
-Bórón (B₂O₃; boron)
-: Foirmeoir gloine go foirmiúil, ach úsáidtear é mar fhlosc; riachtanach ó chón 06 go cón 6.
+Bórón (boron, B₂O₃)
+: Foirmeoir gloine go foirmiúil ach úsáidtear mar fhlosc é; riachtanach ó chón 06 go cón 6.
 
 Brat seilfe (kiln wash)
-: Brat teasfhulangach a chosnaíonn seilfeanna áithe ar shileadh.
+: Brat teasfhulangach a chosnaíonn seilfeanna na háithe ar bhraonta.
 
 Breiseán (additive)
 : Ábhar datha, teimhneoir nó oibreán fuaidreáin a chuirtear anuas ar 100 an oidis.
 
-Brioscbhácáil (bisque; sa Ríocht Aontaithe: biscuit)
-: An chéad bhácáil, an ceann is fuaire, cón 08–04 de ghnáth (cón 06–04 is minice), a fhágann na hearraí láidir ach póiriúil.
+Brioscbhácáil (bisque; UK: biscuit)
+: An chéad bhácáil, níos ísle, cón 08–04 de ghnáth (06–04 is minice), a fhágann gréithe láidir ach póiriúil.
 
-Cailliúint ar adhaint, LOI (loss on ignition)
-: Meáchan a chailltear le linn na bácála nuair a imíonn uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar mar ghás.
+Cailliúint ar adhaint (LOI, loss on ignition)
+: Meáchan a chailltear le linn bácála mar uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar.
 
-Caoilín (kaolin; sa Ríocht Aontaithe: china clay)
-: Cré bhán ghlan a thugann alúmana agus silice; coinníonn sé an glónra ar fuaidreán. San Astráil: Eckalite.
+Caoilín (kaolin; UK: china clay)
+: Cré bhán ghlan a sholáthraíonn alúmana agus silice; cabhraíonn sí leis an nglónra gan síothlú. San Astráil, is branda amháin é Eckalite.
 
 Céirdhíonadh (wax resist)
-: Céir a phéinteáiltear san áit nach mór glónra a choinneáil uaithi, an bonn de ghnáth.
+: Céir a phéinteáiltear san áit nach mór don ghlónra gan dul, an bonn de ghnáth.
+
+CMC (CMC gum)
+: Guma ceallalóis a chabhraíonn le glónra dul air le scuab agus greamú; dónn sé.
 
 Cobhsaitheoir (stabilizer)
-: Ocsaíd, alúmana den chuid is mó, a dhéanann an leátán níos righne agus an glónra níos buanfasaí.
+: Ocsaíd, alúmana den chuid is mó, a dhéanann an leátán níos righne agus a chuireann buanfas leis.
 
 Cóimheas silice le halúmana (silica to alumina ratio)
-: An tsilice roinnte ar an alúmana san fhoirmle Seger: is gnách gur lonrach a bhíonn an glónra nuair atá sé níos airde, agus neamhlonrach nuair atá sé níos ísle.
+: An tsilice roinnte ar an alúmana san fhoirmle Seger: claonann luach níos airde i dtreo lonrach, luach níos ísle i dtreo neamhlonrach.
 
 Cón (cone)
-: Pirimid cheirmeach chalabraithe a lúbann ag méid áirithe oibre teasa. Taispeánann cón fianaise an méid a fuair na potaí.
+: Piriméad ceirmeach calabraithe a lúbann ag obair teasa shocraithe. Léiríonn cón fianaise a bhfuair na potaí.
 
 Cré-earraí (earthenware)
-: Cré-ábhar ísealbhácála (thart ar chón 06–02) a fhanann póiriúil.
-
-Cruachré (stoneware)
-: Cré-ábhar meánbhácála nó ardbhácála (thart ar chón 5–10) a éiríonn gloiní, nó beagnach gloiní.
+: Cré-ábhar ísealbhácála (thart ar chón 06–02), póiriúil ag cóin ísle agus níos dlúithe nuair a bhácáiltear níos teo é.
 
 Díghloiniú (devitrification)
-: Criostail ag fás as an ngloine go luath san fhuarú, san áit nach dteastaíonn siad.
+: Criostail ag fás as an ngloine go luath san fhuarú, áit nach bhfuil siad ag teastáil.
 
 Flocasach agus dífhlocasach (flocculant and deflocculant)
 : Breiseáin a ghlóthaíonn draoib (salann Epsom, fínéagar) nó a thanaíonn í (sileacáit sóidiam, Darvan).
+
+Earraí cruachré (stoneware)
+: Cré-ábhar meánbhácála nó ardbhácála (thart ar chón 5–10) a éiríonn gloiní nó beagnach gloiní.
 
 Flosc (flux)
 : Ocsaíd a íslíonn teocht leá na silice.
@@ -372,95 +389,92 @@ Fo-ghlónra (underglaze)
 Foirmeoir gloine (glass former)
 : An ocsaíd a thógann an ghloine, silice de ghnáth.
 
-Foirmle Seger, UMF (unity molecular formula, Seger formula)
-: Ocsaídí glónra mar chomhaireamh móilíní, scálaithe sa chaoi gurb ionann iomlán na bhfloscanna agus 1.
+Foirmle Seger (UMF, unity molecular formula, Seger formula)
+: Ocsaídí glónra mar chomhaireamh móilíní, scálaithe ionas gurb ionann iomlán na bhfloscanna agus 1.
 
-Foirmle teorann, spriocfhoirmle (limit formula, target formula)
-: Raonta tipiciúla foirmle Seger do ghlónraí cobhsaí ag cón áirithe; slat tomhais, ní ráthaíocht.
+Foirmle teorann (limit formula, target formula)
+: Raonta tipiciúla san fhoirmle Seger do ghlónraí cobhsaí ag cón áirithe; treoir, ní ráthaíocht.
 
 Friot (frit)
-: Gloine monarchan, leáite, fuaraithe go tobann agus meilte, a dhéanann ocsaídí intuaslagtha nó tocsaineacha dothuaslagtha.
-
-Gloiniú (vitrification)
-: Cré-ábhar ag éirí gloiní agus neamhphóiriúil le linn na bácála.
+: Gloine a dhéantar i monarcha, leáite, múchta agus meilte, a dhéanann ocsaídí intuaslagtha nó tocsaineacha dothuaslagtha.
 
 Glónra (glaze)
-: Brat gloine a leánn le linn na bácála chun pota a shéalú agus a mhaisiú.
+: Brat gloine a leánn le linn bácála chun pota a shéalú agus a mhaisiú.
 
 Glónra líneála (liner glaze)
-: Glónra cobhsaí, glé nó bán de ghnáth, do dhromchlaí a dtéann bia i dteagmháil leo.
+: Glónra cobhsaí, glé nó bán de ghnáth, do dhromchlaí a mbíonn bia orthu.
 
-Guma CMC (CMC gum)
-: Guma ceallalóis a chabhraíonn leis an nglónra dul air le scuab agus greamú; dóitear é.
+Gloiniú (vitrification)
+: Cré-ábhar ag éirí gloiní agus neamhphóiriúil le linn bácála.
 
 Iathchloch (feldspar)
-: Mianra a thugann flosc alcaileach in éineacht le halúmana agus silice: iathchloch photaise, iathchloch shóide nó siainít neifilín.
+: Mianra a sholáthraíonn flosc alcaileach le halúmana agus silice: iathchloch photaise, iathchloch shóide nó siainít neifilín.
 
 Láisteadh (leaching)
 : Miotail ag tuaslagadh as glónra bácáilte isteach i mbia nó i ndeoch.
 
 Lonrach, leathlonrach agus neamhlonrach (gloss, satin and matte)
-: Frithchaiteach agus mín; loinnir mhaolaithe; gan loinnir.
+: Frithchaiteach agus mín; loinnir mhaolaithe; dubhghnéitheach.
 
 Meallchré (ball clay)
-: Cré phlaisteach ina bhfuil níos mó iarainn agus ábhar orgánach ná mar atá i gcaoilín.
+: Cré phlaisteach ina bhfuil níos mó iarainn agus ábhair orgánaigh ná i gcaoilín.
 
 Obair teasa (heatwork)
 : Éifeacht na teochta agus an ama le chéile in áith; an rud a thomhaiseann cóin.
 
 Ocsaíd (oxide)
-: Comhdhúil ina bhfuil dúil agus ocsaigin; liostaíonn anailís ocsaíde iad mar chéatadán meáchain.
+: Comhdhúil d’eilimint le hocsaigin; liostaíonn anailís ocsaíde iad de réir céatadáin meáchain.
 
 Ocsaídiú agus dí-ocsaídiú (oxidation and reduction)
-: Bácáil le neart ocsaigine (áitheanna leictreacha), nó le srian ar an ocsaigin (gás nó adhmad de ghnáth).
+: Bácáil le neart ocsaigine (áitheanna leictreacha), nó leis an ocsaigin srianta (gás nó adhmad de ghnáth).
 
 Oideas baisce (batch recipe)
 : Amhábhair ghlónra de réir meáchain, arb ionann a n-iomlán agus 100 de ghnáth.
 
 Oiriúint ghlónra (glaze fit)
-: A mhéad a fhreagraíonn forbairt theirmeach an ghlónra agus an chré-ábhair dá chéile; fágann oiriúint mhaith an glónra faoi bheagán comhbhrú.
+: Cé chomh maith is a réitíonn forbairt theirmeach an ghlónra agus an chré-ábhair; fágann oiriúint mhaith an glónra faoi bheagán comhbhrú.
 
 Poill bhioráin agus clogadh (pinholing and blistering)
 : Poill bheaga, nó cráitéir le himill ghéara, san áit ar éalaigh gás tríd an leátán.
 
 Poirceallán (porcelain)
-: Cré-ábhar bán ardbhácála, saibhir i gcaoilín, tréshoilseach go minic.
+: Cré-ábhar bán ardbhácála atá saibhir i gcaoilín, tréshoilseach go minic.
 
-R₂O agus RO
-: Na floscanna alcaileacha (Na₂O, K₂O, Li₂O) agus na floscanna cré-alcaileacha (CaO, MgO, BaO, SrO, mar aon le ZnO).
+R₂O agus RO (R₂O and RO)
+: Na floscanna alcaileacha (Na₂O, K₂O, Li₂O) agus na floscanna cré-alcaileacha (CaO, MgO, BaO, SrO, le ZnO).
 
-Sainmheáchan, SM (specific gravity, SG)
-: Meáchan draoibe i gcomparáid le meáchan na toirte céanna uisce. I leabhair níos sine ón Ríocht Aontaithe: meáchan pionta.
+Sainmheáchan (SG, specific gravity)
+: Meáchan draoibe i gcomparáid le meáchan na toirte céanna uisce.
 
 Scáineadh (dunting)
-: Scoilteanna i bpota de bharr struis fuaraithe nó téimh, go minic ag an aisiompú grianchloiche, {{1063 °F; 573 °C}}.
+: Scoilteanna i bpota de bharr strus fuaraithe nó téimh, go minic ag aisiompú na grianchloiche, {{1063 °F; 573 °C}}.
 
-Silice (SiO₂; silica)
-: An foirmeoir gloine; tugtar breochloch nó grianchloch uirthi freisin.
+Silice (silica, SiO₂)
+: An foirmeoir gloine; tugtar breochloch nó grianchloch air freisin.
 
 Slán i gcomhair bia (food safe)
-: I dtéarmaí dlí: scaoileadh níos lú luaidhe agus caidmiam ná na teorainneacha i dtástáil aigéid. Ní hionann é agus gan luaidhe.
+: Sa dlí, níos lú luaidhe agus caidmiam a scaoileadh i dtástáil aigéid ná na teorainneacha. Ní hionann é agus gan luaidhe.
 
 Sliopa agus engobe (slip and engobe)
-: Cré in uisce; brat cosúil le sliopa is ea engobe, ina bhfuil níos mó ábhar nach cré iad.
-
-Snáithlíonrú (crazing)
-: Scoilteanna míne i nglónra a chrapann níos mó ná a chré-ábhar; gréasán scoilteanna nuair is d’aon ghnó é.
+: Cré in uisce; is brat cosúil le sliopa é engobe ina bhfuil níos mó ábhair nach cré é.
 
 Snámh (crawling)
-: An glónra ag tarraingt siar ina mhónóga le linn na bácála, ag fágáil cré lom.
+: An glónra ag tarraingt siar ina bhraonta le linn bácála, ag fágáil cré lom.
+
+Snáithlíonrú (crazing)
+: Scoilteanna míne i nglónra a chrapann níos mó ná a chré-ábhar; gréasán scoilteanna maisiúil (crackle) nuair a bhíonn sé ag teastáil.
 
 Spallú glónra (shivering)
-: An glónra ag scealpadh d’imill mar go bhfuil sé róchomhbhrúite; guais ar ghréithe úsáide.
+: An glónra ag scealpadh de na himill mar go bhfuil sé róchomhbhrúite; guais ar ghréithe úsáide.
 
 Sraith cumaisc (line blend)
-: Tástálacha ina méadaítear comhábhar amháin céim ar chéim idir dhá mhéid. Athraíonn cumasc trí-aiseach trí chomhábhar ar ghreille.
+: Tástálacha a mhéadaíonn comhábhar amháin céim ar chéim idir dhá mhéid. Athraíonn cumasc trí-aiseach trí cinn ar ghreille.
 
 Teimhneoir (opacifier)
-: Ábhar, mar shampla siorcón, ocsaíd stáin nó dé-ocsaíd tíotáiniam, a dhéanann glónra teimhneach.
+: Ábhar, mar shiorcón, ocsaíd stáin nó dé-ocsaíd tíotáiniam, a dhéanann glónra teimhneach.
 
 Ticseatrópacht (thixotropy)
-: Draoib ag sreabhadh nuair a chorraítear í, agus ag téachtadh ina glóthach bhog nuair atá sí socair.
+: Sreabhadh nuair a chorraítear í, agus téachtadh ina glóthach bhog nuair a bhíonn sí socair.
 
 ## Foinsí {#sources}
 
@@ -472,7 +486,7 @@ Ticseatrópacht (thixotropy)
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (ar shuíomh The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (trí The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -483,11 +497,36 @@ Ticseatrópacht (thixotropy)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, “Influences of variable silica and alumina on porcelain glazes of constant RO”, Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb agus Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (tábla Minerals Yearbook, trí Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [EUR-Lex: Treoir 84/500/CEE ón gComhairle an 15 Deireadh Fómhair 1984 maidir le comhfhogasú dhlíthe na mBallstát a bhaineann le hearraí ceirmeacha atá ceaptha teacht i dteagmháil le bia](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: rialachán Ollainnis an 23 Aibreán 2026 a chuireann cinneadh Benelux ar earraí ceirmeacha i dteagmháil le bia i bhfeidhm](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 Eanáir 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

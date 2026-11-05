@@ -89,16 +89,16 @@ Label: Ortonpa cono tablan
 | Cono | Allillamanta, {{27 °F/h; 15 °C/h}} | Chawpi, {{108 °F/h; 60 °C/h}} | Utqaylla, {{270 °F/h; 150 °C/h}} |
 | ---- | ---------------------------------: | ----------------------------: | -------------------------------: |
 | 022  |                                  – |           {{1087 °F; 586 °C}} |              {{1094 °F; 590 °C}} |
-| 018  |                                  – |           {{1319 °F; 715 °C}} |              {{1353 °F; 734 °C}} |
-| 015  |                                  – |           {{1456 °F; 791 °C}} |              {{1504 °F; 818 °C}} |
+| 018  |                {{1267 °F; 686 °C}} |           {{1319 °F; 715 °C}} |              {{1353 °F; 734 °C}} |
+| 015  |                {{1382 °F; 750 °C}} |           {{1456 °F; 791 °C}} |              {{1504 °F; 818 °C}} |
 | 010  |                {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |              {{1679 °F; 915 °C}} |
 | 08   |                {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |              {{1753 °F; 956 °C}} |
-| 07   |                                  – |           {{1789 °F; 976 °C}} |              {{1809 °F; 987 °C}} |
+| 07   |                {{1764 °F; 962 °C}} |           {{1789 °F; 976 °C}} |              {{1809 °F; 987 °C}} |
 | 06   |                {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |             {{1855 °F; 1013 °C}} |
 | 05   |               {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |             {{1911 °F; 1044 °C}} |
 | 04   |               {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |             {{1971 °F; 1077 °C}} |
 | 03   |               {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |             {{2019 °F; 1104 °C}} |
-| 02   |                                  – |          {{2016 °F; 1102 °C}} |             {{2052 °F; 1122 °C}} |
+| 02   |               {{1972 °F; 1078 °C}} |          {{2016 °F; 1102 °C}} |             {{2052 °F; 1122 °C}} |
 | 01   |               {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |             {{2080 °F; 1138 °C}} |
 | 1    |               {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |             {{2109 °F; 1154 °C}} |
 | 4    |               {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |             {{2161 °F; 1183 °C}} |
@@ -460,71 +460,71 @@ Makiwan hornoqa kikin yuyaytam makiwan qatin: tapa huk chikan kicharisqawan qhaw
 
 ## Esmalte ruphachiy {#glaze}
 
-Esmalte ruphachiyqa bizcocho hawapi esmalteta vidrioman chullichin. Aswan qallariqkunaqa pisi ruphay esmaltekunata cono 06–04-pi utaq chawpi ruphay esmaltekunata cono 5–6-pi ruphachinku. Mituykiq esmalteykiq etiquetankunapi conokama ruphachiy, chay yupaypa muyuriqninpi cono packwan. Chullispa esmalteq ukhunpi imakuna kasqanpaqqa, [Esmalte yachaypa qallariynin](/guides/glazing-basics) qhaway.
+Esmalte ruphachiyqa esmaltetam bizcocho hawanpi chullunchispa vidrioman tukuchin. Qhatupi kaq aswan achka pisi ruphay esmaltekunaqa cono 06 utaq 05-paqmi rurasqa (pisi ruphay t'aqaqa cono 06–04-mi), aswan achka chawpi ruphay esmaltekunataq cono 5–6-paq. Esmalteykip mituykip etiquetanpi kaq cono-kama ruphachiy, chay yupaypa muyuriqninpi cono pack churasqawan. Esmalte chulluchkaptin ukhunpi imachus kasqanta yachanaykipaq, qhaway [Esmalte yachaypa qallariynin](/guides/glazing-basics).
 
-### Esmalte ruphachiypaq cargay
+### Esmalte ruphachiypaq hornoman churay
 
-- Esmaltesqa piezakunaqa manam paykunapura nitaq perqakunata llamiykunankuchu: yaqa ½ pulgada (13 mm) saqiy.
-- Chakinmanta esmalteta qichuy (**dry-footing**), utaq pisi ruphay piezakunata **trípodekunapi** churay, puntayuq huch'uy sayachiqkuna. Gres, porcelana piezakunaqa manam trípodekunapi sayanankuchu, chay temperaturakunapi k'askakunku; rantinpi hatun ruphay horno tablakunata amachaq llut'anata (kiln wash) utaq sílice aqutam llamk'achiy.
-- Placakunaq patanmanta perqakama utaq sitterkama pisimanta pisi 1 pulgada (25 mm) saqiy.
+- Esmalteyuq mankakunaqa manam tupanakunanchu nitaq perqakunata llamina: yaqa ½ pulgada (13 mm) saqiy.
+- Esmalteta chakinmanta karunchay (**dry-footing**), utaq pisi ruphay mankakunata **stilts** hawapi churay, ch'aki puntayuq huch'uy sayachiqkuna. Gres porcelanapas manam stilts hawapi sayanankuchu, chay ruphaypi ukhunkuman yaykunku; chaypa rantinqa hatun ruphaypaq kiln wash utaq sílice aqutam churay.
+- Tablakunap patanmanta perqakama utaq kiln sitter-kama pisimanta pisi 1 pulgada (25 mm) saqiy.
 
-### Controlador programakuna
+### Controllerpa ruphachiy kamachiynin
 
-Table: L&L, Bartlett esmalte presetkuna
-Label: Esmalte presetkuna
+Table: L&L, Bartlettpa ñawpaqmanta allichasqa esmalte kamachiyninkuna
+Label: Allichasqa esmalte kamachiykuna
 
-| Segmento                       |                         Wichay kama |             Slow Glaze |             Fast Glaze |
-| ------------------------------ | ----------------------------------: | ---------------------: | ---------------------: |
-| 1                              |                  {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Mana sapaq pasochu |
-| 2                              | Picomanta {{250 °F; 139 °C}} uraypi | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                              |                                Pico |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Q'uñichiy pacha, ch'usaq horno |                                     |         Yaqa 6½–7½ ura |           Yaqa 3–4 ura |
+| T'aqa                          |                                    Kaykama wichay |             Slow Glaze |                  Fast Glaze |
+| ------------------------------ | ------------------------------------------------: | ---------------------: | --------------------------: |
+| 1                              |                                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Manam sapan purichiy kanchu |
+| 2                              | Aswan hanaq ruphaymanta {{250 °F; 139 °C}} uraypi | {{400 °F/h; 222 °C/h}} |      {{570 °F/h; 317 °C/h}} |
+| 3                              |                                Aswan hanaq ruphay |  {{120 °F/h; 67 °C/h}} |      {{200 °F/h; 111 °C/h}} |
+| Q'uñichiy pacha, ch'usaq horno |                                                   |       Yaqa 6½–7½ horas |              Yaqa 3–4 horas |
 
-Table: Maypitaq segmento 2, 3 tukunku, conoman hina (L&L, Bartlett)
-Label: Preset munasqakuna
+Table: Maypi 2, 3 t'aqakuna tukukun, cono-hina (L&L, Bartlett)
+Label: Kamachiypa maskasqan
 
-| Cono |     Segmento 2 tukun |                 Pico |
+| Cono |      2 t'aqa tukukun |   Aswan hanaq ruphay |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze-qa aswan seguro qallariymi, L&Lpa utqaylla ruphachiymanta yuyaychasqanrayku. Picopi 5–10 minutomanta aswan sayachiyta yapaspaqa, L&Lqa nin munasqa temperaturata utaq cono offsetta chayman hina uraykachinaykita, hinaspa willan "Soaking at high temperatures accelerates element and thermocouple wear." ("Hatun temperaturakunapi sayachiyqa resistenciakunata termopartapas aswan utqaytam mullk'un.")
+Slow Glaze-mi aswan mana manchakuy akllana, L&L utqaylla ruphachiymanta willasqanrayku. Aswan hanaq ruphaypi 5–10 minutomanta aswan suyayta (hold) yapanki chayqa, L&L ninmi maskasqa ruphayta utaq cono offset-ta pisiyachinaykita tupananpaq, hinallataq nin: "Hatun ruphaypi suyayqa elementokunap thermocouplepa usukuyninta utqaychin."
 
-### Cono 6: drop-and-hold
+### Cono 6: urayachiy, suyay
 
-Chawpi ruphay esmaltekunaqa wakin kutim **pinholes** nisqawan (hawanpi ancha huch'uy t'uqukuna) utaq pukyukunawan lluqsinku, chullisqamanta gas t'impuspa lluqsisqanmanta. **Drop-and-hold** programaqa patakama ruphachin, yaqa {{100 °F; 56 °C}}-ta utqaylla chiriyachin, hinaspa chaypi sayachin. Digitalfireq simillanpi, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal." ("100°F uraykachispa sayachiyqa chullisqaman aypaq sinchi kaytam qun pukyukunata t'uqyachinanpaq, hinallataq allichakunankupaqpas.")
+Chawpi ruphay esmaltekunaqa wakin kuti **pinholes** (uyanpi ancha huch'uy t'uqukuna) utaq phuqchukunawan lluqsimunku, chullusqa esmaltemanta lluqsiq gasmi saqin. **Urayachiy suyay** (drop-and-hold) kamachiyqa hanaqkama ruphachin, utqaylla yaqa {{100 °F; 56 °C}} chiriyachin, chaypitaq suyan. Digitalfirep simintapi, "100°F urayachiy suyaypas chullusqaman phuqchukunata t'uqyachinanpaq sinchi kayta qun, hampikunankupaq saqichkaspa."
 
-Table: Digitalfire PLC6DS, cono 6 drop-and-hold
+Table: Digitalfire PLC6DS, cono 6 urayachiy suyay
 Label: Digitalfire PLC6DS
 
-| Paso |                               Utqay |         Munasqa kama | Sayachiy                                               |
-| ---- | ----------------------------------: | -------------------: | ------------------------------------------------------ |
-| 1    |               {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuto                                              |
-| 2    |              {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Munaspaqa 30 minuto, pukyu phuyukunata ch'uyanchanapaq |
-| 3    |               {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuto; hatun hornokunapi aswan unay                |
-| 4    | {{900 °F/h; 500 °C/h}}-pi uraykuspa | {{2100 °F; 1148 °C}} | 30 minuto                                              |
+| Purichiy |                              Utqay |             Maskasqa | Suyay                                                     |
+| -------- | ---------------------------------: | -------------------: | --------------------------------------------------------- |
+| 1        |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutos                                                |
+| 2        |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Munaspaqa 30 minutos, phuqchu phuyukunata ch'uyanchanapaq |
+| 3        |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutos; hatun hornokunapi aswan                       |
+| 4        | {{900 °F/h; 500 °C/h}}-wan uraykuy | {{2100 °F; 1148 °C}} | 30 minutos                                                |
 
-PLC6DS-qa yaqa 9 ura 36 minutotam qhipan. Aswan suruq esmaltekunapaqqa, Digitalfireqa rantinpi yaqa {{200 °F; 111 °C}}-tam uraykachin; ancha karuta uraykachiyqa "risks crystallization during the hold" ("sayachiy pachapi cristalizaciónmanmi churan"). Picon {{2200 °F; 1204 °C}}-qa tablaq cono 6-paq {{2232 °F; 1222 °C}}-ninmanta uraypim; Digitalfireqa willan aswan hornokuna cono 6-ta yaqa {{2200 °F; 1204 °C}}-pi aypasqankuta. Kikin hornoykipi cono packwan qhaway.
+PLC6DS yaqa 9 horas 36 minutosta hap'in. Aswan puriq esmaltekunapaqqa Digitalfire yaqa {{200 °F; 111 °C}} urayachin; ancha urayachiyqa "suyaypi cristalkuna rikhurinanpaq manchakuytam churan". Hanaq ruphaynin {{2200 °F; 1204 °C}} cono 6-paq gráficop {{2232 °F; 1222 °C}}-nmanta uraypim; Digitalfire willan aswan achka hornokunaqa yaqa {{2200 °F; 1204 °C}}-pi cono 6-man chayanku. Kikin hornoykipi cono packwan qhawaykuy.
 
-### Allillamanta chiriyachiy
+### Pisi pisimanta chiriyachiy
 
-**Allillamanta chiriyachiy** niyta munan controlador hornota churasqa utqaypi chiriyachisqanta, kikillanmanta uraykunanta saqinanpa rantinpi. Digitalfireq C6DHSC-ninqa PLC6DS-mi, qhipanpitaq {{150 °F/h; 83 °C/h}}-pi chiriyachiy {{2100 °F; 1148 °C}}-manta {{1400 °F; 760 °C}}-kama, chaymanta wañuchiy. Chayqa "improves brilliance and surface quality" ("lliphiyninta hawanpa allin kayninta allinyachin"), rutilo anqaskunatapas yanapan, ichaqa allillamanta chiriyachiyqa "can increase matteness" ("mate kayta yapanmanmi") (huk mate esmalte ch'akiyarqa), hornoq relénkunaq kawsayninta pisiyachinmanpas. L&Lpas cono 6-paq allillamanta chiriyachiy programatam apachimun:
+**Pisi pisimanta chiriyachiy** ninanqa controllerqa hornota kikinmanta urayananpaq saqinanmanta aswan, churasqa utqaywan chiriyachin. Digitalfirep C6DHSC-nqa PLC6DS-mi, chaymanta {{150 °F/h; 83 °C/h}}-wan {{2100 °F; 1148 °C}}-manta {{1400 °F; 760 °C}}-kama chiriyachiy, chaymanta wañuchiy. "Lliphiyta uyap allin kayninta allinchan", rutile anqaskunatapas yanapan, ichaqa pisi pisimanta chiriyachiyqa "mana lliphiq kayta yapanmanmi" (huk mana lliphiq esmalte ch'akiman tukurqan), hornop relayninkunap kawsayninta pisiyachinmanpas. L&Lpas cono 6-paq pisi pisimanta chiriyachiy programata qun:
 
-Table: L&L "User 6": cono 6 esmaltekunapaq allillamanta chiriyachiy
-Label: L, L allillamanta chiriyachiy
+Table: L&L "User 6": cono 6 esmaltekunapaq pisi pisimanta chiriyachiy
+Label: L, Lpa pisi chiriyachiynin
 
-| Paso |                              Utqay |         Munasqa kama |
-| ---- | ---------------------------------: | -------------------: |
-| 1    |             Hunt'a utqaywan wichay | {{2232 °F; 1222 °C}} |
-| 2    |            Hunt'a utqaywan uraykuy | {{1900 °F; 1038 °C}} |
-| 3    | {{150 °F/h; 83 °C/h}}-pi uraykuspa |  {{1500 °F; 816 °C}} |
+| Purichiy |                             Utqay |             Maskasqa |
+| -------- | --------------------------------: | -------------------: |
+| 1        |            Hunt'a utqaywan wichay | {{2232 °F; 1222 °C}} |
+| 2        |           Hunt'a utqaywan uraykuy | {{1900 °F; 1038 °C}} |
+| 3        | {{150 °F/h; 83 °C/h}}-wan uraykuy |  {{1500 °F; 816 °C}} |
 
-Skuttpa controladorninkunapas ñawpaq q'uñichiytam huk pasolla chiriyachiy opcióntawan qunku.
+Skuttpa controllerninkunapas ñawpaq q'uñichiyta huk purichiylla chiriyachiytapas qunku.
 
-### Makiwan hornopi
+### Makiwan llamk'aq hornopi
 
-Makiwan hornoqa manam kay programakunata chiqaqta qatiyta atinchu, ichaqa yuyayqa kikinmi: qallariypi llamp'ulla, chawpinpi parejo, tukukuytaq qhawasqa. Bracker'spa pisi ruphay esmalte programanqa uraypi "Makiwan hornokuna sut'inchasqa" nisqapim kachkan; aswan q'uñi conokunapaqqa yapan "an average of 15–30 minutes per cone number" ("sapa cono yupaypaq chawpinpi 15–30 minuto"). Pirómetrowan, yachaywan, qillqaywan, drop-and-hold-ta utaq allillamanta chiriyachiyta yaqa kikinta ruwayta atinki interruptorkunata makiwan uraykachispa, Digitalfire yuyaychasqanman hina.
+Makiwan llamk'aq hornoqa manam kay kamachiykunata chiqanta qatiyta atinchu, ichaqa yuyaychayqa kaqllam: qallariypi llamp'ulla, chawpinpi kaqlla, qhawasqa tukukuy. Brackerpa pisi ruphay esmalte kamachiyninqa uraypi "Makiwan llamk'aq hornokuna sut'ita" nisqapim; aswan ruphaq conokunapaqqa yapan "sapa cono yupaypaq chawpi yupaypi 15–30 minutos". Pyrometerwan, yachakuywan, qillqana p'anqawanpas, makiwan switchkunata pisiyachispa yaqa urayachiy suyayta utaq pisi pisimanta chiriyachiyta kikinchayta atinki, Digitalfire yuyaychasqan hina.
 
 ## Makiwan hornokuna sut'inchasqa {#manual-kilns}
 

@@ -59,29 +59,31 @@ Label: Ohun èlò tí ń yọ́
 
 Ewu pàtàkì òjé yàtọ̀: kì í ṣe ṣíbí kan, bí kò ṣe eruku díẹ̀díẹ̀ tí a ń gbé mì fún ọ̀sẹ̀ tàbí oṣù, láìsí àmì ìkìlọ̀ kankan (ẹ wo Òjé àti àwọn ọmọdé, ní ìsàlẹ̀).
 
-## Pípa ohun èlò mọ́ nílé {#storing-materials}
+## Fífi ohun èlò pamọ́ nílé {#storing-materials}
 
-Kò sí àjọ ìjọba kankan tí ó ṣe òfin fún pípa ohun èlò glaze mọ́ nílé, ṣùgbọ́n àwọn ojú-ìwé ìlera àti ààbò fohùn ṣọ̀kan: ẹ ṣe iṣẹ́ náà ní ààyè tirẹ̀, kúrò lọ́dọ̀ àwọn ọmọdé. Ẹ̀ka ìlera Pennsylvania, nígbà tí ó ń kọ nípa iṣẹ́ àfipawọ́ tí ń lo òjé, sọ pé "Ẹ lo ibi iṣẹ́ tí a yà sọ́tọ̀ tàbí garéèjì fún iṣẹ́ àfipawọ́ yín, kí ẹ sì pa àwọn ọmọdé mọ́ kúrò ní ibẹ̀."
+Kò sí àjọ ìjọba tí ó ń ṣe òfin fún fífi ohun èlò glaze pamọ́ nílé, ṣùgbọ́n àwọn ojú-ìwé ìlera àti ààbò fohùnṣọ̀kan: ẹ jẹ́ kí iṣẹ́ náà wà ní àyè tirẹ̀, jìnnà sí àwọn ọmọdé. Ẹ̀ka ìlera Pennsylvania, nígbà tí ó ń kọ nípa iṣẹ́ àfipawọ́ tí ó ń lo òjé (lead, Pb), sọ pé "Ẹ lo ibi iṣẹ́ tí a yà sọ́tọ̀ tàbí gáréèjì fún iṣẹ́ àfipawọ́ yín kí ẹ sì jẹ́ kí àwọn ọmọdé jìnnà sí ibí yìí."
 
-### Àkọsílẹ̀ àyẹ̀wò ìpamọ́
+### Àkójọ àyẹ̀wò fún ìpamọ́
 
-Àwọn wọ̀nyí ni òfin gbogbogbò fún ìdènà májèlé tí a lò fún glaze. Kò sí ìlànà iṣẹ́ amọ̀ kankan tí ó ṣe wọ́n, ṣùgbọ́n a dábàá gbogbo wọn:
+Àwọn wọ̀nyí ni òfin gbogbogbò fún dídènà májèlé tí a lò fún glaze. Kò sí ìlànà iṣẹ́ amọ̀ tí ó gbé wọn kalẹ̀, ṣùgbọ́n a dábàá gbogbo wọn:
 
-- Ẹ tì àwọn ohun èlò gbígbẹ pa mọ́: kọ́bọ́ọ̀dù kan, tàbí yàrá, garéèjì tàbí ilé kékeré tí a lè tì. Pẹpẹ gíga ń ṣèrànwọ́, ṣùgbọ́n àwọn ọmọdé máa ń gùn òkè. Bí ẹ bá lè tì nǹkan díẹ̀ péré pa ní ìbẹ̀rẹ̀, ẹ bẹ̀rẹ̀ pẹ̀lú àwọn ohun èlò tí ń yọ́ àti ohun àwọ̀.
-- Ẹ pa ohun èlò mọ́ sínú àpò tàbí agolo wọn àkọ́kọ́. Bí ẹ bá kó ọ̀kan sínú ohun ìkónǹkan mìíràn, ẹ kọ orúkọ rẹ̀ sí i gẹ́gẹ́ bí a ṣe kọ ọ́ gan-an sórí àpò náà.
-- Ẹ má ṣe lo ohun ìkónǹkan oúnjẹ tàbí ohun mímu láé (agolo yogurt, ìgò, gọ́ọ̀bù) fún ohun èlò glaze, kódà bí ẹ bá kọ orúkọ sí i. Ọmọdé mọ ohun tí agolo yogurt ń gbé.
-- Ẹ pa irinṣẹ́ ilé iṣẹ́ amọ̀ (ṣọ́bìrì kékeré, ṣíbí, ohun ìrú, asẹ́, òṣùwọ̀n) mọ́ sínú ilé iṣẹ́ amọ̀. Ẹ má ṣe lo irinṣẹ́ ilé ìdáná fún glaze láé, tàbí irinṣẹ́ glaze fún oúnjẹ.
-- Ẹ pa glaze olómi mọ́ sínú garawa tí a kọ orúkọ sí, tí ìdérí wọn wà lórí.
-- Ẹ pa ìwé ìsọfúnni ààbò ohun èlò kọ̀ọ̀kan mọ́ pẹ̀lú rẹ̀, lórí ìwé tàbí nínú fóònù yín.
-- Ẹ má ṣe pa ohunkóhun láti ilé iṣẹ́ amọ̀ mọ́ sínú ilé ìdáná: kò sí àpò, garawa, irinṣẹ́ tàbí test tile.
+- Ẹ ti àwọn ohun èlò gbígbẹ pa mọ́: kọ́bọ́ọ̀dù, tàbí yàrá, gáréèjì tàbí ilé kékeré tí a lè tì. Pẹpẹ gíga ń ṣèrànwọ́, ṣùgbọ́n àwọn ọmọdé máa ń gùn. Bí ẹ bá lè ti nǹkan díẹ̀ pa mọ́ nìkan ní ìbẹ̀rẹ̀, ẹ bẹ̀rẹ̀ pẹ̀lú ohun èlò tí ń yọ́ nínú omi àti ohun àwọ̀.
+- Ẹ fi ohun èlò sílẹ̀ nínú àpò tàbí àpótí ìpilẹ̀ṣẹ̀ wọn. Bí ẹ bá kó ọ̀kan sínú ohun ìkónǹkan mìíràn, ẹ lẹ àmì sí i pẹ̀lú orúkọ náà gẹ́lẹ́ bí a ṣe kọ ọ́ sórí àpò.
+- Ẹ má ṣe lo ohun ìkónǹkan oúnjẹ tàbí ohun mímu (ago yogurt, ìgò, ìgò ọtí) fún ohun èlò glaze láé, kódà bí wọ́n bá ní àmì. Ọmọdé mọ ohun tí ó wà nínú ago yogurt.
+- Ẹ fi àwọn irinṣẹ́ ibi iṣẹ́ (ṣíbí ìkó, ṣíbí, ohun ìrú, asẹ́, òṣùwọ̀n) sílẹ̀ ní ibi iṣẹ́. Ẹ má ṣe lo irinṣẹ́ ilé ìdáná fún glaze láé, tàbí irinṣẹ́ glaze fún oúnjẹ.
+- Ẹ fi àwọn glaze olómi sínú garawa tí ó ní àmì pẹ̀lú ìdérí lórí.
+- Ẹ fi ìwé ìsọfúnni ààbò (SDS) ohun èlò kọ̀ọ̀kan sí ẹ̀gbẹ́ rẹ̀, lórí ìwé tàbí lórí fóònù yín.
+- Ẹ má ṣe fi ohunkóhun láti ibi iṣẹ́ sí ilé ìdáná: kò sí àpò, garawa, irinṣẹ́ tàbí táílì ìdánwò.
 
-Fún rírà àti pípa ohun èlò mọ́ ní kíkún, ẹ wo [Bí a ṣe ń ṣe glaze](/guides/making-a-glaze).
+Fún rírà àti fífi ohun èlò pamọ́ ní kíkún, ẹ wo [Bí a ṣe ń ṣe glaze](/guides/making-a-glaze).
 
-### Ìdọ̀tí glaze àti omi ìfọ̀
+### Ìdọ̀tí glaze àti omi ìṣan
 
-Ẹ má ṣe da glaze, tàbí omi tí ẹ ti fi fọ irinṣẹ́ glaze, sínú sinki tàbí sórí ọgbà láé. Crafts Council ti UK dábàá garawa omi ọ̀tọ̀ fún fífọ ọwọ́, búrọ́ọ̀ṣì, asẹ́ àti irinṣẹ́. Ẹ jẹ́ kí ó silẹ̀ mọ́jú, ẹ da omi tí ó mọ́ kúrò, lẹ́yìn náà ẹ gbẹ glaze tí ó silẹ̀, kí ẹ sì sọ ọ́ sínú àpótí ìdọ̀tí (ó ń lọ sí ibi ìkódọ̀tísí), kì í ṣe sínú ihò omi ìdọ̀tí láé.
+Ẹ má ṣe da glaze, tàbí omi tí ẹ fi ṣan irinṣẹ́ glaze, sínú síǹkì tàbí sórí ọgbà láé. Crafts Council ti UK dábàá garawa omi ọ̀tọ̀ fún fífọ ọwọ́, búrọ́ọ̀ṣì, asẹ́ àti irinṣẹ́. Ẹ jẹ́ kí ó rọlẹ̀ ní òru mọ́jú, ẹ da omi tí ó mọ́ lókè nù, lẹ́yìn náà ẹ gbẹ glaze tí ó rọlẹ̀ kí ẹ sì sọ ọ́ sínú àpò ìdọ̀tí (ó ń lọ sí ibi ìdalẹ̀nù), ẹ má ṣe da á sínú ihò omi ìdọ̀tí láé.
 
-A dábàá ìdérí lórí garawa náà: ẹrẹ̀ inú rẹ̀ ní àwọn irin kan náà bí glaze, àwọn ẹranko ilé sì máa ń mu omi tí ó dúró. Òfin ìdànù yàtọ̀ láti ibì kan sí ibòmíràn, nítorí náà ẹ wo ìwé ìsọfúnni ààbò ọjà kọ̀ọ̀kan, kí ẹ sì béèrè lọ́wọ́ ìjọba ìbílẹ̀ yín tàbí ilé iṣẹ́ omi bí ẹ kò bá dá yín lójú.
+A dábàá ìdérí lórí garawa yẹn: ẹrẹ̀ náà ní irin kan náà bí glaze, àwọn ẹran ọ̀sìn sì ń mu omi tí ó dúró. Òfin ìdàsílẹ̀ yàtọ̀ láti ibì kan sí ibòmíràn, nítorí náà ẹ wo ìwé ìsọfúnni ààbò ọjà kọ̀ọ̀kan, kí ẹ sì béèrè lọ́wọ́ ìjọba ìbílẹ̀ yín tàbí ilé-iṣẹ́ omi bí ẹ kò bá dá yín lójú.
+
+Àwọn ibi iṣẹ́ kan máa ń sun ẹrẹ̀ gbígbẹ kí wọ́n tó jù ú nù. Wọ́n ń fi í sínú abọ́ àfikún tí a ó lò tán: lẹ́yìn ìsun, a kò lè lo abọ́ náà mọ́. Ẹ kún abọ́ náà ní ìdámẹ́rin nìkan, nítorí ẹrẹ̀ náà ń hó, ó sì ń ru bí ó ti ń yọ́, kí ẹ sì fi àwo bò ó. Ẹ gbé e ka orí pẹpẹ tí ó ní kiln wash tàbí pẹlẹbẹ àfikún, bí ó bá ṣàn sílẹ̀. Ìsun ń sọ ẹrẹ̀ náà di gíláàsì, tí ó ń di irin mú pinpin ju lẹ́búlẹ́bú tí ó dẹ̀ lọ, nítorí náà ó láàbò jù ní ibi ìdalẹ̀nù. Ẹ di ẹrẹ̀ gbígbẹ mú bí ẹ ṣe máa ń di glaze gbígbẹ mú, pẹ̀lú respirator àti láìsí kí ẹ ru eruku sókè.
 
 ## Pípa eruku mọ́ sínú ilé iṣẹ́ amọ̀ {#keeping-dust-in-the-studio}
 

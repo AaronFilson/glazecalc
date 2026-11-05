@@ -121,131 +121,152 @@ Derek Au na-atụ n'otu efere n'ikpo dị iche iche, ka e wee nwee ike ikpupụt
 
 ## Ịgwakọta na ịnyọ {#mixing}
 
-### Ole mmiri
+### Mmiri ole
 
-Isi mmalite ekwekọrịtaghị. Derek Au na-amalite ọkpụrụkpụ, na 50 mL mmiri kwa 100 g ntụ, ma gbakwunye karịa emesịa. Potterycrafts na-enye 65 mL kwa 100 g maka otu glaze{{en: glaze}} ntụ. UT Austin na-eji mmiri na ntụ hà n'ịdị arọ, mgbe Digitalfire tinyere 20 kg ntụ n'ime 20 kg mmiri, ọ tụrụ specific gravity 1.46.
+Isi mmalite ekwekọrịtaghị. Derek Au na-amalite n'ọkpụrụkpụ, ya na 50 mL mmiri maka 100 g ntụ, ma na-agbakwunye ọzọ emesịa. Potterycrafts na-enye 65 mL maka 100 g maka otu glaze ntụ. UT Austin na-eji ịdị arọ mmiri na ntụ hà nhata, mgbe Digitalfire tinyere 20 kg ntụ n'ime 20 kg mmiri, ọ tụrụ SG nke 1.46.
 
-Ọ dị mfe ịgbakwunye mmiri, ọ na-ewe oge iwepụ ya, ya mere malite na obere. Atụmatụ anyị: malite na **ihe dị ka 70 ruo 80 mL kwa 100 g** (700 ruo 800 mL kwa kilogram, ma ọ bụ ihe dị ka 11 ruo 12 US fl oz kwa pound). Mee slake, gwakọta ma nyọọ n'ọkpụrụkpụ ahụ, mgbe ahụ gbakwunye mmiri ntakịrị ntakịrị ruo mgbe specific gravity ziri ezi. 1 mL mmiri dị arọ 1 g, ya mere ị nwere ike ịtụ ya. Ọ bụrụ na ị gafere, hapụ glaze ka ọ dọdaa, mgbe ahụ jiri ogbo wepụ ma ọ bụ wụpụ mmiri doro anya n'elu ya.
+Mmiri dị mfe ịgbakwunye ma siri ike iwepụ, ya mere malite na obere. Atụmatụ anyị: malite na **ihe dị ka 70 ruo 80 mL maka 100 g** (700 ruo 800 mL maka kilogram, ma ọ bụ ihe dị ka 11 ruo 12 US fl oz maka pound). Kwọọ ya, gwakọta ma nyọọ ya n'ọkpụrụkpụ ahụ, emesịa gbakwunye mmiri nke nta nke nta ruo mgbe SG ziri ezi. 1 mL mmiri dị arọ 1 g, ya mere ị nwere ike ịtụ ya. Ọ bụrụ na ị gafere, hapụ glaze ka o dosie, emesịa jiri ogbo wepụ mmiri doro anya dị n'elu ma ọ bụ wụpụ ya.
 
 ### Ngwa ọrụ na mmiri
 
-- **Ihe ịgwakọta propeller.** Digitalfire kpọrọ nke dị mma "dị oke mkpa". Drill nwere waya na paddle ịgwakọta na-arụ ọrụ ahụ na bọket. UT Austin na-agba ya opekata mpe 4 ruo 5 nkeji mgbe glaze yiri ka a gwakọtala ya, ma na-edebe agụba ya pụọ na bọket, nke ọ nwere ike ikpochapụ plastik site na ya.
-- **Blender.** Ọ "na-arụ ọrụ nke ọma nke ukwuu maka obere batch" (Digitalfire). Debe ya naanị maka glaze: ọ dịghị mgbe ọ ga-alaghachi na kichin ọzọ.
-- **Whisk ma ọ bụ osisi.** Nhọrọ Zakin mgbe enweghị ihe ịgwakọta.
+- **Igwe ngwakọta propeller.** Digitalfire kpọrọ nke ọma "dị mkpa". Drill nwere waya ya na ihe ngwakọta na-arụ ọrụ ahụ na bọket. UT Austin na-eji ya opekata mpe nkeji 4 ruo 5 mgbe glaze yiri ka agwakọtala ya, ma na-eme ka agụba ahụ ghara imetụ bọket, nke ọ nwere ike ịkpachapụ plastik na ya.
+- **Blender.** Ọ "na-arụ ọrụ nke ọma maka batch nta" (Digitalfire). Debe ya naanị maka glaze: ọ gaghị alaghachi na kichin ọ dịla mgbe.
+- **Ihe ịkụ ma ọ bụ osisi.** Nhọrọ Zakin mgbe enweghị igwe ngwakọta.
 
-Mmiri dịkwa iche iche, Digitalfire kwukwara na ọ na-agbanwe otu slurry si akpa àgwà. Derek Au na-eji mmiri reverse-osmosis n'ihi na mmiri pọmpụ ya siri ike. Ihe ọ bụla i ji, dee ya.
+Mmiri na-adịgasịkwa iche, Digitalfire kwukwara na ọ na-agbanwe otu slurry (ntụ glaze na mmiri) si akpa àgwà. Derek Au na-eji mmiri reverse osmosis n'ihi na mmiri pọmpụ ya siri ike (hard water). Ihe ọ bụla ị na-eji, dee ya.
 
 ### Nzọụkwụ na nzọụkwụ
 
-1. Yiri respirator gị, na uwe aka rọba ma ọ bụrụ na aka gị ga-abanye. Zakin na-eyi mask site na mmalite ịtụ ihe ruo mgbe glaze dị mmiri.
-2. Tụọ ihe dị ka 70 ruo 80 mL mmiri kwa 100 g ntụ n'ime bọket.
-3. Jiri nwayọọ tinye ntụ a tụrụ atụ, site n'ebe dị ala. UT Austin na-etinye ntụ na mmiri dị ọkụ; Zakin na Au na-etinye mmiri na ntụ. Anyị na-atụ aro ntụ n'ime mmiri, nke na-ebuli uzuzu pere mpe karịa, belụsọ maka usoro glaze nwere ọtụtụ bentonite: buru ụzọ kpalie ntụ akọrọ ya ọnụ.
-4. Mee ya **slake**: hapụ ntụ ka ọ mịkọọ mmiri na-akpaliteghị ya. Digitalfire na-echere ihe dị ka nkeji 20. Ntụ nwere gum ma ọ bụ binder kwesịrị iguzo abalị niile.
-5. Gwakọta ruo mgbe enweghị akpa akọrọ ma ọ bụ mkpụrụ.
+1. Yiri respirator gị, na uwe aka rọba ma ọ bụrụ na aka gị ga-abanye n'ime ya. Zakin na-eyi ihe mkpuchi ihu site na mmalite ịtụ ruo mgbe glaze dị mmiri.
+2. Tụọ ihe dị ka 70 ruo 80 mL mmiri maka 100 g ntụ ọ bụla n'ime bọket.
+3. Tinye ntụ a tụrụ atụ nwayọọ, site n'ebe dị ala. UT Austin na-etinye ntụ na mmiri dị ọkụ ọkụ; Zakin na Au na-etinye mmiri na ntụ. Anyị na-atụ aro ntụ n'ime mmiri, nke na-ebuli obere uzuzu, ma e wezụga usoro nwere ọtụtụ bentonite: kpalie ntụ akọrọ ya ọnụ na mbụ.
+4. **Kwọọ ya**: hapụ ntụ ahụ ka ọ mịrị mmiri na-akpaliteghị ya. Digitalfire na-echere ihe dị ka nkeji 20. Ntụ nwere gum ma ọ bụ ihe njikọ kwesịrị iguzo abalị niile.
+5. Gwakọta ruo mgbe enweghị ebe akọrọ ma ọ bụ mkpụrụ.
 6. Nyọọ ya ugboro abụọ (lee n'okpuru).
-7. Kpuchie ya ma hapụ ya ka ọ zuo ike abalị niile, mgbe ahụ gwakọta ọzọ ma lelee ala ya maka akwa siri ike.
-8. Tụọ specific gravity, ma gbakwunye mmiri ntakịrị ntakịrị ruo ebumnuche gị.
-9. Dee akara na bọket, ma dee ihe ị mere.
-10. Jiri mmiri hichaa: mee mop n'ala ma hichaa elu ọ bụla, gụnyere mpụga ihe nchekwa ihe ndị ahụ.
+7. Kpuchie ya ma hapụ ya ka o zuo ike abalị niile, emesịa gwakọta ọzọ ma lelee n'okpuru ma ọ nwere oyi akwa siri ike.
+8. Tụọ SG, ma gbakwunye mmiri nke nta nke nta ka i ruo ihe ị na-achọ. Iji mara SG akọrọ nke glaze gị, tụọkwa slurry i mechara (lee n'okpuru).
+9. Tinye akara na bọket, ma dee ihe i mere.
+10. Jiri mmiri hichaa: jiri mop hichaa ala ma hichaa elu ọ bụla, gụnyere mpụta igbe ihe.
 
 ### Ịnyọ
 
-**Ihe nyọ** (sieve) bụ ụgbụ dị n'ime okpokolo. Iji brọsh tụpụ glaze site na ya na-agbaji mkpụrụ ịgwakọta hapụrụ ma jide irighiri ihe ga-aghọ ntụpọ n'ọkụ. Ka nọmba **mesh** dị elu, ka ụgbụ ahụ dị nro: 80 mesh nwere oghere ihe dị ka 0.18 mm, 100 mesh ihe dị ka 0.15 mm.
+**Ihe nyọ** bụ ụgbụ dị n'ime frame. Iji brọsh kwanye glaze site na ya na-agbaji mkpụrụ ngwakọta hapụrụ ma na-ejide ntụpọ ndị ga-agba ọkụ ghọọ ntụpọ. Ka nọmba **mesh** dị elu, ka ụgbụ ahụ na-adị nro: mesh 80 nwere oghere dị ihe dị ka 0.18 mm, mesh 100 bụ ihe dị ka 0.15 mm.
 
-Isi mmalite na-atụ aro mesh dị iche iche. Zakin na-enyọ ugboro abụọ site na 50 ma ọ bụ 80 mesh. Derek Au na-eji 120 mesh maka ọtụtụ glaze, ọkachasị ndị nwere cobalt ma ọ bụ iron: ịgafe ugboro atọ site na 80 mesh ka hapụrụ ntụpọ iron n'otu celadon, otu ịgafe site na 120 mesh gwọrọ ya. Ọ na-edebe 60 ruo 80 mesh maka glaze ntụ nkụ na ndị ọzọ nwere ihe siri ike. Potterycrafts, na UK, na-atụ aro 60 ruo 80 mesh. Nhọrọ dị nchebe:
+Isi mmalite na-atụ aro mesh dị iche iche. Zakin na-anyọ ugboro abụọ site na mesh 50 ma ọ bụ 80. Derek Au na-eji mesh 120 maka ọtụtụ glaze, karịsịa ndị nwere cobalt ma ọ bụ iron: ịgafe ugboro atọ site na mesh 80 ka hapụrụ ntụpọ iron n'otu celadon, ịgafe otu ugboro site na mesh 120 dozikwara ya. Ọ na-edebe mesh 60 ruo 80 maka glaze ntụ na ndị ọzọ nwere ihe siri ike. Potterycrafts, na UK, na-atụ aro mesh 60 ruo 80. Nhọrọ dị nchekwa:
 
-Table: Ihe nyọ i ga-eji
+Table: Ihe nyọ ị ga-eji
 Label: Mesh ihe nyọ
 
 | Glaze                                                 | Ihe nyọ                           |
 | ----------------------------------------------------- | --------------------------------- |
-| Ọtụtụ glaze                                           | Ịgafe ugboro abụọ site na 80 mesh |
-| Glaze nwere ihe na-enye agba dịka cobalt ma ọ bụ iron | 100 ruo 120 mesh                  |
-| Glaze ntụ nkụ, na ndị ọzọ nwere ihe siri ike          | 60 ruo 80 mesh                    |
+| Ọtụtụ glaze                                           | Ịgafe ugboro abụọ site na mesh 80 |
+| Glaze nwere ihe na-enye agba dịka cobalt ma ọ bụ iron | Mesh 100 ruo 120                  |
+| Glaze ntụ, na ndị ọzọ nwere ihe siri ike              | Mesh 60 ruo 80                    |
 
-## Specific gravity {#specific-gravity}
+## SG (specific gravity) {#specific-gravity}
 
-**Specific gravity** (SG) na-agwa gị ole ntụ dị na slurry gị. Ọ bụ ịdị arọ otu olu glaze{{en: glaze}} kere site n'ịdị arọ otu olu mmiri ahụ. Mmiri bụ 1.00, glaze dị na {{SG 1.45}} dịkwa arọ 145 g kwa 100 mL. Ịgwakọta ruo SG a tụrụ atụ bụ otu ị ga-esi nweta otu ọkpụrụkpụ ahụ, na otu mkpuchi ahụ, oge ọ bụla. O nweghị unit, ya mere ọ bụ otu na gram ma ọ bụ ounce.
+**SG** (specific gravity) na-agwa gị ntụ ole dị na slurry gị. Ọ bụ ịdị arọ nke otu olu glaze kewara site n'ịdị arọ nke otu olu mmiri ahụ. Mmiri bụ 1.00, glaze dị na {{SG 1.45}} dịkwa arọ 145 g maka 100 mL. Ịgwakọta ruo SG a tụrụ atụ bụ otu ị ga-esi nweta otu ọkpụrụkpụ ahụ, na otu mkpuchi ahụ, oge ọ bụla. O nweghị nkeji, ya mere ọ bụ otu na gram ma ọ bụ ounce.
 
 ### Tụọ ya site n'ịtụ 100 mL
 
-1. Kpalie glaze ka ọ dịghị ihe dara n'ala.
-2. Tinye **graduated cylinder** 100 mL (tube ịtụ ogologo nwere akara) ma ọ bụ sirinji 100 mL n'elu ihe ọtụtụ, ma mee tare.
-3. Jupụta ya na glaze ruo kpọmkwem 100 mL, na-agụ akara ahụ n'ogo anya.
-4. Tụọ ya ma kee gram ahụ site na 100: 145 g bụ SG 1.45.
+1. Kpalie glaze ka ihe ọ bụla ghara idosi.
+2. Dobe **graduated cylinder** 100 mL (tube ogologo nwere akara maka ịtụ) ma ọ bụ syringe 100 mL n'elu ihe ọtụtụ, ma mee ya efu (tare).
+3. Jupụta ya glaze ruo 100 mL kpọmkwem, na-agụ akara ahụ n'ọkwa anya.
+4. Tụọ ya ma kewaa gram site na 100: 145 g bụ SG 1.45.
 
-Digitalfire na-akakwa akara n'iko n'ogo 500 g mmiri, jupụta ya na glaze ruo akara ahụ, ma kee ịdị arọ ahụ site na 500; ihe ịtụ ka ukwuu, juru karịa, na-atụ nke ọma karịa. **Hydrometer**, ihe na-ese n'elu a na-agụ ebe ọ nọ na glaze, dị ngwa mana nwere ike ịgụ glaze dị ọkpụrụkpụ ma ọ bụ kpụkọrọ akpụkọ n'ụzọ ezighi ezi. Hydrometer UK, dịka nke Potclays, na-agụ na degree Baumé (°Bé). Site na mgbakọ anyị, SG = 145 ÷ (145 − °Bé), ya mere 46 °Bé bụ ihe dị ka 1.46. Akwụkwọ UK ochie na-enye **pint weight**, ounce dị na imperial pint nke glaze: kee ya site na 20, ya mere 29 oz bụ ihe dị ka SG 1.45 (ọ bụkwa mgbakọ anyị).
+Digitalfire na-etinyekwa akara n'iko n'ọkwa 500 g mmiri, jupụta ya glaze ruo akara ahụ, ma kewaa ịdị arọ ahụ site na 500; ihe ọtụtụ buru ibu, jupụtara karịa ziri ezi karịa. **Hydrometer**, ihe na-ese n'elu a na-agụ ebe ọ na-anọdụ na glaze, dị ngwa mana ọ nwere ike ịgụ glaze dị ọkpụrụkpụ ma ọ bụ kpụkọrọ akpụkọ n'ụzọ na-ezighị ezi. Hydrometer UK, dịka nke Potclays, na-agụ na ogo Baumé (°Bé). Site na ngụkọ anyị, SG = 145 ÷ (145 − °Bé), ya mere 46 °Bé bụ ihe dị ka 1.46. Akwụkwọ UK ochie na-enye **pint weight**, ounce dị n'otu pint imperial nke glaze: kewaa ya site na 20, ya mere 29 oz bụ ihe dị ka SG 1.45 (ngụkọ anyị kwa).
 
 ### Ihe ị ga-achọ
 
-Isi mmalite ekwekọrịtaghị, karịsịa n'itinye site na brọsh na ịgbasa, ebe onye na-ere ngwa UK Potclays na-enye ọnụ ọgụgụ dị elu karịa nke ukwuu (nke ya bụ "maka nduzi naanị"). Were ọnụ ọgụgụ ọ bụla dịka ebe mmalite. Isi ndụmọdụ Digitalfire bụ ịchọta SG na ịkpụkọ na-arụ ọrụ maka glaze ọ bụla, mgbe ahụ mee ha ọzọ ma dee ha.
+Isi mmalite ekwekọrịtaghị, karịsịa maka iji brọsh tee na ịgba ya, ebe onye na-ere ahịa UK Potclays na-enye ọnụ ọgụgụ dị elu karịa nke ukwuu (nke ya bụ "maka ntụzịaka naanị"). Were nọmba ọ bụla dịka ebe mmalite. Ndụmọdụ isi Digitalfire bụ ịchọta SG na ịkpụkọ na-arụ ọrụ maka glaze ọ bụla, emesịa megharịa ha ma dee ha.
 
-Table: Ebumnuche specific gravity, ebe isi mmalite ekwekọrịtaghị
-Label: Ebumnuche specific gravity
+Table: SG a na-achọ, ebe isi mmalite ekwekọrịtaghị
+Label: SG a na-achọ
 
-| Ojiji  | Digitalfire na Glazy                                                                                                                                                   | Potclays (UK)                                      | Ebe mmalite dị nchebe                                                              |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Ịbanye | {{SG 1.40}} (maka ịbanye sekọnd 5) ruo {{SG 1.50}} (maka ịbanye sekọnd 1); glaze e gwakọtara n'ụlọ nke kpụkọrọ na-adị mma kacha na {{SG 1.43–1.45}}                    | Doro anya {{SG 1.46–1.48}}; nwere agba {{SG 1.61}} | {{SG 1.45}}; mee ka ọ dị gịrịgịrị ruo {{SG 1.43}} ma mee ka ọ kpụkọọ ma ọ na-atapụ |
-| Brọsh  | {{SG 1.25}} (doro anya, gịrịgịrị) ruo {{SG 1.55}} (ịchọ mma dị nta, gbara ọchịchịrị)                                                                                   | {{SG 1.71–1.81}}                                   | Soro ngwaahịa ahụ; jiri CMC gum ma ọ bụ brushing medium                            |
-| Ịgbasa | Enweghị ọnụ ọgụgụ; Hopper, na-ede maka Ceramic Arts Network, kwuru na ọ dị gịrịgịrị karịa nke ukwuu, ya na deflocculant (ihe mgbakwunye na-eme ka slurry na-asọ karịa) | {{SG 1.71}}                                        | Enweghị ọnụ ọgụgụ a pụrụ ịtụkwasị obi; gbasaa naanị n'ime ụlọ ịgbasa               |
+| Ojiji  | Digitalfire na Glazy                                                                                                                                                   | Potclays (UK)                                      | Ebe mmalite dị nchekwa                                                                      |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Ịmikpu | {{SG 1.40}} (maka ịmikpu sekọnd 5) ruo {{SG 1.50}} (maka ịmikpu sekọnd 1); glaze agwakọtara n'ụlọ kpụkọrọ akpụkọ na-arụ ọrụ nke ọma karịa na {{SG 1.43–1.45}}          | Doro anya {{SG 1.46–1.48}}; nwere agba {{SG 1.61}} | {{SG 1.45}}; mee ka ọ dị gịrịgịrị ruo {{SG 1.43}} ma mee ka ọ kpụkọ ma ọ bụrụ na ọ na-adapụ |
+| Brọsh  | {{SG 1.25}} (doro anya gịrịgịrị) ruo {{SG 1.55}} (nkọwa gbara ọchịchịrị)                                                                                               | {{SG 1.71–1.81}}                                   | Soro ngwaahịa ahụ; jiri CMC gum ma ọ bụ brushing medium                                     |
+| Ịgba   | Enweghị ọnụ ọgụgụ; Hopper, na-ede maka Ceramic Arts Network, kwuru na ọ dị gịrịgịrị karịa nke ukwuu, ya na deflocculant (ihe mgbakwunye na-eme ka slurry na-asọ karịa) | {{SG 1.71}}                                        | Enweghị nọmba a pụrụ ịtụkwasị obi; gbaa naanị n'ime spray booth                             |
 
-Iji lelee glaze ịbanye site n'anya, AMACO na-abanye ya sekọnd 5 ma chọọ mkpuchi ọkpụrụkpụ ya dị ka nke dime US. Digitalfire na-agba tile a banyere sekọnd 5 ọkụ iji lelee.
+Iji anya lelee glaze ịmikpu, AMACO na-amikpu ya sekọnd 5 ma na-achọ mkpuchi dị ọkpụrụkpụ dịka dime America. Digitalfire na-agba tile a mikpuru sekọnd 5 ọkụ iji lelee.
 
-### Mmiri maka SG a chọrọ: atụmatụ anyị
+### Mmiri maka SG a na-achọ: atụmatụ anyị
 
-Tebụl dị n'okpuru bụ mgbakọ anyị, ọ bụghị nke isi mmalite. O chere na irighiri ntụ ahụ nwere density 2.6 g kwa cm³, nke bụ echiche, ọ bụghị ihe a tụrụ atụ. Ụrọ, ihe na-agbaze na mmiri na ịkpụkọ niile na-agbanwe ezigbo glaze, ya mere jiri ya malite, mgbe ahụ tụọ. Dịka nnyocha, ọ na-ebu amụma {{SG 1.44}} maka ntụ na mmiri hà n'ịdị arọ, nso na {{SG 1.46}} Digitalfire tụrụ. Ọ na-egosikwa na 70 ruo 80 mL kwa 100 g na-amalite gị n'elu {{SG 1.50}}, ọkpụrụkpụ karịa ka ị chọrọ.
+Tebụl dị n'okpuru bụ ngụkọ nke anyị, ọ bụghị nke isi mmalite. Ọ na-eche na mkpụrụ ntụ ahụ nwere njupụta 2.6 g maka cm³, nke bụ echiche, ọ bụghị ntụtụ. Ụrọ, ihe na-agbaze na mmiri na ịkpụkọ niile na-agbanwe ezigbo glaze, ya mere jiri ya malite, emesịa tụọ. Dịka nlele, ọ na-ebu amụma {{SG 1.44}} maka ịdị arọ ntụ na mmiri hà nhata, dị nso na {{SG 1.46}} Digitalfire tụrụ. Ọ na-egosikwa na 70 ruo 80 mL maka 100 g na-eme ka ị malite n'elu {{SG 1.50}}, dị ọkpụrụkpụ karịa ihe ị chọrọ.
 
-Table: Mmiri maka specific gravity a chọrọ (atụmatụ anyị)
-Label: Mmiri maka specific gravity a chọrọ
+Table: Mmiri maka SG a na-achọ (atụmatụ anyị)
+Label: Mmiri maka SG a na-achọ
 
-| Ebumnuche   |    Kwa 100 g ntụ |      Kwa kilogram |             Kwa pound |
-| ----------- | ---------------: | ----------------: | --------------------: |
-| {{SG 1.40}} | ihe dị ka 115 mL | ihe dị ka 1150 mL | ihe dị ka 18 US fl oz |
-| {{SG 1.45}} |  ihe dị ka 98 mL |  ihe dị ka 980 mL | ihe dị ka 15 US fl oz |
-| {{SG 1.50}} |  ihe dị ka 85 mL |  ihe dị ka 850 mL | ihe dị ka 13 US fl oz |
-| {{SG 1.60}} |  ihe dị ka 64 mL |  ihe dị ka 640 mL | ihe dị ka 10 US fl oz |
+| Ihe a na-achọ |   Maka 100 g ntụ |     Maka kilogram |            Maka pound |
+| ------------- | ---------------: | ----------------: | --------------------: |
+| {{SG 1.40}}   | ihe dị ka 115 mL | ihe dị ka 1150 mL | ihe dị ka 18 US fl oz |
+| {{SG 1.45}}   |  ihe dị ka 98 mL |  ihe dị ka 980 mL | ihe dị ka 15 US fl oz |
+| {{SG 1.50}}   |  ihe dị ka 85 mL |  ihe dị ka 850 mL | ihe dị ka 13 US fl oz |
+| {{SG 1.60}}   |  ihe dị ka 64 mL |  ihe dị ka 640 mL | ihe dị ka 10 US fl oz |
 
-### Epsom salts, CMC gum na bentonite
+### Chọta SG akọrọ nke glaze gị ka ị na-agwakọta
 
-**Epsom salts** na-eme ka glaze kpụkọọ ntakịrị mgbe ọ nọ jụụ ma sọọ ọzọ mgbe a kpaliri ya. A na-akpọ nke a **flocculating** ya, glaze na-akpa àgwà otu a bụ **thixotropic**: ọ na-etinye nke ọma karịa, na-atapụ obere, na-adakwa n'ala obere. Digitalfire na-atụ aro ịmalite n'ihe dị ka 2 g kwa gallon ozugbo SG ziri ezi (ihe dị ka 0.5 g kwa liter, ntụgharị anyị) na ịhazi ọnụ ọgụgụ ahụ oge ọ bụla ị gwakọtara, ebe ọ bụ na usoro glaze ọ bụla ekwesịghị ikpebi ọnụ ọgụgụ ahụ. Anyị na-atụ aro ibu ụzọ gbazee ya na ntakịrị mmiri dị ọkụ. N'otu ihe atụ Digitalfire, glaze dị na {{SG 1.45}} tapụrụ, ya mere mmiri wedara ya ruo {{SG 1.43}}, Epsom salts mekwara ka ọ kpụkọọ ọzọ ka ọ dị ka ude, o tinyekwara nke ọma. Nnyocha dị mfe: kpalie, kwụsị ma lee. Glaze kpụkọrọ na-aga n'ihu ihe dị ka sekọnd 2 ma ọ bụ 3, mgbe ahụ kwụsị ma laghachi ntakịrị.
+2.6 dị n'elu bụ ịkọ nkọ. Ọnụ ọgụgụ glaze gị, njupụta ntụ akọrọ ya, enwere ike ịgụpụta ya site na nọmba atọ ị nwere ike iwere ka ị na-agwakọta. Ya na ya, ị nwere ike ịgụpụta emesịa site na SG ntụ ole dị na bọket ọ bụla nke glaze ahụ, na mmiri maka batch na-esote. Ngụkọ anyị, ọ bụghị nke isi mmalite:
 
-**CMC gum** (carboxymethyl cellulose) na-eme ka slurry na-arapara karịa ma na-akpọ nkụ nwayọọ, ma hapụ mkpuchi siri ike karịa nke na-ejide ite. Ọ kacha mkpa maka glaze brọsh na glaze nwere ọtụtụ frit. Ihe atụ Digitalfire na-agwakọta 3.75 g n'ime 1000 g slurry, ọ ga-abanyekwa site na blender. Glaze nwere CMC agaghị akpụkọ site na Epsom salts, ebe ọ bụkwa na microbe na-eri gum ahụ, ọ nwere ike ịgbanwe na bọket ma malite isi ísì.
+1. Dee ịdị arọ ntụ akọrọ dị na batch: ngụkọta usoro ahụ.
+2. Tụọ bọket tọgbọ chakoo tupu ị malite, ma ọ bụ dee ịdị arọ ya na ya.
+3. Gwakọta, nyọọ ma weta glaze na SG ya dịka ọ na-adịbu. Kwanye ihe niile site n'ihe nyọ ma sachaa ya n'ime bọket, ka ntụ ọ bụla ghara ịfọdụ n'èzí.
+4. Tụọ bọket jupụtara ma wepụ ịdị arọ bọket ahụ. Nke ahụ bụ ịdị arọ slurry.
+5. Tụọ SG.
 
-**Bentonite**, ụrọ dị nnọọ nro, na-enyere aka ijide irighiri ihe ndị ọzọ n'ime mmiri. Glaze ịbanye na-adaberekarị na 15 ruo 25% ụrọ amụ maka nke a. Maka usoro glaze nwere ụrọ pere mpe, ihe dị ka 1 ruo 3% bentonite na-enyere aka; Digitalfire kwuru na glaze nwere ihe karịrị 15% ụrọ ekwesịghị ịchọ bentonite karịa 1% nke ịdị arọ glaze akọrọ.
+Emesịa:
+
+- **Mmiri** = ịdị arọ slurry − ịdị arọ ntụ.
+- **Olu slurry** na mL = ịdị arọ slurry na gram ÷ SG.
+- **Olu ntụ** = olu slurry − mmiri (1 g mmiri bụ 1 mL).
+- **SG akọrọ** = ịdị arọ ntụ ÷ olu ntụ.
+
+Dịka ọmụmaatụ: 1000 g ntụ na-eme 1980 g slurry na {{SG 1.45}}. Mmiri ahụ bụ 980 g, slurry ahụ bụ 1980 ÷ 1.45 = ihe dị ka 1366 mL, ntụ ahụ na-ewe 1366 − 980 = 386 mL, SG akọrọ bụkwa 1000 ÷ 386 = ihe dị ka 2.59.
+
+Tụọ slurry niile na njedebe, ọ bụghị mmiri ka ị na-awụnye ya, ka mmiri na-ekpo ọkụ ma ọ bụ na-agbapụ ghara ịgụ. Obere njehie na-eto ebe a: ọgụgụ SG na-ezighị ezi site na 0.01 na-akwaga azịza ahụ ihe dị ka 2 ruo 4%, karịa maka glaze dị gịrịgịrị. Jiri batch nke 1 kg ma ọ bụ karịa, ihe ọtụtụ ziri ezi, na ụzọ iko 500 g dị n'elu maka SG. Ọtụtụ ihe a na-ahụkarị dị n'etiti ihe dị ka 2.5 na 2.9, ya mere ọnụ ọgụgụ dị anya nke ukwuu n'èzí nke ahụ, na glaze na-enweghị ọtụtụ zircon ma ọ bụ lead, nwere ike ịpụta njehie ịtụ. Dee ọnụ ọgụgụ ahụ n'usoro ahụ.
+
+### Nnu Epsom, CMC gum na bentonite
+
+**Nnu Epsom** na-eme ka glaze kpụkọ ntakịrị mgbe ọ kwụ ọtọ ma na-asọ ọzọ mgbe a kpaliri ya. A na-akpọ nke a **flocculating**, glaze na-akpa àgwà otu a bụ **thixotropic**: ọ na-aga n'elu n'otu ụzọ karịa, na-adapụ obere ma na-adosi obere. Digitalfire na-atụ aro ịmalite n'ihe dị ka 2 g maka galọn ozugbo SG ziri ezi (ihe dị ka 0.5 g maka lita, ngbanwe anyị) na idozi ọnụ ọgụgụ ahụ oge ọ bụla ị gwakọtara, ebe ọ bụ na ọ dịghị usoro kwesịrị idowe ọnụ ọgụgụ ahụ. Anyị na-atụ aro ka ị gbazee ya na obere mmiri ọkụ na mbụ. N'ihe atụ Digitalfire, glaze dị na {{SG 1.45}} na-adapụ, ya mere mmiri belatara ya ruo {{SG 1.43}}, nnu Epsom mekwara ka ọ kpụkọ ọzọ ghọọ dịka ude, ọ gakwara n'elu n'otu ụzọ. Nlele ngwa ngwa: kpalie, kwụsị ma lee. Glaze kpụkọrọ akpụkọ na-aga n'ihu ihe dị ka sekọnd 2 ma ọ bụ 3, emesịa kwụsị ma laghachi azụ ntakịrị.
+
+**CMC gum** (carboxymethyl cellulose) na-eme ka slurry na-arapara karịa ma na-akpọ nkụ nwayọọ, ma na-ahapụ mkpuchi siri ike karịa na-ejide ite. Ọ kacha dị mkpa maka glaze brọsh na glaze nwere ọtụtụ frit. Ihe atụ Digitalfire na-agwakọta 3.75 g n'ime 1000 g slurry, a ghaghịkwa iji blender tinye ya. Glaze nwere CMC agaghị akpụkọ na nnu Epsom, ebe ọ bụkwa na nje na-eri gum ahụ, ọ nwere ike ịgbanwe na bọket ma malite isi ísì.
+
+**Bentonite**, ụrọ dị nro nke ukwuu, na-enyere aka idebe mkpụrụ ndị ọzọ ka ha na-ese n'elu. Glaze ịmikpu na-adaberekarị n'ụrọ ndụ 15 ruo 25% maka nke a. Maka usoro nwere obere ụrọ, ihe dị ka 1 ruo 3% bentonite na-enyere aka; Digitalfire kwuru na glaze nwere ụrọ karịrị 15% ekwesịghị ịchọ bentonite karịrị 1% nke ịdị arọ glaze akọrọ.
 
 ## Test tile na line blend {#testing}
 
 ### Malite na obere
 
-Derek Au na-arịgo n'ụzọ atọ: nnwale 50 ma ọ bụ 100 g, nnwale 1 ruo 2 kg ma ọ rụọ ọrụ, mgbe ahụ batch studio 5 ruo 10 kg. Site n'atụmatụ anyị, nnwale 100 g na {{SG 1.45}} na-eme ihe dị ka 135 mL (ihe dị ka 4½ US fl oz) slurry, zuru iji banye obere tile ole na ole n'iko dị warara.
+Derek Au na-arịgo na nzọụkwụ atọ: nnwale 50 ma ọ bụ 100 g, nnwale 1 ruo 2 kg ma ọ bụrụ na ọ rụọ ọrụ, emesịa batch ebe ọrụ nke 5 ruo 10 kg. Site n'atụmatụ anyị, nnwale 100 g na {{SG 1.45}} na-eme ihe dị ka 135 mL (ihe dị ka 4½ US fl oz) slurry, nke zuru ezu ịmikpu obere tile ole na ole n'iko dị warara.
 
 ### Nwalee n'ụrọ nke gị
 
-Glaze{{en: glaze}} nwere ike ịdị iche nke ukwuu n'ụrọ ọzọ ma ọ bụ na kiln ọzọ: Clay Art Center nwalere glaze ọ bụla o mezigharịrị n'ahụ ụrọ anọ, na cone 6 na cone 10. Nduzi Potclays maka ndị mbido na nnwale glaze na-atụ aro:
+Glaze nwere ike ịdị iche nke ukwuu n'ụrọ ọzọ ma ọ bụ na kiln ọzọ: Clay Art Center nwalere glaze ya ọ bụla e megharịrị emegharị n'ụdị ụrọ anọ, na cone 6 na na cone 10. Ntụzịaka Potclays maka ndị mbido banyere nnwale glaze na-atụ aro:
 
-- **test tile** 6 ruo 10 (obere iberibe maka ịnwale glaze) nke ụrọ ị ga-eji n'ezie, na-edetu ma a gbara ha bisque ma ọ bụ ha bụ bone dry
+- **test tile** 6 ruo 10 (obere mpempe maka ịnwale glaze) nke ụrọ ị ga-eji n'ezie, na-ede ma a gbara ha bisque ma ọ bụ ha kpọrọ nkụ kpamkpam
 - otu mgbanwe n'otu oge
-- ịbanye otu ugboro na ịbanye ugboro abụọ, iji hụ glaze gịrịgịrị na ọkpụrụkpụ
+- ịmikpu otu ugboro na ịmikpu ugboro abụọ, iji hụ glaze dị gịrịgịrị na nke dị ọkpụrụkpụ
 - tile ọ bụla n'otu ibu kiln ahụ
-- akara na tile ọ bụla tupu ịgba ọkụ, site na stamp, ịkpụ ma ọ bụ pensụl underglaze.
+- akara na tile ọ bụla tupu ịgba ọkụ, site na stamp, ịkpụ ma ọ bụ pensụl underglaze. Tile a gbara ọkụ yiri ibe ha, akara e mere tupu ịgba ọkụ na-adịgide n'ime kiln, ya mere ị ga-amata mgbe niile usoro nke tile ọ bụla bụ.
 
-Anyị na-atụ aro tile na-eguzo ọtọ, ebe ọ bụ na tile dị larịị na-ezo otu glaze si asọ anya, nwere eriri nwere ụdị iji gosi otu glaze si agbaji n'ọnụ, na ụkwụ efu. Tinye nke ọ bụla n'elu obere efere ma ọ bụ iberibe bisque, ma ọ bụ n'elu shelf e tinyere kiln wash, iji jide ntapụ. Tinye **cone akaebe** (witness cone), obere cone ceramic na-ehulata mgbe ọ natara ọkụ zuru ezu, nso tile ndị ahụ iji gosi ihe ha natara; [Ịgba ọkụ na kiln dị mfe](/guides/firing) na-akọwa cone. Nye tile ọ bụla koodu dị mkpụmkpụ, ma dee ya n'akụkụ usoro glaze ahụ na ndekọ gị. Willers, na-ede maka Ceramic Arts Network, na-eji nọmba na mkpụrụ edemede, ma dee usoro ahụ n'onwe ya n'ihu akwụkwọ ndetu ahụ.
+Anyị na-atụ aro tile na-eguzo ọtọ, ebe ọ bụ na tile dị larịị na-ezo otu glaze si asọ anya, nwere eriri nwere ọdịdị iji gosi otu glaze si agbaji n'ọnụ, na ụkwụ na-enweghị glaze. Dobe nke ọ bụla n'obere efere ma ọ bụ mpempe bisque, ma ọ bụ n'elu shelf nwere kiln wash, iji jide ntụpọ na-adapụ. Dobe **cone akaebe** (witness cone), obere cone ụrọ na-ehulata mgbe o nwetara ọkụ zuru ezu, n'akụkụ tile ndị ahụ iji gosi ihe ha nwetara; [ntụzịaka ịgba ọkụ](/guides/firing) na-akọwa cone. Nye tile ọ bụla koodu dị mkpirikpi, ma dee ya n'akụkụ usoro ahụ na ndekọ gị. Willers, na-ede maka Ceramic Arts Network, na-eji nọmba na mkpụrụ akwụkwọ, ma na-ede usoro ahụ n'onwe ya n'ihu akwụkwọ ndetu.
 
 ### Line blend
 
-**Line blend** bụ ahịrị nnwale na-aga nzọụkwụ nhata site n'otu ngwakọta gaa na nke ọzọ: site n'otu glaze gaa na nke abụọ, ma ọ bụ site na glaze ntọala gaa n'otu glaze ahụ nwere ihe na-enye agba karịa. Derek Au, dịka ọmụmaatụ, na-agbakwunye iron oxide na ntọala doro anya na nzọụkwụ 1%. Usoro olu a na-ejikọta na Ian Currie na-echekwa oge, n'ihi na ị na-agwakọta naanị nsọtụ abụọ ahụ:
+**Line blend** bụ ahịrị nnwale na-aga n'otu nzọụkwụ site n'otu ngwakọta gaa n'ọzọ: site n'otu glaze gaa na nke abụọ, ma ọ bụ site na glaze ntọala gaa n'otu glaze ahụ nwere ihe na-enye agba karịa. Derek Au, dịka ọmụmaatụ, na-ebuli iron oxide n'ime ntọala doro anya na nzọụkwụ 1%. Ụzọ olu e jikọtara na Ian Currie na-echekwa oge, n'ihi na ị na-agwakọta naanị njedebe abụọ:
 
-1. Gwakọta glaze nsọtụ abụọ ahụ, A na B, dịka batch nke otu ịdị ukwuu, ma nyọọ ha abụọ.
-2. Gbakwunye mmiri na nke nwere olu pere mpe ruo mgbe ha abụọ nwere kpọmkwem otu olu mmiri.
-3. Kpalie ha abụọ, mgbe ahụ jiri sirinji dọta ngwakọta ọ bụla n'iko nke ya nwere nọmba.
-4. Kpalie iko ọ bụla ma banye otu tile.
+1. Gwakọta glaze njedebe abụọ ahụ, A na B, dịka batch nke otu nha, ma nyọọ ha abụọ.
+2. Gbakwunye mmiri na nke nwere obere olu ruo mgbe ha abụọ nwere otu olu mmiri ahụ kpọmkwem.
+3. Kpalie ha abụọ, emesịa jiri syringe dọta ngwakọta ọ bụla n'iko nke ya nwere nọmba.
+4. Kpalie iko ọ bụla ma mikpuo tile.
 
-N'ihe atụ anyị rụpụtara, A bụ 100 g nke ntọala doro anya, B bụkwa otu ihe ahụ ya na 4 g red iron oxide a gbakwunyere (mgbakwunye 4%). Milliliter ọ bụla nke B nwere otu òkè ntọala dịka milliliter nke A, gbakwunyere iron ya, ya mere iko ndị ahụ na-aga site n'enweghị iron ruo 4% na nzọụkwụ 1%. Nsọtụ ọ bụla na-enye blend ahụ 100 mL, nke batch 100 g na-ekpuchi site n'atụmatụ anyị.
+N'ihe atụ anyị arụchara, A bụ 100 g nke ntọala doro anya, B bụkwa otu ihe ahụ agbakwunyere 4 g red iron oxide (mgbakwunye 4%). Milliliter ọ bụla nke B nwere otu òkè ntọala ahụ dịka milliliter nke A, gbakwunyere iron ya, ya mere iko ndị ahụ na-aga site n'enweghị iron ruo 4% na nzọụkwụ 1%. Njedebe ọ bụla na-enye blend ahụ 100 mL, nke batch 100 g na-ekpuchi site n'atụmatụ anyị.
 
-Table: Line blend iron nzọụkwụ ise, 40 mL kwa iko (ihe atụ anyị rụpụtara)
+Table: Line blend iron nwere nzọụkwụ ise, 40 mL maka iko (ihe atụ anyị arụchara)
 Label: Ihe atụ line blend
 
-| Iko | Ntọala doro anya (A) | Ntọala nwere 4% iron (B) | Iron oxide, % nke ntọala |
+| Iko | Ntọala doro anya (A) | Ntọala nwere iron 4% (B) | Iron oxide, % nke ntọala |
 | --- | -------------------: | -----------------------: | -----------------------: |
 | 1   |                40 mL |                     0 mL |                        0 |
 | 2   |                30 mL |                    10 mL |                        1 |
@@ -253,28 +274,28 @@ Label: Ihe atụ line blend
 | 4   |                10 mL |                    30 mL |                        3 |
 | 5   |                 0 mL |                    40 mL |                        4 |
 
-Usoro a chọrọ mgbakọ nlezianya, nsọtụ e gwakọtara nke ọma nwere SG hà, na ihe ọtụtụ na-atụ nke ọma. Derek Au na-agwakọtakwa site n'ịdị arọ kama olu. **Triaxial blend** na-eme otu ihe ahụ na nsọtụ atọ, a haziri n'elu triangle.
+Ụzọ a chọrọ ngụkọ akpachapụrụ anya, njedebe agwakọtara nke ọma nwere SG hà nhata, na ihe ọtụtụ ziri ezi. Derek Au na-agwakọtakwa site n'ịdị arọ kama olu. **Triaxial blend** na-eme otu ihe ahụ na njedebe atọ, edobere ha n'elu triangle.
 
 > [!NOTE]
-> Mgbe otu nzọụkwụ yiri ka ọ ga-adị mma, **Chekwaa dịka mbipụta** na [ibe usoro glaze](/recipe) na-edebe ya dịka usoro glaze nke ya ma hapụ nke mbụ ka ọ dị.
+> Mgbe nzọụkwụ yiri ka ọ dị mma, **Chekwaa dịka mbipụta** na [ibe usoro](/recipe) na-echekwa ya dịka usoro nke ya ma na-ahapụ nke mbụ ka ọ dị.
 
 ## Idebe ndekọ {#records}
 
-Willers kọwara ebumnuche ahụ nke ọma: "ozi zuru ezu iji nwee ike imeghachi, ma ọ bụ zere, nsonaazụ ị chọpụtara". Dee ihe ị chọrọ ịnwale tupu ịmalite, na nsonaazụ ya mgbe ị wepụtara ite. Potclays gbakwunyere itinye, ọkpụrụkpụ, ahụ ụrọ na ịgba ọkụ zuru ezu, gụnyere ramp, hold na ijụ oyi. **Ramp** bụ ọsọ ikpo ọkụ ma ọ bụ ijụ oyi, dịka {{60 °C; 108 °F}} kwa elekere, **hold** na-edobekwa kiln n'otu ọkụ ruo oge a kara aka. Dee nọmba lot, mmiri i ji na onye nnọchi ọ bụla: mgbanwe feldspar Clay Art Center pụtara ịhazi ihe dị ka ọkara glaze{{en: glaze}} ya.
+Willers kọwara ebumnuche ahụ nke ọma: "ozi zuru ezu iji nwee ike ịmegharị, ma ọ bụ izere, nsonaazụ ị chọpụtara". Dee ihe ị na-eme atụmatụ ịnwale tupu ị malite, na nsonaazụ ya mgbe ị na-ewepụta ihe. Potclays na-agbakwunye ụzọ e si tinye ya, ọkpụrụkpụ, ụdị ụrọ na ịgba ọkụ niile, gụnyere ramp, nchere na ime ka ọ jụọ oyi. **Ramp** bụ ọsọ ikpo ọkụ ma ọ bụ ime ka ọ jụọ oyi, dịka {{60 °C; 108 °F}} n'otu awa, **nchere** (hold) na-edebe kiln n'otu ọkụ ruo oge edobere. Dee nọmba lot, mmiri i ji mee ihe na nnọchi ọ bụla: mgbanwe feldspar nke Clay Art Center pụtara idozi ihe dị ka ọkara glaze ya.
 
 Table: Ihe ị ga-edekọ maka batch glaze ọ bụla (ndebiri anyị)
 Label: Ndebiri ndekọ
 
-| Akụkụ       | Ihe ị ga-ede                                                                                                                                                                                                        |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Usoro glaze | Usoro glaze na nsụgharị ya; brand ihe na nọmba lot; onye nnọchi ọ bụla                                                                                                                                              |
-| Ịgwakọta    | Ụbọchị; ịdị ukwuu batch; mmiri a gbakwunyere, na ụdị ya (pọmpụ, reverse osmosis ma ọ bụ distilled); SG mgbe ịgwakọta na SG ikpeazụ; Epsom salts, CMC na bentonite a gbakwunyere; mesh ihe nyọ na ugboro ole e nyọrọ |
-| Itinye      | Ahụ ụrọ; cone bisque; ịbanye, brọsh ma ọ bụ ịwụ; oge ịbanye ma ọ bụ ọnụ ọgụgụ akwa; ọkpụrụkpụ mgbe ọ kpọrọ nkụ                                                                                                      |
-| Ịgba ọkụ    | Kiln na ọnọdụ shelf; usoro ịgba ọkụ, ya na ramp, hold na ijụ oyi ya; ikuku (oxidation ma ọ bụ reduction); ihe cone akaebe gosiri, ọ bụghị naanị ihe e debere kiln ka ọ mee                                          |
-| Nsonaazụ    | Elu na agba; ịgba ọsọ, crazing ma ọ bụ pinhole ọ bụla; foto ihu, azụ na akụkụ; koodu tile                                                                                                                           |
+| Akụkụ    | Ihe ị ga-ede                                                                                                                                                                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Usoro    | Usoro ahụ na ụdị ya; aha ngwaahịa ihe na nọmba lot; nnọchi ọ bụla                                                                                                                                                                                       |
+| Ịgwakọta | Ụbọchị; nha batch; mmiri agbakwunyere, na ụdị ya (pọmpụ, reverse osmosis ma ọ bụ distilled); SG mgbe agwakọtara na SG ikpeazụ; ịdị arọ slurry emechara, maka SG akọrọ ya; nnu Epsom, CMC na bentonite agbakwunyere; mesh ihe nyọ na ugboro ole e gafere |
+| Itinye   | Ụdị ụrọ; cone bisque; ịmikpu, brọsh ma ọ bụ ịwụ; oge ịmikpu ma ọ bụ ọnụ ọgụgụ mkpuchi; ọkpụrụkpụ akọrọ                                                                                                                                                  |
+| Ịgba ọkụ | Kiln na ọnọdụ na shelf; usoro ịgba ọkụ, ya na ramp, nchere na ime ka ọ jụọ oyi ya; ikuku kiln (oxidation ma ọ bụ reduction); ihe cone akaebe gosiri, ọ bụghị naanị ihe e dobere kiln                                                                    |
+| Nsonaazụ | Elu na agba; ịsọ ọ bụla, crazing ma ọ bụ pinholes; foto ihu, azụ na akụkụ; koodu tile                                                                                                                                                                   |
 
 > [!NOTE]
-> Na Glazecalc, [usoro glaze](/recipe) e chekwara na-ejide usoro glaze n'onwe ya. [Ndekọ ọkụ](/firing) na-edekọ ịgba ọkụ ọ bụla: kiln, ụbọchị, oge, ọkụ, cone na ndetu. [Ndetu](/notes) na-ejide ihe ndị ọzọ niile, dịka ndekọ batch dị n'elu na ihe tile ọ bụla gosiri.
+> Na Glazecalc, [usoro](/recipe) echekwara na-ejide usoro ahụ n'onwe ya. [Ndekọ ịgba ọkụ](/firing) na-edekọ ịgba ọkụ ọ bụla: kiln, ụbọchị, oge, ọkụ, cone na ndetu. [Ndetu](/notes) na-ejide ihe ndị ọzọ niile, dịka ndekọ batch dị n'elu na ihe tile ọ bụla gosiri.
 
 ## Isi mmalite {#sources}
 

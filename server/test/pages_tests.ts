@@ -18,11 +18,21 @@ import {
   prerenderLanguages,
   prerenderedKey,
   sitemap,
+  sitemapIndex,
   withNonce
 } from '../lib/pages.ts';
+import {
+  FAMOUS_GLAZE_PAGES,
+  PARTLY_TRANSLATED_PAGES,
+  englishOnlyIn,
+  famousTranslatedIn,
+  materialTranslatedIn
+} from '../../lib/pages.js';
 import languages from '../../lib/regions/languages.js';
 import { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
+import { pageSources } from '../../lib/page-dates.js';
+import { allPageDates, newestDates, newestOf } from '../../scripts/page-dates.mjs';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -461,12 +471,15 @@ describe('pages in each language', () => {
     // A page with an id in its address (/connect/:uid) is one of ID_PAGES; the one route of the standard
     // materials' pages (/materials/:slug) stands for MATERIAL_PAGES, a page for each material in the data.
     const ofMaterials = '/materials/:slug';
+    // Likewise /famous-glazes/:slug for FAMOUS_GLAZE_PAGES; the index is a page only once a glaze is published.
+    const ofGlazes = '/famous-glazes/:slug';
     expect(pages).to.include(ofMaterials);
-    expect([...APP_PAGES].filter((page) => !MATERIAL_PAGES.includes(page)).sort()).to.eql(
-      pages.filter((page) => !page.includes(':')).sort()
-    );
+    expect(pages).to.include(ofGlazes);
+    expect(
+      [...APP_PAGES].filter((page) => !MATERIAL_PAGES.includes(page) && !FAMOUS_GLAZE_PAGES.includes(page)).sort()
+    ).to.eql(pages.filter((page) => !page.includes(':') && page !== '/famous-glazes').sort());
     expect(Object.keys(ID_PAGES).sort()).to.eql(
-      pages.filter((page) => page.includes(':') && page !== ofMaterials).sort()
+      pages.filter((page) => page.includes(':') && page !== ofMaterials && page !== ofGlazes).sort()
     );
   });
 
@@ -504,18 +517,95 @@ describe('pages in each language', () => {
   });
 
   it('lists each public page in each language offered', () => {
-    const one = sitemap(SITE, ['en']);
+    const one = sitemap(SITE, ['en'], ['en'], {});
     expect(one).to.include('<url><loc>https://glazecalcapp.com/guides/firing</loc></url>');
     expect(one).not.to.include('xhtml:link');
     // No language has the reference pages translated here, whichever are on in lib/regions/languages.js.
-    const two = sitemap(SITE, ['en', 'de'], ['en']);
+    const two = sitemap(SITE, ['en', 'de'], ['en'], {});
     expect(two).to.include(
-      '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
+      '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/><xhtml:link rel="alternate" hreflang="x-default" href="https://glazecalcapp.com/guides"/></url>'
     );
     // Each public page once in each of the two languages, and a page in English only once, as a
     // reference page is while German is not among the languages it is translated into.
-    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length;
+    // A guide translated into some languages only, none of them German, is listed in English alone too;
+    // so is a famous glaze's page in a language its text is not translated into (German's is).
+    const partly = Object.values(PARTLY_TRANSLATED_PAGES).filter((codes) => !codes.includes('de')).length;
+    const famousOnce = FAMOUS_GLAZE_PAGES.filter((page) => !famousTranslatedIn(page, 'de')).length;
+    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length + partly + famousOnce;
     expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - once) * 2 + once);
+  });
+
+  it("gives each page the day what it says last changed, in its own language, and no date it doesn't have", () => {
+    const dates = { 'en/guides/firing': '2026-10-01', 'de/guides/firing': '2026-11-04', 'en/terms': 'soon' };
+    const map = sitemap(SITE, ['en', 'de'], ['en'], dates);
+    expect(map).to.include('<loc>https://glazecalcapp.com/guides/firing</loc><lastmod>2026-10-01</lastmod><xhtml:link');
+    expect(map).to.include(
+      '<loc>https://glazecalcapp.com/de/guides/firing</loc><lastmod>2026-11-04</lastmod><xhtml:link'
+    );
+    // Not a date: left out, never written into the XML.
+    expect(map).to.include('<loc>https://glazecalcapp.com/terms</loc><xhtml:link');
+    expect(map).not.to.include('soon');
+    expect(map.match(/<lastmod>/g)).to.have.length(2);
+  });
+
+  it("dates a page from its own sources: a guide's text in that language, never the app's code", () => {
+    // The language's own messages too: every page's title and description are there.
+    expect(pageSources('/guides/firing', 'de')).to.deep.equal([
+      'client/public/i18n/de.json',
+      'client/public/i18n/guides/firing/de.md',
+      'client/public/i18n/guides/de.json'
+    ]);
+    // A material's page in a language: that language's labels, notes and hazards, and the data.
+    expect(pageSources('/materials/cornwall-stone', 'de')).to.deep.equal([
+      'client/public/i18n/de.json',
+      'client/public/i18n/reference/de.json',
+      'client/public/i18n/records/de.json',
+      'data/materials.ndjson'
+    ]);
+    expect(pageSources('/materials/cornwall-stone', 'en')).to.include('client/public/i18n/records/en.json');
+    expect(pageSources('/terms', 'fr')).to.deep.equal([
+      'client/public/i18n/fr.json',
+      'client/public/i18n/site/fr.json'
+    ]);
+    // The cone chart's figures, not the code beside them.
+    expect(pageSources('/cones', 'de')).to.include('lib/cones/index.js');
+    expect(pageSources('/cones', 'de')).not.to.include('lib/cones/');
+    // Every source named is in the repository, so no page goes undated by a typo.
+    for (const page of PUBLIC_PAGES) {
+      for (const source of pageSources(page, 'en')) {
+        expect(fs.existsSync(path.join(import.meta.dirname, '..', '..', source)), `${page}: ${source}`).to.equal(true);
+      }
+    }
+    for (const code of languages.REFERENCE_LANGUAGES.filter((live) => languages.LIVE_LANGUAGES.includes(live))) {
+      for (const source of pageSources('/materials/silica', code)) {
+        expect(fs.existsSync(path.join(import.meta.dirname, '..', '..', source)), `${code}: ${source}`).to.equal(true);
+      }
+    }
+  });
+
+  it('works out the dates from git log: the newest commit of any file a page reads', () => {
+    const dates = newestDates(
+      [
+        '@2026-11-04',
+        'client/public/i18n/guides/firing/de.md',
+        '',
+        '@2026-10-01',
+        'client/public/i18n/guides/de.json',
+        'client/public/i18n/guides/firing/de.md',
+        'lib/cones/index.js'
+      ].join('\n')
+    );
+    expect(dates.get('client/public/i18n/guides/firing/de.md')).to.equal('2026-11-04');
+    expect(newestOf(pageSources('/guides/firing', 'de'), dates)).to.equal('2026-11-04');
+    expect(newestOf(['lib/cones/'], dates)).to.equal('2026-10-01');
+    expect(newestOf(['client/public/i18n/site/de.json'], dates)).to.equal(undefined);
+    // A German description changed alone moves the German page's date.
+    const titles = newestDates(
+      ['@2026-12-01', 'client/public/i18n/de.json', '@2026-10-01', 'client/public/i18n/guides/firing/de.md'].join('\n')
+    );
+    expect(allPageDates(titles)['de/guides/firing']).to.equal('2026-12-01');
+    expect(allPageDates(titles)['en/guides/firing']).to.equal(undefined);
+    expect(allPageDates(dates)['de/guides/firing']).to.equal('2026-11-04');
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
@@ -545,10 +635,51 @@ describe('pages in each language', () => {
     // Still prerendered in each language offered, for a quick first paint.
     expect(prerenderedKey('/de' + page, live)).to.equal('de/guides/learn-with-john-britt.html');
 
-    const map = sitemap(SITE, live);
+    const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {});
     expect(map).to.include('<url><loc>https://glazecalcapp.com/guides/learn-with-john-britt</loc></url>');
     expect(map).not.to.include('/de/guides/learn-with-john-britt');
     expect(map).not.to.match(/hreflang="[^"]*" href="[^"]*learn-with-john-britt"/);
+  });
+
+  it('offers the teaching pack to search engines in English and Japanese, and the English for the others', () => {
+    const page = '/guides/teaching-glaze-calculation';
+    expect(PUBLIC_PAGES).to.include(page);
+    expect(PARTLY_TRANSLATED_PAGES[page]).to.eql(['en', 'ja']);
+    const live = ['en', 'de', 'ja'];
+    const hreflang = (code: string) =>
+      `<link rel="alternate" hreflang="${code}" href="https://glazecalcapp.com${code === 'en' ? '' : '/' + code}${page}" />`;
+
+    for (const code of ['en', 'ja']) {
+      const html = pageHtml(HTML, (code === 'en' ? '' : '/' + code) + page, SITE, {}, live);
+      expect(html, code).not.to.include('noindex');
+      expect(html, code).to.include(hreflang('en'));
+      expect(html, code).to.include(hreflang('ja'));
+      expect(html, code).not.to.include('hreflang="de"');
+    }
+    expect(pageHtml(HTML, '/ja' + page, SITE, {}, live)).to.include(
+      `<link rel="canonical" href="https://glazecalcapp.com/ja${page}" />`
+    );
+    // German shows the English with the notice: canonical to the English, out of the index.
+    const german = pageHtml(HTML, '/de' + page, SITE, {}, live);
+    expect(german).to.include(`<link rel="canonical" href="https://glazecalcapp.com${page}" />`);
+    expect(german).to.include('<meta name="robots" content="noindex" />');
+    expect(prerenderedKey('/de' + page, live)).to.equal('de/guides/teaching-glaze-calculation.html');
+
+    const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {});
+    expect(map).to.include(`<loc>https://glazecalcapp.com/ja${page}</loc>`);
+    expect(map).not.to.include(`<loc>https://glazecalcapp.com/de${page}</loc>`);
+  });
+
+  it("keeps each partly translated guide's languages in step with its files", () => {
+    for (const [page, codes] of Object.entries(PARTLY_TRANSLATED_PAGES)) {
+      const folder = path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'guides', page.slice(8));
+      const files = fs
+        .readdirSync(folder)
+        .filter((name) => name.endsWith('.md'))
+        .map((name) => name.slice(0, -3))
+        .sort();
+      expect(files, page).to.eql([...codes].sort());
+    }
   });
 
   describe('the reference pages: the cone chart, the materials and a page for each standard material', () => {
@@ -570,13 +701,14 @@ describe('pages in each language', () => {
       expect(materialSlug('Tile #6 Kaolin')).to.equal('tile-6-kaolin');
     });
 
-    it('lists them, the index and the cone chart among the public pages; a material is for search engines in English only', () => {
+    it('lists them, the index and the cone chart among the public pages, each with a copy per translated language', () => {
       for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
         expect(PUBLIC_PAGES, address).to.include(address);
         expect(isPage(address), address).to.equal(true);
         expect(isAppOnlyPage(address), address).to.equal(false);
       }
-      for (const address of MATERIAL_PAGES) expect(ENGLISH_ONLY_PAGES, address).to.include(address);
+      for (const address of MATERIAL_PAGES) expect(ENGLISH_ONLY_PAGES, address).not.to.include(address);
+      expect(ENGLISH_ONLY_PAGES).to.eql(['/guides/learn-with-john-britt']);
       expect(REFERENCE_PAGES).to.eql(['/cones', '/materials']);
       for (const address of REFERENCE_PAGES) expect(ENGLISH_ONLY_PAGES, address).not.to.include(address);
       // The signed-in page of your own materials is another address, and stays out of the index.
@@ -585,16 +717,58 @@ describe('pages in each language', () => {
       expect(isPage('/materials/no-such-material')).to.equal(false);
     });
 
-    it('gives each one a single address for search engines, the English', () => {
-      const live = ['en', 'de'];
+    it('gives each one its own address for search engines in every translated language, with hreflang and x-default', () => {
+      const live = ['en', 'de', 'ja'];
       const english = pageHtml(HTML, '/materials/silica', SITE, {}, live, true);
       expect(english).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
       expect(english).not.to.include('noindex');
-      expect(english).not.to.include('hreflang');
-      const german = pageHtml(HTML, '/de/materials/silica', SITE, {}, live);
-      expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
+      expect(english).to.include('hreflang="de" href="https://glazecalcapp.com/de/materials/silica"');
+      const german = pageHtml(HTML, '/de/materials/silica', SITE, {}, live, true);
+      expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/de/materials/silica" />');
+      expect(german).not.to.include('noindex');
+      for (const code of live) {
+        const address = 'https://glazecalcapp.com' + (code === 'en' ? '' : '/' + code) + '/materials/silica';
+        expect(german, code).to.include(`<link rel="alternate" hreflang="${code}" href="${address}" />`);
+      }
+      expect(german).to.include(
+        '<link rel="alternate" hreflang="x-default" href="https://glazecalcapp.com/materials/silica" />'
+      );
+      expect(german).to.include('<meta property="og:locale" content="de_DE" />');
+      expect(isEnglishOnlyPage('/de/materials/silica')).to.equal(false);
+    });
+
+    // A material added in English stays out of the index in another language until its notes are translated
+    // (the next test); the round-14 materials were translated before merging, so none is waiting today.
+    it('has every note and hazard of every material translated in every live language today', () => {
+      for (const code of languages.LIVE_LANGUAGES.filter((live) => languages.REFERENCE_LANGUAGES.includes(live))) {
+        expect(
+          MATERIAL_PAGES.filter((page) => !materialTranslatedIn(page, code)),
+          code
+        ).to.eql([]);
+      }
+      expect(materialTranslatedIn('/materials/silica', 'en')).to.equal(true);
+    });
+
+    it('keeps a material out of a language for search while any of its notes or hazards is not translated there', () => {
+      const page = '/materials/silica';
+      expect(englishOnlyIn(page, 'de')).to.equal(false);
+      // The build's list of pages it rendered with English standing in (material-fallback.json) decides too,
+      // and is what the server has: its image has no records/, where the answer is yes.
+      expect(englishOnlyIn(page, 'de', languages.REFERENCE_LANGUAGES, { de: [page] })).to.equal(true);
+      expect(englishOnlyIn(page, 'en', languages.REFERENCE_LANGUAGES, { en: [page] })).to.equal(false);
+      const other = MATERIAL_PAGES.find((address) => address !== page)!;
+      expect(englishOnlyIn(other, 'de', languages.REFERENCE_LANGUAGES, { de: [page] })).to.equal(false);
+      expect(materialTranslatedIn(page, 'xx')).to.equal(true);
+      // Such a page is drawn as before, and points to the English, out of the index (as a language not translated).
+      const live = ['en', 'de', 'ja'];
+      const german = pageHtml(HTML, '/de' + page, SITE, {}, live, true, '', ['en', 'ja']);
+      expect(german).to.include(`<link rel="canonical" href="https://glazecalcapp.com${page}" />`);
       expect(german).to.include('<meta name="robots" content="noindex" />');
       expect(german).not.to.include('hreflang');
+      // And the English and Japanese name each other alone.
+      const japanese = pageHtml(HTML, '/ja' + page, SITE, {}, live, true, '', ['en', 'ja']);
+      expect(japanese).to.include('hreflang="ja"');
+      expect(japanese).not.to.include('hreflang="de"');
     });
 
     it('prerenders them in English only while no language has them translated', () => {
@@ -614,7 +788,7 @@ describe('pages in each language', () => {
     });
 
     it('puts each in the sitemap once, at its English address, while no language has them translated', () => {
-      const map = sitemap(SITE, ['en', 'de'], ['en']);
+      const map = sitemap(SITE, ['en', 'de'], ['en'], {});
       for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
         expect(map, address).to.include(`<url><loc>https://glazecalcapp.com${address}</loc></url>`);
         expect(map, address).not.to.include(`/de${address}</loc>`);
@@ -625,14 +799,12 @@ describe('pages in each language', () => {
       const live = ['en', 'de', 'ja'];
       const reference = ['en', 'de'];
 
-      it('renders the cone chart and the list in it, and a material in English only', () => {
-        for (const address of ['/cones', '/materials']) {
+      it('renders the cone chart, the list and each material in it', () => {
+        for (const address of ['/cones', '/materials', '/materials/silica']) {
           expect(prerenderedKey('/de' + address, live, reference), address).to.equal('de' + address + '.html');
           expect(prerenderedKey('/ja' + address, live, reference), address).to.equal(null);
           expect(prerenderLanguages(address, live, reference), address).to.eql(['en', 'de']);
         }
-        expect(prerenderedKey('/de/materials/silica', live, reference)).to.equal(null);
-        expect(prerenderLanguages('/materials/silica', live, reference)).to.eql(['en']);
       });
 
       it('gives it its own address for search engines, with hreflang among the translated languages alone', () => {
@@ -657,29 +829,96 @@ describe('pages in each language', () => {
         expect(isEnglishOnlyPage('/ja/cones', reference)).to.equal(true);
       });
 
-      it('keeps a material for search engines in English only', () => {
-        const german = pageHtml(HTML, '/de/materials/silica', SITE, {}, live, false, '', reference);
-        expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
-        expect(german).to.include('<meta name="robots" content="noindex" />');
-        expect(german).not.to.include('hreflang');
+      it('gives a material its own address there too, with hreflang among the translated languages alone', () => {
+        const german = pageHtml(HTML, '/de/materials/silica', SITE, {}, live, true, '', reference);
+        expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/de/materials/silica" />');
+        expect(german).not.to.include('noindex');
+        expect(german).to.include('hreflang="en" href="https://glazecalcapp.com/materials/silica"');
+        expect(german).not.to.include('hreflang="ja"');
+        const japanese = pageHtml(HTML, '/ja/materials/silica', SITE, {}, live, false, '', reference);
+        expect(japanese).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
+        expect(japanese).to.include('<meta name="robots" content="noindex" />');
       });
 
       it('lists it in the sitemap in the translated languages, each with the others beside it', () => {
-        const map = sitemap(SITE, live, reference);
+        const map = sitemap(SITE, live, reference, {});
         expect(map).to.include(
-          '<url><loc>https://glazecalcapp.com/de/cones</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/cones"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/cones"/></url>'
+          '<url><loc>https://glazecalcapp.com/de/cones</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/cones"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/cones"/><xhtml:link rel="alternate" hreflang="x-default" href="https://glazecalcapp.com/cones"/></url>'
         );
         expect(map).not.to.include('/ja/cones');
-        expect(map).not.to.include('/de/materials/');
+        expect(map).to.include('<url><loc>https://glazecalcapp.com/de/materials/silica</loc>');
+        expect(map).not.to.include('/ja/materials/');
         expect(map).to.include('<url><loc>https://glazecalcapp.com/ja/guides</loc>');
       });
+    });
+
+    it('lists a material in the sitemaps once in each live language, each with all of them and x-default beside it', () => {
+      const live = languages.LIVE_LANGUAGES;
+      const page = '/materials/silica';
+      const address = (code: string) => SITE + languages.languagePrefix(code) + page;
+      for (const code of live) {
+        const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {}, code);
+        const entry = new RegExp(`<url><loc>${address(code)}</loc>.*?</url>`).exec(map)?.[0] ?? '';
+        expect(entry, code).not.to.equal('');
+        expect(entry.match(/hreflang="/g), code).to.have.length(live.length + 1);
+        expect(entry, code).to.include(`hreflang="x-default" href="${address('en')}"`);
+      }
+      const all = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {});
+      expect(all.match(new RegExp(`<loc>[^<]*${page}</loc>`, 'g'))).to.have.length(live.length);
+    });
+  });
+
+  describe('the sitemap index and the sitemaps by language', () => {
+    it('names one sitemap per live language, with the newest date of its pages', () => {
+      const index = sitemapIndex(SITE, ['en', 'de'], { 'de/guides/firing': '2026-11-04', 'de/terms': '2026-10-01' });
+      expect(index).to.include('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+      expect(index).to.include('<sitemap><loc>https://glazecalcapp.com/sitemaps/en.xml</loc></sitemap>');
+      expect(index).to.include(
+        '<sitemap><loc>https://glazecalcapp.com/sitemaps/de.xml</loc><lastmod>2026-11-04</lastmod></sitemap>'
+      );
+      expect(sitemapIndex(SITE).match(/<sitemap>/g)).to.have.length(languages.LIVE_LANGUAGES.length);
+    });
+
+    it("keeps each language's addresses in its own file, every file far under 50 MB and 50,000 addresses", () => {
+      const live = languages.LIVE_LANGUAGES;
+      let total = 0;
+      for (const code of live) {
+        const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, undefined, code);
+        const locs = [...map.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, loc]) => loc!);
+        expect(locs.length, code).to.be.above(0).and.below(50000);
+        expect(Buffer.byteLength(map), code).to.be.below(10 * 1024 * 1024);
+        for (const loc of locs) expect(languages.languageOfPath(new URL(loc).pathname), loc).to.equal(code);
+        total += locs.length;
+      }
+      // Each address once across the files, as in the whole.
+      expect(total).to.equal(sitemap(SITE, live, languages.REFERENCE_LANGUAGES).match(/<url>/g)!.length);
+    });
+
+    it('serves the index at /sitemap.xml and each language at /sitemaps/<code>.xml; any other is not found', async () => {
+      const text = (address: string) =>
+        site()
+          .get(address)
+          .buffer(true)
+          .parse((res, done) => {
+            let body = '';
+            res.on('data', (chunk: Buffer) => (body += chunk.toString()));
+            res.on('end', () => done(null, body));
+          });
+      const index = await text('/sitemap.xml');
+      expect(index.body).to.include('<sitemapindex');
+      const german = await text('/sitemaps/de.xml');
+      expect(german).to.have.status(200);
+      expect(german.headers['content-type']).to.match(/^application\/xml/);
+      expect(german.body).to.include('/de/materials/silica</loc>');
+      expect(german.body).not.to.include('<loc>https://glazecalcapp.com/guides/firing</loc>');
+      expect((await site().get('/sitemaps/xx.xml')).status).to.equal(404);
     });
   });
 
   it('serves the sitemap, and sends /en/ addresses to the plain English ones', async () => {
     // XML is not read as text by default.
     const map = await site()
-      .get('/sitemap.xml')
+      .get('/sitemaps/en.xml')
       .buffer(true)
       .parse((res, done) => {
         let text = '';
@@ -691,7 +930,7 @@ describe('pages in each language', () => {
     expect(map.body).to.include('/guides/home-safety</loc>');
     // Built once and kept: the same text again.
     const again = await site()
-      .get('/sitemap.xml')
+      .get('/sitemaps/en.xml')
       .buffer(true)
       .parse((res, done) => {
         let text = '';

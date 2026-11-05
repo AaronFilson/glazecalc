@@ -5,7 +5,7 @@ lead: Woraus eine Glasur besteht, wie der Ofen sie in Glas verwandelt, und alle 
 
 ## Was eine Glasur ist {#what-a-glaze-is}
 
-Eine **Glasur**{{en: glaze}} ist eine dünne Glasschicht, die mit einem Gefäß verschmolzen ist. Glazy, die offene Datenbank für Glasurrezepte, nennt sie „eine Glasformel, die darauf abgestimmt ist, bei bestimmten Temperaturen zu schmelzen und mit dem Ton zu verschmelzen“. Sie wird als Pulverschicht aufgetragen und schmilzt im Ofen zu einem glasigen Überzug, der den Ton versiegelt, sodass das Gefäß weniger leicht undicht wird, Flecken annimmt oder sich abnutzt. Bei der Endtemperatur des Brandes reagiert die Schmelze auch mit dem Ton und bildet oft eine Zwischenschicht, die die Glasur fest verankert. Auf Irdenware{{en: earthenware}} liegt die Glasur als eigene Schicht obenauf; auf Steinzeug{{en: stoneware}} schmilzt sie in den Scherben{{en: body}} ein.
+Eine **Glasur**{{en: glaze}} ist eine dünne Glasschicht, die mit einem Gefäß verschmolzen ist. Glazy, die offene Datenbank für Glasurrezepte, nennt sie „eine Glasformel, die darauf abgestimmt ist, bei bestimmten Temperaturen zu schmelzen und mit dem Ton zu verschmelzen“. Sie wird als Pulverschicht aufgetragen und schmilzt im Ofen zu einem glasigen Überzug, der den Ton versiegelt, sodass das Gefäß weniger leicht undicht wird, Flecken annimmt oder sich abnutzt. Bei der Endtemperatur des Brandes reagiert die Schmelze auch mit dem Ton und bildet oft eine Zwischenschicht, die die Glasur fest verankert. Auf Irdenware{{en: earthenware}}, die kühler gebrannt wird, ist diese Schicht dünn, und die Glasur liegt größtenteils obenauf. Auf Steinzeug{{en: stoneware}} und Porzellan, die heißer gebrannt werden, ist die Schicht dicker, und die Glasur haftet fester am Ton. Die Glasur bleibt aber Glas: Sie wird nicht Teil des Tons.
 
 Ein Rezept nennt Rohstoffe, etwa Feldspat{{en: feldspar}}, Kreide{{en: whiting}} und Kaolin. Im Ofen entweicht ein Teil jedes Rohstoffs als Gas (Wasser oder Kohlendioxid), und der Rest wird zu **Oxiden**: Verbindungen eines Elements mit Sauerstoff, etwa Kieselsäure{{en: silica}} (SiO₂) oder Calciumoxid (CaO). Das gebrannte Glas besteht aus Oxiden, deshalb wird eine Glasur über ihre Oxide beschrieben. Jedes Oxid hat eine von drei Aufgaben.
 
@@ -13,7 +13,7 @@ Ein Rezept nennt Rohstoffe, etwa Feldspat{{en: feldspar}}, Kreide{{en: whiting}}
 - **Flussmittel**{{en: fluxes}} senken den Schmelzpunkt auf eine Temperatur, die ein Ofen erreichen kann. Die **Alkalien**, geschrieben **R₂O**, sind die Oxide von Natrium, Kalium und Lithium (Na₂O, K₂O, Li₂O); sie wirken ab Ortonkegel 06 bis in den mittleren und hohen Brennbereich. Die **Erdalkalien**, geschrieben **RO**, sind die Oxide von Calcium, Magnesium, Barium und Strontium (CaO, MgO, BaO, SrO), und Zinkoxid (ZnO) wird zu ihnen gezählt; sie wirken am besten von Kegel 5 bis Kegel 10. Das R steht für ein beliebiges Metall der jeweiligen Gruppe.
 - **Tonerde** (Al₂O₃) ist der **Stabilisator**{{en: stabilizer}}. Sie macht die Schmelze zäher, sodass sie an senkrechten Wänden hält, und bringt Härte und Beständigkeit. Glazy warnt: Bei zu wenig Tonerde „kann Ihre Glasur ablaufen; zu viel kann die Schmelze so zäh machen, dass sie matt wird“. Tonerde stammt größtenteils aus Ton und Feldspat.
 
-**Bor** (B₂O₃) verwischt die Grenze. In der Chemie zählt es zu den Glasbildnern, doch bei den Temperaturen einer Töpferwerkstatt wirkt es als Flussmittel, und in der Töpferei wird es auch so behandelt. Bei Kegel 5–6 ist es entscheidend, im hohen Brennbereich nicht nötig. (Kegel, nach denen Brände benannt werden, werden weiter unten erklärt.)
+**Bor** (B₂O₃) verwischt die Grenze. In der Chemie zählt es zu den Glasbildnern, doch bei den Temperaturen einer Töpferwerkstatt wirkt es als Flussmittel, und in der Töpferei wird es auch so behandelt. Im niedrigen und mittleren Brennbereich ist es ein Hauptflussmittel: Je kühler der Brand, desto mehr Bor braucht eine Glasur. Bei Kegel 10 ist es meist nicht nötig. (Kegel, nach denen Brände benannt werden, werden weiter unten erklärt.)
 
 > [!NOTE]
 > Eine Merkhilfe: Kieselsäure ist das Glas, die Flussmittel lassen es bei einer Temperatur schmelzen, die Ihr Ofen erreicht, und Tonerde macht es zäher, sodass es bleibt, wo Sie es aufgetragen haben.
@@ -24,9 +24,9 @@ Ein Rezept nennt Rohstoffe, etwa Feldspat{{en: feldspar}}, Kreide{{en: whiting}}
 
 Die **Tonmasse**{{en: clay body}} ist der Ton, aus dem ein Gefäß gemacht ist. Es gibt drei Hauptarten.
 
-- **Irdenware**{{en: earthenware}}: eine Masse für den niedrigen Brennbereich, etwa Kegel 06–02, die porös bleibt. Sie ist oft rot oder beige und braucht eine Glasur, um Wasser zu halten.
+- **Irdenware**{{en: earthenware}}: eine Masse für den niedrigen Brennbereich, etwa Kegel 06–02, die bei niedrigen Kegeln porös ist und dichter wird, je heißer sie gebrannt wird. Sie ist oft rot oder beige und braucht eine Glasur, um Wasser zu halten.
 - **Steinzeug**{{en: stoneware}}: eine Masse für den mittleren bis hohen Brennbereich, etwa Kegel 5–10, die dicht gesintert oder nahezu dicht wird.
-- **Porzellan**: eine weiße, kaolinreiche Masse für den hohen Brennbereich, oft durchscheinend.
+- **Porzellan**: eine weiße, kaolinreiche Masse, oft durchscheinend. Das meiste Porzellan ist für den hohen Brennbereich, es gibt aber auch Porzellane für Kegel 6.
 
 **Dicht gesintert** heißt glasig und nicht porös; die **Sinterung** ist der Vorgang, bei dem eine Masse im Brand so wird. In Großbritannien wird die Grenze oft stattdessen über die Temperatur gezogen: Steinzeug wird über {{2192 °F; 1200 °C}} gebrannt, Irdenware darunter. Der mittlere Brennbereich, Kegel 5–6, liegt knapp beiderseits dieser Grenze.
 
@@ -55,9 +55,9 @@ Der **Glasurbrand**{{en: glaze firing}} (auch Glattbrand, in britischen Quellen 
 
 ## Kegel und Wärmearbeit {#cones}
 
-Ein Brand wird nach einem **Kegel**{{en: cone}} benannt: einer schlanken keramischen Pyramide, die sich biegt, wenn sie eine bestimmte Wärmemenge erhalten hat. Orton, der Hersteller, sagt es so: „Kegel messen nicht nur die Temperatur. Sie messen die Wärmearbeit, das Zusammenwirken von Zeit und Temperatur.“
+Ein Brand wird nach einem **Kegel**{{en: cone}} benannt: einer schlanken keramischen Pyramide, die sich biegt, wenn sie eine bestimmte Wärmemenge erhalten hat. Orton, der Hersteller, nennt Kegel Anzeiger für Zeit und Temperatur (Wärmearbeit): Sie zeigen das Zusammenwirken von Zeit und Temperatur, nicht die Temperatur allein.
 
-Der Grund ist die **Wärmearbeit**{{en: heatwork}}: Glasur, Ton und Kegel reagieren nicht nur darauf, wie heiß sie werden, sondern auch darauf, wie lange sie heiß sind. Bei einem langsamen Brand biegt sich ein Kegel bei niedrigerer Temperatur, bei einem schnellen bei höherer. Laut Ortons Tabelle biegt sich Kegel 6 bei {{2165 °F; 1185 °C}}, wenn der Brand zum Schluss um {{27 °F; 15 °C}} pro Stunde steigt, bei {{2232 °F; 1222 °C}} bei {{108 °F; 60 °C}} pro Stunde und bei {{2269 °F; 1243 °C}} bei {{270 °F; 150 °C}} pro Stunde; gemeint ist die Heizrate über die letzten {{180 °F; 100 °C}}. Ein Kegel ist gefallen, wenn sich seine Spitze um 90° geneigt hat; Orton nennt das die 5-Uhr-Stellung.
+Der Grund ist die **Wärmearbeit**{{en: heatwork}}: Glasur, Ton und Kegel reagieren nicht nur darauf, wie heiß sie werden, sondern auch darauf, wie lange sie heiß sind. Bei einem langsamen Brand biegt sich ein Kegel bei niedrigerer Temperatur, bei einem schnellen bei höherer. Laut Ortons Tabelle biegt sich Kegel 6 bei {{2165 °F; 1185 °C}}, wenn der Brand zum Schluss um {{27 °F; 15 °C}} pro Stunde steigt, bei {{2232 °F; 1222 °C}} bei {{108 °F; 60 °C}} pro Stunde und bei {{2269 °F; 1243 °C}} bei {{270 °F; 150 °C}} pro Stunde; gemeint ist die Heizrate über die letzten {{180 °F; 100 °C}}. Ein Kegel ist gefallen, wenn sich seine Spitze um 90° geneigt hat. In der Töpferei heißt das oft die 5-Uhr-Stellung.
 
 Die Kegelnummern reichen von 022 bis 42. Eine führende Null kennzeichnet die kühlere Reihe, in der eine größere Zahl kühler ist: Kegel 06 ist kühler als Kegel 04 und Kegel 01 kühler als Kegel 1.
 
@@ -73,7 +73,7 @@ Label: Brennbereiche
 > [!NOTE]
 > Benennen und programmieren Sie Ihre Brände nach Kegeln, und betrachten Sie die Temperaturen als Näherungswerte. Ein **Messkegel**{{en: witness cone}} auf der Ofenplatte zwischen den Stücken oder ein **Kegelsatz**{{en: cone pack}} aus drei Kegeln (Führungs-, Haupt- und Wachkegel) zeigt die Wärmearbeit, die Ihre Stücke tatsächlich erhalten haben.
 
-Die veröffentlichten Temperaturen weichen voneinander ab. Glazy gibt für den hohen Brennbereich, Kegel 9–11, etwa {{2336–2390 °F; 1280–1310 °C}} an, was Ortons Spalte für schnelles Aufheizen entspricht, und Digitalfire berichtet, dass die meisten Öfen Kegel 6 bei etwa {{2200 °F; 1204 °C}} erreichen. Unser Rat: Nehmen Sie Ortons Werte für die mittlere Heizrate, wie diese Anleitung, programmieren Sie nach Kegel, und lassen Sie einen Messkegel entscheiden.
+Die veröffentlichten Temperaturen weichen voneinander ab. Glazy gibt für den hohen Brennbereich, Kegel 9–11, etwa {{2336–2390 °F; 1280–1310 °C}} an, was Ortons Spalte für schnelles Aufheizen entspricht, und Digitalfire gibt Kegel 6 mit etwa {{2200 °F; 1204 °C}} an. Unser Rat: Nehmen Sie Ortons Werte für die mittlere Heizrate, wie diese Anleitung, programmieren Sie nach Kegel, und lassen Sie einen Messkegel entscheiden.
 
 Außerhalb Nordamerikas geben Lieferanten oft °C statt eines Kegels an. Hermann Seger entwickelte den modernen Kegel, der 1886 in Berlin zuerst verwendet wurde, und Großbritannien hatte eigene Staffordshire-Kegel; gehen Sie nicht davon aus, dass ihre Nummern denen von Orton entsprechen. Wir haben keine Tabelle zum Umrechnen gefunden. Die Anleitung [Brennen mit einem einfachen Ofen](/guides/firing) behandelt Kegel ausführlicher.
 
@@ -106,7 +106,7 @@ Label: Kieselsäure-Tonerde-Verhältnis
 |        5–7 | Typisch für viele stabile Steinzeugglasuren             |
 |        3–5 | Kann matt oder zu schwach gebrannt sein                 |
 
-Ein Verhältnis von 5–7 sagt für sich allein weder Glanz noch Mattigkeit voraus: Die Flussmittel, das Bor und der Kegel verschieben die Grenze. Als typisches Flussmittelverhältnis für stabile Glasuren nennt Glazy 0,2 R₂O zu 0,8 RO bis 0,3 R₂O zu 0,7 RO. Mehr Alkali macht die Schmelze dünnflüssiger und erhöht ihre Wärmeausdehnung{{en: expansion}} und damit das Risiko von Haarrissen{{en: crazing}}.
+Glazy sagt nicht, für welchen Kegel diese Werte gelten. Lesen Sie sie als grobe Richtschnur für Steinzeugglasuren, etwa Kegel 6–10. Digitalfire schreibt, ein Verhältnis über etwa 8 sei wahrscheinlich glänzend, doch eine Glasur mit Bor kann schon bei 8 oder weniger glänzen, eine niedrig brennende sogar bei 6. Ein Verhältnis von 5–7 sagt für sich allein weder Glanz noch Mattigkeit voraus: Die Flussmittel, das Bor und der Kegel verschieben die Grenze. Als typisches Flussmittelverhältnis für stabile Glasuren nennt Glazy 0,2 R₂O zu 0,8 RO bis 0,3 R₂O zu 0,7 RO. Mehr Alkali macht die Schmelze dünnflüssiger und erhöht ihre Wärmeausdehnung{{en: expansion}} und damit das Risiko von Haarrissen{{en: crazing}}.
 
 ### Glühverlust
 
@@ -117,15 +117,29 @@ Label: Glühverlust
 
 | Rohstoff                          | Typischer Glühverlust                                                          |
 | --------------------------------- | ------------------------------------------------------------------------------ |
-| Kreide (Calciumcarbonat), Dolomit | Über 40 %, größtenteils Kohlendioxid: 100 g Calciumcarbonat geben etwa 45 g ab |
+| Kreide (Calciumcarbonat), Dolomit | Über 40 %, größtenteils Kohlendioxid: 100 g Calciumcarbonat geben etwa 44 g ab |
 | Lithiumcarbonat                   | Etwa 60 %                                                                      |
 | Bariumcarbonat, Gerstley Borate   | Über 20 %                                                                      |
-| Kaolin                            | Etwa 12 %, vor allem in seinen Kristallen gebundenes Wasser                    |
+| Kaolin                            | Etwa 12–14 %, vor allem in seinen Kristallen gebundenes Wasser                 |
 | Feldspäte                         | Unter 1 %                                                                      |
 
-Gas, das entweicht, nachdem die Glasur zu schmelzen begonnen hat, muss durch sie hindurchperlen und verursacht, mit den Worten von Digitalfire, „Bläschen, Blasen, Nadelstiche, Abrollen“. Talkum gibt bis etwa {{1650 °F; 899 °C}} weiter Gas ab. Fritten{{en: frits}}, **kalzinierte** Rohstoffe (vorher erhitzt, um ihre Gase auszutreiben) und Änderungen am Brand helfen alle.
+Gas, das entweicht, nachdem die Glasur zu schmelzen begonnen hat, muss durch sie hindurchperlen und verursacht, mit den Worten von Digitalfire, „Bläschen, Blasen, Nadelstiche, Abrollen“. In einem Test von Digitalfire gab Talkum bis etwa {{1650 °F; 899 °C}} weiter Gas ab. Fritten{{en: frits}}, **kalzinierte** Rohstoffe (vorher erhitzt, um ihre Gase auszutreiben) und Änderungen am Brand helfen alle.
 
 Ältere Bücher rechnen das von Hand, mit dem **Molekulargewicht** (dem Gewicht eines Mols eines Rohstoffs oder Oxids) und dem **Äquivalentgewicht** (dem Gewicht eines Rohstoffs, das ein Mol eines Oxids liefert). Nach unserer Rechnung liefern etwa 100 g Kreide{{en: whiting}} ein Mol, 56 g, Calciumoxid. Ein Rechner erledigt beides.
+
+## Grenzen und das Stull-Diagramm {#stull-chart}
+
+Ein **Stull-Diagramm**{{en: Stull chart}} ist eine Landkarte der Glasuren. Es hat zwei Achsen, beide aus der Segerformel: Kieselsäure (SiO₂) waagerecht unten und Tonerde (Al₂O₃) senkrecht an der Seite. Jede Glasur ist ein Punkt. Die Karte ist in Bereiche aufgeteilt, etwa matt, glänzend, zu schwach gebrannt und mit Haarrissen. Die [Rezeptseite](/recipe) von Glazecalc zeichnet Ihre Glasur darin ein.
+
+::stull-chart
+
+R. T. Stull erstellte das Diagramm aus Versuchen, die er 1912 veröffentlichte. Er brannte sie auf etwa Kegel 11, und alle Versuche hatten dieselben Flussmittel: 0,3 Kalium (K₂O) und 0,7 Calciumoxid (CaO). Nur Kieselsäure und Tonerde änderten sich. Das Diagramm gilt also für diese Glasuren bei dieser Hitze.
+
+Ihre Glasur ist wahrscheinlich anders. Bor, andere Flussmittel und niedrigere Kegel verschieben alle die Bereiche. 2025 prüfte ein Artikel in Ceramics Monthly eine Glasur für Kegel 6 mit Boraten als Flussmittel und viel Eisen. Das Diagramm ordnete sie als rissig, matt und zu schwach gebrannt ein. Tatsächlich war sie vollständig ausgeschmolzen, seidenmatt und ohne Haarrisse. Die Autoren schreiben, dass sich Glasuren mit Boraten im Diagramm nicht gut darstellen lassen. Nutzen Sie die Bereiche also als Richtschnur, nicht als Vorhersage.
+
+Der Bereich mit **Haarrissen** ist der, in dem Stulls eigene Proben auf seinem Ton Haarrisse bekamen. Er sagt Ihnen nicht, wie Ihre Glasur zu Ihrer Tonmasse passt. Haarrisse hängen von der Wärmeausdehnung von Glasur und Ton ab. Der Wert für die Wärmeausdehnung in Glazecalc hilft Ihnen, Glasuren zu vergleichen, und ein echter Test entscheidet: der Eiswassertest in [Glasursitz und Glasurfehler](/guides/glazing-basics#fit-and-defects).
+
+**Grenzformeln**{{en: limit formulas}} sind ein anderes Werkzeug für dieselbe Frage: Bereiche für Kieselsäure, Tonerde und die Flussmittel bei stabilen Glasuren für einen Kegel. [Lebensmitteleignung](/guides/glazing-basics#food-safety) erklärt sie und warum sie für sich allein nichts beweisen.
 
 ## Fritten und Rohstoffe {#materials}
 
@@ -133,7 +147,7 @@ Gas, das entweicht, nachdem die Glasur zu schmelzen begonnen hat, muss durch sie
 
 Eine **Fritte**{{en: frit}} ist in einer Fabrik hergestelltes Glas: Mineralien werden geschmolzen, in Wasser abgeschreckt und gemahlen. Das Fritten macht lösliche Rohstoffe wie Borax unlöslich, schließt giftige Oxide wie Blei und Barium in ein stabiles Glas ein, ergibt einen gleichmäßigeren Rohstoff als ungefrittete Mineralien und treibt Gase aus; daher sind gefrittete Glasuren „viel fehlerfreier“ (Digitalfire). Fritten schmelzen auch früh: Eine natriumreiche Fritte wirkt schon bei Kegel 06, während Feldspat{{en: feldspar}} „bei Kegel 6 gerade erst zu erweichen beginnt“. Sie kosten mehr, sie brauchen Ton, um in der Schwebe zu bleiben (das Beispiel von Digitalfire ist 85 % Fritte mit 15 % Ton), und sie sind „theoretisch unlöslich, in der Praxis aber nicht“.
 
-Nordamerikanische Fritten heißen nach Hersteller und Nummer: Ferro Frit 3134 (Ferro heißt heute Vibrantz) steht in etwa 22 % der öffentlichen Rezepte auf Glazy. Britische Rezepte nennen öfter allgemeine Fritten, etwa Boraxfritte.
+Nordamerikanische Fritten heißen nach Hersteller und Nummer: Ferro Frit 3134 (Ferro heißt heute Vibrantz) gehört zu den meistverwendeten Fritten in Nordamerika. Britische Rezepte nennen öfter allgemeine Fritten, etwa Boraxfritte.
 
 ### Die gängigen Rohstoffe
 
@@ -143,7 +157,7 @@ Label: Gängige Glasurrohstoffe
 | Rohstoff (andere Namen)                                                | Liefert                | Hinweise                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Quarzmehl{{en: silica}} (Quarz, Flint)                                 | SiO₂                   | In Glasuren 325 mesh verwenden, eine sehr feine Mahlung                                                                                                                                                                                  |
-| Kaolin (Großbritannien: China Clay; Australien: Eckalite)              | Al₂O₃, SiO₂            | Die wichtigste Tonerdequelle; hält auch die Glasur in der Schwebe                                                                                                                                                                        |
+| Kaolin (Großbritannien: China Clay)                                    | Al₂O₃, SiO₂            | Die wichtigste Tonerdequelle; hilft auch, das Absetzen der Glasur zu verhindern                                                                                                                                                          |
 | Ball Clay                                                              | Al₂O₃, SiO₂            | Plastischer als Kaolin, mit mehr Eisen und organischen Stoffen                                                                                                                                                                           |
 | Kalifeldspat, Natronfeldspat, Nephelin-Syenit{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Flussmittel, die ihre eigene Tonerde und Kieselsäure mitbringen. Nephelin-Syenit ist ein starkes Flussmittel für den niedrigen und mittleren Brennbereich. Steht in einem alten Rezept nur „Feldspat“, kann jeder von ihnen gemeint sein |
 | Kreide{{en: whiting}} (Calciumcarbonat)                                | CaO                    | Das wichtigste Calcium-Flussmittel; gibt Kohlendioxid ab                                                                                                                                                                                 |
@@ -154,39 +168,39 @@ Label: Gängige Glasurrohstoffe
 | Lithiumcarbonat                                                        | Li₂O                   | Flussmittel mit niedriger Wärmeausdehnung; teuer, daher sparsam eingesetzt                                                                                                                                                               |
 | Strontiumcarbonat                                                      | SrO                    | Der weniger giftige Ersatz für Barium                                                                                                                                                                                                    |
 | Bariumcarbonat                                                         | BaO                    | Ungefrittet giftig; bariumreiche Glasuren können Metall abgeben                                                                                                                                                                          |
-| Bentonit                                                               | Stellwirkung           | Ein sehr feiner Ton, meist 1–3 %, gegen das Absetzen                                                                                                                                                                                     |
+| Bentonit                                                               | Stellwirkung           | Ein sehr feiner Ton, meist 1–2 %, gegen das Absetzen. Über 3 % können die Glasur beim Trocknen reißen lassen                                                                                                                             |
 
 > [!WARNING]
 > Glasurrohstoffe sind feine Pulver. Quarzstaub schädigt die Lunge, anfangs ohne Beschwerden, und einige Rohstoffe, etwa Bariumcarbonat und Lithiumcarbonat, sind giftig bei Verschlucken. Gehen Sie behutsam mit Pulvern um, reinigen Sie feucht, und tragen Sie bei trockenen Arbeiten eine gut sitzende Atemschutzmaske. [Sicheres Anmischen und Lüften](/guides/safe-mixing) und [Vergiften Sie Ihre Familie nicht](/guides/home-safety) erklären, wie.
 
 ### Regionale Namen
 
-- **Kaolin** heißt in Großbritannien **China Clay**; australische Lieferanten verkaufen ihn als Eckalite.
+- **Kaolin** heißt in Großbritannien **China Clay**. In Australien ist Eckalite eine Kaolinmarke.
 - **Flint** ist ein älterer britischer Name für Quarz. Britische Lieferanten verkaufen **kalzinierten Flint** noch als eigenes Produkt; „flint“ in einem britischen Rezept meint also wahrscheinlich kalzinierten Flint, in einem amerikanischen wahrscheinlich Quarzmehl. Beide werden als Quelle für Kieselsäure verkauft; prüfen Sie die Analyse.
 - **China Stone** und **Cornish Stone** (Cornwall Stone) sind derselbe Rohstoff, mit Feldspat verwandt.
-- **Whiting** in englischen Rezepten ist Calciumcarbonat; deutsche Lieferanten nennen es Kreide.
+- **Whiting** in englischen Rezepten ist Calciumcarbonat, gemahlene Kreide oder gemahlener Kalkstein; deutsche Lieferanten nennen es Kreide.
 
 > [!NOTE]
 > Beurteilen Sie einen Rohstoff nach den Oxiden, die er liefert, nicht nach seinem Namen. So arbeitet Glazecalc: Sie können die Analyse Ihres Lieferanten auf der [Seite Rohstoffe](/material) eingeben, und **Heutige Rohstoffe einsetzen und vergleichen**, **Mengen vorschlagen und vergleichen** und **Aus meinem Vorrat nachbauen** gleichen alle die gebrannten Oxide ab, nicht die Namen.
 
-Auch Rohstoffe ändern sich. Custer Feldspar wurde 2023 eingestellt. Die ursprüngliche Mine für Gerstley Borate schloss um 1999–2000; Laguna verkauft weiterhin ein Produkt unter diesem Namen, und Gillespie Borate ist der wichtigste Ersatz. Die Quellen sind uneins, ob sich Gerstley Borate Pfund für Pfund durch Gillespie Borate ersetzen lässt (der Hersteller von Gillespie Borate und Potclays sagen ja, Digitalfire und andere nein); vergleichen Sie die beiden also in Glazecalc und testen Sie dann einen kleinen Ansatz.
+Auch Rohstoffe ändern sich. Der US Geological Survey berichtet, dass die Gruben und das Werk, die Custer Feldspar in South Dakota herstellten, im November 2023 den Betrieb eingestellt haben. Die ursprüngliche Mine für Gerstley Borate schloss um 1999–2000; Laguna verkauft weiterhin ein Produkt unter diesem Namen, und Gillespie Borate ist der wichtigste Ersatz. Die Quellen sind uneins, ob sich Gerstley Borate Pfund für Pfund durch Gillespie Borate ersetzen lässt (der Hersteller von Gillespie Borate und Potclays sagen ja, Digitalfire und andere nein); vergleichen Sie die beiden also in Glazecalc und testen Sie dann einen kleinen Ansatz.
 
 ## Färbemittel und Trübungsmittel {#color}
 
-Ein **Färbemittel**{{en: colorant}} ist ein Metalloxid oder -carbonat, das eine Glasur färbt; ein **Farbkörper**{{en: stain}} ist ein industriell hergestelltes Färbemittel, stabiler und gleichmäßiger als reine Oxide. Färbemittel machen meist unter 5 % der Grundglasur aus, viele unter 1 %, und ein Carbonat färbt etwa halb so stark wie das entsprechende Oxid.
+Ein **Färbemittel**{{en: colorant}} ist ein Metalloxid oder -carbonat, das eine Glasur färbt; ein **Farbkörper**{{en: stain}} ist ein industriell hergestelltes Färbemittel, stabiler und gleichmäßiger als reine Oxide. Färbemittel machen meist unter 5 % der Grundglasur aus, viele unter 1 %, und ein Carbonat färbt schwächer als das entsprechende Oxid, weil ein Teil davon als Gas entweicht. Nach unserer Rechnung ergeben 100 g Kobaltcarbonat etwa 63 g Kobaltoxid, und 100 g des Kupfercarbonats, das man im Handel kauft (basisches Kupfercarbonat), etwa 72 g Kupferoxid. Nehmen Sie also etwa 1,4- bis 1,6-mal so viel Carbonat wie Oxid.
 
 Table: Gängige Färbemittel, in Prozent der Grundglasur
 Label: Gängige Färbemittel
 
-| Färbemittel               | Übliche Anfangsmenge                 | Farben und Hinweise                                                                                                                                                    |
-| ------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalt                    | 0,1–2 % (Quellen uneins)             | Blau, und sehr kräftig; geht ins Violette, wenn die Grundglasur Magnesium enthält                                                                                      |
-| Eisen                     | 0,5–10 %                             | Braun-, Beige- und Rottöne in Oxidation; in Reduktion{{en: reduction}} ergeben ½–2 % Seladon und 5–6 % Temmoku. Ein Flussmittel, viel davon lässt eine Glasur ablaufen |
-| Kupfer                    | 1–3 %                                | Grün oder Türkis in Oxidation, Rot in Reduktion. Es kann dazu führen, dass eine Glasur Metalle abgibt                                                                  |
-| Chrom                     | Unter 0,5 % bis 2 % (Quellen uneins) | Grün; braun, wenn die Grundglasur Zink enthält, rosa mit Zinn                                                                                                          |
-| Mangan                    | 2–10 %                               | Braun- und Violetttöne                                                                                                                                                 |
-| Rutil                     | Etwa 2–5 %                           | Gefleckte, lebhaft wechselnde Farbe; über etwa 5 % rau oder matt                                                                                                       |
-| Farbkörper aus dem Handel | 2–12 %                               | 2–4 % für Pastelltöne, 5–8 % für mittlere Töne, 10–12 % für kräftige Farben                                                                                            |
+| Färbemittel               | Übliche Anfangsmenge                 | Farben und Hinweise                                                                                                                                                     |
+| ------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalt                    | 0,1–2 % (Quellen uneins)             | Blau, und sehr kräftig; geht ins Violette, wenn die Grundglasur Magnesium enthält                                                                                       |
+| Eisen                     | 0,5–10 %                             | Braun-, Beige- und Rottöne in Oxidation; in Reduktion{{en: reduction}} ergeben ½–2 % Seladon und 5–10 % Temmoku. Ein Flussmittel, viel davon lässt eine Glasur ablaufen |
+| Kupfer                    | 1–3 %                                | Grün oder Türkis in Oxidation, Rot in Reduktion. Es kann dazu führen, dass eine Glasur Metalle abgibt                                                                   |
+| Chrom                     | Unter 0,5 % bis 2 % (Quellen uneins) | Grün; braun, wenn die Grundglasur Zink enthält, rosa mit Zinn                                                                                                           |
+| Mangan                    | 2–10 %                               | Braun- und Violetttöne                                                                                                                                                  |
+| Rutil                     | Etwa 2–5 %                           | Gefleckte, lebhaft wechselnde Farbe; über etwa 5 % rau oder matt                                                                                                        |
+| Farbkörper aus dem Handel | 2–12 %                               | 2–4 % für Pastelltöne, 5–8 % für mittlere Töne, 10–12 % für kräftige Farben                                                                                             |
 
 Die Mengen für Kobalt und Chrom sind tatsächlich umstritten. Glazy schreibt, 0,1 % Kobalt genüge für ein Blau; das Glendale Community College nennt ½–2 % oder ½–3 %, je nach Ofenatmosphäre; Birdie Boone schreibt in Pottery Making Illustrated: 3 % oder weniger. Für Chrom nennt Boone unter 0,5 % und Glendale 2–3 %. Am sichersten ist es, niedrig anzufangen und eine **Testreihe**{{en: line blend}} zu machen: eine Reihe von Probeplättchen{{en: test tiles}}, auf denen ein Bestandteil schrittweise von wenig bis viel erhöht wird.
 
@@ -198,11 +212,11 @@ Ein **Trübungsmittel** macht eine Glasur **deckend** (opak), sodass der Ton nic
 
 Table: Trübungsmittel
 
-| Trübungsmittel                                       | Übliche Menge                 | Hinweise                                                                                                 |
-| ---------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Zirkonsilikat (Zircopax, Superpax, Ultrox, Zircosil) | 8–12 % für volle Deckkraft    | Die günstigere Wahl; die Marken sind derselbe Rohstoff, verschieden fein gemahlen                        |
-| Zinnoxid                                             | Etwa 5–7 % (unsere Schätzung) | Teuer; trübt in Reduktion schlecht                                                                       |
-| Titandioxid                                          | Über 2 %                      | Seidige, durchscheinende Trübung; ab 10 % eine matte, strukturierte Oberfläche mit sichtbaren Kristallen |
+| Trübungsmittel                             | Übliche Menge                 | Hinweise                                                                                                                                    |
+| ------------------------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zirkonsilikat (Zircopax, Superpax, Ultrox) | 10–15 % für volle Deckkraft   | Die günstigere Wahl; die Marken sind Zirkonsilikat in verschiedener Mahlfeinheit, und feinere Sorten trüben stärker                         |
+| Zinnoxid                                   | Etwa 5–7 % (unsere Schätzung) | Teuer; im hohen Brennbereich schwächer, und laut Digitalfire ergaben 4 % in einer transparenten Reduktionsglasur für Kegel 10 keine Trübung |
+| Titandioxid                                | Etwa 5 % (unsere Schätzung)   | Seidige, durchscheinende Trübung; etwa 5 % können die Oberfläche verändern, und viel mehr ergibt oft eine matte Oberfläche mit Kristallen   |
 
 ## Glasursitz und Glasurfehler {#fit-and-defects}
 
@@ -230,13 +244,13 @@ Eine **glänzende** Oberfläche spiegelt und ist glatt, eine **seidenmatte** hat
 Table: Häufige Glasurfehler, ihre üblichen Ursachen und erste Abhilfe
 Label: Häufige Glasurfehler
 
-| Fehler                       | Aussehen                                                             | Häufige Ursachen                                                                                                                       | Erste Abhilfe                                                                                                         |
-| ---------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Abrollen{{en: crawling}}     | Die Glasur zieht sich zu Tropfen zusammen und legt den Scherben frei | Staubige oder fettige Schrühware; eine dicke, tonreiche Schicht, die beim Trocknen gerissen ist; Zink, Zirkonsilikat oder Zinn         | Schrühware säubern; dünner auftragen; einen Teil des Tons kalzinieren; ein Bindemittel wie Glasurkleber (CMC) zugeben |
-| Nadelstiche{{en: pinholing}} | Kleine Löcher oder Grübchen                                          | Gas aus Scherben oder Glasur, dessen Austrittsstellen nicht wieder zugeflossen sind; eine zu schwach gebrannte oder zähflüssige Glasur | Etwa eine halbe Stunde auf Endtemperatur halten; dünner auftragen; weniger Zink oder Rutil                            |
-| Blasen                       | Scharfkantige Krater                                                 | Meist zu starker Brand; sehr dicke Schichten; flüchtige Flussmittel über etwa {{2192 °F; 1200 °C}}                                     | Niedriger brennen; dünner auftragen. Scharfe Kanten machen Gebrauchsgeschirr unsicher                                 |
-| Ablaufen                     | Die Glasur läuft auf die Ofenplatte                                  | Zu wenig Tonerde; zu dick, etwa wo sich Güsse überlappen; viel Eisen                                                                   | Dünner auftragen; Tonerde zugeben; die Glasur deutlich oberhalb des Fußes enden lassen                                |
-| Kühlrisse{{en: dunting}}     | Risse im Gefäß durch Abkühlen oder Aufheizen                         | Schnelles Abkühlen durch den Quarzsprung{{en: quartz inversion}}, {{1063 °F; 573 °C}}; ungleich dicke Wände; schlechter Glasursitz     | Langsam durch {{1063 °F; 573 °C}} brennen, beim Aufheizen und beim Abkühlen; gleichmäßige Wände                       |
+| Fehler                       | Aussehen                                                             | Häufige Ursachen                                                                                                                                                                        | Erste Abhilfe                                                                                                         |
+| ---------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Abrollen{{en: crawling}}     | Die Glasur zieht sich zu Tropfen zusammen und legt den Scherben frei | Staubige oder fettige Schrühware; eine dicke, tonreiche Schicht, die beim Trocknen gerissen ist; Zink, Zirkonsilikat oder Zinn                                                          | Schrühware säubern; dünner auftragen; einen Teil des Tons kalzinieren; ein Bindemittel wie Glasurkleber (CMC) zugeben |
+| Nadelstiche{{en: pinholing}} | Kleine Löcher oder Grübchen                                          | Gas aus Scherben oder Glasur, dessen Austrittsstellen nicht wieder zugeflossen sind; eine zu schwach gebrannte oder zähflüssige Glasur                                                  | Etwa eine halbe Stunde auf Endtemperatur halten; dünner auftragen; weniger Zink oder Rutil                            |
+| Blasen                       | Scharfkantige Krater                                                 | Meist zu starker Brand; sehr dicke Schichten; flüchtige Flussmittel über etwa {{2192 °F; 1200 °C}}                                                                                      | Niedriger brennen; dünner auftragen. Scharfe Kanten machen Gebrauchsgeschirr unsicher                                 |
+| Ablaufen                     | Die Glasur läuft auf die Ofenplatte                                  | Zu wenig Tonerde; zu dick, etwa wo sich Güsse überlappen; viel Eisen                                                                                                                    | Dünner auftragen; Tonerde zugeben; die Glasur deutlich oberhalb des Fußes enden lassen                                |
+| Kühlrisse{{en: dunting}}     | Risse im Gefäß durch Abkühlen oder Aufheizen                         | Schnelles Abkühlen durch den Quarzsprung{{en: quartz inversion}}, {{1063 °F; 573 °C}}, oder den Cristobalitsprung, etwa {{428 °F; 220 °C}}; ungleich dicke Wände; schlechter Glasursitz | Langsam durch beide brennen, beim Aufheizen und beim Abkühlen; gleichmäßige Wände                                     |
 
 ## Lebensmitteleignung {#food-safety}
 
@@ -254,11 +268,11 @@ Die gesetzlichen Grenzwerte sind von Land zu Land verschieden. Die Tabelle zeigt
 
 ::food-limits
 
-In den USA gilt dekorative Keramikware, die für Lebensmittel brauchbar aussieht, als Ware für Lebensmittel, es sei denn, sie trägt ein aufgeklebtes Etikett und einen dauerhaften Hinweis, der in ihren Boden geformt oder eingebrannt ist, etwa „Not for Food Use. May Poison Food“ (nicht für Lebensmittel; kann Lebensmittel vergiften), oder hat ein Loch durch die Fläche, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in der Richtlinie 84/500/EWG fest, und das Vereinigte Königreich behält dieselben Werte in seinem eigenen Recht bei. Ab dem 29. Mai 2026 erlauben die Niederlande, Belgien und Luxemburg etwa 130- bis 150-mal weniger Blei und etwa 15-mal weniger Cadmium. Australien legt Grenzwerte für eingeführte Ware fest; für Ware, die in Australien oder Neuseeland hergestellt wird, haben wir keinen amtlichen Grenzwert gefunden.
+In den USA gilt dekorative Keramikware, die für Lebensmittel brauchbar aussieht, als Ware für Lebensmittel, es sei denn, sie trägt ein aufgeklebtes Etikett und einen dauerhaften Hinweis, der in ihren Boden geformt oder eingebrannt ist, etwa „Not for Food Use. May Poison Food“ (nicht für Lebensmittel; kann Lebensmittel vergiften), oder hat ein Loch durch die Fläche, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in Keramikware in der Richtlinie 84/500/EWG fest, und das Vereinigte Königreich behält dieselben Werte in seinem eigenen Recht bei. Ein Beschluss der Benelux-Länder von 2024 legt viel niedrigere Grenzwerte für Keramikware fest. Die Niederlande wenden sie seit dem 29. Mai 2026 an: etwa 130- bis 150-mal weniger Blei und etwa 14- bis 18-mal weniger Cadmium als die EU-Werte. Ware, die die alten Vorschriften erfüllte und vor dem 1. Dezember 2026 erstmals verkauft wurde, darf verkauft werden, bis die Bestände aufgebraucht sind. Prüflabore berichten, dass Luxemburg dieselben Grenzwerte ab dem 29. Mai 2026 anwendet und dass Belgien sie mit einem königlichen Erlass vom 19. Juli 2026 übernommen hat; diese Texte haben wir nicht selbst gelesen. Australien legt Grenzwerte für eingeführte Ware fest; für Ware, die in Australien oder Neuseeland hergestellt wird, haben wir keinen amtlichen Grenzwert gefunden.
 
 ### Prüfen
 
-Laut FDA können Wischtests für zu Hause anzeigen, dass eine Glasur Blei abgeben kann, doch Ceramics New Zealand warnt, dass Teststifte nicht für Keramik gedacht sind und falsch positive Ergebnisse liefern. Nehmen Sie ein positives Ergebnis als Grund, das Stück nicht mehr zu benutzen, und werten Sie ein negatives nicht als Beweis. Eine Laborprüfung der Blei- und Cadmiumabgabe am gebrannten Stück (ASTM C738 in den USA; EN 1388 oder ISO 6486 in Europa) gibt die eigentliche Antwort.
+Laut FDA können Wischtests für zu Hause anzeigen, dass eine Glasur Blei abgeben kann, doch Studien zeigen, dass diese Tests auf glasierter Ware oft falsch liegen: Sie können Blei anzeigen, das nicht da ist, und Blei übersehen, das abgegeben wird. Nehmen Sie ein positives Ergebnis als Grund, das Stück nicht mehr zu benutzen, und werten Sie ein negatives nicht als Beweis. Eine Laborprüfung der Metallabgabe am gebrannten Stück (ASTM C738 in den USA; EN 1388 oder ISO 6486 in Europa) gibt die eigentliche Antwort.
 
 > [!WARNING]
 > „Lebensmittelgeeignet“{{en: food safe}} heißt: Diese Glasur, auf dieser Tonmasse, auf diesen Kegel in diesem Ofen gebrannt und auf diese Weise aufgetragen, gibt weniger ab, als die gesetzlichen Grenzwerte erlauben. Glazecalc kann Ihnen helfen, eine stabile Glasur aufzubauen, und **Blei ersetzen** kann ein altes Bleirezept ohne Blei neu aufbauen, aber kein Rechner kann ein Gefäß zertifizieren. Das kann nur eine Prüfung des gebrannten Stücks.
@@ -267,7 +281,7 @@ Laut FDA können Wischtests für zu Hause anzeigen, dass eine Glasur Blei abgebe
 
 ### Spezifisches Gewicht
 
-Mit Wasser angerührtes Glasurpulver ist ein **Glasurschlicker**{{en: slurry}}. Sein **spezifisches Gewicht** (**SG**, vom englischen specific gravity) ist sein Gewicht im Vergleich zum gleichen Volumen Wasser, das ein spezifisches Gewicht von 1,0 hat: Je höher es ist, desto mehr Pulver ist im Eimer. Ältere britische Bücher sprechen vom **Pint-Gewicht** (pint weight). Glazy nennt 1,4–1,5 „einen guten Ausgangspunkt für die meisten Glasuren“. Zum Messen wiegen Sie genau 100 mL Glasurschlicker ab (Glazy empfiehlt eine Spritze) und teilen durch 100: 145 g bedeuten spez. Gewicht 1,45. Aräometer sind in angedickten Glasuren unzuverlässig, und Wasser verdunstet; messen Sie also vor dem Glasieren noch einmal.
+Mit Wasser angerührtes Glasurpulver ist ein **Glasurschlicker**{{en: slurry}}. Sein **spezifisches Gewicht** (**SG**, vom englischen specific gravity) ist sein Gewicht im Vergleich zum gleichen Volumen Wasser, das ein spezifisches Gewicht von 1,0 hat: Je höher es ist, desto mehr Pulver ist im Eimer. Glazy nennt 1,4–1,5 „einen guten Ausgangspunkt für die meisten Glasuren“. Zum Messen wiegen Sie genau 100 mL Glasurschlicker ab (Glazy empfiehlt eine Spritze) und teilen durch 100: 145 g bedeuten spez. Gewicht 1,45. Aräometer sind in angedickten Glasuren unzuverlässig, und Wasser verdunstet; messen Sie also vor dem Glasieren noch einmal.
 
 Die Zielwerte unterscheiden sich je nach Quelle. Digitalfire nennt für Tauchglasuren 1,40–1,50 und für gekaufte Streichglasuren 1,25–1,55, Potclays dagegen 1,71–1,81 zum Streichen und 1,71 zum Spritzen. Unser Rat: Tauchen Sie bei etwa 1,45 mit leicht angedickter Glasur, folgen Sie bei einer Streichglasur dem Etikett, und schreiben Sie auf, was funktioniert.
 
@@ -291,7 +305,7 @@ Eine zu dicke Schicht kann abrollen, Blasen werfen oder ablaufen. Die Faustregel
 
 Die Gase im Ofen, seine **Ofenatmosphäre**, verändern, wie Glasuren ausfallen. **Oxidation** bedeutet reichlich Sauerstoff. „Elektroöfen sind gleichbedeutend mit Oxidationsbrand“, schreibt Digitalfire, und Glasuren aus dem Oxidationsbrand sind meist leuchtender als solche aus der Reduktion, besonders bei niedrigeren Temperaturen. In Oxidation ergibt Kupfer Grün und Türkis, Eisen Braun-, Beige- und Rottöne. Ein schlecht entlüfteter Elektroofen voller Ware, die Gase abgibt, kann neutraler brennen als beabsichtigt; eine direkt an den Ofen angeschlossene Abluftanlage hilft.
 
-**Reduktion**{{en: reduction}} schränkt den Sauerstoff absichtlich ein, meist in einem Gas-, Holz- oder Spezialofen. Kupfer wird rot, und Eisen wird ein stärkeres Flussmittel und ergibt **Seladon** (blaugrün bis graugrün, aus etwa ½–2 % Eisen) und **Temmoku** (auch Tenmoku: braunschwarz, etwa 5–6 % Eisen). Laut Glazy sind Seladone und Kupferrot „auf Reduktion angewiesen“. Auch der Ton verändert sich: In einem Vergleich von Digitalfire brannte eine Steinzeugmasse in Reduktion grau und in Oxidation gelblich. Siliciumcarbid in einer Glasur kann selbst im Elektroofen kleine Bereiche mit Reduktion erzeugen. Für Reduktion von Kegel 010 bis Kegel 3 empfiehlt Orton seine eisenfreien Kegel.
+**Reduktion**{{en: reduction}} schränkt den Sauerstoff absichtlich ein, meist in einem Gas-, Holz- oder Spezialofen. Kupfer wird rot, und Eisen wird ein stärkeres Flussmittel und ergibt **Seladon** (blaugrün bis graugrün, aus etwa ½–2 % Eisen) und **Temmoku** (auch Tenmoku: braunschwarz, etwa 5–10 % Eisen). Laut Glazy sind Seladone und Kupferrot „auf Reduktion angewiesen“. Auch der Ton verändert sich: In einem Vergleich von Digitalfire brannte eine Steinzeugmasse in Reduktion grau und in Oxidation gelblich. Siliciumcarbid in einer Glasur kann selbst im Elektroofen kleine Bereiche mit Reduktion erzeugen. Für Reduktion von Kegel 010 bis Kegel 3 empfiehlt Orton seine eisenfreien Kegel.
 
 > [!NOTE]
 > Rechnen Sie damit, dass ein Rezept für einen Gasofen mit Reduktion im Elektroofen anders ausfällt: Ein Seladon oder Kupferrot, das auf Reduktion angewiesen ist, sieht in Oxidation nicht gleich aus. Prüfen Sie, für welche Ofenatmosphäre ein Rezept gemacht wurde, und notieren Sie Ihre eigene, zusammen mit dem Kegel, in den Notizen des Rezepts in Glazecalc.
@@ -316,7 +330,7 @@ Ball Clay
 : Ein plastischer Ton mit mehr Eisen und organischen Stoffen als Kaolin.
 
 Bentonit (bentonite)
-: Ein sehr feiner Ton, mit 1–3 % zugegeben, damit sich die Glasur nicht absetzt.
+: Ein sehr feiner Ton, mit etwa 1–2 % zugegeben, damit sich die Glasur nicht absetzt. Über 3 % können die Glasur beim Trocknen reißen lassen.
 
 Bor (B₂O₃; boron)
 : Formal ein Glasbildner, aber als Flussmittel eingesetzt; unverzichtbar von Kegel 06 bis Kegel 6.
@@ -373,10 +387,10 @@ Innenglasur (liner glaze)
 : Eine stabile, meist transparente oder weiße Glasur für Flächen, die mit Lebensmitteln in Berührung kommen.
 
 Irdenware (earthenware)
-: Eine Masse für den niedrigen Brennbereich (etwa Kegel 06–02), die porös bleibt.
+: Eine Masse für den niedrigen Brennbereich (etwa Kegel 06–02), bei niedrigen Kegeln porös und dichter, wenn sie heißer gebrannt wird.
 
 Kaolin (UK: china clay)
-: Ein reiner, weißer Ton, der Tonerde und Kieselsäure liefert; hält Glasur in der Schwebe. Australien: Eckalite.
+: Ein reiner, weißer Ton, der Tonerde und Kieselsäure liefert; hilft, das Absetzen der Glasur zu verhindern. In Australien ist Eckalite eine Marke.
 
 Kegel (cone)
 : Eine kalibrierte keramische Pyramide, die sich bei einer bestimmten Wärmearbeit biegt. Ein Messkegel zeigt, was die Stücke erhalten haben.
@@ -388,7 +402,7 @@ Kieselsäure-Tonerde-Verhältnis (silica to alumina ratio)
 : Kieselsäure geteilt durch Tonerde in der Segerformel: Ein höheres neigt zu Glanz, ein niedrigeres zu Matt.
 
 Kreide (whiting)
-: Calciumcarbonat, das wichtigste Calcium-Flussmittel; verliert im Brand über 40 % seines Gewichts. Deutsche Lieferanten verkaufen es als Kreide.
+: Calciumcarbonat, das wichtigste Calcium-Flussmittel; verliert im Brand etwa 44 % seines Gewichts, als Kohlendioxid.
 
 Kühlrisse (dunting)
 : Risse in einem Gefäß durch Spannungen beim Abkühlen oder Aufheizen, oft beim Quarzsprung, {{1063 °F; 573 °C}}.
@@ -424,7 +438,7 @@ Sinterung (vitrification)
 : Eine Masse wird im Brand glasig und nicht porös.
 
 Spezifisches Gewicht (specific gravity, SG)
-: Das Gewicht eines Glasurschlickers im Vergleich zum gleichen Volumen Wasser. In älteren britischen Büchern: Pint-Gewicht (pint weight).
+: Das Gewicht eines Glasurschlickers im Vergleich zum gleichen Volumen Wasser.
 
 Stabilisator (stabilizer)
 : Ein Oxid, vor allem Tonerde, das die Schmelze zäher und die Glasur beständiger macht.
@@ -483,6 +497,14 @@ Zusatz (additive)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, über Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,21 @@ Zusatz (additive)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

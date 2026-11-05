@@ -123,126 +123,147 @@ Derek Au jiżen kollox fi skutella waħda, f’munzelli separati, biex jekk ikun
 
 ### Kemm ilma
 
-Is-sorsi ma jaqblux. Derek Au jibda oħxon, b’50 mL ilma kull 100 g trab, u jżid aktar wara. Potterycrafts jagħti 65 mL kull 100 g għal wieħed mill-glejżijiet{{en: glazes}} tiegħu li jinbiegħu trab. UT Austin juża l-istess piż ta’ ilma u ta’ trab, u meta Digitalfire poġġa 20 kg trab f’20 kg ilma, kejjel gravità speċifika{{en: specific gravity}} ta’ 1.46.
+Is-sorsi ma jaqblux. Derek Au jibda oħxon, b’50 mL ilma għal kull 100 g trab, u jżid aktar wara. Potterycrafts jagħti 65 mL għal kull 100 g għal glejż{{en: glaze}} wieħed fi trab. UT Austin juża l-istess piż ta’ ilma u ta’ trab, u meta Digitalfire poġġa 20 kg trab f’20 kg ilma, kejjel gravità speċifika{{en: specific gravity}} ta’ 1.46.
 
-L-ilma jiżdied malajr u jitneħħa bil-mod, għalhekk ibda b’ammont baxx. L-istima tagħna: ibda b’**madwar 70 sa 80 mL kull 100 g** (700 sa 800 mL kull kilogramma, jew madwar 11 sa 12 US fl oz kull libra). Ħalli t-trab jixxarrab, ħallat u għarbel b’din il-ħxuna, imbagħad żid l-ilma ftit ftit sakemm il-gravità speċifika tkun it-tajba. 1 mL ilma jiżen 1 g, għalhekk tista’ tiżnu. Jekk iżżid wisq, ħalli l-glejż jinżel fil-qiegħ, imbagħad neħħi l-ilma ċar minn fuq bi sponża jew billi tferrgħu.
+L-ilma faċli żżidu u diffiċli tneħħih, għalhekk ibda b’ftit. L-istima tagħna: ibda b’**madwar 70 sa 80 mL għal kull 100 g** (700 sa 800 mL għal kull kilogramma, jew madwar 11 sa 12-il US fl oz għal kull libra). Ħalli t-trab jixxarrab, ħawwad u għarbel b’dik il-ħxuna, imbagħad żid l-ilma ftit ftit sakemm il-gravità speċifika tkun tajba. 1 mL ilma jiżen 1 g, għalhekk tista’ tiżnu. Jekk taqbeż, ħalli l-glejż jinżel il-qiegħ, imbagħad neħħi l-ilma ċar minn fuq bi sponża jew billi tferrgħu.
 
-### Għodda u ilma
+### L-għodda u l-ilma
 
-- **Mikser b’elika.** Digitalfire jgħid li wieħed tajjeb huwa “essenzjali”. Trapan bil-wajer b’paletta tat-taħlit jagħmel ix-xogħol f’barmil. UT Austin iħaddmu mill-anqas 4 sa 5 minuti wara li l-glejż jidher imħallat, u jżomm ix-xafra ’l bogħod mill-barmil, għax tista’ tobrox il-plastik minnu.
-- **Blender.** “Jaħdem eċċellenti għal taħlitiet żgħar” (Digitalfire). Użah għall-glejż biss: qatt ma jista’ jerġa’ lura fil-kċina.
+- **Mikser bl-elika.** Digitalfire isejjaħ wieħed tajjeb “essenzjali”. Trapan bil-wajer b’paletta tat-taħlit jagħmel ix-xogħol f’barmil. UT Austin iħaddmu mill-inqas 4 sa 5 minuti wara li l-glejż jidher imħallat, u jżomm ix-xafra ’l bogħod mill-barmil, li minnu tista’ tobrox il-plastik.
+- **Blender.** “Jaħdem tajjeb ħafna għal taħlitiet żgħar” (Digitalfire). Żommu għall-glejż biss: qatt m’għandu jerġa’ lura fil-kċina.
 - **Frosta jew stikka.** L-għażla ta’ Zakin meta ma jkunx hemm mikser.
 
-L-ilma wkoll ivarja, u Digitalfire jinnota li jibdel kif iġib ruħu l-glejż likwidu{{en: slurry}}. Derek Au juża ilma tal-osmożi inversa għax l-ilma tal-vit tiegħu huwa iebes. Kwalunkwe ilma tuża, ikteb liema.
+L-ilma jvarja wkoll, u Digitalfire jinnota li jibdel kif iġib ruħu l-glejż likwidu{{en: slurry}}. Derek Au juża ilma tal-osmożi inversa għax l-ilma tal-vit tiegħu huwa iebes. Tkun xi tkun l-għażla tiegħek, iktibha.
 
 ### Pass pass
 
-1. Ilbes ir-respiratur, u ingwanti tal-gomma jekk se ddaħħal idejk. Zakin jilbes maskra mill-bidu tal-użin sakemm il-glejż jixxarrab.
-2. Kejjel madwar 70 sa 80 mL ilma kull 100 g trab u ferrgħu fil-barmil.
-3. Żid it-trab miżun bil-mod, minn ftit għoli. UT Austin iżid it-trab mal-ilma fietel; Zakin u Au jżidu l-ilma mat-trab. Nissuġġerixxu li tpoġġi t-trab fl-ilma, għax iqajjem inqas trab, ħlief għal riċetta b’ħafna bentonit: ħallat it-trabijiet nexfin tagħha flimkien l-ewwel.
-4. **Ħalli t-trab jixxarrab**: ħallih fl-ilma mingħajr ma tħawwad. Digitalfire jistenna madwar 20 minuta. Trabijiet b’gomma jew legant għandhom bżonn joqogħdu matul il-lejl.
-5. Ħallat sakemm ma jibqgħux partijiet nexfin jew ċapep.
+1. Ilbes ir-respiratur, u ingwanti tal-gomma jekk se ddaħħal idejk. Zakin jilbes maskra mill-bidu tal-użin sakemm il-glejż ikun imxarrab.
+2. Kejjel madwar 70 sa 80 mL ilma għal kull 100 g trab fil-barmil.
+3. Żid it-trab miżun bil-mod, minn ftit għoli. UT Austin iżid it-trab ma’ ilma sħun; Zakin u Au jżidu l-ilma mat-trab. Nissuġġerixxu t-trab fl-ilma, li jqajjem inqas trab, ħlief għal riċetta b’ħafna bentonit: ħawwad it-trabijiet nexfin tagħha flimkien l-ewwel.
+4. **Ħalli t-trab jixxarrab**{{en: slake}}: ħalli t-trab jixxarrab fl-ilma mingħajr ma tħawwad. Digitalfire jistenna madwar 20 minuta. Trabijiet b’gomma jew legant iridu joqogħdu matul il-lejl.
+5. Ħawwad sakemm ma jibqgħux bwiet nexfin jew ċapep.
 6. Għarblu darbtejn (ara aktar ’l isfel).
-7. Għattih u ħallih jistrieħ matul il-lejl, imbagħad erġa’ ħallat u ċċekkja jekk hemmx saff iebes fil-qiegħ.
-8. Kejjel il-gravità speċifika, u żid l-ilma ftit ftit biex tilħaq il-mira tiegħek.
-9. Agħmel tikketta fuq il-barmil, u kteb x’għamilt.
-10. Naddaf bl-ilma: għaddi l-mop mal-art u msaħ kull wiċċ, inkluż in-naħa ta’ barra tal-kontenituri tal-materjali.
+7. Għattih u ħallih jistrieħ matul il-lejl, imbagħad erġa’ ħawwad u ċċekkja l-qiegħ għal saff iebes.
+8. Kejjel il-gravità speċifika, u żid l-ilma ftit ftit biex tilħaq il-mira tiegħek. Biex issir taf il-gravità speċifika niexfa tal-glejż tiegħek stess, iżen ukoll il-glejż likwidu lest (ara aktar ’l isfel).
+9. Agħmel tikketta fuq il-barmil, u ikteb x’għamilt.
+10. Naddaf bl-ilma: għaddi l-mop mal-art u imsaħ kull wiċċ, inkluż in-naħa ta’ barra tal-kontenituri tal-materjali.
 
 ### L-għarbil
 
-**Għarbiel** huwa xibka f’qafas. Meta tgħaddi l-glejż minnu b’pinzell, iċ-ċapep li jħalli t-taħlit jitfarrku, u l-partiċelli li fil-ħami jsiru tikek skuri jinqabdu. Aktar ma jkun għoli n-numru tal-**mesh**, aktar tkun fina x-xibka: 80 mesh għandu toqob ta’ madwar 0.18 mm, u 100 mesh ta’ madwar 0.15 mm.
+**Għarbiel**{{en: sieve}} huwa xibka f’qafas. Meta timbotta l-glejż minnu b’pinzell, tkisser iċ-ċapep li jħalli t-taħlit u żżomm il-partiċelli li jinħmew bħala tikek. Aktar ma jkun għoli n-numru tal-**mesh**, aktar ikun fin l-għarbiel: 80 mesh għandu toqob ta’ madwar 0.18 mm, u 100 mesh ta’ madwar 0.15 mm.
 
-Is-sorsi jirrakkomandaw mesh differenti. Zakin jgħarbel darbtejn minn 50 jew 80 mesh. Derek Au juża 120 mesh għall-biċċa l-kbira tal-glejżijiet, speċjalment dawk bil-kobalt jew bil-ħadid: tliet darbiet minn 80 mesh xorta ħallew tikek tal-ħadid f’seladon wieħed, u darba waħda minn 120 mesh solviet il-problema. Għall-glejżijiet tar-rmied u oħrajn b’materjali ħoxnin iżomm 60 sa 80 mesh. Potterycrafts, fir-Renju Unit, jissuġġerixxi 60 sa 80 mesh. Punt tat-tluq sikur:
+Is-sorsi jirrakkomandaw meshes differenti. Zakin jgħarbel darbtejn minn 50 jew 80 mesh. Derek Au juża 120 mesh għall-biċċa l-kbira tal-glejżijiet, speċjalment dawk bil-kobalt jew bil-ħadid: tliet passaġġi minn 80 mesh xorta ħallew tikek tal-ħadid f’seladon wieħed, u passaġġ wieħed minn 120 mesh solvieh. Iżomm 60 sa 80 mesh għall-glejżijiet tar-rmied u għal oħrajn b’materjali goffi. Potterycrafts, fir-Renju Unit, jissuġġerixxi 60 sa 80 mesh. Għażla sikura:
 
 Table: Liema għarbiel tuża
 Label: Il-mesh tal-għarbiel
 
-| Glejż                                                             | Għarbiel              |
-| ----------------------------------------------------------------- | --------------------- |
-| Il-biċċa l-kbira tal-glejżijiet                                   | Darbtejn minn 80 mesh |
-| Glejżijiet b’kuluranti{{en: colorants}} bħall-kobalt jew il-ħadid | 100 sa 120 mesh       |
-| Glejżijiet tar-rmied, u oħrajn b’materjali ħoxnin                 | 60 sa 80 mesh         |
+| Glejż                                            | Għarbiel                   |
+| ------------------------------------------------ | -------------------------- |
+| Il-biċċa l-kbira tal-glejżijiet                  | Żewġ passaġġi minn 80 mesh |
+| Glejżijiet b’kuluranti bħall-kobalt jew il-ħadid | 100 sa 120 mesh            |
+| Glejżijiet tar-rmied, u oħrajn b’materjali goffi | 60 sa 80 mesh              |
 
 ## Il-gravità speċifika {#specific-gravity}
 
-Il-**gravità speċifika**{{en: specific gravity}} (SG) turik kemm hemm trab fil-glejż likwidu{{en: slurry}} tiegħek. Hija l-piż ta’ volum ta’ glejż{{en: glaze}} maqsum bil-piż tal-istess volum ta’ ilma. L-ilma huwa 1.00, u glejż b’{{SG 1.45}} jiżen 145 g kull 100 mL. It-taħlit sa gravità speċifika mkejla huwa l-mod kif tikseb l-istess ħxuna, u l-istess saff, kull darba. M’għandha l-ebda unità, għalhekk hija l-istess kemm bil-grammi kif ukoll bl-uqija.
+Il-**gravità speċifika**{{en: specific gravity}} tgħidlek kemm hemm trab fil-glejż likwidu{{en: slurry}} tiegħek. Hija l-piż ta’ volum ta’ glejż{{en: glaze}} maqsum bil-piż tal-istess volum ta’ ilma. L-ilma huwa 1.00, u glejż b’qari ta’ {{SG 1.45}} jiżen 145 g għal kull 100 mL. It-taħlit sa gravità speċifika mkejla huwa kif tieħu l-istess ħxuna, u l-istess saff, kull darba. M’għandhiex unitajiet, għalhekk hija l-istess fil-grammi jew fl-uqija.
 
 ### Kejjilha billi tiżen 100 mL
 
-1. Ħawwad il-glejż biex xejn ma jkun niżel fil-qiegħ.
-2. Poġġi **ċilindru graduat** ta’ 100 mL (tubu twil tal-kejl, immarkat) jew siringa ta’ 100 mL fuq il-miżien, u ġib il-miżien fuq żero.
-3. Imlieh bil-glejż sa eżatt 100 mL, u aqra l-marka b’għajnejk fil-livell tagħha.
-4. Iżnu u aqsam il-grammi b’100: 145 g ifissru gravità speċifika ta’ 1.45.
+1. Ħawwad il-glejż biex xejn ma jkun niżel il-qiegħ.
+2. Poġġi **ċilindru graduat** ta’ 100 mL (tubu twil tal-kejl immarkat) jew siringa ta’ 100 mL fuq il-miżien, u ġib il-miżien fuq żero.
+3. Imlieh bil-glejż sa 100 mL eżatt, u aqra l-marka fil-livell tal-għajnejn.
+4. Iżnu u aqsam il-grammi b’100: 145 g huwa gravità speċifika 1.45.
 
-Digitalfire jimmarka wkoll tazza fil-livell ta’ 500 g ilma, jimlieha bil-glejż sal-marka, u jaqsam il-piż b’500; kejl akbar u aktar mimli huwa aktar preċiż. **Idrometru**, għawwiema li taqraha fejn tieqaf fil-glejż, huwa mgħaġġel iżda jista’ jaqra ħażin fi glejżijiet ħoxnin jew ġellifikati. L-idrometri tar-Renju Unit, bħal dak ta’ Potclays, jaqraw bi gradi Baumé (°Bé). Skont il-kalkolu tagħna, gravità speċifika = 145 ÷ (145 − °Bé), għalhekk 46 °Bé jagħti madwar 1.46. Il-kotba Brittaniċi eqdem jagħtu l-**piż tal-pinta**, l-uqija f’pinta imperjali ta’ glejż: aqsmu b’20, għalhekk 29 oz jagħtu madwar gravità speċifika ta’ 1.45 (ukoll skont il-kalkolu tagħna).
+Digitalfire jimmarka wkoll tazza fil-livell ta’ 500 g ilma, jimlieha bil-glejż sal-marka, u jaqsam il-piż b’500; miżura akbar u mimlija aktar hija aktar preċiża. **Idrometru**, float li taqrah fejn joqgħod fil-glejż, huwa malajr iżda jista’ jaqra ħażin glejżijiet ħoxnin jew ġellifikati. L-idrometri tar-Renju Unit, bħal dak ta’ Potclays, jaqraw fi gradi Baumé (°Bé). Skont l-aritmetika tagħna, SG = 145 ÷ (145 − °Bé), għalhekk 46 °Bé huwa madwar 1.46. Kotba eqdem tar-Renju Unit jagħtu **piż tal-pinta**, l-uqija f’pinta imperjali ta’ glejż: aqsmu b’20, għalhekk 29 oz huwa madwar gravità speċifika 1.45 (ukoll l-aritmetika tagħna).
 
 ### Għal xiex timmira
 
-Is-sorsi ma jaqblux, l-aktar fuq il-pinzellar u l-isprejjar, fejn il-fornitur Brittaniku Potclays jagħti ċifri ferm ogħla (iċ-ċifri tiegħu stess huma “indikattivi biss”). Qis kull numru bħala punt tat-tluq. Il-parir ewlieni ta’ Digitalfire huwa li ssib il-gravità speċifika u l-ġellifikazzjoni li jaħdmu għal kull glejż, imbagħad tirrepetihom u tiktibhom.
+Is-sorsi ma jaqblux, l-aktar fuq il-pinzellar u l-isprejjar, fejn il-fornitur tar-Renju Unit Potclays jagħti ċifri ħafna ogħla (iċ-ċifri tiegħu stess huma “għall-gwida biss”). Ħu kull numru bħala punt tat-tluq. Il-parir ewlieni ta’ Digitalfire huwa li ssib il-gravità speċifika u l-ġellifikazzjoni li jaħdmu għal kull glejż, imbagħad tirrepetihom u tiktebhom.
 
-Table: Gravità speċifika fil-mira, fejn is-sorsi ma jaqblux
-Label: Gravità speċifika fil-mira
+Table: Miri tal-gravità speċifika, fejn is-sorsi ma jaqblux
+Label: Miri tal-gravità speċifika
 
-| Użu       | Digitalfire u Glazy                                                                                                                                                     | Potclays (Renju Unit)                                 | Punt tat-tluq sikur                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------- |
-| Għadis    | {{SG 1.40}} (għal għadsa ta’ 5 sekondi) sa {{SG 1.50}} (għal għadsa ta’ 1 sekonda); il-glejżijiet imħallta d-dar li jkunu ġellifikati jaħdmu l-aħjar b’{{SG 1.43–1.45}} | Trasparenti: {{SG 1.46–1.48}}; ikkulurit: {{SG 1.61}} | {{SG 1.45}}; raqqaq sa {{SG 1.43}} u ġegħlu jagħqad jekk iqattar    |
-| Pinzellar | {{SG 1.25}} (trasparenti rqiq) sa {{SG 1.55}} (dettall skur)                                                                                                            | {{SG 1.71–1.81}}                                      | Segwi dak li jgħid il-prodott; uża gomma CMC jew mezz għall-pinzell |
-| Sprejjar  | L-ebda ċifra; Hopper, li jikteb għal Ceramic Arts Network, jgħid ferm irqaq, b’deflokkulant{{en: deflocculant}} (addittiv li jagħmel il-glejż likwidu jiġri aktar)      | {{SG 1.71}}                                           | L-ebda numru affidabbli; sprejja biss ġo kabina tal-isprejjar       |
+| Użu       | Digitalfire u Glazy                                                                                                                                                 | Potclays (Renju Unit)                                 | Punt tat-tluq sikur                                          |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
+| Għadis    | {{SG 1.40}} (għal għadsa ta’ 5 sekondi) sa {{SG 1.50}} (għal għadsa ta’ 1 sekonda); glejżijiet imħallta d-dar li huma ġellifikati jaħdmu l-aħjar f’{{SG 1.43–1.45}} | Trasparenti: {{SG 1.46–1.48}}; ikkulurit: {{SG 1.61}} | {{SG 1.45}}; irqaq sa {{SG 1.43}} u ġellifikah jekk iqattar  |
+| Pinzellar | {{SG 1.25}} (trasparenti rqiq) sa {{SG 1.55}} (dettall skur)                                                                                                        | {{SG 1.71–1.81}}                                      | Segwi l-prodott; uża gomma CMC jew mezz għall-pinzell        |
+| Sprejjar  | L-ebda ċifra; Hopper, li jikteb għal Ceramic Arts Network, jgħid ħafna irqaq, b’deflokkulant (addittiv li jagħmel glejż likwidu aktar likwidu)                      | {{SG 1.71}}                                           | L-ebda numru affidabbli; sprejja biss f’kabina tal-isprejjar |
 
-Biex tiċċekkja glejż għall-għadis bl-għajn, AMACO jgħaddas għal 5 sekondi u jfittex saff oħxon madwar daqs munita dime Amerikana. Digitalfire jaħmi madum imgħaddas għal 5 sekondi biex jiċċekkja.
+Biex tiċċekkja glejż għall-għadis bl-għajn, AMACO jgħaddas għal 5 sekondi u jfittex saff oħxon daqs dime tal-Istati Uniti. Digitalfire jaħmi madum imgħaddas għal 5 sekondi biex jiċċekkja.
 
-### Ilma għal gravità speċifika fil-mira: l-istima tagħna
+### Ilma għal gravità speċifika mmirata: l-istima tagħna
 
-It-tabella hawn taħt hija l-kalkolu tagħna stess, mhux ta’ sors. Tassumi li l-partiċelli tat-trab għandhom densità ta’ 2.6 g kull cm³, li hija suppożizzjoni, mhux kejl. It-tafal, il-materjali solubbli u l-ġellifikazzjoni kollha jibdlu glejż reali, għalhekk użaha biex tibda, imbagħad kejjel. Bħala kontroll, tbassar {{SG 1.44}} għall-istess piż ta’ trab u ta’ ilma, qrib il-valur li kejjel Digitalfire, {{SG 1.46}}. Turi wkoll li b’70 sa 80 mL kull 100 g tibda ’l fuq minn {{SG 1.50}}, aktar oħxon milli għandek bżonn.
+It-tabella hawn taħt hija l-aritmetika tagħna stess, mhux ta’ sors. Tassumi li l-partiċelli tat-trab għandhom densità ta’ 2.6 g għal kull cm³, li hija suppożizzjoni, mhux kejl. It-tafal, il-materjali solubbli u l-ġellifikazzjoni kollha jbiddlu glejż veru, għalhekk użaha biex tibda, imbagħad kejjel. Bħala kontroll, tbassar {{SG 1.44}} għall-istess piż ta’ trab u ta’ ilma, qrib il-{{SG 1.46}} li kejjel Digitalfire. Turi wkoll li 70 sa 80 mL għal kull 100 g jibdewk ’il fuq minn {{SG 1.50}}, aktar oħxon milli għandek bżonn.
 
-Table: Ilma għal gravità speċifika fil-mira (l-istima tagħna)
-Label: Ilma għal gravità speċifika fil-mira
+Table: Ilma għal gravità speċifika mmirata (l-istima tagħna)
+Label: Ilma għal gravità speċifika mmirata
 
-| Mira        | Kull 100 g trab | Kull kilogramma |         Kull libra |
-| ----------- | --------------: | --------------: | -----------------: |
-| {{SG 1.40}} |   madwar 115 mL |  madwar 1150 mL | madwar 18 US fl oz |
-| {{SG 1.45}} |    madwar 98 mL |   madwar 980 mL | madwar 15 US fl oz |
-| {{SG 1.50}} |    madwar 85 mL |   madwar 850 mL | madwar 13 US fl oz |
-| {{SG 1.60}} |    madwar 64 mL |   madwar 640 mL | madwar 10 US fl oz |
+| Mira        | Għal kull 100 g trab | Għal kull kilogramma |       Għal kull libra |
+| ----------- | -------------------: | -------------------: | --------------------: |
+| {{SG 1.40}} |        madwar 115 mL |       madwar 1150 mL | madwar 18-il US fl oz |
+| {{SG 1.45}} |         madwar 98 mL |        madwar 980 mL | madwar 15-il US fl oz |
+| {{SG 1.50}} |         madwar 85 mL |        madwar 850 mL | madwar 13-il US fl oz |
+| {{SG 1.60}} |         madwar 64 mL |        madwar 640 mL |    madwar 10 US fl oz |
+
+### Sib il-gravità speċifika niexfa tal-glejż tiegħek waqt li tħallat
+
+Il-2.6 hawn fuq hija stima. Iċ-ċifra tal-glejż tiegħek stess, id-densità tat-trab niexef tiegħu, tista’ tinħadem minn tliet numri li tista’ tieħu waqt li tħallat. Biha, tista’ taħdem mill-gravità speċifika kemm hemm trab fi kwalunkwe barmil ta’ dak il-glejż aktar tard, u l-ilma għat-taħlita li jmiss. L-aritmetika tagħna, mhux ta’ sors:
+
+1. Ikteb il-piż tat-trab niexef fit-taħlita: it-total tar-riċetta.
+2. Iżen il-barmil vojt qabel ma tibda, jew immarka l-piż tiegħu fuqu.
+3. Ħallat, għarbel u ġib il-glejż għall-gravità speċifika tiegħu bħas-soltu. Imbotta kollox mill-għarbiel u laħalħu fil-barmil, biex ma jibqa’ l-ebda trab barra.
+4. Iżen il-barmil mimli u naqqas il-piż tal-barmil. Dak huwa l-piż tal-glejż likwidu.
+5. Kejjel il-gravità speċifika.
+
+Imbagħad:
+
+- **Ilma** = piż tal-glejż likwidu − piż tat-trab.
+- **Volum tal-glejż likwidu** f’mL = piż tal-glejż likwidu fi grammi ÷ gravità speċifika.
+- **Volum tat-trab** = volum tal-glejż likwidu − ilma (1 g ilma huwa 1 mL).
+- **Gravità speċifika niexfa** = piż tat-trab ÷ volum tat-trab.
+
+Pereżempju: 1000 g trab jagħmlu 1980 g glejż likwidu b’qari ta’ {{SG 1.45}}. L-ilma huwa 980 g, il-glejż likwidu huwa 1980 ÷ 1.45 = madwar 1366 mL, it-trab jieħu 1366 − 980 = 386 mL, u l-gravità speċifika niexfa hija 1000 ÷ 386 = madwar 2.59.
+
+Iżen il-glejż likwidu kollu fl-aħħar, mhux l-ilma waqt li tferrgħu, biex l-ilma li jevapora jew jitfarrak ma jingħaddx. L-iżbalji żgħar jikbru hawn: qari tal-gravità speċifika żbaljat b’0.01 iċaqlaq it-tweġiba b’madwar 2 sa 4%, aktar għal glejż irqaq. Uża taħlita ta’ 1 kg jew aktar, miżien preċiż, u l-metodu tat-tazza ta’ 500 g ta’ hawn fuq għall-gravità speċifika. Il-biċċa l-kbira tal-materjali komuni huma bejn madwar 2.5 u 2.9, għalhekk ċifra ’l bogħod ħafna minn hekk, fi glejż mingħajr ħafna żirkon jew ċomb, probabbilment tfisser żball fil-kejl. Ikteb iċ-ċifra fuq ir-riċetta.
 
 ### Melħ Epsom, gomma CMC u bentonit
 
-Il-**melħ Epsom** (sulfat tal-manjeżju) iġiegħel il-glejż jagħqad kemmxejn meta jkun wieqaf u jerġa’ jiġri meta tħawwdu. Dan jissejjaħ **flokkulazzjoni**{{en: flocculating}}, u glejż li jġib ruħu hekk huwa **tissotropiku**{{en: thixotropic}}: jitqiegħed b’mod aktar uniformi, iqattar inqas u jinżel inqas fil-qiegħ. Digitalfire jissuġġerixxi li tibda b’madwar 2 g kull gallun ladarba l-gravità speċifika tkun it-tajba (bejn wieħed u ieħor 0.5 g kull litru, skont il-konverżjoni tagħna) u li taġġusta l-ammont kull darba li tħallat, għax l-ebda riċetta m’għandha tiffissa d-doża. Nissuġġerixxu li l-ewwel tħollu fi ftit ilma sħun. F’eżempju ta’ Digitalfire, glejż b’{{SG 1.45}} kien iqattar, għalhekk l-ilma niżżlu għal {{SG 1.43}} u l-melħ Epsom reġa’ għaqqdu sakemm sar kremuż, u tqiegħed b’mod uniformi. Kontroll approssimattiv: ħawwad, ieqaf u osserva. Glejż ġellifikat jibqa’ jiċċaqlaq għal madwar 2 jew 3 sekondi, imbagħad jieqaf u jerġa’ lura ftit.
+Il-**melħ Epsom** iġiegħel glejż jagħqad ftit meta joqgħod u jerġa’ jiġri meta tħawdu. Dan jissejjaħ li **tiflokkulah**{{en: flocculating}}, u glejż li jġib ruħu hekk huwa **tissotropiku**{{en: thixotropic}}: jinxtered aktar indaqs, iqattar inqas u jinżel il-qiegħ inqas. Digitalfire jissuġġerixxi li tibda b’madwar 2 g għal kull gallun meta l-gravità speċifika tkun tajba (bejn wieħed u ieħor 0.5 g għal kull litru, il-konverżjoni tagħna) u li taġġusta l-ammont kull darba li tħallat, għax l-ebda riċetta m’għandha tiffissa d-doża. Nissuġġerixxu li l-ewwel tħollu fi ftit ilma sħun. F’eżempju ta’ Digitalfire, glejż b’qari ta’ {{SG 1.45}} kien iqattar, għalhekk l-ilma niżżlu għal {{SG 1.43}} u l-melħ Epsom reġa’ ġellifikah sakemm sar krema, u nxtered indaqs. Kontroll approssimattiv: ħawwad, ieqaf u osserva. Glejż ġellifikat jibqa’ miexi għal madwar 2 jew 3 sekondi, imbagħad jieqaf u jerġa’ lura ftit.
 
-Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwaħħal u jdum aktar biex jinxef, u tħalli saff aktar iebes li jeħel mal-biċċa. L-aktar hija importanti għall-glejżijiet għall-pinzell u għal dawk b’ħafna fritta{{en: frit}}. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g ta’ glejż likwidu, u trid tiżdied bil-blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
+Il-**gomma CMC** (karbossimetilċelluloża) tagħmel glejż likwidu aktar iwaħħal u aktar bil-mod biex jinxef, u tħalli saff aktar iebes li jżomm mal-biċċa. L-aktar li tgħodd hija għall-glejżijiet għall-pinzell u għall-glejżijiet b’ħafna fritta. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g glejż likwidu, u trid tidħol bi blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
 
-Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1% bentonit mill-piż tal-glejż niexef.
+Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta b’ftit tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire jgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn bentonit f’aktar minn 1% tal-piż tal-glejż niexef.
 
 ## Madum tal-prova u sensiela ta’ provi {#testing}
 
-### Ibda b’ammont żgħir
+### Ibda żgħir
 
-Derek Au jgħolli l-ammont fi tliet stadji: test ta’ 50 jew 100 g, prova ta’ 1 sa 2 kg jekk jaħdem, imbagħad taħlita tal-istudjo ta’ 5 sa 10 kg. Skont l-istima tagħna, test ta’ 100 g b’{{SG 1.45}} jagħmel madwar 135 mL (madwar 4½ US fl oz) ta’ glejż likwidu{{en: slurry}}, biżżejjed biex tgħaddas ftit madum żgħir f’tazza dejqa.
+Derek Au jaħdem fi tliet passi: test ta’ 50 jew 100 g, prova ta’ 1 sa 2 kg jekk jaħdem, imbagħad taħlita tal-istudjo ta’ 5 sa 10 kg. Skont l-istima tagħna, test ta’ 100 g b’qari ta’ {{SG 1.45}} jagħmel madwar 135 mL (madwar 4½ US fl oz) glejż likwidu{{en: slurry}}, biżżejjed biex tgħaddas ftit madmiet żgħar f’tazza dejqa.
 
 ### Ittestja fuq it-tafal tiegħek
 
-Glejż{{en: glaze}} jista’ jidher differenti ħafna fuq tafal ieħor jew f’forn ieħor: Clay Art Center ittestja kull wieħed mill-glejżijiet li fformula mill-ġdid fuq erba’ tipi ta’ tafal{{en: clay bodies}}, fil-kon{{en: cone}} 6 u fil-kon 10. Il-pubblikazzjoni ta’ Potclays dwar l-ittestjar tal-glejż, għal min għadu jibda, tissuġġerixxi:
+Glejż{{en: glaze}} jista’ jidher differenti ħafna fuq tafal ieħor jew f’forn ieħor: Clay Art Center ittestja kull wieħed mill-glejżijiet ifformulati mill-ġdid tiegħu fuq erba’ tipi ta’ tafal, fil-kon{{en: cone}} 6 u fil-kon 10. Il-pubblikazzjoni ta’ Potclays dwar l-ittestjar tal-glejż, għal min għadu jibda, tissuġġerixxi:
 
-- 6 sa 10 **madmiet tal-prova**{{en: test tiles}} (biċċiet żgħar biex tipprova glejż) mit-tafal li se tuża verament, u tinnota jekk humiex moħmija darba{{en: bisqued}} jew nexfin għal kollox
+- 6 sa 10 **madmiet tal-prova**{{en: test tiles}} (biċċiet żgħar biex tipprova glejż) mit-tafal li se tuża tassew, u tinnota jekk humiex bisque jew niexfa għal kollox
 - bidla waħda kull darba
 - għadsa waħda u żewġ għadsiet, biex tara l-glejż irqiq u oħxon
-- il-madmiet kollha fl-istess ħamja
-- marka fuq kull maduma qabel il-ħami, b’timbru, b’inċiżjoni jew b’lapes tal-kulur taħt il-glejż.
+- il-madum kollu fl-istess mili tal-forn
+- marka fuq kull maduma qabel il-ħami, b’timbru, b’naqxa jew b’lapes tal-kulur taħt il-glejż. Il-madum moħmi jidher l-istess, u marka magħmula qabel il-ħami tibqa’ wara l-forn, biex dejjem tkun tista’ tgħid liema riċetta hija kull maduma.
 
-Nissuġġerixxu madum li joqgħod wieqaf, għax maduma ċatta taħbi kemm jinżel il-glejż, bi strixxa b’testura biex turi kif il-kulur tal-glejż jinbidel fuq it-truf, u b’qiegħ bla glejż. Poġġi kull waħda fuq platt żgħir jew fuq biċċa bisque, jew fuq xkaffa tal-forn miksija, biex tiġbor il-qtar. Poġġi **kon xhud**{{en: witness cone}}, kon żgħir taċ-ċeramika li jitgħawweġ meta jkun ħa biżżejjed sħana, ħdejn il-madum biex juri x’irċevew; il-gwida [Il-ħami f’forn sempliċi](/guides/firing) tispjega l-koni. Agħti lil kull maduma kodiċi qasir, u ktbu ħdejn ir-riċetta fir-reġistri tiegħek. Fl-artiklu ta’ Willers għal Ceramic Arts Network, il-kodiċijiet huma numri u ittri, u s-sistema nfisha tinkiteb fil-bidu tal-pitazz.
+Nissuġġerixxu madum li joqgħod wieqaf, għax maduma ċatta taħbi kemm jinżel glejż, bi strixxa b’tessut biex turi kif jinbidel il-kulur tal-glejż fuq it-truf, u b’qiegħ mingħajr glejż. Poġġi kull waħda fuq platt żgħir jew fuq biċċa bisque, jew fuq xkaffa miksija bil-kisja tax-xkafef, biex tilqa’ t-taqtir. Poġġi **kon xhud**{{en: witness cone}}, kon żgħir taċ-ċeramika li jitgħawweġ meta jkun irċieva biżżejjed sħana, qrib il-madum biex turi x’irċevew; il-[gwida tal-ħami](/guides/firing) tispjega l-koni. Agħti lil kull maduma kodiċi qasir, u iktbu ħdejn ir-riċetta fir-reġistri tiegħek. Willers, li jikteb għal Ceramic Arts Network, juża numri u ittri, u jikteb is-sistema nfisha fil-bidu tal-pitazz.
 
 ### Sensiela ta’ provi
 
-**Sensiela ta’ provi**{{en: line blend}} hija ringiela ta’ testijiet li timxi b’passi ugwali minn taħlita għal oħra: minn glejż wieħed għal ieħor, jew minn glejż bażi għall-istess glejż b’aktar kulurant{{en: colorant}}. Derek Au, pereżempju, iżid l-ossidu tal-ħadid fi glejż bażi trasparenti b’passi ta’ 1%. Metodu bil-volum, assoċjat ma’ Ian Currie, jiffranka l-ħin, għax tħallat biss iż-żewġ truf:
+**Sensiela ta’ provi**{{en: line blend}} hija ringiela ta’ testijiet li timxi f’passi indaqs minn taħlita għal oħra: minn glejż għal ieħor, jew minn glejż bażi għall-istess glejż b’aktar kulurant. Derek Au, pereżempju, iżid l-ossidu tal-ħadid fi glejż bażi trasparenti b’passi ta’ 1%. Metodu volumetriku marbut ma’ Ian Currie jiffranka l-ħin, għax tħallat biss iż-żewġ truf:
 
 1. Ħallat iż-żewġ glejżijiet tat-truf, A u B, f’taħlitiet tal-istess daqs, u għarbel it-tnejn.
-2. Żid l-ilma ma’ dak li għandu inqas volum sakemm it-tnejn ikollhom eżatt l-istess volum likwidu.
-3. Ħawwad it-tnejn, imbagħad b’siringa poġġi kull taħlita fit-tazza numerata tagħha.
+2. Żid l-ilma ma’ dak b’inqas volum sakemm it-tnejn ikollhom eżatt l-istess volum imxarrab.
+3. Ħawwad it-tnejn, imbagħad iġbed kull taħlita b’siringa fit-tazza numerata tagħha.
 4. Ħawwad kull tazza u għaddas maduma.
 
-Fl-eżempju li ħdimna aħna, A huwa 100 g ta’ glejż bażi trasparenti, u B huwa l-istess b’4 g ta’ ossidu tal-ħadid aħmar miżjud (żieda ta’ 4%). Kull millilitru ta’ B fih l-istess sehem ta’ bażi daqs millilitru ta’ A, flimkien mal-ħadid tiegħu, għalhekk it-tazzi jimxu minn bla ħadid sa 4% b’passi ta’ 1%. Kull tarf jagħti 100 mL lis-sensiela, u skont l-istima tagħna taħlita ta’ 100 g tkopri dan.
+Fl-eżempju maħdum tagħna, A huwa 100 g ta’ glejż bażi trasparenti, u B huwa l-istess b’4 g ossidu tal-ħadid aħmar miżjud (żieda ta’ 4%). Kull millilitru ta’ B fih l-istess sehem tal-bażi bħal millilitru ta’ A, flimkien mal-ħadid tiegħu, għalhekk it-tazzi jimxu minn ebda ħadid sa 4% f’passi ta’ 1%. Kull tarf jagħti 100 mL lis-sensiela, li taħlita ta’ 100 g tkopri skont l-istima tagħna.
 
-Table: Sensiela ta’ provi tal-ħadid f’ħames passi, 40 mL kull tazza (l-eżempju tagħna)
+Table: Sensiela ta’ provi tal-ħadid f’ħames passi, 40 mL għal kull tazza (l-eżempju maħdum tagħna)
 Label: Eżempju ta’ sensiela ta’ provi
 
 | Tazza | Bażi trasparenti (A) | Bażi b’4% ħadid (B) | Ossidu tal-ħadid, % tal-bażi |
@@ -253,28 +274,28 @@ Label: Eżempju ta’ sensiela ta’ provi
 | 4     |                10 mL |               30 mL |                            3 |
 | 5     |                 0 mL |               40 mL |                            4 |
 
-Il-metodu għandu bżonn kalkoli bir-reqqa, truf imħallta tajjeb b’gravità speċifika{{en: specific gravity}} uniformi, u miżien preċiż. Derek Au jħallat ukoll bil-piż minflok bil-volum. **Provi fi trijangolu** jagħmlu l-istess bi tliet truf, imqiegħda fuq trijangolu.
+Il-metodu jeħtieġ aritmetika bir-reqqa, truf imħalltin sewwa bl-istess gravità speċifika, u miżien preċiż. Derek Au jħallat ukoll skont il-piż minflok skont il-volum. **Provi fi trijangolu** jagħmlu l-istess bi tliet truf, imqiegħda fuq trijangolu.
 
 > [!NOTE]
-> Meta pass jidher promettenti, il-buttuna **Issejvja bħala kopja** fil-[paġna tar-riċetta](/recipe) iżżommu bħala riċetta separata u tħalli l-oriġinal kif kien.
+> Meta pass jidher promettenti, **Issejvja bħala kopja** fil-[paġna tar-riċetta](/recipe) iżommu bħala riċetta għalih u tħalli l-oriġinal kif kien.
 
-## Kif iżżomm ir-reġistri {#records}
+## Iż-żamma tar-reġistri {#records}
 
-Il-għan huwa mfisser tajjeb fi kliem Willers: “biżżejjed informazzjoni biex tkun tista’ tirrepeti, jew tevita, ir-riżultati li skoprejt”. Ikteb x’qed tippjana li tittestja qabel ma tibda, u r-riżultati meta tbattal il-forn. Potclays iżid it-tqegħid tal-glejż{{en: glaze}}, il-ħxuna, it-tafal tal-biċċa{{en: clay body}} u d-dettalji kollha tal-ħamja, inklużi r-rampi{{en: ramps}}, iż-żammiet{{en: holds}} u t-tkessiħ. **Rampa** hija rata ta’ tisħin jew ta’ tkessiħ, bħal {{60 °C; 108 °F}} fis-siegħa, u **żamma** iżżomm il-forn f’temperatura waħda għal ħin stabbilit. Niżżel in-numri tal-lott, l-ilma li użajt u kull sostituzzjoni: meta Clay Art Center biddel il-feldspar, kellu jaġġusta madwar nofs il-glejżijiet tiegħu.
+Willers jgħid l-għan tajjeb: “biżżejjed informazzjoni biex tkun tista’ tirrepeti, jew tevita, ir-riżultati li skoprejt”. Ikteb x’qed tippjana li tittestja qabel ma tibda, u r-riżultati meta tbattal il-forn. Potclays iżid l-applikazzjoni, il-ħxuna, it-tafal u l-ħamja sħiħa, inklużi r-rampi, iż-żammiet u t-tkessiħ. **Rampa**{{en: ramp}} hija rata ta’ tisħin jew ta’ tkessiħ, bħal {{60 °C; 108 °F}} fis-siegħa, u **żamma**{{en: hold}} iżżomm il-forn f’temperatura waħda għal ħin stabbilit. Innota n-numri tal-lott, l-ilma li użajt u kwalunkwe sostituzzjoni: il-bdil tal-feldspar ta’ Clay Art Center fisser li kellu jaġġusta madwar nofs il-glejżijiet{{en: glazes}} tiegħu.
 
 Table: X’għandek tirreġistra għal kull taħlita ta’ glejż (il-mudell tagħna)
 Label: Mudell tar-reġistru
 
-| Parti             | X’għandek tikteb                                                                                                                                                                                                                                                       |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Riċetta           | Ir-riċetta u l-verżjoni tagħha; il-marki tal-materjali u n-numri tal-lott; kull sostituzzjoni                                                                                                                                                                          |
-| Taħlit            | Data; daqs tat-taħlita; l-ilma miżjud, u t-tip tiegħu (tal-vit, tal-osmożi inversa jew distillat); il-gravità speċifika{{en: SG}} wara t-taħlit u dik finali; il-melħ Epsom, is-CMC u l-bentonit miżjuda; il-mesh tal-għarbiel u kemm-il darba għaddejt il-glejż minnu |
-| Tqegħid tal-glejż | It-tafal; il-kon{{en: cone}} tal-bisque; għadis, pinzellar jew tferrigħ; ħin tal-għadis jew numru ta’ saffi; ħxuna meta jinxef                                                                                                                                         |
-| Ħami              | Il-forn u l-pożizzjoni fuq ix-xkaffa; il-programm tal-ħami, bir-rampi, iż-żammiet u t-tkessiħ tiegħu; l-atmosfera (ossidazzjoni{{en: oxidation}} jew riduzzjoni{{en: reduction}}); x’wera l-kon xhud{{en: witness cone}}, mhux biss għal xiex kien issettjat il-forn   |
-| Riżultat          | Il-wiċċ u l-kulur; kull nżul tal-glejż, xegħir{{en: crazing}} jew toqob tal-labra{{en: pinholes}}; ritratti tal-quddiem, tal-wara u tal-ġenb; il-kodiċi tal-maduma                                                                                                     |
+| Parti         | X’għandek tikteb                                                                                                                                                                                                                                                                                                                  |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Riċetta       | Ir-riċetta u l-verżjoni tagħha; il-marki u n-numri tal-lott tal-materjali; kwalunkwe sostituzzjoni                                                                                                                                                                                                                                |
+| Taħlit        | Data; daqs tat-taħlita; l-ilma miżjud, u t-tip tiegħu (tal-vit, tal-osmożi inversa jew distillat); il-gravità speċifika wara t-taħlit u l-gravità speċifika finali; il-piż tal-glejż likwidu lest, għall-gravità speċifika niexfa tiegħu; il-melħ Epsom, is-CMC u l-bentonit miżjuda; il-mesh tal-għarbiel u n-numru ta’ passaġġi |
+| Applikazzjoni | Tafal; il-kon tal-bisque; għadis, pinzellar jew tferrigħ; il-ħin tal-għadis jew in-numru ta’ saffi; il-ħxuna niexfa                                                                                                                                                                                                               |
+| Ħami          | Il-forn u l-post fuq ix-xkaffa; il-programm tal-ħami, bir-rampi, iż-żammiet u t-tkessiħ tiegħu; l-atmosfera (ossidazzjoni jew riduzzjoni); x’wera l-kon xhud, mhux biss għal xiex kien issettjat il-forn                                                                                                                          |
+| Riżultat      | Il-wiċċ u l-kulur; kwalunkwe nżul, xegħir jew toqob tal-labra; ritratti tan-naħa ta’ quddiem, ta’ wara u tal-ġenb; il-kodiċi tal-maduma                                                                                                                                                                                           |
 
 > [!NOTE]
-> Fl-app Glazecalc, [riċetta](/recipe) issejvjata żżomm ir-riċetta nfisha. [Reġistru tal-ħami](/firing) jirreġistra kull ħamja: il-forn, id-data, il-ħinijiet, it-temperaturi, il-koni u n-noti. [In-noti](/notes) iżommu l-bqija kollu, bħar-reġistru tat-taħlita hawn fuq u x’wera kull maduma.
+> Fi Glazecalc, [riċetta](/recipe) issejvjata żżomm ir-riċetta nfisha. [Reġistru tal-ħami](/firing) jirreġistra kull ħamja: il-forn, id-data, il-ħinijiet, it-temperaturi, il-koni u n-noti. In-[noti](/notes) iżommu l-bqija, bħar-reġistru tat-taħlita ta’ hawn fuq u x’wriet kull maduma.
 
 ## Sorsi {#sources}
 

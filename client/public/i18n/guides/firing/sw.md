@@ -89,16 +89,16 @@ Label: Chati ya koni ya Orton
 | Koni | Polepole, {{27 °F/h; 15 °C/h}} | Wastani, {{108 °F/h; 60 °C/h}} | Haraka, {{270 °F/h; 150 °C/h}} |
 | ---- | -----------------------------: | -----------------------------: | -----------------------------: |
 | 022  |                              – |            {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
-| 018  |                              – |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
-| 015  |                              – |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 018  |            {{1267 °F; 686 °C}} |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015  |            {{1382 °F; 750 °C}} |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
 | 010  |            {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
 | 08   |            {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
-| 07   |                              – |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 07   |            {{1764 °F; 962 °C}} |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
 | 06   |            {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
 | 05   |           {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
 | 04   |           {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
 | 03   |           {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
-| 02   |                              – |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 02   |           {{1972 °F; 1078 °C}} |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
 | 01   |           {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
 | 1    |           {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
 | 4    |           {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
@@ -460,59 +460,59 @@ Tanuru la mkono hufuata mpango ule ule kwa mkono: kausha polepole huku mfuniko u
 
 ## Kuchoma glaze {#glaze}
 
-Uchomaji wa glaze huyeyusha glaze kuwa kioo juu ya bisque. Wanaoanza wengi huchoma glaze za joto la chini kwa koni 06–04 au glaze za joto la kati kwa koni 5–6. Choma hadi koni iliyo kwenye lebo za udongo na glaze yako, na pakiti ya koni kuzunguka nambari hiyo. Kuhusu kinachotokea ndani ya glaze inapoyeyuka, tazama [Misingi ya glaze](/guides/glazing-basics).
+Kuchoma glaze huyeyusha glaze kuwa kioo juu ya bisque. Glaze nyingi za joto la chini sokoni zimetengenezwa kwa koni 06 au 05 (kiwango cha joto la chini ni koni 06–04), na glaze nyingi za joto la kati kwa koni 5–6. Choma hadi koni iliyo kwenye lebo za glaze na udongo wako, ukiwa na pakiti ya koni kuzunguka namba hiyo. Kwa kinachotokea ndani ya glaze inapoyeyuka, tazama [Misingi ya glaze](/guides/glazing-basics).
 
-### Kupakia kwa uchomaji wa glaze
+### Kupanga vyombo kwa kuchoma glaze
 
-- Vipande vilivyopakwa glaze havipaswi kugusana wala kugusa kuta: acha takriban inchi ½ (13 mm).
-- Weka glaze mbali na mguu (**dry-footing**{{en: dry-footing}}), au weka vyombo vya joto la chini juu ya **stilts**{{en: stilts}}, visimamo vidogo vyenye ncha. Stoneware na porcelaini hazipaswi kusimama juu ya stilts, ambazo hujichimbia kwenye joto hizo; tumia kiln wash ya joto la juu au mchanga wa silika badala yake.
-- Acha angalau inchi 1 (25 mm) kati ya kingo za rafu na ukuta au sitter.
+- Vyombo vilivyopakwa glaze visigusane wala kugusa kuta: acha takriban ½ inchi (13 mm).
+- Usiweke glaze kwenye kitako (**dry-footing**), au weka vyombo vya joto la chini juu ya **stilts**, visimamo vidogo vyenye ncha. Stoneware na porcelaini zisisimame juu ya stilts, ambazo huzama ndani yake kwa joto hilo; tumia kiln wash ya joto la juu au mchanga wa silika badala yake.
+- Acha angalau inchi 1 (25 mm) kati ya kingo za rafu na ukuta au kiln sitter.
 
 ### Ratiba za kidhibiti
 
-Table: Mipangilio ya awali ya glaze ya L&L na Bartlett
-Label: Mipangilio ya awali ya glaze
+Table: Ratiba zilizowekwa tayari za glaze za L&L na Bartlett
+Label: Ratiba za glaze zilizowekwa tayari
 
-| Hatua                             |                         Panda hadi |             Slow Glaze |             Fast Glaze |
-| --------------------------------- | ---------------------------------: | ---------------------: | ---------------------: |
-| 1                                 |                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Hakuna hatua tofauti |
-| 2                                 | {{250 °F; 139 °C}} chini ya kilele | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                 |                             Kilele |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Muda wa kupasha joto, tanuru tupu |                                    |     Takriban saa 6½–7½ |       Takriban saa 3–4 |
+| Hatua                        |                         Panda hadi |             Slow Glaze |             Fast Glaze |
+| ---------------------------- | ---------------------------------: | ---------------------: | ---------------------: |
+| 1                            |                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Hakuna hatua tofauti |
+| 2                            | {{250 °F; 139 °C}} chini ya kilele | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                            |                             Kilele |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Muda wa kupasha, tanuru tupu |                                    |     Takriban saa 6½–7½ |       Takriban saa 3–4 |
 
-Table: Hatua ya 2 na 3 zinapoishia, kwa koni (L&L na Bartlett)
-Label: Malengo ya mipangilio ya awali
+Table: Mahali hatua 2 na 3 zinapoishia, kwa koni (L&L na Bartlett)
+Label: Malengo ya ratiba
 
-| Koni |  Hatua ya 2 inaishia |               Kilele |
+| Koni |     Hatua 2 inaishia |               Kilele |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze ndiyo chaguo salama zaidi la kuanzia, kutokana na onyo la L&L kuhusu kuchoma haraka. Ukiongeza kushikilia kwa zaidi ya dakika 5–10 kileleni, L&L inasema upunguze lengo au cone offset ili kulingana, na inabainisha kuwa “Kushikilia kwa joto la juu huharakisha kuchakaa kwa elementi na thermocouple.”
+Slow Glaze ndiyo chaguo salama zaidi, kutokana na onyo la L&L kuhusu kuchoma haraka. Ukiongeza kusubiri (hold) kwa zaidi ya dakika 5–10 kwenye kilele, L&L inasema ushushe lengo au cone offset ili kulingana, na inaeleza kwamba "Kusubiri kwenye joto la juu huharakisha kuchakaa kwa elementi na thermocouple."
 
-### Koni 6: kushusha na kushikilia
+### Koni 6: kushusha na kusubiri
 
-Glaze za joto la kati wakati mwingine hutoka na **vitundu vidogo**{{en: pinholes}} (mashimo madogo kwenye uso) au malengelenge, yaliyoachwa na gesi inayotoka kwenye myeyuko ikibubujika. Ratiba ya **kushusha na kushikilia**{{en: drop-and-hold}} huchoma hadi juu, hupoza haraka kwa takriban {{100 °F; 56 °C}} na kushikilia hapo. Kwa maneno ya Digitalfire, “Kushusha 100°F na kushikilia huipa myeyuko mnato wa kutosha kupasua viputo huku ukiviruhusu bado vijifunge.”
+Glaze za joto la kati wakati mwingine hutoka na **pinholes** (vitundu vidogo sana juu ya uso) au malengelenge, yaliyoachwa na gesi inayobubujika kutoka kwenye glaze iliyoyeyuka. Ratiba ya **kushusha na kusubiri** (drop-and-hold) huchoma hadi juu, hupoza haraka kwa takriban {{100 °F; 56 °C}} na kusubiri hapo. Kwa maneno ya Digitalfire, "Kushusha 100°F na kusubiri huipa glaze iliyoyeyuka uzito wa kutosha kupasua mapovu huku bado ikiyaacha yapone."
 
-Table: Digitalfire PLC6DS, kushusha na kushikilia kwa koni 6
+Table: Digitalfire PLC6DS, koni 6 kushusha na kusubiri
 Label: Digitalfire PLC6DS
 
-| Hatua |                               Kasi |                Lengo | Kushikilia                                 |
+| Hatua |                               Kasi |                Lengo | Kusubiri                                   |
 | ----- | ---------------------------------: | -------------------: | ------------------------------------------ |
 | 1     |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Dakika 60                                  |
-| 2     |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Hiari dakika 30, kuondoa mawingu ya viputo |
+| 2     |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Hiari dakika 30, kuondoa mawingu ya mapovu |
 | 3     |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Dakika 10; zaidi katika matanuru makubwa   |
 | 4     | Kushuka kwa {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Dakika 30                                  |
 
-PLC6DS huchukua takriban saa 9 dakika 36. Kwa glaze zinazotiririka zaidi, Digitalfire hushusha takriban {{200 °F; 111 °C}} badala yake; kushusha mbali mno “kunahatarisha ukristali wakati wa kushikilia”. Kilele chake cha {{2200 °F; 1204 °C}} kiko chini ya {{2232 °F; 1222 °C}} ya chati kwa koni 6; Digitalfire inaripoti kuwa matanuru mengi hufikia koni 6 kwa takriban {{2200 °F; 1204 °C}}. Kithibitishe kwa pakiti ya koni kwenye tanuru lako mwenyewe.
+PLC6DS huchukua takriban saa 9 dakika 36. Kwa glaze zinazotiririka zaidi, Digitalfire hushusha takriban {{200 °F; 111 °C}} badala yake; kushusha mbali sana "kunahatarisha kutokea kwa fuwele wakati wa kusubiri". Kilele chake cha {{2200 °F; 1204 °C}} kiko chini ya {{2232 °F; 1222 °C}} ya chati kwa koni 6; Digitalfire inaripoti kwamba matanuru mengi hufikia koni 6 kwa takriban {{2200 °F; 1204 °C}}. Hakikisha kwa pakiti ya koni katika tanuru lako mwenyewe.
 
 ### Kupoza polepole
 
-**Kupoza polepole**{{en: slow cooling}} kunamaanisha kidhibiti hupoza tanuru kwa kasi iliyowekwa badala ya kuliacha lipoe lenyewe. C6DHSC ya Digitalfire ni PLC6DS ikifuatiwa na kupoa kwa {{150 °F/h; 83 °C/h}} kutoka {{2100 °F; 1148 °C}} hadi {{1400 °F; 760 °C}}, kisha kuzima. “Huboresha mng'ao na ubora wa uso” na husaidia rangi za bluu za rutile, lakini kupoza polepole “kunaweza kuongeza ukavu wa uso (matteness)” (glaze moja ya matte ilikauka) na kunaweza kufupisha maisha ya relay za tanuru. L&L pia hutuma programu ya kupoza polepole kwa koni 6:
+**Kupoza polepole** maana yake kidhibiti hupoza tanuru kwa kasi iliyowekwa badala ya kuliacha lishuke lenyewe. C6DHSC ya Digitalfire ni PLC6DS ikifuatiwa na kupoza kwa {{150 °F/h; 83 °C/h}} kutoka {{2100 °F; 1148 °C}} hadi {{1400 °F; 760 °C}}, kisha kuzima. "Huboresha ung'avu na ubora wa uso" na husaidia rangi za buluu za rutile, lakini kupoza polepole "kunaweza kuongeza umatte" (glaze moja ya matte ilikauka) na kunaweza kufupisha maisha ya relay za tanuru. L&L pia hutoa programu ya kupoza polepole kwa koni 6:
 
-Table: L&L “User 6”: kupoza polepole kwa glaze za koni 6
-Label: L na L kupoza polepole
+Table: L&L "User 6": kupoza polepole kwa glaze za koni 6
+Label: Kupoza polepole kwa L na L
 
 | Hatua |                              Kasi |                Lengo |
 | ----- | --------------------------------: | -------------------: |
@@ -520,11 +520,11 @@ Label: L na L kupoza polepole
 | 2     |               Kasi kamili kushuka | {{1900 °F; 1038 °C}} |
 | 3     | Kushuka kwa {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Vidhibiti vya Skutt vile vile vinatoa preheat na chaguo la kupoza kwa hatua moja.
+Vidhibiti vya Skutt vilevile hutoa kupasha kabla na chaguo la kupoza kwa hatua moja.
 
 ### Kwenye tanuru la mkono
 
-Tanuru la mkono haliwezi kufuata ratiba hizi kikamilifu, lakini mpango ni ule ule: kwa upole mwanzoni, kwa uthabiti katikati, na mwisho unaotazamwa. Ratiba ya Bracker's ya glaze ya joto la chini iko chini ya Matanuru ya mkono kwa kina, hapa chini; kwa koni zenye joto zaidi inaongeza “wastani wa dakika 15–30 kwa kila nambari ya koni”. Kwa pyrometer, mazoezi na kumbukumbu, unaweza kunakili kwa makadirio kushusha-na-kushikilia au kupoza polepole kwa kushusha swichi kwa mkono, kama Digitalfire inavyopendekeza.
+Tanuru la mkono haliwezi kufuata ratiba hizi kikamilifu, lakini mpango ni ule ule: polepole mwanzoni, kwa utulivu katikati, na mwisho unaotazamwa. Ratiba ya Bracker ya glaze ya joto la chini iko chini ya Matanuru ya mkono kwa kina, hapa chini; kwa koni zenye joto zaidi inaongeza "wastani wa dakika 15–30 kwa kila namba ya koni". Ukiwa na pyrometer, mazoezi na daftari la kumbukumbu, unaweza kuiga takriban kushusha na kusubiri au kupoza polepole kwa kushusha swichi kwa mkono, kama Digitalfire inavyopendekeza.
 
 ## Matanuru ya mkono kwa kina {#manual-kilns}
 

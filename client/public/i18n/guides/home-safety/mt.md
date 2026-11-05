@@ -59,29 +59,31 @@ Il-**kuluranti** huma l-ossidi tal-metalli u l-pigmenti{{en: stains}} li jagħtu
 
 Il-periklu ewlieni taċ-ċomb huwa differenti: mhux mgħarfa waħda, iżda ammonti żgħar ta’ trab li jinbelgħu matul ġimgħat jew xhur, mingħajr ebda sinjal ta’ twissija (ara t-taqsima dwar iċ-ċomb u t-tfal, aktar ’l isfel).
 
-## Il-ħażna tal-materjali fid-dar {#storing-materials}
+## Il-ħżin tal-materjali d-dar {#storing-materials}
 
-L-ebda korp uffiċjali ma jistabbilixxi regoli għall-ħażna tal-materjali tal-glejż{{en: glaze}} fid-dar, iżda l-paġni dwar is-saħħa u s-sigurtà jaqblu: żomm ix-xogħol fi spazju għalih, ’il bogħod mit-tfal. Id-dipartiment tas-saħħa ta’ Pennsylvania, fejn jikteb dwar passatempi li jużaw iċ-ċomb, jgħid: “Uża spazju tax-xogħol apposta jew garaxx għall-passatemp tiegħek u żomm lit-tfal ’il bogħod minn din iż-żona.”
+L-ebda korp uffiċjali ma jistabbilixxi regoli għall-ħżin tal-materjali tal-glejż{{en: glaze}} id-dar, iżda l-paġni tas-saħħa u s-sigurtà jaqblu: żomm ix-xogħol fi spazju għalih, ’il bogħod mit-tfal. Id-dipartiment tas-saħħa ta’ Pennsylvania, meta jikteb dwar passatempi li jużaw iċ-ċomb, jgħid: “Uża spazju tax-xogħol apposta jew garaxx għall-passatemp tiegħek u żomm it-tfal ’il bogħod minn din iż-żona.”
 
-### Lista ta’ kontroll għall-ħażna
+### Lista ta’ kontroll għall-ħżin
 
-Dawn huma regoli ġenerali għall-prevenzjoni tal-avvelenament, applikati għall-glejż. L-ebda standard taċ-ċeramika ma jistabbilixxihom, iżda aħna nissuġġerixxu kollha kemm huma:
+Dawn huma regoli ġenerali għall-prevenzjoni tal-avvelenament applikati għall-glejż. L-ebda standard taċ-ċeramika ma jistabbilixxihom, iżda nissuġġerixxu lkoll:
 
-- Żomm il-materjali nexfin imsakkrin: f’armarju, jew f’kamra, garaxx jew barrakka li jissakkru. Xkaffa għolja tgħin, iżda t-tfal jitilgħu. Jekk għall-bidu tista’ tissakkar ftit affarijiet biss, ibda bil-materjali solubbli u bil-kuluranti{{en: colorants}}.
-- Żomm il-materjali fix-xkejjer jew fil-kontenituri oriġinali tagħhom. Jekk tittrasferixxi wieħed f’kontenitur ieħor, waħħal fuqu tikketta bl-isem eżatt kif miktub fuq ix-xkora.
-- Qatt ma tuża reċipjenti tal-ikel jew tax-xorb (kontenituri tal-jogurt, vażetti, fliexken) għall-materjali tal-glejż, anke jekk ikollhom tikketta. Tifel jaf x’ikun hemm f’kontenitur tal-jogurt.
-- Żomm l-għodda tal-istudjo (mgħaref ta’ kull tip, frosti, għarabel, mwiezen) fl-istudjo. Qatt ma tuża l-għodda tal-kċina għall-glejż, jew l-għodda tal-glejż għall-ikel.
-- Żomm il-glejżijiet imxarrbin fi bramel b’tikketta, magħluqin bl-għatu.
-- Żomm l-iskeda ta’ data ta’ sigurtà ta’ kull materjal miegħu, fuq karta jew fuq it-telefon tiegħek.
-- Iżżomm xejn mill-istudjo fil-kċina: la xkejjer, la bramel, la għodda u lanqas madum tal-prova{{en: test tiles}}.
+- Żomm il-materjali nexfin imsakkra: kabinett, jew kamra, garaxx jew kamra tal-għodda li tissakkar. Xkaffa għolja tgħin, iżda t-tfal jitilgħu. Jekk tista’ ssakkar biss ftit affarijiet għall-ewwel, ibda bil-materjali solubbli u bil-kuluranti{{en: colorants}}.
+- Żomm il-materjali fil-boroż jew fil-kontenituri oriġinali tagħhom. Jekk tgħaddi wieħed f’kontenitur ieħor, agħmillu tikketta bl-isem eżatt kif miktub fuq il-borża.
+- Qatt tuża kontenituri tal-ikel jew tax-xorb (kontenituri tal-jogurt, vażetti, fliexken) għall-materjali tal-glejż, lanqas b’tikketta. Tifel jaf x’ikun hemm f’kontenitur tal-jogurt.
+- Żomm l-għodda tal-istudjo (mgħaref, kuċċarini, frosti, għarabel, miżien) fl-istudjo. Qatt tuża għodda tal-kċina għall-glejż, jew għodda tal-glejż għall-ikel.
+- Żomm il-glejżijiet imxarrbin f’bramel b’tikketta u bl-għotjien fuqhom.
+- Żomm l-iskeda ta’ data ta’ sigurtà ta’ kull materjal miegħu, fuq il-karta jew fuq il-mobile tiegħek.
+- Iżżomm xejn mill-istudjo fil-kċina: l-ebda borża, barmil, għodda jew maduma tal-prova.
 
-Għal aktar dettall dwar ix-xiri u l-ħażna tal-materjali, ara l-gwida [Kif tagħmel glejż](/guides/making-a-glaze).
+Għax-xiri u l-ħżin tal-materjali f’aktar dettall, ara l-gwida [Kif tagħmel glejż](/guides/making-a-glaze).
 
-### Il-fdal tal-glejż u l-ilma tat-tlaħliħ
+### L-iskart tal-glejż u l-ilma tat-tlaħliħ
 
-Qatt ma tferra’ glejż, jew ilma li laħlaħt fih l-għodda tal-glejż, fis-sink jew fil-ġnien. Il-Crafts Council tar-Renju Unit jissuġġerixxi barmil ilma separat biex taħsel fih idejk, il-pinzelli, l-għarabel u l-għodda. Ħalli l-glejż jinżel fil-qiegħ matul il-lejl, ferra’ l-ilma ċar minn fuq, imbagħad nixxef il-glejż li niżel fil-qiegħ u armih maż-żibel (jispiċċa fil-miżbla), qatt fid-drenaġġ.
+Qatt tferra’ glejż, jew ilma li laħlaħt fih għodda tal-glejż, fis-sink jew fil-ġnien. Il-UK Crafts Council jissuġġerixxi barmil separat tal-ilma biex taħsel fih idejk, il-pinzelli, l-għarabel u l-għodda. Ħallih jinżel il-qiegħ matul il-lejl, ferra’ l-ilma ċar, imbagħad nixxef il-glejż li niżel il-qiegħ u poġġih fl-iskart (imur fil-landfill), qatt fid-drenaġġ.
 
-Nissuġġerixxu għatu fuq dak il-barmil: fil-ħama hemm l-istess metalli tal-glejż, u l-annimali domestiċi jixorbu l-ilma wieqaf. Ir-regoli dwar ir-rimi jvarjaw minn post għal ieħor, għalhekk iċċekkja l-iskeda ta’ data ta’ sigurtà ta’ kull prodott, u staqsi lill-kunsill lokali jew lill-kumpanija tal-ilma jekk għandek xi dubju.
+Nissuġġerixxu għatu fuq dak il-barmil: it-tajn fih l-istess metalli tal-glejż, u l-annimali domestiċi jixorbu ilma wieqaf. Ir-regoli dwar ir-rimi jvarjaw minn post għal ieħor, għalhekk iċċekkja l-iskeda ta’ data ta’ sigurtà ta’ kull prodott, u staqsi lill-kunsill lokali jew lill-kumpanija tal-ilma jekk m’intix ċert.
+
+Xi studjos jaħmu t-tajn niexef qabel ma jarmuh. Ipoġġuh fi skutella żejda li se tintuża għal kollox: wara l-ħamja l-iskutella ma tistax terġa’ tintuża. Imla l-iskutella kwart biss, għax it-tajn jagħmel ir-ragħwa u l-bżieżaq meta jdub, u għattiha bi platt. Poġġiha fuq xkaffa miksija bil-kisja tax-xkafef{{en: kiln wash}} jew fuq ċangun żejjed, f’każ li tfur. Il-ħamja tbiddel it-tajn fi ħġieġ, li jżomm il-metalli ħafna aktar sod mit-trab sfuż, għalhekk huwa aktar sikur fil-landfill. Immaniġġja t-tajn niexef bħalma timmaniġġja l-glejż niexef, b’respiratur u mingħajr ma tagħmel trab.
 
 ## Żomm it-trab fl-istudjo {#keeping-dust-in-the-studio}
 

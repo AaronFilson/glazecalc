@@ -9,6 +9,7 @@
     "homeSafety": "Nesaindējiet savu ģimeni – Glazecalc",
     "firing": "Apdedzināšana vienkāršā krāsnī – Glazecalc",
     "learnWithJohnBritt": "Mācieties ar Džona Brita (John Britt) bezmaksas glazūru kursu – Glazecalc",
+    "teachingGlazeCalculation": "Glazūru aprēķinu mācīšana – Glazecalc",
     "about": "Par lietotni – Glazecalc",
     "privacy": "Privātums – Glazecalc",
     "terms": "Lietošanas noteikumi – Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Izmaiņu apstiprināšana – Glazecalc",
     "cones": "Konusu tabula: Ortona un SK konusu temperatūras – Glazecalc",
     "materials": "Standarta glazūras izejvielas: analīze un apdraudējumi – Glazecalc",
-    "materialInfo": "{name}: oksīdu analīze un apdraudējumi – Glazecalc"
+    "materialInfo": "{name}: oksīdu analīze un apdraudējumi – Glazecalc",
+    "famousGlazes": "Slavenas glazūras – Glazecalc",
+    "famousGlaze": "Glazūra {name} – Glazecalc"
   },
   "nav": {
     "skip": "Pāriet uz saturu",
@@ -177,6 +180,7 @@
     "homeSafety": "Ko darīt, ja bērns vai mājdzīvnieks norij glazūras izejvielu, un kā panākt, lai izejvielas, putekļi, krāsns un pašdarināti trauki ģimenei nekaitētu.",
     "firing": "Kā apdedzināt elektriskajā krāsnī: konusu izvēle, novietošana un nolasīšana, publicētas biskvīta un glazūras apdedzināšanas programmas un konusu tabula.",
     "learnWithJohnBritt": "Pavadonis Džona Brita (John Britt) bezmaksas tiešsaistes glazūru kursam: viņa video pa nodaļām ar Glazecalc ceļvežiem un vingrinājumiem kalkulatorā.",
+    "teachingGlazeCalculation": "6 nodarbības Zēgera formulas (UMF) mācīšanai: izejvielas un trīsstūra provju sērijas, moli, no receptes uz formulu un atpakaļ, glazūras defekti, ar izstrādātiem piemēriem un drukājamām darba lapām.",
     "advice": "Praktiski padomi par keramikas glazūru jaukšanu, glazēšanu un apdedzināšanu no lietotnes Glazecalc, kā arī jūsu pašu padomi. Bez maksas keramiķiem.",
     "about": "Glazecalc ir bezmaksas keramikas glazūru ķīmijas kalkulators un burtnīca ar atvērtu pirmkodu. Uzziniet, kā tas aprēķina Zēgera formulu (UMF) un kā tas veidots.",
     "privacy": "Kā lietotne Glazecalc apstrādā jūsu datus: bez reklāmām, analītikas un izsekošanas, un nekas netiek pārdots. Ko glabājam, kāpēc un kā izmantot savas tiesības.",
@@ -187,6 +191,8 @@
     "materials": "Glazecalc standarta bibliotēkas izejvielas, no laukšpatiem un māliem līdz fritēm un bora avotiem, katrai ar oksīdu analīzi, Zēgera formulu un apdraudējumiem.",
     "materialInfo": "{name}: oksīdu analīze, Zēgera formula, karsēšanas zudumi un apdraudējumi Glazecalc standarta bibliotēkā.",
     "materialInfoLong": "{name} Glazecalc glazūras izejvielu standarta bibliotēkā: oksīdu analīze, devums Zēgera formulā, karsēšanas zudumi un apdraudējumi.",
+    "famousGlazes": "Slavenas glazūras no visas pasaules: katras glazūras tradicionālā recepte vai vēsturiskā analīze, tās Zēgera formula un variants no izejvielām, ko pārdod jūsu reģionā.",
+    "famousGlaze": "Glazūra {name} ({native}): tās tradicionālā recepte vai vēsturiskā analīze, apdedzināšana, Zēgera formula un avoti, kā arī variants no izejvielām, ko pārdod jūsu reģionā.",
     "imageAlt": "Glazecalc logotips un virsraksts “bezmaksas glazūru ķīmija keramiķiem” blakus apdedzinātu konusu fotoattēlam."
   },
   "notices": {

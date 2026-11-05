@@ -144,7 +144,7 @@ Apa se adaugă repede și se scoate greu, așa că începeți cu puțină. Estim
 5. Amestecați până nu mai rămân zone uscate sau cocoloașe.
 6. Cerneți-o de două ori (vedeți mai jos).
 7. Acoperiți-o și lăsați-o să stea peste noapte, apoi amestecați din nou și verificați dacă pe fund s-a format un strat tare.
-8. Măsurați greutatea specifică și adăugați apă puțin câte puțin până ajungeți la valoarea țintă.
+8. Măsurați greutatea specifică și adăugați apă puțin câte puțin până ajungeți la valoarea țintă. Ca să aflați greutatea specifică uscată a glazurii dumneavoastră, cântăriți și glazura preparată finală (vedeți mai jos).
 9. Etichetați găleata și notați ce ați făcut.
 10. Curățați umed: ștergeți podeaua cu mopul și ștergeți toate suprafețele, inclusiv exteriorul recipientelor cu materii prime.
 
@@ -205,6 +205,27 @@ Label: Apa pentru o greutate specifică țintă
 | {{SG 1.50}} |   aproximativ 85 mL |  aproximativ 850 mL | aproximativ 13 US fl oz |
 | {{SG 1.60}} |   aproximativ 64 mL |  aproximativ 640 mL | aproximativ 10 US fl oz |
 
+### Aflați greutatea specifică uscată a glazurii dumneavoastră în timp ce o preparați
+
+Valoarea 2,6 de mai sus este o presupunere. Valoarea propriei glazuri, densitatea pulberii ei uscate, se poate calcula din trei numere pe care le puteți lua în timpul preparării. Cu ea puteți calcula mai târziu, din greutatea specifică, câtă pulbere este în orice găleată cu acea glazură, precum și apa pentru următorul amestec. Calculul nostru, nu al unei surse:
+
+1. Notați masa pulberii uscate din amestec: totalul rețetei.
+2. Cântăriți găleata goală înainte de a începe sau marcați-i masa pe ea.
+3. Amestecați, cerneți și aduceți glazura la greutatea specifică dorită, ca de obicei. Împingeți totul prin sită și clătiți-o în găleată, ca să nu rămână pulbere pe dinafară.
+4. Cântăriți găleata plină și scădeți masa găleții. Aceasta este masa glazurii preparate.
+5. Măsurați greutatea specifică.
+
+Apoi:
+
+- **Apa** = masa glazurii preparate − masa pulberii.
+- **Volumul glazurii preparate** în mL = masa glazurii preparate în grame ÷ greutatea specifică.
+- **Volumul pulberii** = volumul glazurii preparate − apa (1 g de apă înseamnă 1 mL).
+- **Greutatea specifică uscată** = masa pulberii ÷ volumul pulberii.
+
+De exemplu: 1000 g de pulbere dau 1980 g de glazură preparată cu {{SG 1.45}}. Apa este 980 g, glazura preparată are 1980 ÷ 1,45 = aproximativ 1366 mL, pulberea ocupă 1366 − 980 = 386 mL, iar greutatea specifică uscată este 1000 ÷ 386 = aproximativ 2,59.
+
+Cântăriți toată glazura preparată la sfârșit, nu apa pe măsură ce o turnați, ca apa care se evaporă sau stropește să nu fie socotită. Erorile mici cresc aici: o citire a greutății specifice greșită cu 0,01 schimbă rezultatul cu aproximativ 2–4 %, mai mult la o glazură mai diluată. Folosiți un amestec de cel puțin 1 kg, un cântar precis și metoda paharului de 500 g de mai sus pentru greutatea specifică. Majoritatea materiilor prime obișnuite au între aproximativ 2,5 și 2,9, așa că o valoare mult în afara acestui interval, la o glazură fără mult silicat de zirconiu sau plumb, înseamnă probabil o greșeală de măsurare. Notați valoarea pe rețetă.
+
 ### Sarea amară, CMC și bentonita
 
 **Sarea amară** (sulfat de magneziu) face ca glazura să se gelifice ușor când stă nemișcată și să curgă din nou când este amestecată. Aceasta se numește **floculare**{{en: flocculating}}, iar o glazură care se comportă astfel este **tixotropă**{{en: thixotropic}}: se aplică mai uniform, picură mai puțin și se sedimentează mai puțin. Digitalfire sugerează să începeți cu aproximativ 2 g la galon, după ce greutatea specifică este cea potrivită (cam 0,5 g la litru, conversia noastră), și să ajustați cantitatea la fiecare preparare, pentru că nicio rețetă nu ar trebui să fixeze doza. Vă sugerăm să o dizolvați mai întâi în puțină apă fierbinte. Într-un exemplu al Digitalfire, o glazură cu {{SG 1.45}} picura, așa că a fost diluată cu apă până la {{SG 1.43}}, iar sarea amară a gelificat-o din nou până la o consistență cremoasă, și s-a aplicat uniform. O verificare aproximativă: amestecați, opriți-vă și urmăriți. O glazură gelificată se mai mișcă aproximativ 2 sau 3 secunde, apoi se oprește și revine puțin.
@@ -227,7 +248,7 @@ O glazură{{en: glaze}} poate arăta destul de diferit pe altă argilă sau în 
 - o singură modificare o dată
 - o imersie și două imersii, ca să vedeți glazura în strat subțire și în strat gros
 - toate plăcuțele în aceeași încărcătură a cuptorului
-- un semn pe fiecare plăcuță înainte de ardere, cu o ștampilă, prin incizare sau cu un creion underglaze.
+- un semn pe fiecare plăcuță înainte de ardere, cu o ștampilă, prin incizare sau cu un creion underglaze. Plăcuțele arse arată la fel, iar un semn făcut înainte de ardere rezistă în cuptor, așa că puteți ști oricând ce rețetă are fiecare plăcuță.
 
 Vă sugerăm plăcuțe care stau în picioare, pentru că o plăcuță culcată ascunde cât de mult curge o glazură, cu o bandă texturată care să arate cum se deschide la culoare glazura pe muchii, și cu piciorul neglazurat. Așezați fiecare plăcuță pe o farfurioară sau pe o bucată de biscuit ori pe o placă de cuptor acoperită cu strat protector (kiln wash), ca să prindă picăturile. Puneți lângă plăcuțe un **con martor**{{en: witness cone}}, un con ceramic mic care se îndoaie când a primit destulă căldură, ca să arate cât au primit plăcuțele; ghidul [Arderea într-un cuptor simplu](/guides/firing) explică conurile. Dați fiecărei plăcuțe un cod scurt și notați-l lângă rețetă în evidența dumneavoastră. Willers, într-un articol pentru Ceramic Arts Network, folosește cifre și litere și notează sistemul însuși la începutul caietului.
 
@@ -265,13 +286,13 @@ Willers formulează bine scopul: „suficiente informații pentru a putea repeta
 Table: Ce să notați pentru fiecare amestec de glazură (modelul nostru)
 Label: Model de evidență
 
-| Parte     | Ce să notați                                                                                                                                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Rețetă    | Rețeta și versiunea ei; mărcile materiilor prime și numerele de lot; eventualele înlocuiri                                                                                                                                                       |
-| Preparare | Data; cantitatea de preparat; apa adăugată și tipul ei (de la robinet, prin osmoză inversă sau distilată); greutatea specifică după amestecare și cea finală; sarea amară, CMC și bentonita adăugate; mărimea sitei (mesh) și numărul de treceri |
-| Aplicare  | Pasta ceramică; conul arderii biscuit{{en: bisque cone}}; imersie, pensulare sau turnare; timpul de imersie sau numărul de straturi; grosimea stratului uscat                                                                                    |
-| Ardere    | Cuptorul și poziția pe placă; programul de ardere, cu rampele, menținerile și răcirea; atmosfera (oxidantă{{en: oxidation}} sau reducătoare{{en: reduction}}); ce a arătat conul martor{{en: witness cone}}, nu doar la ce a fost setat cuptorul |
-| Rezultat  | Suprafața și culoarea; eventuala curgere, fisurare{{en: crazing}} sau înțepături{{en: pinholes}}; fotografii din față, din spate și din lateral; codul plăcuței                                                                                  |
+| Parte     | Ce să notați                                                                                                                                                                                                                                                                                                           |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rețetă    | Rețeta și versiunea ei; mărcile materiilor prime și numerele de lot; eventualele înlocuiri                                                                                                                                                                                                                             |
+| Preparare | Data; cantitatea de preparat; apa adăugată și tipul ei (de la robinet, prin osmoză inversă sau distilată); greutatea specifică după amestecare și cea finală; masa glazurii preparate finale, pentru greutatea ei specifică uscată; sarea amară, CMC și bentonita adăugate; mărimea sitei (mesh) și numărul de treceri |
+| Aplicare  | Pasta ceramică; conul arderii biscuit{{en: bisque cone}}; imersie, pensulare sau turnare; timpul de imersie sau numărul de straturi; grosimea stratului uscat                                                                                                                                                          |
+| Ardere    | Cuptorul și poziția pe placă; programul de ardere, cu rampele, menținerile și răcirea; atmosfera (oxidantă{{en: oxidation}} sau reducătoare{{en: reduction}}); ce a arătat conul martor{{en: witness cone}}, nu doar la ce a fost setat cuptorul                                                                       |
+| Rezultat  | Suprafața și culoarea; eventuala curgere, fisurare{{en: crazing}} sau înțepături{{en: pinholes}}; fotografii din față, din spate și din lateral; codul plăcuței                                                                                                                                                        |
 
 > [!NOTE]
 > În Glazecalc, o [rețetă](/recipe) salvată păstrează rețeta propriu-zisă. Un [jurnal de ardere](/firing) înregistrează fiecare ardere: cuptorul, data, orele, temperaturile, conurile și observațiile. [Notițele](/notes) păstrează tot restul, cum ar fi evidența amestecului de mai sus și ce a arătat fiecare plăcuță.

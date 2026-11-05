@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Foghlaim le cúrsa glónra saor in aisce John Britt",
       "text": "A chúrsa físeán saor in aisce ar YouTube, aonad ar aonad, lenár dtreoirleabhair le léamh agus cleachtaí le triail in Glazecalc. As Béarla."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Ríomh glónra a theagasc",
+      "text": "6 sheisiún do rang nó do ghrúpa staidéir, ó thíleanna trí-aiseacha go dtí an fhoirmle Seger oibrithe sa dá threo, le bileoga oibre le priontáil."
     }
   },
   "more": "Tuilleadh treoirleabhar",
@@ -243,5 +247,20 @@
     "loading": "Ag lódáil na leabharlainne…",
     "failed": "Níorbh fhéidir an leabharlann a lódáil. Bain triail eile as ar ball.",
     "choosePrompt": "Roghnaigh do thír nó do réigiún chun a fheiceáil cad a dhíoltar ansin."
+  },
+  "stull": {
+    "title": "Cairt Stull: silice i gcomparáid le halúmana san fhoirmle Seger",
+    "regions": {
+      "unfused": "neamhleáite",
+      "matte": "neamhlonrach",
+      "semi-matte": "leath-neamhlonrach",
+      "bright": "lonrach",
+      "underfired": "tearcbhácáilte",
+      "crazed": "snáithlíonraithe"
+    },
+    "keyBright": "Líne phoncáilte: san áit a raibh glónraí Stull ar an gceann is lonraí.",
+    "keyCrazed": "Línte caola: san áit ar shnáithlíonraigh siad.",
+    "note": "Treoir, ní tuar. Bhácáil R. T. Stull (Transactions of the American Ceramic Society, 1912) ag thart ar chón 11, agus na floscanna socraithe ag 0.3 K₂O agus 0.7 CaO; bogann floscanna agus bácálacha eile na limistéir, agus is féidir le glónra nach bhfuil neamhlonrach ach toisc gur tearcbhácáladh é a bheith sa limistéar lonrach ar an gcairt fós. Tá na limistéir mar a tharraingíonn Glazy iad.",
+    "inGuide": "Silice (SiO₂) trasna, ó thart ar 1 go 7, agus alúmana (Al₂O₃) suas, ó 0 go 1, iad araon ón bhfoirmle Seger. Leathann dingeacha amach ón taobh clé: neamhleáite ag an mbarr ar chlé, ansin neamhlonrach, ansin leath-neamhlonrach. Is lonrach an chuid gan scáthú ar a ndeis, agus is í an líne phoncaithe inti an áit a raibh glónraí Stull ba lonraí. Tá tearcbhácáilte ag an mbun ar dheis, le beagán alúmana agus mórán silice. Is é an gearrlíniú, íseal ar an gcairt agus ar a taobh clé, an áit ar shnáithlíonraigh a thástálacha."
   }
 }

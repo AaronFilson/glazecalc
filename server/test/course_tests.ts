@@ -1,7 +1,7 @@
 import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { COURSE_GUIDE, courseUnits, courseVideos, findUnit } from '../mcp/course.ts';
+import { COURSE_GUIDE, courseUnits, courseVideos, findUnit, warningLinks } from '../mcp/course.ts';
 import { GUIDE_IDS, readGuide } from '../mcp/guides.ts';
 import { checkGuides } from '../../scripts/i18n-check.mjs';
 import { expect } from './support/app.ts';
@@ -260,13 +260,46 @@ describe("the companion to John Britt's course", () => {
       'blending',
       'test-tiles-and-melt',
       'slurry-and-application',
-      'raw-materials'
+      'raw-materials',
+      'recipes-and-substitutes',
+      'clay',
+      'firing'
     ]);
+    // A lab unit attaches every section its warning points to: firing the kiln section, not the habits;
+    // special surfaces both the materials and the kiln.
+    const byId = new Map(units.map((unit) => [unit.id, unit]));
+    expect(byId.get('firing')?.safety).to.eql(['kiln']);
+    expect(byId.get('blending')?.safety).to.eql(['habits']);
+    expect(byId.get('test-tiles-and-melt')?.safety).to.eql(['habits']);
+    expect(byId.get('recipes-and-substitutes')?.safety).to.eql(['materials', 'habits']);
+    expect(byId.get('special-surfaces')?.safety).to.eql(['materials', 'kiln']);
+    expect(byId.get('clay')?.safety).to.eql(['the-main-hazard', 'respirators']);
     expect(findUnit('5')?.id).to.equal('blending');
+    expect(findUnit('The unity formula')?.id).to.equal('unity-formula');
+    expect(findUnit('the  UNITY formula')?.id).to.equal('unity-formula');
     expect(findUnit('Unit 12')?.id).to.equal('firing');
     expect(findUnit(' Clay ')?.id).to.equal('clay');
     expect(findUnit('13')).to.equal(undefined);
     expect(findUnit('nope')).to.equal(undefined);
+  });
+
+  it('links only guide sections that exist from inside its warnings', () => {
+    const guide = readGuide(COURSE_GUIDE, 'en')!;
+    let checked = 0;
+    for (const section of guide.sections) {
+      for (const link of warningLinks(section.text)) {
+        const target = readGuide(link.guide, 'en');
+        expect(!!target, `${section.id}: ${link.guide}`).to.equal(true);
+        if (link.section) {
+          expect(
+            target?.sections.some((s) => s.id === link.section),
+            `${section.id}: ${link.guide}#${link.section}`
+          ).to.equal(true);
+        }
+        checked++;
+      }
+    }
+    expect(checked).to.be.above(10);
   });
 
   it('links only videos from his playlist, by his titles, and every one but the promotions, once', () => {
@@ -307,7 +340,7 @@ describe("the companion to John Britt's course", () => {
       'johnbrittpottery.com',
       'The Complete Guide to High-Fire Glazes',
       'The Complete Guide to Mid-Range Glazes',
-      'first published by Lark Books',
+      'first came out under Lark imprints',
       'Union Square & Co., part of Hachette Book Group',
       'not connected with him',
       '/guides/safe-mixing'

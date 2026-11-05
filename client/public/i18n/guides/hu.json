@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Tanuljon John Britt ingyenes mázkurzusával",
       "text": "Ingyenes videókurzusa a YouTube-on, egységenként, útmutatóinkkal olvasnivalónak és a Glazecalcban kipróbálható feladatokkal. Angol nyelven."
+    },
+    "teachingGlazeCalculation": {
+      "title": "A mázszámítás tanítása",
+      "text": "6 foglalkozás csoportnak vagy szakkörnek, a háromszög-próbáktól a mindkét irányban kidolgozott Seger-képletig, nyomtatható munkalapokkal."
     }
   },
   "more": "További útmutatók",
@@ -243,5 +247,20 @@
     "loading": "A könyvtár betöltése…",
     "failed": "A könyvtárat nem sikerült betölteni. Próbálja újra később.",
     "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa, mi kapható ott."
+  },
+  "stull": {
+    "title": "Stull-diagram: a szilícium-dioxid a timföld függvényében a Seger-képletben",
+    "regions": {
+      "unfused": "nem olvadt",
+      "matte": "matt",
+      "semi-matte": "félmatt",
+      "bright": "fényes",
+      "underfired": "alulégetett",
+      "crazed": "hajszálrepedezett"
+    },
+    "keyBright": "Pontozott vonal: ahol Stull mázai a legfényesebbek voltak.",
+    "keyCrazed": "Vonalkázás: ahol hajszálrepedeztek.",
+    "note": "Útmutatás, nem előrejelzés. R. T. Stull (Transactions of the American Ceramic Society, 1912) körülbelül 11-es gúlán égetett, rögzített olvasztóanyagokkal: 0,3 K₂O és 0,7 CaO; más olvasztóanyagok és égetések eltolják a tartományokat, és egy máz, amely csak azért matt, mert alulégették, a diagramon mégis a fényes tartományba eshet. A tartományokat úgy mutatjuk, ahogy a Glazy rajzolja őket.",
+    "inGuide": "Vízszintesen a szilícium-dioxid (SiO₂), körülbelül 1-től 7-ig, függőlegesen a timföld (Al₂O₃), 0-tól 1-ig, mindkettő a Seger-képletből. Balról ékek nyílnak legyezőszerűen: bal felül a ki nem olvadt, aztán a matt, majd a félmatt tartomány. Tőlük jobbra a satírozatlan rész a fényes, és a benne futó pontozott vonal ott van, ahol Stull mázai a legfényesebbek voltak. Jobb alul az alulégetett tartomány, kevés timfölddel és sok szilícium-dioxiddal. A vonalkázás, a diagram alsó részén és bal szélén, ott van, ahol Stull próbái hajszálrepedeztek."
   }
 }

@@ -36,6 +36,29 @@ const REGION_NAMES: Record<string, string> = {
   underfired: marker('recipe.stull.regions.underfired')
 };
 
+/**
+ * In a guide, the chart's words come from the guides' messages (the same words, copied), so a guide does
+ * not load the recipe page's: these, for the keys manager.
+ */
+marker([
+  'recipe.stull.title',
+  'recipe.stull.regions.crazed',
+  'recipe.stull.keyBright',
+  'recipe.stull.keyCrazed',
+  'recipe.stull.note',
+  'guides.stull.title',
+  'guides.stull.regions.unfused',
+  'guides.stull.regions.matte',
+  'guides.stull.regions.semi-matte',
+  'guides.stull.regions.bright',
+  'guides.stull.regions.underfired',
+  'guides.stull.regions.crazed',
+  'guides.stull.keyBright',
+  'guides.stull.keyCrazed',
+  'guides.stull.note',
+  'guides.stull.inGuide'
+]);
+
 /** Where each region's name goes, in moles (Glazy's places), and how strongly it is shaded. */
 const REGIONS = [
   { name: 'unfused', at: [1.25, 0.93], shade: 0.38 },
@@ -58,7 +81,7 @@ let charts = 0;
         role="img"
         [attr.aria-labelledby]="id + '-title ' + id + '-desc'"
       >
-        <title [id]="id + '-title'">{{ t('recipe.stull.title') }}</title>
+        <title [id]="id + '-title'">{{ t(key('title')) }}</title>
         <desc [id]="id + '-desc'">{{ summary() }}</desc>
         <defs>
           <pattern
@@ -104,14 +127,14 @@ let charts = 0;
         <rect [attr.x]="left" [attr.y]="top" [attr.width]="plotW" [attr.height]="plotH" class="stull-frame" />
         @for (region of regions; track region.name) {
           <text [attr.x]="region.x" [attr.y]="region.y" text-anchor="middle" class="stull-name">
-            {{ t(region.key) }}
+            {{ t(key('regions.' + region.name)) }}
           </text>
         }
         <text [attr.x]="brightX" [attr.y]="brightY" text-anchor="middle" class="stull-name">
-          {{ t('recipe.stull.regions.bright') }}
+          {{ t(key('regions.bright')) }}
         </text>
         <text [attr.x]="crazedX" [attr.y]="crazedY" text-anchor="middle" class="stull-name">
-          {{ t('recipe.stull.regions.crazed') }}
+          {{ t(key('regions.crazed')) }}
         </text>
         <text [attr.x]="left + plotW / 2" [attr.y]="height - 4" text-anchor="middle" translate="no">SiO₂</text>
         <text [attr.x]="10" [attr.y]="top + plotH / 2" text-anchor="middle" translate="no" [attr.transform]="yAxis">
@@ -124,14 +147,16 @@ let charts = 0;
       <figcaption>
         <p>{{ summary() }}</p>
         <ul class="stull-key">
-          <li>{{ t('recipe.stull.keyPoint') }}</li>
-          <li>{{ t('recipe.stull.keyBright') }}</li>
+          @if (!guide()) {
+            <li>{{ t('recipe.stull.keyPoint') }}</li>
+          }
+          <li>{{ t(key('keyBright')) }}</li>
           @if (box()) {
             <li>{{ t('recipe.stull.keyLimits', { name: limitName() }) }}</li>
           }
-          <li>{{ t('recipe.stull.keyCrazed') }}</li>
+          <li>{{ t(key('keyCrazed')) }}</li>
         </ul>
-        <p class="stull-note">{{ t('recipe.stull.note') }}</p>
+        <p class="stull-note">{{ t(key('note')) }}</p>
       </figcaption>
     </figure>
   </ng-container>`,
@@ -224,6 +249,13 @@ export class StullChart {
   /** The chosen limit set's ranges for the firing, of which SiO2 and Al2O3 are drawn. */
   readonly ranges = input<Readonly<Record<string, UnityRange>> | null>(null);
   readonly limitName = input('');
+  /** Drawn in a guide (::stull-chart): the chart alone, described in words, with no glaze on it. */
+  readonly guide = input(false);
+
+  /** A message's key: from the guides' messages in a guide, else the recipe page's. */
+  protected key(name: string): string {
+    return (this.guide() ? 'guides' : 'recipe') + '.stull.' + name;
+  }
 
   protected readonly id = 'stull-' + ++charts;
   protected readonly width = WIDTH;
@@ -282,6 +314,7 @@ export class StullChart {
   /** Where the glaze sits, in words: the chart's text alternative. */
   protected summary(): string {
     const point = this.point();
+    if (this.guide()) return translate('guides.stull.inGuide');
     if (!point) return translate('recipe.stull.noPoint');
     const values = { silica: fixed(point.silica, 2), alumina: fixed(point.alumina, 2), ratio: fixed(point.ratio, 1) };
     if (!point.region) return translate('recipe.stull.offChart', values);

@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Mụta na nkuzi glaze n'efu nke John Britt",
       "text": "Nkuzi vidiyo ya n'efu na YouTube, otu nkeji n'otu nkeji, ya na ntuziaka anyị ị ga-agụ na omume ị ga-anwale na Glazecalc. N'asụsụ Bekee."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Ịkụzi ngụkọ glaze",
+      "text": "Nkuzi 6 maka klaasị ma ọ bụ otu ọmụmụ, site na tile triaxial ruo UMF a rụpụtara n'ụzọ abụọ, ya na akwụkwọ ọrụ ị ga-ebipụta."
     }
   },
   "more": "Ntuziaka ndị ọzọ",
@@ -243,5 +247,20 @@
     "loading": "Na-ebugo ọbá akwụkwọ…",
     "failed": "Enweghị ike ibugo ọbá akwụkwọ. Nwaa ọzọ mgbe e mesịrị.",
     "choosePrompt": "Họrọ obodo gị ma ọ bụ mpaghara gị iji hụ ihe a na-ere n'ebe ahụ."
+  },
+  "stull": {
+    "title": "Chaatị Stull: silica megide alumina na UMF",
+    "regions": {
+      "unfused": "agbazeghị",
+      "matte": "matte",
+      "semi-matte": "semi-matte",
+      "bright": "na-egbuke egbuke",
+      "underfired": "esighị ọkụ zuru ezu",
+      "crazed": "nwere crazing"
+    },
+    "keyBright": "Ahịrị ntụpọ ntụpọ: ebe glaze Stull kacha egbuke egbuke.",
+    "keyCrazed": "Ahịrị gafere agafe: ebe ha nwere crazing.",
+    "note": "Ọ bụ ntụzịaka, ọ bụghị amụma. R. T. Stull (Transactions of the American Ceramic Society, 1912) gbara ọkụ n'ihe dị ka cone 11 ya na flux edobere na 0.3 K₂O na 0.7 CaO; flux ndị ọzọ na ịgba ọkụ ndị ọzọ na-akwaga mpaghara ndị ahụ, na glaze anaghị egbuke (matte) naanị n'ihi na a gbaghị ya ọkụ nke ọma ka nwere ike ịpụta dị ka nke na-egbuke na chaatị ahụ. Mpaghara ndị ahụ dị ka Glazy si ese ha.",
+    "inGuide": "Silica (SiO₂) n'obosara, site n'ihe dị ka 1 ruo 7, na alumina (Al₂O₃) n'elu, site na 0 ruo 1, ha abụọ site na UMF. Akụkụ dị ka mma na-agbasa site n'aka ekpe: nke na-agbazeghị n'elu aka ekpe, emesịa anaghị egbuke, emesịa anaghị egbuke ntakịrị. Akụkụ na-enweghị ndò n'aka nri ha na-egbuke, ahịrị ntụpọ dị n'ime ya bụ ebe glaze Stull kacha egbuke. Nke a gbaghị ọkụ nke ọma dị n'okpuru aka nri, ya na obere alumina na ọtụtụ silica. Ahịrị ndị na-agafe ibe ha, n'okpuru chaatị ahụ na n'akụkụ aka ekpe ya, bụ ebe nnwale ya nwetara crazing."
   }
 }

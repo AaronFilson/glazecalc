@@ -782,6 +782,22 @@ shops, laws and agencies stay as they are written there. {region} never takes a 
 | National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)       | Ulusal Zehir Danışma Merkezi (UZEM)                                                                     | safety: Türkiye’s poison line, 114                                                   |
 | One number for ambulance, fire, police, gendarmerie and coast guard.          | Ambulans, itfaiye, polis, jandarma ve sahil güvenlik için tek numara.                                   | safety: 112                                                                          |
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | Turkish              | Notes                                                                                                     |
+| ----------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | Stull grafiği        | **show English**. No source. Regions: erimemiş, mat, yarı mat, parlak, az pişmiş, sır çatlağı.            |
+| dry SG (of a glaze's powder)                    | kuru özgül ağırlık   | No source. Built from “özgül ağırlık” (2.6).                                                              |
+| cristobalite inversion                          | kristobalit dönüşümü | Beside “kuvars dönüşümü”. Usage.                                                                          |
+| colemanite                                      | kolemanit            | Eti Maden's Turkish product name (“öğütülmüş kolemanit”); the specification's own figures kept.           |
+| synthetic ash                                   | sentetik kül         | No source. The Japanese name (合成土灰) kept as the English gives it.                                     |
+| rice-straw ash                                  | pirinç sapı külü     | No source.                                                                                                |
+| porcelain stone (瓷石)                          | porselen taşı        | No source; the Chinese 瓷石 kept.                                                                         |
+| sludge (dried glaze sludge from a rinse bucket) | dip çamuru (tortu)   | As the earlier paragraph of home-safety writes “dipteki çamur”; “tortu” added to keep it apart from clay. |
+| Famous glazes                                   | Ünlü sırlar          | No source. Page and menu name.                                                                            |
+
 ### Search terms
 
 From research_notes/search-terms-2026-10-14.md: searchers type “Seger formülü (hesaplama)”, “seramik sır reçeteleri”, “sır

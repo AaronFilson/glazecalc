@@ -89,16 +89,16 @@ Label: Ortona konusu tabula
 | Konuss | Lēni, {{27 °F/h; 15 °C/h}} | Vidēji, {{108 °F/h; 60 °C/h}} | Ātri, {{270 °F/h; 150 °C/h}} |
 | ------ | -------------------------: | ----------------------------: | ---------------------------: |
 | 022    |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018    |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015    |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 018    |        {{1267 °F; 686 °C}} |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015    |        {{1382 °F; 750 °C}} |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
 | 010    |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
 | 08     |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07     |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 07     |        {{1764 °F; 962 °C}} |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
 | 06     |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
 | 05     |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
 | 04     |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
 | 03     |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02     |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 02     |       {{1972 °F; 1078 °C}} |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
 | 01     |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
 | 1      |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
 | 4      |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
@@ -460,12 +460,12 @@ Manuāli vadāmā krāsnī to pašu plānu izpilda ar roku: žāvējiet lēni ar
 
 ## Glazūras apdedzināšana {#glaze}
 
-Glazūras apdedzināšanā{{en: glaze firing}} glazūra{{en: glaze}} uz biskvīta{{en: bisque}} izkūst un kļūst par stiklu. Lielākā daļa iesācēju apdedzina zemas temperatūras glazūras līdz konusiem 06–04 vai vidējas temperatūras glazūras līdz konusiem 5–6. Apdedziniet līdz konusam, kas norādīts uz māla un glazūras etiķetēm, ar konusu komplektu{{en: cone pack}} ap šo numuru. Par to, kas notiek glazūrā, tai kūstot, skatiet ceļvedi [Glazēšana no pašiem pamatiem](/guides/glazing-basics).
+Glazūras apdedzināšanā{{en: glaze firing}} glazūra uz biskvīta izkūst stiklā. Lielākā daļa tirgū pieejamo zemas temperatūras glazūru ir paredzētas konusam 06 vai 05 (zemas temperatūras diapazons ir konusi 06–04), un lielākā daļa vidējas temperatūras glazūru – konusiem 5–6. Apdedziniet līdz konusam, kas norādīts uz glazūras un māla etiķetēm, ar konusu komplektu ap šo numuru. Kas notiek glazūras iekšienē, kad tā kūst, skatiet ceļvedī [Glazēšana no pašiem pamatiem](/guides/glazing-basics).
 
-### Iekraušana glazūras apdedzināšanai
+### Krāsns iekraušana glazūras apdedzināšanai
 
-- Glazēti izstrādājumi nedrīkst saskarties cits ar citu vai ar sienām: atstājiet apmēram ½ collas (13 mm).
-- Neatstājiet glazūru uz pamatnes (**pamatnes notīrīšana no glazūras**) vai novietojiet zemas temperatūras izstrādājumus uz **trijkājiem** – maziem statīviem ar smailēm. Akmens masas{{en: stoneware}} un porcelāna izstrādājumus nevajadzētu likt uz trijkājiem, jo tādā temperatūrā tie iespiežas masā; tā vietā izmantojiet augstas temperatūras atdalīšanas līdzekli vai kvarca smiltis.
+- Glazētie izstrādājumi nedrīkst saskarties cits ar citu vai ar sienām: atstājiet apmēram ½ collas (13 mm).
+- Turiet pamatni tīru no glazūras (**pamatnes notīrīšana no glazūras**{{en: dry-footing}}) vai novietojiet zemas temperatūras izstrādājumus uz **trijkājiem**{{en: stilts}} – nelieliem paliktņiem ar smailēm. Akmens masas un porcelāna izstrādājumus nevajadzētu likt uz trijkājiem, kas šajās temperatūrās iespiežas masā; tā vietā izmantojiet augstas temperatūras atdalīšanas līdzekli vai kvarca smiltis.
 - Starp plauktu malām un sienu vai Kiln-Sitter atstājiet vismaz 1 collu (25 mm).
 
 ### Kontroliera programmas
@@ -475,56 +475,56 @@ Label: Glazūras programmas
 
 | Segments                        |                                    Sildīt līdz |             Slow Glaze |             Fast Glaze |
 | ------------------------------- | ---------------------------------------------: | ---------------------: | ---------------------: |
-| 1                               |                             {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Nav atsevišķa soļa |
+| 1                               |                             {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Atsevišķa soļa nav |
 | 2                               | {{250 °F; 139 °C}} zem maksimālās temperatūras | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
 | 3                               |                          Maksimālā temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
 | Sildīšanas laiks tukšai krāsnij |                                                |  Apmēram 6½–7½ stundas |    Apmēram 3–4 stundas |
 
-Table: Kur beidzas segmenti 2 un 3, atkarībā no konusa (L&L un Bartlett)
-Label: Programmu mērķa temperatūras
+Table: Kur beidzas 2. un 3. segments, pēc konusa (L&L un Bartlett)
+Label: Programmu mērķi
 
-| Konuss |   Segments 2 beidzas | Maksimālā temperatūra |
+| Konuss |   2. segmenta beigas | Maksimālā temperatūra |
 | ------ | -------------------: | --------------------: |
 | 06     |  {{1569 °F; 854 °C}} |   {{1819 °F; 993 °C}} |
 | 04     |  {{1676 °F; 913 °C}} |  {{1926 °F; 1052 °C}} |
 | 6      | {{1982 °F; 1083 °C}} |  {{2232 °F; 1222 °C}} |
 
-Ņemot vērā L&L brīdinājumu par ātru apdedzināšanu, drošāka izvēle pēc noklusējuma ir Slow Glaze. Ja maksimālajā temperatūrā pievienojat noturēšanu{{en: hold}}, kas ilgāka par 5–10 minūtēm, L&L iesaka attiecīgi pazemināt mērķa temperatūru vai temperatūras korekciju un norāda, ka “Noturēšana augstā temperatūrā paātrina sildelementu un termopāra nodilšanu.”
+Slow Glaze ir drošāka izvēle, ņemot vērā L&L brīdinājumu par ātru apdedzināšanu. Ja maksimālajā temperatūrā pievienojat noturēšanu, kas ilgāka par 5–10 minūtēm, L&L iesaka atbilstoši pazemināt mērķa temperatūru vai temperatūras korekciju un atzīmē: “Noturēšana augstā temperatūrā paātrina sildelementu un termopāra nolietošanos.”
 
 ### Konuss 6: atdzesēšana un noturēšana
 
-Vidējas temperatūras glazūrās dažkārt paliek **adatas dūrieni**{{en: pinholes}} (sīki caurumiņi virsmā) vai pūslīši, ko atstāj gāze, kas izdalās no kausējuma. Programma ar **atdzesēšanu un noturēšanu**{{en: drop-and-hold}} apdedzina līdz maksimālajai temperatūrai, ātri atdzesē krāsni par apmēram {{100 °F; 56 °C}} un notur šajā temperatūrā. Kā raksta Digitalfire, “Atdzesēšana par 100°F un noturēšana piešķir kausējumam pietiekamu viskozitāti, lai burbuļi pārsprāgtu, bet to vietas vēl varētu aizlīdzināties.”
+Vidējas temperatūras glazūrām dažreiz rodas **adatas dūrieni**{{en: pinholes}} (sīki caurumiņi virsmā) vai pūslīši, ko atstāj gāze, kas izdalās no kausējuma. Programma ar **atdzesēšanu un noturēšanu**{{en: drop-and-hold}} apdedzina līdz maksimālajai temperatūrai, ātri atdzesē par apmēram {{100 °F; 56 °C}} un notur šajā temperatūrā. Kā raksta Digitalfire: “Atdzesēšana par 100 °F un noturēšana piešķir kausējumam pietiekamu viskozitāti, lai burbuļi pārsprāgtu, bet tomēr ļauj tiem aizplūst.”
 
-Table: Digitalfire PLC6DS, konuss 6, atdzesēšana un noturēšana
+Table: Digitalfire PLC6DS, atdzesēšana un noturēšana konusam 6
 Label: Digitalfire PLC6DS
 
-| Solis |                                  Ātrums |               Mērķis | Noturēšana                                        |
-| ----- | --------------------------------------: | -------------------: | ------------------------------------------------- |
-| 1     |                   {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minūšu                                         |
-| 2     |                  {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pēc izvēles 30 minūšu, lai izzustu burbuļu mākoņi |
-| 3     |                   {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minūšu; lielās krāsnīs ilgāk                   |
-| 4     | Dzesēt ar ātrumu {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minūšu                                         |
+| Solis |                           Ātrums |               Mērķis | Noturēšana                                        |
+| ----- | -------------------------------: | -------------------: | ------------------------------------------------- |
+| 1     |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minūšu                                         |
+| 2     |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pēc izvēles 30 minūšu, lai izzustu burbuļu mākoņi |
+| 3     |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minūšu; lielās krāsnīs ilgāk                   |
+| 4     | Dzesēt ar {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minūšu                                         |
 
-PLC6DS ilgst apmēram 9 stundas 36 minūtes. Šķidrāk plūstošām glazūrām Digitalfire temperatūru tā vietā pazemina par apmēram {{200 °F; 111 °C}}; pārāk liela atdzesēšana “rada kristalizācijas risku noturēšanas laikā”. Tās maksimālā temperatūra {{2200 °F; 1204 °C}} ir zemāka par tabulā konusam 6 norādīto {{2232 °F; 1222 °C}}; Digitalfire ziņo, ka lielākā daļa krāsnu konusu 6 sasniedz apmēram {{2200 °F; 1204 °C}} temperatūrā. Pārbaudiet to savā krāsnī ar konusu komplektu.
+PLC6DS ilgst apmēram 9 stundas 36 minūtes. Šķidrāk plūstošām glazūrām Digitalfire tā vietā atdzesē par apmēram {{200 °F; 111 °C}}; pārāk liela atdzesēšana “rada kristalizācijas risku noturēšanas laikā”. Tās maksimālā temperatūra {{2200 °F; 1204 °C}} ir zemāka par tabulā konusam 6 doto {{2232 °F; 1222 °C}}; Digitalfire norāda, ka lielākā daļa krāsņu sasniedz konusu 6 apmēram {{2200 °F; 1204 °C}} temperatūrā. Pārbaudiet to ar konusu komplektu savā krāsnī.
 
 ### Kontrolēta dzesēšana
 
-**Kontrolēta dzesēšana** (lēna dzesēšana) nozīmē, ka kontrolieris dzesē krāsni ar iestatītu ātrumu, nevis ļauj temperatūrai brīvi kristies. Digitalfire programma C6DHSC ir PLC6DS, pēc kuras krāsni dzesē ar ātrumu {{150 °F/h; 83 °C/h}} no {{2100 °F; 1148 °C}} līdz {{1400 °F; 760 °C}} un tad izslēdz. Tā “uzlabo spīdumu un virsmas kvalitāti” un palīdz rutila zilajām glazūrām, taču lēna dzesēšana “var palielināt matētumu” (viena matēta glazūra kļuva sausa) un var saīsināt krāsns releju kalpošanas laiku. Arī L&L piegādā kontrolētas dzesēšanas programmu konusam 6:
+**Kontrolēta dzesēšana**{{en: slow cooling}} nozīmē, ka kontrolieris dzesē krāsni ar iestatītu ātrumu, nevis ļauj tai atdzist brīvi. Digitalfire C6DHSC ir PLC6DS, pēc kuras krāsni dzesē ar {{150 °F/h; 83 °C/h}} no {{2100 °F; 1148 °C}} līdz {{1400 °F; 760 °C}} un tad izslēdz. Tā “uzlabo spīdumu un virsmas kvalitāti” un palīdz rutila zilajiem toņiem, bet kontrolēta dzesēšana “var palielināt matētumu” (viena matēta glazūra kļuva sausa) un var saīsināt krāsns releju kalpošanas laiku. Arī L&L piedāvā kontrolētas dzesēšanas programmu konusam 6:
 
-Table: L&L “User 6”: kontrolēta dzesēšana glazūrām konusam 6
-Label: L un L kontrolētā dzesēšana
+Table: L&L “User 6”: kontrolēta dzesēšana konusa 6 glazūrām
+Label: L un L kontrolēta dzesēšana
 
-| Solis |                                 Ātrums |               Mērķis |
-| ----- | -------------------------------------: | -------------------: |
-| 1     |                Sildīt maksimālā ātrumā | {{2232 °F; 1222 °C}} |
-| 2     |                Dzesēt maksimālā ātrumā | {{1900 °F; 1038 °C}} |
-| 3     | Dzesēt ar ātrumu {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Solis |                          Ātrums |               Mērķis |
+| ----- | ------------------------------: | -------------------: |
+| 1     |           Sildīt ar pilnu jaudu | {{2232 °F; 1222 °C}} |
+| 2     |           Dzesēt maksimāli ātri | {{1900 °F; 1038 °C}} |
+| 3     | Dzesēt ar {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Arī Skutt kontrolieri piedāvā izžāvēšanu krāsnī un vienpakāpes dzesēšanas iespēju.
+Arī Skutt kontrolieri piedāvā izžāvēšanu krāsnī un vienas pakāpes dzesēšanas iespēju.
 
 ### Manuāli vadāmā krāsnī
 
-Manuāli vadāma krāsns nevar precīzi izpildīt šīs programmas, taču plāns ir tas pats: sākumā saudzīgi, vidusdaļā vienmērīgi, beigās uzmanīga vērošana. Bracker's zemas temperatūras glazūru programma ir sadaļā “Manuāli vadāmas krāsnis sīkāk” zemāk; karstākiem konusiem tā pievieno “vidēji 15–30 minūtes uz katru konusa numuru”. Ar pirometru, pieredzi un pierakstiem jūs varat aptuveni atkārtot atdzesēšanu un noturēšanu{{en: drop-and-hold}} vai kontrolētu dzesēšanu, ar roku pagriežot slēdžus uz zemākām pozīcijām, kā iesaka Digitalfire.
+Manuāli vadāma krāsns nevar precīzi izpildīt šīs programmas, bet plāns ir tas pats: sākumā saudzīgi, vidū vienmērīgi, un beigas jāvēro. Bracker zemas temperatūras glazūras programma ir dota zemāk sadaļā “Manuāli vadāmas krāsnis sīkāk”; karstākiem konusiem tā pievieno “vidēji 15–30 minūtes uz katru konusa numuru”. Ar pirometru, pieredzi un pierakstiem varat aptuveni atdarināt atdzesēšanu un noturēšanu vai kontrolētu dzesēšanu, pagriežot slēdžus zemāk ar roku, kā iesaka Digitalfire.
 
 ## Manuāli vadāmas krāsnis sīkāk {#manual-kilns}
 

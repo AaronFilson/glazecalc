@@ -9,6 +9,7 @@
     "homeSafety": "Neapnuodykite savo šeimos – Glazecalc",
     "firing": "Degimas paprastoje krosnyje – Glazecalc",
     "learnWithJohnBritt": "Mokykitės su nemokamu Johno Britto glazūrų kursu – Glazecalc",
+    "teachingGlazeCalculation": "Glazūrų skaičiavimo mokymas – Glazecalc",
     "about": "Apie programą – Glazecalc",
     "privacy": "Privatumas – Glazecalc",
     "terms": "Naudojimo sąlygos – Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Pakeitimo patvirtinimas – Glazecalc",
     "cones": "Piroskopų lentelė: Ortono ir SK piroskopų temperatūros – Glazecalc",
     "materials": "Standartinės glazūros žaliavos: analizė ir pavojai – Glazecalc",
-    "materialInfo": "{name}: oksidų analizė ir pavojai – Glazecalc"
+    "materialInfo": "{name}: oksidų analizė ir pavojai – Glazecalc",
+    "famousGlazes": "Garsios glazūros – Glazecalc",
+    "famousGlaze": "Glazūra {name} – Glazecalc"
   },
   "nav": {
     "skip": "Pereiti prie turinio",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Įveskite skaičių su dešimtainiu tašku, pvz., {example}."
   },
   "meta": {
-    "description": "Įveskite glazūros receptą ir pamatykite Segerio formulę (UMF), SiO₂ : Al₂O₃ ir fliusų santykius. Nemokama, atvirojo kodo: receptai, žaliavos, degimo žurnalai.",
+    "description": "Įveskite keramikos glazūros receptą ir pamatykite Segerio formulę (UMF), SiO₂ : Al₂O₃ ir fliusų santykius. Nemokama ir atvirojo kodo.",
     "guides": "Paprasti vadovai pradedantiesiems keramikams: kas yra keramikos glazūra, kaip ją saugiai pasigaminti ir sumaišyti, apsaugoti šeimą ir degti paprastoje krosnyje.",
     "glazingBasics": "Iš ko sudaryta keramikos glazūra, kaip krosnis ją paverčia stiklu, ką reiškia piroskopai, fritai, Segerio formulė (UMF) ir defektai. Vadovas pradedantiesiems.",
     "makingAGlaze": "Kaip pirkti, laikyti, sverti ir maišyti keramikos glazūrą, nustatyti jos tirštumą, išbandyti ją ant savo molio ir užsirašyti tiek, kad pasigamintumėte ją vėl.",
@@ -177,6 +180,7 @@
     "homeSafety": "Ką daryti, jei vaikas ar augintinis prarijo glazūros žaliavos, ir kaip žaliavas, dulkes, krosnį ir rankų darbo dirbinius padaryti saugius jūsų šeimai.",
     "firing": "Kaip degti elektrinėje krosnyje: pasirinkti, pastatyti ir vertinti piroskopus, laikytis paskelbtų biskvitinio ir glazūros degimo programų. Su piroskopų lentele.",
     "learnWithJohnBritt": "Palydovas nemokamam Johno Britto internetiniam glazūrų kursui: jo vaizdo įrašai skyrius po skyriaus, Glazecalc vadovai ir pratimai skaičiuoklėje.",
+    "teachingGlazeCalculation": "6 užsiėmimai Segerio formulei (UMF) mokyti: žaliavos ir trijų komponentų bandinių serijos, moliai, nuo recepto iki formulės ir atgal, glazūrų defektai, su išspręstais pavyzdžiais ir spausdinamais darbo lapais.",
     "advice": "Praktiniai Glazecalc patarimai apie keramikos glazūrų maišymą, glazūravimą ir degimą, taip pat jūsų pačių patarimai. Nemokamai keramikams.",
     "about": "Glazecalc – nemokama atvirojo kodo keramikos glazūrų chemijos skaičiuoklė ir sąsiuvinis. Sužinokite, kaip ji apskaičiuoja Segerio formulę (UMF) ir kaip sukurta.",
     "privacy": "Kaip Glazecalc tvarko jūsų duomenis: jokių reklamų, analitikos ir sekimo, niekas neparduodama. Kas saugoma, kodėl ir kaip pasinaudoti savo teisėmis.",
@@ -184,9 +188,11 @@
     "assistants": "Naudokite Glazecalc per MCP iš Claude, Copilot, Cursor ar Gemini: glazūrų chemija, ribų patikros, pakaitalai, vadovai ir jūsų pačių receptai.",
     "signup": "Nemokama Glazecalc paskyra keramikos glazūrų receptams, žaliavoms, užrašams ir degimo žurnalams saugoti. Be reklamų, jūsų duomenys niekada neparduodami.",
     "cones": "Ortono ir SK piroskopai nuo 022, jų temperatūros °C ir °F, kaitinimo greitis, kuriam skirta kiekviena lentelė, ir kur imami skaičiai.",
-    "materials": "Glazecalc standartinės bibliotekos žaliavos: nuo lauko špatų ir molių iki fritų ir boro šaltinių, su oksidų analize, Segerio formule ir pavojais.",
+    "materials": "Glazecalc standartinės bibliotekos glazūros žaliavos: nuo lauko špatų ir molių iki fritų ir boro šaltinių, su oksidų analize, Segerio formule ir pavojais.",
     "materialInfo": "{name}: oksidų analizė, Segerio formulė, degimo nuostoliai ir pavojai Glazecalc standartinėje bibliotekoje.",
     "materialInfoLong": "{name} Glazecalc standartinėje glazūros žaliavų bibliotekoje: oksidų analizė, indėlis į Segerio formulę, degimo nuostoliai ir pavojai.",
+    "famousGlazes": "Garsios keramikos glazūros iš viso pasaulio: kiekvienos glazūros tradicinis receptas ar istorinė analizė, jos Segerio formulė ir versija iš žaliavų, parduodamų ten, kur esate.",
+    "famousGlaze": "Glazūra {name} ({native}): jos tradicinis receptas ar istorinė analizė, degimas, Segerio formulė ir šaltiniai, taip pat versija iš žaliavų, parduodamų ten, kur esate.",
     "imageAlt": "Glazecalc logotipas ir antraštė „nemokama glazūrų chemija keramikams“ šalia išdegtų kūgių nuotraukos."
   },
   "notices": {

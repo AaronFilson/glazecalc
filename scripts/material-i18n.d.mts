@@ -6,6 +6,14 @@ export function standardMaterials(): Array<{
   hazards?: string;
   source?: { name: string };
 }>;
+/** The keys of one material's words in records/, as its page looks them up. */
+export function keysOf(material: {
+  notes?: string[] | string;
+  hazards?: string;
+  source?: { name: string };
+}): Set<string>;
+/** Each language's words for each material's page alone, by language and slug: { de: { silica: '{…}' } }. */
+export function perMaterialFiles(): Record<string, Record<string, string>>;
 /** The keys of the materials' notes and hazards in records/. */
 export function materialKeys(): Set<string>;
 /** The keys of the cone charts' notes in records/. */

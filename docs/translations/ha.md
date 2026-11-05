@@ -216,6 +216,25 @@ No poison line confirmed in either country.
 
 **Native check** on the whole table.
 
+### 2.8 Round 14 terms (2026-11-04)
+
+No Hausa ceramics source read for these; built from Newman's everyday words (_toka_ ash, _karan shinkafa_ rice straw,
+_dutse_ stone, _laka_ mud). **Native check** on all.
+
+| English                    | ha                                      | Notes                                         |
+| -------------------------- | --------------------------------------- | --------------------------------------------- |
+| wood ash                   | tokar itace                             | Newman _toka_.                                |
+| synthetic ash (合成土灰)   | madadin da aka ƙera (synthetic) na 土灰 | Japanese name kept, as the English.           |
+| rice-straw ash (藁灰)      | tokar karan shinkafa                    |                                               |
+| isu ash (柞灰)             | tokar isu                               |                                               |
+| porcelain stone (瓷石)     | dutsen porcelain                        |                                               |
+| caustic                    | tana ƙona fata (caustic)                | English kept in brackets for the safety text. |
+| slurry; sludge             | slurry; laka                            |                                               |
+| drop-and-hold; hold        | saukarwa da jira (drop-and-hold); jira  |                                               |
+| glass former; stabilizer   | mai gina gilashi; mai daidaitawa        |                                               |
+| line blend, triaxial blend | line blend, triaxial blend              | Loans.                                        |
+| shivering                  | shivering                               | Loan, explained in the guide.                 |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes and standards, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG,

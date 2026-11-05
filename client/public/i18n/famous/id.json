@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Sebagian halaman ini belum diterjemahkan, jadi ditampilkan dalam bahasa Inggris.",
+  "index": {
+    "crumb": "Glasir terkenal",
+    "title": "Glasir terkenal",
+    "lead": "Glasir yang dikenal di seluruh dunia, masing-masing dari bahan lokal tradisionalnya, dengan formula Seger dan versi dari bahan yang dijual di tempat Anda.",
+    "listHeading": "Daftar glasir",
+    "more": "Glasir lain akan menyusul: masing-masing ditambahkan setelah resep dan bahannya didukung oleh setidaknya tiga sumber yang sudah dibaca."
+  },
+  "glaze": {
+    "lead": "Glasir terkenal ({native}): resep tradisional atau analisisnya, pembakarannya, dan versi dari bahan yang dijual di tempat Anda.",
+    "aboutHeading": "Tentang {name}",
+    "nativeName": "Nama asli",
+    "origin": "Di mana",
+    "period": "Kapan",
+    "firing": "Pembakaran",
+    "cone": "kerucut {cone}",
+    "historyOnly": "Hanya sejarah: glasir ini dibuat dengan timbal. Analisisnya ditampilkan sebagai sejarah, bukan sebagai resep untuk dicampur. Versi di bawah adalah glasir lain, tanpa timbal.",
+    "recipeHeading": "Resep tradisional",
+    "material": "Bahan",
+    "amount": "Jumlah",
+    "unityHeading": "Formula Seger",
+    "analysisHeading": "Analisis historis",
+    "oxide": "Oksida",
+    "percent": "% berat",
+    "useHeading": "Coba",
+    "open": "Buka resep ini",
+    "openLeadFree": "Buka versi bebas timbal",
+    "leadFreeTitle": "Gaya {name}, bebas timbal",
+    "allLink": "Semua glasir terkenal",
+    "safetyHeading": "Keselamatan",
+    "safeMixing": "Mencampur dengan aman dan ventilasi",
+    "firingGuide": "Membakar di tungku sederhana",
+    "makingGuide": "Cara membuat glasir",
+    "sourcesHeading": "Sumber",
+    "link": "Buka",
+    "opened": "dibaca {date}"
+  },
+  "local": {
+    "heading": "Dengan bahan lokal Anda",
+    "leadFreeHeading": "Versi bebas timbal",
+    "intro": "Formula Seger dari resep tradisional, dibuat dari bahan standar yang dijual di tempat Anda membeli. Pilih tempat Anda membeli untuk melihatnya.",
+    "region": "Tempat Anda membeli bahan",
+    "proposal": "Bahan dari usulan itu sendiri",
+    "pick": "Pilih…",
+    "untested": "Dihitung, belum diuji bakar.",
+    "testFirst": "Bakar ubin uji sebelum Anda memakainya pada benda apa pun, dan uji pelindian permukaan yang bersentuhan dengan makanan.",
+    "untestedNote": "Dihitung, belum diuji bakar: bakar ubin uji sebelum dipakai.",
+    "close": "Hasilnya mendekati formula target.",
+    "fair": "Hasilnya cukup mendekati formula target.",
+    "poor": "Bahan-bahan ini tidak dapat mendekati formula target.",
+    "none": "Bahan yang dijual di sana tidak dapat membuatnya.",
+    "choose": "Pilih tempat Anda membeli bahan untuk melihatnya dibuat dari bahan yang dijual di sana."
+  },
+  "atmospheres": {
+    "oxidation": "oksidasi",
+    "reduction": "reduksi",
+    "neutral": "netral",
+    "wood": "pembakaran kayu",
+    "salt": "pembakaran garam",
+    "soda": "pembakaran soda"
+  }
+}

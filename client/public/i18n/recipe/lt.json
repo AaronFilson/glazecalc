@@ -724,7 +724,7 @@
     "keyBright": "Punktyrinė linija: kur Stullo glazūros buvo blizgiausios.",
     "keyLimits": "Brūkšninės linijos ir šešėliavimas: ribų rinkinio {name} silicio dioksido ir aliuminio oksido intervalai.",
     "keyCrazed": "Brūkšniavimas: kur jos trūkinėjo.",
-    "note": "Orientyras, o ne prognozė. R. T. Stullas (Transactions of the American Ceramic Society, 1912) degė esant piroskopui 11, fliusus užfiksavęs ties 0,3 K₂O ir 0,7 CaO; kiti fliusai ir degimai sritis pakeičia, o nepakankamai išdegta matinė glazūra gali būti pažymėta kaip blizgi. Sritys nubrėžtos taip, kaip jas braižo Glazy."
+    "note": "Orientyras, o ne prognozė. R. T. Stullas (Transactions of the American Ceramic Society, 1912) degė maždaug iki piroskopo 11, fliusus palikęs nekintamus – 0,3 K₂O ir 0,7 CaO; kiti fliusai ir degimai sritis pastumia, o glazūra, kuri matinė tik todėl, kad nepakankamai išdegta, vis tiek gali patekti į blizgių sritį. Sritys pažymėtos taip, kaip jas braižo Glazy."
   },
   "slurry": {
     "heading": "Santykinis tankis ir vanduo",
@@ -752,7 +752,17 @@
       "pint": "Norima pintos masė, oz"
     },
     "drySg": "Sausų žaliavų santykinis tankis",
-    "drySgHelp": "Apie 2,5 daugumai glazūrų; Glazy naudoja 2,6.",
+    "drySgEmpty": "Jo reikia tik sausoms masėms; pilamam vandeniui – ne. Įveskite, jei žinote.",
+    "drySgNeeded": "Įveskite sausųjų žaliavų santykinį tankį, kad pamatytumėte sausą glazūrą kibire ir vandenį naujam užmaišui.",
+    "estimate": {
+      "mineral": "Įvertis {sg}, pagal tai, iš ko sudaryta kiekviena žaliava: išmatuotą jos mineralo tankį. Pakeiskite, jei žinote tiksliau.",
+      "kind": "Įvertis {sg}: lauko špatų ir molių santykinis tankis yra apie 2,6. Pakeiskite, jei žinote tiksliau.",
+      "glass": "Įvertis {sg}, apskaičiuotas iš fritų oksidų (fritai yra stiklas). Pakeiskite, jei žinote tiksliau.",
+      "mixed": "Įvertis {sg}, pagal kiekvieną žaliavą: išmatuotas jos mineralo tankis, apie 2,6 lauko špatams ir moliams, o fritams – apskaičiuotas iš jų oksidų. Pakeiskite, jei žinote tiksliau.",
+      "leftOut": "Neįtraukta, nes nežinomas jų santykinis tankis: {names}.",
+      "none": "Šiam receptui įverčio nėra: nežinomas šių žaliavų santykinis tankis: {names}. Įveskite, jei žinote.",
+      "was": "Naudojamas jūsų skaičius. Įvertis buvo {sg}; norėdami grįžti prie jo, išvalykite lauką."
+    },
     "batch": "Sausa glazūra naujam užmaišui, {unit}",
     "contents": "Esant santykiniam tankiui {sg}, kibire yra {glaze} sausos glazūros ir {water} vandens.",
     "add": "Kad pasiektumėte santykinį tankį {target}, įpilkite {water} vandens. Galiausiai bus apie {volume}.",
@@ -760,6 +770,7 @@
     "already": "Jau yra santykinis tankis {target}.",
     "mix": "Sumaišykite {glaze} sausos glazūros su {water} vandens – gausite apie {volume}, kurio santykinis tankis {target}.",
     "badSg": "Santykinis tankis turi būti didesnis už 1 (vandens) ir mažesnis už sausų žaliavų {dry}.",
+    "badSgWater": "Santykinis tankis turi būti didesnis nei 1 (vandens).",
     "badDry": "Sausų žaliavų santykinis tankis turi būti didesnis už 1.",
     "note": "Vanduo skaičiuojamas pagal masę: litras sveria kilogramą, JAV galonas – apie 8,3 lb. Skaičiuojant tūriai sudedami, o tai artima, bet netiksli: pilkite vandenį po truputį, maišykite ir matuokite iš naujo. Dvi glazūros su tuo pačiu santykiniu tankiu vis tiek gali tekėti skirtingai.",
     "saveTarget": "Įrašyti santykinį tankį {sg} kaip šio recepto tikslą",

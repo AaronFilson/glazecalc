@@ -89,16 +89,16 @@ Label: Kegeltabel van Orton
 | Kegel | Langzaam, {{27 °F/h; 15 °C/h}} | Gemiddeld, {{108 °F/h; 60 °C/h}} | Snel, {{270 °F/h; 150 °C/h}} |
 | ----- | -----------------------------: | -------------------------------: | ---------------------------: |
 | 022   |                              – |              {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018   |                              – |              {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015   |                              – |              {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 018   |            {{1267 °F; 686 °C}} |              {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015   |            {{1382 °F; 750 °C}} |              {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
 | 010   |            {{1636 °F; 891 °C}} |              {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
 | 08    |            {{1692 °F; 922 °C}} |              {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07    |                              – |              {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 07    |            {{1764 °F; 962 °C}} |              {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
 | 06    |            {{1798 °F; 981 °C}} |              {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
 | 05    |           {{1870 °F; 1021 °C}} |             {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
 | 04    |           {{1915 °F; 1046 °C}} |             {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
 | 03    |           {{1960 °F; 1071 °C}} |             {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02    |                              – |             {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 02    |           {{1972 °F; 1078 °C}} |             {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
 | 01    |           {{1999 °F; 1093 °C}} |             {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
 | 1     |           {{2028 °F; 1109 °C}} |             {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
 | 4     |           {{2086 °F; 1141 °C}} |             {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
@@ -460,13 +460,13 @@ Een handbediende oven volgt hetzelfde plan, maar dan met de hand: droog langzaam
 
 ## Glazuurstook {#glaze}
 
-De glazuurstook{{en: glaze firing}} smelt het glazuur{{en: glaze}} op het biscuit{{en: bisque}} tot glas. De meeste beginners stoken glazuren voor lage temperatuur op kegel 06–04 of glazuren voor middentemperatuur op kegel 5–6. Stook tot de kegel op de etiketten van uw klei en glazuur, met een kegeldrietal{{en: cone pack}} rond dat nummer. Wat er in het glazuur gebeurt als het smelt, leest u in [Glazuren vanaf de basis](/guides/glazing-basics).
+De glazuurstook{{en: glaze firing}} smelt het glazuur{{en: glaze}} op het biscuit{{en: bisque}} tot glas. De meeste glazuren voor lage temperatuur in de handel zijn gemaakt voor kegel 06 of 05 (het gebied van lage temperatuur loopt van kegel 06 tot 04), en de meeste glazuren voor middentemperatuur voor kegel 5–6. Stook tot de kegel op de etiketten van uw glazuur en klei, met een kegeldrietal{{en: cone pack}} rond dat nummer. Wat er in het glazuur gebeurt als het smelt, leest u in [Glazuren vanaf de basis](/guides/glazing-basics).
 
 ### De oven vullen voor een glazuurstook
 
-- Geglazuurde stukken mogen elkaar en de wanden niet raken: laat ongeveer ½ inch (13 mm) ruimte.
+- Geglazuurde stukken mogen elkaar en de wanden niet raken: laat ongeveer ½ inch (13 mm) ruimte.
 - Houd de **standring glazuurvrij**, of zet werk voor lage temperatuur op **triangels**, kleine steuntjes met punten. Steengoed{{en: stoneware}} en porselein zouden niet op triangels moeten staan, want die zakken er bij die temperaturen in vast; gebruik in plaats daarvan ovenplaatbescherming voor hoge temperatuur of kwartszand.
-- Laat minstens 1 inch (25 mm) ruimte tussen de randen van de ovenplaten en de wand of de kiln sitter.
+- Laat minstens 1 inch (25 mm) ruimte tussen de randen van de ovenplaten en de wand of de kiln sitter.
 
 ### Stookschema’s voor de regelaar
 
@@ -524,7 +524,7 @@ Ook de regelaars van Skutt bieden een voorverwarming en een afkoeloptie in één
 
 ### Bij een handbediende oven
 
-Een handbediende oven kan deze schema’s niet precies volgen, maar het plan is hetzelfde: rustig beginnen, gestaag door het midden, en een eind waarbij u goed oplet. Het schema van Bracker’s voor glazuur voor lage temperatuur staat onder Handbediende ovens in detail, hieronder; voor hetere kegels telt het er “gemiddeld 15–30 minuten per kegelnummer” bij op. Met een pyrometer, oefening en een stookverslag kunt u afkoelen en aanhouden of gestuurd afkoelen ruwweg nadoen door de schakelaars met de hand lager te zetten, zoals Digitalfire voorstelt.
+Een handbediende oven kan deze schema’s niet precies volgen, maar het plan is hetzelfde: rustig beginnen, gestaag door het midden, en een eind waarbij u goed oplet. Het schema van Bracker voor glazuur voor lage temperatuur staat hieronder, onder Handbediende ovens in detail; voor hetere kegels telt het er “gemiddeld 15–30 minuten per kegelnummer” bij op. Met een pyrometer, oefening en een stookverslag kunt u afkoelen en aanhouden of gestuurd afkoelen ruwweg nadoen door de schakelaars met de hand lager te zetten, zoals Digitalfire voorstelt.
 
 ## Handbediende ovens in detail {#manual-kilns}
 

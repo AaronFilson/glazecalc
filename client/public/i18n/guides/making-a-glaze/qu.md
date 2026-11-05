@@ -119,162 +119,183 @@ Yuyaychaykunaqa mana kaqllachu hayk'a fino balanzata munasqaykimanta. Derek Au p
 
 Derek Au huk platoman t'aqa t'aqa montonkunapi pesan, pantay kaqtin yapamanta hurqunapaq. Huk baldeman materialkuna chawpinpi mana taraspa pesaspaqa, Glazecalc-pa puriq yapasqanmi willasunki sapa kaq qhipanpi balanza imata ñawinchananta.
 
-## Chaqruy suysuy ima {#mixing}
+## Chaqruy, suysuypas {#mixing}
 
 ### Hayk'a unu
 
-Pukyukunaqa mana kaqllatachu ninku. Derek Au rakhumanta qallarin, sapa 100 g ñut'upaq 50 mL unuwan, qhipamantaq aswanta yapan. Potterycrafts huk ñut'u esmalte{{en: glaze}}paq 100 g-paq 65 mL-ta qun. UT Austin unuta ñut'utapas kaqlla llasaypi llamk'achin, Digitalfire-taq 20 kg ñut'uta 20 kg unuman churaqtin, 1.46 gravedad específicata tupurqan.
+Qillqakunaqa manam huk yuyayllachu. Derek Auqa rakhuta qallarin, 100 g ñut'upaq 50 mL unuwan, qhipamantaq aswanta yapan. Potterycraftsqa huk ñut'u esmaltepaq 100 g-paq 65 mL-ta qun. UT Austinqa kaqlla llasay unuta ñut'utapas llamk'achin, Digitalfiretaq 20 kg ñut'uta 20 kg unuman churaspa 1.46 SG-ta tupurqan.
 
-Unuqa utqaylla yapanapaq, hurqunapaqtaq pisi pisilla, chayrayku pisimanta qallariy. Ñuqaykupa yupasqayku: **sapa 100 g-paq yaqa 70 manta 80 mL kama** qallariy (sapa kilogramopaq 700 manta 800 mL kama, otaq sapa librapaq yaqa 11 manta 12 US fl oz kama). Chay rakhu kaypi huq'uchiy, chaqruy, suysuy, chaymantataq gravedad específica allin kanankama unuta pisi pisimanta yapay. 1 mL unuqa 1 g llasan, chayrayku pesayta atinki. Aswanta churaspaqa, esmalteta tiyakuchiy, chaymantataq hawanmanta ch'uya unuta esponjawan hurquy otaq hich'ay.
+Unuqa yapanapaq utqaylla, hurqunapaqtaq unaymi, chayrayku pisillawan qallariy. Yuyaykuyniyku: **yaqa 70-manta 80 mL-kama 100 g-paq** qallariy (kilopaq 700-manta 800 mL-kama, utaq librapaq yaqa 11-manta 12 US fl oz-kama). Chay rakhupi challpuy, chaqruy, suysuy, chaymanta SG allin kanankama pisi pisimanta unuta yapay. 1 mL unu 1 g llasan, chayrayku balanzapi tupuyta atinki. Aswanta yapaspaqa, esmalteta tiyaykunanpaq saqiy, chaymanta hanaqpi ch'uya unuta esponjawan hurquy utaq hich'ay.
 
-### Llamk'anakuna unupas
+### Herramientakuna, unupas
 
-- **Hélice chaqruna.** Digitalfire allin kaqtaqa "mana kaqtinqa mana atikuqmi" nin. Chaqruna paletayuq cordonniyuq taladroqa baldepi llamk'ayta ruran. UT Austin esmalte chaqrusqa rikch'akuqtin pisimanta pisi 4 manta 5 minutokama purichin, hojatataq baldemanta karupi waqaychan, plástikota raspanmanmi.
-- **Licuadora.** "Huch'uy lotekunapaq ancha allintam llamk'an" (Digitalfire). Esmaltepaqlla waqaychay: ama hayk'aqpas cocinaman kutinanchu.
-- **Batidor otaq k'aspi.** Chaqruna mana kaqtin Zakin-pa akllasqan.
+- **Propeller chaqruq.** Digitalfire allin kaqta "mana kaqtinqa mana atikunchu" nin. Cableyuq taladro chaqruna paletayuq baldepi llamk'ayta ruran. UT Austinqa esmalte chaqrusqa hina rikhuriptin pisimanta pisi 4-manta 5 minutos-kama purichin, kuchuqnintataq baldemanta karunchan, plástikuta raspanmantaq.
+- **Licuadora.** "Huch'uy lotekunapaq ancha allinmi llamk'an" (Digitalfire). Esmaltepaqlla waqaychay: ama hayk'appas yanuna wasiman kutinanchu.
+- **Batiq utaq k'aspi.** Mana chaqruq kaptin Zakinpa akllasqan.
 
-Unupas hukniraqmi, Digitalfire-taq willan barbotina imayna kasqanta t'ikrasqanta. Derek Au ósmosis inversa unuta llamk'achin, pila unun sinchi (_hard_) kasqanrayku. Imatapas llamk'achispa, qillqay.
+Unupas hukniraqmi, Digitalfiretaq nin slurry (esmalte ñut'u unuwan) imayna kasqanta tikran. Derek Au reverse osmosis unuta llamk'achin pilanpa unun sinchi (agua dura) kaptin. Ima llamk'achisqaykitapas qillqay.
 
-### Siq'isqa
+### Sapa purichiy
 
-1. Respiradorniykita churakuy, makiykikuna yaykunanpaq kaqtintaq jebe guantekunata. Zakin pesay qallariymanta esmalte huq'u kanankama mascarillata churakun.
-2. Baldeman sapa 100 g ñut'upaq yaqa 70 manta 80 mL kama unuta tupuy.
-3. Pesasqa ñut'uta llamp'ullata, pisi altomanta yapay. UT Austin ñut'uta q'uñi unuman yapan; Zakin Au-wan unuta ñut'uman yapanku. Ñut'uta unuman yapanaykita yuyaychayku, chayqa aswan pisi ñut'u allpatam hatarichin, achka bentonitayuq rurana mana kaqtinqa: chaypaq ch'aki ñut'unkunata ñawpaqta kuyuchiy.
-4. **Huq'uchiy**: ñut'uta mana kuyuchispa challpukuchiy. Digitalfire yaqa 20 minutota suyan. Gomayuq otaq aglutinanteyuq ñut'ukunam tutantin sayananku.
-5. Ch'aki t'uqukuna rurukuna mana kanankama chaqruy.
+1. Respiradorniykita churakuy, makiyki ukhuman yaykunqa chayqa jebe guantekunatapas. Zakinqa tupuy qallariymanta esmalte hump'ikunankama máscarata churakun.
+2. Sapa 100 g ñut'upaq yaqa 70-manta 80 mL-kama unuta baldeman tupuy.
+3. Tupusqa ñut'uta llamp'ulla, uray altomanta yapay. UT Austin q'uñi unuman ñut'uta churan; Zakin Aupas ñut'uman unuta churanku. Ñut'uta unuman churaytam yuyaychayku, pisi ñut'u allpatam huqarin, achka bentoniteyuq ruranamanta hawa: ñawpaqta ch'aki ñut'unkunata kuska qaywiy.
+4. **Challpuy**: ñut'uta mana qaywispa hump'ikunanpaq saqiy. Digitalfire yaqa 20 minutos suyan. Gomayuq utaq hap'ichiqyuq ñut'ukunaqa tukuy tuta sayananmi.
+5. Mana ch'aki k'itikuna nitaq ruruchakuna kanankama chaqruy.
 6. Iskay kutita suysuy (uraypi qhaway).
-7. Tapay tutantintaq samachiy, chaymantataq yapamanta chaqruy, ukhunpitaq rumi capa kasqanta qhaway.
-8. Gravedad específicata tupuy, munasqaykiman chayanankamataq unuta pisi pisimanta yapay.
-9. Baldeta etiquetay, imata rurasqaykitataq qillqay.
-10. Huq'uwan pichay: pampata trapeay, tukuy hawakunatataq pichay, material mankakunapa hawantapas.
+7. Tapay, tukuy tuta samachiy, chaymanta yapamanta chaqruy, urayninpi sinchi p'atakuna kasqanta qhawaypas.
+8. SG-ta tupuy, maskasqaykiman chayanaykipaq pisi pisimanta unuta yapay. Esmalteykip kikin ch'aki SG-nta yachanaykipaq, tukusqa slurrytapas llasachiy (uraypi qhaway).
+9. Baldeman etiquetata churay, imatachus rurasqaykitapas qillqay.
+10. Hump'iwan pichay: pampata trapeay, sapa uyatataq pichay, material mankakunap hawantapas.
 
 ### Suysuy
 
-**Tamiz**qa marcopi malla. Esmalteta pincelwan chayninta tanqaspa chaqruy saqisqan rurukunatam p'akin, ruphachisqa manchakuna kanman ñut'ukunatataq hap'in. **Mesh** yupay aswan hatun kaqtin, malla aswan finom: 80 mesh yaqa 0.18 mm t'uquyuq, 100 mesh-taq yaqa 0.15 mm.
+**Tamiz** nisqaqa marcopi kaq llikam. Esmalteta brochawan chayninta tanqayqa chaqruy saqisqan ruruchakunata p'akin, ruphachisqa kaspa ch'iqchi kanman chay huch'uy kaqkunatataq hap'in. **Mesh** yupay aswan hatun kaptinqa, llika aswan ñut'um: 80 mesh yaqa 0.18 mm t'uqukunayuq, 100 meshtaq yaqa 0.15 mm.
 
-Pukyukunaqa huk huk meshkunatam yuyaychanku. Zakin iskay kutita 50 otaq 80 mesh-nta suysun. Derek Au aswan achka esmaltekunapaq 120 mesh-ta llamk'achin, aswanraq cobaltoyuq otaq fierroyuq kaqkunapaq: 80 mesh-nta kimsa kuti pasachispapas huk celadonpi fierro manchakuna qhiparqanmi, 120 mesh-nta huk kuti pasachiytaq allicharqan. Ceniza esmaltekunapaq raku materialniyuq hukkunapaqpas 60 manta 80 mesh kamatam waqaychan. Potterycrafts, UK-pi, 60 manta 80 mesh kamata yuyaychan. Mana manchakuspa akllanapaq:
+Qillqakunaqa hukniraq meshkunatam yuyaychanku. Zakinqa 50 utaq 80 meshwan iskay kutita suysun. Derek Auqa aswan achka esmaltekunapaq 120 meshta llamk'achin, aswantaqa cobaltoyuq utaq fierroyuq kaqkunapaq: 80 meshwan kimsa kuti pasachiyqa huk celadonpi fierro ch'iqchikunata saqirqanraq, 120 meshwan huk kuti pasachiytaq allicharqan. Uchpa esmaltekunapaq, rakhu materialniyuq hukkunapaqpas 60-manta 80 mesh-kama waqaychan. UKpi kaq Potterycrafts 60-manta 80 mesh-kama yuyaychan. Mana manchakuy akllana:
 
-Table: Mayqin tamiztam llamk'achinki
-Label: Tamizpa mesh-nin
+Table: Mayqin tamizta llamk'achina
+Label: Tamizpa meshnin
 
-| Esmalte                                            | Tamiz                           |
-| -------------------------------------------------- | ------------------------------- |
-| Aswan achka esmaltekuna                            | 80 mesh-nta iskay kuti pasachiy |
-| Cobalto otaq fierro hina llimp'iqniyuq esmaltekuna | 100 manta 120 mesh kama         |
-| Ceniza esmaltekuna, raku materialniyuq hukkunapas  | 60 manta 80 mesh kama           |
+| Esmalte                                            | Tamiz                          |
+| -------------------------------------------------- | ------------------------------ |
+| Aswan achka esmaltekuna                            | 80 meshwan iskay kuti pasachiy |
+| Cobalto utaq fierro hina llimp'iqniyuq esmaltekuna | 100-manta 120 mesh-kama        |
+| Uchpa esmaltekuna, rakhu materialniyuq hukkunapas  | 60-manta 80 mesh-kama          |
 
-## Gravedad específica {#specific-gravity}
+## SG (gravedad específica) {#specific-gravity}
 
-**Gravedad específica** (SG) barbotinaykipi hayk'a ñut'u kasqantam willasunki. Chayqa esmaltepa{{en: glaze}} huk volumenpa llasayninmi, kikin volumen unupa llasayninwan rakisqa. Unuqa 1.00, {{SG 1.45}}-pi esmaltetaq sapa 100 mL-pi 145 g llasan. Tupusqa SG-man chaqruspam sapa kuti kaqlla rakhu kayta, kaqlla capatapas tarinki. Mana unidadniyuqchu, chayrayku gramokunapipas onzakunapipas kaqllam.
+**SG** (gravedad específica) slurryykipi hayk'a ñut'u kasqanta willasunki. Huk hunt'a esmaltep llasayninmi, kaqlla hunt'a unup llasayninwan rakisqa. Unuqa 1.00-mi, {{SG 1.45}}-pi kaq esmaltetaq 100 mL-paq 145 g llasan. Tupusqa SG-kama chaqruyqa sapa kuti kaqlla rakhuta, kaqlla llut'anata tarinapaq ñanmi. Manam unidadniyuqchu, chayrayku gramopipas onzapipas kaqllam.
 
-### 100 mL pesaspa tupuy
+### 100 mL llasachispa tupuy
 
-1. Esmalteta kuyuchiy, ama imapas tiyakunanpaq.
-2. 100 mL **tupuna tubota** (suni, marcasqa) otaq 100 mL jeringata balanzaman churay, tarataq.
-3. Esmaltewan chiqan 100 mL-kama hunt'achiy, marcata ñawiykipa altonpi ñawinchaspa.
-4. Pesay gramokunatataq 100-wan rakiy: 145 g-qa SG 1.45.
+1. Esmalteta qaywiy, ama imapas tiyaykunanpaq.
+2. 100 mL **tupuna tubo** (marcasqa tubo, sayt'u tupuna) utaq 100 mL jeringata balanzaman churay, ch'usaqyachiytaq (tare).
+3. Chiqanta 100 mL-kama esmaltewan hunt'achiy, ñawi altopi marcata ñawinchaspa.
+4. Llasachiy, gramotataq 100-wan rakiy: 145 g-qa SG 1.45-mi.
 
-Digitalfire 500 g unupa altonpi vasota marcan, esmaltewan marcakama hunt'achin, llasaytataq 500-wan rakin; aswan hatun, aswan hunt'a tupunaqa aswan chiqanmi. **Hidrómetro**, esmaltepi maypichus tiyakusqanpi ñawinchasqa wamp'uq, utqayllam, ichaqa rakhu otaq gelasqa esmaltekunata pantaspa ñawinchanmanmi. UK hidrómetrokuna, Potclays-pa kaqnin hina, grados Baumé-pi (°Bé) ñawinchanku. Ñuqaykupa yupasqaykuman hina, SG = 145 ÷ (145 − °Bé), chayrayku 46 °Bé yaqa 1.46. UK-pa ñawpa librokunam **pint weight** nisqata qunku, imperial pinta esmaltepi onzakuna: 20-wan rakiy, chayrayku 29 oz yaqa SG 1.45 (kaypas ñuqaykupa yupasqayku).
+Digitalfirepas huk vasota 500 g unup patanpi marcan, marcakama esmaltewan hunt'achin, llasaytataq 500-wan rakin; aswan hatun aswan hunt'a tupunaqa aswan chiqanmi. **Hidrómetro**, esmaltepi maypi tiyasqanpi ñawinchakuq tuytuq, utqayllam, ichaqa rakhu utaq q'apasqa esmaltekunata panta ñawinchanman. UKpa hidrómetronkuna, Potclayspa hina, grados Baumépi (°Bé) ñawinchanku. Yupayniykupi, SG = 145 ÷ (145 − °Bé), chayrayku 46 °Bé yaqa 1.46-mi. UKpa ñawpa p'anqankunaqa **pint weight** nisqata qunku, huk pinta imperial esmaltepi kaq onzakuna: 20-wan rakiy, chayrayku 29 oz yaqa SG 1.45-mi (kaypas yupayniykum).
 
-### Imamantam churakunki
+### Imatataq maskana
 
-Pukyukunaqa mana kaqllatachu ninku, aswantaq pincelwan llimp'iypi rociaypi ima, chaypim UK rantikuq Potclays aswan hatun yupaykunata qun (kikinpa kaqninkunaqa "yanapanapaqlla"). Sapa yupayta qallariy hina qhaway. Digitalfire-pa hatun yuyaychayninqa kaymi: sapa esmaltepaq allin llamk'aq SG-ta gelaytawan tariy, chaymantataq kaqllata ruray qillqaytaq.
+Qillqakunaqa manam huk yuyayllachu, aswantaqa brochawan llut'aypi, phuspuypipas, chaypi UKpa qhatuqnin Potclays ancha aswan hatun yupaykunata qun (paypa yupayninkunaqa "pusanapaqllam"). Sapa yupayta qallarina hina hap'iy. Digitalfirep hatun yuyaychayninqa sapa esmaltepaq llamk'aq SG-ta q'apakaytapas tariy, chaymanta kutipay, qillqaytaq.
 
-Table: Gravedad específica munasqakuna, pukyukuna mana kaqllata nisqankupi
-Label: Gravedad específica munasqakuna
+Table: SG maskasqakuna, qillqakuna mana huk yuyaylla kaptin
+Label: SG maskasqakuna
 
-| Llamk'achiy | Digitalfire Glazy-pas                                                                                                                                        | Potclays (UK)                                   | Mana manchakuspa qallariy                                             |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------------------------- |
-| Challpuy    | {{SG 1.40}} (5 segundo challpuypaq) manta {{SG 1.50}} (1 segundo challpuypaq) kama; wasipi chaqrusqa gelasqa esmaltekunaqa {{SG 1.43–1.45}}-pi aswan allinmi | Ch'uya {{SG 1.46–1.48}}; llimp'iyuq {{SG 1.61}} | {{SG 1.45}}; sut'uqtinqa {{SG 1.43}}-kama llañuyachiy gelachiytaq     |
-| Pincelwan   | {{SG 1.25}} (llañu ch'uya) manta {{SG 1.55}} (yana detalle) kama                                                                                             | {{SG 1.71–1.81}}                                | Productota qatiy; CMC gomata otaq pincelpaq medio nisqata llamk'achiy |
-| Rociay      | Mana yupayniyuq; Hopper, Ceramic Arts Network-paq qillqaspa, aswan llañu nin, defloculantewan (barbotinata aswan purichiq yapa)                              | {{SG 1.71}}                                     | Mana confianapaq yupayniyuq; rociana cabinallapi rociay               |
+| Llamk'ay | Digitalfire, Glazy                                                                                                                                       | Potclays (UK)                                   | Mana manchakuy qallarina                                             |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
+| Challpuy | {{SG 1.40}} (5 segundos challpunapaq) {{SG 1.50}}-kama (1 segundo challpunapaq); wasipi chaqrusqa q'apasqa esmaltekunaqa {{SG 1.43–1.45}}-pi aswan allin | Ch'uya {{SG 1.46–1.48}}; llimp'iyuq {{SG 1.61}} | {{SG 1.45}}; sut'uptinqa {{SG 1.43}}-kama llamp'uyachiy q'apachiytaq |
+| Brocha   | {{SG 1.25}} (llamp'u ch'uya) {{SG 1.55}}-kama (yana sut'ichaykuna)                                                                                       | {{SG 1.71–1.81}}                                | Productota qatiy; CMC gum utaq brochapaq mediota llamk'achiy         |
+| Phuspuy  | Mana yupay kanchu; Hopper, Ceramic Arts Networkpaq qillqaspa, ancha aswan llamp'u nin, deflocculantwan (slurryta aswan puriqta ruraq yapana)             | {{SG 1.71}}                                     | Mana iñina yupay kanchu; spray boothllapi phuspuy                    |
 
-Challpuna esmalteta ñawiwan qhawanapaq, AMACO 5 segundo challpun, US dime qullqi hina rakhu capatataq maskan. Digitalfire 5 segundo challpusqa probetakunata ruphachin qhawanapaq.
+Challpuna esmalteta ñawiwan qhawanapaq, AMACO 5 segundos challpun, Estados Unidospa dime qullqinpa rakhun hina llut'anata maskan. Digitalfire 5 segundos challpusqa probetakunata ruphachin qhawanapaq.
 
-### Munasqa SG-paq unu: ñuqaykupa yupasqayku
+### Maskasqa SG-paq unu: yuyaykuyniyku
 
-Uraypi kaq tablaqa ñuqaykupa kikin yupasqaykum, mana pukyupa kaqninchu. Ñut'upa ñut'unkunaqa sapa cm³-pi 2.6 g densidadniyuq nispa yuyan, chayqa yuyaymi, mana tupusqachu. Mitu, unupi chulluq materialkuna, gelaypas chiqaq esmalte{{en: glaze}}ta t'ikranku, chayrayku qallarinapaq llamk'achiy, chaymantataq tupuy. Qhawanapaq, ñut'u unu kaqlla llasaypaq {{SG 1.44}}-ta willan, Digitalfire-pa tupusqan {{SG 1.46}}-man qayllam. Hinallataq rikuchin sapa 100 g-paq 70 manta 80 mL kama {{SG 1.50}} hawanpi qallarichisunki, munasqaykimanta aswan rakhu.
+Uray tablaqa kikiykup yupayniykum, manam qillqap yupayninchu. Ñut'up huch'uy rurunkuna sapa cm³-paq 2.6 g sinchi kayniyuq kasqanta yuyaykun, chaytaq yuyaykuymi, manam tupuychu. Mitu, unupi chulluq materialkuna, q'apakaypas chiqaq esmalteta tikranku, chayrayku qallarinapaq llamk'achiy, chaymanta tupuy. Qhawanapaq, kaqlla llasay ñut'upaq unupaqpas {{SG 1.44}}-ta ñawpaqmanta willan, Digitalfire tupusqan {{SG 1.46}}-man qayllam. Hinallataq rikuchin 100 g-paq 70-manta 80 mL-kama {{SG 1.50}}-manta hanaqpi qallarichisunki, munasqaykimanta aswan rakhu.
 
-Table: Munasqa gravedad específicapaq unu (ñuqaykupa yupasqayku)
-Label: Munasqa gravedad específicapaq unu
+Table: Maskasqa SG-paq unu (yuyaykuyniyku)
+Label: Maskasqa SG-paq unu
 
-| Munasqa     | Sapa 100 g ñut'upaq | Sapa kilogramopaq |    Sapa librapaq |
-| ----------- | ------------------: | ----------------: | ---------------: |
-| {{SG 1.40}} |         yaqa 115 mL |      yaqa 1150 mL | yaqa 18 US fl oz |
-| {{SG 1.45}} |          yaqa 98 mL |       yaqa 980 mL | yaqa 15 US fl oz |
-| {{SG 1.50}} |          yaqa 85 mL |       yaqa 850 mL | yaqa 13 US fl oz |
-| {{SG 1.60}} |          yaqa 64 mL |       yaqa 640 mL | yaqa 10 US fl oz |
+| Maskasqa    | 100 g ñut'upaq |      Kilopaq |         Librapaq |
+| ----------- | -------------: | -----------: | ---------------: |
+| {{SG 1.40}} |    yaqa 115 mL | yaqa 1150 mL | yaqa 18 US fl oz |
+| {{SG 1.45}} |     yaqa 98 mL |  yaqa 980 mL | yaqa 15 US fl oz |
+| {{SG 1.50}} |     yaqa 85 mL |  yaqa 850 mL | yaqa 13 US fl oz |
+| {{SG 1.60}} |     yaqa 64 mL |  yaqa 640 mL | yaqa 10 US fl oz |
 
-### Epsom kachi, CMC goma, bentonita ima
+### Chaqruchkaspa esmalteykip kikin ch'aki SG-nta tariy
 
-**Epsom kachi** (sal de Epsom) esmalteta sayasqa kashaqtin pisillata gelachin, kuyuchiqtintaq yapamanta purichin. Kaytam **floculay** ninku, kay hina kaq esmaltetaq **tixotrópico**: aswan kaqllata churakun, aswan pisita sut'un, aswan pisitataq tiyakun. Digitalfire SG allin kaqtin sapa galónpaq yaqa 2 g-manta qallariyta yuyaychan (yaqa sapa litropaq 0.5 g, ñuqaykupa t'ikrasqayku), sapa chaqrusqaykipitaq hayk'ata allichayta, mana ima ruranapas dosista churananchu kasqanrayku. Ñawpaqta pisi q'uñi unupi chulluchinaykita yuyaychayku. Digitalfire-pa huk ejemplonpi, {{SG 1.45}}-pi esmalte sut'urqan, chayrayku unu {{SG 1.43}}-kama uraykachirqan, Epsom kachitaq crema hina kanankama yapamanta gelacharqan, kaqllatataq churakurqan. Yaqa qhawana: kuyuchiy, sayachiy, qhawaytaq. Gelasqa esmalteqa yaqa 2 otaq 3 segundo purishanraq, chaymantataq sayan pisillatataq kutirin.
+Hanaqpi kaq 2.6-qa yuyaykuyllam. Kikin esmalteykip yupaynin, ch'aki ñut'unpa sinchi kaynin, chaqruchkaspa hap'iyta atisqayki kimsa yupaykunamanta yupakuyta atin. Chaywan, qhipaman SG-manta chay esmaltep mayqin baldenpipas hayk'a ñut'u kasqanta, qatiq lotepaq unutapas yupayta atinki. Yupayniykum, manam qillqapchu:
 
-**CMC goma** (carboximetilcelulosa) barbotinata aswan k'askaqta aswan pisi ch'akiqtapas ruran, mankaman k'askaq aswan sinchi capatataq saqin. Aswantaq pincelwan llimp'ina esmaltekunapaq achka fritayuq esmaltekunapaqmi. Digitalfire-pa ejemplonqa 3.75 g-ta 1000 g barbotinaman chaqrun, licuadorawantaq yaykunan. CMC-yuq esmalteqa Epsom kachiwan mana gelakunqachu, microbiokunataq gomata mikhusqankurayku, baldepi t'ikrakunmanmi asnayta qallarinmanmi.
+1. Lotepi ch'aki ñut'up llasayninta qillqay: ruranap llapan yupaynin.
+2. Manaraq qallarispa ch'usaq baldeta llasachiy, utaq llasayninta paypi qillqay.
+3. Sapa kuti hina chaqruy, suysuy, esmalteta SG-nkama apay. Llapanta tamiznintakama tanqay baldemantaq mayllay, ama ñut'u hawapi qhipanampaq.
+4. Hunt'a baldeta llasachiy, baldep llasayninta qichuy. Chaymi slurryp llasaynin.
+5. SG-ta tupuy.
 
-**Bentonita**, ancha ñut'u mitu, huk ñut'ukunata unupi warkusqata hap'iyta yanapan. Challpuna esmaltekunaqa sapa kuti 15 manta 25% kama mitu crudopim kaypaq hap'ipakunku. Pisi mituyuq ruranapaq, yaqa 1 manta 3% kama bentonita yanapan; Digitalfire nin 15% manta aswan mituyuq esmalteqa ch'aki esmaltepa llasayninpa 1% manta aswan bentonitata mana munananchu.
+Chaymanta:
 
-## Probetakuna mezcla lineal ima {#testing}
+- **Unu** = slurryp llasaynin − ñut'up llasaynin.
+- **Slurryp hunt'aynin** mL-pi = slurryp llasaynin gramopi ÷ SG.
+- **Ñut'up hunt'aynin** = slurryp hunt'aynin − unu (1 g unu 1 mL-mi).
+- **Ch'aki SG** = ñut'up llasaynin ÷ ñut'up hunt'aynin.
 
-### Huch'uymanta qallariy
+Ejemplopaq: 1000 g ñut'u {{SG 1.45}}-pi 1980 g slurryta ruran. Unuqa 980 g-mi, slurryqa 1980 ÷ 1.45 = yaqa 1366 mL, ñut'utaq 1366 − 980 = 386 mL-ta hap'in, ch'aki SG-taq 1000 ÷ 386 = yaqa 2.59.
 
-Derek Au kimsa patapi wicharin: 50 otaq 100 g prueba, allin kaqtin 1 manta 2 kg kama prueba, chaymantataq 5 manta 10 kg kama taller lote. Ñuqaykupa yupasqaykuman hina, {{SG 1.45}}-pi 100 g prueba yaqa 135 mL (yaqa 4½ US fl oz) barbotinata ruran, k'ullku vasopi wakin huch'uy probetakunata challpunapaq aypan.
+Tukukuypi llapan slurryta llasachiy, manam hich'achkaspa unutachu, wapsiyaq utaq ch'aqchukuq unu ama yupakunanpaq. Huch'uy pantaykunaqa kaypi wiñanku: 0.01-wan pantasqa SG ñawinchayqa kutichiyta yaqa 2-manta 4%-kama kuyuchin, llamp'u esmaltepaq aswan. 1 kg utaq aswan loteta, chiqan balanzata, SG-paqtaq hanaqpi kaq 500 g vaso ñanta llamk'achiy. Aswan achka sapa p'unchaw materialkunaqa yaqa 2.5, 2.9 chawpipim kanku, chayrayku chaymanta ancha karu yupay, mana achka zirconniyuq utaq titiyuq esmaltepi, tupuy pantaymi kanman. Yupayta ruranapi qillqay.
 
-### Qampa mituykipi pruebay
+### Epsom kachi, CMC gum, bentonitepas
 
-Esmalte{{en: glaze}}qa huk mitupi otaq huk hornopi ancha hukniraqtam rikch'akunman: Clay Art Center sapa yapamanta rurasqa esmaltenta tawa mitupi pruebarqan, cono 6-pi cono 10-pi ima. Potclays-pa qallariqkunapaq esmalte pruebay yachachiynin kaykunata yuyaychan:
+**Epsom kachi** esmalteta sayasqa kaptin pisita q'apachin, qaywisqa kaptintaq yapamanta purichin. Kaytam **flocculating** ninku, chayhina kaq esmaltetaq **thixotropic**-mi: aswan kaqllata llut'akun, pisita sut'un, pisitataq tiyaykun. Digitalfire SG allin kaptin galónpaq yaqa 2 g-wan qallariyta yuyaychan (yaqa litropaq 0.5 g, tikrasqayku), sapa chaqruspataq hayk'a kasqanta allichay, mana ima ruranapas chay yupayta churananchu kaptin. Ñawpaqta pisi q'uñi unupi chullunchinaykitam yuyaychayku. Huk Digitalfire ejemplopi, {{SG 1.45}}-pi kaq esmalte sut'urqan, chayrayku unu {{SG 1.43}}-kama urayachirqan, Epsom kachitaq crema hina yapamanta q'aparqan, kaqllatataq llut'akurqan. Utqaylla qhaway: qaywiy, sayachiy, qhawaytaq. Q'apasqa esmalteqa yaqa 2 utaq 3 segundos kuyurichkanraq, chaymanta sayan pisitataq kutirin.
 
-- chiqaqpi llamk'achinayki mitumanta 6 manta 10 kama **probetakuna** (esmalte pruebanapaq huch'uy kaqkuna), bizcochosqachus otaq ch'aki tulluchus kasqanta qillqaspa
-- sapa kuti huk t'ikraylla
-- huk kuti challpuy iskay kuti challpuypas, esmalteta llañuta rakhuta ima rikunapaq
-- tukuy probetakuna kikin horno hunt'api
-- manaraq ruphachispa sapa probetapi marca, sellowan, llaqllaywan otaq engobe lápizwan.
+**CMC gum** (carboxymethyl cellulose) slurryta aswan k'askaqta, ch'akinanpaq aswan unayta ruran, mankaman k'askaq aswan sinchi llut'anatataq saqin. Brocha esmaltekunapaq achka fritayuq esmaltekunapaqpas aswan necesitakun. Digitalfirep ejemplonqa 1000 g slurrypi 3.75 g-ta chaqrun, licuadorawantaq yaykunan. CMC-yuq esmalteqa manam Epsom kachiwan q'apanqachu, huch'uy kawsaqkunataq gomata mikhunku chayrayku baldepi tikrakunman asnaytataq qallarinman.
 
-Sayaq probetakunata yuyaychayku, pampa probetaqa esmalte hayk'a karuta purisqanta pakan, esmalte k'uchukunapi imayna p'akikusqanta rikuchinapaq texturayuq chumpiwan, q'ala chakiwanpas. Sapakamata huch'uy platopi otaq bizcocho p'akipi churay, otaq horno tablakunata amachaq llut'anawan (_kiln wash_) llusisqa horno tablapi, sut'uykunata hap'inapaq. **Testigo cono**ta, aypanan q'uñi chaskiqtin k'umuq huch'uy cerámica cono, probetakunapa qayllanpi churay imata chaskisqankuta rikuchinanpaq; [Huch'uy hornopi ruphachiy yachachiymi](/guides/firing) conokunata sut'inchan. Sapa probetaman huch'uy codigota quy, qillqasqaykikunapitaq ruranapa ladonpi qillqay. Willers, Ceramic Arts Network-paq qillqaspa, yupaykunata letrakunata ima llamk'achin, sistemataq cuadernopa ñawpaqninpi qillqan.
+**Bentonite**, ancha ñut'u mitu, huk huch'uy rurukunata tuytuchkananpaq yanapan. Challpuna esmaltekunaqa chaypaq 15-manta 25%-kama chawa mitupi takyanku. Pisi mituyuq ruranapaq, yaqa 1-manta 3%-kama bentonite yanapan; Digitalfire nin 15%-manta aswan mituyuq esmalteqa ch'aki esmaltep llasayninmanta 1%-manta aswan bentoniteta mana munananchu.
 
-### Mezcla lineal
+## Probetakuna, mezcla linealkunapas {#testing}
 
-**Mezcla lineal** nisqaqa huk chaqruymanta hukman kaqlla patakunapi puriq pruebakunapa siq'inmi: huk esmaltemanta iskay kaqman, otaq base esmaltemanta kikin esmalteman aswan llimp'iqwan. Derek Au, ejemplopaq, óxido de fierrota ch'uya basepi 1% patakunapi purichin. Ian Currie-wan tinkisqa volumen ruranaqa pachata waqaychan, iskay puntakunallata chaqrusqaykirayku:
+### Pisillawan qallariy
 
-1. Iskay punta esmaltekunata, A B-ta, kaqlla sayayniyuq lotekunata hina chaqruy, iskayninta suysuy.
-2. Aswan pisi volumenniyuq kaqman unuta yapay iskayninku chiqan kaqlla huq'u volumenniyuq kanankama.
-3. Iskayninta kuyuchiy, chaymantataq sapa chaqruyta jeringawan yupasqa vasonman hurquy.
-4. Sapa vasota kuyuchiy, huk probetatataq challpuy.
+Derek Au kimsa purichiypi wichan: 50 utaq 100 g prueba, allin kaptinqa 1-manta 2 kg-kama prueba, chaymanta 5-manta 10 kg-kama llamk'ana wasip loten. Yuyaykuyniykupi, {{SG 1.45}}-pi 100 g pruebaqa yaqa 135 mL (yaqa 4½ US fl oz) slurryta ruran, k'ullu vasopi wakin huch'uy probetakunata challpunapaq aypanmi.
 
-Ñuqaykupa rurasqa ejemploykupi, A ch'uya basepa 100 g-nmi, B-taq kikin, 4 g puka óxido de fierro yapasqawan (4% yapay). B-pa sapa mililitronpi A-pa sapa mililitronpi hina kaqlla base raki kan, fierronpas, chayrayku vasokunaqa mana fierroyuqmanta 4%-kama 1% patakunapi purinku. Sapa puntam mezclaman 100 mL-ta qun, ñuqaykupa yupasqaykuman hina 100 g lote chayta aypachin.
+### Kikin mituykipi pruebay
 
-Table: Fierropa pichqa pata mezcla lineal, sapa vasopi 40 mL (ñuqaykupa rurasqa ejemployku)
+Esmalteqa huk mitupi utaq huk hornopi ancha hukniraqmi rikhurinman: Clay Art Center sapa musuqmanta rurasqa esmaltenkunata tawa mitu rikchaqpi pruebarqan, cono 6-pi cono 10-pipas. Potclayspa qallariqkunapaq esmalte prueba pusaqninqa yuyaychan:
+
+- 6-manta 10-kama **probetakuna** (esmalte pruebanapaq huch'uy p'akikuna) chiqaqpi llamk'achinayki mitumanta, bizcochosqa utaq tukuy ch'akisqa kasqankuta qillqaspa
+- huk kutipi huk tikrayllata
+- huk kuti challpuy iskay kuti challpuypas, esmalteta llamp'utawan rakhutawan rikunapaq
+- sapa probeta kaqlla horno hunt'aypi
+- manaraq ruphachispa sapa probetapi marca, selloman, llaqllaywan utaq underglaze lapizwan. Ruphachisqa probetakunaqa kaqllam rikchakunku, manaraq ruphachispa rurasqa marcataq hornopi qhipan, chayrayku hayk'appas sapa probeta mayqin rurana kasqanta yachanki.
+
+Sayaq probetakunatam yuyaychayku, pampa probetaqa esmalte hayk'a karuta purisqanta pakan, esmalte patakunapi imayna p'akikusqanta rikuchinapaq rikchayniyuq chumpiwan, mana esmalteyuq chakiwan. Sapakama huch'uy platopi utaq bizcocho p'akipi, utaq kiln washyuq tablapi churay, sut'ukunata hap'inapaq. Probetakunap qayllanpi **cono testigo** (witness cone) churay, chaskisqankuta rikuchinanpaq, allin ruphayta chaskiptin k'umuq huch'uy mitu cono; [ruphachiy pusaqmi](/guides/firing) conokunata sut'inchan. Sapa probetaman pisi código quy, qillqasqaykikunapitaq ruranap ladonpi qillqay. Willers, Ceramic Arts Networkpaq qillqaspa, yupaykunata letrakunatapas llamk'achin, kikin sistematataq cuadernop ñawpaqninpi qillqan.
+
+### Mezcla linealkuna
+
+**Mezcla lineal** (line blend) huk chaqrumanta huk chaqrukama kaqllata puriq pruebakunap sutinmi: huk esmaltemanta iskay kaqkama, utaq teqsi esmaltemanta aswan llimp'iqniyuq kaqlla esmaltekama. Derek Au, ejemplopaq, ch'uya teqsipi óxido de hierrota 1% purichiykunapi wichachin. Ian Curriewan riqsisqa hunt'ay ñanqa pachata waqaychan, iskay puntakunallata chaqrunki chayrayku:
+
+1. Iskay punta esmaltekunata, A-ta B-tapas, kaqlla sayayniyuq lote hina chaqruy, iskayninkutataq suysuy.
+2. Pisi hunt'ayniyuq kaqman unuta yapay iskayninku chiqan kaqlla hump'i hunt'ayniyuq kanankama.
+3. Iskayninkuta qaywiy, chaymanta sapa chaqruta jeringawan kikin yupayniyuq vasonman chunqay.
+4. Sapa vasota qaywiy, huk probetatataq challpuy.
+
+Rurasqa ejemploykupi, A-qa 100 g ch'uya teqsim, B-taq kaqllam 4 g óxido de hierro rojo yapasqawan (4% yapay). B-p sapa mililitronqa A-p mililitron hina kaqlla teqsi t'aqatam hap'in, fierronwan kuska, chayrayku vasokunaqa mana fierromanta 4%-kama 1% purichiykunapi purinku. Sapa puntaqa blendman 100 mL-ta qun, chaytaq 100 g loteqa yuyaykuyniykupi aypan.
+
+Table: Pichqa purichiyniyuq fierro mezcla lineal, sapa vasopaq 40 mL (rurasqa ejemployku)
 Label: Mezcla lineal ejemplo
 
-| Vaso | Ch'uya base (A) | 4% fierroyuq base (B) | Óxido de fierro, basepa %-nin |
-| ---- | --------------: | --------------------: | ----------------------------: |
-| 1    |           40 mL |                  0 mL |                             0 |
-| 2    |           30 mL |                 10 mL |                             1 |
-| 3    |           20 mL |                 20 mL |                             2 |
-| 4    |           10 mL |                 30 mL |                             3 |
-| 5    |            0 mL |                 40 mL |                             4 |
+| Vaso | Ch'uya teqsi (A) | 4% fierroyuq teqsi (B) | Óxido de hierro, teqsimanta % |
+| ---- | ---------------: | ---------------------: | ----------------------------: |
+| 1    |            40 mL |                   0 mL |                             0 |
+| 2    |            30 mL |                  10 mL |                             1 |
+| 3    |            20 mL |                  20 mL |                             2 |
+| 4    |            10 mL |                  30 mL |                             3 |
+| 5    |             0 mL |                  40 mL |                             4 |
 
-Kay ruranaqa allin yupayta, kaqlla SG-yuq allin chaqrusqa puntakunata, chiqan balanzatapas munan. Derek Au llasaywanpas chaqrun, mana volumenwanchu. **Mezcla triaxial** kikintam kimsa puntakunawan ruran, kimsa k'uchupi churasqa.
+Kay ñanqa allin qhawasqa yupaytam, kaqlla SG-yuq allin chaqrusqa puntakunata, chiqan balanzatapas munan. Derek Aupas hunt'aypa rantinpi llasaywan chaqrun. **Triaxial blend** kimsa puntakunawan kaqllata ruran, kimsa k'uchupi churasqa.
 
 > [!NOTE]
-> Huk pata allin rikch'akuqtin, [rurana p'anqapi](/recipe) **Copiata hina waqaychay** kikin ruranata hina waqaychan, ñawpaq kaqtataq kasqanta hina saqin.
+> Huk purichiy allin hina rikhuriptin, [rurana p'anqapi](/recipe) **Copiata hina waqaychay** kikin rurana hina waqaychan, ñawpaq kaqtataq imayna kasqanpi saqin.
 
 ## Qillqakunata waqaychay {#records}
 
-Willers munasqata allinta nin: "tarisqayki ruraykunata yapamanta ruranaykipaq, otaq mana ruranaykipaq, aypanapaq willakuy". Manaraq qallarispa imatachus pruebanayki kasqanta qillqay, hornomanta hurqusqaykipitaq tarisqaykikunata. Potclays yapan churasqata, rakhu kayninta, mitu cuerpota, tukuy ruphachiytapas, rampakunantin, holdkunantin, chiriyachiyntinpas. **Rampa**qa q'uñichiypa otaq chiriyachiypa utqayninmi, huk horapi {{60 °C; 108 °F}} hina, **hold**-taq hornota huk q'uñiypi churasqa pachakama waqaychan. Número de lotekunata, llamk'achisqayki unuta, ima t'ikraytapas qillqay: Clay Art Center-pa feldespato t'ikrayninqa yaqa kuskan esmaltenkunata{{en: glaze}} allichayta munarqan.
+Willers munasqanta allinta nin: "tarisqayki ruraykunata kutipanaykipaq, utaq ama kanampaq, aypaq willakuy". Manaraq qallarispa imata pruebayta munasqaykita qillqay, hurquspataq ruraykunata. Potclaysqa llut'ay ñanta, rakhunta, mitu rikchaqta, llapan ruphachiytapas yapan, rampkunata, suyaykunata, chiriyachiytapas. **Ramp**-qa q'uñichiy utaq chiriyachiy utqaymi, hora sapa {{60 °C; 108 °F}} hina, **suyay**-taq (hold) hornota huk ruphaypi churasqa pachakama hap'in. Lote yupaykunata, llamk'achisqayki unuta, mayqin rantinchaytapas qillqay: Clay Art Centerpa feldespato tikraynin yaqa kuskan esmaltenkunata allichayta nirqan.
 
-Table: Sapa esmalte lotepaq imatam qillqanki (ñuqaykupa plantillayku)
-Label: Qillqana plantilla
+Table: Sapa esmalte lotepaq imatataq qillqana (plantillayku)
+Label: Qillqa plantilla
 
-| Raki      | Imatam qillqanki                                                                                                                                                                                                    |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Rurana    | Rurana versiónninwan; material marcakuna número de lotekunapas; ima t'ikraykunapas                                                                                                                                  |
-| Chaqruy   | P'unchaw; lotepa sayaynin; yapasqa unu, imayna kasqanpas (pila, ósmosis inversa otaq destilada); chaqrusqa qhipa SG tukukuy SG-pas; yapasqa Epsom kachi, CMC, bentonita; tamizpa mesh-nin hayk'a kuti pasachisqapas |
-| Churay    | Mitu cuerpo; bizcocho cono; challpuy, pincelwan llimp'iy otaq hich'ay; challpuy pacha otaq hayk'a capakuna; ch'aki rakhu kay                                                                                        |
-| Ruphachiy | Horno estantepi maypi kasqanpas; ruphachiy horario, rampakunanwan, holdkunanwan, chiriyachiyninwan; atmósfera (oxidación otaq reducción); cono testigo imata rikuchisqan, mana hornoman churasqallachu              |
-| Tarisqa   | Hawan llimp'inpas; ima phawaypas, cuarteadopas otaq huch'uy t'uqukunapas; ñawpaqninpa, qhipanpa, ladonpa fotonkuna; probetapa codigon                                                                               |
+| T'aqa     | Imatataq qillqana                                                                                                                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rurana    | Rurana, versiónninpas; material marcakuna lote yupaykunapas; mayqin rantinchaypas                                                                                                                                                                                   |
+| Chaqruy   | P'unchaw; lotep sayaynin; yapasqa unu, rikchayninpas (pilamanta, reverse osmosis utaq destilada); chaqrusqa qhipa SG, tukukuy SG-pas; tukusqa slurryp llasaynin, ch'aki SG-npaq; yapasqa Epsom kachi, CMC, bentonitepas; tamizpa meshnin, hayk'a kuti pasachisqapas |
+| Llut'ay   | Mitu rikchaq; bizcocho cono; challpuy, brocha utaq hich'ay; challpuy pacha utaq hayk'a llut'ana; ch'aki rakhu                                                                                                                                                       |
+| Ruphachiy | Horno, tablapi maypi kasqanpas; ruphachiy kamachiy, rampkunanwan, suyaykunanwan, chiriyachiyninwan; hornop wayran (oxidación utaq reducción); cono testigo rikuchisqan, manam hornota churasqallatachu                                                              |
+| Rurasqa   | Uya, llimp'ipas; mayqin puriypas, cuarteado utaq pinholes; ñawpaqmanta, qhipamanta, ladomanta fotokuna; probetap códigon                                                                                                                                            |
 
 > [!NOTE]
-> Glazecalc-pi, waqaychasqa [rurana](/recipe) kikin ruranata hap'in. [Ruphachiy qillqa](/firing) sapa ruphachiytam qillqan: hornota, p'unchawta, horakunata, q'uñiykunata, conokunata, qillqasqakunatapas. [Qillqasqakuna](/notes) tukuy hukkunata hap'in, hawapi kaq lote qillqa hina, sapa probeta imata rikuchisqantapas.
+> Glazecalcpi, waqaychasqa [rurana](/recipe) kikin ruranata hap'in. [Ruphachiy qillqa](/firing) sapa ruphachiyta qillqan: hornota, p'unchawta, pachakunata, ruphaykunata, conokunata, apuntekunatapas. [Apuntekuna](/notes) llapan hukkunata hap'in, hanaqpi kaq lote qillqata, sapa probeta rikuchisqantapas.
 
 ## Pukyukuna {#sources}
 

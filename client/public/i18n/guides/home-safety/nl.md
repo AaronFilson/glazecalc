@@ -83,6 +83,8 @@ Giet nooit glazuur, of water waarin u glazuurgereedschap hebt afgespoeld, door d
 
 We stellen een deksel op die emmer voor: het bezinksel bevat dezelfde metalen als het glazuur, en huisdieren drinken stilstaand water. De regels voor het afvoeren van afval verschillen van plaats tot plaats; kijk dus in het veiligheidsinformatieblad van elk product, en vraag het bij twijfel aan uw gemeente of uw waterbedrijf.
 
+Sommige ateliers stoken het gedroogde bezinksel voordat ze het weggooien. Ze doen het in een overbodige kom die mag worden opgeofferd: na de stook kan de kom niet meer worden gebruikt. Vul de kom maar voor een kwart, want het bezinksel schuimt en borrelt als het smelt, en dek hem af met een bord. Zet hem op een ovenplaat met ovenplaatbescherming of op een losse plaat, voor het geval hij overloopt. De stook maakt van het bezinksel glas, dat de metalen veel vaster vasthoudt dan los poeder, zodat het op een stortplaats veiliger is. Ga met het droge bezinksel om zoals met droog glazuur: met een stofmasker en zonder stof te maken.
+
 ## Stof in het atelier houden {#keeping-dust-in-the-studio}
 
 De gezondheidsdienst van Pennsylvania verwoordt het probleem duidelijk: “Met lood verontreinigd stof van uw hobby kan zich hechten aan uw kleding, schoenen, haar, huid en persoonlijke spullen, en gemakkelijk in uw auto en op oppervlakken in uw huis terechtkomen.” De CDC voegt eraan toe dat volwassenen “lood mee naar huis kunnen nemen en hun gezin aan lood kunnen blootstellen zonder het te weten”. De richtlijn uit Pennsylvania geeft de oplossing:

@@ -5,7 +5,7 @@ lead: Di che cosa è fatto uno smalto, come il forno lo trasforma in vetro, e la
 
 ## Che cos’è uno smalto {#what-a-glaze-is}
 
-Lo **smalto**{{en: glaze}} è un sottile strato di vetro fuso sulla superficie di un pezzo. Glazy, il database aperto di ricette di smalti, lo definisce «una formula di vetro calibrata per fondere e saldarsi all’argilla a determinate temperature». Si stende come uno strato di polvere e nel forno fonde in un rivestimento vetroso che sigilla l’argilla, così il pezzo ha meno probabilità di perdere liquidi, macchiarsi o consumarsi. Al culmine della cottura lo smalto fuso reagisce anche con l’argilla e spesso forma tra i due uno strato intermedio che ancora lo smalto al pezzo. Sulla terracotta e sulla terraglia{{en: earthenware}} lo smalto resta in superficie come uno strato distinto; sul gres{{en: stoneware}} si fonde con l’impasto{{en: body}}.
+Lo **smalto**{{en: glaze}} è un sottile strato di vetro fuso sulla superficie di un pezzo. Glazy, il database aperto di ricette di smalti, lo definisce «una formula di vetro calibrata per fondere e saldarsi all’argilla a determinate temperature». Si stende come uno strato di polvere e nel forno fonde in un rivestimento vetroso che sigilla l’argilla, così il pezzo ha meno probabilità di perdere liquidi, macchiarsi o consumarsi. Al culmine della cottura lo smalto fuso reagisce anche con l’argilla e spesso forma tra i due uno strato intermedio che ancora lo smalto al pezzo. Sulla terracotta e sulla terraglia{{en: earthenware}}, cotte a temperatura più bassa, questo strato è sottile e lo smalto resta per lo più in superficie. Sul gres{{en: stoneware}} e sulla porcellana, cotti a temperatura più alta, lo strato è più spesso e lo smalto aderisce all’argilla più saldamente. Lo smalto però resta vetro: non diventa parte dell’argilla.
 
 Una ricetta elenca materie prime come il feldspato{{en: feldspar}}, il carbonato di calcio{{en: whiting}} e il caolino{{en: kaolin}}. Nel forno una parte di ciascuna se ne va come gas (acqua o anidride carbonica) e il resto diventa **ossidi**: composti di un elemento con l’ossigeno, come la silice{{en: silica}} (SiO₂) o l’ossido di calcio (CaO). Il vetro cotto è fatto di ossidi, perciò chi fa ceramica descrive uno smalto in base a questi. Ogni ossido svolge uno di tre compiti.
 
@@ -13,7 +13,7 @@ Una ricetta elenca materie prime come il feldspato{{en: feldspar}}, il carbonato
 - I **fondenti**{{en: fluxes}} abbassano il punto di fusione fino a una temperatura che un forno può raggiungere. Gli **alcali**, indicati con **R₂O**, sono gli ossidi di sodio, potassio e litio (Na₂O, K₂O, Li₂O); agiscono da cono 06 in su, fino alla media e all’alta temperatura. Gli **alcalino-terrosi**, indicati con **RO**, sono gli ossidi di calcio, magnesio, bario e stronzio (CaO, MgO, BaO, SrO), a cui si affianca l’ossido di zinco (ZnO); agiscono meglio da cono 5 a cono 10. La R sta per un metallo qualsiasi della famiglia.
 - L’**allumina** (Al₂O₃) è lo **stabilizzante**{{en: stabilizer}}. Rende più viscoso lo smalto fuso, così resta sulle pareti verticali, e aggiunge durezza e resistenza. L’avvertenza di Glazy: con troppo poca allumina «lo smalto può colare; troppa può irrigidire il fuso fino a renderlo opaco». L’allumina viene soprattutto dall’argilla e dal feldspato.
 
-Il **boro** (B₂O₃) confonde i confini. I chimici lo classificano come vetrificante, ma alle temperature di laboratorio agisce da fondente, e chi fa ceramica lo tratta come tale. È fondamentale a cono 5–6 e non serve in alta temperatura. (I coni{{en: cones}}, il modo in cui chi fa ceramica indica una cottura, sono spiegati più avanti.)
+Il **boro** (B₂O₃) confonde i confini. I chimici lo classificano come vetrificante, ma alle temperature di laboratorio agisce da fondente, e chi fa ceramica lo tratta come tale. È un fondente principale alla bassa e alla media temperatura: più bassa è la cottura, più boro serve a uno smalto. A cono 10 di solito non serve. (I coni{{en: cones}}, il modo in cui chi fa ceramica indica una cottura, sono spiegati più avanti.)
 
 > [!NOTE]
 > Un modo per ricordarlo: la silice è il vetro, i fondenti la fanno fondere a una temperatura che il forno può raggiungere, e l’allumina la rende più densa perché resti dove la si è stesa.
@@ -24,9 +24,9 @@ Il **boro** (B₂O₃) confonde i confini. I chimici lo classificano come vetrif
 
 L’**impasto**{{en: clay body}} è l’argilla di cui è fatto un pezzo. Ce ne sono tre tipi principali.
 
-- **Terracotta** e **terraglia**{{en: earthenware}}: impasti per bassa temperatura, circa cono{{en: cone}} 06–02, che restano porosi. Spesso rossi o color camoscio, hanno bisogno di uno smalto{{en: glaze}} per tenere l’acqua.
+- **Terracotta** e **terraglia**{{en: earthenware}}: impasti per bassa temperatura, circa cono{{en: cone}} 06–02, porosi ai coni bassi e più densi quanto più alta è la cottura. Spesso rossi o color camoscio, hanno bisogno di uno smalto{{en: glaze}} per tenere l’acqua.
 - **Gres**{{en: stoneware}}: un impasto per media e alta temperatura, circa cono 5–10, che diventa vetrificato o quasi.
-- **Porcellana**: un impasto bianco per alta temperatura, ricco di caolino{{en: kaolin}}, spesso traslucido.
+- **Porcellana**: un impasto bianco ricco di caolino{{en: kaolin}}, spesso traslucido. La maggior parte delle porcellane è per alta temperatura, ma esistono anche porcellane per cono 6.
 
 **Vetrificato** significa vetroso e non poroso; la **vetrificazione** è il processo per cui un impasto lo diventa in cottura. Nel Regno Unito chi fa ceramica spesso traccia invece il confine in base alla temperatura: il gres si cuoce sopra {{2192 °F; 1200 °C}}, terracotta e terraglia al di sotto. La media temperatura, cono 5–6, cade proprio a cavallo di quel confine.
 
@@ -55,9 +55,9 @@ La **cottura dello smalto**{{en: glaze firing}} (nel Regno Unito si può dire _g
 
 ## Coni e lavoro termico {#cones}
 
-Chi fa ceramica indica una cottura con un **cono**{{en: cone}}: una sottile piramide di ceramica che si piega quando ha ricevuto una determinata quantità di calore. Orton, che li produce, lo spiega così: «I coni non misurano solo la temperatura. Misurano il lavoro termico, l’effetto combinato del tempo e della temperatura».
+Chi fa ceramica indica una cottura con un **cono**{{en: cone}}: una sottile piramide di ceramica che si piega quando ha ricevuto una determinata quantità di calore. Orton, che li produce, definisce i coni indicatori di tempo e temperatura (lavoro termico): mostrano l’effetto combinato del tempo e della temperatura, non la sola temperatura.
 
-Il **lavoro termico**{{en: heatwork}} è la ragione: smalto{{en: glaze}}, argilla e cono rispondono non solo a quanto sono caldi, ma anche a quanto a lungo lo restano. Una cottura lenta piega un cono a una temperatura più bassa, una veloce a una più alta. Nella tabella di Orton il cono 6 si piega a {{2165 °F; 1185 °C}} quando la cottura termina salendo di {{27 °F; 15 °C}} all’ora, a {{2232 °F; 1222 °C}} a {{108 °F; 60 °C}} all’ora e a {{2269 °F; 1243 °C}} a {{270 °F; 150 °C}} all’ora, velocità misurata sugli ultimi {{180 °F; 100 °C}}. Un cono è considerato piegato quando la sua punta si è abbassata di 90°, la posizione che Orton chiama «a ore 5».
+Il **lavoro termico**{{en: heatwork}} è la ragione: smalto{{en: glaze}}, argilla e cono rispondono non solo a quanto sono caldi, ma anche a quanto a lungo lo restano. Una cottura lenta piega un cono a una temperatura più bassa, una veloce a una più alta. Nella tabella di Orton il cono 6 si piega a {{2165 °F; 1185 °C}} quando la cottura termina salendo di {{27 °F; 15 °C}} all’ora, a {{2232 °F; 1222 °C}} a {{108 °F; 60 °C}} all’ora e a {{2269 °F; 1243 °C}} a {{270 °F; 150 °C}} all’ora, velocità misurata sugli ultimi {{180 °F; 100 °C}}. Un cono è arrivato quando la sua punta si è piegata di 90°. Chi fa ceramica chiama spesso questa posizione «a ore 5».
 
 I numeri dei coni vanno da 022 a 42. Uno zero iniziale contraddistingue la serie delle temperature più basse, in cui un numero più grande corrisponde a una temperatura più bassa: il cono 06 è più basso del cono 04, e il cono 01 più basso del cono 1.
 
@@ -73,7 +73,7 @@ Label: Intervalli di cottura
 > [!NOTE]
 > Indicare e programmare le cotture per cono, e considerare le temperature come approssimative. Un **cono testimone**{{en: witness cone}} su una piastra tra i pezzi, o una **terna di coni**{{en: cone pack}} (cono guida, cono di cottura e cono di guardia), mostra il lavoro termico che i pezzi hanno ricevuto davvero.
 
-Le temperature pubblicate variano. Glazy indica per l’alta temperatura, cono 9–11, circa {{2336–2390 °F; 1280–1310 °C}}, il che corrisponde alla colonna veloce di Orton, e Digitalfire riporta che la maggior parte dei forni raggiunge il cono 6 a circa {{2200 °F; 1204 °C}}. Il nostro consiglio: usare i valori di Orton per la velocità media, come fa questa guida, programmare per cono e lasciare che sia un cono testimone a decidere.
+Le temperature pubblicate variano. Glazy indica per l’alta temperatura, cono 9–11, circa {{2336–2390 °F; 1280–1310 °C}}, il che corrisponde alla colonna veloce di Orton, e Digitalfire indica per il cono 6 circa {{2200 °F; 1204 °C}}. Il nostro consiglio: usare i valori di Orton per la velocità media, come fa questa guida, programmare per cono e lasciare che sia un cono testimone a decidere.
 
 Fuori dal Nord America i fornitori indicano spesso i °C anziché un cono. Hermann Seger mise a punto il cono moderno, usato per la prima volta a Berlino nel 1886, e il Regno Unito ha avuto i propri coni Staffordshire; non si deve dare per scontato che i loro numeri corrispondano a quelli di Orton, e non abbiamo trovato una tabella per convertirli. [Cuocere in un forno semplice](/guides/firing) tratta i coni più nel dettaglio.
 
@@ -106,7 +106,7 @@ Label: Rapporto silice/allumina
 |      5–7 | Tipico di molti smalti stabili per gres                   |
 |      3–5 | Può essere opaco o sottocotto                             |
 
-Un rapporto di 5–7 da solo non prevede né lucido né opaco: i fondenti, il boro e il cono spostano tutti il confine. Glazy indica come equilibrio dei fondenti tipico degli smalti stabili 0,2 R₂O e 0,8 RO, fino a 0,3 R₂O e 0,7 RO. Più alcali rendono lo smalto fuso più fluido e ne aumentano la dilatazione{{en: expansion}}, e quindi il rischio di cavillatura{{en: crazing}}.
+Glazy non dice per quale cono valgono questi valori. Leggerli come una guida approssimativa per gli smalti per gres, circa cono 6–10. Digitalfire dice che un rapporto superiore a circa 8 è probabilmente lucido, ma uno smalto con boro può essere lucido anche a 8 o meno, e uno per bassa temperatura persino a 6. Un rapporto di 5–7 da solo non prevede né lucido né opaco: i fondenti, il boro e il cono spostano tutti il confine. Glazy indica come equilibrio dei fondenti tipico degli smalti stabili 0,2 R₂O e 0,8 RO, fino a 0,3 R₂O e 0,7 RO. Più alcali rendono lo smalto fuso più fluido e ne aumentano la dilatazione{{en: expansion}}, e quindi il rischio di cavillatura{{en: crazing}}.
 
 ### Perdita al fuoco
 
@@ -117,15 +117,29 @@ Label: Perdita al fuoco
 
 | Materiale                                    | P.F. tipica                                                                                       |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Carbonato di calcio{{en: whiting}}, dolomite | Oltre il 40%, soprattutto anidride carbonica: 100 g di carbonato di calcio ne liberano circa 45 g |
+| Carbonato di calcio{{en: whiting}}, dolomite | Oltre il 40%, soprattutto anidride carbonica: 100 g di carbonato di calcio ne liberano circa 44 g |
 | Carbonato di litio                           | Circa il 60%                                                                                      |
 | Carbonato di bario, Gerstley Borate          | Oltre il 20%                                                                                      |
-| Caolino{{en: kaolin}}                        | Circa il 12%, soprattutto acqua legata nei suoi cristalli                                         |
+| Caolino{{en: kaolin}}                        | Circa il 12–14%, soprattutto acqua legata nei suoi cristalli                                      |
 | Feldspati                                    | Meno dell’1%                                                                                      |
 
-Il gas che si libera dopo che lo smalto ha cominciato a fondere deve attraversarlo gorgogliando e causa, nelle parole di Digitalfire, «bollicine, bolle, forellini, ritiro dello smalto». Il talco continua a liberare gas fino a circa {{1650 °F; 899 °C}}. Aiutano le fritte{{en: frits}}, i materiali **calcinati** (riscaldati in precedenza per eliminarne i gas) e le modifiche alla cottura.
+Il gas che si libera dopo che lo smalto ha cominciato a fondere deve attraversarlo gorgogliando e causa, nelle parole di Digitalfire, «bollicine, bolle, forellini, ritiro dello smalto». In una prova di Digitalfire il talco ha continuato a liberare gas fino a circa {{1650 °F; 899 °C}}. Aiutano le fritte{{en: frits}}, i materiali **calcinati** (riscaldati in precedenza per eliminarne i gas) e le modifiche alla cottura.
 
 I libri più vecchi fanno questi calcoli a mano, con il **peso molecolare** (il peso di una mole di un materiale o di un ossido) e il **peso equivalente** (il peso di un materiale che fornisce una mole di un ossido). Secondo i nostri calcoli, circa 100 g di carbonato di calcio forniscono una mole, cioè 56 g, di ossido di calcio. Un calcolatore li gestisce entrambi.
+
+## I limiti e il diagramma di Stull {#stull-chart}
+
+Il **diagramma di Stull** è una mappa degli smalti. Ha due assi, entrambi dalla formula di Seger: la silice (SiO₂) lungo la base e l’allumina (Al₂O₃) lungo il lato. Ogni smalto è un punto. La mappa è divisa in regioni, come opaco, lucido, sottocotto e cavillato. La [pagina della ricetta](/recipe) di Glazecalc vi disegna il proprio smalto.
+
+::stull-chart
+
+R. T. Stull ricavò il diagramma da prove che pubblicò nel 1912. Le cuoceva a circa cono 11, e tutte le prove avevano gli stessi fondenti: 0,3 di potassio (K₂O) e 0,7 di ossido di calcio (CaO). Cambiavano solo la silice e l’allumina. Quindi il diagramma vale per quegli smalti a quella temperatura.
+
+Il proprio smalto è probabilmente diverso. Il boro, altri fondenti e i coni più bassi spostano tutti le regioni. Nel 2025 un articolo di Ceramics Monthly ha provato uno smalto per cono 6 con fondenti borici e molto ferro. Il diagramma lo collocava tra i cavillati, gli opachi e i sottocotti. In realtà era completamente fuso, satinato e non cavillato. Gli autori dicono che gli smalti con borati non si collocano bene sul diagramma. Quindi usare le regioni come una guida, non come una previsione.
+
+La regione **cavillato** è dove cavillavano le prove di Stull, sulla sua argilla. Non dice come il proprio smalto si accorda con il proprio impasto. La cavillatura dipende dalla dilatazione termica sia dello smalto sia dell’argilla. Il valore di dilatazione di Glazecalc aiuta a confrontare gli smalti, e a decidere è una prova reale: la prova in acqua e ghiaccio in [Accordo smalto-impasto e difetti](/guides/glazing-basics#fit-and-defects).
+
+Le **formule limite**{{en: limit formulas}} sono uno strumento diverso per la stessa domanda: intervalli di silice, allumina e fondenti per gli smalti stabili a un dato cono. [Sicurezza alimentare](/guides/glazing-basics#food-safety) le spiega, e spiega perché da sole non provano nulla.
 
 ## Fritte e materie prime {#materials}
 
@@ -133,7 +147,7 @@ I libri più vecchi fanno questi calcoli a mano, con il **peso molecolare** (il 
 
 Una **fritta**{{en: frit}} è vetro prodotto in fabbrica: minerali fusi, raffreddati di colpo in acqua e macinati. La frittatura rende insolubili materiali solubili come il borace, blocca ossidi tossici come il piombo e il bario in un vetro stabile, dà un materiale più costante dei minerali grezzi ed elimina i gas, così gli smalti{{en: glazes}} con fritte sono «molto più privi di difetti» (Digitalfire). Le fritte fondono anche presto: una fritta sodica è attiva a cono 06, mentre il feldspato{{en: feldspar}} «a cono 6 sta appena cominciando ad ammorbidirsi». Costano di più, hanno bisogno di argilla per restare in sospensione (l’esempio di Digitalfire è 85% di fritta con 15% di argilla) e sono «teoricamente insolubili, ma in pratica non lo sono».
 
-Le fritte nordamericane si indicano con produttore e numero: la fritta Ferro 3134 (Ferro oggi si chiama Vibrantz) compare in circa il 22% delle ricette pubbliche di Glazy. Le ricette britanniche nominano più spesso fritte generiche, come la fritta boracica standard.
+Le fritte nordamericane si indicano con produttore e numero: la fritta Ferro 3134 (Ferro oggi si chiama Vibrantz) è tra le fritte più usate in Nord America. Le ricette britanniche nominano più spesso fritte generiche, come la fritta boracica standard.
 
 ### Le materie prime comuni
 
@@ -143,7 +157,7 @@ Label: Materiali comuni per smalti
 | Materiale (altri nomi)                                                                                                       | Fornisce               | Note                                                                                                                                                                                                                             |
 | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Silice{{en: silica}} (selce{{en: flint}}, quarzo)                                                                            | SiO₂                   | Negli smalti usare quella a 325 mesh, una macinazione molto fine                                                                                                                                                                 |
-| Caolino{{en: kaolin}} (Regno Unito: china clay; Australia: Eckalite)                                                         | Al₂O₃, SiO₂            | La principale fonte di allumina; tiene anche lo smalto in sospensione                                                                                                                                                            |
+| Caolino{{en: kaolin}} (Regno Unito: china clay)                                                                              | Al₂O₃, SiO₂            | La principale fonte di allumina; aiuta anche a evitare che lo smalto si depositi                                                                                                                                                 |
 | Ball clay                                                                                                                    | Al₂O₃, SiO₂            | Più plastica del caolino, con più ferro e sostanze organiche                                                                                                                                                                     |
 | Feldspato potassico{{en: potash feldspar}}, feldspato sodico{{en: soda feldspar}}, nefelina sienite{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Fondenti{{en: fluxes}} con la propria allumina e silice. La nefelina sienite è un fondente forte per bassa e media temperatura. In una vecchia ricetta, «feldspato» senza altre indicazioni può indicare uno qualsiasi di questi |
 | Carbonato di calcio{{en: whiting}}                                                                                           | CaO                    | Il principale fondente di calcio; libera anidride carbonica                                                                                                                                                                      |
@@ -154,39 +168,39 @@ Label: Materiali comuni per smalti
 | Carbonato di litio                                                                                                           | Li₂O                   | Fondente a bassa dilatazione; costoso, quindi usato con parsimonia                                                                                                                                                               |
 | Carbonato di stronzio                                                                                                        | SrO                    | Il sostituto meno tossico del bario                                                                                                                                                                                              |
 | Carbonato di bario                                                                                                           | BaO                    | Tossico allo stato grezzo; gli smalti ad alto contenuto di bario possono essere soggetti a cessione{{en: leach}}                                                                                                                 |
-| Bentonite                                                                                                                    | Sospensione            | Un’argilla finissima, di solito all’1–3%, per evitare che lo smalto si depositi                                                                                                                                                  |
+| Bentonite                                                                                                                    | Sospensione            | Un’argilla finissima, di solito all’1–2%, per evitare che lo smalto si depositi. Oltre il 3% può far crepare lo smalto mentre asciuga                                                                                            |
 
 > [!WARNING]
 > I materiali per smalti sono polveri fini. La polvere di silice danneggia i polmoni senza dare sintomi all’inizio, e alcuni materiali, come il carbonato di bario e il carbonato di litio, sono velenosi se ingeriti. Maneggiare le polveri con delicatezza, pulire a umido e indossare una maschera filtrante ben aderente quando si lavora a secco. [Miscelazione sicura e ventilazione](/guides/safe-mixing) e [Non avvelenare la propria famiglia](/guides/home-safety) spiegano come.
 
 ### Nomi nei diversi paesi
 
-- Il **caolino** nel Regno Unito si chiama **china clay**; i fornitori australiani lo vendono come Eckalite.
+- Il **caolino** nel Regno Unito si chiama **china clay**. In Australia, Eckalite è una marca di caolino.
 - **Flint** (selce) è un vecchio nome britannico della silice. I fornitori britannici vendono ancora la **selce calcinata** (_calcined flint_) come prodotto a sé, quindi «flint» in una ricetta britannica indica probabilmente la selce calcinata, e in una americana probabilmente il quarzo macinato. Entrambi sono venduti come fonti di silice; controllare l’analisi.
 - **China stone** e **Cornish stone** (_Cornwall stone_) sono lo stesso materiale, la pietra di Cornovaglia, affine al feldspato.
-- **Whiting** è il carbonato di calcio; i fornitori tedeschi lo chiamano Kreide (creta, la roccia calcarea).
+- **Whiting** è il carbonato di calcio: creta o calcare macinati.
 
 > [!NOTE]
 > Giudicare un materiale dagli ossidi che fornisce, non dal nome. Glazecalc funziona così: nella [pagina Materiali](/material) si può inserire l’analisi del proprio fornitore, e **Prova i materiali attuali e confronta**, **Suggerisci le quantità e confronta** e **Adatta ai materiali che ho** cercano tutti la corrispondenza degli ossidi dopo cottura, non dei nomi.
 
-Anche i materiali cambiano. Il feldspato Custer è uscito di produzione nel 2023. La miniera originale del Gerstley Borate ha chiuso intorno al 1999–2000; Laguna vende ancora un prodotto con quel nome, e il Gillespie Borate è il principale sostituto. Le fonti non concordano sul fatto che il Gillespie sostituisca il Gerstley Borate libbra per libbra (il produttore e Potclays dicono di sì, Digitalfire e altri di no), quindi confrontare i due in Glazecalc, poi provare una piccola pesata.
+Anche i materiali cambiano. Lo US Geological Survey riferisce che le miniere e l’impianto che producevano il feldspato Custer, nel South Dakota, hanno sospeso l’attività nel novembre 2023. La miniera originale del Gerstley Borate ha chiuso intorno al 1999–2000; Laguna vende ancora un prodotto con quel nome, e il Gillespie Borate è il principale sostituto. Le fonti non concordano sul fatto che il Gillespie sostituisca il Gerstley Borate libbra per libbra (il produttore e Potclays dicono di sì, Digitalfire e altri di no), quindi confrontare i due in Glazecalc, poi provare una piccola pesata.
 
 ## Coloranti e opacizzanti {#color}
 
-Un **colorante**{{en: colorant}} è un ossido o un carbonato metallico che colora uno smalto{{en: glaze}}; un **pigmento**{{en: stain}} è un colorante prodotto in fabbrica, più stabile e costante degli ossidi grezzi. I coloranti sono di solito meno del 5% della base, molti meno dell’1%, e un carbonato ha circa metà della forza dell’ossido corrispondente.
+Un **colorante**{{en: colorant}} è un ossido o un carbonato metallico che colora uno smalto{{en: glaze}}; un **pigmento**{{en: stain}} è un colorante prodotto in fabbrica, più stabile e costante degli ossidi grezzi. I coloranti sono di solito meno del 5% della base, molti meno dell’1%, e un carbonato è più debole dell’ossido corrispondente, perché una parte se ne va come gas. Secondo i nostri calcoli, 100 g di carbonato di cobalto danno circa 63 g di ossido di cobalto, e 100 g del carbonato di rame che si compra per la ceramica (carbonato basico di rame) circa 72 g di ossido di rame. Quindi usare circa 1,4–1,6 volte tanto carbonato quanto ossido.
 
 Table: Coloranti comuni, in percentuale sulla base
 Label: Coloranti comuni
 
-| Colorante            | Quantità iniziale abituale                         | Colori e note                                                                                                                                                                                            |
-| -------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cobalto              | 0,1–2% (le fonti non concordano)                   | Blu, e molto forte; tende al viola quando la base contiene magnesio                                                                                                                                      |
-| Ferro                | 0,5–10%                                            | Marroni, nocciola e rossi in ossidazione{{en: oxidation}}; in riduzione{{en: reduction}}, ½–2% dà il celadon e 5–6% il tenmoku. È un fondente{{en: flux}}, quindi in grande quantità fa colare lo smalto |
-| Rame                 | 1–3%                                               | Verde o turchese in ossidazione, rosso in riduzione. Può rendere uno smalto soggetto a cessione{{en: leaching}}                                                                                          |
-| Cromo                | Da meno dello 0,5% al 2% (le fonti non concordano) | Verde; marrone se la base contiene zinco, rosa con lo stagno                                                                                                                                             |
-| Manganese            | 2–10%                                              | Marroni e viola                                                                                                                                                                                          |
-| Rutilo               | Circa 2–5%                                         | Colore screziato e variegato; ruvido o opaco oltre il 5% circa                                                                                                                                           |
-| Pigmenti commerciali | 2–12%                                              | 2–4% per tinte tenui, 5–8% per tinte medie, 10–12% per colori intensi                                                                                                                                    |
+| Colorante            | Quantità iniziale abituale                         | Colori e note                                                                                                                                                                                             |
+| -------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cobalto              | 0,1–2% (le fonti non concordano)                   | Blu, e molto forte; tende al viola quando la base contiene magnesio                                                                                                                                       |
+| Ferro                | 0,5–10%                                            | Marroni, nocciola e rossi in ossidazione{{en: oxidation}}; in riduzione{{en: reduction}}, ½–2% dà il celadon e 5–10% il tenmoku. È un fondente{{en: flux}}, quindi in grande quantità fa colare lo smalto |
+| Rame                 | 1–3%                                               | Verde o turchese in ossidazione, rosso in riduzione. Può rendere uno smalto soggetto a cessione{{en: leaching}}                                                                                           |
+| Cromo                | Da meno dello 0,5% al 2% (le fonti non concordano) | Verde; marrone se la base contiene zinco, rosa con lo stagno                                                                                                                                              |
+| Manganese            | 2–10%                                              | Marroni e viola                                                                                                                                                                                           |
+| Rutilo               | Circa 2–5%                                         | Colore screziato e variegato; ruvido o opaco oltre il 5% circa                                                                                                                                            |
+| Pigmenti commerciali | 2–12%                                              | 2–4% per tinte tenui, 5–8% per tinte medie, 10–12% per colori intensi                                                                                                                                     |
 
 Le quantità di cobalto e di cromo sono davvero controverse. Glazy dice che lo 0,1% di cobalto basta per un blu; il Glendale Community College indica ½–2% o ½–3% a seconda dell’atmosfera; Birdie Boone, su Pottery Making Illustrated, dice il 3% o meno. Per il cromo, Boone dice meno dello 0,5% e Glendale 2–3%. La strada sicura è partire da quantità basse e fare una **progressione lineare**{{en: line blend}}: una fila di provini{{en: test tiles}} in cui un ingrediente aumenta a passi, da poco a molto.
 
@@ -198,11 +212,11 @@ Un **opacizzante** rende uno smalto **coprente**, cioè nasconde l’argilla; un
 
 Table: Opacizzanti
 
-| Opacizzante                                                 | Quantità abituale             | Note                                                                                                 |
-| ----------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Silicato di zirconio (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% per una copertura piena | La scelta più economica; le marche sono lo stesso materiale macinato a granulometrie diverse         |
-| Ossido di stagno                                            | Circa 5–7% (nostra stima)     | Costoso; opacizza poco in riduzione                                                                  |
-| Biossido di titanio                                         | Oltre il 2%                   | Copertura setosa e traslucida; dal 10% in su, una superficie opaca e materica con cristalli visibili |
+| Opacizzante                                       | Quantità abituale              | Note                                                                                                                                            |
+| ------------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silicato di zirconio (Zircopax, Superpax, Ultrox) | 10–15% per una copertura piena | La scelta più economica; le marche sono silicato di zirconio macinato a granulometrie diverse, e i tipi più fini sono più forti                 |
+| Ossido di stagno                                  | Circa 5–7% (nostra stima)      | Costoso; meno efficace in alta temperatura, e Digitalfire riferisce che il 4% non ha dato copertura in una cristallina per cono 10 in riduzione |
+| Biossido di titanio                               | Circa 5% (nostra stima)        | Copertura setosa e traslucida; circa il 5% può rendere variabile la superficie, e molto di più dà spesso una superficie opaca con cristalli     |
 
 ## Accordo smalto-impasto e difetti {#fit-and-defects}
 
@@ -230,13 +244,13 @@ Cambiare una cosa alla volta e conservare i provini{{en: test tiles}}.
 Table: Difetti comuni degli smalti, le loro cause abituali e i primi rimedi
 Label: Difetti comuni degli smalti
 
-| Difetto                             | Aspetto                                                     | Cause comuni                                                                                                                                          | Primi rimedi                                                                                                         |
-| ----------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Ritiro dello smalto{{en: crawling}} | Lo smalto si ritira in gocce, lasciando l’argilla scoperta  | Biscotto{{en: bisque}} polveroso o unto; uno strato spesso e ricco di argilla che si è crepato asciugando; zinco, silicato di zirconio o stagno       | Pulire il biscotto; stendere uno strato più sottile; calcinare parte dell’argilla; aggiungere un legante come la CMC |
-| Puntinatura{{en: pinholing}}        | Piccoli fori o avvallamenti                                 | Gas dall’impasto o dallo smalto i cui fori non si sono richiusi; uno smalto sottocotto o viscoso                                                      | Fare una sosta alla temperatura massima per circa mezz’ora; stendere uno strato più sottile; meno zinco o rutilo     |
-| Bollitura                           | Crateri dai bordi taglienti                                 | Di solito una cottura troppo alta; strati molto spessi; fondenti volatili oltre circa {{2192 °F; 1200 °C}}                                            | Cuocere più basso; stendere uno strato più sottile. I bordi taglienti rendono la ceramica d’uso non sicura           |
-| Colatura                            | Lo smalto cola sulla piastra                                | Troppo poca allumina; strato troppo spesso, come dove i versamenti si sovrappongono; molto ferro                                                      | Stendere uno strato più sottile; aggiungere allumina; tenere lo smalto ben sopra il piede                            |
-| Avventatura{{en: dunting}}          | Crepe nel pezzo dovute al raffreddamento o al riscaldamento | Raffreddamento rapido attraverso l’inversione del quarzo{{en: quartz inversion}}, {{1063 °F; 573 °C}}; pareti di spessore irregolare; cattivo accordo | Attraversare lentamente i {{1063 °F; 573 °C}}, in salita e in discesa; pareti di spessore uniforme                   |
+| Difetto                             | Aspetto                                                     | Cause comuni                                                                                                                                                                                                       | Primi rimedi                                                                                                         |
+| ----------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| Ritiro dello smalto{{en: crawling}} | Lo smalto si ritira in gocce, lasciando l’argilla scoperta  | Biscotto{{en: bisque}} polveroso o unto; uno strato spesso e ricco di argilla che si è crepato asciugando; zinco, silicato di zirconio o stagno                                                                    | Pulire il biscotto; stendere uno strato più sottile; calcinare parte dell’argilla; aggiungere un legante come la CMC |
+| Puntinatura{{en: pinholing}}        | Piccoli fori o avvallamenti                                 | Gas dall’impasto o dallo smalto i cui fori non si sono richiusi; uno smalto sottocotto o viscoso                                                                                                                   | Fare una sosta alla temperatura massima per circa mezz’ora; stendere uno strato più sottile; meno zinco o rutilo     |
+| Bollitura                           | Crateri dai bordi taglienti                                 | Di solito una cottura troppo alta; strati molto spessi; fondenti volatili oltre circa {{2192 °F; 1200 °C}}                                                                                                         | Cuocere più basso; stendere uno strato più sottile. I bordi taglienti rendono la ceramica d’uso non sicura           |
+| Colatura                            | Lo smalto cola sulla piastra                                | Troppo poca allumina; strato troppo spesso, come dove i versamenti si sovrappongono; molto ferro                                                                                                                   | Stendere uno strato più sottile; aggiungere allumina; tenere lo smalto ben sopra il piede                            |
+| Avventatura{{en: dunting}}          | Crepe nel pezzo dovute al raffreddamento o al riscaldamento | Raffreddamento rapido attraverso l’inversione del quarzo{{en: quartz inversion}}, {{1063 °F; 573 °C}}, o l’inversione della cristobalite, circa {{428 °F; 220 °C}}; pareti di spessore irregolare; cattivo accordo | Cuocere lentamente attraverso entrambe, in salita e in discesa; pareti di spessore uniforme                          |
 
 ## Sicurezza alimentare {#food-safety}
 
@@ -254,11 +268,11 @@ I limiti di legge cambiano da un paese all’altro. La tabella mostra quelli del
 
 ::food-limits
 
-Negli Stati Uniti i pezzi di ceramica decorativa che sembrano utilizzabili per il cibo sono trattati come articoli per alimenti, a meno che non portino un’etichetta adesiva e una dicitura permanente impressa a stampo o cotta sul fondo, come «Not for Food Use. May Poison Food» (non per uso alimentare; può avvelenare gli alimenti), oppure abbiano un foro che attraversa la superficie destinata al cibo. L’UE fissa i limiti di piombo e cadmio nella direttiva 84/500/CEE, e il Regno Unito mantiene gli stessi valori nella propria legislazione. Dal 29 maggio 2026 i Paesi Bassi, il Belgio e il Lussemburgo ammettono circa da 130 a 150 volte meno piombo e circa 15 volte meno cadmio. L’Australia fissa limiti per la ceramica importata; non abbiamo trovato limiti ufficiali per la ceramica prodotta in Australia o in Nuova Zelanda.
+Negli Stati Uniti i pezzi di ceramica decorativa che sembrano utilizzabili per il cibo sono trattati come articoli per alimenti, a meno che non portino un’etichetta adesiva e una dicitura permanente impressa a stampo o cotta sul fondo, come «Not for Food Use. May Poison Food» (non per uso alimentare; può avvelenare gli alimenti), oppure abbiano un foro che attraversa la superficie destinata al cibo. L’UE fissa i limiti di piombo e cadmio per la ceramica nella direttiva 84/500/CEE, e il Regno Unito mantiene gli stessi valori nella propria legislazione. Una decisione del Benelux del 2024 fissa limiti molto più bassi per la ceramica. I Paesi Bassi li applicano dal 29 maggio 2026: circa da 130 a 150 volte meno piombo e circa da 14 a 18 volte meno cadmio rispetto ai valori dell’UE. I pezzi conformi alle vecchie norme e messi in vendita per la prima volta prima del 1° dicembre 2026 possono essere venduti fino a esaurimento delle scorte. Secondo i laboratori di prova, il Lussemburgo applica gli stessi limiti dal 29 maggio 2026 e il Belgio li ha adottati con un regio decreto del 19 luglio 2026; questi testi non li abbiamo letti di persona. L’Australia fissa limiti per la ceramica importata; non abbiamo trovato limiti ufficiali per la ceramica prodotta in Australia o in Nuova Zelanda.
 
 ### Le prove
 
-La FDA dice che i kit a tampone per uso domestico possono rivelare il piombo cedibile, ma Ceramics New Zealand avverte che le penne test non sono pensate per la ceramica e danno falsi positivi. Considerare un risultato positivo come un motivo per smettere di usare il pezzo, e un risultato negativo come qualcosa che non prova nulla. Una prova di cessione in laboratorio sul pezzo cotto (ASTM C738 negli Stati Uniti; EN 1388 o ISO 6486 in Europa) è la vera risposta.
+La FDA dice che i kit a tampone per uso domestico possono rivelare il piombo cedibile, ma diversi studi mostrano che questi kit sbagliano spesso sui pezzi smaltati: possono indicare piombo che non c’è e possono non rilevare il piombo che viene ceduto. Considerare un risultato positivo come un motivo per smettere di usare il pezzo, e un risultato negativo come qualcosa che non prova nulla. Una prova di cessione in laboratorio sul pezzo cotto (ASTM C738 negli Stati Uniti; EN 1388 o ISO 6486 in Europa) è la vera risposta.
 
 > [!WARNING]
 > «Idoneo al contatto con gli alimenti» significa che questo smalto, su questa argilla, cotto a questo cono in questo forno e applicato in questo modo, cede meno dei limiti di legge. Glazecalc può aiutare a costruire uno smalto stabile, e **Sostituisci il piombo** può ricostruire senza piombo una vecchia ricetta al piombo, ma nessun calcolatore può certificare un pezzo. Solo una prova sul pezzo cotto può farlo.
@@ -267,7 +281,7 @@ La FDA dice che i kit a tampone per uso domestico possono rivelare il piombo ced
 
 ### Peso specifico
 
-La polvere di smalto mescolata con acqua è una **sospensione**{{en: slurry}}. Il suo **peso specifico**{{en: specific gravity (SG)}} è il suo peso rispetto a quello dello stesso volume d’acqua, che ha peso specifico 1,0: più è alto, più polvere c’è nel secchio. I vecchi libri britannici parlano di **peso a pinta** (_pint weight_). Glazy definisce 1,4–1,5 «un buon punto di partenza per la maggior parte degli smalti». Per misurarlo, pesare esattamente 100 mL di sospensione (Glazy suggerisce una siringa) e dividere per 100: 145 g significano peso specifico 1,45. I densimetri non sono affidabili negli smalti gelificati, e l’acqua evapora, quindi ricontrollare prima di smaltare.
+La polvere di smalto mescolata con acqua è una **sospensione**{{en: slurry}}. Il suo **peso specifico**{{en: specific gravity (SG)}} è il suo peso rispetto a quello dello stesso volume d’acqua, che ha peso specifico 1,0: più è alto, più polvere c’è nel secchio. Glazy definisce 1,4–1,5 «un buon punto di partenza per la maggior parte degli smalti». Per misurarlo, pesare esattamente 100 mL di sospensione (Glazy suggerisce una siringa) e dividere per 100: 145 g significano peso specifico 1,45. I densimetri non sono affidabili negli smalti gelificati, e l’acqua evapora, quindi ricontrollare prima di smaltare.
 
 I valori consigliati variano secondo la fonte. Digitalfire indica 1,40–1,50 per gli smalti per immersione e 1,25–1,55 per gli smalti a pennello commerciali, mentre Potclays dà 1,71–1,81 per il pennello e 1,71 per la spruzzatura. Il nostro consiglio: smaltare per immersione a circa 1,45 con lo smalto leggermente gelificato, seguire l’etichetta per uno smalto a pennello e annotare ciò che funziona.
 
@@ -291,7 +305,7 @@ Con uno strato troppo spesso lo smalto può ritirarsi{{en: crawl}}, fare bolle o
 
 I gas nel forno, la sua **atmosfera**, cambiano il risultato degli smalti. **Ossidazione**{{en: oxidation}} significa molto ossigeno. «I forni elettrici sono sinonimo di cottura in ossidazione», dice Digitalfire, e gli smalti in ossidazione sono di solito più brillanti di quelli in riduzione, soprattutto alle temperature più basse. In ossidazione il rame dà verdi e turchesi, e il ferro marroni, nocciola e rossi. Un forno elettrico poco aerato e pieno di pezzi che liberano gas può avere un’atmosfera più neutra del previsto; un aspiratore fumi collegato direttamente al forno aiuta.
 
-La **riduzione**{{en: reduction}} limita deliberatamente l’ossigeno, di solito in un forno a gas, a legna o specializzato. Il rame vira al rosso e il ferro diventa un fondente più forte e dà il **celadon** (da verde-azzurro a verde-grigio, con circa ½–2% di ferro) e il **tenmoku** (o temmoku: bruno-nero, circa 5–6% di ferro). Glazy dice che i celadon e i rossi di rame «dipendono dalla riduzione». Cambia anche l’argilla: in un confronto di Digitalfire, un impasto da gres è risultato grigio in riduzione e giallastro in ossidazione. Il carburo di silicio in uno smalto può creare piccole zone di riduzione anche in un forno elettrico. Per la riduzione da cono 010 a cono 3, Orton consiglia i suoi coni senza ferro.
+La **riduzione**{{en: reduction}} limita deliberatamente l’ossigeno, di solito in un forno a gas, a legna o specializzato. Il rame vira al rosso e il ferro diventa un fondente più forte e dà il **celadon** (da verde-azzurro a verde-grigio, con circa ½–2% di ferro) e il **tenmoku** (o temmoku: bruno-nero, circa 5–10% di ferro). Glazy dice che i celadon e i rossi di rame «dipendono dalla riduzione». Cambia anche l’argilla: in un confronto di Digitalfire, un impasto da gres è risultato grigio in riduzione e giallastro in ossidazione. Il carburo di silicio in uno smalto può creare piccole zone di riduzione anche in un forno elettrico. Per la riduzione da cono 010 a cono 3, Orton consiglia i suoi coni senza ferro.
 
 > [!NOTE]
 > Aspettarsi che una ricetta scritta per un forno a gas in riduzione dia un risultato diverso in un forno elettrico: un celadon o un rosso di rame che dipende dalla riduzione non avrà lo stesso aspetto in ossidazione. Controllare per quale atmosfera è stata fatta una ricetta e annotare la propria, con il cono, nelle note della ricetta in Glazecalc.
@@ -319,7 +333,7 @@ Barbottina e ingobbio (slip and engobe)
 : Argilla in acqua; l’ingobbio è un rivestimento simile alla barbottina con più materiali non argillosi.
 
 Bentonite
-: Un’argilla finissima aggiunta all’1–3% per evitare che lo smalto si depositi.
+: Un’argilla finissima aggiunta all’1–2% circa per evitare che lo smalto si depositi. Oltre il 3% può far crepare lo smalto mentre asciuga.
 
 Biscottatura (bisque; Regno Unito: biscuit)
 : La prima cottura, a temperatura più bassa, di solito a cono 08–04 (più spesso 06–04); lascia i pezzi resistenti ma porosi.
@@ -328,10 +342,10 @@ Boro (boron, B₂O₃)
 : Formalmente un vetrificante, ma usato come fondente; essenziale da cono 06 a cono 6.
 
 Caolino (kaolin; Regno Unito: china clay)
-: Un’argilla bianca pura che fornisce allumina e silice; tiene lo smalto in sospensione. In Australia: Eckalite.
+: Un’argilla bianca pura che fornisce allumina e silice; aiuta a evitare che lo smalto si depositi. In Australia, Eckalite è una delle marche.
 
 Carbonato di calcio (whiting)
-: Il principale fondente di calcio; perde oltre il 40% del suo peso in cottura. In tedesco: Kreide.
+: Il principale fondente di calcio; in cottura perde circa il 44% del suo peso, come anidride carbonica.
 
 Cavillatura (crazing)
 : Crepe sottili in uno smalto che si contrae più del suo impasto; craquelé quando sono volute.
@@ -409,7 +423,7 @@ Perdita al fuoco, P.F. (loss on ignition, LOI)
 : Il peso perso in cottura come acqua, anidride carbonica, sostanze organiche o zolfo.
 
 Peso specifico (specific gravity, SG)
-: Il peso di una sospensione rispetto allo stesso volume d’acqua. Nei vecchi testi britannici: peso a pinta (pint weight).
+: Il peso di una sospensione rispetto allo stesso volume d’acqua.
 
 Porcellana (porcelain)
 : Un impasto bianco per alta temperatura, ricco di caolino, spesso traslucido.
@@ -451,7 +465,7 @@ Stabilizzante (stabilizer)
 : Un ossido, soprattutto l’allumina, che rende più viscoso lo smalto fuso e aggiunge resistenza.
 
 Terracotta e terraglia (earthenware)
-: Impasti per bassa temperatura (circa cono 06–02) che restano porosi.
+: Impasti per bassa temperatura (circa cono 06–02), porosi ai coni bassi e più densi quanto più alta è la cottura.
 
 Tissotropia (thixotropy)
 : La proprietà di una sospensione di scorrere quando la si mescola e di rapprendersi in un gel morbido quando è ferma.
@@ -483,6 +497,14 @@ Vetrificazione (vitrification)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, tramite Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,21 @@ Vetrificazione (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

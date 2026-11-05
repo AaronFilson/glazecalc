@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Lær med John Britts gratis glasurkursus",
       "text": "Hans gratis videokursus på YouTube, enhed for enhed, med vores vejledninger at læse og øvelser at prøve i Glazecalc. På engelsk."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Undervisning i glasurberegning",
+      "text": "6 lektioner til et hold eller en studiegruppe, fra trekantsforsøg til Seger-formlen regnet begge veje, med arbejdsark til udskrift."
     }
   },
   "more": "Flere vejledninger",
@@ -243,5 +247,20 @@
     "loading": "Indlæser biblioteket…",
     "failed": "Biblioteket kunne ikke indlæses. Prøv igen senere.",
     "choosePrompt": "Vælg land eller region for at se, hvad der sælges der."
+  },
+  "stull": {
+    "title": "Stull-diagram: silica mod aluminiumoxid i Seger-formlen",
+    "regions": {
+      "unfused": "usmeltet",
+      "matte": "mat",
+      "semi-matte": "halvmat",
+      "bright": "blank",
+      "underfired": "underbrændt",
+      "crazed": "krakeleret"
+    },
+    "keyBright": "Prikket linje: hvor Stulls glasurer var mest blanke.",
+    "keyCrazed": "Skravering: hvor de krakelerede.",
+    "note": "En vejledning, ikke en forudsigelse. R. T. Stull (Transactions of the American Ceramic Society, 1912) brændte ved ca. kegle 11 med flusmidlerne fastlagt til 0,3 K₂O og 0,7 CaO; andre flusmidler og brændinger flytter områderne, og en glasur, der kun er mat, fordi den er underbrændt, kan stadig ligge i det blanke område. Områderne er tegnet som hos Glazy.",
+    "inGuide": "Silica (SiO₂) vandret, fra ca. 1 til 7, og aluminiumoxid (Al₂O₃) lodret, fra 0 til 1, begge fra Seger-formlen. Kiler breder sig ud fra venstre: ikke smeltet øverst til venstre, så mat, så halvmat. Den uskraverede del til højre for dem er blank, og den stiplede linje i den er der, hvor Stulls glasurer var mest blanke. Underbrændt ligger nederst til højre, med lidt aluminiumoxid og meget silica. Skraveringen, lavt i diagrammet og langs dets venstre side, er der, hvor hans prøver krakelerede."
   }
 }

@@ -1,0 +1,63 @@
+{
+  "notTranslated": "A kò tíì túmọ̀ apá kan ojú-ìwé yìí, nítorí náà ó hàn ní èdè Gẹ̀ẹ́sì.",
+  "index": {
+    "crumb": "Àwọn glaze olókìkí",
+    "title": "Àwọn glaze olókìkí",
+    "lead": "Àwọn glaze tí a mọ̀ kárí ayé, ọ̀kọ̀ọ̀kan láti inú ohun èlò ìbílẹ̀ àdúgbò rẹ̀, pẹ̀lú UMF rẹ̀ àti ẹ̀yà tí a fi ohun èlò tí wọ́n ń tà níbi tí ẹ wà ṣe.",
+    "listHeading": "Àwọn glaze náà",
+    "more": "Àwọn glaze mìíràn ń bọ̀: a ó fi ọ̀kọ̀ọ̀kan kún un nígbà tí ìlànà rẹ̀ àti ohun èlò rẹ̀ bá dúró lórí ó kéré tán orísun mẹ́ta tí a ti kà."
+  },
+  "glaze": {
+    "lead": "Glaze olókìkí kan ({native}): ìlànà ìbílẹ̀ rẹ̀ tàbí ìtúpalẹ̀, ìsun rẹ̀, àti ẹ̀yà tí a fi ohun èlò tí wọ́n ń tà níbi tí ẹ wà ṣe.",
+    "aboutHeading": "Nípa {name}",
+    "nativeName": "Orúkọ ìbílẹ̀",
+    "origin": "Níbo",
+    "period": "Ìgbà wo",
+    "firing": "Ìsun",
+    "cone": "cone {cone}",
+    "historyOnly": "Ìtàn nìkan: a fi òjé (lead, Pb) ṣe glaze yìí. A fi ìtúpalẹ̀ rẹ̀ hàn gẹ́gẹ́ bí ìtàn, kì í ṣe gẹ́gẹ́ bí ìlànà láti pò. Ẹ̀yà tó wà nísàlẹ̀ jẹ́ glaze mìíràn, láìní òjé.",
+    "recipeHeading": "Ìlànà ìbílẹ̀",
+    "material": "Ohun èlò",
+    "amount": "Iye",
+    "unityHeading": "UMF (unity molecular formula)",
+    "analysisHeading": "Ìtúpalẹ̀ ìtàn",
+    "oxide": "Oxide",
+    "percent": "% ìwúwo",
+    "useHeading": "Ẹ dán an wò",
+    "open": "Ṣí ìlànà yìí",
+    "openLeadFree": "Ṣí ẹ̀yà tí kò ní òjé",
+    "leadFreeTitle": "Irú {name}, láìní òjé",
+    "allLink": "Gbogbo àwọn glaze olókìkí",
+    "safetyHeading": "Ààbò",
+    "safeMixing": "Pípò láìléwu àti afẹ́fẹ́ tó mọ́",
+    "firingGuide": "Sísun nínú kiln tí kò díjú",
+    "makingGuide": "Bí a ṣe ń ṣe glaze",
+    "sourcesHeading": "Àwọn orísun",
+    "link": "Ṣí",
+    "opened": "a kà á ní {date}"
+  },
+  "local": {
+    "heading": "Pẹ̀lú ohun èlò àdúgbò yín",
+    "leadFreeHeading": "Ẹ̀yà tí kò ní òjé",
+    "intro": "UMF ìlànà ìbílẹ̀ náà, tí a fi ohun èlò déédéé tí wọ́n ń tà níbi tí ẹ ti ń rà ṣe. Ẹ yan ibi tí ẹ ti ń rà kí ẹ lè rí i.",
+    "region": "Ibi tí ẹ ti ń ra ohun èlò",
+    "proposal": "Ohun èlò àbá náà fúnra rẹ̀",
+    "pick": "Ẹ yan…",
+    "untested": "A ti ṣírò rẹ̀, a kò tíì sun ún fún ìdánwò.",
+    "testFirst": "Ẹ sun táílì ìdánwò kí ẹ tó lò ó lórí ohun èlò èyíkéyìí, kí ẹ sì dán ojú tí oúnjẹ ń kàn wò fún ìṣàn irin jáde (leaching).",
+    "untestedNote": "A ti ṣírò rẹ̀, a kò tíì sun ún fún ìdánwò: ẹ sun táílì ìdánwò kí ẹ tó lò ó.",
+    "close": "Ó sún mọ́ formula tí a ń wá gan-an.",
+    "fair": "Ó sún mọ́ formula tí a ń wá dé ìwọ̀n kan.",
+    "poor": "Àwọn ohun èlò yìí kò lè sún mọ́ formula tí a ń wá.",
+    "none": "Àwọn ohun èlò tí wọ́n ń tà níbẹ̀ kò lè ṣe é.",
+    "choose": "Ẹ yan ibi tí ẹ ti ń ra ohun èlò kí ẹ lè rí i tí a fi àwọn tí wọ́n ń tà níbẹ̀ ṣe é."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduction",
+    "neutral": "àárín",
+    "wood": "ìsun pẹ̀lú igi",
+    "salt": "ìsun pẹ̀lú iyọ̀",
+    "soda": "ìsun pẹ̀lú soda"
+  }
+}

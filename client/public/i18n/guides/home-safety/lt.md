@@ -61,27 +61,29 @@ Pagrindinis švino pavojus kitoks: ne vienas šaukštas, o nedideli dulkių kiek
 
 ## Žaliavų laikymas namuose {#storing-materials}
 
-Jokia oficiali institucija nenustato glazūrų žaliavų{{en: glaze materials}} laikymo namuose taisyklių, tačiau sveikatos ir saugos interneto puslapiai sutaria: dirbkite atskiroje vietoje, atokiau nuo vaikų. Pensilvanijos valstijos sveikatos departamentas, rašydamas apie pomėgius, kuriems naudojamas švinas, pataria: „Savo pomėgiui naudokite tam skirtą darbo vietą ar garažą ir laikykite vaikus atokiau nuo šios vietos.“
+Jokia oficiali institucija nenustato taisyklių, kaip namuose laikyti glazūrų žaliavas, tačiau sveikatos ir saugos puslapiai sutaria: darbui skirkite atskirą vietą, toliau nuo vaikų. Pensilvanijos sveikatos departamentas, rašydamas apie pomėgius, kuriuose naudojamas švinas, pataria: „Savo pomėgiui naudokite tam skirtą darbo vietą ar garažą ir neleiskite vaikų į šią vietą.“
 
 ### Laikymo kontrolinis sąrašas
 
 Tai bendrosios apsinuodijimų prevencijos taisyklės, pritaikytos glazūroms. Jų nenustato joks keramikos standartas, bet siūlome laikytis visų:
 
-- Sausas žaliavas laikykite užrakintas: rakinamoje spintelėje arba rakinamame kambaryje, garaže ar pašiūrėje. Aukšta lentyna padeda, bet vaikai laipioja. Jei iš pradžių galite užrakinti tik kelis dalykus, pradėkite nuo tirpių žaliavų ir dažiklių{{en: colorants}}.
-- Žaliavas laikykite originaliuose maišuose ar kibirėliuose. Jei kurią nors perpilate į kitą indą, užrašykite ant jo pavadinimą tiksliai taip, kaip parašyta ant maišo.
-- Niekada nelaikykite glazūrų žaliavų maisto ar gėrimų induose (jogurto indeliuose, stiklainiuose, buteliuose), net ir pažymėtuose. Vaikas žino, kas būna jogurto indelyje.
-- Dirbtuvės įrankius (semtuvėlius, šaukštus, plaktuvėlius, sietus, svarstykles) laikykite dirbtuvėje. Niekada nenaudokite virtuvės įrankių glazūrai, o glazūros įrankių – maistui.
-- Skystas glazūras laikykite pažymėtuose kibiruose su uždėtais dangčiais.
-- Kiekvienos žaliavos saugos duomenų lapą laikykite kartu su ja – popierinį arba telefone.
-- Virtuvėje nelaikykite nieko iš dirbtuvės: jokių maišų, kibirų, įrankių ar bandinių{{en: test tiles}}.
+- Sausas žaliavas laikykite užrakintas: spintelėje arba rakinamame kambaryje, garaže ar pašiūrėje. Aukšta lentyna padeda, bet vaikai laipioja. Jei iš pradžių galite užrakinti tik kelis dalykus, pradėkite nuo tirpių žaliavų ir dažiklių.
+- Žaliavas laikykite originaliuose maišuose ar induose. Jei kurią nors perkeliate į kitą talpą, paženklinkite ją pavadinimu, tiksliai tokiu, koks parašytas ant maišo.
+- Niekada nenaudokite maisto ar gėrimų talpų (jogurto indelių, stiklainių, butelių) glazūrų žaliavoms, net paženklintų. Vaikas žino, kas būna jogurto indelyje.
+- Dirbtuvės įrankius (semtuvėlius, šaukštus, plaktuvus, sietus, svarstykles) laikykite dirbtuvėje. Niekada nenaudokite virtuvės įrankių glazūrai ar glazūros įrankių maistui.
+- Šlapias glazūras laikykite paženklintuose kibiruose su uždėtais dangčiais.
+- Kiekvienos žaliavos saugos duomenų lapą (angl. SDS) laikykite kartu su ja, popieriuje arba telefone.
+- Virtuvėje nelaikykite nieko iš dirbtuvės: jokių maišų, kibirų, įrankių ar bandinių.
 
-Daugiau apie žaliavų pirkimą ir laikymą skaitykite vadove [Kaip pasigaminti glazūrą](/guides/making-a-glaze).
+Išsamiau apie žaliavų pirkimą ir laikymą skaitykite vadove [Kaip pasigaminti glazūrą](/guides/making-a-glaze).
 
-### Glazūros atliekos ir plovimo vanduo
+### Glazūros atliekos ir skalavimo vanduo
 
-Niekada nepilkite glazūros ar vandens, kuriame plovėte glazūros įrankius, į kriauklę ar ant žemės sode. Jungtinės Karalystės amatų taryba (Crafts Council) siūlo rankoms, teptukams, sietams ir įrankiams plauti naudoti atskirą kibirą vandens. Palikite jį per naktį nusistovėti, nupilkite skaidrų vandenį, tada nusėdusią glazūrą išdžiovinkite ir išmeskite į buitinių atliekų konteinerį (ji pateks į sąvartyną), bet niekada nepilkite į kanalizaciją.
+Niekada nepilkite glazūros ar vandens, kuriame skalavote glazūros įrankius, į kriauklę ar ant sodo žemės. Jungtinės Karalystės Crafts Council siūlo atskirą vandens kibirą rankoms, teptukams, sietams ir įrankiams plauti. Palikite jį nusistovėti per naktį, nupilkite skaidrų vandenį, tada nusėdusią glazūrą išdžiovinkite ir išmeskite su buitinėmis atliekomis (jos keliauja į sąvartyną), niekada nepilkite į kanalizaciją.
 
-Siūlome tą kibirą uždengti dangčiu: nuosėdose yra tie patys metalai kaip ir glazūroje, o augintiniai geria stovintį vandenį. Atliekų šalinimo taisyklės įvairiose vietose skiriasi, todėl pasitikrinkite kiekvieno produkto saugos duomenų lapą, o jei abejojate, pasiteiraukite savivaldybėje ar vandens tiekimo įmonėje.
+Siūlome tą kibirą laikyti uždengtą: nuosėdose yra tie patys metalai kaip ir glazūroje, o gyvūnai geria stovintį vandenį. Atliekų šalinimo taisyklės skiriasi priklausomai nuo vietos, todėl patikrinkite kiekvieno produkto saugos duomenų lapą, o jei abejojate, pasiteiraukite savivaldybėje ar vandens tiekimo įmonėje.
+
+Kai kurios dirbtuvės išdžiovintas nuosėdas prieš išmesdamos išdegia. Jos dedamos į atliekamą dubenį, kurį bus galima paaukoti: po degimo dubens nebebus galima naudoti. Dubenį pripildykite tik iki ketvirčio, nes nuosėdos lydydamosi puta ir burbuliuoja, ir uždenkite jį lėkšte. Pastatykite jį ant apsauga padengtos krosnies plokštės ar atliekamos plokštelės, jei kartais išbėgtų. Degimas nuosėdas paverčia stiklu, kuris metalus sulaiko daug tvirčiau nei birūs milteliai, todėl sąvartyne jis saugesnis. Su sausomis nuosėdomis elkitės kaip su sausa glazūra: dėvėkite respiratorių ir nekelkite dulkių.
 
 ## Dulkių sulaikymas dirbtuvėje {#keeping-dust-in-the-studio}
 

@@ -9,6 +9,7 @@
     "homeSafety": "Jak nie otruć własnej rodziny - Glazecalc",
     "firing": "Wypał w prostym piecu - Glazecalc",
     "learnWithJohnBritt": "Nauka z bezpłatnym kursem szkliw Johna Britta - Glazecalc",
+    "teachingGlazeCalculation": "Nauczanie obliczeń szkliw - Glazecalc",
     "about": "O aplikacji - Glazecalc",
     "privacy": "Prywatność - Glazecalc",
     "terms": "Warunki korzystania - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Zatwierdzenie zmiany - Glazecalc",
     "cones": "Tabela stożków: temperatury stożków Ortona i SK - Glazecalc",
     "materials": "Standardowe surowce do szkliw: skład i zagrożenia - Glazecalc",
-    "materialInfo": "{name}: skład tlenkowy i zagrożenia - Glazecalc"
+    "materialInfo": "{name}: skład tlenkowy i zagrożenia - Glazecalc",
+    "famousGlazes": "Słynne szkliwa - Glazecalc",
+    "famousGlaze": "Szkliwo {name} - Glazecalc"
   },
   "nav": {
     "skip": "Przejdź do treści",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Należy wpisać liczbę, np. {example}, z kropką jako separatorem dziesiętnym."
   },
   "meta": {
-    "description": "Receptura szkliwa: wzór Segera (UMF), stosunek krzemionki do tlenku glinu, topniki. Bezpłatna i open source, na receptury, surowce i dzienniki wypałów.",
+    "description": "Receptura szkliwa ceramicznego: wzór Segera (UMF), stosunek krzemionki do tlenku glinu, topniki. Bezpłatna i open source, na receptury i wypały.",
     "guides": "Proste poradniki dla początkujących ceramików: czym jest szkliwo ceramiczne, jak je bezpiecznie zrobić i rozrobić, chronić rodzinę i wypalać w prostym piecu.",
     "glazingBasics": "Z czego składa się szkliwo ceramiczne, jak piec zmienia je w szkło i co oznaczają stożki, fryty, wzór Segera (UMF) i wady szkliwa. Poradnik dla początkujących.",
     "makingAGlaze": "Jak kupować, przechowywać, odważać i rozrabiać szkliwo, dobrać jego gęstość, sprawdzić je na własnej glinie i prowadzić zapiski, by móc je odtworzyć.",
@@ -177,6 +180,7 @@
     "homeSafety": "Co robić, gdy dziecko lub zwierzę połknie surowiec do szkliw, i jak sprawić, by surowce, pył, piec i ręcznie robione wyroby były bezpieczne dla rodziny.",
     "firing": "Jak wypalać w piecu elektrycznym: dobierać, ustawiać i odczytywać stożki oraz stosować opublikowane programy wypału biskwitowego i szkliwa. Z tabelą stożków.",
     "learnWithJohnBritt": "Przewodnik do bezpłatnego kursu szkliw online Johna Britta: jego filmy lekcja po lekcji, z poradnikami Glazecalc i ćwiczeniami w kalkulatorze.",
+    "teachingGlazeCalculation": "6 zajęć do nauczania wzoru Segera (UMF): surowce i płytki trójskładnikowe, mole, przeliczanie receptury na wzór i z powrotem oraz wady szkliw, z przykładami obliczeń i kartami pracy do wydruku.",
     "advice": "Praktyczne porady o rozrabianiu szkliw ceramicznych, szkliwieniu i wypale od Glazecalc oraz własne porady. Bezpłatnie dla garncarzy i ceramików.",
     "about": "Glazecalc to bezpłatny kalkulator chemii szkliw ceramicznych i notatnik open source. Jak oblicza wzór Segera (UMF) i jak jest zbudowany.",
     "privacy": "Jak Glazecalc postępuje z danymi: bez reklam, analityki i śledzenia, nic nie jest sprzedawane. Co jest przechowywane, dlaczego i jak skorzystać z praw.",
@@ -187,6 +191,8 @@
     "materials": "Surowce ze standardowej biblioteki Glazecalc, od skaleni i glin po fryty i źródła boru, każdy ze składem tlenkowym, wzorem Segera i zagrożeniami.",
     "materialInfo": "{name}: skład tlenkowy, wzór Segera, strata prażenia i zagrożenia w standardowej bibliotece Glazecalc.",
     "materialInfoLong": "{name} w standardowej bibliotece surowców do szkliw Glazecalc: skład tlenkowy, udział we wzorze Segera, strata prażenia i zagrożenia.",
+    "famousGlazes": "Słynne szkliwa ceramiczne z całego świata: tradycyjna receptura lub historyczny skład chemiczny każdego z nich, jego wzór Segera i wersja z surowców dostępnych w miejscu zakupu.",
+    "famousGlaze": "Szkliwo {name} ({native}): tradycyjna receptura lub historyczny skład chemiczny, wypał, wzór Segera i źródła oraz wersja z surowców dostępnych w miejscu zakupu.",
     "imageAlt": "Logo Glazecalc i jego nagłówek: darmowa chemia szkliw dla ceramików, obok zdjęcia wypalonych zestawów stożków."
   },
   "notices": {

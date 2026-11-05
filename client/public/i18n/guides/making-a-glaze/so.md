@@ -119,162 +119,183 @@ Talooyinku way kala duwan yihiin inta uu le'eg yahay saxnaanta miisaanka aad u b
 
 Derek Au wuxuu ku miisaamaa hal baaquli, tuulmooyin kala gooni ah, si khalad loogu soo celin karo qaaddo. Haddii aad hal baaldi ku miisaanto adigoon tare samayn walxaha dhexdooda, wadarta socota ee Glazecalc ayaa kuu sheegaysa waxa miisaanku akhrinayo mid kasta kadib.
 
-## Qasidda iyo shaandheynta {#mixing}
+## Isku-darka iyo shaandheynta {#mixing}
 
-### Inta biyo ah
+### Immisa biyo
 
-Ilaha way isku khilaafsan yihiin. Derek Au wuxuu ku bilaabaa qaro weyn, 50 mL biyo ah 100 g budo ah, kadibna wuxuu ku daraa wax badan. Potterycrafts waxay bixisaa 65 mL 100 g kasta hal glaze budo ah. UT Austin waxay isticmaashaa biyo iyo budo miisaan isku mid ah, markii Digitalfire ay 20 kg budo ah ku shubtay 20 kg biyo ah, waxay cabbirtay SG 1.46.
+Ilaha isma raacsana. Derek Au wuxuu ku bilaabaa adag, 50 mL biyo ah 100 g budo ah, kadibna wuu ku daraa. Potterycrafts waxay bixisaa 65 mL 100 g kasta hal glaze budo ah. UT Austin waxay isticmaashaa miisaan siman oo biyo iyo budo ah, markii Digitalfire ay 20 kg budo ah ku ridday 20 kg biyo ah, waxay cabbirtay SG 1.46.
 
-Biyaha way fududahay in lagu daro, way adag tahay in laga saaro, sidaas darteed ku bilow wax yar. Qiyaastayada: ku bilow **qiyaastii 70 ilaa 80 mL 100 g kasta** (700 ilaa 800 mL kiiloogaraam kasta, ama qiyaastii 11 ilaa 12 US fl oz rodol kasta). Qoy, qas oo shaandhee qaradaas, kadibna biyo in yar in yar ku dar ilaa SG-gu sax noqdo. 1 mL biyo ah wuxuu miisaamaa 1 g, sidaas darteed waad miisaami kartaa. Haddii aad dhaafto, glaze-ka u dhaaf inuu dego, kadibna isbuunyo ku qaad ama ka shub biyaha saafiga ah ee korka.
+Biyaha way fududahay in lagu daro, way adag tahay in laga saaro, sidaa darteed ku bilow yar. Qiyaastayada: ku bilow **qiyaastii 70 ilaa 80 mL 100 g kasta** (700 ilaa 800 mL kiilo kasta, ama qiyaastii 11 ilaa 12 US fl oz rodol kasta). Qooy, isku dar oo shaandhee adkaantaas, kadibna biyo tartiib u dar ilaa SG-gu sax noqdo. 1 mL biyo ah wuxuu miisaamaa 1 g, sidaa darteed waad miisaami kartaa. Haddii aad dhaafto, glaze-ka u daa inuu dego, kadibna biyaha saafiga ah ee sare isbuunyo ku qaad ama daadi.
 
 ### Qalabka iyo biyaha
 
-- **Qaseeyaha baalasha leh (propeller mixer).** Digitalfire waxay mid wanaagsan ugu yeedhaa "lagama maarmaan". Dariil fiilo leh oo baalal wax lagu qaso leh ayaa shaqada ku qabta baaldi. UT Austin waxay wadaa ugu yaraan 4 ilaa 5 daqiiqo kadib marka glaze-ku u muuqdo mid la qasay, waxayna baalka ka fogeysaa baaldiga, oo uu caag ka xoqi karo.
-- **Blender.** Wuxuu "si aad u fiican ugu shaqeeyaa batch-yada yaryar" (Digitalfire). U hay glaze-ka oo keliya: waa inaanu marnaba dib ugu noqon jikada.
-- **Wax ukunta lagu tumo ama ul.** Doorashada Zakin marka aanu jirin qaseeye.
+- **Isku-dare propeller.** Digitalfire waxay ku tilmaantay mid wanaagsan "lagama maarmaan". Daawad xadhig leh oo baal isku-dar leh ayaa baaldiga shaqada ka qabta. UT Austin waxay shiddaa ugu yaraan 4 ilaa 5 daqiiqo kadib marka glaze-ku u ekaado mid la isku daray, waxayna baalka ka fogaysaa baaldiga, oo uu caag ka xoqi karo.
+- **Blender.** Wuxuu "si aad u wanaagsan ugu shaqeeyaa batch yaryar" (Digitalfire). Glaze keliya u hay: weligiis waa inuusan jikada ku noqon.
+- **Wax lagu garaaco ama ul.** Doorashada Zakin marka aysan jirin isku-dare.
 
-Biyuhuna way kala duwan yihiin, Digitalfire-na waxay xusaysaa inay beddelaan sida slurry u dhaqmo. Derek Au wuxuu isticmaalaa biyo reverse-osmosis ah sababtoo ah biyaha tuubadiisu waa adag yihiin. Wax kasta oo aad isticmaasho, qor.
+Biyaha sidoo kale way kala duwan yihiin, Digitalfire-na waxay xustay inay beddelaan sida slurry-gu (budada glaze-ka iyo biyaha) u dhaqmo. Derek Au wuxuu isticmaalaa biyo reverse osmosis sababtoo ah biyaha tuubbadiisu waa adag yihiin (hard water). Wax kasta oo aad isticmaasho, qor.
 
 ### Tallaabo tallaabo
 
-1. Xiro respirator-kaaga, iyo gacmo-gashi caag ah haddii gacmahaagu geli doonaan. Zakin wuxuu xirtaa maaskaro laga bilaabo miisaamidda ilaa glaze-ku qoyo.
+1. Xiro respirator-kaaga, iyo gacmo-gashi caag ah haddii gacmahaagu gudaha geli doonaan. Zakin wuxuu xirtaa maaskaro bilowga miisaanka ilaa glaze-ku qoyo.
 2. Baaldiga ku cabbir qiyaastii 70 ilaa 80 mL biyo ah 100 g budo ah kasta.
-3. Budada la miisaamay si tartiib ah ugu dar, meel hoose. UT Austin budada waxay ku dartaa biyo diirran; Zakin iyo Au biyaha ayay ku daraan budada. Waxaan kuu soo jeedinaynaa budo biyo lagu daro, oo boodh ka yar kiciya, marka laga reebo hab bentonite badan leh: budooyinkiisa qalalan marka hore isku walaaq.
-4. **Qoy**: budada u daa inay qoyanto adigoon walaaqin. Digitalfire waxay sugtaa qiyaastii 20 daqiiqo. Budooyinka leh xabag ama wax isku haya waxay u baahan yihiin inay habeen dhan istaagaan.
-5. Qas ilaa aanay jirin meelo qalalan ama burbur.
+3. Budada la miisaamay si tartiib ah ugu dar, meel hoose. UT Austin waxay budada ku shubtaa biyo diirran; Zakin iyo Au waxay biyaha ku daraan budada. Waxaan soo jeedinaynaa in budada lagu shubo biyaha (budo biyo ku dar), taas oo boodh yar kicisa, marka laga reebo hab leh bentonite badan: budadiisa qalalan marka hore isku walaaq.
+4. **Qooy**: budada u daa inay qoyanto adigoo aan walaaqin. Digitalfire waxay sugtaa qiyaastii 20 daqiiqo. Budooyinka leh gum ama wax isku xira waxay u baahan yihiin inay habeen dhan istaagaan.
+5. Isku dar ilaa aysan jirin meelo qalalan ama burooyin.
 6. Laba jeer shaandhee (eeg hoos).
-7. Dabool oo u daa inuu habeen dhan nasto, kadibna mar kale qas oo hubi in lakab adag uu hoosta ku jiro.
-8. Cabbir SG-ga, oo biyo in yar in yar ku dar si aad u gaarto tiradaada la rabo.
-9. Baaldiga calaamadee, oo qor waxa aad samaysay.
-10. Ku nadiifi qoyaan: dhulka masax oo tirtir meel kasta, oo ay ku jiraan dibadda weelasha walxaha.
+7. Dabool oo u daa inuu habeen dhan nasto, kadibna mar kale isku dar oo hoosta ka eeg inuu jiro lakab adag.
+8. Cabbir SG-ga, oo biyo tartiib u dar si aad u gaarto bartilmaameedkaaga. Si aad u ogaato SG-ga qalalan ee glaze-kaaga, sidoo kale miisaan slurry-ga la dhammeeyey (eeg hoos).
+9. Baaldiga calaamad ku dheji, oo qor waxaad samaysay.
+10. Biyo ku nadiifi: dhulka masax oo masax dusha kasta, oo ay ku jiraan dibadda weelasha walxaha.
 
 ### Shaandheynta
 
-**Shaandho** waa shabag ku jira qafis. Glaze-ka oo burush lagu riixo waxay jebisaa burburka qasiddu ka tagto, waxayna qabataa qaybaha yaryar ee gubidda ka dib noqon lahaa dhibco. Inta lambarka **mesh**-ku sarreeyo, ayuu shabaggu ka sii jilicsan yahay: 80 mesh wuxuu leeyahay daloolo qiyaastii 0.18 mm ah, 100 mesh-na qiyaastii 0.15 mm.
+**Shaandho** waa shabag ku jira jir. Ku riixidda glaze-ka burush ayaa jebisa burooyinka isku-darku ka tago oo qabata walxaha yaryar ee gubidda ku noqon lahaa dhibco. Marka lambarka **mesh**-ku sarreeyo, shabaggu wuu jilicsanaadaa: mesh 80 waxay leedahay godad qiyaastii 0.18 mm ah, mesh 100-na qiyaastii 0.15 mm.
 
-Ilaha waxay kugula talinayaan mesh-yo kala duwan. Zakin wuxuu laba jeer ku shaandheeyaa 50 ama 80 mesh. Derek Au wuxuu isticmaalaa 120 mesh inta badan glaze-yada, gaar ahaan kuwa cobalt ama iron leh: saddex mar oo 80 mesh ah ayaa weli ka tagay dhibco iron ah hal celadon, hal mar oo 120 mesh ah ayaa xalliyay. Wuxuu 60 ilaa 80 mesh u hayaa glaze-yada dambaska (ash) iyo kuwa kale ee walxo qallafsan leh. Potterycrafts, oo UK-da ku taal, waxay soo jeedisaa 60 ilaa 80 mesh. Doorasho caadi ah oo ammaan ah:
+Ilaha waxay soo jeediyaan mesh kala duwan. Zakin wuxuu laba jeer ku shaandheeyaa mesh 50 ama 80. Derek Au wuxuu glaze-yada badankood u isticmaalaa mesh 120, gaar ahaan kuwa leh cobalt ama bir: saddex jeer oo mesh 80 ah ayaa weli dhibco bir ah uga tagay hal celadon, hal mar oo mesh 120 ahna wuu daaweeyey. Wuxuu mesh 60 ilaa 80 u hayaa glaze-yada dambaska iyo kuwa kale ee leh walxo qallafsan. Potterycrafts, oo UK ku taal, waxay soo jeedisaa mesh 60 ilaa 80. Doorasho ammaan ah:
 
-Table: Shaandhada la isticmaalo
+Table: Shaandhada la isticmaalayo
 Label: Mesh-ka shaandhada
 
 | Glaze                                                     | Shaandho               |
 | --------------------------------------------------------- | ---------------------- |
-| Inta badan glaze-yada                                     | Laba mar oo 80 mesh ah |
-| Glaze-yada midabeeyayaal leh sida cobalt ama iron         | 100 ilaa 120 mesh      |
-| Glaze-yada dambaska, iyo kuwa kale ee walxo qallafsan leh | 60 ilaa 80 mesh        |
+| Glaze-yada badankood                                      | Laba mar oo mesh 80 ah |
+| Glaze-yada leh midabeeyayaal sida cobalt ama bir          | Mesh 100 ilaa 120      |
+| Glaze-yada dambaska, iyo kuwa kale ee leh walxo qallafsan | Mesh 60 ilaa 80        |
 
 ## SG (specific gravity) {#specific-gravity}
 
-**SG-ga** (specific gravity) wuxuu kuu sheegayaa inta budo ah ee slurry-gaaga ku jirta. Waa miisaanka mug glaze ah oo loo qaybiyay miisaanka isla mugga biyo ah. Biyuhu waa 1.00, glaze-na {{SG 1.45}} wuxuu miisaamaa 145 g 100 mL kasta. Ku qasidda SG la cabbiray waa sida aad mar walba u hesho isla qarada, iyo isla lakabka. Ma laha unug, sidaas darteed waa isku mid garaam ama wiqiyado.
+**SG** (specific gravity) wuxuu kuu sheegayaa inta budo ah ee slurry-gaaga ku jirta. Waa miisaanka mug glaze ah oo loo qaybiyey miisaanka isla mug biyo ah. Biyuhu waa 1.00, glaze {{SG 1.45}} ahna wuxuu miisaamaa 145 g 100 mL kasta. Isku-darka ilaa SG la cabbiray waa sida aad mar walba u hesho isla adkaan iyo isla lakab. Ma laha cabbir, sidaa darteed waa isku mid garaam ama oons.
 
 ### Ku cabbir adigoo miisaamaya 100 mL
 
-1. Glaze-ka walaaq si aanay waxba u degin.
-2. Miisaanka saar **tuubo cabbir** 100 mL ah (tuubo dheer oo calaamado leh) ama irbad 100 mL ah, oo tare samee.
-3. Glaze ku buuxi ilaa 100 mL sax ah, adigoo calaamadda ka akhrinaya heerka indhaha.
-4. Miisaan oo garaamyada u qaybi 100: 145 g waa SG 1.45.
+1. Walaaq glaze-ka si aysan waxba u degin.
+2. Miisaanka saar **graduated cylinder** 100 mL ah (tuubbo cabbir dheer oo calaamado leh) ama sirinji 100 mL ah, oo eber ka dhig (tare).
+3. Glaze ku buuxi ilaa 100 mL si sax ah, adigoo calaamadda ka akhrinaya heerka indhaha.
+4. Miisaan oo garaamka u qaybi 100: 145 g waa SG 1.45.
 
-Digitalfire sidoo kale koob ayay ku calaamadisaa heerka 500 g biyo ah, ilaa calaamadda glaze ku buuxisaa, miisaankana u qaybisaa 500; cabbir ka weyn oo ka buuxa ayaa ka saxsan. **Hydrometer**, sabeeye laga akhriyo meesha uu glaze-ka ku fadhiyo, waa dhakhso laakiin si khalad ah ayuu u akhrin karaa glaze-yada qaro weyn ama jel ah. Hydrometer-yada UK-da, sida kuwa Potclays, waxay ku akhriyaan darajooyinka Baumé (°Bé). Xisaabtayada, SG = 145 ÷ (145 − °Bé), sidaas darteed 46 °Bé waa qiyaastii 1.46. Buugaagta hore ee UK-da waxay bixiyaan **miisaanka pint-ka**, wiqiyadaha hal pint imperial ah oo glaze ah: u qaybi 20, sidaas darteed 29 oz waa qiyaastii SG 1.45 (sidoo kale xisaabtayada).
+Digitalfire sidoo kale waxay koob ku calaamadisaa heerka 500 g biyo ah, glaze ku buuxisaa ilaa calaamadda, miisaankana u qaybisaa 500; cabbir weyn oo buuxa ayaa ka sax badan. **Hydrometer**, sabbayn lagu akhriyo halka uu glaze-ka ku fadhiyo, waa degdeg laakiin si khalad ah ayuu u akhrin karaa glaze-yada adag ama jelka ah. Hydrometer-yada UK, sida kuwa Potclays, waxay ku akhriyaan darajooyinka Baumé (°Bé). Xisaabtayada, SG = 145 ÷ (145 − °Bé), sidaa darteed 46 °Bé waa qiyaastii 1.46. Buugaagta UK ee hore waxay bixiyaan **pint weight**, oons-ka hal pint imperial ah oo glaze ah: u qaybi 20, sidaa darteed 29 oz waa qiyaastii SG 1.45 (sidoo kale xisaabtayada).
 
-### Waxa la beegsado
+### Waxa la beegsanayo
 
-Ilaha way isku khilaafsan yihiin, gaar ahaan burushka iyo buufinta, halkaas oo iibiyaha UK-da Potclays uu bixiyo tirooyin aad u sarreeya (kuwiisa waa "hage oo keliya"). Tiro kasta u qaado meel laga bilaabo. Talada ugu muhiimsan ee Digitalfire waa inaad hesho SG-ga iyo jel-ka u shaqeeya glaze kasta, kadibna aad ku celiso oo qorto.
+Ilaha isma raacsana, gaar ahaan burushka iyo buufinta, halkaas oo iibiyaha UK Potclays bixiyo tirooyin aad u sarreeya (kuwiisa waa "hage keliya"). Tiro kasta u qaado meel bilow. Talada ugu weyn ee Digitalfire waa in la helo SG-ga iyo jelka u shaqeeya glaze kasta, kadibna la ku celceliyo oo la qoro.
 
-Table: Tirooyinka SG-ga la beegsado, meelaha ilaha isku khilaafsan yihiin
-Label: Tirooyinka SG-ga la beegsado
+Table: Bartilmaameedyada SG, halka ilaha isku khilaafsan yihiin
+Label: Bartilmaameedyada SG
 
-| Isticmaal | Digitalfire iyo Glazy                                                                                                                                            | Potclays (UK)                                 | Meel ammaan ah oo laga bilaabo                                                  |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------- |
-| Quusin    | {{SG 1.40}} (quusin 5 ilbiriqsi ah) ilaa {{SG 1.50}} (quusin 1 ilbiriqsi ah); glaze-yada guriga lagu qasay ee jel ah waxay ugu fiican yihiin {{SG 1.43–1.45}}    | Hufan {{SG 1.46–1.48}}; midab leh {{SG 1.61}} | {{SG 1.45}}; khafiifi ilaa {{SG 1.43}} oo jel ka dhig haddii uu tiftiifo        |
-| Burush    | {{SG 1.25}} (hufan khafiif ah) ilaa {{SG 1.55}} (faahfaahin madow)                                                                                               | {{SG 1.71–1.81}}                              | Raac alaabta; isticmaal xabagta CMC ama dareere burush                          |
-| Buufin    | Tiro ma jirto; Hopper, oo u qora Ceramic Arts Network, wuxuu leeyahay aad uga khafiifsan, oo leh deflocculant (wax lagu daro oo slurry ka dhiga mid sii qulqula) | {{SG 1.71}}                                   | Tiro la isku halleyn karo ma jirto; ku buufi oo keliya qol buufin (spray booth) |
+| Isticmaal | Digitalfire iyo Glazy                                                                                                                                           | Potclays (UK)                                 | Meel bilow oo ammaan ah                                               |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- |
+| Quusin    | {{SG 1.40}} (quusin 5 ilbiriqsi) ilaa {{SG 1.50}} (quusin 1 ilbiriqsi); glaze-yada guriga lagu qasay ee jelka ah waxay ugu fiican yihiin {{SG 1.43–1.45}}       | Hufan {{SG 1.46–1.48}}; midab leh {{SG 1.61}} | {{SG 1.45}}; khafiifi ilaa {{SG 1.43}} oo jel ka dhig haddii uu tifqo |
+| Burush    | {{SG 1.25}} (hufan khafiif ah) ilaa {{SG 1.55}} (faahfaahin madow)                                                                                              | {{SG 1.71–1.81}}                              | Raac alaabta; isticmaal CMC gum ama brushing medium                   |
+| Buufin    | Tiro ma jirto; Hopper, oo u qoraya Ceramic Arts Network, wuxuu leeyahay aad u khafiif ah, oo leh deflocculant (wax lagu daro oo slurry-ga ka dhiga mid qulqula) | {{SG 1.71}}                                   | Tiro la isku halleyn karo ma jirto; ku buufi spray booth keliya       |
 
-Si aad indhaha ugu hubiso glaze quusin, AMACO waxay quusisaa 5 ilbiriqsi waxayna eegtaa lakab qiyaastii le'eg dhumucda lacagta US dime. Digitalfire waxay gubtaa tile-yo 5 ilbiriqsi la quusiyay si ay u hubiso.
+Si aad il ugu hubiso glaze quusin, AMACO waxay quusisaa 5 ilbiriqsi oo raadisaa lakab qiyaastii u qaro weyn sida dime Maraykan ah. Digitalfire waxay gubtaa tile-yo 5 ilbiriqsi la quusiyey si ay u hubiso.
 
-### Biyaha SG la beegsado: qiyaastayada
+### Biyaha bartilmaameedka SG: qiyaastayada
 
-Shaxda hoose waa xisaabtayada, ma aha il. Waxay u qaadanaysaa in qaybaha budadu leeyihiin cufnaan 2.6 g cm³ kasta, taas oo ah male, ma aha cabbir. Dhoobada, walxaha milma iyo jel-ku dhammaantood way beddelaan glaze dhab ah, sidaas darteed u isticmaal bilow, kadibna cabbir. Hubin ahaan, waxay saadaalisaa {{SG 1.44}} budo iyo biyo miisaan isku mid ah, oo u dhow {{SG 1.46}} ee Digitalfire cabbirtay. Waxay sidoo kale muujinaysaa in 70 ilaa 80 mL 100 g kasta ay kaa bilaabayso {{SG 1.50}} wixii ka sarreeya, oo ka qaro weyn inta aad u baahan tahay.
+Shaxda hoose waa xisaabtayada, ma aha ta il. Waxay u qaadanaysaa in walxaha yaryar ee budadu leeyihiin cufnaan 2.6 g cm³ kasta, taas oo ah male, ma aha cabbir. Dhoobada, walxaha biyaha ku milma iyo jelku dhammaan waxay beddelaan glaze dhab ah, sidaa darteed u isticmaal bilow, kadibna cabbir. Hubin ahaan, waxay saadaalisaa {{SG 1.44}} miisaan siman oo budo iyo biyo ah, una dhow {{SG 1.46}} ee Digitalfire cabbirtay. Waxay sidoo kale muujinaysaa in 70 ilaa 80 mL 100 g kasta ay kaa bilaabayso {{SG 1.50}} ka sarreeya, ka adag inta aad u baahan tahay.
 
-Table: Biyaha SG la beegsado (qiyaastayada)
-Label: Biyaha SG la beegsado
+Table: Biyaha bartilmaameedka SG (qiyaastayada)
+Label: Biyaha bartilmaameedka SG
 
-| La beegsado | 100 g budo ah kasta | Kiiloogaraam kasta |           Rodol kasta |
-| ----------- | ------------------: | -----------------: | --------------------: |
-| {{SG 1.40}} |    qiyaastii 115 mL |  qiyaastii 1150 mL | qiyaastii 18 US fl oz |
-| {{SG 1.45}} |     qiyaastii 98 mL |   qiyaastii 980 mL | qiyaastii 15 US fl oz |
-| {{SG 1.50}} |     qiyaastii 85 mL |   qiyaastii 850 mL | qiyaastii 13 US fl oz |
-| {{SG 1.60}} |     qiyaastii 64 mL |   qiyaastii 640 mL | qiyaastii 10 US fl oz |
+| Bartilmaameed |    100 g budo ah |       Kiilo kasta |           Rodol kasta |
+| ------------- | ---------------: | ----------------: | --------------------: |
+| {{SG 1.40}}   | qiyaastii 115 mL | qiyaastii 1150 mL | qiyaastii 18 US fl oz |
+| {{SG 1.45}}   |  qiyaastii 98 mL |  qiyaastii 980 mL | qiyaastii 15 US fl oz |
+| {{SG 1.50}}   |  qiyaastii 85 mL |  qiyaastii 850 mL | qiyaastii 13 US fl oz |
+| {{SG 1.60}}   |  qiyaastii 64 mL |  qiyaastii 640 mL | qiyaastii 10 US fl oz |
 
-### Epsom salts, xabagta CMC iyo bentonite
+### Hel SG-ga qalalan ee glaze-kaaga inta aad isku darayso
 
-**Epsom salts** waxay glaze ka dhigaan jel yar marka uu istaago, oo mar kale qulqulaa marka la walaaqo. Tan waxaa loo yaqaan **flocculating**, glaze sidan u dhaqmana waa **thixotropic**: si siman ayuu u maraa, tiftiif ka yar ayuu leeyahay, wuuna ka yar degaa. Digitalfire waxay soo jeedisaa inaad ku bilowdo qiyaastii 2 g galaan kasta marka SG-gu sax noqdo (qiyaastii 0.5 g litir kasta, beddelkayaga) oo aad tirada hagaajiso mar kasta oo aad qasto, maadaama aanu jirin hab ay tahay inuu go'aamiyo qiyaasta. Waxaan kuu soo jeedinaynaa inaad marka hore ku milayso biyo kulul oo yar. Tusaale Digitalfire, glaze {{SG 1.45}} ah ayaa tiftiifayay, sidaas darteed biyo ayaa hoos ugu dhigay {{SG 1.43}}, Epsom salts-na dib ayay ugu celiyeen jel kareem u eg, si siman ayuuna u maray. Hubin qallafsan: walaaq, jooji oo daawo. Glaze jel ah wuxuu socdaa qiyaastii 2 ama 3 ilbiriqsi, kadibna wuu istaagaa oo in yar dib u boodaa.
+2.6-da kore waa male. Tirada glaze-kaaga, cufnaanta budadiisa qalalan, waxaa laga xisaabin karaa saddex tiro oo aad qaadan karto inta aad isku darayso. Iyada, waxaad goor dambe ka xisaabin kartaa SG-ga inta budo ah ee ku jirta baaldi kasta oo glaze-kaas ah, iyo biyaha batch-ka xiga. Xisaabtayada, ma aha ta il:
 
-**Xabagta CMC** (carboxymethyl cellulose) waxay slurry ka dhigtaa mid ka dhegdheg badan oo qalajiddiisu ka gaabiso, waxayna ka tagtaa lakab ka adag oo dheriga ku dheggan. Waxay ugu muhiimsan tahay glaze-yada burushka iyo glaze-yada frit badan leh. Tusaalaha Digitalfire wuxuu 3.75 g ku qasaa 1000 g slurry ah, waana in blender lagu geliyaa. Glaze CMC leh jel kuma noqon doono Epsom salts, maadaama jeermisku xabagta cuno, baaldiga ayuu ku isbeddeli karaa oo bilaabi karaa inuu uro.
+1. Qor miisaanka budada qalalan ee batch-ka: wadarta habka.
+2. Miisaan baaldiga madhan ka hor intaadan bilaabin, ama miisaankiisa ku calaamadi.
+3. Isku dar, shaandhee oo glaze-ka gaarsii SG-giisa sida caadiga ah. Wax walba ku riix shaandhada oo ku luqluq baaldiga, si aysan budo dibadda uga harin.
+4. Miisaan baaldiga buuxa oo ka jar miisaanka baaldiga. Taasi waa miisaanka slurry-ga.
+5. Cabbir SG-ga.
 
-**Bentonite**, dhoobo aad u jilicsan, waxay caawisaa inay qaybaha kale biyaha ku dhex hayso. Glaze-yada quusinta badanaa waxay taas ugu tiirsan yihiin 15 ilaa 25% dhoobo ceeriin ah. Hab dhoobo ku yar, qiyaastii 1 ilaa 3% bentonite ah ayaa caawisa; Digitalfire waxay leedahay glaze leh in ka badan 15% dhoobo ah ma aha inuu u baahdo bentonite ka badan 1% miisaanka glaze-ka qalalan.
+Kadib:
 
-## Test tile-yada iyo line blend-yada {#testing}
+- **Biyo** = miisaanka slurry-ga − miisaanka budada.
+- **Mugga slurry-ga** mL ahaan = miisaanka slurry-ga garaam ahaan ÷ SG.
+- **Mugga budada** = mugga slurry-ga − biyaha (1 g biyo ah waa 1 mL).
+- **SG qalalan** = miisaanka budada ÷ mugga budada.
 
-### Ku bilow wax yar
+Tusaale ahaan: 1000 g budo ah waxay samaysaa 1980 g slurry ah {{SG 1.45}}. Biyuhu waa 980 g, slurry-gu waa 1980 ÷ 1.45 = qiyaastii 1366 mL, budadu waxay qaadataa 1366 − 980 = 386 mL, SG-ga qalalanna waa 1000 ÷ 386 = qiyaastii 2.59.
 
-Derek Au wuxuu kor ugu kacaa saddex tallaabo: tijaabo 50 ama 100 g ah, tijaabo 1 ilaa 2 kg ah haddii ay shaqeyso, kadibna batch istuudiyo oo 5 ilaa 10 kg ah. Qiyaastayada, tijaabo 100 g ah oo {{SG 1.45}} ah waxay samaysaa qiyaastii 135 mL (qiyaastii 4½ US fl oz) slurry ah, oo ku filan in dhowr tile oo yaryar lagu quusiyo koob cidhiidhi ah.
+Miisaan slurry-ga oo dhan dhammaadka, ma aha biyaha inta aad shubayso, si biyaha uumi noqda ama daadanaa aysan u tirsanin. Khaladaad yaryar halkan way koraan: akhris SG oo 0.01 ka leexday wuxuu jawaabta dhaqaajiyaa qiyaastii 2 ilaa 4%, ka badan glaze khafiif ah. Isticmaal batch 1 kg ama ka badan, miisaan sax ah, iyo habka koobka 500 g ee kore SG-ga. Walxaha caadiga ah badankoodu waxay u dhexeeyaan qiyaastii 2.5 iyo 2.9, sidaa darteed tiro aad uga fog taas, glaze aan lahayn zircon ama rasaas badan, waxay u badan tahay khalad cabbir. Tirada ku qor habka.
+
+### Cusbada Epsom, CMC gum iyo bentonite
+
+**Cusbada Epsom** waxay glaze-ka ka dhigtaa mid wax yar jel noqda marka uu taagan yahay oo mar kale qulqula marka la walaaqo. Tan waxaa la yiraahdaa **flocculating**, glaze sidan u dhaqmana waa **thixotropic**: si siman ayuu u fariistaa, wax yar ayuu tifqaa, wax yarna wuu degaa. Digitalfire waxay soo jeedisaa in laga bilaabo qiyaastii 2 g galaan kasta marka SG-gu sax noqdo (qiyaastii 0.5 g litir kasta, beddelkayaga) oo qaddarka la hagaajiyo mar kasta oo aad isku darto, maadaama aysan jirin hab ku habboon inuu qaddarka go'aamiyo. Waxaan soo jeedinaynaa inaad marka hore ku milayso biyo kulul oo yar. Tusaale Digitalfire ah, glaze {{SG 1.45}} ah ayaa tifqay, sidaa darteed biyo ayaa hoos ugu dhigay {{SG 1.43}} cusbada Epsom-na dib ayay ugu jelisay mid kareem u eg, wuxuuna u fariistay si siman. Hubin degdeg ah: walaaq, jooji oo daawo. Glaze jel ah wuxuu sii socdaa qiyaastii 2 ama 3 ilbiriqsi, kadibna wuu joogsadaa oo wax yar dib u noqdaa.
+
+**CMC gum** (carboxymethyl cellulose) wuxuu slurry-ga ka dhigaa mid dheg badan oo si tartiib ah u qallala, wuxuuna ka tagaa lakab adag oo weelka ku dheggan. Wuxuu ugu muhiimsan yahay glaze-yada burushka iyo glaze-yada frit badan leh. Tusaalaha Digitalfire wuxuu 3.75 g ku daraa 1000 g slurry ah, waana in blender lagu geliyo. Glaze leh CMC kuma jelmo cusbada Epsom, maadaama jeermisku cunaan gum-ka, wuu ku beddeli karaa baaldiga oo bilaabi karaa inuu uro.
+
+**Bentonite**, dhoobo aad u jilicsan, waxay caawisaa inay walxaha kale sabbeeyaan. Glaze-yada quusinta badanaa waxay ku tiirsan yihiin 15 ilaa 25% dhoobo ceyriin ah tan. Hab dhoobo yar leh, qiyaastii 1 ilaa 3% bentonite ah ayaa caawisa; Digitalfire waxay leedahay glaze leh dhoobo ka badan 15% uma baahna bentonite ka badan 1% miisaanka glaze-ka qalalan.
+
+## Test tile iyo line blend {#testing}
+
+### Ku bilow yar
+
+Derek Au wuxuu kor ugu kacaa saddex tallaabo: tijaabo 50 ama 100 g ah, tijaabo 1 ilaa 2 kg ah haddii ay shaqeyso, kadibna batch istuudiyo 5 ilaa 10 kg ah. Qiyaastayada, tijaabo 100 g ah {{SG 1.45}} waxay samaysaa qiyaastii 135 mL (qiyaastii 4½ US fl oz) slurry ah, oo ku filan in dhowr tile yaryar lagu quusiyo koob cidhiidhi ah.
 
 ### Ku tijaabi dhoobadaada
 
-Glaze ayaa u ekaan kara si aad u kala duwan dhoobo kale ama kiln kale: Clay Art Center waxay glaze kasta oo ay dib u habaysay ku tijaabisay afar nooc oo dhoobo ah, cone 6 iyo cone 10. Hagaha bilowga ee tijaabada glaze-ka ee Potclays wuxuu soo jeedinayaa:
+Glaze aad buu ugu kala duwanaan karaa dhoobo kale ama kiln kale: Clay Art Center waxay tijaabisay glaze kasta oo ay dib u habaysay afar nooc oo dhoobo ah, cone 6 iyo cone 10. Hagaha Potclays ee bilowga tijaabada glaze-ka wuxuu soo jeedinayaa:
 
-- 6 ilaa 10 **test tile** (gabal yaryar oo glaze lagu tijaabiyo) oo ka samaysan dhoobada aad dhab ahaan isticmaali doonto, adigoo qoraya inay yihiin bisque ama bone dry (si buuxda u qallalan)
-- hal isbeddel markiiba
-- hal quusin iyo laba quusin, si aad u aragto glaze-ka khafiif iyo qaro weyn
-- tile kasta isla rarka kiln-ka
-- calaamad tile kasta inta aan la gubin, shaabad, xardho ama qalin underglaze ah.
+- 6 ilaa 10 **test tile** (gabal yaryar oo glaze lagu tijaabiyo) oo ah dhoobada aad dhab ahaan isticmaali doonto, adigoo qoraya in bisque lagu gubay ama ay gebi ahaanba qallalan yihiin
+- hal isbeddel mar kasta
+- hal quusin iyo laba quusin, si aad u aragto glaze khafiif iyo qaro weyn
+- tile kasta isla raridda kiln-ka
+- calaamad tile kasta ka hor gubidda, shaabad, xardho ama qalin underglaze. Tile-yada la gubay way isu eg yihiin, calaamadda gubidda ka hor la sameeyeyna kiln-ka way ka badbaaddaa, sidaa darteed mar walba waad garan kartaa tile kasta habka uu yahay.
 
-Waxaan kuu soo jeedinaynaa tile-yo taagan, maadaama tile siman uu qariyo inta glaze-ku orodo, oo leh xarig qallafsan si loo arko sida glaze-ku ugu jabo geesaha, iyo cag qaawan. Mid kasta saar saxan yar ama gabal bisque ah, ama shelf kiln-wash la mariyay, si uu u qabto tiftiifka. Tile-yada agtooda dhig **cone markhaati ah** (witness cone), cone yar oo ceramics ah oo laaba marka uu helo kulayl ku filan, si uu u muujiyo waxa ay heleen; [hagaha gubidda](/guides/firing) ayaa sharxaya cone-yada. Tile kasta sii kood gaaban, oo ku qor habka agtiisa diiwaankaaga. Willers, oo u qora Ceramic Arts Network, wuxuu isticmaalaa lambaro iyo xarfo, nidaamka laftiisana wuxuu ku qoraa bogga hore ee buugga.
+Waxaan soo jeedinaynaa tile-yo toos u taagan, maadaama tile siman uu qariyo inta glaze-ku qulqulo, oo leh xarig qaab leh si uu u muujiyo sida glaze-ku cidhifyada uga jabo, iyo cag aan glaze lahayn. Mid kasta saar saxan yar ama gabal bisque ah, ama raf kiln wash leh, si dhibcaha loo qabto. Dhig **cone markhaati ah** (witness cone), cone dhoobo yar oo laaba marka uu helo kulayl ku filan, tile-yada agtooda si uu u muujiyo waxay heleen; [hagaha gubidda](/guides/firing) wuxuu sharxayaa cone-yada. Tile kasta sii kood gaaban, kuna qor habka agtiisa diiwaannadaada. Willers, oo u qoraya Ceramic Arts Network, wuxuu isticmaalaa tirooyin iyo xarfo, wuxuuna nidaamka laftiisa ku qoraa bilowga buugga xusuus-qorka.
 
-### Line blend-yada
+### Line blend
 
-**Line blend** waa saf tijaabooyin ah oo si siman uga gudba hal isku-dar ilaa mid kale: hal glaze ilaa mid labaad, ama glaze aasaasi ah ilaa isla glaze-ka oo midabeeye badan leh. Derek Au, tusaale ahaan, wuxuu iron oxide ku dhex mariyaa glaze aasaasi hufan tallaabooyin 1% ah. Hab mug ku salaysan oo lala xiriiriyo Ian Currie ayaa waqti badbaadiya, sababtoo ah waxaad qastaa labada daraf oo keliya:
+**Line blend** waa saf tijaabooyin ah oo si siman uga tallaabaya hal isku-dar ilaa mid kale: hal glaze ilaa mid labaad, ama glaze saldhig ah ilaa isla glaze-kaas oo midabeeye badan leh. Derek Au, tusaale ahaan, wuxuu iron oxide ku dhex daraa saldhig hufan tallaabooyin 1% ah. Hab mug ah oo lala xiriiriyo Ian Currie ayaa waqti badbaadiya, sababtoo ah waxaad isku dartaa labada dhammaad keliya:
 
-1. Qas labada glaze ee darafyada, A iyo B, batch-yo isku cabbir ah, oo shaandhee labadaba.
-2. Biyo ku dar midka mugga yar ilaa labaduba yeeshaan mug qoyan oo isku mid sax ah.
-3. Labadaba walaaq, kadibna isku-dar kasta irbad ku soo qaad oo ku shub koob u gaar ah oo lambar leh.
-4. Koob kasta walaaq oo tile ku quusi.
+1. Isku dar labada glaze ee dhammaadka, A iyo B, batch-yo isku cabbir ah, oo labadaba shaandhee.
+2. Biyo ku dar ka mugga yar ilaa labaduba yeeshaan mug qoyan oo isku mid ah si sax ah.
+3. Labadaba walaaq, kadibna isku-dar kasta sirinji ugu jiid koobkiisa lambarka leh.
+4. Koob kasta walaaq oo tile quusi.
 
-Tusaalahayaga xisaabsan, A waa 100 g glaze aasaasi hufan, B-na waa isla kaas oo lagu daray 4 g red iron oxide (ku-dar 4% ah). Milliliter kasta oo B ah wuxuu hayaa isla qaybta aasaasiga ee milliliter A ah, iyo iron-kiisa, sidaas darteed koobabku waxay ka gudbaan iron la'aan ilaa 4% tallaabooyin 1% ah. Daraf kastaa wuxuu blend-ka siiyaa 100 mL, oo batch 100 g ah daboolo qiyaastayada.
+Tusaalahayaga la xalliyey, A waa 100 g saldhig hufan ah, B-na waa isla kaas oo lagu daray 4 g red iron oxide ah (ku-darid 4% ah). Mililitir kasta oo B ah wuxuu ka kooban yahay qayb saldhig ah oo la mid ah mililitir A ah, iyo birtiisa, sidaa darteed koobabku waxay ka tallaabaan bir la'aan ilaa 4% tallaabooyin 1% ah. Dhammaad kasta wuxuu blend-ka siiyaa 100 mL, taas oo batch 100 g ah daboolo qiyaastayada.
 
-Table: Line blend iron oo shan tallaabo ah, 40 mL koob kasta (tusaalahayaga xisaabsan)
+Table: Line blend bir ah oo shan tallaabo ah, 40 mL koob kasta (tusaalahayaga la xalliyey)
 Label: Tusaale line blend
 
-| Koob | Aasaas hufan (A) | Aasaas leh 4% iron (B) | Iron oxide, % aasaaska |
-| ---- | ---------------: | ---------------------: | ---------------------: |
-| 1    |            40 mL |                   0 mL |                      0 |
-| 2    |            30 mL |                  10 mL |                      1 |
-| 3    |            20 mL |                  20 mL |                      2 |
-| 4    |            10 mL |                  30 mL |                      3 |
-| 5    |             0 mL |                  40 mL |                      4 |
+| Koob | Saldhig hufan (A) | Saldhig leh 4% bir (B) | Iron oxide, % saldhigga |
+| ---- | ----------------: | ---------------------: | ----------------------: |
+| 1    |             40 mL |                   0 mL |                       0 |
+| 2    |             30 mL |                  10 mL |                       1 |
+| 3    |             20 mL |                  20 mL |                       2 |
+| 4    |             10 mL |                  30 mL |                       3 |
+| 5    |              0 mL |                  40 mL |                       4 |
 
-Habku wuxuu u baahan yahay xisaab taxaddar leh, darafyo si fiican loo qasay oo SG siman leh, iyo miisaan sax ah. Derek Au sidoo kale wuxuu isku daraa miisaan halkii mug. **Triaxial blend** isla sidaas ayuu sameeyaa saddex daraf, oo loo dhigay saddex-xagal.
+Habku wuxuu u baahan yahay xisaab taxaddar leh, dhammaadyo si fiican loo isku daray oo SG siman leh, iyo miisaan sax ah. Derek Au sidoo kale wuxuu isku daraa miisaan halkii mug. **Triaxial blend** wuxuu sidaas oo kale ku sameeyaa saddex dhammaad, oo saddex-xagal lagu dhigay.
 
 > [!NOTE]
-> Marka tallaabo u muuqato mid rajo leh, **Kaydi nuqul ahaan** ee [bogga habka](/recipe) ayaa u kaydiya hab u gaar ah, asalkana sidiisii ayuu uga tagaa.
+> Marka tallaabo u muuqato mid rajo leh, **Kaydi nuqul ahaan** ee [bogga habka](/recipe) ayaa u haya hab u gaar ah oo kan asalka ah u daaya siduu ahaa.
 
 ## Haynta diiwaannada {#records}
 
-Willers ayaa si fiican u sheegay hadafka: "macluumaad ku filan si aad ugu celiso, ama uga fogaato, natiijooyinka aad ogaatay". Qor waxa aad qorshaynayso inaad tijaabiso inta aadan bilaabin, iyo natiijooyinka marka aad kiln-ka ka soo saarto. Potclays waxay ku daraysaa sida loo mariyay, dhumucda, nooca dhoobada iyo gubidda oo dhan, oo ay ku jiraan ramp-yada, hold-yada iyo qaboojinta. **Ramp** waa xawaaraha kululaynta ama qaboojinta, sida {{60 °C; 108 °F}} saacaddii, **hold**-na wuxuu kiln-ka ku hayaa hal heerkul muddo go'an. Qor lambarada lot-ka, biyaha aad isticmaashay iyo beddel kasta: beddelka feldspar ee Clay Art Center wuxuu keenay hagaajinta qiyaastii kala badh glaze-yadeeda.
+Willers ayaa yoolka si fiican u sheegay: "macluumaad ku filan oo aad ku celin karto, ama ka fogaan karto, natiijooyinka aad heshay". Qor waxaad qorshaynayso inaad tijaabiso ka hor intaadan bilaabin, iyo natiijooyinka marka aad soo dejiso. Potclays waxay ku daraysaa habka marinta, qaro weynida, nooca dhoobada iyo gubidda oo dhan, oo ay ku jiraan ramp-yo, sugitaan iyo qaboojin. **Ramp** waa xawaaraha kululaynta ama qaboojinta, sida {{60 °C; 108 °F}} saacaddii, **sugid**-na (hold) waxay kiln-ka ku haysaa hal kulayl muddo la dejiyey. Qor lambarrada lot-ka, biyaha aad isticmaashay iyo beddel kasta: beddelka feldspar-ka ee Clay Art Center wuxuu ka dhigan yahay hagaajinta qiyaastii kala badh glaze-yadeeda.
 
-Table: Waxa la qoro batch glaze kasta (qaabkayaga)
+Table: Waxa la diiwaangelinayo batch glaze kasta (qaabkayaga)
 Label: Qaabka diiwaanka
 
-| Qayb    | Waxa la qoro                                                                                                                                                                                                                           |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hab     | Habka iyo nuqulkiisa; magacyada ganacsiga ee walxaha iyo lambarada lot-ka; beddel kasta                                                                                                                                                |
-| Qasid   | Taariikhda; cabbirka batch-ka; biyaha lagu daray, iyo noocooda (tuubo, reverse osmosis ama distilled); SG-ga qasidda kadib iyo SG-ga ugu dambeeya; Epsom salts, CMC iyo bentonite lagu daray; mesh-ka shaandhada iyo tirada marooyinka |
-| Marin   | Nooca dhoobada; cone-ka bisque-ka; quusin, burush ama shubid; waqtiga quusinta ama tirada lakabyada; dhumucda qalalan                                                                                                                  |
-| Gubid   | Kiln-ka iyo meesha shelf-ka; jadwalka gubidda, oo leh ramp-yadiisa, hold-yadiisa iyo qaboojinta; jawiga (oxidation ama reduction); waxa cone markhaati ahi muujiyay, ma aha oo keliya waxa kiln-ka lagu dejiyay                        |
-| Natiijo | Dusha iyo midabka; orod kasta, crazing ama godad yaryar (pinholes); sawirro hore, gadaal iyo dhinac; koodhka tile-ka                                                                                                                   |
+| Qayb     | Waxa la qorayo                                                                                                                                                                                                                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hab      | Habka iyo noociisa; astaanta walxaha iyo lambarrada lot-ka; beddel kasta                                                                                                                                                                                                                       |
+| Isku-dar | Taariikh; cabbirka batch-ka; biyaha lagu daray, iyo noocooda (tuubbo, reverse osmosis ama la sifeeyey); SG isku-darka kadib iyo SG-ga ugu dambeeya; miisaanka slurry-ga la dhammeeyey, SG-giisa qalalan; cusbada Epsom, CMC iyo bentonite-ka lagu daray; mesh-ka shaandhada iyo tirada marinta |
+| Marin    | Nooca dhoobada; cone-ka bisque; quusin, burush ama shubid; waqtiga quusinta ama tirada lakabyada; qaro weynida qalalan                                                                                                                                                                         |
+| Gubid    | Kiln-ka iyo goobta rafka; jadwalka gubidda, oo leh ramp-yadiisa, sugitaannada iyo qaboojinta; jawiga kiln-ka (oxidation ama reduction); waxa cone-ka markhaatiga ahi muujiyey, ma aha keliya waxa kiln-ka loo dejiyey                                                                          |
+| Natiijo  | Dusha iyo midabka; qulqul kasta, crazing ama pinholes; sawirro hore, gadaal iyo dhinac; koodka tile-ka                                                                                                                                                                                         |
 
 > [!NOTE]
-> Glazecalc, [hab](/recipe) la kaydiyay ayaa haya habka laftiisa. [Diiwaanka gubidda](/firing) ayaa qora gubid kasta: kiln-ka, taariikhda, waqtiyada, heerkulka, cone-yada iyo qoraallada. [Qoraallada](/notes) ayaa haya wax kasta oo kale, sida diiwaanka batch-ka ee kor ku xusan iyo waxa tile kastaa muujiyay.
+> Glazecalc gudihiisa, [hab](/recipe) la kaydiyey ayaa haya habka laftiisa. [Diiwaanka gubidda](/firing) wuxuu qoraa gubid kasta: kiln-ka, taariikhda, waqtiyada, kulaylka, cone-yada iyo qoraallada. [Qoraallada](/notes) ayaa haya wax kasta oo kale, sida diiwaanka batch-ka kore iyo waxa tile kasta muujiyey.
 
 ## Ilaha {#sources}
 

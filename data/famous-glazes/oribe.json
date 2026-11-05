@@ -1,0 +1,80 @@
+{
+  "slug": "oribe",
+  "published": false,
+  "names": {
+    "en": "Oribe",
+    "ja": "織部"
+  },
+  "native": {
+    "name": "織部",
+    "lang": "ja"
+  },
+  "origin": {
+    "en": "Mino, Gifu Prefecture, Japan"
+  },
+  "period": {
+    "en": "About 1600 to the 1630s"
+  },
+  "summary": {
+    "en": "A glossy copper green over feldspar and wood ash, poured in bold areas beside iron painting."
+  },
+  "safety": {
+    "en": "Copper oxide is harmful to breathe and fumes in the kiln: vent the kiln. A copper glaze can leach copper on food surfaces; test it."
+  },
+  "firing": {
+    "cone": "9–10",
+    "atmosphere": "oxidation",
+    "sources": ["J7"]
+  },
+  "recipe": {
+    "lines": [
+      {
+        "material": "Mikawa feldspar (三河長石)",
+        "amount": 60
+      },
+      {
+        "material": "Synthetic wood ash (合成土灰)",
+        "amount": 40
+      }
+    ],
+    "additives": [
+      {
+        "material": "Copper oxide",
+        "amount": 4
+      }
+    ],
+    "sources": ["J6"]
+  },
+  "sources": [
+    {
+      "id": "J6",
+      "citation": "\"Developing a Cone 6 Traditional Oribe Glaze\" (anonymous blog, 2024-01-26, updated 2024-06-27), quoting Touroji's recipe.",
+      "url": "https://davidsun0.github.io/Q%20Science/QD%20Chemistry/Oribe%20Development.html",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "J7",
+      "citation": "Krichev J. and Coppage R., \"Oribe Ware\", Ceramics Monthly, February 2025.",
+      "url": "https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/oribe-ware",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "J2",
+      "citation": "Digitalfire, \"Mikawa Feldspar\".",
+      "url": "https://digitalfire.com/material/mikawa+feldspar",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "J1",
+      "citation": "吉田博和, 尾上彩, 常世田茂, 佐藤剛「笠間焼の新素地・新釉薬の開発」, 茨城県工業技術センター研究報告 第43号 (2014), Table 6.",
+      "url": "https://www.itic.pref.ibaraki.jp/publication/doc/research/h26/vol43_12.pdf",
+      "opened": "2026-11-04"
+    }
+  ],
+  "gaps": [
+    "The recipe comes from a blog quoting Touroji; Touroji's own page or a Japanese test-centre Oribe recipe is not yet opened.",
+    "Synthetic ash stands in for the wood ash the recipe names.",
+    "Mikawa feldspar and synthetic wood ash are not in the standard library yet (branch r14-native-materials)."
+  ],
+  "guides": ["/guides/firing", "/guides/safe-mixing"]
+}

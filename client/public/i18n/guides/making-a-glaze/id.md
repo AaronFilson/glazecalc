@@ -144,7 +144,7 @@ Air juga bervariasi, dan Digitalfire mencatat bahwa air mengubah perilaku cairan
 5. Campur sampai tidak ada kantong kering atau gumpalan.
 6. Ayak dua kali (lihat di bawah).
 7. Tutup dan biarkan semalam, lalu campur lagi dan periksa dasarnya untuk lapisan keras.
-8. Ukur berat jenisnya, dan tambahkan air sedikit demi sedikit untuk mencapai target Anda.
+8. Ukur berat jenisnya, dan tambahkan air sedikit demi sedikit untuk mencapai target Anda. Untuk mengetahui berat jenis kering glasir Anda sendiri, timbang juga cairan glasir yang sudah jadi (lihat di bawah).
 9. Beri label pada ember, dan catat apa yang Anda lakukan.
 10. Bersihkan dengan cara basah: pel lantai dan lap setiap permukaan, termasuk bagian luar wadah bahan.
 
@@ -205,6 +205,27 @@ Label: Air untuk berat jenis target
 | {{SG 1.50}} |   sekitar 85 mL |  sekitar 850 mL | sekitar 13 US fl oz |
 | {{SG 1.60}} |   sekitar 64 mL |  sekitar 640 mL | sekitar 10 US fl oz |
 
+### Cari berat jenis kering glasir Anda sendiri saat mencampur
+
+Angka 2,6 di atas adalah tebakan. Angka glasir Anda sendiri, yaitu massa jenis bubuk keringnya, dapat dihitung dari tiga angka yang dapat Anda ambil saat mencampur. Dengan angka itu, kelak Anda dapat menghitung dari berat jenis berapa banyak bubuk dalam ember mana pun berisi glasir itu, dan air untuk batch berikutnya. Ini hitungan kami, bukan dari sumber:
+
+1. Catat berat bubuk kering dalam batch: jumlah total resep.
+2. Timbang ember kosong sebelum Anda mulai, atau tandai beratnya pada ember.
+3. Campur, ayak, dan bawa glasir ke berat jenisnya seperti biasa. Dorong semuanya melalui ayakan dan bilas ke dalam ember, supaya tidak ada bubuk yang tertinggal.
+4. Timbang ember yang penuh dan kurangi berat ember. Itulah berat cairan glasir.
+5. Ukur berat jenisnya.
+
+Lalu:
+
+- **Air** = berat cairan glasir − berat bubuk.
+- **Volume cairan glasir** dalam mL = berat cairan glasir dalam gram ÷ berat jenis.
+- **Volume bubuk** = volume cairan glasir − air (1 g air adalah 1 mL).
+- **Berat jenis kering** = berat bubuk ÷ volume bubuk.
+
+Contohnya: 1000 g bubuk menjadi 1980 g cairan glasir pada {{SG 1.45}}. Airnya 980 g, cairan glasirnya 1980 ÷ 1,45 = sekitar 1366 mL, bubuk menempati 1366 − 980 = 386 mL, dan berat jenis keringnya 1000 ÷ 386 = sekitar 2,59.
+
+Timbang seluruh cairan glasir di akhir, bukan air saat Anda menuangnya, supaya air yang menguap atau terpercik tidak terhitung. Kesalahan kecil membesar di sini: pembacaan berat jenis yang meleset 0,01 menggeser hasilnya sekitar 2 sampai 4%, lebih banyak untuk glasir yang lebih encer. Pakai batch 1 kg atau lebih, timbangan yang akurat, dan cara cangkir 500 g di atas untuk berat jenis. Sebagian besar bahan umum berada di antara sekitar 2,5 dan 2,9, jadi angka yang jauh di luar itu, pada glasir tanpa banyak zirkon atau timbal, kemungkinan berarti kesalahan pengukuran. Tulis angkanya pada resep.
+
 ### Garam Epsom, gom CMC, dan bentonit
 
 **Garam Epsom** membuat glasir menggel sedikit saat diam dan mengalir lagi saat diaduk. Ini disebut **memflokulasi**nya, dan glasir yang berperilaku demikian **tiksotropik**: dioleskan lebih merata, lebih sedikit menetes dan lebih sedikit mengendap. Digitalfire menyarankan mulai dari sekitar 2 g per galon setelah berat jenis tepat (kira-kira 0,5 g per liter, konversi kami) dan menyetel jumlahnya setiap kali Anda mencampur, karena tidak ada resep yang sebaiknya menetapkan dosisnya. Kami menyarankan melarutkannya dalam sedikit air panas lebih dulu. Dalam contoh Digitalfire, glasir dengan {{SG 1.45}} menetes, jadi air menurunkannya ke {{SG 1.43}} dan garam Epsom menggelkannya kembali menjadi seperti krim, dan glasir terpakai merata. Pemeriksaan kasar: aduk, berhenti, dan amati. Glasir yang menggel terus bergerak sekitar 2 atau 3 detik, lalu berhenti dan sedikit memantul kembali.
@@ -227,7 +248,7 @@ Glasir dapat tampak sangat berbeda pada tanah liat lain atau di tungku lain: Cla
 - satu perubahan pada satu waktu
 - satu kali celup dan dua kali celup, untuk melihat glasir tipis dan tebal
 - setiap ubin dalam muatan tungku yang sama
-- tanda pada setiap ubin sebelum pembakaran, dengan stempel, ukiran, atau pensil underglaze.
+- tanda pada setiap ubin sebelum pembakaran, dengan stempel, ukiran, atau pensil underglaze. Ubin yang sudah dibakar tampak mirip, dan tanda yang dibuat sebelum pembakaran bertahan melewati tungku, jadi Anda selalu dapat tahu resep mana setiap ubin.
 
 Kami menyarankan ubin yang berdiri tegak, karena ubin datar menyembunyikan seberapa jauh glasir mengalir, dengan pita bertekstur untuk menunjukkan bagaimana glasir berubah warna di tepi, dan kaki yang kosong. Taruh masing-masing di piring kecil atau serpihan biskuit, atau di rak yang diberi kiln wash, untuk menangkap tetesan. Taruh **kerucut saksi**{{en: witness cone}}, kerucut keramik kecil yang menekuk saat sudah menerima cukup panas, di dekat ubin untuk menunjukkan apa yang diterimanya; [panduan membakar](/guides/firing) menjelaskan kerucut. Beri setiap ubin kode singkat, dan tuliskan di samping resep dalam catatan Anda. Willers, menulis untuk Ceramic Arts Network, memakai angka dan huruf, dan menulis sistemnya sendiri di halaman depan buku catatan.
 
@@ -265,13 +286,13 @@ Willers merumuskan tujuannya dengan baik: "informasi yang cukup untuk dapat meng
 Table: Apa yang dicatat untuk setiap batch glasir (templat kami)
 Label: Templat catatan
 
-| Bagian       | Yang dituliskan                                                                                                                                                                                                                          |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resep        | Resep dan versinya; merek bahan dan nomor lot; penggantian apa pun                                                                                                                                                                       |
-| Pencampuran  | Tanggal; ukuran batch; air yang ditambahkan, dan jenisnya (keran, osmosis balik, atau suling); berat jenis setelah pencampuran dan berat jenis akhir; garam Epsom, CMC, dan bentonit yang ditambahkan; mesh ayakan dan jumlah kali lewat |
-| Pengglasiran | Bodi tanah liat; kerucut biskuit; pencelupan, pengkuasan, atau penuangan; waktu celup atau jumlah lapis; ketebalan kering                                                                                                                |
-| Pembakaran   | Tungku dan posisi rak; jadwal pembakaran, dengan ramp, penahanan, dan pendinginannya; atmosfer (oksidasi atau reduksi); apa yang ditunjukkan kerucut saksi, bukan hanya apa yang diatur pada tungku                                      |
-| Hasil        | Permukaan dan warna; pengaliran, retak halus, atau lubang jarum apa pun; foto bagian depan, belakang, dan samping; kode ubin                                                                                                             |
+| Bagian       | Yang dituliskan                                                                                                                                                                                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resep        | Resep dan versinya; merek bahan dan nomor lot; penggantian apa pun                                                                                                                                                                                                                                         |
+| Pencampuran  | Tanggal; ukuran batch; air yang ditambahkan, dan jenisnya (keran, osmosis balik, atau suling); berat jenis setelah pencampuran dan berat jenis akhir; berat cairan glasir yang sudah jadi, untuk berat jenis keringnya; garam Epsom, CMC, dan bentonit yang ditambahkan; mesh ayakan dan jumlah kali lewat |
+| Pengglasiran | Bodi tanah liat; kerucut biskuit; pencelupan, pengkuasan, atau penuangan; waktu celup atau jumlah lapis; ketebalan kering                                                                                                                                                                                  |
+| Pembakaran   | Tungku dan posisi rak; jadwal pembakaran, dengan ramp, penahanan, dan pendinginannya; atmosfer (oksidasi atau reduksi); apa yang ditunjukkan kerucut saksi, bukan hanya apa yang diatur pada tungku                                                                                                        |
+| Hasil        | Permukaan dan warna; pengaliran, retak halus, atau lubang jarum apa pun; foto bagian depan, belakang, dan samping; kode ubin                                                                                                                                                                               |
 
 > [!NOTE]
 > Di Glazecalc, [resep](/recipe) yang tersimpan memuat resepnya sendiri. [Catatan pembakaran](/firing) mencatat setiap pembakaran: tungku, tanggal, waktu, suhu, kerucut, dan catatan. [Catatan](/notes) memuat semua hal lain, seperti catatan batch di atas dan apa yang ditunjukkan setiap ubin.

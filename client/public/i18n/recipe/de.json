@@ -724,7 +724,7 @@
     "keyBright": "Gepunktete Linie: wo Stulls Glasuren am glänzendsten waren.",
     "keyLimits": "Gestrichelte Linien und Schattierung: die Kieselsäure- und Tonerdebereiche von {name}.",
     "keyCrazed": "Schraffur: wo sie Haarrisse bekamen.",
-    "note": "Ein Anhaltspunkt, keine Vorhersage. R. T. Stull (Transactions of the American Ceramic Society, 1912) brannte bei Kegel 11, mit festen Flussmitteln von 0,3 K₂O und 0,7 CaO; andere Flussmittel und Brände verschieben die Bereiche, und ein zu schwach gebranntes Matt kann als glänzend eingetragen werden. Die Bereiche sind so, wie Glazy sie zeichnet."
+    "note": "Eine Richtschnur, keine Vorhersage. R. T. Stull (Transactions of the American Ceramic Society, 1912) brannte auf etwa Kegel 11, mit festen Flussmitteln von 0,3 K₂O und 0,7 CaO; andere Flussmittel und Brände verschieben die Bereiche, und eine Glasur, die nur matt ist, weil sie zu schwach gebrannt wurde, kann trotzdem im glänzenden Bereich liegen. Die Bereiche sind so gezeichnet wie bei Glazy."
   },
   "slurry": {
     "heading": "Spezifisches Gewicht und Wasser",
@@ -752,7 +752,17 @@
       "pint": "Das gewünschte Pint-Gewicht, oz"
     },
     "drySg": "SG der trockenen Rohstoffe",
-    "drySgHelp": "Etwa 2,5 für die meisten Glasuren; Glazy verwendet 2,6.",
+    "drySgEmpty": "Nur die Trockengewichte brauchen es, das zuzugebende Wasser nicht. Geben Sie es ein, wenn Sie es kennen.",
+    "drySgNeeded": "Geben Sie das spezifische Gewicht der trockenen Rohstoffe ein, um die trockene Glasur im Eimer und das Wasser für einen neuen Ansatz zu sehen.",
+    "estimate": {
+      "mineral": "Eine Schätzung, {sg}, aus dem, woraus jeder Rohstoff besteht: der gemessenen Dichte seines Minerals. Ändern Sie sie, wenn Sie es besser wissen.",
+      "kind": "Eine Schätzung, {sg}: Feldspäte und Tone wiegen etwa 2,6. Ändern Sie sie, wenn Sie es besser wissen.",
+      "glass": "Eine Schätzung, {sg}, aus den Oxiden der Fritten berechnet (sie sind Glas). Ändern Sie sie, wenn Sie es besser wissen.",
+      "mixed": "Eine Schätzung, {sg}, aus jedem Rohstoff: die gemessene Dichte seines Minerals, etwa 2,6 für Feldspäte und Tone, und Fritten aus ihren Oxiden berechnet. Ändern Sie sie, wenn Sie es besser wissen.",
+      "leftOut": "Weggelassen, da ihr spezifisches Gewicht nicht bekannt ist: {names}.",
+      "none": "Keine Schätzung für dieses Rezept: Das spezifische Gewicht von {names} ist nicht bekannt. Geben Sie es ein, wenn Sie es kennen.",
+      "was": "Ihr Wert wird verwendet. Die Schätzung war {sg}; leeren Sie das Feld, um zu ihr zurückzukehren."
+    },
     "batch": "Trockene Glasur für einen neuen Ansatz, {unit}",
     "contents": "Bei SG {sg} enthält der Eimer {glaze} trockene Glasur und {water} Wasser.",
     "add": "Um SG {target} zu erreichen, geben Sie {water} Wasser zu. Am Ende sind es etwa {volume}.",
@@ -760,6 +770,7 @@
     "already": "Sie hat bereits SG {target}.",
     "mix": "Mischen Sie {glaze} trockene Glasur mit {water} Wasser für etwa {volume} bei SG {target}.",
     "badSg": "Ein SG muss größer als 1 (das des Wassers) und kleiner als das SG der trockenen Rohstoffe, {dry}, sein.",
+    "badSgWater": "Ein spezifisches Gewicht muss größer als 1 sein (das von Wasser).",
     "badDry": "Das SG der trockenen Rohstoffe muss größer als 1 sein.",
     "note": "Das Wasser wird nach Gewicht gerechnet: Ein Liter wiegt ein Kilogramm, eine US-Gallone etwa 8,3 lb. Die Rechnung addiert die Volumen, was nahe dran ist, aber nicht genau: Geben Sie das Wasser nach und nach zu, rühren Sie und messen Sie erneut. Zwei Glasuren mit demselben SG können trotzdem unterschiedlich fließen.",
     "saveTarget": "SG {sg} als Soll-Wert dieses Rezepts speichern",

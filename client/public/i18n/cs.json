@@ -9,6 +9,7 @@
     "homeSafety": "Neotravte svou rodinu – Glazecalc",
     "firing": "Výpal v jednoduché peci – Glazecalc",
     "learnWithJohnBritt": "Učte se s bezplatným kurzem glazur Johna Britta – Glazecalc",
+    "teachingGlazeCalculation": "Výuka výpočtu glazur - Glazecalc",
     "about": "O aplikaci – Glazecalc",
     "privacy": "Ochrana soukromí – Glazecalc",
     "terms": "Podmínky používání – Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Schválení změny – Glazecalc",
     "cones": "Tabulka žároměrek: teploty Ortonových žároměrek a žároměrek SK – Glazecalc",
     "materials": "Standardní suroviny na glazury: rozbor a nebezpečí – Glazecalc",
-    "materialInfo": "{name}: oxidový rozbor a nebezpečí – Glazecalc"
+    "materialInfo": "{name}: oxidový rozbor a nebezpečí – Glazecalc",
+    "famousGlazes": "Slavné glazury - Glazecalc",
+    "famousGlaze": "Glazura {name} - Glazecalc"
   },
   "nav": {
     "skip": "Přejít na obsah",
@@ -169,7 +172,7 @@
     "notANumberPoint": "Zadejte číslo, například {example}, s desetinnou tečkou."
   },
   "meta": {
-    "description": "Zadejte recept na glazuru a uvidíte Segerův vzorec (UMF), poměr SiO₂ : Al₂O₃ a poměr taviv. Zdarma a open source, pro recepty, suroviny a záznamy výpalů.",
+    "description": "Zadejte recept na keramickou glazuru a uvidíte Segerův vzorec (UMF), poměr SiO₂ : Al₂O₃ a poměr taviv. Zdarma a open source, pro recepty, suroviny a výpaly.",
     "guides": "Srozumitelné návody pro začínající keramiky: co je glazura na keramiku, jak ji bezpečně připravit a namíchat, chránit rodinu a vypalovat v jednoduché peci.",
     "glazingBasics": "Z čeho se skládá glazura na keramiku, jak ji pec promění ve sklo a co znamenají žároměrky, frity, Segerův vzorec (UMF) a vady glazur. Návod pro začátečníky.",
     "makingAGlaze": "Jak glazuru koupit, skladovat, navážit a namíchat, nastavit její hustotu, vyzkoušet ji na vlastní hlíně a vést záznamy, abyste ji mohli připravit znovu.",
@@ -177,6 +180,7 @@
     "homeSafety": "Co dělat, když dítě nebo domácí zvíře spolkne surovinu na glazuru, a jak zajistit, aby suroviny, prach, pec i ručně vyrobené nádobí byly pro rodinu bezpečné.",
     "firing": "Výpal v elektrické peci: výběr, umístění a odečítání žároměrek a zveřejněné vypalovací křivky pro přežah a glazurový výpal, s tabulkou žároměrek.",
     "learnWithJohnBritt": "Průvodce k bezplatnému online kurzu glazur Johna Britta: jeho videa lekci po lekci, s návody Glazecalc ke čtení a cvičeními v kalkulačce.",
+    "teachingGlazeCalculation": "6 lekcí pro výuku Segerova vzorce (UMF): suroviny a trojúhelníkové zkušební řady, moly, převod receptu na vzorec a zpět a vady glazur, s řešenými příklady a pracovními listy k vytištění.",
     "advice": "Praktické tipy k míchání, glazování a výpalu od aplikace Glazecalc a k tomu vaše vlastní rady. Zdarma pro hrnčíře a keramiky.",
     "about": "Glazecalc je bezplatná open-source kalkulačka chemie glazur a zápisník receptů. Podívejte se, jak počítá Segerův vzorec (UMF) a jak je postavená.",
     "privacy": "Jak Glazecalc nakládá s vašimi daty: žádné reklamy, analytika ani sledování a nic se neprodává. Co se uchovává, proč a jak uplatnit svá práva.",
@@ -187,6 +191,8 @@
     "materials": "Suroviny ve standardní knihovně Glazecalc, od živců a jílů po frity a zdroje boru, u každé oxidový rozbor, Segerův vzorec a nebezpečí.",
     "materialInfo": "{name}: oxidový rozbor, Segerův vzorec, ztráta žíháním a nebezpečí ve standardní knihovně Glazecalc.",
     "materialInfoLong": "{name} ve standardní knihovně surovin na glazury Glazecalc: oxidový rozbor, příspěvek do Segerova vzorce, ztráta žíháním a nebezpečí.",
+    "famousGlazes": "Slavné glazury z celého světa: tradiční recept nebo historický rozbor každé glazury, její Segerův vzorec a verze ze surovin, které se prodávají tam, kde jste.",
+    "famousGlaze": "Glazura {name} ({native}): její tradiční recept nebo historický rozbor, výpal, Segerův vzorec a zdroje a verze ze surovin, které se prodávají tam, kde jste.",
     "imageAlt": "Logo Glazecalc a jeho nadpis, bezplatná chemie glazur pro keramiky, vedle fotografie vypálených žároměrek."
   },
   "notices": {

@@ -144,7 +144,7 @@ Anche l’acqua varia, e Digitalfire nota che cambia il comportamento della sosp
 5. Mescolare finché non restano sacche asciutte né grumi.
 6. Setacciarlo due volte (vedere sotto).
 7. Coprirlo e lasciarlo riposare per la notte, poi mescolare di nuovo e controllare che sul fondo non ci sia uno strato duro.
-8. Misurare il peso specifico e aggiungere acqua poco alla volta fino al valore voluto.
+8. Misurare il peso specifico e aggiungere acqua poco alla volta fino al valore voluto. Per conoscere il peso specifico a secco del proprio smalto, pesare anche la sospensione finita (vedere sotto).
 9. Etichettare il secchio e annotare cosa si è fatto.
 10. Pulire a umido: lavare il pavimento con il mocio e passare un panno umido su ogni superficie, compreso l’esterno dei contenitori dei materiali.
 
@@ -205,6 +205,27 @@ Label: Acqua per il peso specifico voluto
 | {{SG 1.50}} |          circa 85 mL |    circa 850 mL | circa 13 fl oz USA |
 | {{SG 1.60}} |          circa 64 mL |    circa 640 mL | circa 10 fl oz USA |
 
+### Trovare il peso specifico a secco del proprio smalto durante la preparazione
+
+Il 2,6 qui sopra è un’ipotesi. Il valore del proprio smalto, la densità della sua polvere secca, si può calcolare da tre numeri che si possono prendere durante la preparazione. Con esso si può calcolare, dal peso specifico, quanta polvere c’è in seguito in qualsiasi secchio di quello smalto, e l’acqua per la pesata successiva. Un nostro calcolo, non di una fonte:
+
+1. Annotare il peso della polvere secca della pesata: il totale della ricetta.
+2. Pesare il secchio vuoto prima di cominciare, o scriverci sopra il suo peso.
+3. Mescolare, setacciare e portare lo smalto al suo peso specifico come al solito. Spingere tutto attraverso il setaccio e sciacquarlo nel secchio, così non resta fuori polvere.
+4. Pesare il secchio pieno e togliere il peso del secchio. Questo è il peso della sospensione.
+5. Misurare il peso specifico.
+
+Poi:
+
+- **Acqua** = peso della sospensione − peso della polvere.
+- **Volume della sospensione** in mL = peso della sospensione in grammi ÷ peso specifico.
+- **Volume della polvere** = volume della sospensione − acqua (1 g d’acqua è 1 mL).
+- **Peso specifico a secco** = peso della polvere ÷ volume della polvere.
+
+Per esempio: 1000 g di polvere danno 1980 g di sospensione con {{SG 1.45}}. L’acqua è 980 g, la sospensione è 1980 ÷ 1,45 = circa 1366 mL, la polvere occupa 1366 − 980 = 386 mL, e il peso specifico a secco è 1000 ÷ 386 = circa 2,59.
+
+Pesare tutta la sospensione alla fine, non l’acqua mentre la si versa, così l’acqua che evapora o schizza fuori non conta. Qui i piccoli errori crescono: una lettura del peso specifico sbagliata di 0,01 sposta il risultato di circa il 2–4%, di più per uno smalto più diluito. Usare una pesata da 1 kg o più, una bilancia precisa e, per il peso specifico, il metodo del bicchiere da 500 g descritto sopra. La maggior parte dei materiali comuni sta tra circa 2,5 e 2,9, quindi un valore molto fuori da questo intervallo, in uno smalto senza molto silicato di zirconio o piombo, indica probabilmente un errore di misura. Scrivere il valore sulla ricetta.
+
 ### Sale inglese, CMC e bentonite
 
 Il **sale inglese** (solfato di magnesio) fa gelificare leggermente uno smalto quando sta fermo e lo fa tornare fluido quando lo si mescola. Questo si chiama **flocculare**{{en: flocculating}} lo smalto, e uno smalto che si comporta così è **tissotropico**{{en: thixotropic}}: si stende in modo più uniforme, gocciola meno e si deposita meno. Digitalfire suggerisce di partire da circa 2 g per gallone una volta che il peso specifico è giusto (circa 0,5 g per litro, una nostra conversione) e di regolare la quantità ogni volta che si prepara lo smalto, perché nessuna ricetta dovrebbe fissare la dose. Suggeriamo di scioglierlo prima in un po’ d’acqua calda. In un esempio di Digitalfire, uno smalto con {{SG 1.45}} gocciolava: l’acqua lo ha portato a {{SG 1.43}}, il sale inglese lo ha gelificato fino a renderlo di nuovo cremoso, e si è steso in modo uniforme. Una verifica approssimativa: mescolare, fermarsi e guardare. Uno smalto gelificato continua a muoversi per circa 2 o 3 secondi, poi si ferma e torna un po’ indietro.
@@ -227,7 +248,7 @@ Uno smalto{{en: glaze}} può avere un aspetto molto diverso su un’altra argill
 - una sola modifica alla volta
 - un’immersione singola e una doppia, per vedere lo smalto sottile e spesso
 - tutti i provini nella stessa infornata
-- un segno su ogni provino prima della cottura, con un timbro, un’incisione o una matita sottocristallina.
+- un segno su ogni provino prima della cottura, con un timbro, un’incisione o una matita sottocristallina. I provini cotti si somigliano, e un segno fatto prima della cottura resiste al forno, così si può sempre sapere di quale ricetta è ogni provino.
 
 Suggeriamo provini che stiano in piedi, perché un provino piatto nasconde quanto cola lo smalto, con una fascia in rilievo per vedere come lo smalto schiarisce sugli spigoli e un piede senza smalto. Appoggiare ciascuno su un piattino, su un coccio di biscotto o sul protettivo per piastre, per raccogliere le colature. Mettere vicino ai provini un **cono testimone**{{en: witness cone}}, un piccolo cono di ceramica che si piega quando ha ricevuto abbastanza calore, per mostrare quanto ne hanno ricevuto i provini; la guida [Cuocere in un forno semplice](/guides/firing) spiega i coni. Dare a ogni provino un codice breve e scriverlo accanto alla ricetta nei propri appunti. Willers, in un articolo per Ceramic Arts Network, usa numeri e lettere, e scrive il sistema stesso all’inizio del quaderno.
 
@@ -265,13 +286,13 @@ Willers riassume bene l’obiettivo: «abbastanza informazioni da poter ripetere
 Table: Cosa annotare per ogni pesata di smalto (il nostro modello)
 Label: Modello di registro
 
-| Parte        | Cosa annotare                                                                                                                                                                                                                                                |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Ricetta      | La ricetta e la sua versione; marche dei materiali e numeri di lotto; eventuali sostituzioni                                                                                                                                                                 |
-| Preparazione | Data; peso della pesata; acqua aggiunta e suo tipo (di rubinetto, da osmosi inversa o distillata); peso specifico{{en: SG}} dopo la miscelazione e peso specifico finale; sale inglese, CMC e bentonite aggiunti; mesh del setaccio e numero di passaggi     |
-| Applicazione | Impasto; cono del biscotto{{en: bisque cone}}; immersione, pennellatura o versamento; tempo di immersione o numero di mani; spessore a secco                                                                                                                 |
-| Cottura      | Forno e posizione sulla piastra; la curva di cottura, con rampe, soste e raffreddamento; atmosfera (ossidazione{{en: oxidation}} o riduzione{{en: reduction}}); cosa ha mostrato il cono testimone{{en: witness cone}}, non solo come era impostato il forno |
-| Risultato    | Superficie e colore; eventuali colature, cavillatura{{en: crazing}} o puntinatura{{en: pinholes}}; foto del davanti, del retro e del lato; il codice del provino                                                                                             |
+| Parte        | Cosa annotare                                                                                                                                                                                                                                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ricetta      | La ricetta e la sua versione; marche dei materiali e numeri di lotto; eventuali sostituzioni                                                                                                                                                                                                                                  |
+| Preparazione | Data; peso della pesata; acqua aggiunta e suo tipo (di rubinetto, da osmosi inversa o distillata); peso specifico{{en: SG}} dopo la miscelazione e peso specifico finale; il peso della sospensione finita, per il suo peso specifico a secco; sale inglese, CMC e bentonite aggiunti; mesh del setaccio e numero di passaggi |
+| Applicazione | Impasto; cono del biscotto{{en: bisque cone}}; immersione, pennellatura o versamento; tempo di immersione o numero di mani; spessore a secco                                                                                                                                                                                  |
+| Cottura      | Forno e posizione sulla piastra; la curva di cottura, con rampe, soste e raffreddamento; atmosfera (ossidazione{{en: oxidation}} o riduzione{{en: reduction}}); cosa ha mostrato il cono testimone{{en: witness cone}}, non solo come era impostato il forno                                                                  |
+| Risultato    | Superficie e colore; eventuali colature, cavillatura{{en: crazing}} o puntinatura{{en: pinholes}}; foto del davanti, del retro e del lato; il codice del provino                                                                                                                                                              |
 
 > [!NOTE]
 > In Glazecalc, una [ricetta](/recipe) salvata contiene la ricetta stessa. Un [registro di cottura](/firing) registra ogni cottura: il forno, la data, gli orari, le temperature, i coni e le note. Le [note](/notes) contengono tutto il resto, come la scheda della pesata qui sopra e cosa ha mostrato ogni provino.

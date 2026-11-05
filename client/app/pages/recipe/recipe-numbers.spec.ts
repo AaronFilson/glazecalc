@@ -249,6 +249,7 @@ describe('SlurryCalculator', () => {
     const { fixture, root, type } = await create();
     const live = root.querySelector('[aria-live][data-testid=slurry-announced]')!;
     expect(root.querySelector('.slurry-results')?.hasAttribute('aria-live')).toBe(false);
+    await type('slurry-dry', '2.5');
     await type('slurry-volume', '1');
     await type('slurry-volume', '10');
     await type('slurry-measured', '1.5');
@@ -261,6 +262,7 @@ describe('SlurryCalculator', () => {
 
   it('words its results again when the language is switched', async () => {
     const { fixture, root, type } = await create();
+    await type('slurry-dry', '2.5');
     await type('slurry-volume', '10');
     await type('slurry-measured', '1.5');
     expect(text(fixture, '.slurry-results')).toContain('the bucket holds');
@@ -279,6 +281,7 @@ describe('SlurryCalculator', () => {
     const { fixture, root, type } = await create();
     expect((root.querySelector('#slurry-target') as HTMLInputElement).value).toBe('1.45');
     expect(text(fixture, 'label[for=slurry-measured]')).toBe('Its SG now');
+    await type('slurry-dry', '2.5');
     await type('slurry-volume', '10');
     await type('slurry-measured', '1.5');
     const results = text(fixture, '.slurry-results');
@@ -292,6 +295,78 @@ describe('SlurryCalculator', () => {
     expect(text(fixture, '.slurry-problem')).toBe(
       "An SG has to be more than 1 (water's) and less than the dry materials' 2.5."
     );
+  });
+
+  it('leaves the dry SG empty with no estimate: the water to add still works, the dry weights wait for it', async () => {
+    const { fixture, root, type } = await create();
+    expect((root.querySelector('#slurry-dry') as HTMLInputElement).value).toBe('');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('Only the dry weights need it');
+    await type('slurry-volume', '10');
+    await type('slurry-measured', '1.5');
+    await type('slurry-batch', '5');
+    const results = text(fixture, '.slurry-results');
+    expect(results).toContain('To reach SG 1.45, add 1.11 kg of water.');
+    expect(results).not.toContain('the bucket holds');
+    expect(results).not.toContain('Mix 5 kg');
+    expect(results).toContain('Type the SG of the dry materials');
+    // Without a dry SG, only water's bound applies.
+    await type('slurry-measured', '2.7');
+    expect(text(fixture, '.slurry-problem')).toBe('');
+    await type('slurry-measured', '0.9');
+    expect(text(fixture, '.slurry-problem')).toBe("An SG has to be more than 1 (water's).");
+  });
+
+  it('starts the dry SG from the recipe’s estimate and says how it was got and what it left out', async () => {
+    const fixture = TestBed.createComponent(SlurryCalculator);
+    fixture.componentRef.setInput('estimate', {
+      sg: 2.63,
+      basis: 'mixed',
+      parts: [],
+      unknown: ['Bentonite'],
+      unknownShare: 0.02
+    });
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect((root.querySelector('#slurry-dry') as HTMLInputElement).value).toBe('2.63');
+    const help = text(fixture, '[data-testid=slurry-dry-help]');
+    expect(help).toContain('An estimate, 2.63');
+    expect(help).toContain('Bentonite');
+    fixture.componentRef.setInput('estimate', {
+      sg: null,
+      basis: 'none',
+      reason: 'too-much-unknown',
+      parts: [],
+      unknown: ['Gerstley Borate'],
+      unknownShare: 0.2
+    });
+    await fixture.whenStable();
+    expect((root.querySelector('#slurry-dry') as HTMLInputElement).value).toBe('');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('No estimate for this recipe');
+  });
+
+  it('keeps a dry SG typed when the estimate changes, until the field is cleared', async () => {
+    const estimate = (sg: number) => ({ sg, basis: 'mixed' as const, parts: [], unknown: [], unknownShare: 0 });
+    const fixture = TestBed.createComponent(SlurryCalculator);
+    fixture.componentRef.setInput('estimate', estimate(2.63));
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const field = () => root.querySelector('#slurry-dry') as HTMLInputElement;
+    const type = async (value: string) => {
+      field().value = value;
+      field().dispatchEvent(new Event('input'));
+      await fixture.whenStable();
+    };
+    await type('2.4');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('The estimate was 2.63');
+    // A line added to the recipe changes the estimate; the figure typed stays.
+    fixture.componentRef.setInput('estimate', estimate(2.7));
+    await fixture.whenStable();
+    expect(field().value).toBe('2.4');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('The estimate was 2.7');
+    // Cleared, the field takes the estimate again.
+    await type('');
+    expect(field().value).toBe('2.7');
+    expect(text(fixture, '[data-testid=slurry-dry-help]')).toContain('An estimate, 2.7');
   });
 
   it('reads densities and weights as Settings say: Baumé, pint weight, gallons and pounds', async () => {
@@ -309,6 +384,7 @@ describe('SlurryCalculator', () => {
     const pint = await create();
     expect((pint.root.querySelector('#slurry-target') as HTMLInputElement).value).toBe('29');
     expect((pint.root.querySelector('.slurry-pair select') as HTMLSelectElement).value).toBe('usGallon');
+    await pint.type('slurry-dry', '2.5');
     await pint.type('slurry-volume', '2');
     await pint.type('slurry-measured', '30');
     expect(text(pint.fixture, '.slurry-results')).toMatch(/holds \d+ lb [\d.]+ oz of dry glaze/);

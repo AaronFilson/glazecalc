@@ -472,7 +472,7 @@
         <ng-container [ngTemplateOutlet]="numbersPart" />
       }
     }
-    <gc-slurry-calculator [(sgTarget)]="sgTarget" />
+    <gc-slurry-calculator [(sgTarget)]="sgTarget" [estimate]="drySgEstimate()" />
   </div>
   <!-- The editor's parts, placed by the layout chosen above (one recipe, one set of actions). -->
   <ng-template #editorHeading>

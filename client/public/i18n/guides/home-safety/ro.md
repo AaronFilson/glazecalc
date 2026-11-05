@@ -61,7 +61,7 @@ Principalul pericol al plumbului este altul: nu o singură lingură, ci cantită
 
 ## Depozitarea materiilor prime acasă {#storing-materials}
 
-Niciun organism oficial nu stabilește reguli pentru depozitarea acasă a materiilor prime pentru glazuri{{en: glaze materials}}, dar paginile despre sănătate și siguranță sunt de acord: lucrați într-un spațiu separat, departe de copii. Departamentul de sănătate din Pennsylvania, scriind despre hobby-urile în care se folosește plumb, spune: „Folosiți pentru hobby-ul dumneavoastră un spațiu de lucru special destinat sau un garaj și țineți copiii departe de această zonă”.
+Niciun organism oficial nu stabilește reguli pentru depozitarea acasă a materiilor prime pentru glazuri{{en: glaze materials}}, dar paginile despre sănătate și siguranță sunt de acord: lucrați într-un spațiu separat, departe de copii. Departamentul de sănătate din Pennsylvania, scriind despre hobby-urile în care se folosește plumb, spune: „Folosiți pentru hobby-ul dumneavoastră un spațiu de lucru special destinat sau un garaj și țineți copiii departe de această zonă.”
 
 ### Listă de verificare pentru depozitare
 
@@ -82,6 +82,8 @@ Pentru mai multe despre cumpărarea și depozitarea materiilor prime, vedeți gh
 Nu turnați niciodată în chiuvetă sau în grădină glazură ori apa în care ați clătit uneltele de glazură. Crafts Council din Regatul Unit sugerează o găleată separată cu apă pentru spălatul mâinilor, al pensulelor, al sitelor și al uneltelor. Lăsați conținutul găleții să se depună peste noapte, turnați apa limpede de deasupra, apoi uscați glazura depusă și aruncați-o la gunoi (ajunge la groapa de gunoi), niciodată în canalizare.
 
 Vă sugerăm să puneți un capac pe această găleată: sedimentul conține aceleași metale ca glazura, iar animalele de companie beau apă stătătoare. Regulile de eliminare a deșeurilor diferă de la un loc la altul, așa că verificați fișa cu date de securitate a fiecărui produs și, dacă aveți îndoieli, întrebați la primărie sau la compania de apă.
+
+Unele ateliere ard sedimentul uscat înainte de a-l arunca. Îl pun într-un bol de rezervă, care va fi sacrificat: după ardere, bolul nu mai poate fi folosit. Umpleți bolul doar un sfert, pentru că sedimentul face spumă și bule când se topește, și acoperiți-l cu o farfurie. Așezați-l pe o placă acoperită cu strat protector (kiln wash) sau pe o placă de rezervă, în caz că se revarsă. Arderea transformă sedimentul în sticlă, care reține metalele mult mai strâns decât pulberea liberă, așa că este mai sigur la groapa de gunoi. Manipulați sedimentul uscat ca pe glazura uscată, cu mască de protecție respiratorie și fără să faceți praf.
 
 ## Păstrarea prafului în atelier {#keeping-dust-in-the-studio}
 

@@ -22,6 +22,8 @@ export function fontFaces(css: string): FontFace[];
 export function fontPreloads(html: string, faces: FontFace[]): string;
 /** A rendered page with its font preloads ahead of the stylesheet. */
 export function withFontPreloads(html: string, faces: FontFace[]): string;
+/** Why a material's page in another language has English standing in, or null when it has none. */
+export function englishStandsIn(html: string, page: string, code: string): string | null;
 /** What is wrong with a rendered page; empty when it is fine. */
 export function problemsWith(html: string, start: string, code?: string, minText?: number): string[];
 /** A page larger than this, gzipped, fails the build. */

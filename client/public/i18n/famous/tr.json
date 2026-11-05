@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Bu sayfanın bir kısmı henüz çevrilmedi, bu yüzden İngilizce gösteriliyor.",
+  "index": {
+    "crumb": "Ünlü sırlar",
+    "title": "Ünlü sırlar",
+    "lead": "Dünyada tanınan sırlar, her biri kendi geleneksel yerel hammaddelerinden; Seger formülü ve bulunduğunuz yerde satılan hammaddelerle bir sürümüyle birlikte.",
+    "listHeading": "Sırlar",
+    "more": "Başka sırlar da geliyor: her biri, reçetesi ve hammaddeleri okunmuş en az üç kaynağa dayandığında eklenir."
+  },
+  "glaze": {
+    "lead": "Ünlü bir sır ({native}): geleneksel reçetesi ya da analizi, pişirimi ve bulunduğunuz yerde satılan hammaddelerle bir sürümü.",
+    "aboutHeading": "{name} hakkında",
+    "nativeName": "Yerel adı",
+    "origin": "Nerede",
+    "period": "Ne zaman",
+    "firing": "Pişirim",
+    "cone": "{cone} numaralı Orton piramidi",
+    "historyOnly": "Yalnızca tarih: bu sır kurşunla yapılmıştır. Analizi, karıştırılacak bir reçete olarak değil, tarih olarak gösteriliyor. Aşağıdaki sürüm, kurşunsuz, farklı bir sırdır.",
+    "recipeHeading": "Geleneksel reçete",
+    "material": "Hammadde",
+    "amount": "Miktar",
+    "unityHeading": "Seger formülü",
+    "analysisHeading": "Tarihî analiz",
+    "oxide": "Oksit",
+    "percent": "Ağırlıkça %",
+    "useHeading": "Deneyin",
+    "open": "Bu reçeteyi aç",
+    "openLeadFree": "Kurşunsuz sürümü aç",
+    "leadFreeTitle": "{name} tarzı, kurşunsuz",
+    "allLink": "Tüm ünlü sırlar",
+    "safetyHeading": "Güvenlik",
+    "safeMixing": "Güvenli karıştırma ve havalandırma",
+    "firingGuide": "Basit bir fırında pişirim",
+    "makingGuide": "Sır nasıl hazırlanır",
+    "sourcesHeading": "Kaynaklar",
+    "link": "Aç",
+    "opened": "okunma tarihi: {date}"
+  },
+  "local": {
+    "heading": "Yerel hammaddelerinizle",
+    "leadFreeHeading": "Kurşunsuz sürüm",
+    "intro": "Geleneksel reçetenin Seger formülü, hammadde aldığınız yerde satılan standart hammaddelerle. Görmek için hammadde aldığınız yeri seçin.",
+    "region": "Hammadde aldığınız yer",
+    "proposal": "Önerinin kendi hammaddeleri",
+    "pick": "Seçin…",
+    "untested": "Hesaplandı, henüz deneme pişirimi yapılmadı.",
+    "testFirst": "Herhangi bir üründe kullanmadan önce test karoları pişirin ve gıdaya değen bir yüzeyde salım testi yaptırın.",
+    "untestedNote": "Hesaplandı, henüz deneme pişirimi yapılmadı: kullanmadan önce test karoları pişirin.",
+    "close": "Hedef formüle yaklaşıyor.",
+    "fair": "Hedef formüle oldukça yaklaşıyor.",
+    "poor": "Bu hammaddeler hedef formüle yaklaşamıyor.",
+    "none": "Orada satılan hammaddelerle yapılamıyor.",
+    "choose": "Orada satılan hammaddelerle yapılmış hâlini görmek için hammadde aldığınız yeri seçin."
+  },
+  "atmospheres": {
+    "oxidation": "oksidasyon",
+    "reduction": "redüksiyon",
+    "neutral": "nötr",
+    "wood": "odun pişirimi",
+    "salt": "tuz pişirimi",
+    "soda": "soda pişirimi"
+  }
+}

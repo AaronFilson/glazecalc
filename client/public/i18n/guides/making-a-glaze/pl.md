@@ -123,9 +123,9 @@ Derek Au waży wszystko do jednej miski, w osobnych kupkach, żeby pomyłkę da�
 
 ### Ile wody
 
-Źródła nie są zgodne. Derek Au zaczyna od gęstej zawiesiny{{en: slurry}}: 50 mL wody na 100 g proszku, a później dolewa więcej. Potterycrafts podaje dla jednego ze swoich szkliw w proszku 65 mL na 100 g. W UT Austin stosuje się równe masy wody i proszku, a gdy w Digitalfire wsypano 20 kg proszku do 20 kg wody, zmierzono gęstość względną{{en: specific gravity}} 1,46.
+Źródła nie są zgodne. Derek Au zaczyna od gęstej zawiesiny{{en: slurry}}: 50 mL wody na 100 g proszku, a później dolewa więcej. Potterycrafts podaje dla jednego ze swoich szkliw w proszku 65 mL na 100 g. W UT Austin stosuje się równe masy wody i proszku, a gdy w Digitalfire wsypano 20 kg proszku do 20 kg wody, zmierzono gęstość względną{{en: specific gravity}} 1,46.
 
-Wodę łatwo dodać, a trudno usunąć, dlatego trzeba zaczynać od mniejszej ilości. Według naszych szacunków należy zacząć od **ok. 70–80 mL na 100 g** (700–800 mL na kilogram, czyli ok. 11–12 US fl oz na funt). Przy takiej gęstości należy szkliwo{{en: glaze}} namoczyć, wymieszać i przesiać, a potem dolewać wodę po trochu, aż gęstość względna będzie właściwa. Woda waży 1 g na 1 mL, więc można ją odważyć. Jeśli doda się jej za dużo, należy odczekać, aż szkliwo osiądzie, a potem zebrać gąbką lub zlać czystą wodę znad osadu.
+Wodę łatwo dodać, a trudno usunąć, dlatego trzeba zaczynać od mniejszej ilości. Według naszych szacunków należy zacząć od **ok. 70–80 mL na 100 g** (700–800 mL na kilogram, czyli ok. 11–12 US fl oz na funt). Przy takiej gęstości należy szkliwo{{en: glaze}} namoczyć, wymieszać i przesiać, a potem dolewać wodę po trochu, aż gęstość względna będzie właściwa. Woda waży 1 g na 1 mL, więc można ją odważyć. Jeśli doda się jej za dużo, należy odczekać, aż szkliwo osiądzie, a potem zebrać gąbką lub zlać czystą wodę znad osadu.
 
 ### Narzędzia i woda
 
@@ -138,19 +138,19 @@ Woda też bywa różna, a Digitalfire zauważa, że zmienia ona zachowanie zawie
 ### Krok po kroku
 
 1. Założyć półmaskę filtrującą, a jeśli ręce będą w szkliwie, także gumowe rękawice. Zakin nosi półmaskę od rozpoczęcia ważenia aż do zwilżenia szkliwa.
-2. Odmierzyć do wiadra ok. 70–80 mL wody na 100 g proszku.
+2. Odmierzyć do wiadra ok. 70–80 mL wody na 100 g proszku.
 3. Ostrożnie, z niewielkiej wysokości, dodać odważony proszek. W UT Austin wsypuje się proszek do ciepłej wody; Zakin i Au wlewają wodę do proszku. Proponujemy wsypywać proszek do wody, bo wzbija się wtedy mniej pyłu, z wyjątkiem receptur z dużą ilością bentonitu: w nich najpierw należy wymieszać ze sobą suche proszki.
 4. **Namoczyć**: pozostawić proszek, by nasiąkł wodą, bez mieszania. W Digitalfire czeka się ok. 20 minut. Proszki z klejem lub spoiwem muszą postać przez noc.
 5. Mieszać, aż znikną suche miejsca i grudki.
 6. Przesiać dwukrotnie (zob. niżej).
 7. Przykryć i odstawić na noc, potem ponownie wymieszać i sprawdzić, czy na dnie nie powstała twarda warstwa.
-8. Zmierzyć gęstość względną i dolewać wodę po trochu, aż do osiągnięcia wartości docelowej.
+8. Zmierzyć gęstość względną i dolewać wodę po trochu, aż do osiągnięcia wartości docelowej. Aby poznać SG suchego proszku danego szkliwa, należy też zważyć gotową zawiesinę (zob. niżej).
 9. Opisać wiadro i zapisać, co zrobiono.
 10. Posprzątać na mokro: umyć podłogę mopem i przetrzeć każdą powierzchnię, także pojemniki z surowcami z zewnątrz.
 
 ### Przesiewanie
 
-**Sito** to siatka rozpięta w ramie. Przecieranie szkliwa przez sito pędzlem rozbija grudki, które zostają po mieszaniu, i zatrzymuje cząstki, które po wypale dałyby kropki. Im wyższy numer **mesh**, tym drobniejsza siatka: sito 80 mesh ma oczka ok. 0,18 mm, a 100 mesh ok. 0,15 mm.
+**Sito** to siatka rozpięta w ramie. Przecieranie szkliwa przez sito pędzlem rozbija grudki, które zostają po mieszaniu, i zatrzymuje cząstki, które po wypale dałyby kropki. Im wyższy numer **mesh**, tym drobniejsza siatka: sito 80 mesh ma oczka ok. 0,18 mm, a 100 mesh ok. 0,15 mm.
 
 Źródła zalecają różne sita. Zakin przesiewa dwukrotnie przez sito 50 lub 80 mesh. Derek Au używa sita 120 mesh do większości szkliw, zwłaszcza z kobaltem lub żelazem: po trzykrotnym przesianiu przez 80 mesh w pewnym celadonie wciąż zostawały kropki żelaza, a jedno przesianie przez 120 mesh usunęło problem. Sit 60–80 mesh używa do szkliw popiołowych i innych z gruboziarnistymi surowcami. Brytyjska firma Potterycrafts proponuje 60–80 mesh. Bezpieczny wybór domyślny:
 
@@ -165,16 +165,16 @@ Label: Sito (mesh)
 
 ## Gęstość względna {#specific-gravity}
 
-**Gęstość względna**{{en: specific gravity}} (SG) mówi, ile proszku jest w zawiesinie{{en: slurry}}. To masa pewnej objętości szkliwa{{en: glaze}} podzielona przez masę takiej samej objętości wody. Dla wody wynosi ona 1,00, a szkliwo o {{SG 1.45}} waży 145 g na 100 mL. Rozrabianie do zmierzonej SG pozwala za każdym razem uzyskać tę samą konsystencję i taką samą warstwę. Gęstość względna nie ma jednostki, więc jest taka sama w gramach i w uncjach.
+**Gęstość względna**{{en: specific gravity}} (SG) mówi, ile proszku jest w zawiesinie{{en: slurry}}. To masa pewnej objętości szkliwa{{en: glaze}} podzielona przez masę takiej samej objętości wody. Dla wody wynosi ona 1,00, a szkliwo o {{SG 1.45}} waży 145 g na 100 mL. Rozrabianie do zmierzonej SG pozwala za każdym razem uzyskać tę samą konsystencję i taką samą warstwę. Gęstość względna nie ma jednostki, więc jest taka sama w gramach i w uncjach.
 
-### Pomiar przez zważenie 100 mL
+### Pomiar przez zważenie 100 mL
 
 1. Zamieszać szkliwo, aby nic nie zostało na dnie.
-2. Postawić na wadze **cylinder miarowy** na 100 mL (wysokie naczynie pomiarowe z podziałką) lub strzykawkę na 100 mL i wytarować wagę.
-3. Napełnić go szkliwem dokładnie do 100 mL, odczytując kreskę na wysokości oczu.
-4. Zważyć i podzielić liczbę gramów przez 100: 145 g to SG 1,45.
+2. Postawić na wadze **cylinder miarowy** na 100 mL (wysokie naczynie pomiarowe z podziałką) lub strzykawkę na 100 mL i wytarować wagę.
+3. Napełnić go szkliwem dokładnie do 100 mL, odczytując kreskę na wysokości oczu.
+4. Zważyć i podzielić liczbę gramów przez 100: 145 g to SG 1,45.
 
-W Digitalfire zaznacza się też na kubku poziom 500 g wody, napełnia go szkliwem do tej kreski i dzieli masę przez 500; większa, pełniejsza miara jest dokładniejsza. **Areometr**, czyli pływak, z którego odczytuje się wynik na poziomie szkliwa, działa szybko, ale może źle mierzyć szkliwa gęste lub zżelowane. Brytyjskie areometry, np. firmy Potclays, mają skalę w stopniach Baumé (°Bé). Według naszych obliczeń SG = 145 ÷ (145 − °Bé), więc 46 °Bé to ok. 1,46. Starsze brytyjskie książki podają **masę pinty**, czyli liczbę uncji w pincie imperialnej szkliwa: należy ją podzielić przez 20, więc 29 oz to ok. SG 1,45 (to również nasze obliczenia).
+W Digitalfire zaznacza się też na kubku poziom 500 g wody, napełnia go szkliwem do tej kreski i dzieli masę przez 500; większa, pełniejsza miara jest dokładniejsza. **Areometr**, czyli pływak, z którego odczytuje się wynik na poziomie szkliwa, działa szybko, ale może źle mierzyć szkliwa gęste lub zżelowane. Brytyjskie areometry, np. firmy Potclays, mają skalę w stopniach Baumé (°Bé). Według naszych obliczeń SG = 145 ÷ (145 − °Bé), więc 46 °Bé to ok. 1,46. Starsze brytyjskie książki podają **masę pinty**, czyli liczbę uncji w pincie imperialnej szkliwa: należy ją podzielić przez 20, więc 29 oz to ok. SG 1,45 (to również nasze obliczenia).
 
 ### Wartości docelowe
 
@@ -193,31 +193,52 @@ Aby ocenić szkliwo do zanurzania na oko, w firmie AMACO zanurza się płytkę n
 
 ### Ilość wody dla docelowej gęstości względnej: nasze szacunki
 
-Poniższa tabela to nasze własne obliczenia, a nie dane ze źródła. Zakłada, że cząstki proszku mają gęstość 2,6 g na cm³, co jest założeniem, a nie wynikiem pomiaru. Glina, surowce rozpuszczalne i żelowanie zmieniają rzeczywiste szkliwo, dlatego tabela służy jako punkt wyjścia, a potem trzeba mierzyć. Dla sprawdzenia: przy równych masach proszku i wody przewiduje ona {{SG 1.44}}, blisko zmierzonej przez Digitalfire wartości {{SG 1.46}}. Pokazuje też, że przy 70–80 mL na 100 g zaczyna się powyżej {{SG 1.50}}, czyli gęściej, niż potrzeba.
+Poniższa tabela to nasze własne obliczenia, a nie dane ze źródła. Zakłada, że cząstki proszku mają gęstość 2,6 g na cm³, co jest założeniem, a nie wynikiem pomiaru. Glina, surowce rozpuszczalne i żelowanie zmieniają rzeczywiste szkliwo, dlatego tabela służy jako punkt wyjścia, a potem trzeba mierzyć. Dla sprawdzenia: przy równych masach proszku i wody przewiduje ona {{SG 1.44}}, blisko zmierzonej przez Digitalfire wartości {{SG 1.46}}. Pokazuje też, że przy 70–80 mL na 100 g zaczyna się powyżej {{SG 1.50}}, czyli gęściej, niż potrzeba.
 
 Table: Ilość wody dla docelowej gęstości względnej (nasze szacunki)
 Label: Ilość wody dla docelowej gęstości względnej
 
-| Wartość docelowa | Na 100 g proszku | Na kilogram |         Na funt |
+| Wartość docelowa | Na 100 g proszku | Na kilogram |         Na funt |
 | ---------------- | ---------------: | ----------: | --------------: |
-| {{SG 1.40}}      |       ok. 115 mL | ok. 1150 mL | ok. 18 US fl oz |
-| {{SG 1.45}}      |        ok. 98 mL |  ok. 980 mL | ok. 15 US fl oz |
-| {{SG 1.50}}      |        ok. 85 mL |  ok. 850 mL | ok. 13 US fl oz |
-| {{SG 1.60}}      |        ok. 64 mL |  ok. 640 mL | ok. 10 US fl oz |
+| {{SG 1.40}}      |       ok. 115 mL | ok. 1150 mL | ok. 18 US fl oz |
+| {{SG 1.45}}      |        ok. 98 mL |  ok. 980 mL | ok. 15 US fl oz |
+| {{SG 1.50}}      |        ok. 85 mL |  ok. 850 mL | ok. 13 US fl oz |
+| {{SG 1.60}}      |        ok. 64 mL |  ok. 640 mL | ok. 10 US fl oz |
+
+### SG suchego szkliwa: pomiar podczas rozrabiania
+
+Wartość 2,6 podana wyżej to przypuszczenie. Wartość dla konkretnego szkliwa, czyli gęstość jego suchego proszku, można obliczyć z trzech liczb, które da się zebrać podczas rozrabiania. Dzięki niej można później obliczyć z SG, ile proszku jest w dowolnym wiadrze tego szkliwa, i ile wody potrzeba na następną porcję. To nasze obliczenia, a nie dane ze źródła:
+
+1. Zapisać masę suchego proszku w porcji: sumę z receptury.
+2. Zważyć puste wiadro przed rozpoczęciem albo zapisać na nim jego masę.
+3. Rozrobić i przesiać szkliwo oraz doprowadzić je do jego SG jak zwykle. Przetrzeć wszystko przez sito i spłukać je do wiadra, żeby nie został żaden proszek.
+4. Zważyć pełne wiadro i odjąć masę wiadra. To masa zawiesiny.
+5. Zmierzyć SG.
+
+Następnie:
+
+- **Woda** = masa zawiesiny − masa proszku.
+- **Objętość zawiesiny** w mL = masa zawiesiny w gramach ÷ SG.
+- **Objętość proszku** = objętość zawiesiny − woda (1 g wody to 1 mL).
+- **SG suchego szkliwa** = masa proszku ÷ objętość proszku.
+
+Na przykład: z 1000 g proszku powstaje 1980 g zawiesiny o {{SG 1.45}}. Woda to 980 g, zawiesina ma 1980 ÷ 1,45 = ok. 1366 mL, proszek zajmuje 1366 − 980 = 386 mL, a SG suchego szkliwa wynosi 1000 ÷ 386 = ok. 2,59.
+
+Całą zawiesinę należy zważyć na końcu, a nie ważyć wody podczas wlewania, żeby nie liczyła się woda, która odparuje lub się rozpryśnie. Małe błędy rosną tu w wyniku: odczyt SG różniący się o 0,01 zmienia wynik o ok. 2–4 %, a w rzadszym szkliwie bardziej. Należy użyć porcji 1 kg lub większej, dokładnej wagi i opisanej wyżej metody kubka na 500 g do pomiaru SG. Większość popularnych surowców ma wartości od ok. 2,5 do 2,9, więc wynik daleko poza tym zakresem, w szkliwie bez dużej ilości krzemianu cyrkonu lub ołowiu, oznacza prawdopodobnie błąd pomiaru. Wynik należy zapisać przy recepturze.
 
 ### Sól gorzka, klej CMC i bentonit
 
-**Sól gorzka** (siarczan magnezu) sprawia, że szkliwo lekko tężeje w żel, gdy stoi, i znowu płynie po zamieszaniu. Nazywa się to **flokulacją**{{en: flocculating}}, a szkliwo, które tak się zachowuje, jest **tiksotropowe**{{en: thixotropic}}: nakłada się równiej, mniej kapie i mniej osiada. Digitalfire proponuje, by po ustaleniu właściwej SG zacząć od ok. 2 g na galon (w przybliżeniu 0,5 g na litr, w naszym przeliczeniu) i dostrajać ilość przy każdym rozrabianiu, bo żadna receptura nie powinna ustalać dawki na sztywno. Proponujemy najpierw rozpuścić sól w niewielkiej ilości gorącej wody. W przykładzie z Digitalfire szkliwo o {{SG 1.45}} kapało, więc rozrzedzono je wodą do {{SG 1.43}}, a sól gorzka z powrotem nadała mu kremową konsystencję i szkliwo nałożyło się równo. Prosty sprawdzian: zamieszać, przestać i obserwować. Zżelowane szkliwo płynie jeszcze przez ok. 2 lub 3 sekundy, potem zatrzymuje się i lekko cofa.
+**Sól gorzka** (siarczan magnezu) sprawia, że szkliwo lekko tężeje w żel, gdy stoi, i znowu płynie po zamieszaniu. Nazywa się to **flokulacją**{{en: flocculating}}, a szkliwo, które tak się zachowuje, jest **tiksotropowe**{{en: thixotropic}}: nakłada się równiej, mniej kapie i mniej osiada. Digitalfire proponuje, by po ustaleniu właściwej SG zacząć od ok. 2 g na galon (w przybliżeniu 0,5 g na litr, w naszym przeliczeniu) i dostrajać ilość przy każdym rozrabianiu, bo żadna receptura nie powinna ustalać dawki na sztywno. Proponujemy najpierw rozpuścić sól w niewielkiej ilości gorącej wody. W przykładzie z Digitalfire szkliwo o {{SG 1.45}} kapało, więc rozrzedzono je wodą do {{SG 1.43}}, a sól gorzka z powrotem nadała mu kremową konsystencję i szkliwo nałożyło się równo. Prosty sprawdzian: zamieszać, przestać i obserwować. Zżelowane szkliwo płynie jeszcze przez ok. 2 lub 3 sekundy, potem zatrzymuje się i lekko cofa.
 
-**Klej CMC** (karboksymetyloceluloza) sprawia, że zawiesina jest bardziej lepka i wolniej schnie, a po wyschnięciu tworzy twardszą warstwę, która dobrze trzyma się naczynia. Ma największe znaczenie w szkliwach do malowania pędzlem i szkliwach z dużą zawartością fryty{{en: frit}}. W przykładzie z Digitalfire miesza się 3,75 g z 1000 g zawiesiny i trzeba to zrobić blenderem. Szkliwo z CMC nie zżeluje się pod wpływem soli gorzkiej, a ponieważ drobnoustroje żywią się klejem, może się zmieniać w wiadrze i zacząć nieprzyjemnie pachnieć.
+**Klej CMC** (karboksymetyloceluloza) sprawia, że zawiesina jest bardziej lepka i wolniej schnie, a po wyschnięciu tworzy twardszą warstwę, która dobrze trzyma się naczynia. Ma największe znaczenie w szkliwach do malowania pędzlem i szkliwach z dużą zawartością fryty{{en: frit}}. W przykładzie z Digitalfire miesza się 3,75 g z 1000 g zawiesiny i trzeba to zrobić blenderem. Szkliwo z CMC nie zżeluje się pod wpływem soli gorzkiej, a ponieważ drobnoustroje żywią się klejem, może się zmieniać w wiadrze i zacząć nieprzyjemnie pachnieć.
 
-**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze ze zbyt małą ilością gliny pomaga ok. 1–3 % bentonitu; według Digitalfire szkliwo z ponad 15 % gliny nie powinno potrzebować bentonitu w ilości większej niż 1 % masy suchego szkliwa.
+**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze ze zbyt małą ilością gliny pomaga ok. 1–3 % bentonitu; według Digitalfire szkliwo z ponad 15 % gliny nie powinno potrzebować bentonitu w ilości większej niż 1 % masy suchego szkliwa.
 
 ## Płytki testowe i próby liniowe {#testing}
 
 ### Na początek małe ilości
 
-Derek Au zwiększa skalę w trzech krokach: test na 50 lub 100 g, potem, jeśli się powiedzie, próba na 1–2 kg, a na koniec pracowniana porcja 5–10 kg. Według naszych szacunków test na 100 g przy {{SG 1.45}} daje ok. 135 mL (ok. 4½ US fl oz) zawiesiny{{en: slurry}}, czyli tyle, by zanurzyć kilka małych płytek w wąskim kubku.
+Derek Au zwiększa skalę w trzech krokach: test na 50 lub 100 g, potem, jeśli się powiedzie, próba na 1–2 kg, a na koniec pracowniana porcja 5–10 kg. Według naszych szacunków test na 100 g przy {{SG 1.45}} daje ok. 135 mL (ok. 4½ US fl oz) zawiesiny{{en: slurry}}, czyli tyle, by zanurzyć kilka małych płytek w wąskim kubku.
 
 ### Testy na własnej glinie
 
@@ -227,31 +248,31 @@ Szkliwo{{en: glaze}} może wyglądać zupełnie inaczej na innej glinie lub w in
 - jedną zmianę naraz
 - jednokrotne i dwukrotne zanurzenie, by zobaczyć szkliwo w cienkiej i grubej warstwie
 - wszystkie płytki w tym samym wsadzie pieca
-- oznaczenie każdej płytki przed wypałem stemplem, rytem lub kredką podszkliwną.
+- oznaczenie każdej płytki przed wypałem stemplem, rytem lub kredką podszkliwną. Wypalone płytki wyglądają podobnie, a oznaczenie zrobione przed wypałem przetrwa piec, więc zawsze wiadomo, z której receptury jest każda płytka.
 
-Proponujemy płytki stojące (płaska płytka ukrywa, jak daleko szkliwo spływa), z pasem faktury, który pokaże, jak szkliwo zmienia barwę na krawędziach, oraz z nieszkliwioną stopką. Każdą płytkę należy postawić na małej podstawce, kawałku biskwitu lub warstwie pobiałki, aby zebrać krople. Obok płytek należy umieścić **stożek kontrolny**{{en: witness cone}}, czyli mały ceramiczny stożek, który wygina się, gdy otrzyma dość ciepła, aby pokazać, ile ciepła otrzymały płytki; [poradnik o wypale](/guides/firing) wyjaśnia, jak działają stożki. Każda płytka powinna dostać krótki kod, który zapisuje się przy recepturze w notatkach. Willers w artykule dla Ceramic Arts Network używa liczb i liter, a sam system zapisuje na początku zeszytu.
+Proponujemy płytki stojące (płaska płytka ukrywa, jak daleko szkliwo spływa), z pasem faktury, który pokaże, jak szkliwo zmienia barwę na krawędziach, oraz z nieszkliwioną stopką. Każdą płytkę należy postawić na małej podstawce, kawałku biskwitu lub płycie pokrytej pobiałką, aby zebrać krople. Obok płytek należy umieścić **stożek kontrolny**{{en: witness cone}}, czyli mały ceramiczny stożek, który wygina się, gdy otrzyma dość ciepła, aby pokazać, ile ciepła otrzymały płytki; [poradnik o wypale](/guides/firing) wyjaśnia, jak działają stożki. Każda płytka powinna dostać krótki kod, który zapisuje się przy recepturze w notatkach. Willers w artykule dla Ceramic Arts Network używa liczb i liter, a sam system zapisuje na początku zeszytu.
 
 ### Próby liniowe
 
-**Próba liniowa**{{en: line blend}} to szereg testów, który równymi krokami przechodzi od jednej mieszanki do drugiej: od jednego szkliwa do drugiego albo od szkliwa bazowego do tego samego szkliwa z większą ilością barwnika{{en: colorant}}. Derek Au na przykład zwiększa ilość tlenku żelaza w bezbarwnej bazie co 1 %. Metoda objętościowa związana z nazwiskiem Iana Curriego oszczędza czas, bo rozrabia się tylko dwie skrajne mieszanki:
+**Próba liniowa**{{en: line blend}} to szereg testów, który równymi krokami przechodzi od jednej mieszanki do drugiej: od jednego szkliwa do drugiego albo od szkliwa bazowego do tego samego szkliwa z większą ilością barwnika{{en: colorant}}. Derek Au na przykład zwiększa ilość tlenku żelaza w bezbarwnej bazie co 1 %. Metoda objętościowa związana z nazwiskiem Iana Curriego oszczędza czas, bo rozrabia się tylko dwie skrajne mieszanki:
 
 1. Rozrobić oba skrajne szkliwa, A i B, w porcjach tej samej wielkości i przesiać oba.
 2. Do tego, którego objętość jest mniejsza, dolać wody, aż oba będą miały dokładnie taką samą objętość.
 3. Zamieszać oba, a następnie odmierzyć strzykawką składniki każdej mieszanki do osobnego, ponumerowanego kubka.
 4. Zamieszać zawartość każdego kubka i zanurzyć w nim płytkę.
 
-W naszym przykładzie A to 100 g bezbarwnej bazy, a B to taka sama baza z dodatkiem 4 g tlenku żelaza czerwonego (dodatek 4 %). Każdy mililitr B zawiera tyle samo bazy co mililitr A, a do tego żelazo, więc kolejne kubki przechodzą od braku żelaza do 4 % co 1 %. Każda skrajna mieszanka daje do próby 100 mL, a według naszych szacunków porcja 100 g to pokrywa.
+W naszym przykładzie A to 100 g bezbarwnej bazy, a B to taka sama baza z dodatkiem 4 g tlenku żelaza czerwonego (dodatek 4 %). Każdy mililitr B zawiera tyle samo bazy co mililitr A, a do tego żelazo, więc kolejne kubki przechodzą od braku żelaza do 4 % co 1 %. Każda skrajna mieszanka daje do próby 100 mL, a według naszych szacunków porcja 100 g to pokrywa.
 
-Table: Pięciostopniowa próba liniowa z żelazem, 40 mL na kubek (nasz przykład)
+Table: Pięciostopniowa próba liniowa z żelazem, 40 mL na kubek (nasz przykład)
 Label: Przykład próby liniowej
 
-| Kubek | Bezbarwna baza (A) | Baza z 4 % żelaza (B) | Tlenek żelaza, % bazy |
+| Kubek | Bezbarwna baza (A) | Baza z 4 % żelaza (B) | Tlenek żelaza, % bazy |
 | ----- | -----------------: | --------------------: | --------------------: |
-| 1     |              40 mL |                  0 mL |                     0 |
-| 2     |              30 mL |                 10 mL |                     1 |
-| 3     |              20 mL |                 20 mL |                     2 |
-| 4     |              10 mL |                 30 mL |                     3 |
-| 5     |               0 mL |                 40 mL |                     4 |
+| 1     |              40 mL |                  0 mL |                     0 |
+| 2     |              30 mL |                 10 mL |                     1 |
+| 3     |              20 mL |                 20 mL |                     2 |
+| 4     |              10 mL |                 30 mL |                     3 |
+| 5     |               0 mL |                 40 mL |                     4 |
 
 Metoda wymaga starannych obliczeń, dobrze wymieszanych skrajnych szkliw o jednakowej gęstości względnej{{en: specific gravity}} i dokładnej wagi. Derek Au miesza też według masy zamiast objętości. **Próba trójskładnikowa** robi to samo z trzema skrajnymi mieszankami, rozmieszczonymi na trójkącie.
 
@@ -265,13 +286,13 @@ Willers dobrze ujmuje cel: „tyle informacji, by móc powtórzyć uzyskane wyni
 Table: Co zapisywać przy każdej porcji szkliwa (nasz wzór)
 Label: Wzór zapisu
 
-| Część       | Co zapisać                                                                                                                                                                                                                                      |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Receptura   | Receptura i jej wersja; marki surowców i numery partii; wszelkie zamiany                                                                                                                                                                        |
-| Rozrabianie | Data; wielkość porcji; dodana woda i jej rodzaj (z kranu, z odwróconej osmozy lub destylowana); SG po rozrobieniu i SG końcowa; dodana sól gorzka, CMC i bentonit; sito (mesh) i liczba przesiań                                                |
-| Nakładanie  | Masa ceramiczna; stożek wypału biskwitowego{{en: bisque}}; zanurzanie, malowanie pędzlem lub polewanie; czas zanurzenia lub liczba warstw; grubość warstwy po wyschnięciu                                                                       |
-| Wypał       | Piec i miejsce na płycie; program wypału z rampami, przetrzymaniami i chłodzeniem; atmosfera (utleniająca{{en: oxidation}} lub redukcyjna{{en: reduction}}); co pokazał stożek kontrolny{{en: witness cone}}, a nie tylko, na co ustawiono piec |
-| Wynik       | Powierzchnia i kolor; ewentualne spływanie, pęknięcia włoskowate{{en: crazing}} lub nakłucia{{en: pinholes}}; zdjęcia z przodu, z tyłu i z boku; kod płytki                                                                                     |
+| Część       | Co zapisać                                                                                                                                                                                                                                                 |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Receptura   | Receptura i jej wersja; marki surowców i numery partii; wszelkie zamiany                                                                                                                                                                                   |
+| Rozrabianie | Data; wielkość porcji; dodana woda i jej rodzaj (z kranu, z odwróconej osmozy lub destylowana); SG po rozrobieniu i SG końcowa; masa gotowej zawiesiny, do obliczenia SG suchego szkliwa; dodana sól gorzka, CMC i bentonit; sito (mesh) i liczba przesiań |
+| Nakładanie  | Masa ceramiczna; stożek wypału biskwitowego{{en: bisque}}; zanurzanie, malowanie pędzlem lub polewanie; czas zanurzenia lub liczba warstw; grubość warstwy po wyschnięciu                                                                                  |
+| Wypał       | Piec i miejsce na płycie; program wypału z rampami, przetrzymaniami i chłodzeniem; atmosfera (utleniająca{{en: oxidation}} lub redukcyjna{{en: reduction}}); co pokazał stożek kontrolny{{en: witness cone}}, a nie tylko, na co ustawiono piec            |
+| Wynik       | Powierzchnia i kolor; ewentualne spływanie, pęknięcia włoskowate{{en: crazing}} lub nakłucia{{en: pinholes}}; zdjęcia z przodu, z tyłu i z boku; kod płytki                                                                                                |
 
 > [!NOTE]
 > W aplikacji Glazecalc zapisana [receptura](/recipe) przechowuje samą recepturę. [Dziennik wypałów](/firing) rejestruje każdy wypał: piec, datę, godziny, temperatury, stożki i uwagi. W [notatkach](/notes) mieści się cała reszta, np. powyższy zapis porcji i to, co pokazała każda płytka.

@@ -5,464 +5,478 @@ lead: Imawanmi esmalte rurasqa, imaynatam horno vidrioman tukuchin, hinaspa rura
 
 ## Imataq esmalte {#what-a-glaze-is}
 
-**Esmalteqa**{{en: glaze}} mankaman k'askachisqa ñañu vidrio p'achan. Glazy, kichasqa esmalte rurana qillqakunapa willay huñun, nin: "vidrio fórmula, wakin temperaturakunapi chullunanpaq, mitu hawaman k'askakunanpaq allichasqa". Ñut'u allpa p'achahina churakun, hornopitaq vidriohina p'achaman chullun, mitutataq wisq'an; chaymi manka mana hinatachu suruq, qhillichakuq, utaq mawk'ayaq. Ruphachiypa aswan q'uñi kaqninpi, chullusqaqa mituwanpas tinkun, sapa kutillanmi chawpinkupi huk p'achata ruran, chaytaq esmaltetaqa allinta hap'ichin. Loza de barropiqa esmalte hawallanpi t'aqasqa p'achahina tiyan; grespitaq ukhunman chullun.
+**Esmalte** nisqaqa mankaman chullusqa llañu vidrio llut'anam. Glazy, esmalte ruranakunap kichasqa willakuy waqaychananmi, "wakin ruphaykunapi chulluspa mituman k'askananpaq allichasqa vidrio fórmula" nispa sutichan. Ñut'u p'ata hinam llut'akun, hornopitaq chulluspa mituta wichq'aq vidrio hina llut'anaman tukun, chayrayku mankaqa mana anchata sut'unchu, ch'iqchiyanchu nitaq usukunchu. Ruphachiypa aswan hanaqninpi chullusqaqa mituwanpas tinkun, sapa kutim chawpinkupi esmalteta hap'ichiq p'atata ruran. Pisi ruphaypi ruphachisqa loza de barropi chay p'ataqa llañum, esmaltetaq aswanqa hanaqpi qhipan. Aswan hatun ruphaypi ruphachisqa gres porcelanapi p'ataqa aswan rakhum, esmaltetaq mituta aswan sinchita hap'in. Ichaqa esmalteqa vidrio kaspam qhipan: manam mitup t'aqanman tukunchu.
 
-Esmalte ruranaqa materialkunata qillqan, kaykunahina: feldespato, carbonato de calcio (whiting) hinaspa caolín. Hornopi, sapakaqmanta huk parten gashina lluqsin (unu utaq dióxido de carbono), puchuqninñataq **óxidokunaman** tukun: huk elementopa oxígenowan huñusqan, kaykunahina: sílice (SiO₂) utaq óxido de calcio (CaO). Ruphasqa vidrioqa óxidokunamanta rurasqa, chaymi saña ruraqkuna esmaltetaqa paykunawan willanku. Sapa óxidom kimsa llamk'aykunamanta hukta ruran.
+Huk rurana materialkunatam sutinchan, feldespato, whiting, caolín hina. Hornopi sapakamap wakin t'aqan gas hina lluqsin (unu utaq dióxido de carbono), puchuqtaq **óxidokuna**man tukun: huk elementop oxígenowan huñukuynin, sílice (SiO₂) utaq óxido de calcio (CaO) hina. Ruphachisqa vidrioqa óxidokunamantam rurasqa, chayrayku saña ruraqkunaqa esmalteta paykunawan willanku. Sapa óxido kimsa llamk'aykunamanta huktam ruran.
 
-- **Sílice** (SiO₂) **vidrio ruraqmi** (glass former): vidriota sayarichin. Ch'uya sílice {{3100 °F; 1700 °C}} hawanpi chullun, saña horno aypasqanmanta aswan q'uñi; sílice achkayuq esmaltetaq sapa kutillan aswan unaytam aguantan.
-- **Fundentekunaqa** (fluxes) chullunan temperaturata uraykachinku horno aypananpaq. **Álcalikuna**, **R₂O** nisqa qillqasqa, sodio, potasio hinaspa litio óxidokunam (Na₂O, K₂O, Li₂O); cono 06-manta pacha chawpi q'uñikama, hatun q'uñikama llamk'anku. **Alcalinotérreokuna**, **RO** nisqa qillqasqa, calcio, magnesio, bario hinaspa estroncio óxidokunam (CaO, MgO, BaO, SrO), óxido de zinc (ZnO) paykunawan kuska huñusqa; cono 5-manta cono 10-kama aswan allinta llamk'anku. R nisqaqa aylluchapi mayqin metalpas.
-- **Alúmina** (Al₂O₃) **estabilizantem** (stabilizer). Chullusqata sinchiyachin sayaq perqakunapi qhipakunanpaq, hinaspa ch'ilquyta, unay aguantaytawan yapan. Glazypa willakuynin: alúmina pisi kaqtinqa "esmaltekiqa phawanmanmi; ancha achkataq chullusqata mate kanankama sinchiyachinman". Alúmina aswanqa mitumanta, feldespatomantawan hamun.
+- **Sílice** (SiO₂) **vidrio ruraqmi**: vidriota ruran. Ch'uya sílice {{3100 °F; 1700 °C}}-manta hanaqpi chullun, saña hornomanta ancha aswan q'uñi, achka síliceyuq esmaltetaq sapa kuti aswan unaytam kawsan.
+- **Fundentekuna** (flux) chulluy ruphayta horno chayanankama urayachinku. **Álcalikuna**, **R₂O** nispa qillqasqa, sodiop, potasiop, litiop óxidonkunam (Na₂O, K₂O, Li₂O); cono 06-manta hanaqman chawpi ruphaypi hatun ruphaypipas llamk'anku. **Alcalinotérreos**, **RO** nispa qillqasqa, calciop, magnesiop, bariop, estronciop óxidonkunam (CaO, MgO, BaO, SrO), óxido de cinc (ZnO) paykunawan huñusqa; cono 5-manta cono 10-kama aswan allinta llamk'anku. R-qa chay ayllupi mayqin metaltapas rikuchin.
+- **Alúmina** (Al₂O₃) **takyachiqmi**. Chullusqata sinchiyachin sayaq perqakunapi qhipananpaq, sinchi kayta unay kawsaytapas yapan. Glazyp willakuynin: ancha pisi alúminawan "esmalteyki purinmanmi; ancha achkataq chullusqata sinchiyachispa mana lliphiqman (mate) tukuchinman". Alúminaqa aswanqa mitumanta feldespatomantam hamun.
 
-**Boro** (B₂O₃) siq'ita pichan. Químicokunaqa vidrio ruraqhina t'aqanku, ichaqa taller temperaturakunapi fundentehina llamk'an, saña ruraqkunataq chayhina qhawanku. Cono 5–6-pi ancha munasqam, hatun q'uñipitaq mana munasqachu. (Conokuna, saña ruraqkunapa ruphachiyta sutichanan, uraypi sut'inchasqa.)
+**Boro** (B₂O₃) chay siq'ita mana sut'iyachinchu. Químicokunaqa vidrio ruraq hinam t'aqanku, ichaqa llamk'ana wasip ruphayninpi fundente hinam ruran, saña ruraqkunapas chay hinam hap'inku. Pisi ruphaypi chawpi ruphaypipas hatun fundentem: ruphachiy aswan chiri kaptin, esmalteqa aswan boroyuqtam munan. Cono 10-pi sapa kuti manam munakunchu. (Conokunata, saña ruraqkuna ruphachiyta sutichanankupaq, uraypim sut'inchakun.)
 
 > [!NOTE]
-> Huk yuyarina: sílice vidriom, fundentekuna hornoyki aypasqan temperaturapi chullunanpaq yanapan, alúminataq rakhuyachin churasqaykipi qhipakunanpaq.
+> Yuyarinapaq huk ñan: sílice vidriom, fundentekuna hornoyki chayanan ruphaypi chullunanpaq saqinku, alúminataq churasqayki maypi qhipananpaq rakhuyachin.
 
-## Mitu, p'achakuna, iskay ruphachiykuna {#clay-and-firings}
+## Mitu, llut'anakuna, iskay ruphachiykunapas {#clay-and-firings}
 
-### Mitu masakuna
+### Mitu rikchaqkuna
 
-**Mitu masaqa** (clay body) manka rurasqa mitum. Kimsa hatun laya kan.
+**Mitu rikchaq** (clay body) mankata rurasqa mitum. Kimsa hatun rikchaqkunam kan.
 
-- **Loza de barro**: pisi q'uñi masa, yaqa cono 06–02, t'uquyuq qhipakuq. Sapa kutillan puka utaq q'illu-yuraq, unuta hap'inanpaq esmaltetam{{en: glaze}} munan.
-- **Gres**: chawpi utaq hatun q'uñi masa, yaqa cono 5–10, vítreo utaq yaqa vítreo tukuq.
-- **Porcelana**: yuraq, hatun q'uñi masa, caolín achkayuq, sapa kutillan k'anchay pasaq.
+- **Loza de barro**: pisi ruphay mitu, yaqa cono 06–02, pisi conokunapi t'uqu t'uquyuq, aswan q'uñipi ruphachisqa kaptintaq aswan sinchiyaq. Sapa kuti puka utaq q'illu ch'umpi, unuta hap'inanpaq esmalteta munan.
+- **Gres**: chawpimanta hatun ruphaykama mitu, yaqa cono 5–10, vidrio hina utaq yaqa chayhina tukuq.
+- **Porcelana**: achka caolínniyuq yuraq mitu, sapa kuti k'anchay pasaq. Aswan achka porcelanaqa hatun ruphaypaqmi, ichaqa cono 6 porcelanakunapas kanmi.
 
-**Vítreo** (vitreous) niyqa vidriohina, mana t'uquyuq; **vitrificaciónqa** ruphachikuspa masa chayman tukusqanmi. Reino Unidopi saña ruraqkunaqa sapa kutillan temperaturawan siq'ita churanku: gresqa {{2192 °F; 1200 °C}} hawanpi ruphachisqa, loza de barrotaq uranpi. Chawpi q'uñi, cono 5–6, chay siq'ipa iskaynin ladonpi tiyan.
+**Vitreous** ninanqa vidrio hina, mana t'uquyuq; **vitrification**-taq mitu ruphachikuspa chayman tukuyninmi. UKpa saña ruraqkunaqa sapa kuti ruphaywan siq'ita siq'inku: gresta {{2192 °F; 1200 °C}}-manta hanaqpi ruphachinku, loza de barrotataq urayninpi. Chawpi ruphay, cono 5–6, chay siq'ip iskaynin ladonpim pisillata urman.
 
-### P'achakuna, ch'akiypas
+### Llut'anakuna, ch'akichiypas
 
-**Barbotinaqa** (slip) unupi mitum, hich'anapaq, huñunapaq utaq sumaqchanapaq. **Engobeqa** barbotinahina p'acham, sapa kutillan llimp'isqa, mana mitu materialkuna aswan achkayuq. **Bajo esmalteqa** (underglaze) llimp'isqa barbotina utaq óxido sumaqchaymi, sapa kutillan ch'uya esmaltewan p'achasqa.
+**Slip** (barbotina) unupi tuytuq mitum, moldepi hich'anapaq, huñunapaq utaq sumaqchanapaq. **Engobe** slip hina llut'anam, sapa kuti llimp'iyuq, aswan mana mitu materialniyuq. **Underglaze** llimp'iyuq slip utaq óxido sumaqchaymi, sapa kuti ch'uya esmaltewan p'istusqa.
 
-Mana ruphachisqa mankakunaqa **crudo** (greenware) (willaykunaqa mana kikinchu: wakin ninku llapa mana ruphachisqa mankakunatam niyta munan, wakintaq ch'akisqallatam). Ch'akispaqa **cuero hina** (leather-hard) tukun, sinchi ichaqa as hump'i, kuchunapaq, hap'inakunata churanapaqpas; chaymanta **hueso hina ch'aki** (bone dry), mana ima unuyuq, ancha p'akikuq, ruphachinapaq listo.
+Mana ruphachisqa mankaqa **greenware**-mi (qillqakunaqa manam huk yuyayllachu chay simi llapan mana ruphachisqa mankakunata utaq ch'akisqallata nisqanmanta). Ch'akichkaspa **leather-hard**-man tukun, sinchi ichaqa pisi hump'i, kuchunapaq hap'inakunata churanapaqpas pacham; chaymanta **bone dry**, mana sapan unu puchuspa, ancha p'akikuq, ruphachinapaq listo.
 
 ### Iskay ruphachiykuna
 
-Ñawpaq, aswan pisi q'uñi ruphachiyqa **bizcochom** (ñawpaq ruphachiy; bisque; Reino Unido: biscuit), sapa kutillan cono 08–04 (aswanqa 06–04), yaqa {{1728–1945 °F; 942–1063 °C}}. Mankakunata kallpasapata ichaqa t'uquyuqta saqin. Digitalfire, esmalte willay web, nin sapa kutillan 15%-manta aswan t'uquyuq kananta, chhaynapi bizcocho esmalte churakushaqtin ununta chupan. Llamp'u bizcocho (cono 08–06) aswan t'uquyuqmi; sinchi bizcochotaq (sapa kutillan cono 04) aswan kallpasapa, ichaqa esmaltetaqa mana hinatachu hap'in.
+Ñawpaq, aswan pisi ruphachiyqa **bizcocho**-m (ñawpaq ruphachiy; UK: **biscuit**), sapa kuti cono 08–04 (aswan sapa kuti 06–04), yaqa {{1728–1945 °F; 942–1063 °C}}. Mankakunata sinchita ichaqa t'uqu t'uquyuqta saqin. Digitalfire, esmalte qhawana web p'anqa, sapa kuti 15%-manta aswan t'uqu t'uquyuq kayta yuyaychan, bizcocho esmalte llut'akuchkaptin unuta chunqananpaq. Llamp'u bizcocho (cono 08–06) aswan t'uqu t'uquyuqmi; sinchi bizcocho (sapa kuti cono 04) aswan sinchim ichaqa esmalteta mana utqayllatachu chaskin.
 
-Table: Bizcocho imaynatam esmalte churayta t'ikran (Digitalfire)
-Label: Bizcocho imaynatam esmalte churayta t'ikran
+Table: Imaynatataq bizcocho esmalte llut'ayta tikran (Digitalfire)
+Label: Imaynatataq bizcocho esmalte llut'ayta tikran
 
-| Bizcocho                                            | Ima pasan                                                       |
-| --------------------------------------------------- | --------------------------------------------------------------- |
-| Pisi ruphachisqa, ancha chupaq                      | Esmalte ancha rakhuta churakun, chaymanta p'akikun, ch'uqchikun |
-| Ancha ruphachisqa, sinchi                           | Challpuy, ch'akiypas aswan unaytam munan                        |
-| Aswan q'uñipi, utaq aswan q'uñi kaqninpi aswan unay | Kunan aswan gas ruphakun, chaymi qhipaman esmalteta pisi pukyun |
+| Bizcocho                                                   | Ima kan                                                                            |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Mana allin ruphachisqa, ancha chunqaq                      | Esmalte ancha rakhuta llut'akun, chaymanta p'akikun crawling (huñukuy) rurantaq    |
+| Ancha ruphachisqa, sinchi                                  | Challpuypas ch'akichiypas aswan unaytam hap'in                                     |
+| Aswan q'uñipi ruphachisqa, utaq hanaqpi aswan unay suyasqa | Kunan aswan achka gas ruphakun, chayrayku qhipaman pisilla esmalte ukhunta lluqsin |
 
-Potclays, Reino Unidopi vendeq, bizcocho ruphachiyta yaqa {{1000 °C; 1832 °F}}-kama willan, yaqa cono 06. Kay willaykunata kuska ñawirispa, ñawpaq bizcochopaq cono 06–04-ta yuyaychayku: {{1828–1945 °F; 998–1063 °C}} Ortonpa chawpi utqayninpi.
+Potclays, UKpa qhatuqnin, biscuit ruphachiyta yaqa {{1000 °C; 1832 °F}}-kama, yaqa cono 06, nispa willan. Kay qillqakunata kuska ñawinchaspa, ñawpaq bizcochopaq cono 06–04-ta yuyaychayku: Ortonpa chawpi utqayninpi {{1828–1945 °F; 998–1063 °C}}.
 
-**Esmalte ruphachiyqa** (glaze firing; Britaniapi saña ruraqkuna **glost** ninkuman) esmalteta chullun, grespaqtaq mitutapas puquchin. **Huk kutilla ruphachiyqa** (once-firing) mana ruphachisqa mankakunata esmaltewan p'achan, huk kutillatataq ruphachin. Digitalfire huk ruray qhawarisqata willan: crudo esmalteyuq mankakuna simikunapi ch'uqchikurqanku bizcocho ruphachiy allichanankama; chaymi iskay ruphachiywan qallariy. [Huch'uy hornopi ruphachiy](/guides/firing) iskayninpaqpas horariokunata qun.
+**Esmalte ruphachiy** (Britaniap saña ruraqkunaqa **glost** ninmanku) esmalteta chullun, grespaqtaq mitutapas puquchin. **Huk kutilla ruphachiy** (once-firing) mana ruphachisqa mankaman esmalteta llut'an huk kutillatataq ruphachin. Digitalfire huk rurana wasimanta willan, chaypi chawa esmaltesqa mankakuna siminkupi crawlingta rurarqanku huk bizcocho ruphachiy allichanankama, chayrayku iskay ruphachiykunawan qallariy. [Huch'uy hornopi ruphachiy](/guides/firing) iskayninkupaq kamachiykunatam qun.
 
-## Conokuna, q'uñi llamk'aypas {#cones}
+## Conokuna, heatworkpas {#cones}
 
-Saña ruraqkunaqa ruphachiyta **conowan** sutichanku: huk ñañu cerámica pirámide, huk kikin q'uñita chaskispa k'umuykuq. Orton, paykunata ruraq, kayhinata nin: "Conokunaqa mana temperaturallatachu tupunku. Q'uñi llamk'aytam (heatwork) tupunku, pachapa temperaturapa kuska ruraynintam."
+Saña ruraqkunaqa ruphachiyta **cono**-wan sutichanku: churasqa ruphayta chaskiptin k'umuq llañu mitu pirámide. Orton, paykunata ruraq, conokunata pacha ruphay rikuchiqkuna (heatwork) nispa sutichan: pachap ruphaypa kuska ruraynintam rikuchinku, manam ruphayllatachu.
 
-**Q'uñi llamk'ayqa** chaypa imaraykunmi: esmalte{{en: glaze}}, mitu, conopas hayk'a unay q'uñi kasqankuman hinam kutichinku, hayk'a q'uñi kasqankuman hinapas. Allillamanta ruphachiyqa conota aswan pisi temperaturapi k'umuykuchin, utqaytaq aswan hatunpi. Ortonpa tablanpiqa cono 6 {{2165 °F; 1185 °C}}-pi k'umuykun ruphachiy tukukuqtin sapa horapi {{27 °F; 15 °C}} wichaspa, {{2232 °F; 1222 °C}}-pi sapa horapi {{108 °F; 60 °C}}-wan, {{2269 °F; 1243 °C}}-pitaq sapa horapi {{270 °F; 150 °C}}-wan; utqayqa qhipa {{180 °F; 100 °C}}-pi tupusqa. Cono tukusqam puntan 90°-ta k'umuykuqtin, Orton chayta "5 hora posición" nin.
+**Heatwork** chaymi: esmalte, mitu, conopas hayk'a unay q'uñi kasqankuman hayk'a q'uñi kasqankumanpas kutichinku. Pisi pisimanta ruphachiyqa conota aswan uray ruphaypi k'umuchin, utqaylla kaqtaq aswan hanaqpi. Ortonpa gráficonqa cono 6 {{2165 °F; 1185 °C}}-pi k'umusqanta rikuchin ruphachiy hora sapa {{27 °F; 15 °C}} wichaspa tukukuptin, {{2232 °F; 1222 °C}}-pi hora sapa {{108 °F; 60 °C}}-wan, {{2269 °F; 1243 °C}}-pitaq hora sapa {{270 °F; 150 °C}}-wan, utqayqa qhipa {{180 °F; 100 °C}}-pi hap'isqa. Cono puntan 90° k'umukuptin tukusqañam. Saña ruraqkunaqa sapa kuti kayta 5 hora posición ninku.
 
-Cono yupaykunaqa 022-manta 42-kama. Ñawpaqpi ceroqa aswan chiri seriem, chaypitaq aswan hatun yupay aswan chirim: cono 06 cono 04-manta aswan chirim, cono 01 cono 1-manta aswan chiri.
+Cono yupaykunaqa 022-manta 42-kama purin. Ñawpaqpi ch'usaq (cero) aswan chiri t'aqatam rikuchin, chaypi aswan hatun yupay aswan chirim: cono 06 cono 04-manta aswan chirim, cono 01 cono 1-manta aswan chirim.
 
-Table: Ruphachiy rangokuna: Ortonpa sapallan sayaq conokuna sapa horapi {{108 °F; 60 °C}}-wan
-Label: Ruphachiy rangokuna
+Table: Ruphachiy t'aqakuna: hora sapa {{108 °F; 60 °C}}-pi kikinkumanta sayaq Orton conokuna
+Label: Ruphachiy t'aqakuna
 
-| Rango        | Conokuna |          °F |          °C | Imapaq                              |
-| ------------ | -------- | ----------: | ----------: | ----------------------------------- |
-| Pisi q'uñi   | 06–04    | 1,828–1,945 |   998–1,063 | Loza de barro esmaltekuna; bizcocho |
-| Chawpi q'uñi | 5–6      | 2,167–2,232 | 1,186–1,222 | Gres, porcelanapas                  |
-| Hatun q'uñi  | 9–10     | 2,300–2,345 | 1,260–1,285 | Gres, porcelanapas                  |
+| T'aqa         | Conokuna |          °F |          °C | Imapaq                              |
+| ------------- | -------- | ----------: | ----------: | ----------------------------------- |
+| Pisi ruphay   | 06–04    | 1,828–1,945 |   998–1,063 | Loza de barro esmaltekuna; bizcocho |
+| Chawpi ruphay | 5–6      | 2,167–2,232 | 1,186–1,222 | Gres, porcelanapas                  |
+| Hatun ruphay  | 9–10     | 2,300–2,345 | 1,260–1,285 | Gres, porcelanapas                  |
 
 > [!NOTE]
-> Ruphachiyniykita conowan sutichay, programaypas, temperaturakunatataq yaqalla kaqhina qhaway. **Testigo cono** (witness cone) mankakuna chawpipi tablapi, utaq kimsayuq **cono huñu** (cono pack: guía, ruphachiy, guardia conokuna), mankaykikuna chiqaqpi chaskisqanku q'uñi llamk'ayta rikuchin.
+> Ruphachiyniykikunata conowan sutichay programaypas, ruphaykunatataq yaqa kaq hina hap'iy. Mankakunap chawpinpi tablapi **cono testigo** (witness cone), utaq kimsa **cono pack** (pusaq, ruphachiy, amachaq conokuna), mankaykikuna chiqaqpi chaskisqanku heatworktam rikuchin.
 
-Willasqa temperaturakunaqa mana kikinchu. Glazy hatun q'uñita, cono 9–11, yaqa {{2336–2390 °F; 1280–1310 °C}} nispa qun, chaytaq Ortonpa utqay columnanwan tupan; Digitalfiretaq willan aswan achka hornokuna cono 6-ta yaqa {{2200 °F; 1204 °C}}-pi aypasqankuta. Yuyaychayniyku: Ortonpa chawpi utqay yupaykunata llamk'achiy, kay yachachiy ruraqhina, conowan programay, cono testigotaq tukuchichun.
+Qillqasqa ruphaykunaqa hukniraqmi. Glazy hatun ruphayta, cono 9–11, yaqa {{2336–2390 °F; 1280–1310 °C}} nispa qun, chaytaq Ortonpa utqaylla columnanwan tupan, Digitalfiretaq cono 6-ta yaqa {{2200 °F; 1204 °C}} nispa qun. Yuyaychayniyku: kay pusaq ruraq hina Ortonpa chawpi utqay yupaykunata llamk'achiy, conowan programay, cono testigotaq akllananpaq saqiy.
 
-Norteamérica hawanpiqa vendeqkuna sapa kutillan °C-ta qunku, mana conotachu. Hermann Seger kunan pacha conota ruraq, ñawpaqta Berlinpi 1886-pi llamk'achisqa, Reino Unidopitaq kikin Staffordshire conokuna karqan; yupayninkuqa mana Ortonpawan tupanantachu yuyanaykichu, mana ima t'ikrana tablatapas tarirqaykuchu. [Huch'uy hornopi ruphachiy](/guides/firing) conokunata aswan sut'inchan.
+Norteamérica hawanpiqa qhatuqkuna sapa kuti conop rantinpi °C-ta qunku. Hermann Seger kunan pacha conota rurarqan, 1886-pi Berlinpi ñawpaqta llamk'achisqa, UKtaq kikinpa Staffordshire conokunayuqmi karqan; yupayninkuqa ama Ortonpawan tupaq hina yuyaykunachu, manataq tikranapaq tablata tarirqankuchu. [Huch'uy hornopi ruphachiy](/guides/firing) conokunata aswan sut'ita willan.
 
-## Ruranamanta fórmula unitariakama {#unity-formula}
+## Ruranamanta UMF-kama {#unity-formula}
 
-**Lote ruranaqa** (batch recipe) materialkunata llasayninwan qillqan, sapa kutillan base 100-man huñukunanpaq allichasqa. **Yapanakunaqa** (additives: llimp'iqkuna, opacificantekuna, suspensorkunapas) 100 hawanman yapakun, sapa kutillan basepa porcientonhina. Esmalte{{en: glaze}} imachus kasqanta rikunapaq, saña ruraqkuna ruranata **UMF-man** t'ikranku (fórmula unitaria, unity molecular formula; **Seger fórmula**pas, Hermann Seger sutinmanta, paymi kimsa columnayuq churayninta ñawpaqta llamk'achirqan).
+**Lote rurana** (batch recipe) chawa materialkunata llasaywan sutinchan, sapa kuti teqsi 100-man chayananpaq tupusqa. **Yapanakuna** (llimp'iqkuna, opacificantekuna, tuytuchiqkunapas) chay 100 hanaqninpi churakun, sapa kuti teqsip porcentaje hina. Esmalte imachus kasqanta rikunankupaq, saña ruraqkunaqa ruranata **unity molecular formula**-man (**UMF**, fórmula unitaria, utaq **Seger fórmula**, Hermann Segerpa sutinpi, kimsa columnayuq churayninta ñawpaqta llamk'achiq) tikranku.
 
-Table: Ruranamanta fórmula unitariakama: Glazypa llamk'asqa qhawarinan
-Label: Ruranamanta fórmula unitariakama
+Table: Ruranamanta UMF-kama: Glazyp rurasqa ejemplon
+Label: Ruranamanta UMF-kama
 
-| Puriy             | Ima pasan                                                                                                                                                     | Qhawarinapi                                                                                                                      |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Lote rurana    | Materialkuna llasayninwan, 100-man allichasqa                                                                                                                 | Feldespato 40%, wakinkunapas                                                                                                     |
-| 2. Óxido análisis | Mikhuna etiquetahina: sapa materialpa óxidonkuna llasay porcientohina yapakun, gaskunataq qichusqa                                                            | Feldespatoqa 64.8% sílicem, chaymi 40%-nin 25.9% SiO₂-ta apamun. Ruphasqa esmalteqa 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Molkuna        | Llasaykuna **molkunaman** tukunku, moléculakunapa yupaynin, imaraykuchus "Gramokunaqa pantachinmanmi, wakin óxidokuna wakinkunamanta aswan llasa kasqanrayku" | 60.1 g SiO₂ huk molmi, chaymi 67.4 g yaqa 1.12 molkuna                                                                           |
-| 4. Unidad         | Llapan fundentekunapa huñunwan rakisqa, chhaynapi fundentekuna 1-man huñukunku                                                                                | Fundentekuna 0.303-man huñukunku; rakispa: K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                             |
+| Purichiy          | Ima kan                                                                                                                                       | Ejemplopi                                                                                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Lote rurana    | Chawa materialkuna llasaywan, 100-kama tupusqa                                                                                                | Feldespato 40%, hukkunawan                                                                                                               |
+| 2. Óxido análisis | Mikhuna etiqueta hina: sapa materialpa óxidonkuna llasay porcentaje hina yapakunku, gaskunataq saqikun                                        | Feldespatoqa 64.8% sílicem, chayrayku 40%-nqa 25.9% SiO₂-ta apamun. Ruphachisqa esmalteqa 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO-m |
+| 3. Molkuna        | Llasaykuna **mol**-kunaman tukunku, moléculakunap yupaynin, "Gramokunaqa pantachinmanmi wakin óxidokuna hukkunamanta aswan llasa kasqanrayku" | 60.1 g SiO₂ huk molmi, chayrayku 67.4 g yaqa 1.12 molmi                                                                                  |
+| 4. Unidad         | Llapan fundentekunap yapayninwan rakikun, fundentekuna 1-man chayanankupaq                                                                    | Fundentekuna 0.303-man chayanku; rakiyqa K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70-ta qun                                                |
 
-Glazecalcpa [rurana p'anqan](/recipe) tawantin puriyta qillqashaqtiyki ruran, kimsa columnapitaq rikuchin: fundentekuna (R₂O, RO) 1-man huñukuq; estabilizantekuna (R₂O₃: alúmina, sapa kutillan boropas kaypi churasqa); vidrio ruraqkuna (RO₂: sílice). "Unificaciónqa tupachina yanapakullanmi," Glazy nin: iskay rurana, mana kikin materialkunamanta, ichaqa kikin fórmula unitariayuq, "ruphachisqa kaspa yaqa kikillantam ruranku". Chaymi 1-qa rakinakusqa tupunam, mana llasanayki hayk'achu. Digitalfire yapan kay ruray "pisi temperaturakunapi mana chhayna allintachu llamk'an" nispa, chaypi boroqa mana ch'uya fundentechu, fórmula unitariakunataq "tupachinapaqmi, contextonpi aswan allin qhawasqa". **Tupachiy** iskay ruranapa fórmulankunata óxidomanta óxidokama churan.
+Glazecalcpa [rurana p'anqan](/recipe) qillqachkaptiyki tawantin purichiykunata ruran, rurasqatataq kimsa columnakunapi rikuchin: 1-man chayaq fundentekuna (R₂O, RO-pas); takyachiqkuna (R₂O₃: alúmina, borotapas sapa kuti kaypi churanku); vidrio ruraqkunapas (RO₂: sílice). "Huklla kayqa tupuna herramientallam," Glazy nin: hukniraq materialkunamanta rurasqa ichaqa kaqlla UMF-yuq iskay ruranakunaqa "ruphachisqa kaspa yaqa kaqllatam ruranku". Chayrayku 1-qa rakinakuq tupunam, manam llasachinayki hayk'achu. Digitalfire yapan kay ñanqa "pisi ruphaykunapi manam anchata llamk'anchu", chaypi boro mana sapa p'unchaw fundentechu, UMF-kunataq "tupachinapaqmi, kikin kayninpi qhawasqa aswan allin". **Tupachiy** iskay ruranakunap fórmulankunata óxidomanta óxidoman ladonpi churan.
 
-### Sílicepa alúminawan tupuynin
+### Sílice alúminawan tupachiy
 
-Huk sapalla yupay aswan allinqa **sílicepa alúminawan tupuyninmi**: sílice alúminawan rakisqa. Qhawarinapi, 3.70 ÷ 0.41 yaqa 9.
+Huk yupay aswan allin kaqqa **sílice alúminawan tupachiy**-mi: sílice alúminawan rakisqa. Ejemplopi, 3.70 ÷ 0.41 yaqa 9-mi.
 
-Table: Sílicepa alúminawan tupuynin ima niyta munan (Glazy)
-Label: Sílicepa alúminawan tupuynin
+Table: Sílice alúminawan tupachiy imata rikuchin (Glazy)
+Label: Sílice alúminawan tupachiy
 
-|  Tupuy | Glazypa ñawirisqan                           |
-| -----: | -------------------------------------------- |
-| Yaqa 9 | Lliphiq chullusqata rikuchin, q'uñi aypaqtin |
-|    5–7 | Achka sinchi gres esmaltekunapi tarikuq      |
-|    3–5 | Mate utaq pisi ruphachisqa kanman            |
+| Tupachiy | Glazyp ñawinchaynin                                |
+| -------: | -------------------------------------------------- |
+|   Yaqa 9 | Allin ruphay kaptinqa lliphiq chullusqata rikuchin |
+|      5–7 | Achka takyasqa gres esmaltekunapim kan             |
+|      3–5 | Mana lliphiq utaq mana allin ruphachisqa kanman    |
 
-5–7 tupuyqa sapallan mana lliphiqtachu, mana matetachu willan: fundentekuna, boro, conopas siq'ita kuyuchinku. Glazy sinchi esmaltekunapaq fundente tupuyta qun: 0.2 R₂O 0.8 ROwan, 0.3 R₂O 0.7 ROwan kama. Aswan álcali chullusqata aswan phawaqta ruran, expansionnintataq hatunyachin, chhaynapi cuarteadopa (crazing) peligrontapas.
+Glazyqa manam ninchu kay yupaykuna mayqin conopaq kasqanta. Gres esmaltekunapaq yaqa pusaq hina ñawinchay, yaqa cono 6–10. Digitalfire nin yaqa 8-manta hanaq tupachiyqa lliphiq kanman, ichaqa boroyuq esmalteqa 8-pi utaq urayninpi lliphiyta atin, pisi ruphay kaqtaq 6-pipas. 5–7 tupachiylla manam lliphiyta nitaq mana lliphiyta ñawpaqmanta willanchu: fundentekuna, boro, conopas siq'ita kuyuchinku. Glazy takyasqa esmaltekunapaq sapa kuti fundente tupachiyta qun 0.2 R₂O 0.8 RO-wan, 0.3 R₂O 0.7 RO-wan-kama. Aswan álcali chullusqata aswan puriqta ruran mast'arikuynintataq wichachin, chaywan cuarteado manchakuytapas.
 
-### Ruphaspa chinkasqa llasay
+### LOI (pérdida por calcinación)
 
-**Ruphaspa chinkasqa llasayqa** (loss on ignition, **LOI**) hornopi huk material chinkachisqan llasaymi, unu, dióxido de carbono, materia orgánica utaq azufre gashina lluqsiqtin. Ruphasqa esmalteqa mana imatapas hap'inchu, chaymi fórmula unitaria mana qillqanchu.
+**LOI** (loss on ignition, pérdida por calcinación) huk material hornopi chinkachisqan llasaymi unu, dióxido de carbono, kawsaq kaqkuna utaq azufre gas hina lluqsiptin. Ruphachisqa esmalteqa manam chayta hap'inchu, chayrayku UMF saqin.
 
-Table: Sapa kutillan LOI (Digitalfire)
-Label: Ruphaspa chinkasqa llasay
+Table: Sapa kuti LOI (Digitalfire)
+Label: LOI
 
-| Material                                | Sapa kutillan LOI                                                                              |
+| Material                                | Sapa kuti LOI                                                                                  |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Carbonato de calcio (whiting), dolomita | 40%-manta aswan, aswanqa dióxido de carbono: 100 g carbonato de calcio yaqa 45 g-ta lluqsichin |
+| Whiting (carbonato de calcio), dolomita | 40%-manta aswan, aswanqa dióxido de carbono: 100 g carbonato de calcio yaqa 44 g-ta lluqsichin |
 | Carbonato de litio                      | Yaqa 60%                                                                                       |
 | Carbonato de bario, Gerstley Borate     | 20%-manta aswan                                                                                |
-| Caolín                                  | Yaqa 12%, aswanqa cristalninkunapi watasqa unu                                                 |
+| Caolín                                  | Yaqa 12–14%, aswanqa cristalninkunapi wataqa unu                                               |
 | Feldespatokuna                          | 1%-manta pisi                                                                                  |
 
-Esmalte chulluyta qallarisqanmanta lluqsiq gasqa ukhunta pukyuspa pasananmi, Digitalfirepa siminkunapi "pukyukuna, phullchukuna, huch'uy t'uqukuna, ch'uqchikuy" nisqakunata ruraspa. Talcoqa yaqa {{1650 °F; 899 °C}}-kama gasta lluqsichishallan. Fritakuna, **calcinado** materialkuna (ñawpaqmanta q'uñichisqa gasninkuta lluqsichinapaq), ruphachiypi t'ikraykunapas yanapanku.
+Esmalte chulluy qallariptin lluqsiq gasqa ukhunta lluqsinanmi, Digitalfirep simintapi "phuqchukunata, punkiykunata, pinholesta, crawlingta" ruraspa. Huk Digitalfire pruebapi, talco yaqa {{1650 °F; 899 °C}}-kama gasta lluqsichichkarqanraq. Fritakuna, **ñawpaqta ruphachisqa** (calcinado, gasninkuta qarqunapaq ñawpaqta q'uñichisqa) materialkuna, ruphachiypi tikraykunapas llapanmi yanapanku.
 
-Ñawpa libro kunaqa kay yupayta makillawan ruranku, **peso molecularwan** (huk material utaq óxidopa huk molninpa llasaynin) **peso equivalentewanpas** (huk óxidopa huk molninta quq materialpa llasaynin). Yupasqaykuman hina, yaqa 100 g carbonato de calcio huk mol óxido de calciota qun, 56 g. Calculadoraqa iskayninta ruran.
+Ñawpa p'anqakunaqa kay yupayta makiwan ruranku, **peso molecular**-wan (huk materialpa utaq óxidop huk molnin llasaynin) **peso equivalente**-wan (huk mol óxidota quq materialpa llasaynin). Yupayniykupi, yaqa 100 g whiting huk mol, 56 g, óxido de calciota qun. Calculadora iskayninkutam ruran.
 
-## Fritakuna, materialkunapas {#materials}
+## Limitekuna, Stull gráficopas {#stull-chart}
+
+**Stull gráfico** esmaltekunap mapanmi. Iskay ejeyuqmi, iskayninku UMF-manta: sílice (SiO₂) urayninpi kinraypi, alúmina (Al₂O₃) ladonpi hanaqman. Sapa esmalte huk puntom. Mapaqa suyukunapim t'aqasqa, mana lliphiq, lliphiq, mana allin ruphachisqa, cuarteadoyuq hina. Glazecalcpa [rurana p'anqan](/recipe) esmalteykita chaypi siq'in.
+
+::stull-chart
+
+R. T. Stull gráficota 1912-pi qillqasqan pruebakunamanta rurarqan. Yaqa cono 11-pi ruphachirqan, sapa pruebataq kaqlla fundentekunayuq karqan: 0.3 potasa (K₂O), 0.7 óxido de calcio (CaO). Sílicella alúminallam tikrakurqan. Chayrayku gráficoqa chay esmaltekunapaq chay ruphaypi chiqanmi.
+
+Esmalteykiqa hukniraqchá. Boro, huk fundentekuna, aswan uray conokunapas suyukunata kuyuchinku. 2025-pi huk Ceramics Monthly qillqa boratokunawan achka fierrowan fundentesqa cono 6 esmalteta pruebarqan. Gráfico cuarteadoyuq, mana lliphiq, mana allin ruphachisqa hina churarqan. Chiqaqpiqa tukuy chullusqam, satin, mana cuarteadoyuqmi karqan. Qillqaqkunaqa ninku boratoyuq esmaltekunaqa gráficopi mana allintachu rikhurinku. Chayrayku suyukunata pusaq hina llamk'achiy, manam ñawpaqmanta willay hinachu.
+
+**Cuarteado** suyuqa Stullpa kikin pruebankuna paypa mitunpi cuarteadota tarisqanmi. Manam willasunkichu esmalteyki mituykiwan imayna tupasqanta. Cuarteadoqa esmaltep mitup ruphay mast'arikuyninmanmi hap'ikun. Glazecalcpa mast'arikuy yupaynin esmaltekunata tupachinaykipaq yanapasunki, chiqaq pruebataq akllan: [Esmalte tupay, pantaykunapas](/guides/glazing-basics#fit-and-defects) nisqapi chiri rit'i unu prueba.
+
+**Limite fórmulakuna** kaqlla tapukuypaq huk herramientam: huk conopi takyasqa esmaltekunapaq sílicep, alúminap, fundentekunap t'aqankuna. [Mikhunapaq mana manchakuy](/guides/glazing-basics#food-safety) paykunata sut'inchan, imarayku sapallanku mana imatapas chiqanchanchu chaytapas.
+
+## Fritakuna, chawa materialkunapas {#materials}
 
 ### Fritakuna
 
-**Fritaqa** (frit) fábricapi rurasqa vidriom: mineralkuna chullusqa, unupi chirichisqa, kutasqa. Fritaspa bórax hina unupi chulluq materialkunata mana chulluqman tukuchin, titi (plomo, Pb), bario hina miyuyuq óxidokunata sinchi vidriopi wisq'an, mana ruphachisqa mineralkunamanta aswan kikin materialta qun, gaskunatataq lluqsichin, chaymi fritasqa esmaltekuna{{en: glaze}} "aswan mana pantayniyuq" (Digitalfire). Fritakunaqa ñawpaqta chullunku: soda fritaqa cono 06-pi llamk'anña, feldespatotaq "cono 6-pi llamp'uyayta qallarishallanmi". Aswan qullqim, suspendisqa qhipakunankupaq mitutam munanku (Digitalfirepa qhawarinan: 85% frita 15% mituwan), hinaspa "teoríapi mana chulluqmi, ichaqa chiqaqpi mana chhaynachu".
+**Frita** fabricapi rurasqa vidriom: chullusqa minerakuna, unupi utqaylla chiriyachisqa, kutasqa. Fritayqa borax hina unupi chulluq materialkunata mana chulluqta ruran, titi (plomo, Pb) bario hina miyuyuq óxidokunata takyasqa vidriopi wichqan, chawa minerakunamanta aswan kaqlla materialta qun, gaskunatataq qarqun, chayrayku fritayuq esmaltekunaqa "ancha aswan mana pantayuqmi" (Digitalfire). Fritakunaqa ñawpaqtapas chullunku: soda frita cono 06-pi llamk'an, feldespatotaq "cono 6-pi llamp'uyayta qallarichkanraq". Aswan chaninmi, tuytuchkanankupaq mitutam munanku (Digitalfirep ejemplonqa 85% frita 15% mituwan), "yuyaypiqa mana chulluqmi, ichaqa chiqaqpiqa chullunkum".
 
-Norteamérica fritakunaqa ruraqninwan yupayninwan sutichasqa: Ferro Frit 3134 (Ferro kunan Vibrantz) Glazypa yaqa 22% llapanpaq ruranankunapi tiyan. Reino Unido ruranakunaqa aswan sapa kutillan fritakunata laya sutinwan sutichanku, kayhina: standard borax frit.
+Norteaméricap fritankunaqa ruraqwan yupaywan sutichasqa: Ferro Frit 3134 (Ferro kunanqa Vibrantzmi) Norteamérica aswan llamk'achisqa fritakunamanta hukninmi. UKpa ruranankunaqa sapa kuti llapanpaq fritakunatam sutichanku, standard borax frit hina.
 
-### Sapa kutillan materialkuna
+### Sapa p'unchaw chawa materialkuna
 
-Table: Sapa kutillan esmalte materialkuna, ima qusqankupas
-Label: Sapa kutillan esmalte materialkuna
+Table: Sapa p'unchaw esmalte materialkuna imatachus qunku
+Label: Sapa p'unchaw esmalte materialkuna
 
-| Material (huk sutikuna)                                  | Qun                    | Willaykuna                                                                                                                                                                       |
-| -------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sílice (pedernal, cuarzo; flint, quartz)                 | SiO₂                   | Esmaltekunapi 325 malla llamk'achiy, ancha ñut'u kutasqa                                                                                                                         |
-| Caolín (Reino Unido: china clay; Australia: Eckalite)    | Al₂O₃, SiO₂            | Alúminapa hatun pukyun; esmaltetapas suspendisqa hap'in                                                                                                                          |
-| Arcilla de bola (ball clay)                              | Al₂O₃, SiO₂            | Caolínmanta aswan llamp'u, aswan fierroyuq, materia orgánicayuqpas                                                                                                               |
-| Feldespato potásico, feldespato sódico, nefelina sienita | K₂O, Na₂O, Al₂O₃, SiO₂ | Kikin alúminayuq, síliceyuq fundentekuna. Nefelina sienitaqa pisi q'uñipi chawpi q'uñipiwan sinchi fundentem. Ñawpa ruranapa "feldespato" nisqallanqa mayqintapas niyta munanman |
-| Carbonato de calcio (whiting)                            | CaO                    | Calciopa hatun fundenten; dióxido de carbonota lluqsichin                                                                                                                        |
-| Wollastonita                                             | CaO, SiO₂              | Calcio mana dióxido de carbonoyuq                                                                                                                                                |
-| Dolomita, talco                                          | MgO, CaO utaq SiO₂-wan | Seda hina mate hawakuna; aswan pisi expansión                                                                                                                                    |
-| Óxido de zinc                                            | ZnO                    | Lliphiy, cristalkunapas; ancha achka ch'uqchikuyta ruranman                                                                                                                      |
-| Boro fritakuna, Gerstley Borate, colemanita              | B₂O₃                   | Cono 06-manta cono 6-kama ancha munasqa; fritakunaqa "mana ruphachisqa boratokunamanta aswan kikin, aswan pisi chulluqmi"                                                        |
-| Carbonato de litio                                       | Li₂O                   | Pisi expansión fundente; qullqisapa, chaymi pisillata llamk'achikun                                                                                                              |
-| Carbonato de estroncio                                   | SrO                    | Bariopa rantin, aswan pisi miyuyuq                                                                                                                                               |
-| Carbonato de bario                                       | BaO                    | Mana ruphachisqa kaspa miyuyuq; achka barioyuq esmaltekuna metalkunata lluqsichinmanmi                                                                                           |
-| Bentonita                                                | Suspensión             | Ancha ñut'u mitu, sapa kutillan 1–3%, mana urayman tiyananpaq                                                                                                                    |
+| Material (huk sutikuna)                              | Qun                    | Willakuykuna                                                                                                                                                    |
+| ---------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sílice (flint, cuarzo)                               | SiO₂                   | Esmaltekunapi 325 mesh, ancha ñut'u kutasqata llamk'achiy                                                                                                       |
+| Caolín (UK: china clay)                              | Al₂O₃, SiO₂            | Alúminap hatun pukyun; esmalte mana tiyaykunanpaqpas yanapan                                                                                                    |
+| Ball clay                                            | Al₂O₃, SiO₂            | Caolínmanta aswan llamp'u, aswan fierroyuq kawsaq kaqniyuqpas                                                                                                   |
+| Potasa feldespato, soda feldespato, nefelina sienita | K₂O, Na₂O, Al₂O₃, SiO₂ | Kikin alúminanwan sílicenwan fundentekuna. Nefelina sienita pisi chawpi ruphaypaq sinchi fundentem. Ñawpa ruranapi "feldespato" nisqallaqa mayqintapas ninmanmi |
+| Whiting (carbonato de calcio)                        | CaO                    | Calciop hatun fundenten; dióxido de carbonota lluqsichin                                                                                                        |
+| Wollastonita                                         | CaO, SiO₂              | Mana dióxido de carbonoyuq calcio                                                                                                                               |
+| Dolomita, talco                                      | MgO, CaO utaq SiO₂-wan | Seda hina llamp'u mana lliphiq uyakuna; pisi mast'arikuy                                                                                                        |
+| Óxido de cinc                                        | ZnO                    | Lliphiy cristalkunapas; ancha achkaqa crawlingta ruranman                                                                                                       |
+| Boro fritakuna, Gerstley Borate, colemanita          | B₂O₃                   | Cono 06-manta cono 6-kama mana kaqtinqa mana atikunchu; fritakunaqa "chawa boratokunamanta aswan kaqlla, unupi aswan pisi chulluqmi"                            |
+| Carbonato de litio                                   | Li₂O                   | Pisi mast'arikuy fundente; chaninmi, chayrayku pisillata llamk'achikun                                                                                          |
+| Carbonato de estroncio                               | SrO                    | Bariop aswan pisi miyuyuq rantin                                                                                                                                |
+| Carbonato de bario                                   | BaO                    | Chawa kaspa miyuyuqmi; achka barioyuq esmaltekunaqa metalkunata lluqsichinmanmi (lixiviación)                                                                   |
+| Bentonita                                            | Tuytuchiy              | Ancha ñut'u mitu, sapa kuti 1–2%, tiyaykuyta harkanapaq. 3%-manta aswanqa ch'akichkaptin esmalteta p'akinmanmi                                                  |
 
 > [!WARNING]
-> Esmalte materialkunaqa ñut'u polvokunam. Sílice ñut'u surq'ankunatam k'irin, qallariypi mana ima unquy rikhuriyniyuq; wakin materialkunataq, carbonato de bario, carbonato de litio hina, millp'usqa kaspa miyum. Polvokunata llamp'ullamanta hap'iy, hump'iwan pichay, ch'akipi llamk'aspataq allin tupachisqa respiradorta churakuy. [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing), [Ama ayllu-masiykita miyuwan wañuchiychu](/guides/home-safety) imaynata sut'inchanku.
+> Esmalte materialkunaqa ñut'u polvokunam. Sílice ñut'u allpaqa qallariypi mana unquy rikhuriyniyuq surq'anta k'irin, wakin materialkunataq, carbonato de bario carbonato de litio hina, millpusqa kaptinqa miyum. Polvokunata llamp'ullata hap'iy, hump'iwan pichay, ch'akiwan llamk'aspataq allin tupaq respiradorta churakuy. [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing), [Ama ayllu-masiykita miyuwan wañuchiychu](/guides/home-safety) imayna kasqanta sut'inchanku.
 
-### Suyukunapa sutinkuna
+### Suyukunap sutinkuna
 
-- **Caolínqa** Reino Unidopi **china clay**; Australiapi vendeqkuna Eckalite sutiwan vendenku.
-- **Flintqa** (pedernal) Reino Unidopi sílicepa ñawpa sutinmi. Reino Unidopi vendeqkuna **calcined flint** (pedernal calcinado) sapallan productohina vendenkuraqmi, chaymi britaniko ruranapi "flint" yaqapaschá pedernal calcinadotam niyta munan, americano ruranapitaq yaqapaschá kutasqa cuarzota. Iskayninpas sílicepa pukyunhina vendesqa; análisisninta qhaway.
-- **China stone** **Cornish stone**pas (Cornwall stone) kikin materialmi, feldespatowan ayllu.
-- **Whitingqa** carbonato de calciom; Alemania vendeqkuna Kreide (tiza) ninku.
+- **Caolín** UKpi **china clay**-mi. Australiapi Eckalite caolínpa huk marcanmi.
+- **Flint** sílicep ñawpa UK sutinmi. UKpa qhatuqninkunaqa **calcined flint**-ta kikin producto hina rantikunkuraq, chayrayku Britaniap ruranapi "flint" calcined flintchá, Estados Unidospa ruranapitaq kutasqa cuarzochá. Iskayninku sílice pukyu hina rantikunku; análisista qhaway.
+- **China stone** **Cornish stone**-pas (Cornwall stone) kaqlla materialmi, feldespatowan ayllu.
+- **Whiting** carbonato de calciom, kutasqa tiza utaq caliza.
 
 > [!NOTE]
-> Huk materialtaqa qusqan óxidokunawan taripay, mana sutinwanchu. Glazecalc chhaynatam llamk'an: vendeqniykipa análisisninta [Materialkuna p'anqapi](/material) churayta atinki, **Kunan materialkunawan pruebay, tupachiy**, **Hayk'akunata niy, tupachiy**, **Kapuqniywan tupachiy** nisqakunapas llapanku ruphasqa óxidokunata tupachinku, mana sutikunatachu.
+> Materialta qusqan óxidokunawan taripay, manam sutinwanchu. Glazecalcqa chayhinam llamk'an: qhatuqniykip análisisninta [Materialkuna p'anqapi](/material) churayta atinki, **Kunan pacha materialkunata pruebay tupachiypas**, **Hayk'akunata yuyaychay tupachiypas**, **Kapuqniywan tupachiy**-pas llapanku ruphachisqa óxidokunatam tupachinku, manam sutikunatachu.
 
-Materialkunapas t'ikrakunkum. Custer feldespato 2023-pi tukukurqan. Ñawpa Gerstley Borate mina yaqa 1999–2000-pi wisq'akurqan; Laguna chay sutiwan huk productota vendeshanraqmi, Gillespie Borate-taq hatun rantinmi. Willaykunaqa mana kikinchu Gillespie Gerstley Boratetachu libramanta libra rantinman (ruraqnin Potclayspas arí ninku, Digitalfire wakinkunapas manam), chaymi iskayninta Glazecalcpi tupachiy, chaymanta huch'uy lotepi pruebay.
+Materialkunapas tikrakunmi. US Geological Survey willan South Dakotapi Custer feldespatota ruraq minakuna plantapas Noviembre 2023-pi llamk'ayninkuta sayachirqanku. Gerstley Boratep ñawpaq minanqa yaqa 1999–2000-pi wichqakurqan; Laguna chay sutiwan huk productota rantikunraq, Gillespie Boratetaq hatun rantinmi. Qillqakunaqa manam huk yuyayllachu Gillespie Gerstley Borateta libramanta libraman rantinchasqanmanta (ruraqnin Potclayspas arí ninku, Digitalfire hukkunapas manam), chayrayku iskayninkuta Glazecalcpi tupachiy, chaymanta huch'uy loteta pruebay.
 
 ## Llimp'iqkuna, opacificantekunapas {#color}
 
-**Llimp'iqqa** (colorant) esmalteta{{en: glaze}} llimp'iq metal óxido utaq carbonatom; **pigmentotaq** (stain) fábricapi rurasqa llimp'iq, mana ruphachisqa óxidokunamanta aswan sinchi, aswan kikin. Llimp'iqkunaqa sapa kutillan basepa 5%-manta pisi, achkataq 1%-manta pisi, carbonatotaq tupaq óxidopa yaqa kuskan kallpayuq.
+**Llimp'iq** (colorante) esmalteta llimp'iq metal óxido utaq carbonatom; **stain** fabricapi rurasqa llimp'iqmi, chawa óxidokunamanta aswan takyasqa kaqllapas. Llimp'iqkunaqa sapa kuti teqsimanta 5%-manta pisim, achkataq 1%-manta pisi, carbonatotaq tupaq óxidomanta aswan pisi sinchim, wakin t'aqan gas hina lluqsisqanrayku. Yupayniykupi, 100 g carbonato de cobalto yaqa 63 g óxido de cobaltota qun, saña ruraqkuna rantisqanku 100 g carbonato de cobre (basic copper carbonate) yaqa 72 g óxido de cobreta. Chayrayku óxidomanta yaqa 1.4-manta 1.6-kama kuti aswan carbonatota llamk'achiy.
 
-Table: Sapa kutillan llimp'iqkuna, basepa porcientonhina
-Label: Sapa kutillan llimp'iqkuna
+Table: Sapa p'unchaw llimp'iqkuna, teqsip porcentaje hina
+Label: Sapa p'unchaw llimp'iqkuna
 
-| Llimp'iq               | Sapa kutillan qallarina hayk'a                     | Llimp'ikuna, willaykunapas                                                                                                                            |
-| ---------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cobalto                | 0.1–2% (willaykuna mana kikinchu)                  | Anqas, ancha kallpasapa; base magnesioyuq kaqtin kulli llimp'iman                                                                                     |
-| Fierro                 | 0.5–10%                                            | Oxidaciónpi ch'umpi, q'illu-ch'umpi, puka llimp'ikuna; reducciónpi ½–2% celadónta qun, 5–6% tenmokutataq. Fundentem, chaymi achka esmalteta phawachin |
-| Cobre                  | 1–3%                                               | Oxidaciónpi q'umir utaq turquesa, reducciónpi puka. Esmalteta metalkuna lluqsichiqman tukuchinmanmi                                                   |
-| Cromo                  | 0.5%-manta pisi 2%-kama (willaykuna mana kikinchu) | Q'umir; base zincyuq kaqtin ch'umpi, estañowan panti                                                                                                  |
-| Manganeso              | 2–10%                                              | Ch'umpi, kulli llimp'ikuna                                                                                                                            |
-| Rutilo                 | Yaqa 2–5%                                          | Allqa, chhiqchi llimp'i; yaqa 5% hawanpi qhaqa utaq mate                                                                                              |
-| Comercial pigmentokuna | 2–12%                                              | 2–4% llamp'u llimp'ikunapaq, 5–8% tonokunapaq, 10–12% kallpasapa llimp'ikunapaq                                                                       |
+| Llimp'iq         | Sapa kuti qallarina hayk'a                                | Llimp'ikuna, willakuykunapas                                                                                                                       |
+| ---------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cobalto          | 0.1–2% (qillqakuna mana huk yuyayllachu)                  | Anqas, ancha sinchi; teqsi magnesioyuq kaptin kulli llimp'iman                                                                                     |
+| Fierro           | 0.5–10%                                                   | Oxidaciónpi ch'umpi, q'illu ch'umpi, pukapas; reducciónpi ½–2% celadonta qun, 5–10%-taq tenmokuta. Fundentem, chayrayku achkaqa esmalteta purichin |
+| Cobre            | 1–3%                                                      | Oxidaciónpi q'umir utaq turquesa, reducciónpi puka. Esmalteta metalkunata lluqsichiqta (lixiviación) ruranman                                      |
+| Cromo            | 0.5%-manta pisi 2%-kama (qillqakuna mana huk yuyayllachu) | Q'umir; teqsi cincniyuq kaptin ch'umpi, estañowan rosado                                                                                           |
+| Manganeso        | 2–10%                                                     | Ch'umpikuna, kullikunapas                                                                                                                          |
+| Rutilo           | Yaqa 2–5%                                                 | Ch'iqchi ch'iqchi, hukniraq llimp'i; yaqa 5%-manta hanaqpi qhaqha utaq mana lliphiq                                                                |
+| Qhatup stainkuna | 2–12%                                                     | Llamp'u llimp'ikunapaq 2–4%, tonokunapaq 5–8%, sinchi llimp'ikunapaq 10–12%                                                                        |
 
-Cobalto cromo hayk'akunaqa chiqaqpi rimanakusqam. Glazy nin 0.1% cobalto anqaspaq aypanmi; Glendale Community College ½–2% utaq ½–3% qun atmósferaman hina; Birdie Boone, Pottery Making Illustrated-pi, 3% utaq aswan pisi nin. Cromopaq, Boone 0.5%-manta pisi nin, Glendaletaq 2–3%. Mana manchay ñanqa pisillawan qallariy, **mezcla linealta** (line blend) rurayta: probetakunapa siq'in, huk ingredienteta pisimanta achkakama puriykachispa.
+Cobaltop cromop hayk'ankunaqa chiqaqpi ch'aqwasqam. Glazy nin 0.1% cobalto anqaspaq aypanmi; Glendale Community College wayranman hina ½–2% utaq ½–3%-ta qun; Birdie Boone, Pottery Making Illustratedpi, 3% utaq pisita nin. Cromopaq, Boone 0.5%-manta pisi nin, Glendaletaq 2–3%. Mana manchakuy ñanqa pisimanta qallariy **mezcla lineal** ruraymi: huk kaqta pisimanta achkakama wichachiq probetakunap siq'in.
 
-Base esmalte llimp'ita t'ikran. Lliphiq, k'anchay pasaq baseqa aswan k'anchaq llimp'ita qun; satinado mate basekunataq, sapa kutillan aswan alúminayuq, llimp'ita amuyachinku. Magnesio cobaltota kulli llimp'iman tanqan, zinc cromota ch'umpiman t'ikran, cromo estañowantaq pantita qun.
+Teqsi esmalteqa llimp'ita tikran. Lliphiq, ch'uya teqsi aswan k'anchaq llimp'ita qun; satin mana lliphiq teqsikunataq, sapa kuti aswan alúminayuq, pisiyachinku. Magnesio cobaltota kulliman tanqan, cinc cromota ch'umpiman tukuchin, cromo estañowantaq rosadota qun.
 
 ### Opacificantekuna
 
-**Opacificanteqa** (opacifier) esmalteta **opacoman** (opaque: k'anchay mana pasaq) tukuchin, mituta pakaspa; **transparente** (transparent: k'anchay pasaq) esmaltetaq mituta rikuchin.
+**Opacificante** esmalteta **opaco**-ta (k'anchay mana pasaq) ruran, mituta pakaspa; **ch'uya** esmaltetaq rikhurichin.
 
 Table: Opacificantekuna
 
-| Opacificante                                  | Sapa kutillan hayk'a     | Willaykuna                                                                                        |
-| --------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| Circón (Zircopax, Superpax, Ultrox, Zircosil) | 8–12% llapan opacidadpaq | Aswan pisi qullqi; marcakunaqa kikin materialmi, mana kikin hatunniyuq kutasqa                    |
-| Óxido de estaño                               | Yaqa 5–7% (yuyasqayku)   | Qullqisapa; reducciónpi mana allintachu opacon                                                    |
-| Dióxido de titanio                            | 2%-manta aswan           | Seda hina, k'anchay pasaq opacidad; 10%-pi utaq aswanpi, mate, qhaqa hawa, rikukuq cristalkunawan |
+| Opacificante                        | Sapa kuti hayk'a          | Willakuykuna                                                                                                                             |
+| ----------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Zircón (Zircopax, Superpax, Ultrox) | Tukuy opacopaq 10–15%     | Aswan pisi chaniyuq akllana; marcakunaqa hukniraq sayaykunaman kutasqa silicato de circoniom, aswan ñut'u gradokunataq aswan sinchim     |
+| Óxido de estaño                     | Yaqa 5–7% (yuyaykuyniyku) | Chaniyuq; hatun ruphaypi aswan pisi sinchi, Digitalfiretaq willan 4% ch'uya cono 10 reducción esmaltepi mana imatapas opacota rurasqanta |
+| Dióxido de titanio                  | Yaqa 5% (yuyaykuyniyku)   | Seda hina, pisi k'anchay pasaq opaco; yaqa 5% uyata hukniraqyachinman, ancha aswantaq sapa kuti cristalniyuq mana lliphiq uyata qun      |
 
 ## Esmalte tupay, pantaykunapas {#fit-and-defects}
 
-Mitupas esmaltepas{{en: glaze}} q'uñiyaspa wiñanku, chiriyaspataq k'iskiyanku, sapakama kikin hayk'anwan: **expansión térmica** (thermal expansion) nisqanwan. **Esmalte tupayqa** (glaze fit) iskaynin hayk'a allinta tupasqanmi. Allin tupayqa esmalteta mituwan as ñit'isqata saqin; Digitalfire nin as ñit'iyqa mankakunata kallpachinmi, ancha achkataq pisi kallpayuqman tukuchinman, p'akichinmanpas.
+Mitupas esmaltepas q'uñiptin mast'arikunku chiriptintaq pisiyanku, sapakama kikin hayk'anpi: **ruphay mast'arikuynin**. **Esmalte tupay** (glaze fit) iskayninku imayna tupasqankum. Allin tupayqa esmalteta mituwan pisita ñit'isqata saqin; Digitalfire nin pisi ñit'iyqa mankakunata sinchiyachin, ancha achkataq pisi sinchita, p'akichintaqmi.
 
-### Cuarteado, descascarado ima
+### Cuarteado, shiveringpas
 
-**Cuarteadoqa** (crazing) ñañu p'akisqakunapa llikanmi. Esmaltepa expansionnin masapamanta aswan hatunmi, chaymi chiriyaspa aswan k'iskiyan, chutakun, p'akikuntaq, sapa kutillan sodio potasio (Na₂O, K₂O) ancha achka kasqanrayku. Qhipamanpas rikhurinmanmi, llamk'achishaspa, kuti-kuti utqaylla chiriyasqa qhipa, chiri ukyanakunawan tupaspa hina. Munasqa kaqtin, raku hina, **craquelado** (crackle) nisqa. Digitalfire nin: "95% kutipi allichayqa esmaltepa expansión térmicanta allichaymi"; allillamanta chiriyachiyqa cuarteadota qhipachillanmi. Pruebanqa: mankata yaqa {{300 °F; 149 °C}}-kama q'uñichiy, hielo unuman challpuy, plumonwantaq qaquy p'akisqakunata rikuchinanpaq.
+**Cuarteado** (crazing, huch'uy p'akisqakuna) huch'uy p'akisqakunap llikanmi. Esmaltep mast'arikuynin mitumanta aswan hatunmi, chayrayku chiriptin aswanta pisiyan, chutakun p'akikuntaq, sapa kuti ancha achka sodio potasiorayku (Na₂O, K₂O). Qhipamanpas rikhurinmanmi, llamk'achichkaptin, chiri unuwan tupay hina mana suyasqa chiriyachiykuna kutin kutin kaptin. Munasqa kaptinqa, raku hina, **crackle** nispa sutichanku. Digitalfire nin "95% kutipi allichayqa esmaltep ruphay mast'arikuyninta allichaymi"; pisi pisimanta chiriyachiyqa cuarteadota unayachinllam. Pruebanqa: mankata yaqa {{300 °F; 149 °C}}-kama q'uñichiy, chiri rit'i unuman challpuy, p'akisqakunata rikuchinanpaq fieltro plumonwan hawanta llut'ay.
 
-Willaykunaqa ñawpaq allichaypi mana kikinchu. Glazy sílice utaq alúmina yapayta yuyaychan; Digitalfire kutichin yapasqa sílice "KNaO-tallam ch'uyayachin" (sodio potasio); Linda Bloomfield boroto yapan utaq feldespatota pisiyachin, huk materialta huk kutipi. Yuyaychayniyku: [rurana calculadorapi](/recipe), wakin sodio potasiota pisi expansión fundentekunawan (boro, litio, magnesio, calcio) t'ikray, t'ikrayta **Tupachiywan** qhaway, hielo unu pruebawantaq takyachiy.
+Qillqakunaqa ñawpaq allichaypi hukniraqmi. Glazy sílicetaq utaq alúminata yapayta yuyaychan; Digitalfire kutichin yapa sílice "KNaO-ta (sodiota potasiotapas) llamp'uyachillanmi"; Linda Bloomfield borota yapan utaq feldespatota pisiyachin, huk kutipi huk materialta. Yuyaychayniyku: [rurana calculadorapi](/recipe), sodiop potasiop wakinta pisi mast'arikuy fundentekunawan (boro, litio, magnesio, calcio) rantinchay, tikrayta **Tupachiy**-wan qhaway, chiri rit'i unu pruebawantaq chiqanchay.
 
-**Descascaradoqa** (shivering) kutirisqanmi: esmaltepa expansionnin masapamanta ancha aswan pisim, chaymi ancha ñit'isqa, simikunamanta k'uchukunamantawan ch'illikun. Digitalfire willan ch'illikunakuna navaja hina filoyuq kanmanmi, millp'usqataq kanmanmi, Glazytaq descascaradota "llamk'anapaq mankakunapi cuarteadomantapas aswan peligrosom" nin. Allichayqa aswan hatun expansión esmalte utaq aswan pisi expansión masam.
+**Shivering** kutichinmi: esmaltep mast'arikuynin mitumanta ancha aswan pisim, chayrayku ancha ñit'isqam, siminkunamanta patankunamantataq ch'iqtakun. Digitalfire willan p'akikunaqa navaja hina k'allanmanmi millpuchikunmantaqmi, Glazytaq shiveringta "llamk'ana mankakunapi cuarteadomantapas aswan manchakuypaq" nin. Allichayqa aswan hatun mast'arikuy esmalte utaq aswan pisi mast'arikuy mitum.
 
 > [!WARNING]
-> Ama cuarteado utaq descascarado mankakunata mikhunapaq utaq ukyanapaq llamk'achiychu. Willaykunaqa mana kikinchu cuarteado mankakuna allinta mayllakunmanchus (hukqa nin lavavajilla aypanmi; hukñataq cuarteado llamk'ana mankakunata pantasqa nin), chaymi aswan cuidakuq ladota akllayku.
+> Ama cuarteadoyuq utaq shiveringyuq mankakunata mikhunapaq ukyanapaq llamk'achiychu. Qillqakunaqa manam huk yuyayllachu cuarteadoyuq mankakuna allinta pichakuyta atisqankumanta (hukninqa lavaplatos aypanqa nin; hukninqa cuarteadoyuq llamk'ana mankakunata pantayuq nin), chayrayku cuidakuq ladota hap'iyku.
 
-### Lliphiq, mate ima
+### Lliphiq, mana lliphiqpas
 
-**Lliphiq** (gloss) hawaqa k'anchaq, llamp'um; **satinadoqa** (satin) amuy k'anchayniyuq; **mateqa** (matte) mana lliphiq. Lliphiyqa llapanpi chullusqa vidriotam munan. Mateqa achka alúminamanta hamunman (pisi sílice alúmina tupuy), calcio, magnesio, bario utaq estroncio hina fundentekunamanta esmalte chiriyashaqtin huch'uy cristalkunata ruraspa, utaq pisi ruphachiymanta.
+**Lliphiq** uyaqa k'anchayta kutichin llamp'utaq, **satin** pisi lliphiyniyuq, **mana lliphiq** (mate) uyataq opa. Lliphiyqa tukuy chullusqa vidriota munan. Mana lliphiq kayqa achka alúminamanta (pisi sílice alúminawan tupachiy), esmalte chiriyachkaptin ancha huch'uy cristalkunata ruraq calcio, magnesio, bario utaq estroncio hina fundentekunamanta, utaq mana allin ruphachiymanta hamunman.
 
-### Sapa kutillan pantaykuna
+### Sapa kuti pantaykuna
 
-Huk kutipi huk imallata t'ikray, probetaykikunatataq waqaychay.
+Huk kutipi huk kaqllata tikray, probetaykikunatataq waqaychay.
 
-Table: Sapa kutillan esmalte pantaykuna, imaraykunku, ñawpaq allichaykunapas
-Label: Sapa kutillan esmalte pantaykuna
+Table: Sapa kuti esmalte pantaykuna, sapa kuti imarayku, ñawpaq allichaykunapas
+Label: Sapa kuti esmalte pantaykuna
 
-| Pantay                        | Imaynam rikukun                                       | Sapa kutillan imaraykunku                                                                                     | Ñawpaq allichaykuna                                                                                 |
-| ----------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Ch'uqchikuy (crawling)        | Esmalte rumichakunaman kutirin, q'ala mituta saqispa  | Polvoyuq utaq wirayuq bizcocho; rakhu, mitu achkayuq p'acha ch'akispa p'akikuq; zinc, circón utaq estaño      | Bizcochota pichay; ñañuta churay; wakin mituta calcinay; CMC goma hina k'askachiqta yapay           |
-| Huch'uy t'uqukuna (pinholing) | Huch'uy t'uqukuna utaq p'atakuna                      | Masamanta utaq esmaltemanta gas, t'uqun mana wisq'akuq; pisi ruphachisqa utaq sinchi esmalte                  | Ruphachiypa aswan q'uñi kaqninpi yaqa kuska hora hap'iy; ñañuta churay; aswan pisi zinc utaq rutilo |
-| Phullchukuna (blistering)     | Filo simiyuq t'uqukuna                                | Sapa kutillan ancha ruphachiy; ancha rakhu p'achakuna; yaqa {{2192 °F; 1200 °C}} hawanpi volátil fundentekuna | Aswan pisi ruphachiy; ñañuta churay. Filo simikuna llamk'ana mankakunata mana segurotachu ruranku   |
-| Phaway (running)              | Esmalte tablaman phawan                               | Pisi alúmina; ancha rakhu, hich'aykuna tupasqanpi hina; achka fierro                                          | Ñañuta churay; alúminata yapay; esmalteta chakinmanta karupi waqaychay                              |
-| Dunting (p'akiy)              | Mankapi p'akisqakuna chiriyaymanta utaq q'uñiyaymanta | Cuarzo inversiónpi utqaylla chiriyay, {{1063 °F; 573 °C}}; mana kikin perqakuna; mana allin tupay             | {{1063 °F; 573 °C}}-pi allillamanta ruphachiy, wichaspa uraykuspapas; kikin perqakuna               |
+| Panta               | Imayna rikhurin                                                  | Sapa kuti imarayku                                                                                                                                                 | Ñawpaq allichaykuna                                                                                                 |
+| ------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Crawling            | Esmalte kutirispa ruruchakunaman huñukun, ch'usaq mituta saqispa | Ñut'u allpayuq utaq wirayuq bizcocho; ch'akichkaspa p'akikuq rakhu achka mituyuq llut'ana; cinc, zircón utaq estaño                                                | Bizcochota pichay; aswan llañu llut'ay; mitup wakinta ñawpaqta ruphachiy (calcinar); CMC gum hina hap'ichiqta yapay |
+| Pinholing           | Huch'uy t'uqukuna utaq p'uchkukuna                               | Mana wichq'akuq mitumanta utaq esmaltemanta gas; mana allin ruphachisqa utaq sinchi esmalte                                                                        | Aswan hanaq ruphaypi yaqa kuskan hora suyay; aswan llañu llut'ay; pisi cinc utaq rutilo                             |
+| Punkiy (blistering) | K'allan patayuq p'uchkukuna                                      | Sapa kuti ancha ruphachiy; ancha rakhu llut'anakuna; yaqa {{2192 °F; 1200 °C}}-manta hanaqpi wapsiyaq fundentekuna                                                 | Aswan uraypi ruphachiy; aswan llañu llut'ay. K'allan patakunaqa llamk'ana mankakunata manchakuypaqta ruran          |
+| Puriy               | Esmalte tablaman purin                                           | Ancha pisi alúmina; ancha rakhu, hich'aykuna tupanakusqanpi hina; achka fierro                                                                                     | Aswan llañu llut'ay; alúminata yapay; esmalteta chakinmanta allinta hanaqpi waqaychay                               |
+| Dunting             | Chiriyachiymanta utaq q'uñichiymanta mankapi p'akisqakuna        | Cuarzo inversión, {{1063 °F; 573 °C}}, utaq cristobalita inversión, yaqa {{428 °F; 220 °C}}, pasaypi utqaylla chiriyachiy; mana kaqlla perqakuna; mana allin tupay | Iskayninkuta pisi pisimanta ruphachiy, wichaspa uraykuspa; kaqlla perqakuna                                         |
 
 ## Mikhunapaq mana manchakuy {#food-safety}
 
-**Lixiviaciónqa** (leaching, metalkuna lluqsiynin) ruphasqa esmaltemanta{{en: glaze}} metalpa mikhunaman utaq ukyanaman chulluspa lluqsiyninmi; esmalteqa allinpuni rikukuspapas chaytaqa ruranmanmi. Ley pruebakunaqa ruphasqa mankata ácido unupi challpunku, lluqsiq titi (plomo, Pb) cadmiotawan tupunku.
+**Metalkuna lluqsiynin** (lixiviación, leaching) ruphachisqa esmaltemanta metal chullukuspa mikhunaman utaq ukyanaman yaykusqanmi, esmalteqa allin hina rikhurispa chayta ruranmanraqmi. Kamachiy pruebakunaqa ruphachisqa p'akita ácido unupi challpunku, lluqsiq titita (plomo, Pb) cadmiotapas tupunku.
 
-### Mana titiyuq kayqa mana mikhunapaq mana manchakuywan kikinchu
+### Mana titiyuq kayqa manam mikhunapaq mana manchakuy kaqllachu
 
-Estados Unidos, Unión Europea, Reino Unido, Australiapa kamachiyninkuqa ruphasqa manka lluqsichisqan titita (Pb) cadmiotawan kamachinku, mana esmalte hap'isqantachu. "Mana titiyuq" (sin plomo) huk peligrota qichun; mana mikhunapaq mana manchakuy tupuychu. Huk óxidokunapas lluqsinkum: Glazy willan achka barioyuq esmaltekuna "lluqsiyta atinkum, sapa kutillantaq mana mikhunapaq mana manchakuqchu", Digitalfire nin cobre "esmalteta metalkuna lluqsiqman tukuchinmanmi; pruebay", Glazy-taq manaña titiyuq esmaltekunata llamk'ana mankakunapaq yuyaychanchu.
+Estados Unidos, EU, UK, Australiap kamachiyninkunaqa ruphachisqa p'aki lluqsichisqan titita cadmiotapas limitenku, manam esmaltep hap'isqantachu. "Mana titiyuq" huk manchakuytam qichun; manam mikhunapaq mana manchakuy yupaychu. Huk óxidokunapas lluqsinkum: Glazy willan achka barioyuq esmaltekunaqa "metalkunata lluqsichinmanmi, aswanqa manam mikhunapaq mana manchakuypaqchu", Digitalfire nin cobre "esmalteta metal lluqsichiqta ruranman; pruebay", Glazytaq manañam llamk'ana mankakunapaq titi esmaltekunata yuyaychanchu.
 
-**Ukhu esmalteqa** (liner glaze) sinchi esmaltem, sapa kutillan ch'uya utaq yuraq, mikhunawan tupaq hawakunapaq. Yuyayniykupi, mana llimp'iqniyuq, mana barioyuq, mana titiyuq, mana litioyuq, llapanpi chulluq, mana cuarteakuq, allintataq aguantaq esmalteqa aswan pisi peligroyuqmi. Aswan pisi peligroqa mana pruebachu.
+**Liner glaze** (ukhu esmalte) mikhunawan tupaq uyakunapaq takyasqa, sapa kuti ch'uya utaq yuraq esmaltem. Yuyayniykupi, mana llimp'iqniyuq, mana barioyuq, mana titiyuq nitaq litioyuq, tukuy chulluq, mana cuarteadoyuq allin unay kawsaqpas aswan pisi manchakuy akllanam. Pisi manchakuyqa manam chiqanchaychu.
 
-**Límite fórmulakunaqa** (limit formulas; Digitalfire **objetivo fórmulakunata**, target formulas, aswan munan) huk conopi sinchi esmaltekunapaq sapa kutillan fórmula unitaria rangokunata qunku: Digitalfirepa cono 6 objetivonkunaqa alúminata 0.285–0.64-pi, sílicetataq 2.4–4.7-pi churanku. Allin químicaman pusasunki, ichaqa mana imatapas pruebanchu; Digitalfire "límite" simita mana llamk'achinchu, imaraykuchus rangokuna ukhupi esmaltekuna "imaynapas mana manchakuq" kasqanta yuyachin. Glazecalcpa ruranata t'ikrana yanapakunkunaqa willanku musuq rurana yuyaychasqa límiteta pasaqtin, cono 6-pi achka boro hina, esmaltetaq imatachus yaqapaschá ruranqa.
+**Limite fórmulakuna** (Digitalfire **maskasqa fórmulakunata** aswan munan) huk conopi takyasqa esmaltekunapaq sapa kuti UMF t'aqakunata qunku: Digitalfirep cono 6 maskasqankunaqa alúminata 0.285–0.64-pi, sílicetataq 2.4–4.7-pi churan. Allin químicaman pusasunki ichaqa manam imatapas chiqanchankuchu; Digitalfire "limite" simita karunchan, t'aqakunap ukhunpi kaq esmaltekuna "imaynallapas mana manchakuypaq" kasqanta rikuchisqanrayku. Glazecalcpa rurana tikranapaq herramientankunaqa willan musuq kaq yuyaychasqa limiteta pasaptin, cono 6-pi achka boro hina, esmalte imatachus ruranman chaytapas.
 
-Ley límitekunaqa sapa suyupi mana kikinchu. Tablaqa tiyasqaykipi kaqkunata rikuchin, leypa kikin unidadninkunapi; huk suyuta utaq regionta akllay tupachinapaq.
+Kamachiy limitekunaqa suyumanta suyumanmi hukniraq. Tablaqa maypichus tiyanki chaypa kaqninkunatam rikuchin, kamachiypa kikin unidadninkunapi; tupachinaykipaq huk suyuta akllay.
 
 ::food-limits
 
-Estados Unidospiqa, sumaqchanapaq cerámica mankakuna mikhunapaq llamk'achinahina rikukuqqa mikhuna mankahinam qhawasqa, manachus k'askachisqa etiquetayuq, chakinpi moldeasqa utaq ruphachisqa wiñaypaq willakuyniyuqpas kanchu, kayhina: "Not for Food Use. May Poison Food", utaq manachus mikhuna hawanpi t'uquyuq kanchu. Unión Europea titipa cadmiopa límitenkunata Directiva 84/500/CEE-pi churan, Reino Unidotaq kikin yupaykunata kikin leyninpi waqaychan. 29 Mayo 2026-manta, Países Bajos, Bélgica, Luxemburgo yaqa 130-manta 150 kutikama aswan pisi titita, yaqa 15 kuti aswan pisi cadmiotawan saqinku. Australia hawamanta apamusqa mankakunapaq límitekunata churan; Australiapi utaq Nueva Zelandapi rurasqa mankakunapaq mana ima oficial límitetapas tarirqaykuchu.
+Estados Unidospi, mikhunapaq llamk'achikuq hina rikhuriq sumaqchana mitu mankakunaqa mikhuna manka hinam hap'ikun, manachus k'askaq etiquetayuq, urayninpi moldesqa utaq ruphachisqa wiñaypaq willakuyniyuq kanchu, "Not for Food Use. May Poison Food" hina, utaq mikhuna uyanta pasaq t'uquyuq. EU-qa mitu mankakunapaq titip cadmiop limitenkunata Directiva 84/500/CEE-pi churan, UKtaq kaqlla yupaykunata kikin kamachiyninpi waqaychan. Benelux suyukunap 2024 akllayninqa mitu mankakunapaq ancha aswan uray limitekunatam churan. Países Bajos 29 Mayo 2026-manta llamk'achirqan: EU yupaykunamanta yaqa 130-manta 150-kama kuti pisi titi, yaqa 14-manta 18-kama kuti pisi cadmiopas. Ñawpa kamachiykunata hunt'aq 1 Diciembre 2026 manaraq chayamuchkaptin ñawpaqta rantikusqa mankakunaqa tukunankama rantikunmanraqmi. Prueba laboratoriokunaqa willanku Luxemburgo kaqlla limitekunata 29 Mayo 2026-manta llamk'achisqanta, Bélgicataq 19 Julio 2026 rey kamachiypi chaskisqanta; chay qillqakunata manam kikiykuchu ñawinchayku. Australia hawamanta apamusqa mankakunapaq limitekunata churan; Australiapi utaq Nueva Zelandapi rurasqa mankakunapaqqa manam kamachiq limiteta tarirqaykuchu.
 
 ### Pruebay
 
-FDA nin wasipi swab kitkuna lluqsiq titita rikuchinmanmi, ichaqa Ceramics New Zealand willan prueba plumonkuna mana cerámicapaq rurasqachu kasqankuta, llulla positivokunatataq qusqankuta. Positivotaqa mankata manaña llamk'achinaykipaq imaraykuhina qhaway, negativotataq mana ima pruebaqhina. Ruphasqa mankapa laboratoriopi metalkuna lluqsiynin pruebanmi (leach test; Estados Unidospi ASTM C738; Europapi EN 1388 utaq ISO 6486) chiqaq kutichiy.
+FDA nin wasipi llut'ana prueba kitkunaqa lluqsiq titita rikuchinmanmi, ichaqa yachaykuna rikuchin kay kitkunaqa esmalteyuq mankakunapi sapa kuti pantanku: mana kaq titita rikuchinmanku, lluqsiq titita mana rikunmankupas. Positivo rurasqata chay p'akita mana llamk'achinapaq imarayku hina hap'iy, negativotataq mana imatapas chiqanchaq hina. Ruphachisqa p'akip laboratorio metalkuna lluqsiyninpaq pruebanmi (leach test) (Estados Unidospi ASTM C738; Europapi EN 1388 utaq ISO 6486) chiqaq kutichiy.
 
 > [!WARNING]
-> "Mikhunapaq mana manchakuq" niyqa kaymi: kay esmalte, kay mitupi, kay conokama kay hornopi ruphachisqa, kayhinataq churasqa, ley límitekunamanta aswan pisitam lluqsichin. Glazecalc sinchi esmalteta ruraypi yanapasunkimanmi, **Titita rantichiy** ñawpa titiyuq ruranatapas mana titiyuqta musuqmanta ruranmanmi, ichaqa mana ima calculadorapas mankata certificayta atinchu. Ruphasqa mankapa pruebanllam atin.
+> "Mikhunapaq mana manchakuy" ninanqa kay esmalte, kay mitupi, kay hornopi kay conokama ruphachisqa kay ñanpi llut'asqa, kamachiy limitekunamanta pisitam lluqsichin. Glazecalc takyasqa esmalteta ruranaykipaq yanapasunkimanmi, **Titita rantinchay**-taq ñawpa titi ruranata mana titiyuqta musuqmanta ruranmanmi, ichaqa mana ima calculadorapas mankata chiqanchayta atinchu. Ruphachisqa p'akip pruebanllam atin.
 
-## Gravedad específica, churaypas {#application}
+## SG, llut'aypas {#application}
 
-### Gravedad específica
+### SG (gravedad específica)
 
-Unuwan chaqrusqa esmalte{{en: glaze}} polvoqa **barbotina esmaltem** (slurry). **Gravedad específicanqa** (specific gravity, **SG**) kikin hayk'a unuwan tupachisqa llasayninmi, unutaq SG 1.0-yuq: aswan hatun kaqtin, baldepi aswan polvo. Ñawpa Reino Unido librokunaqa **pint weight** ninku. Glazy 1.4–1.5-ta "aswan achka esmaltekunapaq allin qallarinam" nin. Tupunapaq, chiqapta 100 mL barbotinata llasay (Glazy jeringata yuyaychan) 100-wantaq rakiy: 145 g niyqa SG 1.45. Hidrómetrokunaqa gelasqa esmaltekunapi mana confiakunchu, unutaq wapsiyan, chaymi esmaltewan p'achanaykimanta ñawpaqta kutipay qhaway.
+Unuwan chaqrusqa esmalte ñut'uqa **slurry**-m. Paypa **SG**-n (**gravedad específica**) kaqlla hunt'ay unuwan tupachisqa llasayninmi, unutaq 1.0 SG-yuq: aswan hanaq kaptin, baldepi aswan achka ñut'u. Glazy 1.4–1.5-ta "aswan achka esmaltekunapaq allin qallarina" nin. Tupunaykipaq, chiqanta 100 mL slurryta llasachiy (Glazy jeringata yuyaychan) 100-wantaq rakiy: 145 g SG 1.45-ta nin. Hidrómetrokunaqa q'apasqa esmaltekunapi manam iñinapaqchu, unutaq wapsiyan, chayrayku manaraq esmaltespa yapamanta qhaway.
 
-Objetivokunaqa willaykunaman hina mana kikinchu. Digitalfire challpuna esmaltekunata 1.40–1.50-pi churan, comercial pinsillawan churana esmaltekunatataq 1.25–1.55-pi, Potclaystaq pinsilpaq 1.71–1.81-ta, rociaypaqtaq 1.71-ta qun. Yuyaychayniyku: yaqa 1.45-pi challpuy esmalte as gelasqa kaqtin, pinsil esmaltepaqqa etiquetata qatiy, allin llamk'aqtataq qillqay.
+Maskasqakunaqa qillqamanta qillqamanmi hukniraq. Digitalfire challpuna esmaltekunata 1.40–1.50-pi, qhatup brocha esmaltenkunatataq 1.25–1.55-pi churan, Potclaystaq brochapaq 1.71–1.81-ta, phuspuypaqtaq 1.71-ta qun. Yuyaychayniyku: esmalte pisita q'apasqa kaptin yaqa 1.45-pi challpuy, brocha esmaltepaqtaq etiquetata qatiy, ima llamk'asqantataq qillqay.
 
-**Floculanteqa** (flocculant: sal de Epsom, vinagre utaq cloruro de calcio) barbotinata as gelachin, **tixotrópicoman** (thixotropic) tukuchispa: kuyuchisqa kaspa phawan, mana kuyuspataq sayan, "kikin, mana sut'uq esmalte p'achanapaq". **Defloculanteqa** (deflocculant: silicato de sodio utaq Darvan) ch'uyayachin. [Imaynatataq esmalteta ruranki](/guides/making-a-glaze) chaqruyta allichaytawan sut'inchan.
+**Flocculant** (Epsom kachi, vinagre utaq cloruro de calcio) slurryta pisita q'apachin, **thixotropic**-ta ruraspa: qaywisqa kaptin purin, sayasqa kaptintaq q'apakun, "kaqlla, mana sut'uq esmalte p'istunapaq". **Deflocculant** (silicato de sodio utaq Darvan) llamp'uyachin. [Imaynatataq esmalteta ruranki](/guides/making-a-glaze) chaqruyta allichaytapas willan.
 
-### Esmalteta churay
+### Esmalteta llut'ay
 
-Ñawpaqta bizcochomanta polvota wirata ima as hump'i esponjallawan pichay, mana mayllaspachu, chayqa unuwan hunt'achin. Ama compresor wayrawan polvota phukuspa qichuychu, ama ch'akilla pichawanpas pichaychu: chayqa sílice ñut'uta wayraman churan ([Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing#cleaning)).
+Ñawpaqta bizcochomanta ñut'u allpata wirata ancha pisi hump'i esponjawan pichay, mana mayllaspachu, chaytaq hump'ichin. Ama ñut'u allpata ñit'isqa wayrawan phukuychu nitaq ch'akita pichaychu: chayqa sílice ñut'u allpatam wayraman churan ([Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing#cleaning)).
 
-- **Challpuy** "sapa kutillan kikin rakhuyuq p'achatam qun" (Robin Hopper). Challpuy pacha rakhuyninta churan: Digitalfire willan comercial challpuna esmaltekuna yaqa 1.4-pi 5 segundo challpuypaq, 1.5-pitaq 1 segundo challpuypaq rurasqa kasqankuta.
-- **Hich'aspa** churana esmalteqa "challpunapaq kasqanmanta as aswan ch'uyam" kanan; hich'aykuna tupasqanpi p'acha iskay kuti rakhuyan, phawanmantaq.
-- **Pinsilwan** churana esmaltekunaqa **CMC goma** (CMC gum) hina gomayuqmi, chaytaq esmalteta phawananpaq k'askakunanpaq yanapan, chaymanta ruphakun. Aswan achkam achka p'achakunata munanku, sapa kutillan iskay utaq kimsa; etiquetata qatiy.
-- **Rociaspaqa** ancha aswan ch'uya esmaltetam llamk'achin, "achka ñañu p'achakunapi, rakhuyninta allillamanta wiñachispa" churasqa.
+- **Challpuy** "sapa kuti kaqlla rakhuyuq llut'anatam qun" (Robin Hopper). Challpuy pachaqa rakhuta akllan: Digitalfire nin qhatup challpuna esmaltenkunaqa 5 segundos challpunapaq yaqa 1.4-pi, 1 segundo challpunapaqtaq 1.5-pi rurasqa.
+- **Hich'ana** esmalteqa "challpunapaq llamk'achisqamanta pisita aswan llamp'u" kanan; hich'aykuna tupanakusqanpi, llut'ana iskay kutiyan purinmantaq.
+- **Brocha** esmaltekunaqa **CMC gum** hina gomayuqmi, esmalte purinanpaq k'askananpaqpas yanapan, chaymanta ruphakun. Aswan achkaqa achka llut'anakunatam munanku, sapa kuti iskay utaq kimsa; etiquetata qatiy.
+- **Phuspuy** ancha aswan llamp'u esmaltetam llamk'achin, "achka llañu llut'anakunapi, pisi pisimanta rakhuta wiñachispa" llut'asqa.
 
 > [!WARNING]
-> Wayra puriyniyuq rociana cabinallapim rociay, allin tupachisqa respiradorta churakuspa. Qhaway [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing).
+> Wayra hurquqniyuq spray boothllapi phuspuy, allin tupaq respiradorta churakuspa. Qhaway [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing).
 
-Ancha rakhu p'achaqa ch'uqchikunman, phullchukunman utaq phawanmanmi. Vendeqkunapa yaqalla kamachiyninkunaqa tarjeta de créditopa rakhuyninmanta Estados Unidospa dime qullqinpa rakhuyninkama, yuyasqaykuman hina yaqa 1 mm ch'aki esmalte; mana kikin rakhuyniyuq probetakunam confiakuq qhawana. Chakipi **cera resistqa** (wax resist) esmalteta qarqun, chhaynapi manka mana tablaman k'askakunmanchu; **horno tablakunata amachaq llut'anataq** (kiln wash), q'uñita aguantaq llut'ana, sapa kutillan caolínmanta sílicemantawan, tablakunata sut'uykunamanta amachan.
+Ancha rakhu llut'anaqa crawlingta, punkiyta utaq puriyta ruranman. Qhatuqkunap yaqa kamachiyninkunaqa tarjeta de crédito rakhumanta Estados Unidospa dime rakhunkama, yuyaykuyniykupi yaqa 1 mm ch'aki esmalte; wakin rakhukunapi probetakunam iñinapaq qhaway. Chakipi **wax resist** (cera) esmalteta qarqun, manka tablaman mana k'askananpaq, **kiln wash**-taq, sapa kuti caolínmanta sílicemanta rurasqa ruphayta aguantaq llut'ana, tablakunata sut'ukunamanta amachan.
 
-## Oxidación, reducción ima {#atmosphere}
+## Oxidación, reducciónpas {#atmosphere}
 
-Hornopa gasninkuna, **atmósferan** (atmosphere), esmaltekuna{{en: glaze}} imayna lluqsisqankuta t'ikran. **Oxidaciónqa** (oxidation) achka oxígenom. "Eléctrico hornokunaqa oxidación ruphachiywan kikinmi," Digitalfire nin, oxidación esmaltekunataq sapa kutillan reducción esmaltekunamanta aswan k'anchaqmi, aswanqa pisi temperaturakunapi. Oxidaciónpi, cobre q'umir turquesa llimp'ikunata qun, fierrotaq ch'umpi, q'illu-ch'umpi, puka llimp'ikunata. Mana allin wayra lluqsiyniyuq eléctrico horno, gasta lluqsichiq mankakunawan hunt'a, munasqamanta aswan neutrom kanman; hornoman chiqalla tinkisqa wayra lluqsinam yanapan.
+Hornop ukhunpi gaskuna, **wayran** (atmosphere), esmaltekuna imayna lluqsimusqankuta tikran. **Oxidación** achka oxígenotam nin. "Electricidad hornokunaqa oxidación ruphachiywan kaqllam," Digitalfire nin, oxidación esmaltekunataq sapa kuti reducciónmanta aswan k'anchaqmi, aswantaq pisi ruphaykunapi. Oxidaciónpi cobre q'umirta turquesatapas qun, fierrotaq ch'umpita, q'illu ch'umpita, pukatapas. Gas lluqsichiq mankakunawan hunt'a mana allin wayra lluqsiq electricidad hornoqa yuyaykusqamanta aswan chawpi kanman; hornowan chiqanta huñusqa wayra hurquq yanapan.
 
-**Reducciónqa** (reduction) yuyaspa oxígenota pisiyachin, sapa kutillan gas, k'ullu utaq sapaq hornopi. Cobre pukaman tukun, fierrotaq aswan kallpasapa fundenteman tukun, **celadóntataq** (celadon: anqas-q'umirmanta uqi-q'umirkama, yaqa ½–2% fierromanta) **tenmokutapas** (temmoku: ch'umpi-yana, yaqa 5–6% fierro) qun. Glazy nin celadónkuna cobre pukakunapas "reducciónmanmi hap'ikunku". Mitupas t'ikrakunmi: Digitalfirepa huk tupachiyninpi, huk gres masa reducciónpi uqi, oxidaciónpitaq q'illuhina lluqsirqan. Esmaltepi carburo de silicioqa eléctrico hornopipas huch'uy reducción pedazokunata ruranmanmi. Cono 010-manta cono 3-kama reducciónpaq, Orton mana fierroyuq conokunanta yuyaychan.
+**Reducción** oxígenota munaspa pisiyachin, sapa kuti gas, k'aspi utaq sapaq hornopi. Cobre pukayan, fierrotaq aswan sinchi fundenteman tukun **celadon**-tataq (anqas q'umirmanta uqi q'umirkama, yaqa ½–2% fierromanta) **tenmoku**-tapas (temmoku: ch'umpi yana, yaqa 5–10% fierro) qun. Glazy nin celadonkuna cobre pukakunapas "reducciónpim takyanku". Mitupas tikrakunmi: huk Digitalfire tupachiypi, huk gres mitu reducciónpi uqita oxidaciónpitaq q'illu hinata lluqsirqan. Esmaltepi carburo de silicio electricidad hornopipas huch'uy reducción k'itikunata ruranman. Cono 010-manta cono 3-kama reducciónpaq, Orton mana fierroyuq cononkunata yuyaychan.
 
 > [!NOTE]
-> Gas reducción hornopaq qillqasqa ruranaqa eléctrico hornopi hukniraq lluqsinantam suyay: reducciónman hap'ikuq celadón utaq cobre puka oxidaciónpi mana kikintachu rikukunqa. Huk rurana mayqin atmósferapaq rurasqa kasqanta qhaway, kikiykipatataq, conowan kuska, Glazecalcpi ruranapa willayninkunapi qillqay.
+> Gas reducción hornopaq qillqasqa rurana electricidad hornopi hukniraq lluqsimunanta suyay: reducciónpi takyaq celadon utaq cobre puka oxidaciónpi manam kaqllachu rikhurinqa. Rurana mayqin wayrapaq rurasqa kasqanta qhaway, kikiykitataq, conowan kuska, Glazecalcpi ruranap apuntenkunapi qillqay.
 
-Sapa horno, eléctrico hornokunapas, q'usñitam lluqsichin, chaymi wayrata lluqsichiy. [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing) imaynata sut'inchan.
+Sapa horno, electricidad kaqkunapas, q'usñitam lluqsichin, chayrayku wayrata purichiy. [Mana manchakuspa chaqruy, wayra puriynin](/guides/safe-mixing) imayna kasqanta sut'inchan.
 
 ## Simikuna {#glossary}
 
 Yapana (additive)
-: Llimp'iq, opacificante utaq suspensor, ruranapa 100-nin hawanman yapasqa.
+: Ruranap 100-nin hanaqman yapasqa llimp'iq, opacificante utaq tuytuchiq.
 
-Alúmina (alumina, Al₂O₃)
-: Hatun estabilizante: phawayta harkan, ch'ilquytataq yapan. Mitukunamanta feldespatokunamantawan.
+Alúmina (Al₂O₃)
+: Hatun takyachiq: puriyta sayachin sinchi kaytataq yapan. Mitukunamanta feldespatokunamantapas.
 
-Arcilla de bola (ball clay)
-: Llamp'u mitu, caolínmanta aswan fierroyuq, materia orgánicayuqpas.
+Ball clay
+: Caolínmanta aswan fierroyuq kawsaq kaqniyuq llamp'u mitu.
 
 Lote rurana (batch recipe)
-: Esmaltepa materialkunan llasayninwan, sapa kutillan 100-man huñukuq.
+: Esmaltep chawa materialninkuna llasaywan, sapa kuti 100-man chayaq.
 
-Bentonita (bentonite)
-: Ancha ñut'u mitu, 1–3%-pi yapasqa esmalte mana urayman tiyananpaq.
+Bentonita
+: Esmalte mana tiyaykunanpaq yaqa 1–2%-pi yapasqa ancha ñut'u mitu. 3%-manta aswanqa ch'akichkaptin esmalteta p'akinmanmi.
 
-Bizcocho (bisque; Reino Unido: biscuit)
-: Ñawpaq, aswan pisi q'uñi ruphachiy, sapa kutillan cono 08–04 (aswanqa 06–04), mankakunata kallpasapata ichaqa t'uquyuqta saqiq.
+Bizcocho (UK: biscuit)
+: Ñawpaq, aswan pisi ruphachiy, sapa kuti cono 08–04 (aswan sapa kuti 06–04), mankakunata sinchita ichaqa t'uqu t'uquyuqta saqiq.
 
-Boro (boron, B₂O₃)
-: Kamachiypi vidrio ruraq, ichaqa fundentehina llamk'achisqa; cono 06-manta cono 6-kama ancha munasqa.
+Boro (B₂O₃)
+: Kamachiypi vidrio ruraqmi ichaqa fundente hina llamk'achikun; cono 06-manta cono 6-kama mana kaqtinqa mana atikunchu.
 
-CMC goma (CMC gum)
-: Celulosa goma, esmalte pinsilwan churakunanpaq k'askakunanpaqpas yanapaq; ruphakun.
+CMC gum
+: Esmalte brochawan llut'akunanpaq k'askananpaqpas yanapaq celulosa goma; ruphakun.
 
-Llimp'iq, pigmentopas (colorant and stain)
-: Esmalteta llimp'iq metal óxido utaq carbonato; pigmentoqa fábricapi rurasqa, aswan sinchi llimp'iq.
+Llimp'iq, stainpas
+: Esmalteta llimp'iq metal óxido utaq carbonato; stain fabricapi rurasqa, aswan takyasqa llimp'iqmi.
 
-Cono (cone)
-: Tupusqa cerámica pirámide, huk kikin q'uñi llamk'aypi k'umuykuq. Testigo conoqa mankakuna chaskisqanta rikuchin.
+Cono
+: Churasqa heatworkpi k'umuq tupusqa mitu pirámide. Cono testigo mankakuna chaskisqanta rikuchin.
 
-Ch'uqchikuy (crawling)
-: Ruphachiypi esmalte rumichakunaman kutirispa q'ala mituta saqiynin.
+Crawling
+: Ruphachiypi esmalte ruruchakunaman kutirispa ch'usaq mituta saqisqan.
 
 Cuarteado (crazing)
-: Masanmanta aswan k'iskiyaq esmaltepi ñañu p'akisqakuna; munasqa kaqtin craquelado.
+: Mitunmanta aswanta pisiyaq esmaltepi huch'uy p'akisqakuna; munasqa kaptin crackle.
 
-Desvitrificación (devitrification)
-: Chiriyay qallariyninpi vidriomanta cristalkuna wiñaq, mana munasqa kaqpi.
+Devitrificación
+: Chiriyachiy qallariypi, mana munasqa kaptin, vidriomanta wiñaq cristalkuna.
 
 Dunting
-: Chiriyaypa utaq q'uñiyaypa kallpanmanta mankapi p'akisqakuna, sapa kutillan cuarzo inversiónpi, {{1063 °F; 573 °C}}.
+: Chiriyachiy utaq q'uñichiy ñit'iymanta mankapi p'akisqakuna, sapa kuti cuarzo inversiónpi, {{1063 °F; 573 °C}}.
 
 Loza de barro (earthenware)
-: Pisi q'uñi masa (yaqa cono 06–02), t'uquyuq qhipakuq.
+: Pisi ruphay mitu (yaqa cono 06–02), pisi conokunapi t'uqu t'uquyuq, aswan q'uñipi ruphachisqa kaptintaq aswan sinchi.
 
-Feldespato (feldspar)
-: Álcali fundenteta alúminawan sílicewan quq mineral: potásico, sódico utaq nefelina sienita.
+Feldespato
+: Alúminawan sílicewan álcali fundenteta quq mineral: potasa, soda utaq nefelina sienita.
 
-Floculante, defloculantepas (flocculant and deflocculant)
-: Barbotina esmalteta gelachiq (sal de Epsom, vinagre) utaq ch'uyayachiq (silicato de sodio, Darvan) yapanakuna.
+Flocculant, deflocculantpas
+: Slurryta q'apachiq (Epsom kachi, vinagre) utaq llamp'uyachiq (silicato de sodio, Darvan) yapanakuna.
 
 Fundente (flux)
-: Sílicepa chullunan temperaturata uraykachiq óxido.
+: Sílicep chulluy ruphayninta urayachiq óxido.
 
-Mikhunapaq mana manchakuq (food safe)
-: Leypi, ácido pruebapi límitekunamanta aswan pisi titita (Pb) cadmiotawan lluqsichiq. Mana titiyuq kaywan mana kikinchu.
+Mikhunapaq mana manchakuy
+: Kamachiypi, ácido pruebapi limitekunamanta pisi titita cadmiotapas lluqsichiy. Manam mana titiyuqwan kaqllachu.
 
-Frita (frit)
-: Fábricapi rurasqa vidrio, chullusqa, chirichisqa, kutasqa, unupi chulluq utaq miyuyuq óxidokunata mana chulluqman tukuchiq.
+Frita
+: Fabricapi rurasqa vidrio, chullusqa, utqaylla chiriyachisqa kutasqapas, unupi chulluq utaq miyuyuq óxidokunata mana chulluqta ruraq.
 
-Vidrio ruraq (glass former)
-: Vidriota sayarichiq óxido, sapa kutillan sílice.
+Vidrio ruraq
+: Vidriota ruraq óxido, sapa kuti sílice.
 
-Esmalte (glaze)
-: Ruphachiypi chulluq vidrio p'acha, mankata wisq'anapaq sumaqchanapaqpas.
+Esmalte
+: Mankata wichq'anapaq sumaqchanapaqpas ruphachiypi chulluq vidrio llut'ana.
 
-Esmalte ruphachiy (glaze firing; Reino Unido: glost firing)
+Esmalte ruphachiy (UK: glost firing)
 : Esmalteta chulluchiq ruphachiy.
 
 Esmalte tupay (glaze fit)
-: Esmaltepa masapa expansionninkuna hayk'a allinta tupasqanku; allin tupayqa esmalteta as ñit'isqata saqin.
+: Esmaltep mitup mast'arikuyninkuna imayna tupasqanku; allin tupayqa esmalteta pisita ñit'isqata saqin.
 
-Lliphiq, satinado, mate ima (gloss, satin and matte)
-: K'anchaq, llamp'u; amuy k'anchay; mana lliphiq.
+Lliphiq, satin, mana lliphiqpas
+: K'anchayta kutichiq llamp'upas; pisi lliphiy; opa.
 
-Crudo (greenware)
-: Mana ruphachisqa mankakuna: cuero hina sinchi ichaqa hump'i kaqtin, hueso hina ch'aki mana ima unuyuq kaqtin.
+Greenware
+: Mana ruphachisqa mankakuna: sinchi ichaqa hump'i kaptin leather-hard, mana sapan unu puchuptin bone dry.
 
-Q'uñi llamk'ay (heatwork)
-: Hornopi temperaturapa pachapa kuska rurasqan; conokuna tupusqan.
+Heatwork
+: Hornopi ruphaypa pachap kuska ruraynin; conokuna tupusqan.
 
-Caolín (kaolin; Reino Unido: china clay)
-: Ch'uya yuraq mitu, alúminata sílicetawan quq; esmalteta suspendisqa hap'in. Australia: Eckalite.
+Caolín (UK: china clay)
+: Alúminata sílicetapas quq ch'uya yuraq mitu; esmalte mana tiyaykunanpaq yanapan. Australiapi Eckalite huk marcam.
 
-Horno tablakunata amachaq llut'ana (kiln wash)
-: Q'uñita aguantaq llut'ana, horno tablakunata sut'uykunamanta amachaq.
+Kiln wash
+: Horno tablakunata sut'ukunamanta amachaq ruphayta aguantaq llut'ana.
 
-Lixiviación (leaching, metalkuna lluqsiynin)
-: Ruphasqa esmaltemanta metalkuna mikhunaman utaq ukyanaman chulluspa lluqsiynin.
+Metalkuna lluqsiynin (lixiviación)
+: Ruphachisqa esmaltemanta mikhunaman utaq ukyanaman chulluspa yaykuq metalkuna.
 
-Límite fórmula (limit formula; objetivo fórmula, target formula)
-: Huk conopi sinchi esmaltekunapaq sapa kutillan fórmula unitaria rangokuna; pusaq, mana garantíachu.
+Limite fórmula (maskasqa fórmula)
+: Huk conopi takyasqa esmaltekunapaq sapa kuti UMF t'aqakuna; pusaq, manam seguro kaychu.
 
 Mezcla lineal (line blend)
-: Huk ingredienteta iskay hayk'akuna chawpipi puriykachiq pruebakuna. Mezcla triaxialqa kimsata cuadrículapi t'ikran.
+: Huk kaqta iskay hayk'akuna chawpinpi purichiq pruebakuna. Triaxial blend kimsata huk llikapi tikran.
 
-Ukhu esmalte (liner glaze)
-: Sinchi esmalte, sapa kutillan ch'uya utaq yuraq, mikhunawan tupaq hawakunapaq.
+Liner glaze
+: Mikhunawan tupaq uyakunapaq takyasqa, sapa kuti ch'uya utaq yuraq esmalte.
 
-LOI (ruphaspa chinkasqa llasay, loss on ignition)
-: Ruphachiypi chinkasqa llasay, unu, dióxido de carbono, materia orgánica utaq azufre hina.
+LOI (pérdida por calcinación)
+: Ruphachiypi unu, dióxido de carbono, kawsaq kaqkuna utaq azufre hina chinkasqa llasay.
 
-Huk kutilla ruphachiy (once-firing, single firing)
-: Mana ruphachisqa mankakunata esmaltewan p'achay, huk kutillatataq ruphachiy.
+Huk kutilla ruphachiy (once-firing)
+: Mana ruphachisqa mankaman esmalteta llut'ay, huk kutillatataq ruphachiy.
 
-Opacificante (opacifier)
-: Material, circón, óxido de estaño utaq dióxido de titanio hina, esmalteta opacoman (k'anchay mana pasaqman) tukuchiq.
+Opacificante
+: Esmalteta opacota ruraq material, zircón, óxido de estaño utaq dióxido de titanio hina.
 
-Oxidación, reducción ima (oxidation and reduction)
-: Achka oxígenowan ruphachiy (eléctrico hornokuna), utaq oxígeno pisiyachisqawan (sapa kutillan gas utaq k'ullu).
+Oxidación, reducciónpas
+: Achka oxígenowan ruphachiy (electricidad hornokuna), utaq oxígeno pisiyachisqawan (sapa kuti gas utaq k'aspi).
 
-Óxido (oxide)
-: Huk elementopa oxígenowan huñusqan; óxido análisis llasay porcientowan qillqan.
+Óxido
+: Huk elementop oxígenowan huñukuynin; óxido análisisqa llasay porcentajewan sutinchan.
 
-Huch'uy t'uqukuna, phullchukunapas (pinholing and blistering)
-: Huch'uy t'uqukuna, utaq filo simiyuq t'uqukuna, chullusqanta gas lluqsisqanpi.
+Pinholing, punkiypas
+: Huch'uy t'uqukuna, utaq k'allan patayuq p'uchkukuna, maypichus gas chullusqanta ayqirqan.
 
-Porcelana (porcelain)
-: Yuraq, caolín achkayuq, hatun q'uñi masa, sapa kutillan k'anchay pasaq.
+Porcelana
+: Yuraq, achka caolínniyuq, hatun ruphay mitu, sapa kuti k'anchay pasaq.
 
-R₂O, RO ima
+R₂O, RO-pas
 : Álcali fundentekuna (Na₂O, K₂O, Li₂O), alcalinotérreo fundentekunapas (CaO, MgO, BaO, SrO, ZnO-wan).
 
-Descascarado (shivering)
-: Ancha ñit'isqa kasqanrayku esmalte k'uchukunamanta ch'illikuynin; llamk'ana mankakunapi peligro.
+Shivering
+: Ancha ñit'isqa kaspa patakunamanta ch'iqtakuq esmalte; llamk'ana mankakunapi manchakuy.
 
-Sílice (silica, SiO₂)
-: Vidrio ruraq; pedernal utaq cuarzo nisqapas.
+Sílice (SiO₂)
+: Vidrio ruraq; flint utaq cuarzo nispapas sutichanku.
 
-Sílicepa alúminawan tupuynin (silica to alumina ratio)
-: Fórmula unitariapi sílice alúminawan rakisqa: aswan hatun lliphiqman, aswan pisi mateman.
+Sílice alúminawan tupachiy
+: UMF-pi sílice alúminawan rakisqa: aswan hanaq lliphiyman, aswan uray mana lliphiyman.
 
-Barbotina, engobepas (slip and engobe)
-: Unupi mitu; engobeqa barbotina hina p'acha, mana mitu material aswan achkayuq.
+Slip, engobepas
+: Unupi mitu; engobe aswan mana mitu materialniyuq slip hina llut'anam.
 
-Gravedad específica (specific gravity, SG)
-: Barbotina esmaltepa llasaynin kikin hayk'a unuwan tupachisqa. Ñawpa Reino Unido: pint weight.
+SG (gravedad específica)
+: Slurryp llasaynin kaqlla hunt'ay unuwan tupachisqa.
 
-Estabilizante (stabilizer)
-: Óxido, aswanqa alúmina, chullusqata sinchiyachiq, unay aguantaytataq yapaq.
+Takyachiq
+: Chullusqata sinchiyachiq unay kawsaytataq yapaq óxido, aswanqa alúmina.
 
 Gres (stoneware)
-: Chawpi utaq hatun q'uñi masa (yaqa cono 5–10), vítreo utaq yaqa vítreo tukuq.
+: Vidrio hina utaq yaqa chayhina tukuq chawpimanta hatun ruphaykama mitu (yaqa cono 5–10).
 
-Tixotropía (thixotropy)
-: Kuyuchisqa kaspa phaway, mana kuyuspataq llamp'u gelman sayay.
+Thixotropy
+: Qaywisqa kaptin puriy, sayasqa kaptin llamp'u gelman q'apakuy.
 
-Bajo esmalte (underglaze)
-: Llimp'isqa barbotina utaq óxido sumaqchay, sapa kutillan ch'uya esmalte uranpi.
+Underglaze
+: Llimp'iyuq slip utaq óxido sumaqchay, sapa kuti ch'uya esmaltep urayninpi.
 
-Fórmula unitaria (unity molecular formula; UMF, Seger fórmula)
-: Esmaltepa óxidonkuna molécula yupayhina, fundentekuna 1-man huñukunankupaq allichasqa.
+Unity molecular formula (UMF, Seger fórmula)
+: Esmaltep óxidonkuna molécula yupaykuna hina, fundentekuna 1-man chayanankupaq tupusqa.
 
-Vitrificación (vitrification)
-: Ruphachiypi masa vidriohina, mana t'uquyuq tukuynin.
+Vitrificación
+: Ruphachiypi mitu vidrio hina mana t'uquyuq tukusqan.
 
-Cera resist (wax resist)
-: Esmalte mana rinan kaqpi llimp'isqa cera, sapa kutillan chakipi.
+Wax resist
+: Esmalte mana rinan maypi llut'asqa cera, sapa kuti chakipi.
 
-Carbonato de calcio (whiting)
-: Calciopa hatun fundenten; ruphachiypi llasayninpa 40%-manta aswanta chinkachin. Alemán simipi: Kreide.
+Whiting
+: Carbonato de calcio, calciop hatun fundenten; ruphachiypi llasayninmanta yaqa 44%-ta chinkachin, dióxido de carbono hina.
 
-## Pukyukuna {#sources}
+## Maymanta yachasqa {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -483,6 +497,14 @@ Carbonato de calcio (whiting)
 - [Digitalfire: Glaze shivering](https://digitalfire.com/glossary/glaze+shivering)
 - [Digitalfire: Specific gravity](https://digitalfire.com/glossary/specific+gravity)
 - [Digitalfire: Oxidation firing](https://digitalfire.com/glossary/oxidation+firing)
+- [Digitalfire: Body-glaze interface](https://digitalfire.com/glossary/body+glaze+interface)
+- [Digitalfire: Formula ratios](https://digitalfire.com/glossary/formula+ratios)
+- [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
+- [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
+- [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
+- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
@@ -490,4 +512,21 @@ Carbonato de calcio (whiting)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
+- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
+- [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
+- [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)
+- [Missouri State University: Use of home test kits for detection of lead and cadmium in ceramic dinnerware](https://bearworks.missouristate.edu/articles-cnas/3474)
+- [US CPSC: Staff study, home lead test kits unreliable](https://www.cpsc.gov/content/cpsc-staff-study-home-lead-test-kits-unreliable)
+- [Orton Ceramic Foundation: Pyrometric cones resources](https://www.ortonceramic.com/pyrometric-cones-resources)
+- [Potclays: How do I use cones?](https://www.potclays.co.uk/how-do-i-use-cones/)
+- [Digitalfire: B₂O₃](https://digitalfire.com/oxide/b2o3)
+- [Ceramic Arts Network: Techno File: Loss on Ignition](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-loss-on-ignition)
+- [Ceramic Arts Network: Techno File: Bentonite vs. Kaolin](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-bentonite-vs.-kaolin)
+- [Ceramic Arts Network: Techno File: Iron in celadons](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-iron-in-celadons)
+- [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
+- [Digitalfire: Ultrox (zircon)](https://digitalfire.com/material/ultrox)
+- [Digitalfire: Eckalite kaolin](https://digitalfire.com/material/eckalite+kaolin)
+- [US National Bureau of Standards, Circular 436](https://nvlpubs.nist.gov/nistpubs/Legacy/circ/nbscircular436.pdf)

@@ -121,126 +121,147 @@ Meánn Derek Au isteach i mbabhla amháin i gcarnáin ar leith, ionas gur féidi
 
 ## Meascadh agus criathrú {#mixing}
 
-### An méid uisce
+### Cé mhéad uisce
 
-Ní réitíonn na foinsí le chéile. Tosaíonn Derek Au go tiubh, le 50 mL uisce sa 100 g púdair, agus cuireann sé tuilleadh leis ina dhiaidh sin. Tugann Potterycrafts 65 mL sa 100 g do ghlónra{{en: glaze}} amháin dá chuid i bhfoirm púdair. Úsáideann UT Austin meáchain chothroma uisce agus púdair, agus nuair a chuir Digitalfire 20 kg púdair i 20 kg uisce, fuair sé sainmheáchan{{en: specific gravity}} 1.46.
+Ní réitíonn na foinsí le chéile. Tosaíonn Derek Au tiubh, ag 50 mL uisce do gach 100 g púdair, agus cuireann sé tuilleadh leis níos déanaí. Tugann Potterycrafts 65 mL do gach 100 g do ghlónra púdair amháin. Úsáideann UT Austin meáchain chomhionanna uisce agus púdair, agus nuair a chuir Digitalfire 20 kg púdair i 20 kg uisce, thomhais sé sainmheáchan{{en: specific gravity}} 1.46.
 
-Is furasta uisce a chur leis ach is mall é a bhaint amach, mar sin tosaigh le beagán. Ár meastachán: tosaigh le **thart ar 70 go 80 mL sa 100 g** (700 go 800 mL sa chileagram, nó thart ar 11 go 12 US fl oz sa phunt). Maothaigh, measc agus criathraigh ag an tiús sin, ansin cuir uisce leis de réir a chéile go dtí go mbíonn an sainmheáchan ceart. Meánn 1 mL uisce 1 g, mar sin is féidir leat é a mheá. Má chuireann tú an iomarca leis, lig don ghlónra síothlú, ansin bain an t-uisce glan ón mbarr le spúinse nó doirt as é.
+Is tapa uisce a chur leis agus is mall é a bhaint amach, mar sin tosaigh íseal. Ár meastachán: tosaigh le **thart ar 70 go 80 mL do gach 100 g** (700 go 800 mL an cileagram, nó thart ar 11 go 12 US fl oz an punt). Maothaigh, measc agus criathraigh ag an tiús sin, ansin cuir uisce leis beagán ag an am go dtí go mbíonn an sainmheáchan ceart. Meánn 1 mL uisce 1 g, mar sin is féidir leat é a mheá. Má théann tú thar fóir, lig don ghlónra síothlú, ansin bain an t-uisce glé den bharr le spúinse nó doirt as é.
 
 ### Uirlisí agus uisce
 
-- **Meascthóir liáin.** Deir Digitalfire go bhfuil ceann maith “riachtanach”. Déanann druilire le sreang agus lián measctha an gnó i mbuicéad. Coinníonn UT Austin ar siúl é ar feadh 4 go 5 nóiméad ar a laghad tar éis don ghlónra cuma mheasctha a bheith air, agus coinníonn sé an lann ó thaobhanna an bhuicéid, mar is féidir léi plaisteach a scríobadh díobh.
-- **Cumascóir.** “Oibríonn sé thar cionn do bhaisceanna beaga” (Digitalfire). Coinnigh do ghlónra amháin é: ná tabhair ar ais chuig an gcistin é riamh.
-- **Greadtóir nó maide.** Rogha Zakin nuair nach bhfuil meascthóir ann.
+- **Meascthóir liáin.** Deir Digitalfire go bhfuil ceann maith “riachtanach”. Déanann druil le sreang agus lián measctha an jab i mbuicéad. Coinníonn UT Austin ar siúl é 4 go 5 nóiméad ar a laghad tar éis don ghlónra cuma mheasctha a bheith air, agus coinníonn sé an lann ó thaobh an bhuicéid, mar is féidir léi plaisteach a scríobadh de.
+- **Cumascóir.** “Oibríonn sé thar barr do bhaisceanna beaga” (Digitalfire). Coinnigh do ghlónra amháin é: ní mór gan é a thabhairt ar ais chuig an gcistin riamh.
+- **Greadtóir nó bata.** Rogha Zakin nuair nach bhfuil meascthóir ann.
 
-Bíonn difríochtaí san uisce freisin, agus tugann Digitalfire faoi deara go n-athraíonn sé iompar na draoibe{{en: slurry}}. Úsáideann Derek Au uisce cúlosmóise mar go bhfuil a uisce buacaire crua. Cibé uisce a úsáideann tú, breac síos é.
+Bíonn an t-uisce difriúil freisin, agus tugann Digitalfire faoi deara go n-athraíonn sé an chaoi a n-iompraíonn draoib{{en: slurry}} í féin. Úsáideann Derek Au uisce osmóis droim ar ais mar go bhfuil a uisce sconna crua. Cibé rud a úsáideann tú, scríobh síos é.
 
 ### Céim ar chéim
 
-1. Cuir ort do mhasc análaitheora, agus lámhainní rubair má rachaidh do lámha isteach ann. Caitheann Zakin masc ó thosaíonn sé ag meá go dtí go mbíonn an glónra fliuch.
-2. Tomhais thart ar 70 go 80 mL uisce sa 100 g púdair isteach sa bhuicéad.
-3. Cuir an púdar meáite isteach go réidh, ó airde íseal. Cuireann UT Austin púdar le huisce bog; cuireann Zakin agus Au uisce le púdar. Molaimid púdar isteach in uisce, rud a chuireann níos lú deannaigh suas san aer, ach amháin i gcás oidis ina bhfuil mórán beintiníte: corraigh na púdair thirime le chéile ar dtús.
-4. **Maothaigh** é: lig don phúdar maothú gan corraí. Fanann Digitalfire thart ar 20 nóiméad. Caithfidh púdair a bhfuil guma nó ceanglóir iontu seasamh thar oíche.
-5. Measc go dtí nach mbíonn aon phócaí tirime ná cnapáin fágtha.
+1. Cuir ort do mhasc análaitheora{{en: respirator}}, agus lámhainní rubair má rachaidh do lámha isteach ann. Caitheann Zakin masc ó thús na meá go dtí go mbíonn an glónra fliuch.
+2. Tomhais thart ar 70 go 80 mL uisce do gach 100 g púdair isteach sa bhuicéad.
+3. Cuir an púdar meáite leis go réidh, ó airde íseal. Cuireann UT Austin púdar le huisce te; cuireann Zakin agus Au uisce le púdar. Molaimid púdar isteach in uisce, a chuireann níos lú deannaigh san aer, ach amháin d’oideas ina bhfuil mórán beintinít: measc a phúdair thirime le chéile ar dtús.
+4. **Maothaigh** é: lig don phúdar maothú san uisce gan corraí. Fanann Digitalfire thart ar 20 nóiméad. Ní mór do phúdair ina bhfuil guma nó ceanglóir seasamh thar oíche.
+5. Measc go dtí nach bhfuil aon phócaí tirime ná cnapáin fágtha.
 6. Criathraigh faoi dhó é (féach thíos).
-7. Clúdaigh é agus lig dó seasamh thar oíche, ansin measc arís agus féach an bhfuil sraith chrua i dtóin an bhuicéid.
-8. Tomhais an sainmheáchan, agus cuir uisce leis de réir a chéile go dtí go sroicheann tú do sprioc.
+7. Clúdaigh é agus lig dó luí thar oíche, ansin measc arís é agus seiceáil an bhfuil sraith chrua i dtóin an bhuicéid.
+8. Tomhais an sainmheáchan, agus cuir uisce leis beagán ag an am chun do sprioc a bhaint amach. Chun sainmheáchan tirim do ghlónra féin a fháil, meáigh an draoib chríochnaithe freisin (féach thíos).
 9. Cuir lipéad ar an mbuicéad, agus scríobh síos a ndearna tú.
-10. Glan go fliuch: mapáil an t-urlár agus glan gach dromchla le ceirt fhliuch, taobh amuigh de choimeádáin na n-ábhar san áireamh.
+10. Glan fliuch: mapáil an t-urlár agus glan gach dromchla le ceirt fhliuch, taobh amuigh de choimeádáin na n-ábhar san áireamh.
 
 ### Criathrú
 
-Is éard is **criathar** ann ná scáileán mogallach i bhfráma. Nuair a bhrúnn tú glónra tríd le scuab, briseann sé na cnapáin a fhágann an meascadh agus coinníonn sé siar cáithníní a bheadh ina spotaí dorcha tar éis bácála. Dá airde uimhir an **mesh**, is míne an scáileán: tá mogaill thart ar 0.18 mm i gcriathar 80 mesh, agus thart ar 0.15 mm i gcriathar 100 mesh.
+Is éard is **criathar**{{en: sieve}} ann ná scáileán mogallra i bhfráma. Nuair a bhrúitear glónra tríd le scuab, briseann sé cnapáin a fhágann an meascadh agus coinníonn sé siar cáithníní a thiocfadh amach mar spotaí dorcha sa bhácáil. Dá airde uimhir an **mesh**{{en: mesh}}, is ea is míne an scáileán: tá mogaill thart ar 0.18 mm i 80 mesh, agus thart ar 0.15 mm i 100 mesh.
 
-Ní hionann an criathar a mholann na foinsí. Criathraíonn Zakin faoi dhó trí chriathar 50 nó 80 mesh. Úsáideann Derek Au 120 mesh don chuid is mó de ghlónraí, go háirithe iad siúd a bhfuil cóbalt nó iarann iontu: tar éis ceileadón amháin a chur trí chriathar 80 mesh trí huaire, bhí spotaí iarainn ann fós, agus leigheas uair amháin trí chriathar 120 mesh é. Coinníonn sé 60 go 80 mesh do ghlónraí luaithe agus do ghlónraí eile a bhfuil ábhair gharbha iontu. Molann Potterycrafts, sa Ríocht Aontaithe, 60 go 80 mesh. Rogha shábháilte mar thosach:
+Molann na foinsí mesh éagsúla. Criathraíonn Zakin faoi dhó trí 50 nó 80 mesh. Úsáideann Derek Au 120 mesh d’fhormhór na nglónraí, go háirithe iad siúd ina bhfuil cóbalt nó iarann: d’fhág trí chur trí 80 mesh spotaí iarainn fós i gceileadón amháin, agus leigheas cur amháin trí 120 mesh é. Coinníonn sé 60 go 80 mesh do ghlónraí luaithe agus do ghlónraí eile ina bhfuil ábhair gharbha. Molann Potterycrafts, sa Ríocht Aontaithe, 60 go 80 mesh. Rogha shábháilte réamhshocraithe:
 
-Table: An criathar le húsáid
-Label: Mesh an chriathair
+Table: Cén criathar le húsáid
+Label: Mesh criathair
 
-| Glónra                                                              | Criathar                       |
-| ------------------------------------------------------------------- | ------------------------------ |
-| An chuid is mó de ghlónraí                                          | Faoi dhó trí chriathar 80 mesh |
-| Glónraí le hábhair datha{{en: colorants}} ar nós cóbailt nó iarainn | 100 go 120 mesh                |
-| Glónraí luaithe, agus glónraí eile le hábhair gharbha               | 60 go 80 mesh                  |
+| Glónra                                                | Criathar             |
+| ----------------------------------------------------- | -------------------- |
+| Formhór na nglónraí                                   | Dhá chur trí 80 mesh |
+| Glónraí le hábhair datha mar chóbalt nó iarann        | 100 go 120 mesh      |
+| Glónraí luaithe, agus glónraí eile le hábhair gharbha | 60 go 80 mesh        |
 
 ## Sainmheáchan {#specific-gravity}
 
-Insíonn an **sainmheáchan**{{en: specific gravity, SG}} (SM) duit cé mhéad púdair atá i do dhraoib{{en: slurry}}. Is é atá ann ná meáchan toirte áirithe glónra{{en: glaze}} roinnte ar mheáchan na toirte céanna uisce. Is é 1.00 luach an uisce, agus meánn glónra ag {{SG 1.45}} 145 g sa 100 mL. Má mheascann tú go sainmheáchan tomhaiste, gheobhaidh tú an tiús céanna, agus an brat céanna, gach uair. Níl aonad ar bith leis, mar sin is ionann é i ngraim nó in unsaí.
+Insíonn an **sainmheáchan**{{en: specific gravity}} (SM) duit cé mhéad púdair atá i do dhraoib{{en: slurry}}. Is é meáchan toirte glónra roinnte ar mheáchan na toirte céanna uisce. Is é 1.00 an t-uisce, agus meánn glónra ag {{SG 1.45}} 145 g sa 100 mL. Is trí mheascadh go sainmheáchan tomhaiste a fhaigheann tú an tiús céanna, agus an brat céanna, gach uair. Níl aon aonad aige, mar sin is mar a chéile é i ngraim nó in unsaí.
 
 ### É a thomhas trí 100 mL a mheá
 
 1. Corraigh an glónra ionas nach bhfuil aon rud síothlaithe.
-2. Cuir **sorcóir tomhais** 100 mL (feadán tomhais ard marcáilte) nó steallaire 100 mL ar an meá, agus brúigh táir.
-3. Líon le glónra é go dtí 100 mL go díreach, ag léamh an mhairc ag leibhéal na súl.
-4. Meáigh é agus roinn na graim ar 100: is ionann 145 g agus SM 1.45.
+2. Cuir **sorcóir tomhais**{{en: graduated cylinder}} 100 mL (feadán tomhais ard marcáilte) nó steallaire 100 mL ar an meá, agus cuir an mheá ar nialas.
+3. Líon é le glónra go dtí 100 mL go díreach, ag léamh an mhairc ag leibhéal na súl.
+4. Meáigh é agus roinn na graim ar 100: is ionann 145 g agus sainmheáchan 1.45.
 
-Cuireann Digitalfire marc freisin ar chupán ag leibhéal 500 g uisce, líonann sé go dtí an marc é le glónra, agus roinneann sé an meáchan ar 500; is cruinne tomhas níos mó, níos lána. Is tapa an **hidriméadar**, snámhán a léitear san áit a luíonn sé sa ghlónra, ach is féidir leis léamh mícheart a thabhairt ar ghlónraí tiubha nó glóthaithe. Léann hidriméadair na Ríochta Aontaithe, ar nós an chinn ó Potclays, i gcéimeanna Baumé (°Bé). De réir ár n-uimhríochta, SM = 145 ÷ (145 − °Bé), mar sin is ionann 46 °Bé agus thart ar 1.46. Tugann seanleabhair ón Ríocht Aontaithe **meáchan pionta**, na hunsaí i bpionta impiriúil glónra: roinn ar 20 é, mar sin is ionann 29 oz agus thart ar SM 1.45 (ár n-uimhríocht féin freisin).
+Marcálann Digitalfire cupán freisin ag leibhéal 500 g uisce, líonann sé go dtí an marc é le glónra, agus roinneann sé an meáchan ar 500; is cruinne tomhas níos mó agus níos lán. Is tapa an **hidriméadar**{{en: hydrometer}}, snámhán a léitear san áit a luíonn sé sa ghlónra, ach is féidir leis glónraí tiubha nó glóthaithe a mhíléamh. Léann hidriméadair na Ríochta Aontaithe, mar cheann Potclays, i gcéimeanna Baumé (°Bé). De réir ár n-uimhríochta, sainmheáchan = 145 ÷ (145 − °Bé), mar sin is ionann 46 °Bé agus thart ar 1.46. Tugann seanleabhair na Ríochta Aontaithe **meáchan pionta**, na hunsaí i bpionta impiriúil glónra: roinn ar 20 é, mar sin is ionann 29 oz agus thart ar shainmheáchan 1.45 (ár n-uimhríocht féin freisin).
 
-### Cad ar cheart díriú air
+### Cad is sprioc duit
 
-Ní réitíonn na foinsí le chéile, go háirithe faoi scuabadh agus spraeáil, áit a dtugann Potclays, soláthraí sa Ríocht Aontaithe, figiúirí i bhfad níos airde (deir sé féin go bhfuil a fhigiúirí “mar threoir amháin”). Caith le gach uimhir mar phointe tosaigh. Is é príomhchomhairle Digitalfire an sainmheáchan agus an glóthú a oibríonn do gach glónra a aimsiú, ansin iad a athdhéanamh agus a scríobh síos.
+Ní réitíonn na foinsí le chéile, go háirithe faoi scuabadh agus spraeáil, áit a dtugann an soláthraí Potclays sa Ríocht Aontaithe figiúirí i bhfad níos airde (agus deir sé go bhfuil a chuid féin “mar threoir amháin”). Glac le gach uimhir mar phointe tosaigh. Is é croí-chomhairle Digitalfire an sainmheáchan agus an glóthú a oibríonn do gach glónra a aimsiú, ansin iad a athdhéanamh agus iad a scríobh síos.
 
-Table: Spriocanna sainmheáchain, áit a n-easaontaíonn na foinsí
+Table: Spriocanna sainmheáchain, nuair nach réitíonn na foinsí
 Label: Spriocanna sainmheáchain
 
-| Úsáid    | Digitalfire agus Glazy                                                                                                                                                      | Potclays (UK)                                           | Pointe tosaigh sábháilte                                                               |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Tumadh   | {{SG 1.40}} (do thumadh 5 shoicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a oibríonn glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}}                | Glónra glé: {{SG 1.46–1.48}}; glónra daite: {{SG 1.61}} | {{SG 1.45}}; má shileann sé, tanaigh é go dtí go léann sé {{SG 1.43}} agus glóthaigh é |
-| Scuabadh | {{SG 1.25}} (glónra glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                                           | {{SG 1.71–1.81}}                                        | Lean treoracha an táirge; úsáid guma CMC nó meán scuabtha                              |
-| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, go mbíonn sé i bhfad níos tanaí, le dífhlocasach{{en: deflocculant}} (breiseán a fhágann draoib níos leachtaí) | {{SG 1.71}}                                             | Níl figiúr iontaofa ann; ná spraeáil ach i mboth spraeála                              |
+| Úsáid    | Digitalfire agus Glazy                                                                                                                                        | Potclays (an Ríocht Aontaithe)            | Pointe tosaigh sábháilte                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------- |
+| Tumadh   | {{SG 1.40}} (do thumadh 5 soicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a éiríonn le glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}} | Glé: {{SG 1.46–1.48}}; daite: {{SG 1.61}} | {{SG 1.45}}; tanaigh go dtí {{SG 1.43}} agus glóthaigh é má shileann sé |
+| Scuabadh | {{SG 1.25}} (glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                                    | {{SG 1.71–1.81}}                          | Lean an táirge; úsáid CMC nó meán scuabtha                              |
+| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, i bhfad níos tanaí, le dífhlocasach (breiseán a dhéanann draoib níos tanaí)                      | {{SG 1.71}}                               | Gan uimhir iontaofa; ná spraeáil ach i mboth spraeála                   |
 
-Chun glónra tumtha a sheiceáil le do shúil, tumann AMACO ar feadh 5 shoicind agus lorgaíonn sé brat atá thart ar chomh tiubh le dím, bonn deich gcent SAM. Bácálann Digitalfire tíleanna a tumadh ar feadh 5 shoicind chun é a sheiceáil.
+Chun glónra tumtha a sheiceáil leis an tsúil, tumann AMACO ar feadh 5 soicind agus lorgaíonn sé brat atá chomh tiubh le dím, bonn deich gcent SAM. Bácálann Digitalfire tíleanna a tumadh ar feadh 5 soicind chun seiceáil.
 
-### An méid uisce do gach sprioc: ár meastachán
+### Uisce do sprioc-sainmheáchan: ár meastachán
 
-Is é ár n-uimhríocht féin an tábla thíos, ní uimhríocht foinse. Glacann sé leis go bhfuil dlús 2.6 g sa cm³ ag cáithníní an phúdair; is toimhde é sin, ní tomhas. Athraíonn cré, ábhair intuaslagtha agus glóthú glónra fíor, mar sin úsáid é chun tosú, ansin tomhais. Mar sheiceáil, tuarann sé {{SG 1.44}} do mheáchain chothroma púdair agus uisce, agus thomhais Digitalfire {{SG 1.46}}, atá gar dó. Léiríonn sé freisin go dtosaíonn tú ag níos mó ná {{SG 1.50}} le 70 go 80 mL sa 100 g: níos tibhe ná mar is gá.
+Is é an tábla thíos ár n-uimhríocht féin, ní uimhríocht foinse. Glacann sé leis go bhfuil dlús 2.6 g sa cm³ ag cáithníní an phúdair, rud is toimhde é, ní tomhas. Athraíonn cré, ábhair intuaslagtha agus glóthú fíorghlónra, mar sin úsáid é chun tosú, ansin tomhais. Mar sheiceáil, tuarann sé {{SG 1.44}} do mheáchain chomhionanna púdair agus uisce, gar do {{SG 1.46}} a thomhais Digitalfire. Léiríonn sé freisin go dtosaíonn 70 go 80 mL do gach 100 g os cionn {{SG 1.50}}, níos tiubha ná mar a theastaíonn.
 
-Table: Uisce do gach sprioc sainmheáchain (ár meastachán)
-Label: Uisce do gach sprioc sainmheáchain
+Table: Uisce do sprioc-sainmheáchan (ár meastachán)
+Label: Uisce do sprioc-sainmheáchan
 
-| Sprioc      | Sa 100 g púdair |    Sa chileagram |             Sa phunt |
-| ----------- | --------------: | ---------------: | -------------------: |
-| {{SG 1.40}} | thart ar 115 mL | thart ar 1150 mL | thart ar 18 US fl oz |
-| {{SG 1.45}} |  thart ar 98 mL |  thart ar 980 mL | thart ar 15 US fl oz |
-| {{SG 1.50}} |  thart ar 85 mL |  thart ar 850 mL | thart ar 13 US fl oz |
-| {{SG 1.60}} |  thart ar 64 mL |  thart ar 640 mL | thart ar 10 US fl oz |
+| Sprioc      | Do gach 100 g púdair |     An cileagram |              An punt |
+| ----------- | -------------------: | ---------------: | -------------------: |
+| {{SG 1.40}} |      thart ar 115 mL | thart ar 1150 mL | thart ar 18 US fl oz |
+| {{SG 1.45}} |       thart ar 98 mL |  thart ar 980 mL | thart ar 15 US fl oz |
+| {{SG 1.50}} |       thart ar 85 mL |  thart ar 850 mL | thart ar 13 US fl oz |
+| {{SG 1.60}} |       thart ar 64 mL |  thart ar 640 mL | thart ar 10 US fl oz |
 
-### Salann Epsom, guma CMC agus beintinít
+### Sainmheáchan tirim do ghlónra féin a fháil agus tú ag meascadh
 
-Fágann **salann Epsom** go nglóthaíonn glónra beagán nuair a sheasann sé socair, agus go sreabhann sé arís nuair a chorraítear é. **Flocasú**{{en: flocculating}} a thugtar air seo, agus is glónra **ticseatrópach**{{en: thixotropic}} é glónra a iompraíonn é féin mar seo: leathann sé níos cothroime, sileann sé níos lú agus síothlaíonn sé níos lú. Molann Digitalfire tosú le thart ar 2 g sa ghalún nuair a bhíonn an sainmheáchan ceart (thart ar 0.5 g sa lítear, de réir ár n-athraithe féin) agus an méid a choigeartú gach uair a mheascann tú, mar níor cheart d’aon oideas an dáileog a shocrú. Molaimid é a thuaslagadh i mbeagán uisce te ar dtús. I sampla ó Digitalfire, shil glónra ag {{SG 1.45}}, mar sin tanaíodh le huisce é go dtí go raibh sé ag {{SG 1.43}}, agus ghlóthaigh salann Epsom é go raibh sé cosúil le huachtar arís, agus leath sé go cothrom. Seiceáil gharbh: corraigh, stop agus breathnaigh. Leanann glónra glóthaithe ag gluaiseacht ar feadh thart ar 2 nó 3 shoicind, ansin stopann sé agus preabann sé siar beagán.
+Buille faoi thuairim is ea an 2.6 thuas. Is féidir figiúr do ghlónra féin, dlús a phúdair thirim, a oibriú amach ó thrí uimhir is féidir leat a thógáil agus tú ag meascadh. Leis, is féidir leat a oibriú amach ón sainmheáchan cé mhéad púdair atá in aon bhuicéad den ghlónra sin níos déanaí, agus an t-uisce don chéad bhaisc eile. Ár n-uimhríocht féin, ní uimhríocht foinse:
 
-Fágann **guma CMC** (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a ghreamaíonn den phota. Is mó a bhíonn sé tábhachtach do ghlónraí scuabtha agus do ghlónraí a bhfuil cuid mhór friota{{en: frit}} iontu. I sampla Digitalfire, cumasctar 3.75 g isteach i 1000 g draoibe, agus caithfear cumascóir a úsáid chun é a chur isteach. Ní ghlóthóidh salann Epsom glónra a bhfuil CMC ann, agus ós rud é go n-itheann miocróib an guma, is féidir leis an nglónra athrú sa bhuicéad agus tosú ag cur drochbholadh de.
+1. Scríobh síos meáchan an phúdair thirim sa bhaisc: iomlán an oidis.
+2. Meáigh an buicéad folamh sula dtosaíonn tú, nó marcáil a mheáchan air.
+3. Measc, criathraigh agus tabhair an glónra go dtí a shainmheáchan mar is gnách. Brúigh gach rud tríd an gcriathar agus sruthlaigh isteach sa bhuicéad é, ionas nach bhfágtar aon phúdar amuigh.
+4. Meáigh an buicéad lán agus bain meáchan an bhuicéid de. Sin meáchan na draoibe.
+5. Tomhais an sainmheáchan.
 
-Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 3% beintiníte; deir Digitalfire nár cheart go mbeadh beintinít de dhíth ar ghlónra a bhfuil níos mó ná 15% cré ann ag níos mó ná 1% de mheáchan an ghlónra thirim.
+Ansin:
+
+- **Uisce** = meáchan na draoibe − meáchan an phúdair.
+- **Toirt na draoibe** i mL = meáchan na draoibe i ngraim ÷ sainmheáchan.
+- **Toirt an phúdair** = toirt na draoibe − uisce (is ionann 1 g uisce agus 1 mL).
+- **Sainmheáchan tirim** = meáchan an phúdair ÷ toirt an phúdair.
+
+Mar shampla: déanann 1000 g púdair 1980 g draoibe ag {{SG 1.45}}. Is é 980 g an t-uisce, is é an draoib 1980 ÷ 1.45 = thart ar 1366 mL, tógann an púdar 1366 − 980 = 386 mL, agus is é an sainmheáchan tirim 1000 ÷ 386 = thart ar 2.59.
+
+Meáigh an draoib ar fad ag an deireadh, ní an t-uisce agus tú á dhoirteadh, ionas nach n-áirítear uisce a ghalaíonn nó a imíonn ina steall. Méadaíonn earráidí beaga anseo: bogann léamh sainmheáchain atá 0.01 as an freagra thart ar 2 go 4%, níos mó do ghlónra níos tanaí. Úsáid baisc 1 kg nó níos mó, meá chruinn, agus modh an chupáin 500 g thuas don sainmheáchan. Tá formhór na n-ábhar coitianta idir thart ar 2.5 agus 2.9, mar sin is dócha gur botún tomhais atá i bhfigiúr i bhfad lasmuigh de sin, i nglónra nach bhfuil mórán siorcóin ná luaidhe ann. Scríobh an figiúr ar an oideas.
+
+### Salann Epsom, CMC agus beintinít
+
+Cuireann **salann Epsom** glónra ag glóthú beagán nuair a sheasann sé gan corraí agus ag sreabhadh arís nuair a chorraítear é. **Flocasú**{{en: flocculating}} a thugtar air seo, agus is **ticseatrópach**{{en: thixotropic}} glónra a iompraíonn é féin mar sin: téann sé air níos cothroime, sileann sé níos lú agus síothlaíonn sé níos lú. Molann Digitalfire tosú ag thart ar 2 g an galún nuair a bhíonn an sainmheáchan ceart (thart ar 0.5 g an lítear, ár n-aistriú féin) agus an méid a choigeartú gach uair a mheascann tú, mar níor cheart d’aon oideas an dáileog a shocrú. Molaimid é a thuaslagadh i mbeagán uisce te ar dtús. I sampla de chuid Digitalfire, shil glónra ag {{SG 1.45}}, mar sin thug uisce síos go {{SG 1.43}} é agus ghlóthaigh salann Epsom ar ais go huachtarach é, agus chuaigh sé air go cothrom. Seiceáil gharbh: corraigh, stop agus féach. Leanann glónra glóthaithe ar aghaidh ag bogadh ar feadh thart ar 2 nó 3 shoicind, ansin stopann sé agus preabann sé siar beagán.
+
+Déanann **CMC**{{en: CMC gum}} (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a choinníonn greim ar an bpota. Is mó a bhaineann sé le glónraí scuabtha agus le glónraí ina bhfuil mórán friot. Meascann sampla Digitalfire 3.75 g isteach i 1000 g draoibe, agus ní mór é a chur isteach le cumascóir. Ní ghlóthóidh glónra ina bhfuil CMC le salann Epsom, agus ós rud é go n-itheann miocróib an guma, is féidir leis athrú sa bhuicéad agus tosú ag bréantas.
+
+Cabhraíonn **beintinít**{{en: bentonite}}, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. De ghnáth braitheann glónraí tumtha ar 15 go 25% cré neamhbhácáilte chuige seo. D’oideas atá gann ar chré, cabhraíonn thart ar 1 go 3% beintinít; deir Digitalfire nár cheart go dteastódh beintinít níos mó ná 1% de mheáchan an ghlónra thirim ó ghlónra ina bhfuil níos mó ná 15% cré.
 
 ## Tíleanna tástála agus sraitheanna cumaisc {#testing}
 
-### Tosú go beag
+### Tosaigh beag
 
-Oibríonn Derek Au aníos i dtrí chéim: tástáil 50 nó 100 g, baisc thrialach 1 go 2 kg má oibríonn sé, agus ansin baisc stiúideo 5 go 10 kg. De réir ár meastacháin, déanann tástáil 100 g ag {{SG 1.45}} thart ar 135 mL (thart ar 4½ US fl oz) draoibe{{en: slurry}}, a dhóthain chun cúpla tíl bheag a thumadh i gcupán caol.
+Oibríonn Derek Au suas i dtrí chéim: tástáil 50 nó 100 g, triail 1 go 2 kg má oibríonn sí, ansin baisc stiúideo 5 go 10 kg. De réir ár meastacháin, déanann tástáil 100 g ag {{SG 1.45}} thart ar 135 mL (thart ar 4½ US fl oz) draoibe{{en: slurry}}, a dhóthain chun cúpla tíl bheag a thumadh i gcupán caol.
 
 ### Tástáil ar do chré féin
 
-Is féidir go mbeidh cuma an-difriúil ar ghlónra{{en: glaze}} ar chré eile nó in áith eile: thástáil Clay Art Center gach ceann dá ghlónraí athfhoirmlithe ar cheithre chré-ábhar{{en: clay bodies}}, ag cón{{en: cone}} 6 agus ag cón 10. Molann treoirleabhar Potclays do thosaitheoirí ar thástáil glónraí:
+Is féidir le glónra cuma an-difriúil a bheith air ar chré eile nó in áith eile: thástáil Clay Art Center gach ceann dá ghlónraí athfhoirmlithe ar cheithre chré-ábhar, ag cón{{en: cone}} 6 agus ag cón 10. Molann treoir thosaitheoirí Potclays do thástáil glónra:
 
-- 6 go 10 **dtíl tástála**{{en: test tiles}} (píosaí beaga chun glónra a thriail) den chré a úsáidfidh tú i ndáiríre, ag breacadh síos cé acu atá siad brioscbhácáilte{{en: bisqued}} nó cnámhthirim
+- 6 go 10 **dtíl tástála**{{en: test tiles}} (píosaí beaga chun glónra a thriail) den chré a úsáidfidh tú i ndáiríre, ag nótáil an bhfuil siad brioscbhácáilte nó cnámhthirim
 - athrú amháin ag an am
 - tumadh aonair agus tumadh dúbailte, chun an glónra a fheiceáil tanaí agus tiubh
-- gach tíl sa lucht céanna san áith
-- marc ar gach tíl roimh bhácáil, le stampa, le snoí nó le peann luaidhe fo-ghlónra.
+- gach tíl sa lucht áithe céanna
+- marc ar gach tíl roimh bhácáil, le stampa, snoíodóireacht nó peann luaidhe fo-ghlónra. Bíonn cuma chosúil ar thíleanna bácáilte, agus maireann marc a rinneadh roimh bhácáil tríd an áith, ionas gur féidir leat a insint i gcónaí cén t-oideas atá ar gach tíl.
 
-Molaimid tíleanna a sheasann suas díreach, mar folaíonn tíl chothrom an fad a ritheann glónra, le banda uigeach chun a thaispeáint conas a athraíonn dath an ghlónra ar na himill, agus bonn gan glónra. Cuir gach ceann ar mhias bheag nó ar phíosa brioscghréithe, nó ar sheilf a bhfuil brat seilfe uirthi, chun na braonta a cheapadh. Cuir **cón fianaise**{{en: witness cone}}, cón beag ceirmeach a lúbann nuair a fhaigheann sé a dhóthain teasa, in aice leis na tíleanna chun a thaispeáint cad a fuair siad; míníonn an treoirleabhar [Bácáil in áith shimplí](/guides/firing) na cóin. Tabhair cód gearr do gach tíl, agus scríobh é in aice leis an oideas i do thaifid. Úsáideann Willers, ag scríobh do Ceramic Arts Network, uimhreacha agus litreacha, agus scríobhann Willers an córas féin i dtosach an leabhair nótaí.
+Molaimid tíleanna a sheasann ina seasamh, ós rud é go gceileann tíl chothrom cé chomh fada is a ritheann glónra, le banda uigeachta chun a thaispeáint conas a athraíonn dath an ghlónra ar na himill, agus bonn lom. Cuir gach ceann ar mhias bheag nó ar phíosa brioscghréithe, nó ar sheilf a bhfuil brat seilfe uirthi, chun na braonta a cheapadh. Cuir **cón fianaise**{{en: witness cone}}, cón beag ceirmeach a lúbann nuair a fhaigheann sé a dhóthain teasa, in aice leis na tíleanna chun a thaispeáint cad a fuair siad; míníonn an [treoirleabhar bácála](/guides/firing) na cóin. Tabhair cód gearr do gach tíl, agus scríobh é in aice leis an oideas i do thaifid. Úsáideann Willers, ag scríobh do Ceramic Arts Network, uimhreacha agus litreacha, agus scríobhann sé an córas féin i dtosach an leabhair nótaí.
 
 ### Sraitheanna cumaisc
 
-Is éard is **sraith cumaisc**{{en: line blend}} ann ná sraith tástálacha a théann ar aghaidh i gcéimeanna cothroma ó mheascán amháin go meascán eile: ó ghlónra amháin go glónra eile, nó ó bhunghlónra go dtí an glónra céanna le níos mó ábhair datha{{en: colorant}}. Méadaíonn Derek Au, mar shampla, an ocsaíd iarainn i mbunghlónra glé 1% sa chéim. Sábhálann modh toirte a bhfuil baint aige le Ian Currie am, mar ní mheascann tú ach an dá fhoirceann:
+Is éard is **sraith cumaisc**{{en: line blend}} ann ná ró tástálacha a théann céim ar chéim go cothrom ó mheascán amháin go meascán eile: ó ghlónra amháin go dtí an dara ceann, nó ó bhunghlónra go dtí an glónra céanna le níos mó ábhair datha{{en: colorant}}. Céimníonn Derek Au, mar shampla, ocsaíd iarainn trí bhunghlónra glé i gcéimeanna 1%. Sábhálann modh toirte a luaitear le Ian Currie am, mar nach meascann tú ach an dá cheann:
 
-1. Measc an dá ghlónra ag na foircinn, A agus B, mar bhaisceanna den mhéid chéanna, agus criathraigh iad araon.
+1. Measc an dá ghlónra deiridh, A agus B, mar bhaisceanna den mhéid chéanna, agus criathraigh iad araon.
 2. Cuir uisce leis an gceann is lú toirt go dtí go mbíonn an toirt fhliuch chéanna go díreach ag an dá cheann.
-3. Corraigh an dá cheann, ansin tarraing gach meascán le steallaire isteach ina chupán uimhrithe féin.
+3. Corraigh iad araon, ansin tarraing gach meascán le steallaire isteach ina chupán uimhrithe féin.
 4. Corraigh gach cupán agus tum tíl.
 
-Inár sampla oibrithe, is é A 100 g de bhunghlónra glé, agus is é B an rud céanna le 4 g d’ocsaíd iarainn dhearg curtha leis (breis 4%). Tá an sciar céanna bunghlónra i ngach millilítear de B agus atá i millilítear de A, móide a chuid iarainn, mar sin téann na cupáin ó chupán gan iarann go cupán le 4%, i gcéimeanna 1%. Tugann gach foirceann 100 mL don chumasc, agus is leor baisc 100 g chuige sin de réir ár meastacháin.
+Inár sampla oibrithe, is é A 100 g de bhunghlónra glé, agus is é B an rud céanna le 4 g d’ocsaíd iarainn dhearg curtha leis (breis 4%). Tá an sciar céanna den bhunghlónra i ngach millilítear de B agus atá i millilítear de A, móide a chuid iarainn, mar sin téann na cupáin ó iarann ar bith go 4% i gcéimeanna 1%. Tugann gach ceann deiridh 100 mL don tsraith, agus clúdaíonn baisc 100 g é sin de réir ár meastacháin.
 
 Table: Sraith cumaisc iarainn i gcúig chéim, 40 mL sa chupán (ár sampla oibrithe)
 Label: Sampla de shraith cumaisc
@@ -253,28 +274,28 @@ Label: Sampla de shraith cumaisc
 | 4     |              10 mL |                        30 mL |                                 3 |
 | 5     |               0 mL |                        40 mL |                                 4 |
 
-Tá uimhríocht chúramach ag teastáil ón modh, foircinn mheasctha go maith a bhfuil an sainmheáchan{{en: specific gravity}} céanna acu, agus meá chruinn. Déanann Derek Au cumasc de réir meáchain freisin seachas de réir toirte. Déanann **cumasc trí-aiseach** an rud céanna le trí fhoirceann, leagtha amach ar thriantán.
+Teastaíonn uimhríocht chúramach, dhá cheann deiridh atá measctha go maith agus ar shainmheáchan cothrom, agus meá chruinn don mhodh. Cumascann Derek Au de réir meáchain freisin seachas de réir toirte. Déanann **cumasc trí-aiseach**{{en: triaxial blend}} an rud céanna le trí cheann deiridh, leagtha amach ar thriantán.
 
 > [!NOTE]
-> Nuair a bhíonn cuma gheallúnach ar chéim, coinníonn an cnaipe **Sábháil mar chóip** ar [leathanach an oidis](/recipe) í mar oideas ann féin agus fágann sé an bunoideas mar a bhí.
+> Nuair is cosúil go bhfuil céim gealltanach, coinníonn **Sábháil mar chóip** ar an [leathanach oidis](/recipe) é mar oideas dá chuid féin agus fágann sé an bunoideas mar a bhí.
 
 ## Taifid a choinneáil {#records}
 
-Cuireann Willers an sprioc go maith: “dóthain eolais le bheith in ann na torthaí a fuair tú a athdhéanamh, nó a sheachaint”. Scríobh síos a bhfuil beartaithe agat a thástáil sula dtosaíonn tú, agus na torthaí nuair a fholmhaíonn tú an áith. Cuireann Potclays leis sin an chaoi ar cuireadh an glónra{{en: glaze}} air, an tiús, an cré-ábhar{{en: clay body}} agus an bhácáil iomlán, lena n-áirítear rampaí{{en: ramps}}, coinneálacha{{en: holds}} agus fuarú. Is é is **rampa** ann ná ráta téimh nó fuaraithe, mar shampla {{60 °C; 108 °F}} san uair, agus coinníonn **coinneáil** an áith ag teocht amháin ar feadh tréimhse áirithe. Breac síos baiscuimhreacha, an t-uisce a d’úsáid tú agus aon ionadú: nuair a mhalartaigh Clay Art Center a iathchloch{{en: feldspar}}, b’éigean thart ar leath dá ghlónraí a choigeartú.
+Cuireann Willers an aidhm go maith: “dóthain eolais chun na torthaí a d’aimsigh tú a athdhéanamh, nó a sheachaint”. Scríobh síos cad atá beartaithe agat a thástáil sula dtosaíonn tú, agus na torthaí nuair a fholmhaíonn tú an áith. Cuireann Potclays leis sin an cur i bhfeidhm, an tiús, an cré-ábhar{{en: clay body}} agus an bhácáil iomlán, lena n-áirítear rampaí, coinneálacha agus fuarú. Is éard is **rampa**{{en: ramp}} ann ná ráta téimh nó fuaraithe, mar {{60 °C; 108 °F}} san uair, agus coinníonn **coinneáil**{{en: hold}} an áith ag teocht amháin ar feadh ama shocraithe. Nótáil baiscuimhreacha, an t-uisce a d’úsáid tú agus aon ionadú: nuair a d’athraigh Clay Art Center a iathchloch, b’éigean thart ar leath dá ghlónraí a choigeartú.
 
-Table: Cad le taifeadadh do gach baisc ghlónra (ár dteimpléad)
+Table: Cad atá le taifeadadh do gach baisc ghlónra (ár dteimpléad)
 Label: Teimpléad taifid
 
-| Cuid           | Cad le scríobh síos                                                                                                                                                                                                                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Oideas         | An t-oideas agus a leagan; brandaí agus baiscuimhreacha na n-ábhar; aon ionadú                                                                                                                                                                                                                                |
-| Meascadh       | Dáta; méid baisce; an t-uisce a cuireadh leis, agus a chineál (uisce buacaire, cúlosmóis nó uisce driogtha); an sainmheáchan{{en: specific gravity}} tar éis measctha agus an sainmheáchan deiridh; salann Epsom, CMC agus beintinít a cuireadh leis; mesh an chriathair agus cé mhéad uair a cuireadh tríd é |
-| Cur an ghlónra | Cré-ábhar; cón{{en: cone}} na brioscbhácála{{en: bisque}}; tumadh, scuabadh nó doirteadh; am tumtha nó líon na mbrat; tiús tirim                                                                                                                                                                              |
-| Bácáil         | An áith agus suíomh na seilfe; an clár bácála, lena rampaí, a choinneálacha agus a fhuarú; atmaisféar (ocsaídiú{{en: oxidation}} nó dí-ocsaídiú{{en: reduction}}); an méid a léirigh an cón fianaise{{en: witness cone}}, ní hamháin an méid a socraíodh ar an áith                                           |
-| Toradh         | Dromchla agus dath; aon rith, snáithlíonrú{{en: crazing}} nó poill bhioráin{{en: pinholes}}; grianghraif den tosach, den chúl agus den taobh; cód na tíle                                                                                                                                                     |
+| Cuid           | Cad atá le scríobh síos                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Oideas         | An t-oideas agus a leagan; brandaí agus baiscuimhreacha na n-ábhar; aon ionadú                                                                                                                                                                                                                                           |
+| Meascadh       | Dáta; méid baisce; an t-uisce a cuireadh leis, agus a chineál (sconna, osmóis droim ar ais nó driogtha); sainmheáchan tar éis measctha agus an sainmheáchan deiridh; meáchan na draoibe críochnaithe, dá sainmheáchan tirim; salann Epsom, CMC agus beintinít a cuireadh leis; mesh an chriathair agus líon na gcur tríd |
+| Cur i bhfeidhm | Cré-ábhar; cón na brioscbhácála; tumadh, scuabadh nó doirteadh; am tumtha nó líon na mbrat; tiús tirim                                                                                                                                                                                                                   |
+| Bácáil         | An áith agus suíomh na seilfe; an clár bácála, lena rampaí, coinneálacha agus fuarú; atmaisféar (ocsaídiú nó dí-ocsaídiú); a léirigh an cón fianaise, ní hamháin a raibh an áith socraithe air                                                                                                                           |
+| Toradh         | Dromchla agus dath; aon rith, snáithlíonrú nó poill bhioráin; grianghraif den tosach, den chúl agus den taobh; cód na tíle                                                                                                                                                                                               |
 
 > [!NOTE]
-> San aip Glazecalc, coinníonn [oideas](/recipe) sábháilte an t-oideas féin. Coinníonn [taifead bácála](/firing) cuntas ar gach bácáil: an áith, an dáta, amanna, teochtaí, cóin agus nótaí. Coinníonn na [nótaí](/notes) gach rud eile, mar shampla taifead na baisce thuas agus an méid a léirigh gach tíl.
+> San aip Glazecalc, coinníonn [oideas](/recipe) sábháilte an t-oideas féin. Taifeadann [taifead bácála](/firing) gach bácáil: an áith, an dáta, amanna, teochtaí, cóin agus nótaí. Coinníonn [nótaí](/notes) gach rud eile, mar an taifead baisce thuas agus a léirigh gach tíl.
 
 ## Foinsí {#sources}
 

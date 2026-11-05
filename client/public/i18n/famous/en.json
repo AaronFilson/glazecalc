@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Some of this page is not translated yet, so it is shown in English.",
+  "index": {
+    "crumb": "Famous glazes",
+    "title": "Famous glazes",
+    "lead": "Glazes known around the world, each from its traditional local materials, with its unity formula and a version from the materials sold where you are.",
+    "listHeading": "The glazes",
+    "more": "More glazes are coming: each is added once its recipe and materials rest on at least three sources that were read."
+  },
+  "glaze": {
+    "lead": "A famous glaze ({native}): its traditional recipe or analysis, its firing, and a version from the materials sold where you are.",
+    "aboutHeading": "About {name}",
+    "nativeName": "Native name",
+    "origin": "Where",
+    "period": "When",
+    "firing": "Firing",
+    "cone": "cone {cone}",
+    "historyOnly": "History only: this glaze was made with lead. Its analysis is shown as history, not as a recipe to mix. The version below is a different glaze, without lead.",
+    "recipeHeading": "The traditional recipe",
+    "material": "Material",
+    "amount": "Amount",
+    "unityHeading": "Unity formula",
+    "analysisHeading": "Historic analysis",
+    "oxide": "Oxide",
+    "percent": "Weight %",
+    "useHeading": "Try it",
+    "open": "Open this recipe",
+    "openLeadFree": "Open the lead-free version",
+    "leadFreeTitle": "{name} style, lead-free",
+    "allLink": "All famous glazes",
+    "safetyHeading": "Safety",
+    "safeMixing": "Safe mixing and ventilation",
+    "firingGuide": "Firing a kiln",
+    "makingGuide": "How to make a glaze",
+    "sourcesHeading": "Sources",
+    "link": "Open",
+    "opened": "read {date}"
+  },
+  "local": {
+    "heading": "With your local materials",
+    "leadFreeHeading": "Lead-free version",
+    "intro": "The traditional recipe's unity formula, made from the standard materials sold where you buy. Choose where you buy to see it.",
+    "region": "Where you buy materials",
+    "proposal": "The proposal's own materials",
+    "pick": "Choose…",
+    "untested": "Calculated, not yet test-fired.",
+    "testFirst": "Fire test tiles before you use it on any ware, and test a food surface for leaching.",
+    "untestedNote": "Calculated, not yet test-fired: fire test tiles before use.",
+    "close": "It comes close to the target formula.",
+    "fair": "It comes fairly close to the target formula.",
+    "poor": "These materials cannot come close to the target formula.",
+    "none": "The materials sold there cannot make it.",
+    "choose": "Choose where you buy materials to see it made from those sold there."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduction",
+    "neutral": "neutral",
+    "wood": "wood firing",
+    "salt": "salt firing",
+    "soda": "soda firing"
+  }
+}

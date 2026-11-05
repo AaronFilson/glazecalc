@@ -59,29 +59,31 @@ Label: Šķīstošās izejvielas
 
 Svina galvenās briesmas ir citādas: nevis viena karote, bet nelieli putekļu daudzumi, kas norīti nedēļu vai mēnešu laikā bez jebkādām brīdinājuma pazīmēm (skatiet tālāk sadaļu “Svins un bērni”).
 
-## Izejvielu glabāšana mājās {#storing-materials}
+## Izejvielu uzglabāšana mājās {#storing-materials}
 
-Neviena oficiāla iestāde nenosaka noteikumus glazūras izejvielu{{en: glaze materials}} glabāšanai mājās, taču veselības un drošības lapās ir vienprātība: strādājiet atsevišķā vietā, pa gabalu no bērniem. Pensilvānijas Veselības departaments par vaļaspriekiem, kuros izmanto svinu, raksta: “Savam vaļaspriekam izmantojiet īpaši tam paredzētu darba vietu vai garāžu un neļaujiet bērniem tai tuvoties.”
+Neviena oficiāla iestāde nenosaka noteikumus glazūru izejvielu uzglabāšanai mājās, bet veselības un drošības lapas ir vienisprātis: strādājiet atsevišķā telpā, bērniem nepieejamā vietā. Pensilvānijas veselības departaments, rakstot par vaļaspriekiem, kuros izmanto svinu, iesaka: “Savam vaļaspriekam izmantojiet atsevišķu darba vietu vai garāžu un neļaujiet bērniem tai tuvoties.”
 
-### Glabāšanas kontrolsaraksts
+### Uzglabāšanas kontrolsaraksts
 
-Tie ir vispārīgi saindēšanās novēršanas noteikumi, piemēroti glazūrām. Neviens keramikas standarts tos nenosaka, taču mēs iesakām tos visus:
+Tie ir vispārīgi saindēšanās novēršanas noteikumi, attiecināti uz glazūru. Neviens keramikas standarts tos nenosaka, bet iesakām ievērot tos visus:
 
-- Glabājiet sausās izejvielas aizslēgtas: skapī vai telpā, garāžā vai šķūnī, ko var aizslēgt. Augsts plaukts palīdz, taču bērni kāpelē. Ja sākumā varat aizslēgt tikai dažas lietas, sāciet ar šķīstošajām izejvielām un krāsvielām{{en: colorants}}.
-- Glabājiet izejvielas to oriģinālajos maisos vai kārbās. Ja kādu pārberat citā traukā, uzrakstiet uz tā nosaukumu tieši tā, kā tas rakstīts uz maisa.
-- Nekad neizmantojiet pārtikas vai dzērienu traukus (jogurta trauciņus, burkas, pudeles) glazūras izejvielām, pat ja uz tiem ir uzraksts. Bērns zina, kas ir jogurta trauciņā.
-- Turiet darbnīcas rīkus (kausiņus, karotes, putošanas slotiņas, sietus, svarus) darbnīcā. Nekad neizmantojiet virtuves rīkus glazūrai vai glazūras rīkus ēdienam.
-- Glabājiet šķidrās glazūras spaiņos ar uzrakstu un uzliktiem vākiem.
+- Glabājiet sausās izejvielas aizslēgtas: skapī vai telpā, garāžā vai šķūnī, ko var aizslēgt. Augsts plaukts palīdz, bet bērni rāpjas. Ja sākumā varat aizslēgt tikai dažas lietas, sāciet ar šķīstošajām izejvielām un krāsvielām.
+- Glabājiet izejvielas to oriģinālajos maisos vai traukos. Ja pārberat kādu citā traukā, uzlīmējiet uz tā nosaukumu tieši tā, kā tas rakstīts uz maisa.
+- Nekad neizmantojiet pārtikas vai dzērienu traukus (jogurta trauciņus, burkas, pudeles) glazūru izejvielām, pat ar etiķeti. Bērns zina, kas ir jogurta trauciņā.
+- Glabājiet darbnīcas rīkus (lāpstiņas, karotes, slotiņas, sietus, svarus) darbnīcā. Nekad neizmantojiet virtuves rīkus glazūrai vai glazūras rīkus pārtikai.
+- Glabājiet šķidrās glazūras spaiņos ar etiķetēm un uzliktiem vākiem.
 - Glabājiet katras izejvielas drošības datu lapu kopā ar to, uz papīra vai tālrunī.
-- Neglabājiet virtuvē neko no darbnīcas: ne maisus, ne spaiņus, ne rīkus, ne provju plāksnītes{{en: test tiles}}.
+- Neglabājiet virtuvē neko no darbnīcas: ne maisus, ne spaiņus, ne rīkus, ne provju plāksnītes.
 
-Sīkāk par izejvielu iegādi un glabāšanu skatiet ceļvedī [Kā sagatavot glazūru](/guides/making-a-glaze).
+Par izejvielu iegādi un uzglabāšanu sīkāk skatiet ceļvedi [Kā sagatavot glazūru](/guides/making-a-glaze).
 
 ### Glazūras atkritumi un skalošanas ūdens
 
-Nekad nelejiet glazūru vai ūdeni, kurā skalojāt glazūras rīkus, izlietnē vai dārzā. Apvienotās Karalistes organizācija Crafts Council iesaka atsevišķu spaini ar ūdeni roku, otu, sietu un rīku mazgāšanai. Ļaujiet tam nostāvēties pa nakti, nolejiet dzidro ūdeni, tad nožāvējiet nosēdušos glazūru un izmetiet to atkritumos (tos aizved uz poligonu), nekad kanalizācijā.
+Nekad nelejiet glazūru vai ūdeni, kurā skalojāt glazūras rīkus, izlietnē vai dārzā. Apvienotās Karalistes Amatniecības padome (Crafts Council) iesaka atsevišķu ūdens spaini roku, otu, sietu un rīku mazgāšanai. Ļaujiet tam nostāties pa nakti, nolejiet dzidro ūdeni, tad izžāvējiet nosēdušos glazūru un izmetiet to atkritumos (tā nonāk poligonā), nekad kanalizācijā.
 
-Iesakām šim spainim vāku: nogulsnēs ir tie paši metāli, kas glazūrā, un mājdzīvnieki dzer stāvošu ūdeni. Atkritumu utilizācijas noteikumi dažādās vietās atšķiras, tāpēc pārbaudiet katra produkta drošības datu lapu un, ja rodas šaubas, jautājiet savai pašvaldībai vai ūdensapgādes uzņēmumam.
+Iesakām šim spainim vāku: nogulsnes satur tos pašus metālus, ko glazūra, un mājdzīvnieki dzer stāvošu ūdeni. Atkritumu noteikumi dažādās vietās atšķiras, tāpēc pārbaudiet katra produkta drošības datu lapu un, ja neesat pārliecināti, jautājiet savai pašvaldībai vai ūdensapgādes uzņēmumam.
+
+Dažas darbnīcas izžuvušās nogulsnes pirms izmešanas apdedzina. Tās ieliek liekā bļodā, kuru nav žēl izlietot: pēc apdedzināšanas bļodu vairs nevar lietot. Piepildiet bļodu tikai līdz ceturtdaļai, jo nogulsnes kūstot putojas un burbuļo, un pārklājiet to ar šķīvi. Novietojiet to uz plaukta, pārklāta ar atdalīšanas līdzekli, vai uz lieka paliktņa, ja nu tās pārtek pāri malām. Apdedzināšana pārvērš nogulsnes stiklā, kas metālus notur daudz ciešāk nekā vaļīgs pulveris, tāpēc poligonā tas ir drošāk. Ar sausajām nogulsnēm rīkojieties tāpat kā ar sausu glazūru: ar respiratoru un neradot putekļus.
 
 ## Kā noturēt putekļus darbnīcā {#keeping-dust-in-the-studio}
 

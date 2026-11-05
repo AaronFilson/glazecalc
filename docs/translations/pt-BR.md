@@ -445,18 +445,26 @@ English lacks.
 
 ## 5. Catch-up terms
 
-| English                       | pt-BR                        | Notes                                                                                                       |
-| ----------------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| SK cones, Kyoto cones         | cones SK, cones de Quioto    |                                                                                                             |
-| control concentration (Japan) | concentração de controle     | _controle_ (pt-PT _controlo_).                                                                              |
-| controller (GDPR)             | controlador                  | LGPD's word ("controlador").                                                                                |
-| Standard Contractual Clauses  | cláusulas contratuais padrão | **Native check**.                                                                                           |
-| logs (server)                 | registros (logs)             |                                                                                                             |
-| prefecture (Japan)            | província                    | Never _prefeitura_ (a Brazilian city hall). **Native check**.                                               |
-| mesh (with a number)          | 200 mesh, -325 mesh          | Number first, English _mesh_ after; _malha_ only for the screen itself with no number ("malha da peneira"). |
-| passkey                       | passkey                      | Kept in English, as Brazilian Google/Apple screens do.                                                      |
-| infinite switch               | chave de regulagem contínua  | **Native check**.                                                                                           |
-| sake warmer                   | aquecedor de saquê           |                                                                                                             |
+| English                       | pt-BR                                                                            | Notes                                                                                                       |
+| ----------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| SK cones, Kyoto cones         | cones SK, cones de Quioto                                                        |                                                                                                             |
+| control concentration (Japan) | concentração de controle                                                         | _controle_ (pt-PT _controlo_).                                                                              |
+| controller (GDPR)             | controlador                                                                      | LGPD's word ("controlador").                                                                                |
+| Standard Contractual Clauses  | cláusulas contratuais padrão                                                     | **Native check**.                                                                                           |
+| logs (server)                 | registros (logs)                                                                 |                                                                                                             |
+| prefecture (Japan)            | província                                                                        | Never _prefeitura_ (a Brazilian city hall). **Native check**.                                               |
+| mesh (with a number)          | 200 mesh, -325 mesh                                                              | Number first, English _mesh_ after; _malha_ only for the screen itself with no number ("malha da peneira"). |
+| passkey                       | passkey                                                                          | Kept in English, as Brazilian Google/Apple screens do.                                                      |
+| infinite switch               | chave de regulagem contínua                                                      | **Native check**.                                                                                           |
+| sake warmer                   | aquecedor de saquê                                                               |                                                                                                             |
+| synthetic ash (合成土灰)      | substituto sintético; cinza sintética                                            | Round 14 records. Plain description, no web source read. **Native check**.                                  |
+| rice-straw ash (藁灰)         | cinza de palha de arroz                                                          | Literal; Brazilian rice-growing usage. No web source read. **Native check**.                                |
+| isu ash (柞灰)                | cinza de isu                                                                     | Japanese name kept, as the English does. **Native check**.                                                  |
+| porcelain stone (瓷石)        | pedra de porcelana                                                               | Calque of the English and of pt-PT usage; Chinese name kept beside it. **Native check**.                    |
+| product specification         | especificação do produto                                                         | Standard Brazilian technical wording.                                                                       |
+| drop-and-hold                 | descida e patamar                                                                | As the firing guide already wrote it (L1); _patamar_ per LACAD.                                             |
+| Stull chart; its regions      | gráfico de Stull; não fundido, fosco, semifosco, brilhante, subqueimado, gretado | As recipe/pt-BR.json `stull.regions`.                                                                       |
+| XRF                           | FRX (fluorescência de raios X)                                                   | Brazilian abbreviation.                                                                                     |
 
 ## 6. Choices for the owner and a native potter
 

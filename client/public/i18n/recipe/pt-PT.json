@@ -724,7 +724,7 @@
     "keyBright": "Linha ponteada: onde os vidrados de Stull eram mais brilhantes.",
     "keyLimits": "Linhas tracejadas e sombreado: os intervalos de sílica e alumina de {name}.",
     "keyCrazed": "Hachuras: onde fendilharam.",
-    "note": "Um guia, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) cozeu a cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e outras cozeduras deslocam as regiões, e um mate insuficientemente cozido pode ser marcado como brilhante. As regiões são as que o Glazy desenha."
+    "note": "Um guia, não uma previsão. R. T. Stull (Transactions of the American Ceramic Society, 1912) cozeu a cerca do cone 11 com os fundentes fixos em 0,3 K₂O e 0,7 CaO; outros fundentes e outras cozeduras deslocam as regiões, e um vidrado que só é mate por estar subcozido pode mesmo assim cair na região brilhante. As regiões são as que o Glazy desenha."
   },
   "slurry": {
     "heading": "Densidade e água",
@@ -752,7 +752,17 @@
       "pint": "O peso por pinta que quer, oz"
     },
     "drySg": "Densidade das matérias-primas secas",
-    "drySgHelp": "Cerca de 2,5 para a maioria dos vidrados; o Glazy usa 2,6.",
+    "drySgEmpty": "Só os pesos secos precisam dela; a água a juntar não. Escreva-a se a souber.",
+    "drySgNeeded": "Escreva a densidade das matérias-primas secas para ver o vidrado seco no balde e a água para um novo lote.",
+    "estimate": {
+      "mineral": "Uma estimativa, {sg}, a partir daquilo de que cada matéria-prima é feita: a densidade medida do seu mineral. Altere-a se souber melhor.",
+      "kind": "Uma estimativa, {sg}: os feldspatos e as argilas têm cerca de 2,6. Altere-a se souber melhor.",
+      "glass": "Uma estimativa, {sg}, calculada a partir dos óxidos das fritas (que são vidro). Altere-a se souber melhor.",
+      "mixed": "Uma estimativa, {sg}, a partir de cada matéria-prima: a densidade medida do seu mineral, cerca de 2,6 para os feldspatos e as argilas, e as fritas calculadas a partir dos seus óxidos. Altere-a se souber melhor.",
+      "leftOut": "Deixadas de fora, porque a sua densidade não é conhecida: {names}.",
+      "none": "Não há estimativa para esta receita: a densidade de {names} não é conhecida. Escreva-a se a souber.",
+      "was": "É usado o seu valor. A estimativa era {sg}; limpe o campo para voltar a ela."
+    },
     "batch": "Vidrado seco para um novo lote, {unit}",
     "contents": "À densidade {sg}, o balde contém {glaze} de vidrado seco e {water} de água.",
     "add": "Para chegar à densidade {target}, junte {water} de água. Fica com cerca de {volume}.",
@@ -760,6 +770,7 @@
     "already": "Já está à densidade {target}.",
     "mix": "Misture {glaze} de vidrado seco com {water} de água para obter cerca de {volume} à densidade {target}.",
     "badSg": "Uma densidade tem de ser superior a 1 (a da água) e inferior à das matérias-primas secas, {dry}.",
+    "badSgWater": "Uma densidade tem de ser superior a 1 (a da água).",
     "badDry": "A densidade das matérias-primas secas tem de ser superior a 1.",
     "note": "A água é medida em peso: um litro pesa um quilograma, um galão americano cerca de 8,3 lb. O cálculo soma os volumes, o que fica perto, mas não é exato: junte a água aos poucos, mexa e meça de novo. Dois vidrados com a mesma densidade podem na mesma escorrer de forma diferente.",
     "saveTarget": "Guardar a densidade {sg} como valor pretendido desta receita",

@@ -724,7 +724,7 @@
     "keyBright": "Stippellyn: waar Stull se glasure die helderste was.",
     "keyLimits": "Strepieslyne en skaduwee: die silika- en aluminareekse van {name}.",
     "keyCrazed": "Arsering: waar hulle haarlynbarsies gekry het.",
-    "note": "'n Gids, nie 'n voorspelling nie. R. T. Stull (Transactions of the American Ceramic Society, 1912) het by kegel 11 gebak met die vloeimiddels vasgestel op 0,3 K₂O en 0,7 CaO; ander vloeimiddels en bakke skuif die streke, en 'n onderbakte mat kan as helder gestip word. Die streke is soos Glazy hulle teken."
+    "note": "'n Riglyn, nie 'n voorspelling nie. R. T. Stull (Transactions of the American Ceramic Society, 1912) het op ongeveer kegel 11 gebak met die vloeimiddels vasgestel op 0,3 K₂O en 0,7 CaO; ander vloeimiddels en bakke skuif die gebiede, en 'n glasuur wat net mat is omdat dit onderbak is, kan steeds as blink geplot word. Die gebiede is soos Glazy dit teken."
   },
   "slurry": {
     "heading": "Soortlike gewig en water",
@@ -752,7 +752,17 @@
       "pint": "Die pintgewig wat jy wil hê, oz"
     },
     "drySg": "SG van die droë grondstowwe",
-    "drySgHelp": "Sowat 2,5 vir die meeste glasure; Glazy gebruik 2,6.",
+    "drySgEmpty": "Net die droë gewigte het dit nodig; die water om by te voeg nie. Tik dit in as jy dit weet.",
+    "drySgNeeded": "Tik die SG van die droë grondstowwe in om die droë glasuur in die emmer en die water vir 'n nuwe mengsel te sien.",
+    "estimate": {
+      "mineral": "'n Skatting, {sg}, uit waarvan elke grondstof gemaak is: die gemete digtheid van sy mineraal. Verander dit as jy beter weet.",
+      "kind": "'n Skatting, {sg}: veldspate en klei weeg ongeveer 2,6. Verander dit as jy beter weet.",
+      "glass": "'n Skatting, {sg}, uitgewerk uit die frits se oksiede (hulle is glas). Verander dit as jy beter weet.",
+      "mixed": "'n Skatting, {sg}, uit elke grondstof: die gemete digtheid van sy mineraal, ongeveer 2,6 vir veldspate en klei, en frits uitgewerk uit hul oksiede. Verander dit as jy beter weet.",
+      "leftOut": "Uitgelaat, omdat hul SG nie bekend is nie: {names}.",
+      "none": "Geen skatting vir hierdie resep nie: die SG van {names} is nie bekend nie. Tik dit in as jy dit weet.",
+      "was": "Jou syfer word gebruik. Die skatting was {sg}; maak die veld leeg om daarna terug te gaan."
+    },
     "batch": "Droë glasuur vir 'n nuwe mengsel, {unit}",
     "contents": "Teen SG {sg} bevat die emmer {glaze} droë glasuur en {water} water.",
     "add": "Om SG {target} te bereik, voeg {water} water by. Dit eindig op sowat {volume}.",
@@ -760,6 +770,7 @@
     "already": "Dit is reeds op SG {target}.",
     "mix": "Meng {glaze} droë glasuur met {water} water vir sowat {volume} teen SG {target}.",
     "badSg": "'n SG moet meer as 1 (water s'n) en minder as die droë grondstowwe s'n, {dry}, wees.",
+    "badSgWater": "'n SG moet meer as 1 (water s''n) wees.",
     "badDry": "Die droë grondstowwe se SG moet meer as 1 wees.",
     "note": "Die water is volgens gewig: 'n liter weeg 'n kilogram, 'n VSA-gelling sowat 8,3 lb. Die berekening neem aan dat die volumes optel, wat na is, nie presies nie: voeg water bietjie vir bietjie by, roer, en meet weer. Twee glasure teen dieselfde SG kan steeds verskillend vloei.",
     "saveTarget": "Stoor SG {sg} as hierdie resep se teiken",

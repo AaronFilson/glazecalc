@@ -622,6 +622,27 @@ Greek searchers write «υαλώματα κεραμικής» (the bare «υάλ
 for the unity formula «μέθοδος Seger» or «κατά Seger» (ELKEA's title, «Δημιουργία υαλωμάτων κατά Seger»). The page
 descriptions (meta.\*) use «υάλωμα κεραμικής» and «μοριακός τύπος Seger (UMF)»; «κατά Seger» is a fine variant there.
 
+### 2.11 Famous glazes, Asian materials and the Stull chart (added 2026-11-04)
+
+Terms chosen for round 14 (famous glazes, the Arita, Jingdezhen and Longquan materials, the Stull chart, the dry SG
+estimate). No Greek potter or supplier source was found for the Asian materials: Greek shops do not sell them, and
+ELKEA describes ash glazes only as «υαλώματα στάχτης». The CJK names stay as the English shows them; the Greek says
+what the material is. These rows are for a potter to check.
+
+| English                                                             | Greek                                                          | Notes                                                                                                                                                                                           |
+| ------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| famous glazes                                                       | τα διάσημα υαλώματα                                            | Page title «Διάσημα υαλώματα»; "{name} glaze" → «Υάλωμα {name}»; "{name} style, lead-free" → «Σε στυλ {name}, αμόλυβδο». "Native name" → «Τοπική ονομασία». "History only" → «Μόνο ως ιστορία». |
+| synthetic ash (合成土灰, 土灰)                                      | το συνθετικό υποκατάστατο του 土灰 (μικτή στάχτη ξύλων)        | Descriptive; no source. "a synthetic stand-in for 土灰, the mixed wood ash" → «συνθετικό υποκατάστατο του 土灰, της μικτής στάχτης ξύλων». Built on «στάχτη ξύλου» (2.2).                       |
+| isu ash (柞灰)                                                      | η στάχτη isu (柞灰)                                            | No source; "isu" kept in Latin as the English writes it.                                                                                                                                        |
+| rice-straw ash (藁灰)                                               | η στάχτη από άχυρο ρυζιού                                      | No source; plain Greek («άχυρο ρυζιού» is the everyday word).                                                                                                                                   |
+| porcelain stone (瓷石)                                              | η πέτρα πορσελάνης (瓷石)                                      | No source. «πέτρα» as already used in records for «η πέτρα Amakusa»; not «Cornish Stone» (a different material, 2.2).                                                                           |
+| 紫金土 (iron-rich local clay)                                       | τοπική άργιλος πλούσια σε σίδηρο (紫金土)                      | A raw material, so «άργιλος» (2.2).                                                                                                                                                             |
+| specification (product spec)                                        | η προδιαγραφή (προδιαγραφή προϊόντος)                          | Eti Maden's colemanite: "is specified at" → «έχει προδιαγραφή»; "limits, not a typical analysis" → «πρόκειται για όρια, όχι για τυπική ανάλυση»; "at most" → «το πολύ».                         |
+| caustic                                                             | καυστικός                                                      | Standard Greek, as on CLP labels for alkalis. "caustic when wet" → «καυστική όταν είναι βρεγμένη».                                                                                              |
+| Stull chart                                                         | το διάγραμμα Stull                                             | As already in recipe and site messages. Regions: άτηκτο, ματ, ημιματ, γυαλιστερό, υποψημένο, κρακελαρισμένο.                                                                                    |
+| dry SG (of a glaze's powder)                                        | το ξηρό ειδικό βάρος; στο UI «SG των ξηρών υλικών»             | Guides: «ξηρό ειδικό βάρος», explained once as «η πυκνότητα της ξηρής σκόνης». The recipe page's slurry panel keeps «SG».                                                                       |
+| place names (Arita, Ibaraki, Kasama, Jingdezhen, Jiangxi, Longquan) | Αρίτα, Ιμπαράκι, Κασάμα, Τζινγκντετζέν, Τζιανγκσί, Λονγκτσουάν | Greek transcription for towns and provinces; small villages (San Bao, Gaojitou, Dayao) stay in Latin. Check the transcriptions.                                                                 |
+
 ## 3. Never translated
 
 From terms.md, unchanged:
