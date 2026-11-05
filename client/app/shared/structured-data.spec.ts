@@ -86,4 +86,21 @@ describe('structured data', () => {
       dateModified: '2026-10-01'
     });
   });
+
+  it('puts a guide trail beside the Article, in one graph', () => {
+    const address = 'https://glazecalcapp.com/de/guides/x';
+    const data = article('h', 'd', 'de', address, null, [
+      { name: 'Glazecalc', address: 'https://glazecalcapp.com/de/' },
+      { name: 'Anleitungen', address: 'https://glazecalcapp.com/de/guides' },
+      { name: 'h', address }
+    ]) as { '@graph': Record<string, unknown>[] };
+    const [page, trail] = data['@graph'];
+    expect(page).toMatchObject({ '@type': 'Article', breadcrumb: { '@id': address + '#breadcrumb' } });
+    expect(trail).toMatchObject({ '@type': 'BreadcrumbList', '@id': address + '#breadcrumb' });
+    expect((trail!['itemListElement'] as { position: number; name: string }[]).map((c) => c.name)).toEqual([
+      'Glazecalc',
+      'Anleitungen',
+      'h'
+    ]);
+  });
 });

@@ -32,6 +32,37 @@ const sideways = (page) =>
     () => globalThis.document.documentElement.scrollWidth - globalThis.document.documentElement.clientWidth
   );
 
+test.describe('the page of a guide', () => {
+  test('names its trail, Glazecalc then Guides then the guide, in the data as sent', async ({ request }) => {
+    const html = await (await request.get('/guides/glazing-basics')).text();
+    expect(html).toContain('"@type":"BreadcrumbList"');
+    expect(html).toContain('"@type":"Article"');
+    const trail = /"@type":"BreadcrumbList".*?"itemListElement":(\[.*?\])\}/.exec(html);
+    expect(trail).not.toBeNull();
+    const names = JSON.parse(trail[1]).map((item) => item.name);
+    expect(names.slice(0, 2)).toEqual(['Glazecalc', 'Guides']);
+    expect(names).toHaveLength(3);
+    const german = await (await request.get('/de/guides/glazing-basics')).text();
+    expect(german).toContain('"@type":"BreadcrumbList"');
+  });
+});
+
+test.describe('the page of a standard material in another language', () => {
+  test('names its trail at that language’s addresses, in the data as sent', async ({ request }) => {
+    const html = await (await request.get('/de/materials/barium-carbonate')).text();
+    const trail = /"@type":"BreadcrumbList".*?"itemListElement":(\[.*?\])\}/.exec(html);
+    expect(trail).not.toBeNull();
+    const items = JSON.parse(trail[1]);
+    expect(items.map((item) => new URL(item.item).pathname)).toEqual([
+      '/de/',
+      '/de/materials',
+      '/de/materials/barium-carbonate'
+    ]);
+    expect(items[0].name).toBe('Glazecalc');
+    expect(items[1].name).not.toBe('Materials');
+  });
+});
+
 test.describe('the page of a standard material', () => {
   test('has its own title, description, canonical address and data, as sent', async ({ request }) => {
     const response = await request.get('/materials/ferro-frit-3134');
