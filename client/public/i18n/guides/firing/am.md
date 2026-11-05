@@ -458,73 +458,73 @@ BQ1000 7 ሰዓት ከ44 ደቂቃ ገደማ ይፈጃል። ደራሲው ለቀ
 
 በእጅ የሚሠራ እቶን ያንኑ ዕቅድ በእጅ ይከተላል፤ ክዳኑ ተደግፎ እና መመልከቻ ቀዳዳዎቹ ክፍት ሆነው በዝግታ ያድርቁ፣ ማብሪያዎቹን ከዝቅተኛ (Low) ወደ መካከለኛ (Medium) ወደ ከፍተኛ (High) በደረጃ ከፍ ያድርጉ፣ ሲተሩም ማቃጠሉን ያጠናቅቅ። የታተሙት አሠራሮች ከታች «በእጅ የሚሠሩ እቶኖች በዝርዝር» ስር ይገኛሉ።
 
-## Glaze firing {#glaze lang=en}
+## የግላዝ ማቃጠል {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+የግላዝ ማቃጠል ግላዙን በbisque ላይ አቅልጦ መስታወት ያደርገዋል። በገበያ ላይ ያሉ አብዛኞቹ ዝቅተኛ ሙቀት ግላዞች ለኮን 06 ወይም 05 የተሠሩ ናቸው (የዝቅተኛ ሙቀት ክልሉ ኮን 06–04 ነው)፣ አብዛኞቹ መካከለኛ ሙቀት ግላዞች ደግሞ ለኮን 5–6። በግላዝዎ እና በሸክላዎ መለያዎች ላይ እስካለው ኮን ድረስ ያቃጥሉ፣ በዚያ ቁጥር ዙሪያ የኮን ጥቅል (cone pack) አድርገው። ግላዙ ሲቀልጥ በውስጡ ስለሚሆነው ነገር [የግላዝ መሠረታዊ ነገሮች](/guides/glazing-basics)ን ይመልከቱ።
 
-### Loading for a glaze firing
+### ለግላዝ ማቃጠል ዕቃዎችን መደርደር
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- ግላዝ የተቀቡ ዕቃዎች እርስ በርስ ወይም ግድግዳዎቹን መንካት የለባቸውም፥ ½ ኢንች (13 mm) ገደማ ይተዉ።
+- ግላዝን ከእግሩ ያርቁ (**dry-footing**)፣ ወይም ዝቅተኛ ሙቀት ዕቃዎችን ጫፍ ባላቸው ትናንሽ መቆሚያዎች (**stilts**) ላይ ያስቀምጡ። Stoneware እና ፖርሲሊን በstilts ላይ መቆም የለባቸውም፣ በእነዚያ ሙቀቶች stilts ወደ ውስጣቸው ይሰምጣሉና፤ በምትኩ የከፍተኛ ሙቀት የእቶን ቅብ (kiln wash) ወይም የሲሊካ አሸዋ ይጠቀሙ።
+- በመደርደሪያዎቹ ጠርዞች እና በግድግዳው ወይም በkiln sitter መካከል ቢያንስ 1 ኢንች (25 mm) ይተዉ።
 
-### Controller schedules
+### የመቆጣጠሪያ (controller) መርሐ ግብሮች
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: የL&L እና የBartlett ቅድመ-ቅንብር የግላዝ መርሐ ግብሮች
+Label: ቅድመ-ቅንብር የግላዝ መርሐ ግብሮች
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| ክፍል              |                           እስከ ይውጡ |             Slow Glaze |             Fast Glaze |
+| ---------------- | --------------------------------: | ---------------------: | ---------------------: |
+| 1                |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |           የተለየ ደረጃ የለም |
+| 2                | ከከፍተኛው ነጥብ {{250 °F; 139 °C}} በታች | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                |                         ከፍተኛው ነጥብ |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| የማሞቂያ ጊዜ፣ ባዶ እቶን |                                   |          6½–7½ ሰዓት ገደማ |            3–4 ሰዓት ገደማ |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: ክፍል 2 እና 3 የሚያበቁበት፣ በኮን (L&L እና Bartlett)
+Label: የቅድመ-ቅንብር ዒላማዎች
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| ኮን  |           ክፍል 2 ያበቃል |            ከፍተኛው ነጥብ |
+| --- | -------------------: | -------------------: |
+| 06  |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+L&L ስለ ፈጣን ማቃጠል ካስጠነቀቀው አንጻር Slow Glaze ይበልጥ ደህንነቱ የተጠበቀ ነባሪ ምርጫ ነው። በከፍተኛው ነጥብ ላይ ከ5–10 ደቂቃ በላይ መቆየት (hold) ከጨመሩ፣ L&L ዒላማውን ወይም የኮን ማስተካከያውን (cone offset) በዚያው መጠን እንዲቀንሱ ይመክራል፣ እንዲሁም «በከፍተኛ ሙቀት ማቆየት የኤለመንቶችን እና የthermocouple ማለቅን ያፋጥናል» ይላል።
 
-### Cone 6: drop-and-hold
+### ኮን 6፥ ዝቅ ማድረግ እና ማቆየት
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+መካከለኛ ሙቀት ግላዞች አንዳንድ ጊዜ **pinholes** (በገጹ ላይ ጥቃቅን ቀዳዳዎች) ወይም አረፋዎች ይዘው ይወጣሉ፣ ከቀለጠው ግላዝ ውስጥ በሚወጣ ጋዝ የተተዉ። **ዝቅ ማድረግ እና ማቆየት** (drop-and-hold) መርሐ ግብር እስከ ላይ ያቃጥላል፣ በፍጥነት {{100 °F; 56 °C}} ገደማ ያቀዘቅዛል እና እዚያ ያቆያል። በDigitalfire አገላለጽ፣ «100°F ዝቅ ማድረግ እና ማቆየት ቀልጦውን አረፋዎችን ለማፈንዳት በቂ ጥግግት ይሰጠዋል፣ አሁንም እንዲድኑ እየፈቀደ።»
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS፣ ኮን 6 ዝቅ ማድረግ እና ማቆየት
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| ደረጃ |                          ፍጥነት |                  ዒላማ | ማቆየት                           |
+| --- | ----------------------------: | -------------------: | ------------------------------ |
+| 1   |         {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 ደቂቃ                         |
+| 2   |        {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | በምርጫ 30 ደቂቃ፣ የአረፋ ደመናዎችን ለማጥራት |
+| 3   |         {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 ደቂቃ፤ በትላልቅ እቶኖች ይረዝማል       |
+| 4   | በ{{900 °F/h; 500 °C/h}} ወደ ታች | {{2100 °F; 1148 °C}} | 30 ደቂቃ                         |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS 9 ሰዓት ከ36 ደቂቃ ገደማ ይወስዳል። ለበለጠ ፈሳሽ ግላዞች Digitalfire በምትኩ {{200 °F; 111 °C}} ገደማ ዝቅ ያደርጋል፤ በጣም ዝቅ ማድረግ «በማቆየቱ ጊዜ ክሪስታል የመፈጠር አደጋ አለው»። ከፍተኛ ነጥቡ {{2200 °F; 1204 °C}} ለኮን 6 ከገበታው {{2232 °F; 1222 °C}} በታች ነው፤ Digitalfire አብዛኞቹ እቶኖች ኮን 6 ላይ የሚደርሱት {{2200 °F; 1204 °C}} ገደማ እንደሆነ ይዘግባል። በራስዎ እቶን በኮን ጥቅል ያረጋግጡት።
 
-### Slow cooling
+### ቀስ ብሎ ማቀዝቀዝ
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**ቀስ ብሎ ማቀዝቀዝ** ማለት መቆጣጠሪያው እቶኑ በነጻ እንዲወርድ ከመተው ይልቅ በተወሰነ ፍጥነት ያቀዘቅዘዋል ማለት ነው። የDigitalfire C6DHSC ከPLC6DS በኋላ ከ{{2100 °F; 1148 °C}} እስከ {{1400 °F; 760 °C}} በ{{150 °F/h; 83 °C/h}} ማቀዝቀዝ፣ ከዚያም ማጥፋት ነው። «አንጸባራቂነትን እና የገጽ ጥራትን ያሻሽላል» እና የrutile ሰማያዊዎችን ይረዳል፣ ነገር ግን ቀስ ብሎ ማቀዝቀዝ «ደብዛዛነትን ሊጨምር ይችላል» (አንድ ደብዛዛ ግላዝ ደረቅ ሆነ) እና የእቶኑን relays ዕድሜ ሊያሳጥር ይችላል። L&L ለኮን 6 የቀስታ ማቀዝቀዣ ፕሮግራምም ያቀርባል፥
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L «User 6»፥ ለኮን 6 ግላዞች ቀስ ብሎ ማቀዝቀዝ
+Label: የL እና L ቀስታ ማቀዝቀዣ
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| ደረጃ |                         ፍጥነት |                  ዒላማ |
+| --- | ---------------------------: | -------------------: |
+| 1   |                ሙሉ ፍጥነት ወደ ላይ | {{2232 °F; 1222 °C}} |
+| 2   |                ሙሉ ፍጥነት ወደ ታች | {{1900 °F; 1038 °C}} |
+| 3   | በ{{150 °F/h; 83 °C/h}} ወደ ታች |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+የSkutt መቆጣጠሪያዎችም እንደዚሁ ቅድመ-ማሞቂያ እና የአንድ ደረጃ የማቀዝቀዣ አማራጭ ያቀርባሉ።
 
-### On a manual kiln
+### በእጅ በሚሠራ እቶን
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+በእጅ የሚሠራ እቶን እነዚህን መርሐ ግብሮች በትክክል መከተል አይችልም፣ ዕቅዱ ግን ያው ነው፥ መጀመሪያ ቀስ ብሎ፣ መሃል ላይ ወጥ በሆነ ሁኔታ፣ መጨረሻው ደግሞ በክትትል። የBracker የዝቅተኛ ሙቀት ግላዝ መርሐ ግብር ከታች «በእጅ የሚሠሩ እቶኖች በዝርዝር» ስር ይገኛል፤ ለበለጠ ሙቀት ኮኖች «ለእያንዳንዱ የኮን ቁጥር በአማካይ 15–30 ደቂቃ» ይጨምራል። በpyrometer፣ በልምምድ እና በመዝገብ፣ Digitalfire እንደሚጠቁመው ማብሪያዎቹን በእጅ በመቀነስ ዝቅ ማድረግ እና ማቆየትን ወይም ቀስ ብሎ ማቀዝቀዝን በግምት መኮረጅ ይችላሉ።
 
 ## በእጅ የሚሠሩ እቶኖች በዝርዝር {#manual-kilns}
 

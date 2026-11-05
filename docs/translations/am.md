@@ -222,6 +222,25 @@ English and the data print. No poison line found.
 | passkey                | የይለፍ ቁልፍ (passkey)                                             |
 | Translation notice     | "ይህ ገጽ ከእንግሊዝኛ በAI ተተርጉሟል። ትርጉሙ ደካማ ሊሆን ይችላል፤ እንግሊዝኛውን ይመልከቱ።" |
 
+### 2.9 Round 14 terms (2026-11-04)
+
+No Amharic ceramics source read for these; built from Dict. everyday words (አመድ ash, ገለባ straw, ሩዝ rice, ድንጋይ
+stone). **Native check** on all.
+
+| English                    | am                                    | Notes                                         |
+| -------------------------- | ------------------------------------- | --------------------------------------------- |
+| wood ash                   | የእንጨት አመድ                             | Dict.                                         |
+| synthetic ash (合成土灰)   | ለ土灰 ሰው ሠራሽ ምትክ                      | Japanese name kept, as the English.           |
+| rice-straw ash (藁灰)      | የሩዝ ገለባ አመድ                           |                                               |
+| isu ash (柞灰)             | isu አመድ                               |                                               |
+| porcelain stone (瓷石)     | የፖርሲሊን ድንጋይ                           |                                               |
+| caustic                    | ቆዳን ያቃጥላል (caustic)                   | English kept in brackets for the safety text. |
+| slurry                     | slurry (የግላዝ ዝቃጭ)                     | Gloss at first use.                           |
+| drop-and-hold; hold        | ዝቅ ማድረግ እና ማቆየት (drop-and-hold); ማቆየት |                                               |
+| glass former; stabilizer   | መስታወት ሠሪ; ማረጋጊያ                       |                                               |
+| line blend, triaxial blend | line blend, triaxial blend            | Kept in Latin.                                |
+| product specification      | የምርት መግለጫ                             |                                               |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes, trade names, placeholders and tags; **UMF, LOI, SG, Orton, Seger, HEPA,
