@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Mokykitės su nemokamu Johno Britto glazūrų kursu",
       "text": "Jo nemokamas vaizdo kursas „YouTube“ skyrius po skyriaus, su mūsų vadovais skaitymui ir pratimais, kuriuos galima išbandyti Glazecalc. Anglų kalba."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Glazūrų skaičiavimo mokymas",
+      "text": "6 užsiėmimai klasei ar mokymosi grupei – nuo trijų komponentų bandinių serijų iki Segerio formulės skaičiavimo abiem kryptimis, su spausdinamais darbo lapais."
     }
   },
   "more": "Daugiau vadovų",
@@ -255,6 +259,8 @@
       "crazed": "su įtrūkimais"
     },
     "keyBright": "Punktyrinė linija: kur Stullo glazūros buvo blizgiausios.",
-    "keyCrazed": "Brūkšniavimas: kur jos trūkinėjo."
+    "keyCrazed": "Brūkšniavimas: kur jos trūkinėjo.",
+    "note": "Orientyras, o ne prognozė. R. T. Stullas (Transactions of the American Ceramic Society, 1912) degė maždaug iki piroskopo 11, fliusus palikęs nekintamus – 0,3 K₂O ir 0,7 CaO; kiti fliusai ir degimai sritis pastumia, o glazūra, kuri matinė tik todėl, kad nepakankamai išdegta, vis tiek gali patekti į blizgių sritį. Sritys pažymėtos taip, kaip jas braižo Glazy.",
+    "inGuide": "Silicio dioksidas (SiO₂) horizontaliai, maždaug nuo 1 iki 7, ir aliuminio oksidas (Al₂O₃) vertikaliai, nuo 0 iki 1, abu iš Segerio formulės. Iš kairės vėduoklės pavidalu išsiskleidžia pleištai: viršuje kairėje neišsilydžiusios, tada matinės, tada pusiau matinės. Neužtamsinta dalis į dešinę nuo jų yra blizgios, o punktyrinė linija joje rodo, kur Stullo glazūros buvo blizgiausios. Nepakankamai išdegtos yra apačioje dešinėje, kur mažai aliuminio oksido ir daug silicio dioksido. Brūkšniuota sritis, diagramos apačioje ir kairėje pusėje, yra ten, kur jo bandiniai trūkinėjo."
   }
 }

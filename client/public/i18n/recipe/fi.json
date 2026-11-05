@@ -723,7 +723,8 @@
     "keyPoint": "Piste: tämä lasite.",
     "keyBright": "Pisteviiva: missä Stullin lasitteet olivat kirkkaimmillaan.",
     "keyLimits": "Katkoviivat ja varjostus: sarjan {name} piidioksidin ja alumiinioksidin vaihteluvälit.",
-    "keyCrazed": "Viivoitus: missä ne säröilivät."
+    "keyCrazed": "Viivoitus: missä ne säröilivät.",
+    "note": "Ohje, ei ennuste. R. T. Stull (Transactions of the American Ceramic Society, 1912) poltti noin keilaan 11 sulattajien ollessa kiinteästi 0,3 K₂O ja 0,7 CaO; muut sulattajat ja poltot siirtävät alueita, ja lasite, joka on matta vain siksi, että se on alipoltettu, voi silti asettua kiiltävien alueelle. Alueet ovat sellaiset kuin Glazy ne piirtää."
   },
   "slurry": {
     "heading": "Ominaispaino ja vesi",
@@ -751,6 +752,17 @@
       "pint": "Haluttu pinttipaino, unssia"
     },
     "drySg": "Kuivien raaka-aineiden ominaispaino",
+    "drySgEmpty": "Sitä tarvitaan vain kuivien painojen laskemiseen; lisättävä vesi ei sitä tarvitse. Kirjoita se, jos tiedät sen.",
+    "drySgNeeded": "Kirjoita kuivien raaka-aineiden ominaispaino, niin näet kuivan lasitteen määrän sangossa ja uuden erän vesimäärän.",
+    "estimate": {
+      "mineral": "Arvio, {sg}, sen mukaan, mistä kukin raaka-aine koostuu: sen mineraalin mitattu tiheys. Muuta sitä, jos tiedät paremmin.",
+      "kind": "Arvio, {sg}: maasälvät ja savet ovat noin 2,6. Muuta sitä, jos tiedät paremmin.",
+      "glass": "Arvio, {sg}, laskettu frittien oksideista (ne ovat lasia). Muuta sitä, jos tiedät paremmin.",
+      "mixed": "Arvio, {sg}, kunkin raaka-aineen mukaan: sen mineraalin mitattu tiheys, maasälville ja saville noin 2,6 ja fritit laskettuina niiden oksideista. Muuta sitä, jos tiedät paremmin.",
+      "leftOut": "Jätetty pois, koska niiden ominaispainoa ei tunneta: {names}.",
+      "none": "Tälle reseptille ei ole arviota: näiden ominaispainoa ei tunneta: {names}. Kirjoita se, jos tiedät sen.",
+      "was": "Omaa lukuasi käytetään. Arvio oli {sg}; tyhjennä kenttä palataksesi siihen."
+    },
     "batch": "Kuivaa lasitetta uuteen erään, {unit}",
     "contents": "Ominaispainolla {sg} sangossa on {glaze} kuivaa lasitetta ja {water} vettä.",
     "add": "Ominaispainon {target} saavuttamiseksi lisää {water} vettä. Lopputulos on noin {volume}.",
@@ -758,6 +770,7 @@
     "already": "Ominaispaino on jo {target}.",
     "mix": "Sekoita {glaze} kuivaa lasitetta ja {water} vettä, jolloin saadaan noin {volume} ominaispainolla {target}.",
     "badSg": "Ominaispainon on oltava suurempi kuin 1 (veden) ja pienempi kuin kuivien raaka-aineiden {dry}.",
+    "badSgWater": "Ominaispainon on oltava suurempi kuin 1 (veden).",
     "badDry": "Kuivien raaka-aineiden ominaispainon on oltava suurempi kuin 1.",
     "note": "Vesi mitataan painon mukaan: litra painaa kilogramman, Yhdysvaltain gallona noin 8,3 lb. Laskelma olettaa tilavuuksien summautuvan, mikä on lähellä totuutta mutta ei tarkka: lisää vettä vähän kerrallaan, sekoita ja mittaa uudelleen. Kaksi lasitetta samalla ominaispainolla voi silti valua eri tavoin.",
     "saveTarget": "Tallenna ominaispaino {sg} tämän reseptin tavoitteeksi",

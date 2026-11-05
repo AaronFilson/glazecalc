@@ -458,73 +458,73 @@ Tógann BQ1000 thart ar 7 n-uaire an chloig agus 44 nóiméad. Measann a údar g
 
 Leanann áith láimhe an plean céanna de láimh: triomaigh go mall agus an clúdach ardaithe ar thaca agus na poill faire ar oscailt, ardaigh na lasca céim ar chéim ó ‘Low’ (íseal) go ‘Medium’ (meánach) go ‘High’ (ard), agus lig don Kiln-Sitter deireadh a chur leis an mbácáil. Tá na nósanna imeachta foilsithe faoi ‘Áitheanna láimhe go mion’, thíos.
 
-## Glaze firing {#glaze lang=en}
+## Bácáil glónra {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Leánn an bhácáil glónra{{en: glaze firing}} an glónra{{en: glaze}} ina ghloine ar na brioscghréithe. Déantar formhór na nglónraí ísealbhácála atá ar an margadh do chón{{en: cone}} 06 nó 05 (téann an raon ísealbhácála ó chón 06 go 04), agus formhór na nglónraí meánbhácála do chón 5–6. Bácáil go dtí an cón atá ar lipéid do ghlónra agus do chré, le paca cón{{en: cone pack}} thart ar an uimhir sin. Le haghaidh a dtarlaíonn taobh istigh den ghlónra agus é ag leá, féach an treoirleabhar [Glónrú ó bhunphrionsabail](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Lódáil do bhácáil glónra
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Ní mór gan píosaí glónraithe teagmháil a dhéanamh lena chéile ná leis na ballaí: fág thart ar ½ orlach (13 mm).
+- Coinnigh an glónra den bhonn (**an bonn a fhágáil gan glónra**), nó cuir gréithe ísealbhácála ar **chosa taca**{{en: stilts}}, seastáin bheaga le rinn orthu. Níor cheart d’earraí cruachré ná do phoirceallán seasamh ar chosa taca, a théann isteach iontu ag na teochtaí sin; úsáid brat seilfe{{en: kiln wash}} ardbhácála nó gaineamh silice ina n-áit.
+- Fág 1 orlach (25 mm) ar a laghad idir imill na seilfeanna agus an balla nó an Kiln-Sitter.
 
-### Controller schedules
+### Cláir bhácála don rialaitheoir
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Réamhshocruithe glónra L&L agus Bartlett
+Label: Réamhshocruithe glónra
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Deighleog              |                                   Ardaigh go |                    Slow Glaze |                    Fast Glaze |
+| ---------------------- | -------------------------------------------: | ----------------------------: | ----------------------------: |
+| 1                      |                           {{250 °F; 121 °C}} |         {{150 °F/h; 83 °C/h}} |            Gan chéim ar leith |
+| 2                      | {{250 °F; 139 °C}} faoi bhun na buaicteochta |        {{400 °F/h; 222 °C/h}} |        {{570 °F/h; 317 °C/h}} |
+| 3                      |                              An bhuaicteocht |         {{120 °F/h; 67 °C/h}} |        {{200 °F/h; 111 °C/h}} |
+| Am téimh, áith fholamh |                                              | Thart ar 6½–7½ uair an chloig | Thart ar 3–4 huaire an chloig |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Cá gcríochnaíonn deighleoga 2 agus 3, de réir cóin (L&L agus Bartlett)
+Label: Spriocanna na réamhshocruithe
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cón | Críochnaíonn deighleog 2 |      An bhuaicteocht |
+| --- | -----------------------: | -------------------: |
+| 06  |      {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |      {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   |     {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Is é Slow Glaze an rogha réamhshocraithe is sábháilte, i bhfianaise rabhadh L&L faoi bhácáil thapa. Má chuireann tú coinneáil{{en: hold}} níos faide ná 5–10 nóiméad leis ag an mbuaicteocht, deir L&L an sprioc nó an ceartú cóin a ísliú dá réir, agus tugann sé faoi deara go “luathaíonn coinneáil ag teochtaí arda caitheamh na n-eilimintí agus an teirmeachúpla”.
 
-### Cone 6: drop-and-hold
+### Cón 6: titim agus coinneáil
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Uaireanta tagann glónraí meánbhácála amach le **poill bhioráin**{{en: pinholes}} (poill bheaga bídeacha sa dromchla) nó le cloig, a fhágann gás ag boilgearnach as an leátán. Bácálann clár **titim agus coinneáil**{{en: drop-and-hold}} go dtí an barr, fuaraíonn sé go tapa thart ar {{100 °F; 56 °C}} agus coinníonn sé ansin é. I bhfocail Digitalfire, “Nuair a thiteann an teocht 100°F agus nuair a choinnítear ansin í, bíonn an leátán slaodach go leor chun boilgeoga a phléascadh agus fós ligean dóibh cneasú.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
-Label: Digitalfire PLC6DS
+Table: PLC6DS Digitalfire, titim agus coinneáil do chón 6
+Label: PLC6DS Digitalfire
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Céim |                           Ráta |               Sprioc | Coinneáil                                                    |
+| ---- | -----------------------------: | -------------------: | ------------------------------------------------------------ |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 nóiméad                                                   |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 nóiméad más mian leat, chun scamaill bhoilgeog a ghlanadh |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 nóiméad; níos faide in áitheanna móra                     |
+| 4    | Síos ag {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 nóiméad                                                   |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+Tógann PLC6DS thart ar 9 n-uaire an chloig agus 36 nóiméad. Do ghlónraí níos sreabhaí, ligeann Digitalfire don teocht titim thart ar {{200 °F; 111 °C}} ina áit sin; má thiteann sí rófhada “tá baol criostalaithe le linn na coinneála”. Tá a bhuaicteocht, {{2200 °F; 1204 °C}}, faoi bhun {{2232 °F; 1222 °C}} an tábla do chón 6; tuairiscíonn Digitalfire go sroicheann formhór na n-áitheanna cón 6 ag thart ar {{2200 °F; 1204 °C}}. Seiceáil é le paca cón i d’áith féin.
 
-### Slow cooling
+### Fuarú mall
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+Is éard is **fuarú mall**{{en: slow cooling}} ann ná go bhfuaraíonn an rialaitheoir an áith ag ráta socraithe seachas ligean di titim go saor. Is ionann C6DHSC Digitalfire agus PLC6DS agus fuarú ina dhiaidh ag {{150 °F/h; 83 °C/h}} ó {{2100 °F; 1148 °C}} síos go {{1400 °F; 760 °C}}, agus ansin múchadh. “Feabhsaíonn sé an loinnir agus cáilíocht an dromchla” agus cabhraíonn sé le goirm rúitíle, ach “is féidir le fuarú mall an dromchla a dhéanamh níos neamhlonraí” (d’éirigh glónra neamhlonrach amháin tirim) agus is féidir leis saol athsheachadán na háithe a ghiorrú. Cuireann L&L clár fuaraithe mhall do chón 6 ar fáil freisin:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: “User 6” L&L: fuarú mall do ghlónraí chón 6
+Label: Fuarú mall L agus L
 
-| Step |                          Rate |               Target |
+| Céim |                          Ráta |               Sprioc |
 | ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| 1    |                 Suas, lánluas | {{2232 °F; 1222 °C}} |
+| 2    |                 Síos, lánluas | {{1900 °F; 1038 °C}} |
+| 3    | Síos ag {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Ar an gcaoi chéanna, tá réamhthéamh agus rogha fuaraithe aonchéime ar rialaitheoirí Skutt.
 
-### On a manual kiln
+### Ar áith láimhe
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Ní féidir le háith láimhe na cláir seo a leanúint go beacht, ach is é an plean céanna é: go réidh ar dtús, go seasta tríd an lár, agus deireadh faoi fhaire. Tá clár glónra ísealbhácála Bracker’s faoi ‘Áitheanna láimhe go mion’, thíos; do chóin níos teo cuireann sé leis “15–30 nóiméad ar an meán do gach uimhir chóin”. Le piriméadar, cleachtadh agus taifead, is féidir leat titim agus coinneáil nó fuarú mall a aithris go garbh trí na lasca a chasadh síos de láimh, mar a mholann Digitalfire.
 
 ## Áitheanna láimhe go mion {#manual-kilns}
 

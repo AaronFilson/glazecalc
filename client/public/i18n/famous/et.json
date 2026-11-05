@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Osa sellest lehest ei ole veel tõlgitud, seetõttu on see näidatud inglise keeles.",
+  "index": {
+    "crumb": "Kuulsad glasuurid",
+    "title": "Kuulsad glasuurid",
+    "lead": "Üle maailma tuntud glasuurid, igaüks oma traditsioonilistest kohalikest toorainetest, koos Segeri valemi ja versiooniga toorainetest, mida teie piirkonnas müüakse.",
+    "listHeading": "Glasuurid",
+    "more": "Lisandub veel glasuure: iga glasuur lisatakse siis, kui selle retsept ja toorained toetuvad vähemalt kolmele läbiloetud allikale."
+  },
+  "glaze": {
+    "lead": "Kuulus glasuur ({native}): selle traditsiooniline retsept või analüüs, põletus ja versioon toorainetest, mida teie piirkonnas müüakse.",
+    "aboutHeading": "Glasuurist {name}",
+    "nativeName": "Algupärane nimi",
+    "origin": "Kus",
+    "period": "Millal",
+    "firing": "Põletus",
+    "cone": "koonus {cone}",
+    "historyOnly": "Ainult ajaloona: see glasuur valmistati pliiga. Selle analüüs on näidatud ajaloona, mitte segamiseks mõeldud retseptina. Allpool olev versioon on teine glasuur, ilma pliita.",
+    "recipeHeading": "Traditsiooniline retsept",
+    "material": "Tooraine",
+    "amount": "Kogus",
+    "unityHeading": "Segeri valem",
+    "analysisHeading": "Ajalooline analüüs",
+    "oxide": "Oksiid",
+    "percent": "Massi-%",
+    "useHeading": "Proovige järele",
+    "open": "Ava see retsept",
+    "openLeadFree": "Ava pliivaba versioon",
+    "leadFreeTitle": "{name} stiilis, pliivaba",
+    "allLink": "Kõik kuulsad glasuurid",
+    "safetyHeading": "Ohutus",
+    "safeMixing": "Ohutu segamine ja ventilatsioon",
+    "firingGuide": "Põletamine lihtsas keraamikaahjus",
+    "makingGuide": "Glasuuri valmistamine",
+    "sourcesHeading": "Allikad",
+    "link": "Ava",
+    "opened": "loetud {date}"
+  },
+  "local": {
+    "heading": "Teie kohalikest toorainetest",
+    "leadFreeHeading": "Pliivaba versioon",
+    "intro": "Traditsioonilise retsepti Segeri valem, koostatud standardsetest toorainetest, mida teie ostukohas müüakse. Selle nägemiseks valige, kust tooraineid ostate.",
+    "region": "Kust tooraineid ostate",
+    "proposal": "Ettepaneku enda toorained",
+    "pick": "Valige…",
+    "untested": "Arvutatud, ei ole veel proovipõletusel katsetatud.",
+    "testFirst": "Põletage proovitükid enne, kui kasutate seda ühelgi esemel, ja katsetage toiduga kokkupuutuvat pinda metallide eraldumise suhtes.",
+    "untestedNote": "Arvutatud, ei ole veel proovipõletusel katsetatud: põletage enne kasutamist proovitükid.",
+    "close": "See tuleb soovitud valemile lähedale.",
+    "fair": "See tuleb soovitud valemile üsna lähedale.",
+    "poor": "Nende toorainetega ei saa soovitud valemile lähedale tulla.",
+    "none": "Seal müüdavatest toorainetest ei saa seda koostada.",
+    "choose": "Valige, kust tooraineid ostate, et näha seda koostatuna sealt müüdavatest toorainetest."
+  },
+  "atmospheres": {
+    "oxidation": "oksüdeeriv põletus",
+    "reduction": "redutseeriv põletus",
+    "neutral": "neutraalne",
+    "wood": "puupõletus",
+    "salt": "soolapõletus",
+    "soda": "soodapõletus"
+  }
+}

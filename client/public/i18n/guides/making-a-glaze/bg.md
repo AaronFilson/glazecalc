@@ -119,183 +119,183 @@ HSE предупреждава, че кристалният силициев д�
 
 Дерек Ау претегля в една купа на отделни купчинки, така че сгрешено количество да може да се загребе обратно. Ако претегляте в една кофа, без да тарирате между суровините, междинната сума в Glazecalc Ви казва какво би трябвало да показва везната след всяка от тях.
 
-## Mixing and sieving {#mixing lang=en}
+## Смесване и пресяване {#mixing}
 
-### How much water
+### Колко вода
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Източниците не са единни. Дерек Ау (Derek Au) започва гъсто, с 50 mL вода на 100 g прах, и добавя още по-късно. Potterycrafts дава 65 mL на 100 g за една глазура на прах. UT Austin използва равни тегла вода и прах, а когато Digitalfire сипва 20 kg прах в 20 kg вода, измерва относително тегло 1,46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Водата се добавя бързо, а се отнема бавно, затова започнете с малко. Нашата оценка: започнете с **около 70 до 80 mL на 100 g** (700 до 800 mL на килограм, или около 11 до 12 US fl oz на фунт). Накиснете, разбъркайте и пресейте при тази гъстота, после добавяйте вода малко по малко, докато относителното тегло стане правилно. 1 mL вода тежи 1 g, така че можете да я претеглите. Ако прекалите, оставете глазурата да се утаи, после отнемете бистрата вода отгоре с гъба или я излейте.
 
-### Tools and water
+### Инструменти и вода
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Бъркалка с витло.** Digitalfire нарича добрата бъркалка „необходима“. Бормашина с кабел и бъркалка за смесване върши работа в кофа. UT Austin я държи включена поне 4 до 5 минути, след като глазурата изглежда разбъркана, и пази перката далеч от стените на кофата, от които тя може да остърже пластмаса.
+- **Блендер.** Той „работи изключително добре за малки замеси“ (Digitalfire). Използвайте го само за глазура: той никога не бива да се връща в кухнята.
+- **Тел за разбиване или пръчка.** Изборът на Закин (Zakin), когато няма бъркалка.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Водата също е различна и Digitalfire отбелязва, че тя променя поведението на суспензията. Дерек Ау използва вода от обратна осмоза, защото водата от чешмата му е твърда. Каквото и да използвате, запишете го.
 
-### Step by step
+### Стъпка по стъпка
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Сложете респиратора и гумени ръкавици, ако ръцете Ви ще влизат в глазурата. Закин носи маска от началото на претеглянето, докато глазурата стане мокра.
+2. Отмерете в кофата около 70 до 80 mL вода на 100 g прах.
+3. Добавете претегления прах внимателно, от малка височина. UT Austin добавя праха към топла вода; Закин и Ау добавят водата към праха. Предлагаме прах във вода, което вдига по-малко прах, освен при рецепта с много бентонит: първо разбъркайте сухите ѝ суровини заедно.
+4. **Накиснете** го: оставете праха да се накисне във водата, без да разбърквате. Digitalfire чака около 20 минути. Праховете с лепило или свързващо вещество трябва да постоят през нощта.
+5. Разбъркайте, докато не останат сухи участъци или бучки.
+6. Пресейте я два пъти (вижте по-долу).
+7. Покрийте я и я оставете да почива през нощта, после разбъркайте отново и проверете дъното за твърд слой.
+8. Измерете относителното тегло и добавяйте вода малко по малко, за да стигнете целта си. За да научите SG на сухите суровини на собствената си глазура, претеглете и готовата суспензия (вижте по-долу).
+9. Надпишете кофата и запишете какво сте направили.
+10. Почистете мокро: измийте пода с моп и избършете всяка повърхност, включително външната страна на съдовете със суровини.
 
-### Sieving
+### Пресяване
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Ситото**{{en: sieve}} е мрежа в рамка. Когато прокарвате глазурата през него с четка, то разбива бучките, които разбъркването оставя, и задържа частиците, които биха се изпекли като точки. Колкото по-голям е номерът в **меша**{{en: mesh}}, толкова по-фина е мрежата: 80 меша има отвори около 0,18 mm, а 100 меша – около 0,15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Източниците препоръчват различни сита. Закин пресява два пъти през 50 или 80 меша. Дерек Ау използва 120 меша за повечето глазури, особено тези с кобалт или желязо: три прекарвания през 80 меша все пак са оставили железни точки в един селадон, а едно прекарване през 120 меша го е поправило. Той оставя 60 до 80 меша за пепелните глазури и другите с едри суровини. Potterycrafts, в Обединеното кралство, предлага 60 до 80 меша. Безопасен избор по подразбиране:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Кое сито да използвате
+Label: Сито
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Глазура                                         | Сито                         |
+| ----------------------------------------------- | ---------------------------- |
+| Повечето глазури                                | Две прекарвания през 80 меша |
+| Глазури с оцветители като кобалт или желязо     | 100 до 120 меша              |
+| Пепелни глазури и други с едри суровини         | 60 до 80 меша                |
 
-## Specific gravity {#specific-gravity lang=en}
+## Относително тегло {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Относителното тегло**{{en: specific gravity}} (SG) Ви казва колко прах има в суспензията. То е теглото на даден обем глазура, разделено на теглото на същия обем вода. Водата е 1,00, а глазура с {{SG 1.45}} тежи 145 g на 100 mL. Смесването до измерено относително тегло е начинът да получавате една и съща гъстота и един и същ слой всеки път. То няма мерна единица, така че е едно и също в грамове и в унции.
 
-### Measure it by weighing 100 mL
+### Измерете го, като претеглите 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Разбъркайте глазурата, така че нищо да не е утаено.
+2. Поставете на везната **мерителен цилиндър**{{en: graduated cylinder}} от 100 mL (висока епруветка с деления) или спринцовка от 100 mL и я нулирайте.
+3. Напълнете го с глазура точно до 100 mL, като отчитате делението на нивото на очите.
+4. Претеглете го и разделете грамовете на 100: 145 g е относително тегло 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire също маркира чаша на нивото на 500 g вода, пълни я до маркировката с глазура и дели теглото на 500; по-голямата, по-пълна мярка е по-точна. **Ареометърът**{{en: hydrometer}}, поплавък, който се отчита там, където застане в глазурата, е бърз, но може да отчете грешно гъсти или желирани глазури. Британските ареометри, като тези на Potclays, отчитат в градуси Боме (°Bé). По нашите сметки SG = 145 ÷ (145 − °Bé), така че 46 °Bé е около 1,46. По-старите британски книги дават **тегло на пинта**{{en: pint weight}} – унциите в имперска пинта глазура: разделете го на 20, така че 29 oz е около относително тегло 1,45 (също наши сметки).
 
-### What to aim for
+### Към какво да се стремите
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Източниците не са единни, най-вече за нанасянето с четка и пръскането, където британският доставчик Potclays дава много по-високи стойности (собствените му са „само за ориентир“). Приемайте всяко число за отправна точка. Основният съвет на Digitalfire е да намерите относителното тегло и желирането, които работят за всяка глазура, после да ги повтаряте и да ги записвате.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Целеви стойности на относителното тегло, където източниците се разминават
+Label: Целеви стойности на относителното тегло
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Употреба         | Digitalfire и Glazy                                                                                                                   | Potclays (Обединеното кралство)              | Безопасна отправна точка                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------- |
+| Потапяне         | {{SG 1.40}} (за потапяне от 5 секунди) до {{SG 1.50}} (за потапяне от 1 секунда); домашно смесените желирани глазури се справят най-добре при {{SG 1.43–1.45}} | Прозрачни {{SG 1.46–1.48}}; цветни {{SG 1.61}} | {{SG 1.45}}; разредете до {{SG 1.43}} и я желирайте, ако капе |
+| Нанасяне с четка | {{SG 1.25}} (рядка прозрачна) до {{SG 1.55}} (тъмни детайли)                                                                          | {{SG 1.71–1.81}}                             | Следвайте продукта; използвайте лепило за глазура (CMC) или среда за четка |
+| Пръскане         | Няма стойност; Хопър (Hopper), който пише за Ceramic Arts Network, казва много по-рядка, с втечнител (добавка, която прави суспензията по-течна) | {{SG 1.71}}                                  | Няма надеждно число; пръскайте само в кабина за пръскане      |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+За да провери глазура за потапяне на око, AMACO потапя за 5 секунди и търси слой с дебелина около американската монета dime. Digitalfire изпича плочки, потопени за 5 секунди, за да провери.
 
-### Water for a target SG: our estimate
+### Вода за целево относително тегло: наша оценка
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Таблицата по-долу е наша собствена сметка, а не на източник. Тя приема, че частиците на праха имат плътност 2,6 g на cm³, което е допускане, а не измерване. Глината, разтворимите суровини и желирането променят реалната глазура, затова я използвайте за начало и после измервайте. Като проверка тя предсказва {{SG 1.44}} за равни тегла прах и вода, близо до измереното от Digitalfire {{SG 1.46}}. Тя показва също, че 70 до 80 mL на 100 g Ви поставят над {{SG 1.50}}, по-гъсто, отколкото е нужно.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Вода за целево относително тегло (наша оценка)
+Label: Вода за целево относително тегло
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Цел         | На 100 g прах | На килограм  |             На фунт |
+| ----------- | ------------: | -----------: | ------------------: |
+| {{SG 1.40}} | около 115 mL | около 1150 mL | около 18 US fl oz |
+| {{SG 1.45}} |  около 98 mL |  около 980 mL | около 15 US fl oz |
+| {{SG 1.50}} |  около 85 mL |  около 850 mL | около 13 US fl oz |
+| {{SG 1.60}} |  около 64 mL |  около 640 mL | около 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Намерете SG на сухите суровини на собствената си глазура, докато смесвате
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+Стойността 2,6 по-горе е предположение. Стойността за собствената Ви глазура, плътността на сухия ѝ прах, може да се изчисли от три числа, които можете да вземете, докато смесвате. С нея по-късно можете да изчислите от относителното тегло колко прах има във всяка кофа с тази глазура и водата за следващия замес. Наши сметки, не на източник:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Запишете теглото на сухия прах в замеса: сумата от рецептата.
+2. Претеглете празната кофа, преди да започнете, или напишете теглото ѝ върху нея.
+3. Смесете, пресейте и доведете глазурата до относителното ѝ тегло както обикновено. Прокарайте всичко през ситото и го изплакнете в кофата, така че да не остане прах извън нея.
+4. Претеглете пълната кофа и извадете теглото на кофата. Това е теглото на суспензията.
+5. Измерете относителното тегло.
 
-Then:
+После:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Вода** = тегло на суспензията − тегло на праха.
+- **Обем на суспензията** в mL = тегло на суспензията в грамове ÷ SG.
+- **Обем на праха** = обем на суспензията − вода (1 g вода е 1 mL).
+- **SG на сухите суровини** = тегло на праха ÷ обем на праха.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Например: 1000 g прах дават 1980 g суспензия с {{SG 1.45}}. Водата е 980 g, суспензията е 1980 ÷ 1,45 = около 1366 mL, прахът заема 1366 − 980 = 386 mL, а SG на сухите суровини е 1000 ÷ 386 = около 2,59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Претеглете цялата суспензия накрая, а не водата, докато я наливате, така че изпарената или разплисканата вода да не се брои. Тук малките грешки нарастват: отчитане на относителното тегло, грешно с 0,01, мести резултата с около 2 до 4%, повече при по-рядка глазура. Използвайте замес от 1 kg или повече, точна везна и метода с чашата от 500 g по-горе за относителното тегло. Повечето обичайни суровини са между около 2,5 и 2,9, така че стойност далеч извън тези граници, в глазура без много циркониев силикат или олово, вероятно означава грешка в измерването. Запишете стойността върху рецептата.
 
-### Epsom salts, CMC gum and bentonite
+### Английска сол, лепило за глазура (CMC) и бентонит
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Английската сол**{{en: Epsom salts}} кара глазурата леко да желира, когато е в покой, и пак да тече, когато се разбърква. Това се нарича **флокулиране**{{en: flocculating}}, а глазура, която се държи така, е **тиксотропна**: тя ляга по-равномерно, капе по-малко и се утаява по-малко. Digitalfire предлага да започнете с около 2 g на галон, щом относителното тегло е правилно (грубо 0,5 g на литър, наше преобразуване), и да настройвате количеството при всяко смесване, тъй като никоя рецепта не бива да определя дозата. Предлагаме първо да я разтворите в малко гореща вода. В пример на Digitalfire глазура с {{SG 1.45}} е капела, затова с вода е свалена до {{SG 1.43}}, а английската сол я е желирала обратно до кремообразна и тя е легнала равномерно. Груба проверка: разбъркайте, спрете и наблюдавайте. Желираната глазура продължава да се движи около 2 или 3 секунди, после спира и леко се връща назад.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Лепилото за глазура (CMC)**{{en: CMC gum}} (карбоксиметилцелулоза) прави суспензията по-лепкава и по-бавно съхнеща и оставя по-твърд слой, който се държи за изделието. То е най-важно за глазурите за четка и глазурите с много фрита. В примера на Digitalfire 3,75 g се смесват в 1000 g суспензия, и то трябва да се вкара с блендер. Глазура с CMC няма да желира с английска сол, а тъй като микробите се хранят с лепилото, тя може да се промени в кофата и да започне да мирише.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Бентонитът**, много фина глина, помага останалите частици да се задържат в суспензия. Глазурите за потапяне обикновено разчитат за това на 15 до 25% сурова глина. За рецепта с недостатъчно глина помагат около 1 до 3% бентонит; Digitalfire казва, че глазура с над 15% глина не би трябвало да се нуждае от бентонит в повече от 1% от теглото на сухата глазура.
 
-## Test tiles and line blends {#testing lang=en}
+## Пробни плочки и серии проби {#testing}
 
-### Start small
+### Започнете с малко
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Дерек Ау (Derek Au) работи на три стъпки: проба от 50 или 100 g, опит от 1 до 2 kg, ако се получи, после замес за ателието от 5 до 10 kg. По наша оценка проба от 100 g с {{SG 1.45}} дава около 135 mL (около 4½ US fl oz) суспензия, достатъчно, за да потопите няколко малки плочки в тясна чаша.
 
-### Test on your own clay
+### Изпитвайте върху собствената си глина
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Глазурата може да изглежда доста различно върху друга глина или в друга пещ: Clay Art Center е изпитал всяка от преработените си глазури върху четири керамични маси, при конус 6 и при конус 10. Ръководството за начинаещи на Potclays за изпитване на глазури предлага:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 до 10 **пробни плочки**{{en: test tiles}} (малки парчета за изпробване на глазура) от глината, която наистина ще използвате, като отбележите дали са изпечени на бисквит, или са напълно изсъхнали
+- по една промяна наведнъж
+- еднократно и двукратно потапяне, за да видите глазурата тънка и дебела
+- всички плочки в едно и също зареждане на пещта
+- знак върху всяка плочка преди изпичането, с печат, издълбаване или подглазурен молив. Изпечените плочки изглеждат еднакво, а знак, направен преди изпичането, издържа в пещта, така че винаги можете да кажете на коя рецепта е всяка плочка.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Предлагаме плочки, които стоят изправени, тъй като плоската плочка скрива доколко глазурата се стича, с релефна ивица, за да се вижда как глазурата изтънява по ръбовете, и с неглазирано дъно. Поставете всяка в малка чинийка или върху парче бисквит, или на плоча, намазана с огнеупорна ангоба, за да се събират капките. Сложете до плочките **контролен конус**{{en: witness cone}} – малък керамичен конус, който се огъва, когато е получил достатъчно топлина, – за да покаже какво са получили; [наръчникът за изпичане](/guides/firing) обяснява конусите. Дайте на всяка плочка кратък код и го запишете срещу рецептата в записките си. Уилърс (Willers), който пише за Ceramic Arts Network, използва цифри и букви и записва самата система в началото на тетрадката.
 
-### Line blends
+### Серии проби
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Серията проби**{{en: line blend}} е ред проби, който преминава на равни стъпки от една смес към друга: от една глазура към втора или от базисна глазура към същата глазура с повече оцветител. Дерек Ау например добавя железен оксид към прозрачна базисна глазура на стъпки от 1%. Обемен метод, свързван с Иън Къри (Ian Currie), спестява време, защото смесвате само двата края:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Смесете двете крайни глазури, A и B, като замеси с еднакъв размер, и пресейте и двете.
+2. Добавете вода към тази с по-малък обем, докато двете станат с точно еднакъв мокър обем.
+3. Разбъркайте и двете, после изтеглете всяка смес със спринцовка в собствена номерирана чаша.
+4. Разбъркайте всяка чаша и потопете плочка.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+В нашия решен пример A е 100 g прозрачна базисна глазура, а B е същата с добавени 4 g червен железен оксид (добавка от 4%). Всеки милилитър от B съдържа същия дял базисна глазура като милилитър от A, плюс желязото си, така че чашите преминават от без желязо до 4% на стъпки от 1%. Всеки край дава 100 mL за серията, които замес от 100 g покрива по наша оценка.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Серия проби с желязо в пет стъпки, 40 mL на чаша (нашият решен пример)
+Label: Пример за серия проби
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Чаша | Прозрачна базисна глазура (A) | Базисна глазура с 4% желязо (B) | Железен оксид, % свръх базисната глазура |
+| ---- | ----------------------------: | ------------------------------: | ---------------------------------------: |
+| 1    |                         40 mL |                            0 mL |                                        0 |
+| 2    |                         30 mL |                           10 mL |                                        1 |
+| 3    |                         20 mL |                           20 mL |                                        2 |
+| 4    |                         10 mL |                           30 mL |                                        3 |
+| 5    |                          0 mL |                           40 mL |                                        4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Методът изисква внимателни сметки, добре разбъркани крайни смеси с еднакво относително тегло и точна везна. Дерек Ау смесва серии и по тегло вместо по обем. **Триъгълната серия проби**{{en: triaxial blend}} прави същото с три края, подредени в триъгълник.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Когато някоя стъпка изглежда обещаващо, **Запиши като копие** на [страницата за рецепти](/recipe) я запазва като отделна рецепта и оставя оригинала такъв, какъвто е бил.
+
+## Водене на записки {#records}
+
+Уилърс (Willers) формулира целта добре: „достатъчно информация, за да можете да повторите или да избегнете резултатите, които сте открили“. Запишете какво смятате да изпитате, преди да започнете, и резултатите, когато изваждате изделията. Potclays добавя нанасянето, дебелината, керамичната маса и цялото изпичане, включително рампите, задържанията и охлаждането. **Рампата**{{en: ramp}} е скоростта на нагряване или охлаждане, например {{60 °C; 108 °F}} на час, а **задържането**{{en: hold}} държи пещта на една температура за определено време. Записвайте партидните номера, използваната вода и всяка замяна: замяната на фелдшпата в Clay Art Center е наложила корекция на около половината от глазурите му.
+
+Table: Какво да записвате за всеки замес глазура (нашият образец)
+Label: Образец за записки
+
+| Част       | Какво да запишете                                                                                                                                                                                                                        |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Рецепта    | Рецептата и нейната версия; марките и партидните номера на суровините; всички замени                                                                                                                                                    |
+| Смесване   | Дата; размер на замеса; добавена вода и вида ѝ (от чешмата, от обратна осмоза или дестилирана); SG след смесването и крайно SG; теглото на готовата суспензия, за SG на сухите суровини; добавени английска сол, CMC и бентонит; сито и брой прекарвания |
+| Нанасяне   | Керамична маса; конус на бисквита; потапяне, нанасяне с четка или обливане; време на потапяне или брой слоеве; дебелина в сухо състояние                                                                                                |
+| Изпичане   | Пещ и място на плочата; програмата за изпичане, с рампите, задържанията и охлаждането; атмосфера (окислителна или редукционна); какво е показал контролният конус, а не само на какво е била настроена пещта                            |
+| Резултат   | Повърхност и цвят; стичане, напукване или иглен бод, ако има; снимки отпред, отзад и отстрани; кодът на плочката                                                                                                                        |
+
+> [!NOTE]
+> В Glazecalc записаната [рецепта](/recipe) съдържа самата рецепта. [Дневникът на изпичане](/firing) записва всяко изпичане: пещта, датата, часовете, температурите, конусите и бележките. В [бележките](/notes) е всичко останало, като записката за замеса по-горе и какво е показала всяка плочка.
 
 ## Източници {#sources}
 

@@ -458,73 +458,73 @@ L&L-i ja Bartletti kontrollerid kasutavad koonuse 04 jaoks temperatuuri {{1926 �
 
 Käsijuhtimisega ahi järgib sama plaani käsitsi: kuivatage aeglaselt, kaas praokil ja vaateavad lahti, keerake lülitid järk-järgult asendist Low (madal) asendisse Medium (keskmine) ja siis High (kõrge) ning laske Kiln-Sitteril põletus lõpetada. Avaldatud korrad on allpool, osas „Käsijuhtimisega ahjud lähemalt“.
 
-## Glaze firing {#glaze lang=en}
+## Glasuuripõletus {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Glasuuripõletus{{en: glaze firing}} sulatab glasuuri eelpõletatud esemel klaasiks. Enamik müügil olevaid madalkuumusglasuure on mõeldud koonusele 06 või 05 (madalkuumuse vahemik on koonused 06–04) ja enamik keskkuumusglasuure koonustele 5–6. Põletage koonuseni, mis on märgitud glasuuri ja savi siltidel, ning pange selle numbri ümber koonusekomplekt. Mis toimub glasuuris selle sulamise ajal, vt juhendit [Glasuurimise alused](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Ahju pakkimine glasuuripõletuseks
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Glasuuritud esemed ei tohi puudutada üksteist ega ahju seinu: jätke vahet umbes ½ tolli (13 mm).
+- Hoidke põhi glasuurivaba (**põhja glasuurivabaks jätmine**) või asetage madalkuumusesemed **kolmjalgadele**{{en: stilts}}, väikestele teravate otstega alustele. Kivikeraamikat ja portselani ei peaks panema kolmjalgadele, sest need tungivad neil temperatuuridel eseme sisse; kasutage selle asemel kõrgkuumusele sobivat ahjuplaatide kaitseainet või kvartsliiva.
+- Jätke ahjuplaatide servade ja seina või Kiln-Sitteri vahele vähemalt 1 toll (25 mm).
 
-### Controller schedules
+### Kontrolleri programmid
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L-i ja Bartletti glasuuripõletuse valmisprogrammid
+Label: Glasuuripõletuse valmisprogrammid
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segment                  |                                Tõus kuni |             Slow Glaze |             Fast Glaze |
+| ------------------------ | ---------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Eraldi sammu pole |
+| 2                        | {{250 °F; 139 °C}} alla lõpptemperatuuri | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          Lõpptemperatuur |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Kuumutusaeg, tühi ahi    |                                          |      Umbes 6½–7½ tundi |       Umbes 3–4 tundi |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Kus lõpevad segmendid 2 ja 3, koonuste kaupa (L&L ja Bartlett)
+Label: Valmisprogrammide sihttemperatuurid
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Koonus |    Segment 2 lõpeb |      Lõpptemperatuur |
+| ------ | -------------------: | -------------------: |
+| 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze on kindlam vaikevalik, arvestades L&L-i hoiatust kiire põletamise eest. Kui lisate lõpptemperatuuril üle 5–10 minuti pikkuse hoiu, ütleb L&L, et sihttemperatuuri või koonuse nihet tuleb vastavalt langetada, ja märgib, et „Hoid kõrgel temperatuuril kiirendab küttekehade ja termopaari kulumist.“
 
-### Cone 6: drop-and-hold
+### Koonus 6: langetus ja hoid
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Keskkuumusglasuuridesse tekivad mõnikord **nõelaaugud**{{en: pinholes}} (pisikesed augud pinnal) või kupud, mille jätab sulatisest mullitav gaas. **Langetuse ja hoiu**{{en: drop-and-hold}} programm põletab tipuni, jahutab kiiresti umbes {{100 °F; 56 °C}} võrra ja hoiab seal. Digitalfire’i sõnul: „100 °F langetamine ja hoidmine annab sulatisele piisava viskoossuse, et mullid lõhkeksid, lastes neil samal ajal siiski kinni sulada.“
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, koonuse 6 langetus ja hoid
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Samm |                              Kiirus |                 Siht | Hoid                                                 |
+| ---- | ----------------------------------: | -------------------: | ---------------------------------------------------- |
+| 1    |               {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutit                                           |
+| 2    |              {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Soovi korral 30 minutit, et mullipilved kaoksid      |
+| 3    |               {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutit; suurtes ahjudes kauem                    |
+| 4    | Langus kiirusel {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutit                                           |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS kestab umbes 9 tundi 36 minutit. Voolavamate glasuuride puhul langetab Digitalfire selle asemel umbes {{200 °F; 111 °C}} võrra; liiga suur langetus „võib hoiu ajal põhjustada kristallumist“. Selle lõpptemperatuur {{2200 °F; 1204 °C}} on madalam kui tabeli {{2232 °F; 1222 °C}} koonuse 6 jaoks; Digitalfire teatab, et enamik ahje jõuab koonuseni 6 umbes {{2200 °F; 1204 °C}} juures. Kontrollige seda oma ahjus koonusekomplektiga.
 
-### Slow cooling
+### Kontrollitud jahutus
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Kontrollitud jahutus**{{en: slow cooling}} tähendab, et kontroller jahutab ahju kindla kiirusega, selle asemel et lasta temperatuuril vabalt langeda. Digitalfire’i C6DHSC on PLC6DS, millele järgneb jahutamine kiirusel {{150 °F/h; 83 °C/h}} temperatuurilt {{2100 °F; 1148 °C}} kuni {{1400 °F; 760 °C}}, seejärel välja. See „parandab läiget ja pinna kvaliteeti“ ning aitab rutiilisinistel glasuuridel, kuid kontrollitud jahutus „võib suurendada mattsust“ (üks mattglasuur muutus kuivaks) ja võib lühendada ahju releede eluiga. Ka L&L tarnib koonuse 6 jaoks kontrollitud jahutuse programmi:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L „User 6“: kontrollitud jahutus koonuse 6 glasuuridele
+Label: L ja L kontrollitud jahutus
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Samm |                                Kiirus |                 Siht |
+| ---- | ------------------------------------: | -------------------: |
+| 1    |                   Täiskiirusel üles | {{2232 °F; 1222 °C}} |
+| 2    |                   Täiskiirusel alla | {{1900 °F; 1038 °C}} |
+| 3    | Langus kiirusel {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Ka Skutti kontrolleritel on eelkuumutus ja üheastmelise jahutuse võimalus.
 
-### On a manual kiln
+### Käsijuhtimisega ahjus
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Käsijuhtimisega ahi ei suuda neid programme täpselt järgida, kuid plaan on sama: alguses ettevaatlikult, keskel ühtlaselt ja lõpp jälgides. Bracker’si madalkuumusglasuuri programm on allpool, osas „Käsijuhtimisega ahjud lähemalt“; kuumemate koonuste jaoks lisab see „keskmiselt 15–30 minutit koonuse numbri kohta“. Püromeetri, harjutamise ja põletuspäevikuga saate langetust ja hoidu või kontrollitud jahutust ligikaudu järele teha, keerates lüliteid käsitsi madalamale, nagu Digitalfire soovitab.
 
 ## Käsijuhtimisega ahjud lähemalt {#manual-kilns}
 

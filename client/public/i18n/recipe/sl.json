@@ -723,7 +723,8 @@
     "keyPoint": "Pika: ta glazura.",
     "keyBright": "Pikčasta črta: kjer so bile Stullove glazure najsijajnejše.",
     "keyLimits": "Črtkane črte in senčenje: razponi kremenice in glinice za skupino mej {name}.",
-    "keyCrazed": "Šrafura: kjer so dobile lasaste razpoke."
+    "keyCrazed": "Šrafura: kjer so dobile lasaste razpoke.",
+    "note": "Vodilo, ne napoved. R. T. Stull (Transactions of the American Ceramic Society, 1912) je žgal do približno stožca 11, s stalnimi talili 0,3 K₂O in 0,7 CaO; druga talila in drugačna žganja območja premaknejo, glazura, ki je mat le zato, ker je bila premalo žgana, pa se lahko na diagramu vseeno pokaže kot sijajna. Območja so takšna, kot jih riše Glazy."
   },
   "slurry": {
     "heading": "Relativna gostota in voda",
@@ -751,6 +752,17 @@
       "pint": "Želena masa pinte, oz"
     },
     "drySg": "Rel. gostota suhih surovin",
+    "drySgEmpty": "Potrebujejo jo le suhe mase; voda, ki jo dodate, je ne. Vnesite jo, če jo poznate.",
+    "drySgNeeded": "Vnesite relativno gostoto suhih surovin, da vidite suho glazuro v vedru in vodo za novo mešanico.",
+    "estimate": {
+      "mineral": "Ocena, {sg}, iz tega, iz česa je vsaka surovina: izmerjene gostote njenega minerala. Spremenite jo, če veste bolje.",
+      "kind": "Ocena, {sg}: glinenci in gline imajo približno 2,6. Spremenite jo, če veste bolje.",
+      "glass": "Ocena, {sg}, izračunana iz oksidov frit (frite so steklo). Spremenite jo, če veste bolje.",
+      "mixed": "Ocena, {sg}, iz vsake surovine: izmerjena gostota njenega minerala, približno 2,6 za glinence in gline, frite pa izračunane iz njihovih oksidov. Spremenite jo, če veste bolje.",
+      "leftOut": "Izpuščeno, ker relativna gostota ni znana: {names}.",
+      "none": "Za ta recept ni ocene: relativna gostota surovin {names} ni znana. Vnesite jo, če jo poznate.",
+      "was": "Uporabljena je vaša vrednost. Ocena je bila {sg}; izpraznite polje, da se vrnete k njej."
+    },
     "batch": "Suha glazura za novo mešanico, {unit}",
     "contents": "Pri rel. gostoti {sg} vedro vsebuje {glaze} suhe glazure in {water} vode.",
     "add": "Za rel. gostoto {target} dodajte {water} vode. Na koncu bo okoli {volume}.",
@@ -758,6 +770,7 @@
     "already": "Že je pri rel. gostoti {target}.",
     "mix": "Zmešajte {glaze} suhe glazure z {water} vode za okoli {volume} pri rel. gostoti {target}.",
     "badSg": "Relativna gostota mora biti večja od 1 (vode) in manjša od {dry}, kolikor znaša pri suhih surovinah.",
+    "badSgWater": "Relativna gostota mora biti večja od 1 (gostote vode).",
     "badDry": "Relativna gostota suhih surovin mora biti večja od 1.",
     "note": "Voda je po masi: liter tehta kilogram, ameriški galon okoli 8,3 lb. Izračun upošteva seštevek prostornin, kar je blizu, a ne natančno: dodajajte vodo postopoma, mešajte in znova merite. Dve glazuri z isto relativno gostoto lahko vseeno tečeta različno.",
     "saveTarget": "Shrani rel. gostoto {sg} kot cilj tega recepta",

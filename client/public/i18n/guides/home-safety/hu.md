@@ -59,31 +59,31 @@ A **színezőanyagok** azok a fém-oxidok és színtestek{{en: stains}}, amelyek
 
 Az ólom fő veszélye más: nem egyetlen kanálnyi, hanem a hetek vagy hónapok alatt lenyelt kis mennyiségű por, figyelmeztető jelek nélkül (lásd lent: Az ólom és a gyermekek).
 
-## Storing materials at home {#storing-materials lang=en}
+## A nyersanyagok tárolása otthon {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Egyetlen hivatalos szerv sem szabályozza, hogyan kell otthon tárolni a máznyersanyagokat, de az egészségügyi és munkavédelmi oldalak egyetértenek: a munkának legyen saját helye, gyermekektől távol. Pennsylvania egészségügyi minisztériuma az ólmot használó hobbikról írva azt mondja: „Használjon a hobbijához kijelölt munkahelyet vagy garázst, és tartsa távol a gyermekeket erről a területről.”
 
-### A storage checklist
+### Tárolási ellenőrzőlista
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Ezek általános mérgezésmegelőzési szabályok, a mázra alkalmazva. Egyetlen kerámiai szabvány sem írja elő őket, de mindegyiket javasoljuk:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- A száraz nyersanyagokat tartsa elzárva: egy szekrényben, vagy zárható helyiségben, garázsban vagy fészerben. Egy magas polc segít, de a gyermekek másznak. Ha eleinte csak néhány dolgot tud elzárni, a vízben oldódó nyersanyagokkal és a színezőanyagokkal kezdje.
+- A nyersanyagokat tartsa az eredeti zsákjukban vagy dobozukban. Ha egyet másik edénybe tesz át, címkézze fel pontosan azzal a névvel, amely a zsákon áll.
+- Soha ne használjon élelmiszeres vagy italos edényt (joghurtos dobozt, befőttesüveget, palackot) máznyersanyaghoz, felcímkézve sem. A gyermek tudja, mi van egy joghurtos dobozban.
+- A műhely eszközeit (merőlapátokat, kanalakat, habverőket, szitákat, mérlegeket) tartsa a műhelyben. Soha ne használjon konyhai eszközt a mázhoz, sem mázas eszközt ételhez.
+- A nedves mázakat tartsa felcímkézett, lefedett vödrökben.
+- Minden nyersanyag biztonsági adatlapját tartsa mellette, papíron vagy a telefonján.
+- A műhelyből semmit ne tartson a konyhában: se zsákot, se vödröt, se eszközt, se próbalapot.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+A nyersanyagok vásárlásáról és tárolásáról részletesebben a [Mázkészítés](/guides/making-a-glaze) című útmutató ír.
 
-### Glaze waste and rinse water
+### Mázhulladék és öblítővíz
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Soha ne öntse a mázat, vagy a vizet, amelyben mázas eszközöket öblített, a lefolyóba vagy a kertbe. Az Egyesült Királyság Crafts Councilja külön vödör vizet javasol a kéz, az ecsetek, a sziták és az eszközök mosására. Hagyja egy éjszakán át ülepedni, öntse le a tiszta vizet, aztán szárítsa ki a leülepedett mázat, és tegye a kommunális hulladékba (hulladéklerakóba kerül), soha ne a lefolyóba.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Javasoljuk, hogy ennek a vödörnek legyen fedele: az iszap ugyanazokat a fémeket tartalmazza, mint a máz, a háziállatok pedig isznak az álló vízből. Az elhelyezés szabályai helyenként eltérnek, ezért nézze meg minden termék biztonsági adatlapját, és ha bizonytalan, kérdezze meg a helyi önkormányzatot vagy a vízművet.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Egyes műhelyek kiégetik a kiszárított iszapot, mielőtt kidobják. Egy feláldozható tálba teszik: az égetés után a tál nem használható újra. A tálat csak negyedéig töltse meg, mert az iszap olvadás közben habzik és bugyog, és fedje le egy tányérral. Lapkencével bevont égetőlapra vagy egy tartalék lapra tegye, hátha kifolyik. Az égetés üveggé alakítja az iszapot, amely sokkal erősebben köti meg a fémeket, mint a laza por, így a hulladéklerakóban biztonságosabb. A száraz iszappal úgy bánjon, mint a száraz mázzal: légzésvédő maszkban, és úgy, hogy ne porozzon.
 
 ## A por maradjon a műhelyben {#keeping-dust-in-the-studio}
 

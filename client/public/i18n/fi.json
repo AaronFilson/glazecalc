@@ -9,6 +9,7 @@
     "homeSafety": "Älä myrkytä perhettäsi – Glazecalc",
     "firing": "Polttaminen yksinkertaisessa keramiikkauunissa – Glazecalc",
     "learnWithJohnBritt": "Opi John Brittin ilmaisella lasitekurssilla – Glazecalc",
+    "teachingGlazeCalculation": "Lasitelaskennan opettaminen – Glazecalc",
     "about": "Tietoja – Glazecalc",
     "privacy": "Tietosuoja – Glazecalc",
     "terms": "Käyttöehdot – Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Muutoksen hyväksyminen – Glazecalc",
     "cones": "Keilataulukko: Orton- ja SK-keilojen lämpötilat – Glazecalc",
     "materials": "Lasiteiden vakioraaka-aineet: analyysi ja vaarat – Glazecalc",
-    "materialInfo": "{name}: oksidianalyysi ja vaarat – Glazecalc"
+    "materialInfo": "{name}: oksidianalyysi ja vaarat – Glazecalc",
+    "famousGlazes": "Kuuluisat lasitteet – Glazecalc",
+    "famousGlaze": "Lasite {name} – Glazecalc"
   },
   "nav": {
     "skip": "Siirry sisältöön",
@@ -177,6 +180,7 @@
     "homeSafety": "Mitä tehdä, jos lapsi tai lemmikki nielee lasiteraaka-ainetta, ja miten raaka-aineet, pöly, uuni ja käsintehdyt esineet pidetään perheelle turvallisina.",
     "firing": "Miten sähköuunilla poltetaan: keilojen valinta, asettaminen ja lukeminen sekä julkaistut polttokäyrät raakapolttoon ja lasituspolttoon. Mukana keilataulukko.",
     "learnWithJohnBritt": "Kumppani John Brittin ilmaiselle verkkolasitekurssille: hänen videonsa jakso jaksolta, Glazecalcin oppaat luettaviksi ja harjoitukset laskimessa.",
+    "teachingGlazeCalculation": "6 opetuskertaa Segerin kaavan (UMF) opettamiseen: raaka-aineet ja kolmiokokeet, moolit, reseptistä kaavaan ja takaisin sekä lasitevirheet, laskuesimerkkien ja tulostettavien tehtävämonisteiden kera.",
     "advice": "Käytännön vinkkejä lasitteen sekoittamiseen, lasittamiseen ja polttamiseen Glazecalcilta sekä omat neuvot. Ilmainen keraamikoille ja savenvalajille.",
     "about": "Glazecalc on ilmainen, avoimen lähdekoodin lasitekemian laskin ja muistikirja. Katso, miten se laskee Segerin kaavan (UMF) ja miten se on rakennettu.",
     "privacy": "Miten Glazecalc käsittelee tietoja: ei mainoksia, ei analytiikkaa eikä seurantaa, eikä mitään myydä. Mitä säilytetään, miksi ja miten oikeuksia käytetään.",
@@ -187,6 +191,8 @@
     "materials": "Glazecalcin vakiokirjaston raaka-aineet maasälvistä ja saveista fritteihin ja boorin lähteisiin, kustakin oksidianalyysi, Segerin kaava ja vaarat.",
     "materialInfo": "{name}: oksidianalyysi, Segerin kaava, polttohäviö ja vaarat Glazecalcin vakiokirjastossa.",
     "materialInfoLong": "{name} Glazecalcin lasiteraaka-aineiden vakiokirjastossa: oksidianalyysi, osuus Segerin kaavassa, polttohäviö ja vaarat.",
+    "famousGlazes": "Kuuluisia lasitteita eri puolilta maailmaa: kunkin lasitteen perinteinen resepti tai historiallinen analyysi, sen Segerin kaava ja versio niistä raaka-aineista, joita omalla alueella myydään.",
+    "famousGlaze": "Lasite {name} ({native}): sen perinteinen resepti tai historiallinen analyysi, poltto, Segerin kaava ja lähteet sekä versio niistä raaka-aineista, joita omalla alueella myydään.",
     "imageAlt": "Glazecalcin logo ja otsikko, ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista."
   },
   "notices": {

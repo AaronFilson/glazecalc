@@ -723,7 +723,8 @@
     "keyPoint": "Točka: ova glazura.",
     "keyBright": "Točkasta crta: gdje su Stullove glazure bile najsjajnije.",
     "keyLimits": "Isprekidane crte i sjenčanje: rasponi silicijeva dioksida i glinice skupa {name}.",
-    "keyCrazed": "Šrafura: gdje su pucale."
+    "keyCrazed": "Šrafura: gdje su pucale.",
+    "note": "Smjernica, a ne predviđanje. R. T. Stull (Transactions of the American Ceramic Society, 1912.) pekao je na otprilike stožac 11, s topiteljima uvijek 0,3 K₂O i 0,7 CaO; drugi topitelji i druga pečenja pomiču područja, a glazura koja je mat samo zato što je nedovoljno pečena ipak može pasti u sjajno područje. Područja su nacrtana kao u bazi Glazy."
   },
   "slurry": {
     "heading": "Relativna gustoća i voda",
@@ -751,6 +752,17 @@
       "pint": "Masa pinte koju želite, oz"
     },
     "drySg": "SG suhih sirovina",
+    "drySgEmpty": "Treba samo za suhe mase; za vodu koju treba dodati ne treba. Upišite je ako je znate.",
+    "drySgNeeded": "Upišite relativnu gustoću suhih sirovina da biste vidjeli suhu glazuru u kanti i vodu za novu smjesu.",
+    "estimate": {
+      "mineral": "Procjena, {sg}, prema onome od čega je svaka sirovina: izmjerenoj gustoći njezina minerala. Promijenite je ako znate bolje.",
+      "kind": "Procjena, {sg}: feldspati i gline imaju oko 2,6. Promijenite je ako znate bolje.",
+      "glass": "Procjena, {sg}, izračunana iz oksida frita (one su staklo). Promijenite je ako znate bolje.",
+      "mixed": "Procjena, {sg}, prema svakoj sirovini: izmjerena gustoća njezina minerala, oko 2,6 za feldspate i gline, a za frite izračunano iz njihovih oksida. Promijenite je ako znate bolje.",
+      "leftOut": "Izostavljeno jer im relativna gustoća nije poznata: {names}.",
+      "none": "Nema procjene za ovaj recept: relativna gustoća za {names} nije poznata. Upišite je ako je znate.",
+      "was": "Koristi se vaš broj. Procjena je bila {sg}; ispraznite polje da biste joj se vratili."
+    },
     "batch": "Suha glazura za novu smjesu, {unit}",
     "contents": "Pri SG {sg} kanta sadrži {glaze} suhe glazure i {water} vode.",
     "add": "Da biste dosegli SG {target}, dodajte {water} vode. Na kraju bude oko {volume}.",
@@ -758,6 +770,7 @@
     "already": "Već je na SG {target}.",
     "mix": "Pomiješajte {glaze} suhe glazure s {water} vode za oko {volume} pri SG {target}.",
     "badSg": "SG mora biti veći od 1 (SG vode) i manji od {dry} suhih sirovina.",
+    "badSgWater": "Relativna gustoća mora biti veća od 1 (gustoće vode).",
     "badDry": "SG suhih sirovina mora biti veći od 1.",
     "note": "Voda se mjeri po masi: litra teži kilogram, američki galon oko 8,3 lb. Izračun uzima da se volumeni zbrajaju, što je blizu, ali nije točno: dodajte vodu malo po malo, miješajte i ponovno mjerite. Dvije glazure istog SG-a ipak mogu različito teći.",
     "saveTarget": "Spremi SG {sg} kao cilj ovog recepta",

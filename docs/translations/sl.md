@@ -688,3 +688,24 @@ kalkulator glazur za keramiko«.
 | Türkiye                                 | Turčija (f)                                                  | The Slovenian country name; Turkish official names stay as given. |
 | Japan Poison Information Center         | Japonski center za informacije o zastrupitvah                | Native name in brackets as given (大阪中毒110番).                 |
 | personal protective equipment           | osebna varovalna oprema (f)                                  | Regulation (EU) 2016/425 → »Uredba (EU) 2016/425«.                |
+
+## 5. Added in round 14 (famous glazes, Japanese and Chinese materials)
+
+No Slovenian shop or text on these materials was found (MR and KT sell none of them); the terms are plain
+descriptive Slovenian built from the glossary's own words (_pepel_, _lesni pepel_ 2.2, _kamen_), for a Slovenian
+potter to check. CJK names stay as the English shows them.
+
+| English                                      | Slovenian                                            | Notes                                                                                                                 |
+| -------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| synthetic ash (synthetic stand-in for 土灰) | sintetični nadomestek (m) za 土灰; sintetični pepel  | No source found. "it is not real ash" → »to ni pravi pepel«.                                                          |
+| mixed wood ash (土灰)                        | mešani lesni pepel (m)                               | From »lesni pepel« (2.2).                                                                                             |
+| isu ash (柞灰)                               | pepel isu (m) (柞灰)                                 | No source found; the Japanese name stays, as the English writes it.                                                   |
+| rice-straw ash (藁灰)                        | pepel riževe slame (m)                               | No source found. SSKJ: _slama_, _riž_.                                                                                |
+| chestnut prunings                            | obrezane kostanjeve veje (f pl)                      | Plain wording.                                                                                                        |
+| porcelain stone (瓷石)                       | porcelanski kamen (m) (瓷石)                         | No source found. _kamen_ (a stone as a material), not _kamnina_ (rock as a category, 2.2 "Feldspars and stones").     |
+| iron-rich local clay (紫金土)                | z železom bogata lokalna glina (f) (紫金土)          | The Chinese name stays.                                                                                               |
+| specification (colemanite "is specified at") | specifikacija (f) izdelka; je specificiran z         | "limits, not a typical analysis" → »mejne vrednosti, ne tipična analiza«.                                             |
+| semi-quantitative XRF analysis               | polkvantitativna analiza XRF (f)                     | Code after the noun, as »maska FFP3«.                                                                                 |
+| famous glazes                                | znane glazure (f pl)                                 | Page title »Znane glazure«; "{name} glaze" → »Glazura {name}«; "{name} style, lead-free" → »V slogu {name}, brez svinca«. |
+| teaching glaze calculation                   | poučevanje izračuna glazur (n)                       | "6 sessions" → »6 srečanj«; worksheets → »delovni listi«.                                                             |
+| dry SG (of a glaze's powder)                 | relativna gostota suhe glazure (f)                   | From »relativna gostota« (2.6).                                                                                       |

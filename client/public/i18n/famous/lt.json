@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Dalis šio puslapio dar neišversta, todėl rodoma anglų kalba.",
+  "index": {
+    "crumb": "Garsios glazūros",
+    "title": "Garsios glazūros",
+    "lead": "Visame pasaulyje žinomos glazūros, kiekviena iš savo tradicinių vietinių žaliavų, su Segerio formule ir versija iš žaliavų, parduodamų ten, kur esate.",
+    "listHeading": "Glazūros",
+    "more": "Bus ir daugiau glazūrų: kiekviena pridedama, kai jos receptas ir žaliavos remiasi bent trimis perskaitytais šaltiniais."
+  },
+  "glaze": {
+    "lead": "Garsi glazūra ({native}): jos tradicinis receptas ar analizė, degimas ir versija iš žaliavų, parduodamų ten, kur esate.",
+    "aboutHeading": "Apie glazūrą {name}",
+    "nativeName": "Pavadinimas originalo kalba",
+    "origin": "Kur",
+    "period": "Kada",
+    "firing": "Degimas",
+    "cone": "piroskopas {cone}",
+    "historyOnly": "Tik istorijai: ši glazūra buvo gaminama su švinu. Jos analizė pateikiama kaip istorija, o ne kaip receptas maišyti. Žemiau pateikta versija yra kita glazūra, be švino.",
+    "recipeHeading": "Tradicinis receptas",
+    "material": "Žaliava",
+    "amount": "Kiekis",
+    "unityHeading": "Segerio formulė",
+    "analysisHeading": "Istorinė analizė",
+    "oxide": "Oksidas",
+    "percent": "Masės %",
+    "useHeading": "Išbandymas",
+    "open": "Atidaryti šį receptą",
+    "openLeadFree": "Atidaryti bešvinę versiją",
+    "leadFreeTitle": "Bešvinė glazūra {name} stiliumi",
+    "allLink": "Visos garsios glazūros",
+    "safetyHeading": "Sauga",
+    "safeMixing": "Saugus maišymas ir vėdinimas",
+    "firingGuide": "Degimas paprastoje krosnyje",
+    "makingGuide": "Kaip pasigaminti glazūrą",
+    "sourcesHeading": "Šaltiniai",
+    "link": "Atidaryti",
+    "opened": "skaityta {date}"
+  },
+  "local": {
+    "heading": "Iš jūsų vietinių žaliavų",
+    "leadFreeHeading": "Bešvinė versija",
+    "intro": "Tradicinio recepto Segerio formulė, sudaryta iš standartinių žaliavų, parduodamų ten, kur perkate. Kad ją pamatytumėte, pasirinkite, kur perkate.",
+    "region": "Kur perkate žaliavas",
+    "proposal": "Pasiūlymo žaliavos",
+    "pick": "Pasirinkite…",
+    "untested": "Apskaičiuota, dar neišbandyta degant.",
+    "testFirst": "Prieš naudodami ją bet kokiems dirbiniams, išdekite bandinius, o paviršių, kuris liesis su maistu, ištirkite, kiek iš jo išsiskiria metalų.",
+    "untestedNote": "Apskaičiuota, dar neišbandyta degant: prieš naudodami išdekite bandinius.",
+    "close": "Ji artima tikslinei formulei.",
+    "fair": "Ji gana artima tikslinei formulei.",
+    "poor": "Iš šių žaliavų negalima priartėti prie tikslinės formulės.",
+    "none": "Iš ten parduodamų žaliavų jos sudaryti negalima.",
+    "choose": "Pasirinkite, kur perkate žaliavas, kad pamatytumėte ją, sudarytą iš ten parduodamų žaliavų."
+  },
+  "atmospheres": {
+    "oxidation": "oksidacinis",
+    "reduction": "redukcinis",
+    "neutral": "neutralus",
+    "wood": "malkinis degimas",
+    "salt": "degimas su druska",
+    "soda": "degimas su soda"
+  }
+}

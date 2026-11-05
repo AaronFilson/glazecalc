@@ -458,73 +458,73 @@ Krmilniki L&L in Bartlett za stožec 04 uporabljajo {{1926 °F; 1052 °C}}, za s
 
 Pri peči brez krmilnika ročno sledite istemu načrtu: počasi sušite s priprtim pokrovom in odprtimi opazovalnimi odprtinami, stikala postopoma prestavljajte z »Low« (nizko) na »Medium« (srednje) in na »High« (visoko), žganje pa naj konča Kiln-Sitter. Objavljeni postopki so spodaj, v razdelku Peči brez krmilnika podrobneje.
 
-## Glaze firing {#glaze lang=en}
+## Glazurno žganje {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Glazurno žganje{{en: glaze firing}} glazuro na biskvitu stali v steklo. Večina nizkotemperaturnih glazur na trgu je narejena za stožec 06 ali 05 (nizkotemperaturno območje sega od stožca 06 do 04), večina srednjetemperaturnih pa za stožec 5–6. Žgite do stožca, ki je naveden na oznakah glazure in gline, z nizom treh stožcev{{en: cone pack}} okoli te številke. Kaj se med taljenjem dogaja v glazuri, preberite v vodniku [Glaziranje od osnov](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Polnjenje peči za glazurno žganje
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Glazirani kosi se ne smejo dotikati drug drugega ali sten: pustite približno ½ palca (13 mm).
+- Dno pustite brez glazure ali pa nizkotemperaturne izdelke postavite na **trinožnike**{{en: stilts}}, majhne podstavke s konicami. Kamenine in porcelana ne postavljajte na trinožnike, ki se pri teh temperaturah vtisnejo v izdelek; namesto tega uporabite visokotemperaturni premaz za šamotne plošče ali kremenčev pesek.
+- Med robovi šamotnih plošč in steno ali stikalom Kiln-Sitter pustite vsaj 1 palec (25 mm).
 
-### Controller schedules
+### Programi krmilnika
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Prednastavljeni programi L&L in Bartlett za glazurno žganje
+Label: Programi za glazurno žganje
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segment                    |                         Segrevanje do |             Slow Glaze |             Fast Glaze |
+| -------------------------- | ------------------------------------: | ---------------------: | ---------------------: |
+| 1                          |                    {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Ni ločenega koraka |
+| 2                          | {{250 °F; 139 °C}} pod končno temperaturo | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                          |                    Končna temperatura |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Čas segrevanja, prazna peč |                                       |  Približno 6½–7½ ure |   Približno 3–4 ure |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Kje se končata segmenta 2 in 3, po stožcih (L&L in Bartlett)
+Label: Cilji prednastavljenih programov
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Stožec |   Konec segmenta 2 |   Končna temperatura |
+| ------ | -------------------: | -------------------: |
+| 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze je varnejša privzeta izbira, glede na opozorilo podjetja L&L o hitrem žganju. Če pri končni temperaturi dodate zadržanje{{en: hold}}, daljše od 5–10 minut, L&L svetuje, da ustrezno znižate ciljno temperaturo ali zamik za stožec, in opozarja, da »zadržanje pri visokih temperaturah pospeši obrabo grelnih elementov in termoelementa«.
 
-### Cone 6: drop-and-hold
+### Stožec 6: spust in zadržanje
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Pri srednjetemperaturnih glazurah se včasih pojavijo **luknjice**{{en: pinholes}} (drobne luknjice v površini) ali mehurji, ki jih pusti plin, ko uhaja iz taline. Program **spusta in zadržanja**{{en: drop-and-hold}} žge do vrha, temperaturo hitro spusti za približno {{100 °F; 56 °C}} in jo tam zadrži. Po besedah Digitalfire: »Spust za 100°F in zadržanje dasta talini dovolj viskoznosti, da mehurčki počijo, a se še vedno lahko zacelijo.«
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, spust in zadržanje za stožec 6
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Korak |                         Hitrost |                 Cilj | Zadržanje                                                |
+| ----- | ------------------------------: | -------------------: | -------------------------------------------------------- |
+| 1     |           {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                                 |
+| 2     |          {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Po želji 30 minut, da se odstranijo oblaki mehurčkov     |
+| 3     |           {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; v velikih pečeh dlje                           |
+| 4     | Navzdol s {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                                 |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS traja približno 9 ur in 36 minut. Pri bolj tekočih glazurah Digitalfire temperaturo spusti za približno {{200 °F; 111 °C}}; prevelik spust »tvega kristalizacijo med zadržanjem«. Njegova končna temperatura {{2200 °F; 1204 °C}} je pod {{2232 °F; 1222 °C}}, ki jih za stožec 6 navaja preglednica; Digitalfire poroča, da večina peči doseže stožec 6 pri približno {{2200 °F; 1204 °C}}. Preverite z nizom treh stožcev v svoji peči.
 
-### Slow cooling
+### Počasno hlajenje
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Počasno hlajenje**{{en: slow cooling}} pomeni, da krmilnik peč hladi z nastavljeno hitrostjo, namesto da bi temperatura padala prosto. Digitalfirov C6DHSC je PLC6DS, ki mu sledi hlajenje s {{150 °F/h; 83 °C/h}} od {{2100 °F; 1148 °C}} do {{1400 °F; 760 °C}}, nato izklop. »Izboljša sijaj in kakovost površine« ter pomaga rutilnim modrim, vendar lahko počasno hlajenje »poveča matiranost« (ena mat glazura je postala suha) in lahko skrajša življenjsko dobo relejev peči. Tudi L&L ponuja program počasnega hlajenja za stožec 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L »User 6«: počasno hlajenje za glazure za stožec 6
+Label: Počasno hlajenje L in L
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Korak |                            Hitrost |                 Cilj |
+| ----- | ---------------------------------: | -------------------: |
+| 1     |            Navzgor s polno hitrostjo | {{2232 °F; 1222 °C}} |
+| 2     |            Navzdol s polno hitrostjo | {{1900 °F; 1038 °C}} |
+| 3     | Navzdol s {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Tudi krmilniki Skutt ponujajo predgrevanje in hlajenje v enem koraku.
 
-### On a manual kiln
+### Pri peči brez krmilnika
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Peč brez krmilnika teh programov ne more natančno slediti, načrt pa je enak: na začetku nežno, v sredini enakomerno, konec pa pod nadzorom. Brackerjev program za nizkotemperaturno glazurno žganje je spodaj, v razdelku Peči brez krmilnika podrobneje; za vročejše stožce doda »povprečno 15–30 minut na številko stožca«. S pirometrom, izkušnjami in dnevnikom lahko spust in zadržanje ali počasno hlajenje približno posnemate tako, da stikala ročno prestavljate navzdol, kot predlaga Digitalfire.
 
 ## Peči brez krmilnika podrobneje {#manual-kilns}
 

@@ -59,31 +59,31 @@ Label: Liukenevat raaka-aineet
 
 Lyijyn pääasiallinen vaara on toisenlainen: ei yksi lusikallinen, vaan pienet määrät pölyä, jotka niellään viikkojen tai kuukausien kuluessa ilman varoitusmerkkejä (ks. jäljempänä Lyijy ja lapset).
 
-## Storing materials at home {#storing-materials lang=en}
+## Raaka-aineiden säilyttäminen kotona {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Mikään viranomainen ei ole antanut sääntöjä lasiteraaka-aineiden{{en: glaze materials}} säilyttämisestä kotona, mutta terveys- ja turvallisuussivustot ovat yhtä mieltä: tee työt omassa tilassaan, erillään lapsista. Pennsylvanian terveysviranomainen kirjoittaa lyijyä käyttävistä harrastuksista: ”Käytä harrastukseesi erillistä työtilaa tai autotallia ja pidä lapset poissa tältä alueelta.”
 
-### A storage checklist
+### Säilytyksen tarkistuslista
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Nämä ovat yleisiä myrkytysten ehkäisyn sääntöjä lasitteisiin sovellettuina. Mikään keramiikkastandardi ei määrää niitä, mutta suosittelemme niitä kaikkia:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Säilytä kuivat raaka-aineet lukkojen takana: lukittavassa kaapissa, huoneessa, autotallissa tai vajassa. Korkea hylly auttaa, mutta lapset kiipeävät. Jos aluksi voi lukita vain muutaman asian, aloita liukenevista raaka-aineista ja väriaineista{{en: colorants}}.
+- Säilytä raaka-aineet alkuperäisissä pusseissaan tai purkeissaan. Jos raaka-aineen siirtää toiseen astiaan, merkitse astiaan nimi täsmälleen sellaisena kuin se on kirjoitettu pussiin.
+- Älä koskaan käytä ruoka- tai juoma-astioita (jogurttipurkkeja, lasipurkkeja, pulloja) lasiteraaka-aineille, vaikka ne olisi merkitty. Lapsi tietää, mitä jogurttipurkissa on.
+- Pidä pajan työvälineet (mittakauhat, lusikat, vispilät, seulat, vaa’at) pajassa. Älä koskaan käytä keittiövälineitä lasitteeseen äläkä lasitevälineitä ruokaan.
+- Säilytä märät lasitteet merkityissä ämpäreissä kannet kiinni.
+- Pidä kunkin raaka-aineen käyttöturvallisuustiedote tallessa raaka-aineen yhteydessä, paperilla tai puhelimessa.
+- Älä pidä keittiössä mitään pajasta: ei pusseja, ämpäreitä, työvälineitä eikä koepaloja{{en: test tiles}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Raaka-aineiden ostamisesta ja säilyttämisestä kerrotaan tarkemmin oppaassa [Lasitteen valmistaminen](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Lasitejäte ja huuhteluvesi
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Älä koskaan kaada lasitetta tai lasitevälineiden huuhteluvettä pesualtaaseen tai puutarhaan. Brittiläinen Crafts Council suosittelee erillistä vesiämpäriä käsien, siveltimien, seulojen ja työvälineiden pesemiseen. Anna veden seistä yön yli, kaada kirkas vesi pois, kuivata sitten pohjalle laskeutunut lasite ja laita se roskiin (se päätyy kaatopaikalle), älä koskaan viemäriin.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Suosittelemme ämpäriin kantta: sakka sisältää samoja metalleja kuin lasite, ja lemmikit juovat seisovaa vettä. Jätemääräykset vaihtelevat paikkakunnittain, joten tarkista jokaisen tuotteen käyttöturvallisuustiedote ja kysy epäselvissä tapauksissa omalta kunnalta tai vesilaitokselta.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Jotkin pajat polttavat kuivatun sakan ennen kuin heittävät sen pois. Sakka laitetaan ylimääräiseen kulhoon, joka saa mennä käyttökelvottomaksi: polton jälkeen kulhoa ei voi enää käyttää. Täytä kulho vain neljäsosaan asti, koska sakka vaahtoaa ja kuplii sulaessaan, ja peitä se lautasella. Aseta kulho suoja-aineella käsitellylle uunilevylle tai ylimääräiselle levylle siltä varalta, että sakka valuu yli. Poltto muuttaa sakan lasiksi, joka sitoo metallit paljon tiukemmin kuin irtonainen jauhe, joten se on turvallisempaa kaatopaikalla. Käsittele kuivaa sakkaa kuten kuivaa lasitetta: käytä hengityksensuojainta äläkä nostata pölyä.
 
 ## Pölyn pitäminen pajassa {#keeping-dust-in-the-studio}
 

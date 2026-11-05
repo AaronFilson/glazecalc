@@ -119,183 +119,183 @@ Ní hionann an chomhairle faoi cé chomh mín is a chaithfidh an mheá a bheith.
 
 Meánn Derek Au isteach i mbabhla amháin i gcarnáin ar leith, ionas gur féidir botún a thógáil amach arís le scúp. Má mheánn tú isteach i mbuicéad amháin gan an mheá a chur ar nialas idir ábhair, insíonn an t-iomlán reatha san aip Glazecalc duit cad ba cheart don mheá a léamh i ndiaidh gach ceann.
 
-## Mixing and sieving {#mixing lang=en}
+## Meascadh agus criathrú {#mixing}
 
-### How much water
+### Cé mhéad uisce
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Ní réitíonn na foinsí le chéile. Tosaíonn Derek Au tiubh, ag 50 mL uisce do gach 100 g púdair, agus cuireann sé tuilleadh leis níos déanaí. Tugann Potterycrafts 65 mL do gach 100 g do ghlónra púdair amháin. Úsáideann UT Austin meáchain chomhionanna uisce agus púdair, agus nuair a chuir Digitalfire 20 kg púdair i 20 kg uisce, thomhais sé sainmheáchan{{en: specific gravity}} 1.46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Is tapa uisce a chur leis agus is mall é a bhaint amach, mar sin tosaigh íseal. Ár meastachán: tosaigh le **thart ar 70 go 80 mL do gach 100 g** (700 go 800 mL an cileagram, nó thart ar 11 go 12 US fl oz an punt). Maothaigh, measc agus criathraigh ag an tiús sin, ansin cuir uisce leis beagán ag an am go dtí go mbíonn an sainmheáchan ceart. Meánn 1 mL uisce 1 g, mar sin is féidir leat é a mheá. Má théann tú thar fóir, lig don ghlónra síothlú, ansin bain an t-uisce glé den bharr le spúinse nó doirt as é.
 
-### Tools and water
+### Uirlisí agus uisce
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Meascthóir liáin.** Deir Digitalfire go bhfuil ceann maith “riachtanach”. Déanann druil le sreang agus lián measctha an jab i mbuicéad. Coinníonn UT Austin ar siúl é 4 go 5 nóiméad ar a laghad tar éis don ghlónra cuma mheasctha a bheith air, agus coinníonn sé an lann ó thaobh an bhuicéid, mar is féidir léi plaisteach a scríobadh de.
+- **Cumascóir.** “Oibríonn sé thar barr do bhaisceanna beaga” (Digitalfire). Coinnigh do ghlónra amháin é: ní mór gan é a thabhairt ar ais chuig an gcistin riamh.
+- **Greadtóir nó bata.** Rogha Zakin nuair nach bhfuil meascthóir ann.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Bíonn an t-uisce difriúil freisin, agus tugann Digitalfire faoi deara go n-athraíonn sé an chaoi a n-iompraíonn draoib{{en: slurry}} í féin. Úsáideann Derek Au uisce osmóis droim ar ais mar go bhfuil a uisce sconna crua. Cibé rud a úsáideann tú, scríobh síos é.
 
-### Step by step
+### Céim ar chéim
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Cuir ort do mhasc análaitheora{{en: respirator}}, agus lámhainní rubair má rachaidh do lámha isteach ann. Caitheann Zakin masc ó thús na meá go dtí go mbíonn an glónra fliuch.
+2. Tomhais thart ar 70 go 80 mL uisce do gach 100 g púdair isteach sa bhuicéad.
+3. Cuir an púdar meáite leis go réidh, ó airde íseal. Cuireann UT Austin púdar le huisce te; cuireann Zakin agus Au uisce le púdar. Molaimid púdar isteach in uisce, a chuireann níos lú deannaigh san aer, ach amháin d’oideas ina bhfuil mórán beintinít: measc a phúdair thirime le chéile ar dtús.
+4. **Maothaigh** é: lig don phúdar maothú san uisce gan corraí. Fanann Digitalfire thart ar 20 nóiméad. Ní mór do phúdair ina bhfuil guma nó ceanglóir seasamh thar oíche.
+5. Measc go dtí nach bhfuil aon phócaí tirime ná cnapáin fágtha.
+6. Criathraigh faoi dhó é (féach thíos).
+7. Clúdaigh é agus lig dó luí thar oíche, ansin measc arís é agus seiceáil an bhfuil sraith chrua i dtóin an bhuicéid.
+8. Tomhais an sainmheáchan, agus cuir uisce leis beagán ag an am chun do sprioc a bhaint amach. Chun sainmheáchan tirim do ghlónra féin a fháil, meáigh an draoib chríochnaithe freisin (féach thíos).
+9. Cuir lipéad ar an mbuicéad, agus scríobh síos a ndearna tú.
+10. Glan fliuch: mapáil an t-urlár agus glan gach dromchla le ceirt fhliuch, taobh amuigh de choimeádáin na n-ábhar san áireamh.
 
-### Sieving
+### Criathrú
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+Is éard is **criathar**{{en: sieve}} ann ná scáileán mogallra i bhfráma. Nuair a bhrúitear glónra tríd le scuab, briseann sé cnapáin a fhágann an meascadh agus coinníonn sé siar cáithníní a thiocfadh amach mar spotaí dorcha sa bhácáil. Dá airde uimhir an **mesh**{{en: mesh}}, is ea is míne an scáileán: tá mogaill thart ar 0.18 mm i 80 mesh, agus thart ar 0.15 mm i 100 mesh.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Molann na foinsí mesh éagsúla. Criathraíonn Zakin faoi dhó trí 50 nó 80 mesh. Úsáideann Derek Au 120 mesh d’fhormhór na nglónraí, go háirithe iad siúd ina bhfuil cóbalt nó iarann: d’fhág trí chur trí 80 mesh spotaí iarainn fós i gceileadón amháin, agus leigheas cur amháin trí 120 mesh é. Coinníonn sé 60 go 80 mesh do ghlónraí luaithe agus do ghlónraí eile ina bhfuil ábhair gharbha. Molann Potterycrafts, sa Ríocht Aontaithe, 60 go 80 mesh. Rogha shábháilte réamhshocraithe:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Cén criathar le húsáid
+Label: Mesh criathair
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glónra                                                | Criathar             |
+| ----------------------------------------------------- | -------------------- |
+| Formhór na nglónraí                                   | Dhá chur trí 80 mesh |
+| Glónraí le hábhair datha mar chóbalt nó iarann        | 100 go 120 mesh      |
+| Glónraí luaithe, agus glónraí eile le hábhair gharbha | 60 go 80 mesh        |
 
-## Specific gravity {#specific-gravity lang=en}
+## Sainmheáchan {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+Insíonn an **sainmheáchan**{{en: specific gravity}} (SM) duit cé mhéad púdair atá i do dhraoib{{en: slurry}}. Is é meáchan toirte glónra roinnte ar mheáchan na toirte céanna uisce. Is é 1.00 an t-uisce, agus meánn glónra ag {{SG 1.45}} 145 g sa 100 mL. Is trí mheascadh go sainmheáchan tomhaiste a fhaigheann tú an tiús céanna, agus an brat céanna, gach uair. Níl aon aonad aige, mar sin is mar a chéile é i ngraim nó in unsaí.
 
-### Measure it by weighing 100 mL
+### É a thomhas trí 100 mL a mheá
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Corraigh an glónra ionas nach bhfuil aon rud síothlaithe.
+2. Cuir **sorcóir tomhais**{{en: graduated cylinder}} 100 mL (feadán tomhais ard marcáilte) nó steallaire 100 mL ar an meá, agus cuir an mheá ar nialas.
+3. Líon é le glónra go dtí 100 mL go díreach, ag léamh an mhairc ag leibhéal na súl.
+4. Meáigh é agus roinn na graim ar 100: is ionann 145 g agus sainmheáchan 1.45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Marcálann Digitalfire cupán freisin ag leibhéal 500 g uisce, líonann sé go dtí an marc é le glónra, agus roinneann sé an meáchan ar 500; is cruinne tomhas níos mó agus níos lán. Is tapa an **hidriméadar**{{en: hydrometer}}, snámhán a léitear san áit a luíonn sé sa ghlónra, ach is féidir leis glónraí tiubha nó glóthaithe a mhíléamh. Léann hidriméadair na Ríochta Aontaithe, mar cheann Potclays, i gcéimeanna Baumé (°Bé). De réir ár n-uimhríochta, sainmheáchan = 145 ÷ (145 − °Bé), mar sin is ionann 46 °Bé agus thart ar 1.46. Tugann seanleabhair na Ríochta Aontaithe **meáchan pionta**, na hunsaí i bpionta impiriúil glónra: roinn ar 20 é, mar sin is ionann 29 oz agus thart ar shainmheáchan 1.45 (ár n-uimhríocht féin freisin).
 
-### What to aim for
+### Cad is sprioc duit
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Ní réitíonn na foinsí le chéile, go háirithe faoi scuabadh agus spraeáil, áit a dtugann an soláthraí Potclays sa Ríocht Aontaithe figiúirí i bhfad níos airde (agus deir sé go bhfuil a chuid féin “mar threoir amháin”). Glac le gach uimhir mar phointe tosaigh. Is é croí-chomhairle Digitalfire an sainmheáchan agus an glóthú a oibríonn do gach glónra a aimsiú, ansin iad a athdhéanamh agus iad a scríobh síos.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Spriocanna sainmheáchain, nuair nach réitíonn na foinsí
+Label: Spriocanna sainmheáchain
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Úsáid    | Digitalfire agus Glazy                                                                                                                                        | Potclays (an Ríocht Aontaithe)            | Pointe tosaigh sábháilte                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------- |
+| Tumadh   | {{SG 1.40}} (do thumadh 5 soicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a éiríonn le glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}} | Glé: {{SG 1.46–1.48}}; daite: {{SG 1.61}} | {{SG 1.45}}; tanaigh go dtí {{SG 1.43}} agus glóthaigh é má shileann sé |
+| Scuabadh | {{SG 1.25}} (glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                                    | {{SG 1.71–1.81}}                          | Lean an táirge; úsáid CMC nó meán scuabtha                              |
+| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, i bhfad níos tanaí, le dífhlocasach (breiseán a dhéanann draoib níos tanaí)                      | {{SG 1.71}}                               | Gan uimhir iontaofa; ná spraeáil ach i mboth spraeála                   |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Chun glónra tumtha a sheiceáil leis an tsúil, tumann AMACO ar feadh 5 soicind agus lorgaíonn sé brat atá chomh tiubh le dím, bonn deich gcent SAM. Bácálann Digitalfire tíleanna a tumadh ar feadh 5 soicind chun seiceáil.
 
-### Water for a target SG: our estimate
+### Uisce do sprioc-sainmheáchan: ár meastachán
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Is é an tábla thíos ár n-uimhríocht féin, ní uimhríocht foinse. Glacann sé leis go bhfuil dlús 2.6 g sa cm³ ag cáithníní an phúdair, rud is toimhde é, ní tomhas. Athraíonn cré, ábhair intuaslagtha agus glóthú fíorghlónra, mar sin úsáid é chun tosú, ansin tomhais. Mar sheiceáil, tuarann sé {{SG 1.44}} do mheáchain chomhionanna púdair agus uisce, gar do {{SG 1.46}} a thomhais Digitalfire. Léiríonn sé freisin go dtosaíonn 70 go 80 mL do gach 100 g os cionn {{SG 1.50}}, níos tiubha ná mar a theastaíonn.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Uisce do sprioc-sainmheáchan (ár meastachán)
+Label: Uisce do sprioc-sainmheáchan
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Sprioc      | Do gach 100 g púdair |     An cileagram |              An punt |
+| ----------- | -------------------: | ---------------: | -------------------: |
+| {{SG 1.40}} |      thart ar 115 mL | thart ar 1150 mL | thart ar 18 US fl oz |
+| {{SG 1.45}} |       thart ar 98 mL |  thart ar 980 mL | thart ar 15 US fl oz |
+| {{SG 1.50}} |       thart ar 85 mL |  thart ar 850 mL | thart ar 13 US fl oz |
+| {{SG 1.60}} |       thart ar 64 mL |  thart ar 640 mL | thart ar 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Sainmheáchan tirim do ghlónra féin a fháil agus tú ag meascadh
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+Buille faoi thuairim is ea an 2.6 thuas. Is féidir figiúr do ghlónra féin, dlús a phúdair thirim, a oibriú amach ó thrí uimhir is féidir leat a thógáil agus tú ag meascadh. Leis, is féidir leat a oibriú amach ón sainmheáchan cé mhéad púdair atá in aon bhuicéad den ghlónra sin níos déanaí, agus an t-uisce don chéad bhaisc eile. Ár n-uimhríocht féin, ní uimhríocht foinse:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Scríobh síos meáchan an phúdair thirim sa bhaisc: iomlán an oidis.
+2. Meáigh an buicéad folamh sula dtosaíonn tú, nó marcáil a mheáchan air.
+3. Measc, criathraigh agus tabhair an glónra go dtí a shainmheáchan mar is gnách. Brúigh gach rud tríd an gcriathar agus sruthlaigh isteach sa bhuicéad é, ionas nach bhfágtar aon phúdar amuigh.
+4. Meáigh an buicéad lán agus bain meáchan an bhuicéid de. Sin meáchan na draoibe.
+5. Tomhais an sainmheáchan.
 
-Then:
+Ansin:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Uisce** = meáchan na draoibe − meáchan an phúdair.
+- **Toirt na draoibe** i mL = meáchan na draoibe i ngraim ÷ sainmheáchan.
+- **Toirt an phúdair** = toirt na draoibe − uisce (is ionann 1 g uisce agus 1 mL).
+- **Sainmheáchan tirim** = meáchan an phúdair ÷ toirt an phúdair.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Mar shampla: déanann 1000 g púdair 1980 g draoibe ag {{SG 1.45}}. Is é 980 g an t-uisce, is é an draoib 1980 ÷ 1.45 = thart ar 1366 mL, tógann an púdar 1366 − 980 = 386 mL, agus is é an sainmheáchan tirim 1000 ÷ 386 = thart ar 2.59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Meáigh an draoib ar fad ag an deireadh, ní an t-uisce agus tú á dhoirteadh, ionas nach n-áirítear uisce a ghalaíonn nó a imíonn ina steall. Méadaíonn earráidí beaga anseo: bogann léamh sainmheáchain atá 0.01 as an freagra thart ar 2 go 4%, níos mó do ghlónra níos tanaí. Úsáid baisc 1 kg nó níos mó, meá chruinn, agus modh an chupáin 500 g thuas don sainmheáchan. Tá formhór na n-ábhar coitianta idir thart ar 2.5 agus 2.9, mar sin is dócha gur botún tomhais atá i bhfigiúr i bhfad lasmuigh de sin, i nglónra nach bhfuil mórán siorcóin ná luaidhe ann. Scríobh an figiúr ar an oideas.
 
-### Epsom salts, CMC gum and bentonite
+### Salann Epsom, CMC agus beintinít
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+Cuireann **salann Epsom** glónra ag glóthú beagán nuair a sheasann sé gan corraí agus ag sreabhadh arís nuair a chorraítear é. **Flocasú**{{en: flocculating}} a thugtar air seo, agus is **ticseatrópach**{{en: thixotropic}} glónra a iompraíonn é féin mar sin: téann sé air níos cothroime, sileann sé níos lú agus síothlaíonn sé níos lú. Molann Digitalfire tosú ag thart ar 2 g an galún nuair a bhíonn an sainmheáchan ceart (thart ar 0.5 g an lítear, ár n-aistriú féin) agus an méid a choigeartú gach uair a mheascann tú, mar níor cheart d’aon oideas an dáileog a shocrú. Molaimid é a thuaslagadh i mbeagán uisce te ar dtús. I sampla de chuid Digitalfire, shil glónra ag {{SG 1.45}}, mar sin thug uisce síos go {{SG 1.43}} é agus ghlóthaigh salann Epsom ar ais go huachtarach é, agus chuaigh sé air go cothrom. Seiceáil gharbh: corraigh, stop agus féach. Leanann glónra glóthaithe ar aghaidh ag bogadh ar feadh thart ar 2 nó 3 shoicind, ansin stopann sé agus preabann sé siar beagán.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+Déanann **CMC**{{en: CMC gum}} (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a choinníonn greim ar an bpota. Is mó a bhaineann sé le glónraí scuabtha agus le glónraí ina bhfuil mórán friot. Meascann sampla Digitalfire 3.75 g isteach i 1000 g draoibe, agus ní mór é a chur isteach le cumascóir. Ní ghlóthóidh glónra ina bhfuil CMC le salann Epsom, agus ós rud é go n-itheann miocróib an guma, is féidir leis athrú sa bhuicéad agus tosú ag bréantas.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+Cabhraíonn **beintinít**{{en: bentonite}}, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. De ghnáth braitheann glónraí tumtha ar 15 go 25% cré neamhbhácáilte chuige seo. D’oideas atá gann ar chré, cabhraíonn thart ar 1 go 3% beintinít; deir Digitalfire nár cheart go dteastódh beintinít níos mó ná 1% de mheáchan an ghlónra thirim ó ghlónra ina bhfuil níos mó ná 15% cré.
 
-## Test tiles and line blends {#testing lang=en}
+## Tíleanna tástála agus sraitheanna cumaisc {#testing}
 
-### Start small
+### Tosaigh beag
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Oibríonn Derek Au suas i dtrí chéim: tástáil 50 nó 100 g, triail 1 go 2 kg má oibríonn sí, ansin baisc stiúideo 5 go 10 kg. De réir ár meastacháin, déanann tástáil 100 g ag {{SG 1.45}} thart ar 135 mL (thart ar 4½ US fl oz) draoibe{{en: slurry}}, a dhóthain chun cúpla tíl bheag a thumadh i gcupán caol.
 
-### Test on your own clay
+### Tástáil ar do chré féin
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Is féidir le glónra cuma an-difriúil a bheith air ar chré eile nó in áith eile: thástáil Clay Art Center gach ceann dá ghlónraí athfhoirmlithe ar cheithre chré-ábhar, ag cón{{en: cone}} 6 agus ag cón 10. Molann treoir thosaitheoirí Potclays do thástáil glónra:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 go 10 **dtíl tástála**{{en: test tiles}} (píosaí beaga chun glónra a thriail) den chré a úsáidfidh tú i ndáiríre, ag nótáil an bhfuil siad brioscbhácáilte nó cnámhthirim
+- athrú amháin ag an am
+- tumadh aonair agus tumadh dúbailte, chun an glónra a fheiceáil tanaí agus tiubh
+- gach tíl sa lucht áithe céanna
+- marc ar gach tíl roimh bhácáil, le stampa, snoíodóireacht nó peann luaidhe fo-ghlónra. Bíonn cuma chosúil ar thíleanna bácáilte, agus maireann marc a rinneadh roimh bhácáil tríd an áith, ionas gur féidir leat a insint i gcónaí cén t-oideas atá ar gach tíl.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Molaimid tíleanna a sheasann ina seasamh, ós rud é go gceileann tíl chothrom cé chomh fada is a ritheann glónra, le banda uigeachta chun a thaispeáint conas a athraíonn dath an ghlónra ar na himill, agus bonn lom. Cuir gach ceann ar mhias bheag nó ar phíosa brioscghréithe, nó ar sheilf a bhfuil brat seilfe uirthi, chun na braonta a cheapadh. Cuir **cón fianaise**{{en: witness cone}}, cón beag ceirmeach a lúbann nuair a fhaigheann sé a dhóthain teasa, in aice leis na tíleanna chun a thaispeáint cad a fuair siad; míníonn an [treoirleabhar bácála](/guides/firing) na cóin. Tabhair cód gearr do gach tíl, agus scríobh é in aice leis an oideas i do thaifid. Úsáideann Willers, ag scríobh do Ceramic Arts Network, uimhreacha agus litreacha, agus scríobhann sé an córas féin i dtosach an leabhair nótaí.
 
-### Line blends
+### Sraitheanna cumaisc
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+Is éard is **sraith cumaisc**{{en: line blend}} ann ná ró tástálacha a théann céim ar chéim go cothrom ó mheascán amháin go meascán eile: ó ghlónra amháin go dtí an dara ceann, nó ó bhunghlónra go dtí an glónra céanna le níos mó ábhair datha{{en: colorant}}. Céimníonn Derek Au, mar shampla, ocsaíd iarainn trí bhunghlónra glé i gcéimeanna 1%. Sábhálann modh toirte a luaitear le Ian Currie am, mar nach meascann tú ach an dá cheann:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Measc an dá ghlónra deiridh, A agus B, mar bhaisceanna den mhéid chéanna, agus criathraigh iad araon.
+2. Cuir uisce leis an gceann is lú toirt go dtí go mbíonn an toirt fhliuch chéanna go díreach ag an dá cheann.
+3. Corraigh iad araon, ansin tarraing gach meascán le steallaire isteach ina chupán uimhrithe féin.
+4. Corraigh gach cupán agus tum tíl.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Inár sampla oibrithe, is é A 100 g de bhunghlónra glé, agus is é B an rud céanna le 4 g d’ocsaíd iarainn dhearg curtha leis (breis 4%). Tá an sciar céanna den bhunghlónra i ngach millilítear de B agus atá i millilítear de A, móide a chuid iarainn, mar sin téann na cupáin ó iarann ar bith go 4% i gcéimeanna 1%. Tugann gach ceann deiridh 100 mL don tsraith, agus clúdaíonn baisc 100 g é sin de réir ár meastacháin.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Sraith cumaisc iarainn i gcúig chéim, 40 mL sa chupán (ár sampla oibrithe)
+Label: Sampla de shraith cumaisc
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Cupán | Bunghlónra glé (A) | Bunghlónra le 4% iarainn (B) | Ocsaíd iarainn, % den bhunghlónra |
+| ----- | -----------------: | ---------------------------: | --------------------------------: |
+| 1     |              40 mL |                         0 mL |                                 0 |
+| 2     |              30 mL |                        10 mL |                                 1 |
+| 3     |              20 mL |                        20 mL |                                 2 |
+| 4     |              10 mL |                        30 mL |                                 3 |
+| 5     |               0 mL |                        40 mL |                                 4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Teastaíonn uimhríocht chúramach, dhá cheann deiridh atá measctha go maith agus ar shainmheáchan cothrom, agus meá chruinn don mhodh. Cumascann Derek Au de réir meáchain freisin seachas de réir toirte. Déanann **cumasc trí-aiseach**{{en: triaxial blend}} an rud céanna le trí cheann deiridh, leagtha amach ar thriantán.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Nuair is cosúil go bhfuil céim gealltanach, coinníonn **Sábháil mar chóip** ar an [leathanach oidis](/recipe) é mar oideas dá chuid féin agus fágann sé an bunoideas mar a bhí.
+
+## Taifid a choinneáil {#records}
+
+Cuireann Willers an aidhm go maith: “dóthain eolais chun na torthaí a d’aimsigh tú a athdhéanamh, nó a sheachaint”. Scríobh síos cad atá beartaithe agat a thástáil sula dtosaíonn tú, agus na torthaí nuair a fholmhaíonn tú an áith. Cuireann Potclays leis sin an cur i bhfeidhm, an tiús, an cré-ábhar{{en: clay body}} agus an bhácáil iomlán, lena n-áirítear rampaí, coinneálacha agus fuarú. Is éard is **rampa**{{en: ramp}} ann ná ráta téimh nó fuaraithe, mar {{60 °C; 108 °F}} san uair, agus coinníonn **coinneáil**{{en: hold}} an áith ag teocht amháin ar feadh ama shocraithe. Nótáil baiscuimhreacha, an t-uisce a d’úsáid tú agus aon ionadú: nuair a d’athraigh Clay Art Center a iathchloch, b’éigean thart ar leath dá ghlónraí a choigeartú.
+
+Table: Cad atá le taifeadadh do gach baisc ghlónra (ár dteimpléad)
+Label: Teimpléad taifid
+
+| Cuid           | Cad atá le scríobh síos                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Oideas         | An t-oideas agus a leagan; brandaí agus baiscuimhreacha na n-ábhar; aon ionadú                                                                                                                                                                                                                                           |
+| Meascadh       | Dáta; méid baisce; an t-uisce a cuireadh leis, agus a chineál (sconna, osmóis droim ar ais nó driogtha); sainmheáchan tar éis measctha agus an sainmheáchan deiridh; meáchan na draoibe críochnaithe, dá sainmheáchan tirim; salann Epsom, CMC agus beintinít a cuireadh leis; mesh an chriathair agus líon na gcur tríd |
+| Cur i bhfeidhm | Cré-ábhar; cón na brioscbhácála; tumadh, scuabadh nó doirteadh; am tumtha nó líon na mbrat; tiús tirim                                                                                                                                                                                                                   |
+| Bácáil         | An áith agus suíomh na seilfe; an clár bácála, lena rampaí, coinneálacha agus fuarú; atmaisféar (ocsaídiú nó dí-ocsaídiú); a léirigh an cón fianaise, ní hamháin a raibh an áith socraithe air                                                                                                                           |
+| Toradh         | Dromchla agus dath; aon rith, snáithlíonrú nó poill bhioráin; grianghraif den tosach, den chúl agus den taobh; cód na tíle                                                                                                                                                                                               |
+
+> [!NOTE]
+> San aip Glazecalc, coinníonn [oideas](/recipe) sábháilte an t-oideas féin. Taifeadann [taifead bácála](/firing) gach bácáil: an áith, an dáta, amanna, teochtaí, cóin agus nótaí. Coinníonn [nótaí](/notes) gach rud eile, mar an taifead baisce thuas agus a léirigh gach tíl.
 
 ## Foinsí {#sources}
 

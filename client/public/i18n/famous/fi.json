@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Osaa tästä sivusta ei ole vielä käännetty, joten se näytetään englanniksi.",
+  "index": {
+    "crumb": "Kuuluisat lasitteet",
+    "title": "Kuuluisat lasitteet",
+    "lead": "Eri puolilla maailmaa tunnettuja lasitteita, kukin perinteisistä paikallisista raaka-aineistaan, Segerin kaavan ja omalla alueella myytävistä raaka-aineista tehdyn version kera.",
+    "listHeading": "Lasitteet",
+    "more": "Lasitteita tulee lisää: kukin lisätään, kun sen resepti ja raaka-aineet perustuvat vähintään kolmeen luettuun lähteeseen."
+  },
+  "glaze": {
+    "lead": "Kuuluisa lasite ({native}): sen perinteinen resepti tai analyysi, sen poltto ja versio niistä raaka-aineista, joita omalla alueella myydään.",
+    "aboutHeading": "Tietoja lasitteesta {name}",
+    "nativeName": "Alkuperäinen nimi",
+    "origin": "Missä",
+    "period": "Milloin",
+    "firing": "Poltto",
+    "cone": "keila {cone}",
+    "historyOnly": "Vain historiaa: tämä lasite tehtiin lyijyllä. Sen analyysi näytetään historiana, ei sekoitettavana reseptinä. Alla oleva versio on eri lasite, ilman lyijyä.",
+    "recipeHeading": "Perinteinen resepti",
+    "material": "Raaka-aine",
+    "amount": "Määrä",
+    "unityHeading": "Segerin kaava",
+    "analysisHeading": "Historiallinen analyysi",
+    "oxide": "Oksidi",
+    "percent": "Paino-%",
+    "useHeading": "Kokeile",
+    "open": "Avaa tämä resepti",
+    "openLeadFree": "Avaa lyijytön versio",
+    "leadFreeTitle": "{name}-tyylinen, lyijytön",
+    "allLink": "Kaikki kuuluisat lasitteet",
+    "safetyHeading": "Turvallisuus",
+    "safeMixing": "Turvallinen sekoittaminen ja ilmanvaihto",
+    "firingGuide": "Polttaminen yksinkertaisessa keramiikkauunissa",
+    "makingGuide": "Lasitteen valmistaminen",
+    "sourcesHeading": "Lähteet",
+    "link": "Avaa",
+    "opened": "luettu {date}"
+  },
+  "local": {
+    "heading": "Omista paikallisista raaka-aineista",
+    "leadFreeHeading": "Lyijytön versio",
+    "intro": "Perinteisen reseptin Segerin kaava tehtynä niistä vakioraaka-aineista, joita ostopaikassa myydään. Valitse ostopaikka nähdäksesi sen.",
+    "region": "Raaka-aineiden ostopaikka",
+    "proposal": "Ehdotuksen omat raaka-aineet",
+    "pick": "Valitse…",
+    "untested": "Laskettu, ei vielä koepoltettu.",
+    "testFirst": "Polta koepaloja ennen kuin käytät sitä yhteenkään esineeseen, ja testaa ruoan kanssa kosketuksiin tuleva pinta metallien liukenemisen varalta.",
+    "untestedNote": "Laskettu, ei vielä koepoltettu: polta koepaloja ennen käyttöä.",
+    "close": "Se pääsee lähelle tavoitekaavaa.",
+    "fair": "Se pääsee melko lähelle tavoitekaavaa.",
+    "poor": "Näillä raaka-aineilla ei päästä lähelle tavoitekaavaa.",
+    "none": "Siellä myytävillä raaka-aineilla sitä ei voi tehdä.",
+    "choose": "Valitse raaka-aineiden ostopaikka nähdäksesi sen tehtynä siellä myytävistä raaka-aineista."
+  },
+  "atmospheres": {
+    "oxidation": "hapettava poltto",
+    "reduction": "pelkistävä poltto",
+    "neutral": "neutraali",
+    "wood": "puupoltto",
+    "salt": "suolapoltto",
+    "soda": "soodapoltto"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Parti minn din il-paġna għadha mhix tradotta, għalhekk tidher bl-Ingliż.",
+  "index": {
+    "crumb": "Glejżijiet famużi",
+    "title": "Glejżijiet famużi",
+    "lead": "Glejżijiet magħrufa madwar id-dinja, kull wieħed mill-materjali lokali tradizzjonali tiegħu, bil-formula ta’ Seger tiegħu u verżjoni bil-materjali li jinbiegħu fejn tinsab int.",
+    "listHeading": "Il-glejżijiet",
+    "more": "Ġejjin aktar glejżijiet: kull wieħed jiżdied meta r-riċetta u l-materjali tiegħu jkunu bbażati fuq mill-inqas tliet sorsi li nqraw."
+  },
+  "glaze": {
+    "lead": "Glejż famuż ({native}): ir-riċetta tradizzjonali jew l-analiżi tiegħu, il-ħami tiegħu, u verżjoni bil-materjali li jinbiegħu fejn tinsab int.",
+    "aboutHeading": "Dwar il-glejż {name}",
+    "nativeName": "Isem oriġinali",
+    "origin": "Fejn",
+    "period": "Meta",
+    "firing": "Ħami",
+    "cone": "kon {cone}",
+    "historyOnly": "Storja biss: dan il-glejż kien isir biċ-ċomb. L-analiżi tiegħu tidher bħala storja, mhux bħala riċetta biex tħallat. Il-verżjoni hawn taħt hija glejż differenti, mingħajr ċomb.",
+    "recipeHeading": "Ir-riċetta tradizzjonali",
+    "material": "Materjal",
+    "amount": "Ammont",
+    "unityHeading": "Formula ta’ Seger",
+    "analysisHeading": "Analiżi storika",
+    "oxide": "Ossidu",
+    "percent": "% skont il-piż",
+    "useHeading": "Ipprovah",
+    "open": "Iftaħ din ir-riċetta",
+    "openLeadFree": "Iftaħ il-verżjoni mingħajr ċomb",
+    "leadFreeTitle": "Fl-istil {name}, mingħajr ċomb",
+    "allLink": "Il-glejżijiet famużi kollha",
+    "safetyHeading": "Sigurtà",
+    "safeMixing": "Taħlit sikur u ventilazzjoni",
+    "firingGuide": "Il-ħami f’forn sempliċi",
+    "makingGuide": "Kif tagħmel glejż",
+    "sourcesHeading": "Sorsi",
+    "link": "Iftaħ",
+    "opened": "moqri: {date}"
+  },
+  "local": {
+    "heading": "Bil-materjali lokali tiegħek",
+    "leadFreeHeading": "Verżjoni mingħajr ċomb",
+    "intro": "Il-formula ta’ Seger tar-riċetta tradizzjonali, magħmula mill-materjali standard li jinbiegħu fejn tixtri. Agħżel fejn tixtri biex tarah.",
+    "region": "Fejn tixtri l-materjali",
+    "proposal": "Il-materjali tal-proposta stess",
+    "pick": "Agħżel…",
+    "untested": "Ikkalkulat, għadu ma ġiex ittestjat fil-forn.",
+    "testFirst": "Aħmi madum tal-prova qabel ma tużah fuq kwalunkwe oġġett, u ttestja wiċċ għall-ikel għar-rilaxx tal-metalli.",
+    "untestedNote": "Ikkalkulat, għadu ma ġiex ittestjat fil-forn: aħmi madum tal-prova qabel ma tużah.",
+    "close": "Joqrob ħafna lejn il-formula mmirata.",
+    "fair": "Joqrob pjuttost lejn il-formula mmirata.",
+    "poor": "Dawn il-materjali ma jistgħux joqorbu lejn il-formula mmirata.",
+    "none": "Il-materjali li jinbiegħu hemm ma jistgħux jagħmluh.",
+    "choose": "Agħżel fejn tixtri l-materjali biex tarah magħmul minn dawk li jinbiegħu hemm."
+  },
+  "atmospheres": {
+    "oxidation": "ossidazzjoni",
+    "reduction": "riduzzjoni",
+    "neutral": "newtrali",
+    "wood": "ħami bl-injam",
+    "salt": "ħami bil-melħ",
+    "soda": "ħami bis-soda"
+  }
+}

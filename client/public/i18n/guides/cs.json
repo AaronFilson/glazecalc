@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Učte se s bezplatným kurzem glazur Johna Britta",
       "text": "Jeho bezplatný videokurz na YouTube, lekci po lekci, s našimi návody ke čtení a cvičeními v Glazecalc. V angličtině."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Výuka výpočtu glazur",
+      "text": "6 lekcí pro třídu nebo studijní skupinu, od trojúhelníkových zkušebních řad po Segerův vzorec počítaný oběma směry, s pracovními listy k vytištění."
     }
   },
   "more": "Další návody",
@@ -255,6 +259,8 @@
       "crazed": "s trhlinkováním"
     },
     "keyBright": "Tečkovaná čára: kde byly Stullovy glazury nejlesklejší.",
-    "keyCrazed": "Šrafování: kde trhlinkovaly."
+    "keyCrazed": "Šrafování: kde trhlinkovaly.",
+    "note": "Vodítko, ne předpověď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaloval přibližně na žároměrku 11 s pevně danými tavivy 0,3 K₂O a 0,7 CaO; jiná taviva a jiné výpaly oblasti posouvají a glazura, která je matná jen proto, že je nedopálená, se v diagramu může přesto ukázat jako lesklá. Oblasti jsou zakreslené tak, jak je kreslí Glazy.",
+    "inGuide": "Oxid křemičitý (SiO₂) na vodorovné ose, přibližně od 1 do 7, a oxid hlinitý (Al₂O₃) na svislé ose, od 0 do 1, obojí ze Segerova vzorce. Zleva se vějířovitě rozbíhají klíny: vlevo nahoře nedotavená oblast, pak matná a pak polomatná. Nestínovaná část napravo od nich je lesklá a tečkovaná čára v ní ukazuje, kde byly Stullovy glazury nejlesklejší. Nedopálená oblast je vpravo dole, s malým množstvím oxidu hlinitého a velkým množstvím oxidu křemičitého. Šrafování v dolní části diagramu a na jeho levé straně ukazuje, kde jeho zkoušky trhlinkovaly."
   }
 }

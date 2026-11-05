@@ -59,31 +59,31 @@ Il-**kuluranti** huma l-ossidi tal-metalli u l-pigmenti{{en: stains}} li jagħtu
 
 Il-periklu ewlieni taċ-ċomb huwa differenti: mhux mgħarfa waħda, iżda ammonti żgħar ta’ trab li jinbelgħu matul ġimgħat jew xhur, mingħajr ebda sinjal ta’ twissija (ara t-taqsima dwar iċ-ċomb u t-tfal, aktar ’l isfel).
 
-## Storing materials at home {#storing-materials lang=en}
+## Il-ħżin tal-materjali d-dar {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+L-ebda korp uffiċjali ma jistabbilixxi regoli għall-ħżin tal-materjali tal-glejż{{en: glaze}} id-dar, iżda l-paġni tas-saħħa u s-sigurtà jaqblu: żomm ix-xogħol fi spazju għalih, ’il bogħod mit-tfal. Id-dipartiment tas-saħħa ta’ Pennsylvania, meta jikteb dwar passatempi li jużaw iċ-ċomb, jgħid: “Uża spazju tax-xogħol apposta jew garaxx għall-passatemp tiegħek u żomm it-tfal ’il bogħod minn din iż-żona.”
 
-### A storage checklist
+### Lista ta’ kontroll għall-ħżin
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Dawn huma regoli ġenerali għall-prevenzjoni tal-avvelenament applikati għall-glejż. L-ebda standard taċ-ċeramika ma jistabbilixxihom, iżda nissuġġerixxu lkoll:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Żomm il-materjali nexfin imsakkra: kabinett, jew kamra, garaxx jew kamra tal-għodda li tissakkar. Xkaffa għolja tgħin, iżda t-tfal jitilgħu. Jekk tista’ ssakkar biss ftit affarijiet għall-ewwel, ibda bil-materjali solubbli u bil-kuluranti{{en: colorants}}.
+- Żomm il-materjali fil-boroż jew fil-kontenituri oriġinali tagħhom. Jekk tgħaddi wieħed f’kontenitur ieħor, agħmillu tikketta bl-isem eżatt kif miktub fuq il-borża.
+- Qatt tuża kontenituri tal-ikel jew tax-xorb (kontenituri tal-jogurt, vażetti, fliexken) għall-materjali tal-glejż, lanqas b’tikketta. Tifel jaf x’ikun hemm f’kontenitur tal-jogurt.
+- Żomm l-għodda tal-istudjo (mgħaref, kuċċarini, frosti, għarabel, miżien) fl-istudjo. Qatt tuża għodda tal-kċina għall-glejż, jew għodda tal-glejż għall-ikel.
+- Żomm il-glejżijiet imxarrbin f’bramel b’tikketta u bl-għotjien fuqhom.
+- Żomm l-iskeda ta’ data ta’ sigurtà ta’ kull materjal miegħu, fuq il-karta jew fuq il-mobile tiegħek.
+- Iżżomm xejn mill-istudjo fil-kċina: l-ebda borża, barmil, għodda jew maduma tal-prova.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Għax-xiri u l-ħżin tal-materjali f’aktar dettall, ara l-gwida [Kif tagħmel glejż](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### L-iskart tal-glejż u l-ilma tat-tlaħliħ
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Qatt tferra’ glejż, jew ilma li laħlaħt fih għodda tal-glejż, fis-sink jew fil-ġnien. Il-UK Crafts Council jissuġġerixxi barmil separat tal-ilma biex taħsel fih idejk, il-pinzelli, l-għarabel u l-għodda. Ħallih jinżel il-qiegħ matul il-lejl, ferra’ l-ilma ċar, imbagħad nixxef il-glejż li niżel il-qiegħ u poġġih fl-iskart (imur fil-landfill), qatt fid-drenaġġ.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Nissuġġerixxu għatu fuq dak il-barmil: it-tajn fih l-istess metalli tal-glejż, u l-annimali domestiċi jixorbu ilma wieqaf. Ir-regoli dwar ir-rimi jvarjaw minn post għal ieħor, għalhekk iċċekkja l-iskeda ta’ data ta’ sigurtà ta’ kull prodott, u staqsi lill-kunsill lokali jew lill-kumpanija tal-ilma jekk m’intix ċert.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Xi studjos jaħmu t-tajn niexef qabel ma jarmuh. Ipoġġuh fi skutella żejda li se tintuża għal kollox: wara l-ħamja l-iskutella ma tistax terġa’ tintuża. Imla l-iskutella kwart biss, għax it-tajn jagħmel ir-ragħwa u l-bżieżaq meta jdub, u għattiha bi platt. Poġġiha fuq xkaffa miksija jew fuq ċangun żejjed, f’każ li tfur. Il-ħamja tbiddel it-tajn fi ħġieġ, li jżomm il-metalli ħafna aktar sod mit-trab sfuż, għalhekk huwa aktar sikur fil-landfill. Immaniġġja t-tajn niexef bħalma timmaniġġja l-glejż niexef, b’respiratur u mingħajr ma tagħmel trab.
 
 ## Żomm it-trab fl-istudjo {#keeping-dust-in-the-studio}
 

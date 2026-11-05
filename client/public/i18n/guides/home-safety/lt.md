@@ -59,31 +59,31 @@ Label: Tirpios žaliavos
 
 Pagrindinis švino pavojus kitoks: ne vienas šaukštas, o nedideli dulkių kiekiai, prarijami savaites ar mėnesius, be jokių įspėjamųjų ženklų (žr. skyrių „Švinas ir vaikai“ toliau).
 
-## Storing materials at home {#storing-materials lang=en}
+## Žaliavų laikymas namuose {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Jokia oficiali institucija nenustato taisyklių, kaip namuose laikyti glazūrų žaliavas, tačiau sveikatos ir saugos puslapiai sutaria: darbui skirkite atskirą vietą, toliau nuo vaikų. Pensilvanijos sveikatos departamentas, rašydamas apie pomėgius, kuriuose naudojamas švinas, pataria: „Savo pomėgiui naudokite tam skirtą darbo vietą ar garažą ir neleiskite vaikų į šią vietą.“
 
-### A storage checklist
+### Laikymo kontrolinis sąrašas
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Tai bendrosios apsinuodijimų prevencijos taisyklės, pritaikytos glazūroms. Jų nenustato joks keramikos standartas, bet siūlome laikytis visų:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Sausas žaliavas laikykite užrakintas: spintelėje arba rakinamame kambaryje, garaže ar pašiūrėje. Aukšta lentyna padeda, bet vaikai laipioja. Jei iš pradžių galite užrakinti tik kelis dalykus, pradėkite nuo tirpių žaliavų ir dažiklių.
+- Žaliavas laikykite originaliuose maišuose ar induose. Jei kurią nors perkeliate į kitą talpą, paženklinkite ją pavadinimu, tiksliai tokiu, koks parašytas ant maišo.
+- Niekada nenaudokite maisto ar gėrimų talpų (jogurto indelių, stiklainių, butelių) glazūrų žaliavoms, net paženklintų. Vaikas žino, kas būna jogurto indelyje.
+- Dirbtuvės įrankius (semtuvėlius, šaukštus, plaktuvus, sietus, svarstykles) laikykite dirbtuvėje. Niekada nenaudokite virtuvės įrankių glazūrai ar glazūros įrankių maistui.
+- Šlapias glazūras laikykite paženklintuose kibiruose su uždėtais dangčiais.
+- Kiekvienos žaliavos saugos duomenų lapą (angl. SDS) laikykite kartu su ja, popieriuje arba telefone.
+- Virtuvėje nelaikykite nieko iš dirbtuvės: jokių maišų, kibirų, įrankių ar bandinių.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Išsamiau apie žaliavų pirkimą ir laikymą skaitykite vadove [Kaip pasigaminti glazūrą](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Glazūros atliekos ir skalavimo vanduo
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Niekada nepilkite glazūros ar vandens, kuriame skalavote glazūros įrankius, į kriauklę ar ant sodo žemės. Jungtinės Karalystės Crafts Council siūlo atskirą vandens kibirą rankoms, teptukams, sietams ir įrankiams plauti. Palikite jį nusistovėti per naktį, nupilkite skaidrų vandenį, tada nusėdusią glazūrą išdžiovinkite ir išmeskite su buitinėmis atliekomis (jos keliauja į sąvartyną), niekada nepilkite į kanalizaciją.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Siūlome tą kibirą laikyti uždengtą: nuosėdose yra tie patys metalai kaip ir glazūroje, o gyvūnai geria stovintį vandenį. Atliekų šalinimo taisyklės skiriasi priklausomai nuo vietos, todėl patikrinkite kiekvieno produkto saugos duomenų lapą, o jei abejojate, pasiteiraukite savivaldybėje ar vandens tiekimo įmonėje.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Kai kurios dirbtuvės išdžiovintas nuosėdas prieš išmesdamos išdegia. Jos dedamos į atliekamą dubenį, kurį bus galima paaukoti: po degimo dubens nebebus galima naudoti. Dubenį pripildykite tik iki ketvirčio, nes nuosėdos lydydamosi puta ir burbuliuoja, ir uždenkite jį lėkšte. Pastatykite jį ant apsauga padengtos krosnies plokštės ar atliekamos plokštelės, jei kartais išbėgtų. Degimas nuosėdas paverčia stiklu, kuris metalus sulaiko daug tvirčiau nei birūs milteliai, todėl sąvartyne jis saugesnis. Su sausomis nuosėdomis elkitės kaip su sausa glazūra: dėvėkite respiratorių ir nekelkite dulkių.
 
 ## Dulkių sulaikymas dirbtuvėje {#keeping-dust-in-the-studio}
 

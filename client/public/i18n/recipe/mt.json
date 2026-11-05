@@ -723,7 +723,8 @@
     "keyPoint": "Tikka: dan il-glejż.",
     "keyBright": "Linja bit-tikek: fejn il-glejżijiet ta’ Stull kienu l-aktar jleqqu.",
     "keyLimits": "Linji maqtugħin u dellijiet: il-firxiet tas-silika u tal-alumina tas-sett {name}.",
-    "keyCrazed": "Linji dojoq: fejn għamlu x-xegħir."
+    "keyCrazed": "Linji dojoq: fejn għamlu x-xegħir.",
+    "note": "Gwida, mhux tbassir. R. T. Stull (Transactions of the American Ceramic Society, 1912) ħema madwar il-kon 11 bil-flussi fissi f’0.3 K₂O u 0.7 CaO; flussi u ħamjiet oħra jċaqalqu r-reġjuni, u glejż li huwa matt biss għax ma nħemiex biżżejjed xorta jista’ jidher fir-reġjun ileqq. Ir-reġjuni huma kif jiġbidhom Glazy."
   },
   "slurry": {
     "heading": "Gravità speċifika u ilma",
@@ -751,6 +752,17 @@
       "pint": "Il-piż tal-pinta li trid, oz"
     },
     "drySg": "Gravità speċifika tal-materjali niexfin",
+    "drySgEmpty": "Għandhom bżonnha biss il-piżijiet niexfin; l-ilma li żżid le. Iktibha jekk tafha.",
+    "drySgNeeded": "Ikteb il-gravità speċifika tal-materjali niexfin biex tara l-glejż niexef fil-barmil u l-ilma għal taħlita ġdida.",
+    "estimate": {
+      "mineral": "Stima, {sg}, minn dak li minnu huwa magħmul kull materjal: id-densità mkejla tal-mineral tiegħu. Ibdilha jekk taf aħjar.",
+      "kind": "Stima, {sg}: il-feldspars u t-tafal jiżnu madwar 2.6. Ibdilha jekk taf aħjar.",
+      "glass": "Stima, {sg}, maħduma mill-ossidi tal-fritti (huma ħġieġ). Ibdilha jekk taf aħjar.",
+      "mixed": "Stima, {sg}, minn kull materjal: id-densità mkejla tal-mineral tiegħu, madwar 2.6 għall-feldspars u t-tafal, u l-fritti maħduma mill-ossidi tagħhom. Ibdilha jekk taf aħjar.",
+      "leftOut": "Imħallija barra, għax il-gravità speċifika tagħhom mhix magħrufa: {names}.",
+      "none": "L-ebda stima għal din ir-riċetta: il-gravità speċifika ta’ dawn mhix magħrufa: {names}. Iktibha jekk tafha.",
+      "was": "Qed tintuża ċ-ċifra tiegħek. L-istima kienet {sg}; battal il-qasam biex terġa’ lura għaliha."
+    },
     "batch": "Glejż niexef għal taħlita ġdida, {unit}",
     "contents": "B’gravità speċifika {sg}, il-barmil fih {glaze} ta’ glejż niexef u {water} ta’ ilma.",
     "add": "Biex tilħaq gravità speċifika {target}, żid {water} ta’ ilma. Jispiċċa madwar {volume}.",
@@ -758,6 +770,7 @@
     "already": "Diġà fil-gravità speċifika {target}.",
     "mix": "Ħallat {glaze} ta’ glejż niexef ma’ {water} ta’ ilma għal madwar {volume} b’gravità speċifika {target}.",
     "badSg": "Gravità speċifika trid tkun iktar minn 1 (dik tal-ilma) u inqas minn {dry} tal-materjali niexfin.",
+    "badSgWater": "Gravità speċifika trid tkun iktar minn 1 (dik tal-ilma).",
     "badDry": "Il-gravità speċifika tal-materjali niexfin trid tkun iktar minn 1.",
     "note": "L-ilma huwa skont il-piż: litru jiżen kilogramma, gallun tal-Istati Uniti madwar 8.3 lb. L-aritmetika tieħu l-volumi jiżdiedu, li huwa qrib, mhux eżatt: żid l-ilma ftit ftit, ħawwad, u kejjel mill-ġdid. Żewġ glejżijiet bl-istess gravità speċifika xorta jistgħu jiċċaqalqu b’mod differenti.",
     "saveTarget": "Issejvja l-gravità speċifika {sg} bħala l-mira ta’ din ir-riċetta",

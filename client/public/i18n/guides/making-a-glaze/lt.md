@@ -119,183 +119,183 @@ Patarimai, kokių tikslių svarstyklių reikia, skiriasi. Derekas Au nustatė, k
 
 Derekas Au sveria į vieną dubenį atskiromis krūvelėmis, kad suklydus žaliavą būtų galima išsemti atgal. Jei sveriate į vieną kibirą nenunulindami svarstyklių tarp žaliavų, programos Glazecalc suma iki šiol parodo, kiek svarstyklės turėtų rodyti po kiekvienos.
 
-## Mixing and sieving {#mixing lang=en}
+## Maišymas ir sijojimas {#mixing}
 
-### How much water
+### Kiek vandens
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Šaltiniai nesutaria. Derekas Au pradeda tirštai, nuo 50 mL vandens 100 g miltelių, ir vėliau prideda daugiau. Potterycrafts vienai miltelių glazūrai nurodo 65 mL 100 g. UT Austin naudoja vienodas vandens ir miltelių mases, o kai Digitalfire į 20 kg vandens suberė 20 kg miltelių, išmatavo santykinį tankį{{en: specific gravity}} 1,46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Vandens pridėti greita, o pašalinti lėta, todėl pradėkite nuo mažai. Mūsų įvertis: pradėkite nuo **maždaug 70–80 mL 100 g** (700–800 mL kilogramui, arba apie 11–12 US fl oz svarui). Tokio tirštumo glazūrą išmirkykite, išmaišykite ir persijokite, tada po truputį pilkite vandens, kol santykinis tankis bus tinkamas. 1 mL vandens sveria 1 g, todėl jį galima pasverti. Jei įpylėte per daug, leiskite glazūrai nusistovėti, tada nuo viršaus nusiurbkite kempine ar nupilkite skaidrų vandenį.
 
-### Tools and water
+### Įrankiai ir vanduo
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Maišytuvas su propeleriu.** Digitalfire gerą maišytuvą vadina „būtinu“. Kibire darbą atlieka laidinis gręžtuvas su maišymo antgaliu. UT Austin jį suka ne mažiau kaip 4–5 minutes po to, kai glazūra atrodo išmaišyta, ir laiko mentę atokiau nuo kibiro sienelių, nes ji gali nugramdyti plastiko.
+- **Trintuvas.** Jis „puikiai tinka mažiems užmaišams“ (Digitalfire). Laikykite jį tik glazūrai: jis niekada neturi grįžti į virtuvę.
+- **Plaktuvas arba lazdelė.** Zakino pasirinkimas, kai maišytuvo nėra.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Vanduo taip pat skiriasi, ir Digitalfire pažymi, kad jis keičia suspensijos{{en: slurry}} elgseną. Derekas Au naudoja atvirkštinės osmozės vandenį, nes jo vandentiekio vanduo kietas. Kad ir kokį naudotumėte, užsirašykite.
 
-### Step by step
+### Žingsnis po žingsnio
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Užsidėkite respiratorių, o jei rankos bus glazūroje, ir gumines pirštines. Zakinas kaukę dėvi nuo svėrimo pradžios, kol glazūra tampa šlapia.
+2. Į kibirą įpilkite maždaug 70–80 mL vandens 100 g miltelių.
+3. Pasvertus miltelius berkite atsargiai, iš nedidelio aukščio. UT Austin miltelius beria į šiltą vandenį; Zakinas ir Au pila vandenį ant miltelių. Siūlome berti miltelius į vandenį, nes taip kyla mažiau dulkių, išskyrus receptą, kuriame daug bentonito: jo sausus miltelius pirmiausia sumaišykite tarpusavyje.
+4. **Išmirkykite**{{en: slake}}: palikite miltelius mirkti nemaišydami. Digitalfire laukia apie 20 minučių. Milteliams su klijais ar rišikliu reikia pastovėti per naktį.
+5. Maišykite, kol neliks sausų vietų ar gumulų.
+6. Persijokite du kartus (žr. toliau).
+7. Uždenkite ir palikite pastovėti per naktį, tada vėl išmaišykite ir patikrinkite, ar dugne nėra kieto sluoksnio.
+8. Išmatuokite santykinį tankį ir po truputį pilkite vandens, kol pasieksite tikslinę vertę. Norėdami sužinoti savo glazūros sausųjų miltelių santykinį tankį, pasverkite ir paruoštą suspensiją (žr. toliau).
+9. Paženklinkite kibirą ir užsirašykite, ką darėte.
+10. Valykite drėgnai: išplaukite grindis ir nušluostykite visus paviršius, taip pat ir žaliavų talpų išorę.
 
-### Sieving
+### Sijojimas
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Sietas**{{en: sieve}} – tai rėmelyje įtvirtintas tinklelis. Teptuku stumiant glazūrą per jį, suardomi po maišymo likę gumulai ir sulaikomos dalelės, kurios išdegus virstų taškeliais. Kuo didesnis **mesh** numeris, tuo smulkesnis tinklelis: 80 mesh akutės yra apie 0,18 mm, o 100 mesh – apie 0,15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Šaltiniai rekomenduoja skirtingus sietus. Zakinas sijoja du kartus per 50 arba 80 mesh. Derekas Au daugumai glazūrų naudoja 120 mesh, ypač toms, kuriose yra kobalto ar geležies: po trijų perėjimų per 80 mesh viename seladone vis dar liko geležies taškelių, o vienas perėjimas per 120 mesh tai išsprendė. 60–80 mesh jis palieka pelenų glazūroms ir kitoms su stambiomis žaliavomis. Jungtinės Karalystės Potterycrafts siūlo 60–80 mesh. Saugus numatytasis pasirinkimas:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Kokį sietą naudoti
+Label: Sieto mesh
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glazūra                                            | Sietas                         |
+| -------------------------------------------------- | ------------------------------ |
+| Dauguma glazūrų                                    | Du perėjimai per 80 mesh       |
+| Glazūros su dažikliais, pavyzdžiui, kobaltu ar geležimi | 100–120 mesh              |
+| Pelenų glazūros ir kitos su stambiomis žaliavomis  | 60–80 mesh                     |
 
-## Specific gravity {#specific-gravity lang=en}
+## Santykinis tankis {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Santykinis tankis**{{en: specific gravity}} (angl. SG) parodo, kiek miltelių yra jūsų suspensijoje{{en: slurry}}. Tai tam tikro tūrio glazūros masė, padalyta iš tokio pat tūrio vandens masės. Vandens rodmuo 1,00, o glazūra, kurios rodmuo {{SG 1.45}}, sveria 145 g 100 mL. Maišydami iki išmatuoto santykinio tankio, kiekvieną kartą gaunate tą patį tirštumą ir tą patį sluoksnį. Jis neturi vienetų, todėl yra toks pat ir gramais, ir uncijomis.
 
-### Measure it by weighing 100 mL
+### Matavimas sveriant 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Išmaišykite glazūrą, kad niekas nebūtų nusėdę.
+2. Ant svarstyklių padėkite 100 mL **matavimo cilindrą** (aukštą, padalomis pažymėtą matavimo vamzdelį) arba 100 mL švirkštą ir nunulinkite svarstykles.
+3. Pripildykite jį glazūros lygiai iki 100 mL, žymą skaitydami akių lygyje.
+4. Pasverkite ir gramus padalykite iš 100: 145 g yra santykinis tankis 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire dar pažymi puodelį ties 500 g vandens lygiu, pripildo jį glazūros iki žymos ir masę padalija iš 500; didesnis, pilnesnis matas yra tikslesnis. **Areometras**{{en: hydrometer}} – plūdė, kurios rodmuo skaitomas pagal tai, kiek ji panyra į glazūrą, – yra greitas, bet gali klaidingai rodyti tirštose ar sutirštėjusiose glazūrose. Jungtinės Karalystės areometrai, pavyzdžiui, Potclays, rodo Baumé laipsnius (°Bé). Mūsų skaičiavimu, santykinis tankis = 145 ÷ (145 − °Bé), taigi 46 °Bé yra apie 1,46. Senesnėse Jungtinės Karalystės knygose nurodoma **pintos masė**{{en: pint weight}} – glazūros uncijos imperinėje pintoje: padalykite ją iš 20, taigi 29 oz yra apie santykinį tankį 1,45 (taip pat mūsų skaičiavimas).
 
-### What to aim for
+### Kokio siekti
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Šaltiniai nesutaria, labiausiai dėl tepimo teptuku ir purškimo, kur Jungtinės Karalystės tiekėjas Potclays nurodo gerokai didesnius skaičius (savo skaičius jis pateikia „tik orientacijai“). Kiekvieną skaičių laikykite pradžia. Pagrindinis Digitalfire patarimas – rasti kiekvienai glazūrai tinkantį santykinį tankį ir sutirštėjimą, tada juos kartoti ir užsirašyti.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Tikslinės santykinio tankio vertės, kur šaltiniai nesutaria
+Label: Tikslinės santykinio tankio vertės
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Naudojimas      | Digitalfire ir Glazy                                                                                                                         | Potclays (JK)                                | Saugi pradžia                                                   |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------- |
+| Merkimas        | {{SG 1.40}} (5 sekundžių merkimui) iki {{SG 1.50}} (1 sekundės merkimui); namie maišytos sutirštėjusios glazūros geriausios esant {{SG 1.43–1.45}} | Skaidri: {{SG 1.46–1.48}}; spalvota: {{SG 1.61}} | {{SG 1.45}}; jei laša, praskieskite iki {{SG 1.43}} ir sutirštinkite |
+| Tepimas teptuku | {{SG 1.25}} (skysta skaidri) iki {{SG 1.55}} (tamsios detalės)                                                                               | {{SG 1.71–1.81}}                             | Laikykitės produkto nurodymų; naudokite glazūros klijus CMC arba priemonę glazūravimui teptuku |
+| Purškimas       | Skaičiaus nėra; Hopperis, rašantis Ceramic Arts Network, sako – gerokai skystesnė, su deflokuliantu (priedu, kuris suspensiją praskystina)  | {{SG 1.71}}                                  | Patikimo skaičiaus nėra; purkškite tik purškimo kameroje        |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Norėdama merkimo glazūrą patikrinti akimi, AMACO merkia 5 sekundes ir tikisi maždaug JAV dešimties centų monetos storio sluoksnio. Digitalfire tikrindama išdegia 5 sekundes merktus bandinius.
 
-### Water for a target SG: our estimate
+### Vanduo tikslinei vertei: mūsų įvertis
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Žemiau pateikta lentelė – mūsų pačių skaičiavimas, ne šaltinio. Joje daroma prielaida, kad miltelių dalelių tankis yra 2,6 g/cm³, o tai prielaida, ne matavimas. Molis, tirpios žaliavos ir sutirštėjimas keičia tikrą glazūrą, todėl naudokite ją pradžiai, o paskui matuokite. Patikrinimui: vienodoms miltelių ir vandens masėms ji numato {{SG 1.44}}, artimą Digitalfire išmatuotai {{SG 1.46}} vertei. Ji taip pat rodo, kad pradėjus nuo 70–80 mL 100 g, rodmuo bus didesnis nei {{SG 1.50}} – tirščiau, nei reikia.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Vanduo tikslinei santykinio tankio vertei (mūsų įvertis)
+Label: Vanduo tikslinei santykinio tankio vertei
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Tikslas     | 100 g miltelių |      Kilogramui |              Svarui |
+| ----------- | -------------: | --------------: | ------------------: |
+| {{SG 1.40}} |   apie 115 mL  |   apie 1150 mL  | apie 18 US fl oz    |
+| {{SG 1.45}} |    apie 98 mL  |    apie 980 mL  | apie 15 US fl oz    |
+| {{SG 1.50}} |    apie 85 mL  |    apie 850 mL  | apie 13 US fl oz    |
+| {{SG 1.60}} |    apie 64 mL  |    apie 640 mL  | apie 10 US fl oz    |
 
-### Find your own glaze's dry SG while you mix
+### Savo glazūros sausųjų miltelių santykinis tankis maišant
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+Aukščiau naudotas 2,6 yra spėjimas. Jūsų glazūros skaičių – jos sausųjų miltelių tankį – galima apskaičiuoti iš trijų skaičių, kuriuos galite gauti maišydami. Žinodami jį, vėliau pagal santykinį tankį galėsite apskaičiuoti, kiek miltelių yra bet kuriame tos glazūros kibire ir kiek vandens reikia kitam užmaišui. Mūsų skaičiavimas, ne šaltinio:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Užsirašykite sausų miltelių masę užmaiše: recepto sumą.
+2. Prieš pradėdami pasverkite tuščią kibirą arba užrašykite ant jo jo masę.
+3. Išmaišykite, persijokite ir, kaip įprasta, pasiekite reikiamą santykinį tankį. Viską prastumkite per sietą ir nuplaukite į kibirą, kad neliktų miltelių.
+4. Pasverkite pilną kibirą ir atimkite kibiro masę. Tai suspensijos masė.
+5. Išmatuokite santykinį tankį.
 
-Then:
+Tada:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Vanduo** = suspensijos masė − miltelių masė.
+- **Suspensijos tūris** mL = suspensijos masė gramais ÷ santykinis tankis.
+- **Miltelių tūris** = suspensijos tūris − vanduo (1 g vandens yra 1 mL).
+- **Sausųjų miltelių santykinis tankis** = miltelių masė ÷ miltelių tūris.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Pavyzdžiui: iš 1000 g miltelių gaunama 1980 g suspensijos, kurios rodmuo {{SG 1.45}}. Vandens yra 980 g, suspensijos tūris 1980 ÷ 1,45 = apie 1366 mL, milteliai užima 1366 − 980 = 386 mL, o sausųjų miltelių santykinis tankis yra 1000 ÷ 386 = apie 2,59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Pabaigoje sverkite visą suspensiją, o ne vandenį pildami, kad išgaravęs ar ištaškytas vanduo nebūtų įskaičiuotas. Mažos klaidos čia didėja: 0,01 netikslus santykinio tankio rodmuo atsakymą pakeičia maždaug 2–4 %, skystesnei glazūrai – daugiau. Naudokite 1 kg ar didesnį užmaišą, tikslias svarstykles ir aukščiau aprašytą 500 g puodelio metodą santykiniam tankiui. Dauguma įprastų žaliavų yra maždaug tarp 2,5 ir 2,9, todėl gerokai už šių ribų esantis skaičius glazūroje, kurioje nėra daug cirkonio silikato ar švino, greičiausiai reiškia matavimo klaidą. Užrašykite skaičių ant recepto.
 
-### Epsom salts, CMC gum and bentonite
+### Epsom druska, glazūros klijai CMC ir bentonitas
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Epsom druska**{{en: Epsom salts}} (magnio sulfatas) padaro glazūrą šiek tiek sutirštėjančią, kai ji stovi ramiai, ir vėl tekančią, kai ją pamaišote. Tai vadinama **flokuliavimu**{{en: flocculating}}, o taip besielgianti glazūra yra **tiksotropinė**{{en: thixotropic}}: ji užsineša tolygiau, mažiau laša ir mažiau nusėda. Digitalfire siūlo pradėti nuo maždaug 2 g galonui, kai santykinis tankis jau tinkamas (apytiksliai 0,5 g litrui, mūsų perskaičiavimas), ir kiekvieną kartą maišant kiekį derinti, nes joks receptas neturėtų nustatyti dozės. Siūlome ją pirmiausia ištirpinti nedideliame kiekyje karšto vandens. Viename Digitalfire pavyzdyje glazūra, kurios rodmuo {{SG 1.45}}, laša, todėl vandeniu ji buvo praskiesta iki {{SG 1.43}}, o Epsom druska vėl sutirštinta iki kreminės, ir ji užsinešė tolygiai. Apytikslis patikrinimas: pamaišykite, sustokite ir stebėkite. Sutirštėjusi glazūra dar juda apie 2 ar 3 sekundes, tada sustoja ir šiek tiek atšoka atgal.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Glazūros klijai CMC**{{en: CMC gum}} (karboksimetilceliuliozė) padaro suspensiją lipnesnę ir lėčiau džiūstančią, o sluoksnį – kietesnį ir geriau prilimpantį prie dirbinio. Jie svarbiausi glazūroms tepimui teptuku ir glazūroms, kuriose daug frito. Digitalfire pavyzdyje į 1000 g suspensijos įmaišoma 3,75 g, ir tai reikia daryti trintuvu. Glazūra su CMC nesutirštėja nuo Epsom druskos, o kadangi klijais minta mikrobai, ji kibire gali pakisti ir pradėti dvokti.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonitas**, labai smulkus molis, padeda kitoms dalelėms laikytis suspensijoje. Glazūros merkimui tam paprastai remiasi 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; Digitalfire teigia, kad glazūrai, kurioje daugiau nei 15 % molio, neturėtų prireikti daugiau nei 1 % bentonito nuo sausos glazūros masės.
 
-## Test tiles and line blends {#testing lang=en}
+## Bandiniai ir linijinės bandinių serijos {#testing}
 
-### Start small
+### Pradėkite nuo mažai
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derekas Au dirba trimis žingsniais: 50 ar 100 g bandymas, jei pavyksta – 1–2 kg bandomasis užmaišas, tada 5–10 kg dirbtuvės užmaišas. Mūsų įverčiu, 100 g bandymas, kurio rodmuo {{SG 1.45}}, duoda apie 135 mL (apie 4½ US fl oz) suspensijos – užtenka keliems mažiems bandiniams pamerkti siaurame puodelyje.
 
-### Test on your own clay
+### Bandykite ant savo molio
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Ant kito molio ar kitoje krosnyje glazūra gali atrodyti visai kitaip: Clay Art Center kiekvieną savo perdarytą glazūrą išbandė ant keturių molio masių, ties piroskopu 6 ir ties piroskopu 10. Potclays pradedančiųjų glazūrų bandymo vadovas siūlo:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6–10 **bandinių**{{en: test tiles}} (mažų gabalėlių glazūrai išbandyti) iš to molio, kurį iš tikrųjų naudosite, pažymint, ar jie biskvitiniai, ar visiškai išdžiūvę nedegti
+- vieną pakeitimą vienu metu
+- vieną ir du merkimus, kad pamatytumėte ploną ir storą glazūrą
+- visus bandinius tame pačiame krosnies pakrovime
+- prieš degimą ant kiekvieno bandinio padarytą žymą – antspaudu, išraižant ar poglazūriniu pieštuku. Išdegti bandiniai atrodo panašiai, o prieš degimą padaryta žyma išlieka po krosnies, todėl visada žinosite, kuris receptas ant kurio bandinio.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Siūlome stačius bandinius, nes plokščias bandinys paslepia, kiek glazūra nubėga, su reljefine juosta, rodančia, kaip glazūra keičiasi ant briaunų, ir neglazūruotu dugnu. Kiekvieną pastatykite ant mažos lėkštutės ar biskvito gabalėlio arba ant apsauga padengtos krosnies plokštės, kad surinktų lašus. Šalia bandinių pastatykite **kontrolinį piroskopą**{{en: witness cone}} – mažą keraminį kūgį, kuris linksta gavęs pakankamai šilumos, – kad parodytų, ką jie gavo; piroskopai paaiškinti vadove [Degimas paprastoje krosnyje](/guides/firing). Kiekvienam bandiniui suteikite trumpą kodą ir užrašykite jį prie recepto savo įrašuose. Willers, rašanti Ceramic Arts Network, naudoja skaičius ir raides, o pačią sistemą užrašo sąsiuvinio pradžioje.
 
-### Line blends
+### Linijinės bandinių serijos
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Linijinė bandinių serija**{{en: line blend}} – tai eilė bandymų, kurie tolygiais žingsniais pereina nuo vieno mišinio prie kito: nuo vienos glazūros prie kitos arba nuo bazinės glazūros prie tos pačios glazūros su daugiau dažiklio. Pavyzdžiui, Derekas Au geležies oksidą skaidrioje bazinėje glazūroje keičia 1 % žingsniais. Su Ianu Currie siejamas tūrinis metodas taupo laiką, nes sumaišote tik du galus:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Sumaišykite dvi galines glazūras, A ir B, vienodo dydžio užmaišais, ir abi persijokite.
+2. Į tą, kurios tūris mažesnis, pilkite vandens, kol abiejų šlapias tūris bus lygiai vienodas.
+3. Išmaišykite abi, tada švirkštu kiekvieną mišinį įtraukite į atskirą sunumeruotą puodelį.
+4. Išmaišykite kiekvieną puodelį ir pamerkite bandinį.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Mūsų išspręstame pavyzdyje A yra 100 g skaidrios bazinės glazūros, o B – ta pati su 4 g raudonojo geležies oksido (4 % priedas). Kiekviename B mililitre yra tiek pat bazinės glazūros, kiek A mililitre, ir dar jos geležis, todėl puodeliai pereina nuo be geležies iki 4 % 1 % žingsniais. Kiekvienas galas serijai atiduoda 100 mL, o tam, mūsų įverčiu, pakanka 100 g užmaišo.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Penkių žingsnių geležies linijinė bandinių serija, 40 mL puodeliui (mūsų išspręstas pavyzdys)
+Label: Linijinės bandinių serijos pavyzdys
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Puodelis | Skaidri bazinė glazūra (A) | Bazinė glazūra su 4 % geležies (B) | Geležies oksidas, % bazinės glazūros |
+| -------- | -------------------------: | ---------------------------------: | -----------------------------------: |
+| 1        |                      40 mL |                               0 mL |                                    0 |
+| 2        |                      30 mL |                              10 mL |                                    1 |
+| 3        |                      20 mL |                              20 mL |                                    2 |
+| 4        |                      10 mL |                              30 mL |                                    3 |
+| 5        |                       0 mL |                              40 mL |                                    4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Metodui reikia kruopštaus skaičiavimo, gerai išmaišytų vienodo santykinio tankio galų ir tikslių svarstyklių. Derekas Au taip pat maišo pagal masę, o ne pagal tūrį. **Trijų komponentų bandinių serija**{{en: triaxial blend}} daro tą patį su trimis galais, išdėstytais trikampiu.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Kai žingsnis atrodo perspektyvus, mygtukas **Įrašyti kaip kopiją** [recepto puslapyje](/recipe) įrašo jį kaip atskirą receptą, o originalą palieka tokį, koks buvo.
+
+## Įrašų vedimas {#records}
+
+Willers tikslą nusako taikliai: „pakankamai informacijos, kad galėtumėte pakartoti arba išvengti rezultatų, kuriuos atradote“. Užsirašykite, ką ketinate išbandyti, prieš pradėdami, o rezultatus – iškraudami krosnį. Potclays prideda užnešimo būdą, storį, molio masę ir visą degimą, įskaitant kreives, išlaikymus ir aušinimą. **Kreivė**{{en: ramp}} – tai kaitinimo ar aušinimo sparta, pavyzdžiui, {{60 °C; 108 °F}} per valandą, o **išlaikymas**{{en: hold}} laiko krosnį vienoje temperatūroje nustatytą laiką. Užsirašykite partijų numerius, naudotą vandenį ir bet kokį pakeitimą: dėl Clay Art Center lauko špato pakeitimo teko koreguoti maždaug pusę jos glazūrų.
+
+Table: Ką užrašyti apie kiekvieną glazūros užmaišą (mūsų šablonas)
+Label: Įrašo šablonas
+
+| Dalis      | Ką užrašyti                                                                                                                                                                                                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Receptas   | Receptas ir jo versija; žaliavų prekės ženklai ir partijų numeriai; bet kokie pakeitimai                                                                                                                                                                           |
+| Maišymas   | Data; užmaišo dydis; įpiltas vanduo ir jo rūšis (vandentiekio, atvirkštinės osmozės ar distiliuotas); santykinis tankis po maišymo ir galutinis; paruoštos suspensijos masė sausųjų miltelių santykiniam tankiui; pridėta Epsom druskos, CMC ir bentonito; sieto mesh ir perėjimų skaičius |
+| Užnešimas  | Molio masė; biskvitinio degimo piroskopas; merkimas, tepimas teptuku ar liejimas; merkimo trukmė ar sluoksnių skaičius; sauso sluoksnio storis                                                                                                                     |
+| Degimas    | Krosnis ir vieta ant plokštės; degimo programa su kreivėmis, išlaikymais ir aušinimu; atmosfera (oksidacinė ar redukcinė); ką parodė kontrolinis piroskopas, o ne tik kas buvo nustatyta krosnyje                                                                 |
+| Rezultatas | Paviršius ir spalva; bet koks nubėgimas, trūkinėjimas ar adatinės skylutės; nuotraukos iš priekio, galo ir šono; bandinio kodas                                                                                                                                  |
+
+> [!NOTE]
+> Programoje Glazecalc įrašytas [receptas](/recipe) saugo patį receptą. [Degimo žurnalas](/firing) įrašo kiekvieną degimą: krosnį, datą, laikus, temperatūras, piroskopus ir pastabas. [Užrašuose](/notes) laikoma visa kita, pavyzdžiui, aukščiau aprašytas užmaišo įrašas ir ką parodė kiekvienas bandinys.
 
 ## Šaltiniai {#sources}
 

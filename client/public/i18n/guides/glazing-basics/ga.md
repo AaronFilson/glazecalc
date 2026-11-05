@@ -3,480 +3,480 @@ title: Glónrú ó bhunphrionsabail
 lead: Cad as a ndéantar glónra, conas a iompaíonn an áith ina ghloine é, agus míniú ar gach focal a chasfar ort ar oideas, ar mhála nó ar thábla cón.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Cad is glónra ann {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+Is éard is **glónra**{{en: glaze}} ann ná brat tanaí gloine atá comhleáite le pota. Tugann Glazy, an bunachar oscailte d’oidis ghlónra, “foirmle gloine atá tiúnta chun leá agus comhleá ar chré ag teochtaí áirithe” air. Cuirtear air é mar shraith púdair agus leánn sé san áith ina bhrat gloiniúil a shéalaíonn an chré, ionas gur lú an seans go ligfidh an pota uisce tríd, go smálfaidh sé nó go gcaithfear é. Ag barr na bácála imoibríonn an leátán leis an gcré freisin, agus is minic a dhéanann sé sraith eatarthu a ghreamaíonn an glónra go daingean. Ar chré-earraí{{en: earthenware}}, a bhácáiltear níos fuaire, bíonn an tsraith seo tanaí agus fanann an glónra ar barr den chuid is mó. Ar earraí cruachré{{en: stoneware}} agus ar phoirceallán, a bhácáiltear níos teo, bíonn an tsraith níos tiubha agus beireann an glónra greim níos daingne ar an gcré. Fanann an glónra ina ghloine, áfach: ní éiríonn sé ina chuid den chré.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Liostaíonn oideas amhábhair, mar iathchloch{{en: feldspar}}, bánlí{{en: whiting}} agus caoilín{{en: kaolin}}. San áith, imíonn cuid de gach ceann mar ghás (uisce nó dé-ocsaíd charbóin) agus déantar **ocsaídí** den chuid eile: comhdhúile d’eilimint le hocsaigin, mar shilice (SiO₂) nó ocsaíd chailciam (CaO). Is as ocsaídí atá an ghloine bhácáilte déanta, mar sin is leo a chuireann potadóirí síos ar ghlónra. Déanann gach ocsaíd ceann de thrí jab.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- Is í an **tsilice**{{en: silica}} (SiO₂) an **foirmeoir gloine**{{en: glass former}}: tógann sí an ghloine. Leánn silice ghlan os cionn {{3100 °F; 1700 °C}}, i bhfad níos teo ná áith photaireachta, agus de ghnáth is buanfasaí glónra a bhfuil mórán silice ann.
+- Íslíonn na **floscanna**{{en: fluxes}} an leáphointe go teocht is féidir le háith a bhaint amach. Is iad na **halcailí**, scríofa **R₂O**, ocsaídí sóidiam, photaisiam agus litiam (Na₂O, K₂O, Li₂O); oibríonn siad ó chón{{en: cone}} 06 suas trí mheánbhácáil agus ardbhácáil. Is iad na **hocsaídí cré-alcaileacha**, scríofa **RO**, ocsaídí cailciam, maignéisiam, bairiam agus strointiam (CaO, MgO, BaO, SrO), agus ocsaíd since (ZnO) curtha leo sa ghrúpa; is fearr a oibríonn siad ó chón 5 go cón 10. Seasann an R d’aon mhiotal sa teaghlach.
+- Is é an **t-alúmana** (Al₂O₃) an **cobhsaitheoir**{{en: stabilizer}}. Déanann sé an leátán níos righne ionas go bhfanann sé ar bhallaí ingearacha, agus cuireann sé cruas agus buanfas leis. Rabhadh Glazy: le ró-bheagán alúmana “d’fhéadfadh do ghlónra rith; is féidir le barraíocht an leátán a dhéanamh righin agus neamhlonrach”. Is ó chré agus ó iathchloch is mó a thagann alúmana.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+Déanann an **bórón** (B₂O₃) an líne doiléir. Aicmíonn ceimiceoirí é mar fhoirmeoir gloine, ach ag teochtaí stiúideo gníomhaíonn sé mar fhlosc, agus caitheann potadóirí leis mar fhlosc. Is príomhfhlosc é ag ísealbhácáil agus ag meánbhácáil: dá fhuaire an bhácáil, is ea is mó bóróin a theastaíonn ó ghlónra. Ag cón 10 de ghnáth ní theastaíonn sé. (Mínítear na cóin, an bealach a ainmníonn potadóirí bácáil, thíos.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Bealach amháin chun é a choinneáil i gcuimhne: is í an tsilice an ghloine, ligeann na floscanna di leá ag teocht is féidir le d’áith a bhaint amach, agus déanann an t-alúmana níos tiubha í ionas go bhfanann sí san áit a gcuireann tú í.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## Cré, bratanna agus an dá bhácáil {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Cré-ábhair
 
-## From recipe to unity formula {#unity-formula lang=en}
+Is é an **cré-ábhar**{{en: clay body}} an chré as a ndéantar pota. Tá trí phríomhchineál ann.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Cré-earraí**{{en: earthenware}}: cré-ábhar ísealbhácála, thart ar chón{{en: cone}} 06–02, atá póiriúil ag cóin ísle agus níos dlúithe de réir mar a bhácáiltear níos teo é. Is minic é dearg nó buí-donn, agus teastaíonn glónra{{en: glaze}} uaidh chun uisce a choinneáil.
+- **Earraí cruachré**{{en: stoneware}}: cré-ábhar meánbhácála nó ardbhácála, thart ar chón 5–10, a éiríonn gloiní nó beagnach gloiní.
+- **Poirceallán**: cré-ábhar bán atá saibhir i gcaoilín, tréshoilseach go minic. Ardbhácáil a bhíonn i bhformhór an phoircealláin, ach tá poircealláin do chón 6 ann freisin.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+Ciallaíonn **gloiní**{{en: vitreous}} cosúil le gloine agus neamhphóiriúil; is é **gloiniú**{{en: vitrification}} an cré-ábhar ag éirí mar sin le linn bácála. Is minic a tharraingíonn potadóirí sa Ríocht Aontaithe an líne de réir teochta ina ionad sin: bácáiltear earraí cruachré os cionn {{2192 °F; 1200 °C}}, cré-earraí faoina bhun. Titeann meánbhácáil, cón 5–6, díreach ar an dá thaobh den líne sin.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Bratanna agus triomú
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+Is éard is **sliopa** ann ná cré ar fuaidreán in uisce, le haghaidh teilgin, ceangail nó maisiúcháin. Is éard is **engobe** ann ná brat cosúil le sliopa, daite go minic, ina bhfuil níos mó ábhar nach cré iad. Is éard is **fo-ghlónra** ann ná sliopa daite nó maisiú ocsaíde, clúdaithe le glónra glé de ghnáth.
 
-### The silica to alumina ratio
+Is **amh-earraí**{{en: greenware}} iad gréithe neamhbhácáilte (ní réitíonn na foinsí faoi cé acu a chlúdaíonn an focal gach gréithe neamhbhácáilte nó gréithe tirime amháin). De réir mar a thriomaíonn siad éiríonn siad **leatharchrua**, righin ach beagán tais, an chéim le haghaidh bearrtha agus cluas; ansin **cnámhthirim**, gan aon uisce saor fágtha iontu, an-leochaileach agus réidh le bácáil.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### An dá bhácáil
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+Is í an chéad bhácáil, níos ísle, an **bhrioscbhácáil**{{en: bisque}} (sa Ríocht Aontaithe: **biscuit**), cón 08–04 de ghnáth (06–04 is minice), thart ar {{1728–1945 °F; 942–1063 °C}}. Fágann sí gréithe láidir ach póiriúil. Molann Digitalfire, suíomh tagartha glónraí, níos mó ná 15% póiriúlachta go ginearálta, ionas go dtarraingíonn na brioscghréithe an t-uisce as an nglónra de réir mar a chuirtear air é. Bíonn brioscbhácáil bhog (cón 08–06) níos póiriúla; bíonn brioscbhácáil chrua (cón 04 go minic) níos láidre ach glacann sí glónra níos deacra.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Conas a athraíonn an bhrioscbhácáil an glónrú (Digitalfire)
+Label: Conas a athraíonn an bhrioscbhácáil an glónrú
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Brioscbhácáil                                          | Cad a tharlaíonn                                                                      |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Tearcbhácáilte, an-súiteach                            | Téann an glónra air róthiubh, ansin scoilteann sé agus snámhann sé                    |
+| Róbhácáilte, dlúth                                     | Tógann an tumadh agus an triomú níos faide                                            |
+| Bácáilte níos teo, nó coinnithe níos faide ag an mbarr | Dónn níos mó gáis amach anois, mar sin is lú a bhoilgeann tríd an nglónra níos déanaí |
 
-### Loss on ignition
+Cuireann Potclays, soláthraí sa Ríocht Aontaithe, síos ar bhrioscbhácáil go dtí thart ar {{1000 °C; 1832 °F}}, thart ar chón 06. Ag léamh na bhfoinsí seo le chéile, molaimid cón 06–04 don chéad bhrioscbhácáil: {{1828–1945 °F; 998–1063 °C}} ag ráta meánach Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+Leánn an **bhácáil glónra**{{en: glaze firing}} (féadfaidh potadóirí sa Bhreatain **glost** firing a rá) an glónra agus, i gcás earraí cruachré, lánbhácálann sí an chré freisin. San **aonbhácáil**{{en: once-firing}} glónraítear gréithe neamhbhácáilte agus bácáiltear iad uair amháin. Tuairiscíonn Digitalfire cás táirgthe inar shnámh glónra ar bhéil amh-earraí glónraithe go dtí gur leigheas brioscbhácáil é, mar sin tosaigh le dhá bhácáil. Tugann an treoirleabhar [Bácáil in áith shimplí](/guides/firing) cláir bhácála don dá cheann.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Cóin agus obair teasa {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Ainmníonn potadóirí bácáil de réir **cóin**{{en: cone}}: piriméad caol ceirmeach a lúbann nuair a fhaigheann sé méid socraithe teasa. Tugann Orton, a dhéanann iad, táscairí ama agus teochta (obair teasa) ar chóin: léiríonn siad éifeacht an ama agus na teochta le chéile, ní an teocht amháin.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+Is í an **obair teasa**{{en: heatwork}} an chúis: freagraíonn glónra, cré agus cón araon don fhad a bhíonn siad te chomh maith le cé chomh te. Lúbann bácáil mhall cón ag teocht níos ísle, bácáil thapa ag teocht níos airde. Ar thábla Orton lúbann cón 6 ag {{2165 °F; 1185 °C}} nuair a chríochnaíonn an bhácáil ag ardú {{27 °F; 15 °C}} san uair, ag {{2232 °F; 1222 °C}} ag {{108 °F; 60 °C}} san uair, agus ag {{2269 °F; 1243 °C}} ag {{270 °F; 150 °C}} san uair, an ráta á thomhas thar an {{180 °F; 100 °C}} deireanach. Bíonn cón críochnaithe nuair a bhíonn a bharr lúbtha trí 90°. Is minic a thugann potadóirí suíomh 5 a chlog air seo.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Téann uimhreacha na gcón ó 022 go 42. Marcálann nialas chun tosaigh an tsraith níos fuaire, ina bhfuil uimhir níos mó níos fuaire: tá cón 06 níos fuaire ná cón 04, agus cón 01 níos fuaire ná cón 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Raonta bácála: cóin fhéintacaithe Orton ag {{108 °F; 60 °C}} san uair
+Label: Raonta bácála
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Raon         | Cóin  |          °F |          °C | Úsáid                             |
+| ------------ | ----- | ----------: | ----------: | --------------------------------- |
+| Ísealbhácáil | 06–04 | 1,828–1,945 |   998–1,063 | Glónraí cré-earraí; brioscbhácáil |
+| Meánbhácáil  | 5–6   | 2,167–2,232 | 1,186–1,222 | Earraí cruachré agus poirceallán  |
+| Ardbhácáil   | 9–10  | 2,300–2,345 | 1,260–1,285 | Earraí cruachré agus poirceallán  |
+
+> [!NOTE]
+> Ainmnigh agus ríomhchláraigh do bhácálacha de réir cóin, agus glac leis na teochtaí mar mheastacháin. Léiríonn **cón fianaise**{{en: witness cone}} ar sheilf i measc na bpotaí, nó **paca cón**{{en: cone pack}} de thrí cinn (cón treorach, cón bácála agus cón cosanta), an obair teasa a fuair do photaí i ndáiríre.
+
+Bíonn teochtaí foilsithe éagsúil. Tugann Glazy ardbhácáil, cón 9–11, mar thart ar {{2336–2390 °F; 1280–1310 °C}}, a réitíonn le colún tapa Orton, agus tugann Digitalfire cón 6 mar thart ar {{2200 °F; 1204 °C}}. Ár gcomhairle: úsáid figiúirí ráta mheánaigh Orton, mar a dhéanann an treoirleabhar seo, ríomhchláraigh de réir cóin, agus lig do chón fianaise an cheist a shocrú.
+
+Lasmuigh de Mheiriceá Thuaidh, is minic a thugann soláthraithe °C seachas cón. D’fhorbair Hermann Seger an cón nua-aimseartha, a úsáideadh den chéad uair i mBeirlín in 1886, agus bhí a cóin Staffordshire féin ag an Ríocht Aontaithe; níor cheart glacadh leis go réitíonn a n-uimhreacha le huimhreacha Orton, agus níor aimsíomar aon tábla chun iad a aistriú. Pléann an treoirleabhar [Bácáil in áith shimplí](/guides/firing) na cóin níos mine.
+
+## Ó oideas go foirmle Seger {#unity-formula}
+
+Liostaíonn **oideas baisce**{{en: batch recipe}} amhábhair de réir meáchain, scálaithe de ghnáth ionas go mbíonn an bunghlónra 100 san iomlán. Téann **breiseáin**{{en: additives}} (ábhair datha, teimhneoirí agus oibreáin fhuaidreáin) anuas ar an 100, mar chéatadán den bhunghlónra de ghnáth. Chun a fheiceáil cad é an glónra, iompaíonn potadóirí an t-oideas ina **fhoirmle Seger**{{en: unity molecular formula}} (**UMF**, a ainmníodh as Hermann Seger, a d’úsáid a leagan amach trí cholún den chéad uair).
+
+Table: Ó oideas go foirmle Seger: sampla oibrithe Glazy
+Label: Ó oideas go foirmle Seger
+
+| Céim               | Cad a tharlaíonn                                                                                                                                              | Sa sampla                                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Oideas baisce   | Amhábhair de réir meáchain, scálaithe go 100                                                                                                                  | Iathchloch 40%, i measc ábhar eile                                                                                                  |
+| 2. Anailís ocsaíde | Cosúil le lipéad cothaithe: suimítear ocsaídí gach ábhair mar chéatadán meáchain, agus fágtar na gáis ar lár                                                  | Is silice 64.8% den iathchloch, mar sin tugann a 40% 25.9% SiO₂. Tá an glónra bácáilte 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. Mólanna         | Iompaítear meáchain ina **mólanna**, comhaireamh móilíní, mar “Is féidir le graim a bheith míthreorach mar go bhfuil ocsaídí áirithe níos troime ná a chéile” | Is mól amháin é 60.1 g SiO₂, mar sin is ionann 67.4 g agus thart ar 1.12 mól                                                        |
+| 4. Foirmle Seger   | Roinntear gach rud ar iomlán na bhfloscanna, ionas gurb ionann iomlán na bhfloscanna agus 1                                                                   | Is é 0.303 iomlán na bhfloscanna; tugann an roinnt K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                        |
+
+Déanann [leathanach oidis](/recipe) Glazecalc na ceithre chéim de réir mar a chlóscríobhann tú, agus taispeánann sé an toradh i dtrí cholún: floscanna{{en: fluxes}} (R₂O agus RO) arb ionann a n-iomlán agus 1; cobhsaitheoirí (R₂O₃: alúmana, agus bórón curtha anseo go minic); agus foirmeoirí gloine (RO₂: silice). “Níl san aontú ach uirlis scálaithe,” a deir Glazy: “iompraíonn” dhá oideas déanta as ábhair dhifriúla ach leis an bhfoirmle Seger chéanna iad féin “beagnach mar an gcéanna tar éis bácála”. Mar sin is slat tomhais choiteann é an 1, ní méid a mheánn tú. Cuireann Digitalfire leis “nach n-oibríonn” an modh “chomh maith ag teochtaí níos ísle”, áit nach gnáthfhlosc é an bórón, agus go bhfuil foirmlí Seger “comparáideach agus gur fearr breathnú orthu i gcomhthéacs”. Cuireann an ghné **Cuir i gcomparáid** foirmlí dhá oideas taobh le taobh, ocsaíd ar ocsaíd.
+
+### An cóimheas silice le halúmana
+
+Is é an **cóimheas silice le halúmana**{{en: silica to alumina ratio}} an uimhir aonair is úsáidí: an tsilice roinnte ar an alúmana. Sa sampla, is ionann 3.70 ÷ 0.41 agus thart ar 9.
+
+Table: Cad a thugann an cóimheas silice le halúmana le fios (Glazy)
+Label: Cóimheas silice le halúmana
+
+|   Cóimheas | Léamh Glazy                                            |
+| ---------: | ------------------------------------------------------ |
+| Thart ar 9 | Tugann sé leátán lonrach le fios, le dóthain teasa     |
+|        5–7 | Tipiciúil de go leor glónraí cobhsaí cruachré          |
+|        3–5 | D’fhéadfadh sé a bheith neamhlonrach nó tearcbhácáilte |
+
+Ní deir Glazy cén cón lena mbaineann na figiúirí seo. Léigh iad mar threoir gharbh do ghlónraí cruachré, thart ar chón 6–10. Deir Digitalfire gur dócha go mbeidh cóimheas os cionn thart ar 8 lonrach, ach gur féidir le glónra ina bhfuil bórón a bheith lonrach ag 8 nó níos ísle, agus glónra ísealbhácála fiú ag 6. Ní thuarann cóimheas 5–7 lonrach ná neamhlonrach as féin: bogann na floscanna, an bórón agus an cón an líne. Tugann Glazy cothromaíocht tipiciúil na bhfloscanna do ghlónraí cobhsaí mar 0.2 R₂O le 0.8 RO, suas go 0.3 R₂O le 0.7 RO. Déanann níos mó alcaile an leátán níos sreabhaí agus ardaíonn sé a fhorbairt theirmeach, agus mar sin an baol snáithlíonraithe.
+
+### Cailliúint ar adhaint
+
+Is í **cailliúint ar adhaint**{{en: loss on ignition}} (**LOI**) an meáchan a chailleann ábhar san áith de réir mar a imíonn uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar mar ghás. Níl aon LOI ag glónra bácáilte, mar sin fágann an fhoirmle Seger ar lár é.
+
+Table: Cailliúint thipiciúil ar adhaint (Digitalfire)
+Label: Cailliúint ar adhaint
+
+| Ábhar                                 | LOI tipiciúil                                                                                            |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Bánlí (carbónáit chailciam), dolaimít | Os cionn 40%, dé-ocsaíd charbóin den chuid is mó: scaoileann 100 g de charbónáit chailciam thart ar 44 g |
+| Carbónáit litiam                      | Thart ar 60%                                                                                             |
+| Carbónáit bhairiam, Gerstley Borate   | Os cionn 20%                                                                                             |
+| Caoilín                               | Thart ar 12–14%, uisce atá ceangailte ina chriostail den chuid is mó                                     |
+| Iathchlocha                           | Faoi bhun 1%                                                                                             |
+
+Ní mór do ghás a imíonn tar éis don ghlónra tosú ag leá boilgearnach tríd, rud a chruthaíonn, i bhfocail Digitalfire, “boilgeoga, cloig, poill bhioráin, snámh”. I dtástáil de chuid Digitalfire, lean talc ag scaoileadh gáis go dtí thart ar {{1650 °F; 899 °C}}. Cabhraíonn friotanna, ábhair **chailcínithe**{{en: calcined}} (a téadh roimh ré chun a ngáis a dhíbirt) agus athruithe ar an mbácáil.
+
+Déanann seanleabhair an uimhríocht seo de láimh, le **meáchan móilíneach**{{en: molecular weight}} (meáchan mól amháin d’ábhar nó d’ocsaíd) agus **meáchan coibhéiseach**{{en: equivalent weight}} (meáchan ábhair a sholáthraíonn mól amháin d’ocsaíd). De réir ár n-uimhríochta, soláthraíonn thart ar 100 g bánlí mól amháin, 56 g, d’ocsaíd chailciam. Láimhseálann áireamhán an dá cheann.
+
+## Teorainneacha agus cairt Stull {#stull-chart}
+
+Is éard is **cairt Stull** ann ná léarscáil de ghlónraí. Tá dhá ais aici, iad araon ón bhfoirmle Seger: silice (SiO₂) trasna an bhuin agus alúmana (Al₂O₃) suas an taobh. Is pointe amháin gach glónra. Tá an léarscáil roinnte ina limistéir, mar neamhlonrach, lonrach (glé), tearcbhácáilte agus snáithlíonraithe. Tarraingíonn [leathanach oidis](/recipe) Glazecalc do ghlónra{{en: glaze}} uirthi.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+Rinne R. T. Stull an chairt as tástálacha a d’fhoilsigh sé in 1912. Bhácáil sé iad ag thart ar chón{{en: cone}} 11, agus bhí na floscanna céanna i ngach tástáil: 0.3 potais (K₂O) agus 0.7 ocsaíd chailciam (CaO). Níor athraigh ach an tsilice agus an t-alúmana. Mar sin tá an chairt fíor do na glónraí sin ag an teas sin.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Is dócha go bhfuil do ghlónra difriúil. Bogann bórón, floscanna eile agus cóin níos ísle na limistéir. In 2025 thástáil alt in Ceramics Monthly glónra do chón 6 a raibh bóráití mar fhlosc ann agus mórán iarainn. Chuir an chairt sna limistéir snáithlíonraithe, neamhlonrach agus tearcbhácáilte é. Déanta na fírinne bhí sé leáite go hiomlán, leathlonrach agus gan snáithlíonrú. Deir na húdair nach suíonn glónraí ina bhfuil bóráití go maith ar an gcairt. Mar sin úsáid na limistéir mar threoir, ní mar thuar.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+Is é limistéar **snáithlíonraithe**{{en: crazed}} an áit ar shnáithlíonraigh tástálacha Stull féin, ar a chré féin. Ní insíonn sé duit conas a oireann do ghlónra do do chré-ábhar. Braitheann an snáithlíonrú ar fhorbairt theirmeach{{en: thermal expansion}} an ghlónra agus na cré araon. Cabhraíonn figiúr forbartha Glazecalc leat glónraí a chur i gcomparáid, agus socraíonn fíorthástáil é: tástáil an uisce oighir sa roinn [Oiriúint ghlónra agus máchaillí](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+Is uirlis dhifriúil iad **foirmlí teorann**{{en: limit formulas}} don cheist chéanna: raonta silice, alúmana agus floscanna do ghlónraí cobhsaí ag cón áirithe. Míníonn [Sábháilteacht bia](/guides/glazing-basics#food-safety) iad, agus cén fáth nach gcruthaíonn siad aon rud as féin.
 
-## Frits and raw materials {#materials lang=en}
+## Friotanna agus amhábhair {#materials}
 
-### Frits
+### Friotanna
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+Is éard is **friot**{{en: frit}} ann ná gloine a dhéantar i monarcha: mianraí a leádh, a múchadh in uisce agus a meileadh. Déanann friochadh friotanna ábhair intuaslagtha mar bhórás dothuaslagtha, cuireann sé ocsaídí tocsaineacha mar luaidhe agus bairiam faoi ghlas i ngloine chobhsaí, tugann sé ábhar níos comhsheasmhaí ná mianraí amha, agus díbríonn sé gáis, mar sin bíonn glónraí a ndearnadh friot díobh “i bhfad níos saoire ó mháchaillí” (Digitalfire). Leánn friotanna go luath freisin: bíonn friot sóide gníomhach ag cón{{en: cone}} 06, cé nach mbíonn iathchloch “ach ag tosú ag bogadh ag cón 6”. Cosnaíonn siad níos mó, teastaíonn cré uathu chun fanacht ar fuaidreán (is é sampla Digitalfire 85% friot le 15% cré), agus bíonn siad “dothuaslagtha go teoiriciúil, ach i gcleachtas, níl”.
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Ainmnítear friotanna Mheiriceá Thuaidh de réir déantóra agus uimhreach: tá Ferro Frit 3134 (Vibrantz is ainm do Ferro anois) ar cheann de na friotanna is mó a úsáidtear i Meiriceá Thuaidh. Is minice a ainmníonn oidis na Ríochta Aontaithe friotanna ginearálta, mar fhriot bóráis caighdeánach.
 
-### The common raw materials
+### Na hamhábhair choitianta
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Ábhair choitianta ghlónra agus a soláthraíonn siad
+Label: Ábhair choitianta ghlónra
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Ábhar (ainmneacha eile)                                  | Soláthraíonn           | Nótaí                                                                                                                                                                                   |
+| -------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silice (breochloch, grianchloch)                         | SiO₂                   | Úsáid 325 mesh, meilt an-mhín, i nglónraí                                                                                                                                               |
+| Caoilín (sa Ríocht Aontaithe: cré shíneach)              | Al₂O₃, SiO₂            | An phríomhfhoinse alúmana; cabhraíonn sé freisin leis an nglónra gan síothlú                                                                                                            |
+| Meallchré                                                | Al₂O₃, SiO₂            | Níos plaistí ná caoilín, le níos mó iarainn agus ábhair orgánaigh                                                                                                                       |
+| Iathchloch photaise, iathchloch shóide, siainít neifilín | K₂O, Na₂O, Al₂O₃, SiO₂ | Floscanna lena n-alúmana agus lena silice féin. Is flosc láidir ísealbhácála agus meánbhácála í siainít neifilín. D’fhéadfadh “iathchloch” amháin i seanoideas aon cheann acu a chiallú |
+| Bánlí (carbónáit chailciam)                              | CaO                    | An príomhfhlosc cailciam; scaoileann sé dé-ocsaíd charbóin                                                                                                                              |
+| Vollastainít                                             | CaO, SiO₂              | Cailciam gan an dé-ocsaíd charbóin                                                                                                                                                      |
+| Dolaimít, talc                                           | MgO, le CaO nó SiO₂    | Dromchlaí síodúla neamhlonracha; forbairt theirmeach níos ísle                                                                                                                          |
+| Ocsaíd since                                             | ZnO                    | Loinnir agus criostail; is féidir le barraíocht snámh a chruthú                                                                                                                         |
+| Friotanna bóróin, Gerstley Borate, cólmainít             | B₂O₃                   | Riachtanach ó chón 06 go cón 6; tá friotanna “níos comhsheasmhaí agus níos lú intuaslagtha ná bóráití amha”                                                                             |
+| Carbónáit litiam                                         | Li₂O                   | Flosc ísealfhorbartha; costasach, mar sin úsáidtear go spárálach é                                                                                                                      |
+| Carbónáit strointiam                                     | SrO                    | An t-ionadach ar bhairiam: níl sé chomh tocsaineach le bairiam                                                                                                                          |
+| Carbónáit bhairiam                                       | BaO                    | Tocsaineach san fhoirm amh; is féidir le glónraí ard-bhairiam láisteadh                                                                                                                 |
+| Beintinít                                                | Fuaidreán              | Cré an-mhín, 1–2% de ghnáth, chun síothlú a stopadh. Is féidir le níos mó ná 3% an glónra a scoilteadh de réir mar a thriomaíonn sé                                                     |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Púdair mhíne is ea ábhair ghlónra. Déanann deannach silice dochar do na scamhóga gan aon siomptóim ar dtús, agus bíonn ábhair áirithe, mar charbónáit bhairiam agus carbónáit litiam, nimhiúil má shlogtar iad. Láimhseáil púdair go réidh, glan fliuch, agus caith masc análaitheora a oireann duit nuair a bhíonn tú ag obair tirim. Míníonn na treoirleabhair [Meascadh sábháilte agus aeráil](/guides/safe-mixing) agus [Ná nimhigh do theaghlach](/guides/home-safety) conas.
 
-### Regional names
+### Ainmneacha réigiúnacha
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **Cré shíneach** (china clay) a thugtar ar **chaoilín** sa Ríocht Aontaithe. San Astráil, is branda amháin caoilín é Eckalite.
+- Is seanainm de chuid na Ríochta Aontaithe ar shilice í **breochloch** (flint). Díolann soláthraithe sa Ríocht Aontaithe **breochloch chailcínithe** mar tháirge ar leith fós, mar sin is dócha go gciallaíonn “flint” in oideas Briotanach breochloch chailcínithe, agus in oideas Meiriceánach grianchloch mheilte. Díoltar an dá cheann mar fhoinsí silice; seiceáil an anailís.
+- Is ionann an t-ábhar **cloch shíneach** (china stone) agus **Cornish stone** (Cornwall stone, cloch ó Chorn na Breataine), atá gaolmhar le hiathchloch.
+- Is é **bánlí** carbónáit chailciam, cailc nó aolchloch mheilte.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Meas ábhar de réir na n-ocsaídí a sholáthraíonn sé, ní de réir a ainm. Oibríonn Glazecalc mar sin: is féidir leat anailís do sholáthraí a chur isteach ar an [leathanach ‘Ábhair’](/material), agus meaitseálann na gnéithe **Bain triail as ábhair an lae inniu agus cuir i gcomparáid**, **Mol méideanna agus cuir i gcomparáid** agus **Meaitseáil leis a bhfuil agam** ocsaídí bácáilte, ní ainmneacha.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Athraíonn ábhair freisin. Tuairiscíonn Suirbhéireacht Gheolaíochta SAM gur chuir na mianaigh agus an gléasra a rinne iathchloch Custer, i nDakota Theas, stop leis an obair i mí na Samhna 2023. Dúnadh an bunmhianach Gerstley Borate thart ar 1999–2000; díolann Laguna táirge faoin ainm sin fós, agus is é Gillespie Borate an príomhionadach. Ní réitíonn na foinsí faoi cé acu a thagann Gillespie in áit Gerstley Borate punt ar phunt (deir a dhéantóir agus Potclays go dtagann, deir Digitalfire agus foinsí eile nach dtagann), mar sin cuir an dá cheann i gcomparáid san aip Glazecalc, ansin tástáil baisc bheag.
 
-## Colorants and opacifiers {#color lang=en}
+## Ábhair datha agus teimhneoirí {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+Is éard is **ábhar datha**{{en: colorant}} ann ná ocsaíd nó carbónáit mhiotail a chuireann dath ar ghlónra; is éard is **lí**{{en: stain}} ann ná ábhar datha a dhéantar i monarcha, níos cobhsaí agus níos comhsheasmhaí ná ocsaídí amha. Bíonn ábhair datha faoi bhun 5% den bhunghlónra de ghnáth, cuid mhaith acu faoi bhun 1%, agus bíonn carbónáit níos laige ná an ocsaíd a fhreagraíonn di, mar go n-imíonn cuid di mar ghás. De réir ár n-uimhríochta, tugann 100 g de charbónáit chóbailt thart ar 63 g d’ocsaíd chóbailt, agus tugann 100 g den charbónáit chopair a cheannaíonn potadóirí (carbónáit chopair bhunata) thart ar 72 g d’ocsaíd chopair. Mar sin úsáid thart ar 1.4 go 1.6 oiread carbónáite agus a d’úsáidfeá d’ocsaíd.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Ábhair datha choitianta, mar chéatadán den bhunghlónra
+Label: Ábhair datha choitianta
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Ábhar datha      | Gnáthmhéid tosaigh                           | Dathanna agus nótaí                                                                                                                                     |
+| ---------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cóbalt           | 0.1–2% (ní réitíonn na foinsí)               | Gorm, agus an-láidir; i dtreo corcra nuair a bhíonn maignéisiam sa bhunghlónra                                                                          |
+| Iarann           | 0.5–10%                                      | Donn, buídhonn agus dearg faoi ocsaídiú; faoi dhí-ocsaídiú, tugann ½–2% ceileadón agus 5–10% tenmoku. Flosc é, mar sin cuireann mórán de glónra ag rith |
+| Copar            | 1–3%                                         | Glas nó turcaidh faoi ocsaídiú, dearg faoi dhí-ocsaídiú. Is féidir leis glónra a chur ag láisteadh                                                      |
+| Cróm             | Faoi bhun 0.5% go 2% (ní réitíonn na foinsí) | Glas; donn má bhíonn sinc sa bhunghlónra, bándearg le stán                                                                                              |
+| Mangainéis       | 2–10%                                        | Donn agus corcra                                                                                                                                        |
+| Rúitíl           | Thart ar 2–5%                                | Dath breac, ilchineálach; garbh nó neamhlonrach os cionn thart ar 5%                                                                                    |
+| Líocha tráchtála | 2–12%                                        | 2–4% do shnáithe, 5–8% do thoin, 10–12% do dhathanna láidre                                                                                             |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Tá fíorchonspóid faoi mhéideanna cóbailt agus cróim. Deir Glazy gur leor 0.1% cóbailt do ghorm; tugann Glendale Community College ½–2% nó ½–3% de réir an atmaisféir; deir Birdie Boone, in Pottery Making Illustrated, 3% nó níos lú. Do chróm, deir Boone faoi bhun 0.5% agus Glendale 2–3%. Is é an cúrsa sábháilte tosú íseal agus **sraith cumaisc**{{en: line blend}} a dhéanamh: ró tíleanna tástála a mhéadaíonn comhábhar amháin céim ar chéim ó bheagán go mórán.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+Athraíonn an bunghlónra an dath. Tugann bunghlónra lonrach trédhearcach an dath is gile; maolaíonn bunghlónraí leathlonracha agus neamhlonracha, a mbíonn níos mó alúmana iontu de ghnáth, é. Brúnn maignéisiam cóbalt i dtreo corcra, iompaíonn sinc cróm donn, agus tugann cróm le stán bándearg.
 
-### Opacifiers
+### Teimhneoirí
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+Déanann **teimhneoir**{{en: opacifier}} glónra **teimhneach**, ag ceilt na cré; ligeann glónra **trédhearcach** di a bheith le feiceáil.
 
-Table: Opacifiers
+Table: Teimhneoirí
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Teimhneoir                           | Gnáthmhéid                               | Nótaí                                                                                                                                                         |
+| ------------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Siorcón (Zircopax, Superpax, Ultrox) | 10–15% le haghaidh teimhneachta iomláine | An rogha is saoire; is sileacáit siorcóiniam iad na brandaí, meilte go méideanna éagsúla, agus is láidre na gráid is míne                                     |
+| Ocsaíd stáin                         | Thart ar 5–7% (ár meastachán)            | Costasach; níos laige ag ardbhácáil, agus tuairiscíonn Digitalfire nár thug 4% aon teimhneacht i nglónra glé do chón 10 faoi dhí-ocsaídiú                     |
+| Dé-ocsaíd tíotáiniam                 | Thart ar 5% (ár meastachán)              | Teimhneacht shíodúil thréshoilseach; is féidir le thart ar 5% an dromchla a athrú, agus is minic a thugann i bhfad níos mó dromchla neamhlonrach le criostail |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Oiriúint ghlónra agus máchaillí {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+Fásann cré agus glónra araon de réir mar a théann siad agus crapann siad de réir mar a fhuaraíonn siad, gach ceann acu de réir a mhéide féin: a **fhorbairt theirmeach**{{en: thermal expansion}}. Is í **oiriúint ghlónra**{{en: glaze fit}} cé chomh maith is a réitíonn an dá cheann. Fágann oiriúint mhaith an glónra faoi bheagán comhbhrú ag an gcré; deir Digitalfire go neartaíonn beagán comhbhrú na gréithe, ach gur féidir le barraíocht iad a lagú agus fiú a scoilteadh.
 
-### Crazing and shivering
+### Snáithlíonrú agus spallú glónra
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+Is éard is **snáithlíonrú**{{en: crazing}} ann ná gréasán de scoilteanna míne. Tá forbairt theirmeach an ghlónra níos airde ná forbairt an chré-ábhair, mar sin crapann sé níos mó agus é ag fuarú, sínítear é agus scoilteann sé, de ghnáth de bharr barraíocht sóidiam agus potaisiam (Na₂O, K₂O). Is féidir leis teacht chun solais níos déanaí freisin, le linn úsáide, tar éis fuarú tobann arís agus arís eile, mar theagmháil le leachtanna fuara. Nuair a bhíonn sé ag teastáil, mar i raku, **gréasán scoilteanna maisiúil** (crackle) a thugtar air. Deir Digitalfire “95% den am is é an réiteach forbairt theirmeach an ghlónra a choigeartú”; ní dhéanann fuarú mall ach an snáithlíonrú a mhoilliú. A thástáil: téigh na gréithe go dtí thart ar {{300 °F; 149 °C}}, tum in uisce oighir iad, agus cuimil peann feilte orthu chun na scoilteanna a thaispeáint.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Ní réitíonn na foinsí faoin gcéad leigheas. Molann Glazy silice nó alúmana a chur leis; freagraíonn Digitalfire nach ndéanann silice bhreise “ach an KNaO a chaolú” (an sóidiam agus an potaisiam); cuireann Linda Bloomfield bórón leis nó laghdaíonn sí an iathchloch, ábhar amháin ag an am. Ár gcomhairle: san [áireamhán oidis](/recipe), cuir floscanna ísealfhorbartha (bórón, litiam, maignéisiam, cailciam) in ionad cuid den sóidiam agus den photaisiam, seiceáil an t-athrú leis an ngné **Cuir i gcomparáid**, agus deimhnigh é le tástáil an uisce oighir.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+Is é **spallú glónra**{{en: shivering}} a mhalairt: tá forbairt theirmeach an ghlónra i bhfad níos ísle ná forbairt an chré-ábhair, mar sin tá sé róchomhbhrúite agus scealpann sé de na béil agus de na himill. Tugann Digitalfire rabhadh go bhféadfadh na slisní a bheith chomh géar le rásúr agus go bhféadfaí iad a shlogadh, agus deir Glazy go bhfuil spallú glónra “níos contúirtí fós ná snáithlíonrú ar ghréithe úsáide”. Is é an leigheas glónra ardfhorbartha nó cré-ábhar ísealfhorbartha.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> Ná húsáid gréithe snáithlíonraithe ná gréithe a bhfuil spallú glónra orthu do bhia ná do dheoch. Ní réitíonn na foinsí faoi cé acu is féidir potaí snáithlíonraithe a ghlanadh go maith go leor (deir ceann amháin go ndéanfaidh miasniteoir é; deir ceann eile go bhfuil gréithe úsáide snáithlíonraithe lochtach), mar sin glacaimid an taobh cúramach.
 
-### Gloss and matte
+### Lonrach agus neamhlonrach
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Bíonn dromchla **lonrach**{{en: gloss}} frithchaiteach agus mín, bíonn loinnir mhaolaithe ar dhromchla **leathlonrach**{{en: satin}}, agus bíonn dromchla **neamhlonrach**{{en: matte}} dubhghnéitheach. Teastaíonn gloine leáite go hiomlán do dhromchla lonrach. Is féidir le dromchla neamhlonrach teacht ó mhórán alúmana (cóimheas íseal silice le halúmana), ó fhloscanna mar chailciam, maignéisiam, bairiam nó strointiam a dhéanann criostail bheaga bídeacha de réir mar a fhuaraíonn an glónra, nó ó thearcbhácáil.
 
-### Common defects
+### Máchaillí coitianta
 
-Change one thing at a time, and keep your test tiles.
+Athraigh rud amháin ag an am, agus coinnigh do thíleanna tástála.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Máchaillí coitianta glónra, a ngnáthchúiseanna agus na chéad leigheasanna
+Label: Máchaillí coitianta glónra
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Máchail        | Cuma                                                        | Cúiseanna coitianta                                                                                                                                               | Na chéad leigheasanna                                                                                       |
+| -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Snámh          | Tarraingíonn an glónra siar ina bhraonta, ag fágáil cré lom | Brioscghréithe deannachúla nó bealaithe; brat tiubh saibhir i gcré a scoilt agus é ag triomú; sinc, siorcón nó stán                                               | Glan na brioscghréithe; cuir brat níos tanaí air; cailcínigh cuid den chré; cuir ceanglóir mar CMC leis     |
+| Poill bhioráin | Poill bheaga nó claiseanna                                  | Gás ón gcré-ábhar nó ón nglónra nár chneasaigh; glónra tearcbhácáilte nó righin                                                                                   | Coinnigh ag an mbuaicteocht ar feadh thart ar leathuair; cuir brat níos tanaí air; níos lú since nó rúitíle |
+| Clogadh        | Cráitéir le himill ghéara                                   | Róbhácáil de ghnáth; bratanna an-tiubha; floscanna so-ghalaithe os cionn thart ar {{2192 °F; 1200 °C}}                                                            | Bácáil níos ísle; cuir brat níos tanaí air. Fágann imill ghéara gréithe úsáide neamhshábháilte              |
+| Rith           | Sreabhann an glónra anuas ar an tseilf                      | Ró-bheagán alúmana; róthiubh, mar a mbíonn doirteadh ag forluí; mórán iarainn                                                                                     | Cuir brat níos tanaí air; cuir alúmana leis; coinnigh an glónra i bhfad os cionn an bhoinn                  |
+| Scáineadh      | Scoilteanna sa phota ó fhuarú nó ó théamh                   | Fuarú tapa tríd an aisiompú grianchloiche, {{1063 °F; 573 °C}}, nó trí aisiompú na críostabailíte, thart ar {{428 °F; 220 °C}}; ballaí míchothroma; drochoiriúint | Bácáil go mall tríd an dá cheann, suas agus síos; ballaí cothroma                                           |
 
-## Food safety {#food-safety lang=en}
+## Sábháilteacht bia {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+Is éard is **láisteadh**{{en: leaching}} ann ná miotal ag tuaslagadh as glónra bácáilte isteach i mbia nó i ndeoch, agus is féidir le glónra cuma fhoirfe a bheith air agus é sin a dhéanamh fós. Maothaíonn na tástálacha dlíthiúla an píosa bácáilte i dtuaslagán aigéadach agus tomhaiseann siad an luaidhe agus an caidmiam a thagann amach.
 
-### Lead-free is not the same as food-safe
+### Ní hionann gan luaidhe agus slán i gcomhair bia
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Cuireann na rialacha i SAM, san AE, sa Ríocht Aontaithe agus san Astráil teorainn leis an luaidhe agus leis an gcaidmiam a scaoileann píosa bácáilte, ní leis an méid atá sa ghlónra{{en: glaze}}. Baineann “gan luaidhe” guais amháin; ní rátáil sábháilteachta bia é. Láistíonn ocsaídí eile freisin: tugann Glazy rabhadh “gur féidir le glónraí ard-bhairiam láisteadh agus nach mbíonn siad slán i gcomhair bia de ghnáth”, deir Digitalfire “gur féidir le copar glónra a chur ag láisteadh; tástáil é”, agus ní mholann Glazy glónraí luaidhe do ghréithe úsáide a thuilleadh.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+Is éard is **glónra líneála**{{en: liner glaze}} ann ná glónra cobhsaí, glé nó bán de ghnáth, do dhromchlaí a mbíonn bia orthu. Dar linne, is é glónra gan ábhar datha, bairiam, luaidhe ná litiam, a leánn go hiomlán, nach snáithlíonraíonn agus a sheasann go maith le caitheamh, an rogha is lú riosca. Ní cruthúnas é riosca níos lú.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+Tugann **foirmlí teorann**{{en: limit formulas}} (is fearr le Digitalfire **spriocfhoirmlí**) raonta tipiciúla san fhoirmle Seger do ghlónraí cobhsaí ag cón áirithe: cuireann spriocanna Digitalfire do chón{{en: cone}} 6 alúmana ag 0.285–0.64 agus silice ag 2.4–4.7. Treoraíonn siad thú i dtreo ceimice fhónta ach ní chruthaíonn siad aon rud; seachnaíonn Digitalfire an focal “teorainn” mar go dtugann sé le fios go bhfuil glónraí laistigh de na raonta “slán ar bhealach éigin”. Insíonn uirlisí Glazecalc chun oideas a athrú nuair a théann an t-oideas nua thar theorainn mholta, mar mhórán bóróin ag cón 6, agus cad is dócha a dhéanfaidh an glónra.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+Bíonn na teorainneacha dlíthiúla difriúil ó thír go tír. Taispeánann an tábla na teorainneacha san áit a bhfuil tú, in aonaid an dlí féin; roghnaigh tír nó réigiún eile chun comparáid a dhéanamh.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+I SAM, caitear le gréithe ceirmeacha maisiúla a bhfuil cuma inúsáidte do bhia orthu mar ghréithe bia mura bhfuil lipéad greamaithe orthu agus fógra buan múnlaithe nó bácáilte ar a mbonn, mar “Not for Food Use. May Poison Food” (“Ní le haghaidh bia. D’fhéadfadh sé bia a nimhiú”), nó poll trí dhromchla an bhia. Leagann an AE teorainneacha luaidhe agus caidmiam síos do ghréithe ceirmeacha i dTreoir 84/500/CEE ón gComhairle, agus coinníonn an Ríocht Aontaithe na figiúirí céanna ina dlí féin. Leagann cinneadh a rinne tíortha Benelux in 2024 teorainneacha i bhfad níos ísle síos do ghréithe ceirmeacha. Chuir an Ísiltír i bhfeidhm iad ón 29 Bealtaine 2026: thart ar 130 go 150 oiread níos lú luaidhe agus thart ar 14 go 18 n-oiread níos lú caidmiam ná figiúirí an AE. Is féidir gréithe a chomhlíon na seanrialacha agus a díoladh den chéad uair roimh an 1 Nollaig 2026 a dhíol go dtí go mbíonn an stoc ídithe. Tuairiscíonn saotharlanna tástála go gcuireann Lucsamburg na teorainneacha céanna i bhfeidhm ón 29 Bealtaine 2026, agus gur ghlac an Bheilg leo i bhforas ríoga an 19 Iúil 2026; níor léamar na téacsanna sin féin. Leagann an Astráil teorainneacha síos do ghréithe allmhairithe; níor aimsíomar aon teorainn oifigiúil do ghréithe a dhéantar san Astráil nó sa Nua-Shéalainn.
 
-### Testing
+### Tástáil
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+Deir an FDA gur féidir le trealamh swaib baile luaidhe in-láiste a thaispeáint, ach léiríonn staidéir gur minic a bhíonn an trealamh seo mícheart ar ghréithe glónraithe: is féidir leo luaidhe a thaispeáint nach bhfuil ann, agus is féidir leo luaidhe a láistíonn a chailleadh. Glac le toradh dearfach mar chúis le stop a chur le húsáid an phíosa, agus le toradh diúltach mar rud nach gcruthaíonn aon rud. Is é tástáil saotharlainne láistithe miotal ar an bpíosa bácáilte (ASTM C738 i SAM; EN 1388 nó ISO 6486 san Eoraip) an fíorfhreagra.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> Ciallaíonn “slán i gcomhair bia” go scaoileann an glónra seo, ar an gcré seo, bácáilte go dtí an cón seo san áith seo agus curtha air ar an mbealach seo, níos lú ná na teorainneacha dlíthiúla. Is féidir leis an aip Glazecalc cabhrú leat glónra cobhsaí a thógáil, agus is féidir leis an ngné **Ionadaigh an luaidhe** sean-oideas luaidhe a atógáil gan luaidhe, ach ní féidir le haon áireamhán pota a dheimhniú. Ní féidir é sin a dhéanamh ach le tástáil ar an bpíosa bácáilte.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Sainmheáchan agus cur i bhfeidhm {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### Sainmheáchan
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+Is **draoib**{{en: slurry}} é púdar glónra measctha le huisce. Is é a **sainmheáchan**{{en: specific gravity}} (**SM**) a mheáchan i gcomparáid le meáchan na toirte céanna uisce, a bhfuil sainmheáchan 1.0 aige: dá airde é, is ea is mó púdair sa bhuicéad. Deir Glazy gur “pointe tosaigh maith d’fhormhór na nglónraí” é 1.4–1.5. Chun é a thomhas, meáigh 100 mL de dhraoib go díreach (molann Glazy steallaire) agus roinn ar 100: ciallaíonn 145 g sainmheáchan 1.45. Ní bhíonn hidriméadair iontaofa i nglónraí glóthaithe, agus galaíonn uisce, mar sin seiceáil arís sula nglónraíonn tú.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Bíonn spriocanna difriúil ó fhoinse go foinse. Cuireann Digitalfire glónraí tumtha ag 1.40–1.50 agus glónraí scuabtha tráchtála ag 1.25–1.55, agus tugann Potclays 1.71–1.81 do scuabadh agus 1.71 do spraeáil. Ár gcomhairle: tum ag thart ar 1.45 agus an glónra beagán glóthaithe, lean an lipéad do ghlónra scuabtha, agus scríobh síos a n-oibríonn.
+
+Glóthaíonn **flocasach**{{en: flocculant}} (salann Epsom, fínéagar nó clóiríd chailciam) draoib beagán, rud a fhágann **ticseatrópach**{{en: thixotropic}} í: sreabhann sí nuair a chorraítear í agus téachtann sí nuair a bhíonn sí socair, le haghaidh “clúdach glónra cothrom gan sileadh”. Tanaíonn **dífhlocasach**{{en: deflocculant}} (sileacáit sóidiam nó Darvan) í. Pléann an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze) meascadh agus coigeartú.
+
+### Glónra a chur air
+
+Glan deannach agus bealadh de na brioscghréithe ar dtús le spúinse ar éigean tais seachas iad a ní, rud a dhéanann maothán díobh. Ná séid an deannach díobh le haer comhbhrúite agus ná scuab tirim iad: cuireann sé sin deannach silice san aer ([Meascadh sábháilte agus aeráil](/guides/safe-mixing#cleaning)).
+
+- “Tugann **tumadh** brat atá cothrom ó thaobh tiús de go ginearálta” (Robin Hopper). Socraíonn an t-am tumtha an tiús: tugann Digitalfire faoi deara go ndéantar glónraí tumtha tráchtála ag thart ar 1.4 do thumadh 5 soicind agus 1.5 do thumadh 1 soicind.
+- Ba cheart glónra **doirte** a bheith “beagán níos tanaí ná nuair a úsáidtear é le haghaidh tumtha”; san áit a bhforluíonn doirteadh, dúblaítear an brat agus d’fhéadfadh sé rith.
+- Bíonn guma mar **CMC**{{en: CMC gum}} i nglónraí **scuabtha**, a chabhraíonn leis an nglónra sreabhadh agus greamú, agus a dhónn ansin. Teastaíonn roinnt brat ó fhormhór acu, dhá nó trí bhrat go minic; lean an lipéad.
+- Úsáideann **spraeáil** glónra i bhfad níos tanaí, curtha air i “roinnt brat tanaí, ag méadú an tiús de réir a chéile”.
+
+> [!WARNING]
+> Ná spraeáil ach i mboth spraeála aeráilte, agus masc análaitheora a oireann i gceart duit á chaitheamh agat. Féach an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing).
+
+Is féidir le brat róthiubh snámh, clogadh nó rith. Téann rialacha ordóige na soláthraithe ó thiús cárta creidmheasa go tiús dím, bonn deich gcent SAM, thart ar 1 mm de ghlónra tirim de réir ár meastacháin; is iad tíleanna tástála ag roinnt tiúis an tseiceáil iontaofa. Coinníonn **céirdhíonadh**{{en: wax resist}} ar an mbonn an glónra amach, ionas nach féidir leis an bpota greamú den tseilf, agus cosnaíonn **brat seilfe**{{en: kiln wash}}, brat teasfhulangach de chaoilín agus silice go minic, na seilfeanna ar bhraonta.
+
+## Ocsaídiú agus dí-ocsaídiú {#atmosphere}
+
+Athraíonn na gáis san áith, a **hatmaisféar**, an chaoi a dtagann glónraí amach. Ciallaíonn **ocsaídiú**{{en: oxidation}} neart ocsaigine. “Is ionann áitheanna leictreacha agus bácáil ocsaídithe,” a deir Digitalfire, agus de ghnáth bíonn glónraí ocsaídithe níos gile ná glónraí dí-ocsaídithe, go háirithe ag teochtaí níos ísle. Faoi ocsaídiú, tugann copar glas agus turcaidh, agus iarann donn, buídhonn agus dearg. Is féidir le háith leictreach a bhfuil drochaeráil uirthi, agus í lán de ghréithe a scaoileann gáis, a bheith níos neodraí ná mar a bhí beartaithe; cabhraíonn gaothaire atá ceangailte go díreach leis an áith.
+
+Srianann **dí-ocsaídiú**{{en: reduction}} an ocsaigin d’aon ghnó, in áith gháis, in áith adhmaid nó in áith speisialaithe de ghnáth. Iompaíonn copar dearg, agus éiríonn iarann ina fhlosc níos láidre agus tugann sé **ceileadón** (gormghlas go liathghlas, ó thart ar ½–2% iarainn) agus **tenmoku** (temmoku: donn-dubh, thart ar 5–10% iarainn). Deir Glazy go “mbraitheann” ceileadóin agus dearga copair “ar dhí-ocsaídiú”. Athraíonn an chré freisin: i gcomparáid amháin de chuid Digitalfire, tháinig cré-ábhar cruachré amach liath faoi dhí-ocsaídiú agus buíghnéitheach faoi ocsaídiú. Is féidir le carbaíd sileacain i nglónra limistéir bheaga dí-ocsaídithe a dhéanamh fiú in áith leictreach. Do dhí-ocsaídiú ó chón{{en: cone}} 010 go cón 3, molann Orton a chóin gan iarann.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Bí ag súil go dtiocfaidh oideas a scríobhadh d’áith gháis dí-ocsaídithe amach difriúil in áith leictreach: ní bheidh an chuma chéanna faoi ocsaídiú ar cheileadón nó ar dhearg copair a bhraitheann ar dhí-ocsaídiú. Seiceáil cén t-atmaisféar dar scríobhadh oideas, agus nótáil d’atmaisféar féin, leis an gcón, i nótaí an oidis san aip Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Scaoileann gach áith múch, áitheanna leictreacha san áireamh, mar sin aeráil í. Míníonn an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing) conas.
 
-## Glossary {#glossary lang=en}
+## Gluais {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Ábhar datha agus lí (colorant and stain)
+: Ocsaíd nó carbónáit mhiotail a chuireann dath ar ghlónra; is ábhar datha níos cobhsaí é lí, a dhéantar i monarcha.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Aonbhácáil (once-firing, single firing)
+: Gréithe neamhbhácáilte a ghlónrú agus iad a bhácáil uair amháin.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Alúmana (alumina, Al₂O₃)
+: An príomhchobhsaitheoir: stopann sé rith agus cuireann sé cruas leis. Ó chréanna agus ó iathchlocha.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Amh-earraí (greenware)
+: Gréithe neamhbhácáilte: leatharchrua nuair a bhíonn siad righin ach tais, cnámhthirim nuair nach mbíonn aon uisce saor fágtha.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+Bácáil glónra (glaze firing; UK: glost firing)
+: An bhácáil a leánn an glónra.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Bánlí (whiting)
+: Carbónáit chailciam, an príomhfhlosc cailciam; cailleann sé thart ar 44% dá mheáchan le linn bácála, mar dhé-ocsaíd charbóin.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Beintinít (bentonite)
+: Cré an-mhín a chuirtear leis ag thart ar 1–2% chun an glónra a choinneáil gan síothlú. Is féidir le níos mó ná 3% an glónra a scoilteadh de réir mar a thriomaíonn sé.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Bórón (boron, B₂O₃)
+: Foirmeoir gloine go foirmiúil ach úsáidtear mar fhlosc é; riachtanach ó chón 06 go cón 6.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Brat seilfe (kiln wash)
+: Brat teasfhulangach a chosnaíonn seilfeanna na háithe ar bhraonta.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Breiseán (additive)
+: Ábhar datha, teimhneoir nó oibreán fuaidreáin a chuirtear anuas ar 100 an oidis.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Brioscbhácáil (bisque; UK: biscuit)
+: An chéad bhácáil, níos ísle, cón 08–04 de ghnáth (06–04 is minice), a fhágann gréithe láidir ach póiriúil.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Cailliúint ar adhaint (LOI, loss on ignition)
+: Meáchan a chailltear le linn bácála mar uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Caoilín (kaolin; UK: china clay)
+: Cré bhán ghlan a sholáthraíonn alúmana agus silice; cabhraíonn sí leis an nglónra gan síothlú. San Astráil, is branda amháin é Eckalite.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Céirdhíonadh (wax resist)
+: Céir a phéinteáiltear san áit nach mór don ghlónra gan dul, an bonn de ghnáth.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+CMC (CMC gum)
+: Guma ceallalóis a chabhraíonn le glónra dul air le scuab agus greamú; dónn sé.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Cobhsaitheoir (stabilizer)
+: Ocsaíd, alúmana den chuid is mó, a dhéanann an leátán níos righne agus a chuireann buanfas leis.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Cóimheas silice le halúmana (silica to alumina ratio)
+: An tsilice roinnte ar an alúmana san fhoirmle Seger: claonann luach níos airde i dtreo lonrach, luach níos ísle i dtreo neamhlonrach.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Cón (cone)
+: Piriméad ceirmeach calabraithe a lúbann ag obair teasa shocraithe. Léiríonn cón fianaise a bhfuair na potaí.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Cré-earraí (earthenware)
+: Cré-ábhar ísealbhácála (thart ar chón 06–02), póiriúil ag cóin ísle agus níos dlúithe nuair a bhácáiltear níos teo é.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Díghloiniú (devitrification)
+: Criostail ag fás as an ngloine go luath san fhuarú, áit nach bhfuil siad ag teastáil.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Flocasach agus dífhlocasach (flocculant and deflocculant)
+: Breiseáin a ghlóthaíonn draoib (salann Epsom, fínéagar) nó a thanaíonn í (sileacáit sóidiam, Darvan).
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Earraí cruachré (stoneware)
+: Cré-ábhar meánbhácála nó ardbhácála (thart ar chón 5–10) a éiríonn gloiní nó beagnach gloiní.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Flosc (flux)
+: Ocsaíd a íslíonn teocht leá na silice.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Fo-ghlónra (underglaze)
+: Sliopa daite nó maisiú ocsaíde, faoi ghlónra glé de ghnáth.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Foirmeoir gloine (glass former)
+: An ocsaíd a thógann an ghloine, silice de ghnáth.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Foirmle Seger (UMF, unity molecular formula, Seger formula)
+: Ocsaídí glónra mar chomhaireamh móilíní, scálaithe ionas gurb ionann iomlán na bhfloscanna agus 1.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Foirmle teorann (limit formula, target formula)
+: Raonta tipiciúla san fhoirmle Seger do ghlónraí cobhsaí ag cón áirithe; treoir, ní ráthaíocht.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+Friot (frit)
+: Gloine a dhéantar i monarcha, leáite, múchta agus meilte, a dhéanann ocsaídí intuaslagtha nó tocsaineacha dothuaslagtha.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Glónra (glaze)
+: Brat gloine a leánn le linn bácála chun pota a shéalú agus a mhaisiú.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Glónra líneála (liner glaze)
+: Glónra cobhsaí, glé nó bán de ghnáth, do dhromchlaí a mbíonn bia orthu.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Gloiniú (vitrification)
+: Cré-ábhar ag éirí gloiní agus neamhphóiriúil le linn bácála.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Iathchloch (feldspar)
+: Mianra a sholáthraíonn flosc alcaileach le halúmana agus silice: iathchloch photaise, iathchloch shóide nó siainít neifilín.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Láisteadh (leaching)
+: Miotail ag tuaslagadh as glónra bácáilte isteach i mbia nó i ndeoch.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Lonrach, leathlonrach agus neamhlonrach (gloss, satin and matte)
+: Frithchaiteach agus mín; loinnir mhaolaithe; dubhghnéitheach.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Meallchré (ball clay)
+: Cré phlaisteach ina bhfuil níos mó iarainn agus ábhair orgánaigh ná i gcaoilín.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Obair teasa (heatwork)
+: Éifeacht na teochta agus an ama le chéile in áith; an rud a thomhaiseann cóin.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Ocsaíd (oxide)
+: Comhdhúil d’eilimint le hocsaigin; liostaíonn anailís ocsaíde iad de réir céatadáin meáchain.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Ocsaídiú agus dí-ocsaídiú (oxidation and reduction)
+: Bácáil le neart ocsaigine (áitheanna leictreacha), nó leis an ocsaigin srianta (gás nó adhmad de ghnáth).
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Oideas baisce (batch recipe)
+: Amhábhair ghlónra de réir meáchain, arb ionann a n-iomlán agus 100 de ghnáth.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Oiriúint ghlónra (glaze fit)
+: Cé chomh maith is a réitíonn forbairt theirmeach an ghlónra agus an chré-ábhair; fágann oiriúint mhaith an glónra faoi bheagán comhbhrú.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Poill bhioráin agus clogadh (pinholing and blistering)
+: Poill bheaga, nó cráitéir le himill ghéara, san áit ar éalaigh gás tríd an leátán.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Poirceallán (porcelain)
+: Cré-ábhar bán ardbhácála atá saibhir i gcaoilín, tréshoilseach go minic.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+R₂O agus RO (R₂O and RO)
+: Na floscanna alcaileacha (Na₂O, K₂O, Li₂O) agus na floscanna cré-alcaileacha (CaO, MgO, BaO, SrO, le ZnO).
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Sainmheáchan (SG, specific gravity)
+: Meáchan draoibe i gcomparáid le meáchan na toirte céanna uisce.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Scáineadh (dunting)
+: Scoilteanna i bpota de bharr strus fuaraithe nó téimh, go minic ag aisiompú na grianchloiche, {{1063 °F; 573 °C}}.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Silice (silica, SiO₂)
+: An foirmeoir gloine; tugtar breochloch nó grianchloch air freisin.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Slán i gcomhair bia (food safe)
+: Sa dlí, níos lú luaidhe agus caidmiam a scaoileadh i dtástáil aigéid ná na teorainneacha. Ní hionann é agus gan luaidhe.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Sliopa agus engobe (slip and engobe)
+: Cré in uisce; is brat cosúil le sliopa é engobe ina bhfuil níos mó ábhair nach cré é.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Snámh (crawling)
+: An glónra ag tarraingt siar ina bhraonta le linn bácála, ag fágáil cré lom.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Snáithlíonrú (crazing)
+: Scoilteanna míne i nglónra a chrapann níos mó ná a chré-ábhar; gréasán scoilteanna maisiúil (crackle) nuair a bhíonn sé ag teastáil.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Spallú glónra (shivering)
+: An glónra ag scealpadh de na himill mar go bhfuil sé róchomhbhrúite; guais ar ghréithe úsáide.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Sraith cumaisc (line blend)
+: Tástálacha a mhéadaíonn comhábhar amháin céim ar chéim idir dhá mhéid. Athraíonn cumasc trí-aiseach trí cinn ar ghreille.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Teimhneoir (opacifier)
+: Ábhar, mar shiorcón, ocsaíd stáin nó dé-ocsaíd tíotáiniam, a dhéanann glónra teimhneach.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+Ticseatrópacht (thixotropy)
+: Sreabhadh nuair a chorraítear í, agus téachtadh ina glóthach bhog nuair a bhíonn sí socair.
 
-## Sources {#sources lang=en}
+## Foinsí {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -486,7 +486,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (trí The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -502,19 +502,19 @@ Whiting
 - [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
 - [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
 - [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
-- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
-- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
-- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
+- R. T. Stull, “Influences of variable silica and alumina on porcelain glazes of constant RO”, Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb agus Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (tábla Minerals Yearbook, trí Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
+- [EUR-Lex: Treoir 84/500/CEE ón gComhairle an 15 Deireadh Fómhair 1984 maidir le comhfhogasú dhlíthe na mBallstát a bhaineann le hearraí ceirmeacha atá ceaptha teacht i dteagmháil le bia](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: rialachán Ollainnis an 23 Aibreán 2026 a chuireann cinneadh Benelux ar earraí ceirmeacha i dteagmháil le bia i bhfeidhm](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
-- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [Federal Register, 12 Eanáir 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
 - [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
 - [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
 - [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)

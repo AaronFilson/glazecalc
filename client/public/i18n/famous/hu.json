@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Az oldal egy része még nincs lefordítva, ezért angolul jelenik meg.",
+  "index": {
+    "crumb": "Híres mázak",
+    "title": "Híres mázak",
+    "lead": "Világszerte ismert mázak, mindegyik a hagyományos helyi nyersanyagaiból, a Seger-képletével és egy változattal azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él.",
+    "listHeading": "A mázak",
+    "more": "További mázak is jönnek: mindegyik akkor kerül fel, amikor a receptje és a nyersanyagai legalább három elolvasott forráson alapulnak."
+  },
+  "glaze": {
+    "lead": "Egy híres máz ({native}): hagyományos receptje vagy összetétele, égetése, és egy változata azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él.",
+    "aboutHeading": "A(z) {name} mázról",
+    "nativeName": "Eredeti név",
+    "origin": "Hol",
+    "period": "Mikor",
+    "firing": "Égetés",
+    "cone": "gúla: {cone}",
+    "historyOnly": "Csak történeti adat: ez a máz ólommal készült. Az összetétele történeti adatként szerepel, nem bekeverendő receptként. Az alábbi változat egy másik máz, ólom nélkül.",
+    "recipeHeading": "A hagyományos recept",
+    "material": "Nyersanyag",
+    "amount": "Mennyiség",
+    "unityHeading": "Seger-képlet",
+    "analysisHeading": "Történeti összetétel",
+    "oxide": "Oxid",
+    "percent": "Tömeg%",
+    "useHeading": "Próbálja ki",
+    "open": "A recept megnyitása",
+    "openLeadFree": "Az ólommentes változat megnyitása",
+    "leadFreeTitle": "{name} stílusú, ólommentes",
+    "allLink": "Az összes híres máz",
+    "safetyHeading": "Biztonság",
+    "safeMixing": "Biztonságos keverés és szellőzés",
+    "firingGuide": "Égetés egyszerű kemencében",
+    "makingGuide": "Mázkészítés",
+    "sourcesHeading": "Források",
+    "link": "Megnyitás",
+    "opened": "olvasva: {date}"
+  },
+  "local": {
+    "heading": "Az Ön helyi nyersanyagaiból",
+    "leadFreeHeading": "Ólommentes változat",
+    "intro": "A hagyományos recept Seger-képlete azokból a beépített nyersanyagokból összeállítva, amelyeket ott forgalmaznak, ahol Ön vásárol. A megtekintéséhez válassza ki, hol vásárol.",
+    "region": "Ahol a nyersanyagokat vásárolja",
+    "proposal": "A javaslat saját nyersanyagai",
+    "pick": "Válasszon…",
+    "untested": "Számított változat, próbaégetés még nem volt.",
+    "testFirst": "Mielőtt bármilyen árun használná, égessen próbalapokat, és az élelmiszerrel érintkező felületet vizsgáltassa meg kioldódásra.",
+    "untestedNote": "Számított változat, próbaégetés még nem volt: használat előtt égessen próbalapokat.",
+    "close": "Közel kerül a célképlethez.",
+    "fair": "Elég közel kerül a célképlethez.",
+    "poor": "Ezekkel a nyersanyagokkal nem lehet a célképlet közelébe jutni.",
+    "none": "Az ott forgalmazott nyersanyagokból nem készíthető el.",
+    "choose": "Válassza ki, hol vásárolja a nyersanyagokat, és megmutatjuk az ott forgalmazottakból összeállítva."
+  },
+  "atmospheres": {
+    "oxidation": "oxidáló",
+    "reduction": "redukciós",
+    "neutral": "semleges",
+    "wood": "fatüzelés",
+    "salt": "sómázas égetés",
+    "soda": "szódás égetés"
+  }
+}

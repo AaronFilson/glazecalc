@@ -9,6 +9,7 @@
     "homeSafety": "Forgift ikke familien - Glazecalc",
     "firing": "Brænding i en enkel ovn - Glazecalc",
     "learnWithJohnBritt": "Lær med John Britts gratis glasurkursus - Glazecalc",
+    "teachingGlazeCalculation": "Undervisning i glasurberegning - Glazecalc",
     "about": "Om Glazecalc",
     "privacy": "Privatlivspolitik - Glazecalc",
     "terms": "Brugsvilkår - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Godkend en ændring - Glazecalc",
     "cones": "Kegleskema: temperaturer for Orton- og SK-kegler - Glazecalc",
     "materials": "Standardråvarer til glasur: analyse og farer - Glazecalc",
-    "materialInfo": "{name}: oxidanalyse og farer - Glazecalc"
+    "materialInfo": "{name}: oxidanalyse og farer - Glazecalc",
+    "famousGlazes": "Berømte glasurer - Glazecalc",
+    "famousGlaze": "Glasuren {name} - Glazecalc"
   },
   "nav": {
     "skip": "Spring til indholdet",
@@ -177,6 +180,7 @@
     "homeSafety": "Hvad der skal gøres, hvis et barn eller et kæledyr sluger en råvare til glasur, og hvordan råvarer, støv, ovn og håndlavet keramik holdes sikre for familien.",
     "firing": "Sådan brændes en elektrisk ovn: Vælg, sæt og aflæs kegler, og følg offentliggjorte brændekurver til forglødning og glasurbrænding. Med kegletabel.",
     "learnWithJohnBritt": "Ledsager til John Britts gratis onlinekursus i glasur: hans videoer enhed for enhed, med Glazecalcs vejledninger og øvelser at prøve i beregneren.",
+    "teachingGlazeCalculation": "6 lektioner til undervisning i Seger-formlen (UMF): råvarer og trekantsforsøg, mol, fra opskrift til formel og tilbage igen og glasurfejl, med gennemregnede eksempler og arbejdsark til udskrift.",
     "advice": "Praktiske råd om blanding, glasering og brænding fra Glazecalc samt dine egne råd. Gratis for keramikere og pottemagere.",
     "about": "Glazecalc er en gratis open source-beregner og notesbog til glasurkemi. Se, hvordan den beregner en Seger-formel (UMF), og hvordan den er bygget.",
     "privacy": "Sådan håndterer Glazecalc dine data: ingen reklamer, webanalyse eller sporing, og intet sælges. Hvad der gemmes, hvorfor, og hvordan du bruger dine rettigheder.",
@@ -187,6 +191,8 @@
     "materials": "Glasurråvarerne i Glazecalcs standardbibliotek, fra feldspater og ler til fritter og borkilder, hver med sin oxidanalyse, Seger-formel og farer.",
     "materialInfo": "{name}: oxidanalyse, Seger-formel, glødetab og farer i Glazecalcs standardbibliotek.",
     "materialInfoLong": "{name} i Glazecalcs standardbibliotek over glasurråvarer: oxidanalyse, bidrag til Seger-formlen, glødetab og farer.",
+    "famousGlazes": "Berømte glasurer fra hele verden: hver glasurs traditionelle opskrift eller historiske analyse, dens Seger-formel og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger.",
+    "famousGlaze": "Glasuren {name} ({native}): dens traditionelle opskrift eller historiske analyse, brænding, Seger-formel og kilder og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger.",
     "imageAlt": "Glazecalcs logo og overskrift, gratis glasurkemi for keramikere, ved siden af et foto af brændte keglesæt."
   },
   "notices": {

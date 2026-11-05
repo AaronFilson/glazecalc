@@ -59,31 +59,31 @@ Label: Lahustuvad toorained
 
 Plii peamine oht on teistsugune: mitte üks lusikatäis, vaid väikesed kogused tolmu, mis neelatakse alla nädalate või kuude jooksul ilma ühegi hoiatava märgita (vt allpool jaotist „Plii ja lapsed“).
 
-## Storing materials at home {#storing-materials lang=en}
+## Toorainete hoiustamine kodus {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Ükski ametiasutus ei kehtesta reegleid glasuuri toorainete hoiustamiseks kodus, kuid tervise- ja ohutusalased lehed on ühel meelel: hoidke töö omaette ruumis, lastest eemal. Pennsylvania terviseamet kirjutab pliid kasutavate hobide kohta: „Kasutage oma hobi jaoks selleks ette nähtud tööruumi või garaaži ja hoidke lapsed sellest alast eemal.“
 
-### A storage checklist
+### Hoiustamise kontrollnimekiri
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Need on üldised mürgistuste ennetamise reeglid, mida on rakendatud glasuurile. Ükski keraamikastandard neid ei kehtesta, kuid see juhend soovitab neid kõiki:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Hoidke kuivad toorained lukustatult: kapis või toas, garaažis või kuuris, mida saab lukustada. Kõrge riiul aitab, kuid lapsed ronivad. Kui saate alguses lukustada ainult mõne asja, alustage lahustuvatest toorainetest ja värvainetest.
+- Hoidke tooraineid nende originaalkottides või -karpides. Kui tõstate mõne teise anumasse, märgistage see nimega täpselt nii, nagu see on kotile kirjutatud.
+- Ärge kunagi kasutage glasuuri toorainete jaoks toidu- või joogianumaid (jogurtitopse, purke, pudeleid), isegi mitte märgistatuna. Laps teab, mis on jogurtitopsis.
+- Hoidke töökoja tööriistad (kühvlid, lusikad, visplid, sõelad, kaalud) töökojas. Ärge kunagi kasutage köögitarbeid glasuuri jaoks ega glasuuritööriistu toidu jaoks.
+- Hoidke märgi glasuure märgistatud ämbrites, kaaned peal.
+- Hoidke iga tooraine ohutuskaart selle juures, paberil või telefonis.
+- Ärge hoidke köögis midagi töökojast: ei kotte, ämbreid, tööriistu ega proovitükke.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Toorainete ostmisest ja hoiustamisest lähemalt vt juhendit [Glasuuri valmistamine](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Glasuurijäätmed ja loputusvesi
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Ärge kunagi valage glasuuri ega vett, milles olete glasuuritööriistu loputanud, kraanikaussi ega aeda. Ühendkuningriigi Crafts Council soovitab käte, pintslite, sõelte ja tööriistade pesemiseks eraldi veeämbrit. Laske sellel üleöö settida, valage selge vesi ära, seejärel kuivatage settinud glasuur ja pange see prügikasti (see läheb prügilasse), mitte kunagi kanalisatsiooni.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+See juhend soovitab sellele ämbrile kaant: setted sisaldavad samu metalle mis glasuur ja lemmikloomad joovad seisvat vett. Jäätmete kõrvaldamise reeglid on eri kohtades erinevad, seega kontrollige iga toote ohutuskaarti ja kui te pole kindel, küsige kohalikult omavalitsuselt või veeettevõttelt.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Mõned töökojad põletavad kuivanud setted enne äraviskamist. Need pannakse varukaussi, mis läheb kasutusse: pärast põletust ei saa kaussi enam kasutada. Täitke kauss ainult veerandini, sest setted vahutavad ja mullitavad sulades, ning katke see taldrikuga. Asetage see kaitseainega kaetud ahjuplaadile või varuplaadile juhuks, kui see üle voolab. Põletus muudab setted klaasiks, mis hoiab metalle palju tugevamalt kinni kui lahtine pulber, nii et see on prügilas ohutum. Käsitsege kuivi setteid nagu kuiva glasuuri: respiraatoriga ja tolmu tekitamata.
 
 ## Tolmu hoidmine töökojas {#keeping-dust-in-the-studio}
 
