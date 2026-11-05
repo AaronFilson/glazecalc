@@ -1209,6 +1209,7 @@ describe('MCP: the guides, resources and prompts', () => {
       'glazecalc://guides/en/learn-with-john-britt',
       'glazecalc://guides/en/making-a-glaze',
       'glazecalc://guides/en/safe-mixing',
+      'glazecalc://guides/en/teaching-glaze-calculation',
       'glazecalc://skills/glazecalc-dictation'
     ]);
     for (const resource of resources) {
