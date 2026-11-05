@@ -460,7 +460,7 @@ A manual kiln follows the same plan by hand: dry slowly with the lid propped and
 
 ## Glaze firing {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most beginners fire low-fire glazes at cone 06–04 or mid-fire glazes at cone 5–6. Fire to the cone on your clay and glaze labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
 ### Loading for a glaze firing
 
