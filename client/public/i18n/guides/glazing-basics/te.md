@@ -3,480 +3,480 @@ title: ప్రాథమిక సిద్ధాంతాల నుండి �
 lead: గ్లేజ్ దేనితో తయారవుతుంది, కిల్న్ దాన్ని గాజుగా ఎలా మారుస్తుంది, రెసిపీ మీద, బస్తా మీద, కోన్ చార్ట్ మీద మీకు ఎదురయ్యే ప్రతి పదం, వివరణతో.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## గ్లేజ్ అంటే ఏమిటి {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**గ్లేజ్ (గాజు పూత)**{{en: glaze}} అంటే పాత్రకు కరిగి అతుక్కున్న పలుచని గాజు పూత. ఓపెన్ గ్లేజ్-రెసిపీ డేటాబేస్ అయిన Glazy దీన్ని “కొన్ని ఉష్ణోగ్రతల వద్ద మట్టిపై కరిగి అతుక్కునేలా సరిచేసిన గాజు సూత్రం” అంటుంది. దీన్ని పొడి పొరగా వేస్తారు, అది కిల్నులో (బట్టీలో) కరిగి మట్టిని మూసివేసే గాజులాంటి పూతగా మారుతుంది, దాంతో పాత్ర కారే, మరకలు పడే, అరిగిపోయే అవకాశం తక్కువ. ఫైరింగ్ పీక్ వద్ద కరిగిన గ్లేజ్ మట్టితో కూడా చర్య జరుపుతుంది, తరచుగా వాటి మధ్య ఒక పొరను ఏర్పరుస్తుంది, అది గ్లేజును గట్టిగా పట్టి ఉంచుతుంది. తక్కువ వేడిలో కాల్చే ఎర్తెన్వేర్ (మట్టి పాత్రలు){{en: earthenware}} మీద ఈ పొర పలుచగా ఉంటుంది, గ్లేజ్ ఎక్కువగా పైనే ఉంటుంది. ఎక్కువ వేడిలో కాల్చే స్టోన్వేర్ (రాతి పాత్రలు){{en: stoneware}}, పోర్సిలెయిన్ మీద ఈ పొర మందంగా ఉంటుంది, గ్లేజ్ మట్టిని మరింత గట్టిగా పట్టుకుంటుంది. అయినా గ్లేజ్ గాజుగానే ఉంటుంది: అది మట్టిలో భాగం కాదు.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+రెసిపీలో ఫెల్డ్స్పార్{{en: feldspar}}, వైటింగ్ (కాల్షియం కార్బొనేట్){{en: whiting}}, కయోలిన్ (చైనా క్లే){{en: kaolin}} లాంటి ముడి పదార్థాలు ఉంటాయి. కిల్నులో ప్రతి దానిలో కొంత భాగం వాయువుగా (నీరు లేదా కార్బన్ డయాక్సైడ్) బయటకు పోతుంది, మిగతాది **ఆక్సైడులు**గా మారుతుంది: ఒక మూలకం ఆక్సిజనుతో కలిసి ఏర్పడిన సమ్మేళనాలు, ఉదాహరణకు సిలికా{{en: silica}} (SiO₂) లేదా కాల్షియం ఆక్సైడ్ (CaO). కాల్చిన గాజు ఆక్సైడులతో తయారవుతుంది, అందుకే కుండల కళాకారులు గ్లేజును వాటి ద్వారా వివరిస్తారు. ప్రతి ఆక్సైడ్ మూడు పనులలో ఒకటి చేస్తుంది.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **సిలికా** (SiO₂) **గ్లాస్ ఫార్మర్ (గాజును ఏర్పరిచే ఆక్సైడ్)**{{en: glass former}}: అది గాజును నిర్మిస్తుంది. స్వచ్ఛమైన సిలికా {{3100 °F; 1700 °C}} కంటే ఎక్కువ వేడి వద్ద కరుగుతుంది, ఇది కుండల కిల్న్ వేడి కంటే చాలా ఎక్కువ, సిలికా ఎక్కువగా ఉన్న గ్లేజ్ సాధారణంగా ఎక్కువ మన్నికగా ఉంటుంది.
+- **ఫ్లక్సులు (ద్రవీకారులు)**{{en: flux}} కరిగే ఉష్ణోగ్రతను కిల్న్ చేరగల స్థాయికి తగ్గిస్తాయి. **క్షారాలు**, **R₂O** అని రాస్తారు, సోడియం, పొటాషియం, లిథియం ఆక్సైడులు (Na₂O, K₂O, Li₂O); ఇవి కోన్ 06 నుండి మిడ్ ఫైర్, హై ఫైర్ వరకు పని చేస్తాయి. **క్షార మృత్తికలు**, **RO** అని రాస్తారు, కాల్షియం, మెగ్నీషియం, బేరియం, స్ట్రాన్షియం ఆక్సైడులు (CaO, MgO, BaO, SrO); జింక్ ఆక్సైడ్ (ZnO) కూడా వాటితో కలిపి లెక్కిస్తారు; ఇవి కోన్ 5 నుండి కోన్ 10 వరకు బాగా పని చేస్తాయి. R అంటే ఆ కుటుంబంలోని ఏ లోహమైనా.
+- **అల్యూమినా** (Al₂O₃) **స్టెబిలైజర్ ఆక్సైడ్ (స్థిరీకారి)**{{en: stabilizer}}. ఇది కరిగిన గ్లేజును గట్టిపరుస్తుంది, దాంతో అది నిలువు గోడల మీద నిలుస్తుంది; కాఠిన్యాన్ని, మన్నికను కూడా పెంచుతుంది. Glazy హెచ్చరిక: అల్యూమినా మరీ తక్కువగా ఉంటే “మీ గ్లేజ్ కారిపోవచ్చు; మరీ ఎక్కువైతే కరిగిన గ్లేజు గట్టిపడి మ్యాట్ అవ్వవచ్చు”. అల్యూమినా ఎక్కువగా మట్టి నుండి, ఫెల్డ్స్పార్ నుండి వస్తుంది.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**బోరాన్** (B₂O₃) ఈ గీతను అస్పష్టం చేస్తుంది. రసాయన శాస్త్రవేత్తలు దీన్ని గ్లాస్ ఫార్మర్గా వర్గీకరిస్తారు, కానీ స్టూడియో ఉష్ణోగ్రతల వద్ద ఇది ఫ్లక్సులా పని చేస్తుంది, కుండల కళాకారులు దీన్ని ఫ్లక్సుగానే చూస్తారు. లో ఫైర్, మిడ్ ఫైర్ వద్ద ఇది ప్రధాన ఫ్లక్స్: ఫైరింగ్ ఎంత తక్కువ వేడిగా ఉంటే, గ్లేజుకు అంత ఎక్కువ బోరాన్ అవసరం. కోన్ 10 వద్ద సాధారణంగా ఇది అవసరం లేదు. (కోనులు, అంటే కుండల కళాకారులు ఫైరింగుకు పేరు పెట్టే పద్ధతి, కింద వివరించబడ్డాయి.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> ఒక విధంగా గుర్తుంచుకోండి: సిలికా గాజు, ఫ్లక్సులు దాన్ని మీ కిల్న్ చేరగల ఉష్ణోగ్రత వద్ద కరగనిస్తాయి, అల్యూమినా దాన్ని చిక్కబరుస్తుంది, దాంతో మీరు ఎక్కడ వేశారో అక్కడే ఉంటుంది.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## మట్టి, పూతలు, రెండు ఫైరింగులు {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### క్లే బాడీలు
 
-## From recipe to unity formula {#unity-formula lang=en}
+**క్లే బాడీ (మట్టి మిశ్రమం)**{{en: clay body}} అంటే పాత్ర తయారయ్యే మట్టి. మూడు ప్రధాన రకాలు ఉన్నాయి.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **ఎర్తెన్వేర్ (మట్టి పాత్రలు)**: లో ఫైర్ బాడీ, సుమారు కోన్ 06–02, తక్కువ కోనుల వద్ద అది రంధ్రాలు గలది (సచ్ఛిద్రం), ఎక్కువ వేడిలో కాల్చిన కొద్దీ దట్టంగా మారుతుంది. తరచుగా ఎరుపు లేదా లేత గోధుమ రంగులో ఉంటుంది, నీటిని ఆపడానికి దానికి గ్లేజ్ అవసరం.
+- **స్టోన్వేర్ (రాతి పాత్రలు)**: మిడ్ నుండి హై ఫైర్ బాడీ, సుమారు కోన్ 5–10, అది గాజులా (విట్రియస్) మారుతుంది లేదా దాదాపు అలా మారుతుంది.
+- **పోర్సిలెయిన్ (పింగాణీ)**: తెల్లని బాడీ, కయోలిన్ ఎక్కువగా ఉంటుంది, తరచుగా అర్ధపారదర్శకం. చాలా పోర్సిలెయిన్ హై ఫైర్, కానీ కోన్ 6 పోర్సిలెయిన్లు కూడా ఉన్నాయి.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**విట్రియస్ (గాజులాంటి)** అంటే గాజులా, రంధ్రాలు లేనిది; **విట్రిఫికేషన్ (గాజులా మారడం)** అంటే ఫైరింగులో బాడీ అలా మారడం. బ్రిటన్లోని కుండల కళాకారులు తరచుగా ఈ గీతను ఉష్ణోగ్రతతో గీస్తారు: స్టోన్వేరును {{2192 °F; 1200 °C}} కంటే ఎక్కువ వేడి వద్ద కాలుస్తారు, ఎర్తెన్వేరును దాని కంటే తక్కువ వద్ద. మిడ్ ఫైర్, కోన్ 5–6, ఆ గీతకు సరిగ్గా అటూ ఇటూ వస్తుంది.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### పూతలు, ఆరబెట్టడం
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**స్లిప్ (నీటిలో కలిపిన మట్టి)** అంటే నీటిలో తేలియాడే మట్టి, పోత పోయడానికి, అతికించడానికి లేదా అలంకరణకు. **ఎంగోబ్** అంటే స్లిప్ లాంటి పూత, తరచుగా రంగుతో, మట్టి కాని పదార్థాలు ఎక్కువగా ఉంటాయి. **అండర్గ్లేజ్** అంటే రంగు స్లిప్ లేదా ఆక్సైడుతో చేసిన అలంకరణ, సాధారణంగా క్లియర్ గ్లేజుతో కప్పబడుతుంది.
 
-### The silica to alumina ratio
+కాల్చని పాత్రలను **గ్రీన్వేర్ (పచ్చి పాత్ర)**{{en: greenware}} అంటారు (ఈ పదం కాల్చని పాత్రలన్నింటికీ వర్తిస్తుందా లేక ఆరిన పాత్రలకు మాత్రమేనా అనే దాని మీద మూలాల్లో భేదాభిప్రాయాలు ఉన్నాయి). ఆరుతున్నప్పుడు అది **లెదర్-హార్డ్ (సగం ఆరిన)** అవుతుంది, గట్టిగా కానీ కొద్దిగా తడిగా, ట్రిమ్ చేయడానికి, హ్యాండిళ్లు పెట్టడానికి అనువైన దశ; ఆ తర్వాత **బోన్-డ్రై (పూర్తిగా ఆరిన)**, ఇందులో స్వేచ్ఛా నీరు మిగలదు, చాలా పెళుసుగా ఉంటుంది, ఫైరింగుకు సిద్ధంగా ఉంటుంది.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### రెండు ఫైరింగులు
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+మొదటి, తక్కువ వేడి ఫైరింగ్ **బిస్క్ (మొదటి కాల్పు)**{{en: bisque}} (బ్రిటన్లో: **biscuit**), సాధారణంగా కోన్ 08–04 (ఎక్కువగా 06–04), సుమారు {{1728–1945 °F; 942–1063 °C}}. ఇది పాత్రలను బలంగా కానీ రంధ్రాలు గలవిగా వదులుతుంది. గ్లేజ్ సమాచార సైట్ Digitalfire సాధారణంగా 15% కంటే ఎక్కువ సచ్ఛిద్రతను సూచిస్తుంది, దాంతో గ్లేజ్ వేసేటప్పుడు బిస్క్ దానిలోని నీటిని లాగేసుకుంటుంది. సాఫ్ట్ బిస్క్ (కోన్ 08–06) ఎక్కువ రంధ్రాలు గలది; హార్డ్ బిస్క్ (తరచుగా కోన్ 04) ఎక్కువ దృఢమైనది, కానీ గ్లేజును తక్కువ సులభంగా తీసుకుంటుంది.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: బిస్క్ గ్లేజింగును ఎలా మారుస్తుంది (Digitalfire)
+Label: బిస్క్ గ్లేజింగును ఎలా మారుస్తుంది
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| బిస్క్                                                        | ఏం జరుగుతుంది                                                                          |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| తక్కువగా కాలినది, చాలా ఎక్కువ నీటిని పీల్చుకునేది             | గ్లేజ్ మరీ మందంగా పడి, తర్వాత పగుళ్లు వచ్చి క్రాల్ అవుతుంది                            |
+| ఎక్కువగా కాలినది, దట్టమైనది                                   | ముంచడానికి, ఆరడానికి ఎక్కువ సమయం పడుతుంది                                              |
+| ఎక్కువ వేడి వద్ద కాల్చినది, లేదా పీక్ వద్ద ఎక్కువసేపు ఉంచినది | ఇప్పుడే ఎక్కువ వాయువు కాలిపోతుంది, కాబట్టి తర్వాత గ్లేజు గుండా బుడగలు తక్కువగా వస్తాయి |
 
-### Loss on ignition
+UK సరఫరాదారు Potclays బిస్క్ ఫైరింగును సుమారు {{1000 °C; 1832 °F}} వరకు వివరిస్తుంది, అంటే సుమారు కోన్ 06. ఈ మూలాలను కలిపి చదివి, మొదటి బిస్క్ కోసం కోన్ 06–04ను మేము సూచిస్తున్నాం: Orton మధ్యస్థ రేటు వద్ద {{1828–1945 °F; 998–1063 °C}}.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**గ్లేజ్ ఫైరింగ్ (రెండో కాల్పు)**{{en: glaze firing}} (బ్రిటన్ కుండల కళాకారులు దీన్ని **glost** ఫైరింగ్ అనవచ్చు) గ్లేజును కరిగిస్తుంది, స్టోన్వేరుకు అయితే మట్టి కూడా పూర్తిగా పక్వమయ్యేలా చేస్తుంది. **సింగిల్ ఫైరింగ్ (ఒక్కసారే కాల్చడం)**{{en: once-firing}} అంటే కాల్చని పాత్రలకు గ్లేజ్ వేసి ఒక్కసారే కాల్చడం. కాల్చని పాత్రలకు గ్లేజ్ వేసినప్పుడు వాటి అంచుల మీద గ్లేజ్ క్రాల్ అయిందని, బిస్క్ ఫైరింగ్ చేశాకే అది సరైందని ఉత్పత్తిలో జరిగిన ఒక ఉదంతాన్ని Digitalfire నివేదిస్తుంది, కాబట్టి రెండు ఫైరింగులతో మొదలుపెట్టండి. [సాధారణ కిల్నులో ఫైరింగ్](/guides/firing)లో రెండింటికీ షెడ్యూళ్లు ఉన్నాయి.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## కోనులు, హీట్వర్క్ {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+కుండల కళాకారులు ఫైరింగుకు **కోన్ (శంకువు)**{{en: cone}}తో పేరు పెడతారు: ఒక నిర్ణీత మొత్తంలో వేడి తగిలినప్పుడు వంగిపోయే సన్నని సిరామిక్ పిరమిడ్. వాటిని తయారు చేసే Orton కోనులను సమయం, ఉష్ణోగ్రతల (హీట్వర్క్) సూచికలు అంటుంది: అవి ఉష్ణోగ్రతను మాత్రమే కాదు, సమయం, ఉష్ణోగ్రత కలిసి కలిగించే ప్రభావాన్ని చూపుతాయి.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**హీట్వర్క్ (ఉష్ణోగ్రత, సమయాల మొత్తం ప్రభావం)**{{en: heatwork}} దీనికి కారణం: గ్లేజ్, మట్టి, కోన్ అన్నీ ఎంత వేడిగా ఉన్నాయి అనేదానికే కాదు, ఎంతసేపు వేడిగా ఉన్నాయి అనేదానికి కూడా స్పందిస్తాయి. నెమ్మదైన ఫైరింగ్ కోనును తక్కువ ఉష్ణోగ్రత వద్ద వంచుతుంది, వేగమైన ఫైరింగ్ ఎక్కువ వద్ద. Orton చార్టులో కోన్ 6, ఫైరింగ్ చివర్లో ఉష్ణోగ్రత గంటకు {{27 °F; 15 °C}} చొప్పున పెరిగితే {{2165 °F; 1185 °C}} వద్ద, గంటకు {{108 °F; 60 °C}} చొప్పున పెరిగితే {{2232 °F; 1222 °C}} వద్ద, గంటకు {{270 °F; 150 °C}} చొప్పున పెరిగితే {{2269 °F; 1243 °C}} వద్ద వంగుతుంది; ఈ రేటును చివరి {{180 °F; 100 °C}} పెరుగుదలలో తీసుకుంటారు. కోన్ కొన 90° వరకు వంగినప్పుడు అది పూర్తయినట్టు. కుండల కళాకారులు తరచుగా దీన్ని 5 గంటల స్థానం అంటారు.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+కోన్ నంబర్లు 022 నుండి 42 వరకు ఉంటాయి. ముందున్న సున్నా తక్కువ వేడి శ్రేణిని సూచిస్తుంది, అందులో నంబరు ఎంత పెద్దదైతే కోన్ అంత తక్కువ వేడి గలది: కోన్ 06, కోన్ 04 కంటే తక్కువ వేడి గలది, కోన్ 01, కోన్ 1 కంటే తక్కువ వేడి గలది.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: ఫైరింగ్ పరిధులు: Orton సెల్ఫ్-సపోర్టింగ్ కోనులు, గంటకు {{108 °F; 60 °C}} చొప్పున
+Label: ఫైరింగ్ పరిధులు
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| పరిధి     | కోనులు |          °F |          °C | ఉపయోగం                       |
+| --------- | ------ | ----------: | ----------: | ---------------------------- |
+| లో ఫైర్   | 06–04  | 1,828–1,945 |   998–1,063 | ఎర్తెన్వేర్ గ్లేజులు; బిస్క్ |
+| మిడ్ ఫైర్ | 5–6    | 2,167–2,232 | 1,186–1,222 | స్టోన్వేర్, పోర్సిలెయిన్     |
+| హై ఫైర్   | 9–10   | 2,300–2,345 | 1,260–1,285 | స్టోన్వేర్, పోర్సిలెయిన్     |
+
+> [!NOTE]
+> మీ ఫైరింగులకు కోన్ ప్రకారం పేరు పెట్టండి, ప్రోగ్రామ్ చేయండి, ఉష్ణోగ్రతలను సుమారు విలువలుగా పరిగణించండి. పాత్రల మధ్య షెల్ఫ్ మీద ఉంచిన **విట్నెస్ కోన్**{{en: witness cone}}, లేదా మూడు కోనుల **కోన్ ప్యాక్**{{en: cone pack}} (గైడ్, ఫైరింగ్, గార్డ్ కోనులు), మీ పాత్రలకు నిజంగా ఎంత హీట్వర్క్ అందిందో చూపుతుంది.
+
+ప్రచురితమైన ఉష్ణోగ్రతలు వేరువేరుగా ఉంటాయి. Glazy హై ఫైర్ను, కోన్ 9–11ను, సుమారు {{2336–2390 °F; 1280–1310 °C}} అని ఇస్తుంది, ఇది Orton వేగం కాలమ్తో సరిపోతుంది; Digitalfire కోన్ 6ను సుమారు {{2200 °F; 1204 °C}} అని ఇస్తుంది. మా సలహా: ఈ మార్గదర్శి చేసినట్లే Orton మధ్యస్థ రేటు విలువలను ఉపయోగించండి, కోన్ ప్రకారం ప్రోగ్రామ్ చేయండి, చివరికి విట్నెస్ కోన్ తేల్చనివ్వండి.
+
+ఉత్తర అమెరికా వెలుపల సరఫరాదారులు తరచుగా కోన్ బదులుగా °C ఇస్తారు. Hermann Seger ఆధునిక కోనును అభివృద్ధి చేశారు, దాన్ని 1886లో బెర్లిన్లో మొదటిసారి ఉపయోగించారు, బ్రిటన్కు తనదైన Staffordshire కోనులు ఉన్నాయి; వాటి నంబర్లు Orton నంబర్లతో సరిపోతాయని భావించకూడదు, వాటిని మార్చడానికి మాకు ఏ పట్టికా దొరకలేదు. [సాధారణ కిల్నులో ఫైరింగ్](/guides/firing) కోనుల గురించి మరింత వివరంగా చెబుతుంది.
+
+## రెసిపీ నుండి సెగర్ సూత్రం వరకు {#unity-formula}
+
+**బ్యాచ్ రెసిపీ**లో ముడి పదార్థాలు బరువు ప్రకారం ఇస్తారు, సాధారణంగా బేస్ మొత్తం 100 అయ్యేలా మారుస్తారు. **అడిటివులు** (కలరెంటులు, ఒపాసిఫైయరులు, సస్పెండరులు) ఆ 100 పైన కలుపుతారు, సాధారణంగా బేసులో శాతంగా. గ్లేజ్ అసలు ఏమిటో తెలుసుకోవడానికి, కుండల కళాకారులు రెసిపీని **యూనిటీ అణు సూత్రం**{{en: unity molecular formula}}గా (**UMF**, లేదా **సెగర్ సూత్రం**, దాని మూడు కాలములలో అమరికను మొదట వాడిన Hermann Seger పేరు మీదుగా) మారుస్తారు.
+
+Table: రెసిపీ నుండి సెగర్ సూత్రం వరకు: Glazy ఉదాహరణ
+Label: రెసిపీ నుండి సెగర్ సూత్రం వరకు
+
+| దశ                  | ఏం జరుగుతుంది                                                                                                                                   | ఉదాహరణలో                                                                                                                            |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 1. బ్యాచ్ రెసిపీ    | ముడి పదార్థాలు బరువు ప్రకారం, 100కు మార్చినవి                                                                                                   | ఫెల్డ్స్పార్ 40%, ఇతరాలతో పాటు                                                                                                      |
+| 2. ఆక్సైడ్ విశ్లేషణ | పోషకాహార లేబుల్ లాగా: ప్రతి పదార్థంలోని ఆక్సైడులను బరువు శాతంగా కలుపుతారు, వాయువులను వదిలేస్తారు                                                | ఫెల్డ్స్పారులో 64.8% సిలికా ఉంది, కాబట్టి దాని 40% 25.9% SiO₂ ఇస్తుంది. కాల్చిన గ్లేజ్ 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
+| 3. మోలులు           | బరువులు **మోలులు**గా మారుతాయి, అంటే అణువుల సంఖ్యలు, ఎందుకంటే “కొన్ని ఆక్సైడులు మిగతావాటి కంటే బరువైనవి కాబట్టి గ్రాములు తప్పుదారి పట్టించవచ్చు” | 60.1 g SiO₂ ఒక మోల్, కాబట్టి 67.4 g సుమారు 1.12 మోలులు                                                                              |
+| 4. యూనిటీ           | ప్రతిదాన్ని ఫ్లక్సుల మొత్తంతో భాగిస్తారు, దాంతో ఫ్లక్సులు కలిపి 1 అవుతాయి                                                                       | ఫ్లక్సుల మొత్తం 0.303; భాగిస్తే K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                                           |
+
+Glazecalc [రెసిపీ పేజీ](/recipe) ఈ నాలుగు దశలనూ మీరు టైప్ చేస్తుండగానే చేస్తుంది, ఫలితాన్ని మూడు కాలములలో చూపుతుంది: ఫ్లక్సులు (R₂O, RO) కలిపి 1 అయ్యేలా; స్టెబిలైజరులు (R₂O₃: అల్యూమినా, బోరానును తరచుగా ఇక్కడ ఉంచుతారు); గ్లాస్ ఫార్మరులు (RO₂: సిలికా). “యూనిటీ చేయడం కేవలం ఒక స్కేలింగ్ సాధనం” అని Glazy అంటుంది: వేర్వేరు పదార్థాలతో చేసినా ఒకే సెగర్ సూత్రం ఉన్న రెండు రెసిపీలు “కాల్చాక దాదాపు ఒకేలా ప్రవర్తిస్తాయి”. కాబట్టి ఆ 1 ఒక ఉమ్మడి కొలమానం, మీరు తూకం వేసే పరిమాణం కాదు. ఈ పద్ధతి “తక్కువ ఉష్ణోగ్రతల వద్ద అంత బాగా పని చేయదు” అని, అక్కడ బోరాన్ సాదా ఫ్లక్స్ కాదని, సెగర్ సూత్రాలు “తులనాత్మకమైనవి, సందర్భంలో చూస్తేనే ఉత్తమం” అని Digitalfire జోడిస్తుంది. **పోల్చండి** రెండు రెసిపీల సూత్రాలను ఆక్సైడ్ వారీగా పక్కపక్కన చూపుతుంది.
+
+### సిలికా-అల్యూమినా నిష్పత్తి
+
+అన్నిటికంటే ఉపయోగకరమైన ఒకే సంఖ్య **సిలికా-అల్యూమినా నిష్పత్తి**{{en: silica to alumina ratio}}: సిలికాను అల్యూమినాతో భాగించగా వచ్చేది. ఉదాహరణలో 3.70 ÷ 0.41 సుమారు 9.
+
+Table: సిలికా-అల్యూమినా నిష్పత్తి ఏమి సూచిస్తుంది (Glazy)
+Label: సిలికా-అల్యూమినా నిష్పత్తి
+
+| నిష్పత్తి | Glazy వివరణ                                      |
+| --------: | ------------------------------------------------ |
+|  సుమారు 9 | తగినంత వేడి ఇస్తే గ్లాసీ కరుగును సూచిస్తుంది     |
+|       5–7 | చాలా స్థిరమైన స్టోన్వేర్ గ్లేజులకు సాధారణం       |
+|       3–5 | మ్యాట్ అయి ఉండవచ్చు, లేదా తక్కువగా కాలి ఉండవచ్చు |
+
+ఈ సంఖ్యలు ఏ కోన్ కోసమో Glazy చెప్పదు. వీటిని స్టోన్వేర్ గ్లేజులకు, సుమారు కోన్ 6–10, స్థూల సూచనగా చదవండి. సుమారు 8 కంటే ఎక్కువ నిష్పత్తి గ్లాసీ అయ్యే అవకాశం ఉందని Digitalfire చెబుతుంది, కానీ బోరాన్ ఉన్న గ్లేజ్ 8 లేదా అంతకంటే తక్కువ వద్ద కూడా గ్లాసీగా ఉండవచ్చు, లో ఫైర్ గ్లేజ్ 6 వద్ద కూడా. 5–7 నిష్పత్తి దానంతట అదే గ్లాసీని గానీ మ్యాట్ను గానీ సూచించదు: ఫ్లక్సులు, బోరాన్, కోన్ అన్నీ ఆ గీతను కదిలిస్తాయి. స్థిరమైన గ్లేజులకు సాధారణ ఫ్లక్స్ సమతుల్యతగా Glazy 0.2 R₂O తో 0.8 RO ఇస్తుంది, 0.3 R₂O తో 0.7 RO వరకు. ఎక్కువ క్షారం కరిగిన గ్లేజును మరింత ద్రవంలా చేస్తుంది, దాని వ్యాకోచాన్ని పెంచుతుంది, అందువల్ల క్రేజింగ్ ప్రమాదాన్ని కూడా.
+
+### జ్వలన నష్టం
+
+**జ్వలన నష్టం** (**LOI**){{en: loss on ignition}} అంటే నీరు, కార్బన్ డయాక్సైడ్, సేంద్రియ పదార్థం లేదా సల్ఫర్ వాయువుగా వెళ్లిపోయినప్పుడు కిల్నులో ఒక పదార్థం కోల్పోయే బరువు. కాల్చిన గ్లేజుకు ఏదీ ఉండదు, కాబట్టి సెగర్ సూత్రం దాన్ని వదిలేస్తుంది.
+
+Table: సాధారణ జ్వలన నష్టం (Digitalfire)
+Label: జ్వలన నష్టం
+
+| పదార్థం                                | సాధారణ LOI                                                                                             |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| వైటింగ్ (కాల్షియం కార్బొనేట్), డోలమైట్ | 40% కంటే ఎక్కువ, ఎక్కువగా కార్బన్ డయాక్సైడ్: 100 g కాల్షియం కార్బొనేట్ సుమారు 44 g వాయువుగా వదులుతుంది |
+| లిథియం కార్బొనేట్                      | సుమారు 60%                                                                                             |
+| బేరియం కార్బొనేట్, Gerstley Borate     | 20% కంటే ఎక్కువ                                                                                        |
+| కయోలిన్                                | సుమారు 12–14%, ప్రధానంగా దాని స్ఫటికాలలో కలిసిన నీరు                                                   |
+| ఫెల్డ్స్పారులు                         | 1% కంటే తక్కువ                                                                                         |
+
+గ్లేజ్ కరగడం మొదలయ్యాక బయటకు వచ్చే వాయువు దాని గుండా బుడగలుగా రావాలి, Digitalfire మాటల్లో “బుడగలు, బొబ్బలు, పిన్హోల్స్, క్రాలింగ్” కలిగిస్తుంది. ఒక Digitalfire పరీక్షలో టాల్క్ సుమారు {{1650 °F; 899 °C}} వరకు వాయువును వదులుతూనే ఉంది. ఫ్రిట్టులు, క్యాల్సిన్డ్ పదార్థాలు (వాయువులు పోయేలా ముందే వేడి చేసినవి), ఫైరింగులో మార్పులు అన్నీ సహాయపడతాయి.
+
+పాత పుస్తకాలు ఈ లెక్కను చేతితో చేస్తాయి, **అణుభారం** (ఒక మోల్ పదార్థం లేదా ఆక్సైడ్ బరువు), **సమాన బరువు** (ఒక మోల్ ఆక్సైడును అందించే పదార్థం బరువు)తో. మా లెక్క ప్రకారం, సుమారు 100 g వైటింగ్ ఒక మోల్, 56 g, కాల్షియం ఆక్సైడును ఇస్తుంది. క్యాలిక్యులేటర్ రెండింటినీ చూసుకుంటుంది.
+
+## లిమిట్లు, Stull చార్ట్ {#stull-chart}
+
+**Stull చార్ట్** అంటే గ్లేజుల పటం. దీనికి రెండు అక్షాలు ఉన్నాయి, రెండూ సెగర్ సూత్రం నుండి: కింద అడ్డంగా సిలికా (SiO₂), పక్కన నిలువుగా అల్యూమినా (Al₂O₃). ప్రతి గ్లేజ్ ఒక బిందువు. పటం మ్యాట్, మెరిసే (గ్లాసీ), తక్కువగా కాలిన, క్రేజింగ్ వచ్చిన లాంటి ప్రాంతాలుగా విభజించబడింది. Glazecalc [రెసిపీ పేజీ](/recipe) మీ గ్లేజును దాని మీద గీస్తుంది.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull 1912లో ప్రచురించిన పరీక్షల నుండి ఈ చార్టును తయారు చేశారు. ఆయన వాటిని సుమారు కోన్ 11 వద్ద ఫైర్ చేశారు, ప్రతి పరీక్షలో ఒకే ఫ్లక్సులు ఉన్నాయి: 0.3 పొటాష్ (K₂O), 0.7 కాల్షియం ఆక్సైడ్ (CaO). సిలికా, అల్యూమినా మాత్రమే మారాయి. కాబట్టి ఈ చార్ట్ ఆ గ్లేజులకు, ఆ వేడి వద్ద నిజం.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+మీ గ్లేజ్ బహుశా వేరుగా ఉంటుంది. బోరాన్, ఇతర ఫ్లక్సులు, తక్కువ కోనులు అన్నీ ప్రాంతాలను జరుపుతాయి. 2025లో Ceramics Monthly వ్యాసం ఒకటి బోరేటులతో ఫ్లక్స్ చేసిన, ఎక్కువ ఐరన్ ఉన్న కోన్ 6 గ్లేజును పరీక్షించింది. చార్ట్ దానిని క్రేజింగ్ వచ్చిన, మ్యాట్, తక్కువగా కాలిన గ్లేజుగా చూపింది. నిజానికి అది పూర్తిగా కరిగింది, శాటినుగా ఉంది, క్రేజింగ్ రాలేదు. బోరేటులు ఉన్న గ్లేజులు చార్టులో సరిగా పడవని రచయితలు చెబుతారు. కాబట్టి ప్రాంతాలను సూచనగా వాడండి, జోస్యంగా కాదు.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+**క్రేజింగ్ వచ్చిన** ప్రాంతం అంటే Stull సొంత పరీక్షలకు, ఆయన మట్టి మీద, క్రేజింగ్ వచ్చిన చోటు. మీ గ్లేజ్ మీ క్లే బాడీకి ఎలా సరిపోతుందో అది చెప్పదు. క్రేజింగ్ గ్లేజ్, మట్టి రెండింటి ఉష్ణ వ్యాకోచం మీద ఆధారపడుతుంది. Glazecalc ఇచ్చే వ్యాకోచ సంఖ్య గ్లేజులను పోల్చడానికి సహాయపడుతుంది, అసలైన పరీక్ష తేలుస్తుంది: [గ్లేజ్ ఫిట్, లోపాలు](/guides/glazing-basics#fit-and-defects) లోని ఐస్-నీటి పరీక్ష.
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**లిమిట్ సూత్రాలు (లక్ష్య సూత్రాలు)**{{en: limit formulas}} అదే ప్రశ్నకు వేరే సాధనం: ఒక కోన్ వద్ద స్థిరమైన గ్లేజుల కోసం సిలికా, అల్యూమినా, ఫ్లక్సుల శ్రేణులు. [ఆహార భద్రత](/guides/glazing-basics#food-safety) వాటిని, అవి వాటంతట అవే ఎందుకు ఏమీ రుజువు చేయవో వివరిస్తుంది.
 
-## Frits and raw materials {#materials lang=en}
+## ఫ్రిట్టులు, ముడి పదార్థాలు {#materials}
 
-### Frits
+### ఫ్రిట్టులు
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**ఫ్రిట్**{{en: frit}} అంటే ఫ్యాక్టరీలో తయారైన గాజు: ఖనిజాలను కరిగించి, నీటిలో వేగంగా చల్లార్చి, పొడి చేస్తారు. ఫ్రిట్ చేయడం ద్రావణీయ పదార్థాలను (బోరాక్స్ లాంటివి) అద్రావణీయంగా చేస్తుంది, సీసం, బేరియం లాంటి విషపూరిత ఆక్సైడులను స్థిరమైన గాజులో బంధిస్తుంది, ముడి ఖనిజాల కంటే మరింత ఏకరీతి పదార్థాన్ని ఇస్తుంది, వాయువులను పోగొడుతుంది, అందుకే ఫ్రిట్ చేసిన గ్లేజులు “చాలా ఎక్కువ లోపం లేనివి” (Digitalfire). ఫ్రిట్టులు ముందుగానే కూడా కరుగుతాయి: సోడా ఫ్రిట్ కోన్ 06 వద్దే చురుకుగా ఉంటుంది, ఫెల్డ్స్పార్ “కోన్ 6 వద్ద మాత్రమే మెత్తబడడం మొదలుపెడుతుంది”. వాటి ఖరీదు ఎక్కువ, నీటిలో తేలి ఉండటానికి వాటికి మట్టి అవసరం (Digitalfire ఉదాహరణ 85% ఫ్రిట్టుతో 15% మట్టి), అవి “సిద్ధాంతపరంగా అద్రావణీయం, కానీ ఆచరణలో అలా కాదు”.
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+ఉత్తర అమెరికా ఫ్రిట్టులను తయారీదారు, నంబరు ప్రకారం పిలుస్తారు: Ferro Frit 3134 (Ferro ఇప్పుడు Vibrantz) ఉత్తర అమెరికాలో ఎక్కువగా వాడే ఫ్రిట్టులలో ఒకటి. UK రెసిపీలు ఎక్కువగా సాధారణ (జెనెరిక్) ఫ్రిట్టుల పేర్లను చెబుతాయి, ఉదాహరణకు స్టాండర్డ్ బోరాక్స్ ఫ్రిట్.
 
-### The common raw materials
+### సాధారణ ముడి పదార్థాలు
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: సాధారణ గ్లేజ్ పదార్థాలు, అవి ఏమి అందిస్తాయి
+Label: సాధారణ గ్లేజ్ పదార్థాలు
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| పదార్థం (ఇతర పేర్లు)                                                             | అందించేది                      | గమనికలు                                                                                                                                          |
+| -------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| సిలికా{{en: silica}} (ఫ్లింట్{{en: flint}}, క్వార్ట్జ్)                          | SiO₂                           | గ్లేజులలో 325 మెష్, అంటే చాలా సన్నని పొడి, వాడండి                                                                                                |
+| కయోలిన్{{en: kaolin}} (UK: చైనా క్లే)                                            | Al₂O₃, SiO₂                    | ప్రధాన అల్యూమినా వనరు; గ్లేజ్ అడుగున చేరకుండా ఉంచడానికి కూడా సహాయపడుతుంది                                                                        |
+| బాల్ క్లే{{en: ball clay}}                                                       | Al₂O₃, SiO₂                    | కయోలిన్ కంటే మెత్తగా ఆకారమిచ్చేది, ఎక్కువ ఐరన్, సేంద్రియ పదార్థంతో                                                                               |
+| పొటాష్ ఫెల్డ్స్పార్, సోడా ఫెల్డ్స్పార్, నెఫెలిన్ సైనైట్{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂         | తమ సొంత అల్యూమినా, సిలికాతో ఫ్లక్సులు. నెఫెలిన్ సైనైట్ బలమైన లో ఫైర్, మిడ్ ఫైర్ ఫ్లక్స్. పాత రెసిపీలోని సాదా “ఫెల్డ్స్పార్” వీటిలో ఏదైనా కావచ్చు |
+| వైటింగ్ (కాల్షియం కార్బొనేట్)                                                    | CaO                            | ప్రధాన కాల్షియం ఫ్లక్స్; కార్బన్ డయాక్సైడును వదులుతుంది                                                                                          |
+| వొలాస్టొనైట్                                                                     | CaO, SiO₂                      | కార్బన్ డయాక్సైడ్ లేని కాల్షియం                                                                                                                  |
+| డోలమైట్, టాల్క్                                                                  | MgO, దానితో పాటు CaO లేదా SiO₂ | పట్టులాంటి మ్యాట్ ఉపరితలాలు; తక్కువ వ్యాకోచం                                                                                                     |
+| జింక్ ఆక్సైడ్                                                                    | ZnO                            | గ్లాసీ ఉపరితలం, స్ఫటికాలు; మరీ ఎక్కువైతే క్రాలింగ్ కలిగించవచ్చు                                                                                  |
+| బోరాన్ ఫ్రిట్టులు, Gerstley Borate, కోల్మనైట్                                    | B₂O₃                           | కోన్ 06 నుండి కోన్ 6 వరకు అత్యవసరం; ఫ్రిట్టులు “ముడి బోరేట్ల కంటే ఎక్కువ ఏకరీతి, తక్కువ ద్రావణీయత” గలవి                                          |
+| లిథియం కార్బొనేట్                                                                | Li₂O                           | తక్కువ వ్యాకోచం గల ఫ్లక్స్; ఖరీదైనది, కాబట్టి తక్కువగా వాడతారు                                                                                   |
+| స్ట్రాన్షియం కార్బొనేట్                                                          | SrO                            | బేరియంకు తక్కువ విషపూరితమైన బదులు పదార్థం                                                                                                        |
+| బేరియం కార్బొనేట్                                                                | BaO                            | ముడి రూపంలో విషపూరితం; ఎక్కువ బేరియం గల గ్లేజులు లీచ్ కావచ్చు                                                                                    |
+| బెంటోనైట్                                                                        | సస్పెన్షన్                     | చాలా సన్నని మట్టి, సాధారణంగా 1–2%, గ్లేజ్ అడుగున చేరకుండా ఆపడానికి. 3% కంటే ఎక్కువైతే గ్లేజ్ ఆరేటప్పుడు పగలవచ్చు                                 |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> గ్లేజ్ పదార్థాలు సన్నని పొడులు. సిలికా దుమ్ము మొదట్లో ఏ లక్షణాలూ లేకుండానే ఊపిరితిత్తులకు హాని చేస్తుంది, బేరియం కార్బొనేట్, లిథియం కార్బొనేట్ లాంటి కొన్ని పదార్థాలు మింగితే విషపూరితం. పొడులను మెల్లగా పట్టుకోండి, తడి పద్ధతిలో శుభ్రం చేయండి, పొడిగా పని చేసేటప్పుడు సరిగ్గా అమరిన రెస్పిరేటర్ మాస్క్ ధరించండి. ఎలాగో [సురక్షితంగా కలపడం, గాలి ప్రసరణ](/guides/safe-mixing), [మీ కుటుంబాన్ని విషానికి గురిచేయకండి](/guides/home-safety) వివరిస్తాయి.
 
-### Regional names
+### ప్రాంతాల వారీ పేర్లు
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- UKలో **కయోలిన్** పేరు **చైనా క్లే**. ఆస్ట్రేలియాలో Eckalite అనేది కయోలిన్ బ్రాండులలో ఒకటి.
+- **ఫ్లింట్** అనేది సిలికాకు UKలోని పాత పేరు. ప్రత్యేక ఉత్పత్తిగా **క్యాల్సిన్డ్ ఫ్లింట్** కూడా UK సరఫరాదారులు ఇప్పటికీ అమ్ముతారు, కాబట్టి బ్రిటిష్ రెసిపీలోని “ఫ్లింట్” బహుశా క్యాల్సిన్డ్ ఫ్లింట్ అని, అమెరికన్ రెసిపీలో బహుశా పొడి చేసిన క్వార్ట్జ్ అని అర్థం. రెండూ సిలికా వనరులుగా అమ్ముతారు; విశ్లేషణ చూడండి.
+- **చైనా స్టోన్**, **కార్నిష్ స్టోన్** (కార్న్వాల్ స్టోన్) ఒకే పదార్థం, ఫెల్డ్స్పారుతో సంబంధం గలది.
+- **వైటింగ్** అంటే కాల్షియం కార్బొనేట్, పొడి చేసిన సుద్ద లేదా సున్నపురాయి.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> ఒక పదార్థాన్ని దాని పేరును బట్టి కాకుండా, అది అందించే ఆక్సైడులను బట్టి అంచనా వేయండి. Glazecalc అలాగే పని చేస్తుంది: మీ సరఫరాదారు విశ్లేషణను [పదార్థాల పేజీ](/material)లో నమోదు చేయవచ్చు, **ఆధునిక పదార్థాలు ప్రయత్నించి పోల్చండి**, **పరిమాణాలు సూచించి పోల్చండి**, **నా దగ్గర ఉన్నవాటితో సరిపోల్చండి** అన్నీ పేర్లను కాకుండా కాల్చిన ఆక్సైడులను సరిపోలుస్తాయి.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+పదార్థాలు కూడా మారుతుంటాయి. US Geological Survey ప్రకారం, South Dakota లోని Custer ఫెల్డ్స్పార్ తయారుచేసిన గనులు, ప్లాంటు నవంబర్ 2023లో కార్యకలాపాలను నిలిపివేశాయి. అసలు Gerstley Borate గని సుమారు 1999–2000లో మూసివేయబడింది; Laguna ఇప్పటికీ ఆ పేరుతో ఒక ఉత్పత్తిని అమ్ముతుంది, Gillespie Borate ప్రధాన ప్రత్యామ్నాయం. Gillespie, Gerstley Borateను పౌండుకు పౌండు భర్తీ చేస్తుందా అనే దానిపై మూలాలు ఏకీభవించవు (దాని తయారీదారు, Potclays “అవును” అంటాయి; Digitalfire, ఇతరులు “కాదు” అంటాయి), కాబట్టి Glazecalcలో రెండింటినీ పోల్చి, ఆపై చిన్న బ్యాచును పరీక్షించండి.
 
-## Colorants and opacifiers {#color lang=en}
+## కలరెంటులు, ఒపాసిఫైయరులు {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**కలరెంట్ (రంగునిచ్చే పదార్థం)**{{en: colorant}} అంటే గ్లేజుకు రంగు ఇచ్చే లోహ ఆక్సైడ్ లేదా కార్బొనేట్; **స్టెయిన్ (తయారు రంగు)**{{en: stain}} అంటే ఫ్యాక్టరీలో తయారైన కలరెంట్, ముడి ఆక్సైడుల కంటే మరింత స్థిరమైనది, ఏకరీతి గలది. కలరెంటులు సాధారణంగా బేసులో 5% కంటే తక్కువ, చాలా వరకు 1% కంటే తక్కువ, కార్బొనేట్ దానికి సరిపోలే ఆక్సైడ్ కంటే బలహీనమైనది, ఎందుకంటే దానిలో కొంత భాగం వాయువుగా వెళ్లిపోతుంది. మా లెక్క ప్రకారం, 100 g కోబాల్ట్ కార్బొనేట్ సుమారు 63 g కోబాల్ట్ ఆక్సైడ్ ఇస్తుంది, కుండల కళాకారులు కొనే 100 g కాపర్ కార్బొనేట్ (బేసిక్ కాపర్ కార్బొనేట్) సుమారు 72 g కాపర్ ఆక్సైడ్ ఇస్తుంది. కాబట్టి ఆక్సైడ్ కంటే సుమారు 1.4 నుండి 1.6 రెట్లు కార్బొనేట్ వాడండి.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: సాధారణ కలరెంటులు, బేసులో శాతంగా
+Label: సాధారణ కలరెంటులు
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| కలరెంట్              | సాధారణ ప్రారంభ పరిమాణం                             | రంగులు, గమనికలు                                                                                                                                  |
+| -------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| కోబాల్ట్             | 0.1–2% (మూలాలు ఏకీభవించవు)                         | నీలం, చాలా బలమైనది; బేసులో మెగ్నీషియం ఉన్నప్పుడు ఊదా రంగు వైపు మొగ్గుతుంది                                                                       |
+| ఐరన్                 | 0.5–10%                                            | ఆక్సిడేషనులో గోధుమ, లేత గోధుమ, ఎరుపు రంగులు; రిడక్షనులో ½–2% సెలడాన్ ఇస్తుంది, 5–10% టెన్మోకు. ఇది ఫ్లక్స్, కాబట్టి ఎక్కువైతే గ్లేజ్ కారిపోతుంది |
+| కాపర్                | 1–3%                                               | ఆక్సిడేషనులో ఆకుపచ్చ లేదా టర్కాయిజ్, రిడక్షనులో ఎరుపు. ఇది గ్లేజ్ లీచ్ అయ్యేలా చేయవచ్చు                                                          |
+| క్రోమ్               | 0.5% కంటే తక్కువ నుండి 2% వరకు (మూలాలు ఏకీభవించవు) | ఆకుపచ్చ; బేసులో జింక్ ఉంటే గోధుమ, టిన్నుతో గులాబీ                                                                                                |
+| మాంగనీస్             | 2–10%                                              | గోధుమ, ఊదా రంగులు                                                                                                                                |
+| రూటైల్               | సుమారు 2–5%                                        | మచ్చలు మచ్చలుగా, రకరకాల రంగులు; సుమారు 5% కంటే ఎక్కువైతే గరుకుగా లేదా మ్యాట్గా                                                                   |
+| కమర్షియల్ స్టెయినులు | 2–12%                                              | లేత రంగులకు 2–4%, మధ్యస్థ రంగులకు 5–8%, గాఢ రంగులకు 10–12%                                                                                       |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+కోబాల్ట్, క్రోమ్ పరిమాణాలపై నిజంగానే వివాదం ఉంది. నీలం రంగుకు 0.1% కోబాల్ట్ సరిపోతుందని Glazy అంటుంది; Glendale Community College వాతావరణాన్ని బట్టి ½–2% లేదా ½–3% ఇస్తుంది; Pottery Making Illustratedలో Birdie Boone 3% లేదా అంతకంటే తక్కువ అంటారు. క్రోమ్ విషయంలో Boone 0.5% కంటే తక్కువ అంటారు, Glendale 2–3%. సురక్షిత మార్గం తక్కువతో మొదలుపెట్టి **లైన్ బ్లెండ్**{{en: line blend}} చేయడం: ఒక పదార్థాన్ని కొద్దిగా నుండి ఎక్కువగా మెట్టు మెట్టుగా మార్చే టెస్ట్ టైల్స్ వరుస.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+బేస్ గ్లేజ్ రంగును మారుస్తుంది. గ్లాసీ, పారదర్శక బేస్ అత్యంత ప్రకాశవంతమైన రంగును ఇస్తుంది; శాటిన్, మ్యాట్ బేసులు, సాధారణంగా ఎక్కువ అల్యూమినా గలవి, దాన్ని మందగింపజేస్తాయి. మెగ్నీషియం కోబాల్టును ఊదా వైపు నెడుతుంది, జింక్ క్రోమును గోధుమగా మారుస్తుంది, క్రోము టిన్నుతో కలిస్తే గులాబీ రంగునిస్తుంది.
 
-### Opacifiers
+### ఒపాసిఫైయరులు
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+**ఒపాసిఫైయర్ (అపారదర్శకం చేసేది)** గ్లేజును **అపారదర్శకం** చేస్తుంది, మట్టిని కప్పేస్తుంది; **పారదర్శక** గ్లేజ్ దాన్ని కనిపించనిస్తుంది.
 
-Table: Opacifiers
+Table: ఒపాసిఫైయరులు
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| ఒపాసిఫైయర్                            | సాధారణ పరిమాణం             | గమనికలు                                                                                                                         |
+| ------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| జిర్కాన్ (Zircopax, Superpax, Ultrox) | పూర్తి అపారదర్శకతకు 10–15% | చౌకైన ఎంపిక; ఈ బ్రాండులన్నీ జిర్కోనియం సిలికేట్, వేర్వేరు సన్నదనాలకు పొడి చేసినవి, సన్నని గ్రేడులు బలమైనవి                      |
+| టిన్ ఆక్సైడ్                          | సుమారు 5–7% (మా అంచనా)     | ఖరీదైనది; హై ఫైర్ వద్ద బలహీనం, క్లియర్ కోన్ 10 రిడక్షన్ గ్లేజులో 4% ఏ అపారదర్శకతనూ ఇవ్వలేదని Digitalfire నివేదిస్తుంది          |
+| టైటానియం డయాక్సైడ్                    | సుమారు 5% (మా అంచనా)       | పట్టులాంటి, అర్ధపారదర్శక అపారదర్శకత; సుమారు 5% ఉపరితలాన్ని మార్చవచ్చు, చాలా ఎక్కువైతే తరచుగా స్ఫటికాలతో మ్యాట్ ఉపరితలం వస్తుంది |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## గ్లేజ్ ఫిట్, లోపాలు {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+మట్టి, గ్లేజ్ రెండూ వేడెక్కినప్పుడు పెరుగుతాయి, చల్లారినప్పుడు కుంచించుకుపోతాయి, ఒక్కొక్కటి తన సొంత మొత్తంలో: దాని **ఉష్ణ వ్యాకోచం**{{en: thermal expansion}}. **గ్లేజ్ ఫిట్ (గ్లేజ్, బాడీల మధ్య పొందిక)**{{en: glaze fit}} అంటే ఆ రెండూ ఎంత బాగా సరిపోతాయి అనేది. మంచి ఫిట్టులో గ్లేజ్ మట్టి వల్ల కొద్దిగా ఒత్తిడిలో ఉంటుంది; కొద్దిపాటి ఒత్తిడి పాత్రలను బలపరుస్తుందని, మరీ ఎక్కువైతే వాటిని బలహీనపరచి పగులగొట్టవచ్చు కూడా అని Digitalfire చెబుతుంది.
 
-### Crazing and shivering
+### క్రేజింగ్, షివరింగ్
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**క్రేజింగ్**{{en: crazing}} అంటే సన్నని పగుళ్ల అల్లిక. గ్లేజ్ వ్యాకోచం బాడీ కంటే ఎక్కువ, కాబట్టి చల్లారేటప్పుడు అది ఎక్కువగా కుంచించుకుపోయి, సాగదీయబడి, పగులుతుంది; సాధారణంగా సోడియం, పొటాషియం (Na₂O, K₂O) మరీ ఎక్కువగా ఉండడం వల్ల. చల్లని ద్రవాలు తగలడం లాంటి పదేపదే ఆకస్మికంగా చల్లారడం తర్వాత, వాడుకలో ఇది ఆలస్యంగా కూడా కనిపించవచ్చు. కోరుకున్నప్పుడు, రాకులో లాగా, దాన్ని **క్రాకిల్** అంటారు. “95% సందర్భాల్లో పరిష్కారం గ్లేజ్ ఉష్ణ వ్యాకోచాన్ని సర్దుబాటు చేయడమే” అని Digitalfire అంటుంది; నెమ్మదిగా చల్లబరచడం క్రేజింగును ఆలస్యం మాత్రమే చేస్తుంది. దాని పరీక్ష: పాత్రను సుమారు {{300 °F; 149 °C}} వరకు వేడి చేసి, ఐస్ వాటరులో ముంచి, పగుళ్లు కనిపించేలా దాని మీద ఫెల్ట్ పెన్ను రుద్దండి.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+మొదటి పరిష్కారంపై మూలాల అభిప్రాయాలు వేరుగా ఉన్నాయి. సిలికా లేదా అల్యూమినా కలపమని Glazy సూచిస్తుంది; అదనపు సిలికా “KNaOను (సోడియం, పొటాషియం) పలుచన మాత్రమే చేస్తుంది” అని Digitalfire బదులిస్తుంది; Linda Bloomfield బోరానును జోడిస్తారు లేదా ఫెల్డ్స్పారును తగ్గిస్తారు, ఒకసారికి ఒక పదార్థం మాత్రమే. మా సలహా: [రెసిపీ క్యాలిక్యులేటర్](/recipe)లో కొంత సోడియం, పొటాషియం స్థానంలో తక్కువ వ్యాకోచం గల ఫ్లక్సులను (బోరాన్, లిథియం, మెగ్నీషియం, కాల్షియం) వాడండి, ఆ మార్పును **పోల్చండి**తో సరిచూడండి, ఐస్ వాటర్ పరీక్షతో నిర్ధారించుకోండి.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**షివరింగ్**{{en: shivering}} దీనికి వ్యతిరేకం: గ్లేజ్ వ్యాకోచం బాడీ కంటే చాలా తక్కువ, కాబట్టి అది అవసరానికి మించి ఒత్తిడిలో ఉండి పాత్ర అంచుల నుండి, మూలల నుండి పెచ్చులుగా ఊడిపోతుంది. ఆ పెచ్చులు బ్లేడు అంత పదునుగా ఉండవచ్చని, వాటిని మింగే అవకాశం ఉందని Digitalfire హెచ్చరిస్తుంది, భోజనానికి, పానీయాలకు వాడే పాత్రలపై షివరింగ్ “క్రేజింగ్ కంటే ఇంకా ప్రమాదకరం” అని Glazy అంటుంది. పరిష్కారం ఎక్కువ వ్యాకోచం గల గ్లేజ్, లేదా తక్కువ వ్యాకోచం గల బాడీ.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> క్రేజింగ్ వచ్చిన లేదా షివరింగ్ వచ్చిన పాత్రలను ఆహారానికి, పానీయానికి ఉపయోగించకండి. క్రేజింగ్ వచ్చిన కుండలను తగినంతగా శుభ్రం చేయవచ్చా అనే దానిపై మూలాలు ఏకీభవించవు (ఒకటి డిష్వాషర్ చాలు అంటుంది; మరొకటి క్రేజింగ్ వచ్చిన ఉపయోగ పాత్రలను లోపభూయిష్టంగా పరిగణిస్తుంది), కాబట్టి మేము జాగ్రత్త వైపు నిలుస్తున్నాం.
 
-### Gloss and matte
+### గ్లాసీ, మ్యాట్
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+**గ్లాసీ** ఉపరితలం ప్రతిబింబించేది, నునుపైనది; **శాటిన్** ఉపరితలంలో మందమైన మెరుపు ఉంటుంది; **మ్యాట్** నిస్తేజంగా ఉంటుంది. గ్లాసీకి పూర్తిగా కరిగిన గాజు అవసరం. మ్యాట్ చాలా అల్యూమినా నుండి (తక్కువ సిలికా-అల్యూమినా నిష్పత్తి), గ్లేజ్ చల్లారేటప్పుడు కాల్షియం, మెగ్నీషియం, బేరియం లేదా స్ట్రాన్షియం లాంటి ఫ్లక్సులు చిన్న స్ఫటికాలను ఏర్పరచడం నుండి, లేదా తక్కువగా కాల్చడం నుండి రావచ్చు.
 
-### Common defects
+### సాధారణ లోపాలు
 
-Change one thing at a time, and keep your test tiles.
+ఒకసారికి ఒకే విషయం మార్చండి, మీ టెస్ట్ టైల్స్ దాచుకోండి.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: సాధారణ గ్లేజ్ లోపాలు, వాటి సాధారణ కారణాలు, మొదటి పరిష్కారాలు
+Label: సాధారణ గ్లేజ్ లోపాలు
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| లోపం                        | ఎలా కనిపిస్తుంది                                                | సాధారణ కారణాలు                                                                                                                                                               | మొదటి పరిష్కారాలు                                                                                                         |
+| --------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| క్రాలింగ్{{en: crawling}}   | గ్లేజ్ వెనక్కి ముడుచుకుని ముద్దలు కట్టి, ఖాళీ మట్టి మిగులుతుంది | దుమ్ము లేదా జిడ్డు ఉన్న బిస్క్; ఆరేటప్పుడు పగిలిన, మట్టి ఎక్కువగా ఉన్న మందపాటి పొర; జింక్, జిర్కాన్ లేదా టిన్                                                                | బిస్కును శుభ్రం చేయండి; పొరను పలుచగా వేయండి; కొంత మట్టిని క్యాల్సిన్ చేయండి (ముందే కాల్చండి); CMC గమ్ లాంటి బైండర్ కలపండి |
+| పిన్హోల్స్{{en: pinholing}} | చిన్న రంధ్రాలు లేదా గుంటలు                                      | బాడీ నుండి లేదా గ్లేజ్ నుండి వచ్చిన వాయువు, గ్లేజ్ తిరిగి మూసుకోకపోవడం; తక్కువగా కాలిన లేదా గట్టి గ్లేజ్                                                                     | పీక్ ఉష్ణోగ్రత వద్ద సుమారు అరగంట హోల్డ్ చేయండి; పొరను పలుచగా వేయండి; జింక్ లేదా రూటైల్ తగ్గించండి                         |
+| బ్లిస్టరింగ్                | పదునైన అంచుల గుంటలు                                             | సాధారణంగా ఎక్కువగా కాల్చడం; చాలా మందపాటి పొరలు; సుమారు {{2192 °F; 1200 °C}} కంటే ఎక్కువ వేడి వద్ద ఆవిరైపోయే ఫ్లక్సులు                                                        | తక్కువ వేడి వద్ద కాల్చండి; పొరను పలుచగా వేయండి. పదునైన అంచులు ఉపయోగ పాత్రలను సురక్షితం కాకుండా చేస్తాయి                   |
+| గ్లేజ్ కారడం                | గ్లేజ్ షెల్ఫ్ మీదకు ప్రవహిస్తుంది                               | అల్యూమినా మరీ తక్కువ; పోసినవి కలిసే చోట లాగా మరీ మందంగా ఉండడం; చాలా ఐరన్                                                                                                     | పొరను పలుచగా వేయండి; అల్యూమినా జోడించండి; గ్లేజ్ అడుగు భాగానికి చాలా పైన ఉండేలా చూడండి                                    |
+| డంటింగ్{{en: dunting}}      | వేడెక్కడం లేదా చల్లారడం వల్ల పాత్రలో పగుళ్లు                    | క్వార్ట్జ్ ఇన్వర్షన్{{en: quartz inversion}}, {{1063 °F; 573 °C}}, లేదా క్రిస్టొబలైట్ ఇన్వర్షన్, సుమారు {{428 °F; 220 °C}}, గుండా వేగంగా చల్లారడం; అసమాన గోడలు; సరిపడని ఫిట్ | ఆ రెండింటి గుండా, వేడెక్కేటప్పుడు, చల్లారేటప్పుడు కూడా నెమ్మదిగా కాల్చండి; గోడలను సమంగా చేయండి                            |
 
-## Food safety {#food-safety lang=en}
+## ఆహార భద్రత {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**లీచింగ్ (లోహాలు బయటకు రావడం)**{{en: leaching}} అంటే కాల్చిన గ్లేజ్ నుండి లోహం ఆహారంలోకి లేదా పానీయంలోకి కరిగి చేరడం, గ్లేజ్ పరిపూర్ణంగా కనిపిస్తున్నా కూడా ఇది జరగవచ్చు. చట్టపరమైన పరీక్షలు కాల్చిన పాత్రను ఆమ్ల ద్రావణంలో నానబెట్టి, బయటకు వచ్చే సీసం, కాడ్మియంలను కొలుస్తాయి.
 
-### Lead-free is not the same as food-safe
+### సీసం లేనిది అంటే ఆహారానికి సురక్షితం అని కాదు
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+అమెరికా, యూరోపియన్ యూనియన్, బ్రిటన్, ఆస్ట్రేలియాల్లోని నియమాలు కాల్చిన పాత్ర విడుదల చేసే సీసం, కాడ్మియంలను పరిమితం చేస్తాయి, గ్లేజులో ఉన్నవాటిని కాదు. “సీసం లేనిది” ఒక ప్రమాదాన్ని తొలగిస్తుంది; అది ఆహార సురక్షిత రేటింగ్ కాదు. ఇతర ఆక్సైడులు కూడా లీచ్ అవుతాయి: ఎక్కువ బేరియం గల గ్లేజులు “లీచ్ కావచ్చు, సాధారణంగా ఆహారానికి సురక్షితం కావు” అని Glazy హెచ్చరిస్తుంది, కాపర్ “గ్లేజును లీచ్ అయ్యేలా చేయవచ్చు; పరీక్షించండి” అని Digitalfire అంటుంది, ఉపయోగ పాత్రలకు సీసం గ్లేజులను Glazy ఇకపై సిఫార్సు చేయదు.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**లైనర్ గ్లేజ్**{{en: liner glaze}} అంటే ఆహారాన్ని తాకే ఉపరితలాల కోసం స్థిరమైన, సాధారణంగా క్లియర్ లేదా తెల్లని గ్లేజ్. మా దృష్టిలో, కలరెంట్, బేరియం, సీసం, లిథియం ఏవీ లేనిది, పూర్తిగా కరిగేది, క్రేజింగ్ రానిది, బాగా మన్నేది అయిన గ్లేజ్ తక్కువ ప్రమాదం గల ఎంపిక. తక్కువ ప్రమాదం రుజువు కాదు.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**లిమిట్ సూత్రాలు**{{en: limit formula}} (**లక్ష్య సూత్రాలు** అనే పేరును Digitalfire ఇష్టపడుతుంది) ఒక కోన్ వద్ద స్థిరమైన గ్లేజుల సాధారణ సెగర్ సూత్ర పరిధులను ఇస్తాయి: Digitalfire కోన్ 6 లక్ష్యాల్లో అల్యూమినా 0.285–0.64, సిలికా 2.4–4.7. అవి మిమ్మల్ని సరైన రసాయన శాస్త్రం వైపు నడిపిస్తాయి కానీ ఏదీ రుజువు చేయవు; పరిధుల లోపల ఉన్న గ్లేజులు “ఏదో విధంగా సురక్షితం” అని అర్థం వస్తుందని Digitalfire “లిమిట్” అనే పదాన్ని వాడదు. Glazecalc రెసిపీ మార్చే సాధనాలు కొత్త రెసిపీ సిఫార్సు చేసిన లిమిట్ను, ఉదాహరణకు కోన్ 6 వద్ద ఎక్కువ బోరాన్, దాటినప్పుడు ఆ విషయాన్ని, ఆ గ్లేజ్ బహుశా ఏం చేస్తుందో కూడా చెబుతాయి.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+చట్టపరమైన పరిమితులు దేశాన్ని బట్టి మారుతాయి. పట్టిక మీరు ఉన్న చోటి పరిమితులను, చట్టం యొక్క సొంత యూనిట్లలో చూపుతుంది; పోల్చడానికి మరొక దేశాన్ని లేదా ప్రాంతాన్ని ఎంచుకోండి.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+అమెరికాలో, ఆహారానికి ఉపయోగపడేలా కనిపించే అలంకరణ సిరామిక్ పాత్రలను ఆహార పాత్రలుగానే పరిగణిస్తారు, వాటికి అంటించే లేబుల్, అలాగే అడుగు భాగంలో అచ్చు వేసిన లేదా కాల్చిన శాశ్వత నోటీసు (ఉదాహరణకు “Not for Food Use. May Poison Food”, అంటే ఆహారానికి వాడకూడదు; ఆహారాన్ని విషపూరితం చేయవచ్చు) రెండూ ఉంటే, లేదా ఆహారం తాకే ఉపరితలంలో రంధ్రం ఉంటే తప్ప. యూరోపియన్ యూనియన్ (EU) ఆదేశం 84/500/EEC సిరామిక్ పాత్రలకు సీసం, కాడ్మియం పరిమితులను నిర్ణయిస్తుంది, UK అవే సంఖ్యలను తన సొంత చట్టంలో ఉంచింది. Benelux దేశాల 2024 నిర్ణయం ఒకటి సిరామిక్ పాత్రలకు చాలా తక్కువ పరిమితులను నిర్ణయిస్తుంది. నెదర్లాండ్స్ వాటిని 29 మే 2026 నుండి అమలు చేసింది: EU సంఖ్యల కంటే సుమారు 130 నుండి 150 రెట్లు తక్కువ సీసం, సుమారు 14 నుండి 18 రెట్లు తక్కువ కాడ్మియం. పాత నియమాలకు అనుగుణంగా ఉండి, 1 డిసెంబర్ 2026 కంటే ముందు మొదటిసారి అమ్మిన పాత్రలను నిల్వలు అయిపోయే వరకు అమ్మవచ్చు. లక్సెంబర్గ్ 29 మే 2026 నుండి అవే పరిమితులను అమలు చేస్తుందని, బెల్జియం 19 జూలై 2026 నాటి రాజశాసనంలో వాటిని స్వీకరించిందని పరీక్షా ప్రయోగశాలలు నివేదిస్తున్నాయి; ఆ పాఠాలను మేము స్వయంగా చదవలేదు. ఆస్ట్రేలియా దిగుమతి చేసుకున్న పాత్రలకు పరిమితులను నిర్ణయిస్తుంది; ఆస్ట్రేలియా లేదా న్యూజిలాండులో తయారైన పాత్రలకు అధికారిక పరిమితి మాకు కనిపించలేదు.
 
-### Testing
+### పరీక్ష
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+అమెరికా ఆహార, ఔషధ సంస్థ (FDA) ఇంట్లో వాడే స్వాబ్ కిట్టులు లీచ్ అయ్యే సీసాన్ని చూపగలవని చెబుతుంది, కానీ గ్లేజ్ వేసిన పాత్రలపై ఈ కిట్టులు తరచుగా తప్పుగా చూపుతాయని అధ్యయనాలు చూపిస్తున్నాయి: లేని సీసాన్ని అవి చూపవచ్చు, లీచ్ అయ్యే సీసాన్ని అవి గుర్తించకపోవచ్చు. పాజిటివ్ వస్తే ఆ పాత్ర వాడకాన్ని ఆపడానికి కారణంగా తీసుకోండి, నెగటివ్ వస్తే ఏదీ రుజువు కాదని గుర్తుంచుకోండి. కాల్చిన పాత్రకు ప్రయోగశాలలో చేసే **లీచింగ్ పరీక్ష**{{en: leach test}} (అమెరికాలో ASTM C738; యూరప్లో EN 1388 లేదా ISO 6486) నిజమైన సమాధానం.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> “ఆహారానికి సురక్షితం”{{en: food safe}} అంటే ఈ గ్లేజ్, ఈ మట్టి మీద, ఈ కోన్ వరకు, ఈ కిల్నులో కాల్చి, ఈ పద్ధతిలో వేసినప్పుడు, చట్టపరమైన పరిమితుల కంటే తక్కువ విడుదల చేస్తుందని అర్థం. స్థిరమైన గ్లేజును రూపొందించడానికి Glazecalc సహాయపడగలదు, **సీసాన్ని మార్చండి** పాత సీసం రెసిపీని సీసం లేకుండా తిరిగి రూపొందించగలదు, కానీ ఏ క్యాలిక్యులేటరూ ఒక పాత్రను ధ్రువీకరించలేదు. కాల్చిన పాత్ర పరీక్ష మాత్రమే ధ్రువీకరించగలదు.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## విశిష్ట గురుత్వం, గ్లేజ్ వేయడం {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### విశిష్ట గురుత్వం
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+నీటితో కలిపిన గ్లేజ్ పొడి **స్లర్రీ (నీటిలో కలిపిన గ్లేజ్)**{{en: slurry}}. దాని **విశిష్ట గురుత్వం (SG)**{{en: specific gravity}} అంటే అదే ఘనపరిమాణం గల నీటితో పోలిస్తే దాని బరువు, నీటి విశిష్ట గురుత్వం 1.0: అది ఎంత ఎక్కువైతే బకెట్లో అంత ఎక్కువ పొడి ఉంటుంది. 1.4–1.5ను “చాలా గ్లేజులకు మంచి ప్రారంభ బిందువు” అని Glazy అంటుంది. దాన్ని కొలవడానికి సరిగ్గా 100 mL స్లర్రీని తూకం వేసి (Glazy ఒక సిరంజిని సూచిస్తుంది) 100తో భాగించండి: 145 g అంటే విశిష్ట గురుత్వం 1.45. జెల్ అయిన గ్లేజులలో హైడ్రోమీటర్లు నమ్మదగినవి కావు, నీరు ఆవిరవుతుంది, కాబట్టి మీరు గ్లేజ్ వేసే ముందు మళ్లీ కొలవండి.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+లక్ష్యాలు మూలాన్ని బట్టి వేరుగా ఉంటాయి. Digitalfire ముంచే గ్లేజులను 1.40–1.50 వద్ద, వాణిజ్య బ్రషింగ్ గ్లేజులను 1.25–1.55 వద్ద ఉంచుతుంది, Potclays బ్రషింగుకు 1.71–1.81, స్ప్రేయింగుకు 1.71 ఇస్తుంది. మా సలహా: గ్లేజ్ కొద్దిగా జెల్ అయి ఉండగా సుమారు 1.45 వద్ద ముంచండి, బ్రషింగ్ గ్లేజుకు లేబులును అనుసరించండి, ఏది పని చేస్తుందో రాసి పెట్టుకోండి.
+
+**ఫ్లాక్యులెంట్**{{en: flocculant}} (ఎప్సమ్ సాల్ట్, వెనిగర్ లేదా కాల్షియం క్లోరైడ్) స్లర్రీని కొద్దిగా జెల్ చేస్తుంది, దాంతో అది **థిక్సోట్రోపిక్**{{en: thixotropic}} అవుతుంది: కలిపినప్పుడు ప్రవహిస్తుంది, నిశ్చలంగా ఉన్నప్పుడు గట్టిపడుతుంది, “సమానంగా, కారిపోకుండా గ్లేజ్ పడడం” కోసం. **డిఫ్లాక్యులెంట్** (సోడియం సిలికేట్ లేదా Darvan) దాన్ని పలుచగా చేస్తుంది. [గ్లేజ్ తయారు చేయడం ఎలా](/guides/making-a-glaze) కలపడం, సర్దుబాటు గురించి వివరిస్తుంది.
+
+### గ్లేజ్ వేయడం
+
+ముందుగా బిస్కు మీది దుమ్మును, జిడ్డును కేవలం తేమగా ఉన్న స్పాంజితో శుభ్రం చేయండి; కడిగితే అది నానిపోతుంది. దుమ్మును కంప్రెస్డ్ ఎయిరుతో ఊదకండి, పొడిగా బ్రషుతో తుడవకండి: అది గాలిలో సిలికా దుమ్మును చేరుస్తుంది ([సురక్షితంగా కలపడం, గాలి ప్రసరణ](/guides/safe-mixing#cleaning)).
+
+- **ముంచడం** “సాధారణంగా సమాన మందం గల పూతను ఇస్తుంది” (Robin Hopper). ముంచే సమయం మందాన్ని నిర్ణయిస్తుంది: వాణిజ్య ముంచే గ్లేజులను 5 సెకన్ల ముంచడానికి సుమారు 1.4, 1 సెకను ముంచడానికి 1.5 వద్ద తయారు చేస్తారని Digitalfire గమనిస్తుంది.
+- **పోసే** గ్లేజ్ “ముంచడానికి వాడేదాని కంటే కొంచెం పలుచగా” ఉండాలి; పోసినవి కలిసే చోట పొర రెట్టింపు అవుతుంది, కారిపోవచ్చు.
+- **బ్రషింగ్** గ్లేజులలో **CMC గమ్** లాంటి గమ్ ఉంటుంది, అది గ్లేజ్ సాఫీగా పరచుకోవడానికి, అంటుకోవడానికి సహాయపడి, తర్వాత కాలిపోతుంది. చాలావాటికి అనేక పొరలు అవసరం, తరచుగా రెండు లేదా మూడు; లేబులును అనుసరించండి.
+- **స్ప్రే చేయడం**లో చాలా పలుచని గ్లేజ్ వాడతారు, “అనేక పలుచని పూతలుగా, క్రమంగా మందాన్ని పెంచుతూ” వేస్తారు.
+
+> [!WARNING]
+> గాలి ప్రసరించే స్ప్రే బూతులో మాత్రమే, సరిగ్గా అమరిన రెస్పిరేటర్ ధరించి స్ప్రే చేయండి. [సురక్షితంగా కలపడం, గాలి ప్రసరణ](/guides/safe-mixing) చూడండి.
+
+మరీ మందపాటి పొర క్రాల్ కావచ్చు, బ్లిస్టర్ కావచ్చు లేదా కారిపోవచ్చు. సరఫరాదారుల అనుభవ సూత్రాలు క్రెడిట్ కార్డ్ మందం నుండి అమెరికా డైమ్ నాణెం మందం వరకు ఉంటాయి, మా అంచనా ప్రకారం ఆరిన గ్లేజ్ సుమారు 1 mm; నమ్మదగిన పరీక్ష కొన్ని మందాల్లో టెస్ట్ టైల్స్. అడుగు భాగం మీద **వ్యాక్స్ రెసిస్ట్**{{en: wax resist}} గ్లేజును నిరోధిస్తుంది, కాబట్టి పాత్ర షెల్ఫుకు అతుక్కోదు, **కిల్న్ వాష్**, వేడిని తట్టుకునే పూత, తరచుగా కయోలిన్, సిలికాలతో చేసినది, షెల్ఫులను కారిన చుక్కల నుండి కాపాడుతుంది.
+
+## ఆక్సిడేషన్, రిడక్షన్ {#atmosphere}
+
+కిల్నులోని వాయువులు, దాని **వాతావరణం**, గ్లేజులు ఎలా వస్తాయో మారుస్తాయి. **ఆక్సిడేషన్ (ఆక్సీకరణ)**{{en: oxidation}} అంటే పుష్కలమైన ఆక్సిజన్. “ఎలక్ట్రిక్ కిల్నులు ఆక్సిడేషన్ ఫైరింగుకు పర్యాయపదం” అని Digitalfire అంటుంది, ఆక్సిడేషన్ గ్లేజులు సాధారణంగా రిడక్షన్ వాటి కంటే, ముఖ్యంగా తక్కువ ఉష్ణోగ్రతల వద్ద, ప్రకాశవంతంగా ఉంటాయి. ఆక్సిడేషనులో కాపర్ ఆకుపచ్చ, టర్కాయిజ్ ఇస్తుంది, ఐరన్ గోధుమ, లేత గోధుమ, ఎరుపు రంగులు. పాత్రలను ఎక్కువగా నింపి, వాయువులు వదులుతున్న, సరిగా వెంట్ లేని ఎలక్ట్రిక్ కిల్న్ ఉద్దేశించిన దాని కంటే ఎక్కువ న్యూట్రల్ వాతావరణంలో నడవవచ్చు; కిల్నుకు నేరుగా అనుసంధానించిన వెంట్ సహాయపడుతుంది.
+
+**రిడక్షన్ (క్షయకరణ)**{{en: reduction}} ఉద్దేశపూర్వకంగా ఆక్సిజనును పరిమితం చేస్తుంది, సాధారణంగా గ్యాస్, కట్టెల లేదా ప్రత్యేక కిల్నులో. కాపర్ ఎరుపుగా మారుతుంది, ఐరన్ బలమైన ఫ్లక్స్ అవుతుంది, **సెలడాన్** (నీలి-ఆకుపచ్చ నుండి బూడిద-ఆకుపచ్చ వరకు, సుమారు ½–2% ఐరన్ నుండి), **టెన్మోకు** (temmoku: గోధుమ-నలుపు, సుమారు 5–10% ఐరన్) ఇస్తుంది. సెలడాన్ గ్లేజులు, కాపర్ ఎరుపు గ్లేజులు “రిడక్షన్ మీద ఆధారపడతాయి” అని Glazy అంటుంది. మట్టి కూడా మారుతుంది: ఒక Digitalfire పోలికలో, ఒక స్టోన్వేర్ బాడీ రిడక్షనులో బూడిద రంగులో, ఆక్సిడేషనులో పసుపు ఛాయలో కాలింది. గ్లేజులో సిలికాన్ కార్బైడ్ ఎలక్ట్రిక్ కిల్నులో కూడా చిన్న చిన్న భాగాలలో రిడక్షనును కలిగించవచ్చు. కోన్ 010 నుండి కోన్ 3 వరకు రిడక్షన్ కోసం, Orton తన ఐరన్ లేని కోనులను సిఫార్సు చేస్తుంది.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> గ్యాస్ రిడక్షన్ కిల్న్ కోసం రాసిన రెసిపీ ఎలక్ట్రిక్ కిల్నులో వేరుగా వస్తుందని ఊహించండి: రిడక్షన్ మీద ఆధారపడే సెలడాన్ లేదా కాపర్ ఎరుపు ఆక్సిడేషనులో అలా కనిపించదు. రెసిపీని ఏ వాతావరణం కోసం చేశారో చూడండి, మీ సొంత వాతావరణాన్ని కోనుతో పాటు Glazecalcలో రెసిపీ నోట్సులో రాయండి.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+ప్రతి కిల్న్, ఎలక్ట్రిక్ కిల్నులతో సహా, పొగలను వదులుతుంది, కాబట్టి దానికి వెంట్ చేయండి. ఎలాగో [సురక్షితంగా కలపడం, గాలి ప్రసరణ](/guides/safe-mixing) వివరిస్తుంది.
 
-## Glossary {#glossary lang=en}
+## పదకోశం {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+అండర్గ్లేజ్ (underglaze)
+: రంగు స్లిప్ లేదా ఆక్సైడ్ అలంకరణ, సాధారణంగా క్లియర్ గ్లేజ్ కింద.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+అడిటివ్ (additive)
+: రెసిపీ 100 పైన జోడించే కలరెంట్, ఒపాసిఫైయర్ లేదా సస్పెండర్.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+అల్యూమినా (Al₂O₃; alumina)
+: ప్రధాన స్టెబిలైజర్: కారిపోవడాన్ని ఆపుతుంది, కాఠిన్యాన్ని పెంచుతుంది. మట్టి, ఫెల్డ్స్పారుల నుండి వస్తుంది.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+ఆక్సిడేషన్, రిడక్షన్ (oxidation, reduction)
+: పుష్కలమైన ఆక్సిజనుతో (ఎలక్ట్రిక్ కిల్నులు) లేదా పరిమితం చేసిన ఆక్సిజనుతో (సాధారణంగా గ్యాస్ లేదా కట్టెల) ఫైరింగ్.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+ఆక్సైడ్ (oxide)
+: ఒక మూలకం ఆక్సిజనుతో కలిసిన సమ్మేళనం; ఆక్సైడ్ విశ్లేషణ వాటిని బరువు శాతంగా చూపుతుంది.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+ఆహారానికి సురక్షితం (food safe)
+: చట్టంలో: ఆమ్ల పరీక్షలో పరిమితుల కంటే తక్కువ సీసం, కాడ్మియం విడుదల చేయడం. సీసం లేనిదానికి సమానం కాదు.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+ఎర్తెన్వేర్ (earthenware)
+: లో ఫైర్ బాడీ (సుమారు కోన్ 06–02), తక్కువ కోనుల వద్ద రంధ్రాలు గలది, ఎక్కువ వేడిలో కాల్చినప్పుడు దట్టంగా మారుతుంది.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+ఒపాసిఫైయర్ (opacifier)
+: గ్లేజును అపారదర్శకం చేసే జిర్కాన్, టిన్ ఆక్సైడ్ లేదా టైటానియం డయాక్సైడ్ లాంటి పదార్థం.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+కయోలిన్ (kaolin; UK: చైనా క్లే)
+: అల్యూమినా, సిలికా ఇచ్చే స్వచ్ఛమైన తెల్లని మట్టి; గ్లేజ్ అడుగున చేరకుండా ఉంచడానికి సహాయపడుతుంది. ఆస్ట్రేలియాలో Eckalite అనేది ఒక బ్రాండు.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+కలరెంట్, స్టెయిన్ (colorant, stain)
+: గ్లేజుకు రంగు ఇచ్చే లోహ ఆక్సైడ్ లేదా కార్బొనేట్; స్టెయిన్ ఫ్యాక్టరీలో తయారైన, మరింత స్థిరమైన కలరెంట్.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+కిల్న్ వాష్ (kiln wash)
+: కిల్న్ షెల్ఫులను కారిన చుక్కల నుండి కాపాడే వేడిని తట్టుకునే పూత.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+కోన్ (శంకువు; cone)
+: నిర్ణీత హీట్వర్క్ వద్ద వంగే, క్రమాంకనం చేసిన సిరామిక్ పిరమిడ్. విట్నెస్ కోన్ పాత్రలకు ఏం అందిందో చూపుతుంది.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+క్రాలింగ్ (crawling)
+: ఫైరింగులో గ్లేజ్ వెనక్కి ముడుచుకుని ముద్దలు కట్టి, ఖాళీ మట్టి మిగలడం.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+క్రేజింగ్ (crazing)
+: బాడీ కంటే ఎక్కువగా కుంచించుకుపోయే గ్లేజులో సన్నని పగుళ్లు; కోరుకున్నప్పుడు క్రాకిల్.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+గ్రీన్వేర్ (పచ్చి పాత్ర; greenware)
+: కాల్చని పాత్రలు: గట్టిగా కానీ తడిగా ఉంటే లెదర్-హార్డ్, స్వేచ్ఛా నీరు మిగలకపోతే బోన్-డ్రై.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+గ్లాస్ ఫార్మర్ (glass former)
+: గాజును నిర్మించే ఆక్సైడ్, సాధారణంగా సిలికా.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+గ్లాసీ, శాటిన్, మ్యాట్ (gloss, satin, matte)
+: ప్రతిబింబించేది, నునుపైనది; మందమైన మెరుపు; నిస్తేజం.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+గ్లేజ్ (glaze)
+: ఫైరింగులో కరిగి పాత్రను మూసివేసి అలంకరించే గాజు పూత.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+గ్లేజ్ ఫైరింగ్ (glaze firing; బ్రిటన్: glost firing)
+: గ్లేజును కరిగించే ఫైరింగ్.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+గ్లేజ్ ఫిట్ (glaze fit)
+: గ్లేజ్, బాడీల వ్యాకోచం ఎంత సరిపోతుందో; మంచి ఫిట్ గ్లేజును కొద్దిగా ఒత్తిడిలో ఉంచుతుంది.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+జ్వలన నష్టం (LOI; loss on ignition)
+: ఫైరింగులో నీరు, కార్బన్ డయాక్సైడ్, సేంద్రియ పదార్థం లేదా సల్ఫర్ రూపంలో కోల్పోయే బరువు.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+డంటింగ్ (dunting)
+: వేడెక్కడం లేదా చల్లారడం ఒత్తిడి వల్ల పాత్రలో పగుళ్లు, తరచుగా క్వార్ట్జ్ ఇన్వర్షన్ వద్ద, {{1063 °F; 573 °C}}.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+డీవిట్రిఫికేషన్ (devitrification)
+: చల్లారడం మొదట్లో గాజు నుండి స్ఫటికాలు పెరగడం, అవి వద్దనుకున్న చోట.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+థిక్సోట్రోపీ (thixotropy)
+: కలిపినప్పుడు ప్రవహించడం, నిశ్చలంగా ఉన్నప్పుడు మెత్తని జెల్గా గడ్డకట్టడం.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+పిన్హోల్స్, బ్లిస్టరింగ్ (pinholing, blistering)
+: వాయువు కరిగిన గ్లేజ్ గుండా వెళ్లిన చోట చిన్న రంధ్రాలు, లేదా పదునైన అంచుల గుంటలు.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+పోర్సిలెయిన్ (porcelain)
+: తెల్లని, కయోలిన్ ఎక్కువ గల, హై ఫైర్ బాడీ, తరచుగా అర్ధపారదర్శకం.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+ఫెల్డ్స్పార్ (feldspar)
+: అల్యూమినా, సిలికాతో పాటు క్షార ఫ్లక్సును అందించే ఖనిజం: పొటాష్, సోడా లేదా నెఫెలిన్ సైనైట్.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+ఫ్లక్స్ (flux)
+: సిలికా కరిగే ఉష్ణోగ్రతను తగ్గించే ఆక్సైడ్.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+ఫ్లాక్యులెంట్, డిఫ్లాక్యులెంట్ (flocculant, deflocculant)
+: స్లర్రీని జెల్ చేసే (ఎప్సమ్ సాల్ట్, వెనిగర్) లేదా పలుచగా చేసే (సోడియం సిలికేట్, Darvan) పదార్థాలు.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+ఫ్రిట్ (frit)
+: కరిగించి, చల్లార్చి, పొడి చేసిన ఫ్యాక్టరీ గాజు; ద్రావణీయ లేదా విషపూరిత ఆక్సైడులను అద్రావణీయంగా చేస్తుంది.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+బాల్ క్లే (ball clay)
+: కయోలిన్ కంటే ఎక్కువ ఐరన్, సేంద్రియ పదార్థం గల, మెత్తగా ఆకారమిచ్చే మట్టి.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+బిస్క్ (bisque; బ్రిటన్: biscuit)
+: మొదటి, తక్కువ వేడి ఫైరింగ్, సాధారణంగా కోన్ 08–04 (ఎక్కువగా 06–04), పాత్రలను బలంగా కానీ రంధ్రాలు గలవిగా వదులుతుంది.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+బెంటోనైట్ (bentonite)
+: గ్లేజ్ అడుగున చేరకుండా ఆపడానికి సుమారు 1–2% కలిపే చాలా సన్నని మట్టి. 3% కంటే ఎక్కువైతే గ్లేజ్ ఆరేటప్పుడు పగలవచ్చు.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+బోరాన్ (B₂O₃; boron)
+: రసాయన శాస్త్రం ప్రకారం గ్లాస్ ఫార్మర్, కానీ ఫ్లక్సుగా వాడతారు; కోన్ 06 నుండి కోన్ 6 వరకు అత్యవసరం.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+బ్యాచ్ రెసిపీ (batch recipe)
+: గ్లేజ్ ముడి పదార్థాలు బరువు ప్రకారం, సాధారణంగా మొత్తం 100 అయ్యేలా.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+లీచింగ్ (leaching)
+: కాల్చిన గ్లేజ్ నుండి లోహాలు ఆహారంలోకి లేదా పానీయంలోకి కరిగి చేరడం.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+లిమిట్ సూత్రం (లక్ష్య సూత్రం; limit formula, target formula)
+: ఒక కోన్ వద్ద స్థిరమైన గ్లేజుల సాధారణ సెగర్ సూత్ర పరిధులు; మార్గదర్శకం, హామీ కాదు.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+లైన్ బ్లెండ్ (line blend)
+: ఒక పదార్థాన్ని రెండు పరిమాణాల మధ్య మెట్టు మెట్టుగా మార్చే పరీక్షలు. ట్రైయాక్సియల్ బ్లెండ్ ఒక గ్రిడ్ మీద మూడింటిని మారుస్తుంది.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+లైనర్ గ్లేజ్ (liner glaze)
+: ఆహారం తాకే ఉపరితలాల కోసం స్థిరమైన, సాధారణంగా క్లియర్ లేదా తెల్లని గ్లేజ్.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+వ్యాక్స్ రెసిస్ట్ (wax resist)
+: గ్లేజ్ పడకూడని చోట, సాధారణంగా అడుగు భాగం మీద, పూసిన మైనం.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+విట్రిఫికేషన్ (vitrification)
+: ఫైరింగులో బాడీ గాజులా, రంధ్రాలు లేనిదిగా మారడం.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+విశిష్ట గురుత్వం (SG; specific gravity)
+: అదే ఘనపరిమాణం గల నీటితో పోలిస్తే స్లర్రీ బరువు.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+వైటింగ్ (whiting)
+: కాల్షియం కార్బొనేట్, ప్రధాన కాల్షియం ఫ్లక్స్; ఫైరింగులో సుమారు 44% బరువును కార్బన్ డయాక్సైడుగా కోల్పోతుంది.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+షివరింగ్ (shivering)
+: అవసరానికి మించి ఒత్తిడిలో ఉండడం వల్ల అంచుల నుండి గ్లేజ్ పెచ్చులుగా ఊడడం; ఉపయోగ పాత్రలపై ప్రమాదం.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+సింగిల్ ఫైరింగ్ (once-firing, single firing)
+: కాల్చని పాత్రలకు గ్లేజ్ వేసి ఒక్కసారే కాల్చడం.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+సిలికా (SiO₂; silica)
+: గ్లాస్ ఫార్మర్; ఫ్లింట్ లేదా క్వార్ట్జ్ అని కూడా అంటారు.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+సిలికా-అల్యూమినా నిష్పత్తి (silica to alumina ratio)
+: సెగర్ సూత్రంలో సిలికాను అల్యూమినాతో భాగించగా వచ్చేది: ఎక్కువైతే గ్లాసీ అయ్యే అవకాశం ఎక్కువ, తక్కువైతే మ్యాట్ అయ్యే అవకాశం ఎక్కువ.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+స్టెబిలైజర్ (స్థిరీకారి; stabilizer)
+: కరిగిన గ్లేజును గట్టిపరిచి మన్నికను పెంచే ఆక్సైడ్, ప్రధానంగా అల్యూమినా.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+స్టోన్వేర్ (రాతి పాత్రలు; stoneware)
+: గాజులా (విట్రియస్) లేదా దాదాపు అలా మారే మిడ్ నుండి హై ఫైర్ బాడీ (సుమారు కోన్ 5–10).
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+స్లిప్, ఎంగోబ్ (slip, engobe)
+: నీటిలో మట్టి; ఎంగోబ్ అంటే మట్టి కాని పదార్థాలు ఎక్కువగా ఉండే స్లిప్ లాంటి పూత.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+హీట్వర్క్ (heatwork)
+: కిల్నులో ఉష్ణోగ్రత, సమయం కలిసి కలిగించే ప్రభావం; కోనులు కొలిచేది ఇదే.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+యూనిటీ అణు సూత్రం (UMF, సెగర్ సూత్రం; unity molecular formula, Seger formula)
+: ఫ్లక్సులు కలిపి 1 అయ్యేలా మార్చి, అణువుల సంఖ్యలుగా చూపిన గ్లేజ్ ఆక్సైడులు.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+CMC గమ్ (CMC gum)
+: గ్లేజ్ బ్రష్ చేయడానికి, అంటుకోవడానికి సహాయపడే సెల్యులోజ్ గమ్; కాలిపోతుంది.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+R₂O, RO (R₂O and RO)
+: క్షార ఫ్లక్సులు (Na₂O, K₂O, Li₂O), క్షార మృత్తిక ఫ్లక్సులు (CaO, MgO, BaO, SrO, ZnOతో).
 
-## Sources {#sources lang=en}
+## మూలాలు {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

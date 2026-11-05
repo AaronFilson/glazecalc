@@ -59,31 +59,31 @@ Label: ద్రావణీయ పదార్థాలు
 
 సీసం యొక్క ప్రధాన ప్రమాదం వేరు: ఒక్క చెంచా కాదు, వారాలు లేదా నెలల తరబడి మింగే చిన్న మొత్తాల దుమ్ము, ఎటువంటి హెచ్చరిక సంకేతాలు లేకుండా (కింద ‘సీసం, పిల్లలు’ చూడండి).
 
-## Storing materials at home {#storing-materials lang=en}
+## ఇంట్లో పదార్థాల నిల్వ {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+ఇంట్లో గ్లేజ్ (గాజు పూత){{en: glaze}} పదార్థాల నిల్వకు ఏ అధికారిక సంస్థా నియమాలు నిర్ణయించలేదు, కానీ ఆరోగ్య, భద్రతా పేజీలు ఏకీభవిస్తాయి: పనిని దాని సొంత స్థలంలో, పిల్లలకు దూరంగా ఉంచండి. సీసం వాడే హాబీల గురించి రాస్తూ, పెన్సిల్వేనియా ఆరోగ్య శాఖ “మీ హాబీ కోసం ప్రత్యేకంగా కేటాయించిన పని ప్రదేశాన్ని లేదా గ్యారేజీని వాడండి, పిల్లలను ఈ ప్రదేశానికి దూరంగా ఉంచండి” అని చెబుతుంది.
 
-### A storage checklist
+### నిల్వ కోసం ఒక జాబితా
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+ఇవి గ్లేజుకు వర్తింపజేసిన సాధారణ విష నివారణ నియమాలు. ఏ సిరామిక్స్ ప్రమాణమూ వీటిని నిర్ణయించలేదు, కానీ మేము వీటన్నింటినీ సూచిస్తాము:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- పొడి పదార్థాలను తాళం వేసి ఉంచండి: ఒక అల్మారాలో, లేదా తాళం వేయగల గది, గ్యారేజ్ లేదా షెడ్డులో. ఎత్తైన అర సహాయపడుతుంది, కానీ పిల్లలు ఎక్కుతారు. మొదట్లో కొన్నింటికే తాళం వేయగలిగితే, ద్రావణీయ పదార్థాలు, కలరెంటులతో మొదలుపెట్టండి.
+- పదార్థాలను వాటి అసలు బస్తాలలో లేదా డబ్బాలలో ఉంచండి. ఒకదాన్ని వేరే డబ్బాలోకి మార్చితే, బస్తా మీద రాసిన విధంగానే దాని పేరుతో లేబుల్ పెట్టండి.
+- గ్లేజ్ పదార్థాల కోసం ఆహార లేదా పానీయాల డబ్బాలను (పెరుగు డబ్బాలు, జాడీలు, బాటిళ్లు) ఎప్పుడూ వాడకండి, లేబుల్ పెట్టినా సరే. పెరుగు డబ్బాలో ఏముంటుందో పిల్లలకు తెలుసు.
+- స్టూడియో పనిముట్లను (స్కూపులు, చెంచాలు, విస్కులు, జల్లెడలు, త్రాసులు) స్టూడియోలోనే ఉంచండి. గ్లేజ్ కోసం వంటింటి పనిముట్లను, ఆహారం కోసం గ్లేజ్ పనిముట్లను ఎప్పుడూ వాడకండి.
+- తడి గ్లేజులను లేబుల్ ఉన్న బకెట్లలో, మూతలు పెట్టి ఉంచండి.
+- ప్రతి పదార్థం యొక్క సేఫ్టీ డేటా షీటును దానితో పాటే ఉంచండి, కాగితం మీద లేదా మీ ఫోనులో.
+- స్టూడియోలోని దేన్నీ వంటగదిలో ఉంచకండి: బస్తాలు, బకెట్లు, పనిముట్లు, టెస్ట్ టైల్స్{{en: test tile}} ఏవీ వద్దు.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+పదార్థాలు కొనడం, నిల్వ చేయడం గురించి మరింత వివరంగా [గ్లేజ్ తయారు చేయడం ఎలా](/guides/making-a-glaze) చూడండి.
 
-### Glaze waste and rinse water
+### గ్లేజ్ వ్యర్థాలు, కడిగిన నీరు
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+గ్లేజును గానీ, గ్లేజ్ పనిముట్లు కడిగిన నీటిని గానీ ఎప్పుడూ సింకులో లేదా తోటలో పోయకండి. చేతులు, బ్రషులు, జల్లెడలు, పనిముట్లు కడగడానికి నీటితో ఒక వేరే బకెట్టును బ్రిటన్ సంస్థ Crafts Council సూచిస్తుంది. దాన్ని రాత్రంతా అడుగుకు చేరనివ్వండి, పైన తేరిన స్వచ్ఛమైన నీటిని ఒంపేయండి, తర్వాత అడుగున చేరిన గ్లేజును ఎండబెట్టి చెత్తలో వేయండి (అది చెత్త డంపింగ్ యార్డుకు వెళ్తుంది), ఎప్పుడూ డ్రైనులో కాదు.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+ఆ బకెట్టుకు మూత పెట్టాలని మేము సూచిస్తాము: అడుగున చేరిన బురదలో గ్లేజులోని లోహాలే ఉంటాయి, పెంపుడు జంతువులు నిలిచి ఉన్న నీటిని తాగుతాయి. పారవేసే నియమాలు ఒక్కో ప్రదేశంలో ఒక్కోలా ఉంటాయి, కాబట్టి ప్రతి ఉత్పత్తి యొక్క సేఫ్టీ డేటా షీటును చూడండి, మీకు సందేహం ఉంటే మీ స్థానిక సంస్థను లేదా నీటి సరఫరా సంస్థను అడగండి.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+కొన్ని స్టూడియోలు ఎండిన బురదను పారవేసే ముందు ఫైర్ చేస్తాయి. దాన్ని వాడుకుని వదిలేసే ఒక అదనపు గిన్నెలో పెడతారు: ఫైరింగ్ తర్వాత ఆ గిన్నెను మళ్లీ వాడలేము. బురద కరిగేటప్పుడు నురగ, బుడగలు వస్తాయి కాబట్టి గిన్నెను నాలుగో వంతు మాత్రమే నింపండి, దాన్ని ఒక ప్లేటుతో కప్పండి. పొంగి బయటకు కారినా ఇబ్బంది లేకుండా, దాన్ని కిల్న్ వాష్ వేసిన షెల్ఫ్ మీద లేదా ఒక అదనపు పలక మీద పెట్టండి. ఫైరింగ్ బురదను గాజుగా మారుస్తుంది, అది వదులు పొడి కంటే లోహాలను చాలా గట్టిగా పట్టి ఉంచుతుంది, కాబట్టి చెత్త డంపింగ్ యార్డులో అది మరింత సురక్షితం. ఎండిన బురదను పొడి గ్లేజును పట్టుకున్నట్లే, రెస్పిరేటర్ ధరించి, దుమ్ము లేపకుండా పట్టుకోండి.
 
 ## దుమ్మును స్టూడియోలోనే ఉంచడం {#keeping-dust-in-the-studio}
 

@@ -3,480 +3,479 @@ title: الطلاء الزجاجي من المبادئ الأولى
 lead: مما يتكوّن الطلاء الزجاجي، وكيف يحوّله الفرن إلى زجاج، وشرح لكل كلمة تُصادَف على خلطة أو كيس أو جدول مخاريط.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## ما هو الطلاء الزجاجي {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**الطلاء الزجاجي**{{en: glaze}} طبقة رقيقة من الزجاج ملتحمة بالقطعة. ويصفه Glazy، قاعدة بيانات خلطات الطلاء المفتوحة، بأنه «تركيبة زجاجية مضبوطة لتنصهر وتلتحم بالطين عند درجات حرارة معينة». يوضع طبقةً من المسحوق، وينصهر في الفرن فيصير غطاءً زجاجياً يسدّ مسام الطين، فيقلّ احتمال أن ترشح القطعة أو تتبقّع أو تبلى. وعند ذروة الحرق يتفاعل المصهور أيضاً مع الطين، فيكوّن غالباً طبقة بينهما تثبّت الطلاء في مكانه. وعلى **الفخار**{{en: earthenware}}، الذي يُحرق بحرارة أبرد، تكون هذه الطبقة رقيقة ويبقى الطلاء في معظمه فوق السطح. أما على **الخزف الحجري**{{en: stoneware}} والبورسلين، اللذين يُحرقان بحرارة أسخن، فتكون الطبقة أسمك ويتمسّك الطلاء بالطين{{en: clay body}} بقوة أكبر. ومع ذلك يبقى الطلاء زجاجاً: فهو لا يصير جزءاً من الطين.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+تذكر الخلطة مواد خاماً، مثل الفلسبار{{en: feldspar}} وكربونات الكالسيوم{{en: whiting}} والكاولين{{en: kaolin}}. وفي الفرن يخرج جزء من كل مادة على هيئة غاز (ماء أو ثاني أكسيد الكربون)، ويصير الباقي **أكاسيد**: مركبات من عنصر مع الأكسجين، مثل السيليكا{{en: silica}} (SiO₂) أو أكسيد الكالسيوم (CaO). والزجاج بعد الحرق مكوَّن من أكاسيد، لذلك يصف الخزافون الطلاء بها. ولكل أكسيد واحدة من ثلاث مهام.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **السيليكا** (SiO₂) هي **مكوِّن الزجاج**{{en: glass former}}: تبني الزجاج. تنصهر السيليكا النقية فوق {{3100 °F; 1700 °C}}، أي أسخن بكثير من فرن الخزف، والطلاء الغني بالسيليكا أمتن عموماً.
+- **مساعدات الصهر**{{en: fluxes}} تخفض نقطة الانصهار إلى درجة يستطيع الفرن بلوغها. **القلويات**، وتُكتب **R₂O**، هي أكاسيد الصوديوم والبوتاسيوم والليثيوم (Na₂O، K₂O، Li₂O)؛ وتعمل من المخروط الحراري{{en: cone}} 06 وحتى الحرارة المتوسطة والعالية. أما **القلويات الترابية**، وتُكتب **RO**، فهي أكاسيد الكالسيوم والمغنيسيوم والباريوم والسترونتيوم (CaO، MgO، BaO، SrO)، ويُضم إليها أكسيد الزنك (ZnO)؛ وتعمل على أفضل وجه من المخروط 5 إلى المخروط 10. ويرمز R إلى أي فلز من المجموعة.
+- **الألومينا** (Al₂O₃) هي **المثبِّت**{{en: stabilizer}}. تجعل المصهور أكثر لزوجة فيبقى على الجدران القائمة، وتزيد الصلابة والمتانة. ويحذّر Glazy: مع قلة الألومينا «قد يسيل الطلاء؛ وكثرتها قد تجعل المصهور لزجاً حتى يصير مطفأً». ومعظم الألومينا يأتي من الطين والفلسبار.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**البورون** (B₂O₃) يطمس الحد الفاصل. يصنّفه الكيميائيون مكوِّناً للزجاج، لكنه في درجات حرارة الاستوديو يعمل مساعدَ صهر، ويعامله الخزافون على هذا الأساس. وهو مساعد صهر رئيسي في الحرارة المنخفضة والمتوسطة: كلما كان الحرق أبرد احتاج الطلاء إلى مزيد من البورون. وعند المخروط 10 لا حاجة إليه عادةً. (المخاريط، وهي الطريقة التي يسمّي بها الخزافون الحرق، مشروحة أدناه.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> طريقة لتذكّر ذلك: السيليكا هي الزجاج، ومساعدات الصهر تجعله ينصهر عند درجة حرارة يبلغها الفرن، والألومينا تكثّفه فيبقى حيث وُضع.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## الطين والطبقات السطحية وعمليتا الحرق {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### أجسام الطين
 
-## From recipe to unity formula {#unity-formula lang=en}
+**الجسم الطيني**{{en: clay body}} هو الطين الذي تُصنع منه القطعة. وله ثلاثة أنواع رئيسية.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **الفخار**{{en: earthenware}}: جسم منخفض الحرارة، نحو المخروط 06–02، يكون مسامياً عند المخاريط المنخفضة ويزداد كثافةً كلما حُرق بحرارة أسخن. وغالباً ما يكون أحمر أو بيج اللون، ويحتاج إلى طلاء ليحفظ الماء.
+- **الخزف الحجري**{{en: stoneware}}: جسم متوسط إلى عالي الحرارة، نحو المخروط 5–10، يصير متزجِّجاً أو قريباً من ذلك.
+- **البورسلين**: جسم أبيض غني بالكاولين، وغالباً ما يكون نصف شفاف. ومعظم البورسلين عالي الحرارة، لكن هناك أيضاً بورسلين للمخروط 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**المتزجِّج** يعني الزجاجي غير المسامي؛ و**التزجُّج** هو تحوّل الجسم إلى ذلك أثناء الحرق. وكثيراً ما يرسم الخزافون في المملكة المتحدة الحد بدرجة الحرارة بدلاً من ذلك: يُحرق الخزف الحجري فوق {{2192 °F; 1200 °C}}، والفخار دونها. والحرارة المتوسطة، المخروط 5–6، تقع على جانبي هذا الحد مباشرةً.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### الطبقات السطحية والتجفيف
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**الطين السائل** طين معلَّق في الماء، يُستخدم في الصب أو الوصل أو الزخرفة. و**البطانة** طبقة شبيهة بالطين السائل، ملوَّنة غالباً، فيها نسبة أكبر من المواد غير الطينية. أما **ألوان تحت الطلاء** فهي طين سائل ملوَّن أو زخرفة بالأكاسيد، تُغطّى عادةً بطلاء شفاف.
 
-### The silica to alumina ratio
+القطع غير المحروقة هي **القطع النيئة**{{en: greenware}} (وتختلف المصادر في ما إذا كانت الكلمة الإنجليزية greenware تشمل كل القطع غير المحروقة أو الجافة منها فقط). ومع الجفاف تصير **جلدية القوام**: متماسكة لكنها رطبة قليلاً، وهي المرحلة المناسبة للتشذيب وتركيب المقابض؛ ثم **جافة تماماً**، لا يبقى فيها ماء حر، هشة جداً وجاهزة للحرق.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### عمليتا الحرق
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+أول حرق، وهو الأدنى حرارة، هو **الحرق الأول**{{en: bisque}} (وفي المملكة المتحدة **biscuit**)، ويكون عادةً عند المخروط 08–04 (وأكثر ما يكون 06–04)، أي نحو {{1728–1945 °F; 942–1063 °C}}. ويترك القطع متينة لكنها مسامية. ويقترح Digitalfire، وهو موقع مرجعي في الطلاءات، مسامية تزيد على 15% عموماً، كي يسحب البسكويت الماء من الطلاء أثناء وضعه. والبسكويت اللين (المخروط 08–06) أكثر مسامية؛ أما البسكويت الصلب (غالباً المخروط 04) فأمتن لكنه يتقبّل الطلاء بسهولة أقل.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: كيف يغيّر الحرق الأول عملية التزجيج (Digitalfire)
+Label: كيف يغيّر الحرق الأول عملية التزجيج
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| البسكويت                                         | ما يحدث                                                           |
+| ------------------------------------------------ | ----------------------------------------------------------------- |
+| ناقص الحرق، شديد الامتصاص                        | يُوضع الطلاء سميكاً جداً، ثم يتشقق وينحسر                         |
+| زائد الحرق، كثيف                                 | يستغرق الغمس والتجفيف وقتاً أطول                                  |
+| محروق بحرارة أعلى، أو مثبَّت مدة أطول عند الذروة | يحترق مزيد من الغاز الآن، فيقلّ ما يخرج فقاعاتٍ عبر الطلاء لاحقاً |
 
-### Loss on ignition
+يصف Potclays، وهو مورد بريطاني، الحرق الأول إلى نحو {{1000 °C; 1832 °F}}، أي نحو المخروط 06. ومن قراءة هذه المصادر معاً، نقترح المخروط 06–04 للحرق الأول في البداية: {{1828–1945 °F; 998–1063 °C}} بمعدل التسخين المتوسط لدى Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**حرق الطلاء**{{en: glaze firing}} (وقد يسميه الخزافون البريطانيون حرق **glost**) يصهر الطلاء، ويُنضج الطين أيضاً في الخزف الحجري. أما **الحرق الواحد**{{en: once-firing}} فهو طلاء القطع النيئة وحرقها مرة واحدة فقط. ويذكر Digitalfire حالة إنتاجية انحسر فيها الطلاء{{en: crawling}} عن حواف قطع طُليت وهي نيئة، حتى عالج ذلك حرقٌ أول، لذا يُبدأ بعمليتي حرق. ويقدّم دليل [الحرق في فرن بسيط](/guides/firing) برامج حرق للاثنين.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## المخاريط والشغل الحراري {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+يسمّي الخزافون الحرق باسم **المخروط الحراري**{{en: cone}}: هرم خزفي نحيل ينحني عندما يتلقى قدراً محدداً من الحرارة. وتصف Orton، الشركة التي تصنعها، المخاريط بأنها مؤشرات للزمن ودرجة الحرارة (الشغل الحراري): فهي تبيّن الأثر المشترك للزمن ودرجة الحرارة، لا درجة الحرارة وحدها.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**الشغل الحراري**{{en: heatwork}} هو السبب: فالطلاء والطين والمخروط تستجيب كلها لمدة بقائها ساخنة إلى جانب درجة سخونتها. والحرق البطيء يُحني المخروط عند درجة حرارة أدنى، والسريع عند درجة أعلى. ويُظهر جدول Orton أن المخروط 6 ينحني عند {{2165 °F; 1185 °C}} إذا انتهى الحرق بارتفاع قدره {{27 °F; 15 °C}} في الساعة، وعند {{2232 °F; 1222 °C}} بمعدل {{108 °F; 60 °C}} في الساعة، وعند {{2269 °F; 1243 °C}} بمعدل {{270 °F; 150 °C}} في الساعة، والمعدل مأخوذ على آخر {{180 °F; 100 °C}}. ويكتمل المخروط حين ينحني طرفه 90°. وكثيراً ما يسمّي الخزافون ذلك وضع الساعة 5.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+تمتد أرقام المخاريط من 022 إلى 42. والصفر في أول الرقم يميّز السلسلة الأبرد، وفيها يكون الرقم الأكبر أبرد: فالمخروط 06 أبرد من المخروط 04، والمخروط 01 أبرد من المخروط 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: نطاقات الحرق: مخاريط Orton ذاتية الوقوف بمعدل {{108 °F; 60 °C}} في الساعة
+Label: نطاقات الحرق
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| النطاق       | المخاريط |          °F |          °C | الاستخدام                  |
+| ------------ | -------- | ----------: | ----------: | -------------------------- |
+| حرارة منخفضة | 06–04    | 1,828–1,945 |   998–1,063 | طلاءات الفخار؛ الحرق الأول |
+| حرارة متوسطة | 5–6      | 2,167–2,232 | 1,186–1,222 | الخزف الحجري والبورسلين    |
+| حرارة عالية  | 9–10     | 2,300–2,345 | 1,260–1,285 | الخزف الحجري والبورسلين    |
+
+> [!NOTE]
+> تُسمّى عمليات الحرق وتُبرمج حسب المخروط، وتُعدّ درجات الحرارة تقريبية. و**المخروط الشاهد**{{en: witness cone}} الموضوع على رف بين القطع، أو **مجموعة المخاريط**{{en: cone pack}} المؤلفة من ثلاثة (المخروط المنذِر ومخروط الحرق والمخروط الحارس)، يبيّن الشغل الحراري الذي تلقّته القطع فعلاً.
+
+تختلف درجات الحرارة المنشورة. فيعطي Glazy للحرارة العالية، المخروط 9–11، نحو {{2336–2390 °F; 1280–1310 °C}}، وهذا يوافق العمود السريع لدى Orton، ويعطي Digitalfire للمخروط 6 نحو {{2200 °F; 1204 °C}}. ونصيحتنا: اعتماد أرقام Orton للمعدل المتوسط، كما يفعل هذا الدليل، والبرمجة حسب المخروط، وترك الحكم للمخروط الشاهد.
+
+خارج أمريكا الشمالية، كثيراً ما يذكر الموردون درجة الحرارة (°C) بدلاً من المخروط. وقد طوّر هيرمان سيجر (Hermann Seger) المخروط الحديث، واستُخدم أول مرة في برلين عام 1886، وللمملكة المتحدة مخاريطها الخاصة، مخاريط Staffordshire؛ ولا ينبغي افتراض أن أرقامها تطابق أرقام Orton، ولم نجد جدولاً للتحويل بينها. ويتناول دليل [الحرق في فرن بسيط](/guides/firing) المخاريط بتفصيل أكبر.
+
+## من الخلطة إلى صيغة سيجر {#unity-formula}
+
+تذكر **الخلطة**{{en: batch recipe}} المواد الخام بالوزن، وتُحسب عادةً بحيث يكون مجموع الأساس 100. أما **الإضافات**{{en: additives}} (الملوِّنات والمعتِّمات ومواد التعليق) فتُضاف فوق هذا المجموع البالغ 100، وعادةً كنسبة مئوية من الأساس. ولمعرفة حقيقة الطلاء، يحوّل الخزافون الخلطة إلى **الصيغة الجزيئية الموحَّدة**{{en: unity molecular formula}} (**UMF**)، أو **صيغة سيجر** (Seger formula)، نسبةً إلى هيرمان سيجر الذي كان أول من استخدم ترتيبها في ثلاثة أعمدة.
+
+Table: من الخلطة إلى صيغة سيجر: المثال المحلول لدى Glazy
+Label: من الخلطة إلى صيغة سيجر
+
+| الخطوة                | ما يحدث                                                                                                     | في المثال                                                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. الخلطة             | المواد الخام بالوزن، محسوبة إلى 100                                                                         | الفلسبار 40%، بين مواد أخرى                                                                                                                    |
+| 2. تحليل الأكاسيد     | كبطاقة القيمة الغذائية: تُجمع أكاسيد كل مادة كنسبة مئوية بالوزن، وتُحذف الغازات                             | يحتوي الفلسبار على 64.8% من السيليكا، فنسبته البالغة 40% تجلب 25.9% من SiO₂. والطلاء بعد الحرق 67.4% SiO₂ و 12.6% Al₂O₃ و 7.5% K₂O و 12.5% CaO |
+| 3. المولات            | تصير الأوزان **مولات**، أي أعداداً من الجزيئات، لأن «الغرامات قد تكون مضللة لأن بعض الأكاسيد أثقل من غيرها» | كل 60.1 g من SiO₂ تساوي مولاً واحداً، لذا تساوي 67.4 g نحو 1.12 مول                                                                            |
+| 4. التوحيد إلى الواحد | يُقسم كل شيء على مجموع مساعدات الصهر، فيصير مجموعها 1                                                       | مجموع مساعدات الصهر 0.303؛ والقسمة تعطي K₂O 0.26 و CaO 0.74 و Al₂O₃ 0.41 و SiO₂ 3.70                                                           |
+
+تُجري [صفحة الخلطة](/recipe) في Glazecalc الخطوات الأربع كلها أثناء الكتابة، وتعرض النتيجة في ثلاثة أعمدة: مساعدات الصهر (R₂O و RO) ومجموعها 1؛ والمثبِّتات (R₂O₃: الألومينا، ويوضع البورون هنا غالباً)؛ ومكوِّنات الزجاج (RO₂: السيليكا). ويقول Glazy: «التوحيد مجرد أداة لتغيير المقياس»: فخلطتان مصنوعتان من مواد مختلفة لكن لهما صيغة سيجر نفسها «تتصرفان تقريباً بالطريقة نفسها بعد الحرق». فالرقم 1 مقياس مشترك، وليس كمية تُوزن. ويضيف Digitalfire أن الطريقة «لا تعمل بالجودة نفسها في درجات الحرارة الأدنى»، حيث لا يكون البورون مساعد صهر بسيطاً، وأن صيغ سيجر «مقارِنة، ومن الأفضل النظر إليها في سياقها». وتضع ميزة **«مقارنة»** صيغتي خلطتين جنباً إلى جنب، أكسيداً بأكسيد.
+
+### نسبة السيليكا إلى الألومينا
+
+أنفع رقم منفرد هو **نسبة السيليكا إلى الألومينا**{{en: silica to alumina ratio}}: السيليكا مقسومة على الألومينا. وفي المثال، 3.70 ÷ 0.41 تساوي نحو 9.
+
+Table: ما توحي به نسبة السيليكا إلى الألومينا (Glazy)
+Label: نسبة السيليكا إلى الألومينا
+
+| النسبة | قراءة Glazy                                    |
+| -----: | ---------------------------------------------- |
+|  نحو 9 | توحي بمصهور لامع، إذا توفرت حرارة كافية        |
+|    5–7 | معتادة في كثير من طلاءات الخزف الحجري المستقرة |
+|    3–5 | قد يكون الطلاء مطفأً أو ناقص الحرق             |
+
+ولا يذكر Glazy أي مخروط تخصه هذه الأرقام. فتُقرأ دليلاً تقريبياً لطلاءات الخزف الحجري، نحو المخروط 6–10. ويقول Digitalfire إن النسبة التي تزيد على نحو 8 يُرجَّح أن تعطي طلاءً لامعاً، لكن الطلاء الذي فيه بورون قد يكون لامعاً عند 8 أو أقل، والطلاء المنخفض الحرارة حتى عند 6. ولا تتنبأ نسبة 5–7 وحدها باللمعان ولا بالانطفاء: فمساعدات الصهر والبورون والمخروط كلها تحرّك الحد. ويعطي Glazy لتوازن مساعدات الصهر في الطلاءات المستقرة قيمةً معتادة هي 0.2 R₂O مع 0.8 RO، و 0.3 R₂O مع 0.7 RO بحد أقصى. وزيادة القلويات تجعل المصهور أكثر سيولة وترفع تمدده، ومن ثم خطر التشقق الشعري.
+
+### الفقد بالحرق
+
+**الفقد بالحرق**{{en: loss on ignition}} (**LOI**) هو الوزن الذي تفقده المادة في الفرن حين يخرج منها الماء أو ثاني أكسيد الكربون أو المواد العضوية أو الكبريت على هيئة غاز. والطلاء المحروق لم يعد فيه ما يُفقد، لذلك تُسقطه صيغة سيجر من الحساب.
+
+Table: الفقد بالحرق المعتاد (Digitalfire)
+Label: الفقد بالحرق
+
+| المادة                                 | الفقد بالحرق المعتاد                                                            |
+| -------------------------------------- | ------------------------------------------------------------------------------- |
+| كربونات الكالسيوم (whiting)، الدولوميت | أكثر من 40%، معظمه ثاني أكسيد الكربون: 100 g من كربونات الكالسيوم تطلق نحو 44 g |
+| كربونات الليثيوم                       | نحو 60%                                                                         |
+| كربونات الباريوم، Gerstley Borate      | أكثر من 20%                                                                     |
+| الكاولين                               | نحو 12–14%، معظمه ماء مرتبط في بلوراته                                          |
+| الفلسبارات                             | أقل من 1%                                                                       |
+
+الغاز الذي يخرج بعد أن يبدأ الطلاء بالانصهار لا بد أن يشق طريقه عبره فقاعاتٍ، مسبباً، بتعبير Digitalfire، «الفقاعات والتنفُّط والثقوب الإبرية وانحسار الطلاء». وفي اختبار أجراه Digitalfire، ظل التلك يطلق الغاز حتى نحو {{1650 °F; 899 °C}}. ويساعد في ذلك كله الفريت، والمواد **المكلَّسة** (المسخَّنة مسبقاً لطرد غازاتها)، وتعديل الحرق.
+
+تُجري الكتب القديمة هذا الحساب يدوياً، باستخدام **الوزن الجزيئي** (وزن مول واحد من مادة أو أكسيد) و**الوزن المكافئ** (وزن المادة الذي يعطي مولاً واحداً من أكسيد). وبحسب حسابنا، نحو 100 g من كربونات الكالسيوم تعطي مولاً واحداً، أي 56 g، من أكسيد الكالسيوم. والحاسبة تتولى الأمرين.
+
+## الحدود ومخطط Stull {#stull-chart}
+
+**مخطط Stull**{{en: Stull chart}} خريطة للطلاءات. له محوران، كلاهما من صيغة سيجر: السيليكا (SiO₂) على المحور الأفقي في الأسفل، والألومينا (Al₂O₃) على المحور الرأسي في الجانب. وكل طلاء نقطة واحدة. والخريطة مقسومة إلى مناطق، مثل المطفأة واللامعة وناقصة الحرق والمتشققة شعرياً. وترسم [صفحة الخلطة](/recipe) في Glazecalc طلاءك عليه.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+صنع R. T. Stull المخطط من اختبارات نشرها عام 1912. وقد حرقها عند نحو المخروط 11، وكانت مساعدات الصهر في كل اختبار هي نفسها: 0.3 من البوتاس (K₂O) و 0.7 من أكسيد الكالسيوم (CaO). ولم يتغير إلا السيليكا والألومينا. فالمخطط يصدق على تلك الطلاءات عند تلك الحرارة.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+والأرجح أن طلاءك مختلف. فالبورون ومساعدات الصهر الأخرى والمخاريط الأبرد كلها تحرّك المناطق. وفي عام 2025 اختبر مقال في Ceramics Monthly طلاءً للمخروط 6 مساعداتُ صهره من البورات، وفيه كثير من الحديد. فوضعه المخطط في منطقة المتشقق شعرياً والمطفأ وناقص الحرق. أما في الواقع فكان منصهراً انصهاراً كاملاً، نصف مطفأ، وغير متشقق. ويقول المؤلفون إن الطلاءات التي فيها بورات لا تقع في مواضع صحيحة على المخطط. لذا تُستخدم المناطق دليلاً إرشادياً، لا تنبؤاً.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+ومنطقة **التشقق الشعري** هي حيث تشققت اختبارات Stull نفسها، على طينه هو. وهي لا تبيّن مدى توافق طلاءك مع جسمك الطيني. فالتشقق الشعري يتوقف على التمدد الحراري للطلاء والطين كليهما. ورقم التمدد في Glazecalc يساعد على المقارنة بين الطلاءات، أما الحكم فلاختبار فعلي: اختبار الماء المثلج في [توافق الطلاء والعيوب](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+و**صيغ الحدود**{{en: limit formulas}} أداة أخرى للسؤال نفسه: نطاقات للسيليكا والألومينا ومساعدات الصهر في الطلاءات المستقرة عند مخروط معين. ويشرحها قسم [سلامة الطعام](/guides/glazing-basics#food-safety)، ويشرح لماذا لا تثبت شيئاً وحدها.
 
-## Frits and raw materials {#materials lang=en}
+## الفريت والمواد الخام {#materials}
 
-### Frits
+### الفريت
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**الفريت**{{en: frit}} زجاج يُصنع في المصانع: خامات معدنية تُصهر ثم تُبرَّد فجأة في الماء وتُطحن. والتفريت يجعل المواد القابلة للذوبان، مثل البوراكس، غير قابلة للذوبان، ويحبس الأكاسيد السامة، مثل الرصاص والباريوم، في زجاج مستقر، ويعطي مادة أثبت في خواصها من الخامات المعدنية الخام، ويطرد الغازات، لذلك تكون الطلاءات المحتوية على الفريت «أخلى من العيوب بكثير» (Digitalfire). وينصهر الفريت مبكراً أيضاً: ففريت الصودا ينشط عند المخروط 06، بينما الفلسبار «لا يكاد يبدأ في التليّن إلا عند المخروط 6». والفريت أغلى ثمناً، ويحتاج إلى الطين ليبقى معلَّقاً (ومثال Digitalfire هو 85% فريت مع 15% طين)، وهو «غير قابل للذوبان نظرياً، أما عملياً فليس كذلك».
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+تُعرف فريتات أمريكا الشمالية باسم الصانع ورقمه: إذ يرد Ferro Frit 3134 (وقد صارت Ferro الآن Vibrantz) بين أكثر الفريتات استخداماً في أمريكا الشمالية. أما خلطات المملكة المتحدة فتذكر في الغالب فريتات عامة، مثل فريت البوراكس القياسي.
 
-### The common raw materials
+### المواد الخام الشائعة
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: مواد الطلاء الشائعة وما تعطيه
+Label: مواد الطلاء الشائعة
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| المادة (أسماء أخرى)                                 | ما تعطيه               | ملاحظات                                                                                                                                                   |
+| --------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| السيليكا (الفلنت، الكوارتز)                         | SiO₂                   | تُستخدم في الطلاءات بنعومة 325 مِش، وهي درجة طحن ناعمة جداً                                                                                               |
+| الكاولين (المملكة المتحدة: الطين الصيني)            | Al₂O₃، SiO₂            | المصدر الرئيسي للألومينا؛ ويساعد أيضاً على منع ترسب الطلاء                                                                                                |
+| طين البول كلاي                                      | Al₂O₃، SiO₂            | أكثر لدونة من الكاولين، وفيه حديد ومواد عضوية أكثر                                                                                                        |
+| فلسبار البوتاسيوم، فلسبار الصوديوم، النيفلين سيانيت | K₂O، Na₂O، Al₂O₃، SiO₂ | مساعدات صهر تحمل معها الألومينا والسيليكا. والنيفلين سيانيت مساعد صهر قوي في الحرارة المنخفضة والمتوسطة. و«الفلسبار» وحده في خلطة قديمة قد يعني أياً منها |
+| كربونات الكالسيوم (whiting)                         | CaO                    | مساعد الصهر الرئيسي للكالسيوم؛ يطلق ثاني أكسيد الكربون                                                                                                    |
+| الولاستونيت                                         | CaO، SiO₂              | الكالسيوم من دون ثاني أكسيد الكربون                                                                                                                       |
+| الدولوميت، التلك                                    | MgO، مع CaO أو SiO₂    | أسطح مطفأة حريرية الملمس؛ تمدد أقل                                                                                                                        |
+| أكسيد الزنك                                         | ZnO                    | اللمعان والبلورات؛ وكثرته قد تسبب انحسار الطلاء                                                                                                           |
+| فريتات البورون، Gerstley Borate، الكوليمانيت        | B₂O₃                   | أساسية من المخروط 06 إلى المخروط 6؛ والفريتات «أثبت خواصاً وأقل ذوباناً من البورات الخام»                                                                 |
+| كربونات الليثيوم                                    | Li₂O                   | مساعد صهر منخفض التمدد؛ غالي الثمن، لذا يُستخدم باعتدال                                                                                                   |
+| كربونات السترونتيوم                                 | SrO                    | البديل الأقل سمية للباريوم                                                                                                                                |
+| كربونات الباريوم                                    | BaO                    | سامة في صورتها الخام؛ وقد يحدث تسرُّب المعادن من الطلاءات الغنية بالباريوم                                                                                |
+| البنتونيت                                           | التعليق                | طين ناعم جداً، يُضاف عادةً بنسبة 1–2%، لمنع الترسب. وما يزيد على 3% قد يشقق الطلاء أثناء جفافه                                                            |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> مواد الطلاء مساحيق ناعمة. وغبار السيليكا يضر الرئتين دون أعراض في البداية، وبعض المواد، مثل كربونات الباريوم وكربونات الليثيوم، سامة إذا ابتُلعت. تُعامَل المساحيق برفق، ويكون التنظيف رطباً، وتُلبس كمامة تنفسية محكمة الملاءمة عند العمل بالمواد الجافة. ويشرح دليلا [الخلط الآمن والتهوية](/guides/safe-mixing) و[لا تسمّموا عائلتكم](/guides/home-safety) الطريقة.
 
-### Regional names
+### الأسماء الإقليمية
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- يُسمى **الكاولين**{{en: kaolin}} في المملكة المتحدة **الطين الصيني** (china clay). وفي أستراليا، Eckalite علامة تجارية من علامات الكاولين.
+- **الفلنت**{{en: flint}} اسم بريطاني قديم للسيليكا. وما زال الموردون البريطانيون يبيعون **الفلنت المكلَّس** منتجاً قائماً بذاته، لذا فإن «الفلنت» في خلطة بريطانية يعني على الأرجح الفلنت المكلَّس، وفي خلطة أمريكية يعني على الأرجح الكوارتز المطحون. ويُباع كلاهما مصدراً للسيليكا؛ ويُتحقق من التحليل.
+- يُطلق على **حجر كورنوال** بالإنجليزية **china stone** و **Cornish stone** (أو Cornwall stone)، وهي مادة واحدة قريبة من الفلسبار.
+- تُسمى **كربونات الكالسيوم** بالإنجليزية whiting، وهي طباشير أو حجر جيري مطحون.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> يُحكم على المادة بالأكاسيد التي تعطيها، لا باسمها. وهكذا يعمل Glazecalc: يمكن إدخال تحليل المورّد في [صفحة المواد](/material)، وميزات **«تجربة مواد حديثة ومقارنتها»** و**«اقتراح الكميات والمقارنة»** و**«المطابقة مع ما لديّ»** كلها تطابق الأكاسيد بعد الحرق، لا الأسماء.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+والمواد تتغير أيضاً. فقد أفادت هيئة المسح الجيولوجي الأمريكية بأن المناجم والمصنع التي كانت تنتج فلسبار Custer، في ولاية داكوتا الجنوبية، علّقت عملها في نوفمبر 2023. وأُغلق منجم Gerstley Borate الأصلي نحو 1999–2000؛ وما زالت Laguna تبيع منتجاً بهذا الاسم، و Gillespie Borate هو البديل الرئيسي. وتختلف المصادر في ما إذا كان Gillespie يحل محل Gerstley Borate رطلاً برطل (يقول صانعه و Potclays نعم، ويقول Digitalfire وآخرون لا)، لذا تُقارن المادتان في Glazecalc، ثم تُختبر دفعة صغيرة.
 
-## Colorants and opacifiers {#color lang=en}
+## الملوِّنات والمعتِّمات {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**المادة الملوِّنة**{{en: colorant}} أكسيد أو كربونات فلز يلوّن الطلاء؛ و**الصبغة الخزفية**{{en: stain}} مادة ملوِّنة مصنوعة في المصانع، أكثر استقراراً وثباتاً من الأكاسيد الخام. وتكون الملوِّنات عادةً أقل من 5% من الأساس، وكثير منها أقل من 1%، والكربونات أضعف من الأكسيد المقابل، لأن جزءاً منها يخرج على هيئة غاز. وبحسب حسابنا، تعطي 100 g من كربونات الكوبالت نحو 63 g من أكسيد الكوبالت، وتعطي 100 g من كربونات النحاس التي يشتريها الخزافون (كربونات النحاس القاعدية) نحو 72 g من أكسيد النحاس. لذا تُستخدم من الكربونات كمية تعادل نحو 1.4 إلى 1.6 ضعف كمية الأكسيد.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: الملوِّنات الشائعة، كنسبة مئوية من الأساس
+Label: الملوِّنات الشائعة
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| المادة الملوِّنة         | الكمية المعتادة للبدء                 | الألوان والملاحظات                                                                                                                   |
+| ------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| الكوبالت                 | 0.1–2% (تختلف المصادر)                | أزرق، وقوي جداً؛ يميل إلى البنفسجي حين يحتوي الأساس على المغنيسيوم                                                                   |
+| الحديد                   | 0.5–10%                               | ألوان بنية وبنية فاتحة وحمراء في الأكسدة؛ وفي الاختزال تعطي ½–2% السيلادون و 5–10% التينموكو. وهو مساعد صهر، فكثرته تجعل الطلاء يسيل |
+| النحاس                   | 1–3%                                  | أخضر أو فيروزي في الأكسدة، وأحمر في الاختزال. وقد يسبب تسرُّب المعادن من الطلاء                                                      |
+| الكروم                   | من أقل من 0.5% إلى 2% (تختلف المصادر) | أخضر؛ وبني إذا كان في الأساس زنك، ووردي مع القصدير                                                                                   |
+| المنغنيز                 | 2–10%                                 | ألوان بنية وبنفسجية                                                                                                                  |
+| الروتيل                  | نحو 2–5%                              | لون مبقّع متنوع؛ وسطح خشن أو مطفأ فوق نحو 5%                                                                                         |
+| الصبغات الخزفية التجارية | 2–12%                                 | من 2–4% للدرجات الفاتحة، و 5–8% للدرجات المتوسطة، و 10–12% للألوان القوية                                                            |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+كميات الكوبالت والكروم موضع خلاف حقيقي. يقول Glazy إن 0.1% من الكوبالت تكفي للون أزرق؛ وتعطي كلية Glendale المجتمعية (Glendale Community College) ½–2% أو ½–3% بحسب جو الفرن؛ وتقول بيردي بون (Birdie Boone)، في Pottery Making Illustrated، إن الكمية 3% أو أقل. وللكروم، تقول بون أقل من 0.5%، و Glendale 2–3%. والطريق الآمن هو البدء بكمية قليلة وإجراء **سلسلة خلط خطية**{{en: line blend}}: صف من بلاطات الاختبار{{en: test tile}} تتدرج فيه مادة واحدة من قليل إلى كثير.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+الطلاء الأساسي يغيّر اللون. فالأساس اللامع الشفاف يعطي أزهى الألوان؛ أما الأساس نصف المطفأ والمطفأ، وهما عادةً أغنى بالألومينا، فيخفّتان اللون. والمغنيسيوم يدفع الكوبالت نحو البنفسجي، والزنك يحوّل الكروم إلى البني، والكروم مع القصدير يعطي الوردي.
 
-### Opacifiers
+### المعتِّمات
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+**المادة المعتِّمة** تجعل الطلاء **معتماً** يخفي الطين؛ أما الطلاء **الشفاف** فيتركه ظاهراً.
 
-Table: Opacifiers
+Table: المعتِّمات
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| المادة المعتِّمة                     | الكمية المعتادة     | ملاحظات                                                                                                           |
+| ------------------------------------ | ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| الزركون (Zircopax، Superpax، Ultrox) | 10–15% لعتامة كاملة | الخيار الأرخص؛ والعلامات التجارية هي سيليكات الزركونيوم مطحونة بأحجام مختلفة، والدرجات الأنعم أقوى                |
+| أكسيد القصدير                        | نحو 5–7% (تقديرنا)  | غالي الثمن؛ أضعف في الحرارة العالية، ويذكر Digitalfire أن 4% لم تعطِ أي عتامة في طلاء شفاف للمخروط 10 في الاختزال |
+| ثاني أكسيد التيتانيوم                | نحو 5% (تقديرنا)    | عتامة حريرية نصف شفافة؛ ونحو 5% قد تجعل السطح متفاوتاً، والكمية الأكبر بكثير تعطي غالباً سطحاً مطفأً فيه بلورات   |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## توافق الطلاء والعيوب {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+يتمدد الطين والطلاء كلاهما بالتسخين وينكمشان بالتبريد، كلٌّ بمقداره الخاص: وهذا **تمدده الحراري**{{en: thermal expansion}}. و**توافق الطلاء مع الجسم**{{en: glaze fit}} هو مدى تطابق الاثنين. والتوافق الجيد يترك الطلاء مضغوطاً قليلاً بفعل الطين؛ ويقول Digitalfire إن قليلاً من الانضغاط يقوّي القطع، بينما كثرته قد تضعفها بل تشقّها.
 
-### Crazing and shivering
+### التشقق الشعري والتقشر
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**التشقق الشعري**{{en: crazing}} شبكة من الشقوق الدقيقة. يكون تمدد الطلاء أعلى من تمدد الجسم، فينكمش أكثر منه عند التبريد، فيُشَدّ ويتشقق، والسبب عادةً كثرة الصوديوم والبوتاسيوم (Na₂O، K₂O). وقد يظهر أيضاً لاحقاً، أثناء الاستخدام، بعد تبريد مفاجئ متكرر مثل ملامسة السوائل الباردة. وحين يكون مقصوداً، كما في الراكو، يُسمى **التشقق الزخرفي**. ويقول Digitalfire: «في 95% من الحالات يكون الحل تعديل التمدد الحراري للطلاء»؛ أما التبريد البطيء فلا يفعل سوى تأخير التشقق الشعري. واختباره: تُسخَّن القطعة إلى نحو {{300 °F; 149 °C}}، ثم تُغمر في ماء مثلّج، ويُمرَّر عليها قلم لبّاد لإظهار الشقوق.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+تختلف المصادر في الإصلاح الأول. يقترح Glazy إضافة السيليكا أو الألومينا؛ ويرد Digitalfire بأن السيليكا الإضافية «لا تفعل سوى تخفيف KNaO» (الصوديوم والبوتاسيوم)؛ وتضيف ليندا بلومفيلد (Linda Bloomfield) البورون أو تقلل الفلسبار، مادةً واحدة في كل مرة. ونصيحتنا: في [حاسبة الخلطات](/recipe)، استبدال بعض الصوديوم والبوتاسيوم بمساعدات صهر أقل تمدداً (البورون، الليثيوم، المغنيسيوم، الكالسيوم)، والتحقق من التغيير بميزة **«مقارنة»**، والتأكد باختبار الماء المثلج.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**التقشر**{{en: shivering}} عكس ذلك: يكون تمدد الطلاء أدنى بكثير من تمدد الجسم، فيُضغط أكثر من اللازم ويتقشر عن الحواف والأطراف. ويحذّر Digitalfire من أن الرقائق قد تكون حادة كالشفرات وقد تُبتلع، ويصف Glazy التقشر بأنه «أخطر حتى من التشقق الشعري على أواني الطعام والشراب». والحل طلاء أعلى تمدداً أو جسم أقل تمدداً.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> لا تُستخدم القطع المتشققة تشققاً شعرياً أو المتقشرة للطعام أو الشراب. وتختلف المصادر في ما إذا كان يمكن تنظيف القطع المتشققة تشققاً شعرياً تنظيفاً كافياً (يقول أحدها إن غسالة الصحون تكفي؛ ويعدّ آخر أواني الطعام والشراب المتشققة معيبة)، لذا نأخذ بجانب الحذر.
 
-### Gloss and matte
+### اللامع والمطفأ
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+السطح **اللامع** عاكس وأملس، و**نصف المطفأ** (الساتان) ذو بريق خافت، و**المطفأ** باهت. واللمعان يحتاج إلى زجاج منصهر انصهاراً كاملاً. أما الانطفاء فقد يأتي من كثرة الألومينا (نسبة سيليكا إلى ألومينا منخفضة)، أو من مساعدات صهر مثل الكالسيوم أو المغنيسيوم أو الباريوم أو السترونتيوم تكوّن بلورات دقيقة أثناء تبرّد الطلاء، أو من نقص الحرق.
 
-### Common defects
+### العيوب الشائعة
 
-Change one thing at a time, and keep your test tiles.
+يُغيَّر شيء واحد في كل مرة، وتُحفظ بلاطات الاختبار.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: عيوب الطلاء الشائعة وأسبابها المعتادة وأول الحلول
+Label: عيوب الطلاء الشائعة
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| العيب               | شكله                                        | الأسباب الشائعة                                                                                                                               | أول الحلول                                                                         |
+| ------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| انحسار الطلاء       | ينسحب الطلاء في حبيبات تاركاً الطين مكشوفاً | بسكويت مغبر أو دهني؛ طبقة سميكة غنية بالطين تشققت أثناء الجفاف؛ الزنك أو الزركون أو القصدير                                                   | تنظيف البسكويت؛ ترقيق الطبقة؛ تكليس بعض الطين؛ إضافة مادة رابطة مثل صمغ CMC        |
+| الثقوب الإبرية      | ثقوب أو نُقَر صغيرة                         | غاز من الجسم أو الطلاء لم يلتئم مكانه؛ طلاء ناقص الحرق أو لزج                                                                                 | التثبيت عند ذروة الحرارة نحو نصف ساعة؛ ترقيق الطبقة؛ تقليل الزنك أو الروتيل        |
+| الفقاعات (التنفُّط) | حفر ذات حواف حادة                           | زيادة الحرق عادةً؛ طبقات سميكة جداً؛ مساعدات صهر متطايرة فوق نحو {{2192 °F; 1200 °C}}                                                         | الحرق بحرارة أدنى؛ ترقيق الطبقة. والحواف الحادة تجعل أواني الطعام والشراب غير آمنة |
+| السيلان             | يسيل الطلاء على الرف                        | قلة الألومينا؛ سمك زائد، كما في مواضع تداخل الصب؛ كثرة الحديد                                                                                 | ترقيق الطبقة؛ إضافة الألومينا؛ إبقاء الطلاء بعيداً بمسافة كافية فوق قاعدة القطعة   |
+| التصدع الحراري      | شقوق في القطعة من التبريد أو التسخين        | التبريد السريع عبر انقلاب الكوارتز، {{1063 °F; 573 °C}}، أو انقلاب الكريستوباليت، نحو {{428 °F; 220 °C}}؛ جدران غير متساوية السمك؛ توافق ضعيف | الحرق ببطء عبر الاثنين، في التسخين والتبريد؛ جدران متساوية السمك                   |
 
-## Food safety {#food-safety lang=en}
+## سلامة الطعام {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**تسرُّب المعادن**{{en: leaching}} هو ذوبان المعادن من الطلاء المحروق إلى الطعام أو الشراب، وقد يبدو الطلاء مثالياً ومع ذلك يحدث منه هذا التسرُّب. وتنقع الاختبارات القانونية القطعة المحروقة في محلول حمضي وتقيس ما يخرج منها من الرصاص والكادميوم.
 
-### Lead-free is not the same as food-safe
+### الخلو من الرصاص لا يعني الأمان للطعام
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+تحدّ القواعد في الولايات المتحدة والاتحاد الأوروبي والمملكة المتحدة وأستراليا من الرصاص والكادميوم اللذين تطلقهما القطعة المحروقة، لا مما يحتويه الطلاء. وعبارة «خالٍ من الرصاص» تزيل خطراً واحداً؛ لكنها ليست تصنيفاً لسلامة الطعام. وتتسرب أكاسيد أخرى أيضاً: يحذّر Glazy من أن الطلاءات الغنية بالباريوم «قد تتسرب منها المعادن، وهي عموماً غير آمنة للطعام»، ويقول Digitalfire إن النحاس «قد يجعل الطلاء عرضة لتسرُّب المعادن؛ فليُختبر»، ولم يعد Glazy ينصح بطلاءات الرصاص لأواني الطعام والشراب.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**طلاء الأسطح الملامسة للطعام**{{en: liner glaze}} طلاء مستقر، شفاف أو أبيض عادةً، للأسطح التي تلامس الطعام. ونرى أن الطلاء الخالي من الملوِّنات والباريوم والرصاص والليثيوم، الذي ينصهر انصهاراً كاملاً ولا يتشقق تشققاً شعرياً ويتحمّل الاستعمال جيداً، هو الخيار الأقل خطراً. والأقل خطراً ليس برهاناً.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**صيغ الحدود**{{en: limit formula}} (ويفضّل Digitalfire تسمية **الصيغ المستهدفة**، target formulas) تعطي نطاقات صيغة سيجر المعتادة للطلاءات المستقرة عند مخروط معين: فأهداف Digitalfire للمخروط 6 تضع الألومينا عند 0.285–0.64 والسيليكا عند 2.4–4.7. وهي ترشد إلى كيمياء سليمة لكنها لا تثبت شيئاً؛ ويتجنب Digitalfire كلمة «حد» لأنها توحي بأن الطلاءات الواقعة داخل النطاقات «آمنة بطريقة ما». وتنبّه أدوات Glazecalc لتعديل الخلطات حين تتجاوز الخلطة الجديدة حداً موصى به، مثل كثرة البورون عند المخروط 6، وتبيّن ما سيفعله الطلاء على الأرجح.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+تختلف الحدود القانونية من بلد إلى آخر. ويعرض الجدول حدود بلدك، بوحدات القانون نفسه؛ ويمكن اختيار بلد آخر أو منطقة أخرى للمقارنة.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+في الولايات المتحدة، تُعامل القطع الخزفية الزخرفية التي تبدو صالحة للطعام معاملة أواني الطعام، ما لم تحمل ملصقاً لاصقاً وتنبيهاً دائماً مقولباً أو محروقاً على قاعدتها، مثل «Not for Food Use. May Poison Food» (ليست للاستعمال مع الطعام. قد تسمّم الطعام)، أو ما لم يكن فيها ثقب يخترق سطح الطعام. ويحدد الاتحاد الأوروبي حدود الرصاص والكادميوم للقطع الخزفية في التوجيه الأوروبي 84/500/EEC، وتحتفظ المملكة المتحدة بالأرقام نفسها في قانونها الخاص. ويضع قرار صادر عام 2024 عن دول البنلوكس حدوداً أدنى بكثير للقطع الخزفية. وقد طبّقتها هولندا اعتباراً من 29 مايو 2026: كمية رصاص أقل بنحو 130 إلى 150 مرة، وكمية كادميوم أقل بنحو 14 إلى 18 مرة، مقارنةً بأرقام الاتحاد الأوروبي. ويجوز بيع القطع التي استوفت القواعد القديمة وبيعت لأول مرة قبل 1 ديسمبر 2026 حتى نفاد المخزون. وتفيد مختبرات الاختبار بأن لوكسمبورغ تطبّق الحدود نفسها اعتباراً من 29 مايو 2026، وبأن بلجيكا اعتمدتها بمرسوم ملكي في 19 يوليو 2026؛ ولم نقرأ هذين النصين بأنفسنا. وتضع أستراليا حدوداً للقطع المستوردة؛ ولم نجد حداً رسمياً للقطع المصنوعة في أستراليا أو نيوزيلندا.
 
-### Testing
+### الاختبار
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+تقول إدارة الغذاء والدواء الأمريكية (FDA) إن أطقم المسح المنزلية يمكن أن تكشف الرصاص القابل للتسرب، لكن الدراسات تبيّن أن هذه الأطقم كثيراً ما تخطئ على القطع المزجَّجة: فقد تُظهر رصاصاً غير موجود، وقد لا تكشف رصاصاً يتسرب. فالنتيجة الإيجابية سبب للتوقف عن استخدام القطعة، والنتيجة السلبية لا تثبت شيئاً. أما الجواب الحقيقي فهو اختبار تسرُّب المعادن{{en: leach test}} في المختبر للقطعة المحروقة (ASTM C738 في الولايات المتحدة؛ EN 1388 أو ISO 6486 في أوروبا).
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> عبارة «آمن للطعام»{{en: food safe}} تعني أن هذا الطلاء، على هذا الطين، المحروق إلى هذا المخروط في هذا الفرن والموضوع بهذه الطريقة، يطلق أقل من الحدود القانونية. يمكن أن يساعد Glazecalc في بناء طلاء مستقر، ويمكن لميزة **«استبدال الرصاص»** إعادة بناء خلطة رصاص قديمة دون رصاص، لكن لا حاسبة تستطيع أن تشهد بسلامة قطعة. وحده اختبار القطعة المحروقة يستطيع ذلك.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## الكثافة النسبية ووضع الطلاء {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### الكثافة النسبية
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+مسحوق الطلاء الممزوج بالماء هو **الطلاء السائل**{{en: slurry}}. و**كثافته النسبية**{{en: specific gravity}} (**SG**) هي وزنه مقارنةً بوزن الحجم نفسه من الماء، الذي كثافته النسبية 1.0: وكلما ارتفعت، زاد المسحوق في الدلو. ويصف Glazy القيمة 1.4–1.5 بأنها «نقطة بداية جيدة لمعظم الطلاءات». ولقياسها، يُوزن 100 mL من الطلاء السائل بالضبط (ويقترح Glazy محقنة) ويُقسم الوزن على 100: إذ تعني 145 g كثافة نسبية 1.45. والمكثاف (الهيدرومتر) غير موثوق في الطلاءات الهلامية، والماء يتبخر، لذا يُعاد القياس قبل التزجيج.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+تختلف القيم المستهدفة باختلاف المصدر. فيضع Digitalfire طلاءات الغمس عند 1.40–1.50 وطلاءات الفرشاة التجارية عند 1.25–1.55، بينما يعطي Potclays القيم 1.71–1.81 للفرشاة و 1.71 للرش. ونصيحتنا: الغمس عند نحو 1.45 مع جعل الطلاء هلامياً قليلاً، واتباع الملصق في طلاء الفرشاة، وتدوين ما ينجح.
+
+**المادة المُلبِّدة**{{en: flocculant}} (ملح إبسوم أو الخل أو كلوريد الكالسيوم) تجعل الطلاء السائل هلامياً قليلاً، فيكتسب خاصية **التميُّع بالهز**{{en: thixotropy}}: يسيل عند التقليب ويتماسك عند السكون، من أجل «تغطية متساوية بالطلاء دون تقاطر». أما **المادة المُشتِّتة**{{en: deflocculant}} (سيليكات الصوديوم أو Darvan) فتجعله أكثر سيولة. ويتناول دليل [طريقة تحضير الطلاء الزجاجي](/guides/making-a-glaze) الخلط والضبط.
+
+### وضع الطلاء
+
+يُزال الغبار والدهون عن البسكويت أولاً بإسفنجة رطبة بالكاد بدلاً من غسله، لأن الغسل يشبعه بالماء. ولا يُنفخ الغبار بالهواء المضغوط ولا يُنظَّف بفرشاة جافة: فذلك ينشر غبار السيليكا في الهواء ([الخلط الآمن والتهوية](/guides/safe-mixing#cleaning)).
+
+- **الغمس** «يعطي عموماً طبقة متساوية السمك» (روبن هوبر، Robin Hopper). ومدة الغمس تحدد السمك: يذكر Digitalfire أن طلاءات الغمس التجارية تُحضَّر عند نحو 1.4 لغمسة مدتها 5 ثوانٍ و 1.5 لغمسة مدتها 1 ثانية.
+- **الصب**: ينبغي أن يكون الطلاء «أرق قليلاً مما يُستخدم للغمس»؛ وحيث تتداخل مواضع الصب، تتضاعف الطبقة وقد تسيل.
+- **الطلاء بالفرشاة**: تحتوي طلاءات الفرشاة على صمغ مثل **صمغ CMC**، يساعد الطلاء على الانسياب والالتصاق، ثم يحترق ويزول. ويحتاج معظمها إلى عدة طبقات، غالباً طبقتين أو ثلاث؛ ويُتَّبع الملصق.
+- **الرش** يستخدم طلاءً أرق بكثير، يوضع في «عدة طبقات رقيقة، تبني السمك تدريجياً».
+
+> [!WARNING]
+> لا يكون الرش إلا في كابينة رش مهوّاة، مع ارتداء كمامة تنفسية محكمة الملاءمة. يُنظر دليل [الخلط الآمن والتهوية](/guides/safe-mixing).
+
+الطبقة السميكة جداً قد تنحسر أو تظهر فيها فقاعات أو تسيل. وتتراوح قواعد الموردين التقريبية من سمك بطاقة الائتمان إلى سمك قطعة الدايم الأمريكية، أي نحو 1 mm من الطلاء الجاف بحسب تقديرنا؛ وبلاطات الاختبار بعدة سماكات هي الفحص الموثوق. و**الشمع العازل**{{en: wax resist}} على قاعدة القطعة يصدّ الطلاء، فلا تلتصق القطعة بالرف، و**طلاء الأرفف الواقي** (kiln wash)، وهو طبقة مقاومة للحرارة غالباً من الكاولين والسيليكا، يحمي الأرفف من القطرات.
+
+## الأكسدة والاختزال {#atmosphere}
+
+الغازات داخل الفرن، أي **جو الفرن**، تغيّر نتائج الطلاءات. **الأكسدة**{{en: oxidation}} تعني وفرة الأكسجين. ويقول Digitalfire: «الأفران الكهربائية مرادفة للحرق بالأكسدة»، وطلاءات الأكسدة أزهى عادةً من طلاءات الاختزال، خصوصاً في درجات الحرارة الأدنى. وفي الأكسدة يعطي النحاس ألواناً خضراء وفيروزية، ويعطي الحديد ألواناً بنية وبنية فاتحة وحمراء. وقد يعمل الفرن الكهربائي السيئ التهوية والمملوء بقطع تطلق الغازات في جو أقرب إلى المحايد مما يُراد؛ وتساعد في ذلك مروحة تهوية موصولة بالفرن مباشرةً.
+
+**الاختزال**{{en: reduction}} يقيّد الأكسجين عمداً، عادةً في فرن غاز أو حطب أو فرن متخصص. فيتحول النحاس إلى الأحمر، ويصير الحديد مساعد صهر أقوى ويعطي **السيلادون** (من الأزرق المخضر إلى الرمادي المخضر، من نحو ½–2% حديد) و**التينموكو** (tenmoku أو temmoku: بني مسودّ، نحو 5–10% حديد). ويقول Glazy إن السيلادون وأحمر النحاس «يعتمدان على الاختزال». والطين يتغير أيضاً: ففي مقارنة أجراها Digitalfire خرج جسم من الخزف الحجري رمادياً في الاختزال ومصفرّاً في الأكسدة. وكربيد السيليكون في الطلاء قد يُحدث مناطق صغيرة من الاختزال حتى في الفرن الكهربائي. وللاختزال من المخروط 010 إلى المخروط 3، توصي Orton بمخاريطها الخالية من الحديد.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> يُتوقع أن تخرج خلطة مكتوبة لفرن غاز بالاختزال مختلفةً في الفرن الكهربائي: فالسيلادون أو أحمر النحاس الذي يعتمد على الاختزال لن يبدو كما هو في الأكسدة. يُتحقق من جو الفرن الذي وُضعت له الخلطة، ويُدوَّن جو الفرن المستخدم، مع المخروط، في ملاحظات الخلطة في Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+كل فرن، بما في ذلك الأفران الكهربائية، يطلق أبخرة، لذا يُهوّى. ويشرح دليل [الخلط الآمن والتهوية](/guides/safe-mixing) الطريقة.
 
-## Glossary {#glossary lang=en}
+## مسرد المصطلحات {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+آمن للطعام (food safe)
+: في القانون، ما يطلق في اختبار حمضي رصاصاً وكادميوماً أقل من الحدود. وهو غير «الخالي من الرصاص».
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+إزالة التزجج (devitrification)
+: نمو بلورات من الزجاج في أول التبريد، حيث لا تكون مرغوبة.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+إضافة (additive)
+: مادة ملوِّنة أو معتِّمة أو معلِّقة تُضاف فوق مجموع الخلطة البالغ 100.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+الأكسدة والاختزال (oxidation، reduction)
+: الحرق مع وفرة الأكسجين (الأفران الكهربائية)، أو مع تقييد الأكسجين (أفران الغاز أو الحطب عادةً).
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+أكسيد (oxide)
+: مركب من عنصر مع الأكسجين؛ ويذكر تحليل الأكاسيد الأكاسيد بنسبها المئوية بالوزن.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+ألوان تحت الطلاء (underglaze)
+: طين سائل ملوَّن أو زخرفة بالأكاسيد، عادةً تحت طلاء شفاف.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+ألومينا (alumina، Al₂O₃)
+: المثبِّت الرئيسي: تمنع السيلان وتزيد الصلابة. مصدرها الطين والفلسبار.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+انحسار الطلاء (crawling)
+: انسحاب الطلاء في حبيبات أثناء الحرق، تاركاً الطين مكشوفاً.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+بنتونيت (bentonite)
+: طين ناعم جداً يُضاف بنسبة نحو 1–2% لمنع ترسب الطلاء. وما يزيد على 3% قد يشقق الطلاء أثناء جفافه.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+بورسلين (porcelain)
+: جسم أبيض غني بالكاولين وعالي الحرارة، وغالباً ما يكون نصف شفاف.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+بورون (boron، B₂O₃)
+: مكوِّن للزجاج من الناحية الرسمية لكنه يُستخدم مساعدَ صهر؛ أساسي من المخروط 06 إلى المخروط 6.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+تزجُّج (vitrification)
+: تحوّل الجسم إلى زجاجي غير مسامي أثناء الحرق.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+تسرُّب المعادن (leaching)
+: ذوبان المعادن من الطلاء المحروق إلى الطعام أو الشراب.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+تشقق شعري (crazing)
+: شقوق دقيقة في طلاء ينكمش أكثر من جسمه؛ ويُسمى تشققاً زخرفياً حين يكون مقصوداً.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+تصدع حراري (dunting)
+: شقوق في القطعة من إجهاد التبريد أو التسخين، غالباً عند انقلاب الكوارتز، {{1063 °F; 573 °C}}.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+تقشر (shivering)
+: انفصال الطلاء رقائقَ عن الحواف لأنه مضغوط أكثر من اللازم؛ وهو خطر على أواني الطعام والشراب.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+تميُّع بالهز (thixotropy)
+: السيلان عند التقليب، والتماسك في هلام لين عند السكون.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+توافق الطلاء مع الجسم (glaze fit)
+: مدى تطابق تمدد الطلاء وتمدد الجسم؛ والتوافق الجيد يترك الطلاء مضغوطاً قليلاً.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+ثقوب إبرية وفقاعات (pinholing، blistering)
+: ثقوب صغيرة، أو حفر حادة الحواف، حيث خرج الغاز عبر المصهور.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+الحرق الأول (bisque؛ المملكة المتحدة: biscuit)
+: أول حرق، وهو الأدنى حرارة، عادةً عند المخروط 08–04 (وأكثر ما يكون 06–04)، ويترك القطع متينة لكنها مسامية.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+حرق الطلاء (glaze firing؛ المملكة المتحدة: glost firing)
+: الحرق الذي يصهر الطلاء.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+الحرق الواحد (once-firing؛ single firing)
+: طلاء القطع غير المحروقة وحرقها مرة واحدة فقط.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+خزف حجري (stoneware)
+: جسم متوسط إلى عالي الحرارة (نحو المخروط 5–10) يصير متزجِّجاً أو قريباً من ذلك.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+خلطة (batch recipe)
+: المواد الخام للطلاء بالوزن، ومجموعها عادةً 100.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+سلسلة خلط خطية (line blend)
+: اختبارات يتدرج فيها مكوِّن واحد بين كميتين. أما الخلط الثلاثي (triaxial blend) فيغيّر ثلاثة مكوِّنات على شبكة.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+سيليكا (silica، SiO₂)
+: مكوِّن الزجاج؛ وتُسمى أيضاً الفلنت أو الكوارتز.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+شغل حراري (heatwork)
+: الأثر المشترك لدرجة الحرارة والزمن في الفرن؛ وهو ما تقيسه المخاريط.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+شمع عازل (wax resist)
+: شمع يُدهن حيث يجب ألا يصل الطلاء، وعادةً على قاعدة القطعة.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+صمغ CMC (CMC gum)
+: صمغ سليلوزي يساعد الطلاء على الانتشار بالفرشاة والالتصاق؛ ويحترق ويزول.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+صيغة الحدود (limit formula؛ target formula)
+: نطاقات صيغة سيجر المعتادة للطلاءات المستقرة عند مخروط معين؛ إرشاد لا ضمان.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+صيغة سيجر (unity molecular formula، UMF، Seger formula)
+: أكاسيد الطلاء كأعداد جزيئات، محسوبة بحيث يكون مجموع مساعدات الصهر 1.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+طلاء الأرفف الواقي (kiln wash)
+: طبقة مقاومة للحرارة تحمي أرفف الفرن من القطرات.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+طلاء الأسطح الملامسة للطعام (liner glaze)
+: طلاء مستقر، شفاف أو أبيض عادةً، للأسطح التي تلامس الطعام.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+طلاء زجاجي (glaze)
+: غطاء من الزجاج ينصهر أثناء الحرق ليسدّ مسام القطعة ويزخرفها.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+طين البول كلاي (ball clay)
+: طين لدن فيه حديد ومواد عضوية أكثر مما في الكاولين.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+طين سائل وبطانة (slip، engobe)
+: طين في الماء؛ والبطانة طبقة شبيهة بالطين السائل فيها مواد غير طينية أكثر.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+فخار (earthenware)
+: جسم منخفض الحرارة (نحو المخروط 06–02)، مسامي عند المخاريط المنخفضة ويزداد كثافةً حين يُحرق بحرارة أسخن.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+فريت (frit)
+: زجاج مصنوع في المصانع، يُصهر ويُبرَّد فجأة ويُطحن، فيجعل الأكاسيد القابلة للذوبان أو السامة غير قابلة للذوبان.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+الفقد بالحرق (LOI، loss on ignition)
+: الوزن المفقود أثناء الحرق على هيئة ماء أو ثاني أكسيد الكربون أو مواد عضوية أو كبريت.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+فلسبار (feldspar)
+: معدن يعطي مساعد صهر قلوياً مع الألومينا والسيليكا: فلسبار البوتاسيوم أو فلسبار الصوديوم أو النيفلين سيانيت.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+قطع نيئة (greenware)
+: قطع غير محروقة: جلدية القوام حين تتماسك وهي رطبة، وجافة تماماً حين لا يبقى فيها ماء حر.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+كاولين (kaolin؛ المملكة المتحدة: china clay)
+: طين أبيض نقي يعطي الألومينا والسيليكا؛ ويساعد على منع ترسب الطلاء. وفي أستراليا، Eckalite علامة تجارية منه.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+كثافة نسبية (specific gravity، SG)
+: وزن الطلاء السائل مقارنةً بالحجم نفسه من الماء.
+كربونات الكالسيوم (whiting)
+: مساعد الصهر الرئيسي للكالسيوم؛ تفقد نحو 44% من وزنها أثناء الحرق، على هيئة ثاني أكسيد الكربون.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+لامع ونصف مطفأ ومطفأ (gloss، satin، matte)
+: عاكس وأملس؛ ذو بريق خافت؛ باهت.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+مادة معتِّمة (opacifier)
+: مادة، مثل الزركون أو أكسيد القصدير أو ثاني أكسيد التيتانيوم، تجعل الطلاء معتماً.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+مادة مُلبِّدة ومادة مُشتِّتة (flocculant، deflocculant)
+: إضافات تجعل الطلاء السائل هلامياً (ملح إبسوم، الخل) أو أكثر سيولة (سيليكات الصوديوم، Darvan).
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+مادة ملوِّنة وصبغة خزفية (colorant، stain)
+: أكسيد أو كربونات فلز يلوّن الطلاء؛ والصبغة الخزفية مادة ملوِّنة مصنوعة في المصانع، أكثر استقراراً.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+مثبِّت (stabilizer)
+: أكسيد، الألومينا أساساً، يجعل المصهور أكثر لزوجة ويزيد المتانة.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+مجموعتا R₂O و RO
+: مساعدات الصهر القلوية (Na₂O، K₂O، Li₂O) ومساعدات الصهر القلوية الترابية (CaO، MgO، BaO، SrO، مع ZnO).
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+مخروط حراري (cone)
+: هرم خزفي معايَر ينحني عند قدر محدد من الشغل الحراري. ويبيّن المخروط الشاهد ما تلقّته القطع.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+مساعد صهر (flux)
+: أكسيد يخفض درجة انصهار السيليكا.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+مكوِّن الزجاج (glass former)
+: الأكسيد الذي يبني الزجاج، وهو السيليكا عادةً.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+نسبة السيليكا إلى الألومينا (silica to alumina ratio)
+: السيليكا مقسومة على الألومينا في صيغة سيجر: ارتفاعها يميل إلى اللمعان، وانخفاضها إلى الانطفاء.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
-
-## Sources {#sources lang=en}
+## المصادر {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

@@ -119,183 +119,183 @@ Label: ابتدائی سیٹ
 
 Derek Au ایک ہی کٹورے میں الگ الگ ڈھیریوں میں تولتے ہیں، تاکہ غلطی ہونے پر اسے چمچ سے واپس نکالا جا سکے۔ اگر آپ مواد کے درمیان ٹیئر کیے بغیر ایک ہی بالٹی میں تولتے ہیں، تو Glazecalc کا اب تک کا مجموعہ بتاتا ہے کہ ہر مواد کے بعد ترازو پر کتنا آنا چاہیے۔
 
-## Mixing and sieving {#mixing lang=en}
+## ملانا اور چھاننا {#mixing}
 
-### How much water
+### کتنا پانی
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+ماخذوں میں اختلاف ہے۔ Derek Au گاڑھے سے شروع کرتے ہیں، ہر 100 g پاؤڈر پر 50 mL پانی، اور بعد میں مزید ڈالتے ہیں۔ Potterycrafts ایک پاؤڈر گلیز کے لیے ہر 100 g پر 65 mL بتاتا ہے۔ UT Austin پانی اور پاؤڈر برابر وزن میں لیتا ہے، اور جب Digitalfire نے 20 kg پاؤڈر 20 kg پانی میں ڈالا تو اس نے کثافت اضافی 1.46 ناپی۔
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+پانی ڈالنا آسان ہے اور نکالنا مشکل، اس لیے کم سے شروع کریں۔ ہمارا اندازہ: **ہر 100 g پر تقریباً 70 سے 80 mL** سے شروع کریں (ہر کلوگرام پر 700 سے 800 mL، یا ہر پاؤنڈ پر تقریباً 11 سے 12 US fl oz)۔ اسی گاڑھے پن پر بھگوئیں، ملائیں اور چھانیں، پھر تھوڑا تھوڑا پانی ڈالیں جب تک کثافت اضافی ٹھیک نہ ہو جائے۔ 1 mL پانی کا وزن 1 g ہے، اس لیے آپ اسے تول سکتے ہیں۔ اگر زیادہ ہو جائے تو گلیز کو بیٹھنے دیں، پھر اوپر کا صاف پانی اسفنج سے نکال لیں یا نتھار دیں۔
 
-### Tools and water
+### اوزار اور پانی
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **پروپیلر مکسر۔** Digitalfire ایک اچھے مکسر کو “ضروری” کہتا ہے۔ ملانے کے پیڈل والی تار والی ڈرل بالٹی میں یہ کام کر دیتی ہے۔ UT Austin اسے گلیز ملا ہوا دکھنے کے بعد بھی کم از کم 4 سے 5 منٹ چلاتا ہے، اور بلیڈ کو بالٹی سے دور رکھتا ہے، جس سے وہ پلاسٹک چھیل سکتا ہے۔
+- **بلینڈر۔** یہ “چھوٹے بیچ کے لیے بہت اچھا کام کرتا ہے” (Digitalfire)۔ اسے صرف گلیز کے لیے رکھیں: اسے کبھی واپس باورچی خانے میں نہیں جانا چاہیے۔
+- **پھینٹنی یا ڈنڈی۔** مکسر نہ ہو تو Zakin کا انتخاب۔
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+پانی بھی مختلف ہوتا ہے، اور Digitalfire بتاتا ہے کہ اس سے گلیز کے گھول کا رویہ بدلتا ہے۔ Derek Au ریورس اوسموسس کا پانی استعمال کرتے ہیں کیونکہ ان کے نل کا پانی بھاری ہے۔ جو بھی استعمال کریں، لکھ لیں۔
 
-### Step by step
+### قدم بہ قدم
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. اپنا ریسپیریٹر پہنیں، اور اگر ہاتھ اندر جائیں گے تو ربڑ کے دستانے بھی۔ Zakin تولنا شروع کرنے سے لے کر گلیز گیلا ہونے تک ماسک پہنے رکھتے ہیں۔
+2. ہر 100 g پاؤڈر کے لیے تقریباً 70 سے 80 mL پانی ناپ کر بالٹی میں ڈالیں۔
+3. تولا ہوا پاؤڈر آہستہ سے، کم اونچائی سے ڈالیں۔ UT Austin پاؤڈر گرم پانی میں ڈالتا ہے؛ Zakin اور Au پانی پاؤڈر میں ڈالتے ہیں۔ ہمارا مشورہ ہے کہ پاؤڈر پانی میں ڈالیں، جس سے کم گرد اڑتی ہے، سوائے اس ریسیپی کے جس میں بینٹونائٹ بہت ہو: اس کے خشک پاؤڈر پہلے آپس میں ملا لیں۔
+4. اسے **بھگوئیں**{{en: slake}}: پاؤڈر کو ہلائے بغیر بھیگنے دیں۔ Digitalfire تقریباً 20 منٹ انتظار کرتا ہے۔ گوند یا بائنڈر والے پاؤڈر کو رات بھر رکھنا پڑتا ہے۔
+5. تب تک ملائیں جب تک کوئی خشک حصہ یا گانٹھ نہ رہے۔
+6. اسے دو بار چھانیں (نیچے دیکھیں)۔
+7. ڈھک کر رات بھر رکھیں، پھر دوبارہ ملائیں اور تہہ میں سخت پرت جانچیں۔
+8. کثافت اضافی ناپیں، اور اپنے ہدف تک پہنچنے کے لیے تھوڑا تھوڑا پانی ڈالیں۔ اپنے گلیز کی خشک کثافت اضافی جاننے کے لیے تیار گھول کو بھی تولیں (نیچے دیکھیں)۔
+9. بالٹی پر لیبل لگائیں، اور جو کیا وہ لکھ لیں۔
+10. گیلے طریقے سے صفائی کریں: فرش پر پونچھا لگائیں اور ہر سطح صاف کریں، مواد کے ڈبوں کا باہری حصہ بھی۔
 
-### Sieving
+### چھاننا
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**چھلنی**{{en: sieve}} ایک فریم میں لگی جالی ہے۔ گلیز کو برش سے اس میں سے گزارنے سے وہ گانٹھیں ٹوٹتی ہیں جو ملانے کے بعد رہ جاتی ہیں، اور وہ ذرے رک جاتے ہیں جو پکنے پر دھبے بنتے۔ **میش**{{en: mesh}} نمبر جتنا زیادہ ہو، جالی اتنی باریک: 80 میش کے سوراخ تقریباً 0.18 mm کے ہوتے ہیں، اور 100 میش کے تقریباً 0.15 mm۔
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+ماخذ مختلف میش تجویز کرتے ہیں۔ Zakin 50 یا 80 میش سے دو بار چھانتے ہیں۔ Derek Au زیادہ تر گلیز کے لیے 120 میش استعمال کرتے ہیں، خاص طور پر کوبالٹ یا لوہے والے گلیز کے لیے: ایک سیلاڈان میں 80 میش سے تین بار چھاننے کے بعد بھی لوہے کے دھبے رہ گئے، اور 120 میش سے ایک بار چھاننے سے ٹھیک ہو گیا۔ وہ راکھ والے گلیز اور موٹے مواد والے دوسرے گلیز کے لیے 60 سے 80 میش رکھتے ہیں۔ UK میں Potterycrafts 60 سے 80 میش تجویز کرتا ہے۔ ایک محفوظ عام انتخاب:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: کون سی چھلنی استعمال کریں
+Label: چھلنی کا میش
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| گلیز                                           | چھلنی            |
+| ---------------------------------------------- | ---------------- |
+| زیادہ تر گلیز                                  | 80 میش سے دو بار |
+| کوبالٹ یا لوہے جیسے رنگ دار آکسائیڈز والے گلیز | 100 سے 120 میش   |
+| راکھ والے گلیز، اور موٹے مواد والے دوسرے گلیز  | 60 سے 80 میش     |
 
-## Specific gravity {#specific-gravity lang=en}
+## کثافت اضافی {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**کثافت اضافی**{{en: specific gravity}} (SG) بتاتی ہے کہ آپ کے گلیز کے گھول میں کتنا پاؤڈر ہے۔ یہ گلیز کے کسی حجم کا وزن ہے، اتنے ہی حجم کے پانی کے وزن سے تقسیم کیا ہوا۔ پانی 1.00 ہے، اور {{SG 1.45}} والے گلیز کا وزن ہر 100 mL میں 145 g ہے۔ ناپی ہوئی کثافت اضافی تک ملانے سے ہی ہر بار وہی گاڑھا پن اور وہی تہہ ملتی ہے۔ اس کی کوئی اکائی نہیں، اس لیے یہ گرام اور اونس دونوں میں ایک ہی رہتی ہے۔
 
-### Measure it by weighing 100 mL
+### 100 mL تول کر ناپیں
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. گلیز کو ہلائیں تاکہ کچھ نیچے بیٹھا نہ رہے۔
+2. 100 mL کا **پیمائشی سلنڈر**{{en: graduated cylinder}} (نشان لگی ایک لمبی ناپنے کی نلی) یا 100 mL کی سرنج ترازو پر رکھیں، اور ٹیئر کریں۔
+3. اسے ٹھیک 100 mL تک گلیز سے بھریں، نشان کو آنکھ کی سیدھ میں پڑھتے ہوئے۔
+4. اسے تولیں اور گرام کو 100 سے تقسیم کریں: 145 g کا مطلب ہے کثافت اضافی 1.45۔
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire ایک کپ پر 500 g پانی کی سطح کا نشان بھی لگاتا ہے، اسے نشان تک گلیز سے بھرتا ہے، اور وزن کو 500 سے تقسیم کرتا ہے؛ بڑا اور زیادہ بھرا پیمانہ زیادہ درست ہوتا ہے۔ **ہائیڈرومیٹر**{{en: hydrometer}}، یعنی ایک تیرنے والا آلہ جو گلیز میں جہاں ٹھہرے وہاں پڑھا جاتا ہے، جلدی کام کرتا ہے لیکن گاڑھے یا جیل جیسے گلیز میں غلط پڑھ سکتا ہے۔ UK کے ہائیڈرومیٹر، جیسے Potclays کے، بومے ڈگری (°Bé) میں پڑھتے ہیں۔ ہمارے حساب سے SG = 145 ÷ (145 − °Bé)، اس لیے 46 °Bé تقریباً 1.46 ہے۔ پرانی UK کتابیں **پائنٹ وزن**{{en: pint weight}} دیتی ہیں، یعنی گلیز کے ایک امپیریل پائنٹ میں اونس: اسے 20 سے تقسیم کریں، اس لیے 29 oz تقریباً کثافت اضافی 1.45 ہے (یہ بھی ہمارا حساب)۔
 
-### What to aim for
+### کیا ہدف رکھیں
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+ماخذوں میں اختلاف ہے، سب سے زیادہ برش اور اسپرے کے بارے میں، جہاں UK کا سپلائر Potclays کہیں زیادہ اعداد دیتا ہے (اس کے اپنے اعداد “صرف رہنمائی کے لیے” ہیں)۔ ہر عدد کو ابتدائی نقطہ سمجھیں۔ Digitalfire کا بنیادی مشورہ یہ ہے کہ ہر گلیز کے لیے وہ کثافت اضافی اور جیل پن ڈھونڈیں جو کام کرے، پھر انہیں دہرائیں اور لکھ لیں۔
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: کثافت اضافی کے ہدف، جہاں ماخذوں میں اختلاف ہے
+Label: کثافت اضافی کے ہدف
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| استعمال | Digitalfire اور Glazy                                                                                                                                    | Potclays (UK)                            | محفوظ ابتدائی نقطہ                                            |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------- |
+| ڈبونا   | {{SG 1.40}} (5 سیکنڈ ڈبونے کے لیے) سے {{SG 1.50}} (1 سیکنڈ ڈبونے کے لیے) تک؛ گھر میں ملائے گئے جیل والے گلیز {{SG 1.43–1.45}} پر بہترین رہتے ہیں         | شفاف {{SG 1.46–1.48}}؛ رنگین {{SG 1.61}} | {{SG 1.45}}؛ اگر ٹپکے تو {{SG 1.43}} تک پتلا کر کے جیل بنائیں |
+| برش     | {{SG 1.25}} (پتلا شفاف) سے {{SG 1.55}} (گہری تفصیل) تک                                                                                                   | {{SG 1.71–1.81}}                         | پروڈکٹ کی ہدایت مانیں؛ CMC گوند یا برش میڈیم استعمال کریں     |
+| اسپرے   | کوئی عدد نہیں؛ Ceramic Arts Network کے لیے لکھتے ہوئے Hopper کہتے ہیں کہیں زیادہ پتلا، ڈیفلوکولینٹ کے ساتھ (ایسا اضافی مادہ جو گھول کو زیادہ رواں بنائے) | {{SG 1.71}}                              | کوئی قابلِ اعتماد عدد نہیں؛ صرف اسپرے بوتھ میں اسپرے کریں     |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+ڈبونے والے گلیز کو آنکھ سے جانچنے کے لیے AMACO 5 سیکنڈ ڈبوتا ہے اور تقریباً امریکی dime (دس سینٹ کے سکے) جتنی موٹی تہہ دیکھتا ہے۔ Digitalfire جانچنے کے لیے 5 سیکنڈ ڈبوئی گئی ٹائلیں پکاتا ہے۔
 
-### Water for a target SG: our estimate
+### کسی ہدف کثافت اضافی کے لیے پانی: ہمارا اندازہ
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+نیچے کا جدول ہمارا اپنا حساب ہے، کسی ماخذ کا نہیں۔ یہ مانتا ہے کہ پاؤڈر کے ذروں کی کثافت ہر cm³ پر 2.6 g ہے، جو ایک مفروضہ ہے، پیمائش نہیں۔ چکنی مٹی، حل پذیر مواد اور جیل پن اصلی گلیز کو بدل دیتے ہیں، اس لیے اسے شروع کرنے کے لیے استعمال کریں، پھر ناپیں۔ جانچ کے طور پر، یہ پاؤڈر اور پانی کے برابر وزن کے لیے {{SG 1.44}} بتاتا ہے، جو Digitalfire کی ناپی ہوئی {{SG 1.46}} کے قریب ہے۔ یہ یہ بھی دکھاتا ہے کہ ہر 100 g پر 70 سے 80 mL سے آپ {{SG 1.50}} سے اوپر شروع کرتے ہیں، یعنی ضرورت سے زیادہ گاڑھا۔
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: کسی ہدف کثافت اضافی کے لیے پانی (ہمارا اندازہ)
+Label: کسی ہدف کثافت اضافی کے لیے پانی
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| ہدف         | ہر 100 g پاؤڈر پر |   ہر کلوگرام پر |         ہر پاؤنڈ پر |
+| ----------- | ----------------: | --------------: | ------------------: |
+| {{SG 1.40}} |    تقریباً 115 mL | تقریباً 1150 mL | تقریباً 18 US fl oz |
+| {{SG 1.45}} |     تقریباً 98 mL |  تقریباً 980 mL | تقریباً 15 US fl oz |
+| {{SG 1.50}} |     تقریباً 85 mL |  تقریباً 850 mL | تقریباً 13 US fl oz |
+| {{SG 1.60}} |     تقریباً 64 mL |  تقریباً 640 mL | تقریباً 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### ملاتے وقت اپنے گلیز کی خشک کثافت اضافی معلوم کریں
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+اوپر کا 2.6 ایک اندازہ ہے۔ آپ کے اپنے گلیز کا عدد، یعنی اس کے خشک پاؤڈر کی کثافت، تین ایسے اعداد سے نکالا جا سکتا ہے جو آپ ملاتے وقت لے سکتے ہیں۔ اس سے آپ بعد میں اس گلیز کی کسی بھی بالٹی میں کثافت اضافی سے پاؤڈر کی مقدار، اور اگلے بیچ کا پانی نکال سکتے ہیں۔ یہ ہمارا حساب ہے، کسی ماخذ کا نہیں:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. بیچ میں خشک پاؤڈر کا وزن لکھ لیں: ریسیپی کا مجموعہ۔
+2. شروع کرنے سے پہلے خالی بالٹی تولیں، یا اس کا وزن اس پر لکھ دیں۔
+3. معمول کے مطابق ملائیں، چھانیں اور گلیز کو اس کی کثافت اضافی تک لائیں۔ سب کچھ چھلنی سے گزاریں اور اسے کھنگال کر بالٹی میں ڈالیں، تاکہ کوئی پاؤڈر باہر نہ رہے۔
+4. بھری بالٹی تولیں اور بالٹی کا وزن منہا کریں۔ یہ گھول کا وزن ہے۔
+5. کثافت اضافی ناپیں۔
 
-Then:
+پھر:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **پانی** = گھول کا وزن − پاؤڈر کا وزن۔
+- mL میں **گھول کا حجم** = گرام میں گھول کا وزن ÷ کثافت اضافی۔
+- **پاؤڈر کا حجم** = گھول کا حجم − پانی (1 g پانی 1 mL ہے)۔
+- **خشک کثافت اضافی** = پاؤڈر کا وزن ÷ پاؤڈر کا حجم۔
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+مثال کے طور پر: 1000 g پاؤڈر سے {{SG 1.45}} پر 1980 g گھول بنتا ہے۔ پانی 980 g ہے، گھول 1980 ÷ 1.45 = تقریباً 1366 mL ہے، پاؤڈر 1366 − 980 = 386 mL جگہ لیتا ہے، اور خشک کثافت اضافی 1000 ÷ 386 = تقریباً 2.59 ہے۔
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+آخر میں پورا گھول تولیں، ڈالتے وقت پانی نہیں، تاکہ جو پانی بھاپ بن کر اڑ جائے یا چھلک جائے وہ شمار نہ ہو۔ یہاں چھوٹی غلطیاں بڑھ جاتی ہیں: کثافت اضافی کی 0.01 کی غلط ریڈنگ جواب کو تقریباً 2 سے 4% بدل دیتی ہے، پتلے گلیز میں زیادہ۔ 1 kg یا اس سے بڑا بیچ، درست ترازو، اور کثافت اضافی کے لیے اوپر والا 500 g کپ کا طریقہ استعمال کریں۔ زیادہ تر عام مواد تقریباً 2.5 اور 2.9 کے درمیان ہیں، اس لیے اس سے بہت باہر کا عدد، ایسے گلیز میں جس میں زیادہ زرقون (زرکون) یا سیسہ نہ ہو، شاید ناپنے کی غلطی ہے۔ عدد ریسیپی پر لکھ دیں۔
 
-### Epsom salts, CMC gum and bentonite
+### ایپسم سالٹ، CMC گوند اور بینٹونائٹ
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**ایپسم سالٹ**{{en: Epsom salts}} گلیز کو رکے رہنے پر ہلکا سا جیل بنا دیتا ہے اور ہلانے پر وہ پھر بہنے لگتا ہے۔ اسے **فلوکولیٹ** کرنا کہتے ہیں، اور ایسا رویہ رکھنے والا گلیز **تھکسوٹروپک**{{en: thixotropic}} ہوتا ہے: وہ زیادہ یکساں لگتا ہے، کم ٹپکتا ہے اور کم بیٹھتا ہے۔ Digitalfire تجویز کرتا ہے کہ کثافت اضافی ٹھیک ہونے کے بعد ہر گیلن پر تقریباً 2 g سے شروع کریں (موٹے طور پر ہر لیٹر پر 0.5 g، ہمارا تبادلہ) اور ہر بار ملاتے وقت مقدار ٹھیک کریں، کیونکہ کسی ریسیپی کو خوراک طے نہیں کرنی چاہیے۔ ہمارا مشورہ ہے کہ اسے پہلے تھوڑے سے گرم پانی میں حل کر لیں۔ Digitalfire کی ایک مثال میں {{SG 1.45}} والا گلیز ٹپکتا تھا، اس لیے پانی سے اسے {{SG 1.43}} تک لایا گیا اور ایپسم سالٹ نے اسے دوبارہ کریم جیسا جیل بنا دیا، اور وہ یکساں لگا۔ ایک موٹی جانچ: ہلائیں، روکیں اور دیکھیں۔ جیل والا گلیز تقریباً 2 یا 3 سیکنڈ چلتا رہتا ہے، پھر رک کر ذرا سا واپس اچھلتا ہے۔
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC گوند**{{en: CMC gum}} (کاربوکسی میتھائل سیلولوز) گھول کو زیادہ چپچپا اور دیر سے سوکھنے والا بناتا ہے، اور ایک زیادہ سخت تہہ چھوڑتا ہے جو برتن سے چپکی رہتی ہے۔ یہ سب سے زیادہ برش والے گلیز اور زیادہ فرٹ والے گلیز کے لیے اہم ہے۔ Digitalfire کی مثال میں 1000 g گھول میں 3.75 g ملایا جاتا ہے، اور اسے بلینڈر سے ہی ملانا پڑتا ہے۔ CMC والا گلیز ایپسم سالٹ سے جیل نہیں بنے گا، اور چونکہ خردبینی جاندار گوند کھاتے ہیں، یہ بالٹی میں بدل سکتا ہے اور اس سے بدبو آنے لگ سکتی ہے۔
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**بینٹونائٹ**{{en: bentonite}}، ایک بہت باریک چکنی مٹی، باقی ذروں کو معلق رکھنے میں مدد دیتی ہے۔ ڈبونے والے گلیز اس کے لیے عموماً 15 سے 25% کچی چکنی مٹی پر انحصار کرتے ہیں۔ جس ریسیپی میں چکنی مٹی کم ہو، اس میں تقریباً 1 سے 3% بینٹونائٹ مدد دیتی ہے؛ Digitalfire کہتا ہے کہ 15% سے زیادہ چکنی مٹی والے گلیز کو خشک گلیز کے وزن کے 1% سے زیادہ بینٹونائٹ کی ضرورت نہیں ہونی چاہیے۔
 
-## Test tiles and line blends {#testing lang=en}
+## ٹیسٹ ٹائلیں اور لائن بلینڈ {#testing}
 
-### Start small
+### چھوٹے سے شروع کریں
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au تین قدموں میں آگے بڑھتے ہیں: 50 یا 100 g کا ٹیسٹ، کامیاب ہو تو 1 سے 2 kg کا تجربہ، پھر 5 سے 10 kg کا اسٹوڈیو بیچ۔ ہمارے اندازے سے {{SG 1.45}} پر 100 g کے ٹیسٹ سے تقریباً 135 mL (تقریباً 4½ US fl oz) گھول بنتا ہے، جو ایک تنگ کپ میں چند چھوٹی ٹائلیں ڈبونے کے لیے کافی ہے۔
 
-### Test on your own clay
+### اپنی مٹی پر جانچیں
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+دوسری مٹی پر یا دوسری بھٹی میں گلیز بالکل مختلف دکھ سکتا ہے: Clay Art Center نے اپنے دوبارہ بنائے گئے ہر گلیز کو چار کلے باڈیز پر، مخروط 6 اور مخروط 10 پر جانچا۔ Potclays کی گلیز ٹیسٹنگ کی ابتدائی گائیڈ یہ تجویز کرتی ہے:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- اسی مٹی کی 6 سے 10 **ٹیسٹ ٹائلیں**{{en: test tiles}} (گلیز آزمانے کے چھوٹے ٹکڑے) جو آپ واقعی استعمال کریں گے، یہ لکھتے ہوئے کہ وہ بسکٹ کی ہوئی ہیں یا بالکل خشک
+- ایک وقت میں ایک تبدیلی
+- ایک بار ڈبونا اور دو بار ڈبونا، تاکہ گلیز پتلا اور موٹا دونوں دکھے
+- ہر ٹائل ایک ہی بھٹی کے لوڈ میں
+- پکائی سے پہلے ہر ٹائل پر ایک نشان، مہر، کھدائی یا انڈر گلیز پنسل سے۔ پکی ہوئی ٹائلیں ایک جیسی لگتی ہیں، اور پکائی سے پہلے لگایا نشان بھٹی میں بھی رہتا ہے، اس لیے آپ ہمیشہ بتا سکتے ہیں کہ ہر ٹائل کون سی ریسیپی ہے۔
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+ہمارا مشورہ ہے کہ ٹائلیں سیدھی کھڑی ہوں، کیونکہ چپٹی ٹائل یہ چھپا لیتی ہے کہ گلیز کتنا بہتا ہے، ان پر ابھری بناوٹ کی ایک پٹی ہو تاکہ دکھے کہ گلیز کناروں پر کیسے ٹوٹتا ہے، اور پیندا ننگا ہو۔ ٹپکنے کو روکنے کے لیے ہر ایک کو ایک چھوٹی پلیٹ یا بسکٹ کے کسی ٹکڑے پر، یا بھٹی واش لگی شیلف پر رکھیں۔ ٹائلوں کے پاس ایک **گواہ مخروط**{{en: witness cone}} رکھیں، یعنی ایک چھوٹا سرامک مخروط جو کافی حرارت ملنے پر جھک جاتا ہے، تاکہ دکھے کہ انہیں کیا ملا؛ [پکائی کی گائیڈ](/guides/firing) مخروطوں کی وضاحت کرتی ہے۔ ہر ٹائل کو ایک مختصر کوڈ دیں، اور اپنے ریکارڈ میں اسے ریسیپی کے سامنے لکھیں۔ Ceramic Arts Network کے لیے لکھتے ہوئے Willers اعداد اور حروف استعمال کرتے ہیں، اور یہ نظام خود نوٹ بک کے شروع میں لکھ دیتے ہیں۔
 
-### Line blends
+### لائن بلینڈ
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**لائن بلینڈ**{{en: line blend}} ٹیسٹوں کی ایک قطار ہے جو ایک مکسچر سے دوسرے تک برابر قدموں میں جاتی ہے: ایک گلیز سے دوسرے تک، یا ایک بنیادی گلیز سے اسی گلیز تک جس میں رنگ دار آکسائیڈ زیادہ ہو۔ مثال کے طور پر Derek Au ایک شفاف بنیادی گلیز میں آئرن آکسائیڈ 1% کے قدموں میں بڑھاتے ہیں۔ Ian Currie سے منسوب حجم کا ایک طریقہ وقت بچاتا ہے، کیونکہ آپ صرف دونوں سرے ملاتے ہیں:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. دونوں سروں کے گلیز، A اور B، ایک ہی سائز کے بیچ میں ملائیں، اور دونوں کو چھانیں۔
+2. جس کا حجم کم ہو اس میں پانی ڈالیں، جب تک دونوں کا گیلا حجم بالکل برابر نہ ہو جائے۔
+3. دونوں کو ہلائیں، پھر ہر مکسچر کو سرنج سے اس کے اپنے نمبر والے کپ میں نکالیں۔
+4. ہر کپ کو ہلائیں اور ایک ٹائل ڈبوئیں۔
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+ہماری حل شدہ مثال میں A ایک شفاف بنیادی گلیز کا 100 g ہے، اور B وہی ہے جس میں 4 g لال آئرن آکسائیڈ ڈالا گیا ہو (4% کا اضافہ)۔ B کے ہر ملی لیٹر میں بنیادی گلیز کا اتنا ہی حصہ ہے جتنا A کے ایک ملی لیٹر میں، اور اس کے ساتھ اس کا لوہا، اس لیے کپ بغیر لوہے سے 4% تک 1% کے قدموں میں جاتے ہیں۔ ہر سرا بلینڈ کو 100 mL دیتا ہے، جو ہمارے اندازے سے 100 g کا بیچ پورا کر دیتا ہے۔
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: لوہے کا پانچ قدمی لائن بلینڈ، ہر کپ میں 40 mL (ہماری حل شدہ مثال)
+Label: لائن بلینڈ کی مثال
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| کپ  | شفاف بنیادی گلیز (A) | 4% لوہے والا بنیادی گلیز (B) | آئرن آکسائیڈ، بنیادی گلیز کا % |
+| --- | -------------------: | ---------------------------: | -----------------------------: |
+| 1   |                40 mL |                         0 mL |                              0 |
+| 2   |                30 mL |                        10 mL |                              1 |
+| 3   |                20 mL |                        20 mL |                              2 |
+| 4   |                10 mL |                        30 mL |                              3 |
+| 5   |                 0 mL |                        40 mL |                              4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+اس طریقے میں احتیاط سے حساب، اچھی طرح ملے ہوئے اور برابر کثافت اضافی والے سرے، اور درست ترازو چاہیے۔ Derek Au حجم کے بجائے وزن سے بھی بلینڈ کرتے ہیں۔ **تین محوری بلینڈ**{{en: triaxial blend}} یہی کام تین سروں کے ساتھ کرتا ہے، ایک تکون پر بچھا کر۔
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> جب کوئی قدم امید افزا لگے، تو [ریسیپی کے صفحے](/recipe) پر “**کاپی کے طور پر محفوظ کریں**” اسے ایک الگ ریسیپی کے طور پر رکھ لیتا ہے اور اصل کو ویسا ہی رہنے دیتا ہے۔
+
+## ریکارڈ رکھنا {#records}
+
+Willers مقصد اچھی طرح بیان کرتے ہیں: “اتنی معلومات کہ آپ اپنے دریافت کیے ہوئے نتائج دہرا سکیں، یا ان سے بچ سکیں”۔ شروع کرنے سے پہلے لکھیں کہ آپ کیا جانچنا چاہتے ہیں، اور بھٹی خالی کرتے وقت نتائج۔ Potclays اس میں گلیز لگانے کا طریقہ، موٹائی، کلے باڈی اور پوری پکائی شامل کرتا ہے، ریمپ، ہولڈ اور ٹھنڈا کرنے سمیت۔ **ریمپ**{{en: ramp}} گرم یا ٹھنڈا ہونے کی رفتار ہے، جیسے {{60 °C; 108 °F}} فی گھنٹہ، اور **ہولڈ**{{en: hold}} بھٹی کو ایک طے شدہ وقت تک ایک درجۂ حرارت پر رکھتا ہے۔ لاٹ نمبر، استعمال کیا گیا پانی اور ہر متبادل لکھیں: Clay Art Center کے فیلڈ اسپار کی تبدیلی کا مطلب تھا اس کے تقریباً آدھے گلیز میں ردوبدل۔
+
+Table: ہر گلیز بیچ کے لیے کیا لکھیں (ہمارا نمونہ)
+Label: ریکارڈ کا نمونہ
+
+| حصہ        | کیا لکھیں                                                                                                                                                                                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ریسیپی     | ریسیپی اور اس کا ورژن؛ مواد کے برانڈ اور لاٹ نمبر؛ ہر متبادل                                                                                                                                                                                     |
+| ملانا      | تاریخ؛ بیچ کا سائز؛ ڈالا گیا پانی، اور اس کی قسم (نل، ریورس اوسموسس یا کشید کیا ہوا)؛ ملانے کے بعد اور آخری کثافت اضافی؛ تیار گھول کا وزن، اس کی خشک کثافت اضافی کے لیے؛ ڈالا گیا ایپسم سالٹ، CMC اور بینٹونائٹ؛ چھلنی کا میش اور کتنی بار چھانا |
+| گلیز لگانا | کلے باڈی؛ بسکٹ کا مخروط؛ ڈبونا، برش یا ڈالنا؛ ڈبونے کا وقت یا تہوں کی تعداد؛ خشک موٹائی                                                                                                                                                          |
+| پکائی      | بھٹی اور شیلف پر جگہ؛ پکائی کا پروگرام، اس کے ریمپ، ہولڈ اور ٹھنڈا کرنے کے ساتھ؛ فضا (تکسیدی یا تخفیفی پکائی)؛ گواہ مخروط نے کیا دکھایا، صرف یہ نہیں کہ بھٹی کس پر سیٹ تھی                                                                       |
+| نتیجہ      | سطح اور رنگ؛ کوئی بہاؤ، کریزنگ یا پن ہول؛ سامنے، پیچھے اور پہلو کی تصویریں؛ ٹائل کا کوڈ                                                                                                                                                          |
+
+> [!NOTE]
+> Glazecalc میں محفوظ کی گئی [ریسیپی](/recipe) خود ریسیپی رکھتی ہے۔ [پکائی کا ریکارڈ](/firing) ہر پکائی لکھتا ہے: بھٹی، تاریخ، اوقات، درجۂ حرارت، مخروطے اور نوٹس۔ [نوٹس](/notes) باقی سب کچھ رکھتے ہیں، جیسے اوپر والا بیچ کا ریکارڈ اور یہ کہ ہر ٹائل نے کیا دکھایا۔
 
 ## ماخذ {#sources}
 

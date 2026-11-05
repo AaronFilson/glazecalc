@@ -59,31 +59,31 @@ Label: ದ್ರಾವ್ಯ ಸಾಮಗ್ರಿಗಳು
 
 ಸೀಸದ ಮುಖ್ಯ ಅಪಾಯ ಬೇರೆ: ಒಂದು ಚಮಚವಲ್ಲ, ವಾರಗಳು ಅಥವಾ ತಿಂಗಳುಗಳ ಅವಧಿಯಲ್ಲಿ ನುಂಗಿದ ಸಣ್ಣ ಪ್ರಮಾಣದ ಧೂಳು, ಯಾವುದೇ ಎಚ್ಚರಿಕೆಯ ಚಿಹ್ನೆಗಳಿಲ್ಲದೆ (ಕೆಳಗೆ ‘ಸೀಸ ಮತ್ತು ಮಕ್ಕಳು’ ನೋಡಿ).
 
-## Storing materials at home {#storing-materials lang=en}
+## ಮನೆಯಲ್ಲಿ ಸಾಮಗ್ರಿಗಳನ್ನು ಇಡುವುದು {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+ಮನೆಯಲ್ಲಿ ಗ್ಲೇಜ್ (ಮೆರುಗು){{en: glaze}} ಸಾಮಗ್ರಿಗಳನ್ನು ಇಡುವ ಬಗ್ಗೆ ಯಾವುದೇ ಅಧಿಕೃತ ಸಂಸ್ಥೆ ನಿಯಮಗಳನ್ನು ನಿಗದಿಪಡಿಸುವುದಿಲ್ಲ, ಆದರೆ ಆರೋಗ್ಯ ಮತ್ತು ಸುರಕ್ಷತೆಯ ಪುಟಗಳು ಒಪ್ಪುತ್ತವೆ: ಕೆಲಸವನ್ನು ಅದರದೇ ಜಾಗದಲ್ಲಿ, ಮಕ್ಕಳಿಂದ ದೂರ ಇಡಿ. ಸೀಸವನ್ನು ಬಳಸುವ ಹವ್ಯಾಸಗಳ ಬಗ್ಗೆ ಬರೆಯುತ್ತಾ ಪೆನ್ಸಿಲ್ವೇನಿಯಾದ (ಅಮೆರಿಕ) ಆರೋಗ್ಯ ಇಲಾಖೆ ಹೇಳುತ್ತದೆ: “ನಿಮ್ಮ ಹವ್ಯಾಸಕ್ಕಾಗಿ ಮೀಸಲಿಟ್ಟ ಕೆಲಸದ ಜಾಗವನ್ನು ಅಥವಾ ಗ್ಯಾರೇಜನ್ನು ಬಳಸಿ ಮತ್ತು ಮಕ್ಕಳನ್ನು ಈ ಜಾಗದಿಂದ ದೂರ ಇಡಿ.”
 
-### A storage checklist
+### ಸಾಮಗ್ರಿಗಳನ್ನು ಇಡಲು ಪರಿಶೀಲನಾ ಪಟ್ಟಿ
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+ಇವು ಗ್ಲೇಜಿಗೆ ಅನ್ವಯಿಸಿದ ವಿಷ ತಡೆಗಟ್ಟುವಿಕೆಯ ಸಾಮಾನ್ಯ ನಿಯಮಗಳು. ಯಾವುದೇ ಸೆರಾಮಿಕ್ಸ್ ಮಾನಕ ಇವುಗಳನ್ನು ನಿಗದಿಪಡಿಸುವುದಿಲ್ಲ, ಆದರೆ ನಾವು ಇವೆಲ್ಲವನ್ನೂ ಸೂಚಿಸುತ್ತೇವೆ:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- ಒಣ ಸಾಮಗ್ರಿಗಳನ್ನು ಬೀಗ ಹಾಕಿ ಇಡಿ: ಒಂದು ಕಪಾಟಿನಲ್ಲಿ, ಅಥವಾ ಬೀಗ ಹಾಕಬಹುದಾದ ಕೋಣೆ, ಗ್ಯಾರೇಜ್ ಅಥವಾ ಶೆಡ್ಡಿನಲ್ಲಿ. ಎತ್ತರದ ಶೆಲ್ಫ್ ಸಹಾಯ ಮಾಡುತ್ತದೆ, ಆದರೆ ಮಕ್ಕಳು ಹತ್ತುತ್ತಾರೆ. ಮೊದಮೊದಲು ನೀವು ಕೆಲವೇ ವಸ್ತುಗಳನ್ನು ಮಾತ್ರ ಬೀಗ ಹಾಕಿ ಇಡಲು ಸಾಧ್ಯವಾದರೆ, ದ್ರಾವ್ಯ ಸಾಮಗ್ರಿಗಳು ಮತ್ತು ಕಲರೆಂಟುಗಳಿಂದ (ಬಣ್ಣಕಾರಕಗಳು){{en: colorant}} ಶುರುಮಾಡಿ.
+- ಸಾಮಗ್ರಿಗಳನ್ನು ಅವುಗಳ ಮೂಲ ಚೀಲಗಳಲ್ಲಿ ಅಥವಾ ಟಬ್ಬುಗಳಲ್ಲಿ ಇಡಿ. ಯಾವುದನ್ನಾದರೂ ಬೇರೆ ಡಬ್ಬಕ್ಕೆ ಹಾಕಿದರೆ, ಚೀಲದ ಮೇಲೆ ಬರೆದಿರುವಂತೆಯೇ ಹೆಸರಿನ ಲೇಬಲ್ ಹಚ್ಚಿ.
+- ಗ್ಲೇಜ್ ಸಾಮಗ್ರಿಗಳಿಗಾಗಿ ಆಹಾರ ಅಥವಾ ಪಾನೀಯದ ಡಬ್ಬಗಳನ್ನು (ಮೊಸರಿನ ಡಬ್ಬಿ, ಜಾಡಿ, ಬಾಟಲಿ) ಎಂದಿಗೂ ಬಳಸಬೇಡಿ, ಲೇಬಲ್ ಹಚ್ಚಿದ್ದರೂ ಸಹ. ಮೊಸರಿನ ಡಬ್ಬಿಯಲ್ಲಿ ಏನಿರುತ್ತದೆ ಎಂದು ಮಗುವಿಗೆ ಗೊತ್ತು.
+- ಸ್ಟುಡಿಯೋದ ಉಪಕರಣಗಳನ್ನು (ಸ್ಕೂಪ್, ಚಮಚ, ವಿಸ್ಕ್, ಜರಡಿ, ತಕ್ಕಡಿ) ಸ್ಟುಡಿಯೋದಲ್ಲೇ ಇಡಿ. ಗ್ಲೇಜಿಗಾಗಿ ಅಡುಗೆಮನೆಯ ಉಪಕರಣಗಳನ್ನು, ಅಥವಾ ಆಹಾರಕ್ಕಾಗಿ ಗ್ಲೇಜಿನ ಉಪಕರಣಗಳನ್ನು ಎಂದಿಗೂ ಬಳಸಬೇಡಿ.
+- ಒದ್ದೆ ಗ್ಲೇಜುಗಳನ್ನು ಲೇಬಲ್ ಹಚ್ಚಿದ, ಮುಚ್ಚಳ ಹಾಕಿದ ಬಕೆಟ್ಟುಗಳಲ್ಲಿ ಇಡಿ.
+- ಪ್ರತಿ ಸಾಮಗ್ರಿಯ ಸೇಫ್ಟಿ ಡೇಟಾ ಶೀಟನ್ನು ಅದರ ಜೊತೆಯಲ್ಲೇ ಇಡಿ, ಕಾಗದದ ಮೇಲೆ ಅಥವಾ ನಿಮ್ಮ ಫೋನಿನಲ್ಲಿ.
+- ಸ್ಟುಡಿಯೋದ ಯಾವುದನ್ನೂ ಅಡುಗೆಮನೆಯಲ್ಲಿ ಇಡಬೇಡಿ: ಚೀಲಗಳು, ಬಕೆಟ್ಟುಗಳು, ಉಪಕರಣಗಳು, ಟೆಸ್ಟ್ ಟೈಲುಗಳು{{en: test tile}} ಯಾವುದೂ ಬೇಡ.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+ಸಾಮಗ್ರಿಗಳನ್ನು ಖರೀದಿಸುವ ಮತ್ತು ಇಡುವ ಬಗ್ಗೆ ಹೆಚ್ಚು ವಿವರವಾಗಿ ತಿಳಿಯಲು [ಗ್ಲೇಜ್ ಮಾಡುವುದು ಹೇಗೆ](/guides/making-a-glaze) ನೋಡಿ.
 
-### Glaze waste and rinse water
+### ಗ್ಲೇಜಿನ ತ್ಯಾಜ್ಯ ಮತ್ತು ತೊಳೆದ ನೀರು
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+ಗ್ಲೇಜನ್ನು, ಅಥವಾ ಗ್ಲೇಜಿನ ಉಪಕರಣಗಳನ್ನು ತೊಳೆದ ನೀರನ್ನು, ಸಿಂಕಿಗೆ ಅಥವಾ ತೋಟಕ್ಕೆ ಎಂದಿಗೂ ಸುರಿಯಬೇಡಿ. ಬ್ರಿಟನ್ನಿನ Crafts Council (ಕರಕುಶಲ ಮಂಡಳಿ) ಕೈಗಳು, ಬ್ರಶುಗಳು, ಜರಡಿಗಳು ಮತ್ತು ಉಪಕರಣಗಳನ್ನು ತೊಳೆಯಲು ಪ್ರತ್ಯೇಕ ಬಕೆಟ್ ನೀರನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಅದನ್ನು ರಾತ್ರಿಯಿಡೀ ತಳ ಸೇರಲು ಬಿಡಿ, ಮೇಲಿನ ತಿಳಿ ನೀರನ್ನು ಬಸಿದು ಹಾಕಿ, ನಂತರ ತಳ ಸೇರಿದ ಗ್ಲೇಜನ್ನು ಒಣಗಿಸಿ ಕಸಕ್ಕೆ ಹಾಕಿ (ಅದು ಕಸದ ಗುಂಡಿಗೆ, ಅಂದರೆ ಲ್ಯಾಂಡ್ಫಿಲ್ಲಿಗೆ ಹೋಗುತ್ತದೆ), ಚರಂಡಿಗೆ ಎಂದಿಗೂ ಬೇಡ.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+ಆ ಬಕೆಟ್ಟಿಗೆ ಮುಚ್ಚಳ ಹಾಕಿ ಎಂದು ನಾವು ಸೂಚಿಸುತ್ತೇವೆ: ತಳದ ಕೆಸರಿನಲ್ಲಿ ಗ್ಲೇಜಿನಲ್ಲಿರುವ ಲೋಹಗಳೇ ಇರುತ್ತವೆ, ಮತ್ತು ಸಾಕುಪ್ರಾಣಿಗಳು ನಿಂತ ನೀರನ್ನು ಕುಡಿಯುತ್ತವೆ. ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿಯ ನಿಯಮಗಳು ಸ್ಥಳದಿಂದ ಸ್ಥಳಕ್ಕೆ ಬೇರೆಯಾಗಿರುತ್ತವೆ, ಆದ್ದರಿಂದ ಪ್ರತಿ ಉತ್ಪನ್ನದ ಸೇಫ್ಟಿ ಡೇಟಾ ಶೀಟ್ ನೋಡಿ, ಮತ್ತು ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ ನಿಮ್ಮ ಸ್ಥಳೀಯ ಆಡಳಿತ ಸಂಸ್ಥೆಯನ್ನು ಅಥವಾ ನೀರು ಸರಬರಾಜು ಸಂಸ್ಥೆಯನ್ನು ಕೇಳಿ.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+ಕೆಲವು ಸ್ಟುಡಿಯೋಗಳು ಒಣಗಿದ ಕೆಸರನ್ನು ಎಸೆಯುವ ಮೊದಲು ಕಿಲ್ನಿನಲ್ಲಿ (ಆವಿಗೆಯಲ್ಲಿ) ಸುಡುತ್ತವೆ. ಅವು ಅದನ್ನು ಬಿಟ್ಟುಕೊಡಬಹುದಾದ ಒಂದು ಹೆಚ್ಚುವರಿ ಬಟ್ಟಲಿನಲ್ಲಿ ಹಾಕುತ್ತವೆ: ಫೈರಿಂಗಿನ ನಂತರ ಆ ಬಟ್ಟಲನ್ನು ಮತ್ತೆ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಬಟ್ಟಲನ್ನು ಕಾಲು ಭಾಗದಷ್ಟು ಮಾತ್ರ ತುಂಬಿಸಿ, ಏಕೆಂದರೆ ಕೆಸರು ಕರಗುವಾಗ ನೊರೆಯಾಗಿ ಉಕ್ಕುತ್ತದೆ ಮತ್ತು ಗುಳ್ಳೆಗಳೇಳುತ್ತವೆ, ಮತ್ತು ಅದನ್ನು ಒಂದು ತಟ್ಟೆಯಿಂದ ಮುಚ್ಚಿ. ಅದು ಉಕ್ಕಿ ಹರಿದರೆ ಎಂದು, ಅದನ್ನು ಕಿಲ್ನ್ ವಾಷ್ ಹಚ್ಚಿದ ಶೆಲ್ಫಿನ ಮೇಲೆ ಅಥವಾ ಹೆಚ್ಚುವರಿ ಹಲಗೆಯ ಮೇಲೆ ಇಡಿ. ಫೈರಿಂಗ್ ಕೆಸರನ್ನು ಗಾಜಾಗಿ ಬದಲಿಸುತ್ತದೆ, ಅದು ಸಡಿಲ ಪುಡಿಗಿಂತ ಲೋಹಗಳನ್ನು ಬಹಳ ಹೆಚ್ಚು ಬಿಗಿಯಾಗಿ ಹಿಡಿದಿಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಲ್ಯಾಂಡ್ಫಿಲ್ಲಿನಲ್ಲಿ ಅದು ಹೆಚ್ಚು ಸುರಕ್ಷಿತ. ಒಣ ಕೆಸರನ್ನು ಒಣ ಗ್ಲೇಜನ್ನು ನಿಭಾಯಿಸುವಂತೆಯೇ ನಿಭಾಯಿಸಿ: ರೆಸ್ಪಿರೇಟರ್ ಮಾಸ್ಕ್ ಧರಿಸಿ, ಮತ್ತು ಧೂಳು ಎಬ್ಬಿಸದೆ.
 
 ## ಧೂಳನ್ನು ಸ್ಟುಡಿಯೋದಲ್ಲೇ ಉಳಿಸುವುದು {#keeping-dust-in-the-studio}
 

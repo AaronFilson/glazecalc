@@ -458,73 +458,73 @@ L&L र Bartlett कन्ट्रोलरले कोन 04 का लाग
 
 हातले चलाउने किल्नले उही योजना हातैले पछ्याउँछ: ढकनी उठाएर अड्याई र पिपहोल खुला राखेर बिस्तारै सुकाउनुहोस्, स्विचलाई Low बाट Medium र त्यसपछि High मा क्रमशः चढाउनुहोस्, र सिटरलाई फायरिङ टुङ्ग्याउन दिनुहोस्. प्रकाशित विधिहरू तल ‘हातले चलाउने किल्नको विवरण’ मा छन्.
 
-## Glaze firing {#glaze lang=en}
+## ग्लेज फायरिङ {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+**ग्लेज फायरिङ (दोस्रो पकाइ)**{{en: glaze firing}} ले बिस्कीमाथि ग्लेज (काँचको पातलो लेप){{en: glaze}} लाई पगालेर काँच बनाउँछ. बजारमा पाइने धेरैजसो लो-फायर ग्लेज कोन 06 वा 05 का लागि बनाइएका हुन्छन् (लो-फायर दायरा कोन 06–04 हो), र धेरैजसो मिड-फायर ग्लेज कोन 5–6 का लागि. आफ्नो ग्लेज र क्लेको लेबलमा भएको कोनसम्म पकाउनुहोस्, त्यही नम्बरवरिपरि **कोन प्याक**{{en: cone pack}} राखेर. ग्लेज पग्लँदा भित्र के हुन्छ भन्ने जान्न [आधारभूत सिद्धान्तदेखि ग्लेज](/guides/glazing-basics) हेर्नुहोस्.
 
-### Loading for a glaze firing
+### ग्लेज फायरिङका लागि किल्न भर्ने
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- ग्लेज लगाइएका भाँडा एकअर्कामा वा भित्तामा छुनु हुँदैन: करिब ½ इन्च (13 mm) खाली छोड्नुहोस्.
+- पिँधमा ग्लेज नलगाउनुहोस् (**ड्राई-फुटिङ**), वा लो-फायर भाँडा **स्टिल्ट**, नोक भएका साना आधार, मा राख्नुहोस्. स्टोनवेयर{{en: stoneware}} र पोर्सिलेन स्टिल्टमा उभ्याउनु उचित हुँदैन, किनकि ती तापक्रममा स्टिल्ट भाँडामा गढ्छन्; बरु हाई-फायर किल्न वाश वा सिलिका बालुवा प्रयोग गर्नुहोस्.
+- सेल्फको किनारा र भित्ता वा सिटरबीच कम्तीमा 1 इन्च (25 mm) खाली राख्नुहोस्.
 
-### Controller schedules
+### कन्ट्रोलर सेड्युल
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L र Bartlett का ग्लेज प्रिसेट
+Label: ग्लेज प्रिसेट
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| सेग्मेन्ट                    |                    सम्म तताउने |             Slow Glaze |             Fast Glaze |
+| ---------------------------- | -----------------------------: | ---------------------: | ---------------------: |
+| 1                            |             {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |         छुट्टै चरण छैन |
+| 2                            | पिकभन्दा {{250 °F; 139 °C}} कम | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                            |                            पिक |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| तताउन लाग्ने समय, खाली किल्न |                                |       करिब 6½–7½ घण्टा |         करिब 3–4 घण्टा |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: कोनअनुसार सेग्मेन्ट 2 र 3 कहाँ सकिन्छन् (L&L र Bartlett)
+Label: प्रिसेटका लक्ष्य
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| कोन |   सेग्मेन्ट 2 सकिन्छ |                  पिक |
+| --- | -------------------: | -------------------: |
+| 06  |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+L&L ले छिटो फायरिङबारे दिएको चेतावनी हेर्दा Slow Glaze नै बढी सुरक्षित पूर्वनिर्धारित छनोट हो. पिकमा 5–10 मिनेटभन्दा बढीको होल्ड थप्नुभयो भने, L&L त्यसअनुसार लक्ष्य वा कोन अफसेट घटाउन भन्छ, र टिपोट गर्छ कि “उच्च तापक्रममा सोक गर्दा एलिमेन्ट र थर्मोकपल छिटो खिइन्छन्.”
 
-### Cone 6: drop-and-hold
+### कोन 6: ड्रप-एन्ड-होल्ड
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+मिड-फायर ग्लेजमा कहिलेकाहीँ पग्लिएको ग्लेजबाट ग्यास फुट्दा **पिनहोल (सतहमा सियोजत्रा साना प्वाल)**{{en: pinholes}} वा फोका बन्छन्. **ड्रप-एन्ड-होल्ड**{{en: drop-and-hold}} सेड्युलले माथिसम्म पकाउँछ, करिब {{100 °F; 56 °C}} ले छिटो चिस्याउँछ र त्यहीँ होल्ड गर्छ. Digitalfire का शब्दमा, “100°F घटाएर होल्ड गर्दा पग्लिएको ग्लेजमा फोका फुटाउन पुग्ने श्यानता आउँछ, र ती फोकाका चिह्न निको हुन पनि दिन्छ.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, कोन 6 ड्रप-एन्ड-होल्ड
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| चरण |                                दर |               लक्ष्य | होल्ड                              |
+| --- | --------------------------------: | -------------------: | ---------------------------------- |
+| 1   |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 मिनेट                           |
+| 2   |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | ऐच्छिक 30 मिनेट, फोकाका बादल हटाउन |
+| 3   |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 मिनेट; ठूला किल्नमा बढी         |
+| 4   | {{900 °F/h; 500 °C/h}} को दरले तल | {{2100 °F; 1148 °C}} | 30 मिनेट                           |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS लाई करिब 9 घण्टा 36 मिनेट लाग्छ. बढी तरल ग्लेजका लागि, Digitalfire त्यसको सट्टा करिब {{200 °F; 111 °C}} घटाउँछ; धेरै घटाउँदा “होल्डको बेला क्रिस्टल बन्ने जोखिम हुन्छ”. यसको {{2200 °F; 1204 °C}} को पिक कोन 6 का लागि चार्टको {{2232 °F; 1222 °C}} भन्दा कम छ; Digitalfire को रिपोर्ट छ कि धेरैजसो किल्न करिब {{2200 °F; 1204 °C}} मा कोन 6 सम्म पुग्छन्. आफ्नै किल्नमा कोन प्याकले यो जाँच्नुहोस्.
 
-### Slow cooling
+### स्लो कुलिङ
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**स्लो कुलिङ (बिस्तारै चिस्याउनु)** को अर्थ कन्ट्रोलरले किल्न (भट्टी) लाई स्वतन्त्र रूपमा झर्न दिनुको सट्टा तोकिएको दरमा चिस्याउनु हो. Digitalfire को C6DHSC भनेको PLC6DS पछि {{2100 °F; 1148 °C}} देखि {{1400 °F; 760 °C}} सम्म {{150 °F/h; 83 °C/h}} मा चिस्याउने, अनि बन्द. यसले “चमक र सतहको गुणस्तर सुधार्छ” र रुटाइल नीलोलाई मद्दत गर्छ, तर बिस्तारै चिस्याउँदा “म्याटपन बढ्न सक्छ” (एउटा म्याट ग्लेज खस्रो भयो) र किल्नका रिलेको आयु घट्न सक्छ. L&L ले पनि कोन 6 का लागि स्लो-कुल प्रोग्राम दिन्छ:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L को “User 6”: कोन 6 ग्लेजका लागि स्लो कुलिङ
+Label: L&L स्लो कुल
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| चरण |                               दर |               लक्ष्य |
+| --- | -------------------------------: | -------------------: |
+| 1   |                  पूरा गतिमा माथि | {{2232 °F; 1222 °C}} |
+| 2   |                    पूरा गतिमा तल | {{1900 °F; 1038 °C}} |
+| 3   | {{150 °F/h; 83 °C/h}} को दरले तल |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutt का कन्ट्रोलरले पनि प्रिहिट र एक-चरणको चिस्याउने विकल्प दिन्छन्.
 
-### On a manual kiln
+### हातले चलाउने किल्नमा
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+हातले चलाउने किल्नले यी सेड्युल ठ्याक्कै पछ्याउन सक्दैन, तर योजना उही हो: सुरुमा मन्द, बीचमा स्थिर, र अन्त्यमा निगरानीमा. Bracker's को लो-फायर ग्लेज सेड्युल तल ‘हातले चलाउने किल्नको विवरण’ मा छ; तातो कोनका लागि यसले “प्रत्येक कोन नम्बरका लागि औसत 15–30 मिनेट” थप्छ. पाइरोमिटर, अभ्यास र लगसहित, Digitalfire ले सुझाएझैँ स्विच हातैले घटाएर ड्रप-एन्ड-होल्ड वा स्लो कुल लगभग नक्कल गर्न सकिन्छ.
 
 ## हातले चलाउने किल्नको विवरण {#manual-kilns}
 
