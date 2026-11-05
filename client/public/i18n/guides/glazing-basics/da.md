@@ -43,11 +43,11 @@ Den første, lavere brænding er **forglødningen**{{en: bisque}} (i Storbritann
 Table: Hvordan forglødningen ændrer glaseringen (Digitalfire)
 Label: Hvordan forglødningen ændrer glaseringen
 
-| Forglødning                              | Hvad der sker                                                         |
-| ---------------------------------------- | --------------------------------------------------------------------- |
-| Underbrændt, meget sugende               | Glasuren lægger sig for tykt og revner og kravler derefter            |
-| Overbrændt, tæt                          | Dypning og tørring tager længere tid                                  |
-| Brændt varmere eller holdt længere i top | Mere gas brænder af nu, så mindre bobler gennem glasuren senere        |
+| Forglødning                              | Hvad der sker                                                   |
+| ---------------------------------------- | --------------------------------------------------------------- |
+| Underbrændt, meget sugende               | Glasuren lægger sig for tykt og revner og kravler derefter      |
+| Overbrændt, tæt                          | Dypning og tørring tager længere tid                            |
+| Brændt varmere eller holdt længere i top | Mere gas brænder af nu, så mindre bobler gennem glasuren senere |
 
 Potclays, en britisk forhandler, beskriver forglødning til omkring {{1000 °C; 1832 °F}}, ca. kegle 06. Ud fra disse kilder tilsammen foreslår vi kegle 06–04 til en første forglødning: {{1828–1945 °F; 998–1063 °C}} ved Ortons middelhastighed.
 
@@ -64,11 +64,11 @@ Keglenumrene går fra 022 til 42. Et foranstillet nul markerer den køligere ser
 Table: Temperaturområder: selvstående Ortonkegler ved {{108 °F; 60 °C}} i timen
 Label: Temperaturområder
 
-| Område           | Kegler |        °F |        °C | Bruges til                     |
-| ---------------- | ------ | --------: | --------: | ------------------------------ |
-| Lav temperatur   | 06–04  | 1828–1945 |  998–1063 | Lertøjsglasurer; forglødning   |
-| Mellemtemperatur | 5–6    | 2167–2232 | 1186–1222 | Stentøj og porcelæn            |
-| Høj temperatur   | 9–10   | 2300–2345 | 1260–1285 | Stentøj og porcelæn            |
+| Område           | Kegler |        °F |        °C | Bruges til                   |
+| ---------------- | ------ | --------: | --------: | ---------------------------- |
+| Lav temperatur   | 06–04  | 1828–1945 |  998–1063 | Lertøjsglasurer; forglødning |
+| Mellemtemperatur | 5–6    | 2167–2232 | 1186–1222 | Stentøj og porcelæn          |
+| Høj temperatur   | 9–10   | 2300–2345 | 1260–1285 | Stentøj og porcelæn          |
 
 > [!NOTE]
 > Navngiv og programmér brændingerne efter kegle, og betragt temperaturerne som omtrentlige. En **kontrolkegle**{{en: witness cone}} på en ovnplade blandt emnerne, eller et **keglesæt**{{en: cone pack}} på tre (advarselskegle, målkegle og sikkerhedskegle), viser den varmepåvirkning, emnerne virkelig fik.
@@ -84,12 +84,12 @@ En **opskrift**{{en: batch recipe}} opregner råvarer efter vægt, som regel omr
 Table: Fra opskrift til Seger-formel: Glazys gennemregnede eksempel
 Label: Fra opskrift til Seger-formel
 
-| Trin              | Hvad der sker                                                                                                                       | I eksemplet                                                                                                                     |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Opskrift       | Råvarer efter vægt, omregnet til 100                                                                                                | Feldspat 40 %, blandt andre                                                                                                     |
-| 2. Oxidanalyse    | Som en næringsdeklaration: Hver råvares oxider lægges sammen i vægtprocent, og gasserne udelades                                    | Feldspaten er 64,8 % silica, så dens 40 % giver 25,9 % SiO₂. Den brændte glasur er 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
-| 3. Mol            | Vægte bliver til **mol**, antal molekyler, fordi »gram kan være misvisende, fordi nogle oxider er tungere end andre«                 | 60,1 g SiO₂ er ét mol, så 67,4 g er ca. 1,12 mol                                                                                |
-| 4. Normering til 1 | Alt divideres med summen af flusmidlerne, så flusmidlerne giver tilsammen 1                                                         | Flusmidlerne giver tilsammen 0,303; divisionen giver K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                  |
+| Trin               | Hvad der sker                                                                                                        | I eksemplet                                                                                                                         |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Opskrift        | Råvarer efter vægt, omregnet til 100                                                                                 | Feldspat 40 %, blandt andre                                                                                                         |
+| 2. Oxidanalyse     | Som en næringsdeklaration: Hver råvares oxider lægges sammen i vægtprocent, og gasserne udelades                     | Feldspaten er 64,8 % silica, så dens 40 % giver 25,9 % SiO₂. Den brændte glasur er 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
+| 3. Mol             | Vægte bliver til **mol**, antal molekyler, fordi »gram kan være misvisende, fordi nogle oxider er tungere end andre« | 60,1 g SiO₂ er ét mol, så 67,4 g er ca. 1,12 mol                                                                                    |
+| 4. Normering til 1 | Alt divideres med summen af flusmidlerne, så flusmidlerne giver tilsammen 1                                          | Flusmidlerne giver tilsammen 0,303; divisionen giver K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                      |
 
 Glazecalcs [opskriftsside](/recipe) udfører alle fire trin, mens der tastes, og viser resultatet i tre kolonner: flusmidler (R₂O og RO), der giver tilsammen 1; stabilisatorer (R₂O₃: aluminiumoxid, hvor bor ofte placeres); og glasdannere (RO₂: silica). »Normeringen er bare et skaleringsværktøj,« siger Glazy: To opskrifter lavet af forskellige råvarer, men med samme Seger-formel, »opfører sig næsten ens, når de er brændt«. Så 1-tallet er en fælles målestok, ikke en mængde, der vejes. Digitalfire tilføjer, at metoden »ikke virker lige så godt ved lavere temperaturer«, hvor bor ikke er et rent flusmiddel, og at Seger-formler er »sammenlignende og bedst set i sammenhæng«. **Sammenlign** stiller to opskrifters formler op ved siden af hinanden, oxid for oxid.
 
@@ -100,11 +100,11 @@ Det mest nyttige enkelte tal er **forholdet mellem silica og aluminiumoxid**{{en
 Table: Hvad forholdet mellem silica og aluminiumoxid tyder på (Glazy)
 Label: Silica til aluminiumoxid
 
-| Forhold | Glazys tolkning                                       |
-| ------: | ----------------------------------------------------- |
-|  Ca. 9  | Tyder på en blank smelte, med varme nok               |
-|     5–7 | Typisk for mange stabile stentøjsglasurer             |
-|     3–5 | Kan være mat eller underbrændt                        |
+| Forhold | Glazys tolkning                           |
+| ------: | ----------------------------------------- |
+|   Ca. 9 | Tyder på en blank smelte, med varme nok   |
+|     5–7 | Typisk for mange stabile stentøjsglasurer |
+|     3–5 | Kan være mat eller underbrændt            |
 
 Glazy siger ikke, hvilken kegle disse tal gælder for. Læs dem som en grov vejledning for stentøjsglasurer, ca. kegle 6–10. Digitalfire siger, at et forhold over ca. 8 sandsynligvis er blankt, men en glasur med bor kan være blank ved 8 eller lavere, og en glasur til lav temperatur endda ved 6. Et forhold på 5–7 forudsiger hverken blank eller mat i sig selv: Flusmidlerne, boret og keglen flytter alle grænsen. Glazy angiver en typisk fordeling af flusmidlerne for stabile glasurer på 0,2 R₂O med 0,8 RO op til 0,3 R₂O med 0,7 RO. Mere alkali gør smelten mere letflydende og øger dens udvidelse og dermed risikoen for krakelering.
 
@@ -115,13 +115,13 @@ Glazy siger ikke, hvilken kegle disse tal gælder for. Læs dem som en grov vejl
 Table: Typisk glødetab (Digitalfire)
 Label: Glødetab
 
-| Råvare                             | Typisk glødetab                                                                    |
-| ---------------------------------- | ---------------------------------------------------------------------------------- |
-| Kridt (calciumkarbonat), dolomit   | Over 40 %, mest kuldioxid: 100 g calciumkarbonat afgiver ca. 44 g                  |
-| Lithiumkarbonat                    | Ca. 60 %                                                                           |
-| Bariumkarbonat, Gerstley Borate    | Over 20 %                                                                          |
-| Kaolin                             | Ca. 12–14 %, hovedsagelig vand bundet i krystallerne                               |
-| Feldspater                         | Under 1 %                                                                          |
+| Råvare                           | Typisk glødetab                                                   |
+| -------------------------------- | ----------------------------------------------------------------- |
+| Kridt (calciumkarbonat), dolomit | Over 40 %, mest kuldioxid: 100 g calciumkarbonat afgiver ca. 44 g |
+| Lithiumkarbonat                  | Ca. 60 %                                                          |
+| Bariumkarbonat, Gerstley Borate  | Over 20 %                                                         |
+| Kaolin                           | Ca. 12–14 %, hovedsagelig vand bundet i krystallerne              |
+| Feldspater                       | Under 1 %                                                         |
 
 Gas, der forsvinder, efter at glasuren er begyndt at smelte, må boble igennem den og giver med Digitalfires ord »bobler, blærer, nålestik, kravling«. I en prøve hos Digitalfire blev talkum ved med at afgive gas til ca. {{1650 °F; 899 °C}}. Fritter, **kalcinerede** råvarer (opvarmet på forhånd for at drive deres gasser ud) og ændringer af brændingen hjælper alle.
 
@@ -154,21 +154,21 @@ Nordamerikanske fritter går under producent og nummer: Ferro Frit 3134 (Ferro h
 Table: Almindelige glasurråvarer, og hvad de giver
 Label: Almindelige glasurråvarer
 
-| Råvare (andre navne)                              | Giver                  | Bemærkninger                                                                                                                                          |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarts (flint, silica)                            | SiO₂                   | Brug 325 mesh, en meget fin formaling, i glasurer                                                                                                     |
-| Kaolin (Storbritannien: China Clay)               | Al₂O₃, SiO₂            | Den vigtigste kilde til aluminiumoxid; hjælper også med at forhindre, at glasuren bundfælder sig                                                      |
-| Pibeler                                           | Al₂O₃, SiO₂            | Mere plastisk end kaolin, med mere jern og organisk stof                                                                                              |
-| Kalifeldspat, natronfeldspat, nephelin-syenit     | K₂O, Na₂O, Al₂O₃, SiO₂ | Flusmidler med deres eget aluminiumoxid og silica. Nephelin-syenit er et stærkt flusmiddel ved lav temperatur og mellemtemperatur. En gammel opskrifts blotte »feldspat« kan betyde en hvilken som helst af dem |
-| Kridt (calciumkarbonat)                           | CaO                    | Det vigtigste calciumflusmiddel; afgiver kuldioxid                                                                                                    |
-| Wollastonit                                       | CaO, SiO₂              | Calcium uden kuldioxiden                                                                                                                              |
-| Dolomit, talkum                                   | MgO, med CaO eller SiO₂ | Silkematte overflader; lavere udvidelse                                                                                                              |
-| Zinkoxid                                          | ZnO                    | Glans og krystaller; for meget kan give kravling                                                                                                      |
-| Borfritter, Gerstley Borate, colemanit            | B₂O₃                   | Uundværlige fra kegle 06 til kegle 6; fritter er »mere ensartede og mindre opløselige end rå borater«                                                 |
-| Lithiumkarbonat                                   | Li₂O                   | Flusmiddel med lav udvidelse; dyrt, så det bruges sparsomt                                                                                            |
-| Strontiumkarbonat                                 | SrO                    | Den mindre giftige erstatning for barium                                                                                                              |
-| Bariumkarbonat                                    | BaO                    | Giftigt i rå form; glasurer med meget barium kan afgive metaller                                                                                      |
-| Bentonit                                          | Holder svævende        | Et meget fint ler, som regel 1–2 %, mod bundfældning. Over 3 % kan få glasuren til at revne, når den tørrer                                           |
+| Råvare (andre navne)                          | Giver                   | Bemærkninger                                                                                                                                                                                                    |
+| --------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kvarts (flint, silica)                        | SiO₂                    | Brug 325 mesh, en meget fin formaling, i glasurer                                                                                                                                                               |
+| Kaolin (Storbritannien: China Clay)           | Al₂O₃, SiO₂             | Den vigtigste kilde til aluminiumoxid; hjælper også med at forhindre, at glasuren bundfælder sig                                                                                                                |
+| Pibeler                                       | Al₂O₃, SiO₂             | Mere plastisk end kaolin, med mere jern og organisk stof                                                                                                                                                        |
+| Kalifeldspat, natronfeldspat, nephelin-syenit | K₂O, Na₂O, Al₂O₃, SiO₂  | Flusmidler med deres eget aluminiumoxid og silica. Nephelin-syenit er et stærkt flusmiddel ved lav temperatur og mellemtemperatur. En gammel opskrifts blotte »feldspat« kan betyde en hvilken som helst af dem |
+| Kridt (calciumkarbonat)                       | CaO                     | Det vigtigste calciumflusmiddel; afgiver kuldioxid                                                                                                                                                              |
+| Wollastonit                                   | CaO, SiO₂               | Calcium uden kuldioxiden                                                                                                                                                                                        |
+| Dolomit, talkum                               | MgO, med CaO eller SiO₂ | Silkematte overflader; lavere udvidelse                                                                                                                                                                         |
+| Zinkoxid                                      | ZnO                     | Glans og krystaller; for meget kan give kravling                                                                                                                                                                |
+| Borfritter, Gerstley Borate, colemanit        | B₂O₃                    | Uundværlige fra kegle 06 til kegle 6; fritter er »mere ensartede og mindre opløselige end rå borater«                                                                                                           |
+| Lithiumkarbonat                               | Li₂O                    | Flusmiddel med lav udvidelse; dyrt, så det bruges sparsomt                                                                                                                                                      |
+| Strontiumkarbonat                             | SrO                     | Den mindre giftige erstatning for barium                                                                                                                                                                        |
+| Bariumkarbonat                                | BaO                     | Giftigt i rå form; glasurer med meget barium kan afgive metaller                                                                                                                                                |
+| Bentonit                                      | Holder svævende         | Et meget fint ler, som regel 1–2 %, mod bundfældning. Over 3 % kan få glasuren til at revne, når den tørrer                                                                                                     |
 
 > [!WARNING]
 > Glasurråvarer er fine pulvere. Kvartsstøv skader lungerne, uden at det først giver symptomer, og nogle råvarer, fx bariumkarbonat og lithiumkarbonat, er giftige, hvis de sluges. Håndtér pulvere forsigtigt, gør rent vådt, og bær et tætsluttende åndedrætsværn, når der arbejdes med tørre råvarer. [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety) forklarer hvordan.
@@ -192,15 +192,15 @@ Et **farvestof**{{en: colorant}} er et metaloxid eller -karbonat, der farver en 
 Table: Almindelige farvestoffer, i procent af grundglasuren
 Label: Almindelige farvestoffer
 
-| Farvestof           | Sædvanlig startmængde                | Farver og bemærkninger                                                                                                              |
-| ------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Kobolt              | 0,1–2 % (kilderne er uenige)         | Blå og meget stærk; mod lilla, når grundglasuren har magnesium                                                                      |
-| Jern                | 0,5–10 %                             | Brune, lysebrune og røde farver i oxidation; i reduktion giver ½–2 % seladon og 5–10 % tenmoku. Et flusmiddel, så meget får en glasur til at løbe |
-| Kobber              | 1–3 %                                | Grøn eller turkis i oxidation, rød i reduktion. Det kan få en glasur til at afgive metaller                                          |
-| Krom                | Under 0,5 % til 2 % (kilderne er uenige) | Grøn; brun, hvis grundglasuren har zink, lyserød med tin                                                                         |
-| Mangan              | 2–10 %                               | Brune og lilla farver                                                                                                               |
-| Rutil               | Ca. 2–5 %                            | Meleret, varieret farve; ru eller mat over ca. 5 %                                                                                  |
-| Universalfarver     | 2–12 %                               | 2–4 % til lyse nuancer, 5–8 % til mellemtoner, 10–12 % til stærke farver                                                            |
+| Farvestof       | Sædvanlig startmængde                    | Farver og bemærkninger                                                                                                                            |
+| --------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobolt          | 0,1–2 % (kilderne er uenige)             | Blå og meget stærk; mod lilla, når grundglasuren har magnesium                                                                                    |
+| Jern            | 0,5–10 %                                 | Brune, lysebrune og røde farver i oxidation; i reduktion giver ½–2 % seladon og 5–10 % tenmoku. Et flusmiddel, så meget får en glasur til at løbe |
+| Kobber          | 1–3 %                                    | Grøn eller turkis i oxidation, rød i reduktion. Det kan få en glasur til at afgive metaller                                                       |
+| Krom            | Under 0,5 % til 2 % (kilderne er uenige) | Grøn; brun, hvis grundglasuren har zink, lyserød med tin                                                                                          |
+| Mangan          | 2–10 %                                   | Brune og lilla farver                                                                                                                             |
+| Rutil           | Ca. 2–5 %                                | Meleret, varieret farve; ru eller mat over ca. 5 %                                                                                                |
+| Universalfarver | 2–12 %                                   | 2–4 % til lyse nuancer, 5–8 % til mellemtoner, 10–12 % til stærke farver                                                                          |
 
 Mængderne af kobolt og krom er reelt omstridte. Glazy siger, at 0,1 % kobolt er nok til en blå; Glendale Community College angiver ½–2 % eller ½–3 % afhængigt af ovnatmosfæren; Birdie Boone siger i Pottery Making Illustrated 3 % eller mindre. For krom siger Boone under 0,5 % og Glendale 2–3 %. Det sikre er at starte lavt og lave en **prøverække**{{en: line blend}}: en række prøvebrikker, hvor én råvare øges trinvis fra lidt til meget.
 
@@ -212,11 +212,11 @@ Et **opakgørende middel**{{en: opacifier}} gør en glasur **dækkende**, så le
 
 Table: Opakgørende midler
 
-| Opakgørende middel                          | Sædvanlig mængde            | Bemærkninger                                                                                                                 |
-| ------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Zirkonsilikat (Zircopax, Superpax, Ultrox)  | 10–15 % for fuld dækkeevne  | Det billigere valg; mærkerne er zirkonsilikat malet til forskellige kornstørrelser, og finere kvaliteter er stærkere        |
-| Tinoxid                                     | Ca. 5–7 % (vores skøn)      | Dyrt; svagere ved høj temperatur, og Digitalfire oplyser, at 4 % ikke gav nogen dækkeevne i en transparent reduktionsglasur til kegle 10 |
-| Titandioxid                                 | Ca. 5 % (vores skøn)        | Silkeagtig, gennemskinnelig dækkeevne; ca. 5 % kan variere overfladen, og meget mere giver ofte en mat overflade med krystaller |
+| Opakgørende middel                         | Sædvanlig mængde           | Bemærkninger                                                                                                                             |
+| ------------------------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Zirkonsilikat (Zircopax, Superpax, Ultrox) | 10–15 % for fuld dækkeevne | Det billigere valg; mærkerne er zirkonsilikat malet til forskellige kornstørrelser, og finere kvaliteter er stærkere                     |
+| Tinoxid                                    | Ca. 5–7 % (vores skøn)     | Dyrt; svagere ved høj temperatur, og Digitalfire oplyser, at 4 % ikke gav nogen dækkeevne i en transparent reduktionsglasur til kegle 10 |
+| Titandioxid                                | Ca. 5 % (vores skøn)       | Silkeagtig, gennemskinnelig dækkeevne; ca. 5 % kan variere overfladen, og meget mere giver ofte en mat overflade med krystaller          |
 
 ## Glasurtilpasning og glasurfejl {#fit-and-defects}
 
@@ -244,13 +244,13 @@ En **blank** overflade er spejlende og glat, **silkemat** har en dæmpet glans, 
 Table: Almindelige glasurfejl, deres sædvanlige årsager og første løsninger
 Label: Almindelige glasurfejl
 
-| Glasurfejl   | Ser ud som                                         | Almindelige årsager                                                                                                                         | Første løsninger                                                                         |
-| ------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Kravling     | Glasuren trækker sig sammen i perler og efterlader bart ler | Støvet eller fedtet forglødet gods; et tykt lag med meget ler, der revnede under tørringen; zink, zirkonsilikat eller tin             | Rengør det forglødede gods; påfør tyndere; kalcinér noget af leret; tilsæt et bindemiddel som CMC |
-| Nålestik     | Små huller eller fordybninger                      | Gas fra skærv eller glasur, der ikke er lukket til igen; en underbrændt eller sej glasur                                                    | Hold ved sluttemperaturen i ca. en halv time; påfør tyndere; mindre zink eller rutil     |
-| Blærer       | Kratere med skarpe kanter                          | Som regel overbrænding; meget tykke lag; flygtige flusmidler over ca. {{2192 °F; 1200 °C}}                                                 | Brænd lavere; påfør tyndere. Skarpe kanter gør brugskeramik usikker                      |
-| Løb          | Glasuren flyder ud på ovnpladen                    | For lidt aluminiumoxid; for tykt, som hvor overhældninger overlapper; meget jern                                                           | Påfør tyndere; tilsæt aluminiumoxid; hold glasuren et godt stykke over foden             |
-| Kølerevner   | Revner i emnet fra afkøling eller opvarmning       | Hurtig afkøling gennem kvartsspringet, {{1063 °F; 573 °C}}, eller cristobalitspringet, ca. {{428 °F; 220 °C}}; ujævne vægge; dårlig tilpasning | Brænd langsomt gennem begge, op og ned; jævne vægge                                      |
+| Glasurfejl | Ser ud som                                                  | Almindelige årsager                                                                                                                            | Første løsninger                                                                                  |
+| ---------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Kravling   | Glasuren trækker sig sammen i perler og efterlader bart ler | Støvet eller fedtet forglødet gods; et tykt lag med meget ler, der revnede under tørringen; zink, zirkonsilikat eller tin                      | Rengør det forglødede gods; påfør tyndere; kalcinér noget af leret; tilsæt et bindemiddel som CMC |
+| Nålestik   | Små huller eller fordybninger                               | Gas fra skærv eller glasur, der ikke er lukket til igen; en underbrændt eller sej glasur                                                       | Hold ved sluttemperaturen i ca. en halv time; påfør tyndere; mindre zink eller rutil              |
+| Blærer     | Kratere med skarpe kanter                                   | Som regel overbrænding; meget tykke lag; flygtige flusmidler over ca. {{2192 °F; 1200 °C}}                                                     | Brænd lavere; påfør tyndere. Skarpe kanter gør brugskeramik usikker                               |
+| Løb        | Glasuren flyder ud på ovnpladen                             | For lidt aluminiumoxid; for tykt, som hvor overhældninger overlapper; meget jern                                                               | Påfør tyndere; tilsæt aluminiumoxid; hold glasuren et godt stykke over foden                      |
+| Kølerevner | Revner i emnet fra afkøling eller opvarmning                | Hurtig afkøling gennem kvartsspringet, {{1063 °F; 573 °C}}, eller cristobalitspringet, ca. {{428 °F; 220 °C}}; ujævne vægge; dårlig tilpasning | Brænd langsomt gennem begge, op og ned; jævne vægge                                               |
 
 ## Fødevaresikkerhed {#food-safety}
 

@@ -473,21 +473,21 @@ Glazūros degimo{{en: glaze firing}} metu glazūra ant biskvito išsilydo į sti
 Table: L&L ir Bartlett glazūros degimo programos
 Label: Glazūros degimo programos
 
-| Segmentas                 |                    Kaitinti iki |             Slow Glaze |             Fast Glaze |
-| ------------------------- | ------------------------------: | ---------------------: | ---------------------: |
-| 1                         |              {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Atskiro žingsnio nėra |
-| 2                         | {{250 °F; 139 °C}} žemiau aukščiausios temperatūros | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                         |        Aukščiausia temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Kaitinimo laikas, tuščia krosnis |                          |   Apie 6½–7½ valandos |      Apie 3–4 valandas |
+| Segmentas                        |                                        Kaitinti iki |             Slow Glaze |             Fast Glaze |
+| -------------------------------- | --------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                                |                                  {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |  Atskiro žingsnio nėra |
+| 2                                | {{250 °F; 139 °C}} žemiau aukščiausios temperatūros | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                                |                             Aukščiausia temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Kaitinimo laikas, tuščia krosnis |                                                     |    Apie 6½–7½ valandos |      Apie 3–4 valandas |
 
 Table: Kur baigiasi 2 ir 3 segmentai, pagal piroskopą (L&L ir Bartlett)
 Label: Programų tikslinės temperatūros
 
-| Piroskopas | 2 segmento pabaiga | Aukščiausia temperatūra |
-| ---------- | -----------------: | ----------------------: |
-| 06         | {{1569 °F; 854 °C}} |     {{1819 °F; 993 °C}} |
-| 04         | {{1676 °F; 913 °C}} |    {{1926 °F; 1052 °C}} |
-| 6          | {{1982 °F; 1083 °C}} |   {{2232 °F; 1222 °C}} |
+| Piroskopas |   2 segmento pabaiga | Aukščiausia temperatūra |
+| ---------- | -------------------: | ----------------------: |
+| 06         |  {{1569 °F; 854 °C}} |     {{1819 °F; 993 °C}} |
+| 04         |  {{1676 °F; 913 °C}} |    {{1926 °F; 1052 °C}} |
+| 6          | {{1982 °F; 1083 °C}} |    {{2232 °F; 1222 °C}} |
 
 Atsižvelgiant į L&L įspėjimą dėl greito degimo, saugesnis numatytasis pasirinkimas yra Slow Glaze. Jei aukščiausioje temperatūroje pridedate ilgesnį nei 5–10 minučių išlaikymą{{en: hold}}, L&L pataria atitinkamai sumažinti tikslinę temperatūrą arba temperatūros korekciją ir pažymi, kad „išlaikymas aukštoje temperatūroje greitina kaitinimo elementų ir termoporos dėvėjimąsi“.
 
@@ -498,12 +498,12 @@ Vidutinio degimo glazūrose kartais lieka **adatinių skylučių**{{en: pinholes
 Table: Digitalfire PLC6DS, atvėsinimas ir išlaikymas piroskopui 6
 Label: Digitalfire PLC6DS
 
-| Žingsnis |                         Sparta | Tikslinė temperatūra | Išlaikymas                                         |
-| -------- | -----------------------------: | -------------------: | -------------------------------------------------- |
-| 1        |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minučių                                         |
+| Žingsnis |                         Sparta | Tikslinė temperatūra | Išlaikymas                                                  |
+| -------- | -----------------------------: | -------------------: | ----------------------------------------------------------- |
+| 1        |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minučių                                                  |
 | 2        |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pasirinktinai 30 minučių, kad išsisklaidytų burbulų debesys |
-| 3        |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minučių; didelėse krosnyse ilgiau               |
-| 4        | Aušinti {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minučių                                         |
+| 3        |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minučių; didelėse krosnyse ilgiau                        |
+| 4        | Aušinti {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minučių                                                  |
 
 PLC6DS trunka apie 9 valandas 36 minutes. Skystesnėms glazūroms Digitalfire atvėsina maždaug {{200 °F; 111 °C}}; atvėsinus per daug, „išlaikymo metu kyla kristalizacijos pavojus“. Jos aukščiausia temperatūra {{2200 °F; 1204 °C}} yra žemesnė už lentelėje piroskopui 6 nurodytą {{2232 °F; 1222 °C}}; Digitalfire teigia, kad dauguma krosnių piroskopą 6 pasiekia maždaug ties {{2200 °F; 1204 °C}}. Patikrinkite tai piroskopų rinkiniu savo krosnyje.
 
@@ -516,8 +516,8 @@ Label: L&L reguliuojamas aušinimas
 
 | Žingsnis |                        Sparta | Tikslinė temperatūra |
 | -------- | ----------------------------: | -------------------: |
-| 1        |       Kaitinti visu greičiu | {{2232 °F; 1222 °C}} |
-| 2        |        Aušinti visu greičiu | {{1900 °F; 1038 °C}} |
+| 1        |         Kaitinti visu greičiu | {{2232 °F; 1222 °C}} |
+| 2        |          Aušinti visu greičiu | {{1900 °F; 1038 °C}} |
 | 3        | Aušinti {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Skutt valdikliai taip pat siūlo pradinį kaitinimą ir vieno žingsnio aušinimą.

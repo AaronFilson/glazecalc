@@ -157,11 +157,11 @@ Izvori preporučuju različita sita. Zakin prosijava dvaput kroz 50 ili 80 mesh.
 Table: Koje sito upotrijebiti
 Label: Sito (mesh)
 
-| Glazura                                         | Sito                       |
-| ----------------------------------------------- | -------------------------- |
-| Većina glazura                                  | Dva prolaza kroz 80 mesh   |
-| Glazure s bojilima poput kobalta ili željeza    | 100 do 120 mesh            |
-| Glazure od pepela i druge s grubim sirovinama   | 60 do 80 mesh              |
+| Glazura                                       | Sito                     |
+| --------------------------------------------- | ------------------------ |
+| Većina glazura                                | Dva prolaza kroz 80 mesh |
+| Glazure s bojilima poput kobalta ili željeza  | 100 do 120 mesh          |
+| Glazure od pepela i druge s grubim sirovinama | 60 do 80 mesh            |
 
 ## Relativna gustoća {#specific-gravity}
 
@@ -183,11 +183,11 @@ Izvori se ne slažu, najviše o nanošenju kistom i prskanju, gdje britanski dob
 Table: Ciljne relativne gustoće, gdje se izvori ne slažu
 Label: Ciljne relativne gustoće
 
-| Uporaba         | Digitalfire i Glazy                                                                                                                                       | Potclays (Ujedinjeno Kraljevstvo)          | Sigurno polazište                                                 |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------- |
-| Uranjanje       | {{SG 1.40}} (za uranjanje od 5 sekundi) do {{SG 1.50}} (za uranjanje od 1 sekunde); kod kuće zamiješane zgusnute glazure najbolje su na {{SG 1.43–1.45}} | Prozirna {{SG 1.46–1.48}}; obojena {{SG 1.61}} | {{SG 1.45}}; ako kaplje, razrijedite na {{SG 1.43}} i zgusnite je |
-| Nanošenje kistom | {{SG 1.25}} (tanka prozirna) do {{SG 1.55}} (tamni detalji)                                                                                              | {{SG 1.71–1.81}}                           | Slijedite upute proizvoda; upotrijebite CMC ili medij za nanošenje kistom |
-| Prskanje        | Nema broja; Hopper, koji piše za Ceramic Arts Network, kaže mnogo rjeđe, s deflokulantom (dodatkom koji suspenziju čini tekućijom)                      | {{SG 1.71}}                                | Nema pouzdanog broja; prskajte samo u kabini za prskanje          |
+| Uporaba          | Digitalfire i Glazy                                                                                                                                      | Potclays (Ujedinjeno Kraljevstvo)              | Sigurno polazište                                                         |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
+| Uranjanje        | {{SG 1.40}} (za uranjanje od 5 sekundi) do {{SG 1.50}} (za uranjanje od 1 sekunde); kod kuće zamiješane zgusnute glazure najbolje su na {{SG 1.43–1.45}} | Prozirna {{SG 1.46–1.48}}; obojena {{SG 1.61}} | {{SG 1.45}}; ako kaplje, razrijedite na {{SG 1.43}} i zgusnite je         |
+| Nanošenje kistom | {{SG 1.25}} (tanka prozirna) do {{SG 1.55}} (tamni detalji)                                                                                              | {{SG 1.71–1.81}}                               | Slijedite upute proizvoda; upotrijebite CMC ili medij za nanošenje kistom |
+| Prskanje         | Nema broja; Hopper, koji piše za Ceramic Arts Network, kaže mnogo rjeđe, s deflokulantom (dodatkom koji suspenziju čini tekućijom)                       | {{SG 1.71}}                                    | Nema pouzdanog broja; prskajte samo u kabini za prskanje                  |
 
 Da bi okom provjerio glazuru za uranjanje, AMACO uranja 5 sekundi i traži sloj otprilike debljine američkog novčića od deset centi (dime). Digitalfire to provjerava pečenjem pločica uranjanih 5 sekundi.
 
@@ -198,12 +198,12 @@ Tablica niže naš je vlastiti izračun, a ne izvorni podatak. Pretpostavlja da 
 Table: Voda za ciljnu relativnu gustoću (naša procjena)
 Label: Voda za ciljnu relativnu gustoću
 
-| Cilj        | Na 100 g praha |   Po kilogramu |          Po funti |
-| ----------- | -------------: | -------------: | ----------------: |
-| {{SG 1.40}} |    oko 115 mL |   oko 1150 mL | oko 18 US fl oz |
-| {{SG 1.45}} |     oko 98 mL |    oko 980 mL | oko 15 US fl oz |
-| {{SG 1.50}} |     oko 85 mL |    oko 850 mL | oko 13 US fl oz |
-| {{SG 1.60}} |     oko 64 mL |    oko 640 mL | oko 10 US fl oz |
+| Cilj        | Na 100 g praha | Po kilogramu |        Po funti |
+| ----------- | -------------: | -----------: | --------------: |
+| {{SG 1.40}} |     oko 115 mL |  oko 1150 mL | oko 18 US fl oz |
+| {{SG 1.45}} |      oko 98 mL |   oko 980 mL | oko 15 US fl oz |
+| {{SG 1.50}} |      oko 85 mL |   oko 850 mL | oko 13 US fl oz |
+| {{SG 1.60}} |      oko 64 mL |   oko 640 mL | oko 10 US fl oz |
 
 ### Odredite relativnu gustoću suhog praha svoje glazure dok miješate
 
@@ -286,13 +286,13 @@ Willers dobro opisuje cilj: „dovoljno podataka da možete ponoviti ili izbjeć
 Table: Što zapisati za svaku smjesu glazure (naš predložak)
 Label: Predložak zapisa
 
-| Dio       | Što zapisati                                                                                                                                                                                                                                                           |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept    | Recept i njegova inačica; marke sirovina i brojevi šarže; sve zamjene                                                                                                                                                                                                  |
+| Dio       | Što zapisati                                                                                                                                                                                                                                                              |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept    | Recept i njegova inačica; marke sirovina i brojevi šarže; sve zamjene                                                                                                                                                                                                     |
 | Miješanje | Datum; veličina smjese; dodana voda i njezina vrsta (iz slavine, iz reverzne osmoze ili destilirana); relativna gustoća nakon miješanja i konačna; masa gotove suspenzije, za relativnu gustoću suhog praha; dodana gorka sol, CMC i bentonit; sito (mesh) i broj prolaza |
-| Nanošenje | Keramička masa; stožac biskvitnog pečenja; uranjanje, nanošenje kistom ili polijevanje; vrijeme uranjanja ili broj slojeva; debljina suhog sloja                                                                                                                       |
-| Pečenje   | Peć i položaj na ploči; program pečenja, s rampama, zadržavanjima i hlađenjem; atmosfera (oksidacija ili redukcija); što je pokazao kontrolni stožac, a ne samo na što je peć bila namještena                                                                       |
-| Rezultat  | Površina i boja; curenje, pucanje glazure ili sitne rupice, ako ih ima; fotografije prednje, stražnje i bočne strane; oznaka pločice                                                                                                                                   |
+| Nanošenje | Keramička masa; stožac biskvitnog pečenja; uranjanje, nanošenje kistom ili polijevanje; vrijeme uranjanja ili broj slojeva; debljina suhog sloja                                                                                                                          |
+| Pečenje   | Peć i položaj na ploči; program pečenja, s rampama, zadržavanjima i hlađenjem; atmosfera (oksidacija ili redukcija); što je pokazao kontrolni stožac, a ne samo na što je peć bila namještena                                                                             |
+| Rezultat  | Površina i boja; curenje, pucanje glazure ili sitne rupice, ako ih ima; fotografije prednje, stražnje i bočne strane; oznaka pločice                                                                                                                                      |
 
 > [!NOTE]
 > U aplikaciji Glazecalc spremljeni [recept](/recipe) sadrži sam recept. [Zapisnik pečenja](/firing) bilježi svako pečenje: peć, datum, vremena, temperature, stošce i napomene. [Bilješke](/notes) sadrže sve ostalo, poput gornjeg zapisa o smjesi i onoga što je pokazala svaka pločica.

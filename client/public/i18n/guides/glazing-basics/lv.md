@@ -43,10 +43,10 @@ Pirmā, zemākas temperatūras apdedzināšana ir **biskvīta apdedzināšana**{
 Table: Kā biskvīts ietekmē glazēšanu (Digitalfire)
 Label: Kā biskvīts ietekmē glazēšanu
 
-| Biskvīts                                                  | Kas notiek                                                              |
-| --------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Nepietiekami apdedzināts, ļoti uzsūcošs                    | Glazūra uzklājas pārāk bieza, tad saplaisā un savelkas                  |
-| Pārdedzināts, blīvs                                       | Iemērkšana un žūšana ilgst ilgāk                                         |
+| Biskvīts                                                      | Kas notiek                                                              |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Nepietiekami apdedzināts, ļoti uzsūcošs                       | Glazūra uzklājas pārāk bieza, tad saplaisā un savelkas                  |
+| Pārdedzināts, blīvs                                           | Iemērkšana un žūšana ilgst ilgāk                                        |
 | Apdedzināts karstāk vai ilgāk noturēts augstākajā temperatūrā | Tagad izdeg vairāk gāzu, tāpēc vēlāk caur glazūru izplūst mazāk burbuļu |
 
 Apvienotās Karalistes piegādātājs Potclays apraksta biskvīta apdedzināšanu līdz apmēram {{1000 °C; 1832 °F}}, apmēram konusam 06. Apkopojot šos avotus, pirmajai biskvīta apdedzināšanai iesakām konusus 06–04: {{1828–1945 °F; 998–1063 °C}} ar Ortona vidējo sildīšanas ātrumu.
@@ -64,9 +64,9 @@ Konusu numuri ir no 022 līdz 42. Nulle priekšā apzīmē vēsāko sēriju, kur
 Table: Apdedzināšanas diapazoni: Ortona pašstāvoši konusi, sildot ar {{108 °F; 60 °C}} stundā
 Label: Apdedzināšanas diapazoni
 
-| Diapazons                       | Konusi |        °F |        °C | Izmanto                            |
-| ------------------------------- | ------ | --------: | --------: | ---------------------------------- |
-| Zemas temperatūras apdedzināšana  | 06–04  | 1828–1945 |  998–1063 | Māla keramikas glazūrām; biskvītam |
+| Diapazons                          | Konusi |        °F |        °C | Izmanto                            |
+| ---------------------------------- | ------ | --------: | --------: | ---------------------------------- |
+| Zemas temperatūras apdedzināšana   | 06–04  | 1828–1945 |  998–1063 | Māla keramikas glazūrām; biskvītam |
 | Vidējas temperatūras apdedzināšana | 5–6    | 2167–2232 | 1186–1222 | Akmens masai un porcelānam         |
 | Augstas temperatūras apdedzināšana | 9–10   | 2300–2345 | 1260–1285 | Akmens masai un porcelānam         |
 
@@ -84,12 +84,12 @@ Publicētās temperatūras atšķiras. Glazy augstas temperatūras apdedzināša
 Table: No receptes līdz Zēgera formulai: Glazy izstrādātais piemērs
 Label: No receptes līdz Zēgera formulai
 
-| Solis              | Kas notiek                                                                                                                                  | Piemērā                                                                                                                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Recepte         | Izejvielas pēc masas, pārrēķinātas uz 100                                                                                                   | Laukšpats 40% starp citām                                                                                                                       |
-| 2. Oksīdu analīze  | Kā uzturvērtības etiķete: katras izejvielas oksīdus saskaita masas procentos, un gāzes atmet                                               | Laukšpatā ir 64,8% silīcija dioksīda, tātad tā 40% dod 25,9% SiO₂. Apdedzinātā glazūra satur 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO   |
-| 3. Moli            | Masas pārvērš **molos**{{en: moles}}, molekulu skaitā, jo “grami var maldināt, jo daži oksīdi ir smagāki par citiem”                         | 60,1 g SiO₂ ir viens mols, tātad 67,4 g ir apmēram 1,12 moli                                                                                    |
-| 4. Zēgera formula  | Visu dala ar kušņu summu, lai kušņu summa būtu 1                                                                                            | Kušņu summa ir 0,303; pēc dalīšanas K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                                  |
+| Solis             | Kas notiek                                                                                                           | Piemērā                                                                                                                                   |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Recepte        | Izejvielas pēc masas, pārrēķinātas uz 100                                                                            | Laukšpats 40% starp citām                                                                                                                 |
+| 2. Oksīdu analīze | Kā uzturvērtības etiķete: katras izejvielas oksīdus saskaita masas procentos, un gāzes atmet                         | Laukšpatā ir 64,8% silīcija dioksīda, tātad tā 40% dod 25,9% SiO₂. Apdedzinātā glazūra satur 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
+| 3. Moli           | Masas pārvērš **molos**{{en: moles}}, molekulu skaitā, jo “grami var maldināt, jo daži oksīdi ir smagāki par citiem” | 60,1 g SiO₂ ir viens mols, tātad 67,4 g ir apmēram 1,12 moli                                                                              |
+| 4. Zēgera formula | Visu dala ar kušņu summu, lai kušņu summa būtu 1                                                                     | Kušņu summa ir 0,303; pēc dalīšanas K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                             |
 
 Lietotnes Glazecalc [receptes lapa](/recipe) visus četrus soļus izpilda, kamēr rakstāt, un rezultātu parāda trīs kolonnās: kušņi (R₂O un RO), kuru summa ir 1; stabilizatori (R₂O₃: alumīnija oksīds, un bieži arī bors); un stikla veidotāji (RO₂: silīcija dioksīds). “Normēšana uz vienu ir tikai mērogošanas rīks,” saka Glazy: divas receptes no dažādām izejvielām, bet ar vienādu Zēgera formulu, “pēc apdedzināšanas uzvedas gandrīz vienādi”. Tātad 1 ir kopīgs mērogs, nevis daudzums, ko sverat. Digitalfire piebilst, ka metode “nedarbojas tik labi zemākās temperatūrās”, kur bors nav vienkāršs kusnis, un ka Zēgera formulas ir “salīdzinošas un vislabāk aplūkojamas kontekstā”. Poga **Salīdzināt** novieto divu recepšu formulas blakus, oksīdu pa oksīdam.
 
@@ -100,11 +100,11 @@ Visnoderīgākais atsevišķais skaitlis ir **silīcija dioksīda un alumīnija 
 Table: Ko liecina silīcija dioksīda un alumīnija oksīda attiecība (Glazy)
 Label: Silīcija dioksīda un alumīnija oksīda attiecība
 
-|   Attiecība | Glazy skaidrojums                                       |
-| ----------: | ------------------------------------------------------- |
-| Apmēram 9   | Liecina par spīdīgu kausējumu, ja ir pietiekami karsts  |
-|         5–7 | Raksturīga daudzām stabilām akmens masas glazūrām       |
-|         3–5 | Var būt matēta vai nepietiekami apdedzināta             |
+| Attiecība | Glazy skaidrojums                                      |
+| --------: | ------------------------------------------------------ |
+| Apmēram 9 | Liecina par spīdīgu kausējumu, ja ir pietiekami karsts |
+|       5–7 | Raksturīga daudzām stabilām akmens masas glazūrām      |
+|       3–5 | Var būt matēta vai nepietiekami apdedzināta            |
 
 Glazy nenorāda, kuram konusam šie skaitļi domāti. Uztveriet tos kā aptuvenu orientieri akmens masas glazūrām, apmēram konusiem 6–10. Digitalfire norāda, ka glazūra ar attiecību virs apmēram 8, visticamāk, ir spīdīga, bet glazūra ar boru var būt spīdīga arī ar attiecību 8 vai mazāku, bet zemas temperatūras glazūra – pat ar 6. Attiecība 5–7 viena pati neparedz ne spīdumu, ne matētumu: kušņi, bors un konuss pārbīda robežu. Glazy stabilām glazūrām norāda tipisku kušņu attiecību no 0,2 R₂O ar 0,8 RO līdz 0,3 R₂O ar 0,7 RO. Vairāk sārmu padara kausējumu šķidrāku un palielina tā termisko izplešanos un līdz ar to matplaisu risku.
 
@@ -115,13 +115,13 @@ Glazy nenorāda, kuram konusam šie skaitļi domāti. Uztveriet tos kā aptuvenu
 Table: Tipiski karsēšanas zudumi (Digitalfire)
 Label: Karsēšanas zudumi
 
-| Izejviela                                | Tipiski karsēšanas zudumi                                                              |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- |
-| Krīts (kalcija karbonāts), dolomīts      | Vairāk par 40%, galvenokārt oglekļa dioksīds: 100 g kalcija karbonāta izdala apmēram 44 g |
-| Litija karbonāts                         | Apmēram 60%                                                                            |
-| Bārija karbonāts, Gerstley Borate        | Vairāk par 20%                                                                         |
-| Kaolīns                                  | Apmēram 12–14%, galvenokārt tā kristālos saistītais ūdens                              |
-| Laukšpati                                | Mazāk par 1%                                                                           |
+| Izejviela                           | Tipiski karsēšanas zudumi                                                                 |
+| ----------------------------------- | ----------------------------------------------------------------------------------------- |
+| Krīts (kalcija karbonāts), dolomīts | Vairāk par 40%, galvenokārt oglekļa dioksīds: 100 g kalcija karbonāta izdala apmēram 44 g |
+| Litija karbonāts                    | Apmēram 60%                                                                               |
+| Bārija karbonāts, Gerstley Borate   | Vairāk par 20%                                                                            |
+| Kaolīns                             | Apmēram 12–14%, galvenokārt tā kristālos saistītais ūdens                                 |
+| Laukšpati                           | Mazāk par 1%                                                                              |
 
 Gāzei, kas izdalās pēc tam, kad glazūra sākusi kust, jāizlaužas caur to, radot, kā raksta Digitalfire, “burbuļus, pūslīšus, adatas dūrienus, savilkšanos”. Kādā Digitalfire izmēģinājumā talks turpināja izdalīt gāzi līdz apmēram {{1650 °F; 899 °C}}. Palīdz frites, **kalcinētas**{{en: calcined}} izejvielas (iepriekš karsētas, lai izvadītu to gāzes) un apdedzināšanas izmaiņas.
 
@@ -154,21 +154,21 @@ Ziemeļamerikas frites sauc pēc ražotāja un numura: Ferro Frit 3134 (Ferro ta
 Table: Parastās glazūru izejvielas un ko tās dod
 Label: Parastās glazūru izejvielas
 
-| Izejviela (citi nosaukumi)                                | Dod                    | Piezīmes                                                                                                                                                      |
-| --------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarcs (krams, silīcija dioksīds)                         | SiO₂                   | Glazūrās izmantojiet 325 mesh, ļoti smalku malumu                                                                                                            |
-| Kaolīns (Apvienotajā Karalistē: china clay)               | Al₂O₃, SiO₂            | Galvenais alumīnija oksīda avots; palīdz arī novērst glazūras nosēšanos                                                                                      |
-| Plastiskais māls (ball clay)                              | Al₂O₃, SiO₂            | Plastiskāks par kaolīnu, ar vairāk dzelzs un organisko vielu                                                                                                 |
-| Kālija laukšpats, nātrija laukšpats, nefelīna sienīts     | K₂O, Na₂O, Al₂O₃, SiO₂ | Kušņi ar savu alumīnija oksīdu un silīcija dioksīdu. Nefelīna sienīts ir spēcīgs kusnis zemas un vidējas temperatūras apdedzināšanai. Vecā receptē vienkārši “laukšpats” var nozīmēt jebkuru no tiem |
-| Krīts (kalcija karbonāts)                                 | CaO                    | Galvenais kalcija kusnis; izdala oglekļa dioksīdu                                                                                                            |
-| Volastonīts                                               | CaO, SiO₂              | Kalcijs bez oglekļa dioksīda                                                                                                                                 |
-| Dolomīts, talks                                           | MgO, ar CaO vai SiO₂   | Zīdaini matētas virsmas; mazāka termiskā izplešanās                                                                                                          |
-| Cinka oksīds                                              | ZnO                    | Spīdums un kristāli; pārāk daudz var izraisīt savilkšanos                                                                                                    |
-| Bora frites, Gerstley Borate, kolemanīts                  | B₂O₃                   | Neaizstājams no konusa 06 līdz konusam 6; frites ir “nemainīgākas un mazāk šķīstošas nekā nefritēti borāti”                                                   |
-| Litija karbonāts                                          | Li₂O                   | Kusnis ar mazu termisko izplešanos; dārgs, tāpēc lieto taupīgi                                                                                               |
-| Stroncija karbonāts                                       | SrO                    | Mazāk toksisks bārija aizstājējs                                                                                                                              |
-| Bārija karbonāts                                          | BaO                    | Neapstrādātā veidā toksisks; no glazūrām ar daudz bārija tas var izskaloties                                                                                  |
-| Bentonīts                                                 | Suspensija             | Ļoti smalks māls, parasti 1–2%, lai novērstu nosēšanos. Vairāk par 3% var izraisīt glazūras plaisāšanu žūstot                                               |
+| Izejviela (citi nosaukumi)                            | Dod                    | Piezīmes                                                                                                                                                                                             |
+| ----------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kvarcs (krams, silīcija dioksīds)                     | SiO₂                   | Glazūrās izmantojiet 325 mesh, ļoti smalku malumu                                                                                                                                                    |
+| Kaolīns (Apvienotajā Karalistē: china clay)           | Al₂O₃, SiO₂            | Galvenais alumīnija oksīda avots; palīdz arī novērst glazūras nosēšanos                                                                                                                              |
+| Plastiskais māls (ball clay)                          | Al₂O₃, SiO₂            | Plastiskāks par kaolīnu, ar vairāk dzelzs un organisko vielu                                                                                                                                         |
+| Kālija laukšpats, nātrija laukšpats, nefelīna sienīts | K₂O, Na₂O, Al₂O₃, SiO₂ | Kušņi ar savu alumīnija oksīdu un silīcija dioksīdu. Nefelīna sienīts ir spēcīgs kusnis zemas un vidējas temperatūras apdedzināšanai. Vecā receptē vienkārši “laukšpats” var nozīmēt jebkuru no tiem |
+| Krīts (kalcija karbonāts)                             | CaO                    | Galvenais kalcija kusnis; izdala oglekļa dioksīdu                                                                                                                                                    |
+| Volastonīts                                           | CaO, SiO₂              | Kalcijs bez oglekļa dioksīda                                                                                                                                                                         |
+| Dolomīts, talks                                       | MgO, ar CaO vai SiO₂   | Zīdaini matētas virsmas; mazāka termiskā izplešanās                                                                                                                                                  |
+| Cinka oksīds                                          | ZnO                    | Spīdums un kristāli; pārāk daudz var izraisīt savilkšanos                                                                                                                                            |
+| Bora frites, Gerstley Borate, kolemanīts              | B₂O₃                   | Neaizstājams no konusa 06 līdz konusam 6; frites ir “nemainīgākas un mazāk šķīstošas nekā nefritēti borāti”                                                                                          |
+| Litija karbonāts                                      | Li₂O                   | Kusnis ar mazu termisko izplešanos; dārgs, tāpēc lieto taupīgi                                                                                                                                       |
+| Stroncija karbonāts                                   | SrO                    | Mazāk toksisks bārija aizstājējs                                                                                                                                                                     |
+| Bārija karbonāts                                      | BaO                    | Neapstrādātā veidā toksisks; no glazūrām ar daudz bārija tas var izskaloties                                                                                                                         |
+| Bentonīts                                             | Suspensija             | Ļoti smalks māls, parasti 1–2%, lai novērstu nosēšanos. Vairāk par 3% var izraisīt glazūras plaisāšanu žūstot                                                                                        |
 
 > [!WARNING]
 > Glazūru izejvielas ir smalki pulveri. Silīcija dioksīda putekļi bojā plaušas, sākumā neradot simptomus, un dažas izejvielas, piemēram, bārija karbonāts un litija karbonāts, ir indīgas, ja tās norij. Rīkojieties ar pulveriem saudzīgi, uzkopiet mitri un, strādājot ar sausām izejvielām, valkājiet pareizi pieguļošu respiratoru. Ceļveži [Droša jaukšana un ventilācija](/guides/safe-mixing) un [Nesaindējiet savu ģimeni](/guides/home-safety) izskaidro, kā to darīt.
@@ -192,15 +192,15 @@ Arī izejvielas mainās. ASV Ģeoloģijas dienests ziņo, ka raktuves un rūpnī
 Table: Parastās krāsvielas, procentos no pamatglazūras
 Label: Parastās krāsvielas
 
-| Krāsviela              | Parastais sākuma daudzums                 | Krāsas un piezīmes                                                                                                                                  |
-| ---------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalts                | 0,1–2% (avoti atšķiras)                   | Zila, un ļoti spēcīga; violetāka, ja pamatglazūrā ir magnijs                                                                                        |
-| Dzelzs                 | 0,5–10%                                   | Oksidējošā apdedzināšanā brūni, iedzelteni brūni un sarkani toņi; reducējošā ½–2% dod seladonu un 5–10% tenmoku. Kusnis, tāpēc daudz dzelzs liek glazūrai notecēt |
-| Varš                   | 1–3%                                      | Oksidējošā apdedzināšanā zaļa vai tirkīza, reducējošā sarkana. No glazūras var izskaloties metāli                                                  |
-| Hroms                  | No mazāk par 0,5% līdz 2% (avoti atšķiras) | Zaļa; brūna, ja pamatglazūrā ir cinks, rozā ar alvu                                                                                                 |
-| Mangāns                | 2–10%                                     | Brūni un violeti toņi                                                                                                                               |
-| Rutils                 | Apmēram 2–5%                              | Raiba, plankumaina krāsa; virs apmēram 5% raupja vai matēta                                                                                         |
-| Rūpnieciskie pigmenti  | 2–12%                                     | 2–4% gaišiem toņiem, 5–8% vidējiem toņiem, 10–12% spilgtām krāsām                                                                                    |
+| Krāsviela             | Parastais sākuma daudzums                  | Krāsas un piezīmes                                                                                                                                                |
+| --------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalts               | 0,1–2% (avoti atšķiras)                    | Zila, un ļoti spēcīga; violetāka, ja pamatglazūrā ir magnijs                                                                                                      |
+| Dzelzs                | 0,5–10%                                    | Oksidējošā apdedzināšanā brūni, iedzelteni brūni un sarkani toņi; reducējošā ½–2% dod seladonu un 5–10% tenmoku. Kusnis, tāpēc daudz dzelzs liek glazūrai notecēt |
+| Varš                  | 1–3%                                       | Oksidējošā apdedzināšanā zaļa vai tirkīza, reducējošā sarkana. No glazūras var izskaloties metāli                                                                 |
+| Hroms                 | No mazāk par 0,5% līdz 2% (avoti atšķiras) | Zaļa; brūna, ja pamatglazūrā ir cinks, rozā ar alvu                                                                                                               |
+| Mangāns               | 2–10%                                      | Brūni un violeti toņi                                                                                                                                             |
+| Rutils                | Apmēram 2–5%                               | Raiba, plankumaina krāsa; virs apmēram 5% raupja vai matēta                                                                                                       |
+| Rūpnieciskie pigmenti | 2–12%                                      | 2–4% gaišiem toņiem, 5–8% vidējiem toņiem, 10–12% spilgtām krāsām                                                                                                 |
 
 Kobalta un hroma daudzumi tiešām ir strīdīgi. Glazy saka, ka zilai krāsai pietiek ar 0,1% kobalta; Glendale Community College norāda ½–2% vai ½–3% atkarībā no atmosfēras; Bērdija Būna (Birdie Boone) žurnālā Pottery Making Illustrated – 3% vai mazāk. Hromam Būna norāda mazāk par 0,5%, bet Glendale – 2–3%. Drošākais ceļš ir sākt ar mazu daudzumu un izveidot **provju rindu**{{en: line blend}}: provju plāksnīšu rindu, kurā vienas sastāvdaļas daudzums pakāpeniski pieaug no maza līdz lielam.
 
@@ -212,11 +212,11 @@ Pamatglazūra maina krāsu. Spīdīga, caurspīdīga pamatglazūra dod visspilgt
 
 Table: Blāvotāji
 
-| Blāvotājs                             | Parastais daudzums             | Piezīmes                                                                                                                         |
-| ------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| Cirkons (Zircopax, Superpax, Ultrox)  | 10–15% pilnīgai necaurspīdībai | Lētākā izvēle; zīmoli ir cirkonija silikāts, samalts dažādā smalkumā, un smalkākas šķiras ir spēcīgākas                           |
-| Alvas oksīds                          | Apmēram 5–7% (mūsu aplēse)     | Dārgs; augstā temperatūrā vājāks, un Digitalfire ziņo, ka 4% nedeva nekādu necaurspīdību caurspīdīgā konusa 10 reducējošā glazūrā |
-| Titāna dioksīds                       | Apmēram 5% (mūsu aplēse)       | Zīdaina, gaismcaurlaidīga necaurspīdība; apmēram 5% var padarīt virsmu raibu, un daudz vairāk bieži dod matētu virsmu ar kristāliem |
+| Blāvotājs                            | Parastais daudzums             | Piezīmes                                                                                                                            |
+| ------------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Cirkons (Zircopax, Superpax, Ultrox) | 10–15% pilnīgai necaurspīdībai | Lētākā izvēle; zīmoli ir cirkonija silikāts, samalts dažādā smalkumā, un smalkākas šķiras ir spēcīgākas                             |
+| Alvas oksīds                         | Apmēram 5–7% (mūsu aplēse)     | Dārgs; augstā temperatūrā vājāks, un Digitalfire ziņo, ka 4% nedeva nekādu necaurspīdību caurspīdīgā konusa 10 reducējošā glazūrā   |
+| Titāna dioksīds                      | Apmēram 5% (mūsu aplēse)       | Zīdaina, gaismcaurlaidīga necaurspīdība; apmēram 5% var padarīt virsmu raibu, un daudz vairāk bieži dod matētu virsmu ar kristāliem |
 
 ## Glazūras un masas saderība un defekti {#fit-and-defects}
 
@@ -244,13 +244,13 @@ Mainiet vienu lietu vienā reizē un saglabājiet savas provju plāksnītes.
 Table: Biežākie glazūras defekti, to parastie cēloņi un pirmie risinājumi
 Label: Biežākie glazūras defekti
 
-| Defekts           | Izskats                                            | Biežākie cēloņi                                                                                                                                      | Pirmie risinājumi                                                                               |
-| ----------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Savilkšanās       | Glazūra savelkas pilienos, atstājot kailu mālu      | Putekļains vai taukains biskvīts; bieza kārta ar daudz māla, kas žūstot saplaisāja; cinks, cirkons vai alva                                         | Notīriet biskvītu; uzklājiet plānāku kārtu; kalcinējiet daļu māla; pievienojiet saistvielu, piemēram, CMC |
-| Adatas dūrieni    | Nelieli caurumiņi vai iedobes                      | Gāze no masas vai glazūras, kas neaizplūda; nepietiekami apdedzināta vai stigra glazūra                                                              | Noturiet maksimālajā temperatūrā apmēram pusstundu; uzklājiet plānāku kārtu; mazāk cinka vai rutila |
-| Pūšļainums        | Krāteri ar asām malām                              | Parasti pārdedzināšana; ļoti biezas kārtas; gaistoši kušņi virs apmēram {{2192 °F; 1200 °C}}                                                         | Apdedziniet vēsāk; uzklājiet plānāku kārtu. Asas malas padara lietošanas traukus nedrošus        |
-| Notecēšana        | Glazūra notek uz plaukta                           | Pārāk maz alumīnija oksīda; pārāk bieza kārta, piemēram, kur apliešanas pārklājas; daudz dzelzs                                                      | Uzklājiet plānāku kārtu; pievienojiet alumīnija oksīdu; turiet glazūru krietni virs pamatnes    |
-| Atdzišanas plaisas | Plaisas izstrādājumā no atdzišanas vai sasilšanas  | Ātra atdzesēšana caur kvarca pārvērtību, {{1063 °F; 573 °C}}, vai kristobalīta pārvērtību, apmēram {{428 °F; 220 °C}}; nevienmērīgas sienas; slikta saderība | Apdedziniet lēni caur abām, sildot un dzesējot; vienmērīgas sienas                       |
+| Defekts            | Izskats                                           | Biežākie cēloņi                                                                                                                                              | Pirmie risinājumi                                                                                         |
+| ------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Savilkšanās        | Glazūra savelkas pilienos, atstājot kailu mālu    | Putekļains vai taukains biskvīts; bieza kārta ar daudz māla, kas žūstot saplaisāja; cinks, cirkons vai alva                                                  | Notīriet biskvītu; uzklājiet plānāku kārtu; kalcinējiet daļu māla; pievienojiet saistvielu, piemēram, CMC |
+| Adatas dūrieni     | Nelieli caurumiņi vai iedobes                     | Gāze no masas vai glazūras, kas neaizplūda; nepietiekami apdedzināta vai stigra glazūra                                                                      | Noturiet maksimālajā temperatūrā apmēram pusstundu; uzklājiet plānāku kārtu; mazāk cinka vai rutila       |
+| Pūšļainums         | Krāteri ar asām malām                             | Parasti pārdedzināšana; ļoti biezas kārtas; gaistoši kušņi virs apmēram {{2192 °F; 1200 °C}}                                                                 | Apdedziniet vēsāk; uzklājiet plānāku kārtu. Asas malas padara lietošanas traukus nedrošus                 |
+| Notecēšana         | Glazūra notek uz plaukta                          | Pārāk maz alumīnija oksīda; pārāk bieza kārta, piemēram, kur apliešanas pārklājas; daudz dzelzs                                                              | Uzklājiet plānāku kārtu; pievienojiet alumīnija oksīdu; turiet glazūru krietni virs pamatnes              |
+| Atdzišanas plaisas | Plaisas izstrādājumā no atdzišanas vai sasilšanas | Ātra atdzesēšana caur kvarca pārvērtību, {{1063 °F; 573 °C}}, vai kristobalīta pārvērtību, apmēram {{428 °F; 220 °C}}; nevienmērīgas sienas; slikta saderība | Apdedziniet lēni caur abām, sildot un dzesējot; vienmērīgas sienas                                        |
 
 ## Drošība saskarē ar pārtiku {#food-safety}
 

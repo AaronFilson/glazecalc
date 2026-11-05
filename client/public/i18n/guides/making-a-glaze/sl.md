@@ -157,11 +157,11 @@ Viri priporočajo različne mrežice. Zakin seje dvakrat skozi 50 ali 80 mesh. D
 Table: Katero sito uporabiti
 Label: Mrežica sita
 
-| Glazura                                               | Sito                              |
-| ----------------------------------------------------- | --------------------------------- |
-| Večina glazur                                         | Dvakrat skozi 80 mesh             |
-| Glazure z barvili, kot sta kobalt ali železo          | 100 do 120 mesh                   |
-| Pepelne glazure in druge z grobimi surovinami         | 60 do 80 mesh                     |
+| Glazura                                       | Sito                  |
+| --------------------------------------------- | --------------------- |
+| Večina glazur                                 | Dvakrat skozi 80 mesh |
+| Glazure z barvili, kot sta kobalt ali železo  | 100 do 120 mesh       |
+| Pepelne glazure in druge z grobimi surovinami | 60 do 80 mesh         |
 
 ## Relativna gostota {#specific-gravity}
 
@@ -183,11 +183,11 @@ Viri se ne ujemajo, najbolj pri nanosu s čopičem in brizganju, kjer britanski 
 Table: Ciljne relativne gostote, kjer se viri ne ujemajo
 Label: Ciljne relativne gostote
 
-| Uporaba            | Digitalfire in Glazy                                                                                                                                          | Potclays (Združeno kraljestvo)                  | Varno izhodišče                                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------- |
-| Namakanje          | {{SG 1.40}} (za 5-sekundno namakanje) do {{SG 1.50}} (za 1-sekundno namakanje); doma mešane glazure, ki so zgoščene, so najboljše pri {{SG 1.43–1.45}}         | Prozorne {{SG 1.46–1.48}}; barvne {{SG 1.61}}   | {{SG 1.45}}; razredčite na {{SG 1.43}} in zgostite, če kaplja         |
-| Nanos s čopičem    | {{SG 1.25}} (redka prozorna) do {{SG 1.55}} (temni detajli)                                                                                                   | {{SG 1.71–1.81}}                                | Sledite izdelku; uporabite CMC ali medij za nanašanje s čopičem       |
-| Brizganje          | Brez vrednosti; Hopper, ki piše za Ceramic Arts Network, pravi veliko redkejša, z deflokulantom (dodatkom, ki naredi glazurno suspenzijo bolj tekočo)          | {{SG 1.71}}                                     | Ni zanesljivega števila; brizgajte samo v komori za glaziranje        |
+| Uporaba         | Digitalfire in Glazy                                                                                                                                   | Potclays (Združeno kraljestvo)                | Varno izhodišče                                                 |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- | --------------------------------------------------------------- |
+| Namakanje       | {{SG 1.40}} (za 5-sekundno namakanje) do {{SG 1.50}} (za 1-sekundno namakanje); doma mešane glazure, ki so zgoščene, so najboljše pri {{SG 1.43–1.45}} | Prozorne {{SG 1.46–1.48}}; barvne {{SG 1.61}} | {{SG 1.45}}; razredčite na {{SG 1.43}} in zgostite, če kaplja   |
+| Nanos s čopičem | {{SG 1.25}} (redka prozorna) do {{SG 1.55}} (temni detajli)                                                                                            | {{SG 1.71–1.81}}                              | Sledite izdelku; uporabite CMC ali medij za nanašanje s čopičem |
+| Brizganje       | Brez vrednosti; Hopper, ki piše za Ceramic Arts Network, pravi veliko redkejša, z deflokulantom (dodatkom, ki naredi glazurno suspenzijo bolj tekočo)  | {{SG 1.71}}                                   | Ni zanesljivega števila; brizgajte samo v komori za glaziranje  |
 
 Za preverjanje glazure za namakanje na oko AMACO namaka 5 sekund in išče plast, debelo približno kot ameriški kovanec dime. Digitalfire za preverbo žge ploščice, namočene 5 sekund.
 
@@ -198,8 +198,8 @@ Spodnja preglednica je naš izračun, ne izračun vira. Predpostavlja, da imajo 
 Table: Voda za ciljno relativno gostoto (naša ocena)
 Label: Voda za ciljno relativno gostoto
 
-| Cilj        | Na 100 g prahu   |    Na kilogram |                  Na funt |
-| ----------- | ---------------: | -------------: | -----------------------: |
+| Cilj        |   Na 100 g prahu |       Na kilogram |                      Na funt |
+| ----------- | ---------------: | ----------------: | ---------------------------: |
 | {{SG 1.40}} | približno 115 mL | približno 1150 mL | približno 18 ameriških fl oz |
 | {{SG 1.45}} |  približno 98 mL |  približno 980 mL | približno 15 ameriških fl oz |
 | {{SG 1.50}} |  približno 85 mL |  približno 850 mL | približno 13 ameriških fl oz |
@@ -286,13 +286,13 @@ Willers cilj dobro opiše: »dovolj podatkov, da lahko rezultate, ki ste jih odk
 Table: Kaj zapisati za vsako mešanico glazure (naša predloga)
 Label: Predloga zapiska
 
-| Del          | Kaj zapisati                                                                                                                                                                                                                                                          |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept       | Recept in njegova različica; blagovne znamke surovin in številke šarž; morebitne zamenjave                                                                                                                                                                            |
-| Mešanje      | Datum; velikost mešanice; dodana voda in njena vrsta (iz pipe, iz reverzne osmoze ali destilirana); relativna gostota po mešanju in končna; masa končne glazurne suspenzije, za relativno gostoto suhe glazure; dodana grenka sol, CMC in bentonit; mrežica sita in število sejanj |
-| Nanašanje    | Glinena masa; stožec biskvitnega žganja; namakanje, nanos s čopičem ali polivanje; čas namakanja ali število plasti; debelina suhe plasti                                                                                                                              |
-| Žganje       | Peč in položaj na šamotni plošči; program žganja z rampami, zadržanji in hlajenjem; atmosfera (oksidacija ali redukcija); kaj je pokazal kontrolni stožec, ne le, na kaj je bila nastavljena peč                                                                       |
-| Rezultat     | Površina in barva; morebitno odtekanje, lasaste razpoke ali luknjice; fotografije spredaj, zadaj in s strani; oznaka ploščice                                                                                                                                         |
+| Del       | Kaj zapisati                                                                                                                                                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept    | Recept in njegova različica; blagovne znamke surovin in številke šarž; morebitne zamenjave                                                                                                                                                                                         |
+| Mešanje   | Datum; velikost mešanice; dodana voda in njena vrsta (iz pipe, iz reverzne osmoze ali destilirana); relativna gostota po mešanju in končna; masa končne glazurne suspenzije, za relativno gostoto suhe glazure; dodana grenka sol, CMC in bentonit; mrežica sita in število sejanj |
+| Nanašanje | Glinena masa; stožec biskvitnega žganja; namakanje, nanos s čopičem ali polivanje; čas namakanja ali število plasti; debelina suhe plasti                                                                                                                                          |
+| Žganje    | Peč in položaj na šamotni plošči; program žganja z rampami, zadržanji in hlajenjem; atmosfera (oksidacija ali redukcija); kaj je pokazal kontrolni stožec, ne le, na kaj je bila nastavljena peč                                                                                   |
+| Rezultat  | Površina in barva; morebitno odtekanje, lasaste razpoke ali luknjice; fotografije spredaj, zadaj in s strani; oznaka ploščice                                                                                                                                                      |
 
 > [!NOTE]
 > V aplikaciji Glazecalc shranjen [recept](/recipe) hrani sam recept. [Dnevnik žganja](/firing) zapiše vsako žganje: peč, datum, čase, temperature, stožce in opombe. [Opombe](/notes) hranijo vse drugo, na primer zgornji zapisek o mešanici in to, kar je pokazala vsaka ploščica.

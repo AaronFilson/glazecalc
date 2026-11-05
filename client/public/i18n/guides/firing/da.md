@@ -473,17 +473,17 @@ Glasurbrændingen{{en: glaze firing}} smelter glasuren til glas på det forglød
 Table: Forudindstillede glasurprogrammer fra L&L og Bartlett
 Label: Glasurprogrammer
 
-| Segment                 |                                 Stig til |             Slow Glaze |             Fast Glaze |
-| ----------------------- | ---------------------------------------: | ---------------------: | ---------------------: |
-| 1                       |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |         Intet eget trin |
+| Segment                 |                                  Stig til |             Slow Glaze |             Fast Glaze |
+| ----------------------- | ----------------------------------------: | ---------------------: | ---------------------: |
+| 1                       |                        {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |        Intet eget trin |
 | 2                       | {{250 °F; 139 °C}} under sluttemperaturen | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                       |                         Sluttemperaturen |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Opvarmningstid, tom ovn |                                          |       Ca. 6½–7½ timer |          Ca. 3–4 timer |
+| 3                       |                          Sluttemperaturen |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Opvarmningstid, tom ovn |                                           |        Ca. 6½–7½ timer |          Ca. 3–4 timer |
 
 Table: Hvor segment 2 og 3 slutter, efter kegle (L&L og Bartlett)
 Label: Programmernes mål
 
-| Kegle |  Segment 2 slutter |     Sluttemperatur |
+| Kegle |    Segment 2 slutter |       Sluttemperatur |
 | ----- | -------------------: | -------------------: |
 | 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
@@ -498,12 +498,12 @@ Glasurer til mellemtemperatur får undertiden **nålestik**{{en: pinholes}} (sm�
 Table: Digitalfire PLC6DS, sænk og hold til kegle 6
 Label: Digitalfire PLC6DS
 
-| Trin |                            Hastighed |                  Mål | Holdetid                                              |
-| ---- | -----------------------------------: | -------------------: | ----------------------------------------------------- |
-| 1    |                {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutter                                           |
-| 2    |               {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Valgfrit 30 minutter, for at fjerne skyer af bobler   |
-| 3    |                {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutter; længere i store ovne                     |
-| 4    | Ned med {{900 °F/h; 500 °C/h}}       | {{2100 °F; 1148 °C}} | 30 minutter                                           |
+| Trin |                      Hastighed |                  Mål | Holdetid                                            |
+| ---- | -----------------------------: | -------------------: | --------------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutter                                         |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Valgfrit 30 minutter, for at fjerne skyer af bobler |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutter; længere i store ovne                   |
+| 4    | Ned med {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutter                                         |
 
 PLC6DS tager ca. 9 timer og 36 minutter. Til mere letflydende glasurer sænker Digitalfire i stedet ca. {{200 °F; 111 °C}}; at sænke for meget »risikerer krystallisering under holdetiden«. Sluttemperaturen på {{2200 °F; 1204 °C}} ligger under tabellens {{2232 °F; 1222 °C}} for kegle 6; Digitalfire oplyser, at de fleste ovne når kegle 6 ved ca. {{2200 °F; 1204 °C}}. Kontrollér det med et keglesæt i egen ovn.
 
@@ -514,11 +514,11 @@ PLC6DS tager ca. 9 timer og 36 minutter. Til mere letflydende glasurer sænker D
 Table: L&L »User 6«: styret afkøling til glasurer til kegle 6
 Label: L&L styret afkøling
 
-| Trin |                         Hastighed |                  Mål |
-| ---- | --------------------------------: | -------------------: |
-| 1    |                 Fuld fart op      | {{2232 °F; 1222 °C}} |
-| 2    |                 Fuld fart ned     | {{1900 °F; 1038 °C}} |
-| 3    |   Ned med {{150 °F/h; 83 °C/h}}   |  {{1500 °F; 816 °C}} |
+| Trin |                     Hastighed |                  Mål |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                  Fuld fart op | {{2232 °F; 1222 °C}} |
+| 2    |                 Fuld fart ned | {{1900 °F; 1038 °C}} |
+| 3    | Ned med {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Skutts styringer har på samme måde en forvarmning og en mulighed for afkøling i ét trin.
 

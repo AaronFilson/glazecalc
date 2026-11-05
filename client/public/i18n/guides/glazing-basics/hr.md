@@ -43,11 +43,11 @@ Prvo, hladnije pečenje je **biskvitno pečenje**{{en: bisque}} (u Ujedinjenom K
 Table: Kako biskvit mijenja glaziranje (Digitalfire)
 Label: Kako biskvit mijenja glaziranje
 
-| Biskvit                                      | Što se događa                                                       |
-| -------------------------------------------- | ------------------------------------------------------------------- |
-| Nedovoljno pečen, vrlo upija                 | Glazura se nanese predebelo, zatim puca i povlači se                |
-| Prepečen, gust                               | Uranjanje i sušenje traju dulje                                     |
-| Pečen toplije ili dulje zadržan na vrhu      | Sada izgori više plina, pa ga kasnije manje izlazi kroz glazuru     |
+| Biskvit                                 | Što se događa                                                   |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Nedovoljno pečen, vrlo upija            | Glazura se nanese predebelo, zatim puca i povlači se            |
+| Prepečen, gust                          | Uranjanje i sušenje traju dulje                                 |
+| Pečen toplije ili dulje zadržan na vrhu | Sada izgori više plina, pa ga kasnije manje izlazi kroz glazuru |
 
 Potclays, britanski dobavljač, opisuje biskvitno pečenje na oko {{1000 °C; 1832 °F}}, otprilike stožac 06. Kad te izvore čitamo zajedno, za prvo biskvitno pečenje predlažemo stožac 06 – 04: {{1828–1945 °F; 998–1063 °C}} pri Ortonovoj srednjoj brzini.
 
@@ -64,11 +64,11 @@ Brojevi stožaca idu od 022 do 42. Početna nula označava hladniji niz, u kojem
 Table: Područja pečenja: Ortonovi samostojeći stošci pri {{108 °F; 60 °C}} na sat
 Label: Područja pečenja
 
-| Područje             | Stošci  |            °F |           °C | Za što se koristi                       |
-| -------------------- | ------- | ------------: | -----------: | --------------------------------------- |
-| Niske temperature    | 06 – 04 | 1828 – 1945   |  998 – 1063  | Glazure za zemljanu keramiku; biskvit   |
-| Srednje temperature  | 5 – 6   | 2167 – 2232   | 1186 – 1222  | Kamenina i porculan                     |
-| Visoke temperature   | 9 – 10  | 2300 – 2345   | 1260 – 1285  | Kamenina i porculan                     |
+| Područje            | Stošci  |          °F |          °C | Za što se koristi                     |
+| ------------------- | ------- | ----------: | ----------: | ------------------------------------- |
+| Niske temperature   | 06 – 04 | 1828 – 1945 |  998 – 1063 | Glazure za zemljanu keramiku; biskvit |
+| Srednje temperature | 5 – 6   | 2167 – 2232 | 1186 – 1222 | Kamenina i porculan                   |
+| Visoke temperature  | 9 – 10  | 2300 – 2345 | 1260 – 1285 | Kamenina i porculan                   |
 
 > [!NOTE]
 > Pečenja imenujte i programirajte prema stošcu, a temperature smatrajte približnima. **Kontrolni stožac**{{en: witness cone}} na ploči među predmetima ili **skup od tri kontrolna stošca**{{en: cone pack}} (vodeći, ciljni i zaštitni stožac) pokazuje toplinski učinak koji su vaši predmeti zaista primili.
@@ -84,12 +84,12 @@ Izvan Sjeverne Amerike dobavljači često navode °C, a ne stožac. Hermann Sege
 Table: Od recepta do Segerove formule: riješeni primjer baze Glazy
 Label: Od recepta do Segerove formule
 
-| Korak               | Što se događa                                                                                                                              | U primjeru                                                                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Recept           | Sirovine prema masi, preračunane na 100                                                                                                    | Feldspat 40 %, uz ostale                                                                                                                        |
-| 2. Oksidna analiza  | Kao deklaracija o hranjivoj vrijednosti: oksidi svake sirovine zbrajaju se kao maseni postoci, a plinovi se izostavljaju                     | Feldspat ima 64,8 % silicijeva dioksida, pa njegovih 40 % donosi 25,9 % SiO₂. Pečena glazura ima 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
-| 3. Molovi           | Mase postaju **molovi**{{en: moles}}, brojevi molekula, jer „grami mogu zavarati jer su neki oksidi teži od drugih”                         | 60,1 g SiO₂ je jedan mol, pa je 67,4 g oko 1,12 mola                                                                                             |
-| 4. Svođenje na 1    | Sve se dijeli zbrojem topitelja, pa topitelji zajedno daju 1                                                                               | Topitelji zajedno daju 0,303; dijeljenjem se dobiva K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                    |
+| Korak              | Što se događa                                                                                                            | U primjeru                                                                                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Recept          | Sirovine prema masi, preračunane na 100                                                                                  | Feldspat 40 %, uz ostale                                                                                                                          |
+| 2. Oksidna analiza | Kao deklaracija o hranjivoj vrijednosti: oksidi svake sirovine zbrajaju se kao maseni postoci, a plinovi se izostavljaju | Feldspat ima 64,8 % silicijeva dioksida, pa njegovih 40 % donosi 25,9 % SiO₂. Pečena glazura ima 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
+| 3. Molovi          | Mase postaju **molovi**{{en: moles}}, brojevi molekula, jer „grami mogu zavarati jer su neki oksidi teži od drugih”      | 60,1 g SiO₂ je jedan mol, pa je 67,4 g oko 1,12 mola                                                                                              |
+| 4. Svođenje na 1   | Sve se dijeli zbrojem topitelja, pa topitelji zajedno daju 1                                                             | Topitelji zajedno daju 0,303; dijeljenjem se dobiva K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                     |
 
 [Stranica recepta](/recipe) u aplikaciji Glazecalc obavlja sva četiri koraka dok tipkate i rezultat prikazuje u tri stupca: topitelji (R₂O i RO) koji zajedno daju 1; stabilizatori (R₂O₃: glinica, a često se ovamo stavlja i bor); i staklotvorci (RO₂: silicijev dioksid). „Svođenje na 1 samo je alat za preračunavanje”, kaže Glazy: dva recepta od različitih sirovina, ali s istom Segerovom formulom „ponašaju se gotovo jednako nakon pečenja”. Dakle, ta 1 je zajedničko mjerilo, a ne količina koju važete. Digitalfire dodaje da metoda „ne radi tako dobro na nižim temperaturama”, gdje bor nije običan topitelj, i da su Segerove formule „usporedne i najbolje ih je promatrati u kontekstu”. **Usporedi** stavlja formule dvaju recepata jednu uz drugu, oksid po oksid.
 
@@ -100,11 +100,11 @@ Najkorisniji pojedinačni broj jest **omjer silicijeva dioksida i glinice**{{en:
 Table: Što omjer silicijeva dioksida i glinice upućuje (Glazy)
 Label: Omjer SiO₂ i Al₂O₃
 
-|   Omjer | Kako ga čita Glazy                                          |
-| ------: | ----------------------------------------------------------- |
-|  Oko 9  | Upućuje na sjajnu talinu, uz dovoljno topline               |
-|   5 – 7 | Uobičajeno za mnoge stabilne glazure za kameninu            |
-|   3 – 5 | Može biti mat ili nedovoljno pečena                         |
+| Omjer | Kako ga čita Glazy                               |
+| ----: | ------------------------------------------------ |
+| Oko 9 | Upućuje na sjajnu talinu, uz dovoljno topline    |
+| 5 – 7 | Uobičajeno za mnoge stabilne glazure za kameninu |
+| 3 – 5 | Može biti mat ili nedovoljno pečena              |
 
 Glazy ne kaže za koji stožac te brojke vrijede. Čitajte ih kao grubu smjernicu za glazure za kameninu, otprilike stožac 6 – 10. Digitalfire kaže da je glazura s omjerom iznad otprilike 8 vjerojatno sjajna, ali glazura s borom može biti sjajna pri 8 ili manje, a glazura za niske temperature čak i pri 6. Omjer 5 – 7 sam po sebi ne predviđa ni sjaj ni mat: topitelji, bor i stožac pomiču tu granicu. Glazy kao uobičajeni omjer topitelja za stabilne glazure navodi 0,2 R₂O uz 0,8 RO, do 0,3 R₂O uz 0,7 RO. Više alkalija čini talinu tekućijom i povećava njezino toplinsko rastezanje, a time i opasnost od pucanja glazure.
 
@@ -115,13 +115,13 @@ Glazy ne kaže za koji stožac te brojke vrijede. Čitajte ih kao grubu smjernic
 Table: Uobičajeni gubitak žarenjem (Digitalfire)
 Label: Gubitak žarenjem
 
-| Sirovina                                | Uobičajeni LOI                                                                          |
-| --------------------------------------- | --------------------------------------------------------------------------------------- |
-| Kreda (kalcijev karbonat), dolomit      | Više od 40 %, uglavnom ugljikov dioksid: 100 g kalcijeva karbonata otpusti oko 44 g     |
-| Litijev karbonat                        | Oko 60 %                                                                                |
-| Barijev karbonat, Gerstley Borate       | Više od 20 %                                                                            |
-| Kaolin                                  | Oko 12 – 14 %, uglavnom voda vezana u njegovim kristalima                               |
-| Feldspati                               | Manje od 1 %                                                                            |
+| Sirovina                           | Uobičajeni LOI                                                                      |
+| ---------------------------------- | ----------------------------------------------------------------------------------- |
+| Kreda (kalcijev karbonat), dolomit | Više od 40 %, uglavnom ugljikov dioksid: 100 g kalcijeva karbonata otpusti oko 44 g |
+| Litijev karbonat                   | Oko 60 %                                                                            |
+| Barijev karbonat, Gerstley Borate  | Više od 20 %                                                                        |
+| Kaolin                             | Oko 12 – 14 %, uglavnom voda vezana u njegovim kristalima                           |
+| Feldspati                          | Manje od 1 %                                                                        |
 
 Plin koji izlazi nakon što se glazura počne taliti mora proći kroz nju i uzrokuje, riječima baze Digitalfire, „mjehuriće, mjehure, sitne rupice, povlačenje”. U jednoj probi baze Digitalfire talk je otpuštao plin sve do otprilike {{1650 °F; 899 °C}}. Pomažu frite, **kalcinirane**{{en: calcined}} sirovine (prethodno zagrijane da se iz njih istjeraju plinovi) i promjene pečenja.
 
@@ -154,21 +154,21 @@ Sjevernoameričke frite nose naziv proizvođača i broj: Ferro Frit 3134 (Ferro 
 Table: Uobičajene sirovine za glazure i što daju
 Label: Uobičajene sirovine za glazure
 
-| Sirovina (drugi nazivi)                                 | Daje                   | Napomene                                                                                                                                                               |
-| ------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarc (flint, quartz)                                   | SiO₂                   | Za glazure upotrijebite 325 mesh, vrlo fino mljeven                                                                                                                    |
-| Kaolin (u Ujedinjenom Kraljevstvu China clay)           | Al₂O₃, SiO₂            | Glavni izvor glinice; pomaže i da se glazura ne taloži                                                                                                                 |
-| Ball clay                                               | Al₂O₃, SiO₂            | Plastičnija od kaolina, s više željeza i organske tvari                                                                                                                |
+| Sirovina (drugi nazivi)                                   | Daje                   | Napomene                                                                                                                                                                                     |
+| --------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kvarc (flint, quartz)                                     | SiO₂                   | Za glazure upotrijebite 325 mesh, vrlo fino mljeven                                                                                                                                          |
+| Kaolin (u Ujedinjenom Kraljevstvu China clay)             | Al₂O₃, SiO₂            | Glavni izvor glinice; pomaže i da se glazura ne taloži                                                                                                                                       |
+| Ball clay                                                 | Al₂O₃, SiO₂            | Plastičnija od kaolina, s više željeza i organske tvari                                                                                                                                      |
 | Kalijski feldspat, natrijski feldspat, nefelinski sijenit | K₂O, Na₂O, Al₂O₃, SiO₂ | Topitelji s vlastitom glinicom i silicijevim dioksidom. Nefelinski sijenit jak je topitelj za niske i srednje temperature. Običan „feldspat” u starom receptu može značiti bilo koji od njih |
-| Kreda (kalcijev karbonat)                               | CaO                    | Glavni kalcijev topitelj; otpušta ugljikov dioksid                                                                                                                     |
-| Volastonit                                              | CaO, SiO₂              | Kalcij bez ugljikova dioksida                                                                                                                                          |
-| Dolomit, talk                                           | MgO, s CaO ili SiO₂    | Svilenkaste mat površine; manje toplinsko rastezanje                                                                                                                   |
-| Cinkov oksid                                            | ZnO                    | Sjaj i kristali; previše može uzrokovati povlačenje                                                                                                                    |
-| Borne frite, Gerstley Borate, kolemanit                 | B₂O₃                   | Nužni od stošca 06 do stošca 6; frite su „ujednačenije i manje topljive od nefritiranih borata”                                                                         |
-| Litijev karbonat                                        | Li₂O                   | Topitelj niskog toplinskog rastezanja; skup, pa se koristi štedljivo                                                                                                   |
-| Stroncijev karbonat                                     | SrO                    | Manje otrovna zamjena za barij                                                                                                                                         |
-| Barijev karbonat                                        | BaO                    | Otrovan u sirovom obliku; glazure s mnogo barija mogu otpuštati metal                                                                                                  |
-| Bentonit                                                | Suspenzija             | Vrlo fina glina, obično 1 – 2 %, da se glazura ne taloži. Više od 3 % može uzrokovati pucanje glazure dok se suši                                                    |
+| Kreda (kalcijev karbonat)                                 | CaO                    | Glavni kalcijev topitelj; otpušta ugljikov dioksid                                                                                                                                           |
+| Volastonit                                                | CaO, SiO₂              | Kalcij bez ugljikova dioksida                                                                                                                                                                |
+| Dolomit, talk                                             | MgO, s CaO ili SiO₂    | Svilenkaste mat površine; manje toplinsko rastezanje                                                                                                                                         |
+| Cinkov oksid                                              | ZnO                    | Sjaj i kristali; previše može uzrokovati povlačenje                                                                                                                                          |
+| Borne frite, Gerstley Borate, kolemanit                   | B₂O₃                   | Nužni od stošca 06 do stošca 6; frite su „ujednačenije i manje topljive od nefritiranih borata”                                                                                              |
+| Litijev karbonat                                          | Li₂O                   | Topitelj niskog toplinskog rastezanja; skup, pa se koristi štedljivo                                                                                                                         |
+| Stroncijev karbonat                                       | SrO                    | Manje otrovna zamjena za barij                                                                                                                                                               |
+| Barijev karbonat                                          | BaO                    | Otrovan u sirovom obliku; glazure s mnogo barija mogu otpuštati metal                                                                                                                        |
+| Bentonit                                                  | Suspenzija             | Vrlo fina glina, obično 1 – 2 %, da se glazura ne taloži. Više od 3 % može uzrokovati pucanje glazure dok se suši                                                                            |
 
 > [!WARNING]
 > Sirovine za glazure fini su prahovi. Prašina silicijeva dioksida oštećuje pluća, isprva bez simptoma, a neke sirovine, poput barijeva karbonata i litijeva karbonata, otrovne su ako se progutaju. S prahovima postupajte nježno, čistite mokrim postupkom i dok radite sa suhim sirovinama nosite zaštitnu masku koja dobro prianja. Vodiči [Sigurno miješanje i ventilacija](/guides/safe-mixing) i [Ne otrujte svoju obitelj](/guides/home-safety) objašnjavaju kako.
@@ -192,15 +192,15 @@ I sirovine se mijenjaju. Američki geološki zavod (US Geological Survey) navodi
 Table: Uobičajena bojila, kao postotak osnove
 Label: Uobičajena bojila
 
-| Bojilo                 | Uobičajena početna količina            | Boje i napomene                                                                                                                                  |
-| ---------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Kobalt                 | 0,1 – 2 % (izvori se ne slažu)         | Plava, i vrlo jaka; prema ljubičastoj kad osnova sadrži magnezij                                                                                  |
-| Željezo                | 0,5 – 10 %                             | Smeđe, žutosmeđe i crvene u oksidaciji; u redukciji ½ – 2 % daje seladon, a 5 – 10 % tenmoku. Topitelj je, pa s mnogo željeza glazura curi        |
-| Bakar                  | 1 – 3 %                                | Zelena ili tirkizna u oksidaciji, crvena u redukciji. Može uzrokovati da glazura otpušta metal                                                    |
-| Krom                   | Od manje od 0,5 % do 2 % (izvori se ne slažu) | Zelena; smeđa ako osnova sadrži cink, ružičasta s kositrom                                                                                 |
-| Mangan                 | 2 – 10 %                               | Smeđe i ljubičaste                                                                                                                               |
-| Rutil                  | Oko 2 – 5 %                            | Mrljasta, šarena boja; iznad otprilike 5 % hrapava ili mat                                                                                        |
-| Komercijalni pigmenti  | 2 – 12 %                               | 2 – 4 % za nijanse, 5 – 8 % za tonove, 10 – 12 % za jake boje                                                                                     |
+| Bojilo                | Uobičajena početna količina                   | Boje i napomene                                                                                                                            |
+| --------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Kobalt                | 0,1 – 2 % (izvori se ne slažu)                | Plava, i vrlo jaka; prema ljubičastoj kad osnova sadrži magnezij                                                                           |
+| Željezo               | 0,5 – 10 %                                    | Smeđe, žutosmeđe i crvene u oksidaciji; u redukciji ½ – 2 % daje seladon, a 5 – 10 % tenmoku. Topitelj je, pa s mnogo željeza glazura curi |
+| Bakar                 | 1 – 3 %                                       | Zelena ili tirkizna u oksidaciji, crvena u redukciji. Može uzrokovati da glazura otpušta metal                                             |
+| Krom                  | Od manje od 0,5 % do 2 % (izvori se ne slažu) | Zelena; smeđa ako osnova sadrži cink, ružičasta s kositrom                                                                                 |
+| Mangan                | 2 – 10 %                                      | Smeđe i ljubičaste                                                                                                                         |
+| Rutil                 | Oko 2 – 5 %                                   | Mrljasta, šarena boja; iznad otprilike 5 % hrapava ili mat                                                                                 |
+| Komercijalni pigmenti | 2 – 12 %                                      | 2 – 4 % za nijanse, 5 – 8 % za tonove, 10 – 12 % za jake boje                                                                              |
 
 O količinama kobalta i kroma zaista se raspravlja. Glazy kaže da je 0,1 % kobalta dovoljno za plavu; Glendale Community College navodi ½ – 2 % ili ½ – 3 %, ovisno o atmosferi; Birdie Boone, u časopisu Pottery Making Illustrated, kaže 3 % ili manje. Za krom Boone kaže manje od 0,5 %, a Glendale 2 – 3 %. Siguran je put početi s malo i napraviti **niz proba**{{en: line blend}}: red probnih pločica u kojima se jedan sastojak postupno povećava od malo do mnogo.
 
@@ -212,11 +212,11 @@ Osnovna glazura mijenja boju. Sjajna, prozirna osnova daje najživlju boju; svil
 
 Table: Zamućivači
 
-| Zamućivač                                          | Uobičajena količina          | Napomene                                                                                                                              |
-| -------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Cirkonijev silikat (cirkon: Zircopax, Superpax, Ultrox) | 10 – 15 % za punu neprozirnost | Jeftiniji izbor; te su marke cirkonijev silikat mljeven na različite veličine, a finije vrste jače djeluju                         |
-| Kositrov oksid                                     | Oko 5 – 7 % (naša procjena)  | Skup; slabiji na visokim temperaturama, a Digitalfire navodi da 4 % nije dalo nikakvu neprozirnost u prozirnoj redukcijskoj glazuri za stožac 10 |
-| Titanijev dioksid                                  | Oko 5 % (naša procjena)      | Svilenkasta, poluprozirna neprozirnost; oko 5 % može mijenjati površinu, a mnogo više često daje mat površinu s kristalima                |
+| Zamućivač                                               | Uobičajena količina            | Napomene                                                                                                                                         |
+| ------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Cirkonijev silikat (cirkon: Zircopax, Superpax, Ultrox) | 10 – 15 % za punu neprozirnost | Jeftiniji izbor; te su marke cirkonijev silikat mljeven na različite veličine, a finije vrste jače djeluju                                       |
+| Kositrov oksid                                          | Oko 5 – 7 % (naša procjena)    | Skup; slabiji na visokim temperaturama, a Digitalfire navodi da 4 % nije dalo nikakvu neprozirnost u prozirnoj redukcijskoj glazuri za stožac 10 |
+| Titanijev dioksid                                       | Oko 5 % (naša procjena)        | Svilenkasta, poluprozirna neprozirnost; oko 5 % može mijenjati površinu, a mnogo više često daje mat površinu s kristalima                       |
 
 ## Usklađenost glazure i greške {#fit-and-defects}
 
@@ -244,13 +244,13 @@ Mijenjajte jednu po jednu stvar i čuvajte probne pločice.
 Table: Uobičajene greške u glazuri, njihovi česti uzroci i prva rješenja
 Label: Uobičajene greške u glazuri
 
-| Greška                    | Kako izgleda                                         | Česti uzroci                                                                                                                                         | Prva rješenja                                                                                     |
-| ------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Povlačenje glazure        | Glazura se skuplja u kapljice i ostavlja golu glinu  | Prašnjav ili mastan biskvit; debeo sloj s mnogo gline koji je popucao pri sušenju; cink, cirkon ili kositar                                             | Očistite biskvit; nanesite tanji sloj; kalcinirajte dio gline; dodajte vezivo poput CMC-a         |
-| Rupičavost                | Male rupice ili udubine                              | Plin iz mase ili glazure koji se nije zatvorio; nedovoljno pečena ili viskozna glazura                                                               | Zadržite na završnoj temperaturi oko pola sata; nanesite tanji sloj; manje cinka ili rutila       |
-| Mjehuri                   | Krateri oštrih rubova                                | Obično prepečenost; vrlo debeli slojevi; hlapljivi topitelji iznad otprilike {{2192 °F; 1200 °C}}                                                     | Pecite hladnije; nanesite tanji sloj. Oštri rubovi uporabne predmete čine nesigurnima             |
-| Curenje glazure           | Glazura teče na ploču                                | Premalo glinice; predebeo sloj, kao ondje gdje se polijevanja preklapaju; mnogo željeza                                                             | Nanesite tanji sloj; dodajte glinicu; glazuru držite dobro iznad dna                              |
-| Pukotine od hlađenja      | Pukotine u predmetu od hlađenja ili zagrijavanja     | Brzo hlađenje kroz kvarcni prijelaz, {{1063 °F; 573 °C}}, ili kristobalitni prijelaz, oko {{428 °F; 220 °C}}; neujednačene stijenke; loša usklađenost | Kroz oba prijelaza pecite polako, pri zagrijavanju i hlađenju; ujednačene stijenke               |
+| Greška               | Kako izgleda                                        | Česti uzroci                                                                                                                                          | Prva rješenja                                                                               |
+| -------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Povlačenje glazure   | Glazura se skuplja u kapljice i ostavlja golu glinu | Prašnjav ili mastan biskvit; debeo sloj s mnogo gline koji je popucao pri sušenju; cink, cirkon ili kositar                                           | Očistite biskvit; nanesite tanji sloj; kalcinirajte dio gline; dodajte vezivo poput CMC-a   |
+| Rupičavost           | Male rupice ili udubine                             | Plin iz mase ili glazure koji se nije zatvorio; nedovoljno pečena ili viskozna glazura                                                                | Zadržite na završnoj temperaturi oko pola sata; nanesite tanji sloj; manje cinka ili rutila |
+| Mjehuri              | Krateri oštrih rubova                               | Obično prepečenost; vrlo debeli slojevi; hlapljivi topitelji iznad otprilike {{2192 °F; 1200 °C}}                                                     | Pecite hladnije; nanesite tanji sloj. Oštri rubovi uporabne predmete čine nesigurnima       |
+| Curenje glazure      | Glazura teče na ploču                               | Premalo glinice; predebeo sloj, kao ondje gdje se polijevanja preklapaju; mnogo željeza                                                               | Nanesite tanji sloj; dodajte glinicu; glazuru držite dobro iznad dna                        |
+| Pukotine od hlađenja | Pukotine u predmetu od hlađenja ili zagrijavanja    | Brzo hlađenje kroz kvarcni prijelaz, {{1063 °F; 573 °C}}, ili kristobalitni prijelaz, oko {{428 °F; 220 °C}}; neujednačene stijenke; loša usklađenost | Kroz oba prijelaza pecite polako, pri zagrijavanju i hlađenju; ujednačene stijenke          |
 
 ## Sigurnost hrane {#food-safety}
 

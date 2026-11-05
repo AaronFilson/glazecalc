@@ -157,11 +157,11 @@ A források más-más szitát ajánlanak. Zakin kétszer szitál 50 vagy 80 mesh
 Table: Melyik szitát használja
 Label: Szitaméret
 
-| Máz                                                       | Szita                             |
-| --------------------------------------------------------- | --------------------------------- |
-| A legtöbb máz                                             | Kétszer át 80 mesh-es szitán      |
-| Színezőanyagot, például kobaltot vagy vasat tartalmazó mázak | 100–120 mesh                    |
-| Hamumázak és más, durva nyersanyagot tartalmazó mázak     | 60–80 mesh                        |
+| Máz                                                          | Szita                        |
+| ------------------------------------------------------------ | ---------------------------- |
+| A legtöbb máz                                                | Kétszer át 80 mesh-es szitán |
+| Színezőanyagot, például kobaltot vagy vasat tartalmazó mázak | 100–120 mesh                 |
+| Hamumázak és más, durva nyersanyagot tartalmazó mázak        | 60–80 mesh                   |
 
 ## Fajsúly {#specific-gravity}
 
@@ -183,11 +183,11 @@ A források eltérnek, leginkább az ecsetelésnél és a szórásnál, ahol a b
 Table: Fajsúly-célértékek, ahol a források eltérnek
 Label: Fajsúly-célértékek
 
-| Felhasználás | Digitalfire és Glazy                                                                                                                                          | Potclays (Egyesült Királyság)                    | Biztonságos kiindulópont                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------------------------- |
+| Felhasználás | Digitalfire és Glazy                                                                                                                                              | Potclays (Egyesült Királyság)                  | Biztonságos kiindulópont                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------- |
 | Mártás       | {{SG 1.40}} (5 másodperces mártáshoz) és {{SG 1.50}} (1 másodperces mártáshoz) között; az otthon kevert, bedermesztett mázak {{SG 1.43–1.45}} mellett a legjobbak | Színtelen {{SG 1.46–1.48}}; színes {{SG 1.61}} | {{SG 1.45}}; ha csepeg, hígítsa {{SG 1.43}} értékre, és dermessze be |
-| Ecsetelés    | {{SG 1.25}} (híg színtelen) és {{SG 1.55}} (sötét részletek) között                                                                                           | {{SG 1.71–1.81}}                                 | Kövesse a terméket; használjon CMC-t vagy ecsetelő médiumot          |
-| Szórás       | Nincs érték; Hopper a Ceramic Arts Network számára írva jóval hígabbat mond, folyósítószerrel (olyan adalékkal, amely a máziszapot hígabban folyóvá teszi)     | {{SG 1.71}}                                      | Nincs megbízható szám; csak szórófülkében szórjon                    |
+| Ecsetelés    | {{SG 1.25}} (híg színtelen) és {{SG 1.55}} (sötét részletek) között                                                                                               | {{SG 1.71–1.81}}                               | Kövesse a terméket; használjon CMC-t vagy ecsetelő médiumot          |
+| Szórás       | Nincs érték; Hopper a Ceramic Arts Network számára írva jóval hígabbat mond, folyósítószerrel (olyan adalékkal, amely a máziszapot hígabban folyóvá teszi)        | {{SG 1.71}}                                    | Nincs megbízható szám; csak szórófülkében szórjon                    |
 
 Hogy szemmel ellenőrizze egy mártómázat, az AMACO 5 másodpercig márt, és körülbelül egy amerikai tízcentes érme vastagságú réteget keres. A Digitalfire 5 másodpercig mártott próbalapokat éget ki az ellenőrzéshez.
 
@@ -198,12 +198,12 @@ Az alábbi táblázat a saját számításunk, nem egy forrásé. Azt feltétele
 Table: Víz egy adott fajsúlyhoz (a mi becslésünk)
 Label: Víz egy adott fajsúlyhoz
 
-| Cél         | 100 g porhoz        | Kilogrammonként    | Fontonként                        |
-| ----------- | ------------------: | -----------------: | --------------------------------: |
-| {{SG 1.40}} |   körülbelül 115 mL | körülbelül 1150 mL | körülbelül 18 amerikai folyadékuncia |
-| {{SG 1.45}} |    körülbelül 98 mL |  körülbelül 980 mL | körülbelül 15 amerikai folyadékuncia |
-| {{SG 1.50}} |    körülbelül 85 mL |  körülbelül 850 mL | körülbelül 13 amerikai folyadékuncia |
-| {{SG 1.60}} |    körülbelül 64 mL |  körülbelül 640 mL | körülbelül 10 amerikai folyadékuncia |
+| Cél         |      100 g porhoz |    Kilogrammonként |                           Fontonként |
+| ----------- | ----------------: | -----------------: | -----------------------------------: |
+| {{SG 1.40}} | körülbelül 115 mL | körülbelül 1150 mL | körülbelül 18 amerikai folyadékuncia |
+| {{SG 1.45}} |  körülbelül 98 mL |  körülbelül 980 mL | körülbelül 15 amerikai folyadékuncia |
+| {{SG 1.50}} |  körülbelül 85 mL |  körülbelül 850 mL | körülbelül 13 amerikai folyadékuncia |
+| {{SG 1.60}} |  körülbelül 64 mL |  körülbelül 640 mL | körülbelül 10 amerikai folyadékuncia |
 
 ### A máza saját száraz fajsúlyának meghatározása keverés közben
 
@@ -286,13 +286,13 @@ Willers jól megfogalmazza a célt: „elég információ ahhoz, hogy meg tudja 
 Table: Mit jegyezzen fel minden mázadagról (a mi sablonunk)
 Label: Feljegyzéssablon
 
-| Rész      | Mit írjon le                                                                                                                                                                                                                                                   |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept    | A recept és a változata; a nyersanyagok márkája és gyártási tételszáma; minden helyettesítés                                                                                                                                                                   |
-| Keverés   | Dátum; adagméret; a hozzáadott víz és fajtája (csapvíz, fordított ozmózissal tisztított vagy desztillált); a fajsúly keverés után és a végső fajsúly; a kész máziszap tömege a száraz fajsúlyhoz; a hozzáadott keserűsó, CMC és bentonit; a szita mesh-száma és az átszitálások száma |
-| Felvitel  | Massza; a zsengélés gúlája; mártás, ecsetelés vagy leöntés; mártási idő vagy a rétegek száma; száraz rétegvastagság                                                                                                                                             |
-| Égetés    | Kemence és a polc helye; az égetési program a rámpáival, hőntartásaival és a hűtéssel; atmoszféra (oxidáló vagy redukciós); mit mutatott az ellenőrző gúla, nem csak azt, amire a kemencét beállították                                                          |
-| Eredmény  | Felület és szín; bármilyen lefolyás, hajszálrepedés vagy tűszúrás; fényképek elölről, hátulról és oldalról; a próbalap kódja                                                                                                                                    |
+| Rész     | Mit írjon le                                                                                                                                                                                                                                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept   | A recept és a változata; a nyersanyagok márkája és gyártási tételszáma; minden helyettesítés                                                                                                                                                                                          |
+| Keverés  | Dátum; adagméret; a hozzáadott víz és fajtája (csapvíz, fordított ozmózissal tisztított vagy desztillált); a fajsúly keverés után és a végső fajsúly; a kész máziszap tömege a száraz fajsúlyhoz; a hozzáadott keserűsó, CMC és bentonit; a szita mesh-száma és az átszitálások száma |
+| Felvitel | Massza; a zsengélés gúlája; mártás, ecsetelés vagy leöntés; mártási idő vagy a rétegek száma; száraz rétegvastagság                                                                                                                                                                   |
+| Égetés   | Kemence és a polc helye; az égetési program a rámpáival, hőntartásaival és a hűtéssel; atmoszféra (oxidáló vagy redukciós); mit mutatott az ellenőrző gúla, nem csak azt, amire a kemencét beállították                                                                               |
+| Eredmény | Felület és szín; bármilyen lefolyás, hajszálrepedés vagy tűszúrás; fényképek elölről, hátulról és oldalról; a próbalap kódja                                                                                                                                                          |
 
 > [!NOTE]
 > A Glazecalcban egy mentett [recept](/recipe) magát a receptet tartalmazza. Az [égetési napló](/firing) minden égetést rögzít: a kemencét, a dátumot, az időpontokat, a hőmérsékleteket, a gúlákat és a megjegyzéseket. A [jegyzetekben](/notes) minden más elfér, például a fenti adagfeljegyzés, és hogy mit mutatott az egyes próbalap.

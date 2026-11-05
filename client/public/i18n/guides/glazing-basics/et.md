@@ -43,11 +43,11 @@ Esimene, madalam põletus on **eelpõletus**{{en: bisque}} (Ühendkuningriigis b
 Table: Kuidas eelpõletus glasuurimist muudab (Digitalfire)
 Label: Kuidas eelpõletus glasuurimist muudab
 
-| Eelpõletus                                         | Mis juhtub                                                                    |
-| -------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Alapõletatud, väga imav                            | Glasuur jääb liiga paks, seejärel praguneb ja tõmbub kokku                    |
-| Ülepõletatud, tihe                                 | Kastmine ja kuivamine võtavad kauem aega                                      |
-| Kuumemalt põletatud või kauem tipus hoitud         | Rohkem gaasi põleb välja nüüd, nii et hiljem mullitab glasuurist läbi vähem   |
+| Eelpõletus                                 | Mis juhtub                                                                  |
+| ------------------------------------------ | --------------------------------------------------------------------------- |
+| Alapõletatud, väga imav                    | Glasuur jääb liiga paks, seejärel praguneb ja tõmbub kokku                  |
+| Ülepõletatud, tihe                         | Kastmine ja kuivamine võtavad kauem aega                                    |
+| Kuumemalt põletatud või kauem tipus hoitud | Rohkem gaasi põleb välja nüüd, nii et hiljem mullitab glasuurist läbi vähem |
 
 Ühendkuningriigi tarnija Potclays kirjeldab eelpõletust umbes {{1000 °C; 1832 °F}} juures, umbes koonuseni 06. Neid allikaid koos lugedes soovitab see juhend esimeseks eelpõletuseks koonuseid 06–04: Ortoni keskmise kiiruse juures {{1828–1945 °F; 998–1063 °C}}.
 
@@ -64,11 +64,11 @@ Koonuste numbrid ulatuvad 022-st 42-ni. Ees olev null tähistab jahedamat seeria
 Table: Põletusvahemikud: Ortoni isetoetuvad koonused kiirusel {{108 °F; 60 °C}} tunnis
 Label: Põletusvahemikud
 
-| Vahemik     | Koonused |          °F |        °C | Kasutus                                       |
-| ----------- | -------- | ----------: | --------: | --------------------------------------------- |
-| Madalkuumus | 06–04    | 1828–1945   |  998–1063 | Madalkuumuskeraamika glasuurid; eelpõletus    |
-| Keskkuumus  | 5–6      | 2167–2232   | 1186–1222 | Kivikeraamika ja portselan                    |
-| Kõrgkuumus  | 9–10     | 2300–2345   | 1260–1285 | Kivikeraamika ja portselan                    |
+| Vahemik     | Koonused |        °F |        °C | Kasutus                                    |
+| ----------- | -------- | --------: | --------: | ------------------------------------------ |
+| Madalkuumus | 06–04    | 1828–1945 |  998–1063 | Madalkuumuskeraamika glasuurid; eelpõletus |
+| Keskkuumus  | 5–6      | 2167–2232 | 1186–1222 | Kivikeraamika ja portselan                 |
+| Kõrgkuumus  | 9–10     | 2300–2345 | 1260–1285 | Kivikeraamika ja portselan                 |
 
 > [!NOTE]
 > Nimetage ja programmeerige oma põletused koonuse järgi ning pidage temperatuure ligikaudseteks. **Kontrollkoonus**{{en: witness cone}} ahjuplaadil esemete kõrval või kolmest koonusest **koonusekomplekt**{{en: cone pack}} (hoiatus-, siht- ja valvekoonus) näitab, kui palju kuumustööd teie esemed tegelikult said.
@@ -84,12 +84,12 @@ Väljaspool Põhja-Ameerikat annavad tarnijad sageli koonuse asemel °C. Hermann
 Table: Retseptist Segeri valemini: Glazy lahendatud näide
 Label: Retseptist Segeri valemini
 
-| Samm                 | Mis juhtub                                                                                                                                       | Näites                                                                                                                                 |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Retsept           | Toorained massi järgi, viidud summani 100                                                                                                        | Muu hulgas põldpagu 40%                                                                                                                |
-| 2. Oksiidanalüüs     | Nagu toitumisalane märgis: iga tooraine oksiidid liidetakse massiprotsentidena ja gaasid jäetakse välja                                          | Põldpaos on 64,8% ränidioksiidi, seega annavad selle 40% 25,9% SiO₂. Põletatud glasuuris on 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
-| 3. Moolid            | Massid muudetakse **moolideks**{{en: moles}}, molekulide arvudeks, sest „Grammid võivad eksitada, kuna mõned oksiidid on teistest raskemad“       | 60,1 g SiO₂ on üks mool, seega 67,4 g on umbes 1,12 mooli                                                                              |
-| 4. Ühele viimine     | Kõik jagatakse sulandajate summaga, nii et sulandajate summa on 1                                                                                | Sulandajate summa on 0,303; jagamine annab K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                    |
+| Samm             | Mis juhtub                                                                                                                                  | Näites                                                                                                                                   |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Retsept       | Toorained massi järgi, viidud summani 100                                                                                                   | Muu hulgas põldpagu 40%                                                                                                                  |
+| 2. Oksiidanalüüs | Nagu toitumisalane märgis: iga tooraine oksiidid liidetakse massiprotsentidena ja gaasid jäetakse välja                                     | Põldpaos on 64,8% ränidioksiidi, seega annavad selle 40% 25,9% SiO₂. Põletatud glasuuris on 67,4% SiO₂, 12,6% Al₂O₃, 7,5% K₂O, 12,5% CaO |
+| 3. Moolid        | Massid muudetakse **moolideks**{{en: moles}}, molekulide arvudeks, sest „Grammid võivad eksitada, kuna mõned oksiidid on teistest raskemad“ | 60,1 g SiO₂ on üks mool, seega 67,4 g on umbes 1,12 mooli                                                                                |
+| 4. Ühele viimine | Kõik jagatakse sulandajate summaga, nii et sulandajate summa on 1                                                                           | Sulandajate summa on 0,303; jagamine annab K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                     |
 
 Glazecalci [retsepti leht](/recipe) teeb kõik neli sammu sisestamise ajal ja näitab tulemust kolmes veerus: sulandajad (R₂O ja RO), mille summa on 1; stabilisaatorid (R₂O₃: alumiiniumoksiid, mille juurde paigutatakse sageli ka boor); ja klaasimoodustajad (RO₂: ränidioksiid). „Ühele viimine on lihtsalt teisendusvahend,“ ütleb Glazy: kaks eri toorainetest tehtud retsepti, millel on sama Segeri valem, „käituvad pärast põletust peaaegu ühtemoodi“. Seega on 1 ühine mõõdupuu, mitte kogus, mida kaalute. Digitalfire lisab, et meetod „ei toimi madalamatel temperatuuridel nii hästi“, kus boor ei ole lihtsalt sulandaja, ja et Segeri valemid on „võrdlevad ja neid on kõige parem vaadata kontekstis“. Funktsioon **Võrdle** paneb kahe retsepti valemid oksiidhaaval kõrvuti.
 
@@ -100,11 +100,11 @@ Kõige kasulikum üksik arv on **ränidioksiidi ja alumiiniumoksiidi suhe**{{en:
 Table: Mida ränidioksiidi ja alumiiniumoksiidi suhe viitab (Glazy)
 Label: Ränidioksiidi ja alumiiniumoksiidi suhe
 
-|     Suhe | Glazy tõlgendus                                       |
-| -------: | ----------------------------------------------------- |
-| Umbes 9  | Viitab läikivale sulatisele, kui kuumust on piisavalt |
-|      5–7 | Tüüpiline paljudele stabiilsetele kivikeraamikaglasuuridele |
-|      3–5 | Võib olla matt või alapõletatud                       |
+|    Suhe | Glazy tõlgendus                                             |
+| ------: | ----------------------------------------------------------- |
+| Umbes 9 | Viitab läikivale sulatisele, kui kuumust on piisavalt       |
+|     5–7 | Tüüpiline paljudele stabiilsetele kivikeraamikaglasuuridele |
+|     3–5 | Võib olla matt või alapõletatud                             |
 
 Glazy ei ütle, millise koonuse kohta need arvud on. Lugege neid kivikeraamikaglasuuride ligikaudse juhisena, umbes koonuste 6–10 jaoks. Digitalfire ütleb, et suhe üle umbes 8 on tõenäoliselt läikiv, kuid booriga glasuur võib olla läikiv 8 juures või madalamal ja madalkuumusglasuur isegi 6 juures. Suhe 5–7 ei ennusta iseenesest ei läiget ega mattsust: sulandajad, boor ja koonus nihutavad piiri. Glazy annab stabiilsete glasuuride tüüpiliseks sulandajate tasakaaluks 0,2 R₂O ja 0,8 RO kuni 0,3 R₂O ja 0,7 RO. Rohkem leeliseid muudab sulatise voolavamaks ja suurendab selle soojuspaisumist ning seega juuspragunemise ohtu.
 
@@ -115,13 +115,13 @@ Glazy ei ütle, millise koonuse kohta need arvud on. Lugege neid kivikeraamikagl
 Table: Tüüpiline hõõgumiskadu (Digitalfire)
 Label: Hõõgumiskadu
 
-| Tooraine                               | Tüüpiline hõõgumiskadu                                                          |
-| -------------------------------------- | ------------------------------------------------------------------------------- |
-| Kriit (kaltsiumkarbonaat), dolomiit    | Üle 40%, peamiselt süsinikdioksiid: 100 g kaltsiumkarbonaati eraldab umbes 44 g |
-| Liitiumkarbonaat                       | Umbes 60%                                                                       |
-| Baariumkarbonaat, Gerstley Borate      | Üle 20%                                                                         |
-| Kaoliin                                | Umbes 12–14%, peamiselt selle kristallidesse seotud vesi                        |
-| Põldpaod                               | Alla 1%                                                                         |
+| Tooraine                            | Tüüpiline hõõgumiskadu                                                          |
+| ----------------------------------- | ------------------------------------------------------------------------------- |
+| Kriit (kaltsiumkarbonaat), dolomiit | Üle 40%, peamiselt süsinikdioksiid: 100 g kaltsiumkarbonaati eraldab umbes 44 g |
+| Liitiumkarbonaat                    | Umbes 60%                                                                       |
+| Baariumkarbonaat, Gerstley Borate   | Üle 20%                                                                         |
+| Kaoliin                             | Umbes 12–14%, peamiselt selle kristallidesse seotud vesi                        |
+| Põldpaod                            | Alla 1%                                                                         |
 
 Gaas, mis lahkub pärast glasuuri sulama hakkamist, peab sellest läbi mullitama ja põhjustab Digitalfire’i sõnul „mulle, kuppe, nõelaauke, kokkutõmbumist“. Ühes Digitalfire’i katses eraldas talk gaasi kuni umbes {{1650 °F; 899 °C}}. Aitavad fritid, **kaltsineeritud**{{en: calcined}} toorained (eelnevalt kuumutatud, et nende gaasid välja ajada) ja põletuse muutmine.
 
@@ -154,21 +154,21 @@ Põhja-Ameerika fritte nimetatakse tootja ja numbri järgi: Ferro Frit 3134 (Fer
 Table: Tavalised glasuuri toorained ja mida need annavad
 Label: Tavalised glasuuri toorained
 
-| Tooraine (teised nimed)                                   | Annab                  | Märkused                                                                                                                                                               |
-| --------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarts (flint, quartz)                                    | SiO₂                   | Glasuurides kasutage 325 mesh, väga peent jahvatust                                                                                                                    |
-| Kaoliin (Ühendkuningriigis china clay)                    | Al₂O₃, SiO₂            | Peamine alumiiniumoksiidi allikas; aitab ka hoida glasuuri settimast                                                                                                  |
-| Pallsavi                                                  | Al₂O₃, SiO₂            | Plastilisem kui kaoliin, rohkema raua ja orgaanilise ainega                                                                                                           |
-| Kaaliumpõldpagu, naatriumpõldpagu, nefeliinsüeniit        | K₂O, Na₂O, Al₂O₃, SiO₂ | Sulandajad oma alumiiniumoksiidi ja ränidioksiidiga. Nefeliinsüeniit on tugev madal- ja keskkuumuse sulandaja. Vana retsepti lihtne „feldspar“ võib tähendada ükskõik millist neist |
-| Kriit (kaltsiumkarbonaat)                                 | CaO                    | Peamine kaltsiumisulandaja; eraldab süsinikdioksiidi                                                                                                                  |
-| Vollastoniit                                              | CaO, SiO₂              | Kaltsium ilma süsinikdioksiidita                                                                                                                                      |
-| Dolomiit, talk                                            | MgO koos CaO või SiO₂-ga | Siidjad matid pinnad; madalam soojuspaisumine                                                                                                                        |
-| Tsinkoksiid                                               | ZnO                    | Läige ja kristallid; liiga palju võib põhjustada kokkutõmbumist                                                                                                       |
-| Boorifritid, Gerstley Borate, kolemaniit                  | B₂O₃                   | Hädavajalikud koonusest 06 kuni koonuseni 6; fritid on „ühtlasema koostisega ja vähem lahustuvad kui looduslikud boraadid“                                             |
-| Liitiumkarbonaat                                          | Li₂O                   | Madala soojuspaisumisega sulandaja; kallis, seega kasutatakse säästlikult                                                                                            |
-| Strontsiumkarbonaat                                       | SrO                    | Baariumi vähem mürgine asendaja                                                                                                                                       |
-| Baariumkarbonaat                                          | BaO                    | Frittimata kujul mürgine; kõrge baariumisisaldusega glasuuridest võib metalle eralduda                                                                                 |
-| Bentoniit                                                 | Hõljumine              | Väga peen savi, tavaliselt 1–2%, settimise takistamiseks. Üle 3% võib glasuuri kuivamisel pragunema panna                                                             |
+| Tooraine (teised nimed)                            | Annab                    | Märkused                                                                                                                                                                            |
+| -------------------------------------------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kvarts (flint, quartz)                             | SiO₂                     | Glasuurides kasutage 325 mesh, väga peent jahvatust                                                                                                                                 |
+| Kaoliin (Ühendkuningriigis china clay)             | Al₂O₃, SiO₂              | Peamine alumiiniumoksiidi allikas; aitab ka hoida glasuuri settimast                                                                                                                |
+| Pallsavi                                           | Al₂O₃, SiO₂              | Plastilisem kui kaoliin, rohkema raua ja orgaanilise ainega                                                                                                                         |
+| Kaaliumpõldpagu, naatriumpõldpagu, nefeliinsüeniit | K₂O, Na₂O, Al₂O₃, SiO₂   | Sulandajad oma alumiiniumoksiidi ja ränidioksiidiga. Nefeliinsüeniit on tugev madal- ja keskkuumuse sulandaja. Vana retsepti lihtne „feldspar“ võib tähendada ükskõik millist neist |
+| Kriit (kaltsiumkarbonaat)                          | CaO                      | Peamine kaltsiumisulandaja; eraldab süsinikdioksiidi                                                                                                                                |
+| Vollastoniit                                       | CaO, SiO₂                | Kaltsium ilma süsinikdioksiidita                                                                                                                                                    |
+| Dolomiit, talk                                     | MgO koos CaO või SiO₂-ga | Siidjad matid pinnad; madalam soojuspaisumine                                                                                                                                       |
+| Tsinkoksiid                                        | ZnO                      | Läige ja kristallid; liiga palju võib põhjustada kokkutõmbumist                                                                                                                     |
+| Boorifritid, Gerstley Borate, kolemaniit           | B₂O₃                     | Hädavajalikud koonusest 06 kuni koonuseni 6; fritid on „ühtlasema koostisega ja vähem lahustuvad kui looduslikud boraadid“                                                          |
+| Liitiumkarbonaat                                   | Li₂O                     | Madala soojuspaisumisega sulandaja; kallis, seega kasutatakse säästlikult                                                                                                           |
+| Strontsiumkarbonaat                                | SrO                      | Baariumi vähem mürgine asendaja                                                                                                                                                     |
+| Baariumkarbonaat                                   | BaO                      | Frittimata kujul mürgine; kõrge baariumisisaldusega glasuuridest võib metalle eralduda                                                                                              |
+| Bentoniit                                          | Hõljumine                | Väga peen savi, tavaliselt 1–2%, settimise takistamiseks. Üle 3% võib glasuuri kuivamisel pragunema panna                                                                           |
 
 > [!WARNING]
 > Glasuuri toorained on peened pulbrid. Ränidioksiidi tolm kahjustab kopse, alguses ilma sümptomiteta, ja mõned toorained, näiteks baariumkarbonaat ja liitiumkarbonaat, on allaneelamisel mürgised. Käsitsege pulbreid ettevaatlikult, koristage märjalt ja kandke kuivalt töötades tihedalt istuvat respiraatorit. Juhendid [Ohutu segamine ja ventilatsioon](/guides/safe-mixing) ja [Ärge mürgitage oma peret](/guides/home-safety) selgitavad, kuidas.
@@ -192,15 +192,15 @@ Ka toorained muutuvad. USA Geoloogiateenistus teatab, et Lõuna-Dakotas põldpag
 Table: Tavalised värvained, protsendina põhiglasuurist
 Label: Tavalised värvained
 
-| Värvaine          | Tavaline algkogus                       | Värvid ja märkused                                                                                                                       |
-| ----------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Koobalt           | 0,1–2% (allikad on eri meelt)           | Sinine ja väga tugev; lillakam, kui põhiglasuuris on magneesiumi                                                                         |
-| Raud              | 0,5–10%                                 | Oksüdeerivas põletuses pruunid, helepruunid ja punased; reduktsioonis annab ½–2% seladoni ja 5–10% tenmoku. Sulandaja, seega paneb suur kogus glasuuri voolama |
-| Vask              | 1–3%                                    | Oksüdeerivas põletuses roheline või türkiis, reduktsioonis punane. See võib põhjustada metallide eraldumist glasuurist                     |
-| Kroom             | Alla 0,5% kuni 2% (allikad on eri meelt) | Roheline; pruun, kui põhiglasuuris on tsinki, roosa koos tinaga                                                                         |
-| Mangaan           | 2–10%                                   | Pruunid ja lillad                                                                                                                        |
-| Rutiil            | Umbes 2–5%                              | Laiguline, kirju värv; üle umbes 5% kare või matt                                                                                        |
-| Kaubanduslikud pigmendid | 2–12%                            | 2–4% heledate toonide, 5–8% keskmiste toonide, 10–12% tugevate värvide jaoks                                                              |
+| Värvaine                 | Tavaline algkogus                        | Värvid ja märkused                                                                                                                                             |
+| ------------------------ | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Koobalt                  | 0,1–2% (allikad on eri meelt)            | Sinine ja väga tugev; lillakam, kui põhiglasuuris on magneesiumi                                                                                               |
+| Raud                     | 0,5–10%                                  | Oksüdeerivas põletuses pruunid, helepruunid ja punased; reduktsioonis annab ½–2% seladoni ja 5–10% tenmoku. Sulandaja, seega paneb suur kogus glasuuri voolama |
+| Vask                     | 1–3%                                     | Oksüdeerivas põletuses roheline või türkiis, reduktsioonis punane. See võib põhjustada metallide eraldumist glasuurist                                         |
+| Kroom                    | Alla 0,5% kuni 2% (allikad on eri meelt) | Roheline; pruun, kui põhiglasuuris on tsinki, roosa koos tinaga                                                                                                |
+| Mangaan                  | 2–10%                                    | Pruunid ja lillad                                                                                                                                              |
+| Rutiil                   | Umbes 2–5%                               | Laiguline, kirju värv; üle umbes 5% kare või matt                                                                                                              |
+| Kaubanduslikud pigmendid | 2–12%                                    | 2–4% heledate toonide, 5–8% keskmiste toonide, 10–12% tugevate värvide jaoks                                                                                   |
 
 Koobalti ja kroomi kogused on tõesti vaieldavad. Glazy ütleb, et sinise jaoks piisab 0,1% koobaltist; Glendale Community College annab sõltuvalt ahju atmosfäärist ½–2% või ½–3%; Birdie Boone ütleb ajakirjas Pottery Making Illustrated 3% või vähem. Kroomi kohta ütleb Boone alla 0,5% ja Glendale 2–3%. Kindel tee on alustada väikesest kogusest ja teha **katserida**{{en: line blend}}: rida proovitükke, milles üks koostisosa muutub sammhaaval vähesest paljuni.
 
@@ -212,11 +212,11 @@ Põhiglasuur muudab värvi. Läikiv läbipaistev põhiglasuur annab kõige erksa
 
 Table: Hägustajad
 
-| Hägustaja                                       | Tavaline kogus                           | Märkused                                                                                                                         |
-| ----------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Tsirkoonsilikaat (Zircopax, Superpax, Ultrox)   | 10–15% täieliku katvuse jaoks            | Odavam valik; kaubamärgid on eri peenusega jahvatatud tsirkoonsilikaat ja peenemad sordid on tugevamad                          |
-| Tinaoksiid                                      | Umbes 5–7% (selle juhendi hinnang)       | Kallis; kõrgkuumuses nõrgem ja Digitalfire teatab, et 4% ei andnud läbipaistvas koonuse 10 reduktsiooniglasuuris mingit katvust |
-| Titaandioksiid                                  | Umbes 5% (selle juhendi hinnang)         | Siidjas, läbikumav katvus; umbes 5% võib pinda kirjuks muuta ja palju suurem kogus annab sageli kristallidega mati pinna        |
+| Hägustaja                                     | Tavaline kogus                     | Märkused                                                                                                                        |
+| --------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Tsirkoonsilikaat (Zircopax, Superpax, Ultrox) | 10–15% täieliku katvuse jaoks      | Odavam valik; kaubamärgid on eri peenusega jahvatatud tsirkoonsilikaat ja peenemad sordid on tugevamad                          |
+| Tinaoksiid                                    | Umbes 5–7% (selle juhendi hinnang) | Kallis; kõrgkuumuses nõrgem ja Digitalfire teatab, et 4% ei andnud läbipaistvas koonuse 10 reduktsiooniglasuuris mingit katvust |
+| Titaandioksiid                                | Umbes 5% (selle juhendi hinnang)   | Siidjas, läbikumav katvus; umbes 5% võib pinda kirjuks muuta ja palju suurem kogus annab sageli kristallidega mati pinna        |
 
 ## Glasuuri sobivus ja glasuurivead {#fit-and-defects}
 
@@ -244,13 +244,13 @@ Muutke korraga ühte asja ja hoidke oma proovitükid alles.
 Table: Tavalised glasuurivead, nende tavalised põhjused ja esimesed parandused
 Label: Tavalised glasuurivead
 
-| Viga             | Kuidas välja näeb                                     | Tavalised põhjused                                                                                                                              | Esimesed parandused                                                                           |
-| ---------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Kokkutõmbumine   | Glasuur tõmbub helmesteks kokku ja jätab savi paljaks | Tolmune või rasvane eelpõletatud ese; paks, savirikas kiht, mis kuivades pragunes; tsink, tsirkoonsilikaat või tina                              | Puhastage eelpõletatud ese; kandke õhem kiht; kaltsineerige osa savist; lisage sideainet, näiteks CMC-d |
-| Nõelaaugud       | Väikesed augud või süvendid                           | Savimassist või glasuurist tulnud gaas, mille jälg ei sulanud kinni; alapõletatud või jäik glasuur                                                | Hoidke tipptemperatuuril umbes pool tundi; kandke õhem kiht; vähem tsinki või rutiili          |
-| Kupud            | Teravaservalised kraatrid                             | Tavaliselt ülepõletus; väga paksud kihid; lenduvad sulandajad üle umbes {{2192 °F; 1200 °C}}                                                    | Põletage madalamalt; kandke õhem kiht. Teravad servad muudavad kasutusesemed ohtlikuks         |
-| Voolamine        | Glasuur voolab ahjuplaadile                           | Liiga vähe alumiiniumoksiidi; liiga paks kiht, näiteks seal, kus ülevalamised kattuvad; palju rauda                                              | Kandke õhem kiht; lisage alumiiniumoksiidi; hoidke glasuur põhjast piisavalt kõrgel            |
-| Jahtumispraod    | Praod esemes jahtumisel või kuumenemisel              | Kiire jahtumine läbi kvartsi ülemineku, {{1063 °F; 573 °C}}, või kristobaliidi ülemineku, umbes {{428 °F; 220 °C}}; ebaühtlased seinad; halb sobivus | Põletage mõlemast aeglaselt läbi, nii kuumutades kui ka jahutades; ühtlased seinad             |
+| Viga           | Kuidas välja näeb                                     | Tavalised põhjused                                                                                                                                   | Esimesed parandused                                                                                     |
+| -------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Kokkutõmbumine | Glasuur tõmbub helmesteks kokku ja jätab savi paljaks | Tolmune või rasvane eelpõletatud ese; paks, savirikas kiht, mis kuivades pragunes; tsink, tsirkoonsilikaat või tina                                  | Puhastage eelpõletatud ese; kandke õhem kiht; kaltsineerige osa savist; lisage sideainet, näiteks CMC-d |
+| Nõelaaugud     | Väikesed augud või süvendid                           | Savimassist või glasuurist tulnud gaas, mille jälg ei sulanud kinni; alapõletatud või jäik glasuur                                                   | Hoidke tipptemperatuuril umbes pool tundi; kandke õhem kiht; vähem tsinki või rutiili                   |
+| Kupud          | Teravaservalised kraatrid                             | Tavaliselt ülepõletus; väga paksud kihid; lenduvad sulandajad üle umbes {{2192 °F; 1200 °C}}                                                         | Põletage madalamalt; kandke õhem kiht. Teravad servad muudavad kasutusesemed ohtlikuks                  |
+| Voolamine      | Glasuur voolab ahjuplaadile                           | Liiga vähe alumiiniumoksiidi; liiga paks kiht, näiteks seal, kus ülevalamised kattuvad; palju rauda                                                  | Kandke õhem kiht; lisage alumiiniumoksiidi; hoidke glasuur põhjast piisavalt kõrgel                     |
+| Jahtumispraod  | Praod esemes jahtumisel või kuumenemisel              | Kiire jahtumine läbi kvartsi ülemineku, {{1063 °F; 573 °C}}, või kristobaliidi ülemineku, umbes {{428 °F; 220 °C}}; ebaühtlased seinad; halb sobivus | Põletage mõlemast aeglaselt läbi, nii kuumutades kui ka jahutades; ühtlased seinad                      |
 
 ## Toiduohutus {#food-safety}
 

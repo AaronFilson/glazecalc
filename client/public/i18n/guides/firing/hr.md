@@ -473,17 +473,17 @@ Na peći s ručnim upravljanjem isti se plan provodi rukom: sušite polako, s od
 Table: Tvornički programi L&L i Bartlett za glazurno pečenje
 Label: Programi za glazurno pečenje
 
-| Segment                          |                         Zagrijavanje do |             Slow Glaze |             Fast Glaze |
-| -------------------------------- | --------------------------------------: | ---------------------: | ---------------------: |
-| 1                                |                      {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Nema zasebnog koraka |
+| Segment                          |                              Zagrijavanje do |             Slow Glaze |             Fast Glaze |
+| -------------------------------- | -------------------------------------------: | ---------------------: | ---------------------: |
+| 1                                |                           {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Nema zasebnog koraka |
 | 2                                | {{250 °F; 139 °C}} ispod završne temperature | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                |                     Završna temperatura |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Vrijeme zagrijavanja, prazna peć |                                         |       Oko 6½ – 7½ sati |          Oko 3 – 4 sata |
+| 3                                |                          Završna temperatura |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Vrijeme zagrijavanja, prazna peć |                                              |       Oko 6½ – 7½ sati |         Oko 3 – 4 sata |
 
 Table: Gdje završavaju segmenti 2 i 3, prema stošcu (L&L i Bartlett)
 Label: Ciljne temperature programa
 
-| Stožac |    Kraj segmenta 2 | Završna temperatura |
+| Stožac |      Kraj segmenta 2 |  Završna temperatura |
 | ------ | -------------------: | -------------------: |
 | 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
@@ -498,12 +498,12 @@ Glazure za srednje temperature ponekad izađu sa **sitnim rupicama**{{en: pinhol
 Table: Digitalfire PLC6DS, spuštanje i zadržavanje za stožac 6
 Label: Digitalfire PLC6DS
 
-| Korak |                           Brzina |                 Cilj | Zadržavanje                                        |
-| ----- | -------------------------------: | -------------------: | -------------------------------------------------- |
-| 1     |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                          |
-| 2     |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Po želji 30 minuta, da se raščiste oblaci mjehurića |
-| 3     |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuta; u velikim pećima dulje                  |
-| 4     | Hlađenje {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                          |
+| Korak |                          Brzina |                 Cilj | Zadržavanje                                         |
+| ----- | ------------------------------: | -------------------: | --------------------------------------------------- |
+| 1     |           {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                           |
+| 2     |          {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Po želji 30 minuta, da se raščiste oblaci mjehurića |
+| 3     |           {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuta; u velikim pećima dulje                   |
+| 4     | Hlađenje {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                           |
 
 PLC6DS traje oko 9 sati i 36 minuta. Za tekućije glazure Digitalfire temperaturu spušta za oko {{200 °F; 111 °C}}; prejako spuštanje „donosi opasnost od kristalizacije tijekom zadržavanja”. Njegova završna temperatura od {{2200 °F; 1204 °C}} niža je od {{2232 °F; 1222 °C}} koje tablica daje za stožac 6; Digitalfire navodi da većina peći stožac 6 postiže na oko {{2200 °F; 1204 °C}}. Provjerite to skupom od tri kontrolna stošca u vlastitoj peći.
 
@@ -514,10 +514,10 @@ PLC6DS traje oko 9 sati i 36 minuta. Za tekućije glazure Digitalfire temperatur
 Table: L&L „User 6”: kontrolirano hlađenje za glazure za stožac 6
 Label: Kontrolirano hlađenje L i L
 
-| Korak |                           Brzina |                 Cilj |
-| ----- | -------------------------------: | -------------------: |
-| 1     |      Zagrijavanje punom brzinom | {{2232 °F; 1222 °C}} |
-| 2     |          Hlađenje punom brzinom | {{1900 °F; 1038 °C}} |
+| Korak |                         Brzina |                 Cilj |
+| ----- | -----------------------------: | -------------------: |
+| 1     |     Zagrijavanje punom brzinom | {{2232 °F; 1222 °C}} |
+| 2     |         Hlađenje punom brzinom | {{1900 °F; 1038 °C}} |
 | 3     | Hlađenje {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Regulatori tvrtke Skutt također nude predgrijavanje i mogućnost hlađenja u jednom koraku.

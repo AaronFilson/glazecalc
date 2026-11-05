@@ -473,17 +473,17 @@ Glasuuripõletus{{en: glaze firing}} sulatab glasuuri eelpõletatud esemel klaas
 Table: L&L-i ja Bartletti glasuuripõletuse valmisprogrammid
 Label: Glasuuripõletuse valmisprogrammid
 
-| Segment                  |                                Tõus kuni |             Slow Glaze |             Fast Glaze |
-| ------------------------ | ---------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Eraldi sammu pole |
-| 2                        | {{250 °F; 139 °C}} alla lõpptemperatuuri | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          Lõpptemperatuur |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Kuumutusaeg, tühi ahi    |                                          |      Umbes 6½–7½ tundi |       Umbes 3–4 tundi |
+| Segment               |                                Tõus kuni |             Slow Glaze |             Fast Glaze |
+| --------------------- | ---------------------------------------: | ---------------------: | ---------------------: |
+| 1                     |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Eraldi sammu pole |
+| 2                     | {{250 °F; 139 °C}} alla lõpptemperatuuri | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                     |                          Lõpptemperatuur |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Kuumutusaeg, tühi ahi |                                          |      Umbes 6½–7½ tundi |        Umbes 3–4 tundi |
 
 Table: Kus lõpevad segmendid 2 ja 3, koonuste kaupa (L&L ja Bartlett)
 Label: Valmisprogrammide sihttemperatuurid
 
-| Koonus |    Segment 2 lõpeb |      Lõpptemperatuur |
+| Koonus |      Segment 2 lõpeb |      Lõpptemperatuur |
 | ------ | -------------------: | -------------------: |
 | 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
@@ -498,12 +498,12 @@ Keskkuumusglasuuridesse tekivad mõnikord **nõelaaugud**{{en: pinholes}} (pisik
 Table: Digitalfire PLC6DS, koonuse 6 langetus ja hoid
 Label: Digitalfire PLC6DS
 
-| Samm |                              Kiirus |                 Siht | Hoid                                                 |
-| ---- | ----------------------------------: | -------------------: | ---------------------------------------------------- |
-| 1    |               {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutit                                           |
-| 2    |              {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Soovi korral 30 minutit, et mullipilved kaoksid      |
-| 3    |               {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutit; suurtes ahjudes kauem                    |
-| 4    | Langus kiirusel {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutit                                           |
+| Samm |                                 Kiirus |                 Siht | Hoid                                            |
+| ---- | -------------------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |                  {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutit                                      |
+| 2    |                 {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Soovi korral 30 minutit, et mullipilved kaoksid |
+| 3    |                  {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutit; suurtes ahjudes kauem               |
+| 4    | Langus kiirusel {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutit                                      |
 
 PLC6DS kestab umbes 9 tundi 36 minutit. Voolavamate glasuuride puhul langetab Digitalfire selle asemel umbes {{200 °F; 111 °C}} võrra; liiga suur langetus „võib hoiu ajal põhjustada kristallumist“. Selle lõpptemperatuur {{2200 °F; 1204 °C}} on madalam kui tabeli {{2232 °F; 1222 °C}} koonuse 6 jaoks; Digitalfire teatab, et enamik ahje jõuab koonuseni 6 umbes {{2200 °F; 1204 °C}} juures. Kontrollige seda oma ahjus koonusekomplektiga.
 
@@ -516,8 +516,8 @@ Label: L ja L kontrollitud jahutus
 
 | Samm |                                Kiirus |                 Siht |
 | ---- | ------------------------------------: | -------------------: |
-| 1    |                   Täiskiirusel üles | {{2232 °F; 1222 °C}} |
-| 2    |                   Täiskiirusel alla | {{1900 °F; 1038 °C}} |
+| 1    |                     Täiskiirusel üles | {{2232 °F; 1222 °C}} |
+| 2    |                     Täiskiirusel alla | {{1900 °F; 1038 °C}} |
 | 3    | Langus kiirusel {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Ka Skutti kontrolleritel on eelkuumutus ja üheastmelise jahutuse võimalus.

@@ -157,11 +157,11 @@ Allikad soovitavad erinevaid sõelu. Zakin sõelub kaks korda läbi 50 või 80 m
 Table: Millist sõela kasutada
 Label: Sõela mesh
 
-| Glasuur                                                   | Sõel                          |
-| --------------------------------------------------------- | ----------------------------- |
-| Enamik glasuure                                           | Kaks korda läbi 80 mesh sõela |
-| Värvainetega, näiteks koobalti või rauaga glasuurid       | 100 kuni 120 mesh             |
-| Tuhaglasuurid ja muud jämedate toorainetega glasuurid     | 60 kuni 80 mesh               |
+| Glasuur                                               | Sõel                          |
+| ----------------------------------------------------- | ----------------------------- |
+| Enamik glasuure                                       | Kaks korda läbi 80 mesh sõela |
+| Värvainetega, näiteks koobalti või rauaga glasuurid   | 100 kuni 120 mesh             |
+| Tuhaglasuurid ja muud jämedate toorainetega glasuurid | 60 kuni 80 mesh               |
 
 ## Suhteline tihedus {#specific-gravity}
 
@@ -183,11 +183,11 @@ Allikad on eri meelt, kõige rohkem pintseldamise ja pritsimise osas, kus Ühend
 Table: Soovitud suhteline tihedus, kus allikad on eri meelt
 Label: Soovitud suhteline tihedus
 
-| Kasutus       | Digitalfire ja Glazy                                                                                                                                            | Potclays (Ühendkuningriik)                         | Kindel lähtepunkt                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+| Kasutus       | Digitalfire ja Glazy                                                                                                                                                           | Potclays (Ühendkuningriik)                          | Kindel lähtepunkt                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------------------- |
 | Sissekastmine | {{SG 1.40}} (5-sekundilise kastmise jaoks) kuni {{SG 1.50}} (1-sekundilise kastmise jaoks); kodus segatud tarretunud glasuurid toimivad kõige paremini {{SG 1.43–1.45}} juures | Läbipaistev {{SG 1.46–1.48}}; värviline {{SG 1.61}} | {{SG 1.45}}; kui tilgub, lahjendage, kuni näit on {{SG 1.43}}, ja tarretage |
-| Pintseldamine | {{SG 1.25}} (õhuke läbipaistev) kuni {{SG 1.55}} (tumedad detailid)                                                                                             | {{SG 1.71–1.81}}                                   | Järgige toote juhiseid; kasutage CMC-d või pintslilisandit           |
-| Pritsimine    | Arvu pole; Hopper, kes kirjutab väljaandele Ceramic Arts Network, ütleb palju vedelam, deflokulandiga (lisaaine, mis muudab glasuurilahuse vedelamaks)          | {{SG 1.71}}                                        | Usaldusväärset arvu pole; pritsige ainult glasuurimiskapis           |
+| Pintseldamine | {{SG 1.25}} (õhuke läbipaistev) kuni {{SG 1.55}} (tumedad detailid)                                                                                                            | {{SG 1.71–1.81}}                                    | Järgige toote juhiseid; kasutage CMC-d või pintslilisandit                  |
+| Pritsimine    | Arvu pole; Hopper, kes kirjutab väljaandele Ceramic Arts Network, ütleb palju vedelam, deflokulandiga (lisaaine, mis muudab glasuurilahuse vedelamaks)                         | {{SG 1.71}}                                         | Usaldusväärset arvu pole; pritsige ainult glasuurimiskapis                  |
 
 Kastmisglasuuri silma järgi kontrollimiseks kastab AMACO 5 sekundit ja otsib kihti, mis on umbes USA kümnesendise mündi paksune. Digitalfire põletab kontrolliks 5 sekundit kastetud proovitükke.
 
@@ -198,12 +198,12 @@ Allolev tabel on selle juhendi enda arvutus, mitte allika oma. See eeldab, et pu
 Table: Vesi soovitud suhtelise tiheduse jaoks (selle juhendi hinnang)
 Label: Vesi soovitud suhtelise tiheduse jaoks
 
-| Siht        | 100 g pulbri kohta | Kilogrammi kohta |      Naela kohta |
-| ----------- | -----------------: | ---------------: | ---------------: |
-| {{SG 1.40}} |      umbes 115 mL |   umbes 1150 mL | umbes 18 US fl oz |
-| {{SG 1.45}} |       umbes 98 mL |    umbes 980 mL | umbes 15 US fl oz |
-| {{SG 1.50}} |       umbes 85 mL |    umbes 850 mL | umbes 13 US fl oz |
-| {{SG 1.60}} |       umbes 64 mL |    umbes 640 mL | umbes 10 US fl oz |
+| Siht        | 100 g pulbri kohta | Kilogrammi kohta |       Naela kohta |
+| ----------- | -----------------: | ---------------: | ----------------: |
+| {{SG 1.40}} |       umbes 115 mL |    umbes 1150 mL | umbes 18 US fl oz |
+| {{SG 1.45}} |        umbes 98 mL |     umbes 980 mL | umbes 15 US fl oz |
+| {{SG 1.50}} |        umbes 85 mL |     umbes 850 mL | umbes 13 US fl oz |
+| {{SG 1.60}} |        umbes 64 mL |     umbes 640 mL | umbes 10 US fl oz |
 
 ### Oma glasuuri kuivaine suhtelise tiheduse leidmine segamise ajal
 
@@ -286,13 +286,13 @@ Willers sõnastab eesmärgi hästi: „piisavalt teavet, et saaksite avastatud t
 Table: Mida iga glasuurisegu kohta üles kirjutada (selle juhendi mall)
 Label: Märkmete mall
 
-| Osa          | Mida üles kirjutada                                                                                                                                                                                                                                                         |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Retsept      | Retsept ja selle versioon; toorainete kaubamärgid ja partiinumbrid; kõik asendused                                                                                                                                                                                         |
-| Segamine     | Kuupäev; segu kogus; lisatud vesi ja selle liik (kraanivesi, pöördosmoosiga puhastatud või destilleeritud); suhteline tihedus pärast segamist ja lõplik suhteline tihedus; valmis glasuurilahuse mass kuivaine suhtelise tiheduse jaoks; lisatud inglise sool, CMC ja bentoniit; sõela mesh ja sõelumiskordade arv |
-| Pealekandmine | Savimass; eelpõletuse koonus; sissekastmine, pintseldamine või ülevalamine; kastmisaeg või kihtide arv; kuiva kihi paksus                                                                                                                                                   |
-| Põletus      | Ahi ja koht ahjuplaadil; põletusprogramm koos rampide, hoidude ja jahutusega; ahju atmosfäär (oksüdeeriv või redutseeriv põletus); mida näitas kontrollkoonus, mitte ainult see, millele ahi oli seatud                                                                    |
-| Tulemus      | Pind ja värv; voolamine, juuspraod või nõelaaugud; fotod eest, tagant ja küljelt; proovitüki kood                                                                                                                                                                           |
+| Osa           | Mida üles kirjutada                                                                                                                                                                                                                                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Retsept       | Retsept ja selle versioon; toorainete kaubamärgid ja partiinumbrid; kõik asendused                                                                                                                                                                                                                                 |
+| Segamine      | Kuupäev; segu kogus; lisatud vesi ja selle liik (kraanivesi, pöördosmoosiga puhastatud või destilleeritud); suhteline tihedus pärast segamist ja lõplik suhteline tihedus; valmis glasuurilahuse mass kuivaine suhtelise tiheduse jaoks; lisatud inglise sool, CMC ja bentoniit; sõela mesh ja sõelumiskordade arv |
+| Pealekandmine | Savimass; eelpõletuse koonus; sissekastmine, pintseldamine või ülevalamine; kastmisaeg või kihtide arv; kuiva kihi paksus                                                                                                                                                                                          |
+| Põletus       | Ahi ja koht ahjuplaadil; põletusprogramm koos rampide, hoidude ja jahutusega; ahju atmosfäär (oksüdeeriv või redutseeriv põletus); mida näitas kontrollkoonus, mitte ainult see, millele ahi oli seatud                                                                                                            |
+| Tulemus       | Pind ja värv; voolamine, juuspraod või nõelaaugud; fotod eest, tagant ja küljelt; proovitüki kood                                                                                                                                                                                                                  |
 
 > [!NOTE]
 > Glazecalcis hoiab salvestatud [retsept](/recipe) retsepti ennast. [Põletuspäevik](/firing) salvestab iga põletuse: ahju, kuupäeva, ajad, temperatuurid, koonused ja märkused. [Märkmed](/notes) hoiavad kõike muud, näiteks ülaltoodud segu andmeid ja seda, mida iga proovitükk näitas.

@@ -473,12 +473,12 @@ Ostrý výpal{{en: glaze firing}} roztaví glazúru na prežahnutom črepe na sk
 Table: Prednastavené programy ostrého výpalu L&L a Bartlett
 Label: Programy ostrého výpalu
 
-| Segment                 |                               Stúpanie na |             Slow Glaze |             Fast Glaze |
-| ----------------------- | ----------------------------------------: | ---------------------: | ---------------------: |
-| 1                       |                        {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Žiadny samostatný krok |
+| Segment                 |                              Stúpanie na |             Slow Glaze |             Fast Glaze |
+| ----------------------- | ---------------------------------------: | ---------------------: | ---------------------: |
+| 1                       |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Žiadny samostatný krok |
 | 2                       | {{250 °F; 139 °C}} pod konečnou teplotou | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                       |                           Konečná teplota |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Čas ohrevu, prázdna pec |                                           |    Asi 6½ – 7½ hodiny |      Asi 3 – 4 hodiny |
+| 3                       |                          Konečná teplota |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Čas ohrevu, prázdna pec |                                          |     Asi 6½ – 7½ hodiny |       Asi 3 – 4 hodiny |
 
 Table: Kde končia segmenty 2 a 3 podľa kužeľa (L&L a Bartlett)
 Label: Cieľové teploty programov
@@ -498,12 +498,12 @@ Glazúry na stredný výpal majú niekedy **vpichy**{{en: pinholes}} (drobné di
 Table: Digitalfire PLC6DS, kužeľ 6 s poklesom a výdržou
 Label: Digitalfire PLC6DS
 
-| Krok |                                   Rýchlosť |      Cieľová teplota | Výdrž                                                 |
-| ---- | -----------------------------------------: | -------------------: | ----------------------------------------------------- |
-| 1    |                      {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minút                                              |
-| 2    |                     {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Voliteľne 30 minút, na odstránenie oblakov bubliniek |
-| 3    |                      {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minút; vo veľkých peciach dlhšie                   |
-| 4    | Pokles rýchlosťou {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minút                                              |
+| Krok |                                 Rýchlosť |      Cieľová teplota | Výdrž                                                |
+| ---- | ---------------------------------------: | -------------------: | ---------------------------------------------------- |
+| 1    |                    {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minút                                             |
+| 2    |                   {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Voliteľne 30 minút, na odstránenie oblakov bubliniek |
+| 3    |                    {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minút; vo veľkých peciach dlhšie                  |
+| 4    | Pokles rýchlosťou {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minút                                             |
 
 PLC6DS trvá asi 9 hodín 36 minút. Pri tekutejších glazúrach Digitalfire klesá namiesto toho asi o {{200 °F; 111 °C}}; príliš veľký pokles „hrozí kryštalizáciou počas výdrže“. Jeho konečná teplota {{2200 °F; 1204 °C}} je nižšia ako {{2232 °F; 1222 °C}} v tabuľke pre kužeľ 6; Digitalfire uvádza, že väčšina pecí dosiahne kužeľ 6 pri asi {{2200 °F; 1204 °C}}. Overte si to sadou troch kužeľov vo vlastnej peci.
 
@@ -514,10 +514,10 @@ PLC6DS trvá asi 9 hodín 36 minút. Pri tekutejších glazúrach Digitalfire kl
 Table: L&L „User 6“: regulované chladnutie pre glazúry na kužeľ 6
 Label: Regulované chladnutie L a L
 
-| Krok |                          Rýchlosť |      Cieľová teplota |
-| ---- | --------------------------------: | -------------------: |
-| 1    |            Plnou rýchlosťou nahor | {{2232 °F; 1222 °C}} |
-| 2    |            Plnou rýchlosťou nadol | {{1900 °F; 1038 °C}} |
+| Krok |                                Rýchlosť |      Cieľová teplota |
+| ---- | --------------------------------------: | -------------------: |
+| 1    |                  Plnou rýchlosťou nahor | {{2232 °F; 1222 °C}} |
+| 2    |                  Plnou rýchlosťou nadol | {{1900 °F; 1038 °C}} |
 | 3    | Pokles rýchlosťou {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Regulátory Skutt tiež ponúkajú predohrev a možnosť chladnutia v jednom kroku.

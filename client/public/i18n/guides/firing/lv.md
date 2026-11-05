@@ -473,21 +473,21 @@ Glazūras apdedzināšanā{{en: glaze firing}} glazūra uz biskvīta izkūst sti
 Table: L&L un Bartlett iebūvētās glazūras programmas
 Label: Glazūras programmas
 
-| Segments                        |                                  Sildīt līdz |             Slow Glaze |             Fast Glaze |
-| ------------------------------- | -------------------------------------------: | ---------------------: | ---------------------: |
-| 1                               |                           {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Atsevišķa soļa nav |
+| Segments                        |                                    Sildīt līdz |             Slow Glaze |             Fast Glaze |
+| ------------------------------- | ---------------------------------------------: | ---------------------: | ---------------------: |
+| 1                               |                             {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Atsevišķa soļa nav |
 | 2                               | {{250 °F; 139 °C}} zem maksimālās temperatūras | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                               |                        Maksimālā temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Sildīšanas laiks tukšai krāsnij |                                              |   Apmēram 6½–7½ stundas |    Apmēram 3–4 stundas |
+| 3                               |                          Maksimālā temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Sildīšanas laiks tukšai krāsnij |                                                |  Apmēram 6½–7½ stundas |    Apmēram 3–4 stundas |
 
 Table: Kur beidzas 2. un 3. segments, pēc konusa (L&L un Bartlett)
 Label: Programmu mērķi
 
-| Konuss |    2. segmenta beigas | Maksimālā temperatūra |
-| ------ | -------------------: | -------------------: |
-| 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Konuss |   2. segmenta beigas | Maksimālā temperatūra |
+| ------ | -------------------: | --------------------: |
+| 06     |  {{1569 °F; 854 °C}} |   {{1819 °F; 993 °C}} |
+| 04     |  {{1676 °F; 913 °C}} |  {{1926 °F; 1052 °C}} |
+| 6      | {{1982 °F; 1083 °C}} |  {{2232 °F; 1222 °C}} |
 
 Slow Glaze ir drošāka izvēle, ņemot vērā L&L brīdinājumu par ātru apdedzināšanu. Ja maksimālajā temperatūrā pievienojat noturēšanu, kas ilgāka par 5–10 minūtēm, L&L iesaka atbilstoši pazemināt mērķa temperatūru vai temperatūras korekciju un atzīmē: “Noturēšana augstā temperatūrā paātrina sildelementu un termopāra nolietošanos.”
 
@@ -498,12 +498,12 @@ Vidējas temperatūras glazūrām dažreiz rodas **adatas dūrieni**{{en: pinhol
 Table: Digitalfire PLC6DS, atdzesēšana un noturēšana konusam 6
 Label: Digitalfire PLC6DS
 
-| Solis |                         Ātrums |               Mērķis | Noturēšana                                          |
-| ----- | -----------------------------: | -------------------: | --------------------------------------------------- |
-| 1     |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minūšu                                           |
-| 2     |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pēc izvēles 30 minūšu, lai izzustu burbuļu mākoņi   |
-| 3     |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minūšu; lielās krāsnīs ilgāk                     |
-| 4     | Dzesēt ar {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minūšu                                           |
+| Solis |                           Ātrums |               Mērķis | Noturēšana                                        |
+| ----- | -------------------------------: | -------------------: | ------------------------------------------------- |
+| 1     |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minūšu                                         |
+| 2     |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pēc izvēles 30 minūšu, lai izzustu burbuļu mākoņi |
+| 3     |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minūšu; lielās krāsnīs ilgāk                   |
+| 4     | Dzesēt ar {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minūšu                                         |
 
 PLC6DS ilgst apmēram 9 stundas 36 minūtes. Šķidrāk plūstošām glazūrām Digitalfire tā vietā atdzesē par apmēram {{200 °F; 111 °C}}; pārāk liela atdzesēšana “rada kristalizācijas risku noturēšanas laikā”. Tās maksimālā temperatūra {{2200 °F; 1204 °C}} ir zemāka par tabulā konusam 6 doto {{2232 °F; 1222 °C}}; Digitalfire norāda, ka lielākā daļa krāsņu sasniedz konusu 6 apmēram {{2200 °F; 1204 °C}} temperatūrā. Pārbaudiet to ar konusu komplektu savā krāsnī.
 
@@ -516,8 +516,8 @@ Label: L un L kontrolēta dzesēšana
 
 | Solis |                          Ātrums |               Mērķis |
 | ----- | ------------------------------: | -------------------: |
-| 1     |            Sildīt ar pilnu jaudu | {{2232 °F; 1222 °C}} |
-| 2     |            Dzesēt maksimāli ātri | {{1900 °F; 1038 °C}} |
+| 1     |           Sildīt ar pilnu jaudu | {{2232 °F; 1222 °C}} |
+| 2     |           Dzesēt maksimāli ātri | {{1900 °F; 1038 °C}} |
 | 3     | Dzesēt ar {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Arī Skutt kontrolieri piedāvā izžāvēšanu krāsnī un vienas pakāpes dzesēšanas iespēju.

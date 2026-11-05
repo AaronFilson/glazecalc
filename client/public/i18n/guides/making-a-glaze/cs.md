@@ -157,11 +157,11 @@ Zdroje doporučují různá síta. Zakin prosévá dvakrát sítem 50 nebo 80 me
 Table: Jaké síto použít
 Label: Síto podle mesh
 
-| Glazura                                          | Síto                          |
-| ------------------------------------------------ | ----------------------------- |
-| Většina glazur                                   | Dva průchody sítem 80 mesh    |
-| Glazury s barvivy, jako je kobalt nebo železo    | 100 až 120 mesh               |
-| Popelové glazury a další s hrubými surovinami    | 60 až 80 mesh                 |
+| Glazura                                       | Síto                       |
+| --------------------------------------------- | -------------------------- |
+| Většina glazur                                | Dva průchody sítem 80 mesh |
+| Glazury s barvivy, jako je kobalt nebo železo | 100 až 120 mesh            |
+| Popelové glazury a další s hrubými surovinami | 60 až 80 mesh              |
 
 ## Měrná hmotnost {#specific-gravity}
 
@@ -183,11 +183,11 @@ Zdroje se neshodují, nejvíc u nanášení štětcem a stříkání, kde britsk
 Table: Cílové hodnoty měrné hmotnosti, ve kterých se zdroje neshodují
 Label: Cílové hodnoty měrné hmotnosti
 
-| Použití         | Digitalfire a Glazy                                                                                                                                                         | Potclays (UK)                                   | Bezpečný výchozí bod                                         |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------ |
-| Namáčení        | {{SG 1.40}} (pro namočení na 5 sekund) až {{SG 1.50}} (pro namočení na 1 sekundu); doma míchaným zgelovatělým glazurám se nejlépe daří při {{SG 1.43–1.45}}                 | Transparentní {{SG 1.46–1.48}}; barevné {{SG 1.61}} | {{SG 1.45}}; pokud kape, zřeďte na {{SG 1.43}} a zgelujte ji |
-| Nanášení štětcem | {{SG 1.25}} (řídká transparentní) až {{SG 1.55}} (tmavé detaily)                                                                                                            | {{SG 1.71–1.81}}                                | Řiďte se výrobkem; použijte CMC nebo glazovací médium        |
-| Stříkání        | Bez hodnoty; Hopper v článku pro Ceramic Arts Network píše o mnohem řidší glazuře se ztekucovadlem (přísadou, která suspenzi zředí)                                           | {{SG 1.71}}                                     | Spolehlivé číslo není; stříkejte jen ve stříkací kabině      |
+| Použití          | Digitalfire a Glazy                                                                                                                                         | Potclays (UK)                                       | Bezpečný výchozí bod                                         |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| Namáčení         | {{SG 1.40}} (pro namočení na 5 sekund) až {{SG 1.50}} (pro namočení na 1 sekundu); doma míchaným zgelovatělým glazurám se nejlépe daří při {{SG 1.43–1.45}} | Transparentní {{SG 1.46–1.48}}; barevné {{SG 1.61}} | {{SG 1.45}}; pokud kape, zřeďte na {{SG 1.43}} a zgelujte ji |
+| Nanášení štětcem | {{SG 1.25}} (řídká transparentní) až {{SG 1.55}} (tmavé detaily)                                                                                            | {{SG 1.71–1.81}}                                    | Řiďte se výrobkem; použijte CMC nebo glazovací médium        |
+| Stříkání         | Bez hodnoty; Hopper v článku pro Ceramic Arts Network píše o mnohem řidší glazuře se ztekucovadlem (přísadou, která suspenzi zředí)                         | {{SG 1.71}}                                         | Spolehlivé číslo není; stříkejte jen ve stříkací kabině      |
 
 Aby AMACO zkontrolovala glazuru na namáčení od oka, namáčí 5 sekund a hledá vrstvu přibližně tak silnou jako americká deseticentová mince (dime). Digitalfire pro kontrolu vypaluje střípky namáčené 5 sekund.
 
@@ -198,12 +198,12 @@ Tabulka níže je náš vlastní výpočet, ne údaj ze zdroje. Předpokládá, 
 Table: Voda pro cílovou měrnou hmotnost (náš odhad)
 Label: Voda pro cílovou měrnou hmotnost
 
-| Cíl         | Na 100 g prášku |  Na kilogram |                  Na libru |
-| ----------- | --------------: | -----------: | ------------------------: |
-| {{SG 1.40}} |     asi 115 mL  | asi 1150 mL  | asi 18 amerických fl oz   |
-| {{SG 1.45}} |      asi 98 mL  |  asi 980 mL  | asi 15 amerických fl oz   |
-| {{SG 1.50}} |      asi 85 mL  |  asi 850 mL  | asi 13 amerických fl oz   |
-| {{SG 1.60}} |      asi 64 mL  |  asi 640 mL  | asi 10 amerických fl oz   |
+| Cíl         | Na 100 g prášku | Na kilogram |                Na libru |
+| ----------- | --------------: | ----------: | ----------------------: |
+| {{SG 1.40}} |      asi 115 mL | asi 1150 mL | asi 18 amerických fl oz |
+| {{SG 1.45}} |       asi 98 mL |  asi 980 mL | asi 15 amerických fl oz |
+| {{SG 1.50}} |       asi 85 mL |  asi 850 mL | asi 13 amerických fl oz |
+| {{SG 1.60}} |       asi 64 mL |  asi 640 mL | asi 10 amerických fl oz |
 
 ### Měrná hmotnost suchých surovin vaší glazury, zjištěná při míchání
 
@@ -286,13 +286,13 @@ Willers cíl vystihuje dobře: „dost informací, abyste mohli výsledky, kter�
 Table: Co zapisovat u každé dávky glazury (naše šablona)
 Label: Šablona záznamu
 
-| Část      | Co si zapsat                                                                                                                                                                                                                                                                      |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recept    | Recept a jeho verze; značky surovin a čísla šarží; případné záměny                                                                                                                                                                                                                |
-| Míchání   | Datum; velikost dávky; přidaná voda a její druh (z vodovodu, z reverzní osmózy nebo destilovaná); měrná hmotnost po namíchání a konečná měrná hmotnost; hmotnost hotové suspenze, pro měrnou hmotnost suchých surovin; přidaná hořká sůl, CMC a bentonit; síto (mesh) a počet průchodů |
-| Nanášení  | Hmota; žároměrka přežahu; namáčení, nanášení štětcem nebo polévání; doba namáčení nebo počet vrstev; tloušťka za sucha                                                                                                                                                             |
-| Výpal     | Pec a poloha na plátě; vypalovací křivka s rampami, výdržemi a chlazením; atmosféra (oxidační nebo redukční); co ukázala kontrolní žároměrka, nejen na co byla pec nastavená                                                                                                       |
-| Výsledek  | Povrch a barva; případné stékání, trhlinkování nebo vpichy; fotografie zepředu, zezadu a z boku; kód střípku                                                                                                                                                                      |
+| Část     | Co si zapsat                                                                                                                                                                                                                                                                           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recept   | Recept a jeho verze; značky surovin a čísla šarží; případné záměny                                                                                                                                                                                                                     |
+| Míchání  | Datum; velikost dávky; přidaná voda a její druh (z vodovodu, z reverzní osmózy nebo destilovaná); měrná hmotnost po namíchání a konečná měrná hmotnost; hmotnost hotové suspenze, pro měrnou hmotnost suchých surovin; přidaná hořká sůl, CMC a bentonit; síto (mesh) a počet průchodů |
+| Nanášení | Hmota; žároměrka přežahu; namáčení, nanášení štětcem nebo polévání; doba namáčení nebo počet vrstev; tloušťka za sucha                                                                                                                                                                 |
+| Výpal    | Pec a poloha na plátě; vypalovací křivka s rampami, výdržemi a chlazením; atmosféra (oxidační nebo redukční); co ukázala kontrolní žároměrka, nejen na co byla pec nastavená                                                                                                           |
+| Výsledek | Povrch a barva; případné stékání, trhlinkování nebo vpichy; fotografie zepředu, zezadu a z boku; kód střípku                                                                                                                                                                           |
 
 > [!NOTE]
 > V aplikaci Glazecalc uchovává uložený [recept](/recipe) samotný recept. [Záznam výpalu](/firing) zaznamenává každý výpal: pec, datum, časy, teploty, žároměrky a poznámky. [Poznámky](/notes) uchovávají všechno ostatní, například výše uvedený záznam o dávce a co ukázal každý střípek.

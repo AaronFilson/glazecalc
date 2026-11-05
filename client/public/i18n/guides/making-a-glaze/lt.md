@@ -157,11 +157,11 @@ Vanduo taip pat skiriasi, ir Digitalfire pažymi, kad jis keičia suspensijos{{e
 Table: Kokį sietą naudoti
 Label: Sieto mesh
 
-| Glazūra                                            | Sietas                         |
-| -------------------------------------------------- | ------------------------------ |
-| Dauguma glazūrų                                    | Du perėjimai per 80 mesh       |
-| Glazūros su dažikliais, pavyzdžiui, kobaltu ar geležimi | 100–120 mesh              |
-| Pelenų glazūros ir kitos su stambiomis žaliavomis  | 60–80 mesh                     |
+| Glazūra                                                 | Sietas                   |
+| ------------------------------------------------------- | ------------------------ |
+| Dauguma glazūrų                                         | Du perėjimai per 80 mesh |
+| Glazūros su dažikliais, pavyzdžiui, kobaltu ar geležimi | 100–120 mesh             |
+| Pelenų glazūros ir kitos su stambiomis žaliavomis       | 60–80 mesh               |
 
 ## Santykinis tankis {#specific-gravity}
 
@@ -183,11 +183,11 @@ Digitalfire dar pažymi puodelį ties 500 g vandens lygiu, pripildo jį glazūro
 Table: Tikslinės santykinio tankio vertės, kur šaltiniai nesutaria
 Label: Tikslinės santykinio tankio vertės
 
-| Naudojimas      | Digitalfire ir Glazy                                                                                                                         | Potclays (JK)                                | Saugi pradžia                                                   |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------- |
-| Merkimas        | {{SG 1.40}} (5 sekundžių merkimui) iki {{SG 1.50}} (1 sekundės merkimui); namie maišytos sutirštėjusios glazūros geriausios esant {{SG 1.43–1.45}} | Skaidri: {{SG 1.46–1.48}}; spalvota: {{SG 1.61}} | {{SG 1.45}}; jei laša, praskieskite iki {{SG 1.43}} ir sutirštinkite |
-| Tepimas teptuku | {{SG 1.25}} (skysta skaidri) iki {{SG 1.55}} (tamsios detalės)                                                                               | {{SG 1.71–1.81}}                             | Laikykitės produkto nurodymų; naudokite glazūros klijus CMC arba priemonę glazūravimui teptuku |
-| Purškimas       | Skaičiaus nėra; Hopperis, rašantis Ceramic Arts Network, sako – gerokai skystesnė, su deflokuliantu (priedu, kuris suspensiją praskystina)  | {{SG 1.71}}                                  | Patikimo skaičiaus nėra; purkškite tik purškimo kameroje        |
+| Naudojimas      | Digitalfire ir Glazy                                                                                                                               | Potclays (JK)                                    | Saugi pradžia                                                                                  |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Merkimas        | {{SG 1.40}} (5 sekundžių merkimui) iki {{SG 1.50}} (1 sekundės merkimui); namie maišytos sutirštėjusios glazūros geriausios esant {{SG 1.43–1.45}} | Skaidri: {{SG 1.46–1.48}}; spalvota: {{SG 1.61}} | {{SG 1.45}}; jei laša, praskieskite iki {{SG 1.43}} ir sutirštinkite                           |
+| Tepimas teptuku | {{SG 1.25}} (skysta skaidri) iki {{SG 1.55}} (tamsios detalės)                                                                                     | {{SG 1.71–1.81}}                                 | Laikykitės produkto nurodymų; naudokite glazūros klijus CMC arba priemonę glazūravimui teptuku |
+| Purškimas       | Skaičiaus nėra; Hopperis, rašantis Ceramic Arts Network, sako – gerokai skystesnė, su deflokuliantu (priedu, kuris suspensiją praskystina)         | {{SG 1.71}}                                      | Patikimo skaičiaus nėra; purkškite tik purškimo kameroje                                       |
 
 Norėdama merkimo glazūrą patikrinti akimi, AMACO merkia 5 sekundes ir tikisi maždaug JAV dešimties centų monetos storio sluoksnio. Digitalfire tikrindama išdegia 5 sekundes merktus bandinius.
 
@@ -198,12 +198,12 @@ Norėdama merkimo glazūrą patikrinti akimi, AMACO merkia 5 sekundes ir tikisi 
 Table: Vanduo tikslinei santykinio tankio vertei (mūsų įvertis)
 Label: Vanduo tikslinei santykinio tankio vertei
 
-| Tikslas     | 100 g miltelių |      Kilogramui |              Svarui |
-| ----------- | -------------: | --------------: | ------------------: |
-| {{SG 1.40}} |   apie 115 mL  |   apie 1150 mL  | apie 18 US fl oz    |
-| {{SG 1.45}} |    apie 98 mL  |    apie 980 mL  | apie 15 US fl oz    |
-| {{SG 1.50}} |    apie 85 mL  |    apie 850 mL  | apie 13 US fl oz    |
-| {{SG 1.60}} |    apie 64 mL  |    apie 640 mL  | apie 10 US fl oz    |
+| Tikslas     | 100 g miltelių |   Kilogramui |           Svarui |
+| ----------- | -------------: | -----------: | ---------------: |
+| {{SG 1.40}} |    apie 115 mL | apie 1150 mL | apie 18 US fl oz |
+| {{SG 1.45}} |     apie 98 mL |  apie 980 mL | apie 15 US fl oz |
+| {{SG 1.50}} |     apie 85 mL |  apie 850 mL | apie 13 US fl oz |
+| {{SG 1.60}} |     apie 64 mL |  apie 640 mL | apie 10 US fl oz |
 
 ### Savo glazūros sausųjų miltelių santykinis tankis maišant
 
@@ -286,13 +286,13 @@ Willers tikslą nusako taikliai: „pakankamai informacijos, kad galėtumėte pa
 Table: Ką užrašyti apie kiekvieną glazūros užmaišą (mūsų šablonas)
 Label: Įrašo šablonas
 
-| Dalis      | Ką užrašyti                                                                                                                                                                                                                                                        |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Receptas   | Receptas ir jo versija; žaliavų prekės ženklai ir partijų numeriai; bet kokie pakeitimai                                                                                                                                                                           |
+| Dalis      | Ką užrašyti                                                                                                                                                                                                                                                                                |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Receptas   | Receptas ir jo versija; žaliavų prekės ženklai ir partijų numeriai; bet kokie pakeitimai                                                                                                                                                                                                   |
 | Maišymas   | Data; užmaišo dydis; įpiltas vanduo ir jo rūšis (vandentiekio, atvirkštinės osmozės ar distiliuotas); santykinis tankis po maišymo ir galutinis; paruoštos suspensijos masė sausųjų miltelių santykiniam tankiui; pridėta Epsom druskos, CMC ir bentonito; sieto mesh ir perėjimų skaičius |
-| Užnešimas  | Molio masė; biskvitinio degimo piroskopas; merkimas, tepimas teptuku ar liejimas; merkimo trukmė ar sluoksnių skaičius; sauso sluoksnio storis                                                                                                                     |
-| Degimas    | Krosnis ir vieta ant plokštės; degimo programa su kreivėmis, išlaikymais ir aušinimu; atmosfera (oksidacinė ar redukcinė); ką parodė kontrolinis piroskopas, o ne tik kas buvo nustatyta krosnyje                                                                 |
-| Rezultatas | Paviršius ir spalva; bet koks nubėgimas, trūkinėjimas ar adatinės skylutės; nuotraukos iš priekio, galo ir šono; bandinio kodas                                                                                                                                  |
+| Užnešimas  | Molio masė; biskvitinio degimo piroskopas; merkimas, tepimas teptuku ar liejimas; merkimo trukmė ar sluoksnių skaičius; sauso sluoksnio storis                                                                                                                                             |
+| Degimas    | Krosnis ir vieta ant plokštės; degimo programa su kreivėmis, išlaikymais ir aušinimu; atmosfera (oksidacinė ar redukcinė); ką parodė kontrolinis piroskopas, o ne tik kas buvo nustatyta krosnyje                                                                                          |
+| Rezultatas | Paviršius ir spalva; bet koks nubėgimas, trūkinėjimas ar adatinės skylutės; nuotraukos iš priekio, galo ir šono; bandinio kodas                                                                                                                                                            |
 
 > [!NOTE]
 > Programoje Glazecalc įrašytas [receptas](/recipe) saugo patį receptą. [Degimo žurnalas](/firing) įrašo kiekvieną degimą: krosnį, datą, laikus, temperatūras, piroskopus ir pastabas. [Užrašuose](/notes) laikoma visa kita, pavyzdžiui, aukščiau aprašytas užmaišo įrašas ir ką parodė kiekvienas bandinys.

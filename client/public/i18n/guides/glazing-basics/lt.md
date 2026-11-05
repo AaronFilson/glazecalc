@@ -43,10 +43,10 @@ Pirmasis, žemesnis degimas yra **biskvitinis degimas**{{en: bisque}} (JK – bi
 Table: Kaip biskvitas keičia glazūravimą (Digitalfire)
 Label: Kaip biskvitas keičia glazūravimą
 
-| Biskvitas                                        | Kas vyksta                                                             |
-| ------------------------------------------------ | ---------------------------------------------------------------------- |
-| Nepakankamai išdegtas, labai sugeriantis         | Glazūra užnešama per storai, paskui suskilinėja ir susitraukia         |
-| Perdegtas, tankus                                | Merkimas ir džiūvimas trunka ilgiau                                    |
+| Biskvitas                                          | Kas vyksta                                                           |
+| -------------------------------------------------- | -------------------------------------------------------------------- |
+| Nepakankamai išdegtas, labai sugeriantis           | Glazūra užnešama per storai, paskui suskilinėja ir susitraukia       |
+| Perdegtas, tankus                                  | Merkimas ir džiūvimas trunka ilgiau                                  |
 | Išdegtas karščiau arba ilgiau išlaikytas viršūnėje | Dabar išdega daugiau dujų, todėl vėliau pro glazūrą jų išeina mažiau |
 
 Potclays, Jungtinės Karalystės tiekėjas, aprašo biskvitinį degimą iki maždaug {{1000 °C; 1832 °F}}, apie piroskopą 06. Remdamiesi šiais šaltiniais kartu, pirmam biskvitiniam degimui siūlome piroskopus 06–04: {{1828–1945 °F; 998–1063 °C}} Ortono vidutine sparta.
@@ -64,11 +64,11 @@ Piroskopų numeriai eina nuo 022 iki 42. Nulis priekyje žymi vėsesniąją seri
 Table: Degimo ruožai: Ortono savaime stovintys piroskopai esant {{108 °F; 60 °C}} per valandą
 Label: Degimo ruožai
 
-| Ruožas           | Piroskopai |        °F |        °C | Kam naudojama                          |
-| ---------------- | ---------- | --------: | --------: | -------------------------------------- |
-| Žemas degimas    | 06–04      | 1828–1945 |  998–1063 | Žemo degimo keramikos glazūros; biskvitas |
-| Vidutinis degimas | 5–6       | 2167–2232 | 1186–1222 | Akmens masė ir porcelianas             |
-| Aukštas degimas  | 9–10       | 2300–2345 | 1260–1285 | Akmens masė ir porcelianas             |
+| Ruožas            | Piroskopai |        °F |        °C | Kam naudojama                             |
+| ----------------- | ---------- | --------: | --------: | ----------------------------------------- |
+| Žemas degimas     | 06–04      | 1828–1945 |  998–1063 | Žemo degimo keramikos glazūros; biskvitas |
+| Vidutinis degimas | 5–6        | 2167–2232 | 1186–1222 | Akmens masė ir porcelianas                |
+| Aukštas degimas   | 9–10       | 2300–2345 | 1260–1285 | Akmens masė ir porcelianas                |
 
 > [!NOTE]
 > Degimus įvardykite ir programuokite pagal piroskopą, o temperatūras laikykite apytikslėmis. **Kontrolinis piroskopas**{{en: witness cone}} ant plokštės tarp dirbinių arba trijų piroskopų **rinkinys**{{en: cone pack}} (orientacinis, degimo ir apsauginis) parodo, kokį šilumos poveikį iš tikrųjų gavo jūsų dirbiniai.
@@ -84,12 +84,12 @@ Už Šiaurės Amerikos ribų tiekėjai dažnai nurodo °C, o ne piroskopą. Šiu
 Table: Nuo recepto iki Segerio formulės: Glazy išspręstas pavyzdys
 Label: Nuo recepto iki Segerio formulės
 
-| Žingsnis            | Kas vyksta                                                                                                                       | Pavyzdyje                                                                                                                                     |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Receptas         | Žaliavos masės dalimis, perskaičiuotos iki 100                                                                                   | Lauko špatas 40 %, be kitų                                                                                                                    |
-| 2. Oksidų analizė   | Kaip maisto etiketė: kiekvienos žaliavos oksidai sudedami masės procentais, o dujos atmetamos                                    | Lauko špate 64,8 % silicio dioksido, todėl jo 40 % duoda 25,9 % SiO₂. Išdegtoje glazūroje 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
-| 3. Moliai           | Masės paverčiamos **moliais** (mol) – molekulių skaičiais, nes „gramai gali klaidinti, nes vieni oksidai sunkesni už kitus“      | 60,1 g SiO₂ yra vienas molis, taigi 67,4 g yra apie 1,12 mol                                                                                         |
-| 4. Segerio formulė  | Viskas padalijama iš fliusų sumos, kad fliusų suma būtų lygi 1                                                                   | Fliusų suma 0,303; padalijus gaunama K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                               |
+| Žingsnis           | Kas vyksta                                                                                                                  | Pavyzdyje                                                                                                                                  |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1. Receptas        | Žaliavos masės dalimis, perskaičiuotos iki 100                                                                              | Lauko špatas 40 %, be kitų                                                                                                                 |
+| 2. Oksidų analizė  | Kaip maisto etiketė: kiekvienos žaliavos oksidai sudedami masės procentais, o dujos atmetamos                               | Lauko špate 64,8 % silicio dioksido, todėl jo 40 % duoda 25,9 % SiO₂. Išdegtoje glazūroje 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
+| 3. Moliai          | Masės paverčiamos **moliais** (mol) – molekulių skaičiais, nes „gramai gali klaidinti, nes vieni oksidai sunkesni už kitus“ | 60,1 g SiO₂ yra vienas molis, taigi 67,4 g yra apie 1,12 mol                                                                               |
+| 4. Segerio formulė | Viskas padalijama iš fliusų sumos, kad fliusų suma būtų lygi 1                                                              | Fliusų suma 0,303; padalijus gaunama K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                             |
 
 Programos Glazecalc [recepto puslapis](/recipe) atlieka visus keturis žingsnius jums rašant ir rodo rezultatą trimis stulpeliais: fliusai (R₂O ir RO), kurių suma lygi 1; stabilizatoriai (R₂O₃: aliuminio oksidas, o boras dažnai priskiriamas čia); ir stiklą sudarantys oksidai (RO₂: silicio dioksidas). „Suvedimas į vienetą tėra mastelio keitimo įrankis“, – sako Glazy: du receptai iš skirtingų žaliavų, bet su ta pačia Segerio formule, „išdegti elgiasi beveik vienodai“. Taigi 1 yra bendras matas, o ne kiekis, kurį sveriate. Digitalfire priduria, kad metodas „žemesnėse temperatūrose veikia ne taip gerai“, kur boras nėra paprastas fliusas, ir kad Segerio formulės yra „lyginamosios ir geriausiai vertinamos kontekste“. Mygtukas **Palyginti** sulygina dviejų receptų formules oksidas po oksido.
 
@@ -100,11 +100,11 @@ Naudingiausias vienas skaičius yra **silicio dioksido ir aliuminio oksido santy
 Table: Ką rodo silicio dioksido ir aliuminio oksido santykis (Glazy)
 Label: SiO₂ : Al₂O₃
 
-| Santykis | Glazy vertinimas                                      |
-| -------: | ----------------------------------------------------- |
-|   Apie 9 | Rodo blizgų lydalą, jei pakanka šilumos               |
-|      5–7 | Būdinga daugeliui stabilių akmens masės glazūrų       |
-|      3–5 | Gali būti matinė arba nepakankamai išdegta            |
+| Santykis | Glazy vertinimas                                |
+| -------: | ----------------------------------------------- |
+|   Apie 9 | Rodo blizgų lydalą, jei pakanka šilumos         |
+|      5–7 | Būdinga daugeliui stabilių akmens masės glazūrų |
+|      3–5 | Gali būti matinė arba nepakankamai išdegta      |
 
 Glazy nenurodo, kuriam piroskopui šie skaičiai skirti. Laikykite juos apytiksliu orientyru akmens masės glazūroms, maždaug piroskopams 6–10. Digitalfire teigia, kad didesnis nei maždaug 8 santykis greičiausiai reiškia blizgią glazūrą, tačiau glazūra su boru gali būti blizgi ir esant 8 ar mažiau, o žemo degimo glazūra – net esant 6. Santykis 5–7 pats savaime nenumato nei blizgesio, nei matiškumo: ribą keičia fliusai, boras ir piroskopas. Glazy nurodo įprastą stabilių glazūrų fliusų santykį{{en: flux balance}} nuo 0,2 R₂O su 0,8 RO iki 0,3 R₂O su 0,7 RO. Daugiau šarmų daro lydalą skystesnį ir didina jo plėtimąsi, o kartu ir trūkinėjimo pavojų.
 
@@ -115,13 +115,13 @@ Glazy nenurodo, kuriam piroskopui šie skaičiai skirti. Laikykite juos apytiksl
 Table: Įprasti degimo nuostoliai (Digitalfire)
 Label: Degimo nuostoliai
 
-| Žaliava                                   | Įprasti LOI                                                                          |
-| ----------------------------------------- | ------------------------------------------------------------------------------------ |
-| Kreida (kalcio karbonatas), dolomitas     | Daugiau nei 40 %, daugiausia anglies dioksidas: 100 g kalcio karbonato išskiria apie 44 g |
-| Ličio karbonatas                          | Apie 60 %                                                                            |
-| Bario karbonatas, Gerstley Borate         | Daugiau nei 20 %                                                                     |
-| Kaolinas                                  | Apie 12–14 %, daugiausia jo kristaluose surištas vanduo                              |
-| Lauko špatai                              | Mažiau nei 1 %                                                                       |
+| Žaliava                               | Įprasti LOI                                                                               |
+| ------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Kreida (kalcio karbonatas), dolomitas | Daugiau nei 40 %, daugiausia anglies dioksidas: 100 g kalcio karbonato išskiria apie 44 g |
+| Ličio karbonatas                      | Apie 60 %                                                                                 |
+| Bario karbonatas, Gerstley Borate     | Daugiau nei 20 %                                                                          |
+| Kaolinas                              | Apie 12–14 %, daugiausia jo kristaluose surištas vanduo                                   |
+| Lauko špatai                          | Mažiau nei 1 %                                                                            |
 
 Dujos, išeinančios glazūrai jau pradėjus lydytis, turi prasiveržti pro ją ir, Digitalfire žodžiais, sukelia „burbulus, pūsles, adatines skylutes, susitraukimą“. Digitalfire bandyme talkas išskyrė dujas iki maždaug {{1650 °F; 899 °C}}. Padeda fritai, **kalcinuotos**{{en: calcined}} žaliavos (iš anksto įkaitintos, kad išeitų jų dujos) ir degimo pakeitimai.
 
@@ -154,21 +154,21 @@ Jūsų glazūra greičiausiai kitokia. Boras, kiti fliusai ir vėsesni piroskopa
 Table: Įprastos glazūrų žaliavos ir ką jos duoda
 Label: Įprastos glazūrų žaliavos
 
-| Žaliava (kiti pavadinimai)                                  | Duoda                  | Pastabos                                                                                                                                              |
-| ----------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kvarcas (titnagas)                                          | SiO₂                   | Glazūroms naudokite 325 mesh – labai smulkų malimą                                                                                                    |
-| Kaolinas (JK – china clay)                                  | Al₂O₃, SiO₂            | Pagrindinis aliuminio oksido šaltinis; taip pat padeda glazūrai nenusėsti                                                                             |
-| Plastiškas molis                                            | Al₂O₃, SiO₂            | Plastiškesnis už kaoliną, jame daugiau geležies ir organinių medžiagų                                                                                 |
-| Kalio lauko špatas, natrio lauko špatas, nefelino sienitas  | K₂O, Na₂O, Al₂O₃, SiO₂ | Fliusai su savo aliuminio oksidu ir silicio dioksidu. Nefelino sienitas – stiprus žemo ir vidutinio degimo fliusas. Seno recepto paprastas „lauko špatas“ gali reikšti bet kurį iš jų |
-| Kreida (kalcio karbonatas)                                  | CaO                    | Pagrindinis kalcio fliusas; išskiria anglies dioksidą                                                                                                 |
-| Volastonitas                                                | CaO, SiO₂              | Kalcis be anglies dioksido                                                                                                                            |
-| Dolomitas, talkas                                           | MgO, su CaO ar SiO₂    | Šilkiniai matiniai paviršiai; mažesnis plėtimasis                                                                                                     |
-| Cinko oksidas                                               | ZnO                    | Blizgesys ir kristalai; per didelis kiekis gali sukelti susitraukimą                                                                                  |
-| Boro fritai, Gerstley Borate, kolemanitas                   | B₂O₃                   | Būtini nuo piroskopo 06 iki piroskopo 6; fritai yra „vienodesni ir mažiau tirpūs nei nefrituoti boratai“                                              |
-| Ličio karbonatas                                            | Li₂O                   | Mažo plėtimosi fliusas; brangus, todėl naudojamas saikingai                                                                                           |
-| Stroncio karbonatas                                         | SrO                    | Mažiau toksiškas bario pakaitalas                                                                                                                     |
-| Bario karbonatas                                            | BaO                    | Nefrituotas toksiškas; iš glazūrų, kuriose daug bario, gali išsiskirti metalų                                                                         |
-| Bentonitas                                                  | Suspensija             | Labai smulkus molis, paprastai 1–2 %, kad glazūra nenusėstų. Daugiau nei 3 % gali suskaldyti džiūstančią glazūrą                                       |
+| Žaliava (kiti pavadinimai)                                 | Duoda                  | Pastabos                                                                                                                                                                              |
+| ---------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kvarcas (titnagas)                                         | SiO₂                   | Glazūroms naudokite 325 mesh – labai smulkų malimą                                                                                                                                    |
+| Kaolinas (JK – china clay)                                 | Al₂O₃, SiO₂            | Pagrindinis aliuminio oksido šaltinis; taip pat padeda glazūrai nenusėsti                                                                                                             |
+| Plastiškas molis                                           | Al₂O₃, SiO₂            | Plastiškesnis už kaoliną, jame daugiau geležies ir organinių medžiagų                                                                                                                 |
+| Kalio lauko špatas, natrio lauko špatas, nefelino sienitas | K₂O, Na₂O, Al₂O₃, SiO₂ | Fliusai su savo aliuminio oksidu ir silicio dioksidu. Nefelino sienitas – stiprus žemo ir vidutinio degimo fliusas. Seno recepto paprastas „lauko špatas“ gali reikšti bet kurį iš jų |
+| Kreida (kalcio karbonatas)                                 | CaO                    | Pagrindinis kalcio fliusas; išskiria anglies dioksidą                                                                                                                                 |
+| Volastonitas                                               | CaO, SiO₂              | Kalcis be anglies dioksido                                                                                                                                                            |
+| Dolomitas, talkas                                          | MgO, su CaO ar SiO₂    | Šilkiniai matiniai paviršiai; mažesnis plėtimasis                                                                                                                                     |
+| Cinko oksidas                                              | ZnO                    | Blizgesys ir kristalai; per didelis kiekis gali sukelti susitraukimą                                                                                                                  |
+| Boro fritai, Gerstley Borate, kolemanitas                  | B₂O₃                   | Būtini nuo piroskopo 06 iki piroskopo 6; fritai yra „vienodesni ir mažiau tirpūs nei nefrituoti boratai“                                                                              |
+| Ličio karbonatas                                           | Li₂O                   | Mažo plėtimosi fliusas; brangus, todėl naudojamas saikingai                                                                                                                           |
+| Stroncio karbonatas                                        | SrO                    | Mažiau toksiškas bario pakaitalas                                                                                                                                                     |
+| Bario karbonatas                                           | BaO                    | Nefrituotas toksiškas; iš glazūrų, kuriose daug bario, gali išsiskirti metalų                                                                                                         |
+| Bentonitas                                                 | Suspensija             | Labai smulkus molis, paprastai 1–2 %, kad glazūra nenusėstų. Daugiau nei 3 % gali suskaldyti džiūstančią glazūrą                                                                      |
 
 > [!WARNING]
 > Glazūrų žaliavos yra smulkūs milteliai. Silicio dioksido dulkės kenkia plaučiams iš pradžių be jokių simptomų, o kai kurios žaliavos, pavyzdžiui, bario karbonatas ir ličio karbonatas, yra nuodingos prarijus. Su milteliais elkitės atsargiai, valykite drėgnai ir dirbdami su sausomis žaliavomis dėvėkite gerai priglundantį respiratorių. Kaip tai daryti, paaiškinta vadovuose [Saugus maišymas ir vėdinimas](/guides/safe-mixing) ir [Neapnuodykite savo šeimos](/guides/home-safety).
@@ -192,15 +192,15 @@ Label: Įprastos glazūrų žaliavos
 Table: Įprasti dažikliai, bazinės glazūros procentais
 Label: Įprasti dažikliai
 
-| Dažiklis                | Įprastas pradinis kiekis                 | Spalvos ir pastabos                                                                                                                                  |
-| ----------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobaltas                | 0,1–2 % (šaltiniai nesutaria)            | Mėlyna, labai stiprus; link violetinės, kai bazinėje glazūroje yra magnio                                                                            |
-| Geležis                 | 0,5–10 %                                 | Rudos, gelsvai rudos ir raudonos oksidacinėje atmosferoje; redukcinėje atmosferoje ½–2 % duoda seladoną, 5–10 % – temmoku. Fliusas, todėl didelis kiekis verčia glazūrą nubėgti |
-| Varis                   | 1–3 %                                    | Žalia ar turkio oksidacinėje atmosferoje, raudona redukcinėje. Dėl jo iš glazūros gali išsiskirti metalų                                             |
-| Chromo oksidas          | Nuo mažiau nei 0,5 % iki 2 % (šaltiniai nesutaria) | Žalia; ruda, jei bazinėje glazūroje yra cinko, rožinė su alavu                                                                             |
-| Manganas                | 2–10 %                                   | Rudos ir violetinės                                                                                                                                  |
-| Rutilas                 | Apie 2–5 %                               | Margos, įvairiaspalvės spalvos; daugiau nei apie 5 % – šiurkštus ar matinis paviršius                                                                |
-| Pramoniniai pigmentai   | 2–12 %                                   | 2–4 % atspalviams, 5–8 % tonams, 10–12 % sodrioms spalvoms                                                                                           |
+| Dažiklis              | Įprastas pradinis kiekis                           | Spalvos ir pastabos                                                                                                                                                             |
+| --------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobaltas              | 0,1–2 % (šaltiniai nesutaria)                      | Mėlyna, labai stiprus; link violetinės, kai bazinėje glazūroje yra magnio                                                                                                       |
+| Geležis               | 0,5–10 %                                           | Rudos, gelsvai rudos ir raudonos oksidacinėje atmosferoje; redukcinėje atmosferoje ½–2 % duoda seladoną, 5–10 % – temmoku. Fliusas, todėl didelis kiekis verčia glazūrą nubėgti |
+| Varis                 | 1–3 %                                              | Žalia ar turkio oksidacinėje atmosferoje, raudona redukcinėje. Dėl jo iš glazūros gali išsiskirti metalų                                                                        |
+| Chromo oksidas        | Nuo mažiau nei 0,5 % iki 2 % (šaltiniai nesutaria) | Žalia; ruda, jei bazinėje glazūroje yra cinko, rožinė su alavu                                                                                                                  |
+| Manganas              | 2–10 %                                             | Rudos ir violetinės                                                                                                                                                             |
+| Rutilas               | Apie 2–5 %                                         | Margos, įvairiaspalvės spalvos; daugiau nei apie 5 % – šiurkštus ar matinis paviršius                                                                                           |
+| Pramoniniai pigmentai | 2–12 %                                             | 2–4 % atspalviams, 5–8 % tonams, 10–12 % sodrioms spalvoms                                                                                                                      |
 
 Dėl kobalto ir chromo kiekių iš tikrųjų ginčijamasi. Glazy teigia, kad mėlynai užtenka 0,1 % kobalto; Glendale Community College nurodo ½–2 % arba ½–3 % priklausomai nuo atmosferos; Birdie Boone žurnale Pottery Making Illustrated – 3 % ar mažiau. Chromo Boone nurodo mažiau nei 0,5 %, o Glendale – 2–3 %. Saugiausia pradėti nuo mažai ir padaryti **linijinę bandinių seriją**{{en: line blend}}: eilę bandinių, kuriuose vienos sudedamosios dalies kiekis žingsniais didėja nuo mažo iki didelio.
 
@@ -212,11 +212,11 @@ Bazinė glazūra keičia spalvą. Blizgi, skaidri bazinė glazūra duoda ryškia
 
 Table: Drumstikliai
 
-| Drumstiklis                                       | Įprastas kiekis              | Pastabos                                                                                                                   |
-| ------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cirkonio silikatas (Zircopax, Superpax, Ultrox)   | 10–15 % visiškam nepermatomumui | Pigesnis pasirinkimas; šie prekės ženklai – skirtingai sumaltas cirkonio silikatas, o smulkesni stipresni                |
-| Alavo oksidas                                     | Apie 5–7 % (mūsų įvertis)    | Brangus; aukštame degime silpnesnis, ir Digitalfire praneša, kad 4 % skaidrioje redukcinėje glazūroje piroskopui 10 nedavė jokio nepermatomumo |
-| Titano dioksidas                                  | Apie 5 % (mūsų įvertis)      | Šilkinis, peršviečiamas nepermatomumas; apie 5 % gali keisti paviršių, o gerokai daugiau dažnai duoda matinį paviršių su kristalais |
+| Drumstiklis                                     | Įprastas kiekis                 | Pastabos                                                                                                                                       |
+| ----------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cirkonio silikatas (Zircopax, Superpax, Ultrox) | 10–15 % visiškam nepermatomumui | Pigesnis pasirinkimas; šie prekės ženklai – skirtingai sumaltas cirkonio silikatas, o smulkesni stipresni                                      |
+| Alavo oksidas                                   | Apie 5–7 % (mūsų įvertis)       | Brangus; aukštame degime silpnesnis, ir Digitalfire praneša, kad 4 % skaidrioje redukcinėje glazūroje piroskopui 10 nedavė jokio nepermatomumo |
+| Titano dioksidas                                | Apie 5 % (mūsų įvertis)         | Šilkinis, peršviečiamas nepermatomumas; apie 5 % gali keisti paviršių, o gerokai daugiau dažnai duoda matinį paviršių su kristalais            |
 
 ## Glazūros ir šukės suderinamumas ir defektai {#fit-and-defects}
 
@@ -244,13 +244,13 @@ Keiskite po vieną dalyką ir išsaugokite savo bandinius.
 Table: Dažni glazūros defektai, jų įprastos priežastys ir pirmieji pataisymai
 Label: Dažni glazūros defektai
 
-| Defektas      | Kaip atrodo                                         | Dažnos priežastys                                                                                                                         | Pirmieji pataisymai                                                                                      |
-| ------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Susitraukimas | Glazūra susitraukia į lašus, palikdama pliką molį  | Dulkėtas ar riebaluotas biskvitas; storas, daug molio turintis sluoksnis, sutrūkinėjęs džiūdamas; cinkas, cirkonio silikatas ar alavas  | Nuvalykite biskvitą; glazūruokite plonesniu sluoksniu; dalį molio kalcinuokite; pridėkite rišiklio, pavyzdžiui, glazūros klijų CMC |
-| Adatinės skylutės | Mažos skylutės ar duobutės                      | Dujos iš šukės ar glazūros, kurios neužsilydė; nepakankamai išdegta ar klampi glazūra                                                     | Išlaikykite aukščiausioje temperatūroje maždaug pusvalandį; glazūruokite plonesniu sluoksniu; mažiau cinko ar rutilo |
-| Pūslėjimas    | Aštriabriauniai krateriai                           | Dažniausiai perdegimas; labai stori sluoksniai; lakūs fliusai aukštesnėje nei maždaug {{2192 °F; 1200 °C}} temperatūroje                 | Degkite žemesnėje temperatūroje; glazūruokite plonesniu sluoksniu. Dėl aštrių briaunų buitiniai indai tampa nesaugūs |
-| Nubėgimas     | Glazūra nuteka ant krosnies plokštės                | Per mažai aliuminio oksido; per storai, pavyzdžiui, kur persidengia liejimai; daug geležies                                               | Glazūruokite plonesniu sluoksniu; pridėkite aliuminio oksido; glazūrą laikykite gerokai virš dugno       |
-| Aušimo įtrūkimai | Įtrūkimai dirbinyje dėl aušimo ar kaitinimo       | Greitas aušimas per kvarco virsmą, {{1063 °F; 573 °C}}, arba kristobalito virsmą, maždaug {{428 °F; 220 °C}}; nevienodos sienelės; prastas suderinamumas | Per abu virsmus degkite lėtai, ir kaitindami, ir aušindami; vienodos sienelės                  |
+| Defektas          | Kaip atrodo                                       | Dažnos priežastys                                                                                                                                        | Pirmieji pataisymai                                                                                                                |
+| ----------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Susitraukimas     | Glazūra susitraukia į lašus, palikdama pliką molį | Dulkėtas ar riebaluotas biskvitas; storas, daug molio turintis sluoksnis, sutrūkinėjęs džiūdamas; cinkas, cirkonio silikatas ar alavas                   | Nuvalykite biskvitą; glazūruokite plonesniu sluoksniu; dalį molio kalcinuokite; pridėkite rišiklio, pavyzdžiui, glazūros klijų CMC |
+| Adatinės skylutės | Mažos skylutės ar duobutės                        | Dujos iš šukės ar glazūros, kurios neužsilydė; nepakankamai išdegta ar klampi glazūra                                                                    | Išlaikykite aukščiausioje temperatūroje maždaug pusvalandį; glazūruokite plonesniu sluoksniu; mažiau cinko ar rutilo               |
+| Pūslėjimas        | Aštriabriauniai krateriai                         | Dažniausiai perdegimas; labai stori sluoksniai; lakūs fliusai aukštesnėje nei maždaug {{2192 °F; 1200 °C}} temperatūroje                                 | Degkite žemesnėje temperatūroje; glazūruokite plonesniu sluoksniu. Dėl aštrių briaunų buitiniai indai tampa nesaugūs               |
+| Nubėgimas         | Glazūra nuteka ant krosnies plokštės              | Per mažai aliuminio oksido; per storai, pavyzdžiui, kur persidengia liejimai; daug geležies                                                              | Glazūruokite plonesniu sluoksniu; pridėkite aliuminio oksido; glazūrą laikykite gerokai virš dugno                                 |
+| Aušimo įtrūkimai  | Įtrūkimai dirbinyje dėl aušimo ar kaitinimo       | Greitas aušimas per kvarco virsmą, {{1063 °F; 573 °C}}, arba kristobalito virsmą, maždaug {{428 °F; 220 °C}}; nevienodos sienelės; prastas suderinamumas | Per abu virsmus degkite lėtai, ir kaitindami, ir aušindami; vienodos sienelės                                                      |
 
 ## Tinkamumas liestis su maistu {#food-safety}
 

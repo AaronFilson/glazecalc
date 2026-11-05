@@ -473,17 +473,17 @@ Glazurový výpal{{en: glaze firing}} roztaví glazuru na přežahnutém střepu
 Table: Přednastavené programy L&L a Bartlett pro glazurový výpal
 Label: Programy pro glazurový výpal
 
-| Segment                  |                                    Nárůst na |             Slow Glaze |             Fast Glaze |
-| ------------------------ | -------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                           {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Bez zvláštního kroku |
+| Segment                  |                                Nárůst na |             Slow Glaze |             Fast Glaze |
+| ------------------------ | ---------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Bez zvláštního kroku |
 | 2                        | {{250 °F; 139 °C}} pod konečnou teplotou | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                              Konečná teplota |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Doba ohřevu, prázdná pec |                                              |      Asi 6½–7½ hodiny |        Asi 3–4 hodiny |
+| 3                        |                          Konečná teplota |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Doba ohřevu, prázdná pec |                                          |       Asi 6½–7½ hodiny |         Asi 3–4 hodiny |
 
 Table: Kde končí segmenty 2 a 3 podle žároměrky (L&L a Bartlett)
 Label: Cílové teploty programů
 
-| Žároměrka |   Konec segmentu 2 |      Konečná teplota |
+| Žároměrka |     Konec segmentu 2 |      Konečná teplota |
 | --------- | -------------------: | -------------------: |
 | 06        |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04        |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
@@ -498,12 +498,12 @@ Středněteplotní glazury někdy vyjdou s **vpichy**{{en: pinholes}} (drobnými
 Table: Digitalfire PLC6DS, žároměrka 6, pokles a výdrž
 Label: Digitalfire PLC6DS
 
-| Krok |                           Rychlost |       Cílová teplota | Výdrž                                            |
-| ---- | ---------------------------------: | -------------------: | ------------------------------------------------ |
-| 1    |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                         |
-| 2    |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Volitelně 30 minut, aby zmizela mračna bublinek  |
-| 3    |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; ve velkých pecích déle                 |
-| 4    | Pokles rychlostí {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                         |
+| Krok |                                Rychlost |       Cílová teplota | Výdrž                                           |
+| ---- | --------------------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |                   {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                        |
+| 2    |                  {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Volitelně 30 minut, aby zmizela mračna bublinek |
+| 3    |                   {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; ve velkých pecích déle                |
+| 4    | Pokles rychlostí {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                        |
 
 PLC6DS trvá asi 9 hodin 36 minut. U tekutějších glazur Digitalfire snižuje teplotu místo toho asi o {{200 °F; 111 °C}}; příliš velký pokles „hrozí krystalizací během výdrže“. Jeho konečná teplota {{2200 °F; 1204 °C}} je nižší než {{2232 °F; 1222 °C}} pro žároměrku 6 v tabulce; Digitalfire uvádí, že většina pecí dosáhne žároměrky 6 přibližně při {{2200 °F; 1204 °C}}. Ověřte si to sadou tří žároměrek ve vlastní peci.
 
@@ -516,8 +516,8 @@ Label: Regulované chlazení L&L
 
 | Krok |                               Rychlost |       Cílová teplota |
 | ---- | -------------------------------------: | -------------------: |
-| 1    |                    Ohřev plnou rychlostí | {{2232 °F; 1222 °C}} |
-| 2    |                 Chlazení plnou rychlostí | {{1900 °F; 1038 °C}} |
+| 1    |                  Ohřev plnou rychlostí | {{2232 °F; 1222 °C}} |
+| 2    |               Chlazení plnou rychlostí | {{1900 °F; 1038 °C}} |
 | 3    | Pokles rychlostí {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Regulátory Skutt rovněž nabízejí předehřev a jednokrokové chlazení.

@@ -473,17 +473,17 @@ A mázas égetés{{en: glaze firing}} üveggé olvasztja a mázat a zsengélt á
 Table: Az L&L és a Bartlett gyári mázégető programjai
 Label: Gyári mázégető programok
 
-| Szegmens                    |                                   Felfűtés eddig |            Slow Glaze |             Fast Glaze |
-| --------------------------- | -----------------------------------------------: | ---------------------: | ---------------------: |
-| 1                           |                               {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Nincs külön lépés |
+| Szegmens                    |                            Felfűtés eddig |             Slow Glaze |             Fast Glaze |
+| --------------------------- | ----------------------------------------: | ---------------------: | ---------------------: |
+| 1                           |                        {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Nincs külön lépés |
 | 2                           | {{250 °F; 139 °C}} értékkel a csúcs alatt | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                           |                                          A csúcs |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Felfűtési idő, üres kemence |                                                  |  Körülbelül 6½–7½ óra |  Körülbelül 3–4 óra |
+| 3                           |                                   A csúcs |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Felfűtési idő, üres kemence |                                           |   Körülbelül 6½–7½ óra |     Körülbelül 3–4 óra |
 
 Table: A 2. és a 3. szegmens végpontja gúlánként (L&L és Bartlett)
 Label: A gyári programok célértékei
 
-| Gúla |  A 2. szegmens vége |                Csúcs |
+| Gúla |   A 2. szegmens vége |                Csúcs |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
@@ -498,12 +498,12 @@ A közepes tüzű mázakon néha **tűszúrások**{{en: pinholes}} (apró lyukak
 Table: Digitalfire PLC6DS, 6-os gúla, visszahűtés és hőntartás
 Label: Digitalfire PLC6DS
 
-| Lépés |                               Sebesség |                  Cél | Hőntartás                                               |
-| ----- | -------------------------------------: | -------------------: | ------------------------------------------------------- |
-| 1     |                  {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 perc                                                 |
-| 2     |                 {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Választhatóan 30 perc, a buborékfelhők eltüntetésére     |
-| 3     |                  {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 perc; nagy kemencékben hosszabb                      |
-| 4     | Lefelé, {{900 °F/h; 500 °C/h}} sebességgel | {{2100 °F; 1148 °C}} | 30 perc                                                 |
+| Lépés |                                   Sebesség |                  Cél | Hőntartás                                            |
+| ----- | -----------------------------------------: | -------------------: | ---------------------------------------------------- |
+| 1     |                      {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 perc                                              |
+| 2     |                     {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Választhatóan 30 perc, a buborékfelhők eltüntetésére |
+| 3     |                      {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 perc; nagy kemencékben hosszabb                   |
+| 4     | Lefelé, {{900 °F/h; 500 °C/h}} sebességgel | {{2100 °F; 1148 °C}} | 30 perc                                              |
 
 A PLC6DS körülbelül 9 óra 36 percig tart. Hígfolyósabb mázaknál a Digitalfire inkább körülbelül {{200 °F; 111 °C}} értékkel hűt vissza; a túl nagy visszahűtés „a hőntartás alatt kristályosodás veszélyével jár”. A {{2200 °F; 1204 °C}} csúcsa alacsonyabb, mint a táblázat {{2232 °F; 1222 °C}} értéke a 6-os gúlához; a Digitalfire szerint a legtöbb kemence körülbelül {{2200 °F; 1204 °C}} hőmérsékleten éri el a 6-os gúlát. Ellenőrizze gúlasorral a saját kemencéjében.
 
@@ -514,10 +514,10 @@ A **szabályozott hűtés**{{en: slow cooling}} azt jelenti, hogy a vezérlő be
 Table: Az L&L „User 6” programja: szabályozott hűtés 6-os gúlás mázakhoz
 Label: L&L szabályozott hűtés
 
-| Lépés |                                Sebesség |                  Cél |
-| ----- | --------------------------------------: | -------------------: |
+| Lépés |                                  Sebesség |                  Cél |
+| ----- | ----------------------------------------: | -------------------: |
 | 1     |                    Teljes sebességgel fel | {{2232 °F; 1222 °C}} |
-| 2     |                    Teljes sebességgel le | {{1900 °F; 1038 °C}} |
+| 2     |                     Teljes sebességgel le | {{1900 °F; 1038 °C}} |
 | 3     | Lefelé, {{150 °F/h; 83 °C/h}} sebességgel |  {{1500 °F; 816 °C}} |
 
 A Skutt vezérlői ugyanígy kínálnak előmelegítést és egylépéses hűtési lehetőséget.

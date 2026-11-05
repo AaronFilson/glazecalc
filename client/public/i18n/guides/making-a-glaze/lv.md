@@ -157,11 +157,11 @@ Avoti iesaka dažādus sietus. Zakins izkāš divreiz caur 50 vai 80 mesh. Derek
 Table: Kuru sietu izmantot
 Label: Sieta mesh
 
-| Glazūra                                         | Siets                     |
-| ----------------------------------------------- | ------------------------- |
-| Lielākā daļa glazūru                            | Divreiz caur 80 mesh      |
+| Glazūra                                              | Siets                |
+| ---------------------------------------------------- | -------------------- |
+| Lielākā daļa glazūru                                 | Divreiz caur 80 mesh |
 | Glazūras ar krāsvielām, piemēram, kobaltu vai dzelzi | 100–120 mesh         |
-| Pelnu glazūras un citas ar rupjām izejvielām     | 60–80 mesh                |
+| Pelnu glazūras un citas ar rupjām izejvielām         | 60–80 mesh           |
 
 ## Relatīvais blīvums {#specific-gravity}
 
@@ -183,11 +183,11 @@ Avoti nav vienisprātis, visvairāk par uzklāšanu ar otu un uzsmidzināšanu, 
 Table: Vēlamais relatīvais blīvums, kur avoti atšķiras
 Label: Vēlamais relatīvais blīvums
 
-| Lietojums           | Digitalfire un Glazy                                                                                                                         | Potclays (Apvienotā Karaliste)                       | Drošs sākumpunkts                                                     |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------- |
-| Iemērkšana          | {{SG 1.40}} (5 sekunžu iemērkšanai) līdz {{SG 1.50}} (1 sekundes iemērkšanai); mājās jauktām sabiezējušām glazūrām vislabāk {{SG 1.43–1.45}} | Caurspīdīgām {{SG 1.46–1.48}}; krāsainām {{SG 1.61}} | {{SG 1.45}}; ja tek, atšķaidiet līdz {{SG 1.43}} un sabiezējiet       |
-| Uzklāšana ar otu    | {{SG 1.25}} (plāna caurspīdīga) līdz {{SG 1.55}} (tumšas detaļas)                                                                            | {{SG 1.71–1.81}}                                     | Ievērojiet produkta norādījumus; lietojiet CMC vai otas mediju        |
-| Uzsmidzināšana      | Skaitļa nav; Hopers, rakstot Ceramic Arts Network, iesaka daudz šķidrāku, ar deflokulantu (piedevu, kas padara suspensiju šķidrāku)          | {{SG 1.71}}                                          | Uzticama skaitļa nav; smidziniet tikai smidzināšanas kabīnē           |
+| Lietojums        | Digitalfire un Glazy                                                                                                                         | Potclays (Apvienotā Karaliste)                       | Drošs sākumpunkts                                               |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| Iemērkšana       | {{SG 1.40}} (5 sekunžu iemērkšanai) līdz {{SG 1.50}} (1 sekundes iemērkšanai); mājās jauktām sabiezējušām glazūrām vislabāk {{SG 1.43–1.45}} | Caurspīdīgām {{SG 1.46–1.48}}; krāsainām {{SG 1.61}} | {{SG 1.45}}; ja tek, atšķaidiet līdz {{SG 1.43}} un sabiezējiet |
+| Uzklāšana ar otu | {{SG 1.25}} (plāna caurspīdīga) līdz {{SG 1.55}} (tumšas detaļas)                                                                            | {{SG 1.71–1.81}}                                     | Ievērojiet produkta norādījumus; lietojiet CMC vai otas mediju  |
+| Uzsmidzināšana   | Skaitļa nav; Hopers, rakstot Ceramic Arts Network, iesaka daudz šķidrāku, ar deflokulantu (piedevu, kas padara suspensiju šķidrāku)          | {{SG 1.71}}                                          | Uzticama skaitļa nav; smidziniet tikai smidzināšanas kabīnē     |
 
 Lai iemērkšanai paredzētu glazūru pārbaudītu ar aci, AMACO iemērc uz 5 sekundēm un meklē kārtu, kas ir apmēram ASV desmit centu monētas biezumā. Digitalfire pārbaudei apdedzina plāksnītes, kas iemērktas uz 5 sekundēm.
 
@@ -198,12 +198,12 @@ Zemāk dotā tabula ir mūsu pašu aprēķins, nevis kāda avota. Tā pieņem, k
 Table: Ūdens vēlamajam relatīvajam blīvumam (mūsu aplēse)
 Label: Ūdens vēlamajam relatīvajam blīvumam
 
-| Mērķis      | Uz 100 g pulvera |      Uz kilogramu |                   Uz mārciņu |
-| ----------- | ---------------: | ----------------: | ---------------------------: |
-| {{SG 1.40}} |   apmēram 115 mL |   apmēram 1150 mL | apmēram 18 ASV šķidruma unces |
-| {{SG 1.45}} |    apmēram 98 mL |    apmēram 980 mL | apmēram 15 ASV šķidruma unces |
-| {{SG 1.50}} |    apmēram 85 mL |    apmēram 850 mL | apmēram 13 ASV šķidruma unces |
-| {{SG 1.60}} |    apmēram 64 mL |    apmēram 640 mL | apmēram 10 ASV šķidruma unces |
+| Mērķis      | Uz 100 g pulvera |    Uz kilogramu |                    Uz mārciņu |
+| ----------- | ---------------: | --------------: | ----------------------------: |
+| {{SG 1.40}} |   apmēram 115 mL | apmēram 1150 mL | apmēram 18 ASV šķidruma unces |
+| {{SG 1.45}} |    apmēram 98 mL |  apmēram 980 mL | apmēram 15 ASV šķidruma unces |
+| {{SG 1.50}} |    apmēram 85 mL |  apmēram 850 mL | apmēram 13 ASV šķidruma unces |
+| {{SG 1.60}} |    apmēram 64 mL |  apmēram 640 mL | apmēram 10 ASV šķidruma unces |
 
 ### Savas glazūras sausā relatīvā blīvuma noteikšana jaukšanas laikā
 
@@ -286,13 +286,13 @@ Villerss mērķi formulē labi: “pietiekami daudz informācijas, lai varētu a
 Table: Ko pierakstīt par katru glazūras porciju (mūsu veidne)
 Label: Pierakstu veidne
 
-| Daļa          | Ko pierakstīt                                                                                                                                                                                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recepte       | Recepte un tās versija; izejvielu zīmoli un partijas numuri; jebkura aizstāšana                                                                                                                                                                                                  |
+| Daļa          | Ko pierakstīt                                                                                                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recepte       | Recepte un tās versija; izejvielu zīmoli un partijas numuri; jebkura aizstāšana                                                                                                                                                                                                             |
 | Jaukšana      | Datums; porcijas lielums; pievienotais ūdens un tā veids (krāna, reversās osmozes vai destilēts); rel. blīvums pēc jaukšanas un galīgais rel. blīvums; gatavās suspensijas masa, tās sausajam rel. blīvumam; pievienotā Epsoma sāls, CMC un bentonīts; sieta mesh un izkāšanas reižu skaits |
-| Uzklāšana     | Masa; biskvīta konuss; iemērkšana, uzklāšana ar otu vai apliešana; iemērkšanas laiks vai kārtu skaits; sausās kārtas biezums                                                                                                                                                       |
-| Apdedzināšana | Krāsns un vieta uz plaukta; apdedzināšanas programma ar rampām, noturēšanām un dzesēšanu; atmosfēra (oksidējošā vai reducējošā); ko parādīja kontrolkonuss, ne tikai to, kas bija iestatīts krāsnij                                                                               |
-| Rezultāts     | Virsma un krāsa; notecēšana, matplaisas vai adatas dūrieni; fotogrāfijas no priekšpuses, aizmugures un sāniem; plāksnītes kods                                                                                                                                                    |
+| Uzklāšana     | Masa; biskvīta konuss; iemērkšana, uzklāšana ar otu vai apliešana; iemērkšanas laiks vai kārtu skaits; sausās kārtas biezums                                                                                                                                                                |
+| Apdedzināšana | Krāsns un vieta uz plaukta; apdedzināšanas programma ar rampām, noturēšanām un dzesēšanu; atmosfēra (oksidējošā vai reducējošā); ko parādīja kontrolkonuss, ne tikai to, kas bija iestatīts krāsnij                                                                                         |
+| Rezultāts     | Virsma un krāsa; notecēšana, matplaisas vai adatas dūrieni; fotogrāfijas no priekšpuses, aizmugures un sāniem; plāksnītes kods                                                                                                                                                              |
 
 > [!NOTE]
 > Lietotnē Glazecalc saglabātā [recepte](/recipe) satur pašu recepti. [Apdedzināšanas žurnāls](/firing) pieraksta katru apdedzināšanu: krāsni, datumu, laikus, temperatūras, konusus un piezīmes. [Piezīmēs](/notes) glabājas viss pārējais, piemēram, iepriekš dotais porcijas pieraksts un tas, ko parādīja katra plāksnīte.

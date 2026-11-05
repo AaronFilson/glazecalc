@@ -157,11 +157,11 @@ Kilderne anbefaler forskellige mesh. Zakin sigter to gange gennem 50 eller 80 me
 Table: Hvilken sigte der skal bruges
 Label: Sigtens mesh
 
-| Glasur                                         | Sigte                          |
-| ---------------------------------------------- | ------------------------------ |
-| De fleste glasurer                             | To gange gennem 80 mesh        |
-| Glasurer med farvestoffer som kobolt eller jern | 100 til 120 mesh              |
-| Askeglasurer og andre med grove råvarer        | 60 til 80 mesh                 |
+| Glasur                                          | Sigte                   |
+| ----------------------------------------------- | ----------------------- |
+| De fleste glasurer                              | To gange gennem 80 mesh |
+| Glasurer med farvestoffer som kobolt eller jern | 100 til 120 mesh        |
+| Askeglasurer og andre med grove råvarer         | 60 til 80 mesh          |
 
 ## Massefylde {#specific-gravity}
 
@@ -183,11 +183,11 @@ Kilderne er uenige, mest om pensling og sprøjtning, hvor den britiske forhandle
 Table: Mål for massefylde, hvor kilderne er uenige
 Label: Mål for massefylde
 
-| Brug       | Digitalfire og Glazy                                                                                                                      | Potclays (Storbritannien)                    | Sikkert udgangspunkt                                       |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------------------- |
-| Dypning    | {{SG 1.40}} (til et dyp på 5 sekunder) til {{SG 1.50}} (til et dyp på 1 sekund); hjemmeblandede glasurer, der er geléagtige, er bedst ved {{SG 1.43–1.45}} | Transparent {{SG 1.46–1.48}}; farvet {{SG 1.61}} | {{SG 1.45}}; fortynd til {{SG 1.43}}, og gør den geléagtig, hvis den drypper |
-| Pensling   | {{SG 1.25}} (tynd transparent) til {{SG 1.55}} (mørke detaljer)                                                                           | {{SG 1.71–1.81}}                             | Følg produktet; brug CMC eller et malemedie                 |
-| Sprøjtning | Intet tal; Hopper skriver for Ceramic Arts Network, at den skal være meget tyndere, med et deflokkuleringsmiddel (en tilsætning, der gør en glasurvælling mere flydende) | {{SG 1.71}}                                  | Intet pålideligt tal; sprøjt kun i en sprøjtekabine         |
+| Brug       | Digitalfire og Glazy                                                                                                                                                     | Potclays (Storbritannien)                        | Sikkert udgangspunkt                                                         |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Dypning    | {{SG 1.40}} (til et dyp på 5 sekunder) til {{SG 1.50}} (til et dyp på 1 sekund); hjemmeblandede glasurer, der er geléagtige, er bedst ved {{SG 1.43–1.45}}               | Transparent {{SG 1.46–1.48}}; farvet {{SG 1.61}} | {{SG 1.45}}; fortynd til {{SG 1.43}}, og gør den geléagtig, hvis den drypper |
+| Pensling   | {{SG 1.25}} (tynd transparent) til {{SG 1.55}} (mørke detaljer)                                                                                                          | {{SG 1.71–1.81}}                                 | Følg produktet; brug CMC eller et malemedie                                  |
+| Sprøjtning | Intet tal; Hopper skriver for Ceramic Arts Network, at den skal være meget tyndere, med et deflokkuleringsmiddel (en tilsætning, der gør en glasurvælling mere flydende) | {{SG 1.71}}                                      | Intet pålideligt tal; sprøjt kun i en sprøjtekabine                          |
 
 For at bedømme en dyppeglasur med øjet dypper AMACO i 5 sekunder og ser efter et lag på tykkelse med en amerikansk dime (en lille mønt). Digitalfire brænder brikker, der er dyppet i 5 sekunder, for at kontrollere det.
 
@@ -198,12 +198,12 @@ Tabellen nedenfor er vores egen regning, ikke en kildes. Den forudsætter, at pu
 Table: Vand til en ønsket massefylde (vores skøn)
 Label: Vand til en ønsket massefylde
 
-| Mål         | Pr. 100 g pulver |       Pr. kilo |          Pr. pund |
-| ----------- | ---------------: | -------------: | ----------------: |
-| {{SG 1.40}} |     ca. 115 mL   |  ca. 1150 mL   | ca. 18 US fl oz   |
-| {{SG 1.45}} |      ca. 98 mL   |   ca. 980 mL   | ca. 15 US fl oz   |
-| {{SG 1.50}} |      ca. 85 mL   |   ca. 850 mL   | ca. 13 US fl oz   |
-| {{SG 1.60}} |      ca. 64 mL   |   ca. 640 mL   | ca. 10 US fl oz   |
+| Mål         | Pr. 100 g pulver |    Pr. kilo |        Pr. pund |
+| ----------- | ---------------: | ----------: | --------------: |
+| {{SG 1.40}} |       ca. 115 mL | ca. 1150 mL | ca. 18 US fl oz |
+| {{SG 1.45}} |        ca. 98 mL |  ca. 980 mL | ca. 15 US fl oz |
+| {{SG 1.50}} |        ca. 85 mL |  ca. 850 mL | ca. 13 US fl oz |
+| {{SG 1.60}} |        ca. 64 mL |  ca. 640 mL | ca. 10 US fl oz |
 
 ### Find glasurens egen tørre massefylde under blandingen
 
@@ -286,13 +286,13 @@ Willers udtrykker målet godt: »oplysninger nok til at kunne gentage, eller und
 Table: Hvad der skal noteres for hver glasurportion (vores skabelon)
 Label: Skabelon til notater
 
-| Del       | Hvad der skal skrives ned                                                                                                                                                                                                                                           |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Opskrift  | Opskriften og dens version; råvarernes mærker og partinumre; eventuelle udskiftninger                                                                                                                                                                              |
-| Blanding  | Dato; portionsstørrelse; tilsat vand og dets type (vandhanevand, omvendt osmose eller destilleret); massefylde efter blanding og endelig massefylde; den færdige glasurvællings vægt, til dens tørre massefylde; tilsat bittersalt, CMC og bentonit; sigtens mesh og antal gange |
-| Påføring  | Lermasse; forglødningens kegle; dypning, pensling eller overhældning; dyppetid eller antal lag; tør tykkelse                                                                                                                                                         |
-| Brænding  | Ovn og placering på ovnpladen; brændekurven med ramper, holdetider og afkøling; ovnatmosfære (oxidation eller reduktion); hvad kontrolkeglen viste, ikke kun hvad ovnen var indstillet til                                                                          |
-| Resultat  | Overflade og farve; eventuelt løb, krakelering eller nålestik; fotos af forside, bagside og side; brikkens kode                                                                                                                                                     |
+| Del      | Hvad der skal skrives ned                                                                                                                                                                                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Opskrift | Opskriften og dens version; råvarernes mærker og partinumre; eventuelle udskiftninger                                                                                                                                                                                            |
+| Blanding | Dato; portionsstørrelse; tilsat vand og dets type (vandhanevand, omvendt osmose eller destilleret); massefylde efter blanding og endelig massefylde; den færdige glasurvællings vægt, til dens tørre massefylde; tilsat bittersalt, CMC og bentonit; sigtens mesh og antal gange |
+| Påføring | Lermasse; forglødningens kegle; dypning, pensling eller overhældning; dyppetid eller antal lag; tør tykkelse                                                                                                                                                                     |
+| Brænding | Ovn og placering på ovnpladen; brændekurven med ramper, holdetider og afkøling; ovnatmosfære (oxidation eller reduktion); hvad kontrolkeglen viste, ikke kun hvad ovnen var indstillet til                                                                                       |
+| Resultat | Overflade og farve; eventuelt løb, krakelering eller nålestik; fotos af forside, bagside og side; brikkens kode                                                                                                                                                                  |
 
 > [!NOTE]
 > I Glazecalc rummer en gemt [opskrift](/recipe) selve opskriften. En [brændingsjournal](/firing) registrerer hver brænding: ovnen, datoen, tider, temperaturer, kegler og noter. [Noterne](/notes) rummer alt andet, fx portionsnotatet ovenfor og hvad hver brik viste.

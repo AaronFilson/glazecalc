@@ -43,10 +43,10 @@ Prvý, nižší výpal je **prežah**{{en: bisque}} (v Británii **biscuit**), z
 Table: Ako prežah mení glazovanie (Digitalfire)
 Label: Ako prežah mení glazovanie
 
-| Prežah                                      | Čo sa deje                                                         |
-| ------------------------------------------- | ------------------------------------------------------------------ |
-| Nedopálený, veľmi nasiakavý                 | Glazúra sa nanesie príliš hrubo, potom popraská a stiahne sa       |
-| Prepálený, hutný                            | Ponáranie a sušenie trvá dlhšie                                    |
+| Prežah                                                       | Čo sa deje                                                          |
+| ------------------------------------------------------------ | ------------------------------------------------------------------- |
+| Nedopálený, veľmi nasiakavý                                  | Glazúra sa nanesie príliš hrubo, potom popraská a stiahne sa        |
+| Prepálený, hutný                                             | Ponáranie a sušenie trvá dlhšie                                     |
 | Vypálený na vyššiu teplotu alebo s dlhšou výdržou na vrchole | Viac plynov vyhorí teraz, takže neskôr menej prebubláva cez glazúru |
 
 Potclays, britský dodávateľ, opisuje prežah na približne {{1000 °C; 1832 °F}}, asi kužeľ 06. Z týchto zdrojov spolu odporúčame na prvý prežah kužeľ 06 – 04: {{1828–1945 °F; 998–1063 °C}} pri Ortonovej strednej rýchlosti.
@@ -84,12 +84,12 @@ Mimo Severnej Ameriky dodávatelia často uvádzajú °C namiesto kužeľa. Herm
 Table: Od receptu k Segerovmu vzorcu: riešený príklad od Glazy
 Label: Od receptu k Segerovmu vzorcu
 
-| Krok                   | Čo sa deje                                                                                                                                  | V príklade                                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Receptúra           | Suroviny podľa hmotnosti, prepočítané na 100                                                                                                | Živec 40 % a ďalšie                                                                                                              |
-| 2. Oxidové zloženie    | Ako výživové údaje na obale: oxidy každej suroviny sa sčítajú v hmotnostných percentách a plyny sa vynechajú                              | Živec obsahuje 64,8 % oxidu kremičitého, takže jeho 40 % prinesie 25,9 % SiO₂. Vypálená glazúra má 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
-| 3. Móly                | Hmotnosti sa prevedú na **móly**, počty molekúl, pretože „gramy môžu byť zavádzajúce, lebo niektoré oxidy sú ťažšie ako iné“              | 60,1 g SiO₂ je jeden mól, takže 67,4 g je asi 1,12 mólu                                                                          |
-| 4. Segerov vzorec      | Všetko sa vydelí súčtom tavív, takže tavivá dávajú spolu 1                                                                                 | Tavivá dávajú spolu 0,303; po vydelení vyjde K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                            |
+| Krok                | Čo sa deje                                                                                                                   | V príklade                                                                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Receptúra        | Suroviny podľa hmotnosti, prepočítané na 100                                                                                 | Živec 40 % a ďalšie                                                                                                                                 |
+| 2. Oxidové zloženie | Ako výživové údaje na obale: oxidy každej suroviny sa sčítajú v hmotnostných percentách a plyny sa vynechajú                 | Živec obsahuje 64,8 % oxidu kremičitého, takže jeho 40 % prinesie 25,9 % SiO₂. Vypálená glazúra má 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
+| 3. Móly             | Hmotnosti sa prevedú na **móly**, počty molekúl, pretože „gramy môžu byť zavádzajúce, lebo niektoré oxidy sú ťažšie ako iné“ | 60,1 g SiO₂ je jeden mól, takže 67,4 g je asi 1,12 mólu                                                                                             |
+| 4. Segerov vzorec   | Všetko sa vydelí súčtom tavív, takže tavivá dávajú spolu 1                                                                   | Tavivá dávajú spolu 0,303; po vydelení vyjde K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                              |
 
 [Stránka receptu](/recipe) v aplikácii Glazecalc urobí všetky štyri kroky počas písania a výsledok zobrazí v troch stĺpcoch: tavivá (R₂O a RO), ktoré dávajú spolu 1; stabilizátory (R₂O₃: oxid hlinitý, často s bórom); a sklotvorné oxidy (RO₂: oxid kremičitý). „Prepočet na jednotku je len nástroj na zmenu mierky,“ píše Glazy: dva recepty z rôznych surovín, ale s rovnakým Segerovým vzorcom, „sa po výpale správajú takmer rovnako“. Jednotka je teda spoločné meradlo, nie množstvo, ktoré vážite. Digitalfire dodáva, že metóda „nefunguje tak dobre pri nižších teplotách“, kde bór nie je obyčajné tavivo, a že Segerove vzorce sú „porovnávacie a najlepšie sa posudzujú v súvislostiach“. Tlačidlo **Porovnať** porovná vzorce dvoch receptov oxid po oxide.
 
@@ -100,11 +100,11 @@ Najužitočnejšie jednotlivé číslo je **pomer SiO₂ : Al₂O₃**{{en: sili
 Table: Čo naznačuje pomer oxidu kremičitého k oxidu hlinitému (Glazy)
 Label: Pomer SiO₂ : Al₂O₃
 
-|  Pomer | Výklad Glazy                                    |
-| -----: | ----------------------------------------------- |
-| Asi 9  | Naznačuje lesklú taveninu, ak je dosť tepla     |
-| 5 – 7  | Typický pre mnohé stabilné glazúry na kameninu |
-| 3 – 5  | Môže byť matná alebo nedopálená                 |
+| Pomer | Výklad Glazy                                   |
+| ----: | ---------------------------------------------- |
+| Asi 9 | Naznačuje lesklú taveninu, ak je dosť tepla    |
+| 5 – 7 | Typický pre mnohé stabilné glazúry na kameninu |
+| 3 – 5 | Môže byť matná alebo nedopálená                |
 
 Glazy neuvádza, pre ktorý kužeľ tieto hodnoty platia. Berte ich ako hrubú orientáciu pre glazúry na kameninu, asi kužeľ 6 – 10. Digitalfire uvádza, že pomer nad asi 8 je pravdepodobne lesklý, ale glazúra s bórom môže byť lesklá pri 8 alebo menej a glazúra na nízky výpal dokonca pri 6. Pomer 5 – 7 sám osebe nepredpovedá ani lesk, ani matnosť: hranicu posúvajú tavivá, bór aj kužeľ. Glazy uvádza ako typický pomer tavív pre stabilné glazúry 0,2 R₂O s 0,8 RO až 0,3 R₂O s 0,7 RO. Viac alkálií robí taveninu tekutejšou a zvyšuje jej rozťažnosť, a tým aj riziko trhlinkovania.
 
@@ -115,13 +115,13 @@ Glazy neuvádza, pre ktorý kužeľ tieto hodnoty platia. Berte ich ako hrubú o
 Table: Typická strata žíhaním (Digitalfire)
 Label: Strata žíhaním
 
-| Surovina                               | Typická strata žíhaním                                                            |
-| -------------------------------------- | --------------------------------------------------------------------------------- |
-| Krieda (uhličitan vápenatý), dolomit   | Viac ako 40 %, hlavne oxid uhličitý: 100 g uhličitanu vápenatého uvoľní asi 44 g |
-| Uhličitan lítny                        | Asi 60 %                                                                          |
-| Uhličitan bárnatý, Gerstley Borate     | Viac ako 20 %                                                                     |
-| Kaolín                                 | Asi 12 – 14 %, hlavne voda viazaná v jeho kryštáloch                              |
-| Živce                                  | Menej ako 1 %                                                                     |
+| Surovina                             | Typická strata žíhaním                                                           |
+| ------------------------------------ | -------------------------------------------------------------------------------- |
+| Krieda (uhličitan vápenatý), dolomit | Viac ako 40 %, hlavne oxid uhličitý: 100 g uhličitanu vápenatého uvoľní asi 44 g |
+| Uhličitan lítny                      | Asi 60 %                                                                         |
+| Uhličitan bárnatý, Gerstley Borate   | Viac ako 20 %                                                                    |
+| Kaolín                               | Asi 12 – 14 %, hlavne voda viazaná v jeho kryštáloch                             |
+| Živce                                | Menej ako 1 %                                                                    |
 
 Plyn, ktorý odchádza po tom, čo sa glazúra začne taviť, musí ňou prebublať a spôsobuje, slovami Digitalfire, „bubliny, pľuzgiere, vpichy, sťahovanie“. V jednej skúške Digitalfire uvoľňoval mastenec plyn až do asi {{1650 °F; 899 °C}}. Pomáhajú frity, **kalcinované** suroviny (vopred zohriate, aby sa z nich plyny vypudili) a zmeny výpalu.
 
@@ -154,21 +154,21 @@ Severoamerické frity sa označujú výrobcom a číslom: Ferro Frit 3134 (Ferro
 Table: Bežné suroviny na glazúry a čo dodávajú
 Label: Bežné suroviny na glazúry
 
-| Surovina (iné názvy)                                         | Dodáva                 | Poznámky                                                                                                                                                           |
-| ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Kremeň (flint, quartz)                                       | SiO₂                   | Do glazúr používajte 325 mesh, veľmi jemne mletý                                                                                                                   |
-| Kaolín (v Británii china clay)                               | Al₂O₃, SiO₂            | Hlavný zdroj oxidu hlinitého; pomáha aj proti usadzovaniu glazúry                                                                                                  |
-| Ball clay                                                    | Al₂O₃, SiO₂            | Plastickejší ako kaolín, s viac železom a organickými látkami                                                                                                      |
-| Draselný živec, sodný živec, nefelinický syenit              | K₂O, Na₂O, Al₂O₃, SiO₂ | Tavivá s vlastným oxidom hlinitým a kremičitým. Nefelinický syenit je silné tavivo pri nízkom a strednom výpale. Obyčajný „živec“ v starom recepte môže znamenať ktorýkoľvek z nich |
-| Krieda (uhličitan vápenatý)                                  | CaO                    | Hlavné vápenaté tavivo; uvoľňuje oxid uhličitý                                                                                                                     |
-| Wollastonit                                                  | CaO, SiO₂              | Vápnik bez oxidu uhličitého                                                                                                                                        |
-| Dolomit, mastenec (talk)                                     | MgO, s CaO alebo SiO₂  | Hodvábne matné povrchy; nižšia rozťažnosť                                                                                                                          |
-| Oxid zinočnatý                                               | ZnO                    | Lesk a kryštály; priveľa môže spôsobiť sťahovanie                                                                                                                  |
-| Bórové frity, Gerstley Borate, kolemanit                     | B₂O₃                   | Nevyhnutné od kužeľa 06 po kužeľ 6; frity sú „stálejšej kvality a menej rozpustné než nefritované boritany“                                                         |
-| Uhličitan lítny                                              | Li₂O                   | Tavivo s nízkou rozťažnosťou; drahé, preto sa používa striedmo                                                                                                     |
-| Uhličitan strontnatý                                         | SrO                    | Menej toxická náhrada za bárium                                                                                                                                    |
-| Uhličitan bárnatý                                            | BaO                    | Toxický v surovom stave; glazúry s vysokým obsahom bária môžu vylúhovať                                                                                            |
-| Bentonit                                                     | Vznos                  | Veľmi jemný íl, zvyčajne 1 – 2 %, proti usadzovaniu. Viac ako 3 % môže spôsobiť praskanie glazúry pri sušení                                                       |
+| Surovina (iné názvy)                            | Dodáva                 | Poznámky                                                                                                                                                                            |
+| ----------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kremeň (flint, quartz)                          | SiO₂                   | Do glazúr používajte 325 mesh, veľmi jemne mletý                                                                                                                                    |
+| Kaolín (v Británii china clay)                  | Al₂O₃, SiO₂            | Hlavný zdroj oxidu hlinitého; pomáha aj proti usadzovaniu glazúry                                                                                                                   |
+| Ball clay                                       | Al₂O₃, SiO₂            | Plastickejší ako kaolín, s viac železom a organickými látkami                                                                                                                       |
+| Draselný živec, sodný živec, nefelinický syenit | K₂O, Na₂O, Al₂O₃, SiO₂ | Tavivá s vlastným oxidom hlinitým a kremičitým. Nefelinický syenit je silné tavivo pri nízkom a strednom výpale. Obyčajný „živec“ v starom recepte môže znamenať ktorýkoľvek z nich |
+| Krieda (uhličitan vápenatý)                     | CaO                    | Hlavné vápenaté tavivo; uvoľňuje oxid uhličitý                                                                                                                                      |
+| Wollastonit                                     | CaO, SiO₂              | Vápnik bez oxidu uhličitého                                                                                                                                                         |
+| Dolomit, mastenec (talk)                        | MgO, s CaO alebo SiO₂  | Hodvábne matné povrchy; nižšia rozťažnosť                                                                                                                                           |
+| Oxid zinočnatý                                  | ZnO                    | Lesk a kryštály; priveľa môže spôsobiť sťahovanie                                                                                                                                   |
+| Bórové frity, Gerstley Borate, kolemanit        | B₂O₃                   | Nevyhnutné od kužeľa 06 po kužeľ 6; frity sú „stálejšej kvality a menej rozpustné než nefritované boritany“                                                                         |
+| Uhličitan lítny                                 | Li₂O                   | Tavivo s nízkou rozťažnosťou; drahé, preto sa používa striedmo                                                                                                                      |
+| Uhličitan strontnatý                            | SrO                    | Menej toxická náhrada za bárium                                                                                                                                                     |
+| Uhličitan bárnatý                               | BaO                    | Toxický v surovom stave; glazúry s vysokým obsahom bária môžu vylúhovať                                                                                                             |
+| Bentonit                                        | Vznos                  | Veľmi jemný íl, zvyčajne 1 – 2 %, proti usadzovaniu. Viac ako 3 % môže spôsobiť praskanie glazúry pri sušení                                                                        |
 
 > [!WARNING]
 > Suroviny na glazúry sú jemné prášky. Prach oxidu kremičitého poškodzuje pľúca spočiatku bez príznakov a niektoré suroviny, napríklad uhličitan bárnatý a uhličitan lítny, sú po prehltnutí jedovaté. S práškami zaobchádzajte opatrne, upratujte na mokro a pri práci so suchými surovinami noste dobre priliehajúci respirátor. Návody [Bezpečné miešanie a vetranie](/guides/safe-mixing) a [Neotrávte svoju rodinu](/guides/home-safety) vysvetľujú ako.
@@ -192,15 +192,15 @@ Aj suroviny sa menia. Americký geologický prieskum (US Geological Survey) uvá
 Table: Bežné farbivá, v percentách základu
 Label: Bežné farbivá
 
-| Farbivo           | Bežné východiskové množstvo           | Farby a poznámky                                                                                                                         |
-| ----------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Kobalt            | 0,1 – 2 % (zdroje sa nezhodujú)       | Modrá, veľmi silná; do fialova, keď základ obsahuje horčík                                                                               |
-| Železo            | 0,5 – 10 %                            | Hnedé, okrové a červené odtiene pri oxidačnom výpale; pri redukcii dá ½ – 2 % seladon a 5 – 10 % tenmoku. Je to tavivo, takže veľa ho spôsobí stekanie glazúry |
-| Meď               | 1 – 3 %                               | Zelená alebo tyrkysová pri oxidačnom výpale, červená pri redukcii. Môže spôsobiť vylúhovanie z glazúry                                  |
-| Chróm             | Menej ako 0,5 % až 2 % (zdroje sa nezhodujú) | Zelená; hnedá, ak základ obsahuje zinok, ružová s cínom                                                                           |
-| Mangán            | 2 – 10 %                              | Hnedé a fialové odtiene                                                                                                                  |
-| Rutil             | Asi 2 – 5 %                           | Škvrnitá, pestrá farba; nad asi 5 % drsná alebo matná                                                                                    |
-| Komerčné farbítka | 2 – 12 %                              | 2 – 4 % na jemné odtiene, 5 – 8 % na stredné tóny, 10 – 12 % na sýte farby                                                               |
+| Farbivo           | Bežné východiskové množstvo                  | Farby a poznámky                                                                                                                                               |
+| ----------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalt            | 0,1 – 2 % (zdroje sa nezhodujú)              | Modrá, veľmi silná; do fialova, keď základ obsahuje horčík                                                                                                     |
+| Železo            | 0,5 – 10 %                                   | Hnedé, okrové a červené odtiene pri oxidačnom výpale; pri redukcii dá ½ – 2 % seladon a 5 – 10 % tenmoku. Je to tavivo, takže veľa ho spôsobí stekanie glazúry |
+| Meď               | 1 – 3 %                                      | Zelená alebo tyrkysová pri oxidačnom výpale, červená pri redukcii. Môže spôsobiť vylúhovanie z glazúry                                                         |
+| Chróm             | Menej ako 0,5 % až 2 % (zdroje sa nezhodujú) | Zelená; hnedá, ak základ obsahuje zinok, ružová s cínom                                                                                                        |
+| Mangán            | 2 – 10 %                                     | Hnedé a fialové odtiene                                                                                                                                        |
+| Rutil             | Asi 2 – 5 %                                  | Škvrnitá, pestrá farba; nad asi 5 % drsná alebo matná                                                                                                          |
+| Komerčné farbítka | 2 – 12 %                                     | 2 – 4 % na jemné odtiene, 5 – 8 % na stredné tóny, 10 – 12 % na sýte farby                                                                                     |
 
 Množstvá kobaltu a chrómu sú naozaj sporné. Glazy uvádza, že na modrú stačí 0,1 % kobaltu; Glendale Community College uvádza ½ – 2 % alebo ½ – 3 % podľa atmosféry; Birdie Boone v časopise Pottery Making Illustrated uvádza 3 % alebo menej. Pri chróme Boone uvádza menej ako 0,5 % a Glendale 2 – 3 %. Bezpečné je začať s malým množstvom a urobiť **skúšobný rad**{{en: line blend}}: rad skúšobných doštičiek, v ktorom sa jedna zložka postupne zvyšuje od malého po veľké množstvo.
 
@@ -212,11 +212,11 @@ Farbu mení aj základná glazúra. Lesklý transparentný základ dáva najjasn
 
 Table: Kalivá
 
-| Kalivo                              | Bežné množstvo             | Poznámky                                                                                                                          |
-| ----------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Zirkón (Zircopax, Superpax, Ultrox) | 10 – 15 % pre úplné krytie | Lacnejšia voľba; značky sú kremičitan zirkoničitý mletý na rôznu jemnosť a jemnejšie druhy sú silnejšie                           |
+| Kalivo                              | Bežné množstvo             | Poznámky                                                                                                                             |
+| ----------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Zirkón (Zircopax, Superpax, Ultrox) | 10 – 15 % pre úplné krytie | Lacnejšia voľba; značky sú kremičitan zirkoničitý mletý na rôznu jemnosť a jemnejšie druhy sú silnejšie                              |
 | Oxid ciničitý                       | Asi 5 – 7 % (náš odhad)    | Drahý; pri vysokom výpale slabší a Digitalfire uvádza, že 4 % nedali v transparentnej glazúre na kužeľ 10 pri redukcii žiadne krytie |
-| Oxid titaničitý                     | Asi 5 % (náš odhad)        | Hodvábne, priesvitné krytie; asi 5 % môže povrch zmeniť a oveľa viac často dáva matný povrch s kryštálmi                         |
+| Oxid titaničitý                     | Asi 5 % (náš odhad)        | Hodvábne, priesvitné krytie; asi 5 % môže povrch zmeniť a oveľa viac často dáva matný povrch s kryštálmi                             |
 
 ## Zladenie glazúry s črepom a chyby {#fit-and-defects}
 
@@ -244,13 +244,13 @@ Meňte vždy len jednu vec a skúšobné doštičky si uchovajte.
 Table: Bežné chyby glazúry, ich obvyklé príčiny a prvé riešenia
 Label: Bežné chyby glazúry
 
-| Chyba               | Ako vyzerá                                      | Bežné príčiny                                                                                                                               | Prvé riešenia                                                                          |
-| ------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Stiahnutie glazúry  | Glazúra sa stiahne do kvapiek a odhalí holú hlinu | Zaprášený alebo mastný prežahnutý črep; hrubá vrstva s veľa hlinou, ktorá pri sušení popraskala; zinok, zirkón alebo cín                   | Očistite prežahnutý črep; nanášajte tenšiu vrstvu; časť hliny kalcinujte; pridajte spojivo, napríklad CMC |
-| Vpichy              | Malé dierky alebo jamky                         | Plyn z hmoty alebo glazúry, ktorý sa nezacelil; nedopálená alebo príliš viskózna glazúra                                                    | Výdrž na konečnej teplote asi pol hodiny; tenšia vrstva; menej zinku alebo rutilu      |
-| Pľuzgiere           | Krátery s ostrými okrajmi                       | Zvyčajne prepálenie; veľmi hrubé vrstvy; prchavé tavivá nad asi {{2192 °F; 1200 °C}}                                                        | Vypaľujte na nižšiu teplotu; tenšia vrstva. Ostré okraje robia úžitkovú keramiku nebezpečnou |
-| Stekanie glazúry    | Glazúra steká na dosku                          | Málo oxidu hlinitého; príliš hrubá vrstva, napríklad kde sa polievanie prekrýva; veľa železa                                               | Tenšia vrstva; pridajte oxid hlinitý; glazúru držte vysoko nad dnom                    |
-| Praskanie črepu pri chladnutí | Trhliny vo výrobku od chladnutia alebo ohrevu | Rýchle chladnutie cez modifikačnú premenu kremeňa, {{1063 °F; 573 °C}}, alebo kristobalitu, asi {{428 °F; 220 °C}}; nerovnomerné steny; zlé zladenie | Vypaľujte pomaly cez obe, pri ohreve aj chladnutí; rovnomerné steny                    |
+| Chyba                         | Ako vyzerá                                        | Bežné príčiny                                                                                                                                        | Prvé riešenia                                                                                             |
+| ----------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Stiahnutie glazúry            | Glazúra sa stiahne do kvapiek a odhalí holú hlinu | Zaprášený alebo mastný prežahnutý črep; hrubá vrstva s veľa hlinou, ktorá pri sušení popraskala; zinok, zirkón alebo cín                             | Očistite prežahnutý črep; nanášajte tenšiu vrstvu; časť hliny kalcinujte; pridajte spojivo, napríklad CMC |
+| Vpichy                        | Malé dierky alebo jamky                           | Plyn z hmoty alebo glazúry, ktorý sa nezacelil; nedopálená alebo príliš viskózna glazúra                                                             | Výdrž na konečnej teplote asi pol hodiny; tenšia vrstva; menej zinku alebo rutilu                         |
+| Pľuzgiere                     | Krátery s ostrými okrajmi                         | Zvyčajne prepálenie; veľmi hrubé vrstvy; prchavé tavivá nad asi {{2192 °F; 1200 °C}}                                                                 | Vypaľujte na nižšiu teplotu; tenšia vrstva. Ostré okraje robia úžitkovú keramiku nebezpečnou              |
+| Stekanie glazúry              | Glazúra steká na dosku                            | Málo oxidu hlinitého; príliš hrubá vrstva, napríklad kde sa polievanie prekrýva; veľa železa                                                         | Tenšia vrstva; pridajte oxid hlinitý; glazúru držte vysoko nad dnom                                       |
+| Praskanie črepu pri chladnutí | Trhliny vo výrobku od chladnutia alebo ohrevu     | Rýchle chladnutie cez modifikačnú premenu kremeňa, {{1063 °F; 573 °C}}, alebo kristobalitu, asi {{428 °F; 220 °C}}; nerovnomerné steny; zlé zladenie | Vypaľujte pomaly cez obe, pri ohreve aj chladnutí; rovnomerné steny                                       |
 
 ## Bezpečnosť pri styku s potravinami {#food-safety}
 
