@@ -752,19 +752,6 @@
       "pint": "Haluttu pinttipaino, unssia"
     },
     "drySg": "Kuivien raaka-aineiden ominaispaino",
-    "batch": "Kuivaa lasitetta uuteen erään, {unit}",
-    "contents": "Ominaispainolla {sg} sangossa on {glaze} kuivaa lasitetta ja {water} vettä.",
-    "add": "Ominaispainon {target} saavuttamiseksi lisää {water} vettä. Lopputulos on noin {volume}.",
-    "pourOff": "Ominaispainon {target} saavuttamiseksi anna laskeutua ja kaada pois {water} kirkasta vettä. Lopputulos on noin {volume}.",
-    "already": "Ominaispaino on jo {target}.",
-    "mix": "Sekoita {glaze} kuivaa lasitetta ja {water} vettä, jolloin saadaan noin {volume} ominaispainolla {target}.",
-    "badSg": "Ominaispainon on oltava suurempi kuin 1 (veden) ja pienempi kuin kuivien raaka-aineiden {dry}.",
-    "badDry": "Kuivien raaka-aineiden ominaispainon on oltava suurempi kuin 1.",
-    "note": "Vesi mitataan painon mukaan: litra painaa kilogramman, Yhdysvaltain gallona noin 8,3 lb. Laskelma olettaa tilavuuksien summautuvan, mikä on lähellä totuutta mutta ei tarkka: lisää vettä vähän kerrallaan, sekoita ja mittaa uudelleen. Kaksi lasitetta samalla ominaispainolla voi silti valua eri tavoin.",
-    "saveTarget": "Tallenna ominaispaino {sg} tämän reseptin tavoitteeksi",
-    "targetSaved": "Ominaispaino {sg} on tämän reseptin tavoite. Se säilyy reseptin mukana, kun resepti tallennetaan.",
-    "targetKept": "Reseptin tavoite on ominaispaino {sg}.",
-    "clearTarget": "Poista tavoite",
     "drySgEmpty": "Sitä tarvitaan vain kuivien painojen laskemiseen; lisättävä vesi ei sitä tarvitse. Kirjoita se, jos tiedät sen.",
     "drySgNeeded": "Kirjoita kuivien raaka-aineiden ominaispaino, niin näet kuivan lasitteen määrän sangossa ja uuden erän vesimäärän.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Tälle reseptille ei ole arviota: näiden ominaispainoa ei tunneta: {names}. Kirjoita se, jos tiedät sen.",
       "was": "Omaa lukuasi käytetään. Arvio oli {sg}; tyhjennä kenttä palataksesi siihen."
     },
-    "badSgWater": "Ominaispainon on oltava suurempi kuin 1 (veden)."
+    "batch": "Kuivaa lasitetta uuteen erään, {unit}",
+    "contents": "Ominaispainolla {sg} sangossa on {glaze} kuivaa lasitetta ja {water} vettä.",
+    "add": "Ominaispainon {target} saavuttamiseksi lisää {water} vettä. Lopputulos on noin {volume}.",
+    "pourOff": "Ominaispainon {target} saavuttamiseksi anna laskeutua ja kaada pois {water} kirkasta vettä. Lopputulos on noin {volume}.",
+    "already": "Ominaispaino on jo {target}.",
+    "mix": "Sekoita {glaze} kuivaa lasitetta ja {water} vettä, jolloin saadaan noin {volume} ominaispainolla {target}.",
+    "badSg": "Ominaispainon on oltava suurempi kuin 1 (veden) ja pienempi kuin kuivien raaka-aineiden {dry}.",
+    "badSgWater": "Ominaispainon on oltava suurempi kuin 1 (veden).",
+    "badDry": "Kuivien raaka-aineiden ominaispainon on oltava suurempi kuin 1.",
+    "note": "Vesi mitataan painon mukaan: litra painaa kilogramman, Yhdysvaltain gallona noin 8,3 lb. Laskelma olettaa tilavuuksien summautuvan, mikä on lähellä totuutta mutta ei tarkka: lisää vettä vähän kerrallaan, sekoita ja mittaa uudelleen. Kaksi lasitetta samalla ominaispainolla voi silti valua eri tavoin.",
+    "saveTarget": "Tallenna ominaispaino {sg} tämän reseptin tavoitteeksi",
+    "targetSaved": "Ominaispaino {sg} on tämän reseptin tavoite. Se säilyy reseptin mukana, kun resepti tallennetaan.",
+    "targetKept": "Reseptin tavoite on ominaispaino {sg}.",
+    "clearTarget": "Poista tavoite"
   },
   "import": {
     "title": "Reseptien liittäminen",

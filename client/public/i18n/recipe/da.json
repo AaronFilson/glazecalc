@@ -752,19 +752,6 @@
       "pint": "Den ønskede pintvægt, oz"
     },
     "drySg": "De tørre råvarers SG",
-    "batch": "Tør glasur til en ny portion, {unit}",
-    "contents": "Ved SG {sg} indeholder spanden {glaze} tør glasur og {water} vand.",
-    "add": "For at nå SG {target}, tilsæt {water} vand. Den ender på omkring {volume}.",
-    "pourOff": "For at nå SG {target}, lad den bundfælde sig, og hæld {water} klart vand fra. Den ender på omkring {volume}.",
-    "already": "Den er allerede på SG {target}.",
-    "mix": "Bland {glaze} tør glasur med {water} vand til omkring {volume} ved SG {target}.",
-    "badSg": "En SG skal være højere end 1 (vandets) og lavere end de tørre råvarers {dry}.",
-    "badDry": "De tørre råvarers SG skal være højere end 1.",
-    "note": "Vandet angives efter vægt: en liter vejer et kilogram, en amerikansk gallon omkring 8,3 lb. Regnestykket lægger volumenerne sammen, hvilket er tæt på, men ikke nøjagtigt: tilsæt vandet lidt ad gangen, rør rundt, og mål igen. To glasurer med samme SG kan stadig flyde forskelligt.",
-    "saveTarget": "Gem SG {sg} som opskriftens målværdi",
-    "targetSaved": "SG {sg} er opskriftens målværdi. Den gemmes sammen med opskriften, når den gemmes.",
-    "targetKept": "Opskriftens målværdi er SG {sg}.",
-    "clearTarget": "Fjern målværdien",
     "drySgEmpty": "Kun de tørre vægte har brug for den; vandet, der skal tilsættes, har ikke. Skriv den, hvis den kendes.",
     "drySgNeeded": "Skriv de tørre råvarers massefylde for at se den tørre glasur i spanden og vandet til en ny portion.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Intet skøn for denne opskrift: Massefylden af {names} kendes ikke. Skriv den, hvis den kendes.",
       "was": "Det indtastede tal bruges. Skønnet var {sg}; ryd feltet for at gå tilbage til det."
     },
-    "badSgWater": "En massefylde skal være over 1 (vands)."
+    "batch": "Tør glasur til en ny portion, {unit}",
+    "contents": "Ved SG {sg} indeholder spanden {glaze} tør glasur og {water} vand.",
+    "add": "For at nå SG {target}, tilsæt {water} vand. Den ender på omkring {volume}.",
+    "pourOff": "For at nå SG {target}, lad den bundfælde sig, og hæld {water} klart vand fra. Den ender på omkring {volume}.",
+    "already": "Den er allerede på SG {target}.",
+    "mix": "Bland {glaze} tør glasur med {water} vand til omkring {volume} ved SG {target}.",
+    "badSg": "En SG skal være højere end 1 (vandets) og lavere end de tørre råvarers {dry}.",
+    "badSgWater": "En massefylde skal være over 1 (vands).",
+    "badDry": "De tørre råvarers SG skal være højere end 1.",
+    "note": "Vandet angives efter vægt: en liter vejer et kilogram, en amerikansk gallon omkring 8,3 lb. Regnestykket lægger volumenerne sammen, hvilket er tæt på, men ikke nøjagtigt: tilsæt vandet lidt ad gangen, rør rundt, og mål igen. To glasurer med samme SG kan stadig flyde forskelligt.",
+    "saveTarget": "Gem SG {sg} som opskriftens målværdi",
+    "targetSaved": "SG {sg} er opskriftens målværdi. Den gemmes sammen med opskriften, når den gemmes.",
+    "targetKept": "Opskriftens målværdi er SG {sg}.",
+    "clearTarget": "Fjern målværdien"
   },
   "import": {
     "title": "Indsæt opskrifter",
