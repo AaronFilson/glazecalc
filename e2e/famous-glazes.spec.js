@@ -1,7 +1,7 @@
 // Famous glazes (docs/famous-glazes.md): a published glaze's page renders, prerendered, with its history
 // notice and its lead-free version marked "calculated, not yet test-fired"; an unpublished glaze, the tests'
 // fixture and any other slug are the not-found page. The fixture's page renders when the published file
-// is stubbed to hold it, as it would once published.
+// (the English one, /i18n/famous-glazes/en.json) is stubbed to hold it, as it would once published.
 const { test, expect } = require('@playwright/test');
 const famous = require('../lib/famous-glazes');
 
@@ -39,8 +39,8 @@ test.describe('famous glazes', () => {
   });
 
   test("the fixture's page renders from the published file, and opens its recipe", async ({ page }) => {
-    await page.route('**/i18n/famous-glazes/published.json', (route) =>
-      route.fulfill({ json: [famous.resolveGlaze(fixture)] })
+    await page.route('**/i18n/famous-glazes/en.json', (route) =>
+      route.fulfill({ json: [famous.glazeIn(famous.resolveGlaze(fixture), 'en')] })
     );
     // The server has no such page (404, its index.html not prerendered), so the app reads the stubbed file.
     await page.goto('/famous-glazes/fixture-celadon');

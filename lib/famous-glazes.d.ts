@@ -70,3 +70,6 @@ export function glazeTranslatedIn(glaze: FamousGlaze, code: string): boolean;
 export function hasLead(glaze: FamousGlaze): boolean;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function resolveGlaze(glaze: FamousGlaze): any;
+/** A resolved glaze with its prose in English and one language only. */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function glazeIn(resolved: any, code: string): any;

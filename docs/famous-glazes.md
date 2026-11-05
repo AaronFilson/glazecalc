@@ -41,9 +41,12 @@ A glaze is on the site only when it is `published: true`, it is not the fixture,
   test tiles before using it (owner's decision).
 
 `scripts/famous-glazes.mjs` (run by `npm run build`, `watch` and `dev`) writes the published glazes, with every
-material resolved to its full record, to `dist/i18n-generated/famous-glazes/published.json`. That file is served as
-`/i18n/famous-glazes/published.json`, and the prerender reads it the same way. The script **stops the build** if a
-glaze is marked published but fails the bar.
+material resolved to its full record, to one file per language, `dist/i18n-generated/famous-glazes/<language>.json`,
+served as `/i18n/famous-glazes/<language>.json`. Each file keeps every piece of the glazes' prose in English and that
+language only (`glazeIn`), so the page shows the language's words or the English, marked as such. A page loads the
+file of its own language (`PAGE_LANGUAGE`), and the prerender reads it the same way. Every prerendered page carries
+the file it loads, so one file with all the languages made the pages too big for the prerender's limit. The script
+**stops the build** if a glaze is marked published but fails the bar.
 
 ## Pages and addresses
 
@@ -95,6 +98,6 @@ yet, so for now the pages are indexed in English only.
   notice, the "not yet test-fired" label) and the index.
 - **e2e** (`e2e/famous-glazes.spec.js`): the published İznik page renders, with its label and its lead-free
   version. An unpublished glaze, the fixture and an unknown slug get 404. The fixture page renders from a stubbed
-  `published.json`.
+  `en.json`.
 - **Fixture**: `data/famous-glazes/fixtures/fixture-celadon.json` meets the bar with library materials. It is for
   tests only and is never published (`fixture: true`).

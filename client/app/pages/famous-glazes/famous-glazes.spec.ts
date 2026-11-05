@@ -9,9 +9,9 @@ import { httpMock, settle, skippedHeadings, testProviders } from '../../testing/
 import { STANDARD_MATERIALS } from '../materials/standard-materials';
 import { FamousGlazePage } from './famous-glaze-page';
 import {
-  FAMOUS_GLAZES_URL,
   FamousGlaze,
   FamousGlazes,
+  famousGlazesUrl,
   localVersion,
   nativeRecipe,
   nativeUnity,
@@ -101,13 +101,22 @@ describe("a famous glaze's route", () => {
       knownFamousGlaze({} as never, [{ path: 'famous-glazes' }, { path: 'fixture-celadon' }] as never, {} as never)
     ) as Promise<boolean>;
     await settle();
-    httpMock().expectOne(FAMOUS_GLAZES_URL).flush([fixture]);
+    httpMock().expectOne(famousGlazesUrl('en')).flush([fixture]);
     expect(await matched).toBe(true);
     const service = TestBed.inject(FamousGlazes);
     expect(await service.bySlug('shino')).toBeUndefined();
     const route = { paramMap: convertToParamMap({ slug: 'fixture-celadon' }) } as unknown as ActivatedRouteSnapshot;
     const glaze = await TestBed.runInInjectionContext(() => famousGlazeOf(route, {} as never) as Promise<FamousGlaze>);
     expect(glaze.slug).toBe('fixture-celadon');
+  });
+
+  it("reads the file of the page's language only", async () => {
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({ providers: [...testProviders(), { provide: PAGE_LANGUAGE, useValue: 'ta' }] });
+    const all = TestBed.inject(FamousGlazes).all();
+    await settle();
+    httpMock().expectOne('/i18n/famous-glazes/ta.json').flush([fixture]);
+    expect((await all).map((glaze) => glaze.slug)).toEqual(['fixture-celadon']);
   });
 });
 

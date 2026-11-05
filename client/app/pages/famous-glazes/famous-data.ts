@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import type { Additive, Material } from '../../core/models';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 
 // Famous glazes (docs/famous-glazes.md): the published glazes, as the build writes them
 // (scripts/famous-glazes.mjs, from lib/famous-glazes.js). Kept apart from the chemistry
@@ -52,17 +53,21 @@ export interface FamousGlaze {
   guides?: string[];
 }
 
-/** Where the published glazes are served (scripts/famous-glazes.mjs); the render reads the built file. */
-export const FAMOUS_GLAZES_URL = '/i18n/famous-glazes/published.json';
+/**
+ * Where the published glazes are served in a language (scripts/famous-glazes.mjs): their prose in that
+ * language and English only; the render reads the built file.
+ */
+export const famousGlazesUrl = (language: string): string => `/i18n/famous-glazes/${language}.json`;
 
-/** The published glazes, read once per app (and once per page the build renders). */
+/** The published glazes in the page's language, read once per app (and once per page the build renders). */
 @Injectable({ providedIn: 'root' })
 export class FamousGlazes {
   private readonly http = inject(HttpClient);
+  private readonly language = inject(PAGE_LANGUAGE);
   private loaded?: Promise<FamousGlaze[]>;
 
   all(): Promise<FamousGlaze[]> {
-    this.loaded ??= firstValueFrom(this.http.get<FamousGlaze[]>(FAMOUS_GLAZES_URL)).catch(() => {
+    this.loaded ??= firstValueFrom(this.http.get<FamousGlaze[]>(famousGlazesUrl(this.language))).catch(() => {
       this.loaded = undefined;
       return [];
     });

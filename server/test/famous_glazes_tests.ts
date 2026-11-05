@@ -4,7 +4,7 @@ import * as famous from '../../lib/famous-glazes.js';
 import type { FamousGlaze } from '../../lib/famous-glazes.js';
 import { FAMOUS_GLAZE_PAGES, famousTranslatedIn } from '../../lib/pages.js';
 import { pageSources } from '../../lib/page-dates.js';
-import { publishedFile } from '../../scripts/famous-glazes.mjs';
+import { publishedFile, publishedFiles } from '../../scripts/famous-glazes.mjs';
 import { PUBLIC_PAGES, isAppOnlyPage, isPage, pageHtml, prerenderedKey, sitemap } from '../lib/pages.ts';
 import { expect } from './support/app.ts';
 
@@ -86,6 +86,26 @@ describe('famous glazes: the data', () => {
     const iznik = famous.resolveGlaze(glazes.find((g) => g.slug === 'iznik')!);
     expect(iznik.lead).to.equal(true);
     expect(iznik.leadFree.prefer.map((m: { name: string }) => m.name)).to.include('Ferro Frit 3110');
+  });
+
+  it("writes one file per language, each with the glazes' prose in English and that language only", () => {
+    const files = publishedFiles([...glazes, fixture]);
+    expect(Object.keys(files)).to.include.members(['en.json', 'de.json', 'ta.json']);
+    expect(files).not.to.have.property('published.json');
+    const iznikFile = glazes.find((g) => g.slug === 'iznik')!;
+    const [german] = JSON.parse(files['de.json']!);
+    expect(german.slug).to.equal('iznik');
+    expect(Object.keys(german.summary).sort()).to.eql(['de', 'en']);
+    expect(german.summary.de).to.equal(iznikFile.summary!['de']);
+    expect(german.leadFree.note.en).to.equal(iznikFile.leadFree!.note.en);
+    expect(german.leadFree.prefer[0].fields.length).to.be.above(0);
+    // A language a field is not translated into: its English alone, which the page marks.
+    const bare = famous.glazeIn(famous.resolveGlaze(fixture), 'fr');
+    expect(bare.origin).to.eql({ en: fixture.origin!.en });
+    const [english] = JSON.parse(files['en.json']!);
+    expect(Object.keys(english.summary)).to.eql(['en']);
+    // Small enough for every prerendered page to carry (scripts/prerender.mjs MAX_GZIPPED).
+    for (const name of ['de.json', 'ta.json']) expect(files[name]!.length, name).to.be.below(40_000);
   });
 
   it('names each language its glaze is written in, English always', () => {
