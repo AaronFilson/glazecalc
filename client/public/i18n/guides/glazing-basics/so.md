@@ -275,7 +275,7 @@ US-ka, weelasha dhoobada qurxinta ee u muuqda kuwo cunto loo isticmaali karo wax
 FDA waxay leedahay xirmooyinka tijaabada masaxa guriga waxay muujin karaan rasaas soo baxaysa, laakiin daraasaduhu waxay muujinayaan in xirmooyinkani inta badan ku khaldamaan weelasha glaze-ka leh: waxay muujin karaan rasaas aan joogin, waxayna seegi karaan rasaas soo baxaysa. Natiijo togan (positive) u qaado sabab aad ku joojiso isticmaalka gabalka, mid taban (negative)-na mid aan waxba caddayn. Tijaabada shaybaarka ee biraha ka soo baxa (leach test) ee gabalka la gubay (ASTM C738 US; EN 1388 ama ISO 6486 Yurub) ayaa ah jawaabta dhabta ah.
 
 > [!WARNING]
-> "Ammaan u ah cuntada" waxay ka dhigan tahay glaze-kan, dhoobadan, oo la gubay ilaa cone-kan kiln-kan oo loo mariyey sidan, wuxuu sii daayaa wax ka yar xuduudaha sharciga. Glazecalc wuxuu kaa caawin karaa inaad dhisto glaze xasilloon, **Beddel rasaasta** waxay dib u dhisi kartaa hab rasaas hore ah iyadoo aan rasaas lahayn, laakiin xisaabiye kastaa ma caddayn karo weel. Tijaabada gabalka la gubay keliya ayaa awooda.
+> "Ammaan u ah cuntada" waxay ka dhigan tahay glaze-kan, oo ku yaal dhoobadan, oo la gubay ilaa cone-kan kiln-kan oo loo mariyey sidan, wuxuu sii daayaa wax ka yar xuduudaha sharciga. Glazecalc wuxuu kaa caawin karaa inaad dhisto glaze xasilloon, **Beddel rasaasta** waxay dib u dhisi kartaa hab rasaas hore ah iyadoo aan rasaas lahayn, laakiin xisaabiye kastaa ma caddayn karo weel. Tijaabada gabalka la gubay keliya ayaa awooda.
 
 ## SG iyo marinta {#application}
 

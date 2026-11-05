@@ -65,7 +65,7 @@ Manam huk kamachiq wasi esmalte materialkunata wasipi waqaychanapaq kamachiykuna
 
 ### Waqaychanapaq qhawana sutichakuna
 
-Kaykunaqa miyu harkanapaq llapan kamachiykunam esmalteman churasqa. Manam huk saña ruray kamachiy churanchu, ichaqa llapantam yuyaychayku:
+Kaykunaqa miyu harkanapaq llapan kamachiykunam esmalteman churasqa. Manam mayqen ceramica kamachiypas (estándar) kaykunata churanchu, ichaqa llapantam yuyaychayku:
 
 - Ch'aki materialkunata wichqasqapi waqaychay: armario, utaq wichqakuq cuarto, garaje utaq huch'uy wasi. Hanaq tablaqa yanapanmi, ichaqa wawakunaqa wichanku. Qallariypi pisi kaqllata wichqayta atispaqa, unupi chulluq materialkunawan llimp'iqkunawan qallariy.
 - Materialkunata ñawpaq bolsankupi utaq mankankupi waqaychay. Hukninta huk mankaman churaspaqa, bolsapi qillqasqa sutinta chiqanta etiquetapi qillqay.
@@ -83,7 +83,7 @@ Ama hayk'appas esmalteta, utaq esmalte herramientakunata mayllasqayki unuta, lav
 
 Chay baldepaq tapatam yuyaychayku: chay t'uruqa esmalte hina kaq metalkunatam hap'in, uywakunataq sayasqa unuta ukyanku. Q'upa wikch'uy kamachiykunaqa maypipas hukniraqmi, chayrayku sapa productop seguridad datos p'anqanta qhaway, mana yachaspataq llaqtaykip municipionta utaq unu empresata tapukuy.
 
-Wakin llamk'ana wasikunaqa ch'akisqa t'uruta manaraq wikch'uspa ruphachinku. Tukunankama llamk'achikunqa chay yapa platopim churanku: ruphachisqa qhipaman chay platoqa manañam llamk'achikuyta atinchu. Platota tawa t'aqamanta hukllata hunt'achiy, t'uruqa chulluspa phuqchun phuqchuchakuntaq, hinaspa huk platowan tapay. Kiln washyuq tablaman utaq yapa p'allqaman churay, hunt'aptin hina. Ruphachiyqa t'urutam vidrioman tukuchin, chaytaq metalkunata k'ullu ñut'u allpamanta aswan sinchita hap'in, chayrayku q'upa pampanapi aswan mana manchakuypaqmi. Ch'aki t'uruta ch'aki esmalteta hap'iq hina hap'iy, respiradorwan, mana ñut'u allpa huqarispa.
+Wakin llamk'ana wasikunaqa ch'akisqa t'uruta manaraq wikch'uspa ruphachinku. Tukunankama llamk'achikunqa chay yapa platopim churanku: ruphachisqa qhipaman chay platoqa manañam llamk'achikuyta atinchu. Platota tawa t'aqamanta hukllata hunt'achiy, t'uruqa chulluspa phuqchun phuqchuchakuntaq, hinaspa huk platowan tapay. Kiln washyuq tablaman utaq yapa p'allqaman churay, phuqchispa hich'akunman chayrayku. Ruphachiyqa t'urutam vidrioman tukuchin, chaytaq metalkunata k'ullu ñut'u allpamanta aswan sinchita hap'in, chayrayku q'upa pampanapi aswan mana manchakuypaqmi. Ch'aki t'uruta ch'aki esmalteta hap'iq hina hap'iy, respiradorwan, mana ñut'u allpa huqarispa.
 
 ## Ñut'u allpata tallerpi hap'iy {#keeping-dust-in-the-studio}
 

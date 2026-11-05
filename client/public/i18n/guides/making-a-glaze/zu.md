@@ -129,7 +129,7 @@ Amanzi ashesha ukwengezwa futhi ahamba kancane ukukhishwa, ngakho qala ngamancan
 
 ### Amathuluzi namanzi
 
-- **Umxubi one-propeller.** I-Digitalfire ithi omuhle "ubalulekile". Ibhola elinentambo elinesixubi lenza umsebenzi ebhakedeni. I-UT Austin iwusebenzisa okungenani imizuzu engu-4 kuya ku-5 ngemuva kokuthi i-glaze ibukeke ixubekile, futhi igcina insingo kude nebhakede, engakhuhla ipulasitiki kulo.
+- **Umxubi one-propeller.** I-Digitalfire ithi omuhle "ubalulekile". Isibhoro sikagesi esinentambo, esinomxubi, senza umsebenzi ebhakedeni. I-UT Austin iwusebenzisa okungenani imizuzu engu-4 kuya ku-5 ngemuva kokuthi i-glaze ibukeke ixubekile, futhi igcina insingo kude nebhakede, engakhuhla ipulasitiki kulo.
 - **I-blender.** "Isebenza kahle kakhulu kuma-batch amancane" (Digitalfire). Yigcinele i-glaze kuphela: akumele ibuyele ekhishini.
 - **I-whisk noma induku.** Ukukhetha kuka-Zakin lapho kungekho mxubi.
 
