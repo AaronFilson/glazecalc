@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Deel van hierdie bladsy is nog nie vertaal nie, en word dus in Engels gewys.",
+  "index": {
+    "crumb": "Bekende glasure",
+    "title": "Bekende glasure",
+    "lead": "Glasure wat oor die hele wêreld bekend is, elk uit sy tradisionele plaaslike grondstowwe, met sy Seger-formule (UMF) en 'n weergawe uit die grondstowwe wat waar jy is verkoop word.",
+    "listHeading": "Die glasure",
+    "more": "Nog glasure kom: elkeen word bygevoeg sodra sy resep en grondstowwe op ten minste drie bronne berus wat gelees is."
+  },
+  "glaze": {
+    "lead": "'n Bekende glasuur ({native}): sy tradisionele resep of analise, sy bak, en 'n weergawe uit die grondstowwe wat waar jy is verkoop word.",
+    "aboutHeading": "Oor {name}",
+    "nativeName": "Oorspronklike naam",
+    "origin": "Waar",
+    "period": "Wanneer",
+    "firing": "Bak",
+    "cone": "kegel {cone}",
+    "historyOnly": "Slegs geskiedenis: hierdie glasuur is met lood gemaak. Sy analise word as geskiedenis gewys, nie as 'n resep om te meng nie. Die weergawe hieronder is 'n ander glasuur, sonder lood.",
+    "recipeHeading": "Die tradisionele resep",
+    "material": "Grondstof",
+    "amount": "Hoeveelheid",
+    "unityHeading": "Seger-formule (UMF)",
+    "analysisHeading": "Historiese analise",
+    "oxide": "Oksied",
+    "percent": "Gewig %",
+    "useHeading": "Probeer dit",
+    "open": "Maak hierdie resep oop",
+    "openLeadFree": "Maak die loodvrye weergawe oop",
+    "leadFreeTitle": "{name}-styl, loodvry",
+    "allLink": "Alle bekende glasure",
+    "safetyHeading": "Veiligheid",
+    "safeMixing": "Veilig meng en ventilasie",
+    "firingGuide": "'n Eenvoudige oond bak",
+    "makingGuide": "Hoe om 'n glasuur te maak",
+    "sourcesHeading": "Bronne",
+    "link": "Maak oop",
+    "opened": "gelees {date}"
+  },
+  "local": {
+    "heading": "Met jou plaaslike grondstowwe",
+    "leadFreeHeading": "Loodvrye weergawe",
+    "intro": "Die tradisionele resep se Seger-formule (UMF), gemaak uit die standaardgrondstowwe wat verkoop word waar jy koop. Kies waar jy koop om dit te sien.",
+    "region": "Waar jy grondstowwe koop",
+    "proposal": "Die voorstel se eie grondstowwe",
+    "pick": "Kies…",
+    "untested": "Bereken, nog nie in 'n toetsbak gebak nie.",
+    "testFirst": "Bak toetsteëls voordat jy dit op enige ware gebruik, en toets 'n voedseloppervlak vir uitloging.",
+    "untestedNote": "Bereken, nog nie in 'n toetsbak gebak nie: bak toetsteëls voor gebruik.",
+    "close": "Dit kom naby die teikenformule.",
+    "fair": "Dit kom redelik naby die teikenformule.",
+    "poor": "Hierdie grondstowwe kan nie naby die teikenformule kom nie.",
+    "none": "Die grondstowwe wat daar verkoop word, kan dit nie maak nie.",
+    "choose": "Kies waar jy grondstowwe koop om dit gemaak te sien uit dié wat daar verkoop word."
+  },
+  "atmospheres": {
+    "oxidation": "oksidasie",
+    "reduction": "reduksie",
+    "neutral": "neutraal",
+    "wood": "houtbak",
+    "salt": "soutbak",
+    "soda": "sodabak"
+  }
+}
