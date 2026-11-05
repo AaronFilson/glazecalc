@@ -458,73 +458,73 @@ L&L ir Bartlett valdikliai piroskopui 04 naudoja {{1926 °F; 1052 °C}}, o piros
 
 Rankinio valdymo krosnis laikosi to paties plano, tik ranka: lėtai džiovinkite pravėrę dangtį ir atidarę stebėjimo angas, jungiklius palaipsniui perjunkite iš padėties Low į Medium, paskui į High, o degimą tegul baigia išjungiklis. Paskelbtos procedūros aprašytos toliau, skyriuje Rankinio valdymo krosnys išsamiau.
 
-## Glaze firing {#glaze lang=en}
+## Glazūros degimas {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Glazūros degimo{{en: glaze firing}} metu glazūra ant biskvito išsilydo į stiklą. Dauguma rinkoje parduodamų žemo degimo glazūrų yra skirtos piroskopui 06 arba 05 (žemo degimo ruožas – piroskopai 06–04), o dauguma vidutinio degimo glazūrų – piroskopams 5–6. Degkite iki piroskopo, nurodyto ant glazūros ir molio masės etikečių, aplink tą numerį pastatę piroskopų rinkinį{{en: cone pack}}. Kas vyksta glazūroje jai lydantis, rasite vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Krosnies pakrovimas glazūros degimui
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Glazūruoti dirbiniai negali liesti vienas kito ir krosnies sienelių: palikite maždaug ½ colio (13 mm).
+- Dugną palikite be glazūros (**neglazūruotas dugnas**) arba žemo degimo dirbinius statykite ant **trikojų**{{en: stilts}} – mažų atramėlių su smaigaliais. Akmens masės ir porceliano dirbinių nereikėtų statyti ant trikojų, nes tokioje temperatūroje jie įsminga į šukę; vietoj jų naudokite aukštam degimui tinkamą krosnies plokščių apsaugą arba kvarcinį smėlį.
+- Tarp krosnies plokščių kraštų ir sienelės ar išjungiklio palikite ne mažiau kaip 1 colį (25 mm).
 
-### Controller schedules
+### Valdiklio degimo programos
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L ir Bartlett glazūros degimo programos
+Label: Glazūros degimo programos
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segmentas                 |                    Kaitinti iki |             Slow Glaze |             Fast Glaze |
+| ------------------------- | ------------------------------: | ---------------------: | ---------------------: |
+| 1                         |              {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Atskiro žingsnio nėra |
+| 2                         | {{250 °F; 139 °C}} žemiau aukščiausios temperatūros | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                         |        Aukščiausia temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Kaitinimo laikas, tuščia krosnis |                          |   Apie 6½–7½ valandos |      Apie 3–4 valandas |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Kur baigiasi 2 ir 3 segmentai, pagal piroskopą (L&L ir Bartlett)
+Label: Programų tikslinės temperatūros
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Piroskopas | 2 segmento pabaiga | Aukščiausia temperatūra |
+| ---------- | -----------------: | ----------------------: |
+| 06         | {{1569 °F; 854 °C}} |     {{1819 °F; 993 °C}} |
+| 04         | {{1676 °F; 913 °C}} |    {{1926 °F; 1052 °C}} |
+| 6          | {{1982 °F; 1083 °C}} |   {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Atsižvelgiant į L&L įspėjimą dėl greito degimo, saugesnis numatytasis pasirinkimas yra Slow Glaze. Jei aukščiausioje temperatūroje pridedate ilgesnį nei 5–10 minučių išlaikymą{{en: hold}}, L&L pataria atitinkamai sumažinti tikslinę temperatūrą arba temperatūros korekciją ir pažymi, kad „išlaikymas aukštoje temperatūroje greitina kaitinimo elementų ir termoporos dėvėjimąsi“.
 
-### Cone 6: drop-and-hold
+### Piroskopas 6: atvėsinimas ir išlaikymas
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Vidutinio degimo glazūrose kartais lieka **adatinių skylučių**{{en: pinholes}} (smulkių skylučių paviršiuje) arba pūslelių, kurias palieka iš lydalo besiveržiančios dujos. Degant pagal **atvėsinimo ir išlaikymo**{{en: drop-and-hold}} programą, krosnis įkaitinama iki aukščiausios temperatūros, greitai atvėsinama maždaug {{100 °F; 56 °C}} ir toje temperatūroje išlaikoma. Digitalfire žodžiais, „atvėsinus 100 °F ir išlaikius, lydalas tampa pakankamai klampus, kad burbulai sprogtų, bet dar gali užsilydyti“.
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, atvėsinimas ir išlaikymas piroskopui 6
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Žingsnis |                         Sparta | Tikslinė temperatūra | Išlaikymas                                         |
+| -------- | -----------------------------: | -------------------: | -------------------------------------------------- |
+| 1        |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minučių                                         |
+| 2        |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pasirinktinai 30 minučių, kad išsisklaidytų burbulų debesys |
+| 3        |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minučių; didelėse krosnyse ilgiau               |
+| 4        | Aušinti {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minučių                                         |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS trunka apie 9 valandas 36 minutes. Skystesnėms glazūroms Digitalfire atvėsina maždaug {{200 °F; 111 °C}}; atvėsinus per daug, „išlaikymo metu kyla kristalizacijos pavojus“. Jos aukščiausia temperatūra {{2200 °F; 1204 °C}} yra žemesnė už lentelėje piroskopui 6 nurodytą {{2232 °F; 1222 °C}}; Digitalfire teigia, kad dauguma krosnių piroskopą 6 pasiekia maždaug ties {{2200 °F; 1204 °C}}. Patikrinkite tai piroskopų rinkiniu savo krosnyje.
 
-### Slow cooling
+### Reguliuojamas aušinimas
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Reguliuojamas aušinimas**{{en: slow cooling}} reiškia, kad valdiklis aušina krosnį nustatyta sparta, užuot leidęs jai vėsti savaime. Digitalfire programa C6DHSC – tai PLC6DS, po kurios krosnis aušinama {{150 °F/h; 83 °C/h}} sparta nuo {{2100 °F; 1148 °C}} iki {{1400 °F; 760 °C}}, o tada išjungiama. Ji „pagerina blizgesį ir paviršiaus kokybę“ ir padeda rutilo mėlynoms glazūroms, tačiau reguliuojamas aušinimas „gali padidinti matiškumą“ (viena matinė glazūra tapo sausa) ir gali sutrumpinti krosnies relių tarnavimo laiką. L&L taip pat pateikia reguliuojamo aušinimo programą piroskopui 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L „User 6“: reguliuojamas aušinimas glazūroms piroskopui 6
+Label: L&L reguliuojamas aušinimas
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Žingsnis |                        Sparta | Tikslinė temperatūra |
+| -------- | ----------------------------: | -------------------: |
+| 1        |       Kaitinti visu greičiu | {{2232 °F; 1222 °C}} |
+| 2        |        Aušinti visu greičiu | {{1900 °F; 1038 °C}} |
+| 3        | Aušinti {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutt valdikliai taip pat siūlo pradinį kaitinimą ir vieno žingsnio aušinimą.
 
-### On a manual kiln
+### Rankinio valdymo krosnyje
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Rankinio valdymo krosnis negali tiksliai vykdyti šių programų, tačiau planas tas pats: iš pradžių švelniai, per vidurį tolygiai, o pabaigą stebint. Bracker's žemo degimo glazūros programa pateikta toliau, skyriuje Rankinio valdymo krosnys išsamiau; karštesniems piroskopams ji prideda „vidutiniškai 15–30 minučių kiekvienam piroskopo numeriui“. Turėdami pirometrą, patirties ir degimo žurnalą, galite apytiksliai atkartoti atvėsinimą ir išlaikymą arba reguliuojamą aušinimą, rankomis sukdami jungiklius žemyn, kaip siūlo Digitalfire.
 
 ## Rankinio valdymo krosnys išsamiau {#manual-kilns}
 
