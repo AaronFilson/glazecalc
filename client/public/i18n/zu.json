@@ -9,6 +9,7 @@
     "homeSafety": "Ungawadliseli ushevu umndeni wakho - Glazecalc",
     "firing": "Ukushisa ku-kiln elula - Glazecalc",
     "learnWithJohnBritt": "Funda ngesifundo samahhala se-glaze sikaJohn Britt - Glazecalc",
+    "teachingGlazeCalculation": "Ukufundisa ukubala i-glaze - Glazecalc",
     "about": "Mayelana - Glazecalc",
     "privacy": "Ubumfihlo - Glazecalc",
     "terms": "Imigomo yokusebenzisa - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Vumela ushintsho - Glazecalc",
     "cones": "Ishadi lama-cone: amazinga okushisa ama-cone e-Orton ne-SK - Glazecalc",
     "materials": "Okokwakha okujwayelekile kwe-glaze: ukuhlaziywa nezingozi - Glazecalc",
-    "materialInfo": "Okokwakha {name}: ukuhlaziywa kwama-oxide nezingozi - Glazecalc"
+    "materialInfo": "Okokwakha {name}: ukuhlaziywa kwama-oxide nezingozi - Glazecalc",
+    "famousGlazes": "Ama-glaze adumile - Glazecalc",
+    "famousGlaze": "I-glaze ye-{name} - Glazecalc"
   },
   "nav": {
     "skip": "Yeqela kokuqukethwe",
@@ -177,6 +180,7 @@
     "homeSafety": "Okufanele ukwenze uma ingane noma isilwane sasekhaya sigwinya okokwakha kwe-glaze, nendlela yokugcina okokwakha, uthuli, i-kiln nezitsha ezenziwe ngesandla ziphephile emndenini wakho.",
     "firing": "Indlela yokushisa ku-kiln kagesi: khetha, beka futhi ufunde ama-cone, ulandele izinhlelo ezishicilelwe zokushisa i-bisque ne-glaze, kanye neshadi lama-cone.",
     "learnWithJohnBritt": "Umngane wesifundo se-glaze samahhala ku-inthanethi sikaJohn Britt: amavidiyo akhe iyunithi ngeyunithi, nemihlahlandlela ye-Glazecalc nezivivinyo zokuzama esibalini.",
+    "teachingGlazeCalculation": "Izifundo ezi-6 zokufundisa i-UMF (unity molecular formula, ifomula ka-Seger): okokwakha nama-tile e-triaxial, ama-mole, ukusuka eresiphini kuya kufomula nokubuyela emuva, namaphutha e-glaze, nezibonelo ezixazululiwe namashidi okusebenza okuphrinta.",
     "advice": "Amathiphu awusizo okuxuba, ukufaka i-glaze nokushisa, avela ku-Glazecalc, kanye nanoma yisiphi iseluleko sakho. Kumahhala kubabumbi.",
     "about": "I-Glazecalc iyisibali samahhala nencwadi yekhemistri ye-glaze, enomthombo ovulekile. Bona ukuthi ibala kanjani i-UMF nokuthi yakhiwe kanjani.",
     "privacy": "Indlela i-Glazecalc ephatha ngayo imininingwane yakho: azikho izikhangiso, ukuhlaziywa noma ukulandelelwa, futhi akukho okuthengiswayo. Yini egcinwayo, kungani, namalungelo akho.",
@@ -187,6 +191,8 @@
     "materials": "Okokwakha emtatsheni ojwayelekile we-Glazecalc, kusukela kuma-feldspar nobumba kuya kuma-frit nemithombo ye-boron, ngakunye nokuhlaziywa kwama-oxide, i-UMF nezingozi.",
     "materialInfo": "Okokwakha {name}: ukuhlaziywa kwama-oxide, i-UMF, i-LOI (loss on ignition) nezingozi emtatsheni ojwayelekile we-Glazecalc.",
     "materialInfoLong": "Okokwakha {name} emtatsheni ojwayelekile we-Glazecalc wokokwakha kwe-glaze: ukuhlaziywa kwama-oxide, isabelo sayo ku-UMF, i-LOI (loss on ignition) nezingozi.",
+    "famousGlazes": "Ama-glaze adumile emhlabeni wonke: iresiphi yendabuko noma ukuhlaziywa komlando kwe-glaze ngayinye, i-UMF yayo, nohlobo olwenziwe ngokokwakha okuthengiswa lapho ukhona.",
+    "famousGlaze": "I-glaze ye-{name} ({native}): iresiphi yayo yendabuko noma ukuhlaziywa komlando, ukushisa, i-UMF nemithombo, nohlobo olwenziwe ngokokwakha okuthengiswa lapho ukhona.",
     "imageAlt": "Uphawu lwe-Glazecalc nesihloko salo, ikhemistri ye-glaze yamahhala yababumbi, eduze kwesithombe samaqoqo ama-cone ashisiwe."
   },
   "notices": {

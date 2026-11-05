@@ -182,6 +182,25 @@ the Poisons Information Helpline 0861 555 777 (verified 2026-10-30). Nothing els
 
 **Native check** on the whole table.
 
+### 2.6 Round 14 terms (2026-11-04)
+
+No Zulu ceramics source read for these; built from Doke's everyday words (_umlotha_ ash, _izinhlanga_ stalks,
+_ilayisi_ rice, _itshe_ stone, _ukushisa isikhumba_ to burn the skin). **Native check** on all.
+
+| English                      | zu                                                   | Notes                                         |
+| ---------------------------- | ---------------------------------------------------- | --------------------------------------------- |
+| wood ash                     | umlotha wezinkuni                                    | Doke _umlotha_.                               |
+| synthetic ash (合成土灰)     | okufakwa esikhundleni okwenziwe (synthetic) kwe-土灰 | Japanese name kept, as the English.           |
+| rice-straw ash (藁灰)        | umlotha wezinhlanga zelayisi                         |                                               |
+| isu ash (柞灰)               | umlotha we-isu                                       |                                               |
+| porcelain stone (瓷石)       | itshe le-porcelain                                   |                                               |
+| caustic                      | uyashisa isikhumba (caustic)                         | English kept in brackets for the safety text. |
+| slurry                       | i-slurry                                             | Loan.                                         |
+| drop-and-hold; hold          | ukwehlisa nokulinda (drop-and-hold); ukulinda        |                                               |
+| glass former; stabilizer     | umakhi wengilazi; isiqinisi                          |                                               |
+| line blend, triaxial blend   | i-line blend, i-triaxial blend                       | Loans.                                        |
+| shivering, crawling, dunting | i-shivering, i-crawling, i-dunting                   | Loans, glossed in the guide.                  |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG, Orton, Seger,
