@@ -6,6 +6,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Teaching glaze calculation** (/guides/teaching-glaze-calculation): a seventh guide, a teaching pack of six
+  sessions in the order of the Ibaraki Prefectural Industrial Technology Center's published glaze study group
+  (cited; Glazecalc is not connected with it): materials and triaxial tiles, the chemistry, reading a unity formula,
+  recipe to formula, formula to recipe with Solve for a target, and the clay body and defects. Each session has aims,
+  what to prepare, a worked example with 福島長石, whiting, EPK kaolin and silica from the standard library, the steps
+  in Glazecalc, a worksheet and Check questions; it ends with a 42-glaze triaxial map and a 24-glaze Seger grid with
+  oxidation and reduction columns. In English and Japanese (the Japanese awaits a native potter's review). A new list,
+  `PARTLY_TRANSLATED_PAGES` in lib/pages.js, offers it to search engines in those two alone; every other language
+  shows the English with the usual notice, canonical to the English and noindex, until it is translated.
 - **Each standard material's page in every live language** (docs/prerender-compression-and-material-pages-plan.md,
   Part B). The 170 material pages are prerendered and offered to search engines in all 57 languages: canonical to
   themselves, with hreflang and x-default, in each language's sitemap and with structured data in the language. A

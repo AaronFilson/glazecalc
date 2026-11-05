@@ -134,6 +134,7 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'guides/home-safety',
       'guides/firing',
       'guides/learn-with-john-britt',
+      'guides/teaching-glaze-calculation',
       'cones',
       'materials',
       'materials/:slug',

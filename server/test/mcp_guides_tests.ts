@@ -18,14 +18,15 @@ import {
 } from '../mcp/guides.ts';
 
 describe('MCP: the guides, read', () => {
-  it('are the six guides the site lists', () => {
+  it('are the seven guides the site lists', () => {
     expect(GUIDE_IDS).to.eql([
       'glazing-basics',
       'making-a-glaze',
       'safe-mixing',
       'home-safety',
       'firing',
-      'learn-with-john-britt'
+      'learn-with-john-britt',
+      'teaching-glaze-calculation'
     ]);
   });
 

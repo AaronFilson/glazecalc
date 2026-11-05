@@ -37,6 +37,11 @@ export const GUIDES = [
     path: '/guides/learn-with-john-britt',
     title: marker('guides.list.learnWithJohnBritt.title'),
     text: marker('guides.list.learnWithJohnBritt.text')
+  },
+  {
+    path: '/guides/teaching-glaze-calculation',
+    title: marker('guides.list.teachingGlazeCalculation.title'),
+    text: marker('guides.list.teachingGlazeCalculation.text')
   }
 ] as const;
 

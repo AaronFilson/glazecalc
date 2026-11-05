@@ -2,6 +2,8 @@
 export const PUBLIC_PAGES: ReadonlyArray<string>;
 /** Public pages that search engines are given in English alone (lib/pages.js). */
 export const ENGLISH_ONLY_PAGES: ReadonlyArray<string>;
+/** Guides translated into some languages so far, by page: those languages, English first (lib/pages.js). */
+export const PARTLY_TRANSLATED_PAGES: Readonly<Record<string, ReadonlyArray<string>>>;
 /** The cone chart and the list of materials: a copy per language in REFERENCE_LANGUAGES (lib/pages.js). */
 export const REFERENCE_PAGES: ReadonlyArray<string>;
 /** A public page for each standard material, /materials/<slug> (lib/pages.js). */

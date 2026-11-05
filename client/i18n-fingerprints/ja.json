@@ -9,6 +9,7 @@
     "titles.homeSafety": "msesej",
     "titles.firing": "9bgl1y",
     "titles.learnWithJohnBritt": "1r2cet6",
+    "titles.teachingGlazeCalculation": "vrchh1",
     "titles.about": "mr1myb",
     "titles.privacy": "pmcnze",
     "titles.terms": "1eh9azf",
@@ -151,6 +152,7 @@
     "meta.homeSafety": "svont5",
     "meta.firing": "7honhr",
     "meta.learnWithJohnBritt": "6qgt6t",
+    "meta.teachingGlazeCalculation": "19e0ucj",
     "meta.advice": "cnw6wh",
     "meta.about": "1d39455",
     "meta.privacy": "1nbxoeh",
@@ -949,6 +951,8 @@
     "list.firing.text": "1sotq7q",
     "list.learnWithJohnBritt.title": "1ke6hjr",
     "list.learnWithJohnBritt.text": "113k8zw",
+    "list.teachingGlazeCalculation.title": "dhymzc",
+    "list.teachingGlazeCalculation.text": "hv4kvj",
     "more": "jnovip",
     "related.heading": "2rqnf6",
     "related.cones.title": "1ez1evm",
@@ -2889,5 +2893,17 @@
     "safety-data-sheets": "112n6p8",
     "official-guidance": "psw6gr",
     "sources": "1ozlbdd"
+  },
+  "guides/teaching-glaze-calculation": {
+    "": "v1tcrh",
+    "about": "f5ph0m",
+    "materials": "2s82cn",
+    "chemistry": "dgv6sp",
+    "reading-the-formula": "16uv380",
+    "recipe-to-formula": "1w2b6wr",
+    "formula-to-recipe": "4k1tue",
+    "body-and-defects": "ijod0v",
+    "tile-maps": "1gww40x",
+    "sources": "j1cc26"
   }
 }

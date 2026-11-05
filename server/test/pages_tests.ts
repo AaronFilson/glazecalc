@@ -21,7 +21,7 @@ import {
   sitemapIndex,
   withNonce
 } from '../lib/pages.ts';
-import { englishOnlyIn, materialTranslatedIn } from '../../lib/pages.js';
+import { PARTLY_TRANSLATED_PAGES, englishOnlyIn, materialTranslatedIn } from '../../lib/pages.js';
 import languages from '../../lib/regions/languages.js';
 import { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
@@ -518,7 +518,9 @@ describe('pages in each language', () => {
     );
     // Each public page once in each of the two languages, and a page in English only once, as a
     // reference page is while German is not among the languages it is translated into.
-    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length;
+    // A guide translated into some languages only, none of them German, is listed in English alone too.
+    const partly = Object.values(PARTLY_TRANSLATED_PAGES).filter((codes) => !codes.includes('de')).length;
+    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length + partly;
     expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - once) * 2 + once);
   });
 
@@ -626,6 +628,47 @@ describe('pages in each language', () => {
     expect(map).to.include('<url><loc>https://glazecalcapp.com/guides/learn-with-john-britt</loc></url>');
     expect(map).not.to.include('/de/guides/learn-with-john-britt');
     expect(map).not.to.match(/hreflang="[^"]*" href="[^"]*learn-with-john-britt"/);
+  });
+
+  it('offers the teaching pack to search engines in English and Japanese, and the English for the others', () => {
+    const page = '/guides/teaching-glaze-calculation';
+    expect(PUBLIC_PAGES).to.include(page);
+    expect(PARTLY_TRANSLATED_PAGES[page]).to.eql(['en', 'ja']);
+    const live = ['en', 'de', 'ja'];
+    const hreflang = (code: string) =>
+      `<link rel="alternate" hreflang="${code}" href="https://glazecalcapp.com${code === 'en' ? '' : '/' + code}${page}" />`;
+
+    for (const code of ['en', 'ja']) {
+      const html = pageHtml(HTML, (code === 'en' ? '' : '/' + code) + page, SITE, {}, live);
+      expect(html, code).not.to.include('noindex');
+      expect(html, code).to.include(hreflang('en'));
+      expect(html, code).to.include(hreflang('ja'));
+      expect(html, code).not.to.include('hreflang="de"');
+    }
+    expect(pageHtml(HTML, '/ja' + page, SITE, {}, live)).to.include(
+      `<link rel="canonical" href="https://glazecalcapp.com/ja${page}" />`
+    );
+    // German shows the English with the notice: canonical to the English, out of the index.
+    const german = pageHtml(HTML, '/de' + page, SITE, {}, live);
+    expect(german).to.include(`<link rel="canonical" href="https://glazecalcapp.com${page}" />`);
+    expect(german).to.include('<meta name="robots" content="noindex" />');
+    expect(prerenderedKey('/de' + page, live)).to.equal('de/guides/teaching-glaze-calculation.html');
+
+    const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {});
+    expect(map).to.include(`<loc>https://glazecalcapp.com/ja${page}</loc>`);
+    expect(map).not.to.include(`<loc>https://glazecalcapp.com/de${page}</loc>`);
+  });
+
+  it("keeps each partly translated guide's languages in step with its files", () => {
+    for (const [page, codes] of Object.entries(PARTLY_TRANSLATED_PAGES)) {
+      const folder = path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'guides', page.slice(8));
+      const files = fs
+        .readdirSync(folder)
+        .filter((name) => name.endsWith('.md'))
+        .map((name) => name.slice(0, -3))
+        .sort();
+      expect(files, page).to.eql([...codes].sort());
+    }
   });
 
   describe('the reference pages: the cone chart, the materials and a page for each standard material', () => {
