@@ -157,11 +157,11 @@ Molann na foinsí mesh éagsúla. Criathraíonn Zakin faoi dhó trí 50 nó 80 m
 Table: Cén criathar le húsáid
 Label: Mesh criathair
 
-| Glónra                                              | Criathar                   |
-| --------------------------------------------------- | -------------------------- |
-| Formhór na nglónraí                                 | Dhá chur trí 80 mesh       |
-| Glónraí le hábhair datha mar chóbalt nó iarann      | 100 go 120 mesh            |
-| Glónraí luaithe, agus glónraí eile le hábhair gharbha | 60 go 80 mesh            |
+| Glónra                                                | Criathar             |
+| ----------------------------------------------------- | -------------------- |
+| Formhór na nglónraí                                   | Dhá chur trí 80 mesh |
+| Glónraí le hábhair datha mar chóbalt nó iarann        | 100 go 120 mesh      |
+| Glónraí luaithe, agus glónraí eile le hábhair gharbha | 60 go 80 mesh        |
 
 ## Sainmheáchan {#specific-gravity}
 
@@ -183,11 +183,11 @@ Ní réitíonn na foinsí le chéile, go háirithe faoi scuabadh agus spraeáil,
 Table: Spriocanna sainmheáchain, nuair nach réitíonn na foinsí
 Label: Spriocanna sainmheáchain
 
-| Úsáid    | Digitalfire agus Glazy                                                                                                                                  | Potclays (an Ríocht Aontaithe)                     | Pointe tosaigh sábháilte                                       |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------- |
-| Tumadh   | {{SG 1.40}} (do thumadh 5 soicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a éiríonn le glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}} | Glé: {{SG 1.46–1.48}}; daite: {{SG 1.61}}           | {{SG 1.45}}; tanaigh go dtí {{SG 1.43}} agus glóthaigh é má shileann sé |
-| Scuabadh | {{SG 1.25}} (glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                               | {{SG 1.71–1.81}}                                   | Lean an táirge; úsáid CMC nó meán scuabtha                     |
-| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, i bhfad níos tanaí, le dífhlocasach (breiseán a dhéanann draoib níos tanaí)                  | {{SG 1.71}}                                        | Gan uimhir iontaofa; ná spraeáil ach i mboth spraeála          |
+| Úsáid    | Digitalfire agus Glazy                                                                                                                                        | Potclays (an Ríocht Aontaithe)            | Pointe tosaigh sábháilte                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------- |
+| Tumadh   | {{SG 1.40}} (do thumadh 5 soicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a éiríonn le glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}} | Glé: {{SG 1.46–1.48}}; daite: {{SG 1.61}} | {{SG 1.45}}; tanaigh go dtí {{SG 1.43}} agus glóthaigh é má shileann sé |
+| Scuabadh | {{SG 1.25}} (glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                                    | {{SG 1.71–1.81}}                          | Lean an táirge; úsáid CMC nó meán scuabtha                              |
+| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, i bhfad níos tanaí, le dífhlocasach (breiseán a dhéanann draoib níos tanaí)                      | {{SG 1.71}}                               | Gan uimhir iontaofa; ná spraeáil ach i mboth spraeála                   |
 
 Chun glónra tumtha a sheiceáil leis an tsúil, tumann AMACO ar feadh 5 soicind agus lorgaíonn sé brat atá chomh tiubh le dím, bonn deich gcent SAM. Bácálann Digitalfire tíleanna a tumadh ar feadh 5 soicind chun seiceáil.
 
@@ -198,8 +198,8 @@ Is é an tábla thíos ár n-uimhríocht féin, ní uimhríocht foinse. Glacann 
 Table: Uisce do sprioc-sainmheáchan (ár meastachán)
 Label: Uisce do sprioc-sainmheáchan
 
-| Sprioc      | Do gach 100 g púdair |      An cileagram |             An punt |
-| ----------- | -------------------: | ----------------: | ------------------: |
+| Sprioc      | Do gach 100 g púdair |     An cileagram |              An punt |
+| ----------- | -------------------: | ---------------: | -------------------: |
 | {{SG 1.40}} |      thart ar 115 mL | thart ar 1150 mL | thart ar 18 US fl oz |
 | {{SG 1.45}} |       thart ar 98 mL |  thart ar 980 mL | thart ar 15 US fl oz |
 | {{SG 1.50}} |       thart ar 85 mL |  thart ar 850 mL | thart ar 13 US fl oz |
@@ -286,13 +286,13 @@ Cuireann Willers an aidhm go maith: “dóthain eolais chun na torthaí a d’ai
 Table: Cad atá le taifeadadh do gach baisc ghlónra (ár dteimpléad)
 Label: Teimpléad taifid
 
-| Cuid            | Cad atá le scríobh síos                                                                                                                                                                                                                                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Oideas          | An t-oideas agus a leagan; brandaí agus baiscuimhreacha na n-ábhar; aon ionadú                                                                                                                                                                                       |
-| Meascadh        | Dáta; méid baisce; an t-uisce a cuireadh leis, agus a chineál (sconna, osmóis droim ar ais nó driogtha); sainmheáchan tar éis measctha agus an sainmheáchan deiridh; meáchan na draoibe críochnaithe, dá sainmheáchan tirim; salann Epsom, CMC agus beintinít a cuireadh leis; mesh an chriathair agus líon na gcur tríd |
-| Cur i bhfeidhm  | Cré-ábhar; cón na brioscbhácála; tumadh, scuabadh nó doirteadh; am tumtha nó líon na mbrat; tiús tirim                                                                                                                                                               |
-| Bácáil          | An áith agus suíomh na seilfe; an clár bácála, lena rampaí, coinneálacha agus fuarú; atmaisféar (ocsaídiú nó dí-ocsaídiú); a léirigh an cón fianaise, ní hamháin a raibh an áith socraithe air                                                                       |
-| Toradh          | Dromchla agus dath; aon rith, snáithlíonrú nó poill bhioráin; grianghraif den tosach, den chúl agus den taobh; cód na tíle                                                                                                                                            |
+| Cuid           | Cad atá le scríobh síos                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Oideas         | An t-oideas agus a leagan; brandaí agus baiscuimhreacha na n-ábhar; aon ionadú                                                                                                                                                                                                                                           |
+| Meascadh       | Dáta; méid baisce; an t-uisce a cuireadh leis, agus a chineál (sconna, osmóis droim ar ais nó driogtha); sainmheáchan tar éis measctha agus an sainmheáchan deiridh; meáchan na draoibe críochnaithe, dá sainmheáchan tirim; salann Epsom, CMC agus beintinít a cuireadh leis; mesh an chriathair agus líon na gcur tríd |
+| Cur i bhfeidhm | Cré-ábhar; cón na brioscbhácála; tumadh, scuabadh nó doirteadh; am tumtha nó líon na mbrat; tiús tirim                                                                                                                                                                                                                   |
+| Bácáil         | An áith agus suíomh na seilfe; an clár bácála, lena rampaí, coinneálacha agus fuarú; atmaisféar (ocsaídiú nó dí-ocsaídiú); a léirigh an cón fianaise, ní hamháin a raibh an áith socraithe air                                                                                                                           |
+| Toradh         | Dromchla agus dath; aon rith, snáithlíonrú nó poill bhioráin; grianghraif den tosach, den chúl agus den taobh; cód na tíle                                                                                                                                                                                               |
 
 > [!NOTE]
 > San aip Glazecalc, coinníonn [oideas](/recipe) sábháilte an t-oideas féin. Taifeadann [taifead bácála](/firing) gach bácáil: an áith, an dáta, amanna, teochtaí, cóin agus nótaí. Coinníonn [nótaí](/notes) gach rud eile, mar an taifead baisce thuas agus a léirigh gach tíl.

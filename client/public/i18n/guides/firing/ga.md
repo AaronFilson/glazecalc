@@ -473,12 +473,12 @@ Leánn an bhácáil glónra{{en: glaze firing}} an glónra{{en: glaze}} ina ghlo
 Table: Réamhshocruithe glónra L&L agus Bartlett
 Label: Réamhshocruithe glónra
 
-| Deighleog              |                                    Ardaigh go |                     Slow Glaze |                  Fast Glaze |
-| ---------------------- | --------------------------------------------: | -----------------------------: | --------------------------: |
-| 1                      |                            {{250 °F; 121 °C}} |          {{150 °F/h; 83 °C/h}} |      Gan chéim ar leith     |
-| 2                      | {{250 °F; 139 °C}} faoi bhun na buaicteochta |         {{400 °F/h; 222 °C/h}} |      {{570 °F/h; 317 °C/h}} |
-| 3                      |                               An bhuaicteocht |          {{120 °F/h; 67 °C/h}} |      {{200 °F/h; 111 °C/h}} |
-| Am téimh, áith fholamh |                                               | Thart ar 6½–7½ uair an chloig | Thart ar 3–4 huaire an chloig |
+| Deighleog              |                                   Ardaigh go |                    Slow Glaze |                    Fast Glaze |
+| ---------------------- | -------------------------------------------: | ----------------------------: | ----------------------------: |
+| 1                      |                           {{250 °F; 121 °C}} |         {{150 °F/h; 83 °C/h}} |            Gan chéim ar leith |
+| 2                      | {{250 °F; 139 °C}} faoi bhun na buaicteochta |        {{400 °F/h; 222 °C/h}} |        {{570 °F/h; 317 °C/h}} |
+| 3                      |                              An bhuaicteocht |         {{120 °F/h; 67 °C/h}} |        {{200 °F/h; 111 °C/h}} |
+| Am téimh, áith fholamh |                                              | Thart ar 6½–7½ uair an chloig | Thart ar 3–4 huaire an chloig |
 
 Table: Cá gcríochnaíonn deighleoga 2 agus 3, de réir cóin (L&L agus Bartlett)
 Label: Spriocanna na réamhshocruithe
@@ -498,12 +498,12 @@ Uaireanta tagann glónraí meánbhácála amach le **poill bhioráin**{{en: pinh
 Table: PLC6DS Digitalfire, titim agus coinneáil do chón 6
 Label: PLC6DS Digitalfire
 
-| Céim |                                   Ráta |               Sprioc | Coinneáil                                                  |
-| ---- | -------------------------------------: | -------------------: | ---------------------------------------------------------- |
-| 1    |                  {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 nóiméad                                                 |
-| 2    |                 {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 nóiméad más mian leat, chun scamaill bhoilgeog a ghlanadh |
-| 3    |                  {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 nóiméad; níos faide in áitheanna móra                   |
-| 4    | Síos ag {{900 °F/h; 500 °C/h}}         | {{2100 °F; 1148 °C}} | 30 nóiméad                                                 |
+| Céim |                           Ráta |               Sprioc | Coinneáil                                                    |
+| ---- | -----------------------------: | -------------------: | ------------------------------------------------------------ |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 nóiméad                                                   |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 nóiméad más mian leat, chun scamaill bhoilgeog a ghlanadh |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 nóiméad; níos faide in áitheanna móra                     |
+| 4    | Síos ag {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 nóiméad                                                   |
 
 Tógann PLC6DS thart ar 9 n-uaire an chloig agus 36 nóiméad. Do ghlónraí níos sreabhaí, ligeann Digitalfire don teocht titim thart ar {{200 °F; 111 °C}} ina áit sin; má thiteann sí rófhada “tá baol criostalaithe le linn na coinneála”. Tá a bhuaicteocht, {{2200 °F; 1204 °C}}, faoi bhun {{2232 °F; 1222 °C}} an tábla do chón 6; tuairiscíonn Digitalfire go sroicheann formhór na n-áitheanna cón 6 ag thart ar {{2200 °F; 1204 °C}}. Seiceáil é le paca cón i d’áith féin.
 
@@ -516,8 +516,8 @@ Label: Fuarú mall L agus L
 
 | Céim |                          Ráta |               Sprioc |
 | ---- | ----------------------------: | -------------------: |
-| 1    |              Suas, lánluas    | {{2232 °F; 1222 °C}} |
-| 2    |              Síos, lánluas    | {{1900 °F; 1038 °C}} |
+| 1    |                 Suas, lánluas | {{2232 °F; 1222 °C}} |
+| 2    |                 Síos, lánluas | {{1900 °F; 1038 °C}} |
 | 3    | Síos ag {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
 Ar an gcaoi chéanna, tá réamhthéamh agus rogha fuaraithe aonchéime ar rialaitheoirí Skutt.
