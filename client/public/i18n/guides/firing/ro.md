@@ -458,73 +458,73 @@ Controlerele L&L și Bartlett folosesc {{1926 °F; 1052 °C}} pentru conul 04 ș
 
 Un cuptor cu comandă manuală urmează același plan, de mână: uscați încet, cu capacul întredeschis și vizoarele deschise, treceți comutatoarele treptat de pe Low pe Medium și apoi pe High (putere mică, medie și mare) și lăsați Kiln-Sitter să încheie arderea. Procedurile publicate sunt în secțiunea „Cuptoarele cu comandă manuală în detaliu”, mai jos.
 
-## Arderea de glazură {#glaze}
+## Glaze firing {#glaze lang=en}
 
-**Arderea de glazură**{{en: glaze firing}} topește glazura{{en: glaze}} și o transformă în sticlă pe biscuit{{en: bisque}}. Majoritatea începătorilor ard glazuri de temperatură joasă la conul{{en: cone}} 06–04 sau glazuri de temperatură medie la conul 5–6. Ardeți la conul indicat pe etichetele argilei și ale glazurii, cu un set de conuri{{en: cone pack}} în jurul acelui număr. Pentru ce se întâmplă în glazură când se topește, vedeți ghidul [Bazele glazurării](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Încărcarea pentru arderea de glazură
+### Loading for a glaze firing
 
-- Piesele glazurate nu trebuie să se atingă între ele sau de pereți: lăsați aproximativ ½ țol (13 mm).
-- Nu lăsați glazură pe piciorul piesei (**picior neglazurat**) sau așezați piesele de temperatură joasă pe **trepiede**, suporturi mici cu vârfuri. Gresia{{en: stoneware}} și porțelanul nu ar trebui așezate pe trepiede, care la aceste temperaturi se înfig în piese; folosiți în schimb strat protector (kiln wash) pentru temperatură înaltă sau nisip cuarțos.
-- Lăsați cel puțin 1 țol (25 mm) între marginile plăcilor și perete sau Kiln-Sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Programele controlerului
+### Controller schedules
 
-Table: Programe predefinite L&L și Bartlett pentru glazură
-Label: Programe pentru glazură
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segment                       |                               Urcare până la |             Slow Glaze |             Fast Glaze |
-| ----------------------------- | -------------------------------------------: | ---------------------: | ---------------------: |
-| 1                             |                           {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       Fără pas separat |
-| 2                             | Cu {{250 °F; 139 °C}} sub temperatura maximă | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                             |                           Temperatura maximă |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Timp de încălzire, cuptor gol |                                              |  Aproximativ 6½–7½ ore |    Aproximativ 3–4 ore |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Unde se termină segmentele 2 și 3, după con (L&L și Bartlett)
-Label: Ținte predefinite
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Con | Sfârșitul segmentului 2 |   Temperatura maximă |
-| --- | ----------------------: | -------------------: |
-| 06  |     {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04  |     {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6   |    {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze este alegerea implicită mai sigură, având în vedere avertismentul de la L&L despre arderea rapidă. Dacă adăugați o menținere{{en: hold}} de mai mult de 5–10 minute la temperatura maximă, L&L spune să coborâți pe măsură temperatura țintă sau corecția conului și notează că „Menținerea la temperaturi înalte accelerează uzura rezistențelor și a termocuplului.”
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Conul 6: răcire și menținere (drop-and-hold)
+### Cone 6: drop-and-hold
 
-Glazurile de temperatură medie ies uneori cu **înțepături**{{en: pinholes}} (găuri minuscule în suprafață) sau cu bule sparte, lăsate de gazele care ies din topitură. Un program de **răcire și menținere (drop-and-hold)** urcă până la temperatura maximă, răcește repede cu aproximativ {{100 °F; 56 °C}} și menține acolo. După cum spune Digitalfire, „Coborârea cu 100°F și menținerea dau topiturii destulă vâscozitate pentru a sparge bulele, lăsându-le totuși să se închidă.”
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS, conul 6, răcire și menținere
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Pas |                               Rată |                Țintă | Menținere                                             |
-| --- | ---------------------------------: | -------------------: | ----------------------------------------------------- |
-| 1   |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 de minute                                          |
-| 2   |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opțional 30 de minute, pentru a elimina norii de bule |
-| 3   |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minute; mai mult în cuptoarele mari                |
-| 4   | Coborâre cu {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 de minute                                          |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS durează aproximativ 9 ore și 36 de minute. Pentru glazurile mai fluide, Digitalfire coboară în schimb cu aproximativ {{200 °F; 111 °C}}; o coborâre prea mare „riscă o cristalizare în timpul menținerii”. Temperatura lui maximă, de {{2200 °F; 1204 °C}}, este sub cele {{2232 °F; 1222 °C}} din tabel pentru conul 6; Digitalfire arată că majoritatea cuptoarelor ajung la conul 6 la aproximativ {{2200 °F; 1204 °C}}. Verificați acest lucru cu un set de conuri în propriul cuptor.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Răcirea controlată
+### Slow cooling
 
-**Răcirea controlată** înseamnă că controlerul răcește cuptorul cu o rată stabilită, în loc să lase temperatura să scadă liber. Programul C6DHSC de la Digitalfire este PLC6DS urmat de o răcire cu {{150 °F/h; 83 °C/h}} de la {{2100 °F; 1148 °C}} până la {{1400 °F; 760 °C}}, apoi oprire. „Îmbunătățește strălucirea și calitatea suprafeței” și ajută albastrurile de rutil, dar răcirea controlată „poate accentua aspectul mat” (o glazură mată a devenit uscată) și poate scurta viața releelor cuptorului. L&L livrează și un program de răcire controlată pentru conul 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L „User 6”: răcire controlată pentru glazuri arse la conul 6
-Label: Răcire controlată L și L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Pas |                              Rată |                Țintă |
-| --- | --------------------------------: | -------------------: |
-| 1   |           Urcare cu viteză maximă | {{2232 °F; 1222 °C}} |
-| 2   |         Coborâre cu viteză maximă | {{1900 °F; 1038 °C}} |
-| 3   | Coborâre cu {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Controlerele Skutt oferă și ele o preîncălzire și o opțiune de răcire într-un singur pas.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### La un cuptor cu comandă manuală
+### On a manual kiln
 
-Un cuptor cu comandă manuală nu poate urma exact aceste programe, dar planul este același: blând la început, constant la mijloc și un final supravegheat. Programul Bracker's pentru glazuri de temperatură joasă este în secțiunea „Cuptoarele cu comandă manuală în detaliu”, mai jos; pentru conuri mai fierbinți, adaugă „în medie 15–30 de minute pentru fiecare număr de con”. Cu un pirometru, exercițiu și un jurnal, puteți imita aproximativ o răcire și menținere sau o răcire controlată, coborând manual comutatoarele, cum sugerează Digitalfire.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Cuptoarele cu comandă manuală în detaliu {#manual-kilns}
 

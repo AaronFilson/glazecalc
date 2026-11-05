@@ -458,73 +458,73 @@ L&L:n ja Bartlettin automatiikat käyttävät keilalle 04 lämpötilaa {{1926 °
 
 Käsisäätöinen uuni noudattaa samaa suunnitelmaa käsin: kuivaa hitaasti kansi raollaan ja tirkistysaukot auki, käännä kytkimiä portaittain asennosta Low asentoon Medium ja High ja anna Kiln-Sitter-katkaisimen{{en: kiln sitter}} päättää poltto. Julkaistut menettelyt ovat jäljempänä kohdassa Käsisäätöiset uunit tarkemmin.
 
-## Lasituspoltto {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Lasituspoltto{{en: glaze firing}} sulattaa lasitteen{{en: glaze}} lasiksi raakapoltetun esineen pinnalle. Useimmat aloittelijat polttavat matalapolton lasitteita keiloihin{{en: cones}} 06–04 tai keskipolton lasitteita keiloihin 5–6. Polta saven ja lasitteen pakkauksissa mainittuun keilaan ja käytä keilasarjaa{{en: cone pack}}, jonka numerot ovat tämän keilan ympärillä. Lasitteen sisällä sen sulaessa tapahtuvista asioista kerrotaan oppaassa [Lasittamisen perusteet](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Ladonta lasituspolttoon
+### Loading for a glaze firing
 
-- Lasitetut esineet eivät saa koskettaa toisiaan eivätkä uunin seiniä: jätä väliin noin ½ tuumaa (13 mm).
-- Jätä lasite pois pohjasta (**pohjan pitäminen lasitteettomana**) tai aseta matalapolton esineet **kolmijaloille**, pienille piikkijalustoille. Kivitavaraa{{en: stoneware}} ja posliinia ei pitäisi asettaa kolmijaloille, sillä ne uppoavat esineeseen näissä lämpötiloissa; käytä sen sijaan korkeapolttoon sopivaa uunilevyn suoja-ainetta tai kvartsihiekkaa.
-- Jätä uunilevyjen reunojen ja seinän tai katkaisimen väliin vähintään 1 tuuma (25 mm).
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Automatiikan polttokäyrät
+### Controller schedules
 
-Table: L&L:n ja Bartlettin lasituspolton valmisohjelmat
-Label: Lasituspolton valmisohjelmat
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segmentti                 |                     Nousu lämpötilaan |             Slow Glaze |             Fast Glaze |
-| ------------------------- | ------------------------------------: | ---------------------: | ---------------------: |
-| 1                         |                    {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |  Ei erillistä vaihetta |
-| 2                         | {{250 °F; 139 °C}} huipun alapuolelle | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                         |                                Huippu |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Kuumennusaika, tyhjä uuni |                                       |      Noin 6½–7½ tuntia |        Noin 3–4 tuntia |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Mihin segmentit 2 ja 3 päättyvät keilan mukaan (L&L ja Bartlett)
-Label: Valmisohjelmien tavoitteet
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Keila |  Segmentti 2 päättyy |               Huippu |
-| ----- | -------------------: | -------------------: |
-| 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze on turvallisempi oletus L&L:n nopeaa polttoa koskevan varoituksen vuoksi. Jos huippulämpötilassa lisää yli 5–10 minuutin haudutuksen{{en: hold}}, L&L neuvoo laskemaan tavoitelämpötilaa tai lämpötilakorjausta vastaavasti ja huomauttaa, että ”haudutus korkeissa lämpötiloissa kiihdyttää vastusten ja termoelementin kulumista”.
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Keila 6: lasku ja haudutus
+### Cone 6: drop-and-hold
 
-Keskipolton lasitteisiin jää joskus **neulanreikiä**{{en: pinholes}} (pieniä reikiä pinnassa) tai kuplia, jotka syntyvät sulasta kuplivista kaasuista. Polttokäyrä, jossa on **lasku ja haudutus**{{en: drop-and-hold}}, polttaa huippuun asti, jäähdyttää nopeasti noin {{100 °F; 56 °C}} ja hauduttaa siinä lämpötilassa. Digitalfiren sanoin: ”Kun lämpötilaa lasketaan 100°F ja sitä haudutetaan, sula on riittävän jäykkää kuplien puhkeamiseen mutta antaa niiden jälkien silti umpeutua.”
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfiren PLC6DS, lasku ja haudutus keilassa 6
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Vaihe |                                  Nopeus |              Tavoite | Haudutus                                              |
-| ----- | --------------------------------------: | -------------------: | ----------------------------------------------------- |
-| 1     |                   {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuuttia                                          |
-| 2     |                  {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Valinnaisesti 30 minuuttia kuplapilvien poistamiseksi |
-| 3     |                   {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuuttia; isoissa uuneissa pidempään              |
-| 4     | Lasku nopeudella {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuuttia                                          |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS kestää noin 9 tuntia 36 minuuttia. Juoksevammille lasitteille Digitalfire laskee lämpötilaa sen sijaan noin {{200 °F; 111 °C}}; liian suuri lasku ”tuo kiteytymisen vaaran haudutuksen aikana”. Sen huippu {{2200 °F; 1204 °C}} on alle keilataulukon lukeman {{2232 °F; 1222 °C}} keilalle 6; Digitalfiren mukaan useimmat uunit saavuttavat keilan 6 noin lämpötilassa {{2200 °F; 1204 °C}}. Tarkista se keilasarjalla omassa uunissa.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Säädetty jäähdytys
+### Slow cooling
 
-**Säädetty jäähdytys** tarkoittaa, että automatiikka jäähdyttää uunia asetetulla nopeudella sen sijaan, että lämpötila saisi laskea vapaasti. Digitalfiren C6DHSC on PLC6DS, jota seuraa jäähdytys nopeudella {{150 °F/h; 83 °C/h}} lämpötilasta {{2100 °F; 1148 °C}} lämpötilaan {{1400 °F; 760 °C}}, minkä jälkeen uuni sammutetaan. Se ”parantaa kiiltoa ja pinnanlaatua” ja auttaa rutiilisinisiä lasitteita, mutta säädetty jäähdytys ”voi lisätä mattaisuutta” (yksi mattalasite muuttui kuivaksi) ja voi lyhentää uunin releiden ikää. Myös L&L toimittaa säädetyn jäähdytyksen ohjelman keilaan 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L:n ”User 6”: säädetty jäähdytys keilan 6 lasitteille
-Label: L ja L, säädetty jäähdytys
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Vaihe |                                 Nopeus |              Tavoite |
-| ----- | -------------------------------------: | -------------------: |
-| 1     |               Täydellä nopeudella ylös | {{2232 °F; 1222 °C}} |
-| 2     |               Täydellä nopeudella alas | {{1900 °F; 1038 °C}} |
-| 3     | Lasku nopeudella {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Myös Skuttin automatiikoissa on esilämmitys ja yksivaiheinen jäähdytysvalinta.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Käsisäätöisessä uunissa
+### On a manual kiln
 
-Käsisäätöinen uuni ei voi noudattaa näitä polttokäyriä tarkasti, mutta suunnitelma on sama: aluksi varovasti, keskivaiheilla tasaisesti ja lopussa valvoen. Bracker’sin polttokäyrä matalapolton lasituspolttoon on jäljempänä kohdassa Käsisäätöiset uunit tarkemmin; kuumempiin keiloihin se lisää ”keskimäärin 15–30 minuuttia keilanumeroa kohden”. Lämpömittarin, harjoituksen ja polttopäiväkirjan avulla lasku ja haudutus tai säädetty jäähdytys onnistuu karkeasti myös kääntämällä kytkimiä käsin pienemmälle, kuten Digitalfire ehdottaa.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Käsisäätöiset uunit tarkemmin {#manual-kilns}
 

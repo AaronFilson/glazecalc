@@ -458,73 +458,73 @@ Ama-controller e-L&L ne-Bartlett asebenzisa u-{{1926 °F; 1052 °C}} ku-cone 04 
 
 I-kiln yesandla ilandela uhlelo olufanayo ngesandla: omisa kancane isivalo sivulwe kancane nezimbobo zokulunguza zivuliwe, khuphula amaswishi ukusuka ku-Phansi (Low) kuya ku-Phakathi (Medium) kuya ku-Phezulu (High), bese uvumela i-sitter iqede ukushisa. Izinqubo ezishicilelwe zingaphansi kwesithi Ama-kiln esandla ngokuningiliziwe, ngezansi.
 
-## Ukushisa i-glaze {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Ukushisa i-glaze kuncibilikisa i-glaze ibe yingilazi phezu kwe-bisque. Abaqalayo abaningi bashisa ama-glaze okushisa okuphansi ku-cone 06–04 noma ama-glaze okushisa okuphakathi ku-cone 5–6. Shisa ku-cone ebhalwe kumalebula obumba nawe-glaze yakho, ne-cone pack ezungeze leyo nombolo. Ngokwenzekayo ngaphakathi kwe-glaze njengoba incibilika, bona [Izisekelo ze-glaze](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Ukulayisha ukushisa i-glaze
+### Loading for a glaze firing
 
-- Izingcezu ezine-glaze akumele zithintane noma zithinte izindonga: shiya cishe iyintshi engu-½ (13 mm).
-- Gcina i-glaze ingekho onyaweni (**dry-footing**), noma ubeke izitsha zokushisa okuphansi phezu kwama-**stilt**, izitendi ezincane ezinezihloko. I-stoneware ne-porcelain akufanele kume phezu kwama-stilt, angena kuzo kulawo mazinga okushisa; sebenzisa i-kiln wash yokushisa okuphezulu noma isihlabathi se-silica esikhundleni salokho.
-- Shiya okungenani iyintshi engu-1 (25 mm) phakathi konqenqema lwamashalofu nodonga noma i-sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Izinhlelo ze-controller
+### Controller schedules
 
-Table: Izinhlelo ze-glaze ezisethwe ngaphambili ze-L&L ne-Bartlett
-Label: Izinhlelo ze-glaze ezisethiwe
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| I-segment                               |                          Khuphukela ku- |               Slow Glaze |                    Fast Glaze |
-| --------------------------------------- | --------------------------------------: | -----------------------: | ----------------------------: |
-| 1                                       |                      {{250 °F; 121 °C}} |    {{150 °F/h; 83 °C/h}} | Asikho isinyathelo esihlukile |
-| 2                                       | {{250 °F; 139 °C}} ngaphansi kwesiqongo |   {{400 °F/h; 222 °C/h}} |        {{570 °F/h; 317 °C/h}} |
-| 3                                       |                                Isiqongo |    {{120 °F/h; 67 °C/h}} |        {{200 °F/h; 111 °C/h}} |
-| Isikhathi sokushisa, i-kiln engenalutho |                                         | Cishe amahora angu-6½–7½ |        Cishe amahora angu-3–4 |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Lapho ama-segment 2 no-3 aphela khona, nge-cone (L&L ne-Bartlett)
-Label: Okuhlosiwe kwezinhlelo ezisethiwe
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| I-cone |   I-segment 2 iphela |             Isiqongo |
-| ------ | -------------------: | -------------------: |
-| 06     |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04     |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6      | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-I-Slow Glaze iyinketho ephephe kakhulu, uma kubhekwa isixwayiso se-L&L ngokushisa ngokushesha. Uma wengeza ukubamba okungaphezu kwemizuzu engu-5–10 esiqongweni, i-L&L ithi yehlisa okuhlosiwe noma i-cone offset ukuze kulingane, futhi iphawula ukuthi "Ukubamba emazingeni okushisa aphezulu kusheshisa ukuguga kwama-element ne-thermocouple."
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### I-cone 6: drop-and-hold
+### Cone 6: drop-and-hold
 
-Ama-glaze okushisa okuphakathi kwesinye isikhathi aphuma ane-**pinholes** (izimbotshana ezincane ebusweni) noma amabhamuza, ashiywe yigesi ephuma ngamagwebu ekuncibilikeni. Uhlelo lwe-**drop-and-hold** (yehlisa ubambe) lushisa luze lufike phezulu, lupholise ngokushesha cishe ngo-{{100 °F; 56 °C}} bese lubamba lapho. Ngamazwi e-Digitalfire, "Ukwehla ngo-100°F nokubamba kunika okuncibilikile ubukhuni obanele ukuqhumisa amagwebu kodwa kusabavumela ukuthi aphole."
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: I-Digitalfire PLC6DS, i-cone 6 drop-and-hold
-Label: I-Digitalfire PLC6DS
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Label: Digitalfire PLC6DS
 
-| Isinyathelo |                        Isivinini |           Okuhlosiwe | Ukubamba                                            |
-| ----------- | -------------------------------: | -------------------: | --------------------------------------------------- |
-| 1           |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Imizuzu engu-60                                     |
-| 2           |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Imizuzu engu-30 uma uthanda, ukususa amafu amagwebu |
-| 3           |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Imizuzu engu-10; isikhathi eside kuma-kiln amakhulu |
-| 4           | Yehla ngo-{{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Imizuzu engu-30                                     |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-I-PLC6DS ithatha cishe amahora angu-9 nemizuzu engu-36. Kuma-glaze agobhoza kakhulu, i-Digitalfire yehlisa cishe ngo-{{200 °F; 111 °C}} esikhundleni salokho; ukwehlisa kakhulu "kuba sengozini yokwakheka kwamakristalu ngesikhathi sokubamba". Isiqongo sayo esingu-{{2200 °F; 1204 °C}} singaphansi kwesishadi esingu-{{2232 °F; 1222 °C}} se-cone 6; i-Digitalfire ibika ukuthi ama-kiln amaningi afinyelela ku-cone 6 cishe ku-{{2200 °F; 1204 °C}}. Kuhlole nge-cone pack ku-kiln yakho.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Ukupholisa kancane
+### Slow cooling
 
-**Ukupholisa kancane** kusho ukuthi i-controller ipholisa i-kiln ngesivinini esisethiwe esikhundleni sokuyiyeka yehle ngokukhululekile. I-C6DHSC ye-Digitalfire yi-PLC6DS elandelwa ukupholisa ngo-{{150 °F/h; 83 °C/h}} kusukela ku-{{2100 °F; 1148 °C}} kuze kufike ku-{{1400 °F; 760 °C}}, bese icishwa. "Ithuthukisa ukucwebezela nekhwalithi yobuso" futhi isiza ama-rutile blue, kodwa ukupholisa kancane "kungandisa ukungacwebezeli (matteness)" (enye i-glaze engacwebezeli yaba yomile) futhi kungafinyeza impilo yama-relay e-kiln. I-L&L nayo ithumela uhlelo lokupholisa kancane lwe-cone 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: I-L&L "User 6": ukupholisa kancane kwama-glaze e-cone 6
-Label: Ukupholisa kancane kwe-L and L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Isinyathelo |                       Isivinini |           Okuhlosiwe |
-| ----------- | ------------------------------: | -------------------: |
-| 1           |       Ijubane eligcwele phezulu | {{2232 °F; 1222 °C}} |
-| 2           |        Ijubane eligcwele phansi | {{1900 °F; 1038 °C}} |
-| 3           | Yehla ngo-{{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Ama-controller e-Skutt nawo anikeza i-preheat nenketho yokupholisa yesinyathelo esisodwa.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Ku-kiln yesandla
+### On a manual kiln
 
-I-kiln yesandla ayikwazi ukulandela lezi zinhlelo ncamashi, kodwa uhlelo luyafana: ngobumnene ekuqaleni, kuzinzile phakathi, nokuphela okubhekiwe. Uhlelo lwe-glaze lokushisa okuphansi lwe-Bracker's lungaphansi kwesithi Ama-kiln esandla ngokuningiliziwe, ngezansi; kuma-cone ashisa kakhulu lwengeza "isilinganiso semizuzu engu-15–30 ngenombolo ye-cone ngayinye". Nge-pyrometer, ukuzijwayeza nencwadi yokubhala, ungakopisha cishe i-drop-and-hold noma ukupholisa kancane ngokwehlisa amaswishi ngesandla, njengoba i-Digitalfire iphakamisa.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Ama-kiln esandla ngokuningiliziwe {#manual-kilns}
 

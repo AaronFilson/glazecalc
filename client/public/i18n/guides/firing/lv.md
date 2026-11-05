@@ -458,73 +458,73 @@ L&L un Bartlett kontrolieri konusam 04 izmanto {{1926 °F; 1052 °C}} un konusam
 
 Manuāli vadāmā krāsnī to pašu plānu izpilda ar roku: žāvējiet lēni ar pavērtu vāku un atvērtiem skatlodziņiem, pakāpeniski pārslēdziet slēdžus no pozīcijas Low (zema) uz Medium (vidēja) un tad uz High (augsta) un ļaujiet Kiln-Sitter pabeigt apdedzināšanu. Publicētās procedūras ir sadaļā “Manuāli vadāmas krāsnis sīkāk” zemāk.
 
-## Glazūras apdedzināšana {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Glazūras apdedzināšanā{{en: glaze firing}} glazūra{{en: glaze}} uz biskvīta{{en: bisque}} izkūst un kļūst par stiklu. Lielākā daļa iesācēju apdedzina zemas temperatūras glazūras līdz konusiem 06–04 vai vidējas temperatūras glazūras līdz konusiem 5–6. Apdedziniet līdz konusam, kas norādīts uz māla un glazūras etiķetēm, ar konusu komplektu{{en: cone pack}} ap šo numuru. Par to, kas notiek glazūrā, tai kūstot, skatiet ceļvedi [Glazēšana no pašiem pamatiem](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Iekraušana glazūras apdedzināšanai
+### Loading for a glaze firing
 
-- Glazēti izstrādājumi nedrīkst saskarties cits ar citu vai ar sienām: atstājiet apmēram ½ collas (13 mm).
-- Neatstājiet glazūru uz pamatnes (**pamatnes notīrīšana no glazūras**) vai novietojiet zemas temperatūras izstrādājumus uz **trijkājiem** – maziem statīviem ar smailēm. Akmens masas{{en: stoneware}} un porcelāna izstrādājumus nevajadzētu likt uz trijkājiem, jo tādā temperatūrā tie iespiežas masā; tā vietā izmantojiet augstas temperatūras atdalīšanas līdzekli vai kvarca smiltis.
-- Starp plauktu malām un sienu vai Kiln-Sitter atstājiet vismaz 1 collu (25 mm).
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Kontroliera programmas
+### Controller schedules
 
-Table: L&L un Bartlett iebūvētās glazūras programmas
-Label: Glazūras programmas
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segments                        |                                    Sildīt līdz |             Slow Glaze |             Fast Glaze |
-| ------------------------------- | ---------------------------------------------: | ---------------------: | ---------------------: |
-| 1                               |                             {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Nav atsevišķa soļa |
-| 2                               | {{250 °F; 139 °C}} zem maksimālās temperatūras | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                               |                          Maksimālā temperatūra |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Sildīšanas laiks tukšai krāsnij |                                                |  Apmēram 6½–7½ stundas |    Apmēram 3–4 stundas |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Kur beidzas segmenti 2 un 3, atkarībā no konusa (L&L un Bartlett)
-Label: Programmu mērķa temperatūras
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Konuss |   Segments 2 beidzas | Maksimālā temperatūra |
-| ------ | -------------------: | --------------------: |
-| 06     |  {{1569 °F; 854 °C}} |   {{1819 °F; 993 °C}} |
-| 04     |  {{1676 °F; 913 °C}} |  {{1926 °F; 1052 °C}} |
-| 6      | {{1982 °F; 1083 °C}} |  {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Ņemot vērā L&L brīdinājumu par ātru apdedzināšanu, drošāka izvēle pēc noklusējuma ir Slow Glaze. Ja maksimālajā temperatūrā pievienojat noturēšanu{{en: hold}}, kas ilgāka par 5–10 minūtēm, L&L iesaka attiecīgi pazemināt mērķa temperatūru vai temperatūras korekciju un norāda, ka “Noturēšana augstā temperatūrā paātrina sildelementu un termopāra nodilšanu.”
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Konuss 6: atdzesēšana un noturēšana
+### Cone 6: drop-and-hold
 
-Vidējas temperatūras glazūrās dažkārt paliek **adatas dūrieni**{{en: pinholes}} (sīki caurumiņi virsmā) vai pūslīši, ko atstāj gāze, kas izdalās no kausējuma. Programma ar **atdzesēšanu un noturēšanu**{{en: drop-and-hold}} apdedzina līdz maksimālajai temperatūrai, ātri atdzesē krāsni par apmēram {{100 °F; 56 °C}} un notur šajā temperatūrā. Kā raksta Digitalfire, “Atdzesēšana par 100°F un noturēšana piešķir kausējumam pietiekamu viskozitāti, lai burbuļi pārsprāgtu, bet to vietas vēl varētu aizlīdzināties.”
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS, konuss 6, atdzesēšana un noturēšana
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Solis |                                  Ātrums |               Mērķis | Noturēšana                                        |
-| ----- | --------------------------------------: | -------------------: | ------------------------------------------------- |
-| 1     |                   {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minūšu                                         |
-| 2     |                  {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Pēc izvēles 30 minūšu, lai izzustu burbuļu mākoņi |
-| 3     |                   {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minūšu; lielās krāsnīs ilgāk                   |
-| 4     | Dzesēt ar ātrumu {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minūšu                                         |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS ilgst apmēram 9 stundas 36 minūtes. Šķidrāk plūstošām glazūrām Digitalfire temperatūru tā vietā pazemina par apmēram {{200 °F; 111 °C}}; pārāk liela atdzesēšana “rada kristalizācijas risku noturēšanas laikā”. Tās maksimālā temperatūra {{2200 °F; 1204 °C}} ir zemāka par tabulā konusam 6 norādīto {{2232 °F; 1222 °C}}; Digitalfire ziņo, ka lielākā daļa krāsnu konusu 6 sasniedz apmēram {{2200 °F; 1204 °C}} temperatūrā. Pārbaudiet to savā krāsnī ar konusu komplektu.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Kontrolēta dzesēšana
+### Slow cooling
 
-**Kontrolēta dzesēšana** (lēna dzesēšana) nozīmē, ka kontrolieris dzesē krāsni ar iestatītu ātrumu, nevis ļauj temperatūrai brīvi kristies. Digitalfire programma C6DHSC ir PLC6DS, pēc kuras krāsni dzesē ar ātrumu {{150 °F/h; 83 °C/h}} no {{2100 °F; 1148 °C}} līdz {{1400 °F; 760 °C}} un tad izslēdz. Tā “uzlabo spīdumu un virsmas kvalitāti” un palīdz rutila zilajām glazūrām, taču lēna dzesēšana “var palielināt matētumu” (viena matēta glazūra kļuva sausa) un var saīsināt krāsns releju kalpošanas laiku. Arī L&L piegādā kontrolētas dzesēšanas programmu konusam 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L “User 6”: kontrolēta dzesēšana glazūrām konusam 6
-Label: L un L kontrolētā dzesēšana
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Solis |                                 Ātrums |               Mērķis |
-| ----- | -------------------------------------: | -------------------: |
-| 1     |                Sildīt maksimālā ātrumā | {{2232 °F; 1222 °C}} |
-| 2     |                Dzesēt maksimālā ātrumā | {{1900 °F; 1038 °C}} |
-| 3     | Dzesēt ar ātrumu {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Arī Skutt kontrolieri piedāvā izžāvēšanu krāsnī un vienpakāpes dzesēšanas iespēju.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Manuāli vadāmā krāsnī
+### On a manual kiln
 
-Manuāli vadāma krāsns nevar precīzi izpildīt šīs programmas, taču plāns ir tas pats: sākumā saudzīgi, vidusdaļā vienmērīgi, beigās uzmanīga vērošana. Bracker's zemas temperatūras glazūru programma ir sadaļā “Manuāli vadāmas krāsnis sīkāk” zemāk; karstākiem konusiem tā pievieno “vidēji 15–30 minūtes uz katru konusa numuru”. Ar pirometru, pieredzi un pierakstiem jūs varat aptuveni atkārtot atdzesēšanu un noturēšanu{{en: drop-and-hold}} vai kontrolētu dzesēšanu, ar roku pagriežot slēdžus uz zemākām pozīcijām, kā iesaka Digitalfire.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Manuāli vadāmas krāsnis sīkāk {#manual-kilns}
 

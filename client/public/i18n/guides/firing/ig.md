@@ -458,73 +458,73 @@ Controller L&L na Bartlett na-eji {{1926 °F; 1052 °C}} maka cone 04 na {{1819 
 
 Kiln aka na-eso otu atụmatụ ahụ site n'aka: mee ka ite kpọọ nkụ nwayọọ ya na mkpuchi e weliri na peephole meghere emeghe, bulie switch site na Low (ọkụ dị ala) gaa na Medium (ọkụ etiti) gaa na High (ọkụ dị elu), ma hapụ sitter ka o mechie ịgba ọkụ. Usoro e bipụtara dị n'okpuru Kiln aka n'uju, n'okpuru.
 
-## Ịgba glaze {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Ịgba glaze na-agbaze glaze ka ọ ghọọ iko n'elu bisque. Ọtụtụ ndị mbido na-agba glaze ọkụ dị ala na cone 06–04 ma ọ bụ glaze ọkụ etiti na cone 5–6. Gbaa ọkụ ruo cone dị na akara ụrọ na glaze gị, ya na cone pack gburugburu nọmba ahụ. Maka ihe na-eme n'ime glaze ka ọ na-agbaze, lee [Ntọala glaze](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Ibu maka ịgba glaze
+### Loading for a glaze firing
 
-- Iberibe e tinyere glaze agaghị emetụ ibe ha ma ọ bụ mgbidi: hapụ ihe dị ka ½ inch (13 mm).
-- Debe glaze n'ebe dị anya site n'ụkwụ ite (**dry-footing**), ma ọ bụ dowe ite ọkụ dị ala n'elu **stilt**, obere ihe nkwado nwere ọnụ dị nkọ. Stoneware na porcelain ekwesịghị iguzo n'elu stilt, nke na-abanye n'ime ha n'ọkụ ndị ahụ; jiri kiln wash nke ọkụ dị elu ma ọ bụ ájá silica kama.
-- Hapụ opekata mpe 1 inch (25 mm) n'etiti ọnụ shelf na mgbidi ma ọ bụ sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Usoro controller
+### Controller schedules
 
-Table: Usoro glaze e debere nke L&L na Bartlett
-Label: Usoro glaze e debere
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segment                           |                        Rịgoo ruo |             Slow Glaze |             Fast Glaze |
-| --------------------------------- | -------------------------------: | ---------------------: | ---------------------: |
-| 1                                 |               {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Enweghị nzọụkwụ nke ya |
-| 2                                 | {{250 °F; 139 °C}} n'okpuru peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                 |                             Peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Oge ikpo ọkụ, kiln tọgbọrọ chakoo |                                  |    Ihe dị ka awa 6½–7½ |      Ihe dị ka awa 3–4 |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Ebe segment 2 na 3 na-akwụsị, site na cone (L&L na Bartlett)
-Label: Ọkụ usoro e debere
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Cone |  Segment 2 na-akwụsị |                 Peak |
+| Cone |       Segment 2 ends |                 Peak |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze bụ nhọrọ ka nchekwa, n'ihi ịdọ aka na ntị L&L gbasara ịgba ọkụ ngwa ngwa. Ọ bụrụ na ị tinye hold karịrị nkeji 5–10 na peak, L&L kwuru ka i wedata ọkụ a chọrọ ma ọ bụ cone offset ka o kwekọọ, ma kwuo na "Soaking n'ọkụ dị elu na-eme ka element na thermocouple mebie ngwa ngwa."
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
 ### Cone 6: drop-and-hold
 
-Glaze ọkụ etiti na-apụta mgbe ụfọdụ nwere **pinhole** (obere oghere n'elu ya) ma ọ bụ ọkpụkpụ, nke gas na-esi n'ihe gbazere apụta hapụrụ. Usoro **drop-and-hold** na-agba ọkụ ruo n'elu, na-eme ka ọ jụọ ngwa ngwa ihe dị ka {{100 °F; 56 °C}} ma jide ya ebe ahụ. Dịka Digitalfire si kwuo: "Ịdaba 100°F na ijide na-enye ihe gbazere oke ọ ga-eji gbawaa ọkpụkpụ ma ka na-ahapụ ha ka ha gwọọ."
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
 Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Nzọụkwụ |                              Ọsọ |          Ọkụ a chọrọ | Hold                                                    |
-| ------- | -------------------------------: | -------------------: | ------------------------------------------------------- |
-| 1       |            {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Nkeji 60                                                |
-| 2       |           {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Nkeji 30 a na-amanyeghị, iji kpochapụ igwe ojii ọkpụkpụ |
-| 3       |            {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Nkeji 10; ogologo karịa na kiln buru ibu                |
-| 4       | Gbadaa na {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Nkeji 30                                                |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS na-ewe ihe dị ka awa 9 na nkeji 36. Maka glaze na-asọ nke ukwuu, Digitalfire na-ada ihe dị ka {{200 °F; 111 °C}} kama; ịda nke ukwuu "na-etinye ihe ize ndụ nke crystal ịpụta n'oge hold". Peak ya nke {{2200 °F; 1204 °C}} dị n'okpuru {{2232 °F; 1222 °C}} nke chaatị maka cone 6; Digitalfire kọrọ na ọtụtụ kiln na-eru cone 6 na ihe dị ka {{2200 °F; 1204 °C}}. Jiri cone pack lelee ya na kiln nke gị.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Ịjụ oyi nwayọọ
+### Slow cooling
 
-**Ịjụ oyi nwayọọ** pụtara na controller na-eme ka kiln jụọ oyi n'ọsọ e dozigoro kama ịhapụ ya ka ọ daa n'efu. C6DHSC nke Digitalfire bụ PLC6DS sochiri ịjụ oyi na {{150 °F/h; 83 °C/h}} site na {{2100 °F; 1148 °C}} ruo {{1400 °F; 760 °C}}, mgbe ahụ gbanyụọ. Ọ "na-eme ka nchapụta na ọdịdị elu ka mma" ma na-enyere rutile blue aka, mana ịjụ oyi nwayọọ "nwere ike ime ka matte bawanye" (otu glaze matte kpọrọ nkụ) ma nwee ike ime ka relay kiln ahụ ghara ịdị ogologo ndụ. L&L na-ezitekwa usoro ịjụ oyi nwayọọ maka cone 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L "User 6": ịjụ oyi nwayọọ maka glaze cone 6
-Label: Ịjụ oyi nwayọọ L na L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Nzọụkwụ |                             Ọsọ |          Ọkụ a chọrọ |
-| ------- | ------------------------------: | -------------------: |
-| 1       |                Ọsọ zuru ezu elu | {{2232 °F; 1222 °C}} |
-| 2       |                Ọsọ zuru ezu ala | {{1900 °F; 1038 °C}} |
-| 3       | Gbadaa na {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Controller Skutt na-enyekwa preheat na nhọrọ ịjụ oyi otu nzọụkwụ.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Na kiln aka
+### On a manual kiln
 
-Kiln aka apụghị iso usoro ndị a kpọmkwem, mana atụmatụ ahụ bụ otu: nwayọọ na mbụ, kwụsie ike n'etiti, na njedebe a na-ele anya. Usoro glaze ọkụ dị ala nke Bracker's dị n'okpuru Kiln aka n'uju, n'okpuru; maka cone dị ọkụ karịa, ọ na-agbakwunye "nkezi nkeji 15–30 maka nọmba cone ọ bụla". Site na pyrometer, omume na ndekọ, ị nwere ike iṅomi drop-and-hold ma ọ bụ ịjụ oyi nwayọọ n'ihe dị ka site n'iji aka wedata switch, dịka Digitalfire na-atụ aro.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Kiln aka n'uju {#manual-kilns}
 

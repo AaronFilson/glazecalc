@@ -458,73 +458,73 @@ Regulátory L&L a Bartlett používají pro žároměrku 04 teplotu {{1926 °F; 
 
 Ručně ovládaná pec (bez regulátoru) postupuje podle stejného plánu, jen ručně: pomalu sušte s pootevřeným víkem a otevřenými průzory, přepínače postupně přepínejte z Low na Medium a na High (nízký, střední a vysoký stupeň) a výpal nechte ukončit vypínač Kiln-Sitter{{en: kiln sitter}}. Zveřejněné postupy najdete níže v oddíle Podrobně o ručně ovládaných pecích.
 
-## Glazurový výpal {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Glazurový výpal{{en: glaze firing}} roztaví glazuru{{en: glaze}} na přežahnutém střepu{{en: bisque}} ve sklo. Většina začátečníků vypaluje nízkoteplotní glazury na žároměrku{{en: cone}} 06–04 nebo středněteplotní glazury na žároměrku 5–6. Vypalujte na žároměrku uvedenou na obalu vaší hlíny a glazury, se sadou tří žároměrek{{en: cone pack}} kolem tohoto čísla. Co se v glazuře při tavení děje, se dočtete v návodu [Glazování od základů](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Zakládání pece pro glazurový výpal
+### Loading for a glaze firing
 
-- Glazované kusy se nesmějí dotýkat navzájem ani stěn: nechte mezi nimi asi ½ palce (13 mm).
-- Dno nechte bez glazury (**setřete glazuru ze dna**), nebo nízkoteplotní výrobky postavte na **trojnožky**, malé stojánky s hroty. Kamenina{{en: stoneware}} a porcelán by na trojnožkách stát neměly, protože se při těchto teplotách do výrobku zaboří; použijte místo toho vysokoteplotní nátěr na pláty nebo křemenný písek.
-- Mezi okraji plátů a stěnou nebo vypínačem Kiln-Sitter{{en: kiln sitter}} nechte alespoň 1 palec (25 mm).
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Vypalovací křivky pro regulátor
+### Controller schedules
 
-Table: Přednastavené programy L&L a Bartlett pro glazurový výpal
-Label: Programy pro glazurový výpal
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segment                  |                                Nárůst na |             Slow Glaze |             Fast Glaze |
-| ------------------------ | ---------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Bez samostatného kroku |
-| 2                        | {{250 °F; 139 °C}} pod konečnou teplotou | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          Konečná teplota |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Doba ohřevu, prázdná pec |                                          |       Asi 6½–7½ hodiny |         Asi 3–4 hodiny |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Kde končí segmenty 2 a 3, podle žároměrky (L&L a Bartlett)
-Label: Cílové teploty programů
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Žároměrka |     Konec segmentu 2 |      Konečná teplota |
-| --------- | -------------------: | -------------------: |
-| 06        |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04        |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6         | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Vzhledem k varování L&L před rychlým výpalem je Slow Glaze bezpečnější výchozí volbou. Pokud na konečné teplotě přidáte výdrž{{en: hold}} delší než 5–10 minut, L&L radí odpovídajícím způsobem snížit cílovou teplotu nebo offset pro žároměrku a upozorňuje, že „výdrž při vysokých teplotách urychluje opotřebení topných spirál a termočlánku“.
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Žároměrka 6: pokles a výdrž
+### Cone 6: drop-and-hold
 
-Středněteplotní glazury někdy vyjdou s **vpichy**{{en: pinholing}} (drobnými dírkami v povrchu) nebo puchýři, které zanechá plyn probublávající z taveniny. Vypalovací křivka **pokles a výdrž**{{en: drop-and-hold}} vypaluje na nejvyšší teplotu, pak pec rychle zchladí asi o {{100 °F; 56 °C}} a na této teplotě ji drží. Slovy webu Digitalfire: „Pokles o 100°F a výdrž dodají tavenině dost viskozity, aby bubliny praskly, a přitom se ještě mohly zacelit.“
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: PLC6DS od Digitalfire, pokles a výdrž pro žároměrku 6
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Krok |                              Rychlost |       Cílová teplota | Výdrž                                            |
-| ---- | ------------------------------------: | -------------------: | ------------------------------------------------ |
-| 1    |                 {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                         |
-| 2    |                {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Volitelně 30 minut, k odstranění mračen bublinek |
-| 3    |                 {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; ve velkých pecích déle                 |
-| 4    | Dolů rychlostí {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                         |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS trvá asi 9 hodin 36 minut. U tekutějších glazur Digitalfire místo toho snižuje teplotu asi o {{200 °F; 111 °C}}; příliš velký pokles „hrozí krystalizací během výdrže“. Jeho konečná teplota {{2200 °F; 1204 °C}} je pod hodnotou {{2232 °F; 1222 °C}}, kterou tabulka uvádí pro žároměrku 6; podle webu Digitalfire většina pecí dosáhne žároměrky 6 přibližně při {{2200 °F; 1204 °C}}. Ověřte si to sadou tří žároměrek ve vlastní peci.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Regulované chlazení
+### Slow cooling
 
-**Regulované chlazení** znamená, že regulátor chladí pec nastavenou rychlostí, místo aby ji nechal volně chladnout. C6DHSC od Digitalfire je PLC6DS, po kterém následuje chlazení rychlostí {{150 °F/h; 83 °C/h}} z {{2100 °F; 1148 °C}} na {{1400 °F; 760 °C}} a pak vypnutí. „Zlepšuje lesk a kvalitu povrchu“ a pomáhá rutilovým modrým glazurám, ale regulované chlazení „může zvýšit matnost“ (jedna matná glazura vyšla suchá) a může zkrátit životnost relé pece. L&L dodává program pro regulované chlazení také pro žároměrku 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L „User 6“: regulované chlazení pro glazury na žároměrku 6
-Label: Regulované chlazení od L a L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Krok |                             Rychlost |       Cílová teplota |
-| ---- | -----------------------------------: | -------------------: |
-| 1    |               Nahoru plnou rychlostí | {{2232 °F; 1222 °C}} |
-| 2    |                 Dolů plnou rychlostí | {{1900 °F; 1038 °C}} |
-| 3    | Dolů rychlostí {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Regulátory Skutt rovněž nabízejí dosoušení a možnost jednokrokového chlazení.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### V ručně ovládané peci
+### On a manual kiln
 
-Ručně ovládaná pec nemůže tyto křivky přesně dodržet, ale plán je stejný: zpočátku zlehka, uprostřed rovnoměrně a konec pod dohledem. Křivka firmy Bracker's pro nízkoteplotní glazury je níže v oddíle Podrobně o ručně ovládaných pecích; pro teplejší žároměrky přidává „v průměru 15–30 minut na každé číslo žároměrky“. S pyrometrem, praxí a záznamy výpalů můžete pokles a výdrž nebo regulované chlazení zhruba napodobit tak, že budete přepínače ručně stahovat níž, jak navrhuje Digitalfire.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Podrobně o ručně ovládaných pecích {#manual-kilns}
 

@@ -458,73 +458,73 @@ Os controladores da L&L e da Bartlett usam {{1926 °F; 1052 °C}} para o cone 04
 
 Um forno manual segue o mesmo plano à mão: seque devagar com a tampa entreaberta e os visores abertos, suba as chaves de Baixa para Média e para Alta, e deixe o sitter encerrar a queima. Os procedimentos publicados estão em Fornos manuais em detalhe, abaixo.
 
-## Queima de esmalte {#glaze}
+## Glaze firing {#glaze lang=en}
 
-A queima de esmalte{{en: glaze firing}} derrete o esmalte até virar vidro sobre o biscoito. A maioria dos iniciantes queima esmaltes de baixa temperatura nos cones 06–04 ou esmaltes de média temperatura nos cones 5–6. Queime até o cone indicado nos rótulos da sua massa e do seu esmalte, com um conjunto de cones em torno desse número. Para saber o que acontece dentro do esmalte enquanto ele derrete, veja [Esmaltes desde o básico](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Enfornando para uma queima de esmalte
+### Loading for a glaze firing
 
-- As peças esmaltadas não devem tocar umas nas outras nem nas paredes: deixe cerca de ½ polegada (13 mm).
-- Mantenha o esmalte longe do pé (**pé seco**), ou ponha as peças de baixa temperatura sobre **trempes**, pequenos suportes com pontas. O grés e a porcelana não devem ficar sobre trempes, que se cravam nessas temperaturas; use protetor de placas de alta temperatura ou areia de sílica.
-- Deixe pelo menos 1 polegada (25 mm) entre as bordas das placas e a parede ou o sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Curvas de queima do controlador
+### Controller schedules
 
-Table: Predefinições de esmalte da L&L e da Bartlett
-Label: Predefinições de esmalte
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segmento                          |                                       Subir até |             Slow Glaze |             Fast Glaze |
-| --------------------------------- | ----------------------------------------------: | ---------------------: | ---------------------: |
-| 1                                 |                              {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Sem etapa separada |
-| 2                                 | {{250 °F; 139 °C}} abaixo da temperatura máxima | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                 |                            A temperatura máxima |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Tempo de aquecimento, forno vazio |                                                 |   Cerca de 6½–7½ horas |     Cerca de 3–4 horas |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Onde terminam os segmentos 2 e 3, por cone (L&L e Bartlett)
-Label: Alvos das predefinições
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Cone |   Segmento 2 termina |   Temperatura máxima |
+| Cone |       Segment 2 ends |                 Peak |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-O Slow Glaze é a escolha mais segura, dado o aviso da L&L sobre a queima rápida. Se você acrescentar um patamar de mais de 5–10 minutos na temperatura máxima, a L&L diz para baixar o alvo ou a compensação do cone na mesma medida, e observa que “Manter altas temperaturas acelera o desgaste das resistências e do termopar.”
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Cone 6: descida e patamar
+### Cone 6: drop-and-hold
 
-Os esmaltes de média temperatura às vezes saem com **furinhos** (pinholes: buracos minúsculos na superfície) ou bolhas, deixados por gás que borbulha para fora do esmalte derretido. Uma curva de **descida e patamar** queima até o topo, esfria rápido cerca de {{100 °F; 56 °C}} e mantém nessa temperatura. Nas palavras da Digitalfire, “Descer 100°F e manter dá ao esmalte derretido viscosidade suficiente para estourar as bolhas, mas ainda deixa que elas cicatrizem.”
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS, descida e patamar no cone 6
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Etapa |                              Taxa |                 Alvo | Patamar                                              |
-| ----- | --------------------------------: | -------------------: | ---------------------------------------------------- |
-| 1     |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutos                                           |
-| 2     |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opcional, 30 minutos, para desfazer nuvens de bolhas |
-| 3     |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutos; mais em fornos grandes                   |
-| 4     | Descendo a {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutos                                           |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-O PLC6DS leva cerca de 9 horas e 36 minutos. Para esmaltes mais fluidos, a Digitalfire desce cerca de {{200 °F; 111 °C}} em vez disso; descer demais “arrisca cristalização durante o patamar”. Sua temperatura máxima de {{2200 °F; 1204 °C}} fica abaixo dos {{2232 °F; 1222 °C}} da tabela para o cone 6; a Digitalfire relata que a maioria dos fornos chega ao cone 6 a cerca de {{2200 °F; 1204 °C}}. Confira com um conjunto de cones no seu próprio forno.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Resfriamento lento
+### Slow cooling
 
-**Resfriamento lento** quer dizer que o controlador esfria o forno em uma velocidade definida, em vez de deixá-lo cair livremente. O C6DHSC da Digitalfire é o PLC6DS seguido de resfriamento a {{150 °F/h; 83 °C/h}} de {{2100 °F; 1148 °C}} até {{1400 °F; 760 °C}}, e depois o desligamento. Ele “melhora o brilho e a qualidade da superfície” e ajuda nos azuis de rutilo, mas o resfriamento lento “pode aumentar o aspecto fosco” (um esmalte fosco ficou seco) e pode encurtar a vida útil dos relés do forno. A L&L também fornece um programa de resfriamento lento para o cone 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L “User 6”: resfriamento lento para esmaltes de cone 6
-Label: Resfriamento lento da L&L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Etapa |                             Taxa |                 Alvo |
-| ----- | -------------------------------: | -------------------: |
-| 1     |       Subida a toda a velocidade | {{2232 °F; 1222 °C}} |
-| 2     |      Descida a toda a velocidade | {{1900 °F; 1038 °C}} |
-| 3     | Descendo a {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Os controladores da Skutt também oferecem um pré-aquecimento e uma opção de resfriamento em uma etapa.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Em um forno manual
+### On a manual kiln
 
-Um forno manual não consegue seguir essas curvas exatamente, mas o plano é o mesmo: suave no começo, constante no meio e um final vigiado. A curva de esmalte de baixa temperatura da Bracker's está em Fornos manuais em detalhe, abaixo; para cones mais quentes ela acrescenta “em média 15–30 minutos por número de cone”. Com um pirômetro, prática e um registro, você pode copiar aproximadamente uma descida e patamar ou um resfriamento lento baixando as chaves à mão, como a Digitalfire sugere.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Fornos manuais em detalhe {#manual-kilns}
 

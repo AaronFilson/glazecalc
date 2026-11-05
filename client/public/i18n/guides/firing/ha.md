@@ -458,73 +458,73 @@ Controller na L&L da Bartlett suna amfani da {{1926 °F; 1052 °C}} ga cone 04 d
 
 Kiln na hannu yana bin tsari ɗaya da hannu: ku busar a hankali da murfi a ɗan buɗe da ramukan leƙe a buɗe, ku ɗaga suwis daga Low (ƙasa) zuwa Medium (tsakiya) zuwa High (sama), kuma ku bar sitter ya gama gasar. Hanyoyin da aka wallafa suna ƙarƙashin Kiln na hannu dalla-dalla, a ƙasa.
 
-## Gasa glaze {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Gasa glaze{{en: glaze}} tana narkar da glaze ya zama gilashi a kan bisque. Yawancin masu farawa suna gasa glaze na zafi ƙasa a cone 06–04 ko glaze na zafi tsakiya a cone 5–6. Ku gasa zuwa cone ɗin da ke kan alamomin yumɓunku da glaze ɗinku, tare da rukunin cone a kewayen wannan lamba. Don abin da yake faruwa a cikin glaze yayin da yake narkewa, duba [Tushen glaze](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Loda don gasa glaze
+### Loading for a glaze firing
 
-- Kada tukwanen da aka shafa wa glaze su taɓa juna ko bango: ku bar kusan ½ inci (13 mm).
-- Ku hana glaze hawa ƙafar tukunya (**dry-footing**), ko ku ajiye tukwane na zafi ƙasa a kan **stilts**, ƙananan mariƙai masu tsini. Bai kamata stoneware da porcelain su tsaya a kan stilts ba, domin suna nutsewa cikinsu a waɗannan zafin; ku yi amfani da kiln wash na zafi mai yawa ko yashin silica a maimakon haka.
-- Ku bar aƙalla 1 inci (25 mm) tsakanin gefen shiryayyu da bango ko sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Jadawalan controller
+### Controller schedules
 
-Table: Saitattun shirye-shiryen glaze na L&L da Bartlett
-Label: Shirye-shiryen glaze
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Mataki                           |                       Hawa zuwa |             Slow Glaze |             Fast Glaze |
-| -------------------------------- | ------------------------------: | ---------------------: | ---------------------: |
-| 1                                |              {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Babu mataki daban |
-| 2                                | {{250 °F; 139 °C}} ƙasa da ƙoli | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                |                           Ƙolin |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Lokacin zafafawa, kiln babu kaya |                                 |        Kusan awa 6½–7½ |          Kusan awa 3–4 |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Inda mataki na 2 da na 3 suke ƙarewa, bisa cone (L&L da Bartlett)
-Label: Burin saitattun shirye-shirye
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Cone | Mataki na 2 yana ƙarewa |                 Ƙoli |
-| ---- | ----------------------: | -------------------: |
-| 06   |     {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |     {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    |    {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze shi ne zaɓi mafi aminci na farko, saboda gargaɗin L&L game da gasa da sauri. Idan kuka ƙara tsayawa fiye da minti 5–10 a ƙoli, L&L ya ce a rage burin ko cone offset daidai da haka, kuma ya lura cewa "Tsayawa a zafi mai yawa yana hanzarta zaizayar elements da thermocouple."
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
 ### Cone 6: drop-and-hold
 
-Glaze na zafi tsakiya wani lokaci yakan fito da **pinholes** (ƙananan ramuka a saman) ko kumbura, waɗanda iskar gas da take fitowa daga narkakken glaze ta bari. Jadawalin **drop-and-hold** (sauka da tsayawa) yana gasa zuwa ƙoli, yana huce da sauri da kusan {{100 °F; 56 °C}} kuma yana tsayawa a can. A kalaman Digitalfire, "Saukowa 100°F da tsayawa yana ba narkakken glaze isasshen kauri don fasa kumfa, amma har yanzu yana barin su warke."
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: PLC6DS na Digitalfire, drop-and-hold na cone 6
-Label: PLC6DS na Digitalfire
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Label: Digitalfire PLC6DS
 
-| Mataki |                           Gudu |                 Buri | Tsayawa                                        |
-| ------ | -----------------------------: | -------------------: | ---------------------------------------------- |
-| 1      |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Minti 60                                       |
-| 2      |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Minti 30 idan an so, don share gajimaren kumfa |
-| 3      |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Minti 10; fiye da haka a manyan kiln           |
-| 4      | Sauka a {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Minti 30                                       |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS yana ɗaukar kusan awa 9 da minti 36. Ga glaze masu gudana fiye, Digitalfire yana sauka kusan {{200 °F; 111 °C}} a maimakon haka; sauka da nisa sosai "yana jawo haɗarin samuwar crystals yayin tsayawa". Ƙolinsa na {{2200 °F; 1204 °C}} yana ƙasa da {{2232 °F; 1222 °C}} na jadawalin ga cone 6; Digitalfire ya ruwaito cewa yawancin kiln suna kaiwa cone 6 a kusan {{2200 °F; 1204 °C}}. Ku duba shi da rukunin cone a kiln ɗinku.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Huce a hankali
+### Slow cooling
 
-**Slow cooling** (huce a hankali) yana nufin controller yana huce kiln a wani gudu da aka saita maimakon barin zafi ya sauka yadda yake so. C6DHSC na Digitalfire shi ne PLC6DS da huce a {{150 °F/h; 83 °C/h}} daga {{2100 °F; 1148 °C}} zuwa {{1400 °F; 760 °C}} ya biyo baya, sannan a kashe. "Yana inganta haske da ingancin saman" kuma yana taimakon shuɗin rutile, amma huce a hankali "zai iya ƙara rashin sheƙi" (wani glaze marar sheƙi ya bushe) kuma zai iya rage tsawon rayuwar relays na kiln. L&L ma yana bayar da shirin huce a hankali na cone 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: "User 6" na L&L: huce a hankali ga glaze na cone 6
-Label: Huce a hankali na L da L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Mataki |                          Gudu |                 Buri |
-| ------ | ----------------------------: | -------------------: |
-| 1      |            Cikakken gudu sama | {{2232 °F; 1222 °C}} |
-| 2      |            Cikakken gudu ƙasa | {{1900 °F; 1038 °C}} |
-| 3      | Sauka a {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Controller na Skutt su ma suna bayar da preheat da zaɓin huce na mataki ɗaya.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### A kiln na hannu
+### On a manual kiln
 
-Kiln na hannu ba zai iya bin waɗannan jadawalan daidai ba, amma tsarin ɗaya ne: a hankali da farko, daidai a tsakiya, da ƙarshe da ake kallo. Jadawalin glaze na zafi ƙasa na Bracker's yana ƙarƙashin Kiln na hannu dalla-dalla, a ƙasa; ga cone masu zafi fiye, yana ƙara "matsakaicin minti 15–30 ga kowace lambar cone". Da pyrometer, gwaninta da littafin rubutu, za ku iya kwaikwayon drop-and-hold ko huce a hankali kusan-kusan ta hanyar rage suwis da hannu, kamar yadda Digitalfire ya ba da shawara.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Kiln na hannu dalla-dalla {#manual-kilns}
 

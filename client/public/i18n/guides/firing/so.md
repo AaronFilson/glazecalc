@@ -458,73 +458,73 @@ Controller-yada L&L iyo Bartlett waxay cone 04 u isticmaalaan {{1926 °F; 1052 �
 
 Kiln gacmeed wuxuu isla qorshahaas gacanta ku raacaa: si tartiib ah u qalaji adigoo daboolka kor u qabtay oo peephole-yadu furan yihiin, furayaasha tallaabo tallaabo uga qaad Low ilaa Medium ilaa High, sitter-kuna ha dhammeeyo gubidda. Hababka la daabacay waxay ku jiraan Kiln-yada gacmeed oo faahfaahsan, hoos.
 
-## Gubidda glaze-ka {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Gubidda glaze-ku waxay glaze-ka u dhalaalisaa muraayad bisque-ka dul saaran. Bilowyaasha intooda badan waxay glaze-yada gubidda hoose ku gubaan cone 06–04 ama glaze-yada gubidda dhexe cone 5–6. Ku gub cone-ka ku qoran calaamadaha dhoobadaada iyo glaze-kaaga, adigoo isticmaalaya xidhmo cone ah oo lambarkaas ku wareegsan. Waxa gudaha glaze-ka ka dhaca marka uu dhalaalayo, eeg [Aasaaska glaze-ka](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Raridda gubidda glaze-ka
+### Loading for a glaze firing
 
-- Xabbadaha glaze-ka leh waa inaanay isa taaban ama derbiyada taaban: u daa qiyaastii ½ inji (13 mm).
-- Glaze-ka ka ilaali cagta (**dry-footing**), ama alaabta gubidda hoose dul dhig **stilts**, taageerooyin yaryar oo caarooyin leh. Stoneware iyo porcelain waa inaanay stilts dul istaagin, kuwaas oo heerkulkaas ku dhex gala; isticmaal kiln wash gubid sare ah ama ciid silica ah.
-- U daa ugu yaraan 1 inji (25 mm) cidhifyada rafaha iyo derbiga ama sitter-ka dhexdooda.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Jadwallada controller-ka
+### Controller schedules
 
-Table: Jadwallada glaze ee diyaarsan ee L&L iyo Bartlett
-Label: Jadwallada glaze ee diyaarsan
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Qaybta                          |                                           Ku kac ilaa |                Slow Glaze |              Fast Glaze |
-| ------------------------------- | ----------------------------------------------------: | ------------------------: | ----------------------: |
-| 1                               |                                    {{250 °F; 121 °C}} |     {{150 °F/h; 83 °C/h}} | Tallaabo gaar ah ma leh |
-| 2                               | {{250 °F; 139 °C}} ka hooseeya heerkulka ugu sarreeya |    {{400 °F/h; 222 °C/h}} |  {{570 °F/h; 317 °C/h}} |
-| 3                               |                                Heerkulka ugu sarreeya |     {{120 °F/h; 67 °C/h}} |  {{200 °F/h; 111 °C/h}} |
-| Waqtiga kululaynta, kiln madhan |                                                       | Qiyaastii 6½–7½ saacadood | Qiyaastii 3–4 saacadood |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Meesha qaybaha 2 iyo 3 ku dhammaadaan, cone ahaan (L&L iyo Bartlett)
-Label: Bartilmaameedyada jadwallada diyaarsan
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Cone | Qaybta 2 waxay ku dhammaataa | Heerkulka ugu sarreeya |
-| ---- | ---------------------------: | ---------------------: |
-| 06   |          {{1569 °F; 854 °C}} |    {{1819 °F; 993 °C}} |
-| 04   |          {{1676 °F; 913 °C}} |   {{1926 °F; 1052 °C}} |
-| 6    |         {{1982 °F; 1083 °C}} |   {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze waa doorashada caadiga ah ee ammaanka badan, marka la eego digniinta L&L ee gubidda dhakhsaha ah. Haddii aad ku darto joogsi ka badan 5–10 daqiiqo heerkulka ugu sarreeya, L&L wuxuu leeyahay hoos u dhig bartilmaameedka ama cone offset-ka si ay isugu dheelitirmaan, wuxuuna xusaa in "Joogsiga heerkulka sare uu dedejiyo duugoobidda element-yada iyo thermocouple-ka."
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
 ### Cone 6: drop-and-hold
 
-Glaze-yada gubidda dhexe mararka qaarkood waxay ka soo baxaan **pinholes** (daloolo aad u yaryar oo dusha ah) ama finan, oo ay ka tageen gaas ka xumbaynaya walaxda dhalaalaysa. Jadwalka **drop-and-hold** wuxuu ku gubaa ilaa xagga sare, si dhakhso ah ayuu u qaboojiyaa qiyaastii {{100 °F; 56 °C}}, halkaasna wuu ku joogaa. Erayada Digitalfire: "Hoos u dhigista 100°F iyo joogsigu waxay walaxda dhalaalaysa siisaa cufnaan (viscosity) ku filan si ay u dillaacsato xumbada iyadoo weli u oggolaanaysa inay bogsadaan."
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
 Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Tallaabo |                         Xawaaraha |      Bartilmaameedka | Joogsi                                                       |
-| -------- | --------------------------------: | -------------------: | ------------------------------------------------------------ |
-| 1        |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 daqiiqo                                                   |
-| 2        |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 daqiiqo ikhtiyaari ah, si loo nadiifiyo daruuraha xumbada |
-| 3        |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 daqiiqo; ka dheer kiln-yada waaweyn                       |
-| 4        | Hoos u deg {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 daqiiqo                                                   |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS wuxuu qaataa qiyaastii 9 saacadood iyo 36 daqiiqo. Glaze-yada ka socodka badan, Digitalfire wuxuu hoos u dhigaa qiyaastii {{200 °F; 111 °C}} halkii; hoos u dhigis aad u fog "waxay khatar galisaa crystallization inta joogsigu socdo". Heerkulkiisa ugu sarreeya ee {{2200 °F; 1204 °C}} wuu ka hooseeyaa {{2232 °F; 1222 °C}} ee jaantuska ee cone 6; Digitalfire wuxuu sheegaa in kiln-yada intooda badani ay cone 6 gaadhaan qiyaastii {{2200 °F; 1204 °C}}. Ku hubi xidhmo cone ah kiln-kaaga.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Qaboojinta tartiibka ah
+### Slow cooling
 
-**Qaboojinta tartiibka ah** (slow cooling) waxay ka dhigan tahay in controller-ku kiln-ka ku qaboojiyo xawaare la dejiyay halkii uu si xor ah u dhici lahaa. C6DHSC ee Digitalfire waa PLC6DS oo ay ku xigto qaboojin {{150 °F/h; 83 °C/h}} ah oo ka bilaabanta {{2100 °F; 1148 °C}} ilaa {{1400 °F; 760 °C}}, kadibna la damiyo. Waxay "hagaajisaa ifidda iyo tayada dusha", waxayna caawisaa buluugga rutile, laakiin qaboojinta tartiibka ahi "waxay kordhin kartaa matte-nimada" (glaze matte ah ayaa qallalay), waxayna gaabin kartaa cimriga relay-yada kiln-ka. L&L sidoo kale wuxuu la keenaa barnaamij qaboojin tartiib ah oo cone 6 ah:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L "User 6": qaboojin tartiib ah oo glaze-yada cone 6
-Label: L iyo L qaboojin tartiib ah
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Tallaabo |                        Xawaaraha |      Bartilmaameedka |
-| -------- | -------------------------------: | -------------------: |
-| 1        |                Xawaare buuxa kor | {{2232 °F; 1222 °C}} |
-| 2        |               Xawaare buuxa hoos | {{1900 °F; 1038 °C}} |
-| 3        | Hoos u deg {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Controller-yada Skutt sidoo kale waxay bixiyaan preheat iyo doorasho qaboojin hal tallaabo ah.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Kiln gacmeed
+### On a manual kiln
 
-Kiln gacmeed ma raaci karo jadwalladan si sax ah, laakiin qorshuhu waa isku mid: marka hore si deggan, bartamaha si joogto ah, dhammaadkana adigoo daawanaya. Jadwalka glaze-ka gubidda hoose ee Bracker's wuxuu ku jiraa Kiln-yada gacmeed oo faahfaahsan, hoos; cone-yada ka kulul wuxuu ku daraa "celcelis ahaan 15–30 daqiiqo lambar cone kasta". Pyrometer, tababar iyo diiwaan, waxaad qiyaas ahaan u koobiyeyn kartaa drop-and-hold ama qaboojin tartiib ah adigoo gacanta ku yaraynaya furayaasha, sida Digitalfire soo jeediyo.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Kiln-yada gacmeed oo faahfaahsan {#manual-kilns}
 

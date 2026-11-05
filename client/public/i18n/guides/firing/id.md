@@ -458,73 +458,73 @@ Pengendali L&L dan Bartlett memakai {{1926 °F; 1052 °C}} untuk kerucut 04 dan 
 
 Tungku manual mengikuti rencana yang sama dengan tangan: keringkan perlahan dengan tutup disangga dan lubang intip terbuka, naikkan sakelar dari Rendah ke Sedang ke Tinggi, dan biarkan sitter mengakhiri pembakaran. Prosedur yang diterbitkan ada di bawah Tungku manual secara rinci, di bawah.
 
-## Pembakaran glasir {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Pembakaran glasir melelehkan glasir menjadi kaca di atas biskuit. Sebagian besar pemula membakar glasir suhu rendah pada kerucut 06–04 atau glasir suhu menengah pada kerucut 5–6. Bakar sampai kerucut pada label tanah liat dan glasir Anda, dengan set kerucut di sekitar nomor itu. Untuk apa yang terjadi di dalam glasir saat meleleh, lihat [Mengglasir dari prinsip dasar](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Memuat untuk pembakaran glasir
+### Loading for a glaze firing
 
-- Benda berglasir tidak boleh bersentuhan satu sama lain atau dengan dinding: sisakan sekitar ½ inci (13 mm).
-- Jaga glasir tidak mengenai kaki (**kaki kering**, dry-footing), atau letakkan benda suhu rendah pada **stilt**, penyangga kecil berujung runcing. Stoneware dan porselen sebaiknya tidak berdiri pada stilt, yang menancap pada suhu itu; pakai pelapis rak tungku suhu tinggi atau pasir silika sebagai gantinya.
-- Sisakan paling sedikit 1 inci (25 mm) antara tepi rak dan dinding atau sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Jadwal pengendali
+### Controller schedules
 
-Table: Preset glasir L&L dan Bartlett
-Label: Preset glasir
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segmen                         |                        Naik sampai |             Slow Glaze |             Fast Glaze |
-| ------------------------------ | ---------------------------------: | ---------------------: | ---------------------: |
-| 1                              |                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Tanpa langkah terpisah |
-| 2                              | {{250 °F; 139 °C}} di bawah puncak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                              |                             Puncak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Waktu pemanasan, tungku kosong |                                    |      Sekitar 6½–7½ jam |        Sekitar 3–4 jam |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Tempat segmen 2 dan 3 berakhir, menurut kerucut (L&L dan Bartlett)
-Label: Target preset
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Kerucut |    Segmen 2 berakhir |               Puncak |
-| ------- | -------------------: | -------------------: |
-| 06      |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04      |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6       | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze adalah pilihan bawaan yang lebih aman, mengingat peringatan L&L tentang pembakaran cepat. Jika Anda menambahkan penahanan lebih dari 5–10 menit di puncak, L&L menyatakan untuk menurunkan target atau offset kerucut agar sesuai, dan mencatat bahwa "Menahan pada suhu tinggi mempercepat keausan elemen dan termokopel."
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Kerucut 6: turunkan dan tahan
+### Cone 6: drop-and-hold
 
-Glasir suhu menengah kadang menghasilkan **lubang jarum**{{en: pinholes}} (lubang kecil di permukaan) atau lepuh, yang ditinggalkan gas yang menggelembung keluar dari lelehan. Jadwal **turunkan dan tahan** (drop-and-hold) membakar sampai puncak, mendinginkan cepat sekitar {{100 °F; 56 °C}} dan menahan di sana. Dalam kata-kata Digitalfire, "Menurunkan 100°F dan menahan memberi lelehan cukup viskositas untuk memecahkan gelembung sementara masih membiarkannya menutup kembali."
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS, turunkan dan tahan kerucut 6
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Langkah |                              Laju |               Target | Tahan                                                 |
-| ------- | --------------------------------: | -------------------: | ----------------------------------------------------- |
-| 1       |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 menit                                              |
-| 2       |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opsional 30 menit, untuk menghilangkan awan gelembung |
-| 3       |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 menit; lebih lama di tungku besar                  |
-| 4       | Turun pada {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 menit                                              |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS memakan sekitar 9 jam 36 menit. Untuk glasir yang lebih encer, Digitalfire menurunkan sekitar {{200 °F; 111 °C}} sebagai gantinya; menurunkan terlalu jauh "berisiko kristalisasi selama penahanan". Puncaknya {{2200 °F; 1204 °C}} berada di bawah {{2232 °F; 1222 °C}} pada tabel untuk kerucut 6; Digitalfire melaporkan bahwa sebagian besar tungku mencapai kerucut 6 pada sekitar {{2200 °F; 1204 °C}}. Periksa dengan set kerucut di tungku Anda sendiri.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Pendinginan lambat
+### Slow cooling
 
-**Pendinginan lambat**{{en: slow cooling}} berarti pengendali mendinginkan tungku pada laju yang ditetapkan, bukan membiarkannya turun bebas. C6DHSC Digitalfire adalah PLC6DS diikuti pendinginan pada {{150 °F/h; 83 °C/h}} dari {{2100 °F; 1148 °C}} turun sampai {{1400 °F; 760 °C}}, lalu mati. Ini "meningkatkan kecemerlangan dan kualitas permukaan" dan membantu biru rutil, tetapi pendinginan lambat "dapat meningkatkan doff" (satu glasir doff menjadi kering) dan dapat memperpendek usia relai tungku. L&L juga menyediakan program pendinginan lambat untuk kerucut 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L "User 6": pendinginan lambat untuk glasir kerucut 6
-Label: Pendinginan lambat L dan L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Langkah |                             Laju |               Target |
-| ------- | -------------------------------: | -------------------: |
-| 1       |             Kecepatan penuh naik | {{2232 °F; 1222 °C}} |
-| 2       |            Kecepatan penuh turun | {{1900 °F; 1038 °C}} |
-| 3       | Turun pada {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Pengendali Skutt juga menawarkan pemanasan awal dan opsi pendinginan satu langkah.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Pada tungku manual
+### On a manual kiln
 
-Tungku manual tidak dapat mengikuti jadwal ini dengan tepat, tetapi rencananya sama: lembut pada awalnya, mantap di tengah, dan akhir yang diawasi. Jadwal glasir suhu rendah Bracker's ada di bawah Tungku manual secara rinci, di bawah; untuk kerucut yang lebih panas, jadwal itu menambahkan "rata-rata 15–30 menit per nomor kerucut". Dengan pirometer, latihan, dan catatan, Anda dapat kira-kira meniru turunkan-dan-tahan atau pendinginan lambat dengan memutar sakelar turun dengan tangan, seperti saran Digitalfire.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Tungku manual secara rinci {#manual-kilns}
 

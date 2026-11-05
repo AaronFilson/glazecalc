@@ -458,73 +458,73 @@ L&L 和 Bartlett 温控仪用 {{1926 °F; 1052 °C}} 对应 04 号锥，用 {{18
 
 手动控制的窑按同样的方案用手来烧：撑开盖子、打开观火孔，慢慢干燥，把开关从“低”逐档调到“中”再到“高”，让看管器结束烧成。已发布的步骤见下文“手动控制的窑详解”。
 
-## 釉烧 {#glaze}
+## Glaze firing {#glaze lang=en}
 
-釉烧把釉{{en: glaze}}在素坯上熔成玻璃。大多数初学者用 Orton 测温锥 06～04 号烧低温釉，或用 5～6 号锥烧中温釉。烧到黏土和釉标签上写的锥号，并围绕这个号码放一组测温锥。关于釉熔化时内部发生了什么，见[从基本原理学施釉](/guides/glazing-basics)。
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### 釉烧装窑
+### Loading for a glaze firing
 
-- 上了釉的作品不能互相接触，也不能碰到窑壁：留出约 ½ 英寸（13 mm）。
-- 不要让釉沾到底足（**底足不上釉**），或把低温器物放在**支钉**（带尖的小支架）上。炻器{{en: stoneware}}和瓷器不应放在支钉上，支钉在那样的温度下会嵌入器物；改用高温棚板隔离剂或石英砂。
-- 棚板边缘与窑壁或看管器之间至少留 1 英寸（25 mm）。
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### 温控仪的烧成曲线
+### Controller schedules
 
-Table: L&L 和 Bartlett 的釉烧预设程序
-Label: 釉烧预设程序
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| 段           |                            升至 |             Slow Glaze |             Fast Glaze |
-| ------------ | ------------------------------: | ---------------------: | ---------------------: |
-| 1            |              {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |         没有单独的一步 |
-| 2            | 比最高温度低 {{250 °F; 139 °C}} | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3            |                        最高温度 |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| 空窑升温时间 |                                 |         约 6½～7½ 小时 |           约 3～4 小时 |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: 按锥号，第 2 段和第 3 段的终点（L&L 和 Bartlett）
-Label: 预设程序的目标温度
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| 锥号 |          第 2 段终点 |             最高温度 |
+| Cone |       Segment 2 ends |                 Peak |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-鉴于 L&L 对快速烧成的警告，Slow Glaze 是更稳妥的默认选择。如果在最高温度加了超过 5～10 分钟的保温，L&L 说要相应调低目标温度或测温锥补偿值，并指出“高温下保温会加快电热丝和热电偶的磨损”。
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### 6 号锥：降温保温
+### Cone 6: drop-and-hold
 
-中温釉有时会出现**针孔**{{en: pinholes}}（表面上的微小孔洞）或起泡，是气体从熔体中冒出所留下的。**降温保温**{{en: drop-and-hold}}曲线烧到顶点后，快速降温约 {{100 °F; 56 °C}}，并在那里保温。用 Digitalfire 的话说，“降温 100°F 并保温，使熔体有足够的黏度来破掉气泡，同时仍让气泡愈合。”
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS，6 号锥降温保温
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| 步骤 |                           速率 |                 目标 | 保温                             |
-| ---- | -----------------------------: | -------------------: | -------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 分钟                          |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 可选 30 分钟，用于消除成团的气泡 |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 分钟；大窑更长                |
-| 4    | 以 {{900 °F/h; 500 °C/h}} 降温 | {{2100 °F; 1148 °C}} | 30 分钟                          |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS 约需 9 小时 36 分钟。对流动性更强的釉，Digitalfire 改为降温约 {{200 °F; 111 °C}}；降得太多会“在保温时有结晶的风险”。它的最高温度 {{2200 °F; 1204 °C}} 低于对照表中 6 号锥的 {{2232 °F; 1222 °C}}；Digitalfire 报告说，大多数窑在约 {{2200 °F; 1204 °C}} 时达到 6 号锥。在自己的窑里用一组测温锥来核对。
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### 控速降温
+### Slow cooling
 
-**控速降温**是指温控仪按设定的速率冷却窑，而不是任其自由降温。Digitalfire 的 C6DHSC 是 PLC6DS 之后，从 {{2100 °F; 1148 °C}} 以 {{150 °F/h; 83 °C/h}} 降到 {{1400 °F; 760 °C}}，然后断电。它“改善光泽和表面质量”，有助于金红石蓝，但控速降温“可能增加哑光感”（有一款哑光釉变得干涩），还可能缩短窑继电器的寿命。L&L 也为 6 号锥提供了一个控速降温程序：
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L “User 6”：6 号锥釉的控速降温
-Label: L&L 控速降温
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| 步骤 |                          速率 |                 目标 |
+| Step |                          Rate |               Target |
 | ---- | ----------------------------: | -------------------: |
-| 1    |                      全速升温 | {{2232 °F; 1222 °C}} |
-| 2    |                      全速降温 | {{1900 °F; 1038 °C}} |
-| 3    | 以 {{150 °F/h; 83 °C/h}} 降温 |  {{1500 °F; 816 °C}} |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt 的温控仪同样提供预热和一步降温的选项。
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### 在手动控制的窑上
+### On a manual kiln
 
-手动控制的窑无法完全照这些烧成曲线烧，但方案是一样的：开始时温和，中间平稳，结尾要有人看着。Bracker's 的低温釉烧成曲线见下文“手动控制的窑详解”；对于更热的锥号，它另加“每个锥号平均 15～30 分钟”。有测温仪、练习和记录，您大致可以像 Digitalfire 建议的那样，用手把开关调低，来模仿降温保温或控速降温。
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## 手动控制的窑详解 {#manual-kilns}
 

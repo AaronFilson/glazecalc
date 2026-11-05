@@ -458,73 +458,73 @@ Sterowniki L&L i Bartlett przyjmują {{1926 °F; 1052 °C}} dla stożka 04 i {{1
 
 Piec sterowany ręcznie prowadzi się według tego samego planu, tylko ręcznie: powoli suszyć przy uchylonej pokrywie i otwartych wziernikach, przestawiać przełączniki stopniowo z pozycji Niski na Średni i na Wysoki, a zakończenie wypału zostawić wyłącznikowi stożkowemu{{en: kiln sitter}}. Opublikowane procedury są opisane niżej, w części Szczegółowo o piecach sterowanych ręcznie.
 
-## Wypał szkliwa {#glaze}
+## Glaze firing {#glaze lang=en}
 
-Wypał szkliwa{{en: glaze firing}} stapia szkliwo{{en: glaze}} w szkło na biskwicie{{en: bisque}}. Większość początkujących wypala szkliwa niskotopliwe na stożek 06–04 albo szkliwa średniotopliwe na stożek 5–6. Należy wypalać do stożka podanego na etykietach gliny i szkliwa, z zestawem stożków{{en: cone pack}} wokół tego numeru. O tym, co dzieje się wewnątrz topiącego się szkliwa, mówi poradnik [Szkliwienie od podstaw](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Załadunek do wypału szkliwa
+### Loading for a glaze firing
 
-- Szkliwione wyroby nie mogą dotykać siebie nawzajem ani ścian: należy zostawić około ½ cala (13 mm) odstępu.
-- Stopkę należy zostawić bez szkliwa (**czysta stopka**) albo wyroby niskotopliwe ustawić na **trójnogach**, małych podpórkach z ostrymi końcami. Kamionka{{en: stoneware}} i porcelana nie powinny stać na trójnogach, które w tych temperaturach wtapiają się w czerep; zamiast nich należy użyć wysokotemperaturowej pobiałki lub piasku kwarcowego.
-- Między krawędziami płyt a ścianą lub wyłącznikiem stożkowym zostawić co najmniej 1 cal (25 mm).
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Programy sterownika
+### Controller schedules
 
-Table: Programy wypału szkliwa L&L i Bartlett
-Label: Programy szkliwa
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segment                  |                                     Do temperatury |             Slow Glaze |             Fast Glaze |
-| ------------------------ | -------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |     Bez osobnego kroku |
-| 2                        | {{250 °F; 139 °C}} poniżej temperatury maksymalnej | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                             Temperatura maksymalna |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Czas grzania, pusty piec |                                                    |    Około 6½–7½ godziny |       Około 3–4 godzin |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Gdzie kończą się segmenty 2 i 3, według stożka (L&L i Bartlett)
-Label: Temperatury docelowe programów
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Stożek |    Koniec segmentu 2 | Temperatura maksymalna |
-| ------ | -------------------: | ---------------------: |
-| 06     |  {{1569 °F; 854 °C}} |    {{1819 °F; 993 °C}} |
-| 04     |  {{1676 °F; 913 °C}} |   {{1926 °F; 1052 °C}} |
-| 6      | {{1982 °F; 1083 °C}} |   {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Wobec ostrzeżenia L&L przed szybkim wypałem bezpieczniejszym wyborem domyślnym jest Slow Glaze. Jeśli dodaje się przetrzymanie{{en: hold}} dłuższe niż 5–10 minut w temperaturze maksymalnej, L&L zaleca odpowiednio obniżyć temperaturę docelową lub korektę stożka i zauważa, że „Przetrzymanie w wysokich temperaturach przyspiesza zużycie grzałek i termopary”.
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Stożek 6: schłodzenie z przetrzymaniem
+### Cone 6: drop-and-hold
 
-Szkliwa średniotopliwe czasem wychodzą z **nakłuciami**{{en: pinholes}} (drobnymi dziurkami w powierzchni) lub pęcherzami, które zostawia gaz uchodzący ze stopu. Program **schłodzenia z przetrzymaniem**{{en: drop-and-hold}} grzeje do temperatury maksymalnej, szybko schładza piec o około {{100 °F; 56 °C}} i utrzymuje tę temperaturę. Jak pisze Digitalfire: „Obniżenie o 100°F i przetrzymanie daje stopowi lepkość wystarczającą, by pęcherzyki pękały, a zarazem pozwala im się zasklepić”.
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS: stożek 6, schłodzenie z przetrzymaniem
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Krok |                                  Przyrost | Temperatura docelowa | Przetrzymanie                                        |
-| ---- | ----------------------------------------: | -------------------: | ---------------------------------------------------- |
-| 1    |                     {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minut                                             |
-| 2    |                    {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opcjonalnie 30 minut, żeby usunąć chmury pęcherzyków |
-| 3    |                     {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minut; dłużej w dużych piecach                    |
-| 4    | W dół z szybkością {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minut                                             |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS trwa około 9 godzin 36 minut. Przy bardziej płynnych szkliwach Digitalfire obniża temperaturę zamiast tego o około {{200 °F; 111 °C}}; zbyt duże obniżenie „grozi krystalizacją podczas przetrzymania”. Jego temperatura maksymalna, {{2200 °F; 1204 °C}}, jest niższa niż {{2232 °F; 1222 °C}} podane w tabeli dla stożka 6; Digitalfire podaje, że większość pieców osiąga stożek 6 przy około {{2200 °F; 1204 °C}}. Należy to sprawdzić zestawem stożków we własnym piecu.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Powolne chłodzenie
+### Slow cooling
 
-**Powolne chłodzenie** oznacza, że sterownik schładza piec z ustaloną szybkością, zamiast pozwolić temperaturze swobodnie spadać. Program C6DHSC z Digitalfire to PLC6DS, po którym następuje chłodzenie z szybkością {{150 °F/h; 83 °C/h}} od {{2100 °F; 1148 °C}} do {{1400 °F; 760 °C}}, a potem wyłączenie. „Poprawia połysk i jakość powierzchni” i pomaga rutylowym błękitom, ale powolne chłodzenie „może zwiększać matowość” (jedno szkliwo matowe stało się suche) i może skracać żywotność przekaźników pieca. L&L dostarcza również program powolnego chłodzenia dla stożka 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L „User 6”: powolne chłodzenie dla szkliw na stożek 6
-Label: L i L, powolne chłodzenie
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Krok |                                 Przyrost | Temperatura docelowa |
-| ---- | ---------------------------------------: | -------------------: |
-| 1    |                W górę z pełną szybkością | {{2232 °F; 1222 °C}} |
-| 2    |                 W dół z pełną szybkością | {{1900 °F; 1038 °C}} |
-| 3    | W dół z szybkością {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Sterowniki Skutt również mają podgrzewanie wstępne i opcję jednostopniowego chłodzenia.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### W piecu sterowanym ręcznie
+### On a manual kiln
 
-Piec sterowany ręcznie nie wykona tych programów dokładnie, ale plan jest ten sam: łagodnie na początku, równo w środku i koniec pod obserwacją. Program Bracker's dla szkliw niskotopliwych jest opisany niżej, w części Szczegółowo o piecach sterowanych ręcznie; dla gorętszych stożków dodaje on „średnio 15–30 minut na każdy numer stożka”. Z pirometrem, wprawą i dziennikiem wypałów można w przybliżeniu odtworzyć schłodzenie z przetrzymaniem lub powolne chłodzenie, ręcznie skręcając przełączniki, jak sugeruje Digitalfire.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Szczegółowo o piecach sterowanych ręcznie {#manual-kilns}
 

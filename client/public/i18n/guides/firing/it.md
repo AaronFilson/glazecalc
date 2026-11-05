@@ -458,73 +458,73 @@ Le centraline L&L e Bartlett usano {{1926 °F; 1052 °C}} per il cono 04 e {{181
 
 Un forno manuale segue lo stesso schema a mano: asciugare lentamente con il coperchio socchiuso e gli spioncini aperti, portare i commutatori da Basso a Medio e poi ad Alto, e lasciare che sia il kiln sitter a terminare la cottura. Le procedure pubblicate sono in «I forni manuali nel dettaglio», più sotto.
 
-## Cottura dello smalto {#glaze}
+## Glaze firing {#glaze lang=en}
 
-La cottura dello smalto{{en: glaze firing}} fonde lo smalto in vetro sul biscotto{{en: bisque}}. La maggior parte dei principianti cuoce smalti per bassa temperatura a cono 06–04 o smalti per media temperatura a cono 5–6. Cuocere al cono indicato sulle etichette dell’argilla e dello smalto, con una terna di coni{{en: cone pack}} intorno a quel numero. Per che cosa succede dentro lo smalto mentre fonde, vedere [Lo smalto dai principi di base](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### Caricare per la cottura dello smalto
+### Loading for a glaze firing
 
-- I pezzi smaltati non devono toccarsi tra loro né toccare le pareti: lasciare circa ½ pollice (13 mm).
-- **Lasciare il piede senza smalto**, oppure appoggiare i pezzi per bassa temperatura su **treppiedi**, piccoli supporti a punte. Il gres{{en: stoneware}} e la porcellana non devono poggiare su treppiedi, che a quelle temperature vi si incastrano; usare invece protettivo per piastre per alta temperatura o sabbia silicea.
-- Lasciare almeno 1 pollice (25 mm) tra i bordi delle piastre e la parete o il kiln sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Le curve di cottura delle centraline
+### Controller schedules
 
-Table: Programmi predefiniti per smalto L&L e Bartlett
-Label: Programmi per smalto
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segmento                              |                                   Salire fino a |             Slow Glaze |             Fast Glaze |
-| ------------------------------------- | ----------------------------------------------: | ---------------------: | ---------------------: |
-| 1                                     |                              {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |  Nessuna fase separata |
-| 2                                     | {{250 °F; 139 °C}} sotto la temperatura massima | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                                     |                          La temperatura massima |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Durata del riscaldamento, forno vuoto |                                                 |        Circa 6½–7½ ore |          Circa 3–4 ore |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Dove finiscono i segmenti 2 e 3, per cono (L&L e Bartlett)
-Label: Temperature dei programmi
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Cono |  Fine del segmento 2 |  Temperatura massima |
+| Cone |       Segment 2 ends |                 Peak |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze è la scelta predefinita più sicura, visto l’avvertimento di L&L sulla cottura veloce. Se si aggiunge una sosta{{en: hold}} di più di 5–10 minuti alla temperatura massima, L&L dice di abbassare di conseguenza la temperatura impostata o la correzione del cono, e nota che «Le soste ad alta temperatura accelerano l’usura delle resistenze e della termocoppia».
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Cono 6: discesa e sosta
+### Cone 6: drop-and-hold
 
-Gli smalti per media temperatura a volte escono con **forellini**{{en: pinholes}} (minuscoli fori sulla superficie) o bolle, lasciati dal gas che esce dallo smalto fuso. Una curva a **discesa e sosta**{{en: drop-and-hold}} sale fino alla temperatura massima, scende rapidamente di circa {{100 °F; 56 °C}} e fa una sosta a quella temperatura. Con le parole di Digitalfire: «Scendere di 100°F e fare una sosta dà allo smalto fuso abbastanza viscosità da far scoppiare le bolle, pur permettendo ancora che si rimarginino».
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS, discesa e sosta a cono 6
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Fase |                            Velocità |            Obiettivo | Sosta                                                 |
-| ---- | ----------------------------------: | -------------------: | ----------------------------------------------------- |
-| 1    |               {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuti                                             |
-| 2    |              {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuti facoltativi, per eliminare le nubi di bolle |
-| 3    |               {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuti; di più nei forni grandi                    |
-| 4    | In discesa a {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuti                                             |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS dura circa 9 ore e 36 minuti. Per gli smalti più fluidi, Digitalfire scende invece di circa {{200 °F; 111 °C}}; scendere troppo «rischia la cristallizzazione durante la sosta». La sua temperatura massima di {{2200 °F; 1204 °C}} è inferiore ai {{2232 °F; 1222 °C}} della tabella per il cono 6; Digitalfire riferisce che la maggior parte dei forni raggiunge il cono 6 a circa {{2200 °F; 1204 °C}}. Verificarlo con una terna di coni nel proprio forno.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Raffreddamento lento
+### Slow cooling
 
-Il **raffreddamento lento** significa che la centralina raffredda il forno a una velocità impostata invece di lasciar scendere la temperatura liberamente. La curva C6DHSC di Digitalfire è PLC6DS seguita da un raffreddamento a {{150 °F/h; 83 °C/h}} da {{2100 °F; 1148 °C}} fino a {{1400 °F; 760 °C}}, poi spegnimento. «Migliora la brillantezza e la qualità della superficie» e favorisce i blu al rutilo, ma il raffreddamento lento «può accentuare l’effetto opaco» (uno smalto opaco è diventato secco) e può accorciare la vita dei relè del forno. Anche L&L fornisce un programma di raffreddamento lento per il cono 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L «User 6»: raffreddamento lento per smalti per cono 6
-Label: Raffreddamento lento L e L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Fase |                           Velocità |            Obiettivo |
-| ---- | ---------------------------------: | -------------------: |
-| 1    |       Salita alla massima velocità | {{2232 °F; 1222 °C}} |
-| 2    |      Discesa alla massima velocità | {{1900 °F; 1038 °C}} |
-| 3    | In discesa a {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Anche le centraline Skutt offrono un preriscaldo e un’opzione di raffreddamento in una sola fase.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### In un forno manuale
+### On a manual kiln
 
-Un forno manuale non può seguire esattamente queste curve, ma lo schema è lo stesso: delicato all’inizio, regolare nella parte centrale e un finale sorvegliato. La curva di Bracker’s per smalti a bassa temperatura è in «I forni manuali nel dettaglio», più sotto; per i coni più caldi aggiunge «in media 15–30 minuti per ogni numero di cono». Con un pirometro, la pratica e un registro, si può imitare a grandi linee una discesa e sosta o un raffreddamento lento abbassando i commutatori a mano, come suggerisce Digitalfire.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## I forni manuali nel dettaglio {#manual-kilns}
 

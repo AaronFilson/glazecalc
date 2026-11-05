@@ -458,73 +458,73 @@ Regelaars van L&L en Bartlett gebruiken {{1926 °F; 1052 °C}} voor kegel 04 en 
 
 Een handbediende oven volgt hetzelfde plan, maar dan met de hand: droog langzaam met het deksel op een kier en de kijkgaten open, zet de schakelaars stap voor stap hoger van Low via Medium naar High (laag, middel, hoog), en laat de kiln sitter de stook beëindigen. De gepubliceerde werkwijzen staan onder Handbediende ovens in detail, hieronder.
 
-## Glazuurstook {#glaze}
+## Glaze firing {#glaze lang=en}
 
-De glazuurstook{{en: glaze firing}} smelt het glazuur{{en: glaze}} op het biscuit{{en: bisque}} tot glas. De meeste beginners stoken glazuren voor lage temperatuur op kegel 06–04 of glazuren voor middentemperatuur op kegel 5–6. Stook tot de kegel op de etiketten van uw klei en glazuur, met een kegeldrietal{{en: cone pack}} rond dat nummer. Wat er in het glazuur gebeurt als het smelt, leest u in [Glazuren vanaf de basis](/guides/glazing-basics).
+The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
 
-### De oven vullen voor een glazuurstook
+### Loading for a glaze firing
 
-- Geglazuurde stukken mogen elkaar en de wanden niet raken: laat ongeveer ½ inch (13 mm) ruimte.
-- Houd de **standring glazuurvrij**, of zet werk voor lage temperatuur op **triangels**, kleine steuntjes met punten. Steengoed{{en: stoneware}} en porselein zouden niet op triangels moeten staan, want die zakken er bij die temperaturen in vast; gebruik in plaats daarvan ovenplaatbescherming voor hoge temperatuur of kwartszand.
-- Laat minstens 1 inch (25 mm) ruimte tussen de randen van de ovenplaten en de wand of de kiln sitter.
+- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
+- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
+- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
 
-### Stookschema’s voor de regelaar
+### Controller schedules
 
-Table: Standaardprogramma’s voor glazuur van L&L en Bartlett
-Label: Standaardprogramma’s voor glazuur
+Table: L&L and Bartlett glaze presets
+Label: Glaze presets
 
-| Segment               |                                Stijgen tot |             Slow Glaze |             Fast Glaze |
-| --------------------- | -----------------------------------------: | ---------------------: | ---------------------: |
-| 1                     |                         {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       Geen aparte stap |
-| 2                     | {{250 °F; 139 °C}} onder de toptemperatuur | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                     |                          De toptemperatuur |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Opwarmtijd, lege oven |                                            |     Ongeveer 6½–7½ uur |       Ongeveer 3–4 uur |
+| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
+| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
 
-Table: Waar segment 2 en 3 eindigen, per kegel (L&L en Bartlett)
-Label: Doeltemperaturen van de standaardprogramma’s
+Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
+Label: Preset targets
 
-| Kegel |      Einde segment 2 |       Toptemperatuur |
-| ----- | -------------------: | -------------------: |
-| 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Cone |       Segment 2 ends |                 Peak |
+| ---- | -------------------: | -------------------: |
+| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is de veiligere standaardkeuze, gezien de waarschuwing van L&L voor snel stoken. Voegt u een houdtijd{{en: hold}} van meer dan 5–10 minuten op de toptemperatuur toe, dan moet u volgens L&L de doeltemperatuur of de kegeloffset dienovereenkomstig verlagen; L&L merkt ook op dat “aanhouden op hoge temperaturen de slijtage van elementen en thermokoppel versnelt”.
+Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
 
-### Kegel 6: afkoelen en aanhouden
+### Cone 6: drop-and-hold
 
-Glazuren voor middentemperatuur komen soms uit de oven met **speldenprikken**{{en: pinholes}} (piepkleine gaatjes in het oppervlak) of blaasjes, achtergelaten door gas dat uit het gesmolten glazuur borrelt. Een stookschema met **afkoelen en aanhouden**{{en: drop-and-hold}} stookt tot de toptemperatuur, laat de oven snel ongeveer {{100 °F; 56 °C}} afkoelen en houdt hem daar aan. In de woorden van Digitalfire: “100°F zakken en aanhouden geeft het gesmolten glazuur genoeg viscositeit om bellen te laten knappen en ze toch nog te laten dichtvloeien.”
+Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
 
-Table: Digitalfire PLC6DS, kegel 6 met afkoelen en aanhouden
+Table: Digitalfire PLC6DS, cone 6 drop-and-hold
 Label: Digitalfire PLC6DS
 
-| Stap |                          Snelheid |                 Doel | Houdtijd                                                    |
-| ---- | --------------------------------: | -------------------: | ----------------------------------------------------------- |
-| 1    |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuten                                                  |
-| 2    |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Eventueel 30 minuten, om wolken van belletjes te verdrijven |
-| 3    |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuten; langer in grote ovens                           |
-| 4    | Omlaag met {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuten                                                  |
+| Step |                           Rate |               Target | Hold                                            |
+| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
+| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
 
-PLC6DS duurt ongeveer 9 uur en 36 minuten. Voor dunner vloeibare glazuren laat Digitalfire de temperatuur in plaats daarvan ongeveer {{200 °F; 111 °C}} zakken; te ver zakken “geeft kans op kristalvorming tijdens de houdtijd”. De toptemperatuur van {{2200 °F; 1204 °C}} ligt onder de {{2232 °F; 1222 °C}} die de tabel voor kegel 6 geeft; Digitalfire meldt dat de meeste ovens kegel 6 bij ongeveer {{2200 °F; 1204 °C}} bereiken. Controleer het met een kegeldrietal in uw eigen oven.
+PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
 
-### Gestuurd afkoelen
+### Slow cooling
 
-**Gestuurd afkoelen** betekent dat de regelaar de oven met een ingestelde snelheid laat afkoelen, in plaats van hem vrij te laten zakken. C6DHSC van Digitalfire is PLC6DS, gevolgd door afkoelen met {{150 °F/h; 83 °C/h}} van {{2100 °F; 1148 °C}} tot {{1400 °F; 760 °C}}, en dan uit. Het “verbetert de glans en de kwaliteit van het oppervlak” en helpt rutielblauwe glazuren, maar gestuurd afkoelen “kan het glazuur matter maken” (één matglazuur werd droog) en kan de levensduur van de relais van de oven verkorten. L&L levert ook een programma voor gestuurd afkoelen voor kegel 6:
+**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
 
-Table: L&L “User 6”: gestuurd afkoelen voor glazuren voor kegel 6
-Label: Gestuurd afkoelen van L en L
+Table: L&L "User 6": slow cooling for cone 6 glazes
+Label: L and L slow cool
 
-| Stap |                         Snelheid |                 Doel |
-| ---- | -------------------------------: | -------------------: |
-| 1    |         Op volle snelheid omhoog | {{2232 °F; 1222 °C}} |
-| 2    |         Op volle snelheid omlaag | {{1900 °F; 1038 °C}} |
-| 3    | Omlaag met {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Step |                          Rate |               Target |
+| ---- | ----------------------------: | -------------------: |
+| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
+| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
+| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Ook de regelaars van Skutt bieden een voorverwarming en een afkoeloptie in één stap.
+Skutt's controllers likewise offer a preheat and a one-step cooling option.
 
-### Bij een handbediende oven
+### On a manual kiln
 
-Een handbediende oven kan deze schema’s niet precies volgen, maar het plan is hetzelfde: rustig beginnen, gestaag door het midden, en een eind waarbij u goed oplet. Het schema van Bracker’s voor glazuur voor lage temperatuur staat onder Handbediende ovens in detail, hieronder; voor hetere kegels telt het er “gemiddeld 15–30 minuten per kegelnummer” bij op. Met een pyrometer, oefening en een stookverslag kunt u afkoelen en aanhouden of gestuurd afkoelen ruwweg nadoen door de schakelaars met de hand lager te zetten, zoals Digitalfire voorstelt.
+A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
 
 ## Handbediende ovens in detail {#manual-kilns}
 
