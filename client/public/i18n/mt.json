@@ -36,7 +36,10 @@
     "confirm": "Approva bidla - Glazecalc",
     "cones": "Tabella tal-koni: temperaturi tal-koni Orton u SK - Glazecalc",
     "materials": "Materjali standard tal-glejż: analiżi u perikli - Glazecalc",
-    "materialInfo": "{name}: analiżi tal-ossidi u perikli - Glazecalc"
+    "materialInfo": "{name}: analiżi tal-ossidi u perikli - Glazecalc",
+    "teachingGlazeCalculation": "It-tagħlim tal-kalkolu tal-glejż - Glazecalc",
+    "famousGlazes": "Glejżijiet famużi - Glazecalc",
+    "famousGlaze": "Glejż {name} - Glazecalc"
   },
   "nav": {
     "skip": "Aqbeż għall-kontenut",
@@ -187,7 +190,10 @@
     "materials": "Il-materjali tal-librerija standard ta’ Glazecalc, mill-feldspati u t-tafal sal-frits u s-sorsi tal-boron, bl-analiżi tal-ossidi, il-formula ta’ Seger u l-perikli.",
     "materialInfo": "{name}: analiżi tal-ossidi, formula ta’ Seger, telf mit-tqabbid bin-nar u perikli fil-librerija standard ta’ Glazecalc.",
     "materialInfoLong": "{name} fil-librerija standard ta’ Glazecalc tal-materjali tal-glejż: l-analiżi tal-ossidi, il-kontribut fil-formula ta’ Seger, it-telf mit-tqabbid bin-nar u l-perikli.",
-    "imageAlt": "Il-logo ta’ Glazecalc u l-intestatura tiegħu, kimika tal-glazes b’xejn għall-fuħħara, ħdejn ritratt ta’ pakketti ta’ koni maħmija."
+    "imageAlt": "Il-logo ta’ Glazecalc u l-intestatura tiegħu, kimika tal-glazes b’xejn għall-fuħħara, ħdejn ritratt ta’ pakketti ta’ koni maħmija.",
+    "teachingGlazeCalculation": "6 sessjonijiet biex tgħallem il-formula ta’ Seger (UMF): il-materjali u l-provi fi trijangolu, il-mol, mir-riċetta għall-formula u lura, u d-difetti tal-glejż, b’eżempji maħdumin u folji tax-xogħol biex tipprintja.",
+    "famousGlazes": "Glejżijiet famużi minn madwar id-dinja: ir-riċetta tradizzjonali jew l-analiżi storika ta’ kull glejż, il-formula ta’ Seger tiegħu, u verżjoni bil-materjali li jinbiegħu fejn tinsab int.",
+    "famousGlaze": "Il-glejż {name} ({native}): ir-riċetta tradizzjonali jew l-analiżi storika tiegħu, il-ħami, il-formula ta’ Seger u s-sorsi, u verżjoni bil-materjali li jinbiegħu fejn tinsab int."
   },
   "notices": {
     "dismiss": "Agħlaq",

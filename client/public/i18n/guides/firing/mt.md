@@ -458,73 +458,73 @@ Il-kontrolluri ta’ L&L u ta’ Bartlett jużaw {{1926 °F; 1052 °C}} għall-k
 
 Forn mingħajr kontrollur isegwi l-istess pjan, imma bl-idejn: nixxef bil-mod bl-għatu miftuħ ftit u t-toqob tal-ħarsa miftuħin, għolli s-swiċċijiet minn Low (baxx) għal Medium (medju) u mbagħad għal High (għoli), u ħalli s-sitter itemm il-ħamja. Il-proċeduri ppubblikati jinsabu fit-taqsima Fran mingħajr kontrollur, fid-dettall, aktar ’l isfel.
 
-## Glaze firing {#glaze lang=en}
+## Il-ħamja tal-glejż {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Il-ħamja tal-glejż{{en: glaze firing}} ddewweb il-glejż{{en: glaze}} u tagħmlu ħġieġ fuq il-bisque. Il-biċċa l-kbira tal-glejżijiet għal ħami baxx fis-suq huma magħmulin għall-kon{{en: cone}} 06 jew 05 (il-medda tal-ħami baxx hija koni 06–04), u l-biċċa l-kbira tal-glejżijiet għal ħami medju għall-koni 5–6. Aħmi sal-kon li hemm fuq it-tikketti tal-glejż u tat-tafal tiegħek, b’sett ta’ koni{{en: cone pack}} madwar dak in-numru. Għal dak li jiġri ġewwa l-glejż meta jdub, ara l-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Il-mili tal-forn għal ħamja tal-glejż
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Il-biċċiet igglejżjati ma jistgħux imissu ma’ xulxin jew mal-ħitan: ħalli madwar ½ pulzier (13 mm).
+- Żomm il-glejż ’il bogħod mill-qiegħ (**il-qiegħ jibqa’ bla glejż**, dry-footing), jew poġġi l-oġġetti għal ħami baxx fuq **trippiedi**{{en: stilts}}, sapporti żgħar bil-ponot. L-istoneware u l-porċellana m’għandhomx jitqiegħdu fuq trippiedi, li jidħlu fihom f’dawk it-temperaturi; uża minflok kisja tax-xkafef{{en: kiln wash}} għal ħami għoli jew ramel tas-silika.
+- Ħalli mill-inqas 1 pulzier (25 mm) bejn it-truf tax-xkafef u l-ħajt jew is-sitter.
 
-### Controller schedules
+### Programmi tal-kontrollur
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Il-programmi tal-glejż ta’ L&L u Bartlett
+Label: Programmi tal-glejż
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segment                   |                                    Itla’ sa |             Slow Glaze |             Fast Glaze |
+| ------------------------- | ------------------------------------------: | ---------------------: | ---------------------: |
+| 1                         |                          {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |    L-ebda pass separat |
+| 2                         | {{250 °F; 139 °C}} taħt l-ogħla temperatura | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                         |                         L-ogħla temperatura |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Ħin tat-tisħin, forn vojt |                                             |    Madwar 6½–7½ sigħat |      Madwar 3–4 sigħat |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Fejn jispiċċaw is-segmenti 2 u 3, skont il-kon (L&L u Bartlett)
+Label: Il-miri tal-programmi
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Kon | Is-segment 2 jispiċċa |  L-ogħla temperatura |
+| --- | --------------------: | -------------------: |
+| 06  |   {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04  |   {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6   |  {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze hija l-għażla awtomatika l-aktar sikura, minħabba t-twissija ta’ L&L dwar il-ħami mgħaġġel. Jekk iżżid żamma{{en: hold}} ta’ aktar minn 5–10 minuti fl-ogħla temperatura, L&L jgħid li tniżżel il-mira jew l-aġġustament tal-kon biex taqbel magħha, u jinnota li “iż-żamma f’temperaturi għoljin tħaffef l-użu tal-elementi u tat-termokoppja.”
 
-### Cone 6: drop-and-hold
+### Kon 6: drop-and-hold
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Il-glejżijiet għal ħami medju xi drabi joħorġu b’**toqob tal-labra**{{en: pinholes}} (toqob ċkejknin fil-wiċċ) jew b’infafet, li jħalli l-gass li joħroġ mill-glejż imdewweb. Programm **drop-and-hold** jaħmi sal-quċċata, ikessaħ malajr b’madwar {{100 °F; 56 °C}} u jżomm hemm. Bi kliem Digitalfire, “Meta tniżżel 100°F u żżomm, il-glejż imdewweb ikollu biżżejjed viskożità biex ifaqqa’ l-bżieżaq u xorta jħallihom jfiequ.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, drop-and-hold għall-kon 6
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Pass |                              Rata |                 Mira | Żamma                                                            |
+| ---- | --------------------------------: | -------------------: | ---------------------------------------------------------------- |
+| 1    |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minuta                                                        |
+| 2    |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Mhux obbligatorja, 30 minuta, biex jitneħħew is-sħab tal-bżieżaq |
+| 3    |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minuti; aktar fil-fran kbar                                   |
+| 4    | ’L isfel b’{{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minuta                                                        |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS jieħu madwar 9 sigħat u 36 minuta. Għal glejżijiet aktar likwidi, Digitalfire iniżżel minflok madwar {{200 °F; 111 °C}}; jekk tniżżel wisq “tirriskja kristallizzazzjoni waqt iż-żamma”. L-ogħla temperatura tiegħu, {{2200 °F; 1204 °C}}, hija taħt il-{{2232 °F; 1222 °C}} tat-tabella għall-kon 6; Digitalfire jirrapporta li l-biċċa l-kbira tal-fran jilħqu l-kon 6 f’madwar {{2200 °F; 1204 °C}}. Iċċekkjaha b’sett ta’ koni fil-forn tiegħek.
 
-### Slow cooling
+### It-tkessiħ bil-mod
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Tkessiħ bil-mod** ifisser li l-kontrollur ikessaħ il-forn b’rata stabbilita minflok ma jħallih jiksaħ waħdu. C6DHSC ta’ Digitalfire huwa PLC6DS segwit minn tkessiħ b’{{150 °F/h; 83 °C/h}} minn {{2100 °F; 1148 °C}} sa {{1400 °F; 760 °C}}, imbagħad jintefa. “Itejjeb il-leqa u l-kwalità tal-wiċċ” u jgħin il-blu tar-rutil, iżda t-tkessiħ bil-mod “jista’ jżid l-effett matt” (glejż matt wieħed sar niexef) u jista’ jqassar il-ħajja tar-relays tal-forn. L&L jibgħat ukoll programm ta’ tkessiħ bil-mod għall-kon 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L “User 6”: tkessiħ bil-mod għall-glejżijiet tal-kon 6
+Label: Tkessiħ bil-mod ta’ L u L
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Pass |                             Rata |                 Mira |
+| ---- | -------------------------------: | -------------------: |
+| 1    |         Bl-ogħla veloċità ’l fuq | {{2232 °F; 1222 °C}} |
+| 2    |       Bl-ogħla veloċità ’l isfel | {{1900 °F; 1038 °C}} |
+| 3    | ’L isfel b’{{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Il-kontrolluri ta’ Skutt joffru wkoll tisħin minn qabel u għażla ta’ tkessiħ f’pass wieħed.
 
-### On a manual kiln
+### F’forn mingħajr kontrollur
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Forn mingħajr kontrollur ma jistax isegwi dawn il-programmi eżatt, iżda l-pjan huwa l-istess: bil-mod fil-bidu, kostanti f’nofs il-ħamja, u tmiem li tosservah. Il-programm tal-glejż għal ħami baxx ta’ Bracker jinsab taħt Fran mingħajr kontrollur, fid-dettall, aktar ’l isfel; għal koni aktar sħan iżid “medja ta’ 15–30 minuta għal kull numru tal-kon”. B’pirometru, bil-prattika u b’reġistru, tista’ bejn wieħed u ieħor tikkopja drop-and-hold jew tkessiħ bil-mod billi tniżżel is-swiċċijiet bl-idejn, kif jissuġġerixxi Digitalfire.
 
 ## Fran mingħajr kontrollur, fid-dettall {#manual-kilns}
 
