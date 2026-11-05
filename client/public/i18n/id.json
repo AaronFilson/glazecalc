@@ -192,7 +192,7 @@
     "materialInfo": "{name}: analisis oksida, formula Seger, susut pijar, dan bahaya dalam pustaka standar Glazecalc.",
     "materialInfoLong": "{name} dalam pustaka standar bahan glasir Glazecalc: analisis oksida, kontribusi terhadap formula Seger, susut pijar, dan bahayanya.",
     "famousGlazes": "Glasir terkenal dari seluruh dunia: resep tradisional atau analisis historis setiap glasir, formula Seger-nya, dan versi dari bahan yang dijual di tempat Anda.",
-    "famousGlaze": "Glasir {name} ({native}): resep tradisional atau analisis historisnya, pembakaran, formula Seger dan sumbernya, serta versi dari bahan yang dijual di tempat Anda.",
+    "famousGlaze": "Glasir {name} ({native}): resep tradisional atau analisis historis, pembakaran, formula Seger, sumber, dan versi dari bahan yang dijual di tempat Anda.",
     "imageAlt": "Logo Glazecalc dan judulnya, kimia glasir gratis untuk pembuat keramik, di samping foto set kerucut yang sudah dibakar."
   },
   "notices": {
