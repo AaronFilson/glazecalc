@@ -723,7 +723,8 @@
     "keyPoint": "Prik: denne glasur.",
     "keyBright": "Prikket linje: hvor Stulls glasurer var mest blanke.",
     "keyLimits": "Stiplede linjer og skravering: silica- og aluminiumoxidintervallerne for {name}.",
-    "keyCrazed": "Skravering: hvor de krakelerede."
+    "keyCrazed": "Skravering: hvor de krakelerede.",
+    "note": "En vejledning, ikke en forudsigelse. R. T. Stull (Transactions of the American Ceramic Society, 1912) brændte ved ca. kegle 11 med flusmidlerne fastlagt til 0,3 K₂O og 0,7 CaO; andre flusmidler og brændinger flytter områderne, og en glasur, der kun er mat, fordi den er underbrændt, kan stadig ligge i det blanke område. Områderne er tegnet som hos Glazy."
   },
   "slurry": {
     "heading": "Massefylde og vand",
@@ -763,7 +764,19 @@
     "saveTarget": "Gem SG {sg} som opskriftens målværdi",
     "targetSaved": "SG {sg} er opskriftens målværdi. Den gemmes sammen med opskriften, når den gemmes.",
     "targetKept": "Opskriftens målværdi er SG {sg}.",
-    "clearTarget": "Fjern målværdien"
+    "clearTarget": "Fjern målværdien",
+    "drySgEmpty": "Kun de tørre vægte har brug for den; vandet, der skal tilsættes, har ikke. Skriv den, hvis den kendes.",
+    "drySgNeeded": "Skriv de tørre råvarers massefylde for at se den tørre glasur i spanden og vandet til en ny portion.",
+    "estimate": {
+      "mineral": "Et skøn, {sg}, ud fra hvad hver råvare består af: den målte massefylde af dens mineral. Ret det, hvis et bedre tal kendes.",
+      "kind": "Et skøn, {sg}: Feldspater og ler vejer ca. 2,6. Ret det, hvis et bedre tal kendes.",
+      "glass": "Et skøn, {sg}, beregnet ud fra fritternes oxider (de er glas). Ret det, hvis et bedre tal kendes.",
+      "mixed": "Et skøn, {sg}, ud fra hver råvare: den målte massefylde af dens mineral, ca. 2,6 for feldspater og ler og fritter beregnet ud fra deres oxider. Ret det, hvis et bedre tal kendes.",
+      "leftOut": "Udeladt, da deres massefylde ikke kendes: {names}.",
+      "none": "Intet skøn for denne opskrift: Massefylden af {names} kendes ikke. Skriv den, hvis den kendes.",
+      "was": "Det indtastede tal bruges. Skønnet var {sg}; ryd feltet for at gå tilbage til det."
+    },
+    "badSgWater": "En massefylde skal være over 1 (vands)."
   },
   "import": {
     "title": "Indsæt opskrifter",

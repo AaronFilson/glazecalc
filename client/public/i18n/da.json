@@ -36,7 +36,10 @@
     "confirm": "Godkend en ændring - Glazecalc",
     "cones": "Kegleskema: temperaturer for Orton- og SK-kegler - Glazecalc",
     "materials": "Standardråvarer til glasur: analyse og farer - Glazecalc",
-    "materialInfo": "{name}: oxidanalyse og farer - Glazecalc"
+    "materialInfo": "{name}: oxidanalyse og farer - Glazecalc",
+    "teachingGlazeCalculation": "Undervisning i glasurberegning - Glazecalc",
+    "famousGlazes": "Berømte glasurer - Glazecalc",
+    "famousGlaze": "Glasuren {name} - Glazecalc"
   },
   "nav": {
     "skip": "Spring til indholdet",
@@ -187,7 +190,10 @@
     "materials": "Glasurråvarerne i Glazecalcs standardbibliotek, fra feldspater og ler til fritter og borkilder, hver med sin oxidanalyse, Seger-formel og farer.",
     "materialInfo": "{name}: oxidanalyse, Seger-formel, glødetab og farer i Glazecalcs standardbibliotek.",
     "materialInfoLong": "{name} i Glazecalcs standardbibliotek over glasurråvarer: oxidanalyse, bidrag til Seger-formlen, glødetab og farer.",
-    "imageAlt": "Glazecalcs logo og overskrift, gratis glasurkemi for keramikere, ved siden af et foto af brændte keglesæt."
+    "imageAlt": "Glazecalcs logo og overskrift, gratis glasurkemi for keramikere, ved siden af et foto af brændte keglesæt.",
+    "teachingGlazeCalculation": "6 lektioner til undervisning i Seger-formlen (UMF): råvarer og trekantsforsøg, mol, fra opskrift til formel og tilbage igen og glasurfejl, med gennemregnede eksempler og arbejdsark til udskrift.",
+    "famousGlazes": "Berømte glasurer fra hele verden: hver glasurs traditionelle opskrift eller historiske analyse, dens Seger-formel og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger.",
+    "famousGlaze": "Glasuren {name} ({native}): dens traditionelle opskrift eller historiske analyse, brænding, Seger-formel og kilder og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger."
   },
   "notices": {
     "dismiss": "Luk",

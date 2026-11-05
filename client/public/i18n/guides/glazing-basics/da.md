@@ -3,480 +3,480 @@ title: Glasering fra grunden
 lead: Hvad en glasur består af, hvordan ovnen gør den til glas, og en forklaring på alle de ord, der optræder på en opskrift, en råvaresæk eller en kegletabel.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Hvad en glasur er {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+En **glasur**{{en: glaze}} er et tyndt lag glas, der er smeltet fast på et emne. Glazy, den åbne database med glasuropskrifter, kalder den »en glasformel, der er afstemt til at smelte og smelte fast på ler ved bestemte temperaturer«. Den påføres som et lag pulver og smelter i ovnen til et glasagtigt lag, der lukker leret, så emnet er mindre tilbøjeligt til at lække, blive misfarvet eller slides. På toppen af brændingen reagerer smelten også med leret og danner ofte et lag mellem dem, der låser glasuren fast. På lertøj, der brændes køligere, er dette lag tyndt, og glasuren ligger mest ovenpå. På stentøj og porcelæn, der brændes varmere, er laget tykkere, og glasuren griber fastere i leret. Glasuren forbliver dog glas: Den bliver ikke en del af leret.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+En opskrift opregner råvarer, fx feldspat, kridt og kaolin. I ovnen forsvinder en del af hver som gas (vand eller kuldioxid), og resten bliver til **oxider**: forbindelser af et grundstof med ilt, fx silica (SiO₂) eller calciumoxid (CaO). Det brændte glas består af oxider, så keramikere beskriver en glasur ud fra dem. Hvert oxid har én af tre opgaver.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **Silica** (SiO₂) er **glasdanneren**{{en: glass former}}: Det opbygger glasset. Ren silica smelter over {{3100 °F; 1700 °C}}, langt varmere end en keramikovn, og en glasur med meget silica er generelt mere holdbar.
+- **Flusmidler**{{en: fluxes}} sænker smeltepunktet til et, ovnen kan nå. **Alkalierne**, skrevet **R₂O**, er oxiderne af natrium, kalium og lithium (Na₂O, K₂O, Li₂O); de virker fra kegle 06 og op gennem mellemtemperatur og høj temperatur. **Jordalkalierne**, skrevet **RO**, er oxiderne af calcium, magnesium, barium og strontium (CaO, MgO, BaO, SrO), med zinkoxid (ZnO) regnet sammen med dem; de virker bedst fra kegle 5 til kegle 10. R står for et hvilket som helst metal i gruppen.
+- **Aluminiumoxid** (Al₂O₃) er **stabilisatoren**{{en: stabilizer}}. Det gør smelten mere sej, så den bliver siddende på lodrette vægge, og giver hårdhed og holdbarhed. Glazys advarsel: Med for lidt aluminiumoxid »kan glasuren løbe; for meget kan gøre smelten så sej, at den bliver mat«. Aluminiumoxid kommer mest fra ler og feldspat.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**Bor** (B₂O₃) udvisker grænsen. Kemikere regner det som en glasdanner, men ved værkstedets temperaturer virker det som et flusmiddel, og keramikere behandler det som et. Det er et vigtigt flusmiddel ved lav temperatur og mellemtemperatur: Jo køligere brændingen er, desto mere bor skal en glasur have. Ved kegle 10 er det som regel ikke nødvendigt. (Kegler, den måde keramikere angiver en brænding på, forklares nedenfor.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> En måde at huske det på: Silica er glasset, flusmidlerne lader det smelte ved en temperatur, ovnen kan nå, og aluminiumoxid gør det tykkere, så det bliver, hvor det er påført.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## Ler, belægninger og de to brændinger {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Lermasser
 
-## From recipe to unity formula {#unity-formula lang=en}
+**Lermassen**{{en: clay body}} er det ler, et emne er lavet af. Der er tre hovedtyper.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Lertøj**{{en: earthenware}}: en lermasse til lav temperatur, ca. kegle 06–02, der er porøs ved lave kegler og tættere, jo varmere den brændes. Ofte rød eller lysebrun; den skal have en glasur for at holde vand.
+- **Stentøj**{{en: stoneware}}: en lermasse til mellemtemperatur og høj temperatur, ca. kegle 5–10, der bliver sintret eller næsten sintret.
+- **Porcelæn**: en hvid lermasse med meget kaolin, ofte gennemskinnelig. Det meste porcelæn brændes ved høj temperatur, men der findes også porcelæn til kegle 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Sintret** betyder glasagtig og ikke porøs; **sintring** er, når en lermasse bliver det under brændingen. Britiske keramikere trækker ofte grænsen ved temperaturen i stedet: Stentøj brændes over {{2192 °F; 1200 °C}}, lertøj under. Mellemtemperatur, kegle 5–6, ligger lige på hver side af den grænse.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Belægninger og tørring
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**Begitning**{{en: slip}} er ler opslemmet i vand, til støbning, samling eller dekoration. En **engobe** er en begitningslignende belægning, ofte farvet, med flere råvarer, der ikke er ler. En **underglasurfarve**{{en: underglaze}} er farvet begitning eller oxiddekoration, som regel dækket af en transparent glasur.
 
-### The silica to alumina ratio
+Ubrændt gods er **råemner**{{en: greenware}} (kilderne er uenige om, hvorvidt ordet dækker alt ubrændt gods eller kun tørt gods). Når det tørrer, bliver det **læderhårdt**, stift men let fugtigt, det trin, hvor der afdrejes og sættes hanke på; derefter **knastørt**, uden fri vand tilbage, meget skrøbeligt og klar til brænding.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### De to brændinger
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+Den første, lavere brænding er **forglødningen**{{en: bisque}} (i Storbritannien **biscuit**), som regel kegle 08–04 (oftest 06–04), ca. {{1728–1945 °F; 942–1063 °C}}. Den gør godset stærkt, men porøst. Digitalfire, et opslagsværk om glasur, foreslår generelt mere end 15 % porøsitet, så det forglødede gods suger vand ud af glasuren, når den påføres. En lav forglødning (kegle 08–06) er mere porøs; en høj forglødning (ofte kegle 04) er mere robust, men tager mindre villigt imod glasur.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Hvordan forglødningen ændrer glaseringen (Digitalfire)
+Label: Hvordan forglødningen ændrer glaseringen
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Forglødning                              | Hvad der sker                                                         |
+| ---------------------------------------- | --------------------------------------------------------------------- |
+| Underbrændt, meget sugende               | Glasuren lægger sig for tykt og revner og kravler derefter            |
+| Overbrændt, tæt                          | Dypning og tørring tager længere tid                                  |
+| Brændt varmere eller holdt længere i top | Mere gas brænder af nu, så mindre bobler gennem glasuren senere        |
 
-### Loss on ignition
+Potclays, en britisk forhandler, beskriver forglødning til omkring {{1000 °C; 1832 °F}}, ca. kegle 06. Ud fra disse kilder tilsammen foreslår vi kegle 06–04 til en første forglødning: {{1828–1945 °F; 998–1063 °C}} ved Ortons middelhastighed.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**Glasurbrændingen**{{en: glaze firing}} (britiske keramikere siger måske **glost** firing) smelter glasuren og brænder for stentøjs vedkommende også leret modent. Ved **enkeltbrænding**{{en: once-firing}} glaseres ubrændt gods, der kun brændes én gang. Digitalfire beretter om et tilfælde i produktion, hvor råglaseret gods kravlede ved kanterne, indtil en forglødning løste problemet, så begynd med to brændinger. [Brænding i en enkel ovn](/guides/firing) giver brændekurver til begge.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Kegler og varmepåvirkning {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Keramikere angiver en brænding med en **kegle**{{en: cone}}: en slank keramisk pyramide, der bøjer, når den har fået en bestemt mængde varme. Orton, der fremstiller dem, kalder kegler indikatorer for tid og temperatur (varmepåvirkning): De viser den samlede virkning af tid og temperatur, ikke temperaturen alene.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**Varmepåvirkning**{{en: heatwork}} er grunden: Glasur, ler og kegle reagerer alle på, hvor længe de er varme, og ikke kun på hvor varme. En langsom brænding bøjer en kegle ved en lavere temperatur, en hurtig ved en højere. Ortons tabel har kegle 6 bøjende ved {{2165 °F; 1185 °C}}, når brændingen slutter med en stigning på {{27 °F; 15 °C}} i timen, ved {{2232 °F; 1222 °C}} ved {{108 °F; 60 °C}} i timen og ved {{2269 °F; 1243 °C}} ved {{270 °F; 150 °C}} i timen, hastigheden målt over de sidste {{180 °F; 100 °C}}. En kegle er færdig, når spidsen er bøjet 90°. Keramikere kalder det ofte klokken 5-stillingen.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Keglenumrene går fra 022 til 42. Et foranstillet nul markerer den køligere serie, hvor et større tal er køligere: Kegle 06 er køligere end kegle 04, og kegle 01 køligere end kegle 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Temperaturområder: selvstående Ortonkegler ved {{108 °F; 60 °C}} i timen
+Label: Temperaturområder
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Område           | Kegler |        °F |        °C | Bruges til                     |
+| ---------------- | ------ | --------: | --------: | ------------------------------ |
+| Lav temperatur   | 06–04  | 1828–1945 |  998–1063 | Lertøjsglasurer; forglødning   |
+| Mellemtemperatur | 5–6    | 2167–2232 | 1186–1222 | Stentøj og porcelæn            |
+| Høj temperatur   | 9–10   | 2300–2345 | 1260–1285 | Stentøj og porcelæn            |
+
+> [!NOTE]
+> Navngiv og programmér brændingerne efter kegle, og betragt temperaturerne som omtrentlige. En **kontrolkegle**{{en: witness cone}} på en ovnplade blandt emnerne, eller et **keglesæt**{{en: cone pack}} på tre (advarselskegle, målkegle og sikkerhedskegle), viser den varmepåvirkning, emnerne virkelig fik.
+
+Offentliggjorte temperaturer varierer. Glazy angiver høj temperatur, kegle 9–11, som ca. {{2336–2390 °F; 1280–1310 °C}}, hvilket svarer til Ortons hurtige kolonne, og Digitalfire angiver kegle 6 som ca. {{2200 °F; 1204 °C}}. Vores råd: Brug Ortons tal for middelhastighed, som denne vejledning gør, programmér efter kegle, og lad en kontrolkegle afgøre det.
+
+Uden for Nordamerika angiver forhandlere ofte °C frem for en kegle. Hermann Seger udviklede den moderne kegle, første gang brugt i Berlin i 1886, og Storbritannien har haft sine egne Staffordshire-kegler; man bør ikke gå ud fra, at deres numre svarer til Ortons, og vi har ikke fundet nogen tabel til at omregne dem. [Brænding i en enkel ovn](/guides/firing) gennemgår kegler mere detaljeret.
+
+## Fra opskrift til Seger-formel {#unity-formula}
+
+En **opskrift**{{en: batch recipe}} opregner råvarer efter vægt, som regel omregnet, så grundglasuren giver 100 i alt. **Tilsætninger**{{en: additives}} (farvestoffer, opakgørende midler og antibundfældningsmidler) kommer ud over de 100, som regel som procent af grundglasuren. For at se, hvad glasuren er, omregner keramikere opskriften til en **Seger-formel (UMF)**{{en: unity molecular formula}}, opkaldt efter Hermann Seger, der først brugte dens opstilling i tre kolonner.
+
+Table: Fra opskrift til Seger-formel: Glazys gennemregnede eksempel
+Label: Fra opskrift til Seger-formel
+
+| Trin              | Hvad der sker                                                                                                                       | I eksemplet                                                                                                                     |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Opskrift       | Råvarer efter vægt, omregnet til 100                                                                                                | Feldspat 40 %, blandt andre                                                                                                     |
+| 2. Oxidanalyse    | Som en næringsdeklaration: Hver råvares oxider lægges sammen i vægtprocent, og gasserne udelades                                    | Feldspaten er 64,8 % silica, så dens 40 % giver 25,9 % SiO₂. Den brændte glasur er 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
+| 3. Mol            | Vægte bliver til **mol**, antal molekyler, fordi »gram kan være misvisende, fordi nogle oxider er tungere end andre«                 | 60,1 g SiO₂ er ét mol, så 67,4 g er ca. 1,12 mol                                                                                |
+| 4. Normering til 1 | Alt divideres med summen af flusmidlerne, så flusmidlerne giver tilsammen 1                                                         | Flusmidlerne giver tilsammen 0,303; divisionen giver K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                  |
+
+Glazecalcs [opskriftsside](/recipe) udfører alle fire trin, mens der tastes, og viser resultatet i tre kolonner: flusmidler (R₂O og RO), der giver tilsammen 1; stabilisatorer (R₂O₃: aluminiumoxid, hvor bor ofte placeres); og glasdannere (RO₂: silica). »Normeringen er bare et skaleringsværktøj,« siger Glazy: To opskrifter lavet af forskellige råvarer, men med samme Seger-formel, »opfører sig næsten ens, når de er brændt«. Så 1-tallet er en fælles målestok, ikke en mængde, der vejes. Digitalfire tilføjer, at metoden »ikke virker lige så godt ved lavere temperaturer«, hvor bor ikke er et rent flusmiddel, og at Seger-formler er »sammenlignende og bedst set i sammenhæng«. **Sammenlign** stiller to opskrifters formler op ved siden af hinanden, oxid for oxid.
+
+### Forholdet mellem silica og aluminiumoxid
+
+Det mest nyttige enkelte tal er **forholdet mellem silica og aluminiumoxid**{{en: silica to alumina ratio}}: silica divideret med aluminiumoxid. I eksemplet er 3,70 ÷ 0,41 ca. 9.
+
+Table: Hvad forholdet mellem silica og aluminiumoxid tyder på (Glazy)
+Label: Silica til aluminiumoxid
+
+| Forhold | Glazys tolkning                                       |
+| ------: | ----------------------------------------------------- |
+|  Ca. 9  | Tyder på en blank smelte, med varme nok               |
+|     5–7 | Typisk for mange stabile stentøjsglasurer             |
+|     3–5 | Kan være mat eller underbrændt                        |
+
+Glazy siger ikke, hvilken kegle disse tal gælder for. Læs dem som en grov vejledning for stentøjsglasurer, ca. kegle 6–10. Digitalfire siger, at et forhold over ca. 8 sandsynligvis er blankt, men en glasur med bor kan være blank ved 8 eller lavere, og en glasur til lav temperatur endda ved 6. Et forhold på 5–7 forudsiger hverken blank eller mat i sig selv: Flusmidlerne, boret og keglen flytter alle grænsen. Glazy angiver en typisk fordeling af flusmidlerne for stabile glasurer på 0,2 R₂O med 0,8 RO op til 0,3 R₂O med 0,7 RO. Mere alkali gør smelten mere letflydende og øger dens udvidelse og dermed risikoen for krakelering.
+
+### Glødetab
+
+**Glødetab**{{en: loss on ignition}} (**LOI**) er den vægt, en råvare taber i ovnen, når vand, kuldioxid, organisk stof eller svovl forsvinder som gas. En brændt glasur har intet glødetab, så Seger-formlen udelader det.
+
+Table: Typisk glødetab (Digitalfire)
+Label: Glødetab
+
+| Råvare                             | Typisk glødetab                                                                    |
+| ---------------------------------- | ---------------------------------------------------------------------------------- |
+| Kridt (calciumkarbonat), dolomit   | Over 40 %, mest kuldioxid: 100 g calciumkarbonat afgiver ca. 44 g                  |
+| Lithiumkarbonat                    | Ca. 60 %                                                                           |
+| Bariumkarbonat, Gerstley Borate    | Over 20 %                                                                          |
+| Kaolin                             | Ca. 12–14 %, hovedsagelig vand bundet i krystallerne                               |
+| Feldspater                         | Under 1 %                                                                          |
+
+Gas, der forsvinder, efter at glasuren er begyndt at smelte, må boble igennem den og giver med Digitalfires ord »bobler, blærer, nålestik, kravling«. I en prøve hos Digitalfire blev talkum ved med at afgive gas til ca. {{1650 °F; 899 °C}}. Fritter, **kalcinerede** råvarer (opvarmet på forhånd for at drive deres gasser ud) og ændringer af brændingen hjælper alle.
+
+Ældre bøger laver denne regning i hånden, med **molvægt** (vægten af ét mol af en råvare eller et oxid) og **ækvivalentvægt** (vægten af en råvare, der giver ét mol af et oxid). Efter vores regning giver ca. 100 g kridt ét mol, 56 g, calciumoxid. En beregner klarer begge dele.
+
+## Grænser og Stull-diagrammet {#stull-chart}
+
+Et **Stull-diagram** er et kort over glasurer. Det har to akser, begge fra Seger-formlen: silica (SiO₂) vandret langs bunden og aluminiumoxid (Al₂O₃) lodret op ad siden. Hver glasur er ét punkt. Kortet er delt i områder, fx mat, blank, underbrændt og krakeleret. Glazecalcs [opskriftsside](/recipe) tegner glasuren ind på det.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull lavede diagrammet ud fra prøver, han offentliggjorde i 1912. Han brændte dem ved ca. kegle 11, og alle prøverne havde de samme flusmidler: 0,3 kalium (K₂O) og 0,7 calciumoxid (CaO). Kun silica og aluminiumoxid blev ændret. Så diagrammet gælder for de glasurer ved den varme.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Ens egen glasur er sandsynligvis anderledes. Bor, andre flusmidler og lavere kegler flytter alle områderne. I 2025 testede en artikel i Ceramics Monthly en glasur til kegle 6 med borater som flusmiddel og med meget jern. Diagrammet placerede den som krakeleret, mat og underbrændt. I virkeligheden var den helt udsmeltet, silkemat og ikke krakeleret. Forfatterne siger, at glasurer med borater ikke placeres godt i diagrammet. Så brug områderne som en vejledning, ikke en forudsigelse.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+Det **krakelerede** område er der, hvor Stulls egne prøver krakelerede, på hans ler. Det siger ikke, hvordan glasuren passer til den lermasse, der bruges. Krakelering afhænger af den termiske udvidelse af både glasur og ler. Glazecalcs tal for udvidelse hjælper med at sammenligne glasurer, og en rigtig prøve afgør det: isvandsprøven i [Glasurtilpasning og glasurfejl](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**Grænseformler**{{en: limit formulas}} er et andet værktøj til samme spørgsmål: intervaller for silica, aluminiumoxid og flusmidlerne for stabile glasurer ved en kegle. [Fødevaresikkerhed](/guides/glazing-basics#food-safety) forklarer dem, og hvorfor de ikke beviser noget i sig selv.
 
-## Frits and raw materials {#materials lang=en}
+## Fritter og råvarer {#materials}
 
-### Frits
+### Fritter
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+En **fritte**{{en: frit}} er glas lavet på en fabrik: mineraler smeltet, bratkølet i vand og malet. Fritning gør opløselige råvarer som borax uopløselige, låser giftige oxider som bly og barium inde i et stabilt glas, giver en mere ensartet råvare end rå mineraler og driver gasser ud, så frittede glasurer er »langt mere fejlfri« (Digitalfire). Fritter smelter også tidligt: En natriumfritte er aktiv ved kegle 06, mens feldspat »først lige begynder at blive blød ved kegle 6«. De koster mere, de skal have ler for at holde sig svævende (Digitalfires eksempel er 85 % fritte med 15 % ler), og de er »teoretisk uopløselige, men i praksis er de det ikke«.
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Nordamerikanske fritter går under producent og nummer: Ferro Frit 3134 (Ferro hedder nu Vibrantz) er blandt de mest brugte fritter i Nordamerika. Britiske opskrifter nævner oftere almindelige fritter, fx boraxfritte.
 
-### The common raw materials
+### De almindelige råvarer
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Almindelige glasurråvarer, og hvad de giver
+Label: Almindelige glasurråvarer
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
+| Råvare (andre navne)                              | Giver                  | Bemærkninger                                                                                                                                          |
 | ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Kvarts (flint, silica)                            | SiO₂                   | Brug 325 mesh, en meget fin formaling, i glasurer                                                                                                     |
+| Kaolin (Storbritannien: China Clay)               | Al₂O₃, SiO₂            | Den vigtigste kilde til aluminiumoxid; hjælper også med at forhindre, at glasuren bundfælder sig                                                      |
+| Pibeler                                           | Al₂O₃, SiO₂            | Mere plastisk end kaolin, med mere jern og organisk stof                                                                                              |
+| Kalifeldspat, natronfeldspat, nephelin-syenit     | K₂O, Na₂O, Al₂O₃, SiO₂ | Flusmidler med deres eget aluminiumoxid og silica. Nephelin-syenit er et stærkt flusmiddel ved lav temperatur og mellemtemperatur. En gammel opskrifts blotte »feldspat« kan betyde en hvilken som helst af dem |
+| Kridt (calciumkarbonat)                           | CaO                    | Det vigtigste calciumflusmiddel; afgiver kuldioxid                                                                                                    |
+| Wollastonit                                       | CaO, SiO₂              | Calcium uden kuldioxiden                                                                                                                              |
+| Dolomit, talkum                                   | MgO, med CaO eller SiO₂ | Silkematte overflader; lavere udvidelse                                                                                                              |
+| Zinkoxid                                          | ZnO                    | Glans og krystaller; for meget kan give kravling                                                                                                      |
+| Borfritter, Gerstley Borate, colemanit            | B₂O₃                   | Uundværlige fra kegle 06 til kegle 6; fritter er »mere ensartede og mindre opløselige end rå borater«                                                 |
+| Lithiumkarbonat                                   | Li₂O                   | Flusmiddel med lav udvidelse; dyrt, så det bruges sparsomt                                                                                            |
+| Strontiumkarbonat                                 | SrO                    | Den mindre giftige erstatning for barium                                                                                                              |
+| Bariumkarbonat                                    | BaO                    | Giftigt i rå form; glasurer med meget barium kan afgive metaller                                                                                      |
+| Bentonit                                          | Holder svævende        | Et meget fint ler, som regel 1–2 %, mod bundfældning. Over 3 % kan få glasuren til at revne, når den tørrer                                           |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Glasurråvarer er fine pulvere. Kvartsstøv skader lungerne, uden at det først giver symptomer, og nogle råvarer, fx bariumkarbonat og lithiumkarbonat, er giftige, hvis de sluges. Håndtér pulvere forsigtigt, gør rent vådt, og bær et tætsluttende åndedrætsværn, når der arbejdes med tørre råvarer. [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety) forklarer hvordan.
 
-### Regional names
+### Navne fra land til land
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **Kaolin** hedder **China Clay** i Storbritannien. I Australien er Eckalite ét mærke af kaolin.
+- **Flint** er et ældre britisk navn for silica. Britiske forhandlere sælger stadig **kalcineret flint** som et produkt for sig, så »flint« i en britisk opskrift betyder sandsynligvis kalcineret flint og i en amerikansk sandsynligvis kvartsmel. Begge sælges som kilder til silica; kontrollér analysen.
+- **China stone** og **Cornish Stone** (Cornwall stone) er den samme råvare, beslægtet med feldspat.
+- **Kridt**{{en: whiting}} er calciumkarbonat, malet kridt eller kalksten.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Bedøm en råvare ud fra de oxider, den giver, ikke ud fra navnet. Sådan arbejder Glazecalc: Leverandørens analyse kan indtastes på siden [Råvarer](/material), og **Prøv nutidige råvarer og sammenlign**, **Foreslå mængder og sammenlign** og **Lav den af mit lager** matcher alle brændte oxider, ikke navne.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Råvarer ændrer sig også. US Geological Survey oplyser, at minerne og fabrikken, der lavede Custer-feldspat, i South Dakota, indstillede driften i november 2023. Den oprindelige mine for Gerstley Borate lukkede omkring 1999–2000; Laguna sælger stadig et produkt under det navn, og Gillespie Borate er den vigtigste erstatning. Kilderne er uenige om, hvorvidt Gillespie erstatter Gerstley Borate pund for pund (producenten og Potclays siger ja, Digitalfire og andre nej), så sammenlign de to i Glazecalc, og prøv derefter en lille portion.
 
-## Colorants and opacifiers {#color lang=en}
+## Farvestoffer og opakgørende midler {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+Et **farvestof**{{en: colorant}} er et metaloxid eller -karbonat, der farver en glasur; en **universalfarve**{{en: stain}} er et fabriksfremstillet farvestof, mere stabilt og ensartet end rå oxider. Farvestoffer udgør som regel under 5 % af grundglasuren, mange under 1 %, og et karbonat er svagere end det tilsvarende oxid, fordi en del af det forsvinder som gas. Efter vores regning giver 100 g koboltkarbonat ca. 63 g koboltoxid, og 100 g af det kobberkarbonat, keramikere køber (basisk kobberkarbonat), ca. 72 g kobberoxid. Brug derfor ca. 1,4 til 1,6 gange så meget karbonat som oxid.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Almindelige farvestoffer, i procent af grundglasuren
+Label: Almindelige farvestoffer
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Farvestof           | Sædvanlig startmængde                | Farver og bemærkninger                                                                                                              |
+| ------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Kobolt              | 0,1–2 % (kilderne er uenige)         | Blå og meget stærk; mod lilla, når grundglasuren har magnesium                                                                      |
+| Jern                | 0,5–10 %                             | Brune, lysebrune og røde farver i oxidation; i reduktion giver ½–2 % seladon og 5–10 % tenmoku. Et flusmiddel, så meget får en glasur til at løbe |
+| Kobber              | 1–3 %                                | Grøn eller turkis i oxidation, rød i reduktion. Det kan få en glasur til at afgive metaller                                          |
+| Krom                | Under 0,5 % til 2 % (kilderne er uenige) | Grøn; brun, hvis grundglasuren har zink, lyserød med tin                                                                         |
+| Mangan              | 2–10 %                               | Brune og lilla farver                                                                                                               |
+| Rutil               | Ca. 2–5 %                            | Meleret, varieret farve; ru eller mat over ca. 5 %                                                                                  |
+| Universalfarver     | 2–12 %                               | 2–4 % til lyse nuancer, 5–8 % til mellemtoner, 10–12 % til stærke farver                                                            |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Mængderne af kobolt og krom er reelt omstridte. Glazy siger, at 0,1 % kobolt er nok til en blå; Glendale Community College angiver ½–2 % eller ½–3 % afhængigt af ovnatmosfæren; Birdie Boone siger i Pottery Making Illustrated 3 % eller mindre. For krom siger Boone under 0,5 % og Glendale 2–3 %. Det sikre er at starte lavt og lave en **prøverække**{{en: line blend}}: en række prøvebrikker, hvor én råvare øges trinvis fra lidt til meget.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+Grundglasuren ændrer farven. En blank, transparent grundglasur giver den klareste farve; silkematte og matte grundglasurer, som regel med mere aluminiumoxid, dæmper den. Magnesium skubber kobolt mod lilla, zink gør krom brun, og krom med tin giver lyserød.
 
-### Opacifiers
+### Opakgørende midler
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+Et **opakgørende middel**{{en: opacifier}} gør en glasur **dækkende**, så leret skjules; en **transparent** glasur lader det ses.
 
-Table: Opacifiers
+Table: Opakgørende midler
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Opakgørende middel                          | Sædvanlig mængde            | Bemærkninger                                                                                                                 |
+| ------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Zirkonsilikat (Zircopax, Superpax, Ultrox)  | 10–15 % for fuld dækkeevne  | Det billigere valg; mærkerne er zirkonsilikat malet til forskellige kornstørrelser, og finere kvaliteter er stærkere        |
+| Tinoxid                                     | Ca. 5–7 % (vores skøn)      | Dyrt; svagere ved høj temperatur, og Digitalfire oplyser, at 4 % ikke gav nogen dækkeevne i en transparent reduktionsglasur til kegle 10 |
+| Titandioxid                                 | Ca. 5 % (vores skøn)        | Silkeagtig, gennemskinnelig dækkeevne; ca. 5 % kan variere overfladen, og meget mere giver ofte en mat overflade med krystaller |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Glasurtilpasning og glasurfejl {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+Ler og glasur udvider sig begge, når de opvarmes, og trækker sig sammen, når de køler af, hver med sin egen mængde: sin **termiske udvidelse**{{en: thermal expansion}}. **Glasurtilpasning**{{en: glaze fit}} er, hvor godt de to passer sammen. Ved god tilpasning er glasuren under let trykspænding fra leret; Digitalfire siger, at lidt trykspænding styrker godset, mens for meget kan svække det og endda få det til at revne.
 
-### Crazing and shivering
+### Krakelering og afskalning
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**Krakelering**{{en: crazing}} er et net af fine revner. Glasurens udvidelse er højere end skærvens, så den trækker sig mere sammen ved afkøling, bliver strakt og revner, som regel på grund af for meget natrium og kalium (Na₂O, K₂O). Den kan også opstå senere, under brug, efter gentagen pludselig afkøling, fx ved kontakt med kolde væsker. Når den er tilsigtet, som i raku, kaldes den **krakelé**{{en: crackle}}. Digitalfire siger: »I 95 % af tilfældene er løsningen at justere glasurens termiske udvidelse«; styret afkøling udskyder kun krakeleringen. Digitalfires prøve: Opvarm godset til ca. {{300 °F; 149 °C}}, dyp det i isvand, og gnid en tusch hen over det, så revnerne ses.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Kilderne er uenige om den første løsning. Glazy foreslår at tilsætte silica eller aluminiumoxid; Digitalfire svarer, at ekstra silica »kun fortynder KNaO« (natrium og kalium); Linda Bloomfield tilsætter bor eller skærer ned på feldspat, én råvare ad gangen. Vores råd: Skift i [opskriftsberegneren](/recipe) noget af natriummet og kaliummet ud med flusmidler med lavere udvidelse (bor, lithium, magnesium, calcium), kontrollér ændringen med **Sammenlign**, og bekræft med isvandsprøven.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**Afskalning**{{en: shivering}} er det omvendte: Glasurens udvidelse er langt lavere end skærvens, så den er under for stor trykspænding og skaller af ved kanter og rande. Digitalfire advarer om, at skårene kan være knivskarpe og kan blive slugt, og Glazy kalder afskalning »endnu farligere end krakelering på brugskeramik«. Løsningen er en glasur med højere udvidelse eller en lermasse med lavere udvidelse.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> Brug ikke krakeleret eller afskallet gods til mad eller drikke. Kilderne er uenige om, hvorvidt krakelerede emner kan gøres rene nok (én siger, at en opvaskemaskine klarer det; en anden kalder krakeleret brugskeramik defekt), så vi vælger den forsigtige side.
 
-### Gloss and matte
+### Blank og mat
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+En **blank** overflade er spejlende og glat, **silkemat** har en dæmpet glans, og **mat** er glansløs. Blank kræver et helt udsmeltet glas. Mat kan komme af meget aluminiumoxid (et lavt forhold mellem silica og aluminiumoxid), af flusmidler som calcium, magnesium, barium eller strontium, der danner små krystaller, når glasuren køler af, eller af underbrænding.
 
-### Common defects
+### Almindelige glasurfejl
 
-Change one thing at a time, and keep your test tiles.
+Ændr én ting ad gangen, og gem prøvebrikkerne.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Almindelige glasurfejl, deres sædvanlige årsager og første løsninger
+Label: Almindelige glasurfejl
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Glasurfejl   | Ser ud som                                         | Almindelige årsager                                                                                                                         | Første løsninger                                                                         |
+| ------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Kravling     | Glasuren trækker sig sammen i perler og efterlader bart ler | Støvet eller fedtet forglødet gods; et tykt lag med meget ler, der revnede under tørringen; zink, zirkonsilikat eller tin             | Rengør det forglødede gods; påfør tyndere; kalcinér noget af leret; tilsæt et bindemiddel som CMC |
+| Nålestik     | Små huller eller fordybninger                      | Gas fra skærv eller glasur, der ikke er lukket til igen; en underbrændt eller sej glasur                                                    | Hold ved sluttemperaturen i ca. en halv time; påfør tyndere; mindre zink eller rutil     |
+| Blærer       | Kratere med skarpe kanter                          | Som regel overbrænding; meget tykke lag; flygtige flusmidler over ca. {{2192 °F; 1200 °C}}                                                 | Brænd lavere; påfør tyndere. Skarpe kanter gør brugskeramik usikker                      |
+| Løb          | Glasuren flyder ud på ovnpladen                    | For lidt aluminiumoxid; for tykt, som hvor overhældninger overlapper; meget jern                                                           | Påfør tyndere; tilsæt aluminiumoxid; hold glasuren et godt stykke over foden             |
+| Kølerevner   | Revner i emnet fra afkøling eller opvarmning       | Hurtig afkøling gennem kvartsspringet, {{1063 °F; 573 °C}}, eller cristobalitspringet, ca. {{428 °F; 220 °C}}; ujævne vægge; dårlig tilpasning | Brænd langsomt gennem begge, op og ned; jævne vægge                                      |
 
-## Food safety {#food-safety lang=en}
+## Fødevaresikkerhed {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Afgivelse af metaller**{{en: leaching}} er metal, der opløses fra en brændt glasur ud i mad eller drikke, og en glasur kan se perfekt ud og alligevel gøre det. De lovpligtige prøvninger lægger det brændte emne i blød i en syreopløsning og måler det bly og cadmium, der kommer ud.
 
-### Lead-free is not the same as food-safe
+### Blyfri er ikke det samme som egnet til fødevarekontakt
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Reglerne i USA, EU, Storbritannien og Australien begrænser det bly og cadmium, et brændt emne afgiver, ikke hvad glasuren indeholder. »Blyfri« fjerner én fare; det er ikke en vurdering af fødevaresikkerhed. Andre oxider afgives også: Glazy advarer om, at glasurer med meget barium »kan afgive metaller og generelt ikke er egnede til fødevarekontakt«, Digitalfire siger, at kobber »kan få en glasur til at afgive metaller; test den«, og Glazy anbefaler ikke længere blyglasurer til brugskeramik.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+En **indvendig glasur**{{en: liner glaze}} er en stabil, som regel transparent eller hvid glasur til flader, der kommer i kontakt med mad. Efter vores opfattelse er en glasur uden farvestof, barium, bly eller lithium, der smelter helt ud, ikke krakelerer og er slidstærk, det valg med lavere risiko. Lavere risiko er ikke et bevis.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Grænseformler**{{en: limit formulas}} (Digitalfire foretrækker **målformler**) angiver typiske intervaller i Seger-formlen for stabile glasurer ved en kegle: Digitalfires mål for kegle 6 sætter aluminiumoxid til 0,285–0,64 og silica til 2,4–4,7. De leder mod sund kemi, men beviser intet; Digitalfire undgår ordet »grænse«, fordi det antyder, at glasurer inden for intervallerne »på en eller anden måde er sikre«. Glazecalcs værktøjer til at ændre en opskrift siger, når den nye går ud over en anbefalet grænse, fx meget bor ved kegle 6, og hvad glasuren sandsynligvis vil gøre.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+De lovfastsatte grænseværdier er forskellige fra land til land. Tabellen viser dem, der gælder, hvor værkstedet ligger, i lovens egne enheder; vælg et andet land eller en anden region for at sammenligne.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+I USA behandles dekorativt keramisk gods, der ser ud til at kunne bruges til mad, som gods til fødevarer, medmindre det har en påklæbet etiket og en permanent meddelelse støbt eller brændt ind i bunden, fx »Not for Food Use. May Poison Food«, eller har et hul gennem fladen til maden. EU fastsætter grænseværdier for bly og cadmium i keramiske genstande i Rådets direktiv 84/500/EØF, og Storbritannien har de samme tal i sin egen lovgivning. En beslutning fra Benelux-landene fra 2024 fastsætter meget lavere grænseværdier for keramiske genstande. Nederlandene anvendte dem fra den 29. maj 2026: ca. 130 til 150 gange mindre bly og ca. 14 til 18 gange mindre cadmium end EU’s tal. Gods, der opfyldte de gamle regler og først blev solgt før den 1. december 2026, må sælges, til lageret er opbrugt. Prøvningslaboratorier oplyser, at Luxembourg anvender de samme grænseværdier fra den 29. maj 2026, og at Belgien vedtog dem ved et kongeligt dekret af 19. juli 2026; vi har ikke selv læst de tekster. Australien fastsætter grænseværdier for importeret gods; vi har ikke fundet nogen officiel grænseværdi for gods fremstillet i Australien eller New Zealand.
 
-### Testing
+### Prøvning
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+FDA siger, at testsæt med vatpind til hjemmebrug kan vise bly, der kan afgives, men undersøgelser viser, at disse sæt ofte tager fejl på glaseret gods: De kan vise bly, der ikke er der, og de kan overse bly, der afgives. Betragt et positivt resultat som en grund til at holde op med at bruge emnet og et negativt som et resultat, der intet beviser. En migrationstest af det brændte emne i et laboratorium (ASTM C738 i USA; EN 1388 eller ISO 6486 i Europa) er det rigtige svar.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> »Egnet til fødevarekontakt« betyder, at denne glasur, på dette ler, brændt til denne kegle i denne ovn og påført på denne måde, afgiver mindre end de lovfastsatte grænseværdier. Glazecalc kan hjælpe med at opbygge en stabil glasur, og **Erstat bly** kan bygge en gammel blyopskrift op på ny uden bly, men ingen beregner kan godkende et emne. Det kan kun en prøvning af det brændte emne.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Massefylde og påføring {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### Massefylde
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+Glasurpulver blandet med vand er en **glasurvælling**{{en: slurry}}. Dens **massefylde**{{en: specific gravity}} er dens vægt sammenlignet med samme rumfang vand, som har massefylden 1,0: Jo højere den er, desto mere pulver er der i spanden. Glazy kalder 1,4–1,5 »et godt udgangspunkt for de fleste glasurer«. For at måle den vejes præcis 100 mL glasurvælling (Glazy foreslår en sprøjte), og vægten divideres med 100: 145 g betyder massefylde 1,45. Flydevægte er upålidelige i geléagtige glasurer, og vand fordamper, så kontrollér igen, før der glaseres.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Målene er forskellige fra kilde til kilde. Digitalfire sætter dyppeglasurer til 1,40–1,50 og købte penselglasurer til 1,25–1,55, mens Potclays angiver 1,71–1,81 til pensling og 1,71 til sprøjtning. Vores råd: Dyp ved ca. 1,45 med glasuren let geléagtig, følg etiketten for en penselglasur, og skriv ned, hvad der virker.
+
+Et **flokkuleringsmiddel**{{en: flocculant}} (bittersalt, eddike eller calciumklorid) gør en glasurvælling let geléagtig, så den bliver **tixotrop**{{en: thixotropic}}: Den flyder, når den røres, og stivner, når den står stille, for at få »en jævn glasurdækning uden dryp«. Et **deflokkuleringsmiddel**{{en: deflocculant}} (vandglas eller Darvan) gør den tyndere. [Sådan laver man en glasur](/guides/making-a-glaze) gennemgår blanding og justering.
+
+### Påføring af glasur
+
+Fjern først støv og fedt fra det forglødede gods med en knap fugtig svamp i stedet for at vaske det, hvilket gennembløder det. Blæs ikke støvet af med trykluft, og børst det ikke af tørt: Det sender kvartsstøv ud i luften ([Sikker blanding og ventilation](/guides/safe-mixing#cleaning)).
+
+- **Dypning** »giver generelt et lag af jævn tykkelse« (Robin Hopper). Dyppetiden bestemmer tykkelsen: Digitalfire bemærker, at købte dyppeglasurer laves til ca. 1,4 til et dyp på 5 sekunder og 1,5 til et dyp på 1 sekund.
+- Glasur til **overhældning** bør være »lidt tyndere end til dypning«; hvor overhældninger overlapper, bliver laget dobbelt og kan løbe.
+- **Penselglasurer** indeholder et gummi som **CMC**{{en: CMC gum}}, der hjælper glasuren med at flyde og sidde fast og derefter brænder bort. De fleste skal have flere lag, ofte to eller tre; følg etiketten.
+- **Sprøjtning** bruger en meget tyndere glasur, påført i »flere tynde lag, så tykkelsen gradvis opbygges«.
+
+> [!WARNING]
+> Sprøjt kun i en sprøjtekabine med udsugning, og bær et korrekt tilpasset åndedrætsværn. Se [Sikker blanding og ventilation](/guides/safe-mixing).
+
+Et for tykt lag kan kravle, få blærer eller løbe. Forhandlernes tommelfingerregler går fra tykkelsen af et betalingskort til tykkelsen af en amerikansk dime (en lille mønt), efter vores skøn ca. 1 mm tør glasur; prøvebrikker med nogle få tykkelser er den pålidelige kontrol. **Voks**{{en: wax resist}} på foden frastøder glasur, så emnet ikke kan brænde fast på ovnpladen, og **pladebeskyttelse**{{en: kiln wash}}, en varmebestandig belægning ofte af kaolin og silica, beskytter ovnpladerne mod dryp.
+
+## Oxidation og reduktion {#atmosphere}
+
+Gasserne i ovnen, dens **ovnatmosfære**, ændrer, hvordan glasurer bliver. **Oxidation**{{en: oxidation}} betyder rigeligt med ilt. »Elektriske ovne er ensbetydende med oxiderende brænding,« siger Digitalfire, og oxidationsglasurer er typisk klarere end reduktionsglasurer, især ved lavere temperaturer. I oxidation giver kobber grønne og turkise farver og jern brune, lysebrune og røde. En elektrisk ovn med dårligt aftræk, fuld af gods, der afgiver gasser, kan blive mere neutral end tilsigtet; en udsugning sluttet direkte til ovnen hjælper.
+
+**Reduktion**{{en: reduction}} begrænser bevidst ilten, som regel i en gasovn, en brændeovn eller en særlig ovn. Kobber bliver rødt, og jern bliver et stærkere flusmiddel og giver **seladon** (blågrøn til grågrøn, fra ca. ½–2 % jern) og **tenmoku** (temmoku: brunsort, ca. 5–10 % jern). Glazy siger, at seladoner og kobberrøde glasurer »er afhængige af reduktion«. Leret ændrer sig også: I én sammenligning hos Digitalfire blev en stentøjsmasse grå i reduktion og gullig i oxidation. Siliciumkarbid i en glasur kan give små områder med reduktion selv i en elektrisk ovn. Til reduktion fra kegle 010 til kegle 3 anbefaler Orton sine jernfri kegler.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Forvent, at en opskrift skrevet til en gasovn med reduktion bliver anderledes i en elektrisk ovn: En seladon eller en kobberrød glasur, der er afhængig af reduktion, vil ikke se ens ud i oxidation. Kontrollér, hvilken ovnatmosfære en opskrift er lavet til, og notér den, der bruges, sammen med keglen, i opskriftens noter i Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Alle ovne, også elektriske, afgiver røggas, så sørg for godt aftræk fra ovnen. [Sikker blanding og ventilation](/guides/safe-mixing) forklarer hvordan.
 
-## Glossary {#glossary lang=en}
+## Ordliste {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Tilsætning
+: Et farvestof, et opakgørende middel eller et antibundfældningsmiddel, der tilsættes ud over en opskrifts 100.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Aluminiumoxid (Al₂O₃)
+: Den vigtigste stabilisator: forhindrer løb og giver hårdhed. Kommer fra ler og feldspater.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Pibeler
+: Et plastisk ler med mere jern og organisk stof end kaolin.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Opskrift
+: En glasurs råvarer efter vægt, som regel 100 i alt.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+Bentonit
+: Et meget fint ler, der tilsættes med ca. 1–2 % for at forhindre, at glasuren bundfælder sig. Over 3 % kan få glasuren til at revne, når den tørrer.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Forglødning (Storbritannien: biscuit)
+: Den første, lavere brænding, som regel kegle 08–04 (oftest 06–04), der gør godset stærkt, men porøst.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Bor (B₂O₃)
+: Formelt en glasdanner, men brugt som flusmiddel; uundværligt fra kegle 06 til kegle 6.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+CMC
+: Et cellulosegummi, der hjælper glasuren med at blive penslet på og sidde fast; det brænder bort.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Farvestof og universalfarve
+: Et metaloxid eller -karbonat, der farver glasur; en universalfarve er et fabriksfremstillet, mere stabilt farvestof.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Kegle
+: En kalibreret keramisk pyramide, der bøjer ved en bestemt varmepåvirkning. En kontrolkegle viser, hvad emnerne fik.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Kravling
+: Glasur, der under brændingen trækker sig sammen i perler og efterlader bart ler.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Krakelering
+: Fine revner i en glasur, der trækker sig mere sammen end skærven; krakelé, når det er tilsigtet.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Devitrifikation
+: Krystaller, der vokser ud af glasset tidligt i afkølingen, hvor de ikke er ønsket.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Kølerevner
+: Revner i et emne fra spændinger ved afkøling eller opvarmning, ofte ved kvartsspringet, {{1063 °F; 573 °C}}.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+Lertøj
+: En lermasse til lav temperatur (ca. kegle 06–02), porøs ved lave kegler og tættere, når den brændes varmere.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Feldspat
+: Et mineral, der giver alkalisk flusmiddel med aluminiumoxid og silica: kalifeldspat, natronfeldspat eller nephelin-syenit.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Flokkuleringsmiddel og deflokkuleringsmiddel
+: Tilsætninger, der gør en glasurvælling geléagtig (bittersalt, eddike) eller tyndere (vandglas, Darvan).
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Flusmiddel
+: Et oxid, der sænker silicas smeltetemperatur.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Egnet til fødevarekontakt
+: I lovens forstand at afgive mindre bly og cadmium end grænseværdierne i en syreprøvning. Ikke det samme som blyfri.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Fritte
+: Fabriksfremstillet glas, smeltet, bratkølet og malet, der gør opløselige eller giftige oxider uopløselige.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Glasdanner
+: Det oxid, der opbygger glasset, som regel silica.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Glasur
+: Et lag glas, der smelter under brændingen og lukker og dekorerer et emne.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Glasurbrænding (Storbritannien: glost firing)
+: Den brænding, der smelter glasuren.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Glasurtilpasning
+: Hvor godt glasurens og skærvens udvidelse passer sammen; ved god tilpasning er glasuren under let trykspænding.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Blank, silkemat og mat
+: Spejlende og glat; en dæmpet glans; glansløs.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Råemne
+: Ubrændt gods: læderhårdt, når det er stift, men fugtigt, knastørt, når der ikke er fri vand tilbage.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Varmepåvirkning
+: Den samlede virkning af temperatur og tid i en ovn; det, kegler måler.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+Kaolin (Storbritannien: China Clay)
+: Et rent, hvidt ler, der giver aluminiumoxid og silica; hjælper med at forhindre, at glasuren bundfælder sig. I Australien er Eckalite ét mærke.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Pladebeskyttelse
+: En varmebestandig belægning, der beskytter ovnplader mod dryp.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Afgivelse af metaller
+: Metaller, der opløses fra en brændt glasur ud i mad eller drikke.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Grænseformel (målformel)
+: Typiske intervaller i Seger-formlen for stabile glasurer ved en kegle; en vejledning, ikke en garanti.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Prøverække
+: Prøver, hvor én råvare ændres trinvis mellem to mængder. Et trekantsforsøg varierer tre i et net.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Indvendig glasur
+: En stabil, som regel transparent eller hvid glasur til flader, der kommer i kontakt med mad.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Glødetab (LOI)
+: Vægt, der tabes under brændingen som vand, kuldioxid, organisk stof eller svovl.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Enkeltbrænding
+: Glasering af ubrændt gods, der kun brændes én gang.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Opakgørende middel
+: En råvare, fx zirkonsilikat, tinoxid eller titandioxid, der gør glasuren dækkende.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Oxidation og reduktion
+: Brænding med rigeligt ilt (elektriske ovne) eller med begrænset ilt (som regel gas eller træ).
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Oxid
+: En forbindelse af et grundstof med ilt; en oxidanalyse opregner dem i vægtprocent.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Nålestik og blærer
+: Små huller eller kratere med skarpe kanter, hvor gas er sluppet ud gennem smelten.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Porcelæn
+: En hvid lermasse til høj temperatur med meget kaolin, ofte gennemskinnelig.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O og RO
+: De alkaliske flusmidler (Na₂O, K₂O, Li₂O) og jordalkaliske flusmidler (CaO, MgO, BaO, SrO, med ZnO).
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Afskalning
+: Glasur, der skaller af ved kanterne, fordi den er under for stor trykspænding; en fare på brugskeramik.
 
 Silica (SiO₂)
-: The glass former; also called flint or quartz.
+: Glasdanneren; også kaldet flint eller kvarts.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Forholdet mellem silica og aluminiumoxid
+: Silica divideret med aluminiumoxid i Seger-formlen: højere trækker mod blank, lavere mod mat.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Begitning og engobe
+: Ler i vand; en engobe er en begitningslignende belægning med flere råvarer, der ikke er ler.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Massefylde
+: En glasurvællings vægt sammenlignet med samme rumfang vand.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Stabilisator
+: Et oxid, hovedsagelig aluminiumoxid, der gør smelten mere sej og giver holdbarhed.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Stentøj
+: En lermasse til mellemtemperatur og høj temperatur (ca. kegle 5–10), der bliver sintret eller næsten sintret.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Tixotropi
+: At flyde, når den røres, og stivne til en blød gelé, når den står stille.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Underglasurfarve
+: Farvet begitning eller oxiddekoration, som regel under en transparent glasur.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Seger-formel (UMF)
+: En glasurs oxider som antal molekyler, omregnet, så flusmidlerne giver tilsammen 1.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Sintring
+: At en lermasse bliver glasagtig og ikke porøs under brændingen.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Voks
+: Voks, der males på, hvor glasuren ikke må komme, som regel foden.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+Kridt
+: Calciumkarbonat, det vigtigste calciumflusmiddel; taber ca. 44 % af sin vægt under brændingen, som kuldioxid.
 
-## Sources {#sources lang=en}
+## Kilder {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -502,19 +502,19 @@ Whiting
 - [Digitalfire: Stull chart](https://digitalfire.com/glossary/stull+chart)
 - [Digitalfire: Cristobalite inversion](https://digitalfire.com/glossary/cristobalite+inversion)
 - [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
-- R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
-- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
-- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
+- R. T. Stull, »Influences of variable silica and alumina on porcelain glazes of constant RO«, Transactions of the American Ceramic Society 14 (1912), 62–70
+- [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb og Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
+- [US Geological Survey: amerikanske producenter af feldspat og nephelin-syenit i 2023 (tabel fra Minerals Yearbook, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
-- [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
+- [EUR-Lex: Rådets direktiv 84/500/EØF af 15. oktober 1984 om tilnærmelse af medlemsstaternes lovgivning om keramiske genstande bestemt til kontakt med levnedsmidler](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [Staatscourant 2026, 16308: nederlandsk bekendtgørelse af 23. april 2026, der anvender Benelux-beslutningen om keramiske genstande i kontakt med fødevarer](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
-- [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
+- [Federal Register, 12. januar 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
 - [SGS: The Netherlands revises rules for food contact ceramics (SafeGuardS 076/26)](https://www.sgs.com/news/2026/05/safeguards-07626-the-netherlands-revises-rules-for-food-contact-ceramics)
 - [SGS: Luxembourg updates rules for food contact ceramics (SafeGuardS 084/26)](https://www.sgs.com/news/2026/06/safeguards-08426-luxembourg-updates-rules-for-food-contact-ceramics)
 - [SGS: Belgium updates rules for food contact ceramics (SafeGuardS 126/26)](https://www.sgs.com/en-au/news/2026/09/safeguards-12626-belgium-updates-rules-for-food-contact-ceramics)

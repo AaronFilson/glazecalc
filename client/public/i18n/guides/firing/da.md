@@ -458,73 +458,73 @@ Styringer fra L&L og Bartlett bruger {{1926 °F; 1052 °C}} for kegle 04 og {{18
 
 En manuelt styret ovn følger den samme plan med hånden: Tør langsomt med låget på klem og kighullerne åbne, skru trinvis op for kontakterne fra Low (lav) over Medium (middel) til High (høj), og lad Kiln-Sitteren afslutte brændingen. De offentliggjorte fremgangsmåder står under »Manuelt styrede ovne i detaljer« nedenfor.
 
-## Glaze firing {#glaze lang=en}
+## Glasurbrænding {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Glasurbrændingen{{en: glaze firing}} smelter glasuren til glas på det forglødede gods. De fleste glasurer til lav temperatur i handlen er lavet til kegle 06 eller 05 (lav temperatur går fra kegle 06 til 04), og de fleste glasurer til mellemtemperatur til kegle 5–6. Brænd til den kegle, der står på glasurens og lerets etiketter, med et keglesæt omkring det nummer. Hvad der sker inde i glasuren, når den smelter, står i [Glasering fra grunden](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Påfyldning til en glasurbrænding
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Glaserede emner må ikke røre hinanden eller ovnens vægge: Lad ca. ½ tomme (13 mm) være fri.
+- Hold foden fri for glasur (**tør fod**), eller sæt gods til lav temperatur på **trefødder**{{en: stilts}}, små stativer med spidser. Stentøj og porcelæn bør ikke stå på trefødder, som brænder fast i godset ved de temperaturer; brug i stedet pladebeskyttelse til høj temperatur eller kvartssand.
+- Lad mindst 1 tomme (25 mm) være fri mellem ovnpladernes kanter og væggen eller Kiln-Sitteren.
 
-### Controller schedules
+### Brændekurver til styringer
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Forudindstillede glasurprogrammer fra L&L og Bartlett
+Label: Glasurprogrammer
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segment                 |                                 Stig til |             Slow Glaze |             Fast Glaze |
+| ----------------------- | ---------------------------------------: | ---------------------: | ---------------------: |
+| 1                       |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |         Intet eget trin |
+| 2                       | {{250 °F; 139 °C}} under sluttemperaturen | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                       |                         Sluttemperaturen |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Opvarmningstid, tom ovn |                                          |       Ca. 6½–7½ timer |          Ca. 3–4 timer |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Hvor segment 2 og 3 slutter, efter kegle (L&L og Bartlett)
+Label: Programmernes mål
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Kegle |  Segment 2 slutter |     Sluttemperatur |
+| ----- | -------------------: | -------------------: |
+| 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze er det sikreste standardvalg, i lyset af L&L’s advarsel mod hurtig brænding. Lægges der en holdetid på mere end 5–10 minutter ved sluttemperaturen, siger L&L, at måltemperaturen eller kegleoffset skal sænkes tilsvarende, og bemærker, at »holdetid ved høje temperaturer fremskynder slid på varmelegemer og termoelement«.
 
-### Cone 6: drop-and-hold
+### Kegle 6: sænk og hold
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Glasurer til mellemtemperatur får undertiden **nålestik**{{en: pinholes}} (små huller i overfladen) eller blærer, som gas, der bobler ud af smelten, efterlader. En brændekurve med **sænk og hold**{{en: drop-and-hold}} brænder til toppen, køler hurtigt ca. {{100 °F; 56 °C}} ned og holder temperaturen der. Med Digitalfires ord: »At sænke 100°F og holde giver smelten viskositet nok til at sprænge boblerne og samtidig lade dem hele.«
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, sænk og hold til kegle 6
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Trin |                            Hastighed |                  Mål | Holdetid                                              |
+| ---- | -----------------------------------: | -------------------: | ----------------------------------------------------- |
+| 1    |                {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutter                                           |
+| 2    |               {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Valgfrit 30 minutter, for at fjerne skyer af bobler   |
+| 3    |                {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutter; længere i store ovne                     |
+| 4    | Ned med {{900 °F/h; 500 °C/h}}       | {{2100 °F; 1148 °C}} | 30 minutter                                           |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS tager ca. 9 timer og 36 minutter. Til mere letflydende glasurer sænker Digitalfire i stedet ca. {{200 °F; 111 °C}}; at sænke for meget »risikerer krystallisering under holdetiden«. Sluttemperaturen på {{2200 °F; 1204 °C}} ligger under tabellens {{2232 °F; 1222 °C}} for kegle 6; Digitalfire oplyser, at de fleste ovne når kegle 6 ved ca. {{2200 °F; 1204 °C}}. Kontrollér det med et keglesæt i egen ovn.
 
-### Slow cooling
+### Styret afkøling
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Styret afkøling**{{en: slow cooling}} betyder, at styringen køler ovnen med en fastsat hastighed i stedet for at lade den falde frit. Digitalfires C6DHSC er PLC6DS efterfulgt af afkøling med {{150 °F/h; 83 °C/h}} fra {{2100 °F; 1148 °C}} ned til {{1400 °F; 760 °C}} og derefter slukket. Den »forbedrer glans og overfladekvalitet« og hjælper rutilblå glasurer, men styret afkøling »kan øge matheden« (én mat glasur blev tør) og kan forkorte levetiden for ovnens relæer. L&L leverer også et program med styret afkøling til kegle 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L »User 6«: styret afkøling til glasurer til kegle 6
+Label: L&L styret afkøling
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Trin |                         Hastighed |                  Mål |
+| ---- | --------------------------------: | -------------------: |
+| 1    |                 Fuld fart op      | {{2232 °F; 1222 °C}} |
+| 2    |                 Fuld fart ned     | {{1900 °F; 1038 °C}} |
+| 3    |   Ned med {{150 °F/h; 83 °C/h}}   |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutts styringer har på samme måde en forvarmning og en mulighed for afkøling i ét trin.
 
-### On a manual kiln
+### På en manuelt styret ovn
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+En manuelt styret ovn kan ikke følge disse brændekurver nøjagtigt, men planen er den samme: blidt i begyndelsen, jævnt gennem midten og en afslutning under opsyn. Bracker’s brændekurve for glasur ved lav temperatur står under »Manuelt styrede ovne i detaljer« nedenfor; til varmere kegler lægger den »i gennemsnit 15–30 minutter pr. keglenummer« til. Med et pyrometer, øvelse og en journal kan man groft efterligne sænk og hold eller styret afkøling ved at skrue ned for kontakterne med hånden, som Digitalfire foreslår.
 
 ## Manuelt styrede ovne i detaljer {#manual-kilns}
 
