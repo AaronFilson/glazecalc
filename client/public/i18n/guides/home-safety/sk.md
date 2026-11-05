@@ -72,7 +72,7 @@ Toto sú všeobecné pravidlá prevencie otráv, použité na glazúry. Žiadna 
 - Nikdy nepoužívajte na suroviny na glazúry nádoby od jedla alebo nápojov (kelímky od jogurtu, poháre, fľaše), ani označené. Dieťa vie, čo býva v kelímku od jogurtu.
 - Náradie z dielne (naberačky, lyžice, metličky, sitá, váhy) nechávajte v dielni. Nikdy nepoužívajte kuchynské náradie na glazúru ani náradie na glazúru na jedlo.
 - Namiešané glazúry uchovávajte v označených vedrách so zatvorenými vekami.
-- Ku každej surovine majte jej kartu bezpečnostných údajov, na papieri alebo v telefóne.
+- Kartu bezpečnostných údajov každej suroviny majte uloženú pri nej, na papieri alebo v telefóne.
 - V kuchyni nemajte nič z dielne: žiadne vrecia, vedrá, náradie ani skúšobné doštičky.
 
 Podrobnejšie o nákupe a skladovaní surovín píše návod [Ako pripraviť glazúru](/guides/making-a-glaze).

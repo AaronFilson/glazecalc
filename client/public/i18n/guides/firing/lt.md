@@ -466,7 +466,7 @@ Glazūros degimo{{en: glaze firing}} metu glazūra ant biskvito išsilydo į sti
 
 - Glazūruoti dirbiniai negali liesti vienas kito ir krosnies sienelių: palikite maždaug ½ colio (13 mm).
 - Dugną palikite be glazūros (**neglazūruotas dugnas**) arba žemo degimo dirbinius statykite ant **trikojų**{{en: stilts}} – mažų atramėlių su smaigaliais. Akmens masės ir porceliano dirbinių nereikėtų statyti ant trikojų, nes tokioje temperatūroje jie įsminga į šukę; vietoj jų naudokite aukštam degimui tinkamą krosnies plokščių apsaugą arba kvarcinį smėlį.
-- Tarp krosnies plokščių kraštų ir sienelės ar išjungiklio palikite ne mažiau kaip 1 colį (25 mm).
+- Tarp krosnies plokščių kraštų ir sienelės ar Kiln-Sitter išjungiklio palikite ne mažiau kaip 1 colį (25 mm).
 
 ### Valdiklio degimo programos
 

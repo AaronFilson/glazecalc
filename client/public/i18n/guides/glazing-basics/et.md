@@ -139,7 +139,7 @@ Teie glasuur on tõenäoliselt teistsugune. Boor, teised sulandajad ja madalamad
 
 **Juuspragunenud**{{en: crazed}} ala on see, kus Stulli enda katsed tema savil juuspragunesid. See ei ütle teile, kuidas teie glasuur sobib teie savimassiga. Juuspragunemine sõltub nii glasuuri kui ka savi soojuspaisumisest. Glazecalci soojuspaisumise arv aitab teil glasuure võrrelda ja otsustab päris katse: jäävee katse jaotises [Glasuuri sobivus ja glasuurivead](/guides/glazing-basics#fit-and-defects).
 
-**Sihtvalemid**{{en: limit formulas}} on teine vahend sama küsimuse jaoks: ränidioksiidi, alumiiniumoksiidi ja sulandajate vahemikud stabiilsete glasuuride jaoks ühe koonuse juures. Jaotis [Toiduohutus](/guides/glazing-basics#food-safety) selgitab neid ja seda, miks need iseenesest midagi ei tõesta.
+**Piirvalemid**{{en: limit formulas}} on teine vahend sama küsimuse jaoks: ränidioksiidi, alumiiniumoksiidi ja sulandajate vahemikud stabiilsete glasuuride jaoks ühe koonuse juures. Jaotis [Toiduohutus](/guides/glazing-basics#food-safety) selgitab neid ja seda, miks need iseenesest midagi ei tõesta.
 
 ## Fritid ja toorained {#materials}
 
@@ -262,7 +262,7 @@ USA, EL-i, Ühendkuningriigi ja Austraalia reeglid piiravad pliid ja kaadmiumi, 
 
 **Toidunõuglasuur**{{en: liner glaze}} on stabiilne, tavaliselt läbipaistev või valge glasuur toiduga kokkupuutuvatele pindadele. Selle juhendi hinnangul on väiksema riskiga valik selline, milles ei ole värvainet, baariumi, pliid ega liitiumi, mis sulab täielikult, ei juuspragune ja on kulumiskindel. Väiksem risk ei ole tõend.
 
-**Sihtvalemid**{{en: limit formulas}} (Digitalfire eelistab nimetust **target formulas**) annavad stabiilsete glasuuride tüüpilised Segeri valemi vahemikud ühe koonuse juures: Digitalfire’i koonuse 6 sihtvahemikud on alumiiniumoksiidil 0,285–0,64 ja ränidioksiidil 2,4–4,7. Need juhatavad teid usaldusväärse keemia poole, kuid ei tõesta midagi; Digitalfire väldib sõna „limit“ (piir), sest see viitab, et vahemikesse jäävad glasuurid „on kuidagi ohutud“. Glazecalci retsepti muutmise vahendid ütlevad, kui uus retsept ületab soovitatava piiri, näiteks palju boori koonuse 6 juures, ja mida glasuur tõenäoliselt teeb.
+**Piirvalemid**{{en: limit formulas}} (Digitalfire eelistab nimetust **sihtvalemid**{{en: target formulas}}) annavad stabiilsete glasuuride tüüpilised Segeri valemi vahemikud ühe koonuse juures: Digitalfire’i koonuse 6 sihtvahemikud on alumiiniumoksiidil 0,285–0,64 ja ränidioksiidil 2,4–4,7. Need juhatavad teid usaldusväärse keemia poole, kuid ei tõesta midagi; Digitalfire väldib sõna „limit“ (piir), sest see viitab, et vahemikesse jäävad glasuurid „on kuidagi ohutud“. Glazecalci retsepti muutmise vahendid ütlevad, kui uus retsept ületab soovitatava piiri, näiteks palju boori koonuse 6 juures, ja mida glasuur tõenäoliselt teeb.
 
 Õiguslikud piirnormid on riigiti erinevad. Tabel näitab teie elukoha omi, õigusakti enda ühikutes; võrdlemiseks valige teine riik või piirkond.
 
@@ -404,7 +404,7 @@ Ahjuplaatide kaitseaine
 Metallide eraldumine
 : Metallid lahustuvad põletatud glasuurist toitu või jooki.
 
-Sihtvalem
+Piirvalem (sihtvalem)
 : Stabiilsete glasuuride tüüpilised Segeri valemi vahemikud ühe koonuse juures; juhis, mitte garantii.
 
 Katserida

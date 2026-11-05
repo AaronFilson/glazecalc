@@ -466,7 +466,7 @@ Glazurový výpal{{en: glaze firing}} roztaví glazuru na přežahnutém střepu
 
 - Glazované kusy se nesmějí dotýkat jeden druhého ani stěn: nechte mezi nimi asi ½ palce (13 mm).
 - Dno nechte bez glazury (**setřít glazuru ze dna**), nebo nízkoteplotní výrobky postavte na **trojnožky**{{en: stilts}}, malé podstavce s hroty. Kamenina a porcelán by na trojnožkách stát neměly, protože se do nich při těchto teplotách zatlačí; použijte místo toho vysokoteplotní nátěr na pláty nebo křemenný písek.
-- Mezi okraji plátů a stěnou nebo vypínačem nechte nejméně 1 palec (25 mm).
+- Mezi okraji plátů a stěnou nebo vypínačem Kiln-Sitter nechte nejméně 1 palec (25 mm).
 
 ### Vypalovací křivky pro regulátor
 

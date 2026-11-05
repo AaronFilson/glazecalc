@@ -171,7 +171,7 @@ Label: Matérias-primas comuns de esmaltes
 | Bentonita                                                                                                                    | Suspensão              | Uma argila muito fina, em geral 1–2%, para evitar que o esmalte decante. Mais de 3% pode rachar o esmalte enquanto ele seca                                                           |
 
 > [!WARNING]
-> As matérias-primas de esmalte são pós finos. A poeira de sílica prejudica os pulmões, sem sintomas no começo, e alguns materiais, como o carbonato de bário e o carbonato de lítio, são venenosos se engolidos. Manuseie os pós com delicadeza, limpe com pano úmido e use uma máscara de proteção respiratória bem ajustada ao trabalhar a seco. [Mistura segura e ventilação](/guides/safe-mixing) e [Não envenene sua família](/guides/home-safety) explicam como.
+> As matérias-primas de esmalte são pós finos. A poeira de sílica prejudica os pulmões, sem sintomas no começo, e alguns materiais, como o carbonato de bário e o carbonato de lítio, são venenosos se engolidos. Manuseie os pós com delicadeza, limpe sempre a úmido e use uma máscara de proteção respiratória bem ajustada ao trabalhar a seco. [Mistura segura e ventilação](/guides/safe-mixing) e [Não envenene sua família](/guides/home-safety) explicam como.
 
 ### Nomes regionais
 

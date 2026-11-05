@@ -137,7 +137,7 @@ Tudi voda se razlikuje in Digitalfire navaja, da spremeni, kako se glazurna susp
 
 ### Korak za korakom
 
-1. Nadenite si zaščitno dihalno masko in gumijaste rokavice, če boste segli v glazuro z rokami. Zakin nosi masko od začetka tehtanja, dokler glazura ni mokra.
+1. Nadenite si zaščitno dihalno masko. Če boste z rokami segli v glazuro, nadenite tudi gumijaste rokavice. Zakin nosi masko od začetka tehtanja, dokler glazura ni mokra.
 2. V vedro odmerite približno 70 do 80 mL vode na 100 g prahu.
 3. Stehtani prah dodajte nežno, z majhne višine. UT Austin dodaja prah v toplo vodo; Zakin in Au dodajata vodo v prah. Predlagamo prah v vodo, kar dvigne manj prahu, razen pri receptu z veliko bentonita: tam najprej skupaj premešajte suhe prahove.
 4. **Pustite, da se prah namoči**{{en: slake}}, brez mešanja. Digitalfire počaka približno 20 minut. Prahovi z vezivom morajo stati čez noč.
