@@ -36,7 +36,10 @@
     "confirm": "Muutoksen hyväksyminen – Glazecalc",
     "cones": "Keilataulukko: Orton- ja SK-keilojen lämpötilat – Glazecalc",
     "materials": "Lasiteiden vakioraaka-aineet: analyysi ja vaarat – Glazecalc",
-    "materialInfo": "{name}: oksidianalyysi ja vaarat – Glazecalc"
+    "materialInfo": "{name}: oksidianalyysi ja vaarat – Glazecalc",
+    "teachingGlazeCalculation": "Lasitelaskennan opettaminen – Glazecalc",
+    "famousGlazes": "Kuuluisat lasitteet – Glazecalc",
+    "famousGlaze": "Lasite {name} – Glazecalc"
   },
   "nav": {
     "skip": "Siirry sisältöön",
@@ -187,7 +190,10 @@
     "materials": "Glazecalcin vakiokirjaston raaka-aineet maasälvistä ja saveista fritteihin ja boorin lähteisiin, kustakin oksidianalyysi, Segerin kaava ja vaarat.",
     "materialInfo": "{name}: oksidianalyysi, Segerin kaava, polttohäviö ja vaarat Glazecalcin vakiokirjastossa.",
     "materialInfoLong": "{name} Glazecalcin lasiteraaka-aineiden vakiokirjastossa: oksidianalyysi, osuus Segerin kaavassa, polttohäviö ja vaarat.",
-    "imageAlt": "Glazecalcin logo ja otsikko, ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista."
+    "imageAlt": "Glazecalcin logo ja otsikko, ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista.",
+    "teachingGlazeCalculation": "6 opetuskertaa Segerin kaavan (UMF) opettamiseen: raaka-aineet ja kolmiokokeet, moolit, reseptistä kaavaan ja takaisin sekä lasitevirheet, laskuesimerkkien ja tulostettavien tehtävämonisteiden kera.",
+    "famousGlazes": "Kuuluisia lasitteita eri puolilta maailmaa: kunkin lasitteen perinteinen resepti tai historiallinen analyysi, sen Segerin kaava ja versio niistä raaka-aineista, joita omalla alueella myydään.",
+    "famousGlaze": "Lasite {name} ({native}): sen perinteinen resepti tai historiallinen analyysi, poltto, Segerin kaava ja lähteet sekä versio niistä raaka-aineista, joita omalla alueella myydään."
   },
   "notices": {
     "dismiss": "Sulje",

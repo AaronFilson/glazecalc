@@ -723,7 +723,8 @@
     "keyPoint": "Piste: tämä lasite.",
     "keyBright": "Pisteviiva: missä Stullin lasitteet olivat kirkkaimmillaan.",
     "keyLimits": "Katkoviivat ja varjostus: sarjan {name} piidioksidin ja alumiinioksidin vaihteluvälit.",
-    "keyCrazed": "Viivoitus: missä ne säröilivät."
+    "keyCrazed": "Viivoitus: missä ne säröilivät.",
+    "note": "Ohje, ei ennuste. R. T. Stull (Transactions of the American Ceramic Society, 1912) poltti noin keilaan 11 sulattajien ollessa kiinteästi 0,3 K₂O ja 0,7 CaO; muut sulattajat ja poltot siirtävät alueita, ja lasite, joka on matta vain siksi, että se on alipoltettu, voi silti asettua kiiltävien alueelle. Alueet ovat sellaiset kuin Glazy ne piirtää."
   },
   "slurry": {
     "heading": "Ominaispaino ja vesi",
@@ -763,7 +764,19 @@
     "saveTarget": "Tallenna ominaispaino {sg} tämän reseptin tavoitteeksi",
     "targetSaved": "Ominaispaino {sg} on tämän reseptin tavoite. Se säilyy reseptin mukana, kun resepti tallennetaan.",
     "targetKept": "Reseptin tavoite on ominaispaino {sg}.",
-    "clearTarget": "Poista tavoite"
+    "clearTarget": "Poista tavoite",
+    "drySgEmpty": "Sitä tarvitaan vain kuivien painojen laskemiseen; lisättävä vesi ei sitä tarvitse. Kirjoita se, jos tiedät sen.",
+    "drySgNeeded": "Kirjoita kuivien raaka-aineiden ominaispaino, niin näet kuivan lasitteen määrän sangossa ja uuden erän vesimäärän.",
+    "estimate": {
+      "mineral": "Arvio, {sg}, sen mukaan, mistä kukin raaka-aine koostuu: sen mineraalin mitattu tiheys. Muuta sitä, jos tiedät paremmin.",
+      "kind": "Arvio, {sg}: maasälvät ja savet ovat noin 2,6. Muuta sitä, jos tiedät paremmin.",
+      "glass": "Arvio, {sg}, laskettu frittien oksideista (ne ovat lasia). Muuta sitä, jos tiedät paremmin.",
+      "mixed": "Arvio, {sg}, kunkin raaka-aineen mukaan: sen mineraalin mitattu tiheys, maasälville ja saville noin 2,6 ja fritit laskettuina niiden oksideista. Muuta sitä, jos tiedät paremmin.",
+      "leftOut": "Jätetty pois, koska niiden ominaispainoa ei tunneta: {names}.",
+      "none": "Tälle reseptille ei ole arviota: näiden ominaispainoa ei tunneta: {names}. Kirjoita se, jos tiedät sen.",
+      "was": "Omaa lukuasi käytetään. Arvio oli {sg}; tyhjennä kenttä palataksesi siihen."
+    },
+    "badSgWater": "Ominaispainon on oltava suurempi kuin 1 (veden)."
   },
   "import": {
     "title": "Reseptien liittäminen",

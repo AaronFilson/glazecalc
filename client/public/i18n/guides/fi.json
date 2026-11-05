@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Opi John Brittin ilmaisella lasitekurssilla",
       "text": "Hänen ilmainen videokurssinsa YouTubessa jakso jaksolta, Glazecalcin oppaat luettaviksi ja harjoitukset kokeiltaviksi Glazecalcissa. Englanniksi."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Lasitelaskennan opettaminen",
+      "text": "6 opetuskertaa ryhmälle tai opintopiirille, kolmiokokeista Segerin kaavaan laskettuna molempiin suuntiin, tulostettavien tehtävämonisteiden kera."
     }
   },
   "more": "Lisää oppaita",
@@ -255,6 +259,8 @@
       "crazed": "säröillyt"
     },
     "keyBright": "Pisteviiva: missä Stullin lasitteet olivat kirkkaimmillaan.",
-    "keyCrazed": "Viivoitus: missä ne säröilivät."
+    "keyCrazed": "Viivoitus: missä ne säröilivät.",
+    "note": "Ohje, ei ennuste. R. T. Stull (Transactions of the American Ceramic Society, 1912) poltti noin keilaan 11 sulattajien ollessa kiinteästi 0,3 K₂O ja 0,7 CaO; muut sulattajat ja poltot siirtävät alueita, ja lasite, joka on matta vain siksi, että se on alipoltettu, voi silti asettua kiiltävien alueelle. Alueet ovat sellaiset kuin Glazy ne piirtää.",
+    "inGuide": "Piidioksidi (SiO₂) vaakasuunnassa, noin 1:stä 7:ään, ja alumiinioksidi (Al₂O₃) pystysuunnassa, 0:sta 1:een, molemmat Segerin kaavasta. Kiilat leviävät viuhkana vasemmalta: sulamaton vasemmassa yläkulmassa, sitten matta, sitten puolimatta. Niiden oikealla puolella oleva varjostamaton osa on kiiltävä, ja sen pisteviiva on kohta, jossa Stullin lasitteet olivat kiiltävimpiä. Alipoltettu on oikeassa alakulmassa, jossa on vähän alumiinioksidia ja paljon piidioksidia. Viivoitus kaavion alaosassa ja vasemmassa reunassa on kohta, jossa hänen kokeensa säröilivät."
   }
 }
