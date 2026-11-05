@@ -59,31 +59,31 @@ Label: ද්‍රාව්‍ය ද්‍රව්‍ය
 
 ඊයම්වල ප්‍රධාන අනතුර වෙනස්ය: එක් හැන්දක් නොව, සති හෝ මාස ගණනාවක් පුරා ගිලින කුඩා දූවිලි ප්‍රමාණ, කිසිදු අනතුරු ලකුණක් නොමැතිව (පහත ඊයම් සහ දරුවන් බලන්න).
 
-## Storing materials at home {#storing-materials lang=en}
+## නිවසේ ද්‍රව්‍ය ගබඩා කිරීම {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+නිවසේ ග්ලේස් (ඔපය) ද්‍රව්‍ය ගබඩා කිරීමට කිසිදු නිල ආයතනයක් නීති පනවා නැත, නමුත් සෞඛ්‍ය හා ආරක්ෂක පිටු එකඟ වේ: වැඩ එයටම වෙන් වූ ස්ථානයක, දරුවන්ගෙන් ඈතින් තබන්න. ඊයම් භාවිත වන විනෝදාංශ ගැන ලියන Pennsylvania හි සෞඛ්‍ය දෙපාර්තමේන්තුව පවසන්නේ “ඔබේ විනෝදාංශය සඳහා වෙන් කළ වැඩ කරන ස්ථානයක් හෝ ගරාජයක් භාවිත කර දරුවන් මෙම ස්ථානයෙන් ඈත් කර තබන්න” යනුවෙනි.
 
-### A storage checklist
+### ගබඩා කිරීමේ පිරික්සුම් ලැයිස්තුවක්
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+මේවා ග්ලේස්වලට යොදන ලද විෂ වැළැක්වීමේ සාමාන්‍ය නීති වේ. කිසිදු සෙරමික් ප්‍රමිතියක් ඒවා පනවන්නේ නැත, නමුත් අපි ඒ සියල්ල යෝජනා කරමු:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- වියළි ද්‍රව්‍ය අගුළු දමා තබන්න: අල්මාරියක, නැත්නම් අගුළු දැමිය හැකි කාමරයක, ගරාජයක හෝ මඩුවක. උස රාක්කයක් උපකාරී වේ, නමුත් දරුවන් නගී. මුලදී ඔබට දේවල් කිහිපයක් පමණක් අගුළු දැමිය හැකි නම්, ද්‍රාව්‍ය ද්‍රව්‍ය සහ කලරන්ට්වලින් පටන් ගන්න.
+- ද්‍රව්‍ය ඒවායේ මුල් බෑග්වල හෝ භාජනවල තබන්න. ඔබ එකක් වෙනත් භාජනයකට මාරු කරන්නේ නම්, බෑගයේ ලියා ඇති ආකාරයටම නම සමඟ එයට ලේබලයක් අලවන්න.
+- ග්ලේස් ද්‍රව්‍ය සඳහා කිසි විටෙක ආහාර හෝ බීම භාජන (යෝගට් කෝප්ප, භාජන, බෝතල්) භාවිත නොකරන්න, ලේබල් කළත්. යෝගට් කෝප්පයක ඇත්තේ කුමක්දැයි දරුවෙකු දනී.
+- ස්ටුඩියෝ උපකරණ (ස්කූප්, හැඳි, විස්ක්, පෙරහන්, තරාදි) ස්ටුඩියෝවේම තබන්න. කිසි විටෙක මුළුතැන්ගෙයි උපකරණ ග්ලේස් සඳහා හෝ ග්ලේස් උපකරණ ආහාර සඳහා භාවිත නොකරන්න.
+- තෙත් ග්ලේස් ලේබල් කළ, පියන් වසා ඇති බාල්දිවල තබන්න.
+- සෑම ද්‍රව්‍යයකම ආරක්ෂිත දත්ත පත්‍රිකාව, කඩදාසියක හෝ ඔබේ දුරකථනයේ, එය සමඟ තබන්න.
+- ස්ටුඩියෝවේ කිසිවක් මුළුතැන්ගෙයි නොතබන්න: බෑග්, බාල්දි, උපකරණ හෝ පරීක්ෂණ ටයිල් (ටෙස්ට් ටයිල්){{en: test tile}} කිසිවක් නැත.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+ද්‍රව්‍ය මිලදී ගැනීම සහ ගබඩා කිරීම ගැන වැඩි විස්තර සඳහා, [ග්ලේස් සාදන ආකාරය](/guides/making-a-glaze) බලන්න.
 
-### Glaze waste and rinse water
+### ග්ලේස් අපද්‍රව්‍ය සහ සේදූ ජලය
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+ග්ලේස්, හෝ ග්ලේස් උපකරණ සේදූ ජලය, කිසි විටෙක සින්ක් එකට හෝ වත්තට නොදමන්න. අත්, බුරුසු, පෙරහන් සහ උපකරණ සේදීමට වෙනම ජල බාල්දියක් UK Crafts Council (බ්‍රිතාන්‍යයේ ශිල්ප සභාව) යෝජනා කරයි. එය රාත්‍රිය පුරා තැන්පත් වීමට ඉඩ හරින්න, පැහැදිලි ජලය ඉවතට වත් කරන්න, ඉන්පසු තැන්පත් වූ ග්ලේස් වියළා කුණු බඳුනට දමන්න (එය කසළ බිමට යයි), කිසි විටෙක කාණුවට නොවේ.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+එම බාල්දියට පියනක් අපි යෝජනා කරමු: රොන්මඩේ ග්ලේස් එකේ ඇති ලෝහමයි, සුරතල් සතුන් රැඳී ඇති ජලය බොති. බැහැර කිරීමේ නීති ස්ථානයෙන් ස්ථානයට වෙනස් වේ, එබැවින් එක් එක් නිෂ්පාදනයේ ආරක්ෂිත දත්ත පත්‍රිකාව පරීක්ෂා කරන්න, ඔබට විශ්වාස නැත්නම් ඔබේ ප්‍රාදේශීය සභාවෙන් හෝ ජල සමාගමෙන් විමසන්න.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+සමහර ස්ටුඩියෝ, වියළි රොන්මඩ ඉවත දැමීමට පෙර එය පුළුස්සයි. ඔවුන් එය වැය කර දැමීමට තිබෙන අමතර බඳුනක දමයි: පිළිස්සීමෙන් පසු එම බඳුන නැවත භාවිත කළ නොහැක. බඳුන හතරෙන් එකක් පමණක් පුරවන්න, මන්ද රොන්මඩ උණු වන විට පෙණ නගා බුබුළු නගින බැවිනි, සහ එය පිඟානකින් වසන්න. එය පිටාර ගැලුවහොත් යන්නට, එය කිල්න් වොෂ් ගෑ රාක්කයක් හෝ අමතර තහඩුවක් මත තබන්න. පිළිස්සීම රොන්මඩ වීදුරු බවට පත් කරයි, එය ලිහිල් කුඩුවලට වඩා බොහෝ තදින් ලෝහ රඳවා ගනී, එබැවින් කසළ බිමක එය වඩා ආරක්ෂිතය. වියළි රොන්මඩ, වියළි ග්ලේස් මෙන්ම, රෙස්පිරේටරයක් (දූවිලි පෙරන ශ්වසන ආවරණය) සමඟ සහ දූවිලි ඇති නොකර හසුරුවන්න.
 
 ## දූවිලි ස්ටුඩියෝව තුළම තබා ගැනීම {#keeping-dust-in-the-studio}
 
