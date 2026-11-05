@@ -723,7 +723,8 @@
     "keyPoint": "Dhibic: glaze-kan.",
     "keyBright": "Xariiq dhibcaha leh: meesha glaze-yada Stull ay ugu ifayeen.",
     "keyLimits": "Xariiqyo go'an iyo hadh: baaxadaha silica iyo alumina ee {name}.",
-    "keyCrazed": "Xariiqyo isdhaafsan: meesha ay crazing ku sameeyeen."
+    "keyCrazed": "Xariiqyo isdhaafsan: meesha ay crazing ku sameeyeen.",
+    "note": "Waa hage, ma aha saadaal. R. T. Stull (Transactions of the American Ceramic Society, 1912) wuxuu ku gubay qiyaastii cone 11 isagoo flux-yada ku dhejiyey 0.3 K₂O iyo 0.7 CaO; flux kale iyo gubid kale ayaa dhaqaajiya gobollada, oo glaze aan ifayn (matte) sababtoo ah keliya in aan si fiican loo gubin ayaa weli shaxda ku muuqan kara mid ifaya. Gobolladu waa sida Glazy u sawirto."
   },
   "slurry": {
     "heading": "Cufnaanta gaarka ah iyo biyaha",
@@ -751,6 +752,17 @@
       "pint": "Miisaanka pint ee aad rabto, oz"
     },
     "drySg": "SG-da walxaha qalalan",
+    "drySgEmpty": "Miisaanka qalalan keliya ayaa u baahan; biyaha la darayo uma baahna. Qor haddii aad taqaan.",
+    "drySgNeeded": "Qor SG-ga walxaha qalalan si aad u aragto glaze-ka qalalan ee baaldiga ku jira iyo biyaha batch cusub.",
+    "estimate": {
+      "mineral": "Qiyaas, {sg}, oo ka timid waxa walax kasta laga sameeyey: cufnaanta la cabbiray ee macdantiisa. Beddel haddii aad si fiican u taqaan.",
+      "kind": "Qiyaas, {sg}: feldspar iyo dhoobada waxay miisaamaan qiyaastii 2.6. Beddel haddii aad si fiican u taqaan.",
+      "glass": "Qiyaas, {sg}, oo laga xisaabiyey oksaydhyada frit-yada (waa muraayad). Beddel haddii aad si fiican u taqaan.",
+      "mixed": "Qiyaas, {sg}, oo ka timid walax kasta: cufnaanta la cabbiray ee macdantiisa, qiyaastii 2.6 feldspar iyo dhoobada, iyo frit-yo laga xisaabiyey oksaydhyadooda. Beddel haddii aad si fiican u taqaan.",
+      "leftOut": "Waa laga reebay, maadaama SG-gooda aan la aqoon: {names}.",
+      "none": "Qiyaas looma hayo habkan: SG-ga kuwan lama yaqaan: {names}. Qor haddii aad taqaan.",
+      "was": "Tiradaada ayaa la isticmaalayaa. Qiyaastu waxay ahayd {sg}; masax goobta si aad ugu noqoto."
+    },
     "batch": "Glaze qalalan oo batch cusub ah, {unit}",
     "contents": "SG {sg}, baaldigu wuxuu hayaa {glaze} glaze qalalan iyo {water} biyo.",
     "add": "Si loo gaaro SG {target}, ku dar {water} biyo. Wuxuu ku dhammaadaa qiyaastii {volume}.",
@@ -758,6 +770,7 @@
     "already": "Horeba wuxuu joogaa SG {target}.",
     "mix": "Isku qas {glaze} glaze qalalan iyo {water} biyo si aad u hesho qiyaastii {volume} SG {target}.",
     "badSg": "SG waa inay ka badnaataa 1 (tan biyaha) oo ka yaraataa tan walxaha qalalan, {dry}.",
+    "badSgWater": "SG waa inuu ka badnaadaa 1 (kan biyaha).",
     "badDry": "SG-da walxaha qalalan waa inay ka badnaataa 1.",
     "note": "Biyaha waa miisaan ahaan: litir wuxuu miisaamaa kiilogaraam, galaan US qiyaastii 8.3 lb. Xisaabtu waxay u qaadataa in mugaggu isku darmaan, taas oo dhow, aan sax ahayn: biyaha ku dar wax yar wax yar, walaaq, oo mar kale cabbir. Laba glaze oo isku SG ah weli si kala duwan ayay u qulquli karaan.",
     "saveTarget": "Kaydi SG {sg} bartilmaameedka habkan ahaan",

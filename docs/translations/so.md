@@ -190,6 +190,24 @@ No poison line confirmed in any of them.
 
 **Native check** on the whole table.
 
+### 2.6 Round 14 terms (2026-11-04)
+
+No Somali ceramics source read; built from Zorc's everyday words (_dambas_ ash, _caws_ straw, _bariis_ rice, _dhagax_
+stone). **Native check** on all.
+
+| English                    | so                                        | Notes                             |
+| -------------------------- | ----------------------------------------- | --------------------------------- |
+| wood ash                   | dambaska qoryaha                          |                                   |
+| synthetic ash (合成土灰)   | beddel la sameeyey (synthetic) oo 土灰 ah | Japanese name kept.               |
+| rice-straw ash (藁灰)      | dambaska caws bariiska                    |                                   |
+| isu ash (柞灰)             | dambaska isu                              |                                   |
+| porcelain stone (瓷石)     | dhagax porcelain                          |                                   |
+| caustic                    | wuu gubaa maqaarka (caustic)              | English kept for the safety text. |
+| powder; sludge             | budo; dhoobo qoyan                        |                                   |
+| drop-and-hold; hold        | hoos u dhig oo sug; sugid                 |                                   |
+| glass former; stabilizer   | dhisaha muraayadda; xasiliye              |                                   |
+| line blend, triaxial blend | line blend, triaxial blend                | Loans.                            |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG, Orton, Seger,

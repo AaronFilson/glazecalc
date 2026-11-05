@@ -59,31 +59,31 @@ Label: Walxaha milma
 
 Khatarta ugu weyn ee rasaasta (Pb) way ka duwan tahay: ma aha hal qaaddo, ee waa qaddarro yaryar oo boodh ah oo la liqo toddobaadyo ama bilo, iyadoo aan calaamado digniin ahi jirin (eeg Rasaasta iyo carruurta, hoos).
 
-## Storing materials at home {#storing-materials lang=en}
+## Kaydinta walxaha guriga {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Ma jirto hay'ad rasmi ah oo dejisa xeerar kaydinta walxaha glaze-ka guriga, laakiin bogagga caafimaadka iyo badbaadada way isku raacsan yihiin: shaqada ku hay meel u gaar ah, carruurta ka fog. Waaxda caafimaadka Pennsylvania, oo ka qoraysa hiwaayadaha isticmaala rasaas (lead, Pb), waxay leedahay "Isticmaal meel shaqo oo loo qoondeeyey ama garaash hiwaayaddaada oo carruurta ka fogee meeshan."
 
-### A storage checklist
+### Liiska hubinta kaydinta
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Kuwani waa xeerar guud oo ka hortagga sunta ah oo lagu dabaqay glaze-ka. Ma jiro heer dhoobo-samayn oo dejiya, laakiin dhammaantood waan soo jeedinaynaa:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Walxaha qalalan ku hay meel la xiray: armaajo, ama qol, garaash ama aqal la xiri karo. Raf sare way caawisaa, laakiin carruurtu way fuulaan. Haddii aad bilowga xiri karto keliya dhowr shay, ka bilow walxaha biyaha ku milma iyo midabeeyayaasha.
+- Walxaha ku hay boorsooyinkooda ama weelashooda asalka ah. Haddii aad mid u wareejiso weel kale, ku dheji calaamad magaca sida saxda ah ugu qoran boorsada.
+- Weligaa ha u isticmaalin weelasha cuntada ama cabitaanka (koobabka yogurt-ka, dhalooyinka, quraaradaha) walxaha glaze-ka, xitaa haddii ay calaamad leeyihiin. Ilmuhu wuu og yahay waxa koobka yogurt-ku ku jiro.
+- Qalabka istuudiyaha (macalqadaha wax lagu qaado, macalqado, kuwa wax lagu garaaco, shaandhooyin, miisaanno) ku hay istuudiyaha. Weligaa ha u isticmaalin qalabka jikada glaze-ka, ama qalabka glaze-ka cuntada.
+- Glaze-yada qoyan ku hay baaldiyo calaamad leh oo daboolkoodu saaran yahay.
+- Warqadda xogta badbaadada (SDS) ee walax kasta la hay, warqad ahaan ama taleefankaaga.
+- Waxba oo istuudiyaha ka yimid ha dhigin jikada: boorsooyin, baaldiyo, qalab ama test tile toona.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Iibsashada iyo kaydinta walxaha si qoto dheer, eeg [Sida loo sameeyo glaze](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Qashinka glaze-ka iyo biyaha la luqluqo
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Weligaa ha ku shubin glaze, ama biyo aad ku luqluqday qalabka glaze-ka, sinkiga ama beerta. Crafts Council-ka UK wuxuu soo jeedinayaa baaldi biyo gooni ah oo lagu dhaqo gacmaha, burushyada, shaandhooyinka iyo qalabka. U daa inuu habeenkii oo dhan dego, daadi biyaha saafiga ah ee sare, kadibna qallaji glaze-ka degay oo ku rid qashinka (wuxuu aadaa goobta qashinka lagu aaso), weligaa ha ku shubin bullaacadda.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Waxaan soo jeedinaynaa dabool baaldigaas: dhoobada qoyan waxay ku jiraan isla biraha glaze-ka, xayawaanka gurigana waxay cabbaan biyo taagan. Xeerarka tuurista way kala duwan yihiin meel ilaa meel, sidaa darteed eeg warqadda xogta badbaadada ee alaab kasta, oo weydii golaha deegaankaaga ama shirkadda biyaha haddii aadan hubin.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Istuudiyaha qaarkood waxay gubaan dhoobada qallalan ka hor intaysan tuurin. Waxay ku ridaan baaquli dheeraad ah oo la isticmaali doono ilaa uu dhammaado: gubidda kadib baaqulka dib looma isticmaali karo. Baaquli ka buuxi rubuc keliya, sababtoo ah dhoobadu way xumbaysaa oo way butaacdaa marka ay dhalaalayso, kuna dabool saxan. Saar raf kiln wash leh ama sallax dheeraad ah, haddii ay ka buuxsanto. Gubiddu waxay dhoobada u beddeshaa muraayad, taas oo biraha si aad uga adag u haysa budo dabacsan, sidaa darteed way ka ammaan badan tahay goobta qashinka. Dhoobada qallalan u qabo sida aad u qaban lahayd glaze qallalan, adigoo xiran respirator oo aan boodh kicin.
 
 ## Boodhka istuudiyaha ku hay {#keeping-dust-in-the-studio}
 

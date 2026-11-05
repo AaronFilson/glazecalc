@@ -119,183 +119,183 @@ Talooyinku way kala duwan yihiin inta uu le'eg yahay saxnaanta miisaanka aad u b
 
 Derek Au wuxuu ku miisaamaa hal baaquli, tuulmooyin kala gooni ah, si khalad loogu soo celin karo qaaddo. Haddii aad hal baaldi ku miisaanto adigoon tare samayn walxaha dhexdooda, wadarta socota ee Glazecalc ayaa kuu sheegaysa waxa miisaanku akhrinayo mid kasta kadib.
 
-## Mixing and sieving {#mixing lang=en}
+## Isku-darka iyo shaandheynta {#mixing}
 
-### How much water
+### Immisa biyo
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Ilaha isma raacsana. Derek Au wuxuu ku bilaabaa adag, 50 mL biyo ah 100 g budo ah, kadibna wuu ku daraa. Potterycrafts waxay bixisaa 65 mL 100 g kasta hal glaze budo ah. UT Austin waxay isticmaashaa miisaan siman oo biyo iyo budo ah, markii Digitalfire ay 20 kg budo ah ku ridday 20 kg biyo ah, waxay cabbirtay SG 1.46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Biyaha way fududahay in lagu daro, way adag tahay in laga saaro, sidaa darteed ku bilow yar. Qiyaastayada: ku bilow **qiyaastii 70 ilaa 80 mL 100 g kasta** (700 ilaa 800 mL kiilo kasta, ama qiyaastii 11 ilaa 12 US fl oz rodol kasta). Qooy, isku dar oo shaandhee adkaantaas, kadibna biyo tartiib u dar ilaa SG-gu sax noqdo. 1 mL biyo ah wuxuu miisaamaa 1 g, sidaa darteed waad miisaami kartaa. Haddii aad dhaafto, glaze-ka u daa inuu dego, kadibna biyaha saafiga ah ee sare isbuunyo ku qaad ama daadi.
 
-### Tools and water
+### Qalabka iyo biyaha
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Isku-dare propeller.** Digitalfire waxay ku tilmaantay mid wanaagsan "lagama maarmaan". Daawad xadhig leh oo baal isku-dar leh ayaa baaldiga shaqada ka qabta. UT Austin waxay shiddaa ugu yaraan 4 ilaa 5 daqiiqo kadib marka glaze-ku u ekaado mid la isku daray, waxayna baalka ka fogaysaa baaldiga, oo uu caag ka xoqi karo.
+- **Blender.** Wuxuu "si aad u wanaagsan ugu shaqeeyaa batch yaryar" (Digitalfire). Glaze keliya u hay: weligiis waa inuusan jikada ku noqon.
+- **Wax lagu garaaco ama ul.** Doorashada Zakin marka aysan jirin isku-dare.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Biyaha sidoo kale way kala duwan yihiin, Digitalfire-na waxay xustay inay beddelaan sida slurry-gu (budada glaze-ka iyo biyaha) u dhaqmo. Derek Au wuxuu isticmaalaa biyo reverse osmosis sababtoo ah biyaha tuubbadiisu waa adag yihiin (hard water). Wax kasta oo aad isticmaasho, qor.
 
-### Step by step
+### Tallaabo tallaabo
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Xiro respirator-kaaga, iyo gacmo-gashi caag ah haddii gacmahaagu gudaha geli doonaan. Zakin wuxuu xirtaa maaskaro bilowga miisaanka ilaa glaze-ku qoyo.
+2. Baaldiga ku cabbir qiyaastii 70 ilaa 80 mL biyo ah 100 g budo ah kasta.
+3. Budada la miisaamay si tartiib ah ugu dar, meel hoose. UT Austin waxay budada ku shubtaa biyo diirran; Zakin iyo Au waxay biyaha ku daraan budada. Waxaan soo jeedinaynaa budo biyo lagu shubo, taas oo boodh yar kicisa, marka laga reebo hab leh bentonite badan: budadiisa qalalan marka hore isku walaaq.
+4. **Qooy**: budada u daa inay qoyanto adigoo aan walaaqin. Digitalfire waxay sugtaa qiyaastii 20 daqiiqo. Budooyinka leh gum ama wax isku xira waxay u baahan yihiin inay habeen dhan istaagaan.
+5. Isku dar ilaa aysan jirin meelo qalalan ama burooyin.
+6. Laba jeer shaandhee (eeg hoos).
+7. Dabool oo u daa inuu habeen dhan nasto, kadibna mar kale isku dar oo hoosta ka eeg inuu jiro lakab adag.
+8. Cabbir SG-ga, oo biyo tartiib u dar si aad u gaarto bartilmaameedkaaga. Si aad u ogaato SG-ga qalalan ee glaze-kaaga, sidoo kale miisaan slurry-ga la dhammeeyey (eeg hoos).
+9. Baaldiga calaamad ku dheji, oo qor waxaad samaysay.
+10. Biyo ku nadiifi: dhulka masax oo masax dusha kasta, oo ay ku jiraan dibadda weelasha walxaha.
 
-### Sieving
+### Shaandheynta
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Shaandho** waa shabag ku jira jir. Ku riixidda glaze-ka burush ayaa jebisa burooyinka isku-darku ka tago oo qabata walxaha yaryar ee gubidda ku noqon lahaa dhibco. Marka lambarka **mesh**-ku sarreeyo, shabaggu wuu jilicsanaadaa: mesh 80 waxay leedahay godad qiyaastii 0.18 mm ah, mesh 100-na qiyaastii 0.15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Ilaha waxay soo jeediyaan mesh kala duwan. Zakin wuxuu laba jeer ku shaandheeyaa mesh 50 ama 80. Derek Au wuxuu glaze-yada badankood u isticmaalaa mesh 120, gaar ahaan kuwa leh cobalt ama bir: saddex jeer oo mesh 80 ah ayaa weli dhibco bir ah uga tagay hal celadon, hal mar oo mesh 120 ahna wuu daaweeyey. Wuxuu mesh 60 ilaa 80 u hayaa glaze-yada dambaska iyo kuwa kale ee leh walxo qallafsan. Potterycrafts, oo UK ku taal, waxay soo jeedisaa mesh 60 ilaa 80. Doorasho ammaan ah:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Shaandhada la isticmaalayo
+Label: Mesh-ka shaandhada
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glaze                                                     | Shaandho               |
+| --------------------------------------------------------- | ---------------------- |
+| Glaze-yada badankood                                      | Laba mar oo mesh 80 ah |
+| Glaze-yada leh midabeeyayaal sida cobalt ama bir          | Mesh 100 ilaa 120      |
+| Glaze-yada dambaska, iyo kuwa kale ee leh walxo qallafsan | Mesh 60 ilaa 80        |
 
-## Specific gravity {#specific-gravity lang=en}
+## SG (specific gravity) {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**SG** (specific gravity) wuxuu kuu sheegayaa inta budo ah ee slurry-gaaga ku jirta. Waa miisaanka mug glaze ah oo loo qaybiyey miisaanka isla mug biyo ah. Biyuhu waa 1.00, glaze {{SG 1.45}} ahna wuxuu miisaamaa 145 g 100 mL kasta. Isku-darka ilaa SG la cabbiray waa sida aad mar walba u hesho isla adkaan iyo isla lakab. Ma laha cabbir, sidaa darteed waa isku mid garaam ama oons.
 
-### Measure it by weighing 100 mL
+### Ku cabbir adigoo miisaamaya 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Walaaq glaze-ka si aysan waxba u degin.
+2. Miisaanka saar **graduated cylinder** 100 mL ah (tuubbo cabbir dheer oo calaamado leh) ama sirinji 100 mL ah, oo eber ka dhig (tare).
+3. Glaze ku buuxi ilaa 100 mL si sax ah, adigoo calaamadda ka akhrinaya heerka indhaha.
+4. Miisaan oo garaamka u qaybi 100: 145 g waa SG 1.45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire sidoo kale waxay koob ku calaamadisaa heerka 500 g biyo ah, glaze ku buuxisaa ilaa calaamadda, miisaankana u qaybisaa 500; cabbir weyn oo buuxa ayaa ka sax badan. **Hydrometer**, sabbayn lagu akhriyo halka uu glaze-ka ku fadhiyo, waa degdeg laakiin si khalad ah ayuu u akhrin karaa glaze-yada adag ama jelka ah. Hydrometer-yada UK, sida kuwa Potclays, waxay ku akhriyaan darajooyinka Baumé (°Bé). Xisaabtayada, SG = 145 ÷ (145 − °Bé), sidaa darteed 46 °Bé waa qiyaastii 1.46. Buugaagta UK ee hore waxay bixiyaan **pint weight**, oons-ka hal pint imperial ah oo glaze ah: u qaybi 20, sidaa darteed 29 oz waa qiyaastii SG 1.45 (sidoo kale xisaabtayada).
 
-### What to aim for
+### Waxa la beegsanayo
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Ilaha isma raacsana, gaar ahaan burushka iyo buufinta, halkaas oo iibiyaha UK Potclays bixiyo tirooyin aad u sarreeya (kuwiisa waa "hage keliya"). Tiro kasta u qaado meel bilow. Talada ugu weyn ee Digitalfire waa in la helo SG-ga iyo jelka u shaqeeya glaze kasta, kadibna la ku celceliyo oo la qoro.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Bartilmaameedyada SG, halka ilaha isku khilaafsan yihiin
+Label: Bartilmaameedyada SG
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Isticmaal | Digitalfire iyo Glazy                                                                                                                                           | Potclays (UK)                                 | Meel bilow oo ammaan ah                                               |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- |
+| Quusin    | {{SG 1.40}} (quusin 5 ilbiriqsi) ilaa {{SG 1.50}} (quusin 1 ilbiriqsi); glaze-yada guriga lagu qasay ee jelka ah waxay ugu fiican yihiin {{SG 1.43–1.45}}       | Hufan {{SG 1.46–1.48}}; midab leh {{SG 1.61}} | {{SG 1.45}}; khafiifi ilaa {{SG 1.43}} oo jel ka dhig haddii uu tifqo |
+| Burush    | {{SG 1.25}} (hufan khafiif ah) ilaa {{SG 1.55}} (faahfaahin madow)                                                                                              | {{SG 1.71–1.81}}                              | Raac alaabta; isticmaal CMC gum ama brushing medium                   |
+| Buufin    | Tiro ma jirto; Hopper, oo u qoraya Ceramic Arts Network, wuxuu leeyahay aad u khafiif ah, oo leh deflocculant (wax lagu daro oo slurry-ga ka dhiga mid qulqula) | {{SG 1.71}}                                   | Tiro la isku halleyn karo ma jirto; ku buufi spray booth keliya       |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Si aad il ugu hubiso glaze quusin, AMACO waxay quusisaa 5 ilbiriqsi oo raadisaa lakab qiyaastii u qaro weyn sida dime Maraykan ah. Digitalfire waxay gubtaa tile-yo 5 ilbiriqsi la quusiyey si ay u hubiso.
 
-### Water for a target SG: our estimate
+### Biyaha bartilmaameedka SG: qiyaastayada
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Shaxda hoose waa xisaabtayada, ma aha ta il. Waxay u qaadanaysaa in walxaha yaryar ee budadu leeyihiin cufnaan 2.6 g cm³ kasta, taas oo ah male, ma aha cabbir. Dhoobada, walxaha biyaha ku milma iyo jelku dhammaan waxay beddelaan glaze dhab ah, sidaa darteed u isticmaal bilow, kadibna cabbir. Hubin ahaan, waxay saadaalisaa {{SG 1.44}} miisaan siman oo budo iyo biyo ah, una dhow {{SG 1.46}} ee Digitalfire cabbirtay. Waxay sidoo kale muujinaysaa in 70 ilaa 80 mL 100 g kasta ay kaa bilaabayso {{SG 1.50}} ka sarreeya, ka adag inta aad u baahan tahay.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Biyaha bartilmaameedka SG (qiyaastayada)
+Label: Biyaha bartilmaameedka SG
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Bartilmaameed |    100 g budo ah |       Kiilo kasta |           Rodol kasta |
+| ------------- | ---------------: | ----------------: | --------------------: |
+| {{SG 1.40}}   | qiyaastii 115 mL | qiyaastii 1150 mL | qiyaastii 18 US fl oz |
+| {{SG 1.45}}   |  qiyaastii 98 mL |  qiyaastii 980 mL | qiyaastii 15 US fl oz |
+| {{SG 1.50}}   |  qiyaastii 85 mL |  qiyaastii 850 mL | qiyaastii 13 US fl oz |
+| {{SG 1.60}}   |  qiyaastii 64 mL |  qiyaastii 640 mL | qiyaastii 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Hel SG-ga qalalan ee glaze-kaaga inta aad isku darayso
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+2.6-da kore waa male. Tirada glaze-kaaga, cufnaanta budadiisa qalalan, waxaa laga xisaabin karaa saddex tiro oo aad qaadan karto inta aad isku darayso. Iyada, waxaad goor dambe ka xisaabin kartaa SG-ga inta budo ah ee ku jirta baaldi kasta oo glaze-kaas ah, iyo biyaha batch-ka xiga. Xisaabtayada, ma aha ta il:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Qor miisaanka budada qalalan ee batch-ka: wadarta habka.
+2. Miisaan baaldiga madhan ka hor intaadan bilaabin, ama miisaankiisa ku calaamadi.
+3. Isku dar, shaandhee oo glaze-ka gaarsii SG-giisa sida caadiga ah. Wax walba ku riix shaandhada oo ku luqluq baaldiga, si aysan budo dibadda uga harin.
+4. Miisaan baaldiga buuxa oo ka jar miisaanka baaldiga. Taasi waa miisaanka slurry-ga.
+5. Cabbir SG-ga.
 
-Then:
+Kadib:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Biyo** = miisaanka slurry-ga − miisaanka budada.
+- **Mugga slurry-ga** mL ahaan = miisaanka slurry-ga garaam ahaan ÷ SG.
+- **Mugga budada** = mugga slurry-ga − biyaha (1 g biyo ah waa 1 mL).
+- **SG qalalan** = miisaanka budada ÷ mugga budada.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Tusaale ahaan: 1000 g budo ah waxay samaysaa 1980 g slurry ah {{SG 1.45}}. Biyuhu waa 980 g, slurry-gu waa 1980 ÷ 1.45 = qiyaastii 1366 mL, budadu waxay qaadataa 1366 − 980 = 386 mL, SG-ga qalalanna waa 1000 ÷ 386 = qiyaastii 2.59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Miisaan slurry-ga oo dhan dhammaadka, ma aha biyaha inta aad shubayso, si biyaha uumi noqda ama daadanaa aysan u tirsanin. Khaladaad yaryar halkan way koraan: akhris SG oo 0.01 ka leexday wuxuu jawaabta dhaqaajiyaa qiyaastii 2 ilaa 4%, ka badan glaze khafiif ah. Isticmaal batch 1 kg ama ka badan, miisaan sax ah, iyo habka koobka 500 g ee kore SG-ga. Walxaha caadiga ah badankoodu waxay u dhexeeyaan qiyaastii 2.5 iyo 2.9, sidaa darteed tiro aad uga fog taas, glaze aan lahayn zircon ama rasaas badan, waxay u badan tahay khalad cabbir. Tirada ku qor habka.
 
-### Epsom salts, CMC gum and bentonite
+### Cusbada Epsom, CMC gum iyo bentonite
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Cusbada Epsom** waxay glaze-ka ka dhigtaa mid wax yar jel noqda marka uu taagan yahay oo mar kale qulqula marka la walaaqo. Tan waxaa la yiraahdaa **flocculating**, glaze sidan u dhaqmana waa **thixotropic**: si siman ayuu u fariistaa, wax yar ayuu tifqaa, wax yarna wuu degaa. Digitalfire waxay soo jeedisaa in laga bilaabo qiyaastii 2 g galaan kasta marka SG-gu sax noqdo (qiyaastii 0.5 g litir kasta, beddelkayaga) oo qaddarka la hagaajiyo mar kasta oo aad isku darto, maadaama aysan jirin hab ku habboon inuu qaddarka go'aamiyo. Waxaan soo jeedinaynaa inaad marka hore ku milayso biyo kulul oo yar. Tusaale Digitalfire ah, glaze {{SG 1.45}} ah ayaa tifqay, sidaa darteed biyo ayaa hoos ugu dhigay {{SG 1.43}} cusbada Epsom-na dib ayay ugu jelisay mid kareem u eg, wuxuuna u fariistay si siman. Hubin degdeg ah: walaaq, jooji oo daawo. Glaze jel ah wuxuu sii socdaa qiyaastii 2 ama 3 ilbiriqsi, kadibna wuu joogsadaa oo wax yar dib u noqdaa.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC gum** (carboxymethyl cellulose) wuxuu slurry-ga ka dhigaa mid dheg badan oo si tartiib ah u qallala, wuxuuna ka tagaa lakab adag oo weelka ku dheggan. Wuxuu ugu muhiimsan yahay glaze-yada burushka iyo glaze-yada frit badan leh. Tusaalaha Digitalfire wuxuu 3.75 g ku daraa 1000 g slurry ah, waana in blender lagu geliyo. Glaze leh CMC kuma jelmo cusbada Epsom, maadaama jeermisku cunaan gum-ka, wuu ku beddeli karaa baaldiga oo bilaabi karaa inuu uro.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonite**, dhoobo aad u jilicsan, waxay caawisaa inay walxaha kale sabbeeyaan. Glaze-yada quusinta badanaa waxay ku tiirsan yihiin 15 ilaa 25% dhoobo ceyriin ah tan. Hab dhoobo yar leh, qiyaastii 1 ilaa 3% bentonite ah ayaa caawisa; Digitalfire waxay leedahay glaze leh dhoobo ka badan 15% uma baahna bentonite ka badan 1% miisaanka glaze-ka qalalan.
 
-## Test tiles and line blends {#testing lang=en}
+## Test tile iyo line blend {#testing}
 
-### Start small
+### Ku bilow yar
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au wuxuu kor ugu kacaa saddex tallaabo: tijaabo 50 ama 100 g ah, tijaabo 1 ilaa 2 kg ah haddii ay shaqeyso, kadibna batch istuudiyo 5 ilaa 10 kg ah. Qiyaastayada, tijaabo 100 g ah {{SG 1.45}} waxay samaysaa qiyaastii 135 mL (qiyaastii 4½ US fl oz) slurry ah, oo ku filan in dhowr tile yaryar lagu quusiyo koob cidhiidhi ah.
 
-### Test on your own clay
+### Ku tijaabi dhoobadaada
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Glaze aad buu ugu kala duwanaan karaa dhoobo kale ama kiln kale: Clay Art Center waxay tijaabisay glaze kasta oo ay dib u habaysay afar nooc oo dhoobo ah, cone 6 iyo cone 10. Hagaha Potclays ee bilowga tijaabada glaze-ka wuxuu soo jeedinayaa:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 ilaa 10 **test tile** (gabal yaryar oo glaze lagu tijaabiyo) oo ah dhoobada aad dhab ahaan isticmaali doonto, adigoo qoraya in bisque lagu gubay ama ay gebi ahaanba qallalan yihiin
+- hal isbeddel mar kasta
+- hal quusin iyo laba quusin, si aad u aragto glaze khafiif iyo qaro weyn
+- tile kasta isla raridda kiln-ka
+- calaamad tile kasta ka hor gubidda, shaabad, xardho ama qalin underglaze. Tile-yada la gubay way isu eg yihiin, calaamadda gubidda ka hor la sameeyeyna kiln-ka way ka badbaaddaa, sidaa darteed mar walba waad garan kartaa tile kasta habka uu yahay.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Waxaan soo jeedinaynaa tile-yo toos u taagan, maadaama tile siman uu qariyo inta glaze-ku qulqulo, oo leh xarig qaab leh si uu u muujiyo sida glaze-ku cidhifyada uga jabo, iyo cag aan glaze lahayn. Mid kasta saar saxan yar ama gabal bisque ah, ama raf kiln wash leh, si dhibcaha loo qabto. Dhig **cone markhaati ah** (witness cone), cone dhoobo yar oo laaba marka uu helo kulayl ku filan, tile-yada agtooda si uu u muujiyo waxay heleen; [hagaha gubidda](/guides/firing) wuxuu sharxayaa cone-yada. Tile kasta sii kood gaaban, kuna qor habka agtiisa diiwaannadaada. Willers, oo u qoraya Ceramic Arts Network, wuxuu isticmaalaa tirooyin iyo xarfo, wuxuuna nidaamka laftiisa ku qoraa bilowga buugga xusuus-qorka.
 
-### Line blends
+### Line blend
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Line blend** waa saf tijaabooyin ah oo si siman uga tallaabaya hal isku-dar ilaa mid kale: hal glaze ilaa mid labaad, ama glaze saldhig ah ilaa isla glaze-kaas oo midabeeye badan leh. Derek Au, tusaale ahaan, wuxuu iron oxide ku dhex daraa saldhig hufan tallaabooyin 1% ah. Hab mug ah oo lala xiriiriyo Ian Currie ayaa waqti badbaadiya, sababtoo ah waxaad isku dartaa labada dhammaad keliya:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Isku dar labada glaze ee dhammaadka, A iyo B, batch-yo isku cabbir ah, oo labadaba shaandhee.
+2. Biyo ku dar ka mugga yar ilaa labaduba yeeshaan mug qoyan oo isku mid ah si sax ah.
+3. Labadaba walaaq, kadibna isku-dar kasta sirinji ugu jiid koobkiisa lambarka leh.
+4. Koob kasta walaaq oo tile quusi.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Tusaalahayaga la xalliyey, A waa 100 g saldhig hufan ah, B-na waa isla kaas oo lagu daray 4 g red iron oxide ah (ku-darid 4% ah). Mililitir kasta oo B ah wuxuu ka kooban yahay qayb saldhig ah oo la mid ah mililitir A ah, iyo birtiisa, sidaa darteed koobabku waxay ka tallaabaan bir la'aan ilaa 4% tallaabooyin 1% ah. Dhammaad kasta wuxuu blend-ka siiyaa 100 mL, taas oo batch 100 g ah daboolo qiyaastayada.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Line blend bir ah oo shan tallaabo ah, 40 mL koob kasta (tusaalahayaga la xalliyey)
+Label: Tusaale line blend
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Koob | Saldhig hufan (A) | Saldhig leh 4% bir (B) | Iron oxide, % saldhigga |
+| ---- | ----------------: | ---------------------: | ----------------------: |
+| 1    |             40 mL |                   0 mL |                       0 |
+| 2    |             30 mL |                  10 mL |                       1 |
+| 3    |             20 mL |                  20 mL |                       2 |
+| 4    |             10 mL |                  30 mL |                       3 |
+| 5    |              0 mL |                  40 mL |                       4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Habku wuxuu u baahan yahay xisaab taxaddar leh, dhammaadyo si fiican loo isku daray oo SG siman leh, iyo miisaan sax ah. Derek Au sidoo kale wuxuu isku daraa miisaan halkii mug. **Triaxial blend** wuxuu sidaas oo kale ku sameeyaa saddex dhammaad, oo saddex-xagal lagu dhigay.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Marka tallaabo u muuqato mid rajo leh, **Kaydi nuqul ahaan** ee [bogga habka](/recipe) ayaa u haya hab u gaar ah oo kan asalka ah u daaya siduu ahaa.
+
+## Haynta diiwaannada {#records}
+
+Willers ayaa yoolka si fiican u sheegay: "macluumaad ku filan oo aad ku celin karto, ama ka fogaan karto, natiijooyinka aad heshay". Qor waxaad qorshaynayso inaad tijaabiso ka hor intaadan bilaabin, iyo natiijooyinka marka aad soo dejiso. Potclays waxay ku daraysaa habka marinta, qaro weynida, nooca dhoobada iyo gubidda oo dhan, oo ay ku jiraan ramp-yo, sugitaan iyo qaboojin. **Ramp** waa xawaaraha kululaynta ama qaboojinta, sida {{60 °C; 108 °F}} saacaddii, **sugid**-na (hold) waxay kiln-ka ku haysaa hal kulayl muddo la dejiyey. Qor lambarrada lot-ka, biyaha aad isticmaashay iyo beddel kasta: beddelka feldspar-ka ee Clay Art Center wuxuu ka dhigan yahay hagaajinta qiyaastii kala badh glaze-yadeeda.
+
+Table: Waxa la diiwaangelinayo batch glaze kasta (qaabkayaga)
+Label: Qaabka diiwaanka
+
+| Qayb     | Waxa la qorayo                                                                                                                                                                                                                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hab      | Habka iyo noociisa; astaanta walxaha iyo lambarrada lot-ka; beddel kasta                                                                                                                                                                                                                       |
+| Isku-dar | Taariikh; cabbirka batch-ka; biyaha lagu daray, iyo noocooda (tuubbo, reverse osmosis ama la sifeeyey); SG isku-darka kadib iyo SG-ga ugu dambeeya; miisaanka slurry-ga la dhammeeyey, SG-giisa qalalan; cusbada Epsom, CMC iyo bentonite-ka lagu daray; mesh-ka shaandhada iyo tirada marinta |
+| Marin    | Nooca dhoobada; cone-ka bisque; quusin, burush ama shubid; waqtiga quusinta ama tirada lakabyada; qaro weynida qalalan                                                                                                                                                                         |
+| Gubid    | Kiln-ka iyo goobta rafka; jadwalka gubidda, oo leh ramp-yadiisa, sugitaannada iyo qaboojinta; jawiga kiln-ka (oxidation ama reduction); waxa cone-ka markhaatiga ahi muujiyey, ma aha keliya waxa kiln-ka loo dejiyey                                                                          |
+| Natiijo  | Dusha iyo midabka; qulqul kasta, crazing ama pinholes; sawirro hore, gadaal iyo dhinac; koodka tile-ka                                                                                                                                                                                         |
+
+> [!NOTE]
+> Glazecalc gudihiisa, [hab](/recipe) la kaydiyey ayaa haya habka laftiisa. [Diiwaanka gubidda](/firing) wuxuu qoraa gubid kasta: kiln-ka, taariikhda, waqtiyada, kulaylka, cone-yada iyo qoraallada. [Qoraallada](/notes) ayaa haya wax kasta oo kale, sida diiwaanka batch-ka kore iyo waxa tile kasta muujiyey.
 
 ## Ilaha {#sources}
 
