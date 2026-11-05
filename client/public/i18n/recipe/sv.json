@@ -752,19 +752,6 @@
       "pint": "Önskad pintvikt, oz"
     },
     "drySg": "SG för de torra råvarorna",
-    "batch": "Torr glasyr för en ny sats, {unit}",
-    "contents": "Vid SG {sg} innehåller hinken {glaze} torr glasyr och {water} vatten.",
-    "add": "För att nå SG {target}, tillsätt {water} vatten. Den hamnar på omkring {volume}.",
-    "pourOff": "För att nå SG {target}, låt den sedimentera och häll av {water} klart vatten. Den hamnar på omkring {volume}.",
-    "already": "Den ligger redan på SG {target}.",
-    "mix": "Blanda {glaze} torr glasyr med {water} vatten för omkring {volume} vid SG {target}.",
-    "badSg": "En SG måste vara högre än 1 (vattnets) och lägre än de torra råvarornas {dry}.",
-    "badDry": "De torra råvarornas SG måste vara högre än 1.",
-    "note": "Vattnet anges efter vikt: en liter väger ett kilogram, en amerikansk gallon omkring 8,3 lb. Räkningen lägger ihop volymerna, vilket är nära men inte exakt: tillsätt vattnet lite i taget, rör om och mät igen. Två glasyrer med samma SG kan ändå flyta olika.",
-    "saveTarget": "Spara SG {sg} som receptets målvärde",
-    "targetSaved": "SG {sg} är receptets målvärde. Det sparas med receptet när det sparas.",
-    "targetKept": "Receptets målvärde är SG {sg}.",
-    "clearTarget": "Ta bort målvärdet",
     "drySgEmpty": "Bara de torra vikterna behöver den; vattnet som ska tillsättas gör det inte. Skriv in den om den är känd.",
     "drySgNeeded": "Skriv in de torra råvarornas SG för att se den torra glasyren i hinken och vattnet för en ny sats.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Ingen uppskattning för det här receptet: SG för {names} är inte känd. Skriv in den om den är känd.",
       "was": "Det inmatade värdet används. Uppskattningen var {sg}; töm fältet för att gå tillbaka till den."
     },
-    "badSgWater": "En SG måste vara högre än 1 (vattnets)."
+    "batch": "Torr glasyr för en ny sats, {unit}",
+    "contents": "Vid SG {sg} innehåller hinken {glaze} torr glasyr och {water} vatten.",
+    "add": "För att nå SG {target}, tillsätt {water} vatten. Den hamnar på omkring {volume}.",
+    "pourOff": "För att nå SG {target}, låt den sedimentera och häll av {water} klart vatten. Den hamnar på omkring {volume}.",
+    "already": "Den ligger redan på SG {target}.",
+    "mix": "Blanda {glaze} torr glasyr med {water} vatten för omkring {volume} vid SG {target}.",
+    "badSg": "En SG måste vara högre än 1 (vattnets) och lägre än de torra råvarornas {dry}.",
+    "badSgWater": "En SG måste vara högre än 1 (vattnets).",
+    "badDry": "De torra råvarornas SG måste vara högre än 1.",
+    "note": "Vattnet anges efter vikt: en liter väger ett kilogram, en amerikansk gallon omkring 8,3 lb. Räkningen lägger ihop volymerna, vilket är nära men inte exakt: tillsätt vattnet lite i taget, rör om och mät igen. Två glasyrer med samma SG kan ändå flyta olika.",
+    "saveTarget": "Spara SG {sg} som receptets målvärde",
+    "targetSaved": "SG {sg} är receptets målvärde. Det sparas med receptet när det sparas.",
+    "targetKept": "Receptets målvärde är SG {sg}.",
+    "clearTarget": "Ta bort målvärdet"
   },
   "import": {
     "title": "Klistra in recept",
