@@ -693,7 +693,11 @@ describe('pages in each language', () => {
       '/materials/chestnut-wood-ash-washed',
       '/materials/jingdezhen-porcelain-stone-sanbaopeng',
       '/materials/jingdezhen-porcelain-stone-nangang',
-      '/materials/longquan-zijin-soil-gaojitou'
+      '/materials/longquan-zijin-soil-gaojitou',
+      '/materials/tsushima-feldspar',
+      '/materials/masuda-feldspar',
+      '/materials/korean-kaolin',
+      '/materials/synthetic-isu-ash'
     ];
 
     it('has every note and hazard of every material translated in every live language today', () => {

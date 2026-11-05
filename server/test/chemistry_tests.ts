@@ -411,7 +411,11 @@ describe('glaze chemistry', () => {
         'Fukushima Feldspar (福島長石)',
         'Kamado Feldspar (釜戸長石)',
         'Synthetic Wood Ash (合成土灰)',
-        'Synthetic Rice-Straw Ash (合成藁灰)'
+        'Synthetic Rice-Straw Ash (合成藁灰)',
+        'Tsushima Feldspar (対馬長石)',
+        'Masuda Feldspar (益田長石)',
+        'Korean Kaolin (韓国カオリン)',
+        'Synthetic Isu Ash (合成柞灰)'
       ]);
       for (const record of japanese) {
         expect(record.region, record.name).to.eql(['JP']);
