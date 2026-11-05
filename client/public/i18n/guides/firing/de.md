@@ -458,73 +458,73 @@ Die Steuerungen von L&L und Bartlett verwenden {{1926 °F; 1052 °C}} für Kegel
 
 Ein handgeschalteter Ofen folgt demselben Plan von Hand: Sie trocknen langsam bei einen Spalt geöffnetem Deckel und offenen Schaulöchern, stellen die Schalter schrittweise von Low über Medium auf High und lassen den Kiln-Sitter den Brand beenden. Die veröffentlichten Abläufe stehen unten unter „Handgeschaltete Öfen im Einzelnen“.
 
-## Glaze firing {#glaze lang=en}
+## Glasurbrand {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Der Glasurbrand{{en: glaze firing}} schmilzt die Glasur{{en: glaze}} auf dem geschrühten Scherben zu Glas. Die meisten niedrig brennenden Glasuren im Handel sind für Kegel{{en: cone}} 06 oder 05 gemacht (der niedrige Brennbereich reicht von Kegel 06 bis 04), die meisten Glasuren für den mittleren Brennbereich für Kegel 5–6. Brennen Sie auf den Kegel, der auf den Etiketten Ihrer Glasur und Ihrer Tonmasse steht, mit einem Kegelsatz{{en: cone pack}} rund um diese Nummer. Was in der Glasur beim Schmelzen geschieht, lesen Sie in [Glasieren von Grund auf](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Einräumen für den Glasurbrand
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Glasierte Stücke dürfen weder einander noch die Wände berühren: Lassen Sie etwa ½ Zoll (13 mm) Abstand.
+- Halten Sie den **Fuß glasurfrei**, oder stellen Sie Ware für den niedrigen Brennbereich auf **Dreifüße**, kleine Stützen mit Spitzen. Steinzeug{{en: stoneware}} und Porzellan sollten nicht auf Dreifüßen stehen, die sich bei diesen Temperaturen eindrücken; verwenden Sie stattdessen Trennmittel für hohe Temperaturen oder Quarzsand.
+- Lassen Sie mindestens 1 Zoll (25 mm) zwischen den Kanten der Ofenplatten und der Wand oder dem Kiln-Sitter.
 
-### Controller schedules
+### Brennkurven für Steuerungen
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Glasurbrand-Programme von L&L und Bartlett
+Label: Glasurbrand-Programme
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Segment                  |                                Steigen auf |             Slow Glaze |             Fast Glaze |
+| ------------------------ | -----------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                         {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Kein eigener Schritt |
+| 2                        | {{250 °F; 139 °C}} unter der Endtemperatur | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          Die Endtemperatur |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Aufheizzeit, leerer Ofen |                                            |     Etwa 6½–7½ Stunden |       Etwa 3–4 Stunden |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Wo die Segmente 2 und 3 enden, nach Kegel (L&L und Bartlett)
+Label: Zieltemperaturen der Programme
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Kegel |       Ende Segment 2 |        Endtemperatur |
+| ----- | -------------------: | -------------------: |
+| 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Angesichts der Warnung von L&L vor schnellem Brennen ist Slow Glaze die sicherere Grundeinstellung. Wenn Sie eine Haltezeit{{en: hold}} von mehr als 5–10 Minuten bei der Endtemperatur hinzufügen, sollten Sie laut L&L die Zieltemperatur oder den Kegel-Offset entsprechend senken; L&L merkt an: „Halten bei hohen Temperaturen beschleunigt den Verschleiß von Heizspiralen und Thermoelement.“
 
-### Cone 6: drop-and-hold
+### Kegel 6: Absenken und Halten
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Glasuren für den mittleren Brennbereich kommen manchmal mit **Nadelstichen**{{en: pinholes}} (winzigen Löchern in der Oberfläche) oder Blasen aus dem Ofen, die Gas hinterlässt, das aus der Schmelze aufsteigt. Eine Brennkurve mit **Absenken und Halten**{{en: drop-and-hold}} brennt bis zur Endtemperatur, kühlt schnell um etwa {{100 °F; 56 °C}} ab und hält dort. In den Worten von Digitalfire: „Um 100°F absenken und halten gibt der Schmelze genug Viskosität, damit Blasen platzen, und lässt sie trotzdem noch verheilen.“
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, Kegel 6 mit Absenken und Halten
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Schritt |                               Rate |                 Ziel | Haltezeit                                              |
+| ------- | ---------------------------------: | -------------------: | ------------------------------------------------------ |
+| 1       |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 Minuten                                             |
+| 2       |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Wahlweise 30 Minuten, damit sich Blasenwolken auflösen |
+| 3       |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 Minuten; in großen Öfen länger                      |
+| 4       | Abwärts mit {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 Minuten                                             |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS dauert etwa 9 Stunden 36 Minuten. Bei dünnflüssigeren Glasuren senkt Digitalfire stattdessen um etwa {{200 °F; 111 °C}} ab; zu starkes Absenken „riskiert Kristallisation während der Haltezeit“. Die Endtemperatur von {{2200 °F; 1204 °C}} liegt unter den {{2232 °F; 1222 °C}} der Tabelle für Kegel 6; Digitalfire berichtet, dass die meisten Öfen Kegel 6 bei etwa {{2200 °F; 1204 °C}} erreichen. Prüfen Sie das mit einem Kegelsatz in Ihrem eigenen Ofen.
 
-### Slow cooling
+### Geregeltes Abkühlen
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Geregeltes Abkühlen** heißt, dass die Steuerung den Ofen mit einer eingestellten Rate abkühlt, statt ihn ungeregelt abkühlen zu lassen. C6DHSC von Digitalfire ist PLC6DS, gefolgt von Abkühlen mit {{150 °F/h; 83 °C/h}} von {{2100 °F; 1148 °C}} bis {{1400 °F; 760 °C}}, dann aus. Es „verbessert Glanz und Oberflächenqualität“ und hilft blauen Rutilglasuren, aber geregeltes Abkühlen „kann die Mattigkeit erhöhen“ (eine Mattglasur wurde trocken) und kann die Lebensdauer der Relais des Ofens verkürzen. Auch L&L liefert ein Programm zum geregelten Abkühlen für Kegel 6 mit:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L „User 6“: geregeltes Abkühlen bei Glasuren für Kegel 6
+Label: L und L, geregeltes Abkühlen
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Schritt |                              Rate |                 Ziel |
+| ------- | --------------------------------: | -------------------: |
+| 1       |    Volle Geschwindigkeit aufwärts | {{2232 °F; 1222 °C}} |
+| 2       |     Volle Geschwindigkeit abwärts | {{1900 °F; 1038 °C}} |
+| 3       | Abwärts mit {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Die Steuerungen von Skutt bieten ebenfalls ein Vorwärmen und eine einstufige Abkühloption.
 
-### On a manual kiln
+### Am handgeschalteten Ofen
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Ein handgeschalteter Ofen kann diese Brennkurven nicht genau nachfahren, aber der Plan ist derselbe: anfangs sanft, in der Mitte gleichmäßig und am Ende unter Beobachtung. Die Brennkurve von Bracker’s für niedrig brennende Glasuren steht unten unter „Handgeschaltete Öfen im Einzelnen“; für heißere Kegel rechnet Bracker’s „im Durchschnitt 15–30 Minuten pro Kegelnummer“ dazu. Mit einem Pyrometer, Übung und einem Brennprotokoll können Sie ein Absenken und Halten oder ein geregeltes Abkühlen ungefähr nachahmen, indem Sie die Schalter von Hand herunterdrehen, wie Digitalfire vorschlägt.
 
 ## Handgeschaltete Öfen im Einzelnen {#manual-kilns}
 
