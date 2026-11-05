@@ -59,31 +59,31 @@ Label: கரையும் மூலப்பொருட்கள்
 
 ஈயத்தின் முக்கிய ஆபத்து வேறுபட்டது: ஒரு கரண்டி அளவு அல்ல, வாரக்கணக்கில் அல்லது மாதக்கணக்கில், எந்த எச்சரிக்கை அறிகுறியும் இல்லாமல் விழுங்கப்படும் சிறிய அளவு தூசு (கீழே ‘ஈயமும் குழந்தைகளும்’ பகுதியைப் பார்க்கவும்).
 
-## Storing materials at home {#storing-materials lang=en}
+## வீட்டில் மூலப்பொருட்களைச் சேமித்தல் {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+வீட்டில் கிளேஸ் (மெருகு){{en: glaze}} மூலப்பொருட்களைச் சேமிப்பதற்கு எந்த அதிகாரபூர்வ அமைப்பும் விதிகளை வகுக்கவில்லை, ஆனால் உடல்நல மற்றும் பாதுகாப்புப் பக்கங்கள் ஒன்றை ஒப்புக்கொள்கின்றன: வேலையை அதற்கென்றே உள்ள இடத்தில், குழந்தைகளிடமிருந்து விலக்கி வைக்கவும். ஈயம் (Pb) பயன்படுத்தப்படும் பொழுதுபோக்குகள் பற்றி எழுதும் பென்சில்வேனியா மாநில சுகாதாரத் துறை, “உங்கள் பொழுதுபோக்குக்கென ஒதுக்கப்பட்ட பணியிடத்தையோ கேரேஜையோ பயன்படுத்துங்கள், குழந்தைகளை இந்த இடத்திலிருந்து விலக்கி வையுங்கள்” என்று கூறுகிறது.
 
-### A storage checklist
+### சேமிப்புச் சரிபார்ப்புப் பட்டியல்
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+இவை கிளேஸுக்குப் பொருத்தப்பட்ட பொதுவான நஞ்சுத் தடுப்பு விதிகள். எந்த செராமிக் தரநிலையும் இவற்றை வகுக்கவில்லை, ஆனால் இவை அனைத்தையும் நாங்கள் பரிந்துரைக்கிறோம்:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- உலர்ந்த மூலப்பொருட்களைப் பூட்டி வைக்கவும்: ஓர் அலமாரியில், அல்லது பூட்டக்கூடிய அறை, கேரேஜ் அல்லது கொட்டகையில். உயரமான அடுக்கு உதவும், ஆனால் குழந்தைகள் ஏறுவார்கள். முதலில் சில பொருட்களை மட்டுமே பூட்ட முடியும் என்றால், கரையும் மூலப்பொருட்களிலிருந்தும் கலரன்ட்களிலிருந்தும் (நிறமூட்டிகள்){{en: colorant}} தொடங்கவும்.
+- மூலப்பொருட்களை அவற்றின் அசல் பைகளிலோ டப்பாக்களிலோ வைக்கவும். ஒன்றை வேறு கொள்கலனுக்கு மாற்றினால், பையில் எழுதியிருப்பது போலவே பெயரை அதில் லேபிள் செய்யவும்.
+- கிளேஸ் மூலப்பொருட்களுக்கு உணவு அல்லது பானக் கொள்கலன்களை (தயிர் டப்பாக்கள், ஜாடிகள், பாட்டில்கள்), லேபிள் ஒட்டியிருந்தாலும், ஒருபோதும் பயன்படுத்தக் கூடாது. தயிர் டப்பாவில் என்ன இருக்கும் என்று ஒரு குழந்தைக்குத் தெரியும்.
+- ஸ்டுடியோ கருவிகளை (ஸ்கூப்புகள், கரண்டிகள், கலக்கிகள், சல்லடைகள், தராசுகள்) ஸ்டுடியோவிலேயே வைக்கவும். கிளேஸுக்குச் சமையலறைக் கருவிகளையோ, உணவுக்குக் கிளேஸ் கருவிகளையோ ஒருபோதும் பயன்படுத்தக் கூடாது.
+- ஈரமான கிளேஸ்களை லேபிள் ஒட்டிய, மூடி போட்ட வாளிகளில் வைக்கவும்.
+- ஒவ்வொரு மூலப்பொருளின் பாதுகாப்புக் குறிப்புத் தாளையும் அதனுடனேயே, காகிதத்திலோ உங்கள் ஃபோனிலோ வைத்திருக்கவும்.
+- ஸ்டுடியோவிலிருந்து எதையும் சமையலறையில் வைக்க வேண்டாம்: பைகள், வாளிகள், கருவிகள், டெஸ்ட் டைல்கள் (சோதனை ஓடுகள்){{en: test tile}} எதுவும் வேண்டாம்.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+மூலப்பொருட்களை வாங்குவது மற்றும் சேமிப்பது பற்றி மேலும் விரிவாக அறிய, [கிளேஸ் தயாரிப்பது எப்படி](/guides/making-a-glaze) பார்க்கவும்.
 
-### Glaze waste and rinse water
+### கிளேஸ் கழிவும் அலசிய நீரும்
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+கிளேஸையோ, கிளேஸ் கருவிகளை அலசிய நீரையோ ஒருபோதும் சிங்கிலோ தோட்டத்திலோ ஊற்றக் கூடாது. கைகள், தூரிகைகள், சல்லடைகள் மற்றும் கருவிகளைக் கழுவுவதற்குத் தனி வாளித் தண்ணீரைப் பயன்படுத்துமாறு பிரிட்டனின் Crafts Council பரிந்துரைக்கிறது. அதை இரவு முழுவதும் அடியில் படிய விடவும், மேலே உள்ள தெளிந்த நீரை வடித்துவிடவும், பிறகு அடியில் படிந்த கிளேஸை உலர்த்திக் குப்பையில் போடவும் (அது குப்பைக் கிடங்குக்குச் செல்லும்); ஒருபோதும் வடிகாலில் ஊற்றக் கூடாது.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+அந்த வாளிக்கு ஒரு மூடி போடுமாறு பரிந்துரைக்கிறோம்: அடியில் உள்ள கசடில் கிளேஸில் உள்ள அதே உலோகங்கள் இருக்கின்றன, செல்லப்பிராணிகள் தேங்கிய நீரைக் குடிக்கும். கழிவை அகற்றும் விதிகள் இடத்துக்கு இடம் மாறுபடும்; எனவே ஒவ்வொரு பொருளின் பாதுகாப்புக் குறிப்புத் தாளையும் பார்க்கவும், உறுதியாகத் தெரியவில்லை என்றால் உங்கள் உள்ளாட்சி அமைப்பிடமோ குடிநீர் வழங்கல் நிறுவனத்திடமோ கேட்கவும்.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+சில ஸ்டுடியோக்கள் உலர்ந்த கசடைத் தூக்கி எறியும் முன் அதைச் சுடுகின்றன. அதைப் பயன்பட்டுத் தீரப்போகும் ஒரு உதிரிக் கிண்ணத்தில் வைக்கிறார்கள்: ஃபயரிங்குக்குப் பிறகு அந்தக் கிண்ணத்தை மீண்டும் பயன்படுத்த முடியாது. கசடு உருகும்போது நுரைத்துக் குமிழியிடும் என்பதால், கிண்ணத்தைக் கால் பங்கு மட்டுமே நிரப்பி, ஒரு தட்டால் மூடவும். அது வழிந்தால் என்பதற்காக, கில்ன் வாஷ் பூசிய ஷெல்ஃபிலோ ஓர் உதிரி ஸ்லாபிலோ வைக்கவும். ஃபயரிங் கசடைக் கண்ணாடியாக மாற்றுகிறது; அது தளர்வான பொடியை விட உலோகங்களை மிக இறுக்கமாகப் பிடித்து வைக்கிறது, அதனால் குப்பைக் கிடங்கில் அது அதிகப் பாதுகாப்பானது. உலர்ந்த கசடை உலர்ந்த கிளேஸைக் கையாள்வது போலவே, ரெஸ்பிரேட்டர் அணிந்து, தூசு கிளப்பாமல் கையாளவும்.
 
 ## தூசை ஸ்டுடியோவுக்குள்ளேயே வைத்திருத்தல் {#keeping-dust-in-the-studio}
 
