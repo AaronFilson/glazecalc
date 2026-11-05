@@ -59,31 +59,31 @@ Label: Rozpustné suroviny
 
 Hlavní nebezpečí olova je jiné: ne jedna lžíce, ale malá množství prachu spolknutá během týdnů nebo měsíců, bez jakýchkoli varovných příznaků (viz část Olovo a děti níže).
 
-## Storing materials at home {#storing-materials lang=en}
+## Skladování surovin doma {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Žádný úřad nestanoví pravidla pro skladování surovin pro glazury doma, ale stránky o ochraně zdraví se shodují: práci mějte ve vlastním prostoru, mimo dosah dětí. Ministerstvo zdravotnictví Pensylvánie v textu o koníčcích, při kterých se používá olovo, radí: „Pro svůj koníček používejte vyhrazený pracovní prostor nebo garáž a děti k tomuto místu nepouštějte.“
 
-### A storage checklist
+### Kontrolní seznam pro skladování
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Jsou to obecná pravidla prevence otrav, použitá na glazury. Žádná keramická norma je nestanoví, ale doporučujeme všechna:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Suché suroviny mějte pod zámkem: ve skříňce nebo v místnosti, garáži či kůlně, která se zamyká. Vysoká police pomůže, ale děti šplhají. Pokud zpočátku můžete zamknout jen několik věcí, začněte rozpustnými surovinami a barvivy.
+- Suroviny nechávejte v původních pytlích nebo kbelících. Pokud nějakou přesypete do jiné nádoby, označte ji názvem přesně tak, jak je napsán na pytli.
+- Na suroviny pro glazury nikdy nepoužívejte nádoby od jídla nebo pití (kelímky od jogurtu, sklenice, lahve), ani když jsou označené. Dítě ví, co bývá v kelímku od jogurtu.
+- Nástroje z dílny (lopatky, lžíce, metly, síta, váhy) nechávejte v dílně. Nikdy nepoužívejte kuchyňské nástroje na glazuru ani nástroje na glazuru na jídlo.
+- Mokré glazury uchovávejte v označených kbelících s nasazenými víky.
+- U každé suroviny mějte její bezpečnostní list, na papíře nebo v telefonu.
+- V kuchyni nemějte nic z dílny: žádné pytle, kbelíky, nástroje ani zkušební střípky.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Podrobněji o nákupu a skladování surovin píše návod [Jak připravit glazuru](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Odpad z glazur a voda z oplachování
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Glazuru ani vodu, ve které jste oplachovali nástroje od glazury, nikdy nelijte do umyvadla ani na zahradu. Britská organizace Crafts Council doporučuje samostatný kbelík s vodou na mytí rukou, štětců, sít a nástrojů. Nechte ho přes noc ustát, čirou vodu slijte, usazenou glazuru pak vysušte a vyhoďte do komunálního odpadu (skončí na skládce); nikdy ji nesplachujte do odpadu.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Doporučujeme mít na tomto kbelíku víko: kal obsahuje stejné kovy jako glazura a domácí zvířata pijí stojatou vodu. Pravidla pro likvidaci se liší místo od místa, proto se podívejte do bezpečnostního listu každého výrobku, a pokud si nejste jistí, zeptejte se na obecním úřadě nebo u vodárenské společnosti.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Některé dílny vysušený kal před vyhozením vypalují. Dají ho do vysloužilé misky, se kterou se už nepočítá: po výpalu se miska nedá znovu použít. Misku naplňte jen do čtvrtiny, protože kal se při tavení pění a bublá, a zakryjte ji talířem. Postavte ji na plát s nátěrem nebo na vysloužilou desku pro případ, že přeteče. Výpal promění kal ve sklo, které drží kovy mnohem pevněji než sypký prášek, takže je na skládce bezpečnější. Se suchým kalem zacházejte stejně jako se suchou glazurou, s respirátorem a bez víření prachu.
 
 ## Jak udržet prach v dílně {#keeping-dust-in-the-studio}
 
