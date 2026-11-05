@@ -83,7 +83,7 @@ Gooi nooit glasuur, of water waarin jy glasuurgereedskap gespoel het, in die was
 
 Ons stel 'n deksel op daardie emmer voor: die slyk bevat dieselfde metale as die glasuur, en troeteldiere drink staande water. Wegdoeningsreëls verskil van plek tot plek, so kyk na elke produk se veiligheidsdatablad, en vra jou plaaslike munisipaliteit of waterverskaffer as jy onseker is.
 
-Sommige ateljees bak die gedroogde slyk voordat hulle dit weggooi. Hulle sit dit in 'n ekstra bak wat opgeoffer sal word: ná die bak kan die bak nie weer gebruik word nie. Maak die bak net 'n kwart vol, want die slyk skuim en borrel terwyl dit smelt, en bedek dit met 'n bord. Sit dit op 'n rak met rakdeklaag of 'n ekstra plaat, ingeval dit oorloop. Die bak verander die slyk in glas, wat die metale baie stywer vashou as los poeier, dus is dit veiliger op 'n stortingsterrein. Hanteer die droë slyk soos jy droë glasuur sou hanteer, met 'n respirator en sonder om stof te maak.
+Sommige ateljees stook die gedroogde slyk voordat hulle dit weggooi. Hulle sit dit in 'n ekstra bak wat opgeoffer sal word: ná die stook kan die bak nie weer gebruik word nie. Maak die bak net 'n kwart vol, want die slyk skuim en borrel terwyl dit smelt, en bedek dit met 'n bord. Sit dit op 'n rak met rakdeklaag of 'n ekstra plaat, ingeval dit oorloop. Die stook verander die slyk in glas, wat die metale baie stywer vashou as los poeier, dus is dit veiliger op 'n stortingsterrein. Hanteer die droë slyk soos jy droë glasuur sou hanteer, met 'n respirator en sonder om stof te maak.
 
 ## Stof in die ateljee hou {#keeping-dust-in-the-studio}
 

@@ -79,7 +79,7 @@ Không cơ quan chính thức nào đặt ra quy tắc cất giữ nguyên liệ
 
 ### Chất thải men và nước rửa
 
-Tuyệt đối không đổ men, hay nước bạn đã rửa dụng cụ làm men, xuống bồn rửa hoặc ra vườn. Hội đồng Thủ công Anh (Crafts Council) gợi ý dùng một xô nước riêng để rửa tay, cọ, sàng và dụng cụ. Hãy để nó lắng qua đêm, đổ bớt nước trong, rồi làm khô men đã lắng và bỏ vào thùng rác (nó đi đến bãi chôn lấp), tuyệt đối không đổ xuống cống.
+Tuyệt đối không đổ men, hay nước bạn đã rửa dụng cụ làm men, xuống bồn rửa hoặc ra vườn. Hội đồng Thủ công Anh (Crafts Council) gợi ý dùng một xô nước riêng để rửa tay, cọ, sàng và dụng cụ. Hãy để nó lắng qua đêm, chắt hết phần nước trong ở trên, rồi làm khô men đã lắng và bỏ vào thùng rác (nó đi đến bãi chôn lấp), tuyệt đối không đổ xuống cống.
 
 Chúng tôi gợi ý đậy nắp xô đó: cặn bùn chứa cùng các kim loại như men, và thú cưng uống nước đọng. Các quy định xử lý khác nhau tùy nơi, nên hãy kiểm tra phiếu an toàn hóa chất của từng sản phẩm, và hỏi hội đồng địa phương hoặc công ty nước nếu bạn không chắc.
 

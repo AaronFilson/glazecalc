@@ -272,7 +272,7 @@ Na US, ihe ụrọ ịchọ mma yiri ka e nwere ike iji ya maka nri ka a na-ewer
 
 ### Nnwale
 
-FDA kwuru na ngwa nnwale ihichapụ n'ụlọ nwere ike igosi lead na-apụta, mana nnyocha na-egosi na ngwa ndị a na-ezikarị ihe na-ezighị ezi n'ihe nwere glaze: ha nwere ike igosi lead na-adịghị ya, ha nwekwara ike ịhapụ lead na-apụta. Were nsonaazụ dị mma (positive) dịka ihe kpatara ịkwụsị iji mpempe ahụ, na nke na-adịghị mma (negative) dịka nke na-egosipụtaghị ihe ọ bụla. Nnwale ụlọ nyocha maka metal na-apụta (leach test) nke mpempe a gbara ọkụ (ASTM C738 na US; EN 1388 ma ọ bụ ISO 6486 na Europe) bụ ezigbo azịza.
+FDA kwuru na ngwa nnwale ihichapụ n'ụlọ nwere ike igosi lead na-apụta, mana nnyocha na-egosi na ngwa ndị a na-ezikarị ihe na-ezighị ezi n'ihe nwere glaze: ha nwere ike igosi lead na-adịghị ya, ha nwekwara ike ịhapụ lead na-apụta. Were nsonaazụ nke gosiri na lead dị (positive) dịka ihe kpatara ịkwụsị iji mpempe ahụ, na nke egosighị lead (negative) dịka nke na-egosipụtaghị ihe ọ bụla. Nnwale ụlọ nyocha maka metal na-apụta (leach test) nke mpempe a gbara ọkụ (ASTM C738 na US; EN 1388 ma ọ bụ ISO 6486 na Europe) bụ ezigbo azịza.
 
 > [!WARNING]
 > "Dị mma maka nri" pụtara na glaze a, n'elu ụrọ a, a gbara ọkụ ruo cone a na kiln a ma tinye ya n'ụzọ a, na-ahapụ ihe erughị oke iwu. Glazecalc nwere ike inyere gị aka iwu glaze kwụsiri ike, **Dochie lead** nwekwara ike iwughachi usoro lead ochie na-enweghị lead, mana ọ dịghị igwe ngụkọ nwere ike ịkwado ite. Naanị nnwale nke mpempe a gbara ọkụ nwere ike.

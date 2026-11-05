@@ -15,7 +15,7 @@
     "period": "Ne zaman",
     "firing": "Pişirim",
     "cone": "{cone} numaralı Orton piramidi",
-    "historyOnly": "Yalnızca tarih: bu sır kurşunla yapılırdı. Analizi, karıştırılacak bir reçete olarak değil, tarih olarak gösteriliyor. Aşağıdaki sürüm, kurşunsuz, farklı bir sırdır.",
+    "historyOnly": "Yalnızca tarih: bu sır kurşunla yapılmıştır. Analizi, karıştırılacak bir reçete olarak değil, tarih olarak gösteriliyor. Aşağıdaki sürüm, kurşunsuz, farklı bir sırdır.",
     "recipeHeading": "Geleneksel reçete",
     "material": "Hammadde",
     "amount": "Miktar",

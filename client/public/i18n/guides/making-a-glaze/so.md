@@ -139,7 +139,7 @@ Biyaha sidoo kale way kala duwan yihiin, Digitalfire-na waxay xustay inay beddel
 
 1. Xiro respirator-kaaga, iyo gacmo-gashi caag ah haddii gacmahaagu gudaha geli doonaan. Zakin wuxuu xirtaa maaskaro bilowga miisaanka ilaa glaze-ku qoyo.
 2. Baaldiga ku cabbir qiyaastii 70 ilaa 80 mL biyo ah 100 g budo ah kasta.
-3. Budada la miisaamay si tartiib ah ugu dar, meel hoose. UT Austin waxay budada ku shubtaa biyo diirran; Zakin iyo Au waxay biyaha ku daraan budada. Waxaan soo jeedinaynaa budo biyo lagu shubo, taas oo boodh yar kicisa, marka laga reebo hab leh bentonite badan: budadiisa qalalan marka hore isku walaaq.
+3. Budada la miisaamay si tartiib ah ugu dar, meel hoose. UT Austin waxay budada ku shubtaa biyo diirran; Zakin iyo Au waxay biyaha ku daraan budada. Waxaan soo jeedinaynaa in budada lagu shubo biyaha (budo biyo ku dar), taas oo boodh yar kicisa, marka laga reebo hab leh bentonite badan: budadiisa qalalan marka hore isku walaaq.
 4. **Qooy**: budada u daa inay qoyanto adigoo aan walaaqin. Digitalfire waxay sugtaa qiyaastii 20 daqiiqo. Budooyinka leh gum ama wax isku xira waxay u baahan yihiin inay habeen dhan istaagaan.
 5. Isku dar ilaa aysan jirin meelo qalalan ama burooyin.
 6. Laba jeer shaandhee (eeg hoos).

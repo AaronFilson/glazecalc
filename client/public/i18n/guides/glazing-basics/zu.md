@@ -272,7 +272,7 @@ E-US, izitsha zobumba zokuhlobisa ezibukeka zingasetshenziselwa ukudla ziphathwa
 
 ### Ukuhlola
 
-I-FDA ithi amakhithi asekhaya okuhlola ngokusula angakhombisa umthofu ophumayo, kodwa izifundo zikhombisa ukuthi lawa makhithi avame ukungalungi ezitsheni ezinama-glaze: angakhombisa umthofu ongekho, futhi angaphuthelwa umthofu ophumayo. Thatha umphumela omuhle njengesizathu sokuyeka ukusebenzisa leso sitsha, nomphumela omubi njengongafakazeli lutho. Isivivinyo selabhorethri sokuphuma kwezinsimbi socezu olushisiwe (i-ASTM C738 e-US; i-EN 1388 noma i-ISO 6486 eYurophu) siyimpendulo yangempela.
+I-FDA ithi amakhithi asekhaya okuhlola ngokusula angakhombisa umthofu ophumayo, kodwa izifundo zikhombisa ukuthi lawa makhithi avame ukungalungi ezitsheni ezinama-glaze: angakhombisa umthofu ongekho, futhi angaphuthelwa umthofu ophumayo. Uma ikhithi ithola umthofu (umphumela opozithivu), lokho kuyisizathu sokuyeka ukusebenzisa leso sitsha; uma ingawutholi (umphumela onegethivu), lokho akufakazeli lutho. Isivivinyo selabhorethri sokuphuma kwezinsimbi socezu olushisiwe (i-ASTM C738 e-US; i-EN 1388 noma i-ISO 6486 eYurophu) siyimpendulo yangempela.
 
 > [!WARNING]
 > "Iphephile ekudleni" kusho ukuthi le glaze, kulobu bumba, ishiswe kule cone kule kiln futhi yafakwa ngale ndlela, ikhipha okungaphansi kwemingcele yomthetho. I-Glazecalc ingakusiza wakhe i-glaze ezinzile, futhi **Shintsha umthofu** ingakha kabusha iresiphi endala yomthofu ngaphandle komthofu, kodwa ayikho i-calculator engaqinisekisa isitsha. Isivivinyo socezu olushisiwe kuphela esingakwenza.
@@ -297,7 +297,7 @@ Hlanza uthuli namafutha ku-bisque kuqala ngesipontshi esinomswakama omncane kakh
 - **Ukufafaza** kusebenzisa i-glaze emncane kakhulu, efakwa "ngongqimba oluncane oluningana, kwakhiwa ukushuba kancane kancane".
 
 > [!WARNING]
-> Fafaza ku-spray booth enomoya ohlanzekile kuphela, ugqoke i-respirator elingana kahle. Bheka [Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing).
+> Fafaza ku-spray booth enomoya okhishwayo ngaphandle kuphela, ugqoke i-respirator elingana kahle. Bheka [Ukuxuba ngokuphepha nomoya ohlanzekile](/guides/safe-mixing).
 
 Ungqimba olushubile kakhulu lungenza i-crawling, ama-blister noma lugeleze. Imithetho evamile yabaphakeli isuka ekushubeni kwekhadi lesikweletu kuya kokwe-dime yaseMelika, ngokwesilinganiso sethu cishe u-1 mm we-glaze eyomile; ama-test tile ezinhlobo ezimbalwa zokushuba ayindlela ethembekile yokuhlola. **I-wax resist** onyaweni ixosha i-glaze, ukuze isitsha singanamatheli eshalofini, futhi **i-kiln wash**, ingubo emelana nokushisa ngokuvamile eyenziwe nge-kaolin ne-silica, ivikela amashalofu emaconsini.
 

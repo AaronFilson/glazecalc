@@ -258,7 +258,7 @@ Label: Sapa kuti esmalte pantaykuna
 
 ### Mana titiyuq kayqa manam mikhunapaq mana manchakuy kaqllachu
 
-Estados Unidos, EU, UK, Australiap kamachiyninkunaqa ruphachisqa p'aki lluqsichisqan titita cadmiotapas limitenku, manam esmaltep hap'isqantachu. "Mana titiyuq" huk manchakuytam qichun; manam mikhunapaq mana manchakuy yupaychu. Huk óxidokunapas lluqsinkum: Glazy willan achka barioyuq esmaltekunaqa "metalkunata lluqsichinmanmi, sapa kuti manam mikhunapaq mana manchakuypaqchu", Digitalfire nin cobre "esmalteta metal lluqsichiqta ruranman; pruebay", Glazytaq manañam llamk'ana mankakunapaq titi esmaltekunata yuyaychanchu.
+Estados Unidos, EU, UK, Australiap kamachiyninkunaqa ruphachisqa p'aki lluqsichisqan titita cadmiotapas limitenku, manam esmaltep hap'isqantachu. "Mana titiyuq" huk manchakuytam qichun; manam mikhunapaq mana manchakuy yupaychu. Huk óxidokunapas lluqsinkum: Glazy willan achka barioyuq esmaltekunaqa "metalkunata lluqsichinmanmi, aswanqa manam mikhunapaq mana manchakuypaqchu", Digitalfire nin cobre "esmalteta metal lluqsichiqta ruranman; pruebay", Glazytaq manañam llamk'ana mankakunapaq titi esmaltekunata yuyaychanchu.
 
 **Liner glaze** (ukhu esmalte) mikhunawan tupaq uyakunapaq takyasqa, sapa kuti ch'uya utaq yuraq esmaltem. Yuyayniykupi, mana llimp'iqniyuq, mana barioyuq, mana titiyuq nitaq litioyuq, tukuy chulluq, mana cuarteadoyuq allin unay kawsaqpas aswan pisi manchakuy akllanam. Pisi manchakuyqa manam chiqanchaychu.
 
