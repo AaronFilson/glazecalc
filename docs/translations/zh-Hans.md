@@ -800,6 +800,22 @@ Mainland apps (WeChat, Alipay) were not read; their 退出登录 and 账号 are 
 | password                                 | 密码               | All three.                                                                                                                                                                                                                                                    |
 | turn on, turn off (two-step sign-in)     | 开启, 关闭         | Google: 开启两步验证. "Two-step sign-in is on." → 「两步验证已开启。」                                                                                                                                                                                        |
 
+### 2.10 Round 14 additions
+
+Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and the new standard materials), 4 November 2026.
+
+| English                                         | 简体中文                         | Notes                                                                                                             |
+| ----------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Stull chart                                     | Stull 图                         | **show English**. As the recipe page already writes it. Regions as there: 未熔融, 无光, 半无光, 亮光, 欠烧, 龟裂. |
+| dry SG (of a glaze's powder)                    | 干比重                           | No source. The app's "SG of the dry materials" is 「干原料的比重」.                                               |
+| cristobalite inversion                          | 方石英晶型转变                   | Beside 石英晶型转变. Usage (方石英 is the mineral's standard Chinese name).                                       |
+| colemanite                                      | 硬硼钙石                         | The mineral's standard Chinese name (Usage).                                                                      |
+| porcelain stone                                 | 瓷石                             | The Jingdezhen term, as the English quotes it.                                                                    |
+| synthetic ash                                   | 合成代用品 (of 土灰, 藁灰, 柞灰) | No source; the Japanese names kept as the English gives them.                                                     |
+| rice-straw ash                                  | 稻草灰                           | Usage.                                                                                                            |
+| sludge (dried glaze sludge from a rinse bucket) | 污泥                             | No source.                                                                                                        |
+| Famous glazes                                   | 名釉                             | Usage (名釉 is the common word for celebrated glazes).                                                            |
+
 ## 3. Never translated
 
 From terms.md, unchanged:

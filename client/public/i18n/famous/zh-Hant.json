@@ -1,0 +1,63 @@
+{
+  "notTranslated": "本頁有部分內容尚未翻譯，因此以英文顯示。",
+  "index": {
+    "crumb": "名釉",
+    "title": "名釉",
+    "lead": "世界知名的釉藥，每種都出自當地的傳統原料，並附上塞格式和用您所在地販售的原料調出的版本。",
+    "listHeading": "釉藥列表",
+    "more": "還會加入更多釉藥：每種釉的釉方和原料要有至少三份讀過的資料來源支持，才會加入。"
+  },
+  "glaze": {
+    "lead": "一種名釉（{native}）：傳統釉方或分析、燒成，以及用您所在地販售的原料調出的版本。",
+    "aboutHeading": "關於{name}",
+    "nativeName": "當地名稱",
+    "origin": "產地",
+    "period": "年代",
+    "firing": "燒成",
+    "cone": "Orton {cone} 號測溫錐",
+    "historyOnly": "僅供歷史參考：這種釉藥含鉛。它的分析結果是當作歷史呈現，不是可以調配的釉方。下方的版本是另一種不含鉛的釉藥。",
+    "recipeHeading": "傳統釉方",
+    "material": "原料",
+    "amount": "用量",
+    "unityHeading": "塞格式",
+    "analysisHeading": "歷史分析",
+    "oxide": "氧化物",
+    "percent": "重量 %",
+    "useHeading": "試試看",
+    "open": "開啟這個釉方",
+    "openLeadFree": "開啟無鉛版本",
+    "leadFreeTitle": "{name}風格，無鉛",
+    "allLink": "所有名釉",
+    "safetyHeading": "安全",
+    "safeMixing": "安全調配與通風",
+    "firingGuide": "基本燒窯",
+    "makingGuide": "如何調配釉藥",
+    "sourcesHeading": "資料來源",
+    "link": "開啟",
+    "opened": "{date}閱讀"
+  },
+  "local": {
+    "heading": "用您當地的原料",
+    "leadFreeHeading": "無鉛版本",
+    "intro": "用您購買原料的地方所販售的標準原料，調出傳統釉方的塞格式。選擇您購買原料的地方即可看到。",
+    "region": "購買原料的地方",
+    "proposal": "提案本身的原料",
+    "pick": "請選擇…",
+    "untested": "已計算，尚未試燒。",
+    "testFirst": "用在任何作品之前，請先燒試片，並對接觸食物的表面做溶出試驗。",
+    "untestedNote": "已計算，尚未試燒：使用前請先燒試片。",
+    "close": "與目標塞格式很接近。",
+    "fair": "與目標塞格式相當接近。",
+    "poor": "這些原料無法接近目標塞格式。",
+    "none": "用那裡販售的原料調不出來。",
+    "choose": "選擇您購買原料的地方，即可看到用那裡販售的原料調出的版本。"
+  },
+  "atmospheres": {
+    "oxidation": "氧化燒成",
+    "reduction": "還原燒成",
+    "neutral": "中性燒成",
+    "wood": "柴燒",
+    "salt": "鹽燒",
+    "soda": "蘇打燒"
+  }
+}

@@ -119,183 +119,183 @@ Label: 入門組合
 
 Derek Au 把原料分成幾堆秤進同一個碗裡，這樣秤錯時可以把多的舀回去。如果您把原料秤進同一個桶子，而且每種之間不歸零，Glazecalc 的累計重量會告訴您，每加完一種後秤上應該顯示多少。
 
-## Mixing and sieving {#mixing lang=en}
+## 調配與過篩 {#mixing}
 
-### How much water
+### 要加多少水
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+各來源說法不一。Derek Au 從較稠的開始，每 100 g 粉料加 50 mL 水，之後再加。Potterycrafts 對一款釉粉給的是每 100 g 加 65 mL。UT Austin 用水與粉料等重，而 Digitalfire 把 20 kg 粉料放進 20 kg 水中時，量到的比重是 1.46。
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+加水很快，取出卻很慢，所以先從少的開始。我們的估計：從**每 100 g 約 70–80 mL** 開始（每公斤 700–800 mL，或每磅約 11–12 US fl oz）。在這個濃稠度下浸潤、攪拌和過篩，再一點一點加水，直到比重正確。1 mL 水重 1 g，所以可以用秤來秤水。如果加過頭了，讓釉藥沉澱，再用海綿吸走或倒掉上層的清水。
 
-### Tools and water
+### 工具與水
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **螺旋槳式攪拌機**。Digitalfire 稱好的攪拌機是「不可或缺的」。在桶子裡，附攪拌棒的電鑽就能勝任。UT Austin 在釉藥看起來已調勻之後，再攪拌至少 4–5 分鐘，並讓攪拌葉遠離桶壁，因為攪拌葉可能刮下塑膠。
+- **果汁機**。果汁機「很適合小量調配」（Digitalfire）。只能專供釉藥使用：絕不能再放回廚房。
+- **打蛋器或木棍**。沒有攪拌機時，Zakin 的選擇。
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+水質也會不同，Digitalfire 指出，水質會影響釉漿的表現。Derek Au 因為自來水硬度高，用逆滲透水。不論您用什麼水，都請記下來。
 
-### Step by step
+### 步驟
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. 戴上呼吸防護具，如果手會伸進去，也戴上橡膠手套。Zakin 從開始秤料到釉藥弄濕為止，都戴著呼吸防護具。
+2. 把每 100 g 粉料約 70–80 mL 的水量進桶子。
+3. 從低處輕輕加入秤好的粉料。UT Austin 是把粉料加進溫水；Zakin 和 Au 則是把水加進粉料。我們建議把粉料加進水裡，這樣揚起的粉塵較少，但皂土含量高的釉方例外：先把這類釉方的乾粉料攪拌在一起。
+4. 讓粉料**浸潤**：讓粉料浸泡，不要攪拌。Digitalfire 等約 20 分鐘。含有膠或黏劑的粉料需要放置一夜。
+5. 攪拌到沒有乾的粉團或結塊為止。
+6. 過篩兩次（見下文）。
+7. 蓋好，靜置一夜，然後再次攪拌，並檢查桶底有沒有硬塊。
+8. 測量比重，並一點一點加水，直到達到您的目標。想知道您這種釉自己的乾比重，也要秤一下調好的釉漿（見下文）。
+9. 在桶子上貼標籤，並記下您做了什麼。
+10. 用濕的方式清理：拖地，並擦拭每個表面，包括原料容器的外側。
 
-### Sieving
+### 過篩
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**篩網**是裝在框裡的網狀濾網。用刷子把釉藥壓過篩網，可以打散攪拌後殘留的結塊，並攔住燒出來會變成斑點的顆粒。**目數**越高，篩網越細：80 目的孔徑約 0.18 mm，100 目約 0.15 mm。
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+各來源建議的目數不同。Zakin 用 50 或 80 目篩兩次。Derek Au 大多數釉藥都用 120 目，尤其是含鈷或鐵的：有一款青瓷釉用 80 目篩了三次，仍留下鐵斑點，改用 120 目篩一次就解決了。他把 60–80 目留給灰釉和其他含粗顆粒原料的釉藥。英國的 Potterycrafts 建議 60–80 目。穩妥的預設做法：
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: 該用哪種篩網
+Label: 篩網目數
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| 釉藥                             | 篩網        |
+| -------------------------------- | ----------- |
+| 大多數釉藥                       | 80 目篩兩次 |
+| 含鈷或鐵等呈色劑的釉藥           | 100–120 目  |
+| 灰釉，以及其他含粗顆粒原料的釉藥 | 60–80 目    |
 
-## Specific gravity {#specific-gravity lang=en}
+## 比重 {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**比重**{{en: specific gravity}}（SG）告訴您釉漿裡有多少粉料。比重是一定體積的釉藥重量，除以同體積水的重量。水是 1.00，{{SG 1.45}} 的釉藥每 100 mL 重 145 g。依測得的比重來調配，就能每次得到同樣的濃稠度與同樣的釉層。比重沒有單位，所以不論以公克還是盎司計都相同。
 
-### Measure it by weighing 100 mL
+### 秤 100 mL 來測量
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. 把釉藥攪拌均勻，不要有任何沉澱。
+2. 把 100 mL 的**量筒**（有刻度的高管狀量具）或 100 mL 的針筒放在秤上，並扣重。
+3. 裝入釉藥到剛好 100 mL，讀刻度時視線與液面齊平。
+4. 秤重，把公克數除以 100：145 g 就是比重 1.45。
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire 還會在杯子上標出 500 g 水的液面，把釉藥裝到記號處，再把重量除以 500；較大、裝得較滿的量具比較準確。**比重計**是浮在釉藥中、依其浮出位置讀數的浮標，很快，但遇到濃稠或已膠化的釉藥可能讀錯。英國的比重計，例如 Potclays 的，讀數單位是波美度（°Bé）。依我們的算法，SG = 145 ÷ (145 − °Bé)，所以 46 °Bé 約為 1.46。較舊的英國書籍給的是**品脫重**，也就是一英制品脫釉藥的盎司數：除以 20，所以 29 oz 約為比重 1.45（同樣是我們的算法）。
 
-### What to aim for
+### 目標值
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+各來源說法不一，尤其是刷釉和噴釉，英國供應商 Potclays 給的數值高得多（該公司自己的數值「僅供參考」）。請把每個數字都當成起點。Digitalfire 的核心建議是，為每款釉藥找出適合的比重與膠化程度，然後重複使用並記下來。
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: 目標比重，各來源說法不一
+Label: 比重目標值
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| 用途 | Digitalfire 與 Glazy                                                                                             | Potclays（英國）                            | 穩妥的起點                                             |
+| ---- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------ |
+| 浸釉 | {{SG 1.40}}（浸 5 秒）至 {{SG 1.50}}（浸 1 秒）；自己調配且已膠化的釉藥，在 {{SG 1.43–1.45}} 效果最好            | 透明釉 {{SG 1.46–1.48}}；有色釉 {{SG 1.61}} | {{SG 1.45}}；如果會滴流，稀釋到 {{SG 1.43}} 並使其膠化 |
+| 刷釉 | {{SG 1.25}}（稀的透明釉）至 {{SG 1.55}}（深色細部）                                                              | {{SG 1.71–1.81}}                            | 照產品說明；使用 CMC 或刷釉用調和劑                    |
+| 噴釉 | 沒有數值；為 Ceramic Arts Network 撰文的 Hopper 說要稀得多，並加解膠劑{{en: deflocculant}}（使釉漿變稀的添加物） | {{SG 1.71}}                                 | 沒有可靠的數值；只在噴釉台內噴釉                       |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+用肉眼檢查浸釉用釉藥時，AMACO 浸 5 秒，看釉層是否約有一枚美國十美分硬幣那麼厚。Digitalfire 則燒浸 5 秒的試片來檢查。
 
-### Water for a target SG: our estimate
+### 達到目標比重所需的水量：我們的估算
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+下表是我們自己算的，不是哪個來源的。這個表假設粉料顆粒的密度是 2.6 g/cm³，這是假設，不是測量值。黏土、可溶的原料和膠化都會改變實際的釉藥，所以只用這個表來起步，然後再測量。作為對照，粉料與水等重時這個表預測 {{SG 1.44}}，和 Digitalfire 量到的 {{SG 1.46}} 很接近。這個表也顯示，每 100 g 加 70–80 mL 的起點會高於 {{SG 1.50}}，比您需要的更稠。
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: 達到目標比重所需的水量（我們的估算）
+Label: 達到目標比重所需的水量
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| 目標        | 每 100 g 粉料 |     每公斤 |           每磅 |
+| ----------- | ------------: | ---------: | -------------: |
+| {{SG 1.40}} |     約 115 mL | 約 1150 mL | 約 18 US fl oz |
+| {{SG 1.45}} |      約 98 mL |  約 980 mL | 約 15 US fl oz |
+| {{SG 1.50}} |      約 85 mL |  約 850 mL | 約 13 US fl oz |
+| {{SG 1.60}} |      約 64 mL |  約 640 mL | 約 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### 調配時求出您這種釉的乾比重
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+上面的 2.6 是猜測值。您自己這種釉的數值，也就是乾粉的密度，可以用調配時能量到的三個數字算出來。有了它，以後就能從比重算出這種釉任何一桶裡有多少粉，以及下一批需要的水。這是我們自己的計算，不是出自資料：
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. 記下這一批乾粉的重量：也就是釉方的總量。
+2. 開始前先秤空桶的重量，或把它的重量寫在桶上。
+3. 照平常一樣攪拌、過篩，並把釉調到目標比重。把所有東西都推過篩網，沖進桶裡，不要漏掉任何粉。
+4. 秤裝滿的桶，減去桶的重量。這就是釉漿的重量。
+5. 測量比重。
 
-Then:
+然後：
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **水** = 釉漿重量 − 粉的重量。
+- **釉漿體積**（mL）= 釉漿重量（公克）÷ 比重。
+- **粉的體積** = 釉漿體積 − 水（1 g 的水是 1 mL）。
+- **乾比重** = 粉的重量 ÷ 粉的體積。
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+例如：1000 g 的粉調成 {{SG 1.45}} 的釉漿 1980 g。水是 980 g，釉漿是 1980 ÷ 1.45 = 約 1366 mL，粉佔 1366 − 980 = 386 mL，乾比重是 1000 ÷ 386 = 約 2.59。
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+要在最後秤整桶釉漿，而不是在倒水時秤水，這樣蒸發或濺出的水就不會算進去。這裡小誤差會被放大：比重讀數差 0.01，結果就會變動約 2 到 4%，釉愈稀變動愈大。請用 1 kg 以上的一批、準確的秤，並用上面 500 g 杯子的方法量比重。大多數常用原料約在 2.5 到 2.9 之間，所以如果一種不含太多矽酸鋯或鉛的釉算出的數值遠遠超出這個範圍，很可能是量錯了。請把這個數值寫在釉方上。
 
-### Epsom salts, CMC gum and bentonite
+### 瀉鹽、CMC 與皂土
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**瀉鹽**（硫酸鎂）會讓釉藥靜置時輕微膠化，攪拌時又能再流動。這稱為使釉藥**絮凝**{{en: flocculating}}，具有這種特性的釉藥是**觸變**{{en: thixotropic}}的：上得更均勻、較不易滴流、也較不易沉澱。Digitalfire 建議在比重調對之後，從每加侖約 2 g 開始（約每公升 0.5 g，這是我們的換算），並在每次調配時調整用量，因為不該由釉方來固定劑量。我們建議先用少量熱水溶解。在 Digitalfire 的一個例子中，一款 {{SG 1.45}} 的釉藥會滴流，所以加水把比重降到 {{SG 1.43}}，再用瀉鹽讓釉藥膠化回奶油般的狀態，結果上得很均勻。簡單的檢查方法：攪拌，停下來，觀察。膠化的釉藥會繼續流動約 2 或 3 秒，然後停住，並稍微彈回一點。
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC**（羧甲基纖維素）會讓釉漿更黏、乾得更慢，並留下較硬、附著在作品上更牢的釉層。CMC 對刷釉用釉藥和熔塊含量高的釉藥最重要。Digitalfire 的例子是在 1000 g 釉漿中混入 3.75 g，而且必須用果汁機打進去。含 CMC 的釉藥不會被瀉鹽膠化，而且由於微生物以這種膠為食，這種釉藥在桶子裡可能變質並開始發臭。
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**皂土**是一種非常細的黏土，有助於讓其他顆粒保持懸浮。浸釉用釉藥通常靠 15–25% 的生土來達成這一點。對缺少黏土的釉方，加約 1–3% 的皂土會有幫助；Digitalfire 指出，黏土含量超過 15% 的釉藥，皂土應該不需要超過乾釉重量的 1%。
 
-## Test tiles and line blends {#testing lang=en}
+## 試片與直線配比試驗 {#testing}
 
-### Start small
+### 從小量開始
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au 分三步逐漸放大：先做 50 或 100 g 的測試，成功的話做 1–2 kg 的試調，然後才做 5–10 kg 的工作室調配量。依我們的估算，{{SG 1.45}} 的 100 g 測試約調出 135 mL（約 4½ US fl oz）的釉漿，足夠用窄杯浸幾片小試片。
 
-### Test on your own clay
+### 用您自己的坯土測試
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+同一款釉藥在另一種坯土或另一座窯裡，看起來可能差很多：Clay Art Center 把每一款重新配製的釉藥，都在四種坯土上測試，分別燒到 Orton 6 號與 10 號測溫錐。Potclays 的釉藥測試入門指南建議：
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6–10 片用您實際會用的坯土做成的**試片**{{en: test tiles}}（試釉用的小片），並註明試片是素燒過{{en: bisqued}}的還是全乾的
+- 一次只改變一個條件
+- 浸一次和浸兩次，看釉層薄的和厚的樣子
+- 所有試片放在同一窯中一起燒
+- 燒之前在每片試片上做記號，用印章、刻痕或釉下彩鉛筆。燒好的試片看起來都差不多，而燒之前做的記號經過窯燒也會留下來，所以您隨時都能分辨每片試片是哪個釉方。
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+我們建議用能立起來的試片，因為平放的試片看不出釉流了多遠；再加上一條有質感的橫帶，顯示釉在邊角處變薄、顏色變淺的情形，並留出不上釉的底足。把每片放在小碟子或一片素燒碎片上，或放在塗了棚板隔離劑的棚板上，承接滴下來的釉。把**見證錐**{{en: witness cone}}（受熱足夠時會彎倒的小型陶瓷錐）放在試片附近，顯示試片受到了多少熱；[基本燒窯](/guides/firing)指南說明測溫錐。給每片試片一個簡短的代碼，並在紀錄中把代碼和釉方寫在一起。為 Ceramic Arts Network 撰文的 Willers 用數字和字母，並把這套系統本身寫在筆記本的最前面。
 
-### Line blends
+### 直線配比試驗
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**直線配比試驗**{{en: line blend}}是一排試驗，從一種配比均勻地逐步變到另一種：從一款釉藥到第二款，或從基礎釉到加了更多呈色劑的同一款釉。例如 Derek Au 在透明基礎釉中，以每階 1% 遞增氧化鐵。一種與 Ian Currie 相關的體積法可以省時間，因為您只需要調兩端：
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. 把兩端的釉藥 A 和 B 調成同樣大小的批次，並都過篩。
+2. 在體積較少的那一桶加水，直到兩者的濕體積完全相同。
+3. 兩桶都攪拌，然後用針筒把每種配比抽進各自編號的杯子。
+4. 攪拌每個杯子，並浸一片試片。
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+在我們的示範例子中，A 是 100 g 的透明基礎釉，B 則是同樣的基礎釉再加 4 g 的紅色氧化鐵（外加 4%）。B 的每毫升含有的基礎釉比例和 A 的每毫升相同，再加上 B 的鐵，所以各杯會從不含鐵逐步變到 4%，每階 1%。每一端為這次混合提供 100 mL，依我們的估算，100 g 的調配量就夠了。
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: 五階的鐵直線配比試驗，每杯 40 mL（我們的示範例子）
+Label: 直線配比範例
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| 杯  | 透明基礎釉（A） | 含 4% 鐵的基礎釉（B） | 氧化鐵（外加 %） |
+| --- | --------------: | --------------------: | ---------------: |
+| 1   |           40 mL |                  0 mL |                0 |
+| 2   |           30 mL |                 10 mL |                1 |
+| 3   |           20 mL |                 20 mL |                2 |
+| 4   |           10 mL |                 30 mL |                3 |
+| 5   |            0 mL |                 40 mL |                4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+這個方法需要仔細的算術、調得均勻且比重一致的兩端，以及準確的秤。Derek Au 也用重量而不是體積來配比。**三角座標試釉**用三個端點做同樣的事，排列在一個三角形上。
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> 當某一階看起來有希望時，在[配方頁面](/recipe)上按**儲存為副本**，就會把這一階存成獨立的配方，原來的配方維持不變。
+
+## 保存紀錄 {#records}
+
+Willers 把目標說得很好：「有足夠的資料，能重現或避免您發現的結果」。開始之前先寫下您打算測試什麼，出窯時再寫下結果。Potclays 還補充要記下施釉方式、厚度、坯土，以及完整的燒成，包括升溫段、持溫與冷卻。**升溫段**{{en: ramp}}（降溫時稱降溫段）是加熱或冷卻的速率，例如每小時 {{60 °C; 108 °F}}，而**持溫**{{en: hold}}則是讓窯在某個溫度維持一段設定的時間。請記下批號、您用的水和任何替換：Clay Art Center 替換長石，就代表約有一半的釉藥要調整。
+
+Table: 每批釉藥要記錄什麼（我們的範本）
+Label: 紀錄範本
+
+| 項目 | 要寫下什麼                                                                                                                                                     |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 釉方 | 釉方及其版本；原料的品牌與批號；任何替換                                                                                                                       |
+| 調配 | 日期；調配量；加入的水及其種類（自來水、逆滲透水或蒸餾水）；剛調好時的比重與最終比重；調好的釉漿重量，用來求乾比重；加入的瀉鹽、CMC 與皂土；篩網目數與過篩次數 |
+| 施釉 | 坯土；素燒的測溫錐；浸釉、刷釉或淋釉；浸釉時間或施釉層數；乾燥後的厚度                                                                                         |
+| 燒成 | 窯與棚板位置；燒成曲線，含升溫段、持溫與冷卻；氣氛（氧化或還原）；見證錐顯示的結果，而不只是窯的設定值                                                         |
+| 結果 | 表面與顏色；有無流釉、開片或針孔；正面、背面與側面的照片；試片代碼                                                                                             |
+
+> [!NOTE]
+> 在 Glazecalc 中，儲存的[配方](/recipe)存放釉方本身。[燒窯紀錄](/firing)記錄每次燒窯：窯、日期、時間、溫度、測溫錐與備註。[筆記](/notes)則存放其他一切，例如上面的批次紀錄，以及每片試片的結果。
 
 ## 資料來源 {#sources}
 
