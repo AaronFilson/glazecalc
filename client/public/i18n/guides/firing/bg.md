@@ -458,73 +458,73 @@ Label: Digitalfire BQ1000
 
 Пещта с ръчно управление следва същия план, но на ръка: сушете бавно с открехнат капак и отворени наблюдателни отвори, превключвайте стъпка по стъпка от Low (ниско) на Medium (средно) и на High (високо) и оставете Kiln-Sitter да приключи изпичането. Публикуваните процедури са в „Пещи с ръчно управление в подробности“ по-долу.
 
-## Glaze firing {#glaze lang=en}
+## Глазурно изпичане {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Глазурното изпичане{{en: glaze firing}} стопява глазурата в стъкло върху бисквита. Повечето нискотемпературни глазури на пазара са направени за конус 06 или 05 (нискотемпературният диапазон е конус 06–04), а повечето глазури за средни температури – за конус 5–6. Изпичайте до конуса, посочен на етикетите на глазурата и глината, с комплект от три конуса около този номер. Какво става в глазурата, докато се стапя, вижте в наръчника „[Глазиране от основните принципи](/guides/glazing-basics)“.
 
-### Loading for a glaze firing
+### Подреждане за глазурно изпичане
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Глазираните изделия не трябва да се допират едно до друго или до стените: оставете около ½ инча (13 mm).
+- Не оставяйте глазура по дъното (**дъното се оставя без глазура**) или поставяйте нискотемпературните изделия на **триножници** – малки подставки с шипове. Каменината и порцеланът не бива да стоят на триножници, които при тези температури се врязват в тях; вместо това използвайте огнеупорна ангоба за високи температури или кварцов пясък.
+- Оставете поне 1 инч (25 mm) между ръбовете на плочите и стената или Kiln-Sitter.
 
-### Controller schedules
+### Програми на контролера
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Програми за глазурно изпичане на L&L и Bartlett
+Label: Програми за глазура
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Сегмент                        |                       Нагряване до |             Slow Glaze |             Fast Glaze |
+| ------------------------------ | ---------------------------------: | ---------------------: | ---------------------: |
+| 1                              |                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Без отделна стъпка |
+| 2                              | {{250 °F; 139 °C}} под максимума   | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                              |           Максималната температура |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Време за нагряване, празна пещ |                                    |      Около 6½–7½ часа |         Около 3–4 часа |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Къде свършват сегменти 2 и 3 според конуса (L&L и Bartlett)
+Label: Цели на програмите
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Конус |  Сегмент 2 свършва | Максимална температура |
+| ----- | -------------------: | ---------------------: |
+| 06    |  {{1569 °F; 854 °C}} |    {{1819 °F; 993 °C}} |
+| 04    |  {{1676 °F; 913 °C}} |   {{1926 °F; 1052 °C}} |
+| 6     | {{1982 °F; 1083 °C}} |   {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze е по-безопасният избор по подразбиране предвид предупреждението на L&L за бързото изпичане. Ако добавите задържане{{en: hold}} от повече от 5–10 минути при максималната температура, L&L съветва да понижите съответно целевата температура или корекцията на конуса и отбелязва, че „задържането при високи температури ускорява износването на нагревателите и термодвойката“.
 
-### Cone 6: drop-and-hold
+### Конус 6: спадане и задържане
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Глазурите за средни температури понякога излизат с **иглен бод**{{en: pinholes}} (мънички дупчици в повърхността) или мехури, оставени от газ, който излиза с мехурчета от стопилката. Програмата **спадане и задържане** (drop-and-hold) изпича до максимума, охлажда бързо с около {{100 °F; 56 °C}} и задържа там. По думите на Digitalfire „спадането със 100°F и задържането дават на стопилката достатъчен вискозитет, за да спукат мехурчетата, като същевременно им позволяват да се заздравят“.
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, спадане и задържане за конус 6
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Стъпка |                         Скорост |                 Цел | Задържане                                              |
+| ------ | ------------------------------: | -------------------: | ------------------------------------------------------ |
+| 1      |           {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 минути                                              |
+| 2      |          {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | По желание 30 минути, за да се изчистят облаците мехурчета |
+| 3      |           {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 минути; по-дълго в големи пещи                      |
+| 4      | Надолу с {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 минути                                              |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS продължава около 9 часа и 36 минути. За по-течливи глазури Digitalfire спада вместо това с около {{200 °F; 111 °C}}; твърде голямото спадане „рискува кристализация по време на задържането“. Максимумът ѝ от {{2200 °F; 1204 °C}} е под стойността в таблицата от {{2232 °F; 1222 °C}} за конус 6; Digitalfire съобщава, че повечето пещи достигат конус 6 при около {{2200 °F; 1204 °C}}. Проверете го с комплект от три конуса в собствената си пещ.
 
-### Slow cooling
+### Контролирано охлаждане
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Контролирано охлаждане**{{en: slow cooling}} означава, че контролерът охлажда пещта със зададена скорост, вместо да я остави да изстива свободно. C6DHSC на Digitalfire е PLC6DS, последвана от охлаждане с {{150 °F/h; 83 °C/h}} от {{2100 °F; 1148 °C}} до {{1400 °F; 760 °C}}, след което пещта се изключва. Тя „подобрява блясъка и качеството на повърхността“ и помага на сините глазури с рутил, но контролираното охлаждане „може да увеличи матовостта“ (една матова глазура е станала суха) и може да скъси живота на релетата на пещта. L&L доставя и програма с контролирано охлаждане за конус 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L „User 6“: контролирано охлаждане за глазури за конус 6
+Label: Контролирано охлаждане L и L
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Стъпка |                           Скорост |                  Цел |
+| ------ | --------------------------------: | -------------------: |
+| 1      |     С пълна скорост нагоре | {{2232 °F; 1222 °C}} |
+| 2      |     С пълна скорост надолу | {{1900 °F; 1038 °C}} |
+| 3      | Надолу с {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Контролерите на Skutt също предлагат подсушаване и охлаждане в една стъпка.
 
-### On a manual kiln
+### В пещ с ръчно управление
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Пещ с ръчно управление не може да следва точно тези програми, но планът е същият: внимателно в началото, равномерно в средата и наблюдаван край. Нискотемпературната програма за глазура на Bracker's е по-долу, в „Пещи с ръчно управление в подробности“; за по-горещи конуси тя добавя „средно 15–30 минути за всеки номер на конуса“. С пирометър, опит и дневник можете приблизително да повторите спадане и задържане или контролирано охлаждане, като намалявате ключовете на ръка, както предлага Digitalfire.
 
 ## Пещи с ръчно управление в подробности {#manual-kilns}
 
