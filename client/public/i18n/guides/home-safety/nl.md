@@ -59,31 +59,31 @@ Label: Oplosbare grondstoffen
 
 Het grootste gevaar van lood is anders: niet één lepel vol, maar kleine hoeveelheden stof die over weken of maanden worden ingeslikt, zonder waarschuwingssignalen (zie “Lood en kinderen” hieronder).
 
-## Storing materials at home {#storing-materials lang=en}
+## Grondstoffen thuis bewaren {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Geen enkele officiële instantie stelt regels op voor het bewaren van glazuurgrondstoffen thuis, maar pagina’s over gezondheid en veiligheid zijn het erover eens: houd het werk in een eigen ruimte, uit de buurt van kinderen. De gezondheidsdienst van Pennsylvania schrijft over hobby’s waarbij lood wordt gebruikt: “Gebruik voor uw hobby een aparte werkruimte of de garage en houd kinderen uit de buurt van deze ruimte.”
 
-### A storage checklist
+### Een checklist voor het bewaren
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Dit zijn algemene regels om vergiftiging te voorkomen, toegepast op glazuur{{en: glaze}}. Geen enkele keramieknorm schrijft ze voor, maar we stellen ze allemaal voor:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Bewaar droge grondstoffen achter slot: in een kast, of in een kamer, garage of schuur die op slot kan. Een hoge plank helpt, maar kinderen klimmen. Kunt u eerst maar een paar dingen achter slot zetten, begin dan met de oplosbare grondstoffen en de kleurstoffen{{en: colorants}}.
+- Bewaar grondstoffen in hun oorspronkelijke zakken of potten. Doet u een grondstof over in een andere verpakking, zet er dan een etiket op met de naam, precies zoals die op de zak staat.
+- Gebruik nooit verpakkingen van eten of drinken (yoghurtbekers, glazen potjes, flessen) voor glazuurgrondstoffen, ook niet met een etiket. Een kind weet wat er in een yoghurtbeker zit.
+- Houd het gereedschap van het atelier (scheppen, lepels, gardes, zeven, weegschalen) in het atelier. Gebruik nooit keukengerei voor glazuur, en nooit glazuurgereedschap voor eten.
+- Bewaar natte glazuren in emmers met een etiket, met het deksel erop.
+- Bewaar bij elke grondstof het veiligheidsinformatieblad, op papier of op uw telefoon.
+- Bewaar niets uit het atelier in de keuken: geen zakken, emmers, gereedschap of proefplaatjes{{en: test tiles}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Meer over het inkopen en bewaren van grondstoffen leest u in [Een glazuur aanmaken](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Glazuurresten en spoelwater
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Giet nooit glazuur, of water waarin u glazuurgereedschap hebt afgespoeld, door de gootsteen of in de tuin. De Britse Crafts Council stelt een aparte emmer water voor om handen, kwasten, zeven en gereedschap in te wassen. Laat die een nacht bezinken, giet het heldere water af, laat dan het bezonken glazuur drogen en gooi het in de vuilnisbak (het gaat naar de stortplaats), nooit door de afvoer.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+We stellen een deksel op die emmer voor: het bezinksel bevat dezelfde metalen als het glazuur, en huisdieren drinken stilstaand water. De regels voor het afvoeren van afval verschillen van plaats tot plaats; kijk dus in het veiligheidsinformatieblad van elk product, en vraag het bij twijfel aan uw gemeente of uw waterbedrijf.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Sommige ateliers stoken het gedroogde bezinksel voordat ze het weggooien. Ze doen het in een overbodige kom die mag worden opgeofferd: na de stook kan de kom niet meer worden gebruikt. Vul de kom maar voor een kwart, want het bezinksel schuimt en borrelt als het smelt, en dek hem af met een bord. Zet hem op een ovenplaat met ovenplaatbescherming of op een losse plaat, voor het geval hij overloopt. De stook maakt van het bezinksel glas, dat de metalen veel vaster vasthoudt dan los poeder, zodat het op een stortplaats veiliger is. Ga met het droge bezinksel om zoals met droog glazuur: met een stofmasker en zonder stof te maken.
 
 ## Stof in het atelier houden {#keeping-dust-in-the-studio}
 

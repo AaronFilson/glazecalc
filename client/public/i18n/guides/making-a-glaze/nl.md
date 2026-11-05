@@ -119,183 +119,183 @@ Adviezen verschillen over hoe fijn uw weegschaal moet wegen. Derek Au vond een g
 
 Derek Au weegt af in één kom, in aparte hoopjes, zodat een vergissing er weer uit te scheppen is. Als u alles in één emmer afweegt zonder tussen de grondstoffen te tarreren, vertelt het subtotaal in Glazecalc wat de weegschaal na elke grondstof moet aangeven.
 
-## Mixing and sieving {#mixing lang=en}
+## Mengen en zeven {#mixing}
 
-### How much water
+### Hoeveel water
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Bronnen zijn het oneens. Derek Au begint dik, met 50 mL water per 100 g poeder, en voegt later meer toe. Potterycrafts geeft 65 mL per 100 g voor een van zijn poederglazuren. UT Austin weegt evenveel water als poeder af, en toen Digitalfire 20 kg poeder in 20 kg water deed, mat het een soortelijk gewicht{{en: specific gravity}} van 1,46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Water is snel toegevoegd en traag weer verwijderd, dus begin met weinig. Onze schatting: begin met **ongeveer 70 tot 80 mL per 100 g** (700 tot 800 mL per kilogram, of ongeveer 11 tot 12 US fl oz per Engels pond). Laat inweken, meng en zeef bij die dikte, en voeg dan beetje bij beetje water toe tot het soortelijk gewicht klopt. 1 mL water weegt 1 g, dus u kunt het afwegen. Schiet u door, laat het glazuur{{en: glaze}} dan bezinken en haal het heldere water bovenaan eraf met een spons, of giet het af.
 
-### Tools and water
+### Gereedschap en water
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Propellermenger.** Digitalfire noemt een goede “onmisbaar”. Een boormachine met snoer en een mengstaaf doet het werk in een emmer. UT Austin laat hem nog minstens 4 tot 5 minuten draaien nadat het glazuur gemengd lijkt, en houdt de mengkop weg van de emmer, waar hij plastic vanaf kan schrapen.
+- **Blender.** Die “werkt buitengewoon goed voor kleine hoeveelheden” (Digitalfire). Gebruik hem alleen voor glazuur: hij mag nooit meer terug naar de keuken.
+- **Garde of stok.** De keuze van Zakin als er geen menger is.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Ook water verschilt, en Digitalfire merkt op dat het verandert hoe aangemaakt glazuur{{en: slurry}} zich gedraagt. Derek Au gebruikt osmosewater omdat zijn kraanwater hard is. Wat u ook gebruikt, noteer het.
 
-### Step by step
+### Stap voor stap
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Zet uw stofmasker op, en trek rubberen handschoenen aan als uw handen erin gaan. Zakin draagt een stofmasker vanaf het begin van het afwegen tot het glazuur nat is.
+2. Meet ongeveer 70 tot 80 mL water per 100 g poeder af in de emmer.
+3. Voeg het afgewogen poeder voorzichtig toe, van geringe hoogte. UT Austin doet poeder in warm water; Zakin en Au doen water bij het poeder. We raden poeder in water aan, wat minder stof doet opwaaien, behalve bij een recept met veel bentoniet: roer daarvan eerst de droge poeders door elkaar.
+4. **Laat het inweken**: laat het poeder in het water weken zonder te roeren. Digitalfire wacht ongeveer 20 minuten. Poeders met glazuurlijm of een bindmiddel moeten een nacht blijven staan.
+5. Meng tot er geen droge plekken of klonten meer zijn.
+6. Zeef het twee keer (zie hieronder).
+7. Dek het af en laat het een nacht rusten, meng dan opnieuw en controleer de bodem op een harde laag.
+8. Meet het soortelijk gewicht, en voeg beetje bij beetje water toe tot u uw streefwaarde bereikt. Weeg ook het afgewerkte aangemaakte glazuur als u het droge soortelijk gewicht van uw eigen glazuur wilt weten (zie hieronder).
+9. Zet een etiket op de emmer, en schrijf op wat u hebt gedaan.
+10. Maak nat schoon: dweil de vloer en neem elk oppervlak vochtig af, ook de buitenkant van de bakken met grondstoffen.
 
-### Sieving
+### Zeven
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+Een **zeef** is gaas in een rand. Als u glazuur er met een kwast doorheen duwt, breekt u de klonten die het mengen achterlaat, en houdt u deeltjes tegen die na het stoken spikkels zouden geven. Hoe hoger het **mesh**-getal, hoe fijner het gaas: 80 mesh heeft een maaswijdte van ongeveer 0,18 mm, en 100 mesh van ongeveer 0,15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Bronnen raden verschillende maaswijdtes aan. Zakin zeeft twee keer door 50 of 80 mesh. Derek Au gebruikt 120 mesh voor de meeste glazuren, vooral die met kobalt of ijzer: drie keer zeven door 80 mesh liet in een celadon nog ijzerspikkels achter, en één keer door 120 mesh loste dat op. Voor asglazuren en andere glazuren met grove grondstoffen houdt hij het bij 60 tot 80 mesh. Potterycrafts, in het Verenigd Koninkrijk, raadt 60 tot 80 mesh aan. Een veilige standaardkeuze:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Welke zeef u gebruikt
+Label: Maaswijdte van de zeef
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glazuur                                                          | Zeef                   |
+| ---------------------------------------------------------------- | ---------------------- |
+| De meeste glazuren                                               | Twee keer door 80 mesh |
+| Glazuren met kleurstoffen{{en: colorants}} zoals kobalt of ijzer | 100 tot 120 mesh       |
+| Asglazuren en andere glazuren met grove grondstoffen             | 60 tot 80 mesh         |
 
-## Specific gravity {#specific-gravity lang=en}
+## Soortelijk gewicht {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+Het **soortelijk gewicht**{{en: specific gravity, SG}} (SG) zegt hoeveel poeder er in uw aangemaakte glazuur{{en: slurry}} zit. Het is het gewicht van een volume glazuur{{en: glaze}} gedeeld door het gewicht van hetzelfde volume water. Water is 1,00, en een glazuur met {{SG 1.45}} weegt 145 g per 100 mL. Door te mengen tot een gemeten soortelijk gewicht krijgt u elke keer dezelfde dikte, en dezelfde laag. Het heeft geen eenheid, dus het is hetzelfde in grammen of in ounces.
 
-### Measure it by weighing 100 mL
+### Meten door 100 mL te wegen
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Roer het glazuur om, zodat er niets bezonken is.
+2. Zet een **maatcilinder** van 100 mL (een hoge buis met maatstreepjes) of een spuit van 100 mL op de weegschaal, en tarreer.
+3. Vul hem met glazuur tot precies 100 mL, en lees de streep op ooghoogte af.
+4. Weeg hem en deel het aantal gram door 100: 145 g is een soortelijk gewicht van 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire markeert ook een beker op de hoogte van 500 g water, vult die tot de streep met glazuur en deelt het gewicht door 500; een grotere, vollere maat is nauwkeuriger. Een **areometer**, een drijver die u afleest op de hoogte waarop hij in het glazuur drijft, is snel, maar kan bij dikke of opgestijfde glazuren verkeerd aangeven. Britse areometers, zoals die van Potclays, geven graden Baumé (°Bé) aan. Volgens onze berekening is het soortelijk gewicht = 145 ÷ (145 − °Bé), dus 46 °Bé is ongeveer 1,46. Oudere Britse boeken geven een **pintgewicht**, het aantal ounces in een Engelse pint glazuur: deel het door 20, dus 29 oz is ongeveer een soortelijk gewicht van 1,45 (ook onze berekening).
 
-### What to aim for
+### Waar u naar streeft
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Bronnen zijn het oneens, vooral over kwasten en spuiten, waarvoor de Britse leverancier Potclays veel hogere waarden geeft (zijn eigen waarden zijn “alleen ter indicatie”). Zie elk getal als een vertrekpunt. Het kernadvies van Digitalfire is: zoek het soortelijk gewicht en de mate van opstijven die bij elk glazuur werken, herhaal die daarna en schrijf ze op.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Streefwaarden voor het soortelijk gewicht, waar bronnen het oneens zijn
+Label: Streefwaarden soortelijk gewicht
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Gebruik  | Digitalfire en Glazy                                                                                                                                                                      | Potclays (VK)                                        | Veilig vertrekpunt                                                       |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| Dompelen | {{SG 1.40}} (voor een dompeltijd van 5 seconden) tot {{SG 1.50}} (voor een dompeltijd van 1 seconde); zelf aangemaakte glazuren die zijn opgestijfd, werken het best bij {{SG 1.43–1.45}} | Transparant: {{SG 1.46–1.48}}; gekleurd: {{SG 1.61}} | {{SG 1.45}}; verdun tot {{SG 1.43}} en laat het opstijven als het druipt |
+| Kwasten  | {{SG 1.25}} (dun transparant) tot {{SG 1.55}} (donker detailwerk)                                                                                                                         | {{SG 1.71–1.81}}                                     | Volg de aanwijzingen van het product; gebruik CMC of een kwastmedium     |
+| Spuiten  | Geen waarde; Hopper zegt in een artikel voor Ceramic Arts Network: veel dunner, met een ontvlokkingsmiddel{{en: deflocculant}} (een toevoeging die aangemaakt glazuur dunner maakt)       | {{SG 1.71}}                                          | Geen betrouwbaar getal; spuit alleen in een spuitcabine                  |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Om een dompelglazuur op het oog te controleren, dompelt AMACO 5 seconden en kijkt of de laag ongeveer zo dik is als een Amerikaans dubbeltje (dime). Digitalfire stookt ter controle proefplaatjes{{en: test tiles}} die 5 seconden zijn gedompeld.
 
-### Water for a target SG: our estimate
+### Water voor een gewenst soortelijk gewicht: onze schatting
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+De tabel hieronder is ons eigen rekenwerk, niet dat van een bron. Hij gaat ervan uit dat de deeltjes van het poeder een dichtheid van 2,6 g per cm³ hebben, wat een aanname is, geen meting. Klei, oplosbare grondstoffen en opstijven veranderen allemaal een echt glazuur, dus gebruik hem om te beginnen, en meet daarna. Ter controle: hij voorspelt {{SG 1.44}} bij evenveel poeder als water in gewicht, dicht bij wat Digitalfire mat: {{SG 1.46}}. Hij laat ook zien dat u met 70 tot 80 mL per 100 g boven {{SG 1.50}} begint, dikker dan nodig.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Water voor een gewenst soortelijk gewicht (onze schatting)
+Label: Water voor een gewenst soortelijk gewicht
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Streefwaarde | Per 100 g poeder |     Per kilogram |      Per Engels pond |
+| ------------ | ---------------: | ---------------: | -------------------: |
+| {{SG 1.40}}  |  ongeveer 115 mL | ongeveer 1150 mL | ongeveer 18 US fl oz |
+| {{SG 1.45}}  |   ongeveer 98 mL |  ongeveer 980 mL | ongeveer 15 US fl oz |
+| {{SG 1.50}}  |   ongeveer 85 mL |  ongeveer 850 mL | ongeveer 13 US fl oz |
+| {{SG 1.60}}  |   ongeveer 64 mL |  ongeveer 640 mL | ongeveer 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Het droge soortelijk gewicht van uw eigen glazuur vinden tijdens het mengen
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+De 2,6 hierboven is een gok. Het getal van uw eigen glazuur, de dichtheid van het droge poeder, kunt u berekenen uit drie getallen die u tijdens het mengen kunt opnemen. Daarmee kunt u later uit het soortelijk gewicht berekenen hoeveel poeder er in een emmer van dat glazuur zit, en hoeveel water het volgende mengsel nodig heeft. Ons rekenwerk, niet dat van een bron:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Schrijf het gewicht van het droge poeder in het mengsel op: het totaal van het recept.
+2. Weeg de lege emmer voordat u begint, of zet het gewicht erop.
+3. Meng, zeef en breng het glazuur zoals gewoonlijk op zijn soortelijk gewicht. Duw alles door de zeef en spoel het in de emmer, zodat er geen poeder achterblijft.
+4. Weeg de volle emmer en trek het gewicht van de emmer eraf. Dat is het gewicht van het aangemaakte glazuur.
+5. Meet het soortelijk gewicht.
 
-Then:
+Dan:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Water** = gewicht van het aangemaakte glazuur − gewicht van het poeder.
+- **Volume van het aangemaakte glazuur** in mL = gewicht van het aangemaakte glazuur in gram ÷ soortelijk gewicht.
+- **Volume van het poeder** = volume van het aangemaakte glazuur − water (1 g water is 1 mL).
+- **Droog soortelijk gewicht** = gewicht van het poeder ÷ volume van het poeder.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Een voorbeeld: 1000 g poeder geeft 1980 g aangemaakt glazuur met {{SG 1.45}}. Het water is 980 g, het aangemaakte glazuur is 1980 ÷ 1,45 = ongeveer 1366 mL, het poeder neemt 1366 − 980 = 386 mL in, en het droge soortelijk gewicht is 1000 ÷ 386 = ongeveer 2,59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Weeg aan het eind het hele aangemaakte glazuur, niet het water terwijl u het toevoegt, zodat water dat verdampt of wegspat niet meetelt. Kleine fouten worden hier groot: een soortelijk gewicht dat 0,01 afwijkt, verschuift de uitkomst met ongeveer 2 tot 4%, meer bij een dunner glazuur. Gebruik een mengsel van 1 kg of meer, een nauwkeurige weegschaal en voor het soortelijk gewicht de methode met de beker van 500 g hierboven. De meeste gangbare grondstoffen liggen tussen ongeveer 2,5 en 2,9, dus een getal ver daarbuiten, in een glazuur zonder veel zirkoonsilicaat of lood, wijst waarschijnlijk op een meetfout. Schrijf het getal op het recept.
 
-### Epsom salts, CMC gum and bentonite
+### Bitterzout, CMC en bentoniet
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Bitterzout** (magnesiumsulfaat) laat een glazuur een beetje opstijven als het stilstaat, en weer vloeien als het wordt geroerd. Dit heet **uitvlokken**{{en: flocculating}}, en een glazuur dat zich zo gedraagt, is **thixotroop**{{en: thixotropic}}: het gaat gelijkmatiger op, druipt minder en bezinkt minder. Digitalfire raadt aan te beginnen met ongeveer 2 g per gallon zodra het soortelijk gewicht klopt (grofweg 0,5 g per liter, onze omrekening), en de hoeveelheid bij elke keer mengen bij te stellen, omdat geen recept de dosis zou moeten vastleggen. We raden aan het eerst in een beetje heet water op te lossen. In een voorbeeld van Digitalfire droop een glazuur met {{SG 1.45}}, dus bracht water het terug naar {{SG 1.43}} en liet bitterzout het weer romig opstijven, en het ging gelijkmatig op. Een ruwe controle: roer, stop en kijk. Een opgestijfd glazuur beweegt nog ongeveer 2 of 3 seconden door, stopt dan en veert een beetje terug.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC** (carboxymethylcellulose, ook verkocht als glazuurlijm) maakt aangemaakt glazuur kleveriger en laat het langzamer drogen, en geeft een hardere laag die aan de pot hecht. Het is het belangrijkst voor kwastglazuren en glazuren met veel fritte{{en: frit}}. In het voorbeeld van Digitalfire wordt 3,75 g door 1000 g aangemaakt glazuur gemengd, en dat moet met een blender. Een glazuur met CMC stijft niet op met bitterzout, en omdat microben zich met de CMC voeden, kan het in de emmer veranderen en gaan stinken.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer bentoniet nodig zou moeten hebben dan 1% van het gewicht van het droge glazuur.
 
-## Test tiles and line blends {#testing lang=en}
+## Proefplaatjes en proevenreeksen {#testing}
 
-### Start small
+### Begin klein
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au bouwt het op in drie stappen: een proef van 50 of 100 g, als die bevalt een grotere proef van 1 tot 2 kg, en dan een hoeveelheid van 5 tot 10 kg voor het atelier. Volgens onze schatting geeft een proef van 100 g bij {{SG 1.45}} ongeveer 135 mL (ongeveer 4½ US fl oz) aangemaakt glazuur{{en: slurry}}, genoeg om een paar kleine plaatjes in een smalle beker te dompelen.
 
-### Test on your own clay
+### Test op uw eigen klei
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Een glazuur{{en: glaze}} kan er op een andere klei of in een andere oven heel anders uitzien: Clay Art Center testte elk van zijn aangepaste glazuren op vier kleimassa’s{{en: clay bodies}}, gestookt tot kegel{{en: cone}} 6 en tot kegel 10. De beginnersgids voor glazuurproeven van Potclays raadt aan:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 tot 10 **proefplaatjes**{{en: test tiles}} (kleine stukjes om een glazuur op te proberen) van de klei die u echt gaat gebruiken, met de aantekening of ze biscuit gestookt{{en: bisqued}} of beendroog zijn
+- één verandering tegelijk
+- één keer en twee keer dompelen, om het glazuur dun en dik te zien
+- alle plaatjes in dezelfde ovenlading
+- een merkteken op elk plaatje vóór het stoken, met een stempel, door in te kerven of met een onderglazuurpotlood. Gebakken plaatjes lijken op elkaar, en een merkteken dat vóór het stoken is aangebracht, overleeft de oven, zodat u altijd kunt zien bij welk recept elk plaatje hoort.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+We raden rechtopstaande plaatjes aan, omdat een plat plaatje verbergt hoe ver een glazuur loopt, met een band met reliëf om te laten zien hoe het glazuur op randen aftekent, en een voet zonder glazuur. Zet elk plaatje op een schaaltje of een stukje biscuit, of op een ovenplaat met ovenplaatbescherming, om druppels op te vangen. Zet een **controlekegel**{{en: witness cone}}, een kleine keramische kegel die buigt als hij genoeg warmte heeft gekregen, bij de plaatjes, om te laten zien wat ze hebben gekregen; de gids [Een eenvoudige oven stoken](/guides/firing) legt kegels uit. Geef elk plaatje een korte code, en schrijf die naast het recept in uw aantekeningen. Willers gebruikt in een artikel voor Ceramic Arts Network cijfers en letters, en schrijft het systeem zelf voorin het notitieboek.
 
-### Line blends
+### Proevenreeksen
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+Een **proevenreeks**{{en: line blend}} is een rij proeven die in gelijke stappen van het ene mengsel naar het andere gaat: van het ene glazuur naar een tweede, of van een basisglazuur naar hetzelfde glazuur met meer kleurstof{{en: colorant}}. Derek Au voegt bijvoorbeeld ijzeroxide aan een transparant basisglazuur toe in stappen van 1%. Een methode op volume die met Ian Currie in verband wordt gebracht, bespaart tijd, omdat u alleen de twee uitersten mengt:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Meng de twee eindglazuren, A en B, in even grote hoeveelheden, en zeef ze allebei.
+2. Voeg water toe aan het glazuur met het kleinste volume tot beide precies hetzelfde natte volume hebben.
+3. Roer beide om, en breng dan met een spuit elk mengsel over in een eigen genummerd bekertje.
+4. Roer elk bekertje om en dompel er een plaatje in.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+In ons uitgewerkte voorbeeld is A 100 g van een transparant basisglazuur, en B hetzelfde met 4 g rood ijzeroxide erbij (een toevoeging van 4%). Elke milliliter van B bevat evenveel basisglazuur als een milliliter van A, plus het ijzer, dus de bekertjes gaan van geen ijzer naar 4% in stappen van 1%. Elk uiterste levert 100 mL aan de reeks, en een hoeveelheid van 100 g is daar volgens onze schatting genoeg voor.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Een proevenreeks met ijzer in vijf stappen, 40 mL per bekertje (ons uitgewerkte voorbeeld)
+Label: Voorbeeld proevenreeks
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Bekertje | Transparant basisglazuur (A) | Basisglazuur met 4% ijzer (B) | IJzeroxide, % van het basisglazuur |
+| -------- | ---------------------------: | ----------------------------: | ---------------------------------: |
+| 1        |                        40 mL |                          0 mL |                                  0 |
+| 2        |                        30 mL |                         10 mL |                                  1 |
+| 3        |                        20 mL |                         20 mL |                                  2 |
+| 4        |                        10 mL |                         30 mL |                                  3 |
+| 5        |                         0 mL |                         40 mL |                                  4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+De methode vraagt zorgvuldig rekenwerk, goed gemengde uitersten met hetzelfde soortelijk gewicht{{en: specific gravity}}, en een nauwkeurige weegschaal. Derek Au mengt ook op gewicht in plaats van op volume. Een **driehoeksmenging** doet hetzelfde met drie uitersten, uitgezet op een driehoek.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Als een stap veelbelovend lijkt, bewaart **Opslaan als kopie** op de [receptpagina](/recipe) die stap als een eigen recept, en blijft het origineel zoals het was.
+
+## Aantekeningen bijhouden {#records}
+
+Willers verwoordt het doel goed: “genoeg informatie om de resultaten die u ontdekte te kunnen herhalen, of te vermijden”. Schrijf op wat u wilt testen voordat u begint, en de resultaten als u de oven leeghaalt. Potclays noemt daarnaast de manier van aanbrengen, de laagdikte, de kleimassa{{en: clay body}} en de volledige stook, met stijgingen{{en: ramps}}, houdtijden{{en: holds}} en afkoeling. Een **stijging** of **daling** is een snelheid van opwarmen of afkoelen, zoals {{60 °C; 108 °F}} per uur, en een **houdtijd** houdt de oven een vaste tijd op één temperatuur. Noteer partijnummers, het water dat u gebruikte en elke vervanging: door de overstap op andere veldspaat moest Clay Art Center ongeveer de helft van zijn glazuren{{en: glazes}} aanpassen.
+
+Table: Wat u voor elke hoeveelheid glazuur noteert (ons sjabloon)
+Label: Sjabloon voor aantekeningen
+
+| Onderdeel  | Wat u opschrijft                                                                                                                                                                                                                                                                                                                                       |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Recept     | Het recept en de versie ervan; merken en partijnummers van de grondstoffen; eventuele vervangingen                                                                                                                                                                                                                                                     |
+| Mengen     | Datum; hoeveelheid; toegevoegd water, en de soort (kraanwater, osmosewater of gedestilleerd water); soortelijk gewicht na het mengen en uiteindelijk soortelijk gewicht; het gewicht van het afgewerkte aangemaakte glazuur, voor het droge soortelijk gewicht; toegevoegd bitterzout, CMC en bentoniet; maaswijdte van de zeef en aantal keer gezeefd |
+| Aanbrengen | Kleimassa; kegel van de biscuitstook{{en: bisque}}; dompelen, kwasten of overgieten; dompeltijd of aantal lagen; droge laagdikte                                                                                                                                                                                                                       |
+| Stoken     | Oven en plaats in de oven; het stookschema, met stijgingen, houdtijden en afkoeling; ovenatmosfeer (oxiderend{{en: oxidation}} of reducerend{{en: reduction}}); wat de controlekegel{{en: witness cone}} liet zien, niet alleen waarop de oven was ingesteld                                                                                           |
+| Resultaat  | Oppervlak en kleur; eventueel aflopen, haarscheuren{{en: crazing}} of speldenprikken{{en: pinholes}}; foto’s van voorkant, achterkant en zijkant; de code van het plaatje                                                                                                                                                                              |
+
+> [!NOTE]
+> In Glazecalc bevat een opgeslagen [recept](/recipe) het recept zelf. Een [stookverslag](/firing) legt elke stook vast: de oven, de datum, tijden, temperaturen, kegels en opmerkingen. In [notities](/notes) bewaart u al het andere, zoals de aantekeningen per hoeveelheid hierboven en wat elk plaatje liet zien.
 
 ## Bronnen {#sources}
 
