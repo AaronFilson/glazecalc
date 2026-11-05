@@ -179,6 +179,24 @@ page; no poison line confirmed.
 
 **Native check** on the whole table.
 
+### 2.6 Round 14 terms (2026-11-04)
+
+No Igbo ceramics source read; built from Echeruo's everyday words (_ntụ_ ash, _ahịhịa_ straw, _osikapa_ rice, _nkume_
+stone, _apịtị_ mud). **Native check** on all.
+
+| English                    | ig                                           | Notes                             |
+| -------------------------- | -------------------------------------------- | --------------------------------- |
+| wood ash                   | ntụ osisi                                    |                                   |
+| synthetic ash (合成土灰)   | ihe nnọchi e mepụtara (synthetic) maka 土灰  | Japanese name kept.               |
+| rice-straw ash (藁灰)      | ntụ ahịhịa osikapa                           |                                   |
+| isu ash (柞灰)             | ntụ isu                                      |                                   |
+| porcelain stone (瓷石)     | nkume porcelain                              |                                   |
+| caustic                    | na-ere akpụkpọ ahụ (caustic)                 | English kept for the safety text. |
+| powder; sludge             | ntụ; apịtị                                   |                                   |
+| drop-and-hold; hold        | ibelata na ichere; nchere                    |                                   |
+| glass former; stabilizer   | onye na-ewu iko; onye na-eme ka ọ kwụsie ike |                                   |
+| line blend, triaxial blend | line blend, triaxial blend                   | Loans.                            |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG, Orton, Seger,
