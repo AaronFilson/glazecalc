@@ -723,7 +723,8 @@
     "keyPoint": "Ponc: an glónra seo.",
     "keyBright": "Líne phoncáilte: san áit a raibh glónraí Stull ar an gceann is lonraí.",
     "keyLimits": "Línte stríocacha agus scáthú: raonta silice agus alúmana na sraithe {name}.",
-    "keyCrazed": "Línte caola: san áit ar shnáithlíonraigh siad."
+    "keyCrazed": "Línte caola: san áit ar shnáithlíonraigh siad.",
+    "note": "Treoir, ní tuar. Bhácáil R. T. Stull (Transactions of the American Ceramic Society, 1912) ag thart ar chón 11, agus na floscanna socraithe ag 0.3 K₂O agus 0.7 CaO; bogann floscanna agus bácálacha eile na limistéir, agus is féidir le glónra nach bhfuil neamhlonrach ach toisc gur tearcbhácáladh é a bheith sa limistéar lonrach ar an gcairt fós. Tá na limistéir mar a tharraingíonn Glazy iad."
   },
   "slurry": {
     "heading": "Sainmheáchan agus uisce",
@@ -763,7 +764,19 @@
     "saveTarget": "Sábháil sainmheáchan {sg} mar sprioc an oidis seo",
     "targetSaved": "Is é sainmheáchan {sg} sprioc an oidis seo. Coinnítear leis an oideas é nuair a shábhálann tú é.",
     "targetKept": "Is é sainmheáchan {sg} sprioc an oidis.",
-    "clearTarget": "Glan an sprioc"
+    "clearTarget": "Glan an sprioc",
+    "drySgEmpty": "Ní theastaíonn sé ach do na meáchain thirime; ní theastaíonn sé don uisce le cur leis. Clóscríobh é más eol duit é.",
+    "drySgNeeded": "Clóscríobh sainmheáchan na n-ábhar tirim chun an glónra tirim sa bhuicéad agus an t-uisce do bhaisc nua a fheiceáil.",
+    "estimate": {
+      "mineral": "Meastachán, {sg}, ón rud as a ndéantar gach ábhar: dlús tomhaiste a mhianra. Athraigh é más fearr is eol duit.",
+      "kind": "Meastachán, {sg}: meánn iathchlocha agus créanna thart ar 2.6. Athraigh é más fearr is eol duit.",
+      "glass": "Meastachán, {sg}, oibrithe amach ó ocsaídí na bhfriotanna (is gloine iad). Athraigh é más fearr is eol duit.",
+      "mixed": "Meastachán, {sg}, ó gach ábhar: dlús tomhaiste a mhianra, thart ar 2.6 d’iathchlocha agus do chréanna, agus friotanna oibrithe amach óna n-ocsaídí. Athraigh é más fearr is eol duit.",
+      "leftOut": "Fágtha ar lár, mar nach eol a sainmheáchan: {names}.",
+      "none": "Gan meastachán don oideas seo: ní eol sainmheáchan na n-ábhar seo: {names}. Clóscríobh é más eol duit é.",
+      "was": "Úsáidtear d’fhigiúr féin. Ba é {sg} an meastachán; glan an réimse chun filleadh air."
+    },
+    "badSgWater": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce)."
   },
   "import": {
     "title": "Oidis a ghreamú isteach",

@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Níl cuid den leathanach seo aistrithe fós, mar sin taispeántar i mBéarla í.",
+  "index": {
+    "crumb": "Glónraí cáiliúla",
+    "title": "Glónraí cáiliúla",
+    "lead": "Glónraí a bhfuil cáil orthu ar fud an domhain, gach ceann acu as a ábhair áitiúla thraidisiúnta, lena fhoirmle Seger agus le leagan as na hábhair a dhíoltar san áit a bhfuil tú.",
+    "listHeading": "Na glónraí",
+    "more": "Tá tuilleadh glónraí ar an mbealach: cuirtear gach ceann leis nuair a bhíonn a oideas agus a ábhair bunaithe ar thrí fhoinse ar a laghad a léadh."
+  },
+  "glaze": {
+    "lead": "Glónra cáiliúil ({native}): a oideas traidisiúnta nó a anailís, a bhácáil, agus leagan as na hábhair a dhíoltar san áit a bhfuil tú.",
+    "aboutHeading": "Faoin nglónra {name}",
+    "nativeName": "Ainm dúchais",
+    "origin": "Cén áit",
+    "period": "Cén uair",
+    "firing": "Bácáil",
+    "cone": "cón {cone}",
+    "historyOnly": "Stair amháin: rinneadh an glónra seo le luaidhe. Taispeántar a anailís mar stair, ní mar oideas le meascadh. Glónra difriúil, gan luaidhe, is ea an leagan thíos.",
+    "recipeHeading": "An t-oideas traidisiúnta",
+    "material": "Ábhar",
+    "amount": "Méid",
+    "unityHeading": "Foirmle Seger",
+    "analysisHeading": "Anailís stairiúil",
+    "oxide": "Ocsaíd",
+    "percent": "% de réir meáchain",
+    "useHeading": "É a thriail",
+    "open": "Oscail an t-oideas seo",
+    "openLeadFree": "Oscail an leagan gan luaidhe",
+    "leadFreeTitle": "I stíl {name}, gan luaidhe",
+    "allLink": "Gach glónra cáiliúil",
+    "safetyHeading": "Sábháilteacht",
+    "safeMixing": "Meascadh sábháilte agus aeráil",
+    "firingGuide": "Bácáil in áith shimplí",
+    "makingGuide": "Conas glónra a dhéanamh",
+    "sourcesHeading": "Foinsí",
+    "link": "Oscail",
+    "opened": "léite {date}"
+  },
+  "local": {
+    "heading": "Le d’ábhair áitiúla",
+    "leadFreeHeading": "Leagan gan luaidhe",
+    "intro": "Foirmle Seger an oidis thraidisiúnta, déanta as na hábhair chaighdeánacha a dhíoltar san áit a gceannaíonn tú. Roghnaigh an áit a gceannaíonn tú chun é a fheiceáil.",
+    "region": "An áit a gceannaíonn tú ábhair",
+    "proposal": "Ábhair an mholta féin",
+    "pick": "Roghnaigh…",
+    "untested": "Ríofa, gan bácáil tástála fós.",
+    "testFirst": "Bácáil tíleanna tástála sula n-úsáideann tú é ar aon ghréithe, agus déan tástáil láistithe ar dhromchla bia.",
+    "untestedNote": "Ríofa, gan bácáil tástála fós: bácáil tíleanna tástála roimh úsáid.",
+    "close": "Tagann sé gar don spriocfhoirmle.",
+    "fair": "Tagann sé measartha gar don spriocfhoirmle.",
+    "poor": "Ní féidir leis na hábhair seo teacht gar don spriocfhoirmle.",
+    "none": "Ní féidir é a dhéanamh as na hábhair a dhíoltar ansin.",
+    "choose": "Roghnaigh an áit a gceannaíonn tú ábhair chun é a fheiceáil déanta as na hábhair a dhíoltar ansin."
+  },
+  "atmospheres": {
+    "oxidation": "ocsaídiú",
+    "reduction": "dí-ocsaídiú",
+    "neutral": "neodrach",
+    "wood": "bácáil adhmaid",
+    "salt": "bácáil salainn",
+    "soda": "bácáil sóide"
+  }
+}
