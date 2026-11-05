@@ -752,19 +752,6 @@
       "pint": "Želena masa pinte, oz"
     },
     "drySg": "Rel. gostota suhih surovin",
-    "batch": "Suha glazura za novo mešanico, {unit}",
-    "contents": "Pri rel. gostoti {sg} vedro vsebuje {glaze} suhe glazure in {water} vode.",
-    "add": "Za rel. gostoto {target} dodajte {water} vode. Na koncu bo okoli {volume}.",
-    "pourOff": "Za rel. gostoto {target} pustite, da se posede, in odlijte {water} bistre vode. Na koncu bo okoli {volume}.",
-    "already": "Že je pri rel. gostoti {target}.",
-    "mix": "Zmešajte {glaze} suhe glazure z {water} vode za okoli {volume} pri rel. gostoti {target}.",
-    "badSg": "Relativna gostota mora biti večja od 1 (vode) in manjša od {dry}, kolikor znaša pri suhih surovinah.",
-    "badDry": "Relativna gostota suhih surovin mora biti večja od 1.",
-    "note": "Voda je po masi: liter tehta kilogram, ameriški galon okoli 8,3 lb. Izračun upošteva seštevek prostornin, kar je blizu, a ne natančno: dodajajte vodo postopoma, mešajte in znova merite. Dve glazuri z isto relativno gostoto lahko vseeno tečeta različno.",
-    "saveTarget": "Shrani rel. gostoto {sg} kot cilj tega recepta",
-    "targetSaved": "Rel. gostota {sg} je cilj tega recepta. Shrani se z receptom, ko ga shranite.",
-    "targetKept": "Cilj recepta je rel. gostota {sg}.",
-    "clearTarget": "Počisti cilj",
     "drySgEmpty": "Potrebujejo jo le suhe mase; voda, ki jo dodate, je ne. Vnesite jo, če jo poznate.",
     "drySgNeeded": "Vnesite relativno gostoto suhih surovin, da vidite suho glazuro v vedru in vodo za novo mešanico.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Za ta recept ni ocene: relativna gostota surovin {names} ni znana. Vnesite jo, če jo poznate.",
       "was": "Uporabljena je vaša vrednost. Ocena je bila {sg}; izpraznite polje, da se vrnete k njej."
     },
-    "badSgWater": "Relativna gostota mora biti večja od 1 (gostote vode)."
+    "batch": "Suha glazura za novo mešanico, {unit}",
+    "contents": "Pri rel. gostoti {sg} vedro vsebuje {glaze} suhe glazure in {water} vode.",
+    "add": "Za rel. gostoto {target} dodajte {water} vode. Na koncu bo okoli {volume}.",
+    "pourOff": "Za rel. gostoto {target} pustite, da se posede, in odlijte {water} bistre vode. Na koncu bo okoli {volume}.",
+    "already": "Že je pri rel. gostoti {target}.",
+    "mix": "Zmešajte {glaze} suhe glazure z {water} vode za okoli {volume} pri rel. gostoti {target}.",
+    "badSg": "Relativna gostota mora biti večja od 1 (vode) in manjša od {dry}, kolikor znaša pri suhih surovinah.",
+    "badSgWater": "Relativna gostota mora biti večja od 1 (gostote vode).",
+    "badDry": "Relativna gostota suhih surovin mora biti večja od 1.",
+    "note": "Voda je po masi: liter tehta kilogram, ameriški galon okoli 8,3 lb. Izračun upošteva seštevek prostornin, kar je blizu, a ne natančno: dodajajte vodo postopoma, mešajte in znova merite. Dve glazuri z isto relativno gostoto lahko vseeno tečeta različno.",
+    "saveTarget": "Shrani rel. gostoto {sg} kot cilj tega recepta",
+    "targetSaved": "Rel. gostota {sg} je cilj tega recepta. Shrani se z receptom, ko ga shranite.",
+    "targetKept": "Cilj recepta je rel. gostota {sg}.",
+    "clearTarget": "Počisti cilj"
   },
   "import": {
     "title": "Lepljenje receptov",

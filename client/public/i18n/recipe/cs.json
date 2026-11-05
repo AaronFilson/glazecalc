@@ -752,19 +752,6 @@
       "pint": "Požadovaná hmotnost pinty, oz"
     },
     "drySg": "Měrná hmotnost suchých surovin",
-    "batch": "Suchá glazura pro novou dávku, {unit}",
-    "contents": "Při měrné hmotnosti {sg} obsahuje kbelík {glaze} suché glazury a {water} vody.",
-    "add": "Chcete-li dosáhnout měrné hmotnosti {target}, přidejte {water} vody. Výsledný objem bude asi {volume}.",
-    "pourOff": "Chcete-li dosáhnout měrné hmotnosti {target}, nechte glazuru usadit a slijte {water} čiré vody. Výsledný objem bude asi {volume}.",
-    "already": "Už má měrnou hmotnost {target}.",
-    "mix": "Smíchejte {glaze} suché glazury s {water} vody, vznikne asi {volume} s měrnou hmotností {target}.",
-    "badSg": "Měrná hmotnost musí být větší než 1 (měrná hmotnost vody) a menší než {dry} u suchých surovin.",
-    "badDry": "Měrná hmotnost suchých surovin musí být větší než 1.",
-    "note": "Voda se udává podle hmotnosti: litr váží kilogram, americký galon asi 8,3 lb. Výpočet sčítá objemy, což platí přibližně, ne přesně: přidávejte vodu po troškách, míchejte a měřte znovu. Dvě glazury se stejnou měrnou hmotností mohou přesto téct jinak.",
-    "saveTarget": "Uložit měrnou hmotnost {sg} jako cíl tohoto receptu",
-    "targetSaved": "Měrná hmotnost {sg} je cílem tohoto receptu. Uloží se s receptem, až ho uložíte.",
-    "targetKept": "Cílem receptu je měrná hmotnost {sg}.",
-    "clearTarget": "Zrušit cíl",
     "drySgEmpty": "Potřebují ji jen suché hmotnosti, voda k přidání ne. Zadejte ji, pokud ji znáte.",
     "drySgNeeded": "Zadejte měrnou hmotnost suchých surovin a uvidíte suchou glazuru v kbelíku a vodu pro novou dávku.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Pro tento recept odhad není, protože není známá měrná hmotnost těchto surovin: {names}. Zadejte ji, pokud ji znáte.",
       "was": "Používá se vaše hodnota. Odhad byl {sg}; když pole vymažete, vrátíte se k němu."
     },
-    "badSgWater": "Měrná hmotnost musí být větší než 1 (měrná hmotnost vody)."
+    "batch": "Suchá glazura pro novou dávku, {unit}",
+    "contents": "Při měrné hmotnosti {sg} obsahuje kbelík {glaze} suché glazury a {water} vody.",
+    "add": "Chcete-li dosáhnout měrné hmotnosti {target}, přidejte {water} vody. Výsledný objem bude asi {volume}.",
+    "pourOff": "Chcete-li dosáhnout měrné hmotnosti {target}, nechte glazuru usadit a slijte {water} čiré vody. Výsledný objem bude asi {volume}.",
+    "already": "Už má měrnou hmotnost {target}.",
+    "mix": "Smíchejte {glaze} suché glazury s {water} vody, vznikne asi {volume} s měrnou hmotností {target}.",
+    "badSg": "Měrná hmotnost musí být větší než 1 (měrná hmotnost vody) a menší než {dry} u suchých surovin.",
+    "badSgWater": "Měrná hmotnost musí být větší než 1 (měrná hmotnost vody).",
+    "badDry": "Měrná hmotnost suchých surovin musí být větší než 1.",
+    "note": "Voda se udává podle hmotnosti: litr váží kilogram, americký galon asi 8,3 lb. Výpočet sčítá objemy, což platí přibližně, ne přesně: přidávejte vodu po troškách, míchejte a měřte znovu. Dvě glazury se stejnou měrnou hmotností mohou přesto téct jinak.",
+    "saveTarget": "Uložit měrnou hmotnost {sg} jako cíl tohoto receptu",
+    "targetSaved": "Měrná hmotnost {sg} je cílem tohoto receptu. Uloží se s receptem, až ho uložíte.",
+    "targetKept": "Cílem receptu je měrná hmotnost {sg}.",
+    "clearTarget": "Zrušit cíl"
   },
   "import": {
     "title": "Vložení receptů",

@@ -752,19 +752,6 @@
       "pint": "Masa pinte koju želite, oz"
     },
     "drySg": "SG suhih sirovina",
-    "batch": "Suha glazura za novu smjesu, {unit}",
-    "contents": "Pri SG {sg} kanta sadrži {glaze} suhe glazure i {water} vode.",
-    "add": "Da biste dosegli SG {target}, dodajte {water} vode. Na kraju bude oko {volume}.",
-    "pourOff": "Da biste dosegli SG {target}, pustite da se slegne i odlijte {water} bistre vode. Na kraju bude oko {volume}.",
-    "already": "Već je na SG {target}.",
-    "mix": "Pomiješajte {glaze} suhe glazure s {water} vode za oko {volume} pri SG {target}.",
-    "badSg": "SG mora biti veći od 1 (SG vode) i manji od {dry} suhih sirovina.",
-    "badDry": "SG suhih sirovina mora biti veći od 1.",
-    "note": "Voda se mjeri po masi: litra teži kilogram, američki galon oko 8,3 lb. Izračun uzima da se volumeni zbrajaju, što je blizu, ali nije točno: dodajte vodu malo po malo, miješajte i ponovno mjerite. Dvije glazure istog SG-a ipak mogu različito teći.",
-    "saveTarget": "Spremi SG {sg} kao cilj ovog recepta",
-    "targetSaved": "SG {sg} je cilj ovog recepta. Čuva se uz recept kad ga spremite.",
-    "targetKept": "Cilj recepta je SG {sg}.",
-    "clearTarget": "Očisti cilj",
     "drySgEmpty": "Treba samo za suhe mase; za vodu koju treba dodati ne treba. Upišite je ako je znate.",
     "drySgNeeded": "Upišite relativnu gustoću suhih sirovina da biste vidjeli suhu glazuru u kanti i vodu za novu smjesu.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Nema procjene za ovaj recept: relativna gustoća za {names} nije poznata. Upišite je ako je znate.",
       "was": "Koristi se vaš broj. Procjena je bila {sg}; ispraznite polje da biste joj se vratili."
     },
-    "badSgWater": "Relativna gustoća mora biti veća od 1 (gustoće vode)."
+    "batch": "Suha glazura za novu smjesu, {unit}",
+    "contents": "Pri SG {sg} kanta sadrži {glaze} suhe glazure i {water} vode.",
+    "add": "Da biste dosegli SG {target}, dodajte {water} vode. Na kraju bude oko {volume}.",
+    "pourOff": "Da biste dosegli SG {target}, pustite da se slegne i odlijte {water} bistre vode. Na kraju bude oko {volume}.",
+    "already": "Već je na SG {target}.",
+    "mix": "Pomiješajte {glaze} suhe glazure s {water} vode za oko {volume} pri SG {target}.",
+    "badSg": "SG mora biti veći od 1 (SG vode) i manji od {dry} suhih sirovina.",
+    "badSgWater": "Relativna gustoća mora biti veća od 1 (gustoće vode).",
+    "badDry": "SG suhih sirovina mora biti veći od 1.",
+    "note": "Voda se mjeri po masi: litra teži kilogram, američki galon oko 8,3 lb. Izračun uzima da se volumeni zbrajaju, što je blizu, ali nije točno: dodajte vodu malo po malo, miješajte i ponovno mjerite. Dvije glazure istog SG-a ipak mogu različito teći.",
+    "saveTarget": "Spremi SG {sg} kao cilj ovog recepta",
+    "targetSaved": "SG {sg} je cilj ovog recepta. Čuva se uz recept kad ga spremite.",
+    "targetKept": "Cilj recepta je SG {sg}.",
+    "clearTarget": "Očisti cilj"
   },
   "import": {
     "title": "Zalijepi recepte",

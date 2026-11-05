@@ -752,19 +752,6 @@
       "pint": "Požadovaná hmotnosť pinty, oz"
     },
     "drySg": "Hustota suchých surovín",
-    "batch": "Suchá glazúra na novú dávku, {unit}",
-    "contents": "Pri hustote {sg} obsahuje vedro {glaze} suchej glazúry a {water} vody.",
-    "add": "Ak chcete dosiahnuť hustotu {target}, pridajte {water} vody. Výsledný objem bude asi {volume}.",
-    "pourOff": "Ak chcete dosiahnuť hustotu {target}, nechajte glazúru usadiť a odlejte {water} čistej vody. Výsledný objem bude asi {volume}.",
-    "already": "Už má hustotu {target}.",
-    "mix": "Zmiešajte {glaze} suchej glazúry s {water} vody, vznikne asi {volume} s hustotou {target}.",
-    "badSg": "Hustota musí byť väčšia ako 1 (hustota vody) a menšia ako {dry} pri suchých surovinách.",
-    "badDry": "Hustota suchých surovín musí byť väčšia ako 1.",
-    "note": "Voda sa udáva podľa hmotnosti: liter váži kilogram, americký galón asi 8,3 lb. Výpočet sčítava objemy, čo platí približne, nie presne: pridávajte vodu po troškách, miešajte a merajte znova. Dve glazúry s rovnakou hustotou môžu napriek tomu tiecť inak.",
-    "saveTarget": "Uložiť hustotu {sg} ako cieľ tohto receptu",
-    "targetSaved": "Hustota {sg} je cieľom tohto receptu. Uloží sa s receptom, keď ho uložíte.",
-    "targetKept": "Cieľom receptu je hustota {sg}.",
-    "clearTarget": "Zrušiť cieľ",
     "drySgEmpty": "Potrebujú ju len suché hmotnosti; voda na pridanie nie. Ak ju poznáte, zadajte ju.",
     "drySgNeeded": "Zadajte hustotu suchých surovín a uvidíte suchú glazúru vo vedre a vodu pre novú dávku.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Pre tento recept nie je odhad: hustota surovín {names} nie je známa. Ak ju poznáte, zadajte ju.",
       "was": "Použije sa vaša hodnota. Odhad bol {sg}; ak sa k nemu chcete vrátiť, vymažte pole."
     },
-    "badSgWater": "Hustota musí byť väčšia ako 1 (hustota vody)."
+    "batch": "Suchá glazúra na novú dávku, {unit}",
+    "contents": "Pri hustote {sg} obsahuje vedro {glaze} suchej glazúry a {water} vody.",
+    "add": "Ak chcete dosiahnuť hustotu {target}, pridajte {water} vody. Výsledný objem bude asi {volume}.",
+    "pourOff": "Ak chcete dosiahnuť hustotu {target}, nechajte glazúru usadiť a odlejte {water} čistej vody. Výsledný objem bude asi {volume}.",
+    "already": "Už má hustotu {target}.",
+    "mix": "Zmiešajte {glaze} suchej glazúry s {water} vody, vznikne asi {volume} s hustotou {target}.",
+    "badSg": "Hustota musí byť väčšia ako 1 (hustota vody) a menšia ako {dry} pri suchých surovinách.",
+    "badSgWater": "Hustota musí byť väčšia ako 1 (hustota vody).",
+    "badDry": "Hustota suchých surovín musí byť väčšia ako 1.",
+    "note": "Voda sa udáva podľa hmotnosti: liter váži kilogram, americký galón asi 8,3 lb. Výpočet sčítava objemy, čo platí približne, nie presne: pridávajte vodu po troškách, miešajte a merajte znova. Dve glazúry s rovnakou hustotou môžu napriek tomu tiecť inak.",
+    "saveTarget": "Uložiť hustotu {sg} ako cieľ tohto receptu",
+    "targetSaved": "Hustota {sg} je cieľom tohto receptu. Uloží sa s receptom, keď ho uložíte.",
+    "targetKept": "Cieľom receptu je hustota {sg}.",
+    "clearTarget": "Zrušiť cieľ"
   },
   "import": {
     "title": "Vloženie receptov",

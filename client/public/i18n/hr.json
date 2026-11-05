@@ -9,6 +9,7 @@
     "homeSafety": "Ne otrujte svoju obitelj – Glazecalc",
     "firing": "Pečenje u jednostavnoj peći – Glazecalc",
     "learnWithJohnBritt": "Učite uz besplatni tečaj glazura Johna Britta – Glazecalc",
+    "teachingGlazeCalculation": "Poučavanje izračuna glazura - Glazecalc",
     "about": "O aplikaciji – Glazecalc",
     "privacy": "Privatnost – Glazecalc",
     "terms": "Uvjeti korištenja – Glazecalc",
@@ -37,7 +38,6 @@
     "cones": "Tablica stožaca: temperature Ortonovih stožaca i stožaca SK - Glazecalc",
     "materials": "Standardne sirovine za glazure: analiza i opasnosti - Glazecalc",
     "materialInfo": "{name}: oksidna analiza i opasnosti - Glazecalc",
-    "teachingGlazeCalculation": "Poučavanje izračuna glazura - Glazecalc",
     "famousGlazes": "Poznate glazure - Glazecalc",
     "famousGlaze": "Glazura {name} - Glazecalc"
   },
@@ -180,6 +180,7 @@
     "homeSafety": "Što učiniti ako dijete ili kućni ljubimac proguta sirovinu za glazuru i kako sirovine, prašinu, peć i ručno izrađene predmete učiniti sigurnima za obitelj.",
     "firing": "Kako peći u električnoj peći: kako odabrati, postaviti i očitati stošce i slijediti objavljene programe biskvitnog i glazurnog pečenja, s tablicom stožaca.",
     "learnWithJohnBritt": "Pratitelj besplatnog internetskog tečaja glazura Johna Britta: njegovi videozapisi cjelinu po cjelinu, uz vodiče Glazecalca i vježbe u kalkulatoru.",
+    "teachingGlazeCalculation": "6 susreta za poučavanje Segerove formule (UMF): sirovine i trokutni nizovi proba, molovi, od recepta do formule i natrag te greške u glazuri, s riješenim primjerima i radnim listovima za ispis.",
     "advice": "Praktični savjeti aplikacije Glazecalc o miješanju glazura, glaziranju i pečenju, uz vaše vlastite savjete. Besplatno za lončare i sve koji se bave keramikom.",
     "about": "Glazecalc je besplatan kalkulator kemije glazura za keramiku i bilježnica, otvorenog koda. Pogledajte kako izračunava Segerovu formulu (UMF) i kako je izrađen.",
     "privacy": "Kako Glazecalc postupa s vašim podacima: bez oglasa, analitike i praćenja, a ništa se ne prodaje. Što se čuva, zašto i kako ostvariti svoja prava.",
@@ -190,10 +191,9 @@
     "materials": "Sirovine iz standardne biblioteke aplikacije Glazecalc, od feldspata i glina do frita i izvora bora, svaka s oksidnom analizom, Segerovom formulom i opasnostima.",
     "materialInfo": "{name}: oksidna analiza, Segerova formula, gubitak žarenjem i opasnosti u standardnoj biblioteci aplikacije Glazecalc.",
     "materialInfoLong": "{name} u standardnoj biblioteci sirovina za glazure aplikacije Glazecalc: oksidna analiza, doprinos Segerovoj formuli, gubitak žarenjem i opasnosti.",
-    "imageAlt": "Logotip aplikacije Glazecalc i njezin naslov, besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca.",
-    "teachingGlazeCalculation": "6 susreta za poučavanje Segerove formule (UMF): sirovine i trokutni nizovi proba, molovi, od recepta do formule i natrag te greške u glazuri, s riješenim primjerima i radnim listovima za ispis.",
     "famousGlazes": "Poznate glazure iz cijelog svijeta: tradicionalni recept ili povijesna analiza svake glazure, njezina Segerova formula i inačica od sirovina koje se prodaju ondje gdje ste vi.",
-    "famousGlaze": "Glazura {name} ({native}): tradicionalni recept ili povijesna analiza, pečenje, Segerova formula i izvori te inačica od sirovina koje se prodaju ondje gdje ste vi."
+    "famousGlaze": "Glazura {name} ({native}): tradicionalni recept ili povijesna analiza, pečenje, Segerova formula i izvori te inačica od sirovina koje se prodaju ondje gdje ste vi.",
+    "imageAlt": "Logotip aplikacije Glazecalc i njezin naslov, besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca."
   },
   "notices": {
     "dismiss": "Odbaci",
