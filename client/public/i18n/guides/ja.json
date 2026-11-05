@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "John Britt の無料の釉薬講座で学ぶ",
       "text": "YouTube の無料の動画講座を、ユニットごとに、読むガイドと Glazecalc で試す演習とともに紹介します。講座は英語です。"
+    },
+    "teachingGlazeCalculation": {
+      "title": "釉薬計算の教え方",
+      "text": "教室や勉強会のための全6回。三角座標のテストピースから、ゼーゲル式の両方向の計算までを、印刷用のワークシートとともに扱います。"
     }
   },
   "more": "ほかのガイド",

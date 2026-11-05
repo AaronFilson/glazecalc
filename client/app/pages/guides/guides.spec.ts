@@ -17,6 +17,8 @@ import homeSafety from '../../../public/i18n/guides/home-safety/en.md';
 import course from '../../../public/i18n/guides/learn-with-john-britt/en.md';
 import makingAGlaze from '../../../public/i18n/guides/making-a-glaze/en.md';
 import safeMixing from '../../../public/i18n/guides/safe-mixing/en.md';
+import teaching from '../../../public/i18n/guides/teaching-glaze-calculation/en.md';
+import teachingJa from '../../../public/i18n/guides/teaching-glaze-calculation/ja.md';
 
 const PAGES: Array<[string, string]> = [
   ['Glazing from first principles', glazingBasics],
@@ -28,6 +30,9 @@ const PAGES: Array<[string, string]> = [
 
 /** The companion to John Britt's course, in English only. */
 const COURSE_TITLE = "Learn with John Britt's free glaze course";
+
+/** The teaching pack, in English and Japanese so far. */
+const TEACHING_TITLE = 'Teaching glaze calculation';
 
 /** The address the guides are opened at. */
 const HERE = '/guides/this-guide';
@@ -61,8 +66,107 @@ describe('guides', () => {
     // Each card has its guide's own title.
     expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual([
       ...PAGES.map(([title]) => title),
-      COURSE_TITLE
+      COURSE_TITLE,
+      TEACHING_TITLE
     ]);
+  });
+
+  it('shows the teaching pack: six sessions, each with its parts, crediting the study group it follows', async () => {
+    for (const [markdown, title] of [
+      [teaching, TEACHING_TITLE],
+      [teachingJa, '釉薬計算の教え方']
+    ] as const) {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({ providers: testProviders() });
+      const { page } = await render(markdown);
+      expect([...page.querySelectorAll('h1')].map((h) => h.textContent?.trim())).toEqual([title]);
+      const sections = [...page.querySelectorAll('.guide h2')].map((h) => h.id);
+      expect(sections).toEqual([
+        'about',
+        'materials',
+        'chemistry',
+        'reading-the-formula',
+        'recipe-to-formula',
+        'formula-to-recipe',
+        'body-and-defects',
+        'tile-maps',
+        'sources'
+      ]);
+      // Every session has the same six parts, and a table to print as its worksheet.
+      for (const id of sections.slice(1, 7)) {
+        const section = page.querySelector(`#${id}`)!.closest('section')!;
+        expect(section.querySelectorAll('h3').length, id).toBe(6);
+        expect(section.querySelector('table'), id).not.toBeNull();
+      }
+      // Ids are unique, and every table has a caption and a named scrolling box.
+      const ids = [...page.querySelectorAll('[id]')].map((element) => element.id);
+      expect(new Set(ids).size).toBe(ids.length);
+      for (const table of page.querySelectorAll('table')) {
+        expect(table.querySelector('caption')?.textContent?.trim()).toBeTruthy();
+        expect(table.closest('.guide-table-scroll')?.getAttribute('aria-label')).toBeTruthy();
+      }
+      // The 42-glaze triaxial map and the 24-glaze Seger grid.
+      const rows = (caption: string) =>
+        [...page.querySelectorAll('table')]
+          .find((t) => t.querySelector('caption')?.textContent?.includes(caption))
+          ?.querySelectorAll('tbody tr').length;
+      expect(rows(title === TEACHING_TITLE ? 'Triaxial map' : '三角座標の配置図')).toBe(21);
+      expect(rows(title === TEACHING_TITLE ? 'Seger grid' : 'ゼーゲル座標')).toBe(24);
+      // The study group is cited, and the pack says it is not connected with it.
+      const sources = [...page.querySelectorAll<HTMLAnchorElement>('.guide-sources a')].map((a) => a.href);
+      expect(sources.some((href) => href.includes('itic.pref.ibaraki.jp'))).toBe(true);
+      expect(page.querySelector('#about')?.closest('section')?.textContent).toMatch(/not connected|関係がありません/);
+      // The lab sessions send the reader to the safe mixing guide first, and session 6 to food safety.
+      for (const id of ['materials', 'reading-the-formula']) {
+        const warning = page.querySelector(`#${id}`)?.closest('section')?.querySelector('.guide-warning');
+        expect(warning?.querySelector('a')?.getAttribute('href'), id).toContain('/guides/safe-mixing');
+      }
+      const defects = page.querySelector('#body-and-defects')?.closest('section')?.querySelector('.guide-warning');
+      expect(defects?.querySelector('a')?.getAttribute('href')).toContain('/guides/glazing-basics#food-safety');
+    }
+  });
+
+  it('ends every question of the teaching pack under Check with a question mark, in English and Japanese', () => {
+    for (const markdown of [teaching, teachingJa]) {
+      const checks = markdown.split(/^### (?:Check|確認)$/m).slice(1);
+      expect(checks).toHaveLength(6);
+      for (const part of checks) {
+        const questions = part
+          .split(/^#{2,3} /m)[0]!
+          .split('\n')
+          .filter((line) => line.startsWith('- '));
+        expect(questions.length).toBeGreaterThanOrEqual(3);
+        for (const question of questions) expect(question.trim()).toMatch(/[?？]$/);
+      }
+    }
+  });
+
+  it('links the teaching pack only to pages and sections that exist', () => {
+    const guides: Record<string, string> = {
+      'glazing-basics': glazingBasics,
+      'making-a-glaze': makingAGlaze,
+      'safe-mixing': safeMixing,
+      'home-safety': homeSafety,
+      firing,
+      'teaching-glaze-calculation': teaching
+    };
+    const pages = ['/recipe', '/blends', '/solve', '/material', '/notes', '/firing'];
+    for (const markdown of [teaching, teachingJa]) {
+      for (const [, href] of markdown.matchAll(/\]\((\/[^)\s]*|#[^)\s]*)\)/g)) {
+        const [path, hash] = href!.startsWith('#')
+          ? ['/guides/teaching-glaze-calculation', href!.slice(1)]
+          : href!.split('#');
+        if (path!.startsWith('/guides/')) {
+          const text = guides[path!.slice('/guides/'.length)];
+          expect(text, href).toBeDefined();
+          if (hash) expect(text, href).toContain(`{#${hash}}`);
+        } else if (path!.startsWith('/materials/')) {
+          expect(['/materials/fukushima-feldspar', '/materials/whiting', '/materials/silica'], href).toContain(path);
+        } else {
+          expect(pages, href).toContain(path);
+        }
+      }
+    }
   });
 
   it('offers the cone chart and the standard materials after the guides, on the English page only', async () => {

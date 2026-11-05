@@ -95,6 +95,19 @@ export const routes: Routes = [
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
+  {
+    // Translated into some languages only (lib/pages.js, PARTLY_TRANSLATED_PAGES): the others show the English.
+    path: 'guides/teaching-glaze-calculation',
+    title: marker('titles.teachingGlazeCalculation'),
+    providers: [provideTranslocoScope('guides', 'regions')],
+    data: {
+      description: marker('meta.teachingGlazeCalculation'),
+      guide: 'teaching-glaze-calculation',
+      related: ['materials']
+    },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
+  },
   // The cone chart, the list of materials and a page for each standard material: translated into the
   // languages in REFERENCE_LANGUAGES (lib/regions/languages.js), in English with a notice in the others.
   // The chart's notes are in cones/ and a material's notes and hazards in materials/, each the words of
