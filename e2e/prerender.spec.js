@@ -144,7 +144,10 @@ test.describe('structured data', () => {
     await page.goto('/de/guides/firing');
     await expect(page.locator('h1')).toBeVisible();
     await expect.poll(() => jsonLd(page)).toHaveLength(1);
-    const [data] = await jsonLd(page);
+    const [graph] = await jsonLd(page);
+    // The Article and its breadcrumb trail go out as one graph.
+    expect(graph['@graph'].map((block) => block['@type'])).toEqual(['Article', 'BreadcrumbList']);
+    const data = graph['@graph'][0];
     expect(data).toMatchObject({
       '@type': 'Article',
       url: 'https://glazecalcapp.com/de/guides/firing'
@@ -162,7 +165,11 @@ test.describe('structured data', () => {
       if (/content security policy|refused to/i.test(message.text())) violations.push(message.text());
     });
     await page.goto('/guides/firing');
-    await expect.poll(async () => (await jsonLd(page)).map((data) => data['@type'])).toEqual(['Article']);
+    await expect
+      .poll(async () =>
+        (await jsonLd(page)).flatMap((data) => (data['@graph'] || [data]).map((block) => block['@type']))
+      )
+      .toEqual(['Article', 'BreadcrumbList']);
     await page.getByRole('link', { name: 'Guides', exact: true }).first().click();
     await expect(page).toHaveURL(/\/guides$/);
     await expect.poll(() => jsonLd(page)).toHaveLength(0);
