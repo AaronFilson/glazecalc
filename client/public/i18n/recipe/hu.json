@@ -723,7 +723,8 @@
     "keyPoint": "Pont: ez a máz.",
     "keyBright": "Pontozott vonal: ahol Stull mázai a legfényesebbek voltak.",
     "keyLimits": "Szaggatott vonalak és árnyékolás: a(z) {name} szilícium-dioxid- és timföldtartományai.",
-    "keyCrazed": "Vonalkázás: ahol hajszálrepedeztek."
+    "keyCrazed": "Vonalkázás: ahol hajszálrepedeztek.",
+    "note": "Útmutatás, nem előrejelzés. R. T. Stull (Transactions of the American Ceramic Society, 1912) körülbelül 11-es gúlán égetett, rögzített olvasztóanyagokkal: 0,3 K₂O és 0,7 CaO; más olvasztóanyagok és égetések eltolják a tartományokat, és egy máz, amely csak azért matt, mert alulégették, a diagramon mégis a fényes tartományba eshet. A tartományokat úgy mutatjuk, ahogy a Glazy rajzolja őket."
   },
   "slurry": {
     "heading": "Fajsúly és víz",
@@ -763,7 +764,19 @@
     "saveTarget": "A(z) {sg} fajsúly mentése a recept célértékeként",
     "targetSaved": "A(z) {sg} fajsúly a recept célértéke. A recepttel együtt őrződik meg, amikor menti.",
     "targetKept": "A recept célfajsúlya: {sg}.",
-    "clearTarget": "A célérték törlése"
+    "clearTarget": "A célérték törlése",
+    "drySgEmpty": "Csak a száraz tömegekhez kell; a hozzáadandó vízhez nem. Írja be, ha ismeri.",
+    "drySgNeeded": "Írja be a száraz nyersanyagok fajsúlyát, és megmutatjuk a vödörben lévő száraz mázat és egy új adag vizét.",
+    "estimate": {
+      "mineral": "Becslés: {sg}, abból, hogy miből áll az egyes nyersanyag: az ásványa mért sűrűségéből. Írja át, ha pontosabbat tud.",
+      "kind": "Becslés: {sg}; a földpátok és az agyagok fajsúlya körülbelül 2,6. Írja át, ha pontosabbat tud.",
+      "glass": "Becslés: {sg}, a frittek oxidjaiból számolva (a frittek üvegek). Írja át, ha pontosabbat tud.",
+      "mixed": "Becslés: {sg}, nyersanyagonként: az ásvány mért sűrűsége, a földpátoknál és az agyagoknál körülbelül 2,6, a fritteknél pedig az oxidjaikból számolt érték. Írja át, ha pontosabbat tud.",
+      "leftOut": "Kimaradt, mert nem ismert a fajsúlya: {names}.",
+      "none": "Ehhez a recepthez nincs becslés, mert nem ismert a következők fajsúlya: {names}. Írja be, ha ismeri.",
+      "was": "Az Ön értékével számolunk. A becslés {sg} volt; ha vissza szeretne térni hozzá, ürítse ki a mezőt."
+    },
+    "badSgWater": "A fajsúlynak nagyobbnak kell lennie 1-nél (a víz fajsúlyánál)."
   },
   "import": {
     "title": "Receptek beillesztése",

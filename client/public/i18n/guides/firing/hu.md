@@ -458,73 +458,73 @@ Az L&L és a Bartlett vezérlői a 04-es gúlához {{1926 °F; 1052 °C}}, a 06-
 
 A kézi kapcsolású kemencében ugyanezt a tervet kézzel kell követni: lassan szárítson, kitámasztott fedéllel és nyitott kémlelőnyílásokkal, a kapcsolókat fokozatosan állítsa Low (alacsony) állásból Medium (közepes), majd High (magas) állásba, és hagyja, hogy a Kiln-Sitter fejezze be az égetést. A közzétett eljárások lent, a Kézi kapcsolású kemencék részletesen című részben találhatók.
 
-## Glaze firing {#glaze lang=en}
+## Mázas égetés {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+A mázas égetés{{en: glaze firing}} üveggé olvasztja a mázat a zsengélt árun. A kereskedelemben kapható alacsony tüzű mázak többsége 06-os vagy 05-ös gúlára készül (az alacsony tüzű sáv a 06–04-es gúla), a közepes tüzű mázak többsége pedig 5–6-os gúlára. Arra a gúlára égessen, amely a máza és a masszája címkéjén szerepel, egy e szám köré összeállított gúlasorral. Hogy mi történik a mázban olvadás közben, azt a [Mázazás az alapoktól](/guides/glazing-basics) című útmutató írja le.
 
-### Loading for a glaze firing
+### Berakás mázas égetéshez
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- A mázas darabok nem érhetnek egymáshoz és a falhoz: hagyjon körülbelül ½ in (13 mm) helyet.
+- Tartsa mázmentesen a talpat (**a talp máztalanítása**{{en: dry-footing}}), vagy az alacsony tüzű árut tegye **háromlábakra**{{en: stilts}}, vagyis kis, hegyes tartókra. A kőagyagot és a porcelánt nem kellene háromlábakra állítani, mert azok ezen a hőmérsékleten belenyomódnak; használjon helyettük magas tüzű lapkencét vagy kvarchomokot.
+- Hagyjon legalább 1 in (25 mm) helyet az égetőlapok széle és a fal vagy a Kiln-Sitter között.
 
-### Controller schedules
+### Vezérlős égetési programok
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Az L&L és a Bartlett gyári mázégető programjai
+Label: Gyári mázégető programok
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Szegmens                    |                                   Felfűtés eddig |            Slow Glaze |             Fast Glaze |
+| --------------------------- | -----------------------------------------------: | ---------------------: | ---------------------: |
+| 1                           |                               {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |      Nincs külön lépés |
+| 2                           | {{250 °F; 139 °C}} értékkel a csúcs alatt | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                           |                                          A csúcs |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Felfűtési idő, üres kemence |                                                  |  Körülbelül 6½–7½ óra |  Körülbelül 3–4 óra |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: A 2. és a 3. szegmens végpontja gúlánként (L&L és Bartlett)
+Label: A gyári programok célértékei
 
-| Cone |       Segment 2 ends |                 Peak |
+| Gúla |  A 2. szegmens vége |                Csúcs |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+A Slow Glaze a biztonságosabb alapbeállítás, tekintve, hogy az L&L óv a gyors égetéstől. Ha a csúcson 5–10 percnél hosszabb hőntartást iktat be, az L&L szerint ennek megfelelően csökkenteni kell a célhőmérsékletet vagy a gúlakorrekciót, és megjegyzi: „A magas hőmérsékleten tartott hőntartás felgyorsítja a fűtőszálak és a hőelem kopását.”
 
-### Cone 6: drop-and-hold
+### 6-os gúla: visszahűtés és hőntartás
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+A közepes tüzű mázakon néha **tűszúrások**{{en: pinholes}} (apró lyukak a felületen) vagy hólyagok maradnak, amelyeket az olvadékból kibugyogó gáz hagy. A **visszahűtés és hőntartás**{{en: drop-and-hold}} programja a csúcsig fűt, gyorsan körülbelül {{100 °F; 56 °C}} értékkel visszahűt, és ott hőn tart. A Digitalfire szavaival: „A 100 °F-os visszahűtés és a hőntartás elég viszkózussá teszi az olvadékot ahhoz, hogy a buborékok kipukkadjanak, de még hagyja, hogy a helyük begyógyuljon.”
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, 6-os gúla, visszahűtés és hőntartás
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Lépés |                               Sebesség |                  Cél | Hőntartás                                               |
+| ----- | -------------------------------------: | -------------------: | ------------------------------------------------------- |
+| 1     |                  {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 perc                                                 |
+| 2     |                 {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Választhatóan 30 perc, a buborékfelhők eltüntetésére     |
+| 3     |                  {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 perc; nagy kemencékben hosszabb                      |
+| 4     | Lefelé, {{900 °F/h; 500 °C/h}} sebességgel | {{2100 °F; 1148 °C}} | 30 perc                                                 |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+A PLC6DS körülbelül 9 óra 36 percig tart. Hígfolyósabb mázaknál a Digitalfire inkább körülbelül {{200 °F; 111 °C}} értékkel hűt vissza; a túl nagy visszahűtés „a hőntartás alatt kristályosodás veszélyével jár”. A {{2200 °F; 1204 °C}} csúcsa alacsonyabb, mint a táblázat {{2232 °F; 1222 °C}} értéke a 6-os gúlához; a Digitalfire szerint a legtöbb kemence körülbelül {{2200 °F; 1204 °C}} hőmérsékleten éri el a 6-os gúlát. Ellenőrizze gúlasorral a saját kemencéjében.
 
-### Slow cooling
+### Szabályozott hűtés
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+A **szabályozott hűtés**{{en: slow cooling}} azt jelenti, hogy a vezérlő beállított sebességgel hűti a kemencét, ahelyett hogy szabadon hagyná hűlni. A Digitalfire C6DHSC programja a PLC6DS, amelyet {{150 °F/h; 83 °C/h}} sebességű hűtés követ {{2100 °F; 1148 °C}} értéktől {{1400 °F; 760 °C}} értékig, majd kikapcsolás. „Javítja a fényességet és a felület minőségét”, és segít a rutilkékeknél, de a lassú hűtés „fokozhatja a mattságot” (egy matt máz száraz lett), és megrövidítheti a kemence reléinek élettartamát. Az L&L is ad egy szabályozott hűtésű programot a 6-os gúlához:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: Az L&L „User 6” programja: szabályozott hűtés 6-os gúlás mázakhoz
+Label: L&L szabályozott hűtés
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Lépés |                                Sebesség |                  Cél |
+| ----- | --------------------------------------: | -------------------: |
+| 1     |                    Teljes sebességgel fel | {{2232 °F; 1222 °C}} |
+| 2     |                    Teljes sebességgel le | {{1900 °F; 1038 °C}} |
+| 3     | Lefelé, {{150 °F/h; 83 °C/h}} sebességgel |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+A Skutt vezérlői ugyanígy kínálnak előmelegítést és egylépéses hűtési lehetőséget.
 
-### On a manual kiln
+### Kézi kapcsolású kemencében
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+A kézi kapcsolású kemence nem tudja pontosan követni ezeket a programokat, de a terv ugyanaz: eleinte óvatosan, középen egyenletesen, a végén figyelve. A Bracker’s alacsony tüzű mázégető programja lent, a Kézi kapcsolású kemencék részletesen című részben található; magasabb gúlákhoz „gúlaszámonként átlagosan 15–30 percet” tesz hozzá. Pirométerrel, gyakorlattal és naplóval a visszahűtést és hőntartást vagy a szabályozott hűtést nagyjából utánozhatja a kapcsolók kézi visszaállításával, ahogy a Digitalfire javasolja.
 
 ## Kézi kapcsolású kemencék részletesen {#manual-kilns}
 

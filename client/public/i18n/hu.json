@@ -36,7 +36,10 @@
     "confirm": "Módosítás jóváhagyása - Glazecalc",
     "cones": "Gúlatáblázat: az Orton- és SK-gúlák hőfokai - Glazecalc",
     "materials": "Beépített mázanyagok: összetétel és veszélyek - Glazecalc",
-    "materialInfo": "{name}: oxidos összetétel és veszélyek - Glazecalc"
+    "materialInfo": "{name}: oxidos összetétel és veszélyek - Glazecalc",
+    "teachingGlazeCalculation": "A mázszámítás tanítása - Glazecalc",
+    "famousGlazes": "Híres mázak - Glazecalc",
+    "famousGlaze": "{name} máz - Glazecalc"
   },
   "nav": {
     "skip": "Ugrás a tartalomhoz",
@@ -187,7 +190,10 @@
     "materials": "Kerámia mázak alapanyagai a Glazecalc beépített könyvtárában, a földpátoktól és agyagoktól a frittekig és bórforrásokig, oxidos összetétellel, Seger-képlettel és veszélyekkel.",
     "materialInfo": "{name}: oxidos összetétel, Seger-képlet, izzítási veszteség és veszélyek a Glazecalc beépített könyvtárában.",
     "materialInfoLong": "{name} a Glazecalc beépített mázanyag-könyvtárában: oxidos összetétele, hozzájárulása a Seger-képlethez, izzítási vesztesége és veszélyei.",
-    "imageAlt": "A Glazecalc logója és címsora, ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."
+    "imageAlt": "A Glazecalc logója és címsora, ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról.",
+    "teachingGlazeCalculation": "6 foglalkozás a Seger-képlet tanításához: nyersanyagok és háromszög-próbák, mólok, receptből képlet és vissza, valamint mázhibák, kidolgozott példákkal és nyomtatható munkalapokkal.",
+    "famousGlazes": "Híres mázak a világ minden tájáról: mindegyik hagyományos receptje vagy történeti összetétele, Seger-képlete, és egy változata azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él.",
+    "famousGlaze": "{name} ({native}) máz: hagyományos receptje vagy történeti összetétele, égetése, Seger-képlete és forrásai, valamint egy változata azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él."
   },
   "notices": {
     "dismiss": "Bezárás",
