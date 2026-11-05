@@ -219,6 +219,33 @@ uses them, and the glossary below has their rows.
   sense (dust with no specific toxicity, still to be kept out of the lungs) is plain from its sentence. **Native
   check**.
 
+## Terms added in round 14 (2026-11-04)
+
+Chosen by the round-14 translator for the famous-glazes pages, the Stull chart, the dry-SG estimate and the new
+materials' notes; none was found in a Bengali ceramics source, so each is **No source** and a **Native check**.
+
+- **Stull chart** **Stull চার্ট** (already in recipe/bn.json and guides/bn.json since round 13); its regions as there
+  (অগলিত, ম্যাট, আধা-ম্যাট, উজ্জ্বল, কম পোড়া, ক্রেজিং হওয়া). Limits (the section title) **সীমা**.
+- **Cristobalite inversion** **ক্রিস্টোবালাইট রূপান্তর**, beside the sheet's কোয়ার্টজ রূপান্তর.
+- **Dry SG** (of a glaze's dry powder) **শুকনো আপেক্ষিক গুরুত্ব**; the app's field stays "শুকনো উপাদানের আপেক্ষিক
+  গুরুত্ব" (recipe/bn.json `slurry.drySg`).
+- **Synthetic ash** **কৃত্রিম ছাই** ("… ছাইয়ের একটি কৃত্রিম বিকল্প" for "a synthetic stand-in for …"); **wood ash**
+  কাঠের ছাই (the sheet's row). Japanese ash names in Hepburn with the kanji, as the sheet's Japanese-names rule says:
+  **tsuchibai (土灰)**, **warabai (藁灰)**, **isu ছাই (柞灰)** (the English's "isu ash"), **gōsei tsuchibai (合成土灰)**,
+  **gōsei warabai (合成藁灰)**, **Masuda chōseki (益田長石)**. Rice-straw ash **ধানের খড়ের ছাই** (খড়, straw: the
+  everyday word).
+- **Porcelain stone (瓷石)** **পোর্সেলিন পাথর (瓷石)**, as the records already write "Amakusa পাথর"; **紫金土** kept with
+  the English's gloss, **লোহাসমৃদ্ধ একটি স্থানীয় কাদামাটি (紫金土)**; Chinese place names in Latin letters as the English
+  writes them (Jingdezhen, San Bao, Longquan, Dayao, Gaojitou).
+- **Colemanite** **কোলম্যানাইট** (the sheet's row; records since round 8). A specification's "Rev." **সংশোধনী** (the
+  check refuses the Latin "." after it).
+- **Caustic** (wet ash) **ক্ষয়কারী**, as records/bn.json `water-soluble-caustic-veze6m` writes it.
+- **Famous glazes** **বিখ্যাত গ্লেজ**; traditional recipe **প্রচলিত রেসিপি**; historic analysis **ঐতিহাসিক বিশ্লেষণ**;
+  a version (of a glaze) **রূপ**; lead-free version **সীসামুক্ত রূপ**; native name **স্থানীয় নাম**. The famous pages'
+  link "Firing a kiln" is written as the firing guide's title, **একটি সাধারণ চুল্লি পোড়ানো**.
+- **Teaching glaze calculation** **গ্লেজের হিসাব শেখানো**; worksheet **ওয়ার্কশিট**; session **সেশন**.
+- Atmospheres: neutral **নিরপেক্ষ**; wood, salt, soda firing **কাঠে পোড়ানো**, **লবণে পোড়ানো**, **সোডায় পোড়ানো**.
+
 ## 1. Style sheet
 
 ### Register
