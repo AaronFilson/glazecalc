@@ -72,7 +72,7 @@ describe('prerender checks', () => {
     expect(pageProblems(advice(0), '/guides')).to.eql([]);
     // Random text, which compresses as little as any: a page that carries more than it shows.
     const large = page(`<p>${crypto.randomBytes(MAX_GZIPPED).toString('base64')}</p>`);
-    expect(pageProblems(large, '/guides')).to.eql(['it is over 100 kB gzipped']);
+    expect(pageProblems(large, '/guides')).to.eql(['it is over 120 kB gzipped']);
   });
 
   it('fails a guide that does not link every other guide, so a search engine can follow them', () => {
