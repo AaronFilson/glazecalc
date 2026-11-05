@@ -36,7 +36,10 @@
     "confirm": "Odobravanje promjene – Glazecalc",
     "cones": "Tablica stožaca: temperature Ortonovih stožaca i stožaca SK - Glazecalc",
     "materials": "Standardne sirovine za glazure: analiza i opasnosti - Glazecalc",
-    "materialInfo": "{name}: oksidna analiza i opasnosti - Glazecalc"
+    "materialInfo": "{name}: oksidna analiza i opasnosti - Glazecalc",
+    "teachingGlazeCalculation": "Poučavanje izračuna glazura - Glazecalc",
+    "famousGlazes": "Poznate glazure - Glazecalc",
+    "famousGlaze": "Glazura {name} - Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na sadržaj",
@@ -187,7 +190,10 @@
     "materials": "Sirovine iz standardne biblioteke aplikacije Glazecalc, od feldspata i glina do frita i izvora bora, svaka s oksidnom analizom, Segerovom formulom i opasnostima.",
     "materialInfo": "{name}: oksidna analiza, Segerova formula, gubitak žarenjem i opasnosti u standardnoj biblioteci aplikacije Glazecalc.",
     "materialInfoLong": "{name} u standardnoj biblioteci sirovina za glazure aplikacije Glazecalc: oksidna analiza, doprinos Segerovoj formuli, gubitak žarenjem i opasnosti.",
-    "imageAlt": "Logotip aplikacije Glazecalc i njezin naslov, besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca."
+    "imageAlt": "Logotip aplikacije Glazecalc i njezin naslov, besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca.",
+    "teachingGlazeCalculation": "6 susreta za poučavanje Segerove formule (UMF): sirovine i trokutni nizovi proba, molovi, od recepta do formule i natrag te greške u glazuri, s riješenim primjerima i radnim listovima za ispis.",
+    "famousGlazes": "Poznate glazure iz cijelog svijeta: tradicionalni recept ili povijesna analiza svake glazure, njezina Segerova formula i inačica od sirovina koje se prodaju ondje gdje ste vi.",
+    "famousGlaze": "Glazura {name} ({native}): tradicionalni recept ili povijesna analiza, pečenje, Segerova formula i izvori te inačica od sirovina koje se prodaju ondje gdje ste vi."
   },
   "notices": {
     "dismiss": "Odbaci",

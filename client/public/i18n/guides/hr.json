@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Učite uz besplatni tečaj glazura Johna Britta",
       "text": "Njegov besplatni videotečaj na YouTubeu, cjelinu po cjelinu, uz naše vodiče za čitanje i vježbe u Glazecalcu. Na engleskom."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Poučavanje izračuna glazura",
+      "text": "6 susreta za razred ili skupinu za učenje, od trokutnih nizova proba do Segerove formule izračunane u oba smjera, s radnim listovima za ispis."
     }
   },
   "more": "Još vodiča",
@@ -255,6 +259,8 @@
       "crazed": "napuknuto"
     },
     "keyBright": "Točkasta crta: gdje su Stullove glazure bile najsjajnije.",
-    "keyCrazed": "Šrafura: gdje su pucale."
+    "keyCrazed": "Šrafura: gdje su pucale.",
+    "note": "Smjernica, a ne predviđanje. R. T. Stull (Transactions of the American Ceramic Society, 1912.) pekao je na otprilike stožac 11, s topiteljima uvijek 0,3 K₂O i 0,7 CaO; drugi topitelji i druga pečenja pomiču područja, a glazura koja je mat samo zato što je nedovoljno pečena ipak može pasti u sjajno područje. Područja su nacrtana kao u bazi Glazy.",
+    "inGuide": "Silicijev dioksid (SiO₂) vodoravno, od otprilike 1 do 7, a glinica (Al₂O₃) okomito, od 0 do 1, oboje iz Segerove formule. Klinovi se lepezasto šire slijeva: gore lijevo nerastaljeno, zatim mat, zatim polumat. Neosjenčani dio desno od njih je sjajan, a točkasta crta u njemu pokazuje gdje su Stullove glazure bile najsjajnije. Nedovoljno pečeno je dolje desno, s malo glinice i mnogo silicijeva dioksida. Šrafirano područje, nisko na dijagramu i uz njegov lijevi rub, pokazuje gdje su njegove probe popucale."
   }
 }

@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Dio ove stranice još nije preveden, pa je prikazan na engleskom.",
+  "index": {
+    "crumb": "Poznate glazure",
+    "title": "Poznate glazure",
+    "lead": "Glazure poznate u cijelom svijetu, svaka od svojih tradicionalnih lokalnih sirovina, sa svojom Segerovom formulom i inačicom od sirovina koje se prodaju ondje gdje ste vi.",
+    "listHeading": "Glazure",
+    "more": "Dolazi još glazura: svaka se dodaje kad se njezin recept i sirovine oslanjaju na najmanje tri pročitana izvora."
+  },
+  "glaze": {
+    "lead": "Poznata glazura ({native}): njezin tradicionalni recept ili analiza, njezino pečenje i inačica od sirovina koje se prodaju ondje gdje ste vi.",
+    "aboutHeading": "O glazuri {name}",
+    "nativeName": "Izvorni naziv",
+    "origin": "Gdje",
+    "period": "Kada",
+    "firing": "Pečenje",
+    "cone": "stožac {cone}",
+    "historyOnly": "Samo kao povijest: ova se glazura radila s olovom. Njezina je analiza prikazana kao povijest, a ne kao recept za miješanje. Inačica niže druga je glazura, bez olova.",
+    "recipeHeading": "Tradicionalni recept",
+    "material": "Sirovina",
+    "amount": "Količina",
+    "unityHeading": "Segerova formula",
+    "analysisHeading": "Povijesna analiza",
+    "oxide": "Oksid",
+    "percent": "Maseni %",
+    "useHeading": "Isprobajte",
+    "open": "Otvori ovaj recept",
+    "openLeadFree": "Otvori bezolovnu inačicu",
+    "leadFreeTitle": "U stilu glazure {name}, bezolovna",
+    "allLink": "Sve poznate glazure",
+    "safetyHeading": "Sigurnost",
+    "safeMixing": "Sigurno miješanje i ventilacija",
+    "firingGuide": "Pečenje u jednostavnoj peći",
+    "makingGuide": "Kako napraviti glazuru",
+    "sourcesHeading": "Izvori",
+    "link": "Otvori",
+    "opened": "pročitano {date}"
+  },
+  "local": {
+    "heading": "S vašim lokalnim sirovinama",
+    "leadFreeHeading": "Bezolovna inačica",
+    "intro": "Segerova formula tradicionalnog recepta, složena od standardnih sirovina koje se prodaju ondje gdje kupujete. Odaberite gdje kupujete da biste je vidjeli.",
+    "region": "Gdje kupujete sirovine",
+    "proposal": "Sirovine iz samog prijedloga",
+    "pick": "Odaberite…",
+    "untested": "Izračunano, još nije probno pečeno.",
+    "testFirst": "Ispecite probne pločice prije nego što je upotrijebite na bilo kojem predmetu i ispitajte površinu za hranu na otpuštanje metala.",
+    "untestedNote": "Izračunano, još nije probno pečeno: prije uporabe ispecite probne pločice.",
+    "close": "Blizu je ciljne formule.",
+    "fair": "Prilično je blizu ciljne formule.",
+    "poor": "Ove sirovine ne mogu se približiti ciljnoj formuli.",
+    "none": "Od sirovina koje se ondje prodaju ne može se složiti.",
+    "choose": "Odaberite gdje kupujete sirovine da biste je vidjeli složenu od onih koje se ondje prodaju."
+  },
+  "atmospheres": {
+    "oxidation": "oksidacija",
+    "reduction": "redukcija",
+    "neutral": "neutralna",
+    "wood": "pečenje drvom",
+    "salt": "pečenje sa solju",
+    "soda": "pečenje sa sodom"
+  }
+}
