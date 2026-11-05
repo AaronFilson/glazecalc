@@ -344,3 +344,33 @@ Yoruba, Igbo and Somali, whose labels end in "(SG)", so it repeated the label as
 were left as written.
 
 Still open: native reviewers for all seven (the Native check rows).
+
+## Round 14 catch-up (all 56 languages)
+
+Round 14 (branch `r14-teach`, 2026-11-04) brought every live language up to the round's English in one pass: the
+Famous glazes scope and İznik's names and prose (`data/famous-glazes/iznik.json`), the slurry panel's dry SG
+estimate and the making-a-glaze section on measuring it, the Stull chart notes and the glazing-basics section on it,
+the teaching guide's card and titles, the firing guide's glaze-firing section and slow-rate figures, the home-safety
+storage section, and the new materials' notes and hazards. Each style sheet first gained a short table of the
+round's terms (dry SG, the famous glazes, the new materials).
+
+It ran in five language groups: Western Europe (de, fr, es, es-419, it, pt-PT, pt-BR, nl, pl, ro); the rest of the EU
+(sv, da, fi, et, lv, lt, hu, cs, sk, sl, hr, bg, el, ga, mt); East and Southeast Asia and Turkish (ja, ko, zh-Hans,
+zh-Hant, th, vi, id, tr); the Indian subcontinent and Arabic (ar, ur, hi, bn, ta, mr, kn, te, gu, ml, pa, or, ne,
+si); and Africa and Quechua (sw, am, af, ha, yo, zu, ig, so, qu). Each language was translated and fingerprinted, then
+back-translated blind, one fresh agent per language, and the differences were fixed in two commits ("Round 14
+back-translation fixes", groups g1 and g2). What they fixed:
+
+- **A swap read the wrong way round.** The feldspar notes ("do not replace this material with a standard feldspar,
+  by weight") had lost their direction in de, pl, et, lt, sk, cs, ga, ko, zh-Hans and ja.
+- **A safety step made conditional.** The respirator in making-a-glaze's first mixing step is unconditional again in
+  fi, bg, et and sl; "must not touch" restored in mr, ur and hi; gloves in both caustic-ash notes in Quechua; Yoruba's
+  ash caustic when wet.
+- **A test reading reversed.** Zulu's and Igbo's lead-test results now say the kit shows, or does not show, lead.
+- **A term merged with another.** "Limit formula" kept apart from "target formula" in et, sl, zh-Hans and el (their
+  style sheets now say so); the stilts bullet in zh-Hans and ro no longer reads "do not set on stilts".
+- **History told as habit.** "History only" without the habitual past in 13 languages; İznik's bole red glossed in
+  ar, ur, ta, bn, gu and ml, and its names made the same as each translated summary writes them.
+
+The prompts, back-translations and findings are in the round's scratch folder (`scratch/round14/` in the main
+checkout), which is not committed.

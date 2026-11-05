@@ -54,10 +54,15 @@ nonce and the headers for its language). In the browser the app hydrates the pag
 - Every build renders 264 pages (about 15 s) and the pages weigh 40 to 340 kB, up to about
   75 kB gzipped (a Greek guide). Before the guide's text was drawn by directives the largest was
   560 kB, most of it Angular's hydration data for its many nested templates.
-- Since 4 Nov 2026 each standard material's page is rendered in every translated language too: 10,602
-  pages, about 3 minutes and 1.5 GB. A material page loads only its own notes and hazards, so its state
-  stays small; one with English standing in is written and listed in `material-fallback.json`, and kept
-  out of that language's index, instead of failing the build.
+- Since 4 Nov 2026 each standard material's page is rendered in every translated language too. With the
+  famous glazes, the new materials and the teaching guide that is about 11,457 pages, about 4 minutes and
+  1.5 GB. A material page loads only its own notes and hazards, so its state stays small; one with English
+  standing in is written and listed in `material-fallback.json`, and kept out of that language's index,
+  instead of failing the build. The build refuses a page over 120 kB gzipped (`MAX_GZIPPED`, was 100 kB).
+- Since 4 Nov 2026 the server compresses each page reply itself, after the fresh nonce goes in
+  (`server/lib/compress.ts`: brotli 5, else gzip 5); nginx passes it through and gzips the rest at level 5.
+  The sitemap is an index (`/sitemap.xml`) of one file per language (`/sitemaps/<lang>.xml`), with
+  `<lastmod>` from git (`lib/page-dates.js`) and `x-default`.
 - The server stays free of per-request rendering.
 - Every build must pass the browser tests of `e2e/prerender.spec.js`: the pages without
   JavaScript, adopted in place, no fetch before the app is ready.
