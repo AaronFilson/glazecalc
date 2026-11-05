@@ -1,0 +1,63 @@
+{
+  "notTranslated": "En del av den här sidan är inte översatt ännu och visas därför på engelska.",
+  "index": {
+    "crumb": "Berömda glasyrer",
+    "title": "Berömda glasyrer",
+    "lead": "Glasyrer som är kända över hela världen, var och en av sina traditionella lokala råvaror, med sin Segerformel och en version av de råvaror som säljs i den egna regionen.",
+    "listHeading": "Glasyrerna",
+    "more": "Fler glasyrer är på väg: var och en läggs till när dess recept och råvaror vilar på minst tre källor som har lästs."
+  },
+  "glaze": {
+    "lead": "En berömd glasyr ({native}): dess traditionella recept eller analys, dess bränning och en version av de råvaror som säljs i den egna regionen.",
+    "aboutHeading": "Om {name}",
+    "nativeName": "Namn på originalspråket",
+    "origin": "Var",
+    "period": "När",
+    "firing": "Bränning",
+    "cone": "kägla {cone}",
+    "historyOnly": "Endast historik: den här glasyren gjordes med bly. Analysen visas som historik, inte som ett recept att blanda. Versionen nedan är en annan glasyr, utan bly.",
+    "recipeHeading": "Det traditionella receptet",
+    "material": "Råvara",
+    "amount": "Mängd",
+    "unityHeading": "Segerformel",
+    "analysisHeading": "Historisk analys",
+    "oxide": "Oxid",
+    "percent": "Vikt-%",
+    "useHeading": "Prova den",
+    "open": "Öppna det här receptet",
+    "openLeadFree": "Öppna den blyfria versionen",
+    "leadFreeTitle": "I stil med {name}, blyfri",
+    "allLink": "Alla berömda glasyrer",
+    "safetyHeading": "Säkerhet",
+    "safeMixing": "Säker blandning och ventilation",
+    "firingGuide": "Bränna i en enkel keramikugn",
+    "makingGuide": "Blanda en glasyr",
+    "sourcesHeading": "Källor",
+    "link": "Öppna",
+    "opened": "läst {date}"
+  },
+  "local": {
+    "heading": "Med lokala råvaror",
+    "leadFreeHeading": "Blyfri version",
+    "intro": "Det traditionella receptets Segerformel, uppbyggd av de standardråvaror som säljs där råvarorna köps. Välj var råvarorna köps för att se den.",
+    "region": "Var råvarorna köps",
+    "proposal": "Förslagets egna råvaror",
+    "pick": "Välj…",
+    "untested": "Beräknad, ännu inte provbränd.",
+    "testFirst": "Bränn provbitar innan den används på något gods, och testa en yta som kommer i kontakt med mat för metallavgivning.",
+    "untestedNote": "Beräknad, ännu inte provbränd: bränn provbitar före användning.",
+    "close": "Den kommer nära målformeln.",
+    "fair": "Den kommer ganska nära målformeln.",
+    "poor": "De här råvarorna kan inte komma nära målformeln.",
+    "none": "De råvaror som säljs där kan inte bygga upp den.",
+    "choose": "Välj var råvarorna köps för att se den uppbyggd av de råvaror som säljs där."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduktion",
+    "neutral": "neutral",
+    "wood": "vedbränning",
+    "salt": "saltbränning",
+    "soda": "sodabränning"
+  }
+}

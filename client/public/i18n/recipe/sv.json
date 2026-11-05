@@ -723,7 +723,8 @@
     "keyPoint": "Punkt: den här glasyren.",
     "keyBright": "Prickad linje: där Stulls glasyrer var som blankast.",
     "keyLimits": "Streckade linjer och skuggning: kiseldioxid- och aluminiumoxidintervallen för {name}.",
-    "keyCrazed": "Snedstreck: där de krackelerade."
+    "keyCrazed": "Snedstreck: där de krackelerade.",
+    "note": "En vägledning, inte en förutsägelse. R. T. Stull (Transactions of the American Ceramic Society, 1912) brände vid ungefär kägla 11 med flussmedlen fasta på 0,3 K₂O och 0,7 CaO; andra flussmedel och bränningar flyttar områdena, och en glasyr som är matt bara för att den var underbränd kan ändå hamna i det blanka området. Områdena är ritade som Glazy ritar dem."
   },
   "slurry": {
     "heading": "Specifik vikt och vatten",
@@ -763,7 +764,19 @@
     "saveTarget": "Spara SG {sg} som receptets målvärde",
     "targetSaved": "SG {sg} är receptets målvärde. Det sparas med receptet när det sparas.",
     "targetKept": "Receptets målvärde är SG {sg}.",
-    "clearTarget": "Ta bort målvärdet"
+    "clearTarget": "Ta bort målvärdet",
+    "drySgEmpty": "Bara de torra vikterna behöver den; vattnet som ska tillsättas gör det inte. Skriv in den om den är känd.",
+    "drySgNeeded": "Skriv in de torra råvarornas SG för att se den torra glasyren i hinken och vattnet för en ny sats.",
+    "estimate": {
+      "mineral": "En uppskattning, {sg}, utifrån vad varje råvara består av: den uppmätta densiteten för dess mineral. Ändra den om ett bättre värde är känt.",
+      "kind": "En uppskattning, {sg}: fältspater och leror väger ungefär 2,6. Ändra den om ett bättre värde är känt.",
+      "glass": "En uppskattning, {sg}, uträknad från frittornas oxider (de är glas). Ändra den om ett bättre värde är känt.",
+      "mixed": "En uppskattning, {sg}, utifrån varje råvara: den uppmätta densiteten för dess mineral, ungefär 2,6 för fältspater och leror, och frittorna uträknade från sina oxider. Ändra den om ett bättre värde är känt.",
+      "leftOut": "Utelämnade, eftersom deras SG inte är känd: {names}.",
+      "none": "Ingen uppskattning för det här receptet: SG för {names} är inte känd. Skriv in den om den är känd.",
+      "was": "Det inmatade värdet används. Uppskattningen var {sg}; töm fältet för att gå tillbaka till den."
+    },
+    "badSgWater": "En SG måste vara högre än 1 (vattnets)."
   },
   "import": {
     "title": "Klistra in recept",

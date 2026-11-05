@@ -36,7 +36,10 @@
     "confirm": "Godkänn en ändring - Glazecalc",
     "cones": "Kägeltabell: temperaturer för Orton- och SK-käglor - Glazecalc",
     "materials": "Standardråvaror för glasyr: analys och faror - Glazecalc",
-    "materialInfo": "{name}: oxidanalys och faror - Glazecalc"
+    "materialInfo": "{name}: oxidanalys och faror - Glazecalc",
+    "teachingGlazeCalculation": "Lära ut glasyrberäkning - Glazecalc",
+    "famousGlazes": "Berömda glasyrer - Glazecalc",
+    "famousGlaze": "Glasyren {name} - Glazecalc"
   },
   "nav": {
     "skip": "Hoppa till innehållet",
@@ -187,7 +190,10 @@
     "materials": "Glasyrråvarorna i Glazecalcs standardbibliotek, från fältspater och leror till fritter och borkällor, var och en med oxidanalys, Segerformel och faror.",
     "materialInfo": "{name}: oxidanalys, Segerformel, glödförlust och faror i Glazecalcs standardbibliotek.",
     "materialInfoLong": "{name} i Glazecalcs standardbibliotek över glasyrråvaror: oxidanalys, bidrag till Segerformeln, glödförlust och faror.",
-    "imageAlt": "Glazecalcs logotyp och rubrik, gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."
+    "imageAlt": "Glazecalcs logotyp och rubrik, gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser.",
+    "teachingGlazeCalculation": "6 lektioner för att lära ut Segerformeln (UMF): råvaror och triaxialprover, mol, från recept till formel och tillbaka, och glasyrfel, med räkneexempel och arbetsblad att skriva ut.",
+    "famousGlazes": "Berömda glasyrer från hela världen: varje glasyrs traditionella recept eller historiska analys, dess Segerformel och en version av de råvaror som säljs i den egna regionen.",
+    "famousGlaze": "Glasyren {name} ({native}): dess traditionella recept eller historiska analys, bränning, Segerformel och källor, och en version av de råvaror som säljs i den egna regionen."
   },
   "notices": {
     "dismiss": "Stäng",
