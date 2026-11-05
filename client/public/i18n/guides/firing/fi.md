@@ -466,7 +466,7 @@ Lasituspoltto{{en: glaze firing}} sulattaa lasitteen{{en: glaze}} lasiksi raakap
 
 - Lasitetut esineet eivät saa koskettaa toisiaan eivätkä uunin seiniä: jätä väliin noin ½ tuumaa (13 mm).
 - Jätä lasite pois pohjasta (**pohjan pitäminen lasitteettomana**) tai aseta matalapolton esineet **kolmijaloille**, pienille piikkijalustoille. Kivitavaraa{{en: stoneware}} ja posliinia ei pitäisi asettaa kolmijaloille, sillä ne uppoavat esineeseen näissä lämpötiloissa; käytä sen sijaan korkeapolttoon sopivaa uunilevyn suoja-ainetta tai kvartsihiekkaa.
-- Jätä uunilevyjen reunojen ja seinän tai katkaisimen väliin vähintään 1 tuuma (25 mm).
+- Jätä uunilevyjen reunojen ja seinän tai Kiln-Sitter-katkaisimen väliin vähintään 1 tuuma (25 mm).
 
 ### Automatiikan polttokäyrät
 

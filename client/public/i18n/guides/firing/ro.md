@@ -465,7 +465,7 @@ Un cuptor cu comandă manuală urmează același plan, de mână: uscați încet
 ### Încărcarea pentru arderea de glazură
 
 - Piesele glazurate nu trebuie să se atingă între ele sau de pereți: lăsați aproximativ ½ țol (13 mm).
-- Nu lăsați glazură pe piciorul piesei (**picior neglazurat**) sau așezați piesele de temperatură joasă pe **trepiede**, suporturi mici cu vârfuri. Gresia{{en: stoneware}} și porțelanul nu ar trebui așezate pe trepiede, care la aceste temperaturi se înfig în piese; folosiți în schimb strat protector (kiln wash) pentru temperatură înaltă sau nisip cuarțos.
+- Lăsați piciorul piesei fără glazură (**picior neglazurat**) sau așezați piesele de temperatură joasă pe **trepiede**, suporturi mici cu vârfuri. Gresia{{en: stoneware}} și porțelanul nu ar trebui așezate pe trepiede, care la aceste temperaturi se înfig în piese; folosiți în schimb strat protector (kiln wash) pentru temperatură înaltă sau nisip cuarțos.
 - Lăsați cel puțin 1 țol (25 mm) între marginile plăcilor și perete sau Kiln-Sitter.
 
 ### Programele controlerului

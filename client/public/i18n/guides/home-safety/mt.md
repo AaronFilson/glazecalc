@@ -83,7 +83,7 @@ Qatt tferra’ glejż, jew ilma li laħlaħt fih għodda tal-glejż, fis-sink je
 
 Nissuġġerixxu għatu fuq dak il-barmil: it-tajn fih l-istess metalli tal-glejż, u l-annimali domestiċi jixorbu ilma wieqaf. Ir-regoli dwar ir-rimi jvarjaw minn post għal ieħor, għalhekk iċċekkja l-iskeda ta’ data ta’ sigurtà ta’ kull prodott, u staqsi lill-kunsill lokali jew lill-kumpanija tal-ilma jekk m’intix ċert.
 
-Xi studjos jaħmu t-tajn niexef qabel ma jarmuh. Ipoġġuh fi skutella żejda li se tintuża għal kollox: wara l-ħamja l-iskutella ma tistax terġa’ tintuża. Imla l-iskutella kwart biss, għax it-tajn jagħmel ir-ragħwa u l-bżieżaq meta jdub, u għattiha bi platt. Poġġiha fuq xkaffa miksija jew fuq ċangun żejjed, f’każ li tfur. Il-ħamja tbiddel it-tajn fi ħġieġ, li jżomm il-metalli ħafna aktar sod mit-trab sfuż, għalhekk huwa aktar sikur fil-landfill. Immaniġġja t-tajn niexef bħalma timmaniġġja l-glejż niexef, b’respiratur u mingħajr ma tagħmel trab.
+Xi studjos jaħmu t-tajn niexef qabel ma jarmuh. Ipoġġuh fi skutella żejda li se tintuża għal kollox: wara l-ħamja l-iskutella ma tistax terġa’ tintuża. Imla l-iskutella kwart biss, għax it-tajn jagħmel ir-ragħwa u l-bżieżaq meta jdub, u għattiha bi platt. Poġġiha fuq xkaffa miksija bil-kisja tax-xkafef{{en: kiln wash}} jew fuq ċangun żejjed, f’każ li tfur. Il-ħamja tbiddel it-tajn fi ħġieġ, li jżomm il-metalli ħafna aktar sod mit-trab sfuż, għalhekk huwa aktar sikur fil-landfill. Immaniġġja t-tajn niexef bħalma timmaniġġja l-glejż niexef, b’respiratur u mingħajr ma tagħmel trab.
 
 ## Żomm it-trab fl-istudjo {#keeping-dust-in-the-studio}
 

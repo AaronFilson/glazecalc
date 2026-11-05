@@ -72,7 +72,7 @@ Jsou to obecná pravidla prevence otrav, použitá na glazury. Žádná keramick
 - Na suroviny pro glazury nikdy nepoužívejte nádoby od jídla nebo pití (kelímky od jogurtu, sklenice, lahve), ani když jsou označené. Dítě ví, co bývá v kelímku od jogurtu.
 - Nástroje z dílny (lopatky, lžíce, metly, síta, váhy) nechávejte v dílně. Nikdy nepoužívejte kuchyňské nástroje na glazuru ani nástroje na glazuru na jídlo.
 - Mokré glazury uchovávejte v označených kbelících s nasazenými víky.
-- U každé suroviny mějte její bezpečnostní list, na papíře nebo v telefonu.
+- Bezpečnostní list každé suroviny mějte uložený u ní, na papíře nebo v telefonu.
 - V kuchyni nemějte nic z dílny: žádné pytle, kbelíky, nástroje ani zkušební střípky.
 
 Podrobněji o nákupu a skladování surovin píše návod [Jak připravit glazuru](/guides/making-a-glaze).

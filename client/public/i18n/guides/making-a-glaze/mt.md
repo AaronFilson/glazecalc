@@ -250,7 +250,7 @@ Glejż{{en: glaze}} jista’ jidher differenti ħafna fuq tafal ieħor jew f’f
 - il-madum kollu fl-istess mili tal-forn
 - marka fuq kull maduma qabel il-ħami, b’timbru, b’naqxa jew b’lapes tal-kulur taħt il-glejż. Il-madum moħmi jidher l-istess, u marka magħmula qabel il-ħami tibqa’ wara l-forn, biex dejjem tkun tista’ tgħid liema riċetta hija kull maduma.
 
-Nissuġġerixxu madum li joqgħod wieqaf, għax maduma ċatta taħbi kemm jinżel glejż, bi strixxa b’tessut biex turi kif jinbidel il-kulur tal-glejż fuq it-truf, u b’qiegħ mingħajr glejż. Poġġi kull waħda fuq platt żgħir jew fuq biċċa bisque, jew fuq xkaffa miksija, biex tilqa’ t-taqtir. Poġġi **kon xhud**{{en: witness cone}}, kon żgħir taċ-ċeramika li jitgħawweġ meta jkun irċieva biżżejjed sħana, qrib il-madum biex turi x’irċevew; il-[gwida tal-ħami](/guides/firing) tispjega l-koni. Agħti lil kull maduma kodiċi qasir, u iktbu ħdejn ir-riċetta fir-reġistri tiegħek. Willers, li jikteb għal Ceramic Arts Network, juża numri u ittri, u jikteb is-sistema nfisha fil-bidu tal-pitazz.
+Nissuġġerixxu madum li joqgħod wieqaf, għax maduma ċatta taħbi kemm jinżel glejż, bi strixxa b’tessut biex turi kif jinbidel il-kulur tal-glejż fuq it-truf, u b’qiegħ mingħajr glejż. Poġġi kull waħda fuq platt żgħir jew fuq biċċa bisque, jew fuq xkaffa miksija bil-kisja tax-xkafef, biex tilqa’ t-taqtir. Poġġi **kon xhud**{{en: witness cone}}, kon żgħir taċ-ċeramika li jitgħawweġ meta jkun irċieva biżżejjed sħana, qrib il-madum biex turi x’irċevew; il-[gwida tal-ħami](/guides/firing) tispjega l-koni. Agħti lil kull maduma kodiċi qasir, u iktbu ħdejn ir-riċetta fir-reġistri tiegħek. Willers, li jikteb għal Ceramic Arts Network, juża numri u ittri, u jikteb is-sistema nfisha fil-bidu tal-pitazz.
 
 ### Sensiela ta’ provi
 

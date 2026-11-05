@@ -137,7 +137,7 @@ Ka vesi on erinev ja Digitalfire märgib, et see muudab glasuurilahuse käitumis
 
 ### Samm-sammult
 
-1. Pange ette respiraator ja kummikindad, kui käed lähevad glasuuri sisse. Zakin kannab maski kaalumise algusest kuni glasuuri märjaks saamiseni.
+1. Pange ette respiraator. Kui käed lähevad glasuuri sisse, pange kätte ka kummikindad. Zakin kannab maski kaalumise algusest kuni glasuuri märjaks saamiseni.
 2. Mõõtke ämbrisse umbes 70 kuni 80 mL vett 100 g pulbri kohta.
 3. Lisage kaalutud pulber ettevaatlikult ja madalalt. UT Austin lisab pulbri sooja vette; Zakin ja Au lisavad vee pulbrile. See juhend soovitab panna pulbri vette, mis tõstab vähem tolmu, välja arvatud retsepti puhul, milles on palju bentoniiti: segage selle kuivad pulbrid kõigepealt omavahel.
 4. **Leotage**{{en: slake}}: laske pulbril segamata liguneda. Digitalfire ootab umbes 20 minutit. Sideaine või liimiga pulbrid peavad seisma üleöö.

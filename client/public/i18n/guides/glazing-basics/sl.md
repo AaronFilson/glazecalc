@@ -139,7 +139,7 @@ Vaša glazura je verjetno drugačna. Bor, druga talila in hladnejši stožci obm
 
 Območje **lasastih razpok** kaže, kje so razpokali Stullovi lastni preizkusi, na njegovi glini. Ne pove vam, kako se vaša glazura ujema z vašo glineno maso. Lasaste razpoke so odvisne od toplotnega raztezanja glazure in gline. Vrednost raztezanja v aplikaciji Glazecalc vam pomaga glazure primerjati, odloči pa pravi preizkus: preizkus z ledeno vodo v razdelku [Ujemanje glazure in napake](/guides/glazing-basics#fit-and-defects).
 
-**Ciljne formule**{{en: limit formulas}} so drugo orodje za isto vprašanje: razponi kremenice, glinice in talil za stabilne glazure pri določenem stožcu. Razdelek [Varnost pri stiku z živili](/guides/glazing-basics#food-safety) jih razloži in pove, zakaj same po sebi ne dokazujejo ničesar.
+**Mejne formule**{{en: limit formulas}} so drugo orodje za isto vprašanje: razponi kremenice, glinice in talil za stabilne glazure pri določenem stožcu. Razdelek [Varnost pri stiku z živili](/guides/glazing-basics#food-safety) jih razloži in pove, zakaj same po sebi ne dokazujejo ničesar.
 
 ## Frite in surovine {#materials}
 
@@ -262,7 +262,7 @@ Predpisi v ZDA, EU, Združenem kraljestvu in Avstraliji omejujejo svinec in kadm
 
 **Notranja glazura**{{en: liner glaze}} je stabilna, navadno prozorna ali bela glazura za površine, ki pridejo v stik s hrano. Po našem mnenju je glazura brez barvil, barija, svinca ali litija, ki se popolnoma stali, nima lasastih razpok in je obstojna, izbira z manjšim tveganjem. Manjše tveganje ni dokaz.
 
-**Ciljne formule**{{en: limit formulas}} (Digitalfire raje uporablja izraz **target formulas**) dajejo tipične razpone Segerjeve formule za stabilne glazure pri določenem stožcu: Digitalfirovi cilji za stožec 6 postavljajo glinico na 0,285–0,64 in kremenico na 2,4–4,7. Usmerjajo vas k dobri kemiji, a ne dokazujejo ničesar; Digitalfire se besedi »limit« (meja) izogiba, ker nakazuje, da so glazure znotraj razponov »nekako varne«. Orodja aplikacije Glazecalc za spreminjanje recepta povedo, kdaj nov recept preseže priporočeno mejo, na primer veliko bora pri stožcu 6, in kaj bo glazura verjetno naredila.
+**Mejne formule**{{en: limit formulas}} (Digitalfire raje uporablja izraz **ciljne formule**{{en: target formulas}}) dajejo tipične razpone Segerjeve formule za stabilne glazure pri določenem stožcu: Digitalfirovi cilji za stožec 6 postavljajo glinico na 0,285–0,64 in kremenico na 2,4–4,7. Usmerjajo vas k dobri kemiji, a ne dokazujejo ničesar; Digitalfire se besedi »limit« (meja) izogiba, ker nakazuje, da so glazure znotraj razponov »nekako varne«. Orodja aplikacije Glazecalc za spreminjanje recepta povedo, kdaj nov recept preseže priporočeno mejo, na primer veliko bora pri stožcu 6, in kaj bo glazura verjetno naredila.
 
 Zakonske mejne vrednosti se od države do države razlikujejo. Preglednica kaže tiste, ki veljajo tam, kjer živite, v enotah zakona; za primerjavo izberite drugo državo ali regijo.
 
@@ -404,7 +404,7 @@ Premaz za šamotne plošče
 Sproščanje kovin
 : Raztapljanje kovin iz žgane glazure v hrano ali pijačo.
 
-Ciljna formula (limit formula, target formula)
+Mejna formula, ciljna formula (limit formula, target formula)
 : Tipični razponi Segerjeve formule za stabilne glazure pri določenem stožcu; vodilo, ne jamstvo.
 
 Testna serija

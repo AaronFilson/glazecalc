@@ -137,7 +137,7 @@ Myös vesi vaihtelee, ja Digitalfire huomauttaa, että se muuttaa lasitelietteen
 
 ### Vaihe vaiheelta
 
-1. Laita hengityksensuojain kasvoille ja kumikäsineet käsiin, jos kädet joutuvat lasitteeseen. Zakin pitää maskia punnitsemisen alusta siihen asti, kun lasite on märkää.
+1. Laita hengityksensuojain kasvoille. Jos kädet joutuvat lasitteeseen, laita myös kumikäsineet käsiin. Zakin pitää maskia punnitsemisen alusta siihen asti, kun lasite on märkää.
 2. Mittaa ämpäriin noin 70–80 mL vettä 100 g:aa jauhetta kohden.
 3. Lisää punnittu jauhe varovasti ja matalalta. UT Austin lisää jauheen lämpimään veteen; Zakin ja Au lisäävät veden jauheeseen. Suosittelemme jauheen lisäämistä veteen, koska se nostaa vähemmän pölyä, paitsi jos reseptissä on paljon bentoniittia: sekoita silloin sen kuivat jauheet ensin keskenään.
 4. **Liota**: anna jauheen liota sekoittamatta. Digitalfire odottaa noin 20 minuuttia. Liima- tai sideainetta sisältävien jauheiden on annettava seistä yön yli.
