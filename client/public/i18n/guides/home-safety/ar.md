@@ -59,31 +59,31 @@ Label: المواد القابلة للذوبان
 
 أما خطر الرصاص الرئيسي فمختلف: ليس ملعقة واحدة، بل كميات صغيرة من الغبار تُبتلع على مدى أسابيع أو أشهر، دون علامات تحذيرية (يُنظر «الرصاص والأطفال» أدناه).
 
-## Storing materials at home {#storing-materials lang=en}
+## تخزين المواد في المنزل {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+لا تضع أي جهة رسمية قواعد لتخزين مواد الطلاء الزجاجي{{en: glaze}} في المنزل، لكن صفحات الصحة والسلامة تتفق على إبقاء العمل في مكان خاص به، بعيداً عن الأطفال. وتقول وزارة الصحة في ولاية بنسلفانيا، في حديثها عن الهوايات التي تستخدم الرصاص: «استخدموا مساحة عمل مخصصة أو مرآباً لهوايتكم، وأبعدوا الأطفال عن هذه المنطقة».
 
-### A storage checklist
+### قائمة تحقق للتخزين
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+هذه قواعد عامة للوقاية من التسمم مطبَّقة على الطلاء الزجاجي. لا يضعها أي معيار خاص بالخزف، لكننا نقترحها كلها:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- تُحفظ المواد الجافة مقفلاً عليها: في خزانة، أو في غرفة أو مرآب أو سقيفة تُقفل. ويساعد الرف العالي، لكن الأطفال يتسلقون. وإذا لم يمكن في البداية قفل إلا أشياء قليلة، يُبدأ بالمواد القابلة للذوبان والملوِّنات.
+- تُحفظ المواد في أكياسها أو عبواتها الأصلية. وإذا نُقلت مادة إلى حاوية أخرى، يوضع عليها ملصق بالاسم كما هو مكتوب على الكيس تماماً.
+- لا تُستخدم أبداً عبوات الطعام أو الشراب (علب الزبادي، والمرطبانات، والزجاجات) لمواد الطلاء الزجاجي، ولو كان عليها ملصق. فالطفل يعرف ما تحتويه علبة الزبادي.
+- تبقى أدوات الاستوديو (المغارف، والملاعق، والمخافق، والمناخل، والموازين) في الاستوديو. ولا تُستخدم أبداً أدوات المطبخ للطلاء، ولا أدوات الطلاء للطعام.
+- يُحفظ الطلاء الرطب في دلاء عليها ملصقات، وأغطيتها مغلقة.
+- تُحفظ صحيفة بيانات السلامة لكل مادة معها، ورقياً أو على الهاتف.
+- لا يُحفظ في المطبخ أي شيء من الاستوديو: لا أكياس ولا دلاء ولا أدوات ولا بلاطات اختبار{{en: test tile}}.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+وللتوسع في شراء المواد وتخزينها، يُنظر [طريقة تحضير الطلاء الزجاجي](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### نفايات الطلاء وماء الشطف
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+لا يُصب أبداً الطلاء، ولا الماء الذي شُطفت فيه أدوات الطلاء، في الحوض أو على الحديقة. ويقترح مجلس الحِرف البريطاني (Crafts Council) دلواً منفصلاً من الماء لغسل اليدين والفُرش والمناخل والأدوات. يُترك ليترسب طوال الليل، ثم يُسكب الماء الصافي من أعلاه، ثم يُجفَّف الطلاء المترسب ويوضع في القمامة (فيذهب إلى مكب النفايات)، ولا يُصب أبداً في المصرف.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+ونقترح غطاءً لهذا الدلو: فالرواسب تحتوي على المعادن نفسها التي في الطلاء، والحيوانات الأليفة تشرب الماء الراكد. وتختلف قواعد التخلص من النفايات من مكان إلى آخر، لذا يُرجى التحقق من صحيفة بيانات السلامة لكل منتج، وسؤال البلدية المحلية أو شركة المياه عند الشك.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+وتحرق بعض الاستوديوهات الرواسب المجفَّفة قبل التخلص منها. فتضعها في وعاء احتياطي يُستغنى عنه: إذ لا يمكن استخدام الوعاء مرة أخرى بعد الحرق. ولا يُملأ الوعاء إلا إلى ربعه، لأن الرواسب تُزبد وتفور أثناء انصهارها، ويُغطّى بطبق. ويوضع على رف مطلي بطلاء الأرفف الواقي{{en: kiln wash}} أو على لوح احتياطي، تحسّباً لفيضانها. والحرق يحوّل الرواسب إلى زجاج، وهو يحبس المعادن بإحكام أكبر بكثير من المسحوق السائب، فتكون أكثر أماناً في مكب النفايات. وتُعامَل الرواسب الجافة كما يُعامَل الطلاء الجاف، مع ارتداء الكمامة التنفسية ودون إثارة الغبار.
 
 ## إبقاء الغبار في الاستوديو {#keeping-dust-in-the-studio}
 

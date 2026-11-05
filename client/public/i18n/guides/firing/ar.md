@@ -458,73 +458,73 @@ Label: برنامج BQ1000 من Digitalfire
 
 يتبع الفرن اليدوي التحكم الخطة نفسها يدوياً: تجفيف بطيء مع رفع الغطاء على مسند وفتح فتحات المراقبة، ورفع المفاتيح تدريجياً من «منخفض» إلى «متوسط» إلى «مرتفع»، وترك جهاز Kiln-Sitter ينهي الحرق. والإجراءات المنشورة مذكورة في «الأفران اليدوية بالتفصيل» أدناه.
 
-## Glaze firing {#glaze lang=en}
+## حرق الطلاء {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+حرق الطلاء{{en: glaze firing}} يصهر الطلاء ليصبح زجاجاً على البسكويت. ومعظم الطلاءات المنخفضة الحرارة المعروضة في السوق مصنوعة للمخروط 06 أو 05 (ضمن نطاق الحرارة المنخفضة، المخروط 06–04)، ومعظم الطلاءات المتوسطة الحرارة للمخروط 5–6. ويُحرق إلى المخروط المذكور على ملصقات الطلاء والطين، مع مجموعة مخاريط حول ذلك الرقم. ولمعرفة ما يحدث داخل الطلاء أثناء انصهاره، يُنظر [الطلاء الزجاجي من المبادئ الأولى](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### التحميل لحرق الطلاء
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- يجب ألا تتلامس القطع المطلية فيما بينها أو مع الجدران: تُترك مسافة نحو ½ بوصة (13 mm).
+- يُبعد الطلاء عن قاعدة القطعة (**ترك القاعدة دون طلاء**، dry-footing)، أو توضع القطع المنخفضة الحرارة على **ركائز ذات رؤوس** (stilts)، وهي حوامل صغيرة لها رؤوس مدببة. ولا ينبغي أن يوضع الخزف الحجري والبورسلين على الركائز، لأنها تنغرس فيهما عند تلك الدرجات؛ ويُستخدم بدلاً منها طلاء الأرفف الواقي العالي الحرارة أو رمل السيليكا.
+- تُترك مسافة 1 بوصة (25 mm) على الأقل بين حواف الأرفف والجدار أو جهاز Kiln-Sitter.
 
-### Controller schedules
+### برامج وحدة التحكم
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: برامج حرق الطلاء المسبقة من L&L و Bartlett
+Label: برامج حرق الطلاء المسبقة
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| المرحلة               |                             الارتفاع إلى |             Slow Glaze |             Fast Glaze |
+| --------------------- | ---------------------------------------: | ---------------------: | ---------------------: |
+| 1                     |                       {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |    لا توجد خطوة مستقلة |
+| 2                     | أدنى من الذروة بمقدار {{250 °F; 139 °C}} | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                     |                                   الذروة |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| زمن التسخين، فرن فارغ |                                          |         نحو 6½–7½ ساعة |          نحو 3–4 ساعات |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: أين تنتهي المرحلتان 2 و 3، بحسب المخروط (L&L و Bartlett)
+Label: أهداف البرامج المسبقة
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| المخروط |      نهاية المرحلة 2 |               الذروة |
+| ------- | -------------------: | -------------------: |
+| 06      |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04      |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6       | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+برنامج Slow Glaze هو الخيار الافتراضي الأكثر أماناً، نظراً لتحذير L&L من الحرق السريع. وإذا أُضيف تثبيت لأكثر من 5–10 دقائق عند الذروة، تقول L&L بخفض الهدف أو تعويض المخروط بما يوازن ذلك، وتشير إلى أن «الإنضاج عند درجات الحرارة العالية يسرّع تآكل عناصر التسخين والمزدوجة الحرارية».
 
-### Cone 6: drop-and-hold
+### المخروط 6: الخفض ثم التثبيت
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+تخرج الطلاءات المتوسطة الحرارة أحياناً وفيها **ثقوب إبرية**{{en: pinholing}} (ثقوب دقيقة في السطح) أو فقاعات، تخلّفها الغازات المتصاعدة من المصهور. ويحرق برنامج **الخفض ثم التثبيت**{{en: drop-and-hold}} الفرن حتى الذروة، ثم يبرّده بسرعة بنحو {{100 °F; 56 °C}} ويثبّت الحرارة عندها. وبعبارة Digitalfire: «الخفض بمقدار 100°F والتثبيت يمنحان المصهور لزوجة كافية لتفجير الفقاعات مع السماح لها بالالتئام».
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
-Label: Digitalfire PLC6DS
+Table: برنامج PLC6DS من Digitalfire، الخفض ثم التثبيت على المخروط 6
+Label: برنامج PLC6DS من Digitalfire
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| الخطوة |                              المعدل |                الهدف | التثبيت                                 |
+| ------ | ----------------------------------: | -------------------: | --------------------------------------- |
+| 1      |               {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 دقيقة                                |
+| 2      |              {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | 30 دقيقة اختيارياً، لإزالة سحب الفقاعات |
+| 3      |               {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 دقائق؛ مدة أطول في الأفران الكبيرة   |
+| 4      | نزولاً بمعدل {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 دقيقة                                |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+يستغرق برنامج PLC6DS نحو 9 ساعات و 36 دقيقة. وللطلاءات الأكثر سيولة، تخفض Digitalfire الحرارة بنحو {{200 °F; 111 °C}} بدلاً من ذلك؛ والخفض أكثر من اللازم «يعرّض الطلاء لخطر التبلور أثناء التثبيت». وذروته {{2200 °F; 1204 °C}} أدنى من {{2232 °F; 1222 °C}} التي يعطيها الجدول للمخروط 6؛ وتذكر Digitalfire أن معظم الأفران تبلغ المخروط 6 عند نحو {{2200 °F; 1204 °C}}. ويُتحقق من ذلك بمجموعة مخاريط في فرنك.
 
-### Slow cooling
+### التبريد البطيء
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**التبريد البطيء** يعني أن تبرّد وحدة التحكم الفرن بمعدل محدد بدلاً من تركه يبرد بحرية. وبرنامج C6DHSC من Digitalfire هو PLC6DS يتبعه تبريد بمعدل {{150 °F/h; 83 °C/h}} من {{2100 °F; 1148 °C}} نزولاً إلى {{1400 °F; 760 °C}}، ثم الإطفاء. وهو «يحسّن اللمعان وجودة السطح» ويساعد ألوان الروتيل الزرقاء، لكن التبريد البطيء «قد يزيد المظهر المطفأ» (فقد صار أحد الطلاءات المطفأة جافاً) وقد يقصّر عمر المرحِّلات في الفرن. وتوفر L&L أيضاً برنامج تبريد بطيء للمخروط 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: برنامج «User 6» من L&L: تبريد بطيء لطلاءات المخروط 6
+Label: التبريد البطيء لدى L and L
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| الخطوة |                             المعدل |                الهدف |
+| ------ | ---------------------------------: | -------------------: |
+| 1      |                  ارتفاع بأقصى سرعة | {{2232 °F; 1222 °C}} |
+| 2      |                    نزول بأقصى سرعة | {{1900 °F; 1038 °C}} |
+| 3      | نزولاً بمعدل {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+وتوفر وحدات التحكم من Skutt كذلك تسخيناً مسبقاً وخياراً للتبريد بخطوة واحدة.
 
-### On a manual kiln
+### في الفرن اليدوي التحكم
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+لا يستطيع الفرن اليدوي التحكم اتباع هذه البرامج بدقة، لكن الخطة واحدة: تسخين لطيف في البداية، وثبات في الوسط، ونهاية تحت المراقبة. وبرنامج Bracker's لحرق الطلاء المنخفض الحرارة مذكور في «الأفران اليدوية بالتفصيل» أدناه؛ وللمخاريط الأسخن يضيف «متوسط 15–30 دقيقة لكل رقم مخروط». ومع بيرومتر وممارسة وسجل للحرق، يمكن تقليد الخفض ثم التثبيت أو التبريد البطيء تقريبياً بخفض المفاتيح يدوياً، كما تقترح Digitalfire.
 
 ## الأفران اليدوية بالتفصيل {#manual-kilns}
 
