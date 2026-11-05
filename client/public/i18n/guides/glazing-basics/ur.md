@@ -3,480 +3,480 @@ title: گلیز کی بنیادی باتیں
 lead: گلیز کن چیزوں سے بنتا ہے، بھٹی اسے شیشے میں کیسے بدلتی ہے، اور ریسیپی، تھیلے یا مخروطوں کے چارٹ پر ملنے والا ہر لفظ، سمجھا کر۔
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## گلیز کیا ہے {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**گلیز**{{en: glaze}} شیشے کی ایک پتلی تہہ ہے جو برتن پر پگھل کر جم جاتی ہے۔ گلیز ریسیپیوں کا کھلا ڈیٹا بیس Glazy اسے “شیشے کا ایسا فارمولا جو خاص درجۂ حرارت پر پگھل کر مٹی پر جم جانے کے لیے بنایا گیا ہو” کہتا ہے۔ یہ پاؤڈر کی ایک تہہ کے طور پر لگتا ہے اور بھٹی میں پگھل کر شیشے جیسی تہہ بن جاتا ہے جو مٹی کو بند کر دیتی ہے، اس لیے برتن کے رسنے، داغ لگنے یا گھسنے کا امکان کم ہوتا ہے۔ پکائی کے عروج پر پگھلا ہوا گلیز مٹی سے بھی ردعمل کرتا ہے، اور اکثر دونوں کے درمیان ایک تہہ بناتا ہے جو گلیز کو جکڑ لیتی ہے۔ ارتھن ویئر (سفال){{en: earthenware}} پر، جو کم گرم پکتا ہے، یہ تہہ پتلی ہوتی ہے اور گلیز زیادہ تر اوپر ہی رہتا ہے۔ اسٹون ویئر{{en: stoneware}} اور پورسلین پر، جو زیادہ گرم پکتے ہیں، یہ تہہ موٹی ہوتی ہے اور گلیز مٹی کو زیادہ مضبوطی سے پکڑتا ہے۔ پھر بھی گلیز شیشہ ہی رہتا ہے: وہ مٹی کا حصہ نہیں بنتا۔
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+ریسیپی میں خام مواد ہوتے ہیں، جیسے فیلڈ اسپار{{en: feldspar}}، وائٹنگ (کیلشیم کاربونیٹ){{en: whiting}} اور کاؤلن (چائنا کلے){{en: kaolin}}۔ بھٹی میں ہر ایک کا کچھ حصہ گیس بن کر نکل جاتا ہے (پانی یا کاربن ڈائی آکسائیڈ) اور باقی **آکسائیڈز**{{en: oxides}} بن جاتا ہے: کسی عنصر اور آکسیجن کے مرکبات، جیسے سلیکا (SiO₂) یا کیلشیم آکسائیڈ (CaO)۔ پکا ہوا شیشہ آکسائیڈز سے بنا ہوتا ہے، اس لیے کمہار گلیز کو انہی سے بیان کرتے ہیں۔ ہر آکسائیڈ تین میں سے ایک کام کرتا ہے۔
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **سلیکا**{{en: silica}} (SiO₂) **گلاس فارمر (تیزابی آکسائیڈ)**{{en: glass former}} ہے: یہ شیشہ بناتی ہے۔ خالص سلیکا {{3100 °F; 1700 °C}} سے اوپر پگھلتی ہے، جو مٹی کے برتنوں کی بھٹی سے کہیں زیادہ گرم ہے، اور زیادہ سلیکا والا گلیز عموماً زیادہ پائیدار ہوتا ہے۔
+- **فلکسز (اساسی آکسائیڈ)**{{en: fluxes}} پگھلنے کا درجۂ حرارت اتنا کم کر دیتے ہیں کہ بھٹی وہاں تک پہنچ سکے۔ **القلی**{{en: alkalis}}، جو **R₂O** لکھے جاتے ہیں، سوڈیم، پوٹاشیم اور لیتھیم کے آکسائیڈ ہیں (Na₂O، K₂O، Li₂O)؛ یہ مخروط (Orton cone) 06 سے لے کر درمیانے اور زیادہ درجۂ حرارت تک کام کرتے ہیں۔ **القلی ارضی آکسائیڈ**{{en: alkaline earths}}، جو **RO** لکھے جاتے ہیں، کیلشیم، میگنیشیم، بیریم اور اسٹرونشیم کے آکسائیڈ ہیں (CaO، MgO، BaO، SrO)، اور زنک آکسائیڈ (ZnO) ان کے ساتھ شمار ہوتا ہے؛ یہ مخروط 5 سے مخروط 10 تک بہترین کام کرتے ہیں۔ R خاندان کی کسی بھی دھات کے لیے ہے۔
+- **ایلومینا**{{en: alumina}} (Al₂O₃) **اسٹیبلائزر (ایمفوٹیرک آکسائیڈ)**{{en: stabilizer}} ہے۔ یہ پگھلے ہوئے گلیز کو گاڑھا کرتی ہے تاکہ وہ سیدھی دیواروں پر ٹکا رہے، اور سختی اور پائیداری بڑھاتی ہے۔ Glazy کا انتباہ: بہت کم ایلومینا ہو تو “آپ کا گلیز بہہ سکتا ہے؛ بہت زیادہ پگھلے ہوئے گلیز کو گاڑھا کر کے میٹ بنا سکتی ہے”۔ ایلومینا زیادہ تر چکنی مٹی اور فیلڈ اسپار سے آتی ہے۔
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**بورون**{{en: boron}} (B₂O₃) یہ لکیر دھندلا دیتا ہے۔ کیمیا دان اسے گلاس فارمر مانتے ہیں، لیکن اسٹوڈیو کے درجۂ حرارت پر یہ فلکس کا کام کرتا ہے، اور کمہار اسے فلکس ہی سمجھتے ہیں۔ یہ کم اور درمیانے درجۂ حرارت پر ایک اہم فلکس ہے: پکائی جتنی کم گرم ہو، گلیز کو اتنا زیادہ بورون چاہیے۔ مخروط 10 پر عموماً اس کی ضرورت نہیں ہوتی۔ (مخروطے، جن سے کمہار پکائی کا نام لیتے ہیں، نیچے سمجھائے گئے ہیں۔)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> یاد رکھنے کا ایک طریقہ: سلیکا شیشہ ہے، فلکسز اسے اس درجۂ حرارت پر پگھلنے دیتے ہیں جہاں تک آپ کی بھٹی پہنچ سکے، اور ایلومینا اسے گاڑھا کرتی ہے تاکہ وہ وہیں رہے جہاں آپ نے لگایا۔
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## چکنی مٹی، تہیں اور دو پکائیاں {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### کلے باڈیز
 
-## From recipe to unity formula {#unity-formula lang=en}
+**کلے باڈی**{{en: clay body}} وہ مٹی ہے جس سے برتن بنا ہو۔ اس کی تین بڑی قسمیں ہیں۔
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **ارتھن ویئر (سفال)**{{en: earthenware}}: کم درجۂ حرارت کی باڈی، تقریباً مخروط 06–02، جو کم مخروطوں پر مسام دار ہوتی ہے اور زیادہ گرم پکانے پر زیادہ گھنی۔ اکثر لال یا بادامی، اسے پانی روکنے کے لیے گلیز چاہیے۔
+- **اسٹون ویئر**{{en: stoneware}}: درمیانے سے زیادہ درجۂ حرارت کی باڈی، تقریباً مخروط 5–10، جو شیشہ نما یا تقریباً شیشہ نما ہو جاتی ہے۔
+- **پورسلین**{{en: porcelain}}: کاؤلن سے بھرپور سفید باڈی، اکثر نیم شفاف۔ زیادہ تر پورسلین زیادہ درجۂ حرارت کی ہوتی ہے، لیکن مخروط 6 کی پورسلین بھی ہوتی ہے۔
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**شیشہ نما**{{en: vitreous}} کا مطلب ہے شیشے جیسا اور غیر مسام دار؛ **شیشہ نما ہونا**{{en: vitrification}} پکائی میں باڈی کا ایسا بن جانا ہے۔ UK کے کمہار اکثر یہ لکیر درجۂ حرارت سے کھینچتے ہیں: اسٹون ویئر {{2192 °F; 1200 °C}} سے اوپر پکتا ہے، ارتھن ویئر اس سے نیچے۔ درمیانہ درجۂ حرارت، مخروط 5–6، اس لکیر کے دونوں طرف ذرا سا پڑتا ہے۔
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### تہیں اور سکھانا
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**سلپ (پتلی مٹی)**{{en: slip}} پانی میں معلق چکنی مٹی ہے، سانچے میں ڈھالنے، جوڑنے یا سجانے کے لیے۔ **اینگوب**{{en: engobe}} سلپ جیسی ایک تہہ ہے، اکثر رنگین، جس میں چکنی مٹی کے علاوہ مواد زیادہ ہوتے ہیں۔ **انڈر گلیز رنگ**{{en: underglaze}} رنگین سلپ یا آکسائیڈ سے سجاوٹ ہے، جس پر عموماً شفاف گلیز لگایا جاتا ہے۔
 
-### The silica to alumina ratio
+بغیر پکے برتن **کچے برتن**{{en: greenware}} کہلاتے ہیں (ماخذوں میں اختلاف ہے کہ یہ لفظ تمام بغیر پکے برتنوں کے لیے ہے یا صرف خشک برتنوں کے لیے)۔ سوکھتے ہوئے یہ **چمڑے جیسی سختی**{{en: leather-hard}} تک پہنچتے ہیں، سخت مگر ذرا نم، تراشنے اور دستے لگانے کا مرحلہ؛ پھر **بالکل خشک**{{en: bone dry}}، جس میں کوئی آزاد پانی نہیں رہتا، بہت نازک اور پکانے کے لیے تیار۔
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### دو پکائیاں
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+پہلی، کم درجۂ حرارت کی پکائی **بسکٹ (پہلی پکائی)**{{en: bisque}} ہے (UK میں **biscuit**)، عموماً مخروط 08–04 (زیادہ تر 06–04)، تقریباً {{1728–1945 °F; 942–1063 °C}}۔ یہ برتن کو مضبوط مگر مسام دار چھوڑتی ہے۔ گلیز کی حوالہ سائٹ Digitalfire عموماً 15% سے زیادہ مسام داری تجویز کرتی ہے، تاکہ گلیز لگاتے وقت بسکٹ اس کا پانی کھینچ لے۔ نرم بسکٹ (مخروط 08–06) زیادہ مسام دار ہوتا ہے؛ سخت بسکٹ (اکثر مخروط 04) زیادہ مضبوط ہوتا ہے لیکن گلیز کم آسانی سے پکڑتا ہے۔
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: بسکٹ گلیز لگانے کو کیسے بدلتا ہے (Digitalfire)
+Label: بسکٹ گلیز لگانے کو کیسے بدلتا ہے
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| بسکٹ                                  | کیا ہوتا ہے                                                            |
+| ------------------------------------- | ---------------------------------------------------------------------- |
+| کم پکا، بہت زیادہ پانی چوسنے والا     | گلیز بہت موٹا لگتا ہے، پھر چٹختا ہے اور اس میں کرالنگ ہوتی ہے          |
+| زیادہ پکا، گھنا                       | ڈبونے اور سوکھنے میں زیادہ وقت لگتا ہے                                 |
+| زیادہ گرم پکا، یا اوپر زیادہ دیر روکا | اب زیادہ گیس جل کر نکلتی ہے، اس لیے بعد میں گلیز سے کم بلبلے نکلتے ہیں |
 
-### Loss on ignition
+UK کا سپلائر Potclays بسکٹ پکائی تقریباً {{1000 °C; 1832 °F}} تک بتاتا ہے، جو تقریباً مخروط 06 ہے۔ ان ماخذوں کو ساتھ پڑھ کر ہمارا مشورہ ہے کہ پہلے بسکٹ کے لیے مخروط 06–04 رکھیں: Orton کی درمیانی رفتار پر {{1828–1945 °F; 998–1063 °C}}۔
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**گلیز کی پکائی**{{en: glaze firing}} (برطانوی کمہار اسے **glost** پکائی بھی کہہ سکتے ہیں) گلیز کو پگھلاتی ہے اور، اسٹون ویئر کے لیے، مٹی کو بھی پختہ کرتی ہے۔ **ایک ہی پکائی**{{en: once-firing}} میں کچے برتن پر گلیز لگا کر اسے صرف ایک بار پکایا جاتا ہے۔ Digitalfire ایک پیداواری مثال بتاتا ہے جس میں کچے برتن پر گلیز لگانے سے کناروں پر کرالنگ ہوتی رہی، یہاں تک کہ بسکٹ پکائی سے یہ ٹھیک ہو گئی، اس لیے دو پکائیوں سے شروع کریں۔ [ایک سادہ بھٹی کی پکائی](/guides/firing) دونوں کے پروگرام دیتی ہے۔
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## مخروطے اور حرارتی کام {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+کمہار پکائی کا نام **مخروط**{{en: cone}} سے لیتے ہیں: پائرومیٹرک مخروط ایک پتلا سرامک اہرام ہے جو ایک طے شدہ مقدار میں حرارت ملنے پر جھک جاتا ہے۔ انہیں بنانے والا Orton مخروطوں کو وقت اور درجۂ حرارت (حرارتی کام) کے اشارے کہتا ہے: یہ صرف درجۂ حرارت نہیں، بلکہ وقت اور درجۂ حرارت کا مشترکہ اثر دکھاتے ہیں۔
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**حرارتی کام**{{en: heatwork}} اس کی وجہ ہے: گلیز، مٹی اور مخروط سب اس پر بھی ردعمل کرتے ہیں کہ وہ کتنی دیر گرم رہے، نہ صرف اس پر کہ کتنے گرم۔ آہستہ پکائی مخروط کو کم درجۂ حرارت پر جھکا دیتی ہے، تیز پکائی زیادہ پر۔ Orton کے چارٹ میں مخروط 6 {{2165 °F; 1185 °C}} پر جھکتا ہے جب پکائی کے آخر میں رفتار {{27 °F; 15 °C}} فی گھنٹہ ہو، {{108 °F; 60 °C}} فی گھنٹہ پر {{2232 °F; 1222 °C}} پر، اور {{270 °F; 150 °C}} فی گھنٹہ پر {{2269 °F; 1243 °C}} پر، رفتار آخری {{180 °F; 100 °C}} پر لی گئی ہے۔ مخروط تب پورا ہوتا ہے جب اس کی نوک 90° تک جھک جائے۔ کمہار اکثر اسے 5 بجے کی پوزیشن کہتے ہیں۔
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+مخروط کے نمبر 022 سے 42 تک ہیں۔ شروع کا صفر کم گرم سلسلے کو ظاہر کرتا ہے، جہاں بڑا نمبر کم گرم ہے: مخروط 06 مخروط 04 سے کم گرم ہے، اور مخروط 01 مخروط 1 سے کم گرم۔
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: پکائی کے دائرے: {{108 °F; 60 °C}} فی گھنٹہ پر Orton کے خود کھڑے رہنے والے مخروطے
+Label: پکائی کے دائرے
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| دائرہ              | مخروطے |          °F |          °C | کس کے لیے                |
+| ------------------ | ------ | ----------: | ----------: | ------------------------ |
+| کم درجۂ حرارت      | 06–04  | 1,828–1,945 |   998–1,063 | ارتھن ویئر کے گلیز؛ بسکٹ |
+| درمیانہ درجۂ حرارت | 5–6    | 2,167–2,232 | 1,186–1,222 | اسٹون ویئر اور پورسلین   |
+| زیادہ درجۂ حرارت   | 9–10   | 2,300–2,345 | 1,260–1,285 | اسٹون ویئر اور پورسلین   |
+
+> [!NOTE]
+> اپنی پکائیوں کا نام اور پروگرام مخروط سے رکھیں، اور درجۂ حرارت کو تقریبی سمجھیں۔ برتنوں کے بیچ شیلف پر ایک **گواہ مخروط**{{en: witness cone}}، یا تین مخروطوں کا **سیٹ**{{en: cone pack}} (رہنما، پکائی اور حفاظتی مخروط)، دکھاتا ہے کہ آپ کے برتنوں کو واقعی کتنا حرارتی کام ملا۔
+
+شائع شدہ درجۂ حرارت مختلف ہیں۔ Glazy زیادہ درجۂ حرارت، مخروط 9–11، کو تقریباً {{2336–2390 °F; 1280–1310 °C}} بتاتا ہے، جو Orton کے تیز رفتار کالم سے ملتا ہے، اور Digitalfire مخروط 6 کو تقریباً {{2200 °F; 1204 °C}} بتاتا ہے۔ ہمارا مشورہ: Orton کی درمیانی رفتار کے اعداد استعمال کریں، جیسا کہ یہ گائیڈ کرتا ہے، مخروط سے پروگرام کریں، اور گواہ مخروط کو فیصلہ کرنے دیں۔
+
+شمالی امریکہ سے باہر سپلائر اکثر مخروط کے بجائے °C دیتے ہیں۔ Hermann Seger نے جدید مخروط بنایا، جو پہلی بار 1886 میں برلن میں استعمال ہوا، اور UK کے اپنے Staffordshire مخروطے رہے ہیں؛ ان کے نمبروں کو Orton کے نمبروں کے برابر نہیں سمجھنا چاہیے، اور ہمیں انہیں بدلنے کا کوئی جدول نہیں ملا۔ [ایک سادہ بھٹی کی پکائی](/guides/firing) مخروطوں کو زیادہ تفصیل سے بیان کرتی ہے۔
+
+## ریسیپی سے سیگر فارمولا تک {#unity-formula}
+
+**بیچ ریسیپی**{{en: batch recipe}} خام مواد کو وزن کے حساب سے دیتی ہے، عموماً اس طرح کہ بنیادی مواد کا مجموعہ 100 ہو۔ **اضافی مادے**{{en: additives}} (رنگ دینے والے آکسائیڈ، غیر شفاف بنانے والے مادے اور معلق رکھنے والے مادے) 100 کے اوپر سے ڈالے جاتے ہیں، عموماً بنیادی گلیز کے فیصد کے طور پر۔ یہ دیکھنے کے لیے کہ گلیز اصل میں کیا ہے، کمہار ریسیپی کو **سیگر فارمولا**{{en: unity molecular formula}} میں بدلتے ہیں (**UMF**، یا **Seger formula**، Hermann Seger کے نام پر، جنہوں نے پہلی بار اس کی تین کالموں والی ترتیب استعمال کی)۔
+
+Table: ریسیپی سے سیگر فارمولا تک: Glazy کی حل شدہ مثال
+Label: ریسیپی سے سیگر فارمولا تک
+
+| قدم              | کیا ہوتا ہے                                                                                                                              | مثال میں                                                                                                                         |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 1. بیچ ریسیپی    | خام مواد وزن کے حساب سے، 100 پر لائے ہوئے                                                                                                | دوسرے مواد کے ساتھ فیلڈ اسپار 40%                                                                                                |
+| 2. آکسائیڈ تجزیہ | غذائیت کے لیبل کی طرح: ہر مادے کے آکسائیڈ وزن کے فیصد کے طور پر جمع کیے جاتے ہیں، اور گیسیں نکال دی جاتی ہیں                             | فیلڈ اسپار 64.8% سلیکا ہے، اس لیے اس کا 40% حصہ 25.9% SiO₂ لاتا ہے۔ پکا ہوا گلیز 67.4% SiO₂، 12.6% Al₂O₃، 7.5% K₂O، 12.5% CaO ہے |
+| 3. مول           | وزن **مول**{{en: moles}} میں بدلتے ہیں، یعنی مالیکیولوں کی گنتی، کیونکہ “گرام گمراہ کر سکتے ہیں، کیونکہ کچھ آکسائیڈ دوسروں سے بھاری ہیں” | SiO₂ کا 60.1 g ایک مول ہے، اس لیے 67.4 g تقریباً 1.12 مول ہے                                                                     |
+| 4. ایک پر لانا   | ہر چیز کو فلکسز کے مجموعے سے تقسیم کیا جاتا ہے، تاکہ فلکسز کا مجموعہ 1 ہو                                                                | فلکسز کا مجموعہ 0.303 ہے؛ تقسیم سے K₂O 0.26، CaO 0.74، Al₂O₃ 0.41، SiO₂ 3.70 ملتے ہیں                                            |
+
+Glazecalc کا [ریسیپی کا صفحہ](/recipe) آپ کے لکھتے لکھتے یہ چاروں قدم کر دیتا ہے، اور نتیجہ تین کالموں میں دکھاتا ہے: فلکسز (R₂O اور RO) جن کا مجموعہ 1 ہے؛ اسٹیبلائزر (R₂O₃: ایلومینا، اور بورون اکثر یہیں رکھا جاتا ہے)؛ اور گلاس فارمر (RO₂: سلیکا)۔ Glazy کہتا ہے، “ایک پر لانا بس پیمانہ بدلنے کا ایک طریقہ ہے”: مختلف مواد سے بنی دو ریسیپیاں جن کا سیگر فارمولا ایک ہو، “پکنے کے بعد تقریباً ایک جیسا رویہ رکھتی ہیں”۔ اس لیے 1 ایک مشترکہ پیمانہ ہے، کوئی مقدار نہیں جو آپ تولیں۔ Digitalfire مزید کہتا ہے کہ یہ طریقہ “کم درجۂ حرارت پر اتنا اچھا کام نہیں کرتا”، جہاں بورون ایک سادہ فلکس نہیں، اور یہ کہ سیگر فارمولے “موازنے کے لیے ہیں اور انہیں سیاق و سباق میں دیکھنا بہتر ہے”۔ “**موازنہ کریں**” دو ریسیپیوں کے فارمولے آکسائیڈ بہ آکسائیڈ ساتھ ساتھ دکھاتا ہے۔
+
+### سلیکا اور ایلومینا کا تناسب
+
+سب سے مفید واحد عدد **سلیکا اور ایلومینا کا تناسب**{{en: silica to alumina ratio}} ہے: سلیکا کو ایلومینا سے تقسیم کیا ہوا۔ مثال میں 3.70 ÷ 0.41 تقریباً 9 ہے۔
+
+Table: سلیکا اور ایلومینا کا تناسب کیا بتاتا ہے (Glazy)
+Label: سلیکا اور ایلومینا کا تناسب
+
+|     تناسب | Glazy کی رائے                                    |
+| --------: | ------------------------------------------------ |
+| تقریباً 9 | کافی حرارت ملے تو چمکدار پگھلاؤ کا اشارہ دیتا ہے |
+|       5–7 | کئی پائیدار اسٹون ویئر گلیز میں عام              |
+|       3–5 | میٹ یا کم پکا ہو سکتا ہے                         |
+
+Glazy یہ نہیں بتاتا کہ یہ اعداد کس مخروط کے لیے ہیں۔ انہیں اسٹون ویئر گلیز کے لیے، تقریباً مخروط 6–10، ایک موٹی رہنمائی سمجھیں۔ Digitalfire کہتا ہے کہ تقریباً 8 سے زیادہ کا تناسب شاید چمکدار ہوگا، لیکن بورون والا گلیز 8 یا اس سے کم پر بھی چمکدار ہو سکتا ہے، اور کم درجۂ حرارت کا گلیز 6 پر بھی۔ 5–7 کا تناسب اکیلا نہ چمک کی پیش گوئی کرتا ہے نہ میٹ کی: فلکسز، بورون اور مخروط سب یہ لکیر ہلاتے ہیں۔ Glazy پائیدار گلیز کے لیے فلکسز کا عام توازن 0.2 R₂O کے ساتھ 0.8 RO سے لے کر 0.3 R₂O کے ساتھ 0.7 RO تک بتاتا ہے۔ زیادہ القلی پگھلے ہوئے گلیز کو زیادہ رواں بناتی ہے اور اس کا پھیلاؤ بڑھاتی ہے، اور یوں کریزنگ کا خطرہ بھی۔
+
+### پکائی میں وزن کی کمی
+
+**پکائی میں وزن کی کمی**{{en: loss on ignition}} (**LOI**) وہ وزن ہے جو کوئی مادہ بھٹی میں کھو دیتا ہے جب پانی، کاربن ڈائی آکسائیڈ، نامیاتی مادہ یا سلفر گیس بن کر نکلتے ہیں۔ پکے ہوئے گلیز میں یہ کچھ نہیں ہوتا، اس لیے سیگر فارمولا اسے شامل نہیں کرتا۔
+
+Table: پکائی میں وزن کی عام کمی (Digitalfire)
+Label: پکائی میں وزن کی کمی
+
+| مادہ                               | عام LOI                                                                                   |
+| ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| وائٹنگ (کیلشیم کاربونیٹ)، ڈولومائٹ | 40% سے زیادہ، زیادہ تر کاربن ڈائی آکسائیڈ: 100 g کیلشیم کاربونیٹ سے تقریباً 44 g نکلتی ہے |
+| لیتھیم کاربونیٹ                    | تقریباً 60%                                                                               |
+| بیریئم کاربونیٹ، Gerstley Borate   | 20% سے زیادہ                                                                              |
+| کاؤلن                              | تقریباً 12–14%، زیادہ تر اس کی قلموں میں بندھا ہوا پانی                                   |
+| فیلڈ اسپار                         | 1% سے کم                                                                                  |
+
+جو گیس گلیز کے پگھلنا شروع ہونے کے بعد نکلے، اسے اس کے اندر سے بلبلوں کی شکل میں گزرنا پڑتا ہے، جس سے Digitalfire کے الفاظ میں “بلبلے، چھالے، پن ہول، کرالنگ” پیدا ہوتے ہیں۔ Digitalfire کے ایک ٹیسٹ میں ٹیلک تقریباً {{1650 °F; 899 °C}} تک گیس چھوڑتا رہا۔ فرٹ، **کیلسائنڈ (بھونا ہوا)**{{en: calcined}} مواد (جنہیں ان کی گیسیں نکالنے کے لیے پہلے سے گرم کیا گیا ہو) اور پکائی میں تبدیلیاں، سب مدد دیتے ہیں۔
+
+پرانی کتابیں یہ حساب ہاتھ سے کرتی ہیں، **سالمی کمیت**{{en: molecular weight}} (کسی مادے یا آکسائیڈ کے ایک مول کا وزن) اور **مساوی وزن**{{en: equivalent weight}} (کسی مادے کا وہ وزن جو کسی آکسائیڈ کا ایک مول دے) کے ساتھ۔ ہمارے حساب سے تقریباً 100 g وائٹنگ کیلشیم آکسائیڈ کا ایک مول، یعنی 56 g، دیتی ہے۔ کیلکولیٹر دونوں کا حساب کر لیتا ہے۔
+
+## حدیں اور اسٹل (Stull) چارٹ {#stull-chart}
+
+**اسٹل (Stull) چارٹ**{{en: Stull chart}} گلیز کا ایک نقشہ ہے۔ اس کے دو محور ہیں، دونوں سیگر فارمولا سے: سلیکا (SiO₂) نیچے افقی، اور ایلومینا (Al₂O₃) پہلو میں عمودی۔ ہر گلیز ایک نقطہ ہے۔ نقشہ علاقوں میں بٹا ہوا ہے، جیسے میٹ، چمکدار، کم پکا اور کریزنگ والا۔ Glazecalc کا [ریسیپی کا صفحہ](/recipe) آپ کا گلیز اس پر دکھاتا ہے۔
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+یہ چارٹ R. T. Stull نے ان ٹیسٹوں سے بنایا جو انہوں نے 1912 میں شائع کیے۔ انہوں نے انہیں تقریباً مخروط 11 پر پکایا، اور ہر ٹیسٹ میں فلکسز ایک جیسے تھے: 0.3 پوٹاش (K₂O) اور 0.7 کیلشیم آکسائیڈ (CaO)۔ صرف سلیکا اور ایلومینا بدلے گئے۔ اس لیے چارٹ انہی گلیز کے لیے، اسی حرارت پر، درست ہے۔
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+آپ کا گلیز شاید مختلف ہے۔ بورون، دوسرے فلکسز اور کم مخروطے سب علاقوں کو ہلا دیتے ہیں۔ 2025 میں Ceramics Monthly کے ایک مضمون میں مخروط 6 کا ایک گلیز جانچا گیا جس میں بوریٹس فلکس تھے اور لوہا بہت تھا۔ چارٹ نے اسے کریزنگ والا، میٹ اور کم پکا دکھایا۔ اصل میں وہ پوری طرح پگھلا ہوا، ساٹن اور بغیر کریزنگ کے تھا۔ مصنفین کہتے ہیں کہ بوریٹس والے گلیز چارٹ پر ٹھیک نہیں بیٹھتے۔ اس لیے علاقوں کو رہنمائی سمجھیں، پیش گوئی نہیں۔
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+**کریزنگ والا**{{en: crazed}} علاقہ وہ ہے جہاں Stull کے اپنے ٹیسٹوں میں، ان کی مٹی پر، کریزنگ آئی۔ یہ نہیں بتاتا کہ آپ کا گلیز آپ کی کلے باڈی پر کیسا بیٹھتا ہے۔ کریزنگ گلیز اور مٹی دونوں کے حرارتی پھیلاؤ پر منحصر ہے۔ Glazecalc کا پھیلاؤ کا عدد گلیز کا موازنہ کرنے میں مدد دیتا ہے، اور فیصلہ اصلی ٹیسٹ کرتا ہے: [گلیز اور مٹی کی مطابقت اور نقائص](/guides/glazing-basics#fit-and-defects) میں برف کے پانی والا ٹیسٹ۔
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**حدود کے فارمولے**{{en: limit formulas}} اسی سوال کا ایک الگ طریقہ ہیں: کسی مخروط پر پائیدار گلیز کے لیے سلیکا، ایلومینا اور فلکسز کے دائرے۔ [کھانے کے لیے حفاظت](/guides/glazing-basics#food-safety) انہیں سمجھاتا ہے، اور یہ بھی کہ وہ اکیلے کچھ ثابت کیوں نہیں کرتے۔
 
-## Frits and raw materials {#materials lang=en}
+## فرٹ اور خام مواد {#materials}
 
-### Frits
+### فرٹ
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**فرٹ**{{en: frit}} فیکٹری میں بنا شیشہ ہے: معدنیات پگھلا کر، پانی میں ٹھنڈے کر کے اور پیس کر۔ فرٹ بنانے سے بوریکس (سہاگہ) جیسے حل پذیر مواد ناحل پذیر ہو جاتے ہیں، سیسہ اور بیریم جیسے زہریلے آکسائیڈ ایک پائیدار شیشے میں بند ہو جاتے ہیں، خام معدنیات سے زیادہ یکساں مادہ ملتا ہے، اور گیسیں نکل جاتی ہیں، اس لیے فرٹ والے گلیز “نقائص سے کہیں زیادہ پاک” ہوتے ہیں (Digitalfire)۔ فرٹ جلدی بھی پگھلتے ہیں: سوڈا فرٹ مخروط 06 پر سرگرم ہوتا ہے، جبکہ فیلڈ اسپار “مخروط 6 پر ابھی نرم ہونا شروع ہی ہوتا ہے”۔ یہ مہنگے ہیں، انہیں معلق رہنے کے لیے چکنی مٹی چاہیے (Digitalfire کی مثال 85% فرٹ کے ساتھ 15% چکنی مٹی ہے)، اور یہ “نظری طور پر ناحل پذیر ہیں، لیکن عملی طور پر نہیں”۔
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+شمالی امریکہ کے فرٹ بنانے والے اور نمبر سے پہچانے جاتے ہیں: Ferro Frit 3134 (Ferro اب Vibrantz ہے) شمالی امریکہ میں سب سے زیادہ استعمال ہونے والے فرٹ میں سے ہے۔ UK کی ریسیپیاں زیادہ تر عام فرٹ کا نام لیتی ہیں، جیسے standard borax frit۔
 
-### The common raw materials
+### عام خام مواد
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: عام گلیز مواد اور وہ کیا دیتے ہیں
+Label: عام گلیز مواد
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| مادہ (دوسرے نام)                                  | کیا دیتا ہے              | نوٹس                                                                                                                                                                       |
+| ------------------------------------------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| سلیکا (فلنٹ، کوارٹز)                              | SiO₂                     | گلیز میں 325 میش، یعنی بہت باریک پسا ہوا، استعمال کریں                                                                                                                     |
+| کاؤلن (UK میں چائنا کلے)                          | Al₂O₃، SiO₂              | ایلومینا کا بڑا ذریعہ؛ گلیز کو بیٹھنے سے روکنے میں بھی مدد دیتا ہے                                                                                                         |
+| بال کلے                                           | Al₂O₃، SiO₂              | کاؤلن سے زیادہ لچکدار، زیادہ لوہے اور نامیاتی مادے کے ساتھ                                                                                                                 |
+| پوٹاش فیلڈ اسپار، سوڈا فیلڈ اسپار، نیفلین سائنائٹ | K₂O، Na₂O، Al₂O₃، SiO₂   | اپنی ایلومینا اور سلیکا کے ساتھ فلکسز۔ نیفلین سائنائٹ کم اور درمیانے درجۂ حرارت پر ایک طاقتور فلکس ہے۔ کسی پرانی ریسیپی کا سادہ “فیلڈ اسپار” ان میں سے کوئی بھی ہو سکتا ہے |
+| وائٹنگ (کیلشیم کاربونیٹ)                          | CaO                      | کیلشیم کا بڑا فلکس؛ کاربن ڈائی آکسائیڈ چھوڑتا ہے                                                                                                                           |
+| ولاسٹونائٹ                                        | CaO، SiO₂                | کاربن ڈائی آکسائیڈ کے بغیر کیلشیم                                                                                                                                          |
+| ڈولومائٹ، ٹیلک                                    | MgO، CaO یا SiO₂ کے ساتھ | ریشمی میٹ سطحیں؛ کم پھیلاؤ                                                                                                                                                 |
+| زنک آکسائیڈ                                       | ZnO                      | چمک اور قلمیں؛ بہت زیادہ سے کرالنگ ہو سکتی ہے                                                                                                                              |
+| بورون فرٹ، Gerstley Borate، کولمینائٹ             | B₂O₃                     | مخروط 06 سے مخروط 6 تک ضروری؛ فرٹ “کچے بوریٹس سے زیادہ یکساں اور کم حل پذیر” ہیں                                                                                           |
+| لیتھیم کاربونیٹ                                   | Li₂O                     | کم پھیلاؤ والا فلکس؛ مہنگا، اس لیے کم استعمال ہوتا ہے                                                                                                                      |
+| اسٹرونشیم کاربونیٹ                                | SrO                      | بیریم کا کم زہریلا متبادل                                                                                                                                                  |
+| بیریئم کاربونیٹ                                   | BaO                      | کچی حالت میں زہریلا؛ زیادہ بیریم والے گلیز سے دھاتوں کا اخراج ہو سکتا ہے                                                                                                   |
+| بینٹونائٹ                                         | معلق رکھنا               | ایک بہت باریک چکنی مٹی، عموماً 1–2%، بیٹھنے سے روکنے کے لیے۔ 3% سے زیادہ سے گلیز سوکھتے وقت چٹخ سکتا ہے                                                                    |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> گلیز کے مواد باریک پاؤڈر ہیں۔ سلیکا کی گرد پھیپھڑوں کو نقصان پہنچاتی ہے اور شروع میں کوئی علامات نہیں ہوتیں، اور کچھ مواد، جیسے بیریئم کاربونیٹ اور لیتھیم کاربونیٹ، نگلنے پر زہریلے ہیں۔ پاؤڈر آہستہ سے سنبھالیں، گیلے طریقے سے صفائی کریں، اور خشک کام کرتے وقت ٹھیک بیٹھنے والا ریسپیریٹر (سانس کا حفاظتی ماسک) پہنیں۔ [محفوظ طریقے سے ملانا اور ہوا کی آمد و رفت](/guides/safe-mixing) اور [اپنے گھر والوں کو زہر نہ دیں](/guides/home-safety) بتاتے ہیں کہ کیسے۔
 
-### Regional names
+### علاقائی نام
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **کاؤلن** UK میں **china clay** ہے۔ آسٹریلیا میں Eckalite کاؤلن کا ایک برانڈ ہے۔
+- **فلنٹ**{{en: flint}} سلیکا کا ایک پرانا UK نام ہے۔ UK کے سپلائر اب بھی **کیلسائنڈ فلنٹ** کو ایک الگ پروڈکٹ کے طور پر بیچتے ہیں، اس لیے برطانوی ریسیپی میں “فلنٹ” کا مطلب شاید کیلسائنڈ فلنٹ ہے، اور امریکی ریسیپی میں شاید پسا ہوا کوارٹز۔ دونوں سلیکا کے ذرائع کے طور پر بکتے ہیں؛ تجزیہ جانچ لیں۔
+- **چائنا اسٹون** (China stone) اور **کورنش اسٹون** (Cornwall stone) ایک ہی مادہ ہیں، جو فیلڈ اسپار سے ملتا جلتا ہے۔
+- **وائٹنگ** کیلشیم کاربونیٹ ہے، پسی ہوئی کھریا یا چونا پتھر۔
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> کسی مادے کو اس کے نام سے نہیں، بلکہ ان آکسائیڈز سے پرکھیں جو وہ دیتا ہے۔ Glazecalc اسی طرح کام کرتا ہے: آپ [مواد کے صفحے](/material) پر اپنے سپلائر کا تجزیہ درج کر سکتے ہیں، اور “**جدید مواد آزمائیں اور موازنہ کریں**”، “**مقداریں تجویز کریں اور موازنہ کریں**” اور “**میرے پاس موجود سے ملائیں**” سب پکنے کے بعد کے آکسائیڈ ملاتے ہیں، نام نہیں۔
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+مواد بدلتے بھی ہیں۔ US Geological Survey بتاتا ہے کہ ساؤتھ ڈکوٹا میں Custer فیلڈ اسپار بنانے والی کانوں اور پلانٹ نے نومبر 2023 میں کام روک دیا۔ اصل Gerstley Borate کی کان تقریباً 1999–2000 میں بند ہوئی؛ Laguna اب بھی اس نام سے ایک پروڈکٹ بیچتا ہے، اور Gillespie Borate اس کا بڑا متبادل ہے۔ ماخذوں میں اختلاف ہے کہ Gillespie، Gerstley Borate کی جگہ پاؤنڈ کے بدلے پاؤنڈ لے سکتا ہے یا نہیں (اس کا بنانے والا اور Potclays ہاں کہتے ہیں، Digitalfire اور دوسرے نہیں)، اس لیے دونوں کا Glazecalc میں موازنہ کریں، پھر ایک چھوٹا بیچ جانچیں۔
 
-## Colorants and opacifiers {#color lang=en}
+## رنگ دینے والے آکسائیڈ اور غیر شفاف بنانے والے مادے {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**رنگ دینے والا آکسائیڈ**{{en: colorant}} دھات کا ایک آکسائیڈ یا کاربونیٹ ہے جو گلیز کو رنگ دیتا ہے؛ **سرامک اسٹین**{{en: stain}} فیکٹری میں بنا رنگ دینے والا مادہ ہے، جو خام آکسائیڈز سے زیادہ پائیدار اور یکساں ہوتا ہے۔ رنگ دینے والے آکسائیڈ عموماً بنیادی گلیز کے 5% سے کم ہوتے ہیں، بہت سے 1% سے کم، اور کاربونیٹ اسی دھات کے آکسائیڈ سے کمزور ہوتا ہے، کیونکہ اس کا کچھ حصہ گیس بن کر نکل جاتا ہے۔ ہمارے حساب سے 100 g کوبالٹ کاربونیٹ سے تقریباً 63 g کوبالٹ آکسائیڈ ملتا ہے، اور کمہاروں کے خریدے جانے والے کاپر کاربونیٹ (بیسک کاپر کاربونیٹ) کے 100 g سے تقریباً 72 g کاپر آکسائیڈ۔ اس لیے آکسائیڈ سے تقریباً 1.4 سے 1.6 گنا زیادہ کاربونیٹ استعمال کریں۔
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: عام رنگ دینے والے آکسائیڈ، بنیادی گلیز کے فیصد کے طور پر
+Label: عام رنگ دینے والے آکسائیڈ
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| رنگ دینے والا آکسائیڈ | عام ابتدائی مقدار                       | رنگ اور نوٹس                                                                                                                                               |
+| --------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| کوبالٹ                | 0.1–2% (ماخذوں میں اختلاف)              | نیلا، اور بہت طاقتور؛ بنیادی گلیز میں میگنیشیم ہو تو جامنی کی طرف                                                                                          |
+| لوہا                  | 0.5–10%                                 | تکسیدی پکائی میں بھورے، ہلکے بادامی اور لال؛ تخفیفی پکائی میں ½–2% سے سیلاڈان اور 5–10% سے ٹینموکو۔ یہ ایک فلکس ہے، اس لیے زیادہ مقدار گلیز کو بہا دیتی ہے |
+| تانبا                 | 1–3%                                    | تکسیدی پکائی میں سبز یا فیروزی، تخفیفی پکائی میں لال۔ اس سے گلیز سے دھاتوں کا اخراج ہو سکتا ہے                                                             |
+| کروم                  | 0.5% سے کم سے 2% تک (ماخذوں میں اختلاف) | سبز؛ بنیادی گلیز میں زنک ہو تو بھورا، ٹن کے ساتھ گلابی                                                                                                     |
+| مینگنیز               | 2–10%                                   | بھورے اور جامنی                                                                                                                                            |
+| رُوٹائل               | تقریباً 2–5%                            | دھبے دار، رنگا رنگ؛ تقریباً 5% سے اوپر کھردرا یا میٹ                                                                                                       |
+| تجارتی سرامک اسٹین    | 2–12%                                   | ہلکے رنگوں کے لیے 2–4%، درمیانے رنگوں کے لیے 5–8%، گہرے رنگوں کے لیے 10–12%                                                                                |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+کوبالٹ اور کروم کی مقداروں پر واقعی اختلاف ہے۔ Glazy کہتا ہے کہ نیلے کے لیے 0.1% کوبالٹ کافی ہے؛ Glendale Community College فضا کے لحاظ سے ½–2% یا ½–3% بتاتا ہے؛ Pottery Making Illustrated میں Birdie Boone کہتی ہیں 3% یا اس سے کم۔ کروم کے لیے Boone 0.5% سے کم کہتی ہیں اور Glendale 2–3%۔ محفوظ راستہ یہ ہے کہ کم سے شروع کریں اور ایک **لائن بلینڈ**{{en: line blend}} بنائیں: ٹیسٹ ٹائلوں کی ایک قطار جس میں ایک جز تھوڑے سے زیادہ تک قدم بہ قدم بڑھتا ہے۔
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+بنیادی گلیز رنگ بدل دیتا ہے۔ چمکدار، شفاف بنیادی گلیز سب سے روشن رنگ دیتا ہے؛ ساٹن اور میٹ بنیادی گلیز، جن میں عموماً ایلومینا زیادہ ہوتی ہے، اسے مدھم کر دیتے ہیں۔ میگنیشیم کوبالٹ کو جامنی کی طرف لے جاتا ہے، زنک کروم کو بھورا کر دیتا ہے، اور کروم ٹن کے ساتھ گلابی دیتا ہے۔
 
-### Opacifiers
+### غیر شفاف بنانے والے مادے
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+**غیر شفاف بنانے والا مادہ**{{en: opacifier}} گلیز کو **غیر شفاف**{{en: opaque}} بناتا ہے، جو مٹی کو چھپا دیتا ہے؛ **شفاف**{{en: transparent}} گلیز اسے دکھنے دیتا ہے۔
 
-Table: Opacifiers
+Table: غیر شفاف بنانے والے مادے
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| مادہ                                       | عام مقدار                     | نوٹس                                                                                                                          |
+| ------------------------------------------ | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| زرقون (زرکون) (Zircopax، Superpax، Ultrox) | پوری غیر شفافیت کے لیے 10–15% | سستا انتخاب؛ یہ برانڈ مختلف باریکی تک پسا ہوا زرکونیم سلیکیٹ ہیں، اور زیادہ باریک گریڈ زیادہ طاقتور ہیں                       |
+| ٹن آکسائیڈ                                 | تقریباً 5–7% (ہمارا اندازہ)   | مہنگا؛ زیادہ درجۂ حرارت پر کمزور، اور Digitalfire بتاتا ہے کہ مخروط 10 کے شفاف تخفیفی گلیز میں 4% سے کوئی غیر شفافیت نہیں آئی |
+| ٹائٹینیم ڈائی آکسائیڈ                      | تقریباً 5% (ہمارا اندازہ)     | ریشمی، نیم شفاف غیر شفافیت؛ تقریباً 5% سے سطح بدل سکتی ہے، اور اس سے کہیں زیادہ سے اکثر قلموں والی میٹ سطح بنتی ہے            |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## گلیز اور مٹی کی مطابقت اور نقائص {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+مٹی اور گلیز دونوں گرم ہونے پر بڑھتے اور ٹھنڈے ہونے پر سکڑتے ہیں، ہر ایک اپنی مقدار سے: اس کا **حرارتی پھیلاؤ**{{en: thermal expansion}}۔ **گلیز اور مٹی کی مطابقت**{{en: glaze fit}} یہ ہے کہ دونوں کتنے ملتے ہیں۔ اچھی مطابقت میں مٹی گلیز کو ذرا سا دبائے رکھتی ہے؛ Digitalfire کہتا ہے کہ تھوڑا دباؤ برتن کو مضبوط کرتا ہے، جبکہ بہت زیادہ دباؤ اسے کمزور کر سکتا ہے اور چٹخا بھی سکتا ہے۔
 
-### Crazing and shivering
+### کریزنگ اور شیورنگ
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**کریزنگ (باریک دراڑوں کا جال)**{{en: crazing}} باریک دراڑوں کا ایک جال ہے۔ گلیز کا پھیلاؤ باڈی سے زیادہ ہوتا ہے، اس لیے ٹھنڈا ہوتے وقت وہ زیادہ سکڑتا ہے، کھنچتا ہے اور چٹخ جاتا ہے، عموماً بہت زیادہ سوڈیم اور پوٹاشیم (Na₂O، K₂O) کی وجہ سے۔ یہ بعد میں، استعمال کے دوران بھی ظاہر ہو سکتی ہے، بار بار اچانک ٹھنڈا ہونے کے بعد، جیسے ٹھنڈے مشروبات سے۔ جب یہ مطلوب ہو، جیسے راکو میں، تو اسے **کریکل**{{en: crackle}} کہتے ہیں۔ Digitalfire کہتا ہے، “95% بار حل یہ ہے کہ گلیز کا حرارتی پھیلاؤ ٹھیک کیا جائے”؛ آہستہ ٹھنڈا کرنا کریزنگ کو صرف ٹالتا ہے۔ اس کا ٹیسٹ: برتن کو تقریباً {{300 °F; 149 °C}} تک گرم کریں، برف کے پانی میں ڈبو دیں، اور دراڑیں دکھانے کے لیے اس پر فیلٹ پین رگڑیں۔
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+پہلے حل پر ماخذوں میں اختلاف ہے۔ Glazy سلیکا یا ایلومینا بڑھانے کا مشورہ دیتا ہے؛ Digitalfire جواب دیتا ہے کہ اضافی سلیکا “صرف KNaO کو ہلکا کرتی ہے” (سوڈیم اور پوٹاشیم)؛ Linda Bloomfield بورون بڑھاتی ہیں یا فیلڈ اسپار گھٹاتی ہیں، ایک وقت میں ایک مادہ۔ ہمارا مشورہ: [ریسیپی کیلکولیٹر](/recipe) میں کچھ سوڈیم اور پوٹاشیم کی جگہ کم پھیلاؤ والے فلکسز (بورون، لیتھیم، میگنیشیم، کیلشیم) رکھیں، تبدیلی کو “**موازنہ کریں**” سے جانچیں، اور برف کے پانی والے ٹیسٹ سے تصدیق کریں۔
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**شیورنگ (گلیز کا چھلنا)**{{en: shivering}} اس کا الٹ ہے: گلیز کا پھیلاؤ باڈی سے بہت کم ہوتا ہے، اس لیے وہ حد سے زیادہ دب جاتا ہے اور کناروں اور سروں سے پرت کی شکل میں اتر جاتا ہے۔ Digitalfire خبردار کرتا ہے کہ یہ پرتیں استرے جیسی تیز ہو سکتی ہیں اور نگلی جا سکتی ہیں، اور Glazy شیورنگ کو “استعمال کے برتنوں پر کریزنگ سے بھی زیادہ خطرناک” کہتا ہے۔ اس کا حل زیادہ پھیلاؤ والا گلیز یا کم پھیلاؤ والی باڈی ہے۔
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> کریزنگ یا شیورنگ والے برتن کھانے یا پینے کے لیے استعمال نہ کریں۔ ماخذوں میں اختلاف ہے کہ کریزنگ والے برتن کافی اچھی طرح صاف ہو سکتے ہیں یا نہیں (ایک کہتا ہے کہ ڈش واشر کافی ہے؛ دوسرا کریزنگ والے استعمال کے برتنوں کو ناقص کہتا ہے)، اس لیے ہم احتیاط والی بات مانتے ہیں۔
 
-### Gloss and matte
+### چمکدار اور میٹ
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+**چمکدار**{{en: gloss}} سطح چمکتی اور ہموار ہوتی ہے، **ساٹن**{{en: satin}} میں ہلکی دبی ہوئی چمک ہوتی ہے، اور **میٹ**{{en: matte}} بے چمک ہوتی ہے۔ چمک کے لیے پوری طرح پگھلا ہوا شیشہ چاہیے۔ میٹ بہت زیادہ ایلومینا سے آ سکتا ہے (سلیکا اور ایلومینا کا کم تناسب)، ایسے فلکسز سے جیسے کیلشیم، میگنیشیم، بیریم یا اسٹرونشیم جو گلیز کے ٹھنڈا ہوتے وقت ننھی قلمیں بناتے ہیں، یا کم پکائی سے۔
 
-### Common defects
+### عام نقائص
 
-Change one thing at a time, and keep your test tiles.
+ایک وقت میں ایک چیز بدلیں، اور اپنی ٹیسٹ ٹائلیں سنبھال کر رکھیں۔
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: گلیز کے عام نقائص، ان کی عام وجوہات اور پہلے حل
+Label: گلیز کے عام نقائص
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| نقص                      | کیسا دکھتا ہے                                                 | عام وجوہات                                                                                                                                      | پہلے حل                                                                                         |
+| ------------------------ | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| کرالنگ (گلیز کا سمٹنا)   | گلیز سمٹ کر دانوں کی شکل میں جمع ہو جاتا ہے، ننگی مٹی چھوڑ کر | گرد آلود یا چکنا بسکٹ؛ موٹی، چکنی مٹی سے بھرپور تہہ جو سوکھتے وقت چٹخ گئی؛ زنک، زرقون یا ٹن                                                     | بسکٹ صاف کریں؛ پتلی تہہ لگائیں؛ چکنی مٹی کا کچھ حصہ کیلسائن کریں؛ CMC گوند جیسا بائنڈر ڈالیں    |
+| پن ہول (سوئی جیسے سوراخ) | چھوٹے سوراخ یا گڑھے                                           | باڈی یا گلیز سے نکلنے والی گیس جس کے نشان نہیں بھرے؛ کم پکا یا گاڑھا گلیز                                                                       | بلند ترین درجۂ حرارت پر تقریباً آدھا گھنٹہ ہولڈ کریں؛ پتلی تہہ لگائیں؛ زنک یا رُوٹائل کم کریں   |
+| چھالے (بلسٹرنگ)          | تیز کناروں والے گڑھے                                          | عموماً زیادہ پکائی؛ بہت موٹی تہیں؛ تقریباً {{2192 °F; 1200 °C}} سے اوپر اڑ جانے والے فلکسز                                                      | کم درجۂ حرارت پر پکائیں؛ پتلی تہہ لگائیں۔ تیز کنارے استعمال کے برتنوں کو غیر محفوظ بنا دیتے ہیں |
+| گلیز کا بہنا             | گلیز بہہ کر شیلف پر آ جاتا ہے                                 | بہت کم ایلومینا؛ بہت موٹا، جیسے جہاں ڈالی گئی تہیں ایک دوسرے پر چڑھیں؛ بہت زیادہ لوہا                                                           | پتلی تہہ لگائیں؛ ایلومینا بڑھائیں؛ گلیز کو پیندے سے کافی اوپر رکھیں                             |
+| ڈنٹنگ (حرارت سے دراڑ)    | ٹھنڈا یا گرم ہونے سے برتن میں دراڑیں                          | کوارٹز کی تبدیلی، {{1063 °F; 573 °C}}، یا کرسٹوبلائٹ کی تبدیلی، تقریباً {{428 °F; 220 °C}}، سے تیزی سے ٹھنڈا ہونا؛ ناہموار دیواریں؛ خراب مطابقت | دونوں سے آہستہ گزاریں، چڑھتے اور اترتے؛ یکساں دیواریں                                           |
 
-## Food safety {#food-safety lang=en}
+## کھانے کے لیے حفاظت {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**دھاتوں کا اخراج (لیچنگ)**{{en: leaching}} پکے ہوئے گلیز سے دھات کا کھانے یا مشروب میں گھل کر نکلنا ہے، اور گلیز بالکل ٹھیک دکھ کر بھی ایسا کر سکتا ہے۔ قانونی ٹیسٹ پکے ہوئے برتن کو تیزابی محلول میں بھگوتے ہیں اور اس سے نکلنے والا سیسہ اور کیڈمیم ناپتے ہیں۔
 
-### Lead-free is not the same as food-safe
+### سیسے سے پاک ہونا کھانے کے لیے محفوظ ہونے کے برابر نہیں
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+امریکہ، یورپی یونین، UK اور آسٹریلیا کے قواعد اس سیسے اور کیڈمیم کی حد طے کرتے ہیں جو پکا ہوا برتن خارج کرتا ہے، اس کی نہیں جو گلیز میں ہو۔ “سیسے سے پاک”{{en: lead-free}} ایک خطرہ ہٹاتا ہے؛ یہ کھانے کی حفاظت کا درجہ نہیں۔ دوسرے آکسائیڈز سے بھی اخراج ہوتا ہے: Glazy خبردار کرتا ہے کہ زیادہ بیریم والے گلیز سے “اخراج ہو سکتا ہے اور وہ عموماً کھانے کے لیے محفوظ نہیں ہوتے”، Digitalfire کہتا ہے کہ تانبا “گلیز سے اخراج کا سبب بن سکتا ہے؛ اسے جانچیں”، اور Glazy اب استعمال کے برتنوں کے لیے سیسے والے گلیز کا مشورہ نہیں دیتا۔
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**لائنر گلیز**{{en: liner glaze}} ایک پائیدار، عموماً شفاف یا سفید گلیز ہے، ان سطحوں کے لیے جو کھانے کو چھوتی ہیں۔ ہماری رائے میں ایسا گلیز جس میں نہ رنگ دینے والا آکسائیڈ ہو، نہ بیریم، نہ سیسہ، نہ لیتھیم، جو پوری طرح پگھلے، جس میں کریزنگ نہ ہو اور جو اچھی طرح گھسائی سہے، کم خطرے والا انتخاب ہے۔ کم خطرہ ثبوت نہیں۔
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**حدود کے فارمولے**{{en: limit formulas}} (Digitalfire **ہدف فارمولے**{{en: target formulas}} کہنا پسند کرتا ہے) کسی مخروط پر پائیدار گلیز کے لیے سیگر فارمولا کے عام دائرے دیتے ہیں: Digitalfire کے مخروط 6 کے ہدف ایلومینا کو 0.285–0.64 اور سلیکا کو 2.4–4.7 پر رکھتے ہیں۔ یہ آپ کو درست کیمیا کی طرف لے جاتے ہیں لیکن کچھ ثابت نہیں کرتے؛ Digitalfire لفظ “حد” سے بچتا ہے کیونکہ اس سے لگتا ہے کہ دائروں کے اندر کے گلیز “کسی طرح محفوظ ہیں”۔ Glazecalc میں ریسیپی بدلنے کے اوزار بتاتے ہیں کہ نئی ریسیپی کب کسی تجویز کردہ حد سے آگے جاتی ہے، جیسے مخروط 6 پر بہت زیادہ بورون، اور گلیز شاید کیا کرے گا۔
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+قانونی حدیں ملک کے لحاظ سے مختلف ہیں۔ جدول آپ کے ملک کی حدیں، قانون کی اپنی اکائیوں میں، دکھاتا ہے؛ موازنے کے لیے کوئی دوسرا ملک یا خطہ چنیں۔
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+امریکہ میں سجاوٹ کا ایسا سرامک برتن جو کھانے کے لیے قابلِ استعمال لگے، کھانے کا برتن سمجھا جاتا ہے، الا یہ کہ اس پر چپکنے والا لیبل اور اس کے پیندے پر ڈھالا یا پکایا ہوا مستقل نوٹس ہو، جیسے “Not for Food Use” اور “May Poison Food” (کھانے کے استعمال کے لیے نہیں؛ کھانے کو زہریلا کر سکتا ہے)، یا کھانے والی سطح میں آر پار سوراخ ہو۔ یورپی یونین سرامک برتنوں کے لیے سیسے اور کیڈمیم کی حدیں یورپی ہدایت 84/500/EEC میں طے کرتی ہے، اور UK اپنے قانون میں وہی اعداد رکھتا ہے۔ Benelux ممالک کا 2024 کا ایک فیصلہ سرامک برتنوں کے لیے کہیں کم حدیں طے کرتا ہے۔ نیدرلینڈز نے انہیں 29 مئی 2026 سے لاگو کیا: یورپی یونین کے اعداد سے تقریباً 130 سے 150 گنا کم سیسہ اور تقریباً 14 سے 18 گنا کم کیڈمیم۔ جو برتن پرانے قواعد پر پورے اترتے تھے اور 1 دسمبر 2026 سے پہلے پہلی بار بیچے گئے، وہ اسٹاک ختم ہونے تک بیچے جا سکتے ہیں۔ ٹیسٹنگ لیبارٹریاں بتاتی ہیں کہ لکسمبرگ 29 مئی 2026 سے یہی حدیں لاگو کرتا ہے، اور بیلجیم نے انہیں 19 جولائی 2026 کے ایک شاہی فرمان میں اپنایا؛ ہم نے یہ متن خود نہیں پڑھے۔ آسٹریلیا درآمد شدہ برتنوں کے لیے حدیں طے کرتا ہے؛ آسٹریلیا یا نیوزی لینڈ میں بنے برتنوں کے لیے ہمیں کوئی سرکاری حد نہیں ملی۔
 
-### Testing
+### جانچ
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+امریکی ادارۂ خوراک و ادویات (FDA) کہتا ہے کہ گھر کی سواب کٹس اخراج ہونے والا سیسہ دکھا سکتی ہیں، لیکن مطالعے بتاتے ہیں کہ یہ کٹس گلیز شدہ برتنوں پر اکثر غلط ہوتی ہیں: یہ ایسا سیسہ دکھا سکتی ہیں جو موجود نہ ہو، اور اخراج ہونے والے سیسے کو نظرانداز کر سکتی ہیں۔ مثبت نتیجے کو برتن کا استعمال بند کرنے کی وجہ سمجھیں، اور منفی نتیجے کو کسی چیز کا ثبوت نہ سمجھیں۔ پکے ہوئے برتن کا لیبارٹری میں دھاتوں کے اخراج کا ٹیسٹ{{en: leach test}} (امریکہ میں ASTM C738؛ یورپ میں EN 1388 یا ISO 6486) ہی اصل جواب ہے۔
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> “کھانے کے لیے محفوظ”{{en: food safe}} کا مطلب ہے کہ یہ گلیز، اس مٹی پر، اس بھٹی میں اس مخروط تک پکا ہوا اور اس طرح لگایا ہوا، قانونی حدوں سے کم خارج کرتا ہے۔ Glazecalc ایک پائیدار گلیز بنانے میں مدد دے سکتا ہے، اور “**سیسہ بدلیں**” سیسے والی پرانی ریسیپی کو سیسے کے بغیر دوبارہ بنا سکتا ہے، لیکن کوئی کیلکولیٹر کسی برتن کی تصدیق نہیں کر سکتا۔ صرف پکے ہوئے برتن کا ٹیسٹ کر سکتا ہے۔
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## کثافت اضافی اور گلیز لگانا {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### کثافت اضافی
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+پانی میں ملا ہوا گلیز کا پاؤڈر **گلیز کا گھول**{{en: slurry}} ہے۔ اس کی **کثافت اضافی**{{en: specific gravity}} (**SG**) اتنے ہی حجم کے پانی کے مقابلے میں اس کا وزن ہے، اور پانی کی کثافت اضافی 1.0 ہے: یہ جتنی زیادہ ہو، بالٹی میں اتنا زیادہ پاؤڈر۔ Glazy 1.4–1.5 کو “زیادہ تر گلیز کے لیے ایک اچھا ابتدائی نقطہ” کہتا ہے۔ اسے ناپنے کے لیے ٹھیک 100 mL گھول تولیں (Glazy سرنج تجویز کرتا ہے) اور 100 سے تقسیم کریں: 145 g کا مطلب ہے کثافت اضافی 1.45۔ جیل والے گلیز میں ہائیڈرومیٹر قابلِ اعتماد نہیں ہوتے، اور پانی بھاپ بن کر اڑتا ہے، اس لیے گلیز لگانے سے پہلے دوبارہ جانچیں۔
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+ہدف ماخذ کے لحاظ سے مختلف ہیں۔ Digitalfire ڈبونے والے گلیز کو 1.40–1.50 اور تجارتی برش والے گلیز کو 1.25–1.55 پر رکھتا ہے، جبکہ Potclays برش کے لیے 1.71–1.81 اور اسپرے کے لیے 1.71 بتاتا ہے۔ ہمارا مشورہ: تقریباً 1.45 پر ڈبوئیں، گلیز ذرا سا جیل والا ہو، برش والے گلیز کے لیے لیبل کی ہدایت مانیں، اور جو کام کرے اسے لکھ لیں۔
+
+**فلوکولینٹ**{{en: flocculant}} (ایپسم سالٹ، سرکہ یا کیلشیم کلورائیڈ) گھول کو ذرا سا جیل بنا دیتا ہے، اسے **تھکسوٹروپک**{{en: thixotropic}} بنا کر: یہ ہلانے پر بہتا ہے اور رکے رہنے پر جم جاتا ہے، “یکساں، بغیر ٹپکے گلیز کی تہہ” کے لیے۔ **ڈیفلوکولینٹ**{{en: deflocculant}} (سوڈیم سلیکیٹ یا Darvan) اسے پتلا کرتا ہے۔ [گلیز کیسے بنائیں](/guides/making-a-glaze) ملانے اور ٹھیک کرنے کی تفصیل دیتا ہے۔
+
+### گلیز لگانا
+
+پہلے بسکٹ سے گرد اور چکنائی ایک ہلکے سے نم اسفنج سے صاف کریں، دھونے کے بجائے، جس سے وہ پانی سے بھر جاتا ہے۔ گرد کو کمپریسڈ ہوا سے نہ اڑائیں اور نہ خشک برش سے جھاڑیں: اس سے سلیکا کی گرد ہوا میں پھیلتی ہے ([محفوظ طریقے سے ملانا اور ہوا کی آمد و رفت](/guides/safe-mixing#cleaning))۔
+
+- **ڈبونا** “عموماً یکساں موٹائی کی تہہ دیتا ہے” (Robin Hopper)۔ ڈبونے کا وقت موٹائی طے کرتا ہے: Digitalfire بتاتا ہے کہ تجارتی ڈبونے والے گلیز 5 سیکنڈ ڈبونے کے لیے تقریباً 1.4 پر اور 1 سیکنڈ ڈبونے کے لیے 1.5 پر بنائے جاتے ہیں۔
+- **ڈالنے** والا گلیز “ڈبونے کے لیے استعمال ہونے والے سے ذرا پتلا” ہونا چاہیے؛ جہاں ڈالی گئی تہیں ایک دوسرے پر چڑھیں، وہاں تہہ دگنی ہو جاتی ہے اور بہہ سکتی ہے۔
+- **برش سے لگانے** والے گلیز میں **CMC گوند**{{en: CMC gum}} جیسا گوند ہوتا ہے، جو گلیز کو بہنے اور چپکنے میں مدد دیتا ہے، پھر جل جاتا ہے۔ زیادہ تر کو کئی تہیں چاہییں، اکثر دو یا تین؛ لیبل کی ہدایت مانیں۔
+- **اسپرے** میں کہیں زیادہ پتلا گلیز استعمال ہوتا ہے، جو “کئی پتلی تہوں میں، موٹائی آہستہ آہستہ بڑھاتے ہوئے” لگایا جاتا ہے۔
+
+> [!WARNING]
+> صرف ہوا کی نکاسی والے اسپرے بوتھ میں اسپرے کریں، ٹھیک سے فٹ کیا ہوا ریسپیریٹر پہن کر۔ [محفوظ طریقے سے ملانا اور ہوا کی آمد و رفت](/guides/safe-mixing) دیکھیں۔
+
+بہت موٹی تہہ میں کرالنگ، چھالے یا بہاؤ ہو سکتا ہے۔ سپلائرز کے اندازے کریڈٹ کارڈ کی موٹائی سے لے کر امریکی dime (دس سینٹ کے سکے) کی موٹائی تک ہیں، ہمارے اندازے سے تقریباً 1 mm خشک گلیز؛ چند موٹائیوں پر ٹیسٹ ٹائلیں ہی قابلِ اعتماد جانچ ہیں۔ پیندے پر **موم کی تہہ**{{en: wax resist}} گلیز کو دور رکھتی ہے، تاکہ برتن شیلف سے نہ چپکے، اور **بھٹی واش (حفاظتی لیپ)**{{en: kiln wash}}، یعنی حرارت سہنے والی ایک تہہ جو اکثر کاؤلن اور سلیکا کی ہوتی ہے، شیلفوں کو ٹپکنے سے بچاتی ہے۔
+
+## تکسیدی اور تخفیفی پکائی {#atmosphere}
+
+بھٹی کی گیسیں، یعنی **بھٹی کی فضا**{{en: atmosphere}}، گلیز کے نتیجے کو بدل دیتی ہیں۔ **تکسیدی پکائی**{{en: oxidation}} کا مطلب ہے بہت آکسیجن۔ Digitalfire کہتا ہے، “بجلی کی بھٹیاں تکسیدی پکائی کا دوسرا نام ہیں”، اور تکسیدی پکائی کے گلیز عموماً تخفیفی پکائی والوں سے زیادہ روشن ہوتے ہیں، خاص طور پر کم درجۂ حرارت پر۔ تکسیدی پکائی میں تانبا سبز اور فیروزی دیتا ہے، اور لوہا بھورے، ہلکے بادامی اور لال۔ گیسیں چھوڑنے والے برتنوں سے بھری، کم ہوا کی نکاسی والی بجلی کی بھٹی ارادے سے زیادہ معتدل فضا میں چل سکتی ہے؛ بھٹی سے براہِ راست جڑا وینٹ مدد دیتا ہے۔
+
+**تخفیفی پکائی**{{en: reduction}} جان بوجھ کر آکسیجن کم کرتی ہے، عموماً گیس، لکڑی یا خاص قسم کی بھٹی میں۔ تانبا لال ہو جاتا ہے، اور لوہا زیادہ طاقتور فلکس بن جاتا ہے اور **سیلاڈان**{{en: celadon}} (نیلگوں سبز سے سرمئی سبز، تقریباً ½–2% لوہے سے) اور **ٹینموکو**{{en: tenmoku}} (temmoku: بھورا سیاہ، تقریباً 5–10% لوہا) دیتا ہے۔ Glazy کہتا ہے کہ سیلاڈان اور تانبے کے لال گلیز “تخفیفی پکائی پر انحصار کرتے ہیں”۔ مٹی بھی بدلتی ہے: Digitalfire کے ایک موازنے میں ایک اسٹون ویئر باڈی تخفیفی پکائی میں سرمئی اور تکسیدی پکائی میں زردی مائل پکی۔ گلیز میں سلیکان کاربائیڈ بجلی کی بھٹی میں بھی چھوٹے حصوں میں تخفیف پیدا کر سکتا ہے۔ مخروط 010 سے مخروط 3 تک تخفیفی پکائی کے لیے Orton اپنے لوہے سے پاک مخروطوں کی سفارش کرتا ہے۔
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> توقع رکھیں کہ گیس کی تخفیفی بھٹی کے لیے لکھی گئی ریسیپی بجلی کی بھٹی میں مختلف نکلے گی: جو سیلاڈان یا تانبے کا لال گلیز تخفیفی پکائی پر انحصار کرتا ہے، وہ تکسیدی پکائی میں ویسا نہیں دکھے گا۔ دیکھیں کہ ریسیپی کس فضا کے لیے بنائی گئی تھی، اور Glazecalc میں ریسیپی کے نوٹس میں اپنی فضا، مخروط کے ساتھ، لکھ لیں۔
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+ہر بھٹی، بجلی کی بھٹیوں سمیت، بخارات چھوڑتی ہے، اس لیے اس کی ہوا نکالیں۔ [محفوظ طریقے سے ملانا اور ہوا کی آمد و رفت](/guides/safe-mixing) بتاتا ہے کہ کیسے۔
 
-## Glossary {#glossary lang=en}
+## فرہنگ {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+ارتھن ویئر (earthenware)
+: کم درجۂ حرارت کی باڈی (تقریباً مخروط 06–02)، کم مخروطوں پر مسام دار اور زیادہ گرم پکانے پر زیادہ گھنی۔
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+اسٹون ویئر (stoneware)
+: درمیانے سے زیادہ درجۂ حرارت کی باڈی (تقریباً مخروط 5–10) جو شیشہ نما یا تقریباً شیشہ نما ہو جاتی ہے۔
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+اسٹیبلائزر (stabilizer)
+: ایسا آکسائیڈ، زیادہ تر ایلومینا، جو پگھلے ہوئے گلیز کو گاڑھا کرتا اور پائیداری بڑھاتا ہے۔
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+اضافی مادہ (additive)
+: رنگ دینے والا آکسائیڈ، غیر شفاف بنانے والا مادہ یا معلق رکھنے والا مادہ جو ریسیپی کے 100 کے اوپر سے ڈالا جائے۔
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+انڈر گلیز رنگ (underglaze)
+: رنگین سلپ یا آکسائیڈ سے سجاوٹ، عموماً شفاف گلیز کے نیچے۔
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+ایک ہی پکائی (once-firing، single firing)
+: کچے برتن پر گلیز لگا کر اسے صرف ایک بار پکانا۔
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+ایلومینا (alumina، Al₂O₃)
+: سب سے بڑا اسٹیبلائزر: بہنے سے روکتی ہے اور سختی بڑھاتی ہے۔ چکنی مٹیوں اور فیلڈ اسپار سے آتی ہے۔
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+آکسائیڈ (oxide)
+: کسی عنصر اور آکسیجن کا مرکب؛ آکسائیڈ تجزیہ انہیں وزن کے فیصد میں دیتا ہے۔
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+بال کلے (ball clay)
+: ایک لچکدار چکنی مٹی جس میں کاؤلن سے زیادہ لوہا اور نامیاتی مادہ ہوتا ہے۔
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+بسکٹ (bisque، UK میں biscuit)
+: پہلی، کم درجۂ حرارت کی پکائی، عموماً مخروط 08–04 (زیادہ تر 06–04)، جو برتن کو مضبوط مگر مسام دار چھوڑتی ہے۔
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+بورون (boron، B₂O₃)
+: رسمی طور پر گلاس فارمر، مگر فلکس کے طور پر استعمال ہوتا ہے؛ مخروط 06 سے مخروط 6 تک ضروری۔
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+بیچ ریسیپی (batch recipe)
+: گلیز کا خام مواد وزن کے حساب سے، جس کا مجموعہ عموماً 100 ہوتا ہے۔
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+بینٹونائٹ (bentonite)
+: ایک بہت باریک چکنی مٹی جو گلیز کو بیٹھنے سے روکنے کے لیے تقریباً 1–2% ڈالی جاتی ہے۔ 3% سے زیادہ سے گلیز سوکھتے وقت چٹخ سکتا ہے۔
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+بھٹی واش (kiln wash)
+: حرارت سہنے والی ایک تہہ جو بھٹی کی شیلفوں کو ٹپکنے سے بچاتی ہے۔
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+پکائی میں وزن کی کمی (LOI، loss on ignition)
+: پکائی میں پانی، کاربن ڈائی آکسائیڈ، نامیاتی مادے یا سلفر کی شکل میں کم ہونے والا وزن۔
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+پن ہول اور چھالے (pinholing and blistering)
+: چھوٹے سوراخ، یا تیز کناروں والے گڑھے، جہاں گیس پگھلے ہوئے گلیز سے نکلی۔
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+پورسلین (porcelain)
+: سفید، کاؤلن سے بھرپور، زیادہ درجۂ حرارت کی باڈی، اکثر نیم شفاف۔
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+تکسیدی اور تخفیفی پکائی (oxidation and reduction)
+: بہت آکسیجن کے ساتھ پکائی (بجلی کی بھٹیاں)، یا کم کی ہوئی آکسیجن کے ساتھ (عموماً گیس یا لکڑی)۔
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+تھکسوٹروپی (thixotropy)
+: ہلانے پر بہنا، اور رکے رہنے پر نرم جیل بن جانا۔
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+چمکدار، ساٹن اور میٹ (gloss, satin and matte)
+: چمکتا اور ہموار؛ ہلکی دبی ہوئی چمک؛ بے چمک۔
 
-Glass former
-: The oxide that builds the glass, usually silica.
+حدود کا فارمولا (limit formula، ہدف فارمولا)
+: کسی مخروط پر پائیدار گلیز کے لیے سیگر فارمولا کے عام دائرے؛ رہنمائی، ضمانت نہیں۔
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+حرارتی کام (heatwork)
+: بھٹی میں درجۂ حرارت اور وقت کا مشترکہ اثر؛ جو مخروطے ناپتے ہیں۔
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+دھاتوں کا اخراج (leaching)
+: پکے ہوئے گلیز سے دھاتوں کا کھانے یا مشروب میں گھل کر نکلنا۔
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+ڈنٹنگ (dunting)
+: ٹھنڈا یا گرم ہونے کے دباؤ سے برتن میں دراڑیں، اکثر کوارٹز کی تبدیلی پر، {{1063 °F; 573 °C}}۔
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+ڈی ویٹریفکیشن (devitrification)
+: ٹھنڈا ہونے کے شروع میں شیشے میں سے قلموں کا اگنا، جہاں وہ مطلوب نہ ہوں۔
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+رنگ دینے والا آکسائیڈ اور سرامک اسٹین (colorant and stain)
+: دھات کا آکسائیڈ یا کاربونیٹ جو گلیز کو رنگ دیتا ہے؛ سرامک اسٹین فیکٹری میں بنا، زیادہ پائیدار رنگ دینے والا مادہ ہے۔
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+سلپ اور اینگوب (slip and engobe)
+: پانی میں چکنی مٹی؛ اینگوب سلپ جیسی ایک تہہ ہے جس میں چکنی مٹی کے علاوہ مواد زیادہ ہوتا ہے۔
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+سلیکا (silica، SiO₂)
+: گلاس فارمر؛ اسے فلنٹ یا کوارٹز بھی کہتے ہیں۔
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+سلیکا اور ایلومینا کا تناسب (silica to alumina ratio)
+: سیگر فارمولا میں سلیکا کو ایلومینا سے تقسیم کیا ہوا: زیادہ ہو تو چمک کی طرف، کم ہو تو میٹ کی طرف۔
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+سیگر فارمولا (unity molecular formula، UMF، Seger formula)
+: گلیز کے آکسائیڈ مالیکیولوں کی گنتی کے طور پر، اس طرح کہ فلکسز کا مجموعہ 1 ہو۔
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+شیشہ نما ہونا (vitrification)
+: پکائی میں باڈی کا شیشے جیسا اور غیر مسام دار ہو جانا۔
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+شیورنگ (shivering)
+: حد سے زیادہ دبنے کی وجہ سے گلیز کا کناروں سے پرت کی شکل میں اترنا؛ استعمال کے برتنوں پر ایک خطرہ۔
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+غیر شفاف بنانے والا مادہ (opacifier)
+: ایسا مادہ، جیسے زرقون (زرکون)، ٹن آکسائیڈ یا ٹائٹینیم ڈائی آکسائیڈ، جو گلیز کو غیر شفاف بناتا ہے۔
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+فرٹ (frit)
+: فیکٹری میں بنا شیشہ، پگھلا کر، ٹھنڈا کر کے اور پیس کر، جو حل پذیر یا زہریلے آکسائیڈز کو ناحل پذیر بنا دیتا ہے۔
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+فلکس (flux)
+: ایسا آکسائیڈ جو سلیکا کے پگھلنے کا درجۂ حرارت کم کرتا ہے۔
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+فلوکولینٹ اور ڈیفلوکولینٹ (flocculant and deflocculant)
+: اضافی مادے جو گھول کو جیل بناتے ہیں (ایپسم سالٹ، سرکہ) یا پتلا کرتے ہیں (سوڈیم سلیکیٹ، Darvan)۔
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+فیلڈ اسپار (feldspar)
+: ایک معدن جو ایلومینا اور سلیکا کے ساتھ القلی فلکس دیتا ہے: پوٹاش، سوڈا یا نیفلین سائنائٹ۔
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+کاؤلن (kaolin، UK میں china clay)
+: ایلومینا اور سلیکا دینے والی خالص سفید چکنی مٹی؛ گلیز کو بیٹھنے سے روکنے میں مدد دیتی ہے۔ آسٹریلیا میں Eckalite اس کا ایک برانڈ ہے۔
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+کثافت اضافی (specific gravity، SG)
+: اتنے ہی حجم کے پانی کے مقابلے میں گلیز کے گھول کا وزن۔
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+کچے برتن (greenware)
+: بغیر پکے برتن: سخت مگر نم ہوں تو چمڑے جیسی سختی، کوئی آزاد پانی نہ رہے تو بالکل خشک۔
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+کرالنگ (crawling)
+: پکائی میں گلیز کا سمٹ کر دانوں کی شکل میں جمع ہونا، ننگی مٹی چھوڑ کر۔
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+کریزنگ (crazing)
+: ایسے گلیز میں باریک دراڑیں جو اپنی باڈی سے زیادہ سکڑتا ہے؛ مطلوب ہو تو کریکل۔
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+کھانے کے لیے محفوظ (food safe)
+: قانون میں، تیزابی ٹیسٹ میں حدوں سے کم سیسہ اور کیڈمیم خارج کرنا۔ سیسے سے پاک ہونے کے برابر نہیں۔
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+گلاس فارمر (glass former)
+: وہ آکسائیڈ جو شیشہ بناتا ہے، عموماً سلیکا۔
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+گلیز (glaze)
+: شیشے کی ایک تہہ جو پکائی میں پگھل کر برتن کو بند کرتی اور سجاتی ہے۔
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+گلیز اور مٹی کی مطابقت (glaze fit)
+: گلیز اور باڈی کا پھیلاؤ کتنا ملتا ہے؛ اچھی مطابقت گلیز کو ذرا سا دبا ہوا چھوڑتی ہے۔
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+گلیز کی پکائی (glaze firing، UK میں glost firing)
+: وہ پکائی جو گلیز کو پگھلاتی ہے۔
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+لائن بلینڈ (line blend)
+: ایسے ٹیسٹ جن میں ایک جز دو مقداروں کے درمیان قدم بہ قدم بدلتا ہے۔ تین محوری بلینڈ ایک جال پر تین اجزا بدلتا ہے۔
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+لائنر گلیز (liner glaze)
+: ایک پائیدار، عموماً شفاف یا سفید گلیز، ان سطحوں کے لیے جو کھانے کو چھوتی ہیں۔
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+مخروط (cone)
+: ایک ناپ کر بنایا گیا سرامک اہرام جو ایک طے شدہ حرارتی کام پر جھکتا ہے۔ گواہ مخروط دکھاتا ہے کہ برتنوں کو کیا ملا۔
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+موم کی تہہ (wax resist)
+: جہاں گلیز نہیں جانا چاہیے، عموماً پیندے پر، وہاں لگایا گیا موم۔
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+وائٹنگ (whiting)
+: کیلشیم کاربونیٹ، کیلشیم کا بڑا فلکس؛ پکائی میں کاربن ڈائی آکسائیڈ کی شکل میں اپنا تقریباً 44% وزن کھو دیتا ہے۔
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+CMC گوند (CMC gum)
+: سیلولوز کا ایک گوند جو گلیز کو برش سے لگانے اور چپکنے میں مدد دیتا ہے؛ یہ جل جاتا ہے۔
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+R₂O اور RO (R₂O and RO)
+: القلی فلکسز (Na₂O، K₂O، Li₂O) اور القلی ارضی فلکسز (CaO، MgO، BaO، SrO، ZnO کے ساتھ)۔
 
-## Sources {#sources lang=en}
+## ماخذ {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
