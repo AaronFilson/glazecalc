@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Ẹ kọ́ pẹ̀lú ẹ̀kọ́ glaze ọ̀fẹ́ ti John Britt",
       "text": "Ẹ̀kọ́ fídíò ọ̀fẹ́ rẹ̀ lórí YouTube, ẹ̀ka sí ẹ̀ka, pẹ̀lú àwọn ìtọ́sọ́nà wa láti kà àti àwọn iṣẹ́ àṣedánrawò láti gbìyànjú nínú Glazecalc. Ní èdè Gẹ̀ẹ́sì."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Kíkọ́ni ní ìṣirò glaze",
+      "text": "Ìpàdé ẹ̀kọ́ 6 fún kíláàsì tàbí ẹgbẹ́ ìkẹ́kọ̀ọ́, láti táílì triaxial dé UMF tí a ṣe ní ọ̀nà méjèèjì, pẹ̀lú ìwé iṣẹ́ láti tẹ̀ jáde."
     }
   },
   "more": "Àwọn ìtọ́sọ́nà mìíràn",
@@ -255,6 +259,8 @@
       "crazed": "ní crazing"
     },
     "keyBright": "Ìlà oníàmì: ibi tí àwọn glaze Stull ti mọ́lẹ̀ jù lọ.",
-    "keyCrazed": "Ìlà agbelébùú: ibi tí wọ́n ti ní crazing."
+    "keyCrazed": "Ìlà agbelébùú: ibi tí wọ́n ti ní crazing.",
+    "note": "Ìtọ́sọ́nà ni, kì í ṣe àsọtẹ́lẹ̀. R. T. Stull (Transactions of the American Ceramic Society, 1912) sun ní nǹkan bí cone 11 pẹ̀lú flux tí a fi sí 0.3 K₂O àti 0.7 CaO; flux mìíràn àti ìsun mìíràn ń sún àwọn agbègbè náà, glaze tí kò dán (matte) nítorí pé a kò sun ún tó nìkan sì lè hàn bí èyí tí ó dán lórí àtẹ náà. Àwọn agbègbè náà rí bí Glazy ṣe yà wọ́n.",
+    "inGuide": "Silica (SiO₂) ní ìbú, láti nǹkan bí 1 dé 7, àti alumina (Al₂O₃) sókè, láti 0 dé 1, méjèèjì láti inú UMF. Àwọn apá bí ẹ̀jẹ̀ ìgè ń ṣí jáde láti òsì: èyí tí kò yọ́ ní òkè òsì, lẹ́yìn náà èyí tí kò dán, lẹ́yìn náà èyí tí kò dán díẹ̀. Apá tí kò ní òjìji ní ọ̀tún wọn ń dán, ìlà àmì-àmì inú rẹ̀ sì ni ibi tí àwọn glaze Stull ti dán jùlọ. Èyí tí a kò sun tó wà ní ìsàlẹ̀ ọ̀tún, pẹ̀lú alumina díẹ̀ àti silica púpọ̀. Àwọn ìlà tí ó kọjá ara wọn, ní ìsàlẹ̀ àtẹ náà àti ní ẹ̀gbẹ́ òsì rẹ̀, ni ibi tí àwọn ìdánwò rẹ̀ ti ní crazing."
   }
 }
