@@ -752,19 +752,6 @@
       "pint": "An meáchan pionta atá uait, oz"
     },
     "drySg": "Sainmheáchan na n-ábhar tirim",
-    "batch": "Glónra tirim do bhaisc nua, {unit}",
-    "contents": "Ag sainmheáchan {sg}, tá {glaze} de ghlónra tirim agus {water} d’uisce sa bhuicéad.",
-    "add": "Chun sainmheáchan {target} a bhaint amach, cuir {water} d’uisce leis. Tá thart ar {volume} ann ag an deireadh.",
-    "pourOff": "Chun sainmheáchan {target} a bhaint amach, lig dó socrú agus doirt {water} d’uisce glé amach. Tá thart ar {volume} ann ag an deireadh.",
-    "already": "Tá sé ag sainmheáchan {target} cheana.",
-    "mix": "Measc {glaze} de ghlónra tirim le {water} d’uisce chun thart ar {volume} a fháil ag sainmheáchan {target}.",
-    "badSg": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce) agus níos lú ná {dry} na n-ábhar tirim.",
-    "badDry": "Ní mór sainmheáchan na n-ábhar tirim a bheith níos mó ná 1.",
-    "note": "Tá an t-uisce de réir meáchain: meáíonn lítear cileagram, agus meáíonn galún SAM thart ar 8.3 lb. Glacann an uimhríocht leis go gcuireann na toirteanna le chéile, rud atá gar, ach nach bhfuil beacht: cuir uisce leis beagán ag an am, corraigh, agus tomhais arís. D’fhéadfadh dhá ghlónra ag an sainmheáchan céanna sreabhadh ar bhealach difriúil fós.",
-    "saveTarget": "Sábháil sainmheáchan {sg} mar sprioc an oidis seo",
-    "targetSaved": "Is é sainmheáchan {sg} sprioc an oidis seo. Coinnítear leis an oideas é nuair a shábhálann tú é.",
-    "targetKept": "Is é sainmheáchan {sg} sprioc an oidis.",
-    "clearTarget": "Glan an sprioc",
     "drySgEmpty": "Ní theastaíonn sé ach do na meáchain thirime; ní theastaíonn sé don uisce le cur leis. Clóscríobh é más eol duit é.",
     "drySgNeeded": "Clóscríobh sainmheáchan na n-ábhar tirim chun an glónra tirim sa bhuicéad agus an t-uisce do bhaisc nua a fheiceáil.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Gan meastachán don oideas seo: ní eol sainmheáchan na n-ábhar seo: {names}. Clóscríobh é más eol duit é.",
       "was": "Úsáidtear d’fhigiúr féin. Ba é {sg} an meastachán; glan an réimse chun filleadh air."
     },
-    "badSgWater": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce)."
+    "batch": "Glónra tirim do bhaisc nua, {unit}",
+    "contents": "Ag sainmheáchan {sg}, tá {glaze} de ghlónra tirim agus {water} d’uisce sa bhuicéad.",
+    "add": "Chun sainmheáchan {target} a bhaint amach, cuir {water} d’uisce leis. Tá thart ar {volume} ann ag an deireadh.",
+    "pourOff": "Chun sainmheáchan {target} a bhaint amach, lig dó socrú agus doirt {water} d’uisce glé amach. Tá thart ar {volume} ann ag an deireadh.",
+    "already": "Tá sé ag sainmheáchan {target} cheana.",
+    "mix": "Measc {glaze} de ghlónra tirim le {water} d’uisce chun thart ar {volume} a fháil ag sainmheáchan {target}.",
+    "badSg": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce) agus níos lú ná {dry} na n-ábhar tirim.",
+    "badSgWater": "Ní mór sainmheáchan a bheith níos mó ná 1 (sainmheáchan an uisce).",
+    "badDry": "Ní mór sainmheáchan na n-ábhar tirim a bheith níos mó ná 1.",
+    "note": "Tá an t-uisce de réir meáchain: meáíonn lítear cileagram, agus meáíonn galún SAM thart ar 8.3 lb. Glacann an uimhríocht leis go gcuireann na toirteanna le chéile, rud atá gar, ach nach bhfuil beacht: cuir uisce leis beagán ag an am, corraigh, agus tomhais arís. D’fhéadfadh dhá ghlónra ag an sainmheáchan céanna sreabhadh ar bhealach difriúil fós.",
+    "saveTarget": "Sábháil sainmheáchan {sg} mar sprioc an oidis seo",
+    "targetSaved": "Is é sainmheáchan {sg} sprioc an oidis seo. Coinnítear leis an oideas é nuair a shábhálann tú é.",
+    "targetKept": "Is é sainmheáchan {sg} sprioc an oidis.",
+    "clearTarget": "Glan an sprioc"
   },
   "import": {
     "title": "Oidis a ghreamú isteach",

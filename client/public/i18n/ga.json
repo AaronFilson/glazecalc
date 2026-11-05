@@ -9,6 +9,7 @@
     "homeSafety": "Ná nimhigh do theaghlach - Glazecalc",
     "firing": "Bácáil in áith shimplí - Glazecalc",
     "learnWithJohnBritt": "Foghlaim le cúrsa glónra saor in aisce John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Ríomh glónra a theagasc - Glazecalc",
     "about": "Faoin aip - Glazecalc",
     "privacy": "Príobháideachas - Glazecalc",
     "terms": "Téarmaí úsáide - Glazecalc",
@@ -37,7 +38,6 @@
     "cones": "Tábla cón: teochtaí cón Orton agus SK - Glazecalc",
     "materials": "Ábhair chaighdeánacha glónra: anailís agus guaiseacha - Glazecalc",
     "materialInfo": "{name}: anailís ocsaíde agus guaiseacha - Glazecalc",
-    "teachingGlazeCalculation": "Ríomh glónra a theagasc - Glazecalc",
     "famousGlazes": "Glónraí cáiliúla - Glazecalc",
     "famousGlaze": "Glónra {name} - Glazecalc"
   },
@@ -180,6 +180,7 @@
     "homeSafety": "Cad atá le déanamh má shlogann leanbh nó peata ábhar glónra, agus ábhair, deannach, an áith agus earraí lámhdhéanta a choinneáil sábháilte do do theaghlach.",
     "firing": "Bácáil in áith leictreach: cóin a roghnú, a shuíomh agus a léamh, agus cláir bhácála foilsithe don bhrioscbhácáil agus don bhácáil glónra, le tábla cón.",
     "learnWithJohnBritt": "Compánach do Chúrsa Glónra saor in aisce John Britt ar líne: a fhíseáin aonad ar aonad, le treoirleabhair Glazecalc agus cleachtaí san áireamhán.",
+    "teachingGlazeCalculation": "6 sheisiún chun foirmle Seger (UMF) a theagasc: ábhair agus tíleanna trí-aiseacha, mólanna, ó oideas go foirmle agus ar ais, agus máchaillí glónra, le samplaí oibrithe agus bileoga oibre le priontáil.",
     "advice": "Leideanna praiticiúla faoi mheascadh, ghlónrú agus bhácáil, ón aip Glazecalc, agus do chomhairle féin. Saor in aisce do photadóirí agus do cheirmeoirí.",
     "about": "Áireamhán ceimice glónra agus leabhar nótaí saor in aisce, foinse oscailte, is ea Glazecalc. Féach mar a ríomhann sé foirmle Seger (UMF) agus conas a tógadh é.",
     "privacy": "Conas a láimhseálann Glazecalc do shonraí: gan fógraí, gan anailísíocht, gan rianú, ní dhíoltar faic. Cad a choinnítear, cén fáth agus conas do chearta a úsáid.",
@@ -190,10 +191,9 @@
     "materials": "Ábhair leabharlann chaighdeánach Glazecalc, ó iathchlocha agus cré go frits agus foinsí bóróin, le hanailís ocsaíde, foirmle Seger agus guaiseacha.",
     "materialInfo": "{name}: anailís ocsaíde, foirmle Seger, cailliúint ar adhaint agus guaiseacha i leabharlann chaighdeánach Glazecalc.",
     "materialInfoLong": "{name} i leabharlann chaighdeánach Glazecalc d’ábhair ghlónra: a anailís ocsaíde, a rannchuidiú le foirmle Seger, cailliúint ar adhaint agus guaiseacha.",
-    "imageAlt": "Lógó Glazecalc agus a cheannteideal, ceimic ghlónra saor in aisce do photadóirí, taobh le grianghraf de phacaí cón bácáilte.",
-    "teachingGlazeCalculation": "6 sheisiún chun foirmle Seger (UMF) a theagasc: ábhair agus tíleanna trí-aiseacha, mólanna, ó oideas go foirmle agus ar ais, agus máchaillí glónra, le samplaí oibrithe agus bileoga oibre le priontáil.",
     "famousGlazes": "Glónraí cáiliúla ó gach cearn den domhan: oideas traidisiúnta nó anailís stairiúil gach glónra, a fhoirmle Seger, agus leagan as na hábhair a dhíoltar san áit a bhfuil tú.",
-    "famousGlaze": "Glónra {name} ({native}): a oideas traidisiúnta nó a anailís stairiúil, a bhácáil, a fhoirmle Seger agus a fhoinsí, agus leagan as na hábhair a dhíoltar san áit a bhfuil tú."
+    "famousGlaze": "Glónra {name} ({native}): a oideas traidisiúnta nó a anailís stairiúil, a bhácáil, a fhoirmle Seger agus a fhoinsí, agus leagan as na hábhair a dhíoltar san áit a bhfuil tú.",
+    "imageAlt": "Lógó Glazecalc agus a cheannteideal, ceimic ghlónra saor in aisce do photadóirí, taobh le grianghraf de phacaí cón bácáilte."
   },
   "notices": {
     "dismiss": "Ruaig",
