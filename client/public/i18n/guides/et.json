@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Õppige John Britti tasuta glasuurikursusega",
       "text": "Tema tasuta videokursus YouTube’is osade kaupa, koos Glazecalci juhenditega lugemiseks ja harjutustega Glazecalcis proovimiseks. Inglise keeles."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Glasuuriarvutuse õpetamine",
+      "text": "6 õppetundi klassile või õpperühmale, kolmnurkkatse proovitükkidest Segeri valemini, mis on läbi arvutatud mõlemas suunas, koos prinditavate töölehtedega."
     }
   },
   "more": "Rohkem juhendeid",
@@ -255,6 +259,8 @@
       "crazed": "juuspragunenud"
     },
     "keyBright": "Punktiirjoon: kus Stulli glasuurid olid kõige läikivamad.",
-    "keyCrazed": "Viirutus: kus need juuspragunesid."
+    "keyCrazed": "Viirutus: kus need juuspragunesid.",
+    "note": "Juhis, mitte ennustus. R. T. Stull (Transactions of the American Ceramic Society, 1912) põletas umbes koonuseni 11 ja sulandajad olid alati 0,3 K₂O ja 0,7 CaO; teised sulandajad ja põletused nihutavad alasid ning glasuur, mis on matt ainult alapõletuse tõttu, võib diagrammil ikkagi paista läikivana. Alad on joonistatud nii, nagu Glazy need joonistab.",
+    "inGuide": "Ränidioksiid (SiO₂) horisontaalteljel, umbes 1-st 7-ni, ja alumiiniumoksiid (Al₂O₃) vertikaalteljel, 0-st 1-ni, mõlemad Segeri valemist. Vasakult lähtuvad lehvikuna kiilud: üleval vasakul sulamata, seejärel matt, siis poolmatt. Varjutamata osa nendest paremal on läikiv ja punktiirjoon selles näitab, kus Stulli glasuurid olid kõige läikivamad. Alapõletatud on all paremal, kus alumiiniumoksiidi on vähe ja ränidioksiidi palju. Viirutus diagrammi alaosas ja vasakus servas näitab, kus tema katsed juuspragunesid."
   }
 }

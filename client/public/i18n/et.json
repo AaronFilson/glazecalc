@@ -36,7 +36,10 @@
     "confirm": "Muudatuse heakskiitmine – Glazecalc",
     "cones": "Koonuste tabel: Ortoni ja SK koonuste temperatuurid – Glazecalc",
     "materials": "Standardsed glasuuritoorained: analüüs ja ohud – Glazecalc",
-    "materialInfo": "{name}: oksiidanalüüs ja ohud – Glazecalc"
+    "materialInfo": "{name}: oksiidanalüüs ja ohud – Glazecalc",
+    "teachingGlazeCalculation": "Glasuuriarvutuse õpetamine – Glazecalc",
+    "famousGlazes": "Kuulsad glasuurid – Glazecalc",
+    "famousGlaze": "Glasuur {name} – Glazecalc"
   },
   "nav": {
     "skip": "Liigu sisu juurde",
@@ -187,7 +190,10 @@
     "materials": "Glazecalci standardteegi toorained põldpaodest ja savidest fritideni ja boori allikateni, igaühel oksiidanalüüs, Segeri valem ja ohud.",
     "materialInfo": "{name}: oksiidanalüüs, Segeri valem, hõõgumiskadu ja ohud Glazecalci standardteegis.",
     "materialInfoLong": "{name} Glazecalci glasuuritoorainete standardteegis: oksiidanalüüs, panus Segeri valemisse, hõõgumiskadu ja ohud.",
-    "imageAlt": "Glazecalci logo ja pealkiri „tasuta glasuurikeemia keraamikutele”, kõrval foto põletatud koonustest."
+    "imageAlt": "Glazecalci logo ja pealkiri „tasuta glasuurikeemia keraamikutele”, kõrval foto põletatud koonustest.",
+    "teachingGlazeCalculation": "6 õppetundi Segeri valemi (UMF) õpetamiseks: toorained ja kolmnurkkatse proovitükid, moolid, retseptist valemini ja tagasi ning glasuurivead, koos läbiarvutatud näidete ja prinditavate töölehtedega.",
+    "famousGlazes": "Kuulsad keraamika glasuurid üle maailma: iga glasuuri traditsiooniline retsept või ajalooline analüüs, selle Segeri valem (UMF) ja versioon toorainetest, mida teie piirkonnas müüakse.",
+    "famousGlaze": "Glasuur {name} ({native}): selle traditsiooniline retsept või ajalooline analüüs, põletus, Segeri valem (UMF) ja allikad ning versioon toorainetest, mida teie piirkonnas müüakse."
   },
   "notices": {
     "dismiss": "Sulge",

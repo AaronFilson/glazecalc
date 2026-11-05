@@ -119,183 +119,183 @@ Soovitused erinevad selles, kui täpset kaalu on vaja. Derek Au leidis, et odav 
 
 Derek Au kaalub kõik ühte kaussi eraldi hunnikutesse, nii et vea saab kühvliga tagasi välja tõsta. Kui kaalute ühte ämbrisse ilma toorainete vahel tareerimata, ütleb Glazecalci vahesumma, mida kaal peaks iga tooraine järel näitama.
 
-## Mixing and sieving {#mixing lang=en}
+## Segamine ja sõelumine {#mixing}
 
-### How much water
+### Kui palju vett
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Allikad on eri meelt. Derek Au alustab paksult, 50 mL veega 100 g pulbri kohta, ja lisab hiljem juurde. Potterycrafts annab ühe pulberglasuuri jaoks 65 mL 100 g kohta. UT Austin kasutab vett ja pulbrit võrdses koguses massi järgi ning kui Digitalfire pani 20 kg pulbrit 20 kg vette, mõõtis see suhteliseks tiheduseks 1,46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Vett on kiire lisada ja aeglane eemaldada, seega alustage vähesest. Selle juhendi hinnang: alustage **umbes 70 kuni 80 mL veega 100 g kohta** (700 kuni 800 mL kilogrammi kohta või umbes 11 kuni 12 US fl oz naela kohta). Leotage, segage ja sõeluge selle paksusega, seejärel lisage vett vähehaaval, kuni suhteline tihedus on õige. 1 mL vett kaalub 1 g, seega saate seda kaaluda. Kui lisate liiga palju, laske glasuuril settida ja eemaldage pinnalt selge vesi käsnaga või valage see ära.
 
-### Tools and water
+### Vahendid ja vesi
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Propellersegisti.** Digitalfire nimetab head segistit „hädavajalikuks“. Ämbris teeb töö ära juhtmega trell segamisotsikuga. UT Austin laseb sel töötada vähemalt 4 kuni 5 minutit pärast seda, kui glasuur näib segatud, ja hoiab tera ämbrist eemal, sest see võib ämbrist plastikut maha kraapida.
+- **Blender.** See „töötab väikeste segude puhul äärmiselt hästi“ (Digitalfire). Kasutage seda ainult glasuuri jaoks: see ei tohi kunagi kööki tagasi minna.
+- **Vispel või pulk.** Zakini valik, kui segistit pole.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Ka vesi on erinev ja Digitalfire märgib, et see muudab glasuurilahuse käitumist. Derek Au kasutab pöördosmoosiga puhastatud vett, sest tema kraanivesi on kare. Mida iganes kasutate, pange see kirja.
 
-### Step by step
+### Samm-sammult
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Pange ette respiraator ja kummikindad, kui käed lähevad glasuuri sisse. Zakin kannab maski kaalumise algusest kuni glasuuri märjaks saamiseni.
+2. Mõõtke ämbrisse umbes 70 kuni 80 mL vett 100 g pulbri kohta.
+3. Lisage kaalutud pulber ettevaatlikult ja madalalt. UT Austin lisab pulbri sooja vette; Zakin ja Au lisavad vee pulbrile. See juhend soovitab panna pulbri vette, mis tõstab vähem tolmu, välja arvatud retsepti puhul, milles on palju bentoniiti: segage selle kuivad pulbrid kõigepealt omavahel.
+4. **Leotage**{{en: slake}}: laske pulbril segamata liguneda. Digitalfire ootab umbes 20 minutit. Sideaine või liimiga pulbrid peavad seisma üleöö.
+5. Segage, kuni kuivi kohti ega tükke ei ole.
+6. Sõeluge kaks korda (vt allpool).
+7. Katke kinni ja laske üleöö seista, seejärel segage uuesti ja kontrollige, kas põhja on tekkinud kõva kiht.
+8. Mõõtke suhteline tihedus ja lisage vett vähehaaval, kuni jõuate soovitud väärtuseni. Kui soovite teada oma glasuuri kuivaine suhtelist tihedust, kaaluge ka valmis glasuurilahus (vt allpool).
+9. Märgistage ämber ja pange kirja, mida tegite.
+10. Koristage märjalt: moppige põrand ja pühkige üle iga pind, sealhulgas tooraineanumate välispind.
 
-### Sieving
+### Sõelumine
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Sõel**{{en: sieve}} on raami sees olev võrk. Glasuuri pintsliga läbi sõela surudes purunevad tükid, mis segamisest alles jäid, ja kinni jäävad osakesed, mis põleksid tumedateks täppideks. Mida suurem on **mesh**-number, seda peenem on võrk: 80 mesh sõela avad on umbes 0,18 mm ja 100 mesh sõela avad umbes 0,15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Allikad soovitavad erinevaid sõelu. Zakin sõelub kaks korda läbi 50 või 80 mesh sõela. Derek Au kasutab enamiku glasuuride jaoks 120 mesh sõela, eriti koobalti või rauaga glasuuride jaoks: kolm korda läbi 80 mesh sõela jättis ühte seladoni ikkagi rauatäpid ja üks kord läbi 120 mesh sõela kõrvaldas need. Tuhaglasuuride ja muude jämedate toorainetega glasuuride jaoks kasutab ta 60 kuni 80 mesh sõela. Ühendkuningriigi Potterycrafts soovitab 60 kuni 80 mesh sõela. Kindel vaikevalik:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Millist sõela kasutada
+Label: Sõela mesh
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glasuur                                                   | Sõel                          |
+| --------------------------------------------------------- | ----------------------------- |
+| Enamik glasuure                                           | Kaks korda läbi 80 mesh sõela |
+| Värvainetega, näiteks koobalti või rauaga glasuurid       | 100 kuni 120 mesh             |
+| Tuhaglasuurid ja muud jämedate toorainetega glasuurid     | 60 kuni 80 mesh               |
 
-## Specific gravity {#specific-gravity lang=en}
+## Suhteline tihedus {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Suhteline tihedus**{{en: specific gravity}} näitab, kui palju pulbrit on teie glasuurilahuses. See on teatud ruumala glasuuri mass jagatud sama ruumala vee massiga. Vee suhteline tihedus on 1,00 ja glasuur, mille näit on {{SG 1.45}}, kaalub 145 g 100 mL kohta. Mõõdetud suhtelise tiheduseni segades saate iga kord sama paksuse ja sama glasuurikihi. Sellel ei ole ühikut, seega on see grammides ja untsides sama.
 
-### Measure it by weighing 100 mL
+### Mõõtmine 100 mL kaalumise teel
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Segage glasuuri, et midagi poleks settinud.
+2. Asetage 100 mL **mõõtesilinder** (kõrge, jaotistega mõõtetoru) või 100 mL süstal kaalule ja tareerige.
+3. Täitke see glasuuriga täpselt 100 mL-ni, lugedes märki silmade kõrgusel.
+4. Kaaluge ja jagage grammid 100-ga: 145 g tähendab suhtelist tihedust 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire märgib ka tassile 500 g vee taseme, täidab selle glasuuriga märgini ja jagab massi 500-ga; suurem ja täiem mõõt on täpsem. **Areomeeter**{{en: hydrometer}}, ujuk, mida loetakse sealt, kuhu see glasuuris jääb, on kiire, kuid võib paksu või tarretunud glasuuri puhul valesti näidata. Ühendkuningriigi areomeetrid, näiteks Potclaysi oma, näitavad Baumé kraade (°Bé). Selle juhendi arvutuse järgi on suhteline tihedus = 145 ÷ (145 − °Bé), seega 46 °Bé on umbes 1,46. Vanemad Briti raamatud annavad **pindi kaalu**{{en: pint weight}}, untsid Briti pindi glasuuri kohta: jagage see 20-ga, seega 29 oz on umbes suhteline tihedus 1,45 (samuti selle juhendi arvutus).
 
-### What to aim for
+### Mille poole püüelda
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Allikad on eri meelt, kõige rohkem pintseldamise ja pritsimise osas, kus Ühendkuningriigi tarnija Potclays annab palju kõrgemad arvud (tema enda sõnul „ainult suuniseks“). Pidage iga arvu lähtepunktiks. Digitalfire’i põhinõuanne on leida iga glasuuri jaoks sobiv suhteline tihedus ja tarretumine, siis neid korrata ja üles kirjutada.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Soovitud suhteline tihedus, kus allikad on eri meelt
+Label: Soovitud suhteline tihedus
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Kasutus       | Digitalfire ja Glazy                                                                                                                                            | Potclays (Ühendkuningriik)                         | Kindel lähtepunkt                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+| Sissekastmine | {{SG 1.40}} (5-sekundilise kastmise jaoks) kuni {{SG 1.50}} (1-sekundilise kastmise jaoks); kodus segatud tarretunud glasuurid toimivad kõige paremini {{SG 1.43–1.45}} juures | Läbipaistev {{SG 1.46–1.48}}; värviline {{SG 1.61}} | {{SG 1.45}}; kui tilgub, lahjendage, kuni näit on {{SG 1.43}}, ja tarretage |
+| Pintseldamine | {{SG 1.25}} (õhuke läbipaistev) kuni {{SG 1.55}} (tumedad detailid)                                                                                             | {{SG 1.71–1.81}}                                   | Järgige toote juhiseid; kasutage CMC-d või pintslilisandit           |
+| Pritsimine    | Arvu pole; Hopper, kes kirjutab väljaandele Ceramic Arts Network, ütleb palju vedelam, deflokulandiga (lisaaine, mis muudab glasuurilahuse vedelamaks)          | {{SG 1.71}}                                        | Usaldusväärset arvu pole; pritsige ainult glasuurimiskapis           |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Kastmisglasuuri silma järgi kontrollimiseks kastab AMACO 5 sekundit ja otsib kihti, mis on umbes USA kümnesendise mündi paksune. Digitalfire põletab kontrolliks 5 sekundit kastetud proovitükke.
 
-### Water for a target SG: our estimate
+### Vesi soovitud suhtelise tiheduse jaoks: selle juhendi hinnang
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Allolev tabel on selle juhendi enda arvutus, mitte allika oma. See eeldab, et pulbri osakeste tihedus on 2,6 g cm³ kohta, mis on eeldus, mitte mõõtmistulemus. Savi, lahustuvad toorained ja tarretumine muudavad päris glasuuri, seega kasutage seda alustuseks ja seejärel mõõtke. Kontrolliks: see ennustab pulbri ja vee võrdsete masside korral näitu {{SG 1.44}}, mis on lähedane Digitalfire’i mõõdetud näidule {{SG 1.46}}. Samuti näitab see, et 70 kuni 80 mL 100 g kohta annab alguses näidu üle {{SG 1.50}}, paksema, kui vaja.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Vesi soovitud suhtelise tiheduse jaoks (selle juhendi hinnang)
+Label: Vesi soovitud suhtelise tiheduse jaoks
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Siht        | 100 g pulbri kohta | Kilogrammi kohta |      Naela kohta |
+| ----------- | -----------------: | ---------------: | ---------------: |
+| {{SG 1.40}} |      umbes 115 mL |   umbes 1150 mL | umbes 18 US fl oz |
+| {{SG 1.45}} |       umbes 98 mL |    umbes 980 mL | umbes 15 US fl oz |
+| {{SG 1.50}} |       umbes 85 mL |    umbes 850 mL | umbes 13 US fl oz |
+| {{SG 1.60}} |       umbes 64 mL |    umbes 640 mL | umbes 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Oma glasuuri kuivaine suhtelise tiheduse leidmine segamise ajal
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+Ülaltoodud 2,6 on oletus. Teie glasuuri enda arvu, selle kuiva pulbri tiheduse, saab arvutada kolmest arvust, mille saate segamise ajal võtta. Selle abil saate hiljem suhtelise tiheduse põhjal arvutada, kui palju pulbrit on selle glasuuri mis tahes ämbris, ja vee järgmise segu jaoks. Selle juhendi arvutus, mitte allika oma:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Kirjutage üles kuiva pulbri mass segus: retsepti kogusumma.
+2. Kaaluge tühi ämber enne alustamist või märkige selle mass ämbrile.
+3. Segage, sõeluge ja viige glasuur tavalisel viisil soovitud suhtelise tiheduseni. Suruge kõik läbi sõela ja loputage see ämbrisse, et pulbrit välja ei jääks.
+4. Kaaluge täis ämber ja lahutage ämbri mass. See on glasuurilahuse mass.
+5. Mõõtke suhteline tihedus.
 
-Then:
+Seejärel:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Vesi** = glasuurilahuse mass − pulbri mass.
+- **Glasuurilahuse ruumala** mL-des = glasuurilahuse mass grammides ÷ suhteline tihedus.
+- **Pulbri ruumala** = glasuurilahuse ruumala − vesi (1 g vett on 1 mL).
+- **Kuivaine suhteline tihedus** = pulbri mass ÷ pulbri ruumala.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Näiteks: 1000 g pulbrist saab 1980 g glasuurilahust, mille näit on {{SG 1.45}}. Vett on 980 g, glasuurilahust on 1980 ÷ 1,45 = umbes 1366 mL, pulber võtab 1366 − 980 = 386 mL ja kuivaine suhteline tihedus on 1000 ÷ 386 = umbes 2,59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Kaaluge lõpus kogu glasuurilahus, mitte vett valamise ajal, et aurustuv või välja pritsiv vesi ei läheks arvesse. Väikesed vead kasvavad siin suureks: 0,01 võrra eksiv suhtelise tiheduse näit muudab tulemust umbes 2 kuni 4%, vedelama glasuuri puhul rohkem. Kasutage vähemalt 1 kg segu, täpset kaalu ja suhtelise tiheduse jaoks ülaltoodud 500 g tassi meetodit. Enamik tavalisi tooraineid jääb umbes 2,5 ja 2,9 vahele, seega tähendab sellest kaugel olev arv glasuuris, milles ei ole palju tsirkooni ega pliid, tõenäoliselt mõõtmisviga. Kirjutage arv retseptile.
 
-### Epsom salts, CMC gum and bentonite
+### Inglise sool, CMC ja bentoniit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Inglise sool**{{en: Epsom salts}} paneb glasuuri seistes kergelt tarretuma ja segamisel uuesti voolama. Seda nimetatakse **flokuleerimiseks**{{en: flocculating}} ja nii käituv glasuur on **tiksotroopne**{{en: thixotropic}}: see kandub peale ühtlasemalt, tilgub vähem ja settib vähem. Digitalfire soovitab alustada umbes 2 g-st galloni kohta, kui suhteline tihedus on õige (ligikaudu 0,5 g liitri kohta, selle juhendi teisendus), ja kogust iga segamise ajal kohandada, sest ükski retsept ei peaks annust ette määrama. See juhend soovitab lahustada selle kõigepealt vähese kuuma veega. Ühes Digitalfire’i näites tilkus glasuur, mille näit oli {{SG 1.45}}, nii et vesi viis selle näiduni {{SG 1.43}} ja inglise sool tarretas selle tagasi kreemjaks ning see kandus peale ühtlaselt. Ligikaudne kontroll: segage, lõpetage ja vaadake. Tarretunud glasuur liigub veel umbes 2 või 3 sekundit, siis peatub ja nõksatab veidi tagasi.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC**{{en: CMC gum}} (karboksümetüültselluloos) muudab glasuurilahuse kleepuvamaks ja aeglasemalt kuivavaks ning jätab kõvema kihi, mis püsib esemel. See on kõige olulisem pintselglasuuride ja rohkesti fritti sisaldavate glasuuride puhul. Digitalfire’i näites segatakse 3,75 g 1000 g glasuurilahuse sisse ja see tuleb lisada blenderiga. CMC-ga glasuur ei tarretu inglise soolaga ja kuna mikroobid toituvad sideainest, võib see ämbris muutuda ja hakata haisema.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentoniit**, väga peen savi, aitab teisi osakesi hõljumas hoida. Kastmisglasuurid toetuvad selleks tavaliselt 15 kuni 25% toorele savile. Retseptile, milles on vähe savi, aitab umbes 1 kuni 3% bentoniiti; Digitalfire ütleb, et glasuur, milles on üle 15% savi, ei peaks vajama bentoniiti rohkem kui 1% kuiva glasuuri massist.
 
-## Test tiles and line blends {#testing lang=en}
+## Proovitükid ja katseread {#testing}
 
-### Start small
+### Alustage väikesest
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au liigub edasi kolmes etapis: 50 või 100 g katse, kui see õnnestub, siis 1 kuni 2 kg proovisegu ja seejärel 5 kuni 10 kg töökoja segu. Selle juhendi hinnangul annab 100 g katse näidu {{SG 1.45}} juures umbes 135 mL (umbes 4½ US fl oz) glasuurilahust, millest piisab mõne väikese proovitüki kastmiseks kitsas topsis.
 
-### Test on your own clay
+### Katsetage oma savil
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Glasuur võib teisel savil või teises ahjus näha välja üsna erinev: Clay Art Center katsetas iga oma ümbertehtud glasuuri neljal savimassil, koonuse 6 ja koonuse 10 juures. Potclaysi algaja juhend glasuuride katsetamiseks soovitab:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6 kuni 10 **proovitükki**{{en: test tiles}} (väikesed tükid glasuuri proovimiseks) sellest savist, mida tegelikult kasutate, märkides, kas need on eelpõletatud või täiesti kuivad
+- üks muudatus korraga
+- ühekordne ja kahekordne kastmine, et näha glasuuri õhukesena ja paksuna
+- kõik proovitükid samas ahjutäies
+- märk igale proovitükile enne põletust, templi, uurendi või glasuurialuse pliiatsiga. Põletatud proovitükid näevad ühesugused välja ja enne põletust tehtud märk püsib ahjus, nii et alati on võimalik öelda, millise retseptiga iga proovitükk on.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+See juhend soovitab püstiseisvaid proovitükke, sest lame proovitükk varjab, kui kaugele glasuur voolab, koos tekstuuriga ribaga, mis näitab, kuidas glasuur servadel muutub, ja glasuurita põhjaga. Asetage iga proovitükk väikesele alusele või eelpõletatud savitükile või kaitseainega kaetud ahjuplaadile, et tilgad kinni püüda. Pange proovitükkide lähedale **kontrollkoonus**{{en: witness cone}}, väike keraamiline koonus, mis paindub, kui on saanud piisavalt kuumust, et näha, mida proovitükid said; koonuseid selgitab juhend [Põletamine lihtsas keraamikaahjus](/guides/firing). Andke igale proovitükile lühike kood ja kirjutage see oma märkmetes retsepti juurde. Willers, kes kirjutab väljaandele Ceramic Arts Network, kasutab numbreid ja tähti ning kirjutab süsteemi enda märkmiku algusesse.
 
-### Line blends
+### Katseread
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Katserida**{{en: line blend}} on rida katseid, mis liiguvad ühtlaste sammudega ühest segust teise: ühest glasuurist teise või põhiglasuurist samani rohkema värvainega. Derek Au näiteks muudab raudoksiidi hulka läbipaistvas põhiglasuuris 1% sammudega. Ian Curriega seostatav ruumalameetod säästab aega, sest segada tuleb ainult kaks äärmist glasuuri:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Segage kaks äärmist glasuuri, A ja B, sama suurte segudena ja sõeluge mõlemad.
+2. Lisage vett sellele, mille ruumala on väiksem, kuni mõlema märg ruumala on täpselt sama.
+3. Segage mõlemat, seejärel tõmmake süstlaga igast segust kogus oma nummerdatud topsi.
+4. Segage iga topsi ja kastke sinna proovitükk.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Selle juhendi näites on A 100 g läbipaistvat põhiglasuuri ja B sama, millele on lisatud 4 g punast raudoksiidi (4% lisand). Igas B milliliitris on sama palju põhiglasuuri kui A milliliitris, lisaks selle raud, nii et topsid liiguvad rauavabast 4%-ni 1% sammudega. Kumbki äärmine glasuur annab katsereale 100 mL, mille 100 g segu selle juhendi hinnangul katab.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Viiesammuline raua katserida, 40 mL topsi kohta (selle juhendi näide)
+Label: Katserea näide
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Tops | Läbipaistev põhiglasuur (A) | Põhiglasuur 4% rauaga (B) | Raudoksiid, % põhiglasuurist |
+| ---- | --------------------------: | ------------------------: | ---------------------------: |
+| 1    |                       40 mL |                      0 mL |                            0 |
+| 2    |                       30 mL |                     10 mL |                            1 |
+| 3    |                       20 mL |                     20 mL |                            2 |
+| 4    |                       10 mL |                     30 mL |                            3 |
+| 5    |                        0 mL |                     40 mL |                            4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Meetod nõuab hoolikat arvutamist, hästi segatud äärmisi glasuure, millel on sama suhteline tihedus, ja täpset kaalu. Derek Au segab ka massi, mitte ruumala järgi. **Kolmnurkkatse**{{en: triaxial blend}} teeb sama kolme äärmise glasuuriga, mille kombinatsioonid paigutatakse kolmnurga kujul.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Kui mõni samm tundub paljulubav, säilitab funktsioon **Salvesta koopiana** [retsepti lehel](/recipe) selle eraldi retseptina ja jätab algse retsepti nii, nagu see oli.
+
+## Märkmete pidamine {#records}
+
+Willers sõnastab eesmärgi hästi: „piisavalt teavet, et saaksite avastatud tulemusi korrata või vältida“. Kirjutage enne alustamist üles, mida kavatsete katsetada, ja tulemused ahju tühjendamisel. Potclays lisab glasuuri pealekandmise viisi, kihi paksuse, savimassi ja kogu põletuse, sealhulgas rambid, hoiud ja jahutuse. **Ramp**{{en: ramp}} on kuumutamise või jahutamise kiirus, näiteks {{60 °C; 108 °F}} tunnis, ja **hoid**{{en: hold}} hoiab ahju kindla aja ühel temperatuuril. Märkige üles partiinumbrid, kasutatud vesi ja iga asendus: kui Clay Art Center vahetas põldpagu, tuli kohandada umbes pooled selle glasuuridest.
+
+Table: Mida iga glasuurisegu kohta üles kirjutada (selle juhendi mall)
+Label: Märkmete mall
+
+| Osa          | Mida üles kirjutada                                                                                                                                                                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Retsept      | Retsept ja selle versioon; toorainete kaubamärgid ja partiinumbrid; kõik asendused                                                                                                                                                                                         |
+| Segamine     | Kuupäev; segu kogus; lisatud vesi ja selle liik (kraanivesi, pöördosmoosiga puhastatud või destilleeritud); suhteline tihedus pärast segamist ja lõplik suhteline tihedus; valmis glasuurilahuse mass kuivaine suhtelise tiheduse jaoks; lisatud inglise sool, CMC ja bentoniit; sõela mesh ja sõelumiskordade arv |
+| Pealekandmine | Savimass; eelpõletuse koonus; sissekastmine, pintseldamine või ülevalamine; kastmisaeg või kihtide arv; kuiva kihi paksus                                                                                                                                                   |
+| Põletus      | Ahi ja koht ahjuplaadil; põletusprogramm koos rampide, hoidude ja jahutusega; ahju atmosfäär (oksüdeeriv või redutseeriv põletus); mida näitas kontrollkoonus, mitte ainult see, millele ahi oli seatud                                                                    |
+| Tulemus      | Pind ja värv; voolamine, juuspraod või nõelaaugud; fotod eest, tagant ja küljelt; proovitüki kood                                                                                                                                                                           |
+
+> [!NOTE]
+> Glazecalcis hoiab salvestatud [retsept](/recipe) retsepti ennast. [Põletuspäevik](/firing) salvestab iga põletuse: ahju, kuupäeva, ajad, temperatuurid, koonused ja märkused. [Märkmed](/notes) hoiavad kõike muud, näiteks ülaltoodud segu andmeid ja seda, mida iga proovitükk näitas.
 
 ## Allikad {#sources}
 
