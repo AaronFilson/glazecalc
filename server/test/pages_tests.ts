@@ -697,7 +697,8 @@ describe('pages in each language', () => {
       '/materials/tsushima-feldspar',
       '/materials/masuda-feldspar',
       '/materials/korean-kaolin',
-      '/materials/synthetic-isu-ash'
+      '/materials/synthetic-isu-ash',
+      '/materials/colemanite-commercial'
     ];
 
     it('has every note and hazard of every material translated in every live language today', () => {
