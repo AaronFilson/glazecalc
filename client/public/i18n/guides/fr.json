@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Apprendre avec le cours d’émaux gratuit de John Britt",
       "text": "Son cours vidéo gratuit sur YouTube, unité par unité, avec nos guides à lire et des exercices à faire dans Glazecalc. En anglais."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Enseigner le calcul des émaux",
+      "text": "6 séances pour une classe ou un groupe d’étude, des essais triaxiaux à la formule de Seger calculée dans les deux sens, avec des fiches d’exercices à imprimer."
     }
   },
   "more": "Plus de guides",
@@ -255,6 +259,8 @@
       "crazed": "tressaillé"
     },
     "keyBright": "Ligne pointillée : là où les émaux de Stull étaient les plus brillants.",
-    "keyCrazed": "Hachures : là où ils tressaillaient."
+    "keyCrazed": "Hachures : là où ils tressaillaient.",
+    "note": "Un repère, pas une prédiction. R. T. Stull (Transactions of the American Ceramic Society, 1912) cuisait vers le cône 11, avec des fondants fixés à 0,3 K₂O et 0,7 CaO ; d’autres fondants et d’autres cuissons déplacent les régions, et un émail qui n’est mat que parce qu’il est sous-cuit peut quand même se placer dans la région brillante. Les régions sont tracées comme sur Glazy.",
+    "inGuide": "La silice (SiO₂) en abscisse, d’environ 1 à 7, et l’alumine (Al₂O₃) en ordonnée, de 0 à 1, toutes deux tirées de la formule de Seger. Des secteurs partent de la gauche en éventail : non fondu en haut à gauche, puis mat, puis semi-mat. La partie non grisée à leur droite est brillante, et la ligne pointillée qui la traverse marque l’endroit où les émaux de Stull étaient les plus brillants. Sous-cuit est en bas à droite, avec peu d’alumine et beaucoup de silice. Les hachures, en bas du diagramme et sur son côté gauche, marquent l’endroit où ses essais tressaillaient."
   }
 }
