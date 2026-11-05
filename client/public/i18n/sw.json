@@ -9,6 +9,7 @@
     "homeSafety": "Usiitie familia yako sumu - Glazecalc",
     "firing": "Kuchoma katika tanuru rahisi - Glazecalc",
     "learnWithJohnBritt": "Jifunze na kozi ya bure ya glaze ya John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Kufundisha hesabu za glaze - Glazecalc",
     "about": "Kuhusu - Glazecalc",
     "privacy": "Faragha - Glazecalc",
     "terms": "Masharti ya matumizi - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Idhinisha mabadiliko - Glazecalc",
     "cones": "Jedwali la koni: joto la koni za Orton na SK - Glazecalc",
     "materials": "Malighafi za kawaida za glaze: uchambuzi na hatari - Glazecalc",
-    "materialInfo": "{name}: uchambuzi wa oksidi na hatari - Glazecalc"
+    "materialInfo": "{name}: uchambuzi wa oksidi na hatari - Glazecalc",
+    "famousGlazes": "Glaze maarufu - Glazecalc",
+    "famousGlaze": "Glaze ya {name} - Glazecalc"
   },
   "nav": {
     "skip": "Ruka hadi kwenye maudhui",
@@ -177,6 +180,7 @@
     "homeSafety": "Cha kufanya mtoto au mnyama akimeza malighafi ya glaze, na jinsi ya kuweka malighafi, vumbi, tanuru na vyombo vilivyotengenezwa kwa mkono salama karibu na familia yako.",
     "firing": "Jinsi ya kuchoma tanuru la umeme: kuchagua, kuweka na kusoma koni, na kufuata ratiba zilizochapishwa za kuchoma bisque na glaze, pamoja na jedwali la koni.",
     "learnWithJohnBritt": "Mwenzi wa kozi ya bure ya mtandaoni ya glaze ya John Britt: video zake sehemu kwa sehemu, pamoja na miongozo ya Glazecalc ya kusoma na mazoezi ya kujaribu kwenye kikokotoo.",
+    "teachingGlazeCalculation": "Vipindi 6 vya kufundisha fomula ya Seger (UMF): malighafi na vigae vya triaxial, moli, kutoka kichocheo hadi fomula na kurudi, na kasoro za glaze, pamoja na mifano iliyofanyiwa kazi na karatasi za kazi za kuchapisha.",
     "advice": "Vidokezo vya vitendo kuhusu kuchanganya, kupaka glaze na kuchoma, kutoka Glazecalc, pamoja na ushauri wako mwenyewe. Bure kwa wafinyanzi.",
     "about": "Glazecalc ni kikokotoo cha bure cha kemia ya glaze chenye chanzo wazi, na daftari. Ona jinsi inavyokokotoa fomula ya Seger na jinsi ilivyojengwa.",
     "privacy": "Jinsi Glazecalc inavyoshughulikia data yako: hakuna matangazo, uchanganuzi wala ufuatiliaji, na hakuna kinachouzwa. Nini kinahifadhiwa, kwa nini, na jinsi ya kutumia haki zako.",
@@ -187,6 +191,8 @@
     "materials": "Malighafi katika maktaba ya kawaida ya Glazecalc, kuanzia feldspar na udongo hadi frit na vyanzo vya boroni, kila moja na uchambuzi wake wa oksidi, fomula ya Seger na hatari.",
     "materialInfo": "{name}: uchambuzi wa oksidi, fomula ya Seger, upotevu wa uzito kwa moto na hatari katika maktaba ya kawaida ya Glazecalc.",
     "materialInfoLong": "{name} katika maktaba ya kawaida ya Glazecalc ya malighafi za glaze: uchambuzi wake wa oksidi, mchango katika fomula ya Seger, upotevu wa uzito kwa moto na hatari.",
+    "famousGlazes": "Glaze maarufu kutoka duniani kote: kichocheo cha jadi au uchambuzi wa kihistoria wa kila glaze, fomula yake ya Seger (UMF), na toleo kutoka kwa malighafi zinazouzwa mahali ulipo.",
+    "famousGlaze": "Glaze ya {name} ({native}): kichocheo chake cha jadi au uchambuzi wa kihistoria, uchomaji, fomula ya Seger (UMF) na vyanzo, na toleo kutoka kwa malighafi zinazouzwa mahali ulipo.",
     "imageAlt": "Nembo ya Glazecalc na kichwa chake, kemia ya bure ya glaze kwa wafinyanzi, kando ya picha ya vifurushi vya koni zilizochomwa."
   },
   "notices": {

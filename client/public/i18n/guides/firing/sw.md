@@ -458,73 +458,73 @@ Vidhibiti vya L&L na Bartlett hutumia {{1926 °F; 1052 °C}} kwa koni 04 na {{18
 
 Tanuru la mkono hufuata mpango ule ule kwa mkono: kausha polepole huku mfuniko ukiwa umeinuliwa na matundu ya kuchungulia wazi, panda na swichi kutoka Chini hadi Kati hadi Juu, na acha sitter imalize uchomaji. Taratibu zilizochapishwa ziko chini ya Matanuru ya mkono kwa kina, hapa chini.
 
-## Glaze firing {#glaze lang=en}
+## Kuchoma glaze {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Kuchoma glaze huyeyusha glaze kuwa kioo juu ya bisque. Glaze nyingi za joto la chini sokoni zimetengenezwa kwa koni 06 au 05 (kiwango cha joto la chini ni koni 06–04), na glaze nyingi za joto la kati kwa koni 5–6. Choma hadi koni iliyo kwenye lebo za glaze na udongo wako, ukiwa na pakiti ya koni kuzunguka namba hiyo. Kwa kinachotokea ndani ya glaze inapoyeyuka, tazama [Misingi ya glaze](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Kupanga vyombo kwa kuchoma glaze
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Vyombo vilivyopakwa glaze visigusane wala kugusa kuta: acha takriban ½ inchi (13 mm).
+- Usiweke glaze kwenye kitako (**dry-footing**), au weka vyombo vya joto la chini juu ya **stilts**, visimamo vidogo vyenye ncha. Stoneware na porcelaini zisisimame juu ya stilts, ambazo huzama ndani yake kwa joto hilo; tumia kiln wash ya joto la juu au mchanga wa silika badala yake.
+- Acha angalau inchi 1 (25 mm) kati ya kingo za rafu na ukuta au kiln sitter.
 
-### Controller schedules
+### Ratiba za kidhibiti
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Ratiba zilizowekwa tayari za glaze za L&L na Bartlett
+Label: Ratiba za glaze zilizowekwa tayari
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Hatua                        |                         Panda hadi |             Slow Glaze |             Fast Glaze |
+| ---------------------------- | ---------------------------------: | ---------------------: | ---------------------: |
+| 1                            |                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Hakuna hatua tofauti |
+| 2                            | {{250 °F; 139 °C}} chini ya kilele | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                            |                             Kilele |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Muda wa kupasha, tanuru tupu |                                    |     Takriban saa 6½–7½ |       Takriban saa 3–4 |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Mahali hatua 2 na 3 zinapoishia, kwa koni (L&L na Bartlett)
+Label: Malengo ya ratiba
 
-| Cone |       Segment 2 ends |                 Peak |
+| Koni |     Hatua 2 inaishia |               Kilele |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze ndiyo chaguo salama zaidi, kutokana na onyo la L&L kuhusu kuchoma haraka. Ukiongeza kusubiri (hold) kwa zaidi ya dakika 5–10 kwenye kilele, L&L inasema ushushe lengo au cone offset ili kulingana, na inaeleza kwamba "Kusubiri kwenye joto la juu huharakisha kuchakaa kwa elementi na thermocouple."
 
-### Cone 6: drop-and-hold
+### Koni 6: kushusha na kusubiri
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Glaze za joto la kati wakati mwingine hutoka na **pinholes** (vitundu vidogo sana juu ya uso) au malengelenge, yaliyoachwa na gesi inayobubujika kutoka kwenye glaze iliyoyeyuka. Ratiba ya **kushusha na kusubiri** (drop-and-hold) huchoma hadi juu, hupoza haraka kwa takriban {{100 °F; 56 °C}} na kusubiri hapo. Kwa maneno ya Digitalfire, "Kushusha 100°F na kusubiri huipa glaze iliyoyeyuka uzito wa kutosha kupasua mapovu huku bado ikiyaacha yapone."
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, koni 6 kushusha na kusubiri
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Hatua |                               Kasi |                Lengo | Kusubiri                                   |
+| ----- | ---------------------------------: | -------------------: | ------------------------------------------ |
+| 1     |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | Dakika 60                                  |
+| 2     |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Hiari dakika 30, kuondoa mawingu ya mapovu |
+| 3     |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | Dakika 10; zaidi katika matanuru makubwa   |
+| 4     | Kushuka kwa {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | Dakika 30                                  |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS huchukua takriban saa 9 dakika 36. Kwa glaze zinazotiririka zaidi, Digitalfire hushusha takriban {{200 °F; 111 °C}} badala yake; kushusha mbali sana "kunahatarisha kutokea kwa fuwele wakati wa kusubiri". Kilele chake cha {{2200 °F; 1204 °C}} kiko chini ya {{2232 °F; 1222 °C}} ya chati kwa koni 6; Digitalfire inaripoti kwamba matanuru mengi hufikia koni 6 kwa takriban {{2200 °F; 1204 °C}}. Hakikisha kwa pakiti ya koni katika tanuru lako mwenyewe.
 
-### Slow cooling
+### Kupoza polepole
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Kupoza polepole** maana yake kidhibiti hupoza tanuru kwa kasi iliyowekwa badala ya kuliacha lishuke lenyewe. C6DHSC ya Digitalfire ni PLC6DS ikifuatiwa na kupoza kwa {{150 °F/h; 83 °C/h}} kutoka {{2100 °F; 1148 °C}} hadi {{1400 °F; 760 °C}}, kisha kuzima. "Huboresha ung'avu na ubora wa uso" na husaidia rangi za buluu za rutile, lakini kupoza polepole "kunaweza kuongeza umatte" (glaze moja ya matte ilikauka) na kunaweza kufupisha maisha ya relay za tanuru. L&L pia hutoa programu ya kupoza polepole kwa koni 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L "User 6": kupoza polepole kwa glaze za koni 6
+Label: Kupoza polepole kwa L na L
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Hatua |                              Kasi |                Lengo |
+| ----- | --------------------------------: | -------------------: |
+| 1     |               Kasi kamili kupanda | {{2232 °F; 1222 °C}} |
+| 2     |               Kasi kamili kushuka | {{1900 °F; 1038 °C}} |
+| 3     | Kushuka kwa {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Vidhibiti vya Skutt vilevile hutoa kupasha kabla na chaguo la kupoza kwa hatua moja.
 
-### On a manual kiln
+### Kwenye tanuru la mkono
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Tanuru la mkono haliwezi kufuata ratiba hizi kikamilifu, lakini mpango ni ule ule: polepole mwanzoni, kwa utulivu katikati, na mwisho unaotazamwa. Ratiba ya Bracker ya glaze ya joto la chini iko chini ya Matanuru ya mkono kwa kina, hapa chini; kwa koni zenye joto zaidi inaongeza "wastani wa dakika 15–30 kwa kila namba ya koni". Ukiwa na pyrometer, mazoezi na daftari la kumbukumbu, unaweza kuiga takriban kushusha na kusubiri au kupoza polepole kwa kushusha swichi kwa mkono, kama Digitalfire inavyopendekeza.
 
 ## Matanuru ya mkono kwa kina {#manual-kilns}
 

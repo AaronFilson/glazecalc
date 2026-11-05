@@ -266,6 +266,26 @@ One form per concept across the app, records, reference, guides and emails.
 | controller (kiln)        | kidhibiti (7/8)                                    | Electronic controller only.                                                                  |
 | limit timer              | kipima muda cha ukomo (limit timer)                |                                                                                              |
 
+### 5.2 Round 14 terms (2026-11-04)
+
+No Swahili ceramics source was found for these (section 0's search, repeated); each is built from TUKI's everyday words
+(_jivu_ ash, _mabua_ straw, _mpunga_ rice, _jiwe_ stone, _bandia_ artificial). **Native check** on all.
+
+| English                    | sw                                    | Notes                                                    |
+| -------------------------- | ------------------------------------- | -------------------------------------------------------- |
+| wood ash                   | jivu la kuni (5/6)                    | TUKI _jivu_.                                             |
+| synthetic ash (合成土灰)   | mbadala bandia wa 土灰                | The Japanese name kept, as the English keeps it.         |
+| rice-straw ash (藁灰)      | jivu la mabua ya mpunga               |                                                          |
+| isu ash (柞灰)             | jivu la isu                           |                                                          |
+| porcelain stone (瓷石)     | jiwe la porcelaini                    |                                                          |
+| caustic (ash)              | huunguza ngozi (caustic)              | English in brackets: the safety meaning must be clear.   |
+| specification (product)    | vipimo vya bidhaa                     | Colemanite: "limits, not a typical analysis" → _mipaka_. |
+| drop-and-hold              | kushusha na kusubiri (drop-and-hold)  |                                                          |
+| hold (firing)              | kusubiri (hold)                       |                                                          |
+| line blend, triaxial blend | line blend, triaxial blend            | Loans.                                                   |
+| glass former, stabilizer   | kiunda kioo (7/8), kiimarishaji (7/8) |                                                          |
+| liner glaze                | glaze ya ndani (liner glaze)          |                                                          |
+
 ## 6. Choices for the owner and a native potter
 
 1. **plainNotice for Swahili?** Standard notice today (plan default). Recommend the plain notice, given the loan-heavy
