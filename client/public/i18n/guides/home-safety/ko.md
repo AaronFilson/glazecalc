@@ -59,31 +59,31 @@ Label: 수용성 원료
 
 납의 주된 위험은 다릅니다. 한 숟가락이 아니라, 몇 주나 몇 달에 걸쳐 조금씩 삼킨 분진이며, 경고 신호가 전혀 없습니다(아래 “납과 아이” 참조).
 
-## Storing materials at home {#storing-materials lang=en}
+## 집에서 원료 보관하기 {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+집에서 유약 원료를 보관하는 규칙을 정한 공식 기관은 없지만, 보건 안전 관련 페이지들의 말은 같습니다. 작업은 따로 마련된 공간에서 하고, 아이들이 가까이 오지 못하게 하세요. 미국 펜실베이니아주 보건부는 납을 쓰는 취미 활동에 관해 “취미 활동에는 지정된 작업 공간이나 차고를 이용하고, 아이들이 이 구역에 오지 못하게 하세요”라고 말합니다.
 
-### A storage checklist
+### 보관 점검 목록
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+다음은 일반적인 중독 예방 규칙을 유약에 적용한 것입니다. 이를 정한 도자기 관련 표준은 없지만, 저희는 모두 지키기를 권합니다.
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- 마른 원료는 잠가서 보관하세요. 잠기는 수납장이나, 잠글 수 있는 방, 차고, 창고에 두면 됩니다. 높은 선반도 도움이 되지만 아이들은 기어오릅니다. 처음에 몇 가지만 잠글 수 있다면 수용성 원료와 발색제부터 시작하세요.
+- 원료는 원래의 포대나 통에 그대로 두세요. 다른 용기로 옮겼다면, 포대에 적힌 그대로 이름을 써 붙이세요.
+- 유약 원료에는 음식이나 음료 용기(요구르트 통, 유리병, 병)를 절대 쓰지 마세요. 라벨을 붙였더라도 마찬가지입니다. 아이는 요구르트 통에 무엇이 들어 있는지 압니다.
+- 작업 도구(계량 스쿱, 숟가락, 거품기, 체, 저울)는 작업실에 두세요. 주방 도구를 유약 작업에 절대 쓰지 말고, 유약 도구를 음식에도 절대 쓰지 마세요.
+- 젖은 유약은 라벨을 붙인 통에 뚜껑을 덮어 보관하세요.
+- 원료마다 물질안전보건자료를 함께 두세요. 종이로든 휴대전화로든 괜찮습니다.
+- 작업실 물건은 주방에 아무것도 두지 마세요. 포대도, 통도, 도구도, 시편{{en: test tiles}}도 안 됩니다.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+원료 구매와 보관에 대해 더 자세히는 《[유약 만드는 법](/guides/making-a-glaze)》을 보세요.
 
-### Glaze waste and rinse water
+### 유약 폐기물과 헹군 물
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+유약도, 유약 도구를 헹군 물도 싱크대나 정원에 절대 붓지 마세요. 영국 공예위원회(Crafts Council)는 손, 붓, 체, 도구를 씻을 물을 따로 한 통 두라고 제안합니다. 하룻밤 가라앉힌 뒤 맑은 물을 따라 내고, 가라앉은 유약은 말려서 쓰레기로 버리세요(매립지로 갑니다). 배수구에는 절대 버리지 마세요.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+그 통에는 뚜껑을 덮기를 권합니다. 가라앉은 찌꺼기에는 유약과 같은 금속이 들어 있고, 반려동물은 고인 물을 마십니다. 폐기 규정은 지역마다 다르므로, 각 제품의 물질안전보건자료를 확인하고, 확실하지 않으면 지자체나 수도 사업자에 문의하세요.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+마른 침전물을 버리기 전에 소성하는 작업실도 있습니다. 다 써도 되는 여분의 그릇에 담습니다. 소성한 뒤에는 그 그릇을 다시 쓸 수 없습니다. 침전물은 녹으면서 거품이 일고 부풀어 오르므로, 그릇은 사분의 일만 채우고 접시로 덮으세요. 넘칠 경우에 대비해 내화판 코팅제를 바른 선반이나 여분의 판 위에 놓으세요. 소성하면 침전물이 유리가 되고, 유리는 흩어진 가루보다 금속을 훨씬 단단히 붙잡으므로 매립지에서 더 안전합니다. 마른 침전물은 마른 유약처럼 다루세요. 방진마스크를 쓰고 분진을 일으키지 마세요.
 
 ## 분진을 작업실 안에 두기 {#keeping-dust-in-the-studio}
 

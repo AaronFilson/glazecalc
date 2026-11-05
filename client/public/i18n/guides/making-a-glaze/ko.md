@@ -119,183 +119,183 @@ HSE는 결정형 유리규산이 “‘비정질 실리카’로 잘못 표시�
 
 Derek Au는 실수했을 때 다시 퍼낼 수 있도록 한 그릇에 원료를 따로따로 무더기로 계량합니다. 원료 사이에 영점을 맞추지 않고 한 양동이에 계속 계량한다면, Glazecalc의 누계가 원료를 하나 넣을 때마다 저울이 몇을 가리켜야 하는지 알려 줍니다.
 
-## Mixing and sieving {#mixing lang=en}
+## 섞기와 체에 거르기 {#mixing}
 
-### How much water
+### 물의 양
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+자료마다 다릅니다. Derek Au는 가루 100 g당 물 50 mL로 걸쭉하게 시작해 나중에 물을 더 넣습니다. Potterycrafts는 가루 유약 한 종류에 100 g당 65 mL를 제시합니다. UT Austin은 물과 가루를 같은 무게로 쓰며, Digitalfire가 가루 20 kg을 물 20 kg에 넣었을 때는 비중 1.46이 측정되었습니다.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+물은 넣기는 쉽고 빼기는 어려우므로 적게 시작하세요. 저희의 추정은 **100 g당 약 70~80 mL**(킬로그램당 700~800 mL, 파운드당 약 11~12 US fl oz)로 시작하는 것입니다. 이 정도 걸쭉함으로 물에 불리고, 섞고, 체에 거른 다음, 비중이 맞을 때까지 물을 조금씩 더하세요. 물 1 mL의 무게는 1 g이므로 무게로 재도 됩니다. 너무 많이 넣었다면 유약이 가라앉도록 두었다가 위에 뜬 맑은 물을 스펀지로 빨아내거나 따라 내세요.
 
-### Tools and water
+### 도구와 물
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **프로펠러 교반기.** Digitalfire는 좋은 것을 “필수”라고 부릅니다. 양동이에서는 교반 날개를 단 전원 연결식 드릴로도 충분합니다. UT Austin은 유약이 섞인 것처럼 보인 뒤에도 최소 4~5분 돌리며, 플라스틱을 긁어낼 수 있으므로 날이 양동이에 닿지 않게 합니다.
+- **믹서.** “소량 배합에 아주 잘 맞습니다”(Digitalfire). 유약 전용으로만 쓰세요. 주방으로 되돌려서는 절대 안 됩니다.
+- **거품기나 막대.** 믹서가 없을 때 Zakin이 고르는 도구입니다.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+물도 제각각이며, Digitalfire는 물이 유약물의 거동을 바꾼다고 지적합니다. Derek Au는 수돗물이 경수라서 역삼투 방식으로 거른 물을 씁니다. 어떤 물을 쓰든 기록해 두세요.
 
-### Step by step
+### 단계별로
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. 방진마스크를 쓰고, 손이 들어갈 것 같으면 고무장갑도 끼세요. Zakin은 계량을 시작할 때부터 유약이 젖을 때까지 마스크를 씁니다.
+2. 양동이에 가루 100 g당 약 70~80 mL의 물을 재어 넣으세요.
+3. 계량한 가루를 낮은 높이에서 살살 넣으세요. UT Austin은 따뜻한 물에 가루를 넣고, Zakin과 Au는 가루에 물을 붓습니다. 저희는 분진이 덜 날리는 물에 가루를 넣는 방법을 권하지만, 벤토나이트가 많이 든 레시피는 예외로 마른 가루끼리 먼저 저어 섞으세요.
+4. **물에 불리세요**: 젓지 말고 가루가 물을 먹게 두세요. Digitalfire는 약 20분을 기다립니다. 바인더가 든 가루는 하룻밤 두어야 합니다.
+5. 마른 곳이나 덩어리가 없어질 때까지 섞으세요.
+6. 두 번 체에 거르세요(아래 참고).
+7. 덮어서 하룻밤 두었다가 다시 섞고, 바닥에 단단한 층이 생겼는지 확인하세요.
+8. 비중을 재고, 목표에 맞을 때까지 물을 조금씩 더하세요. 사용하는 유약 자체의 마른 비중을 알려면 완성된 유약물의 무게도 재세요(아래 참고).
+9. 양동이에 라벨을 붙이고, 한 일을 기록하세요.
+10. 젖은 상태로 청소하세요. 바닥을 걸레질하고, 원료 용기 바깥을 포함해 모든 표면을 닦으세요.
 
-### Sieving
+### 체에 거르기
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**체**는 틀에 메시 망을 끼운 도구입니다. 솔로 유약을 체에 밀어 내리면 섞은 뒤에도 남은 덩어리가 풀리고, 소성하면 점으로 남을 입자가 걸러집니다. **메시**(목) 숫자가 클수록 망이 고운데, 80메시의 구멍은 약 0.18 mm, 100메시는 약 0.15 mm입니다.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+자료마다 권하는 메시가 다릅니다. Zakin은 50메시 또는 80메시로 두 번 거릅니다. Derek Au는 대부분의 유약, 특히 코발트나 철이 든 유약에 120메시를 씁니다. 한 청자 유약에서는 80메시로 세 번 거르고도 철점이 남았지만 120메시로 한 번 거르자 해결되었습니다. 회유와 거친 원료가 든 다른 유약에는 60~80메시를 씁니다. 영국의 Potterycrafts는 60~80메시를 제안합니다. 안전한 기본값은 다음과 같습니다.
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: 어떤 체를 쓸까
+Label: 체 메시
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| 유약                              | 체             |
+| --------------------------------- | -------------- |
+| 대부분의 유약                     | 80메시로 두 번 |
+| 코발트나 철 같은 발색제가 든 유약 | 100~120메시    |
+| 회유와 거친 원료가 든 다른 유약   | 60~80메시      |
 
-## Specific gravity {#specific-gravity lang=en}
+## 비중 {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**비중**{{en: specific gravity}}(SG)은 유약물에 가루가 얼마나 들어 있는지를 알려 줍니다. 어떤 부피의 유약 무게를 같은 부피의 물의 무게로 나눈 값입니다. 물은 1.00이고, {{SG 1.45}}인 유약은 100 mL의 무게가 145 g입니다. 잰 비중에 맞춰 섞으면 매번 같은 걸쭉함과 같은 유약층을 얻을 수 있습니다. 비중에는 단위가 없으므로 그램으로 재든 온스로 재든 같습니다.
 
-### Measure it by weighing 100 mL
+### 100 mL의 무게로 재기
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. 유약을 저어서 가라앉은 것이 없게 하세요.
+2. 100 mL **눈금 실린더**(눈금이 있는 길쭉한 계량 관) 또는 100 mL 주사기를 저울에 올리고 영점을 맞추세요.
+3. 유약을 정확히 100 mL까지 채우세요. 눈금은 눈높이에서 읽습니다.
+4. 무게를 재고 그램 값을 100으로 나눕니다. 145 g이면 비중 1.45입니다.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire는 컵에 물 500 g이 들어가는 높이를 표시해 두고, 그 표시까지 유약을 채워 무게를 500으로 나누기도 합니다. 더 크고 가득 채운 용기가 더 정확합니다. **비중계**는 유약에 띄워 떠 있는 위치를 읽는 부표로, 빠르지만 걸쭉하거나 젤 상태인 유약은 잘못 읽을 수 있습니다. Potclays 같은 영국의 비중계는 보메도(°Bé)로 읽습니다. 저희 계산으로는 비중 = 145 ÷ (145 − °Bé)이므로 46 °Bé는 약 1.46입니다. 영국의 옛 책에는 **파인트 무게**, 즉 영국 파인트의 유약에 든 온스 수가 나옵니다. 이를 20으로 나누면 되며, 29 oz는 약 비중 1.45입니다(이것도 저희 계산입니다).
 
-### What to aim for
+### 목표로 삼을 비중
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+자료마다 다르며, 특히 붓 시유와 분무 시유에서 크게 다릅니다. 영국 공급업체 Potclays는 훨씬 높은 수치를 제시합니다(Potclays 자신의 수치는 “참고용일 뿐”입니다). 모든 숫자를 시작점으로 여기세요. Digitalfire의 핵심 조언은 유약마다 맞는 비중과 젤 상태를 찾은 다음 그것을 반복하고 기록하라는 것입니다.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: 비중 목표, 자료마다 다른 값
+Label: 비중 목표
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| 용도      | Digitalfire와 Glazy                                                                                                                             | Potclays(영국)                               | 안전한 시작점                                                           |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------- |
+| 덤벙 시유 | {{SG 1.40}}(5초 담그기)에서 {{SG 1.50}}(1초 담그기)까지. 집에서 섞어 젤 상태로 만든 유약은 {{SG 1.43–1.45}}에서 가장 잘 맞습니다                | 투명유 {{SG 1.46–1.48}}, 색 유약 {{SG 1.61}} | {{SG 1.45}}. 뚝뚝 떨어지면 {{SG 1.43}}까지 묽게 하고 젤 상태로 만드세요 |
+| 붓 시유   | {{SG 1.25}}(묽은 투명유)에서 {{SG 1.55}}(진한 세부 표현)까지                                                                                    | {{SG 1.71–1.81}}                             | 제품의 지시를 따르세요. CMC 바인더나 붓 시유용 미디엄을 쓰세요          |
+| 분무 시유 | 수치 없음. Ceramic Arts Network에 글을 쓴 Hopper는 훨씬 묽게 하고 해교제{{en: deflocculant}}(유약물을 더 잘 흐르게 하는 첨가제)를 쓴다고 합니다 | {{SG 1.71}}                                  | 믿을 만한 수치 없음. 스프레이 부스에서만 분무하세요                     |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+덤벙 시유 유약을 눈으로 확인하려면, AMACO는 5초 동안 담근 뒤 미국 다임 동전 두께쯤 되는 유약층이 생겼는지 봅니다. Digitalfire는 5초 담근 시편을 구워서 확인합니다.
 
-### Water for a target SG: our estimate
+### 목표 비중에 맞는 물의 양: 저희의 추정
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+아래 표는 어느 자료의 것이 아니라 저희가 직접 계산한 값입니다. 가루 입자의 밀도를 cm³당 2.6 g으로 가정했으며, 이는 측정값이 아니라 가정입니다. 점토, 수용성 원료, 젤 상태는 모두 실제 유약을 바꾸므로, 시작점으로만 쓰고 그다음에 재세요. 확인 삼아 보면, 가루와 물을 같은 무게로 섞을 때 {{SG 1.44}}로 예측하는데, 이는 Digitalfire가 측정한 {{SG 1.46}}과 가깝습니다. 또한 100 g당 70~80 mL로 시작하면 {{SG 1.50}}보다 높은 값에서 출발하게 되며, 필요한 것보다 걸쭉하다는 것도 보여 줍니다.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: 목표 비중에 맞는 물의 양(저희의 추정)
+Label: 목표 비중에 맞는 물의 양
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| 목표        | 가루 100 g당 | 킬로그램당 |       파운드당 |
+| ----------- | -----------: | ---------: | -------------: |
+| {{SG 1.40}} |    약 115 mL | 약 1150 mL | 약 18 US fl oz |
+| {{SG 1.45}} |     약 98 mL |  약 980 mL | 약 15 US fl oz |
+| {{SG 1.50}} |     약 85 mL |  약 850 mL | 약 13 US fl oz |
+| {{SG 1.60}} |     약 64 mL |  약 640 mL | 약 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### 섞으면서 유약 자체의 마른 비중 구하기
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+위의 2.6은 추측입니다. 사용하는 유약 자체의 수치, 곧 마른 가루의 밀도는 섞는 동안 잴 수 있는 세 가지 숫자로 계산할 수 있습니다. 이 값이 있으면 나중에 그 유약의 어느 통이든 비중으로 가루가 얼마나 들었는지와 다음 배합에 필요한 물을 계산할 수 있습니다. 자료가 아니라 저희의 계산입니다.
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. 배합한 마른 가루의 무게, 곧 레시피의 합계를 적어 두세요.
+2. 시작하기 전에 빈 통의 무게를 재거나, 통에 그 무게를 적어 두세요.
+3. 평소처럼 섞고 체에 거른 뒤 목표 비중으로 맞추세요. 가루가 하나도 빠지지 않도록 모두 체에 통과시키고 헹궈서 통에 넣으세요.
+4. 가득 찬 통의 무게를 재고 통의 무게를 빼세요. 그것이 유약물의 무게입니다.
+5. 비중을 재세요.
 
-Then:
+그다음:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **물** = 유약물 무게 − 가루 무게.
+- **유약물 부피**(mL) = 유약물 무게(그램) ÷ 비중.
+- **가루 부피** = 유약물 부피 − 물(물 1 g은 1 mL).
+- **마른 비중** = 가루 무게 ÷ 가루 부피.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+예: 가루 1000 g으로 {{SG 1.45}}의 유약물 1980 g을 만들었다고 합시다. 물은 980 g, 유약물은 1980 ÷ 1.45 = 약 1366 mL, 가루가 차지하는 부피는 1366 − 980 = 386 mL이고, 마른 비중은 1000 ÷ 386 = 약 2.59입니다.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+물을 부을 때가 아니라 마지막에 유약물 전체의 무게를 재세요. 그래야 증발하거나 튄 물이 계산에 들어가지 않습니다. 여기서는 작은 오차가 커집니다. 비중을 0.01 잘못 읽으면 답이 약 2~4% 달라지고, 묽은 유약일수록 더 달라집니다. 1 kg 이상의 배합, 정확한 저울, 그리고 비중에는 위의 500 g 컵 방법을 쓰세요. 흔한 원료는 대부분 약 2.5에서 2.9 사이이므로, 지르콘이나 납이 많지 않은 유약에서 그 범위를 크게 벗어난 수치가 나오면 아마 측정 실수일 것입니다. 이 수치는 레시피에 적어 두세요.
 
-### Epsom salts, CMC gum and bentonite
+### 황산마그네슘, CMC, 벤토나이트
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**황산마그네슘**(엡섬염)은 유약이 가만히 있으면 살짝 젤처럼 굳고 저으면 다시 흐르게 합니다. 이를 **응집시킨다**{{en: flocculate}}고 하며, 이렇게 움직이는 유약은 **틱소트로피**{{en: thixotropic}}(요변성)가 있는 유약입니다. 이런 유약은 더 고르게 발리고, 덜 흘러내리고, 덜 가라앉습니다. Digitalfire는 비중이 맞은 뒤에 갤런당 약 2 g으로 시작하고(리터당 약 0.5 g, 저희의 환산) 배합할 때마다 양을 조정하라고 제안합니다. 어떤 레시피도 투입량을 고정하지 않는 것이 좋기 때문입니다. 저희는 먼저 소량의 뜨거운 물에 녹이기를 권합니다. Digitalfire의 한 예에서는 {{SG 1.45}}인 유약이 뚝뚝 흘러서 물로 {{SG 1.43}}까지 낮추고 엡섬염으로 다시 크림처럼 젤 상태로 만들었더니 고르게 발렸습니다. 대략 확인하는 방법은 젓고, 멈추고, 지켜보는 것입니다. 젤 상태의 유약은 약 2~3초 동안 계속 움직이다가 멈추고 조금 되튑니다.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC**(카복시메틸셀룰로스) 바인더는 유약물을 더 끈적하고 더디게 마르게 하며, 기물에 달라붙는 더 단단한 유약층을 남깁니다. 붓 시유용 유약과 프릿이 많은 유약에서 특히 중요합니다. Digitalfire의 예는 유약물 1000 g에 3.75 g을 섞는 것이며, 믹서로 넣어야 합니다. CMC가 든 유약은 엡섬염으로 젤 상태가 되지 않으며, 미생물이 이 바인더를 먹고 살기 때문에 통 안에서 변하거나 냄새가 나기 시작할 수 있습니다.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**벤토나이트**는 아주 고운 점토로, 다른 입자가 가라앉지 않고 떠 있도록 도와줍니다. 덤벙 시유 유약은 보통 이를 위해 15~25%의 하소하지 않은 점토에 의지합니다. 점토가 부족한 레시피에는 벤토나이트 약 1~3%가 도움이 됩니다. Digitalfire는 점토가 15%를 넘는 유약에는 마른 유약 무게의 1%를 넘는 벤토나이트가 필요하지 않을 것이라고 합니다.
 
-## Test tiles and line blends {#testing lang=en}
+## 시편과 라인 블렌드 {#testing}
 
-### Start small
+### 작게 시작하기
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au는 세 단계로 규모를 키웁니다. 50 또는 100 g 시험, 잘 되면 1~2 kg 시험 배합, 그다음 5~10 kg 작업실 배합입니다. 저희 추정으로는 {{SG 1.45}}인 100 g 시험에서 유약물 약 135 mL(약 4½ US fl oz)가 나오며, 좁은 컵에 작은 시편 몇 장을 담그기에 충분합니다.
 
-### Test on your own clay
+### 사용하는 점토에서 시험하기
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+유약은 다른 점토나 다른 가마에서 꽤 달라 보일 수 있습니다. Clay Art Center는 다시 배합한 유약마다 소지{{en: clay body}} 네 가지에서, 오튼 콘 6과 콘 10으로 시험했습니다. Potclays의 유약 시험 입문 안내는 다음을 제안합니다.
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 실제로 쓸 점토로 만든 **시편** 6~10장(유약을 시험해 볼 작은 조각). 초벌했는지 완전 건조했는지 적어 두세요
+- 한 번에 하나씩만 바꾸기
+- 얇은 유약층과 두꺼운 유약층을 보도록 한 번 담근 것과 두 번 담근 것
+- 모든 시편을 같은 가마 재임에 넣기
+- 소성하기 전에 각 시편에 도장, 새기기, 언더글레이즈 펜슬로 한 표시. 구운 시편은 서로 비슷해 보이지만, 소성 전에 한 표시는 가마를 거쳐도 남으므로 어느 시편이 어느 레시피인지 언제든 알 수 있습니다.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+저희는 똑바로 서는 시편을 권합니다. 납작한 시편은 유약이 얼마나 흐르는지 알 수 없기 때문입니다. 유약이 가장자리에서 어떻게 색이 변하는지 보여 주는 질감 있는 띠와, 유약을 바르지 않은 굽을 두세요. 각 시편은 흘러내리는 유약을 받도록 작은 접시나 초벌 조각 위에, 또는 내화판 코팅제를 바른 내화판 위에 놓으세요. 시편 가까이에 **확인용 콘**{{en: witness cone}}, 즉 충분히 열을 받으면 휘는 작은 도자 콘을 두어 시편이 받은 열을 확인하세요. 콘에 대해서는 《[기본 가마 소성](/guides/firing)》에서 설명합니다. 시편마다 짧은 코드를 붙이고, 기록의 레시피 옆에 적어 두세요. Ceramic Arts Network에 글을 쓴 Willers는 숫자와 글자를 쓰고, 그 체계 자체를 노트 맨 앞에 적어 둡니다.
 
-### Line blends
+### 라인 블렌드
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**라인 블렌드**{{en: line blend}}는 한 배합에서 다른 배합으로 고르게 단계를 밟아 가는 일련의 시험입니다. 한 유약에서 두 번째 유약으로, 또는 기본 유약에서 발색제를 더 넣은 같은 유약으로 갑니다. 예를 들어 Derek Au는 투명 기본 유약에 산화철을 1%씩 늘려 가며 시험합니다. Ian Currie와 관련된 부피 측정 방식은 양쪽 끝만 섞으면 되므로 시간을 아낄 수 있습니다.
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. 양쪽 끝 유약 A와 B를 같은 크기의 배합으로 섞고, 둘 다 체에 거르세요.
+2. 부피가 더 적은 쪽에 물을 더해 둘의 젖은 부피가 정확히 같아지게 하세요.
+3. 둘 다 저은 뒤, 각 배합을 주사기로 뽑아 번호를 붙인 각자의 컵에 담으세요.
+4. 컵마다 저은 뒤 시편을 담그세요.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+저희가 든 예에서 A는 투명 기본 유약 100 g이고, B는 거기에 적색 산화철 4 g을 더한 것입니다(4% 추가). B의 밀리리터마다 A의 밀리리터와 같은 비율의 기본 유약이 들어 있고 거기에 철이 더해져 있으므로, 컵은 철이 없는 것에서 4%까지 1%씩 올라갑니다. 양쪽 끝은 각각 100 mL를 블렌드에 내놓는데, 저희 추정으로는 100 g 배합이면 충분합니다.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: 다섯 단계 철 라인 블렌드, 컵당 40 mL(저희의 예)
+Label: 라인 블렌드 예
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| 컵  | 투명 기본 유약(A) | 철 4%를 더한 기본 유약(B) | 산화철, 기본 대비 % |
+| --- | ----------------: | ------------------------: | ------------------: |
+| 1   |             40 mL |                      0 mL |                   0 |
+| 2   |             30 mL |                     10 mL |                   1 |
+| 3   |             20 mL |                     20 mL |                   2 |
+| 4   |             10 mL |                     30 mL |                   3 |
+| 5   |              0 mL |                     40 mL |                   4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+이 방법에는 꼼꼼한 계산, 비중이 고르고 잘 섞인 양쪽 끝, 정확한 저울이 필요합니다. Derek Au는 부피 대신 무게로도 블렌드합니다. **삼각 배합 시험**(삼성분계)은 삼각형 위에 배치한 세 끝으로 같은 일을 합니다.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> 가능성이 보이는 단계가 있으면 [레시피 페이지](/recipe)의 **사본으로 저장**이 그 단계를 별도의 레시피로 보관하고 원본은 그대로 둡니다.
+
+## 기록 남기기 {#records}
+
+Willers는 목표를 잘 짚어 말합니다. “찾아낸 결과를 반복하거나 피할 수 있을 만큼 충분한 정보”입니다. 시작하기 전에 시험할 계획을 적고, 가마에서 꺼낼 때 결과를 적으세요. Potclays는 여기에 시유 방법, 두께, 소지, 그리고 램프, 유지, 냉각을 포함한 소성 전체를 더합니다. **램프**{{en: ramp}}는 시간당 {{60 °C; 108 °F}}처럼 가열이나 냉각의 속도이고, **유지**{{en: hold}}는 가마를 정해진 시간 동안 한 온도로 유지하는 것입니다. 로트 번호, 사용한 물, 대체한 원료를 적어 두세요. Clay Art Center는 장석을 바꾸면서 유약의 약 절반을 조정해야 했습니다.
+
+Table: 유약 배합마다 기록할 것(저희의 양식)
+Label: 기록 양식
+
+| 항목   | 적을 것                                                                                                                                                                                                       |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 레시피 | 레시피와 그 버전, 원료의 상표와 로트 번호, 대체한 원료                                                                                                                                                        |
+| 섞기   | 날짜, 배합량, 넣은 물의 양과 종류(수돗물, 역삼투 방식으로 거른 물 또는 증류수), 섞은 직후의 비중과 최종 비중, 마른 비중을 구하기 위한 완성된 유약물의 무게, 넣은 엡섬염·CMC·벤토나이트, 체의 메시와 거른 횟수 |
+| 시유   | 소지, 초벌 소성 콘, 덤벙·붓·부어 시유 중 쓴 방법, 담근 시간 또는 시유 횟수, 건조 두께                                                                                                                         |
+| 소성   | 가마와 내화판 위치, 램프·유지·냉각을 포함한 소성 스케줄, 분위기(산화 소성 또는 환원 소성), 확인용 콘이 보여 준 것(가마를 어떻게 설정했는지만이 아니라)                                                        |
+| 결과   | 표면과 색, 유약 흐름·빙렬·핀홀이 있었는지, 앞면·뒷면·옆면 사진, 시편 코드                                                                                                                                     |
+
+> [!NOTE]
+> Glazecalc에서 저장한 [레시피](/recipe)에는 레시피 자체가 들어갑니다. [소성 기록](/firing)은 가마, 날짜, 시간, 온도, 콘, 메모 등 소성마다 기록합니다. [노트](/notes)에는 위의 배합 기록이나 시편마다 나타난 결과처럼 나머지 모든 것을 적습니다.
 
 ## 출처 {#sources}
 
