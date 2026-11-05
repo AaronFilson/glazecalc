@@ -140,13 +140,17 @@ describe('famous glazes: the pages', () => {
     const map = sitemap(SITE, ['en', 'de'], ['en'], {});
     for (const page of FAMOUS_GLAZE_PAGES) {
       expect(map, page).to.include(`<loc>${SITE}${page}</loc>`);
-      // No famous/de.json yet: the German copy is for readers, its one address for search engines the English.
-      expect(map, page).not.to.include(`<loc>${SITE}/de${page}</loc>`);
+      // German is translated (famous/de.json and the glaze's own text, its name included): its own address.
+      expect(map, page).to.include(`<loc>${SITE}/de${page}</loc>`);
       const german = pageHtml(HTML, '/de' + page, SITE, {}, ['en', 'de']);
-      expect(german, page).to.include(`<link rel="canonical" href="${SITE}${page}" />`);
-      expect(german, page).to.include('<meta name="robots" content="noindex" />');
+      expect(german, page).to.include(`<link rel="canonical" href="${SITE}/de${page}" />`);
+      expect(german, page).not.to.include('<meta name="robots" content="noindex" />');
       expect(prerenderedKey('/de' + page, ['en', 'de']), page).to.equal('de' + page + '.html');
     }
+    // A glaze whose text lacks a language (here its name) is not translated in it, so stays out of that index.
+    const [glaze] = famous.publishedGlazes(famous.loadGlazes());
+    expect(famous.glazeTranslatedIn(glaze, 'de')).to.equal(true);
+    expect(famous.glazeTranslatedIn({ ...glaze, names: { en: glaze.names.en } }, 'de')).to.equal(false);
   });
 
   it('offers a page in a language once the scope and the glaze are translated there', () => {

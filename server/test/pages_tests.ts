@@ -21,7 +21,13 @@ import {
   sitemapIndex,
   withNonce
 } from '../lib/pages.ts';
-import { FAMOUS_GLAZE_PAGES, PARTLY_TRANSLATED_PAGES, englishOnlyIn, materialTranslatedIn } from '../../lib/pages.js';
+import {
+  FAMOUS_GLAZE_PAGES,
+  PARTLY_TRANSLATED_PAGES,
+  englishOnlyIn,
+  famousTranslatedIn,
+  materialTranslatedIn
+} from '../../lib/pages.js';
 import languages from '../../lib/regions/languages.js';
 import { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
@@ -522,10 +528,10 @@ describe('pages in each language', () => {
     // Each public page once in each of the two languages, and a page in English only once, as a
     // reference page is while German is not among the languages it is translated into.
     // A guide translated into some languages only, none of them German, is listed in English alone too;
-    // so is a famous glaze's page while its scope (famous/de.json) is not translated.
+    // so is a famous glaze's page in a language its text is not translated into (German's is).
     const partly = Object.values(PARTLY_TRANSLATED_PAGES).filter((codes) => !codes.includes('de')).length;
-    const once =
-      ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length + partly + FAMOUS_GLAZE_PAGES.length;
+    const famousOnce = FAMOUS_GLAZE_PAGES.filter((page) => !famousTranslatedIn(page, 'de')).length;
+    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length + partly + famousOnce;
     expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - once) * 2 + once);
   });
 
