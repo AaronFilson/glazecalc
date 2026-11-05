@@ -9,6 +9,7 @@
     "homeSafety": "Kada ka sa wa iyalinka guba - Glazecalc",
     "firing": "Gasa a cikin kiln mai sauƙi - Glazecalc",
     "learnWithJohnBritt": "Koyi da kwas ɗin glaze na kyauta na John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Koyar da lissafin glaze - Glazecalc",
     "about": "Game da Glazecalc - Glazecalc",
     "privacy": "Sirri - Glazecalc",
     "terms": "Sharuɗɗan amfani - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Amince da canji - Glazecalc",
     "cones": "Jadawalin cone: zafin cone na Orton da SK - Glazecalc",
     "materials": "Kayan glaze na yau da kullum: sinadarai da haɗari - Glazecalc",
-    "materialInfo": "{name}: sinadaran oxide da haɗari - Glazecalc"
+    "materialInfo": "{name}: sinadaran oxide da haɗari - Glazecalc",
+    "famousGlazes": "Shahararrun glaze - Glazecalc",
+    "famousGlaze": "Glaze ɗin {name} - Glazecalc"
   },
   "nav": {
     "skip": "Tsallaka zuwa abin da ke ciki",
@@ -177,6 +180,7 @@
     "homeSafety": "Abin da za a yi idan yaro ko dabba ya haɗiye kayan glaze, da yadda za a kiyaye kaya, ƙura, kiln da tukwanen hannu lafiya kusa da iyalinku.",
     "firing": "Yadda ake gasa a kiln na lantarki: zaɓi, sanya da karanta cone, da bin tsare-tsaren gasa na bisque da glaze, tare da jadawalin cone.",
     "learnWithJohnBritt": "Abokin kwas ɗin glaze na kyauta na John Britt a intanet: bidiyoyinsa naúra bayan naúra, tare da jagororin Glazecalc da atisaye a cikin lissafin.",
+    "teachingGlazeCalculation": "Zaman karatu 6 don koyar da UMF (unity molecular formula, tsarin Seger): kayan aiki da tayil na triaxial, mole, daga tsarin glaze zuwa formula da komawa, da lahanin glaze, tare da misalai da aka warware da takardun aiki don bugawa.",
     "advice": "Shawarwari masu amfani kan haɗawa, shafa glaze da gasa, daga Glazecalc, da naku shawarwarin. Kyauta ga maginan tukwane.",
     "about": "Glazecalc lissafi ne da littafin sinadaran glaze, kyauta kuma buɗaɗɗen tushe. Ga yadda yake lissafin UMF da yadda aka gina shi.",
     "privacy": "Yadda Glazecalc ke sarrafa bayananku: babu talla, babu bincike, babu bin diddigi, ba a sayar da komai. Abin da ake ajiyewa, dalili, da haƙƙoƙinku.",
@@ -187,6 +191,8 @@
     "materials": "Kayan da ke cikin laburaren Glazecalc, daga feldspar da yumɓu zuwa frit da tushen boron, kowanne da sinadaran oxide, UMF da haɗarinsa.",
     "materialInfo": "{name}: sinadaran oxide, UMF, LOI da haɗari a cikin laburaren Glazecalc.",
     "materialInfoLong": "{name} a cikin laburaren kayan glaze na Glazecalc: sinadaran oxide ɗinsa, gudummawarsa ga UMF, LOI da haɗari.",
+    "famousGlazes": "Shahararrun glaze daga ko'ina a duniya: tsarin gargajiya ko nazarin tarihi na kowane glaze, UMF ɗinsa, da sigar da aka yi da kayan da ake sayarwa inda kuke.",
+    "famousGlaze": "Glaze ɗin {name} ({native}): tsarinsa na gargajiya ko nazarin tarihi, gasa, UMF da majiyoyi, da sigar da aka yi da kayan da ake sayarwa inda kuke.",
     "imageAlt": "Tambarin Glazecalc da takensa, sinadaran glaze kyauta don maginan tukwane, kusa da hoton cone da aka gasa."
   },
   "notices": {
