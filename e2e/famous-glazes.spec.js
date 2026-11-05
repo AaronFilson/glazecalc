@@ -26,16 +26,28 @@ test.describe('famous glazes', () => {
 
   test('the index lists the published glazes', async ({ page }) => {
     expect((await page.goto('/famous-glazes')).status()).toBe(200);
-    await expect(page.locator('.famous-list a')).toHaveText(['İznik']);
+    await expect(page.locator('.famous-list a')).toHaveText(['İznik', 'Oribe', 'Shino']);
   });
 
-  test('an unpublished glaze, the fixture and an unknown slug are not found', async ({ request }) => {
-    for (const address of ['/famous-glazes/shino', '/famous-glazes/fixture-celadon', '/de/famous-glazes/nope']) {
+  test('Shino and Oribe have pages with their traditional recipes, marked not yet test-fired', async ({ page }) => {
+    const response = await page.goto('/famous-glazes/shino');
+    expect(response.status()).toBe(200);
+    await expect(page.locator('h1')).toHaveText('Shino');
+    await expect(page.locator('#famous-recipe')).toBeVisible();
+    await expect(page.locator('body')).toContainText('Kamado Feldspar');
+    await expect(page.locator('#famous-untested')).toContainText('Calculated, not yet test-fired.');
+    expect((await page.goto('/famous-glazes/oribe')).status()).toBe(200);
+    await expect(page.locator('body')).toContainText('1230–1280 °C');
+    await expect(page.locator('body')).toContainText('Copper oxide');
+  });
+
+  test('the fixture and an unknown slug are not found', async ({ request }) => {
+    for (const address of ['/famous-glazes/nope', '/famous-glazes/fixture-celadon', '/de/famous-glazes/nope']) {
       expect((await request.get(address)).status(), address).toBe(404);
     }
     const map = await (await request.get('/sitemaps/en.xml')).text();
     expect(map).toContain('/famous-glazes/iznik</loc>');
-    expect(map).not.toContain('/famous-glazes/shino');
+    expect(map).toContain('/famous-glazes/shino</loc>');
   });
 
   test("the fixture's page renders from the published file, and opens its recipe", async ({ page }) => {

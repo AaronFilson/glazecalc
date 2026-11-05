@@ -180,6 +180,11 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
         }
       } @else {
         <p>{{ t('famous.local.intro') }}</p>
+        @if (glaze().recipe?.tested === false) {
+          <p class="guide-warning" role="note" id="famous-untested">
+            <strong>{{ t('famous.local.untested') }}</strong> {{ t('famous.local.testFirst') }}
+          </p>
+        }
       }
       <label class="form-label" for="famous-region">{{ t('famous.local.region') }}</label>
       <select
