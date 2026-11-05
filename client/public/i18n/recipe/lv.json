@@ -752,19 +752,6 @@
       "pint": "Vēlamā pintes masa, oz"
     },
     "drySg": "Sauso izejvielu rel. blīvums",
-    "batch": "Sausa glazūra jaunai porcijai, {unit}",
-    "contents": "Pie rel. blīvuma {sg} spainī ir {glaze} sausas glazūras un {water} ūdens.",
-    "add": "Lai sasniegtu rel. blīvumu {target}, pievienojiet {water} ūdens. Galā būs aptuveni {volume}.",
-    "pourOff": "Lai sasniegtu rel. blīvumu {target}, ļaujiet nosēsties un nolejiet {water} dzidra ūdens. Galā būs aptuveni {volume}.",
-    "already": "Tā rel. blīvums jau ir {target}.",
-    "mix": "Sajauciet {glaze} sausas glazūras ar {water} ūdens, lai iegūtu aptuveni {volume} ar rel. blīvumu {target}.",
-    "badSg": "Relatīvajam blīvumam jābūt lielākam par 1 (ūdens) un mazākam par sauso izejvielu {dry}.",
-    "badDry": "Sauso izejvielu relatīvajam blīvumam jābūt lielākam par 1.",
-    "note": "Ūdens tiek skaitīts pēc masas: litrs sver kilogramu, ASV galons – aptuveni 8,3 lb. Aprēķins saskaita tilpumus, kas ir tuvu, bet ne precīzi: pievienojiet ūdeni pamazām, maisiet un mērījiet vēlreiz. Divas glazūras ar vienādu relatīvo blīvumu tomēr var tecēt atšķirīgi.",
-    "saveTarget": "Saglabāt rel. blīvumu {sg} kā šīs receptes mērķi",
-    "targetSaved": "Rel. blīvums {sg} ir šīs receptes mērķis. Tas tiek saglabāts kopā ar recepti, kad to saglabājat.",
-    "targetKept": "Receptes mērķis ir rel. blīvums {sg}.",
-    "clearTarget": "Notīrīt mērķi",
     "drySgEmpty": "Tas vajadzīgs tikai sausajiem daudzumiem, pievienojamajam ūdenim ne. Ievadiet to, ja to zināt.",
     "drySgNeeded": "Ievadiet sauso izejvielu rel. blīvumu, lai redzētu sauso glazūru spainī un ūdeni jaunai porcijai.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Šai receptei aplēses nav: nav zināms rel. blīvums šīm izejvielām: {names}. Ievadiet to, ja to zināt.",
       "was": "Tiek izmantots jūsu skaitlis. Aplēse bija {sg}; notīriet lauku, lai atgrieztos pie tās."
     },
-    "badSgWater": "Relatīvajam blīvumam jābūt lielākam par 1 (ūdens)."
+    "batch": "Sausa glazūra jaunai porcijai, {unit}",
+    "contents": "Pie rel. blīvuma {sg} spainī ir {glaze} sausas glazūras un {water} ūdens.",
+    "add": "Lai sasniegtu rel. blīvumu {target}, pievienojiet {water} ūdens. Galā būs aptuveni {volume}.",
+    "pourOff": "Lai sasniegtu rel. blīvumu {target}, ļaujiet nosēsties un nolejiet {water} dzidra ūdens. Galā būs aptuveni {volume}.",
+    "already": "Tā rel. blīvums jau ir {target}.",
+    "mix": "Sajauciet {glaze} sausas glazūras ar {water} ūdens, lai iegūtu aptuveni {volume} ar rel. blīvumu {target}.",
+    "badSg": "Relatīvajam blīvumam jābūt lielākam par 1 (ūdens) un mazākam par sauso izejvielu {dry}.",
+    "badSgWater": "Relatīvajam blīvumam jābūt lielākam par 1 (ūdens).",
+    "badDry": "Sauso izejvielu relatīvajam blīvumam jābūt lielākam par 1.",
+    "note": "Ūdens tiek skaitīts pēc masas: litrs sver kilogramu, ASV galons – aptuveni 8,3 lb. Aprēķins saskaita tilpumus, kas ir tuvu, bet ne precīzi: pievienojiet ūdeni pamazām, maisiet un mērījiet vēlreiz. Divas glazūras ar vienādu relatīvo blīvumu tomēr var tecēt atšķirīgi.",
+    "saveTarget": "Saglabāt rel. blīvumu {sg} kā šīs receptes mērķi",
+    "targetSaved": "Rel. blīvums {sg} ir šīs receptes mērķis. Tas tiek saglabāts kopā ar recepti, kad to saglabājat.",
+    "targetKept": "Receptes mērķis ir rel. blīvums {sg}.",
+    "clearTarget": "Notīrīt mērķi"
   },
   "import": {
     "title": "Recepšu ielīmēšana",

@@ -752,19 +752,6 @@
       "pint": "Soovitud pindi kaal, untsi"
     },
     "drySg": "Kuivade toorainete suhteline tihedus",
-    "batch": "Kuiv glasuur uue segu jaoks, {unit}",
-    "contents": "Suhtelise tiheduse {sg} juures sisaldab ämber {glaze} kuiva glasuuri ja {water} vett.",
-    "add": "Suhtelise tiheduse {target} saavutamiseks lisage {water} vett. Lõpuks on seda umbes {volume}.",
-    "pourOff": "Suhtelise tiheduse {target} saavutamiseks laske settida ja valage ära {water} selget vett. Lõpuks on seda umbes {volume}.",
-    "already": "Suhteline tihedus on juba {target}.",
-    "mix": "Segage {glaze} kuiva glasuuri ja {water} vett, et saada umbes {volume} suhtelise tihedusega {target}.",
-    "badSg": "Suhteline tihedus peab olema suurem kui 1 (vee oma) ja väiksem kui kuivade toorainete {dry}.",
-    "badDry": "Kuivade toorainete suhteline tihedus peab olema suurem kui 1.",
-    "note": "Vesi on massi järgi: liiter kaalub kilogrammi, USA gallon umbes 8,3 lb. Arvutus eeldab, et ruumalad liituvad, mis on lähedal, kuid mitte täpne: lisage vett vähehaaval, segage ja mõõtke uuesti. Kaks sama suhtelise tihedusega glasuuri võivad siiski erinevalt voolata.",
-    "saveTarget": "Salvesta suhteline tihedus {sg} selle retsepti sihtväärtuseks",
-    "targetSaved": "Suhteline tihedus {sg} on selle retsepti sihtväärtus. See säilitatakse retseptiga, kui salvestate.",
-    "targetKept": "Retsepti sihtväärtus on suhteline tihedus {sg}.",
-    "clearTarget": "Eemalda sihtväärtus",
     "drySgEmpty": "Seda on vaja ainult kuivade masside jaoks, lisatava vee jaoks mitte. Sisestage see, kui teate.",
     "drySgNeeded": "Sisestage kuivade toorainete suhteline tihedus, et näha kuiva glasuuri hulka ämbris ja vett uue segu jaoks.",
     "estimate": {
@@ -776,7 +763,20 @@
       "none": "Selle retsepti kohta hinnangut pole: toorainete {names} suhteline tihedus ei ole teada. Sisestage see, kui teate.",
       "was": "Kasutatakse teie arvu. Hinnang oli {sg}; selle juurde naasmiseks tühjendage väli."
     },
-    "badSgWater": "Suhteline tihedus peab olema suurem kui 1 (vee oma)."
+    "batch": "Kuiv glasuur uue segu jaoks, {unit}",
+    "contents": "Suhtelise tiheduse {sg} juures sisaldab ämber {glaze} kuiva glasuuri ja {water} vett.",
+    "add": "Suhtelise tiheduse {target} saavutamiseks lisage {water} vett. Lõpuks on seda umbes {volume}.",
+    "pourOff": "Suhtelise tiheduse {target} saavutamiseks laske settida ja valage ära {water} selget vett. Lõpuks on seda umbes {volume}.",
+    "already": "Suhteline tihedus on juba {target}.",
+    "mix": "Segage {glaze} kuiva glasuuri ja {water} vett, et saada umbes {volume} suhtelise tihedusega {target}.",
+    "badSg": "Suhteline tihedus peab olema suurem kui 1 (vee oma) ja väiksem kui kuivade toorainete {dry}.",
+    "badSgWater": "Suhteline tihedus peab olema suurem kui 1 (vee oma).",
+    "badDry": "Kuivade toorainete suhteline tihedus peab olema suurem kui 1.",
+    "note": "Vesi on massi järgi: liiter kaalub kilogrammi, USA gallon umbes 8,3 lb. Arvutus eeldab, et ruumalad liituvad, mis on lähedal, kuid mitte täpne: lisage vett vähehaaval, segage ja mõõtke uuesti. Kaks sama suhtelise tihedusega glasuuri võivad siiski erinevalt voolata.",
+    "saveTarget": "Salvesta suhteline tihedus {sg} selle retsepti sihtväärtuseks",
+    "targetSaved": "Suhteline tihedus {sg} on selle retsepti sihtväärtus. See säilitatakse retseptiga, kui salvestate.",
+    "targetKept": "Retsepti sihtväärtus on suhteline tihedus {sg}.",
+    "clearTarget": "Eemalda sihtväärtus"
   },
   "import": {
     "title": "Retseptide kleepimine",
