@@ -723,7 +723,8 @@
     "keyPoint": "Ntụpọ: glaze a.",
     "keyBright": "Ahịrị ntụpọ ntụpọ: ebe glaze Stull kacha egbuke egbuke.",
     "keyLimits": "Ahịrị nkewa na ndò: oke silica na alumina nke {name}.",
-    "keyCrazed": "Ahịrị gafere agafe: ebe ha nwere crazing."
+    "keyCrazed": "Ahịrị gafere agafe: ebe ha nwere crazing.",
+    "note": "Ọ bụ ntụzịaka, ọ bụghị amụma. R. T. Stull (Transactions of the American Ceramic Society, 1912) gbara ọkụ n'ihe dị ka cone 11 ya na flux edobere na 0.3 K₂O na 0.7 CaO; flux ndị ọzọ na ịgba ọkụ ndị ọzọ na-akwaga mpaghara ndị ahụ, na glaze anaghị egbuke (matte) naanị n'ihi na a gbaghị ya ọkụ nke ọma ka nwere ike ịpụta dị ka nke na-egbuke na chaatị ahụ. Mpaghara ndị ahụ dị ka Glazy si ese ha."
   },
   "slurry": {
     "heading": "Specific gravity na mmiri",
@@ -751,6 +752,17 @@
       "pint": "Ịdị arọ pint ị chọrọ, oz"
     },
     "drySg": "SG nke ihe kpọrọ nkụ",
+    "drySgEmpty": "Naanị ịdị arọ akọrọ chọrọ ya; mmiri a ga-agbakwunye achọghị ya. Dee ya ma ọ bụrụ na ị maara ya.",
+    "drySgNeeded": "Dee SG nke ihe akọrọ ka ị hụ glaze akọrọ dị n'ime bọket na mmiri maka batch ọhụrụ.",
+    "estimate": {
+      "mineral": "Atụmatụ, {sg}, site n'ihe e ji mee ihe ọ bụla: njupụta a tụrụ atụ nke mineral ya. Gbanwee ya ma ọ bụrụ na ị ma nke ka mma.",
+      "kind": "Atụmatụ, {sg}: feldspar na ụrọ dị arọ ihe dị ka 2.6. Gbanwee ya ma ọ bụrụ na ị ma nke ka mma.",
+      "glass": "Atụmatụ, {sg}, a gụpụtara site na oxide nke frit (ha bụ iko). Gbanwee ya ma ọ bụrụ na ị ma nke ka mma.",
+      "mixed": "Atụmatụ, {sg}, site n'ihe ọ bụla: njupụta a tụrụ atụ nke mineral ya, ihe dị ka 2.6 maka feldspar na ụrọ, na frit a gụpụtara site na oxide ha. Gbanwee ya ma ọ bụrụ na ị ma nke ka mma.",
+      "leftOut": "A hapụrụ ha, n'ihi na a maghị SG ha: {names}.",
+      "none": "Enweghị atụmatụ maka usoro a: a maghị SG nke ndị a: {names}. Dee ya ma ọ bụrụ na ị maara ya.",
+      "was": "A na-eji ọnụ ọgụgụ gị. Atụmatụ ahụ bụ {sg}; hichapụ ebe ahụ ka ị laghachi na ya."
+    },
     "batch": "Glaze kpọrọ nkụ maka batch ọhụrụ, {unit}",
     "contents": "Na SG {sg}, bọket ahụ jidere {glaze} nke glaze kpọrọ nkụ na {water} nke mmiri.",
     "add": "Iji ruo SG {target}, tinye {water} nke mmiri. Ọ ga-akwụsị n'ihe dị ka {volume}.",
@@ -758,6 +770,7 @@
     "already": "Ọ nọlarị na SG {target}.",
     "mix": "Gwakọta {glaze} nke glaze kpọrọ nkụ na {water} nke mmiri maka ihe dị ka {volume} na SG {target}.",
     "badSg": "SG ga-akarịrị 1 (nke mmiri) ma erughị {dry} nke ihe kpọrọ nkụ.",
+    "badSgWater": "SG ga-akarịrị 1 (nke mmiri).",
     "badDry": "SG nke ihe kpọrọ nkụ ga-akarịrị 1.",
     "note": "Mmiri ahụ bụ site n'ịdị arọ: otu lita dị arọ otu kilogram, otu galọn US ihe dị ka 8.3 lb. Mgbakọ ahụ na-ewere na olu na-ejikọta, nke dị nso, ọ bụghị kpọmkwem: tinye mmiri ntakịrị ntakịrị, kwoo, ma tụọ ọzọ. Glaze abụọ nọ n'otu SG ka nwere ike ịsọ iche.",
     "saveTarget": "Chekwaa SG {sg} dịka ebumnuche usoro a",

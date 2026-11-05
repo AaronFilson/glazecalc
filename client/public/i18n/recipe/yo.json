@@ -723,7 +723,8 @@
     "keyPoint": "Àmì: glaze yìí.",
     "keyBright": "Ìlà oníàmì: ibi tí àwọn glaze Stull ti mọ́lẹ̀ jù lọ.",
     "keyLimits": "Ìlà oníjá àti òjìji: ìbú silica àti alumina ti {name}.",
-    "keyCrazed": "Ìlà agbelébùú: ibi tí wọ́n ti ní crazing."
+    "keyCrazed": "Ìlà agbelébùú: ibi tí wọ́n ti ní crazing.",
+    "note": "Ìtọ́sọ́nà ni, kì í ṣe àsọtẹ́lẹ̀. R. T. Stull (Transactions of the American Ceramic Society, 1912) sun ní nǹkan bí cone 11 pẹ̀lú flux tí a fi sí 0.3 K₂O àti 0.7 CaO; flux mìíràn àti ìsun mìíràn ń sún àwọn agbègbè náà, glaze tí kò dán (matte) nítorí pé a kò sun ún tó nìkan sì lè hàn bí èyí tí ó dán lórí àtẹ náà. Àwọn agbègbè náà rí bí Glazy ṣe yà wọ́n."
   },
   "slurry": {
     "heading": "Specific gravity àti omi",
@@ -751,6 +752,17 @@
       "pint": "Ìwúwo pint tí ẹ fẹ́, oz"
     },
     "drySg": "SG àwọn ohun èlò gbígbẹ",
+    "drySgEmpty": "Ìwúwo gbígbẹ nìkan ló nílò rẹ̀; omi tí a ó fi kún un kò nílò rẹ̀. Ẹ tẹ̀ ẹ́ bí ẹ bá mọ̀ ọ́n.",
+    "drySgNeeded": "Ẹ tẹ SG ohun èlò gbígbẹ kí ẹ lè rí glaze gbígbẹ inú garawa àti omi fún batch tuntun.",
+    "estimate": {
+      "mineral": "Ìfojúdíwọ̀n kan, {sg}, láti inú ohun tí a fi ṣe ohun èlò kọ̀ọ̀kan: ìwọ̀n ìkìmọ́lẹ̀ tí a wọ̀n fún òkúta rẹ̀. Ẹ yí i padà bí ẹ bá mọ̀ dáadáa.",
+      "kind": "Ìfojúdíwọ̀n kan, {sg}: feldspar àti amọ̀ wúwo tó nǹkan bí 2.6. Ẹ yí i padà bí ẹ bá mọ̀ dáadáa.",
+      "glass": "Ìfojúdíwọ̀n kan, {sg}, tí a ṣírò láti inú oxide àwọn frit (gíláàsì ni wọ́n). Ẹ yí i padà bí ẹ bá mọ̀ dáadáa.",
+      "mixed": "Ìfojúdíwọ̀n kan, {sg}, láti inú ohun èlò kọ̀ọ̀kan: ìwọ̀n ìkìmọ́lẹ̀ tí a wọ̀n fún òkúta rẹ̀, nǹkan bí 2.6 fún feldspar àti amọ̀, àti frit tí a ṣírò láti inú oxide wọn. Ẹ yí i padà bí ẹ bá mọ̀ dáadáa.",
+      "leftOut": "A fi wọ́n sílẹ̀, nítorí a kò mọ SG wọn: {names}.",
+      "none": "Kò sí ìfojúdíwọ̀n fún ìlànà yìí: a kò mọ SG àwọn wọ̀nyí: {names}. Ẹ tẹ̀ ẹ́ bí ẹ bá mọ̀ ọ́n.",
+      "was": "Iye tiyín ni a ń lò. Ìfojúdíwọ̀n náà jẹ́ {sg}; ẹ pa àyè náà rẹ́ láti padà sí i."
+    },
     "batch": "Glaze gbígbẹ fún batch tuntun, {unit}",
     "contents": "Ní SG {sg}, garawa náà gba {glaze} glaze gbígbẹ àti {water} omi.",
     "add": "Láti dé SG {target}, ẹ fi {water} omi kún un. Yóò parí sí nǹkan bí {volume}.",
@@ -758,6 +770,7 @@
     "already": "Ó ti wà ní SG {target} tẹ́lẹ̀.",
     "mix": "Ẹ po {glaze} glaze gbígbẹ pẹ̀lú {water} omi fún nǹkan bí {volume} ní SG {target}.",
     "badSg": "SG gbọ́dọ̀ ju 1 lọ (ti omi), kí ó sì kéré ju {dry} ti àwọn ohun èlò gbígbẹ lọ.",
+    "badSgWater": "SG gbọ́dọ̀ ju 1 lọ (ti omi).",
     "badDry": "SG àwọn ohun èlò gbígbẹ gbọ́dọ̀ ju 1 lọ.",
     "note": "Omi náà jẹ́ nípa ìwúwo: lítà kan wúwo tó kìlógíráàmù kan, gálọ́ọ̀nù US kan nǹkan bí 8.3 lb. Ìṣirò náà gbà pé àwọn ìwọ̀n àyè máa ń ròpọ̀, èyí tí ó sún mọ́, kì í ṣe gangan: ẹ fi omi kún un díẹ̀díẹ̀, ẹ rú u, kí ẹ sì tún wọ̀n ọ́n. Glaze méjì ní SG kan náà ṣì lè ṣàn yàtọ̀ síra.",
     "saveTarget": "Fi SG {sg} pamọ́ bí àfojúsùn ìlànà yìí",

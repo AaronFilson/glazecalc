@@ -458,73 +458,73 @@ L&L, Bartlett controladorkunaqa cono 04-paq {{1926 °F; 1052 °C}}-ta, cono 06-p
 
 Makiwan hornoqa kikin yuyaytam makiwan qatin: tapa huk chikan kicharisqawan qhawana t'uqukuna kicharisqawan allillamanta ch'akichiy, interruptorkunata Bajo-manta Medio-man Alto-man wichachiy, sittertaq ruphachiyta tukuchichun. Qillqasqa ruwaykunaqa uraypi "Makiwan hornokuna sut'inchasqa" nisqapim kachkan.
 
-## Glaze firing {#glaze lang=en}
+## Esmalte ruphachiy {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Esmalte ruphachiyqa esmaltetam bizcocho hawanpi chullunchispa vidrioman tukuchin. Qhatupi kaq aswan achka pisi ruphay esmaltekunaqa cono 06 utaq 05-paqmi rurasqa (pisi ruphay t'aqaqa cono 06–04-mi), aswan achka chawpi ruphay esmaltekunataq cono 5–6-paq. Esmalteykip mituykip etiquetanpi kaq cono-kama ruphachiy, chay yupaypa muyuriqninpi cono pack churasqawan. Esmalte chulluchkaptin ukhunpi imachus kasqanta yachanaykipaq, qhaway [Esmalte yachaypa qallariynin](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Esmalte ruphachiypaq hornoman churay
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Esmalteyuq mankakunaqa manam tupanakunanchu nitaq perqakunata llamina: yaqa ½ pulgada (13 mm) saqiy.
+- Esmalteta chakinmanta karunchay (**dry-footing**), utaq pisi ruphay mankakunata **stilts** hawapi churay, ch'aki puntayuq huch'uy sayachiqkuna. Gres porcelanapas manam stilts hawapi sayanankuchu, chay ruphaypi ukhunkuman yaykunku; chaypa rantinqa hatun ruphaypaq kiln wash utaq sílice aqutam churay.
+- Tablakunap patanmanta perqakama utaq kiln sitter-kama pisimanta pisi 1 pulgada (25 mm) saqiy.
 
-### Controller schedules
+### Controllerpa ruphachiy kamachiynin
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L, Bartlettpa ñawpaqmanta allichasqa esmalte kamachiyninkuna
+Label: Allichasqa esmalte kamachiykuna
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| T'aqa                          |                                    Kaykama wichay |             Slow Glaze |                  Fast Glaze |
+| ------------------------------ | ------------------------------------------------: | ---------------------: | --------------------------: |
+| 1                              |                                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} | Manam sapan purichiy kanchu |
+| 2                              | Aswan hanaq ruphaymanta {{250 °F; 139 °C}} uraypi | {{400 °F/h; 222 °C/h}} |      {{570 °F/h; 317 °C/h}} |
+| 3                              |                                Aswan hanaq ruphay |  {{120 °F/h; 67 °C/h}} |      {{200 °F/h; 111 °C/h}} |
+| Q'uñichiy pacha, ch'usaq horno |                                                   |       Yaqa 6½–7½ horas |              Yaqa 3–4 horas |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Maypi 2, 3 t'aqakuna tukukun, cono-hina (L&L, Bartlett)
+Label: Kamachiypa maskasqan
 
-| Cone |       Segment 2 ends |                 Peak |
+| Cono |      2 t'aqa tukukun |   Aswan hanaq ruphay |
 | ---- | -------------------: | -------------------: |
 | 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
 | 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
 | 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze-mi aswan mana manchakuy akllana, L&L utqaylla ruphachiymanta willasqanrayku. Aswan hanaq ruphaypi 5–10 minutomanta aswan suyayta (hold) yapanki chayqa, L&L ninmi maskasqa ruphayta utaq cono offset-ta pisiyachinaykita tupananpaq, hinallataq nin: "Hatun ruphaypi suyayqa elementokunap thermocouplepa usukuyninta utqaychin."
 
-### Cone 6: drop-and-hold
+### Cono 6: urayachiy, suyay
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Chawpi ruphay esmaltekunaqa wakin kuti **pinholes** (uyanpi ancha huch'uy t'uqukuna) utaq phuqchukunawan lluqsimunku, chullusqa esmaltemanta lluqsiq gasmi saqin. **Urayachiy suyay** (drop-and-hold) kamachiyqa hanaqkama ruphachin, utqaylla yaqa {{100 °F; 56 °C}} chiriyachin, chaypitaq suyan. Digitalfirep simintapi, "100°F urayachiy suyaypas chullusqaman phuqchukunata t'uqyachinanpaq sinchi kayta qun, hampikunankupaq saqichkaspa."
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, cono 6 urayachiy suyay
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Purichiy |                              Utqay |             Maskasqa | Suyay                                                     |
+| -------- | ---------------------------------: | -------------------: | --------------------------------------------------------- |
+| 1        |              {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutos                                                |
+| 2        |             {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Munaspaqa 30 minutos, phuqchu phuyukunata ch'uyanchanapaq |
+| 3        |              {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutos; hatun hornokunapi aswan                       |
+| 4        | {{900 °F/h; 500 °C/h}}-wan uraykuy | {{2100 °F; 1148 °C}} | 30 minutos                                                |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS yaqa 9 horas 36 minutosta hap'in. Aswan puriq esmaltekunapaqqa Digitalfire yaqa {{200 °F; 111 °C}} urayachin; ancha urayachiyqa "suyaypi cristalkuna rikhurinanpaq manchakuytam churan". Hanaq ruphaynin {{2200 °F; 1204 °C}} cono 6-paq gráficop {{2232 °F; 1222 °C}}-nmanta uraypim; Digitalfire willan aswan achka hornokunaqa yaqa {{2200 °F; 1204 °C}}-pi cono 6-man chayanku. Kikin hornoykipi cono packwan qhawaykuy.
 
-### Slow cooling
+### Pisi pisimanta chiriyachiy
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Pisi pisimanta chiriyachiy** ninanqa controllerqa hornota kikinmanta urayananpaq saqinanmanta aswan, churasqa utqaywan chiriyachin. Digitalfirep C6DHSC-nqa PLC6DS-mi, chaymanta {{150 °F/h; 83 °C/h}}-wan {{2100 °F; 1148 °C}}-manta {{1400 °F; 760 °C}}-kama chiriyachiy, chaymanta wañuchiy. "Lliphiyta uyap allin kayninta allinchan", rutile anqaskunatapas yanapan, ichaqa pisi pisimanta chiriyachiyqa "mana lliphiq kayta yapanmanmi" (huk mana lliphiq esmalte ch'akiman tukurqan), hornop relayninkunap kawsayninta pisiyachinmanpas. L&Lpas cono 6-paq pisi pisimanta chiriyachiy programata qun:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L "User 6": cono 6 esmaltekunapaq pisi pisimanta chiriyachiy
+Label: L, Lpa pisi chiriyachiynin
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Purichiy |                             Utqay |             Maskasqa |
+| -------- | --------------------------------: | -------------------: |
+| 1        |            Hunt'a utqaywan wichay | {{2232 °F; 1222 °C}} |
+| 2        |           Hunt'a utqaywan uraykuy | {{1900 °F; 1038 °C}} |
+| 3        | {{150 °F/h; 83 °C/h}}-wan uraykuy |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skuttpa controllerninkunapas ñawpaq q'uñichiyta huk purichiylla chiriyachiytapas qunku.
 
-### On a manual kiln
+### Makiwan llamk'aq hornopi
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Makiwan llamk'aq hornoqa manam kay kamachiykunata chiqanta qatiyta atinchu, ichaqa yuyaychayqa kaqllam: qallariypi llamp'ulla, chawpinpi kaqlla, qhawasqa tukukuy. Brackerpa pisi ruphay esmalte kamachiyninqa uraypi "Makiwan llamk'aq hornokuna sut'ita" nisqapim; aswan ruphaq conokunapaqqa yapan "sapa cono yupaypaq chawpi yupaypi 15–30 minutos". Pyrometerwan, yachakuywan, qillqana p'anqawanpas, makiwan switchkunata pisiyachispa yaqa urayachiy suyayta utaq pisi pisimanta chiriyachiyta kikinchayta atinki, Digitalfire yuyaychasqan hina.
 
 ## Makiwan hornokuna sut'inchasqa {#manual-kilns}
 

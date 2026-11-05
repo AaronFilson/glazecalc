@@ -119,183 +119,183 @@ Iseluleko siyehluka ngokuthi udinga isikali esicolekile kangakanani. UDerek Au w
 
 UDerek Au ukala endishini eyodwa ngezinqwaba ezihlukene, ukuze iphutha likwazi ukukopishwa liphume. Uma ukala ebhakedeni elilodwa ngaphandle kokwenza i-tare phakathi kokokwakha, isamba esiqhubekayo se-Glazecalc sikutshela ukuthi isikali kufanele sifunde malini ngemva kwento ngayinye.
 
-## Mixing and sieving {#mixing lang=en}
+## Ukuxuba nokuhlunga {#mixing}
 
-### How much water
+### Amanzi amangakanani
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Imithombo ayivumelani. U-Derek Au uqala kujiyile, ngo-50 mL wamanzi ku-100 g wempushana, bese engeza amaningi kamuva. I-Potterycrafts inikeza u-65 mL ku-100 g we-glaze eyodwa eyimpushana. I-UT Austin isebenzisa izisindo ezilinganayo zamanzi nempushana, futhi lapho i-Digitalfire ifaka u-20 kg wempushana ku-20 kg wamanzi, yakala i-specific gravity (i-SG) engu-1.46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Amanzi ashesha ukwengezwa futhi ahamba kancane ukukhishwa, ngakho qala ngamancane. Isilinganiso sethu: qala ngo-**cishe u-70 kuya ku-80 mL ku-100 g** (u-700 kuya ku-800 mL ngekhilogremu, noma cishe u-11 kuya ku-12 US fl oz ngephawundi). Cwilisa, xuba futhi uhlunge kulokho kujiya, bese wengeza amanzi kancane kancane kuze kube yilapho i-SG ilungile. U-1 mL wamanzi unesisindo esingu-1 g, ngakho ungawakala. Uma weqa, yeka i-glaze izinze, bese ususa amanzi acwebile angaphezulu ngesipontshi noma ngokuwathela.
 
-### Tools and water
+### Amathuluzi namanzi
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Umxubi one-propeller.** I-Digitalfire ithi omuhle "ubalulekile". Ibhola elinentambo elinesixubi lenza umsebenzi ebhakedeni. I-UT Austin iwusebenzisa okungenani imizuzu engu-4 kuya ku-5 ngemuva kokuthi i-glaze ibukeke ixubekile, futhi igcina insingo kude nebhakede, engakhuhla ipulasitiki kulo.
+- **I-blender.** "Isebenza kahle kakhulu kuma-batch amancane" (Digitalfire). Yigcinele i-glaze kuphela: akumele ibuyele ekhishini.
+- **I-whisk noma induku.** Ukukhetha kuka-Zakin lapho kungekho mxubi.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Amanzi nawo ayahluka, futhi i-Digitalfire iphawula ukuthi ashintsha indlela i-slurry eziphatha ngayo. U-Derek Au usebenzisa amanzi e-reverse osmosis ngoba amanzi akhe empompini alukhuni. Noma yini oyisebenzisayo, yibhale phansi.
 
-### Step by step
+### Isinyathelo ngesinyathelo
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Gqoka i-respirator yakho, namagilavu enjoloba uma izandla zakho zizongena ngaphakathi. U-Zakin ugqoka imaski kusukela ekuqaleni kokukala kuze kube yilapho i-glaze isimanzi.
+2. Kala cishe u-70 kuya ku-80 mL wamanzi ku-100 g ngamunye wempushana ebhakedeni.
+3. Faka impushana ekaliwe kancane, usendaweni ephansi. I-UT Austin ifaka impushana emanzini afudumele; u-Zakin no-Au bafaka amanzi empushaneni. Siphakamisa impushana emanzini, ephakamisa uthuli oluncane, ngaphandle kweresiphi ene-bentonite eningi: xuba izimpushana zayo ezomile ndawonye kuqala.
+4. **Yicwilise**: yeka impushana icwile ngaphandle kokuxova. I-Digitalfire ilinda cishe imizuzu engu-20. Izimpushana ezine-gum noma i-binder zidinga ukuhlala ubusuku bonke.
+5. Xuba kuze kungabi khona izindawo ezomile noma izigaxa.
+6. Kuhlunge kabili (bheka ngezansi).
+7. Kumboze futhi ukuyeke kuphumule ubusuku bonke, bese uxuba futhi uhlole phansi ukuthi akukho yini ungqimba oluqinile.
+8. Kala i-SG, futhi wengeze amanzi kancane kancane ukufinyelela okuhlosiwe. Ukuze wazi i-SG eyomile ye-glaze yakho, kala ne-slurry esiqediwe (bheka ngezansi).
+9. Faka ilebula ebhakedeni, futhi ubhale phansi lokho okwenzile.
+10. Hlanza ngamanzi: sula phansi ngomopho futhi usule yonke indawo, kuhlanganise nangaphandle kwezitsha zokokwakha.
 
-### Sieving
+### Ukuhlunga
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Isihlungo** siyinetha elisohlakeni. Ukuphusha i-glaze ngaso ngebhulashi kwephula izigaxa ezishiywa ukuxuba futhi kubambe izinhlayiya ezingashisa zibe amachashazi. Lapho inombolo ye-**mesh** iphakeme, isihlungo sicolekile: i-mesh engu-80 inezimbobo ezicishe zibe ngu-0.18 mm, ne-mesh engu-100 cishe u-0.15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Imithombo incoma ama-mesh ahlukene. U-Zakin uhlunga kabili nge-mesh engu-50 noma engu-80. U-Derek Au usebenzisa i-mesh engu-120 kuma-glaze amaningi, ikakhulukazi lawo ane-cobalt noma i-iron: ukudlula kathathu nge-mesh engu-80 kwasashiya amachashazi e-iron ku-celadon eyodwa, futhi ukudlula kanye nge-mesh engu-120 kwakulungisa. Ugcina i-mesh engu-60 kuya ku-80 kuma-glaze omlotha nakwamanye anokokwakha okumahhadla. I-Potterycrafts, e-UK, iphakamisa i-mesh engu-60 kuya ku-80. Okuzenzakalelayo okuphephile:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Isihlungo okufanele usisebenzise
+Label: I-mesh yesihlungo
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| I-glaze                                                    | Isihlungo                        |
+| ---------------------------------------------------------- | -------------------------------- |
+| Iningi lama-glaze                                          | Ukudlula kabili nge-mesh engu-80 |
+| Ama-glaze anokokufaka umbala okufana ne-cobalt noma i-iron | I-mesh engu-100 kuya ku-120      |
+| Ama-glaze omlotha, namanye anokokwakha okumahhadla         | I-mesh engu-60 kuya ku-80        |
 
-## Specific gravity {#specific-gravity lang=en}
+## I-specific gravity {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**I-specific gravity** (i-SG) ikutshela ukuthi ingakanani impushana ku-slurry yakho. Yisisindo sevolumu ye-glaze sihlukaniswe ngesisindo sevolumu efanayo yamanzi. Amanzi angu-1.00, futhi i-glaze engu-{{SG 1.45}} inesisindo esingu-145 g ku-100 mL. Ukuxuba kuze kufike ku-SG ekaliwe kuyindlela yokuthola ukujiya okufanayo, nongqimba olufanayo, njalo. Ayinamayunithi, ngakho iyafana ngamagremu noma ama-ounce.
 
-### Measure it by weighing 100 mL
+### Yikale ngokukala isisindo sika-100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Xova i-glaze ukuze kungabi khona okuzinzile phansi.
+2. Beka i-**graduated cylinder** ka-100 mL (ishubhu ende yokukala enamamaki) noma isirinji ka-100 mL esikalini, bese usetha isikali ku-zero (tare).
+3. Yigcwalise nge-glaze kuze kube ngu-100 mL ngqo, ufunde imaki ezingeni lamehlo.
+4. Yikale bese uhlukanisa amagremu ngo-100: u-145 g yi-SG 1.45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+I-Digitalfire nayo ifaka imaki enkomishini ezingeni lika-500 g wamanzi, iyigcwalise nge-glaze kuze kufike emakini, bese ihlukanisa isisindo ngo-500; isilinganiso esikhulu, esigcwele kakhulu sinembe kakhulu. I-**hydrometer**, into entantayo efundwa lapho ihlala khona ku-glaze, iyashesha kodwa ingafunda kabi ama-glaze ajiyile noma aqinile. Ama-hydrometer ase-UK, njengawe-Potclays, afunda ngamadigri e-Baumé (°Bé). Ngokubala kwethu, i-SG = 145 ÷ (145 − °Bé), ngakho u-46 °Bé ucishe ube ngu-1.46. Izincwadi ezindala zase-UK zinikeza i-**pint weight**, ama-ounce ku-pint eyodwa ye-imperial ye-glaze: yihlukanise ngo-20, ngakho u-29 oz ucishe ube yi-SG 1.45 (nakho ukubala kwethu).
 
-### What to aim for
+### Okufanele ukuhlose
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Imithombo ayivumelani, ikakhulukazi mayelana nokupenda ngebhulashi nokufafaza, lapho umphakeli wase-UK i-Potclays inikeza izibalo eziphezulu kakhulu (ezayo "ezokuqondisa kuphela"). Thatha yonke inombolo njengendawo yokuqala. Iseluleko esiyinhloko se-Digitalfire ukuthola i-SG nokuqina okusebenzela i-glaze ngayinye, bese ukuphinda futhi ukubhale phansi.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Ama-SG okuhloswe wona, lapho imithombo ingavumelani
+Label: Ama-SG okuhloswe wona
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Ukusetshenziswa | I-Digitalfire ne-Glazy                                                                                                                                                     | I-Potclays (UK)                                 | Indawo ephephile yokuqala                                                    |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
+| Ukucwilisa      | {{SG 1.40}} (ukucwilisa imizuzwana engu-5) kuya ku-{{SG 1.50}} (ukucwilisa umzuzwana ongu-1); ama-glaze axutshwe ekhaya aqinile asebenza kahle kakhulu ku-{{SG 1.43–1.45}} | Ecwebile {{SG 1.46–1.48}}; enombala {{SG 1.61}} | {{SG 1.45}}; yenze ibe mncane ibe ngu-{{SG 1.43}} futhi uyiqinise uma iconsa |
+| Ibhulashi       | {{SG 1.25}} (ecwebile emncane) kuya ku-{{SG 1.55}} (imininingwane emnyama)                                                                                                 | {{SG 1.71–1.81}}                                | Landela umkhiqizo; sebenzisa i-CMC gum noma i-brushing medium                |
+| Ukufafaza       | Asikho isibalo; u-Hopper, ebhalela i-Ceramic Arts Network, uthi mncane kakhulu, ne-deflocculant (isithasiselo esenza i-slurry igeleze kakhulu)                             | {{SG 1.71}}                                     | Ayikho inombolo ethembekile; fafaza ku-spray booth kuphela                   |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Ukuze uhlole i-glaze yokucwilisa ngeso, i-AMACO icwilisa imizuzwana engu-5 bese ibheka ungqimba olucishe lube ukushuba kwe-dime yaseMelika. I-Digitalfire ishisa ama-tile acwiliswe imizuzwana engu-5 ukuze ihlole.
 
-### Water for a target SG: our estimate
+### Amanzi e-SG okuhloswe yona: isilinganiso sethu
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Ithebula elingezansi likubala kwethu, hhayi okomthombo. Licabanga ukuthi izinhlayiya zempushana zinokuminyana okungu-2.6 g nge-cm³, okuwumcabango, hhayi isilinganiso. Ubumba, okokwakha okuncibilika emanzini nokuqina konke kushintsha i-glaze yangempela, ngakho lisebenzise ukuqala, bese ukala. Njengokuhlola, libikezela i-{{SG 1.44}} ngezisindo ezilinganayo zempushana namanzi, eduze ne-{{SG 1.46}} ekalwe yi-Digitalfire. Likhombisa futhi ukuthi u-70 kuya ku-80 mL ku-100 g ukuqalisa ngaphezu kuka-{{SG 1.50}}, kujiye kunalokho okudingayo.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Amanzi e-SG okuhloswe yona (isilinganiso sethu)
+Label: Amanzi e-SG okuhloswe yona
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Okuhlosiwe  | Ku-100 g wempushana |   Ngekhilogremu |         Ngephawundi |
+| ----------- | ------------------: | --------------: | ------------------: |
+| {{SG 1.40}} |      cishe u-115 mL | cishe u-1150 mL | cishe u-18 US fl oz |
+| {{SG 1.45}} |       cishe u-98 mL |  cishe u-980 mL | cishe u-15 US fl oz |
+| {{SG 1.50}} |       cishe u-85 mL |  cishe u-850 mL | cishe u-13 US fl oz |
+| {{SG 1.60}} |       cishe u-64 mL |  cishe u-640 mL | cishe u-10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Thola i-SG eyomile ye-glaze yakho ngenkathi uxuba
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+U-2.6 ongenhla ukuqagela. Isibalo se-glaze yakho, ukuminyana kwempushana yayo eyomile, singabalwa ngezinombolo ezintathu ongazithatha ngenkathi uxuba. Ngaso, ungabala kamuva nge-SG ukuthi ingakanani impushana kunoma yiliphi ibhakede laleyo glaze, namanzi e-batch elandelayo. Ukubala kwethu, hhayi okomthombo:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Bhala phansi isisindo sempushana eyomile ku-batch: isamba seresiphi.
+2. Kala ibhakede elingenalutho ngaphambi kokuqala, noma ubhale isisindo salo kulo.
+3. Xuba, hlunga futhi ulethe i-glaze ku-SG yayo njengokujwayelekile. Phusha konke ngesihlungo futhi ukuhlambululele ebhakedeni, ukuze kungasali mpushana ngaphandle.
+4. Kala ibhakede eligcwele bese ukhipha isisindo sebhakede. Leso yisisindo se-slurry.
+5. Kala i-SG.
 
-Then:
+Bese:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Amanzi** = isisindo se-slurry − isisindo sempushana.
+- **Ivolumu ye-slurry** ngo-mL = isisindo se-slurry ngamagremu ÷ i-SG.
+- **Ivolumu yempushana** = ivolumu ye-slurry − amanzi (u-1 g wamanzi ungu-1 mL).
+- **I-SG eyomile** = isisindo sempushana ÷ ivolumu yempushana.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Isibonelo: u-1000 g wempushana wenza u-1980 g we-slurry ku-{{SG 1.45}}. Amanzi angu-980 g, i-slurry ingu-1980 ÷ 1.45 = cishe u-1366 mL, impushana ithatha u-1366 − 980 = 386 mL, futhi i-SG eyomile ingu-1000 ÷ 386 = cishe u-2.59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Kala yonke i-slurry ekugcineni, hhayi amanzi ngenkathi uwathela, ukuze amanzi ahwamukayo noma achaphazekayo angabalwa. Amaphutha amancane ayakhula lapha: ukufunda kwe-SG okuphambuke ngo-0.01 kuhambisa impendulo cishe ngo-2 kuya ku-4%, ngaphezulu ku-glaze emncane. Sebenzisa i-batch ka-1 kg noma ngaphezulu, isikali esinembile, nendlela yenkomishi ka-500 g engenhla ye-SG. Iningi lokokwakha okuvamile liphakathi kuka-2.5 no-2.9, ngakho isibalo esikude kakhulu ngaphandle kwalokho, ku-glaze engenayo i-zircon eningi noma umthofu, kungenzeka kusho iphutha lokukala. Bhala isibalo kuresiphi.
 
-### Epsom salts, CMC gum and bentonite
+### Usawoti we-Epsom, i-CMC gum ne-bentonite
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Usawoti we-Epsom** wenza i-glaze iqine kancane lapho imile futhi igeleze futhi lapho ixovwa. Lokhu kubizwa ngokuthi **ukuyi-flocculate**, futhi i-glaze eziphatha kanje iyi-**thixotropic**: isakazeka ngokulinganayo kakhulu, iconsa kancane futhi izinza kancane. I-Digitalfire iphakamisa ukuqala cishe ngo-2 g nge-gallon uma i-SG isilungile (cishe u-0.5 g ngelitha, ukuguqula kwethu) nokulungisa inani njalo uma uxuba, ngoba ayikho iresiphi okufanele ibeke umthamo. Siphakamisa ukuwuncibilikisa emanzini ashisayo amancane kuqala. Esibonelweni se-Digitalfire, i-glaze engu-{{SG 1.45}} yaconsa, ngakho amanzi ayehlisela ku-{{SG 1.43}} futhi usawoti we-Epsom wayiqinisa futhi yaba njengokhilimu, futhi yasakazeka ngokulinganayo. Ukuhlola okusheshayo: xova, yima bese ubuka. I-glaze eqinile iqhubeka inyakaza cishe imizuzwana engu-2 noma engu-3, bese iyama futhi ibuyele emuva kancane.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**I-CMC gum** (carboxymethyl cellulose) yenza i-slurry inamathele kakhulu futhi yome kancane, futhi ishiya ungqimba oluqinile olubambelela esitsheni. Ibaluleke kakhulu kuma-glaze ebhulashi nakuma-glaze ane-frit eningi. Isibonelo se-Digitalfire sixuba u-3.75 g ku-1000 g we-slurry, futhi kufanele ingene nge-blender. I-glaze ene-CMC ngeke iqine ngosawoti we-Epsom, futhi njengoba amagciwane edla i-gum, ingashintsha ebhakedeni futhi iqale ukunuka.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**I-bentonite**, ubumba olucolekile kakhulu, isiza ukugcina ezinye izinhlayiya zintanta. Ama-glaze okucwilisa ngokuvamile athembele kubumba oluluhlaza olungu-15 kuya ku-25% kulokhu. Kuresiphi enobumba obuncane, cishe u-1 kuya ku-3% we-bentonite uyasiza; i-Digitalfire ithi i-glaze enobumba obungaphezu kuka-15% akufanele idinge i-bentonite engaphezu kuka-1% wesisindo se-glaze eyomile.
 
-## Test tiles and line blends {#testing lang=en}
+## Ama-test tile nama-line blend {#testing}
 
-### Start small
+### Qala kancane
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+U-Derek Au ukhuphuka ngezinyathelo ezintathu: ukuhlola kuka-50 noma ku-100 g, isivivinyo sika-1 kuya ku-2 kg uma kusebenza, bese kuba yi-batch ye-studio ka-5 kuya ku-10 kg. Ngokwesilinganiso sethu, ukuhlola kuka-100 g ku-{{SG 1.45}} kwenza cishe u-135 mL (cishe u-4½ US fl oz) we-slurry, okwanele ukucwilisa ama-tile amancane ambalwa enkomishini emincane.
 
-### Test on your own clay
+### Hlola kubumba lwakho
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+I-glaze ingabukeka ihluke kakhulu kobunye ubumba noma kwenye i-kiln: i-Clay Art Center yahlola i-glaze yayo ngayinye eyenziwe kabusha ezinhlotsheni ezine zobumba, ku-cone 6 naku-cone 10. Umhlahlandlela we-Potclays wabaqalayo wokuhlola i-glaze uphakamisa:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- ama-**test tile** angu-6 kuya ku-10 (izingcezu ezincane zokuzama i-glaze) obumba ozolusebenzisa ngempela, uphawula ukuthi ashiswe nge-bisque noma omile du
+- ushintsho olulodwa ngesikhathi
+- ukucwilisa kanye nokucwilisa kabili, ukuze ubone i-glaze emncane neshubile
+- yonke i-tile emthwalweni ofanayo we-kiln
+- imaki ku-tile ngayinye ngaphambi kokushisa, ngesitembu, ngokubaza noma ngepensela ye-underglaze. Ama-tile ashisiwe ayafana, futhi imaki eyenziwe ngaphambi kokushisa iyahlala ku-kiln, ngakho ungahlala wazi ukuthi i-tile ngayinye ingeyaluphi uhlobo lweresiphi.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Siphakamisa ama-tile ama mpo, ngoba i-tile eyisicaba ifihla ukuthi i-glaze igeleza ibangakanani, anomugqa onokwakheka okuveza ukuthi i-glaze iphuka kanjani emaphethelweni, nonyawo olungenalutho. Beka ngayinye esitsheni esincane noma esicucwini se-bisque, noma eshalofini elinokufakwe i-kiln wash, ukubamba amaconsi. Beka i-**witness cone**, i-cone encane yobumba egoba lapho isithole ukushisa okwanele, eduze kwama-tile ukukhombisa lokho akutholile; [umhlahlandlela wokushisa](/guides/firing) uchaza ama-cone. Nika i-tile ngayinye ikhodi emfushane, futhi uyibhale eceleni kweresiphi emarekhodini akho. U-Willers, ebhalela i-Ceramic Arts Network, usebenzisa izinombolo nezinhlamvu, futhi ubhala uhlelo ngokwalo ekuqaleni kwencwadi.
 
-### Line blends
+### Ama-line blend
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+I-**line blend** ingumugqa wezivivinyo ezihamba ngezinyathelo ezilinganayo zisuka kokuxutshwa okukodwa ziye kokunye: zisuka ku-glaze eyodwa ziye kwesibili, noma zisuka ku-glaze eyisisekelo ziye ku-glaze efanayo enokokufaka umbala okuningi. U-Derek Au, ngokwesibonelo, unyusa i-iron oxide nge-glaze eyisisekelo ecwebile ngezinyathelo zika-1%. Indlela yevolumu ehlotshaniswa no-Ian Currie yonga isikhathi, ngoba uxuba izingxenye ezimbili zokugcina kuphela:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Xuba ama-glaze amabili okugcina, u-A no-B, njengama-batch osayizi ofanayo, futhi uhlunge womabili.
+2. Engeza amanzi kulowo onevolumu encane kuze kube yilapho womabili enevolumu emanzi efanayo ngqo.
+3. Xova womabili, bese udonsa ukuxutshwa ngakunye ngesirinji ukufaka enkomishini yakho enenombolo.
+4. Xova inkomishi ngayinye bese ucwilisa i-tile.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Esibonelweni sethu esixazululiwe, u-A ungu-100 g wesisekelo esicwebile, futhi u-B uyafana kodwa kwengezwe u-4 g we-red iron oxide (ukwengeza okungu-4%). I-millilitre ngayinye ka-B iqukethe ingxenye efanayo yesisekelo njenge-millilitre ka-A, kanye ne-iron yakho, ngakho izinkomishi zihamba zisuka ekungabini ne-iron ziye ku-4% ngezinyathelo zika-1%. Ingxenye ngayinye yokugcina inikeza u-100 mL ku-blend, okuhlanganiswa yi-batch ka-100 g ngokwesilinganiso sethu.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: I-line blend ye-iron enezinyathelo ezinhlanu, u-40 mL ngenkomishi (isibonelo sethu esixazululiwe)
+Label: Isibonelo se-line blend
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Inkomishi | Isisekelo esicwebile (A) | Isisekelo esine-iron engu-4% (B) | I-iron oxide, % yesisekelo |
+| --------- | -----------------------: | -------------------------------: | -------------------------: |
+| 1         |                    40 mL |                             0 mL |                          0 |
+| 2         |                    30 mL |                            10 mL |                          1 |
+| 3         |                    20 mL |                            20 mL |                          2 |
+| 4         |                    10 mL |                            30 mL |                          3 |
+| 5         |                     0 mL |                            40 mL |                          4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Le ndlela idinga ukubala ngokucophelela, izingxenye zokugcina ezixutshwe kahle ezine-SG efanayo, nesikali esinembile. U-Derek Au uphinde axube ngesisindo esikhundleni sevolumu. I-**triaxial blend** yenza okufanayo ngezingxenye ezintathu zokugcina, zihlelwe kunxantathu.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Lapho isinyathelo sibukeka sithembisa, **Londoloza njengekhophi** [ekhasini leresiphi](/recipe) kusigcina njengeresiphi yaso futhi kushiye eyokuqala injengoba yayinjalo.
+
+## Ukugcina amarekhodi {#records}
+
+U-Willers usho inhloso kahle: "imininingwane eyanele ukuze ukwazi ukuphinda, noma ukugwema, imiphumela oyitholile". Bhala phansi lokho ohlela ukukuhlola ngaphambi kokuqala, nemiphumela lapho ukhipha izitsha. I-Potclays yengeza indlela yokufaka, ukushuba, uhlobo lobumba nokushisa konke, kuhlanganise nama-ramp, ukulinda nokupholisa. I-**ramp** isivinini sokushisisa noma sokupholisa, njengo-{{60 °C; 108 °F}} ngehora, futhi **ukulinda** (hold) kugcina i-kiln ezingeni elilodwa lokushisa isikhathi esisethiwe. Bhala izinombolo ze-lot, amanzi owasebenzisile nanoma yikuphi ukushintshwa kokokwakha: ukushintsha i-feldspar kwe-Clay Art Center kwasho ukulungisa cishe ingxenye yama-glaze ayo.
+
+Table: Okufanele ukubhale nge-batch ngayinye ye-glaze (ithempulethi yethu)
+Label: Ithempulethi yerekhodi
+
+| Ingxenye  | Okufanele ukubhale phansi                                                                                                                                                                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Iresiphi  | Iresiphi nohlobo lwayo; izinhlobo zokokwakha nezinombolo ze-lot; noma yikuphi ukushintshwa                                                                                                                                                                                               |
+| Ukuxuba   | Usuku; usayizi we-batch; amanzi engeziwe, nohlobo lwawo (empompini, i-reverse osmosis noma ama-distilled); i-SG ngemuva kokuxuba ne-SG yokugcina; isisindo se-slurry esiqediwe, se-SG yayo eyomile; usawoti we-Epsom, i-CMC ne-bentonite okwengeziwe; i-mesh yesihlungo nenani lokudlula |
+| Ukufaka   | Uhlobo lobumba; i-cone ye-bisque; ukucwilisa, ibhulashi noma ukuthela; isikhathi sokucwilisa noma inani longqimba; ukushuba okomile                                                                                                                                                      |
+| Ukushisa  | I-kiln nendawo eshalofini; ishejuli yokushisa, nama-ramp ayo, ukulinda nokupholisa; umoya we-kiln (i-oxidation noma i-reduction); lokho okukhonjiswe yi-witness cone, hhayi lokho i-kiln eyayisethelwe kukho kuphela                                                                     |
+| Umphumela | Ubuso nombala; noma yikuphi ukugeleza, i-crazing noma ama-pinhole; izithombe zangaphambili, zangemuva nezaseceleni; ikhodi ye-tile                                                                                                                                                       |
+
+> [!NOTE]
+> Ku-Glazecalc, [iresiphi](/recipe) elondoloziwe igcina iresiphi uqobo. [Irekhodi lokushisa](/firing) libhala ukushisa ngakunye: i-kiln, usuku, izikhathi, amazinga okushisa, ama-cone namanothi. [Amanothi](/notes) agcina konke okunye, njengerekhodi le-batch elingenhla nalokho i-tile ngayinye ekukhombisile.
 
 ## Imithombo {#sources}
 

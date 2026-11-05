@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Ba a fassara wani sashe na wannan shafi ba tukuna, don haka ana nuna shi da Turanci.",
+  "index": {
+    "crumb": "Shahararrun glaze",
+    "title": "Shahararrun glaze",
+    "lead": "Glaze da aka sani a duk duniya, kowanne daga kayansa na gargajiya na yankinsa, tare da UMF ɗinsa da sigar da aka yi da kayan da ake sayarwa inda kuke.",
+    "listHeading": "Glaze ɗin",
+    "more": "Ƙarin glaze na zuwa: ana ƙara kowanne da zarar tsarinsa da kayansa sun dogara ga aƙalla majiyoyi uku da aka karanta."
+  },
+  "glaze": {
+    "lead": "Shahararren glaze ({native}): tsarinsa na gargajiya ko nazari, gasarsa, da sigar da aka yi da kayan da ake sayarwa inda kuke.",
+    "aboutHeading": "Game da {name}",
+    "nativeName": "Sunan asali",
+    "origin": "Ina",
+    "period": "Yaushe",
+    "firing": "Gasa",
+    "cone": "cone {cone}",
+    "historyOnly": "Tarihi kawai: an yi wannan glaze da darma (lead, Pb). Ana nuna nazarinsa a matsayin tarihi, ba a matsayin tsarin da za a haɗa ba. Sigar da ke ƙasa wani glaze ne daban, babu darma.",
+    "recipeHeading": "Tsarin gargajiya",
+    "material": "Kaya",
+    "amount": "Yawa",
+    "unityHeading": "UMF (unity molecular formula)",
+    "analysisHeading": "Nazarin tarihi",
+    "oxide": "Oxide",
+    "percent": "% na nauyi",
+    "useHeading": "Gwada shi",
+    "open": "Buɗe wannan tsarin",
+    "openLeadFree": "Buɗe sigar da babu darma",
+    "leadFreeTitle": "Salon {name}, babu darma",
+    "allLink": "Duk shahararrun glaze",
+    "safetyHeading": "Aminci",
+    "safeMixing": "Haɗawa cikin aminci da iska mai kyau",
+    "firingGuide": "Gasa a cikin kiln mai sauƙi",
+    "makingGuide": "Yadda ake haɗa glaze",
+    "sourcesHeading": "Majiyoyi",
+    "link": "Buɗe",
+    "opened": "an karanta {date}"
+  },
+  "local": {
+    "heading": "Da kayan yankinku",
+    "leadFreeHeading": "Sigar da babu darma",
+    "intro": "UMF na tsarin gargajiya, da aka yi da daidaitattun kayan da ake sayarwa inda kuke saye. Zaɓi inda kuke saye don ganin sa.",
+    "region": "Inda kuke sayen kaya",
+    "proposal": "Kayan shawarar kanta",
+    "pick": "Zaɓi…",
+    "untested": "An lissafa, ba a gasa shi don gwaji ba tukuna.",
+    "testFirst": "Gasa test tile kafin ku yi amfani da shi a kan kowane kayan aiki, kuma ku gwada wurin da abinci ke taɓawa don zubar ƙarfe (leaching).",
+    "untestedNote": "An lissafa, ba a gasa shi don gwaji ba tukuna: gasa test tile kafin amfani.",
+    "close": "Yana kusa sosai da formula da ake nema.",
+    "fair": "Yana kusa da formula da ake nema daidai gwargwado.",
+    "poor": "Waɗannan kayan ba za su iya kusantar formula da ake nema ba.",
+    "none": "Kayan da ake sayarwa a can ba za su iya yin sa ba.",
+    "choose": "Zaɓi inda kuke sayen kaya don ganin an yi shi da waɗanda ake sayarwa a can."
+  },
+  "atmospheres": {
+    "oxidation": "oxidation",
+    "reduction": "reduction",
+    "neutral": "tsaka-tsaki",
+    "wood": "gasa da itace",
+    "salt": "gasa da gishiri",
+    "soda": "gasa da soda"
+  }
+}

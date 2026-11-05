@@ -723,7 +723,8 @@
     "keyPoint": "Ɗigo: wannan glaze.",
     "keyBright": "Layin ɗigo-ɗigo: inda glaze na Stull suka fi haske.",
     "keyLimits": "Layukan karya-karya da inuwa: kewayon silica da alumina na {name}.",
-    "keyCrazed": "Zane-zanen layuka: inda suka yi crazing."
+    "keyCrazed": "Zane-zanen layuka: inda suka yi crazing.",
+    "note": "Jagora ne, ba hasashe ba. R. T. Stull (Transactions of the American Ceramic Society, 1912) ya gasa a kusan cone 11 tare da flux da aka ƙayyade a 0.3 K₂O da 0.7 CaO; wasu flux da wasu gasa suna motsa yankunan, kuma glaze marar sheƙi (matte) saboda kawai ba a gasa shi sosai ba na iya bayyana a matsayin mai sheƙi a kan taswirar. Yankunan kamar yadda Glazy ke zana su ne."
   },
   "slurry": {
     "heading": "SG da ruwa",
@@ -751,6 +752,17 @@
       "pint": "Nauyin pint da kuke so, oz"
     },
     "drySg": "SG na busassun kaya",
+    "drySgEmpty": "Nauyin busassun kaya ne kawai ke buƙatar sa; ruwan da za a ƙara ba ya buƙata. Rubuta shi idan kun san shi.",
+    "drySgNeeded": "Rubuta SG na busassun kaya don ganin busasshen glaze da ke cikin bokiti da ruwan sabon batch.",
+    "estimate": {
+      "mineral": "Ƙiyasi, {sg}, daga abin da aka yi kowane kaya da shi: auna yawan ma'adininsa. Canza shi idan kun fi sani.",
+      "kind": "Ƙiyasi, {sg}: feldspar da yumɓu suna da nauyin kusan 2.6. Canza shi idan kun fi sani.",
+      "glass": "Ƙiyasi, {sg}, da aka lissafa daga oxide na frit (gilashi ne). Canza shi idan kun fi sani.",
+      "mixed": "Ƙiyasi, {sg}, daga kowane kaya: auna yawan ma'adininsa, kusan 2.6 ga feldspar da yumɓu, da frit da aka lissafa daga oxide ɗinsu. Canza shi idan kun fi sani.",
+      "leftOut": "An bar su, saboda ba a san SG ɗinsu ba: {names}.",
+      "none": "Babu ƙiyasi ga wannan tsarin: ba a san SG na waɗannan ba: {names}. Rubuta shi idan kun san shi.",
+      "was": "Ana amfani da adadinku. Ƙiyasin ya kasance {sg}; share filin don komawa gare shi."
+    },
     "batch": "Busasshen glaze don sabon batch, {unit}",
     "contents": "A SG {sg}, bokitin yana ɗauke da {glaze} na busasshen glaze da {water} na ruwa.",
     "add": "Don kaiwa SG {target}, ƙara {water} na ruwa. Zai ƙare a kusan {volume}.",
@@ -758,6 +770,7 @@
     "already": "Ya riga ya kai SG {target}.",
     "mix": "Haɗa {glaze} na busasshen glaze da {water} na ruwa don samun kusan {volume} a SG {target}.",
     "badSg": "SG dole ya fi 1 (na ruwa) kuma ya yi ƙasa da {dry} na busassun kaya.",
+    "badSgWater": "Dole ne SG ya fi 1 (na ruwa).",
     "badDry": "SG na busassun kaya dole ya fi 1.",
     "note": "Ruwan da nauyi ne: lita ɗaya tana da nauyin kilogiram ɗaya, galan na US kusan 8.3 lb. Lissafin yana ɗaukar cewa girma suna haɗuwa, wanda yake kusa, ba daidai ba: ƙara ruwa kaɗan-kaɗan, juya, kuma ku sake aunawa. Glaze biyu a SG ɗaya za su iya gudana daban-daban.",
     "saveTarget": "Ajiye SG {sg} a matsayin manufar wannan girke-girke",

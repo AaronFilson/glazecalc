@@ -3,480 +3,480 @@ title: Ntọala glaze
 lead: Ihe e ji eme glaze, otu kiln si eme ya ka ọ ghọọ iko, na okwu ọ bụla ị ga-ahụ n'usoro glaze, n'akpa ma ọ bụ na chaatị cone, a kọwara ha.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Gịnị bụ glaze {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**Glaze** bụ mkpuchi iko dị gịrịgịrị agbazere n'elu ite. Glazy, ọdụ data mepere emepe nke usoro glaze, kpọrọ ya "formula iko a haziri ka ọ gbazee ma rapara n'ụrọ n'ọkụ ụfọdụ". A na-etinye ya dịka oyi akwa ntụ, ọ na-agbazekwa na kiln ghọọ mkpuchi dị ka iko na-emechi ụrọ, ya mere ite anaghị ehichapụ mmiri, enwe ntụpọ ma ọ bụ gbaa agadi ngwa ngwa. N'elu ịgba ọkụ, glaze gbazere na-emekọkwa ihe na ụrọ, na-emekarị oyi akwa n'etiti ha na-ejide glaze. N'elu earthenware, nke a na-agba n'ọkụ dị ala, oyi akwa a dị gịrịgịrị, glaze na-anọkarịkwa n'elu. N'elu stoneware na porcelain, nke a na-agba n'ọkụ dị elu, oyi akwa ahụ dị ọkpụrụkpụ karịa, glaze na-ejidekwa ụrọ ike karịa. Mana glaze ka bụ iko: ọ naghị aghọ akụkụ nke ụrọ.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Usoro na-edepụta ihe, dịka feldspar, whiting na kaolin. Na kiln, akụkụ nke ọ bụla na-apụ dịka gas (mmiri ma ọ bụ carbon dioxide), nke fọdụrụ na-aghọkwa **oxide**: ngwakọta nke element na oxygen, dịka silica (SiO₂) ma ọ bụ calcium oxide (CaO). E ji oxide mee iko a gbara ọkụ, ya mere ndị ọkpụ ite na-eji ha akọwa glaze. Oxide ọ bụla na-arụ otu n'ime ọrụ atọ.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **Silica** (SiO₂) bụ **onye na-ewu iko**: ọ na-ewu iko ahụ. Silica dị ọcha na-agbaze n'elu {{3100 °F; 1700 °C}}, dị ọkụ karịa kiln ite nke ukwuu, glaze nwere ọtụtụ silica na-adịkarị ogologo oge.
+- **Flux** na-ebelata ọkụ ịgbaze ruo nke kiln nwere ike iru. **Alkali**, a na-ede dịka **R₂O**, bụ oxide nke sodium, potassium na lithium (Na₂O, K₂O, Li₂O); ha na-arụ ọrụ site na cone 06 gaa n'elu n'ọkụ etiti na nke dị elu. **Alkaline earth**, a na-ede dịka **RO**, bụ oxide nke calcium, magnesium, barium na strontium (CaO, MgO, BaO, SrO), ya na zinc oxide (ZnO) agụnyere ha; ha na-arụ ọrụ nke ọma karịa site na cone 5 ruo cone 10. R na-anọchi anya metal ọ bụla n'ezinụlọ ahụ.
+- **Alumina** (Al₂O₃) bụ **onye na-eme ka ọ kwụsie ike**. Ọ na-eme ka glaze gbazere sie ike ka ọ nọrọ na mgbidi kwụ ọtọ, ma na-agbakwunye ike na ịdịgide. Ịdọ aka na ntị Glazy: ya na obere alumina "glaze gị nwere ike ịsọ; nke ukwuu nwere ike ime ka glaze gbazere sie ike ghọọ nke anaghị egbuke (matte)". Alumina na-esitekarị n'ụrọ na feldspar.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**Boron** (B₂O₃) na-eme ka oke a ghara ịdị doro anya. Ndị kemist na-agụ ya dịka onye na-ewu iko, mana n'ọkụ ebe ọrụ ọ na-akpa àgwà dịka flux, ndị ọkpụ ite na-ewerekwa ya otu a. Ọ bụ isi flux n'ọkụ dị ala na nke etiti: ka ịgba ọkụ na-adị jụụ, ka glaze na-achọ boron karịa. Na cone 10 a naghị achọkarị ya. (Cone, otu ndị ọkpụ ite si akpọ ịgba ọkụ, ka a kọwara n'okpuru.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Otu ụzọ isi cheta ya: silica bụ iko, flux na-ekwe ka ọ gbazee n'ọkụ kiln gị nwere ike iru, alumina na-emekwa ka ọ dị ọkpụrụkpụ ka ọ nọrọ ebe i tinyere ya.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## Ụrọ, mkpuchi na ịgba ọkụ abụọ {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Ụdị ụrọ
 
-## From recipe to unity formula {#unity-formula lang=en}
+**Ụdị ụrọ** (clay body) bụ ụrọ e ji mee ite. E nwere isi ụdị atọ.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Earthenware**: ụrọ ọkụ dị ala, ihe dị ka cone 06–02, nwere obere oghere na cone dị ala ma na-esiwanye ike ka a na-agba ya ọkụ karịa. Ọ na-acha ọbara ọbara ma ọ bụ aja aja, ọ chọrọ glaze iji jide mmiri.
+- **Stoneware**: ụrọ ọkụ etiti ruo nke dị elu, ihe dị ka cone 5–10, nke na-aghọ dị ka iko ma ọ bụ fọrọ nke nta.
+- **Porcelain**: ụrọ ọcha nwere ọtụtụ kaolin, nke ìhè na-agafekarị. Ọtụtụ porcelain bụ nke ọkụ dị elu, mana e nwekwara porcelain cone 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Vitreous** pụtara dị ka iko na enweghị oghere; **vitrification** bụ ụrọ ịghọ otu a ka a na-agba ya ọkụ. Ndị ọkpụ ite UK na-esekarị oke ahụ site n'ọkụ kama: a na-agba stoneware n'elu {{2192 °F; 1200 °C}}, earthenware n'okpuru ya. Ọkụ etiti, cone 5–6, na-ada ntakịrị n'akụkụ abụọ nke oke ahụ.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Mkpuchi na ịkpọ nkụ
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**Slip** bụ ụrọ na-ese na mmiri, maka ịwụ n'ụdị, ijikọ ma ọ bụ ịchọ mma. **Engobe** bụ mkpuchi yiri slip, nke na-enwekarị agba, nwere ihe ndị na-abụghị ụrọ karịa. **Underglaze** bụ slip nwere agba ma ọ bụ ihe ịchọ mma oxide, nke a na-ejikarị glaze doro anya kpuchie.
 
-### The silica to alumina ratio
+Ihe a gbabeghị ọkụ bụ **greenware** (isi mmalite ekwekọrịtaghị ma okwu a gụnyere ihe niile a gbabeghị ọkụ ma ọ bụ naanị ndị kpọrọ nkụ). Ka ọ na-akpọ nkụ ọ na-aghọ **leather-hard**, siri ike mana nwere obere mmiri, ọkwa maka ịkpụcha na itinye aka; emesịa **bone dry**, enweghị mmiri fọdụrụ, na-agbaji ngwa ngwa ma dị njikere maka ịgba ọkụ.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### Ịgba ọkụ abụọ
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+Ịgba ọkụ mbụ, nke dị ala, bụ **bisque** (ọkụ mbụ; UK: **biscuit**), nke na-abụkarị cone 08–04 (ọtụtụ mgbe 06–04), ihe dị ka {{1728–1945 °F; 942–1063 °C}}. Ọ na-ahapụ ihe ka ọ sie ike mana nwee obere oghere. Digitalfire, saịtị ntụaka glaze, na-atụ aro n'ozuzu oghere karịrị 15%, ka bisque wee dọpụta mmiri na glaze ka a na-etinye ya. Bisque dị nro (cone 08–06) nwere oghere karịa; bisque siri ike (ọtụtụ mgbe cone 04) siri ike karịa mana ọ naghị anabata glaze ngwa ngwa.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Otu bisque si agbanwe itinye glaze (Digitalfire)
+Label: Otu bisque si agbanwe itinye glaze
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Bisque                                                  | Ihe na-eme                                                            |
+| ------------------------------------------------------- | --------------------------------------------------------------------- |
+| A gbaghị ya ọkụ nke ọma, na-amịkpọ nke ukwuu            | Glaze na-aga n'elu ọkpụrụkpụ nke ukwuu, emesịa gbawaa ma mee crawling |
+| A gbafere ya ọkụ, siri ike                              | Ịmikpu na ịkpọ nkụ na-ewe oge karịa                                   |
+| A gbara ya ọkụ karịa, ma ọ bụ e chere ogologo oge n'elu | Gas karịa na-ere ugbu a, ya mere obere na-esi na glaze apụta emesịa   |
 
-### Loss on ignition
+Potclays, onye na-ere ahịa UK, kọwara ịgba biscuit ọkụ ruo ihe dị ka {{1000 °C; 1832 °F}}, ihe dị ka cone 06. Na-agụ isi mmalite ndị a ọnụ, anyị na-atụ aro cone 06–04 maka bisque mbụ: {{1828–1945 °F; 998–1063 °C}} n'ọsọ etiti Orton.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**Ịgba glaze ọkụ** (ndị ọkpụ ite Britain nwere ike ịsị **glost**) na-agbaze glaze ma, maka stoneware, na-eme ka ụrọ tozuo kwa. **Ịgba ọkụ otu ugboro** (once-firing) na-etinye glaze n'ihe a gbabeghị ọkụ ma gbaa ya ọkụ naanị otu ugboro. Digitalfire kọrọ otu ihe mere n'ụlọ ọrụ ebe ihe e tinyere glaze ka ọ dị ndụ mere crawling n'ọnụ ha ruo mgbe ịgba bisque ọkụ dozịrị ya, ya mere malite na ịgba ọkụ abụọ. [Ịgba ọkụ na kiln dị mfe](/guides/firing) na-enye usoro maka ha abụọ.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Cone na heatwork {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Ndị ọkpụ ite na-akpọ ịgba ọkụ site na **cone**: pyramid ụrọ dị gịrịgịrị na-ehulata mgbe o nwetara ọkụ edobere. Orton, onye na-emepụta ha, na-akpọ cone ihe ngosi oge na ọkụ (heatwork): ha na-egosi mmetụta jikọtara ọnụ nke oge na ọkụ, ọ bụghị naanị ọkụ.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**Heatwork** bụ ihe kpatara ya: glaze, ụrọ na cone niile na-azaghachi ogologo oge ha nọ n'ọkụ yana otu ọkụ si dị. Ịgba ọkụ nwayọọ na-ehulata cone n'ọkụ dị ala karịa, nke ngwa ngwa n'ọkụ dị elu karịa. Chaatị Orton na-egosi cone 6 na-ehulata na {{2165 °F; 1185 °C}} mgbe ịgba ọkụ kwụsịrị na-arịgo {{27 °F; 15 °C}} kwa awa, na {{2232 °F; 1222 °C}} na {{108 °F; 60 °C}} kwa awa, na na {{2269 °F; 1243 °C}} na {{270 °F; 150 °C}} kwa awa, ọsọ e weere n'ime {{180 °F; 100 °C}} ikpeazụ. Cone emechaala mgbe isi ya hulatara 90°. Ndị ọkpụ ite na-akpọkarị nke a ọnọdụ elekere 5.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Nọmba cone sitere na 022 ruo 42. Efu dị n'ihu na-egosi usoro dị jụụ, ebe nọmba buru ibu dị jụụ karịa: cone 06 dị jụụ karịa cone 04, cone 01 dịkwa jụụ karịa cone 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Oke ịgba ọkụ: cone Orton na-eguzo onwe ha na {{108 °F; 60 °C}} kwa awa
+Label: Oke ịgba ọkụ
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Oke        | Cone  |          °F |          °C | E ji ya maka              |
+| ---------- | ----- | ----------: | ----------: | ------------------------- |
+| Ọkụ dị ala | 06–04 | 1,828–1,945 |   998–1,063 | Glaze earthenware; bisque |
+| Ọkụ etiti  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware na porcelain    |
+| Ọkụ dị elu | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware na porcelain    |
+
+> [!NOTE]
+> Kpọọ ma hazie ịgba ọkụ gị site na cone, ma were ọkụ dịka ihe dị nso. **Cone akaebe** (witness cone) n'elu shelf n'etiti ite, ma ọ bụ **cone pack** nke cone atọ (cone ntụzịaka, nke ịgba ọkụ na nke nchekwa), na-egosi heatwork ite gị nwetara n'ezie.
+
+Ọkụ e bipụtara na-adịgasị iche. Glazy na-enye ọkụ dị elu, cone 9–11, dịka ihe dị ka {{2336–2390 °F; 1280–1310 °C}}, nke kwekọrọ na kọlụm ngwa ngwa Orton, Digitalfire na-enyekwa cone 6 dịka ihe dị ka {{2200 °F; 1204 °C}}. Ndụmọdụ anyị: jiri ọnụ ọgụgụ ọsọ etiti Orton, dịka ntụzịaka a na-eme, hazie site na cone, ma hapụ cone akaebe ka o kpebie.
+
+Na mpụga North America, ndị na-ere ahịa na-enyekarị °C kama cone. Hermann Seger mepụtara cone nke oge a, nke e jiri nke mbụ na Berlin na 1886, UK nwekwara cone Staffordshire nke ya; ekwesịghị iche na nọmba ha kwekọrọ na nke Orton, anyị ahụghịkwa tebụl iji gbanwee ha. [Ịgba ọkụ na kiln dị mfe](/guides/firing) na-akọwa cone n'ụzọ zuru ezu.
+
+## Site n'usoro ruo UMF {#unity-formula}
+
+**Usoro batch** (batch recipe) na-edepụta ihe site n'ịdị arọ, nke a na-ahazikarị ka ntọala ruo 100. **Ihe mgbakwunye** (ihe na-enye agba, opacifier na ihe na-eme ka ihe na-ese n'elu) na-aga n'elu 100 ahụ, nke na-abụkarị pasentị nke ntọala. Iji hụ ihe glaze bụ, ndị ọkpụ ite na-atụgharị usoro ahụ ka ọ bụrụ **unity molecular formula** (**UMF**, ma ọ bụ **usoro Seger**, n'aha Hermann Seger, onye jiri nhazi kọlụm atọ ya nke mbụ).
+
+Table: Site n'usoro ruo UMF: ihe atụ Glazy arụchara
+Label: Site n'usoro ruo UMF
+
+| Nzọụkwụ         | Ihe na-eme                                                                                                                | N'ihe atụ ahụ                                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Usoro batch  | Ihe site n'ịdị arọ, ahaziri ruo 100                                                                                       | Feldspar 40%, n'etiti ndị ọzọ                                                                                                       |
+| 2. Nyocha oxide | Dịka akara nri: a na-agbakọ oxide nke ihe ọ bụla dịka pasentị ịdị arọ, a na-ahapụkwa gas                                  | Feldspar ahụ bụ silica 64.8%, ya mere 40% ya na-eweta SiO₂ 25.9%. Glaze a gbara ọkụ bụ SiO₂ 67.4%, Al₂O₃ 12.6%, K₂O 7.5%, CaO 12.5% |
+| 3. Mole         | Ịdị arọ na-aghọ **mole**, ọnụ ọgụgụ molecule, n'ihi na "Gram nwere ike ịghọgbu n'ihi na oxide ụfọdụ dị arọ karịa ndị ọzọ" | 60.1 g nke SiO₂ bụ otu mole, ya mere 67.4 g bụ ihe dị ka mole 1.12                                                                  |
+| 4. Unity        | A na-ekewa ihe niile site na ngụkọta flux, ka flux ruo 1                                                                  | Flux ruru 0.303; ikewa na-enye K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                                            |
+
+[Ibe usoro](/recipe) Glazecalc na-eme nzọụkwụ anọ niile ka ị na-ede, ma na-egosi nsonaazụ ya na kọlụm atọ: flux (R₂O na RO) ruru 1; ndị na-eme ka ọ kwụsie ike (R₂O₃: alumina, ebe a na-etinyekarị boron); na ndị na-ewu iko (RO₂: silica). "Ime ka ha bụrụ otu bụ naanị ngwa ọtụtụ," Glazy kwuru: usoro abụọ e ji ihe dị iche iche mee mana nwere otu UMF "na-akpa àgwà fọrọ nke nta ka ọ bụrụ otu mgbe a gbachara ha ọkụ". Ya mere 1 ahụ bụ ihe ọtụtụ a na-ekerịta, ọ bụghị ọnụ ọgụgụ ị na-atụ. Digitalfire gbakwunyere na ụzọ a "anaghị arụ ọrụ nke ọma n'ọkụ dị ala", ebe boron abụghị flux nkịtị, nakwa na UMF "bụ maka ntụnyere ma ka mma ilele ha n'ọnọdụ ha". **Tụlee** na-edobe formula usoro abụọ n'akụkụ ibe ha oxide na oxide.
+
+### Ọnụ ọgụgụ silica na alumina
+
+Otu nọmba kacha baa uru bụ **ọnụ ọgụgụ silica na alumina**: silica kewara site na alumina. N'ihe atụ ahụ, 3.70 ÷ 0.41 bụ ihe dị ka 9.
+
+Table: Ihe ọnụ ọgụgụ silica na alumina na-egosi (Glazy)
+Label: Ọnụ ọgụgụ silica na alumina
+
+|   Ọnụ ọgụgụ | Ọgụgụ Glazy                                                      |
+| ----------: | ---------------------------------------------------------------- |
+| Ihe dị ka 9 | Na-egosi glaze gbazere na-egbuke, ma ọ bụrụ na ọkụ zuru ezu      |
+|         5–7 | A na-ahụkarị ya n'ọtụtụ glaze stoneware kwụsiri ike              |
+|         3–5 | Nwere ike ịbụ nke anaghị egbuke ma ọ bụ nke a gbaghị ọkụ nke ọma |
+
+Glazy ekwughị cone ọnụ ọgụgụ ndị a bụ maka ya. Gụọ ha dịka ntụzịaka izugbe maka glaze stoneware, ihe dị ka cone 6–10. Digitalfire kwuru na ọnụ ọgụgụ karịrị ihe dị ka 8 nwere ike na-egbuke, mana glaze nwere boron nwere ike na-egbuke na 8 ma ọ bụ n'okpuru ya, nke ọkụ dị ala ọbụna na 6. Ọnụ ọgụgụ 5–7 n'onwe ya anaghị ebu amụma nchapụta ma ọ bụ enweghị nchapụta: flux, boron na cone niile na-akwaga ahịrị ahụ. Glazy na-enye nguzozi flux a na-ahụkarị maka glaze kwụsiri ike nke 0.2 R₂O na 0.8 RO, ruo 0.3 R₂O na 0.7 RO. Alkali karịa na-eme ka glaze gbazere na-asọ karịa ma na-ebuli mgbasawanye ya, ya mere ihe ize ndụ crazing.
+
+### LOI (loss on ignition)
+
+**LOI** (loss on ignition) bụ ịdị arọ ihe na-efunahụ na kiln mgbe mmiri, carbon dioxide, ihe ndụ ma ọ bụ sulfur na-apụ dịka gas. Glaze a gbara ọkụ enweghị ya, ya mere UMF na-ahapụ ya.
+
+Table: LOI a na-ahụkarị (Digitalfire)
+Label: LOI
+
+| Ihe                                   | LOI a na-ahụkarị                                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Whiting (calcium carbonate), dolomite | Karịrị 40%, ọ bụ carbon dioxide ka ukwuu: 100 g calcium carbonate na-ewepụta ihe dị ka 44 g |
+| Lithium carbonate                     | Ihe dị ka 60%                                                                               |
+| Barium carbonate, Gerstley Borate     | Karịrị 20%                                                                                  |
+| Kaolin                                | Ihe dị ka 12–14%, ọ bụ mmiri kegidere na crystal ya ka ukwuu                                |
+| Feldspar                              | Erughị 1%                                                                                   |
+
+Gas na-apụ mgbe glaze malitere ịgbaze ga-esi n'ime ya pụta, na-akpata, n'okwu Digitalfire, "afụ, afụ buru ibu, pinholes, crawling". N'otu nnwale Digitalfire, talc nọgidere na-ewepụta gas ruo ihe dị ka {{1650 °F; 899 °C}}. Frit, ihe **a gbara ọkụ tupu oge** (calcined, a kpọrọ ọkụ tupu oge iji chụpụ gas ha) na mgbanwe n'ịgba ọkụ niile na-enyere aka.
+
+Akwụkwọ ochie na-eji aka eme ngụkọ a, site na **molecular weight** (ịdị arọ otu mole nke ihe ma ọ bụ oxide) na **equivalent weight** (ịdị arọ ihe na-enye otu mole nke oxide). Site na ngụkọ anyị, ihe dị ka 100 g whiting na-enye otu mole, 56 g, nke calcium oxide. Igwe ngụkọ na-eme ha abụọ.
+
+## Oke na chaatị Stull {#stull-chart}
+
+**Chaatị Stull** bụ maapụ glaze. O nwere axis abụọ, ha abụọ site na UMF: silica (SiO₂) n'obosara n'okpuru na alumina (Al₂O₃) n'elu n'akụkụ. Glaze ọ bụla bụ otu ntụpọ. E kewara maapụ ahụ ka ọ bụrụ mpaghara, dịka anaghị egbuke, na-egbuke, a gbaghị ọkụ nke ọma na nke nwere crazing. [Ibe usoro](/recipe) Glazecalc na-ese glaze gị n'elu ya.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull mere chaatị ahụ site na nnwale o bipụtara na 1912. Ọ gbara ha ọkụ n'ihe dị ka cone 11, nnwale ọ bụla nwekwara otu flux ahụ: potash (K₂O) 0.3 na calcium oxide (CaO) 0.7. Naanị silica na alumina gbanwere. Ya mere chaatị ahụ bụ eziokwu maka glaze ndị ahụ n'ọkụ ahụ.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Glaze gị nwere ike ịdị iche. Boron, flux ndị ọzọ na cone dị ala niile na-akwaga mpaghara ndị ahụ. Na 2025 otu edemede Ceramics Monthly nwalere glaze cone 6 nwere flux borate na ọtụtụ iron. Chaatị ahụ debere ya dịka nke nwere crazing, anaghị egbuke na a gbaghị ọkụ nke ọma. N'ezie, ọ gbazere kpamkpam, bụ satin, enweghịkwa crazing. Ndị dere ya kwuru na glaze nwere borate anaghị egosipụta nke ọma na chaatị ahụ. Ya mere jiri mpaghara ndị ahụ dịka ntụzịaka, ọ bụghị amụma.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+Mpaghara **crazing** bụ ebe nnwale Stull n'onwe ya nwetara crazing, n'ụrọ nke ya. Ọ naghị agwa gị otu glaze gị si dabara ụrọ gị. Crazing dabere na mgbasawanye ọkụ nke glaze na ụrọ abụọ. Ọnụ ọgụgụ mgbasawanye Glazecalc na-enyere gị aka ịtụnyere glaze, ma ezigbo nnwale na-ekpebi: nnwale mmiri ice n'ime [Ndabakọ glaze na ntụpọ](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**Formula oke** bụ ngwa ọzọ maka otu ajụjụ ahụ: oke silica, alumina na flux maka glaze kwụsiri ike na cone. [Nchekwa nri](/guides/glazing-basics#food-safety) na-akọwa ha, na ihe kpatara na naanị ha anaghị egosipụta ihe ọ bụla.
 
-## Frits and raw materials {#materials lang=en}
+## Frit na ihe {#materials}
 
-### Frits
+### Frit
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**Frit** bụ iko e mere n'ụlọ ọrụ: mineral agbazere, e mere ka ha jụọ oyi na mberede na mmiri ma gwerie ha. Ime frit na-eme ka ihe na-agbaze na mmiri dịka borax ghara ịgbaze, na-akpọchi oxide nwere nsí dịka lead (Pb) na barium n'ime iko kwụsiri ike, na-enye ihe na-adị otu karịa mineral ndụ, ma na-achụpụ gas, ya mere glaze frit "enweghị ntụpọ karịa nke ukwuu" (Digitalfire). Frit na-agbazekwa n'oge: frit soda na-arụ ọrụ na cone 06, ebe feldspar "na-amalite ịdị nro naanị na cone 6". Ha dị oke ọnụ, ha chọrọ ụrọ ka ha nọgide na-ese n'elu (ihe atụ Digitalfire bụ frit 85% ya na ụrọ 15%), ha bụkwa "ndị na-adịghị agbaze n'echiche, mana n'omume, ha na-agbaze".
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+A na-akpọ frit North America site n'aha onye mere ya na nọmba: Ferro Frit 3134 (Ferro bụzi Vibrantz) so na frit a kacha eji na North America. Usoro UK na-akpọkarị frit izugbe, dịka standard borax frit.
 
-### The common raw materials
+### Ihe a na-ahụkarị
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Ihe glaze a na-ahụkarị na ihe ha na-enye
+Label: Ihe glaze a na-ahụkarị
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Ihe (aha ndị ọzọ)                                 | Na-enye                     | Ndetu                                                                                                                                                                    |
+| ------------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Silica (flint, quartz)                            | SiO₂                        | Jiri mesh 325, egwe dị nro nke ukwuu, na glaze                                                                                                                           |
+| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂                 | Isi mmalite alumina; na-enyekwa aka ka glaze ghara idosi                                                                                                                 |
+| Ball clay                                         | Al₂O₃, SiO₂                 | Dị nro karịa kaolin, nwere iron na ihe ndụ karịa                                                                                                                         |
+| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂      | Flux nwere alumina na silica nke ha. Nepheline syenite bụ flux siri ike maka ọkụ dị ala na nke etiti. "Feldspar" nkịtị n'usoro ochie nwere ike ịpụta nke ọ bụla n'ime ha |
+| Whiting (calcium carbonate)                       | CaO                         | Isi flux calcium; na-ewepụta carbon dioxide                                                                                                                              |
+| Wollastonite                                      | CaO, SiO₂                   | Calcium na-enweghị carbon dioxide                                                                                                                                        |
+| Dolomite, talc                                    | MgO, ya na CaO ma ọ bụ SiO₂ | Elu anaghị egbuke dị nro dịka silk; mgbasawanye dị ala                                                                                                                   |
+| Zinc oxide                                        | ZnO                         | Nchapụta na crystal; nke ukwuu nwere ike ịkpata crawling                                                                                                                 |
+| Frit boron, Gerstley Borate, colemanite           | B₂O₃                        | Dị mkpa site na cone 06 ruo cone 6; frit "na-adị otu karịa ma na-agbaze na mmiri obere karịa borate ndụ"                                                                 |
+| Lithium carbonate                                 | Li₂O                        | Flux mgbasawanye dị ala; dị oke ọnụ, ya mere a na-eji ya nwayọọ                                                                                                          |
+| Strontium carbonate                               | SrO                         | Nnọchi barium nwere obere nsí                                                                                                                                            |
+| Barium carbonate                                  | BaO                         | Nwere nsí mgbe ọ dị ndụ; glaze nwere ọtụtụ barium nwere ike ịhapụ metal (leaching)                                                                                       |
+| Bentonite                                         | Ime ka ọ na-ese             | Ụrọ dị nro nke ukwuu, na-abụkarị 1–2%, iji kwụsị idosi. Karịrị 3% nwere ike ịgbawa glaze ka ọ na-akpọ nkụ                                                                |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Ihe glaze bụ ntụ dị nro. Uzuzu silica na-emerụ ngụgụ ahụ na-enweghị mgbaàmà na mbụ, ụfọdụ ihe, dịka barium carbonate na lithium carbonate, nwere nsí ma ọ bụrụ na e loo ha. Jiri nwayọọ jide ntụ, jiri mmiri hichaa, ma yiri respirator dabara nke ọma mgbe ị na-arụ ọrụ na ihe akọrọ. [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing) na [Enyela ezinụlọ gị nsí](/guides/home-safety) na-akọwa otu esi eme ya.
 
-### Regional names
+### Aha mpaghara
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **Kaolin** bụ **china clay** na UK. Na Australia, Eckalite bụ otu aha ngwaahịa kaolin.
+- **Flint** bụ aha UK ochie maka silica. Ndị na-ere ahịa UK ka na-ere **calcined flint** dịka ngwaahịa nke ya, ya mere "flint" n'usoro Britain nwere ike ịpụta calcined flint, na nke America nwere ike ịpụta quartz egweriri egwe. A na-ere ha abụọ dịka isi mmalite silica; lelee nyocha ahụ.
+- **China stone** na **Cornish stone** (Cornwall stone) bụ otu ihe ahụ, metụtara feldspar.
+- **Whiting** bụ calcium carbonate, nzu ma ọ bụ nkume limestone egweriri egwe.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Kpee ihe ikpe site n'oxide ọ na-enye, ọ bụghị site n'aha ya. Otu a ka Glazecalc si arụ ọrụ: ị nwere ike itinye nyocha onye na-ere gị na [ibe Ihe](/material), **Nwalee ihe nke oge a ma tụlee**, **Tụọ aro ọnụ ọgụgụ ma tụlee** na **Kwekọọ na ihe m nwere** niile na-akwekọ oxide a gbara ọkụ, ọ bụghị aha.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Ihe na-agbanwekwa. US Geological Survey kọrọ na ebe ngwuputa na ụlọ ọrụ na-emepụta Custer feldspar, na South Dakota, kwụsịrị ọrụ na Nọvemba 2023. Ebe ngwuputa Gerstley Borate mbụ mechiri ihe dị ka 1999–2000; Laguna ka na-ere ngwaahịa n'aha ahụ, Gillespie Borate bụkwa isi nnọchi. Isi mmalite ekwekọrịtaghị ma Gillespie na-anọchi Gerstley Borate pound maka pound (onye mere ya na Potclays kwuru ee, Digitalfire na ndị ọzọ kwuru mba), ya mere tụlee ha abụọ na Glazecalc, emesịa nwalee obere batch.
 
-## Colorants and opacifiers {#color lang=en}
+## Ihe na-enye agba na opacifier {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**Ihe na-enye agba** (colorant) bụ oxide metal ma ọ bụ carbonate na-enye glaze agba; **stain** bụ ihe na-enye agba e mere n'ụlọ ọrụ, kwụsiri ike ma na-adị otu karịa oxide ndụ. Ihe na-enye agba na-adịkarị n'okpuru 5% nke ntọala, ọtụtụ n'okpuru 1%, carbonate na-adịkwa ike obere karịa oxide kwekọrọ na ya, n'ihi na akụkụ ya na-apụ dịka gas. Site na ngụkọ anyị, 100 g cobalt carbonate na-enye ihe dị ka 63 g cobalt oxide, 100 g copper carbonate ndị ọkpụ ite na-azụta (basic copper carbonate) na-enyekwa ihe dị ka 72 g copper oxide. Ya mere jiri carbonate dị ihe dị ka okpukpu 1.4 ruo 1.6 nke oxide.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Ihe na-enye agba a na-ahụkarị, dịka pasentị nke ntọala
+Label: Ihe na-enye agba a na-ahụkarị
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Ihe na-enye agba | Ọnụ ọgụgụ mmalite a na-ahụkarị                   | Agba na ndetu                                                                                                                                                             |
+| ---------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cobalt           | 0.1–2% (isi mmalite ekwekọrịtaghị)               | Acha anụnụ anụnụ, siri ike nke ukwuu; na-aga n'odo odo mgbe ntọala nwere magnesium                                                                                        |
+| Iron             | 0.5–10%                                          | Aja aja, aja aja na-adịghị ike na ọbara ọbara na oxidation; na reduction, ½–2% na-enye celadon, 5–10% na-enyekwa tenmoku. Ọ bụ flux, ya mere ọtụtụ na-eme ka glaze na-asọ |
+| Copper           | 1–3%                                             | Akwụkwọ ndụ ma ọ bụ turquoise na oxidation, ọbara ọbara na reduction. Ọ nwere ike ime ka glaze hapụ metal (leaching)                                                      |
+| Chrome           | N'okpuru 0.5% ruo 2% (isi mmalite ekwekọrịtaghị) | Akwụkwọ ndụ; aja aja ma ọ bụrụ na ntọala nwere zinc, pink ya na tin                                                                                                       |
+| Manganese        | 2–10%                                            | Aja aja na odo odo                                                                                                                                                        |
+| Rutile           | Ihe dị ka 2–5%                                   | Agba nwere ntụpọ, dị iche iche; siri ike ma ọ bụ anaghị egbuke n'elu ihe dị ka 5%                                                                                         |
+| Stain azụmahịa   | 2–12%                                            | 2–4% maka agba na-adịghị ike, 5–8% maka ụda agba, 10–12% maka agba siri ike                                                                                               |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+A na-arụrịta ụka n'ezie banyere ọnụ ọgụgụ cobalt na chrome. Glazy kwuru na cobalt 0.1% zuru maka acha anụnụ anụnụ; Glendale Community College na-enye ½–2% ma ọ bụ ½–3% dabere n'ikuku kiln; Birdie Boone, na Pottery Making Illustrated, kwuru 3% ma ọ bụ obere. Maka chrome, Boone kwuru n'okpuru 0.5%, Glendale kwukwara 2–3%. Ụzọ dị nchekwa bụ ịmalite na obere ma mee **line blend**: ahịrị test tile na-ebuli otu ihe site na obere ruo ọtụtụ.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+Glaze ntọala na-agbanwe agba. Ntọala na-egbuke, doro anya na-enye agba kacha na-egbuke; ntọala satin na nke anaghị egbuke, nke na-enwekarị alumina karịa, na-eme ka ọ dị nwayọọ. Magnesium na-akwanye cobalt gaa n'odo odo, zinc na-eme ka chrome bụrụ aja aja, chrome ya na tin na-enyekwa pink.
 
-### Opacifiers
+### Opacifier
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+**Opacifier** na-eme ka glaze **ghara ikwe ka ìhè gafee**, na-ezo ụrọ; glaze **doro anya** na-ekwe ka ọ pụta ìhè.
 
-Table: Opacifiers
+Table: Opacifier
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Opacifier                           | Ọnụ ọgụgụ a na-ahụkarị           | Ndetu                                                                                                                                                           |
+| ----------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zircon (Zircopax, Superpax, Ultrox) | 10–15% maka igbochi ìhè kpamkpam | Nhọrọ dị ọnụ ala karịa; aha ngwaahịa ndị a bụ zirconium silicate egweriri n'ụdị dị iche iche, ọkwa dị nro karịa siri ike karịa                                  |
+| Tin oxide                           | Ihe dị ka 5–7% (atụmatụ anyị)    | Dị oke ọnụ; adịghị ike n'ọkụ dị elu, Digitalfire kọkwara na 4% egbochighị ìhè ma ọlị na glaze reduction cone 10 doro anya                                       |
+| Titanium dioxide                    | Ihe dị ka 5% (atụmatụ anyị)      | Igbochi ìhè dị nro dịka silk, nke ìhè na-agafe ntakịrị; ihe dị ka 5% nwere ike ime ka elu dịgasị iche, nke ka ukwuu na-enyekarị elu anaghị egbuke nwere crystal |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Ndabakọ glaze na ntụpọ {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+Ụrọ na glaze abụọ na-agbasa mgbe ha na-ekpo ọkụ ma na-ebelata mgbe ha na-ajụ oyi, nke ọ bụla n'ọnụ ọgụgụ nke ya: **mgbasawanye ọkụ** ya. **Ndabakọ glaze** (glaze fit) bụ otu ha abụọ si dabara. Ndabakọ dị mma na-ahapụ glaze ka ụrọ pịakọrọ ya ntakịrị; Digitalfire kwuru na ịpịakọ ntakịrị na-eme ka ihe sie ike, ebe nke ukwuu nwere ike ime ka ọ dị ike ọbụna gbawaa ya.
 
-### Crazing and shivering
+### Crazing na shivering
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**Crazing** (obere mgbawa) bụ ụgbụ nke obere mgbawa. Mgbasawanye glaze dị elu karịa nke ụrọ, ya mere mgbe ọ na-ajụ oyi ọ na-ebelata karịa, a na-adọta ya ma ọ gbawaa, na-abụkarị n'ihi sodium na potassium karịrị akarị (Na₂O, K₂O). Ọ nwekwara ike ịpụta emesịa, n'oge ojiji, mgbe ọ jụrụ oyi na mberede ugboro ugboro dịka imetụ mmiri oyi. Mgbe a chọrọ ya, dịka na raku, a na-akpọ ya **crackle**. Digitalfire kwuru "95% nke oge azịza ya bụ idozi mgbasawanye ọkụ nke glaze"; ime ka ọ jụọ oyi nwayọọ nwayọọ na-egbu oge crazing naanị. Nnwale ya: kpoo ihe ahụ ọkụ ruo ihe dị ka {{300 °F; 149 °C}}, mikpuo ya na mmiri ice, ma were pen felt tee ya n'elu iji gosi mgbawa.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Isi mmalite dị iche banyere azịza mbụ. Glazy na-atụ aro ịgbakwunye silica ma ọ bụ alumina; Digitalfire zara na silica karịa "na-eme ka KNaO dị nro naanị" (sodium na potassium); Linda Bloomfield na-agbakwunye boron ma ọ bụ belata feldspar, otu ihe n'otu oge. Ndụmọdụ anyị: na [igwe ngụkọ usoro](/recipe), gbanwee akụkụ sodium na potassium na flux mgbasawanye dị ala (boron, lithium, magnesium, calcium), lelee mgbanwe ahụ site na **Tụlee**, ma kwado ya site na nnwale mmiri ice.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**Shivering** bụ nke ọzọ: mgbasawanye glaze dị ala karịa nke ụrọ nke ukwuu, ya mere a pịakọrọ ya karịa ma ọ na-adapụ n'ọnụ na akụkụ. Digitalfire dọrọ aka na ntị na mpekere ndị ahụ nwere ike ịdị nkọ dịka mma ma e nwere ike ilo ha, Glazy kpọkwara shivering "dị ize ndụ karịa ọbụna crazing n'ihe ojiji". Azịza ya bụ glaze mgbasawanye dị elu ma ọ bụ ụrọ mgbasawanye dị ala.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> Ejila ihe nwere crazing ma ọ bụ shivering maka nri ma ọ bụ ihe ọṅụṅụ. Isi mmalite ekwekọrịtaghị ma e nwere ike ihicha ite nwere crazing nke ọma (otu kwuru na igwe ịsa efere ga-ezu; nke ọzọ kpọrọ ihe ojiji nwere crazing ihe nwere ntụpọ), ya mere anyị na-ewere akụkụ ịkpachara anya.
 
-### Gloss and matte
+### Na-egbuke na anaghị egbuke
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Elu **na-egbuke** na-egbukepụ ìhè ma dị nro, **satin** nwere nchapụta dị nwayọọ, elu **anaghị egbuke** (matte) adịghịkwa egbuke. Nchapụta chọrọ iko gbazere kpamkpam. Enweghị nchapụta nwere ike isi n'ọtụtụ alumina (ọnụ ọgụgụ silica na alumina dị ala), site na flux dịka calcium, magnesium, barium ma ọ bụ strontium na-eme obere crystal ka glaze na-ajụ oyi, ma ọ bụ site n'ịgbaghị ọkụ nke ọma.
 
-### Common defects
+### Ntụpọ a na-ahụkarị
 
-Change one thing at a time, and keep your test tiles.
+Gbanwee otu ihe n'otu oge, ma debe test tile gị.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Ntụpọ glaze a na-ahụkarị, ihe na-akpatakarị ha na azịza mbụ
+Label: Ntụpọ glaze a na-ahụkarị
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Ntụpọ            | Ọdịdị ya                                         | Ihe na-akpatakarị ya                                                                                                                                              | Azịza mbụ                                                                                                   |
+| ---------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Crawling         | Glaze na-adọghachi ghọọ mkpụrụ, na-ahapụ ụrọ efu | Bisque nwere uzuzu ma ọ bụ mmanụ; mkpuchi dị ọkpụrụkpụ, nwere ọtụtụ ụrọ gbawara ka ọ na-akpọ nkụ; zinc, zircon ma ọ bụ tin                                        | Hichaa bisque; mkpuchi dị gịrịgịrị; gbaa akụkụ ụrọ ọkụ tupu oge (calcine); gbakwunye ihe njikọ dịka CMC gum |
+| Pinholing        | Obere oghere ma ọ bụ olulu                       | Gas si n'ụrọ ma ọ bụ glaze nke na-emechighị; glaze a gbaghị ọkụ nke ọma ma ọ bụ siri ike                                                                          | Chere n'ọkụ kacha elu ihe dị ka ọkara awa; mkpuchi dị gịrịgịrị; obere zinc ma ọ bụ rutile                   |
+| Afụ (blistering) | Olulu nwere ọnụ dị nkọ                           | Na-abụkarị ịgbafe ọkụ; mkpuchi dị ọkpụrụkpụ nke ukwuu; flux na-ekpo ọkụ n'elu ihe dị ka {{2192 °F; 1200 °C}}                                                      | Gbaa ọkụ dị ala; mkpuchi dị gịrịgịrị. Ọnụ dị nkọ na-eme ka ihe ojiji ghara inwe nchekwa                     |
+| Ịsọ              | Glaze na-asọ n'elu shelf                         | Obere alumina; dị ọkpụrụkpụ nke ukwuu, dịka ebe ịwụ zutere; ọtụtụ iron                                                                                            | Mkpuchi dị gịrịgịrị; gbakwunye alumina; debe glaze n'elu ụkwụ nke ọma                                       |
+| Dunting          | Mgbawa n'ite site n'ịjụ oyi ma ọ bụ ikpo ọkụ     | Ịjụ oyi ngwa ngwa site na quartz inversion, {{1063 °F; 573 °C}}, ma ọ bụ cristobalite inversion, ihe dị ka {{428 °F; 220 °C}}; mgbidi na-adịghị otu; ndabakọ ọjọọ | Gbaa ọkụ nwayọọ site na ha abụọ, elu na ala; mgbidi hà nhata                                                |
 
-## Food safety {#food-safety lang=en}
+## Nchekwa nri {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Ịhapụ metal** (leaching) bụ metal na-agbapụta site na glaze a gbara ọkụ banye na nri ma ọ bụ ihe ọṅụṅụ, glaze nwere ike ịdị ka ọ zuru oke ma ka na-eme ya. Nnwale iwu na-etinye mpempe a gbara ọkụ na mmiri acid ma tụọ lead (Pb) na cadmium na-apụta.
 
-### Lead-free is not the same as food-safe
+### Enweghị lead adịghị otu na ịdị mma maka nri
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Iwu US, EU, UK na Australia na-edobe oke lead na cadmium mpempe a gbara ọkụ na-ahapụ, ọ bụghị ihe glaze nwere. "Enweghị lead" na-ewepụ otu ihe ize ndụ; ọ bụghị ọkwa nchekwa nri. Oxide ndị ọzọ na-apụtakwa: Glazy dọrọ aka na ntị na glaze nwere ọtụtụ barium "nwere ike ịhapụ metal ma n'ozuzu adịghị mma maka nri", Digitalfire kwuru na copper "nwere ike ime ka glaze hapụ metal; nwalee ya", Glazy anaghịzi atụ aro glaze lead maka ihe ojiji.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Liner glaze** bụ glaze kwụsiri ike, na-adịkarị doro anya ma ọ bụ ọcha, maka elu na-emetụ nri. N'echiche anyị, nke na-enweghị ihe na-enye agba, barium, lead ma ọ bụ lithium, na-agbaze kpamkpam, na-enweghị crazing ma na-adịgide nke ọma, bụ nhọrọ nwere obere ihe ize ndụ. Obere ihe ize ndụ abụghị ihe akaebe.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Formula oke** (Digitalfire na-ahọrọ **formula a na-achọ**) na-enye oke UMF a na-ahụkarị maka glaze kwụsiri ike na cone: ihe Digitalfire na-achọ maka cone 6 na-etinye alumina na 0.285–0.64 na silica na 2.4–4.7. Ha na-eduzi gị gaa na kemistri dị mma mana ha anaghị egosipụta ihe ọ bụla; Digitalfire na-ezere okwu "oke" n'ihi na ọ na-egosi na glaze dị n'ime oke ndị ahụ "dị nchekwa n'ụzọ ụfọdụ". Ngwa Glazecalc maka ịgbanwe usoro na-akọ mgbe nke ọhụrụ gafere oke a tụrụ aro, dịka ọtụtụ boron na cone 6, na ihe glaze nwere ike ime.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+Oke iwu na-adịgasị iche site na mba. Tebụl ahụ na-egosi nke ebe ị bi, n'ọtụtụ iwu ahụ n'onwe ya; họrọ mba ma ọ bụ mpaghara ọzọ iji tụnyere.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+Na US, ihe ụrọ ịchọ mma yiri ka e nwere ike iji ya maka nri ka a na-ewere dịka ihe nri belụsọ ma o nwere akara a na-arapara na ọkwa na-adịgide adịgide a kpụrụ ma ọ bụ gbaa ọkụ n'okpuru ya, dịka "Not for Food Use. May Poison Food", ma ọ bụ nwee oghere gafere elu nri. EU na-edobe oke lead na cadmium maka ihe ụrọ na Directive 84/500/EEC, UK na-edebekwa otu ọnụ ọgụgụ ahụ n'iwu nke ya. Mkpebi 2024 nke mba Benelux na-edobe oke dị ala karịa nke ukwuu maka ihe ụrọ. Netherlands malitere iji ha site na 29 Mee 2026: ihe dị ka okpukpu 130 ruo 150 obere lead na ihe dị ka okpukpu 14 ruo 18 obere cadmium karịa ọnụ ọgụgụ EU. Ihe kwekọrọ n'iwu ochie e rere nke mbụ tupu 1 Disemba 2026 nwere ike ka a na-ere ya ruo mgbe ngwaahịa dị gwụrụ. Ụlọ nnwale kọrọ na Luxembourg na-eji otu oke ahụ site na 29 Mee 2026, nakwa na Belgium nabatara ha n'iwu eze nke 19 Julaị 2026; anyị agụbeghị ederede ndị ahụ n'onwe anyị. Australia na-edobe oke maka ihe a na-ebubata; anyị ahụghị oke gọọmentị maka ihe e mere na Australia ma ọ bụ New Zealand.
 
-### Testing
+### Nnwale
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+FDA kwuru na ngwa nnwale ihichapụ n'ụlọ nwere ike igosi lead na-apụta, mana nnyocha na-egosi na ngwa ndị a na-ezikarị ihe na-ezighị ezi n'ihe nwere glaze: ha nwere ike igosi lead na-adịghị ya, ha nwekwara ike ịhapụ lead na-apụta. Were nsonaazụ dị mma (positive) dịka ihe kpatara ịkwụsị iji mpempe ahụ, na nke na-adịghị mma (negative) dịka nke na-egosipụtaghị ihe ọ bụla. Nnwale ụlọ nyocha maka metal na-apụta (leach test) nke mpempe a gbara ọkụ (ASTM C738 na US; EN 1388 ma ọ bụ ISO 6486 na Europe) bụ ezigbo azịza.
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> "Dị mma maka nri" pụtara na glaze a, n'elu ụrọ a, a gbara ọkụ ruo cone a na kiln a ma tinye ya n'ụzọ a, na-ahapụ ihe erughị oke iwu. Glazecalc nwere ike inyere gị aka iwu glaze kwụsiri ike, **Dochie lead** nwekwara ike iwughachi usoro lead ochie na-enweghị lead, mana ọ dịghị igwe ngụkọ nwere ike ịkwado ite. Naanị nnwale nke mpempe a gbara ọkụ nwere ike.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## SG na itinye {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### SG (specific gravity)
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+Ntụ glaze agwakọtara na mmiri bụ **slurry**. **SG** ya (**specific gravity**) bụ ịdị arọ ya ma e tụnyere ya na otu olu mmiri ahụ, nke nwere SG nke 1.0: ka ọ dị elu, ka ntụ dị na bọket na-ebawanye. Glazy kpọrọ 1.4–1.5 "ezigbo ebe mmalite maka ọtụtụ glaze". Iji tụọ ya, tụọ 100 mL slurry kpọmkwem (Glazy na-atụ aro syringe) ma kewaa ya site na 100: 145 g pụtara SG 1.45. Enweghị ike ịtụkwasị hydrometer obi na glaze kpụkọrọ akpụkọ, mmiri na-ekpokwa ọkụ, ya mere lelee ọzọ tupu ị tinye glaze.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Ihe a na-achọ dị iche site n'isi mmalite. Digitalfire na-etinye glaze ịmikpu na 1.40–1.50 na glaze brọsh azụmahịa na 1.25–1.55, ebe Potclays na-enye 1.71–1.81 maka brọsh na 1.71 maka ịgba. Ndụmọdụ anyị: mikpuo n'ihe dị ka 1.45 ka glaze kpụkọrọ ntakịrị, soro akara maka glaze brọsh, ma dee ihe na-arụ ọrụ.
+
+**Flocculant** (nnu Epsom, mmanya ma ọ bụ calcium chloride) na-eme ka slurry kpụkọ ntakịrị, na-eme ya **thixotropic**: ọ na-asọ mgbe a na-akpali ya ma na-akpụkọ mgbe ọ kwụ ọtọ, maka "mkpuchi glaze hà nhata, na-adịghị adapụ". **Deflocculant** (sodium silicate ma ọ bụ Darvan) na-eme ka ọ dị gịrịgịrị. [Otu esi eme glaze](/guides/making-a-glaze) na-akọwa ịgwakọta na idozi.
+
+### Itinye glaze
+
+Hichaa uzuzu na mmanụ n'elu bisque na mbụ site n'ogbo nwere obere mmiri kama ịsa ya, nke na-eme ka ọ mịrị mmiri. Afụla uzuzu ahụ site n'ikuku a pịakọrọ ma ọ bụ zaa ya mgbe ọ kpọrọ nkụ: nke ahụ na-etinye uzuzu silica n'ikuku ([Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing#cleaning)).
+
+- **Ịmikpu** "n'ozuzu na-enye mkpuchi nke ọkpụrụkpụ ya hà nhata" (Robin Hopper). Oge ịmikpu na-ekpebi ọkpụrụkpụ: Digitalfire kwuru na a na-eme glaze ịmikpu azụmahịa n'ihe dị ka 1.4 maka ịmikpu sekọnd 5 na 1.5 maka ịmikpu sekọnd 1.
+- Glaze **ịwụ** kwesịrị ịdị "gịrịgịrị ntakịrị karịa mgbe a na-eji ya maka ịmikpu"; ebe ịwụ zutere, mkpuchi na-aghọ okpukpu abụọ ma nwee ike ịsọ.
+- Glaze **brọsh** nwere gum dịka **CMC gum**, nke na-enyere glaze aka ịsọ ma rapara, emesịa ọ na-ere. Ọtụtụ chọrọ ọtụtụ mkpuchi, na-abụkarị abụọ ma ọ bụ atọ; soro akara.
+- **Ịgba** na-eji glaze dị gịrịgịrị karịa nke ukwuu, a na-etinye ya n'"ọtụtụ mkpuchi dị gịrịgịrị, na-ewuli ọkpụrụkpụ nwayọọ nwayọọ".
+
+> [!WARNING]
+> Gbaa naanị n'ime spray booth nwere ikuku na-apụ, yi respirator dabara nke ọma. Lee [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing).
+
+Mkpuchi dị ọkpụrụkpụ nke ukwuu nwere ike ime crawling, afụ ma ọ bụ ịsọ. Iwu mkpịsị aka ndị na-ere ahịa sitere n'ọkpụrụkpụ kaadị kredit ruo nke dime America, site n'atụmatụ anyị ihe dị ka 1 mm glaze akọrọ; test tile n'ọkpụrụkpụ ole na ole bụ nlele a pụrụ ịtụkwasị obi. **Wax resist** (wax) n'ụkwụ na-achụ glaze, ka ite ghara ịrapara na shelf, **kiln wash**, mkpuchi na-eguzogide ọkụ a na-ejikarị kaolin na silica eme, na-echekwa shelf pụọ na ntụpọ na-adapụ.
+
+## Oxidation na reduction {#atmosphere}
+
+Gas dị n'ime kiln, **ikuku ya** (atmosphere), na-agbanwe otu glaze si apụta. **Oxidation** pụtara ọtụtụ oxygen. "Kiln ọkụ eletrik bụ otu ihe na ịgba ọkụ oxidation," Digitalfire kwuru, glaze oxidation na-egbukekarị karịa nke reduction, karịsịa n'ọkụ dị ala. Na oxidation, copper na-enye akwụkwọ ndụ na turquoise, iron na-enyekwa aja aja, aja aja na-adịghị ike na ọbara ọbara. Kiln ọkụ eletrik ikuku anaghị apụ nke ọma jupụtara n'ihe na-ewepụta gas nwere ike ịdị n'etiti karịa ka e bu n'obi; ihe ikuku na-apụ ejikọrọ ozugbo na kiln na-enyere aka.
+
+**Reduction** na-ebelata oxygen n'ụma, na-abụkarị na kiln gas, osisi ma ọ bụ kiln pụrụ iche. Copper na-aghọ ọbara ọbara, iron na-aghọkwa flux siri ike karịa ma na-enye **celadon** (acha anụnụ anụnụ na akwụkwọ ndụ ruo ntụ ntụ na akwụkwọ ndụ, site n'ihe dị ka ½–2% iron) na **tenmoku** (temmoku: aja aja na oji, ihe dị ka 5–10% iron). Glazy kwuru na celadon na ọbara ọbara copper "dabere na reduction". Ụrọ na-agbanwekwa: n'otu ntụnyere Digitalfire, ụrọ stoneware pụtara na-acha ntụ ntụ na reduction na odo ntakịrị na oxidation. Silicon carbide na glaze nwere ike ime obere mpaghara reduction ọbụna na kiln ọkụ eletrik. Maka reduction site na cone 010 ruo cone 3, Orton na-atụ aro cone ya na-enweghị iron.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Tụọ anya na usoro e dere maka kiln gas reduction ga-apụta iche na kiln ọkụ eletrik: celadon ma ọ bụ ọbara ọbara copper dabere na reduction agaghị adị otu na oxidation. Lelee ikuku kiln e mere usoro ahụ maka ya, ma dee nke gị, ya na cone, na ndetu usoro na Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Kiln ọ bụla, gụnyere nke ọkụ eletrik, na-ewepụta anwụrụ ọkụ, ya mere mee ka ikuku si na ya pụọ. [Ịgwakọta n'enweghị ihe ize ndụ na ikuku dị ọcha](/guides/safe-mixing) na-akọwa otu esi eme ya.
 
-## Glossary {#glossary lang=en}
+## Nchịkọta okwu {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Ihe mgbakwunye (additive)
+: Ihe na-enye agba, opacifier ma ọ bụ ihe na-eme ka ihe na-ese n'elu a gbakwunyere n'elu 100 nke usoro.
 
 Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+: Isi onye na-eme ka ọ kwụsie ike: na-akwụsị ịsọ ma na-agbakwunye ike. Site n'ụrọ na feldspar.
 
 Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+: Ụrọ dị nro nwere iron na ihe ndụ karịa kaolin.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Usoro batch (batch recipe)
+: Ihe glaze site n'ịdị arọ, na-erukarị 100.
 
 Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+: Ụrọ dị nro nke ukwuu a na-agbakwunye n'ihe dị ka 1–2% ka glaze ghara idosi. Karịrị 3% nwere ike ịgbawa glaze ka ọ na-akpọ nkụ.
 
 Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+: Ịgba ọkụ mbụ, nke dị ala, na-abụkarị cone 08–04 (ọtụtụ mgbe 06–04), na-ahapụ ihe ka ọ sie ike mana nwee obere oghere.
 
 Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+: N'iwu ọ bụ onye na-ewu iko mana a na-eji ya dịka flux; dị mkpa site na cone 06 ruo cone 6.
 
 CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+: Gum cellulose na-enyere glaze aka ịga n'elu site na brọsh ma rapara; ọ na-ere.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Ihe na-enye agba na stain
+: Oxide metal ma ọ bụ carbonate na-enye glaze agba; stain bụ ihe na-enye agba e mere n'ụlọ ọrụ, kwụsiri ike karịa.
 
 Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+: Pyramid ụrọ a tụziri atụ na-ehulata na heatwork edobere. Cone akaebe na-egosi ihe ite nwetara.
 
 Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+: Glaze na-adọghachi ghọọ mkpụrụ n'oge ịgba ọkụ, na-ahapụ ụrọ efu.
 
 Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+: Obere mgbawa na glaze na-ebelata karịa ụrọ ya; crackle mgbe a chọrọ ya.
 
 Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+: Crystal na-eto site n'iko n'oge mmalite ịjụ oyi, ebe a na-achọghị ha.
 
 Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+: Mgbawa n'ite site na nrụgide ịjụ oyi ma ọ bụ ikpo ọkụ, na-abụkarị na quartz inversion, {{1063 °F; 573 °C}}.
 
 Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+: Ụrọ ọkụ dị ala (ihe dị ka cone 06–02), nwere obere oghere na cone dị ala ma na-esi ike karịa mgbe a gbara ya ọkụ karịa.
 
 Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+: Mineral na-enye flux alkali ya na alumina na silica: potash, soda ma ọ bụ nepheline syenite.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Flocculant na deflocculant
+: Ihe mgbakwunye na-eme ka slurry kpụkọ (nnu Epsom, mmanya) ma ọ bụ mee ka ọ dị gịrịgịrị (sodium silicate, Darvan).
 
 Flux
-: An oxide that lowers the melting temperature of silica.
+: Oxide na-ebelata ọkụ ịgbaze nke silica.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Dị mma maka nri
+: N'iwu, ịhapụ lead na cadmium erughị oke na nnwale acid. Adịghị otu na enweghị lead.
 
 Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+: Iko e mere n'ụlọ ọrụ, agbazere, e mere ka ọ jụọ oyi na mberede ma gwerie ya, nke na-eme ka oxide na-agbaze na mmiri ma ọ bụ nwere nsí ghara ịgbaze.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Onye na-ewu iko
+: Oxide na-ewu iko, na-abụkarị silica.
 
 Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+: Mkpuchi iko na-agbaze n'oge ịgba ọkụ iji mechie ma chọọ ite mma.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Ịgba glaze ọkụ (UK: glost firing)
+: Ịgba ọkụ na-agbaze glaze.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Ndabakọ glaze (glaze fit)
+: Otu mgbasawanye glaze na nke ụrọ si dabara; ndabakọ dị mma na-ahapụ glaze ka a pịakọrọ ya ntakịrị.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Na-egbuke, satin na anaghị egbuke
+: Na-egbukepụ ìhè ma dị nro; nchapụta dị nwayọọ; adịghị egbuke.
 
 Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+: Ihe a gbabeghị ọkụ: leather-hard mgbe ọ siri ike mana nwere mmiri, bone dry mgbe enweghị mmiri fọdụrụ.
 
 Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+: Mmetụta jikọtara ọnụ nke ọkụ na oge na kiln; ihe cone na-atụ.
 
 Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+: Ụrọ ọcha dị ọcha na-enye alumina na silica; na-enyere aka ka glaze ghara idosi. Na Australia, Eckalite bụ otu aha ngwaahịa.
 
 Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+: Mkpuchi na-eguzogide ọkụ na-echekwa shelf kiln pụọ na ntụpọ na-adapụ.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Ịhapụ metal (leaching)
+: Metal na-agbapụta site na glaze a gbara ọkụ banye na nri ma ọ bụ ihe ọṅụṅụ.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Formula oke (formula a na-achọ)
+: Oke UMF a na-ahụkarị maka glaze kwụsiri ike na cone; ntụzịaka, ọ bụghị nkwa.
 
 Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+: Nnwale na-ebuli otu ihe n'etiti ọnụ ọgụgụ abụọ. Triaxial blend na-agbanwe atọ n'elu grid.
 
 Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+: Glaze kwụsiri ike, na-adịkarị doro anya ma ọ bụ ọcha, maka elu na-emetụ nri.
 
 LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+: Ịdị arọ furu efu n'oge ịgba ọkụ dịka mmiri, carbon dioxide, ihe ndụ ma ọ bụ sulfur.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Ịgba ọkụ otu ugboro (once-firing)
+: Itinye glaze n'ihe a gbabeghị ọkụ ma gbaa ya ọkụ naanị otu ugboro.
 
 Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+: Ihe, dịka zircon, tin oxide ma ọ bụ titanium dioxide, na-eme ka glaze ghara ikwe ka ìhè gafee.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Oxidation na reduction
+: Ịgba ọkụ na ọtụtụ oxygen (kiln ọkụ eletrik), ma ọ bụ na oxygen belatara (na-abụkarị gas ma ọ bụ osisi).
 
 Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+: Ngwakọta element na oxygen; nyocha oxide na-edepụta ha site na pasentị ịdị arọ.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Pinholing na afụ
+: Obere oghere, ma ọ bụ olulu nwere ọnụ dị nkọ, ebe gas gbapụrụ site na glaze gbazere.
 
 Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+: Ụrọ ọcha, nwere ọtụtụ kaolin, nke ọkụ dị elu, nke ìhè na-agafekarị.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O na RO
+: Flux alkali (Na₂O, K₂O, Li₂O) na flux alkaline earth (CaO, MgO, BaO, SrO, ya na ZnO).
 
 Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+: Glaze na-adapụ n'ọnụ n'ihi na a pịakọrọ ya karịa; ihe ize ndụ n'ihe ojiji.
 
 Silica (SiO₂)
-: The glass former; also called flint or quartz.
+: Onye na-ewu iko; a na-akpọkwa ya flint ma ọ bụ quartz.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Ọnụ ọgụgụ silica na alumina
+: Silica kewara site na alumina na UMF: nke dị elu na-aga na nchapụta, nke dị ala na enweghị nchapụta.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Slip na engobe
+: Ụrọ na mmiri; engobe bụ mkpuchi yiri slip nwere ihe na-abụghị ụrọ karịa.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+SG (specific gravity)
+: Ịdị arọ slurry ma e tụnyere ya na otu olu mmiri ahụ.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Onye na-eme ka ọ kwụsie ike
+: Oxide, karịsịa alumina, na-eme ka glaze gbazere sie ike ma na-agbakwunye ịdịgide.
 
 Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+: Ụrọ ọkụ etiti ruo nke dị elu (ihe dị ka cone 5–10) nke na-aghọ dị ka iko ma ọ bụ fọrọ nke nta.
 
 Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+: Ịsọ mgbe a na-akpali ya, ịkpụkọ ghọọ jel dị nro mgbe ọ kwụ ọtọ.
 
 Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+: Slip nwere agba ma ọ bụ ihe ịchọ mma oxide, na-adịkarị n'okpuru glaze doro anya.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Unity molecular formula (UMF, usoro Seger)
+: Oxide glaze dịka ọnụ ọgụgụ molecule, ahaziri ka flux ruo 1.
 
 Vitrification
-: A body becoming glassy and non-porous in firing.
+: Ụrọ na-aghọ dị ka iko na enweghị oghere n'oge ịgba ọkụ.
 
 Wax resist
-: Wax painted where glaze must not go, usually the foot.
+: Wax a na-ete ebe glaze ekwesịghị ịga, na-abụkarị ụkwụ.
 
 Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+: Calcium carbonate, isi flux calcium; na-efunahụ ihe dị ka 44% nke ịdị arọ ya n'oge ịgba ọkụ, dịka carbon dioxide.
 
-## Sources {#sources lang=en}
+## Isi mmalite {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

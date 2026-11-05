@@ -59,31 +59,31 @@ Label: Soluble materialkuna
 
 Titipa hatun manchakuyninqa hukmi: manan huk cucharachu, aswanpas huch'uy hayk'a ñut'u allpa semanakunapi utaq killakunapi millp'usqa, mana ima rikch'aywan (uraypi qhaway Titi, wawakuna).
 
-## Storing materials at home {#storing-materials lang=en}
+## Materialkunata wasipi waqaychay {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Manam huk kamachiq wasi esmalte materialkunata wasipi waqaychanapaq kamachiykunata churanchu, ichaqa qhali kaymanta mana manchakuymanta p'anqakunaqa huk yuyayllam: llamk'ayta kikin maypinpi waqaychay, wawakunamanta karupi. Pennsylvaniap qhali kay wasin, titiwan (plomo, Pb) llamk'aq kusikuy llamk'aykunamanta qillqaspa, nin: "Kusikuy llamk'ayniykipaq sapan llamk'ana k'itita utaq garajeta llamk'achiy, wawakunatataq kay k'itimanta karunchay."
 
-### A storage checklist
+### Waqaychanapaq qhawana sutichakuna
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Kaykunaqa miyu harkanapaq llapan kamachiykunam esmalteman churasqa. Manam huk saña ruray kamachiy churanchu, ichaqa llapantam yuyaychayku:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Ch'aki materialkunata wichqasqapi waqaychay: armario, utaq wichqakuq cuarto, garaje utaq huch'uy wasi. Hanaq tablaqa yanapanmi, ichaqa wawakunaqa wichanku. Qallariypi pisi kaqllata wichqayta atispaqa, unupi chulluq materialkunawan llimp'iqkunawan qallariy.
+- Materialkunata ñawpaq bolsankupi utaq mankankupi waqaychay. Hukninta huk mankaman churaspaqa, bolsapi qillqasqa sutinta chiqanta etiquetapi qillqay.
+- Ama hayk'appas mikhuna utaq ukyana mankakunata (yogurt vaso, frasco, botella) esmalte materialkunapaq llamk'achiychu, etiquetayuq kaptinpas. Wawaqa yogurt vasopi ima kasqanta yachanmi.
+- Llamk'ana wasip herramientankunata (huqariqkuna, cucharakuna, batiqkuna, tamizkuna, balanzakuna) llamk'ana wasillapi waqaychay. Ama hayk'appas yanuna wasip herramientankunata esmaltepaq, nitaq esmalte herramientakunata mikhunapaq llamk'achiychu.
+- Hump'i esmaltekunata etiquetayuq baldekunapi tapasqa waqaychay.
+- Sapa materialpa seguridad datos p'anqanta (SDS) paywan kuska waqaychay, p'anqapi utaq celularniykipi.
+- Llamk'ana wasimanta ama imatapas yanuna wasipi waqaychaychu: ama bolsakunata, baldekunata, herramientakunata nitaq probetakunata.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Materialkunata rantiymanta waqaychaymanta aswan yachanaykipaq, qhaway [Imaynatataq esmalteta ruranki](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Esmalte q'upa, mayllana unupas
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Ama hayk'appas esmalteta, utaq esmalte herramientakunata mayllasqayki unuta, lavaderoman utaq huertaman hich'aychu. UK Crafts Councilmi makikunata, brochakunata, tamizkunata herramientakunata mayllanapaq sapan unu baldeta yuyaychan. Tukuy tuta tiyaykunanpaq saqiy, hanaqpi ch'uya unuta hich'ay, chaymanta tiyaykusqa esmalteta ch'akichiy q'upaman churay (q'upa pampanaman rin), ama hayk'appas desagüeman hich'aychu.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Chay baldepaq tapatam yuyaychayku: chay t'uruqa esmalte hina kaq metalkunatam hap'in, uywakunataq sayasqa unuta ukyanku. Q'upa wikch'uy kamachiykunaqa maypipas hukniraqmi, chayrayku sapa productop seguridad datos p'anqanta qhaway, mana yachaspataq llaqtaykip municipionta utaq unu empresata tapukuy.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Wakin llamk'ana wasikunaqa ch'akisqa t'uruta manaraq wikch'uspa ruphachinku. Tukunankama llamk'achikunqa chay yapa platopim churanku: ruphachisqa qhipaman chay platoqa manañam llamk'achikuyta atinchu. Platota tawa t'aqamanta hukllata hunt'achiy, t'uruqa chulluspa phuqchun phuqchuchakuntaq, hinaspa huk platowan tapay. Kiln washyuq tablaman utaq yapa p'allqaman churay, hunt'aptin hina. Ruphachiyqa t'urutam vidrioman tukuchin, chaytaq metalkunata k'ullu ñut'u allpamanta aswan sinchita hap'in, chayrayku q'upa pampanapi aswan mana manchakuypaqmi. Ch'aki t'uruta ch'aki esmalteta hap'iq hina hap'iy, respiradorwan, mana ñut'u allpa huqarispa.
 
 ## Ñut'u allpata tallerpi hap'iy {#keeping-dust-in-the-studio}
 

@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Sehemu ya ukurasa huu bado haijatafsiriwa, kwa hiyo inaonyeshwa kwa Kiingereza.",
+  "index": {
+    "crumb": "Glaze maarufu",
+    "title": "Glaze maarufu",
+    "lead": "Glaze zinazojulikana duniani kote, kila moja kutoka kwa malighafi zake za jadi za mahali hapo, pamoja na fomula yake ya Seger (UMF) na toleo kutoka kwa malighafi zinazouzwa mahali ulipo.",
+    "listHeading": "Glaze",
+    "more": "Glaze zaidi zinakuja: kila moja inaongezwa mara kichocheo chake na malighafi zake zinapotegemea angalau vyanzo vitatu vilivyosomwa."
+  },
+  "glaze": {
+    "lead": "Glaze maarufu ({native}): kichocheo chake cha jadi au uchambuzi, uchomaji wake, na toleo kutoka kwa malighafi zinazouzwa mahali ulipo.",
+    "aboutHeading": "Kuhusu {name}",
+    "nativeName": "Jina la asili",
+    "origin": "Wapi",
+    "period": "Lini",
+    "firing": "Uchomaji",
+    "cone": "koni {cone}",
+    "historyOnly": "Historia tu: glaze hii ilitengenezwa kwa madini ya risasi (lead). Uchambuzi wake unaonyeshwa kama historia, si kama kichocheo cha kuchanganya. Toleo lililo hapa chini ni glaze tofauti, bila madini ya risasi.",
+    "recipeHeading": "Kichocheo cha jadi",
+    "material": "Malighafi",
+    "amount": "Kiasi",
+    "unityHeading": "Fomula ya Seger (UMF)",
+    "analysisHeading": "Uchambuzi wa kihistoria",
+    "oxide": "Oksidi",
+    "percent": "% ya uzito",
+    "useHeading": "Ijaribu",
+    "open": "Fungua kichocheo hiki",
+    "openLeadFree": "Fungua toleo lisilo na madini ya risasi",
+    "leadFreeTitle": "Mtindo wa {name}, bila madini ya risasi",
+    "allLink": "Glaze zote maarufu",
+    "safetyHeading": "Usalama",
+    "safeMixing": "Kuchanganya kwa usalama na hewa safi",
+    "firingGuide": "Kuchoma katika tanuru rahisi",
+    "makingGuide": "Jinsi ya kutengeneza glaze",
+    "sourcesHeading": "Vyanzo",
+    "link": "Fungua",
+    "opened": "ilisomwa {date}"
+  },
+  "local": {
+    "heading": "Kwa malighafi za mahali ulipo",
+    "leadFreeHeading": "Toleo lisilo na madini ya risasi",
+    "intro": "Fomula ya Seger (UMF) ya kichocheo cha jadi, iliyotengenezwa kwa malighafi za kawaida zinazouzwa mahali unaponunua. Chagua mahali unaponunua ili uione.",
+    "region": "Mahali unaponunua malighafi",
+    "proposal": "Malighafi za pendekezo lenyewe",
+    "pick": "Chagua…",
+    "untested": "Imekokotolewa, bado haijachomwa kwa majaribio.",
+    "testFirst": "Choma vigae vya majaribio kabla ya kuitumia kwenye chombo chochote, na pima uso wa chakula kwa kuvuja kwa madini.",
+    "untestedNote": "Imekokotolewa, bado haijachomwa kwa majaribio: choma vigae vya majaribio kabla ya kuitumia.",
+    "close": "Inakaribia sana fomula lengwa.",
+    "fair": "Inakaribia kiasi fomula lengwa.",
+    "poor": "Malighafi hizi haziwezi kukaribia fomula lengwa.",
+    "none": "Malighafi zinazouzwa huko haziwezi kuitengeneza.",
+    "choose": "Chagua mahali unaponunua malighafi ili uione ikitengenezwa kwa zile zinazouzwa huko."
+  },
+  "atmospheres": {
+    "oxidation": "oksidesheni",
+    "reduction": "upunguzaji (reduction)",
+    "neutral": "hali ya kati",
+    "wood": "kuchoma kwa kuni",
+    "salt": "kuchoma kwa chumvi",
+    "soda": "kuchoma kwa soda"
+  }
+}

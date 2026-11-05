@@ -9,6 +9,7 @@
     "homeSafety": "Enyela ezinụlọ gị nsí - Glazecalc",
     "firing": "Ịgba ọkụ na kiln dị mfe - Glazecalc",
     "learnWithJohnBritt": "Mụta na nkuzi glaze n'efu nke John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Ịkụzi ngụkọ glaze - Glazecalc",
     "about": "Banyere anyị - Glazecalc",
     "privacy": "Nzuzo - Glazecalc",
     "terms": "Usoro ojiji - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Kwado mgbanwe - Glazecalc",
     "cones": "Chaatị cone: okpomọkụ cone Orton na SK - Glazecalc",
     "materials": "Ihe glaze a na-ejikarị: nyocha na ihe ize ndụ - Glazecalc",
-    "materialInfo": "{name}: nyocha oxide na ihe ize ndụ - Glazecalc"
+    "materialInfo": "{name}: nyocha oxide na ihe ize ndụ - Glazecalc",
+    "famousGlazes": "Glaze ndị a ma ama - Glazecalc",
+    "famousGlaze": "Glaze {name} - Glazecalc"
   },
   "nav": {
     "skip": "Gaa n'ọdịnaya",
@@ -177,6 +180,7 @@
     "homeSafety": "Ihe ị ga-eme ma nwatakịrị ma ọ bụ anụ ụlọ loo ihe glaze, na otu esi echekwa ihe, uzuzu, kiln na ite e ji aka mee n'ebe ezinụlọ gị nọ.",
     "firing": "Otu esi agba ọkụ na kiln eletrik: họrọ, tinye ma gụọ cone, ma soro usoro e bipụtara maka ọkụ bisque na glaze, ya na chaatị cone.",
     "learnWithJohnBritt": "Onye otu maka Glaze Course n'efu nke John Britt n'ịntanetị: vidiyo ya nkeji site na nkeji, ya na ntuziaka Glazecalc na omume ị ga-anwale n'ihe ngụkọ.",
+    "teachingGlazeCalculation": "Nkuzi 6 maka ịkụzi UMF (unity molecular formula, usoro Seger): ihe eji arụ ọrụ na tile triaxial, mole, site na usoro glaze gaa na formula ma laghachi, na ntụpọ glaze, ya na ihe atụ arụchara na akwụkwọ ọrụ ị ga-ebipụta.",
     "advice": "Ndụmọdụ bara uru maka ịgwakọta, itinye glaze na ịgba ọkụ, site na Glazecalc, ya na ndụmọdụ nke gị. N'efu maka ndị ọkpụ ite.",
     "about": "Glazecalc bụ ihe ngụkọ kemistri glaze na akwụkwọ ndetu n'efu, isi mmalite mepere emepe. Hụ otu o si achọpụta usoro unity na otu e si wuo ya.",
     "privacy": "Otu Glazecalc si ejikwa data gị: enweghị mgbasa ozi, enweghị nyocha, enweghị nsochi, a naghịkwa ere ihe ọ bụla. Ihe a na-edebe, ihe kpatara ya, na otu esi eji ikike gị.",
@@ -187,6 +191,8 @@
     "materials": "Ihe dị n'ọbá akwụkwọ Glazecalc, site na feldspar na ụrọ ruo frit na ihe boron, nke ọ bụla ya na nyocha oxide ya, usoro unity na ihe ize ndụ.",
     "materialInfo": "{name}: nyocha oxide, usoro unity, LOI na ihe ize ndụ n'ọbá akwụkwọ Glazecalc.",
     "materialInfoLong": "{name} n'ọbá akwụkwọ ihe glaze nke Glazecalc: nyocha oxide ya, ihe o nyere na usoro unity, LOI na ihe ize ndụ.",
+    "famousGlazes": "Glaze ndị a ma ama site n'ụwa niile: usoro ọdịnala ma ọ bụ nyocha akụkọ ihe mere eme nke glaze ọ bụla, UMF ya, na ụdị e ji ihe a na-ere ebe ị nọ mee.",
+    "famousGlaze": "Glaze {name} ({native}): usoro ọdịnala ya ma ọ bụ nyocha akụkọ ihe mere eme, ịgba ọkụ, UMF na isi mmalite, na ụdị e ji ihe a na-ere ebe ị nọ mee.",
     "imageAlt": "Akara Glazecalc na isiokwu ya, kemistri glaze n'efu maka ndị ọkpụ ite, n'akụkụ foto ngwugwu cone a gbara ọkụ."
   },
   "notices": {

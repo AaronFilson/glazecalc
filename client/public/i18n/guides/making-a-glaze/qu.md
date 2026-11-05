@@ -119,183 +119,183 @@ Yuyaychaykunaqa mana kaqllachu hayk'a fino balanzata munasqaykimanta. Derek Au p
 
 Derek Au huk platoman t'aqa t'aqa montonkunapi pesan, pantay kaqtin yapamanta hurqunapaq. Huk baldeman materialkuna chawpinpi mana taraspa pesaspaqa, Glazecalc-pa puriq yapasqanmi willasunki sapa kaq qhipanpi balanza imata ñawinchananta.
 
-## Mixing and sieving {#mixing lang=en}
+## Chaqruy, suysuypas {#mixing}
 
-### How much water
+### Hayk'a unu
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Qillqakunaqa manam huk yuyayllachu. Derek Auqa rakhuta qallarin, 100 g ñut'upaq 50 mL unuwan, qhipamantaq aswanta yapan. Potterycraftsqa huk ñut'u esmaltepaq 100 g-paq 65 mL-ta qun. UT Austinqa kaqlla llasay unuta ñut'utapas llamk'achin, Digitalfiretaq 20 kg ñut'uta 20 kg unuman churaspa 1.46 SG-ta tupurqan.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Unuqa yapanapaq utqaylla, hurqunapaqtaq unaymi, chayrayku pisillawan qallariy. Yuyaykuyniyku: **yaqa 70-manta 80 mL-kama 100 g-paq** qallariy (kilopaq 700-manta 800 mL-kama, utaq librapaq yaqa 11-manta 12 US fl oz-kama). Chay rakhupi challpuy, chaqruy, suysuy, chaymanta SG allin kanankama pisi pisimanta unuta yapay. 1 mL unu 1 g llasan, chayrayku balanzapi tupuyta atinki. Aswanta yapaspaqa, esmalteta tiyaykunanpaq saqiy, chaymanta hanaqpi ch'uya unuta esponjawan hurquy utaq hich'ay.
 
-### Tools and water
+### Herramientakuna, unupas
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Propeller chaqruq.** Digitalfire allin kaqta "mana kaqtinqa mana atikunchu" nin. Cableyuq taladro chaqruna paletayuq baldepi llamk'ayta ruran. UT Austinqa esmalte chaqrusqa hina rikhuriptin pisimanta pisi 4-manta 5 minutos-kama purichin, kuchuqnintataq baldemanta karunchan, plástikuta raspanmantaq.
+- **Licuadora.** "Huch'uy lotekunapaq ancha allinmi llamk'an" (Digitalfire). Esmaltepaqlla waqaychay: ama hayk'appas yanuna wasiman kutinanchu.
+- **Batiq utaq k'aspi.** Mana chaqruq kaptin Zakinpa akllasqan.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Unupas hukniraqmi, Digitalfiretaq nin slurry (esmalte ñut'u unuwan) imayna kasqanta tikran. Derek Au reverse osmosis unuta llamk'achin pilanpa unun sinchi (agua dura) kaptin. Ima llamk'achisqaykitapas qillqay.
 
-### Step by step
+### Sapa purichiy
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Respiradorniykita churakuy, makiyki ukhuman yaykunqa chayqa jebe guantekunatapas. Zakinqa tupuy qallariymanta esmalte hump'ikunankama máscarata churakun.
+2. Sapa 100 g ñut'upaq yaqa 70-manta 80 mL-kama unuta baldeman tupuy.
+3. Tupusqa ñut'uta llamp'ulla, uray altomanta yapay. UT Austin q'uñi unuman ñut'uta churan; Zakin Aupas ñut'uman unuta churanku. Ñut'uta unuman churaytam yuyaychayku, pisi ñut'u allpatam huqarin, achka bentoniteyuq ruranamanta hawa: ñawpaqta ch'aki ñut'unkunata kuska qaywiy.
+4. **Challpuy**: ñut'uta mana qaywispa hump'ikunanpaq saqiy. Digitalfire yaqa 20 minutos suyan. Gomayuq utaq hap'ichiqyuq ñut'ukunaqa tukuy tuta sayananmi.
+5. Mana ch'aki k'itikuna nitaq ruruchakuna kanankama chaqruy.
+6. Iskay kutita suysuy (uraypi qhaway).
+7. Tapay, tukuy tuta samachiy, chaymanta yapamanta chaqruy, urayninpi sinchi p'atakuna kasqanta qhawaypas.
+8. SG-ta tupuy, maskasqaykiman chayanaykipaq pisi pisimanta unuta yapay. Esmalteykip kikin ch'aki SG-nta yachanaykipaq, tukusqa slurrytapas llasachiy (uraypi qhaway).
+9. Baldeman etiquetata churay, imatachus rurasqaykitapas qillqay.
+10. Hump'iwan pichay: pampata trapeay, sapa uyatataq pichay, material mankakunap hawantapas.
 
-### Sieving
+### Suysuy
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Tamiz** nisqaqa marcopi kaq llikam. Esmalteta brochawan chayninta tanqayqa chaqruy saqisqan ruruchakunata p'akin, ruphachisqa kaspa ch'iqchi kanman chay huch'uy kaqkunatataq hap'in. **Mesh** yupay aswan hatun kaptinqa, llika aswan ñut'um: 80 mesh yaqa 0.18 mm t'uqukunayuq, 100 meshtaq yaqa 0.15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Qillqakunaqa hukniraq meshkunatam yuyaychanku. Zakinqa 50 utaq 80 meshwan iskay kutita suysun. Derek Auqa aswan achka esmaltekunapaq 120 meshta llamk'achin, aswantaqa cobaltoyuq utaq fierroyuq kaqkunapaq: 80 meshwan kimsa kuti pasachiyqa huk celadonpi fierro ch'iqchikunata saqirqanraq, 120 meshwan huk kuti pasachiytaq allicharqan. Uchpa esmaltekunapaq, rakhu materialniyuq hukkunapaqpas 60-manta 80 mesh-kama waqaychan. UKpi kaq Potterycrafts 60-manta 80 mesh-kama yuyaychan. Mana manchakuy akllana:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Mayqin tamizta llamk'achina
+Label: Tamizpa meshnin
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Esmalte                                            | Tamiz                          |
+| -------------------------------------------------- | ------------------------------ |
+| Aswan achka esmaltekuna                            | 80 meshwan iskay kuti pasachiy |
+| Cobalto utaq fierro hina llimp'iqniyuq esmaltekuna | 100-manta 120 mesh-kama        |
+| Uchpa esmaltekuna, rakhu materialniyuq hukkunapas  | 60-manta 80 mesh-kama          |
 
-## Specific gravity {#specific-gravity lang=en}
+## SG (gravedad específica) {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**SG** (gravedad específica) slurryykipi hayk'a ñut'u kasqanta willasunki. Huk hunt'a esmaltep llasayninmi, kaqlla hunt'a unup llasayninwan rakisqa. Unuqa 1.00-mi, {{SG 1.45}}-pi kaq esmaltetaq 100 mL-paq 145 g llasan. Tupusqa SG-kama chaqruyqa sapa kuti kaqlla rakhuta, kaqlla llut'anata tarinapaq ñanmi. Manam unidadniyuqchu, chayrayku gramopipas onzapipas kaqllam.
 
-### Measure it by weighing 100 mL
+### 100 mL llasachispa tupuy
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Esmalteta qaywiy, ama imapas tiyaykunanpaq.
+2. 100 mL **tupuna tubo** (marcasqa tubo, sayt'u tupuna) utaq 100 mL jeringata balanzaman churay, ch'usaqyachiytaq (tare).
+3. Chiqanta 100 mL-kama esmaltewan hunt'achiy, ñawi altopi marcata ñawinchaspa.
+4. Llasachiy, gramotataq 100-wan rakiy: 145 g-qa SG 1.45-mi.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfirepas huk vasota 500 g unup patanpi marcan, marcakama esmaltewan hunt'achin, llasaytataq 500-wan rakin; aswan hatun aswan hunt'a tupunaqa aswan chiqanmi. **Hidrómetro**, esmaltepi maypi tiyasqanpi ñawinchakuq tuytuq, utqayllam, ichaqa rakhu utaq q'apasqa esmaltekunata panta ñawinchanman. UKpa hidrómetronkuna, Potclayspa hina, grados Baumépi (°Bé) ñawinchanku. Yupayniykupi, SG = 145 ÷ (145 − °Bé), chayrayku 46 °Bé yaqa 1.46-mi. UKpa ñawpa p'anqankunaqa **pint weight** nisqata qunku, huk pinta imperial esmaltepi kaq onzakuna: 20-wan rakiy, chayrayku 29 oz yaqa SG 1.45-mi (kaypas yupayniykum).
 
-### What to aim for
+### Imatataq maskana
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Qillqakunaqa manam huk yuyayllachu, aswantaqa brochawan llut'aypi, phuspuypipas, chaypi UKpa qhatuqnin Potclays ancha aswan hatun yupaykunata qun (paypa yupayninkunaqa "pusanapaqllam"). Sapa yupayta qallarina hina hap'iy. Digitalfirep hatun yuyaychayninqa sapa esmaltepaq llamk'aq SG-ta q'apakaytapas tariy, chaymanta kutipay, qillqaytaq.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: SG maskasqakuna, qillqakuna mana huk yuyaylla kaptin
+Label: SG maskasqakuna
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Llamk'ay | Digitalfire, Glazy                                                                                                                                       | Potclays (UK)                                   | Mana manchakuy qallarina                                             |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
+| Challpuy | {{SG 1.40}} (5 segundos challpunapaq) {{SG 1.50}}-kama (1 segundo challpunapaq); wasipi chaqrusqa q'apasqa esmaltekunaqa {{SG 1.43–1.45}}-pi aswan allin | Ch'uya {{SG 1.46–1.48}}; llimp'iyuq {{SG 1.61}} | {{SG 1.45}}; sut'uptinqa {{SG 1.43}}-kama llamp'uyachiy q'apachiytaq |
+| Brocha   | {{SG 1.25}} (llamp'u ch'uya) {{SG 1.55}}-kama (yana sut'ichaykuna)                                                                                       | {{SG 1.71–1.81}}                                | Productota qatiy; CMC gum utaq brochapaq mediota llamk'achiy         |
+| Phuspuy  | Mana yupay kanchu; Hopper, Ceramic Arts Networkpaq qillqaspa, ancha aswan llamp'u nin, deflocculantwan (slurryta aswan puriqta ruraq yapana)             | {{SG 1.71}}                                     | Mana iñina yupay kanchu; spray boothllapi phuspuy                    |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Challpuna esmalteta ñawiwan qhawanapaq, AMACO 5 segundos challpun, Estados Unidospa dime qullqinpa rakhun hina llut'anata maskan. Digitalfire 5 segundos challpusqa probetakunata ruphachin qhawanapaq.
 
-### Water for a target SG: our estimate
+### Maskasqa SG-paq unu: yuyaykuyniyku
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Uray tablaqa kikiykup yupayniykum, manam qillqap yupayninchu. Ñut'up huch'uy rurunkuna sapa cm³-paq 2.6 g sinchi kayniyuq kasqanta yuyaykun, chaytaq yuyaykuymi, manam tupuychu. Mitu, unupi chulluq materialkuna, q'apakaypas chiqaq esmalteta tikranku, chayrayku qallarinapaq llamk'achiy, chaymanta tupuy. Qhawanapaq, kaqlla llasay ñut'upaq unupaqpas {{SG 1.44}}-ta ñawpaqmanta willan, Digitalfire tupusqan {{SG 1.46}}-man qayllam. Hinallataq rikuchin 100 g-paq 70-manta 80 mL-kama {{SG 1.50}}-manta hanaqpi qallarichisunki, munasqaykimanta aswan rakhu.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Maskasqa SG-paq unu (yuyaykuyniyku)
+Label: Maskasqa SG-paq unu
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Maskasqa    | 100 g ñut'upaq |      Kilopaq |         Librapaq |
+| ----------- | -------------: | -----------: | ---------------: |
+| {{SG 1.40}} |    yaqa 115 mL | yaqa 1150 mL | yaqa 18 US fl oz |
+| {{SG 1.45}} |     yaqa 98 mL |  yaqa 980 mL | yaqa 15 US fl oz |
+| {{SG 1.50}} |     yaqa 85 mL |  yaqa 850 mL | yaqa 13 US fl oz |
+| {{SG 1.60}} |     yaqa 64 mL |  yaqa 640 mL | yaqa 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Chaqruchkaspa esmalteykip kikin ch'aki SG-nta tariy
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+Hanaqpi kaq 2.6-qa yuyaykuyllam. Kikin esmalteykip yupaynin, ch'aki ñut'unpa sinchi kaynin, chaqruchkaspa hap'iyta atisqayki kimsa yupaykunamanta yupakuyta atin. Chaywan, qhipaman SG-manta chay esmaltep mayqin baldenpipas hayk'a ñut'u kasqanta, qatiq lotepaq unutapas yupayta atinki. Yupayniykum, manam qillqapchu:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Lotepi ch'aki ñut'up llasayninta qillqay: ruranap llapan yupaynin.
+2. Manaraq qallarispa ch'usaq baldeta llasachiy, utaq llasayninta paypi qillqay.
+3. Sapa kuti hina chaqruy, suysuy, esmalteta SG-nkama apay. Llapanta tamiznintakama tanqay baldemantaq mayllay, ama ñut'u hawapi qhipanampaq.
+4. Hunt'a baldeta llasachiy, baldep llasayninta qichuy. Chaymi slurryp llasaynin.
+5. SG-ta tupuy.
 
-Then:
+Chaymanta:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Unu** = slurryp llasaynin − ñut'up llasaynin.
+- **Slurryp hunt'aynin** mL-pi = slurryp llasaynin gramopi ÷ SG.
+- **Ñut'up hunt'aynin** = slurryp hunt'aynin − unu (1 g unu 1 mL-mi).
+- **Ch'aki SG** = ñut'up llasaynin ÷ ñut'up hunt'aynin.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Ejemplopaq: 1000 g ñut'u {{SG 1.45}}-pi 1980 g slurryta ruran. Unuqa 980 g-mi, slurryqa 1980 ÷ 1.45 = yaqa 1366 mL, ñut'utaq 1366 − 980 = 386 mL-ta hap'in, ch'aki SG-taq 1000 ÷ 386 = yaqa 2.59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Tukukuypi llapan slurryta llasachiy, manam hich'achkaspa unutachu, wapsiyaq utaq ch'aqchukuq unu ama yupakunanpaq. Huch'uy pantaykunaqa kaypi wiñanku: 0.01-wan pantasqa SG ñawinchayqa kutichiyta yaqa 2-manta 4%-kama kuyuchin, llamp'u esmaltepaq aswan. 1 kg utaq aswan loteta, chiqan balanzata, SG-paqtaq hanaqpi kaq 500 g vaso ñanta llamk'achiy. Aswan achka sapa p'unchaw materialkunaqa yaqa 2.5, 2.9 chawpipim kanku, chayrayku chaymanta ancha karu yupay, mana achka zirconniyuq utaq titiyuq esmaltepi, tupuy pantaymi kanman. Yupayta ruranapi qillqay.
 
-### Epsom salts, CMC gum and bentonite
+### Epsom kachi, CMC gum, bentonitepas
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Epsom kachi** esmalteta sayasqa kaptin pisita q'apachin, qaywisqa kaptintaq yapamanta purichin. Kaytam **flocculating** ninku, chayhina kaq esmaltetaq **thixotropic**-mi: aswan kaqllata llut'akun, pisita sut'un, pisitataq tiyaykun. Digitalfire SG allin kaptin galónpaq yaqa 2 g-wan qallariyta yuyaychan (yaqa litropaq 0.5 g, tikrasqayku), sapa chaqruspataq hayk'a kasqanta allichay, mana ima ruranapas chay yupayta churananchu kaptin. Ñawpaqta pisi q'uñi unupi chullunchinaykitam yuyaychayku. Huk Digitalfire ejemplopi, {{SG 1.45}}-pi kaq esmalte sut'urqan, chayrayku unu {{SG 1.43}}-kama urayachirqan, Epsom kachitaq crema hina yapamanta q'aparqan, kaqllatataq llut'akurqan. Utqaylla qhaway: qaywiy, sayachiy, qhawaytaq. Q'apasqa esmalteqa yaqa 2 utaq 3 segundos kuyurichkanraq, chaymanta sayan pisitataq kutirin.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC gum** (carboxymethyl cellulose) slurryta aswan k'askaqta, ch'akinanpaq aswan unayta ruran, mankaman k'askaq aswan sinchi llut'anatataq saqin. Brocha esmaltekunapaq achka fritayuq esmaltekunapaqpas aswan necesitakun. Digitalfirep ejemplonqa 1000 g slurrypi 3.75 g-ta chaqrun, licuadorawantaq yaykunan. CMC-yuq esmalteqa manam Epsom kachiwan q'apanqachu, huch'uy kawsaqkunataq gomata mikhunku chayrayku baldepi tikrakunman asnaytataq qallarinman.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonite**, ancha ñut'u mitu, huk huch'uy rurukunata tuytuchkananpaq yanapan. Challpuna esmaltekunaqa chaypaq 15-manta 25%-kama chawa mitupi takyanku. Pisi mituyuq ruranapaq, yaqa 1-manta 3%-kama bentonite yanapan; Digitalfire nin 15%-manta aswan mituyuq esmalteqa ch'aki esmaltep llasayninmanta 1%-manta aswan bentoniteta mana munananchu.
 
-## Test tiles and line blends {#testing lang=en}
+## Probetakuna, mezcla linealkunapas {#testing}
 
-### Start small
+### Pisillawan qallariy
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au kimsa purichiypi wichan: 50 utaq 100 g prueba, allin kaptinqa 1-manta 2 kg-kama prueba, chaymanta 5-manta 10 kg-kama llamk'ana wasip loten. Yuyaykuyniykupi, {{SG 1.45}}-pi 100 g pruebaqa yaqa 135 mL (yaqa 4½ US fl oz) slurryta ruran, k'ullu vasopi wakin huch'uy probetakunata challpunapaq aypanmi.
 
-### Test on your own clay
+### Kikin mituykipi pruebay
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Esmalteqa huk mitupi utaq huk hornopi ancha hukniraqmi rikhurinman: Clay Art Center sapa musuqmanta rurasqa esmaltenkunata tawa mitu rikchaqpi pruebarqan, cono 6-pi cono 10-pipas. Potclayspa qallariqkunapaq esmalte prueba pusaqninqa yuyaychan:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- 6-manta 10-kama **probetakuna** (esmalte pruebanapaq huch'uy p'akikuna) chiqaqpi llamk'achinayki mitumanta, bizcochosqa utaq tukuy ch'akisqa kasqankuta qillqaspa
+- huk kutipi huk tikrayllata
+- huk kuti challpuy iskay kuti challpuypas, esmalteta llamp'utawan rakhutawan rikunapaq
+- sapa probeta kaqlla horno hunt'aypi
+- manaraq ruphachispa sapa probetapi marca, selloman, llaqllaywan utaq underglaze lapizwan. Ruphachisqa probetakunaqa kaqllam rikchakunku, manaraq ruphachispa rurasqa marcataq hornopi qhipan, chayrayku hayk'appas sapa probeta mayqin rurana kasqanta yachanki.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Sayaq probetakunatam yuyaychayku, pampa probetaqa esmalte hayk'a karuta purisqanta pakan, esmalte patakunapi imayna p'akikusqanta rikuchinapaq rikchayniyuq chumpiwan, mana esmalteyuq chakiwan. Sapakama huch'uy platopi utaq bizcocho p'akipi, utaq kiln washyuq tablapi churay, sut'ukunata hap'inapaq. Probetakunap qayllanpi **cono testigo** (witness cone) churay, chaskisqankuta rikuchinanpaq, allin ruphayta chaskiptin k'umuq huch'uy mitu cono; [ruphachiy pusaqmi](/guides/firing) conokunata sut'inchan. Sapa probetaman pisi código quy, qillqasqaykikunapitaq ruranap ladonpi qillqay. Willers, Ceramic Arts Networkpaq qillqaspa, yupaykunata letrakunatapas llamk'achin, kikin sistematataq cuadernop ñawpaqninpi qillqan.
 
-### Line blends
+### Mezcla linealkuna
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Mezcla lineal** (line blend) huk chaqrumanta huk chaqrukama kaqllata puriq pruebakunap sutinmi: huk esmaltemanta iskay kaqkama, utaq teqsi esmaltemanta aswan llimp'iqniyuq kaqlla esmaltekama. Derek Au, ejemplopaq, ch'uya teqsipi óxido de hierrota 1% purichiykunapi wichachin. Ian Curriewan riqsisqa hunt'ay ñanqa pachata waqaychan, iskay puntakunallata chaqrunki chayrayku:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Iskay punta esmaltekunata, A-ta B-tapas, kaqlla sayayniyuq lote hina chaqruy, iskayninkutataq suysuy.
+2. Pisi hunt'ayniyuq kaqman unuta yapay iskayninku chiqan kaqlla hump'i hunt'ayniyuq kanankama.
+3. Iskayninkuta qaywiy, chaymanta sapa chaqruta jeringawan kikin yupayniyuq vasonman chunqay.
+4. Sapa vasota qaywiy, huk probetatataq challpuy.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Rurasqa ejemploykupi, A-qa 100 g ch'uya teqsim, B-taq kaqllam 4 g óxido de hierro rojo yapasqawan (4% yapay). B-p sapa mililitronqa A-p mililitron hina kaqlla teqsi t'aqatam hap'in, fierronwan kuska, chayrayku vasokunaqa mana fierromanta 4%-kama 1% purichiykunapi purinku. Sapa puntaqa blendman 100 mL-ta qun, chaytaq 100 g loteqa yuyaykuyniykupi aypan.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Pichqa purichiyniyuq fierro mezcla lineal, sapa vasopaq 40 mL (rurasqa ejemployku)
+Label: Mezcla lineal ejemplo
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Vaso | Ch'uya teqsi (A) | 4% fierroyuq teqsi (B) | Óxido de hierro, teqsimanta % |
+| ---- | ---------------: | ---------------------: | ----------------------------: |
+| 1    |            40 mL |                   0 mL |                             0 |
+| 2    |            30 mL |                  10 mL |                             1 |
+| 3    |            20 mL |                  20 mL |                             2 |
+| 4    |            10 mL |                  30 mL |                             3 |
+| 5    |             0 mL |                  40 mL |                             4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Kay ñanqa allin qhawasqa yupaytam, kaqlla SG-yuq allin chaqrusqa puntakunata, chiqan balanzatapas munan. Derek Aupas hunt'aypa rantinpi llasaywan chaqrun. **Triaxial blend** kimsa puntakunawan kaqllata ruran, kimsa k'uchupi churasqa.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Huk purichiy allin hina rikhuriptin, [rurana p'anqapi](/recipe) **Copiata hina waqaychay** kikin rurana hina waqaychan, ñawpaq kaqtataq imayna kasqanpi saqin.
+
+## Qillqakunata waqaychay {#records}
+
+Willers munasqanta allinta nin: "tarisqayki ruraykunata kutipanaykipaq, utaq ama kanampaq, aypaq willakuy". Manaraq qallarispa imata pruebayta munasqaykita qillqay, hurquspataq ruraykunata. Potclaysqa llut'ay ñanta, rakhunta, mitu rikchaqta, llapan ruphachiytapas yapan, rampkunata, suyaykunata, chiriyachiytapas. **Ramp**-qa q'uñichiy utaq chiriyachiy utqaymi, hora sapa {{60 °C; 108 °F}} hina, **suyay**-taq (hold) hornota huk ruphaypi churasqa pachakama hap'in. Lote yupaykunata, llamk'achisqayki unuta, mayqin rantinchaytapas qillqay: Clay Art Centerpa feldespato tikraynin yaqa kuskan esmaltenkunata allichayta nirqan.
+
+Table: Sapa esmalte lotepaq imatataq qillqana (plantillayku)
+Label: Qillqa plantilla
+
+| T'aqa     | Imatataq qillqana                                                                                                                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rurana    | Rurana, versiónninpas; material marcakuna lote yupaykunapas; mayqin rantinchaypas                                                                                                                                                                                   |
+| Chaqruy   | P'unchaw; lotep sayaynin; yapasqa unu, rikchayninpas (pilamanta, reverse osmosis utaq destilada); chaqrusqa qhipa SG, tukukuy SG-pas; tukusqa slurryp llasaynin, ch'aki SG-npaq; yapasqa Epsom kachi, CMC, bentonitepas; tamizpa meshnin, hayk'a kuti pasachisqapas |
+| Llut'ay   | Mitu rikchaq; bizcocho cono; challpuy, brocha utaq hich'ay; challpuy pacha utaq hayk'a llut'ana; ch'aki rakhu                                                                                                                                                       |
+| Ruphachiy | Horno, tablapi maypi kasqanpas; ruphachiy kamachiy, rampkunanwan, suyaykunanwan, chiriyachiyninwan; hornop wayran (oxidación utaq reducción); cono testigo rikuchisqan, manam hornota churasqallatachu                                                              |
+| Rurasqa   | Uya, llimp'ipas; mayqin puriypas, cuarteado utaq pinholes; ñawpaqmanta, qhipamanta, ladomanta fotokuna; probetap códigon                                                                                                                                            |
+
+> [!NOTE]
+> Glazecalcpi, waqaychasqa [rurana](/recipe) kikin ruranata hap'in. [Ruphachiy qillqa](/firing) sapa ruphachiyta qillqan: hornota, p'unchawta, pachakunata, ruphaykunata, conokunata, apuntekunatapas. [Apuntekuna](/notes) llapan hukkunata hap'in, hanaqpi kaq lote qillqata, sapa probeta rikuchisqantapas.
 
 ## Pukyukuna {#sources}
 

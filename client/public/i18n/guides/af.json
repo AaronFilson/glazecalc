@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Leer met John Britt se gratis glasuurkursus",
       "text": "Sy gratis videokursus op YouTube, eenheid vir eenheid, met ons gidse om te lees en oefeninge om in Glazecalc te probeer. In Engels."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Glasuurberekening onderrig",
+      "text": "6 sessies vir 'n klas of studiegroep, van triaksiale teëls tot die Seger-formule (UMF) in albei rigtings uitgewerk, met werkblaaie om te druk."
     }
   },
   "more": "Meer gidse",
@@ -255,6 +259,8 @@
       "crazed": "met haarlynbarsies"
     },
     "keyBright": "Stippellyn: waar Stull se glasure die helderste was.",
-    "keyCrazed": "Arsering: waar hulle haarlynbarsies gekry het."
+    "keyCrazed": "Arsering: waar hulle haarlynbarsies gekry het.",
+    "note": "'n Riglyn, nie 'n voorspelling nie. R. T. Stull (Transactions of the American Ceramic Society, 1912) het op ongeveer kegel 11 gebak met die vloeimiddels vasgestel op 0,3 K₂O en 0,7 CaO; ander vloeimiddels en bakke skuif die gebiede, en 'n glasuur wat net mat is omdat dit onderbak is, kan steeds as blink geplot word. Die gebiede is soos Glazy dit teken.",
+    "inGuide": "Silika (SiO₂) dwars, van ongeveer 1 tot 7, en alumina (Al₂O₃) op, van 0 tot 1, albei uit die Seger-formule (UMF). Wiggies waaier uit van links: ongesmelt links bo, dan mat, dan halfmat. Die onbeskaduwde deel regs daarvan is blink, en die stippellyn daarin is waar Stull se glasure die blinkste was. Onderbak is regs onder, met min alumina en baie silika. Die arsering, laag op die grafiek en aan sy linkerkant, is waar sy toetse haarlynbarsies gekry het."
   }
 }

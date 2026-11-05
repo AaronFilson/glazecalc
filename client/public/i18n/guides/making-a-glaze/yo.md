@@ -119,183 +119,183 @@ Glaze nínú garawa kì í dúró lójú kan. Àwọn ohun èlò tí ń yọ́ d
 
 Derek Au ń wọ̀n sínú àwo kan ní òkìtì ọ̀tọ̀ọ̀tọ̀, kí a lè kó àṣìṣe padà jáde. Bí ẹ bá wọ̀n sínú garawa kan láìṣe tare láàárín àwọn ohun èlò, àròpọ̀ tí ń lọ ti Glazecalc ń sọ ohun tí òṣùwọ̀n yẹ kí ó kà lẹ́yìn ọ̀kọ̀ọ̀kan.
 
-## Mixing and sieving {#mixing lang=en}
+## Pípò àti sísẹ́ {#mixing}
 
-### How much water
+### Omi mélòó
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Àwọn orísun kò fohùnṣọ̀kan. Derek Au ń bẹ̀rẹ̀ ní kíki, pẹ̀lú 50 mL omi fún 100 g lẹ́búlẹ́bú, ó sì ń fi kún un lẹ́yìn náà. Potterycrafts ń fún 65 mL fún 100 g fún glaze lẹ́búlẹ́bú kan. UT Austin ń lo ìwúwo omi àti lẹ́búlẹ́bú tí ó dọ́gba, nígbà tí Digitalfire sì fi 20 kg lẹ́búlẹ́bú sínú 20 kg omi, ó wọn SG ti 1.46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Omi rọrùn láti fi kún, ó sì ṣòro láti yọ kúrò, nítorí náà ẹ bẹ̀rẹ̀ ní kékeré. Ìfojúdíwọ̀n wa: ẹ bẹ̀rẹ̀ pẹ̀lú **nǹkan bí 70 sí 80 mL fún 100 g** (700 sí 800 mL fún kìlógíráàmù, tàbí nǹkan bí 11 sí 12 US fl oz fún pọ́ọ̀nù). Ẹ rì í, ẹ pò ó, kí ẹ sì sẹ́ ẹ ní kíki yẹn, lẹ́yìn náà ẹ fi omi kún un díẹ̀díẹ̀ títí SG yóò fi tọ̀nà. 1 mL omi wúwo 1 g, nítorí náà ẹ lè wọ̀n ọ́n. Bí ẹ bá kọjá ààlà, ẹ jẹ́ kí glaze rọlẹ̀, lẹ́yìn náà ẹ fi kàn-ìnkàn-ìn mú omi mímọ́ lókè kúrò tàbí kí ẹ da á nù.
 
-### Tools and water
+### Irinṣẹ́ àti omi
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Ẹ̀rọ ìpò propeller.** Digitalfire pe èyí tí ó dára ní "kò ṣeé má ní". Drill olókùn pẹ̀lú abẹ̀bẹ̀ ìpò ń ṣe iṣẹ́ náà nínú garawa. UT Austin ń lò ó ó kéré tán ìṣẹ́jú 4 sí 5 lẹ́yìn tí glaze bá dàbí ẹni pé a ti pò ó, ó sì ń pa abẹ náà mọ́ kúrò lára garawa, tí ó lè ha ike kúrò lára rẹ̀.
+- **Blender.** Ó "ń ṣiṣẹ́ dáadáa gan-an fún batch kékeré" (Digitalfire). Ẹ fi í pamọ́ fún glaze nìkan: kò gbọ́dọ̀ padà sí ilé ìdáná láé.
+- **Ohun ìrú tàbí igi.** Yíyàn Zakin nígbà tí kò bá sí ẹ̀rọ ìpò.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Omi náà yàtọ̀, Digitalfire sì ṣàkíyèsí pé ó ń yí bí slurry (lẹ́búlẹ́bú glaze àti omi) ṣe ń ṣe padà. Derek Au ń lo omi reverse osmosis nítorí omi ẹ̀rọ rẹ̀ le (hard water). Ohunkóhun tí ẹ bá lò, ẹ kọ ọ́ sílẹ̀.
 
-### Step by step
+### Ìgbésẹ̀ lẹ́sẹẹsẹ
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Ẹ wọ respirator yín, àti ìbọ̀wọ́ rọ́bà bí ọwọ́ yín yóò bá wọ inú rẹ̀. Zakin ń wọ ìbòjú láti ìbẹ̀rẹ̀ wíwọ̀n títí glaze yóò fi rin.
+2. Ẹ wọn nǹkan bí 70 sí 80 mL omi fún 100 g lẹ́búlẹ́bú kọ̀ọ̀kan sínú garawa.
+3. Ẹ fi lẹ́búlẹ́bú tí ẹ ti wọ̀n kún un jẹ́jẹ́, láti ibi tí kò ga. UT Austin ń fi lẹ́búlẹ́bú sínú omi tí ó lọ́wọ́ọ́rọ́; Zakin àti Au ń fi omi sínú lẹ́búlẹ́bú. A dábàá lẹ́búlẹ́bú sínú omi, tí ó ń ru eruku díẹ̀, àyàfi fún ìlànà tí ó ní bentonite púpọ̀: ẹ ru lẹ́búlẹ́bú gbígbẹ rẹ̀ papọ̀ kọ́kọ́.
+4. **Ẹ rì í**: ẹ jẹ́ kí lẹ́búlẹ́bú náà rin láìrú u. Digitalfire ń dúró nǹkan bí ìṣẹ́jú 20. Lẹ́búlẹ́bú tí ó ní gum tàbí ohun ìsopọ̀ nílò láti sùn mọ́jú.
+5. Ẹ pò ó títí kò fi ní sí ibi gbígbẹ tàbí kókó.
+6. Ẹ sẹ́ ẹ lẹ́ẹ̀mejì (ẹ wo nísàlẹ̀).
+7. Ẹ bò ó kí ẹ sì jẹ́ kí ó sinmi mọ́jú, lẹ́yìn náà ẹ tún pò ó kí ẹ sì wo ìsàlẹ̀ bóyá ìpele líle kan wà.
+8. Ẹ wọn SG, kí ẹ sì fi omi kún un díẹ̀díẹ̀ láti dé ohun tí ẹ ń wá. Láti mọ SG gbígbẹ glaze yín, ẹ tún wọn slurry tí ẹ ti parí (ẹ wo nísàlẹ̀).
+9. Ẹ lẹ àmì sí garawa, kí ẹ sì kọ ohun tí ẹ ṣe sílẹ̀.
+10. Ẹ fi omi nù ún: ẹ fi mọ́ọ̀bù nu ilẹ̀ kí ẹ sì nu gbogbo ojú, títí kan ìta àwọn ohun ìkó ohun èlò.
 
-### Sieving
+### Sísẹ́
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Asẹ́** jẹ́ àwọ̀n nínú férémù. Títì glaze gbà á kọjá pẹ̀lú búrọ́ọ̀ṣì ń fọ́ àwọn kókó tí pípò fi sílẹ̀, ó sì ń mú àwọn hóró tí ìbá sun di àmì. Bí nọ́mbà **mesh** bá ṣe ga tó, bẹ́ẹ̀ ni àwọ̀n náà ṣe kúnná tó: mesh 80 ní ihò tí ó tó nǹkan bí 0.18 mm, mesh 100 sì tó nǹkan bí 0.15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Àwọn orísun dábàá mesh ọ̀tọ̀ọ̀tọ̀. Zakin ń sẹ́ lẹ́ẹ̀mejì gba mesh 50 tàbí 80. Derek Au ń lo mesh 120 fún ọ̀pọ̀ glaze, pàápàá àwọn tí ó ní cobalt tàbí irin: gbígbà mesh 80 kọjá lẹ́ẹ̀mẹ́ta ṣì fi àmì irin sílẹ̀ nínú celadon kan, gbígbà mesh 120 kọjá lẹ́ẹ̀kan sì ṣe àtúnṣe rẹ̀. Ó ń pa mesh 60 sí 80 mọ́ fún glaze eérú àti àwọn mìíràn tí ó ní ohun èlò tí kò kúnná. Potterycrafts, ní UK, dábàá mesh 60 sí 80. Yíyàn tí ó láàbò:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Asẹ́ wo ni kí a lò
+Label: Mesh asẹ́
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glaze                                                    | Asẹ́                         |
+| -------------------------------------------------------- | --------------------------- |
+| Ọ̀pọ̀ jùlọ glaze                                           | Gbígbà mesh 80 kọjá lẹ́ẹ̀mejì |
+| Glaze tí ó ní ohun àwọ̀ bí cobalt tàbí irin               | Mesh 100 sí 120             |
+| Glaze eérú, àti àwọn mìíràn tí ó ní ohun èlò tí kò kúnná | Mesh 60 sí 80               |
 
-## Specific gravity {#specific-gravity lang=en}
+## SG (specific gravity) {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**SG** (specific gravity) ń sọ fún yín iye lẹ́búlẹ́bú tí ó wà nínú slurry yín. Òun ni ìwúwo ìwọ̀n glaze kan tí a pín sí ìwúwo ìwọ̀n omi kan náà. Omi jẹ́ 1.00, glaze tí ó wà ní {{SG 1.45}} sì wúwo 145 g fún 100 mL. Pípò dé SG tí a wọ̀n ni ọ̀nà láti rí kíki kan náà, àti ìbora kan náà, ní gbogbo ìgbà. Kò ní ẹ̀yọ ìwọ̀n, nítorí náà ó jẹ́ kan náà ní gíráàmù tàbí ounce.
 
-### Measure it by weighing 100 mL
+### Ẹ wọ̀n ọ́n nípa wíwọn 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Ẹ ru glaze kí ohunkóhun má bàa rọlẹ̀.
+2. Ẹ gbé **graduated cylinder** 100 mL (ọ̀pá ìwọ̀n gígùn tí ó ní àmì) tàbí sirinji 100 mL ka orí òṣùwọ̀n, kí ẹ sì sọ ọ́ di òdo (tare).
+3. Ẹ kún un pẹ̀lú glaze dé 100 mL gẹ́lẹ́, kí ẹ ka àmì náà ní ìdọ́gba ojú.
+4. Ẹ wọ̀n ọ́n kí ẹ sì pín gíráàmù sí 100: 145 g jẹ́ SG 1.45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire tún ń sàmì sí ife kan ní ìpele 500 g omi, ó ń kún un pẹ̀lú glaze dé àmì náà, ó sì ń pín ìwúwo náà sí 500; ìwọ̀n tí ó tóbi jù, tí ó kún jù ń péye jù. **Hydrometer**, ohun tí ń léfòó tí a ń kà níbi tí ó dúró sí nínú glaze, yára ṣùgbọ́n ó lè ṣì àwọn glaze tí ó ki tàbí tí ó dì kà. Àwọn hydrometer UK, bí ti Potclays, ń kà ní ìwọ̀n Baumé (°Bé). Nínú ìṣirò wa, SG = 145 ÷ (145 − °Bé), nítorí náà 46 °Bé jẹ́ nǹkan bí 1.46. Àwọn ìwé UK àtijọ́ ń fún **pint weight**, iye ounce nínú pint imperial kan ti glaze: ẹ pín in sí 20, nítorí náà 29 oz jẹ́ nǹkan bí SG 1.45 (ìṣirò wa náà ni).
 
-### What to aim for
+### Ohun tí a ó fojú sí
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Àwọn orísun kò fohùnṣọ̀kan, pàápàá lórí fífi búrọ́ọ̀ṣì kun àti fífọ́n, níbi tí olùtajà UK Potclays ti ń fún iye tí ó ga jù gan-an (tirẹ̀ jẹ́ "fún ìtọ́sọ́nà nìkan"). Ẹ ka gbogbo nọ́mbà sí ibi ìbẹ̀rẹ̀. Ìmọ̀ràn pàtàkì Digitalfire ni láti rí SG àti dídì tí ó ń ṣiṣẹ́ fún glaze kọ̀ọ̀kan, lẹ́yìn náà kí a tún wọn ṣe kí a sì kọ wọ́n sílẹ̀.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: SG tí a ń wá, níbi tí àwọn orísun kò ti fohùnṣọ̀kan
+Label: SG tí a ń wá
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Ìlò     | Digitalfire àti Glazy                                                                                                                          | Potclays (UK)                                   | Ibi ìbẹ̀rẹ̀ tí ó láàbò                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------- |
+| Rírì    | {{SG 1.40}} (fún rírì ìṣẹ́jú-àáyá 5) sí {{SG 1.50}} (fún rírì ìṣẹ́jú-àáyá 1); àwọn glaze tí a pò nílé tí ó dì ń ṣe dáadáa jù ní {{SG 1.43–1.45}} | Mímọ́ kedere {{SG 1.46–1.48}}; aláwọ̀ {{SG 1.61}} | {{SG 1.45}}; ẹ mú un fẹ́lẹ́ dé {{SG 1.43}} kí ẹ sì mú un dì bí ó bá ń kán |
+| Búrọ́ọ̀ṣì | {{SG 1.25}} (mímọ́ kedere fẹ́lẹ́) sí {{SG 1.55}} (àlàyé dúdú)                                                                                     | {{SG 1.71–1.81}}                                | Ẹ tẹ̀lé ọjà náà; ẹ lo CMC gum tàbí brushing medium                       |
+| Fífọ́n   | Kò sí iye; Hopper, tí ń kọ̀wé fún Ceramic Arts Network, sọ pé ó fẹ́lẹ́ jù gan-an, pẹ̀lú deflocculant (àfikún tí ń mú slurry ṣàn jù)                | {{SG 1.71}}                                     | Kò sí nọ́mbà tí a lè gbẹ́kẹ̀lé; ẹ fọ́n nínú spray booth nìkan               |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Láti fi ojú ṣàyẹ̀wò glaze rírì, AMACO ń rì í fún ìṣẹ́jú-àáyá 5, ó sì ń wá ìbora tí ó nípọn tó nǹkan bí dime Amẹ́ríkà. Digitalfire ń sun táílì tí a rì fún ìṣẹ́jú-àáyá 5 láti ṣàyẹ̀wò.
 
-### Water for a target SG: our estimate
+### Omi fún SG tí a ń wá: ìfojúdíwọ̀n wa
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Tábìlì tó wà nísàlẹ̀ jẹ́ ìṣirò tiwa, kì í ṣe ti orísun kan. Ó gbà pé àwọn hóró lẹ́búlẹ́bú ní ìkìmọ́lẹ̀ 2.6 g fún cm³, èyí tí ó jẹ́ àròsọ, kì í ṣe ìwọ̀n. Amọ̀, ohun èlò tí ń yọ́ nínú omi àti dídì gbogbo wọn ń yí glaze gidi padà, nítorí náà ẹ lò ó láti bẹ̀rẹ̀, lẹ́yìn náà ẹ wọ̀n. Gẹ́gẹ́ bí àyẹ̀wò, ó sọtẹ́lẹ̀ {{SG 1.44}} fún ìwúwo lẹ́búlẹ́bú àti omi tí ó dọ́gba, nítòsí {{SG 1.46}} tí Digitalfire wọ̀n. Ó tún fi hàn pé 70 sí 80 mL fún 100 g ń mú yín bẹ̀rẹ̀ lókè {{SG 1.50}}, ó ki ju bí ẹ ṣe nílò lọ.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Omi fún SG tí a ń wá (ìfojúdíwọ̀n wa)
+Label: Omi fún SG tí a ń wá
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Ohun tí a ń wá | Fún 100 g lẹ́búlẹ́bú |  Fún kìlógíráàmù |            Fún pọ́ọ̀nù |
+| -------------- | -----------------: | ---------------: | -------------------: |
+| {{SG 1.40}}    |    nǹkan bí 115 mL | nǹkan bí 1150 mL | nǹkan bí 18 US fl oz |
+| {{SG 1.45}}    |     nǹkan bí 98 mL |  nǹkan bí 980 mL | nǹkan bí 15 US fl oz |
+| {{SG 1.50}}    |     nǹkan bí 85 mL |  nǹkan bí 850 mL | nǹkan bí 13 US fl oz |
+| {{SG 1.60}}    |     nǹkan bí 64 mL |  nǹkan bí 640 mL | nǹkan bí 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Ẹ wá SG gbígbẹ glaze yín bí ẹ ti ń pò ó
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+2.6 tó wà lókè jẹ́ àfojúdá. Iye glaze yín, ìkìmọ́lẹ̀ lẹ́búlẹ́bú gbígbẹ rẹ̀, ni a lè ṣírò láti inú nọ́mbà mẹ́ta tí ẹ lè gbà bí ẹ ti ń pò ó. Pẹ̀lú rẹ̀, ẹ lè ṣírò láti inú SG lẹ́yìn náà iye lẹ́búlẹ́bú tí ó wà nínú garawa èyíkéyìí ti glaze yẹn, àti omi fún batch tí ó kàn. Ìṣirò wa, kì í ṣe ti orísun kan:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Ẹ kọ ìwúwo lẹ́búlẹ́bú gbígbẹ inú batch sílẹ̀: àpapọ̀ ìlànà náà.
+2. Ẹ wọn garawa òfìfo kí ẹ tó bẹ̀rẹ̀, tàbí kí ẹ kọ ìwúwo rẹ̀ sí i lára.
+3. Ẹ pò, ẹ sẹ́, kí ẹ sì mú glaze dé SG rẹ̀ bí ẹ ṣe máa ń ṣe. Ẹ ti gbogbo rẹ̀ gba asẹ́ kọjá kí ẹ sì ṣàn án sínú garawa, kí lẹ́búlẹ́bú kankan má bàa kù sílẹ̀ níta.
+4. Ẹ wọn garawa tí ó kún kí ẹ sì yọ ìwúwo garawa kúrò. Ìyẹn ni ìwúwo slurry.
+5. Ẹ wọn SG.
 
-Then:
+Lẹ́yìn náà:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Omi** = ìwúwo slurry − ìwúwo lẹ́búlẹ́bú.
+- **Ìwọ̀n slurry** ní mL = ìwúwo slurry ní gíráàmù ÷ SG.
+- **Ìwọ̀n lẹ́búlẹ́bú** = ìwọ̀n slurry − omi (1 g omi jẹ́ 1 mL).
+- **SG gbígbẹ** = ìwúwo lẹ́búlẹ́bú ÷ ìwọ̀n lẹ́búlẹ́bú.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Fún àpẹẹrẹ: 1000 g lẹ́búlẹ́bú ń ṣe 1980 g slurry ní {{SG 1.45}}. Omi náà jẹ́ 980 g, slurry náà jẹ́ 1980 ÷ 1.45 = nǹkan bí 1366 mL, lẹ́búlẹ́bú náà gba 1366 − 980 = 386 mL, SG gbígbẹ sì jẹ́ 1000 ÷ 386 = nǹkan bí 2.59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Ẹ wọn gbogbo slurry ní òpin, kì í ṣe omi bí ẹ ti ń dà á, kí omi tí ó gbẹ lọ tàbí tí ó tú dà má bàa kà. Àṣìṣe kékeré ń pọ̀ sí i níbí: kíka SG tí ó yàtọ̀ ní 0.01 ń sún ìdáhùn ní nǹkan bí 2 sí 4%, ó pọ̀ jù fún glaze tí ó fẹ́lẹ́. Ẹ lo batch ti 1 kg tàbí jù bẹ́ẹ̀ lọ, òṣùwọ̀n tí ó péye, àti ọ̀nà ife 500 g tó wà lókè fún SG. Ọ̀pọ̀ jùlọ àwọn ohun èlò àṣà wà láàrin nǹkan bí 2.5 àti 2.9, nítorí náà iye tí ó jìnnà gan-an sí ìyẹn, nínú glaze tí kò ní zircon tàbí òjé púpọ̀, ṣeé ṣe kí ó túmọ̀ sí àṣìṣe wíwọ̀n. Ẹ kọ iye náà sórí ìlànà.
 
-### Epsom salts, CMC gum and bentonite
+### Iyọ̀ Epsom, CMC gum àti bentonite
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Iyọ̀ Epsom** ń mú kí glaze dì díẹ̀ nígbà tí ó bá dúró jẹ́ẹ́, kí ó sì tún ṣàn nígbà tí a bá rú u. Èyí ni a ń pè ní **flocculating**, glaze tí ó ń ṣe bẹ́ẹ̀ sì jẹ́ **thixotropic**: ó ń lọ sí ara déédéé jù, ó ń kán díẹ̀, ó sì ń rọlẹ̀ díẹ̀. Digitalfire dábàá bíbẹ̀rẹ̀ ní nǹkan bí 2 g fún gálọ́ọ̀nù nígbà tí SG bá ti tọ̀nà (nǹkan bí 0.5 g fún lítà, ìyípadà wa) àti títún iye náà ṣe ní gbogbo ìgbà tí ẹ bá pò, nítorí kò sí ìlànà tí ó yẹ kí ó fi iye náà lélẹ̀. A dábàá kí ẹ kọ́kọ́ yọ́ ọ nínú omi gbígbóná díẹ̀. Nínú àpẹẹrẹ Digitalfire kan, glaze ní {{SG 1.45}} ń kán, nítorí náà omi mú un sọ̀kalẹ̀ dé {{SG 1.43}}, iyọ̀ Epsom sì tún mú un dì padà di bí ìpara, ó sì lọ sí ara déédéé. Àyẹ̀wò kíákíá: ẹ rú u, ẹ dúró, kí ẹ sì wò ó. Glaze tí ó dì ń tẹ̀síwájú láti rìn fún nǹkan bí ìṣẹ́jú-àáyá 2 tàbí 3, lẹ́yìn náà ó dúró, ó sì padà sẹ́yìn díẹ̀.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC gum** (carboxymethyl cellulose) ń mú kí slurry lẹ̀ mọ́ra jù kí ó sì pẹ́ gbẹ, ó sì ń fi ìbora líle tí ó ń di ìkòkò mú sílẹ̀. Ó ṣe pàtàkì jùlọ fún glaze búrọ́ọ̀ṣì àti glaze tí ó ní frit púpọ̀. Àpẹẹrẹ Digitalfire ń pò 3.75 g sínú 1000 g slurry, ó sì gbọ́dọ̀ wọlé pẹ̀lú blender. Glaze tí ó ní CMC kò ní dì pẹ̀lú iyọ̀ Epsom, níwọ̀n bí kòkòrò àìfojúrí sì ti ń jẹ gum náà, ó lè yí padà nínú garawa kí ó sì bẹ̀rẹ̀ sí í rùn.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonite**, amọ̀ tí ó kúnná gan-an, ń ṣèrànwọ́ láti mú àwọn hóró mìíràn léfòó. Àwọn glaze rírì sábà máa ń gbára lé amọ̀ tútù 15 sí 25% fún èyí. Fún ìlànà tí amọ̀ rẹ̀ kò tó, nǹkan bí 1 sí 3% bentonite ń ṣèrànwọ́; Digitalfire sọ pé glaze tí ó ní amọ̀ tí ó ju 15% lọ kò gbọ́dọ̀ nílò bentonite tí ó ju 1% ìwúwo glaze gbígbẹ lọ.
 
-## Test tiles and line blends {#testing lang=en}
+## Táílì ìdánwò àti line blend {#testing}
 
-### Start small
+### Ẹ bẹ̀rẹ̀ ní kékeré
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au ń gòkè ní ìgbésẹ̀ mẹ́ta: ìdánwò 50 tàbí 100 g, ìdánwò 1 sí 2 kg bí ó bá ṣiṣẹ́, lẹ́yìn náà batch ibi iṣẹ́ ti 5 sí 10 kg. Nínú ìfojúdíwọ̀n wa, ìdánwò 100 g ní {{SG 1.45}} ń ṣe nǹkan bí 135 mL (nǹkan bí 4½ US fl oz) slurry, tí ó tó láti rì táílì kékeré díẹ̀ nínú ife tóóró.
 
-### Test on your own clay
+### Ẹ dán an wò lórí amọ̀ tiyín
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Glaze lè rí yàtọ̀ gan-an lórí amọ̀ mìíràn tàbí nínú kiln mìíràn: Clay Art Center dán ọ̀kọ̀ọ̀kan àwọn glaze rẹ̀ tí a tún ṣe wò lórí oríṣi amọ̀ mẹ́rin, ní cone 6 àti ní cone 10. Ìtọ́sọ́nà Potclays fún àwọn olùbẹ̀rẹ̀ lórí ìdánwò glaze dábàá:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- **táílì ìdánwò** 6 sí 10 (ègé kékeré fún dídán glaze wò) ti amọ̀ tí ẹ ó lò gan-an, kí ẹ kọ bóyá a ti sun wọ́n ní bisque tàbí wọ́n gbẹ pátápátá
+- ìyípadà kan ní ìgbà kan
+- rírì lẹ́ẹ̀kan àti rírì lẹ́ẹ̀mejì, láti rí glaze ní fẹ́lẹ́ àti ní kíki
+- gbogbo táílì nínú ẹrù kiln kan náà
+- àmì lórí táílì kọ̀ọ̀kan kí a tó sun ún, pẹ̀lú èdìdì, gbígbẹ́ tàbí pẹ́ńsù underglaze. Àwọn táílì tí a ti sun jọra, àmì tí a ṣe kí a tó sun ún sì ń wà títí lẹ́yìn kiln, nítorí náà ẹ lè mọ̀ nígbà gbogbo ìlànà tí táílì kọ̀ọ̀kan jẹ́.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+A dábàá táílì tí ó ń dúró ní òró, nítorí táílì pẹlẹbẹ ń fi bí glaze ṣe ń ṣàn jìnnà tó pamọ́, pẹ̀lú ìlà tí ó ní ìrísí láti fi bí glaze ṣe ń fọ́ lórí etí hàn, àti ẹsẹ̀ tí kò ní glaze. Ẹ gbé ọ̀kọ̀ọ̀kan ka orí àwo kékeré tàbí ègé bisque, tàbí orí pẹpẹ tí ó ní kiln wash, láti gba àwọn ìkán. Ẹ gbé **cone ẹlẹ́rìí** (witness cone) kalẹ̀, cone amọ̀ kékeré tí ó ń tẹ̀ nígbà tí ó bá ti gba ìgbóná tó, nítòsí àwọn táílì láti fi ohun tí wọ́n gbà hàn; [ìtọ́sọ́nà ìsun](/guides/firing) ṣàlàyé cone. Ẹ fún táílì kọ̀ọ̀kan ní kóòdù kúkúrú, kí ẹ sì kọ ọ́ sí ẹ̀gbẹ́ ìlànà nínú àkọsílẹ̀ yín. Willers, tí ń kọ̀wé fún Ceramic Arts Network, ń lo nọ́mbà àti lẹ́tà, ó sì ń kọ ètò náà fúnra rẹ̀ sí iwájú ìwé àkọsílẹ̀.
 
-### Line blends
+### Line blend
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Line blend** jẹ́ ọ̀wọ́ ìdánwò tí ó ń gbésẹ̀ déédéé láti àdàlù kan sí òmíràn: láti glaze kan sí ìkejì, tàbí láti glaze ìpìlẹ̀ sí glaze kan náà pẹ̀lú ohun àwọ̀ púpọ̀ sí i. Derek Au, fún àpẹẹrẹ, ń mú iron oxide gòkè nínú ìpìlẹ̀ tí ó mọ́ kedere ní ìgbésẹ̀ 1%. Ọ̀nà ìwọ̀n tí a so mọ́ Ian Currie ń fi àkókò pamọ́, nítorí òpin méjì nìkan ni ẹ ó pò:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Ẹ pò glaze òpin méjèèjì, A àti B, gẹ́gẹ́ bí batch tí ó tóbi bákan náà, kí ẹ sì sẹ́ méjèèjì.
+2. Ẹ fi omi kún èyí tí ìwọ̀n rẹ̀ kéré títí méjèèjì yóò fi ní ìwọ̀n olómi kan náà gẹ́lẹ́.
+3. Ẹ rú méjèèjì, lẹ́yìn náà ẹ fi sirinji fa àdàlù kọ̀ọ̀kan sínú ife rẹ̀ tí ó ní nọ́mbà.
+4. Ẹ rú ife kọ̀ọ̀kan kí ẹ sì rì táílì kan.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+Nínú àpẹẹrẹ wa tí a ti ṣe, A jẹ́ 100 g ìpìlẹ̀ tí ó mọ́ kedere, B sì jẹ́ bákan náà pẹ̀lú 4 g red iron oxide tí a fi kún un (àfikún 4%). Mìlílítà kọ̀ọ̀kan ti B ní ìpín ìpìlẹ̀ kan náà bí mìlílítà kan ti A, pẹ̀lú irin rẹ̀, nítorí náà àwọn ife ń gbésẹ̀ láti àìní irin dé 4% ní ìgbésẹ̀ 1%. Òpin kọ̀ọ̀kan ń fún blend ní 100 mL, èyí tí batch 100 g bò nínú ìfojúdíwọ̀n wa.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Line blend irin ìgbésẹ̀ márùn-ún, 40 mL fún ife kọ̀ọ̀kan (àpẹẹrẹ wa tí a ti ṣe)
+Label: Àpẹẹrẹ line blend
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Ife | Ìpìlẹ̀ tí ó mọ́ kedere (A) | Ìpìlẹ̀ pẹ̀lú irin 4% (B) | Iron oxide, % ìpìlẹ̀ |
+| --- | -----------------------: | ---------------------: | ------------------: |
+| 1   |                    40 mL |                   0 mL |                   0 |
+| 2   |                    30 mL |                  10 mL |                   1 |
+| 3   |                    20 mL |                  20 mL |                   2 |
+| 4   |                    10 mL |                  30 mL |                   3 |
+| 5   |                     0 mL |                  40 mL |                   4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Ọ̀nà náà nílò ìṣirò tí ó fara balẹ̀, òpin tí a pò dáadáa tí SG wọn dọ́gba, àti òṣùwọ̀n tí ó péye. Derek Au tún ń pò ní ìwúwo dípò ìwọ̀n. **Triaxial blend** ń ṣe bákan náà pẹ̀lú òpin mẹ́ta, tí a tò sórí onígun mẹ́ta.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Nígbà tí ìgbésẹ̀ kan bá dàbí èyí tí ó dára, **Fi pamọ́ bí ẹ̀dà** lórí [ojú-ìwé ìlànà](/recipe) ń pa á mọ́ gẹ́gẹ́ bí ìlànà tirẹ̀, ó sì ń fi ti ìpilẹ̀ṣẹ̀ sílẹ̀ bí ó ti wà.
+
+## Pípa àkọsílẹ̀ mọ́ {#records}
+
+Willers sọ èròǹgbà náà dáadáa: "ìsọfúnni tí ó tó láti lè tún ṣe, tàbí yẹra fún, àbájáde tí ẹ ṣàwárí". Ẹ kọ ohun tí ẹ ń gbèrò láti dán wò sílẹ̀ kí ẹ tó bẹ̀rẹ̀, àti àbájáde nígbà tí ẹ bá ń kó o jáde. Potclays fi ọ̀nà ìfisí, kíki, oríṣi amọ̀ àti gbogbo ìsun kún un, títí kan ramp, ìdúró àti títutù. **Ramp** jẹ́ ìyára ìmúgbóná tàbí títutù, bí {{60 °C; 108 °F}} fún wákàtí kan, **ìdúró** (hold) sì ń pa kiln mọ́ ní ìgbóná kan fún àkókò tí a ṣètò. Ẹ kọ nọ́mbà lot, omi tí ẹ lò àti ìrọ́pò èyíkéyìí sílẹ̀: ìrọ́pò feldspar ti Clay Art Center túmọ̀ sí àtúnṣe nǹkan bí ìdajì àwọn glaze rẹ̀.
+
+Table: Ohun tí a ó kọ sílẹ̀ fún batch glaze kọ̀ọ̀kan (àwòṣe wa)
+Label: Àwòṣe àkọsílẹ̀
+
+| Apá     | Ohun tí a ó kọ sílẹ̀                                                                                                                                                                                                                                    |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Ìlànà   | Ìlànà náà àti ẹ̀yà rẹ̀; orúkọ ọjà ohun èlò àti nọ́mbà lot; ìrọ́pò èyíkéyìí                                                                                                                                                                                 |
+| Pípò    | Ọjọ́; ìtóbi batch; omi tí a fi kún un, àti oríṣi rẹ̀ (ti ẹ̀rọ, reverse osmosis tàbí distilled); SG lẹ́yìn pípò àti SG ìkẹyìn; ìwúwo slurry tí a parí, fún SG gbígbẹ rẹ̀; iyọ̀ Epsom, CMC àti bentonite tí a fi kún un; mesh asẹ́ àti iye ìgbà tí a gbà á kọjá |
+| Ìfisí   | Oríṣi amọ̀; cone bisque; rírì, búrọ́ọ̀ṣì tàbí dídà; àkókò rírì tàbí iye ìbora; kíki gbígbẹ                                                                                                                                                                |
+| Ìsun    | Kiln àti ipò lórí pẹpẹ; ètò ìsun, pẹ̀lú ramp, ìdúró àti títutù rẹ̀; ojú-ọjọ́ kiln (oxidation tàbí reduction); ohun tí cone ẹlẹ́rìí fi hàn, kì í ṣe ohun tí a ṣètò kiln sí nìkan                                                                            |
+| Àbájáde | Ojú àti àwọ̀; ìṣàn, crazing tàbí pinholes èyíkéyìí; fọ́tò iwájú, ẹ̀yìn àti ẹ̀gbẹ́; kóòdù táílì                                                                                                                                                              |
+
+> [!NOTE]
+> Nínú Glazecalc, [ìlànà](/recipe) tí a fi pamọ́ ń di ìlànà náà fúnra rẹ̀ mú. [Àkọsílẹ̀ ìsun](/firing) ń kọ ìsun kọ̀ọ̀kan sílẹ̀: kiln, ọjọ́, àkókò, ìgbóná, cone àti àkíyèsí. [Àkíyèsí](/notes) ń di gbogbo ohun mìíràn mú, bí àkọsílẹ̀ batch tó wà lókè àti ohun tí táílì kọ̀ọ̀kan fi hàn.
 
 ## Àwọn orísun {#sources}
 

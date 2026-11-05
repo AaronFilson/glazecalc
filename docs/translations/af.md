@@ -234,6 +234,27 @@ English writes them (Pb, BaCO₃, 0,025 mg/m³ with the decimal comma).
 
 **Native check** on the whole table (MS).
 
+### 2.9 Round 14 terms (2026-11-04)
+
+No Afrikaans ceramics source read for these; built from HAT words and checked against nl.md (_houtas_, _rijststro_).
+**Native check** on all.
+
+| English                    | af                                 | Notes                                     |
+| -------------------------- | ---------------------------------- | ----------------------------------------- |
+| wood ash                   | houtas                             | HAT _as_.                                 |
+| synthetic ash (合成土灰)   | sintetiese plaasvervanger vir 土灰 | Japanese name kept, as the English.       |
+| rice-straw ash (藁灰)      | rysstrooias                        |                                           |
+| isu ash (柞灰)             | isu-as                             |                                           |
+| porcelain stone (瓷石)     | porseleinklip                      | nl _porseleinsteen_.                      |
+| caustic                    | bytend                             | HAT.                                      |
+| product specification      | produkspesifikasie                 |                                           |
+| line blend, triaxial blend | lynmengsel, triaksiale mengsel     |                                           |
+| slurry                     | flodder                            | **Native check** (_glasuurbry_ possible). |
+| drop-and-hold              | laat sak en hou                    |                                           |
+| hold (firing)              | houtyd                             |                                           |
+| shivering                  | afskilfering                       |                                           |
+| liner glaze                | voeringglasuur                     |                                           |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes and standards, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG,

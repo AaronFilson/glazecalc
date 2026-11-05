@@ -458,73 +458,73 @@ L&L- en Bartlett-beheereenhede gebruik {{1926 °F; 1052 °C}} vir kegel 04 en {{
 
 'n Handbediende oond volg dieselfde plan met die hand: droog stadig met die deksel op 'n skrefie en die kykgate oop, stap die skakelaars op van Low na Medium na High, en laat die kiln sitter die bak beëindig. Die gepubliseerde prosedures is onder Handbediende oonde in besonderhede, hieronder.
 
-## Glaze firing {#glaze lang=en}
+## Glasuurbak {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Die glasuurbak smelt die glasuur tot glas op die biskwiet. Die meeste laebrandglasure op die mark is vir kegel 06 of 05 gemaak (die laebrandband strek oor kegel 06–04), en die meeste mediumbrandglasure vir kegel 5–6. Bak tot die kegel op jou glasuur- en kleietikette, met 'n kegelpak rondom daardie nommer. Vir wat binne die glasuur gebeur terwyl dit smelt, sien [Glasuur: die basiese beginsels](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Pak vir 'n glasuurbak
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Geglasuurde stukke mag nie aan mekaar of aan die wande raak nie: laat ongeveer ½ duim (13 mm).
+- Hou glasuur van die voet af (**dry-footing**), of sit laebrandware op **stilts**, klein staanders met punte. Steengoed en porselein moet nie op stilts staan nie, wat by daardie temperature invreet; gebruik eerder hoëbrand-rakdeklaag of silikasand.
+- Laat ten minste 1 duim (25 mm) tussen die rakrande en die wand of die kiln sitter.
 
-### Controller schedules
+### Beheerderskedules
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: L&L- en Bartlett-glasuurvoorinstellings
+Label: Glasuurvoorinstellings
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
+| Segment                  |                          Klim tot |             Slow Glaze |             Fast Glaze |
 | ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Geen aparte stap nie |
+| 2                        | {{250 °F; 139 °C}} onder die piek | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                        |                          Die piek |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Verhittingstyd, leë oond |                                   |     Ongeveer 6½–7½ uur |       Ongeveer 3–4 uur |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Waar segmente 2 en 3 eindig, per kegel (L&L en Bartlett)
+Label: Voorinstellingteikens
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Kegel |     Segment 2 eindig |                 Piek |
+| ----- | -------------------: | -------------------: |
+| 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Slow Glaze is die veiliger verstek, gegewe L&L se waarskuwing oor vinnige bak. As jy 'n houtyd van meer as 5–10 minute by die piek byvoeg, sê L&L jy moet die teiken of die kegelverskuiwing (cone offset) ooreenkomstig verlaag, en merk op dat "Week by hoë temperature verhaas slytasie van elemente en termokoppel."
 
-### Cone 6: drop-and-hold
+### Kegel 6: laat sak en hou
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Mediumbrandglasure kom soms uit met **speldeprikgaatjies** (piepklein gaatjies in die oppervlak) of blase, gelaat deur gas wat uit die smelt borrel. 'n **Laat-sak-en-hou**-skedule (drop-and-hold) bak tot bo, koel vinnig met ongeveer {{100 °F; 56 °C}} af en hou daar. In Digitalfire se woorde: "Om 100°F te laat sak en te hou, gee die smelt genoeg viskositeit om borrels te laat bars terwyl hulle steeds kan genees."
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, kegel 6 laat sak en hou
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Stap |                          Tempo |               Teiken | Hou                                               |
+| ---- | -----------------------------: | -------------------: | ------------------------------------------------- |
+| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minute                                         |
+| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Opsioneel 30 minute, om wolke borrels op te klaar |
+| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minute; langer in groot oonde                  |
+| 4    | Af teen {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minute                                         |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+PLC6DS neem ongeveer 9 uur 36 minute. Vir meer vloeibare glasure laat Digitalfire eerder ongeveer {{200 °F; 111 °C}} sak; om te ver te laat sak "waag kristallisasie tydens die hou". Sy piek van {{2200 °F; 1204 °C}} is onder die grafiek se {{2232 °F; 1222 °C}} vir kegel 6; Digitalfire meld dat die meeste oonde kegel 6 by ongeveer {{2200 °F; 1204 °C}} bereik. Kontroleer dit met 'n kegelpak in jou eie oond.
 
-### Slow cooling
+### Stadige afkoeling
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Stadige afkoeling** beteken die beheerder koel die oond teen 'n vasgestelde tempo af in plaas daarvan om dit vrylik te laat daal. Digitalfire se C6DHSC is PLC6DS gevolg deur afkoeling teen {{150 °F/h; 83 °C/h}} van {{2100 °F; 1148 °C}} af tot {{1400 °F; 760 °C}}, dan af. Dit "verbeter glans en oppervlakgehalte" en help rutielblou, maar stadige afkoeling "kan matheid verhoog" (een mat glasuur het droog geword) en kan die lewe van die oond se relais verkort. L&L lewer ook 'n stadigeafkoelingsprogram vir kegel 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L "User 6": stadige afkoeling vir kegel 6-glasure
+Label: L en L stadige afkoeling
 
-| Step |                          Rate |               Target |
+| Stap |                         Tempo |               Teiken |
 | ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| 1    |                   Volspoed op | {{2232 °F; 1222 °C}} |
+| 2    |                   Volspoed af | {{1900 °F; 1038 °C}} |
+| 3    | Af teen {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Skutt se beheerders bied eweneens 'n voorverhitting en 'n eenstap-afkoelopsie.
 
-### On a manual kiln
+### Op 'n handoond
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+'n Handoond kan hierdie skedules nie presies volg nie, maar die plan is dieselfde: saggies aan die begin, bestendig deur die middel, en 'n dopgehoude einde. Bracker se laebrand-glasuurskedule is onder Handoonde in detail, hieronder; vir warmer kegels voeg dit "gemiddeld 15–30 minute per kegelnommer" by. Met 'n pirometer, oefening en 'n logboek kan jy 'n laat-sak-en-hou of 'n stadige afkoeling rofweg naboots deur die skakelaars met die hand af te draai, soos Digitalfire voorstel.
 
 ## Handbediende oonde in besonderhede {#manual-kilns}
 

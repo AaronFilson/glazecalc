@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Koyi da kwas ɗin glaze na kyauta na John Britt",
       "text": "Kwas ɗinsa na bidiyo kyauta a YouTube, darasi bayan darasi, tare da jagororinmu don karantawa da atisaye don gwadawa a Glazecalc. Da Turanci."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Koyar da lissafin glaze",
+      "text": "Zaman karatu 6 don aji ko ƙungiyar karatu, daga tayil na triaxial zuwa UMF da aka warware ta hanyoyi biyu, tare da takardun aiki don bugawa."
     }
   },
   "more": "Ƙarin jagorori",
@@ -255,6 +259,8 @@
       "crazed": "ya yi crazing"
     },
     "keyBright": "Layin ɗigo-ɗigo: inda glaze na Stull suka fi haske.",
-    "keyCrazed": "Zane-zanen layuka: inda suka yi crazing."
+    "keyCrazed": "Zane-zanen layuka: inda suka yi crazing.",
+    "note": "Jagora ne, ba hasashe ba. R. T. Stull (Transactions of the American Ceramic Society, 1912) ya gasa a kusan cone 11 tare da flux da aka ƙayyade a 0.3 K₂O da 0.7 CaO; wasu flux da wasu gasa suna motsa yankunan, kuma glaze marar sheƙi (matte) saboda kawai ba a gasa shi sosai ba na iya bayyana a matsayin mai sheƙi a kan taswirar. Yankunan kamar yadda Glazy ke zana su ne.",
+    "inGuide": "Silica (SiO₂) a kwance, daga kusan 1 zuwa 7, da alumina (Al₂O₃) a tsaye, daga 0 zuwa 1, duka daga UMF. Sassa masu siffar tsini suna buɗewa daga hagu: wanda bai narke ba a sama hagu, sannan marar sheƙi, sannan rabin marar sheƙi. Sashen da babu inuwa a damansu mai sheƙi ne, kuma layin ɗigo-ɗigo a cikinsa shi ne inda glaze na Stull suka fi sheƙi. Wanda ba a gasa sosai ba yana ƙasa dama, da ɗan alumina da silica mai yawa. Layukan da suka ratsa juna, a ƙasa a kan taswirar da gefen hagunsa, su ne inda gwaje-gwajensa suka sami crazing."
   }
 }

@@ -9,6 +9,7 @@
     "homeSafety": "Ha sumayn qoyskaaga - Glazecalc",
     "firing": "Gubidda kiln fudud - Glazecalc",
     "learnWithJohnBritt": "Ku baro koorsada glaze ee bilaashka ah ee John Britt - Glazecalc",
+    "teachingGlazeCalculation": "Barashada xisaabta glaze - Glazecalc",
     "about": "Ku saabsan - Glazecalc",
     "privacy": "Xogtaada gaarka ah - Glazecalc",
     "terms": "Shuruudaha isticmaalka - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Oggolow isbeddel - Glazecalc",
     "cones": "Shaxda cone-ka: heerkulka cone-yada Orton iyo SK - Glazecalc",
     "materials": "Walxaha caadiga ah ee glaze-ka: falanqayn iyo khataro - Glazecalc",
-    "materialInfo": "{name}: falanqaynta oksaydhka iyo khataraha - Glazecalc"
+    "materialInfo": "{name}: falanqaynta oksaydhka iyo khataraha - Glazecalc",
+    "famousGlazes": "Glaze caan ah - Glazecalc",
+    "famousGlaze": "Glaze-ka {name} - Glazecalc"
   },
   "nav": {
     "skip": "U gudub waxa ku jira",
@@ -177,6 +180,7 @@
     "homeSafety": "Waxa la sameeyo haddii ilmo ama xayawaan guriga uu liqo walax glaze, iyo sida walxaha, boodhka, kiln-ka iyo weelka gacmeedka looga ilaaliyo qoyskaaga.",
     "firing": "Sida kiln koronto loo gubo: dooro, dhig oo akhri cone-yada, oo raac jadwallada la daabacay ee gubidda bisque iyo glaze, oo leh shaxda cone-ka.",
     "learnWithJohnBritt": "Wehel u ah koorsada glaze ee bilaashka ah ee John Britt: muuqaalladiisa cutub cutub, hagayaasha Glazecalc iyo layliyo aad xisaabiyaha ku tijaabiso.",
+    "teachingGlazeCalculation": "6 casharro oo lagu baro UMF (unity molecular formula, qaacidada Seger): walxaha iyo tile-yada triaxial, mole, hab ilaa qaacido iyo dib, iyo cilladaha glaze-ka, oo leh tusaalooyin la xalliyey iyo warqado shaqo oo la daabaco.",
     "advice": "Talooyin wax ku ool ah oo ku saabsan isku-darka, glaze-saarka iyo gubidda, oo ka yimid Glazecalc, iyo talooyinkaaga. Bilaash dhoobo-sameeyayaasha.",
     "about": "Glazecalc waa xisaabiye kimistariga glaze iyo buug bilaash ah oo il furan. Arag sida uu UMF u xisaabiyo iyo sida loo dhisay.",
     "privacy": "Sida Glazecalc u maareeyo xogtaada: xayeysiis ma jiro, falanqayn ma jirto, raadraac ma jiro, waxbana lama iibiyo. Waxa la hayo, sababta, iyo xuquuqdaada.",
@@ -187,6 +191,8 @@
     "materials": "Walxaha maktabadda caadiga ah ee Glazecalc, feldspar iyo dhoobo ilaa frit iyo ilaha boron, mid walba falanqaynta oksaydhka, UMF-ta iyo khataraha.",
     "materialInfo": "{name}: falanqaynta oksaydhka, UMF-ta, LOI iyo khataraha ee maktabadda caadiga ah ee Glazecalc.",
     "materialInfoLong": "Walaxda {name} ee maktabadda caadiga ah ee Glazecalc: falanqaynta oksaydhka, qaybta ay ku leedahay UMF-ta, LOI iyo khataraha.",
+    "famousGlazes": "Glaze caan ah oo adduunka oo dhan ka yimid: habka dhaqameed ama falanqaynta taariikhiga ah ee glaze kasta, UMF-tiisa, iyo nooc laga sameeyey walxaha laga iibiyo meesha aad joogto.",
+    "famousGlaze": "Glaze-ka {name} ({native}): habkiisa dhaqameed ama falanqaynta taariikhiga ah, gubidda, UMF-ta iyo ilaha, iyo nooc laga sameeyey walxaha laga iibiyo meesha aad joogto.",
     "imageAlt": "Astaanta Glazecalc iyo cinwaankeeda, kimistariga glaze oo bilaash ah oo loogu talagalay dhoobo-sameeyayaasha, ag sawir xirmooyin cone ah oo la gubay."
   },
   "notices": {

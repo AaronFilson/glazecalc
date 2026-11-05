@@ -723,7 +723,8 @@
     "keyPoint": "Puntu: kay esmalte.",
     "keyBright": "Puntukunayuq siq'i: Stullpa esmaltenkuna aswan k'anchaq kasqanku.",
     "keyLimits": "Rakisqa siq'ikuna, llanthukunapas: {name} nisqap sílice alúmina rangonkuna.",
-    "keyCrazed": "Chimpasqa siq'ikuna: cuarteadota rurasqanku."
+    "keyCrazed": "Chimpasqa siq'ikuna: cuarteadota rurasqanku.",
+    "note": "Pusaqmi, manam ñawpaqmanta willaychu. R. T. Stull (Transactions of the American Ceramic Society, 1912) yaqa cono 11-pi ruphachirqan fundentekunata 0.3 K₂O, 0.7 CaO-pi takyachispa; huk fundentekuna huk ruphachiykunapas suyukunata kuyuchinku, mana allin ruphachisqa kaspalla mana lliphiq (mate) esmalteqa lliphiq hinam chay gráficopi rikhuriyta atin. Suyukunaqa Glazy siq'isqan hinam."
   },
   "slurry": {
     "heading": "Gravedad específica, unupas",
@@ -751,6 +752,17 @@
       "pint": "Munasqayki pinta llasay, oz"
     },
     "drySg": "Ch'aki materialkunap SG-n",
+    "drySgEmpty": "Ch'aki llasaykunallam chayta munan; yapana unuqa manam munanchu. Yachaspaqa qillqay.",
+    "drySgNeeded": "Baldepi ch'aki esmaltetawan musuq lotepaq unutawan rikunaykipaq ch'aki materialkunap SG-nta qillqay.",
+    "estimate": {
+      "mineral": "Yaqa yupay, {sg}, sapa material imamanta rurasqa kasqanmanta: mineralninpa tupusqa sinchi kaynin. Aswan allinta yachaspaqa tikray.",
+      "kind": "Yaqa yupay, {sg}: feldespatokuna mitukunapas yaqa 2.6 llasanku. Aswan allinta yachaspaqa tikray.",
+      "glass": "Yaqa yupay, {sg}, fritakunap óxidonkunamanta yupasqa (vidriom kanku). Aswan allinta yachaspaqa tikray.",
+      "mixed": "Yaqa yupay, {sg}, sapa materialmanta: mineralninpa tupusqa sinchi kaynin, feldespatokunapaq mitukunapaqpas yaqa 2.6, fritakunataq óxidonkunamanta yupasqa. Aswan allinta yachaspaqa tikray.",
+      "leftOut": "Saqisqa, SG-nku mana yachasqa kaptin: {names}.",
+      "none": "Kay ruranapaq manam yaqa yupay kanchu: kaykunap SG-nqa mana yachasqam: {names}. Yachaspaqa qillqay.",
+      "was": "Qampa yupayniykim llamk'achikuchkan. Yaqa yupayqa {sg} karqan; chayman kutinaykipaq campota ch'usaqyachiy."
+    },
     "batch": "Musuq lotepaq ch'aki esmalte, {unit}",
     "contents": "SG {sg}-pi, baldeqa {glaze} ch'aki esmaltetam {water} unutawan hap'in.",
     "add": "SG {target}-man chayanapaq, {water} unuta yapay. Yaqa {volume}-pi tukukun.",
@@ -758,6 +770,7 @@
     "already": "Ñam SG {target}-pi kachkan.",
     "mix": "{glaze} ch'aki esmalteta {water} unuwan chaqruy, yaqa {volume}-paq SG {target}-pi.",
     "badSg": "SG-qa 1-manta (unup) aswanmi kanan, ch'aki materialkunap {dry}-manta pisitaq.",
+    "badSgWater": "SG-qa 1-manta (unupmanta) aswan kanan.",
     "badDry": "Ch'aki materialkunap SG-nqa 1-manta aswanmi kanan.",
     "note": "Unuqa llasaypim: huk litroqa huk kilogramotam llasan, huk US galóntaq yaqa 8.3 lb. Yupayqa volumenkunata huñukunanpaq hap'in, chayqa asuykuqmi, manan chiqanchu: unuta pisi-pisimanta yapay, kuyuchiy, wakmantataq tupuy. Kaqlla SG-pi iskay esmaltekunapas hukniraytam purinmanku.",
     "saveTarget": "SG {sg}-ta kay ruranap metan hina waqaychay",

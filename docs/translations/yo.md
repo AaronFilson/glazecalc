@@ -182,6 +182,26 @@ on an official page; no poison line confirmed.
 
 **Native check** on the whole table.
 
+### 2.6 Round 14 terms (2026-11-04)
+
+No Yoruba ceramics source read for these; built from Abraham's everyday words (_eérú_ ash, _koríko_ straw, _ìrẹsì_
+rice, _òkúta_ stone, _ẹrẹ̀_ mud). **Native check** on all, tones included.
+
+| English                    | yo                                                                 | Notes                                         |
+| -------------------------- | ------------------------------------------------------------------ | --------------------------------------------- |
+| wood ash                   | eérú igi                                                           | Abraham.                                      |
+| synthetic ash (合成土灰)   | ìrọ́pò àtọwọ́dá (synthetic) fún 土灰                                 | Japanese name kept, as the English.           |
+| rice-straw ash (藁灰)      | eérú koríko ìrẹsì                                                  |                                               |
+| isu ash (柞灰)             | eérú isu                                                           |                                               |
+| porcelain stone (瓷石)     | òkúta porcelain                                                    |                                               |
+| caustic                    | ń jó awọ ara (caustic)                                             | English kept in brackets for the safety text. |
+| slurry; sludge             | slurry; ẹrẹ̀                                                        |                                               |
+| powder                     | lẹ́búlẹ́bú                                                           |                                               |
+| drop-and-hold; hold        | ìsọ̀kalẹ̀ àti ìdúró (drop-and-hold); ìdúró                           |                                               |
+| glass former; stabilizer   | olùkọ́ gíláàsì; olùfìdímúlẹ̀                                         |                                               |
+| line blend, triaxial blend | line blend, triaxial blend                                         | Loans.                                        |
+| months in running text     | Oṣù Èbìbí (May), Oṣù Ọ̀pẹ (Dec.), Oṣù Agẹmọ (July), Oṣù Belu (Nov.) | Check against CLDR yo.                        |
+
 ## 3. Never translated
 
 Formulas, cone numbers, units, codes, kiln makers, trade names, placeholders and tags; **UMF, LOI, SG, Orton, Seger,

@@ -119,183 +119,183 @@ Ndụmọdụ dị iche gbasara otu ihe ọtụtụ ị chọrọ si dị nro. D
 
 Derek Au na-atụ n'otu efere n'ikpo dị iche iche, ka e wee nwee ike ikpupụta njehie. Ọ bụrụ na ị na-atụ n'otu bọket na-emeghị tare n'etiti ihe, ngụkọta na-aga n'ihu Glazecalc na-agwa gị ihe ihe ọtụtụ kwesịrị ịgụ mgbe nke ọ bụla gasịrị.
 
-## Mixing and sieving {#mixing lang=en}
+## Ịgwakọta na ịnyọ {#mixing}
 
-### How much water
+### Mmiri ole
 
-Sources disagree. Derek Au starts thick, at 50 mL of water per 100 g of powder, and adds more later. Potterycrafts gives 65 mL per 100 g for one powder glaze. UT Austin uses equal weights of water and powder, and when Digitalfire put 20 kg of powder into 20 kg of water, it measured a specific gravity of 1.46.
+Isi mmalite ekwekọrịtaghị. Derek Au na-amalite n'ọkpụrụkpụ, ya na 50 mL mmiri maka 100 g ntụ, ma na-agbakwunye ọzọ emesịa. Potterycrafts na-enye 65 mL maka 100 g maka otu glaze ntụ. UT Austin na-eji ịdị arọ mmiri na ntụ hà nhata, mgbe Digitalfire tinyere 20 kg ntụ n'ime 20 kg mmiri, ọ tụrụ SG nke 1.46.
 
-Water is quick to add and slow to take out, so start low. Our estimate: begin with **about 70 to 80 mL per 100 g** (700 to 800 mL per kilogram, or about 11 to 12 US fl oz per pound). Slake, mix and sieve at that thickness, then add water a little at a time until the specific gravity is right. 1 mL of water weighs 1 g, so you can weigh it. If you overshoot, let the glaze settle, then sponge or pour clear water off the top.
+Mmiri dị mfe ịgbakwunye ma siri ike iwepụ, ya mere malite na obere. Atụmatụ anyị: malite na **ihe dị ka 70 ruo 80 mL maka 100 g** (700 ruo 800 mL maka kilogram, ma ọ bụ ihe dị ka 11 ruo 12 US fl oz maka pound). Kwọọ ya, gwakọta ma nyọọ ya n'ọkpụrụkpụ ahụ, emesịa gbakwunye mmiri nke nta nke nta ruo mgbe SG ziri ezi. 1 mL mmiri dị arọ 1 g, ya mere ị nwere ike ịtụ ya. Ọ bụrụ na ị gafere, hapụ glaze ka o dosie, emesịa jiri ogbo wepụ mmiri doro anya dị n'elu ma ọ bụ wụpụ ya.
 
-### Tools and water
+### Ngwa ọrụ na mmiri
 
-- **Propeller mixer.** Digitalfire calls a good one "essential". A corded drill with a mixing paddle does the job in a bucket. UT Austin runs it at least 4 to 5 minutes after the glaze looks mixed, and keeps the blade off the bucket, which it can scrape plastic from.
-- **Blender.** It "works extremely well for small batches" (Digitalfire). Keep it for glaze only: it must never go back to the kitchen.
-- **Whisk or stick.** Zakin's choice when there is no mixer.
+- **Igwe ngwakọta propeller.** Digitalfire kpọrọ nke ọma "dị mkpa". Drill nwere waya ya na ihe ngwakọta na-arụ ọrụ ahụ na bọket. UT Austin na-eji ya opekata mpe nkeji 4 ruo 5 mgbe glaze yiri ka agwakọtala ya, ma na-eme ka agụba ahụ ghara imetụ bọket, nke ọ nwere ike ịkpachapụ plastik na ya.
+- **Blender.** Ọ "na-arụ ọrụ nke ọma maka batch nta" (Digitalfire). Debe ya naanị maka glaze: ọ gaghị alaghachi na kichin ọ dịla mgbe.
+- **Ihe ịkụ ma ọ bụ osisi.** Nhọrọ Zakin mgbe enweghị igwe ngwakọta.
 
-Water varies too, and Digitalfire notes that it changes how a slurry behaves. Derek Au uses reverse-osmosis water because his tap water is hard. Whatever you use, note it.
+Mmiri na-adịgasịkwa iche, Digitalfire kwukwara na ọ na-agbanwe otu slurry (ntụ glaze na mmiri) si akpa àgwà. Derek Au na-eji mmiri reverse osmosis n'ihi na mmiri pọmpụ ya siri ike (hard water). Ihe ọ bụla ị na-eji, dee ya.
 
-### Step by step
+### Nzọụkwụ na nzọụkwụ
 
-1. Put on your respirator, and rubber gloves if your hands will go in. Zakin wears a mask from the start of weighing until the glaze is wet.
-2. Measure about 70 to 80 mL of water per 100 g of powder into the bucket.
-3. Add the weighed powder gently, from a low height. UT Austin adds powder to warm water; Zakin and Au add water to powder. We suggest powder into water, which puffs up less dust, except for a recipe with a lot of bentonite: stir its dry powders together first.
-4. **Slake** it: let the powder soak without stirring. Digitalfire waits about 20 minutes. Powders with a gum or binder need to stand overnight.
-5. Mix until there are no dry pockets or lumps.
-6. Sieve it twice (see below).
-7. Cover it and let it rest overnight, then mix again and check the bottom for a hard layer.
-8. Measure the specific gravity, and add water a little at a time to reach your target. To learn your glaze's own dry SG, weigh the finished slurry too (see below).
-9. Label the bucket, and write down what you did.
-10. Clean up wet: mop the floor and wipe every surface, including the outside of the material containers.
+1. Yiri respirator gị, na uwe aka rọba ma ọ bụrụ na aka gị ga-abanye n'ime ya. Zakin na-eyi ihe mkpuchi ihu site na mmalite ịtụ ruo mgbe glaze dị mmiri.
+2. Tụọ ihe dị ka 70 ruo 80 mL mmiri maka 100 g ntụ ọ bụla n'ime bọket.
+3. Tinye ntụ a tụrụ atụ nwayọọ, site n'ebe dị ala. UT Austin na-etinye ntụ na mmiri dị ọkụ ọkụ; Zakin na Au na-etinye mmiri na ntụ. Anyị na-atụ aro ntụ n'ime mmiri, nke na-ebuli obere uzuzu, ma e wezụga usoro nwere ọtụtụ bentonite: kpalie ntụ akọrọ ya ọnụ na mbụ.
+4. **Kwọọ ya**: hapụ ntụ ahụ ka ọ mịrị mmiri na-akpaliteghị ya. Digitalfire na-echere ihe dị ka nkeji 20. Ntụ nwere gum ma ọ bụ ihe njikọ kwesịrị iguzo abalị niile.
+5. Gwakọta ruo mgbe enweghị ebe akọrọ ma ọ bụ mkpụrụ.
+6. Nyọọ ya ugboro abụọ (lee n'okpuru).
+7. Kpuchie ya ma hapụ ya ka o zuo ike abalị niile, emesịa gwakọta ọzọ ma lelee n'okpuru ma ọ nwere oyi akwa siri ike.
+8. Tụọ SG, ma gbakwunye mmiri nke nta nke nta ka i ruo ihe ị na-achọ. Iji mara SG akọrọ nke glaze gị, tụọkwa slurry i mechara (lee n'okpuru).
+9. Tinye akara na bọket, ma dee ihe i mere.
+10. Jiri mmiri hichaa: jiri mop hichaa ala ma hichaa elu ọ bụla, gụnyere mpụta igbe ihe.
 
-### Sieving
+### Ịnyọ
 
-A **sieve** is a mesh screen in a frame. Pushing glaze through it with a brush breaks up lumps that mixing leaves and catches particles that would fire as specks. The higher the **mesh** number, the finer the screen: 80 mesh has openings of about 0.18 mm, and 100 mesh about 0.15 mm.
+**Ihe nyọ** bụ ụgbụ dị n'ime frame. Iji brọsh kwanye glaze site na ya na-agbaji mkpụrụ ngwakọta hapụrụ ma na-ejide ntụpọ ndị ga-agba ọkụ ghọọ ntụpọ. Ka nọmba **mesh** dị elu, ka ụgbụ ahụ na-adị nro: mesh 80 nwere oghere dị ihe dị ka 0.18 mm, mesh 100 bụ ihe dị ka 0.15 mm.
 
-Sources recommend different meshes. Zakin sieves twice through 50 or 80 mesh. Derek Au uses 120 mesh for most glazes, especially those with cobalt or iron: three passes through 80 mesh still left iron specks in one celadon, and one pass through 120 mesh cured it. He keeps 60 to 80 mesh for ash glazes and others with coarse materials. Potterycrafts, in the UK, suggests 60 to 80 mesh. A safe default:
+Isi mmalite na-atụ aro mesh dị iche iche. Zakin na-anyọ ugboro abụọ site na mesh 50 ma ọ bụ 80. Derek Au na-eji mesh 120 maka ọtụtụ glaze, karịsịa ndị nwere cobalt ma ọ bụ iron: ịgafe ugboro atọ site na mesh 80 ka hapụrụ ntụpọ iron n'otu celadon, ịgafe otu ugboro site na mesh 120 dozikwara ya. Ọ na-edebe mesh 60 ruo 80 maka glaze ntụ na ndị ọzọ nwere ihe siri ike. Potterycrafts, na UK, na-atụ aro mesh 60 ruo 80. Nhọrọ dị nchekwa:
 
-Table: Which sieve to use
-Label: Sieve mesh
+Table: Ihe nyọ ị ga-eji
+Label: Mesh ihe nyọ
 
-| Glaze                                        | Sieve                      |
-| -------------------------------------------- | -------------------------- |
-| Most glazes                                  | Two passes through 80 mesh |
-| Glazes with colorants such as cobalt or iron | 100 to 120 mesh            |
-| Ash glazes, and others with coarse materials | 60 to 80 mesh              |
+| Glaze                                                 | Ihe nyọ                           |
+| ----------------------------------------------------- | --------------------------------- |
+| Ọtụtụ glaze                                           | Ịgafe ugboro abụọ site na mesh 80 |
+| Glaze nwere ihe na-enye agba dịka cobalt ma ọ bụ iron | Mesh 100 ruo 120                  |
+| Glaze ntụ, na ndị ọzọ nwere ihe siri ike              | Mesh 60 ruo 80                    |
 
-## Specific gravity {#specific-gravity lang=en}
+## SG (specific gravity) {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**SG** (specific gravity) na-agwa gị ntụ ole dị na slurry gị. Ọ bụ ịdị arọ nke otu olu glaze kewara site n'ịdị arọ nke otu olu mmiri ahụ. Mmiri bụ 1.00, glaze dị na {{SG 1.45}} dịkwa arọ 145 g maka 100 mL. Ịgwakọta ruo SG a tụrụ atụ bụ otu ị ga-esi nweta otu ọkpụrụkpụ ahụ, na otu mkpuchi ahụ, oge ọ bụla. O nweghị nkeji, ya mere ọ bụ otu na gram ma ọ bụ ounce.
 
-### Measure it by weighing 100 mL
+### Tụọ ya site n'ịtụ 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Kpalie glaze ka ihe ọ bụla ghara idosi.
+2. Dobe **graduated cylinder** 100 mL (tube ogologo nwere akara maka ịtụ) ma ọ bụ syringe 100 mL n'elu ihe ọtụtụ, ma mee ya efu (tare).
+3. Jupụta ya glaze ruo 100 mL kpọmkwem, na-agụ akara ahụ n'ọkwa anya.
+4. Tụọ ya ma kewaa gram site na 100: 145 g bụ SG 1.45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire na-etinyekwa akara n'iko n'ọkwa 500 g mmiri, jupụta ya glaze ruo akara ahụ, ma kewaa ịdị arọ ahụ site na 500; ihe ọtụtụ buru ibu, jupụtara karịa ziri ezi karịa. **Hydrometer**, ihe na-ese n'elu a na-agụ ebe ọ na-anọdụ na glaze, dị ngwa mana ọ nwere ike ịgụ glaze dị ọkpụrụkpụ ma ọ bụ kpụkọrọ akpụkọ n'ụzọ na-ezighị ezi. Hydrometer UK, dịka nke Potclays, na-agụ na ogo Baumé (°Bé). Site na ngụkọ anyị, SG = 145 ÷ (145 − °Bé), ya mere 46 °Bé bụ ihe dị ka 1.46. Akwụkwọ UK ochie na-enye **pint weight**, ounce dị n'otu pint imperial nke glaze: kewaa ya site na 20, ya mere 29 oz bụ ihe dị ka SG 1.45 (ngụkọ anyị kwa).
 
-### What to aim for
+### Ihe ị ga-achọ
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Isi mmalite ekwekọrịtaghị, karịsịa maka iji brọsh tee na ịgba ya, ebe onye na-ere ahịa UK Potclays na-enye ọnụ ọgụgụ dị elu karịa nke ukwuu (nke ya bụ "maka ntụzịaka naanị"). Were nọmba ọ bụla dịka ebe mmalite. Ndụmọdụ isi Digitalfire bụ ịchọta SG na ịkpụkọ na-arụ ọrụ maka glaze ọ bụla, emesịa megharịa ha ma dee ha.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: SG a na-achọ, ebe isi mmalite ekwekọrịtaghị
+Label: SG a na-achọ
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Ojiji  | Digitalfire na Glazy                                                                                                                                                   | Potclays (UK)                                      | Ebe mmalite dị nchekwa                                                                      |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Ịmikpu | {{SG 1.40}} (maka ịmikpu sekọnd 5) ruo {{SG 1.50}} (maka ịmikpu sekọnd 1); glaze agwakọtara n'ụlọ kpụkọrọ akpụkọ na-arụ ọrụ nke ọma karịa na {{SG 1.43–1.45}}          | Doro anya {{SG 1.46–1.48}}; nwere agba {{SG 1.61}} | {{SG 1.45}}; mee ka ọ dị gịrịgịrị ruo {{SG 1.43}} ma mee ka ọ kpụkọ ma ọ bụrụ na ọ na-adapụ |
+| Brọsh  | {{SG 1.25}} (doro anya gịrịgịrị) ruo {{SG 1.55}} (nkọwa gbara ọchịchịrị)                                                                                               | {{SG 1.71–1.81}}                                   | Soro ngwaahịa ahụ; jiri CMC gum ma ọ bụ brushing medium                                     |
+| Ịgba   | Enweghị ọnụ ọgụgụ; Hopper, na-ede maka Ceramic Arts Network, kwuru na ọ dị gịrịgịrị karịa nke ukwuu, ya na deflocculant (ihe mgbakwunye na-eme ka slurry na-asọ karịa) | {{SG 1.71}}                                        | Enweghị nọmba a pụrụ ịtụkwasị obi; gbaa naanị n'ime spray booth                             |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Iji anya lelee glaze ịmikpu, AMACO na-amikpu ya sekọnd 5 ma na-achọ mkpuchi dị ọkpụrụkpụ dịka dime America. Digitalfire na-agba tile a mikpuru sekọnd 5 ọkụ iji lelee.
 
-### Water for a target SG: our estimate
+### Mmiri maka SG a na-achọ: atụmatụ anyị
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Tebụl dị n'okpuru bụ ngụkọ nke anyị, ọ bụghị nke isi mmalite. Ọ na-eche na mkpụrụ ntụ ahụ nwere njupụta 2.6 g maka cm³, nke bụ echiche, ọ bụghị ntụtụ. Ụrọ, ihe na-agbaze na mmiri na ịkpụkọ niile na-agbanwe ezigbo glaze, ya mere jiri ya malite, emesịa tụọ. Dịka nlele, ọ na-ebu amụma {{SG 1.44}} maka ịdị arọ ntụ na mmiri hà nhata, dị nso na {{SG 1.46}} Digitalfire tụrụ. Ọ na-egosikwa na 70 ruo 80 mL maka 100 g na-eme ka ị malite n'elu {{SG 1.50}}, dị ọkpụrụkpụ karịa ihe ị chọrọ.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Mmiri maka SG a na-achọ (atụmatụ anyị)
+Label: Mmiri maka SG a na-achọ
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Ihe a na-achọ |   Maka 100 g ntụ |     Maka kilogram |            Maka pound |
+| ------------- | ---------------: | ----------------: | --------------------: |
+| {{SG 1.40}}   | ihe dị ka 115 mL | ihe dị ka 1150 mL | ihe dị ka 18 US fl oz |
+| {{SG 1.45}}   |  ihe dị ka 98 mL |  ihe dị ka 980 mL | ihe dị ka 15 US fl oz |
+| {{SG 1.50}}   |  ihe dị ka 85 mL |  ihe dị ka 850 mL | ihe dị ka 13 US fl oz |
+| {{SG 1.60}}   |  ihe dị ka 64 mL |  ihe dị ka 640 mL | ihe dị ka 10 US fl oz |
 
-### Find your own glaze's dry SG while you mix
+### Chọta SG akọrọ nke glaze gị ka ị na-agwakọta
 
-The 2.6 above is a guess. Your own glaze's figure, the density of its dry powder, can be worked out from three numbers you can take while mixing. With it, you can work out from the SG how much powder is in any bucket of that glaze later, and the water for the next batch. Our arithmetic, not a source's:
+2.6 dị n'elu bụ ịkọ nkọ. Ọnụ ọgụgụ glaze gị, njupụta ntụ akọrọ ya, enwere ike ịgụpụta ya site na nọmba atọ ị nwere ike iwere ka ị na-agwakọta. Ya na ya, ị nwere ike ịgụpụta emesịa site na SG ntụ ole dị na bọket ọ bụla nke glaze ahụ, na mmiri maka batch na-esote. Ngụkọ anyị, ọ bụghị nke isi mmalite:
 
-1. Write down the weight of dry powder in the batch: the recipe's total.
-2. Weigh the empty bucket before you start, or mark its weight on it.
-3. Mix, sieve and bring the glaze to its SG as usual. Push everything through the sieve and rinse it into the bucket, so no powder is left out.
-4. Weigh the full bucket and take off the bucket's weight. That is the slurry's weight.
-5. Measure the SG.
+1. Dee ịdị arọ ntụ akọrọ dị na batch: ngụkọta usoro ahụ.
+2. Tụọ bọket tọgbọ chakoo tupu ị malite, ma ọ bụ dee ịdị arọ ya na ya.
+3. Gwakọta, nyọọ ma weta glaze na SG ya dịka ọ na-adịbu. Kwanye ihe niile site n'ihe nyọ ma sachaa ya n'ime bọket, ka ntụ ọ bụla ghara ịfọdụ n'èzí.
+4. Tụọ bọket jupụtara ma wepụ ịdị arọ bọket ahụ. Nke ahụ bụ ịdị arọ slurry.
+5. Tụọ SG.
 
-Then:
+Emesịa:
 
-- **Water** = slurry weight − powder weight.
-- **Slurry volume** in mL = slurry weight in grams ÷ SG.
-- **Powder volume** = slurry volume − water (1 g of water is 1 mL).
-- **Dry SG** = powder weight ÷ powder volume.
+- **Mmiri** = ịdị arọ slurry − ịdị arọ ntụ.
+- **Olu slurry** na mL = ịdị arọ slurry na gram ÷ SG.
+- **Olu ntụ** = olu slurry − mmiri (1 g mmiri bụ 1 mL).
+- **SG akọrọ** = ịdị arọ ntụ ÷ olu ntụ.
 
-For example: 1000 g of powder makes 1980 g of slurry at {{SG 1.45}}. The water is 980 g, the slurry is 1980 ÷ 1.45 = about 1366 mL, the powder takes up 1366 − 980 = 386 mL, and the dry SG is 1000 ÷ 386 = about 2.59.
+Dịka ọmụmaatụ: 1000 g ntụ na-eme 1980 g slurry na {{SG 1.45}}. Mmiri ahụ bụ 980 g, slurry ahụ bụ 1980 ÷ 1.45 = ihe dị ka 1366 mL, ntụ ahụ na-ewe 1366 − 980 = 386 mL, SG akọrọ bụkwa 1000 ÷ 386 = ihe dị ka 2.59.
 
-Weigh the whole slurry at the end, not the water as you pour it, so water that evaporates or splashes out doesn't count. Small errors grow here: an SG reading off by 0.01 moves the answer by about 2 to 4%, more for a thinner glaze. Use a batch of 1 kg or more, an accurate scale, and the 500 g cup method above for the SG. Most of the common materials are between about 2.5 and 2.9, so a figure far outside that, in a glaze without much zircon or lead, probably means a measuring mistake. Write the figure on the recipe.
+Tụọ slurry niile na njedebe, ọ bụghị mmiri ka ị na-awụnye ya, ka mmiri na-ekpo ọkụ ma ọ bụ na-agbapụ ghara ịgụ. Obere njehie na-eto ebe a: ọgụgụ SG na-ezighị ezi site na 0.01 na-akwaga azịza ahụ ihe dị ka 2 ruo 4%, karịa maka glaze dị gịrịgịrị. Jiri batch nke 1 kg ma ọ bụ karịa, ihe ọtụtụ ziri ezi, na ụzọ iko 500 g dị n'elu maka SG. Ọtụtụ ihe a na-ahụkarị dị n'etiti ihe dị ka 2.5 na 2.9, ya mere ọnụ ọgụgụ dị anya nke ukwuu n'èzí nke ahụ, na glaze na-enweghị ọtụtụ zircon ma ọ bụ lead, nwere ike ịpụta njehie ịtụ. Dee ọnụ ọgụgụ ahụ n'usoro ahụ.
 
-### Epsom salts, CMC gum and bentonite
+### Nnu Epsom, CMC gum na bentonite
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Nnu Epsom** na-eme ka glaze kpụkọ ntakịrị mgbe ọ kwụ ọtọ ma na-asọ ọzọ mgbe a kpaliri ya. A na-akpọ nke a **flocculating**, glaze na-akpa àgwà otu a bụ **thixotropic**: ọ na-aga n'elu n'otu ụzọ karịa, na-adapụ obere ma na-adosi obere. Digitalfire na-atụ aro ịmalite n'ihe dị ka 2 g maka galọn ozugbo SG ziri ezi (ihe dị ka 0.5 g maka lita, ngbanwe anyị) na idozi ọnụ ọgụgụ ahụ oge ọ bụla ị gwakọtara, ebe ọ bụ na ọ dịghị usoro kwesịrị idowe ọnụ ọgụgụ ahụ. Anyị na-atụ aro ka ị gbazee ya na obere mmiri ọkụ na mbụ. N'ihe atụ Digitalfire, glaze dị na {{SG 1.45}} na-adapụ, ya mere mmiri belatara ya ruo {{SG 1.43}}, nnu Epsom mekwara ka ọ kpụkọ ọzọ ghọọ dịka ude, ọ gakwara n'elu n'otu ụzọ. Nlele ngwa ngwa: kpalie, kwụsị ma lee. Glaze kpụkọrọ akpụkọ na-aga n'ihu ihe dị ka sekọnd 2 ma ọ bụ 3, emesịa kwụsị ma laghachi azụ ntakịrị.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC gum** (carboxymethyl cellulose) na-eme ka slurry na-arapara karịa ma na-akpọ nkụ nwayọọ, ma na-ahapụ mkpuchi siri ike karịa na-ejide ite. Ọ kacha dị mkpa maka glaze brọsh na glaze nwere ọtụtụ frit. Ihe atụ Digitalfire na-agwakọta 3.75 g n'ime 1000 g slurry, a ghaghịkwa iji blender tinye ya. Glaze nwere CMC agaghị akpụkọ na nnu Epsom, ebe ọ bụkwa na nje na-eri gum ahụ, ọ nwere ike ịgbanwe na bọket ma malite isi ísì.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonite**, ụrọ dị nro nke ukwuu, na-enyere aka idebe mkpụrụ ndị ọzọ ka ha na-ese n'elu. Glaze ịmikpu na-adaberekarị n'ụrọ ndụ 15 ruo 25% maka nke a. Maka usoro nwere obere ụrọ, ihe dị ka 1 ruo 3% bentonite na-enyere aka; Digitalfire kwuru na glaze nwere ụrọ karịrị 15% ekwesịghị ịchọ bentonite karịrị 1% nke ịdị arọ glaze akọrọ.
 
-## Test tiles and line blends {#testing lang=en}
+## Test tile na line blend {#testing}
 
-### Start small
+### Malite na obere
 
-Derek Au works up in three steps: a 50 or 100 g test, a 1 to 2 kg trial if it works, then a 5 to 10 kg studio batch. By our estimate, a 100 g test at {{SG 1.45}} makes about 135 mL (about 4½ US fl oz) of slurry, enough to dip a few small tiles in a narrow cup.
+Derek Au na-arịgo na nzọụkwụ atọ: nnwale 50 ma ọ bụ 100 g, nnwale 1 ruo 2 kg ma ọ bụrụ na ọ rụọ ọrụ, emesịa batch ebe ọrụ nke 5 ruo 10 kg. Site n'atụmatụ anyị, nnwale 100 g na {{SG 1.45}} na-eme ihe dị ka 135 mL (ihe dị ka 4½ US fl oz) slurry, nke zuru ezu ịmikpu obere tile ole na ole n'iko dị warara.
 
-### Test on your own clay
+### Nwalee n'ụrọ nke gị
 
-A glaze can look quite different on another clay or in another kiln: Clay Art Center tested each of its reformulated glazes on four clay bodies, at cone 6 and at cone 10. Potclays' beginner's guide to glaze testing suggests:
+Glaze nwere ike ịdị iche nke ukwuu n'ụrọ ọzọ ma ọ bụ na kiln ọzọ: Clay Art Center nwalere glaze ya ọ bụla e megharịrị emegharị n'ụdị ụrọ anọ, na cone 6 na na cone 10. Ntụzịaka Potclays maka ndị mbido banyere nnwale glaze na-atụ aro:
 
-- 6 to 10 **test tiles** (small pieces for trying a glaze) of the clay you will actually use, noting whether they are bisqued or bone-dry
-- one change at a time
-- a single dip and a double dip, to see the glaze thin and thick
-- every tile in the same kiln load
-- a mark on each tile before firing, with a stamp, carving or underglaze pencil. Fired tiles look alike, and a mark made before firing lasts through the kiln, so you can always tell which recipe each tile is.
+- **test tile** 6 ruo 10 (obere mpempe maka ịnwale glaze) nke ụrọ ị ga-eji n'ezie, na-ede ma a gbara ha bisque ma ọ bụ ha kpọrọ nkụ kpamkpam
+- otu mgbanwe n'otu oge
+- ịmikpu otu ugboro na ịmikpu ugboro abụọ, iji hụ glaze dị gịrịgịrị na nke dị ọkpụrụkpụ
+- tile ọ bụla n'otu ibu kiln ahụ
+- akara na tile ọ bụla tupu ịgba ọkụ, site na stamp, ịkpụ ma ọ bụ pensụl underglaze. Tile a gbara ọkụ yiri ibe ha, akara e mere tupu ịgba ọkụ na-adịgide n'ime kiln, ya mere ị ga-amata mgbe niile usoro nke tile ọ bụla bụ.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+Anyị na-atụ aro tile na-eguzo ọtọ, ebe ọ bụ na tile dị larịị na-ezo otu glaze si asọ anya, nwere eriri nwere ọdịdị iji gosi otu glaze si agbaji n'ọnụ, na ụkwụ na-enweghị glaze. Dobe nke ọ bụla n'obere efere ma ọ bụ mpempe bisque, ma ọ bụ n'elu shelf nwere kiln wash, iji jide ntụpọ na-adapụ. Dobe **cone akaebe** (witness cone), obere cone ụrọ na-ehulata mgbe o nwetara ọkụ zuru ezu, n'akụkụ tile ndị ahụ iji gosi ihe ha nwetara; [ntụzịaka ịgba ọkụ](/guides/firing) na-akọwa cone. Nye tile ọ bụla koodu dị mkpirikpi, ma dee ya n'akụkụ usoro ahụ na ndekọ gị. Willers, na-ede maka Ceramic Arts Network, na-eji nọmba na mkpụrụ akwụkwọ, ma na-ede usoro ahụ n'onwe ya n'ihu akwụkwọ ndetu.
 
-### Line blends
+### Line blend
 
-A **line blend** is a row of tests that steps evenly from one mix to another: from one glaze to a second, or from a base glaze to the same glaze with more colorant. Derek Au, for example, steps iron oxide through a clear base in 1% increments. A volumetric method associated with Ian Currie saves time, because you mix only the two ends:
+**Line blend** bụ ahịrị nnwale na-aga n'otu nzọụkwụ site n'otu ngwakọta gaa n'ọzọ: site n'otu glaze gaa na nke abụọ, ma ọ bụ site na glaze ntọala gaa n'otu glaze ahụ nwere ihe na-enye agba karịa. Derek Au, dịka ọmụmaatụ, na-ebuli iron oxide n'ime ntọala doro anya na nzọụkwụ 1%. Ụzọ olu e jikọtara na Ian Currie na-echekwa oge, n'ihi na ị na-agwakọta naanị njedebe abụọ:
 
-1. Mix the two end glazes, A and B, as batches of the same size, and sieve both.
-2. Add water to the one with less volume until both have exactly the same wet volume.
-3. Stir both, then draw each mix with a syringe into its own numbered cup.
-4. Stir each cup and dip a tile.
+1. Gwakọta glaze njedebe abụọ ahụ, A na B, dịka batch nke otu nha, ma nyọọ ha abụọ.
+2. Gbakwunye mmiri na nke nwere obere olu ruo mgbe ha abụọ nwere otu olu mmiri ahụ kpọmkwem.
+3. Kpalie ha abụọ, emesịa jiri syringe dọta ngwakọta ọ bụla n'iko nke ya nwere nọmba.
+4. Kpalie iko ọ bụla ma mikpuo tile.
 
-In our worked example, A is 100 g of a clear base, and B is the same with 4 g of red iron oxide added (a 4% addition). Each milliliter of B holds the same share of base as a milliliter of A, plus its iron, so the cups step from no iron to 4% in 1% steps. Each end gives 100 mL to the blend, which a 100 g batch covers by our estimate.
+N'ihe atụ anyị arụchara, A bụ 100 g nke ntọala doro anya, B bụkwa otu ihe ahụ agbakwunyere 4 g red iron oxide (mgbakwunye 4%). Milliliter ọ bụla nke B nwere otu òkè ntọala ahụ dịka milliliter nke A, gbakwunyere iron ya, ya mere iko ndị ahụ na-aga site n'enweghị iron ruo 4% na nzọụkwụ 1%. Njedebe ọ bụla na-enye blend ahụ 100 mL, nke batch 100 g na-ekpuchi site n'atụmatụ anyị.
 
-Table: A five-step iron line blend, 40 mL per cup (our worked example)
-Label: Line blend example
+Table: Line blend iron nwere nzọụkwụ ise, 40 mL maka iko (ihe atụ anyị arụchara)
+Label: Ihe atụ line blend
 
-| Cup | Clear base (A) | Base with 4% iron (B) | Iron oxide, % of base |
-| --- | -------------: | --------------------: | --------------------: |
-| 1   |          40 mL |                  0 mL |                     0 |
-| 2   |          30 mL |                 10 mL |                     1 |
-| 3   |          20 mL |                 20 mL |                     2 |
-| 4   |          10 mL |                 30 mL |                     3 |
-| 5   |           0 mL |                 40 mL |                     4 |
+| Iko | Ntọala doro anya (A) | Ntọala nwere iron 4% (B) | Iron oxide, % nke ntọala |
+| --- | -------------------: | -----------------------: | -----------------------: |
+| 1   |                40 mL |                     0 mL |                        0 |
+| 2   |                30 mL |                    10 mL |                        1 |
+| 3   |                20 mL |                    20 mL |                        2 |
+| 4   |                10 mL |                    30 mL |                        3 |
+| 5   |                 0 mL |                    40 mL |                        4 |
 
-The method needs careful arithmetic, well-mixed ends of even SG, and an accurate scale. Derek Au also blends by weight instead of volume. A **triaxial blend** does the same with three ends, laid out on a triangle.
-
-> [!NOTE]
-> When a step looks promising, **Save as a copy** on the [recipe page](/recipe) keeps it as a recipe of its own and leaves the original as it was.
-
-## Keeping records {#records lang=en}
-
-Willers puts the goal well: "enough information to be able to repeat, or avoid, the results you discovered". Write down what you plan to test before you start, and the results when you unload. Potclays adds the application, thickness, clay body and full firing, including ramps, holds and cooling. A **ramp** is a rate of heating or cooling, such as {{60 °C; 108 °F}} an hour, and a **hold** keeps the kiln at one temperature for a set time. Note lot numbers, the water you used and any substitution: Clay Art Center's feldspar swap meant adjusting about half its glazes.
-
-Table: What to record for each glaze batch (our template)
-Label: Record template
-
-| Part        | What to write down                                                                                                                                                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recipe      | The recipe and its version; material brands and lot numbers; any substitutions                                                                                                                                                          |
-| Mixing      | Date; batch size; water added, and its type (tap, reverse osmosis or distilled); SG after mixing and final SG; the weight of the finished slurry, for its dry SG; Epsom salts, CMC and bentonite added; sieve mesh and number of passes |
-| Application | Clay body; bisque cone; dipping, brushing or pouring; dip time or number of coats; dry thickness                                                                                                                                        |
-| Firing      | Kiln and shelf position; the firing schedule, with its ramps, holds and cooling; atmosphere (oxidation or reduction); what the witness cone showed, not only what the kiln was set to                                                   |
-| Result      | Surface and color; any running, crazing or pinholes; photos of the front, back and side; the tile code                                                                                                                                  |
+Ụzọ a chọrọ ngụkọ akpachapụrụ anya, njedebe agwakọtara nke ọma nwere SG hà nhata, na ihe ọtụtụ ziri ezi. Derek Au na-agwakọtakwa site n'ịdị arọ kama olu. **Triaxial blend** na-eme otu ihe ahụ na njedebe atọ, edobere ha n'elu triangle.
 
 > [!NOTE]
-> In Glazecalc, a saved [recipe](/recipe) holds the recipe itself. A [firing log](/firing) records each firing: the kiln, the date, times, temperatures, cones and notes. [Notes](/notes) hold everything else, such as the batch record above and what each tile showed.
+> Mgbe nzọụkwụ yiri ka ọ dị mma, **Chekwaa dịka mbipụta** na [ibe usoro](/recipe) na-echekwa ya dịka usoro nke ya ma na-ahapụ nke mbụ ka ọ dị.
+
+## Idebe ndekọ {#records}
+
+Willers kọwara ebumnuche ahụ nke ọma: "ozi zuru ezu iji nwee ike ịmegharị, ma ọ bụ izere, nsonaazụ ị chọpụtara". Dee ihe ị na-eme atụmatụ ịnwale tupu ị malite, na nsonaazụ ya mgbe ị na-ewepụta ihe. Potclays na-agbakwunye ụzọ e si tinye ya, ọkpụrụkpụ, ụdị ụrọ na ịgba ọkụ niile, gụnyere ramp, nchere na ime ka ọ jụọ oyi. **Ramp** bụ ọsọ ikpo ọkụ ma ọ bụ ime ka ọ jụọ oyi, dịka {{60 °C; 108 °F}} n'otu awa, **nchere** (hold) na-edebe kiln n'otu ọkụ ruo oge edobere. Dee nọmba lot, mmiri i ji mee ihe na nnọchi ọ bụla: mgbanwe feldspar nke Clay Art Center pụtara idozi ihe dị ka ọkara glaze ya.
+
+Table: Ihe ị ga-edekọ maka batch glaze ọ bụla (ndebiri anyị)
+Label: Ndebiri ndekọ
+
+| Akụkụ    | Ihe ị ga-ede                                                                                                                                                                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Usoro    | Usoro ahụ na ụdị ya; aha ngwaahịa ihe na nọmba lot; nnọchi ọ bụla                                                                                                                                                                                       |
+| Ịgwakọta | Ụbọchị; nha batch; mmiri agbakwunyere, na ụdị ya (pọmpụ, reverse osmosis ma ọ bụ distilled); SG mgbe agwakọtara na SG ikpeazụ; ịdị arọ slurry emechara, maka SG akọrọ ya; nnu Epsom, CMC na bentonite agbakwunyere; mesh ihe nyọ na ugboro ole e gafere |
+| Itinye   | Ụdị ụrọ; cone bisque; ịmikpu, brọsh ma ọ bụ ịwụ; oge ịmikpu ma ọ bụ ọnụ ọgụgụ mkpuchi; ọkpụrụkpụ akọrọ                                                                                                                                                  |
+| Ịgba ọkụ | Kiln na ọnọdụ na shelf; usoro ịgba ọkụ, ya na ramp, nchere na ime ka ọ jụọ oyi ya; ikuku kiln (oxidation ma ọ bụ reduction); ihe cone akaebe gosiri, ọ bụghị naanị ihe e dobere kiln                                                                    |
+| Nsonaazụ | Elu na agba; ịsọ ọ bụla, crazing ma ọ bụ pinholes; foto ihu, azụ na akụkụ; koodu tile                                                                                                                                                                   |
+
+> [!NOTE]
+> Na Glazecalc, [usoro](/recipe) echekwara na-ejide usoro ahụ n'onwe ya. [Ndekọ ịgba ọkụ](/firing) na-edekọ ịgba ọkụ ọ bụla: kiln, ụbọchị, oge, ọkụ, cone na ndetu. [Ndetu](/notes) na-ejide ihe ndị ọzọ niile, dịka ndekọ batch dị n'elu na ihe tile ọ bụla gosiri.
 
 ## Isi mmalite {#sources}
 

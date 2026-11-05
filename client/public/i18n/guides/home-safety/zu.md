@@ -59,31 +59,31 @@ Label: Okokwakha okuncibilikayo
 
 Ingozi enkulu yomthofu (Pb) ihlukile: akusona isipuni esisodwa, kodwa inani elincane lothuli eligwinywa emasontweni noma ezinyangeni, ngaphandle kwezimpawu zokuxwayisa (bheka Umthofu nezingane, ngezansi).
 
-## Storing materials at home {#storing-materials lang=en}
+## Ukugcina okokwakha ekhaya {#storing-materials}
 
-No official body sets rules for storing glaze materials at home, but health and safety pages agree: keep the work in its own space, away from children. Pennsylvania's health department, writing about hobbies that use lead, says to "Utilize a designated workspace or garage for your hobby and keep children away from this area."
+Ayikho inhlangano esemthethweni ebeka imithetho yokugcina okokwakha kwe-glaze ekhaya, kodwa amakhasi ezempilo nokuphepha ayavumelana: gcina umsebenzi endaweni yawo, kude nezingane. Umnyango wezempilo wase-Pennsylvania, ubhala ngemisebenzi yokuzilibazisa esebenzisa umthofu (lead, Pb), uthi "Sebenzisa indawo yokusebenza ekhethiwe noma igalaji ngomsebenzi wakho wokuzilibazisa futhi ugcine izingane kude nale ndawo."
 
-### A storage checklist
+### Uhlu lokuhlola lokugcina
 
-These are general poison-prevention rules applied to glaze. No ceramics standard sets them, but we suggest all of them:
+Le yimithetho evamile yokuvimbela ushevu esetshenziswa ku-glaze. Alikho izinga lobumba elibeka yona, kodwa siphakamisa yonke:
 
-- Keep dry materials locked away: a cabinet, or a room, garage or shed that locks. A high shelf helps, but children climb. If you can lock up only a few things at first, start with the soluble materials and colorants.
-- Keep materials in their original bags or tubs. If you move one into another container, label it with the name exactly as written on the bag.
-- Never use food or drink containers (yogurt tubs, jars, bottles) for glaze materials, even labeled. A child knows what a yogurt tub holds.
-- Keep studio tools (scoops, spoons, whisks, sieves, scales) in the studio. Never use kitchen tools for glaze, or glaze tools for food.
-- Keep wet glazes in labeled buckets with the lids on.
-- Keep each material's safety data sheet with it, on paper or on your phone.
-- Keep nothing from the studio in the kitchen: no bags, buckets, tools or test tiles.
+- Gcina okokwakha okomile kukhiyelwe: ikhabethe, noma igumbi, igalaji noma ishede elikhiywayo. Ishalofu eliphezulu liyasiza, kodwa izingane ziyagibela. Uma ungakhiyela izinto ezimbalwa kuphela ekuqaleni, qala ngokokwakha okuncibilika emanzini nokokufaka umbala.
+- Gcina okokwakha ezikhwameni noma ezitsheni zakho zokuqala. Uma uthutha okukodwa ukufaka kwesinye isitsha, sinamathisele ilebula enegama njengoba libhalwe esikhwameni.
+- Ungalokothi usebenzise izitsha zokudla noma zeziphuzo (izitsha ze-yogathi, izimbiza zengilazi, amabhodlela) zokokwakha kwe-glaze, ngisho noma zinamalebula. Ingane iyazi ukuthi isitsha se-yogathi siqukethe ini.
+- Gcina amathuluzi e-studio (izinkezo zokukha, izinkezo, ama-whisk, izihlungo, izikali) e-studio. Ungalokothi usebenzise amathuluzi asekhishini ku-glaze, noma amathuluzi e-glaze ekudleni.
+- Gcina ama-glaze amanzi emabhakedeni anamalebula, izivalo zivaliwe.
+- Gcina ishidi ledatha yokuphepha (SDS) lokokwakha ngakunye kanye nakho, ephepheni noma efonini yakho.
+- Ungagcini lutho lwe-studio ekhishini: azikho izikhwama, amabhakede, amathuluzi noma ama-test tile.
 
-For buying and storing materials in more depth, see [How to make a glaze](/guides/making-a-glaze).
+Ukuze uthole okwengeziwe ngokuthenga nokugcina okokwakha, bheka [Indlela yokwenza i-glaze](/guides/making-a-glaze).
 
-### Glaze waste and rinse water
+### Imfucuza ye-glaze namanzi okuhlambulula
 
-Never pour glaze, or water you have rinsed glaze tools in, down the sink or onto the garden. The UK Crafts Council suggests a separate bucket of water for washing hands, brushes, sieves and tools. Let it settle overnight, pour off the clear water, then dry the settled glaze and put it in the trash (it goes to landfill), never down the drain.
+Ungalokothi uthele i-glaze, noma amanzi ohlambulule kuwo amathuluzi e-glaze, osinkini noma engadini. I-Crafts Council yase-UK iphakamisa ibhakede elihlukile lamanzi okugeza izandla, amabhulashi, izihlungo namathuluzi. Liyeke lizinze ubusuku bonke, uthele amanzi acwebile angaphezulu, bese womisa i-glaze ezinzile uyifake emgqonyeni kadoti (iya endaweni yokulahla udoti), ungalokothi uyithele emseleni.
 
-We suggest a lid on that bucket: the sludge holds the same metals as the glaze, and pets drink standing water. Disposal rules vary from place to place, so check each product's safety data sheet, and ask your local council or water company if you are unsure.
+Siphakamisa isivalo kulelo bhakede: udaka luqukethe izinsimbi ezifanayo ne-glaze, futhi izilwane ezifuywayo ziphuza amanzi amile. Imithetho yokulahla iyahluka ngezindawo, ngakho bheka ishidi ledatha yokuphepha lomkhiqizo ngamunye, futhi ubuze umasipala wakho noma inkampani yamanzi uma ungaqiniseki.
 
-Some studios fire the dried sludge before they throw it away. They put it in a spare bowl that will be used up: after the firing the bowl cannot be used again. Fill the bowl only a quarter full, because the sludge foams and bubbles as it melts, and cover it with a plate. Set it on a kiln-washed shelf or a spare slab, in case it runs over. The firing turns the sludge into glass, which holds the metals much more tightly than loose powder, so it is safer in a landfill. Handle the dry sludge as you would dry glaze, with a respirator and without making dust.
+Ama-studio athile ashisa udaka olomisiwe ngaphambi kokuthi aluphonse. Alufaka endishini eyengeziwe ezosetshenziswa kuze kuphele: ngemuva kokushiswa leyo ndishi ayisakwazi ukusetshenziswa futhi. Gcwalisa indishi ngekota kuphela, ngoba udaka luyagwebuka futhi luyabhudla lapho luncibilika, futhi uyimboze ngepuleti. Yibeke eshalofini elinokufakwe i-kiln wash noma esicucwini esiyisipele, uma kwenzeka ichichima. Ukushisa kuguqula udaka lube yingilazi, ebamba izinsimbi ngokuqinile kakhulu kunempushana exegayo, ngakho luphephe kakhulu endaweni yokulahla udoti. Phatha udaka olomile njengoba ubungaphatha i-glaze eyomile, ngokugqoka i-respirator nangaphandle kokwenza uthuli.
 
 ## Ukugcina uthuli e-studio {#keeping-dust-in-the-studio}
 

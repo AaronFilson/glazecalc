@@ -9,6 +9,7 @@
     "homeSafety": "Ama ayllu-masiykita miyuwan wañuchiychu - Glazecalc",
     "firing": "Huch'uy hornopi ruphachiy - Glazecalc",
     "learnWithJohnBritt": "John Brittpa mana qullqiyuq esmalte yachachiyninwan yachay - Glazecalc",
+    "teachingGlazeCalculation": "Esmalte yupay yachachiy - Glazecalc",
     "about": "Imamanta - Glazecalc",
     "privacy": "Pakasqa kay - Glazecalc",
     "terms": "Llamk'achiy kamachiykuna - Glazecalc",
@@ -36,7 +37,9 @@
     "confirm": "Huk t'ikrayta arinichiy - Glazecalc",
     "cones": "Cono tabla: Orton, SK cono temperaturakuna - Glazecalc",
     "materials": "Esmaltepaq materialkuna: análisis, peligrokuna - Glazecalc",
-    "materialInfo": "{name}: óxido análisis, peligrokuna - Glazecalc"
+    "materialInfo": "{name}: óxido análisis, peligrokuna - Glazecalc",
+    "famousGlazes": "Riqsisqa esmaltekuna - Glazecalc",
+    "famousGlaze": "Esmalte {name} - Glazecalc"
   },
   "nav": {
     "skip": "Willakuyman riy",
@@ -177,6 +180,7 @@
     "homeSafety": "Imatataq ruranki huk wawa utaq uywa esmalte materialta millp'uptin, imaynatataq materialkunata, ñut'uta, hornota, sañakunata aylluykipaq waqaychanki.",
     "firing": "Imaynata eléctrico hornopi ruphachinki: conokunata akllay, churay, ñawinchay, bizcocho esmalte ruphachiypaq qillqasqa programakunata qatiy, cono tablawan.",
     "learnWithJohnBritt": "John Brittpa mana qullqiyuq Glaze Course yachachiyninpa yanapaqnin: videonkuna sapa unidad, Glazecalcpa yachachiyninkunawan, calculadorapi ruranakunawan.",
+    "teachingGlazeCalculation": "6 yachachiykuna UMF (fórmula unitaria, unity molecular formula) yachachinapaq: materialkuna, triaxial probetakuna, molkuna, rurana fórmulaman kutiriypas, esmalte pantaykunapas, ruraska ejemplokunawan imprimina llamk'ana p'anqakunawan.",
     "advice": "Chaqruypaq, esmalteta churaypaq, ruphachiypaq yuyaychaykuna, Glazecalcmanta, qampa yuyaychayniykikunapas. Saña ruraqkunapaq mana qullqiyuq.",
     "about": "Glazecalcqa mana qullqiyuq, kichasqa códigoyuq esmalte química calculadoram, qillqanam. Rikuy imaynata fórmula unitariata yupan, imaynata rurasqa kasqanta.",
     "privacy": "Imaynata Glazecalc willakuyniykikunata llamk'achin: mana publicidad, mana analítica, mana qatipay, manam imapas rantikunchu. Ima waqaychakun, imarayku, derechoykikuna.",
@@ -187,6 +191,8 @@
     "materials": "Glazecalcpa estándar qillqa wasinpi materialkuna, feldespatokunamanta mitukunamanta fritakunakama, boro maqakunakama, óxido análisisninwan, UMF-nwan, peligronkunawan.",
     "materialInfo": "{name}: óxido análisis, fórmula unitaria, ruphaypi chinkaq (LOI), peligrokuna, Glazecalcpa estándar qillqa wasinpi.",
     "materialInfoLong": "{name}, Glazecalcpa esmalte materialkuna estándar qillqa wasinpi: óxido análisisnin, fórmula unitariaman yapasqan, ruphaypi chinkaq (LOI), peligronkuna.",
+    "famousGlazes": "Tukuy pachamanta riqsisqa esmaltekuna: sapa esmaltepa ñawpa runakunap ruranan utaq ñawpa análisisnin, UMF-nin, maypichus kanki chaypi rantikuq materialkunawan rurasqa hukniraq esmaltepas.",
+    "famousGlaze": "Esmalte {name} ({native}): ñawpa runakunap ruranan utaq ñawpa análisisnin, ruphachiynin, UMF-nin, maymanta yachasqanpas, maypichus kanki chaypi rantikuq materialkunawan rurasqa hukniraq esmaltepas.",
     "imageAlt": "Glazecalcpa logonwan títulonwan, saña ruraqkunapaq mana qullqiyuq esmalte química, ruphasqa cono huñukunapa fotonpa kinranpi."
   },
   "notices": {
