@@ -3,480 +3,480 @@ title: Szkliwienie od podstaw
 lead: Z czego składa się szkliwo, jak piec zamienia je w szkło, oraz objaśnienie wszystkich słów, które można spotkać w recepturze, na worku z surowcem albo w tabeli stożków.
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## Czym jest szkliwo {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**Szkliwo**{{en: glaze}} to cienka warstwa szkła stopiona z powierzchnią naczynia. Glazy, otwarta baza danych receptur szkliw, nazywa je „składem szkła dobranym tak, by w określonych temperaturach topił się i stapiał z gliną”. Szkliwo nakłada się jako warstwę proszku, a w piecu topi się ono w szklistą powłokę, która uszczelnia glinę, dzięki czemu naczynie rzadziej przecieka, plami się lub ściera. W najwyższej temperaturze wypału stop reaguje też z gliną i często tworzy między nimi warstwę pośrednią, która mocno wiąże szkliwo z naczyniem. Na ceramice porowatej{{en: earthenware}}, wypalanej w niższej temperaturze, ta warstwa jest cienka, a szkliwo pozostaje głównie na wierzchu. Na kamionce{{en: stoneware}} i porcelanie, wypalanych w wyższej temperaturze, warstwa jest grubsza, a szkliwo mocniej trzyma się gliny. Szkliwo pozostaje jednak szkłem: nie staje się częścią gliny.
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+Receptura wymienia surowce, takie jak skaleń{{en: feldspar}}, kreda{{en: whiting}} i kaolin. W piecu część każdego z nich ulatnia się jako gaz (woda lub dwutlenek węgla), a reszta staje się **tlenkami**: związkami pierwiastka z tlenem, takimi jak krzemionka{{en: silica}} (SiO₂) czy tlenek wapnia (CaO). Wypalone szkło składa się z tlenków, dlatego ceramicy opisują szkliwo właśnie nimi. Każdy tlenek pełni jedną z trzech ról.
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **Krzemionka** (SiO₂) to **tlenek szkłotwórczy**{{en: glass former}}: buduje szkło. Czysta krzemionka topi się powyżej {{3100 °F; 1700 °C}}, czyli w temperaturze znacznie wyższej, niż osiąga piec ceramiczny, a szkliwo bogate w krzemionkę jest na ogół trwalsze.
+- **Topniki**{{en: fluxes}} obniżają temperaturę topnienia do takiej, którą piec może osiągnąć. **Alkalia**, zapisywane jako **R₂O**, to tlenki sodu, potasu i litu (Na₂O, K₂O, Li₂O); działają od stożka{{en: cone}} 06 aż po średni i wysoki wypał. **Tlenki ziem alkalicznych**, zapisywane jako **RO**, to tlenki wapnia, magnezu, baru i strontu (CaO, MgO, BaO, SrO), a razem z nimi zalicza się tu tlenek cynku (ZnO); działają najlepiej od stożka 5 do stożka 10. R oznacza dowolny metal z danej grupy.
+- **Tlenek glinu** (Al₂O₃) to **stabilizator**{{en: stabilizer}}. Zwiększa lepkość stopu, dzięki czemu szkliwo utrzymuje się na pionowych ściankach, i dodaje twardości oraz trwałości. Glazy ostrzega, że przy zbyt małej ilości tlenku glinu „szkliwo może spływać; zbyt duża może tak usztywnić stop, że szkliwo wyjdzie matowe”. Tlenek glinu pochodzi głównie z gliny i skalenia.
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**Bor** (B₂O₃) zaciera tę granicę. Chemicy zaliczają go do tlenków szkłotwórczych, ale w temperaturach pracowni ceramicznej działa jak topnik i ceramicy tak go traktują. Jest głównym topnikiem w niskim i średnim wypale: im niższa temperatura wypału, tym więcej boru potrzebuje szkliwo. Przy stożku 10 zwykle nie jest potrzebny. (Stożki, którymi ceramicy określają wypał, są objaśnione niżej.)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> Można to zapamiętać tak: krzemionka jest szkłem, topniki pozwalają jej się stopić w temperaturze, którą piec jest w stanie osiągnąć, a tlenek glinu ją zagęszcza, żeby została tam, gdzie się ją nałożyło.
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## Glina, powłoki i dwa wypały {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### Masy ceramiczne
 
-## From recipe to unity formula {#unity-formula lang=en}
+**Masa ceramiczna**{{en: clay body}} to glina, z której wykonane jest naczynie. Wyróżnia się trzy główne rodzaje.
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **Ceramika porowata**{{en: earthenware}}: masa do niskiego wypału, około stożka{{en: cone}} 06–02, porowata przy niskich stożkach i coraz gęstsza, im wyższa temperatura wypału. Często jest czerwona lub jasnobeżowa i wymaga szkliwa{{en: glaze}}, żeby utrzymać wodę.
+- **Kamionka**{{en: stoneware}}: masa do średniego i wysokiego wypału, około stożka 5–10, która spieka się całkowicie lub prawie całkowicie.
+- **Porcelana**: biała masa bogata w kaolin, często przeświecająca. Większość porcelany wypala się wysoko, ale są też porcelany na stożek 6.
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**Spieczony** znaczy szklisty i nieporowaty; **spiekanie** to proces, w którym masa staje się taka podczas wypału. W Wielkiej Brytanii ceramicy często wyznaczają tę granicę inaczej, według temperatury: kamionkę wypala się powyżej {{2192 °F; 1200 °C}}, ceramikę porowatą poniżej. Średni wypał, stożek 5–6, wypada tuż po obu stronach tej granicy.
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### Powłoki i suszenie
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**Szlikier** to glina zawieszona w wodzie, używana do odlewania, łączenia elementów lub zdobienia. **Angoba** to powłoka podobna do szlikru, często barwna, z większym udziałem surowców innych niż glina. **Farba podszkliwna** to barwny szlikier lub zdobienie tlenkami, zwykle pokryte szkliwem bezbarwnym.
 
-### The silica to alumina ratio
+Niewypalone wyroby to **wyroby surowe**{{en: greenware}} (źródła nie są zgodne, czy to określenie obejmuje wszystkie niewypalone wyroby, czy tylko suche). Schnąc, osiągają najpierw **stan skórzasty**: są sztywne, ale jeszcze lekko wilgotne, i to pora na obtaczanie i doklejanie uch; potem stają się **całkowicie suche**: nie zostaje w nich wolna woda, są bardzo kruche i gotowe do wypału.
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### Dwa wypały
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+Pierwszy, niższy wypał to **wypał biskwitowy**{{en: bisque}} (w Wielkiej Brytanii **biscuit**), zwykle do stożka 08–04 (najczęściej 06–04), około {{1728–1945 °F; 942–1063 °C}}. Po nim wyroby są wytrzymałe, ale porowate. Digitalfire, serwis z wiedzą o szkliwach, zaleca na ogół porowatość powyżej 15 %, żeby biskwit wciągał wodę ze szkliwa podczas nakładania. Miękki biskwit (stożek 08–06) jest bardziej porowaty; twardy biskwit (często stożek 04) jest mocniejszy, ale gorzej przyjmuje szkliwo.
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: Jak wypał biskwitowy wpływa na szkliwienie (Digitalfire)
+Label: Jak biskwit wpływa na szkliwienie
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| Biskwit                                                                             | Co się dzieje                                                                         |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Niedopalony, bardzo chłonny                                                         | Szkliwo nakłada się zbyt grubo, potem pęka i się zbiega{{en: crawls}}                 |
+| Przepalony, zwarty                                                                  | Zanurzanie i schnięcie trwają dłużej                                                  |
+| Wypalony w wyższej temperaturze albo dłużej przetrzymany w temperaturze maksymalnej | Więcej gazów ulatnia się już teraz, więc później mniej ich przebija się przez szkliwo |
 
-### Loss on ignition
+Potclays, brytyjski dostawca, opisuje wypał biskwitowy do około {{1000 °C; 1832 °F}}, czyli mniej więcej do stożka 06. Zestawiając te źródła, proponujemy na pierwszy biskwit stożek 06–04: {{1828–1945 °F; 998–1063 °C}} przy średniej szybkości grzania według Ortona.
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**Wypał szkliwa**{{en: glaze firing}} (brytyjscy ceramicy mówią też **glost** firing) topi szkliwo, a w przypadku kamionki także spieka masę. Przy **wypale jednokrotnym**{{en: once-firing}} szkliwi się wyroby niewypalone i wypala je tylko raz. Digitalfire opisuje przypadek z produkcji, w którym na wyrobach szkliwionych na surowo szkliwo zbiegało się na brzegach, dopóki problemu nie usunął wypał biskwitowy; dlatego należy zacząć od dwóch wypałów. Poradnik [Wypał w prostym piecu](/guides/firing) podaje programy wypału dla obu.
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## Stożki i praca cieplna {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+Ceramicy określają wypał **stożkiem**{{en: cone}}: smukłą ceramiczną piramidką, która wygina się, gdy otrzyma określoną ilość ciepła. Orton, ich producent, nazywa stożki wskaźnikami czasu i temperatury (pracy cieplnej): pokazują łączny efekt czasu i temperatury, a nie samą temperaturę.
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+Wyjaśnieniem jest **praca cieplna**{{en: heatwork}}: szkliwo{{en: glaze}}, glina i stożek reagują nie tylko na to, jak bardzo są gorące, ale też na to, jak długo. Przy powolnym wypale stożek wygina się w niższej temperaturze, przy szybkim – w wyższej. Według tabeli Ortona stożek 6 wygina się w {{2165 °F; 1185 °C}}, gdy pod koniec wypału temperatura rośnie o {{27 °F; 15 °C}} na godzinę, w {{2232 °F; 1222 °C}} przy {{108 °F; 60 °C}} na godzinę i w {{2269 °F; 1243 °C}} przy {{270 °F; 150 °C}} na godzinę; szybkość liczy się na ostatnich {{180 °F; 100 °C}}. Stożek uznaje się za opadnięty, gdy jego czubek wygnie się o 90°. Ceramicy często nazywają to położeniem na godzinie 5.
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+Numery stożków biegną od 022 do 42. Zero na początku wyróżnia chłodniejszą serię, w której większy numer oznacza niższą temperaturę: stożek 06 odpowiada niższej temperaturze niż stożek 04, a stożek 01 niższej niż stożek 1.
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: Zakresy wypału: samonośne stożki Ortona przy {{108 °F; 60 °C}} na godzinę
+Label: Zakresy wypału
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| Zakres       | Stożki |        °F |        °C | Zastosowanie                                                            |
+| ------------ | ------ | --------: | --------: | ----------------------------------------------------------------------- |
+| Niski wypał  | 06–04  | 1828–1945 |  998–1063 | Szkliwa do ceramiki porowatej{{en: earthenware}}; biskwit{{en: bisque}} |
+| Średni wypał | 5–6    | 2167–2232 | 1186–1222 | Kamionka{{en: stoneware}} i porcelana                                   |
+| Wysoki wypał | 9–10   | 2300–2345 | 1260–1285 | Kamionka i porcelana                                                    |
+
+> [!NOTE]
+> Wypały należy nazywać i programować według stożków, a temperatury traktować jako przybliżone. **Stożek kontrolny**{{en: witness cone}} postawiony na płycie wśród naczyń albo **zestaw stożków**{{en: cone pack}} złożony z trzech (stożek ostrzegawczy, docelowy i zabezpieczający) pokazuje, jaką pracę cieplną naprawdę otrzymały wyroby.
+
+Publikowane temperatury się różnią. Glazy podaje dla wysokiego wypału, stożka 9–11, około {{2336–2390 °F; 1280–1310 °C}}, co odpowiada kolumnie szybkiego grzania w tabeli Ortona, a Digitalfire podaje dla stożka 6 około {{2200 °F; 1204 °C}}. Nasza rada: korzystać z wartości Ortona dla średniej szybkości grzania, tak jak ten poradnik, programować według stożków, a rozstrzygnięcie zostawić stożkowi kontrolnemu.
+
+Poza Ameryką Północną dostawcy często podają °C zamiast stożka. Hermann Seger opracował nowoczesny stożek, po raz pierwszy użyty w Berlinie w 1886 roku, a Wielka Brytania ma od dawna własne stożki Staffordshire; nie należy zakładać, że ich numery odpowiadają numerom Ortona, a tabeli do ich przeliczania nie znaleźliśmy. Poradnik [Wypał w prostym piecu](/guides/firing) omawia stożki dokładniej.
+
+## Od receptury do wzoru Segera {#unity-formula}
+
+**Receptura**{{en: batch recipe}} podaje surowce według masy, zwykle przeliczone tak, by baza sumowała się do 100. **Dodatki** (barwniki{{en: colorants}}, zmętniacze i środki przeciw osiadaniu) dodaje się ponad te 100, zwykle jako procent bazy. Aby zobaczyć, czym właściwie jest szkliwo{{en: glaze}}, ceramicy przeliczają recepturę na **wzór Segera**{{en: unity molecular formula}} (**UMF**), nazwany tak od Hermanna Segera, który jako pierwszy zastosował jego układ w trzech kolumnach.
+
+Table: Od receptury do wzoru Segera: przykład obliczeń z Glazy
+Label: Od receptury do wzoru Segera
+
+| Krok                        | Co się dzieje                                                                                                                            | W przykładzie                                                                                                                            |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Receptura                | Surowce według masy, przeliczone na 100                                                                                                  | Między innymi skaleń{{en: feldspar}} 40 %                                                                                                |
+| 2. Skład tlenkowy           | Jak etykieta z wartościami odżywczymi: tlenki ze wszystkich surowców sumuje się w procentach masowych, a gazy się pomija                 | Skaleń zawiera 64,8 % krzemionki, więc jego 40 % wnosi 25,9 % SiO₂. Wypalone szkliwo ma 67,4 % SiO₂, 12,6 % Al₂O₃, 7,5 % K₂O, 12,5 % CaO |
+| 3. Mole                     | Masy zamienia się na **mole**, czyli liczby cząsteczek, bo „gramy mogą wprowadzać w błąd, ponieważ niektóre tlenki są cięższe od innych” | 60,1 g SiO₂ to jeden mol, więc 67,4 g to około 1,12 mola                                                                                 |
+| 4. Sprowadzenie do jedności | Wszystko dzieli się przez sumę topników, tak by topniki sumowały się do 1                                                                | Topniki dają razem 0,303; po podzieleniu: K₂O 0,26, CaO 0,74, Al₂O₃ 0,41, SiO₂ 3,70                                                      |
+
+[Strona Receptury](/recipe) w aplikacji Glazecalc wykonuje wszystkie cztery kroki na bieżąco, w trakcie wpisywania, i pokazuje wynik w trzech kolumnach: topniki{{en: fluxes}} (R₂O i RO), sumujące się do 1; stabilizatory{{en: stabilizers}} (R₂O₃: tlenek glinu; często umieszcza się tu też bor); oraz tlenki szkłotwórcze{{en: glass formers}} (RO₂: krzemionka{{en: silica}}). Według Glazy „sprowadzanie do jedności to tylko narzędzie do skalowania”: dwie receptury z różnych surowców, ale o tym samym wzorze Segera, „po wypale zachowują się niemal identycznie”. Wartość 1 jest więc wspólną miarą, a nie ilością, którą się waży. Digitalfire dodaje, że metoda „nie sprawdza się tak dobrze w niższych temperaturach”, w których bor nie jest zwykłym topnikiem, i że wzory Segera „służą do porównań i najlepiej oglądać je w kontekście”. Funkcja **Porównaj** zestawia wzory dwóch receptur tlenek po tlenku.
+
+### Stosunek krzemionki do tlenku glinu
+
+Najbardziej przydatną pojedynczą liczbą jest **stosunek krzemionki do tlenku glinu**{{en: silica to alumina ratio}}: krzemionka podzielona przez tlenek glinu. W przykładzie 3,70 ÷ 0,41 daje około 9.
+
+Table: Co sugeruje stosunek krzemionki do tlenku glinu (Glazy)
+Label: Stosunek krzemionki do tlenku glinu
+
+| Stosunek | Interpretacja według Glazy                                       |
+| -------: | ---------------------------------------------------------------- |
+|  Około 9 | Wskazuje na błyszczący stop, przy dostatecznej ilości ciepła     |
+|      5–7 | Typowy dla wielu stabilnych szkliw kamionkowych{{en: stoneware}} |
+|      3–5 | Szkliwo może być matowe lub niedopalone                          |
+
+Glazy nie podaje, dla jakiego stożka są te wartości. Należy je traktować jako przybliżoną wskazówkę dla szkliw kamionkowych, około stożka 6–10. Według Digitalfire stosunek powyżej około 8 oznacza prawdopodobnie szkliwo błyszczące, ale szkliwo z borem może być błyszczące przy 8 lub mniej, a szkliwo niskotopliwe nawet przy 6. Stosunek 5–7 sam w sobie nie przesądza ani o połysku, ani o macie: granicę przesuwają topniki, bor i stożek{{en: cone}}. Glazy podaje jako typową proporcję topników w stabilnych szkliwach 0,2 R₂O na 0,8 RO, a najwyżej 0,3 R₂O na 0,7 RO. Więcej alkaliów sprawia, że stop jest bardziej płynny, i zwiększa jego rozszerzalność cieplną{{en: expansion}}, a tym samym ryzyko pęknięć włoskowatych{{en: crazing}}.
+
+### Strata prażenia
+
+**Strata prażenia**{{en: loss on ignition}} (**LOI**) to ubytek masy surowca w piecu, gdy woda, dwutlenek węgla, substancje organiczne lub siarka ulatniają się jako gaz. Wypalone szkliwo nie ma straty prażenia, dlatego wzór Segera ją pomija.
+
+Table: Typowa strata prażenia (Digitalfire)
+Label: Strata prażenia
+
+| Surowiec                                      | Typowa strata prażenia                                                          |
+| --------------------------------------------- | ------------------------------------------------------------------------------- |
+| Kreda{{en: whiting}} (węglan wapnia), dolomit | Ponad 40 %, głównie dwutlenek węgla: ze 100 g węglanu wapnia uchodzi około 44 g |
+| Węglan litu                                   | Około 60 %                                                                      |
+| Węglan baru, Gerstley Borate                  | Ponad 20 %                                                                      |
+| Kaolin                                        | Około 12–14 %, głównie woda związana w jego kryształach                         |
+| Skalenie                                      | Poniżej 1 %                                                                     |
+
+Gaz, który uchodzi, gdy szkliwo już zaczęło się topić, musi się przez nie przebić, co powoduje, słowami Digitalfire, „pęcherzyki, pęcherze, nakłucia{{en: pinholes}}, zbieganie się szkliwa{{en: crawling}}”. W teście Digitalfire talk wydzielał gazy aż do około {{1650 °F; 899 °C}}. Pomagają fryty{{en: frits}}, surowce **kalcynowane** (wcześniej wyprażone, by usunąć z nich gazy) oraz zmiany w wypale.
+
+Starsze książki wykonują te obliczenia ręcznie, posługując się **masą cząsteczkową** (masą jednego mola surowca lub tlenku) i **masą równoważnikową** (masą surowca, która dostarcza jednego mola tlenku). Według naszych obliczeń około 100 g kredy dostarcza jednego mola, czyli 56 g, tlenku wapnia. Kalkulator radzi sobie z jednym i drugim.
+
+## Wzory graniczne i wykres Stulla {#stull-chart}
+
+**Wykres Stulla** to mapa szkliw. Ma dwie osie, obie ze wzoru Segera: krzemionkę (SiO₂) wzdłuż dolnej krawędzi i tlenek glinu (Al₂O₃) wzdłuż boku. Każde szkliwo to jeden punkt. Mapa jest podzielona na obszary, takie jak matowy, błyszczący, niedopalony i spękany. [Strona Receptury](/recipe) w aplikacji Glazecalc nanosi na nią szkliwo.
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull opracował wykres na podstawie prób, które opublikował w 1912 roku. Wypalał je w okolicy stożka 11, a wszystkie próby miały te same topniki: 0,3 potasu (K₂O) i 0,7 tlenku wapnia (CaO). Zmieniały się tylko krzemionka i tlenek glinu. Wykres jest więc prawdziwy dla tamtych szkliw w tamtej temperaturze.
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+Inne szkliwo najpewniej się od nich różni. Bor, inne topniki i niższe stożki przesuwają obszary. W 2025 roku artykuł w Ceramics Monthly opisał test szkliwa na stożek 6 z boranami jako topnikiem i dużą ilością żelaza. Wykres umieścił je w obszarach spękanym, matowym i niedopalonym. W rzeczywistości było całkowicie stopione, satynowe i bez pęknięć włoskowatych. Autorzy piszą, że szkliwa z boranami źle pasują do wykresu. Obszary należy więc traktować jako wskazówkę, a nie prognozę.
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+Obszar **spękany** pokazuje, gdzie pękały włoskowato próby samego Stulla, na jego glinie. Nie mówi, jak dane szkliwo pasuje do danej masy ceramicznej. Pęknięcia włoskowate zależą od rozszerzalności cieplnej zarówno szkliwa, jak i gliny. Wartość rozszerzalności w aplikacji Glazecalc pomaga porównywać szkliwa, a rozstrzyga rzeczywisty test: test z wodą z lodem opisany w części [Dopasowanie szkliwa i wady](/guides/glazing-basics#fit-and-defects).
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**Wzory graniczne**{{en: limit formulas}} to inne narzędzie do tego samego pytania: zakresy krzemionki, tlenku glinu i topników dla stabilnych szkliw na dany stożek. Część [Bezpieczeństwo w kontakcie z żywnością](/guides/glazing-basics#food-safety) je objaśnia i wyjaśnia, dlaczego same niczego nie dowodzą.
 
-## Frits and raw materials {#materials lang=en}
+## Fryty i surowce {#materials}
 
-### Frits
+### Fryty
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**Fryta**{{en: frit}} to szkło wytwarzane w fabryce: minerały się stapia, gwałtownie schładza w wodzie i miele. Frytowanie sprawia, że rozpuszczalne surowce, takie jak boraks, stają się nierozpuszczalne, zamyka toksyczne tlenki, np. ołowiu i baru, w stabilnym szkle, daje surowiec o bardziej stałym składzie niż surowe minerały i usuwa gazy, dlatego szkliwa{{en: glazes}} z fryt są „w znacznie większym stopniu wolne od wad” (Digitalfire). Fryty topią się też wcześnie: fryta sodowa działa już przy stożku{{en: cone}} 06, podczas gdy skaleń{{en: feldspar}} „przy stożku 6 dopiero zaczyna mięknąć”. Są droższe, potrzebują gliny, by utrzymać się w zawiesinie (w przykładzie Digitalfire to 85 % fryty i 15 % gliny), i są „teoretycznie nierozpuszczalne, ale w praktyce nie są”.
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+Fryty w Ameryce Północnej nazywa się od producenta i numeru: fryta Ferro 3134 (Ferro to dziś Vibrantz) należy do najczęściej używanych fryt w Ameryce Północnej. Receptury brytyjskie częściej podają fryty ogólne, takie jak standardowa fryta boraksowa.
 
-### The common raw materials
+### Popularne surowce
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: Popularne surowce do szkliw i to, co wnoszą
+Label: Popularne surowce do szkliw
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| Surowiec (inne nazwy)                                                      | Co wnosi               | Uwagi                                                                                                                                                                                             |
+| -------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Krzemionka{{en: silica}} (krzemień{{en: flint}}, kwarc)                    | SiO₂                   | Do szkliw stosuje się 325 mesh, bardzo drobny przemiał                                                                                                                                            |
+| Kaolin (Wielka Brytania: china clay)                                       | Al₂O₃, SiO₂            | Główne źródło tlenku glinu; pomaga też chronić szkliwo przed osiadaniem                                                                                                                           |
+| Glina ball clay                                                            | Al₂O₃, SiO₂            | Bardziej plastyczna niż kaolin, z większą zawartością żelaza i substancji organicznych                                                                                                            |
+| Skaleń potasowy, skaleń sodowy, syenit nefelinowy{{en: nepheline syenite}} | K₂O, Na₂O, Al₂O₃, SiO₂ | Topniki{{en: fluxes}} z własnym tlenkiem glinu i krzemionką. Syenit nefelinowy to silny topnik do niskiego i średniego wypału. Samo słowo „skaleń” w starej recepturze może oznaczać każdy z nich |
+| Kreda{{en: whiting}} (węglan wapnia)                                       | CaO                    | Główny topnik wapniowy; wydziela dwutlenek węgla                                                                                                                                                  |
+| Wollastonit                                                                | CaO, SiO₂              | Wapń bez dwutlenku węgla                                                                                                                                                                          |
+| Dolomit, talk                                                              | MgO, z CaO lub SiO₂    | Jedwabiście matowe powierzchnie; niższa rozszerzalność                                                                                                                                            |
+| Tlenek cynku                                                               | ZnO                    | Połysk i kryształy; w nadmiarze może powodować zbieganie się szkliwa{{en: crawling}}                                                                                                              |
+| Fryty borowe, Gerstley Borate, kolemanit                                   | B₂O₃                   | Niezbędne od stożka 06 do stożka 6; fryty są „bardziej jednorodne i mniej rozpuszczalne niż borany naturalne”                                                                                     |
+| Węglan litu                                                                | Li₂O                   | Topnik o niskiej rozszerzalności; drogi, więc stosowany oszczędnie                                                                                                                                |
+| Węglan strontu                                                             | SrO                    | Mniej toksyczny zamiennik baru                                                                                                                                                                    |
+| Węglan baru                                                                | BaO                    | Toksyczny w postaci surowej; szkliwa bogate w bar mogą go uwalniać{{en: leach}}                                                                                                                   |
+| Bentonit                                                                   | Utrzymanie zawiesiny   | Bardzo drobna glina, zwykle 1–2 %, zapobiega osiadaniu. Ponad 3 % może powodować pękanie szkliwa podczas schnięcia                                                                                |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> Surowce do szkliw to drobne proszki. Pył krzemionki uszkadza płuca, początkowo bez objawów, a niektóre surowce, takie jak węglan baru i węglan litu, są trujące po połknięciu. Z proszkami należy obchodzić się delikatnie, sprzątać na mokro, a przy pracy na sucho nosić dopasowaną półmaskę filtrującą. Jak to robić, wyjaśniają poradniki [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing) oraz [Jak nie otruć własnej rodziny](/guides/home-safety).
 
-### Regional names
+### Nazwy regionalne
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **Kaolin** w Wielkiej Brytanii nazywa się **china clay**. W Australii Eckalite to jedna z marek kaolinu.
+- **Flint**, czyli krzemień, to starsza brytyjska nazwa krzemionki. Brytyjscy dostawcy nadal sprzedają **kalcynowany krzemień** (calcined flint) jako osobny produkt, więc „flint” w brytyjskiej recepturze oznacza zapewne kalcynowany krzemień, a w amerykańskiej – raczej mączkę kwarcową. Oba sprzedaje się jako źródła krzemionki; należy sprawdzić skład chemiczny.
+- **China stone** i **Cornish stone** (Cornwall stone), po polsku kamień kornwalijski, to ten sam surowiec, pokrewny skaleniom.
+- **Kreda** (whiting) to węglan wapnia: mielona kreda lub wapień.
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> Surowiec należy oceniać po tlenkach, które wnosi, a nie po nazwie. Tak właśnie działa Glazecalc: na [stronie Surowce](/material) można wpisać skład chemiczny podany przez dostawcę, a funkcje **Wypróbuj współczesne surowce i porównaj**, **Zaproponuj ilości i porównaj** oraz **Dopasuj do tego, co mam** dopasowują tlenki po wypale, a nie nazwy.
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+Surowce też się zmieniają. Według Służby Geologicznej Stanów Zjednoczonych (US Geological Survey) kopalnie i zakład, które wytwarzały skaleń Custer w Dakocie Południowej, wstrzymały działalność w listopadzie 2023 roku. Pierwotna kopalnia Gerstley Borate została zamknięta około 1999–2000 roku; Laguna wciąż sprzedaje produkt pod tą nazwą, a głównym zamiennikiem jest Gillespie Borate. Źródła nie są zgodne, czy Gillespie zastępuje Gerstley Borate w tej samej ilości (jego producent i Potclays twierdzą, że tak, Digitalfire i inni, że nie), dlatego należy porównać oba surowce w aplikacji Glazecalc, a potem przetestować małą porcję.
 
-## Colorants and opacifiers {#color lang=en}
+## Barwniki i zmętniacze {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**Barwnik**{{en: colorant}} to tlenek lub węglan metalu, który barwi szkliwo{{en: glaze}}; **pigment**{{en: stain}} to barwnik wytwarzany fabrycznie, stabilniejszy i bardziej powtarzalny niż surowe tlenki. Barwników dodaje się zwykle poniżej 5 % bazy, wielu poniżej 1 %, a węglan barwi słabiej niż odpowiadający mu tlenek, bo część węglanu ulatnia się jako gaz. Według naszych obliczeń ze 100 g węglanu kobaltu powstaje około 63 g tlenku kobaltu, a ze 100 g węglanu miedzi kupowanego przez ceramików (zasadowego węglanu miedzi) około 72 g tlenku miedzi. Węglanu należy więc użyć mniej więcej 1,4 do 1,6 raza więcej niż tlenku.
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: Popularne barwniki, w procentach bazy
+Label: Popularne barwniki
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| Barwnik             | Zwykła ilość na początek                    | Kolory i uwagi                                                                                                                                                                                                |
+| ------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kobalt              | 0,1–2 % (źródła się różnią)                 | Niebieski, bardzo silny; w stronę fioletu, gdy baza zawiera magnez                                                                                                                                            |
+| Żelazo              | 0,5–10 %                                    | Brązy, beże i czerwienie w atmosferze utleniającej{{en: oxidation}}; w redukcji{{en: reduction}} ½–2 % daje celadon, a 5–10 % tenmoku. Jest topnikiem{{en: flux}}, więc duża ilość sprawia, że szkliwo spływa |
+| Miedź               | 1–3 %                                       | Zieleń lub turkus w atmosferze utleniającej, czerwień w redukcji. Może powodować uwalnianie metali{{en: leaching}} ze szkliwa                                                                                 |
+| Chrom               | Od poniżej 0,5 % do 2 % (źródła się różnią) | Zieleń; brąz, jeśli baza zawiera cynk, róż z cyną                                                                                                                                                             |
+| Mangan              | 2–10 %                                      | Brązy i fiolety                                                                                                                                                                                               |
+| Rutyl               | Około 2–5 %                                 | Marmurkowy, zróżnicowany kolor; powyżej około 5 % szorstka lub matowa powierzchnia                                                                                                                            |
+| Pigmenty ceramiczne | 2–12 %                                      | 2–4 % na jasne odcienie, 5–8 % na barwy stonowane, 10–12 % na mocne kolory                                                                                                                                    |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+Ilości kobaltu i chromu są naprawdę sporne. Według Glazy 0,1 % kobaltu wystarcza do uzyskania błękitu; Glendale Community College podaje ½–2 % lub ½–3 %, zależnie od atmosfery; Birdie Boone w Pottery Making Illustrated pisze o 3 % lub mniej. Dla chromu Boone podaje poniżej 0,5 %, a Glendale 2–3 %. Bezpiecznie jest zacząć od małych ilości i zrobić **próbę liniową**{{en: line blend}}: rząd płytek testowych{{en: test tiles}}, na których ilość jednego składnika rośnie stopniowo od małej do dużej.
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+Szkliwo bazowe zmienia kolor. Błyszcząca, transparentna baza daje najżywszy kolor; bazy satynowe i matowe, zwykle bogatsze w tlenek glinu, go wyciszają. Magnez przesuwa kobalt w stronę fioletu, cynk zmienia chrom w brąz, a chrom z cyną daje róż.
 
-### Opacifiers
+### Zmętniacze
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+**Zmętniacz** sprawia, że szkliwo staje się **kryjące** i zasłania glinę; szkliwo **transparentne** pozostawia ją widoczną.
 
-Table: Opacifiers
+Table: Zmętniacze
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| Zmętniacz                                     | Zwykła ilość                 | Uwagi                                                                                                                                          |
+| --------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Krzemian cyrkonu (Zircopax, Superpax, Ultrox) | 10–15 % dla pełnego krycia   | Tańsza możliwość; te marki to krzemian cyrkonu zmielony na ziarno różnej wielkości, a drobniejsze gatunki mocniej zmętniają                    |
+| Tlenek cyny                                   | Około 5–7 % (nasze szacunki) | Drogi; słabszy w wysokim wypale, a według Digitalfire 4 % nie dało żadnego zmętnienia w bezbarwnym szkliwie redukcyjnym na stożek 10           |
+| Dwutlenek tytanu                              | Około 5 % (nasze szacunki)   | Jedwabiste, przeświecające zmętnienie; około 5 % może urozmaicić powierzchnię, a znacznie więcej często daje matową powierzchnię z kryształami |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## Dopasowanie szkliwa i wady {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+Zarówno glina, jak i szkliwo{{en: glaze}} rozszerzają się przy nagrzewaniu i kurczą przy stygnięciu, każde w swoim stopniu: jest to ich **rozszerzalność cieplna**{{en: thermal expansion}}. **Dopasowanie szkliwa do czerepu**{{en: glaze fit}} określa, jak dobrze obie rozszerzalności do siebie pasują. Przy dobrym dopasowaniu szkliwo pozostaje lekko ściśnięte przez czerep; według Digitalfire niewielkie ściskanie wzmacnia wyroby, a zbyt duże może je osłabić, a nawet spowodować ich pękanie.
 
-### Crazing and shivering
+### Pęknięcia włoskowate i odpryskiwanie szkliwa
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**Pęknięcia włoskowate**{{en: crazing}} to siatka drobnych rys. Rozszerzalność szkliwa jest większa niż rozszerzalność czerepu{{en: body}}, więc przy stygnięciu szkliwo kurczy się bardziej, zostaje rozciągnięte i pęka, zwykle z powodu nadmiaru sodu i potasu (Na₂O, K₂O). Pęknięcia mogą też pojawić się później, podczas użytkowania, po wielokrotnym gwałtownym ochładzaniu, na przykład w kontakcie z zimnymi płynami. Gdy są zamierzone, jak w raku, nazywa się je **krakle**. Digitalfire pisze, że „w 95 % przypadków rozwiązaniem jest skorygowanie rozszerzalności cieplnej szkliwa”; powolne chłodzenie tylko opóźnia powstanie pęknięć. Jego test: podgrzać wyrób do około {{300 °F; 149 °C}}, zanurzyć go w wodzie z lodem i potrzeć powierzchnię flamastrem, żeby uwidocznić pęknięcia.
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+Źródła różnią się co do pierwszego środka zaradczego. Glazy proponuje dodać krzemionki lub tlenku glinu; Digitalfire odpowiada, że dodatkowa krzemionka „tylko rozcieńcza KNaO” (sód i potas); Linda Bloomfield dodaje boru lub zmniejsza ilość skalenia{{en: feldspar}}, zmieniając jeden surowiec naraz. Nasza rada: w [kalkulatorze receptur](/recipe) zastąpić część sodu i potasu topnikami{{en: fluxes}} o niższej rozszerzalności (borem, litem, magnezem, wapniem), sprawdzić zmianę przyciskiem **Porównaj** i potwierdzić ją testem z wodą z lodem.
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**Odpryskiwanie szkliwa**{{en: shivering}} to zjawisko odwrotne: rozszerzalność szkliwa jest znacznie niższa niż rozszerzalność czerepu, więc szkliwo jest nadmiernie ściśnięte i odpryskuje z brzegów i krawędzi. Digitalfire ostrzega, że odpryski mogą być ostre jak brzytwa i mogą zostać połknięte, a Glazy nazywa odpryskiwanie szkliwa „jeszcze groźniejszym niż pęknięcia włoskowate na naczyniach użytkowych”. Rozwiązaniem jest szkliwo o wyższej rozszerzalności lub masa o niższej rozszerzalności.
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> Nie należy używać wyrobów z pęknięciami włoskowatymi ani z odpryskującym szkliwem do jedzenia ani do picia. Źródła nie są zgodne, czy naczynia z pęknięciami włoskowatymi da się wystarczająco dobrze umyć (jedno twierdzi, że wystarczy zmywarka; inne uznaje naczynia użytkowe z pęknięciami włoskowatymi za wadliwe), dlatego wybieramy ostrożniejsze stanowisko.
 
-### Gloss and matte
+### Połysk i mat
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+Powierzchnia **błyszcząca** odbija światło i jest gładka, **satynowa** ma przytłumiony połysk, a **matowa** jest bez połysku. Połysk wymaga całkowicie stopionego szkła. Mat może wynikać z dużej ilości tlenku glinu (niskiego stosunku krzemionki do tlenku glinu{{en: silica to alumina ratio}}), z topników takich jak wapń, magnez, bar czy stront, które przy stygnięciu szkliwa tworzą drobne kryształy, albo z niedopalenia.
 
-### Common defects
+### Typowe wady
 
-Change one thing at a time, and keep your test tiles.
+Należy zmieniać jedną rzecz naraz i zachowywać płytki testowe{{en: test tiles}}.
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: Typowe wady szkliwa, ich zwykłe przyczyny i pierwsze środki zaradcze
+Label: Typowe wady szkliwa
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| Wada                                  | Jak wygląda                                                 | Typowe przyczyny                                                                                                                                                                   | Pierwsze środki zaradcze                                                                                         |
+| ------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Zbieganie się szkliwa{{en: crawling}} | Szkliwo ściąga się w krople, odsłaniając gołą glinę         | Zakurzony lub zatłuszczony biskwit{{en: bisque}}; gruba warstwa bogata w glinę, która popękała przy schnięciu; cynk, krzemian cyrkonu lub cyna                                     | Oczyścić biskwit; nakładać cieńszą warstwę; skalcynować część gliny; dodać spoiwo, takie jak klej CMC            |
+| Nakłucia{{en: pinholing}}             | Małe dziurki lub kraterki                                   | Gaz z masy lub szkliwa, po którym powierzchnia się nie zasklepiła; szkliwo niedopalone lub zbyt lepkie                                                                             | Przetrzymać w temperaturze maksymalnej przez około pół godziny; nakładać cieńszą warstwę; mniej cynku lub rutylu |
+| Pęcherze                              | Kratery o ostrych krawędziach                               | Zwykle przepalenie; bardzo grube warstwy; lotne topniki powyżej około {{2192 °F; 1200 °C}}                                                                                         | Wypalać niżej; nakładać cieńszą warstwę. Ostre krawędzie sprawiają, że naczynia użytkowe nie są bezpieczne       |
+| Spływanie                             | Szkliwo spływa na płytę                                     | Za mało tlenku glinu; za gruba warstwa, np. tam, gdzie polewania się nakładają; dużo żelaza                                                                                        | Nakładać cieńszą warstwę; dodać tlenku glinu; kończyć szkliwo wyraźnie powyżej stopki                            |
+| Pęknięcia termiczne{{en: dunting}}    | Pęknięcia naczynia powstałe przy chłodzeniu lub nagrzewaniu | Szybkie chłodzenie w zakresie inwersji kwarcu{{en: quartz inversion}}, {{1063 °F; 573 °C}}, lub inwersji krystobalitu, około {{428 °F; 220 °C}}; nierówne ścianki; złe dopasowanie | Wypalać powoli w obu zakresach, przy nagrzewaniu i chłodzeniu; równe ścianki                                     |
 
-## Food safety {#food-safety lang=en}
+## Bezpieczeństwo w kontakcie z żywnością {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Uwalnianie metali**{{en: leaching}} to przechodzenie metali z wypalonego szkliwa{{en: glaze}} do żywności lub napojów; szkliwo może wyglądać idealnie, a mimo to je uwalniać. Badania przewidziane w przepisach polegają na zanurzeniu wypalonego wyrobu w roztworze kwasu i zmierzeniu ilości ołowiu i kadmu, które się z niego uwolniły.
 
-### Lead-free is not the same as food-safe
+### Bezołowiowe nie znaczy bezpieczne w kontakcie z żywnością
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Przepisy w USA, UE, Wielkiej Brytanii i Australii ograniczają ilość ołowiu i kadmu, którą uwalnia wypalony wyrób, a nie to, co zawiera szkliwo. Określenie „bezołowiowe” oznacza usunięcie jednego zagrożenia; nie jest oceną bezpieczeństwa w kontakcie z żywnością{{en: food safety}}. Uwalniają się też inne tlenki: Glazy ostrzega, że szkliwa bogate w bar „mogą uwalniać metale i na ogół nie nadają się do kontaktu z żywnością”, Digitalfire pisze, że miedź „może powodować uwalnianie metali ze szkliwa; trzeba to zbadać”, a Glazy nie zaleca już szkliw ołowiowych do naczyń użytkowych.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Szkliwo do wnętrza naczyń**{{en: liner glaze}} to stabilne, zwykle bezbarwne lub białe szkliwo na powierzchnie stykające się z żywnością. Naszym zdaniem mniejsze ryzyko niesie szkliwo bez barwników{{en: colorants}}, baru, ołowiu i litu, które w pełni się topi, nie pęka włoskowato{{en: craze}} i jest odporne na ścieranie. Mniejsze ryzyko nie jest dowodem.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Wzory graniczne**{{en: limit formulas}} (Digitalfire woli określenie **wzory docelowe**{{en: target formulas}}) podają typowe zakresy wzoru Segera{{en: unity formula}} dla stabilnych szkliw na dany stożek{{en: cone}}: według wzorów docelowych Digitalfire dla stożka 6 tlenek glinu powinien wynosić 0,285–0,64, a krzemionka{{en: silica}} 2,4–4,7. Wskazują kierunek ku poprawnej chemii, ale niczego nie dowodzą; Digitalfire unika słowa „granica”, bo sugeruje ono, że szkliwa mieszczące się w tych zakresach „są w jakiś sposób bezpieczne”. Narzędzia aplikacji Glazecalc do zmiany receptury informują, gdy nowa receptura przekracza zalecaną granicę, np. zawiera dużo boru przy stożku 6, i co szkliwo prawdopodobnie zrobi.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+Limity prawne różnią się w zależności od kraju. Tabela pokazuje te obowiązujące w kraju zamieszkania, w jednostkach, w jakich podają je same przepisy; dla porównania można wybrać inny kraj lub region.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+W USA ozdobne wyroby ceramiczne, które wyglądają na nadające się do kontaktu z żywnością, są traktowane jak naczynia do żywności, chyba że mają naklejkę oraz trwały napis wytłoczony lub wypalony na spodzie, taki jak „Not for Food Use. May Poison Food” (nie do kontaktu z żywnością; może zatruć żywność), albo otwór przechodzący przez powierzchnię stykającą się z żywnością. UE określa limity ołowiu i kadmu dla wyrobów ceramicznych w dyrektywie 84/500/EWG, a Wielka Brytania zachowuje te same wartości we własnym prawie. Decyzja państw Beneluksu z 2024 roku ustala dla wyrobów ceramicznych znacznie niższe limity. Holandia stosuje je od 29 maja 2026 r.: około 130 do 150 razy mniej ołowiu i około 14 do 18 razy mniej kadmu niż wartości unijne. Wyroby, które spełniały dawne przepisy i zostały po raz pierwszy wprowadzone do sprzedaży przed 1 grudnia 2026 r., mogą być sprzedawane do wyczerpania zapasów. Laboratoria badawcze podają, że Luksemburg stosuje te same limity od 29 maja 2026 r., a Belgia przyjęła je dekretem królewskim z 19 lipca 2026 r.; samych tych tekstów nie czytaliśmy. Australia ustala limity dla wyrobów importowanych; nie znaleźliśmy oficjalnego limitu dla wyrobów wytwarzanych w Australii ani w Nowej Zelandii.
 
-### Testing
+### Badania
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+Według FDA domowe testy wymazowe mogą wykazać uwalniający się ołów, ale badania pokazują, że na wyrobach szkliwionych testy te często się mylą: mogą wykazać ołów, którego nie ma, i mogą przeoczyć ołów, który się uwalnia. Wynik dodatni należy traktować jako powód, by przestać używać naczynia, a wynik ujemny jako niedowodzący niczego. Rzeczywistą odpowiedź daje laboratoryjne badanie uwalniania metali z wypalonego wyrobu (ASTM C738 w USA; EN 1388 lub ISO 6486 w Europie).
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> „Bezpieczne w kontakcie z żywnością” oznacza, że to szkliwo, na tej glinie, wypalone do tego stożka w tym piecu i nałożone w ten sposób, uwalnia mniej, niż wynoszą limity prawne. Glazecalc może pomóc zbudować stabilne szkliwo, a funkcja **Zastąp ołów** może odtworzyć starą recepturę ołowiową bez ołowiu, ale żaden kalkulator nie może dać naczyniu atestu. Może to zrobić tylko badanie wypalonego wyrobu.
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## Gęstość względna i nakładanie {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### Gęstość względna
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+Proszek szkliwa{{en: glaze}} zmieszany z wodą to **zawiesina szkliwa**{{en: slurry}}. Jej **gęstość względna**{{en: specific gravity}} (**SG**) to jej masa w porównaniu z masą tej samej objętości wody, której SG wynosi 1,0: im jest wyższa, tym więcej proszku w wiadrze. Glazy nazywa wartość 1,4–1,5 „dobrym punktem wyjścia dla większości szkliw”. Aby ją zmierzyć, należy zważyć dokładnie 100 mL zawiesiny (Glazy proponuje strzykawkę) i podzielić wynik przez 100: 145 g oznacza SG 1,45. Areometry są zawodne w zżelowanych szkliwach, a woda odparowuje, dlatego przed szkliwieniem trzeba sprawdzić gęstość ponownie.
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+Wartości docelowe różnią się w zależności od źródła. Digitalfire podaje dla szkliw do zanurzania 1,40–1,50, a dla handlowych szkliw do malowania pędzlem 1,25–1,55, natomiast Potclays podaje 1,71–1,81 do malowania pędzlem i 1,71 do natrysku. Nasza rada: zanurzać przy około 1,45, przy lekko zżelowanym szkliwie, w przypadku szkliwa do malowania pędzlem stosować się do etykiety i zapisywać, co się sprawdza.
+
+**Flokulant**{{en: flocculant}} (sól gorzka, ocet lub chlorek wapnia) lekko żeluje zawiesinę i czyni ją **tiksotropową**{{en: thixotropic}}: płynie, gdy się ją miesza, i tężeje w spoczynku, co daje „równomierne pokrycie szkliwem bez zacieków”. **Deflokulant**{{en: deflocculant}} (krzemian sodu lub Darvan) ją upłynnia. Poradnik [Jak przygotować szkliwo](/guides/making-a-glaze) omawia mieszanie i korygowanie zawiesiny.
+
+### Nakładanie szkliwa
+
+Najpierw należy oczyścić biskwit{{en: bisque}} z kurzu i tłuszczu ledwie wilgotną gąbką zamiast go myć, bo wtedy nasiąka wodą. Nie należy zdmuchiwać kurzu sprężonym powietrzem ani czyścić go suchą szczotką: w ten sposób pył krzemionki trafia do powietrza ([Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing#cleaning)).
+
+- **Zanurzanie** „na ogół daje warstwę o równej grubości” (Robin Hopper). Grubość zależy od czasu zanurzenia: Digitalfire zauważa, że handlowe szkliwa do zanurzania przygotowuje się na gęstość około 1,4 przy zanurzeniu na 5 sekund i 1,5 przy zanurzeniu na 1 sekundę.
+- Szkliwo do **polewania** powinno być „nieco rzadsze niż do zanurzania”; tam, gdzie polewania się nakładają, warstwa się podwaja i może spływać.
+- Szkliwa do **malowania pędzlem** zawierają klej, taki jak **klej CMC** (karboksymetyloceluloza), który pomaga szkliwu się rozprowadzać i przylegać, a potem się wypala. Większość wymaga kilku warstw, często dwóch lub trzech; należy stosować się do etykiety.
+- Do **natrysku** stosuje się znacznie rzadsze szkliwo, nakładane „kilkoma cienkimi warstwami, stopniowo zwiększając grubość”.
+
+> [!WARNING]
+> Szkliwo należy natryskiwać wyłącznie w wentylowanej kabinie natryskowej, w prawidłowo dopasowanej półmasce filtrującej. Więcej w poradniku [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing).
+
+Zbyt gruba warstwa może się zbiegać{{en: crawl}}, tworzyć pęcherze lub spływać. Praktyczne wskazówki dostawców mówią o grubości od karty kredytowej do amerykańskiej monety dziesięciocentowej (dime), czyli według naszych szacunków około 1 mm suchego szkliwa; wiarygodnym sprawdzianem są płytki testowe{{en: test tiles}} z kilkoma grubościami warstwy. **Wosk**{{en: wax resist}} na stopce odpycha szkliwo, więc naczynie nie przywrze do płyty, a **pobiałka**, żaroodporna powłoka, często z kaolinu i krzemionki{{en: silica}}, chroni płyty piecowe przed zaciekami.
+
+## Atmosfera utleniająca i redukcyjna {#atmosphere}
+
+Gazy w piecu, czyli jego **atmosfera**, wpływają na to, jak wychodzą szkliwa{{en: glazes}}. **Atmosfera utleniająca**{{en: oxidation}} oznacza obfitość tlenu. Według Digitalfire „piece elektryczne to synonim wypału utleniającego”, a szkliwa wypalane w atmosferze utleniającej są zwykle żywsze niż wypalane w redukcji, zwłaszcza w niższych temperaturach. W atmosferze utleniającej miedź daje zielenie i turkus, a żelazo brązy, beże i czerwienie. Słabo wentylowany piec elektryczny, pełen wyrobów wydzielających gazy, może pracować w atmosferze bardziej obojętnej, niż zamierzano; pomaga wyciąg podłączony bezpośrednio do pieca.
+
+**Redukcja**{{en: reduction}} to celowe ograniczenie dopływu tlenu, zwykle w piecu gazowym, opalanym drewnem lub specjalnym. Miedź daje czerwień, a żelazo działa silniej jako topnik{{en: flux}} i daje **celadon** (od niebieskozielonego po szarozielony, przy około ½–2 % żelaza) i **tenmoku** (temmoku: brązowoczarne, przy około 5–10 % żelaza). Według Glazy celadony i czerwienie miedziowe „zależą od redukcji”. Zmienia się też glina: w jednym z porównań Digitalfire masa kamionkowa{{en: stoneware}} wypaliła się na szaro w redukcji i na żółtawo w atmosferze utleniającej. Węglik krzemu w szkliwie może wywołać małe obszary redukcji nawet w piecu elektrycznym. Do wypałów redukcyjnych od stożka{{en: cone}} 010 do stożka 3 Orton zaleca swoje stożki niezawierające żelaza.
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> Należy się liczyć z tym, że receptura opracowana do redukcyjnego pieca gazowego wyjdzie inaczej w piecu elektrycznym: celadon czy czerwień miedziowa, które zależą od redukcji, nie będą wyglądać tak samo w atmosferze utleniającej. Należy sprawdzić, do jakiej atmosfery opracowano recepturę, i zapisać własną, razem ze stożkiem, w notatkach receptury w aplikacji Glazecalc.
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+Każdy piec, także elektryczny, wydziela gazy i opary, dlatego piec trzeba wentylować. Jak to zrobić, wyjaśnia poradnik [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing).
 
-## Glossary {#glossary lang=en}
+## Słowniczek {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Barwnik i pigment (colorant and stain)
+: Tlenek lub węglan metalu, który barwi szkliwo; pigment to wytwarzany fabrycznie, stabilniejszy barwnik.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Bentonit (bentonite)
+: Bardzo drobna glina dodawana w ilości około 1–2 %, by szkliwo nie osiadało. Ponad 3 % może powodować pękanie szkliwa podczas schnięcia.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Biskwit, wypał biskwitowy (bisque; w Wielkiej Brytanii: biscuit)
+: Pierwszy, niższy wypał, zwykle do stożka 08–04 (najczęściej 06–04), po którym wyroby są wytrzymałe, ale porowate.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Bor, B₂O₃ (boron)
+: Formalnie tlenek szkłotwórczy, ale stosowany jako topnik; niezbędny od stożka 06 do stożka 6.
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+Ceramika porowata (earthenware)
+: Masa do niskiego wypału (około stożka 06–02), porowata przy niskich stożkach i gęstsza, gdy wypala się ją w wyższej temperaturze.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Dewitryfikacja (devitrification)
+: Kryształy wyrastające ze szkła na początku chłodzenia tam, gdzie są niepożądane.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Do kontaktu z żywnością (food safe)
+: Według prawa: taki, który w teście kwasowym uwalnia mniej ołowiu i kadmu, niż wynoszą limity. To nie to samo co bezołowiowy.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Dodatek (additive)
+: Barwnik, zmętniacz lub środek przeciw osiadaniu, dodawany ponad 100 części receptury.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Dopasowanie szkliwa do czerepu (glaze fit)
+: Stopień zgodności rozszerzalności szkliwa i czerepu; przy dobrym dopasowaniu szkliwo jest lekko ściśnięte.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Farba podszkliwna (underglaze)
+: Barwny szlikier lub zdobienie tlenkami, zwykle pod szkliwem bezbarwnym.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Flokulant i deflokulant (flocculant and deflocculant)
+: Dodatki, które żelują zawiesinę (sól gorzka, ocet) lub ją upłynniają (krzemian sodu, Darvan).
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Fryta (frit)
+: Szkło wytwarzane fabrycznie – stopione, gwałtownie schłodzone i zmielone – dzięki któremu rozpuszczalne lub toksyczne tlenki stają się nierozpuszczalne.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Gęstość względna, SG (specific gravity)
+: Masa zawiesiny w porównaniu z masą tej samej objętości wody.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Glina ball clay
+: Plastyczna glina z większą zawartością żelaza i substancji organicznych niż kaolin.
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+Kamionka (stoneware)
+: Masa do średniego i wysokiego wypału (około stożka 5–10), która spieka się całkowicie lub prawie całkowicie.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Kaolin (w Wielkiej Brytanii: china clay)
+: Czysta biała glina dostarczająca tlenku glinu i krzemionki; pomaga chronić szkliwo przed osiadaniem. W Australii Eckalite to jedna z marek.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Klej CMC (CMC gum)
+: Klej celulozowy, który ułatwia nakładanie szkliwa pędzlem i jego przyleganie; wypala się.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Kreda (whiting)
+: Węglan wapnia, główny topnik wapniowy; w wypale traci około 44 % masy w postaci dwutlenku węgla.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Krzemionka, SiO₂ (silica)
+: Tlenek szkłotwórczy; nazywana też krzemieniem (flint) lub kwarcem.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Nakłucia i pęcherze (pinholing and blistering)
+: Małe dziurki lub kratery o ostrych krawędziach w miejscach, gdzie gaz uszedł przez stop.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Odpryskiwanie szkliwa (shivering)
+: Szkliwo odpryskujące z krawędzi, bo jest nadmiernie ściśnięte; zagrożenie na naczyniach użytkowych.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Pęknięcia termiczne (dunting)
+: Pęknięcia naczynia wywołane naprężeniami przy chłodzeniu lub nagrzewaniu, często przy inwersji kwarcu, {{1063 °F; 573 °C}}.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Pęknięcia włoskowate (crazing)
+: Drobne pęknięcia w szkliwie, które kurczy się bardziej niż czerep; krakle, gdy są zamierzone.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Pobiałka (kiln wash)
+: Żaroodporna powłoka, która chroni płyty piecowe przed zaciekami.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Porcelana (porcelain)
+: Biała masa do wysokiego wypału, bogata w kaolin, często przeświecająca.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Praca cieplna (heatwork)
+: Łączny efekt temperatury i czasu w piecu; to, co mierzą stożki.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Próba liniowa (line blend)
+: Próbki, w których ilość jednego składnika zmienia się stopniowo między dwiema wartościami. Próba trójskładnikowa (triaxial blend) zmienia trzy składniki na siatce.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+R₂O i RO (R₂O and RO)
+: Topniki alkaliczne (Na₂O, K₂O, Li₂O) i topniki z grupy ziem alkalicznych (CaO, MgO, BaO, SrO, a także ZnO).
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Receptura (batch recipe)
+: Surowce szkliwa według masy, zwykle sumujące się do 100.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Skaleń (feldspar)
+: Minerał dostarczający topnika alkalicznego wraz z tlenkiem glinu i krzemionką: skaleń potasowy, skaleń sodowy lub syenit nefelinowy.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Spiekanie (vitrification)
+: Proces, w którym masa staje się w wypale szklista i nieporowata.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Stabilizator (stabilizer)
+: Tlenek, głównie tlenek glinu, który zwiększa lepkość stopu i dodaje trwałości.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Stosunek krzemionki do tlenku glinu (silica to alumina ratio)
+: Krzemionka podzielona przez tlenek glinu we wzorze Segera: wyższy sprzyja połyskowi, niższy matowi.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Stożek (cone)
+: Kalibrowana ceramiczna piramidka, która wygina się po otrzymaniu określonej pracy cieplnej. Stożek kontrolny pokazuje, co otrzymały wyroby.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Strata prażenia, LOI (loss on ignition)
+: Ubytek masy w wypale, gdy uchodzą woda, dwutlenek węgla, substancje organiczne lub siarka.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Szkliwo (glaze)
+: Warstwa szkła, która topi się w wypale, by uszczelnić i ozdobić naczynie.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Szkliwo błyszczące, satynowe i matowe (gloss, satin and matte)
+: Odbijające światło i gładkie; o przytłumionym połysku; bez połysku.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Szkliwo do wnętrza naczyń (liner glaze)
+: Stabilne, zwykle bezbarwne lub białe szkliwo na powierzchnie stykające się z żywnością.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Szlikier i angoba (slip and engobe)
+: Glina w wodzie; angoba to powłoka podobna do szlikru, z większym udziałem surowców innych niż glina.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Tiksotropia (thixotropy)
+: Płynięcie podczas mieszania i tężenie w miękki żel w spoczynku.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Tlenek (oxide)
+: Związek pierwiastka z tlenem; skład tlenkowy podaje tlenki w procentach masowych.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Tlenek glinu, Al₂O₃ (alumina)
+: Główny stabilizator: zapobiega spływaniu i dodaje twardości. Pochodzi z glin i skaleni.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Tlenek szkłotwórczy (glass former)
+: Tlenek, który buduje szkło, zwykle krzemionka.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Topnik (flux)
+: Tlenek, który obniża temperaturę topnienia krzemionki.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Uwalnianie metali (leaching)
+: Przechodzenie metali z wypalonego szkliwa do żywności lub napojów.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+Wypał jednokrotny (once-firing, single firing)
+: Szkliwienie niewypalonych wyrobów i wypalanie ich tylko raz.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Wypał szkliwa (glaze firing; w Wielkiej Brytanii: glost firing)
+: Wypał, w którym topi się szkliwo.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Wypał utleniający i redukcyjny (oxidation and reduction)
+: Wypał z obfitością tlenu (piece elektryczne) lub z ograniczonym dopływem tlenu (zwykle piece gazowe lub opalane drewnem).
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Wyroby surowe (greenware)
+: Wyroby niewypalone: w stanie skórzastym, gdy są sztywne, ale wilgotne; całkowicie suche, gdy nie została w nich wolna woda.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Wzór graniczny, wzór docelowy (limit formula, target formula)
+: Typowe zakresy wzoru Segera dla stabilnych szkliw na dany stożek; wskazówka, nie gwarancja.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Wzór Segera, UMF (unity molecular formula, Seger formula)
+: Tlenki szkliwa wyrażone jako liczby cząsteczek, przeliczone tak, by topniki sumowały się do 1.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Zabezpieczenie woskiem (wax resist)
+: Wosk nanoszony pędzlem tam, gdzie nie może trafić szkliwo, zwykle na stopkę.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Zbieganie się szkliwa (crawling)
+: Szkliwo ściągające się w krople podczas wypału i odsłaniające gołą glinę.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+Zmętniacz (opacifier)
+: Surowiec, taki jak krzemian cyrkonu, tlenek cyny lub dwutlenek tytanu, który czyni szkliwo kryjącym.
 
-## Sources {#sources lang=en}
+## Źródła {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -486,7 +486,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (w serwisie The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -504,7 +504,7 @@ Whiting
 - [Digitalfire: Tin oxide](https://digitalfire.com/oxide/sno2)
 - R. T. Stull, "Influences of variable silica and alumina on porcelain glazes of constant RO", Transactions of the American Ceramic Society 14 (1912), 62–70
 - [Ceramic Arts Network: Techno File: Breaking the Stull chart (Marzano, McComb and Coppage, Ceramics Monthly, 2025)](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/techno-file-breaking-the-stull-chart)
-- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, via Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
+- [US Geological Survey: US producers of feldspar and nepheline syenite in 2023 (Minerals Yearbook table, w serwisie Index Mundi)](https://www.indexmundi.com/en/commodities/minerals/feldspar/feldspar_t3.html)
 - [Ceramic Arts Network: Common glaze faults and how to correct them (Linda Bloomfield)](https://ceramicartsnetwork.org/daily/article/common-glaze-faults-and-how-to-correct-them)
 - [Ceramic Arts Network: An introduction to color (Birdie Boone)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/An-Introduction-to-Color)
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)

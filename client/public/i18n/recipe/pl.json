@@ -723,7 +723,8 @@
     "keyPoint": "Kropka: to szkliwo.",
     "keyBright": "Linia kropkowana: gdzie szkliwa Stulla były najbardziej błyszczące.",
     "keyLimits": "Linie przerywane i zacienienie: zakresy krzemionki i tlenku glinu zestawu {name}.",
-    "keyCrazed": "Kreskowanie: gdzie pękały włoskowato."
+    "keyCrazed": "Kreskowanie: gdzie pękały włoskowato.",
+    "note": "Wskazówka, a nie prognoza. R. T. Stull (Transactions of the American Ceramic Society, 1912) wypalał w okolicy stożka 11, z topnikami ustalonymi na 0,3 K₂O i 0,7 CaO; inne topniki i wypały przesuwają obszary, a szkliwo, które jest matowe tylko dlatego, że było niedopalone, może mimo to wypaść w obszarze błyszczącym. Obszary są narysowane tak jak w Glazy."
   },
   "slurry": {
     "heading": "Gęstość względna i woda",
@@ -751,6 +752,17 @@
       "pint": "Wybrana masa pinty, oz"
     },
     "drySg": "SG suchych surowców",
+    "drySgEmpty": "Potrzebne jest tylko do mas suchych; do ilości wody do dodania nie. Można je wpisać, jeśli jest znane.",
+    "drySgNeeded": "Należy wpisać SG suchych surowców, aby zobaczyć ilość suchego szkliwa w wiadrze i wodę na nową porcję.",
+    "estimate": {
+      "mineral": "Szacunek, {sg}, na podstawie tego, z czego składa się każdy surowiec: zmierzonej gęstości jego minerału. Można go zmienić, jeśli zna się dokładniejszą wartość.",
+      "kind": "Szacunek, {sg}: skalenie i gliny mają około 2,6. Można go zmienić, jeśli zna się dokładniejszą wartość.",
+      "glass": "Szacunek, {sg}, obliczony z tlenków fryt (fryty są szkłem). Można go zmienić, jeśli zna się dokładniejszą wartość.",
+      "mixed": "Szacunek, {sg}, na podstawie każdego surowca: zmierzonej gęstości jego minerału, około 2,6 dla skaleni i glin oraz wartości dla fryt obliczonej z ich tlenków. Można go zmienić, jeśli zna się dokładniejszą wartość.",
+      "leftOut": "Pominięte, bo ich SG nie jest znane: {names}.",
+      "none": "Brak szacunku dla tej receptury: SG surowców {names} nie jest znane. Można je wpisać, jeśli jest znane.",
+      "was": "Używana jest wpisana wartość. Szacunek wynosił {sg}; aby do niego wrócić, należy wyczyścić pole."
+    },
     "batch": "Suche szkliwo na nową porcję, {unit}",
     "contents": "Przy SG {sg} wiadro zawiera {glaze} suchego szkliwa i {water} wody.",
     "add": "Aby osiągnąć SG {target}, należy dodać {water} wody. Końcowa objętość wyniesie ok. {volume}.",
@@ -758,6 +770,7 @@
     "already": "Szkliwo ma już SG {target}.",
     "mix": "Aby uzyskać ok. {volume} o SG {target}, należy wymieszać {glaze} suchego szkliwa z {water} wody.",
     "badSg": "SG musi być większe niż 1 (SG wody) i mniejsze niż SG suchych surowców, czyli {dry}.",
+    "badSgWater": "SG musi być większe niż 1 (SG wody).",
     "badDry": "SG suchych surowców musi być większe niż 1.",
     "note": "Woda jest podawana wagowo: litr waży kilogram, galon amerykański ok. 8,3 lb. W obliczeniach objętości się sumują, co jest bliskie rzeczywistości, ale nie dokładne: wodę należy dodawać po trochu, mieszać i ponownie mierzyć. Dwa szkliwa o tym samym SG mogą mimo to inaczej płynąć.",
     "saveTarget": "Zapisz SG {sg} jako docelowe dla tej receptury",

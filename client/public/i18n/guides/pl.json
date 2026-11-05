@@ -37,6 +37,10 @@
     "learnWithJohnBritt": {
       "title": "Nauka z bezpłatnym kursem szkliw Johna Britta",
       "text": "Jego bezpłatny kurs wideo na YouTube, lekcja po lekcji, z naszymi poradnikami do przeczytania i ćwiczeniami do wypróbowania w Glazecalc. Po angielsku."
+    },
+    "teachingGlazeCalculation": {
+      "title": "Nauczanie obliczeń szkliw",
+      "text": "6 zajęć dla klasy lub grupy samokształceniowej, od płytek trójskładnikowych do wzoru Segera przeliczanego w obie strony, z kartami pracy do wydruku."
     }
   },
   "more": "Więcej poradników",
@@ -255,6 +259,8 @@
       "crazed": "spękane"
     },
     "keyBright": "Linia kropkowana: gdzie szkliwa Stulla były najbardziej błyszczące.",
-    "keyCrazed": "Kreskowanie: gdzie pękały włoskowato."
+    "keyCrazed": "Kreskowanie: gdzie pękały włoskowato.",
+    "note": "Wskazówka, a nie prognoza. R. T. Stull (Transactions of the American Ceramic Society, 1912) wypalał w okolicy stożka 11, z topnikami ustalonymi na 0,3 K₂O i 0,7 CaO; inne topniki i wypały przesuwają obszary, a szkliwo, które jest matowe tylko dlatego, że było niedopalone, może mimo to wypaść w obszarze błyszczącym. Obszary są narysowane tak jak w Glazy.",
+    "inGuide": "Krzemionka (SiO₂) w poziomie, od około 1 do 7, i tlenek glinu (Al₂O₃) w pionie, od 0 do 1, oba ze wzoru Segera. Od lewej rozchodzą się klinowe obszary: niestopione w lewym górnym rogu, potem matowe, potem półmatowe. Niezacieniona część na prawo od nich to obszar błyszczący, a linia kropkowana w nim pokazuje, gdzie szkliwa Stulla były najbardziej błyszczące. Obszar niedopalony leży w prawym dolnym rogu, przy małej ilości tlenku glinu i dużej ilości krzemionki. Kreskowanie, nisko na wykresie i przy jego lewym brzegu, pokazuje, gdzie jego próbki pękały włoskowato."
   }
 }
