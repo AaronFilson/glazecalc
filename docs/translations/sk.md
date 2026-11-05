@@ -223,6 +223,30 @@ _prevádzkovateľ_, "legitimate interest" → _oprávnený záujem_, "data prote
 údajov_, "Standard Contractual Clauses" → _štandardné zmluvné doložky_; logs → _logy_; a poison line's descriptive name
 is translated, the native name kept in brackets: _Japonské toxikologické informačné centrum, Osaka (大阪中毒110番)_.
 
+**New terms (round 14: famous glazes and Japanese and Chinese materials).** No Slovak potters' source was found for
+any of these; they are plain descriptive Slovak, with the CJK name kept where the English shows it. A Slovak potter
+should check them.
+
+- "synthetic ash" (合成土灰, 合成藁灰) → _syntetická náhrada popola_; "a synthetic stand-in for 土灰" → „syntetická
+  náhrada za 土灰“. Wood ash stays _drevný popol_ (2.2, SKWIKI „popolové glazúry“).
+- "rice-straw ash" (藁灰) → _popol z ryžovej slamy_ (SKWIKI, „Ryža“ for _ryžová slama_).
+- "isu ash" (柞灰) → _popol isu (柞灰)_, the Japanese name romanised as in the English.
+- "porcelain stone" (瓷石) → _porcelánový kameň (瓷石)_; not _Cornish stone_, which is a different rock.
+- 紫金土 → _miestna hlina bohatá na železo (紫金土)_, as the English describes it.
+- Chinese place names in the Slovak transcription Slovak encyclopedias use (Beliana): _Ťing-te-čen_ (Jingdezhen),
+  _Ťiang-si_ (Jiangxi), _Lung-čchüan_ (Longquan); villages without a Slovak form follow the same scheme (_Kao-ťi-tchou_,
+  _Ta-jao_) or keep the pinyin (_San Bao_). A reviewer may prefer pinyin throughout.
+- A supplier's product "specification" (Eti Maden colemanite) → _špecifikácia výrobku_; "limits, not a typical
+  analysis" → „sú to limity, nie typická analýza“.
+- "Famous glazes" → _Slávne glazúry_; "Native name" → _Pôvodný názov_; "Historic analysis" → _Historická analýza_;
+  atmospheres "neutral", "wood firing", "salt firing", "soda firing" → _neutrálna atmosféra_, _výpal drevom_, _soľný
+  výpal_, _výpal so sódou_.
+- "Teaching glaze calculation" → _Výučba výpočtu glazúr_; "sessions" → _lekcie_; "worksheets" → _pracovné listy_;
+  "triaxial tiles" → _trojzložkové skúšky_ (2.6).
+- "Stull chart" → _Stullov diagram_ (possessive adjective, as _Segerov vzorec_).
+- `{{SG …}}` renders „hustota 1,45“ in the nominative: in running text put it in brackets or after a colon („glazúra
+  ({{SG 1.45}}) váži…“), never after a preposition that needs another case („s {{SG 1.45}}“).
+
 **Pitfalls in this field.**
 
 **Czech words are not Slovak**, though Slovak shops copy them from Czech suppliers (PROD „Mastek - talek“, KCSK „nízký

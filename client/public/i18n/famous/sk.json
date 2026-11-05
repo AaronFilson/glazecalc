@@ -1,0 +1,63 @@
+{
+  "notTranslated": "Časť tejto stránky ešte nie je preložená, preto sa zobrazuje po anglicky.",
+  "index": {
+    "crumb": "Slávne glazúry",
+    "title": "Slávne glazúry",
+    "lead": "Glazúry známe po celom svete, každá z tradičných miestnych surovín, s jej Segerovým vzorcom a verziou zo surovín, ktoré sa predávajú tam, kde ste.",
+    "listHeading": "Glazúry",
+    "more": "Ďalšie glazúry pribudnú: každú pridáme, keď sa jej recept a suroviny opierajú aspoň o tri zdroje, ktoré sme prečítali."
+  },
+  "glaze": {
+    "lead": "Slávna glazúra ({native}): jej tradičný recept alebo analýza, jej výpal a verzia zo surovín, ktoré sa predávajú tam, kde ste.",
+    "aboutHeading": "O glazúre {name}",
+    "nativeName": "Pôvodný názov",
+    "origin": "Kde",
+    "period": "Kedy",
+    "firing": "Výpal",
+    "cone": "kužeľ {cone}",
+    "historyOnly": "Len ako história: táto glazúra sa vyrábala s olovom. Jej analýza je uvedená ako história, nie ako recept na miešanie. Verzia nižšie je iná glazúra, bez olova.",
+    "recipeHeading": "Tradičný recept",
+    "material": "Surovina",
+    "amount": "Množstvo",
+    "unityHeading": "Segerov vzorec",
+    "analysisHeading": "Historická analýza",
+    "oxide": "Oxid",
+    "percent": "Hmotnostné %",
+    "useHeading": "Vyskúšajte ju",
+    "open": "Otvoriť tento recept",
+    "openLeadFree": "Otvoriť bezolovnatú verziu",
+    "leadFreeTitle": "V štýle {name}, bezolovnatá",
+    "allLink": "Všetky slávne glazúry",
+    "safetyHeading": "Bezpečnosť",
+    "safeMixing": "Bezpečné miešanie a vetranie",
+    "firingGuide": "Výpal v jednoduchej peci",
+    "makingGuide": "Ako pripraviť glazúru",
+    "sourcesHeading": "Zdroje",
+    "link": "Otvoriť",
+    "opened": "prečítané {date}"
+  },
+  "local": {
+    "heading": "Z vašich miestnych surovín",
+    "leadFreeHeading": "Bezolovnatá verzia",
+    "intro": "Segerov vzorec tradičného receptu, zostavený zo štandardných surovín, ktoré sa predávajú tam, kde nakupujete. Vyberte, kde nakupujete, a zobrazí sa.",
+    "region": "Kde nakupujete suroviny",
+    "proposal": "Vlastné suroviny návrhu",
+    "pick": "Vyberte…",
+    "untested": "Vypočítané, zatiaľ nevyskúšané výpalom.",
+    "testFirst": "Skôr než ju použijete na akýkoľvek výrobok, vypáľte skúšobné doštičky, a povrch, ktorý príde do styku s potravinami, dajte otestovať na vylúhovanie kovov.",
+    "untestedNote": "Vypočítané, zatiaľ nevyskúšané výpalom: pred použitím vypáľte skúšobné doštičky.",
+    "close": "Blíži sa k cieľovému vzorcu.",
+    "fair": "Pomerne sa blíži k cieľovému vzorcu.",
+    "poor": "S týmito surovinami sa k cieľovému vzorcu nedá priblížiť.",
+    "none": "Zo surovín, ktoré sa tam predávajú, sa nedá zostaviť.",
+    "choose": "Vyberte, kde nakupujete suroviny, a uvidíte ju zostavenú zo surovín, ktoré sa tam predávajú."
+  },
+  "atmospheres": {
+    "oxidation": "oxidácia",
+    "reduction": "redukcia",
+    "neutral": "neutrálna atmosféra",
+    "wood": "výpal drevom",
+    "salt": "soľný výpal",
+    "soda": "výpal so sódou"
+  }
+}

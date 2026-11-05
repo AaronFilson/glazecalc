@@ -723,7 +723,8 @@
     "keyPoint": "Bodka: táto glazúra.",
     "keyBright": "Bodkovaná čiara: kde boli Stullove glazúry najlesklejšie.",
     "keyLimits": "Čiarkované čiary a tieňovanie: rozsahy oxidu kremičitého a oxidu hlinitého v sade {name}.",
-    "keyCrazed": "Šrafovanie: kde trhlinkovali."
+    "keyCrazed": "Šrafovanie: kde trhlinkovali.",
+    "note": "Orientácia, nie predpoveď. R. T. Stull (Transactions of the American Ceramic Society, 1912) vypaľoval asi na kužeľ 11 s pevnými tavivami 0,3 K₂O a 0,7 CaO; iné tavivá a výpaly oblasti posúvajú a glazúra, ktorá je matná len preto, že je nedopálená, môže v diagrame aj tak padnúť medzi lesklé. Oblasti sú zakreslené tak, ako ich kreslí Glazy."
   },
   "slurry": {
     "heading": "Relatívna hustota a voda",
@@ -763,7 +764,19 @@
     "saveTarget": "Uložiť hustotu {sg} ako cieľ tohto receptu",
     "targetSaved": "Hustota {sg} je cieľom tohto receptu. Uloží sa s receptom, keď ho uložíte.",
     "targetKept": "Cieľom receptu je hustota {sg}.",
-    "clearTarget": "Zrušiť cieľ"
+    "clearTarget": "Zrušiť cieľ",
+    "drySgEmpty": "Potrebujú ju len suché hmotnosti; voda na pridanie nie. Ak ju poznáte, zadajte ju.",
+    "drySgNeeded": "Zadajte hustotu suchých surovín a uvidíte suchú glazúru vo vedre a vodu pre novú dávku.",
+    "estimate": {
+      "mineral": "Odhad, {sg}, podľa toho, z čoho sa každá surovina skladá: nameranej hustoty jej minerálu. Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "kind": "Odhad, {sg}: živce a íly majú hustotu asi 2,6. Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "glass": "Odhad, {sg}, vypočítaný z oxidov frít (sú to sklá). Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "mixed": "Odhad, {sg}, podľa každej suroviny: nameraná hustota jej minerálu, asi 2,6 pre živce a íly a pri fritách výpočet z ich oxidov. Ak viete presnejšiu hodnotu, zmeňte ho.",
+      "leftOut": "Vynechané, lebo ich hustota nie je známa: {names}.",
+      "none": "Pre tento recept nie je odhad: hustota surovín {names} nie je známa. Ak ju poznáte, zadajte ju.",
+      "was": "Použije sa vaša hodnota. Odhad bol {sg}; ak sa k nemu chcete vrátiť, vymažte pole."
+    },
+    "badSgWater": "Hustota musí byť väčšia ako 1 (hustota vody)."
   },
   "import": {
     "title": "Vloženie receptov",

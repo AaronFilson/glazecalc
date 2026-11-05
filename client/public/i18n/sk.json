@@ -36,7 +36,10 @@
     "confirm": "Schválenie zmeny – Glazecalc",
     "cones": "Tabuľka kužeľov: teploty Ortonových kužeľov a kužeľov SK – Glazecalc",
     "materials": "Štandardné suroviny na glazúry: rozbor a riziká – Glazecalc",
-    "materialInfo": "{name}: oxidový rozbor a riziká – Glazecalc"
+    "materialInfo": "{name}: oxidový rozbor a riziká – Glazecalc",
+    "teachingGlazeCalculation": "Výučba výpočtu glazúr - Glazecalc",
+    "famousGlazes": "Slávne glazúry - Glazecalc",
+    "famousGlaze": "Glazúra {name} - Glazecalc"
   },
   "nav": {
     "skip": "Preskočiť na obsah",
@@ -187,7 +190,10 @@
     "materials": "Suroviny zo štandardnej knižnice Glazecalc, od živcov a ílov po frity a zdroje bóru, každá s oxidovým rozborom, Segerovým vzorcom a rizikami.",
     "materialInfo": "{name}: oxidový rozbor, Segerov vzorec, strata žíhaním a riziká v štandardnej knižnici Glazecalc.",
     "materialInfoLong": "{name} v štandardnej knižnici surovín na glazúry Glazecalc: oxidový rozbor, príspevok k Segerovmu vzorcu, strata žíhaním a riziká.",
-    "imageAlt": "Logo Glazecalc a jeho nadpis, bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov."
+    "imageAlt": "Logo Glazecalc a jeho nadpis, bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov.",
+    "teachingGlazeCalculation": "6 lekcií na výučbu Segerovho vzorca (UMF): suroviny a trojzložkové skúšky, móly, prepočet receptu na vzorec a späť a chyby glazúry, s riešenými príkladmi a pracovnými listami na tlač.",
+    "famousGlazes": "Slávne glazúry z celého sveta: tradičný recept alebo historická analýza každej glazúry, jej Segerov vzorec a verzia zo surovín, ktoré sa predávajú tam, kde ste.",
+    "famousGlaze": "Glazúra {name} ({native}): tradičný recept alebo historická analýza, výpal, Segerov vzorec a zdroje a verzia zo surovín, ktoré sa predávajú tam, kde ste."
   },
   "notices": {
     "dismiss": "Zavrieť",
