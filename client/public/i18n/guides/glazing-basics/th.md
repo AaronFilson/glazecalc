@@ -3,480 +3,480 @@ title: การเคลือบจากหลักพื้นฐาน
 lead: เคลือบทำมาจากอะไร เตาเผาเปลี่ยนเคลือบเป็นแก้วได้อย่างไร และอธิบายทุกคำที่คุณจะพบในสูตรเคลือบ บนถุงวัตถุดิบ หรือในตารางโคน
 ---
 
-## What a glaze is {#what-a-glaze-is lang=en}
+## เคลือบคืออะไร {#what-a-glaze-is}
 
-A **glaze** is a thin coat of glass fused to a pot. Glazy, the open glaze-recipe database, calls it "a glass formula tuned to melt and fuse onto clay at certain temperatures". It goes on as a layer of powder and melts in the kiln into a glassy coat that seals the clay, so the pot is less likely to leak, stain or wear. At the top of the firing the melt also reacts with the clay, often forming a layer between them that locks the glaze on. On earthenware, fired cooler, this layer is thin and the glaze stays mostly on top. On stoneware and porcelain, fired hotter, the layer is thicker and the glaze grips the clay more firmly. The glaze stays glass, though: it does not become part of the clay.
+**เคลือบ**{{en: glaze}}คือชั้นแก้วบางที่หลอมติดกับชิ้นงาน Glazy ฐานข้อมูลสูตรเคลือบแบบเปิด เรียกว่า “สูตรแก้วที่ปรับให้หลอมและติดกับดินที่อุณหภูมิหนึ่ง” เคลือบเริ่มเป็นชั้นผงและหลอมในเตาเผาเป็นชั้นเคลือบคล้ายแก้วที่ปิดผนึกดิน ชิ้นงานจึงรั่ว เปื้อน หรือสึกหรอได้น้อยลง ที่จุดสูงสุดของการเผา เนื้อเคลือบที่หลอมยังทำปฏิกิริยากับดิน มักเกิดเป็นชั้นระหว่างทั้งสองที่ยึดเคลือบไว้ บนเอิร์ทเทนแวร์ซึ่งเผาที่อุณหภูมิต่ำกว่า ชั้นนี้บางและเคลือบส่วนใหญ่อยู่ด้านบน บนสโตนแวร์และพอร์ซเลนซึ่งเผาที่อุณหภูมิสูงกว่า ชั้นนี้หนากว่าและเคลือบยึดดินแน่นกว่า อย่างไรก็ตาม เคลือบยังคงเป็นแก้ว: ไม่ได้กลายเป็นส่วนหนึ่งของดิน
 
-A recipe lists raw materials, such as feldspar, whiting and kaolin. In the kiln, part of each leaves as gas (water or carbon dioxide) and the rest becomes **oxides**: compounds of an element with oxygen, such as silica (SiO₂) or calcium oxide (CaO). The fired glass is made of oxides, so potters describe a glaze by them. Each oxide does one of three jobs.
+สูตรเคลือบระบุวัตถุดิบ เช่น หินฟันม้า{{en: feldspar}} แคลเซียมคาร์บอเนต{{en: whiting}} และดินขาว{{en: kaolin}} ในเตาเผา ส่วนหนึ่งของแต่ละอย่างออกไปเป็นแก๊ส (น้ำหรือคาร์บอนไดออกไซด์) และส่วนที่เหลือกลายเป็น**ออกไซด์**: สารประกอบของธาตุกับออกซิเจน เช่น ซิลิกา (SiO₂) หรือแคลเซียมออกไซด์ (CaO) แก้วที่เผาแล้วประกอบด้วยออกไซด์ ช่างปั้นจึงอธิบายเคลือบด้วยออกไซด์ ออกไซด์แต่ละตัวทำหน้าที่หนึ่งในสามอย่าง
 
-- **Silica** (SiO₂) is the **glass former**: it builds the glass. Pure silica melts above {{3100 °F; 1700 °C}}, far hotter than a pottery kiln, and a glaze high in silica is generally more durable.
-- **Fluxes** lower the melting point to one a kiln can reach. The **alkalis**, written **R₂O**, are the oxides of sodium, potassium and lithium (Na₂O, K₂O, Li₂O); they work from cone 06 up through mid and high fire. The **alkaline earths**, written **RO**, are the oxides of calcium, magnesium, barium and strontium (CaO, MgO, BaO, SrO), with zinc oxide (ZnO) grouped alongside; they work best from cone 5 to cone 10. The R stands for any metal in the family.
-- **Alumina** (Al₂O₃) is the **stabilizer**. It stiffens the melt so it stays on upright walls, and adds hardness and durability. Glazy's warning: with too little alumina "your glaze may run; too much can stiffen the melt into a matte". Alumina comes mostly from clay and feldspar.
+- **ซิลิกา**{{en: silica}} (SiO₂) คือ**สารก่อแก้ว**{{en: glass former}}: สร้างแก้ว ซิลิกาบริสุทธิ์หลอมเหนือ {{3100 °F; 1700 °C}} ร้อนกว่าเตาเผาเครื่องปั้นดินเผามาก และเคลือบที่มีซิลิกาสูงมักทนทานกว่า
+- **สารช่วยหลอม**{{en: flux}}ลดจุดหลอมเหลวให้ถึงระดับที่เตาเผาทำได้ **อัลคาไล** เขียนเป็น **R₂O** คือออกไซด์ของโซเดียม โพแทสเซียม และลิเทียม (Na₂O, K₂O, Li₂O) ใช้ได้ตั้งแต่โคน 06 ขึ้นไปจนถึงไฟกลางและไฟสูง **อัลคาไลน์เอิร์ท** เขียนเป็น **RO** คือออกไซด์ของแคลเซียม แมกนีเซียม แบเรียม และสตรอนเทียม (CaO, MgO, BaO, SrO) โดยมีสังกะสีออกไซด์ (ZnO) จัดอยู่ด้วย ใช้ได้ดีที่สุดตั้งแต่โคน 5 ถึงโคน 10 R หมายถึงโลหะใดก็ได้ในตระกูลนั้น
+- **อลูมินา** (Al₂O₃) คือ**สารให้ความคงตัว**{{en: stabilizer}} ทำให้เนื้อเคลือบที่หลอมหนืดขึ้นจนอยู่บนผนังตั้งตรงได้ และเพิ่มความแข็งและความทนทาน คำเตือนของ Glazy: หากอลูมินาน้อยเกินไป “เคลือบของคุณอาจไหล ถ้ามากเกินไปอาจทำให้เนื้อเคลือบที่หลอมหนืดจนด้าน” อลูมินามาจากดินและหินฟันม้าเป็นส่วนใหญ่
 
-**Boron** (B₂O₃) blurs the line. Chemists class it as a glass former, but at studio temperatures it acts as a flux, and potters treat it as one. It is a main flux at low and mid fire: the cooler the firing, the more boron a glaze needs. At cone 10 it is usually not needed. (Cones, the way potters name a firing, are explained below.)
-
-> [!NOTE]
-> One way to hold it in mind: silica is the glass, the fluxes let it melt at a temperature your kiln can reach, and alumina thickens it so it stays where you put it.
-
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
-
-### Clay bodies
-
-The **clay body** is the clay a pot is made of. There are three main kinds.
-
-- **Earthenware**: a low-fire body, about cone 06–02, that is porous at low cones and denser as it is fired hotter. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white body rich in kaolin, often translucent. Most porcelain is high fire, but there are cone 6 porcelains too.
-
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
-
-### Coatings and drying
-
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
-
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
-
-### The two firings
-
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
-
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
-
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
-
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
-
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
-
-## Cones and heatwork {#cones lang=en}
-
-Potters name a firing by a **cone**: a slender ceramic pyramid that bends when it has had a set amount of heat. Orton, which makes them, calls cones time and temperature (heatwork) indicators: they show the combined effect of time and temperature, not temperature alone.
-
-**Heatwork** is the reason: glaze, clay and cone all respond to how long they are hot as well as how hot. A slow firing bends a cone at a lower temperature, a fast one at a higher. Orton's chart has cone 6 bending at {{2165 °F; 1185 °C}} when the firing ends climbing {{27 °F; 15 °C}} per hour, at {{2232 °F; 1222 °C}} at {{108 °F; 60 °C}} per hour, and at {{2269 °F; 1243 °C}} at {{270 °F; 150 °C}} per hour, the rate taken over the last {{180 °F; 100 °C}}. A cone is done when its tip has bent through 90°. Potters often call this the 5 o'clock position.
-
-Cone numbers run from 022 to 42. A leading zero marks the cooler series, where a bigger number is cooler: cone 06 is cooler than cone 04, and cone 01 cooler than cone 1.
-
-Table: Firing ranges: Orton self-supporting cones at {{108 °F; 60 °C}} per hour
-Label: Firing ranges
-
-| Range     | Cones |          °F |          °C | Used for                   |
-| --------- | ----- | ----------: | ----------: | -------------------------- |
-| Low fire  | 06–04 | 1,828–1,945 |   998–1,063 | Earthenware glazes; bisque |
-| Mid fire  | 5–6   | 2,167–2,232 | 1,186–1,222 | Stoneware and porcelain    |
-| High fire | 9–10  | 2,300–2,345 | 1,260–1,285 | Stoneware and porcelain    |
+**โบรอน** (B₂O₃) ทำให้เส้นแบ่งพร่าเลือน นักเคมีจัดเป็นสารก่อแก้ว แต่ที่อุณหภูมิของสตูดิโอทำหน้าที่เป็นสารช่วยหลอม และช่างปั้นปฏิบัติต่อโบรอนเหมือนเป็นสารช่วยหลอม โบรอนเป็นสารช่วยหลอมหลักที่ไฟต่ำและไฟกลาง: ยิ่งเผาเย็นลง เคลือบยิ่งต้องการโบรอนมากขึ้น ที่โคน 10 โดยปกติไม่จำเป็น (โคน ซึ่งเป็นวิธีที่ช่างปั้นเรียกชื่อการเผา อธิบายไว้ด้านล่าง)
 
 > [!NOTE]
-> Name and program your firings by cone, and treat the temperatures as approximate. A **witness cone** on a shelf among the pots, or a **cone pack** of three (guide, firing and guard cones), shows the heatwork your pots really received.
+> วิธีจำอย่างหนึ่ง: ซิลิกาคือแก้ว สารช่วยหลอมให้แก้วหลอมที่อุณหภูมิที่เตาเผาของคุณทำได้ และอลูมินาทำให้ข้นขึ้นเพื่อให้อยู่ตรงที่คุณวางไว้
 
-Published temperatures vary. Glazy gives high fire, cone 9–11, as about {{2336–2390 °F; 1280–1310 °C}}, which matches Orton's fast column, and Digitalfire gives cone 6 as about {{2200 °F; 1204 °C}}. Our advice: use Orton's medium-rate figures, as this guide does, program by cone, and let a witness cone settle it.
+## ดิน ชั้นเคลือบ และการเผาสองครั้ง {#clay-and-firings}
 
-Outside North America, suppliers often give °C rather than a cone. Hermann Seger developed the modern cone, first used in Berlin in 1886, and the UK has had its own Staffordshire cones; their numbers should not be assumed to match Orton's, and we found no table to convert them. [Firing a basic kiln](/guides/firing) covers cones in more detail.
+### เนื้อดิน
 
-## From recipe to unity formula {#unity-formula lang=en}
+**เนื้อดิน**{{en: clay body}}คือดินที่ใช้ทำชิ้นงาน มีสามชนิดหลัก
 
-A **batch recipe** lists raw materials by weight, usually scaled so the base adds up to 100. **Additives** (colorants, opacifiers and suspenders) go on top of the 100, usually as a percent of the base. To see what the glaze is, potters turn the recipe into a **unity molecular formula** (**UMF**, or **Seger formula**, after Hermann Seger, who first used its three-column layout).
+- **เอิร์ทเทนแวร์**{{en: earthenware}}: เนื้อดินไฟต่ำ ประมาณโคน 06–02 ที่พรุนเมื่อเผาที่โคนต่ำ และแน่นขึ้นเมื่อเผาร้อนขึ้น มักเป็นสีแดงหรือสีเหลืองอ่อน ต้องมีเคลือบจึงจะเก็บน้ำได้
+- **สโตนแวร์**{{en: stoneware}}: เนื้อดินไฟกลางถึงไฟสูง ประมาณโคน 5–10 ที่กลายเป็นเนื้อแก้วหรือเกือบเป็น
+- **พอร์ซเลน**: เนื้อดินสีขาวที่มีดินขาวมาก มักโปร่งแสง พอร์ซเลนส่วนใหญ่เป็นไฟสูง แต่ก็มีพอร์ซเลนโคน 6 ด้วย
 
-Table: From recipe to unity formula: Glazy's worked example
-Label: From recipe to unity formula
+**เนื้อแก้ว** (vitreous) หมายถึงเหมือนแก้วและไม่พรุน **การหลอมตัวเป็นเนื้อแก้ว** (vitrification) คือเนื้อดินกลายเป็นเช่นนั้นขณะเผา ช่างปั้นในสหราชอาณาจักรมักขีดเส้นด้วยอุณหภูมิแทน: สโตนแวร์เผาเหนือ {{2192 °F; 1200 °C}} เอิร์ทเทนแวร์ต่ำกว่านั้น ไฟกลาง โคน 5–6 อยู่คร่อมเส้นนั้นพอดี
 
-| Step              | What happens                                                                                                                 | In the example                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1. Batch recipe   | Raw materials by weight, scaled to 100                                                                                       | Feldspar 40%, among others                                                                                                  |
-| 2. Oxide analysis | Like a nutrition label: each material's oxides are added up as weight percent, and the gases dropped                         | The feldspar is 64.8% silica, so its 40% brings 25.9% SiO₂. The fired glaze is 67.4% SiO₂, 12.6% Al₂O₃, 7.5% K₂O, 12.5% CaO |
-| 3. Moles          | Weights become **moles**, counts of molecules, because "Grams can be misleading because some oxides are heavier than others" | 60.1 g of SiO₂ is one mole, so 67.4 g is about 1.12 moles                                                                   |
-| 4. Unity          | Everything is divided by the total of the fluxes, so the fluxes add up to 1                                                  | The fluxes total 0.303; dividing gives K₂O 0.26, CaO 0.74, Al₂O₃ 0.41, SiO₂ 3.70                                            |
+### ชั้นเคลือบและการทำให้แห้ง
 
-Glazecalc's [recipe page](/recipe) does all four steps as you type, and shows the result in three columns: fluxes (R₂O and RO) adding up to 1; stabilizers (R₂O₃: alumina, with boron often placed here); and glass formers (RO₂: silica). "Unification is just a scaling tool," Glazy says: two recipes made from different materials but with the same unity formula "behave almost identically once fired". So the 1 is a shared yardstick, not an amount you weigh. Digitalfire adds that the method "does not work as well at lower temperatures", where boron is not a plain flux, and that unity formulas are "comparative and best viewed in context". **Compare** lines up two recipes' formulas oxide by oxide.
+**น้ำดิน** คือดินที่แขวนลอยในน้ำ สำหรับหล่อ ต่อชิ้น หรือตกแต่ง **เอนโกบ** คือชั้นเคลือบคล้ายน้ำดิน มักมีสี และมีวัสดุที่ไม่ใช่ดินมากกว่า **สีใต้เคลือบ** คือน้ำดินสีหรือการตกแต่งด้วยออกไซด์ ซึ่งมักปิดทับด้วยเคลือบใส
 
-### The silica to alumina ratio
+ชิ้นงานที่ยังไม่เผาคือ**ชิ้นงานดิบ**{{en: greenware}} (แหล่งข้อมูลไม่ตรงกันว่าคำนี้ครอบคลุมชิ้นงานที่ยังไม่เผาทั้งหมดหรือเฉพาะชิ้นงานแห้ง) เมื่อแห้งลงจะกลายเป็น**ดินหมาด** แข็งแต่ยังชื้นเล็กน้อย เป็นขั้นตอนสำหรับตกแต่งฐานและติดหูจับ แล้วเป็น**แห้งสนิท** ไม่เหลือน้ำอิสระ เปราะมากและพร้อมเผา
 
-The most useful single number is the **silica to alumina ratio**: silica divided by alumina. In the example, 3.70 ÷ 0.41 is about 9.
+### การเผาสองครั้ง
 
-Table: What the silica to alumina ratio suggests (Glazy)
-Label: Silica to alumina ratio
+การเผาครั้งแรกที่อุณหภูมิต่ำกว่าคือ**เผาดิบ**{{en: bisque}} (สหราชอาณาจักร: **biscuit**) โดยปกติโคน 08–04 (ส่วนใหญ่ 06–04) ประมาณ {{1728–1945 °F; 942–1063 °C}} ทำให้ชิ้นงานแข็งแรงแต่ยังพรุน Digitalfire เว็บไซต์อ้างอิงเรื่องเคลือบ แนะนำความพรุนโดยทั่วไปมากกว่า 15% เพื่อให้ชิ้นงานเผาดิบดูดน้ำออกจากเคลือบเมื่อเคลือบ ชิ้นงานเผาดิบแบบอ่อน (โคน 08–06) พรุนกว่า ชิ้นงานเผาดิบแบบแข็ง (มักเป็นโคน 04) ทนกว่าแต่รับเคลือบได้ไม่ง่าย
 
-|   Ratio | Glazy's reading                           |
-| ------: | ----------------------------------------- |
-| About 9 | Suggests a glossy melt, given enough heat |
-|     5–7 | Typical of many stable stoneware glazes   |
-|     3–5 | May be matte or underfired                |
+Table: ชิ้นงานเผาดิบเปลี่ยนการเคลือบอย่างไร (Digitalfire)
+Label: ชิ้นงานเผาดิบเปลี่ยนการเคลือบอย่างไร
 
-Glazy does not say which cone these figures are for. Read them as a rough guide for stoneware glazes, about cone 6–10. Digitalfire says a ratio above about 8 is likely glossy, but a glaze with boron can be glossy at 8 or lower, and a low-fire one even at 6. A ratio of 5–7 predicts neither gloss nor matte on its own: the fluxes, the boron and the cone all move the line. Glazy gives a typical flux balance for stable glazes of 0.2 R₂O with 0.8 RO, up to 0.3 R₂O with 0.7 RO. More alkali makes the melt more fluid and raises its expansion, and so the risk of crazing.
+| ชิ้นงานเผาดิบ                            | สิ่งที่เกิดขึ้น                                          |
+| ---------------------------------------- | -------------------------------------------------------- |
+| เผาไม่สุก ดูดซึมมาก                      | เคลือบจับหนาเกินไป แล้วแตกและหดรวมตัว                    |
+| เผาเกินอุณหภูมิ หนาแน่น                  | การชุบและการทำให้แห้งใช้เวลานานขึ้น                      |
+| เผาร้อนกว่า หรือคงไว้ที่จุดสูงสุดนานกว่า | ตอนนี้แก๊สไหม้ออกมากขึ้น ฟองจึงผุดผ่านเคลือบทีหลังน้อยลง |
 
-### Loss on ignition
+Potclays ผู้จำหน่ายในสหราชอาณาจักร อธิบายการเผา biscuit ที่ประมาณ {{1000 °C; 1832 °F}} ประมาณโคน 06 เมื่ออ่านแหล่งข้อมูลเหล่านี้ร่วมกัน เราแนะนำโคน 06–04 สำหรับการเผาดิบครั้งแรก: {{1828–1945 °F; 998–1063 °C}} ที่อัตราปานกลางของ Orton
 
-**Loss on ignition** (**LOI**) is the weight a material loses in the kiln as water, carbon dioxide, organic matter or sulfur leave as gas. A fired glaze has none, so the unity formula leaves it out.
+**การเผาเคลือบ**{{en: glaze firing}} (ช่างปั้นอังกฤษอาจเรียกการเผา **glost**) หลอมเคลือบ และสำหรับสโตนแวร์ ทำให้ดินสุกตัวด้วย **การเผาครั้งเดียว**{{en: once-firing}}คือการเคลือบชิ้นงานที่ยังไม่เผาและเผาเพียงครั้งเดียว Digitalfire รายงานกรณีการผลิตที่ชิ้นงานเคลือบดิบหดรวมตัวที่ขอบจนกระทั่งการเผาดิบแก้ได้ จึงควรเริ่มด้วยการเผาสองครั้ง [การเผาเตาพื้นฐาน](/guides/firing) ให้โปรแกรมสำหรับทั้งสองแบบ
 
-Table: Typical loss on ignition (Digitalfire)
-Label: Loss on ignition
+## โคนและฮีตเวิร์ก {#cones}
 
-| Material                              | Typical LOI                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Whiting (calcium carbonate), dolomite | Over 40%, mostly carbon dioxide: 100 g of calcium carbonate gives off about 44 g |
-| Lithium carbonate                     | About 60%                                                                        |
-| Barium carbonate, Gerstley Borate     | Over 20%                                                                         |
-| Kaolin                                | About 12–14%, mainly water bound in its crystals                                 |
-| Feldspars                             | Under 1%                                                                         |
+ช่างปั้นเรียกชื่อการเผาด้วย**โคน**{{en: cone}}: พีระมิดเซรามิกเรียวที่โค้งเมื่อได้รับความร้อนในปริมาณที่กำหนด Orton ผู้ผลิตโคน เรียกโคนว่าตัวบ่งชี้เวลาและอุณหภูมิ (ฮีตเวิร์ก): โคนแสดงผลรวมของเวลาและอุณหภูมิ ไม่ใช่อุณหภูมิเพียงอย่างเดียว
 
-Gas that leaves after the glaze starts to melt must bubble through it, causing, in Digitalfire's words, "bubbles, blisters, pinholes, crawling". In a Digitalfire test, talc kept giving off gas until about {{1650 °F; 899 °C}}. Frits, **calcined** materials (heated beforehand to drive their gases off) and changes to the firing all help.
+**ฮีตเวิร์ก**{{en: heatwork}}คือเหตุผล: เคลือบ ดิน และโคนล้วนตอบสนองต่อระยะเวลาที่ร้อนเช่นเดียวกับความร้อนมากน้อย การเผาช้าทำให้โคนโค้งที่อุณหภูมิต่ำกว่า การเผาเร็วทำให้โค้งที่อุณหภูมิสูงกว่า ตารางของ Orton ระบุว่าโคน 6 โค้งที่ {{2165 °F; 1185 °C}} เมื่อการเผาจบด้วยการเพิ่มอุณหภูมิ {{27 °F; 15 °C}} ต่อชั่วโมง ที่ {{2232 °F; 1222 °C}} ที่ {{108 °F; 60 °C}} ต่อชั่วโมง และที่ {{2269 °F; 1243 °C}} ที่ {{270 °F; 150 °C}} ต่อชั่วโมง โดยอัตรานับจาก {{180 °F; 100 °C}} สุดท้าย โคนเสร็จเมื่อปลายโค้งผ่าน 90° ช่างปั้นมักเรียกว่าตำแหน่ง 5 นาฬิกา
 
-Older books do this arithmetic by hand, with **molecular weight** (the weight of one mole of a material or oxide) and **equivalent weight** (the weight of a material that supplies one mole of an oxide). By our arithmetic, about 100 g of whiting supplies one mole, 56 g, of calcium oxide. A calculator handles both.
+เบอร์โคนเรียงจาก 022 ถึง 42 เลขศูนย์นำหน้าบอกชุดที่เย็นกว่า ซึ่งเลขมากกว่าคือเย็นกว่า: โคน 06 เย็นกว่าโคน 04 และโคน 01 เย็นกว่าโคน 1
 
-## Limits and the Stull chart {#stull-chart lang=en}
+Table: ช่วงการเผา: โคนตั้งเองได้ของ Orton ที่ {{108 °F; 60 °C}} ต่อชั่วโมง
+Label: ช่วงการเผา
 
-A **Stull chart** is a map of glazes. It has two axes, both from the unity formula: silica (SiO₂) across the bottom and alumina (Al₂O₃) up the side. Each glaze is one point. The map is split into regions, such as matte, bright (glossy), underfired and crazed. Glazecalc's [recipe page](/recipe) draws your glaze on it.
+| ระดับ  | โคน   |          °F |          °C | ใช้สำหรับ                   |
+| ------ | ----- | ----------: | ----------: | --------------------------- |
+| ไฟต่ำ  | 06–04 | 1,828–1,945 |   998–1,063 | เคลือบเอิร์ทเทนแวร์; เผาดิบ |
+| ไฟกลาง | 5–6   | 2,167–2,232 | 1,186–1,222 | สโตนแวร์และพอร์ซเลน         |
+| ไฟสูง  | 9–10  | 2,300–2,345 | 1,260–1,285 | สโตนแวร์และพอร์ซเลน         |
+
+> [!NOTE]
+> เรียกชื่อและตั้งโปรแกรมการเผาตามโคน และถือว่าอุณหภูมิเป็นค่าประมาณ **โคนอ้างอิง**{{en: witness cone}}บนแผ่นรองเผาท่ามกลางชิ้นงาน หรือ**ชุดโคน**{{en: cone pack}}สามอัน (โคนนำ โคนเผา และโคนเฝ้า) แสดงฮีตเวิร์กที่ชิ้นงานของคุณได้รับจริง
+
+อุณหภูมิที่เผยแพร่แตกต่างกัน Glazy ให้ไฟสูง โคน 9–11 ที่ประมาณ {{2336–2390 °F; 1280–1310 °C}} ซึ่งตรงกับคอลัมน์เร็วของ Orton และ Digitalfire ให้โคน 6 ที่ประมาณ {{2200 °F; 1204 °C}} คำแนะนำของเรา: ใช้ตัวเลขอัตราปานกลางของ Orton อย่างที่คำแนะนำนี้ทำ ตั้งโปรแกรมตามโคน และให้โคนอ้างอิงเป็นผู้ตัดสิน
+
+นอกอเมริกาเหนือ ผู้จำหน่ายมักให้ °C แทนโคน Hermann Seger พัฒนาโคนสมัยใหม่ ใช้ครั้งแรกในเบอร์ลินปี ค.ศ. 1886 และสหราชอาณาจักรมีสตาฟฟอร์ดเชียร์โคนของตัวเอง เบอร์ของโคนเหล่านั้นไม่ควรสันนิษฐานว่าตรงกับของ Orton และเราไม่พบตารางสำหรับแปลง [การเผาเตาพื้นฐาน](/guides/firing) ครอบคลุมโคนโดยละเอียดกว่านี้
+
+## จากสูตรเคลือบสู่สูตรเซเกอร์ {#unity-formula}
+
+**สูตรเคลือบ** (batch recipe) ระบุวัตถุดิบตามน้ำหนัก โดยปกติปรับสเกลให้เคลือบพื้นฐานรวมกันได้ 100 **สารเติมแต่ง** (สารให้สี สารทำให้เคลือบทึบ และสารช่วยแขวนลอย) เพิ่มบนยอด 100 โดยปกติเป็นเปอร์เซ็นต์ของเคลือบพื้นฐาน เพื่อดูว่าเคลือบคืออะไร ช่างปั้นเปลี่ยนสูตรเคลือบเป็น**สูตรเซเกอร์**{{en: unity molecular formula}} (**UMF** หรือ **สูตรของเซเกอร์** ตาม Hermann Seger ผู้ใช้รูปแบบสามคอลัมน์ของสูตรนี้เป็นคนแรก)
+
+Table: จากสูตรเคลือบสู่สูตรเซเกอร์: ตัวอย่างที่ทำจริงของ Glazy
+Label: จากสูตรเคลือบสู่สูตรเซเกอร์
+
+| ขั้น                  | สิ่งที่เกิดขึ้น                                                                                    | ในตัวอย่าง                                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| 1. สูตรเคลือบ         | วัตถุดิบตามน้ำหนัก ปรับสเกลเป็น 100                                                                | หินฟันม้า 40% และวัตถุดิบอื่น                                                                                          |
+| 2. ผลวิเคราะห์ออกไซด์ | เหมือนฉลากโภชนาการ: ออกไซด์ของวัตถุดิบแต่ละอย่างรวมกันเป็นเปอร์เซ็นต์น้ำหนัก และตัดแก๊สออก         | หินฟันม้ามีซิลิกา 64.8% ดังนั้น 40% ของมันให้ SiO₂ 25.9% เคลือบที่เผาแล้วคือ SiO₂ 67.4% Al₂O₃ 12.6% K₂O 7.5% CaO 12.5% |
+| 3. โมล                | น้ำหนักกลายเป็น**โมล** จำนวนโมเลกุล เพราะ “กรัมอาจทำให้เข้าใจผิดเพราะออกไซด์บางตัวหนักกว่าตัวอื่น” | SiO₂ 60.1 g เท่ากับหนึ่งโมล ดังนั้น 67.4 g ประมาณ 1.12 โมล                                                             |
+| 4. เซเกอร์            | ทุกอย่างหารด้วยผลรวมของสารช่วยหลอม สารช่วยหลอมจึงรวมกันได้ 1                                       | สารช่วยหลอมรวม 0.303 เมื่อหารได้ K₂O 0.26 CaO 0.74 Al₂O₃ 0.41 SiO₂ 3.70                                                |
+
+[หน้าสูตรเคลือบ](/recipe)ของ Glazecalc ทำทั้งสี่ขั้นตอนขณะที่คุณพิมพ์ และแสดงผลเป็นสามคอลัมน์: สารช่วยหลอม (R₂O และ RO) รวมกันได้ 1; สารให้ความคงตัว (R₂O₃: อลูมินา โดยมักวางโบรอนไว้ที่นี่); และสารก่อแก้ว (RO₂: ซิลิกา) “การทำให้เป็นหนึ่งเป็นเพียงเครื่องมือปรับสเกล” Glazy ระบุ: สูตรเคลือบสองสูตรที่ทำจากวัตถุดิบต่างกันแต่มีสูตรเซเกอร์เดียวกัน “ทำงานเกือบเหมือนกันเมื่อเผาแล้ว” ดังนั้นเลข 1 เป็นไม้บรรทัดร่วม ไม่ใช่ปริมาณที่คุณชั่ง Digitalfire เสริมว่าวิธีนี้ “ใช้ไม่ได้ผลดีนักที่อุณหภูมิต่ำกว่า” ซึ่งโบรอนไม่ใช่สารช่วยหลอมธรรมดา และสูตรเซเกอร์ “เป็นการเปรียบเทียบและดูได้ดีที่สุดในบริบท” **เปรียบเทียบ**เรียงสูตรเคมีของสูตรเคลือบสองสูตรเทียบกันทีละออกไซด์
+
+### อัตราส่วนซิลิกาต่ออลูมินา
+
+ตัวเลขเดี่ยวที่มีประโยชน์ที่สุดคือ**อัตราส่วนซิลิกาต่ออลูมินา**{{en: silica to alumina ratio}}: ซิลิกาหารด้วยอลูมินา ในตัวอย่าง 3.70 ÷ 0.41 ได้ประมาณ 9
+
+Table: อัตราส่วนซิลิกาต่ออลูมินาบ่งบอกอะไร (Glazy)
+Label: อัตราส่วนซิลิกาต่ออลูมินา
+
+| อัตราส่วน | การอ่านของ Glazy                                   |
+| --------: | -------------------------------------------------- |
+|  ประมาณ 9 | บ่งบอกเนื้อเคลือบที่หลอมเงา เมื่อมีความร้อนเพียงพอ |
+|       5–7 | ทั่วไปของเคลือบสโตนแวร์ที่เสถียรหลายสูตร           |
+|       3–5 | อาจด้านหรือเผาไม่สุก                               |
+
+Glazy ไม่ได้บอกว่าตัวเลขเหล่านี้ใช้กับโคนใด ให้อ่านเป็นแนวทางคร่าว ๆ สำหรับเคลือบสโตนแวร์ ประมาณโคน 6–10 Digitalfire ระบุว่าอัตราส่วนที่สูงกว่าประมาณ 8 มีแนวโน้มเงา แต่เคลือบที่มีโบรอนอาจเงาได้ที่ 8 หรือต่ำกว่า และเคลือบไฟต่ำอาจเงาได้แม้ที่ 6 อัตราส่วน 5–7 ไม่ได้ทำนายความเงาหรือความด้านด้วยตัวเอง: สารช่วยหลอม โบรอน และโคนล้วนเลื่อนเส้นแบ่ง Glazy ให้ความสมดุลของสารช่วยหลอมทั่วไปสำหรับเคลือบเสถียรที่ R₂O 0.2 กับ RO 0.8 ไปจนถึง R₂O 0.3 กับ RO 0.7 อัลคาไลที่มากขึ้นทำให้เนื้อเคลือบที่หลอมไหลง่ายขึ้นและเพิ่มการขยายตัว และจึงเพิ่มความเสี่ยงของการแตกลายงา
+
+### การสูญเสียน้ำหนักจากการเผา
+
+**การสูญเสียน้ำหนักจากการเผา**{{en: loss on ignition}} (**LOI**) คือน้ำหนักที่วัตถุดิบสูญเสียในเตาเผาเมื่อน้ำ คาร์บอนไดออกไซด์ สารอินทรีย์ หรือซัลเฟอร์ออกไปเป็นแก๊ส เคลือบที่เผาแล้วไม่มีสิ่งเหล่านี้ สูตรเซเกอร์จึงตัดออก
+
+Table: การสูญเสียน้ำหนักจากการเผาทั่วไป (Digitalfire)
+Label: การสูญเสียน้ำหนักจากการเผา
+
+| วัตถุดิบ                         | LOI ทั่วไป                                                                            |
+| -------------------------------- | ------------------------------------------------------------------------------------- |
+| แคลเซียมคาร์บอเนต โดโลไมต์       | มากกว่า 40% ส่วนใหญ่เป็นคาร์บอนไดออกไซด์: แคลเซียมคาร์บอเนต 100 g ปล่อยออกประมาณ 44 g |
+| ลิเทียมคาร์บอเนต                 | ประมาณ 60%                                                                            |
+| แบเรียมคาร์บอเนต Gerstley Borate | มากกว่า 20%                                                                           |
+| ดินขาว                           | ประมาณ 12–14% ส่วนใหญ่เป็นน้ำที่จับอยู่ในผลึก                                         |
+| หินฟันม้า                        | น้อยกว่า 1%                                                                           |
+
+แก๊สที่ออกไปหลังจากเคลือบเริ่มหลอมต้องผุดผ่านเคลือบ ทำให้เกิด ตามคำของ Digitalfire “ฟอง ตุ่มพอง รูเข็ม การหดรวมตัว” ในการทดสอบหนึ่งของ Digitalfire ทัลค์ปล่อยแก๊สต่อเนื่องจนถึงประมาณ {{1650 °F; 899 °C}} ฟริต วัตถุดิบ**ผ่านการแคลไซน์** (ให้ความร้อนก่อนเพื่อไล่แก๊สออก) และการเปลี่ยนแปลงการเผา ล้วนช่วยได้
+
+หนังสือรุ่นเก่าทำเลขคณิตนี้ด้วยมือ โดยใช้**น้ำหนักโมเลกุล** (น้ำหนักของหนึ่งโมลของวัตถุดิบหรือออกไซด์) และ**น้ำหนักสมมูล** (น้ำหนักของวัตถุดิบที่ให้ออกไซด์หนึ่งโมล) ตามเลขคณิตของเรา แคลเซียมคาร์บอเนตประมาณ 100 g ให้แคลเซียมออกไซด์หนึ่งโมล คือ 56 g เครื่องคำนวณจัดการทั้งสองอย่าง
+
+## ขีดจำกัดและแผนภูมิสตัลล์ {#stull-chart}
+
+**แผนภูมิสตัลล์**{{en: Stull chart}}คือแผนที่ของเคลือบ มีสองแกน ทั้งสองมาจากสูตรเซเกอร์: ซิลิกา (SiO₂) ตามแนวนอนด้านล่าง และอลูมินา (Al₂O₃) ตามแนวตั้งด้านข้าง เคลือบแต่ละตัวคือจุดหนึ่งจุด แผนที่แบ่งเป็นบริเวณต่าง ๆ เช่น ด้าน เงา เผาไม่สุก และแตกลายงา [หน้าสูตรเคลือบ](/recipe) ของ Glazecalc วาดเคลือบของคุณลงบนแผนภูมินี้
 
 ::stull-chart
 
-R. T. Stull made the chart from tests he published in 1912. He fired them at about cone 11, and every test had the same fluxes: 0.3 potash (K₂O) and 0.7 calcium oxide (CaO). Only the silica and alumina changed. So the chart is true for those glazes at that heat.
+R. T. Stull สร้างแผนภูมินี้จากการทดสอบที่เขาเผยแพร่ในปี 1912 เขาเผาการทดสอบเหล่านั้นที่ประมาณโคน 11 และทุกการทดสอบมีสารช่วยหลอมเหมือนกัน: โพแทช (K₂O) 0.3 และแคลเซียมออกไซด์ (CaO) 0.7 มีเพียงซิลิกาและอลูมินาที่เปลี่ยน ดังนั้นแผนภูมินี้จึงถูกต้องสำหรับเคลือบเหล่านั้นที่ความร้อนนั้น
 
-Your glaze is probably different. Boron, other fluxes and lower cones all move the regions. In 2025 a Ceramics Monthly article tested a cone 6 glaze fluxed with borates and with a lot of iron. The chart placed it as crazed, matte and underfired. In fact it was fully melted, satin and not crazed. The authors say glazes with borates do not plot well on the chart. So use the regions as a guide, not a prediction.
+เคลือบของคุณน่าจะแตกต่างออกไป โบรอน สารช่วยหลอมอื่น และโคนที่ต่ำกว่าล้วนทำให้บริเวณเลื่อนไป ในปี 2025 บทความหนึ่งใน Ceramics Monthly ทดสอบเคลือบโคน 6 ที่ใช้บอเรตเป็นสารช่วยหลอมและมีเหล็กมาก แผนภูมิวางเคลือบนี้ไว้ในบริเวณแตกลายงา ด้าน และเผาไม่สุก แต่ในความเป็นจริงเคลือบหลอมสมบูรณ์ ผิวกึ่งเงา และไม่แตกลายงา ผู้เขียนกล่าวว่าเคลือบที่มีบอเรตวางบนแผนภูมินี้ได้ไม่ดี ดังนั้นให้ใช้บริเวณต่าง ๆ เป็นแนวทาง ไม่ใช่การทำนาย
 
-The **crazed** region is where Stull's own tests crazed, on his clay. It does not tell you how your glaze fits your clay body. Crazing depends on the thermal expansion of both glaze and clay. Glazecalc's expansion figure helps you compare glazes, and a real test decides: the ice-water test in [Glaze fit and defects](/guides/glazing-basics#fit-and-defects).
+บริเวณ**แตกลายงา**คือที่ที่การทดสอบของ Stull เองแตกลายงาบนดินของเขา ไม่ได้บอกว่าเคลือบของคุณเข้ากับเนื้อดินของคุณอย่างไร การแตกลายงาขึ้นอยู่กับการขยายตัวเนื่องจากความร้อนของทั้งเคลือบและดิน ตัวเลขการขยายตัวของ Glazecalc ช่วยให้คุณเปรียบเทียบเคลือบ และการทดสอบจริงเป็นตัวตัดสิน: การทดสอบด้วยน้ำแข็งใน [ความเข้ากันของเคลือบและข้อบกพร่อง](/guides/glazing-basics#fit-and-defects)
 
-**Limit formulas** are a different tool for the same question: ranges of silica, alumina and the fluxes for stable glazes at a cone. [Food safety](/guides/glazing-basics#food-safety) explains them, and why they prove nothing on their own.
+**สูตรขีดจำกัด**{{en: limit formula}}เป็นเครื่องมืออีกแบบสำหรับคำถามเดียวกัน: ช่วงของซิลิกา อลูมินา และสารช่วยหลอมสำหรับเคลือบเสถียรที่โคนหนึ่ง [ความปลอดภัยของอาหาร](/guides/glazing-basics#food-safety) อธิบายสูตรเหล่านี้ และเหตุที่สูตรเหล่านี้ไม่ได้พิสูจน์อะไรด้วยตัวเอง
 
-## Frits and raw materials {#materials lang=en}
+## ฟริตและวัตถุดิบดิบ {#materials}
 
-### Frits
+### ฟริต
 
-A **frit** is glass made in a factory: minerals melted, quenched in water and ground. Fritting makes soluble materials such as borax insoluble, locks toxic oxides such as lead and barium into a stable glass, gives a more consistent material than raw minerals, and drives off gases, so fritted glazes are "much more defect-free" (Digitalfire). Frits also melt early: a soda frit is active at cone 06, while feldspar "is only beginning to soften at cone 6". They cost more, they need clay to stay suspended (Digitalfire's example is 85% frit with 15% clay), and they are "theoretically insoluble, but in practice, they are not".
+**ฟริต**{{en: frit}}คือแก้วที่ทำในโรงงาน: แร่ที่หลอม ชุบน้ำให้เย็นเร็ว และบด การทำเป็นฟริตทำให้วัตถุดิบที่ละลายได้ เช่น บอแรกซ์ ไม่ละลาย ยึดออกไซด์ที่เป็นพิษ เช่น ตะกั่วและแบเรียม ไว้ในแก้วที่เสถียร ให้วัตถุดิบที่สม่ำเสมอกว่าแร่ดิบ และไล่แก๊สออก เคลือบจากฟริตจึง “ปราศจากข้อบกพร่องมากกว่ามาก” (Digitalfire) ฟริตยังหลอมเร็ว: ฟริตโซดาทำงานที่โคน 06 ขณะที่หินฟันม้า “เพิ่งเริ่มอ่อนตัวที่โคน 6” ฟริตมีราคาสูงกว่า ต้องมีดินเพื่อให้แขวนลอยอยู่ (ตัวอย่างของ Digitalfire คือฟริต 85% กับดิน 15%) และ “ตามทฤษฎีไม่ละลาย แต่ในทางปฏิบัติ ไม่เป็นเช่นนั้น”
 
-North American frits go by maker and number: Ferro Frit 3134 (Ferro is now Vibrantz) is among the most used frits in North America. UK recipes more often name generic frits, such as standard borax frit.
+ฟริตของอเมริกาเหนือเรียกตามผู้ผลิตและเบอร์: Ferro Frit 3134 (ตอนนี้ Ferro คือ Vibrantz) เป็นหนึ่งในฟริตที่ใช้มากที่สุดในอเมริกาเหนือ สูตรเคลือบของสหราชอาณาจักรมักระบุฟริตทั่วไป เช่น ฟริตบอแรกซ์มาตรฐาน
 
-### The common raw materials
+### วัตถุดิบดิบทั่วไป
 
-Table: Common glaze materials and what they supply
-Label: Common glaze materials
+Table: วัตถุดิบเคลือบทั่วไปและสิ่งที่ให้
+Label: วัตถุดิบเคลือบทั่วไป
 
-| Material (other names)                            | Supplies               | Notes                                                                                                                                                 |
-| ------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Silica (flint, quartz)                            | SiO₂                   | Use 325 mesh, a very fine grind, in glazes                                                                                                            |
-| Kaolin (UK: china clay)                           | Al₂O₃, SiO₂            | The main alumina source; also helps keep glaze from settling                                                                                          |
-| Ball clay                                         | Al₂O₃, SiO₂            | More plastic than kaolin, with more iron and organic matter                                                                                           |
-| Potash feldspar, soda feldspar, nepheline syenite | K₂O, Na₂O, Al₂O₃, SiO₂ | Fluxes with their own alumina and silica. Nepheline syenite is a strong low- and mid-fire flux. An old recipe's plain "feldspar" may mean any of them |
-| Whiting (calcium carbonate)                       | CaO                    | The main calcium flux; gives off carbon dioxide                                                                                                       |
-| Wollastonite                                      | CaO, SiO₂              | Calcium without the carbon dioxide                                                                                                                    |
-| Dolomite, talc                                    | MgO, with CaO or SiO₂  | Silky matte surfaces; lower expansion                                                                                                                 |
-| Zinc oxide                                        | ZnO                    | Gloss and crystals; too much can cause crawling                                                                                                       |
-| Boron frits, Gerstley Borate, colemanite          | B₂O₃                   | Essential from cone 06 to cone 6; frits are "more consistent and less soluble than raw borates"                                                       |
-| Lithium carbonate                                 | Li₂O                   | Low-expansion flux; expensive, so used sparingly                                                                                                      |
-| Strontium carbonate                               | SrO                    | The less toxic stand-in for barium                                                                                                                    |
-| Barium carbonate                                  | BaO                    | Toxic in raw form; high-barium glazes can leach                                                                                                       |
-| Bentonite                                         | Suspension             | A very fine clay, usually 1–2%, to stop settling. Over 3% can crack the glaze as it dries                                                             |
+| วัตถุดิบ (ชื่ออื่น)                          | ให้                     | หมายเหตุ                                                                                                                                                                           |
+| -------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ซิลิกา (ฟลินต์ ควอตซ์)                       | SiO₂                    | ใช้ 325 เมช ซึ่งเป็นการบดละเอียดมาก ในเคลือบ                                                                                                                                       |
+| ดินขาว (สหราชอาณาจักร: china clay)           | Al₂O₃, SiO₂             | แหล่งอลูมินาหลัก และช่วยให้เคลือบไม่ตกตะกอนด้วย                                                                                                                                    |
+| บอลเคลย์                                     | Al₂O₃, SiO₂             | เหนียวกว่าดินขาว มีเหล็กและสารอินทรีย์มากกว่า                                                                                                                                      |
+| หินฟันม้าโพแทช หินฟันม้าโซดา เนฟีลีนไซอีไนต์ | K₂O, Na₂O, Al₂O₃, SiO₂  | สารช่วยหลอมที่มีอลูมินาและซิลิกาของตัวเอง เนฟีลีนไซอีไนต์เป็นสารช่วยหลอมไฟต่ำและไฟกลางที่แรง คำว่า “หินฟันม้า” เพียงอย่างเดียว ในสูตรเคลือบเก่าอาจหมายถึงอย่างใดอย่างหนึ่งเหล่านี้ |
+| แคลเซียมคาร์บอเนต                            | CaO                     | สารช่วยหลอมแคลเซียมหลัก ปล่อยคาร์บอนไดออกไซด์                                                                                                                                      |
+| วอลลาสโทไนต์                                 | CaO, SiO₂               | แคลเซียมที่ไม่มีคาร์บอนไดออกไซด์                                                                                                                                                   |
+| โดโลไมต์ ทัลค์                               | MgO พร้อม CaO หรือ SiO₂ | พื้นผิวด้านนุ่มเหมือนไหม การขยายตัวต่ำกว่า                                                                                                                                         |
+| สังกะสีออกไซด์                               | ZnO                     | ความเงาและผลึก มากเกินไปอาจทำให้หดรวมตัว                                                                                                                                           |
+| ฟริตโบรอน Gerstley Borate โคลมาไนต์          | B₂O₃                    | จำเป็นตั้งแต่โคน 06 ถึงโคน 6 ฟริต “สม่ำเสมอกว่าและละลายน้อยกว่าบอเรตดิบ”                                                                                                           |
+| ลิเทียมคาร์บอเนต                             | Li₂O                    | สารช่วยหลอมที่ขยายตัวต่ำ ราคาแพง จึงใช้อย่างประหยัด                                                                                                                                |
+| สตรอนเทียมคาร์บอเนต                          | SrO                     | ตัวแทนที่เป็นพิษน้อยกว่าของแบเรียม                                                                                                                                                 |
+| แบเรียมคาร์บอเนต                             | BaO                     | เป็นพิษในรูปดิบ เคลือบที่มีแบเรียมสูงอาจละลายออกได้                                                                                                                                |
+| เบนโทไนต์                                    | การแขวนลอย              | ดินละเอียดมาก โดยปกติ 1–2% เพื่อกันการตกตะกอน มากกว่า 3% อาจทำให้เคลือบแตกขณะแห้ง                                                                                                  |
 
 > [!WARNING]
-> Glaze materials are fine powders. Silica dust harms the lungs without symptoms at first, and some materials, such as barium carbonate and lithium carbonate, are poisonous if swallowed. Handle powders gently, clean up wet, and wear a fitted respirator when working dry. [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety) explain how.
+> วัตถุดิบเคลือบเป็นผงละเอียด ฝุ่นซิลิกาทำร้ายปอดโดยไม่มีอาการในตอนแรก และวัตถุดิบบางอย่าง เช่น แบเรียมคาร์บอเนตและลิเทียมคาร์บอเนต เป็นพิษหากกลืนกิน ใช้ผงอย่างเบามือ ทำความสะอาดแบบเปียก และสวมหน้ากากกรองอนุภาคที่แนบสนิทเมื่อทำงานแบบแห้ง [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing) และ [อย่าให้ครอบครัวได้รับพิษ](/guides/home-safety) อธิบายวิธีทำ
 
-### Regional names
+### ชื่อตามภูมิภาค
 
-- **Kaolin** is **china clay** in the UK. In Australia, Eckalite is one brand of kaolin.
-- **Flint** is an older UK name for silica. UK suppliers still sell **calcined flint** as its own product, so "flint" in a British recipe probably means calcined flint, and in an American one probably ground quartz. Both are sold as sources of silica; check the analysis.
-- **China stone** and **Cornish stone** (Cornwall stone) are the same material, related to feldspar.
-- **Whiting** is calcium carbonate, ground chalk or limestone.
+- **ดินขาว** คือ **china clay** ในสหราชอาณาจักร ในออสเตรเลีย Eckalite เป็นดินขาวยี่ห้อหนึ่ง
+- **ฟลินต์** เป็นชื่อเก่าของสหราชอาณาจักรสำหรับซิลิกา ผู้จำหน่ายในสหราชอาณาจักรยังขาย**ฟลินต์แคลไซน์**เป็นผลิตภัณฑ์แยก ดังนั้น “flint” ในสูตรเคลือบอังกฤษน่าจะหมายถึงฟลินต์แคลไซน์ และในสูตรเคลือบอเมริกันน่าจะหมายถึงควอตซ์บด ทั้งสองจำหน่ายเป็นแหล่งซิลิกา ให้ตรวจผลวิเคราะห์
+- **หินจีน** (china stone) และ**หินคอร์นิช** (Cornwall stone) เป็นวัตถุดิบเดียวกัน เกี่ยวข้องกับหินฟันม้า
+- **แคลเซียมคาร์บอเนต** คือ whiting ได้แก่ชอล์กหรือหินปูนบด
 
 > [!NOTE]
-> Judge a material by the oxides it supplies, not by its name. Glazecalc works that way: you can enter your supplier's analysis on the [Materials page](/material), and **Try modern materials and compare**, **Suggest amounts and compare** and **Match with what I have** all match fired oxides, not names.
+> ตัดสินวัตถุดิบจากออกไซด์ที่ให้ ไม่ใช่จากชื่อ Glazecalc ทำงานแบบนั้น: คุณกรอกผลวิเคราะห์ของผู้จำหน่ายที่[หน้าวัตถุดิบ](/material)ได้ และ **ลองวัตถุดิบสมัยใหม่แล้วเปรียบเทียบ** **แนะนำปริมาณและเปรียบเทียบ** และ **จับคู่กับที่ฉันมี** ล้วนจับคู่ออกไซด์หลังเผา ไม่ใช่ชื่อ
 
-Materials change, too. The US Geological Survey reports that the mines and plant that made Custer feldspar, in South Dakota, suspended operations in November 2023. The original Gerstley Borate mine closed around 1999–2000; Laguna still sells a product under that name, and Gillespie Borate is the main substitute. Sources disagree on whether Gillespie replaces Gerstley Borate pound for pound (its maker and Potclays say yes, Digitalfire and others no), so compare the two in Glazecalc, then test a small batch.
+วัตถุดิบก็เปลี่ยนไปเช่นกัน สำนักงานสำรวจธรณีวิทยาสหรัฐฯ รายงานว่าเหมืองและโรงงานที่ผลิตหินฟันม้า Custer ในรัฐเซาท์ดาโคตา หยุดดำเนินการในเดือนพฤศจิกายน ค.ศ. 2023 เหมืองต้นฉบับของ Gerstley Borate ปิดราวปี ค.ศ. 1999–2000 Laguna ยังจำหน่ายผลิตภัณฑ์ภายใต้ชื่อนั้น และ Gillespie Borate เป็นวัตถุดิบทดแทนหลัก แหล่งข้อมูลไม่ตรงกันว่า Gillespie แทน Gerstley Borate แบบปอนด์ต่อปอนด์ได้หรือไม่ (ผู้ผลิตและ Potclays บอกว่าได้ Digitalfire และรายอื่น บอกว่าไม่ได้) จึงเปรียบเทียบทั้งสองใน Glazecalc แล้วทดสอบแบตช์ขนาดเล็ก
 
-## Colorants and opacifiers {#color lang=en}
+## สารให้สีและสารทำให้เคลือบทึบ {#color}
 
-A **colorant** is a metal oxide or carbonate that colors a glaze; a **stain** is a factory-made colorant, more stable and consistent than raw oxides. Colorants are usually under 5% of the base, many under 1%, and a carbonate is weaker than the matching oxide, because part of it leaves as gas. By our arithmetic, 100 g of cobalt carbonate gives about 63 g of cobalt oxide, and 100 g of the copper carbonate potters buy (basic copper carbonate) about 72 g of copper oxide. So use about 1.4 to 1.6 times as much carbonate as oxide.
+**สารให้สี**{{en: colorant}}คือออกไซด์หรือคาร์บอเนตของโลหะที่ให้สีแก่เคลือบ **สีสะเตน**{{en: stain}}คือสารให้สีที่ทำในโรงงาน เสถียรและสม่ำเสมอกว่าออกไซด์ดิบ สารให้สีโดยปกติน้อยกว่า 5% ของเคลือบพื้นฐาน หลายตัวน้อยกว่า 1% และคาร์บอเนตอ่อนกว่าออกไซด์ที่ตรงกัน เพราะบางส่วนออกไปเป็นแก๊ส ตามการคำนวณของเรา โคบอลต์คาร์บอเนต 100 g ให้โคบอลต์ออกไซด์ประมาณ 63 g และคอปเปอร์คาร์บอเนตที่ช่างปั้นซื้อ (เบสิกคอปเปอร์คาร์บอเนต) 100 g ให้คอปเปอร์ออกไซด์ประมาณ 72 g ดังนั้นใช้คาร์บอเนตประมาณ 1.4 ถึง 1.6 เท่าของออกไซด์
 
-Table: Common colorants, as a percent of the base
-Label: Common colorants
+Table: สารให้สีทั่วไป เป็นเปอร์เซ็นต์ของเคลือบพื้นฐาน
+Label: สารให้สีทั่วไป
 
-| Colorant          | Usual starting amount               | Colors and notes                                                                                                           |
-| ----------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Cobalt            | 0.1–2% (sources disagree)           | Blue, and very strong; toward purple when the base has magnesium                                                           |
-| Iron              | 0.5–10%                             | Browns, tans and reds in oxidation; in reduction, ½–2% gives celadon and 5–10% tenmoku. A flux, so a lot makes a glaze run |
-| Copper            | 1–3%                                | Green or turquoise in oxidation, red in reduction. It can make a glaze leach                                               |
-| Chrome            | Under 0.5% to 2% (sources disagree) | Green; brown if the base has zinc, pink with tin                                                                           |
-| Manganese         | 2–10%                               | Browns and purples                                                                                                         |
-| Rutile            | About 2–5%                          | Mottled, variegated color; rough or matte above about 5%                                                                   |
-| Commercial stains | 2–12%                               | 2–4% for tints, 5–8% for tones, 10–12% for strong colors                                                                   |
+| สารให้สี           | ปริมาณเริ่มต้นที่ใช้ทั่วไป                 | สีและหมายเหตุ                                                                                                                                  |
+| ------------------ | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| โคบอลต์            | 0.1–2% (แหล่งข้อมูลไม่ตรงกัน)              | น้ำเงิน และแรงมาก; ไปทางม่วงเมื่อเคลือบพื้นฐานมีแมกนีเซียม                                                                                     |
+| เหล็ก              | 0.5–10%                                    | น้ำตาล สีแทน และแดงในบรรยากาศออกซิเดชัน; ในบรรยากาศรีดักชัน ½–2% ให้เซลาดอนและ 5–10% ให้เทนโมกุ เป็นสารช่วยหลอม ดังนั้นปริมาณมากทำให้เคลือบไหล |
+| ทองแดง             | 1–3%                                       | เขียวหรือเทอร์ควอยส์ในบรรยากาศออกซิเดชัน แดงในบรรยากาศรีดักชัน อาจทำให้เคลือบละลายออก                                                          |
+| โครม               | ต่ำกว่า 0.5% ถึง 2% (แหล่งข้อมูลไม่ตรงกัน) | เขียว; น้ำตาลหากเคลือบพื้นฐานมีสังกะสี ชมพูเมื่อใช้กับดีบุก                                                                                    |
+| แมงกานีส           | 2–10%                                      | น้ำตาลและม่วง                                                                                                                                  |
+| รูไทล์             | ประมาณ 2–5%                                | สีลายด่างหลากหลาย; หยาบหรือด้านเมื่อเกินประมาณ 5%                                                                                              |
+| สีสะเตนเชิงพาณิชย์ | 2–12%                                      | 2–4% สำหรับสีอ่อน 5–8% สำหรับสีกลาง 10–12% สำหรับสีเข้ม                                                                                        |
 
-Cobalt and chrome amounts are genuinely disputed. Glazy says 0.1% cobalt is enough for a blue; Glendale Community College gives ½–2% or ½–3% depending on the atmosphere; Birdie Boone, in Pottery Making Illustrated, says 3% or less. For chrome, Boone says under 0.5% and Glendale 2–3%. The safe course is to start low and run a **line blend**: a row of test tiles stepping one ingredient from a little to a lot.
+ปริมาณของโคบอลต์และโครมเป็นที่ถกเถียงกันจริง Glazy ระบุว่า 0.1% ของโคบอลต์พอสำหรับสีน้ำเงิน; Glendale Community College ให้ ½–2% หรือ ½–3% ตามบรรยากาศ; Birdie Boone ใน Pottery Making Illustrated ระบุ 3% หรือน้อยกว่า สำหรับโครม Boone ระบุต่ำกว่า 0.5% และ Glendale 2–3% ทางที่ปลอดภัยคือเริ่มจากน้อยและทำ**ชุดทดสอบแบบเส้น**{{en: line blend}}: แถวของแผ่นทดสอบที่เพิ่มส่วนผสมหนึ่งอย่างทีละขั้นจากน้อยไปมาก
 
-The base glaze changes the color. A glossy, transparent base gives the brightest color; satin and matte bases, usually higher in alumina, mute it. Magnesium pushes cobalt toward purple, zinc turns chrome brown, and chrome with tin gives pink.
+เคลือบพื้นฐานเปลี่ยนสี เคลือบพื้นฐานที่เงาและโปร่งใสให้สีสดที่สุด เคลือบกึ่งด้านและด้าน ซึ่งมักมีอลูมินาสูงกว่า ทำให้สีหม่น แมกนีเซียมดันโคบอลต์ไปทางม่วง สังกะสีทำให้โครมเป็นสีน้ำตาล และโครมกับดีบุกให้สีชมพู
 
-### Opacifiers
+### สารทำให้เคลือบทึบ
 
-An **opacifier** makes a glaze **opaque**, hiding the clay; a **transparent** glaze lets it show.
+**สารทำให้เคลือบทึบ**{{en: opacifier}}ทำให้เคลือบ**ทึบ** ซ่อนดิน เคลือบ**โปร่งใส**ให้เห็นดิน
 
-Table: Opacifiers
+Table: สารทำให้เคลือบทึบ
 
-| Opacifier                           | Usual amount              | Notes                                                                                                              |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Zircon (Zircopax, Superpax, Ultrox) | 10–15% for full opacity   | The cheaper choice; the brands are zirconium silicate ground to different sizes, and finer grades are stronger     |
-| Tin oxide                           | About 5–7% (our estimate) | Expensive; weaker at high fire, and Digitalfire reports 4% gave no opacity in a clear cone 10 reduction glaze      |
-| Titanium dioxide                    | About 5% (our estimate)   | Silky, translucent opacity; about 5% can vary the surface, and much more often gives a matte surface with crystals |
+| สารทำให้เคลือบทึบ                     | ปริมาณที่ใช้ทั่วไป            | หมายเหตุ                                                                                                              |
+| ------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| เซอร์คอน (Zircopax, Superpax, Ultrox) | 10–15% สำหรับทึบเต็มที่       | ตัวเลือกที่ถูกกว่า ยี่ห้อเหล่านี้คือเซอร์โคเนียมซิลิเกตที่บดเป็นขนาดต่างกัน และเกรดที่ละเอียดกว่าให้ผลแรงกว่า         |
+| ดีบุกออกไซด์                          | ประมาณ 5–7% (ค่าประมาณของเรา) | ราคาแพง ให้ผลอ่อนลงที่ไฟสูง และ Digitalfire รายงานว่า 4% ไม่ทำให้ทึบเลยในเคลือบใสรีดักชันโคน 10                       |
+| ไทเทเนียมไดออกไซด์                    | ประมาณ 5% (ค่าประมาณของเรา)   | ความทึบแบบโปร่งแสงนุ่มเหมือนไหม; ประมาณ 5% อาจทำให้พื้นผิวแปรผัน และปริมาณที่มากกว่านั้นมากมักให้พื้นผิวด้านที่มีผลึก |
 
-## Glaze fit and defects {#fit-and-defects lang=en}
+## ความเข้ากันของเคลือบและข้อบกพร่อง {#fit-and-defects}
 
-Clay and glaze both grow as they heat and shrink as they cool, each by its own amount: its **thermal expansion**. **Glaze fit** is how well the two match. A good fit leaves the glaze slightly compressed by the clay; Digitalfire says a little compression strengthens ware, while too much can weaken and even crack it.
+ดินและเคลือบต่างขยายตัวเมื่อร้อนและหดตัวเมื่อเย็น แต่ละอย่างในปริมาณของตัวเอง: **การขยายตัวเนื่องจากความร้อน**{{en: thermal expansion}} **ความเข้ากันของเคลือบกับเนื้อดิน**{{en: glaze fit}}คือความตรงกันของทั้งสองอย่าง ความเข้ากันที่ดีทำให้เคลือบถูกดินบีบเล็กน้อย Digitalfire ระบุว่าการบีบเล็กน้อยทำให้ชิ้นงานแข็งแรงขึ้น ขณะที่มากเกินไปอาจทำให้อ่อนแอและแม้แต่แตกได้
 
-### Crazing and shivering
+### เคลือบแตกลายงาและเคลือบหลุดร่อน
 
-**Crazing** is a network of fine cracks. The glaze's expansion is higher than the body's, so on cooling it shrinks more, is stretched and cracks, usually because of too much sodium and potassium (Na₂O, K₂O). It can also appear later, in use, after repeated sudden cooling such as contact with cold liquids. When it is wanted, as in raku, it is called **crackle**. Digitalfire says "95% of the time the solution is to adjust the thermal expansion of the glaze"; slow cooling only delays crazing. Its test: heat the ware to about {{300 °F; 149 °C}}, plunge it into ice water, and rub felt pen over it to show cracks.
+**เคลือบแตกลายงา**{{en: crazing}}คือเครือข่ายของรอยแตกละเอียด การขยายตัวของเคลือบสูงกว่าของเนื้อดิน ดังนั้นเมื่อเย็นลงจึงหดมากกว่า ถูกดึงและแตก โดยปกติเพราะโซเดียมและโพแทสเซียม (Na₂O, K₂O) มากเกินไป อาจปรากฏทีหลังระหว่างใช้งานด้วย หลังจากเย็นลงทันทีซ้ำหลายครั้ง เช่น การสัมผัสของเหลวเย็น เมื่อเป็นที่ต้องการ เช่นในราคุ เรียกว่า**เคลือบแตกรานตั้งใจ** Digitalfire ระบุว่า “95% ของเวลา วิธีแก้คือปรับการขยายตัวเนื่องจากความร้อนของเคลือบ” การทำให้เย็นตัวช้าเพียงแค่ทำให้เคลือบแตกลายงาช้าลง การทดสอบของ Digitalfire: ให้ความร้อนชิ้นงานถึงประมาณ {{300 °F; 149 °C}} จุ่มลงในน้ำแข็ง และถูปากกาสักหลาดทับเพื่อแสดงรอยแตก
 
-Sources differ on the first fix. Glazy suggests adding silica or alumina; Digitalfire answers that extra silica "only dilutes the KNaO" (the sodium and potassium); Linda Bloomfield adds boron or cuts feldspar, one material at a time. Our advice: in the [recipe calculator](/recipe), swap some sodium and potassium for lower-expansion fluxes (boron, lithium, magnesium, calcium), check the change with **Compare**, and confirm with the ice-water test.
+แหล่งข้อมูลต่างกันเรื่องวิธีแก้แรก Glazy แนะนำให้เติมซิลิกาหรืออลูมินา Digitalfire ตอบว่าซิลิกาที่เพิ่ม “เพียงทำให้ KNaO เจือจาง” (โซเดียมและโพแทสเซียม) Linda Bloomfield เพิ่มโบรอนหรือลดหินฟันม้า ทีละวัตถุดิบ คำแนะนำของเรา: ใน[เครื่องคำนวณสูตรเคลือบ](/recipe) ให้สลับโซเดียมและโพแทสเซียมบางส่วนเป็นสารช่วยหลอมที่ขยายตัวต่ำกว่า (โบรอน ลิเทียม แมกนีเซียม แคลเซียม) ตรวจการเปลี่ยนแปลงด้วย **เปรียบเทียบ** และยืนยันด้วยการทดสอบน้ำแข็ง
 
-**Shivering** is the reverse: the glaze's expansion is far lower than the body's, so it is over-compressed and flakes off rims and edges. Digitalfire warns that the flakes can be razor-sharp and could be swallowed, and Glazy calls shivering "even more hazardous than crazing on functional ware". The fix is a higher-expansion glaze or a lower-expansion body.
+**เคลือบหลุดร่อน**{{en: shivering}}คือตรงกันข้าม: การขยายตัวของเคลือบต่ำกว่าของเนื้อดินมาก จึงถูกบีบมากเกินไปและหลุดเป็นเกล็ดจากขอบและมุม Digitalfire เตือนว่าเกล็ดอาจคมเหมือนมีดโกนและอาจถูกกลืนได้ และ Glazy เรียกเคลือบหลุดร่อนว่า “อันตรายกว่าเคลือบแตกลายงาด้วยซ้ำสำหรับภาชนะใช้งาน” วิธีแก้คือเคลือบที่ขยายตัวสูงกว่าหรือเนื้อดินที่ขยายตัวต่ำกว่า
 
 > [!WARNING]
-> Do not use crazed or shivered ware for food or drink. Sources disagree on whether crazed pots can be cleaned well enough (one says a dishwasher will do; another calls crazed functional ware defective), so we take the cautious side.
+> ห้ามใช้ชิ้นงานที่เคลือบแตกลายงาหรือหลุดร่อนกับอาหารหรือเครื่องดื่ม แหล่งข้อมูลไม่ตรงกันว่าทำความสะอาดภาชนะที่แตกลายงาได้ดีพอหรือไม่ (แหล่งหนึ่งบอกว่าเครื่องล้างจานก็พอ อีกแหล่งเรียกภาชนะใช้งานที่แตกลายงาว่าบกพร่อง) เราจึงเลือกด้านที่ระมัดระวัง
 
-### Gloss and matte
+### เงาและด้าน
 
-A **gloss** surface is reflective and smooth, **satin** has a subdued sheen, and **matte** is dull. Gloss needs a fully melted glass. Matte can come from a lot of alumina (a low silica to alumina ratio), from fluxes such as calcium, magnesium, barium or strontium forming tiny crystals as the glaze cools, or from underfiring.
+พื้นผิว**เงา**สะท้อนแสงและเรียบ **กึ่งด้าน**มีความมันนุ่ม และ**ด้าน**หม่น ความเงาต้องการแก้วที่หลอมเต็มที่ ความด้านเกิดได้จากอลูมินามาก (อัตราส่วนซิลิกาต่ออลูมินาต่ำ) จากสารช่วยหลอม เช่น แคลเซียม แมกนีเซียม แบเรียม หรือสตรอนเทียม ที่เกิดผลึกขนาดเล็ก เมื่อเคลือบเย็นลง หรือจากการเผาไม่สุก
 
-### Common defects
+### ข้อบกพร่องทั่วไป
 
-Change one thing at a time, and keep your test tiles.
+เปลี่ยนทีละอย่าง และเก็บแผ่นทดสอบของคุณไว้
 
-Table: Common glaze defects, their usual causes and first fixes
-Label: Common glaze defects
+Table: ข้อบกพร่องของเคลือบทั่วไป สาเหตุที่พบบ่อย และวิธีแก้แรก
+Label: ข้อบกพร่องของเคลือบทั่วไป
 
-| Defect     | Looks like                                     | Common causes                                                                                                                           | First fixes                                                                            |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Crawling   | Glaze pulls back into beads, leaving bare clay | Dusty or greasy bisque; a thick, clay-rich coat that cracked drying; zinc, zircon or tin                                                | Clean the bisque; coat thinner; calcine some of the clay; add a binder such as CMC gum |
-| Pinholing  | Small holes or pits                            | Gas from body or glaze that did not heal over; an underfired or stiff glaze                                                             | Hold at top temperature for about half an hour; coat thinner; less zinc or rutile      |
-| Blistering | Sharp-edged craters                            | Usually overfiring; very thick coats; volatile fluxes above about {{2192 °F; 1200 °C}}                                                  | Fire lower; coat thinner. Sharp edges make functional ware unsafe                      |
-| Running    | Glaze flows onto the shelf                     | Too little alumina; too thick, as where pours overlap; a lot of iron                                                                    | Coat thinner; add alumina; keep glaze well above the foot                              |
-| Dunting    | Cracks in the pot from cooling or heating      | Fast cooling through quartz inversion, {{1063 °F; 573 °C}}, or cristobalite inversion, about {{428 °F; 220 °C}}; uneven walls; poor fit | Fire slowly through both, up and down; even walls                                      |
+| ข้อบกพร่อง             | ลักษณะ                                        | สาเหตุที่พบบ่อย                                                                                                                                      | วิธีแก้แรก                                                                            |
+| ---------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| เคลือบหดรวมตัว         | เคลือบถอยเป็นเม็ด ทิ้งดินเปล่า                | ชิ้นงานเผาดิบมีฝุ่นหรือมีไขมัน; ชั้นเคลือบหนาที่มีดินมากซึ่งแตกตอนแห้ง; สังกะสี เซอร์คอน หรือดีบุก                                                   | ทำความสะอาดชิ้นงานเผาดิบ; เคลือบบางลง; แคลไซน์ดินบางส่วน; เติมสารยึดเกาะ เช่น กาว CMC |
+| รูเข็ม                 | รูหรือหลุมเล็ก                                | แก๊สจากเนื้อดินหรือเคลือบที่ไม่สมานตัว; เคลือบที่เผาไม่สุกหรือหนืด                                                                                   | คงที่อุณหภูมิสูงสุดประมาณครึ่งชั่วโมง; เคลือบบางลง; ลดสังกะสีหรือรูไทล์               |
+| เคลือบพองเป็นตุ่ม      | หลุมขอบคม                                     | มักเผาเกินอุณหภูมิ; ชั้นเคลือบหนามาก; สารช่วยหลอมที่ระเหยได้เมื่อเกินประมาณ {{2192 °F; 1200 °C}}                                                     | เผาให้ต่ำลง; เคลือบบางลง ขอบคมทำให้ภาชนะใช้งานไม่ปลอดภัย                              |
+| เคลือบไหล              | เคลือบไหลลงบนแผ่นรองเผา                       | อลูมินาน้อยเกินไป; หนาเกินไป เช่น ที่การเทซ้อนกัน; เหล็กมาก                                                                                          | เคลือบบางลง; เพิ่มอลูมินา; ให้เคลือบอยู่สูงกว่าฐานมาก                                 |
+| ชิ้นงานร้าวจากความร้อน | รอยแตกในชิ้นงานจากการเย็นลงหรือการให้ความร้อน | เย็นเร็วผ่านการเปลี่ยนรูปของควอตซ์ {{1063 °F; 573 °C}} หรือการเปลี่ยนรูปของคริสโตบาไลต์ ประมาณ {{428 °F; 220 °C}}; ผนังไม่สม่ำเสมอ; ความเข้ากันไม่ดี | เผาช้าผ่านทั้งสองช่วง ทั้งขึ้นและลง; ผนังสม่ำเสมอ                                     |
 
-## Food safety {#food-safety lang=en}
+## ความปลอดภัยของอาหาร {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**การละลายออก**{{en: leaching}}คือโลหะละลายออกจากเคลือบที่เผาแล้วสู่อาหารหรือเครื่องดื่ม และเคลือบอาจดูสมบูรณ์แบบแต่ก็ยังเป็นเช่นนั้นได้ การทดสอบตามกฎหมายแช่ชิ้นงานที่เผาแล้วในสารละลายกรดและวัดตะกั่วและแคดเมียมที่ออกมา
 
-### Lead-free is not the same as food-safe
+### ปราศจากตะกั่วไม่เหมือนกับปลอดภัยสำหรับอาหาร
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+กฎในสหรัฐอเมริกา EU สหราชอาณาจักร และออสเตรเลียจำกัดตะกั่วและแคดเมียมที่ชิ้นงานที่เผาแล้วปล่อยออกมา ไม่ใช่สิ่งที่เคลือบมีอยู่ “ปราศจากตะกั่ว” กำจัดอันตรายหนึ่งอย่าง ไม่ใช่การจัดระดับความปลอดภัยของอาหาร ออกไซด์อื่นก็ละลายออกได้เช่นกัน: Glazy เตือนว่าเคลือบที่มีแบเรียมสูง “อาจละลายออกและโดยทั่วไปไม่ปลอดภัยสำหรับอาหาร” Digitalfire ระบุว่าทองแดง “อาจทำให้เคลือบละลายออกได้ ให้ทดสอบ” และ Glazy ไม่แนะนำเคลือบตะกั่วสำหรับภาชนะใช้งานอีกต่อไป
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**เคลือบด้านใน**{{en: liner glaze}}คือเคลือบที่เสถียร โดยปกติใสหรือขาว สำหรับพื้นผิวที่สัมผัสอาหาร ในมุมมองของเรา เคลือบที่ไม่มีสารให้สี แบเรียม ตะกั่ว หรือลิเทียม ที่หลอมเต็มที่ ไม่แตกลายงา และทนการสึกหรอ เป็นทางเลือกที่ความเสี่ยงต่ำกว่า ความเสี่ยงที่ต่ำกว่าไม่ใช่การพิสูจน์
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**สูตรขีดจำกัด**{{en: limit formula}} (Digitalfire ชอบ**สูตรเป้าหมาย**) ให้ช่วงสูตรเซเกอร์ทั่วไปสำหรับเคลือบที่เสถียรที่โคนหนึ่ง: เป้าหมายโคน 6 ของ Digitalfire กำหนดอลูมินาที่ 0.285–0.64 และซิลิกาที่ 2.4–4.7 ช่วยนำทางไปสู่เคมีที่ดีแต่ไม่พิสูจน์อะไร Digitalfire หลีกเลี่ยงคำว่า “ขีดจำกัด” เพราะบ่งบอกว่าเคลือบที่อยู่ในช่วง “ปลอดภัยไปโดยปริยาย” เครื่องมือของ Glazecalc สำหรับเปลี่ยนสูตรเคลือบจะบอกเมื่อสูตรใหม่เกินขีดจำกัดที่แนะนำ เช่น โบรอนมากที่โคน 6 และเคลือบน่าจะเป็นอย่างไร
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
+ขีดจำกัดทางกฎหมายต่างกันตามประเทศ ตารางแสดงของที่ที่คุณอยู่ ในหน่วยของกฎหมายเอง เลือกประเทศหรือภูมิภาคอื่นเพื่อเปรียบเทียบ
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits for ceramic ware in Directive 84/500/EEC, and the UK keeps the same figures in its own law. A 2024 decision of the Benelux countries sets much lower limits for ceramic ware. The Netherlands applied them from 29 May 2026: about 130 to 150 times less lead and about 14 to 18 times less cadmium than the EU figures. Ware that met the old rules and was first sold before 1 December 2026 may be sold until stocks run out. Testing labs report that Luxembourg applies the same limits from 29 May 2026, and that Belgium adopted them in a royal decree of 19 July 2026; we have not read those texts ourselves. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+ในสหรัฐอเมริกา เครื่องเซรามิกตกแต่งที่ดูเหมือนใช้กับอาหารได้ จะถูกถือเป็นภาชนะสำหรับอาหาร เว้นแต่จะมีป้ายสติกเกอร์ และข้อความถาวรที่ปั๊มหรือเผาติดบนฐาน เช่น “Not for Food Use. May Poison Food” (ไม่ใช้กับอาหาร อาจทำให้อาหารเป็นพิษ) หรือมีรูทะลุพื้นผิวที่สัมผัสอาหาร EU กำหนดขีดจำกัดตะกั่วและแคดเมียมสำหรับเครื่องเซรามิกในข้อกำหนด EU 84/500/EEC และสหราชอาณาจักรรักษาตัวเลขเดียวกันในกฎหมายของตนเอง คำวินิจฉัยปี 2024 ของประเทศกลุ่มเบเนลักซ์กำหนดขีดจำกัดที่ต่ำกว่ามากสำหรับเครื่องเซรามิก เนเธอร์แลนด์ใช้ขีดจำกัดนี้ตั้งแต่ 29 พฤษภาคม ค.ศ. 2026: ตะกั่วน้อยกว่าตัวเลขของ EU ประมาณ 130 ถึง 150 เท่า และแคดเมียมน้อยกว่าประมาณ 14 ถึง 18 เท่า ชิ้นงานที่เป็นไปตามกฎเดิมและวางขายครั้งแรกก่อน 1 ธันวาคม ค.ศ. 2026 ขายต่อได้จนกว่าสินค้าจะหมด ห้องปฏิบัติการทดสอบรายงานว่าลักเซมเบิร์กใช้ขีดจำกัดเดียวกันตั้งแต่ 29 พฤษภาคม ค.ศ. 2026 และเบลเยียมรับขีดจำกัดนี้ในพระราชกฤษฎีกาลงวันที่ 19 กรกฎาคม ค.ศ. 2026 เรายังไม่ได้อ่านเอกสารเหล่านั้นด้วยตนเอง ออสเตรเลียกำหนดขีดจำกัดสำหรับชิ้นงานนำเข้า เราไม่พบขีดจำกัดทางการสำหรับชิ้นงานที่ผลิตในออสเตรเลียหรือนิวซีแลนด์
 
-### Testing
+### การทดสอบ
 
-The FDA says home swab kits can show leachable lead, but studies show these kits are often wrong on glazed ware: they can show lead that is not there, and they can miss lead that leaches. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
-
-> [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
-
-## Specific gravity and application {#application lang=en}
-
-### Specific gravity
-
-Glaze powder mixed with water is a **slurry**. Its **specific gravity** (**SG**) is its weight compared with the same volume of water, which has an SG of 1.0: the higher it is, the more powder in the bucket. Glazy calls 1.4–1.5 "a good starting point for most glazes". To measure it, weigh exactly 100 mL of slurry (Glazy suggests a syringe) and divide by 100: 145 g means SG 1.45. Hydrometers are unreliable in gelled glazes, and water evaporates, so check again before you glaze.
-
-Targets differ by source. Digitalfire puts dipping glazes at 1.40–1.50 and commercial brushing glazes at 1.25–1.55, while Potclays gives 1.71–1.81 for brushing and 1.71 for spraying. Our advice: dip at about 1.45 with the glaze slightly gelled, follow the label for a brushing glaze, and write down what works.
-
-A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slightly, making it **thixotropic**: it flows when stirred and sets when still, for "even, drip-free glaze coverage". A **deflocculant** (sodium silicate or Darvan) thins it. [How to make a glaze](/guides/making-a-glaze) covers mixing and adjusting.
-
-### Putting glaze on
-
-Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
-
-- **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
-- **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.
-- **Brushing** glazes contain a gum such as **CMC gum**, which helps the glaze flow and stick, then burns away. Most need several coats, often two or three; follow the label.
-- **Spraying** uses a much thinner glaze, put on in "several thin coatings, gradually building up the thickness".
+FDA ระบุว่าชุดตรวจแบบป้ายที่บ้านแสดงตะกั่วที่ละลายออกได้ แต่การศึกษาแสดงว่าชุดตรวจเหล่านี้มักผิดพลาดกับชิ้นงานเคลือบ: อาจแสดงตะกั่วที่ไม่มีอยู่จริง และอาจพลาดตะกั่วที่ละลายออกมา ถือผลบวกเป็นเหตุผลให้หยุดใช้ชิ้นงาน และผลลบไม่พิสูจน์อะไร การทดสอบการละลายออกของโลหะในห้องปฏิบัติการกับชิ้นงานที่เผาแล้ว (ASTM C738 ในสหรัฐอเมริกา; EN 1388 หรือ ISO 6486 ในยุโรป) คือคำตอบที่แท้จริง
 
 > [!WARNING]
-> Spray only in a ventilated spray booth, wearing a properly fitted respirator. See [Safe mixing and ventilation](/guides/safe-mixing).
+> “ปลอดภัยสำหรับอาหาร”{{en: food safe}} หมายความว่าเคลือบนี้ บนดินนี้ เผาถึงโคนนี้ ในเตาเผานี้ และเคลือบด้วยวิธีนี้ ปล่อยน้อยกว่าขีดจำกัดทางกฎหมาย Glazecalc ช่วยคุณสร้างเคลือบที่เสถียรได้ และ **แทนที่ตะกั่ว** สร้างสูตรเคลือบตะกั่วเก่าขึ้นใหม่โดยไม่มีตะกั่วได้ แต่ไม่มีเครื่องคำนวณใดรับรองชิ้นงานได้ มีเพียงการทดสอบชิ้นงานที่เผาแล้วเท่านั้นที่ทำได้
 
-Too thick a coat can crawl, blister or run. Suppliers' rules of thumb run from the thickness of a credit card to that of a US dime, by our estimate about 1 mm of dry glaze; test tiles at a few thicknesses are the reliable check. **Wax resist** on the foot repels glaze, so the pot cannot stick to the shelf, and **kiln wash**, a heat-resisting coating often of kaolin and silica, protects shelves from drips.
+## ความถ่วงจำเพาะและการเคลือบ {#application}
 
-## Oxidation and reduction {#atmosphere lang=en}
+### ความถ่วงจำเพาะ
 
-The gases in the kiln, its **atmosphere**, change how glazes come out. **Oxidation** means plenty of oxygen. "Electric kilns are synonymous with oxidation firing," Digitalfire says, and oxidation glazes are typically brighter than reduction ones, especially at lower temperatures. In oxidation, copper gives greens and turquoise, and iron browns, tans and reds. A poorly vented electric kiln full of ware giving off gases can run more neutral than intended; a vent connected directly to the kiln helps.
+ผงเคลือบที่ผสมน้ำคือ**น้ำเคลือบ**{{en: slurry}} **ความถ่วงจำเพาะ**{{en: specific gravity}} (**SG**) คือน้ำหนักเทียบกับน้ำปริมาตรเท่ากัน ซึ่งมีความถ่วงจำเพาะ 1.0: ยิ่งสูง ยิ่งมีผงในถังมาก Glazy เรียก 1.4–1.5 ว่า “จุดเริ่มต้นที่ดีสำหรับเคลือบส่วนใหญ่” หากต้องการวัด ให้ชั่งน้ำเคลือบ 100 mL พอดี (Glazy แนะนำกระบอกฉีดยา) แล้วหารด้วย 100: 145 g หมายถึงความถ่วงจำเพาะ 1.45 ไฮโดรมิเตอร์ใช้ไม่ได้ผลในเคลือบที่จับเป็นเจล และน้ำระเหย จึงตรวจอีกครั้งก่อนเคลือบ
 
-**Reduction** deliberately restricts the oxygen, usually in a gas, wood or specialized kiln. Copper turns red, and iron becomes a stronger flux and gives **celadon** (blue-green to gray-green, from about ½–2% iron) and **tenmoku** (temmoku: brown-black, about 5–10% iron). Glazy says celadons and copper reds "rely on reduction". The clay changes too: in one Digitalfire comparison, a stoneware body fired gray in reduction and yellowish in oxidation. Silicon carbide in a glaze can make small areas of reduction even in an electric kiln. For reduction from cone 010 to cone 3, Orton recommends its iron-free cones.
+เป้าหมายต่างกันตามแหล่งข้อมูล Digitalfire กำหนดเคลือบสำหรับชุบที่ 1.40–1.50 และเคลือบสำหรับทาเชิงพาณิชย์ที่ 1.25–1.55 ขณะที่ Potclays ให้ 1.71–1.81 สำหรับการทาและ 1.71 สำหรับการพ่น คำแนะนำของเรา: ชุบที่ประมาณ 1.45 โดยให้เคลือบจับเป็นเจลเล็กน้อย ทำตามฉลากสำหรับเคลือบทา และจดสิ่งที่ได้ผล
+
+**สารทำให้จับกลุ่ม**{{en: flocculant}} (เกลือเอปซัม น้ำส้มสายชู หรือแคลเซียมคลอไรด์) ทำให้น้ำเคลือบจับเป็นเจลเล็กน้อย ทำให้เป็น**ไทโซโทรปี**{{en: thixotropy}}: ไหลเมื่อคน และเซ็ตตัวเมื่อนิ่ง สำหรับ “การเคลือบที่สม่ำเสมอและไม่หยด” **สารช่วยกระจายตัว**{{en: deflocculant}} (โซเดียมซิลิเกตหรือ Darvan) ทำให้เหลวลง [วิธีทำเคลือบ](/guides/making-a-glaze) ครอบคลุมการผสมและการปรับ
+
+### การเคลือบ
+
+ทำความสะอาดฝุ่นและไขมันออกจากชิ้นงานเผาดิบก่อนด้วยฟองน้ำที่เปียกเพียงเล็กน้อย แทนการล้าง ซึ่งทำให้ชิ้นงานอิ่มน้ำ อย่าเป่าฝุ่นออกด้วยลมอัดหรือปัดแบบแห้ง: ทำให้ฝุ่นซิลิกาลอยในอากาศ ([การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing#cleaning))
+
+- **การชุบ** “โดยทั่วไปให้ชั้นเคลือบหนาสม่ำเสมอ” (Robin Hopper) เวลาชุบกำหนดความหนา: Digitalfire ระบุว่าเคลือบสำหรับชุบเชิงพาณิชย์ทำที่ประมาณ 1.4 สำหรับการชุบ 5 วินาที และ 1.5 สำหรับการชุบ 1 วินาที
+- **การเท** เคลือบควรเป็น “บางกว่าตอนใช้ชุบเล็กน้อย”; ตรงที่การเทซ้อนกัน ชั้นเคลือบหนาเป็นสองเท่าและอาจไหล
+- เคลือบสำหรับ**การทา**มีกัม เช่น **กาว CMC** ซึ่งช่วยให้เคลือบไหลและติด แล้วไหม้หมดไป ส่วนใหญ่ต้องทาหลายชั้น มักสองหรือสามชั้น ทำตามฉลาก
+- **การพ่น**ใช้เคลือบที่บางกว่ามาก พ่น “เป็นชั้นบางหลายชั้น เพิ่มความหนาทีละน้อย”
+
+> [!WARNING]
+> พ่นเฉพาะในห้องพ่นเคลือบที่มีการระบายอากาศ โดยสวมหน้ากากกรองอนุภาคที่แนบสนิทอย่างถูกต้อง ดู [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing)
+
+ชั้นเคลือบที่หนาเกินไปอาจหดรวมตัว พองเป็นตุ่ม หรือไหล หลักปฏิบัติของผู้จำหน่ายอยู่ระหว่างความหนาของบัตรเครดิตถึงเหรียญไดม์ของสหรัฐอเมริกา ซึ่งตามค่าประมาณของเราคือเคลือบแห้งประมาณ 1 mm แผ่นทดสอบที่ความหนาไม่กี่ระดับเป็นการตรวจที่เชื่อถือได้ **ขี้ผึ้งกันเคลือบ**{{en: wax resist}}ที่ฐานผลักเคลือบ ชิ้นงานจึงติดแผ่นรองเผาไม่ได้ และ**สารเคลือบแผ่นรองเผา**{{en: kiln wash}} ซึ่งเป็นสารเคลือบทนความร้อนที่มักทำจากดินขาวและซิลิกา ปกป้องแผ่นรองเผาจากเคลือบหยด
+
+## ออกซิเดชันและรีดักชัน {#atmosphere}
+
+แก๊สในเตาเผา หรือ**บรรยากาศ**ในเตา เปลี่ยนผลของเคลือบ **ออกซิเดชัน**{{en: oxidation}}หมายถึงมีออกซิเจนมาก “เตาเผาไฟฟ้ามีความหมายเดียวกับการเผาแบบออกซิเดชัน” Digitalfire ระบุ และเคลือบออกซิเดชันโดยปกติสดกว่าเคลือบรีดักชัน โดยเฉพาะที่อุณหภูมิต่ำกว่า ในบรรยากาศออกซิเดชัน ทองแดงให้สีเขียวและเทอร์ควอยส์ และเหล็กให้สีน้ำตาล สีแทน และแดง เตาเผาไฟฟ้าที่ระบายอากาศไม่ดีและเต็มไปด้วยชิ้นงานที่ปล่อยแก๊สอาจเป็นกลางกว่าที่ตั้งใจ ระบบระบายอากาศที่ต่อตรงกับเตาเผาช่วยได้
+
+**รีดักชัน**{{en: reduction}}จำกัดออกซิเจนโดยตั้งใจ โดยปกติในเตาเผาแก๊ส ฟืน หรือแบบพิเศษ ทองแดงเปลี่ยนเป็นสีแดง และเหล็กกลายเป็นสารช่วยหลอมที่แรงขึ้นและให้**เซลาดอน** (เขียวอมน้ำเงินถึงเขียวอมเทา จากเหล็กประมาณ ½–2%) และ**เทนโมกุ** (temmoku: น้ำตาลอมดำ เหล็กประมาณ 5–10%) Glazy ระบุว่าเซลาดอนและสีแดงจากทองแดง “พึ่งพารีดักชัน” ดินก็เปลี่ยนด้วย: ในการเปรียบเทียบหนึ่งของ Digitalfire เนื้อสโตนแวร์เผาแล้วเป็นสีเทาในรีดักชันและออกเหลืองในออกซิเดชัน ซิลิคอนคาร์ไบด์ในเคลือบทำให้เกิดรีดักชันเฉพาะจุดเล็กได้แม้ในเตาเผาไฟฟ้า สำหรับรีดักชันตั้งแต่โคน 010 ถึงโคน 3 Orton แนะนำโคนปราศจากเหล็กของตน
 
 > [!NOTE]
-> Expect a recipe written for a gas reduction kiln to come out differently in an electric kiln: a celadon or copper red that relies on reduction will not look the same in oxidation. Check which atmosphere a recipe was made for, and note your own, with the cone, in the recipe's notes in Glazecalc.
+> คาดว่าสูตรเคลือบที่เขียนสำหรับเตาเผาแก๊สรีดักชันจะออกมาต่างกันในเตาเผาไฟฟ้า: เซลาดอนหรือสีแดงจากทองแดงที่พึ่งพารีดักชันจะดูไม่เหมือนกันในออกซิเดชัน ตรวจว่าสูตรเคลือบทำขึ้นสำหรับบรรยากาศแบบใด และจดบรรยากาศของคุณ พร้อมโคน ในหมายเหตุของสูตรเคลือบใน Glazecalc
 
-Every kiln, electric ones included, gives off fumes, so vent it. [Safe mixing and ventilation](/guides/safe-mixing) explains how.
+เตาเผาทุกเตา รวมถึงเตาเผาไฟฟ้า ปล่อยควัน จึงให้ระบายควันออก [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing) อธิบายวิธีทำ
 
-## Glossary {#glossary lang=en}
+## อภิธานศัพท์ {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+สารเติมแต่ง (Additive)
+: สารให้สี สารทำให้เคลือบทึบ หรือสารช่วยแขวนลอยที่เติมบนยอด 100 ของสูตรเคลือบ
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+อลูมินา (Al₂O₃)
+: สารให้ความคงตัวหลัก: หยุดการไหลและเพิ่มความแข็ง มาจากดินและหินฟันม้า
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+บอลเคลย์ (Ball clay)
+: ดินเหนียวที่มีเหล็กและสารอินทรีย์มากกว่าดินขาว
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+สูตรเคลือบ (Batch recipe)
+: วัตถุดิบดิบของเคลือบตามน้ำหนัก โดยปกติรวมกันได้ 100
 
-Bentonite
-: A very fine clay added at about 1–2% to keep glaze from settling. Over 3% can crack the glaze as it dries.
+เบนโทไนต์
+: ดินละเอียดมากที่เติมประมาณ 1–2% เพื่อกันเคลือบตกตะกอน มากกว่า 3% อาจทำให้เคลือบแตกขณะแห้ง
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+เผาดิบ (Bisque; สหราชอาณาจักร: biscuit)
+: การเผาครั้งแรกที่อุณหภูมิต่ำกว่า โดยปกติโคน 08–04 (ส่วนใหญ่ 06–04) ทำให้ชิ้นงานแข็งแรงแต่ยังพรุน
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+โบรอน (B₂O₃)
+: ตามทางการเป็นสารก่อแก้ว แต่ใช้เป็นสารช่วยหลอม จำเป็นตั้งแต่โคน 06 ถึงโคน 6
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+กาว CMC
+: กัมเซลลูโลสที่ช่วยให้เคลือบทาได้และติด ไหม้หมดไป
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+สารให้สีและสีสะเตน (Colorant and stain)
+: ออกไซด์หรือคาร์บอเนตของโลหะที่ให้สีแก่เคลือบ สีสะเตนคือสารให้สีที่ทำในโรงงานและเสถียรกว่า
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+โคน (Cone)
+: พีระมิดเซรามิกที่ปรับเทียบแล้วซึ่งโค้งที่ฮีตเวิร์กที่กำหนด โคนอ้างอิงแสดงสิ่งที่ชิ้นงานได้รับ
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+เคลือบหดรวมตัว (Crawling)
+: เคลือบถอยเป็นเม็ดระหว่างการเผา ทิ้งดินเปล่า
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+เคลือบแตกลายงา (Crazing)
+: รอยแตกละเอียดในเคลือบที่หดมากกว่าเนื้อดิน; เคลือบแตกรานตั้งใจเมื่อต้องการ
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+ดีวิตริฟิเคชัน (Devitrification)
+: ผลึกที่เติบโตออกจากแก้วในช่วงต้นของการเย็นตัว ในที่ที่ไม่ต้องการ
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+ชิ้นงานร้าวจากความร้อน (Dunting)
+: รอยแตกในชิ้นงานจากความเครียดของการเย็นลงหรือการให้ความร้อน มักที่การเปลี่ยนรูปของควอตซ์ {{1063 °F; 573 °C}}
 
-Earthenware
-: A low-fire body (about cone 06–02), porous at low cones and denser when fired hotter.
+เอิร์ทเทนแวร์ (Earthenware)
+: เนื้อดินไฟต่ำ (ประมาณโคน 06–02) ที่พรุนเมื่อเผาที่โคนต่ำ และแน่นขึ้นเมื่อเผาร้อนขึ้น
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+หินฟันม้า (Feldspar)
+: แร่ที่ให้สารช่วยหลอมอัลคาไลพร้อมอลูมินาและซิลิกา: โพแทช โซดา หรือเนฟีลีนไซอีไนต์
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+สารทำให้จับกลุ่มและสารช่วยกระจายตัว (Flocculant and deflocculant)
+: สารเติมแต่งที่ทำให้น้ำเคลือบจับเป็นเจล (เกลือเอปซัม น้ำส้มสายชู) หรือทำให้เหลวลง (โซเดียมซิลิเกต Darvan)
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+สารช่วยหลอม (Flux)
+: ออกไซด์ที่ลดอุณหภูมิหลอมเหลวของซิลิกา
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+ปลอดภัยสำหรับอาหาร (Food safe)
+: ตามกฎหมาย ปล่อยตะกั่วและแคดเมียมน้อยกว่าขีดจำกัดในการทดสอบด้วยกรด ไม่เหมือนกับปราศจากตะกั่ว
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+ฟริต (Frit)
+: แก้วที่ทำในโรงงาน หลอม ชุบน้ำให้เย็นเร็ว และบด ซึ่งทำให้ออกไซด์ที่ละลายได้หรือเป็นพิษไม่ละลาย
 
-Glass former
-: The oxide that builds the glass, usually silica.
+สารก่อแก้ว (Glass former)
+: ออกไซด์ที่สร้างแก้ว โดยปกติคือซิลิกา
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+เคลือบ (Glaze)
+: ชั้นแก้วที่หลอมในการเผาเพื่อปิดผนึกและตกแต่งชิ้นงาน
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+เผาเคลือบ (Glaze firing; สหราชอาณาจักร: glost firing)
+: การเผาที่หลอมเคลือบ
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+ความเข้ากันของเคลือบกับเนื้อดิน (Glaze fit)
+: การขยายตัวของเคลือบและเนื้อดินตรงกันเพียงใด ความเข้ากันที่ดีทำให้เคลือบถูกบีบเล็กน้อย
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+เงา กึ่งด้าน และด้าน (Gloss, satin and matte)
+: สะท้อนแสงและเรียบ; ความมันนุ่ม; หม่น
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+ชิ้นงานดิบ (Greenware)
+: ชิ้นงานที่ยังไม่เผา: ดินหมาดเมื่อแข็งแต่ยังชื้น แห้งสนิทเมื่อไม่เหลือน้ำอิสระ
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+ฮีตเวิร์ก (Heatwork)
+: ผลรวมของอุณหภูมิและเวลาในเตาเผา สิ่งที่โคนวัด
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; helps keep glaze from settling. In Australia, Eckalite is one brand.
+ดินขาว (Kaolin; สหราชอาณาจักร: china clay)
+: ดินสีขาวบริสุทธิ์ที่ให้อลูมินาและซิลิกา ช่วยให้เคลือบไม่ตกตะกอน ในออสเตรเลีย Eckalite เป็นยี่ห้อหนึ่ง
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+สารเคลือบแผ่นรองเผา (Kiln wash)
+: สารเคลือบทนความร้อนที่ปกป้องแผ่นรองเผาจากเคลือบหยด
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+การละลายออก (Leaching)
+: โลหะละลายออกจากเคลือบที่เผาแล้วสู่อาหารหรือเครื่องดื่ม
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+สูตรขีดจำกัด (สูตรเป้าหมาย) (Limit formula)
+: ช่วงสูตรเซเกอร์ทั่วไปสำหรับเคลือบที่เสถียรที่โคนหนึ่ง เป็นแนวทาง ไม่ใช่การรับประกัน
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+ชุดทดสอบแบบเส้น (Line blend)
+: การทดสอบที่เพิ่มส่วนผสมหนึ่งอย่างทีละขั้นระหว่างสองปริมาณ ชุดทดสอบแบบสามเหลี่ยมเปลี่ยนสามอย่างบนตาราง
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+เคลือบด้านใน (Liner glaze)
+: เคลือบที่เสถียร โดยปกติใสหรือขาว สำหรับพื้นผิวที่สัมผัสอาหาร
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+LOI (การสูญเสียน้ำหนักจากการเผา)
+: น้ำหนักที่สูญเสียในการเผาเป็นน้ำ คาร์บอนไดออกไซด์ สารอินทรีย์ หรือซัลเฟอร์
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+เผาครั้งเดียว (Once-firing)
+: การเคลือบชิ้นงานที่ยังไม่เผาและเผาเพียงครั้งเดียว
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+สารทำให้เคลือบทึบ (Opacifier)
+: วัตถุดิบ เช่น เซอร์คอน ดีบุกออกไซด์ หรือไทเทเนียมไดออกไซด์ ที่ทำให้เคลือบทึบ
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+ออกซิเดชันและรีดักชัน (Oxidation and reduction)
+: การเผาที่มีออกซิเจนมาก (เตาเผาไฟฟ้า) หรือที่จำกัดออกซิเจน (โดยปกติแก๊สหรือฟืน)
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+ออกไซด์ (Oxide)
+: สารประกอบของธาตุกับออกซิเจน ผลวิเคราะห์ออกไซด์ระบุตามเปอร์เซ็นต์น้ำหนัก
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+รูเข็มและเคลือบพองเป็นตุ่ม (Pinholing and blistering)
+: รูเล็ก หรือหลุมขอบคม ที่แก๊สหนีออกผ่านเนื้อเคลือบที่หลอม
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+พอร์ซเลน (Porcelain)
+: เนื้อดินสีขาวไฟสูงที่มีดินขาวมาก มักโปร่งแสง
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O และ RO
+: สารช่วยหลอมอัลคาไล (Na₂O, K₂O, Li₂O) และสารช่วยหลอมอัลคาไลน์เอิร์ท (CaO, MgO, BaO, SrO พร้อม ZnO)
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+เคลือบหลุดร่อน (Shivering)
+: เคลือบหลุดเป็นเกล็ดจากขอบเพราะถูกบีบมากเกินไป เป็นอันตรายบนภาชนะใช้งาน
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+ซิลิกา (SiO₂)
+: สารก่อแก้ว เรียกอีกอย่างว่าฟลินต์หรือควอตซ์
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+อัตราส่วนซิลิกาต่ออลูมินา (Silica to alumina ratio)
+: ซิลิกาหารด้วยอลูมินาในสูตรเซเกอร์: สูงกว่ามักเงา ต่ำกว่ามักด้าน
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+น้ำดินและเอนโกบ (Slip and engobe)
+: ดินในน้ำ เอนโกบคือชั้นเคลือบคล้ายน้ำดินที่มีวัสดุที่ไม่ใช่ดินมากกว่า
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water.
+ความถ่วงจำเพาะ (SG)
+: น้ำหนักของน้ำเคลือบเทียบกับน้ำปริมาตรเท่ากัน
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+สารให้ความคงตัว (Stabilizer)
+: ออกไซด์ ส่วนใหญ่คืออลูมินา ที่ทำให้เนื้อเคลือบที่หลอมหนืดขึ้นและเพิ่มความทนทาน
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+สโตนแวร์ (Stoneware)
+: เนื้อดินไฟกลางถึงไฟสูง (ประมาณโคน 5–10) ที่กลายเป็นเนื้อแก้วหรือเกือบเป็น
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+ไทโซโทรปี (Thixotropy)
+: ไหลเมื่อคน เซ็ตเป็นเจลนุ่มเมื่อนิ่ง
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+สีใต้เคลือบ (Underglaze)
+: น้ำดินสีหรือการตกแต่งด้วยออกไซด์ โดยปกติอยู่ใต้เคลือบใส
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+สูตรเซเกอร์ (UMF, สูตรของเซเกอร์)
+: ออกไซด์ของเคลือบเป็นจำนวนโมเลกุล ปรับสเกลให้สารช่วยหลอมรวมกันได้ 1
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+การหลอมตัวเป็นเนื้อแก้ว (Vitrification)
+: เนื้อดินกลายเป็นเหมือนแก้วและไม่พรุนในการเผา
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+ขี้ผึ้งกันเคลือบ (Wax resist)
+: ขี้ผึ้งที่ทาตรงที่ไม่ต้องการให้มีเคลือบ โดยปกติคือฐาน
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses about 44% of its weight in firing, as carbon dioxide.
+แคลเซียมคาร์บอเนต (Whiting)
+: แคลเซียมคาร์บอเนต สารช่วยหลอมแคลเซียมหลัก สูญเสียน้ำหนักประมาณ 44% ในการเผา เป็นคาร์บอนไดออกไซด์
 
-## Sources {#sources lang=en}
+## แหล่งข้อมูล {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -511,7 +511,7 @@ Whiting
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC of 15 October 1984 on the approximation of the laws of the Member States relating to ceramic articles intended to come into contact with foodstuffs](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [EUR-Lex: คำสั่งสภายุโรป 84/500/EEC ลงวันที่ 15 ตุลาคม ค.ศ. 1984 ว่าด้วยการประสานกฎหมายของประเทศสมาชิกเกี่ยวกับเครื่องเซรามิกที่มีไว้เพื่อสัมผัสกับอาหาร](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
 - [Staatscourant 2026, 16308: Dutch regulation of 23 April 2026 applying the Benelux decision on ceramic articles in contact with food](https://zoek.officielebekendmakingen.nl/stcrt-2026-16308.html)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)
 - [Federal Register, 12 January 1994: Ornamental and decorative ceramicware, final rule](https://www.govinfo.gov/content/pkg/FR-1994-01-12/html/94-706.htm)
