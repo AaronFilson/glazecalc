@@ -21,7 +21,7 @@ import {
   sitemapIndex,
   withNonce
 } from '../lib/pages.ts';
-import { PARTLY_TRANSLATED_PAGES, englishOnlyIn, materialTranslatedIn } from '../../lib/pages.js';
+import { FAMOUS_GLAZE_PAGES, PARTLY_TRANSLATED_PAGES, englishOnlyIn, materialTranslatedIn } from '../../lib/pages.js';
 import languages from '../../lib/regions/languages.js';
 import { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
@@ -465,12 +465,15 @@ describe('pages in each language', () => {
     // A page with an id in its address (/connect/:uid) is one of ID_PAGES; the one route of the standard
     // materials' pages (/materials/:slug) stands for MATERIAL_PAGES, a page for each material in the data.
     const ofMaterials = '/materials/:slug';
+    // Likewise /famous-glazes/:slug for FAMOUS_GLAZE_PAGES; the index is a page only once a glaze is published.
+    const ofGlazes = '/famous-glazes/:slug';
     expect(pages).to.include(ofMaterials);
-    expect([...APP_PAGES].filter((page) => !MATERIAL_PAGES.includes(page)).sort()).to.eql(
-      pages.filter((page) => !page.includes(':')).sort()
-    );
+    expect(pages).to.include(ofGlazes);
+    expect(
+      [...APP_PAGES].filter((page) => !MATERIAL_PAGES.includes(page) && !FAMOUS_GLAZE_PAGES.includes(page)).sort()
+    ).to.eql(pages.filter((page) => !page.includes(':') && page !== '/famous-glazes').sort());
     expect(Object.keys(ID_PAGES).sort()).to.eql(
-      pages.filter((page) => page.includes(':') && page !== ofMaterials).sort()
+      pages.filter((page) => page.includes(':') && page !== ofMaterials && page !== ofGlazes).sort()
     );
   });
 
@@ -518,9 +521,11 @@ describe('pages in each language', () => {
     );
     // Each public page once in each of the two languages, and a page in English only once, as a
     // reference page is while German is not among the languages it is translated into.
-    // A guide translated into some languages only, none of them German, is listed in English alone too.
+    // A guide translated into some languages only, none of them German, is listed in English alone too;
+    // so is a famous glaze's page while its scope (famous/de.json) is not translated.
     const partly = Object.values(PARTLY_TRANSLATED_PAGES).filter((codes) => !codes.includes('de')).length;
-    const once = ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length + partly;
+    const once =
+      ENGLISH_ONLY_PAGES.length + REFERENCE_PAGES.length + MATERIAL_PAGES.length + partly + FAMOUS_GLAZE_PAGES.length;
     expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - once) * 2 + once);
   });
 

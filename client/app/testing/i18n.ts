@@ -22,6 +22,7 @@ import safety from '../../public/i18n/safety/en.json';
 import regions from '../../public/i18n/regions/en.json';
 import records from '../../public/i18n/records/en.json';
 import reference from '../../public/i18n/reference/en.json';
+import famous from '../../public/i18n/famous/en.json';
 
 /** The English files the app loads (client/public/i18n), by the path Transloco asks for. */
 export const ENGLISH: Record<string, Translation> = {
@@ -35,7 +36,8 @@ export const ENGLISH: Record<string, Translation> = {
   'safety/en': safety,
   'regions/en': regions,
   'records/en': records,
-  'reference/en': reference
+  'reference/en': reference,
+  'famous/en': famous
 };
 
 @Injectable()

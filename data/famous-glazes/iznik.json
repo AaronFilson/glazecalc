@@ -1,0 +1,62 @@
+{
+  "slug": "iznik",
+  "published": true,
+  "history": true,
+  "names": { "en": "İznik", "tr": "İznik" },
+  "native": { "name": "İznik çinisi", "lang": "tr" },
+  "origin": { "en": "İznik (Nicaea), Bursa Province, Türkiye" },
+  "period": { "en": "Ottoman, about 1480–1600" },
+  "summary": {
+    "en": "The clear, brilliant glaze of Ottoman İznik ware, laid over a white quartz-frit body and slip painted in cobalt blue, turquoise, green and a raised bole red. Analyses of sherds agree that it was a lead-alkali glaze, rich in silica and soda, with a quarter to a half of its weight lead oxide and some tin oxide. It is shown here as history: its analysis, not a recipe to mix."
+  },
+  "safety": {
+    "en": "The historic glaze holds 25–50% lead oxide. Glazecalc shows its analysis as history only and offers no lead material or recipe for it. Lead glazes can leach lead into food and drink, and raw lead compounds are poisonous to handle, breathe or fire."
+  },
+  "firing": {
+    "celsius": [950, 1050],
+    "atmosphere": "oxidation",
+    "note": { "en": "Whitebodied wares were fired at about 950–1050 °C; the glaze matured below about 1000 °C." },
+    "sources": ["I3", "I2"]
+  },
+  "analysis": {
+    "oxides": { "SiO2": 46, "Na2O": 11, "K2O": 1, "CaO": 1, "PbO": 27.5, "SnO2": 5.5 },
+    "note": {
+      "en": "Weight percent, the middle of the ranges Colomban and colleagues give (SiO2 45–47, Na2O 8–14, K2O and CaO about 1, PbO 25–30, SnO2 4–7). Okyar found 30–40% lead oxide and 2–12% tin oxide, mostly dissolved, and one group of about 50% lead oxide with no tin."
+    },
+    "sources": ["I1", "I2", "I3"]
+  },
+  "leadFree": {
+    "tested": false,
+    "note": {
+      "en": "A different, lead-free glaze in the İznik style: the analysis above with its lead's share of the fluxes handed to soda, lime and boron, for cone 04–02 (about 1060–1120 °C) in oxidation, over a white body or a quartz-rich slip, with 6% tin oxide. It is a calculation, not a copy of the old glaze, and the bole red cannot be matched."
+    },
+    "celsius": 1090,
+    "additives": [{ "material": "Tin oxide", "amount": 6 }],
+    "prefer": ["Ferro Frit 3110", "Ferro Frit 3124", "Silica", "EPK Kaolin"]
+  },
+  "sources": [
+    {
+      "id": "I1",
+      "citation": "Colomban Ph. et al., \"On site Raman analysis of Iznik pottery glazes and pigments\", Journal of Raman Spectroscopy (preprint arXiv:cond-mat/0612375, 2006), section 3.6.",
+      "url": "https://arxiv.org/pdf/cond-mat/0612375",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "I2",
+      "citation": "Okyar F., İznik keramiklerinin karakterizasyonu (The characterisation of İznik ceramics), PhD thesis, İstanbul Teknik Üniversitesi Fen Bilimleri Enstitüsü, 1995 (advisor E. Geçkinli); thesis record and abstract.",
+      "url": "https://polen.itu.edu.tr/items/9b63ec9d-5a6f-4415-8cfa-e005c5583331/full",
+      "opened": "2026-11-04"
+    },
+    {
+      "id": "I3",
+      "citation": "Tulun T., Döner G., Çalışır F., Çini N., Karatepe N., Meriçboyu A., Tekin A., Altun A., Arlı B., Arlı H., \"An archaeometric study on ancient Iznik ceramics\", Balıkesir Üniversitesi Fen Bilimleri Enstitüsü Dergisi 4(2), 2002, pp. 34–40.",
+      "url": "https://dergipark.org.tr/en/download/article-file/228378",
+      "opened": "2026-11-04"
+    }
+  ],
+  "openQuestions": [
+    "Tite 1989 (Archaeometry 31:115) and Tite 2007 not opened: no open copy found.",
+    "The lead-free version has not been test-fired."
+  ],
+  "guides": ["/guides/safe-mixing", "/guides/firing"]
+}

@@ -33,6 +33,7 @@ export const SOURCES = [
   'scripts/service-worker.mjs',
   'scripts/advice-i18n.mjs',
   'scripts/material-i18n.mjs',
+  'scripts/famous-glazes.mjs',
   'scripts/locale-fallback.mjs',
   'scripts/build-skills.mjs',
   'skills',

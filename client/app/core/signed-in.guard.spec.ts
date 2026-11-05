@@ -138,6 +138,8 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'cones',
       'materials',
       'materials/:slug',
+      'famous-glazes',
+      'famous-glazes/:slug',
       'about',
       'privacy',
       'terms',

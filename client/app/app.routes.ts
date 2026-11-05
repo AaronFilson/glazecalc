@@ -4,6 +4,13 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { askBeforeLeaving } from './core/leave.guard';
 import { signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
+import {
+  anyFamousGlaze,
+  famousGlazeList,
+  famousGlazeOf,
+  famousGlazeTitleParams,
+  knownFamousGlaze
+} from './pages/famous-glazes/famous-route';
 import { guideText } from './pages/guides/guide-text';
 import {
   knownMaterial,
@@ -144,6 +151,27 @@ export const routes: Routes = [
       description: materialDescriptionKey
     },
     loadComponent: () => import('./pages/materials/material-info-page').then((m) => m.MaterialInfoPage)
+  },
+  // Famous glazes (docs/famous-glazes.md): a page for each published glaze, and their index once there
+  // is one; any other address under /famous-glazes is the not-found page, as the server has it.
+  {
+    path: 'famous-glazes',
+    pathMatch: 'full',
+    title: marker('titles.famousGlazes'),
+    canMatch: [anyFamousGlaze],
+    data: { description: marker('meta.famousGlazes') },
+    providers: [provideTranslocoScope('famous')],
+    resolve: { messages: scopeTranslations, glazes: famousGlazeList },
+    loadComponent: () => import('./pages/famous-glazes/famous-glazes-page').then((m) => m.FamousGlazesPage)
+  },
+  {
+    path: 'famous-glazes/:slug',
+    title: marker('titles.famousGlaze'),
+    canMatch: [knownFamousGlaze],
+    data: { description: marker('meta.famousGlaze') },
+    providers: [provideTranslocoScope('famous', 'recipe')],
+    resolve: { messages: scopeTranslations, glaze: famousGlazeOf, titleParams: famousGlazeTitleParams },
+    loadComponent: () => import('./pages/famous-glazes/famous-glaze-page').then((m) => m.FamousGlazePage)
   },
   {
     path: 'about',

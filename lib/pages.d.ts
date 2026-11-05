@@ -8,6 +8,10 @@ export const PARTLY_TRANSLATED_PAGES: Readonly<Record<string, ReadonlyArray<stri
 export const REFERENCE_PAGES: ReadonlyArray<string>;
 /** A public page for each standard material, /materials/<slug> (lib/pages.js). */
 export const MATERIAL_PAGES: ReadonlyArray<string>;
+/** The famous glazes' pages: the index and one per published glaze, or none while none is published. */
+export const FAMOUS_GLAZE_PAGES: ReadonlyArray<string>;
+/** Whether a famous glaze's page (or the index) has its scope and the glaze's own words in a language. */
+export function famousTranslatedIn(page: string, code: string, glazes?: ReadonlyArray<unknown>): boolean;
 /** Where the prerender lists the material pages it found English in, by language. */
 export const MATERIAL_FALLBACK_FILE: string;
 /** Whether a page has a copy in each of REFERENCE_LANGUAGES alone: REFERENCE_PAGES and MATERIAL_PAGES. */
