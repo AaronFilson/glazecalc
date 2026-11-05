@@ -31,3 +31,6 @@ its script hashes always match the build.
 - No cost for certificates or a load balancer.
 - One manual step (`enable-https.sh`) on a new instance, and the instance holds the private key.
 - Only ports 80 and 443 are open; the app and MongoDB listen on the host's loopback only.
+- Since 4 Nov 2026 the app compresses its own page replies and the sitemap (`server/lib/compress.ts`,
+  brotli 5 or gzip 5, after each page's fresh nonce goes in), and nginx passes those through; nginx still
+  gzips everything else, at `gzip_comp_level 5` (was the default, 1).

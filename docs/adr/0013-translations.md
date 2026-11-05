@@ -170,6 +170,10 @@ until a language is added, its pages are as before.
   (`lib/pages.js`, `server/lib/pages.ts`). A material's page is not: the 170 pages in each language
   would be about 7,700 more files, and the page draws from data in the browser. It is translated
   for the reader and stays English for search engines (canonical to the English, noindex).
+  **Changed 2026-11-04:** a material's page is now prerendered and indexed in every live language
+  where its notes and hazards are translated (`materialTranslatedIn` in `lib/pages.js`, and
+  `material-fallback.json` from the prerender), with hreflang and `x-default`; see
+  [ADR 16](0016-prerendered-public-pages.md) and `docs/prerender-compression-and-material-pages-plan.md`.
 - **The words are the ones already translated.** A material's notes and hazards are in
   `records/<code>.json` for every language, including the blind back-translation of the warnings;
   the page reads them through `standardText`, from a slim file of the materials' words alone

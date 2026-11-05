@@ -1,6 +1,7 @@
 # Plan: compressed prerendered pages, and material pages in every language
 
-Written 2026-11-04 on `r14-teach`. No code is changed yet. The repo keeps plans as `docs/<name>-plan.md`
+Written 2026-11-04 on `r14-teach`, before any code was changed; both parts are now built (see "What was built"
+and "Built" below, and the owner's decisions at the end). The repo keeps plans as `docs/<name>-plan.md`
 (`docs/seo-plan.md`, `docs/mfa-plan.md`, `docs/ec2-deploy-plan.md`), so this plan is here rather than in
 a new `docs/plans/` folder.
 
@@ -237,6 +238,9 @@ response time) over 4 weeks.
 - Numbers on this Windows machine: 10,602 pages prerendered in 171 s (was 1,082 in about 37 s); the whole build
   about 4 minutes. `dist/glazecalc/prerendered` 1.50 GB (was 233 MB), `dist/glazecalc` 1.56 GB. Two images
   kept on the server: about 3 GB, against the 12 GB free.
+- Later on `r14-teach` (famous glazes, the new library materials, the teaching guide): about 11,457 pages, the
+  build still about 4 minutes. The prerender's page limit is 120 kB gzipped (`MAX_GZIPPED`, was 100 kB). CI,
+  publish and staging time-outs were raised for it.
 
 ### How it worked before
 

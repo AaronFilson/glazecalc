@@ -6,6 +6,28 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Famous glazes** (/famous-glazes, docs/famous-glazes.md): a public page per published glaze, from one data file
+  each in `data/famous-glazes/`, with the traditional recipe or historic analysis, its unity formula and limits, a
+  version from the materials sold in the reader's region (the Target & Solve solver), a button that opens it as a
+  trial recipe and a sign-up that comes back to the page. Nothing is published until it meets the publish bar (three
+  opened sources, every material in the standard library, no open gaps). İznik is the first: a lead glaze, so it is
+  shown as history, with a lead-free version labelled "Calculated, not yet test-fired." Shino and Oribe are drafts.
+  The index is hidden until a glaze is published. The glazes' names and prose are kept per language in the data file,
+  and the build writes one file per language (`/i18n/famous-glazes/<code>.json`) so each page stays under the
+  prerender's limit. Titles stay short; the search terms go in the description.
+- **A dry SG estimate** (`lib/recipe/density.js`, sources in docs/sources/dry-sg-sources.md). The slurry panel on the
+  recipe page now fills in the SG of the dry materials from each material's mineral, its kind or, for a frit, its
+  oxides, and the recipe's from them (its weight over the sum of each weight over its SG), saying how it got it and
+  what it left out. A dry SG typed is kept over the estimate. The water to add never needed a dry SG, so the
+  `specific_gravity_water` tool and the panel no longer assume one (they used 2.5); the dry weights wait for one,
+  given or estimated. The making-a-glaze guide shows how to measure your own glaze's dry SG while mixing, from the
+  powder's weight, the finished slurry's weight and its SG.
+- **New library materials**: synthetic wood, rice-straw and isu ashes, rice-straw and washed chestnut ash, an
+  average wood ash, Tsushima and Masuda feldspars and Korean kaolin (from the Arita supplier's table), and, as
+  historical records, Jingdezhen porcelain stones (Sanbaopeng, Nangang) and Longquan zijin soil. A material's source
+  can now be of kind `research` (a published study). Commercial colemanite has a second note with Eti Maden's ground
+  colemanite specification (limits, not a typical analysis).
+- **Egypt's shop**: Clay Supply in Fustat (Old Cairo), whose own site lists a kaolin, glazes, oxides and kilns.
 - **Teaching glaze calculation** (/guides/teaching-glaze-calculation): a seventh guide, a teaching pack of six
   sessions in the order of the Ibaraki Prefectural Industrial Technology Center's published glaze study group
   (cited; Glazecalc is not connected with it): materials and triaxial tiles, the chemistry, reading a unity formula,
@@ -1068,6 +1090,25 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Compressed pages** (docs/prerender-compression-and-material-pages-plan.md, Part A). Each page reply is compressed
+  in Node after its fresh nonce goes in (`server/lib/compress.ts`: brotli 5, else gzip 5), with `Vary` and
+  `Content-Length`; the sitemaps are compressed once each with an ETag. nginx passes these through and gzips the rest
+  at level 5 (was 1). The style nonce stays fresh per reply (the owner's choice).
+- **The sitemap's dates**: `/sitemap.xml` is an index of one file per language, and each page's `<lastmod>` is the
+  day what it says last changed in that language (its guide, its messages, its data), worked out from git when the
+  image is built (`lib/page-dates.js`, `scripts/page-dates.mjs`, `.github/workflows/publish.yml`). The alternates
+  carry `x-default`, as each page's head does.
+- **Page descriptions use the words potters search for**, in 30 languages first and then all; titles are unchanged
+  (the owner's rule).
+- **About 11,457 prerendered pages** (every material in every language, the famous glazes, the teaching guide), a
+  build of about 4 minutes. A page may now be up to 120 kB gzipped (was 100 kB), as the fully translated glazing
+  basics guide in the Indic scripts came to just over 100 kB. The CI, publish and staging time-outs are raised.
+- **The firing guide**: the cone chart gives Orton's slow-rate figures for cones 018, 015, 07 and 02 (a dash now
+  means Orton gives none), and says most low-fire glazes sold are made for cone 06 or 05.
+- **Round 14 translation catch-up**: all 56 other languages translated the round's English (famous glazes, the dry SG
+  estimate and guide section, the Stull chart, the teaching guide's card, the new materials' notes and hazards, the
+  changed guide sections) in five language groups, each language back-translated blind and the differences fixed
+  (docs/translations/process/README.md).
 - **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
   (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
   region list already uses ("countries and regions"). So does the making-a-glaze guide's line on shops ("choose

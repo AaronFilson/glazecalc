@@ -84,8 +84,9 @@ keys are in `en.json` (`titles.famousGlaze(s)`, `meta.famousGlaze(s)`). A glaze'
 per language. A page is offered to search engines in a language (`famousTranslatedIn`, used by `englishOnlyIn`)
 only when that language has the whole scope translated **and** the glaze's prose. Otherwise the language's copy is
 still prerendered for readers, shows a notice, names the English as canonical and is noindex. Translations follow
-docs/translations/process: commit them before running `npm run i18n:sources`. The scope has not been translated
-yet, so for now the pages are indexed in English only.
+docs/translations/process: commit them before running `npm run i18n:sources`. Since round 14 the scope is
+translated in all 56 other live languages (`client/public/i18n/famous/<code>.json`), and İznik's names and prose
+are in its data file per language, so its pages are indexed in each language that has both.
 
 ## Tests
 
