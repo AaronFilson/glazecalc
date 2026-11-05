@@ -458,73 +458,73 @@ Label: Digitalfire BQ1000
 
 Ένα καμίνι χωρίς ελεγκτή ακολουθεί το ίδιο σχέδιο με το χέρι: στεγνώστε αργά με το καπάκι μισάνοιχτο και τις οπές παρατήρησης ανοιχτές, ανεβάστε τους διακόπτες σταδιακά από Low σε Medium και μετά σε High (χαμηλή, μεσαία και υψηλή θέση), και αφήστε το Kiln-Sitter να τελειώσει το ψήσιμο. Οι δημοσιευμένες διαδικασίες βρίσκονται παρακάτω, στο «Καμίνια χωρίς ελεγκτή αναλυτικά».
 
-## Glaze firing {#glaze lang=en}
+## Ψήσιμο του υαλώματος {#glaze}
 
-The glaze firing melts the glaze into glass on the bisque. Most low-fire glazes on the market are made for cone 06 or 05 (the low-fire band runs cone 06–04), and most mid-fire glazes for cone 5–6. Fire to the cone on your glaze and clay labels, with a cone pack around that number. For what happens inside the glaze as it melts, see [Glazing from first principles](/guides/glazing-basics).
+Το ψήσιμο του υαλώματος{{en: glaze firing}} λιώνει το υάλωμα{{en: glaze}} και το κάνει γυαλί πάνω στο μπισκουί{{en: bisque}}. Τα περισσότερα υαλώματα χαμηλής θερμοκρασίας του εμπορίου είναι φτιαγμένα για τον κώνο{{en: cone}} 06 ή 05 (η χαμηλή θερμοκρασία καλύπτει τους κώνους 06–04), και τα περισσότερα υαλώματα μέσης θερμοκρασίας για τους κώνους 5–6. Ψήστε στον κώνο που γράφουν οι ετικέτες του υαλώματος και του πηλού σας, με μια τριάδα κώνων{{en: cone pack}} γύρω από αυτόν τον αριθμό. Για το τι συμβαίνει μέσα στο υάλωμα καθώς λιώνει, δείτε τον οδηγό [Τα υαλώματα από τις βασικές αρχές](/guides/glazing-basics).
 
-### Loading for a glaze firing
+### Φόρτωμα για ψήσιμο υαλώματος
 
-- Glazed pieces must not touch each other or the walls: leave about ½ in (13 mm).
-- Keep glaze off the foot (**dry-footing**), or set low-fire ware on **stilts**, small stands with points. Stoneware and porcelain should not stand on stilts, which embed at those temperatures; use high-fire kiln wash or silica sand instead.
-- Leave at least 1 in (25 mm) between the shelf edges and the wall or sitter.
+- Τα υαλωμένα κομμάτια δεν πρέπει να ακουμπούν μεταξύ τους ή στα τοιχώματα: αφήστε περίπου ½ ίντσα (13 mm).
+- Κρατήστε τη **βάση χωρίς υάλωμα**, ή στήστε τα κομμάτια χαμηλής θερμοκρασίας σε **τρίποδα**, μικρά στηρίγματα με μύτες. Το stoneware και η πορσελάνη δεν θα πρέπει να στέκονται σε τρίποδα, γιατί σε αυτές τις θερμοκρασίες οι μύτες τους βυθίζονται στο κομμάτι. Χρησιμοποιήστε αντί για αυτά προστατευτικό υψηλής θερμοκρασίας για πυρόπλακες ή χαλαζιακή άμμο.
+- Αφήστε τουλάχιστον 1 ίντσα (25 mm) ανάμεσα στις άκρες των πυροπλακών και στο τοίχωμα ή στο Kiln-Sitter.
 
-### Controller schedules
+### Προγράμματα ελεγκτή
 
-Table: L&L and Bartlett glaze presets
-Label: Glaze presets
+Table: Έτοιμα προγράμματα υαλώματος των L&L και Bartlett
+Label: Προγράμματα υαλώματος
 
-| Segment                  |                          Climb to |             Slow Glaze |             Fast Glaze |
-| ------------------------ | --------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |       No separate step |
-| 2                        | {{250 °F; 139 °C}} below the peak | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
-| 3                        |                          The peak |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
-| Heating time, empty kiln |                                   |      About 6½–7½ hours |        About 3–4 hours |
+| Τμήμα                          |                                         Άνοδος έως |             Slow Glaze |             Fast Glaze |
+| ------------------------------ | -------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                              |                                 {{250 °F; 121 °C}} |  {{150 °F/h; 83 °C/h}} |   Χωρίς ξεχωριστό βήμα |
+| 2                              | {{250 °F; 139 °C}} κάτω από την τελική θερμοκρασία | {{400 °F/h; 222 °C/h}} | {{570 °F/h; 317 °C/h}} |
+| 3                              |                               Η τελική θερμοκρασία |  {{120 °F/h; 67 °C/h}} | {{200 °F/h; 111 °C/h}} |
+| Χρόνος θέρμανσης, άδειο καμίνι |                                                    |     Περίπου 6½–7½ ώρες |       Περίπου 3–4 ώρες |
 
-Table: Where segments 2 and 3 end, by cone (L&L and Bartlett)
-Label: Preset targets
+Table: Πού τελειώνουν τα τμήματα 2 και 3, ανά κώνο (L&L και Bartlett)
+Label: Στόχοι προγραμμάτων
 
-| Cone |       Segment 2 ends |                 Peak |
-| ---- | -------------------: | -------------------: |
-| 06   |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
-| 04   |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
-| 6    | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
+| Κώνος |     Τέλος τμήματος 2 |   Τελική θερμοκρασία |
+| ----- | -------------------: | -------------------: |
+| 06    |  {{1569 °F; 854 °C}} |  {{1819 °F; 993 °C}} |
+| 04    |  {{1676 °F; 913 °C}} | {{1926 °F; 1052 °C}} |
+| 6     | {{1982 °F; 1083 °C}} | {{2232 °F; 1222 °C}} |
 
-Slow Glaze is the safer default, given L&L's warning about fast firing. If you add a hold of more than 5–10 minutes at the peak, L&L says to lower the target or the cone offset to match, and notes that "Soaking at high temperatures accelerates element and thermocouple wear."
+Το Slow Glaze είναι η ασφαλέστερη προεπιλογή, δεδομένης της προειδοποίησης της L&L για το γρήγορο ψήσιμο. Αν προσθέσετε παραμονή{{en: hold}} πάνω από 5–10 λεπτά στην τελική θερμοκρασία, η L&L λέει να χαμηλώσετε ανάλογα τον στόχο ή τη διόρθωση κώνου, και σημειώνει ότι «Η παραμονή σε υψηλές θερμοκρασίες επιταχύνει τη φθορά των αντιστάσεων και του θερμοστοιχείου.»
 
-### Cone 6: drop-and-hold
+### Κώνος 6: πτώση και παραμονή
 
-Mid-fire glazes sometimes come out with **pinholes** (tiny holes in the surface) or blisters, left by gas bubbling out of the melt. A **drop-and-hold** schedule fires to the top, cools quickly by about {{100 °F; 56 °C}} and holds there. In Digitalfire's words, "Dropping 100°F and holding gives the melt enough viscosity to burst bubbles while still letting them heal."
+Τα υαλώματα μέσης θερμοκρασίας βγαίνουν μερικές φορές με **τρυπίτσες**{{en: pinholing}} (μικροσκοπικές τρύπες στην επιφάνεια) ή φουσκάλες, που τις αφήνουν αέρια που βγαίνουν από το λιωμένο υάλωμα. Ένα πρόγραμμα **πτώσης και παραμονής**{{en: drop-and-hold}} ψήνει μέχρι την κορυφή, κρυώνει γρήγορα κατά περίπου {{100 °F; 56 °C}} και κρατά εκεί. Όπως το λέει το Digitalfire, «Η πτώση κατά 100°F και η παραμονή δίνουν στο λιωμένο υάλωμα αρκετό ιξώδες ώστε να σπάνε οι φυσαλίδες, ενώ αφήνουν ακόμη τα σημάδια τους να κλείσουν.»
 
-Table: Digitalfire PLC6DS, cone 6 drop-and-hold
+Table: Digitalfire PLC6DS, πτώση και παραμονή για τον κώνο 6
 Label: Digitalfire PLC6DS
 
-| Step |                           Rate |               Target | Hold                                            |
-| ---- | -----------------------------: | -------------------: | ----------------------------------------------- |
-| 1    |          {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 minutes                                      |
-| 2    |         {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Optional 30 minutes, to clear clouds of bubbles |
-| 3    |          {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 minutes; longer in big kilns                 |
-| 4    | Down at {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 minutes                                      |
+| Βήμα |                            Ρυθμός |               Στόχος | Παραμονή                                                         |
+| ---- | --------------------------------: | -------------------: | ---------------------------------------------------------------- |
+| 1    |             {{108 °F/h; 60 °C/h}} |   {{250 °F; 121 °C}} | 60 λεπτά                                                         |
+| 2    |            {{350 °F/h; 194 °C/h}} | {{2100 °F; 1148 °C}} | Προαιρετικά 30 λεπτά, για να καθαρίσουν τα σύννεφα από φυσαλίδες |
+| 3    |             {{108 °F/h; 60 °C/h}} | {{2200 °F; 1204 °C}} | 10 λεπτά, περισσότερο σε μεγάλα καμίνια                          |
+| 4    | Κάθοδος με {{900 °F/h; 500 °C/h}} | {{2100 °F; 1148 °C}} | 30 λεπτά                                                         |
 
-PLC6DS takes about 9 hours 36 minutes. For more fluid glazes, Digitalfire drops about {{200 °F; 111 °C}} instead; dropping too far "risks crystallization during the hold". Its peak of {{2200 °F; 1204 °C}} is below the chart's {{2232 °F; 1222 °C}} for cone 6; Digitalfire reports that most kilns reach cone 6 at about {{2200 °F; 1204 °C}}. Check it with a cone pack in your own kiln.
+Το PLC6DS διαρκεί περίπου 9 ώρες και 36 λεπτά. Για πιο λεπτόρρευστα υαλώματα, το Digitalfire κατεβαίνει αντί για αυτό περίπου {{200 °F; 111 °C}}. Μια πολύ μεγάλη πτώση «ενέχει κίνδυνο κρυστάλλωσης κατά την παραμονή». Η τελική του θερμοκρασία, {{2200 °F; 1204 °C}}, είναι κάτω από τους {{2232 °F; 1222 °C}} του πίνακα για τον κώνο 6. Το Digitalfire αναφέρει ότι τα περισσότερα καμίνια φτάνουν στον κώνο 6 στους {{2200 °F; 1204 °C}} περίπου. Ελέγξτε το με μια τριάδα κώνων στο δικό σας καμίνι.
 
-### Slow cooling
+### Αργό κρύωμα
 
-**Slow cooling** means the controller cools the kiln at a set rate instead of letting it fall freely. Digitalfire's C6DHSC is PLC6DS followed by cooling at {{150 °F/h; 83 °C/h}} from {{2100 °F; 1148 °C}} down to {{1400 °F; 760 °C}}, then off. It "improves brilliance and surface quality" and helps rutile blues, but slow cooling "can increase matteness" (one matte glaze went dry) and can shorten the life of the kiln's relays. L&L ships a slow-cool program for cone 6 as well:
+**Αργό κρύωμα** σημαίνει ότι ο ελεγκτής κρυώνει το καμίνι με καθορισμένο ρυθμό, αντί να το αφήνει να πέφτει ελεύθερα. Το C6DHSC του Digitalfire είναι το PLC6DS και στη συνέχεια κρύωμα με {{150 °F/h; 83 °C/h}} από τους {{2100 °F; 1148 °C}} ως τους {{1400 °F; 760 °C}}, και μετά σβήσιμο. «Βελτιώνει τη λάμψη και την ποιότητα της επιφάνειας» και βοηθά τα μπλε υαλώματα με ρουτίλιο, αλλά το αργό κρύωμα «μπορεί να αυξήσει τη ματ όψη» (ένα ματ υάλωμα έγινε ξερό) και μπορεί να μικρύνει τη ζωή των ρελέ του καμινιού. Η L&L παρέχει και αυτή ένα έτοιμο πρόγραμμα αργού κρυώματος για τον κώνο 6:
 
-Table: L&L "User 6": slow cooling for cone 6 glazes
-Label: L and L slow cool
+Table: L&L «User 6»: αργό κρύωμα για τα υαλώματα του κώνου 6
+Label: Αργό κρύωμα L and L
 
-| Step |                          Rate |               Target |
-| ---- | ----------------------------: | -------------------: |
-| 1    |                 Full speed up | {{2232 °F; 1222 °C}} |
-| 2    |               Full speed down | {{1900 °F; 1038 °C}} |
-| 3    | Down at {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
+| Βήμα |                           Ρυθμός |               Στόχος |
+| ---- | -------------------------------: | -------------------: |
+| 1    |         Άνοδος με πλήρη ταχύτητα | {{2232 °F; 1222 °C}} |
+| 2    |        Κάθοδος με πλήρη ταχύτητα | {{1900 °F; 1038 °C}} |
+| 3    | Κάθοδος με {{150 °F/h; 83 °C/h}} |  {{1500 °F; 816 °C}} |
 
-Skutt's controllers likewise offer a preheat and a one-step cooling option.
+Οι ελεγκτές της Skutt προσφέρουν επίσης προθέρμανση και επιλογή κρυώματος ενός βήματος.
 
-### On a manual kiln
+### Σε καμίνι χωρίς ελεγκτή
 
-A manual kiln cannot follow these schedules exactly, but the plan is the same: gentle at first, steady through the middle, and a watched finish. Bracker's low-fire glaze schedule is under Manual kilns in detail, below; for hotter cones it adds "an average of 15–30 minutes per cone number". With a pyrometer, practice and a log, you can roughly copy a drop-and-hold or a slow cool by turning the switches down by hand, as Digitalfire suggests.
+Ένα καμίνι χωρίς ελεγκτή δεν μπορεί να ακολουθήσει ακριβώς αυτά τα προγράμματα, αλλά το σχέδιο είναι το ίδιο: ήπια στην αρχή, σταθερά στη μέση, και τέλος υπό παρακολούθηση. Το πρόγραμμα της Bracker's για υαλώματα χαμηλής θερμοκρασίας βρίσκεται παρακάτω, στο «Καμίνια χωρίς ελεγκτή αναλυτικά». Για θερμότερους κώνους προσθέτει «κατά μέσο όρο 15–30 λεπτά ανά αριθμό κώνου». Με πυρόμετρο, εξάσκηση και ημερολόγιο ψησίματος, μπορείτε να μιμηθείτε κατά προσέγγιση μια πτώση και παραμονή ή ένα αργό κρύωμα, χαμηλώνοντας τους διακόπτες με το χέρι, όπως προτείνει το Digitalfire.
 
 ## Καμίνια χωρίς ελεγκτή αναλυτικά {#manual-kilns}
 
