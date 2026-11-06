@@ -11,7 +11,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   version from the materials sold in the reader's region (the Target & Solve solver), a button that opens it as a
   trial recipe and a sign-up that comes back to the page. Nothing is published until it meets the publish bar (three
   opened sources, every material in the standard library, no open gaps). İznik is the first: a lead glaze, so it is
-  shown as history, with a lead-free version labelled "Calculated, not yet test-fired." Shino and Oribe are drafts.
+  shown as history, with a lead-free version labelled "Calculated, not yet test-fired." Shino (Kamado feldspar alone; no
+  firing temperature is documented, and the page says so) and Oribe (feldspar 60, wood ash 40, copper oxide 4;
+  1230–1280 °C in oxidation, from the Toki City testing centre) followed in round 15, from Japanese sources, in all
+  57 languages, their local versions labelled "Calculated, not yet test-fired."
   The index is hidden until a glaze is published. The glazes' names and prose are kept per language in the data file,
   and the build writes one file per language (`/i18n/famous-glazes/<code>.json`) so each page stays under the
   prerender's limit. Titles stay short; the search terms go in the description.

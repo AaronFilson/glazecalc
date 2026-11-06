@@ -36,13 +36,42 @@ describe('famous glazes: the data', () => {
     expect(() => publishedFile([failing])).to.throw(/at least 3/);
   });
 
-  it('keeps the drafts that do not meet the bar off the site, with why', () => {
+  it('keeps a glaze that does not meet the bar off the site, with why', () => {
+    // Round 15 (2026-11-05): Shino and Oribe were published, so a draft is made from Oribe here.
+    expect(famous.publishedGlazes(glazes).map((g) => g.slug)).to.eql(['iznik', 'oribe', 'shino']);
+    const draft = { ...copy(glazes.find((g) => g.slug === 'oribe')!), gaps: ['An open gap.'] };
+    expect(famous.publishProblems(draft).join()).to.match(/gap/);
+    expect(famous.publishedGlazes([draft]).map((g) => g.slug)).to.eql([]);
+  });
+
+  it('publishes a glaze whose temperature no source gives only when its note says so', () => {
+    const shino = glazes.find((g) => g.slug === 'shino')!;
+    expect(shino.firing!.temperatureUnknown).to.equal(true);
+    expect(shino.firing!.celsius).to.equal(undefined);
+    expect(famous.publishProblems(shino)).to.eql([]);
+    const silent = copy(shino);
+    delete silent.firing!.note;
+    expect(famous.publishProblems(silent).join()).to.match(/no firing/);
+    const unsaid = copy(shino);
+    delete unsaid.firing!.temperatureUnknown;
+    expect(famous.publishProblems(unsaid).join()).to.match(/no firing/);
+  });
+
+  it('marks the recipes of Shino and Oribe as not yet test-fired, and checks the flag', () => {
+    for (const slug of ['shino', 'oribe'])
+      expect(glazes.find((g) => g.slug === slug)!.recipe!.tested, slug).to.equal(false);
+    const odd = copy(fixture);
+    (odd.recipe as { tested?: unknown }).tested = 'no';
+    expect(famous.glazeProblems(odd).join()).to.match(/tested/);
+  });
+
+  it('has Shino and Oribe written in every language İznik is', () => {
+    const iznik = glazes.find((g) => g.slug === 'iznik')!;
     for (const slug of ['shino', 'oribe']) {
       const glaze = glazes.find((g) => g.slug === slug)!;
-      expect(glaze.published, slug).to.equal(false);
-      expect(famous.publishProblems(glaze), slug).not.to.eql([]);
+      for (const code of Object.keys(iznik.names))
+        expect(famous.glazeTranslatedIn(glaze, code), `${slug} ${code}`).to.equal(true);
     }
-    expect(famous.publishedGlazes(glazes).map((g) => g.slug)).to.eql(['iznik']);
   });
 
   it('never publishes the tests’ fixture, though it meets the bar', () => {
@@ -127,12 +156,12 @@ describe('famous glazes: the pages', () => {
   });
 
   it('gives an unpublished glaze no page: the not-found page, out of the sitemap and the prerender', () => {
-    for (const address of ['/famous-glazes/shino', '/de/famous-glazes/oribe', '/famous-glazes/fixture-celadon']) {
+    for (const address of ['/famous-glazes/nope', '/de/famous-glazes/nope', '/famous-glazes/fixture-celadon']) {
       expect(isPage(address), address).to.equal(false);
       expect(prerenderedKey(address), address).to.equal(null);
     }
     const map = sitemap(SITE, ['en', 'de'], ['en'], {});
-    expect(map).not.to.include('/famous-glazes/shino');
+    expect(map).to.include('/famous-glazes/shino</loc>');
     expect(map).not.to.include('fixture-celadon');
   });
 
