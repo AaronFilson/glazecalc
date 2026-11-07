@@ -62,7 +62,7 @@ Label: Četiri sirovine
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizator: glavni izvor glinice                     |
 | Kvarc (珪石)        |  100 |     – |     – |    – |     – |     – | Staklotvorac                                           |
 
-Sam feldspat se na SK 8 tali u viskozno staklo; sama kreda se ne tali; sam kvarc se ne tali. Pomiješani, tale se mnogo bolje od bilo koje od tih sirovina. Trokutni niz proba pokazuje gdje: karta pločica dolje mijenja te tri sirovine u koracima od 20 %, s 10 % kaolina u svakoj pločici.
+Sam feldspat se na SK 8 tali u viskozno staklo; sama kreda se ne tali; sam kvarc se ne tali. Pomiješani, tale se mnogo bolje od bilo koje od tih sirovina. Trokutni niz proba pokazuje gdje: karta pločica dolje mijenja te tri sirovine u koracima od ~20 % (18 od 90), s 10 % kaolina u svakoj pločici.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Greške
 | Ljuštenje glazure  | Glazura se skuplja mnogo manje od keramičke mase | Više K₂O i Na₂O                                    |
 | Curenje glazure    | Premalo glinice ili predebeo sloj                | Više glinice; tanji sloj                           |
 | Povlačenje glazure | Prašnjav biskvit ili debeo sloj koji je napukao  | Očistite biskvit; tanji sloj                       |
-| Rupičavost         | Rupice od plina koje se nisu zatvorile           | Zadržavanje na kraju pečenja; tanji sloj           |
+| Rupičavost         | Rupice od plina koje se nisu zatvorile           | Zadržavanje na najvišoj temperaturi pečenja; tanji sloj           |
 
 [Usklađenost glazure i greške](/guides/glazing-basics#fit-and-defects) objašnjava svaku od njih, s testom ledenom vodom za pucanje glazure. Predmete s pucanjem ili ljuštenjem glazure nemojte koristiti za hranu i piće.
 
@@ -373,7 +373,7 @@ Label: Radni list 6
 
 - Koja greška nastaje od glazure koja se skuplja više od keramičke mase i koji je prvi popravak?
 - Zašto se predmeti s ljuštenjem glazure nikada ne smiju koristiti za hranu?
-- Može li izračun reći da je glazura sigurna za hranu? Što to može?
+- Može li izračun reći da je glazura sigurna za hranu? Što to može reći?
 
 ## Karte pločica za ispis {#tile-maps}
 

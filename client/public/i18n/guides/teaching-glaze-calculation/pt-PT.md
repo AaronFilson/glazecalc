@@ -62,7 +62,7 @@ Label: Quatro matérias-primas
 | Caulino EPK                  | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Estabilizante: a principal fonte de alumina  |
 | Sílica (珪石)                |  100 |     – |     – |    – |     – |     – | Formador de vidro                            |
 
-Sozinho, o feldspato funde ao SK 8 num vidro viscoso; o carbonato de cálcio sozinho não funde; a sílica sozinha não funde. Misturados, fundem muito melhor do que qualquer um deles. Uma mistura triaxial mostra onde: o mapa de peças de teste abaixo varia os três em passos de 20%, com 10% de caulino em cada peça.
+Sozinho, o feldspato funde ao SK 8 num vidro viscoso; o carbonato de cálcio sozinho não funde; a sílica sozinha não funde. Misturados, fundem muito melhor do que qualquer um deles. Uma mistura triaxial mostra onde: o mapa de peças de teste abaixo varia os três em passos de ~20% (18 em 90), com 10% de caulino em cada peça.
 
 ::shops
 

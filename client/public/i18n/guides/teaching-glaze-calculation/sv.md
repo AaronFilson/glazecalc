@@ -62,7 +62,7 @@ Label: Fyra råvaror
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilisator: den främsta aluminiumoxiden          |
 | Kvarts (珪石)       |  100 |     – |     – |    – |     – |     – | Glasbildare                                        |
 
-Fältspat ensam smälter vid SK 8 till ett trögt glas; krita ensam smälter inte; kvarts ensam smälter inte. Blandade smälter de långt bättre än någon av dem för sig. En triaxial blandning visar var: provbitskartan nedan stegar de tre i steg om 20 %, med 10 % kaolin i varje provbit.
+Fältspat ensam smälter vid SK 8 till ett trögt glas; krita ensam smälter inte; kvarts ensam smälter inte. Blandade smälter de långt bättre än någon av dem för sig. En triaxial blandning visar var: provbitskartan nedan stegar de tre i steg om ~20 % (18 av 90), med 10 % kaolin i varje provbit.
 
 ::shops
 
@@ -373,7 +373,7 @@ Label: Arbetsblad 6
 
 - Vilket fel kommer av en glasyr som krymper mer än skärven, och vad är en första åtgärd?
 - Varför får avskalat gods aldrig användas till mat?
-- Kan en beräkning visa att en glasyr är säker för mat? Vad kan det?
+- Kan en beräkning visa att en glasyr är säker för mat? Vad kan visa det?
 
 ## Provbitskartor att skriva ut {#tile-maps}
 

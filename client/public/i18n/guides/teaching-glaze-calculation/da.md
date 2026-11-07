@@ -62,7 +62,7 @@ Label: Fire råvarer
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |     13,9 | Stabilisator: den vigtigste kilde til aluminiumoxid |
 | Kvarts (珪石)       |  100 |     – |     – |    – |     – |        – | Glasdanner                                          |
 
-Feldspat alene smelter ved SK 8 til et sejt glas; kridt alene smelter ikke; kvarts alene smelter ikke. Blandet smelter de langt bedre end hver for sig. En triaksial blanding viser, hvor: kortet nedenfor ændrer de tre i trin på 20 %, med 10 % kaolin i hver brik.
+Feldspat alene smelter ved SK 8 til et sejt glas; kridt alene smelter ikke; kvarts alene smelter ikke. Blandet smelter de langt bedre end hver for sig. En triaksial blanding viser, hvor: kortet nedenfor ændrer de tre i trin på ~20 % (18 af 90), med 10 % kaolin i hver brik.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Fejl
 | Afskalning  | Glasuren svinder langt mindre end skærven             | Mere K₂O og Na₂O                                         |
 | Løb         | For lidt aluminiumoxid, eller for tyk                 | Mere aluminiumoxid; et tyndere lag                       |
 | Kravling    | Støvet forglødet gods, eller et tykt lag, der revnede | Gør det forglødede gods rent; et tyndere lag             |
-| Nålestik    | Gas, der ikke nåede at lukke sig                      | En holdetid ved slutningen af brændingen; et tyndere lag |
+| Nålestik    | Gas, der ikke nåede at lukke sig                      | En holdetid ved toptemperaturen; et tyndere lag |
 
 [Glasurtilpasning og glasurfejl](/guides/glazing-basics#fit-and-defects) forklarer hver enkelt, med isvandstesten for krakelering. Brug ikke krakeleret eller afskallet gods til mad eller drikke.
 

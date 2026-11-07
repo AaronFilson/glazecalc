@@ -62,7 +62,7 @@ Label: Patru materii prime
 | EPK Kaolin                  | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizator: sursa principală de alumină |
 | Silice (珪石)               |  100 |     – |     – |    – |     – |     – | Formator de sticlă                        |
 
-Feldspatul singur se topește la SK 8 într-o sticlă vâscoasă; carbonatul de calciu singur nu se topește; silicea singură nu se topește. Amestecate, se topesc mult mai bine decât oricare dintre ele. Un amestec triaxial arată unde: harta de plăcuțe de mai jos variază cele trei materii în pași de 20 %, cu 10 % caolin în fiecare plăcuță.
+Feldspatul singur se topește la SK 8 într-o sticlă vâscoasă; carbonatul de calciu singur nu se topește; silicea singură nu se topește. Amestecate, se topesc mult mai bine decât oricare dintre ele. Un amestec triaxial arată unde: harta de plăcuțe de mai jos variază cele trei materii în pași de ~20 % (18 din 90), cu 10 % caolin în fiecare plăcuță.
 
 ::shops
 

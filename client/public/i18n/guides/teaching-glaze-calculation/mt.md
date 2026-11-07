@@ -62,7 +62,7 @@ Label: Erba’ materjali
 | Kawlina EPK                  | 45.7 |  37.4 |  0.33 | 0.06 |  0.18 |  13.9 | Stabilizzatur: l-alumina ewlenija         |
 | Silika (珪石)                |  100 |     – |     – |    – |     – |     – | Formatur tal-ħġieġ                        |
 
-Feldspar waħdu jdub fil-kon SK 8 u jsir ħġieġ iebes; il-karbonat tal-kalċju waħdu ma jdubx; is-silika waħedha ma tdubx. Imħallta, jdubu ħafna aħjar minn kull waħda minnhom. Taħlita trijassjali turi fejn: il-mappa tal-madum hawn taħt tibdel it-tlieta f’passi ta’ 20%, b’10% kawlina f’kull maduma.
+Feldspar waħdu jdub fil-kon SK 8 u jsir ħġieġ iebes; il-karbonat tal-kalċju waħdu ma jdubx; is-silika waħedha ma tdubx. Imħallta, jdubu ħafna aħjar minn kull waħda minnhom. Taħlita trijassjali turi fejn: il-mappa tal-madum hawn taħt tibdel it-tlieta f’passi ta’ ~20% (18 minn 90), b’10% kawlina f’kull maduma.
 
 ::shops
 

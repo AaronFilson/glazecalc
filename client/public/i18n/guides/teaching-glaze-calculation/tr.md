@@ -62,7 +62,7 @@ Label: Dört hammadde
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizatör: başlıca alümina kaynağı           |
 | Silis (珪石)        |  100 |     – |     – |    – |     – |     – | Cam yapıcı                                      |
 
-Tek başına feldspat SK 8’de erir ve viskoz bir cam olur; kalsit tek başına erimez; silis tek başına erimez. Karıştırıldıklarında, her birinden çok daha iyi erirler. Bir üçgen karışım testi bunun nerede olduğunu gösterir: aşağıdaki karo haritası üçünü %20 aralıklarla değiştirir ve her karoda %10 kaolen vardır.
+Tek başına feldspat SK 8’de erir ve viskoz bir cam olur; kalsit tek başına erimez; silis tek başına erimez. Karıştırıldıklarında, her birinden çok daha iyi erirler. Bir üçgen karışım testi bunun nerede olduğunu gösterir: aşağıdaki karo haritası üçünü ~%20 aralıklarla (90’dan 18) değiştirir ve her karoda %10 kaolen vardır.
 
 ::shops
 

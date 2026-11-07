@@ -62,7 +62,7 @@ Label: Štyri suroviny
 | Kaolín EPK       | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizátor: hlavný zdroj oxidu hlinitého             |
 | Kremeň (珪石)    |  100 |     – |     – |    – |     – |     – | Sklotvorný oxid                                        |
 
-Samotný živec sa pri kuželi SK 8 pretaví na viskózne sklo; samotná krieda sa nepretaví; samotný kremeň sa nepretaví. Po zmiešaní sa tavia oveľa lepšie než ktorákoľvek z nich osobitne. Trojzložková zmes ukáže, kde: plán doštičiek nižšie mení tri suroviny po krokoch 20 %, pričom každá doštička obsahuje 10 % kaolínu.
+Samotný živec sa pri kuželi SK 8 pretaví na viskózne sklo; samotná krieda sa nepretaví; samotný kremeň sa nepretaví. Po zmiešaní sa tavia oveľa lepšie než ktorákoľvek z nich osobitne. Trojzložková zmes ukáže, kde: plán doštičiek nižšie mení tri suroviny po krokoch ~20 % (18 z 90), pričom každá doštička obsahuje 10 % kaolínu.
 
 ::shops
 

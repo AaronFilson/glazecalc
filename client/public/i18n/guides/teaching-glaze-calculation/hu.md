@@ -62,7 +62,7 @@ Label: Négy nyersanyag
 | EPK Kaolin           | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizáló: a fő timföldforrás                        |
 | Kvarcliszt (珪石)    |  100 |     – |     – |    – |     – |     – | Üvegképző                                              |
 
-A földpát egyedül SK 8-on megolvad merev üveggé; a mészkőliszt egyedül nem olvad meg; a kvarcliszt egyedül sem olvad meg. Összekeverve sokkal jobban olvadnak, mint bármelyik külön. A háromszög-próba megmutatja, hol: az alábbi próbalap-térkép a hármat 20%-os lépésekben lépteti, minden próbalapon 10% kaolinnal.
+A földpát egyedül SK 8-on megolvad merev üveggé; a mészkőliszt egyedül nem olvad meg; a kvarcliszt egyedül sem olvad meg. Összekeverve sokkal jobban olvadnak, mint bármelyik külön. A háromszög-próba megmutatja, hol: az alábbi próbalap-térkép a hármat ~20%-os lépésekben (90-ből 18) lépteti, minden próbalapon 10% kaolinnal.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Mázhibák
 | Lepattogzás    | A máz jóval kevésbé zsugorodik, mint a massza | Több K₂O és Na₂O                                      |
 | Lefolyás       | Túl kevés timföld, vagy túl vastag réteg      | Több timföld; vékonyabb réteg                         |
 | Összehúzódás   | Poros zsenge, vagy vastag, megrepedt réteg    | Tisztítsa meg a zsengét; vékonyabb réteg              |
-| Tűszúrás       | Gáz, amely nem záródott be                    | Hőntartás az égetés végén; vékonyabb réteg            |
+| Tűszúrás       | Gáz, amely nem záródott be                    | Hőntartás a csúcshőmérsékleten; vékonyabb réteg            |
 
 [A máz illeszkedése és mázhibák](/guides/glazing-basics#fit-and-defects) mindegyiket elmagyarázza, a hajszálrepedés jeges vizes próbájával együtt. Hajszálrepedezett vagy lepattogzott árut ne használjon étel vagy ital számára.
 

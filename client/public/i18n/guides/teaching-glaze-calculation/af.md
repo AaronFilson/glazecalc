@@ -62,7 +62,7 @@ Label: Vier grondstowwe
 | EPK Kaolin           | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabiliseerder: die hoofalumina           |
 | Silika (珪石)        |  100 |     – |     – |    – |     – |     – | Glasvormer                                |
 
-Veldspaat alleen smelt by SK 8 tot 'n stywe glas; kalksteen alleen smelt nie; silika alleen smelt nie. Gemeng smelt hulle baie beter as enige een van hulle. 'n Triaksiale mengsel wys waar: die teëlkaart hieronder verander die drie in stappe van 20%, met 10% kaolien in elke teël.
+Veldspaat alleen smelt by SK 8 tot 'n stywe glas; kalksteen alleen smelt nie; silika alleen smelt nie. Gemeng smelt hulle baie beter as enige een van hulle. 'n Triaksiale mengsel wys waar: die teëlkaart hieronder verander die drie in stappe van ~20% (18 van 90), met 10% kaolien in elke teël.
 
 ::shops
 

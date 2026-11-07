@@ -62,7 +62,7 @@ Label: Cztery surowce
 | EPK Kaolin        | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizator: główne źródło tlenku glinu      |
 | Krzemionka (珪石) |  100 |     – |     – |    – |     – |     – | Tlenek szkłotwórczy                           |
 
-Sam skaleń topi się w SK 8 w lepkie szkło; sama kreda się nie topi; sama krzemionka się nie topi. Zmieszane topią się znacznie lepiej niż każdy z nich z osobna. Pokazuje to mieszanka trójskładnikowa: mapa poniżej zmienia udziały trzech surowców co 20 %, a w każdej płytce jest 10 % kaolinu.
+Sam skaleń topi się w SK 8 w lepkie szkło; sama kreda się nie topi; sama krzemionka się nie topi. Zmieszane topią się znacznie lepiej niż każdy z nich z osobna. Pokazuje to mieszanka trójskładnikowa: mapa poniżej zmienia udziały trzech surowców co ~20 % (18 z 90), a w każdej płytce jest 10 % kaolinu.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Wady
 | Odpryskiwanie szkliwa | Szkliwo kurczy się znacznie mniej niż czerep       | Więcej K₂O i Na₂O                                        |
 | Spływanie szkliwa     | Zbyt mało tlenku glinu lub zbyt gruba warstwa      | Więcej tlenku glinu; cieńsza warstwa                     |
 | Zbieganie się szkliwa | Zakurzony biskwit lub gruba warstwa, która spękała | Oczyścić biskwit; cieńsza warstwa                        |
-| Nakłucia              | Gaz, po którym ślad nie zasklepił się              | Przetrzymanie na końcu wypału; cieńsza warstwa           |
+| Nakłucia              | Gaz, po którym ślad nie zasklepił się              | Przetrzymanie w temperaturze maksymalnej wypału; cieńsza warstwa           |
 
 Część [Dopasowanie szkliwa i wady](/guides/glazing-basics#fit-and-defects) wyjaśnia każdą z nich, razem z próbą z lodowatą wodą dla pęknięć włoskowatych. Wyrobów z pęknięciami włoskowatymi ani z odpryskującym szkliwem nie należy używać do żywności ani napojów.
 

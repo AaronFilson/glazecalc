@@ -62,7 +62,7 @@ Label: Kaya huɗu
 | EPK Kaolin          | 45.7 |  37.4 |  0.33 | 0.06 |  0.18 |  13.9 | Mai daidaitawa: babban tushen alumina |
 | Silica (珪石)       |  100 |     – |     – |    – |     – |     – | Mai gina gilashi                      |
 
-Feldspar shi kaɗai yana narkewa a SK 8 ya zama gilashi mai tauri; whiting shi kaɗai ba ya narkewa; silica shi kaɗai ba ya narkewa. Idan aka haɗa su, suna narkewa fiye da kowanne ɗaya daga cikinsu. Haɗin triaxial yana nuna inda: taswirar tayil da ke ƙasa tana canja uku ɗin da kashi 20% a kowane mataki, da kaolin kashi 10% a kowane tayil.
+Feldspar shi kaɗai yana narkewa a SK 8 ya zama gilashi mai tauri; whiting shi kaɗai ba ya narkewa; silica shi kaɗai ba ya narkewa. Idan aka haɗa su, suna narkewa fiye da kowanne ɗaya daga cikinsu. Haɗin triaxial yana nuna inda: taswirar tayil da ke ƙasa tana canja uku ɗin da kashi ~20% (18 cikin 90) a kowane mataki, da kaolin kashi 10% a kowane tayil.
 
 ::shops
 

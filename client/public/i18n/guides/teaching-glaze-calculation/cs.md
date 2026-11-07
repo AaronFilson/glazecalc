@@ -62,7 +62,7 @@ Label: Čtyři suroviny
 | EPK Kaolin       | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizátor: hlavní zdroj oxidu hlinitého      |
 | Křemen (珪石)    |  100 |     – |     – |    – |     – |     – | Sklotvorný oxid                                 |
 
-Samotný živec se při žároměrce SK 8 roztaví na viskózní sklo; samotná křída se neroztaví; samotný křemen se neroztaví. Smíchané se taví mnohem lépe než kterákoli z nich samotná. Kde přesně, ukáže trojúhelníková směs: mapa střípků níže mění podíly těch tří po 20 %, s 10 % kaolinu v každém střípku.
+Samotný živec se při žároměrce SK 8 roztaví na viskózní sklo; samotná křída se neroztaví; samotný křemen se neroztaví. Smíchané se taví mnohem lépe než kterákoli z nich samotná. Kde přesně, ukáže trojúhelníková směs: mapa střípků níže mění podíly těch tří po ~20 % (18 z 90), s 10 % kaolinu v každém střípku.
 
 ::shops
 

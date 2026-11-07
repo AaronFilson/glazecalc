@@ -62,7 +62,7 @@ Label: Four materials
 | EPK Kaolin          | 45.7 |  37.4 |  0.33 | 0.06 |  0.18 |  13.9 | Stabilizer: the main alumina          |
 | Silica (珪石)       |  100 |     – |     – |    – |     – |     – | Glass former                          |
 
-Feldspar alone melts at SK 8 into a stiff glass; whiting alone does not melt; silica alone does not melt. Mixed, they melt far better than any one of them. A triaxial blend shows where: the tile map below steps the three in 20% steps, with 10% kaolin in every tile.
+Feldspar alone melts at SK 8 into a stiff glass; whiting alone does not melt; silica alone does not melt. Mixed, they melt far better than any one of them. A triaxial blend shows where: the tile map below steps the three in ~20% steps (18 of 90), with 10% kaolin in every tile.
 
 ::shops
 

@@ -62,7 +62,7 @@ Label: Quattro materiali
 | Caolino EPK                  | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizzante: la principale fonte di allumina |
 | Silice (珪石)                |  100 |     – |     – |    – |     – |     – | Vetrificante                                   |
 
-Il feldspato da solo fonde a SK 8 in un vetro viscoso; il carbonato di calcio da solo non fonde; la silice da sola non fonde. Mescolati, fondono molto meglio di ciascuno di essi. Una miscela triassiale mostra dove: la mappa dei provini qui sotto fa variare i tre a gradini del 20%, con il 10% di caolino in ogni provino.
+Il feldspato da solo fonde a SK 8 in un vetro viscoso; il carbonato di calcio da solo non fonde; la silice da sola non fonde. Mescolati, fondono molto meglio di ciascuno di essi. Una miscela triassiale mostra dove: la mappa dei provini qui sotto fa variare i tre a gradini del ~20% (18 su 90), con il 10% di caolino in ogni provino.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Difetti
 | Scagliatura         | Lo smalto si contrae molto meno dell’impasto         | Più K₂O e Na₂O                                            |
 | Colatura            | Allumina insufficiente, o strato troppo spesso       | Più allumina; uno strato più sottile                      |
 | Ritiro dello smalto | Biscotto polveroso, o strato spesso che si è crepato | Pulire il biscotto; uno strato più sottile                |
-| Puntinatura         | Gas che non si è richiuso                            | Una sosta alla fine della cottura; uno strato più sottile |
+| Puntinatura         | Gas che non si è richiuso                            | Una sosta alla temperatura massima della cottura; uno strato più sottile |
 
 [Accordo smalto-impasto e difetti](/guides/glazing-basics#fit-and-defects) spiega ciascuno, con la prova dell’acqua e ghiaccio per la cavillatura. Non usare per cibi o bevande pezzi cavillati o con scagliature.
 

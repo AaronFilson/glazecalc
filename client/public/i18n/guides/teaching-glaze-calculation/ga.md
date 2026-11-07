@@ -62,7 +62,7 @@ Label: Ceithre ábhar
 | EPK Kaolin            | 45.7 |  37.4 |  0.33 | 0.06 |  0.18 |  13.9 | Cobhsaitheoir: an príomh-alúmana                 |
 | Silice (珪石)         |  100 |     – |     – |    – |     – |     – | Foirmeoir gloine                                 |
 
-Leánann iathchloch léi féin ag SK 8 ina gloine righin; ní leánann bánlí léi féin; ní leánann silice léi féin. Measctha, leánann siad i bhfad níos fearr ná aon cheann acu astu féin. Léiríonn cumasc trí-aiseach cá háit: athraíonn an léarscáil tílí thíos an triúr i gcéimeanna 20%, agus 10% caoilín i ngach tíl.
+Leánann iathchloch léi féin ag SK 8 ina gloine righin; ní leánann bánlí léi féin; ní leánann silice léi féin. Measctha, leánann siad i bhfad níos fearr ná aon cheann acu astu féin. Léiríonn cumasc trí-aiseach cá háit: athraíonn an léarscáil tílí thíos an triúr i gcéimeanna ~20% (18 as 90), agus 10% caoilín i ngach tíl.
 
 ::shops
 
@@ -373,7 +373,7 @@ Label: Bileog oibre 6
 
 - Cén mháchail a thagann ó ghlónra a chrapann níos mó ná a chré-ábhar, agus cad é an chéad leigheas?
 - Cén fáth a gcaithfear gan gréithe a bhfuil spallú glónra orthu a úsáid do bhia riamh?
-- An féidir le ríomh a insint duit go bhfuil glónra slán i gcomhair bia? Cad is féidir leis é sin a dhéanamh?
+- An féidir le ríomh a insint duit go bhfuil glónra slán i gcomhair bia? Cad atá in ann é sin a insint duit?
 
 ## Léarscáileanna tílí le priontáil {#tile-maps}
 

@@ -62,7 +62,7 @@ Label: Quatre matières
 | Kaolin EPK                    | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilisant : la principale source d’alumine        |
 | Silice (珪石)                 |  100 |     – |     – |    – |     – |     – | Vitrifiant                                          |
 
-Le feldspath seul fond à SK 8 en un verre visqueux ; le carbonate de calcium seul ne fond pas ; la silice seule ne fond pas. Mélangés, ils fondent bien mieux que n’importe lequel d’entre eux. Un essai triaxial montre où : le plan des tessons ci-dessous fait varier les trois par pas de 20 %, avec 10 % de kaolin dans chaque tesson.
+Le feldspath seul fond à SK 8 en un verre visqueux ; le carbonate de calcium seul ne fond pas ; la silice seule ne fond pas. Mélangés, ils fondent bien mieux que n’importe lequel d’entre eux. Un essai triaxial montre où : le plan des tessons ci-dessous fait varier les trois par pas de ~20 % (18 sur 90), avec 10 % de kaolin dans chaque tesson.
 
 ::shops
 

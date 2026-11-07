@@ -62,7 +62,7 @@ Label: Neljä raaka-ainetta
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |        13,9 | Tasapainottaja: tärkein alumiinioksidin lähde            |
 | Kvartsi (珪石)      |  100 |     – |     – |    – |     – |           – | Lasinmuodostaja                                          |
 
-Pelkkä maasälpä{{en: feldspar}} sulaa SK 8 -poltossa jäykäksi lasiksi; pelkkä liitu ei sula; pelkkä kvartsi ei sula. Seoksena ne sulavat paljon paremmin kuin mikään niistä yksin. Kolmiokoe näyttää, missä: alla oleva koepalakartta porrastaa kolmea raaka-ainetta 20 %:n askelin, ja jokaisessa koepalassa on 10 % kaoliinia.
+Pelkkä maasälpä{{en: feldspar}} sulaa SK 8 -poltossa jäykäksi lasiksi; pelkkä liitu ei sula; pelkkä kvartsi ei sula. Seoksena ne sulavat paljon paremmin kuin mikään niistä yksin. Kolmiokoe näyttää, missä: alla oleva koepalakartta porrastaa kolmea raaka-ainetta ~20 %:n askelin (18 90:stä), ja jokaisessa koepalassa on 10 % kaoliinia.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Lasitevirheet
 | Hilseily     | Lasite kutistuu paljon vähemmän kuin massa                   | Enemmän K₂O ja Na₂O                                                  |
 | Valuminen    | Liian vähän alumiinioksidia tai liian paksu kerros           | Enemmän alumiinioksidia; ohuempi kerros                              |
 | Kuroutuminen | Pölyinen raakapoltettu pinta tai paksu kerros, joka halkeili | Puhdista raakapoltettu pinta; ohuempi kerros                         |
-| Neulanreiät  | Kaasu, jonka reiät eivät sulkeutuneet                        | Haudutus polton lopussa; ohuempi kerros                              |
+| Neulanreiät  | Kaasu, jonka reiät eivät sulkeutuneet                        | Haudutus huippulämpötilassa; ohuempi kerros                              |
 
 [Lasitteen ja massan yhteensopivuus sekä lasitevirheet](/guides/glazing-basics#fit-and-defects) selittää jokaisen, ja siinä on säröilyn jäävesitesti. Älä käytä säröillyttä tai hilseillyttä esinettä ruokaan tai juomaan.
 

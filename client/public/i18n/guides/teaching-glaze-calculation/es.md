@@ -62,7 +62,7 @@ Label: Cuatro materiales
 | EPK Kaolin                 | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Estabilizante: la principal fuente de alúmina      |
 | Sílice (珪石)              |  100 |     – |     – |    – |     – |     – | Formador de vidrio                                 |
 
-Solo con feldespato, a SK 8 se funde y forma un vidrio viscoso; el carbonato cálcico solo no se funde; la sílice sola no se funde. Mezclados, se funden mucho mejor que cualquiera de ellos por separado. Una mezcla triaxial muestra dónde: el mapa de probetas de más abajo varía los tres en pasos del 20 %, con un 10 % de caolín en cada probeta.
+Solo con feldespato, a SK 8 se funde y forma un vidrio viscoso; el carbonato cálcico solo no se funde; la sílice sola no se funde. Mezclados, se funden mucho mejor que cualquiera de ellos por separado. Una mezcla triaxial muestra dónde: el mapa de probetas de más abajo varía los tres en pasos del ~20 % (18 de 90), con un 10 % de caolín en cada probeta.
 
 ::shops
 

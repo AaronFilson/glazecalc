@@ -62,7 +62,7 @@ Label: Bốn nguyên liệu
 | EPK Kaolin                       | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Chất ổn định: nguồn alumina chính                |
 | Silica (珪石)                    |  100 |     – |     – |    – |     – |     – | Chất tạo thủy tinh                               |
 
-Trường thạch đứng một mình nóng chảy ở SK 8 thành một loại thủy tinh quánh; canxi cacbonat đứng một mình thì không nóng chảy; silica đứng một mình cũng không nóng chảy. Trộn lại, chúng nóng chảy tốt hơn nhiều so với bất kỳ thứ nào trong số đó. Một phép pha trộn tam giác cho thấy chỗ nào: bản đồ mẫu thử bên dưới chia ba thứ theo các bước 20%, với 10% cao lanh trong mọi viên.
+Trường thạch đứng một mình nóng chảy ở SK 8 thành một loại thủy tinh quánh; canxi cacbonat đứng một mình thì không nóng chảy; silica đứng một mình cũng không nóng chảy. Trộn lại, chúng nóng chảy tốt hơn nhiều so với bất kỳ thứ nào trong số đó. Một phép pha trộn tam giác cho thấy chỗ nào: bản đồ mẫu thử bên dưới chia ba thứ theo các bước ~20% (18 trên 90), với 10% cao lanh trong mọi viên.
 
 ::shops
 

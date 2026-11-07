@@ -62,7 +62,7 @@ Label: Četras izejvielas
 | EPK Kaolin           | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |              13,9 | Stabilizators: galvenais alumīnija oksīda avots      |
 | Kvarcs (珪石)        |  100 |     – |     – |    – |     – |                 – | Stikla veidotājs                                     |
 
-Apdedzinot līdz SK 8, laukšpats vien izkūst par stigru stiklu; krīts vien neizkūst; kvarcs vien neizkūst. Sajaukti tie kūst daudz labāk nekā jebkurš no tiem atsevišķi. Trīsstūra provju sērija parāda, kur tieši: zemāk redzamajā izkārtojumā šie trīs mainās ar 20% soli, un katrā provē ir 10% kaolīna.
+Apdedzinot līdz SK 8, laukšpats vien izkūst par stigru stiklu; krīts vien neizkūst; kvarcs vien neizkūst. Sajaukti tie kūst daudz labāk nekā jebkurš no tiem atsevišķi. Trīsstūra provju sērija parāda, kur tieši: zemāk redzamajā izkārtojumā šie trīs mainās ar ~20% soli (18 no 90), un katrā provē ir 10% kaolīna.
 
 ::shops
 

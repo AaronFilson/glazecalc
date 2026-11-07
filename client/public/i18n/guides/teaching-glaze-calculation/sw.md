@@ -62,7 +62,7 @@ Label: Malighafi nne
 | EPK Kaolin          | 45.7 |  37.4 |  0.33 | 0.06 |  0.18 |  13.9 | Kiimarishaji: alumina kuu              |
 | Silika (珪石)       |  100 |     – |     – |    – |     – |     – | Kiunda kioo                            |
 
-Feldspar peke yake huyeyuka kwenye SK 8 kuwa kioo kigumu; whiting peke yake haiyeyuki; silika peke yake haiyeyuki. Zikichanganywa, huyeyuka vizuri zaidi kuliko yoyote kati yake. Mchanganyiko wa triaxial unaonyesha wapi: ramani ya vigae iliyo hapa chini inapanga zote tatu kwa hatua za 20%, na kaolini 10% katika kila kigae.
+Feldspar peke yake huyeyuka kwenye SK 8 kuwa kioo kigumu; whiting peke yake haiyeyuki; silika peke yake haiyeyuki. Zikichanganywa, huyeyuka vizuri zaidi kuliko yoyote kati yake. Mchanganyiko wa triaxial unaonyesha wapi: ramani ya vigae iliyo hapa chini inapanga zote tatu kwa hatua za ~20% (18 kati ya 90), na kaolini 10% katika kila kigae.
 
 ::shops
 

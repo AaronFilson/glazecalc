@@ -34,7 +34,7 @@ Label: Kuus õppetundi
 ## Õppetund 1: toorained ja kolmnurkkatse proovitükid {#materials}
 
 > [!WARNING]
-> Kaaluge kuivi tooraineid õrnalt, koristage märjalt ja kandke õigesti sobitatud respiraatorit, kuni pulbrid on kuivad. Lugege kõigepealt [Peamine oht: tolm](/guides/safe-mixing#the-main-hazard) ja [Respiraatorid](/guides/safe-mixing#respirators).
+> Kaaluge kuivi tooraineid õrnalt, koristage märjalt ja kandke õigesti sobitatud respiraatorit alati, kui pulbrid on kuivad. Lugege kõigepealt [Peamine oht: tolm](/guides/safe-mixing#the-main-hazard) ja [Respiraatorid](/guides/safe-mixing#respirators).
 
 ### Eesmärgid
 
@@ -62,7 +62,7 @@ Label: Neli toorainet
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |         13,9 | Stabilisaator: peamine alumiiniumoksiidi allikas    |
 | Kvarts (珪石)       |  100 |     – |     – |    – |     – |            – | Klaasimoodustaja                                    |
 
-SK 8 juures sulab põldpagu üksi jäigaks klaasiks; kriit üksi ei sula; kvarts üksi ei sula. Segatuna sulavad nad palju paremini kui ükski neist eraldi. Kolmnurkkatse näitab, kus: allolev skeem muudab kolme koostisosa 20% sammudega ja igas proovitükis on 10% kaoliini.
+SK 8 juures sulab põldpagu üksi jäigaks klaasiks; kriit üksi ei sula; kvarts üksi ei sula. Segatuna sulavad nad palju paremini kui ükski neist eraldi. Kolmnurkkatse näitab, kus: allolev skeem muudab kolme koostisosa ~20% sammudega (18 90-st) ja igas proovitükis on 10% kaoliini.
 
 ::shops
 

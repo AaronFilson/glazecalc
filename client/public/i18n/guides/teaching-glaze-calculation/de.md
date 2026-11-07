@@ -62,7 +62,7 @@ Label: Vier Rohstoffe
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilisator: die wichtigste Tonerdequelle       |
 | Quarzmehl (珪石)    |  100 |     – |     – |    – |     – |     – | Glasbildner                                      |
 
-Feldspat allein schmilzt bei SK 8 zu einem zähen Glas; Kreide allein schmilzt nicht; Quarzmehl allein schmilzt nicht. Gemischt schmelzen sie weit besser als jeder einzelne von ihnen. Eine Dreistoffmischung zeigt, wo: Der Plättchenplan unten stuft die drei in Schritten von 20 % ab, mit 10 % Kaolin in jedem Plättchen.
+Feldspat allein schmilzt bei SK 8 zu einem zähen Glas; Kreide allein schmilzt nicht; Quarzmehl allein schmilzt nicht. Gemischt schmelzen sie weit besser als jeder einzelne von ihnen. Eine Dreistoffmischung zeigt, wo: Der Plättchenplan unten stuft die drei in Schritten von ~20 % (18 von 90) ab, mit 10 % Kaolin in jedem Plättchen.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Fehler
 | Abplatzen   | Die Glasur schwindet weit weniger als die Tonmasse         | Mehr K₂O und Na₂O                                     |
 | Ablaufen    | Zu wenig Tonerde oder zu dick                              | Mehr Tonerde; dünner auftragen                        |
 | Abrollen    | Staubige Schrühware oder eine dicke, gerissene Schicht     | Schrühware säubern; dünner auftragen                  |
-| Nadelstiche | Gas, dessen Austrittsstellen nicht wieder zugeflossen sind | Eine Haltezeit am Ende des Brandes; dünner auftragen  |
+| Nadelstiche | Gas, dessen Austrittsstellen nicht wieder zugeflossen sind | Eine Haltezeit bei Höchsttemperatur; dünner auftragen |
 
 [Glasursitz und Glasurfehler](/guides/glazing-basics#fit-and-defects) erklärt jeden einzelnen, mit dem Eiswassertest für Haarrisse. Verwenden Sie Ware mit Haarrissen oder abgeplatzter Glasur nicht für Speisen oder Getränke.
 
@@ -373,7 +373,7 @@ Label: Arbeitsblatt 6
 
 - Welcher Fehler entsteht bei einer Glasur, die stärker schwindet als ihre Tonmasse, und was ist eine erste Abhilfe?
 - Warum darf Ware mit abgeplatzter Glasur nie für Speisen verwendet werden?
-- Kann eine Berechnung sagen, dass eine Glasur für Lebensmittel sicher ist? Was kann es?
+- Kann eine Berechnung sagen, dass eine Glasur für Lebensmittel sicher ist? Womit lässt sich das feststellen?
 
 ## Plättchenpläne zum Ausdrucken {#tile-maps}
 

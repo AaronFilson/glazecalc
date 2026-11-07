@@ -62,7 +62,7 @@ Label: Vier grondstoffen
 | EPK Kaolin           | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilisator: het belangrijkste aluminiumoxide         |
 | Kwarts (珪石)        |  100 |     – |     – |    – |     – |     – | Glasvormer                                             |
 
-Veldspaat alleen smelt bij SK 8 tot een taai glas; krijt alleen smelt niet; kwarts alleen smelt niet. Gemengd smelten ze veel beter dan elk afzonderlijk. Een driehoeksmenging laat zien waar: de kaart hieronder zet de drie in stappen van 20%, met 10% kaolien in elk plaatje.
+Veldspaat alleen smelt bij SK 8 tot een taai glas; krijt alleen smelt niet; kwarts alleen smelt niet. Gemengd smelten ze veel beter dan elk afzonderlijk. Een driehoeksmenging laat zien waar: de kaart hieronder zet de drie in stappen van ~20% (18 van 90), met 10% kaolien in elk plaatje.
 
 ::shops
 

@@ -62,7 +62,7 @@ Label: Štiri surovine
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizator: glavni vir glinice     |
 | Kremen (珪石)       |  100 |     – |     – |    – |     – |     – | Tvorec stekla                        |
 
-Glinenec sam pri SK 8 stali v viskozno steklo; kreda sama se ne stali; kremen sam se ne stali. V mešanici se stalijo veliko bolje kot katera koli sama. Triaksialna mešanica pokaže, kje: spodnji načrt ploščic spreminja tri surovine v korakih po 20 %, v vsaki ploščici pa je 10 % kaolina.
+Glinenec sam pri SK 8 stali v viskozno steklo; kreda sama se ne stali; kremen sam se ne stali. V mešanici se stalijo veliko bolje kot katera koli sama. Triaksialna mešanica pokaže, kje: spodnji načrt ploščic spreminja tri surovine v korakih po ~20 % (18 od 90), v vsaki ploščici pa je 10 % kaolina.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Napake
 | Luščenje        | Glazura se krči precej manj kot glinena masa   | Več K₂O in Na₂O                                   |
 | Odtekanje       | Premalo glinice ali predebel nanos             | Več glinice; tanjši nanos                         |
 | Krčenje glazure | Prašen biskvit ali debel nanos, ki je razpokal | Očistite biskvit; tanjši nanos                    |
-| Luknjice        | Plin, ki se ni zacelil                         | Zadržanje ob koncu žganja; tanjši nanos           |
+| Luknjice        | Plin, ki se ni zacelil                         | Zadržanje pri najvišji temperaturi žganja; tanjši nanos           |
 
 [Ujemanje glazure in napake](/guides/glazing-basics#fit-and-defects) razloži vsako od njih, s preskusom z ledeno vodo za lasaste razpoke. Izdelkov z lasastimi razpokami ali z luščenjem ne uporabljajte za hrano ali pijačo.
 

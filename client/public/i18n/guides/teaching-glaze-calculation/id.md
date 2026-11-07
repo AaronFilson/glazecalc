@@ -62,7 +62,7 @@ Label: Empat bahan
 | EPK Kaolin          | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Penstabil: sumber utama alumina               |
 | Silika (珪石)       |  100 |     – |     – |    – |     – |     – | Pembentuk kaca                                |
 
-Feldspar sendirian meleleh pada SK 8 menjadi kaca yang kental; whiting sendirian tidak meleleh; silika sendirian tidak meleleh. Dicampur, ketiganya meleleh jauh lebih baik daripada salah satunya. Campuran triaksial menunjukkan di mana: peta ubin di bawah menaikkan ketiganya dengan langkah 20%, dengan 10% kaolin di setiap ubin.
+Feldspar sendirian meleleh pada SK 8 menjadi kaca yang kental; whiting sendirian tidak meleleh; silika sendirian tidak meleleh. Dicampur, ketiganya meleleh jauh lebih baik daripada salah satunya. Campuran triaksial menunjukkan di mana: peta ubin di bawah menaikkan ketiganya dengan langkah ~20% (18 dari 90), dengan 10% kaolin di setiap ubin.
 
 ::shops
 

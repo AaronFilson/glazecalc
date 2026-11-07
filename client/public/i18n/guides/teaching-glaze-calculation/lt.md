@@ -62,7 +62,7 @@ Label: Keturios žaliavos
 | EPK kaolinas            | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Stabilizatorius: pagrindinis aliuminio oksido šaltinis      |
 | Kvarcas (珪石)          |  100 |     – |     – |    – |     – |     – | Stiklą sudarantis oksidas                                   |
 
-Vien lauko špatas ties SK 8 išsilydo į klampų stiklą; vien kreida neišsilydo; vien kvarcas neišsilydo. Sumaišytos jos išsilydo kur kas geriau nei kuri nors viena. Triašio mišinys parodo, kur: žemiau pateiktoje bandinių schemoje trys žaliavos keičiamos 20 % žingsniais, o kiekviename bandinyje yra 10 % kaolino.
+Vien lauko špatas ties SK 8 išsilydo į klampų stiklą; vien kreida neišsilydo; vien kvarcas neišsilydo. Sumaišytos jos išsilydo kur kas geriau nei kuri nors viena. Triašio mišinys parodo, kur: žemiau pateiktoje bandinių schemoje trys žaliavos keičiamos ~20 % žingsniais (18 iš 90), o kiekviename bandinyje yra 10 % kaolino.
 
 ::shops
 
@@ -348,7 +348,7 @@ Label: Defektai
 | Atšokimas             | Glazūra susitraukia kur kas mažiau nei šukė             | Daugiau K₂O ir Na₂O                                                          |
 | Nubėgimas             | Per mažai aliuminio oksido arba per storas sluoksnis    | Daugiau aliuminio oksido; plonesnis sluoksnis                                |
 | Susitraukimas į salas | Dulkėtas biskvitas arba storas sluoksnis, kuris suskilo | Nuvalykite biskvitą; plonesnis sluoksnis                                     |
-| Adatinės skylutės     | Dujos, po kurių skylutės neužsilydė                     | Išlaikymas degimo pabaigoje aukščiausioje temperatūroje; plonesnis sluoksnis |
+| Adatinės skylutės     | Dujos, po kurių skylutės neužsilydė                     | Išlaikymas aukščiausioje degimo temperatūroje; plonesnis sluoksnis |
 
 [Glazūros ir šukės suderinamumas ir defektai](/guides/glazing-basics#fit-and-defects) paaiškina kiekvieną defektą, taip pat ledinio vandens bandymą trūkinėjimui nustatyti. Trūkinėjusių ar atšokusių dirbinių nenaudokite maistui ar gėrimams.
 

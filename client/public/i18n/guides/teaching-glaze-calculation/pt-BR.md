@@ -62,7 +62,7 @@ Label: Quatro matérias-primas
 | Caulim EPK                   | 45,7 |  37,4 |  0,33 | 0,06 |  0,18 |  13,9 | Estabilizante: a principal fonte de alumina |
 | Sílica (珪石)                |  100 |     – |     – |    – |     – |     – | Formador de vidro                           |
 
-O feldspato sozinho derrete no SK 8 e vira um vidro viscoso; o carbonato de cálcio sozinho não derrete; a sílica sozinha não derrete. Misturados, derretem muito melhor do que qualquer um deles. Uma mistura triaxial mostra onde: o mapa de provas abaixo varia os três de 20% em 20%, com 10% de caulim em todas as provas.
+O feldspato sozinho derrete no SK 8 e vira um vidro viscoso; o carbonato de cálcio sozinho não derrete; a sílica sozinha não derrete. Misturados, derretem muito melhor do que qualquer um deles. Uma mistura triaxial mostra onde: o mapa de provas abaixo varia os três de ~20% em ~20% (18 de 90), com 10% de caulim em todas as provas.
 
 ::shops
 
