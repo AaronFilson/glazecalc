@@ -348,7 +348,7 @@ Label: Pantaykuna
 | Shivering | Esmalteqa mitumanta ancha aswan pisillata pisiyan               | Aswan K₂O Na₂O                                        |
 | Puriy     | Ancha pisi alúmina, utaq ancha rakhu                            | Aswan alúmina; aswan llañu llut'ay                    |
 | Crawling  | Ñut'u allpayuq bizcocho, utaq ch'akispa p'akikuq rakhu llut'ana | Bizcochota pichay; aswan llañu llut'ay                |
-| Pinholes  | Mana wichq'akuq gas                                             | Aswan hanaq ruphaypi suyay; aswan llañu llut'ay       |
+| Pinholes  | Mana wichq'akuq gas                                             | Ruphachiypa patanpi suyay; aswan llañu llut'ay       |
 
 [Esmalte tupay, pantaykunapas](/guides/glazing-basics#fit-and-defects) sapa kaqta sut'inchan, cuarteadopaq chiri rit'i unu pruebatapas. Ama cuarteadoyuq utaq shiveringyuq mankakunata mikhunapaq ukyanapaq llamk'achiychu.
 

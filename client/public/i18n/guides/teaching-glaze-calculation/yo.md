@@ -373,7 +373,7 @@ Label: Ìwé iṣẹ́ 6
 
 - Àbùkù wo ni ó wá láti inú glaze tí ó ń sún kì ju oríṣi amọ̀ rẹ̀ lọ, kí sì ni ojútùú àkọ́kọ́?
 - Kí ló dé tí a kò fi gbọ́dọ̀ lo ohun èlò tí ó ní shivering fún oúnjẹ láé?
-- Ṣé ìṣirò lè sọ fún yín pé glaze láìléwu fún oúnjẹ? Kí ni ó lè sọ?
+- Ṣé ìṣirò lè sọ fún yín pé glaze láìléwu fún oúnjẹ? Ohun wo ló lè sọ ọ́?
 
 ## Àwòrán táílì láti tẹ̀ jáde {#tile-maps}
 

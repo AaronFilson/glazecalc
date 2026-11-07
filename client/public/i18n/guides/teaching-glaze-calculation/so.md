@@ -372,7 +372,7 @@ Label: Warqad shaqo 6
 ### Hubi
 
 - Cilladdee ayaa ka timaadda glaze ka badan yaraada dhoobadiisa, xal koowaadna waa maxay?
-- Maxay tahay sababta weelka shivered aan weligii cunto loogu isticmaali karin?
+- Maxay tahay sababta weelka shivered ay tahay in aan weligii cunto loogu isticmaalin?
 - Xisaab ma kuu sheegi kartaa in glaze ammaan u yahay cunto? Maxaa sheegi kara?
 
 ## Khariidadaha tile ee la daabaco {#tile-maps}
