@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standardråvaror",
       "text": "Varje råvara i biblioteket med oxidanalys, bidrag till Segerformeln och faror."
+    },
+    "famous": {
+      "title": "Berömda glasyrer",
+      "text": "Glasyrer som är kända över hela världen, var och en av sina traditionella lokala råvaror, med sin Segerformel och en version av de råvaror som säljs i den egna regionen."
     }
   },
   "contents": "På den här sidan",

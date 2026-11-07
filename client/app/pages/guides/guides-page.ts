@@ -60,6 +60,11 @@ export const REFERENCE_PAGES = {
     path: '/materials',
     title: marker('guides.related.materials.title'),
     text: marker('guides.related.materials.text')
+  },
+  famous: {
+    path: '/famous-glazes',
+    title: marker('guides.related.famous.title'),
+    text: marker('guides.related.famous.text')
   }
 } as const;
 

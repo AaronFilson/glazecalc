@@ -53,6 +53,10 @@
     "materials": {
       "title": "Materiales estándar",
       "text": "Cada material de la biblioteca con su análisis de óxidos, su aporte a la fórmula unitaria y sus riesgos."
+    },
+    "famous": {
+      "title": "Esmaltes famosos",
+      "text": "Esmaltes conocidos en todo el mundo, cada uno con sus materiales locales tradicionales, su fórmula unitaria y una versión con los materiales que se venden donde vives."
     }
   },
   "contents": "En esta página",

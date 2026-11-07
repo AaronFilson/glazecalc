@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standard materials",
       "text": "Each material in the library with its oxide analysis, unity formula contribution and hazards."
+    },
+    "famous": {
+      "title": "Famous glazes",
+      "text": "Glazes known around the world, each from its traditional local materials, with its unity formula and a version from the materials sold where you are."
     }
   },
   "contents": "On this page",

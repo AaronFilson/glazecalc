@@ -53,6 +53,10 @@
     "materials": {
       "title": "Materiales estándar",
       "text": "Cada material de la biblioteca con su análisis de óxidos, su aportación a la fórmula Seger y sus peligros."
+    },
+    "famous": {
+      "title": "Esmaltes famosos",
+      "text": "Esmaltes conocidos en todo el mundo, cada uno con sus materiales locales tradicionales, su fórmula Seger y una versión con los materiales que se venden donde usted compra."
     }
   },
   "contents": "En esta página",

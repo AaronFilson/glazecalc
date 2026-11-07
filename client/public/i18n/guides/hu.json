@@ -53,6 +53,10 @@
     "materials": {
       "title": "Beépített nyersanyagok",
       "text": "A könyvtár minden nyersanyaga oxidos összetételével, a Seger-képlethez való hozzájárulásával és veszélyeivel."
+    },
+    "famous": {
+      "title": "Híres mázak",
+      "text": "Világszerte ismert mázak, mindegyik a hagyományos helyi nyersanyagaiból, a Seger-képletével és egy változattal azokból a nyersanyagokból, amelyeket ott forgalmaznak, ahol Ön él."
     }
   },
   "contents": "Ezen az oldalon",

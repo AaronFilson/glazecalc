@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standardne surovine",
       "text": "Vsaka surovina v knjižnici z oksidno analizo, prispevkom k Segerjevi formuli in nevarnostmi."
+    },
+    "famous": {
+      "title": "Znane glazure",
+      "text": "Glazure, znane po vsem svetu, vsaka iz svojih tradicionalnih lokalnih surovin, s Segerjevo formulo in različico iz surovin, ki se prodajajo tam, kjer ste."
     }
   },
   "contents": "Na tej strani",

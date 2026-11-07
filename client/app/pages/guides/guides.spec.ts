@@ -176,10 +176,11 @@ describe('guides', () => {
     const heading = page.querySelector('#reference');
     expect(heading?.textContent?.trim()).toBe('Reference pages');
     const reference = [...page.querySelectorAll<HTMLAnchorElement>('.guide-cards:last-of-type .guide-card')];
-    expect(reference.map((a) => a.getAttribute('href'))).toEqual(['/cones', '/materials']);
+    expect(reference.map((a) => a.getAttribute('href'))).toEqual(['/cones', '/materials', '/famous-glazes']);
     expect(reference.map((a) => a.querySelector('h3')?.textContent?.trim())).toEqual([
       'Cone chart',
-      'Standard materials'
+      'Standard materials',
+      'Famous glazes'
     ]);
 
     // A language the pages are not translated into does not offer them in its list.

@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standardsed toorained",
       "text": "Iga teegi toorain koos oksiidanalüüsi, Segeri valemi panuse ja ohtudega."
+    },
+    "famous": {
+      "title": "Kuulsad glasuurid",
+      "text": "Üle maailma tuntud glasuurid, igaüks oma traditsioonilistest kohalikest toorainetest, koos Segeri valemi ja versiooniga toorainetest, mida teie piirkonnas müüakse."
     }
   },
   "contents": "Sellel lehel",

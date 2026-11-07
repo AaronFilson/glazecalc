@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standardrohstoffe",
       "text": "Jeder Rohstoff der Bibliothek mit Oxidanalyse, Beitrag zur Segerformel und Gefahren."
+    },
+    "famous": {
+      "title": "Berühmte Glasuren",
+      "text": "Weltweit bekannte Glasuren, jede aus ihren traditionellen örtlichen Rohstoffen, mit ihrer Segerformel und einer Fassung aus den Rohstoffen, die es dort gibt, wo Sie einkaufen."
     }
   },
   "contents": "Auf dieser Seite",

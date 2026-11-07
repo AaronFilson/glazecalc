@@ -53,6 +53,10 @@
     "materials": {
       "title": "Materjali standard",
       "text": "Kull materjal tal-librerija bl-analiżi tal-ossidi, il-kontribut fil-formula ta’ Seger u l-perikli tiegħu."
+    },
+    "famous": {
+      "title": "Glejżijiet famużi",
+      "text": "Glejżijiet magħrufa madwar id-dinja, kull wieħed mill-materjali lokali tradizzjonali tiegħu, bil-formula ta’ Seger tiegħu u verżjoni bil-materjali li jinbiegħu fejn tinsab int."
     }
   },
   "contents": "F’din il-paġna",

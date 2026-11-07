@@ -53,6 +53,10 @@
     "materials": {
       "title": "Štandardné suroviny",
       "text": "Každá surovina v knižnici s oxidovým rozborom, príspevkom k Segerovmu vzorcu a rizikami."
+    },
+    "famous": {
+      "title": "Slávne glazúry",
+      "text": "Glazúry známe po celom svete, každá z tradičných miestnych surovín, s jej Segerovým vzorcom a verziou zo surovín, ktoré sa predávajú tam, kde ste."
     }
   },
   "contents": "Na tejto stránke",
