@@ -540,10 +540,18 @@ const SCRIPT_PAIRS = [
 /** Simplified forms Japanese writes too (温度, 数, 硅素). */
 const JAPANESE_TOO = '温数硅';
 
+/**
+ * A run of Han characters with kana in it: Japanese, quoted in a Chinese text as it is written (a source's title,
+ * 釉薬計算プログラムの開発), so not read for Chinese's script.
+ */
+const JAPANESE_RUN =
+  /[\p{sc=Han}\p{sc=Hiragana}\p{sc=Katakana}ー]*[\p{sc=Hiragana}\p{sc=Katakana}][\p{sc=Han}\p{sc=Hiragana}\p{sc=Katakana}ー]*/gu;
+
 /** Problems with a text's script: Chinese in the other script's characters, Japanese in simplified hanzi. */
-function scriptProblems(label, language, text) {
+function scriptProblems(label, language, original) {
   const wrong = { 'zh-Hans': 1, 'zh-Hant': 0, ja: 0 }[language];
   if (wrong === undefined) return [];
+  const text = language === 'ja' ? original : original.replace(JAPANESE_RUN, ' ');
   const pairs = SCRIPT_PAIRS.filter(([simplified]) => language !== 'ja' || !JAPANESE_TOO.includes(simplified));
   const found = pairs.filter((pair) => text.includes(pair[wrong]));
   if (!found.length) return [];

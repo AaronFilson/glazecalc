@@ -63,6 +63,18 @@ describe('right-to-left text', () => {
     );
     // Words and single letters are not formulas.
     expect(withLatinIsolated('Glazecalc A Fe')).toBe('Glazecalc A Fe');
+    // A sum written out reads left to right, its unit with it; a number alone is left as it is.
+    expect(withLatinIsolated('الكتلة 28.085 + 2 × 15.999 = 60.083 g، و 25 ÷ 60.083 = 0.416 mol، و 90 جزءًا.')).toBe(
+      'الكتلة ' +
+        LRI +
+        '28.085 + 2 × 15.999 = 60.083 g' +
+        PDI +
+        '، و ' +
+        LRI +
+        '25 ÷ 60.083 = 0.416 mol' +
+        PDI +
+        '، و 90 جزءًا.'
+    );
   });
 
   it("isolates a message's units and values, and turns its arrows, for the transpiler", () => {
