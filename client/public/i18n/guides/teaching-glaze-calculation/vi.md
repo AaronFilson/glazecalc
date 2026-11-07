@@ -410,7 +410,7 @@ Label: Bản đồ tam giác
 
 ### Lưới Seger: 24 loại men
 
-Mọi viên có cùng chất trợ chảy, 0,2 KNaO và 0,8 CaO, từ 福島長石 và canxi cacbonat. Alumina thay đổi từng bước theo chiều dọc của lưới và silica theo chiều ngang. Các công thức men được tính bằng phương pháp của buổi 5; công thức Seger của mỗi loại do Glazecalc tính sai khác không quá 0,01 về alumina và không quá 0,06 về silica. Đánh dấu mỗi viên lên một biểu đồ silica theo alumina, và vẽ các vùng của riêng bạn: mờ, bóng, non lửa, chảy men.
+Mọi viên có cùng chất trợ chảy, 0,2 KNaO và 0,8 CaO, từ 福島長石 và canxi cacbonat. Alumina tăng dần theo các hàng đi xuống của lưới, và silica tăng dần theo các cột đi sang phải. Các công thức men được tính bằng phương pháp của buổi 5; công thức Seger của mỗi loại do Glazecalc tính sai khác không quá 0,01 về alumina và không quá 0,06 về silica. Đánh dấu mỗi viên lên một biểu đồ silica theo alumina, và vẽ các vùng của riêng bạn: mờ, bóng, non lửa, chảy men.
 
 Table: Lưới Seger: 0,2 KNaO, 0,8 CaO, phần trăm theo khối lượng
 Label: Lưới Seger

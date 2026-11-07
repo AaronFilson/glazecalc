@@ -410,7 +410,7 @@ Label: Triaxial mapa
 
 ### Seger grilla: 24 esmaltekuna
 
-Sapa probetapi kaqlla fundentekuna, 0.2 KNaO 0.8 CaO, 福島長石manta whitingmanta. Alúmina grillapi uraykun, sílice pañaman. Ruranakunaqa 5 sesiónpa ñanwan yupasqa karqan; sapa kaqpa Glazecalcpa fórmula unitarian alúminanmanta 0.01 ukhupi, sílicenmanta 0.06 ukhupi kachkan. Sapa probetata sílice alúminawan gráficopi marcay, kikiykip suyukunata siq'iy: mana lliphiq (mate), lliphiq, mana allin ruphachisqa, puriq.
+Sapa probetapi kaqlla fundentekuna, 0.2 KNaO 0.8 CaO, 福島長石manta whitingmanta. Alúmina grillapi urayman riptin yapakun, sílice pañaman riptin yapakun. Ruranakunaqa 5 sesiónpa ñanwan yupasqa karqan; sapa kaqpa Glazecalcpa fórmula unitarian alúminanmanta 0.01 ukhupi, sílicenmanta 0.06 ukhupi kachkan. Sapa probetata sílice alúminawan gráficopi marcay, kikiykip suyukunata siq'iy: mana lliphiq (mate), lliphiq, mana allin ruphachisqa, puriq.
 
 Table: Seger grilla: 0.2 KNaO, 0.8 CaO, llasay porcentaje
 Label: Seger grilla

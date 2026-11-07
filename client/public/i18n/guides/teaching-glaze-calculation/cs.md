@@ -410,7 +410,7 @@ Label: Trojúhelníková mapa
 
 ### Segerova mřížka: 24 glazur
 
-Každý střípek má stejná taviva, 0,2 KNaO a 0,8 CaO, z 福島長石 a křídy. Oxid hlinitý se mění po mřížce shora dolů a oxid křemičitý zleva doprava. Recepty byly spočítány metodou z lekce 5; Segerův vzorec každého z nich vypočtený aplikací Glazecalc se liší nejvýše o 0,01 v oxidu hlinitém a o 0,06 v oxidu křemičitém. Označte každý střípek v diagramu oxidu křemičitého proti oxidu hlinitému a nakreslete si vlastní oblasti: matná, lesklá, nedopálená, stékavá.
+Každý střípek má stejná taviva, 0,2 KNaO a 0,8 CaO, z 福島長石 a křídy. Oxid hlinitý v mřížce roste od řádku k řádku směrem dolů a oxid křemičitý roste od sloupce ke sloupci směrem doprava. Recepty byly spočítány metodou z lekce 5; Segerův vzorec každého z nich vypočtený aplikací Glazecalc se liší nejvýše o 0,01 v oxidu hlinitém a o 0,06 v oxidu křemičitém. Označte každý střípek v diagramu oxidu křemičitého proti oxidu hlinitému a nakreslete si vlastní oblasti: matná, lesklá, nedopálená, stékavá.
 
 Table: Segerova mřížka: 0,2 KNaO, 0,8 CaO, hmotnostní procenta
 Label: Segerova mřížka

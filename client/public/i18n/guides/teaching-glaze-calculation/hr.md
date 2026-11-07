@@ -410,7 +410,7 @@ Label: Karta trokutnog niza
 
 ### Segerova mreža: 24 glazure
 
-Svaka pločica ima iste topitelje, 0,2 KNaO i 0,8 CaO, iz 福島長石 i krede. Glinica se mijenja od retka do retka mreže, a silicijev dioksid od stupca do stupca. Recepti su izračunani metodom iz susreta 5; Segerova formula svakog od njih, izračunana u aplikaciji Glazecalc, odstupa najviše za 0,01 u glinici i za 0,06 u silicijevu dioksidu. Ucrtajte svaku pločicu u dijagram silicijeva dioksida naspram glinice i nacrtajte vlastita područja: mat, sjajno, nedovoljno pečeno, curenje.
+Svaka pločica ima iste topitelje, 0,2 KNaO i 0,8 CaO, iz 福島長石 i krede. Glinica raste od retka do retka prema dolje u mreži, a silicijev dioksid raste od stupca do stupca prema desno. Recepti su izračunani metodom iz susreta 5; Segerova formula svakog od njih, izračunana u aplikaciji Glazecalc, odstupa najviše za 0,01 u glinici i za 0,06 u silicijevu dioksidu. Ucrtajte svaku pločicu u dijagram silicijeva dioksida naspram glinice i nacrtajte vlastita područja: mat, sjajno, nedovoljno pečeno, curenje.
 
 Table: Segerova mreža: 0,2 KNaO, 0,8 CaO, maseni postotak
 Label: Segerova mreža

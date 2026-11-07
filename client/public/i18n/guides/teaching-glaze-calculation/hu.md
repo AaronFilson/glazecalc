@@ -410,7 +410,7 @@ Label: Háromszög-próba térképe
 
 ### Seger-rács: 24 máz
 
-Minden próbalapon azonos az olvasztóanyag: 0,2 KNaO és 0,8 CaO, amelyet 福島長石 és mészkőliszt ad. A timföld lefelé lépcsőzik a rácson, a szilícium-dioxid keresztben. A recepteket az 5. alkalom módszerével számítottuk ki; mindegyik Seger-képlete a Glazecalc szerint a rács timföldértékétől legfeljebb 0,01-del, szilícium-dioxid-értékétől legfeljebb 0,06-del tér el. Jelölje be az egyes próbalapokat egy szilícium-dioxid–timföld diagramon, és rajzolja meg a saját tartományait: matt, fényes, alulégetett, lefolyó.
+Minden próbalapon azonos az olvasztóanyag: 0,2 KNaO és 0,8 CaO, amelyet 福島長石 és mészkőliszt ad. A timföld sorról sorra nő a rácson lefelé haladva, a szilícium-dioxid pedig oszlopról oszlopra nő jobbra haladva. A recepteket az 5. alkalom módszerével számítottuk ki; mindegyik Seger-képlete a Glazecalc szerint a rács timföldértékétől legfeljebb 0,01-del, szilícium-dioxid-értékétől legfeljebb 0,06-del tér el. Jelölje be az egyes próbalapokat egy szilícium-dioxid–timföld diagramon, és rajzolja meg a saját tartományait: matt, fényes, alulégetett, lefolyó.
 
 Table: Seger-rács: 0,2 KNaO, 0,8 CaO, tömegszázalék
 Label: Seger-rács

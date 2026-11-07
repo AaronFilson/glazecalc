@@ -410,7 +410,7 @@ Label: Triaksialt kort
 
 ### Seger-gitter: 24 glasurer
 
-Hver brik har de samme flusmidler, 0,2 KNaO og 0,8 CaO, fra 福島長石 og kridt. Aluminiumoxiden trappes ned ad gitteret og silicaen på tværs af det. Opskrifterne er regnet ud efter metoden fra lektion 5; Glazecalcs Seger-formel for hver af dem kommer inden for 0,01 af aluminiumoxiden og 0,06 af silicaen. Afsæt hver brik i et diagram over silica mod aluminiumoxid, og tegn egne områder: mat, blank, underbrændt, løbende.
+Hver brik har de samme flusmidler, 0,2 KNaO og 0,8 CaO, fra 福島長石 og kridt. Aluminiumoxiden stiger nedad i gitteret, række for række, og silicaen stiger på tværs af gitteret, kolonne for kolonne. Opskrifterne er regnet ud efter metoden fra lektion 5; Glazecalcs Seger-formel for hver af dem kommer inden for 0,01 af aluminiumoxiden og 0,06 af silicaen. Afsæt hver brik i et diagram over silica mod aluminiumoxid, og tegn egne områder: mat, blank, underbrændt, løbende.
 
 Table: Seger-gitter: 0,2 KNaO, 0,8 CaO, vægtprocent
 Label: Seger-gitter

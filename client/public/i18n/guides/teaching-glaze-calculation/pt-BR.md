@@ -410,7 +410,7 @@ Label: Mapa triaxial
 
 ### Grade de Seger: 24 esmaltes
 
-Todas as provas têm os mesmos fundentes, 0,2 KNaO e 0,8 CaO, vindos de 福島長石 e carbonato de cálcio. A alumina diminui descendo pela grade e a sílica aumenta indo para o lado. As receitas foram calculadas pelo método da sessão 5; a fórmula de Seger de cada uma no Glazecalc fica a até 0,01 da sua alumina e a até 0,06 da sua sílica. Marque cada prova em um gráfico de sílica contra alumina e desenhe suas próprias regiões: fosco, brilhante, subqueimado, escorrido.
+Todas as provas têm os mesmos fundentes, 0,2 KNaO e 0,8 CaO, vindos de 福島長石 e carbonato de cálcio. A alumina aumenta de linha em linha descendo pela grade, e a sílica aumenta de coluna em coluna indo para a direita. As receitas foram calculadas pelo método da sessão 5; a fórmula de Seger de cada uma no Glazecalc fica a até 0,01 da sua alumina e a até 0,06 da sua sílica. Marque cada prova em um gráfico de sílica contra alumina e desenhe suas próprias regiões: fosco, brilhante, subqueimado, escorrido.
 
 Table: Grade de Seger: 0,2 KNaO, 0,8 CaO, porcentagem em peso
 Label: Grade de Seger

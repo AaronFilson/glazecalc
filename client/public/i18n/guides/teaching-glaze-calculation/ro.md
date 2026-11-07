@@ -410,7 +410,7 @@ Label: Harta triaxială
 
 ### Grila Seger: 24 de glazuri
 
-Fiecare plăcuță are aceiași fondanți, 0,2 KNaO și 0,8 CaO, din 福島長石 și carbonat de calciu. Alumina crește în pași spre partea de jos a grilei, iar silicea spre dreapta. Rețetele au fost calculate prin metoda din lecția 5; formula Seger a fiecăreia, calculată de Glazecalc, se încadrează la cel mult 0,01 de alumina ei și 0,06 de silicea ei. Marcați fiecare plăcuță pe o diagramă silice–alumină și desenați-vă propriile regiuni: mat, lucios, ars insuficient, curgere.
+Fiecare plăcuță are aceiași fondanți, 0,2 KNaO și 0,8 CaO, din 福島長石 și carbonat de calciu. Alumina crește de la un rând la altul, în josul grilei, iar silicea crește de la o coloană la alta, spre dreapta. Rețetele au fost calculate prin metoda din lecția 5; formula Seger a fiecăreia, calculată de Glazecalc, se încadrează la cel mult 0,01 de alumina ei și 0,06 de silicea ei. Marcați fiecare plăcuță pe o diagramă silice–alumină și desenați-vă propriile regiuni: mat, lucios, ars insuficient, curgere.
 
 Table: Grila Seger: 0,2 KNaO, 0,8 CaO, procente de masă
 Label: Grila Seger

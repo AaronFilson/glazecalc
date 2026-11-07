@@ -410,7 +410,7 @@ Label: Àwòrán triaxial
 
 ### Seger grid: glaze 24
 
-Táílì kọ̀ọ̀kan ní àwọn flux kan náà, 0.2 KNaO àti 0.8 CaO, láti 福島長石 àti whiting. Alumina ń sọ̀kalẹ̀ lórí grid náà, silica sì ń lọ ní ìhà rẹ̀. A ṣírò àwọn ìlànà náà pẹ̀lú ọ̀nà ẹ̀kọ́ 5; UMF Glazecalc ti ọ̀kọ̀ọ̀kan kò yàtọ̀ sí alumina rẹ̀ ju 0.01 lọ, tàbí sí silica rẹ̀ ju 0.06 lọ. Ẹ fi àmì sí táílì kọ̀ọ̀kan lórí àwòrán silica sí alumina, kí ẹ sì yà àwọn agbègbè tiyín: matte, dídán, kò jóná tó, running.
+Táílì kọ̀ọ̀kan ní àwọn flux kan náà, 0.2 KNaO àti 0.8 CaO, láti 福島長石 àti whiting. Alumina ń pọ̀ sí i bí a ṣe ń sọ̀kalẹ̀ lórí àwọn ìlà grid náà, silica sì ń pọ̀ sí i bí a ṣe ń kọjá lórí àwọn ọ̀wọ́ rẹ̀. A ṣírò àwọn ìlànà náà pẹ̀lú ọ̀nà ẹ̀kọ́ 5; UMF Glazecalc ti ọ̀kọ̀ọ̀kan kò yàtọ̀ sí alumina rẹ̀ ju 0.01 lọ, tàbí sí silica rẹ̀ ju 0.06 lọ. Ẹ fi àmì sí táílì kọ̀ọ̀kan lórí àwòrán silica sí alumina, kí ẹ sì yà àwọn agbègbè tiyín: matte, dídán, kò jóná tó, running.
 
 Table: Seger grid: 0.2 KNaO, 0.8 CaO, ìdá ọgọ́rùn-ún nípa ìwúwo
 Label: Seger grid

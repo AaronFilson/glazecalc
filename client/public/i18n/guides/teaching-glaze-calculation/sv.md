@@ -410,7 +410,7 @@ Label: Triaxialkarta
 
 ### Segerrutnät: 24 glasyrer
 
-Varje provbit har samma flussmedel, 0,2 KNaO och 0,8 CaO, från 福島長石 och krita. Aluminiumoxiden stegar nedåt i rutnätet och kvartsen åt sidan. Recepten räknades ut med metoden från träff 5; Glazecalcs Segerformel för vart och ett ligger inom 0,01 från dess aluminiumoxid och 0,06 från dess kiseldioxid. Markera varje provbit i ett diagram över kiseldioxid mot aluminiumoxid och rita egna områden: matt, blank, underbränd, rinnande.
+Varje provbit har samma flussmedel, 0,2 KNaO och 0,8 CaO, från 福島長石 och krita. Aluminiumoxiden ökar nedåt i rutnätet, rad för rad, och kiseldioxiden ökar åt höger, kolumn för kolumn. Recepten räknades ut med metoden från träff 5; Glazecalcs Segerformel för vart och ett ligger inom 0,01 från dess aluminiumoxid och 0,06 från dess kiseldioxid. Markera varje provbit i ett diagram över kiseldioxid mot aluminiumoxid och rita egna områden: matt, blank, underbränd, rinnande.
 
 Table: Segerrutnät: 0,2 KNaO, 0,8 CaO, viktprocent
 Label: Segerrutnät

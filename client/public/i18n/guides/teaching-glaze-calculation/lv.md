@@ -410,7 +410,7 @@ Label: Trīsstūra izkārtojums
 
 ### Zēgera režģis: 24 glazūras
 
-Katrai provei ir vieni un tie paši kušņi, 0,2 KNaO un 0,8 CaO, no 福島長石 un krīta. Alumīnija oksīds mainās pa soļiem uz leju, silīcija dioksīds – pa režģa platumu. Receptes aprēķinātas pēc nodarbības 5 metodes; lietotnes Glazecalc aprēķinātā katras receptes Zēgera formula atšķiras ne vairāk kā par 0,01 alumīnija oksīda un par 0,06 silīcija dioksīda daudzumā. Atzīmējiet katru provi silīcija dioksīda un alumīnija oksīda diagrammā un uzzīmējiet savus apgabalus: matēts, spīdīgs, nepietiekami apdedzināts, notecējis.
+Katrai provei ir vieni un tie paši kušņi, 0,2 KNaO un 0,8 CaO, no 福島長石 un krīta. Alumīnija oksīds palielinās režģī no rindas uz rindu uz leju, un silīcija dioksīds palielinās no kolonnas uz kolonnu pa labi. Receptes aprēķinātas pēc nodarbības 5 metodes; lietotnes Glazecalc aprēķinātā katras receptes Zēgera formula atšķiras ne vairāk kā par 0,01 alumīnija oksīda un par 0,06 silīcija dioksīda daudzumā. Atzīmējiet katru provi silīcija dioksīda un alumīnija oksīda diagrammā un uzzīmējiet savus apgabalus: matēts, spīdīgs, nepietiekami apdedzināts, notecējis.
 
 Table: Zēgera režģis: 0,2 KNaO, 0,8 CaO, masas procenti
 Label: Zēgera režģis

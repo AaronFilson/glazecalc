@@ -410,7 +410,7 @@ Label: Mapa triaxial
 
 ### Grelha de Seger: 24 vidrados
 
-Todas as peças de teste têm os mesmos fundentes, 0,2 KNaO e 0,8 CaO, de 福島長石 e carbonato de cálcio. A alumina varia ao longo das linhas da grelha e a sílica ao longo das colunas. As receitas foram calculadas pelo método da sessão 5; a fórmula de Seger de cada uma, no Glazecalc, fica a menos de 0,01 da sua alumina e a menos de 0,06 da sua sílica. Marque cada peça de teste num gráfico de sílica em função da alumina e desenhe as suas próprias regiões: mate, brilhante, subcozido, com escorrimento.
+Todas as peças de teste têm os mesmos fundentes, 0,2 KNaO e 0,8 CaO, de 福島長石 e carbonato de cálcio. A alumina aumenta de linha em linha, descendo pela grelha, e a sílica aumenta de coluna em coluna, para a direita. As receitas foram calculadas pelo método da sessão 5; a fórmula de Seger de cada uma, no Glazecalc, fica a menos de 0,01 da sua alumina e a menos de 0,06 da sua sílica. Marque cada peça de teste num gráfico de sílica em função da alumina e desenhe as suas próprias regiões: mate, brilhante, subcozido, com escorrimento.
 
 Table: Grelha de Seger: 0,2 KNaO, 0,8 CaO, percentagem em peso
 Label: Grelha de Seger

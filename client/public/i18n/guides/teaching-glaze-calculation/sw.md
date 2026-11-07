@@ -410,7 +410,7 @@ Label: Ramani ya triaxial
 
 ### Gridi ya Seger: glaze 24
 
-Kila kigae kina flux zilezile, 0.2 KNaO na 0.8 CaO, kutoka 福島長石 na whiting. Alumina hushuka chini ya gridi na silika huvuka kando yake. Vichocheo vilikokotolewa kwa njia ya kipindi cha 5; fomula ya Seger ya kila kimoja katika Glazecalc iko ndani ya 0.01 ya alumina yake na 0.06 ya silika yake. Weka alama kila kigae kwenye chati ya silika dhidi ya alumina, na uchore maeneo yako mwenyewe: matte, ng'avu, haikuchomwa vya kutosha, kutiririka.
+Kila kigae kina flux zilezile, 0.2 KNaO na 0.8 CaO, kutoka 福島長石 na whiting. Alumina huongezeka kadiri unavyoshuka kwenye safu za gridi, na silika huongezeka kadiri unavyovuka kwenye nguzo zake. Vichocheo vilikokotolewa kwa njia ya kipindi cha 5; fomula ya Seger ya kila kimoja katika Glazecalc iko ndani ya 0.01 ya alumina yake na 0.06 ya silika yake. Weka alama kila kigae kwenye chati ya silika dhidi ya alumina, na uchore maeneo yako mwenyewe: matte, ng'avu, haikuchomwa vya kutosha, kutiririka.
 
 Table: Gridi ya Seger: 0.2 KNaO, 0.8 CaO, asilimia kwa uzito
 Label: Gridi ya Seger

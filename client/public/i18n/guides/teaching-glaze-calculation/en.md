@@ -410,7 +410,7 @@ Label: Triaxial map
 
 ### Seger grid: 24 glazes
 
-Every tile has the same fluxes, 0.2 KNaO and 0.8 CaO, from 福島長石 and whiting. Alumina steps down the grid and silica across it. The recipes were worked out by the method of session 5; Glazecalc's unity formula of each comes within 0.01 of its alumina and 0.06 of its silica. Mark each tile on a chart of silica against alumina, and draw your own regions: matte, glossy, underfired, running.
+Every tile has the same fluxes, 0.2 KNaO and 0.8 CaO, from 福島長石 and whiting. Alumina rises down the grid, and silica rises across it. The recipes were worked out by the method of session 5; Glazecalc's unity formula of each comes within 0.01 of its alumina and 0.06 of its silica. Mark each tile on a chart of silica against alumina, and draw your own regions: matte, glossy, underfired, running.
 
 Table: Seger grid: 0.2 KNaO, 0.8 CaO, percent by weight
 Label: Seger grid

@@ -410,7 +410,7 @@ Label: Üçgen karışım haritası
 
 ### Seger ızgarası: 24 sır
 
-Her karoda ergiticiler aynıdır: 福島長石 ve kalsitten gelen 0,2 KNaO ve 0,8 CaO. Alümina ızgarada aşağı doğru, silis yatay olarak artar. Reçeteler 5. oturumdaki yöntemle hesaplanmıştır; Glazecalc’in hesapladığı her Seger formülü, alümina için en fazla 0,01, silis için en fazla 0,06 sapar. Her karoyu silisin alümina karşısındaki grafiğinde işaretleyin ve kendi bölgelerinizi çizin: mat, parlak, az pişmiş, akma.
+Her karoda ergiticiler aynıdır: 福島長石 ve kalsitten gelen 0,2 KNaO ve 0,8 CaO. Alümina ızgarada satırlar boyunca aşağı inildikçe artar, silis de sütunlar boyunca sağa gidildikçe artar. Reçeteler 5. oturumdaki yöntemle hesaplanmıştır; Glazecalc’in hesapladığı her Seger formülü, alümina için en fazla 0,01, silis için en fazla 0,06 sapar. Her karoyu silisin alümina karşısındaki grafiğinde işaretleyin ve kendi bölgelerinizi çizin: mat, parlak, az pişmiş, akma.
 
 Table: Seger ızgarası: 0,2 KNaO, 0,8 CaO, ağırlıkça yüzde
 Label: Seger ızgarası

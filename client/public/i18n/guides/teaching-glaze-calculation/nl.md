@@ -410,7 +410,7 @@ Label: Kaart van de driehoeksmenging
 
 ### Segerraster: 24 glazuren
 
-Elk plaatje heeft dezelfde smeltmiddelen, 0,2 KNaO en 0,8 CaO, uit 福島長石 en krijt. Het aluminiumoxide verandert in stappen naar beneden en het siliciumoxide naar rechts. De recepten zijn uitgewerkt met de methode van les 5; de Segerformule van elk, door Glazecalc berekend, wijkt voor aluminiumoxide hooguit 0,01 af en voor siliciumoxide hooguit 0,06. Zet elk plaatje uit op een diagram van siliciumoxide tegen aluminiumoxide en teken uw eigen gebieden: mat, glanzend, te laag gestookt, aflopend.
+Elk plaatje heeft dezelfde smeltmiddelen, 0,2 KNaO en 0,8 CaO, uit 福島長石 en krijt. Het aluminiumoxide neemt toe naar beneden langs de rijen, en het siliciumoxide neemt toe naar rechts langs de kolommen. De recepten zijn uitgewerkt met de methode van les 5; de Segerformule van elk, door Glazecalc berekend, wijkt voor aluminiumoxide hooguit 0,01 af en voor siliciumoxide hooguit 0,06. Zet elk plaatje uit op een diagram van siliciumoxide tegen aluminiumoxide en teken uw eigen gebieden: mat, glanzend, te laag gestookt, aflopend.
 
 Table: Segerraster: 0,2 KNaO, 0,8 CaO, gewichtsprocent
 Label: Segerraster

@@ -410,7 +410,7 @@ Label: Plán trojzložkovej skúšky
 
 ### Segerova mriežka: 24 glazúr
 
-Každá doštička má rovnaké tavivá, 0,2 KNaO a 0,8 CaO, z 福島長石 a kriedy. Oxid hlinitý sa mení smerom nadol po mriežke a oxid kremičitý smerom doprava. Recepty boli vypočítané postupom z lekcie 5; Segerov vzorec každého z nich podľa aplikácie Glazecalc sa líši najviac o 0,01 v oxide hlinitom a o 0,06 v oxide kremičitom. Označte každú doštičku na diagrame oxid kremičitý oproti oxidu hlinitému a nakreslite si vlastné oblasti: matná, lesklá, nedopálená, stekanie.
+Každá doštička má rovnaké tavivá, 0,2 KNaO a 0,8 CaO, z 福島長石 a kriedy. Oxid hlinitý v mriežke rastie od riadku k riadku smerom nadol a oxid kremičitý rastie od stĺpca k stĺpcu smerom doprava. Recepty boli vypočítané postupom z lekcie 5; Segerov vzorec každého z nich podľa aplikácie Glazecalc sa líši najviac o 0,01 v oxide hlinitom a o 0,06 v oxide kremičitom. Označte každú doštičku na diagrame oxid kremičitý oproti oxidu hlinitému a nakreslite si vlastné oblasti: matná, lesklá, nedopálená, stekanie.
 
 Table: Segerova mriežka: 0,2 KNaO, 0,8 CaO, hmotnostné percentá
 Label: Segerova mriežka

@@ -410,7 +410,7 @@ Label: Plan für die Dreistoffmischung
 
 ### Seger-Raster: 24 Glasuren
 
-Jedes Plättchen hat dieselben Flussmittel, 0,2 KNaO und 0,8 CaO, aus 福島長石 und Kreide. Die Tonerde ändert sich in Stufen von oben nach unten durch das Raster, die Kieselsäure in Stufen von links nach rechts. Die Rezepte wurden nach der Methode aus Einheit 5 berechnet; die Segerformel jedes Rezepts liegt nach Glazecalc innerhalb von 0,01 bei der Tonerde und 0,06 bei der Kieselsäure. Tragen Sie jedes Plättchen in ein Diagramm Kieselsäure gegen Tonerde ein und zeichnen Sie Ihre eigenen Bereiche: matt, glänzend, zu schwach gebrannt, ablaufend.
+Jedes Plättchen hat dieselben Flussmittel, 0,2 KNaO und 0,8 CaO, aus 福島長石 und Kreide. Die Tonerde nimmt im Raster von Zeile zu Zeile nach unten zu, die Kieselsäure von Spalte zu Spalte nach rechts. Die Rezepte wurden nach der Methode aus Einheit 5 berechnet; die Segerformel jedes Rezepts liegt nach Glazecalc innerhalb von 0,01 bei der Tonerde und 0,06 bei der Kieselsäure. Tragen Sie jedes Plättchen in ein Diagramm Kieselsäure gegen Tonerde ein und zeichnen Sie Ihre eigenen Bereiche: matt, glänzend, zu schwach gebrannt, ablaufend.
 
 Table: Seger-Raster: 0,2 KNaO, 0,8 CaO, Gewichtsprozent
 Label: Seger-Raster

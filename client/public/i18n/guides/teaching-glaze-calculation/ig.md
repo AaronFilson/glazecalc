@@ -410,7 +410,7 @@ Label: Maapụ triaxial
 
 ### Grid Seger: glaze 24
 
-Tile ọ bụla nwere otu flux, 0.2 KNaO na 0.8 CaO, site na 福島長石 na whiting. Alumina na-agbadata grid ahụ, silica na-agafe ya n'akụkụ. A gbakọrọ usoro ndị ahụ site n'usoro nke nkuzi 5; UMF nke Glazecalc maka nke ọ bụla dị n'ime 0.01 nke alumina ya na 0.06 nke silica ya. Mee akara tile ọ bụla na chaatị silica megide alumina, ma dọta mpaghara nke gị: anaghị egbuke (matte), na-egbuke egbuke, a gbaghị ọkụ nke ọma, na-asọ.
+Tile ọ bụla nwere otu flux, 0.2 KNaO na 0.8 CaO, site na 福島長石 na whiting. Alumina na-abawanye ka a na-agbadata ahịrị grid ahụ, silica na-abawanye ka a na-agafe ogidi ya. A gbakọrọ usoro ndị ahụ site n'usoro nke nkuzi 5; UMF nke Glazecalc maka nke ọ bụla dị n'ime 0.01 nke alumina ya na 0.06 nke silica ya. Mee akara tile ọ bụla na chaatị silica megide alumina, ma dọta mpaghara nke gị: anaghị egbuke (matte), na-egbuke egbuke, a gbaghị ọkụ nke ọma, na-asọ.
 
 Table: Grid Seger: 0.2 KNaO, 0.8 CaO, pasentị site n'ịdị arọ
 Label: Grid Seger

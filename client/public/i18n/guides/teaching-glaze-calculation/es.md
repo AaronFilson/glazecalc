@@ -410,7 +410,7 @@ Label: Mapa triaxial
 
 ### Cuadrícula Seger: 24 esmaltes
 
-Todas las probetas tienen los mismos fundentes, 0,2 de KNaO y 0,8 de CaO, aportados por 福島長石 y carbonato cálcico. La alúmina baja por la cuadrícula y la sílice avanza a lo ancho. Las recetas se calcularon con el método de la sesión 5; la fórmula Seger de cada una según Glazecalc se desvía como máximo 0,01 en la alúmina y 0,06 en la sílice. Marque cada probeta en un gráfico de sílice frente a alúmina y dibuje sus propias regiones: mate, brillante, poco cocido, escurrido.
+Todas las probetas tienen los mismos fundentes, 0,2 de KNaO y 0,8 de CaO, aportados por 福島長石 y carbonato cálcico. La alúmina aumenta de una fila a otra hacia abajo en la cuadrícula, y la sílice aumenta de una columna a otra hacia la derecha. Las recetas se calcularon con el método de la sesión 5; la fórmula Seger de cada una según Glazecalc se desvía como máximo 0,01 en la alúmina y 0,06 en la sílice. Marque cada probeta en un gráfico de sílice frente a alúmina y dibuje sus propias regiones: mate, brillante, poco cocido, escurrido.
 
 Table: Cuadrícula Seger: 0,2 KNaO, 0,8 CaO, porcentaje en peso
 Label: Cuadrícula Seger

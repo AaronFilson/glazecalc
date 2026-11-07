@@ -410,7 +410,7 @@ Label: Kolmiokokeen kartta
 
 ### Seger-ruudukko: 24 lasitetta
 
-Jokaisessa koepalassa on samat sulattajat, 0,2 KNaO ja 0,8 CaO; ne tulevat maasälvästä 福島長石 ja liidusta. Alumiinioksidi porrastuu ruudukossa alaspäin ja piidioksidi sivusuunnassa. Reseptit laskettiin opetuskerran 5 menetelmällä; Glazecalcin laskema kunkin Segerin kaava poikkeaa tavoitteesta alumiinioksidin osalta enintään 0,01 ja piidioksidin osalta enintään 0,06. Merkitse jokainen koepala piidioksidin ja alumiinioksidin kaavioon ja piirrä omat alueesi: matta, kiiltävä, alipoltettu, valuva.
+Jokaisessa koepalassa on samat sulattajat, 0,2 KNaO ja 0,8 CaO; ne tulevat maasälvästä 福島長石 ja liidusta. Alumiinioksidi kasvaa ruudukossa rivi riviltä alaspäin, ja piidioksidi kasvaa sarake sarakkeelta oikealle. Reseptit laskettiin opetuskerran 5 menetelmällä; Glazecalcin laskema kunkin Segerin kaava poikkeaa tavoitteesta alumiinioksidin osalta enintään 0,01 ja piidioksidin osalta enintään 0,06. Merkitse jokainen koepala piidioksidin ja alumiinioksidin kaavioon ja piirrä omat alueesi: matta, kiiltävä, alipoltettu, valuva.
 
 Table: Seger-ruudukko: 0,2 KNaO, 0,8 CaO, painoprosentteina
 Label: Seger-ruudukko

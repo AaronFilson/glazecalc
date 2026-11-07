@@ -410,7 +410,7 @@ Label: Imephu ye-triaxial
 
 ### Igridi ka-Seger: ama-glaze angu-24
 
-I-tile ngayinye inama-flux afanayo, 0.2 KNaO no-0.8 CaO, kusuka ku-福島長石 ne-whiting. I-alumina yehla igridi ne-silica iyiweqa. Amaresiphi abaliwe ngendlela yesifundo 5; i-UMF ye-Glazecalc yeresiphi ngayinye ihluka ngenani elingeqile ku-0.01 ku-alumina yayo nango-0.06 ku-silica yayo. Phawula i-tile ngayinye eshadini le-silica elimelene ne-alumina, bese udweba izindawo zakho: i-matte, ecwebezelayo, engashiswanga ngokwanele, egelezayo.
+I-tile ngayinye inama-flux afanayo, 0.2 KNaO no-0.8 CaO, kusuka ku-福島長石 ne-whiting. I-alumina iyanda ngokwehla emigqeni yegridi, ne-silica iyanda ngokweqa emakholomini ayo. Amaresiphi abaliwe ngendlela yesifundo 5; i-UMF ye-Glazecalc yeresiphi ngayinye ihluka ngenani elingeqile ku-0.01 ku-alumina yayo nango-0.06 ku-silica yayo. Phawula i-tile ngayinye eshadini le-silica elimelene ne-alumina, bese udweba izindawo zakho: i-matte, ecwebezelayo, engashiswanga ngokwanele, egelezayo.
 
 Table: Igridi ka-Seger: 0.2 KNaO, 0.8 CaO, amaphesenti ngesisindo
 Label: Igridi ka-Seger

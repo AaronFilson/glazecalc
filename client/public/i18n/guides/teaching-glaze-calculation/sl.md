@@ -410,7 +410,7 @@ Label: Triaksialni načrt
 
 ### Segerjeva mreža: 24 glazur
 
-Vsaka ploščica ima ista talila, 0,2 KNaO in 0,8 CaO, iz 福島長石 in krede. Glinica se spreminja po korakih navzdol po mreži, kremenica čez njo. Recepti so bili izračunani po metodi 5. srečanja; Segerjeva formula vsakega, ki jo izračuna Glazecalc, se od njegove glinice razlikuje za največ 0,01 in od njegove kremenice za največ 0,06. Vsako ploščico označite na diagramu kremenice proti glinici in narišite svoja območja: mat, sijajno, premalo žgano, odtekanje.
+Vsaka ploščica ima ista talila, 0,2 KNaO in 0,8 CaO, iz 福島長石 in krede. Glinica narašča v mreži od vrstice do vrstice navzdol, kremenica pa narašča od stolpca do stolpca v desno. Recepti so bili izračunani po metodi 5. srečanja; Segerjeva formula vsakega, ki jo izračuna Glazecalc, se od njegove glinice razlikuje za največ 0,01 in od njegove kremenice za največ 0,06. Vsako ploščico označite na diagramu kremenice proti glinici in narišite svoja območja: mat, sijajno, premalo žgano, odtekanje.
 
 Table: Segerjeva mreža: 0,2 KNaO, 0,8 CaO, masni odstotki
 Label: Segerjeva mreža

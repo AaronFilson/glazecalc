@@ -410,7 +410,7 @@ Label: Triaksiale kaart
 
 ### Seger-rooster: 24 glasuurs
 
-Elke teël het dieselfde vloeimiddels, 0,2 KNaO en 0,8 CaO, van 福島長石 en kalksteen. Alumina gaan teen die rooster af en silika dwarsoor. Die resepte is uitgewerk volgens die metode van sessie 5; Glazecalc se Seger-formule van elkeen kom binne 0,01 van sy alumina en 0,06 van sy silika. Merk elke teël op 'n grafiek van silika teen alumina, en teken jou eie gebiede: mat, blink, onderbak, loop.
+Elke teël het dieselfde vloeimiddels, 0,2 KNaO en 0,8 CaO, van 福島長石 en kalksteen. Alumina neem toe teen die rye van die rooster af, en silika neem toe dwarsoor die kolomme. Die resepte is uitgewerk volgens die metode van sessie 5; Glazecalc se Seger-formule van elkeen kom binne 0,01 van sy alumina en 0,06 van sy silika. Merk elke teël op 'n grafiek van silika teen alumina, en teken jou eie gebiede: mat, blink, onderbak, loop.
 
 Table: Seger-rooster: 0,2 KNaO, 0,8 CaO, persent volgens gewig
 Label: Seger-rooster

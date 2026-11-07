@@ -410,7 +410,7 @@ Label: Mapa próby trójskładnikowej
 
 ### Siatka Segera: 24 szkliwa
 
-Każda płytka ma te same topniki, 0,2 KNaO i 0,8 CaO, z 福島長石 i kredy. Tlenek glinu zmienia się w dół siatki, a krzemionka w poprzek. Receptury obliczono metodą ze spotkania 5; wzór Segera każdej z nich, liczony w aplikacji Glazecalc, mieści się w granicach 0,01 dla tlenku glinu i 0,06 dla krzemionki. Każdą płytkę należy zaznaczyć na wykresie krzemionki względem tlenku glinu i narysować własne obszary: matowy, błyszczący, niedopalony, spływający.
+Każda płytka ma te same topniki, 0,2 KNaO i 0,8 CaO, z 福島長石 i kredy. Tlenek glinu rośnie w dół siatki, wiersz po wierszu, a krzemionka rośnie w poprzek siatki, kolumna po kolumnie. Receptury obliczono metodą ze spotkania 5; wzór Segera każdej z nich, liczony w aplikacji Glazecalc, mieści się w granicach 0,01 dla tlenku glinu i 0,06 dla krzemionki. Każdą płytkę należy zaznaczyć na wykresie krzemionki względem tlenku glinu i narysować własne obszary: matowy, błyszczący, niedopalony, spływający.
 
 Table: Siatka Segera: 0,2 KNaO, 0,8 CaO, procenty masowe
 Label: Siatka Segera

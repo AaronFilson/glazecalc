@@ -410,7 +410,7 @@ Label: Peta triaksial
 
 ### Kisi Seger: 24 glasir
 
-Setiap ubin memiliki pelebur yang sama, 0,2 KNaO dan 0,8 CaO, dari 福島長石 dan whiting. Alumina turun di sepanjang kisi dan silika melintang. Resepnya dihitung dengan metode sesi 5; formula Seger Glazecalc untuk masing-masing berada dalam 0,01 dari alumina dan 0,06 dari silikanya. Tandai setiap ubin pada bagan silika terhadap alumina, dan gambar wilayah Anda sendiri: doff, mengilap, kurang bakar, mengalir.
+Setiap ubin memiliki pelebur yang sama, 0,2 KNaO dan 0,8 CaO, dari 福島長石 dan whiting. Alumina bertambah ke bawah di sepanjang baris kisi, dan silika bertambah ke samping di sepanjang kolom. Resepnya dihitung dengan metode sesi 5; formula Seger Glazecalc untuk masing-masing berada dalam 0,01 dari alumina dan 0,06 dari silikanya. Tandai setiap ubin pada bagan silika terhadap alumina, dan gambar wilayah Anda sendiri: doff, mengilap, kurang bakar, mengalir.
 
 Table: Kisi Seger: 0,2 KNaO, 0,8 CaO, persen berat
 Label: Kisi Seger

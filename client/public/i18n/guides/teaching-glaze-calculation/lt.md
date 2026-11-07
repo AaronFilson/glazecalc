@@ -410,7 +410,7 @@ Label: Triašio schema
 
 ### Segerio tinklelis: 24 glazūros
 
-Visų bandinių fliusai vienodi, 0,2 KNaO ir 0,8 CaO, iš 福島長石 ir kreidos. Aliuminio oksido kiekis keičiasi tinklelio eilutėmis žemyn, silicio dioksido – skersai. Receptai apskaičiuoti 5 užsiėmimo metodu; kiekvieno jų Glazecalc Segerio formulė nuo tikslo skiriasi ne daugiau kaip 0,01 aliuminio oksido ir 0,06 silicio dioksido. Pažymėkite kiekvieną bandinį silicio dioksido ir aliuminio oksido diagramoje ir nubrėžkite savo sritis: matinė, blizgi, nepakankamai išdegta, nubėganti.
+Visų bandinių fliusai vienodi, 0,2 KNaO ir 0,8 CaO, iš 福島長石 ir kreidos. Aliuminio oksido kiekis didėja tinklelyje eilutė po eilutės žemyn, o silicio dioksido kiekis didėja stulpelis po stulpelio į dešinę. Receptai apskaičiuoti 5 užsiėmimo metodu; kiekvieno jų Glazecalc Segerio formulė nuo tikslo skiriasi ne daugiau kaip 0,01 aliuminio oksido ir 0,06 silicio dioksido. Pažymėkite kiekvieną bandinį silicio dioksido ir aliuminio oksido diagramoje ir nubrėžkite savo sritis: matinė, blizgi, nepakankamai išdegta, nubėganti.
 
 Table: Segerio tinklelis: 0,2 KNaO, 0,8 CaO, masės procentai
 Label: Segerio tinklelis

@@ -410,7 +410,7 @@ Label: Khariidadda triaxial
 
 ### Shabakadda Seger: 24 glaze
 
-Tile kasta wuxuu leeyahay isla flux-yo, 0.2 KNaO iyo 0.8 CaO, oo ka yimaada 福島長石 iyo whiting. Alumina-tu waxay hoos u socotaa shabakadda, silica-na dhinaceeda. Hababka waxaa lagu xisaabiyay habka casho 5; UMF-ta Glazecalc ee mid kasta waxay ku dhowdahay 0.01 alumina-tiisa iyo 0.06 silica-diisa gudahood. Calaamadee tile kasta jaantus silica iyo alumina ah, oo sawir gobolladaada: matte, ifaya, aan si fiican loo gubin, qulqula.
+Tile kasta wuxuu leeyahay isla flux-yo, 0.2 KNaO iyo 0.8 CaO, oo ka yimaada 福島長石 iyo whiting. Alumina-tu waxay kordhaysaa marka safafka shabakadda lagu hoos dago, silica-na waxay kordhaysaa marka tiirarka lagu gudbo. Hababka waxaa lagu xisaabiyay habka casho 5; UMF-ta Glazecalc ee mid kasta waxay ku dhowdahay 0.01 alumina-tiisa iyo 0.06 silica-diisa gudahood. Calaamadee tile kasta jaantus silica iyo alumina ah, oo sawir gobolladaada: matte, ifaya, aan si fiican loo gubin, qulqula.
 
 Table: Shabakadda Seger: 0.2 KNaO, 0.8 CaO, boqolkiiba miisaan ahaan
 Label: Shabakadda Seger

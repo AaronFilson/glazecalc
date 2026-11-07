@@ -410,7 +410,7 @@ Label: Mappa triassiale
 
 ### Griglia di Seger: 24 smalti
 
-Ogni provino ha gli stessi fondenti, 0,2 KNaO e 0,8 CaO, da 福島長石 e carbonato di calcio. L’allumina cambia a gradini scendendo lungo la griglia e la silice spostandosi da sinistra a destra. Le ricette sono state calcolate con il metodo dell’incontro 5; la formula di Seger di ciascuna, secondo Glazecalc, si scosta di non più di 0,01 per l’allumina e di 0,06 per la silice. Segnare ogni provino su un diagramma di silice rispetto ad allumina e disegnare le proprie regioni: opaco, lucido, sottocotto, colatura.
+Ogni provino ha gli stessi fondenti, 0,2 KNaO e 0,8 CaO, da 福島長石 e carbonato di calcio. L’allumina aumenta scendendo di riga in riga lungo la griglia, e la silice aumenta spostandosi di colonna in colonna verso destra. Le ricette sono state calcolate con il metodo dell’incontro 5; la formula di Seger di ciascuna, secondo Glazecalc, si scosta di non più di 0,01 per l’allumina e di 0,06 per la silice. Segnare ogni provino su un diagramma di silice rispetto ad allumina e disegnare le proprie regioni: opaco, lucido, sottocotto, colatura.
 
 Table: Griglia di Seger: 0,2 KNaO, 0,8 CaO, percentuale in peso
 Label: Griglia di Seger

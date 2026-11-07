@@ -410,7 +410,7 @@ Label: Mappa trijassjali
 
 ### Griżja ta’ Seger: 24 glejż
 
-Kull maduma għandha l-istess flussi, 0.2 KNaO u 0.8 CaO, minn 福島長石 u karbonat tal-kalċju. L-alumina tinżel mal-griżja u s-silika tmur mal-wisa’ tagħha. Ir-riċetti nħadmu bil-metodu tas-sessjoni 5; il-formula ta’ Seger ta’ Glazecalc ta’ kull waħda toqrob sa 0.01 mill-alumina tagħha u sa 0.06 mis-silika tagħha. Immarka kull maduma fuq mappa tas-silika kontra l-alumina, u pinġi ż-żoni tiegħek stess: matt, ileqq, mhux moħmi biżżejjed, nżul tal-glejż.
+Kull maduma għandha l-istess flussi, 0.2 KNaO u 0.8 CaO, minn 福島長石 u karbonat tal-kalċju. L-alumina togħla minn filliera għal oħra ’l isfel fil-griżja, u s-silika togħla minn kolonna għal oħra lejn il-lemin. Ir-riċetti nħadmu bil-metodu tas-sessjoni 5; il-formula ta’ Seger ta’ Glazecalc ta’ kull waħda toqrob sa 0.01 mill-alumina tagħha u sa 0.06 mis-silika tagħha. Immarka kull maduma fuq mappa tas-silika kontra l-alumina, u pinġi ż-żoni tiegħek stess: matt, ileqq, mhux moħmi biżżejjed, nżul tal-glejż.
 
 Table: Griżja ta’ Seger: 0.2 KNaO, 0.8 CaO, persentaġġ skont il-piż
 Label: Griżja ta’ Seger

@@ -410,7 +410,7 @@ Label: Kolmnurkkatse skeem
 
 ### Segeri ruudustik: 24 glasuuri
 
-Igal proovitükil on samad sulandajad, 0,2 KNaO ja 0,8 CaO, mis pärinevad põldpaost 福島長石 ja kriidist. Alumiiniumoksiid muutub sammhaaval ruudustikus ülalt alla ja ränidioksiid vasakult paremale. Retseptid on välja arvutatud õppetunni 5 meetodil; igaühe Glazecalci Segeri valem jääb alumiiniumoksiidi osas 0,01 ja ränidioksiidi osas 0,06 piiresse. Märkige iga proovitükk ränidioksiidi ja alumiiniumoksiidi diagrammile ning joonistage oma piirkonnad: matt, läikiv, alapõletatud, voolav.
+Igal proovitükil on samad sulandajad, 0,2 KNaO ja 0,8 CaO, mis pärinevad põldpaost 福島長石 ja kriidist. Alumiiniumoksiid suureneb ruudustikus rida-realt allapoole ja ränidioksiid suureneb veerg-veerult paremale. Retseptid on välja arvutatud õppetunni 5 meetodil; igaühe Glazecalci Segeri valem jääb alumiiniumoksiidi osas 0,01 ja ränidioksiidi osas 0,06 piiresse. Märkige iga proovitükk ränidioksiidi ja alumiiniumoksiidi diagrammile ning joonistage oma piirkonnad: matt, läikiv, alapõletatud, voolav.
 
 Table: Segeri ruudustik: 0,2 KNaO, 0,8 CaO, massiprotsendid
 Label: Segeri ruudustik

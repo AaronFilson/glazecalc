@@ -410,7 +410,7 @@ Label: Taswirar triaxial
 
 ### Grid na Seger: glaze 24
 
-Kowane tayil yana da flux iri ɗaya, 0.2 KNaO da 0.8 CaO, daga 福島長石 da whiting. Alumina yana sauka a ƙasan grid, silica kuma a kwance. An lissafa girke-girken da hanyar zama na 5; UMF na Glazecalc na kowanne yana cikin 0.01 na aluminarsa da 0.06 na silicarsa. Ku yi wa kowane tayil alama a kan jadawalin silica da alumina, kuma ku zana yankunanku: marar sheƙi, mai sheƙi, ba a gasa sosai ba, running.
+Kowane tayil yana da flux iri ɗaya, 0.2 KNaO da 0.8 CaO, daga 福島長石 da whiting. Alumina yana ƙaruwa yayin da ake sauka a layukan grid ɗin, silica kuma yana ƙaruwa yayin da ake tafiya a kan ginshiƙansa. An lissafa girke-girken da hanyar zama na 5; UMF na Glazecalc na kowanne yana cikin 0.01 na aluminarsa da 0.06 na silicarsa. Ku yi wa kowane tayil alama a kan jadawalin silica da alumina, kuma ku zana yankunanku: marar sheƙi, mai sheƙi, ba a gasa sosai ba, running.
 
 Table: Grid na Seger: 0.2 KNaO, 0.8 CaO, kashi bisa nauyi
 Label: Grid na Seger

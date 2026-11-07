@@ -410,7 +410,7 @@ Label: Léarscáil trí-aiseach
 
 ### Eangach Seger: 24 glónra
 
-Tá na floscanna céanna ag gach tíl, 0.2 KNaO agus 0.8 CaO, ó 福島長石 agus bánlí. Athraíonn an alúmana i gcéimeanna síos an eangach agus an tsilice trasna uirthi. Oibríodh amach na hoidis le modh sheisiún 5; tá foirmle Seger Glazecalc de gach tíl laistigh de 0.01 dá halúmana agus de 0.06 dá silice. Marcáil gach tíl ar chairt silice i gcoinne alúmana, agus tarraing do réigiúin féin: neamhlonrach, lonrach, tearcbhácáilte, ag rith.
+Tá na floscanna céanna ag gach tíl, 0.2 KNaO agus 0.8 CaO, ó 福島長石 agus bánlí. Méadaíonn an alúmana ó shraith go sraith síos an eangach, agus méadaíonn an tsilice ó cholún go colún trasna uirthi. Oibríodh amach na hoidis le modh sheisiún 5; tá foirmle Seger Glazecalc de gach tíl laistigh de 0.01 dá halúmana agus de 0.06 dá silice. Marcáil gach tíl ar chairt silice i gcoinne alúmana, agus tarraing do réigiúin féin: neamhlonrach, lonrach, tearcbhácáilte, ag rith.
 
 Table: Eangach Seger: 0.2 KNaO, 0.8 CaO, céatadán de réir meáchain
 Label: Eangach Seger

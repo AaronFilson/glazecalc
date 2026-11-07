@@ -641,33 +641,26 @@ describe('pages in each language', () => {
     expect(map).not.to.match(/hreflang="[^"]*" href="[^"]*learn-with-john-britt"/);
   });
 
-  it('offers the teaching pack to search engines in English and Japanese, and the English for the others', () => {
+  it('offers the teaching pack to search engines in every language, as the other guides', () => {
     const page = '/guides/teaching-glaze-calculation';
     expect(PUBLIC_PAGES).to.include(page);
-    expect(PARTLY_TRANSLATED_PAGES[page]).to.eql(['en', 'ja']);
+    expect(PARTLY_TRANSLATED_PAGES).not.to.have.property(page);
     const live = ['en', 'de', 'ja'];
     const hreflang = (code: string) =>
       `<link rel="alternate" hreflang="${code}" href="https://glazecalcapp.com${code === 'en' ? '' : '/' + code}${page}" />`;
 
-    for (const code of ['en', 'ja']) {
+    for (const code of live) {
       const html = pageHtml(HTML, (code === 'en' ? '' : '/' + code) + page, SITE, {}, live);
       expect(html, code).not.to.include('noindex');
-      expect(html, code).to.include(hreflang('en'));
-      expect(html, code).to.include(hreflang('ja'));
-      expect(html, code).not.to.include('hreflang="de"');
+      for (const other of live) expect(html, code).to.include(hreflang(other));
+      expect(html, code).to.include(
+        `<link rel="canonical" href="https://glazecalcapp.com${code === 'en' ? '' : '/' + code}${page}" />`
+      );
     }
-    expect(pageHtml(HTML, '/ja' + page, SITE, {}, live)).to.include(
-      `<link rel="canonical" href="https://glazecalcapp.com/ja${page}" />`
-    );
-    // German shows the English with the notice: canonical to the English, out of the index.
-    const german = pageHtml(HTML, '/de' + page, SITE, {}, live);
-    expect(german).to.include(`<link rel="canonical" href="https://glazecalcapp.com${page}" />`);
-    expect(german).to.include('<meta name="robots" content="noindex" />');
     expect(prerenderedKey('/de' + page, live)).to.equal('de/guides/teaching-glaze-calculation.html');
 
     const map = sitemap(SITE, live, languages.REFERENCE_LANGUAGES, {});
-    expect(map).to.include(`<loc>https://glazecalcapp.com/ja${page}</loc>`);
-    expect(map).not.to.include(`<loc>https://glazecalcapp.com/de${page}</loc>`);
+    for (const code of ['ja', 'de']) expect(map).to.include(`<loc>https://glazecalcapp.com/${code}${page}</loc>`);
   });
 
   it("keeps each partly translated guide's languages in step with its files", () => {
