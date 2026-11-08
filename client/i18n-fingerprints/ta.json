@@ -1018,6 +1018,8 @@
     "related.cones.text": "10yqvqc",
     "related.materials.title": "16ibat2",
     "related.materials.text": "1shc8tu",
+    "related.famous.title": "tva1j0",
+    "related.famous.text": "71sp79",
     "contents": "j0uvb",
     "poison.numbersFor": "1hc7esu",
     "poison.choose": "qcthim",
@@ -2983,5 +2985,17 @@
     "safety-data-sheets": "112n6p8",
     "official-guidance": "psw6gr",
     "sources": "1ozlbdd"
+  },
+  "guides/teaching-glaze-calculation": {
+    "": "v1tcrh",
+    "about": "f5ph0m",
+    "materials": "2l5coz",
+    "chemistry": "dgv6sp",
+    "reading-the-formula": "16uv380",
+    "recipe-to-formula": "1w2b6wr",
+    "formula-to-recipe": "4k1tue",
+    "body-and-defects": "ijod0v",
+    "tile-maps": "1qz78ms",
+    "sources": "j1cc26"
   }
 }

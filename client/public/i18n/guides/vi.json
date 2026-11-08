@@ -53,6 +53,10 @@
     "materials": {
       "title": "Nguyên liệu có sẵn",
       "text": "Mỗi nguyên liệu trong thư viện kèm phân tích oxit, đóng góp vào công thức Seger và mối nguy."
+    },
+    "famous": {
+      "title": "Các loại men nổi tiếng",
+      "text": "Các loại men được biết đến trên khắp thế giới, mỗi loại từ nguyên liệu truyền thống của địa phương, kèm công thức Seger và một phiên bản làm từ nguyên liệu bán ở nơi bạn sống."
     }
   },
   "contents": "Trong trang này",

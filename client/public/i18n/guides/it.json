@@ -53,6 +53,10 @@
     "materials": {
       "title": "Materiali standard",
       "text": "Ogni materiale dell’elenco con l’analisi degli ossidi, il contributo alla formula di Seger e i pericoli."
+    },
+    "famous": {
+      "title": "Smalti famosi",
+      "text": "Smalti conosciuti in tutto il mondo, ciascuno dai suoi materiali locali tradizionali, con la formula di Seger e una versione con i materiali in vendita dove si trova."
     }
   },
   "contents": "In questa pagina",

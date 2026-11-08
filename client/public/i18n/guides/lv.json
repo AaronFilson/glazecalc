@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standarta izejvielas",
       "text": "Katra bibliotēkas izejviela ar oksīdu analīzi, devumu Zēgera formulā un apdraudējumiem."
+    },
+    "famous": {
+      "title": "Slavenas glazūras",
+      "text": "Visā pasaulē pazīstamas glazūras, katra no savām tradicionālajām vietējām izejvielām, ar tās Zēgera formulu un variantu no izejvielām, ko pārdod jūsu reģionā."
     }
   },
   "contents": "Šajā lapā",

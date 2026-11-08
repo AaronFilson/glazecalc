@@ -17,6 +17,8 @@ export interface GlazeFiring {
   /** A temperature, or a range [from, to], in °C. */
   celsius?: number | [number, number];
   atmosphere?: string;
+  /** No source documents a temperature: the note says so, and none is guessed. */
+  temperatureUnknown?: boolean;
   note?: Prose;
   sources?: string[];
 }
@@ -37,6 +39,8 @@ export interface FamousGlaze {
   recipe?: {
     lines: Array<{ material: string; amount: number }>;
     additives?: Array<{ material: string; amount: number }>;
+    /** Whether Glazecalc has test-fired it; false marks its local version "calculated, not yet test-fired". */
+    tested?: boolean;
     note?: Prose;
     sources?: string[];
   };

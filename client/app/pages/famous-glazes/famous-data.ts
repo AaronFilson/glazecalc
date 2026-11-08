@@ -31,12 +31,16 @@ export interface FamousGlaze {
     cone?: string;
     celsius?: number | [number, number];
     atmosphere: string;
+    /** No source documents a temperature; the note says so. */
+    temperatureUnknown?: boolean;
     note?: Prose;
     sources?: string[];
   };
   recipe: {
     lines: GlazeLine<Material>[];
     additives: GlazeLine<Additive>[];
+    /** Whether it has been test-fired; false marks its local version "calculated, not yet test-fired". */
+    tested?: boolean;
     note?: Prose;
     sources?: string[];
   } | null;

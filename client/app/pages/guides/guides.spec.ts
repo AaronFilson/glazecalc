@@ -169,20 +169,21 @@ describe('guides', () => {
     }
   });
 
-  it('offers the cone chart and the standard materials after the guides, on the English page only', async () => {
+  it('offers the cone chart and the standard materials on the English page, the famous glazes on every page', async () => {
     const english = TestBed.createComponent(GuidesPage);
     await english.whenStable();
     const page = english.nativeElement as HTMLElement;
     const heading = page.querySelector('#reference');
     expect(heading?.textContent?.trim()).toBe('Reference pages');
     const reference = [...page.querySelectorAll<HTMLAnchorElement>('.guide-cards:last-of-type .guide-card')];
-    expect(reference.map((a) => a.getAttribute('href'))).toEqual(['/cones', '/materials']);
+    expect(reference.map((a) => a.getAttribute('href'))).toEqual(['/cones', '/materials', '/famous-glazes']);
     expect(reference.map((a) => a.querySelector('h3')?.textContent?.trim())).toEqual([
       'Cone chart',
-      'Standard materials'
+      'Standard materials',
+      'Famous glazes'
     ]);
 
-    // A language the pages are not translated into does not offer them in its list.
+    // A language the cone chart and materials are not translated into offers only the famous glazes.
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
@@ -193,7 +194,13 @@ describe('guides', () => {
     });
     const german = TestBed.createComponent(GuidesPage);
     await german.whenStable();
-    expect((german.nativeElement as HTMLElement).querySelector('#reference')).toBeNull();
+    const germanPage = german.nativeElement as HTMLElement;
+    expect(germanPage.querySelector('#reference')).not.toBeNull();
+    expect(
+      [...germanPage.querySelectorAll<HTMLAnchorElement>('.guide-cards:last-of-type .guide-card')].map((a) =>
+        a.getAttribute('href')
+      )
+    ).toEqual(['/famous-glazes']);
   });
 
   it('points the firing guide to the cone chart and the safety guides to the materials, in English', async () => {

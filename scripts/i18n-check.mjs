@@ -345,9 +345,11 @@ export function linksIn(text) {
  * Codes written with dots, such as a regulation (29 CFR 1910.1053) or a
  * document number (545.450): more than one dot, or three digits or more on
  * each side of one (a limit such as 0.025 mg is a number). A translation keeps
- * them exactly, so they are not read as its numbers.
+ * them exactly, so they are not read as its numbers. A figure with a unit after it (a molar mass, 100.086 g) is a
+ * number, written the language's way (100,086 g).
  */
-const CODE = /(?<![\d.,])\d+(?:\.\d+){2,}(?![\d.,]*\d)|(?<![\d.,])\d{3,}\.\d{3,}(?![\d.,]*\d)/g;
+const CODE =
+  /(?<![\d.,])\d+(?:\.\d+){2,}(?![\d.,]*\d)|(?<![\d.,])\d{3,}\.\d{3,}(?![\d.,]*\d)(?![ \u00a0\u202f]?(?:g|kg|mg)\b)/g;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 /** An English month's name, in full or short (Apr, Sept.). */
@@ -539,10 +541,18 @@ const SCRIPT_PAIRS = [
 /** Simplified forms Japanese writes too (温度, 数, 硅素). */
 const JAPANESE_TOO = '温数硅';
 
+/**
+ * A run of Han characters with kana in it: Japanese, quoted in a Chinese text as it is written (a source's title,
+ * 釉薬計算プログラムの開発), so not read for Chinese's script.
+ */
+const JAPANESE_RUN =
+  /[\p{sc=Han}\p{sc=Hiragana}\p{sc=Katakana}ー]*[\p{sc=Hiragana}\p{sc=Katakana}][\p{sc=Han}\p{sc=Hiragana}\p{sc=Katakana}ー]*/gu;
+
 /** Problems with a text's script: Chinese in the other script's characters, Japanese in simplified hanzi. */
-function scriptProblems(label, language, text) {
+function scriptProblems(label, language, original) {
   const wrong = { 'zh-Hans': 1, 'zh-Hant': 0, ja: 0 }[language];
   if (wrong === undefined) return [];
+  const text = language === 'ja' ? original : original.replace(JAPANESE_RUN, ' ');
   const pairs = SCRIPT_PAIRS.filter(([simplified]) => language !== 'ja' || !JAPANESE_TOO.includes(simplified));
   const found = pairs.filter((pair) => text.includes(pair[wrong]));
   if (!found.length) return [];

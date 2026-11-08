@@ -53,6 +53,10 @@
     "materials": {
       "title": "Ábhair chaighdeánacha",
       "text": "Gach ábhar sa leabharlann lena anailís ocsaíde, a rannchuidiú le foirmle Seger agus a ghuaiseacha."
+    },
+    "famous": {
+      "title": "Glónraí cáiliúla",
+      "text": "Glónraí a bhfuil cáil orthu ar fud an domhain, gach ceann acu as a ábhair áitiúla thraidisiúnta, lena fhoirmle Seger agus le leagan as na hábhair a dhíoltar san áit a bhfuil tú."
     }
   },
   "contents": "Ar an leathanach seo",

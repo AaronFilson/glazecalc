@@ -53,6 +53,10 @@
     "materials": {
       "title": "Matérias-primas padrão",
       "text": "Cada matéria-prima da biblioteca com sua análise de óxidos, sua contribuição para a fórmula de Seger e seus riscos."
+    },
+    "famous": {
+      "title": "Esmaltes famosos",
+      "text": "Esmaltes conhecidos no mundo todo, cada um feito com suas matérias-primas locais tradicionais, com a fórmula de Seger e uma versão com as matérias-primas vendidas onde você está."
     }
   },
   "contents": "Nesta página",
