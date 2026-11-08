@@ -342,13 +342,13 @@ Label: Radni list 5
 Table: Greške, uzroci i prvi popravak u Segerovoj formuli
 Label: Greške
 
-| Greška             | Uobičajeni uzrok                                 | Prvi popravak koji treba isprobati                 |
-| ------------------ | ------------------------------------------------ | -------------------------------------------------- |
-| Pucanje glazure    | Glazura se skuplja više od keramičke mase        | Manje K₂O i Na₂O; više kalcija, magnezija ili bora |
-| Ljuštenje glazure  | Glazura se skuplja mnogo manje od keramičke mase | Više K₂O i Na₂O                                    |
-| Curenje glazure    | Premalo glinice ili predebeo sloj                | Više glinice; tanji sloj                           |
-| Povlačenje glazure | Prašnjav biskvit ili debeo sloj koji je napukao  | Očistite biskvit; tanji sloj                       |
-| Rupičavost         | Rupice od plina koje se nisu zatvorile           | Zadržavanje na najvišoj temperaturi pečenja; tanji sloj           |
+| Greška             | Uobičajeni uzrok                                 | Prvi popravak koji treba isprobati                      |
+| ------------------ | ------------------------------------------------ | ------------------------------------------------------- |
+| Pucanje glazure    | Glazura se skuplja više od keramičke mase        | Manje K₂O i Na₂O; više kalcija, magnezija ili bora      |
+| Ljuštenje glazure  | Glazura se skuplja mnogo manje od keramičke mase | Više K₂O i Na₂O                                         |
+| Curenje glazure    | Premalo glinice ili predebeo sloj                | Više glinice; tanji sloj                                |
+| Povlačenje glazure | Prašnjav biskvit ili debeo sloj koji je napukao  | Očistite biskvit; tanji sloj                            |
+| Rupičavost         | Rupice od plina koje se nisu zatvorile           | Zadržavanje na najvišoj temperaturi pečenja; tanji sloj |
 
 [Usklađenost glazure i greške](/guides/glazing-basics#fit-and-defects) objašnjava svaku od njih, s testom ledenom vodom za pucanje glazure. Predmete s pucanjem ili ljuštenjem glazure nemojte koristiti za hranu i piće.
 

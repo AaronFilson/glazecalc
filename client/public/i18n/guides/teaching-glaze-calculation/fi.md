@@ -348,7 +348,7 @@ Label: Lasitevirheet
 | Hilseily     | Lasite kutistuu paljon vähemmän kuin massa                   | Enemmän K₂O ja Na₂O                                                  |
 | Valuminen    | Liian vähän alumiinioksidia tai liian paksu kerros           | Enemmän alumiinioksidia; ohuempi kerros                              |
 | Kuroutuminen | Pölyinen raakapoltettu pinta tai paksu kerros, joka halkeili | Puhdista raakapoltettu pinta; ohuempi kerros                         |
-| Neulanreiät  | Kaasu, jonka reiät eivät sulkeutuneet                        | Haudutus huippulämpötilassa; ohuempi kerros                              |
+| Neulanreiät  | Kaasu, jonka reiät eivät sulkeutuneet                        | Haudutus huippulämpötilassa; ohuempi kerros                          |
 
 [Lasitteen ja massan yhteensopivuus sekä lasitevirheet](/guides/glazing-basics#fit-and-defects) selittää jokaisen, ja siinä on säröilyn jäävesitesti. Älä käytä säröillyttä tai hilseillyttä esinettä ruokaan tai juomaan.
 

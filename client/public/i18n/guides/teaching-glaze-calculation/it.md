@@ -342,12 +342,12 @@ Label: Scheda di lavoro 5
 Table: Difetti, cause e un primo rimedio nella formula di Seger
 Label: Difetti
 
-| Difetto             | Causa abituale                                       | Un primo rimedio da provare                               |
-| ------------------- | ---------------------------------------------------- | --------------------------------------------------------- |
-| Cavillatura         | Lo smalto si contrae più dell’impasto                | Meno K₂O e Na₂O; più calcio, magnesia o boro              |
-| Scagliatura         | Lo smalto si contrae molto meno dell’impasto         | Più K₂O e Na₂O                                            |
-| Colatura            | Allumina insufficiente, o strato troppo spesso       | Più allumina; uno strato più sottile                      |
-| Ritiro dello smalto | Biscotto polveroso, o strato spesso che si è crepato | Pulire il biscotto; uno strato più sottile                |
+| Difetto             | Causa abituale                                       | Un primo rimedio da provare                                              |
+| ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| Cavillatura         | Lo smalto si contrae più dell’impasto                | Meno K₂O e Na₂O; più calcio, magnesia o boro                             |
+| Scagliatura         | Lo smalto si contrae molto meno dell’impasto         | Più K₂O e Na₂O                                                           |
+| Colatura            | Allumina insufficiente, o strato troppo spesso       | Più allumina; uno strato più sottile                                     |
+| Ritiro dello smalto | Biscotto polveroso, o strato spesso che si è crepato | Pulire il biscotto; uno strato più sottile                               |
 | Puntinatura         | Gas che non si è richiuso                            | Una sosta alla temperatura massima della cottura; uno strato più sottile |
 
 [Accordo smalto-impasto e difetti](/guides/glazing-basics#fit-and-defects) spiega ciascuno, con la prova dell’acqua e ghiaccio per la cavillatura. Non usare per cibi o bevande pezzi cavillati o con scagliature.

@@ -348,7 +348,7 @@ Label: Mázhibák
 | Lepattogzás    | A máz jóval kevésbé zsugorodik, mint a massza | Több K₂O és Na₂O                                      |
 | Lefolyás       | Túl kevés timföld, vagy túl vastag réteg      | Több timföld; vékonyabb réteg                         |
 | Összehúzódás   | Poros zsenge, vagy vastag, megrepedt réteg    | Tisztítsa meg a zsengét; vékonyabb réteg              |
-| Tűszúrás       | Gáz, amely nem záródott be                    | Hőntartás a csúcshőmérsékleten; vékonyabb réteg            |
+| Tűszúrás       | Gáz, amely nem záródott be                    | Hőntartás a csúcshőmérsékleten; vékonyabb réteg       |
 
 [A máz illeszkedése és mázhibák](/guides/glazing-basics#fit-and-defects) mindegyiket elmagyarázza, a hajszálrepedés jeges vizes próbájával együtt. Hajszálrepedezett vagy lepattogzott árut ne használjon étel vagy ital számára.
 

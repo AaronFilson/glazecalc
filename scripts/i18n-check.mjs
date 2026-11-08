@@ -348,7 +348,8 @@ export function linksIn(text) {
  * them exactly, so they are not read as its numbers. A figure with a unit after it (a molar mass, 100.086 g) is a
  * number, written the language's way (100,086 g).
  */
-const CODE = /(?<![\d.,])\d+(?:\.\d+){2,}(?![\d.,]*\d)|(?<![\d.,])\d{3,}\.\d{3,}(?![\d.,]*\d)(?![ \u00a0\u202f]?(?:g|kg|mg)\b)/g;
+const CODE =
+  /(?<![\d.,])\d+(?:\.\d+){2,}(?![\d.,]*\d)|(?<![\d.,])\d{3,}\.\d{3,}(?![\d.,]*\d)(?![ \u00a0\u202f]?(?:g|kg|mg)\b)/g;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 /** An English month's name, in full or short (Apr, Sept.). */
