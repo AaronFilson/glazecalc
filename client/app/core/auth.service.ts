@@ -34,7 +34,15 @@ const OLD_TOKEN_KEY = 'token';
 type SessionKind = 'account' | 'trial';
 
 /** Why a session ended: see AuthService.onSessionEnd. */
-export type SessionEndReason = 'signed-out' | 'expired' | 'trial-ended' | 'deleted';
+export type SessionEndReason = 'signed-out' | 'expired' | 'trial-ended' | 'deleted' | 'gone';
+
+/** Whether the server's 401 says the account was deleted (elsewhere) rather than the sign-in having ended. */
+export const accountGone = (err: unknown): boolean =>
+  err instanceof HttpErrorResponse &&
+  err.status === 401 &&
+  !!err.error &&
+  typeof err.error === 'object' &&
+  (err.error as { code?: unknown }).code === 'account-gone';
 
 interface EmailResponse {
   email: string;
@@ -487,7 +495,7 @@ export class AuthService {
       );
     } catch (err) {
       if (this.sessionVersion() !== version) return;
-      if (err instanceof HttpErrorResponse && err.status === 401) this.sessionEnded();
+      if (err instanceof HttpErrorResponse && err.status === 401) this.sessionEnded(accountGone(err));
       else this.email.set(null);
     }
   }
@@ -594,7 +602,8 @@ export class AuthService {
   /**
    * Calls `then` each time the session on this browser ends, with why: the person signed out ('signed-out'), the
    * server stopped accepting it ('expired'), a trial ran out ('trial-ended'), or the account or trial was deleted
-   * ('deleted'). What is kept on the device depends on it (core/offline-records.ts).
+   * ('deleted'), or the server says the account no longer exists, deleted elsewhere ('gone'). What is kept on the
+   * device depends on it (core/offline-records.ts).
    */
   onSessionEnd(then: (reason: SessionEndReason) => void): void {
     this.onEnd.push(then);
@@ -613,11 +622,11 @@ export class AuthService {
   /**
    * The server no longer accepts this browser's session (it expired, the
    * password changed elsewhere, or the trial ran out): forget it, and for a
-   * trial remember why, so the start page can say so.
+   * trial remember why, so the start page can say so. `gone`: the server said the account no longer exists.
    */
-  sessionEnded(): void {
+  sessionEnded(gone = false): void {
     if (this.session() === 'trial') this.endTrial();
-    else this.forget('expired');
+    else this.forget(gone ? 'gone' : 'expired');
   }
 
   private endTrial(): void {

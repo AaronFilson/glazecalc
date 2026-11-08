@@ -34,6 +34,8 @@ export const MESSAGES = {
   'no-token': 'No token yet, so there is no email to find. Goodbye.',
   verified: 'User verified',
   'not-signed-in': 'could not authenticate user',
+  // A genuine sign-in for an account that was deleted (server/lib/jwt_auth.ts).
+  'account-gone': 'This account no longer exists.',
   'no-user': 'No user with that id',
   'not-allowed': 'Not allowed to change another user',
   'user-updated': 'User updated',

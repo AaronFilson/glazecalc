@@ -7,6 +7,7 @@
   "no-token": "Marķiera vēl nav, tāpēc nav e-pasta adreses, ko atrast. Uz redzēšanos.",
   "verified": "Lietotājs ir verificēts.",
   "not-signed-in": "Neizdevās autentificēt lietotāju.",
+  "account-gone": "Šis konts vairs nepastāv.",
   "no-user": "Nav lietotāja ar šādu ID.",
   "not-allowed": "Mainīt cita lietotāja datus nav atļauts.",
   "user-updated": "Lietotāja dati ir atjaunināti.",

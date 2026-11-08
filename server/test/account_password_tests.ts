@@ -58,6 +58,39 @@ describe('changing the email or deleting the account needs the current password'
     expect(res).to.have.status(200);
     expect(await User.findById(user._id)).to.eql(null);
   });
+
+  it('tells another device whose sign-in is still genuine that the account is gone', async () => {
+    // Deleted elsewhere: this token (another device's) is the server's own and has not run out.
+    await User.deleteOne({ _id: user._id });
+    for (const path of ['/verify', '/recipe/getAll', '/notes/getAll']) {
+      const res = await api()
+        .get(path)
+        .set('Authorization', 'Bearer ' + token);
+      expect(res, path).to.have.status(401);
+      expect(res.body, path).to.include({ code: 'account-gone', msg: 'This account no longer exists.' });
+    }
+  });
+
+  it('says only "not signed in" for a token that is not genuine or no longer current', async () => {
+    const forged = token.slice(0, -2) + (token.endsWith('AA') ? 'BB' : 'AA');
+    await User.updateOne({ _id: user._id }, { $inc: { tokenVersion: 1 } });
+    for (const bad of [forged, token, 'not-a-token']) {
+      const res = await api()
+        .get('/verify')
+        .set('Authorization', 'Bearer ' + bad);
+      expect(res).to.have.status(401);
+      expect(res.body.code).to.eql('not-signed-in');
+    }
+    // Deleted, with an old (outdated) token: genuine, and the account is gone.
+    await User.deleteOne({ _id: user._id });
+    expect(
+      (
+        await api()
+          .get('/verify')
+          .set('Authorization', 'Bearer ' + token)
+      ).body.code
+    ).to.eql('account-gone');
+  });
 });
 
 // Someone holding a stolen session could otherwise guess the password over and

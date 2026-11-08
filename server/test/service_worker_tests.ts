@@ -183,6 +183,17 @@ describe('service worker build step', () => {
       );
     });
 
+    it("adds the outbox's Background Sync listener to the worker, after Angular's own", async () => {
+      const config = configFile();
+      await addServiceWorker(browser, config);
+      fs.rmSync(config);
+      const worker = fs.readFileSync(path.join(browser, 'ngsw-worker.js'), 'utf8');
+      expect(worker).to.include("addEventListener('sync'");
+      expect(worker).to.include("event.tag !== 'gc-outbox'");
+      expect(worker).to.include("type: 'gc-outbox-sync'");
+      expect(worker.indexOf("addEventListener('sync'")).to.be.greaterThan(worker.length / 2);
+    });
+
     it('makes the safety worker the worker when the kill switch is on', async () => {
       const config = configFile();
       await addServiceWorker(browser, config, true);

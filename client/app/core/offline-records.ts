@@ -8,7 +8,8 @@ import { formatDate } from '../shared/format';
 import { API_BASE } from './api-base';
 import { AuthService, type SessionEndReason } from './auth.service';
 import { OfflineAsk } from './offline-ask';
-import { Outbox, applyEntry, type OutboxEntry } from './outbox';
+import { deviceExport, saveJson } from './offline-export';
+import { OUTBOX_SYNC_MESSAGE, Outbox, applyEntry, type OutboxEntry } from './outbox';
 import {
   CURRENT,
   META,
@@ -41,6 +42,27 @@ export const RECORD_KEYS: readonly string[] = [...RECORD_COLLECTIONS, ...RECORD_
 export const COPY_REFRESH = new HttpContextToken<boolean>(() => false);
 /** The copy is fetched again in full when it is this old (ms). */
 const REFRESH_AFTER_MS = 24 * 60 * 60 * 1000;
+const DAY_MS = 24 * 60 * 60 * 1000;
+/**
+ * In this browser's storage: the id of an account the server said no longer exists (deleted elsewhere) while its
+ * offline copy or changes are still here, until the person exports and clears them, or clears them.
+ */
+export const OFFLINE_GONE = 'offlineGone';
+/** The choices for how long the offline data is kept without Glazecalc being opened here, in days; null: forever. */
+export const KEEP_CHOICES: readonly (number | null)[] = [null, 7, 30, 90, 365];
+
+/**
+ * Whether an account's copy has gone unused for longer than the person chose (`keepDays`, null: kept forever),
+ * counted from when Glazecalc was last opened here with it (`usedAt`, else when it was last saved).
+ */
+export function keepExpired(
+  meta: { keepDays?: number | null; usedAt?: number; savedAt: number },
+  now: number
+): boolean {
+  if (!meta.keepDays) return false;
+  const used = meta.usedAt ?? meta.savedAt;
+  return used > 0 && now - used > meta.keepDays * DAY_MS;
+}
 
 /** What the sign-out question decided. */
 export type SignOutChoice = 'keep' | 'delete' | 'cancel';
@@ -73,6 +95,10 @@ interface Meta {
   schema: number;
   sessionEndsAt: number | null;
   sessionOnly: boolean;
+  /** How long the person keeps the copy without opening Glazecalc here, in days; absent or null: forever. */
+  keepDays?: number | null;
+  /** When Glazecalc was last opened here with this copy (ms). */
+  usedAt?: number;
 }
 
 interface Kept {
@@ -91,7 +117,10 @@ interface Kept {
  * The person's work is not deleted behind their back. Closing the browser, restarting the device, the sign-in
  * running out (offline or not), a session-only sign-in after the browser closed, and a failed /verify while
  * offline all leave the copy and the queue as they are. They go only when the person turns the copy off or clears
- * it (`clear`), or deletes their account. Each account's copy is kept under its own id: a different user signing
+ * it (`clear`), or deletes their account; when the time they chose to keep it (`setKeepDays`) passed without
+ * Glazecalc being opened here, it goes as the site next opens (never in the background); and when the server says
+ * the account was deleted elsewhere, it goes only after the person exports it or chooses to clear it (`askGone`).
+ * Each account's copy is kept under its own id: a different user signing
  * in locks the previous user's copy and queue away (never shown, never sent, kept for their next sign-in, deleted
  * only by that user, or by clearing the browser's storage). The app never tells one account whether another has
  * anything here, and never lets one delete another's. Not encrypted by the app: the browser
@@ -130,6 +159,10 @@ export class OfflineRecords {
   readonly notKept = signal(false);
   /** Turning the copy on in an iPhone or iPad browser: Safari may remove it after 7 days without use. */
   readonly iosNotice = signal(false);
+  /** How long the signed-in user keeps their copy without opening Glazecalc here (days); null: until they delete it. */
+  readonly keepDays = signal<number | null>(null);
+  /** The copy was removed as this site opened, because it went unused for longer than the person chose. */
+  readonly keepRemoved = signal(false);
   /** Whether saving is off: the page shows the copy. */
   readonly readOnly = computed(() => this.showingCopy() !== null);
   /** Why saving is off, for the title of a disabled button; null while saving is on. */
@@ -147,8 +180,12 @@ export class OfflineRecords {
     this.auth.onSessionStart(() => this.sessionStarted());
     // A copy left behind that nothing needs (no flag, no waiting change): a clear another tab blocked.
     if (!this.storesAnything()) this.ready = this.drop();
-    // Changes waiting from before: counted at once, so a start with no network shows them (the user is the copy's).
-    else if (this.outbox().noted()) queueMicrotask(() => void this.outbox().refreshCount());
+    else {
+      // Changes waiting from before: counted at once, so a start with no network shows them (the user is the copy's).
+      if (this.outbox().noted()) queueMicrotask(() => void this.outbox().refreshCount());
+      // The site opens: the time the person chose to keep the copy is checked now, and only now.
+      this.ready = this.opened();
+    }
     // Another tab turned the copy off, or the storage was cleared by the person.
     const onStorage = (event: StorageEvent) => {
       if (event.key === null) void this.clear();
@@ -165,12 +202,102 @@ export class OfflineRecords {
       if (this.showingCopy()) this.backOnline.set(true);
       void this.refetch([...this.shownKeys.keys()]);
     };
+    // More moments to send what waits, as the `online` event is not fired everywhere it should be (Safari on waking,
+    // a tab brought back from the back-forward cache, a phone's app switched back to): the page shown again, and the
+    // service worker's Background Sync where the browser has it (core/outbox.ts requestSync).
+    const onShown = () => {
+      if (document.visibilityState !== 'hidden') void this.outbox().flush();
+    };
+    const onWorker = (event: MessageEvent) => {
+      if ((event.data as { type?: unknown } | null)?.type === OUTBOX_SYNC_MESSAGE) void this.outbox().flush();
+    };
+    const worker = typeof navigator !== 'undefined' ? navigator.serviceWorker : undefined;
     window.addEventListener('storage', onStorage);
     window.addEventListener('online', onOnline);
+    window.addEventListener('pageshow', onShown);
+    document.addEventListener('visibilitychange', onShown);
+    worker?.addEventListener('message', onWorker);
     inject(DestroyRef).onDestroy(() => {
       window.removeEventListener('storage', onStorage);
       window.removeEventListener('online', onOnline);
+      window.removeEventListener('pageshow', onShown);
+      document.removeEventListener('visibilitychange', onShown);
+      worker?.removeEventListener('message', onWorker);
     });
+  }
+
+  /**
+   * The site opens with something kept here. The copy shown (the last one kept) is removed when it went unused for
+   * longer than its account chose; otherwise it is noted as used now. Another account's locked copy is checked only
+   * when that account signs in here (switchTo). An account the server said was deleted is asked about again, while
+   * nobody is signed in and nobody else has signed in here since.
+   */
+  private async opened(): Promise<void> {
+    if (this.rawFlag() === '1') {
+      try {
+        const db = await openRecordsDb(() => (this.db = null));
+        const current = await request<string | undefined>(db.transaction(STORE).objectStore(STORE).get(CURRENT));
+        db.close();
+        if (current) await this.checkKeep(current);
+      } catch {
+        // Could not look: nothing is removed.
+      }
+    }
+    const gone = this.goneId();
+    if (gone && !this.auth.hasSession()) {
+      const current = await this.currentId();
+      if (current === gone || (current === null && (await this.outbox().mine(gone)).length > 0))
+        void this.askGone(gone);
+      else if (current !== null) this.setGone(null);
+    }
+  }
+
+  /**
+   * Removes `userId`'s copy and changes when they went unused longer than the account chose; else notes them as
+   * used now. Only ever for the account that is opening the site here. True when they were removed.
+   */
+  private async checkKeep(userId: string): Promise<boolean> {
+    const db = await openRecordsDb(() => undefined);
+    try {
+      const tx = db.transaction(STORE, 'readwrite');
+      const store = tx.objectStore(STORE);
+      const meta = await request<Meta | undefined>(store.get(copyKey(userId, META)));
+      if (!meta || meta.schema !== SCHEMA) {
+        await done(tx);
+        return false;
+      }
+      const now = Date.now();
+      const expired = keepExpired(meta, now);
+      if (!expired) store.put({ ...meta, usedAt: now } satisfies Meta, copyKey(userId, META));
+      await done(tx);
+      if (!expired) {
+        this.keepDays.set(meta.keepDays ?? null);
+        return false;
+      }
+    } finally {
+      db.close();
+    }
+    await this.wipe(userId);
+    this.keepRemoved.set(true);
+    return true;
+  }
+
+  /** Sets how long the signed-in user's copy is kept without Glazecalc being opened here (days; null: forever). */
+  async setKeepDays(days: number | null): Promise<void> {
+    const user = this.user ?? (await this.learnUser().then(() => this.user));
+    if (!user || !this.keeping()) return;
+    try {
+      const db = await this.open();
+      const tx = db.transaction(STORE, 'readwrite');
+      const store = tx.objectStore(STORE);
+      const meta = await request<Meta | undefined>(store.get(copyKey(user.id, META)));
+      const base = meta?.schema === SCHEMA ? meta : this.metaFor(user, 0);
+      store.put({ ...base, keepDays: days, usedAt: Date.now() } satisfies Meta, copyKey(user.id, META));
+      await done(tx);
+      this.keepDays.set(days);
+    } catch {
+      // Not saved: the setting stays as it was.
+    }
   }
 
   /** Whether the switch can be offered: in a browser, with IndexedDB, for an account (not a trial). */
@@ -386,7 +513,9 @@ export class OfflineRecords {
       const now = Date.now();
       const tx = db.transaction(STORE, 'readwrite');
       tx.objectStore(STORE).put({ body: shown, savedAt: now } satisfies Kept, copyKey(user.id, key));
-      tx.objectStore(STORE).put(this.metaFor(user, now), copyKey(user.id, META));
+      // The person's own choices in the meta (how long to keep it) stay.
+      const old = await request<Meta | undefined>(tx.objectStore(STORE).get(copyKey(user.id, META)));
+      tx.objectStore(STORE).put(this.metaFor(user, now, old), copyKey(user.id, META));
       await done(tx);
     } catch {
       // No room, or the database is gone: the copy stays as it was.
@@ -457,12 +586,96 @@ export class OfflineRecords {
 
   /** The session ended. Only the person's sign-out or deleting the account removes anything. */
   private async sessionEnded(reason: SessionEndReason): Promise<void> {
+    const user = this.user;
     this.forgetState();
     if (reason === 'deleted') return this.clear();
+    if (reason === 'gone') {
+      // Deleted elsewhere: the person is asked to export what this device holds before it is cleared.
+      const id = user?.id ?? (await this.currentId());
+      if (id && ((await this.currentId()) === id || (await this.outbox().mine(id)).length > 0)) {
+        this.setGone(id);
+        await this.askGone(id);
+      }
+      return;
+    }
     // A sign-out, a sign-in that ran out or a trial that ended: nothing is deleted here. The person chose in the
     // sign-out question (askSignOut: Keep on this device, or Delete, which the caller did with `clear` before). What
     // is kept stays locked to this user: the same user's next sign-in shows the copy and sends the changes, and
     // another account never sees them (checkOwner).
+  }
+
+  /**
+   * The server said account `id` no longer exists while this device holds its copy or changes: asks the person to
+   * export them (a file in the format of "Download my data"), clear them without exporting, or decide later. Nothing
+   * is cleared until they choose to; "Later" asks again the next time the site opens.
+   */
+  private async askGone(id: string): Promise<void> {
+    const ask = this.injector.get(OfflineAsk);
+    const count = (await this.outbox().mine(id)).length;
+    const body = [translate(marker('offline.goneBody'))];
+    if (count > 0) body.push(translate(marker('offline.unsentLost'), { count }));
+    body.push(translate(marker('offline.goneHint')));
+    const answer = await ask.ask({
+      title: translate(marker('offline.goneTitle')),
+      body,
+      choices: [
+        { id: 'export', label: translate(marker('offline.goneExport')), primary: true },
+        { id: 'clear', label: translate(marker('offline.goneClear')), danger: true },
+        { id: 'later', label: translate(marker('offline.goneLater')) }
+      ],
+      cancel: 'later'
+    });
+    if (answer === 'export') {
+      await this.exportCopy(id);
+      const then = await ask.ask({
+        title: translate(marker('offline.goneTitle')),
+        body: [translate(marker('offline.goneExported'))],
+        choices: [
+          { id: 'clear', label: translate(marker('offline.deleteFromDevice')), danger: true },
+          { id: 'later', label: translate(marker('offline.goneLater')), primary: true }
+        ],
+        cancel: 'later'
+      });
+      if (then !== 'clear') return;
+    } else if (answer !== 'clear') return;
+    // Only this account's copy and changes, and only if nobody signed in meanwhile.
+    if (this.goneId() !== id || this.auth.hasSession()) return;
+    await this.wipe(id);
+    this.setGone(null);
+  }
+
+  /** Saves account `id`'s offline copy, with its changes not sent yet, as a file (core/offline-export.ts). */
+  async exportCopy(id: string): Promise<void> {
+    const copies: Record<string, unknown> = {};
+    try {
+      const store = (await this.openAny()).transaction(STORE).objectStore(STORE);
+      for (const key of RECORD_KEYS) {
+        const kept = await request<Kept | undefined>(store.get(copyKey(id, key)));
+        if (kept) copies[key] = kept.body;
+      }
+    } catch {
+      // Nothing could be read: the file holds what the outbox has.
+    }
+    const day = new Date().toISOString().slice(0, 10);
+    saveJson(deviceExport(id, copies, await this.outbox().mine(id)), `glazecalc-offline-data-${day}.json`);
+  }
+
+  /** The account the server said was deleted, whose data here waits for the person's choice, or null. */
+  goneId(): string | null {
+    try {
+      return this.browser ? localStorage.getItem(OFFLINE_GONE) : null;
+    } catch {
+      return null;
+    }
+  }
+
+  private setGone(id: string | null): void {
+    try {
+      if (id) localStorage.setItem(OFFLINE_GONE, id);
+      else localStorage.removeItem(OFFLINE_GONE);
+    } catch {
+      // Storage unavailable: asked again only in this tab.
+    }
   }
 
   /** A sign-in starts: until /verify names the user, the copy may be another person's. */
@@ -505,6 +718,12 @@ export class OfflineRecords {
     } catch {
       // Could not look: nothing is shown, nothing is deleted.
       mine = false;
+    }
+    if (this.user !== user) return;
+    // The account opens the site here again: its own time to keep the copy is checked now.
+    if (mine && (await this.checkKeep(user.id).catch(() => false))) {
+      this.user = user;
+      return;
     }
     if (this.user !== user) return;
     this.forgetState();
@@ -597,17 +816,27 @@ export class OfflineRecords {
       const db = await this.open();
       const tx = db.transaction(STORE, 'readwrite');
       const old = await request<Meta | undefined>(tx.objectStore(STORE).get(copyKey(user.id, META)));
-      tx.objectStore(STORE).put(this.metaFor(user, old?.schema === SCHEMA ? old.savedAt : 0), copyKey(user.id, META));
+      const kept = old?.schema === SCHEMA ? old : undefined;
+      tx.objectStore(STORE).put(this.metaFor(user, kept?.savedAt ?? 0, kept), copyKey(user.id, META));
       tx.objectStore(STORE).put(user.id, CURRENT);
       await done(tx);
+      this.keepDays.set(kept?.keepDays ?? null);
       return true;
     } catch {
       return false;
     }
   }
 
-  private metaFor(user: SignedInUser, savedAt: number): Meta {
-    return { userId: user.id, savedAt, schema: SCHEMA, sessionEndsAt: user.endsAt, sessionOnly: user.sessionOnly };
+  private metaFor(user: SignedInUser, savedAt: number, old?: Meta): Meta {
+    return {
+      userId: user.id,
+      savedAt,
+      schema: SCHEMA,
+      sessionEndsAt: user.endsAt,
+      sessionOnly: user.sessionOnly,
+      keepDays: old?.schema === SCHEMA ? (old.keepDays ?? null) : null,
+      usedAt: (old?.schema === SCHEMA && old.usedAt) || Date.now()
+    };
   }
 
   private async fetchAll(now: boolean): Promise<void> {
@@ -647,8 +876,8 @@ export class OfflineRecords {
    * and changes always stay. The database itself goes when nothing is left in it. Starts at once, so it runs before
    * any page after a sign-out shows.
    */
-  private async wipe(): Promise<void> {
-    const owner = this.user?.id ?? null;
+  private async wipe(account?: string): Promise<void> {
+    const owner = account ?? this.user?.id ?? null;
     const stored = this.storesAnything();
     // At once: no page after a sign-out reads the copy. Set back to "locked" below if other accounts keep copies.
     this.setFlag(null);
@@ -658,6 +887,7 @@ export class OfflineRecords {
       // Storage unavailable: there is no flag to remove.
     }
     this.enabled.set(false);
+    this.keepDays.set(null);
     this.forgetState();
     if (!this.browser || typeof indexedDB === 'undefined') return;
     let otherCopies = 0;
@@ -669,7 +899,7 @@ export class OfflineRecords {
         const copies = tx.objectStore(STORE);
         const current = await request<string | undefined>(copies.get(CURRENT));
         const mine = owner ?? current ?? null;
-        copies.delete(CURRENT);
+        if (account === undefined || current === account) copies.delete(CURRENT);
         for (const key of await request<IDBValidKey[]>(copies.getAllKeys())) {
           const account = accountOf(key);
           if (account !== null && account === mine) copies.delete(key);

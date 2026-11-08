@@ -21,8 +21,21 @@ export const OUTBOX_SEND = new HttpContextToken<boolean>(() => false);
 export const OUTBOX_NOTE = 'offlineOutbox';
 /** The start of the id a record made offline has until the server gives it one. */
 const TMP = 'tmp:';
-/** How long to wait before trying again after the server failed or was busy (ms). */
+/** How long to wait before trying again after the server failed or was busy, or the network failed (ms). */
 const RETRY_MS = 30_000;
+/** The longest wait between tries: each failure in a row doubles the wait up to this (ms). */
+const RETRY_MAX_MS = 5 * 60_000;
+/**
+ * The Background Sync tag (Chromium's SyncManager): the service worker's `sync` listener (scripts/outbox-sync.js,
+ * added to ngsw-worker.js by scripts/service-worker.mjs) tells the open pages to send.
+ */
+export const OUTBOX_SYNC_TAG = 'gc-outbox';
+/** The message the service worker posts to the pages when the browser fires the sync event. */
+export const OUTBOX_SYNC_MESSAGE = 'gc-outbox-sync';
+
+/** The wait before the next try after `failures` failures in a row (ms). */
+export const retryDelay = (failures: number): number =>
+  Math.min(RETRY_MAX_MS, RETRY_MS * 2 ** Math.max(0, failures - 1));
 
 /**
  * What a queued change does. create/change/delete are a record's (POST /<area>/create, PUT /<area>/change/:id,
@@ -281,6 +294,8 @@ export class Outbox {
   private db: Promise<IDBDatabase> | null = null;
   private flushing: Promise<void> | null = null;
   private retry: ReturnType<typeof setTimeout> | undefined;
+  /** Tries in a row that failed (network or server): the wait before the next grows with it. */
+  private failures = 0;
   /** The ids the server gave records made offline, for what still holds the temporary one. */
   private readonly ids = new Map<string, string>();
 
@@ -392,7 +407,27 @@ export class Outbox {
     await done(tx);
     this.setNote(true);
     await this.refreshCount(userId);
+    void this.requestSync();
     return id;
+  }
+
+  /**
+   * Asks the browser to wake the service worker when the network is back (Background Sync), where it can: Chrome,
+   * Edge, Opera, Samsung Internet and other Chromium browsers. Firefox and Safari have no SyncManager; there the
+   * page's own moments to send (online, page shown again, page load, retries) are all there is. Best effort.
+   */
+  async requestSync(): Promise<boolean> {
+    try {
+      if (!this.browser || typeof navigator === 'undefined' || !navigator.serviceWorker?.getRegistration) return false;
+      const registration = (await navigator.serviceWorker.getRegistration()) as
+        (ServiceWorkerRegistration & { sync?: { register(tag: string): Promise<void> } }) | undefined;
+      if (!registration?.sync) return false;
+      await registration.sync.register(OUTBOX_SYNC_TAG);
+      return true;
+    } catch {
+      // Not allowed here (no worker yet, or the browser said no).
+      return false;
+    }
   }
 
   /** Whether a change to this record or setting waits, so a new one must queue behind it. */
@@ -552,10 +587,12 @@ export class Outbox {
       );
       await this.sent(entry, res, touched);
       this.sentCount++;
+      this.failures = 0;
       return true;
     } catch (err) {
       if (!(err instanceof HttpErrorResponse)) {
         await this.update(entry.seq!, { state: 'waiting' });
+        this.retryLater();
         return false;
       }
       return this.refused(entry, err, touched);
@@ -612,7 +649,9 @@ export class Outbox {
     if (err.status === 0 || err.status === 401 || err.status === 429 || err.status >= 500) {
       await this.update(entry.seq!, { state: 'waiting' });
       if (err.status === 401) this.signInNeeded.set(true);
-      else if (err.status !== 0) this.retryLater();
+      // The network failed though the browser says it is online (a captive portal, a weak signal): tried again later
+      // too, as no `online` event may come.
+      else if (err.status !== 0 || navigator.onLine !== false) this.retryLater();
       return false;
     }
     const theirs = isBody(err.error) && isBody(err.error['record']) ? err.error['record'] : undefined;
@@ -769,7 +808,8 @@ export class Outbox {
 
   private retryLater(): void {
     clearTimeout(this.retry);
-    this.retry = setTimeout(() => void this.flush(), RETRY_MS);
+    this.failures++;
+    this.retry = setTimeout(() => void this.flush(), retryDelay(this.failures));
   }
 
   private setNote(on: boolean): void {

@@ -7,6 +7,7 @@
   "no-token": "Još nema tokena, pa nema ni adrese e-pošte koju bi trebalo pronaći. Doviđenja.",
   "verified": "Korisnik je potvrđen.",
   "not-signed-in": "Autentifikacija korisnika nije uspjela.",
+  "account-gone": "Ovaj račun više ne postoji.",
   "no-user": "Nema korisnika s tim ID-om.",
   "not-allowed": "Nije dopušteno mijenjati drugog korisnika.",
   "user-updated": "Korisnik je ažuriran.",

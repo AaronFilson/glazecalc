@@ -36,8 +36,24 @@ export const sessionKeyOf = (req: Request): string | null => {
 
 /** The user whose valid, current token the request carries, or null. */
 export const currentUser = async (req: Request): Promise<UserDocument | null> => {
+  const found = await signedIn(req);
+  return 'user' in found ? found.user : null;
+};
+
+/**
+ * The user, or why there is none: `gone` when the token is genuine (this server signed it, it has not run out) but
+ * the account it names no longer exists. The app then offers to export the copy it keeps on the device before
+ * clearing it (client/app/core/offline-records.ts).
+ */
+export const signedIn = async (req: Request): Promise<{ user: UserDocument } | { gone: boolean }> => {
   const token = tokenOf(req);
-  if (!token) return null;
+  if (!token) return { gone: false };
+  const user = await userOfToken(token);
+  if (user === 'gone') return { gone: true };
+  return user ? { user } : { gone: false };
+};
+
+const userOfToken = async (token: string): Promise<UserDocument | null | 'gone'> => {
   let claims: string | jwt.JwtPayload;
   try {
     claims = jwt.verify(token, appSecret, { algorithms: ['HS256'] });
@@ -61,7 +77,9 @@ export const currentUser = async (req: Request): Promise<UserDocument | null> =>
     if (err instanceof Error && err.name === 'CastError') return null;
     throw err;
   }
-  if (!user) return null;
+  // The token is genuine and current, but its account is no longer there. (A swept trial says the same; the app
+  // ends a trial's session as a trial either way.)
+  if (!user) return 'gone';
   // Tokens from before the last password change no longer count. Tokens made
   // before versions existed have none, which matches an unchanged password.
   if (version !== (user.tokenVersion || 0)) return null;
@@ -103,11 +121,12 @@ export default async function jwtAuth(req: Request, res: Response, next: NextFun
   // the same, so a client learns whether its token is bad (401) or only not
   // for this (403), as RFC 6750 asks; the cookie is not looked at.
   if (accessTokenIn(req) !== null) return refuseAccessTokens(req, res, next);
-  const user = await currentUser(req);
-  if (!user) {
-    res.status(401).json(say('not-signed-in'));
+  const found = await signedIn(req);
+  if (!('user' in found)) {
+    res.status(401).json(say(found.gone ? 'account-gone' : 'not-signed-in'));
     return;
   }
+  const user = found.user;
   req.user = user;
   req.access = { via: 'session' };
   if (user.guest) return guestLimits.parseBody(req, res, next);

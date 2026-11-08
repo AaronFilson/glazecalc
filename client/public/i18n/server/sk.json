@@ -7,6 +7,7 @@
   "no-token": "Zatiaľ chýba token, takže nie je možné zistiť e-mailovú adresu. Dovidenia.",
   "verified": "Používateľ bol overený",
   "not-signed-in": "používateľa sa nepodarilo overiť",
+  "account-gone": "Tento účet už neexistuje.",
   "no-user": "Používateľ s týmto ID neexistuje",
   "not-allowed": "Nie je povolené meniť iného používateľa",
   "user-updated": "Používateľ bol aktualizovaný",

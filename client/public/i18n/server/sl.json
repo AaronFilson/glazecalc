@@ -7,6 +7,7 @@
   "no-token": "Žetona še ni, zato ni e-poštnega naslova, ki bi ga lahko poiskali. Nasvidenje.",
   "verified": "Uporabnik je preverjen",
   "not-signed-in": "uporabnika ni bilo mogoče preveriti",
+  "account-gone": "Ta račun ne obstaja več.",
   "no-user": "Uporabnik s tem ID-jem ne obstaja",
   "not-allowed": "Spreminjanje drugega uporabnika ni dovoljeno",
   "user-updated": "Uporabnik je posodobljen",

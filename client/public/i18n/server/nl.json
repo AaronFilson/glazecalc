@@ -7,6 +7,7 @@
   "no-token": "Nog geen token, dus er is geen e-mailadres te vinden. Tot ziens.",
   "verified": "Gebruiker geverifieerd.",
   "not-signed-in": "De gebruiker kon niet worden geauthenticeerd.",
+  "account-gone": "Dit account bestaat niet meer.",
   "no-user": "Geen gebruiker met die id.",
   "not-allowed": "Het is niet toegestaan een andere gebruiker te wijzigen.",
   "user-updated": "Gebruiker bijgewerkt.",

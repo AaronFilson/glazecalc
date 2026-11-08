@@ -7,6 +7,7 @@
   "no-token": "Încă nu există un token, deci nu există nicio adresă de e-mail de găsit. La revedere.",
   "verified": "Utilizator verificat",
   "not-signed-in": "utilizatorul nu a putut fi autentificat",
+  "account-gone": "Acest cont nu mai există.",
   "no-user": "Nu există niciun utilizator cu acest id",
   "not-allowed": "Nu aveți permisiunea de a modifica alt utilizator",
   "user-updated": "Utilizator actualizat",

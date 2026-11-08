@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import type { IdentityProof, MfaSummary } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
-import { errorMessage } from '../../core/error-message';
+import { errorMessage, isOffline } from '../../core/error-message';
 import { TokensService } from '../../core/tokens.service';
 import { Check, FieldCheck, FieldChecks } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -93,7 +93,7 @@ const nameCheck =
       }
 
       @if (loadFailed()) {
-        <p class="help-text">{{ t('account.tokens.loadFailed') }}</p>
+        <p class="help-text">{{ offline() ? t('offline.notAvailable') : t('account.tokens.loadFailed') }}</p>
       } @else if (service.list(); as list) {
         <h3 class="h5 mt-4" id="token-create-heading">{{ t('account.tokens.createHeading') }}</h3>
         @if (auth.unverified()) {
@@ -268,6 +268,8 @@ export class TokensSection implements OnInit {
   protected readonly writeMost = computed(() => Math.max(0, ...(this.service.list()?.writeExpiryDays ?? [])));
   protected readonly busy = signal(false);
   protected readonly loadFailed = signal(false);
+  /** The list could not be loaded because the network is gone. */
+  protected readonly offline = signal(false);
   protected readonly confirming = signal(false);
   /** The token just made, shown until "Done"; kept nowhere else. */
   protected readonly made = signal<string | null>(null);
@@ -279,7 +281,8 @@ export class TokensSection implements OnInit {
     try {
       const list = await this.service.load();
       this.days.set(list.defaultDays);
-    } catch {
+    } catch (err) {
+      this.offline.set(isOffline(err));
       this.loadFailed.set(true);
     }
   }
