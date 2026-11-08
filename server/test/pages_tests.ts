@@ -202,6 +202,8 @@ describe('pages in each language', () => {
   });
 
   it('offers Tamil, Marathi, Kannada, Telugu, Gujarati, Malayalam, Punjabi and Odia, written for India, and Nepali and Sinhala, for Nepal and Sri Lanka, with the standard notice', () => {
+    // Built once: the whole site's sitemap is slow enough that ten builds ran close to the timeout.
+    const map = sitemap(SITE);
     for (const [code, name, english] of [
       ['ta', 'தமிழ்', 'Tamil'],
       ['mr', 'मराठी', 'Marathi'],
@@ -225,7 +227,7 @@ describe('pages in each language', () => {
       expect(html).to.include(`<html lang="${code}" dir="ltr">`);
       expect(html).not.to.include('<meta name="robots" content="noindex" />');
       expect(html).to.include(`hreflang="${code}"`);
-      expect(sitemap(SITE)).to.include(`/${code}/`);
+      expect(map).to.include(`/${code}/`);
       expect(languages.languageOfPath(`/${code}/recipe`)).to.equal(code);
     }
     expect(languages.canonicalLanguagePath('/KN/recipe')).to.equal('/kn/recipe');

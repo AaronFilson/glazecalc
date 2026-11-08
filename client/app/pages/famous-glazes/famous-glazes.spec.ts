@@ -122,6 +122,8 @@ describe("a famous glaze's route", () => {
 
 describe("a famous glaze's page", () => {
   const render = async (glaze: FamousGlaze, language = 'en') => {
+    // A session another spec left in localStorage would hide the sign-up link.
+    localStorage.clear();
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
