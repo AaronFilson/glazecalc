@@ -510,8 +510,8 @@ describe('recipe firing (API)', () => {
     const ticked = await create({ ...recipe, firedAt: { scale: 'orton', low: '10', tested: ['10'] } });
     expect(ticked.body.firedAt).to.eql({ scale: 'orton', low: '10', tested: ['10'] });
     // The tick can be taken off again.
-    const cleared = await change(ticked.body._id, { firedAt: { scale: 'orton', low: '10', tested: [] } });
-    expect(cleared.body.firedAt).to.eql({ scale: 'orton', low: '10' });
+    expect(await change(ticked.body._id, { firedAt: { scale: 'orton', low: '10', tested: [] } })).to.have.status(200);
+    expect((await latest()).firedAt).to.eql({ scale: 'orton', low: '10' });
   });
 
   it('keeps a temperature firing in °C with its rate and hold', async () => {
