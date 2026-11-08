@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Léim go dtí an phríomhchuid",
     "main": "Príomh-roghchlár",
+    "breadcrumb": "Cosán nascleanúna",
     "signIn": "Sínigh isteach",
     "menu": "Roghchlár",
     "recipes": "Oidis",

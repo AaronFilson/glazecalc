@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Liigu sisu juurde",
     "main": "Peamenüü",
+    "breadcrumb": "Navigeerimisrada",
     "signIn": "Logi sisse",
     "menu": "Menüü",
     "recipes": "Retseptid",

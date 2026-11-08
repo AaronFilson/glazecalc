@@ -44,6 +44,7 @@
   "nav": {
     "skip": "跳到正文",
     "main": "主导航",
+    "breadcrumb": "面包屑导航",
     "signIn": "登录",
     "menu": "菜单",
     "recipes": "配方",

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Pāriet uz saturu",
     "main": "Galvenā izvēlne",
+    "breadcrumb": "Navigācijas ceļš",
     "signIn": "Pierakstīties",
     "menu": "Izvēlne",
     "recipes": "Receptes",

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Aller au contenu",
     "main": "Principale",
+    "breadcrumb": "Fil d'Ariane",
     "signIn": "Se connecter",
     "menu": "Menu",
     "recipes": "Recettes",

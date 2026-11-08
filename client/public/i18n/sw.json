@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Ruka hadi kwenye maudhui",
     "main": "Kuu",
+    "breadcrumb": "Njia ya urambazaji",
     "signIn": "Ingia",
     "menu": "Menyu",
     "recipes": "Vichocheo",

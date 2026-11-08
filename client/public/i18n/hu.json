@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Ugrás a tartalomhoz",
     "main": "Fő navigáció",
+    "breadcrumb": "Navigációs útvonal",
     "signIn": "Bejelentkezés",
     "menu": "Menü",
     "recipes": "Receptek",

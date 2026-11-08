@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Chuyển đến nội dung",
     "main": "Chính",
+    "breadcrumb": "Đường dẫn điều hướng",
     "signIn": "Đăng nhập",
     "menu": "Menu",
     "recipes": "Công thức men",

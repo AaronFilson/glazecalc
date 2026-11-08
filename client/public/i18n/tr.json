@@ -44,6 +44,7 @@
   "nav": {
     "skip": "İçeriğe geç",
     "main": "Ana gezinme",
+    "breadcrumb": "Gezinti yolu",
     "signIn": "Oturum aç",
     "menu": "Menü",
     "recipes": "Reçeteler",

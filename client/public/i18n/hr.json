@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Preskoči na sadržaj",
     "main": "Glavni izbornik",
+    "breadcrumb": "Navigacijska putanja",
     "signIn": "Prijava",
     "menu": "Izbornik",
     "recipes": "Recepti",

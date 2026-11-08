@@ -44,6 +44,7 @@
   "nav": {
     "skip": "本文へスキップ",
     "main": "メインメニュー",
+    "breadcrumb": "パンくずリスト",
     "signIn": "ログイン",
     "menu": "メニュー",
     "recipes": "調合",
