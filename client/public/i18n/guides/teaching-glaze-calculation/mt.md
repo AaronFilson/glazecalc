@@ -348,7 +348,7 @@ Label: Id-difetti
 | Tqaxxir{{en: shivering}} | Il-glejż jiċkien ħafna inqas mit-tafal     | Aktar K₂O u Na₂O                                   |
 | Nżul tal-glejż           | Ftit wisq alumina, jew oħxon wisq          | Aktar alumina; saff irqaq                          |
 | Ġbir tal-glejż           | Bisque bit-trab, jew saff oħxon li xxaqqaq | Naddaf il-bisque; saff irqaq                       |
-| Toqob tal-labra          | Gass li ma ngħalaqx                        | Żamma fl-ogħla temperatura tal-ħami; saff irqaq    |
+| Toqob tal-labra          | Bużżieqa tal-gass li ma ngħalqitx          | Żamma fl-ogħla temperatura tal-ħami; saff irqaq    |
 
 [Il-qbil tal-glejż u d-difetti](/guides/glazing-basics#fit-and-defects) jispjega kull wieħed, bit-test tal-ilma bis-silġ għax-xegħir. Tużax oġġetti bix-xegħir jew bit-tqaxxir għall-ikel jew għax-xorb.
 

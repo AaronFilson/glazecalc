@@ -348,7 +348,7 @@ Label: Lahani
 | Shivering | Glaze yana ƙanƙancewa ƙasa da jiki sosai        | Ƙarin K₂O da Na₂O                                     |
 | Running   | Alumina kaɗan ne ƙwarai, ko shafi mai kauri ne  | Ƙarin alumina; shafi mai sirara                       |
 | Crawling  | Bisque mai ƙura, ko shafi mai kauri da ya tsage | Tsabtace bisque; shafi mai sirara                     |
-| Pinholes  | Iskar gas da ba ta rufe ba                      | Jira a saman gasar; shafi mai sirara                  |
+| Pinholes  | Kumfar gas da ba ta rufe ba                     | Jira a saman gasar; shafi mai sirara                  |
 
 [Dacewar glaze da lahani](/guides/glazing-basics#fit-and-defects) yana bayyana kowanne, da gwajin ruwan ƙanƙara na crazing. Kada ku yi amfani da kayan da suka yi crazing ko shivering don abinci ko abin sha.
 

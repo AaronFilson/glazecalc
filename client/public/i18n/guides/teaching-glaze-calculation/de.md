@@ -342,13 +342,13 @@ Label: Arbeitsblatt 5
 Table: Fehler, Ursachen und eine erste Abhilfe in der Segerformel
 Label: Fehler
 
-| Fehler      | Übliche Ursache                                            | Eine erste Abhilfe zum Ausprobieren                   |
-| ----------- | ---------------------------------------------------------- | ----------------------------------------------------- |
-| Haarrisse   | Die Glasur schwindet stärker als die Tonmasse              | Weniger K₂O und Na₂O; mehr Calcium, Magnesia oder Bor |
-| Abplatzen   | Die Glasur schwindet weit weniger als die Tonmasse         | Mehr K₂O und Na₂O                                     |
-| Ablaufen    | Zu wenig Tonerde oder zu dick                              | Mehr Tonerde; dünner auftragen                        |
-| Abrollen    | Staubige Schrühware oder eine dicke, gerissene Schicht     | Schrühware säubern; dünner auftragen                  |
-| Nadelstiche | Gas, dessen Austrittsstellen nicht wieder zugeflossen sind | Eine Haltezeit bei Höchsttemperatur; dünner auftragen |
+| Fehler      | Übliche Ursache                                                 | Eine erste Abhilfe zum Ausprobieren                   |
+| ----------- | --------------------------------------------------------------- | ----------------------------------------------------- |
+| Haarrisse   | Die Glasur schwindet stärker als die Tonmasse                   | Weniger K₂O und Na₂O; mehr Calcium, Magnesia oder Bor |
+| Abplatzen   | Die Glasur schwindet weit weniger als die Tonmasse              | Mehr K₂O und Na₂O                                     |
+| Ablaufen    | Zu wenig Tonerde oder zu dick                                   | Mehr Tonerde; dünner auftragen                        |
+| Abrollen    | Staubige Schrühware oder eine dicke, gerissene Schicht          | Schrühware säubern; dünner auftragen                  |
+| Nadelstiche | Gasblasen, deren Austrittsstellen nicht wieder zugeflossen sind | Eine Haltezeit bei Höchsttemperatur; dünner auftragen |
 
 [Glasursitz und Glasurfehler](/guides/glazing-basics#fit-and-defects) erklärt jeden einzelnen, mit dem Eiswassertest für Haarrisse. Verwenden Sie Ware mit Haarrissen oder abgeplatzter Glasur nicht für Speisen oder Getränke.
 

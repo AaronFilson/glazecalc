@@ -348,7 +348,7 @@ Label: Fejl
 | Afskalning  | Glasuren svinder langt mindre end skærven             | Mere K₂O og Na₂O                                     |
 | Løb         | For lidt aluminiumoxid, eller for tyk                 | Mere aluminiumoxid; et tyndere lag                   |
 | Kravling    | Støvet forglødet gods, eller et tykt lag, der revnede | Gør det forglødede gods rent; et tyndere lag         |
-| Nålestik    | Gas, der ikke nåede at lukke sig                      | En holdetid ved toptemperaturen; et tyndere lag      |
+| Nålestik    | Gasboble, der ikke nåede at lukke sig                 | En holdetid ved toptemperaturen; et tyndere lag      |
 
 [Glasurtilpasning og glasurfejl](/guides/glazing-basics#fit-and-defects) forklarer hver enkelt, med isvandstesten for krakelering. Brug ikke krakeleret eller afskallet gods til mad eller drikke.
 

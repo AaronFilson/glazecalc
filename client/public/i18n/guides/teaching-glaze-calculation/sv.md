@@ -348,7 +348,7 @@ Label: Fel
 | Avskalning   | Glasyren krymper betydligt mindre än skärven     | Mer K₂O och Na₂O                                          |
 | Rinning      | För lite aluminiumoxid, eller för tjockt         | Mer aluminiumoxid; ett tunnare lager                      |
 | Krypning     | Dammigt skröj, eller ett tjockt lager som sprack | Rengör skröjet; ett tunnare lager                         |
-| Nålstick     | Gas som inte läkte igen                          | En hålltid vid toppen av bränningen; ett tunnare lager    |
+| Nålstick     | Gasbubbla som inte läkte igen                    | En hålltid vid toppen av bränningen; ett tunnare lager    |
 
 [Passning och glasyrfel](/guides/glazing-basics#fit-and-defects) förklarar vart och ett, med isvattentestet för krackelering. Använd inte krackelerat eller avskalat gods till mat eller dryck.
 

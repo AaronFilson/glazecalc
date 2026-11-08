@@ -651,7 +651,7 @@ Finnish potter to check, with the CJK name kept beside them as the English gives
 ”synteettinen korvike tuhkalle 土灰” (土灰 → ”sekapuutuhka”); rice-straw ash (藁灰) → ”riisinolkituhka”; isu ash (柞灰) →
 ”isu-tuhka”; porcelain stone (瓷石) → ”posliinikivi”; 紫金土 → ”rautapitoinen paikallinen savi (紫金土)”; product
 specification (Eti Maden's colemanite: limits, not a typical analysis) → ”tuotemäärittely … raja-arvoja, ei tyypillinen
-analyysi”; Stull chart → ”Stullin kaavio”; famous glazes → ”kuuluisat lasitteet”; worksheet → ”tehtävämoniste”;
+analyysi”; Stull chart → ”Stullin kartta”; famous glazes → ”kuuluisat lasitteet”; worksheet → ”tehtävämoniste”;
 session (a class meeting) → ”opetuskerta”; Teaching glaze calculation → ”Lasitelaskennan opettaminen”.
 
 ## 3. Never translated

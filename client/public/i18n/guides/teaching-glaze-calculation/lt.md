@@ -348,7 +348,7 @@ Label: Defektai
 | Atšokimas             | Glazūra susitraukia kur kas mažiau nei šukė             | Daugiau K₂O ir Na₂O                                                |
 | Nubėgimas             | Per mažai aliuminio oksido arba per storas sluoksnis    | Daugiau aliuminio oksido; plonesnis sluoksnis                      |
 | Susitraukimas į salas | Dulkėtas biskvitas arba storas sluoksnis, kuris suskilo | Nuvalykite biskvitą; plonesnis sluoksnis                           |
-| Adatinės skylutės     | Dujos, po kurių skylutės neužsilydė                     | Išlaikymas aukščiausioje degimo temperatūroje; plonesnis sluoksnis |
+| Adatinės skylutės     | Dujų burbuliukai, po kurių skylutės neužsilydė          | Išlaikymas aukščiausioje degimo temperatūroje; plonesnis sluoksnis |
 
 [Glazūros ir šukės suderinamumas ir defektai](/guides/glazing-basics#fit-and-defects) paaiškina kiekvieną defektą, taip pat ledinio vandens bandymą trūkinėjimui nustatyti. Trūkinėjusių ar atšokusių dirbinių nenaudokite maistui ar gėrimams.
 

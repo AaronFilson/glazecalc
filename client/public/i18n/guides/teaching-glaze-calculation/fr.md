@@ -348,7 +348,7 @@ Label: Défauts
 | Écaillage       | L’émail se contracte beaucoup moins que la terre                 | Plus de K₂O et de Na₂O                                            |
 | Coulures        | Trop peu d’alumine, ou une couche trop épaisse                   | Plus d’alumine ; une couche plus mince                            |
 | Retirement      | Un biscuit poussiéreux, ou une couche épaisse qui s’est fissurée | Nettoyer le biscuit ; une couche plus mince                       |
-| Trous d’épingle | Des gaz dont les trous ne se sont pas refermés                   | Un palier à la température maximale ; une couche plus mince       |
+| Trous d’épingle | Des bulles de gaz dont les trous ne se sont pas refermés         | Un palier à la température maximale ; une couche plus mince       |
 
 [L’accord terre-émail et les défauts](/guides/glazing-basics#fit-and-defects) explique chacun d’eux, avec le test à l’eau glacée pour le tressaillage. N’utilisez pas de pièces tressaillées ou écaillées pour les aliments ou les boissons.
 

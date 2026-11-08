@@ -16,7 +16,7 @@ Label: Kuusi opetuskertaa
 | ----------- | ---------------------------------------------------------------------- | --------------------------------------------- |
 | 1           | Raaka-aineet, niiden tehtävät, kolmiokokeen koepalat                   | Raaka-aineet, Seokset koepaloille (kolmiokoe) |
 | 2           | Kemia: alkuaineet, kaavat, moolit                                      | Raaka-aineen sivu                             |
-| 3           | Segerin kaavan (UMF) lukeminen, piidioksidin ja alumiinioksidin kaavio | Reseptisivu, Stullin kartta                   |
+| 3           | Segerin kaavan (UMF) lukeminen, piidioksidin ja alumiinioksidin kartta | Reseptisivu, Stullin kartta                   |
 | 4           | Reseptistä Segerin kaavaan                                             | Miten Segerin kaava lasketaan                 |
 | 5           | Segerin kaavasta reseptiin                                             | Ratkaise tavoitteen mukaan                    |
 | 6           | Savimassa ja lasitevirheet                                             | Raja-arvot, Vertaa                            |
@@ -156,7 +156,7 @@ Label: Tehtävämoniste 2
 ### Tavoitteet
 
 - Lue Segerin kaavan{{en: unity formula}} (japaniksi ゼーゲル式) kolme saraketta: sulattajat, tasapainottaja, lasinmuodostaja.
-- Etsi lasite piidioksidin ja alumiinioksidin kaaviosta ja tiedä, mitä kaavio voi ja ei voi kertoa.
+- Etsi lasite piidioksidin ja alumiinioksidin kartasta ja tiedä, mitä kartta voi ja ei voi kertoa.
 - Väritä valmis lasite vaiheittain ja kirjaa tulos.
 
 ### Valmistelut
@@ -181,7 +181,7 @@ Label: Segerin kaava
 - Piidioksidin ja alumiinioksidin suhde on 3,45 ÷ 0,43, noin 8: tyypillinen kiiltävä lasite.
 - Kalsium on suurin osa sulattajista, kuten useimmissa japanilaisissa kalkkilasitteissa (石灰釉).
 
-Kaaviossa, jossa piidioksidi on vaaka-akselilla ja alumiinioksidi pystyakselilla, jokainen lasite on piste. Segerin kokeet ja Stullin vuoden 1912 kaavio ovat tätä lajia, ja 釉性状図 sijoittaa luokan omat poltetut koepalat sille. Glazecalcin reseptisivu piirtää Stullin kaavion, ja tämä lasite sijaitsee sen kiiltävällä alueella. Stullin alueet perustuvat hänen omiin sulattajiinsa ja polttoonsa: ne ovat ohje, eivät ennuste. Alla oleva [koepalaruudukko](#tile-maps) antaa luokan piirtää oman kaavionsa omalla poltollaan.
+Kaaviossa, jossa piidioksidi on vaaka-akselilla ja alumiinioksidi pystyakselilla, jokainen lasite on piste. Segerin kokeet ja Stullin vuoden 1912 kartta ovat tätä lajia, ja 釉性状図 sijoittaa luokan omat poltetut koepalat sille. Glazecalcin reseptisivu piirtää Stullin kartan, ja tämä lasite sijaitsee sen kiiltävällä alueella. Stullin alueet perustuvat hänen omiin sulattajiinsa ja polttoonsa: ne ovat ohje, eivät ennuste. Alla oleva [koepalaruudukko](#tile-maps) antaa luokan piirtää oman karttansa omalla poltollaan.
 
 ::stull-chart
 
@@ -209,7 +209,7 @@ Label: Tehtävämoniste 3
 
 - Minkä sarakkeen summa on Segerin kaavassa 1?
 - Mikä on tämän lasitteen piidioksidin ja alumiinioksidin suhde, ja mitä se antaa ymmärtää?
-- Miksi kaavion kiiltävällä alueella oleva piste voi silti antaa matan koepalan omassa uunissa?
+- Miksi kartan kiiltävällä alueella oleva piste voi silti antaa matan koepalan omassa uunissa?
 
 ## Opetuskerta 4: reseptistä Segerin kaavaan {#recipe-to-formula}
 
@@ -348,7 +348,7 @@ Label: Lasitevirheet
 | Hilseily     | Lasite kutistuu paljon vähemmän kuin massa                   | Enemmän K₂O ja Na₂O                                                  |
 | Valuminen    | Liian vähän alumiinioksidia tai liian paksu kerros           | Enemmän alumiinioksidia; ohuempi kerros                              |
 | Kuroutuminen | Pölyinen raakapoltettu pinta tai paksu kerros, joka halkeili | Puhdista raakapoltettu pinta; ohuempi kerros                         |
-| Neulanreiät  | Kaasu, jonka reiät eivät sulkeutuneet                        | Haudutus huippulämpötilassa; ohuempi kerros                          |
+| Neulanreiät  | Kaasukuplat, joiden reiät eivät sulkeutuneet                 | Haudutus huippulämpötilassa; ohuempi kerros                          |
 
 [Lasitteen ja massan yhteensopivuus sekä lasitevirheet](/guides/glazing-basics#fit-and-defects) selittää jokaisen, ja siinä on säröilyn jäävesitesti. Älä käytä säröillyttä tai hilseillyttä esinettä ruokaan tai juomaan.
 
@@ -410,7 +410,7 @@ Label: Kolmiokokeen kartta
 
 ### Seger-ruudukko: 24 lasitetta
 
-Jokaisessa koepalassa on samat sulattajat, 0,2 KNaO ja 0,8 CaO; ne tulevat maasälvästä 福島長石 ja liidusta. Alumiinioksidi kasvaa ruudukossa rivi riviltä alaspäin, ja piidioksidi kasvaa sarake sarakkeelta oikealle. Reseptit laskettiin opetuskerran 5 menetelmällä; Glazecalcin laskema kunkin Segerin kaava poikkeaa tavoitteesta alumiinioksidin osalta enintään 0,01 ja piidioksidin osalta enintään 0,06. Merkitse jokainen koepala piidioksidin ja alumiinioksidin kaavioon ja piirrä omat alueesi: matta, kiiltävä, alipoltettu, valuva.
+Jokaisessa koepalassa on samat sulattajat, 0,2 KNaO ja 0,8 CaO; ne tulevat maasälvästä 福島長石 ja liidusta. Alumiinioksidi kasvaa ruudukossa rivi riviltä alaspäin, ja piidioksidi kasvaa sarake sarakkeelta oikealle. Reseptit laskettiin opetuskerran 5 menetelmällä; Glazecalcin laskema kunkin Segerin kaava poikkeaa tavoitteesta alumiinioksidin osalta enintään 0,01 ja piidioksidin osalta enintään 0,06. Merkitse jokainen koepala piidioksidin ja alumiinioksidin karttaan ja piirrä omat alueesi: matta, kiiltävä, alipoltettu, valuva.
 
 Table: Seger-ruudukko: 0,2 KNaO, 0,8 CaO, painoprosentteina
 Label: Seger-ruudukko

@@ -348,7 +348,7 @@ Label: Àbùkù
 | Shivering | Glaze ń sún kì kéré gan-an sí amọ̀                   | K₂O àti Na₂O púpọ̀ sí i                                           |
 | Running   | Alumina tí kò tó, tàbí ó nípọn jù                   | Alumina púpọ̀ sí i; ìbora tí ó fẹ́lẹ́ jù                            |
 | Crawling  | Bisque tí ó ní eruku, tàbí ìbora tí ó nípọn tí ó fọ́ | Ẹ fọ bisque mọ́; ìbora tí ó fẹ́lẹ́ jù                               |
-| Pinholes  | Afẹ́fẹ́ tí kò dí padà                                 | Ìdúró ní òkè ìsun; ìbora tí ó fẹ́lẹ́ jù                            |
+| Pinholes  | Ẹ̀fúùfù afẹ́fẹ́ tí kò dí padà                          | Ìdúró ní òkè ìsun; ìbora tí ó fẹ́lẹ́ jù                            |
 
 [Ìbámu glaze àti àbùkù](/guides/glazing-basics#fit-and-defects) ṣàlàyé ọ̀kọ̀ọ̀kan, pẹ̀lú ìdánwò omi yìnyín fún crazing. Ẹ má ṣe lo ohun èlò tí ó ní crazing tàbí shivering fún oúnjẹ tàbí ohun mímu.
 

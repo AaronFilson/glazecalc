@@ -127,15 +127,15 @@ Sır erimeye başladıktan sonra çıkan gaz, sırrın içinden kabararak geçme
 
 Eski kitaplar bu hesabı elle, **molekül ağırlığı** (bir hammaddenin ya da oksidin bir molünün ağırlığı) ve **eşdeğer ağırlık** (bir oksidin bir molünü sağlayan hammadde ağırlığı) ile yapar. Bizim hesabımıza göre yaklaşık 100 g kalsit, bir mol, yani 56 g kalsiyum oksit sağlar. Bir hesaplayıcı ikisini de sizin yerinize yapar.
 
-## Sınırlar ve Stull grafiği {#stull-chart}
+## Sınırlar ve Stull diyagramı {#stull-chart}
 
-**Stull grafiği**{{en: Stull chart}} bir sır haritasıdır. İki ekseni vardır, ikisi de Seger formülünden (UMF): altta yatay olarak silis (SiO₂), yanda dikey olarak alümina (Al₂O₃). Her sır bir noktadır. Harita mat, parlak, az pişmiş ve sır çatlağı gibi bölgelere ayrılır. Glazecalc’ın [reçete sayfası](/recipe) sırrınızı bu grafiğin üzerine çizer.
+**Stull diyagramı**{{en: Stull chart}} bir sır haritasıdır. İki ekseni vardır, ikisi de Seger formülünden (UMF): altta yatay olarak silis (SiO₂), yanda dikey olarak alümina (Al₂O₃). Her sır bir noktadır. Harita mat, parlak, az pişmiş ve sır çatlağı gibi bölgelere ayrılır. Glazecalc’ın [reçete sayfası](/recipe) sırrınızı bu diyagramın üzerine çizer.
 
 ::stull-chart
 
-R. T. Stull grafiği 1912’de yayımladığı testlerden yaptı. Testleri yaklaşık 11 numaralı Orton piramidinde pişirdi ve her testte ergiticiler aynıydı: 0,3 potas (K₂O) ve 0,7 kalsiyum oksit (CaO). Yalnızca silis ve alümina değişti. Bu yüzden grafik, o sırlar için o ısıda doğrudur.
+R. T. Stull diyagramı 1912’de yayımladığı testlerden yaptı. Testleri yaklaşık 11 numaralı Orton piramidinde pişirdi ve her testte ergiticiler aynıydı: 0,3 potas (K₂O) ve 0,7 kalsiyum oksit (CaO). Yalnızca silis ve alümina değişti. Bu yüzden diyagram, o sırlar için o ısıda doğrudur.
 
-Sizin sırrınız büyük olasılıkla farklıdır. Bor, başka ergiticiler ve daha düşük piramitler bölgeleri kaydırır. 2025’te bir Ceramics Monthly makalesi, boratlarla ergitilmiş ve bol demir içeren 6 numaralı piramit sırrını test etti. Grafik onu sır çatlaklı, mat ve az pişmiş bölgeye yerleştirdi. Gerçekte sır tamamen erimiş, saten ve çatlaksızdı. Yazarlar, boratlı sırların grafiğe iyi oturmadığını söylüyor. Bu yüzden bölgeleri bir öngörü olarak değil, bir kılavuz olarak kullanın.
+Sizin sırrınız büyük olasılıkla farklıdır. Bor, başka ergiticiler ve daha düşük piramitler bölgeleri kaydırır. 2025’te bir Ceramics Monthly makalesi, boratlarla ergitilmiş ve bol demir içeren 6 numaralı piramit sırrını test etti. Diyagram onu sır çatlaklı, mat ve az pişmiş bölgeye yerleştirdi. Gerçekte sır tamamen erimiş, saten ve çatlaksızdı. Yazarlar, boratlı sırların diyagrama iyi oturmadığını söylüyor. Bu yüzden bölgeleri bir öngörü olarak değil, bir kılavuz olarak kullanın.
 
 **Sır çatlağı** bölgesi, Stull’ün kendi testlerinin, kendi kilinin üzerinde çatladığı yerdir. Sırrınızın çamurunuza nasıl uyduğunu söylemez. Sır çatlağı hem sırrın hem kilin ısıl genleşmesine bağlıdır. Glazecalc’ın genleşme değeri sırları karşılaştırmanıza yardım eder, kararı ise gerçek bir test verir: [Sır-bünye uyumu ve sır kusurları](/guides/glazing-basics#fit-and-defects) bölümündeki buzlu su testi.
 

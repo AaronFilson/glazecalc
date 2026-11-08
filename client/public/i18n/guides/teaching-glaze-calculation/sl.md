@@ -348,7 +348,7 @@ Label: Napake
 | Luščenje        | Glazura se krči precej manj kot glinena masa   | Več K₂O in Na₂O                                         |
 | Odtekanje       | Premalo glinice ali predebel nanos             | Več glinice; tanjši nanos                               |
 | Krčenje glazure | Prašen biskvit ali debel nanos, ki je razpokal | Očistite biskvit; tanjši nanos                          |
-| Luknjice        | Plin, ki se ni zacelil                         | Zadržanje pri najvišji temperaturi žganja; tanjši nanos |
+| Luknjice        | Plinski mehurček, ki se ni zacelil             | Zadržanje pri najvišji temperaturi žganja; tanjši nanos |
 
 [Ujemanje glazure in napake](/guides/glazing-basics#fit-and-defects) razloži vsako od njih, s preskusom z ledeno vodo za lasaste razpoke. Izdelkov z lasastimi razpokami ali z luščenjem ne uporabljajte za hrano ali pijačo.
 

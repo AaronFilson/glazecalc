@@ -12,14 +12,14 @@ Oturumların sırası, yayımlanmış bir çalışma grubunu izler: Japonya’da
 Table: Altı oturum
 Label: Altı oturum
 
-| Oturum | Konu                                                | Glazecalc’te                                       |
-| ------ | --------------------------------------------------- | -------------------------------------------------- |
-| 1      | Hammaddeler, ne yaptıkları, üçgen test karoları     | Hammaddeler, Test karoları için karışımlar (üçgen) |
-| 2      | Kimya: elementler, formüller, mol                   | Bir hammaddenin sayfası                            |
-| 3      | Seger formülünün okunması, silis ve alümina grafiği | Reçete sayfası, Stull diyagramı                    |
-| 4      | Reçeteden Seger formülüne                           | Seger formülü nasıl hesaplanır                     |
-| 5      | Seger formülünden reçeteye                          | Hedefe göre çözüm                                  |
-| 6      | Bünye ve sır kusurları                              | Sınırlar, Karşılaştır                              |
+| Oturum | Konu                                                  | Glazecalc’te                                       |
+| ------ | ----------------------------------------------------- | -------------------------------------------------- |
+| 1      | Hammaddeler, ne yaptıkları, üçgen test karoları       | Hammaddeler, Test karoları için karışımlar (üçgen) |
+| 2      | Kimya: elementler, formüller, mol                     | Bir hammaddenin sayfası                            |
+| 3      | Seger formülünün okunması, silis ve alümina diyagramı | Reçete sayfası, Stull diyagramı                    |
+| 4      | Reçeteden Seger formülüne                             | Seger formülü nasıl hesaplanır                     |
+| 5      | Seger formülünden reçeteye                            | Hedefe göre çözüm                                  |
+| 6      | Bünye ve sır kusurları                                | Sınırlar, Karşılaştır                              |
 
 ### Nasıl kullanılır
 
@@ -156,7 +156,7 @@ Label: Çalışma kâğıdı 2
 ### Amaçlar
 
 - Bir Seger formülünün (ゼーゲル式, UMF){{en: unity formula}} üç sütununu okuyun: ergiticiler, stabilizatör, cam yapıcı.
-- Bir sırrı silis ve alümina grafiğinde bulun ve grafiğin neyi söyleyip neyi söyleyemeyeceğini bilin.
+- Bir sırrı silis ve alümina diyagramında bulun ve diyagramın neyi söyleyip neyi söyleyemeyeceğini bilin.
 - Hazır bir sırrı adım adım renklendirin ve kaydedin.
 
 ### Hazırlık
@@ -181,7 +181,7 @@ Label: Bir Seger formülü
 - Silis/alümina oranı 3,45 ÷ 0,43, yaklaşık 8: tipik bir parlak sır.
 - Ergiticinin çoğu kalsiyumdur, çoğu Japon kireç sırrında (石灰釉) olduğu gibi.
 
-Silisin yatay, alüminanın dikey eksende olduğu bir grafik her sırrı bir nokta olarak yerleştirir. Seger’in denemeleri ve Stull’un 1912 tarihli grafiği bu türdendir; bir 釉性状図 ise bir sınıfın kendi pişirdiği karoları bunun üzerine yerleştirir. Glazecalc’in reçete sayfası Stull diyagramını çizer ve bu sır onun parlak bölgesinde yer alır. Stull’un bölgeleri kendi ergiticilerinden ve pişiriminden gelir: bir kılavuzdur, bir tahmin değildir. Aşağıdaki [karo ızgarası](#tile-maps), bir sınıfın kendi pişiriminde kendi grafiğini çizmesini sağlar.
+Silisin yatay, alüminanın dikey eksende olduğu bir diyagram her sırrı bir nokta olarak yerleştirir. Seger’in denemeleri ve Stull’un 1912 tarihli diyagramı bu türdendir; bir 釉性状図 ise bir sınıfın kendi pişirdiği karoları bunun üzerine yerleştirir. Glazecalc’in reçete sayfası Stull diyagramını çizer ve bu sır onun parlak bölgesinde yer alır. Stull’un bölgeleri kendi ergiticilerinden ve pişiriminden gelir: bir kılavuzdur, bir tahmin değildir. Aşağıdaki [karo ızgarası](#tile-maps), bir sınıfın kendi pişiriminde kendi diyagramını çizmesini sağlar.
 
 ::stull-chart
 
@@ -209,7 +209,7 @@ Label: Çalışma kâğıdı 3
 
 - Bir Seger formülünde hangi sütun toplamda 1 eder?
 - Bu sırrın silis/alümina oranı nedir ve neyi düşündürür?
-- Grafiğin parlak bölgesindeki bir nokta, sizin fırınınızda neden yine de mat bir karo verebilir?
+- Diyagramın parlak bölgesindeki bir nokta, sizin fırınınızda neden yine de mat bir karo verebilir?
 
 ## 4. oturum: Reçeteden Seger formülüne {#recipe-to-formula}
 
@@ -348,7 +348,7 @@ Label: Kusurlar
 | Sır kavlaması | Sır bünyeden çok daha az büzülür           | K₂O ve Na₂O daha fazla                                              |
 | Akma          | Alümina çok az ya da sır çok kalın         | Daha fazla alümina; daha ince bir kat                               |
 | Toplanma      | Tozlu bisküvi ya da çatlayan kalın bir kat | Bisküviyi temizleyin; daha ince bir kat                             |
-| İğne deliği   | Üstü kapanıp iyileşmeyen gaz               | Pişirimin en yüksek sıcaklığında bekletme; daha ince bir kat        |
+| İğne deliği   | Üstü kapanıp iyileşmeyen gaz kabarcığı     | Pişirimin en yüksek sıcaklığında bekletme; daha ince bir kat        |
 
 [Sır-bünye uyumu ve sır kusurları](/guides/glazing-basics#fit-and-defects) bölümü her birini, sır çatlağı için buzlu su testiyle birlikte açıklar. Sır çatlağı ya da kavlaması olan ürünleri yiyecek ve içecek için kullanmayın.
 
@@ -410,7 +410,7 @@ Label: Üçgen karışım haritası
 
 ### Seger ızgarası: 24 sır
 
-Her karoda ergiticiler aynıdır: 福島長石 ve kalsitten gelen 0,2 KNaO ve 0,8 CaO. Alümina ızgarada satırlar boyunca aşağı inildikçe artar, silis de sütunlar boyunca sağa gidildikçe artar. Reçeteler 5. oturumdaki yöntemle hesaplanmıştır; Glazecalc’in hesapladığı her Seger formülü, alümina için en fazla 0,01, silis için en fazla 0,06 sapar. Her karoyu silisin alümina karşısındaki grafiğinde işaretleyin ve kendi bölgelerinizi çizin: mat, parlak, az pişmiş, akma.
+Her karoda ergiticiler aynıdır: 福島長石 ve kalsitten gelen 0,2 KNaO ve 0,8 CaO. Alümina ızgarada satırlar boyunca aşağı inildikçe artar, silis de sütunlar boyunca sağa gidildikçe artar. Reçeteler 5. oturumdaki yöntemle hesaplanmıştır; Glazecalc’in hesapladığı her Seger formülü, alümina için en fazla 0,01, silis için en fazla 0,06 sapar. Her karoyu silisin alümina karşısındaki diyagramında işaretleyin ve kendi bölgelerinizi çizin: mat, parlak, az pişmiş, akma.
 
 Table: Seger ızgarası: 0,2 KNaO, 0,8 CaO, ağırlıkça yüzde
 Label: Seger ızgarası

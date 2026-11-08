@@ -788,7 +788,7 @@ Terms for the round 14 English (the Stull chart, dry SG, the famous glazes and t
 
 | English                                         | Turkish              | Notes                                                                                                     |
 | ----------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------- |
-| Stull chart                                     | Stull grafiği        | **show English**. No source. Regions: erimemiş, mat, yarı mat, parlak, az pişmiş, sır çatlağı.            |
+| Stull chart                                     | Stull diyagramı      | **show English**. No source. Regions: erimemiş, mat, yarı mat, parlak, az pişmiş, sır çatlağı.            |
 | dry SG (of a glaze's powder)                    | kuru özgül ağırlık   | No source. Built from “özgül ağırlık” (2.6).                                                              |
 | cristobalite inversion                          | kristobalit dönüşümü | Beside “kuvars dönüşümü”. Usage.                                                                          |
 | colemanite                                      | kolemanit            | Eti Maden's Turkish product name (“öğütülmüş kolemanit”); the specification's own figures kept.           |
