@@ -15,7 +15,9 @@ const isBody = (value: unknown): value is Body => !!value && typeof value === 'o
 /** A record without the database's own bookkeeping, as GET /api/export writes it (server/lib/export_data.ts). */
 const bare = (record: unknown): unknown => {
   if (!isBody(record)) return record;
-  const { ownedBy: _owner, __v: _version, ...rest } = record;
+  const rest = { ...record };
+  delete rest['ownedBy'];
+  delete rest['__v'];
   return rest;
 };
 

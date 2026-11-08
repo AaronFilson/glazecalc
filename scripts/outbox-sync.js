@@ -2,6 +2,7 @@
    ngsw-worker.js by scripts/service-worker.mjs (not to the kill-switch worker). Where the browser has SyncManager
    (Chromium), it fires `sync` once the network is back; the worker tells every open page, which sends the changes
    itself, with its own conflict rules. With no page open, nothing is sent until the site is next opened. */
+/* global self */
 self.addEventListener('sync', (event) => {
   if (event.tag !== 'gc-outbox') return;
   event.waitUntil(

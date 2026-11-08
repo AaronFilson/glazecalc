@@ -295,7 +295,7 @@ export class Outbox {
   private flushing: Promise<void> | null = null;
   private retry: ReturnType<typeof setTimeout> | undefined;
   /** Tries in a row that failed (network or server): the wait before the next grows with it. */
-  private failures = 0;
+  private failedTries = 0;
   /** The ids the server gave records made offline, for what still holds the temporary one. */
   private readonly ids = new Map<string, string>();
 
@@ -587,7 +587,7 @@ export class Outbox {
       );
       await this.sent(entry, res, touched);
       this.sentCount++;
-      this.failures = 0;
+      this.failedTries = 0;
       return true;
     } catch (err) {
       if (!(err instanceof HttpErrorResponse)) {
@@ -808,8 +808,8 @@ export class Outbox {
 
   private retryLater(): void {
     clearTimeout(this.retry);
-    this.failures++;
-    this.retry = setTimeout(() => void this.flush(), retryDelay(this.failures));
+    this.failedTries++;
+    this.retry = setTimeout(() => void this.flush(), retryDelay(this.failedTries));
   }
 
   private setNote(on: boolean): void {

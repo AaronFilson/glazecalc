@@ -13,7 +13,9 @@ import { FIRST_RENDER } from './first-render';
 import { OfflineAsk } from './offline-ask';
 import {
   COPY_REFRESH,
+  OFFLINE_GONE,
   OfflineRecords,
+  keepExpired,
   RECORDS_DB,
   RECORDS_FLAG,
   RECORDS_LOCKED,
@@ -21,6 +23,7 @@ import {
   iosEvictionRisk
 } from './offline-records';
 import { changedBy, copyOf, offlineRecordsInterceptor } from './offline-records.interceptor';
+import { OUTBOX_SYNC_TAG, Outbox } from './outbox';
 import { sessionExpiredInterceptor } from './session-expired.interceptor';
 
 const network = { status: 0, statusText: 'Unknown Error' };
@@ -695,6 +698,136 @@ describe('the records kept on this device', () => {
     setUp(null);
     TestBed.inject(OfflineRecords);
     await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+  });
+
+  it('sends the waiting changes when the page is shown again, not only on the online event', () => {
+    setUp();
+    TestBed.inject(OfflineRecords);
+    const flush = vi.spyOn(TestBed.inject(Outbox), 'flush').mockResolvedValue();
+    document.dispatchEvent(new Event('visibilitychange'));
+    window.dispatchEvent(new Event('pageshow'));
+    window.dispatchEvent(new Event('online'));
+    expect(flush).toHaveBeenCalledTimes(3);
+  });
+
+  it('asks for Background Sync where the browser has it, and does without elsewhere', async () => {
+    setUp();
+    const outbox = TestBed.inject(Outbox);
+    const register = vi.fn().mockResolvedValue(undefined);
+    vi.stubGlobal('navigator', {
+      ...navigator,
+      serviceWorker: { getRegistration: () => Promise.resolve({ sync: { register } }) }
+    });
+    expect(await outbox.requestSync()).toBe(true);
+    expect(register).toHaveBeenCalledWith(OUTBOX_SYNC_TAG);
+    // Firefox and Safari: a registration with no sync.
+    vi.stubGlobal('navigator', { ...navigator, serviceWorker: { getRegistration: () => Promise.resolve({}) } });
+    expect(await outbox.requestSync()).toBe(false);
+  });
+
+  it('counts the keep window from the last open, and keeps forever by default', () => {
+    const now = Date.now();
+    expect(keepExpired({ savedAt: now - 1000 * DAY }, now)).toBe(false);
+    expect(keepExpired({ keepDays: null, usedAt: now - 1000 * DAY, savedAt: 0 }, now)).toBe(false);
+    expect(keepExpired({ keepDays: 7, usedAt: now - 6 * DAY, savedAt: 0 }, now)).toBe(false);
+    expect(keepExpired({ keepDays: 7, usedAt: now - 8 * DAY, savedAt: 0 }, now)).toBe(true);
+    // No open noted yet: from when it was saved.
+    expect(keepExpired({ keepDays: 30, savedAt: now - 31 * DAY }, now)).toBe(true);
+  });
+
+  it('removes the copy when the site opens after the chosen time unused, and says so; not before', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    expect(records.keepDays()).toBeNull();
+    await records.setKeepDays(7);
+    expect(records.keepDays()).toBe(7);
+
+    // Opened again 6 days later: kept, and the setting is read back.
+    const start = Date.now();
+    vi.spyOn(Date, 'now').mockReturnValue(start + 6 * DAY);
+    const again = restart();
+    await vi.waitFor(() => expect(again.keepDays()).toBe(7));
+    expect(again.keepRemoved()).toBe(false);
+    expect(await databases()).toContain(RECORDS_DB);
+
+    // Then 8 days after that open: removed as the site opens.
+    vi.spyOn(Date, 'now').mockReturnValue(start + 14 * DAY);
+    const late = restart();
+    await vi.waitFor(() => expect(late.keepRemoved()).toBe(true));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+  });
+
+  it('keeps the chosen time when the copy is saved again', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await records.setKeepDays(30);
+    await records.save('recipe', RECIPES);
+    const again = restart();
+    await vi.waitFor(() => expect(again.keepDays()).toBe(30));
+  });
+
+  it('account deleted elsewhere: asks, keeps everything on Later, exports, and clears only when chosen', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await vi.waitFor(async () => expect((await records.read('recipe'))?.body).toEqual(RECIPES));
+    const reply = get(API + '/recipe/getAll');
+    await answerNext(
+      API + '/recipe/getAll',
+      { code: 'account-gone', msg: 'This account no longer exists.' },
+      { status: 401, statusText: 'Unauthorized' }
+    );
+    await reply;
+    const ask = TestBed.inject(OfflineAsk);
+    await vi.waitFor(() => expect(ask.open()?.question.title).toBe('Your account was deleted'));
+    expect(ask.open()!.question.choices.map((choice) => choice.id)).toEqual(['export', 'clear', 'later']);
+    ask.open()!.answer('later');
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(localStorage.getItem(OFFLINE_GONE)).toBe('u1');
+    expect(await databases()).toContain(RECORDS_DB);
+
+    // Opened again (nobody signed in): asked again. Export saves a file, then Clear removes it.
+    const saved: Blob[] = [];
+    vi.spyOn(URL, 'createObjectURL').mockImplementation((blob) => {
+      saved.push(blob as Blob);
+      return 'blob:offline';
+    });
+    vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => undefined);
+    const again = restart();
+    expect(again.goneId()).toBe('u1');
+    await answerAsk('export');
+    await vi.waitFor(() => expect(saved).toHaveLength(1));
+    const file = JSON.parse(await saved[0].text()) as { format: string; account: { id: string }; records: object };
+    expect(file.format).toBe('glazecalc-export');
+    expect(file.account.id).toBe('u1');
+    expect(file.records).toMatchObject({ recipes: RECIPES });
+    expect(await databases()).toContain(RECORDS_DB);
+    await answerAsk('clear');
+    await vi.waitFor(() => expect(localStorage.getItem(OFFLINE_GONE)).toBeNull());
+    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+  });
+
+  it('account deleted elsewhere: Clear without exporting removes it at once', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    TestBed.inject(AuthService).sessionEnded(true);
+    await answerAsk('clear');
+    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    expect(localStorage.getItem(OFFLINE_GONE)).toBeNull();
+  });
+
+  it('a session that only ran out never asks about a deleted account', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    TestBed.inject(AuthService).sessionEnded(false);
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+    expect(localStorage.getItem(OFFLINE_GONE)).toBeNull();
   });
 
   it('is not offered during a trial, and keeps nothing for one', async () => {
