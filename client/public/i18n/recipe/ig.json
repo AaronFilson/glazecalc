@@ -1058,6 +1058,8 @@
       "temperature": "{low} ruo {high}"
     },
     "testedAt": "Anwalere na {cones}",
+    "testedOne": "Anwalaala m ya na {cone}",
+    "statedUntested": "A kọwara {cone}; akaghị ya dịka anwalere",
     "claimedRange": "oke e kwuru {range}",
     "rangeUntested": "Oke {range}; akaghị cone ọ bụla dịka anwalere",
     "approxTemperature": "≈ {temperature} ({basis}; dị nso)",

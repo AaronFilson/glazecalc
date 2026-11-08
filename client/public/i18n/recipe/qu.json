@@ -1058,6 +1058,8 @@
       "temperature": "{low}-manta {high}-kama"
     },
     "testedAt": "Pruebasqa: {cones}",
+    "testedOne": "Kaytam {cone}pi ruphachispa pruebarqani",
+    "statedUntested": "Nisqa {cone}; mana pruebasqa hina marcasqa",
     "claimedRange": "nisqa rango {range}",
     "rangeUntested": "Rango {range}; mana mayqin conopas pruebasqa hina marcasqa",
     "approxTemperature": "≈ {temperature} ({basis}; yaqa-yaqalla)",

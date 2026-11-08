@@ -1058,6 +1058,8 @@
       "temperature": "{low} go {high}"
     },
     "testedAt": "Tástáilte ag {cones}",
+    "testedOne": "Rinne mé tástáil bácála air ag {cone}",
+    "statedUntested": "Luaite {cone}; gan tic mar thástáilte",
     "claimedRange": "raon éilithe {range}",
     "rangeUntested": "Raon {range}; níl aon chón marcáilte mar thástáilte",
     "approxTemperature": "≈ {temperature} ({basis}; garbh-mheastachán)",

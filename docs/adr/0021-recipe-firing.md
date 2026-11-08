@@ -31,8 +31,12 @@ panel. Recipes so far say their firing only in the notes, if at all.
   - `low` and an optional `high`: the cone **exactly as entered** in its scale ('06', '6', '5.5'
     for 5½, SK '6a'), or for `temperature` the peak in °C as text. Nothing converted is stored;
   - `tested`: the cones of the range actually fired, a subset of the range's whole cones and its
-    two ends. A single cone counts as tested, and the tested cone is shown first, the claimed range
-    after it;
+    two ends. Only a cone the potter ticks is tested (amended 2026-11-08: a single cone used to count
+    as tested, but a cone copied from a book is not one the potter has fired; a single cone now has
+    its own "I've test-fired this" checkbox, off until ticked, and a pasted recipe's cone is never
+    ticked). The tested cone is shown first, the claimed range after it; a stated cone not ticked
+    reads "Stated cone 6; not ticked as tested". Recipes saved before the change keep the ticks they
+    have; one with a cone and no ticks is now untested;
   - `atmospheres` (oxidation, reduction, neutral) and `processes` (wood, soda, salt, raku, pit),
     each a list: a recipe can be fired in both oxidation and reduction;
   - for a temperature firing, an optional `rate` over the last hour (°C an hour) and `hold`
@@ -100,7 +104,7 @@ panel. Recipes so far say their firing only in the notes, if at all.
   set aside. SK written without its letter ("SK6", "SK5") is the chart's cone: JIS R 8101 has one
   cone per number, and from 015 to 6 it is the "a" cone, so "SK6" can only be SK 6a; an SK number
   the chart lacks (SK 26) stays a firing note and is not read into the block. "cone 4,5" is a list,
-  cones 4 and 5 (the range 4–5, both tested); it is cone 4½ only for a reader who writes decimal
+  cones 4 and 5 (the range 4–5, nothing ticked as tested); it is cone 4½ only for a reader who writes decimal
   commas and only when it is the text's one number. Firing-log cells are read the same way. The
   recipes CSV adds Glazy's "Cone" string and "Atmospheres" list, and the food-surface flag. The
   Cone cell marks each Orton cone with the cone sign ("Δ06", "Δ9 - Δ10"; "SK 8" and "1240°C"

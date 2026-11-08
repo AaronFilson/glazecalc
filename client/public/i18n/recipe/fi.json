@@ -1058,6 +1058,8 @@
       "temperature": "{low}–{high}"
     },
     "testedAt": "Testattu: {cones}",
+    "testedOne": "Olen koepoltanut tämän: {cone}",
+    "statedUntested": "Ilmoitettu {cone}; ei merkitty testatuksi",
     "claimedRange": "ilmoitettu vaihteluväli {range}",
     "rangeUntested": "Vaihteluväli {range}; yhtäkään keilaa ei ole merkitty testatuksi",
     "approxTemperature": "≈ {temperature} ({basis}; likimääräinen)",

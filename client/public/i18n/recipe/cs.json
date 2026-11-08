@@ -1058,6 +1058,8 @@
       "temperature": "{low} až {high}"
     },
     "testedAt": "Vyzkoušeno na {cones}",
+    "testedOne": "Vyzkoušeno vypálením na {cone}",
+    "statedUntested": "Uvedeno {cone}; není zaškrtnuto jako vyzkoušené",
     "claimedRange": "uváděné rozmezí {range}",
     "rangeUntested": "Rozmezí {range}; žádná žároměrka není označena jako vyzkoušená",
     "approxTemperature": "≈ {temperature} ({basis}; přibližně)",

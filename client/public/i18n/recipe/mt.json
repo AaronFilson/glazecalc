@@ -1058,6 +1058,8 @@
       "temperature": "minn {low} sa {high}"
     },
     "testedAt": "Ittestjat: {cones}",
+    "testedOne": "Ttestjajt dan billi ħmejtu sa {cone}",
+    "statedUntested": "Iddikjarat {cone}; mhux immarkat bħala ttestjat",
     "claimedRange": "firxa dikjarata: {range}",
     "rangeUntested": "Firxa {range}; l-ebda kon mhu mmarkat bħala ttestjat",
     "approxTemperature": "≈ {temperature} ({basis}; approssimat)",

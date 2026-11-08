@@ -1058,6 +1058,8 @@
       "temperature": "{low}~{high}"
     },
     "testedAt": "{cones}에서 시험함",
+    "testedOne": "{cone}에서 시험 소성했음",
+    "statedUntested": "기재된 값 {cone}, 시험함으로 체크되지 않음",
     "claimedRange": "표시된 범위 {range}",
     "rangeUntested": "범위 {range}, 시험한 콘으로 체크된 것 없음",
     "approxTemperature": "≈ {temperature}({basis}, 근삿값)",

@@ -36,12 +36,15 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(groups[2]!.cones).to.include.members(['14', '31.5', '42']);
   });
 
-  it('ticks each whole cone of a range and its two ends; a single cone counts as tested', () => {
+  it('ticks each whole cone of a range and its two ends; only a ticked cone is tested', () => {
     expect(firing.conesBetween('orton', '5', '7')).to.eql(['5', '6', '7']);
     expect(firing.conesBetween('orton', '5.5', '6.5')).to.eql(['5.5', '6', '6.5']);
     expect(firing.conesBetween('orton', '06', '04')).to.eql(['06', '05', '04']);
     expect(firing.conesBetween('temperature', '1220', '1260')).to.eql(['1220', '1260']);
-    expect(firing.testedCones({ scale: 'orton', low: '6' })).to.eql(['6']);
+    // A cone just stated (a book's) is not tested; ticking it makes it so.
+    expect(firing.testedCones({ scale: 'orton', low: '6' })).to.eql([]);
+    expect(firing.testedCones({ scale: 'orton', low: '6', tested: ['6'] })).to.eql(['6']);
+    expect(firing.testedCones({ scale: 'orton', low: '6', tested: ['7'] })).to.eql([]);
     expect(firing.testedCones({ scale: 'orton', low: '6', high: '10' })).to.eql([]);
     expect(firing.testedCones({ scale: 'orton', low: '6', high: '10', tested: ['10'] })).to.eql(['10']);
   });
@@ -272,11 +275,10 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(firing.readFiring('Cone 10, wood ash glaze')?.processes).to.equal(undefined);
     });
 
-    it('makes a block from a paste’s notes: the first cone, every atmosphere, a single cone tested', () => {
+    it('makes a block from a paste’s notes: the first cone, every atmosphere, no cone ticked as tested', () => {
       expect(firing.firingFromLines(['Cone 6', 'oxidation, slow cool'])).to.eql({
         scale: 'orton',
         low: '6',
-        tested: ['6'],
         atmospheres: ['oxidation']
       });
       expect(firing.firingFromLines(['cone 5-6', 'ox/red'])).to.eql({
@@ -339,7 +341,7 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(firing.isFiringLine('SK 26')).to.equal(true);
       const [recipe] = paste.parsePaste('Shino\nCuster 50\nSK 26\nSilica 50');
       expect([recipe!.notes, recipe!.lines.length]).to.eql([['SK 26'], 2]);
-      expect(firing.firingFromLines(['SK6'])).to.eql({ scale: 'sk', low: '6a', tested: ['6a'] });
+      expect(firing.firingFromLines(['SK6'])).to.eql({ scale: 'sk', low: '6a' });
       const log = { fieldsIncluded: ['Cone'], rows: [['SK6 down'], ['8']] };
       expect(firing.conesFromLog(log, 'sk')).to.eql(['6a', '8']);
     });
@@ -349,7 +351,6 @@ describe('recipe firing (lib/cones/firing.js)', () => {
         scale: 'orton',
         low: '4',
         high: '5',
-        tested: ['4', '5'],
         whole: true
       });
       expect(firing.readFiring('cone 4, 5, 6')).to.include({ low: '4', high: '6' });
@@ -359,8 +360,7 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(firing.firingFromLines(['Cone 4,5'])).to.eql({
         scale: 'orton',
         low: '4',
-        high: '5',
-        tested: ['4', '5']
+        high: '5'
       });
       expect(firing.readsDecimalComma('either', 'de')).to.equal(true);
       expect(firing.readsDecimalComma('either', 'en')).to.equal(false);
@@ -501,6 +501,17 @@ describe('recipe firing (API)', () => {
       schedule: 'hold 10 min',
       witness: true
     });
+  });
+
+  it('keeps a stated single cone untested, and a ticked one tested', async () => {
+    const stated = await create({ ...recipe, firedAt: { scale: 'orton', low: '10' } });
+    expect(stated).to.have.status(200);
+    expect(stated.body.firedAt).to.eql({ scale: 'orton', low: '10' });
+    const ticked = await create({ ...recipe, firedAt: { scale: 'orton', low: '10', tested: ['10'] } });
+    expect(ticked.body.firedAt).to.eql({ scale: 'orton', low: '10', tested: ['10'] });
+    // The tick can be taken off again.
+    const cleared = await change(ticked.body._id, { firedAt: { scale: 'orton', low: '10', tested: [] } });
+    expect(cleared.body.firedAt).to.eql({ scale: 'orton', low: '10' });
   });
 
   it('keeps a temperature firing in °C with its rate and hold', async () => {

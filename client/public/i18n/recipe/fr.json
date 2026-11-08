@@ -1058,6 +1058,8 @@
       "temperature": "{low} à {high}"
     },
     "testedAt": "Testé à {cones}",
+    "testedOne": "Je l’ai testé en cuisant à {cone}",
+    "statedUntested": "Indiqué {cone} ; non coché comme testé",
     "claimedRange": "plage annoncée {range}",
     "rangeUntested": "Plage {range} ; aucun cône coché comme testé",
     "approxTemperature": "≈ {temperature} ({basis} ; approximatif)",

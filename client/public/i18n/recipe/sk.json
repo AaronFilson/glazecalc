@@ -1058,6 +1058,8 @@
       "temperature": "{low} až {high}"
     },
     "testedAt": "Vyskúšané na {cones}",
+    "testedOne": "Vyskúšané vypálením na {cone}",
+    "statedUntested": "Uvedené {cone}; nie je označené ako vyskúšané",
     "claimedRange": "uvádzaný rozsah {range}",
     "rangeUntested": "Rozsah {range}; žiadny kužeľ nie je označený ako vyskúšaný",
     "approxTemperature": "≈ {temperature} ({basis}; približne)",

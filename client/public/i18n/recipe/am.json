@@ -1058,6 +1058,8 @@
       "temperature": "{low} እስከ {high}"
     },
     "testedAt": "የተሞከረበት፥ {cones}",
+    "testedOne": "በ{cone} ሞክሬዋለሁ",
+    "statedUntested": "የተገለጸው {cone}፤ እንደተሞከረ ምልክት አልተደረገም",
     "claimedRange": "የተገለጸ ክልል {range}",
     "rangeUntested": "ክልል {range}፤ እንደተሞከረ ምልክት የተደረገበት ኮን የለም",
     "approxTemperature": "≈ {temperature} ({basis}፤ ግምታዊ)",

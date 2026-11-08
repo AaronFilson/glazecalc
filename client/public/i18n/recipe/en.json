@@ -1058,6 +1058,8 @@
       "temperature": "{low} to {high}"
     },
     "testedAt": "Tested at {cones}",
+    "testedOne": "I've test-fired this at {cone}",
+    "statedUntested": "Stated {cone}; not ticked as tested",
     "claimedRange": "claimed range {range}",
     "rangeUntested": "Range {range}; no cone ticked as tested",
     "approxTemperature": "≈ {temperature} ({basis}; approximate)",

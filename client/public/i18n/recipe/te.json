@@ -1058,6 +1058,8 @@
       "temperature": "{low} నుండి {high} వరకు"
     },
     "testedAt": "పరీక్షించినది: {cones}",
+    "testedOne": "నేను దీన్ని {cone} వద్ద కాల్చి పరీక్షించాను",
+    "statedUntested": "పేర్కొన్నది {cone}; పరీక్షించినదిగా టిక్ చేయలేదు",
     "claimedRange": "చెప్పిన శ్రేణి {range}",
     "rangeUntested": "శ్రేణి {range}; ఏ కోన్ కూడా పరీక్షించినదిగా టిక్ చేయలేదు",
     "approxTemperature": "≈ {temperature} ({basis}; సుమారుగా)",
