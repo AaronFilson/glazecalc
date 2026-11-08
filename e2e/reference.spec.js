@@ -45,6 +45,17 @@ test.describe('the page of a guide', () => {
     const german = await (await request.get('/de/guides/glazing-basics')).text();
     expect(german).toContain('"@type":"BreadcrumbList"');
   });
+
+  test('gives the teacher pack the same trail, in English and in another language', async ({ request }) => {
+    for (const path of ['/guides/teaching-glaze-calculation', '/de/guides/teaching-glaze-calculation']) {
+      const html = await (await request.get(path)).text();
+      const trail = /"@type":"BreadcrumbList".*?"itemListElement":(\[.*?\])\}/.exec(html);
+      expect(trail, path).not.toBeNull();
+      const items = JSON.parse(trail[1]);
+      expect(items, path).toHaveLength(3);
+      expect(new URL(items[2].item).pathname, path).toBe(path);
+    }
+  });
 });
 
 test.describe('the page of a standard material in another language', () => {
