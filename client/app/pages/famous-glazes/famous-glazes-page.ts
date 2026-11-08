@@ -4,8 +4,9 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { map } from 'rxjs';
 import { PAGE_LANGUAGE } from '../../i18n/language';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { StructuredData, referencePage } from '../../shared/structured-data';
+import { type Crumb, StructuredData, referencePage } from '../../shared/structured-data';
 import { FamousGlaze, nameIn, proseIn } from './famous-data';
 
 /**
@@ -14,9 +15,10 @@ import { FamousGlaze, nameIn, proseIn } from './famous-data';
  */
 @Component({
   selector: 'gc-famous-glazes-page',
-  imports: [PageHeader, RouterLink, StructuredData, TranslocoDirective],
+  imports: [Breadcrumb, PageHeader, RouterLink, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
+    <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header [title]="t('famous.index.title')" [lead]="t('famous.index.lead')" />
     <section class="panel" aria-labelledby="famous-list">
       <h2 id="famous-list">{{ t('famous.index.listHeading') }}</h2>
@@ -58,15 +60,17 @@ export class FamousGlazesPage {
       };
     })
   );
+  /** The trail to the page: what the page shows (gc-breadcrumb) and search engines read (shared/structured-data.ts). */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('famous.index.crumb'), path: '/famous-glazes' }
+  ]);
   protected readonly structured = computed(() =>
     referencePage(
       translate('titles.famousGlazes').replace(/ - Glazecalc$/, ''),
       translate('meta.famousGlazes'),
       '/famous-glazes',
-      [
-        { name: 'Glazecalc', path: '/' },
-        { name: translate('famous.index.crumb'), path: '/famous-glazes' }
-      ],
+      this.crumbs(),
       'CollectionPage',
       this.language
     )

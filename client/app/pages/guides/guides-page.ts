@@ -1,10 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslocoDirective } from '@jsverse/transloco';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { REFERENCE_LANGUAGE_LIST } from '../materials/reference-text';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
+import type { Crumb } from '../../shared/structured-data';
 
 /** The guides, in the order a new potter would read them; title and text are message keys. */
 export const GUIDES = [
@@ -73,8 +75,9 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
 /** The guides for new potters, listed. */
 @Component({
   selector: 'gc-guides-page',
-  imports: [PageHeader, RouterLink, TranslocoDirective],
+  imports: [Breadcrumb, PageHeader, RouterLink, TranslocoDirective],
   template: `<ng-container *transloco="let t">
+    <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header [title]="t('guides.list.title')" [lead]="t('guides.list.lead')" />
     <ul class="guide-cards">
       @for (guide of guides; track guide.path) {
@@ -133,6 +136,11 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
 })
 export class GuidesPage {
   protected readonly guides = GUIDES;
+  /** The trail to the page, as the guides' own (guide-view.ts) begins. The list has no data for search engines. */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('nav.guides'), path: '/guides' }
+  ]);
   /**
    * The reference pages, each in the languages it is translated into: the cone chart and the standard
    * materials in REFERENCE_LANGUAGES (English is the first), the famous glazes in every language.
