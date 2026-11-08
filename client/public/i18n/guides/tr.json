@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standart hammaddeler",
       "text": "Kütüphanedeki her hammadde; oksit analizi, Seger formülüne katkısı ve tehlikeleriyle."
+    },
+    "famous": {
+      "title": "Ünlü sırlar",
+      "text": "Dünyada tanınan sırlar, her biri kendi geleneksel yerel hammaddelerinden; Seger formülü ve bulunduğunuz yerde satılan hammaddelerle bir sürümüyle birlikte."
     }
   },
   "contents": "Bu sayfada",

@@ -45,9 +45,16 @@ const WITH_UNIT = new RegExp(
 const LATIN_TERMS =
   /(?:https?:\/\/|www\.)[^\s<>()]*[^\s<>().,;:!?'"]|(?<![\p{L}\p{N}])\d*(?:(?:[A-Z][a-z]?[\d₀-₉]*){2,}|[A-Z][a-z]?[\d₀-₉]+)(?:[·•]\d*(?:[A-Z][a-z]?[\d₀-₉]*)+)*(?![\p{L}\p{N}])/gu;
 
-/** Text, such as a guide's, with its web addresses and formulas kept left to right on a right-to-left page. */
+/**
+ * A sum written out, "28.085 + 2 × 15.999 = 60.083 g", "25 ÷ 60.083 = 0.416 mol": on a right-to-left page its
+ * numbers would be read from the right, so the sum ran backwards.
+ */
+const ARITHMETIC =
+  /(?<![\p{L}\p{N}.,])\d+(?:[.,٫]\d+)*(?:[   ]*[+−×÷=][   ]*\d+(?:[.,٫]\d+)*)+(?:[   ]?(?:g|kg|mg|mol)(?![\p{L}\p{N}]))?/gu;
+
+/** Text, such as a guide's, with its sums, web addresses and formulas kept left to right on a right-to-left page. */
 export const withLatinIsolated = (text: string): string =>
-  rtl() ? text.replace(LATIN_TERMS, (term) => LRI + term + PDI) : text;
+  rtl() ? text.replace(ARITHMETIC, (sum) => LRI + sum + PDI).replace(LATIN_TERMS, (term) => LRI + term + PDI) : text;
 
 // A message on a right-to-left page (i18n/icu-transpiler.ts, which knows the page's language and calls these
 // only then): its arrows, its values and what it writes.

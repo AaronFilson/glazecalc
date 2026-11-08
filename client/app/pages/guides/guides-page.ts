@@ -60,6 +60,11 @@ export const REFERENCE_PAGES = {
     path: '/materials',
     title: marker('guides.related.materials.title'),
     text: marker('guides.related.materials.text')
+  },
+  famous: {
+    path: '/famous-glazes',
+    title: marker('guides.related.famous.title'),
+    text: marker('guides.related.famous.text')
   }
 } as const;
 
@@ -82,19 +87,17 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
       }
     </ul>
     <p class="guide-note">{{ t('guides.list.note') }}</p>
-    @if (english) {
-      <h2 id="reference">{{ t('guides.related.heading') }}</h2>
-      <ul class="guide-cards">
-        @for (page of reference; track page.path) {
-          <li>
-            <a [routerLink]="page.path" class="panel guide-card">
-              <h3>{{ t(page.title) }}</h3>
-              <p>{{ t(page.text) }}</p>
-            </a>
-          </li>
-        }
-      </ul>
-    }
+    <h2 id="reference">{{ t('guides.related.heading') }}</h2>
+    <ul class="guide-cards">
+      @for (page of reference; track page.path) {
+        <li>
+          <a [routerLink]="page.path" class="panel guide-card">
+            <h3>{{ t(page.title) }}</h3>
+            <p>{{ t(page.text) }}</p>
+          </a>
+        </li>
+      }
+    </ul>
   </ng-container>`,
   styles: `
     .guide-cards {
@@ -130,7 +133,11 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
 })
 export class GuidesPage {
   protected readonly guides = GUIDES;
-  protected readonly reference = Object.values(REFERENCE_PAGES);
-  /** The reference pages are offered in the languages they are translated into (English is the first). */
-  protected readonly english = inject(REFERENCE_LANGUAGE_LIST).includes(inject(PAGE_LANGUAGE));
+  /**
+   * The reference pages, each in the languages it is translated into: the cone chart and the standard
+   * materials in REFERENCE_LANGUAGES (English is the first), the famous glazes in every language.
+   */
+  protected readonly reference = inject(REFERENCE_LANGUAGE_LIST).includes(inject(PAGE_LANGUAGE))
+    ? Object.values(REFERENCE_PAGES)
+    : [REFERENCE_PAGES.famous];
 }

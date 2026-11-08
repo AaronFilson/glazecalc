@@ -53,6 +53,10 @@
     "materials": {
       "title": "Materii prime standard",
       "text": "Fiecare materie primă din bibliotecă cu analiza oxizilor, contribuția la formula Seger și pericolele ei."
+    },
+    "famous": {
+      "title": "Glazuri celebre",
+      "text": "Glazuri cunoscute în întreaga lume, fiecare din materiile prime locale tradiționale, cu formula ei Seger și o variantă din materiile prime care se vând acolo unde vă aflați."
     }
   },
   "contents": "Pe această pagină",

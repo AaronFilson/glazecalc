@@ -53,6 +53,10 @@
     "materials": {
       "title": "Surowce standardowe",
       "text": "Każdy surowiec z biblioteki wraz ze składem tlenkowym, udziałem we wzorze Segera i zagrożeniami."
+    },
+    "famous": {
+      "title": "Słynne szkliwa",
+      "text": "Szkliwa znane na całym świecie, każde z tradycyjnych miejscowych surowców, z wzorem Segera i wersją z surowców dostępnych w miejscu zakupu."
     }
   },
   "contents": "Na tej stronie",

@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standardråvarer",
       "text": "Hver råvare i biblioteket med oxidanalyse, bidrag til Seger-formlen og farer."
+    },
+    "famous": {
+      "title": "Berømte glasurer",
+      "text": "Glasurer, der er kendt over hele verden, hver lavet af sine traditionelle lokale råvarer, med Seger-formlen og en udgave lavet af de råvarer, der sælges der, hvor værkstedet ligger."
     }
   },
   "contents": "På denne side",

@@ -53,6 +53,10 @@
     "materials": {
       "title": "Standartinės žaliavos",
       "text": "Kiekviena bibliotekos žaliava su oksidų analize, indėliu į Segerio formulę ir pavojais."
+    },
+    "famous": {
+      "title": "Garsios glazūros",
+      "text": "Visame pasaulyje žinomos glazūros, kiekviena iš savo tradicinių vietinių žaliavų, su Segerio formule ir versija iš žaliavų, parduodamų ten, kur esate."
     }
   },
   "contents": "Šiame puslapyje",

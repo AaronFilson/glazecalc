@@ -53,6 +53,10 @@
     "materials": {
       "title": "Vakioraaka-aineet",
       "text": "Jokainen kirjaston raaka-aine oksidianalyyseineen, osuuksineen Segerin kaavassa ja vaaroineen."
+    },
+    "famous": {
+      "title": "Kuuluisat lasitteet",
+      "text": "Eri puolilla maailmaa tunnettuja lasitteita, kukin perinteisistä paikallisista raaka-aineistaan, Segerin kaavan ja omalla alueella myytävistä raaka-aineista tehdyn version kera."
     }
   },
   "contents": "Tällä sivulla",

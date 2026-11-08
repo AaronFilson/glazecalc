@@ -53,6 +53,10 @@
     "materials": {
       "title": "Matières standard",
       "text": "Chaque matière de la bibliothèque avec son analyse en oxydes, son apport à la formule de Seger et ses dangers."
+    },
+    "famous": {
+      "title": "Émaux célèbres",
+      "text": "Des émaux connus dans le monde entier, chacun fait de ses matières locales traditionnelles, avec sa formule de Seger et une version faite avec les matières vendues là où vous êtes."
     }
   },
   "contents": "Sur cette page",

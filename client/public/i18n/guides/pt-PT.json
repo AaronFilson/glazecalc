@@ -53,6 +53,10 @@
     "materials": {
       "title": "Matérias-primas padrão",
       "text": "Cada matéria-prima da biblioteca com a análise de óxidos, a contribuição para a fórmula de Seger e os perigos."
+    },
+    "famous": {
+      "title": "Vidrados famosos",
+      "text": "Vidrados conhecidos em todo o mundo, cada um com as suas matérias-primas locais tradicionais, a sua fórmula de Seger e uma versão com as matérias-primas vendidas onde está."
     }
   },
   "contents": "Nesta página",
