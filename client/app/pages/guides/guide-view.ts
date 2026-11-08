@@ -83,7 +83,12 @@ export class GuideView implements InlineContext {
       lead,
       this.textLanguage() ?? this.language,
       pageAddress(this.language, this.pathname),
-      modified
+      modified,
+      [
+        { name: 'Glazecalc', address: pageAddress(this.language, '/') },
+        { name: translate('nav.guides'), address: pageAddress(this.language, '/guides') },
+        { name: title, address: pageAddress(this.language, this.pathname) }
+      ]
     );
   });
   /**

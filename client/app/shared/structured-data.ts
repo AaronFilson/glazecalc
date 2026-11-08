@@ -43,22 +43,43 @@ export function homeData(description: string, language: string, address: string)
   };
 }
 
-/** A guide's Article (https://schema.org/Article); dateModified only where the guide's front matter has one. */
+/**
+ * A guide's Article (https://schema.org/Article); dateModified only where the guide's front matter has one.
+ * With `crumbs` (the trail to the guide, each { name, address } with the whole address), the Article and its
+ * BreadcrumbList are one @graph, as referencePage's are.
+ */
 export function article(
   headline: string,
   description: string,
   language: string,
   address: string,
-  modified?: string | null
+  modified?: string | null,
+  crumbs?: ReadonlyArray<{ name: string; address: string }>
 ): object {
-  return {
-    '@context': 'https://schema.org',
+  const data = {
     '@type': 'Article',
     headline,
     description,
     inLanguage: language,
     url: address,
     ...(modified ? { dateModified: modified } : {})
+  };
+  if (!crumbs?.length) return { '@context': 'https://schema.org', ...data };
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...data, breadcrumb: { '@id': address + '#breadcrumb' } },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': address + '#breadcrumb',
+        itemListElement: crumbs.map((crumb, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: crumb.name,
+          item: crumb.address
+        }))
+      }
+    ]
   };
 }
 
