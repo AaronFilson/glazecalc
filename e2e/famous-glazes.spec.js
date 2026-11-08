@@ -37,8 +37,12 @@ test.describe('famous glazes', () => {
     await expect(page.locator('body')).toContainText('Kamado Feldspar');
     await expect(page.locator('#famous-untested')).toContainText('Calculated, not yet test-fired.');
     expect((await page.goto('/famous-glazes/oribe')).status()).toBe(200);
-    await expect(page.locator('body')).toContainText('1230–1280 °C');
+    await expect(page.locator('h1')).toHaveText('Oribe');
+    await expect(page.locator('body')).toContainText('1250–1280 °C');
+    await expect(page.locator('body')).toContainText('formulated for firing in reduction');
+    await expect(page.locator('body')).toContainText('Kamado Feldspar');
     await expect(page.locator('body')).toContainText('Copper oxide');
+    await expect(page.locator('#famous-untested')).toContainText('Calculated, not yet test-fired.');
   });
 
   test('the fixture and an unknown slug are not found', async ({ request }) => {
