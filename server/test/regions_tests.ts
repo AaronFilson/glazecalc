@@ -568,8 +568,9 @@ describe('regions before Turkey', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: the verification pass of 2026-10-19 changed Japan's #8000 note (who answers,
     // what it costs), its food note (the 2025 revision's dates) and JSOH's check date. Again on 2026-11-05:
-    // Croatia lists Tapiker (the owner's browsing export, round 15).
-    expect(hash).to.equal('3f5cf4fc7af10c7c49154cf316be2822948fe3a07cbb279ab488e9a18590fc43');
+    // Croatia lists Tapiker (the owner's browsing export, round 15). Again on 2026-11-08: Lithuania lists
+    // Keramikams.lt.
+    expect(hash).to.equal('fdd5c111ffeaaa1070f48ebcc4017c224a303de7cfaca7c3334c741cf44f9b9c');
   });
 });
 
@@ -592,8 +593,9 @@ describe('regions before Korea', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose (2026-10-19): Japan's, as above, and Türkiye's UZEM (free, for the public),
-    // its silica and mask check dates. Again on 2026-11-05: Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('02b549c7320f5e8f898fb6226da657714d67e8810742e4b6f345ad7dc5b300ac');
+    // its silica and mask check dates. Again on 2026-11-05: Croatia lists Tapiker (round 15). Again on
+    // 2026-11-08: Lithuania lists Keramikams.lt.
+    expect(hash).to.equal('ea24a355e5fdef06835ed0e2836f193f70898f75c4ecc7405e8758e9c2b3c9c3');
   });
 });
 
@@ -619,8 +621,8 @@ describe('regions before China', () => {
     // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16). Again on
     // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
     // Again on 2026-10-20: Taiwan's 112 note says plainly what 112 does when a mobile has no signal.
-    // Again on 2026-11-05: Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('508b5c0f1161eeb1c4eccad88ab29dde65a2fad71c9997729a833d8530809df3');
+    // Again on 2026-11-05: Croatia lists Tapiker (round 15). Again on 2026-11-08: Lithuania lists Keramikams.lt.
+    expect(hash).to.equal('00674b2a4163f281179b52f75753b7167cc863ba3de460f45de0e695c582030f');
   });
 });
 
@@ -647,8 +649,8 @@ describe('regions before Vietnam', () => {
     // Again on 2026-10-19, the verification pass: as above, and China's poison line, masks and food rules,
     // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
     // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note. Again on 2026-11-05:
-    // Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('d1f8085c451128ccdf8d71489c94025dc19d926404bb0b06ffc7acada1b23665');
+    // Croatia lists Tapiker (round 15). Again on 2026-11-08: Lithuania lists Keramikams.lt.
+    expect(hash).to.equal('ad9343e109263667ceeb3afc0060024a2d72ed90e52b686a9ee331d16a5f8eb8');
   });
 });
 
@@ -673,7 +675,8 @@ describe('regions after the verification pass of 2026-10-19', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded. Again on 2026-11-05: Croatia lists Tapiker (round 15).
-    expect(hash).to.equal('20e487e37d5b887b37e3eee4a718412ee1b29bf6ccc72dfcf5d9d61daff8b0b0');
+    // Again on 2026-11-08: Lithuania lists Keramikams.lt.
+    expect(hash).to.equal('2816550360e3308d92dc25fb6cb20ce2ff86d932a5ec174f6231a5707b8c466e');
   });
 });
 
