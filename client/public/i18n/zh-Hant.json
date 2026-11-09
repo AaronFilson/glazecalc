@@ -44,6 +44,7 @@
   "nav": {
     "skip": "跳到主要內容",
     "main": "主要導覽",
+    "breadcrumb": "導覽路徑",
     "signIn": "登入",
     "menu": "選單",
     "recipes": "釉方",

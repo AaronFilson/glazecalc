@@ -8,8 +8,9 @@ import { LocaleService } from '../../core/locale.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { upTo } from '../../shared/format';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { StructuredData, referencePage } from '../../shared/structured-data';
+import { type Crumb, StructuredData, referencePage } from '../../shared/structured-data';
 import { REFERENCE_LANGUAGE_LIST, referenceText } from './reference-text';
 
 /** A cone's temperature in °C and °F, whole degrees: 1305 and 2381. */
@@ -25,9 +26,10 @@ const bothScales = (celsius: number): { c: string; f: string } => ({
  */
 @Component({
   selector: 'gc-cones-page',
-  imports: [NgTemplateOutlet, PageHeader, RichText, StructuredData, TranslocoDirective],
+  imports: [Breadcrumb, NgTemplateOutlet, PageHeader, RichText, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
+    <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header [title]="t('reference.cones.heading')" [lead]="t('reference.cones.lead')" />
     @if (!translated) {
       <p class="guide-note">{{ t('reference.notTranslated') }}</p>
@@ -214,16 +216,19 @@ export class ConesPage {
     }))
   );
 
+  /** The trail to the page: what the page shows (gc-breadcrumb) and search engines read (shared/structured-data.ts). */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('reference.cones.crumb'), path: '/cones' }
+  ]);
+
   /** What search engines read about the page (shared/structured-data.ts). */
   protected readonly structured = computed(() =>
     referencePage(
       translate('titles.cones').replace(/ - Glazecalc$/, ''),
       translate('meta.cones'),
       '/cones',
-      [
-        { name: 'Glazecalc', path: '/' },
-        { name: translate('reference.cones.crumb'), path: '/cones' }
-      ],
+      this.crumbs(),
       'WebPage',
       this.translated ? this.language : 'en'
     )

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Przejdź do treści",
     "main": "Menu główne",
+    "breadcrumb": "Ścieżka nawigacji",
     "signIn": "Zaloguj się",
     "menu": "Menu",
     "recipes": "Receptury",

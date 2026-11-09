@@ -44,9 +44,35 @@ export function homeData(description: string, language: string, address: string)
 }
 
 /**
+ * One step of the trail from the home page to a page: its localized name and its path without the language
+ * (/materials/silica; / for the home page). The one array of these feeds both the BreadcrumbList that search
+ * engines read (breadcrumbList) and the trail the page shows (gc-breadcrumb, shared/breadcrumb.ts).
+ */
+export interface Crumb {
+  name: string;
+  path: string;
+}
+
+/** The BreadcrumbList (https://schema.org/BreadcrumbList) of a trail, its addresses whole and in the `language`. */
+export function breadcrumbList(id: string, crumbs: ReadonlyArray<Crumb>, language: string): object {
+  const prefix = languagePrefix(language);
+  return {
+    '@type': 'BreadcrumbList',
+    '@id': id,
+    itemListElement: crumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: SITE + prefix + crumb.path
+    }))
+  };
+}
+
+/**
  * A guide's Article (https://schema.org/Article); dateModified only where the guide's front matter has one.
- * With `crumbs` (the trail to the guide, each { name, address } with the whole address), the Article and its
- * BreadcrumbList are one @graph, as referencePage's are.
+ * With `crumbs` (the trail to the guide), the Article and its BreadcrumbList are one @graph, as
+ * referencePage's are; the trail's addresses are in `crumbLanguage` (the page's, where `language` is the
+ * guide's text's).
  */
 export function article(
   headline: string,
@@ -54,7 +80,8 @@ export function article(
   language: string,
   address: string,
   modified?: string | null,
-  crumbs?: ReadonlyArray<{ name: string; address: string }>
+  crumbs?: ReadonlyArray<Crumb>,
+  crumbLanguage = language
 ): object {
   const data = {
     '@type': 'Article',
@@ -69,16 +96,7 @@ export function article(
     '@context': 'https://schema.org',
     '@graph': [
       { ...data, breadcrumb: { '@id': address + '#breadcrumb' } },
-      {
-        '@type': 'BreadcrumbList',
-        '@id': address + '#breadcrumb',
-        itemListElement: crumbs.map((crumb, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: crumb.name,
-          item: crumb.address
-        }))
-      }
+      breadcrumbList(address + '#breadcrumb', crumbs, crumbLanguage)
     ]
   };
 }
@@ -96,7 +114,7 @@ export function referencePage(
   name: string,
   description: string,
   path: string,
-  crumbs: ReadonlyArray<{ name: string; path: string }>,
+  crumbs: ReadonlyArray<Crumb>,
   type: 'WebPage' | 'CollectionPage' = 'WebPage',
   language = 'en'
 ): object {
@@ -115,16 +133,7 @@ export function referencePage(
         isPartOf: { '@type': 'WebSite', name: 'Glazecalc', url: SITE + prefix + '/' },
         breadcrumb: { '@id': address + '#breadcrumb' }
       },
-      {
-        '@type': 'BreadcrumbList',
-        '@id': address + '#breadcrumb',
-        itemListElement: crumbs.map((crumb, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: crumb.name,
-          item: SITE + prefix + crumb.path
-        }))
-      }
+      breadcrumbList(address + '#breadcrumb', crumbs, language)
     ]
   };
 }

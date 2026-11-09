@@ -1,6 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { StructuredData, article, homeData, jsonForScript, pageAddress, webApplication } from './structured-data';
+import {
+  StructuredData,
+  article,
+  breadcrumbList,
+  homeData,
+  jsonForScript,
+  pageAddress,
+  referencePage,
+  webApplication
+} from './structured-data';
 
 // Data for search engines, written into the head as a block of JSON that never runs.
 
@@ -90,17 +99,32 @@ describe('structured data', () => {
   it('puts a guide trail beside the Article, in one graph', () => {
     const address = 'https://glazecalcapp.com/de/guides/x';
     const data = article('h', 'd', 'de', address, null, [
-      { name: 'Glazecalc', address: 'https://glazecalcapp.com/de/' },
-      { name: 'Anleitungen', address: 'https://glazecalcapp.com/de/guides' },
-      { name: 'h', address }
+      { name: 'Glazecalc', path: '/' },
+      { name: 'Anleitungen', path: '/guides' },
+      { name: 'h', path: '/guides/x' }
     ]) as { '@graph': Record<string, unknown>[] };
     const [page, trail] = data['@graph'];
     expect(page).toMatchObject({ '@type': 'Article', breadcrumb: { '@id': address + '#breadcrumb' } });
     expect(trail).toMatchObject({ '@type': 'BreadcrumbList', '@id': address + '#breadcrumb' });
-    expect((trail!['itemListElement'] as { position: number; name: string }[]).map((c) => c.name)).toEqual([
-      'Glazecalc',
-      'Anleitungen',
-      'h'
+    expect(
+      (trail!['itemListElement'] as { position: number; name: string; item: string }[]).map((c) => [c.name, c.item])
+    ).toEqual([
+      ['Glazecalc', 'https://glazecalcapp.com/de/'],
+      ['Anleitungen', 'https://glazecalcapp.com/de/guides'],
+      ['h', 'https://glazecalcapp.com/de/guides/x']
     ]);
+  });
+
+  it('writes the same trail the page shows, whichever page builds it', () => {
+    const crumbs = [
+      { name: 'Glazecalc', path: '/' },
+      { name: 'Materials', path: '/materials' }
+    ];
+    const list = breadcrumbList('id', crumbs, 'en') as { itemListElement: { name: string; item: string }[] };
+    expect(list.itemListElement.map((c) => c.name)).toEqual(crumbs.map((c) => c.name));
+    const page = referencePage('n', 'd', '/materials', crumbs, 'CollectionPage', 'en') as {
+      '@graph': Record<string, unknown>[];
+    };
+    expect(page['@graph'][1]).toEqual(breadcrumbList('https://glazecalcapp.com/materials#breadcrumb', crumbs, 'en'));
   });
 });

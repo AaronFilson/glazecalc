@@ -5,6 +5,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { test, expect } = require('@playwright/test');
+const { default: AxeBuilder } = require('@axe-core/playwright');
 const { MATERIAL_PAGES } = require('../lib/pages');
 const { LIVE_LANGUAGES, REFERENCE_LANGUAGES, languageFor } = require('../lib/regions/languages');
 
@@ -55,6 +56,87 @@ test.describe('the page of a guide', () => {
       expect(items, path).toHaveLength(3);
       expect(new URL(items[2].item).pathname, path).toBe(path);
     }
+  });
+});
+
+test.describe('the trail shown above the title', () => {
+  const trail = (page) => page.locator('main nav.crumbs, nav.crumbs');
+  const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+
+  test('on a material page in English: links up the trail, the page itself marked current, axe clean', async ({
+    page
+  }) => {
+    await page.goto('/materials/silica');
+    await expect(page.locator('h1')).toHaveText('Silica');
+    await appStarted(page);
+    const nav = page.getByRole('navigation', { name: 'Breadcrumb' });
+    await expect(nav).toHaveCount(1);
+    await expect(nav.getByRole('listitem')).toHaveText(['Glazecalc', 'Materials', 'Silica']);
+    await expect(nav.getByRole('link')).toHaveText(['Glazecalc', 'Materials']);
+    await expect(nav.getByRole('link').first()).toHaveAttribute('href', '/');
+    await expect(nav.getByRole('link').nth(1)).toHaveAttribute('href', '/materials');
+    await expect(nav.locator('[aria-current="page"]')).toHaveText('Silica');
+    // Above the title, and the same names the data for search engines has.
+    const box = await nav.boundingBox();
+    const heading = await page.locator('h1').boundingBox();
+    expect(box.y).toBeLessThan(heading.y);
+    const [data] = await jsonLd(page);
+    expect(data['@graph'][1].itemListElement.map((item) => item.name)).toEqual(['Glazecalc', 'Materials', 'Silica']);
+    const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+    expect(violations.map((v) => v.id + ': ' + v.help)).toEqual([]);
+    // A link goes up a level.
+    await nav.getByRole('link', { name: 'Materials' }).click();
+    await expect(page).toHaveURL(/\/materials$/);
+    await expect(page.locator('h1')).toBeVisible();
+  });
+
+  test('on a guide in German: its label and names in German, links in German, axe clean', async ({ page }) => {
+    await page.goto('/de/guides/glazing-basics');
+    await expect(page.locator('h1')).toBeVisible();
+    await appStarted(page);
+    const nav = page.getByRole('navigation', { name: 'Brotkrumennavigation' });
+    await expect(nav).toHaveCount(1);
+    const links = nav.getByRole('link');
+    await expect(links).toHaveCount(2);
+    await expect(links.first()).toHaveAttribute('href', '/de/');
+    await expect(links.nth(1)).toHaveAttribute('href', '/de/guides');
+    await expect(links.nth(1)).not.toHaveText('Guides');
+    await expect(nav.locator('[aria-current="page"]')).toHaveCount(1);
+    await expect(nav.locator('li').last()).toContainText(await page.locator('h1').innerText());
+    const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+    expect(violations.map((v) => v.id + ': ' + v.help)).toEqual([]);
+    await links.nth(1).click();
+    await expect(page).toHaveURL(/\/de\/guides$/);
+  });
+
+  test('is in the page as sent, with JavaScript off', async ({ browser }) => {
+    const context = await browser.newContext({ javaScriptEnabled: false });
+    const page = await context.newPage();
+    for (const [address, label, names] of [
+      ['/guides', 'Breadcrumb', ['Glazecalc', 'Guides']],
+      ['/guides/firing', 'Breadcrumb', ['Glazecalc', 'Guides', '']],
+      ['/cones', 'Breadcrumb', ['Glazecalc', 'Cone chart']],
+      ['/materials', 'Breadcrumb', ['Glazecalc', 'Materials']]
+    ]) {
+      await page.goto(address);
+      const nav = page.getByRole('navigation', { name: label });
+      await expect(nav, address).toHaveCount(1);
+      // A guide's last name is its own title, which is the page's heading.
+      const last = names.at(-1) || (await page.locator('h1').innerText());
+      await expect(nav.getByRole('listitem'), address).toHaveText([...names.slice(0, -1), last]);
+    }
+    await context.close();
+  });
+
+  test('is not on the home page, and wraps on a phone without scrolling sideways', async ({ page }) => {
+    await page.goto('/');
+    await appStarted(page);
+    await expect(trail(page)).toHaveCount(0);
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto('/materials/soda-feldspar-potclays-3427m-potterycrafts-p3317');
+    await appStarted(page);
+    await expect(trail(page)).toHaveCount(1);
+    expect(await sideways(page)).toBeLessThanOrEqual(0);
   });
 });
 

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Vai al contenuto",
     "main": "Principale",
+    "breadcrumb": "Percorso di navigazione",
     "signIn": "Accedi",
     "menu": "Menu",
     "recipes": "Ricette",

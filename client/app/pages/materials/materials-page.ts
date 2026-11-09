@@ -4,17 +4,19 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { CATEGORY_LABELS, byNameIn, statusText } from '../../shared/library-info';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { StructuredData, referencePage } from '../../shared/structured-data';
+import { type Crumb, StructuredData, referencePage } from '../../shared/structured-data';
 import { REFERENCE_LANGUAGE_LIST } from './reference-text';
 import { STANDARD_MATERIALS, materialPath } from './standard-materials';
 
 /** The standard materials, each linking to its own page (material-info-page.ts), by kind. */
 @Component({
   selector: 'gc-materials-page',
-  imports: [PageHeader, RichText, RouterLink, StructuredData, TranslocoDirective],
+  imports: [Breadcrumb, PageHeader, RichText, RouterLink, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
+    <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header
       [title]="t('reference.materials.heading')"
       [lead]="t('reference.materials.lead', { count: count })"
@@ -84,16 +86,19 @@ export class MaterialsPage {
       .filter((group) => group.materials.length);
   });
 
+  /** The trail to the page: what the page shows (gc-breadcrumb) and search engines read (shared/structured-data.ts). */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('reference.materials.crumb'), path: '/materials' }
+  ]);
+
   /** What search engines read about the page (shared/structured-data.ts). */
   protected readonly structured = computed(() =>
     referencePage(
       translate('titles.materials').replace(/ - Glazecalc$/, ''),
       translate('meta.materials'),
       '/materials',
-      [
-        { name: 'Glazecalc', path: '/' },
-        { name: translate('reference.materials.crumb'), path: '/materials' }
-      ],
+      this.crumbs(),
       'CollectionPage',
       this.translated ? this.language : 'en'
     )

@@ -14,8 +14,9 @@ import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { fixed, formatPlain } from '../../shared/format';
 import { REGIONS, chosenRegion } from '../../shared/library-info';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { StructuredData, referencePage } from '../../shared/structured-data';
+import { type Crumb, StructuredData, referencePage } from '../../shared/structured-data';
 import { RecipeLimits } from '../recipe/recipe-limits';
 import {
   FamousGlaze,
@@ -59,9 +60,10 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
  */
 @Component({
   selector: 'gc-famous-glaze-page',
-  imports: [PageHeader, RecipeLimits, RouterLink, StructuredData, TranslocoDirective],
+  imports: [Breadcrumb, PageHeader, RecipeLimits, RouterLink, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
+    <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header [title]="name()" [lead]="t('famous.glaze.lead', { native: glaze().native.name })" />
     @if (english()) {
       <p class="guide-note">{{ t('famous.notTranslated') }}</p>
@@ -419,17 +421,20 @@ export class FamousGlazePage {
     }
   }
 
+  /** The trail to the page: what the page shows (gc-breadcrumb) and search engines read (shared/structured-data.ts). */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('famous.index.crumb'), path: '/famous-glazes' },
+    { name: this.name(), path: this.path() }
+  ]);
+
   protected readonly structured = computed(() => {
     const params = { name: this.name(), native: this.glaze().native.name };
     return referencePage(
       translate('titles.famousGlaze', params).replace(/ - Glazecalc$/, ''),
       translate('meta.famousGlaze', params),
       this.path(),
-      [
-        { name: 'Glazecalc', path: '/' },
-        { name: translate('famous.index.crumb'), path: '/famous-glazes' },
-        { name: this.name(), path: this.path() }
-      ],
+      this.crumbs(),
       'WebPage',
       this.english() ? 'en' : this.language
     );

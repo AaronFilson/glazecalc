@@ -44,6 +44,7 @@
   "nav": {
     "skip": "본문으로 건너뛰기",
     "main": "주 메뉴",
+    "breadcrumb": "이동 경로",
     "signIn": "로그인",
     "menu": "메뉴",
     "recipes": "레시피",

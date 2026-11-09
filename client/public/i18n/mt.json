@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Aqbeż għall-kontenut",
     "main": "Prinċipali",
+    "breadcrumb": "Rotta tan-navigazzjoni",
     "signIn": "Idħol",
     "menu": "Menù",
     "recipes": "Riċetti",

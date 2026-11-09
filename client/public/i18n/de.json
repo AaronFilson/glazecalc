@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Zum Inhalt springen",
     "main": "Hauptnavigation",
+    "breadcrumb": "Brotkrumennavigation",
     "signIn": "Anmelden",
     "menu": "Menü",
     "recipes": "Rezepte",
