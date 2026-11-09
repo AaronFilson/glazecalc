@@ -106,6 +106,8 @@ test('signing out asks, names the unsent changes, defaults to Keep, and Cancel o
   await expect(dialog(page)).toHaveCount(0);
   await expect(signOut).toBeVisible();
   await signOut.click();
+  // The dialog opens once the unsent changes are counted; Escape before then reaches nothing.
+  await expect(dialog(page).getByRole('button', { name: 'Keep on this device' })).toBeFocused();
   await page.keyboard.press('Escape');
   await expect(dialog(page)).toHaveCount(0);
   await expect(signOut).toBeVisible();
