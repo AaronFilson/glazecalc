@@ -744,8 +744,9 @@ describe('Latin America and Africa, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    // Changed on purpose on 2026-11-08: Brazil lists Arte Brasil Cerâmica (the owner's browsing export).
-    expect(hash).to.equal('75537d92e1d90987d6fb0c6d7bafe0dac459662c7f60d7ed0ffaadb43034ff69');
+    // Changed on purpose on 2026-11-08: Brazil lists Arte Brasil Cerâmica, Argentina Cezart Cerámica and
+    // Arte y Fuego (the owner's browsing exports).
+    expect(hash).to.equal('1ca644b055cd54b82a204c0a66ac769ec1f1641153aa0b091d930de708144bc3');
   });
 
   it('are, with the earlier snapshots, every region', () => {
