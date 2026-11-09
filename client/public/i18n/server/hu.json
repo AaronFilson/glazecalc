@@ -7,6 +7,7 @@
   "no-token": "Még nincs token, így nincs megkereshető e-mail-cím. Viszontlátásra.",
   "verified": "Felhasználó ellenőrizve",
   "not-signed-in": "nem sikerült hitelesíteni a felhasználót",
+  "account-gone": "Ez a fiók már nem létezik.",
   "no-user": "Nincs ilyen azonosítójú felhasználó",
   "not-allowed": "Másik felhasználó adatai nem módosíthatók",
   "user-updated": "Felhasználó frissítve",

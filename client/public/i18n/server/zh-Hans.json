@@ -7,6 +7,7 @@
   "no-token": "尚无令牌，因此找不到电子邮件地址。再见。",
   "verified": "用户已验证",
   "not-signed-in": "无法验证用户身份",
+  "account-gone": "此账户已不存在。",
   "no-user": "没有该 ID 的用户",
   "not-allowed": "不允许修改其他用户",
   "user-updated": "用户已更新",

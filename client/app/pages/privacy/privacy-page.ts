@@ -83,6 +83,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
   },
   // core/outbox.ts: the note in local storage that changes made offline wait in the database above.
   { names: ['offlineOutbox'], kind: marker('site.privacy.storageLocal'), key: 'offlineOutbox' },
+  // core/offline-records.ts: an account the server said was deleted, whose offline copy waits for the person's choice.
+  { names: ['offlineGone'], kind: marker('site.privacy.storageLocal'), key: 'offlineGone' },
   // core/offline-languages.ts: the cache, and the note in local storage.
   { names: ['gc-i18n', 'offlineLanguage'], kind: marker('site.privacy.storageCache'), key: 'offlineFiles' }
 ];
@@ -121,6 +123,8 @@ marker([
   'site.privacy.keys.offlineRecords.lasts',
   'site.privacy.keys.offlineOutbox.purpose',
   'site.privacy.keys.offlineOutbox.lasts',
+  'site.privacy.keys.offlineGone.purpose',
+  'site.privacy.keys.offlineGone.lasts',
   'site.privacy.keys.offlineFiles.purpose',
   'site.privacy.keys.offlineFiles.lasts'
 ]);

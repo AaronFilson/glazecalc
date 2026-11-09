@@ -1058,6 +1058,8 @@
       "temperature": "من {low} إلى {high}"
     },
     "testedAt": "اختُبر عند {cones}",
+    "testedOne": "جرّبتُ حرقه عند {cone}",
+    "statedUntested": "المذكور {cone}؛ لم يُحدَّد على أنه مُختبَر",
     "claimedRange": "المدى المعلن {range}",
     "rangeUntested": "المدى {range}؛ لم يُحدَّد أي مخروط على أنه مُختبَر",
     "approxTemperature": "≈ {temperature} ({basis}؛ تقريبي)",

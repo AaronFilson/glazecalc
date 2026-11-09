@@ -1058,6 +1058,8 @@
       "temperature": "{low} hadi {high}"
     },
     "testedAt": "Imejaribiwa katika {cones}",
+    "testedOne": "Nimeijaribu kwa kuichoma katika {cone}",
+    "statedUntested": "Imetajwa {cone}; haijawekwa alama kuwa imejaribiwa",
     "claimedRange": "masafa yaliyodaiwa {range}",
     "rangeUntested": "Masafa {range}; hakuna koni iliyowekwa alama kuwa imejaribiwa",
     "approxTemperature": "≈ {temperature} ({basis}; makadirio)",

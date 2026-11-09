@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Léim go dtí an phríomhchuid",
     "main": "Príomh-roghchlár",
+    "breadcrumb": "Cosán nascleanúna",
     "signIn": "Sínigh isteach",
     "menu": "Roghchlár",
     "recipes": "Oidis",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Múch agus scrios",
     "deleteBody": "Scriosann sé seo cóip de do thaifid ón ngléas seo. Ní dhéantar aon athrú ar do thaifid ar Glazecalc.",
     "unsentLost": "{count, plural, one {Caillfear # athrú nár seoladh fós.} two {Caillfear # athrú nár seoladh fós.} few {Caillfear # athrú nár seoladh fós.} many {Caillfear # n-athrú nár seoladh fós.} other {Caillfear # athrú nár seoladh fós.}}",
-    "iosEviction": "Ar iPhone nó iPad, féadfaidh Safari sonraí atá ag fanacht ar an ngléas seo a bhaint tar éis 7 lá gan úsáid. Chun iad a choinneáil níos sábháilte, cuir Glazecalc le do Scáileán Baile agus oscail as sin é."
+    "iosEviction": "Ar iPhone nó iPad, féadfaidh Safari sonraí atá ag fanacht ar an ngléas seo a bhaint tar éis 7 lá gan úsáid. Chun iad a choinneáil níos sábháilte, cuir Glazecalc le do Scáileán Baile agus oscail as sin é.",
+    "keepLabel": "Bain na sonraí as líne mura n-osclaítear Glazecalc ar feadh",
+    "keepNever": "Choíche (coinnigh iad go dtí go scriosaim iad)",
+    "keepWeek": "1 seachtain",
+    "keepMonth": "1 mhí",
+    "keepQuarter": "3 mhí",
+    "keepYear": "1 bhliain",
+    "keepHint": "Comhairtear é ón uair dheireanach a d'oscail tú Glazecalc ar an ngléas seo. Ní bhaintear na sonraí ach nuair a osclaíonn tú Glazecalc anseo an chéad uair eile, agus ní bhaintear iad sa chúlra choíche. Baintear na hathruithe nár seoladh fós in éineacht leo.",
+    "keepRemoved": "Baineadh do shonraí as líne ar an ngléas seo mar nár osclaíodh Glazecalc anseo ar feadh na tréimhse a roghnaigh tú.",
+    "notAvailable": "Níl sé seo ar fáil as líne. Ceangail leis an idirlíon chun é a fheiceáil.",
+    "goneTitle": "Scriosadh do chuntas",
+    "goneBody": "Deir Glazecalc nach ann don chuntas seo a thuilleadh. Tá do chóip as líne dá thaifid fós ar an ngléas seo.",
+    "goneHint": "Is féidir leat an chóip a easpórtáil mar chomhad ar dtús. Ní ghlantar aon rud ón ngléas seo go dtí go roghnaíonn tú.",
+    "goneExport": "Easpórtáil mo shonraí as líne",
+    "goneClear": "Glan gan easpórtáil",
+    "goneLater": "Ar ball",
+    "goneExported": "Sábháladh an comhad i d'íoslódálacha. An nglanfar an chóip as líne ón ngléas seo anois?"
   },
   "outbox": {
     "waiting": "Ag fanacht le sábháil",

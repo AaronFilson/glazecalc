@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Přejít na obsah",
     "main": "Hlavní navigace",
+    "breadcrumb": "Drobečková navigace",
     "signIn": "Přihlásit se",
     "menu": "Nabídka",
     "recipes": "Recepty",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Vypnout a smazat",
     "deleteBody": "Tím se z tohoto zařízení smaže kopie vašich záznamů. Vaše záznamy v Glazecalcu se nezmění.",
     "unsentLost": "{count, plural, one {# dosud neodeslaná změna bude ztracena.} few {# dosud neodeslané změny budou ztraceny.} many {# dosud neodeslané změny budou ztraceny.} other {# dosud neodeslaných změn bude ztraceno.}}",
-    "iosEviction": "V iPhonu nebo iPadu může Safari po 7 dnech bez použití odebrat data čekající v tomto zařízení. Aby byla v bezpečí, přidejte Glazecalc na plochu (Home Screen) a otevírejte jej odtud."
+    "iosEviction": "V iPhonu nebo iPadu může Safari po 7 dnech bez použití odebrat data čekající v tomto zařízení. Aby byla v bezpečí, přidejte Glazecalc na plochu (Home Screen) a otevírejte jej odtud.",
+    "keepLabel": "Odstranit data offline, pokud Glazecalc nebyl otevřen po dobu",
+    "keepNever": "Nikdy (ponechat, dokud je nesmažu)",
+    "keepWeek": "1 týden",
+    "keepMonth": "1 měsíc",
+    "keepQuarter": "3 měsíce",
+    "keepYear": "1 rok",
+    "keepHint": "Počítá se od chvíle, kdy jste Glazecalc v tomto zařízení naposledy otevřeli. Data se odstraní, až když zde Glazecalc příště otevřete, nikdy na pozadí. Spolu s nimi se odstraní i změny, které ještě nebyly odeslány.",
+    "keepRemoved": "Vaše data offline v tomto zařízení byla odstraněna, protože Glazecalc zde nebyl otevřen po vámi zvolenou dobu.",
+    "notAvailable": "Není k dispozici offline. Chcete-li to zobrazit, připojte se k internetu.",
+    "goneTitle": "Váš účet byl smazán",
+    "goneBody": "Glazecalc uvádí, že tento účet už neexistuje. Toto zařízení stále uchovává vaši kopii offline jeho záznamů.",
+    "goneHint": "Kopii můžete nejprve exportovat jako soubor. Z tohoto zařízení se nic nevymaže, dokud se nerozhodnete.",
+    "goneExport": "Exportovat moje data offline",
+    "goneClear": "Vymazat bez exportu",
+    "goneLater": "Později",
+    "goneExported": "Soubor byl uložen do stažených souborů. Vymazat nyní kopii offline z tohoto zařízení?"
   },
   "outbox": {
     "waiting": "Čeká na uložení",

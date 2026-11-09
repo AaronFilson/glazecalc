@@ -7,6 +7,7 @@
   "no-token": "Zatím chybí token, takže nelze najít žádný e-mail. Na shledanou.",
   "verified": "Uživatel ověřen",
   "not-signed-in": "uživatele se nepodařilo ověřit",
+  "account-gone": "Tento účet už neexistuje.",
   "no-user": "Uživatel s tímto ID neexistuje",
   "not-allowed": "Měnit jiného uživatele není povoleno",
   "user-updated": "Uživatel aktualizován",

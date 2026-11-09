@@ -1058,6 +1058,8 @@
       "temperature": "{low} tot {high}"
     },
     "testedAt": "Getoets by {cones}",
+    "testedOne": "Ek het dit by {cone} gebak en getoets",
+    "statedUntested": "Aangegee: {cone}; nie as getoets gemerk nie",
     "claimedRange": "opgegewe reeks {range}",
     "rangeUntested": "Reeks {range}; geen kegel as getoets gemerk nie",
     "approxTemperature": "≈ {temperature} ({basis}; benaderd)",

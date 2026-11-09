@@ -348,7 +348,7 @@ Label: Defects
 | Shivering | The glaze shrinks far less than the body   | More K₂O and Na₂O                                  |
 | Running   | Too little alumina, or too thick           | More alumina; a thinner coat                       |
 | Crawling  | Dusty bisque, or a thick coat that cracked | Clean the bisque; a thinner coat                   |
-| Pinholes  | Gas that did not heal over                 | A hold at the top of the firing; a thinner coat    |
+| Pinholes  | Gas bubble that did not heal over          | A hold at the top of the firing; a thinner coat    |
 
 [Glaze fit and defects](/guides/glazing-basics#fit-and-defects) explains each one, with the ice-water test for crazing. Do not use crazed or shivered ware for food or drink.
 

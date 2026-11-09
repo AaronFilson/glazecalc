@@ -1058,6 +1058,8 @@
       "temperature": "{low} ਤੋਂ {high}"
     },
     "testedAt": "{cones} ਉੱਤੇ ਟੈਸਟ ਕੀਤਾ",
+    "testedOne": "ਮੈਂ ਇਸ ਨੂੰ {cone} ਉੱਤੇ ਪਕਾ ਕੇ ਟੈਸਟ ਕੀਤਾ ਹੈ",
+    "statedUntested": "ਦੱਸਿਆ ਗਿਆ {cone}; ਟੈਸਟ ਕੀਤੇ ਦਾ ਨਿਸ਼ਾਨ ਨਹੀਂ",
     "claimedRange": "ਦੱਸੀ ਰੇਂਜ {range}",
     "rangeUntested": "ਰੇਂਜ {range}; ਕਿਸੇ ਕੋਨ ਉੱਤੇ ਟੈਸਟ ਕੀਤੇ ਦਾ ਨਿਸ਼ਾਨ ਨਹੀਂ",
     "approxTemperature": "≈ {temperature} ({basis}; ਅੰਦਾਜ਼ਨ)",

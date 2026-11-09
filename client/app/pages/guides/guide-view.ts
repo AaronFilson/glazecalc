@@ -3,7 +3,7 @@ import { Component, SecurityContext, computed, forwardRef, inject, input } from 
 import { DomSanitizer } from '@angular/platform-browser';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { Router, RouterLink } from '@angular/router';
-import { REFERENCE_LANGUAGES, baseLanguage, languageFor } from '../../../../lib/regions/languages';
+import { REFERENCE_LANGUAGES, baseLanguage, languageFor, pagePath } from '../../../../lib/regions/languages';
 import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
@@ -11,8 +11,9 @@ import { pseudoText } from '../../i18n/pseudo';
 import { isolated, ltr, withLatinIsolated } from '../../shared/bidi';
 import { fixed, upTo } from '../../shared/format';
 import { textDigitsFor, withTextDigits } from '../../shared/text-digits';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { StructuredData, article, pageAddress } from '../../shared/structured-data';
+import { type Crumb, StructuredData, article, pageAddress } from '../../shared/structured-data';
 import { GuideContents, SectionLinks } from './guide-contents';
 import { Block, Guide, GuideSection, Inline, Reading, blocks } from './guide-document';
 import { GuideInline, GuideRow, InlineContext } from './guide-inline';
@@ -36,6 +37,7 @@ import { StullChart } from '../recipe/stull-chart';
 @Component({
   selector: 'gc-guide-view',
   imports: [
+    Breadcrumb,
     FoodLimits,
     GuideContents,
     GuideInline,
@@ -84,13 +86,16 @@ export class GuideView implements InlineContext {
       this.textLanguage() ?? this.language,
       pageAddress(this.language, this.pathname),
       modified,
-      [
-        { name: 'Glazecalc', address: pageAddress(this.language, '/') },
-        { name: translate('nav.guides'), address: pageAddress(this.language, '/guides') },
-        { name: title, address: pageAddress(this.language, this.pathname) }
-      ]
+      this.crumbs(),
+      this.language
     );
   });
+  /** The trail to the guide: what the page shows (gc-breadcrumb) and search engines read (above). */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('nav.guides'), path: '/guides' },
+    { name: this.guide().title, path: pagePath(this.pathname).replace(/\/+$/, '') }
+  ]);
   /**
    * The other guides, for the block at the end of the page (search engines follow these links, and they
    * are in the prerendered page): every guide of the list (guides-page.ts) but this one, so a guide added

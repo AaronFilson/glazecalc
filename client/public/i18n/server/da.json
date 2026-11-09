@@ -7,6 +7,7 @@
   "no-token": "Endnu intet token, så der er ingen e-mailadresse at finde. Farvel.",
   "verified": "Brugeren er bekræftet",
   "not-signed-in": "Brugeren kunne ikke godkendes",
+  "account-gone": "Denne konto findes ikke længere.",
   "no-user": "Der er ingen bruger med det id",
   "not-allowed": "Det er ikke tilladt at ændre en anden bruger",
   "user-updated": "Brugeren er opdateret",

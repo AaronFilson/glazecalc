@@ -348,7 +348,7 @@ Label: Vead
 | Koorumine       | Glasuur tõmbub palju vähem kokku kui savimass        | Rohkem K₂O ja Na₂O                                               |
 | Voolamine       | Liiga vähe alumiiniumoksiidi või liiga paks kiht     | Rohkem alumiiniumoksiidi; õhem kiht                              |
 | Kokkutõmbumine  | Tolmune eelpõletatud ese või paks kiht, mis pragunes | Puhastage eelpõletatud ese; õhem kiht                            |
-| Nõelaaugud      | Gaas, mille jälg ei sulanud kinni                    | Hoid põletuse tipptemperatuuril; õhem kiht                       |
+| Nõelaaugud      | Gaasimull, mille jälg ei sulanud kinni               | Hoid põletuse tipptemperatuuril; õhem kiht                       |
 
 [Glasuuri sobivus ja glasuurivead](/guides/glazing-basics#fit-and-defects) selgitab igaüht neist, koos jäävee katsega juuspragunemise kohta. Ärge kasutage juuspragunenud ega kooruva glasuuriga esemeid toidu ega joogi jaoks.
 

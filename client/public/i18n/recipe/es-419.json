@@ -1058,6 +1058,8 @@
       "temperature": "{low} a {high}"
     },
     "testedAt": "Probado a {cones}",
+    "testedOne": "La probé cociéndola a {cone}",
+    "statedUntested": "Indicado {cone}; no marcado como probado",
     "claimedRange": "intervalo indicado {range}",
     "rangeUntested": "Intervalo {range}; ningún cono marcado como probado",
     "approxTemperature": "≈ {temperature} ({basis}; aproximado)",

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Hoppa till innehållet",
     "main": "Huvudmeny",
+    "breadcrumb": "Brödsmulor",
     "signIn": "Logga in",
     "menu": "Meny",
     "recipes": "Recept",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Stäng av och ta bort",
     "deleteBody": "Det här tar bort kopian av dina poster från den här enheten. Dina poster i Glazecalc påverkas inte.",
     "unsentLost": "{count, plural, one {# ändring som inte har skickats än går förlorad.} other {# ändringar som inte har skickats än går förlorade.}}",
-    "iosEviction": "På en iPhone eller iPad kan Safari ta bort data som väntar på den här enheten efter 7 dagars inaktivitet. För större säkerhet, lägg till Glazecalc på hemskärmen och öppna det därifrån."
+    "iosEviction": "På en iPhone eller iPad kan Safari ta bort data som väntar på den här enheten efter 7 dagars inaktivitet. För större säkerhet, lägg till Glazecalc på hemskärmen och öppna det därifrån.",
+    "keepLabel": "Ta bort data för användning utan internet om Glazecalc inte öppnas på",
+    "keepNever": "Aldrig (behåll den tills jag tar bort den)",
+    "keepWeek": "1 vecka",
+    "keepMonth": "1 månad",
+    "keepQuarter": "3 månader",
+    "keepYear": "1 år",
+    "keepHint": "Räknas från senaste gången du öppnade Glazecalc på den här enheten. Datan tas bort först nästa gång du öppnar Glazecalc här, aldrig i bakgrunden. Ändringar som inte har skickats än tas bort med den.",
+    "keepRemoved": "Din data för användning utan internet på den här enheten togs bort eftersom Glazecalc inte öppnades här under den tid du valde.",
+    "notAvailable": "Inte tillgängligt utan internet. Anslut till internet för att se detta.",
+    "goneTitle": "Ditt konto har raderats",
+    "goneBody": "Glazecalc säger att det här kontot inte längre finns. Den här enheten har fortfarande din kopia av dess poster för användning utan internet.",
+    "goneHint": "Du kan exportera kopian som en fil först. Inget rensas från den här enheten förrän du väljer.",
+    "goneExport": "Exportera min data för användning utan internet",
+    "goneClear": "Rensa utan att exportera",
+    "goneLater": "Senare",
+    "goneExported": "Filen sparades i dina hämtade filer. Vill du rensa kopian för användning utan internet från den här enheten nu?"
   },
   "outbox": {
     "waiting": "Väntar på att sparas",

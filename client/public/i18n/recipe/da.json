@@ -1058,6 +1058,8 @@
       "temperature": "{low} til {high}"
     },
     "testedAt": "Testet ved {cones}",
+    "testedOne": "Jeg har testbrændt den ved {cone}",
+    "statedUntested": "Angivet {cone}; ikke markeret som testet",
     "claimedRange": "angivet interval {range}",
     "rangeUntested": "Interval {range}; ingen kegle markeret som testet",
     "approxTemperature": "≈ {temperature} ({basis}; omtrentligt)",

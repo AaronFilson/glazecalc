@@ -44,6 +44,7 @@
   "nav": {
     "skip": "본문으로 건너뛰기",
     "main": "주 메뉴",
+    "breadcrumb": "이동 경로",
     "signIn": "로그인",
     "menu": "메뉴",
     "recipes": "레시피",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "끄고 삭제",
     "deleteBody": "이 기기에서 기록 사본을 삭제합니다. Glazecalc에 있는 기록은 그대로입니다.",
     "unsentLost": "{count, plural, other {아직 전송되지 않은 변경 #개가 사라집니다.}}",
-    "iosEviction": "iPhone 또는 iPad에서는 7일 동안 사용하지 않으면 Safari가 이 기기에 대기 중인 데이터를 삭제할 수 있습니다. 더 안전하게 보관하려면 Glazecalc를 홈 화면에 추가하고 거기에서 여세요."
+    "iosEviction": "iPhone 또는 iPad에서는 7일 동안 사용하지 않으면 Safari가 이 기기에 대기 중인 데이터를 삭제할 수 있습니다. 더 안전하게 보관하려면 Glazecalc를 홈 화면에 추가하고 거기에서 여세요.",
+    "keepLabel": "Glazecalc를 다음 기간 동안 열지 않으면 오프라인 데이터 제거:",
+    "keepNever": "제거 안 함(내가 삭제할 때까지 보관)",
+    "keepWeek": "1주",
+    "keepMonth": "1개월",
+    "keepQuarter": "3개월",
+    "keepYear": "1년",
+    "keepHint": "이 기기에서 마지막으로 Glazecalc를 연 때부터 계산합니다. 데이터는 다음에 여기에서 Glazecalc를 열 때만 제거되며, 백그라운드에서는 제거되지 않습니다. 아직 전송되지 않은 변경 내용도 함께 제거됩니다.",
+    "keepRemoved": "선택한 기간 동안 이 기기에서 Glazecalc를 열지 않아 이 기기의 오프라인 데이터가 제거되었습니다.",
+    "notAvailable": "오프라인에서는 사용할 수 없습니다. 보려면 인터넷에 연결하세요.",
+    "goneTitle": "계정이 삭제되었습니다",
+    "goneBody": "Glazecalc에 따르면 이 계정은 더 이상 존재하지 않습니다. 이 기기에는 아직 그 기록의 오프라인 사본이 있습니다.",
+    "goneHint": "먼저 사본을 파일로 내보낼 수 있습니다. 선택하기 전에는 이 기기에서 아무것도 삭제되지 않습니다.",
+    "goneExport": "내 오프라인 데이터 내보내기",
+    "goneClear": "내보내지 않고 삭제",
+    "goneLater": "나중에",
+    "goneExported": "파일이 다운로드 폴더에 저장되었습니다. 지금 이 기기에서 오프라인 사본을 삭제할까요?"
   },
   "outbox": {
     "waiting": "저장 대기 중",

@@ -7,6 +7,7 @@
   "no-token": "尚無權杖，因此找不到電子郵件地址。再見。",
   "verified": "使用者已驗證",
   "not-signed-in": "無法驗證使用者身分",
+  "account-gone": "此帳戶已不存在。",
   "no-user": "沒有此 ID 的使用者",
   "not-allowed": "不允許變更其他使用者",
   "user-updated": "使用者已更新",

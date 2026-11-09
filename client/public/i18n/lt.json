@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Pereiti prie turinio",
     "main": "Pagrindinis meniu",
+    "breadcrumb": "Naršymo kelias",
     "signIn": "Prisijungti",
     "menu": "Meniu",
     "recipes": "Receptai",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Išjungti ir ištrinti",
     "deleteBody": "Taip iš šio įrenginio ištrinama jūsų įrašų kopija. Jūsų įrašai Glazecalc nepaliečiami.",
     "unsentLost": "{count, plural, one {# dar neišsiųstas pakeitimas bus prarastas.} few {# dar neišsiųsti pakeitimai bus prarasti.} many {# dar neišsiųsto pakeitimo bus prarasta.} other {# dar neišsiųstų pakeitimų bus prarasta.}}",
-    "iosEviction": "„iPhone“ ar „iPad“ įrenginyje „Safari“ gali pašalinti šiame įrenginyje laukiančius duomenis, jei 7 dienas jų nenaudojate. Kad jie būtų saugesni, pridėkite Glazecalc prie pradžios ekrano ir atidarykite iš ten."
+    "iosEviction": "„iPhone“ ar „iPad“ įrenginyje „Safari“ gali pašalinti šiame įrenginyje laukiančius duomenis, jei 7 dienas jų nenaudojate. Kad jie būtų saugesni, pridėkite Glazecalc prie pradžios ekrano ir atidarykite iš ten.",
+    "keepLabel": "Pašalinti duomenis, skirtus naudoti be interneto, jei Glazecalc neatidaroma ilgiau nei",
+    "keepNever": "Niekada (laikyti, kol juos ištrinsiu)",
+    "keepWeek": "1 savaitę",
+    "keepMonth": "1 mėnesį",
+    "keepQuarter": "3 mėnesius",
+    "keepYear": "1 metus",
+    "keepHint": "Skaičiuojama nuo paskutinio karto, kai šiame įrenginyje atidarėte Glazecalc. Duomenys pašalinami tik kitą kartą čia atidarius Glazecalc, niekada fone. Kartu pašalinami ir dar neišsiųsti pakeitimai.",
+    "keepRemoved": "Jūsų duomenys, skirti naudoti be interneto, šiame įrenginyje pašalinti, nes Glazecalc čia nebuvo atidaryta jūsų pasirinktą laiką.",
+    "notAvailable": "Be interneto nepasiekiama. Kad tai pamatytumėte, prisijunkite prie interneto.",
+    "goneTitle": "Jūsų paskyra ištrinta",
+    "goneBody": "Glazecalc nurodo, kad šios paskyros nebėra. Šiame įrenginyje vis dar yra jūsų jos įrašų kopija, skirta naudoti be interneto.",
+    "goneHint": "Pirmiausia kopiją galite eksportuoti į failą. Kol nepasirinksite, iš šio įrenginio niekas neištrinama.",
+    "goneExport": "Eksportuoti mano duomenis, skirtus naudoti be interneto",
+    "goneClear": "Ištrinti neeksportavus",
+    "goneLater": "Vėliau",
+    "goneExported": "Failas išsaugotas jūsų atsisiuntimuose. Ištrinti kopiją iš šio įrenginio dabar?"
   },
   "outbox": {
     "waiting": "Laukia išsaugojimo",

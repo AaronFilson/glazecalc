@@ -1058,6 +1058,8 @@
       "temperature": "{low} sí {high}"
     },
     "testedAt": "A dán an wò ní {cones}",
+    "testedOne": "Mo ti sun ún wò ní {cone}",
+    "statedUntested": "A sọ {cone}; a kò sàmì sí pé a ti dán an wò",
     "claimedRange": "ìbú tí a sọ {range}",
     "rangeUntested": "Ìbú {range}; kò sí cone tí a sàmì sí pé a ti dán an wò",
     "approxTemperature": "≈ {temperature} ({basis}; ìfojúdíwọ̀n)",

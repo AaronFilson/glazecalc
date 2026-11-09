@@ -1058,6 +1058,8 @@
       "temperature": "{low} до {high}"
     },
     "testedAt": "Изпитана при {cones}",
+    "testedOne": "Изпитах я при {cone}",
+    "statedUntested": "Посочено {cone}; не е отбелязано като изпитано",
     "claimedRange": "заявен диапазон {range}",
     "rangeUntested": "Диапазон {range}; няма отбелязан изпитан конус",
     "approxTemperature": "≈ {temperature} ({basis}; приблизително)",

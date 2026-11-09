@@ -348,7 +348,7 @@ Label: Defeitos
 | Descascamento{{en: shivering}}          | O esmalte encolhe bem menos do que a massa       | Mais K₂O e Na₂O                                                  |
 | Escorrimento                            | Alumina de menos, ou camada grossa demais        | Mais alumina; uma camada mais fina                               |
 | Encolhimento do esmalte{{en: crawling}} | Biscoito empoeirado, ou camada grossa que rachou | Limpar o biscoito; uma camada mais fina                          |
-| Furinhos (pinholes)                     | Gás cuja marca não se fechou                     | Um patamar na temperatura máxima da queima; uma camada mais fina |
+| Furinhos (pinholes)                     | Bolha de gás cuja marca não se fechou            | Um patamar na temperatura máxima da queima; uma camada mais fina |
 
 [Acordo massa-esmalte e defeitos](/guides/glazing-basics#fit-and-defects) explica cada um, com o teste da água com gelo para o gretamento. Não use peças com gretamento ou descascamento para alimentos ou bebidas.
 

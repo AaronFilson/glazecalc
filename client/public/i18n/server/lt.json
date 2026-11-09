@@ -7,6 +7,7 @@
   "no-token": "Prisijungimo žetono dar nėra, todėl el. pašto adreso rasti negalima. Viso gero.",
   "verified": "Naudotojas patvirtintas",
   "not-signed-in": "naudotojo autentifikuoti nepavyko",
+  "account-gone": "Šios paskyros nebėra.",
   "no-user": "Naudotojo su tokiu ID nėra",
   "not-allowed": "Keisti kito naudotojo duomenų neleidžiama",
   "user-updated": "Naudotojo duomenys atnaujinti",

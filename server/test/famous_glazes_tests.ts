@@ -65,6 +65,28 @@ describe('famous glazes: the data', () => {
     expect(famous.glazeProblems(odd).join()).to.match(/tested/);
   });
 
+  it("gives Oribe the Mie institute's 1976 recipe for reduction, and says classic Oribe is fired in oxidation", () => {
+    const oribe = glazes.find((g) => g.slug === 'oribe')!;
+    expect(oribe.firing!.atmosphere).to.equal('reduction');
+    expect(oribe.firing!.celsius).to.eql([1250, 1280]);
+    expect(oribe.recipe!.lines.map((l) => [l.material, l.amount])).to.eql([
+      ['Kamado Feldspar (釜戸長石)', 65],
+      ['Whiting', 19],
+      ['Korean Kaolin (韓国カオリン)', 15],
+      ['Silica', 1],
+      ['Talc', 5]
+    ]);
+    expect(oribe.recipe!.additives!.map((l) => [l.material, l.amount])).to.eql([['Copper oxide', 5]]);
+    const ids = oribe.sources.map((source) => source.id);
+    for (const id of ['P5', 'P3', 'J8']) expect(ids, id).to.include(id);
+    expect(oribe.firing!.sources).to.include('P5');
+    expect(oribe.firing!.note!.en).to.match(/oxidation/);
+    expect(oribe.firing!.note!.en).to.match(/reduction/);
+    expect(oribe.recipe!.note!.en).to.match(/inside the 100 or on top/);
+    // Copper food-safety note, as for the other copper glaze.
+    expect(oribe.safety!.en).to.match(/leach-test/);
+  });
+
   it('has Shino and Oribe written in every language İznik is', () => {
     const iznik = glazes.find((g) => g.slug === 'iznik')!;
     for (const slug of ['shino', 'oribe']) {

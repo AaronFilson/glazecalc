@@ -1058,6 +1058,8 @@
       "temperature": "{low} đến {high}"
     },
     "testedAt": "Đã thử ở {cones}",
+    "testedOne": "Tôi đã nung thử men này ở {cone}",
+    "statedUntested": "Ghi là {cone}; chưa đánh dấu là đã thử",
     "claimedRange": "khoảng được nêu {range}",
     "rangeUntested": "Khoảng {range}; chưa đánh dấu côn nào là đã thử",
     "approxTemperature": "≈ {temperature} ({basis}; gần đúng)",

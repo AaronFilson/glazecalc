@@ -24,7 +24,7 @@ RUN --mount=type=cache,target=/root/.npm npm ci --no-audit --no-fund
 # Production build of the client into dist/glazecalc/browser, and the public
 # pages rendered ahead of time into dist/glazecalc/prerendered (scripts/prerender.mjs),
 # and the skills as ZIPs to download (scripts/build-skills.mjs), and the service worker
-# with its manifest and the offline page (scripts/service-worker.mjs). The build first
+# with its manifest, the offline page and the background sync (scripts/service-worker.mjs, scripts/outbox-sync.js). The build first
 # writes lib/regions/locale-fallback-data.json (scripts/locale-fallback.mjs), which
 # Prettier formats with .prettierrc.json.
 FROM deps AS build
@@ -33,7 +33,7 @@ COPY client ./client
 COPY lib ./lib
 COPY skills ./skills
 COPY data ./data
-COPY scripts/prerender.mjs scripts/advice-i18n.mjs scripts/material-i18n.mjs scripts/famous-glazes.mjs scripts/locale-fallback.mjs scripts/service-worker.mjs scripts/build-skills.mjs ./scripts/
+COPY scripts/prerender.mjs scripts/advice-i18n.mjs scripts/material-i18n.mjs scripts/famous-glazes.mjs scripts/locale-fallback.mjs scripts/service-worker.mjs scripts/outbox-sync.js scripts/build-skills.mjs ./scripts/
 RUN npm run build
 
 # Only the packages the server needs at run time.

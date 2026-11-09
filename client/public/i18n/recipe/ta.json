@@ -1058,6 +1058,8 @@
       "temperature": "{low} முதல் {high} வரை"
     },
     "testedAt": "சோதித்தது: {cones}",
+    "testedOne": "நான் இதை {cone}-இல் சுட்டுச் சோதித்தேன்",
+    "statedUntested": "குறிப்பிடப்பட்டது {cone}; சோதித்ததாக டிக் செய்யப்படவில்லை",
     "claimedRange": "குறிப்பிட்ட வீச்சு {range}",
     "rangeUntested": "வீச்சு {range}; எந்தக் கோனும் சோதித்ததாக டிக் செய்யப்படவில்லை",
     "approxTemperature": "≈ {temperature} ({basis}; தோராயமாக)",

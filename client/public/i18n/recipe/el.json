@@ -1058,6 +1058,8 @@
       "temperature": "{low} έως {high}"
     },
     "testedAt": "Δοκιμάστηκε σε {cones}",
+    "testedOne": "Την έχω δοκιμάσει ψήνοντας σε {cone}",
+    "statedUntested": "Δηλωμένο {cone}· δεν έχει σημειωθεί ως δοκιμασμένο",
     "claimedRange": "δηλωμένο εύρος {range}",
     "rangeUntested": "Εύρος {range}· κανένας κώνος δεν σημειώθηκε ως δοκιμασμένος",
     "approxTemperature": "≈ {temperature} ({basis}· προσεγγιστικά)",

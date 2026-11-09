@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Ir al contenido",
     "main": "Principal",
+    "breadcrumb": "Ruta de navegación",
     "signIn": "Iniciar sesión",
     "menu": "Menú",
     "recipes": "Recetas",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Desactivar y eliminar",
     "deleteBody": "Esto elimina de este dispositivo la copia de sus registros. Sus registros en Glazecalc no se tocan.",
     "unsentLost": "{count, plural, one {Se perderá # cambio que aún no se ha enviado.} many {Se perderán # de cambios que aún no se han enviado.} other {Se perderán # cambios que aún no se han enviado.}}",
-    "iosEviction": "En un iPhone o iPad, Safari puede eliminar los datos que esperan en este dispositivo tras 7 días sin uso. Para mantenerlos más seguros, añada Glazecalc a la pantalla de inicio y ábrala desde allí."
+    "iosEviction": "En un iPhone o iPad, Safari puede eliminar los datos que esperan en este dispositivo tras 7 días sin uso. Para mantenerlos más seguros, añada Glazecalc a la pantalla de inicio y ábrala desde allí.",
+    "keepLabel": "Quitar los datos sin conexión si Glazecalc no se abre durante",
+    "keepNever": "Nunca (conservarlos hasta que los elimine)",
+    "keepWeek": "1 semana",
+    "keepMonth": "1 mes",
+    "keepQuarter": "3 meses",
+    "keepYear": "1 año",
+    "keepHint": "Se cuenta desde la última vez que abrió Glazecalc en este dispositivo. Los datos solo se quitan la próxima vez que abra Glazecalc aquí, nunca en segundo plano. Los cambios que aún no se han enviado se quitan con ellos.",
+    "keepRemoved": "Sus datos sin conexión en este dispositivo se quitaron porque Glazecalc no se abrió aquí durante el tiempo que eligió.",
+    "notAvailable": "No disponible sin conexión. Conéctese a internet para ver esto.",
+    "goneTitle": "Su cuenta se eliminó",
+    "goneBody": "Glazecalc indica que esta cuenta ya no existe. Este dispositivo aún guarda su copia sin conexión de sus registros.",
+    "goneHint": "Puede exportar primero la copia como archivo. No se borra nada de este dispositivo hasta que usted elija.",
+    "goneExport": "Exportar mis datos sin conexión",
+    "goneClear": "Borrar sin exportar",
+    "goneLater": "Más tarde",
+    "goneExported": "El archivo se guardó en sus descargas. ¿Borrar ahora la copia sin conexión de este dispositivo?"
   },
   "outbox": {
     "waiting": "Pendiente de guardar",

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Gaa n'ọdịnaya",
     "main": "Isi",
+    "breadcrumb": "Ụzọ nchọgharị",
     "signIn": "Banye",
     "menu": "Menu",
     "recipes": "Usoro glaze",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Gbanyụọ ma hichapụ",
     "deleteBody": "Nke a na-ehichapụ mbipụta ndekọ gị na ngwaọrụ a. Ndekọ gị dị na Glazecalc adịghị emetụta.",
     "unsentLost": "{count, plural, other {A ga-efu mgbanwe # ezigaghị.}}",
-    "iosEviction": "Na iPhone ma ọ bụ iPad, Safari nwere ike iwepụ data na-echere na ngwaọrụ a mgbe ụbọchị 7 gafere n’enweghị iji ya. Ka o nwee nchekwa karịa, tinye Glazecalc na Home Screen gị ma mepee ya site n’ebe ahụ."
+    "iosEviction": "Na iPhone ma ọ bụ iPad, Safari nwere ike iwepụ data na-echere na ngwaọrụ a mgbe ụbọchị 7 gafere n’enweghị iji ya. Ka o nwee nchekwa karịa, tinye Glazecalc na Home Screen gị ma mepee ya site n’ebe ahụ.",
+    "keepLabel": "Wepụ data maka iji n'enweghị ịntanetị ma ọ bụrụ na emepeghị Glazecalc ruo:",
+    "keepNever": "Ọ dịghị mgbe (debe ya ruo mgbe m hichapụrụ ya)",
+    "keepWeek": "Izu 1",
+    "keepMonth": "Ọnwa 1",
+    "keepQuarter": "Ọnwa 3",
+    "keepYear": "Afọ 1",
+    "keepHint": "A na-agụ ya site na oge ikpeazụ ị mepere Glazecalc na ngwaọrụ a. A na-ewepụ data ahụ naanị mgbe ị mepere Glazecalc ebe a ọzọ, ọ dịghị mgbe n'azụ. A na-ewepụkwa mgbanwe ndị a na-ezipụbeghị ya.",
+    "keepRemoved": "E wepụrụ data gị maka iji n'enweghị ịntanetị na ngwaọrụ a n'ihi na emepeghị Glazecalc ebe a ruo oge ị họrọ.",
+    "notAvailable": "Ọ dịghị n'enweghị ịntanetị. Jikọọ na ịntanetị ka ị hụ nke a.",
+    "goneTitle": "E hichapụrụ akaụntụ gị",
+    "goneBody": "Glazecalc kwuru na akaụntụ a adịghịzi. Ngwaọrụ a ka nwere mbipụta gị nke ndekọ ya maka iji n'enweghị ịntanetị.",
+    "goneHint": "Ị nwere ike ibupụ mbipụta ahụ dị ka faịlụ mbụ. A naghị ehichapụ ihe ọ bụla na ngwaọrụ a ruo mgbe ị họrọ.",
+    "goneExport": "Bupụ data m maka iji n'enweghị ịntanetị",
+    "goneClear": "Hichapụ n'ebupụghị",
+    "goneLater": "Emechaa",
+    "goneExported": "E chekwara faịlụ ahụ na nbudata gị. Hichapụ mbipụta ahụ na ngwaọrụ a ugbu a?"
   },
   "outbox": {
     "waiting": "Na-eche ka echekwa",

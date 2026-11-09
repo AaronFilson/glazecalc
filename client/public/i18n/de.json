@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Zum Inhalt springen",
     "main": "Hauptnavigation",
+    "breadcrumb": "Brotkrumennavigation",
     "signIn": "Anmelden",
     "menu": "Menü",
     "recipes": "Rezepte",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Ausschalten und löschen",
     "deleteBody": "Dadurch wird die Kopie Ihrer Daten von diesem Gerät gelöscht. Ihre Daten bei Glazecalc bleiben unberührt.",
     "unsentLost": "{count, plural, one {# Änderung, die noch nicht gesendet wurde, geht verloren.} other {# Änderungen, die noch nicht gesendet wurden, gehen verloren.}}",
-    "iosEviction": "Auf einem iPhone oder iPad kann Safari Daten, die auf diesem Gerät warten, nach 7 Tagen ohne Nutzung entfernen. Damit sie sicherer sind, fügen Sie Glazecalc zum Home-Bildschirm hinzu und öffnen Sie es von dort."
+    "iosEviction": "Auf einem iPhone oder iPad kann Safari Daten, die auf diesem Gerät warten, nach 7 Tagen ohne Nutzung entfernen. Damit sie sicherer sind, fügen Sie Glazecalc zum Home-Bildschirm hinzu und öffnen Sie es von dort.",
+    "keepLabel": "Offline-Daten entfernen, wenn Glazecalc nicht geöffnet wurde seit",
+    "keepNever": "Nie (behalten, bis ich sie lösche)",
+    "keepWeek": "1 Woche",
+    "keepMonth": "1 Monat",
+    "keepQuarter": "3 Monaten",
+    "keepYear": "1 Jahr",
+    "keepHint": "Gezählt ab dem letzten Mal, als Sie Glazecalc auf diesem Gerät geöffnet haben. Die Daten werden erst entfernt, wenn Sie Glazecalc hier das nächste Mal öffnen, nie im Hintergrund. Noch nicht gesendete Änderungen werden mit entfernt.",
+    "keepRemoved": "Ihre Offline-Daten auf diesem Gerät wurden entfernt, weil Glazecalc hier während der von Ihnen gewählten Zeit nicht geöffnet wurde.",
+    "notAvailable": "Offline nicht verfügbar. Verbinden Sie sich mit dem Internet, um dies zu sehen.",
+    "goneTitle": "Ihr Konto wurde gelöscht",
+    "goneBody": "Glazecalc meldet, dass dieses Konto nicht mehr existiert. Dieses Gerät enthält noch Ihre Offline-Kopie seiner Daten.",
+    "goneHint": "Sie können die Kopie zuerst als Datei exportieren. Von diesem Gerät wird nichts gelöscht, bis Sie sich entscheiden.",
+    "goneExport": "Meine Offline-Daten exportieren",
+    "goneClear": "Ohne Export löschen",
+    "goneLater": "Später",
+    "goneExported": "Die Datei wurde in Ihren Downloads gespeichert. Die Offline-Kopie jetzt von diesem Gerät löschen?"
   },
   "outbox": {
     "waiting": "Wartet auf Speicherung",

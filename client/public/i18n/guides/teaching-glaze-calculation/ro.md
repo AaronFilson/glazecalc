@@ -348,7 +348,7 @@ Label: Defecte
 | Exfolierea          | Glazura se contractă mult mai puțin decât corpul ceramic | Mai mult K₂O și Na₂O                                     |
 | Curgerea            | Prea puțină alumină sau un strat prea gros               | Mai multă alumină; un strat mai subțire                  |
 | Retragerea glazurii | Biscuit prăfuit sau un strat gros care a crăpat          | Curățați biscuitul; un strat mai subțire                 |
-| Înțepăturile        | Gaz după care glazura nu s-a închis la loc               | O menținere la temperatura maximă; un strat mai subțire  |
+| Înțepăturile        | Bulă de gaz după care glazura nu s-a închis la loc       | O menținere la temperatura maximă; un strat mai subțire  |
 
 [Compatibilitatea glazurii cu ciobul și defectele](/guides/glazing-basics#fit-and-defects) explică fiecare defect, cu testul cu apă cu gheață pentru fisurare. Nu folosiți pentru mâncare sau băutură piesele fisurate sau exfoliate.
 

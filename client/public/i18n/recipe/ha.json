@@ -1058,6 +1058,8 @@
       "temperature": "{low} zuwa {high}"
     },
     "testedAt": "An gwada a {cones}",
+    "testedOne": "Na gasa shi kuma na gwada shi a {cone}",
+    "statedUntested": "An bayyana {cone}; ba a yi masa alama a matsayin an gwada ba",
     "claimedRange": "kewayon da aka faɗa {range}",
     "rangeUntested": "Kewayo {range}; ba a yi wa wani cone alama a matsayin an gwada ba",
     "approxTemperature": "≈ {temperature} ({basis}; kusan-kusan)",

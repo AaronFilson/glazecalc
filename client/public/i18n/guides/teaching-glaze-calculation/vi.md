@@ -348,7 +348,7 @@ Label: Khuyết tật
 | Bong tróc men | Men co ít hơn xương gốm nhiều              | Nhiều K₂O và Na₂O hơn                              |
 | Chảy men      | Quá ít alumina, hoặc quá dày               | Nhiều alumina hơn; lớp men mỏng hơn                |
 | Cuốn men      | Gốm mộc nhiều bụi, hoặc lớp men dày bị nứt | Làm sạch gốm mộc; lớp men mỏng hơn                 |
-| Lỗ chân kim   | Khí chưa được men lấp liền lại             | Giữ nhiệt ở đỉnh của lần nung; lớp men mỏng hơn    |
+| Lỗ chân kim   | Bọt khí chưa được men lấp liền lại         | Giữ nhiệt ở đỉnh của lần nung; lớp men mỏng hơn    |
 
 [Độ khớp men và khuyết tật](/guides/glazing-basics#fit-and-defects) giải thích từng khuyết tật, kèm thử nghiệm nước đá cho rạn nứt men. Không dùng đồ gốm bị rạn nứt men hoặc bong tróc men cho thức ăn hay đồ uống.
 

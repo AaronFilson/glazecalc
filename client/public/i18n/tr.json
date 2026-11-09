@@ -44,6 +44,7 @@
   "nav": {
     "skip": "İçeriğe geç",
     "main": "Ana gezinme",
+    "breadcrumb": "Gezinti yolu",
     "signIn": "Oturum aç",
     "menu": "Menü",
     "recipes": "Reçeteler",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Kapat ve sil",
     "deleteBody": "Bu işlem, kayıtlarınızın kopyasını bu cihazdan siler. Glazecalc’teki kayıtlarınıza dokunulmaz.",
     "unsentLost": "{count, plural, one {Henüz gönderilmeyen # değişiklik kaybolacak.} other {Henüz gönderilmeyen # değişiklik kaybolacak.}}",
-    "iosEviction": "iPhone veya iPad’de Safari, 7 gün kullanılmazsa bu cihazda bekleyen verileri silebilir. Daha güvende tutmak için Glazecalc’i Ana Ekran’a (Home Screen) ekleyin ve oradan açın."
+    "iosEviction": "iPhone veya iPad’de Safari, 7 gün kullanılmazsa bu cihazda bekleyen verileri silebilir. Daha güvende tutmak için Glazecalc’i Ana Ekran’a (Home Screen) ekleyin ve oradan açın.",
+    "keepLabel": "Glazecalc şu süre açılmazsa internetsiz kullanım verilerini kaldır:",
+    "keepNever": "Hiçbir zaman (ben silene kadar tut)",
+    "keepWeek": "1 hafta",
+    "keepMonth": "1 ay",
+    "keepQuarter": "3 ay",
+    "keepYear": "1 yıl",
+    "keepHint": "Glazecalc'ı bu cihazda en son açtığınız zamandan itibaren sayılır. Veriler yalnızca Glazecalc'ı burada bir sonraki açışınızda kaldırılır, hiçbir zaman arka planda kaldırılmaz. Henüz gönderilmemiş değişiklikler de onunla birlikte kaldırılır.",
+    "keepRemoved": "Glazecalc burada seçtiğiniz süre boyunca açılmadığı için bu cihazdaki internetsiz kullanım verileriniz kaldırıldı.",
+    "notAvailable": "İnternet olmadan kullanılamaz. Bunu görmek için internete bağlanın.",
+    "goneTitle": "Hesabınız silindi",
+    "goneBody": "Glazecalc bu hesabın artık var olmadığını söylüyor. Bu cihaz, hesabın kayıtlarının internetsiz kullanım kopyasını hâlâ tutuyor.",
+    "goneHint": "Önce kopyayı dosya olarak dışa aktarabilirsiniz. Siz seçene kadar bu cihazdan hiçbir şey temizlenmez.",
+    "goneExport": "İnternetsiz kullanım verilerimi dışa aktar",
+    "goneClear": "Dışa aktarmadan temizle",
+    "goneLater": "Daha sonra",
+    "goneExported": "Dosya indirilenler klasörünüze kaydedildi. İnternetsiz kullanım kopyası şimdi bu cihazdan temizlensin mi?"
   },
   "outbox": {
     "waiting": "Kaydedilmeyi bekliyor",

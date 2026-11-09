@@ -7,6 +7,7 @@
   "no-token": "Ingen token ännu, så det finns ingen e-postadress att hitta. Hej då.",
   "verified": "Användaren har verifierats",
   "not-signed-in": "kunde inte autentisera användaren",
+  "account-gone": "Det här kontot finns inte längre.",
   "no-user": "Ingen användare med det id:t",
   "not-allowed": "Det är inte tillåtet att ändra en annan användare",
   "user-updated": "Användaren har uppdaterats",

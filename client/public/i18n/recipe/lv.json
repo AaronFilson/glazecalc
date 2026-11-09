@@ -1058,6 +1058,8 @@
       "temperature": "no {low} līdz {high}"
     },
     "testedAt": "Pārbaudīts, apdedzinot līdz: {cones}",
+    "testedOne": "Pārbaudīts, apdedzinot līdz: {cone}",
+    "statedUntested": "Norādīts {cone}; nav atzīmēts kā pārbaudīts",
     "claimedRange": "norādītais diapazons: {range}",
     "rangeUntested": "Diapazons: {range}; neviens konuss nav atzīmēts kā pārbaudīts",
     "approxTemperature": "≈ {temperature} ({basis}; aptuveni)",

@@ -348,7 +348,7 @@ Label: Cillado
 | Shivering | Glaze-ku aad ayuu uga yaraadaa dhoobada            | K₂O iyo Na₂O badan                                  |
 | Qulqul    | Alumina aad u yar, ama aad u qaro weyn             | Alumina badan; lakab khafiif ah                     |
 | Crawling  | Bisque boodh leh, ama lakab qaro weyn oo dillaacay | Nadiifi bisque-ka; lakab khafiif ah                 |
-| Pinholing | Gaas aan xirmin                                    | Ku sug kulaylka ugu sarreeya; lakab khafiif ah      |
+| Pinholing | Xumbo gaas ah oo aan xirmin                        | Ku sug kulaylka ugu sarreeya; lakab khafiif ah      |
 
 [Habboonaanta glaze-ka iyo cilladaha](/guides/glazing-basics#fit-and-defects) wuxuu sharaxayaa mid kasta, oo ay ku jirto tijaabada biyaha barafka ee crazing. Ha isticmaalin weelasha crazed ama shivered cunto ama cabitaan.
 

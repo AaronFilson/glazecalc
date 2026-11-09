@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Treceți la conținut",
     "main": "Principal",
+    "breadcrumb": "Cale de navigare",
     "signIn": "Conectați-vă",
     "menu": "Meniu",
     "recipes": "Rețete",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Dezactivați și ștergeți",
     "deleteBody": "Aceasta șterge de pe acest dispozitiv copia înregistrărilor dumneavoastră. Înregistrările din Glazecalc nu sunt afectate.",
     "unsentLost": "{count, plural, one {# modificare netrimisă încă va fi pierdută.} few {# modificări netrimise încă vor fi pierdute.} other {# de modificări netrimise încă vor fi pierdute.}}",
-    "iosEviction": "Pe un iPhone sau iPad, Safari poate elimina datele care așteaptă pe acest dispozitiv după 7 zile de nefolosire. Pentru mai multă siguranță, adăugați Glazecalc pe ecranul principal (Home Screen) și deschideți-l de acolo."
+    "iosEviction": "Pe un iPhone sau iPad, Safari poate elimina datele care așteaptă pe acest dispozitiv după 7 zile de nefolosire. Pentru mai multă siguranță, adăugați Glazecalc pe ecranul principal (Home Screen) și deschideți-l de acolo.",
+    "keepLabel": "Ștergeți datele pentru utilizare fără internet dacă Glazecalc nu este deschis timp de",
+    "keepNever": "Niciodată (le păstrez până le șterg)",
+    "keepWeek": "1 săptămână",
+    "keepMonth": "1 lună",
+    "keepQuarter": "3 luni",
+    "keepYear": "1 an",
+    "keepHint": "Se numără de la ultima dată când ați deschis Glazecalc pe acest dispozitiv. Datele sunt șterse doar când deschideți data viitoare Glazecalc aici, niciodată în fundal. Modificările încă netrimise sunt șterse odată cu ele.",
+    "keepRemoved": "Datele dumneavoastră pentru utilizare fără internet de pe acest dispozitiv au fost șterse deoarece Glazecalc nu a fost deschis aici pe durata aleasă de dumneavoastră.",
+    "notAvailable": "Nu este disponibil fără internet. Conectați-vă la internet ca să vedeți acest lucru.",
+    "goneTitle": "Contul dumneavoastră a fost șters",
+    "goneBody": "Glazecalc spune că acest cont nu mai există. Acest dispozitiv păstrează încă copia dumneavoastră fără internet a înregistrărilor sale.",
+    "goneHint": "Puteți exporta mai întâi copia ca fișier. Nimic nu este șters de pe acest dispozitiv până nu alegeți.",
+    "goneExport": "Exportați datele mele pentru utilizare fără internet",
+    "goneClear": "Ștergeți fără export",
+    "goneLater": "Mai târziu",
+    "goneExported": "Fișierul a fost salvat în descărcări. Ștergeți acum copia fără internet de pe acest dispozitiv?"
   },
   "outbox": {
     "waiting": "În așteptarea salvării",

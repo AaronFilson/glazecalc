@@ -1058,6 +1058,8 @@
       "temperature": "od {low} do {high}"
     },
     "testedAt": "Testowano przy {cones}",
+    "testedOne": "Testowo wypalono przy {cone}",
+    "statedUntested": "Podano {cone}; nie zaznaczono jako testowane",
     "claimedRange": "deklarowany zakres {range}",
     "rangeUntested": "Zakres {range}; żaden stożek nie jest zaznaczony jako testowany",
     "approxTemperature": "≈ {temperature} ({basis}; przybliżone)",

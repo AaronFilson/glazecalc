@@ -342,13 +342,13 @@ Label: Darba lapa 5
 Table: Defekti, cēloņi un pirmais labojums Zēgera formulā
 Label: Defekti
 
-| Defekts              | Parastais cēlonis                                   | Pirmais mēģināmais labojums                                |
-| -------------------- | --------------------------------------------------- | ---------------------------------------------------------- |
-| Matplaisas           | Glazūra saraujas vairāk nekā masa                   | Mazāk K₂O un Na₂O; vairāk kalcija, magnija oksīda vai bora |
-| Glazūras atšķelšanās | Glazūra saraujas daudz mazāk nekā masa              | Vairāk K₂O un Na₂O                                         |
-| Notecēšana           | Pārāk maz alumīnija oksīda vai pārāk bieza kārta    | Vairāk alumīnija oksīda; plānāka kārta                     |
-| Glazūras savilkšanās | Putekļains biskvīts vai bieza kārta, kas ieplaisāja | Biskvīta notīrīšana; plānāka kārta                         |
-| Adatas dūrieni       | Gāze, pēc kuras palikušie caurumiņi nav aizdzijuši  | Noturēšana apdedzināšanas maksimumā; plānāka kārta         |
+| Defekts              | Parastais cēlonis                                            | Pirmais mēģināmais labojums                                |
+| -------------------- | ------------------------------------------------------------ | ---------------------------------------------------------- |
+| Matplaisas           | Glazūra saraujas vairāk nekā masa                            | Mazāk K₂O un Na₂O; vairāk kalcija, magnija oksīda vai bora |
+| Glazūras atšķelšanās | Glazūra saraujas daudz mazāk nekā masa                       | Vairāk K₂O un Na₂O                                         |
+| Notecēšana           | Pārāk maz alumīnija oksīda vai pārāk bieza kārta             | Vairāk alumīnija oksīda; plānāka kārta                     |
+| Glazūras savilkšanās | Putekļains biskvīts vai bieza kārta, kas ieplaisāja          | Biskvīta notīrīšana; plānāka kārta                         |
+| Adatas dūrieni       | Gāzes burbuļi, pēc kuriem palikušie caurumiņi nav aizdzijuši | Noturēšana apdedzināšanas maksimumā; plānāka kārta         |
 
 [Glazūras un masas saderība un defekti](/guides/glazing-basics#fit-and-defects) skaidro katru no tiem, kā arī ledus ūdens pārbaudi matplaisām. Neizmantojiet ēdienam vai dzērienam izstrādājumus, kuriem ir matplaisas vai glazūras atšķelšanās.
 

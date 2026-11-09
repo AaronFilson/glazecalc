@@ -26,9 +26,15 @@ test('a range with the cones tested, both bands of the limits, the liner note, a
   await signUpAndSignIn(page);
   await startRecipe(page, 'Wide range');
   await page.locator('#firing-low').selectOption('6');
+  // A cone just chosen is stated, not tested: the checkbox is off and the line says so.
+  await expect(page.getByLabel("I've test-fired this at cone 6")).not.toBeChecked();
+  await expect(page.locator('.firing-claimed')).toHaveText('Stated cone 6; not ticked as tested');
+  await expect(page.locator('.firing-tested')).toHaveCount(0);
+  await page.getByLabel("I've test-fired this at cone 6").check();
+  await expect(page.locator('.firing-tested')).toHaveText('Tested at cone 6');
   await page.getByLabel('A range').check();
   await page.locator('#firing-high').selectOption('10');
-  // A tick per cone of the range; cone 6, given first as a single cone, stays tested.
+  // A tick per cone of the range; cone 6, ticked as a single cone, stays tested.
   await expect(page.locator('.firing-ticks label')).toHaveText(['cone 6', 'cone 7', 'cone 8', 'cone 9', 'cone 10']);
   await expect(page.getByLabel('cone 6', { exact: true })).toBeChecked();
   await page.getByLabel('cone 10', { exact: true }).check();
@@ -72,8 +78,9 @@ test('a range with the cones tested, both bands of the limits, the liner note, a
   await expect(page.locator('gc-notices')).toContainText('usually means reformulating it');
   await page.locator('#firing-low').selectOption('04');
   await page.getByRole('button', { name: 'Save', exact: true }).click();
+  // The new cone is only stated: the copy has not been fired at it.
   await expect(page.locator('.saved-recipe', { hasText: 'Wide range (another cone)' })).toContainText(
-    'Tested at cone 04'
+    'Stated cone 04; not ticked as tested'
   );
   // The saved list filters by cone: cone 8 is inside the first recipe's range only.
   await page.locator('#saved-cone-filter').selectOption({ label: 'cone 8' });
@@ -88,6 +95,7 @@ test("a shared recipe shows the author's own scale first, with an approximate co
   await startRecipe(page, 'Kyoto celadon');
   await page.locator('#firing-scale').selectOption('sk');
   await page.locator('#firing-low').selectOption('10');
+  await page.getByLabel("I've test-fired this at SK 10").check();
   await page.locator('#firing-atmosphere-reduction').check();
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await page.getByRole('button', { name: 'More for Kyoto celadon' }).click();
@@ -118,7 +126,7 @@ test('firing logs link both ways: a log picks its recipes, a recipe notes each r
   await page.locator('#firing-low').selectOption('5');
   await page.getByLabel('A range').check();
   await page.locator('#firing-high').selectOption('7');
-  await page.getByLabel('cone 5', { exact: true }).uncheck();
+  await expect(page.getByLabel('cone 5', { exact: true })).not.toBeChecked();
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.locator('.saved-recipe-open', { hasText: 'Shino' })).toBeVisible();
 

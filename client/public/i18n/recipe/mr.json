@@ -1058,6 +1058,8 @@
       "temperature": "{low} ते {high}"
     },
     "testedAt": "{cones} वर चाचणी केली",
+    "testedOne": "मी हे {cone} वर भाजून तपासले आहे",
+    "statedUntested": "नमूद केलेले {cone}; चाचणी केलेले म्हणून खूण केलेली नाही",
     "claimedRange": "सांगितलेली रेंज {range}",
     "rangeUntested": "रेंज {range}; कोणताही कोन चाचणी केलेला म्हणून खूण केलेला नाही",
     "approxTemperature": "≈ {temperature} ({basis}; अंदाजे)",

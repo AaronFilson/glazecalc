@@ -13,8 +13,9 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { fixed, listOf, upTo } from '../../shared/format';
 import { CATEGORY_LABELS, hasLead, statusText } from '../../shared/library-info';
+import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { StructuredData, referencePage } from '../../shared/structured-data';
+import { type Crumb, StructuredData, referencePage } from '../../shared/structured-data';
 import { SHORT_NAME } from './material-route';
 import { REFERENCE_LANGUAGE_LIST, referenceText } from './reference-text';
 import { materialNamed, materialPath } from './standard-materials';
@@ -51,9 +52,10 @@ export const hasFlux = (material: Material): boolean =>
 /** The page of a standard material: what its record says, its analysis, and its hazards. */
 @Component({
   selector: 'gc-material-info-page',
-  imports: [PageHeader, RichText, RouterLink, StructuredData, TranslocoDirective],
+  imports: [Breadcrumb, PageHeader, RichText, RouterLink, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
+    <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header [title]="material().name" [lead]="t('reference.material.lead')" />
     @if (!translated()) {
       <p class="guide-note">{{ t('reference.notTranslated') }}</p>
@@ -363,13 +365,16 @@ export class MaterialInfoPage {
       title,
       description,
       materialPath(this.material()),
-      [
-        { name: 'Glazecalc', path: '/' },
-        { name: translate('reference.materials.crumb'), path: '/materials' },
-        { name, path: materialPath(this.material()) }
-      ],
+      this.crumbs(),
       'WebPage',
       this.translated() ? this.language : 'en'
     );
   });
+
+  /** The trail to the page: what the page shows (gc-breadcrumb) and search engines read (shared/structured-data.ts). */
+  protected readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('reference.materials.crumb'), path: '/materials' },
+    { name: this.material().name, path: materialPath(this.material()) }
+  ]);
 }

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Aller au contenu",
     "main": "Principale",
+    "breadcrumb": "Fil d'Ariane",
     "signIn": "Se connecter",
     "menu": "Menu",
     "recipes": "Recettes",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Désactiver et supprimer",
     "deleteBody": "Cela supprime de cet appareil la copie de vos données. Vos données sur Glazecalc ne sont pas touchées.",
     "unsentLost": "{count, plural, one {# modification pas encore envoyée sera perdue.} many {# de modifications pas encore envoyées seront perdues.} other {# modifications pas encore envoyées seront perdues.}}",
-    "iosEviction": "Sur un iPhone ou un iPad, Safari peut supprimer les données en attente sur cet appareil après 7 jours sans utilisation. Pour les protéger davantage, ajoutez Glazecalc à votre écran d’accueil et ouvrez-le depuis là."
+    "iosEviction": "Sur un iPhone ou un iPad, Safari peut supprimer les données en attente sur cet appareil après 7 jours sans utilisation. Pour les protéger davantage, ajoutez Glazecalc à votre écran d’accueil et ouvrez-le depuis là.",
+    "keepLabel": "Effacer les données hors ligne si Glazecalc n’est pas ouvert pendant",
+    "keepNever": "Jamais (les garder jusqu’à ce que je les supprime)",
+    "keepWeek": "1 semaine",
+    "keepMonth": "1 mois",
+    "keepQuarter": "3 mois",
+    "keepYear": "1 an",
+    "keepHint": "Compté depuis la dernière fois que vous avez ouvert Glazecalc sur cet appareil. Les données ne sont effacées que lorsque vous ouvrez à nouveau Glazecalc ici, jamais en arrière-plan. Les modifications pas encore envoyées sont effacées avec elles.",
+    "keepRemoved": "Vos données hors ligne sur cet appareil ont été effacées, car Glazecalc n’a pas été ouvert ici pendant la durée que vous avez choisie.",
+    "notAvailable": "Non disponible hors ligne. Connectez-vous à Internet pour voir ceci.",
+    "goneTitle": "Votre compte a été supprimé",
+    "goneBody": "Glazecalc indique que ce compte n’existe plus. Cet appareil contient encore votre copie hors ligne de ses données.",
+    "goneHint": "Vous pouvez d’abord exporter la copie dans un fichier. Rien n’est effacé de cet appareil tant que vous n’avez pas choisi.",
+    "goneExport": "Exporter mes données hors ligne",
+    "goneClear": "Effacer sans exporter",
+    "goneLater": "Plus tard",
+    "goneExported": "Le fichier a été enregistré dans vos téléchargements. Effacer maintenant la copie hors ligne de cet appareil ?"
   },
   "outbox": {
     "waiting": "En attente d’enregistrement",

@@ -116,7 +116,9 @@ export function coneCards(
     }
     return card;
   };
-  if (stated.length <= 1) for (const cone of testedCones(block)) cardAt(cone, stated[0]);
+  // A single stated cone has its card, tested or not; a range has one for each cone ticked as tested.
+  const starting = block?.low && !block.high ? [block.low] : testedCones(block);
+  if (stated.length <= 1) for (const cone of starting) cardAt(cone, stated[0]);
   for (const place of added) if (place.cone) cardAt(place.cone, place.atmosphere);
   for (const result of results)
     cardAt(result.cone, atmosphereAt(stated, result.atmosphere, false)).summary = result.summary;

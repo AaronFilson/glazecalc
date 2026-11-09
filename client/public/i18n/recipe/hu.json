@@ -1058,6 +1058,8 @@
       "temperature": "{low}–{high}"
     },
     "testedAt": "Kipróbálva: {cones}",
+    "testedOne": "Kipróbáltam kiégetni: {cone}",
+    "statedUntested": "Megadva {cone}; nincs kipróbáltként bejelölve",
     "claimedRange": "megadott tartomány: {range}",
     "rangeUntested": "Tartomány: {range}; egyetlen gúla sincs kipróbáltként bejelölve",
     "approxTemperature": "≈ {temperature} ({basis}; közelítő)",

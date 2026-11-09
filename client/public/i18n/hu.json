@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Ugrás a tartalomhoz",
     "main": "Fő navigáció",
+    "breadcrumb": "Navigációs útvonal",
     "signIn": "Bejelentkezés",
     "menu": "Menü",
     "recipes": "Receptek",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Kikapcsolás és törlés",
     "deleteBody": "Ezzel törli az adatai másolatát erről az eszközről. A Glazecalcban tárolt adatait ez nem érinti.",
     "unsentLost": "{count, plural, one {# még el nem küldött módosítás elvész.} other {# még el nem küldött módosítás elvész.}}",
-    "iosEviction": "iPhone-on vagy iPaden a Safari 7 nap használat nélkül eltávolíthatja az ezen az eszközön várakozó adatokat. A biztonságosabb megőrzéshez adja hozzá a Glazecalcot a Főképernyőhöz, és onnan nyissa meg."
+    "iosEviction": "iPhone-on vagy iPaden a Safari 7 nap használat nélkül eltávolíthatja az ezen az eszközön várakozó adatokat. A biztonságosabb megőrzéshez adja hozzá a Glazecalcot a Főképernyőhöz, és onnan nyissa meg.",
+    "keepLabel": "Offline adatok eltávolítása, ha a Glazecalc nincs megnyitva ennyi ideig:",
+    "keepNever": "Soha (maradjanak meg, amíg nem törlöm őket)",
+    "keepWeek": "1 hét",
+    "keepMonth": "1 hónap",
+    "keepQuarter": "3 hónap",
+    "keepYear": "1 év",
+    "keepHint": "Attól számítva, hogy utoljára mikor nyitotta meg a Glazecalcot ezen az eszközön. Az adatok csak akkor törlődnek, amikor legközelebb itt megnyitja a Glazecalcot, a háttérben soha. A még el nem küldött módosítások is törlődnek velük.",
+    "keepRemoved": "Az offline adatai ezen az eszközön el lettek távolítva, mert a Glazecalc nem volt itt megnyitva az Ön által választott ideig.",
+    "notAvailable": "Offline nem érhető el. Ennek megtekintéséhez csatlakozzon az internethez.",
+    "goneTitle": "A fiókja törölve lett",
+    "goneBody": "A Glazecalc szerint ez a fiók már nem létezik. Ezen az eszközön még megvan az adatainak offline másolata.",
+    "goneHint": "A másolatot előbb exportálhatja fájlba. Semmi sem törlődik erről az eszközről, amíg Ön nem dönt.",
+    "goneExport": "Offline adataim exportálása",
+    "goneClear": "Törlés exportálás nélkül",
+    "goneLater": "Később",
+    "goneExported": "A fájl mentve lett a letöltések közé. Törli most az offline másolatot erről az eszközről?"
   },
   "outbox": {
     "waiting": "Mentésre vár",

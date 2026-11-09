@@ -7,6 +7,7 @@
   "no-token": "Nog geen token nie, so daar is geen e-pos om te vind nie. Totsiens.",
   "verified": "Gebruiker geverifieer",
   "not-signed-in": "kon nie gebruiker verifieer nie",
+  "account-gone": "Hierdie rekening bestaan nie meer nie.",
   "no-user": "Geen gebruiker met daardie id nie",
   "not-allowed": "Nie toegelaat om 'n ander gebruiker te verander nie",
   "user-updated": "Gebruiker opgedateer",

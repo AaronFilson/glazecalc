@@ -1058,6 +1058,8 @@
       "temperature": "{low} থেকে {high}"
     },
     "testedAt": "পরীক্ষিত: {cones}",
+    "testedOne": "আমি এটি {cone}-এ পুড়িয়ে পরীক্ষা করেছি",
+    "statedUntested": "উল্লেখিত {cone}; পরীক্ষিত হিসেবে টিক দেওয়া নেই",
     "claimedRange": "দাবি করা পরিসর {range}",
     "rangeUntested": "পরিসর {range}; কোনো শঙ্কু পরীক্ষিত হিসেবে টিক দেওয়া নেই",
     "approxTemperature": "≈ {temperature} ({basis}; আনুমানিক)",

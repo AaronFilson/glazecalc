@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Saltar para o conteúdo",
     "main": "Principal",
+    "breadcrumb": "Caminho de navegação",
     "signIn": "Iniciar sessão",
     "menu": "Menu",
     "recipes": "Receitas",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Desativar e eliminar",
     "deleteBody": "Isto elimina deste dispositivo a cópia dos seus registos. Os seus registos no Glazecalc não são afetados.",
     "unsentLost": "{count, plural, one {# alteração ainda não enviada será perdida.} many {# de alterações ainda não enviadas serão perdidas.} other {# alterações ainda não enviadas serão perdidas.}}",
-    "iosEviction": "No iPhone ou iPad, o Safari pode remover os dados que aguardam neste dispositivo após 7 dias sem utilização. Para os manter mais seguros, adicione o Glazecalc ao Ecrã principal e abra-o a partir daí."
+    "iosEviction": "No iPhone ou iPad, o Safari pode remover os dados que aguardam neste dispositivo após 7 dias sem utilização. Para os manter mais seguros, adicione o Glazecalc ao Ecrã principal e abra-o a partir daí.",
+    "keepLabel": "Remover os dados offline se o Glazecalc não for aberto durante",
+    "keepNever": "Nunca (manter até eu eliminar)",
+    "keepWeek": "1 semana",
+    "keepMonth": "1 mês",
+    "keepQuarter": "3 meses",
+    "keepYear": "1 ano",
+    "keepHint": "Contado a partir da última vez que abriu o Glazecalc neste dispositivo. Os dados só são removidos quando abrir o Glazecalc aqui da próxima vez, nunca em segundo plano. As alterações ainda não enviadas são removidas com eles.",
+    "keepRemoved": "Os seus dados offline neste dispositivo foram removidos porque o Glazecalc não foi aberto aqui durante o tempo que escolheu.",
+    "notAvailable": "Não disponível offline. Ligue-se à internet para ver isto.",
+    "goneTitle": "A sua conta foi eliminada",
+    "goneBody": "O Glazecalc indica que esta conta já não existe. Este dispositivo ainda guarda a sua cópia offline dos registos dela.",
+    "goneHint": "Pode exportar primeiro a cópia como ficheiro. Nada é apagado deste dispositivo até escolher.",
+    "goneExport": "Exportar os meus dados offline",
+    "goneClear": "Apagar sem exportar",
+    "goneLater": "Mais tarde",
+    "goneExported": "O ficheiro foi guardado nas suas transferências. Apagar agora a cópia offline deste dispositivo?"
   },
   "outbox": {
     "waiting": "A aguardar para guardar",

@@ -348,7 +348,7 @@ Label: Defectos
 | Desconchado | El esmalte se contrae mucho menos que la pasta       | Más K₂O y Na₂O                                              |
 | Escurrido   | Muy poca alúmina, o una capa demasiado gruesa        | Más alúmina; una capa más fina                              |
 | Recogido    | Bizcocho con polvo, o una capa gruesa que se agrietó | Limpiar el bizcocho; una capa más fina                      |
-| Pinchados   | Gas cuyas marcas no llegaron a cerrarse              | Un mantenimiento a la temperatura máxima; una capa más fina |
+| Pinchados   | Burbujas de gas cuyas marcas no llegaron a cerrarse  | Un mantenimiento a la temperatura máxima; una capa más fina |
 
 [Acoplamiento esmalte-pasta y defectos](/guides/glazing-basics#fit-and-defects) explica cada uno, con la prueba del agua helada para el cuarteado. No use piezas cuarteadas ni desconchadas para comida ni bebida.
 

@@ -3,6 +3,7 @@ import { ActivatedRoute, ActivatedRouteSnapshot, convertToParamMap, provideRoute
 import { of } from 'rxjs';
 import fixtureFile from '../../../../data/famous-glazes/fixtures/fixture-celadon.json';
 import iznikFile from '../../../../data/famous-glazes/iznik.json';
+import oribeFile from '../../../../data/famous-glazes/oribe.json';
 import { Additive } from '../../core/models';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
@@ -51,7 +52,35 @@ const iznik = {
   }
 } as unknown as FamousGlaze;
 
+const oribeWith = (lines: { material: string; amount: number }[]) =>
+  ({
+    ...oribeFile,
+    lead: false,
+    analysis: null,
+    leadFree: null,
+    recipe: {
+      ...oribeFile.recipe,
+      lines: lines.map((line) => ({ record: standard(line.material), amount: line.amount })),
+      additives: [{ record: additive('Copper oxide', 'CuO'), amount: 5 }]
+    }
+  }) as unknown as FamousGlaze;
+
 describe('a famous glaze worked out', () => {
+  it("has Oribe's unity formula match the Mie report's stated one without the talc, and add magnesia with it", () => {
+    const lines = oribeFile.recipe.lines;
+    const near = (value: number | undefined, wanted: number, within: number) =>
+      expect(Math.abs((value ?? 0) - wanted)).toBeLessThan(within);
+    const without = nativeUnity(oribeWith(lines.filter((line) => line.material !== 'Talc')))!;
+    near((without['K2O'] ?? 0) + (without['Na2O'] ?? 0), 0.3, 0.02);
+    near(without['CaO'], 0.7, 0.02);
+    near(without['Al2O3'], 0.5, 0.02);
+    near(without['SiO2'], 3.5, 0.15);
+    const withTalc = nativeUnity(oribeWith(lines))!;
+    near(withTalc['MgO'], 0.13, 0.02);
+    near(withTalc['CaO'], 0.62, 0.02);
+    near(withTalc['SiO2'], 3.15, 0.05);
+  });
+
   it('has its native unity formula, and a version from the materials sold in a region', () => {
     const unity = nativeUnity(fixture)!;
     expect(unity['CaO']! + unity['K2O']! + unity['Na2O']!).toBeGreaterThan(0.9);
@@ -122,6 +151,8 @@ describe("a famous glaze's route", () => {
 
 describe("a famous glaze's page", () => {
   const render = async (glaze: FamousGlaze, language = 'en') => {
+    // A session another spec left in localStorage would hide the sign-up link.
+    localStorage.clear();
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [

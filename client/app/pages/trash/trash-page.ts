@@ -4,7 +4,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from '../../core/api-base';
-import { errorMessage } from '../../core/error-message';
+import { errorMessage, isOffline } from '../../core/error-message';
 import { OfflineRecords } from '../../core/offline-records';
 import { Busy } from '../../shared/busy';
 import { DatePipe } from '../../shared/format-pipes';
@@ -183,8 +183,8 @@ export class TrashPage implements OnInit {
   async ngOnInit(): Promise<void> {
     try {
       this.entries.set(await firstValueFrom(this.http.get<TrashEntry[]>(this.url + '/getAll')));
-    } catch {
-      this.notices.error(translate('notebook.trash.fetchFailed'));
+    } catch (err) {
+      this.notices.error(isOffline(err) ? translate('offline.notAvailable') : translate('notebook.trash.fetchFailed'));
     } finally {
       this.loaded.set(true);
     }

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Naar de inhoud",
     "main": "Hoofdmenu",
+    "breadcrumb": "Kruimelpad",
     "signIn": "Inloggen",
     "menu": "Menu",
     "recipes": "Recepten",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Uitschakelen en verwijderen",
     "deleteBody": "Hiermee verwijdert u de kopie van uw gegevens van dit apparaat. Uw gegevens bij Glazecalc blijven ongemoeid.",
     "unsentLost": "{count, plural, one {# wijziging die nog niet is verzonden, gaat verloren.} other {# wijzigingen die nog niet zijn verzonden, gaan verloren.}}",
-    "iosEviction": "Op een iPhone of iPad kan Safari gegevens die op dit apparaat wachten verwijderen na 7 dagen zonder gebruik. Zet Glazecalc op uw beginscherm en open het van daaruit om ze beter te beschermen."
+    "iosEviction": "Op een iPhone of iPad kan Safari gegevens die op dit apparaat wachten verwijderen na 7 dagen zonder gebruik. Zet Glazecalc op uw beginscherm en open het van daaruit om ze beter te beschermen.",
+    "keepLabel": "Offline gegevens verwijderen als Glazecalc niet is geopend gedurende",
+    "keepNever": "Nooit (bewaren tot ik ze verwijder)",
+    "keepWeek": "1 week",
+    "keepMonth": "1 maand",
+    "keepQuarter": "3 maanden",
+    "keepYear": "1 jaar",
+    "keepHint": "Gerekend vanaf de laatste keer dat u Glazecalc op dit apparaat hebt geopend. De gegevens worden pas verwijderd wanneer u Glazecalc hier de volgende keer opent, nooit op de achtergrond. Wijzigingen die nog niet zijn verzonden, worden ook verwijderd.",
+    "keepRemoved": "Uw offline gegevens op dit apparaat zijn verwijderd omdat Glazecalc hier niet is geopend gedurende de tijd die u hebt gekozen.",
+    "notAvailable": "Niet offline beschikbaar. Maak verbinding met internet om dit te zien.",
+    "goneTitle": "Uw account is verwijderd",
+    "goneBody": "Glazecalc meldt dat dit account niet meer bestaat. Dit apparaat bevat nog uw offline kopie van de gegevens ervan.",
+    "goneHint": "U kunt de kopie eerst als bestand exporteren. Er wordt niets van dit apparaat gewist totdat u een keuze maakt.",
+    "goneExport": "Mijn offline gegevens exporteren",
+    "goneClear": "Wissen zonder te exporteren",
+    "goneLater": "Later",
+    "goneExported": "Het bestand is opgeslagen in uw downloads. De offline kopie nu van dit apparaat wissen?"
   },
   "outbox": {
     "waiting": "Wacht op opslaan",

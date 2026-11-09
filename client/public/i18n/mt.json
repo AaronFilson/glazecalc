@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Aqbeż għall-kontenut",
     "main": "Prinċipali",
+    "breadcrumb": "Rotta tan-navigazzjoni",
     "signIn": "Idħol",
     "menu": "Menù",
     "recipes": "Riċetti",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Itfi u ħassar",
     "deleteBody": "Dan iħassar il-kopja tar-rekords tiegħek minn dan l-apparat. Ir-rekords tiegħek fuq Glazecalc ma jiġux mittiefsa.",
     "unsentLost": "{count, plural, one {# tibdila li għadha ma ntbagħtitx se tintilef.} two {# tibdiliet li għadhom ma ntbagħtux se jintilfu.} few {# tibdiliet li għadhom ma ntbagħtux se jintilfu.} many {#-il tibdila li għadhom ma ntbagħtux se jintilfu.} other {# tibdila li għadha ma ntbagħtitx se tintilef.}}",
-    "iosEviction": "Fuq iPhone jew iPad, Safari jista’ jneħħi d-data li tkun qed tistenna fuq dan l-apparat wara 7 ijiem mingħajr użu. Biex iżżommha aktar sikura, żid Glazecalc mal-Home Screen u iftaħha minn hemm."
+    "iosEviction": "Fuq iPhone jew iPad, Safari jista’ jneħħi d-data li tkun qed tistenna fuq dan l-apparat wara 7 ijiem mingħajr użu. Biex iżżommha aktar sikura, żid Glazecalc mal-Home Screen u iftaħha minn hemm.",
+    "keepLabel": "Ħassar id-data offline jekk Glazecalc ma jinfetaħx għal",
+    "keepNever": "Qatt (żommha sakemm inħassarha)",
+    "keepWeek": "1 ġimgħa",
+    "keepMonth": "1 xahar",
+    "keepQuarter": "3 xhur",
+    "keepYear": "1 sena",
+    "keepHint": "Jingħadd mill-aħħar darba li ftaħt Glazecalc fuq dan l-apparat. Id-data titħassar biss meta terġa’ tiftaħ Glazecalc hawn, qatt fl-isfond. It-tibdiliet li għadhom ma ntbagħtux jitħassru magħha.",
+    "keepRemoved": "Id-data offline tiegħek fuq dan l-apparat tħassret għax Glazecalc ma nfetaħx hawn għaż-żmien li għażilt.",
+    "notAvailable": "Mhux disponibbli offline. Qabbad mal-internet biex tara dan.",
+    "goneTitle": "Il-kont tiegħek tħassar",
+    "goneBody": "Glazecalc jgħid li dan il-kont m’għadux jeżisti. Dan l-apparat għad għandu l-kopja offline tiegħek tar-rekords tiegħu.",
+    "goneHint": "Tista’ tesporta l-kopja bħala fajl l-ewwel. Xejn ma jitħassar minn dan l-apparat sakemm tagħżel.",
+    "goneExport": "Esporta d-data offline tiegħi",
+    "goneClear": "Ħassar mingħajr ma tesporta",
+    "goneLater": "Iktar tard",
+    "goneExported": "Il-fajl ġie ssejvjat fid-downloads tiegħek. Tħassar il-kopja offline minn dan l-apparat issa?"
   },
   "outbox": {
     "waiting": "Qed jistenna biex jissejvja",

@@ -348,7 +348,7 @@ Label: Máchaillí
 | Spallú glónra{{en: shivering}}  | Crapann an glónra i bhfad níos lú ná an cré-ábhar  | Níos mó K₂O agus Na₂O                                      |
 | Rith                            | Ró-bheagán alúmana, nó róthiubh                    | Níos mó alúmana; brat níos tanaí                           |
 | Snámh{{en: crawling}}           | Brioscghréithe deannachúla, nó brat tiubh a scoilt | Glan na brioscghréithe; brat níos tanaí                    |
-| Poill bhioráin{{en: pinholing}} | Gás nár chneasaigh                                 | Coinneáil ag buaicteocht na bácála; brat níos tanaí        |
+| Poill bhioráin{{en: pinholing}} | Builgín gáis nár chneasaigh                        | Coinneáil ag buaicteocht na bácála; brat níos tanaí        |
 
 Míníonn an roinn [Oiriúint ghlónra agus máchaillí](/guides/glazing-basics#fit-and-defects) gach ceann acu, leis an tástáil uisce oighir don snáithlíonrú. Ná húsáid gréithe snáithlíonraithe ná gréithe a bhfuil spallú glónra orthu do bhia ná do dheoch.
 

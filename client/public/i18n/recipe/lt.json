@@ -1058,6 +1058,8 @@
       "temperature": "nuo {low} iki {high}"
     },
     "testedAt": "Išbandyta: {cones}",
+    "testedOne": "Išbandyta degant iki {cone}",
+    "statedUntested": "Nurodyta {cone}; nepažymėta kaip išbandyta",
     "claimedRange": "nurodytas intervalas {range}",
     "rangeUntested": "Intervalas {range}; nė vienas piroskopas nepažymėtas kaip išbandytas",
     "approxTemperature": "≈ {temperature} ({basis}; apytiksliai)",

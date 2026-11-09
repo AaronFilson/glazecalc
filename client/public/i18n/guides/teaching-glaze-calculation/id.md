@@ -348,7 +348,7 @@ Label: Cacat
 | Mengelupas (shivering) | Glasir menyusut jauh lebih sedikit daripada bodi | Tambah K₂O dan Na₂O                                        |
 | Mengalir               | Alumina terlalu sedikit, atau terlalu tebal      | Tambah alumina; lapisan lebih tipis                        |
 | Menggumpal             | Biskuit berdebu, atau lapisan tebal yang retak   | Bersihkan biskuit; lapisan lebih tipis                     |
-| Lubang jarum           | Gas yang tidak menutup kembali                   | Tahan di puncak pembakaran; lapisan lebih tipis            |
+| Lubang jarum           | Gelembung gas yang tidak menutup kembali         | Tahan di puncak pembakaran; lapisan lebih tipis            |
 
 [Kecocokan glasir dan cacat](/guides/glazing-basics#fit-and-defects) menjelaskan masing-masing, dengan uji air es untuk retak halus. Jangan pakai benda yang retak halus atau mengelupas untuk makanan atau minuman.
 

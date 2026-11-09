@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Pāriet uz saturu",
     "main": "Galvenā izvēlne",
+    "breadcrumb": "Navigācijas ceļš",
     "signIn": "Pierakstīties",
     "menu": "Izvēlne",
     "recipes": "Receptes",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Izslēgt un dzēst",
     "deleteBody": "Tiks dzēsta jūsu ierakstu kopija no šīs ierīces. Jūsu ieraksti Glazecalc netiek skarti.",
     "unsentLost": "{count, plural, zero {Tiks zaudētas # vēl nenosūtītas izmaiņas.} one {Tiks zaudēta # vēl nenosūtīta izmaiņa.} other {Tiks zaudētas # vēl nenosūtītas izmaiņas.}}",
-    "iosEviction": "iPhone vai iPad ierīcē Safari var noņemt šajā ierīcē gaidošos datus pēc 7 dienām bez lietošanas. Lai tie būtu drošāk, pievienojiet Glazecalc sākuma ekrānam un atveriet to no turienes."
+    "iosEviction": "iPhone vai iPad ierīcē Safari var noņemt šajā ierīcē gaidošos datus pēc 7 dienām bez lietošanas. Lai tie būtu drošāk, pievienojiet Glazecalc sākuma ekrānam un atveriet to no turienes.",
+    "keepLabel": "Noņemt bezsaistes datus, ja Glazecalc netiek atvērts",
+    "keepNever": "Nekad (glabāt, līdz es tos izdzēšu)",
+    "keepWeek": "1 nedēļu",
+    "keepMonth": "1 mēnesi",
+    "keepQuarter": "3 mēnešus",
+    "keepYear": "1 gadu",
+    "keepHint": "Laiku skaita no brīža, kad pēdējo reizi atvērāt Glazecalc šajā ierīcē. Dati tiek noņemti tikai tad, kad nākamreiz šeit atverat Glazecalc, nekad fonā. Kopā ar tiem tiek noņemtas arī vēl nenosūtītās izmaiņas.",
+    "keepRemoved": "Jūsu bezsaistes dati šajā ierīcē tika noņemti, jo Glazecalc šeit netika atvērts jūsu izvēlēto laiku.",
+    "notAvailable": "Nav pieejams bezsaistē. Lai to redzētu, izveidojiet savienojumu ar internetu.",
+    "goneTitle": "Jūsu konts tika izdzēsts",
+    "goneBody": "Glazecalc norāda, ka šis konts vairs nepastāv. Šajā ierīcē joprojām ir jūsu tā ierakstu bezsaistes kopija.",
+    "goneHint": "Vispirms kopiju varat eksportēt failā. No šīs ierīces nekas netiek dzēsts, kamēr neizvēlaties.",
+    "goneExport": "Eksportēt manus bezsaistes datus",
+    "goneClear": "Dzēst bez eksportēšanas",
+    "goneLater": "Vēlāk",
+    "goneExported": "Fails tika saglabāts jūsu lejupielādēs. Vai dzēst bezsaistes kopiju no šīs ierīces tagad?"
   },
   "outbox": {
     "waiting": "Gaida saglabāšanu",

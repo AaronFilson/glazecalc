@@ -348,7 +348,7 @@ Label: Amaphutha
 | I-shivering | I-glaze incipha kancane kakhulu kunobumba                | I-K₂O ne-Na₂O eningi                                            |
 | Ukugeleza   | I-alumina encane kakhulu, noma ishubile kakhulu          | I-alumina eningi; ungqimba oluncane                             |
 | I-crawling  | I-bisque enothuli, noma ungqimba olushubile oluqhekekile | Hlanza i-bisque; ungqimba oluncane                              |
-| I-pinholing | Igesi engazange ivalwe                                   | Ukulinda ezingeni eliphezulu lokushisa; ungqimba oluncane       |
+| I-pinholing | Ibhamuza legesi elingazange livalwe                      | Ukulinda ezingeni eliphezulu lokushisa; ungqimba oluncane       |
 
 [Ukulingana kwe-glaze namaphutha](/guides/glazing-basics#fit-and-defects) kuchaza ngalinye, kanye nesivivinyo samanzi eqhwa se-crazing. Ungasebenzisi izitsha ezine-crazing noma i-shivering ekudleni noma esiphuzweni.
 

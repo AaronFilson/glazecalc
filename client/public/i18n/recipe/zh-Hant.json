@@ -1058,6 +1058,8 @@
       "temperature": "{low} 至 {high}"
     },
     "testedAt": "測試過的錐號：{cones}",
+    "testedOne": "我已在{cone}試燒過",
+    "statedUntested": "標註為{cone}；未勾選為測試過",
     "claimedRange": "標稱範圍 {range}",
     "rangeUntested": "範圍 {range}；未勾選任何測試過的錐號",
     "approxTemperature": "≈ {temperature}（{basis}；近似值）",

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Spring til indholdet",
     "main": "Hovedmenu",
+    "breadcrumb": "Brødkrummesti",
     "signIn": "Log ind",
     "menu": "Menu",
     "recipes": "Opskrifter",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Slå fra og slet",
     "deleteBody": "Det sletter kopien af dine data fra denne enhed. Dine data på Glazecalc bliver ikke berørt.",
     "unsentLost": "{count, plural, one {# ændring, der ikke er sendt endnu, går tabt.} other {# ændringer, der ikke er sendt endnu, går tabt.}}",
-    "iosEviction": "På en iPhone eller iPad kan Safari fjerne data, der venter på denne enhed, efter 7 dage uden brug. For at holde dem mere sikre kan du føje Glazecalc til din hjemmeskærm og åbne den derfra."
+    "iosEviction": "På en iPhone eller iPad kan Safari fjerne data, der venter på denne enhed, efter 7 dage uden brug. For at holde dem mere sikre kan du føje Glazecalc til din hjemmeskærm og åbne den derfra.",
+    "keepLabel": "Fjern offline-data, hvis Glazecalc ikke er åbnet i",
+    "keepNever": "Aldrig (behold dem, til jeg sletter dem)",
+    "keepWeek": "1 uge",
+    "keepMonth": "1 måned",
+    "keepQuarter": "3 måneder",
+    "keepYear": "1 år",
+    "keepHint": "Regnes fra sidste gang, du åbnede Glazecalc på denne enhed. Dataene fjernes først, når du næste gang åbner Glazecalc her, aldrig i baggrunden. Ændringer, der ikke er sendt endnu, fjernes sammen med dem.",
+    "keepRemoved": "Dine offline-data på denne enhed blev fjernet, fordi Glazecalc ikke blev åbnet her i den tid, du valgte.",
+    "notAvailable": "Ikke tilgængelig offline. Opret forbindelse til internettet for at se dette.",
+    "goneTitle": "Din konto blev slettet",
+    "goneBody": "Glazecalc oplyser, at denne konto ikke længere findes. Denne enhed har stadig din offline-kopi af dens data.",
+    "goneHint": "Du kan først eksportere kopien som en fil. Intet ryddes fra denne enhed, før du vælger.",
+    "goneExport": "Eksportér mine offline-data",
+    "goneClear": "Ryd uden at eksportere",
+    "goneLater": "Senere",
+    "goneExported": "Filen blev gemt i dine overførsler. Vil du rydde offline-kopien fra denne enhed nu?"
   },
   "outbox": {
     "waiting": "Venter på at blive gemt",

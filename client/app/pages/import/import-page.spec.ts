@@ -172,7 +172,7 @@ describe('ImportPage', () => {
     expect(drafts.map((d) => [d.title, d.firedAt ?? null])).toEqual([
       ['Red', null],
       ['Salt', null],
-      ['Cone 6 Wood', { scale: 'orton', low: '6', tested: ['6'], processes: ['wood'] }]
+      ['Cone 6 Wood', { scale: 'orton', low: '6', processes: ['wood'] }]
     ]);
     expect(text(fixture, '.import-firing')).toContain('cone 6');
   });

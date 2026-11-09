@@ -1058,6 +1058,8 @@
       "temperature": "{low} bis {high}"
     },
     "testedAt": "Getestet bei {cones}",
+    "testedOne": "Ich habe sie bei {cone} testgebrannt",
+    "statedUntested": "Angegeben {cone}; nicht als getestet angehakt",
     "claimedRange": "angegebener Bereich {range}",
     "rangeUntested": "Bereich {range}; kein Kegel als getestet angehakt",
     "approxTemperature": "≈ {temperature} ({basis}; ungefähr)",

@@ -44,6 +44,7 @@
   "nav": {
     "skip": "Ruka hadi kwenye maudhui",
     "main": "Kuu",
+    "breadcrumb": "Njia ya urambazaji",
     "signIn": "Ingia",
     "menu": "Menyu",
     "recipes": "Vichocheo",
@@ -114,7 +115,23 @@
     "turnOffConfirm": "Zima na ufute",
     "deleteBody": "Hii inafuta nakala ya rekodi zako kutoka kwenye kifaa hiki. Rekodi zako kwenye Glazecalc haziguswi.",
     "unsentLost": "{count, plural, one {Badiliko # ambalo bado halijatumwa litapotea.} other {Mabadiliko # ambayo bado hayajatumwa yatapotea.}}",
-    "iosEviction": "Kwenye iPhone au iPad, Safari inaweza kuondoa data inayosubiri kwenye kifaa hiki baada ya siku 7 bila kutumika. Ili iwe salama zaidi, ongeza Glazecalc kwenye Skrini ya Kwanza (Home Screen) na uifungue kutoka hapo."
+    "iosEviction": "Kwenye iPhone au iPad, Safari inaweza kuondoa data inayosubiri kwenye kifaa hiki baada ya siku 7 bila kutumika. Ili iwe salama zaidi, ongeza Glazecalc kwenye Skrini ya Kwanza (Home Screen) na uifungue kutoka hapo.",
+    "keepLabel": "Ondoa data ya kutumia bila intaneti ikiwa Glazecalc haijafunguliwa kwa",
+    "keepNever": "Kamwe (ihifadhi hadi niifute)",
+    "keepWeek": "Wiki 1",
+    "keepMonth": "Mwezi 1",
+    "keepQuarter": "Miezi 3",
+    "keepYear": "Mwaka 1",
+    "keepHint": "Huhesabiwa kuanzia mara ya mwisho ulipofungua Glazecalc kwenye kifaa hiki. Data huondolewa tu utakapofungua Glazecalc hapa wakati ujao, kamwe si chinichini. Mabadiliko ambayo bado hayajatumwa huondolewa pamoja nayo.",
+    "keepRemoved": "Data yako ya kutumia bila intaneti kwenye kifaa hiki iliondolewa kwa sababu Glazecalc haikufunguliwa hapa kwa muda uliochagua.",
+    "notAvailable": "Haipatikani bila intaneti. Unganisha kwenye intaneti ili kuona hiki.",
+    "goneTitle": "Akaunti yako ilifutwa",
+    "goneBody": "Glazecalc inasema akaunti hii haipo tena. Kifaa hiki bado kina nakala yako ya rekodi zake ya kutumia bila intaneti.",
+    "goneHint": "Unaweza kuhamisha nakala kama faili kwanza. Hakuna kinachofutwa kwenye kifaa hiki hadi uchague.",
+    "goneExport": "Hamisha data yangu ya kutumia bila intaneti",
+    "goneClear": "Futa bila kuhamisha",
+    "goneLater": "Baadaye",
+    "goneExported": "Faili limehifadhiwa kwenye vipakuliwa vyako. Ufute nakala ya kutumia bila intaneti kwenye kifaa hiki sasa?"
   },
   "outbox": {
     "waiting": "Inasubiri kuhifadhiwa",

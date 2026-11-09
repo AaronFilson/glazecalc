@@ -7,6 +7,7 @@
   "no-token": "Chưa có mã thông báo, nên không có email để tìm. Tạm biệt.",
   "verified": "Đã xác minh người dùng",
   "not-signed-in": "không thể xác thực người dùng",
+  "account-gone": "Tài khoản này không còn tồn tại.",
   "no-user": "Không có người dùng nào với id đó",
   "not-allowed": "Không được phép thay đổi người dùng khác",
   "user-updated": "Đã cập nhật người dùng",

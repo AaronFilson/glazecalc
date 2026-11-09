@@ -348,7 +348,7 @@ Label: Greške
 | Ljuštenje glazure  | Glazura se skuplja mnogo manje od keramičke mase | Više K₂O i Na₂O                                         |
 | Curenje glazure    | Premalo glinice ili predebeo sloj                | Više glinice; tanji sloj                                |
 | Povlačenje glazure | Prašnjav biskvit ili debeo sloj koji je napukao  | Očistite biskvit; tanji sloj                            |
-| Rupičavost         | Rupice od plina koje se nisu zatvorile           | Zadržavanje na najvišoj temperaturi pečenja; tanji sloj |
+| Rupičavost         | Mjehurići plina čije se rupice nisu zatvorile    | Zadržavanje na najvišoj temperaturi pečenja; tanji sloj |
 
 [Usklađenost glazure i greške](/guides/glazing-basics#fit-and-defects) objašnjava svaku od njih, s testom ledenom vodom za pucanje glazure. Predmete s pucanjem ili ljuštenjem glazure nemojte koristiti za hranu i piće.
 
