@@ -348,7 +348,7 @@ Label: Defeitos
 | Descasque do vidrado    | O vidrado retrai muito menos do que a pasta      | Mais K₂O e Na₂O                                      |
 | Escorrimento            | Pouca alumina, ou camada demasiado espessa       | Mais alumina; uma camada mais fina                   |
 | Recolhimento do vidrado | Chacota com pó, ou uma camada espessa que fendeu | Limpar a chacota; uma camada mais fina               |
-| Picado                  | Gás que não chegou a fechar-se                   | Um patamar no topo da cozedura; uma camada mais fina |
+| Picado                  | Bolha de gás que não chegou a fechar-se          | Um patamar no topo da cozedura; uma camada mais fina |
 
 [Acordo pasta-vidrado e defeitos](/guides/glazing-basics#fit-and-defects) explica cada um, com o teste da água gelada para o fendilhamento. Não use peças com fendilhamento ou com descasque do vidrado para alimentos ou bebidas.
 

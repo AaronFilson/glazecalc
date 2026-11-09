@@ -348,7 +348,7 @@ Label: Ntụpọ
 | Shivering | Glaze na-ebelata obere karịa ụrọ nke ukwuu                         | Tinye K₂O na Na₂O karịa                                         |
 | Ịsọ       | Alumina dị obere nke ukwuu, ma ọ bụ mkpuchi dị ọkpụrụkpụ nke ukwuu | Tinye alumina karịa; mkpuchi dị gịrịgịrị                        |
 | Crawling  | Bisque nwere uzuzu, ma ọ bụ mkpuchi dị ọkpụrụkpụ nke gbawara       | Hichaa bisque; mkpuchi dị gịrịgịrị                              |
-| Pinholes  | Gas nke glaze emechibeghị oghere ya                                | Nchere na ọkụ kacha elu nke ịgba ọkụ; mkpuchi dị gịrịgịrị       |
+| Pinholes  | Ụfụfụ gas nke glaze emechibeghị oghere ya                          | Nchere na ọkụ kacha elu nke ịgba ọkụ; mkpuchi dị gịrịgịrị       |
 
 [Ndabakọ glaze na ntụpọ](/guides/glazing-basics#fit-and-defects) na-akọwa nke ọ bụla, ya na nnwale mmiri jụrụ oyi maka crazing. Ejila ite nwere crazing ma ọ bụ shivering maka nri ma ọ bụ ihe ọṅụṅụ.
 

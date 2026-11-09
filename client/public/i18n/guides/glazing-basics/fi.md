@@ -127,15 +127,15 @@ Kaasun, joka poistuu lasitteen alettua sulaa, on kuplittava sen läpi, mikä aih
 
 Vanhemmissa kirjoissa nämä laskut tehdään käsin **moolimassan** (raaka-aineen tai oksidin yhden moolin paino) ja **ekvivalenttipainon** (sen raaka-ainemäärän paino, joka tuo yhden moolin oksidia) avulla. Oman laskumme mukaan noin 100 g liitua tuo yhden moolin, 56 g, kalsiumoksidia. Laskin hoitaa molemmat.
 
-## Rajat ja Stullin kaavio {#stull-chart}
+## Rajat ja Stullin kartta {#stull-chart}
 
-**Stullin kaavio**{{en: Stull chart}} on lasitteiden kartta. Siinä on kaksi akselia, molemmat Segerin kaavasta: piidioksidi (SiO₂) vaakasuunnassa alareunassa ja alumiinioksidi (Al₂O₃) pystysuunnassa sivulla. Kukin lasite on yksi piste. Kartta on jaettu alueisiin, kuten matta, kiiltävä, alipoltettu ja säröillyt. Glazecalcin [reseptisivu](/recipe) piirtää oman lasitteen siihen.
+**Stullin kartta**{{en: Stull chart}} on lasitteiden kartta. Siinä on kaksi akselia, molemmat Segerin kaavasta: piidioksidi (SiO₂) vaakasuunnassa alareunassa ja alumiinioksidi (Al₂O₃) pystysuunnassa sivulla. Kukin lasite on yksi piste. Kartta on jaettu alueisiin, kuten matta, kiiltävä, alipoltettu ja säröillyt. Glazecalcin [reseptisivu](/recipe) piirtää oman lasitteen siihen.
 
 ::stull-chart
 
-R. T. Stull laati kaavion kokeista, jotka hän julkaisi vuonna 1912. Hän poltti ne noin keilaan 11, ja jokaisessa kokeessa oli samat sulattajat: 0,3 kaliumia (K₂O) ja 0,7 kalsiumoksidia (CaO). Vain piidioksidi ja alumiinioksidi muuttuivat. Kaavio pitää siis paikkansa niille lasitteille siinä lämmössä.
+R. T. Stull laati kartan kokeista, jotka hän julkaisi vuonna 1912. Hän poltti ne noin keilaan 11, ja jokaisessa kokeessa oli samat sulattajat: 0,3 kaliumia (K₂O) ja 0,7 kalsiumoksidia (CaO). Vain piidioksidi ja alumiinioksidi muuttuivat. Kaavio pitää siis paikkansa niille lasitteille siinä lämmössä.
 
-Oma lasite on luultavasti erilainen. Boori, muut sulattajat ja matalammat keilat siirtävät kaikki alueita. Vuonna 2025 Ceramics Monthly -lehden artikkelissa testattiin keilan 6 lasitetta, jonka sulattajina oli boraatteja ja jossa oli paljon rautaa. Kaavio sijoitti sen säröilleeksi, mataksi ja alipoltetuksi. Todellisuudessa se oli täysin sulanut, silkinhimmeä eikä säröillyt. Kirjoittajien mukaan boraatteja sisältävät lasitteet eivät asetu kaavioon hyvin. Käytä siis alueita ohjeena, älä ennusteena.
+Oma lasite on luultavasti erilainen. Boori, muut sulattajat ja matalammat keilat siirtävät kaikki alueita. Vuonna 2025 Ceramics Monthly -lehden artikkelissa testattiin keilan 6 lasitetta, jonka sulattajina oli boraatteja ja jossa oli paljon rautaa. Kaavio sijoitti sen säröilleeksi, mataksi ja alipoltetuksi. Todellisuudessa se oli täysin sulanut, silkinhimmeä eikä säröillyt. Kirjoittajien mukaan boraatteja sisältävät lasitteet eivät asetu karttaan hyvin. Käytä siis alueita ohjeena, älä ennusteena.
 
 **Säröillyt** alue on se, jossa Stullin omat kokeet säröilivät, hänen savellaan. Se ei kerro, miten oma lasite sopii omaan savimassaan. Säröily riippuu sekä lasitteen että saven lämpölaajenemisesta. Glazecalcin lämpölaajenemisluku auttaa vertaamaan lasitteita, ja todellinen testi ratkaisee: jäävesitesti osiossa [Lasitteen ja massan yhteensopivuus sekä lasitevirheet](/guides/glazing-basics#fit-and-defects).
 

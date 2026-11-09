@@ -348,7 +348,7 @@ Label: Vady
 | Odprýskávání | Glazura se smršťuje mnohem méně než střep              | Více K₂O a Na₂O                                            |
 | Stékání      | Příliš málo oxidu hlinitého, nebo příliš tlustá vrstva | Více oxidu hlinitého; tenčí vrstva                         |
 | Stahování    | Zaprášený přežah, nebo tlustá vrstva, která popraskala | Očistěte přežah; tenčí vrstva                              |
-| Vpichy       | Plyn, po kterém se glazura nezacelila                  | Výdrž na konečné teplotě; tenčí vrstva                     |
+| Vpichy       | Plynová bublina, po které se glazura nezacelila        | Výdrž na konečné teplotě; tenčí vrstva                     |
 
 Návod [Sladění glazury se střepem a vady](/guides/glazing-basics#fit-and-defects) každou z nich vysvětluje, včetně zkoušky ledovou vodou na trhlinkování. Výrobky s trhlinkováním nebo odprýskáváním glazury nepoužívejte pro jídlo ani pití.
 

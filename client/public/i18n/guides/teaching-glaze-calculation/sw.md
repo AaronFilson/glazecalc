@@ -348,7 +348,7 @@ Label: Kasoro
 | Shivering  | Glaze inasinyaa kidogo sana kuliko udongo       | K₂O na Na₂O zaidi                                                     |
 | Kutiririka | Alumina kidogo mno, au nene mno                 | Alumina zaidi; tabaka jembamba zaidi                                  |
 | Crawling   | Bisque yenye vumbi, au tabaka nene lililopasuka | Safisha bisque; tabaka jembamba zaidi                                 |
-| Pinholes   | Gesi ambayo haikupona                           | Kusubiri (hold) kwenye joto la juu la uchomaji; tabaka jembamba zaidi |
+| Pinholes   | Kiputo cha gesi ambacho hakikupona              | Kusubiri (hold) kwenye joto la juu la uchomaji; tabaka jembamba zaidi |
 
 [Kulingana kwa glaze na kasoro](/guides/glazing-basics#fit-and-defects) inaeleza kila moja, pamoja na jaribio la maji ya barafu kwa crazing. Usitumie vyombo vyenye crazing au shivering kwa chakula au kinywaji.
 

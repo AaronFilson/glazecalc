@@ -348,7 +348,7 @@ Label: Foute
 | Afskilfering       | Die glasuur krimp baie minder as die liggaam        | Meer K₂O en Na₂O                                   |
 | Loop               | Te min alumina, of te dik                           | Meer alumina; 'n dunner laag                       |
 | Kruip              | Stowwerige biskwiet, of 'n dik laag wat gekraak het | Maak die biskwiet skoon; 'n dunner laag            |
-| Speldeprikgaatjies | Gas wat nie toegegroei het nie                      | 'n Houtyd by die top van die bak; 'n dunner laag   |
+| Speldeprikgaatjies | Gasborrel wat nie toegegroei het nie                | 'n Houtyd by die top van die bak; 'n dunner laag   |
 
 [Glasuurpassing en foute](/guides/glazing-basics#fit-and-defects) verduidelik elkeen, met die yswatertoets vir haarlynbarsies. Moenie ware met haarlynbarsies of afskilfering vir kos of drank gebruik nie.
 

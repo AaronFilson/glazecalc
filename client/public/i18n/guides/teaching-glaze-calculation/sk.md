@@ -348,7 +348,7 @@ Label: Chyby
 | Odlupovanie        | Glazúra sa zmršťuje oveľa menej než črep              | Viac K₂O a Na₂O                                    |
 | Stekanie           | Príliš málo oxidu hlinitého alebo príliš hrubá vrstva | Viac oxidu hlinitého; tenšia vrstva                |
 | Stiahnutie glazúry | Zaprášený prežah alebo hrubá vrstva, ktorá popraskala | Očistiť prežah; tenšia vrstva                      |
-| Vpichy             | Plyn, po ktorom sa povrch nezahojil                   | Výdrž pri konečnej teplote výpalu; tenšia vrstva   |
+| Vpichy             | Plynová bublina, po ktorej sa povrch nezahojil        | Výdrž pri konečnej teplote výpalu; tenšia vrstva   |
 
 Časť [Zladenie glazúry s črepom a chyby](/guides/glazing-basics#fit-and-defects) vysvetľuje každú z nich spolu so skúškou v ľadovej vode na trhlinkovanie. Výrobky s trhlinkami alebo s odlupovaním glazúry nepoužívajte na jedlo ani nápoje.
 

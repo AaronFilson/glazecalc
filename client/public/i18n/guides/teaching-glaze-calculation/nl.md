@@ -118,16 +118,16 @@ Label: Atoomgewichten
 | Kalium    | K       |       39,098 |
 | Calcium   | Ca      |       40,078 |
 
-Een formule telt atomen. SiO₂ is één silicium en twee zuurstof, dus één mol ervan weegt 28,085 + 2 × 15,999 = 60,083 g. Al₂O₃ is 2 × 26,982 + 3 × 15,999 = 101,961 g. CaO is 56,077 g, en krijt, CaCO₃, is 100,086 g; de bibliotheek van Glazecalc rondt dat af op 100,08.
+Een formule telt atomen. SiO₂ is één silicium en twee zuurstof, dus één mol ervan weegt 28,085 + 2 × 15,999 = 60,083 g. Al₂O₃ is 2 × 26,982 + 3 × 15,999 = 101,961 g. CaO is 56,077 g, en krijt, CaCO₃, is 100,086 g; de bibliotheek van Glazecalc rondt dat af op 100,08.
 
 Een **mol** is een aantal, zoals een dozijn: evenveel moleculen, welke het ook zijn. Mol is gram ÷ molmassa:
 
-- 25 g kwarts is 25 ÷ 60,083 = 0,416 mol SiO₂.
-- 20 g krijt is 20 ÷ 100,08 = 0,200 mol. In de oven verliest het zijn koolstofdioxide (CO₂, 44,009 g/mol) en blijft er 0,200 mol CaO over, die 0,200 × 56,077 = 11,2 g weegt. Dat verlies is het gloeiverlies: 43,97%.
+- 25 g kwarts is 25 ÷ 60,083 = 0,416 mol SiO₂.
+- 20 g krijt is 20 ÷ 100,08 = 0,200 mol. In de oven verliest het zijn koolstofdioxide (CO₂, 44,009 g/mol) en blijft er 0,200 mol CaO over, die 0,200 × 56,077 = 11,2 g weegt. Dat verlies is het gloeiverlies: 43,97%.
 
 ### In Glazecalc
 
-1. Open [Krijt](/materials/whiting) en [Kwarts](/materials/silica): elke pagina geeft de formule en de gewichten.
+1. Open [Whiting](/materials/whiting) en [Silica](/materials/silica): elke pagina geeft de formule en de gewichten.
 2. Reken één molmassa met de hand na en vergelijk die met de pagina.
 
 ### Werkblad
@@ -145,7 +145,7 @@ Label: Werkblad 2
 ### Controleren
 
 - Hoeveel gram weegt één mol SiO₂, en hoe wordt dat berekend?
-- Waarom blijft er van 20 g krijt minder dan 20 g over in het gebakken glazuur?
+- Waarom blijft er van 20 g krijt minder dan 20 g over in het gebakken glazuur?
 - Waarom vergelijken we oxiden in mol en niet in gram?
 
 ## Les 3: Een Segerformule lezen {#reading-the-formula}
@@ -185,7 +185,7 @@ Een diagram met siliciumoxide horizontaal en aluminiumoxide verticaal zet elk gl
 
 ::stull-chart
 
-Als u een kant-en-klaar glazuur wilt kleuren waarvan u het recept niet kent, kan Glazecalc de formule ervan niet berekenen. Voeg de kleurstof dan toe bovenop de 100: 100 g van het droge glazuur met 1, 2 en 3 g ijzeroxide, één plaatje elk, gestookt in oxidatie en reductie.
+Als u een kant-en-klaar glazuur wilt kleuren waarvan u het recept niet kent, kan Glazecalc de formule ervan niet berekenen. Voeg de kleurstof dan toe bovenop de 100: 100 g van het droge glazuur met 1, 2 en 3 g ijzeroxide, één plaatje elk, gestookt in oxidatie en reductie.
 
 ### In Glazecalc
 
@@ -198,7 +198,7 @@ Als u een kant-en-klaar glazuur wilt kleuren waarvan u het recept niet kent, kan
 Table: Werkblad 3: een kleurstof in een kant-en-klaar glazuur
 Label: Werkblad 3
 
-| Plaatje | Kleurstof (g per 100 g) | Oxidatie: hoe het eruitziet | Reductie: hoe het eruitziet |
+| Plaatje | Kleurstof (g per 100 g) | Oxidatie: hoe het eruitziet | Reductie: hoe het eruitziet |
 | ------- | ----------------------- | --------------------------- | --------------------------- |
 | 1       | 0                       |                             |                             |
 | 2       | 1                       |                             |                             |
@@ -226,7 +226,7 @@ Label: Werkblad 3
 
 Het recept: 福島長石 45, krijt 20, EPK-kaolien 10, kwarts 25. Neem elke hoeveelheid als gram. Voor elke grondstof geeft gram × het percentage van het oxide ÷ 100 ÷ zijn molmassa de mol. De tabel geeft de belangrijkste oxiden; Glazecalc telt ook de sporen mee (het ijzer en titaan van de kaolien, het magnesium van de veldspaat).
 
-Table: Mol van elk oxide in de hoeveelheid (100 g)
+Table: Mol van elk oxide in de hoeveelheid (100 g)
 Label: Mol in de hoeveelheid
 
 | Grondstof | Gram |    K₂O |   Na₂O |    CaO |  Al₂O₃ |   SiO₂ |
@@ -237,7 +237,7 @@ Label: Mol in de hoeveelheid
 | Kwarts    |   25 |      – |      – |      – |      – | 0,4161 |
 | Totaal    |  100 | 0,0518 | 0,0275 | 0,2041 | 0,1229 | 0,9820 |
 
-De smeltmiddelen tellen op tot 0,0518 + 0,0275 + 0,2041 + 0,0014 (magnesia) = 0,2847 mol. Deel elk totaal erdoor:
+De smeltmiddelen tellen op tot 0,0518 + 0,0275 + 0,2041 + 0,0014 (magnesia) = 0,2847 mol. Deel elk totaal erdoor:
 
 - K₂O 0,0518 ÷ 0,2847 = 0,18; Na₂O 0,10; CaO 0,72.
 - Al₂O₃ 0,1229 ÷ 0,2847 = 0,43.
@@ -286,12 +286,12 @@ Label: Werkblad 4
 
 Het doel: 0,2 K₂O, 0,1 Na₂O, 0,7 CaO, 0,4 Al₂O₃ en 4,0 SiO₂. Neem de grondstoffen in deze volgorde, elk voor het oxide dat alleen die kan inbrengen:
 
-1. **De veldspaat, voor het kalium en het natrium.** Eén eenheid 福島長石 (536,8 g, het gewicht dat één mol smeltmiddelen bevat) brengt 0,94 mol K₂O en Na₂O in. Het doel heeft 0,3 nodig, dus 0,3 ÷ 0,94 = 0,319 eenheden: 171,4 g. Het brengt ook 0,015 CaO, 0,328 Al₂O₃ en 1,865 SiO₂ in.
-2. **Krijt, voor de rest van het calcium.** 0,7 − 0,015 = 0,685 mol × 100,08 = 68,6 g.
-3. **Kaolien, voor de rest van het aluminiumoxide.** 0,4 − 0,328 = 0,072 mol. EPK-kaolien bevat één mol Al₂O₃ in 272,6 g, dus 19,6 g, die ook 0,149 SiO₂ inbrengt.
-4. **Kwarts, voor de rest.** 4,0 − 1,865 − 0,149 = 1,986 mol × 60,083 = 119,3 g.
+1. **De veldspaat, voor het kalium en het natrium.** Eén eenheid 福島長石 (536,8 g, het gewicht dat één mol smeltmiddelen bevat) brengt 0,94 mol K₂O en Na₂O in. Het doel heeft 0,3 nodig, dus 0,3 ÷ 0,94 = 0,319 eenheden: 171,4 g. Het brengt ook 0,015 CaO, 0,328 Al₂O₃ en 1,865 SiO₂ in.
+2. **Krijt, voor de rest van het calcium.** 0,7 − 0,015 = 0,685 mol × 100,08 = 68,6 g.
+3. **Kaolien, voor de rest van het aluminiumoxide.** 0,4 − 0,328 = 0,072 mol. EPK-kaolien bevat één mol Al₂O₃ in 272,6 g, dus 19,6 g, die ook 0,149 SiO₂ inbrengt.
+4. **Kwarts, voor de rest.** 4,0 − 1,865 − 0,149 = 1,986 mol × 60,083 = 119,3 g.
 
-Samen weegt het 379,0 g. In procenten: 福島長石 45,2, krijt 18,1, kaolien 5,2, kwarts 31,5. De veldspaat bepaalt de verhouding van kalium tot natrium, dus het recept geeft 0,195 K₂O en 0,104 Na₂O: dichtbij het doel, maar er niet op.
+Samen weegt het 379,0 g. In procenten: 福島長石 45,2, krijt 18,1, kaolien 5,2, kwarts 31,5. De veldspaat bepaalt de verhouding van kalium tot natrium, dus het recept geeft 0,195 K₂O en 0,104 Na₂O: dichtbij het doel, maar er niet op.
 
 ### In Glazecalc
 
@@ -331,13 +331,13 @@ Label: Werkblad 5
 
 ### Voorbereiden
 
-- Proefstaafjes van uw kleimassa, nat 100 mm uit elkaar gemarkeerd, gebakken en ongebakken.
+- Proefstaafjes van uw kleimassa, nat 100 mm uit elkaar gemarkeerd, gebakken en ongebakken.
 - Plaatjes met fouten, als u die hebt: haarscheuren, samentrekken, speldenprikken, aflopen.
 
 ### Uitgewerkt voorbeeld
 
-- **Krimp**: (gemarkeerde lengte − lengte na het stoken) ÷ gemarkeerde lengte × 100. Merktekens 100 mm uit elkaar die na het stoken 88 mm meten: 12% krimp.
-- **Waterabsorptie**: (gewicht na het weken − droog gewicht) ÷ droog gewicht × 100. Een gebakken staafje van 50,0 g dat na het weken 50,6 g weegt: 1,2%.
+- **Krimp**: (gemarkeerde lengte − lengte na het stoken) ÷ gemarkeerde lengte × 100. Merktekens 100 mm uit elkaar die na het stoken 88 mm meten: 12% krimp.
+- **Waterabsorptie**: (gewicht na het weken − droog gewicht) ÷ droog gewicht × 100. Een gebakken staafje van 50,0 g dat na het weken 50,6 g weegt: 1,2%.
 
 Table: Fouten, oorzaken en een eerste oplossing in de Segerformule
 Label: Fouten
@@ -348,7 +348,7 @@ Label: Fouten
 | Afspringen     | Het glazuur krimpt veel minder dan de scherf    | Meer K₂O en Na₂O                                                |
 | Aflopen        | Te weinig aluminiumoxide, of te dik             | Meer aluminiumoxide; een dunnere laag                           |
 | Samentrekken   | Stoffig biscuit, of een dikke laag die scheurde | Maak het biscuit schoon; een dunnere laag                       |
-| Speldenprikken | Gas dat niet dichtliep                          | Een houdtijd op het hoogste punt van de stook; een dunnere laag |
+| Speldenprikken | Gasbel die niet dichtliep                       | Een houdtijd op het hoogste punt van de stook; een dunnere laag |
 
 [Passing en glazuurfouten](/guides/glazing-basics#fit-and-defects) legt elke fout uit, met de ijswatertest voor haarscheuren. Gebruik geen werk met haarscheuren of afgesprongen glazuur voor eten of drinken.
 
@@ -379,7 +379,7 @@ Label: Werkblad 6
 
 ### Kaart van de driehoeksmenging: 42 glazuren
 
-Twee driehoeken van 21 plaatjes, volgens de opzet van Mengingen met 6 rijen: plaatje 1 bovenaan (veldspaat), de onderste rij van krijt (links) tot kwarts (rechts). Driehoek II is driehoek I met 1 g rood ijzeroxide bovenop elke 100 g, wat in reductie richting celadon (青磁) gaat. Gestookt in oxidatie en reductie zijn dat 84 plaatjes. De hoeveelheden zijn gram per 100 g.
+Twee driehoeken van 21 plaatjes, volgens de opzet van Mengingen met 6 rijen: plaatje 1 bovenaan (veldspaat), de onderste rij van krijt (links) tot kwarts (rechts). Driehoek II is driehoek I met 1 g rood ijzeroxide bovenop elke 100 g, wat in reductie richting celadon (青磁) gaat. Gestookt in oxidatie en reductie zijn dat 84 plaatjes. De hoeveelheden zijn gram per 100 g.
 
 Table: Kaart van de driehoeksmenging: 福島長石, krijt en kwarts, met 10 kaolien in elk plaatje
 Label: Kaart van de driehoeksmenging
