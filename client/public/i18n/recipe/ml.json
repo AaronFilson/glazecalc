@@ -1058,6 +1058,8 @@
       "temperature": "{low} മുതൽ {high} വരെ"
     },
     "testedAt": "ടെസ്റ്റ് ചെയ്തത്: {cones}",
+    "testedOne": "ഞാൻ ഇത് {cone}-ൽ ഫയർ ചെയ്ത് ടെസ്റ്റ് ചെയ്തു",
+    "statedUntested": "പറഞ്ഞിരിക്കുന്നത് {cone}; ടെസ്റ്റ് ചെയ്തതായി ടിക്ക് ചെയ്തിട്ടില്ല",
     "claimedRange": "പറയപ്പെടുന്ന ശ്രേണി {range}",
     "rangeUntested": "ശ്രേണി {range}; ടെസ്റ്റ് ചെയ്തതായി ഒരു കോണും ടിക്ക് ചെയ്തിട്ടില്ല",
     "approxTemperature": "≈ {temperature} ({basis}; ഏകദേശം)",

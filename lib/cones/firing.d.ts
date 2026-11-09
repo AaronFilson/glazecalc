@@ -9,7 +9,8 @@ export type Band = 'low' | 'mid' | 'high' | 'top';
 /**
  * A recipe's firing as stated: the cone exactly as entered with its scale
  * ('06', '6', '5.5' for 5½, '6a' for SK; °C as text for temperature), an
- * optional high end for a claimed range, the cones of the range tested, and
+ * optional high end for a claimed range, the cones of the range the potter has
+ * test-fired (none until ticked: a stated cone is not a tested one), and
  * the rest optional. Saved on a recipe as `firedAt`.
  */
 export interface FiringBlock {
@@ -74,8 +75,6 @@ export interface ReadFiring {
   high?: string;
   atmospheres?: Atmosphere[];
   processes?: FiringProcess[];
-  /** The cones of a list ("cone 4,5"), each counted as tested. */
-  tested?: string[];
   /** The line names an SK cone the chart does not have (SK 26): kept in the notes, not read. */
   unknown?: true;
   /** The line is nothing but a firing. */

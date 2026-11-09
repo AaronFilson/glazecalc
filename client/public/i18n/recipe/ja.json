@@ -1058,6 +1058,8 @@
       "temperature": "{low}〜{high}"
     },
     "testedAt": "試験したコーン: {cones}",
+    "testedOne": "{cone}で試し焼きした",
+    "statedUntested": "記載は{cone}。試験済みにはチェックされていません",
     "claimedRange": "申告された範囲: {range}",
     "rangeUntested": "範囲 {range}。試験済みとしてチェックされたコーンはありません",
     "approxTemperature": "≈ {temperature}（{basis}。概算）",

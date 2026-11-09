@@ -1058,6 +1058,8 @@
       "temperature": "{low} a {high}"
     },
     "testedAt": "Testado em {cones}",
+    "testedOne": "Testei queimando em {cone}",
+    "statedUntested": "Indicado {cone}; não marcado como testado",
     "claimedRange": "faixa declarada {range}",
     "rangeUntested": "Faixa {range}; nenhum cone marcado como testado",
     "approxTemperature": "≈ {temperature} ({basis}; aproximado)",

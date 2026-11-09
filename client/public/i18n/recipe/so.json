@@ -1058,6 +1058,8 @@
       "temperature": "{low} ilaa {high}"
     },
     "testedAt": "Lagu tijaabiyay {cones}",
+    "testedOne": "Waan ku tijaabiyay gubasho {cone}",
+    "statedUntested": "La sheegay {cone}; looma calaamadeyn inuu tijaabsan yahay",
     "claimedRange": "baaxadda la sheegay {range}",
     "rangeUntested": "Baaxadda {range}; cone looma calaamadeyn inuu tijaabsan yahay",
     "approxTemperature": "≈ {temperature} ({basis}; qiyaas)",

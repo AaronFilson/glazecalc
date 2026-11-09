@@ -1058,6 +1058,8 @@
       "temperature": "{low} ರಿಂದ {high}"
     },
     "testedAt": "ಪರೀಕ್ಷಿಸಿದ್ದು: {cones}",
+    "testedOne": "ನಾನು ಇದನ್ನು {cone} ನಲ್ಲಿ ಸುಟ್ಟು ಪರೀಕ್ಷಿಸಿದ್ದೇನೆ",
+    "statedUntested": "ತಿಳಿಸಿದ್ದು {cone}; ಪರೀಕ್ಷಿಸಿದ್ದು ಎಂದು ಟಿಕ್ ಮಾಡಿಲ್ಲ",
     "claimedRange": "ಹೇಳಿದ ವ್ಯಾಪ್ತಿ {range}",
     "rangeUntested": "ವ್ಯಾಪ್ತಿ {range}; ಯಾವುದೇ ಕೋನನ್ನು ಪರೀಕ್ಷಿಸಿದ್ದು ಎಂದು ಟಿಕ್ ಮಾಡಿಲ್ಲ",
     "approxTemperature": "≈ {temperature} ({basis}; ಅಂದಾಜು)",

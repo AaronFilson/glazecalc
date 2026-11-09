@@ -1058,6 +1058,8 @@
       "temperature": "{low} ile {high} arası"
     },
     "testedAt": "Test edilen: {cones}",
+    "testedOne": "Bunu {cone} için pişirip test ettim",
+    "statedUntested": "Belirtilen {cone}; test edilmiş olarak işaretlenmedi",
     "claimedRange": "bildirilen aralık: {range}",
     "rangeUntested": "Aralık {range}; hiçbir piramit test edilmiş olarak işaretlenmedi",
     "approxTemperature": "≈ {temperature} ({basis}; yaklaşık)",

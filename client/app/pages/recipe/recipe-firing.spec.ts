@@ -34,15 +34,29 @@ describe('RecipeFiring', () => {
     return { fixture, root, choose, tick, firing: fixture.componentInstance };
   };
 
-  it('offers Orton cones in true order, half cones and the rare ones last, and keeps a single cone as tested', async () => {
-    const { root, choose, firing } = await create();
+  it('offers Orton cones in true order, half cones and the rare ones last, and a single cone is not tested until ticked', async () => {
+    const { fixture, root, choose, tick, firing } = await create();
     const groups = [...root.querySelectorAll('#firing-low optgroup')].map((g) => g.getAttribute('label'));
     expect(groups).toEqual(['Cones 022 to 13', 'Half cones', 'Cones 14 to 42 (rare in pottery)']);
     const options = [...root.querySelectorAll('#firing-low option')].map((o) => o.textContent?.trim());
     expect(options.indexOf('06')).toBeLessThan(options.indexOf('6'));
     expect(options).toContain('5½');
     await choose('firing-low', '6');
+    // A cone just chosen is stated, not tested: the checkbox is off.
+    expect(firing.block()).toEqual({ scale: 'orton', low: '6' });
+    const box = root.querySelector('#firing-tested-6') as HTMLInputElement;
+    expect(box.checked).toBe(false);
+    expect(root.querySelector('label[for=firing-tested-6]')?.textContent?.trim()).toBe(
+      "I've test-fired this at cone 6"
+    );
+    expect(text(fixture, '.firing-claimed')).toBe('Stated cone 6; not ticked as tested');
+    expect(root.querySelector('.firing-tested')).toBeNull();
+    await tick('firing-tested-6');
     expect(firing.block()).toEqual({ scale: 'orton', low: '6', tested: ['6'] });
+    expect(text(fixture, '.firing-tested')).toBe('Tested at cone 6');
+    // Changing the cone drops the tick: the new cone is not one it was fired to.
+    await choose('firing-low', '7');
+    expect(firing.block()).toEqual({ scale: 'orton', low: '7' });
   });
 
   it('separates the claimed range from the cones tested, and shows the tested cone first', async () => {
@@ -52,11 +66,13 @@ describe('RecipeFiring', () => {
     await choose('firing-high', '10');
     const ticks = [...root.querySelectorAll('.firing-ticks label')].map((l) => l.textContent?.trim());
     expect(ticks).toEqual(['cone 6', 'cone 7', 'cone 8', 'cone 9', 'cone 10']);
-    // Cone 6, tested as a single cone, stays ticked in the range.
+    // Nothing is ticked until the potter ticks it.
+    expect(firing.block()).toEqual({ scale: 'orton', low: '6', high: '10' });
+    expect(text(fixture, '.firing-claimed')).toBe('Range cone 6–10; no cone ticked as tested');
+    await tick('firing-tested-6');
     expect(firing.block()).toEqual({ scale: 'orton', low: '6', high: '10', tested: ['6'] });
     await tick('firing-tested-6');
     expect(firing.block()).toEqual({ scale: 'orton', low: '6', high: '10' });
-    expect(text(fixture, '.firing-claimed')).toBe('Range cone 6–10; no cone ticked as tested');
     await tick('firing-tested-10');
     expect(firing.block()?.tested).toEqual(['10']);
     expect(text(fixture, '.firing-tested')).toBe('Tested at cone 10');
@@ -143,7 +159,9 @@ describe('firing in words', () => {
     expect(firingWords({ scale: 'sk', low: '8', high: '16' }, orton)!.conversion).toBe('');
     const measured = firingWords({ scale: 'sk', low: '8', high: '10' }, { cones: 'orton', temperature: 'C' })!;
     expect(measured.conversion).toMatch(/1198\s°C–1232\s°C/);
-    expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Tested at cone 5½');
+    expect(firingLine({ scale: 'orton', low: '5.5', tested: ['5.5'] }, orton)).toBe('Tested at cone 5½');
+    // A stated cone not ticked is not "tested".
+    expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Stated cone 5½; not ticked as tested');
     expect(firingWords(null, orton)).toBeNull();
   });
 
@@ -159,7 +177,7 @@ describe('firing in words', () => {
     expect(firingWords({ scale: 'orton', low: '16' }, celsius)!.conversion).toBe('');
     expect(firingWords({ scale: 'orton', low: '14', high: '16' }, celsius)!.conversion).toBe('');
     // Shown as written: 14½.
-    expect(firingLine({ scale: 'orton', low: '14.5' }, celsius)).toBe('Tested at cone 14½');
+    expect(firingLine({ scale: 'orton', low: '14.5', tested: ['14.5'] }, celsius)).toBe('Tested at cone 14½');
     // An SK reader is told the nearest SK cone only within Kyoto's table: none for cone 14.
     expect(firingWords({ scale: 'orton', low: '14' }, { cones: 'sk', temperature: 'C' })!.conversion).not.toContain(
       'SK'

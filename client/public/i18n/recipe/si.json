@@ -1058,6 +1058,8 @@
       "temperature": "{low} සිට {high} දක්වා"
     },
     "testedAt": "පරීක්ෂා කළ: {cones}",
+    "testedOne": "මම මෙය {cone} දී පුළුස්සා පරීක්ෂා කළෙමි",
+    "statedUntested": "සඳහන් කර ඇත්තේ {cone}; පරීක්ෂා කළ ලෙස ලකුණු කර නැත",
     "claimedRange": "කියන පරාසය {range}",
     "rangeUntested": "පරාසය {range}; පරීක්ෂා කළ ලෙස කිසිදු කෝන් එකක් ලකුණු කර නැත",
     "approxTemperature": "≈ {temperature} ({basis}; ආසන්න අගය)",

@@ -1058,6 +1058,8 @@
       "temperature": "{low} till {high}"
     },
     "testedAt": "Testad vid {cones}",
+    "testedOne": "Jag har testbränt den vid {cone}",
+    "statedUntested": "Angivet {cone}; inte markerat som testat",
     "claimedRange": "angivet intervall {range}",
     "rangeUntested": "Intervall {range}; ingen kägla markerad som testad",
     "approxTemperature": "≈ {temperature} ({basis}; ungefärligt)",

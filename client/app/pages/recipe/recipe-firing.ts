@@ -148,6 +148,20 @@ const GROUP_NAMES: Record<string, string> = {
           }
         </fieldset>
       }
+      @if (rangeCones().length === 1 && block()?.low) {
+        <div class="form-check firing-tested-one">
+          <input
+            [id]="'firing-tested-' + rangeCones()[0]"
+            class="form-check-input"
+            type="checkbox"
+            [checked]="block()?.tested?.includes(rangeCones()[0]!)"
+            (change)="setTested(rangeCones()[0]!, $any($event.target).checked)"
+          />
+          <label [for]="'firing-tested-' + rangeCones()[0]" class="form-check-label">{{
+            t('recipe.firing.testedOne', { cone: coneName(rangeCones()[0]!) })
+          }}</label>
+        </div>
+      }
       @if (words(); as w) {
         <p class="firing-summary" aria-live="polite">
           @if (w.tested) {
@@ -414,10 +428,9 @@ export class RecipeFiring {
     for (const key of Object.keys(next) as Array<keyof FiringBlock>) {
       if (next[key] === undefined || next[key] === '') delete next[key];
     }
-    // A single cone counts as tested; a range keeps the ticks still inside it.
+    // Only a cone the potter ticks is tested; the ticks still inside the range are kept.
     const range = conesBetween(next.scale, next.low, next.high);
     if (next.tested) next.tested = next.tested.filter((cone) => range.includes(cone));
-    if (range.length === 1) next.tested = range;
     this.block.set(cleanFiring(next));
   }
 

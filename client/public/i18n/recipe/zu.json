@@ -1058,6 +1058,8 @@
       "temperature": "{low} kuya ku-{high}"
     },
     "testedAt": "Kuhlolwe ku-{cones}",
+    "testedOne": "Ngiyihloliwe ngayishisa ku-{cone}",
+    "statedUntested": "Kushiwo {cone}; akumakwanga njengokuhloliwe",
     "claimedRange": "ibanga elishiwoyo {range}",
     "rangeUntested": "Ibanga {range}; ayikho i-cone emakwe njengehloliwe",
     "approxTemperature": "≈ {temperature} ({basis}; kulinganiselwa)",

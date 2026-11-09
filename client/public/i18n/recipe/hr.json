@@ -1058,6 +1058,8 @@
       "temperature": "{low} do {high}"
     },
     "testedAt": "Ispitano na {cones}",
+    "testedOne": "Ispitano pečenjem na {cone}",
+    "statedUntested": "Navedeno {cone}; nije označeno kao ispitano",
     "claimedRange": "navedeni raspon {range}",
     "rangeUntested": "Raspon {range}; nijedan stožac nije označen kao ispitan",
     "approxTemperature": "≈ {temperature} ({basis}; približno)",

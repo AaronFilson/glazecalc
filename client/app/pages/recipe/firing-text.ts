@@ -47,6 +47,7 @@ const BASIS: Record<ApproxBasis, string> = {
 const SPAN = { orton: marker('recipe.firing.span.orton'), sk: marker('recipe.firing.span.sk') };
 const CLAIMED = marker('recipe.firing.claimedRange');
 const UNTESTED = marker('recipe.firing.rangeUntested');
+const STATED_ONLY = marker('recipe.firing.statedUntested');
 
 /** One cone in its own scale: "cone 06", "cone 5½", "SK 6a", "1240 °C"; kept apart in right-to-left text (shared/bidi.ts). */
 export function coneText(scale: ConeScale, cone: string, reader: Reader): string {
@@ -151,12 +152,15 @@ export function firingWords(block: FiringBlock | null | undefined, reader: Reade
       })
     : '';
   const ranged = !!clean.high;
+  // A single cone that is not ticked is only stated, as a book gives it: not "tested".
   const range = clean.low
     ? ranged
       ? translate(tested.length ? CLAIMED : UNTESTED, {
           range: rangeText(clean.scale, clean.low, clean.high, reader)
         })
-      : ''
+      : tested.length
+        ? ''
+        : translate(STATED_ONLY, { cone: coneText(clean.scale, clean.low, reader) })
     : '';
   return {
     tested: testedText,

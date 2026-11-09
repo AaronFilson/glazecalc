@@ -1058,6 +1058,8 @@
       "temperature": "{low} ถึง {high}"
     },
     "testedAt": "ทดสอบที่ {cones}",
+    "testedOne": "ฉันเคยเผาทดสอบที่ {cone} แล้ว",
+    "statedUntested": "ระบุ {cone} ยังไม่ได้ติ๊กว่าทดสอบแล้ว",
     "claimedRange": "ช่วงที่อ้าง {range}",
     "rangeUntested": "ช่วง {range} ไม่มีโคนที่ติ๊กว่าทดสอบแล้ว",
     "approxTemperature": "≈ {temperature} ({basis}; โดยประมาณ)",

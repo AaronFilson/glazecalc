@@ -1058,6 +1058,8 @@
       "temperature": "{low} tot {high}"
     },
     "testedAt": "Getest bij {cones}",
+    "testedOne": "Ik heb dit getest bij {cone}",
+    "statedUntested": "Opgegeven {cone}; niet aangevinkt als getest",
     "claimedRange": "opgegeven bereik {range}",
     "rangeUntested": "Bereik {range}; geen kegel als getest aangevinkt",
     "approxTemperature": "≈ {temperature} ({basis}; bij benadering)",

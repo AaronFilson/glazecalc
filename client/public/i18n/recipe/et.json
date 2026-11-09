@@ -1058,6 +1058,8 @@
       "temperature": "{low} kuni {high}"
     },
     "testedAt": "Katsetatud: {cones}",
+    "testedOne": "Olen seda katsetanud põletades: {cone}",
+    "statedUntested": "Märgitud {cone}; pole katsetatuks märgitud",
     "claimedRange": "väidetav vahemik {range}",
     "rangeUntested": "Vahemik {range}; ühtegi koonust pole katsetatuks märgitud",
     "approxTemperature": "≈ {temperature} ({basis}; ligikaudne)",

@@ -1058,6 +1058,8 @@
       "temperature": "{low} sampai {high}"
     },
     "testedAt": "Diuji pada {cones}",
+    "testedOne": "Saya sudah menguji bakar ini pada {cone}",
+    "statedUntested": "Tertulis {cone}; belum dicentang sebagai sudah diuji",
     "claimedRange": "rentang yang diklaim {range}",
     "rangeUntested": "Rentang {range}; belum ada kerucut yang dicentang sebagai sudah diuji",
     "approxTemperature": "≈ {temperature} ({basis}; perkiraan)",
