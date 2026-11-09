@@ -7,6 +7,7 @@
   "no-token": "Għad m’hemmx token, għalhekk m’hemm l-ebda indirizz elettroniku x’insibu. Saħħa.",
   "verified": "L-utent ġie vverifikat",
   "not-signed-in": "l-utent ma setax jiġi awtentikat",
+  "account-gone": "Dan il-kont m’għadux jeżisti.",
   "no-user": "L-ebda utent b’dak l-ID",
   "not-allowed": "Mhux permess tibdel utent ieħor",
   "user-updated": "L-utent ġie aġġornat",

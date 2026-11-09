@@ -7,6 +7,7 @@
   "no-token": "Ainda não há token, então não há e-mail para procurar. Até logo.",
   "verified": "Usuário verificado",
   "not-signed-in": "Não foi possível autenticar o usuário",
+  "account-gone": "Esta conta não existe mais.",
   "no-user": "Nenhum usuário com esse id",
   "not-allowed": "Não é permitido alterar outro usuário",
   "user-updated": "Usuário atualizado",

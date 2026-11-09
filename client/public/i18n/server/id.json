@@ -7,6 +7,7 @@
   "no-token": "Belum ada token, jadi tidak ada email yang dicari. Sampai jumpa.",
   "verified": "Pengguna terverifikasi",
   "not-signed-in": "pengguna tidak dapat diautentikasi",
+  "account-gone": "Akun ini sudah tidak ada.",
   "no-user": "Tidak ada pengguna dengan id itu",
   "not-allowed": "Tidak diizinkan mengubah pengguna lain",
   "user-updated": "Pengguna diperbarui",

@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, signUpAndSignIn } = require('./helpers');
+const { API, appReady, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
@@ -215,6 +215,8 @@ test('Clear offline data and turning the copy off ask first when changes are uns
 test('with no copy and nothing waiting, signing out asks nothing', async ({ page }) => {
   await signUpAndSignIn(page);
   await page.goto('/home');
+  // A click before the app has taken over the page does nothing (e2e/helpers.js appReady).
+  await appReady(page);
   await page.getByRole('button', { name: 'Sign out', exact: true }).click();
   await expect(page).toHaveURL(/\/signin/);
   await expect(dialog(page)).toHaveCount(0);

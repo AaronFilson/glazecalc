@@ -7,6 +7,7 @@
   "no-token": "Tunnistetta ei vielä ole, joten sähköpostiosoitetta ei löydy. Näkemiin.",
   "verified": "Käyttäjä vahvistettu",
   "not-signed-in": "käyttäjää ei voitu todentaa",
+  "account-gone": "Tätä tiliä ei enää ole.",
   "no-user": "Tällä tunnisteella ei ole käyttäjää",
   "not-allowed": "Toisen käyttäjän tietoja ei saa muuttaa",
   "user-updated": "Käyttäjä päivitetty",

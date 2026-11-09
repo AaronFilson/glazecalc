@@ -3,7 +3,7 @@ import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { catchError, finalize, from, switchMap, throwError } from 'rxjs';
 import { API_BASE } from './api-base';
-import { AuthService } from './auth.service';
+import { AuthService, accountGone } from './auth.service';
 import { sameSitePath } from './signed-in.guard';
 
 // 401s these answer are handled where they are called: /signin's means a wrong
@@ -88,7 +88,7 @@ export const sessionExpiredInterceptor: HttpInterceptorFn = (req, next) => {
   const signOut = (err: unknown) => {
     if (ended(err)) {
       const wasTrial = auth.trial() !== null;
-      auth.sessionEnded();
+      auth.sessionEnded(accountGone(err));
       // The page left can tell why (core/leave.guard.ts): nothing on it can be saved now.
       // Signing in again comes back to the page left (?next=), unless it is a sign-in page or not this site's.
       const back = sameSitePath(router.url);

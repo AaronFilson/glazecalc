@@ -7,6 +7,7 @@
   "no-token": "Sisselogimisluba veel ei ole, seega pole ka e-posti aadressi, mida leida. Head aega.",
   "verified": "Kasutaja on kinnitatud",
   "not-signed-in": "Kasutajat ei õnnestunud autentida",
+  "account-gone": "Seda kontot enam ei ole.",
   "no-user": "Selle ID-ga kasutajat ei ole",
   "not-allowed": "Teist kasutajat ei ole lubatud muuta",
   "user-updated": "Kasutaja on uuendatud",

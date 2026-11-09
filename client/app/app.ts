@@ -279,6 +279,18 @@ const APP_PAGES = [
             </div>
           </div>
         }
+        @if (offlineRecords.keepRemoved()) {
+          <div class="update-bar offline-records-bar offline-keep-removed">
+            <div class="trial-bar-inner">
+              <p>{{ t('offline.keepRemoved') }}</p>
+              <div class="trial-actions">
+                <button type="button" class="btn btn-light btn-sm" (click)="offlineRecords.keepRemoved.set(false)">
+                  {{ t('outbox.dismiss') }}
+                </button>
+              </div>
+            </div>
+          </div>
+        }
         @for (notice of outbox.notices(); track notice.id) {
           <div class="update-bar offline-records-bar outbox-notice">
             <div class="trial-bar-inner">

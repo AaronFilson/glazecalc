@@ -4,7 +4,8 @@ import { Injectable, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
-import { errorMessage } from './error-message';
+import { errorMessage, fetchProblem } from './error-message';
+// fetchProblem: "Not available offline" in place of the fetch error when the network is gone.
 
 /**
  * The materials the potter has on hand, for Match with what I have: library
@@ -37,7 +38,7 @@ export class ShelfService {
       } catch (err) {
         // Asked again next time. Until then there is no list to change: saving one would replace the potter's.
         this.fetched = null;
-        this.problem.set(errorMessage(err, translate('shelf.fetchFailed')));
+        this.problem.set(fetchProblem(err, translate('shelf.fetchFailed')));
       }
     })();
     this.fetched = { session, request };

@@ -7,6 +7,7 @@
   "no-token": "Noch kein Token vorhanden, daher ist keine E-Mail-Adresse zu finden. Auf Wiedersehen.",
   "verified": "Benutzerkonto bestätigt",
   "not-signed-in": "Benutzerkonto konnte nicht authentifiziert werden",
+  "account-gone": "Dieses Benutzerkonto existiert nicht mehr.",
   "no-user": "Kein Benutzerkonto mit dieser ID",
   "not-allowed": "Ein anderes Benutzerkonto darf nicht geändert werden",
   "user-updated": "Benutzerkonto aktualisiert",

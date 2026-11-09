@@ -116,6 +116,12 @@ export async function addServiceWorker(browser = BROWSER, configFile = CONFIG, k
   await writeFile(path.join(browser, 'ngsw.json'), JSON.stringify(manifest, null, 2));
   // After the manifest, so the workers are not among the files it keeps.
   await copyFile(path.join(WORKER, kill ? 'safety-worker.js' : 'ngsw-worker.js'), path.join(browser, 'ngsw-worker.js'));
+  // Background Sync for the outbox (scripts/outbox-sync.js), on the real worker only.
+  if (!kill) {
+    const worker = await readFile(path.join(WORKER, 'ngsw-worker.js'), 'utf8');
+    const sync = await readFile(path.join(ROOT, 'scripts', 'outbox-sync.js'), 'utf8');
+    await writeFile(path.join(browser, 'ngsw-worker.js'), worker + '\n' + sync);
+  }
   await copyFile(path.join(WORKER, 'safety-worker.js'), path.join(browser, 'safety-worker.js'));
   await copyFile(path.join(WORKER, 'safety-worker.js'), path.join(browser, 'worker-basic.min.js'));
   return manifest;

@@ -7,6 +7,7 @@
   "no-token": "Pas encore de jeton : il n’y a donc aucune adresse e-mail à trouver. Au revoir.",
   "verified": "Utilisateur vérifié",
   "not-signed-in": "Impossible d’authentifier l’utilisateur.",
+  "account-gone": "Ce compte n’existe plus.",
   "no-user": "Aucun utilisateur avec cet identifiant.",
   "not-allowed": "Vous ne pouvez pas modifier un autre utilisateur.",
   "user-updated": "Utilisateur mis à jour",
