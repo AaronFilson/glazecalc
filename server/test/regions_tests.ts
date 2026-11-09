@@ -745,8 +745,8 @@ describe('Latin America and Africa, as added', () => {
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed on purpose on 2026-11-08: Brazil lists Arte Brasil Cerâmica, Argentina Cezart Cerámica,
-    // Arte y Fuego and Crecer Poles (the owner's browsing exports).
-    expect(hash).to.equal('88a3ac885bce4e616a487545c7addf879077c806a0adc8c17de6fc4d0dc549f5');
+    // Arte y Fuego and Crecer Poles, Chile La Casa del Ceramista (the owner's browsing exports).
+    expect(hash).to.equal('9f3dee13700d478834ffb6211d94e8e4cc839134c188f41b91f906ca6ff34e2c');
   });
 
   it('are, with the earlier snapshots, every region', () => {
