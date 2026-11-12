@@ -152,6 +152,7 @@ jobs:
         run: >-
           npm run test:client:coverage --
           --coverage-reporters=text-summary --coverage-reporters=json-summary
+          --coverage-reporters=json --coverage-reporters=html
           --reporters=default --reporters=json --output-file=test-results/client-tests.json
 
       - name: Count the tests and the coverage
@@ -162,6 +163,13 @@ jobs:
         with:
           name: numbers-client
           path: numbers/
+          retention-days: 7
+
+      - name: Keep the coverage report
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: coverage-client
+          path: coverage/glazecalc/
           retention-days: 7
 
   # In Playwright's image for its version, with its own MongoDB, exactly as
